@@ -1,21 +1,21 @@
 ---
-title: DefaultValue (C++ COM özniteliği)
+title: DefaultValue (C++ com özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.defaultvalue
 helpviewer_keywords:
 - defaultvalue attribute
 ms.assetid: efa5d050-b2cc-4d9e-9b8e-79954f218d3a
-ms.openlocfilehash: ff6924db6f4805bb5f2dbab69076a86020b2a075
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b2057658b5881efd0c3ff095d51e5ee88c9c533e
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62147970"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490926"
 ---
 # <a name="defaultvalue"></a>defaultvalue
 
-Belirtilmiş bir isteğe bağlı parametre için bir varsayılan değer belirtimi sağlar.
+Türü belirtilmiş bir isteğe bağlı parametre için varsayılan değer belirtimine izin verir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -26,15 +26,15 @@ Belirtilmiş bir isteğe bağlı parametre için bir varsayılan değer belirtim
 ### <a name="parameters"></a>Parametreler
 
 *value*<br/>
-Parametre için varsayılan değer.
+Parametresi için varsayılan değer.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Defaultvalue** C++ özniteliği ile aynı işlevlere sahip [defaultvalue](/windows/desktop/Midl/defaultvalue) MIDL özniteliği.
+**DefaultValue** C++ özniteliği, [DefaultValue](/windows/win32/Midl/defaultvalue) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod, bir arabirim yöntemini kullanarak göstermektedir **defaultvalue** özniteliği:
+Aşağıdaki kod, **DefaultValue** özniteliğini kullanarak bir arabirim yöntemi gösterir:
 
 ```cpp
 // cpp_attr_ref_defaultvalue.cpp
@@ -60,12 +60,12 @@ __interface IFireTabCtrl : IDispatch {
 
 |||
 |-|-|
-|**İçin geçerlidir**|Parametre arabirimi|
+|**Uygulama hedefi**|Arabirim parametresi|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|None|
-|**Geçersiz öznitelikler**|None|
+|**Gerekli öznitelikler**|Yok.|
+|**Geçersiz öznitelikler**|Yok.|
 
-Daha fazla bilgi için [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
+Daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

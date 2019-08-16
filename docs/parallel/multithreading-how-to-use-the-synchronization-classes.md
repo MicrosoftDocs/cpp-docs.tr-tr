@@ -13,32 +13,32 @@ helpviewer_keywords:
 - multithreading [C++], synchronization classes
 - threading [C++], thread-safe class design
 ms.assetid: f266d4c6-0454-4bda-9758-26157ef74cc5
-ms.openlocfilehash: 6115d942abc61fbfc9d60ca1ccf97d4b423ff7c1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 26a059e378edb92f5ff7f4e788ded90678e0c129
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62407698"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69511874"
 ---
 # <a name="multithreading-how-to-use-the-mfc-synchronization-classes"></a>Çoklu iş parçacığı kullanımı: MFC eşitleme sınıflarını kullanma
 
-İş parçacıkları arasında kaynak erişim eşitleme yaygın çok iş parçacıklı uygulamalarda yazılırken bir sorundur. İki veya daha fazla sorun aynı anda aynı verilere istenmeyen ve beklenmeyen sonuçlara yol açabilir, erişim iş parçacıkları. Örneğin, başka bir iş parçacığı aynı yapıya içeriğini okuyor sırasında bir iş parçacığı bir yapının içeriği güncelleştirme. Hangi verileri okuma iş parçacığında alacağı bilinmiyor: eski verileri, yeni yazılmış veri veya büyük olasılıkla ikisinin karışımı olamaz. MFC, çok sayıda eşitleme ve bu sorunun çözümüne yardımcı olmak için eşitleme erişim sınıfları sağlar. Bu konu, kullanılabilir sınıflar ve bunları tipik bir çok iş parçacıklı uygulamada iş parçacığı açısından güvenli sınıflar oluşturmak için nasıl kullanılacağını açıklar.
+İş parçacıkları arasında kaynak erişiminin eşitlenmesi, çok iş parçacıklı uygulamalar yazarken yaygın bir sorundur. Aynı verilere aynı anda iki veya daha fazla iş parçacığının bulunması istenmeyen ve öngörülemeyen sonuçlara yol açabilir. Örneğin, bir iş parçacığı başka bir iş parçacığı aynı yapının içeriğini okurken bir yapının içeriğini güncelleştiriyoruz. Okuma iş parçacığının alacağı veriler bilinmiyor: eski veriler, yeni yazılan veriler veya büyük olasılıkla her ikisinin karışımı. MFC, bu sorunu çözmeye yardımcı olacak bir dizi eşitleme ve eşitleme erişim sınıfı sağlar. Bu konu, kullanılabilen sınıfları ve tipik bir çok iş parçacıklı uygulamada iş parçacığı açısından güvenli sınıflar oluşturmak için nasıl kullanılacağını açıklamaktadır.
 
-Tipik bir çok iş parçacıklı uygulamanın iş parçacıkları arasında paylaşılan bir kaynağı temsil eden bir sınıfı vardır. Düzgün bir şekilde tasarlanmış, tamamen iş parçacığı açısından güvenli sınıf herhangi bir eşitleme işlevi çağırmak gerektirmez. Her şey en iyi şekilde kullanmanız konusunda nasıl, bozulmuş değil hakkında sınıfı odaklanmasına olanak sağlayan bir sınıf için dahili olarak işlenir. Bir tam iş parçacığı açısından güvenli sınıf oluşturmak için bir etkili teknik kaynak sınıfına eşitleme sınıfını birleştirilmesidir. Eşitleme sınıfları paylaşılan sınıfına birleştirme, basit bir işlemdir.
+Tipik bir çok iş parçacıklı uygulamanın, iş parçacıkları arasında paylaşılacak bir kaynağı temsil eden sınıfı vardır. Düzgün tasarlanmış, tamamen iş parçacığı güvenli bir sınıf herhangi bir eşitleme işlevini çağırmanız gerekmez. Her şey sınıfında dahili olarak işlenir ve bu sınıfın nasıl bozulmuş olabileceği hakkında değil, sınıfının en iyi şekilde kullanılmasına odaklanmanızı sağlar. Tam iş parçacığı güvenli sınıfı oluşturmak için etkili bir teknik, eşitleme sınıfını kaynak sınıfına birleştirmektir. Eşitleme sınıflarını paylaşılan sınıfta birleştirme, basit bir işlemdir.
 
-Örneğin, bağlantılı hesaplar listesini tutar uygulamanın yararlanın. Bu uygulamanın ayrı windows incelenmesi için en fazla üç hesapları sağlar, ancak belirli bir zamanda yalnızca biri güncelleştirilebilir. Bir hesap güncelleştirildiğinde güncelleştirilen verileri bir veri arşivine ağ üzerinden gönderilir.
+Örnek olarak, bağlı firmaların listesini tutan bir uygulama alın. Bu uygulama, ayrı Windows 'da en fazla üç hesap incelenmesine izin verir, ancak yalnızca bir tane belirli bir zamanda güncelleştirilebilen olabilir. Bir hesap güncelleştirildiği zaman, güncelleştirilmiş veriler ağ üzerinden bir veri arşivine gönderilir.
 
-Bu örnek uygulama, üç tür eşitleme sınıfları kullanır. Aynı anda incelenecek en fazla üç hesapları izin verdiğinden, kullandığı [CSemaphore](../mfc/reference/csemaphore-class.md) üç görünüm nesnelerine erişimi sınırlamak için. Görüntüleme girişiminde dördüncü bir hesabı meydana gelir, ilk üç windows birini kapatır veya başarısız kadar bekler ya da uygulama. Bir hesap güncelleştirildiğinde uygulamanın kullandığı [CCriticalSection](../mfc/reference/ccriticalsection-class.md) aynı anda yalnızca bir hesap güncelleştirildiğinden emin olmak için. Güncelleştirme başarılı olduktan sonra bildirir [CEvent](../mfc/reference/cevent-class.md), sinyal olayı için bekleyen bir iş parçacığını serbest bırakır. Bu iş parçacığı veri arşivine yeni verileri gönderir.
+Bu örnek uygulama, üç tür eşitleme sınıfını kullanır. Tek seferde en fazla üç hesap incelendiğinden, üç görünüm nesnesine erişimi sınırlandırmak için [Csemafor](../mfc/reference/csemaphore-class.md) kullanır. Dördüncü bir hesabı görüntüleme denemesi gerçekleştiğinde, uygulama ilk üç Windows 'un kapanmasından veya başarısız olana kadar bekler. Bir hesap güncelleştirildiği zaman, uygulama, aynı anda yalnızca bir hesabın güncelleştirildiğinden emin olmak için [Ccriticalhandle bölümünü](../mfc/reference/ccriticalsection-class.md) kullanır. Güncelleştirme başarılı olduktan sonra, etkinlik için [](../mfc/reference/cevent-class.md)bekleyen bir iş parçacığını serbest bırakır. Bu iş parçacığı veri arşivine yeni verileri gönderir.
 
-##  <a name="_mfc_designing_a_thread.2d.safe_class"></a> Bir iş parçacığı açısından güvenli sınıf tasarımı
+##  <a name="_mfc_designing_a_thread.2d.safe_class"></a>Iş parçacığı güvenli sınıfı tasarlama
 
-Bir sınıf tam iş parçacığı açısından güvenli hale getirmek için önce uygun eşitleme sınıfını paylaşılan sınıfları veri üyesi olarak ekleyin. Önceki örnekte hesap yönetimi, bir `CSemaphore` veri üyesi görünüm sınıfına eklenen bir `CCriticalSection` veri üyesi bağlantılı liste sınıfa eklenmesi ve bir `CEvent` veri üyesi veri depolama sınıfına eklenmesi.
+Bir sınıfı tamamen iş parçacığı açısından güvenli hale getirmek için, önce uygun eşitleme sınıfını paylaşılan sınıflara bir veri üyesi olarak ekleyin. Önceki hesap yönetimi örneğinde, bir `CSemaphore` veri üyesi görünüm sınıfına eklenerek `CCriticalSection` , bağlantılı liste sınıfına bir veri üyesi eklenir ve veri depolama sınıfına bir `CEvent` veri üyesi eklenecektir.
 
-Ardından, eşitleme çağrıları sınıf verileri değiştiren veya denetimli kaynak erişimi tüm üye işlevleri ekleyin. Her işlevde, ya da oluşturmalısınız bir [CSingleLock](../mfc/reference/csinglelock-class.md) veya [CMultiLock](../mfc/reference/cmultilock-class.md) nesne ve o nesnenin `Lock` işlevi. Kilit nesne kapsam dışına gider ve edildiğinde, nesnenin yok Edicisi çağırır `Unlock` , kaynak serbest bırakma. Elbette, çağırabilirsiniz `Unlock` doğrudan istiyorsanız.
+Sonra, sınıftaki verileri değiştiren veya denetlenen kaynağa erişen tüm üye işlevlerine eşitleme çağrıları ekleyin. Her işlevde, bir [CSingleLock](../mfc/reference/csinglelock-class.md) veya [CMultiLock](../mfc/reference/cmultilock-class.md) nesnesi oluşturmalı ve `Lock` bu nesnenin işlevini çağırmanız gerekir. Kilit nesnesi kapsam dışına geçtiğinde ve yok edildiğinde, nesnenin yıkıcısı sizin için çağırır `Unlock` , kaynağı serbest bırakır. Kuşkusuz, isterseniz doğrudan çağırabilirsiniz `Unlock` .
 
-Bu şekilde, iş parçacığı açısından güvenli sınıf tasarımı birden çok iş parçacıklı uygulamada bir iş parçacığı güvenli olmayan sınıf olarak kolayca, ancak daha yüksek düzeyde güvenlik kullanılmasını sağlar. Eşitleme nesnesi ve eşitleme erişimi nesnesi kaynak sınıfına Kapsüllenen eşitleme kodu bakım dezavantajı tam iş parçacığı açısından güvenli programlamadan tüm avantajlarını sağlar.
+İş parçacığı açısından güvenli sınıfınızı bu şekilde tasarlamak, iş parçacıklı bir uygulamada iş parçacığı güvenli olmayan bir sınıf olarak kolayca kullanılabilir, ancak daha yüksek bir güvenlik düzeyi sağlar. Eşitleme nesnesi ve eşitleme erişimi nesnesinin, kaynağın sınıfına kapsüllenmesi, eşitleme kodunu korumanın dezavantajı olmadan tamamen iş parçacığı açısından güvenli programlama avantajlarından yararlanır.
 
-Bir veri üyesi kullanarak bu yöntem aşağıdaki kod örneği gösterilmektedir `m_CritSection` (türü `CCriticalSection`), paylaşılan bir kaynak sınıfı olarak bildirilmiş ve bir `CSingleLock` nesne. Paylaşılan kaynak eşitlenmesi (türetilen `CWinThread`) oluşturarak denenir bir `CSingleLock` nesnesinin adresini kullanarak `m_CritSection` nesne. Kaynak kilidi için bir girişimde ve elde edilen zaman işler paylaşılan nesne üzerinde gerçekleştirilir. İş tamamlandığında, kaynak çağrısı ile açılmış `Unlock`.
+Aşağıdaki kod örneği, paylaşılan kaynak sınıfında ve bir `m_CritSection` `CSingleLock` nesnesinde belirtilen bir veri üyesini (türü `CCriticalSection`) kullanarak bu yöntemi gösterir. Paylaşılan kaynağın (türeten `CWinThread`türetilmiş) eşitlenmesi, `m_CritSection` nesnesinin adresi kullanılarak bir `CSingleLock` nesne oluşturularak denenir. Kaynağı kilitlemek için bir girişimde bulunuldu ve elde edildiğinde, paylaşılan nesne üzerinde iş yapılır. Çalışma bittiğinde, kaynak, öğesine `Unlock`yapılan çağrısıyla birlikte açılır.
 
 ```
 CSingleLock singleLock(&m_CritSection);
@@ -50,11 +50,11 @@ singleLock.Unlock();
 ```
 
 > [!NOTE]
-> `CCriticalSection`, diğer MFC eşitleme sınıflardan farklı olarak, zamanlanmış bir kilit isteğinin seçeneğine sahip değildir. Ücretsiz olacak bir iş parçacığı için bekleme süresi sonsuzdur.
+> `CCriticalSection`, diğer MFC eşitleme sınıflarının aksine, zamanlanmış bir kilit isteği seçeneğine sahip değildir. Bir iş parçacığının serbest olması için bekleme süresi sonsuz ' dur.
 
-Bu yaklaşım dezavantajları sınıfı eklenen eşitleme nesneleri aynı sınıfa göre biraz daha yavaş olur ' dir. Ayrıca, birden fazla iş parçacığı nesnesi silebilir şansı varsa, birleştirilmiş bir yaklaşım her zaman çalışmayabilir. Bu durumda, ayrı bir eşitleme nesneleri korumak iyidir.
+Bu yaklaşımın dezavantajları, sınıfın, eşitleme nesnelerinin eklenmeksizin aynı sınıftan biraz daha yavaş olabilmesidir. Ayrıca, birden fazla iş parçacığının nesneyi silebileceğinden, birleştirilmiş yaklaşımın her zaman çalışmama olasılığı vardır. Bu durumda, ayrı eşitleme nesnelerinin bakımını yapmak daha iyidir.
 
-Farklı durumlarda kullanılacak hangi eşitleme sınıfını belirleme hakkında daha fazla bilgi için bkz [çoklu iş parçacığı kullanımı: Zaman eşitleme sınıflarını kullanma](multithreading-when-to-use-the-synchronization-classes.md). Eşitleme hakkında daha fazla bilgi için bkz. [eşitleme](/windows/desktop/Sync/synchronization) Windows SDK. MFC çoklu iş parçacığı desteği hakkında daha fazla bilgi için bkz. [çoklu iş parçacığı kullanımı C++ ve MFC ile](multithreading-with-cpp-and-mfc.md).
+Farklı durumlarda hangi eşitleme sınıfının kullanılacağını belirleme hakkında daha fazla bilgi için bkz [. çoklu iş parçacığı: Eşitleme sınıfları](multithreading-when-to-use-the-synchronization-classes.md)ne zaman kullanılır? Eşitleme hakkında daha fazla bilgi için Windows SDK [eşitleme](/windows/win32/Sync/synchronization) bölümüne bakın. MFC 'de çoklu iş parçacıklı destek hakkında daha fazla bilgi için bkz. [Çoklu Iş parçacığı C++ ve MFC](multithreading-with-cpp-and-mfc.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

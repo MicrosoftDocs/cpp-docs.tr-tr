@@ -16,12 +16,12 @@ f1_keywords:
 helpviewer_keywords:
 - CTokenGroups class
 ms.assetid: 2ab08076-4b08-4487-bc70-ec6dee304190
-ms.openlocfilehash: 4e5d06ca01201bf415afedbe6f6e5bca096f68fa
-ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
+ms.openlocfilehash: 88096747f45d4a81c873837cdd4975da9d8c24e2
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68915586"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69496289"
 ---
 # <a name="ctokengroups-class"></a>CTokenGroups sınıfı
 
@@ -67,11 +67,11 @@ class CTokenGroups
 
 ## <a name="remarks"></a>Açıklamalar
 
-[Erişim belirteci](/windows/desktop/SecAuthZ/access-tokens) bir işlemin veya iş parçacığının güvenlik bağlamını açıklayan ve bir Windows sisteminde oturum açan her kullanıcıya ayrılan bir nesnedir.
+[Erişim belirteci](/windows/win32/SecAuthZ/access-tokens) bir işlemin veya iş parçacığının güvenlik bağlamını açıklayan ve bir Windows sisteminde oturum açan her kullanıcıya ayrılan bir nesnedir.
 
-Sınıfı, bir erişim belirtecinde grup güvenlik tanımlayıcıları (SID 'ler) hakkındaki bilgileri içeren token_groups yapısına yönelik bir sarmalayıcıdır. [](/windows/desktop/api/winnt/ns-winnt-token_groups) `CTokenGroups`
+Sınıfı, bir erişim belirtecinde grup güvenlik tanımlayıcıları (SID 'ler) hakkındaki bilgileri içeren token_groups yapısına yönelik bir sarmalayıcıdır. [](/windows/win32/api/winnt/ns-winnt-token_groups) `CTokenGroups`
 
-Windows 'daki erişim denetim modeline giriş için Windows SDK [Access Control](/windows/desktop/SecAuthZ/access-control) bakın.
+Windows 'daki erişim denetim modeline giriş için Windows SDK [Access Control](/windows/win32/SecAuthZ/access-control) bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -95,7 +95,7 @@ Bir [CSID](../../atl/reference/csid-class.md) nesnesi.
 `CSid` Nesneyle ilişkilendirilecek öznitelikler.
 
 *rTokenGroups*<br/>
-Bir [token_groups](/windows/desktop/api/winnt/ns-winnt-token_groups) yapısı.
+Bir [token_groups](/windows/win32/api/winnt/ns-winnt-token_groups) yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -114,7 +114,7 @@ CTokenGroups(const TOKEN_GROUPS& rhs) throw(...);
 ### <a name="parameters"></a>Parametreler
 
 *sağ taraftan*<br/>
-Nesnesinin oluşturulacağı nesne veya token_groups yapısı. [](/windows/desktop/api/winnt/ns-winnt-token_groups) `CTokenGroups` `CTokenGroups`
+Nesnesinin oluşturulacağı nesne veya token_groups yapısı. [](/windows/win32/api/winnt/ns-winnt-token_groups) `CTokenGroups` `CTokenGroups`
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -191,7 +191,7 @@ const TOKEN_GROUPS* GetPTOKEN_GROUPS() const throw(...);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`CTokenGroups` Erişim belirteci nesnesine ait [token_groups](/windows/desktop/api/winnt/ns-winnt-token_groups) yapısına yönelik bir işaretçi alır.
+`CTokenGroups` Erişim belirteci nesnesine ait [token_groups](/windows/win32/api/winnt/ns-winnt-token_groups) yapısına yönelik bir işaretçi alır.
 
 ##  <a name="getsidsandattributes"></a>CTokenGroups:: Getsıdsandattributes
 
@@ -253,7 +253,7 @@ CTokenGroups& operator= (const CTokenGroups& rhs) throw(...);
 ### <a name="parameters"></a>Parametreler
 
 *sağ taraftan*<br/>
-Nesneyeatanacak`CTokenGroups` nesne veya token_groups yapısı. [](/windows/desktop/api/winnt/ns-winnt-token_groups) `CTokenGroups`
+Nesneyeatanacak`CTokenGroups` nesne veya token_groups yapısı. [](/windows/win32/api/winnt/ns-winnt-token_groups) `CTokenGroups`
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -269,7 +269,7 @@ operator const TOKEN_GROUPS *() const throw(...);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir değeri [token_groups](/windows/desktop/api/winnt/ns-winnt-token_groups) yapısına bir işaretçiye yayınlar.
+Bir değeri [token_groups](/windows/win32/api/winnt/ns-winnt-token_groups) yapısına bir işaretçiye yayınlar.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

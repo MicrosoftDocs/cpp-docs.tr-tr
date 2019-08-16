@@ -24,16 +24,16 @@ helpviewer_keywords:
 - wmemcpy function
 - memcpy function
 ms.assetid: 34abb90b-bffb-46dc-a2f3-a5e9940839d6
-ms.openlocfilehash: afdb854bd28b55735cc6b5e26788307e2db0caa6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f687e231060c287e206017dc61fe1d5193d8f0de
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62156596"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69499633"
 ---
 # <a name="memcpy-wmemcpy"></a>memcpy, wmemcpy
 
-Arabellekler arasında bayt kopyalar. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz: [memcpy_s, wmemcpy_s](memcpy-s-wmemcpy-s.md).
+Baytları, arabellekler arasında kopyalar. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz. [memcpy_s, wmemcpy_s](memcpy-s-wmemcpy-s.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -52,32 +52,32 @@ wchar_t *wmemcpy(
 
 ### <a name="parameters"></a>Parametreler
 
-*Hedef*<br/>
-Yeni bir arabellek.
+*HD*<br/>
+Yeni arabellek.
 
-*src*<br/>
-Arabellek kopyalayın.
+*YN*<br/>
+Kopyalanacak arabellek.
 
-*Sayısı*<br/>
+*biriktirme*<br/>
 Kopyalanacak karakter sayısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Değerini *dest*.
+*Hedef*değeri.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**memcpy** kopyaları *sayısı* bayt *src* için *dest*; **wmemcpy** kopyaları *sayısı* geniş karakterler (iki bayt). Kaynak ve hedef örtüştürürse davranışını **memcpy** tanımsızdır. Kullanım **memmove** çakışan bölgeleri işlemek için.
+**memckay** , *src* 'den *hedefe*kadar olan *sayıları* bayt olarak kopyalar; **wmemcpy** kopya *sayısı* geniş karakter (iki bayt). Kaynak ve hedef çakışırsa, **memcservicebehavior** davranışı tanımsızdır. Çakışan bölgeleri işlemek için **memmove** kullanın.
 
 > [!IMPORTANT]
-> Boyutta veya daha büyük kaynak arabelleği hedef arabellek aynı olduğundan emin olun. Daha fazla bilgi için [arabellek taşmalarını](/windows/desktop/SecBP/avoiding-buffer-overruns).
+> Hedef arabelleğinin boyut veya Kaynak arabelleğinden daha büyük olduğundan emin olun. Daha fazla bilgi için bkz. [arabellek taşmalarını önleme](/windows/win32/SecBP/avoiding-buffer-overruns).
 
 > [!IMPORTANT]
-> Çok fazla arabellek taşmalarını ve böylece olası güvenlik açıklarını yanlış kullanımı için izlenen olduğundan **memcpy**, bu işlev "yasaklı" işlevleri arasında Security Development Lifecycle (SDL) olarak listelenir.  Bazı VC ++ kitaplığı sınıflarını kullanmak devam ettiğini gözlemleyin **memcpy**.  Ayrıca, VC ++ derleyici iyileştiricisi bazen çağrıları yayan gözlemleyin **memcpy**.  Visual C++ ürün SDL işlemine uygun olarak geliştirilir ve bu nedenle bu yasaklı işlevi kullanımını yakından değerlendirildi.  Kitaplık söz konusu olduğunda çağrıları dikkatle arabellek taşmalarına bu çağrılar izin verilmiyor emin olmak için scrutinized, bunu kullanın.  Derleyicinin söz konusu olduğunda, bazen belirli kod desenleri desenini aynı tanınır **memcpy**ve bu nedenle işlevine bir çağrı ile değiştirilir.  Böyle durumlarda, kullanımını **memcpy** özgün değerinden daha fazla güvenli değil yönergeleri olabilirdi; bunlar yalnızca performans olarak ayarlanmış bir çağrı için iyileştirilmiş **memcpy** işlevi.  "Güvenli" CRT işlevlerinin kullanımını (bunlar olmanız yeterlidir, daha güvenli olmasını), güvenlik garanti etmez gibi "yasaklı" işlevlerin kullanımını (yalnızca duydukları güvenliği sağlamak için büyük scrutiny) tehlike garanti etmez.
+> Bu nedenle çok sayıda arabellek taşması ve bu nedenle olası güvenlik açıkları, **memcler**'in hatalı kullanımıyla izlenmediğinden, bu Işlev güvenlik geliştirme yaşam döngüsü (SDL) tarafından "yasaklanmış" işlevler arasında listelenir.  Bazı VC + + kitaplık sınıflarının memcleyde kullanmaya devam edipedebiliriz.  Ayrıca, VC + + derleyici iyileştiricinin bazen memcleya çağrıları yaydığıgözlemleyebilirsiniz.  Görsel C++ ürün, SDL işlemine uygun olarak geliştirilmiştir ve bu nedenle bu yasaklanmış işlevin kullanımı yakından değerlendirilir.  Kitaplık kullanımı durumunda, bu çağrılar aracılığıyla arabellek taşmalarına izin verilmeyeceğini sağlamak için çağrılar dikkatle scrutinized.  Derleyici söz konusu olduğunda bazen bazı kod desenleri **memctable**deseniyle aynı şekilde tanınır ve bu nedenle, işlev çağrısıyla değiştirilmiştir.  Bu gibi durumlarda, **memckopyala** kullanımı özgün yönergelerden daha güvenli değildir; Bunlar, performansı ayarlanmış **memcler** işlevine yapılan bir çağrıya en iyi duruma getirilmiştir.  "Güvenli" CRT işlevlerinin kullanılması güvenliği garanti etmez (yalnızca güvenli olmaması önerilir), "yasaklanmış" işlevlerinin kullanılması olma tehlikesi 'yi garanti etmez (yalnızca güvenliği sağlamak için daha fazla scrlanlı olması gerekir).
 >
-> Çünkü **memcpy** VC ++ derleyicisini ve kütüphanelerini kullanımını bu nedenle dikkatli bir şekilde scrutinized, aksi takdirde SDL ile uyumlu kod içinde bu çağrıları izin verilir.  **memcpy** çağrıları uygulamanın kaynak kodunda sunulan bazı yalnızca SDL ile uyumlu kullanan güvenlik uzmanları tarafından gözden geçirilir.
+> VC + + derleyicisi ve kitaplıklar tarafından daha dikkatli scrutinized olduğundan, bu çağrılara, başka BIR şekilde SDL ile uyumlu olan kod içinde izin verilir.  uygulama kaynak kodunda tanıtılan **memcler** çağrıları yalnızca, bu kullanım güvenlik uzmanları tarafından incelenmek için SDL ile uyumludur.
 
-**Memcpy** ve **wmemcpy** işlevleri yalnızca kullanımdan kaldırılacaktır varsa sabiti **_CRT_SECURE_DEPRECATE_MEMORY** ekleme deyimi için sırayla önce tanımlanır kullanım dışı, aşağıdaki örnekte olduğu gibi olmasını İşlevler:
+**Memcler** ve **wmemcpy** işlevleri, işlevlerin kullanım dışı olması için, aşağıdaki örnekte olduğu gibi, yalnızca sabit **_CRT_SECURE_DEPRECATE_MEMORY** , ekleme ifadesiyle önce tanımlanırsa kullanım dışı bırakılır:
 
 ```C
 #define _CRT_SECURE_DEPRECATE_MEMORY
@@ -95,14 +95,14 @@ veya
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**memcpy**|\<Memory.h > veya \<string.h >|
-|**wmemcpy**|\<wchar.h >|
+|**memcpy**|\<Memory. h > veya \<String. h >|
+|**wmemcpy**|\<wchar. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
-Bkz: [memmove](memmove-wmemmove.md) nasıl kullanılacağını gösteren bir örnek **memcpy**.
+**Memckopyala**'nın nasıl kullanılacağına ilişkin bir örnek için bkz. [memmove](memmove-wmemmove.md) .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

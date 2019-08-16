@@ -1,5 +1,5 @@
 ---
-title: Simgeler (C++) için görüntü Düzenleyicisi
+title: Simgeler (C++) Için görüntü Düzenleyicisi
 ms.date: 02/15/2019
 f1_keywords:
 - vc.editors.cursor.F1
@@ -42,176 +42,176 @@ helpviewer_keywords:
 - Image editor [C++], grid settings
 - grid settings, Image editor
 ms.assetid: 586d2b8b-0348-4883-a85d-1ff0ddbf14dd
-ms.openlocfilehash: c411c4b95fcd3866c897f04b70da7cbb2b48ba28
-ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
+ms.openlocfilehash: 0f8fe228b804538b6a0d0377f05d79c34e787587
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66504314"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69514224"
 ---
-# <a name="image-editor-for-icons-c"></a>Simgeler (C++) için görüntü Düzenleyicisi
+# <a name="image-editor-for-icons-c"></a>Simgeler (C++) Için görüntü Düzenleyicisi
 
-İçinde bir görüntü dosyası (.ico, .bmp, .png) seçtiğinizde **Çözüm Gezgini**, görüntünün açılır **Resim Düzenleyicisi** kod dosyaları açmak aynı şekilde **Kod Düzenleyicisi** . Olduğunda bir **Resim Düzenleyicisi** sekmesi etkin olduğu, görüntü oluşturmaya ve düzenlemeye için birçok araç çubuklarıyla göreceksiniz. Bit eşlemler, simgeler ve imleçlerin yanı sıra komutlarını kullanarak GIF veya JPEG biçimindeki görüntüleri de düzenleyebilirsiniz **görüntü** menü ve araçları **Resim Düzenleyicisi** araç çubuğu.
+**Çözüm Gezgini**' de bir görüntü dosyası (. ico,. bmp,. png gibi) seçtiğinizde, görüntü, kod **Düzenleyicisi**'nde kod dosyalarının açtığı şekilde **görüntü düzenleyicisinde** açılır. Bir **Görüntü Düzenleyicisi** sekmesi etkin olduğunda, görüntü oluşturma ve düzenleme için birçok araç içeren araç çubuklarını görürsünüz. Bit eşlemler, simgeler ve imleçlerle birlikte, resim **Düzenleyicisi** araç çubuğundaki **görüntü** menüsü ve araçlar 'daki komutları kullanarak GIF veya JPEG biçimindeki görüntüleri düzenleyebilirsiniz.
 
-Grafik kaynakları uygulamanız için tanımladığınız görüntüleridir. Freehand çizin veya şekilleri kullanarak çizin. Düzenleme, çevirme veya yeniden boyutlandırma için görüntünün parçalarını seçebilir veya seçili bir görüntü bölümünden özel bir fırça oluştur ve bu fırça ile çizin. Görüntü özelliklerini tanımlayın, görüntüleri farklı biçimlerde kaydetme ve görüntülerini bir biçimden diğerine dönüştürme.
-
-> [!NOTE]
-> Kullanarak **Resim Düzenleyicisi**, 32 bitlik resimleri görüntüleyebilirsiniz, ancak onları düzenleyemezsiniz.
-
-Ayrıca **Resim Düzenleyicisi** ve [ikili düzenleyici](binary-editor.md) yönetilen projelerde kaynak dosyalarıyla çalışmak için. Düzenlemek istediğiniz yönetilen kaynaklar, bağlı kaynaklar olmalıdır. Visual Studio kaynak düzenleyicileri eklenmiş kaynakları düzenlemeyi desteklemez.
-
-Yeni grafik kaynakları oluşturmaya ek olarak, şunları yapabilirsiniz [var olan görüntülerden alma](../windows/how-to-copy-resources.md#import-and-export-resources) düzenleme ve projenize ekleyin. Ayrıca açabilir ve düzenlemek için bir projenin parçası olmayan görüntüleri [tek başına resim düzenleme](../windows/editing-an-image-outside-of-a-project-image-editor-for-icons.md).
-
-Hakkında bilgi için **görüntü Düzenleyicisi**, bkz. nasıl [bir simge veya diğer görüntü oluşturma](../windows/creating-an-icon-or-other-image-image-editor-for-icons.md), [görüntü Düzenle](../windows/selecting-an-area-of-an-image-image-editor-for-icons.md), [çizim aracı kullanma](../windows/using-a-drawing-tool-image-editor-for-icons.md), [Renklerle çalışma](../windows/working-with-color-image-editor-for-icons.md), ve [kısayol tuşları](../windows/accelerator-keys-image-editor-for-icons.md).
+Grafik kaynakları, uygulamanız için tanımladığınız görüntülerdir. Şekilleri kullanarak serbest çizim veya çizim yapabilirsiniz. Bir görüntünün parçalarını düzenleyebilir, açabilir veya yeniden boyutlandırabilir veya bir görüntünün seçili bir bölümünden özel bir fırça oluşturabilir ve bu fırçayla çizim yapabilirsiniz. Görüntü özelliklerini tanımlayabilir, görüntüleri farklı biçimlerde kaydedebilir ve görüntüleri bir biçimden diğerine dönüştürebilirsiniz.
 
 > [!NOTE]
-> Ücretsiz olarak indirin **Visual Studio görüntü kitaplığı** birçok animasyon, bit eşlemler ve uygulamalarınızda kullanabileceğiniz simgeler içeriyor. Kitaplığı indirme hakkında daha fazla bilgi için bkz. [Visual Studio görüntü kitaplığı](/visualstudio/designers/the-visual-studio-image-library).
+> **Görüntü düzenleyicisini**kullanarak, 32 bitlik görüntüleri görüntüleyebilirsiniz, ancak düzenleyemezsiniz.
+
+Yönetilen projelerde kaynak dosyalarıyla çalışmak için **resim düzenleyicisini** ve [ikili düzenleyiciyi](binary-editor.md) de kullanabilirsiniz. Düzenlemek istediğiniz yönetilen kaynaklar, bağlı kaynaklar olmalıdır. Visual Studio kaynak düzenleyicileri gömülü kaynakları düzenlemenizi desteklemez.
+
+Yeni grafik kaynakları oluşturmaya ek olarak, [var olan görüntüleri](../windows/how-to-copy-resources.md#import-and-export-resources) düzenleyebilir ve ardından projenize ekleyebilirsiniz. Ayrıca, [tek başına görüntü düzenleme](../windows/editing-an-image-outside-of-a-project-image-editor-for-icons.md)için bir projenin parçası olmayan görüntüleri açabilir ve düzenleyebilirsiniz.
+
+**Görüntü Düzenleyicisi**hakkında daha fazla bilgi için bkz. [bir simge veya başka görüntü oluşturma](../windows/creating-an-icon-or-other-image-image-editor-for-icons.md), [görüntü düzenleme](../windows/selecting-an-area-of-an-image-image-editor-for-icons.md), [Çizim Aracı kullanma](../windows/using-a-drawing-tool-image-editor-for-icons.md), [renk ile çalışma](../windows/working-with-color-image-editor-for-icons.md)ve [hızlandırıcı tuşları](../windows/accelerator-keys-image-editor-for-icons.md).
+
+> [!NOTE]
+> Uygulamalarda kullanabileceğiniz birçok animasyon, bit eşlem ve simge içeren **Visual Studio Görüntü Kitaplığı** ' nı ücretsiz indirin. Kitaplığın nasıl indirileceği hakkında daha fazla bilgi için bkz. [Visual Studio resim kitaplığı](/visualstudio/designers/the-visual-studio-image-library).
 
 ## <a name="image-menu"></a>Görüntü Menüsü
 
-**Görüntü** yalnızca görüntülenen menü **görüntü Düzenleyicisi** etkin, görüntüleri düzenleme, renk paletlerini yönetmek ve ayarlamak için komutlarını **Resim Düzenleyicisi** penceresi Seçenekler. Ayrıca, simgeler ve İmleçler ile çalışırken komutları kullanarak cihaz görüntüleri için kullanılabilir.
+Yalnızca **Görüntü Düzenleyicisi** etkinken görüntülenen **görüntü** menüsü, görüntüleri düzenleme, renk paletleri yönetme ve **Görüntü Düzenleyicisi** pencere seçeneklerini ayarlama komutlarına sahiptir. Ayrıca, simgeler ve imleçlerle çalışırken cihaz görüntülerini kullanmaya yönelik komutlar kullanılabilir.
 
 |Komut|Açıklama|
 |---|---|
-|**Renkleri ters çevir**|Renkleri tersine çevirir.|
-|**Yatay Çevir**|Görüntüyü ya da seçimi yatay çevirir.|
-|**Dikey Çevir**|Görüntüyü ya da seçimi dikey çevirir.|
-|**90 derece döndür**|Görüntüyü ya da seçimi 90 derece çevirir.|
-|**Renkler penceresini göster**|Açılır **renkleri** görüntünüzü kullanmak için renkleri, seçebileceğiniz penceresinde.|
-|**Seçimi fırça olarak kullanma**|Özel fırça görüntü bölümünden oluşturmanızı sağlar.<br/><br/>Seçimdeki renkleri arasında görüntüyü dağıtır özel bir fırça seçiminizi olur. Seçimin bir kopyasını sürükleyerek yol boyunca bırakılır. Daha yavaş sürükleyin, kopya yapılmaz.|
-|**Kopyalama ve ana hat seçimi**|Geçerli seçimin bir kopyasını oluşturur ve bunu açıklar.<br/><br/>Arka plan rengi geçerli seçimse, içeriyorsa, saydam varsa hariç tutulacaktır seçili.
-|**Renkleri Ayarla**|Açılır **özel renk seçici**, görüntünüzü kullanmak renkleri özelleştirme sağlar.|
-|**Palet yükle**|Açılır **renk paletini yük** .pal dosyaya daha önce kaydettiğiniz palet renkleri yükle olanak tanıyan iletişim kutusu.|
-|**Palet Kaydet**|Palet renkleri .pal dosyaya kaydeder.|
-|**Donuk Çiz**|Bu onay kutusu seçildiğinde, geçerli seçimi opak yapar.<br/><br/>Bu onay kutusu temizlenirse, geçerli seçimi saydam hale getirir.|
-|**Araç Çubuğu Düzenleyicisi**|Açılır [yeni araç çubuğu kaynağı iletişim kutusu](../windows/new-toolbar-resource-dialog-box.md).|
-|**Kılavuz ayarları**|Açılır **Kılavuz ayarları** içinde belirtebilirsiniz Kılavuzlar görüntünüzü iletişim kutusu.|
-|**Yeni görüntü tipi**|Açılır [yeni \<cihaz > görüntü türü iletişim kutusu](../windows/new-device-image-type-dialog-box-image-editor-for-icons.md).<br/><br/>Tek bir simge kaynak birkaç görüntüyü farklı boyutlardaki içerebilir ve windows görüntülenecek nasıl kolaylaştıracağını bağlı olarak uygun bir simge boyutu kullanabilirsiniz. Yeni bir cihaz türü simge boyutunu değiştirmez, ancak bunun yerine simgesi içinde yeni bir görüntü oluşturur. Yalnızca, simgeler ve İmleçler için geçerlidir.|
-|**Geçerli simge/imleç görüntü tipi**|İlk dokuz kullanılabilir işaretçi veya simge görüntülerini listeleyen bir alt menü açılır. Son komut, alt **daha fazla**, açılır [açık \<cihaz > Görüntü iletişim kutusu](../windows/open-device-image-dialog-box-image-editor-for-icons.md).|
-|**Görüntü türünü Sil**|Seçili cihaz görüntüsünü siler.|
-|**Araçlar**|Kullanılabilir olan tüm araçları içeren bir alt başlatır **Resim Düzenleyicisi** araç çubuğu.|
+|**Renkleri ters çevir**|Renklerinizi tersine çevirir.|
+|**Yatay Çevir**|Görüntüyü veya seçimi yatay olarak çevirir.|
+|**Dikey Çevir**|Görüntüyü veya seçimi dikey olarak çevirir.|
+|**90 derece döndür**|Görüntüyü veya seçimi 90 derece döndürür.|
+|**Renkler penceresini göster**|Görüntü için kullanılacak renkleri seçebileceğiniz **renkler** penceresini açar.|
+|**Seçimi fırça olarak kullan**|Görüntünün bir kısmından özel bir fırça oluşturmanıza olanak sağlar.<br/><br/>Seçiminiz, seçimdeki renkleri görüntüde dağıtan özel bir fırça haline gelir. Seçimin kopyaları sürükleme yolu üzerinde bırakılır. Ne kadar yavaş sürüklediğiniz, daha fazla kopya yapılır.|
+|**Seçimi Kopyala ve Seviyelendir**|Geçerli seçimin bir kopyasını oluşturur ve bu seçimi özetler.<br/><br/>Arka plan rengi geçerli seçimde yer alıyorsa, saydam seçiliyse, bu, dışarıda bırakılır.
+|**Renkleri ayarla**|Resminizin sizin için kullandığınız renkleri özelleştirmenizi sağlayan **özel renk seçiciyi**açar.|
+|**Palet Yükle**|Daha önce bir. pal dosyasına kaydedilen palet renklerini yükleyebilirsiniz.|
+|**Paleti Kaydet**|Palet renklerini bir. pal dosyasına kaydeder.|
+|**Donuk Çiz**|Seçildiğinde, geçerli seçimi donuk hale getirir.<br/><br/>Kaldırıldığında, geçerli seçimi saydam hale getirir.|
+|**Araç Çubuğu Düzenleyicisi**|[Yeni araç çubuğu kaynağı iletişim kutusunu](../windows/new-toolbar-resource-dialog-box.md)açar.|
+|**Kılavuz ayarları**|Görüntünüzün kılavuzlarını belirtebileceğiniz **Kılavuz ayarları** iletişim kutusunu açar.|
+|**Yeni görüntü türü**|[ Yeni\<cihaz > görüntü türü iletişim kutusunu](../windows/new-device-image-type-dialog-box-image-editor-for-icons.md)açar.<br/><br/>Tek bir simge kaynağı farklı boyutlarda birkaç görüntü içerebilir ve Windows, nasıl görüntüleneceklerinize bağlı olarak uygun simge boyutunu kullanabilir. Yeni bir cihaz türü simgenin boyutunu değiştirmez, bunun yerine simgenin içinde yeni bir görüntü oluşturur. Yalnızca simgeler ve imleçler için geçerlidir.|
+|**Geçerli simge/Imleç resim türü**|Kullanılabilir ilk dokuz imleç veya simge görüntüsünü listeleyen bir alt menü açar. Alt menüdeki son komut, **daha fazla**, [Cihaz > görüntüsü aç \<iletişim kutusunu](../windows/open-device-image-dialog-box-image-editor-for-icons.md)açar.|
+|**Görüntü türünü sil**|Seçili cihaz görüntüsünü siler.|
+|**Araçlar**|**Görüntü Düzenleyicisi** araç çubuğundan kullanılabilen tüm araçları içeren bir alt menü başlatır.|
 
-**Kılavuz ayarları** iletişim kutusunda, görüntünüzü için kılavuz ayarları belirtmenize olanak tanır ve düzenlenen görüntüsünden kılavuz çizgilerini görüntüler. Satırları düzenleme görüntüsü için yararlıdır, ancak görüntünün kendisi bir parçası olarak kaydedilmez.
+**Kılavuz ayarları** iletişim kutusu görüntünüzün kılavuz ayarlarını belirtmenize ve düzenlenmiş görüntü üzerinde kılavuz çizgileri görüntülemenize olanak sağlar. Satırlar görüntünün düzenlenmesinde faydalıdır, ancak görüntünün bir parçası olarak kaydedilmez.
 
 |Özellik|Açıklama|
 |---|---|
-|**Piksel Kılavuzu**|Bu onay kutusu işaretlendiğinde, her pikselin etrafında bir kılavuz görüntüler **Resim Düzenleyicisi**.<br/><br/>Kılavuz, yalnızca 4 × ve daha yüksek çözünürlüklerde görünür.|
-|**Döşeme**|Bu onay kutusu seçildiğinde, piksel cinsinden bloklarını etrafında bir kılavuz görüntüler **Resim Düzenleyicisi**, kılavuz aralık değerleri tarafından belirtilen.|
-|**Genişlik**|Her kutucuk bloğunun genişliğini belirtir.<br/><br/>Bu özellik, düzenli aralıklarla düzenlenmiş birden fazla görüntü içeren bir bit eşlem yeniden çizilirken yararlıdır.|
-|**Yükseklik**|Her kutucuk blok yüksekliğini belirtir.<br/><br/>Bu özellik, düzenli aralıklarla düzenlenmiş birden fazla görüntü içeren bir bit eşlem yeniden çizilirken yararlıdır.|
+|**Piksel Kılavuzu**|İşaretlendiğinde, **görüntü düzenleyicisinde**her bir pikselin etrafında bir kılavuz görüntüler.<br/><br/>Kılavuz yalnızca 4 × ve daha yüksek çözünürlükte görünür.|
+|**Kutucuk Kılavuzu**|Seçildiğinde, ızgara aralığı değerleriyle belirtilen **görüntü düzenleyicisinde**piksel blokları etrafında bir kılavuz görüntüler.|
+|**Genişlik**|Her döşeme bloğunun genişliğini belirtir.<br/><br/>Bu özellik, düzenli aralıklarla düzenlenmiş birden çok görüntü içeren bit eşlemler çizerken yararlıdır.|
+|**Yükseklik**|Her döşeme bloğunun yüksekliğini belirtir.<br/><br/>Bu özellik, düzenli aralıklarla düzenlenmiş birden çok görüntü içeren bit eşlemler çizerken yararlıdır.|
 
 ## <a name="toolbar"></a>Araç Çubuğu
 
-**Resim Düzenleyicisi** araç çubuğu çizim, boyama, metin girme, silme ve görünüm işlemek için araçları içerir. Ayrıca, her aracını kullanma seçenekleri seçebilirsiniz bir seçenek belirleyici içerir. Örneğin, çeşitli fırça genişlikleri, büyütme faktörleri ve satır stilleri seçebilirsiniz.
+**Resim Düzenleyicisi** araç çubuğu çizim, boyama, metin girme, silme ve görünümleri düzenleme araçlarını içerir. Ayrıca, her bir aracı kullanma seçeneklerini seçebileceğiniz bir seçenek seçici de içerir. Örneğin, çeşitli fırça genişlikleri, büyütme faktörleri ve çizgi stilleri arasından seçim yapabilirsiniz.
 
-Tüm araçlar kullanılabilir **Resim Düzenleyicisi** araç çubuğu menüsü'nden kullanılabilir ayrıca **görüntü** > **Araçları**. Kullanılacak **Resim Düzenleyicisi** araç ve **seçeneği** Seçici, Aracı'nı seçin veya istediğiniz seçeneği.
+**Görüntü Düzenleyicisi** araç çubuğundaki tüm araçlar, menü **görüntüsü** > **araçlarından**de kullanılabilir. **Görüntü Düzenleyicisi** araç çubuğunu ve **seçenek** seçiciyi kullanmak için istediğiniz aracı veya seçeneği seçin.
 
-![Resim Düzenleyicisi araç çubuğu](../mfc/media/vcimageeditortoolbar.gif "vcImageEditorToolbar")<br/>
+![Görüntü Düzenleyicisi araç çubuğu](../mfc/media/vcimageeditortoolbar.gif "Vcımageeditortoolbar")<br/>
 **Görüntü Düzenleyicisi** araç çubuğu
 
 > [!TIP]
-> İmlecinizi bir araç çubuğu düğmenin üzerine geldiğinizde araç ipuçlarında görünür. Bu ipuçları her düğmesinin işlevini belirlemenize yardımcı olabilir.
+> İmleci bir araç çubuğu düğmesinin üzerine getirdiğinizde araç ipuçları görüntülenir. Bu ipuçları, her düğmenin işlevini belirlemenize yardımcı olabilir.
 
-Çizim araçlarından birçoğunu kullanılabilir olduğundan [klavye](../windows/accelerator-keys-image-editor-for-icons.md), gizlemek bazen kullanışlıdır **Resim Düzenleyicisi** araç çubuğu.
+[Klavyede](../windows/accelerator-keys-image-editor-for-icons.md)birçok çizim aracı kullanılabilir olduğundan, bazen **resim Düzenleyicisi** araç çubuğunu gizlemek yararlı olur.
 
-- Göstermek veya gizlemek için **Resim Düzenleyicisi** araç menüsüne gidin **görünümü** > **araç çubukları** ve **Resim Düzenleyicisi**.
+- **Görüntü Düzenleyicisi** araç çubuğunu görüntülemek veya gizlemek için menü **Görünüm** > **araç çubukları** ' na gidin ve **Görüntü Düzenleyicisi**' ni seçin.
 
 > [!NOTE]
-> Bu araç çubuğu öğeleri görünür bir resim dosyası olduğunda kullanılamaz geçerli projeden veya çözüm değil Aç **Resim Düzenleyicisi**.
+> Geçerli projeden veya çözümden bir görüntü dosyası **görüntü düzenleyicisinde**açık olmadığında, bu araç çubuğundan öğeler kullanılamaz görünür.
 
 ### <a name="option-selector"></a>Seçenek belirleyici
 
-İle **seçeneği** Seçici genişliğini bir satır, bir fırça vuruşu ve daha fazlasını belirtebilirsiniz. Simgeye **seçeneği** seçtiğiniz bağlı olarak hangi aracın Seçici değişir.
+**Seçenek** seçiciyle bir çizginin genişliğini, fırça darbesini ve daha fazlasını belirtebilirsiniz. **Seçenek** seçici düğmesindeki simge, seçtiğiniz araca bağlı olarak değişir.
 
-![Çizim&#45;şekli Seçici görüntü düzenleyici araç çubuğunda](../mfc/media/vcimageeditortoolbaroptionselector.gif "vcImageEditorToolbarOptionSelector")<br/>
-**Seçenek** seçicisinde **Resim Düzenleyicisi** araç çubuğu
+![Resim&#45;Düzenleyicisi araç çubuğunda şekil Seçicisi çizme](../mfc/media/vcimageeditortoolbaroptionselector.gif "Vcımageeditortoolbaroptionselector")<br/>
+**Görüntü Düzenleyicisi** araç çubuğundaki **seçenek** seçici
 
 ### <a name="text-tool"></a>Metin aracı
 
-Kullanım **metin aracı** imleç, bit eşlem ve simge kaynak metin eklemek için iletişim kutusu.
+Bir imlece, bit eşlem ya da simge kaynağına metin eklemek için **metin aracı** iletişim kutusunu kullanın.
 
-Bu iletişim kutusuna erişmek için açık **Resim Düzenleyicisi** ve menüsüne gidin **görüntü** > **Araçları**, ardından **metin aracı** komutu.
+Bu iletişim kutusuna erişmek için, **görüntü düzenleyicisini** açın ve menü **görüntüsü** > **araçları**' na gidin ve **metin aracı** komutunu seçin.
 
 > [!TIP]
-> Sağ tıklayabilirsiniz **metin aracı** standart Windows komutların bir listesini içeren bir varsayılan kısayol menüsüne erişmek için iletişim kutusu.
+> Standart Windows komutlarının bir listesini içeren bir varsayılan kısayol menüsüne erişmek için **metin aracı** iletişim kutusuna sağ tıklayabilirsiniz.
 
-Açık **metin aracı yazı tipi** iletişim kutusu, yazı tipi, stil veya imleç yazı tipi boyutunu değiştirmek için. Değişiklikleri görüntülenen metni uygulanır **metin** alan.
+İmleç yazı tipinin yazı tipini, stilini veya boyutunu değiştirmek için **metin aracı yazı tipi** iletişim kutusunu açın. Değişiklikler **metin** alanında görüntülenen metne uygulanır.
 
-Bu iletişim kutusuna erişmek için seçin **yazı tipi** düğmesine **metin aracı** iletişim kutusu. Kullanılabilir özellikler şunlardır:
+Bu iletişim kutusuna erişmek için **metin aracı** Iletişim kutusunda **yazı tipi** düğmesini seçin. Kullanılabilen özellikler şunlardır:
 
 |Özellik|Açıklama|
 |---|---|
-|**Yazı tipi**|Yazı tiplerini listeler.|
+|**Yazı tipi**|Kullanılabilir yazı tiplerini listeler.|
 |**Yazı tipi stili**|Belirtilen yazı tipi için kullanılabilir stilleri listeler.|
-|**Boyutu**|Belirtilen yazı tipi noktası kullanılabilir boyutları listeler.|
-|**Örnek**|Metnin belirtilen yazı tipi ayarlarını ile nasıl görüneceğini gösterir.|
-|**Komut Dosyası**|Belirtilen yazı tipi kullanılabilir dil kodları listeler.<br/><br/>Farklı dil komut dosyasını seçin, karakter için dil, çok dilli belgeleri oluşturmak için kullanılabilir duruma ayarlanır.|
+|**Boyutla**|Belirtilen yazı tipi için kullanılabilir nokta boyutlarını listeler.|
+|**Örnekli**|Metnin, belirtilen yazı tipi ayarlarıyla nasıl görüneceğini gösteren bir örnek gösterir.|
+|**Komut Dosyası**|Belirtilen yazı tipi için kullanılabilir dil betiklerini listeler.<br/><br/>Farklı bir dil betiği seçtiğinizde, bu dilin karakter kümesi çok dilli belgeler oluşturmak için kullanılabilir hale gelir.|
 
 #### <a name="to-change-the-font-of-text-on-an-image"></a>Görüntüdeki metnin yazı tipini değiştirmek için
 
-Bir Windows uygulamasındaki bir simge metin ekleyin ve yazı tipi, metin işlemek nasıl bir örnek aşağıda verilmiştir.
+Aşağıda, bir Windows uygulamasındaki simgeye metin ekleme ve metninizin yazı tipini değiştirme örnekleri verilmiştir.
 
-1. Bir C++ Windows Forms uygulaması oluşturun. Ayrıntılar için bkz [nasıl yapılır: Windows Forms uygulamaları oluşturma](/previous-versions/visualstudio/visual-studio-2008/s69bf10x(v%3dvs.90)). Bir *n app.ico* dosya varsayılan olarak projenize eklenir.
+1. C++ Windows Forms uygulaması oluşturun. Ayrıntılar için bkz [. nasıl yapılır: Windows Forms uygulamalar](/previous-versions/visualstudio/visual-studio-2008/s69bf10x(v%3dvs.90))oluşturun. Varsayılan olarak projenize bir *app. ico* dosyası eklenir.
 
-1. İçinde **Çözüm Gezgini**, dosyayı çift *n app.ico*. **Resim Düzenleyicisi** açılır.
+1. **Çözüm Gezgini**' de *app. ico*dosyasına çift tıklayın. **Görüntü Düzenleyicisi** açılır.
 
-1. Menü Git **görüntü** > **Araçları** seçip **metin aracı**.
+1. Menü **görüntü** > **araçları** ' na gidin ve **metin aracı**' nı seçin.
 
-1. İçinde **metin aracı** iletişim kutusuna *C++* boş metin alanında. Bu metin kutusunda sol üst köşedeki bir yeniden boyutlandırılabilir görünür *n app.ico* içinde **Resim Düzenleyicisi**.
+1. **Metin aracı** iletişim kutusunda boş metin alanına yazın *C++* . Bu metin, **görüntü düzenleyicisinde** *app. ico* öğesinin sol üst köşesinde bulunan yeniden boyutlandırılabilir bir kutu içinde görüntülenir.
 
-1. İçinde **Resim Düzenleyicisi**, yeniden boyutlandırılabilir kutusu ortasına sürükleyin *n app.ico* metnin okunabilirliğini geliştirmek için.
+1. **Görüntü düzenleyicisinde**, metninizin okunabilirliğini geliştirmek için yeniden boyutlandırılabilir kutusunu *app. ico* ' ın ortasına sürükleyin.
 
-1. İçinde **metin aracı** iletişim kutusunda **yazı tipi** düğmesi.
+1. **Metin aracı** Iletişim kutusunda **yazı tipi** düğmesini seçin.
 
-1. İçinde **metin aracı yazı tipi** iletişim kutusunda:
+1. **Metin araç yazı tipi** iletişim kutusunda:
 
-   - Seçin **Times yeni Roman** listelenen tiplerinin listesinden **yazı tipi** liste kutusu.
+   - **Yazı tipi** liste kutusunda listelenen kullanılabilir Fontlar listesinden **Times New Roman** ' u seçin.
 
-   - Seçin **kalın** listelenen kullanılabilir yazı tipi stillerini listesinden **yazı tipi stili** liste kutusu.
+   - **Yazı tipi stili** liste kutusunda listelenen kullanılabilir yazı tipi stilleri listesinden **kalın** ' ı seçin.
 
-   - Seçin **10** listesinden kullanılabilir boyutları listelenen noktası **boyutu** liste kutusu.
+   - **Boyut** liste kutusunda listelenen kullanılabilir nokta boyutları listesinden **10** ' u seçin.
 
-   - **Tamam**’ı seçin. **Metin aracı yazı tipi** iletişim kutusunu kapatmak ve yeni yazı tipi ayarlarını metninize uygulanır.
+   - **Tamam**’ı seçin. **Metin aracı yazı tipi** iletişim kutusu kapanır ve yeni yazı tipi ayarları metninizi uygular.
 
-1. Seçin **Kapat** üzerinde **metin aracı** iletişim kutusu. Yeniden boyutlandırılabilir kutu çevresinde, metin alanından kaybolur **Resim Düzenleyicisi**.
+1. **Metin aracı** Iletişim kutusunda **Kapat** ' ı seçin. Metninizin çevresindeki yeniden boyutlandırılabilir kutu, **görüntü düzenleyicisinden**kaybolacaktır.
 
-Metin alanı kaynağının bir parçası olarak görünen metni görüntüler. Başlangıçta bu alan boştur.
+Metin alanı, kaynağın bir parçası olarak görüntülenen metni görüntüler. Başlangıçta bu alan boştur.
 
 > [!NOTE]
-> Varsa **saydam arka plan** , yalnızca metin görüntüsüne yerleştirilir ayarlanmış. Varsa **donuk arka plan** , arka plan rengi ile doldurulmuş sınırlayıcı bir dikdörtgen metnin arkasına yerleştirilecek ayarlanmış.
+> **Saydam arka plan** ayarlandıysa, yalnızca metin görüntüye yerleştirilir. **Donuk arka plan** ayarlandıysa, arka plan rengiyle doldurulan bir sınırlayıcı dikdörtgen metnin arkasına yerleştirilir.
 
 ## <a name="window-panes"></a>Pencere Bölmeleri
 
-**Resim Düzenleyicisi** görüntünün iki bölme çubukla bölme ile iki Görünüm penceresi gösterir. Bölmelerin göreli boyutlarını değiştirmek için bölme çubuğunu yanlara doğru sürükleyebilirsiniz. Etkin bölmede bir seçim kenarlığı görüntülenir.
+**Resim Düzenleyicisi** penceresi, iki bölmeyi ayıran bölünmüş bir çubukla bir görüntünün iki görünümünü gösterir. Bölmelerin göreli boyutlarını değiştirmek için bölme çubuğunu yanlara doğru sürükleyebilirsiniz. Etkin bölmede bir seçim kenarlığı görüntülenir.
 
-Gerçek boyut bir görünümüdür ve diğer 6 varsayılan büyütme faktörüyle genişletilir. Bu iki bölme görünümlerde otomatik olarak güncelleştirilir, bir bölmesinde yaptığınız tüm değişiklikler hemen diğer gösterilir. İki bölme içinde tek tek her piksel ayırmak ve kullanabilirsiniz, aynı zamanda, görüntünün boyutu gerçek görünümünü iş etkisi gözlemleyin görüntünüzü genişletilmiş bir görünüm üzerinde çalışmayı kolaylaştırır.
+Bir görünüm gerçek boyutudur ve diğeri ise 6 ' nın varsayılan büyütme faktörüyle genişletilir. Bu iki bölmedeki görünümler otomatik olarak güncelleştirilir, bir bölmeden yaptığınız tüm değişiklikler hemen diğer bir bölmede gösterilir. İki bölme görüntünüzün büyütülmüş bir görünümünde çalışmanızı kolaylaştırır. Bu, tek tek pikselleri ayırabilmeniz ve aynı anda, görüntünün gerçek boyutlu görünümünde çalışmalarınızın etkisini gözlemleyebilirsiniz.
 
-Sol bölmede gerektiği kadar bu alanı kullanır (en fazla yarısını **görüntü** pencere) görüntünüzün varsayılan 1:1 büyütme görüntülemek için. Sağ bölmede, varsayılan 6:1 büyütme yakınlaştırılmış görüntüsünü görüntüler. Her bölmesini kullanarak büyütme değiştirebilirsiniz **Magnıfy** aracındaki **Resim Düzenleyicisi** araç veya kısayol tuşları kullanarak.
+Sol bölmede, resminizin varsayılan 1:1 büyütme görünümünü görüntülemek için gereken kadar çok alan ( **görüntü** penceresinin yarısına kadar) kullanılır. Sağ bölmede, yakınlaştırılan varsayılan 6:1 büyütme resmi görüntülenir. Her bölmedeki büyütmeyi, **Görüntü Düzenleyicisi** araç çubuğundaki **büyütme** aracını veya hızlandırıcı tuşlarını kullanarak değiştirebilirsiniz.
 
-Daha küçük bölmesinde genişletebilirsiniz **Resim Düzenleyicisi** penceresi ve büyük bir görüntü, farklı bölgelerde göstermek için iki bölme kullanın. Seçmek için içinde Bölmesi'ni seçin.
+**Görüntü Düzenleyicisi** penceresinin daha küçük bölmesini genişletebilirsiniz ve büyük bir görüntünün farklı bölgelerini göstermek için iki bölmeyi kullanabilirsiniz. Seçmek için bölmenin içini seçin.
 
-İşaretçinin bölünmüş çubuğunda konumlandırma ve bölme çubuğunu sağa veya sola taşıyarak bölmelerin göreli boyutlarını değiştirebilirsiniz. Yalnızca bir bölmesinde çalışmak istiyorsanız bölme çubuğunu taraflardan tüm taşıyabilirsiniz.
+İşaretçiyi bölme çubuğu üzerinde konumlandırarak bölme çubuğunu sağa veya sola taşıyarak, bölmelerin göreli boyutlarını değiştirebilirsiniz. Yalnızca bir bölme üzerinde çalışmak istiyorsanız bölünmüş çubuk her iki tarafa da herhangi bir şekilde hareket edebilir.
 
-Varsa **Resim Düzenleyicisi** bölmesi faktörü olarak 4 ile genişletilmiş veya daha büyük, tek tek her piksel görüntüde sınırlandıran bir piksel kılavuzunu görüntüleyebilir.
+**Resim Düzenleyicisi** bölmesi 4 veya daha büyük bir faktörle genişletilirse, görüntüdeki tek pikselleri sınırlandıran bir piksel Kılavuzu görüntüleyebilirsiniz.
 
-### <a name="to-change-the-magnification-factor"></a>Büyütme katsayısını değiştirmek için
+### <a name="to-change-the-magnification-factor"></a>Büyütme faktörünü değiştirmek için
 
-Varsayılan olarak, **Resim Düzenleyicisi** gerçek boyut ve sağ taraftaki bölmede 6 kez gerçek boyutta görünümü sol bölmesinde görünümünü görüntüler. Büyütme katsayısını (çalışma alanı altındaki durum çubuğunda görülen) resmi gerçek boyutuna ve görüntülenen boyut arasındaki oran ' dir. Varsayılan faktörü 6 ve aralık 1 ile 10.
+Varsayılan olarak, **Görüntü Düzenleyicisi** gerçek boyutun sol bölmesindeki görünümü ve sağ bölmedeki gerçek boyutta olan görünümü görüntüler. Büyütme faktörü (çalışma alanının alt kısmındaki durum çubuğunda görülen), görüntünün gerçek boyutu ile görüntülenmiş boyut arasındaki orandır. Varsayılan faktör 6 ' dır ve Aralık 1 ile 10 arasındadır.
 
-1. Seçin **Resim Düzenleyicisi** Büyütme katsayısı değiştirmek istediğiniz bölmesi.
+1. Büyütme faktörünü değiştirmek istediğiniz **Görüntü Düzenleyicisi** bölmesini seçin.
 
-1. Üzerinde **görüntü Düzenleyicisi** araç sağındaki oku seçerek **Magnıfy** katsayısını menüden seçin ve aracı: **1 X**, **2 X**, **6 X**, veya **8 X**.
+1. **Görüntü Düzenleyicisi** araç çubuğunda, **Büyüt** aracının sağındaki oku seçin ve alt menüden büyütme faktörünü seçin: **1x**, **2x**, **6x**veya **8X**.
 
    > [!NOTE]
-   > Katsayısını listelenenler dışında seçilecek **Magnıfy** aracı, kısayol tuşlarını kullanın.
+   > Büyütme aracında listelenenler dışında bir büyütme faktörü seçmek için Hızlandırıcı tuşlarını kullanın.
 
-### <a name="to-display-or-hide-the-pixel-grid"></a>Görüntülenecek veya piksel kılavuzunu Gizle
+### <a name="to-display-or-hide-the-pixel-grid"></a>Piksel kılavuzunu göstermek veya gizlemek için
 
-Tüm **Resim Düzenleyicisi** bölmeleri katsayısını 4 veya daha büyük ile tek tek her piksel görüntüde sınırlandıran bir kılavuz görüntüleyebilirsiniz.
+4 veya daha büyük bir büyütme faktörü içeren tüm **görüntü düzenleyici** bölmeleri için görüntüdeki tek pikselleri sınırlandıran bir kılavuz görüntüleyebilirsiniz.
 
-1. Menü Git **görüntü** > **Kılavuz ayarları**.
+1. Menü **resmi** > **Kılavuz ayarları**' na gidin.
 
-1. Seçin **piksel kılavuzunu** onay kutusunu kılavuz görüntülemek veya ızgarasını için onay kutusunu temizleyin.
+1. Kılavuzu göstermek için **piksel Kılavuzu** onay kutusunu seçin veya kılavuzu gizlemek için kutuyu temizleyin.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -220,4 +220,4 @@ Yok.
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Kaynak Düzenleyicileri](../windows/resource-editors.md)<br/>
-[Simgeler](/windows/desktop/menurc/icons)
+[Simgeler](/windows/win32/menurc/icons)

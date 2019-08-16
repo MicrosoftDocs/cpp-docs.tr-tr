@@ -1,21 +1,21 @@
 ---
-title: defaultvtable (C++ COM özniteliği)
+title: defaultvtable (C++ com özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.defaultvtable
 helpviewer_keywords:
 - defaultvtable attribute
 ms.assetid: 5b3ed483-f69e-44dd-80fc-952028eb9d73
-ms.openlocfilehash: 813fb9dd4edf2f6e522e7310ba1e8bfcd55ed2b9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8ab37af4deab516dc01f55f986811668737cf18c
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62147957"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69501643"
 ---
 # <a name="defaultvtable"></a>defaultvtable
 
-Varsayılan vtable arabirim bir COM nesnesi için bir arabirim tanımlar.
+Bir COM nesnesi için varsayılan vtable arabirimi olarak bir arabirimi tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -26,15 +26,15 @@ Varsayılan vtable arabirim bir COM nesnesi için bir arabirim tanımlar.
 ### <a name="parameters"></a>Parametreler
 
 *interface*<br/>
-COM nesnesi için varsayılan vtable olmasını istediğiniz belirtilen arabirim.
+COM nesnesi için varsayılan vtable 'a sahip olmasını istediğiniz belirtilen arabirim.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Defaultvtable** C++ özniteliği ile aynı işlevlere sahip [defaultvtable](/windows/desktop/Midl/defaultvtable) MIDL özniteliği.
+**Defaultvtable** C++ özniteliği, [defaultvtable](/windows/win32/Midl/defaultvtable) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod öznitelikleri kullanan bir sınıf üzerinde gösterir. **defaultvtable** bir varsayılan arabirim belirtmek için:
+Aşağıdaki kod, varsayılan bir arabirim belirtmek için **defaultvtable** kullanan bir sınıftaki öznitelikleri gösterir:
 
 ```cpp
 // cpp_attr_ref_defaultvtable.cpp
@@ -68,12 +68,12 @@ class CMyC3 : public IMyI3 {};
 
 |||
 |-|-|
-|**İçin geçerlidir**|**sınıf**, **yapısı**|
+|**Uygulama hedefi**|**sınıf**, **Yapı**|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|**coclass**|
+|**Gerekli öznitelikler**|**coclass**|
 |**Geçersiz öznitelikler**|Yok.|
 
-Daha fazla bilgi için [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
+Daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

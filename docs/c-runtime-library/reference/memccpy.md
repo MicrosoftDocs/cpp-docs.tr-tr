@@ -22,16 +22,16 @@ helpviewer_keywords:
 - _memccpy function
 - memccpy function
 ms.assetid: 9a2337df-6e85-4eba-b247-dd0532f45ddb
-ms.openlocfilehash: 5cd037974d8580b6ee90b1af736e8f2c6897fe8b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 704aab84ea3e39c91def1d4ac8b6d2d9d3650759
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62156609"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69499684"
 ---
-# <a name="memccpy"></a>_memccpy
+# <a name="_memccpy"></a>_memccpy
 
-Arabellek karakterlerinden kopyalar.
+Bir arabellekteki karakterleri kopyalar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -46,39 +46,39 @@ void *_memccpy(
 
 ### <a name="parameters"></a>Parametreler
 
-*Hedef*<br/>
+*HD*<br/>
 Hedefe yönelik işaretçi.
 
-*src*<br/>
-Kaynak için işaretçi.
+*YN*<br/>
+Kaynak işaretçisi.
 
 *c*<br/>
-Kopyalamak için son karakter.
+Kopyalamanın son karakteri.
 
-*Sayısı*<br/>
+*biriktirme*<br/>
 Karakter sayısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Varsa karakter *c* kopyalanır, **_memccpy** karakter bir işaretçi döndürür *dest* , hemen izleyen karaktere. Varsa *c* , döndürür kopyalanmaz **NULL**.
+*C* karakteri kopyalanırsa, **_memccpy** , karakterden hemen sonraki bir karakter için bir işaretçi döndürür. *C* kopyalanmadığı takdirde **null**döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Memccpy** işlevi kopyalar, 0 veya daha fazla karakter *src* için *dest*, ne zaman durdurma karakter *c* kopyalanmış veya *sayısı* karakter kopyalanır, hangisinin geldiğine ilk.
+**_Memccpy** işlevi, *src* 'nin 0 veya daha fazla karakterini *hedefe*kopyalar, *c* karakteri kopyalandığında veya *sayı* karakterleri kopyalandığında, hangisi önce gelirse.
 
-**Güvenlik Notu** boyutta veya daha büyük kaynak arabelleği hedef arabellek aynı olduğundan emin olun. Daha fazla bilgi için [arabellek taşmalarını](/windows/desktop/SecBP/avoiding-buffer-overruns).
+**Güvenlik notunun** Hedef arabelleğinin boyut veya Kaynak arabelleğinden daha büyük olduğundan emin olun. Daha fazla bilgi için bkz. [arabellek taşmalarını önleme](/windows/win32/SecBP/avoiding-buffer-overruns).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_memccpy**|\<Memory.h > veya \<string.h >|
+|**_memccpy**|\<Memory. h > veya \<String. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 
-Tüm sürümleri [C çalışma zamanı kitaplıkları](../../c-runtime-library/crt-library-features.md).
+[C çalışma zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md)tüm sürümleri.
 
 ## <a name="example"></a>Örnek
 

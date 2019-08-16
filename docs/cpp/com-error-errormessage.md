@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - ErrorMessage method [C++]
 ms.assetid: e47335b6-01af-4975-a841-121597479eb7
-ms.openlocfilehash: b1c1b5a79cdf5ee2a4a17d969d23ce0d0d85ab54
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 44fc9755cd69050ea82145636f01614258943794
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62155188"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69500586"
 ---
-# <a name="comerrorerrormessage"></a>_com_error::ErrorMessage
+# <a name="_com_errorerrormessage"></a>_com_error::ErrorMessage
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-HRESULT içinde depolanan için dize iletiyi alır `_com_error` nesne.
+`_com_error` Nesnesinde depolanan HRESULT için dize iletisini alır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -27,13 +27,13 @@ const TCHAR * ErrorMessage( ) const throw( );
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-HRESULT içinde kaydedilen için dize iletisi döndürür `_com_error` nesne. HRESULT eşlenmiş bir 16-bit ise [wCode](../cpp/com-error-wcode.md), ardından genel bir ileti "`IDispatch error #<wCode>`" döndürülür. İleti bulunursa, ardından genel bir ileti "`Unknown error #<hresult>`" döndürülür. Döndürülen dize bir Unicode ya da _UNICODE makrosu durumuna bağlı olarak, çok baytlı bir dize değil.
+`_com_error` Nesne içinde kaydedilen HRESULT için dize iletisi döndürür. HRESULT eşlenmiş bir 16 bit [wCode](../cpp/com-error-wcode.md)ise "`IDispatch error #<wCode>`" genel iletisi döndürülür. Hiçbir ileti bulunamazsa, "`Unknown error #<hresult>`" genel iletisi döndürülür. Döndürülen dize, _UNICODE makrosunun durumuna bağlı olarak Unicode veya çok baytlı bir dizedir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-HRESULT içinde kaydedilen için uygun sistem ileti metni alır `_com_error` nesne. Sistem ileti metni Win32 çağırılarak alınır [FormatMessage](/windows/desktop/api/winbase/nf-winbase-formatmessage) işlevi. Tarafından döndürülen dize ayrılan `FormatMessage` API ve serbest bırakıldığında `_com_error` nesnesi yok edildiğinde.
+`_com_error` Nesne içinde kaydedilen HRESULT için uygun sistem iletisi metnini alır. Sistem ileti metni, Win32 [FormatMessage](/windows/win32/api/winbase/nf-winbase-formatmessage) işlevi çağırarak elde edilir. Döndürülen dize `FormatMessage` API tarafından ayrılır ve `_com_error` nesne yok edildiğinde serbest bırakılır.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

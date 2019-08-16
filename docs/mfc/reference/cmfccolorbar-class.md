@@ -74,16 +74,16 @@ helpviewer_keywords:
 - CMFCColorBar [MFC], SetPropList
 - CMFCColorBar [MFC], ShowCommandMessageString
 ms.assetid: 4756ee40-25a5-4cee-af7f-acab7993d1c7
-ms.openlocfilehash: 4eee24eb93be446f6b4f2631b70736c13a02f45c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 25bfe3ef67fcca7708179d1a316af05b3ba49dda
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62403769"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69505425"
 ---
 # <a name="cmfccolorbar-class"></a>CMFCColorBar sınıfı
 
-`CMFCColorBar` Sınıfı, bir belge veya uygulamadaki renkleri seçebileceğiniz takma denetim çubuğunu temsil eder.
+Sınıfı `CMFCColorBar` , bir belge veya uygulamadaki renkleri seçebileceğiniz bir yerleştirme denetim çubuğunu temsil eder.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -97,112 +97,112 @@ class CMFCColorBar : public CMFCPopupMenuBar
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CMFCColorBar::CMFCColorBar](#cmfccolorbar)|Oluşturur bir `CMFCColorBar` nesne.|
+|[CMFCColorBar:: CMFCColorBar](#cmfccolorbar)|Bir `CMFCColorBar` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CMFCColorBar::ContextToSize](#contexttosize)|Renk çubuğu denetim çubuğundaki düğmeleri içerecek biçimde gereklidir ve sonra bu düğmeler konumunu ayarlar dikey ve yatay kenar hesaplar.|
-|[CMFCColorBar::CreateControl](#createcontrol)|Bir renk çubuğu denetimi penceresi oluşturur, ekler `CMFCColorBar` nesne ve Denetim belirtilen renk paletini içerecek şekilde yeniden boyutlandırır.|
-|[CMFCColorBar::Create](#create)|Bir renk çubuğu denetimi penceresi oluşturur ve ona ekler `CMFCColorBar` nesne.|
-|[CMFCColorBar::EnableAutomaticButton](#enableautomaticbutton)|Otomatik düğmenin gizler veya gösterir.|
-|[CMFCColorBar::EnableOtherButton](#enableotherbutton)|Etkinleştirir ya da daha fazla renk seçmesine olanak sağlayan bir iletişim kutusunun görüntülenmesini devre dışı bırakır.|
-|[CMFCColorBar::GetColor](#getcolor)|Şu anda seçili rengini alır.|
-|[CMFCColorBar::GetCommandID](#getcommandid)|Geçerli renk çubuğu denetiminin komut Kimliğini alır.|
-|[CMFCColorBar::GetHighlightedColor](#gethighlightedcolor)|Bir renk düğmesi odağa sahip olduğunu belirten rengi alır; diğer bir deyişle, düğmesidir *sık erişimli*.|
-|[CMFCColorBar::GetHorzMargin](#gethorzmargin)|Sol veya sağ renk hücre istemci alanı sınırı arasındaki alan yatay boşluğu alır.|
-|[CMFCColorBar::GetVertMargin](#getvertmargin)|Üst veya alt renk hücre ve istemci alanı sınırları arasındaki boşluk Dikey Kenar alır.|
-|[CMFCColorBar::IsTearOff](#istearoff)|Geçerli renk çubuğu yerleştirilebilir olup olmadığını belirtir.|
-|[CMFCColorBar::SetColor](#setcolor)|Şu anda seçili rengini ayarlar.|
-|[CMFCColorBar::SetColorName](#setcolorname)|Belirtilen bir renk için yeni bir ad belirler.|
-|[CMFCColorBar::SetCommandID](#setcommandid)|Yeni bir komut kimliği bir renk çubuğu denetimi için ayarlar.|
-|[CMFCColorBar::SetDocumentColors](#setdocumentcolors)|Geçerli belgede kullanılan renk listesi ayarlar.|
-|[CMFCColorBar::SetHorzMargin](#sethorzmargin)|Sol veya sağ renk hücre istemci alanı sınırı arasındaki alan yatay boşluğu ayarlar.|
-|[CMFCColorBar::SetVertMargin](#setvertmargin)|Top veya bottom renk hücre ve istemci alanı sınırları arasındaki boşluk olan dikey boşluğu ayarlar.|
+|[CMFCColorBar:: ContextToSize](#contexttosize)|Renk çubuğu denetimindeki düğmeleri içermesi için gereken dikey ve yatay kenar boşluklarını hesaplar ve ardından bu düğmelerin konumunu ayarlar.|
+|[CMFCColorBar:: CreateControl](#createcontrol)|Bir renk çubuğu denetim penceresi oluşturur, `CMFCColorBar` nesneye iliştirir ve belirtilen renk paletini içerecek şekilde denetimi yeniden boyutlandırır.|
+|[CMFCColorBar:: Create](#create)|Bir renk çubuğu denetim penceresi oluşturur ve `CMFCColorBar` nesneye ekler.|
+|[CMFCColorBar:: EnableAutomaticButton](#enableautomaticbutton)|Otomatik düğmesini gösterir veya gizler.|
+|[CMFCColorBar:: EnableOtherButton](#enableotherbutton)|Kullanıcının daha fazla renk seçmesini sağlayan bir iletişim kutusunun görüntülenmesini sağlar veya devre dışı bırakır.|
+|[CMFCColorBar:: GetColor](#getcolor)|Şu anda seçili rengi alır.|
+|[CMFCColorBar:: Getcommandıd](#getcommandid)|Geçerli renk çubuğu denetiminin komut KIMLIĞINI alır.|
+|[CMFCColorBar:: Gethighaçıklatedcolor](#gethighlightedcolor)|Bir renk düğmesinin odağa sahip olduğunu belirten rengi alır; diğer bir deyişle, düğme *sıcak*olur.|
+|[CMFCColorBar:: GetHorzMargin](#gethorzmargin)|Sol veya sağ renk hücresi ile istemci alanı sınırı arasındaki boşluk olan yatay boşluğu alır.|
+|[CMFCColorBar:: GetVertMargin](#getvertmargin)|Üst veya alt renk hücresi ile istemci alanı sınırı arasındaki boşluk olan dikey boşluğu alır.|
+|[CMFCColorBar:: Isteyoff](#istearoff)|Geçerli renk çubuğunun dockable olup olmadığını gösterir.|
+|[CMFCColorBar:: SetColor](#setcolor)|Şu anda seçili olan rengi ayarlar.|
+|[CMFCColorBar:: SetColorName](#setcolorname)|Belirtilen renk için yeni bir ad ayarlar.|
+|[CMFCColorBar:: Setcommandıd](#setcommandid)|Renk çubuğu denetimi için yeni bir komut KIMLIĞI ayarlar.|
+|[CMFCColorBar:: SetDocumentColors](#setdocumentcolors)|Geçerli belgede kullanılan renklerin listesini ayarlar.|
+|[CMFCColorBar:: SetHorzMargin](#sethorzmargin)|Sol veya sağ renk hücresi ile istemci alanı sınırı arasındaki boşluk olan yatay boşluğu ayarlar.|
+|[CMFCColorBar:: SetVertMargin](#setvertmargin)|Üst veya alt renk hücresi ile istemci alanı sınırı arasındaki boşluk olan dikey boşluğu ayarlar.|
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CMFCColorBar::AdjustLocations](#adjustlocations)|Renk çubuğu denetimi renk düğmeleri konumlarını ayarlar.|
-|[CMFCColorBar::AllowChangeTextLabels](#allowchangetextlabels)|Metin etiketi rengi düğmesi değiştirip değiştiremeyeceğini belirtir.|
-|[CMFCColorBar::AllowShowOnList](#allowshowonlist)|Renk çubuğu denetim nesnesi özelleştirme işlemi sırasında bir araç çubuğu listesinde görünüp görünmediğini gösterir.|
-|[CMFCColorBar::CalcSize](#calcsize)|Düzen hesaplama işleminin bir parçası olarak framework tarafından çağırılır.|
-|[CMFCColorBar::CreatePalette](#createpalette)|Palet renkleri belirtilen bir dizi renkleri ile başlatır.|
-|[CMFCColorBar::GetColorGridSize](#getcolorgridsize)|Satırlar ve sütunlar renk çubuğu denetim kılavuzundaki sayısını hesaplar.|
-|[CMFCColorBar::GetExtraHeight](#getextraheight)|Geçerli renk çubuğu gibi çeşitli kullanıcı arabirimi öğeleri görüntülemek için gerekli ek yüksekliği hesaplar **diğer** düğmesi, belge renkleri ve benzeri.|
-|[CMFCColorBar::InitColors](#initcolors)|Renklerle belirtilen bir palet veya sistem varsayılan palet renkleri dizisini başlatır.|
-|[CMFCColorBar::OnKey](#onkey)|Bir kullanıcı bir klavye düğmesine bastığında framework tarafından çağırılır.|
-|[CMFCColorBar::OnSendCommand](#onsendcommand)|Açılan denetim hiyerarşisi kapatmak için framework tarafından çağırılır.|
-|[CMFCColorBar::OnUpdateCmdUI](#onupdatecmdui)|Etkinleştirmek veya öğeyi görüntülenmeden önce bir kullanıcı arabirimi öğesi bir renk çubuğu denetiminin devre dışı bırakmak için framework tarafından çağırılır.|
-|[CMFCColorBar::OpenColorDialog](#opencolordialog)|Renk iletişim kutusu açılır.|
-|[CMFCColorBar::Rebuild](#rebuild)|Tamamen renk çubuğu denetimi yeniden çizer.|
-|[CMFCColorBar::SelectPalette](#selectpalette)|Belirtilen bir cihaz bağlamı mantıksal paletini geçerli renk çubuğu denetiminin üst düğmenin paleti ayarlar.|
-|[CMFCColorBar::SetPropList](#setproplist)|Kümeleri `m_pWndPropList` korumalı veri üyesi için bir özellik Kılavuzu denetimini belirtilen işaretçisi.|
-|[CMFCColorBar::ShowCommandMessageString](#showcommandmessagestring)|Durum çubuğundaki ileti satırı güncelleştirmek için renk çubuğu denetim sahibi çerçeve penceresi ister.|
+|[CMFCColorBar:: AdjustLocations](#adjustlocations)|Renk çubuğu denetimindeki renk düğmelerinin konumlarını ayarlar.|
+|[CMFCColorBar:: AllowChangeTextLabels](#allowchangetextlabels)|Renk düğmelerinin metin etiketinin değişebilir olup olmadığını gösterir.|
+|[CMFCColorBar:: AllowShowOnList](#allowshowonlist)|Özelleştirme işlemi sırasında renk çubuğu Denetim nesnesinin bir araç çubuğu listesinde görünüp görünmeyeceğini gösterir.|
+|[CMFCColorBar:: CalcSize](#calcsize)|Düzen hesaplama sürecinin bir parçası olarak Framework tarafından çağırılır.|
+|[CMFCColorBar:: CreatePalette](#createpalette)|Belirtilen renk dizisindeki renklerle bir palet başlatır.|
+|[CMFCColorBar:: GetColorGridSize](#getcolorgridsize)|Renk çubuğu denetiminin kılavuzundaki satır ve sütun sayısını hesaplar.|
+|[CMFCColorBar:: GetExtraHeight](#getextraheight)|Geçerli renk çubuğunun **diğer** düğme, belge renkleri vb. gibi çeşitli kullanıcı arabirimi öğelerini görüntülemesi için gereken ek yüksekliği hesaplar.|
+|[CMFCColorBar:: ınitcolors](#initcolors)|Belirtilen bir paletteki renklerle veya sistem varsayılan paletinde renkler dizisini başlatır.|
+|[CMFCColorBar:: OnKey](#onkey)|Kullanıcı bir klavye düğmesine bastığında Framework tarafından çağırılır.|
+|[CMFCColorBar:: OnSendCommand](#onsendcommand)|Bir açılır denetim hiyerarşisini kapatmak için Framework tarafından çağırılır.|
+|[CMFCColorBar:: OnUpdateCmdUI](#onupdatecmdui)|Öğe görüntülenmeden önce bir renk çubuğu denetiminin Kullanıcı arabirimi öğesini etkinleştirmek veya devre dışı bırakmak için Framework tarafından çağırılır.|
+|[CMFCColorBar:: OpenColorDialog](#opencolordialog)|Bir renk iletişim kutusu açar.|
+|[CMFCColorBar:: Rebuild](#rebuild)|Renk çubuğu denetimini tamamen yeniden çizer.|
+|[CMFCColorBar:: SelectPalette](#selectpalette)|Belirtilen cihaz bağlamının mantıksal paletini geçerli renk çubuğu denetiminin ana düğmesinin paleti olarak ayarlar.|
+|[CMFCColorBar:: SetPropList](#setproplist)|`m_pWndPropList` Korumalı veri üyesini bir özellik Kılavuzu denetimine belirtilen işaretçiye ayarlar.|
+|[CMFCColorBar:: ShowCommandMessageString](#showcommandmessagestring)|Durum çubuğundaki ileti satırını güncelleştirmek için renk çubuğu denetiminin sahibi olan çerçeve penceresini ister.|
 
 ### <a name="protected-data-members"></a>Korumalı veri üyeleri
 
 |Ad|Açıklama|
 |----------|-----------------|
-|`m_bInternal`|Fare olayları işlenip işlenmediğini belirleyen bir Boole alan. Genellikle, fare olayları bu alanı TRUE ve FALSE özelleştirme modu olduğunda işlenir.|
+|`m_bInternal`|Fare olaylarının işlenip işlenmediğini belirleyen bir Boole alanı. Genellikle, bu alan TRUE olduğunda ve özelleştirme modu FALSE olduğunda fare olayları işlenir.|
 |`m_bIsEnabled`|Bir denetimin etkin olup olmadığını gösteren bir Boole değeri.|
-|`m_bIsTearOff`|Renk çubuğu denetimi yerleştirme destekleyip desteklemediğini belirten bir Boole değeri.|
-|`m_BoxSize`|A [CSize](../../atl-mfc-shared/reference/csize-class.md) nesnesini bir renk çubuğu kılavuzda bir hücre boyutunu belirtir.|
-|`m_bShowDocColorsWhenDocked`|Renk çubuğu yerleştirildiğinde, belge renkleri gösterilip gösterilmeyeceğini belirten bir Boole değeri. Daha fazla bilgi için [CMFCColorBar::SetDocumentColors](#setdocumentcolors).|
-|`m_bStdColorDlg`|Standart sistem renk iletişim kutusu gösterilip gösterilmeyeceğini belirten bir Boole değeri veya [CMFCColorDialog](../../mfc/reference/cmfccolordialog-class.md) iletişim kutusu. Daha fazla bilgi için [CMFCColorBar::EnableOtherButton](#enableotherbutton).|
-|`m_ColorAutomatic`|A [COLORREF](/windows/desktop/gdi/colorref) , geçerli otomatik renge depolar. Daha fazla bilgi için [CMFCColorBar::EnableOtherButton](#enableotherbutton).|
-|`m_ColorNames`|Bir [CMap](../../mfc/reference/cmap-class.md) RGB birtakım ilişkilendirir nesne adlarını renkleri.|
-|`m_colors`|A [CArray](../../mfc/reference/carray-class.md) , [COLORREF](/windows/desktop/gdi/colorref) renk çubuğu denetimde görüntülenen renkleri içeren değerleri.|
-|`m_ColorSelected`|A [COLORREF](/windows/desktop/gdi/colorref) değer kullanıcı renk çubuğu denetimi şu anda seçili renk.|
-|`m_lstDocColors`|A [CList](../../mfc/reference/clist-class.md) , [COLORREF](/windows/desktop/gdi/colorref) değerleri içeren bir belgede şu anda kullanılan renkler.|
-|`m_nCommandID`|Bir renk düğmesi komut kimliği bir işaretsiz tamsayı.|
-|`m_nHorzMargin`|Yatay boşluğu kılavuz renklerin renk düğmeler arasındaki bir tamsayı.|
-|`m_nHorzOffset`|Yatay uzaklığını rengi düğmesi ortasına bir tamsayı. Bu değer, düğme metnini veya resmi bir renk yanı sıra görüntülerse önemlidir.|
-|`m_nNumColumns`|Renklerin renk çubuğu denetim kılavuzundaki sütun sayısı bir tamsayı.|
-|`m_nNumColumnsVert`|Renkleri dikey yönlendirilmiş bir kılavuzda sütun sayısı bir tamsayı.|
-|`m_nNumRowsHorz`|Renkler yatay olarak yönlendirilmiş kılavuzunda sütun sayısı bir tamsayı.|
-|`m_nRowHeight`|Kılavuz renklerin renk düğmesi bir satırın yüksekliğini bir tamsayı.|
-|`m_nVertMargin`|Dikey boşluğu kılavuz renklerin renk düğmeler arasındaki bir tamsayı.|
-|`m_nVertOffset`|Renk düğmesi merkezine dikey uzaklığı bir tamsayı. Bu değer, düğme metnini veya resmi bir renk yanı sıra görüntülerse önemlidir.|
-|`m_Palette`|A [CPalette](../../mfc/reference/cpalette-class.md) renklerin renk çubuğu denetimi kullanılır.|
-|`m_pParentBtn`|Bir işaretçi bir [CMFCColorButton](../../mfc/reference/cmfccolorbutton-class.md) geçerli düğmenin üst nesne. Renk düğmesi araç çubuğu denetimleri bir hiyerarşide veya bir renk özellik Kılavuzu denetimini bu önemli bir değerdir.|
-|`m_pParentRibbonBtn`|Bir işaretçi bir [CMFCRibbonColorButton](../../mfc/reference/cmfcribboncolorbutton-class.md) şeritte ve geçerli düğmenin üst düğme nesne. Renk düğmesi araç çubuğu denetimleri bir hiyerarşide veya bir renk özellik Kılavuzu denetimini bu önemli bir değerdir.|
-|`m_pWndPropList`|Bir işaretçi bir [CMFCPropertyGridCtrl](../../mfc/reference/cmfcpropertygridctrl-class.md) nesne.|
-|`m_strAutoColor`|A [CString](../../atl-mfc-shared/reference/cstringt-class.md) diğer bir deyişle görüntülenen metnin **otomatik** düğmesi. Daha fazla bilgi için [CMFCColorBar::EnableAutomaticButton](#enableautomaticbutton).|
-|`m_strDocColors`|A [CString](../../atl-mfc-shared/reference/cstringt-class.md) diğer bir deyişle belge renkleri düğmede görüntülenen metin. Daha fazla bilgi için [CMFCColorBar::SetDocumentColors](#setdocumentcolors).|
-|`m_strOtherColor`|A [CString](../../atl-mfc-shared/reference/cstringt-class.md) diğer bir deyişle görüntülenen metnin *diğer* düğmesi. Daha fazla bilgi için [CMFCColorBar::EnableOtherButton](#enableotherbutton).|
+|`m_bIsTearOff`|Renk çubuğu denetiminin yerleştirmeyi destekleyip desteklemediğini gösteren bir Boole değeri.|
+|`m_BoxSize`|Bir renk çubuğu kılavuzundaki bir hücrenin boyutunu belirten [CSize](../../atl-mfc-shared/reference/csize-class.md) nesnesi.|
+|`m_bShowDocColorsWhenDocked`|Renk çubuğu yerleştirildiğinde belge renklerinin gösterilip gösterilmeyeceğini belirten bir Boole değeri. Daha fazla bilgi için bkz. [CMFCColorBar:: SetDocumentColors](#setdocumentcolors).|
+|`m_bStdColorDlg`|Standart sistem rengi iletişim kutusunun mi yoksa [CMFCColorDialog](../../mfc/reference/cmfccolordialog-class.md) iletişim kutusunun mi gösterileceğini belirten bir Boole değeri. Daha fazla bilgi için bkz. [CMFCColorBar:: EnableOtherButton](#enableotherbutton).|
+|`m_ColorAutomatic`|Geçerli otomatik rengi depolayan bir [colorref](/windows/win32/gdi/colorref) . Daha fazla bilgi için bkz. [CMFCColorBar:: EnableOtherButton](#enableotherbutton).|
+|`m_ColorNames`|Bir RGB renkleri kümesini adlarıyla ilişkilendiren [CMap](../../mfc/reference/cmap-class.md) nesnesi.|
+|`m_colors`|Renk çubuğu denetiminde görüntülenen renkleri içeren [colorref](/windows/win32/gdi/colorref) değerlerinin bir [CArray](../../mfc/reference/carray-class.md) değeri.|
+|`m_ColorSelected`|Kullanıcının renk çubuğu denetiminden Şu anda seçtiği renk olan [colorref](/windows/win32/gdi/colorref) değeri.|
+|`m_lstDocColors`|Bir belgede Şu anda kullanılan renkleri içeren [colorref](/windows/win32/gdi/colorref) değerlerinin [CList](../../mfc/reference/clist-class.md) 'i.|
+|`m_nCommandID`|Bir renk düğmesinin komut KIMLIĞI olan işaretsiz bir tamsayı.|
+|`m_nHorzMargin`|Renklerin kılavuzundaki renk düğmeleri arasındaki yatay kenar boşluğu olan bir tamsayı.|
+|`m_nHorzOffset`|Renk düğmesinin merkezinin yatay olarak kaydırılacağı bir tamsayı. Düğme, bir renge ek olarak metin veya görüntü görüntülüyorsa bu değer önemlidir.|
+|`m_nNumColumns`|Renk çubuğu denetim kılavuzundaki renklerin içindeki sütun sayısı olan bir tamsayı.|
+|`m_nNumColumnsVert`|Dikey olarak yönelimli renklerin bir kılavuzundaki sütun sayısı olan bir tamsayı.|
+|`m_nNumRowsHorz`|Yatay olarak yönelimli renklerin bir kılavuzundaki sütun sayısı olan bir tamsayı.|
+|`m_nRowHeight`|Renklerin kılavuzundaki renk düğmelerinin bir satırının yüksekliği olan bir tamsayı.|
+|`m_nVertMargin`|Renklerin kılavuzundaki renk düğmeleri arasındaki dikey kenar boşluğu olan bir tamsayı.|
+|`m_nVertOffset`|Renk düğmesinin ortasına dikey olan bir tamsayı. Düğme, bir renge ek olarak metin veya görüntü görüntülüyorsa bu değer önemlidir.|
+|`m_Palette`|Renk çubuğu denetiminde kullanılan renklerin [Cpaleti](../../mfc/reference/cpalette-class.md) .|
+|`m_pParentBtn`|Geçerli düğmenin üst öğesi olan [CMFCColorButton](../../mfc/reference/cmfccolorbutton-class.md) nesnesine yönelik bir işaretçi. Bu değer, Color düğmesi bir araç çubuğu denetimlerinin hiyerarşisinde ise veya Color özelliği kılavuz denetiminde olduğunda önemlidir.|
+|`m_pParentRibbonBtn`|Şeritte bulunan [CMFCRibbonColorButton](../../mfc/reference/cmfcribboncolorbutton-class.md) nesnesine yönelik bir işaretçi ve geçerli düğmenin ana düğmesi. Bu değer, Color düğmesi bir araç çubuğu denetimlerinin hiyerarşisinde ise veya Color özelliği kılavuz denetiminde olduğunda önemlidir.|
+|`m_pWndPropList`|[CMFCPropertyGridCtrl](../../mfc/reference/cmfcpropertygridctrl-class.md) nesnesine yönelik bir işaretçi.|
+|`m_strAutoColor`|**Otomatik** düğmesinde görüntülenen metin olan bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) . Daha fazla bilgi için bkz. [CMFCColorBar:: EnableAutomaticButton](#enableautomaticbutton).|
+|`m_strDocColors`|Belge Renkleri düğmesinde görüntülenen metin olan bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) . Daha fazla bilgi için bkz. [CMFCColorBar:: SetDocumentColors](#setdocumentcolors).|
+|`m_strOtherColor`|*Diğer* düğmede görüntülenen metin olan bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) . Daha fazla bilgi için bkz. [CMFCColorBar:: EnableOtherButton](#enableotherbutton).|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Genellikle, oluşturma bir `CMFCColorBar` doğrudan nesne. Bunun yerine, [CMFCColorMenuButton sınıfı](../../mfc/reference/cmfccolormenubutton-class.md) (menüleri ve araç çubukları kullanılan) veya [CMFCColorButton sınıfı](../../mfc/reference/cmfccolorbutton-class.md) oluşturur `CMFCColorBar` nesne.
+Genellikle doğrudan bir `CMFCColorBar` nesne oluşturmayın. Bunun yerine, [cmfccolormenubtan sınıfı](../../mfc/reference/cmfccolormenubutton-class.md) (menülerde ve araç çubuklarında kullanılır) veya [CMFCColorButton sınıfı](../../mfc/reference/cmfccolorbutton-class.md) `CMFCColorBar` nesnesini oluşturur.
 
 `CMFCColorBar` Sınıfı aşağıdaki işlevleri sağlar:
 
-- Belge renkleri listesini otomatik olarak ayarlar.
+- Belge renklerinin listesini otomatik olarak ayarlar.
 
-- Kaydeder ve belge durumu ile birlikte durumuna geri yükler.
+- Belge durumuyla birlikte durumunu kaydeder ve geri yükler.
 
 - "Otomatik" düğmesini yönetir.
 
-- Kullanan [CMFCColorPickerCtrl sınıfı](../../mfc/reference/cmfccolorpickerctrl-class.md) denetimi özel bir renk seçin.
+- Özel bir renk seçmek için [CMFCColorPickerCtrl sınıf](../../mfc/reference/cmfccolorpickerctrl-class.md) denetimini kullanır.
 
-- "Etkinleştiriliyorken" durumu destekler (kullanarak oluşturulursa [CMFCColorMenuButton sınıfı](../../mfc/reference/cmfccolormenubutton-class.md)).
+- Bir "Tear" durumunu destekler ( [Cmfccolormenubtan sınıfı](../../mfc/reference/cmfccolormenubutton-class.md)kullanılarak oluşturulduysa).
 
-Birleştirmek için `CMFCColorBar` uygulamanıza işlevsellik:
+`CMFCColorBar` İşlevi uygulamanıza eklemek için:
 
-1. Normal menü düğmesine oluşturun ve örneğin ID_CHAR_COLOR bir kimliği atayın.
+1. Normal bir menü düğmesi oluşturun ve buna bir KIMLIK atayın, örneğin ID_CHAR_COLOR.
 
-1. Çerçeve penceresi sınıfınızda geçersiz kılmanız [CFrameWndEx::OnShowPopupMenu](../../mfc/reference/cframewndex-class.md#onshowpopupmenu) yöntemi ve Değiştir normal menü düğmesi ile bir [CMFCColorMenuButton sınıfı](../../mfc/reference/cmfccolormenubutton-class.md) nesne (çağırarak [CMFCToolBar: : ReplaceButton](../../mfc/reference/cmfctoolbar-class.md#replacebutton)).
+1. Çerçeve pencere sınıfınıza [CFrameWndEx:: OnShowPopupMenu](../../mfc/reference/cframewndex-class.md#onshowpopupmenu) yöntemini geçersiz kılın ve normal menü düğmesini bir [Cmfccolormenubtan Class](../../mfc/reference/cmfccolormenubutton-class.md) nesnesiyle değiştirin ( [CMFCToolBar:: ReplaceButton](../../mfc/reference/cmfctoolbar-class.md#replacebutton)çağırarak).
 
-1. Stilleri ayarlama ve etkinleştirme veya özellikleri devre dışı `CMFCColorBar` sırasında nesne [CMFCColorMenuButton sınıfı](../../mfc/reference/cmfccolormenubutton-class.md) oluşturma. `CMFCColorMenuButton` Dinamik olarak oluşturur `CMFCColorBar` framework çağırdıktan sonra nesne `CreatePopupMenu` yöntemi.
+1. Tüm stilleri ayarlayın ve [cmfccolormenubtan sınıfı](../../mfc/reference/cmfccolormenubutton-class.md) oluşturma `CMFCColorBar` sırasında nesnenin özelliklerini etkinleştirin veya devre dışı bırakın. Nesne, Framework yöntemini`CreatePopupMenu` çağırdıktan sonra `CMFCColorBar` nesneyi dinamik olarak oluşturur. `CMFCColorMenuButton`
 
-Kullanıcı renk çubuğu denetim düğmesine tıkladığında framework kullanan `ON_COMMAND` makrosu renk çubuğu denetiminin üst bildirir. Makro, komut kimliği parametresi renk çubuğu denetim düğmesine (Bu örnekte ID_CHAR_COLOR) 1. adımda atadığınız değerdir. Daha fazla bilgi için [CMFCColorMenuButton sınıfı](../../mfc/reference/cmfccolormenubutton-class.md), [CMFCColorButton sınıfı](../../mfc/reference/cmfccolorbutton-class.md), [CMFCColorPickerCtrl sınıfı](../../mfc/reference/cmfccolorpickerctrl-class.md), [CFrameWndExsınıfı](../../mfc/reference/cframewndex-class.md), ve [CMFCToolBar sınıfı](../../mfc/reference/cmfctoolbar-class.md) sınıfları.
+Kullanıcı bir renk çubuğu denetim düğmesine tıkladığında, çerçeve, renk çubuğu denetiminin üst `ON_COMMAND` öğesini bilgilendirmek için makroyu kullanır. Makroda, komut KIMLIĞI parametresi, 1. adımdaki (Bu örnekte ID_CHAR_COLOR) renk çubuğu denetim düğmesine atadığınız değerdir. Daha fazla bilgi için bkz. [Cmfccolormenubtan Class](../../mfc/reference/cmfccolormenubutton-class.md), [CMFCColorButton Class](../../mfc/reference/cmfccolorbutton-class.md), [CMFCColorPickerCtrl Class](../../mfc/reference/cmfccolorpickerctrl-class.md), [CFrameWndEx Class](../../mfc/reference/cframewndex-class.md)ve [CMFCToolBar sınıf](../../mfc/reference/cmfctoolbar-class.md) sınıfları.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, bir renk çubuğu çeşitli yöntemlerle kullanarak yapılandırma işlemi gösterilmektedir `CMFCColorBar` sınıfı. Yöntemleri yatay ve dikey kenar boşluklarının ayarlanmadığı, diğer düğmeyi etkinleştir, bir renk çubuğu denetimi penceresi oluştur ve şu anda seçili rengini ayarlar. Bu örneğin parçasıdır [yeni denetimler örnek](../../overview/visual-cpp-samples.md).
+Aşağıdaki örnek, `CMFCColorBar` sınıfında çeşitli yöntemler kullanarak bir renk çubuğunun nasıl yapılandırılacağını gösterir. Yatay ve dikey kenar boşluklarını ayarlayan Yöntemler, diğer düğmeyi etkinleştirir, bir renk çubuğu denetim penceresi oluşturur ve şu anda seçili rengi ayarlar. Bu örnek, [Yeni denetimler örneğinin](../../overview/visual-cpp-samples.md)bir parçasıdır.
 
 [!code-cpp[NVC_MFC_NewControls#1](../../mfc/reference/codesnippet/cpp/cmfccolorbar-class_1.h)]
 [!code-cpp[NVC_MFC_NewControls#2](../../mfc/reference/codesnippet/cpp/cmfccolorbar-class_2.cpp)]
@@ -229,11 +229,11 @@ Aşağıdaki örnek, bir renk çubuğu çeşitli yöntemlerle kullanarak yapıla
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxcolorbar.h
+**Üstbilgi:** afxcolorbar. h
 
-##  <a name="adjustlocations"></a>  CMFCColorBar::AdjustLocations
+##  <a name="adjustlocations"></a>CMFCColorBar:: AdjustLocations
 
-Renk çubuğu denetimi renk düğmeleri konumlarını ayarlar.
+Renk çubuğu denetimindeki renk düğmelerinin konumlarını ayarlar.
 
 ```
 virtual void AdjustLocations();
@@ -241,11 +241,11 @@ virtual void AdjustLocations();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem WM_SIZE iletisi işlenirken framework tarafından çağırılır.
+Bu yöntem, WM_SIZE ileti işleme sırasında Framework tarafından çağırılır.
 
-##  <a name="allowchangetextlabels"></a>  CMFCColorBar::AllowChangeTextLabels
+##  <a name="allowchangetextlabels"></a>CMFCColorBar:: AllowChangeTextLabels
 
-Metin etiketi rengi düğmesi değiştirip değiştiremeyeceğini belirtir.
+Renk düğmelerinin metin etiketinin değişebilir olup olmadığını gösterir.
 
 ```
 virtual BOOL AllowChangeTextLabels() const;
@@ -257,11 +257,11 @@ Her zaman FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, bu yöntem her zaman yanlış, metin etiketlerini değiştirilemez yani döndürür. Metin etiketlerini değiştirme etkinleştirmek için bu yöntemi yok sayın.
+Varsayılan olarak, bu yöntem her zaman FALSE döndürür, bu da metin etiketlerinin değiştirilemediği anlamına gelir. Metin etiketlerinin değiştirilmesini etkinleştirmek için bu yöntemi geçersiz kılın.
 
-##  <a name="allowshowonlist"></a>  CMFCColorBar::AllowShowOnList
+##  <a name="allowshowonlist"></a>CMFCColorBar:: AllowShowOnList
 
-Renk çubuğu denetim nesnesi özelleştirme işlemi sırasında bir araç çubuğu listesinde görünüp görünmediğini gösterir.
+Özelleştirme işlemi sırasında renk çubuğu Denetim nesnesinin bir araç çubuğu listesinde görünüp görünmeyeceğini gösterir.
 
 ```
 virtual BOOL AllowShowOnList() const;
@@ -273,11 +273,11 @@ Her zaman TRUE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, bu yöntem her zaman TRUE, yani framework renk çubuğu denetimini özelleştirme işlemi sırasında görüntüleyebilirsiniz döndürür. Farklı bir davranış uygulamak için bu yöntemi yok sayın.
+Varsayılan olarak, bu yöntem her zaman TRUE değerini döndürür; bu, Framework 'ün özelleştirme süreci sırasında renk çubuğu denetimini görüntülemesi anlamına gelir. Farklı bir davranış uygulamak için bu yöntemi geçersiz kılın.
 
-##  <a name="calcsize"></a>  CMFCColorBar::CalcSize
+##  <a name="calcsize"></a>CMFCColorBar:: CalcSize
 
-Düzen hesaplama işleminin bir parçası olarak framework tarafından çağırılır.
+Düzen hesaplama sürecinin bir parçası olarak Framework tarafından çağırılır.
 
 ```
 virtual CSize CalcSize(BOOL bVertDock);
@@ -286,15 +286,15 @@ virtual CSize CalcSize(BOOL bVertDock);
 ### <a name="parameters"></a>Parametreler
 
 *bVertDock*<br/>
-[in] Renk çubuğu denetim dikey olarak yerleştirilir belirtmek için TRUE; Renk çubuğu denetiminin yatay olarak yerleştirildiğini belirtmek için FALSE.
+'ndaki Renk çubuğu denetiminin dikey olarak yerleştirilmiş olduğunu belirtmek için TRUE; Renk çubuğu denetiminin yatay olarak yerleştirilmiş olduğunu belirtmek için FALSE.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Renk çubuğu denetiminde rengi düğmesi bir dizinin boyutu.
+Renk çubuğu denetimindeki renk düğmeleri dizisinin boyutu.
 
-##  <a name="cmfccolorbar"></a>  CMFCColorBar::CMFCColorBar
+##  <a name="cmfccolorbar"></a>CMFCColorBar:: CMFCColorBar
 
-Oluşturur bir `CMFCColorBar` nesne.
+Bir `CMFCColorBar` nesnesi oluşturur.
 
 ```
 CMFCColorBar(
@@ -330,55 +330,55 @@ CMFCColorBar(
 
 ### <a name="parameters"></a>Parametreler
 
-*Renkleri*<br/>
-[in] Renk çubuğu denetimi framework görüntüler renkleri dizisi.
+*lerde*<br/>
+'ndaki Çerçevenin renk çubuğu denetiminde görüntülediği renk dizisi.
 
 *Renk*<br/>
-[in] İlk olarak seçilen rengi.
+'ndaki Başlangıçta seçilen renk.
 
 *lpszAutoColor*<br/>
-[in] Metin etiketini *otomatik* rengi düğmesi (varsayılan) ya da NULL.
+'ndaki *Otomatik* (varsayılan) renk DÜĞMESININ veya null alanının metin etiketi.
 
-Standart etiket otomatik düğmenin **otomatik**.
+Otomatik düğmenin standart etiketi **otomatiktir**.
 
 *lpszOtherColor*<br/>
-[in] Metin etiketini *diğer* görüntüleyen daha rengi seçimleri veya NULL düğmesi.
+'ndaki *Diğer* düğmenin, daha fazla renk SEÇIMI veya null görüntüleyen metin etiketi.
 
-Diğer düğme için standart etiket **daha fazla renk...** .
+Diğer düğmenin standart etiketi **daha fazla renklerdir...** .
 
 *lpszDocColors*<br/>
-[in] Belge renkleri düğmesinin metin etiketi. Belge renkler paleti belge şu anda kullandığı tüm renkleri listeler.
+'ndaki Belge renkleri düğmesinin metin etiketi. Belge renkleri paleti, belgenin şu anda kullandığı tüm renkleri listeler.
 
 *lstDocColors*<br/>
-[in] Belge şu anda kullandığı renkler listesi.
+'ndaki Belgenin şu anda kullandığı renklerin listesi.
 
 *nColumns*<br/>
-[in] Renkleri dizi sahip sütun sayısı.
+'ndaki Renklerin dizisinin sahip olduğu sütun sayısı.
 
 *nRowsDockHorz*<br/>
-[in] Renk çubuğu yatay yerleştirildiğinde olan satır sayısı.
+'ndaki Yatay yerleştirilmiş olan renk çubuğunun satır sayısı.
 
 *nColDockVert*<br/>
-[in] Renk Çubuğu dikey yerleştirildiğinde olan sütun sayısı.
+'ndaki Renk çubuğunun dikey yerleştirilmiş olduğu sütun sayısı.
 
 *colorAutomatic*<br/>
-[in] Otomatik düğmeyi tıklattığınızda, framework uygulanan varsayılan rengi.
+'ndaki Otomatik düğmesine tıkladığınızda çerçevenin geçerli olduğu varsayılan renk.
 
 *nCommandID*<br/>
-[in] Renk çubuğu denetim komut kimliği.
+'ndaki Renk çubuğu denetim komut KIMLIĞI.
 
 *pParentBtn*<br/>
-[in] Bir üst düğme için bir işaretçi.
+'ndaki Üst düğmeye yönelik bir işaretçi.
 
-*src*<br/>
-[in] Mevcut bir `CMFCColorBar` yeni içine kopyalanacak nesne `CMFCColorBar` nesne.
+*YN*<br/>
+'ndaki `CMFCColorBar` Yeni`CMFCColorBar` nesneye Kopyalanacak varolan bir nesne.
 
-*uiCommandID*<br/>
-[in] Komut kimliği.
+*Uııommandıd*<br/>
+'ndaki Komut KIMLIĞI.
 
-##  <a name="contexttosize"></a>  CMFCColorBar::ContextToSize
+##  <a name="contexttosize"></a>CMFCColorBar:: ContextToSize
 
-Renk çubuğu denetim çubuğundaki düğmeleri içerecek biçimde gereklidir ve bu düğmeler konumunu ayarlar dikey ve yatay kenar hesaplar.
+Renk çubuğu denetimindeki düğmeleri içermesi için gereken dikey ve yatay kenar boşluklarını hesaplar ve bu düğmelerin konumunu ayarlar.
 
 ```
 void ContextToSize(
@@ -390,14 +390,14 @@ void ContextToSize(
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*bSquareButtons*|[in] Renk çubuğu denetim üzerinde düğmeleri şeklini kare olduğunu belirtmek için TRUE; Aksi takdirde FALSE. Varsayılan değer True'dur.|
-|*bCenterButtons*|[in] Renk çubuğu denetim düğmesine değişmiştir içeriği ortalanır belirtmek için TRUE; Aksi takdirde FALSE. Varsayılan değer True'dur.|
+|*Bsquaredüğmeleri*|'ndaki Bir renk çubuğu denetimindeki düğmelerin şeklinin kare olduğunu belirtmek için TRUE; Aksi takdirde, FALSE. Varsayılan değer TRUE 'dur.|
+|*bCenterButtons*|'ndaki Bir renk çubuğu denetim düğmesinin yüzdeki içeriğin ortalanmasını belirtmek için TRUE; Aksi takdirde, FALSE. Varsayılan değer TRUE 'dur.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="create"></a>  CMFCColorBar::Create
+##  <a name="create"></a>CMFCColorBar:: Create
 
-Bir renk çubuğu denetimi penceresi oluşturur ve ona ekler `CMFCColorBar` nesne.
+Bir renk çubuğu denetim penceresi oluşturur ve `CMFCColorBar` nesneye ekler.
 
 ```
 virtual BOOL Create(
@@ -413,37 +413,37 @@ virtual BOOL Create(
 ### <a name="parameters"></a>Parametreler
 
 *pParentWnd*<br/>
-[in] Ana pencere işaretçisi.
+'ndaki Ana pencerenin işaretçisi.
 
 *dwStyle*<br/>
-[in] Bit düzeyinde birleşimi (veya) [pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#window-styles).
+'ndaki [Pencere stillerinin](../../mfc/reference/styles-used-by-mfc.md#window-styles)bit tabanlı BIRLEŞIMI (veya).
 
-*nID*<br/>
-[in] Komut kimliği.
+*NID*<br/>
+'ndaki Komut KIMLIĞI.
 
 *pPalette*<br/>
-[in] Renk paleti işaretçisi. Varsayılan NULL olur.
+'ndaki Renk paleti işaretçisi. Varsayılan değer NULL.
 
 *nColumns*<br/>
-[in] Renk çubuğu denetiminde sütunların sayısı. Varsayılan değer 0'dır.
+'ndaki Renk çubuğu denetimindeki sütun sayısı. Varsayılan değer 0 ' dır.
 
 *nRowsDockHorz*<br/>
-[in] Yatay olarak yerleştirildiğinde renk çubuğu denetiminde satırların sayısı. Varsayılan değer 0'dır.
+'ndaki Yatay yerleştirilmiş olan renk çubuğu denetimindeki satır sayısı. Varsayılan değer 0 ' dır.
 
 *nColDockVert*<br/>
-[in] Dikey yerleştirildiğinde renk çubuğu denetiminde sütunların sayısı. Varsayılan değer 0'dır.
+'ndaki Dikey olarak yerleştirilmiş olan renk çubuğu denetimindeki sütun sayısı. Varsayılan değer 0 ' dır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.
+Bu yöntem başarılı olursa TRUE; Aksi takdirde, FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Oluşturmak için bir `CMFCColorBar` nesne, daha sonra bu yöntem sınıf oluşturucusunu çağırın. `Create` Yöntemi Windows denetimi oluşturur ve renk listesi başlatır.
+Bir `CMFCColorBar` nesne oluşturmak için, bu yöntemi ve sonra sınıf oluşturucusunu çağırın. `Create` Yöntemi Windows denetimini oluşturur ve renklerin bir listesini başlatır.
 
-##  <a name="createcontrol"></a>  CMFCColorBar::CreateControl
+##  <a name="createcontrol"></a>CMFCColorBar:: CreateControl
 
-Bir renk çubuğu denetimi penceresi oluşturur, ekler `CMFCColorBar` nesne ve denetimi pencerenin belirtilen renk paletini içerecek şekilde yeniden boyutlandırır.
+Bir renk çubuğu denetim penceresi oluşturur, `CMFCColorBar` nesneye iliştirir ve belirtilen renk paletini içerecek şekilde denetim penceresini yeniden boyutlandırır.
 
 ```
 virtual BOOL CreateControl(
@@ -457,31 +457,31 @@ virtual BOOL CreateControl(
 ### <a name="parameters"></a>Parametreler
 
 *pParentWnd*<br/>
-[in] Ana pencere işaretçisi. NULL olamaz.
+'ndaki Ana pencerenin işaretçisi. NULL olamaz.
 
 *Rect*<br/>
-[in] Renk çubuğu denetimi çizmek konumu belirtir sınırlayıcı bir dikdörtgen.
+'ndaki Renk çubuğu denetiminin nerede çizileceğini belirten bir sınırlayıcı dikdörtgen.
 
-*nID*<br/>
-[in] Denetim kimliği.
+*NID*<br/>
+'ndaki Denetim KIMLIĞI.
 
 *nColumns*<br/>
-[in] Renk çubuğu denetiminde sütunları ideal sayısı. Bu yöntem, bu sayıyı belirtilen renk paletini uyacak şekilde değiştirir. Bu parametre belirtilmezse yani -1 varsayılandır.
+'ndaki Renk çubuğu denetimindeki ideal sütun sayısı. Bu yöntem, belirtilen renk paletine uyacak şekilde bu sayıyı değiştirir. Varsayılan değer-1 ' dir, bu parametrenin belirtilmemiş olması anlamına gelir.
 
 *pPalette*<br/>
-[in] Palet renkleri ya da NULL işaretçisi. Bu parametre NULL ise 20 renkleri belirtilmiş gibi bu yöntem renk çubuğu denetiminin boyutunu hesaplar. Varsayılan NULL olur.
+'ndaki Renk paleti işaretçisi veya NULL. Bu parametre NULL ise, bu yöntem, 20 renk belirtilmiş gibi renk çubuğu denetiminin boyutunu hesaplar. Varsayılan değer NULL.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu yöntem başarılı olursa TRUE; Aksi durumda FALSE.
+Bu yöntem başarılı olursa TRUE; Aksi halde yanlış.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntemde *rect*, *nColumns*, ve *pPalette* uygun bir sayı veya satırlar ve sütunlar renk çubuğu denetimi ve ardından aramaları hesaplamak için parametreler [CMFCColorBar::Create](#create) yöntemi.
+Bu yöntem, renk çubuğu denetimindeki uygun sayıyı veya satırları ve sütunları hesaplamak için *Rect*, *nColumns*ve *pPalette* parametrelerini kullanır ve ardından [CMFCColorBar:: Create](#create) yöntemini çağırır.
 
-##  <a name="createpalette"></a>  CMFCColorBar::CreatePalette
+##  <a name="createpalette"></a>CMFCColorBar:: CreatePalette
 
-Palet renkleri belirtilen bir dizi renkleri ile başlatır.
+Belirtilen renk dizisindeki renklerle bir palet başlatır.
 
 ```
 static BOOL CreatePalette(
@@ -493,16 +493,16 @@ static BOOL CreatePalette(
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*arColors*|[in] Renkleri dizisi.|
-|*Palet*|[in] Renkler paleti.|
+|*Arrenkler*|'ndaki Renk dizisi.|
+|*inizdeki*|'ndaki Renk paleti.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.
+Bu yöntem başarılı olursa TRUE; Aksi takdirde, FALSE.
 
-##  <a name="enableautomaticbutton"></a>  CMFCColorBar::EnableAutomaticButton
+##  <a name="enableautomaticbutton"></a>CMFCColorBar:: EnableAutomaticButton
 
-Otomatik düğmenin gizler veya gösterir.
+Otomatik düğmesini gösterir veya gizler.
 
 ```
 void EnableAutomaticButton(
@@ -514,23 +514,23 @@ void EnableAutomaticButton(
 ### <a name="parameters"></a>Parametreler
 
 *lpszLabel*<br/>
-[in] Metin etiketini *otomatik* rengi düğmesi (varsayılan) ya da NULL.
+'ndaki *Otomatik* (varsayılan) renk DÜĞMESININ veya null alanının metin etiketi.
 
-Standart etiket otomatik düğmenin **otomatik**.
+Otomatik düğmenin standart etiketi **otomatiktir**.
 
 *colorAutomatic*<br/>
-[in] Otomatik düğmeyi tıklattığınızda, framework uygulanan varsayılan rengi.
+'ndaki Otomatik düğmesine tıkladığınızda çerçevenin geçerli olduğu varsayılan renk.
 
-*bSistemlerde*<br/>
-[in] Otomatik düğmenin etkinleştirmek için TRUE; Otomatik düğmenin devre dışı bırakmak için FALSE. Varsayılan değer True'dur.
+*bEnable*<br/>
+'ndaki Otomatik düğmeyi etkinleştirmek için TRUE; Otomatik düğmeyi devre dışı bırakmak için FALSE. Varsayılan değer TRUE 'dur.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Metin etiketini otomatik düğmenin silinir *lpszLabel* parametresi, NULL veya *bSistemlerde* parametredir FALSE.
+*LpszLabel* parametresi null ise ya da *BENABLE* parametresi false olduğunda otomatik düğmenin metin etiketi silinir.
 
-##  <a name="enableotherbutton"></a>  CMFCColorBar::EnableOtherButton
+##  <a name="enableotherbutton"></a>CMFCColorBar:: EnableOtherButton
 
-Etkinleştirir ya da daha fazla renk seçmesine olanak sağlayan bir iletişim kutusunun görüntülenmesini devre dışı bırakır.
+Kullanıcının daha fazla renk seçmesini sağlayan bir iletişim kutusunun görüntülenmesini sağlar veya devre dışı bırakır.
 
 ```
 void EnableOtherButton(
@@ -542,19 +542,19 @@ void EnableOtherButton(
 ### <a name="parameters"></a>Parametreler
 
 *lpszLabel*<br/>
-[in] Metin etiketini *diğer* görüntüleyen daha rengi seçimleri veya NULL düğmesi.
+'ndaki *Diğer* düğmenin, daha fazla renk SEÇIMI veya null görüntüleyen metin etiketi.
 
-Bu düğme için standart etiket **daha fazla renk...** .
+Bu düğmenin standart etiketi **daha fazla renk...** .
 
 *bAltColorDlg*<br/>
-[in] Görüntülemek true [CMFCColorDialog](../../mfc/reference/cmfccolordialog-class.md) ; iletişim kutusu Standart görüntülemek için FALSE [CColorDialog](../../mfc/reference/ccolordialog-class.md) iletişim kutusu. Varsayılan değer True'dur.
+'ndaki [CMFCColorDialog](../../mfc/reference/cmfccolordialog-class.md) iletişim kutusunu göstermek için true; Standart [CColorDialog](../../mfc/reference/ccolordialog-class.md) iletişim kutusunu göstermek için false. Varsayılan değer TRUE 'dur.
 
-*bSistemlerde*<br/>
-[in] Düğmesini etkinleştirmek için TRUE; Düğmeyi devre dışı bırakmak için FALSE. Varsayılan değer True'dur.
+*bEnable*<br/>
+'ndaki Düğmeyi etkinleştirmek için TRUE; Düğmeyi devre dışı bırakmak için FALSE. Varsayılan değer TRUE 'dur.
 
-##  <a name="getcolor"></a>  CMFCColorBar::GetColor
+##  <a name="getcolor"></a>CMFCColorBar:: GetColor
 
-Şu anda seçili rengini alır.
+Şu anda seçili rengi alır.
 
 ```
 COLORREF GetColor() const;
@@ -562,11 +562,11 @@ COLORREF GetColor() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Şu anda seçili rengi.
+Şu anda seçili olan renk.
 
-##  <a name="getcolorgridsize"></a>  CMFCColorBar::GetColorGridSize
+##  <a name="getcolorgridsize"></a>CMFCColorBar:: GetColorGridSize
 
-Satırlar ve sütunlar renk çubuğu denetim kılavuzundaki sayısını hesaplar.
+Renk çubuğu denetiminin kılavuzundaki satır ve sütun sayısını hesaplar.
 
 ```
 CSize GetColorGridSize(BOOL bVertDock) const;
@@ -576,15 +576,15 @@ CSize GetColorGridSize(BOOL bVertDock) const;
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*bVertDock*|[in] Dikey olarak yerleşik renk çubuğu denetimi için hesaplama yapmak için TRUE; Aksi takdirde, hesaplama için yatay olarak yerleşik bir denetim gerçekleştirir.|
+|*bVertDock*|'ndaki Dikey olarak yerleştirilmiş bir renk çubuğu denetimi için hesaplamayı gerçekleştirmek üzere doğru; Aksi takdirde, yatay olarak yerleştirilmiş bir denetim için hesaplamayı gerçekleştirin.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-A [CSize](../../atl-mfc-shared/reference/csize-class.md) nesnesi `cx` bileşeni içeren sütunları ve ayarlanmış `cy` bileşeni, satır sayısını içerir.
+Bileşeni sütun sayısını ve `cy` bileşen satır sayısını içeren bir [CSize](../../atl-mfc-shared/reference/csize-class.md) nesnesi. `cx`
 
-##  <a name="getcommandid"></a>  CMFCColorBar::GetCommandID
+##  <a name="getcommandid"></a>CMFCColorBar:: Getcommandıd
 
-Geçerli renk çubuğu denetiminin komut Kimliğini alır.
+Geçerli renk çubuğu denetiminin komut KIMLIĞINI alır.
 
 ```
 UINT GetCommandID() const;
@@ -592,15 +592,15 @@ UINT GetCommandID() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Komut kimliği.
+Bir komut KIMLIĞI.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanıcı yeni bir renk seçtiğinde framework komut kimliği üst bildirmek üzere bir WM_COMMAND ileti gönderir. `CMFCColorBar` nesne.
+Kullanıcı yeni bir renk seçtiğinde, çerçeve `CMFCColorBar` nesnenin üst öğesini bilgilendirmek için komut kimliğini bir WM_COMMAND iletisinde gönderir.
 
-##  <a name="getextraheight"></a>  CMFCColorBar::GetExtraHeight
+##  <a name="getextraheight"></a>CMFCColorBar:: GetExtraHeight
 
-Geçerli renk çubuğu gibi çeşitli kullanıcı arabirimi öğeleri görüntülemek için gerekli ek yüksekliği hesaplar **diğer** düğme veya belge renkleri.
+Geçerli renk çubuğunun **diğer** düğme veya belge renkleri gibi çeşitli kullanıcı arabirimi öğelerini görüntülemesi için gereken ek yüksekliği hesaplar.
 
 ```
 int GetExtraHeight(int nNumColumns) const;
@@ -610,15 +610,15 @@ int GetExtraHeight(int nNumColumns) const;
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*nNumColumns*|[in] Renk çubuğu denetimini belge renkleri, belge renkleri kılavuzunda görüntülenecek sütun sayısını içeriyorsa. Aksi takdirde, bu değeri kullanılmaz.|
+|*nNumColumns*|'ndaki Renk çubuğu denetimi belge renkleri içeriyorsa, belge renklerinin kılavuzunda görüntülenecek sütun sayısı. Aksi takdirde, bu değer kullanılmaz.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Gerekli olan hesaplanan ek yüksekliği.
+Gerekli olan hesaplanmış ek yükseklik.
 
-##  <a name="gethighlightedcolor"></a>  CMFCColorBar::GetHighlightedColor
+##  <a name="gethighlightedcolor"></a>CMFCColorBar:: Gethighaçıklatedcolor
 
-Bir renk düğmesi odağa sahip olduğunu belirten rengi alır; diğer bir deyişle, düğmesidir *sık erişimli*.
+Bir renk düğmesinin odağa sahip olduğunu belirten rengi alır; diğer bir deyişle, düğme *sıcak*olur.
 
 ```
 COLORREF GetHighlightedColor() const;
@@ -630,9 +630,9 @@ Bir RGB değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="gethorzmargin"></a>  CMFCColorBar::GetHorzMargin
+##  <a name="gethorzmargin"></a>CMFCColorBar:: GetHorzMargin
 
-Sol veya sağ renk hücre istemci alanı sınırı arasındaki alan yatay boşluğu alır.
+Sol veya sağ renk hücresi ile istemci alanı sınırı arasındaki boşluk olan yatay boşluğu alır.
 
 ```
 int GetHorzMargin();
@@ -642,9 +642,9 @@ int GetHorzMargin();
 
 Yatay kenar boşluğu.
 
-##  <a name="getvertmargin"></a>  CMFCColorBar::GetVertMargin
+##  <a name="getvertmargin"></a>CMFCColorBar:: GetVertMargin
 
-Üst veya alt renk hücre ve istemci alanı sınırları arasındaki boşluk Dikey Kenar alır.
+Üst veya alt renk hücresi ile istemci alanı sınırı arasındaki boşluk olan dikey boşluğu alır.
 
 ```
 int GetVertMargin() const;
@@ -652,11 +652,11 @@ int GetVertMargin() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dikey Kenar boşluğu.
+Dikey kenar boşluğu.
 
-##  <a name="initcolors"></a>  CMFCColorBar::InitColors
+##  <a name="initcolors"></a>CMFCColorBar:: ınitcolors
 
-Renkleri sistem varsayılan paletini ile veya belirtilen bir palet renkleri dizisini başlatır.
+Belirli bir paletteki renklerle veya sistem varsayılan paleti ile bir renk dizisini başlatır.
 
 ```
 static int InitColors(
@@ -668,16 +668,16 @@ static int InitColors(
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*pPalette*|[in] Palet nesne veya NULL bir işaretçi. Bu parametre NULL ise, bu yöntem işletim sisteminin varsayılan palet kullanır.|
-|*arColors*|[in] Renkleri dizisi.|
+|*pPalette*|'ndaki Palet nesnesine yönelik bir işaretçi veya NULL. Bu parametre NULL ise, bu yöntem işletim sisteminin varsayılan paletini kullanır.|
+|*Arrenkler*|'ndaki Renk dizisi.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Renkler dizideki öğelerin sayısı.
+Renk dizisindeki öğelerin sayısı.
 
-##  <a name="istearoff"></a>  CMFCColorBar::IsTearOff
+##  <a name="istearoff"></a>CMFCColorBar:: Isteyoff
 
-Geçerli renk çubuğu yerleştirilebilir olup olmadığını belirtir.
+Geçerli renk çubuğunun dockable olup olmadığını gösterir.
 
 ```
 BOOL IsTearOff() const;
@@ -685,15 +685,15 @@ BOOL IsTearOff() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli renk çubuğu denetimi yerleştirilebilir ise TRUE; Aksi takdirde FALSE.
+Geçerli renk çubuğu denetimi dockable ise doğru; Aksi takdirde, FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Renk çubuğu denetim yerleştirilebilir ise, bir denetim çubuğunu bozuk ve başka bir konumda yerleştirildi.
+Renk çubuğu denetimi dockable ise, bir denetim çubuğu bozulmuş olabilir ve başka bir konuma yerleştirilebilir.
 
-##  <a name="onkey"></a>  CMFCColorBar::OnKey
+##  <a name="onkey"></a>CMFCColorBar:: OnKey
 
-Bir kullanıcı bir klavye düğmesine bastığında framework tarafından çağırılır.
+Kullanıcı bir klavye düğmesine bastığında Framework tarafından çağırılır.
 
 ```
 virtual BOOL OnKey(UINT nChar);
@@ -702,15 +702,15 @@ virtual BOOL OnKey(UINT nChar);
 ### <a name="parameters"></a>Parametreler
 
 *nChar*<br/>
-[in] Bir kullanıcı basılı anahtarı sanal anahtar kodu.
+'ndaki Bir kullanıcıya basılan anahtar için sanal anahtar kodu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu yöntem, belirtilen anahtar işlemleri TRUE; Aksi takdirde FALSE.
+Bu yöntem belirtilen anahtarı işliyorsa doğru; Aksi takdirde, FALSE.
 
-##  <a name="onsendcommand"></a>  CMFCColorBar::OnSendCommand
+##  <a name="onsendcommand"></a>CMFCColorBar:: OnSendCommand
 
-Açılan denetimler hiyerarşisini kapatmak için framework tarafından çağırılır.
+Bir açılır denetimlerin hiyerarşisini kapatmak için Framework tarafından çağırılır.
 
 ```
 virtual BOOL OnSendCommand(const CMFCToolBarButton* pButton);
@@ -720,15 +720,15 @@ virtual BOOL OnSendCommand(const CMFCToolBarButton* pButton);
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*pButton*|[in] Bir araç çubuğu üzerinde bulunduğu bir denetim işaretçisi.|
+|*pButton*|'ndaki Bir araç çubuğunda bulunan denetimin işaretçisi.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.
+Bu yöntem başarılı olursa TRUE; Aksi takdirde, FALSE.
 
-##  <a name="onupdatecmdui"></a>  CMFCColorBar::OnUpdateCmdUI
+##  <a name="onupdatecmdui"></a>CMFCColorBar:: OnUpdateCmdUI
 
-Etkinleştirmek veya öğeyi görüntülenmeden önce bir kullanıcı arabirimi öğesi bir renk çubuğu denetiminin devre dışı bırakmak için framework tarafından çağırılır.
+Öğe görüntülenmeden önce bir renk çubuğu denetiminin Kullanıcı arabirimi öğesini etkinleştirmek veya devre dışı bırakmak için Framework tarafından çağırılır.
 
 ```
 virtual void OnUpdateCmdUI(
@@ -739,18 +739,18 @@ virtual void OnUpdateCmdUI(
 ### <a name="parameters"></a>Parametreler
 
 *pTarget*<br/>
-[in] Güncelleştirilecek kullanıcı arabirimi öğesi içeren bir pencere işaretçisi.
+'ndaki Güncelleştirilecek bir kullanıcı arabirimi öğesi içeren pencerenin işaretçisi.
 
 *bDisableIfNoHndler*<br/>
-[in] İşleyici yok ileti eşlemesi içinde tanımlanmışsa, kullanıcı arabirimi öğesi devre dışı bırakmak için TRUE; Aksi takdirde FALSE.
+'ndaki İleti eşlemesinde hiçbir işleyici tanımlanmamışsa Kullanıcı arabirimi öğesini devre dışı bırakmak için TRUE; Aksi takdirde, FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir kullanıcı, uygulamanızın kullanıcı arabirimi öğesi tıkladığında, öğe, etkin olarak görüntülenip görüntülenmeyeceğini bilmeniz gerekir ya da devre dışı. Komut iletinin hedefi bir on_update_command_uı komut işleyicisi uygulayarak bu bilgileri sağlar. Komutun işlenmesi için bu yöntemi kullanın. Daha fazla bilgi için [Ccmduı sınıfı](../../mfc/reference/ccmdui-class.md).
+Uygulamanızın bir kullanıcısı bir kullanıcı arabirimi öğesine tıkladığında, öğenin etkin veya devre dışı olarak görüntülenmesi gerekip gerekmediğini bilmelidir. Komut iletisinin hedefi, bir ON_UPDATE_COMMAND_UI komut işleyicisi uygulayarak bu bilgileri sağlar. Komutu işlemeye yardımcı olması için bu yöntemi kullanın. Daha fazla bilgi için bkz. [CCmdUI sınıfı](../../mfc/reference/ccmdui-class.md).
 
-##  <a name="opencolordialog"></a>  CMFCColorBar::OpenColorDialog
+##  <a name="opencolordialog"></a>CMFCColorBar:: OpenColorDialog
 
-Renk iletişim kutusu açılır.
+Bir renk iletişim kutusu açar.
 
 ```
 virtual BOOL OpenColorDialog(
@@ -761,28 +761,28 @@ virtual BOOL OpenColorDialog(
 ### <a name="parameters"></a>Parametreler
 
 *colorDefault*<br/>
-[in] Renk iletişim kutusu açıldığında, varsayılan olarak seçilidir rengi.
+'ndaki Renk iletişim kutusu açıldığında varsayılan olarak seçilen renk.
 
 *colorRes*<br/>
-[out] Bir kullanıcı seçili rengi.
+dışı Bir kullanıcının seçtiği renk.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kullanıcının seçtiği bir renk TRUE; Renk iletişim kutusu kullanıcı iptal FALSE.
+Kullanıcı bir renk seçse doğru; Kullanıcı Color iletişim kutusunu iptal edildiyse FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="rebuild"></a>  CMFCColorBar::Rebuild
+##  <a name="rebuild"></a>CMFCColorBar:: Rebuild
 
-Tamamen renk çubuğu denetimi yeniden çizer.
+Renk çubuğu denetimini tamamen yeniden çizer.
 
 ```
 virtual void Rebuild();
 ```
 
-##  <a name="selectpalette"></a>  CMFCColorBar::SelectPalette
+##  <a name="selectpalette"></a>CMFCColorBar:: SelectPalette
 
-Belirtilen bir cihaz bağlamı mantıksal paletini geçerli renk çubuğu denetiminin üst düğmenin paleti ayarlar.
+Belirtilen cihaz bağlamının mantıksal paletini geçerli renk çubuğu denetiminin ana düğmesinin paleti olarak ayarlar.
 
 ```
 CPalette* SelectPalette(CDC* pDC);
@@ -792,15 +792,15 @@ CPalette* SelectPalette(CDC* pDC);
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*pDC*|[in] Cihaz bağlamı geçerli renk çubuğu denetiminin üst düğmenin işaretçi.|
+|*Kökündeki*|'ndaki Geçerli renk çubuğu denetiminin ana düğmesinin cihaz bağlamı işaretçisi.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli renk çubuğu denetiminin üst düğmenin paleti tarafından değiştirilir palet işaretçisi.
+Geçerli renk çubuğu denetiminin üst düğmesinin paleti ile değiştirilmiş palet işaretçisi.
 
-##  <a name="setcolor"></a>  CMFCColorBar::SetColor
+##  <a name="setcolor"></a>CMFCColorBar:: SetColor
 
-Şu anda seçili rengini ayarlar.
+Şu anda seçili olan rengi ayarlar.
 
 ```
 void SetColor(COLORREF color);
@@ -809,11 +809,11 @@ void SetColor(COLORREF color);
 ### <a name="parameters"></a>Parametreler
 
 *Renk*<br/>
-[in] Bir RGB renk değeri.
+'ndaki Bir RGB renk değeri.
 
-##  <a name="setcolorname"></a>  CMFCColorBar::SetColorName
+##  <a name="setcolorname"></a>CMFCColorBar:: SetColorName
 
-Belirtilen bir renk için yeni bir ad belirler.
+Belirtilen renk için yeni bir ad ayarlar.
 
 ```
 static void SetColorName(
@@ -824,18 +824,18 @@ static void SetColorName(
 ### <a name="parameters"></a>Parametreler
 
 *Renk*<br/>
-[in] Renk RGB değeri.
+'ndaki Rengin RGB değeri.
 
 *strName*<br/>
-[in] Belirtilen "rengin" yeni adı.
+'ndaki Belirtilen rengin yeni adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem tüm belirtilen "rengin" adını değiştirir `CMFCColorBar` uygulamanızdaki nesneleri.
+Bu yöntem, uygulamanızdaki tüm `CMFCColorBar` nesnelerde belirtilen rengin adını değiştirir.
 
-##  <a name="setcommandid"></a>  CMFCColorBar::SetCommandID
+##  <a name="setcommandid"></a>CMFCColorBar:: Setcommandıd
 
-Yeni bir komut kimliği bir renk çubuğu denetimi için ayarlar.
+Renk çubuğu denetimi için yeni bir komut KIMLIĞI ayarlar.
 
 ```
 void SetCommandID(UINT nCommandID);
@@ -844,15 +844,15 @@ void SetCommandID(UINT nCommandID);
 ### <a name="parameters"></a>Parametreler
 
 *nCommandID*<br/>
-[in] Komut kimliği.
+'ndaki Bir komut KIMLIĞI.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Renk çubuğu denetiminin komut Kimliğini değiştirmek ve kimliği değişti denetiminin üst penceresine bildirir için bu yöntemi çağırın.
+Bir renk çubuğu denetiminin komut KIMLIĞINI değiştirmek ve KIMLIğIN değiştiği denetimin üst penceresine bildirmek için bu yöntemi çağırın.
 
-##  <a name="setdocumentcolors"></a>  CMFCColorBar::SetDocumentColors
+##  <a name="setdocumentcolors"></a>CMFCColorBar:: SetDocumentColors
 
-Geçerli belgede kullanılan renk listesi ayarlar.
+Geçerli belgede kullanılan renklerin listesini ayarlar.
 
 ```
 void SetDocumentColors(
@@ -864,21 +864,21 @@ void SetDocumentColors(
 ### <a name="parameters"></a>Parametreler
 
 *lpszCaption*<br/>
-[in] Renk çubuğu denetimi kilitli olmadığında görüntülenen başlığı.
+'ndaki Renk çubuğu denetimi yuvalandığında görüntülenen bir resim yazısı.
 
 *lstDocColors*<br/>
-[in] Geçerli belge renkleri değiştirir renkleri listesi.
+'ndaki Geçerli belge renklerinin yerini alan renklerin bir listesi.
 
-*bShowWhenDocked*<br/>
-[in] Renk çubuğu denetimi yerleştirildiğinde, belge renkleri göstermek için TRUE; Aksi takdirde FALSE. Varsayılan değer FALSE olur.
+*Bshowwhensabitlenmiş*<br/>
+'ndaki Renk çubuğu denetimi yerleştirildiğinde belge renklerini göstermek için TRUE; Aksi takdirde, FALSE. Varsayılan değer FALSE 'dur.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*Belge renkleri* belgede şu anda kullanılan renkler. Framework belge renkleri listesini otomatik olarak bulundurur, ancak listesini değiştirmek için bu yöntemi kullanabilirsiniz.
+*Belge renkleri* , bir belgede Şu anda kullanılan renklerdir. Çerçeve, belge renklerinin bir listesini otomatik olarak tutar, ancak bu yöntemi listeyi değiştirmek için kullanabilirsiniz.
 
-##  <a name="sethorzmargin"></a>  CMFCColorBar::SetHorzMargin
+##  <a name="sethorzmargin"></a>CMFCColorBar:: SetHorzMargin
 
-Sol veya sağ renk hücre ve istemci alanı sınırları arasındaki boşluk olan yatay boşluğu ayarlar.
+Sol veya sağ renk hücresi ile istemci alanının sınırı arasındaki boşluk olan yatay boşluğu ayarlar.
 
 ```
 void SetHorzMargin(int nHorzMargin);
@@ -887,15 +887,15 @@ void SetHorzMargin(int nHorzMargin);
 ### <a name="parameters"></a>Parametreler
 
 *nHorzMargin*<br/>
-[in] Piksel cinsinden yatay boşluğu.
+'ndaki Piksel cinsinden yatay kenar boşluğu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, [CMFCColorBar::CMFCColorBar](#cmfccolorbar) Oluşturucusu yatay boşluğu 4 piksel olarak ayarlar.
+Varsayılan olarak, [CMFCColorBar:: CMFCColorBar](#cmfccolorbar) Oluşturucu yatay kenar boşluğunu 4 piksel olarak ayarlar.
 
-##  <a name="setproplist"></a>  CMFCColorBar::SetPropList
+##  <a name="setproplist"></a>CMFCColorBar:: SetPropList
 
-Kümeleri `m_pWndPropList` korumalı veri üyesi için bir özellik Kılavuzu denetimini belirtilen işaretçisi.
+`m_pWndPropList` Korumalı veri üyesini bir özellik Kılavuzu denetimine belirtilen işaretçiye ayarlar.
 
 ```
 void SetPropList(CMFCPropertyGridCtrl* pWndList);
@@ -905,11 +905,11 @@ void SetPropList(CMFCPropertyGridCtrl* pWndList);
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*pWndList*|[in] Özellik Kılavuzu denetimini nesnesi işaretçisi.|
+|*pWndList*|'ndaki Özellik kılavuzu denetim nesnesine yönelik işaretçi.|
 
-##  <a name="setvertmargin"></a>  CMFCColorBar::SetVertMargin
+##  <a name="setvertmargin"></a>CMFCColorBar:: SetVertMargin
 
-Top veya bottom renk hücre ve istemci alanı sınırları arasındaki boşluk olan dikey boşluğu ayarlar.
+Üst veya alt renk hücresi ile istemci alanı sınırı arasındaki boşluk olan dikey boşluğu ayarlar.
 
 ```
 void SetVertMargin(int nVertMargin);
@@ -918,15 +918,15 @@ void SetVertMargin(int nVertMargin);
 ### <a name="parameters"></a>Parametreler
 
 *nVertMargin*<br/>
-[in] Dikey Kenar boşluğunun piksel.
+'ndaki Piksel cinsinden dikey kenar boşluğu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, [CMFCColorBar::CMFCColorBar](#cmfccolorbar) Oluşturucu dikey boşluğu 4 piksel olarak ayarlar.
+Varsayılan olarak, [CMFCColorBar:: CMFCColorBar](#cmfccolorbar) Oluşturucu dikey boşluğu 4 piksel olarak ayarlar.
 
-##  <a name="showcommandmessagestring"></a>  CMFCColorBar::ShowCommandMessageString
+##  <a name="showcommandmessagestring"></a>CMFCColorBar:: ShowCommandMessageString
 
-Durum çubuğundaki ileti satırı güncelleştirmek için renk çubuğu denetim sahibi çerçeve penceresi ister.
+Durum çubuğundaki ileti satırını güncelleştirmek için renk çubuğu denetiminin sahibi olan çerçeve penceresini ister.
 
 ```
 virtual void ShowCommandMessageString(UINT uiCmdId);
@@ -934,12 +934,12 @@ virtual void ShowCommandMessageString(UINT uiCmdId);
 
 ### <a name="parameters"></a>Parametreler
 
-*uiCmdId*<br/>
-[in] Komut kimliği. (Bu parametre yoksayılır.)
+*Uıımıdıd*<br/>
+'ndaki Bir komut KIMLIĞI. (Bu parametre yok sayılır.)
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, renk çubuğu denetiminin sahibine WM_SETMESSAGESTRING ileti gönderir.
+Bu yöntem, WM_SETMESSAGESTRING iletisini renk çubuğu denetiminin sahibine gönderir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,21 +1,21 @@
 ---
-title: içeri aktarma (C++ COM özniteliği)
+title: İçeri AktarC++ (com özniteliği)
 ms.date: 10/03/2018
 f1_keywords:
 - vc-attr.import
 helpviewer_keywords:
 - import attribute
 ms.assetid: ebf07cae-39fb-4047-8b57-54af0a9a83de
-ms.openlocfilehash: d458ce9d938da5f3650eb2478385165de6a140ec
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f9ed80bdcc04302c0dee85935f377c8e3dbfd37f
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62409387"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69514626"
 ---
 # <a name="import"></a>içeri aktar
 
-, Ana IDL başvurmak istediğiniz tanımlarını içeren başka bir .idl, .odl veya üst bilgi dosyasını belirtir.
+Ana IDL 'ınızdan başvurmak istediğiniz tanımları içeren başka bir. IDL,. odl veya üst bilgi dosyasını belirtir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -28,17 +28,17 @@ ms.locfileid: "62409387"
 ### <a name="parameters"></a>Parametreler
 
 *idl_file*<br/>
-Geçerli proje türü kitaplığına içeri aktarılan istediğiniz bir .idl dosyasının adı.
+Geçerli projenin tür kitaplığına içeri aktarılmasını istediğiniz. IDL dosyasının adı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Alma** C++ öznitelik neden bir `#import` altına yerleştirilecek deyimi `import "docobj.idl"` oluşturulan .idl dosyasındaki deyimi. **Alma** özniteliği ile aynı işlevlere sahip [alma](/windows/desktop/Midl/import) MIDL özniteliği.
+**İmport** C++ özniteliği, bir `#import` `import "docobj.idl"` deyimin oluşturulan. IDL dosyasındaki deyimin altına yerleştirilmesine neden olur. **İmport** özniteliği [içeri aktarma](/windows/win32/Midl/import) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
 
-**Alma** özniteliği yalnızca yerleştirir belirtilen dosya; projeniz tarafından oluşturulan .idl dosyasına **alma** özniteliği, yapıları belirtilen dosyada kaynak koddan çağrı vermez Projenizde.  Kaynak kodu, projenizdeki belirtilen dosyada yapıları çağırmak için kullanın ya da [#import](../../preprocessor/hash-import-directive-cpp.md) ve `embedded_idl` veya özniteliği için .h dosyası içerebilir *idl_file*, .h dosyası varsa.
+**İçeri aktarma** özniteliği yalnızca, belirtilen dosyayı projeniz tarafından oluşturulacak. IDL dosyasına koyar; **Import** özniteliği, projenizdeki kaynak koddan belirtilen dosyadaki yapıları çağırmasına izin vermez.  Projenizdeki kaynak koddan belirtilen dosyadaki yapıları çağırmak için [#import](../../preprocessor/hash-import-directive-cpp.md) ve `embedded_idl` özniteliğini kullanın ya da bir. h dosyası varsa, *idl_file*için. h dosyasını dahil edebilirsiniz.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kodu:
+Aşağıdaki kod:
 
 ```cpp
 // cpp_attr_ref_import.cpp
@@ -47,7 +47,7 @@ Aşağıdaki kodu:
 [import(import.idl)];
 ```
 
-oluşturulan .idl dosyasına aşağıdaki kodu üretir:
+oluşturulan. IDL dosyasında aşağıdaki kodu üretir:
 
 ```
 import "docobj.idl";
@@ -66,12 +66,12 @@ library MyLib {
 
 |||
 |-|-|
-|**İçin geçerlidir**|Her yerde|
+|**Uygulama hedefi**|Yerdeki|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|Yok.|
+|**Gerekli öznitelikler**|Yok.|
 |**Geçersiz öznitelikler**|Yok.|
 
-Daha fazla bilgi için [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
+Daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

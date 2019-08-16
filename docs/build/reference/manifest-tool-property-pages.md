@@ -24,16 +24,16 @@ f1_keywords:
 - VC.Project.VCManifestTool.UpdateFileHashesSearchPath
 - vc.project.AdditionalOptionsPage
 ms.assetid: f33499c4-7733-42d9-80e3-8a5018786965
-ms.openlocfilehash: adc821370201eeb83b6c6b4b875e5e62b0fa523f
-ms.sourcegitcommit: 720b74dddb1cdf4e570d55103158304ee1df81f8
+ms.openlocfilehash: c8413a28024361db82ca74858453202393987e60
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68606433"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69492697"
 ---
 # <a name="manifest-tool-property-pages"></a>Bildirim Aracı Özellik Sayfaları
 
-Bu sayfaları, [mt. exe](https://msdn.microsoft.com/library/aa375649)için genel seçenekleri belirtmek üzere kullanın. Bu sayfalar **Proje** > **özellikleri** > **yapılandırma**özellikleribildirim > **Aracı**altında bulunur.
+Bu sayfaları, [mt. exe](/windows/win32/sbscs/mt-exe)için genel seçenekleri belirtmek üzere kullanın. Bu sayfalar **Proje** > **özellikleri** > **yapılandırma**özellikleribildirim > **Aracı**altında bulunur.
 
 ## <a name="general-property-page"></a>Genel özellik sayfası
 
@@ -95,7 +95,7 @@ Yönetilen bir derlemeden bir bildirim oluşturur. (-managedassemblyname: [dosya
 
 ###  <a name="dpi-awareness"></a>DPı tanıma
 
-Uygulamanın DPı duyarlı olup olmadığını belirtir. Varsayılan olarak, bu ayar MFC projeleri için **Evet** ' tir **, aksı takdirde** yalnızca MFC projeleri DPI tanıma göre oluşturulmuştur. Farklı DPı ayarlarını işleyecek kod eklerseniz, ayarı **Evet** olarak geçersiz kılabilirsiniz. Uygulamanız, değilse, bir belirsiz veya küçük görünebilir.
+Uygulamanın DPı duyarlı olup olmadığını belirtir. Varsayılan olarak, bu ayar MFC projeleri için **Evet** ' tir , aksi takdırde yalnızca MFC projeleri DPI tanıma göre oluşturulmuştur. Farklı DPı ayarlarını işleyecek kod eklerseniz, ayarı **Evet** olarak geçersiz kılabilirsiniz. Uygulamanız, değilse, bir belirsiz veya küçük görünebilir.
 
 **Yapabileceği**
 
@@ -105,7 +105,7 @@ Uygulamanın DPı duyarlı olup olmadığını belirtir. Varsayılan olarak, bu 
 
 ## <a name="isolated-com-property-page"></a>Yalıtılmış COM özellik sayfası
 
-Yalıtılmış com hakkında daha fazla bilgi için bkz. [Yalıtılmış uygulamalar](/windows/desktop/SbsCs/isolated-applications) ve [nasıl yapılır: COM bileşenlerini](../how-to-build-isolated-applications-to-consume-com-components.md)tüketmek için yalıtılmış uygulamalar oluşturun.
+Yalıtılmış com hakkında daha fazla bilgi için bkz. [Yalıtılmış uygulamalar](/windows/win32/SbsCs/isolated-applications) ve [nasıl yapılır: COM bileşenlerini](../how-to-build-isolated-applications-to-consume-com-components.md)tüketmek için yalıtılmış uygulamalar oluşturun.
 
 ###  <a name="type-library-file"></a>Tür kitaplığı dosyası
 

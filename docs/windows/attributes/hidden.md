@@ -1,21 +1,21 @@
 ---
-title: Gizli (C++ COM özniteliği)
+title: gizli (C++ com özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.hidden
 helpviewer_keywords:
 - hidden attribute
 ms.assetid: 199c96dd-fc07-46c7-af93-92020aebebe7
-ms.openlocfilehash: d1d87ea057b22984a0e0f8f5518899e36f7d0221
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 75b03877b1204d6e1c4770f5ba9c8c88338b3394
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62409518"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69501457"
 ---
 # <a name="hidden"></a>gizli
 
-Öğe var ancak kullanıcıya dayalı tarayıcıda görüntülenmemesi gerektiğini belirtir.
+Öğenin var olduğunu ancak kullanıcıya dayalı bir tarayıcıda gösterilmemelidir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -25,11 +25,11 @@ ms.locfileid: "62409518"
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Gizli** C++ özniteliği ile aynı işlevlere sahip [gizli](/windows/desktop/Midl/hidden) MIDL özniteliği.
+**Hidden** C++ özniteliği, [Hidden](/windows/win32/Midl/hidden) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
 
 ## <a name="example"></a>Örnek
 
-Örneğin bakın [bağlanabilir](bindable.md) nasıl kullanılacağına ilişkin bir örnek **gizli**.
+**Gizli**dizi kullanımıyla ilgili [](bindable.md) bir örnek için bkz.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -37,12 +37,12 @@ ms.locfileid: "62409518"
 
 |||
 |-|-|
-|**İçin geçerlidir**|**arabirimi**, **sınıfı**, **yapı**, yöntem, özellik|
+|**Uygulama hedefi**|**arabirim**, **sınıf**, **Yapı**, yöntem, Özellik|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|**coclass'ı** (uygulandığında **sınıfı** veya **yapı**)|
+|**Gerekli öznitelikler**|**coclass** ( **sınıfa** veya **yapıya**uygulandığında)|
 |**Geçersiz öznitelikler**|Yok.|
 
-Daha fazla bilgi için [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
+Daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

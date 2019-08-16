@@ -1,5 +1,5 @@
 ---
-title: özellik (C++/CLI ve C++/CX)
+title: Özellik (C++/CLI ve C++/CX)
 ms.date: 10/12/2018
 ms.topic: reference
 f1_keywords:
@@ -8,35 +8,35 @@ f1_keywords:
 helpviewer_keywords:
 - property keyword [C++]
 ms.assetid: cc79d2b2-f013-4d81-8252-eece97a18704
-ms.openlocfilehash: 8ec76db37cffb1b3d15447165300bedf1a8771c9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4a05f9cf8cbec9644254d14873a3259f12b33aed
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62374203"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69509715"
 ---
-# <a name="property--ccli-and-ccx"></a>özellik (C++/CLI ve C++/CX)
+# <a name="property--ccli-and-ccx"></a>Özellik (C++/CLI ve C++/CX)
 
-Bildiren bir *özelliği*, görür ve bir veri üyesi veya bir dizi öğesine gibi erişilen bir üye işlev olduğu.
+Bir veri üyesi veya dizi öğesi gibi davranan ve erişilen bir üye işlev olan bir *özellik*bildirir.
 
 ## <a name="all-runtimes"></a>Tüm Çalışma Zamanları
 
-Özellikleri aşağıdaki türlerden biri bildirebilirsiniz.
+Aşağıdaki özellik türlerinden birini bildirebilirsiniz.
 
-*Basit özellik*<br/>
-Varsayılan olarak, oluşturur bir *set erişimcisine* özellik değeri atar bir *get erişimcisine* özellik değeri ve özellik değerini içeren bir derleyicinin ürettiği özel veri üyesi alır.
+*Simple özelliği*<br/>
+Varsayılan olarak, özellik değerini atayan bir *set erişimcisi* , özellik değerini alan bir *get erişimcisi* ve özellik değerini içeren derleyicinin ürettiği özel veri üyesi oluşturur.
 
-*özelliği bloğu*<br/>
-Kullanıcı tanımlı get oluşturun ve/veya set erişimcileri için bunu kullanın. Her iki okuma/yazma özelliği olan get ve set erişimcileri, tanımlanmış, salt okunur yalnızca get erişimcisine tanımlanır ve salt yazılır yalnızca set erişimcisine tanımlanır.
+*özellik bloğu*<br/>
+Kullanıcı tanımlı get ve/veya set erişimcileri oluşturmak için bunu kullanın. Get ve set erişimcileri tanımlanmazsa ve yalnızca set erişimcisi tanımlanmışsa salt yazılır olduğunda, özelliği okuma/yazma işlemi yapılır.
 
-Ayrıca, özellik değerini içeren bir veri üyesi açıkça belirtmesi gerekir.
+Özellik değerini içeren bir veri üyesini açıkça bildirmeniz gerekir.
 
-*Dizinlenmiş özellik*<br/>
-Bir özellik değerini ayarlamak ve almak için kullanabileceğiniz bir özelliği bloğu tarafından bir veya daha fazla dizin belirtildi.
+*dizinli özellik*<br/>
+Bir veya daha fazla dizin tarafından belirtilen bir özellik değerini almak ve ayarlamak için kullanabileceğiniz bir özellik bloğu.
 
-Bir kullanıcı tarafından tanımlanan bir özellik adı ya da olan bir dizini oluşturulmuş özelliğe oluşturabilirsiniz veya *varsayılan* özellik adı. Özellik tanımlandığı sınıfın adı varsayılan bir dizin özelliği adıdır. Varsayılan özellik bildirmek için belirtin **varsayılan** anahtar sözcüğü yerine bir özellik adı.
+Kullanıcı tanımlı özellik adı veya *varsayılan* Özellik adı olan dizinli bir özellik oluşturabilirsiniz. Varsayılan dizin özelliğinin adı, özelliğin tanımlandığı sınıfın adıdır. Varsayılan bir özellik bildirmek için, özellik adı yerine **varsayılan** anahtar sözcüğü belirtin.
 
-Ayrıca, özellik değerini içeren bir veri üyesi açıkça belirtmesi gerekir. Dizinlenmiş bir özelliği, veri üyesi genellikle bir dizi veya koleksiyon hesaplanır.
+Özellik değerini içeren bir veri üyesini açıkça bildirmeniz gerekir. Dizinli bir özellik için, veri üyesi genellikle bir dizi veya koleksiyondur.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -62,35 +62,35 @@ property type default[index_list] {
 ### <a name="parameters"></a>Parametreler
 
 *type*<br/>
-Özellik değeri ve bu nedenle özelliği veri türü.
+Özellik değerinin veri türü ve sonuç olarak özelliği.
 
 *property_name*<br/>
 Özelliğin adı.
 
-*erişim değiştiricisi*<br/>
-Bir erişim niteleyicisi. Geçerli niteleyicileri olan **statik** ve **sanal**.
+*erişim-değiştirici*<br/>
+Erişim niteleyicisi. Geçerli niteleyiciler **statik** ve **sanal**.
 
-Get veya set erişimcisine üzerinde kabul **sanal** niteleyicisi ancak gerekir üzerinde kabul **statik** niteleyicisi.
+Get veya set erişimcileri **sanal** niteleyiciyi kabul etmemelidir, ancak **statik** niteleyiciyi kabul etmelidir.
 
-*Devralma değiştiricisi*<br/>
-Bir devralma niteleyicisi. Geçerli niteleyicileri olan **soyut** ve **korumalı**.
+*devralma-Değiştirici*<br/>
+Devralma niteleyicisi. Geçerli niteleyiciler **abstract** ve **Sealed**.
 
 *index_list*<br/>
-Bir veya daha fazla dizin virgülle ayrılmış listesi. Her dizin, dizin türü ve özellik yöntem gövdesinde kullanılan isteğe bağlı bir tanımlayıcı oluşur.
+Bir veya daha fazla dizinin virgülle ayrılmış listesi. Her dizin bir dizin türünden ve özellik yöntemi gövdesinde kullanılabilecek bir isteğe bağlı tanımlayıcıyla oluşur.
 
 *value*<br/>
-Ayarlama işleminin özelliğine atayın veya bir get işlemi almak için değer.
+Bir küme işleminde özelliğe atanacak değer veya alma işlemini alma.
 
 *property_body*<br/>
-Özellik yöntemi kümesi veya get erişimcisinin gövdesi. *Property_body* kullanabilirsiniz *index_list* temel özellik veri üyesine erişmek için veya kullanıcı tanımlı işleme parametre olarak.
+Set veya Get erişimcisinin özellik yöntemi gövdesi. *Property_body* , temel özellik veri üyesine erişmek için *index_list* veya Kullanıcı tanımlı işlemede parametreler olarak kullanabilir.
 
 ## <a name="windows-runtime"></a>Windows Çalışma Zamanı
 
-Daha fazla bilgi için [özellikleri (C++/CX)](https://msdn.microsoft.com/library/windows/apps/hh755807.aspx).
+Daha fazla bilgi için bkz. [ÖzelliklerC++(/CX)](../cppcx/properties-c-cx.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
-Derleyici seçeneği: `/ZW`
+Derleyici seçeneği:`/ZW`
 
 ## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı
 
@@ -113,63 +113,63 @@ modifier property type default[index];
 
 ### <a name="parameters"></a>Parametreler
 
-*Değiştiricisi*<br/>
-Özellik bildiriminde ya da bir get/set erişimcisine yöntemi kullanılabilir değiştiricisi. Olası değerler **statik** ve **sanal**.
+*icisi*<br/>
+Bir özellik bildiriminde veya get/set erişimci yönteminde kullanılabilen bir değiştirici. Olası değerler **statiktir** ve **sanal**.
 
 *type*<br/>
 Özelliği tarafından temsil edilen değerin türü.
 
 *property_name*<br/>
-Raise yöntemi çağrıldı; temsilcisinin imzasıyla eşleşmelidir.
+Raise yöntemi için parametreler; temsilcinin imzasıyla aynı olmalıdır.
 
 *index_list*<br/>
-Belirtilen köşeli ayraç (alt simge işleci, ([])), bir veya daha fazla dizinleri virgülle ayrılmış listesi. Her dizin için özellik yöntem gövdesinde bir tür ve isteğe bağlı olarak kullanılabilecek bir tanımlayıcı belirtin.
+Köşeli ayraçlar içinde belirtilen bir veya daha fazla dizinin virgülle ayrılmış listesi (alt simge işleci ([])). Her dizin için, bir tür ve isteğe bağlı olarak özellik yöntemi gövdesinde kullanılabilecek bir tanımlayıcı belirtin.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk söz dizimi örnekte gösterildiği bir *basit özellik*, hangi örtük olarak bildiriyor hem de bir `set` ve `get` yöntemi. Derleyici, özellik değerini depolamak için özel bir alan otomatik olarak oluşturur.
+İlk sözdizimi örneği, hem hemde `set` `get` yöntemini dolaylı olarak bildiren basit bir özelliği gösterir. Derleyici, özelliğin değerini depolamak için otomatik olarak bir özel alan oluşturur.
 
-İkinci sözdizimi örnekte gösterildiği bir *özelliği bloğu*, hangi açıkça bildirir hem de bir `set` ve `get` yöntemi.
+İkinci sözdizimi örneği, hem hem de `set` `get` yöntemini açıkça bildiren bir *özellik bloğunu*gösterir.
 
-Üçüncü sözdizimi örneği, müşteri tanımlı gösterir *dizin özelliği*. Dizin özelliğini ayarlama veya alınan değerin yanı sıra parametreleri alır. Özellik için bir ad belirtmeniz gerekir. Basit bir özelliğin aksine `set` ve/veya `get` dizin özelliğini yöntemlerinin açıkça tanımlanmalıdır ve özellik için bir ad belirtmeniz gerekir.
+Üçüncü sözdizimi örneği, müşteri tarafından tanımlanan bir *Dizin özelliğini*gösterir. Dizin özelliği, ayarlanacak veya alınacak değere ek olarak parametreleri alır. Özellik için bir ad belirtmeniz gerekir. Basit bir özelliğin aksine, `set` bir Index özelliğinin ve/veya `get` yöntemlerinin açıkça tanımlanması ve özellik için bir ad belirtmeniz gerekir.
 
-Dördüncü söz dizimi örnekte gösterildiği bir *varsayılan* türün bir örneğini dizi benzeri erişim sağlayan bir özellik. Anahtar sözcüğü **varsayılan**, yalnızca varsayılan bir özellik belirtmek için kullanılır. Varsayılan özelliğin adını özelliği tanımlandığı tür adıdır.
+Dördüncü sözdizimi örneği, tür örneğine dizi benzeri erişim sağlayan *varsayılan* bir özelliği gösterir. **Varsayılan**anahtar sözcüğü, yalnızca varsayılan bir özellik belirtmek için hizmet verir. Varsayılan özelliğin adı, özelliğin tanımlandığı türün adıdır.
 
-**Özelliği** anahtar sözcüğü bir sınıf, arabirim veya değer türü görünebilir. Özellik get işlevi (salt okunur), bir set işlevine (salt okunur) veya her iki (okuma ve yazma) sahip olabilir.
+**Property** anahtar sözcüğü bir sınıf, arabirim veya değer türünde görünebilir. Bir özellik Get işlevine (salt okunurdur), set işlevine (salt yazılır) veya her ikisine (okuma-yazma) sahip olabilir.
 
-Bir özellik adı, onu içeren yönetilen sınıfın adı aynı olamaz. Alıcı işlevin dönüş türü, karşılık gelen bir ayarlayıcı işlevine son parametresi türüyle eşleşmesi gerekir.
+Özellik adı, kendisini içeren yönetilen sınıfın adıyla eşleşemez. Alıcı işlevinin dönüş türü, karşılık gelen bir ayarlayıcı işlevinin son parametresinin türüyle aynı olmalıdır.
 
-İstemci kodu için bir özellik görünümü bir sıradan veri üyesi olan ve yazılan veya bir veri üyesi aynı sözdizimini kullanarak okuyabilir.
+İstemci kodunda, bir özellik sıradan bir veri üyesinin görünümüne sahiptir ve veri üyesiyle aynı söz dizimini kullanarak üzerine yazılabilir veya buradan okunabilir.
 
-Get ve set yöntemleri üzerinde kabul **sanal** değiştiricisi.
+Get ve set yöntemlerinin **sanal** değiştiricide kabul olmaması gerekir.
 
-Erişilebilirlik get ve set yöntemi gösterebileceğini.
+Get ve set yönteminin erişilebilirliği farklı olabilir.
 
-Bir özellik yöntemi tanımı, sıradan bir yöntem gibi sınıf gövdesinin dışında görünebilir.
+Bir özellik yönteminin tanımı, sıradan bir yöntem gibi sınıf gövdesinin dışında yer alabilir.
 
-Üzerinde get ve set yöntemi bir özellik için kabul **statik** değiştiricisi.
+Bir özelliğin get ve set yöntemi **statik** değiştiricide anlaşacaktır.
 
-Skaler bir özellik varsa, get ve set yöntemleri aşağıdaki Açıklama:
+Get ve set yöntemleri aşağıdaki açıklamaya sığması halinde bir özellik skaler olur:
 
-- Get yöntemi hiç parametresi yok ve dönüş türüne sahip `T`.
+- Get yönteminin parametresi yok ve dönüş türü `T`.
 
-- Set yöntemi türünde bir parametreye sahip `T`ve dönüş türü **void**.
+- Set yöntemi türünde `T`bir parametreye ve **void**dönüş türüne sahiptir.
 
-Olmalıdır yalnızca bir skaler özellik aynı tanımlayıcıya sahip bir kapsamda bildirilmiş. Skaler özellikler aşırı yüklenemez.
+Aynı tanımlayıcıya sahip bir kapsamda belirtilen yalnızca bir skaler özellik olacaktır. Skaler Özellikler aşırı yüklenemez.
 
-Bir özellik veri üyesi bildirildiğinde, derleyici veri üyesi eklediği — bazen "yedekleme deposu" da adlandırılır — sınıfında. İçerilen sınıfının bir gerçek veri üyesi değilmiş gibi kaynak üye başvuramaz, ancak veri üyesinin adı bir biçimidir. İldasm.exe türünüz için meta verilerini görüntüleyin ve özelliğin yedekleme deposu için derleyici tarafından oluşturulan ad görmek için kullanın.
+Bir özellik veri üyesi bildirildiğinde, derleyici bir veri üyesini çıkartır (bazen "yedekleme deposu" olarak adlandırılır). Ancak, veri üyesinin adı, kaynak içindeki üyeye, kapsayan sınıfın gerçek bir veri üyesi gibi başvurulamıyor gibi bir form olur. Türü için meta verileri görüntülemek üzere ıldadsm. exe ' yi kullanın ve özelliğin yedekleme deposu için derleyicinin ürettiği adı görüntüleyin.
 
-Farklı erişilebilirlik erişimci metotlarını bir özellik bloğunda izin verilir.  Diğer bir deyişle, küme yöntemini genel olabilir ve get yöntemini özel olabilir.  Ancak, özellik bildiriminde nedir değerinden daha az kısıtlayıcı bir erişilebilirlik sağlamak bir erişimci metot için bir hata olur.
+Özellik bloğundaki erişimci yöntemlerinde farklı erişilebilirliğe izin verilir.  Diğer bir deyişle, set yöntemi genel olabilir ve get yöntemi özel olabilir.  Ancak, bir erişimci yönteminin, özelliğin bildiriminde bulunandan daha az kısıtlayıcı bir erişilebilirliği olması hatadır.
 
-**özellik** bağlama duyarlı bir anahtar sözcüktür.  Daha fazla bilgi için [Context-Sensitive Keywords](context-sensitive-keywords-cpp-component-extensions.md).
+**özellik** , bağlama duyarlı bir anahtar sözcüktür.  Daha fazla bilgi için bkz. [bağlama duyarlı anahtar sözcükler](context-sensitive-keywords-cpp-component-extensions.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
-Derleyici seçeneği: `/clr`
+Derleyici seçeneği:`/clr`
 
 ### <a name="examples"></a>Örnekler
 
-Aşağıdaki örnek, bildirim ve özellik veri üyesi ve özelliği bloğu kullanımını gösterir.  Ayrıca, bir özellik erişimcisi sınıf dışında tanımlanabilir gösterir.
+Aşağıdaki örnek, bir özellik veri üyesi ve bir özellik bloğunun bildirimini ve kullanımını gösterir.  Ayrıca, bir özellik erişimcisinin sınıf dışında tanımlanabilir olduğunu gösterir.
 
 ```cpp
 // mcppv2_property.cpp

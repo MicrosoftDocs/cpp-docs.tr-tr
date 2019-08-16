@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - event keyword [C++]
 ms.assetid: c4998e42-883c-4419-bbf4-36cdc979dd27
-ms.openlocfilehash: 26bfc3bb9892486353f55a71cfd86a17f2de98b5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8b34a4f146cc7961ee1176580def6319185693e9
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62380334"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69509761"
 ---
 # <a name="event--ccli-and-ccx"></a>Olay (C++/CLI ve C++/CX)
 
-**Olay** anahtar sözcüğü bildiren bir *olay*, kayıtlı aboneleri için bir bildirim olduğu (*olay işleyicileri*), ilgilendiğiniz bir sorun oluştu.
+**Event** anahtar sözcüğü, ilgilendiğiniz abonelere (*olay işleyicileri*) bir bildirimin oluştuğunu bildiren bir *olay*bildirir.
 
 ## <a name="all-runtimes"></a>Tüm Çalışma Zamanları
 
-C++/CX destekler bildirme bir *olay üyesi* veya *olay blok*. Bir olay üyesi bir olay bloğu bildirmek için toplu özelliktir. Varsayılan olarak, bir olay üyesi bildirir `add()`, `remove()`, ve `raise()` açıkça bir olay blokta bildirilen işlevler. Bir olay üyesi işlevleri özelleştirmek için bir olay bloğu yerine bildirme ve ihtiyacınız olan işlevleri geçersiz kılın.
+C++/CX bir *olay üyesinin* veya bir *olay bloğunun*bildirimini destekler. Olay üyesi bir olay bloğunu bildirmek için toplu bir özelliktir. Varsayılan olarak, bir olay üyesi, `add()` `remove()`, ve `raise()` bir olay bloğunda açıkça belirtilen işlevleri bildirir. Bir olay üyesinde işlevleri özelleştirmek için, bunun yerine bir olay bloğu bildirin ve ardından ihtiyacınız olan işlevleri geçersiz kılın.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -40,52 +40,52 @@ modifiereventdelegate^ event_name
 
 ### <a name="parameters"></a>Parametreler
 
-*Değiştiricisi*<br/>
-Olay bildirimi ya da bir olay erişimci yöntemi kullanılabilir değiştiricisi.  Olası değerler **statik** ve **sanal**.
+*icisi*<br/>
+Olay bildiriminde veya bir olay erişimci yönteminde kullanılabilen bir değiştirici.  Olası değerler **statiktir** ve **sanal**.
 
 *delegate*<br/>
-[Temsilci](delegate-cpp-component-extensions.md), imzası olan olay işleyicisi eşleşmesi gerekir.
+İmza olay işleyicisinin eşleşmesi gereken [temsilci](delegate-cpp-component-extensions.md).
 
-*EVENT_NAME*<br/>
+*event_name*<br/>
 Olayın adı.
 
 *return_value*<br/>
-Olay erişimci yöntemi dönüş değeri.  Doğrulanabilir için dönüş türü olmalıdır **void**.
+Olay erişimci yönteminin dönüş değeri.  Doğrulanabilir olması için, dönüş türünün **void**olması gerekir.
 
-*parametreler*<br/>
-(isteğe bağlı) Parametreler için `raise` imzası eşleşen yöntemi *temsilci* parametresi.
+*parameters*<br/>
+seçim `raise` Metot için *temsilci* parametresinin imzasıyla eşleşen parametreler.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir olay bir temsilci olayı harekete yanıt verir ve imza ile uyumlu ve dönüş türü temel temsilci yöntemleri kaydetmek, istemcilerin herhangi bir sınıftan bir üye işlevi (olay işleyicisi) arasındaki ilişkidir.
+Bir olay, bir temsilci ile olayın tetiklenmesine yanıt veren bir üye işlev (olay işleyicisi) arasındaki bir ilişkidir ve herhangi bir sınıftan istemcilerin, temeldeki temsilcinin imzasıyla ve dönüş türüyle uyumlu yöntemler kaydetmesini sağlar.
 
-Olay bildirimleri iki tür vardır:
+İki tür olay bildirimi vardır:
 
-*olay veri üyesi*<br/>
-Derleyicinin otomatik olarak depolama olayı için temsilci türünün üyesi biçiminde oluşturur ve iç oluşturur `add()`, `remove()`, ve `raise()` üye işlevleri. Bir olay veri üyesi bir sınıf içinde bildirilmesi gerekir. Dönüş türünü temsilcinin dönüş türünü dönüş türü olay işleyicisinin eşleşmesi gerekir.
+*Olay veri üyesi*<br/>
+Derleyici, temsilci türünün bir üyesi olan olay için otomatik olarak depolama oluşturur ve iç `add()`, `remove()`ve `raise()` üye işlevleri oluşturur. Bir olay veri üyesinin bir sınıf içinde bildirilmelidir olması gerekir. Temsilcinin dönüş türünün dönüş türü, olay işleyicisinin dönüş türü ile aynı olmalıdır.
 
-*Olay bloğu*<br/>
-Açıkça bildirmek ve davranışını özelleştirmek bir olay bloğu sağlar `add()`, `remove()`, ve `raise()` yöntemleri.
+*olay bloğu*<br/>
+Bir olay bloğu `add()`, `remove()`, ve `raise()` yöntemlerinin davranışını açık bir şekilde bildirmenize ve özelleştirmenize olanak sağlar.
 
-Kullanabileceğiniz **işleçleri +=** ve **-= işleci** ekleme ve kaldırma olay işleyicisi veya çağrı `add()` ve `remove()` yöntemleri açıkça.
+Bir olay işleyicisi eklemek ve kaldırmak için **işleçlerini + =** ve **operator-=** kullanabilirsiniz `add()` ya da ve `remove()` yöntemlerini açıkça çağırabilirsiniz.
 
-**olay** bir bağlama duyarlı anahtar sözcük; bkz [Context-Sensitive Keywords](context-sensitive-keywords-cpp-component-extensions.md) daha fazla bilgi için.
+**olay** , bağlama duyarlı bir anahtar sözcüktür; daha fazla bilgi için bkz. [bağlama duyarlı anahtar sözcükler](context-sensitive-keywords-cpp-component-extensions.md) .
 
 ## <a name="windows-runtime"></a>Windows Çalışma Zamanı
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için [olayları (C++/CX)](https://msdn.microsoft.com/library/windows/apps/hh755799.aspx).
+Daha fazla bilgi için bkz. [OlaylarC++(/CX)](../cppcx/events-c-cx.md).
 
-Ekle ve Kaldır'ı bir olay işleyicisi yapmak istiyorsanız, ekleme işlemi tarafından döndürülen EventRegistrationToken yapısı kaydetmeniz gerekir. Ardından kaldırma işleminde kaldırılacak olay işleyicisi tanımlamak için kaydedilen EventRegistrationToken yapısı kullanmalısınız.
+Bir olay işleyicisini eklemek ve kaldırmak istiyorsanız, ekleme işlemi tarafından döndürülen EventRegistrationToken yapısını kaydetmeniz gerekir. Ardından, kaldır işleminde, kaldırılacak olay işleyicisini belirlemek için kaydedilmiş EventRegistrationToken yapısını kullanmanız gerekir.
 
 ### <a name="requirements"></a>Gereksinimler
 
-Derleyici seçeneği: `/ZW`
+Derleyici seçeneği:`/ZW`
 
 ## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı
 
-**Olay** anahtar sözcüğü, bir olay bildirin olanak sağlar. Olay bildirimleri şeyler olduğunda ilgi sağlamak bir sınıf için bir yol olur.
+**Event** anahtar sözcüğü bir olay bildirmenize olanak tanır. Bir olay, bir sınıfın bir şey olduğunda bildirim sağlaması için bir yoldur.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -104,74 +104,74 @@ modifiereventdelegate^ event_name
 
 ### <a name="parameters"></a>Parametreler
 
-*Değiştiricisi*<br/>
-Olay bildirimi ya da bir olay erişimci yöntemi kullanılabilir değiştiricisi.  Olası değerler **statik** ve **sanal**.
+*icisi*<br/>
+Olay bildiriminde veya bir olay erişimci yönteminde kullanılabilen bir değiştirici.  Olası değerler **statiktir** ve **sanal**.
 
 *delegate*<br/>
-[Temsilci](delegate-cpp-component-extensions.md), imzası olan olay işleyicisi eşleşmesi gerekir.
+İmza olay işleyicisinin eşleşmesi gereken [temsilci](delegate-cpp-component-extensions.md).
 
-*EVENT_NAME*<br/>
+*event_name*<br/>
 Olayın adı.
 
 *return_value*<br/>
-Olay erişimci yöntemi dönüş değeri.  Doğrulanabilir için dönüş türü olmalıdır **void**.
+Olay erişimci yönteminin dönüş değeri.  Doğrulanabilir olması için, dönüş türünün **void**olması gerekir.
 
-*parametreler*<br/>
-(isteğe bağlı) Parametreler için `raise` imzası eşleşen yöntemi *temsilci* parametresi.
+*parameters*<br/>
+seçim `raise` Metot için *temsilci* parametresinin imzasıyla eşleşen parametreler.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir olay bir temsilci olayı harekete yanıt verir ve imza ile uyumlu ve dönüş türü temel temsilci yöntemleri kaydetmek, istemcilerin herhangi bir sınıftan bir üye işlevi (olay işleyicisi) arasındaki ilişkidir.
+Bir olay, bir temsilci ile olayın tetiklenmesine yanıt veren bir üye işlev (olay işleyicisi) arasındaki bir ilişkidir ve herhangi bir sınıftan istemcilerin, temeldeki temsilcinin imzasıyla ve dönüş türüyle uyumlu yöntemler kaydetmesini sağlar.
 
-Temsilci, kodunuzu olayın oluştuğunu gösteriyorsa, çağrılacak bir veya daha fazla ilişkili yöntemi olabilir. Bir programda bir olay .NET Framework ortak dil çalışma zamanını hedefleyen diğer programlar için kullanılabilir hale getirilebilir.
+Temsilcinin, kodunuzun olayın oluştuğunu gösterdiği zaman çağrılacak bir veya daha fazla ilişkili yöntemi olabilir. Bir programdaki bir olay, .NET Framework ortak dil çalışma zamanını hedefleyen diğer programlar için kullanılabilir hale getirilebilir.
 
-Olay bildirimleri iki tür vardır:
+İki tür olay bildirimi vardır:
 
-*olay veri üyesi*<br/>
-Temsilci türünün üyesi biçiminde bir olay için depolama, veri üyesi olayları için derleyici tarafından oluşturulur.  Bir olay veri üyesi bir sınıf içinde bildirilmesi gerekir. Önemsiz bir olay olarak da bilinen budur (aşağıdaki kod örneğine bakın.)
+*Olay veri üyeleri*<br/>
+Temsilci türünün bir üyesi olan olay için depolama alanı, veri üyesi olayları için derleyici tarafından oluşturulur.  Bir olay veri üyesinin bir sınıf içinde bildirilmelidir olması gerekir. Bu, önemsiz bir olay olarak da bilinir (Aşağıdaki kod örneğine bakın.)
 
-*Olay blokları*<br/>
-Olay blokları Ekle, remove ve raise yöntemleri uygulayarak Ekle, remove ve raise yöntemleri davranışını özelleştirmenizi sağlar. İmza Ekle, Kaldır ve raise yöntemlerinin temsilcisinin imzasıyla eşleşmelidir.  Olay bloğu olaylar veri üyesi olmayan ve herhangi bir kullanımından veri üyesi olarak bir derleme hatasına neden olur.
+*olay blokları*<br/>
+Olay blokları, Add, Remove ve raise yöntemlerini uygulayarak ekleme, kaldırma ve yükseltme yöntemlerinin davranışını özelleştirmenize olanak sağlar. Add, Remove ve raise Yöntemlerinin imzası temsilcinin imzasıyla aynı olmalıdır.  Olay engelleme olayları veri üyeleri değildir ve veri üyesi olarak herhangi bir kullanım, derleyici hatası oluşturur.
 
-Olay işleyicisi dönüş türünü temsilcinin dönüş türü eşleşmelidir.
+Olay işleyicisinin dönüş türü, temsilcinin dönüş türüyle aynı olmalıdır.
 
-.NET Framework, bir yöntemi gibi bir veri üyesi davranabilir (diğer bir deyişle, `Invoke` , karşılık gelen bir temsilci yöntemi). Yönetilen bir olay veri üyesi bildirmek için temsilci türüyle önceden gerekir. Buna karşılık, yönetilen bir olay yöntemi, örtük olarak zaten tanımlı değilse karşılık gelen yönetilen temsilci tanımlar.  Bir örnek için bu konunun sonunda kod örneğine bakın.
+.NET Framework, bir veri üyesini bir yöntemin kendisi (yani, `Invoke` karşılık gelen temsilcinin yöntemi) gibi kabul edebilirsiniz. Yönetilen bir olay veri üyesini bildirmek için temsilci türünü önceden tanımlamanız gerekir. Bunun aksine, yönetilen bir olay yöntemi zaten tanımlı değilse karşılık gelen yönetilen temsilciyi örtülü olarak tanımlar.  Örnek için bu konunun sonundaki kod örneğine bakın.
 
-Yönetilen bir olay bildirirken belirtebileceğiniz ekleme ve kaldırma olay işleyicileri eklendiğinde veya kaldırıldığında çağrılır erişimcileri işleçleri += ve-= kullanarak. Add, remove ve raise yöntemi açıkça çağrılabilir.
+Yönetilen bir olay bildirirken, işleç + = ve-= kullanılarak olay işleyicileri eklendiğinde veya kaldırıldığında çağrılacak ekleme ve kaldırma erişimcileri belirtebilirsiniz. Ekle, kaldır ve Yükselt yöntemleri açıkça çağrılabilir.
 
-Oluşturma ve olayları Visual c++'ta kullanmak için aşağıdaki adımlar atılmalıdır:
+Visual C++üzerinde olay oluşturmak ve kullanmak için aşağıdaki adımlar gerçekleştirilmelidir:
 
-1. Oluşturma veya bir temsilci tanımlama. Kendi olay tanımlıyorsanız, ayrıca bir temsilci ile kullanılacak olduğunu emin olmanız gerekir **olay** anahtar sözcüğü. Olay önceden tanımlanmış, .NET Framework Örneğin, ardından olay tüketicilerinin yalnızca adını temsilci bilmeniz.
+1. Bir temsilci oluşturun veya seçin. Kendi olaylarınızı tanımlıyorsanız, **olay** anahtar sözcüğüyle birlikte kullanmak için bir temsilci olduğundan da emin olmanız gerekir. Olay önceden öntanımlı ise, .NET Framework Örneğin, olay tüketicilerinin yalnızca temsilcinin adını bilmeleri gerekir.
 
-2. İçeren bir sınıf oluşturun:
+2. Şunu içeren bir sınıf oluşturun:
 
-   - Bir olay temsilcisi oluşturuldu.
+   - Temsilciden oluşturulan bir olay.
 
-   - (İsteğe bağlı) Temsilci örneği ile bildirilen doğrulayan bir yöntem **olay** anahtar sözcüğü bulunmaktadır. Aksi takdirde, bu mantık, olayı tetikler kodda yerleştirilmelidir.
+   - Seçim **Olay** anahtar sözcüğüyle belirtilen temsilcinin bir örneğinin var olduğunu doğrulayan bir yöntem. Aksi takdirde, bu mantık olayını harekete uygulayan koda yerleştirilmelidir.
 
-   - Olayı çağıran yöntemleri. Bu yöntemler, bazı temel sınıf işlevselliğini geçersiz kılmalarına olabilir.
+   - Olayı çağıran Yöntemler. Bu yöntemler bazı temel sınıf işlevlerinin geçersiz kılmaları olabilir.
 
    Bu sınıf, olayı tanımlar.
 
-3. Yöntemleri connect etkinliği için bir veya daha fazla sınıflar tanımlayın. Bu sınıfların her birini bir veya daha fazla yöntemi temel sınıf içinde olay ile ilişkilendireceksiniz.
+3. Olayları olaya bağlayan bir veya daha fazla sınıf tanımlayın. Bu sınıfların her biri, temel sınıftaki olayla bir veya daha fazla yöntemi ilişkilendirir.
 
-4. Olay kullanın:
+4. Olayı kullanın:
 
-   - Olay bildirimi içeren sınıfın bir nesnesi oluşturun.
+   - Olay bildirimini içeren sınıfın bir nesnesini oluşturun.
 
-   - Olay tanımını içeren sınıfın bir nesnesi oluşturun.
+   - Olay tanımını içeren sınıfın bir nesnesini oluşturun.
 
-Daha fazla bilgi için C++/CLI olaylara bakın
+/CLI olayları hakkında C++daha fazla bilgi için bkz.
 
-- [Arabirim içindeki olaylar](../dotnet/how-to-use-events-in-cpp-cli.md)
+- [Arabirimdeki olaylar](../dotnet/how-to-use-events-in-cpp-cli.md)
 
 ### <a name="requirements"></a>Gereksinimler
 
-Derleyici seçeneği: `/clr`
+Derleyici seçeneği:`/clr`
 
 ### <a name="examples"></a>Örnekler
 
-Aşağıdaki kod örneği, bildirim çiftlerini Temsilciler, olayları ve olay işleyicileri gösterilmektedir; (eklemek) abone; olay işleyicileri olay işleyicilerini çağırma; ve ardından aboneliği (kaldırma) olay işleyicileri.
+Aşağıdaki kod örneği, temsilci, olay ve olay işleyicisi çiftlerinin bildirimini gösterir; olay işleyicilerini abone olma (ekleme); olay işleyicilerini çağırma; ve sonra olay işleyicilerini aboneliği kaldırma (kaldırma).
 
 ```cpp
 // mcppv2_events.cpp
@@ -230,7 +230,7 @@ OnClick: 7, 3.14159
 OnDblClick: Hello
 ```
 
-Aşağıdaki kod örneği oluşturmak için kullanılan mantıksal gösterir `raise` önemsiz bir olayın yöntemi: Olay bir veya daha fazla üyeye sahipse, çağırma `raise` yöntemini açıkça veya örtük olarak temsilci çağırır. Temsilcinin dönüş türü değilse **void** ve sıfır etkinlik abonelerinden varsa `raise` yöntemi temsilci türü için varsayılan değeri döndürür. Hiçbir etkinlik abonelerinden varsa, çağırma `raise` yöntemi yalnızca döndürür ve hiçbir özel durum oluşturulur. Temsilci türü değil dönerseniz **void**, temsilci türü döndürülür.
+Aşağıdaki kod örneği, önemsiz bir olay `raise` yöntemini oluşturmak için kullanılan mantığı göstermektedir: Olayda bir veya daha fazla abone varsa, `raise` yöntemi örtük olarak çağırmak veya temsilciyi açıkça çağırır. Temsilcinin dönüş türü **void** değilse ve sıfır olay aboneleri varsa, `raise` yöntem temsilci türü için varsayılan değeri döndürür. Hiçbir olay abonesi yoksa, `raise` yöntemini çağırmak yalnızca döndürür ve hiçbir özel durum oluşturulmaz. Temsilci dönüş türü **void**değilse, temsilci türü döndürülür.
 
 ```cpp
 // trivial_events.cpp

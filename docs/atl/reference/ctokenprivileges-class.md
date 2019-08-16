@@ -18,12 +18,12 @@ f1_keywords:
 helpviewer_keywords:
 - CTokenPrivileges class
 ms.assetid: 89590105-f001-4014-870d-142926091231
-ms.openlocfilehash: 5f8379d20d8c8d525cd645e1d4aa0c751e16f531
-ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
+ms.openlocfilehash: f4ecc96ee53d6c688d17afa9957ccbf5060ca3fd
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68915526"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69496279"
 ---
 # <a name="ctokenprivileges-class"></a>CTokenPrivileges sınıfı
 
@@ -71,13 +71,13 @@ class CTokenPrivileges
 
 ## <a name="remarks"></a>Açıklamalar
 
-[Erişim belirteci](/windows/desktop/SecAuthZ/access-tokens) bir işlemin veya iş parçacığının güvenlik bağlamını açıklayan ve bir Windows sisteminde oturum açan her kullanıcıya ayrılan bir nesnedir.
+[Erişim belirteci](/windows/win32/SecAuthZ/access-tokens) bir işlemin veya iş parçacığının güvenlik bağlamını açıklayan ve bir Windows sisteminde oturum açan her kullanıcıya ayrılan bir nesnedir.
 
-Erişim belirteci, her kullanıcıya verilen çeşitli güvenlik ayrıcalıklarını tanımlamakta kullanılır. Ayrıcalık, yerel olarak benzersiz tanımlayıcı ( [LUID](/windows/desktop/api/winnt/ns-winnt-luid)) ve tanımlayıcı dize olarak adlandırılan 64 bitlik bir sayıdan oluşur.
+Erişim belirteci, her kullanıcıya verilen çeşitli güvenlik ayrıcalıklarını tanımlamakta kullanılır. Ayrıcalık, yerel olarak benzersiz tanımlayıcı ( [LUID](/windows/win32/api/winnt/ns-winnt-luid)) ve tanımlayıcı dize olarak adlandırılan 64 bitlik bir sayıdan oluşur.
 
-Sınıfı, TOKEN_PRIVILEGES yapısına yönelik bir sarmalayıcı ve 0 veya daha fazla ayrıcalık içerir. [](/windows/desktop/api/winnt/ns-winnt-token_privileges) `CTokenPrivileges` Ayrıcalıklar, sağlanan sınıf yöntemleri kullanılarak eklenebilir, silinebilir veya sorgulanabilir.
+Sınıfı, TOKEN_PRIVILEGES yapısına yönelik bir sarmalayıcı ve 0 veya daha fazla ayrıcalık içerir. [](/windows/win32/api/winnt/ns-winnt-token_privileges) `CTokenPrivileges` Ayrıcalıklar, sağlanan sınıf yöntemleri kullanılarak eklenebilir, silinebilir veya sorgulanabilir.
 
-Windows 'daki erişim denetim modeline giriş için Windows SDK [Access Control](/windows/desktop/SecAuthZ/access-control) bakın.
+Windows 'daki erişim denetim modeline giriş için Windows SDK [Access Control](/windows/win32/SecAuthZ/access-control) bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -101,7 +101,7 @@ WINNT içinde tanımlandığı şekilde, ayrıcalığın adını belirten null i
 True ise ayrıcalık etkindir. Yanlış ise, ayrıcalık devre dışı bırakılır.
 
 *rPrivileges*<br/>
-Bir [TOKEN_PRIVILEGES](/windows/desktop/api/winnt/ns-winnt-token_privileges) yapısına başvuru. Ayrıcalıklar ve öznitelikler bu yapıdan kopyalanır ve `CTokenPrivileges` nesnesine eklenir.
+Bir [TOKEN_PRIVILEGES](/windows/win32/api/winnt/ns-winnt-token_privileges) yapısına başvuru. Ayrıcalıklar ve öznitelikler bu yapıdan kopyalanır ve `CTokenPrivileges` nesnesine eklenir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -123,7 +123,7 @@ CTokenPrivileges(const TOKEN_PRIVILEGES& rPrivileges) throw(...);
 Yeni nesneye atanacak nesne. `CTokenPrivileges`
 
 *rPrivileges*<br/>
-Yeni`CTokenPrivileges` nesnesine atanacak [TOKEN_PRIVILEGES](/windows/desktop/api/winnt/ns-winnt-token_privileges) yapısı.
+Yeni`CTokenPrivileges` nesnesine atanacak [TOKEN_PRIVILEGES](/windows/win32/api/winnt/ns-winnt-token_privileges) yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -230,7 +230,7 @@ void GetLuidsAndAttributes(
 ### <a name="parameters"></a>Parametreler
 
 *pPrivileges*<br/>
-[LUID](/windows/desktop/api/winnt/ns-winnt-luid) nesnelerinin dizisine yönelik işaretçi. `CLUIDArray`, olarak `CAtlArray<LUID> CLUIDArray`tanımlanan bir typedef.
+[LUID](/windows/win32/api/winnt/ns-winnt-luid) nesnelerinin dizisine yönelik işaretçi. `CLUIDArray`, olarak `CAtlArray<LUID> CLUIDArray`tanımlanan bir typedef.
 
 *pAttributes*<br/>
 Bir DWORD nesneleri dizisine yönelik işaretçi. Bu parametre atlanırsa veya NULL ise, öznitelikler alınmadı. `CAttributes`, olarak `CAtlArray <DWORD> CAttributes`tanımlanan bir typedef.
@@ -273,7 +273,7 @@ const TOKEN_PRIVILEGES* GetPTOKEN_PRIVILEGES() const throw(...);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-[TOKEN_PRIVILEGES](/windows/desktop/api/winnt/ns-winnt-token_privileges) yapısına bir işaretçi döndürür.
+[TOKEN_PRIVILEGES](/windows/win32/api/winnt/ns-winnt-token_privileges) yapısına bir işaretçi döndürür.
 
 ##  <a name="lookupprivilege"></a>CTokenPrivileges:: LookupPrivilege
 
@@ -309,7 +309,7 @@ CTokenPrivileges& operator= (const CTokenPrivileges& rhs) throw(...);
 ### <a name="parameters"></a>Parametreler
 
 *rPrivileges*<br/>
-`CTokenPrivileges` Nesneye atanacak [TOKEN_PRIVILEGES](/windows/desktop/api/winnt/ns-winnt-token_privileges) yapısı.
+`CTokenPrivileges` Nesneye atanacak [TOKEN_PRIVILEGES](/windows/win32/api/winnt/ns-winnt-token_privileges) yapısı.
 
 *sağ taraftan*<br/>
 Nesneye `CTokenPrivileges` atanacak nesne.
@@ -328,13 +328,13 @@ operator const TOKEN_PRIVILEGES *() const throw(...);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir değeri [TOKEN_PRIVILEGES](/windows/desktop/api/winnt/ns-winnt-token_privileges) yapısına bir işaretçiye yayınlar.
+Bir değeri [TOKEN_PRIVILEGES](/windows/win32/api/winnt/ns-winnt-token_privileges) yapısına bir işaretçiye yayınlar.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Güvenlik örneği](../../overview/visual-cpp-samples.md)<br/>
-[TOKEN_PRIVILEGES](/windows/desktop/api/winnt/ns-winnt-token_privileges)<br/>
-[DEĞERINI](/windows/desktop/api/winnt/ns-winnt-luid)<br/>
-[LUID_AND_ATTRIBUTES](/windows/desktop/api/winnt/ns-winnt-luid_and_attributes)<br/>
+[TOKEN_PRIVILEGES](/windows/win32/api/winnt/ns-winnt-token_privileges)<br/>
+[DEĞERINI](/windows/win32/api/winnt/ns-winnt-luid)<br/>
+[LUID_AND_ATTRIBUTES](/windows/win32/api/winnt/ns-winnt-luid_and_attributes)<br/>
 [Sınıfa genel bakış](../../atl/atl-class-overview.md)<br/>
 [Güvenlik Genel İşlevleri](../../atl/reference/security-global-functions.md)

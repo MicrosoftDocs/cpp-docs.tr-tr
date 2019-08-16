@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C4311
 ms.assetid: ddc579d0-d051-47bc-915d-71ffb32323c9
-ms.openlocfilehash: 5f9b8ce710879913fdad1be5c0f22f8e3f4ed9d7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6e44dafb6675882a1a62fba5144f85120378421d
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62408335"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69510063"
 ---
 # <a name="compiler-warning-level-1-c4311"></a>Derleyici Uyarısı (düzey 1) C4311
 
 'variable' : 'type' öğesinden 'type' öğesine işaretçi kesilmesi
 
-Bu uyarı, 64-bit işaretçi kesilmesi sorunları algılar. Bir 64 bit mimari için kod derlenir, atanan, örneğin, bir işaretçi (64 bit) değeri kesilecek bir `int` (32 bit). Daha fazla bilgi için [kullanarak işaretçileri için kuralları](/windows/desktop/WinProg64/rules-for-using-pointers).
+Bu uyarı 64 bit işaretçi kesme sorunlarını algılar. Örneğin, kod 64 bitlik bir mimari için derlenmişse, bir işaretçiye (64 bit) atandığında `int` , bir (32 bit) değeri kesilir. Daha fazla bilgi için bkz. [Işaretçiler kullanma kuralları](/windows/win32/WinProg64/rules-for-using-pointers).
 
-Uyarı C4311 yaygın nedenleri hakkında ek bilgi için bkz: [Genel derleyici hataları](/windows/desktop/WinProg64/common-compiler-errors).
+Uyarı C4311 genel nedenleri hakkında daha fazla bilgi için bkz. [yaygın derleyici hataları](/windows/win32/WinProg64/common-compiler-errors).
 
-Aşağıdaki kod örneği için 64 bit hedef derlendiğinde C4311 oluşturur ve ardından sorunu gidermek nasıl gösterir:
+Aşağıdaki kod örneği, 64 bitlik bir hedef için derlendikten sonra C4311 oluşturur ve sonra bunu nasıl düzelteceğinizi gösterir:
 
 ```
 // C4311.cpp

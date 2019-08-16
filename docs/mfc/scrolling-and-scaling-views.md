@@ -8,44 +8,44 @@ helpviewer_keywords:
 - scroll bars [MFC], messages
 - scrolling views [MFC]
 ms.assetid: f98a3421-c336-407e-97ee-dbb2ffd76fbd
-ms.openlocfilehash: 7d26bc656dec3fdcbb8fc5ea4918ec7d59bc5afc
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7064880c5ceef8e7dc3e35bb7ef5bc700b0842d2
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62308608"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69511222"
 ---
 # <a name="scrolling-and-scaling-views"></a>Görünümleri Kaydırma ve Ölçeklendirme
 
-MFC bunları görüntüler çerçeve penceresinin boyutunu otomatik olarak ölçeklendirilen kaydırın ve görünümleri görünümleri destekler. Sınıf `CScrollView` görünümleri her iki tür destekler.
+MFC, kaydırılan ve görüntülenen görünümleri destekler ve bunları görüntüleyen çerçeve penceresinin boyutuna otomatik olarak ölçeklendirilir. Sınıf `CScrollView` her iki türde görünümü destekler.
 
-Kaydırma ve ölçeklendirme hakkında daha fazla bilgi için bkz. [CScrollView](../mfc/reference/cscrollview-class.md) içinde *MFC başvurusu*. Kayan bir örnek için bkz: [Scribble örneğinin](../overview/visual-cpp-samples.md).
+Kaydırma ve ölçeklendirme hakkında daha fazla bilgi için *MFC başvurusu*Içindeki Class [CScrollView](../mfc/reference/cscrollview-class.md) bölümüne bakın. Kaydırılan bir örnek için bkz. [karalama örneği](../overview/visual-cpp-samples.md).
 
-## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz
+## <a name="what-do-you-want-to-know-more-about"></a>Hakkında daha fazla bilgi edinmek istiyorsunuz
 
 - Bir görünüm kaydırma
 
-- Bir görünüm ölçeklendirme
+- Görünümü ölçekleme
 
-- [Görünüm koordinatları](/windows/desktop/gdi/window-coordinate-system)
+- [Koordinatları görüntüle](/windows/win32/gdi/window-coordinate-system)
 
-##  <a name="_core_scrolling_a_view"></a> Bir görünüm kaydırma
+##  <a name="_core_scrolling_a_view"></a>Bir görünüm kaydırma
 
-Sık belgenin görünümünü görüntüleyebilirsiniz boyutundan büyük boyutudur. Bu belgenin verilerini artırır veya Görünüm çerçeve penceresi kullanıcı daraltır nedeniyle ortaya çıkabilir. Böyle durumlarda, kaydırma görünümü desteklemesi gerekir.
+Genellikle bir belgenin boyutu, görünümü tarafından görüntülenebilecek boyuttan daha büyük. Bu durum belge verilerinin arttığı veya kullanıcının görünümü çerçevelerin pencereyi küçülmesi nedeniyle ortaya çıkabilir. Bu gibi durumlarda, görünümün kaydırmayı desteklemesi gerekir.
 
-Herhangi bir görünüm, kaydırma çubuğu iletileri işleyebilir, `OnHScroll` ve `OnVScroll` üye işlevleri. Bu işlevlerin her iki uygulama kaydırma çubuğu ileti işleme tüm işini kendiniz yapmak için ya da kullanabilirsiniz `CScrollView` sizin için kaydırma işlemek için sınıf.
+Herhangi bir görünüm, `OnHScroll` ve `OnVScroll` üye işlevlerinde kaydırma çubuğu iletilerini işleyebilir. Bu işlevlerde kaydırma çubuğu ileti işleme uygulayabilir, tüm işleri kendiniz yapabilir veya kaydırma işlemini sizin için işlemek üzere kullanabilirsiniz `CScrollView` .
 
-`CScrollView` şunları yapar:
+`CScrollView`şunları yapar:
 
-- Pencere ve Görünüm penceresi boyutları ve eşleme modları yönetir
+- Pencere ve Görünüm penceresi boyutlarını ve eşleme modlarını yönetir
 
-- Otomatik kaydırma çubuğu iletilere yanıt olarak kaydırır
+- Kaydırma çubuğu iletilerine yanıt olarak otomatik olarak kaydırır
 
-Ne kadar "(kullanıcı bir kaydırma çubuğu mil tıkladığında) bir sayfası" ve "satır" için (kullanıcı bir kaydırma oka tıkladığında) kaydırmak için belirtebilirsiniz. Bu değerleri niteliği görünümünüzde uyacak şekilde planlayın. Örneğin, bir grafik görünümü için 1 piksel artırır ancak metin belgelerde satır yüksekliği göre halinde kaydırın isteyebilirsiniz.
+"Sayfa" için ne kadar kaydırılacağını (Kullanıcı bir kaydırma çubuğu Shaft 'e tıkladığında) ve bir "satır" (Kullanıcı bir kaydırma okuna tıkladığı zaman) belirtebilirsiniz. Bu değerleri görünümlerinizin yapısına uyacak şekilde planlayın. Örneğin, bir grafik görünümü için 1 piksellik artışlarla, metin belgelerindeki çizgi yüksekliğine göre artışlarla kaydırmak isteyebilirsiniz.
 
-##  <a name="_core_scaling_a_view"></a> Bir görünüm ölçeklendirme
+##  <a name="_core_scaling_a_view"></a>Görünümü ölçekleme
 
-Görünümü otomatik olarak alt çerçeve penceresi sığacak şekilde istediğiniz zaman kullanabileceğiniz `CScrollView` kaydırma yerine ölçeklendirme için. Mantıksal görünüm esnetildiğini veya pencerenin istemci alanını tam olarak sığması için küçültülebilir. Ölçeklendirilmiş bir görünüm, kaydırma çubukları vardır.
+Görünümün otomatik olarak çerçeve penceresinin boyutuna sığması istediğinizde, kaydırma yerine ölçekleme için kullanabilirsiniz `CScrollView` . Mantıksal Görünüm, pencerenin istemci alanına tam olarak sığması için uzatılır veya küçültülebilir. Ölçeklenen bir görünüm, kaydırma çubuklarına sahip değildir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

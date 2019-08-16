@@ -11,16 +11,16 @@ helpviewer_keywords:
 - POINT structure
 - CPoint class
 ms.assetid: a6d4db93-35cc-444d-9221-c3e160f6edaa
-ms.openlocfilehash: 85e469e1f52a22917580ce8616aaba5ff57d08ed
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b7c13ef8b9656c5c2fa6a90fefca0d9babbe1c84
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62252625"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69491224"
 ---
 # <a name="cpoint-class"></a>CPoint sınıfı
 
-Windows için benzer `POINT` yapısı.
+Windows `POINT` yapısına benzer.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -34,36 +34,36 @@ class CPoint : public tagPOINT
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CPoint::CPoint](#cpoint)|Oluşturur bir `CPoint`.|
+|[CPoint:: CPoint](#cpoint)|Bir `CPoint`oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CPoint::Offset](#offset)|Değerine ekler `x` ve `y` üyeleri `CPoint`.|
+|[CPoint:: kayması](#offset)|, `x` Ve `y` üyelerine değerekler.`CPoint`|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CPoint::operator-](#operator_-)|Farkını döndürür bir `CPoint` ve bir boyut veya negation bir veya iki nokta veya negatif bir boyuta göre uzaklığını arasındaki boyut farkı.|
-|[CPoint::operator! =](#operator_neq)|İki nokta arasındaki eşitsizliği denetler.|
-|[CPoint::operator +](#operator_add)|Toplamını geri döndüren bir `CPoint` ve boyutu veya noktası veya bir `CRect` boyutuna göre uzaklığı.|
-|[CPoint::operator +=](#operator_add_eq)|Uzaklıkları `CPoint` boyutu veya noktası ekleyerek.|
-|[CPoint::operator-=](#operator_-_eq)|Uzaklıkları `CPoint` boyutu veya noktası çıkararak.|
-|[CPoint::operator ==](#operator_eq_eq)|İki nokta arasındaki denetler.|
+|[CPoint:: operator-](#operator_-)|Bir `CPoint` ve boyutunun veya bir noktanın değilinin veya iki nokta arasındaki boyut farkının veya negatif bir boyuta göre farkın farkını döndürür.|
+|[CPoint:: operator! =](#operator_neq)|İki punto arasındaki eşitsizlik için denetim gerçekleştirir.|
+|[CPoint:: operator +](#operator_add)|Bir `CPoint` , bir boyut veya noktanın toplamını `CRect` ya da bir boyut ile bir konum döndürür.|
+|[CPoint:: operator + =](#operator_add_eq)|Bir `CPoint` boyut veya nokta ekleyerek uzaklıkları.|
+|[CPoint:: operator-=](#operator_-_eq)|Bir `CPoint` boyut veya noktayı çıkararak uzaklıkları.|
+|[CPoint:: operator = =](#operator_eq_eq)|İki noktayla eşitlik olup olmadığını denetler.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Ayrıca yönlendirmek üzere öğe işlevleri içerir `CPoint` ve [noktası](/windows/desktop/api/windef/ns-windef-tagpoint) yapıları.
+Ayrıca, işleme `CPoint` ve [işaret](/windows/win32/api/windef/ns-windef-point) yapılarına üye işlevleri de içerir.
 
-A `CPoint` nesnesi olabilir yerde kullanılan bir `POINT` yapısı kullanılır. Bu sınıfın "boyutu" ile etkileşim işleçleri ya da kabul [CSize](../../atl-mfc-shared/reference/csize-class.md) nesneleri veya [BOYUTU](/windows/desktop/api/windef/ns-windef-tagsize) yapıları iki birbirinin yerine olduğundan.
-
-> [!NOTE]
->  Bu sınıf türetilir `tagPOINT` yapısı. (Adın `tagPOINT` için daha az kullanılan addır `POINT` yapısı.) Veri üyeleri buna `POINT` yapısını `x` ve `y`, erişilebilir veri üyeleri `CPoint`.
+Bir `CPoint` nesne, bir `POINT` yapının kullanıldığı her yerde kullanılabilir. Bu sınıfın "Boyut" ile etkileşime geçen işleçleri [CSize](../../atl-mfc-shared/reference/csize-class.md) nesneleri veya [Boyut](/windows/win32/api/windef/ns-windef-size) yapılarını kabul eder, çünkü ikisi birlikte değiştirilebilir.
 
 > [!NOTE]
->  Daha fazla bilgi için paylaşılan yardımcı sınıflar (gibi `CPoint`), bkz: [paylaşılan sınıflar](../../atl-mfc-shared/atl-mfc-shared-classes.md).
+>  Bu sınıf `tagPOINT` yapıdan türetilir. (Ad `tagPOINT` , `POINT` yapı için daha yaygın olarak kullanılan bir addır.) Bu, `POINT` `y`yapının veri üyelerinin `CPoint`ve ' nin erişilebilir veri üyeleri olduğu anlamına gelir. `x`
+
+> [!NOTE]
+>  Paylaşılan yardımcı sınıflar (gibi `CPoint`) hakkında daha fazla bilgi için bkz. [paylaşılan sınıflar](../../atl-mfc-shared/atl-mfc-shared-classes.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -73,11 +73,11 @@ A `CPoint` nesnesi olabilir yerde kullanılan bir `POINT` yapısı kullanılır.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atltypes.h
+**Üstbilgi:** atltypes. h
 
-##  <a name="cpoint"></a>  CPoint::CPoint
+##  <a name="cpoint"></a>CPoint:: CPoint
 
-Oluşturur bir `CPoint` nesne.
+Bir `CPoint` nesnesi oluşturur.
 
 ```
 CPoint() throw();
@@ -89,24 +89,24 @@ CPoint(LPARAM dwPoint) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*initX*<br/>
-Değerini belirtir `x` üyesi `CPoint`.
+*ınitx*<br/>
+`x`Üyesinindeğerinibelirtir. `CPoint`
 
-*initY*<br/>
-Değerini belirtir `y` üyesi `CPoint`.
+*Çevre*<br/>
+`y`Üyesinindeğerinibelirtir. `CPoint`
 
-*initPt*<br/>
-[NOKTASI](/windows/desktop/api/windef/ns-windef-tagpoint) yapısı veya `CPoint` başlatmak için kullanılan değerleri belirten `CPoint`.
+*ınitpt*<br/>
+Başlangıç [noktası](/windows/win32/api/windef/ns-windef-point) yapısı `CPoint` veya başlatmak `CPoint`için kullanılan değerleri belirtir.
 
 *initSize*<br/>
-[BOYUTU](/windows/desktop/api/windef/ns-windef-tagsize) yapısı veya [CSize](../../atl-mfc-shared/reference/csize-class.md) başlatmak için kullanılan değerleri belirten `CPoint`.
+Başlatmak`CPoint`için kullanılan değerleri belirten [Boyut](/windows/win32/api/windef/ns-windef-size) yapısı veya [CSize](../../atl-mfc-shared/reference/csize-class.md) .
 
 *dwPoint*<br/>
-Kümeleri `x` alt sıra sözcüğüne üye *dwPoint* ve `y` dwpoint üye *dwPoint*.
+Üyeyi, *dwPoint* 'in alt-sıra sözcüğünün ve üyenindwPoint'inüst-sırasözcüğüne`y`ayarlar. `x`
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bağımsız değişken olmadan verilirse `x` ve `y` üyeleri 0 olarak ayarlanır.
+Hiçbir bağımsız değişken verilmezse `x` ve `y` Üyeler 0 olarak ayarlanır.
 
 ### <a name="example"></a>Örnek
 
@@ -135,9 +135,9 @@ CPoint ptFromDouble(dwSize);
 ASSERT(ptFromDouble == ptMFCHere);
 ```
 
-##  <a name="offset"></a>  CPoint::Offset
+##  <a name="offset"></a>CPoint:: kayması
 
-Değerine ekler `x` ve `y` üyeleri `CPoint`.
+, `x` Ve `y` üyelerine değerekler.`CPoint`
 
 ```
 void Offset(int xOffset, int yOffset) throw();
@@ -147,25 +147,25 @@ void Offset(SIZE size) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*xOffset*<br/>
-Kaydırılacağı uzaklık belirtir `x` üyesi `CPoint`.
+*Xsapmayı*<br/>
+`x` Üyesinin`CPoint`kaydırılacağı miktarı belirtir.
 
-*yOffset*<br/>
-Kaydırılacağı uzaklık belirtir `y` üyesi `CPoint`.
+*Rivın*<br/>
+`y` Üyesinin`CPoint`kaydırılacağı miktarı belirtir.
 
-*Noktası*<br/>
-Belirtir ( [noktası](/windows/desktop/api/windef/ns-windef-tagpoint) veya `CPoint`) dengelemek için `CPoint`.
+*seçeneğinin*<br/>
+Kaydırılacağı miktarı ( [nokta](/windows/win32/api/windef/ns-windef-point) veya `CPoint` `CPoint`) belirtir.
 
-*Boyutu*<br/>
-Belirtir ( [BOYUTU](/windows/desktop/api/windef/ns-windef-tagsize) veya [CSize](../../atl-mfc-shared/reference/csize-class.md)) dengelemek için `CPoint`.
+*boyutla*<br/>
+Kaydırılacağı [](/windows/win32/api/windef/ns-windef-size) `CPoint`miktarı (boyut veya [CSize](../../atl-mfc-shared/reference/csize-class.md)) belirtir.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATLMFC_Utilities#28](../../atl-mfc-shared/codesnippet/cpp/cpoint-class_1.cpp)]
 
-##  <a name="operator_eq_eq"></a>  CPoint::operator ==
+##  <a name="operator_eq_eq"></a>CPoint:: operator = =
 
-İki nokta arasındaki denetler.
+İki noktayla eşitlik olup olmadığını denetler.
 
 ```
 BOOL operator==(POINT point) const throw();
@@ -173,20 +173,20 @@ BOOL operator==(POINT point) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*Noktası*<br/>
-İçeren bir [noktası](/windows/desktop/api/windef/ns-windef-tagpoint) yapısı veya `CPoint` nesne.
+*seçeneğinin*<br/>
+Bir [nokta](/windows/win32/api/windef/ns-windef-point) yapısı veya `CPoint` nesnesi içerir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Noktaları eşit olursa sıfır dışı; Aksi durumda 0.
+Noktaları eşitse sıfır dışı; Aksi takdirde 0.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATLMFC_Utilities#29](../../atl-mfc-shared/codesnippet/cpp/cpoint-class_2.cpp)]
 
-##  <a name="operator_neq"></a>  CPoint::operator! =
+##  <a name="operator_neq"></a>CPoint:: operator! =
 
-İki nokta arasındaki eşitsizliği denetler.
+İki punto arasındaki eşitsizlik için denetim gerçekleştirir.
 
 ```
 BOOL operator!=(POINT point) const throw();
@@ -194,20 +194,20 @@ BOOL operator!=(POINT point) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*Noktası*<br/>
-İçeren bir [noktası](/windows/desktop/api/windef/ns-windef-tagpoint) yapısı veya `CPoint` nesne.
+*seçeneğinin*<br/>
+Bir [nokta](/windows/win32/api/windef/ns-windef-point) yapısı veya `CPoint` nesnesi içerir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Noktaları eşit değilse, sıfır olmayan; Aksi durumda 0.
+Noktaları eşit değilse sıfır dışı; Aksi takdirde 0.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATLMFC_Utilities#30](../../atl-mfc-shared/codesnippet/cpp/cpoint-class_3.cpp)]
 
-##  <a name="operator_add_eq"></a>  CPoint::operator +=
+##  <a name="operator_add_eq"></a>CPoint:: operator + =
 
-İlk aşırı yükleme bir boyuta ekler `CPoint`.
+İlk aşırı yükleme öğesine `CPoint`bir boyut ekler.
 
 ```
 void operator+=(SIZE size) throw();
@@ -216,27 +216,27 @@ void operator+=(POINT point) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*Boyutu*<br/>
-İçeren bir [BOYUTU](/windows/desktop/api/windef/ns-windef-tagsize) yapısı veya [CSize](../../atl-mfc-shared/reference/csize-class.md) nesne.
+*boyutla*<br/>
+Bir [Boyut](/windows/win32/api/windef/ns-windef-size) yapısı veya [CSize](../../atl-mfc-shared/reference/csize-class.md) nesnesi içerir.
 
-*Noktası*<br/>
-İçeren bir [noktası](/windows/desktop/api/windef/ns-windef-tagpoint) yapısı veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesne.
+*seçeneğinin*<br/>
+Bir [nokta](/windows/win32/api/windef/ns-windef-point) yapısı veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesnesi içerir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İkinci aşırı yüklemesi bir noktaya ekler `CPoint`.
+İkinci aşırı yükleme öğesine `CPoint`bir işaret ekler.
 
-Her iki durumda da ayrıca ekleyerek yapılır `x` (veya `cx`) sağ işleneni üyesi `x` üyesi `CPoint` ve ekleme `y` (veya `cy`) sağ işleneni üyesi `y` üyesi `CPoint`.
+Her iki durumda da, `x` sağ işlenen `x` `CPoint` öğesinin üyesine eklenerek `cx`ve `y` sağ işleneninin (veya `cy`) üyesini öğesine ekleyerek toplama işlemi yapılır. `y` üyesi .`CPoint`
 
-Örneğin, ekleme `CPoint(5, -7)` içeren bir değişkene `CPoint(30, 40)` değişkenine değişiklikleri `CPoint(35, 33)`.
+Örneğin, değişkenini içeren `CPoint(5, -7)` `CPoint(30, 40)` bir değişkene ekleme, değişkenini olarak `CPoint(35, 33)`değiştirir.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATLMFC_Utilities#31](../../atl-mfc-shared/codesnippet/cpp/cpoint-class_4.cpp)]
 
-##  <a name="operator_-_eq"></a>  CPoint::operator-=
+##  <a name="operator_-_eq"></a>CPoint:: operator-=
 
-İlk aşırı yükleme listesinden bir boyut çıkarır `CPoint`.
+İlk aşırı yükleme bir boyutu öğesinden `CPoint`çıkarır.
 
 ```
 void operator-=(SIZE size) throw();
@@ -245,27 +245,27 @@ void operator-=(POINT point) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*Boyutu*<br/>
-İçeren bir [BOYUTU](/windows/desktop/api/windef/ns-windef-tagsize) yapısı veya [CSize](../../atl-mfc-shared/reference/csize-class.md) nesne.
+*boyutla*<br/>
+Bir [Boyut](/windows/win32/api/windef/ns-windef-size) yapısı veya [CSize](../../atl-mfc-shared/reference/csize-class.md) nesnesi içerir.
 
-*Noktası*<br/>
-İçeren bir [noktası](/windows/desktop/api/windef/ns-windef-tagpoint) yapısı veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesne.
+*seçeneğinin*<br/>
+Bir [nokta](/windows/win32/api/windef/ns-windef-point) yapısı veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesnesi içerir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İkinci aşırı yüklemesi bir noktasından çıkarır `CPoint`.
+İkinci aşırı yükleme bir noktayı öğesinden `CPoint`çıkarır.
 
-Her iki durumda da çıkarma çıkararak yapılır `x` (veya `cx`) atamada sağ işlenen üye `x` üyesi `CPoint` ve çıkarma `y` (veya `cy`) sağ üyesi işlenenden `y` üyesi `CPoint`.
+Her iki durumda da çıkarma, `x` sağ işlenenin `x` `CPoint` üyesi olan (veya `cx`) üyesini çıkararak ve `y` sağ taraftaki bir üyesinin (veya `cy`) üyesini çıkararak yapılır `y` öğesinin`CPoint`üyesinden işleneni.
 
-Örneğin, çıkarma `CPoint(5, -7)` içeren bir değişkenden `CPoint(30, 40)` değişkenine değişiklikleri `CPoint(25, 47)`.
+Örneğin, öğesini içeren `CPoint(5, -7)` `CPoint(30, 40)` bir değişkenden çıkarma, değişkenini olarak `CPoint(25, 47)`değiştirir.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATLMFC_Utilities#32](../../atl-mfc-shared/codesnippet/cpp/cpoint-class_5.cpp)]
 
-##  <a name="operator_add"></a>  CPoint::operator +
+##  <a name="operator_add"></a>CPoint:: operator +
 
-Kaydırmak için bu işleci kullanın `CPoint` tarafından bir `CPoint` veya `CSize` nesnesi veya dengelemek için bir `CRect` tarafından bir `CPoint`.
+`CPoint` Bu işleci bir `CPoint` veya `CSize` nesnesinegöre`CRect` kaydırmak ya da a ile kaydırmak için kullanın. `CPoint`
 
 ```
 CPoint operator+(SIZE size) const throw();
@@ -275,32 +275,32 @@ CRect operator+(const RECT* lpRect) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*Boyutu*<br/>
-İçeren bir [BOYUTU](/windows/desktop/api/windef/ns-windef-tagsize) yapısı veya [CSize](../../atl-mfc-shared/reference/csize-class.md) nesne.
+*boyutla*<br/>
+Bir [Boyut](/windows/win32/api/windef/ns-windef-size) yapısı veya [CSize](../../atl-mfc-shared/reference/csize-class.md) nesnesi içerir.
 
-*Noktası*<br/>
-İçeren bir [noktası](/windows/desktop/api/windef/ns-windef-tagpoint) yapısı veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesne.
+*seçeneğinin*<br/>
+Bir [nokta](/windows/win32/api/windef/ns-windef-point) yapısı veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesnesi içerir.
 
 *lpRect*<br/>
-Bir işaretçi içeren bir [RECT](/windows/desktop/api/windef/ns-windef-tagrect) yapısı veya [CRect](../../atl-mfc-shared/reference/crect-class.md) nesne.
+Bir [Rect](/windows/win32/api/windef/ns-windef-rect) yapısına veya [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesine yönelik bir işaretçi içerir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-A `CPoint` bir boyuta göre uzaklığı bir `CPoint` bir noktası tarafından uzaklığı veya `CRect` noktası tarafından uzaklığı.
+Bir `CPoint` boyut, bir `CPoint` nokta veya `CRect` bir noktaya göre bir uzaklığa göre denkleştirilen bir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Örneğin, ilk iki aşırı noktası dengelemek için kullanarak `CPoint(25, -19)` bir nokta `CPoint(15, 5)` veya boyutu `CSize(15, 5)` değeri döndürür `CPoint(40, -14)`.
+Örneğin `CPoint(25, -19)` , noktayı bir nokta `CPoint(15, 5)` veya boyutla `CSize(15, 5)` kaydırmak için ilk iki aşırı yüklemeden birini kullanmak değeri `CPoint(40, -14)`döndürür.
 
-Bir dikdörtgen bir noktaya ekleme döndürür dikdörtgen tarafından uzaklığı sonra `x` ve `y` noktasında belirtilen değerleri. Örneğin, bir dikdörtgen dengelemek için son aşırı yükü kullanarak `CRect(125, 219, 325, 419)` bir nokta `CPoint(25, -19)` döndürür `CRect(150, 200, 350, 400)`.
+Bir noktaya dikdörtgen eklemek, noktasında belirtilen `x` ve `y` değerleri ile kaydırıldıktan sonra dikdörtgeni döndürür. Örneğin, bir `CRect(125, 219, 325, 419)` `CPoint(25, -19)`noktanınbir dikdörtgeni kaydırmak için son aşırı yüklemeyi kullanma. `CRect(150, 200, 350, 400)`
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATLMFC_Utilities#33](../../atl-mfc-shared/codesnippet/cpp/cpoint-class_6.cpp)]
 
-##  <a name="operator_-"></a>  CPoint::operator-
+##  <a name="operator_-"></a>CPoint:: operator-
 
-İlk iki aşırı çıkarılacak kullanmak bir `CPoint` veya `CSize` nesnesinden `CPoint`.
+Bir `CPoint` veya `CSize` nesnesini öğesinden`CPoint`çıkarmak için ilk iki aşırı yüklemeden birini kullanın.
 
 ```
 CSize operator-(POINT point) const throw();
@@ -311,30 +311,30 @@ CPoint operator-() const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*Noktası*<br/>
-A [noktası](/windows/desktop/api/windef/ns-windef-tagpoint) yapısı veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesne.
+*seçeneğinin*<br/>
+[Nokta](/windows/win32/api/windef/ns-windef-point) yapısı veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesnesi.
 
-*Boyutu*<br/>
-A [BOYUTU](/windows/desktop/api/windef/ns-windef-tagsize) yapısı veya [CSize](../../atl-mfc-shared/reference/csize-class.md) nesne.
+*boyutla*<br/>
+[Boyut](/windows/win32/api/windef/ns-windef-size) yapısı veya [CSize](../../atl-mfc-shared/reference/csize-class.md) nesnesi.
 
 *lpRect*<br/>
-Bir işaretçi bir [RECT](/windows/desktop/api/windef/ns-windef-tagrect) yapısı veya [CRect](../../atl-mfc-shared/reference/crect-class.md) nesne.
+Bir [Rect](/windows/win32/api/windef/ns-windef-rect) yapısına veya bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesine yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir `CSize` diğer bir deyişle iki nokta arasındaki fark bir `CPoint` bir boyut olumsuzlama göre uzaklığı bir `CRect` bir noktanın olumsuzlama göre uzaklığı veya `CPoint` diğer bir deyişle olumsuzlama noktası.
+İki nokta `CPoint` arasındaki fark olan, bir boyutun `CRect` olumsuzlaştırılarak, bir noktanın olumsuzlaştırılarak kaydırılarak veya `CPoint` bir noktanın değilde olmadığı bir değer olan. `CSize`
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üçüncü aşırı uzaklıkları bir `CRect` negation tarafından `CPoint`. Son olarak, negatif yapılacak birli işleç kullanın `CPoint`.
+Üçüncü aşırı yükleme, ' `CRect` nin `CPoint`değilleme yaptığı uzaklıkları. Son olarak, Newgate `CPoint`için birli işlecini kullanın.
 
-Örneğin, iki nokta arasındaki farkı bulmak için ilk aşırı yükleme kullanarak `CPoint(25, -19)` ve `CPoint(15, 5)` döndürür `CSize(10, -24)`.
+Örneğin, iki punto `CPoint(25, -19)` arasındaki farkı bulmak için ilk tekrar yüklemeyi kullanma ve `CPoint(15, 5)` döndürür `CSize(10, -24)`.
 
-Çıkarma bir `CSize` gelen `CPoint` yukarıdakilerle aynı olan hesaplamayı yapar ancak döndürür bir `CPoint` nesnesi değil, bir `CSize` nesne. Örneğin, noktası arasındaki fark bulmak için ikinci aşırı yüklemesi kullanarak `CPoint(25, -19)` ve boyutu `CSize(15, 5)` döndürür `CPoint(10, -24)`.
+İçinden çıkarma, `CSize` Yukarıdaki`CPoint` gibi aynı hesaplamayı yapar, ancak nesne değil bir nesne döndürür. `CPoint` `CSize` Örneğin, nokta `CPoint(25, -19)` ile `CSize(15, 5)` boyut arasındaki farkı bulmak için ikinci aşırı yüklemeyi kullanma. `CPoint(10, -24)`
 
-Bir dikdörtgen bir noktasından çıkararak dikdörtgen uzaklığı negatif tarafından döndürür `x` ve `y` noktasında belirtilen değerleri. Örneğin, dikdörtgen dengelemek için son aşırı yükü kullanarak `CRect(125, 200, 325, 400)` noktası tarafından `CPoint(25, -19)` döndürür `CRect(100, 219, 300, 419)`.
+Bir noktadan dikdörtgeni çıkarmak, noktada belirtilen `x` ve değerlerinin negatiflerini ve `y` dikdörtgen sapmasını döndürür. Örneğin, dikdörtgeni `CRect(125, 200, 325, 400)` `CPoint(25, -19)`noktaile kaydırmak için son aşırı yüklemeyi kullanma. `CRect(100, 219, 300, 419)`
 
-Bir noktası negatif yapılacak birli işlecini kullanın. Örneğin, noktasıyla birli işleç kullanılarak `CPoint(25, -19)` döndürür `CPoint(-25, 19)`.
+Bir noktayı iç içe aktarmak için birli işleci kullanın. Örneğin, nokta `CPoint(25, -19)` `CPoint(-25, 19)`ile birli işleci kullanmak.
 
 ### <a name="example"></a>Örnek
 
@@ -344,6 +344,6 @@ Bir noktası negatif yapılacak birli işlecini kullanın. Örneğin, noktasıyl
 
 [MFC örnek MDI](../../overview/visual-cpp-samples.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[POINT yapısı](/windows/desktop/api/windef/ns-windef-tagpoint)<br/>
+[NOKTA yapısı](/windows/win32/api/windef/ns-windef-point)<br/>
 [CRect Sınıfı](../../atl-mfc-shared/reference/crect-class.md)<br/>
 [CSize Sınıfı](../../atl-mfc-shared/reference/csize-class.md)

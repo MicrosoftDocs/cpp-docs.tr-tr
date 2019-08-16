@@ -74,12 +74,12 @@ helpviewer_keywords:
 - CSliderCtrl [MFC], SetTipSide
 - CSliderCtrl [MFC], SetToolTips
 ms.assetid: dd12b084-4eda-4550-a810-8f3cfb06b871
-ms.openlocfilehash: 4db27112daf65b2c3f477527cd7b4351b91d7f18
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8fffdfc002b25fdcd72dcbbf53e7e6c321f55296
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62324421"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69502513"
 ---
 # <a name="csliderctrl-class"></a>CSliderCtrl sınıfı
 
@@ -97,59 +97,59 @@ class CSliderCtrl : public CWnd
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CSliderCtrl::CSliderCtrl](#csliderctrl)|Oluşturur bir `CSliderCtrl` nesne.|
+|[CSliderCtrl:: CSliderCtrl](#csliderctrl)|Bir `CSliderCtrl` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CSliderCtrl::ClearSel](#clearsel)|Bir kaydırıcı denetimindeki geçerli bölüm temizler.|
-|[CSliderCtrl::ClearTics](#cleartics)|Geçerli değer çizgilerinin bir kaydırıcı denetimi kaldırır.|
-|[CSliderCtrl::Create](#create)|Bir kaydırıcı denetimi oluşturur ve ona bağlanan bir `CSliderCtrl` nesne.|
-|[CSliderCtrl::CreateEx](#createex)|Belirtilen Windows genişletilmiş stilleriyle bir kaydırıcı denetimi oluşturur ve ona ekler bir `CSliderCtrl` nesne.|
-|[CSliderCtrl::GetBuddy](#getbuddy)|Belirli bir konumda bir kaydırıcı denetiminin buddy penceresindeki tanıtıcısını alır.|
-|[CSliderCtrl::GetChannelRect](#getchannelrect)|Kaydırıcı denetim kanalı VHD'nin boyutunu alır.|
-|[CSliderCtrl::GetLineSize](#getlinesize)|Bir kaydırıcı denetimi satır boyutunu alır.|
-|[CSliderCtrl::GetNumTics](#getnumtics)|Değer çizgilerinin bir kaydırıcı denetimindeki sayısını alır.|
-|[CSliderCtrl::GetPageSize](#getpagesize)|Bir kaydırıcı denetimi sayfa boyutunu alır.|
-|[CSliderCtrl::GetPos](#getpos)|Kaydırıcı geçerli konumunu alır.|
-|[CSliderCtrl::GetRange](#getrange)|Kaydırıcı için minimum ve maksimum konumları alır.|
-|[CSliderCtrl::GetRangeMax](#getrangemax)|Bir kaydırıcının en fazla konumunu alır.|
-|[CSliderCtrl::GetRangeMin](#getrangemin)|Kaydırıcı için en düşük konumu alır.|
-|[CSliderCtrl::GetSelection](#getselection)|Geçerli seçim aralığını alır.|
-|[CSliderCtrl::GetThumbLength](#getthumblength)|Geçerli trackbar denetimi kaydırıcı uzunluğunu alır.|
-|[CSliderCtrl::GetThumbRect](#getthumbrect)|Kaydırıcı denetim parmak boyutunu alır.|
-|[CSliderCtrl::GetTic](#gettic)|Belirtilen değer çizgisi konumunu alır.|
-|[CSliderCtrl::GetTicArray](#getticarray)|Bir kaydırıcı denetimi için onay işareti konumlarına dizisini alır.|
-|[CSliderCtrl::GetTicPos](#getticpos)|İstemci koordinatları belirtilen çizgisi konumunu alır.|
-|[CSliderCtrl::GetToolTips](#gettooltips)|Kaydırıcı denetimi için atanan araç ipucu denetimi için tanıtıcı varsa alır.|
-|[CSliderCtrl::SetBuddy](#setbuddy)|Bir pencere bir kaydırıcı denetiminin buddy penceresindeki olarak atar.|
-|[CSliderCtrl::SetLineSize](#setlinesize)|Bir kaydırıcı denetimi satır boyutunu ayarlar.|
-|[CSliderCtrl::SetPageSize](#setpagesize)|Bir kaydırıcı denetiminin sayfa boyutunu ayarlar.|
-|[CSliderCtrl::SetPos](#setpos)|Kaydırıcı geçerli konumunu ayarlar.|
-|[CSliderCtrl::SetRange](#setrange)|Kaydırıcı için minimum ve maksimum konumları ayarlar.|
-|[CSliderCtrl::SetRangeMax](#setrangemax)|Bir kaydırıcının en fazla konumunu ayarlar.|
-|[CSliderCtrl::SetRangeMin](#setrangemin)|Kaydırıcı için en düşük konumu ayarlar.|
-|[CSliderCtrl::SetSelection](#setselection)|Geçerli seçimi aralığı ayarlar.|
-|[CSliderCtrl::SetThumbLength](#setthumblength)|Kaydırıcı uzunluğu geçerli trackbar denetimi ayarlar.|
-|[CSliderCtrl::SetTic](#settic)|Belirtilen değer çizgisi konumunu ayarlar.|
-|[CSliderCtrl::SetTicFreq](#setticfreq)|Kaydırıcı denetimi artırma her değer çizgisi sıklığını ayarlar.|
-|[CSliderCtrl::SetTipSide](#settipside)|Konumlar araç ipucu denetimi trackbar denetimi tarafından kullanılır.|
-|[CSliderCtrl::SetToolTips](#settooltips)|Araç İpucu denetimi için bir kaydırıcı denetimi atar.|
+|[CSliderCtrl:: ClearSel](#clearsel)|Kaydırıcı denetimindeki geçerli seçimi temizler.|
+|[CSliderCtrl:: Clemakalens](#cleartics)|Kaydırıcı denetiminden geçerli değer çizgilerini kaldırır.|
+|[CSliderCtrl:: Create](#create)|Kaydırıcı denetimi oluşturur ve bir `CSliderCtrl` nesneye ekler.|
+|[CSliderCtrl:: CreateEx](#createex)|Belirtilen Windows genişletilmiş stilleriyle bir kaydırıcı denetimi oluşturur ve bunu bir `CSliderCtrl` nesneye ekler.|
+|[CSliderCtrl:: Getarkadaş](#getbuddy)|Belirli bir konumdaki kaydırıcı denetim arkadaş penceresine olan tanıtıcıyı alır.|
+|[CSliderCtrl:: GetChannelRect](#getchannelrect)|Kaydırıcı denetiminin kanalının boyutunu alır.|
+|[CSliderCtrl:: GetLineSize](#getlinesize)|Kaydırıcı denetiminin satır boyutunu alır.|
+|[CSliderCtrl:: Getnumtiği](#getnumtics)|Kaydırıcı denetimindeki değer çizgilerinin sayısını alır.|
+|[CSliderCtrl:: GetPageSize](#getpagesize)|Kaydırıcı denetiminin sayfa boyutunu alır.|
+|[CSliderCtrl:: GetPos](#getpos)|Kaydırıcısının geçerli konumunu alır.|
+|[CSliderCtrl:: GetRange](#getrange)|Kaydırıcı için en düşük ve en yüksek konumları alır.|
+|[CSliderCtrl:: GetRangeMax](#getrangemax)|Bir Kaydırıcının en büyük konumunu alır.|
+|[CSliderCtrl:: GetRangeMin](#getrangemin)|Bir kaydırıcının minimum konumunu alır.|
+|[CSliderCtrl:: GetSelection](#getselection)|Geçerli seçimin aralığını alır.|
+|[CSliderCtrl:: GetThumbLength](#getthumblength)|Geçerli TrackBar denetimindeki kaydırıcının uzunluğunu alır.|
+|[CSliderCtrl:: GetThumbRect](#getthumbrect)|Kaydırıcı denetiminin Thumb boyutunu alır.|
+|[CSliderCtrl:: GetTic](#gettic)|Belirtilen değer çizgisi konumunu alır.|
+|[CSliderCtrl:: GetTicArray](#getticarray)|Kaydırıcı denetimi için değer çizgisi konumlarının dizisini alır.|
+|[CSliderCtrl:: GetTicPos](#getticpos)|İstemci koordinatlarındaki belirtilen değer çizgisi konumunu alır.|
+|[CSliderCtrl:: GetToolTip 'ler](#gettooltips)|Varsa kaydırıcı denetimine atanan araç ipucu denetimine yönelik tanıtıcıyı alır.|
+|[CSliderCtrl:: Setarkadaş](#setbuddy)|Kaydırıcı denetimi için arkadaş penceresi olarak bir pencere atar.|
+|[CSliderCtrl:: SetLineSize](#setlinesize)|Kaydırıcı denetiminin satır boyutunu ayarlar.|
+|[CSliderCtrl:: SetPageSize](#setpagesize)|Kaydırıcı denetiminin sayfa boyutunu ayarlar.|
+|[CSliderCtrl:: SetPos](#setpos)|Kaydırıcının geçerli konumunu ayarlar.|
+|[CSliderCtrl:: SetRange](#setrange)|Kaydırıcı için en düşük ve en yüksek konumları ayarlar.|
+|[CSliderCtrl:: SetRangeMax](#setrangemax)|Kaydırıcı için en yüksek konumu ayarlar.|
+|[CSliderCtrl:: SetRangeMin](#setrangemin)|Kaydırıcı için en düşük konumu ayarlar.|
+|[CSliderCtrl:: SetSelection](#setselection)|Geçerli seçimin aralığını ayarlar.|
+|[CSliderCtrl:: SetThumbLength](#setthumblength)|Geçerli TrackBar denetimindeki kaydırıcının uzunluğunu ayarlar.|
+|[CSliderCtrl:: SetTic](#settic)|Belirtilen değer çizgisinin konumunu ayarlar.|
+|[CSliderCtrl:: SetTicFreq](#setticfreq)|Kaydırıcı denetim artışına göre değer çizgilerinin sıklığını ayarlar.|
+|[CSliderCtrl:: SetTipSide](#settipside)|Bir TrackBar denetimi tarafından kullanılan bir araç ipucu denetimini konumlandırır.|
+|[CSliderCtrl:: SetToolTip 'ler](#settooltips)|Kaydırıcı denetimine bir araç ipucu denetimi atar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-"Kaydırıcı denetimi" (trackbar olarak da bilinir) bir kaydırıcı ve isteğe bağlı bir değer çizgileri içeren bir penceredir. Kullanıcı fare ya da yön tuşlarını kullanarak, kaydırıcıyı hareket ettirdiğinde denetim değişiklik belirtmek için bildirim iletileri gönderir.
+Bir "kaydırıcı denetimi" (TrackBar olarak da bilinir), kaydırıcı ve isteğe bağlı onay işaretleri içeren bir penceredir. Kullanıcı kaydırıcıyı hareket ettirir, fare veya yön tuşlarını kullanarak denetim, değişikliği belirtmek için bildirim iletileri gönderir.
 
-Kaydırıcı denetimlerini, bir ayrık değere veya bir dizi ardışık değerleri bir aralıktaki seçmesini istediğinizde kullanışlıdır. Örneğin, verilen değer çizgisi için kaydırıcıyı hareket ettirerek klavye yineleme oranını ayarlamak izin vermek için bir kaydırıcı denetimi kullanabilirsiniz.
+Kaydırıcı denetimleri, kullanıcının bir aralıktaki bir ayrık değer veya ardışık değerler kümesi seçmesini istediğinizde faydalıdır. Örneğin, kaydırıcıyı verilen bir değer işaretine taşıyarak kullanıcının, klavye yineleme hızını ayarlamaya izin vermek için kaydırıcı denetimini kullanabilirsiniz.
 
-Bu denetimi (ve bu nedenle `CSliderCtrl` sınıfı) ve üzeri yalnızca Windows 95/98 ve Windows NT sürüm 3.51 altında çalışan programlar için kullanılabilir.
+Bu denetim (ve bu nedenle `CSliderCtrl` sınıfı) yalnızca Windows 95/98 ve Windows NT sürüm 3,51 ve üzeri sürümlerde çalışan programlar için kullanılabilir.
 
-Kaydırıcı oluşturduğunuzda, belirttiğiniz aralıklarla taşır. Kaydırıcı beş bir dizi olması gerektiğini belirtin, örneğin, kaydırıcıyı yalnızca altı konumları kaplayabilir: kaydırıcı denetimi aralığındaki her artış için bir konum ve sol tarafında bir konumu. Genellikle, her biri bu konumları onay işareti tarafından tanımlanır.
+Kaydırıcı, oluştururken belirttiğiniz artışlarla hareket eder. Örneğin, kaydırıcının beş aralığına sahip olması gerektiğini belirtirseniz kaydırıcı yalnızca altı konum içerebilir: kaydırıcı denetiminin sol tarafındaki bir konum ve aralıktaki her artış için bir konum. Genellikle, bu konumların her biri bir değer çizgisi tarafından tanımlanır.
 
-Bir kaydırıcı Oluşturucusu kullanarak oluşturun ve `Create` üye işlevini `CSliderCtrl`. Bir kaydırıcı denetimi oluşturduktan sonra içindeki üye işlevleri kullanabileceğinizi `CSliderCtrl` birçok özelliklerini değiştirmek için. Kaydırıcı için minimum ve maksimum konumlarını ayarlama, değer çizgileri çizim, bir seçim aralığını ayarlama ve kaydırıcıyı yeniden konumlandırma yapabileceğiniz değişiklikleri içerir.
+Oluşturucuyu ve `Create` üye `CSliderCtrl`işlevini kullanarak bir kaydırıcı oluşturursunuz. Kaydırıcı denetimini oluşturduktan sonra, özelliklerinin çoğunu değiştirmek için içindeki `CSliderCtrl` üye işlevlerini kullanabilirsiniz. Yapabileceğiniz değişiklikler kaydırıcı için en düşük ve en yüksek pozisyonları ayarlamayı, değer işaretlerini çizmeyi, seçim aralığını ayarlamayı ve kaydırıcıyı yeniden konumlandırmayı içerir.
 
-Kullanma hakkında daha fazla bilgi için `CSliderCtrl`, bkz: [denetimleri](../../mfc/controls-mfc.md) ve [CSliderCtrl kullanma](../../mfc/using-csliderctrl.md).
+Kullanma `CSliderCtrl`hakkında daha fazla bilgi için bkz [](../../mfc/controls-mfc.md) . [CSliderCtrl kullanma](../../mfc/using-csliderctrl.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -163,11 +163,11 @@ Kullanma hakkında daha fazla bilgi için `CSliderCtrl`, bkz: [denetimleri](../.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxcmn.h
+**Üstbilgi:** afxcmn. h
 
-##  <a name="clearsel"></a>  CSliderCtrl::ClearSel
+##  <a name="clearsel"></a>CSliderCtrl:: ClearSel
 
-Bir kaydırıcı denetimindeki geçerli bölüm temizler.
+Kaydırıcı denetimindeki geçerli seçimi temizler.
 
 ```
 void ClearSel(BOOL bRedraw = FALSE);
@@ -176,11 +176,11 @@ void ClearSel(BOOL bRedraw = FALSE);
 ### <a name="parameters"></a>Parametreler
 
 *bRedraw*<br/>
-Bayrak yeniden çizin. Bu parametre TRUE ise, kaydırıcıyı seçimi tamamlandıktan sonra yeniden çizilir; Aksi takdirde kaydırıcı çizilmez.
+Yeniden çizim bayrağı. Bu parametre TRUE ise, seçim temizlenmeden sonra kaydırıcı yeniden çizilir; Aksi takdirde kaydırıcı yeniden çizilmez.
 
-##  <a name="cleartics"></a>  CSliderCtrl::ClearTics
+##  <a name="cleartics"></a>CSliderCtrl:: Clemakalens
 
-Geçerli değer çizgilerinin bir kaydırıcı denetimi kaldırır.
+Kaydırıcı denetiminden geçerli değer çizgilerini kaldırır.
 
 ```
 void ClearTics(BOOL bRedraw = FALSE);
@@ -189,11 +189,11 @@ void ClearTics(BOOL bRedraw = FALSE);
 ### <a name="parameters"></a>Parametreler
 
 *bRedraw*<br/>
-Bayrak yeniden çizin. Bu parametre TRUE ise, değer çizgilerinin temizlendikten sonra kaydırıcıyı çizilir; Aksi takdirde kaydırıcı çizilmez.
+Yeniden çizim bayrağı. Bu parametre TRUE ise, kademeler temizlendikten sonra kaydırıcı yeniden çizilir; Aksi takdirde kaydırıcı yeniden çizilmez.
 
-##  <a name="create"></a>  CSliderCtrl::Create
+##  <a name="create"></a>CSliderCtrl:: Create
 
-Bir kaydırıcı denetimi oluşturur ve ona bağlanan bir `CSliderCtrl` nesne.
+Kaydırıcı denetimi oluşturur ve bir `CSliderCtrl` nesneye ekler.
 
 ```
 virtual BOOL Create(
@@ -206,32 +206,32 @@ virtual BOOL Create(
 ### <a name="parameters"></a>Parametreler
 
 *dwStyle*<br/>
-Kaydırıcı denetiminin stilini belirtir. Herhangi bir birleşimini uygulamak [kaydırıcı denetim stilleri](/windows/desktop/Controls/trackbar-control-styles)denetlemek için Windows SDK içinde açıklandığı gibi.
+Kaydırıcı denetiminin stilini belirtir. Windows SDK açıklanan [kaydırıcı denetim stillerinin](/windows/win32/Controls/trackbar-control-styles)birleşimini denetime uygulayın.
 
 *Rect*<br/>
-Kaydırıcı denetiminin boyutunu ve konumunu belirtir. Ya da olabilir bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısı.
+Kaydırıcı denetiminin boyutunu ve konumunu belirtir. Bu, bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya bir [Rect](/previous-versions/dd162897\(v=vs.85\)) yapısı olabilir.
 
 *pParentWnd*<br/>
-Kaydırıcı denetiminin üst penceresine, genellikle belirtir bir `CDialog`. NULL olmamalıdır.
+Kaydırıcı denetiminin ana penceresini (genellikle a `CDialog`) belirtir. NULL olmaması gerekir.
 
-*nID*<br/>
-Kaydırıcı denetim kimliğini belirtir.
+*NID*<br/>
+Kaydırıcı denetiminin KIMLIĞINI belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başlatma başarılı olursa sıfır dışı; Aksi durumda 0.
+Başlatma başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Oluşturmak bir `CSliderCtrl` iki adımda. İlk olarak, oluşturucusunu çağırın ve ardından arama `Create`, kaydırıcı denetimi oluşturur ve ona ekler `CSliderCtrl` nesne.
+İki adımda oluşturursunuz `CSliderCtrl` . İlk olarak, oluşturucuyu çağırın ve ardından kaydırıcı denetimini `Create`oluşturan ve `CSliderCtrl` nesneye bağlayan çağırın.
 
-İçin ayarlanan değerlerle bağlı olarak *dwStyle*, kaydırıcı denetimi dikey veya yatay hizalama olabilir. Değer çizgilerinin iki tarafında olabilir hem yüz veya hiçbiridir. Ayrıca, bir dizi ardışık değerleri belirtmek için de kullanılabilir.
+*DwStyle*için ayarlanan değerlere bağlı olarak kaydırıcı denetiminin dikey veya yatay bir yönü olabilir. Her iki tarafta da ya da hiçbiri üzerinde değer çizgisi olabilir. Ardışık değerler aralığını belirtmek için de kullanılabilir.
 
-Kaydırıcı denetimi için genişletilmiş pencere stilleri uygulamak için arama [CreateEx](#createex) yerine `Create`.
+Kaydırıcı denetimine genişletilmiş pencere stilleri uygulamak için yerine `Create` [CreateEx](#createex) çağırın.
 
-##  <a name="createex"></a>  CSliderCtrl::CreateEx
+##  <a name="createex"></a>CSliderCtrl:: CreateEx
 
-Bir denetimi (alt pencere) oluşturur ve bunu ile ilişkilendirir `CSliderCtrl` nesne.
+Bir denetim (alt pencere) oluşturur ve `CSliderCtrl` nesneyle ilişkilendirir.
 
 ```
 virtual BOOL CreateEx(
@@ -245,39 +245,39 @@ virtual BOOL CreateEx(
 ### <a name="parameters"></a>Parametreler
 
 *dwExStyle*<br/>
-Oluşturulan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows stilleri bir listesi için bkz. *dwExStyle* parametresi için [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) Windows SDK.
+Oluşturulmakta olan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows stillerinin listesi için, Windows SDK için bkz. [CreateWindowEx](/windows/win32/api/winuser/nf-winuser-createwindowexw) Için *dwExStyle* parametresi.
 
 *dwStyle*<br/>
-Kaydırıcı denetiminin stilini belirtir. Herhangi bir birleşimini uygulamak [kaydırıcı denetim stilleri](/windows/desktop/Controls/trackbar-control-styles)denetlemek için Windows SDK içinde açıklandığı gibi.
+Kaydırıcı denetiminin stilini belirtir. Windows SDK açıklanan [kaydırıcı denetim stillerinin](/windows/win32/Controls/trackbar-control-styles)birleşimini denetime uygulayın.
 
 *Rect*<br/>
-Bir başvuru bir [RECT](/previous-versions/dd162897\(v=vs.85\)) istemci koordinatları olarak oluşturulması için pencerenin konumunu ve boyutunu açıklayan yapısı *pParentWnd*.
+*PParentWnd*istemci koordinatları içinde oluşturulacak pencerenin boyutunu ve konumunu açıklayan bir [Rect](/previous-versions/dd162897\(v=vs.85\)) yapısına başvuru.
 
 *pParentWnd*<br/>
-Denetimin ana penceresine bir işaretçi.
+Denetimin üst öğesi olan pencerenin işaretçisi.
 
-*nID*<br/>
-Denetimin alt penceresi kimliği
+*NID*<br/>
+Denetimin alt pencere KIMLIĞI.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi durumda 0.
+Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanım `CreateEx` yerine [Oluştur](#create) Windows genişletilmiş sitil önsöz tarafından belirtilen Genişletilmiş Windows stilleri uygulamak için **WS_EX_**.
+Windows `CreateEx` genişletilmiş stili önsöz **ws_ex_** tarafından belirtilen Genişletilmiş Windows stillerini uygulamak için [Create](#create) yerine kullanın.
 
-##  <a name="csliderctrl"></a>  CSliderCtrl::CSliderCtrl
+##  <a name="csliderctrl"></a>CSliderCtrl:: CSliderCtrl
 
-Oluşturur bir `CSliderCtrl` nesne.
+Bir `CSliderCtrl` nesnesi oluşturur.
 
 ```
 CSliderCtrl();
 ```
 
-##  <a name="getbuddy"></a>  CSliderCtrl::GetBuddy
+##  <a name="getbuddy"></a>CSliderCtrl:: Getarkadaş
 
-Belirli bir konumda bir kaydırıcı denetiminin buddy penceresindeki tanıtıcısını alır.
+Belirli bir konumdaki kaydırıcı denetim arkadaş penceresine olan tanıtıcıyı alır.
 
 ```
 CWnd* GetBuddy(BOOL fLocation = TRUE) const;
@@ -286,23 +286,23 @@ CWnd* GetBuddy(BOOL fLocation = TRUE) const;
 ### <a name="parameters"></a>Parametreler
 
 *fLocation*<br/>
-Almak için iki buddy penceresinin tutamaçlarından gösteren bir Boole değeri. Aşağıdaki değerlerden biri olabilir:
+Hangi iki arkadaş pencerenin almak için işlediğini belirten bir Boole değeri. Aşağıdaki değerlerden biri olabilir:
 
-- TRUE, sol kaydırıcının arkadaş tanıtıcısını alır. Kaydırıcı denetimi TBS_VERT stili kullanıyorsa, kaydırıcıyı yukarıda arkadaş ileti alır.
+- DOĞRU, kaydırıcının sol tarafındaki arkadaş için tanıtıcıyı alır. Kaydırıcı denetimi TBS_VERT stilini kullanıyorsa, ileti kaydırıcının üzerindeki arkadaşları alır.
 
-- FALSE kaydırıcı sağındaki arkadaş tanıtıcısını alır. Kaydırıcı denetimi TBS_VERT stili kullanıyorsa, ileti arkadaş kaydırıcının altına alır.
+- FALSE, kaydırıcının sağına doğru olan olan arkadaş tanıtıcısını alır. Kaydırıcı denetimi TBS_VERT stilini kullanıyorsa, ileti kaydırıcının altındaki arkadaşları alır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir işaretçi bir [CWnd](../../mfc/reference/cwnd-class.md) tarafından belirtilen konumda buddy penceresindeki nesnesini *fLocation*, veya bu konumda hiçbir buddy penceresindeki yoksa NULL.
+*FLocation*tarafından belirtilen konumdaki arkadaş penceresi olan bir [CWnd](../../mfc/reference/cwnd-class.md) nesnesi işaretçisi veya bu konumda arkadaş penceresi yoksa null.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi Win32 ileti davranışı uygulayan [TBM_GETBUDDY](/windows/desktop/Controls/tbm-getbuddy)Windows SDK içinde açıklandığı gibi. Kaydırıcı denetim stilleri açıklaması için bkz: [Trackbar denetimi stilleri](/windows/desktop/Controls/trackbar-control-styles) Windows SDK.
+Bu üye işlevi, Windows SDK açıklandığı gibi Win32 iletisinin [TBM_GETBUDDY](/windows/win32/Controls/tbm-getbuddy)davranışını uygular. Kaydırıcı denetim stillerinin açıklaması için, bkz. [TrackBar Control Styles](/windows/win32/Controls/trackbar-control-styles) in Windows SDK.
 
-##  <a name="getchannelrect"></a>  CSliderCtrl::GetChannelRect
+##  <a name="getchannelrect"></a>CSliderCtrl:: GetChannelRect
 
-Kaydırıcı denetim kanalı için sınırlayıcı dikdörtgeni konumu ve boyutu alır.
+Kaydırıcı denetiminin kanalı için sınırlayıcı dikdörtgenin boyutunu ve konumunu alır.
 
 ```
 void GetChannelRect(LPRECT lprc) const;
@@ -310,16 +310,16 @@ void GetChannelRect(LPRECT lprc) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*lprc*<br/>
-Bir işaretçi bir [CRect](../../atl-mfc-shared/reference/crect-class.md) boyutunu ve konumunu kanalının içeren nesne işlevi döndüğünde dikdörtgen çevreleyen.
+*LPRC*<br/>
+İşlevin döndürdüğü, kanalın sınırlayıcı dikdörtgeninin boyutunu ve konumunu içeren bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesine yönelik işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kanal kaydırıcı taşıyan ve aralığı seçildiğinde vurgulama içeren üzerinden alandır.
+Kanal, kaydırıcının hareket edeceği ve bir Aralık seçildiğinde vurguyu içeren alandır.
 
-##  <a name="getlinesize"></a>  CSliderCtrl::GetLineSize
+##  <a name="getlinesize"></a>CSliderCtrl:: GetLineSize
 
-Bir kaydırıcı denetimi için satır boyutunu alır.
+Kaydırıcı denetimi için çizginin boyutunu alır.
 
 ```
 int GetLineSize() const;
@@ -327,15 +327,15 @@ int GetLineSize() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kaydırıcı denetimi için bir satır boyutu.
+Kaydırıcı denetimi için bir çizginin boyutu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Satır boyutu için TB_LINEUP ve TB_LINEDOWN bildirimleri ne kadar kaydırıcıyı hareket etkiler. 1 satır boyutu için varsayılan ayardır.
+Çizgi boyutu, TB_LINEUP ve TB_LINEDOWN bildirimleri için kaydırıcının ne kadar hareket edeceğini etkiler. Satır boyutu için varsayılan ayar 1 ' dir.
 
-##  <a name="getnumtics"></a>  CSliderCtrl::GetNumTics
+##  <a name="getnumtics"></a>CSliderCtrl:: Getnumtiği
 
-Değer çizgilerinin bir kaydırıcı denetimindeki sayısını alır.
+Kaydırıcı denetimindeki değer çizgilerinin sayısını alır.
 
 ```
 UINT GetNumTics() const;
@@ -343,11 +343,11 @@ UINT GetNumTics() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Değer çizgilerinin kaydırıcı denetimindeki sayısı.
+Kaydırıcı denetimindeki onay işaretlerinin sayısı.
 
-##  <a name="getpagesize"></a>  CSliderCtrl::GetPageSize
+##  <a name="getpagesize"></a>CSliderCtrl:: GetPageSize
 
-Bir kaydırıcı denetimi için sayfa boyutunu alır.
+Kaydırıcı denetimi için sayfanın boyutunu alır.
 
 ```
 int GetPageSize() const;
@@ -355,15 +355,15 @@ int GetPageSize() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kaydırıcı denetimi için bir sayfa boyutu.
+Kaydırıcı denetimi için bir sayfanın boyutu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sayfa boyutunu TB_PAGEUP ve TB_PAGEDOWN bildirimleri ne kadar kaydırıcıyı hareket etkiler.
+Sayfa boyutu, TB_PAGEUP ve TB_PAGEDOWN bildirimleri için kaydırıcının ne kadar hareket edeceğini etkiler.
 
-##  <a name="getpos"></a>  CSliderCtrl::GetPos
+##  <a name="getpos"></a>CSliderCtrl:: GetPos
 
-Bir kaydırıcı denetimi kaydırıcı geçerli konumunu alır.
+Kaydırıcı denetiminde kaydırıcının geçerli konumunu alır.
 
 ```
 int GetPos() const;
@@ -371,11 +371,11 @@ int GetPos() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli konumu.
+Geçerli konum.
 
-##  <a name="getrange"></a>  CSliderCtrl::GetRange
+##  <a name="getrange"></a>CSliderCtrl:: GetRange
 
-Bir kaydırıcı denetimindeki kaydırıcı için maksimum ve minimum konumları alır.
+Kaydırıcı denetimindeki kaydırıcı için en yüksek ve en düşük pozisyonları alır.
 
 ```
 void GetRange(
@@ -385,19 +385,19 @@ void GetRange(
 
 ### <a name="parameters"></a>Parametreler
 
-*nMin*<br/>
-En düşük konumu alır bir tamsayı başvuru.
+*Ngünde en az*<br/>
+En küçük konumu alan bir tamsayıya başvuru.
 
-*nMax*<br/>
-Başvuru tamsayıya maksimum konumunu alır.
+*Ngünde en çok*<br/>
+En yüksek konumu alan bir tamsayıya başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev tarafından başvurulan tamsayı değerleri kopyalar *nMin* ve *nMax*.
+Bu işlev, değerleri *nMin* ve *NMAX*tarafından başvurulan tamsayılara kopyalar.
 
-##  <a name="getrangemax"></a>  CSliderCtrl::GetRangeMax
+##  <a name="getrangemax"></a>CSliderCtrl:: GetRangeMax
 
-Bir kaydırıcı denetimi en fazla konumda kaydırıcı alır.
+Kaydırıcı denetimindeki Kaydırıcının en büyük konumunu alır.
 
 ```
 int GetRangeMax() const;
@@ -405,11 +405,11 @@ int GetRangeMax() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-En fazla denetimin konumu.
+Denetimin en büyük konumu.
 
-##  <a name="getrangemin"></a>  CSliderCtrl::GetRangeMin
+##  <a name="getrangemin"></a>CSliderCtrl:: GetRangeMin
 
-Bir kaydırıcı denetimi kaydırıcı için en düşük konumu alır.
+Kaydırıcı denetiminde kaydırıcının minimum konumunu alır.
 
 ```
 int GetRangeMin() const;
@@ -417,11 +417,11 @@ int GetRangeMin() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Denetimin en düşük konumu.
+Denetimin en küçük konumu.
 
-##  <a name="getselection"></a>  CSliderCtrl::GetSelection
+##  <a name="getselection"></a>CSliderCtrl:: GetSelection
 
-Bir kaydırıcı denetimindeki geçerli bölüm başlangıç ve bitiş konumları alır.
+Kaydırıcı denetimindeki geçerli seçimin başlangıç ve bitiş konumlarını alır.
 
 ```
 void GetSelection(
@@ -431,15 +431,15 @@ void GetSelection(
 
 ### <a name="parameters"></a>Parametreler
 
-*nMin*<br/>
-Geçerli seçimi başlangıç konumu alır bir tamsayı başvuru.
+*Ngünde en az*<br/>
+Geçerli seçimin başlangıç konumunu alan bir tamsayıya başvuru.
 
-*nMax*<br/>
-Geçerli seçimi bitiş konumu alır bir tamsayı başvuru.
+*Ngünde en çok*<br/>
+Geçerli seçimin bitiş konumunu alan bir tamsayıya başvuru.
 
-##  <a name="getthumblength"></a>  CSliderCtrl::GetThumbLength
+##  <a name="getthumblength"></a>CSliderCtrl:: GetThumbLength
 
-Geçerli trackbar denetimi kaydırıcı uzunluğunu alır.
+Geçerli TrackBar denetimindeki kaydırıcının uzunluğunu alır.
 
 ```
 int GetThumbLength() const;
@@ -447,15 +447,15 @@ int GetThumbLength() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kaydırıcıyı piksel cinsinden uzunluğu.
+Kaydırıcının piksel cinsinden uzunluğu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [TBM_GETTHUMBLENGTH](/windows/desktop/Controls/tbm-getthumblength) Windows SDK'da açıklanan ileti.
+Bu yöntem, Windows SDK açıklanan [TBM_GETTHUMBLENGTH](/windows/win32/Controls/tbm-getthumblength) iletisini gönderir.
 
-##  <a name="getthumbrect"></a>  CSliderCtrl::GetThumbRect
+##  <a name="getthumbrect"></a>CSliderCtrl:: GetThumbRect
 
-Bir kaydırıcı denetimi (Flash) kaydırıcı için sınırlayıcı dikdörtgeni konumu ve boyutu alır.
+Kaydırıcı denetimindeki kaydırıcı (Thumb) için sınırlayıcı dikdörtgenin boyutunu ve konumunu alır.
 
 ```
 void GetThumbRect(LPRECT lprc) const;
@@ -463,12 +463,12 @@ void GetThumbRect(LPRECT lprc) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*lprc*<br/>
-Bir işaretçi bir `CRect` işlevi döndüğünde dikdörtgen kaydırıcı içeren nesne.
+*LPRC*<br/>
+İşlev döndüğünde kaydırıcı için `CRect` sınırlayıcı dikdörtgeni içeren bir nesne işaretçisi.
 
-##  <a name="gettic"></a>  CSliderCtrl::GetTic
+##  <a name="gettic"></a>CSliderCtrl:: GetTic
 
-Bir kaydırıcı denetimi onay işareti konumunu alır.
+Kaydırıcı denetimindeki onay işaretinin konumunu alır.
 
 ```
 int GetTic(int nTic) const;
@@ -476,16 +476,16 @@ int GetTic(int nTic) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*nTic*<br/>
-Değer çizgisi tanımlama sıfır tabanlı dizini.
+*Ntik*<br/>
+Değer işaretini tanımlayan sıfır tabanlı dizin.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen değer çizgisi veya - 1 ise konumunu *nTic* geçerli bir dizin belirtmiyor.
+Belirtilen değer çizgisi veya Eğer *nTic* geçerli bir dizin belirtmezse,-1 ' in konumu.
 
-##  <a name="getticarray"></a>  CSliderCtrl::GetTicArray
+##  <a name="getticarray"></a>CSliderCtrl:: GetTicArray
 
-Bir kaydırıcı denetimi için değer çizgilerinin konumlarını içeren bir dizi adresini alır.
+Kaydırıcı denetimi için onay işaretlerinin konumlarını içeren dizinin adresini alır.
 
 ```
 DWORD* GetTicArray() const;
@@ -493,11 +493,11 @@ DWORD* GetTicArray() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kaydırıcı denetimi için onay işareti konumlarını içeren bir dizi adresi.
+Kaydırıcı denetimi için değer çizgisi konumlarını içeren dizinin adresi.
 
-##  <a name="getticpos"></a>  CSliderCtrl::GetTicPos
+##  <a name="getticpos"></a>CSliderCtrl:: GetTicPos
 
-Bir kaydırıcı denetimindeki çizgisi geçerli fiziksel konumunu alır.
+Bir kaydırıcı denetimindeki onay işaretinin geçerli fiziksel konumunu alır.
 
 ```
 int GetTicPos(int nTic) const;
@@ -505,16 +505,16 @@ int GetTicPos(int nTic) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*nTic*<br/>
-Değer çizgisi tanımlama sıfır tabanlı dizini.
+*Ntik*<br/>
+Değer işaretini tanımlayan sıfır tabanlı dizin.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Fiziksel konumunu, istemci koordinatlarında belirtilen değer çizgisi veya - 1 ise *nTic* geçerli bir dizin belirtmiyor.
+Belirtilen değer çizgisi veya Eğer *nTic* geçerli bir dizin belirtmezse, istemci koordinatlarındaki fiziksel konum.
 
-##  <a name="gettooltips"></a>  CSliderCtrl::GetToolTips
+##  <a name="gettooltips"></a>CSliderCtrl:: GetToolTip 'ler
 
-Kaydırıcı denetimi için atanan araç ipucu denetimi için tanıtıcı varsa alır.
+Varsa kaydırıcı denetimine atanan araç ipucu denetimine yönelik tanıtıcıyı alır.
 
 ```
 CToolTipCtrl* GetToolTips() const;
@@ -522,17 +522,17 @@ CToolTipCtrl* GetToolTips() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir işaretçi bir [CToolTipCtrl](../../mfc/reference/ctooltipctrl-class.md) nesne veya araç ipuçları kullanımda değilse NULL. Kaydırıcı denetimi TBS_TOOLTIPS stili kullanmıyorsa, döndürülen değer NULL olur.
+Bir [CToolTipCtrl](../../mfc/reference/ctooltipctrl-class.md) nesnesi işaretçisi veya araç ipuçları KULLANıMDA değilse null. Kaydırıcı denetimi TBS_TOOLTIPS stilini kullanmıyorsa, dönüş değeri NULL olur.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi Win32 ileti davranışı uygulayan [TBM_GETTOOLTIPS](/windows/desktop/Controls/tbm-gettooltips)Windows SDK içinde açıklandığı gibi. Bu üye işlevinin döndürdüğü Not bir `CToolTipCtrl` yerine bir denetim için bir tanıtıcı nesnesi.
+Bu üye işlevi, Windows SDK açıklandığı gibi Win32 iletisinin [TBM_GETTOOLTIPS](/windows/win32/Controls/tbm-gettooltips)davranışını uygular. Bu üye işlevinin bir denetim tutamacı yerine `CToolTipCtrl` bir nesne döndürdüğünü unutmayın.
 
-Kaydırıcı denetim stilleri açıklaması için bkz: [Trackbar denetimi stilleri](/windows/desktop/Controls/trackbar-control-styles) Windows SDK.
+Kaydırıcı denetim stillerinin açıklaması için, bkz. [TrackBar Control Styles](/windows/win32/Controls/trackbar-control-styles) in Windows SDK.
 
-##  <a name="setbuddy"></a>  CSliderCtrl::SetBuddy
+##  <a name="setbuddy"></a>CSliderCtrl:: Setarkadaş
 
-Bir pencere bir kaydırıcı denetiminin buddy penceresindeki olarak atar.
+Kaydırıcı denetimi için arkadaş penceresi olarak bir pencere atar.
 
 ```
 CWnd* SetBuddy(
@@ -542,29 +542,29 @@ CWnd* SetBuddy(
 
 ### <a name="parameters"></a>Parametreler
 
-*pWndBuddy*<br/>
-Bir işaretçi bir `CWnd` kaydırıcı denetiminin buddy ayarlanacak nesne.
+*Pwndarkadaş*<br/>
+Kaydırıcı denetiminin arkadaşları olarak `CWnd` ayarlanacak bir nesne işaretçisi.
 
 *fLocation*<br/>
-Buddy penceresindeki görüntülenecek konumu belirten değer. Bu değer aşağıdakilerden biri olabilir:
+Arkadaş penceresinin görüntüleneceği konumu belirten değer. Bu değer aşağıdakilerden biri olabilir:
 
-- Trackbar denetimi TBS_HORZ stili kullanıyorsa TRUE arkadaş trackbar solunda görünür. Trackbar TBS_VERT stili kullanıyorsa, buddy trackbar denetimin üstünde görünür.
+- TrackBar denetimi TBS_HORZ stilini kullanıyorsa, arkadaş TrackBar sol tarafında görünür. TrackBar TBS_VERT stilini kullanıyorsa, arkadaş TrackBar denetiminin üzerinde görünür.
 
-- Trackbar denetimi TBS_HORZ stili kullanıyorsa FALSE arkadaş trackbar sağında görünür. Trackbar TBS_VERT stili kullanıyorsa, buddy trackbar denetimi altında görünür.
+- TrackBar, TrackBar denetimi TBS_HORZ stilini kullanıyorsa, arkadaş sağ tarafından görünür. TrackBar TBS_VERT stilini kullanıyorsa, arkadaş TrackBar denetiminin altında görünür.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir işaretçi bir [CWnd](../../mfc/reference/cwnd-class.md) bu konumdaki kaydırıcı denetimi daha önce atanan nesne.
+Bu konumdaki kaydırıcı denetimine daha önce atanmış olan bir [CWnd](../../mfc/reference/cwnd-class.md) nesnesi işaretçisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi Win32 ileti davranışı uygulayan [TBM_SETBUDDY](/windows/desktop/Controls/tbm-setbuddy)Windows SDK içinde açıklandığı gibi. Bu üye işlev işaretçileri kullandığına dikkat edin `CWnd` pencere işleyicileri, dönüş değeri ve parametresi yerine, nesneleri.
+Bu üye işlevi, Windows SDK açıklandığı gibi Win32 iletisinin [TBM_SETBUDDY](/windows/win32/Controls/tbm-setbuddy)davranışını uygular. Bu üye işlevin hem dönüş değeri hem de `CWnd` parametresi için pencere tutamaçları yerine nesneler için işaretçiler kullandığını unutmayın.
 
-Kaydırıcı denetim stilleri açıklaması için bkz: [Trackbar denetimi stilleri](/windows/desktop/Controls/trackbar-control-styles) Windows SDK.
+Kaydırıcı denetim stillerinin açıklaması için, bkz. [TrackBar Control Styles](/windows/win32/Controls/trackbar-control-styles) in Windows SDK.
 
-##  <a name="setlinesize"></a>  CSliderCtrl::SetLineSize
+##  <a name="setlinesize"></a>CSliderCtrl:: SetLineSize
 
-Bir kaydırıcı denetimi için satır boyutunu ayarlar.
+Kaydırıcı denetimi için çizginin boyutunu ayarlar.
 
 ```
 int SetLineSize(int nSize);
@@ -573,7 +573,7 @@ int SetLineSize(int nSize);
 ### <a name="parameters"></a>Parametreler
 
 *nSize*<br/>
-Kaydırıcı denetimi yeni satır boyutu.
+Kaydırıcı denetiminin yeni satır boyutu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -581,11 +581,11 @@ Kaydırıcı denetimi yeni satır boyutu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Satır boyutu için TB_LINEUP ve TB_LINEDOWN bildirimleri ne kadar kaydırıcıyı hareket etkiler.
+Çizgi boyutu, TB_LINEUP ve TB_LINEDOWN bildirimleri için kaydırıcının ne kadar hareket edeceğini etkiler.
 
-##  <a name="setpagesize"></a>  CSliderCtrl::SetPageSize
+##  <a name="setpagesize"></a>CSliderCtrl:: SetPageSize
 
-Bir kaydırıcı denetimi için sayfa boyutunu ayarlar.
+Kaydırıcı denetimi için sayfanın boyutunu ayarlar.
 
 ```
 int SetPageSize(int nSize);
@@ -594,7 +594,7 @@ int SetPageSize(int nSize);
 ### <a name="parameters"></a>Parametreler
 
 *nSize*<br/>
-Kaydırıcı denetimi yeni sayfa boyutu.
+Kaydırıcı denetiminin yeni sayfa boyutu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -602,11 +602,11 @@ Kaydırıcı denetimi yeni sayfa boyutu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sayfa boyutunu TB_PAGEUP ve TB_PAGEDOWN bildirimleri ne kadar kaydırıcıyı hareket etkiler.
+Sayfa boyutu, TB_PAGEUP ve TB_PAGEDOWN bildirimleri için kaydırıcının ne kadar hareket edeceğini etkiler.
 
-##  <a name="setpos"></a>  CSliderCtrl::SetPos
+##  <a name="setpos"></a>CSliderCtrl:: SetPos
 
-Kaydırıcı denetiminde kaydırıcı geçerli konumunu ayarlar.
+Kaydırıcı denetiminde kaydırıcının geçerli konumunu ayarlar.
 
 ```
 void SetPos(int nPos);
@@ -617,9 +617,9 @@ void SetPos(int nPos);
 *nPos*<br/>
 Yeni kaydırıcı konumunu belirtir.
 
-##  <a name="setrange"></a>  CSliderCtrl::SetRange
+##  <a name="setrange"></a>CSliderCtrl:: SetRange
 
-Bir kaydırıcı denetimi kaydırıcı için (minimum ve maksimum konumlar) aralığı ayarlar.
+Kaydırıcı denetimindeki kaydırıcı için aralığı (en düşük ve en yüksek konumları) ayarlar.
 
 ```
 void SetRange(
@@ -630,18 +630,18 @@ void SetRange(
 
 ### <a name="parameters"></a>Parametreler
 
-*nMin*<br/>
-Kaydırıcı için en düşük konumu.
+*Ngünde en az*<br/>
+Kaydırıcı için en küçük konum.
 
-*nMax*<br/>
-Maksimum kaydırıcı konumu.
+*Ngünde en çok*<br/>
+Kaydırıcı için en yüksek konum.
 
 *bRedraw*<br/>
-Güncellenmediğini bayrak. Bu parametre TRUE ise, kaydırıcıyı aralığı ayarladıktan sonra çizilir; Aksi takdirde kaydırıcı çizilmez.
+Yeniden çizim bayrağı. Bu parametre TRUE ise, Aralık ayarlandıktan sonra kaydırıcı yeniden çizilir; Aksi takdirde kaydırıcı yeniden çizilmez.
 
-##  <a name="setrangemax"></a>  CSliderCtrl::SetRangeMax
+##  <a name="setrangemax"></a>CSliderCtrl:: SetRangeMax
 
-En büyük aralık kaydırıcı bir kaydırıcı denetimi için ayarlar.
+Kaydırıcı denetimindeki kaydırıcı için maksimum aralığı ayarlar.
 
 ```
 void SetRangeMax(
@@ -651,15 +651,15 @@ void SetRangeMax(
 
 ### <a name="parameters"></a>Parametreler
 
-*nMax*<br/>
-Maksimum kaydırıcı konumu.
+*Ngünde en çok*<br/>
+Kaydırıcı için en yüksek konum.
 
 *bRedraw*<br/>
-Güncellenmediğini bayrak. Bu parametre TRUE ise, kaydırıcıyı aralığı ayarladıktan sonra çizilir; Aksi takdirde kaydırıcı çizilmez.
+Yeniden çizim bayrağı. Bu parametre TRUE ise, Aralık ayarlandıktan sonra kaydırıcı yeniden çizilir; Aksi takdirde kaydırıcı yeniden çizilmez.
 
-##  <a name="setrangemin"></a>  CSliderCtrl::SetRangeMin
+##  <a name="setrangemin"></a>CSliderCtrl:: SetRangeMin
 
-En küçük aralık kaydırıcı bir kaydırıcı denetimi için ayarlar.
+Kaydırıcı denetimindeki kaydırıcı için en küçük aralığı ayarlar.
 
 ```
 void SetRangeMin(
@@ -669,15 +669,15 @@ void SetRangeMin(
 
 ### <a name="parameters"></a>Parametreler
 
-*nMin*<br/>
-Kaydırıcı için en düşük konumu.
+*Ngünde en az*<br/>
+Kaydırıcı için en küçük konum.
 
 *bRedraw*<br/>
-Güncellenmediğini bayrak. Bu parametre TRUE ise, kaydırıcıyı aralığı ayarladıktan sonra çizilir; Aksi takdirde kaydırıcı çizilmez.
+Yeniden çizim bayrağı. Bu parametre TRUE ise, Aralık ayarlandıktan sonra kaydırıcı yeniden çizilir; Aksi takdirde kaydırıcı yeniden çizilmez.
 
-##  <a name="setselection"></a>  CSliderCtrl::SetSelection
+##  <a name="setselection"></a>CSliderCtrl:: SetSelection
 
-Geçerli seçim için başlangıç ve bitiş konumları bir kaydırıcı denetimi ayarlar.
+Kaydırıcı denetimindeki geçerli seçimin başlangıç ve bitiş konumlarını ayarlar.
 
 ```
 void SetSelection(
@@ -687,15 +687,15 @@ void SetSelection(
 
 ### <a name="parameters"></a>Parametreler
 
-*nMin*<br/>
+*Ngünde en az*<br/>
 Kaydırıcı için başlangıç konumu.
 
-*nMax*<br/>
+*Ngünde en çok*<br/>
 Kaydırıcı için bitiş konumu.
 
-##  <a name="setthumblength"></a>  CSliderCtrl::SetThumbLength
+##  <a name="setthumblength"></a>CSliderCtrl:: SetThumbLength
 
-Kaydırıcı uzunluğu geçerli trackbar denetimi ayarlar.
+Geçerli TrackBar denetimindeki kaydırıcının uzunluğunu ayarlar.
 
 ```
 void SetThumbLength(int nLength);
@@ -705,29 +705,29 @@ void SetThumbLength(int nLength);
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*nLength*|[in] Kaydırıcıyı piksel cinsinden uzunluğu.|
+|*nLength*|'ndaki Kaydırıcının piksel cinsinden uzunluğu.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Trackbar denetimi ayarlanması bu yöntem gerektirir [TBS_FIXEDLENGTH](/windows/desktop/Controls/trackbar-control-styles) stili.
+Bu yöntem, TrackBar denetiminin [TBS_FIXEDLENGTH](/windows/win32/Controls/trackbar-control-styles) stiline ayarlanmasını gerektirir.
 
-Bu yöntem gönderir [TBM_SETTHUMBLENGTH](/windows/desktop/Controls/tbm-setthumblength) Windows SDK'da açıklanan ileti.
+Bu yöntem, Windows SDK açıklanan [TBM_SETTHUMBLENGTH](/windows/win32/Controls/tbm-setthumblength) iletisini gönderir.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği değişkeni tanımlar `m_sliderCtrl`, yani geçerli trackbar denetimi erişmek için kullanılır. Örnek ayrıca bir değişken tanımlar `thumbLength`, yani trackbar denetimin thumb bileşeni varsayılan uzunluğunu depolamak için kullanılır. Bu değişkenler bir sonraki örnekte kullanılır.
+Aşağıdaki kod örneği, geçerli TrackBar denetimine erişmek `m_sliderCtrl`için kullanılan değişkenini tanımlar. Örnek ayrıca, TrackBar denetiminin Thumb bileşeninin `thumbLength`varsayılan uzunluğunu depolamak için kullanılan bir değişkenini tanımlar. Bu değişkenler bir sonraki örnekte kullanılır.
 
 [!code-cpp[NVC_MFC_CSliderCtrl_s1#1](../../mfc/reference/codesnippet/cpp/csliderctrl-class_1.h)]
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği, iki kez varsayılan uzunluğunu trackbar denetimin thumb bileşen ayarlar.
+Aşağıdaki kod örneği, TrackBar denetiminin Thumb bileşenini varsayılan uzunluğunun iki katı olarak ayarlar.
 
 [!code-cpp[NVC_MFC_CSliderCtrl_s1#2](../../mfc/reference/codesnippet/cpp/csliderctrl-class_2.cpp)]
 
-##  <a name="settic"></a>  CSliderCtrl::SetTic
+##  <a name="settic"></a>CSliderCtrl:: SetTic
 
-Bir kaydırıcı denetimi içinde onay işareti konumunu ayarlar.
+Kaydırıcı denetimindeki onay işaretinin konumunu ayarlar.
 
 ```
 BOOL SetTic(int nTic);
@@ -735,16 +735,16 @@ BOOL SetTic(int nTic);
 
 ### <a name="parameters"></a>Parametreler
 
-*nTic*<br/>
-Değer çizgisinin konumu. Bu parametre, pozitif bir değer belirtmeniz gerekir.
+*Ntik*<br/>
+Değer çizgisinin konumu. Bu parametrenin pozitif bir değer belirtmesi gerekir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Değer çizgisi ayarlanmışsa sıfır olmayan; Aksi durumda 0.
+Değer çizgisi ayarlandıysa sıfır dışı; Aksi takdirde 0.
 
-##  <a name="setticfreq"></a>  CSliderCtrl::SetTicFreq
+##  <a name="setticfreq"></a>CSliderCtrl:: SetTicFreq
 
-İle hangi onay işaretleri bir kaydırıcı görüntülenir sıklığını ayarlar.
+Kaydırıcı içindeki değer çizgilerinin gösterileceği sıklığı ayarlar.
 
 ```
 void SetTicFreq(int nFreq);
@@ -757,13 +757,13 @@ Değer çizgilerinin sıklığı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Örneğin, sıklığı 2 olarak ayarlanırsa, her bir kaydırıcının aralığı artış için onay işareti görüntülenir. 1 sıklığı için varsayılan ayarı (diğer bir deyişle, aralığındaki her artış onay işareti ile ilişkili olan).
+Örneğin sıklık 2 olarak ayarlanırsa, kaydırıcının aralığındaki her bir artış için bir değer çizgisi görüntülenir. Sıklık için varsayılan ayar 1 ' dir (yani aralıktaki her artış bir değer işaretiyle ilişkilendirilir).
 
-Bu işlevi kullanmak için TBS_AUTOTICKS stiliyle denetimi oluşturmanız gerekir. Daha fazla bilgi için [CSliderCtrl::Create](#create).
+Bu işlevi kullanmak için TBS_AUTOTICKS stiliyle denetim oluşturmanız gerekir. Daha fazla bilgi için bkz. [CSliderCtrl:: Create](#create).
 
-##  <a name="settipside"></a>  CSliderCtrl::SetTipSide
+##  <a name="settipside"></a>CSliderCtrl:: SetTipSide
 
-Konumlar araç ipucu denetimi trackbar denetimi tarafından kullanılır.
+Bir TrackBar denetimi tarafından kullanılan bir araç ipucu denetimini konumlandırır.
 
 ```
 int SetTipSide(int nLocation);
@@ -771,20 +771,20 @@ int SetTipSide(int nLocation);
 
 ### <a name="parameters"></a>Parametreler
 
-*Nkonum*<br/>
-Araç İpucu denetimi görüntülenecek konumu temsil eden değer. Olası değerler listesi için Win32 iletisini görürsünüz [TBM_SETTIPSIDE](/windows/desktop/Controls/tbm-settipside)Windows SDK içinde açıklandığı gibi.
+*nKonum*<br/>
+Tooltip denetiminin görüntüleneceği konumu temsil eden değer. Olası değerler listesi için, Windows SDK açıklanan Win32 iletisi [TBM_SETTIPSIDE](/windows/win32/Controls/tbm-settipside)bakın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Araç İpucu denetiminin önceki konumu temsil eden bir değer. Dönüş değeri için olası değerler birini eşittir *Nkonum*.
+Araç ipucu denetiminin önceki konumunu temsil eden bir değer. Dönüş değeri *nLocation*için olası değerlerden birine eşit.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, Windows SDK'yı açıklandığı TBM_SETTIPSIDE, Win32 ileti davranışı uygular. TBS_TOOLTIPS stili kaydırıcı denetimleri araç ipuçlarının görüntüleyin. Kaydırıcı denetim stilleri açıklaması için bkz: [Trackbar denetimi stilleri](/windows/desktop/Controls/trackbar-control-styles) Windows SDK.
+Bu üye işlevi, Windows SDK açıklandığı gibi Win32 iletisinin TBM_SETTIPSIDE davranışını uygular. TBS_TOOLTIPS stili görüntüleme araç ipuçlarını kullanan kaydırıcı denetimleri. Kaydırıcı denetim stillerinin açıklaması için, bkz. [TrackBar Control Styles](/windows/win32/Controls/trackbar-control-styles) in Windows SDK.
 
-##  <a name="settooltips"></a>  CSliderCtrl::SetToolTips
+##  <a name="settooltips"></a>CSliderCtrl:: SetToolTip 'ler
 
-Araç İpucu denetimi için bir kaydırıcı denetimi atar.
+Kaydırıcı denetimine bir araç ipucu denetimi atar.
 
 ```
 void SetToolTips(CToolTipCtrl* pWndTip);
@@ -793,11 +793,11 @@ void SetToolTips(CToolTipCtrl* pWndTip);
 ### <a name="parameters"></a>Parametreler
 
 *pWndTip*<br/>
-Bir işaretçi bir [CToolTipCtrl](../../mfc/reference/ctooltipctrl-class.md) kaydırıcı denetimi kullanmak için araç ipuçları içeren nesne.
+Kaydırıcı denetimiyle birlikte kullanılacak araç ipuçlarını içeren [CToolTipCtrl](../../mfc/reference/ctooltipctrl-class.md) nesnesine yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi Win32 ileti davranışı uygulayan [TBM_SETTOOLTIPS](/windows/desktop/Controls/tbm-settooltips)Windows SDK içinde açıklandığı gibi. Bir kaydırıcı denetimi ile TBS_TOOLTIPS stili oluşturulduğunda, kaydırıcının geçerli konumu görüntüleme kaydırıcıyı yanında görünen varsayılan araç ipucu denetimi oluşturur. Kaydırıcı denetim stilleri açıklaması için bkz: [Trackbar denetimi stilleri](/windows/desktop/Controls/trackbar-control-styles) Windows SDK.
+Bu üye işlevi, Windows SDK açıklandığı gibi Win32 iletisinin [TBM_SETTOOLTIPS](/windows/win32/Controls/tbm-settooltips)davranışını uygular. TBS_TOOLTIPS stiliyle bir kaydırıcı denetimi oluşturulduğunda, kaydırıcının geçerli konumunu görüntüleyerek kaydırıcının yanında görünen varsayılan bir araç ipucu denetimi oluşturur. Kaydırıcı denetim stillerinin açıklaması için, bkz. [TrackBar Control Styles](/windows/win32/Controls/trackbar-control-styles) in Windows SDK.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

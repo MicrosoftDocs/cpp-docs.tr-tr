@@ -1,50 +1,50 @@
 ---
-title: Ülke / bölge dizeleri
+title: Ülke bölgesi dizeleri
 ms.date: 11/04/2016
 f1_keywords:
 - c.strings
 helpviewer_keywords:
 - country/region strings
 ms.assetid: 5baf0ccf-0d9b-40dc-83bd-323705287930
-ms.openlocfilehash: 3a3bbe9d1278cf733bafbeb23efcb0a1ad577228
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 49eb6bc4473d9e54c06c3bf9290f8c3c96640415
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62344700"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69500242"
 ---
 # <a name="countryregion-strings"></a>Ülke/Bölge Dizeleri
 
-Ülke ve bölge dizeleri için bir yerel ayar belirtimi oluşturmak için bir dil dizesi ile birleştirilebilir `setlocale`, `_wsetlocale`, `_create_locale`, ve `_wcreate_locale` işlevleri. Çeşitli Windows işletim sistemi sürümleri tarafından desteklenen ülke ve bölge adlarının bir listesi için bkz. **dil**, **konumu**, ve **dil etiketi** sütunları tablosundaki [ek A: Ürün davranışı](https://msdn.microsoft.com/library/cc233982.aspx) [MS-LCID] içinde: Windows dil kodu tanımlayıcı (LCID) başvuru. Kullanılabilen yerel veri adları ve ilgili değerleri numaralandırır kod örneği için bkz: [NLS: Ad tabanlı API'ler örnek](/windows/desktop/intl/nls--name-based-apis-sample).
+`setlocale`Ülke ve bölge dizeleri `_wsetlocale` `_create_locale`,,, ve `_wcreate_locale` işlevleri için bir yerel ayar belirtimi oluşturmak üzere bir dil dizesiyle birleştirilebilir. Çeşitli Windows işletim sistemi sürümleri tarafından desteklenen ülke ve bölge adları listelerinde, ek A ['daki tablonun **dil**, **konum**ve **Dil etiketi** sütunlarına bakın: [MS](https://msdn.microsoft.com/library/cc233982.aspx) -LCID] içinde ürün davranışı: Windows dil kodu tanımlayıcısı (LCıD) başvurusu. Kullanılabilir yerel ayar adlarını ve ilgili değerleri gösteren bir kod örneği için bkz [. NLS: Ad tabanlı API 'Ler örneği](/windows/win32/intl/nls--name-based-apis-sample).
 
-## <a name="additional-supported-country-and-region-strings"></a>Ek desteklenen ülke ve bölge dizeleri
+## <a name="additional-supported-country-and-region-strings"></a>Desteklenen ek ülke ve bölge dizeleri
 
-Microsoft C çalışma zamanı kitaplığı uygulaması da aşağıdaki ek ülke/bölge dizelerini ve kısaltmalarını destekler:
+Microsoft C çalışma zamanı kitaplığı uygulamasında aşağıdaki ek ülke/bölge dizeleri ve kısaltmalar de desteklenir:
 
-|Ülke/bölge dizesi|Kısaltması|Eşdeğer yerel ayar adı|
+|Ülke/bölge dizesi|Grubunun|Eşdeğer yerel ayar adı|
 |----------------------------|------------------|----------------------------|
 |Amerika|ABD|en-US|
 |Britanya|GBR|en-GB|
-|Çin|CHN|zh-CN|
+|arasında|CHN|zh-CN|
 |Çekçe|CZE|cs-CZ|
 |İngiltere|GBR|en-GB|
 |Büyük Britanya|GBR|en-GB|
-|Hollanda|NLD|NL-NL|
-|Hong kong|HKG|zh-HK|
-|Yeni Zelanda|NZL|tr NZ|
-|nz|NZL|tr NZ|
-|çekme isteği Çin|CHN|zh-CN|
-|Çin Halk|CHN|zh-CN|
-|Porto Riko|PRI|ES-çekme isteği|
+|Holland|NLD|NL-NL|
+|Hong-Kong|HKG|zh-HK|
+|Yeni-Zelanda|NZL|tr NZ|
+|NZ|NZL|tr NZ|
+|PR Çin|CHN|zh-CN|
+|PR-Çin|CHN|zh-CN|
+|Porto-Riko|BIRINCIL|es-PR|
 |Slovakça|SVK|SK-SK|
-|Güney Afrika|ZAF|ZA AF|
+|Güney Afrika|ZAF|AF-ZA|
 |Güney Kore|KOR|ko-KR|
-|Güney Afrika|ZAF|ZA AF|
-|Güney Kore|KOR|ko-KR|
-|Trinidad ve tobago|EŞİTLEMESİNİ|tr TT|
+|Güney Afrika|ZAF|AF-ZA|
+|Güney-Kore|KOR|ko-KR|
+|Trinidad & Tobago|EŞITLEMESINI|En-TT|
+|tr|GBR|en-GB|
 |Birleşik Krallık|GBR|en-GB|
-|Birleşik Krallık|GBR|en-GB|
-|Birleşik Devletler|ABD|en-US|
+|Amerika Birleşik Devletleri|ABD|en-US|
 |ABD|ABD|en-US|
 
 ## <a name="see-also"></a>Ayrıca bkz.

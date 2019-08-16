@@ -6,24 +6,24 @@ helpviewer_keywords:
 - drag and drop [MFC], CTreeCtrl
 - tree controls [MFC], drag and drop operations
 ms.assetid: 3cf78b4c-4579-4fe1-9bc9-c5ab876e4af1
-ms.openlocfilehash: c7febeec513d8004df2bd1cc42e4e97e027e9f17
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5d2c5aa511844a3d7cbe64d9a15f8ffb46046b29
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62167705"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69510913"
 ---
 # <a name="tree-control-drag-and-drop-operations"></a>Ağaç Denetimi Sürükle ve Bırak İşlemleri
 
-Ağaç denetimi ([CTreeCtrl](../mfc/reference/ctreectrl-class.md)) kullanıcı bir öğeyi sürüklemeye başlatıldığında bir bildirim gönderir. Denetim gönderen bir [tvn_begındrag bilgilendirme](/windows/desktop/Controls/tvn-begindrag) kullanıcının öğe farenin sol düğmesiyle sürükleme başladığında bildirim iletisi ve bir [TVN_BEGINRDRAG](/windows/desktop/Controls/tvn-beginrdrag) kullanıcı sürükleme başladığında bildirim iletisi sağ düğme. Ağaç denetimi TVS_DISABLEDRAGDROP stili ağaç denetimi sağlayarak bu bildirimleri göndermesini engelleyebilir.
+Ağaç denetimi ([Ctreeci](../mfc/reference/ctreectrl-class.md)) Kullanıcı bir öğeyi sürüklemeye başladığında bir bildirim gönderir. Kullanıcı sağ düğmeyle sürüklemeye başladığında Kullanıcı bir öğeyi sol fare düğmesi ve bir [TVN_BEGINRDRAG](/windows/win32/Controls/tvn-beginrdrag) bildirim iletisi ile sürüklemeye başladığında denetim bir [TVN_BEGINDRAG](/windows/win32/Controls/tvn-begindrag) bildirim iletisi gönderir. Ağaç denetiminin TVS_DISABLEDRAGDROP stilini vererek, bir ağaç denetiminin bu bildirimleri göndermesini önleyebilirsiniz.
 
-Bir sürükleme işlemi sırasında çağırarak görüntülenecek bir görüntü elde [CreateDragImage](../mfc/reference/ctreectrl-class.md#createdragimage) üye işlevi. Ağaç denetimi sürüklenen öğenin etikete göre sürükleyerek bir bit eşlem oluşturur. Ağaç denetim görüntü listesi oluşturur, bit eşlem ekler ve bir işaretçi döndürür [Cımagelist](../mfc/reference/cimagelist-class.md) nesne.
+Bir sürükleme işlemi sırasında [Createdragimage](../mfc/reference/ctreectrl-class.md#createdragimage) üye işlevini çağırarak görüntülenecek bir görüntü elde edersiniz. Ağaç denetimi, sürüklediğiniz öğenin etiketine göre bir sürükleme bit eşlemi oluşturur. Sonra ağaç denetimi bir görüntü listesi oluşturur, bit eşlemini buna ekler ve [CImageList](../mfc/reference/cimagelist-class.md) nesnesine bir işaretçi döndürür.
 
-Aslında öğesi sürüklediğinde kod sağlamanız gerekir. Bu genellikle görüntü listesi işlevleri sürükleyerek yeteneklerini kullanarak ve işleme içerir [WM_MOUSEMOVE](/windows/desktop/inputdev/wm-mousemove) ve [WM_LBUTTONUP](/windows/desktop/inputdev/wm-lbuttonup) (veya [WM_RBUTTONUP](/windows/desktop/inputdev/wm-rbuttonup)) sürükleme işlemi başladıktan sonra gönderilen iletileri. Görüntü listesi işlevler hakkında daha fazla bilgi için bkz. [Cımagelist](../mfc/reference/cimagelist-class.md) içinde *MFC başvurusu* ve [görüntü listeleri](/windows/desktop/controls/image-lists) Windows SDK. Ağaç denetim öğesi sürükleyerek hakkında daha fazla bilgi için bkz. [ağaç görünümü öğesi sürükleyerek](/windows/desktop/Controls/tree-view-controls), Windows SDK'sında da.
+Öğeyi gerçekten sürüklediği kodu sağlamanız gerekir. Bu genellikle görüntü listesi işlevlerinin sürükleme özelliklerini kullanmayı ve sürükleme işlemi başladıktan sonra gönderilen [WM_MOUSEMOVE](/windows/win32/inputdev/wm-mousemove) ve [WM_LBUTTONUP](/windows/win32/inputdev/wm-lbuttonup) (veya [WM_RBUTTONUP](/windows/win32/inputdev/wm-rbuttonup)) iletilerini işlemeyi içerir. Görüntü listesi işlevleri hakkında daha fazla bilgi için, Windows SDK *MFC başvurusu* ve [görüntü listelerindeki](/windows/win32/controls/image-lists) [CImageList](../mfc/reference/cimagelist-class.md) bölümüne bakın. Ağaç denetim öğesini sürükleme hakkında daha fazla bilgi için, bkz. [Ağaç Görünüm öğesini](/windows/win32/Controls/tree-view-controls)de Windows SDK sürükleme.
 
-Öğeleri bir ağaç denetimi sürükle ve bırak işlemi hedefleri olması durumunda, bir hedef öğe üzerinde fare imlecini olduğunda bilmeniz gerekir. Bunu çağırarak öğrenebilirsiniz [HitTest](../mfc/reference/ctreectrl-class.md#hittest) üye işlevi. Bir nokta ve tamsayı veya adresini belirttiğiniz bir [TVHITTESTINFO](/windows/desktop/api/commctrl/ns-commctrl-tagtvhittestinfo) fare imleci geçerli koordinatları içeren yapısı. İşlevi döndüğünde, tamsayı veya yapı fare imlecini ağaç denetimi göreli konumunu belirten bir bayrak içerir. Ağaç denetimindeki bir öğeyi üzerine imleci ise yapısı tanıtıcı öğesi de içerir.
+Bir ağaç denetimindeki öğeler sürükle ve bırak işleminin hedefi ise, fare imlecinin bir hedef öğe üzerinde ne zaman olduğunu bilmeniz gerekir. [HitTest](../mfc/reference/ctreectrl-class.md#hittest) üye işlevini çağırarak bulabilirsiniz. Bir nokta ve tamsayı ya da fare imlecinin geçerli koordinatlarını içeren bir [Tvhittestınfo](/windows/win32/api/commctrl/ns-commctrl-tvhittestinfo) yapısının adresini belirtirsiniz. İşlev döndürüldüğünde, tamsayı veya yapı, ağaç denetimine göre fare imlecinin konumunu gösteren bir bayrak içerir. İmleç ağaç denetimindeki bir öğenin üzerindeyken, yapı öğenin tanıtıcısını de içerir.
 
-Çağırarak öğeyi bir Sürükle ve bırak işleminin hedef olduğunu gösterebilir [SetItem](../mfc/reference/ctreectrl-class.md#setitem) durumu ayarlamak için üye işlevi `TVIS_DROPHILITED` değeri. Bu duruma sahip bir öğe, bir Sürükle ve bırak hedef belirtmek için kullanılan stili çizilir.
+Bir öğenin bir sürükle ve bırak işleminin hedefi olduğunu, durumu `TVIS_DROPHILITED` değere ayarlamak için [SetItem](../mfc/reference/ctreectrl-class.md#setitem) üye işlevini çağırarak belirtebilirsiniz. Bu duruma sahip bir öğe, sürükle ve bırak hedefini göstermek için kullanılan stilde çizilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,24 +1,24 @@
 ---
-title: 'İzlenecek yol: COM özellikli bir uygulamada eşzamanlılık çalışma zamanı kullanma'
+title: 'İzlenecek yol: COM özellikli bir uygulamada Eşzamanlılık Çalışma Zamanı kullanma'
 ms.date: 04/25/2019
 helpviewer_keywords:
 - Concurrency Runtime, use with COM
 - COM, use with the Concurrency Runtime
 ms.assetid: a7c798b8-0fc8-4bee-972f-22ef158f7f48
-ms.openlocfilehash: 7249dc1c715861230170bc3efd4fb4aa75029bdb
-ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
+ms.openlocfilehash: 23488522287ab5767c88cd3a3e90c09392634f46
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64857505"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69512103"
 ---
-# <a name="walkthrough-using-the-concurrency-runtime-in-a-com-enabled-application"></a>İzlenecek yol: COM özellikli bir uygulamada eşzamanlılık çalışma zamanı kullanma
+# <a name="walkthrough-using-the-concurrency-runtime-in-a-com-enabled-application"></a>İzlenecek yol: COM özellikli bir uygulamada Eşzamanlılık Çalışma Zamanı kullanma
 
-Bu belge Bileşen Nesne Modeli (COM) kullanan bir uygulamada eşzamanlılık çalışma zamanı nasıl yapılacağı açıklanır.
+Bu belgede, bileşen nesne modeli (COM) kullanan bir uygulamada Eşzamanlılık Çalışma Zamanı nasıl kullanılacağı gösterilmiştir.
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-Bu kılavuza başlamadan önce aşağıdaki belgeleri okuyun:
+Bu yönergeyi başlamadan önce aşağıdaki belgeleri okuyun:
 
 - [Görev Paralelliği](../../parallel/concrt/task-parallelism-concurrency-runtime.md)
 
@@ -28,101 +28,101 @@ Bu kılavuza başlamadan önce aşağıdaki belgeleri okuyun:
 
 - [Özel Durum İşleme](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md)
 
-COM hakkında daha fazla bilgi için bkz: [Bileşen Nesne Modeli (COM)](/windows/desktop/com/component-object-model--com--portal).
+COM hakkında daha fazla bilgi için bkz. [bileşen nesne modeli (com)](/windows/win32/com/component-object-model--com--portal).
 
 ## <a name="managing-the-lifetime-of-the-com-library"></a>COM Kitaplığının Kullanım Süresini Yönetme
 
-Diğer bir eşzamanlılık mekanizması olarak aynı ilkeler COM eşzamanlılık çalışma zamanı ile kullanımını izleyen olsa da, aşağıdaki yönergeleri Bu kitaplıklar birlikte etkili bir şekilde kullanmanıza yardımcı olabilir.
+Eşzamanlılık Çalışma Zamanı ile COM kullanılması diğer eşzamanlılık mekanizmasıyla aynı ilkeleri takip etse de, aşağıdaki kılavuzlar bu kitaplıkları etkin bir şekilde kullanmanıza yardımcı olabilir.
 
-- Bir iş parçacığı çağırmalıdır [CoInitializeEx](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializeex) COM kitaplığı kullanan önce.
+- COM kitaplığını kullanmadan önce bir iş parçacığının [CoInitializeEx](/windows/win32/api/combaseapi/nf-combaseapi-coinitializeex) çağrısı gerekir.
 
-- Bir iş parçacığı çağırabilirsiniz `CoInitializeEx` isteğe bağlı olarak birden çok kez aynı bağımsız değişkenleri her çağrı için sağladığı sürece.
+- Her çağrıda aynı bağımsız `CoInitializeEx` değişkenleri sağladığı sürece bir iş parçacığı birden çok kez çağrı yapabilir.
 
-- Her çağrı için `CoInitializeEx`, bir iş parçacığı da çağırmalıdır [CoUninitialize](/windows/desktop/api/combaseapi/nf-combaseapi-couninitialize). Diğer bir deyişle, çağrılar `CoInitializeEx` ve `CoUninitialize` dengelenmelidir.
+- Her çağrısı `CoInitializeEx`için bir iş parçacığının [CoUnInitialize](/windows/win32/api/combaseapi/nf-combaseapi-couninitialize)çağrısını de çağırması gerekir. Diğer bir deyişle, `CoInitializeEx` ve `CoUninitialize` çağrıları dengelenmesi gerekir.
 
-- Çağırmadan önce bir iş parçacığı grubu diğerine geçmek için bir iş parçacığı tamamen COM kitaplığı boşaltmanız gerekir `CoInitializeEx` belirtimi yeni iş parçacığı oluşturma.
+- Bir iş parçacığı grubundan diğerine geçiş yapmak için, iş parçacığının yeni iş parçacığı belirtimine geçmeden önce `CoInitializeEx` com kitaplığını tamamen boşaltmalıdır.
 
-Eşzamanlılık Çalışma zamanı ile COM kullandığınızda diğer COM ilkeler geçerlidir. Örneğin, bir tek iş parçacıklı apartmanda (STA) bir nesne oluşturur ve bu nesneyi başka bir grup sürekliliğe devreder bir uygulama aynı zamanda gelen iletileri işlemek için bir ileti döngüsü sağlamanız gerekir. Ayrıca apartmanlar arasında nesneleri sıralama performansı düşürebilir unutmayın.
+COM kullandığınızda Eşzamanlılık Çalışma Zamanı diğer COM ilkeleri geçerlidir. Örneğin, tek iş parçacıklı grupta (STA) bir nesne oluşturan ve bu nesnenin başka bir gruba göre sıraladığında, gelen iletileri işlemek için de bir ileti döngüsü sağlaması gerekir. Ayrıca, bu nesnelerin apartmanlar arasında sıralama performansını azaltamada unutmayın.
 
 ### <a name="using-com-with-the-parallel-patterns-library"></a>COM'u Paralel Desenler Kitaplığıyla Kullanma
 
-COM bileşeni, paralel Desen kitaplığı (PPL), örneğin, bir görev grubu veya paralel algoritma kullandığınızda çağrı `CoInitializeEx` her görev veya yineleme ve çağrısı sırasında bir COM kitaplığı kullanmadan önce `CoUninitialize` her görev veya yineleme tamamlanmadan önce . Aşağıdaki örnek COM kitaplığı ile ömrünü yönetmek nasıl gösterir bir [concurrency::structured_task_group](../../parallel/concrt/reference/structured-task-group-class.md) nesne.
+Bir görev grubu veya paralel algoritma gibi bir bileşen ile com kullandığınızda, her görev veya yineleme sırasında com kitaplığını kullanmadan önce çağırın `CoInitializeEx` ve her bir görev veya yineleme bitmeden önce çağırın `CoUninitialize` . Aşağıdaki örnek, COM kitaplığı yaşam süresinin [eşzamanlılık:: structured_task_group](../../parallel/concrt/reference/structured-task-group-class.md) nesnesi ile nasıl yönetileceğini gösterir.
 
 [!code-cpp[concrt-parallel-scripts#1](../../parallel/concrt/codesnippet/cpp/walkthrough-using-the-concurrency-runtime-in-a-com-enabled-application_1.cpp)]
 
-COM kitaplığından bir görev veya paralel algoritma iptal edildiğinde veya görev gövdesi bir özel durum oluşturduğunda doğru şekilde serbest emin emin olmanız gerekir. Görev güvence altına almak için çağrıları `CoUninitialize` çıkana önce kullanmak bir `try-finally` blok veya *olduğu kaynak alımı başlatma* (RAII) deseni. Aşağıdaki örnekte bir `try-finally` COM kitaplığı görev tamamlandığında veya iptal edilen olduğunda veya bir özel durum oluştuğunda boşaltmak için blok.
+Bir görev veya paralel algoritma iptal edildiğinde veya görev gövdesi bir özel durum oluşturduğunda COM kitaplığının düzgün şekilde serbest olduğundan emin olmanız gerekir. Görevin uygulamadan önce çağırdığından `CoUninitialize` emin olmak için bir `try-finally` blok veya *kaynak alımı başlatma* (rampaı) kalıbı kullanın. Aşağıdaki örnek, görev tamamlandığında `try-finally` veya iptal edildiğinde ya da bir özel durum oluştuğunda com kitaplığını serbest bırakmak için bir blok kullanır.
 
 [!code-cpp[concrt-parallel-scripts#2](../../parallel/concrt/codesnippet/cpp/walkthrough-using-the-concurrency-runtime-in-a-com-enabled-application_2.cpp)]
 
-Aşağıdaki örnek, tanımlamak için RAII deseni kullanır. `CCoInitializer` sınıfı belirli bir kapsamda COM kitaplığının kullanım ömrü yönetir.
+Aşağıdaki örnek, belirli bir kapsamdaki com kitaplığı ömrünü yöneten `CCoInitializer` sınıfını tanımlamak için bir esii modelini kullanır.
 
 [!code-cpp[concrt-parallel-scripts#3](../../parallel/concrt/codesnippet/cpp/walkthrough-using-the-concurrency-runtime-in-a-com-enabled-application_3.cpp)]
 
-Kullanabileceğiniz `CCoInitializer` görev çıkar, şu şekilde otomatik olarak bir COM kitaplığı boşaltılacak sınıfı.
+Aşağıdaki gibi, görev `CCoInitializer` çıkış sırasında com kitaplığını otomatik olarak serbest bırakmak için sınıfını kullanabilirsiniz.
 
 [!code-cpp[concrt-parallel-scripts#4](../../parallel/concrt/codesnippet/cpp/walkthrough-using-the-concurrency-runtime-in-a-com-enabled-application_4.cpp)]
 
-Eşzamanlılık Çalışma zamanı iptali hakkında daha fazla bilgi için bkz. [ppl'de iptal](cancellation-in-the-ppl.md).
+Eşzamanlılık Çalışma Zamanı iptal hakkında daha fazla bilgi için bkz. [PPL 'de iptal](cancellation-in-the-ppl.md).
 
 ### <a name="using-com-with-asynchronous-agents"></a>COM'u Zaman Uyumsuz Aracılarla Kullanma
 
-COM ile zaman uyumsuz aracılar kullandığınızda, çağrı `CoInitializeEx` COM kitaplığı'nda kullanmadan önce [concurrency::agent::run](reference/agent-class.md#run) aracınız için yöntemi. Ardından çağırın `CoUninitialize` önce `run` yöntemi döndürür. Oluşturucuda veya yok edicide aracınızın COM yönetim yordamlarını kullanmayın ve geçersiz [concurrency::agent::start](reference/agent-class.md#start) veya [concurrency::agent:: Bitti](reference/agent-class.md#done) yöntemleri çünkü bu yöntemler farklı bir iş parçacığına göre çağrılır `run` yöntemi.
+Com 'u zaman uyumsuz aracılar ile kullandığınızda, aracılarınız için `CoInitializeEx` [concurrency:: Agent:: Run](reference/agent-class.md#run) yönteminde com kitaplığını kullanmadan önce çağırın. Sonra, `CoUninitialize` `run` yöntemi döndürmadan önce çağırın. Aracıınızın oluşturucusunda veya yıkıcısında COM yönetim yordamlarını kullanmayın ve bu yöntemler farklı bir iş parçacığından çağrıldığında, [concurrency:: Agent:: Start](reference/agent-class.md#start) veya [concurrency:: Agent::d One](reference/agent-class.md#done) yönteminigeçersizkılmaz.`run` yöntemi.
 
-Aşağıdaki örnekte adlı bir temel aracı sınıf `CCoAgent`, COM kitaplığı'nda yönetir `run` yöntemi.
+Aşağıdaki örnek, `CCoAgent` `run` yönteminde com kitaplığını yöneten adlı temel bir aracı sınıfını gösterir.
 
 [!code-cpp[concrt-parallel-scripts#5](../../parallel/concrt/codesnippet/cpp/walkthrough-using-the-concurrency-runtime-in-a-com-enabled-application_5.cpp)]
 
-Bu izlenecek yolda tam bir örnek sağlanmaktadır.
+Bu izlenecek yolda daha sonra bir örnek verilmiştir.
 
 ### <a name="using-com-with-lightweight-tasks"></a>COM'u Basit Görevlerle Kullanma
 
-Belge [Görev Zamanlayıcı](../../parallel/concrt/task-scheduler-concurrency-runtime.md) eşzamanlılık çalışma zamanındaki Basit görevler rolünü açıklar. Geçirdiğiniz tüm iş parçacığı yordamı ile olduğu gibi COM ile basit bir görev kullanabilirsiniz `CreateThread` Windows API işlevi. Bu, aşağıdaki örnekte gösterilir.
+Belge [Görev Zamanlayıcı](../../parallel/concrt/task-scheduler-concurrency-runtime.md) , eşzamanlılık çalışma zamanı basit görevlerin rolünü açıklar. Windows API 'sindeki `CreateThread` işleve geçirdiğiniz iş parçacığı yordamında olduğu gibi, com öğesini hafif bir görevle birlikte kullanabilirsiniz. Bu, aşağıdaki örnekte gösterilir.
 
 [!code-cpp[concrt-parallel-scripts#6](../../parallel/concrt/codesnippet/cpp/walkthrough-using-the-concurrency-runtime-in-a-com-enabled-application_6.cpp)]
 
 ## <a name="an-example-of-a-com-enabled-application"></a>COM Özellikli Uygulama Örneği
 
-Bu bölümde kullanan tüm COM özellikli uygulama gösterilir `IScriptControl` n hesaplayan bir betik yürütmek için arabirimi<sup>th</sup> Fibonacci sayı. Bu örnek, ilk ana iş parçacığından komut dosyasını çağırır ve ardından betiği eşzamanlı olarak çağırmak için PPL ve aracıları kullanır.
+Bu bölümde, n. `IScriptControl` fibonaccı numarasını hesaplayan bir betiği yürütmek için arabirimini kullanan tam bir com özellikli<sup></sup> uygulama gösterilmektedir. Bu örnek ilk olarak ana iş parçacığından betiği çağırır ve ardından betiği aynı anda çağırmak için PPL ve aracılarını kullanır.
 
-Aşağıdaki yardımcı işlevi, göz önünde bulundurun `RunScriptProcedure`, bir yordamı çağıran bir `IScriptControl` nesne.
+`RunScriptProcedure` Bir`IScriptControl` nesne içindeki bir yordamı çağıran aşağıdaki yardımcı işlevi göz önünde bulundurun.
 
 [!code-cpp[concrt-parallel-scripts#7](../../parallel/concrt/codesnippet/cpp/walkthrough-using-the-concurrency-runtime-in-a-com-enabled-application_7.cpp)]
 
-`wmain` İşlevi oluşturur bir `IScriptControl` nesne, n hesaplar, bir kod ekler<sup>th</sup> Fibonacci numarası ve çağrıları `RunScriptProcedure` bu betiği çalıştırmak için işlev.
+İşlevi bir `IScriptControl` nesnesi oluşturur, ona n.<sup></sup> `RunScriptProcedure` fibonaccı numarasını hesaplayan betik kodu ekler ve sonra bu betiği çalıştırmak için işlevini çağırır. `wmain`
 
 [!code-cpp[concrt-parallel-scripts#8](../../parallel/concrt/codesnippet/cpp/walkthrough-using-the-concurrency-runtime-in-a-com-enabled-application_8.cpp)]
 
 ### <a name="calling-the-script-from-the-ppl"></a>PPL'den Betik çağırma
 
-Aşağıdaki işlev `ParallelFibonacci`, kullanan [concurrency::parallel_for](reference/concurrency-namespace-functions.md#parallel_for) algoritmasını paralel olarak komut dosyasını çağırın. Bu işlev kullanır `CCoInitializer` her görevin yineleme sırasında bir COM kitaplığı ömrünü yönetmek için sınıf.
+Aşağıdaki işlev `ParallelFibonacci`, komut dosyasını paralel olarak çağırmak için [eşzamanlılık::p arallel_for](reference/concurrency-namespace-functions.md#parallel_for) algoritmasını kullanır. Bu işlev, görevi `CCoInitializer` her tekrarında com kitaplığı ömrünü yönetmek için sınıfını kullanır.
 
 [!code-cpp[concrt-parallel-scripts#9](../../parallel/concrt/codesnippet/cpp/walkthrough-using-the-concurrency-runtime-in-a-com-enabled-application_9.cpp)]
 
-Kullanılacak `ParallelFibonacci` işlev örneği ile önce aşağıdaki kodu ekleyin `wmain` işlevi döndürür.
+`ParallelFibonacci` İşlevini örnekle birlikte kullanmak için, `wmain` işlevin döndürüldüğünden önce aşağıdaki kodu ekleyin.
 
 [!code-cpp[concrt-parallel-scripts#10](../../parallel/concrt/codesnippet/cpp/walkthrough-using-the-concurrency-runtime-in-a-com-enabled-application_10.cpp)]
 
 ### <a name="calling-the-script-from-an-agent"></a>Bir Aracıdan Betik çağırma
 
-Aşağıdaki örnekte gösterildiği `FibonacciScriptAgent` n hesaplamak için bir komut dosyası yordamı çağıran sınıfı<sup>th</sup> Fibonacci sayı. `FibonacciScriptAgent` Sınıfı, ileti geçirme, ana programından almak için giriş değerleri için betik işlevi kullanır. `run` Yöntemi ömrü boyunca görev COM kitaplığının yönetir.
+Aşağıdaki örnek, n. `FibonacciScriptAgent` fibonaccı numarasını hesaplamak için bir betik yordamı çağıran<sup></sup> sınıfını gösterir. `FibonacciScriptAgent` Sınıfı, ana programdan, giriş değerlerini komut dosyası işlevine almak için ileti geçişini kullanır. `run` Yöntemi, görev boyunca com kitaplığı ömrünü yönetir.
 
 [!code-cpp[concrt-parallel-scripts#11](../../parallel/concrt/codesnippet/cpp/walkthrough-using-the-concurrency-runtime-in-a-com-enabled-application_11.cpp)]
 
-Aşağıdaki işlev `AgentFibonacci`, birkaç oluşturur `FibonacciScriptAgent` nesneleri ve ileti geçirme birkaç göndermek için giriş değerleri bu nesnelere kullanır.
+Aşağıdaki işlev `AgentFibonacci`, birkaç `FibonacciScriptAgent` nesne oluşturur ve bu nesnelere birkaç giriş değeri göndermek için ileti geçişini kullanır.
 
 [!code-cpp[concrt-parallel-scripts#12](../../parallel/concrt/codesnippet/cpp/walkthrough-using-the-concurrency-runtime-in-a-com-enabled-application_12.cpp)]
 
-Kullanılacak `AgentFibonacci` işlev örneği ile önce aşağıdaki kodu ekleyin `wmain` işlevi döndürür.
+`AgentFibonacci` İşlevini örnekle birlikte kullanmak için, `wmain` işlevin döndürüldüğünden önce aşağıdaki kodu ekleyin.
 
 [!code-cpp[concrt-parallel-scripts#13](../../parallel/concrt/codesnippet/cpp/walkthrough-using-the-concurrency-runtime-in-a-com-enabled-application_13.cpp)]
 
 ### <a name="the-complete-example"></a>Tam Örnek
 
-Aşağıdaki kod Fibonacci numaraları hesaplar bir komut dosyası yordamı çağırmak için paralel algoritmalar ve zaman uyumsuz aracılar kullanan tam bir örnek gösterir.
+Aşağıdaki kod, Fipriaccı numaralarını hesaplayan bir betik yordamını çağırmak için paralel algoritmaları ve zaman uyumsuz aracıları kullanan tüm örneği gösterir.
 
 [!code-cpp[concrt-parallel-scripts#14](../../parallel/concrt/codesnippet/cpp/walkthrough-using-the-concurrency-runtime-in-a-com-enabled-application_14.cpp)]
 
-Örneğin, aşağıdaki örnek çıktısı üretir.
+Örnek, aşağıdaki örnek çıktıyı üretir.
 
 ```Output
 Main Thread:
@@ -149,9 +149,9 @@ fib(12) = 144
 
 ## <a name="compiling-the-code"></a>Kod Derleniyor
 
-Örnek kodu kopyalayın ve bir Visual Studio projesine yapıştırın veya adlı bir dosyaya yapıştırın `parallel-scripts.cpp` ve Visual Studio komut istemi penceresinde aşağıdaki komutu çalıştırın.
+Örnek kodu kopyalayın ve bir Visual Studio projesine yapıştırın veya adlandırılmış `parallel-scripts.cpp` bir dosyaya yapıştırın ve sonra bir Visual Studio komut istemi penceresinde aşağıdaki komutu çalıştırın.
 
-**cl.exe/ehsc paralel scripts.cpp/Link ole32.lib**
+**CL. exe/EHsc Parallel-Scripts. cpp/link Ole32. lib**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
@@ -161,4 +161,4 @@ fib(12) = 144
 [Zaman Uyumsuz Aracılar](../../parallel/concrt/asynchronous-agents.md)<br/>
 [Özel Durum İşleme](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md)<br/>
 [PPL'de İptal](cancellation-in-the-ppl.md)<br/>
-[Görev Zamanlayıcısı](../../parallel/concrt/task-scheduler-concurrency-runtime.md)
+[Görev Zamanlayıcı](../../parallel/concrt/task-scheduler-concurrency-runtime.md)

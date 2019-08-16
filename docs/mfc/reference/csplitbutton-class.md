@@ -14,12 +14,12 @@ helpviewer_keywords:
 - CSplitButton [MFC], SetDropDownMenu
 - CSplitButton [MFC], OnDropDown
 ms.assetid: 6844d0a9-6408-4e44-9b5f-57628ed8bad6
-ms.openlocfilehash: d493a2d4d1c531250abc1cd60d1d3d5b79dea1b7
-ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
+ms.openlocfilehash: a552334adb4963f45388a798eb0723e61c09ec85
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68916760"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69502846"
 ---
 # <a name="csplitbutton-class"></a>CSplitButton sınıfı
 
@@ -54,7 +54,7 @@ class CSplitButton : public CButton
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıfı CButton sınıfından türetilir. [](../../mfc/reference/cbutton-class.md) `CSplitButton` Bölünmüş düğme denetimi, stili BS_SPLITBUTTON olan bir düğme denetimidir. Kullanıcı açılır oka tıkladığında bir özel menü görüntüler. Daha fazla bilgi için bkz. [düğme STILLERINDE](/windows/desktop/Controls/button-styles)BS_SPLITBUTTON ve BS_DEFSPLITBUTTON stilleri.
+Sınıfı CButton sınıfından türetilir. [](../../mfc/reference/cbutton-class.md) `CSplitButton` Bölünmüş düğme denetimi, stili BS_SPLITBUTTON olan bir düğme denetimidir. Kullanıcı açılır oka tıkladığında bir özel menü görüntüler. Daha fazla bilgi için bkz. [düğme STILLERINDE](/windows/win32/Controls/button-styles)BS_SPLITBUTTON ve BS_DEFSPLITBUTTON stilleri.
 
 Aşağıdaki şekilde, bir sayfalayıcı denetimi ve (1) bölünmüş düğme denetimi içeren bir iletişim kutusu gösterilmektedir. (2) aşağı açılan oka zaten tıklandı ve (3) alt menüsü gösteriliyor.
 
@@ -144,8 +144,8 @@ afx_msg void OnDropDown(
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*pNMHDR*|'ndaki [BCN_DROPDOWN](/windows/desktop/Controls/bcn-dropdown) bildirimi hakkında bilgi Içeren bir [nmhdr](/windows/desktop/api/richedit/ns-richedit-nmhdr) yapısına yönelik işaretçi.|
-|*pResult*|dışı (Kullanılmıyor; değer döndürülmedi.) [BCN_DROPDOWN](/windows/desktop/Controls/bcn-dropdown) bildiriminin dönüş değeri.|
+|*pNMHDR*|'ndaki [BCN_DROPDOWN](/windows/win32/Controls/bcn-dropdown) bildirimi hakkında bilgi Içeren bir [nmhdr](/windows/win32/api/richedit/ns-richedit-nmhdr) yapısına yönelik işaretçi.|
+|*pResult*|dışı (Kullanılmıyor; değer döndürülmedi.) [BCN_DROPDOWN](/windows/win32/Controls/bcn-dropdown) bildiriminin dönüş değeri.|
 
 ### <a name="remarks"></a>Açıklamalar
 

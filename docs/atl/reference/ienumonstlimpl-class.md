@@ -1,5 +1,5 @@
 ---
-title: Ienumonstlımpl sınıfı
+title: IEnumOnSTLImpl sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - IEnumOnSTLImpl
@@ -15,16 +15,16 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumOnSTLImpl class
 ms.assetid: 1789e77b-88b8-447d-a490-806b918912ce
-ms.openlocfilehash: 8ff29522351b542d0b674bc173040d4468d00f1c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7cf777f3ff0d298f224157735a06bf57a2c10cf5
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62275275"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69495869"
 ---
-# <a name="ienumonstlimpl-class"></a>Ienumonstlımpl sınıfı
+# <a name="ienumonstlimpl-class"></a>IEnumOnSTLImpl sınıfı
 
-Bu sınıf, bir C++ Standart Kitaplığı koleksiyonuna bağlı bir numaralandırıcı arabirimi tanımlar.
+Bu sınıf, C++ standart kitaplık koleksiyonu temelinde bir Numaralandırıcı arabirimi tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -36,20 +36,20 @@ class ATL_NO_VTABLE IEnumOnSTLImpl : public Base
 
 #### <a name="parameters"></a>Parametreler
 
-*temel*<br/>
-Bir COM Numaralandırıcı. Bkz: [IEnumString](/windows/desktop/api/objidl/nn-objidl-ienumstring) örneği.
+*Temel*<br/>
+COM numaralandırıcısı. Örnek için bkz. [IEnumString](/windows/win32/api/objidl/nn-objidl-ienumstring) .
 
-*piid*<br/>
-Numaralandırıcı arabirimi arabirim kimliği için bir işaretçi.
+*piıd*<br/>
+Numaralandırıcı arabiriminin arabirim KIMLIĞINE yönelik bir işaretçi.
 
-*T*<br/>
-Numaralandırıcı arabirim tarafından sunulan öğe türü.
+*ŞI*<br/>
+Numaralandırıcı arabirimi tarafından kullanıma sunulan öğenin türü.
 
 *Kopyala*<br/>
-A [kopyalama İlkesi sınıfı](../../atl/atl-copy-policy-classes.md).
+Bir [kopyalama ilkesi sınıfı](../../atl/atl-copy-policy-classes.md).
 
 *CollType*<br/>
-Bir C++ Standart Kitaplığı kapsayıcı sınıfı.
+C++ Standart kitaplık kapsayıcı sınıfı.
 
 ## <a name="members"></a>Üyeler
 
@@ -57,30 +57,30 @@ Bir C++ Standart Kitaplığı kapsayıcı sınıfı.
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[IEnumOnSTLImpl::Clone](#clone)|Uygulamasını **kopya**.|
-|[IEnumOnSTLImpl::Init](#init)|Numaralandırıcı başlatır.|
-|[IEnumOnSTLImpl::Next](#next)|Uygulamasını **sonraki**.|
-|[IEnumOnSTLImpl::Reset](#reset)|Uygulamasını **sıfırlama**.|
-|[IEnumOnSTLImpl::Skip](#skip)|Uygulamasını **atla**.|
+|[IEnumOnSTLImpl:: Clone](#clone)|**Kopyanın**uygulanması.|
+|[IEnumOnSTLImpl:: Init](#init)|Numaralandırıcı başlatır.|
+|[IEnumOnSTLImpl:: Next](#next)|**Sonraki**uygulama.|
+|[IEnumOnSTLImpl:: Reset](#reset)|**Sıfırlama**uygulamasının uygulanması.|
+|[IEnumOnSTLImpl:: Skip](#skip)|Atlanmayı uygulama.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[IEnumOnSTLImpl::m_iter](#m_iter)|Numaralandırıcı koleksiyondaki geçerli konumunu gösteren yineleyici.|
-|[IEnumOnSTLImpl::m_pcollection](#m_pcollection)|Numaralandırılacak öğelerini bulunduran standart C++ Kitaplığı kapsayıcı için bir işaretçi.|
-|[IEnumOnSTLImpl::m_spUnk](#m_spunk)|`IUnknown` İşaretçi koleksiyonu sağlayan nesne.|
+|[IEnumOnSTLImpl:: m_iter](#m_iter)|Numaralandırıcı içerisindeki geçerli konumu temsil eden Yineleyici.|
+|[IEnumOnSTLImpl:: m_pcollection](#m_pcollection)|Numaralandırılacak öğeleri tutan C++ standart kitaplık kapsayıcısına yönelik bir işaretçi.|
+|[IEnumOnSTLImpl:: m_spUnk](#m_spunk)|Koleksiyonu sağlayan nesnenin işaretçisi. `IUnknown`|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`IEnumOnSTLImpl` Numaralandırılan öğeleri bir C++ Standart kitaplığı ile uyumlu kapsayıcıda depolandığı bir COM Numaralandırıcı arabirim uygulamasını sağlar. Bu sınıf için benzer [Ccomenumımpl](../../atl/reference/ccomenumimpl-class.md) Numaralandırıcı arabiriminin bir uygulamasını sağlar sınıfını tabanlı bir dizi üzerinde.
+`IEnumOnSTLImpl`numaralandırılmakta olan öğelerin standart kitaplık ile uyumlu bir C++ kapsayıcıda DEPOLANDıĞı bir com Numaralandırıcı arabirimi için uygulama sağlar. Bu sınıf [CComEnumImpl](../../atl/reference/ccomenumimpl-class.md) sınıfına benzer ve bir diziyi temel alan bir Numaralandırıcı arabirimine yönelik bir uygulama sağlar.
 
 > [!NOTE]
->  Bkz: [CComEnumImpl::Init](../../atl/reference/ccomenumimpl-class.md#init) daha arasındaki farklar hakkında ayrıntılı bilgi için `CComEnumImpl` ve `IEnumOnSTLImpl`.
+>  `CComEnumImpl` Ve arasındaki`IEnumOnSTLImpl`diğer farklılıklar hakkında daha fazla bilgi için bkz. [CComEnumImpl:: Init](../../atl/reference/ccomenumimpl-class.md#init) .
 
-Genellikle, görüntüler *değil* kendi Numaralandırıcı sınıfı bu arabirimi uygulamasından türetilerek oluşturmanız gerekir. Bir C++ Standart Kitaplığı kapsayıcı dayalı bir ATL sağlanan Numaralandırıcı kullanmak istiyorsanız, bir örneğini oluşturmak için daha yaygın [CComEnumOnSTL](../../atl/reference/ccomenumonstl-class.md), veya türetilenbirnumaralandırıcıdöndürür.birkoleksiyonsınıfıoluşturmakiçin[Icollectiononstlımpl](../../atl/reference/icollectiononstlimpl-class.md).
+Genellikle, bu arabirim uygulamasından türeterek kendi Numaralandırıcı sınıfınızı oluşturmanız gerekmez. C++ Standart kitaplık kapsayıcısını temel alan ATL tarafından sağlanan bir Numaralandırıcı kullanmak Istiyorsanız, [CComEnumOnSTL](../../atl/reference/ccomenumonstl-class.md)'nin bir örneğini oluşturmak veya ıollectiononstlımpl öğesinden türeterek bir Numaralandırıcı döndüren bir koleksiyon sınıfı oluşturmak daha yaygındır. [ ](../../atl/reference/icollectiononstlimpl-class.md).
 
-Ancak, özel bir numaralandırıcı (örneğin, bir numaralandırıcı arabirimi yanı sıra arabirimleri kullanıma açıp) sağlamak gerekiyorsa, bu sınıftan türetebilirsiniz. Bu durumda geçersiz kılma gerekecektir olma olasılığı yüksektir [kopya](#clone) kendi uygulamasını sağlamak için yöntemi.
+Ancak, özel bir Numaralandırıcı sağlamanız gerekiyorsa (örneğin, Numaralandırıcı arabirimine ek olarak arabirimler sunan bir tane), bu sınıftan türetebilirsiniz. Bu durumda, kendi uygulamanızı sağlamak için [Clone](#clone) metodunu geçersiz kılmanız gerekir.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -90,9 +90,9 @@ Ancak, özel bir numaralandırıcı (örneğin, bir numaralandırıcı arabirimi
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlcom.h
+**Üstbilgi:** atlcom. h
 
-##  <a name="init"></a>  IEnumOnSTLImpl::Init
+##  <a name="init"></a>IEnumOnSTLImpl:: Init
 
 Numaralandırıcı başlatır.
 
@@ -105,24 +105,24 @@ HRESULT Init(
 ### <a name="parameters"></a>Parametreler
 
 *pUnkForRelease*<br/>
-[in] `IUnknown` İşaretçiyi nesnenin Numaralandırıcı yaşam süresi boyunca canlı olarak tutulmalıdır. Böyle bir nesne varsa, NULL geçirin.
+'ndaki Numaralandırıcının ömrü boyunca etkin tutulması gereken bir nesne işaretçisi.`IUnknown` Böyle bir nesne yoksa NULL değeri geçirin.
 
-*Koleksiyon*<br/>
-Numaralandırılacak öğelerini tutan C++ Standart Kitaplığı kapsayıcıya bir başvuru.
+*koleksiyon*<br/>
+Numaralandırılacak öğeleri tutan C++ standart kitaplık kapsayıcısına başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT değerini.
+Standart bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Geçirirseniz `Init` kullanabileceğiniz başka bir nesnede bir koleksiyona başvuruyu tutulan *pUnkForRelease* nesne ve koleksiyon başvuruysa, kullanılabilecek Numaralandırıcı ihtiyaç duyduğu sürece emin olmak için parametre.
+Başka bir nesnede `Init` tutulan bir koleksiyona başvuru geçirirseniz, nesnenin ve sahip olduğu koleksiyonun, Numaralandırıcı için gereken süre için kullanılabilir olduğundan emin olmak için *pUnkForRelease* parametresini kullanabilirsiniz.
 
-Numaralandırıcı arabirimine tüm istemciler için bir işaretçi geçirmeden önce bu yöntemi çağırmanız gerekir.
+Numaralandırıcı arabirimine bir işaretçiyi bir istemciye geri geçirmeden önce bu yöntemi çağırmanız gerekir.
 
-##  <a name="clone"></a>  IEnumOnSTLImpl::Clone
+##  <a name="clone"></a>IEnumOnSTLImpl:: Clone
 
-Bu yöntem uygulamasını sağlar **kopya** türünde bir nesne oluşturarak yöntemi `CComEnumOnSTL`, aynı koleksiyon ve geçerli nesne tarafından kullanılan yineleyici başlatma ve üzerinde arabirimi döndüren yeni oluşturulan nesne.
+Bu yöntem, türünde `CComEnumOnSTL`bir nesne oluşturarak, onu geçerli nesne tarafından kullanılan aynı koleksiyon ve yineleyici ile başlatarak ve yeni oluşturulan nesne üzerinde arabirimini döndürerek **kopyalama** yönteminin uygulanmasını sağlar.
 
 ```
 STDMETHOD(Clone)(Base** ppEnum);
@@ -131,15 +131,15 @@ STDMETHOD(Clone)(Base** ppEnum);
 ### <a name="parameters"></a>Parametreler
 
 *ppEnum*<br/>
-[out] Yeni oluşturulan bir nesneye Numaralandırıcı arabirimde geçerli Numaralandırıcının kopyalandı.
+dışı Geçerli numaralandırıcıdan kopyalanmış yeni oluşturulan nesne üzerindeki Numaralandırıcı arabirimi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT değerini.
+Standart bir HRESULT değeri.
 
-##  <a name="m_spunk"></a>  IEnumOnSTLImpl::m_spUnk
+##  <a name="m_spunk"></a>IEnumOnSTLImpl:: m_spUnk
 
-`IUnknown` İşaretçi koleksiyonu sağlayan nesne.
+Koleksiyonu sağlayan nesnenin işaretçisi. `IUnknown`
 
 ```
 CComPtr<IUnknown> m_spUnk;
@@ -147,11 +147,11 @@ CComPtr<IUnknown> m_spUnk;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu akıllı işaretçi geçirilen nesne üzerinde bir başvuru tutan [IEnumOnSTLImpl::Init](#init), bu Numaralandırıcının yaşam süresi boyunca Canlı çalışmayı sürdürdüğünden emin olma.
+Bu akıllı işaretçi, [IEnumOnSTLImpl:: Init](#init)öğesine geçirilen nesne üzerinde bir başvuru tutar ve bu, Numaralandırıcının ömrü boyunca canlı kalmasını sağlar.
 
-##  <a name="m_pcollection"></a>  IEnumOnSTLImpl::m_pcollection
+##  <a name="m_pcollection"></a>IEnumOnSTLImpl:: m_pcollection
 
-Bu üye Numaralandırıcı arabiriminin uygulamasını yönlendiren veriler sağlayan koleksiyona işaret eder.
+Bu üye, Numaralandırıcı arabiriminin uygulamasını yönlendiren verileri sağlayan koleksiyona işaret eder.
 
 ```
 CollType* m_pcollection;
@@ -159,19 +159,19 @@ CollType* m_pcollection;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye yapılan bir çağrıyla başlatılır [IEnumOnSTLImpl::Init](#init).
+Bu üye bir [IEnumOnSTLImpl:: Init](#init)çağrısıyla başlatılır.
 
-##  <a name="m_iter"></a>  IEnumOnSTLImpl::m_iter
+##  <a name="m_iter"></a>IEnumOnSTLImpl:: m_iter
 
-Bu üye, koleksiyon içindeki geçerli konumu işaretlemek ve sonraki öğelerde gezinmek için kullanılan yineleyici tutar.
+Bu üye, koleksiyon içindeki geçerli konumu işaretlemek için kullanılan yineleyiciyi barındırır ve sonraki öğelere gider.
 
 ```
 CollType::iterator m_iter;
 ```
 
-##  <a name="next"></a>  IEnumOnSTLImpl::Next
+##  <a name="next"></a>IEnumOnSTLImpl:: Next
 
-Bu yöntem uygulamasını sağlar **sonraki** yöntemi.
+Bu yöntem, **Next** yönteminin uygulanmasını sağlar.
 
 ```
 STDMETHOD(Next)(
@@ -183,21 +183,21 @@ STDMETHOD(Next)(
 ### <a name="parameters"></a>Parametreler
 
 *celt*<br/>
-[in] İstenen öğe sayısı.
+'ndaki İstenen öğe sayısı.
 
 *rgelt*<br/>
-[out] Öğeleri ile doldurulacak dizisi.
+dışı Öğeleriyle doldurulacak dizi.
 
-*pceltFetched*<br/>
-[out] Gerçekte döndürülen öğe sayısını *rgelt*. Bu kısa *celt* az olursa *celt* öğeleri listesinde kalır.
+*Pceltfettiz*<br/>
+dışı Aslında *rgelt*'de döndürülen öğelerin sayısı. Bu, celt öğelerinden daha azı listede kalırsa bu değerden daha az olabilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT değerini.
+Standart bir HRESULT değeri.
 
-##  <a name="reset"></a>  IEnumOnSTLImpl::Reset
+##  <a name="reset"></a>IEnumOnSTLImpl:: Reset
 
-Bu yöntem uygulamasını sağlar **sıfırlama** yöntemi.
+Bu yöntem, **sıfırlama** yönteminin uygulanmasını sağlar.
 
 ```
 STDMETHOD(Reset)(void);
@@ -205,11 +205,11 @@ STDMETHOD(Reset)(void);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT değerini.
+Standart bir HRESULT değeri.
 
-##  <a name="skip"></a>  IEnumOnSTLImpl::Skip
+##  <a name="skip"></a>IEnumOnSTLImpl:: Skip
 
-Bu yöntem uygulamasını sağlar **atla** yöntemi.
+Bu yöntem, **Skip** yönteminin uygulanmasını sağlar.
 
 ```
 STDMETHOD(Skip)(ULONG celt);
@@ -218,12 +218,12 @@ STDMETHOD(Skip)(ULONG celt);
 ### <a name="parameters"></a>Parametreler
 
 *celt*<br/>
-[in] Geçilecek öğelerin sayısı.
+'ndaki Atlanacak öğe sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT değerini.
+Standart bir HRESULT değeri.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)
+[Sınıfa genel bakış](../../atl/atl-class-overview.md)

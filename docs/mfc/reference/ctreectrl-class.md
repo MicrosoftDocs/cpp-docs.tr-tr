@@ -1,5 +1,5 @@
 ---
-title: CTreeCtrl sınıfı
+title: Ctreeckclass sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CTreeCtrl
@@ -162,14 +162,14 @@ helpviewer_keywords:
 - CTreeCtrl [MFC], SortChildren
 - CTreeCtrl [MFC], SortChildrenCB
 ms.assetid: 96e20031-6161-4143-8c12-8d1816c66d90
-ms.openlocfilehash: 2428c94eaa5dd371d58680f6317173709f684507
-ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
+ms.openlocfilehash: 830c3b39e08252029933addde7d31ab84819b336
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66449559"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69502366"
 ---
-# <a name="ctreectrl-class"></a>CTreeCtrl sınıfı
+# <a name="ctreectrl-class"></a>Ctreeckclass sınıfı
 
 Windows ortak ağaç görünümü denetimi işlevlerini sağlar.
 
@@ -185,103 +185,103 @@ class CTreeCtrl : public CWnd
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CTreeCtrl::CTreeCtrl](#ctreectrl)|Oluşturur bir `CTreeCtrl` nesne.|
+|[Ctreeci:: Ctreeci](#ctreectrl)|Bir `CTreeCtrl` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CTreeCtrl::Create](#create)|Ağaç görünümü denetimi oluşturur ve ona bağlanan bir `CTreeCtrl` nesne.|
-|[CTreeCtrl::CreateDragImage](#createdragimage)|Belirtilen ağaç görünümü öğesi için sürükleme bir bit eşlem oluşturur.|
-|[CTreeCtrl::CreateEx](#createex)|Belirtilen Windows genişletilmiş stilleriyle bir ağaç denetimi oluşturur ve ona ekler bir `CTreeCtrl` nesne.|
-|[CTreeCtrl::DeleteAllItems](#deleteallitems)|Bir ağaç görünümü denetimindeki tüm öğelerini siler.|
-|[CTreeCtrl::DeleteItem](#deleteitem)|Ağaç görünümü denetiminde yeni bir öğe siler.|
-|[CTreeCtrl::EditLabel](#editlabel)|Bir belirtilen ağaç görünümü öğesi yerinde düzenler.|
-|[CTreeCtrl::EndEditLabelNow](#endeditlabelnow)|Bir ağaç görünümü öğenin geçerli ağaç görünümü denetimi etiketini düzenleme işlemi iptal eder.|
-|[CTreeCtrl::EnsureVisible](#ensurevisible)|Ağaç görünümü öğesi kendi ağaç görünümü denetiminde görünür olmasını sağlar.|
-|[CTreeCtrl::Expand](#expand)|Genişletir veya daraltır, belirtilen ağaç görünümü öğenin alt öğeleri.|
-|[CTreeCtrl::GetBkColor](#getbkcolor)|Geçerli denetimin arka plan rengini alır.|
-|[CTreeCtrl::GetCheck](#getcheck)|Ağaç denetim öğesi onay durumunu alır.|
-|[CTreeCtrl::GetChildItem](#getchilditem)|Belirtilen ağaç görünümü öğesi alt öğe alır.|
-|[CTreeCtrl::GetCount](#getcount)|Bir ağaç görünümü denetimiyle ilişkili ağaç öğe sayısını alır.|
-|[CTreeCtrl::GetDropHilightItem](#getdrophilightitem)|Bir Sürükle ve bırak işleminin hedef alır.|
-|[CTreeCtrl::GetEditControl](#geteditcontrol)|Belirtilen ağaç görünümü öğesini düzenlemek için kullanılan düzenleme denetimi tanıtıcısını alır.|
-|[CTreeCtrl::GetExtendedStyle](#getextendedstyle)|Geçerli ağaç görünümü denetimi kullanarak genişletilmiş stiller alır.|
-|[CTreeCtrl::GetFirstVisibleItem](#getfirstvisibleitem)|Belirtilen ağaç görünümü öğe ilk görünür öğesini alır.|
-|[CTreeCtrl::GetImageList](#getimagelist)|Bir ağaç görünümü denetimiyle ilişkili görüntü listesini tanıtıcısını alır.|
-|[CTreeCtrl::GetIndent](#getindent)|(Piksel cinsinden) uzaklığı bir ağaç görünümü öğesi üst öğesinden alır.|
-|[CTreeCtrl::GetInsertMarkColor](#getinsertmarkcolor)|Ağaç görünümü için ekleme işareti çizmek için kullanılan rengi alır.|
-|[CTreeCtrl::GetItem](#getitem)|Belirtilen ağaç görünümü öğesi özniteliklerini alır.|
-|[CTreeCtrl::GetItemData](#getitemdata)|Bir öğeyle ilişkili 32-bit uygulamaya özgü değeri döndürür.|
-|[CTreeCtrl::GetItemExpandedImageIndex](#getitemexpandedimageindex)|Görüntüyü belirtilen öğe geçerli ağaç görünümü denetiminin genişletilmiş durumdayken dizinini alır.|
-|[CTreeCtrl::GetItemHeight](#getitemheight)|Ağaç görünümü öğeleri geçerli yüksekliğini alır.|
-|[CTreeCtrl::GetItemImage](#getitemimage)|Bir öğeyle ilişkili görüntü alır.|
-|[CTreeCtrl::GetItemPartRect](#getitempartrect)|Geçerli ağaç görünümü denetiminde belirtilen öğe belirtilen bir parçası için sınırlayıcı dikdörtgeni alır.|
-|[CTreeCtrl::GetItemRect](#getitemrect)|Ağaç görünümü öğesi sınırlayıcı dikdörtgenini alır.|
-|[CTreeCtrl::GetItemState](#getitemstate)|Bir öğenin durumunu döndürür.|
-|[CTreeCtrl::GetItemStateEx](#getitemstateex)|Belirtilen öğe geçerli ağaç görünümü denetiminde genişletilmiş durumunu alır.|
-|[CTreeCtrl::GetItemText](#getitemtext)|Bir öğenin metni döndürür.|
-|[CTreeCtrl::GetLastVisibleItem](#getlastvisibleitem)|Geçerli ağaç görünümü denetiminde genişletilmiş son öğeyi alır.|
-|[CTreeCtrl::GetLineColor](#getlinecolor)|Ağaç görünümü denetiminin geçerli çizgi rengini alır.|
-|[CTreeCtrl::GetNextItem](#getnextitem)|Belirtilen bir ilişki eşleşen sonraki ağaç görünümü öğesi alır.|
-|[CTreeCtrl::GetNextSiblingItem](#getnextsiblingitem)|Belirtilen ağaç görünümü öğesi sonraki eşdüzey alır.|
-|[CTreeCtrl::GetNextVisibleItem](#getnextvisibleitem)|Belirtilen ağaç görünümü öğesi görünür sonraki öğeyi alır.|
-|[CTreeCtrl::GetParentItem](#getparentitem)|Belirtilen ağaç görünümü öğesi üst öğesini alır.|
-|[CTreeCtrl::GetPrevSiblingItem](#getprevsiblingitem)|Önceki eşdüzey belirtilen ağaç görünümü öğesi alır.|
-|[CTreeCtrl::GetPrevVisibleItem](#getprevvisibleitem)|Belirtilen ağaç görünümü öğesi görünür önceki öğeyi alır.|
-|[CTreeCtrl::GetRootItem](#getrootitem)|Belirtilen ağaç görünümü öğesi kökünü alır.|
-|[CTreeCtrl::GetScrollTime](#getscrolltime)|Ağaç görünümü denetiminin maksimum kaydırma saatini alır.|
-|[CTreeCtrl::GetSelectedCount](#getselectedcount)|Geçerli ağaç görünümü denetiminde seçili öğe sayısını alır.|
-|[CTreeCtrl::GetSelectedItem](#getselecteditem)|Şu anda seçili ağaç görünümü öğesi alır.|
-|[CTreeCtrl::GetTextColor](#gettextcolor)|Denetimin geçerli metin rengini alır.|
-|[CTreeCtrl::GetToolTips](#gettooltips)|Alt ağaç görünümü denetimi tarafından kullanılan araç ipucu denetimi tanıtıcısını alır.|
-|[CTreeCtrl::GetVisibleCount](#getvisiblecount)|Bir ağaç görünümü denetimiyle ilişkili görünür ağaç öğe sayısını alır.|
-|[CTreeCtrl::HitTest](#hittest)|İlişkili imleci geçerli konumunu döndürür `CTreeCtrl` nesne.|
-|[CTreeCtrl::InsertItem](#insertitem)|Bir ağaç görünümü denetiminde yeni bir öğe ekler.|
-|[CTreeCtrl::ItemHasChildren](#itemhaschildren)|Belirtilen öğenin alt öğeleri varsa sıfır döndürür.|
-|[CTreeCtrl::MapAccIdToItem](#mapaccidtoitem)|Belirtilen erişilebilirlik tanımlayıcı tanıtıcısı geçerli ağaç görünümü denetimindeki ağaç görünümü öğesine eşlenir.|
-|[CTreeCtrl::MapItemToAccID](#mapitemtoaccid)|Geçerli ağaç görünümü denetimi erişilebilirlik tanımlayıcı için bir ağaç görünümü öğesinde belirtilen tanıtıcı eşlenir.|
-|[CTreeCtrl::Select](#select)|Seçer, görünüme gelene veya belirtilen ağaç görünümü öğesi yeniden çizer.|
-|[CTreeCtrl::SelectDropTarget](#selectdroptarget)|Ağaç öğesi, bir Sürükle ve bırak işlemi hedefi olarak yeniden çizer.|
-|[CTreeCtrl::SelectItem](#selectitem)|Belirtilen ağaç görünümü öğeyi seçer.|
-|[CTreeCtrl::SelectSetFirstVisible](#selectsetfirstvisible)|Belirtilen ağaç görünümü öğe ilk görünür öğesi olarak seçer.|
-|[CTreeCtrl::SetAutoscrollInfo](#setautoscrollinfo)|Geçerli ağaç görünümü denetimi otomatik kaydırma oranını belirler.|
-|[CTreeCtrl::SetBkColor](#setbkcolor)|Denetimin arka plan rengini ayarlar.|
-|[CTreeCtrl::SetCheck](#setcheck)|Ağaç denetim öğesi onay durumunu ayarlar.|
-|[CTreeCtrl::SetExtendedStyle](#setextendedstyle)|Geçerli ağaç görünümü denetimi için genişletilmiş stiller ayarlar.|
-|[CTreeCtrl::SetImageList](#setimagelist)|Bir ağaç görünümü denetimiyle ilişkili görüntü listesini tanıtıcısını ayarlar.|
-|[CTreeCtrl::SetIndent](#setindent)|Üst öğesinden uzaklığı bir ağaç görünümü öğesi (piksel cinsinden) ayarlar.|
-|[CTreeCtrl::SetInsertMark](#setinsertmark)|Bir ağaç görünümü denetiminde ekleme işareti ayarlar.|
-|[CTreeCtrl::SetInsertMarkColor](#setinsertmarkcolor)|Ağaç görünümü için ekleme işareti çizmek için kullanılan rengi belirler.|
-|[CTreeCtrl::SetItem](#setitem)|Belirtilen ağaç görünümü öğesi özniteliklerini ayarlar.|
-|[CTreeCtrl::SetItemData](#setitemdata)|Bir öğeyle ilişkili 32-bit uygulamaya özgü değeri ayarlar.|
-|[CTreeCtrl::SetItemExpandedImageIndex](#setitemexpandedimageindex)|Görüntüyü belirtilen öğe geçerli ağaç görünümü denetiminin genişletilmiş durumdayken dizinini ayarlar.|
-|[CTreeCtrl::SetItemHeight](#setitemheight)|Ağaç yüksekliğini görünüm öğeleri ayarlar.|
-|[CTreeCtrl::SetItemImage](#setitemimage)|Görüntüleri bir öğesiyle ilişkilendirir.|
-|[CTreeCtrl::SetItemState](#setitemstate)|Bir öğenin durumunu ayarlar.|
-|[CTreeCtrl::SetItemStateEx](#setitemstateex)|Geçerli ağaç görünümü denetiminde genişletilmiş belirtilen öğenin durumunu ayarlar.|
-|[CTreeCtrl::SetItemText](#setitemtext)|Bir öğenin metnini ayarlar.|
-|[CTreeCtrl::SetLineColor](#setlinecolor)|Geçerli ağaç görünümü denetiminin çizgi rengini ayarlar.|
-|[CTreeCtrl::SetScrollTime](#setscrolltime)|Ağaç görünümü denetiminin maksimum kaydırma saatini ayarlar.|
-|[CTreeCtrl::SetTextColor](#settextcolor)|Denetimin metin rengini belirler.|
-|[CTreeCtrl::SetToolTips](#settooltips)|Bir ağaç görünümü denetiminin alt araç ipucu denetimi ayarlar.|
-|[CTreeCtrl::ShowInfoTip](#showinfotip)|Bilgi İpucu belirtilen öğe için geçerli bir ağaç görünümü denetiminde gösterir.|
-|[CTreeCtrl::SortChildren](#sortchildren)|Sağlanan üst öğesinin alt öğeleri sıralar.|
-|[CTreeCtrl::SortChildrenCB](#sortchildrencb)|Uygulama tanımlı sıralama işlevini kullanarak belirli bir üst öğenin alt öğeleri sıralar.|
+|[Ctreeci:: Create](#create)|Bir ağaç görünümü denetimi oluşturur ve bunu bir `CTreeCtrl` nesneye ekler.|
+|[Ctreeci:: CreateDragImage](#createdragimage)|Belirtilen ağaç görünümü öğesi için bir sürükle bit eşlemi oluşturur.|
+|[Ctreeci:: CreateEx](#createex)|Belirtilen Windows genişletilmiş stilleriyle bir ağaç denetimi oluşturur ve bunu bir `CTreeCtrl` nesneye ekler.|
+|[Ctreeci::D Eleteallıtems](#deleteallitems)|Ağaç görünümü denetimindeki tüm öğeleri siler.|
+|[Ctreeci::D Eleteıtem](#deleteitem)|Ağaç görünümü denetimindeki yeni bir öğeyi siler.|
+|[Ctreeck:: EditLabel](#editlabel)|Belirtilen ağaç görünümü öğesini yerinde düzenler.|
+|[Ctreeci:: EndEditLabelNow](#endeditlabelnow)|Geçerli ağaç görünümü denetimindeki ağaç görünümü öğesinin etiketinde düzenleme işlemini iptal eder.|
+|[Ctreeci:: EnsureVisible](#ensurevisible)|Ağaç görünümü öğesinin ağaç görünümü denetiminde görünür olmasını sağlar.|
+|[Ctreecu:: Expand](#expand)|Belirtilen ağaç görünümü öğesinin alt öğelerini genişletir veya daraltır.|
+|[Ctreeci:: GetBkColor](#getbkcolor)|Denetimin geçerli arka plan rengini alır.|
+|[Ctreeci:: GetCheck](#getcheck)|Ağaç Denetim öğesinin denetim durumunu alır.|
+|[Ctreeci:: GetChildItem](#getchilditem)|Belirtilen ağaç görünümü öğesinin alt öğesini alır.|
+|[Ctreeci:: GetCount](#getcount)|Bir ağaç görünümü denetimiyle ilişkili ağaç öğesi sayısını alır.|
+|[Ctreeci:: Getdrophıghtıtem](#getdrophilightitem)|Bir sürükle ve bırak işleminin hedefini alır.|
+|[Ctreeci:: GetEditControl](#geteditcontrol)|Belirtilen ağaç görünümü öğesini düzenlemek için kullanılan düzenleme denetiminin tanıtıcısını alır.|
+|[Ctreecl:: Gebir Dedstyle](#getextendedstyle)|Geçerli ağaç görünümü denetiminin kullandığı Genişletilmiş stilleri alır.|
+|[Ctreeci:: GetFirstVisibleItem](#getfirstvisibleitem)|Belirtilen ağaç görünümü öğesinin ilk görünür öğesini alır.|
+|[Ctreeci:: GetImageList](#getimagelist)|Ağaç görünümü denetimiyle ilişkili görüntü listesinin tanıtıcısını alır.|
+|[Ctreeci:: Getgirintile](#getindent)|Üst öğesinden bir ağaç görünümü öğesinin sapmasını (piksel cinsinden) alır.|
+|[Ctreeci:: GetInsertMarkColor](#getinsertmarkcolor)|Ağaç görünümünün ekleme işaretini çizmek için kullanılan rengi alır.|
+|[Ctreeci:: GetItem](#getitem)|Belirtilen ağaç görünümü öğesinin özniteliklerini alır.|
+|[Ctreeci:: GetItemData](#getitemdata)|Bir öğeyle ilişkili 32 bitlik uygulamaya özgü değeri döndürür.|
+|[Ctreeci:: GetItemExpandedImageIndex](#getitemexpandedimageindex)|Geçerli ağaç görünümü denetiminin belirtilen öğesi genişletilmiş durumdaysa görüntülenecek görüntünün dizinini alır.|
+|[Ctreeci:: GetItemHeight](#getitemheight)|Ağaç görünümü öğelerinin geçerli yüksekliğini alır.|
+|[Ctreecımpl:: GetItemImage](#getitemimage)|Bir öğeyle ilişkili görüntüleri alır.|
+|[Ctreeci:: GetItemPartRect](#getitempartrect)|Geçerli ağaç görünümü denetimindeki belirtilen öğenin belirtilen bir bölümü için sınırlayıcı dikdörtgeni alır.|
+|[Ctreeci:: GetItemRect](#getitemrect)|Ağaç görünümü öğesinin sınırlayıcı dikdörtgenini alır.|
+|[Ctreeci:: GetItemState](#getitemstate)|Bir öğenin durumunu döndürür.|
+|[Ctreeci:: Getıtemstateex](#getitemstateex)|Geçerli ağaç görünümü denetiminde belirtilen öğenin genişletilmiş durumunu alır.|
+|[Ctreeci:: GetItemText](#getitemtext)|Bir öğenin metnini döndürür.|
+|[Ctreeci:: Getlastvisibleıtem](#getlastvisibleitem)|Geçerli ağaç görünümü denetimindeki son genişletilmiş öğeyi alır.|
+|[Ctreeci:: GetLineColor](#getlinecolor)|Ağaç görünümü denetimi için geçerli çizgi rengini alır.|
+|[Ctreeci:: GetNextItem](#getnextitem)|Belirtilen ilişkiyle eşleşen bir sonraki ağaç görünümü öğesini alır.|
+|[Ctreeci:: GetNextSiblingItem](#getnextsiblingitem)|Belirtilen ağaç görünümü öğesinin bir sonraki eşdüzey öğesini alır.|
+|[Ctreeci:: GetNextVisibleItem](#getnextvisibleitem)|Belirtilen ağaç görünümü öğesinin bir sonraki görünür öğesini alır.|
+|[Ctreecı:: Getparentidıtem](#getparentitem)|Belirtilen ağaç görünümü öğesinin üst öğesini alır.|
+|[Ctreeci:: GetPrevSiblingItem](#getprevsiblingitem)|Belirtilen ağaç görünümü öğesinin önceki eşdüzey öğesini alır.|
+|[Ctreeci:: GetPrevVisibleItem](#getprevvisibleitem)|Belirtilen ağaç görünümü öğesinin önceki görünür öğesini alır.|
+|[Ctreeci:: GetRootItem](#getrootitem)|Belirtilen ağaç görünümü öğesinin kökünü alır.|
+|[Ctreeci:: GetScrollTime](#getscrolltime)|Ağaç görünümü denetimi için maksimum kaydırma süresini alır.|
+|[Ctreeci:: GetSelectedCount](#getselectedcount)|Geçerli ağaç görünümü denetimindeki seçili öğelerin sayısını alır.|
+|[Ctreeci:: Getselectedidıtem](#getselecteditem)|Şu anda seçili olan ağaç görünümü öğesini alır.|
+|[Ctreeci:: GetTextColor](#gettextcolor)|Denetimin geçerli metin rengini alır.|
+|[Ctreeci:: GetToolTip 'ler](#gettooltips)|Bir ağaç görünümü denetimi tarafından kullanılan alt araç Ipucu denetimine tanıtıcıyı alır.|
+|[Ctreeci:: GetVisibleCount](#getvisiblecount)|Ağaç görünümü denetimiyle ilişkili görünür ağaç öğesi sayısını alır.|
+|[Ctreeci:: HitTest](#hittest)|`CTreeCtrl` Nesneyle ilgili imlecin geçerli konumunu döndürür.|
+|[Ctreeci:: InsertItem](#insertitem)|Ağaç görünümü denetimine yeni bir öğe ekler.|
+|[Ctreeci:: ıtemhaschildren](#itemhaschildren)|Belirtilen öğenin alt öğeleri varsa sıfır olmayan bir değer döndürür.|
+|[Ctreeci:: Mapaccıdtoitem](#mapaccidtoitem)|Belirtilen erişilebilirlik tanımlayıcısını geçerli ağaç görünümü denetimindeki bir ağaç görünümü öğesine eşler.|
+|[Ctreecı:: MapItemToAccID](#mapitemtoaccid)|Belirtilen tanıtıcıyı geçerli ağaç görünümü denetimindeki bir ağaç görünümü öğesiyle bir erişilebilirlik tanımlayıcısı olarak eşleştirir.|
+|[Ctreecu:: Select](#select)|Belirtilen ağaç görünümü öğesini seçer, görüntüler halinde kaydırır veya yeniden çizer.|
+|[Ctreeci:: SelectDropTarget](#selectdroptarget)|Bir sürükle ve bırak işleminin hedefi olarak ağaç öğesini yeniden çizer.|
+|[Ctreeci:: SelectItem](#selectitem)|Belirtilen ağaç görünümü öğesini seçer.|
+|[Ctreeci:: SelectSetFirstVisible](#selectsetfirstvisible)|Belirtilen ağaç görünümü öğesini ilk görünür öğe olarak seçer.|
+|[Ctreeci:: Setautoscrollinınfo](#setautoscrollinfo)|Geçerli ağaç görünümü denetiminin otomatik kaydırma oranını ayarlar.|
+|[Ctreeci:: SetBkColor](#setbkcolor)|Denetimin arka plan rengini ayarlar.|
+|[Ctreeci:: SetCheck](#setcheck)|Ağaç Denetim öğesinin denetim durumunu ayarlar.|
+|[Ctreecl:: Sebir Dedstyle](#setextendedstyle)|Geçerli ağaç görünümü denetimi için Genişletilmiş stilleri ayarlar.|
+|[Ctreeci:: SetImageList](#setimagelist)|Ağaç görünümü denetimiyle ilişkili görüntü listesinin tanıtıcısını ayarlar.|
+|[Ctreeci:: Setgirintile](#setindent)|Üst öğesinden bir ağaç görünümü öğesinin sapmasını (piksel cinsinden) ayarlar.|
+|[Ctreeci:: Setınsertmark](#setinsertmark)|Bir ağaç görünümü denetimindeki ekleme işaretini ayarlar.|
+|[Ctreeci:: Setınsertmarkcolor](#setinsertmarkcolor)|Ağaç görünümünün ekleme işaretini çizmek için kullanılan rengi ayarlar.|
+|[Ctreeci:: SetItem](#setitem)|Belirtilen ağaç görünümü öğesinin özniteliklerini ayarlar.|
+|[Ctreeci:: SetItemData](#setitemdata)|Bir öğeyle ilişkili 32 bitlik uygulamaya özgü değeri ayarlar.|
+|[Ctreeci:: SetItemExpandedImageIndex](#setitemexpandedimageindex)|Geçerli ağaç görünümü denetiminin belirtilen öğesi genişletilmiş durumdaysa görüntülenecek görüntünün dizinini ayarlar.|
+|[Ctreeci:: SetItemHeight](#setitemheight)|Ağaç görünümü öğelerinin yüksekliğini ayarlar.|
+|[Ctreecımpl:: Setitemımage](#setitemimage)|Görüntüleri bir öğeyle ilişkilendirir.|
+|[Ctreeci:: SetItemState](#setitemstate)|Bir öğenin durumunu ayarlar.|
+|[Ctreeci:: Setıtemstateex](#setitemstateex)|Geçerli ağaç görünümü denetiminde belirtilen öğenin genişletilmiş durumunu ayarlar.|
+|[Ctreeci:: Setıtemtext](#setitemtext)|Bir öğenin metnini ayarlar.|
+|[Ctreeci:: SetLineColor](#setlinecolor)|Ağaç görünümü denetimi için geçerli çizgi rengini ayarlar.|
+|[Ctreeci:: SetScrollTime](#setscrolltime)|Ağaç görünümü denetimi için maksimum kaydırma süresini ayarlar.|
+|[Ctreeci:: SetTextColor](#settextcolor)|Denetimin metin rengini ayarlar.|
+|[Ctreeci:: SetToolTip 'ler](#settooltips)|Ağaç görünümü denetiminin alt araç Ipucu denetimini ayarlar.|
+|[Ctreeccu:: Showwinfotip](#showinfotip)|Geçerli ağaç görünümü denetiminde belirtilen öğe için bilgi ipucunu görüntüler.|
+|[Ctreecn:: SortChildren](#sortchildren)|Belirli bir üst öğenin alt öğelerini sıralar.|
+|[Ctreecm:: Sortchıldrencb](#sortchildrencb)|Uygulama tanımlı bir sıralama işlevi kullanarak belirli bir üst öğenin alt öğelerini sıralar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-"Ağaç görünümü denetimi" hiyerarşik bir dizin veya dosya ve dizinleri girişleri başlıkları bir belgede gibi öğeleri listesini görüntüleyen bir diskte bir penceredir. Her öğesi bir etiket ve isteğe bağlı bir bit eşlemli görüntü oluşur ve her bir öğe ile ilişkili alt öğeleri listesi olabilir. Kullanıcı, bir öğeye tıklayarak genişletin ve ilişkili listesini alt öğeleri Daralt.
+"Ağaç görünümü denetimi", bir belgedeki başlıklar, bir dizindeki girişler veya bir diskteki dosya ve dizinler gibi öğelerin hiyerarşik bir listesini görüntüleyen bir penceredir. Her öğe bir etiketten ve isteğe bağlı bir bit eşlenmiş görüntüden oluşur ve her öğe onunla ilişkili alt öğelerin bir listesine sahip olabilir. Bir öğeye tıklayarak Kullanıcı, ilişkili alt öğelerin listesini genişletebilir ve daraltabilir.
 
-Bu denetimi (ve bu nedenle `CTreeCtrl` sınıfı) ve üzeri yalnızca Windows 98 ve Windows NT sürüm 4 altında çalışan programlar için kullanılabilir.
+Bu denetim (ve bu nedenle `CTreeCtrl` sınıfı) yalnızca Windows 98 ve Windows NT sürüm 4 ve üzeri sürümlerde çalışan programlar için kullanılabilir.
 
-Kullanma hakkında daha fazla bilgi için `CTreeCtrl`, bkz:
+Kullanma `CTreeCtrl`hakkında daha fazla bilgi için bkz.:
 
 - [Denetimler](../../mfc/controls-mfc.md)
 
 - [CTreeCtrl Kullanma](../../mfc/using-ctreectrl.md)
 
-- [Ağaç görünümü denetimi başvuru](/windows/desktop/Controls/tree-view-control-reference) Windows SDK içinde.
+- Windows SDK [ağaç görünümü Denetim başvurusu](/windows/win32/Controls/tree-view-control-reference) .
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -295,11 +295,11 @@ Kullanma hakkında daha fazla bilgi için `CTreeCtrl`, bkz:
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxcmn.h
+**Üstbilgi:** afxcmn. h
 
-##  <a name="create"></a>  CTreeCtrl::Create
+##  <a name="create"></a>Ctreeci:: Create
 
-Ağaç denetimi bir iletişim kutusu şablonunda belirtirseniz veya kullanıyorsanız [CTreeView](../../mfc/reference/ctreeview-class.md), iletişim kutusu ya da Görünüm oluşturulduğunda, ağaç denetimi otomatik olarak oluşturulur.
+Ağaç denetimini bir iletişim kutusu şablonunda belirtirseniz veya [CTreeView](../../mfc/reference/ctreeview-class.md)kullanıyorsanız, iletişim kutusu veya görünüm oluşturulduğunda ağaç denetiminiz otomatik olarak oluşturulur.
 
 ```
 virtual BOOL Create(
@@ -312,36 +312,36 @@ virtual BOOL Create(
 ### <a name="parameters"></a>Parametreler
 
 *dwStyle*<br/>
-Ağaç görünümü denetiminin stilini belirtir. Pencere stilleri açıklanan, geçerli [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa)ve herhangi bir birleşimini [ağaç görünümü denetimi stilleri](/windows/desktop/Controls/tree-view-control-window-styles) Windows SDK içinde açıklandığı gibi.
+Ağaç görünümü denetiminin stilini belirtir. [CreateWindow](/windows/win32/api/winuser/nf-winuser-createwindoww)' de açıklanan pencere stillerini ve Windows SDK açıklanan [ağaç görünümü Denetim stillerinin](/windows/win32/Controls/tree-view-control-window-styles) birleşimini uygulayın.
 
 *Rect*<br/>
-Ağaç görünümü denetiminin boyutunu ve konumunu belirtir. Ya da olabilir bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısı.
+Ağaç görünümü denetiminin boyutunu ve konumunu belirtir. Bu, bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya bir [Rect](/previous-versions/dd162897\(v=vs.85\)) yapısı olabilir.
 
 *pParentWnd*<br/>
-Ağaç görünümü denetiminin üst penceresine, genellikle belirtir bir `CDialog`. NULL olmamalıdır.
+Ağaç görünümü denetiminin üst penceresini (genellikle a `CDialog`) belirtir. NULL olmaması gerekir.
 
-*nID*<br/>
-Ağaç görünümü denetiminin kimliğini belirtir.
+*NID*<br/>
+Ağaç görünümü denetiminin KIMLIĞINI belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başlatma başarılı olursa sıfır dışı; Aksi durumda 0.
+Başlatma başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ağaç denetimi başka bir pencere bir alt pencere olarak oluşturmak istediğiniz kullanırsanız `Create` üye işlevi. Ağaç denetimi kullanarak oluşturursanız `Create`, ek olarak diğer ağaç görünümü stilleri ws_vısıble, geçmelidir.
+Ağaç denetimini başka bir pencerenin alt penceresi olarak oluşturmak istiyorsanız `Create` üye işlevini kullanın. Öğesini kullanarak `Create`ağaç denetimini oluşturursanız, diğer ağaç görünümü stillerine ek olarak bunu WS_VISIBLE geçirmeniz gerekir.
 
-Oluşturmak bir `CTreeCtrl` iki adımda. İlk Oluşturucu, ardından çağrı `Create`, ağaç görünümü denetiminin oluşturur ve ona ekler `CTreeCtrl` nesne.
+İki adımda oluşturursunuz `CTreeCtrl` . Önce oluşturucuyu çağırın, sonra ağaç görünümü `Create`denetimini oluşturan ve bunu `CTreeCtrl` nesnesine bağlayan çağırın.
 
-Genişletilmiş pencere stilleri ile bir ağaç denetimi oluşturmak için arama [CreateEx](#createex) yerine `Create`.
+Genişletilmiş pencere stilleriyle bir ağaç denetimi oluşturmak için yerine `Create` [CreateEx](#createex) çağırın.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CTreeCtrl#1](../../mfc/reference/codesnippet/cpp/ctreectrl-class_1.cpp)]
 
-##  <a name="createex"></a>  CTreeCtrl::CreateEx
+##  <a name="createex"></a>Ctreeci:: CreateEx
 
-Bir denetim (alt pencere) oluşturma ve ilişkilendirmek için bu işlevi çağırın `CTreeCtrl` nesne.
+Bir denetim (alt pencere) oluşturmak ve `CTreeCtrl` nesneyle ilişkilendirmek için bu işlevi çağırın.
 
 ```
 virtual BOOL CreateEx(
@@ -355,31 +355,31 @@ virtual BOOL CreateEx(
 ### <a name="parameters"></a>Parametreler
 
 *dwExStyle*<br/>
-Oluşturulan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows stilleri bir listesi için bkz. *dwExStyle* parametresi için [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) Windows SDK.
+Oluşturulmakta olan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows stillerinin listesi için, Windows SDK için bkz. [CreateWindowEx](/windows/win32/api/winuser/nf-winuser-createwindowexw) Için *dwExStyle* parametresi.
 
 *dwStyle*<br/>
-Ağaç görünümü denetiminin stilini belirtir. Pencere stilleri açıklanan, geçerli [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa)ve herhangi bir birleşimini [ağaç görünümü denetimi stilleri](/windows/desktop/Controls/tree-view-control-window-styles) Windows SDK içinde açıklandığı gibi.
+Ağaç görünümü denetiminin stilini belirtir. [CreateWindow](/windows/win32/api/winuser/nf-winuser-createwindoww)' de açıklanan pencere stillerini ve Windows SDK açıklanan [ağaç görünümü Denetim stillerinin](/windows/win32/Controls/tree-view-control-window-styles) birleşimini uygulayın.
 
 *Rect*<br/>
-Bir başvuru bir [RECT](/previous-versions/dd162897\(v=vs.85\)) istemci koordinatları olarak oluşturulması için pencerenin konumunu ve boyutunu açıklayan yapısı *pParentWnd*.
+*PParentWnd*istemci koordinatları içinde oluşturulacak pencerenin boyutunu ve konumunu açıklayan bir [Rect](/previous-versions/dd162897\(v=vs.85\)) yapısına başvuru.
 
 *pParentWnd*<br/>
-Denetimin ana penceresine bir işaretçi.
+Denetimin üst öğesi olan pencerenin işaretçisi.
 
-*nID*<br/>
-Denetimin alt penceresi kimliği
+*NID*<br/>
+Denetimin alt pencere KIMLIĞI.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı Aksi durumda 0.
+Başarılı olursa sıfır değilse 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanım `CreateEx` yerine [Oluştur](#create) Windows genişletilmiş sitil önsöz tarafından belirtilen Genişletilmiş Windows stilleri uygulamak için **WS_EX_** .
+Windows `CreateEx` genişletilmiş stili önsöz **ws_ex_** tarafından belirtilen Genişletilmiş Windows stillerini uygulamak için [Create](#create) yerine kullanın.
 
-##  <a name="createdragimage"></a>  CTreeCtrl::CreateDragImage
+##  <a name="createdragimage"></a>Ctreeci:: CreateDragImage
 
-Bir ağaç görünümü denetiminde verilen öğe için sürükleme bit eşlem oluşturma, görüntü listesi için bit eşlem oluşturma ve bit eşlem görüntüsü listeye eklemek için bu işlevi çağırın.
+Bir ağaç görünümü denetiminde verilen öğe için bir sürükleme bit eşlemi oluşturmak, bit eşlem için bir görüntü listesi oluşturmak ve görüntü listesine bit eşlemi eklemek için bu işlevi çağırın.
 
 ```
 CImageList* CreateDragImage(HTREEITEM hItem);
@@ -388,31 +388,31 @@ CImageList* CreateDragImage(HTREEITEM hItem);
 ### <a name="parameters"></a>Parametreler
 
 *hItem*<br/>
-Ağaç öğesi sürüklenmesi için tanıtıcı.
+Sürüklenmekte olan ağaç öğesi tutamacı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sürükleme bit eşlem, başarılı olursa eklendiği bir görüntü listesi işaretçi; bulunmazsa null değerini DÖNDÜRÜR.
+Başarılı olursa sürükle bit eşlemin eklendiği görüntü listesine yönelik işaretçi; Aksi takdirde NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir uygulama, öğeyi sürüklediğinizde resim görüntülemek için resim listesi işlevleri kullanır.
+Bir uygulama, öğe sürüklenirken görüntüyü göstermek için görüntü listesi işlevlerini kullanır.
 
-`CImageList` Nesne kalıcıdır ve bittiğinde silmeniz gerekir. Örneğin:
+`CImageList` Nesne kalıcıdır ve tamamlandığında silmeniz gerekir. Örneğin:
 
 [!code-cpp[NVC_MFC_CTreeCtrl#2](../../mfc/reference/codesnippet/cpp/ctreectrl-class_2.cpp)]
 
-##  <a name="ctreectrl"></a>  CTreeCtrl::CTreeCtrl
+##  <a name="ctreectrl"></a>Ctreeci:: Ctreeci
 
-Oluşturur bir `CTreeCtrl` nesne.
+Bir `CTreeCtrl` nesnesi oluşturur.
 
 ```
 CTreeCtrl();
 ```
 
-##  <a name="deleteallitems"></a>  CTreeCtrl::DeleteAllItems
+##  <a name="deleteallitems"></a>Ctreeci::D Eleteallıtems
 
-Ağaç görünümü denetimi tüm öğeleri silmek için bu işlevi çağırın.
+Ağaç görünümü denetiminden tüm öğeleri silmek için bu işlevi çağırın.
 
 ```
 BOOL DeleteAllItems();
@@ -420,13 +420,13 @@ BOOL DeleteAllItems();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi durumda 0.
+Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CTreeCtrl#3](../../mfc/reference/codesnippet/cpp/ctreectrl-class_3.cpp)]
 
-##  <a name="deleteitem"></a>  CTreeCtrl::DeleteItem
+##  <a name="deleteitem"></a>Ctreeci::D Eleteıtem
 
 Ağaç görünümü denetiminden bir öğeyi silmek için bu işlevi çağırın.
 
@@ -437,19 +437,19 @@ BOOL DeleteItem(HTREEITEM hItem);
 ### <a name="parameters"></a>Parametreler
 
 *hItem*<br/>
-Ağaç öğesi, silinecek tanıtıcısı. Varsa *hitem* TVI_ROOT değerine sahip tüm öğeler ağaç görünümü denetimi silinir.
+Silinecek ağaç öğesi tutamacı. *Hitem* TVI_ROOT değeri içeriyorsa, tüm öğeler ağaç görünümü denetiminden silinir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi durumda 0.
+Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CTreeCtrl#4](../../mfc/reference/codesnippet/cpp/ctreectrl-class_4.cpp)]
 
-##  <a name="editlabel"></a>  CTreeCtrl::EditLabel
+##  <a name="editlabel"></a>Ctreeck:: EditLabel
 
-Belirtilen öğenin metninin yerinde düzenlemeye başlamak için bu işlevi çağırın.
+Belirtilen öğenin metninin yerinde düzenlenmesine başlamak için bu işlevi çağırın.
 
 ```
 CEdit* EditLabel(HTREEITEM hItem);
@@ -458,23 +458,23 @@ CEdit* EditLabel(HTREEITEM hItem);
 ### <a name="parameters"></a>Parametreler
 
 *hItem*<br/>
-Ağaç öğesi, düzenlenecek tanıtıcısı.
+Düzenlenecek ağaç öğesi tutamacı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, bir işaretçi `CEdit` öğe metnini düzenlemek için kullanılan nesne; Aksi takdirde NULL.
+Başarılı olursa, öğe metnini düzenlemek için `CEdit` kullanılan nesneye yönelik bir işaretçi; Aksi takdirde null.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Düzenleme metni içeren bir tek satırlı düzenleme denetimi ile öğe metninin değiştirilerek gerçekleştirilir.
+Düzenleme işlemi, öğenin metni metin içeren tek satırlık bir düzenleme denetimiyle değiştirilerek gerçekleştirilir.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CTreeCtrl#5](../../mfc/reference/codesnippet/cpp/ctreectrl-class_5.cpp)]
 
-##  <a name="endeditlabelnow"></a>  CTreeCtrl::EndEditLabelNow
+##  <a name="endeditlabelnow"></a>Ctreeci:: EndEditLabelNow
 
-Bir ağaç görünümü öğenin geçerli ağaç görünümü denetimi etiketini düzenleme işlemi sonlandırır.
+Geçerli ağaç görünümü denetimindeki ağaç görünümü öğesinin etiketinde düzenleme işlemini sonlanır.
 
 ```
 BOOL EndEditLabelNow(BOOL fCancelWithoutSave);
@@ -484,19 +484,19 @@ BOOL EndEditLabelNow(BOOL fCancelWithoutSave);
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*fCancelWithoutSave*|[in] Düzenleme işlemi ya da işlemi tamamlanırken önce değişiklikleri ağaç görünümü öğesine kaydetmek için FALSE tamamlanırken önce ağaç görünümü öğesi değişiklikleri atmak için TRUE.|
+|*fCancelWithoutSave*|'ndaki Düzenleme işlemini sonuçlanmadan önce ağaç görünümü öğesinde yapılan değişiklikleri atmak için TRUE, ya da işlemi gerçekleştirmeden önce ağaç görünümü öğesindeki değişiklikleri kaydetmek için FALSE.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.
+Bu yöntem başarılı olursa TRUE; Aksi takdirde, FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [TVM_ENDEDITLABELNOW](/windows/desktop/Controls/tvm-endeditlabelnow) Windows SDK'da açıklanan ileti.
+Bu yöntem, Windows SDK açıklanan [TVM_ENDEDITLABELNOW](/windows/win32/Controls/tvm-endeditlabelnow) iletisini gönderir.
 
-##  <a name="ensurevisible"></a>  CTreeCtrl::EnsureVisible
+##  <a name="ensurevisible"></a>Ctreeci:: EnsureVisible
 
-Ağaç görünümü öğesi görünür olduğundan emin olmak için bu işlevi çağırın.
+Bir ağaç görünümü öğesinin görünür olduğundan emin olmak için bu işlevi çağırın.
 
 ```
 BOOL EnsureVisible(HTREEITEM hItem);
@@ -505,23 +505,23 @@ BOOL EnsureVisible(HTREEITEM hItem);
 ### <a name="parameters"></a>Parametreler
 
 *hItem*<br/>
-Ağaç öğesi görünür yapılan tanıtıcısı.
+Görünür hale getirilen ağaç öğesi tutamacı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sistem belirtilen öğe görünür olduğundan emin olmak için ağaç görünümü denetimindeki öğeler kaydırılan varsa TRUE değerini döndürür. Aksi takdirde, dönüş değeri FALSE olur.
+Sistem, belirtilen öğenin görünür olduğundan emin olmak için ağaç görünümü denetimindeki öğeleri kaydıralıyorsa TRUE değerini döndürür. Aksi takdirde, dönüş değeri FALSE olur.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Gerekirse, işlev üst öğesi genişletir veya ağaç görünümü denetiminin öğesi görünür olması kaydırır.
+Gerekirse, işlev üst öğeyi genişletir veya ağaç görünümü denetimini öğe görünür olacak şekilde kaydırır.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CTreeCtrl#6](../../mfc/reference/codesnippet/cpp/ctreectrl-class_6.cpp)]
 
-##  <a name="expand"></a>  CTreeCtrl::Expand
+##  <a name="expand"></a>Ctreecu:: Expand
 
-İle sağlanan üst öğe, ilişkili varsa genişletin veya alt öğelerin listesini daraltmak için bu işlevi çağırın.
+Varsa alt öğelerin listesini genişletmek veya daraltmak için bu işlevi çağırın, varsa, belirtilen üst öğeyle ilişkili.
 
 ```
 BOOL Expand(
@@ -532,30 +532,30 @@ BOOL Expand(
 ### <a name="parameters"></a>Parametreler
 
 *hItem*<br/>
-Ağaç öğesi Genişletilmekte olan işleyici.
+Genişletilen ağaç öğesi tutamacı.
 
 *nCode*<br/>
-Gerçekleştirilecek eylemin türünü belirten bir bayrak. Bu bayrak, aşağıdaki değerlerden biri olabilir:
+Gerçekleştirilecek eylemin türünü belirten bayrak. Bu bayrak aşağıdaki değerlerden birine sahip olabilir:
 
-- TVE_COLLAPSE listesini daraltır.
+- TVE_COLLAPSE listeyi daraltır.
 
-- TVE_COLLAPSERESET listesini daraltır ve alt öğeleri kaldırır. TVIS_EXPANDEDONCE durum bayrağı sıfırlayın. Bu bayrak TVE_COLLAPSE bayrağıyla kullanılması gerekir.
+- TVE_COLLAPSERESET listeyi daraltır ve alt öğeleri kaldırır. TVIS_EXPANDEDONCE State bayrağı sıfırlandı. Bu bayrağın TVE_COLLAPSE bayrağıyla kullanılması gerekir.
 
-- TVE_EXPAND listeyi genişler.
+- TVE_EXPAND listeyi genişletir.
 
-- Şu anda genişletilen ya da şu anda daraltılmışsa genişlediğinden genişler TVE_TOGGLE listesini daraltır.
+- TVE_TOGGLE, zaten genişletilmişse listeyi daraltır veya şu anda daraltılmışsa genişletilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi durumda 0.
+Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [CTreeCtrl::EnsureVisible](#ensurevisible).
+  [Ctreeci:: EnsureVisible](#ensurevisible)örneğine bakın.
 
-##  <a name="getbkcolor"></a>  CTreeCtrl::GetBkColor
+##  <a name="getbkcolor"></a>Ctreeci:: GetBkColor
 
-Bu üye işlevi Win32 ileti davranışı uygulayan [TVM_GETBKCOLOR](/windows/desktop/Controls/tvm-getbkcolor)Windows SDK içinde açıklandığı gibi.
+Bu üye işlevi, Windows SDK açıklandığı gibi Win32 iletisinin [TVM_GETBKCOLOR](/windows/win32/Controls/tvm-getbkcolor)davranışını uygular.
 
 ```
 COLORREF GetBkColor() const;
@@ -563,15 +563,15 @@ COLORREF GetBkColor() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Denetim için geçerli pencere arka plan rengi temsil eden bir COLORREF değer. Bu değer -1 ise, denetimin sistem pencere rengi kullanıyor. Bu durumda, kullanabileceğiniz `::GetSysColor(COLOR_WINDOW)` denetimini kullanarak geçerli sistem renk alınamıyor.
+Denetimin geçerli pencere arka plan rengini temsil eden bir COLORREF değeri. Bu değer-1 ise, Denetim sistem pencere rengini kullanıyor. Bu durumda, denetimin kullandığı geçerli sistem `::GetSysColor(COLOR_WINDOW)` rengini almak için kullanabilirsiniz.
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [CTreeCtrl::SetTextColor](#settextcolor).
+  [Ctreeci:: SetTextColor](#settextcolor)örneğine bakın.
 
-##  <a name="getcheck"></a>  CTreeCtrl::GetCheck
+##  <a name="getcheck"></a>Ctreeci:: GetCheck
 
-Bir öğenin denetim durumunu almak için bu üye işlevini çağırın.
+Bir öğenin denetim durumunu almak için bu üye işlevi çağırın.
 
 ```
 BOOL GetCheck(HTREEITEM hItem) const;
@@ -580,19 +580,19 @@ BOOL GetCheck(HTREEITEM hItem) const;
 ### <a name="parameters"></a>Parametreler
 
 *hItem*<br/>
-HTREEITEM hakkında durum bilgileri almak için.
+Durum bilgilerinin alınacağı HTREEıTEM.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ağaç denetim öğesi denetlenir olursa sıfır dışı; Aksi durumda 0.
+Ağaç Denetim öğesi işaretlenirse sıfır dışı; Aksi takdirde 0.
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [CTreeCtrl::SetCheck](#setcheck).
+  [Ctreeci:: SetCheck](#setcheck)örneğine bakın.
 
-##  <a name="getchilditem"></a>  CTreeCtrl::GetChildItem
+##  <a name="getchilditem"></a>Ctreeci:: GetChildItem
 
-Ağaç almak için bu işlevi görünüm öğesi tarafından belirtilen öğenin alt çağrıdır *hItem*.
+*Hitem*tarafından belirtilen öğenin alt öğesi olan ağaç görünümü öğesini almak için bu işlevi çağırın.
 
 ```
 HTREEITEM GetChildItem(HTREEITEM hItem) const;
@@ -601,19 +601,19 @@ HTREEITEM GetChildItem(HTREEITEM hItem) const;
 ### <a name="parameters"></a>Parametreler
 
 *hItem*<br/>
-Ağaç öğesi işleyici.
+Ağaç öğesi tutamacı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa alt öğesi tanıtıcısı; bulunmazsa null değerini DÖNDÜRÜR.
+Başarılı olursa alt öğenin tanıtıcısı; Aksi takdirde NULL.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CTreeCtrl#7](../../mfc/reference/codesnippet/cpp/ctreectrl-class_7.cpp)]
 
-##  <a name="getcount"></a>  CTreeCtrl::GetCount
+##  <a name="getcount"></a>Ctreeci:: GetCount
 
-Ağaç görünümü denetiminde öğe sayısını almak için bu işlevi çağırın.
+Bir ağaç görünümü denetimindeki öğelerin sayısını almak için bu işlevi çağırın.
 
 ```
 UINT GetCount() const;
@@ -621,15 +621,15 @@ UINT GetCount() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ağaç görünümü denetiminde öğe sayısı.
+Ağaç görünümü denetimindeki öğelerin sayısı.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CTreeCtrl#8](../../mfc/reference/codesnippet/cpp/ctreectrl-class_8.cpp)]
 
-##  <a name="getdrophilightitem"></a>  CTreeCtrl::GetDropHilightItem
+##  <a name="getdrophilightitem"></a>Ctreeci:: Getdrophıghtıtem
 
-Bir Sürükle ve bırak işleminin hedefi öğesini almak için bu işlevi çağırın.
+Bir sürükle ve bırak işleminin hedefi olan öğeyi almak için bu işlevi çağırın.
 
 ```
 HTREEITEM GetDropHilightItem() const;
@@ -637,15 +637,15 @@ HTREEITEM GetDropHilightItem() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa bırakılan öğe tanıtıcısı; bulunmazsa null değerini DÖNDÜRÜR.
+Başarılı olursa, öğe için Atlanan tanıtıcı; Aksi takdirde NULL.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CTreeCtrl#9](../../mfc/reference/codesnippet/cpp/ctreectrl-class_9.cpp)]
 
-##  <a name="geteditcontrol"></a>  CTreeCtrl::GetEditControl
+##  <a name="geteditcontrol"></a>Ctreeci:: GetEditControl
 
-Bir ağaç görünümü öğenin metni düzenlemek için kullanılan düzenleme denetimi tanıtıcısını almak için bu işlevi çağırın.
+Bir ağaç görünümü öğesinin metnini düzenlemek için kullanılan düzenleme denetiminin tanıtıcısını almak için bu işlevi çağırın.
 
 ```
 CEdit* GetEditControl() const;
@@ -653,15 +653,15 @@ CEdit* GetEditControl() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Düzenleme denetimi başarılı olursa öğesi metni düzenlemek için kullanılan bir işaretçi; bulunmazsa null değerini DÖNDÜRÜR.
+Öğe metnini düzenlemek için kullanılan düzenleme denetimine yönelik bir işaretçi, başarılı olursa. Aksi takdirde NULL.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CTreeCtrl#10](../../mfc/reference/codesnippet/cpp/ctreectrl-class_10.cpp)]
 
-##  <a name="getextendedstyle"></a>  CTreeCtrl::GetExtendedStyle
+##  <a name="getextendedstyle"></a>Ctreecl:: Gebir Dedstyle
 
-Geçerli ağaç görünümü denetimi kullanarak genişletilmiş stiller alır.
+Geçerli ağaç görünümü denetiminin kullandığı Genişletilmiş stilleri alır.
 
 ```
 DWORD GetExtendedStyle() const;
@@ -669,13 +669,13 @@ DWORD GetExtendedStyle() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli ağaç görünümü denetimi bit düzeyinde birleşimi (veya) içeren bir değer genişletilmiş stiller. Daha fazla bilgi için [ağaç görünümü denetimi genişletilmiş stiller](/windows/desktop/Controls/tree-view-control-window-extended-styles).
+Geçerli ağaç görünümü denetiminin genişletilmiş stillerinin bit düzeyinde birleşimini (veya) içeren bir değer. Daha fazla bilgi için bkz. [ağaç görünümü denetimi genişletilmiş stilleri](/windows/win32/Controls/tree-view-control-window-extended-styles).
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [TVM_GETEXTENDEDSTYLE](/windows/desktop/Controls/tvm-getextendedstyle) Windows SDK'da açıklanan ileti.
+Bu yöntem, Windows SDK açıklanan [TVM_GETEXTENDEDSTYLE](/windows/win32/Controls/tvm-getextendedstyle) iletisini gönderir.
 
-##  <a name="getfirstvisibleitem"></a>  CTreeCtrl::GetFirstVisibleItem
+##  <a name="getfirstvisibleitem"></a>Ctreeci:: GetFirstVisibleItem
 
 Ağaç görünümü denetiminin ilk görünür öğesini almak için bu işlevi çağırın.
 
@@ -685,15 +685,15 @@ HTREEITEM GetFirstVisibleItem() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Görünen ilk öğenin tanıtıcısı; bulunmazsa null değerini DÖNDÜRÜR.
+İlk görünür öğenin tutamacı; Aksi takdirde NULL.
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [CTreeCtrl::SetCheck](#setcheck).
+  [Ctreeci:: SetCheck](#setcheck)örneğine bakın.
 
-##  <a name="getimagelist"></a>  CTreeCtrl::GetImageList
+##  <a name="getimagelist"></a>Ctreeci:: GetImageList
 
-Normal tanıtıcısı veya ağaç görünümü denetimiyle ilgili durum görüntü listesini almak için bu işlevi çağırın.
+Ağaç görünümü denetimiyle ilişkili normal veya durum görüntüsü listesinin tanıtıcısını almak için bu işlevi çağırın.
 
 ```
 CImageList* GetImageList(UINT nImageList) const;
@@ -701,30 +701,30 @@ CImageList* GetImageList(UINT nImageList) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*nImageList*<br/>
-Almak üzere görüntü listesinin türü. Görüntü listesi aşağıdaki değerlerden biri olabilir:
+*Nımagelist*<br/>
+Alınacak görüntü listesinin türü. Görüntü listesi aşağıdaki değerlerden biri olabilir:
 
-- TVSIL_NORMAL ağaç görünümü öğesi için seçili ve nonselected görüntüleri içeren normal görüntü listesi alır.
+- TVSIL_NORMAL, ağaç görünümü öğesi için seçilen ve seçili olmayan görüntüleri içeren normal görüntü listesini alır.
 
-- TVSIL_STATE kullanıcı tanımlı bir durumda olan ağaç görünümü öğe için görüntüleri içeren durumu görüntü listesini alır.
+- TVSIL_STATE, Kullanıcı tanımlı durumda olan ağaç görünümü öğelerinin görüntülerini içeren durum görüntüsü listesini alır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşaretçi denetimin görüntü listesine başarılıysa; bulunmazsa null değerini DÖNDÜRÜR.
+Başarılı olursa denetimin görüntü listesine yönelik işaretçi; Aksi takdirde NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Her öğe bir ağaç görünümü denetiminde ilişkili bit eşlemli görüntülerin çifti olabilir. Bir görüntü öğesi seçilir ve diğer öğe seçilmediğinde görüntülendiğinde görüntülenir. Örneğin, yok seçildiğinde bir öğe seçildiğinde bir klasör Aç ve kapalı klasör görüntülenebilir.
+Ağaç görünümü denetimindeki her öğe ile ilişkili bir çift bit eşlenmiş görüntü olabilir. Öğe seçildiğinde bir görüntü görüntülenir ve öğe seçilmediğinde diğeri görüntülenir. Örneğin, bir öğe seçildiğinde açık bir klasör ve seçili olmadığında kapalı bir klasör görüntülenebilir.
 
-Görüntü listeleri hakkında daha fazla bilgi için bkz. [Cımagelist](../../mfc/reference/cimagelist-class.md) sınıfı.
+Görüntü listeleri hakkında daha fazla bilgi için bkz. [CImageList](../../mfc/reference/cimagelist-class.md) sınıfı.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CTreeCtrl#11](../../mfc/reference/codesnippet/cpp/ctreectrl-class_11.cpp)]
 
-##  <a name="getindent"></a>  CTreeCtrl::GetIndent
+##  <a name="getindent"></a>Ctreeci:: Getgirintile
 
-Miktarını piksel cinsinden o alt öğeleri üst öğelerin göreli olarak girintilenir almak için bu işlevi çağırın.
+Alt öğelerin üst öğelerine göre girintileneceği miktarı piksel cinsinden almak için bu işlevi çağırın.
 
 ```
 UINT GetIndent() const;
@@ -732,15 +732,15 @@ UINT GetIndent() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Girinti miktarını piksel cinsinden ölçülür.
+Piksel cinsinden ölçülen girintileme miktarı.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CTreeCtrl#12](../../mfc/reference/codesnippet/cpp/ctreectrl-class_12.cpp)]
 
-##  <a name="getinsertmarkcolor"></a>  CTreeCtrl::GetInsertMarkColor
+##  <a name="getinsertmarkcolor"></a>Ctreeci:: GetInsertMarkColor
 
-Bu üye işlevi Win32 ileti davranışı uygulayan [TVM_GETINSERTMARKCOLOR](/windows/desktop/Controls/tvm-getinsertmarkcolor)Windows SDK içinde açıklandığı gibi.
+Bu üye işlevi, Windows SDK açıklandığı gibi Win32 iletisinin [TVM_GETINSERTMARKCOLOR](/windows/win32/Controls/tvm-getinsertmarkcolor)davranışını uygular.
 
 ```
 COLORREF GetInsertMarkColor() const;
@@ -748,15 +748,15 @@ COLORREF GetInsertMarkColor() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli ekleme işareti rengi içeren COLORREF değeri.
+Geçerli ekleme işareti rengini içeren bir COLORREF değeri.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CTreeCtrl#13](../../mfc/reference/codesnippet/cpp/ctreectrl-class_13.cpp)]
 
-##  <a name="getitem"></a>  CTreeCtrl::GetItem
+##  <a name="getitem"></a>Ctreeci:: GetItem
 
-Belirtilen ağaç görünümü öğenin öznitelikleri almak için bu işlevi çağırın.
+Belirtilen ağaç görünümü öğesinin özniteliklerini almak için bu işlevi çağırın.
 
 ```
 BOOL GetItem(TVITEM* pItem) const;
@@ -765,19 +765,19 @@ BOOL GetItem(TVITEM* pItem) const;
 ### <a name="parameters"></a>Parametreler
 
 *pItem*<br/>
-Bir işaretçi bir [TVITEM](/windows/desktop/api/commctrl/ns-commctrl-tagtvitema) Windows SDK içinde anlatıldığı gibi yapılandırın.
+Windows SDK açıklanan şekilde, [Tvidıtem](/windows/win32/api/commctrl/ns-commctrl-tvitemw) yapısına yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi durumda 0.
+Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [CTreeCtrl::DeleteItem](#deleteitem).
+  [Ctreeci::D eleteItem](#deleteitem)örneğine bakın.
 
-##  <a name="getitemdata"></a>  CTreeCtrl::GetItemData
+##  <a name="getitemdata"></a>Ctreeci:: GetItemData
 
-Belirtilen öğe ile ilişkili 32-bit uygulamaya özel değerini almak için bu işlevi çağırın.
+Belirtilen öğeyle ilişkili 32 bitlik uygulamaya özgü değeri almak için bu işlevi çağırın.
 
 ```
 DWORD_PTR GetItemData(HTREEITEM hItem) const;
@@ -786,19 +786,19 @@ DWORD_PTR GetItemData(HTREEITEM hItem) const;
 ### <a name="parameters"></a>Parametreler
 
 *hItem*<br/>
-Alınacak olan verilerdir öğesinin tanıtıcısı.
+Verileri alınacak olan öğenin tanıtıcısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Tarafından belirtilen öğe ile ilişkili bir 32-bit uygulamaya özgü değer *hItem*.
+*Hitem*tarafından belirtilen öğeyle ilişkili 32 bitlik uygulamaya özgü bir değer.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CTreeCtrl#14](../../mfc/reference/codesnippet/cpp/ctreectrl-class_14.cpp)]
 
-##  <a name="getitemexpandedimageindex"></a>  CTreeCtrl::GetItemExpandedImageIndex
+##  <a name="getitemexpandedimageindex"></a>Ctreeci:: GetItemExpandedImageIndex
 
-Görüntüyü belirtilen öğe geçerli ağaç görünümü denetiminin genişletilmiş durumdayken dizinini alır.
+Geçerli ağaç görünümü denetiminin belirtilen öğesi genişletilmiş durumdaysa görüntülenecek görüntünün dizinini alır.
 
 ```
 int GetItemExpandedImageIndex(HTREEITEM hItem)const;
@@ -808,19 +808,19 @@ int GetItemExpandedImageIndex(HTREEITEM hItem)const;
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*hItem*|[in] Bir ağaç görünümü denetimi öğesi işler.|
+|*hItem*|'ndaki Ağaç görünümü Denetim öğesi için tanıtıcı.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Görüntüyü belirtilen öğeyi genişletilmiş durumdayken dizini.
+Belirtilen öğe genişletilmiş durumdaysa görüntülenecek görüntünün dizini.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [TVM_GETITEM](/windows/desktop/Controls/tvm-getitem) Windows SDK'da açıklanan ileti. Döndürür ileti [TVITEMEX](/windows/desktop/api/commctrl/ns-commctrl-tagtvitemexa) ağaç görünümü denetimi öğesi ve bu yöntem açıklayan yapısı alır `iExpandedImage` , yapı üyesi.
+Bu yöntem, Windows SDK açıklanan [TVM_GETITEM](/windows/win32/Controls/tvm-getitem) iletisini gönderir. Bu ileti, ağaç görünümü denetim öğesini açıklayan [TVITEMEX](/windows/win32/api/commctrl/ns-commctrl-tvitemexw) yapısını döndürür ve bu yöntem, `iExpandedImage` üyeyi Bu yapıyla alır.
 
-##  <a name="getitemheight"></a>  CTreeCtrl::GetItemHeight
+##  <a name="getitemheight"></a>Ctreeci:: GetItemHeight
 
-Bu üye işlevi Win32 ileti davranışı uygulayan [TVM_GETITEMHEIGHT](/windows/desktop/Controls/tvm-getitemheight)Windows SDK içinde açıklandığı gibi.
+Bu üye işlevi, Windows SDK açıklandığı gibi Win32 iletisinin [TVM_GETITEMHEIGHT](/windows/win32/Controls/tvm-getitemheight)davranışını uygular.
 
 ```
 SHORT GetItemHeight() const;
@@ -828,15 +828,15 @@ SHORT GetItemHeight() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Piksel cinsinden öğe yüksekliği.
+Öğenin piksel cinsinden yüksekliği.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CTreeCtrl#15](../../mfc/reference/codesnippet/cpp/ctreectrl-class_15.cpp)]
 
-##  <a name="getitemimage"></a>  CTreeCtrl::GetItemImage
+##  <a name="getitemimage"></a>Ctreecımpl:: GetItemImage
 
-Her öğe bir ağaç görünümü denetiminde ilişkili bit eşlemli görüntülerin çifti olabilir.
+Ağaç görünümü denetimindeki her öğe ile ilişkili bir çift bit eşlenmiş görüntü olabilir.
 
 ```
 BOOL GetItemImage(
@@ -848,31 +848,31 @@ BOOL GetItemImage(
 ### <a name="parameters"></a>Parametreler
 
 *hItem*<br/>
-Alınacak olan görüntüsüdür öğesinin tanıtıcısı.
+Görüntüsü alınacak olan öğenin tanıtıcısı.
 
-*Bir*<br/>
-Ağaç görünümü denetiminin resim listesi içinde öğenin görüntünün dizinini alır bir tamsayı.
+*Ngörüntü*<br/>
+Ağaç görünümü denetiminin görüntü listesi içindeki öğenin resminin dizinini alan bir tamsayı.
 
 *nSelectedImage*<br/>
-Ağaç görünümü denetiminin resim listesi içinde seçili görüntünün öğenin dizinini alır bir tamsayı.
+Ağaç görünümü denetiminin görüntü listesi içinde öğenin seçili görüntüsünün dizinini alan bir tamsayı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi durumda 0.
+Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Görüntüleri bir öğenin etiket sol tarafında görünür. Bir görüntü öğesi seçilir ve diğer öğe seçilmediğinde görüntülendiğinde görüntülenir. Örneğin, yok seçildiğinde bir öğe seçildiğinde bir klasör Aç ve kapalı klasör görüntülenebilir.
+Görüntüler, bir öğenin etiketinin sol tarafında görünür. Öğe seçildiğinde bir görüntü görüntülenir ve öğe seçilmediğinde diğeri görüntülenir. Örneğin, bir öğe seçildiğinde açık bir klasör ve seçili olmadığında kapalı bir klasör görüntülenebilir.
 
-Öğenin resmi ve ağaç görünümü denetiminin resim listesi içinde seçilen görüntü dizini almak için bu işlevi çağırın.
+Öğe görüntüsünün görüntüsünü ve ağaç görünümü denetiminin görüntü listesi içindeki seçili görüntüsünü almak için bu işlevi çağırın.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CTreeCtrl#16](../../mfc/reference/codesnippet/cpp/ctreectrl-class_16.cpp)]
 
-##  <a name="getitempartrect"></a>  CTreeCtrl::GetItemPartRect
+##  <a name="getitempartrect"></a>Ctreeci:: GetItemPartRect
 
-Geçerli ağaç görünümü denetiminde belirtilen öğe belirtilen bir parçası için sınırlayıcı dikdörtgeni alır.
+Geçerli ağaç görünümü denetimindeki belirtilen öğenin belirtilen bir bölümü için sınırlayıcı dikdörtgeni alır.
 
 ```
 BOOL GetItemPartRect(
@@ -885,35 +885,35 @@ BOOL GetItemPartRect(
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*hItem*|[in] Bir ağaç görünümü denetimi öğesi işler.|
-|*nPart*|[in] Bölümü için tanımlayıcı. TVGIPR_BUTTON için ayarlamanız gerekir.|
-|*lpRect*|[out] İşaretçi bir [RECT](/previous-versions/dd162897\(v=vs.85\)) yapısı. Bu yöntem başarılı olursa, yapı bölümü tarafından belirtilen dikdörtgen koordinatlarını alır *hItem* ve *nPart*.|
+|*hItem*|'ndaki Ağaç görünümü Denetim öğesi için tanıtıcı.|
+|*nBölüm*|'ndaki Bölüm için tanımlayıcı. TVGIPR_BUTTON olarak ayarlanmalıdır.|
+|*lpRect*|dışı [Rect](/previous-versions/dd162897\(v=vs.85\)) yapısına yönelik işaretçi. Bu yöntem başarılı olursa, yapı *Hitem* ve *nPart*tarafından belirtilen parçanın dikdörtgen koordinatlarını alır.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.
+Bu yöntem başarılı olursa TRUE; Aksi takdirde, FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ağaç denetim öğesi her bir grafik dikdörtgen sınırlıdır. Her bir noktası bu dikdörtgenin içindeki tıklatıldığında öğesi olduğu söylenir *isabet*. Dikdörtgen bir noktaya tıklandığında öğesi tarafından tanımlanan şekilde bu yöntem en büyük dikdörtgen döndürür *hItem* parametresi isabet.
+Her ağaç denetim öğesi bir grafik dikdörtgeniyle sınırlanır. Dikdörtgenin her bir noktasına tıklandığında, öğenin *isabet*ettiği söylenir. Bu yöntem, dikdörtgenin bir noktasına tıklandığı zaman, *Hitem* parametresi tarafından tanımlanan öğe isabet edildiğinde en büyük dikdörtgeni döndürür.
 
-Bu yöntem Windows SDK'da açıklanan TVM_GETITEMPARTRECT ileti gönderir. Daha fazla bilgi için [TreeView_GetItemPartRect](/windows/desktop/api/commctrl/nf-commctrl-treeview_getitempartrect) makrosu.
+Bu yöntem, Windows SDK açıklanan TVM_GETITEMPARTRECT iletisini gönderir. Daha fazla bilgi için [TreeView_GetItemPartRect](/windows/win32/api/commctrl/nf-commctrl-treeview_getitempartrect) makrosunu inceleyin.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği bir değişkene tanımlar `m_treeCtrl`, yani geçerli ağaç görünümü denetimi erişmek için kullanılır. Kod örneği, işaretsiz bir tamsayı ve birkaç HTREEITEM değişkenleri ayrıca tanımlar. Bu değişkenler bir sonraki örnekte kullanılır.
+Aşağıdaki kod örneği, geçerli ağaç görünüm denetimine `m_treeCtrl`erişmek için kullanılan bir değişkenini tanımlar. Kod örneği Ayrıca işaretsiz bir tamsayı ve birkaç HTREEITEM değişkenini tanımlar. Bu değişkenler bir sonraki örnekte kullanılır.
 
 [!code-cpp[NVC_MFC_CTreeCtrl_s1#1](../../mfc/reference/codesnippet/cpp/ctreectrl-class_17.h)]
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği bir erişilebilirlik tanımlayıcısını kullanır ve [CTreeCtrl::MapAccIdToItem](#mapaccidtoitem) kök ağaç görünümü öğesi için bir tanıtıcı almak için yöntemi. Örnek tanıtıcı kullanıyorsa ve [CTreeCtrl::GetItemPartRect](#getitempartrect) o öğenin etrafına 3B bir dikdörtgen çizmek için yöntemi. Gösterilmez, kod örneği, önceki bir bölümde oluşan bir kök ülke/bölge düğümü Amerika Birleşik Devletleri, Pennsylvania ve Washington durumları için alt düğümleri ve ağaç öğeleri şehirlerin Eyaletler için bir ağaç-görünüm oluşturduk. Kullandık [CTreeCtrl::MapItemToAccID](#mapitemtoaccid) kök ağaç görünümü öğesi bir erişilebilirlik tanımlayıcı ile ilişkilendirmek için yöntemi.
+Aşağıdaki kod örneği, kök ağaç görünümü öğesine bir tanıtıcı almak için bir erişilebilirlik tanımlayıcısı ve [Ctreecini:: Mapaccıdtoitem](#mapaccidtoitem) metodunu kullanır. Daha sonra örnek, bu öğenin etrafında 3B dikdörtgen çizmek için Handle ve [Ctreecini:: GetItemPartRect](#getitempartrect) metodunu kullanır. Kod örneği 'nin önceki bir bölümünde, Birleşik Devletler için bir kök ülke/bölge düğümü, Pennsylvania ve Washington durumlarının alt düğümleri ve bu durumlardaki şehirler için ağaç öğeleri içeren bir ağaç görünümü oluşturduk. Kök ağaç görünümü öğesini bir erişilebilirlik tanımlayıcısı ile ilişkilendirmek için [Ctreecp:: MapItemToAccID](#mapitemtoaccid) metodunu kullandık.
 
 [!code-cpp[NVC_MFC_CTreeCtrl_s1#5](../../mfc/reference/codesnippet/cpp/ctreectrl-class_18.cpp)]
 
-##  <a name="getitemrect"></a>  CTreeCtrl::GetItemRect
+##  <a name="getitemrect"></a>Ctreeci:: GetItemRect
 
-Sınırlayıcı dikdörtgeni almak için bu işlevi çağırın *hItem* ve bunu görünür olup olmadığını belirler.
+*HItem* için sınırlayıcı dikdörtgeni almak ve görünür olup olmadığını öğrenmek için bu işlevi çağırın.
 
 ```
 BOOL GetItemRect(
@@ -925,25 +925,25 @@ BOOL GetItemRect(
 ### <a name="parameters"></a>Parametreler
 
 *hItem*<br/>
-Bir ağaç görünümü denetimi öğesinin tanıtıcısı.
+Ağaç görünümü Denetim öğesi tutamacı.
 
 *lpRect*<br/>
-İşaretçi bir [RECT](/previous-versions/dd162897\(v=vs.85\)) dikdörtgen alan yapısı. Ağaç görünümü denetiminin sol üst köşesinde göreli koordinatları.
+Sınırlayıcı dikdörtgeni alan bir [Rect](/previous-versions/dd162897\(v=vs.85\)) yapısına yönelik işaretçi. Koordinatlar, ağaç görünümü denetiminin sol üst köşesine göre yapılır.
 
 *bTextOnly*<br/>
-Bu parametre sıfır değilse, yalnızca öğenin metnini dikdörtgen içerir. Aksi takdirde ağaç görünümü denetiminde öğe kapladığı satırın tamamını içerir.
+Bu parametre sıfır değilse, sınırlayıcı dikdörtgen yalnızca öğenin metnini içerir. Aksi takdirde, öğe ağaç görünümü denetiminde kaplayacağı satırın tamamını içerir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfır dışında yer alan sınırlayıcı bir dikdörtgen öğesi görünür durumda *lpRect*. Aksi takdirde, 0 ile *lpRect* başlatılmamış.
+Öğe görünür ise, sınırlayıcı dikdörtgeni *lpRect*içinde yer alıyorsa sıfır dışında. Aksi halde, *lpRect* ile 0 başlatılmamış.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CTreeCtrl#17](../../mfc/reference/codesnippet/cpp/ctreectrl-class_19.cpp)]
 
-##  <a name="getitemstate"></a>  CTreeCtrl::GetItemState
+##  <a name="getitemstate"></a>Ctreeci:: GetItemState
 
-Tarafından belirtilen öğenin durumunu verir *hItem*.
+*Hitem*tarafından belirtilen öğenin durumunu döndürür.
 
 ```
 UINT GetItemState(
@@ -954,22 +954,22 @@ UINT GetItemState(
 ### <a name="parameters"></a>Parametreler
 
 *hItem*<br/>
-Alınacak durumu olan öğesinin tanıtıcısı.
+Durumu alınacak olan öğenin tanıtıcısı.
 
 *nStateMask*<br/>
-Alınacak bir veya daha fazla durumları belirten maskesi. İçin olası değerler hakkında daha fazla bilgi için *nStateMask*, bkz `state` ve `stateMask` üyeleri [TVITEM](/windows/desktop/api/commctrl/ns-commctrl-tagtvitema) Windows SDK'sındaki yapısı.
+Alınacak bir veya daha fazla durumu gösteren maske. *NStateMask*için olası değerler hakkında daha fazla bilgi için, Windows SDK içindeki `state` [tvidıtem](/windows/win32/api/commctrl/ns-commctrl-tvitemw) yapısının tartışmalarına ve `stateMask` üyelerine bakın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bit düzeyinde OR nStateMask tarafından belirtilen değerleri tutar UINT. Olası değerler hakkında daha fazla bilgi için bkz: [CTreeCtrl::GetItem](#getitem). Değer için belirli bir durumu bulmak için aşağıdaki örnekte gösterildiği gibi durum değeri ve dönüş değeri bir bit düzeyinde AND işlemi gerçekleştirin.
+NStateMask tarafından belirtilen değerlerin bit düzeyinde veya bu değerlerini tutan bir UINT. Olası değerler hakkında daha fazla bilgi için bkz. [Ctreecu:: GetItem](#getitem). Belirli bir durum için değeri bulmak için, aşağıdaki örnekte gösterildiği gibi durum değeri ve dönüş değeri için bit düzeyinde ve işlem gerçekleştirin.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CTreeCtrl#18](../../mfc/reference/codesnippet/cpp/ctreectrl-class_20.cpp)]
 
-##  <a name="getitemstateex"></a>  CTreeCtrl::GetItemStateEx
+##  <a name="getitemstateex"></a>Ctreeci:: Getıtemstateex
 
-Belirtilen öğe geçerli ağaç görünümü denetiminde genişletilmiş durumunu alır.
+Geçerli ağaç görünümü denetiminde belirtilen öğenin genişletilmiş durumunu alır.
 
 ```
 UINT GetItemStateEx(HTREEITEM hItem) const;
@@ -979,19 +979,19 @@ UINT GetItemStateEx(HTREEITEM hItem) const;
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*hItem*|[in] Bir ağaç görünümü denetimi öğesi işler.|
+|*hItem*|'ndaki Ağaç görünümü Denetim öğesi için tanıtıcı.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Genişletilmiş durumu öğesi. Daha fazla bilgi için `uStateEx` üyesi [TVITEMEX](/windows/desktop/api/commctrl/ns-commctrl-tagtvitemexa) yapısı.
+Öğenin genişletilmiş durumu. Daha fazla bilgi için [TVITEMEX](/windows/win32/api/commctrl/ns-commctrl-tvitemexw) yapısının `uStateEx` üyesine bakın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [TVM_GETITEM](/windows/desktop/Controls/tvm-getitem) Windows SDK'da açıklanan ileti. Döndürür ileti [TVITEMEX](/windows/desktop/api/commctrl/ns-commctrl-tagtvitemexa) ağaç görünümü denetimi öğesi ve bu yöntem açıklayan yapısı alır `uStateEx` , yapı üyesi.
+Bu yöntem, Windows SDK açıklanan [TVM_GETITEM](/windows/win32/Controls/tvm-getitem) iletisini gönderir. Bu ileti, ağaç görünümü denetim öğesini açıklayan [TVITEMEX](/windows/win32/api/commctrl/ns-commctrl-tvitemexw) yapısını döndürür ve bu yöntem `uStateEx` üyeyi Bu yapıyla alır.
 
-##  <a name="getitemtext"></a>  CTreeCtrl::GetItemText
+##  <a name="getitemtext"></a>Ctreeci:: GetItemText
 
-Tarafından belirtilen öğenin metnini döndürür *hItem*.
+*Hitem*tarafından belirtilen öğenin metnini döndürür.
 
 ```
 CString GetItemText(HTREEITEM hItem) const;
@@ -1000,19 +1000,19 @@ CString GetItemText(HTREEITEM hItem) const;
 ### <a name="parameters"></a>Parametreler
 
 *hItem*<br/>
-Alınacak metni olan öğesinin tanıtıcısı.
+Metni alınacak olan öğenin tanıtıcısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-A `CString` öğenin metni içeren nesne.
+Öğenin metnini içeren nesne. `CString`
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [CTreeCtrl::GetNextItem](#getnextitem).
+  [Ctreeci:: GetNextItem](#getnextitem)örneğine bakın.
 
-##  <a name="getlastvisibleitem"></a>  CTreeCtrl::GetLastVisibleItem
+##  <a name="getlastvisibleitem"></a>Ctreeci:: Getlastvisibleıtem
 
-Geçerli ağaç görünümü denetiminde son genişletilmemiş düğüm öğesini alır.
+Geçerli ağaç görünümü denetimindeki son genişletilmemiş düğüm öğesini alır.
 
 ```
 HTREEITEM GetLastVisibleItem() const;
@@ -1020,27 +1020,27 @@ HTREEITEM GetLastVisibleItem() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa son genişletilmemiş düğüm öğesi tanıtıcısını; Aksi takdirde NULL.
+Yöntem başarılı olursa son genişletilmemiş düğüm öğesine olan tanıtıcı. Aksi takdirde, NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [TVM_GETNEXTITEM](/windows/desktop/Controls/tvm-getnextitem) Windows SDK'da açıklanan ileti. TVGN_LASTVISIBLE bayrağı daha fazla bilgi için bkz. *bayrağı* , bu iletiyi bir parametre.
+Bu yöntem, Windows SDK açıklanan [TVM_GETNEXTITEM](/windows/win32/Controls/tvm-getnextitem) iletisini gönderir. Daha fazla bilgi için, bu iletinin *bayrak* parametresindeki TVGN_LASTVISIBLE bayrağına bakın.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği bir değişkene tanımlar `m_treeCtrl`, yani geçerli ağaç görünümü denetimi erişmek için kullanılır. Kod örneği, işaretsiz bir tamsayı ve birkaç HTREEITEM değişkenleri ayrıca tanımlar. Sonraki örnekte, bir veya daha fazla bu değişkenleri kullanılır.
+Aşağıdaki kod örneği, geçerli ağaç görünüm denetimine `m_treeCtrl`erişmek için kullanılan bir değişkenini tanımlar. Kod örneği Ayrıca işaretsiz bir tamsayı ve birkaç HTREEITEM değişkenini tanımlar. Bu değişkenlerden bir veya daha fazlası sonraki örnekte kullanılır.
 
 [!code-cpp[NVC_MFC_CTreeCtrl_s1#1](../../mfc/reference/codesnippet/cpp/ctreectrl-class_17.h)]
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği, son genişletilmemiş ağaç görünümü düğüm öğesi için bir tanıtıcı alır ve ardından o öğenin etrafına 3B bir dikdörtgen çizer. Gösterilmez, kod örneği, önceki bir bölümde oluşan bir kök ülke/bölge düğümü Amerika Birleşik Devletleri, Pennsylvania ve Washington durumları için alt düğümleri ve ağaç öğeleri şehirlerin Eyaletler için bir ağaç-görünüm oluşturduk.
+Aşağıdaki kod örneği, son genişletilmeyen ağaç görüntüleme düğümü öğesine yönelik bir tanıtıcı alır ve ardından o öğenin etrafında bir 3B dikdörtgen çizer. Kod örneği 'nin önceki bir bölümünde, Birleşik Devletler için bir kök ülke/bölge düğümü, Pennsylvania ve Washington durumlarının alt düğümleri ve bu durumlardaki şehirler için ağaç öğeleri içeren bir ağaç görünümü oluşturduk.
 
 [!code-cpp[NVC_MFC_CTreeCtrl_s1#6](../../mfc/reference/codesnippet/cpp/ctreectrl-class_21.cpp)]
 
-##  <a name="getlinecolor"></a>  CTreeCtrl::GetLineColor
+##  <a name="getlinecolor"></a>Ctreeci:: GetLineColor
 
-Bu üye işlevi win32 ileti davranışı uygulayan [TVM_GETLINECOLOR](/windows/desktop/Controls/tvm-getlinecolor)Windows SDK içinde açıklandığı gibi.
+Bu üye işlevi, Windows SDK açıklandığı gibi Win32 iletisinin [TVM_GETLINECOLOR](/windows/win32/Controls/tvm-getlinecolor)davranışını uygular.
 
 ```
 COLORREF GetLineColor() const;
@@ -1054,9 +1054,9 @@ Geçerli çizgi rengi.
 
 [!code-cpp[NVC_MFC_CTreeCtrl#19](../../mfc/reference/codesnippet/cpp/ctreectrl-class_22.cpp)]
 
-##  <a name="getnextitem"></a>  CTreeCtrl::GetNextItem
+##  <a name="getnextitem"></a>Ctreeci:: GetNextItem
 
-Çağrı ağacı almak için bu işlevi görünüm öğesi tarafından belirtilen belirtilen ilişki sahip *nCode* parametresi, *hItem*.
+Belirtilen ilişkiye sahip olan ağaç görünümü öğesini ( *nCode* parametresi Ile *Hitem*) almak için bu işlevi çağırın.
 
 ```
 HTREEITEM GetNextItem(
@@ -1067,50 +1067,50 @@ HTREEITEM GetNextItem(
 ### <a name="parameters"></a>Parametreler
 
 *hItem*<br/>
-Ağaç öğesi işleyici.
+Ağaç öğesi tutamacı.
 
 *nCode*<br/>
-İlişki türünü belirten bir bayrak *hItem*. Bu bayrak, aşağıdaki değerlerden biri olabilir:
+*HItem*ile ilişki türünü belirten bayrak. Bu bayrak aşağıdaki değerlerden biri olabilir:
 
-- Geçerli seçilmiş öğe TVGN_CARET alır.
+- TVGN_CARET Şu anda seçili öğeyi alır.
 
-- TVGN_CHILD tarafından belirtilen öğenin ilk alt öğe alır *hItem* parametresi.
+- TVGN_CHILD *Hitem* parametresi tarafından belirtilen öğenin ilk alt öğesini alır.
 
-- TVGN_DROPHILITE hedefi bir Sürükle ve bırak işlemi olan öğeyi alır.
+- TVGN_DROPHILITE, bir sürükle ve bırak işleminin hedefi olan öğeyi alır.
 
-- TVGN_FIRSTVISIBLE görünen ilk öğenin alır.
+- TVGN_FIRSTVISIBLE ilk görünür öğeyi alır.
 
-- Son öğe ağacında genişletilmiş TVGN_LASTVISIBLE alır. Bu ağaç-Görünüm penceresinde görünür son öğeyi almaz.
+- TVGN_LASTVISIBLE, ağaçtaki son genişletilmiş öğeyi alır. Bu, ağaç görünümü penceresinde görünen son öğeyi almaz.
 
-- TVGN_NEXT sonraki eşdüzey öğeyi alır.
+- TVGN_NEXT bir sonraki eşdüzey öğeyi alır.
 
-- TVGN_NEXTVISIBLE belirtilen öğeyi takip eden sonraki görünür öğeyi alır.
+- TVGN_NEXTVISIBLE belirtilen öğeyi izleyen bir sonraki görünür öğeyi alır.
 
-- Belirtilen öğenin üst TVGN_PARENT alır.
+- TVGN_PARENT belirtilen öğenin üst öğesini alır.
 
 - TVGN_PREVIOUS önceki eşdüzey öğeyi alır.
 
-- Belirtilen öğenin önünde görünen ilk öğenin TVGN_PREVIOUSVISIBLE alır.
+- TVGN_PREVIOUSVISIBLE belirtilen öğeden önce gelen ilk görünür öğeyi alır.
 
-- TVGN_ROOT belirtilen öğeyi bir parçası olduğu kök öğenin ilk alt öğe alır.
+- TVGN_ROOT, belirtilen öğenin bir parçası olduğu kök öğenin ilk alt öğesini alır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sonraki öğeye tanıtıcısı; bulunmazsa null değerini DÖNDÜRÜR.
+Başarılı olursa sonraki öğenin tutamacı; Aksi takdirde NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Alınan öğe ağaç kök düğümü ise bu işlev NULL döndürür. Örneğin, ağaç görünümünün kök düğümün birinci düzey alt TVGN_PARENT bayrağı ile bu iletiyi kullanırsanız, ileti NULL döndürür.
+Bu işlev, alınan öğe ağacın kök düğümüdür NULL döndürür. Örneğin, bu iletiyi ağaç görünümünün kök düğümünün birinci düzey alt öğesi üzerinde TVGN_PARENT bayrağıyla kullanırsanız ileti NULL döndürür.
 
 ### <a name="example"></a>Örnek
 
-Kullanma örneği için `GetNextItem` bir döngüde bkz [CTreeCtrl::DeleteItem](#deleteitem).
+Bir döngüde kullanılmasına `GetNextItem` bir örnek için, bkz. [ctreecu::D eleteıtem](#deleteitem).
 
 [!code-cpp[NVC_MFC_CTreeCtrl#20](../../mfc/reference/codesnippet/cpp/ctreectrl-class_23.cpp)]
 
-##  <a name="getnextsiblingitem"></a>  CTreeCtrl::GetNextSiblingItem
+##  <a name="getnextsiblingitem"></a>Ctreeci:: GetNextSiblingItem
 
-Sonraki eşdüzey almak için bu işlevi çağırın *hItem*.
+*HItem*'ın sonraki eşdüzey öğesini almak için bu işlevi çağırın.
 
 ```
 HTREEITEM GetNextSiblingItem(HTREEITEM hItem) const;
@@ -1119,19 +1119,19 @@ HTREEITEM GetNextSiblingItem(HTREEITEM hItem) const;
 ### <a name="parameters"></a>Parametreler
 
 *hItem*<br/>
-Ağaç öğesi işleyici.
+Ağaç öğesi tutamacı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sonraki eşdüzey öğesi tanıtıcısı; bulunmazsa null değerini DÖNDÜRÜR.
+Sonraki eşdüzey öğenin tutamacı; Aksi takdirde NULL.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CTreeCtrl#21](../../mfc/reference/codesnippet/cpp/ctreectrl-class_24.cpp)]
 
-##  <a name="getnextvisibleitem"></a>  CTreeCtrl::GetNextVisibleItem
+##  <a name="getnextvisibleitem"></a>Ctreeci:: GetNextVisibleItem
 
-Sonraki görünür öğesi almak için bu işlevi çağırın *hItem*.
+*Hitem*'in bir sonraki görünür öğesini almak için bu işlevi çağırın.
 
 ```
 HTREEITEM GetNextVisibleItem(HTREEITEM hItem) const;
@@ -1140,19 +1140,19 @@ HTREEITEM GetNextVisibleItem(HTREEITEM hItem) const;
 ### <a name="parameters"></a>Parametreler
 
 *hItem*<br/>
-Ağaç öğesi işleyici.
+Ağaç öğesi tutamacı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Görünür bir sonraki öğeye tanıtıcısı; bulunmazsa null değerini DÖNDÜRÜR.
+Sonraki görünür öğenin tutamacı; Aksi takdirde NULL.
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [CTreeCtrl::SetCheck](#setcheck).
+  [Ctreeci:: SetCheck](#setcheck)örneğine bakın.
 
-##  <a name="getparentitem"></a>  CTreeCtrl::GetParentItem
+##  <a name="getparentitem"></a>Ctreecı:: Getparentidıtem
 
-Üst almak için bu işlevi çağırın *hItem*.
+*HItem*öğesinin üst öğesini almak için bu işlevi çağırın.
 
 ```
 HTREEITEM GetParentItem(HTREEITEM hItem) const;
@@ -1161,23 +1161,23 @@ HTREEITEM GetParentItem(HTREEITEM hItem) const;
 ### <a name="parameters"></a>Parametreler
 
 *hItem*<br/>
-Ağaç öğesi işleyici.
+Ağaç öğesi tutamacı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Üst öğe tanıtıcısı; bulunmazsa null değerini DÖNDÜRÜR.
+Üst öğenin tutamacı; Aksi takdirde NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Belirtilen öğenin üst ağaç kök düğümü ise bu işlev NULL döndürür.
+Belirtilen öğenin üst öğesi ağacın kök düğümü ise bu işlev NULL döndürür.
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [CTreeCtrl::EnsureVisible](#ensurevisible).
+  [Ctreeci:: EnsureVisible](#ensurevisible)örneğine bakın.
 
-##  <a name="getprevsiblingitem"></a>  CTreeCtrl::GetPrevSiblingItem
+##  <a name="getprevsiblingitem"></a>Ctreeci:: GetPrevSiblingItem
 
-Önceki eşdüzey almak için bu işlevi çağırın *hItem*.
+*HItem*'ın önceki eşdüzey öğesini almak için bu işlevi çağırın.
 
 ```
 HTREEITEM GetPrevSiblingItem(HTREEITEM hItem) const;
@@ -1186,19 +1186,19 @@ HTREEITEM GetPrevSiblingItem(HTREEITEM hItem) const;
 ### <a name="parameters"></a>Parametreler
 
 *hItem*<br/>
-Ağaç öğesi işleyici.
+Ağaç öğesi tutamacı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Önceki eşdüzeyin tanıtıcısı; bulunmazsa null değerini DÖNDÜRÜR.
+Önceki eşdüzey öğesinin tutamacı; Aksi takdirde NULL.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CTreeCtrl#22](../../mfc/reference/codesnippet/cpp/ctreectrl-class_25.cpp)]
 
-##  <a name="getprevvisibleitem"></a>  CTreeCtrl::GetPrevVisibleItem
+##  <a name="getprevvisibleitem"></a>Ctreeci:: GetPrevVisibleItem
 
-Önceki görünür öğesini almak için bu işlevi çağırın *hItem*.
+*HItem*'ın önceki görünür öğesini almak için bu işlevi çağırın.
 
 ```
 HTREEITEM GetPrevVisibleItem(HTREEITEM hItem) const;
@@ -1207,17 +1207,17 @@ HTREEITEM GetPrevVisibleItem(HTREEITEM hItem) const;
 ### <a name="parameters"></a>Parametreler
 
 *hItem*<br/>
-Ağaç öğesi işleyici.
+Ağaç öğesi tutamacı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Önceki görünür öğe tanıtıcısı; bulunmazsa null değerini DÖNDÜRÜR.
+Önceki görünür öğenin tutamacı; Aksi takdirde NULL.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CTreeCtrl#23](../../mfc/reference/codesnippet/cpp/ctreectrl-class_26.cpp)]
 
-##  <a name="getrootitem"></a>  CTreeCtrl::GetRootItem
+##  <a name="getrootitem"></a>Ctreeci:: GetRootItem
 
 Ağaç görünümü denetiminin kök öğesini almak için bu işlevi çağırın.
 
@@ -1227,15 +1227,15 @@ HTREEITEM GetRootItem() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kök öğesi tanıtıcısı; bulunmazsa null değerini DÖNDÜRÜR.
+Kök öğenin tanıtıcısı; Aksi takdirde NULL.
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [CTreeCtrl::EditLabel](#editlabel).
+  [Ctreeck:: EditLabel](#editlabel)için örneğe bakın.
 
-##  <a name="getscrolltime"></a>  CTreeCtrl::GetScrollTime
+##  <a name="getscrolltime"></a>Ctreeci:: GetScrollTime
 
-Ağaç görünümü denetiminin maksimum kaydırın kez almak için bu üye işlevini çağırın.
+Ağaç görünümü denetimi için maksimum kaydırma süresini almak için bu üye işlevi çağırın.
 
 ```
 UINT GetScrollTime() const;
@@ -1243,15 +1243,15 @@ UINT GetScrollTime() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-En fazla kaydırma milisaniye cinsinden süre.
+Milisaniye cinsinden en fazla kaydırma süresi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi win32 ileti davranışı uygulayan [TVM_GETSCROLLTIME](/windows/desktop/Controls/tvm-getscrolltime)Windows SDK içinde açıklandığı gibi.
+Bu üye işlevi, Windows SDK açıklandığı gibi Win32 iletisinin [TVM_GETSCROLLTIME](/windows/win32/Controls/tvm-getscrolltime)davranışını uygular.
 
-##  <a name="getselectedcount"></a>  CTreeCtrl::GetSelectedCount
+##  <a name="getselectedcount"></a>Ctreeci:: GetSelectedCount
 
-Geçerli ağaç görünümü denetiminde seçili öğe sayısını alır.
+Geçerli ağaç görünümü denetimindeki seçili öğelerin sayısını alır.
 
 ```
 UINT GetSelectedCount();
@@ -1259,15 +1259,15 @@ UINT GetSelectedCount();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Seçili öğe sayısı.
+Seçilen öğe sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [TVM_GETSELECTEDCOUNT](/windows/desktop/Controls/tvm-getselectedcount) Windows SDK'da açıklanan ileti.
+Bu yöntem, Windows SDK açıklanan [TVM_GETSELECTEDCOUNT](/windows/win32/Controls/tvm-getselectedcount) iletisini gönderir.
 
-##  <a name="getselecteditem"></a>  CTreeCtrl::GetSelectedItem
+##  <a name="getselecteditem"></a>Ctreeci:: Getselectedidıtem
 
-Ağaç görünümü denetimi şu anda seçili öğeyi almak için bu işlevi çağırın.
+Ağaç görünümü denetiminin seçili olan öğesini almak için bu işlevi çağırın.
 
 ```
 HTREEITEM GetSelectedItem() const;
@@ -1275,15 +1275,15 @@ HTREEITEM GetSelectedItem() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Seçilen öğenin tanıtıcısı; bulunmazsa null değerini DÖNDÜRÜR.
+Seçili öğenin tutamacı; Aksi takdirde NULL.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CTreeCtrl#24](../../mfc/reference/codesnippet/cpp/ctreectrl-class_27.cpp)]
 
-##  <a name="gettextcolor"></a>  CTreeCtrl::GetTextColor
+##  <a name="gettextcolor"></a>Ctreeci:: GetTextColor
 
-Bu üye işlevi Win32 ileti davranışı uygulayan [TVM_GETTEXTCOLOR](/windows/desktop/Controls/tvm-gettextcolor)Windows SDK içinde açıklandığı gibi.
+Bu üye işlevi, Windows SDK açıklandığı gibi Win32 iletisinin [TVM_GETTEXTCOLOR](/windows/win32/Controls/tvm-gettextcolor)davranışını uygular.
 
 ```
 COLORREF GetTextColor() const;
@@ -1291,15 +1291,15 @@ COLORREF GetTextColor() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli metin rengi temsil eden bir COLORREF değer. Bu değer -1 ise, denetimin sistem renk metin rengini kullanıyor.
+Geçerli metin rengini temsil eden bir COLORREF değeri. Bu değer-1 ise, denetim metin rengi için sistem rengini kullanıyor.
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [CTreeCtrl::SetTextColor](#settextcolor).
+  [Ctreeci:: SetTextColor](#settextcolor)örneğine bakın.
 
-##  <a name="gettooltips"></a>  CTreeCtrl::GetToolTips
+##  <a name="gettooltips"></a>Ctreeci:: GetToolTip 'ler
 
-Bu üye işlevi Win32 ileti davranışı uygulayan [TVM_GETTOOLTIPS](/windows/desktop/Controls/tvm-gettooltips)Windows SDK içinde açıklandığı gibi.
+Bu üye işlevi, Windows SDK açıklandığı gibi Win32 iletisinin [TVM_GETTOOLTIPS](/windows/win32/Controls/tvm-gettooltips)davranışını uygular.
 
 ```
 CToolTipCtrl* GetToolTips() const;
@@ -1307,19 +1307,19 @@ CToolTipCtrl* GetToolTips() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir işaretçi bir [CToolTipCtrl](../../mfc/reference/ctooltipctrl-class.md) ağaç denetimi tarafından kullanılacak nesne. Varsa [Oluştur](#create) üye işlev stili TVS_NOTOOLTIPS kullanır, hiçbir araç ipuçları kullanılır ve NULL döndürülür.
+Ağaç denetimi tarafından kullanılacak [CToolTipCtrl](../../mfc/reference/ctooltipctrl-class.md) nesnesine yönelik bir işaretçi. [Create](#create) member işlevi TVS_NOTOOLTIPS stilini kullanıyorsa, hiçbir araç ipucu KULLANıLMAZ ve null döndürülür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-MFC uygulaması `GetToolTips` döndürür bir `CToolTipCtrl` araç ipucu denetimi için bir tanıtıcı yerine ağaç denetimi tarafından kullanılan nesne.
+MFC uygulamasının `GetToolTips` , bir araç ipucu `CToolTipCtrl` denetimi tutamacı yerine ağaç denetimi tarafından kullanılan bir nesnesi döndürür.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CTreeCtrl#25](../../mfc/reference/codesnippet/cpp/ctreectrl-class_28.cpp)]
 
-##  <a name="getvisiblecount"></a>  CTreeCtrl::GetVisibleCount
+##  <a name="getvisiblecount"></a>Ctreeci:: GetVisibleCount
 
-Ağaç görünümü denetiminde görünür öğelerinin sayısını almak için bu işlevi çağırın.
+Bir ağaç görünümü denetimindeki görünen öğelerin sayısını almak için bu işlevi çağırın.
 
 ```
 UINT GetVisibleCount() const;
@@ -1327,15 +1327,15 @@ UINT GetVisibleCount() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ağaç görünümü denetiminde görünür öğe sayısı; Aksi takdirde - 1.
+Ağaç görünümü denetimindeki görünür öğe sayısı; Aksi takdirde-1.
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [CTreeCtrl::SetCheck](#setcheck).
+  [Ctreeci:: SetCheck](#setcheck)örneğine bakın.
 
-##  <a name="hittest"></a>  CTreeCtrl::HitTest
+##  <a name="hittest"></a>Ctreeci:: HitTest
 
-İstemci alanına göre belirtilen nokta bir ağaç görünümü denetiminin konumunu belirlemek için bu işlevi çağırın.
+Bir ağaç görünümü denetiminin istemci alanına göre belirtilen noktanın konumunu öğrenmek için bu işlevi çağırın.
 
 ```
 HTREEITEM HitTest(
@@ -1347,47 +1347,47 @@ HTREEITEM HitTest(TVHITTESTINFO* pHitTestInfo) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*PT*<br/>
-İstemci koordinatları test noktası.
+*yönergelerinin*<br/>
+Sınanacak noktanın istemci koordinatları.
 
 *pFlags*<br/>
-İsabet testi sonuçlarıyla ilgili bilgileri alan bir tamsayı işaretçisi. Bir olabilir ya da daha fazla değer altında listelenen `flags` Açıklamalar bölümü içindeki üye.
+İsabet testinin sonuçları hakkında bilgi alan bir tamsayıya yönelik işaretçi. Bu, açıklamalar bölümünde `flags` üye altında listelenen değerlerden biri veya daha fazlası olabilir.
 
 *pHitTestInfo*<br/>
-Adresi bir [TVHITTESTINFO](/windows/desktop/api/commctrl/ns-commctrl-tagtvhittestinfo) test ve, isabet konumu içeren yapı isabet testi sonuçlarıyla ilgili bilgileri alır.
+İsabet testinin sonuçları hakkında bilgi alan ve isabet testinin sonuçlarıyla ilgili bilgileri içeren bir [Tvhittestınfo](/windows/win32/api/commctrl/ns-commctrl-tvhittestinfo) yapısının adresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen kapladığı ağaç görünümü öğesi tanıtıcısını noktası veya hiçbir öğe noktası kapladığı yoksa NULL.
+Belirtilen noktayı kaplayan ağaç görünümü öğesinin tanıtıcısı veya hiçbir öğe, noktayı kapladıysanız NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev çağrıldığında *pt* parametresi test noktası koordinatları belirtir. Hiçbir öğe noktası kapladığı işlevi belirtilen nokta veya NULL öğesi tanıtıcısını döndürür. Ayrıca, *pFlags* parametresi belirtilen noktasının konumunu belirten bir değer içerir. Olası değerler şunlardır:
+Bu işlev çağrıldığında, *PT* parametresi test edilecek noktanın koordinatlarını belirtir. İşlev, bir öğe, noktayı kapladıysanız, belirtilen noktadaki veya NULL değeri için öğenin tanıtıcısını döndürür. Ayrıca, *pFlags* parametresi belirtilen noktanın konumunu gösteren bir değer içerir. Olası değerler şunlardır:
 
 |||
 |-|-|
 |Değer|Açıklama|
-|TVHT_ABOVE|İstemci alanını üstünde.|
+|TVHT_ABOVE|İstemci alanının üzerinde.|
 |TVHT_BELOW|İstemci alanının altında.|
-|TVHT_NOWHERE|İstemci alanını, ancak son öğenin altında.|
-|TVHT_ONITEM|Bit eşlem veya bir öğeyle ilişkili etiket.|
-|TVHT_ONITEMBUTTON|Bir öğeyle ilişkili düğmesine.|
-|TVHT_ONITEMICON|Bir öğeyle ilişkili bit eşlem seçeneğini kullanır.|
-|TVHT_ONITEMINDENT|Bir öğeyle ilişkili girinti.|
-|TVHT_ONITEMLABEL|Bir öğeyle ilişkili etiketi (dize).|
-|TVHT_ONITEMRIGHT|Bir öğenin sağına alan.|
-|TVHT_ONITEMSTATEICON|Bir ağaç görünümü öğesi durumu simgesi üzerinde kullanıcı tanımlı bir durumda değil.|
-|TVHT_TOLEFT|İstemci alanını sola.|
-|TVHT_TORIGHT|İstemci alanını sağında.|
+|TVHT_NOWHERE|İstemci alanında, ancak son öğenin altında.|
+|TVHT_ONITEM|Bir öğeyle ilişkili bit eşlem veya etikette.|
+|TVHT_ONITEMBUTTON|Bir öğeyle ilişkili düğme.|
+|TVHT_ONITEMICON|Bir öğeyle ilişkili bit eşlemde.|
+|TVHT_ONITEMINDENT|Bir öğeyle ilişkili girintide.|
+|TVHT_ONITEMLABEL|Bir öğeyle ilişkili etikette (dize).|
+|TVHT_ONITEMRIGHT|Bir öğenin sağ tarafındaki alanında.|
+|TVHT_ONITEMSTATEICON|Kullanıcı tanımlı durumdaki bir ağaç görünümü öğesinin durum simgesi.|
+|TVHT_TOLEFT|İstemci alanının solunda.|
+|TVHT_TORIGHT|İstemci alanının sağında.|
 |||
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CTreeCtrl#26](../../mfc/reference/codesnippet/cpp/ctreectrl-class_29.cpp)]
 
-##  <a name="insertitem"></a>  CTreeCtrl::InsertItem
+##  <a name="insertitem"></a>Ctreeci:: InsertItem
 
-Bir ağaç görünümü denetiminde yeni bir öğe eklemek için bu işlevi çağırın.
+Ağaç görünümü denetimine yeni bir öğe eklemek için bu işlevi çağırın.
 
 ```
 HTREEITEM InsertItem(LPTVINSERTSTRUCT lpInsertStruct);
@@ -1418,51 +1418,51 @@ HTREEITEM InsertItem(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpInsertStruct*<br/>
-Bir işaretçi bir `TVINSERTSTRUCT` eklenecek ağaç görünümü öğesi özniteliklerini belirtir.
+*Lpınsertstruct*<br/>
+Eklenecek ağaç görünümü öğesinin `TVINSERTSTRUCT` özniteliklerini belirten bir işaretçisi.
 
 *nMask*<br/>
-Ayarlamak için hangi özniteliklerin belirten tamsayı. Bkz: `TVITEM` Windows SDK'sındaki yapısı.
+Ayarlanacak öznitelikleri belirten tamsayı. `TVITEM` Windows SDK yapıya bakın.
 
 *lpszItem*<br/>
-Öğenin metni içeren bir dize adresi.
+Öğenin metnini içeren bir dizenin adresi.
 
-*Bir*<br/>
-Ağaç görünümü denetiminin resim listesi görüntüde öğenin dizini.
+*Ngörüntü*<br/>
+Ağaç görünümü denetiminin görüntü listesindeki öğenin resminin dizini.
 
 *nSelectedImage*<br/>
-Ağaç görünümü denetiminin resim listesi, seçilen görüntü öğenin dizini.
+Öğenin seçili resminin ağaç görünümü denetiminin görüntü listesinde dizini.
 
 *nDurum*<br/>
-Öğenin durumları için değerleri belirtir. Windows SDK'sındaki uygun durumları listesi için bkz: ağaç görünümü denetim öğesi durumlarına.
+Öğe durumlarının değerlerini belirtir. Uygun durumların listesi için Windows SDK ağaç görünümü Denetim öğesi durumları bölümüne bakın.
 
 *nStateMask*<br/>
-Hangi durumları ayarlanacak belirtir. Bkz: `TVITEM` Windows SDK'sındaki yapısı.
+Hangi durumların ayarlanacağını belirtir. `TVITEM` Windows SDK yapıya bakın.
 
 *lParam*<br/>
-Öğeyle ilişkili 32 bit uygulamaya özgü bir değer.
+Öğeyle ilişkili 32 bitlik uygulamaya özgü bir değer.
 
 *hParent*<br/>
-Eklenen öğenin üst öğesinin tanıtıcısı.
+Ekli öğenin üst öğesi.
 
-*hInsertAfter*<br/>
-Daha sonra eklenecek yeni öğe olan öğesinin tanıtıcısı.
+*Hınsertafter*<br/>
+Yeni öğenin ekleneceği öğenin tanıtıcısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa yeni öğeyi tanıtıcısı; bulunmazsa null değerini DÖNDÜRÜR.
+Başarılı olursa yeni öğenin tanıtıcısı; Aksi takdirde NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ağaç denetim öğesi ekleme yaparken işlevin her bir sürümünü kullanmak isteyebileceğiniz durumlara örnek gösterir.
+Örnek, bir ağaç denetim öğesi eklerken işlevin her bir sürümünü kullanmak isteyebileceğiniz durumları gösterir.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CTreeCtrl#27](../../mfc/reference/codesnippet/cpp/ctreectrl-class_30.cpp)]
 
-##  <a name="itemhaschildren"></a>  CTreeCtrl::ItemHasChildren
+##  <a name="itemhaschildren"></a>Ctreeci:: ıtemhaschildren
 
-Ağaç öğesi tarafından belirtilen olup olmadığını belirlemek için bu işlevi kullanın *hItem* alt öğeler içeriyor.
+*Hitem* tarafından belirtilen ağaç öğesinin alt öğeler içerip içermediğini anlamak için bu işlevi kullanın.
 
 ```
 BOOL ItemHasChildren(HTREEITEM hItem) const;
@@ -1471,23 +1471,23 @@ BOOL ItemHasChildren(HTREEITEM hItem) const;
 ### <a name="parameters"></a>Parametreler
 
 *hItem*<br/>
-Ağaç öğesi işleyici.
+Ağaç öğesi tutamacı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ağaç öğesi tarafından belirtilen olursa sıfır dışı *hItem* alt öğeleri; Aksi takdirde 0.
+*Hitem* tarafından belirtilen ağaç öğesi alt öğeler içeriyorsa sıfır dışı. değilse 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu sayede, ardından kullanabilirsiniz, [CTreeCtrl::GetChildItem](#getchilditem) alt öğeleri almak için.
+Bu durumda, bu alt öğeleri almak için [Ctreecu:: GetChildItem](#getchilditem) kullanabilirsiniz.
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [CTreeCtrl::GetSelectedItem](#getselecteditem).
+  [Ctreeci:: Getselectedidıtem](#getselecteditem)örneğine bakın.
 
-##  <a name="mapaccidtoitem"></a>  CTreeCtrl::MapAccIdToItem
+##  <a name="mapaccidtoitem"></a>Ctreeci:: Mapaccıdtoitem
 
-Belirtilen erişilebilirlik tanımlayıcı tanıtıcısı geçerli ağaç görünümü denetimindeki ağaç görünümü öğesinin eşlenir.
+Belirtilen erişilebilirlik tanımlayıcısını geçerli ağaç görünümü denetimindeki ağaç görünümü öğe tutamacı ile eşleştirir.
 
 ```
 HTREEITEM MapAccIdToItem(UINT uAccId) const;
@@ -1497,33 +1497,33 @@ HTREEITEM MapAccIdToItem(UINT uAccId) const;
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*uAccId*|[in] Ağaç görünümü öğesinde bir öğe için bir erişilebilirlik tanımlayıcısı.|
+|*uAccId*|'ndaki Ağaç görünümü öğesindeki bir öğe için erişilebilirlik tanımlayıcısı.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir ağaç görünümü öğesi tanıtıcısını ( `HTREEITEM`) karşılık gelen *uAccId* parametresi. Daha fazla bilgi için *hItem* üyesi [TVITEMEX](/windows/desktop/api/commctrl/ns-commctrl-tagtvitemexa) yapısı.
+*UAccId* parametresine karşılık gelen bir ağaç görünümü `HTREEITEM`öğe () işleyicisi. Daha fazla bilgi için [TVITEMEX](/windows/win32/api/commctrl/ns-commctrl-tvitemexw) yapısının *hItem* üyesine bakın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Erişilebilirlik Yardımcıları ile engelli yardımcı olan uygulamaları bilgisayarlara kullanılır. Erişilebilirlik tanımlayıcısı tarafından kullanılan `IAccessible` benzersiz bir pencerede bir öğe belirtmek için arabirim. Erişilebilirlik tanımlayıcıları hakkında daha fazla bilgi için "Hakkında Active Accessibility desteği" konusuna arama [Microsoft Developer Network](https://go.microsoft.com/fwlink/p/?linkid=56322).
+Erişilebilirlik yardımları, Engelli kişilerin bilgisayarları kullanmasına yardımcı olan uygulamalardır. Bir erişilebilirlik tanımlayıcısı, `IAccessible` bir penceredeki bir öğeyi benzersiz olarak belirtmek için arabirimi tarafından kullanılır. Erişilebilirlik tanımlayıcıları hakkında daha fazla bilgi için, [Microsoft Developer Network](https://go.microsoft.com/fwlink/p/?linkid=56322)'Teki "etkin erişilebilirlik desteği hakkında" konusunu aratın.
 
-Bu yöntem gönderir [TVM_MAPACCIDTOHTREEITEM](/windows/desktop/Controls/tvm-mapaccidtohtreeitem) Windows SDK'da açıklanan ileti.
+Bu yöntem, Windows SDK açıklanan [TVM_MAPACCIDTOHTREEITEM](/windows/win32/Controls/tvm-mapaccidtohtreeitem) iletisini gönderir.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği bir değişkene tanımlar `m_treeCtrl`, yani geçerli ağaç görünümü denetimi erişmek için kullanılır. Kod örneği, işaretsiz bir tamsayı ve birkaç HTREEITEM değişkenleri ayrıca tanımlar. Bu değişkenler bir sonraki örnekte kullanılır.
+Aşağıdaki kod örneği, geçerli ağaç görünüm denetimine `m_treeCtrl`erişmek için kullanılan bir değişkenini tanımlar. Kod örneği Ayrıca işaretsiz bir tamsayı ve birkaç HTREEITEM değişkenini tanımlar. Bu değişkenler bir sonraki örnekte kullanılır.
 
 [!code-cpp[NVC_MFC_CTreeCtrl_s1#1](../../mfc/reference/codesnippet/cpp/ctreectrl-class_17.h)]
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği bir erişilebilirlik tanımlayıcısını kullanır ve [CTreeCtrl::MapAccIdToItem](#mapaccidtoitem) kök ağaç görünümü öğesi için bir tanıtıcı almak için yöntemi. Örnek tanıtıcı kullanır ve [CTreeCtrl::GetItemPartRect](#getitempartrect) o öğenin etrafına 3B bir dikdörtgen çizmek için yöntemi. Gösterilmez, kod örneği, önceki bir bölümde oluşan bir kök ülke/bölge düğümü Amerika Birleşik Devletleri, Pennsylvania ve Washington durumları için alt düğümleri ve ağaç öğeleri şehirlerin Eyaletler için bir ağaç-görünüm oluşturduk. Kullandık [CTreeCtrl::MapItemToAccID](#mapitemtoaccid) kök ağaç görünümü öğesi bir erişilebilirlik tanımlayıcı ile ilişkilendirmek için yöntemi.
+Aşağıdaki kod örneği, kök ağaç görünümü öğesine bir tanıtıcı almak için bir erişilebilirlik tanımlayıcısı ve [Ctreecini:: Mapaccıdtoitem](#mapaccidtoitem) metodunu kullanır. Örnek, bu öğenin etrafında 3B dikdörtgen çizmek için Handle ve [Ctreecini:: GetItemPartRect](#getitempartrect) metodunu kullanır. Kod örneği 'nin önceki bir bölümünde, Birleşik Devletler için bir kök ülke/bölge düğümü, Pennsylvania ve Washington durumlarının alt düğümleri ve bu durumlardaki şehirler için ağaç öğeleri içeren bir ağaç görünümü oluşturduk. Kök ağaç görünümü öğesini bir erişilebilirlik tanımlayıcısı ile ilişkilendirmek için [Ctreecp:: MapItemToAccID](#mapitemtoaccid) metodunu kullandık.
 
 [!code-cpp[NVC_MFC_CTreeCtrl_s1#5](../../mfc/reference/codesnippet/cpp/ctreectrl-class_18.cpp)]
 
-##  <a name="mapitemtoaccid"></a>  CTreeCtrl::MapItemToAccID
+##  <a name="mapitemtoaccid"></a>Ctreecı:: MapItemToAccID
 
-Geçerli ağaç görünümü denetimindeki ağaç görünümü öğesinin belirtilen tanıtıcı erişilebilirlik tanımlayıcının eşler.
+Geçerli ağaç görünümü denetimindeki bir ağaç görünümü öğesinin belirtilen işleyicisini bir erişilebilirlik tanımlayıcısına eşler.
 
 ```
 UINT MapItemToAccID(HTREEITEM hItem) const;
@@ -1533,33 +1533,33 @@ UINT MapItemToAccID(HTREEITEM hItem) const;
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*hItem*|[in] Bir ağaç görünümü öğesi denetiminde tanıtıcısı. Daha fazla bilgi için *hItem* üyesi [TVITEMEX](/windows/desktop/api/commctrl/ns-commctrl-tagtvitemexa) yapısı.|
+|*hItem*|'ndaki Denetimdeki ağaç görünümü öğesinin bir tutamacı. Daha fazla bilgi için [TVITEMEX](/windows/win32/api/commctrl/ns-commctrl-tvitemexw) yapısının *hItem* üyesine bakın.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Karşılık gelen erişilebilirlik tanımlayıcı *hItem* parametresi.
+*Hitem* parametresine karşılık gelen erişilebilirlik tanımlayıcısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Erişilebilirlik Yardımcıları ile engelli yardımcı olan uygulamaları bilgisayarlara kullanılır. Erişilebilirlik tanımlayıcısı tarafından kullanılan `IAccessible` benzersiz bir pencerede bir öğe belirtmek için arabirim. Erişilebilirlik tanımlayıcıları hakkında daha fazla bilgi için "Hakkında Active Accessibility desteği" konusuna arama [Microsoft Developer Network](https://go.microsoft.com/fwlink/p/?linkid=56322).
+Erişilebilirlik yardımları, Engelli kişilerin bilgisayarları kullanmasına yardımcı olan uygulamalardır. Bir erişilebilirlik tanımlayıcısı, `IAccessible` bir penceredeki bir öğeyi benzersiz olarak belirtmek için arabirimi tarafından kullanılır. Erişilebilirlik tanımlayıcıları hakkında daha fazla bilgi için, [Microsoft Developer Network](https://go.microsoft.com/fwlink/p/?linkid=56322)'Teki "etkin erişilebilirlik desteği hakkında" konusunu aratın.
 
-Bu yöntem gönderir [TVM_MAPHTREEITEMTOACCID](/windows/desktop/Controls/tvm-maphtreeitemtoaccid) Windows SDK'da açıklanan ileti.
+Bu yöntem, Windows SDK açıklanan [TVM_MAPHTREEITEMTOACCID](/windows/win32/Controls/tvm-maphtreeitemtoaccid) iletisini gönderir.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği bir değişkene tanımlar `m_treeCtrl`, yani geçerli ağaç görünümü denetimi erişmek için kullanılır. Kod örneği, işaretsiz bir tamsayı ve birkaç HTREEITEM değişkenleri ayrıca tanımlar. Bu değişkenler bir sonraki örnekte kullanılır.
+Aşağıdaki kod örneği, geçerli ağaç görünüm denetimine `m_treeCtrl`erişmek için kullanılan bir değişkenini tanımlar. Kod örneği Ayrıca işaretsiz bir tamsayı ve birkaç HTREEITEM değişkenini tanımlar. Bu değişkenler bir sonraki örnekte kullanılır.
 
 [!code-cpp[NVC_MFC_CTreeCtrl_s1#1](../../mfc/reference/codesnippet/cpp/ctreectrl-class_17.h)]
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği, bir ağaç görünümü denetimi öğesi için bir kimlik numarasını alır. Gösterilmez, kod örneği, önceki bir bölümde oluşan bir kök ülke/bölge düğümü Amerika Birleşik Devletleri, Pennsylvania ve Washington durumları için alt düğümleri ve ağaç öğeleri şehirlerin Eyaletler için bir ağaç-görünüm oluşturduk. Bu kod örneği, kök ülke/bölge düğüm için benzersiz tanımlayıcı sayısını alır.
+Aşağıdaki kod örneği bir ağaç görünümü Denetim öğesi için bir kimlik numarası edinir. Kod örneği 'nin önceki bir bölümünde, Birleşik Devletler için bir kök ülke/bölge düğümü, Pennsylvania ve Washington durumlarının alt düğümleri ve bu durumlardaki şehirler için ağaç öğeleri içeren bir ağaç görünümü oluşturduk. Bu kod örneği, kök ülke/bölge düğümü için benzersiz bir kimlik numarası alır.
 
 [!code-cpp[NVC_MFC_CTreeCtrl_s1#2](../../mfc/reference/codesnippet/cpp/ctreectrl-class_31.cpp)]
 
-##  <a name="select"></a>  CTreeCtrl::Select
+##  <a name="select"></a>Ctreecu:: Select
 
-Belirtilen ağaç görünümü öğesi seçin, öğeyi görünüme gidin veya bir Sürükle ve bırak işleminin hedef belirtmek için kullanılan stilde öğe Çiz için bu işlevi çağırın.
+Verilen ağaç görünümü öğesini seçmek için bu işlevi çağırın, öğeyi görünüme kaydırın veya bir sürükle ve bırak işleminin hedefini göstermek için kullanılan stilde öğeyi yeniden çizin.
 
 ```
 BOOL Select(
@@ -1570,32 +1570,32 @@ BOOL Select(
 ### <a name="parameters"></a>Parametreler
 
 *hItem*<br/>
-Ağaç öğesi işleyici.
+Ağaç öğesi tutamacı.
 
 *nCode*<br/>
-Gerçekleştirilecek eylem türü. Bu parametre aşağıdaki değerlerden biri olabilir:
+Gerçekleştirilecek eylemin türü. Bu parametre aşağıdaki değerlerden biri olabilir:
 
-- TVGN_CARET seçimi verilen öğe için ayarlar.
+- TVGN_CARET seçimi belirtilen öğeye ayarlar.
 
-- TVGN_DROPHILITE yeniden çizer stili belirtilen öğeyi bir Sürükle ve bırak işleminin hedef belirtmek için kullanılır.
+- TVGN_DROPHILITE bir sürükle ve bırak işleminin hedefini göstermek için kullanılan stilde verilen öğeyi yeniden çizer.
 
-- Ağaç görüntüleme dikey böylece verilen öğe ilk görünür öğe TVGN_FIRSTVISIBLE kaydırır.
+- TVGN_FIRSTVISIBLE, ağaç görünümünü dikey olarak kaydırır, böylece verilen öğe ilk görünür öğe olur.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi durumda 0.
+Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsa *nCode* TVGN_CARET, değeri üst pencere TVN_SELCHANGING ve TVN_SELCHANGED bildirim iletilerini alır. Ayrıca, belirtilen öğe bir daraltılmış bir üst öğenin alt ise, üst öğenin alt öğelerinin listesini belirtilen öğeyi görüntülemek için genişletilir. Bu durumda, ana pencereyi TVN_ITEMEXPANDING ve TVN_ITEMEXPANDED bildirim iletilerini alır.
+*NCode* değeri TVGN_CARET içeriyorsa, ana pencere TVN_SELCHANGING ve TVN_SELCHANGED Notification iletilerini alır. Ayrıca, belirtilen öğe Daraltılan bir üst öğenin alt öğesi ise, üst öğenin alt öğe listesi belirtilen öğeyi açığa çıkarmak için genişletilir. Bu durumda, üst pencere TVN_ITEMEXPANDING ve TVN_ITEMEXPANDED bildirim iletilerini alır.
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [CTreeCtrl::HitTest](#hittest).
+  [Ctreeci:: HitTest](#hittest)örneğine bakın.
 
-##  <a name="selectdroptarget"></a>  CTreeCtrl::SelectDropTarget
+##  <a name="selectdroptarget"></a>Ctreeci:: SelectDropTarget
 
-Öğesi, bir Sürükle ve bırak işleminin hedef belirtmek için kullanılan stilinde yeniden çizmek için bu işlevi çağırın.
+Bir sürükle ve bırak işleminin hedefini göstermek için kullanılan stilde öğeyi yeniden çizmek için bu işlevi çağırın.
 
 ```
 BOOL SelectDropTarget(HTREEITEM hItem);
@@ -1604,19 +1604,19 @@ BOOL SelectDropTarget(HTREEITEM hItem);
 ### <a name="parameters"></a>Parametreler
 
 *hItem*<br/>
-Ağaç öğesi işleyici.
+Ağaç öğesi tutamacı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi durumda 0.
+Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CTreeCtrl#9](../../mfc/reference/codesnippet/cpp/ctreectrl-class_9.cpp)]
 
-##  <a name="selectitem"></a>  CTreeCtrl::SelectItem
+##  <a name="selectitem"></a>Ctreeci:: SelectItem
 
-Belirtilen ağaç görünümü öğeyi seçmek için bu işlevi çağırın.
+Verilen ağaç görünümü öğesini seçmek için bu işlevi çağırın.
 
 ```
 BOOL SelectItem(HTREEITEM hItem);
@@ -1625,23 +1625,23 @@ BOOL SelectItem(HTREEITEM hItem);
 ### <a name="parameters"></a>Parametreler
 
 *hItem*<br/>
-Ağaç öğesi işleyici.
+Ağaç öğesi tutamacı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi durumda 0.
+Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsa *hItem* NULL ise, sonra da bu işlev hiçbir öğeyi seçer.
+*Hitem* null ise, bu işlev hiçbir öğe seçer.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CTreeCtrl#26](../../mfc/reference/codesnippet/cpp/ctreectrl-class_29.cpp)]
 
-##  <a name="selectsetfirstvisible"></a>  CTreeCtrl::SelectSetFirstVisible
+##  <a name="selectsetfirstvisible"></a>Ctreeci:: SelectSetFirstVisible
 
-Böylece verilen öğe ilk görünür öğesi ağaç görünümü dikey olarak kaydırmak için bu işlevi çağırın.
+Verilen öğenin ilk görünür öğe olması için ağaç görünümünü dikey olarak kaydırmak üzere bu işlevi çağırın.
 
 ```
 BOOL SelectSetFirstVisible(HTREEITEM hItem);
@@ -1650,23 +1650,23 @@ BOOL SelectSetFirstVisible(HTREEITEM hItem);
 ### <a name="parameters"></a>Parametreler
 
 *hItem*<br/>
-Ağaç öğesi görünen ilk öğenin ayarlanacak tanıtıcısı.
+İlk görünür öğe olarak ayarlanacak ağaç öğesi tutamacı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi durumda 0.
+Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlev TVM_SELECTITEM ve TVGN_FIRSTVISIBLE ileti parametreleri içeren pencereyi bir ileti gönderir.
+İşlevi, TVM_SELECTITEM ve TVGN_FIRSTVISIBLE ileti parametreleriyle pencereye bir ileti gönderir.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CTreeCtrl#28](../../mfc/reference/codesnippet/cpp/ctreectrl-class_32.cpp)]
 
-##  <a name="setautoscrollinfo"></a>  CTreeCtrl::SetAutoscrollInfo
+##  <a name="setautoscrollinfo"></a>Ctreeci:: Setautoscrollinınfo
 
-Geçerli ağaç görünümü denetimi otomatik kaydırma oranını belirler.
+Geçerli ağaç görünümü denetiminin otomatik kaydırma oranını ayarlar.
 
 ```
 BOOL SetAutoscrollInfo(
@@ -1678,34 +1678,34 @@ BOOL SetAutoscrollInfo(
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*uPixelsPerSec*|[in] Kaydırmak için saniye başına piksel sayısı.|
-|*uUpdateTime*|[in] Güncelleştirmeleri denetimi arasındaki zaman aralığı.|
+|*uPixelsPerSec*|'ndaki Saniye başına kaydırılan piksel sayısı.|
+|*Uıupdatetime*|'ndaki Denetimin güncelleştirmeleri arasındaki zaman aralığı.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Her zaman TRUE değerini döndürür.
+Her zaman TRUE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şu anda görünür olmayan bir öğe görünümüne gidin otomatik kaydırma parametreleri kullanılır. Ağaç görünümü denetimi, genişletilmiş açıklanan stili TVS_EX_AUTOHSCROLL olmalıdır [ağaç görünümü denetimi genişletilmiş stiller](/windows/desktop/Controls/tree-view-control-window-extended-styles).
+Otomatik kaydırma parametreleri, şu anda görünür olmayan bir öğeyi görüntülemek için kullanılır. Ağaç görünümü denetimi, [ağaç görünümü denetimi genişletilmiş STILLERINDE](/windows/win32/Controls/tree-view-control-window-extended-styles)TVS_EX_AUTOHSCROLL genişletilmiş stiline sahip olmalıdır.
 
-Bu yöntem gönderir [TVM_SETAUTOSCROLLINFO](/windows/desktop/Controls/tvm-setautoscrollinfo) Windows SDK'da açıklanan ileti.
+Bu yöntem, Windows SDK açıklanan [TVM_SETAUTOSCROLLINFO](/windows/win32/Controls/tvm-setautoscrollinfo) iletisini gönderir.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği bir değişkene tanımlar `m_treeCtrl`, yani geçerli ağaç görünümü denetimi erişmek için kullanılır. Kod örneği, işaretsiz bir tamsayı ve birkaç HTREEITEM değişkenleri ayrıca tanımlar. Bu değişkenler bir sonraki örnekte kullanılır.
+Aşağıdaki kod örneği, geçerli ağaç görünüm denetimine `m_treeCtrl`erişmek için kullanılan bir değişkenini tanımlar. Kod örneği Ayrıca işaretsiz bir tamsayı ve birkaç HTREEITEM değişkenini tanımlar. Bu değişkenler bir sonraki örnekte kullanılır.
 
 [!code-cpp[NVC_MFC_CTreeCtrl_s1#1](../../mfc/reference/codesnippet/cpp/ctreectrl-class_17.h)]
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği, geçerli ağaç görünümü denetiminin otomatik kaydırma davranışını ayarlar. Gösterilmez, kod örneği, önceki bir bölümde oluşan bir kök ülke/bölge düğümü Amerika Birleşik Devletleri, Pennsylvania ve Washington durumları için alt düğümleri ve ağaç öğeleri şehirlerin Eyaletler için bir ağaç-görünüm oluşturduk. Odaklanmış ağaç öğesi görüntülemek için otomatik olarak kaydırma gerekir böylece kasıtlı olarak ağaç görünümü denetimi dar yaptık. Kod örneği, ağaç görünümünde öğedir kadar her 5 saniyede bir saniyede 30 piksel otomatik olarak kaydırmak için ağaç görünümü denetimi ayarlar.
+Aşağıdaki kod örneği, geçerli ağaç görünümü denetiminin otomatik kaydırma davranışını ayarlar. Kod örneği 'nin önceki bir bölümünde, Birleşik Devletler için bir kök ülke/bölge düğümü, Pennsylvania ve Washington durumlarının alt düğümleri ve bu durumlardaki şehirler için ağaç öğeleri içeren bir ağaç görünümü oluşturduk. Ağaç görünümü denetimini, odağı olan ağaç öğesini görüntüleyecek şekilde otomatik olarak kaydırılacak şekilde daraltın. Kod örneği ağaç görünümü denetimini, ağaç öğesi görünümilerene kadar 5 saniyede bir saniyede otomatik olarak kaydırmak üzere ayarlar.
 
 [!code-cpp[NVC_MFC_CTreeCtrl_s1#4](../../mfc/reference/codesnippet/cpp/ctreectrl-class_33.cpp)]
 
-##  <a name="setbkcolor"></a>  CTreeCtrl::SetBkColor
+##  <a name="setbkcolor"></a>Ctreeci:: SetBkColor
 
-Bu üye işlevi Win32 ileti davranışı uygulayan [TVM_SETBKCOLOR](/windows/desktop/Controls/tvm-setbkcolor)Windows SDK içinde açıklandığı gibi.
+Bu üye işlevi, Windows SDK açıklandığı gibi Win32 iletisinin [TVM_SETBKCOLOR](/windows/win32/Controls/tvm-setbkcolor)davranışını uygular.
 
 ```
 COLORREF SetBkColor(COLORREF clr);
@@ -1713,20 +1713,20 @@ COLORREF SetBkColor(COLORREF clr);
 
 ### <a name="parameters"></a>Parametreler
 
-*CLR*<br/>
-Yeni arka plan rengi içeren COLORREF değeri. Bu değer -1 ise, Denetim sistem renk arka plan rengini kullanmaya geri döner.
+*clr*<br/>
+Yeni arka plan rengini içeren bir COLORREF değeri. Bu değer-1 ise, denetim arka plan rengi için sistem renginin kullanılmasına döndürülür.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli metin rengi temsil eden bir COLORREF değer. Bu değer -1 ise, denetimin sistem renk metin rengini kullanıyor.
+Geçerli metin rengini temsil eden bir COLORREF değeri. Bu değer-1 ise, denetim metin rengi için sistem rengini kullanıyor.
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [CTreeCtrl::SetTextColor](#settextcolor).
+  [Ctreeci:: SetTextColor](#settextcolor)örneğine bakın.
 
-##  <a name="setcheck"></a>  CTreeCtrl::SetCheck
+##  <a name="setcheck"></a>Ctreeci:: SetCheck
 
-Ağaç denetim öğesi için onay durumunu ayarlamak için bu üye işlevini çağırın.
+Bir ağaç denetim öğesi için denetim durumunu ayarlamak üzere bu üye işlevini çağırın.
 
 ```
 BOOL SetCheck(
@@ -1737,18 +1737,18 @@ BOOL SetCheck(
 ### <a name="parameters"></a>Parametreler
 
 *hItem*<br/>
-Onay durumu değişikliği almak için HTREEITEM.
+Denetim durumu değişikliğini alacak olan HTREEıTEM.
 
 *fCheck*<br/>
-Ağaç denetim öğesi işaretli veya işaretsiz olacak şekilde olup olmadığını gösterir. Varsayılan olarak, `SetCheck` denetlenmesi için öğesini ayarlar.
+Ağaç denetimi öğesinin işaretli veya işaretlenmemiş olup olmayacağını gösterir. Varsayılan olarak, `SetCheck` öğeyi denetlenecek olarak ayarlar.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi durumda 0.
+Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ağaç denetim öğesi aldığında ( *fCheck* TRUE olarak ayarlayın), öğe ile bitişik bir onay işareti görünür.
+Ağaç Denetim öğesi işaretlendiğinde ( *fCheck* değeri true olarak ayarlandığında), öğe bitişik bir onay işaretiyle görüntülenir.
 
 ### <a name="example"></a>Örnek
 
@@ -1756,13 +1756,13 @@ Ağaç denetim öğesi aldığında ( *fCheck* TRUE olarak ayarlayın), öğe il
 
 ### <a name="example"></a>Örnek
 
-Onay kutularını kullanmak için bir ağaç denetimi doldurma önce TVS_CHECKBOXES ayarlayın.
+CheckBox 'ları kullanmak için ağaç denetimini doldurmadan önce TVS_CHECKBOXES ayarlayın.
 
 [!code-cpp[NVC_MFC_CTreeCtrl#30](../../mfc/reference/codesnippet/cpp/ctreectrl-class_35.cpp)]
 
-##  <a name="setextendedstyle"></a>  CTreeCtrl::SetExtendedStyle
+##  <a name="setextendedstyle"></a>Ctreecl:: Sebir Dedstyle
 
-Geçerli ağaç görünümü denetimi için genişletilmiş stiller ayarlar.
+Geçerli ağaç görünümü denetimi için Genişletilmiş stilleri ayarlar.
 
 ```
 DWORD SetExtendedStyle(
@@ -1774,34 +1774,34 @@ DWORD SetExtendedStyle(
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*dwExMask*|[in] Geçerli ağaç görünümü denetiminde hangi stilleri, bu yöntem tarafından etkilenen belirten bir bit maskesi. Bu parametre sıfır ise, göz ardı edilir ve değerini *dwExStyles* parametresi için ağaç görünümü denetimi atanır.<br /><br /> Sıfır veya bir bit düzeyinde birleşimi (veya) açıklanan stilleri belirtmek [ağaç görünümü denetimi genişletilmiş stiller](/windows/desktop/Controls/tree-view-control-window-extended-styles).|
-|*dwExStyles*|[in] Geçerli ağaç görünümünde hangi stilleri belirleme veya temizleme için Denetim belirten bir bit maskesi.<br /><br /> Stilleri bir birleşimini ayarlamak için Bitsel bir birleşimi (veya) açıklanan stilleri belirtmek [ağaç görünümü denetimi genişletilmiş stiller](/windows/desktop/Controls/tree-view-control-window-extended-styles). Bir stil kümesi temizlemek için sıfır belirtin.|
+|*dwExMask*|'ndaki Geçerli ağaç görünümü denetimindeki stillerin Bu yöntemden etkilendiğini belirten bir bit maskesi. Bu parametre sıfırsa, yok sayılır ve *dwExStyles* parametresinin değeri ağaç görünümü denetimine atanır.<br /><br /> [Ağaç görünümü denetimi genişletilmiş stillerinde](/windows/win32/Controls/tree-view-control-window-extended-styles)tanımlanmış, sıfır veya bit düzeyinde BIRLEŞIM (veya) belirtin.|
+|*dwExStyles*|'ndaki Geçerli ağaç görünümü denetimindeki hangi stillerin ayarlanacağını veya temizlemenizi belirten bir bit maskesi.<br /><br /> Stillerin bir birleşimini ayarlamak için, [ağaç görünümü denetimi genişletilmiş stillerinde](/windows/win32/Controls/tree-view-control-window-extended-styles)tanımlanmış bir bit düzeyinde BIRLEŞIM (veya) belirtin. Bir stil kümesini temizlemek için sıfır değerini belirtin.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Denetim stilleri genişletilmiş önceki içeren bir değer.
+Önceki genişletilmiş denetim stillerini içeren bir değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, belirtilen stilleri temizler *dwExMask* parametresi, belirtilen stilleri sonra Ayarlar *dwExStyles* parametresi. BITS karşılık gelen genişletilmiş stiller *dwExMask* değiştirin.
+Bu yöntem *dwExMask* parametresinde belirtilen stilleri temizler, sonra *dwExStyles* parametresinde belirtilen stilleri ayarlar. Yalnızca *dwExMask* içindeki bite karşılık gelen genişletilmiş stiller değişir.
 
-Bu yöntem gönderir [TVM_SETEXTENDEDSTYLE](/windows/desktop/Controls/tvm-setextendedstyle) Windows SDK'da açıklanan ileti.
+Bu yöntem, Windows SDK açıklanan [TVM_SETEXTENDEDSTYLE](/windows/win32/Controls/tvm-setextendedstyle) iletisini gönderir.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği bir değişkene tanımlar `m_treeCtrl`, yani geçerli ağaç görünümü denetimi erişmek için kullanılır. Kod örneği, işaretsiz bir tamsayı ve birkaç HTREEITEM değişkenleri ayrıca tanımlar. Bu değişkenler bir sonraki örnekte kullanılır.
+Aşağıdaki kod örneği, geçerli ağaç görünüm denetimine `m_treeCtrl`erişmek için kullanılan bir değişkenini tanımlar. Kod örneği Ayrıca işaretsiz bir tamsayı ve birkaç HTREEITEM değişkenini tanımlar. Bu değişkenler bir sonraki örnekte kullanılır.
 
 [!code-cpp[NVC_MFC_CTreeCtrl_s1#1](../../mfc/reference/codesnippet/cpp/ctreectrl-class_17.h)]
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği, genişletilmiş TVS_EX_AUTOHSCROLL stili için geçerli ağaç görünümü denetimi ekler. Gösterilmez, kod örneği, önceki bir bölümde oluşan bir kök ülke/bölge düğümü Amerika Birleşik Devletleri, Pennsylvania ve Washington durumları için alt düğümleri ve ağaç öğeleri şehirlerin Eyaletler için bir ağaç-görünüm oluşturduk. Odaklanmış ağaç öğesi görüntülemek için otomatik olarak kaydırma gerekir böylece kasıtlı olarak ağaç görünümü denetimi dar yaptık.
+Aşağıdaki kod örneği, TVS_EX_AUTOHSCROLL genişletilmiş stilini geçerli ağaç görünümü denetimine ekler. Kod örneği 'nin önceki bir bölümünde, Birleşik Devletler için bir kök ülke/bölge düğümü, Pennsylvania ve Washington durumlarının alt düğümleri ve bu durumlardaki şehirler için ağaç öğeleri içeren bir ağaç görünümü oluşturduk. Ağaç görünümü denetimini, odağı olan ağaç öğesini görüntüleyecek şekilde otomatik olarak kaydırılacak şekilde daraltın.
 
 [!code-cpp[NVC_MFC_CTreeCtrl_s1#3](../../mfc/reference/codesnippet/cpp/ctreectrl-class_36.cpp)]
 
-##  <a name="setimagelist"></a>  CTreeCtrl::SetImageList
+##  <a name="setimagelist"></a>Ctreeci:: SetImageList
 
-Normal ayarlamak için bu işlevi çağırın veya durumu resim listesi için bir ağaç denetimi görüntülemek ve yeni görüntüleri kullanarak bir denetimi yeniden çizin.
+Bir ağaç görünümü denetimi için normal veya durum görüntüsü listesini ayarlamak ve yeni görüntüleri kullanarak denetimi yeniden çizmek için bu işlevi çağırın.
 
 ```
 CImageList* SetImageList(
@@ -1812,26 +1812,26 @@ CImageList* SetImageList(
 ### <a name="parameters"></a>Parametreler
 
 *pImageList*<br/>
-Görüntü listesi atamak için işaretçi. Varsa *pImageList* NULL ise tüm görüntüleri ağaç görünümü denetimi kaldırılır.
+Atanacak görüntü listesine yönelik işaretçi. *PImageList* null ise, tüm görüntüler ağaç görünümü denetiminden kaldırılır.
 
 *nImageListType*<br/>
-Ayarlanacak görüntü listesi türü. Görüntü listesi aşağıdaki değerlerden biri olabilir:
+Ayarlanacak görüntü listesinin türü. Görüntü listesi aşağıdaki değerlerden biri olabilir:
 
-- Ağaç görünümü öğesi için seçili ve nonselected görüntüleri içeren normal görüntü listesi TVSIL_NORMAL ayarlar. Bu durum katmana görüntüler için kullanmanız gerekir.
+- TVSIL_NORMAL, ağaç görünümü öğesi için seçilen ve seçili olmayan görüntüleri içeren normal görüntü listesini ayarlar. Bu durumu, kaplama görüntüleri için kullanmalısınız.
 
-- Kullanıcı tanımlı bir durumda olan ağaç görünümü öğe için görüntüleri içeren durumu görüntü listesi TVSIL_STATE ayarlar.
+- TVSIL_STATE, Kullanıcı tanımlı durumda olan ağaç görünümü öğelerinin görüntülerini içeren durum görüntüsü listesini ayarlar.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Önceki görüntü listesi, varsa için işaretçi; bulunmazsa null değerini DÖNDÜRÜR.
+Önceki görüntü listesine işaretçi varsa; Aksi takdirde NULL.
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [CTreeCtrl::GetImageList](#getimagelist).
+  [Ctreeci:: GetImageList](#getimagelist)örneğine bakın.
 
-##  <a name="setindent"></a>  CTreeCtrl::SetIndent
+##  <a name="setindent"></a>Ctreeci:: Setgirintile
 
-Girintileme için bir ağaç görünümü denetiminin genişliğini ayarlamak ve denetim yeni genişliğini yansıtacak şekilde yeniden düzenlenen için bu işlevi çağırın.
+Bir ağaç görünümü denetiminin girintileme genişliğini ayarlamak ve denetimi yeni genişliği yansıtacak şekilde yeniden çizmek için bu işlevi çağırın.
 
 ```
 void SetIndent(UINT nIndent);
@@ -1839,16 +1839,16 @@ void SetIndent(UINT nIndent);
 
 ### <a name="parameters"></a>Parametreler
 
-*nIndent*<br/>
-Girintiyi piksel cinsinden genişliği. Varsa *nIndent* küçük sistem tarafından tanımlanan en küçük genişliği, sistem tarafından tanımlanan en yeni genişliğini ayarlanır.
+*Ngirintile*<br/>
+Girintideki piksel cinsinden genişlik. *Ngirintile* sistem tarafından tanımlanan en düşük genişlikle azsa, yeni genişlik sistem tarafından tanımlanan en düşük genişlik olarak ayarlanır.
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [CTreeCtrl::GetIndent](#getindent).
+  [Ctreeci:: Getgirintile](#getindent)örneğine bakın.
 
-##  <a name="setinsertmark"></a>  CTreeCtrl::SetInsertMark
+##  <a name="setinsertmark"></a>Ctreeci:: Setınsertmark
 
-Bu üye işlevi Win32 ileti davranışı uygulayan [TVM_SETINSERTMARK](/windows/desktop/Controls/tvm-setinsertmark)Windows SDK içinde açıklandığı gibi.
+Bu üye işlevi, Windows SDK açıklandığı gibi Win32 iletisinin [TVM_SETINSERTMARK](/windows/win32/Controls/tvm-setinsertmark)davranışını uygular.
 
 ```
 BOOL SetInsertMark(
@@ -1859,22 +1859,22 @@ BOOL SetInsertMark(
 ### <a name="parameters"></a>Parametreler
 
 *hItem*<br/>
-Hangi öğe ekleme işareti yerleştirilecek belirten HTREEITEM. Bu bağımsız değişken NULL ise, ekleme işareti kaldırıldı.
+Hangi öğeyi ekleme işaretinin yerleştirileceğini belirten HTREEıTEM. Bu bağımsız değişken NULL ise, ekleme işareti kaldırılır.
 
 *fAfter*<br/>
-Önce veya sonra belirtilen öğe ekleme işareti konur, belirten Boole değeri. Bu bağımsız değişkeni sıfır değilse, ekleme işareti öğeden sonra yerleştirilecek. Bu bağımsız değişkeni sıfır ise, önce öğesi ekleme işareti yerleştirilir.
+Ekleme işaretinin belirtilen öğeden önce veya sonra yerleştirilip yerleştirildiğini belirten BOOL değeri. Bu bağımsız değişken sıfır değilse, ekleme işareti öğeden sonra yer alır. Bu bağımsız değişken sıfırsa, ekleme işareti öğeden önce yerleştirilecek.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi durumda 0.
+Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CTreeCtrl#31](../../mfc/reference/codesnippet/cpp/ctreectrl-class_37.cpp)]
 
-##  <a name="setinsertmarkcolor"></a>  CTreeCtrl::SetInsertMarkColor
+##  <a name="setinsertmarkcolor"></a>Ctreeci:: Setınsertmarkcolor
 
-Bu üye işlevi Win32 ileti davranışı uygulayan [TVM_SETINSERTMARKCOLOR](/windows/desktop/Controls/tvm-setinsertmarkcolor)Windows SDK içinde açıklandığı gibi.
+Bu üye işlevi, Windows SDK açıklandığı gibi Win32 iletisinin [TVM_SETINSERTMARKCOLOR](/windows/win32/Controls/tvm-setinsertmarkcolor)davranışını uygular.
 
 ```
 COLORREF SetInsertMarkColor(COLORREF clrNew);
@@ -1883,19 +1883,19 @@ COLORREF SetInsertMarkColor(COLORREF clrNew);
 ### <a name="parameters"></a>Parametreler
 
 *clrNew*<br/>
-Yeni ekleme işareti rengi içeren COLORREF değeri.
+Yeni ekleme işareti rengini içeren bir COLORREF değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Önceki ekleme işareti rengi içeren COLORREF değeri.
+Önceki ekleme işareti rengini içeren bir COLORREF değeri.
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [CTreeCtrl::GetInsertMarkColor](#getinsertmarkcolor).
+  [Ctreeci:: GetInsertMarkColor](#getinsertmarkcolor)örneğine bakın.
 
-##  <a name="setitem"></a>  CTreeCtrl::SetItem
+##  <a name="setitem"></a>Ctreeci:: SetItem
 
-Belirtilen ağaç görünümü öğesi özniteliklerini ayarlamak için bu işlevi çağırın.
+Belirtilen ağaç görünümü öğesinin özniteliklerini ayarlamak için bu işlevi çağırın.
 
 ```
 BOOL SetItem(TVITEM* pItem);
@@ -1914,49 +1914,49 @@ BOOL SetItem(
 ### <a name="parameters"></a>Parametreler
 
 *pItem*<br/>
-Bir işaretçi bir [TVITEM](/windows/desktop/api/commctrl/ns-commctrl-tagtvitema) Windows SDK içinde açıklanan şekilde yeni öğe içeren yapısı öznitelikleri.
+Windows SDK bölümünde açıklandığı gibi, yeni öğe özniteliklerini içeren bir [Tvidıtem](/windows/win32/api/commctrl/ns-commctrl-tvitemw) yapısına yönelik işaretçi.
 
 *hItem*<br/>
-Ayarlanacak niteliklerini olan öğesinin tanıtıcısı. Bkz: `hItem` üyesi `TVITEM` Windows SDK'sındaki yapısı.
+Öznitelikleri ayarlanacak öğenin tanıtıcısı. Windows SDK yapının`TVITEM`üyesinebakın. `hItem`
 
 *nMask*<br/>
-Ayarlamak için hangi özniteliklerin belirten tamsayı. Bkz: `mask` üyesi `TVITEM` yapısı.
+Ayarlanacak öznitelikleri belirten tamsayı. `TVITEM` Yapının `mask` üyesine bakın.
 
 *lpszItem*<br/>
-Öğenin metni içeren bir dize adresi.
+Öğenin metnini içeren bir dizenin adresi.
 
-*Bir*<br/>
-Ağaç görünümü denetiminin resim listesi görüntüde öğenin dizini. Bkz: `iImage` üyesi `TVITEM` yapısı.
+*Ngörüntü*<br/>
+Ağaç görünümü denetiminin görüntü listesindeki öğenin resminin dizini. `TVITEM` Yapının `iImage` üyesine bakın.
 
 *nSelectedImage*<br/>
-Ağaç görünümü denetiminin resim listesi, seçilen görüntü öğenin dizini. Bkz: `iSelectedImage` üyesi `TVITEM` yapısı.
+Öğenin seçili resminin ağaç görünümü denetiminin görüntü listesinde dizini. `TVITEM` Yapının `iSelectedImage` üyesine bakın.
 
 *nDurum*<br/>
-Öğenin durumları için değerleri belirtir. Bkz: `State` üyesi `TVITEM` yapısı.
+Öğe durumlarının değerlerini belirtir. `TVITEM` Yapının `State` üyesine bakın.
 
 *nStateMask*<br/>
-Hangi durumları ayarlanacak belirtir. Bkz: `stateMask` üyesi `TVITEM` yapısı.
+Hangi durumların ayarlanacağını belirtir. `TVITEM` Yapının `stateMask` üyesine bakın.
 
 *lParam*<br/>
-Öğeyle ilişkili 32 bit uygulamaya özgü bir değer.
+Öğeyle ilişkili 32 bitlik uygulamaya özgü bir değer.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi durumda 0.
+Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İçinde `TVITEM` yapısını `hItem` üye öğesini tanımlar ve `mask` ayarlamak için hangi özniteliklerin üye belirtir.
+Yapıda, üye öğeyi tanımlar ve `mask` üye hangi özniteliklerin ayarlanacağını belirler. `hItem` `TVITEM`
 
-Varsa `mask` üye veya *nMask* parametresinin belirttiği TVIF_TEXT değeri `pszText` üye veya *lpszItem* null ile sonlandırılmış bir dize adresi olduğu ve `cchTextMax` üye yok sayılır. Varsa `mask` (veya *nMask*) TVIF_STATE değeri belirtir `stateMask` üyesi veya *nStateMask* parametresinin belirttiği değiştirmek için hangi öğesi durumları ve `state` üyesi veya *nDurum* parametresi bu durumlar için değerler içerir.
+`cchTextMax` `pszText` Üye veya nMask parametresi TVIF_TEXT değerini belirtirse üye veya lpszItem, null ile sonlandırılmış bir dizenin adresidir ve üye yok sayılır. `mask` `stateMask` `state` (Veya nMask) TVIF_STATE değerini belirtirse, Member veya nStateMask parametresi hangi öğe durumlarının değiştirileceği ve üyenin ya da nState parametresinin şu değerleri içerdiğini belirtir `mask` Bu durumlar.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CTreeCtrl#32](../../mfc/reference/codesnippet/cpp/ctreectrl-class_38.cpp)]
 
-##  <a name="setitemdata"></a>  CTreeCtrl::SetItemData
+##  <a name="setitemdata"></a>Ctreeci:: SetItemData
 
-Belirtilen öğe ile ilişkili 32-bit uygulamaya özgü değer ayarlamak için bu işlevi çağırın.
+Belirtilen öğeyle ilişkili 32 bitlik uygulamaya özgü değeri ayarlamak için bu işlevi çağırın.
 
 ```
 BOOL SetItemData(
@@ -1967,22 +1967,22 @@ BOOL SetItemData(
 ### <a name="parameters"></a>Parametreler
 
 *hItem*<br/>
-Alınacak olan verilerdir öğesinin tanıtıcısı.
+Verileri alınacak olan öğenin tanıtıcısı.
 
 *dwData*<br/>
-Tarafından belirtilen öğe ile ilişkili bir 32-bit uygulamaya özgü değer *hItem*.
+*Hitem*tarafından belirtilen öğeyle ilişkili 32 bitlik uygulamaya özgü bir değer.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi durumda 0.
+Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CTreeCtrl#33](../../mfc/reference/codesnippet/cpp/ctreectrl-class_39.cpp)]
 
-##  <a name="setitemexpandedimageindex"></a>  CTreeCtrl::SetItemExpandedImageIndex
+##  <a name="setitemexpandedimageindex"></a>Ctreeci:: SetItemExpandedImageIndex
 
-Görüntüyü belirtilen öğe geçerli ağaç görünümü denetiminin genişletilmiş durumdayken dizinini ayarlar.
+Geçerli ağaç görünümü denetiminin belirtilen öğesi genişletilmiş durumdaysa görüntülenecek görüntünün dizinini ayarlar.
 
 ```
 BOOL SetItemExpandedImageIndex(
@@ -1994,32 +1994,32 @@ BOOL SetItemExpandedImageIndex(
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*hItem*|[in] Bir ağaç görünümü denetimi öğesi işler.|
-|*iExpandedImage*|[in] Görüntüyü belirtilen öğeyi genişletilmiş durumdayken dizini.|
+|*hItem*|'ndaki Ağaç görünümü Denetim öğesi için tanıtıcı.|
+|*ıexpandedımage*|'ndaki Belirtilen öğe genişletilmiş durumdaysa görüntülenecek görüntünün dizini.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.
+Bu yöntem başarılı olursa TRUE; Aksi takdirde, FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [TVM_SETITEM](/windows/desktop/Controls/tvm-setitem) Windows SDK'da açıklanan ileti. Bu yöntem atar *iExpandedImage* parametresi `iExpandedImage` üyesi bir [TVITEMEX](/windows/desktop/api/commctrl/ns-commctrl-tagtvitemexa) yapısı ve iletide yapısı kullanır.
+Bu yöntem, Windows SDK açıklanan [TVM_SETITEM](/windows/win32/Controls/tvm-setitem) iletisini gönderir. Bu yöntem, bir [TVITEMEX](/windows/win32/api/commctrl/ns-commctrl-tvitemexw) yapısının `iExpandedImage` üyesine *ıexpandedımage* parametresini atar ve sonra bu yapıyı iletide kullanır.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği bir değişkene tanımlar `m_treeCtrl`, yani geçerli ağaç görünümü denetimi erişmek için kullanılır. Kod örneği, işaretsiz bir tamsayı ve birkaç HTREEITEM değişkenleri ayrıca tanımlar. Bu değişkenler bir sonraki örnekte kullanılır.
+Aşağıdaki kod örneği, geçerli ağaç görünüm denetimine `m_treeCtrl`erişmek için kullanılan bir değişkenini tanımlar. Kod örneği Ayrıca işaretsiz bir tamsayı ve birkaç HTREEITEM değişkenini tanımlar. Bu değişkenler bir sonraki örnekte kullanılır.
 
 [!code-cpp[NVC_MFC_CTreeCtrl_s1#1](../../mfc/reference/codesnippet/cpp/ctreectrl-class_17.h)]
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği olduğunu belirlemek için basit bir test olmadığını [CTreeCtrl::GetItemExpandedImageIndex](#getitemexpandedimageindex) yöntemi ayarlanan değer döndürür [CTreeCtrl::SetItemExpandedImageIndex](#setitemexpandedimageindex) yöntemi. Gösterilmez, kod örneği, önceki bir bölümde oluşan bir kök ülke/bölge düğümü Amerika Birleşik Devletleri, Pennsylvania ve Washington durumları için alt düğümleri ve ağaç öğeleri şehirlerin Eyaletler için bir ağaç-görünüm oluşturduk.
+Aşağıdaki kod örneği, [Ctreecind:: GetItemExpandedImageIndex](#getitemexpandedimageindex) yönteminin [Ctreecind:: SetItemExpandedImageIndex](#setitemexpandedimageindex) yöntemi tarafından ayarlanan değeri döndürüp döndürmediğini belirlemede basit bir sınamadır. Kod örneği 'nin önceki bir bölümünde, Birleşik Devletler için bir kök ülke/bölge düğümü, Pennsylvania ve Washington durumlarının alt düğümleri ve bu durumlardaki şehirler için ağaç öğeleri içeren bir ağaç görünümü oluşturduk.
 
 [!code-cpp[NVC_MFC_CTreeCtrl_s1#8](../../mfc/reference/codesnippet/cpp/ctreectrl-class_40.cpp)]
 
-##  <a name="setitemheight"></a>  CTreeCtrl::SetItemHeight
+##  <a name="setitemheight"></a>Ctreeci:: SetItemHeight
 
-Bu üye işlevi Win32 ileti davranışı uygulayan [tvm_setıtemheıght](/windows/desktop/Controls/tvm-setitemheight)Windows SDK içinde açıklandığı gibi.
+Bu üye işlevi, Windows SDK açıklandığı gibi Win32 iletisinin [TVM_SETITEMHEIGHT](/windows/win32/Controls/tvm-setitemheight)davranışını uygular.
 
 ```
 SHORT SetItemHeight(SHORT cyHeight);
@@ -2028,19 +2028,19 @@ SHORT SetItemHeight(SHORT cyHeight);
 ### <a name="parameters"></a>Parametreler
 
 *cyHeight*<br/>
-Ağaç görünümünde piksel yeni her öğenin yüksekliğini belirtir. Ardından bu bağımsız değişken Görüntü yüksekliği altındaysa, Görüntü yüksekliği için ayarlanır. Bu bağımsız değişken bile değilse, bunu aşağı yuvarlanır en yakın çift değer. Bu bağımsız değişkeni -1 olması durumunda, denetimin, varsayılan öğe yüksekliğini kullanma yöntemine döner.
+Ağaç görünümündeki her öğenin piksel cinsinden yeni yüksekliğini belirtir. Bu bağımsız değişken görüntülerin yüksekliğinden küçükse, görüntülerin yüksekliğine ayarlanır. Bu bağımsız değişken bile eşit değilse, en yakın eşit değere yuvarlanır. Bu bağımsız değişken-1 ise, denetim varsayılan öğe yüksekliğini kullanmaya geçer.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Önceki yüksekliğini piksel cinsinden öğe.
+Öğelerin piksel cinsinden önceki yüksekliği.
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [CTreeCtrl::GetItemHeight](#getitemheight).
+  [Ctreeci:: GetItemHeight](#getitemheight)örneğine bakın.
 
-##  <a name="setitemimage"></a>  CTreeCtrl::SetItemImage
+##  <a name="setitemimage"></a>Ctreecımpl:: Setitemımage
 
-Görüntüleri bir öğesiyle ilişkilendirir.
+Görüntüleri bir öğeyle ilişkilendirir.
 
 ```
 BOOL SetItemImage(
@@ -2052,33 +2052,33 @@ BOOL SetItemImage(
 ### <a name="parameters"></a>Parametreler
 
 *hItem*<br/>
-Ayarlanacak olan görüntüsüdür öğesinin tanıtıcısı.
+Görüntüsü ayarlanacak olan öğenin tanıtıcısı.
 
-*Bir*<br/>
-Ağaç görünümü denetiminin resim listesi görüntüde öğenin dizini.
+*Ngörüntü*<br/>
+Ağaç görünümü denetiminin görüntü listesindeki öğenin resminin dizini.
 
 *nSelectedImage*<br/>
-Ağaç görünümü denetiminin resim listesi, seçilen görüntü öğenin dizini.
+Öğenin seçili resminin ağaç görünümü denetiminin görüntü listesinde dizini.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi durumda 0.
+Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Her öğe bir ağaç görünümü denetiminde ilişkili bit eşlemli görüntülerin çifti olabilir. Görüntüleri bir öğenin etiket sol tarafında görünür. Bir görüntü öğesi seçilir ve diğer öğe seçilmediğinde görüntülendiğinde görüntülenir. Örneğin, yok seçildiğinde bir öğe seçildiğinde bir klasör Aç ve kapalı klasör görüntülenebilir.
+Ağaç görünümü denetimindeki her öğe ile ilişkili bir çift bit eşlenmiş görüntü olabilir. Görüntüler, bir öğenin etiketinin sol tarafında görünür. Öğe seçildiğinde bir görüntü görüntülenir ve öğe seçilmediğinde diğeri görüntülenir. Örneğin, bir öğe seçildiğinde açık bir klasör ve seçili olmadığında kapalı bir klasör görüntülenebilir.
 
-Öğenin resmi ve ağaç görünümü denetiminin resim listesi içinde seçilen görüntü dizini ayarlamak için bu işlevi çağırın.
+Öğe resminin görüntüsünü ve seçilen görüntüsünü ağaç görünümü denetiminin görüntü listesi içinde ayarlamak için bu işlevi çağırın.
 
-Görüntüleri hakkında daha fazla bilgi için bkz. [Cımagelist](../../mfc/reference/cimagelist-class.md).
+Görüntüler hakkında daha fazla bilgi için bkz. [CImageList](../../mfc/reference/cimagelist-class.md).
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [CTreeCtrl::GetItemImage](#getitemimage).
+  [Ctreecımpl:: GetItemImage](#getitemimage)örneğine bakın.
 
-##  <a name="setitemstate"></a>  CTreeCtrl::SetItemState
+##  <a name="setitemstate"></a>Ctreeci:: SetItemState
 
-Tarafından belirtilen öğe durumunu ayarlar *hItem*.
+*Hitem*tarafından belirtilen öğenin durumunu ayarlar.
 
 ```
 BOOL SetItemState(
@@ -2090,29 +2090,29 @@ BOOL SetItemState(
 ### <a name="parameters"></a>Parametreler
 
 *hItem*<br/>
-Ayarlanacak durumu olan öğesinin tanıtıcısı.
+Durumu ayarlanacak olan öğenin tanıtıcısı.
 
 *nDurum*<br/>
-Öğe için yeni durum belirtir.
+Öğe için yeni durumlar belirtir.
 
 *nStateMask*<br/>
-Hangi durumları değiştirilmesi gerektiğini belirtir.
+Hangi durumların değiştirildiğini belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi durumda 0.
+Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Durumları hakkında daha fazla bilgi için bkz: [CTreeCtrl::GetItem](#getitem).
+Durumlar hakkında bilgi için bkz. [Ctreecu:: GetItem](#getitem).
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [CTreeCtrl::GetItemState](#getitemstate).
+  [Ctreeci:: GetItemState](#getitemstate)örneğine bakın.
 
-##  <a name="setitemstateex"></a>  CTreeCtrl::SetItemStateEx
+##  <a name="setitemstateex"></a>Ctreeci:: Setıtemstateex
 
-Geçerli ağaç görünümü denetiminde genişletilmiş belirtilen öğenin durumunu ayarlar.
+Geçerli ağaç görünümü denetiminde belirtilen öğenin genişletilmiş durumunu ayarlar.
 
 ```
 BOOL SetItemStateEx(
@@ -2124,32 +2124,32 @@ BOOL SetItemStateEx(
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*hItem*|[in] Bir ağaç görünümü denetimi öğesi işler.|
-|*uStateEx*|[in] Genişletilmiş durumu öğesi. Daha fazla bilgi için `uStateEx` üyesi [TVITEMEX](/windows/desktop/api/commctrl/ns-commctrl-tagtvitemexa) yapısı.|
+|*hItem*|'ndaki Ağaç görünümü Denetim öğesi için tanıtıcı.|
+|*uStateEx*|'ndaki Öğenin genişletilmiş durumu. Daha fazla bilgi için [TVITEMEX](/windows/win32/api/commctrl/ns-commctrl-tvitemexw) yapısının `uStateEx` üyesine bakın.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.
+Bu yöntem başarılı olursa TRUE; Aksi takdirde, FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem gönderir [TVM_SETITEM](/windows/desktop/Controls/tvm-setitem) Windows SDK'da açıklanan ileti. Bu yöntem atar *uStateEx* parametresi `uStateEx` üyesi bir [TVITEMEX](/windows/desktop/api/commctrl/ns-commctrl-tagtvitemexa) yapısı ve iletide yapısı kullanır.
+Bu yöntem, Windows SDK açıklanan [TVM_SETITEM](/windows/win32/Controls/tvm-setitem) iletisini gönderir. Bu yöntem, bir [TVITEMEX](/windows/win32/api/commctrl/ns-commctrl-tvitemexw) yapısının `uStateEx` üyesine *uStateEx* parametresini atar ve sonra bu yapıyı iletide kullanır.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği bir değişkene tanımlar `m_treeCtrl`, yani geçerli ağaç görünümü denetimi erişmek için kullanılır. Kod örneği, işaretsiz bir tamsayı ve birkaç HTREEITEM değişkenleri ayrıca tanımlar. Bu değişkenler bir sonraki örnekte kullanılır.
+Aşağıdaki kod örneği, geçerli ağaç görünüm denetimine `m_treeCtrl`erişmek için kullanılan bir değişkenini tanımlar. Kod örneği Ayrıca işaretsiz bir tamsayı ve birkaç HTREEITEM değişkenini tanımlar. Bu değişkenler bir sonraki örnekte kullanılır.
 
 [!code-cpp[NVC_MFC_CTreeCtrl_s1#1](../../mfc/reference/codesnippet/cpp/ctreectrl-class_17.h)]
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği, bir ağaç görünümü öğesi devre dışı durumuna ayarlar. Gösterilmez, kod örneği, önceki bir bölümde oluşan bir kök ülke/bölge düğümü Amerika Birleşik Devletleri, Pennsylvania ve Washington durumları için alt düğümleri ve ağaç öğeleri şehirlerin Eyaletler için bir ağaç-görünüm oluşturduk. Bu kod örneği, Pennsylvania düğümü devre dışı durumuna ayarlar.
+Aşağıdaki kod örneği, ağaç görünümü öğesini devre dışı durumuna ayarlar. Kod örneği 'nin önceki bir bölümünde, Birleşik Devletler için bir kök ülke/bölge düğümü, Pennsylvania ve Washington durumlarının alt düğümleri ve bu durumlardaki şehirler için ağaç öğeleri içeren bir ağaç görünümü oluşturduk. Bu kod örneği Pennsylvania düğümünü devre dışı durumuna ayarlar.
 
 [!code-cpp[NVC_MFC_CTreeCtrl_s1#7](../../mfc/reference/codesnippet/cpp/ctreectrl-class_41.cpp)]
 
-##  <a name="setitemtext"></a>  CTreeCtrl::SetItemText
+##  <a name="setitemtext"></a>Ctreeci:: Setıtemtext
 
-Tarafından belirtilen öğenin metnini ayarlar *hItem*.
+*Hitem*tarafından belirtilen öğenin metnini ayarlar.
 
 ```
 BOOL SetItemText(
@@ -2160,22 +2160,22 @@ BOOL SetItemText(
 ### <a name="parameters"></a>Parametreler
 
 *hItem*<br/>
-Ayarlanacak metni olan öğesinin tanıtıcısı.
+Metni ayarlanacak öğenin tanıtıcısı.
 
 *lpszItem*<br/>
-Öğe için yeni metin içeren bir dize adresi
+Öğe için yeni metni içeren bir dizenin adresi
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi durumda 0.
+Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CTreeCtrl#34](../../mfc/reference/codesnippet/cpp/ctreectrl-class_42.cpp)]
 
-##  <a name="setlinecolor"></a>  CTreeCtrl::SetLineColor
+##  <a name="setlinecolor"></a>Ctreeci:: SetLineColor
 
-Geçerli ağaç görünümü denetiminin çizgi rengini ayarlamak için bu üye işlevini çağırın.
+Ağaç görünümü denetiminin geçerli çizgi rengini ayarlamak için bu üye işlevini çağırın.
 
 ```
 COLORREF SetLineColor(COLORREF clrNew = CLR_DEFAULT);
@@ -2192,15 +2192,15 @@ Yeni çizgi rengi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi win32 ileti davranışı uygulayan [TVM_SETLINECOLOR](/windows/desktop/Controls/tvm-setlinecolor)Windows SDK içinde açıklandığı gibi.
+Bu üye işlevi, Windows SDK açıklandığı gibi Win32 iletisinin [TVM_SETLINECOLOR](/windows/win32/Controls/tvm-setlinecolor)davranışını uygular.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CTreeCtrl#35](../../mfc/reference/codesnippet/cpp/ctreectrl-class_43.cpp)]
 
-##  <a name="setscrolltime"></a>  CTreeCtrl::SetScrollTime
+##  <a name="setscrolltime"></a>Ctreeci:: SetScrollTime
 
-Ağaç görünümü denetiminin maksimum kaydırma süresini ayarlamak için bu üye işlevini çağırın.
+Ağaç görünümü denetimi için maksimum kaydırma süresini ayarlamak için bu üye işlevi çağırın.
 
 ```
 UINT SetScrollTime(UINT uScrollTime);
@@ -2209,19 +2209,19 @@ UINT SetScrollTime(UINT uScrollTime);
 ### <a name="parameters"></a>Parametreler
 
 *uScrollTime*<br/>
-Yeni maksimum kaydırma süre, milisaniye cinsinden. Bu değer 100'den az ise olacaktır en fazla 100 yuvarlanır.
+Milisaniye cinsinden yeni en uzun kaydırma süresi. Bu değer 100 ' dan küçükse, 100 ' e yuvarlanır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Önceki en yüksek kaydırma süre, milisaniye cinsinden.
+Önceki en uzun kaydırma süresi (milisaniye cinsinden).
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi win32 ileti davranışı uygulayan [TVM_SETSCROLLTIME](/windows/desktop/Controls/tvm-setscrolltime)Windows SDK içinde açıklandığı gibi.
+Bu üye işlevi, Windows SDK açıklandığı gibi Win32 iletisinin [TVM_SETSCROLLTIME](/windows/win32/Controls/tvm-setscrolltime)davranışını uygular.
 
-##  <a name="settextcolor"></a>  CTreeCtrl::SetTextColor
+##  <a name="settextcolor"></a>Ctreeci:: SetTextColor
 
-Bu üye işlevi Win32 ileti davranışı uygulayan [TVM_SETTEXTCOLOR](/windows/desktop/Controls/tvm-settextcolor)Windows SDK içinde açıklandığı gibi.
+Bu üye işlevi, Windows SDK açıklandığı gibi Win32 iletisinin [TVM_SETTEXTCOLOR](/windows/win32/Controls/tvm-settextcolor)davranışını uygular.
 
 ```
 COLORREF SetTextColor(COLORREF clr);
@@ -2229,20 +2229,20 @@ COLORREF SetTextColor(COLORREF clr);
 
 ### <a name="parameters"></a>Parametreler
 
-*CLR*<br/>
-Yeni metin rengi içeren COLORREF değeri. Bu bağımsız değişkeni -1 olması durumunda, Denetim metin rengini sistem renk kullanmaya döner.
+*clr*<br/>
+Yeni metin rengini içeren bir COLORREF değeri. Bu bağımsız değişken-1 ise, denetim metin rengi için sistem renginin kullanılmasına döndürülür.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Önceki metin rengi temsil eden bir COLORREF değer. Bu değer -1 ise, Denetim metin rengini sistem renk kullanıyordu.
+Önceki metin rengini temsil eden bir COLORREF değeri. Bu değer-1 ise, denetim metin rengi için sistem rengini kullanmıştı.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CTreeCtrl#36](../../mfc/reference/codesnippet/cpp/ctreectrl-class_44.cpp)]
 
-##  <a name="settooltips"></a>  CTreeCtrl::SetToolTips
+##  <a name="settooltips"></a>Ctreeci:: SetToolTip 'ler
 
-Bu üye işlevi Win32 ileti davranışı uygulayan [TVM_SETTOOLTIPS](/windows/desktop/Controls/tvm-settooltips)Windows SDK içinde açıklandığı gibi.
+Bu üye işlevi, Windows SDK açıklandığı gibi Win32 iletisinin [TVM_SETTOOLTIPS](/windows/win32/Controls/tvm-settooltips)davranışını uygular.
 
 ```
 CToolTipCtrl* SetToolTips(CToolTipCtrl* pWndTip);
@@ -2251,23 +2251,23 @@ CToolTipCtrl* SetToolTips(CToolTipCtrl* pWndTip);
 ### <a name="parameters"></a>Parametreler
 
 *pWndTip*<br/>
-Bir işaretçi bir [CToolTipCtrl](../../mfc/reference/ctooltipctrl-class.md) ağaç denetimi kullanan bir nesne.
+Ağaç denetiminin kullanacağı [CToolTipCtrl](../../mfc/reference/ctooltipctrl-class.md) nesnesine yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir işaretçi bir [CToolTipCtrl](../../mfc/reference/ctooltipctrl-class.md) hiçbir araç ipuçları daha önce kullanıldıysa denetim ya da NULL tarafından daha önce kullanılan araç ipucu içeren nesne.
+Daha önce denetim tarafından kullanılan araç ipucunu içeren bir [CToolTipCtrl](../../mfc/reference/ctooltipctrl-class.md) nesnesi işaretçisi veya daha önce araç ipucu KULLANıLMıYORDU null.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Araç ipuçları kullanmak için oluşturduğunuz TVS_NOTOOLTIPS stili belirtmeniz `CTreeCtrl` nesne.
+Araç ipuçlarını kullanmak için, `CTreeCtrl` nesneyi oluştururken TVS_NOTOOLTIPS stilini belirtin.
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [CTreeCtrl::GetToolTips](#gettooltips).
+  [Ctreeci:: GetToolTip](#gettooltips)örneğine bakın.
 
-##  <a name="showinfotip"></a>  CTreeCtrl::ShowInfoTip
+##  <a name="showinfotip"></a>Ctreeccu:: Showwinfotip
 
-Bilgi İpucu belirtilen öğe için geçerli bir ağaç görünümü denetiminde gösterir.
+Geçerli ağaç görünümü denetiminde belirtilen öğe için bilgi ipucunu görüntüler.
 
 ```
 void ShowInfoTip(HTREEITEM hItem);
@@ -2277,17 +2277,17 @@ void ShowInfoTip(HTREEITEM hItem);
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*hItem*|[in] Bir ağaç görünümü öğesi denetiminde işleyici. Daha fazla bilgi için `hItem` üyesi [TVITEMEX](/windows/desktop/api/commctrl/ns-commctrl-tagtvitemexa) yapısı.|
+|*hItem*|'ndaki Denetimdeki ağaç görünümü öğe için bir işleyici. Daha fazla bilgi için [TVITEMEX](/windows/win32/api/commctrl/ns-commctrl-tvitemexw) yapısının `hItem` üyesine bakın.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Araç ipuçları ve infotips arasındaki fark hakkında daha fazla bilgi için "Araç ipuçları ve Infotips" konusuna arama [Microsoft Developer Network](https://go.microsoft.com/fwlink/p/?linkid=56322).
+Araç ipuçları ve bilgi ipuçları arasındaki fark hakkında daha fazla bilgi için, [Microsoft Developer Network](https://go.microsoft.com/fwlink/p/?linkid=56322)'Teki "araç Ipuçları ve bilgi ipuçları" konusunu aratın.
 
-Bu yöntem gönderir [TVM_SHOWINFOTIP](/windows/desktop/Controls/tvm-showinfotip) Windows SDK'da açıklanan ileti.
+Bu yöntem, Windows SDK açıklanan [TVM_SHOWINFOTIP](/windows/win32/Controls/tvm-showinfotip) iletisini gönderir.
 
-##  <a name="sortchildren"></a>  CTreeCtrl::SortChildren
+##  <a name="sortchildren"></a>Ctreecn:: SortChildren
 
-Ağaç görünümü denetiminde sağlanan üst öğenin alt öğeleri alfabetik olarak sıralamak için bu işlevi çağırın.
+Bir ağaç görünümü denetimindeki verilen üst öğenin alt öğelerini alfabetik olarak sıralamak için bu işlevi çağırın.
 
 ```
 BOOL SortChildren(HTREEITEM hItem);
@@ -2296,23 +2296,23 @@ BOOL SortChildren(HTREEITEM hItem);
 ### <a name="parameters"></a>Parametreler
 
 *hItem*<br/>
-Tanıtıcı üst öğenin alt öğelerinin sıralanması üzeresiniz. Varsa *hItem* null, sıralama ağacı kökünden devam eder.
+Alt öğeleri sıralanacak olan üst öğenin tanıtıcısı. *Hitem* null ise sıralama ağacın kökünden devam eder.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi durumda 0.
+Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`SortChildren` Ağaç çalışmamasını; yalnızca en yakınındaki alt öğeleri *hItem* göre sıralanır.
+`SortChildren`ağaçta hiçbir işlem uygulanmaz; yalnızca en hızlı bir *Hitem* öğesi sıralanır.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CTreeCtrl#37](../../mfc/reference/codesnippet/cpp/ctreectrl-class_45.cpp)]
 
-##  <a name="sortchildrencb"></a>  CTreeCtrl::SortChildrenCB
+##  <a name="sortchildrencb"></a>Ctreecm:: Sortchıldrencb
 
-Ağaç görünümü öğeleri öğeleri karşılaştıran bir uygulama tanımlı geri çağırma işlevini kullanarak sıralamak için bu işlevi çağırın.
+Öğeleri karşılaştıran uygulama tanımlı geri çağırma işlevini kullanarak ağaç görünümü öğelerini sıralamak için bu işlevi çağırın.
 
 ```
 BOOL SortChildrenCB(LPTVSORTCB pSort);
@@ -2321,17 +2321,17 @@ BOOL SortChildrenCB(LPTVSORTCB pSort);
 ### <a name="parameters"></a>Parametreler
 
 *pSort*<br/>
-İşaretçi bir [TVSORTCB](/windows/desktop/api/commctrl/ns-commctrl-tagtvsortcb) yapısı.
+[Tvsortcb](/windows/win32/api/commctrl/ns-commctrl-tvsortcb) yapısına yönelik işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi durumda 0.
+Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yapının karşılaştırma işlevi `lpfnCompare`, negatif bir değer döndürmelidir ikinci ilk öğenin önünde, bir pozitif değer ilk öğenin ikinci izlemelidir ya da sıfır iki öğeyi eşdeğerdir.
+Yapının karşılaştırma işlevi `lpfnCompare`, ilk öğenin ikinciden önce gelmesi gerekiyorsa pozitif bir değer döndürmelidir, ilk öğe ikinciden sonra, ikinci bir değer ise sıfır veya iki öğe eşdeğerdir.
 
-*LParam1* ve *lParam2* parametreleri karşılık `lParam` üyesi [TVITEM](/windows/desktop/api/commctrl/ns-commctrl-tagtvitema) Karşılaştırılan iki öğe için yapılandırın. *LParamSort* karşılık gelen parametre `lParam` üyesi `TV_SORTCB` yapısı.
+*LParam1* ve *lParam2* parametreleri karşılaştırılan iki öğe için `lParam` [tvıdıtem](/windows/win32/api/commctrl/ns-commctrl-tvitemw) yapısının üyesine karşılık gelir. *LParamSort* parametresi `lParam` `TV_SORTCB` yapının üyesine karşılık gelir.
 
 ### <a name="example"></a>Örnek
 

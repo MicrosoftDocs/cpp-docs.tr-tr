@@ -1,21 +1,21 @@
 ---
-title: başvuru (C++ COM özniteliği)
+title: ref (C++ com özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.ref
 helpviewer_keywords:
 - ref attribute
 ms.assetid: 67e82d3e-07d9-4ef8-bf2b-0a4491d12557
-ms.openlocfilehash: f051fe577087d81515ddf0b44dfb15ad0fb2c616
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e7dd927f385b039f1909a4bdf1998ea5a0b39264
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62407425"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69514120"
 ---
 # <a name="ref-c"></a>ref (C++)
 
-Bir başvuru işaretçi tanımlar.
+Başvuru işaretçisini tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -25,11 +25,11 @@ Bir başvuru işaretçi tanımlar.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Ref** C++ özniteliği ile aynı işlevlere sahip [ref](/windows/desktop/Midl/ref) MIDL özniteliği.
+**Ref** C++ özniteliği [ref](/windows/win32/Midl/ref) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod nasıl kullanılacağını gösterir **ref** özniteliği:
+Aşağıdaki kod **ref** özniteliğinin nasıl kullanılacağını gösterir:
 
 ```cpp
 // cpp_attr_ref_ref.cpp
@@ -49,12 +49,12 @@ __interface IFireTabCtrl
 
 |||
 |-|-|
-|**İçin geçerlidir**|**TypeDef**, parametre arabirim, arabirim yöntemi|
+|**Uygulama hedefi**|**typedef**, Interface parametresi, Interface yöntemi|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|Yok.|
+|**Gerekli öznitelikler**|Yok.|
 |**Geçersiz öznitelikler**|Yok.|
 
-Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
+Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

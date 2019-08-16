@@ -1,5 +1,5 @@
 ---
-title: Ipointerınactiveımpl sınıfı
+title: Ipoıb ınterınactiveımpl sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - IPointerInactiveImpl
@@ -12,19 +12,19 @@ helpviewer_keywords:
 - inactive objects
 - IPointerInactiveImpl class
 ms.assetid: e1fe9ea6-d38a-4527-9112-eb344771e0b7
-ms.openlocfilehash: d7d9f048fceb3a569b024d7fe2b87f30a828b68e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6fb5d9f2bcbdeda61f32947bf339d134c4924b72
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62274834"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69495663"
 ---
-# <a name="ipointerinactiveimpl-class"></a>Ipointerınactiveımpl sınıfı
+# <a name="ipointerinactiveimpl-class"></a>Ipoıb ınterınactiveımpl sınıfı
 
-Bu sınıfın uyguladığı `IUnknown` ve [Ipointerınactive'i](/windows/desktop/api/ocidl/nn-ocidl-ipointerinactive) arabirim yöntemleri.
+Bu sınıf ve `IUnknown` , [ıpoıb etkin olmayan](/windows/win32/api/ocidl/nn-ocidl-ipointerinactive) arabirim yöntemlerini uygular.
 
 > [!IMPORTANT]
->  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.
+>  Bu sınıf ve üyeleri Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -35,8 +35,8 @@ class IPointerInactiveImpl
 
 #### <a name="parameters"></a>Parametreler
 
-*T*<br/>
-Sınıfınız, türetilen `IPointerInactiveImpl`.
+*ŞI*<br/>
+Sınıfınız, öğesinden `IPointerInactiveImpl`türetilir.
 
 ## <a name="members"></a>Üyeler
 
@@ -44,19 +44,19 @@ Sınıfınız, türetilen `IPointerInactiveImpl`.
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[IPointerInactiveImpl::GetActivationPolicy](#getactivationpolicy)|Nesne için geçerli etkinleştirme ilkesini alır. ATL uygulamasını E_NOTIMPL döndürür.|
-|[IPointerInactiveImpl::OnInactiveMouseMove](#oninactivemousemove)|Fareyi üzerine nesneyi gösteren taşındı nesne fare olayları tetikleyebilir bildirir. ATL uygulamasını E_NOTIMPL döndürür.|
-|[IPointerInactiveImpl::OnInactiveSetCursor](#oninactivesetcursor)|Etkin olmayan bir nesne için fare işaretçisini ayarlar. ATL uygulamasını E_NOTIMPL döndürür.|
+|[Ipoıb ınterınactiveımpl:: GetActivationPolicy](#getactivationpolicy)|Nesne için geçerli etkinleştirme ilkesini alır. ATL uygulama E_NOTIMPL döndürür.|
+|[Ipoıb ınterınactiveımpl:: OnInactiveMouseMove](#oninactivemousemove)|Nesnenin fare olaylarını tetiktabileceğini belirten nesne, fare işaretçisinin üzerine taşındığını bildirir. ATL uygulama E_NOTIMPL döndürür.|
+|[Ipoıb ınterınactiveımpl:: OnInactiveSetCursor](#oninactivesetcursor)|Etkin olmayan nesne için fare işaretçisini ayarlar. ATL uygulama E_NOTIMPL döndürür.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Etkin olmayan bir nesne yalnızca yüklenen veya çalışmıyor biridir. Etkin bir nesne, etkin olmayan bir nesne Windows fare ve klavye mesajlarının alamaz. Bu nedenle, etkin olmayan nesneler daha az kaynak kullanın ve genellikle daha verimlidir.
+Etkin olmayan bir nesne, yalnızca yüklenen veya çalışan bir nesnedir. Etkin bir nesneden farklı olarak, etkin olmayan bir nesne Windows fare ve klavye iletilerini alamaz. Bu nedenle, etkin olmayan nesneler daha az kaynak kullanır ve genellikle daha etkilidir.
 
-[Ipointerınactive'i](/windows/desktop/api/ocidl/nn-ocidl-ipointerinactive) nesnenin en düşük düzeyde etkin olmayan kalan sırasında fare etkileşimi desteklemek arabirim sağlar. Bu işlev, denetimler için özellikle yararlıdır.
+[Ipoıb devre dışı](/windows/win32/api/ocidl/nn-ocidl-ipointerinactive) arabirimi, bir nesnenin, etkin olmadığında en düşük düzeyde fare etkileşimini desteklemesini sağlar. Bu işlevsellik özellikle denetimler için yararlıdır.
 
-Sınıf `IPointerInactiveImpl` uygulayan `IPointerInactive` E_NOTIMPL yalnızca döndürerek yöntemleri. Ancak, bunu uygulayan `IUnknown` dökümünü almak için bilgi göndererek hata ayıklama cihazı oluşturur.
+Sınıfı `IPointerInactiveImpl` ,`IPointerInactive` yöntemleri yalnızca E_NOTIMPL döndürerek uygular. Ancak, hata ayıklama `IUnknown` yapılarında döküm cihazına bilgi göndererek uygular.
 
-**İle ilgili makaleler** [ATL öğretici](../../atl/active-template-library-atl-tutorial.md), [ATL projesi oluşturma](../../atl/reference/creating-an-atl-project.md)
+**Ilgili makaleler** ATL [öğreticisi](../../atl/active-template-library-atl-tutorial.md), [ATL projesi oluşturma](../../atl/reference/creating-an-atl-project.md)
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -66,9 +66,9 @@ Sınıf `IPointerInactiveImpl` uygulayan `IPointerInactive` E_NOTIMPL yalnızca 
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlctl.h
+**Üstbilgi:** atlctl. h
 
-##  <a name="getactivationpolicy"></a>  IPointerInactiveImpl::GetActivationPolicy
+##  <a name="getactivationpolicy"></a>Ipoıb ınterınactiveımpl:: GetActivationPolicy
 
 Nesne için geçerli etkinleştirme ilkesini alır.
 
@@ -78,15 +78,15 @@ HRESULT GetActivationPolicy(DWORD* pdwPolicy);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Returns E_NOTIMPL.
+E_NOTIMPL döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [IPointerInactive::GetActivationPolicy](/windows/desktop/api/ocidl/nf-ocidl-ipointerinactive-getactivationpolicy) Windows SDK içinde.
+Windows SDK bkz. [ıpoıb INTERACTIVE:: GetActivationPolicy](/windows/win32/api/ocidl/nf-ocidl-ipointerinactive-getactivationpolicy) .
 
-##  <a name="oninactivemousemove"></a>  IPointerInactiveImpl::OnInactiveMouseMove
+##  <a name="oninactivemousemove"></a>Ipoıb ınterınactiveımpl:: OnInactiveMouseMove
 
-Fareyi üzerine nesneyi gösteren taşındı nesne fare olayları tetikleyebilir bildirir.
+Nesnenin fare olaylarını tetiktabileceğini belirten nesne, fare işaretçisinin üzerine taşındığını bildirir.
 
 ```
 HRESULT OnInactiveMouseMove(
@@ -98,15 +98,15 @@ HRESULT OnInactiveMouseMove(
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Returns E_NOTIMPL.
+E_NOTIMPL döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [IPointerInactive::OnInactiveMouseMove](/windows/desktop/api/ocidl/nf-ocidl-ipointerinactive-oninactivemousemove) Windows SDK içinde.
+Windows SDK için bkz. [ıpoıb INTERACTIVE:: OnInactiveMouseMove](/windows/win32/api/ocidl/nf-ocidl-ipointerinactive-oninactivemousemove) .
 
-##  <a name="oninactivesetcursor"></a>  IPointerInactiveImpl::OnInactiveSetCursor
+##  <a name="oninactivesetcursor"></a>Ipoıb ınterınactiveımpl:: OnInactiveSetCursor
 
-Etkin olmayan bir nesne için fare işaretçisini ayarlar.
+Etkin olmayan nesne için fare işaretçisini ayarlar.
 
 ```
 HRESULT OnInactiveSetCursor(
@@ -119,12 +119,12 @@ HRESULT OnInactiveSetCursor(
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Returns E_NOTIMPL.
+E_NOTIMPL döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [IPointerInactive::OnInactiveSetCursor](/windows/desktop/api/ocidl/nf-ocidl-ipointerinactive-oninactivesetcursor) Windows SDK içinde.
+Windows SDK bkz. ' de [ıpoıb INTERACTIVE:: OnInactiveSetCursor](/windows/win32/api/ocidl/nf-ocidl-ipointerinactive-oninactivesetcursor) .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)
+[Sınıfa genel bakış](../../atl/atl-class-overview.md)

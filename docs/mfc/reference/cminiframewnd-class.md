@@ -12,16 +12,16 @@ helpviewer_keywords:
 - CMiniFrameWnd [MFC], Create
 - CMiniFrameWnd [MFC], CreateEx
 ms.assetid: b8f534ed-0532-4d8e-9657-5595cf677749
-ms.openlocfilehash: 70f090e2d9830ccfdd98640b54ff07440064d542
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 45b4698cc70487a6c3fe1470fe27f7b5c4f95402
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62337823"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69504595"
 ---
 # <a name="cminiframewnd-class"></a>CMiniFrameWnd sınıfı
 
-Genelde kayan araç çubukları geçici olarak görülen bir yarım yükseklikte pencereyi temsil eder.
+Genellikle kayan araç çubukları etrafında görülen yarı yükseklikli bir çerçeve penceresini temsil eder.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -35,22 +35,22 @@ class CMiniFrameWnd : public CFrameWnd
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CMiniFrameWnd::CMiniFrameWnd](#cminiframewnd)|Oluşturur bir `CMiniFrameWnd` nesne.|
+|[CMiniFrameWnd:: CMiniFrameWnd](#cminiframewnd)|Bir `CMiniFrameWnd` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CMiniFrameWnd::Create](#create)|Oluşturur bir `CMiniFrameWnd` yapım sonra nesne.|
-|[CMiniFrameWnd::CreateEx](#createex)|Oluşturur bir `CMiniFrameWnd` yapım sonra (ek seçenekler) nesne.|
+|[CMiniFrameWnd:: Create](#create)|Oluşturma sonrasında `CMiniFrameWnd` bir nesne oluşturur.|
+|[CMiniFrameWnd:: CreateEx](#createex)|Oluşturma işleminden `CMiniFrameWnd` sonra bir nesne (ek seçeneklerle birlikte) oluşturur.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu mini çerçeve pencereleri simge durumuna küçült/Ekranı Kapla düğmeleri olmayan veya menüler ve yalnızca tek tıklamayla bunları kapatmak için sistem menüsünden zorunda dışında normal çerçeve windows gibi davranır.
+Bu mini çerçeve pencereleri, küçük pencere pencereleri gibi davranır, ancak en aza indirmeler/ekranı kaplamaları ve Menüleri kapatmak için yalnızca sistem menüsüne tek tıklamanın olması gerekir.
 
-Kullanılacak bir `CMiniFrameWnd` nesne, nesne ilk tanımlayın. Ardından çağırın [Oluştur](#create) Mini çerçeve penceresini görüntülemek için üye işlevi.
+Bir `CMiniFrameWnd` nesnesi kullanmak için önce nesneyi tanımlayın. Sonra da mini çerçeve penceresini göstermek için üye [Oluştur](#create) işlevini çağırın.
 
-Nasıl kullanılacağı hakkında daha fazla bilgi için `CMiniFrameWnd` nesneleri başlıklı makaleye bakın [Docking ve kayan araç çubukları](../../mfc/docking-and-floating-toolbars.md).
+Nesneleri kullanma `CMiniFrameWnd` hakkında daha fazla bilgi için, bkz. [yerleştirme ve kayan araç çubukları](../../mfc/docking-and-floating-toolbars.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -66,11 +66,11 @@ Nasıl kullanılacağı hakkında daha fazla bilgi için `CMiniFrameWnd` nesnele
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxwin.h
+**Üstbilgi:** Afxwin. h
 
-##  <a name="cminiframewnd"></a>  CMiniFrameWnd::CMiniFrameWnd
+##  <a name="cminiframewnd"></a>CMiniFrameWnd:: CMiniFrameWnd
 
-Oluşturur bir `CMiniFrameWnd` nesne, ancak pencere oluşturmaz.
+Bir `CMiniFrameWnd` nesne oluşturur, ancak pencereyi oluşturmaz.
 
 ```
 CMiniFrameWnd();
@@ -78,11 +78,11 @@ CMiniFrameWnd();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Pencere oluşturmak için arama [CMiniFrameWnd::Create](#create).
+Pencereyi oluşturmak için [CMiniFrameWnd:: Create](#create)öğesini çağırın.
 
-##  <a name="create"></a>  CMiniFrameWnd::Create
+##  <a name="create"></a>CMiniFrameWnd:: Create
 
-Windows mini çerçeve penceresi oluşturur ve ona ekler `CMiniFrameWnd` nesne.
+Windows mini çerçeve penceresini oluşturur ve `CMiniFrameWnd` nesneye ekler.
 
 ```
 virtual BOOL Create(
@@ -97,58 +97,58 @@ virtual BOOL Create(
 ### <a name="parameters"></a>Parametreler
 
 *lpClassName*<br/>
-Windows sınıf adları null ile sonlandırılmış dizeye işaret eder. Sınıf adı genel kayıtlı herhangi bir ad olabilir [AfxRegisterWndClass](application-information-and-management.md#afxregisterwndclass) işlevi. Pencere sınıfı NULL ise, sizin için framework tarafından kaydedilir. MFC varsayılan sınıfı aşağıdaki stilleri ve öznitelikleri sağlar:
+Windows sınıfına ad veren null ile sonlandırılmış bir karakter dizesini işaret eder. Sınıf adı, genel [AfxRegisterWndClass](application-information-and-management.md#afxregisterwndclass) işlevine kayıtlı herhangi bir ad olabilir. NULL ise, pencere sınıfı sizin için çerçeve tarafından kaydedilir. MFC varsayılan sınıfa aşağıdaki stilleri ve öznitelikleri verir:
 
-- Kümeleri stili CS_DBLCLKS hangi gönderimler pencere yordamını iletileri çift tıklayın, bu kullanıcı fare çift tıkladığında, bit.
+- Kullanıcı fareyle çift tıkladığında pencere yordamına çift tıklama iletileri gönderen stil bit CS_DBLCLKS belirler.
 
-- Pencere boyutu değiştiğinde çizilmesini istemci alanının içeriği doğrudan CS_HREDRAW ve CS_VREDRAW, stil BITS ayarlar.
+- Pencere boyutunu değiştirdiğinde, istemci alanının içeriğinin yeniden çizilmesini sağlayan CS_HREDRAW ve CS_VREDRAW stil bitlerini ayarlar.
 
-- Sınıf imleci Windows standart IDC_ARROW ayarlar.
+- Sınıf imlecini Windows standart IDC_ARROW olarak ayarlar.
 
-- Pencere arka planı silme değil şekilde sınıfı arkaplan Fırçası NULL olarak ayarlar.
+- Sınıf arkaplan fırçasını NULL olarak ayarlar, bu nedenle pencere arka planını silmez.
 
-- Sınıf simgesi standart, el Sallayan bayrağı Windows logo simgesini ayarlar.
+- Sınıf simgesini standart, geri döndürme bayrağı Windows logosu simgesine ayarlar.
 
-- Pencere için varsayılan boyutunu ve konumunu, Windows tarafından belirtildiği gibi ayarlar.
+- Pencereyi, Windows tarafından belirtildiği gibi varsayılan boyut ve konuma ayarlar.
 
 *lpWindowName*<br/>
-Pencere adının içeren null ile sonlandırılmış dizeye işaret eder.
+Pencere adını içeren, null ile sonlandırılmış bir karakter dizesini işaret eder.
 
 *dwStyle*<br/>
-Pencere stili özniteliklerini belirtir. Bu, standart pencere stilleri ve bir veya daha fazla özel stilleri aşağıdaki içerebilir:
+Pencere stili özniteliklerini belirtir. Bunlar, standart pencere stillerini ve aşağıdaki özel stillerden bir veya daha fazlasını içerebilir:
 
-- MFS_MOVEFRAME yalnızca resim yazısı Pencerenin kenarında tıklayarak taşınacak Mini çerçeve sağlar.
+- MFS_MOVEFRAME, Mini kare pencerenin yalnızca başlık değil, pencerenin herhangi bir kenarına tıklanarak taşınmasını sağlar.
 
-- MFS_4THICKFRAME devre dışı bırakır, Mini çerçeve penceresi yeniden boyutlandırılıyor.
+- MFS_4THICKFRAME, mini çerçeve penceresinin yeniden boyutlandırılmasını devre dışı bırakır.
 
-- Mini çerçeve penceresinin üst pencereye etkinleştirme için etkinleştirme MFS_SYNCACTIVE eşitler.
+- MFS_SYNCACTIVE, mini çerçeve penceresinin etkinleştirmesini, ana penceresinin etkinleştirilmesini eşitler.
 
-- MFS_THICKFRAME sağlar, Mini çerçeve penceresinin istemci alanını içeriğini küçük boyutta olması için izin verin.
+- MFS_THICKFRAME, mini çerçeve penceresinin, istemci alanının içeriği izin verdiğinden küçük olarak boyutlandırılması için izin verir.
 
-- Sistem menüsü ve denetimi menüsü, erişim MFS_BLOCKSYSMENU devre dışı bırakır ve bunlara açıklamalı alt yazı (başlık çubuğu) bir parçası için dönüştürür.
+- MFS_BLOCKSYSMENU, sistem menüsüne ve denetim menüsüne erişimi devre dışı bırakır ve bunları başlığın (başlık çubuğu) bir kısmına dönüştürür.
 
-Bkz: [CWnd::Create](../../mfc/reference/cwnd-class.md#create) olası pencere stili değerleri açıklaması. Mini çerçeve pencereleri için kullanılan tipik WS_POPUP birleşimidir&#124;ws_captıon&#124;WS_SYSMENU.
+Olası pencere stili değerlerinin açıklaması için bkz. [CWnd:: Create](../../mfc/reference/cwnd-class.md#create) . Mini çerçeve pencereleri için kullanılan tipik birleşim WS_POPUP&#124;WS_CAPTION&#124;WS_SYSMENU.
 
 *Rect*<br/>
-A `RECT` yapısı pencerenin istenen boyutlarını belirleme.
+Pencerenin `RECT` istenen boyutlarını belirten bir yapı.
 
 *pParentWnd*<br/>
-Üst pencere işaret eder. NULL değerini en üst düzey windows için kullanın.
+Üst pencereyi işaret eder. Üst düzey pencereler için NULL kullanın.
 
-*nID*<br/>
-Mini çerçeve penceresinin alt pencere olarak oluşturulursa, alt denetimin tanımlayıcısını budur; Aksi durumda 0.
+*NID*<br/>
+Mini çerçeve penceresi bir alt pencere olarak oluşturulduysa, bu, alt denetimin tanımlayıcısıdır; Aksi takdirde 0.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi durumda 0.
+Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`Create` pencere sınıfı adı ve penceresi adı başlatır ve stil ve üst varsayılan değerleri kaydeder.
+`Create`pencerenin sınıf adını ve pencere adını başlatır ve stili ve üst öğesi için varsayılan değerleri kaydeder.
 
-##  <a name="createex"></a>  CMiniFrameWnd::CreateEx
+##  <a name="createex"></a>CMiniFrameWnd:: CreateEx
 
-Oluşturur bir `CMiniFrameWnd` nesne.
+Bir `CMiniFrameWnd` nesnesi oluşturur.
 
 ```
 virtual BOOL CreateEx(
@@ -164,45 +164,45 @@ virtual BOOL CreateEx(
 ### <a name="parameters"></a>Parametreler
 
 *dwExStyle*<br/>
-Genişletilmiş stilini belirtir `CMiniFrameWnd` oluşturuluyor. Atanamadığı [genişletilmiş pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles) penceresine.
+Oluşturulmakta `CMiniFrameWnd` olan genişletilmiş stilini belirtir. Penceredeki [genişletilmiş pencere stillerinden](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles) birini uygulayın.
 
 *lpClassName*<br/>
-Windows sınıf adları null ile sonlandırılmış dizeye işaret (bir [WNDCLASS](/windows/desktop/api/winuser/ns-winuser-tagwndclassa) yapısı). Sınıf adı genel kayıtlı herhangi bir ad olabilir [AfxRegisterWndClass](application-information-and-management.md#afxregisterwndclass) işlev veya önceden tanımlanmış denetimi-sınıf adları. NULL olmamalıdır.
+Windows sınıfına ( [WNDCLASS](/windows/win32/api/winuser/ns-winuser-wndclassw) yapısı) ad veren null ile sonlandırılmış bir karakter dizesini işaret eder. Sınıf adı, genel [AfxRegisterWndClass](application-information-and-management.md#afxregisterwndclass) işlevine veya önceden tanımlanmış denetim sınıfı adlarından herhangi birine kayıtlı herhangi bir ad olabilir. NULL olmaması gerekir.
 
 *lpWindowName*<br/>
-Pencere adının içeren null ile sonlandırılmış dizeye işaret eder.
+Pencere adını içeren, null ile sonlandırılmış bir karakter dizesini işaret eder.
 
 *dwStyle*<br/>
-Pencere stili özniteliklerini belirtir. Bkz: [pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#window-styles) ve [CWnd::Create](../../mfc/reference/cwnd-class.md#create) olası değerlerin bir açıklaması.
+Pencere stili özniteliklerini belirtir. Olası değerlerin açıklaması için bkz. [pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#window-styles) ve [CWnd:: Create](../../mfc/reference/cwnd-class.md#create) .
 
 *Rect*<br/>
-İstemci koordinatları, pencerenin konumunu ve boyutunu *pParentWnd*.
+Pencerenin, *pParentWnd*istemci koordinatlarındaki boyutu ve konumu.
 
 *pParentWnd*<br/>
-Ana pencere nesnesi işaret eder.
+Üst pencere nesnesine işaret eder.
 
-*nID*<br/>
-Alt pencere tanıtıcısı.
+*NID*<br/>
+Alt pencerenin tanımlayıcısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.
+Başarılı olduğunda TRUE, hatada FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CreateEx` Parametreleri WNDCLASS, pencere stili ve (isteğe bağlı olarak) ilk konumunu ve pencere boyutunu belirtin. `CreateEx` Ayrıca pencerenin üst (varsa) ve kimliğini belirtir
+`CreateEx` Parametreler WNDCLASS, pencere stili ve (isteğe bağlı olarak) pencerenin başlangıç konumunu ve boyutunu belirtir. `CreateEx`Ayrıca pencerenin üst öğesini (varsa) ve KIMLIĞINI belirtir.
 
-Zaman `CreateEx` yürütür, Windows gönderir [WM_GETMINMAXINFO](../../mfc/reference/cwnd-class.md#ongetminmaxinfo), [WM_NCCREATE](../../mfc/reference/cwnd-class.md#onnccreate), [WM_NCCALCSIZE](../../mfc/reference/cwnd-class.md#onnccalcsize), ve [WM_CREATE](../../mfc/reference/cwnd-class.md#oncreate) pencere iletileri.
+[](../../mfc/reference/cwnd-class.md#oncreate) [](../../mfc/reference/cwnd-class.md#onnccreate) [](../../mfc/reference/cwnd-class.md#onnccalcsize) [](../../mfc/reference/cwnd-class.md#ongetminmaxinfo)Yürütüldüğünde, Windows WM_GETMINMAXINFO, WM_NCCREATE, WM_NCCALCSIZE ve WM_CREATE iletilerini pencereye gönderir. `CreateEx`
 
-Varsayılan ileti işleme genişletmek için öğesinden bir sınıf türetin `CMiniFrameWnd`, yeni sınıfa ileti eşlemesi ekleyin ve yukarıdaki iletileri üye işlevleri sağlar. Geçersiz kılma `OnCreate`, örneğin, gerekli başlatma için yeni bir sınıf gerçekleştirmek için.
+Varsayılan ileti işlemeyi genişletmek için, öğesinden `CMiniFrameWnd`bir sınıf türetebilir, yeni sınıfa bir ileti haritası ekleyin ve yukarıdaki iletiler için üye işlevleri sağlayın. Yeni `OnCreate`bir sınıf için gerekli başlatmayı gerçekleştirmek üzere, örneğin, öğesini geçersiz kılın.
 
-Daha fazla geçersiz kılma `On` *ileti* ileti işleyicileri, daha fazla türetilmiş sınıfa işlevselliği eklemek için.
+Türetilmiş sınıfınıza daha fazla işlevsellik eklemek için diğer `On` *ileti* ileti işleyicilerini geçersiz kılın.
 
-Ws_vısıble stili belirtilmezse, Windows penceresi penceresini görüntüleyin ve etkinleştirmek için gereken tüm iletileri gönderir. Pencere stili bir başlık çubuğu belirtiyorsa, pencere başlığı tarafından işaret edilen *lpszWindowName* parametresi, başlık çubuğunda görüntülenir.
+WS_VISIBLE stili verilirse Windows, pencereyi etkinleştirmek ve göstermek için gereken tüm iletileri gönderir. Pencere stili bir başlık çubuğu belirtiyorsa, *lpszWindowName* parametresi tarafından işaret edilen pencere başlığı başlık çubuğunda görüntülenir.
 
-*DwStyle* parametresi, herhangi bir birleşimi olabilir [pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#window-styles).
+*DwStyle* parametresi [pencere stillerinin](../../mfc/reference/styles-used-by-mfc.md#window-styles)herhangi bir birleşimi olabilir.
 
-Eski stil palet araç kutusu windows artık desteklenmemektedir. Bir "X" Kapat düğmesi yoktu, eski stil bir MFC uygulaması, Windows, önceki sürümleri üzerinde çalışırken desteklenir, ancak Visual C++ .NET içinde artık desteklenmiyor. Yalnızca yeni ws_ex_toolwındow stil artık desteklenir. Bu stil açıklaması için bkz: [genişletilmiş pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles).
+Eski stil paleti araç kutusu pencereleri artık desteklenmiyor. Bir "X" Close düğmesine sahip olmayan eski stil, Windows 'un önceki sürümlerinde bir MFC uygulaması çalıştırılırken desteklenir, ancak artık Visual C++.net 'te desteklenmemektedir. Yalnızca yeni WS_EX_TOOLWINDOW stili artık desteklenmektedir; Bu stilin açıklaması için bkz. [genişletilmiş pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

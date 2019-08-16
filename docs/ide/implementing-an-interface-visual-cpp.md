@@ -7,86 +7,86 @@ helpviewer_keywords:
 - interfaces, implementing
 - implement interface wizard [C++]
 ms.assetid: 72f8731b-7e36-45db-8b10-7ef211a773cd
-ms.openlocfilehash: 8e166f806d247cd93ff0f471360d749fa95e430b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bb1db35e269ef884f3ebdf4564d8f0a3e579db50
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62375905"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69509516"
 ---
 # <a name="implement-an-interface"></a>Arabirim uygulama
 
-Bir arabirim uygulamak için bir projenin ATL desteği içeren bir MFC uygulaması olarak veya bir ATL COM uygulaması oluşturmuş olmanız gerekir. Kullanabileceğiniz [ATL projesi Sihirbazı](../atl/reference/atl-project-wizard.md) bir ATL uygulama oluşturmak için veya [MFC uygulamanıza bir ATL nesnesi eklemek](../mfc/reference/adding-atl-support-to-your-mfc-project.md) bir MFC uygulaması için ATL desteği uygulamak için.
+Bir arabirim uygulamak için ATL COM uygulaması veya ATL desteği içeren MFC uygulaması olarak bir proje oluşturmuş olmanız gerekir. Atl uygulaması oluşturmak için ATL [Proje Sihirbazı 'nı](../atl/reference/atl-project-wizard.md) kullanabilir veya bir MFC UYGULAMASı için ATL desteği uygulamak üzere [MFC uygulamanıza ATL nesnesi ekleyebilirsiniz](../mfc/reference/adding-atl-support-to-your-mfc-project.md) .
 
-Bir arabirim uygulamak için projeyi oluşturduktan sonra ATL nesneyi eklemeniz gerekir. Bkz: [bir ATL projesine nesne ve denetim ekleme](../atl/reference/adding-objects-and-controls-to-an-atl-project.md) , ATL projesine nesne eklemek sihirbazları listesi.
+Projeyi oluşturduktan sonra bir arabirim uygulamak için önce bir ATL nesnesi eklemeniz gerekir. ATL projenize nesne ekleyen sihirbazların bir listesi için bkz. [ATL projesine nesne ve denetim ekleme](../atl/reference/adding-objects-and-controls-to-an-atl-project.md) .
 
 > [!NOTE]
-> ATL iletişim kutusu, ATL, performans nesneleri ve performans sayaçlarını kullanarak XML Web Hizmetleri Sihirbazı'nı desteklemez.
+> Sihirbaz, atl iletişim kutularını, ATL, performans nesnelerini veya performans sayaçlarını kullanan XML Web hizmetlerini desteklemez.
 
-Varsa, [ATL denetimi ekleme](../atl/reference/adding-an-atl-control.md), varsayılan arabirimlerini belirtebilirsiniz. Varsayılan arabirimleri listelenir [arabirimleri](../atl/reference/interfaces-atl-control-wizard.md) sayfasında, Sihirbazı ve atlcom.h içinde tanımlanmış.
+[ATL denetimi eklerseniz](../atl/reference/adding-an-atl-control.md), varsayılan arabirimlerin uygulanıp yapılmayacağını belirtebilirsiniz. Varsayılan arabirimler, sihirbazın [arabirimler](../atl/reference/interfaces-atl-control-wizard.md) sayfasında listelenir ve atlcom. h içinde tanımlanır.
 
-Nesne veya denetimi ekledikten sonra arabirim Uygulama Sihirbazı'nı kullanarak tüm kullanılabilir tür kitaplığında bulunan, diğer arabirim uygulayabilir.
+Nesneyi veya denetimi ekledikten sonra, arabirim uygulama Sihirbazı ' nı kullanarak kullanılabilir herhangi bir tür kitaplığında bulunan diğer arayüzleri uygulayabilirsiniz.
 
-Yeni bir arabirim ekliyorsanız, bu projenin .idl dosyasına el ile eklemelisiniz. Daha fazla bilgi için [ATL projesine yeni arabirim ekleme](../atl/reference/adding-a-new-interface-in-an-atl-project.md).
+Yeni bir arabirim ekliyorsanız, bunu projenin. IDL dosyasına el ile eklemeniz gerekir. Daha fazla bilgi için bkz. [atl projesinde yeni arabirim ekleme](../atl/reference/adding-a-new-interface-in-an-atl-project.md).
 
 **Bir arabirim uygulamak için:**
 
-1. Sınıf Görünümü'nde, ATL nesneniz için sınıf adına sağ tıklayın.
+1. Sınıf Görünümü, ATL nesneniz için sınıf adına sağ tıklayın.
 
-1. Seçin **Ekle** kısayol menüsünden seçin **arabirimi uygulayan** görüntülenecek [uygulama Arabirimi Sihirbazı](#implement-interface-wizard).
+1. Kısayol menüsünden **Ekle** ' yi seçin ve arabirim [Uygulama sihirbazını](#implement-interface-wizard)göstermek için **arabirimi Uygula** ' yı seçin.
 
-1. Uygun tür kitaplıklarından uygulamak ve arabirimleri seçin **son**.
+1. Uygun tür kitaplıklarından uygulanacak arabirimleri seçin ve **son**' u seçin.
 
-1. Sınıf Görünümü'nde, nesnenin tabanları genişletin ve arabirimleri düğüm uygulanan arabirimi görmek için. Kullanılabilir özellikler, yöntemlerini ve olaylarını görmek için arabirimin düğümünü genişletin.
+1. Sınıf Görünümü, uyguladığınız arabirimi görmek için nesnenin temelleri ve arabirimler düğümünü genişletin. Ardından, kullanılabilir özellikleri, yöntemleri ve olayları görmek için arabirimin düğümünü genişletin.
 
    > [!NOTE]
-   > Ayrıca [Nesne Tarayıcısı](/visualstudio/ide/viewing-the-structure-of-code) arabirimin üyelerini incelemek için.
+   > Ayrıca, arabirimin üyelerini incelemek için [nesne tarayıcısı](/visualstudio/ide/viewing-the-structure-of-code) ' nı da kullanabilirsiniz.
 
 ## <a name="in-this-section"></a>Bu bölümde
 
-- [Arabirim Uygulama Sihirbazı](#implement-interface-wizard)
+- [Arabirim uygulama Sihirbazı](#implement-interface-wizard)
 
-## <a name="implement-interface-wizard"></a>Arabirim Uygulama Sihirbazı
+## <a name="implement-interface-wizard"></a>Arabirim uygulama Sihirbazı
 
-Bu sihirbaz bir COM nesnesi için bir arabirim uygular. Pek çok arabirimi uygulamalarını Visual Studio ve Windows ile kullanılabilir COM kitaplıkları dahil edilmiştir. O nesnenin bir örneği oluşturulduğunda bir arabirim uygulaması bir nesne ile ilişkilidir. Ayrıca, nesnenin sunduğu hizmetleri sağlar.
+Bu sihirbaz bir COM nesnesi için bir arabirim uygular. Birçok arabirimin uygulamaları, Visual Studio ve Windows ile kullanılabilen COM kitaplıklarına dahildir. Bir nesne örneği oluşturulduğunda bir arabirim uygulama bir nesneyle ilişkilendirilir. Ayrıca, nesnenin sunduğu hizmetleri de sağlar.
 
-Arabirimleri ve uygulamalar için bkz [arabirimleri ve arabirim uygulamalarına](/windows/desktop/com/interfaces-and-interface-implementations) Windows SDK.
+Arabirimler ve uygulamalar ile ilgili bir tartışma için, Windows SDK içindeki [arabirimler ve arabirim uygulamaları](/windows/win32/com/interfaces-and-interface-implementations) bölümüne bakın.
 
-- **Arabirimi Uygula**
+- **Arabirimi uygulama**
 
-  Arabirim oluşturulduğu tür kitaplığının konumu belirtir.
+  Arabirimin oluşturulduğu tür kitaplığının konumunu belirtir.
 
   |Seçenek|Açıklama|
   |------------|-----------------|
-  |**Project**|Tür kitaplığı projesi bir parçasıdır.|
-  |**Kayıt defteri**|Tür kitaplığını sistemde kayıtlı. Kayıtlı bir tür kitaplığı içinde listelenen **kullanılabilir tür kitaplıklarını**.|
-  |**Dosya**|Tür kitaplığını mutlaka sistemde kayıtlı değil ancak bir dosyasında tutulur. Dosya konumunda sağlamak **konumu**.|
+  |**Project**|Tür kitaplığı projenin bir parçasıdır.|
+  |**Defteri**|Tür kitaplığı sisteme kaydedilir. Kayıtlı tür kitaplıkları **kullanılabilir tür kitaplıklarında**listelenmiştir.|
+  |**Dosya**|Tür kitaplığı sistemde kayıtlı değildir, ancak bir dosyada tutulur. Dosya konumunu **konuma**girin.|
 
 - **Kullanılabilir tür kitaplıkları**
 
-  Uygulayabileceğiniz arabirimi tanımları bulunduran kullanılabilir tür kitaplıklarını görüntüler. Seçerseniz **dosya** altında **uygulama arabiriminden**, bu kutusuna değişiklik için kullanılamıyor.
+  Uygulayabileceğiniz arabirim tanımlarını tutan kullanılabilir tür kitaplıklarını görüntüler. **Arabirim uygulama**altındaki **Dosya** ' yı seçerseniz, bu kutu değişiklik için kullanılamaz.
 
 - **Konum**
 
-  Şu anda seçilen tür kitaplığının konumu görüntüler **kullanılabilir tür kitaplıklarını** listesi. Seçtiyseniz **dosya** altında **uygulama arabiriminden**, kullanılacak tür kitaplığını kullanımda tutan bir dosyayı bulmak için üç nokta düğmesini seçin.
+  **Kullanılabilir tür kitaplıkları** listesinde şu anda seçili olan tür kitaplığının konumunu görüntüler. **Arabirim Uygula**altında **Dosya** ' yı seçtiyseniz, kullanılacak tür kitaplığını tutan bir dosyayı bulmak için üç nokta düğmesini seçin.
 
 - **Arabirimler**
 
-  Görüntüler, tanımları, tür kitaplığındaki şu anda seçili tutulur arabirimleri **kullanılabilir tür kitaplıklarını** kutusu.
+  Tanımları, **kullanılabilir tür kitaplıkları** kutusunda şu anda seçili olan tür kitaplığında tutulmuş olan arabirimleri görüntüler.
 
   > [!NOTE]
-  > Bu seçilen nesne tarafından zaten uygulanmış olarak görüntülenmez, aynı ada sahip arabirimler **arabirimleri** kutusu.
+  > Seçilen nesne tarafından zaten uygulanmış olanlarla aynı ada sahip arabirimler, **arabirimler** kutusunda görüntülenmez.
 
-  |Aktarım düğmesi|Açıklama|
+  |Aktar düğmesi|Açıklama|
   |---------------------|-----------------|
-  |**>**|Ekler **arabirimleri uygulayan** geçerli seçili arabirim adı listesi **arabirimleri** listesi.|
-  |**>>**|Ekler **arabirimleri uygulayan** bulunan tüm arabirimi adlarını listelemek **arabirimleri** listesi.|
-  |**\<**|Şu anda seçili arabirim adını kaldırır **arabirimleri uygulayan** listesi.|
-  |**\<\<**|Şu anda listelenen adları tüm arabirim kaldırır **arabirimleri uygulayan** listesi.|
+  |**>**|**Arabirimler** listesinde şu anda seçili olan arabirim adını **Uygula arabirimleri** listesine ekler.|
+  |**>>**|**Arabirimler** listesinde bulunan tüm arabirim adlarını **Uygula arabirimleri** listesine ekler.|
+  |**\<**|**Arabirimleri Uygula** listesinde şu anda seçili olan arabirim adını kaldırır.|
+  |**\<\<**|**Arabirimleri Uygula** listesinde şu anda listelenen tüm arabirim adlarını kaldırır.|
 
-- **Arabirimi uygulayan**
+- **Arabirimleri Uygula**
 
-  Nesneniz üzerinde uygulamak için seçtiğiniz arabirimleri adlarını görüntüler.
+  Nesneniz üzerinde uygulamak üzere seçtiğiniz arabirimlerin adlarını görüntüler.
 
   > [!NOTE]
-  > Öğesinden türetilen birden fazla arabirim içerip içermediğini `IDispatch`, veya sınıfınıza üzerinde zaten başka bir arabirimden türetilmiş bir arabirim uygulamak deneyin ardından COM_MAP girişlerin ayırt etmek gerekir. Daha fazla bilgi için [COM_INTERFACE_ENTRY2](../atl/reference/com-interface-entry-macros.md#com_interface_entry2).
+  > Öğesinden `IDispatch`türetilen birden fazla arabirim varsa veya sınıfınızın zaten başka bir arabiriminden türetilmiş bir arabirimi uygulamaya çalışırsanız, COM_MAP girdilerini kesinleştirmeniz gerekir. Daha fazla bilgi için bkz. [COM_INTERFACE_ENTRY2](../atl/reference/com-interface-entry-macros.md#com_interface_entry2).

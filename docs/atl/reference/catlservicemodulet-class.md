@@ -35,12 +35,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlServiceModuleT class
 ms.assetid: 8fc753ce-4a50-402b-9b4a-0a4ce5dd496c
-ms.openlocfilehash: 095d909fefe0053b742368f260cf61937c2f5426
-ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
+ms.openlocfilehash: 2854d0902700b268383eca094bed35843ea73272
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68915866"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69497731"
 ---
 # <a name="catlservicemodulet-class"></a>CAtlServiceModuleT sınıfı
 
@@ -244,7 +244,7 @@ Olay günlüğüne yazılacak isteğe bağlı ek dizeler.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, ayrıntıları [ReportEvent](/windows/desktop/api/winbase/nf-winbase-reporteventa)işlevini kullanarak bir olay günlüğüne yazar. Hiçbir hizmet çalışmıyorsa, dize konsola gönderilir.
+Bu yöntem, ayrıntıları [ReportEvent](/windows/win32/api/winbase/nf-winbase-reporteventw)işlevini kullanarak bir olay günlüğüne yazar. Hiçbir hizmet çalışmıyorsa, dize konsola gönderilir.
 
 ##  <a name="m_bservice"></a>CAtlServiceModuleT:: m_bService
 
@@ -280,7 +280,7 @@ SERVICE_STATUS_HANDLE m_hServiceStatus;
 
 ### <a name="remarks"></a>Açıklamalar
 
-[SERVICE_STATUS](/windows/desktop/api/winsvc/ns-winsvc-service_status) yapısı, bir hizmet hakkındaki bilgileri içerir.
+[SERVICE_STATUS](/windows/win32/api/winsvc/ns-winsvc-service_status) yapısı, bir hizmet hakkındaki bilgileri içerir.
 
 ##  <a name="m_status"></a>CAtlServiceModuleT:: m_status
 
@@ -292,7 +292,7 @@ SERVICE_STATUS m_status;
 
 ### <a name="remarks"></a>Açıklamalar
 
-[SERVICE_STATUS](/windows/desktop/api/winsvc/ns-winsvc-service_status) yapısı, bir hizmet hakkındaki bilgileri içerir.
+[SERVICE_STATUS](/windows/win32/api/winsvc/ns-winsvc-service_status) yapısı, bir hizmet hakkındaki bilgileri içerir.
 
 ##  <a name="m_szservicename"></a>CAtlServiceModuleT:: m_szServiceName
 
@@ -432,7 +432,7 @@ HRESULT Run(int nShowCmd = SW_HIDE) throw();
 ### <a name="parameters"></a>Parametreler
 
 *nShowCmd*<br/>
-Pencerenin nasıl gösterileceğini belirtir. Bu parametre, [WinMain](/windows/desktop/api/winbase/nf-winbase-winmain) bölümünde ele alınan değerlerden biri olabilir. Varsayılan değer SW_HIDE ' dir.
+Pencerenin nasıl gösterileceğini belirtir. Bu parametre, [WinMain](/windows/win32/api/winbase/nf-winbase-winmain) bölümünde ele alınan değerlerden biri olabilir. Varsayılan değer SW_HIDE ' dir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -475,7 +475,7 @@ void SetServiceStatus(DWORD dwState) throw();
 ### <a name="parameters"></a>Parametreler
 
 *dwState*<br/>
-Yeni durum. Olası değerler için bkz. [SetServiceStatus](/windows/desktop/api/winsvc/nf-winsvc-setservicestatus) .
+Yeni durum. Olası değerler için bkz. [SetServiceStatus](/windows/win32/api/winsvc/nf-winsvc-setservicestatus) .
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -492,7 +492,7 @@ HRESULT Start(int nShowCmd) throw();
 ### <a name="parameters"></a>Parametreler
 
 *nShowCmd*<br/>
-Pencerenin nasıl gösterileceğini belirtir. Bu parametre, [WinMain](/windows/desktop/api/winbase/nf-winbase-winmain) bölümünde ele alınan değerlerden biri olabilir.
+Pencerenin nasıl gösterileceğini belirtir. Bu parametre, [WinMain](/windows/win32/api/winbase/nf-winbase-winmain) bölümünde ele alınan değerlerden biri olabilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -553,7 +553,7 @@ int WinMain(int nShowCmd) throw();
 ### <a name="parameters"></a>Parametreler
 
 *nShowCmd*<br/>
-Pencerenin nasıl gösterileceğini belirtir. Bu parametre, [WinMain](/windows/desktop/api/winbase/nf-winbase-winmain) bölümünde ele alınan değerlerden biri olabilir.
+Pencerenin nasıl gösterileceğini belirtir. Bu parametre, [WinMain](/windows/win32/api/winbase/nf-winbase-winmain) bölümünde ele alınan değerlerden biri olabilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

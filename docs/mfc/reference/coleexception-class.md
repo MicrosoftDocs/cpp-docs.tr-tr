@@ -1,5 +1,5 @@
 ---
-title: COleException sınıfı
+title: Cotaexception sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - COleException
@@ -10,16 +10,16 @@ helpviewer_keywords:
 - COleException [MFC], Process
 - COleException [MFC], m_sc
 ms.assetid: 2571e9fe-26cc-42f0-9ad9-8ad5b4311ec1
-ms.openlocfilehash: 6874df550103abf727573d8e34b8adadd9643db8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 96061f704d9df6cd788e362652b6ed22a7ffa999
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62224795"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69503942"
 ---
-# <a name="coleexception-class"></a>COleException sınıfı
+# <a name="coleexception-class"></a>Cotaexception sınıfı
 
-Bir OLE işlemiyle ilgili bir özel durum koşulunu temsil eder.
+OLE işlemiyle ilgili bir özel durum koşulunu temsil eder.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -33,21 +33,21 @@ class COleException : public CException
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[COleException::Process](#process)|OLE dönüş koda yakalanan bir özel durumu çevirir.|
+|[Cotaexception::P rocess](#process)|Yakalanan bir özel durumu OLE dönüş koduna çevirir.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[COleException::m_sc](#m_sc)|Özel durumun nedenini gösteren durum kodu içerir.|
+|[Cotaexception:: m_sc](#m_sc)|Özel durumun nedenini gösteren durum kodunu içerir.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`COleException` Sınıfı özel durumun nedenini gösteren durum kodunu içeren bir genel veri üyesi içerir.
+`COleException` Sınıfı, özel durumun nedenini gösteren durum kodunu tutan bir ortak veri üyesini içerir.
 
-Genel olarak, değil oluşturacağınız bir `COleException` doğrudan; bunun yerine, çağırmalıdır nesne [AfxThrowOleException](exception-processing.md#afxthrowoleexception).
+Genel olarak, doğrudan bir `COleException` nesne oluşturmamalıdır; bunun yerine [AfxThrowOleException](exception-processing.md#afxthrowoleexception)çağırmalısınız.
 
-Özel durumları hakkında daha fazla bilgi için bkz: makaleleri [özel durum işleme (MFC)](../../mfc/exception-handling-in-mfc.md) ve [özel durumlar: OLE özel durumları](../../mfc/exceptions-ole-exceptions.md).
+Özel durumlar hakkında daha fazla bilgi için bkz. Makaleler [özel durum işleme (MFC)](../../mfc/exception-handling-in-mfc.md) ve [özel durumlar: OLE özel](../../mfc/exceptions-ole-exceptions.md)durumları.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -59,11 +59,11 @@ Genel olarak, değil oluşturacağınız bir `COleException` doğrudan; bunun ye
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxdisp.h
+**Üstbilgi:** AfxDisp. h
 
-##  <a name="m_sc"></a>  COleException::m_sc
+##  <a name="m_sc"></a>Cotaexception:: m_sc
 
-Bu veri üyesi, özel durumun nedenini gösteren OLE durum kodu içerir.
+Bu veri üyesi, özel durumun nedenini gösteren OLE durum kodunu tutar.
 
 ```
 SCODE m_sc;
@@ -71,17 +71,17 @@ SCODE m_sc;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu değişkenin değeri ayarlanır [AfxThrowOleException](exception-processing.md#afxthrowoleexception).
+Bu değişkenin değeri [AfxThrowOleException](exception-processing.md#afxthrowoleexception)tarafından ayarlanır.
 
-SCODE hakkında daha fazla bilgi için bkz. [yapısı COM hata kodlarını](/windows/desktop/com/structure-of-com-error-codes) Windows SDK.
+SCODE hakkında daha fazla bilgi için bkz. Windows SDK [com hata kodları yapısı](/windows/win32/com/structure-of-com-error-codes) .
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCOleContainer#22](../../mfc/codesnippet/cpp/coleexception-class_1.cpp)]
 
-##  <a name="process"></a>  COleException::Process
+##  <a name="process"></a>Cotaexception::P rocess
 
-Çağrı **işlem** yakalanan bir özel durumu bir OLE durumu koda çevirmek için üye işlevi.
+Yakalanan bir özel durumu OLE durum koduna çevirmek için **Process** member işlevini çağırın.
 
 ```
 static SCODE PASCAL Process(const CException* pAnyException);
@@ -89,8 +89,8 @@ static SCODE PASCAL Process(const CException* pAnyException);
 
 ### <a name="parameters"></a>Parametreler
 
-*pAnyException*<br/>
-Özel durum yakalandı işaretçisi.
+*Panrivexception*<br/>
+Yakalanan özel durum işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -99,13 +99,13 @@ OLE durum kodu.
 ### <a name="remarks"></a>Açıklamalar
 
 > [!NOTE]
->  Bu işlev, **statik**.
+>  Bu işlev **statiktir**.
 
-SCODE hakkında daha fazla bilgi için bkz. [yapısı COM hata kodlarını](/windows/desktop/com/structure-of-com-error-codes) Windows SDK.
+SCODE hakkında daha fazla bilgi için bkz. Windows SDK [com hata kodları yapısı](/windows/win32/com/structure-of-com-error-codes) .
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [COleDispatchDriver::CreateDispatch](../../mfc/reference/coledispatchdriver-class.md#createdispatch).
+  [Cotadispatchdriver:: CreateDispatch](../../mfc/reference/coledispatchdriver-class.md#createdispatch)örneğine bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

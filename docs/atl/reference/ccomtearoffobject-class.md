@@ -15,16 +15,16 @@ helpviewer_keywords:
 - tear-off interfaces
 - CComTearOffObject class
 ms.assetid: d974b598-c6b2-42b1-8360-9190d9d0fbf3
-ms.openlocfilehash: fd35b1e9e69c97402dd1ec357fd25fa1dcd5dd49
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0d27a6fa3c0070cd32c78971a7544327c51d4393
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62259423"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69496910"
 ---
 # <a name="ccomtearoffobject-class"></a>CComTearOffObject sınıfı
 
-Bu sınıf, bir etiket arabirimini uygular.
+Bu sınıf bir tear arabirimi uygular.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -35,10 +35,10 @@ class CComTearOffObject : public Base
 
 #### <a name="parameters"></a>Parametreler
 
-*temel*<br/>
-Bölünmüş sınıfınızı türetilen `CComTearOffObjectBase` ve desteklemek için etkinleştiriliyorken nesneyi istediğiniz arabirimleri.
+*Temel*<br/>
+' Dan türetilmiş, ve yırt nesnenizin `CComTearOffObjectBase` olmasını istediğiniz arabirimlerden türeten kapalı sınıfınız.
 
-ATL iki aşamada etkinleştiriliyorken arabirimlerini uygular — `CComTearOffObjectBase` yöntemleri işleyen başvuru sayısı ve `QueryInterface`, ancak `CComTearOffObject` uygulayan [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown).
+ATL, kendi çıkarma arabirimlerini iki `CComTearOffObjectBase` aşamada uygular — Yöntemler başvuru `QueryInterface`sayısını işler, ancak `CComTearOffObject` [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown)uygular.
 
 ## <a name="members"></a>Üyeler
 
@@ -46,16 +46,16 @@ ATL iki aşamada etkinleştiriliyorken arabirimlerini uygular — `CComTearOffOb
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CComTearOffObject::CComTearOffObject](#ccomtearoffobject)|Oluşturucu.|
-|[CComTearOffObject:: ~ CComTearOffObject](#dtor)|Yıkıcı.|
+|[CComTearOffObject:: CComTearOffObject](#ccomtearoffobject)|Oluşturucu.|
+|[CComTearOffObject:: ~ CComTearOffObject](#dtor)|Yok edicisi.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CComTearOffObject::AddRef](#addref)|İçin başvuru sayısını artırır bir `CComTearOffObject` nesne.|
-|[CComTearOffObject::QueryInterface](#queryinterface)|Bir işaretçi için istenen arabirim etkinleştiriliyorken sınıfınızın veya sahip sınıf döndürür.|
-|[CComTearOffObject::Release](#release)|Başvuru sayısı için azaltır bir `CComTearOffObject` nesne ve yok eder.|
+|[CComTearOffObject:: AddRef](#addref)|Bir `CComTearOffObject` nesne için başvuru sayısını artırır.|
+|[CComTearOffObject:: QueryInterface](#queryinterface)|Ayırma sınıfınız veya Owner sınıfında istenen arabirime yönelik bir işaretçi döndürür.|
+|[CComTearOffObject:: Release](#release)|Bir `CComTearOffObject` nesnenin başvuru sayısını azaltır ve yok eder.|
 
 ### <a name="ccomtearoffobjectbase-methods"></a>CComTearOffObjectBase yöntemleri
 
@@ -63,21 +63,21 @@ ATL iki aşamada etkinleştiriliyorken arabirimlerini uygular — `CComTearOffOb
 |-|-|
 |[CComTearOffObjectBase](#ccomtearoffobjectbase)|Oluşturucu.|
 
-### <a name="ccomtearoffobjectbase-data-members"></a>CComTearOffObjectBase veri üyesi
+### <a name="ccomtearoffobjectbase-data-members"></a>CComTearOffObjectBase veri üyeleri
 
 |||
 |-|-|
-|[m_pOwner](#m_powner)|Bir işaretçi bir `CComObject` sahibi sınıfından türetilen.|
+|[m_pOwner](#m_powner)|Sahip sınıfından türetilmiş bir `CComObject` işaretçisi.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CComTearOffObject` Bu arabirim için sorgulandığında örneği ayrı bir nesne olarak bölünmüş arabirim uygular. Başvuru sayısı sıfır olduğunda etkinleştiriliyorken silinir. Genellikle, bir bölünmüş arabirimi kullanarak bir bölünmüş bir vtable işaretçi ana nesneyi tüm örnekleri kaydeder olduğundan, nadiren kullanılır bir arabirim için oluşturun.
+`CComTearOffObject`yalnızca bu arabirim için sorgulandığında oluşturulan ayrı bir nesne olarak bir ayırıcı arabirim uygular. Başvuru sayısı sıfır olduğunda, tear silinir. Genellikle, bir tear kullanılması, ana nesnenizin tüm örneklerinde bir vtable işaretçisi kaydettiğinde, nadiren kullanılan bir arabirim için bir yırma arabirimi oluşturursunuz.
 
-Bölünmüş gelen uygulayan bir sınıfa türetilmelidir `CComTearOffObjectBase` ve desteklemek için etkinleştiriliyorken nesneyi istediğiniz hangi arabirimleri. `CComTearOffObjectBase` sahibi sınıfı ve iş parçacığı modeline şablonlaştırılmış. Kendisi için bir bölünmüş uygulanan nesnenin sınıfını sahibi sınıftır. Bir iş parçacığı modeli belirtmezseniz varsayılan iş parçacığı modeli kullanılır.
+Bu sınıfın, yırtan `CComTearOffObjectBase` kapatma nesnesinin desteklemesini istediğiniz arabirimlerden ve bunlardan herhangi bir olanını uygulayan sınıfını türetebilirsiniz. `CComTearOffObjectBase`, sahip sınıfı ve iş parçacığı modelinde şablonsaldır. Owner sınıfı, bir tear 'nin uygulandığı nesnenin sınıfıdır. Bir iş parçacığı modeli belirtmezseniz, varsayılan iş parçacığı modeli kullanılır.
 
-Bölünmüş sınıfınız için bir COM eşlemesi oluşturmanız gerekir. ATL etkinleştiriliyorken başlattığında oluşturacağı `CComTearOffObject<CYourTearOffClass>` veya `CComCachedTearOffObject<CYourTearOffClass>`.
+Yırma sınıfınız için bir COM Haritası oluşturmalısınız. ATL, tear 'yi örneklendiriken, veya `CComTearOffObject<CYourTearOffClass>` `CComCachedTearOffObject<CYourTearOffClass>`oluşturur.
 
-Örneğin, sesli İKAZ örnekteki `CBeeper2` etkinleştiriliyorken sınıfı ve `CBeeper` sahibi sınıfı:
+Örneğin, BEEPER örneğinde, `CBeeper2` sınıfı, tear sınıfıdır `CBeeper` ve sınıf Owner sınıfıdır:
 
 [!code-cpp[NVC_ATL_COM#43](../../atl/codesnippet/cpp/ccomtearoffobject-class_1.h)]
 
@@ -89,11 +89,11 @@ Bölünmüş sınıfınız için bir COM eşlemesi oluşturmanız gerekir. ATL e
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlcom.h
+**Üstbilgi:** atlcom. h
 
-##  <a name="addref"></a>  CComTearOffObject::AddRef
+##  <a name="addref"></a>CComTearOffObject:: AddRef
 
-Başvuru sayısını artırır `CComTearOffObject` bir nesne.
+`CComTearOffObject` Nesnenin başvuru sayısını bir artırır.
 
 ```
 STDMETHOD_(ULONG, AddRef)();
@@ -101,9 +101,9 @@ STDMETHOD_(ULONG, AddRef)();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Tanılama için kullanışlı ve test olabilir bir değer.
+Tanılama ve test için yararlı olabilecek bir değer.
 
-##  <a name="ccomtearoffobject"></a>  CComTearOffObject::CComTearOffObject
+##  <a name="ccomtearoffobject"></a>CComTearOffObject:: CComTearOffObject
 
 Oluşturucu.
 
@@ -113,16 +113,16 @@ CComTearOffObject(void* pv);
 
 ### <a name="parameters"></a>Parametreler
 
-*BD*<br/>
-[in] Bir işaretçiye dönüştürülür işaretçi bir `CComObject<Owner>` nesne.
+*bakın*<br/>
+'ndaki Bir `CComObject<Owner>` nesnenin işaretçisine dönüştürülecek işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sahibin başvuru sayısını bire artırır.
+Sahibin başvuru sayısını bir artırır.
 
-##  <a name="dtor"></a>  CComTearOffObject:: ~ CComTearOffObject
+##  <a name="dtor"></a>CComTearOffObject:: ~ CComTearOffObject
 
-Yıkıcı.
+Yok edicisi.
 
 ```
 ~CComTearOffObject();
@@ -130,9 +130,9 @@ Yıkıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ayrılan tüm kaynakları serbest bırakan, modül FinalRelease ve azaltır çağırır kilit sayısı.
+Ayrılan tüm kaynakları serbest bırakır, sonlandırmayı çağırır ve modül kilit sayısını azaltır.
 
-##  <a name="ccomtearoffobjectbase"></a>  CComTearOffObject::CComTearOffObjectBase
+##  <a name="ccomtearoffobjectbase"></a>CComTearOffObject:: CComTearOffObjectBase
 
 Oluşturucu.
 
@@ -142,11 +142,11 @@ CComTearOffObjectBase();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Başlatır [m_pOwner](#m_powner) üyesi null.
+[M_pOwner](#m_powner) üyesini null olarak başlatır.
 
-##  <a name="m_powner"></a>  CComTearOffObject::m_pOwner
+##  <a name="m_powner"></a>CComTearOffObject:: m_pOwner
 
-Bir işaretçi bir [CComObject](../../atl/reference/ccomobject-class.md) sınıfından türetilen nesne *sahibi*.
+*Sahibinden*türetilmiş bir [CComObject](../../atl/reference/ccomobject-class.md) nesnesine yönelik bir işaretçi.
 
 ```
 CComObject<Owner>* m_pOwner;
@@ -154,14 +154,14 @@ CComObject<Owner>* m_pOwner;
 
 ### <a name="parameters"></a>Parametreler
 
-*Sahibi*<br/>
-[in] Kendisi için bir bölünmüş uygulanan sınıfı.
+*İnde*<br/>
+'ndaki Bir yırma uygulanan sınıf.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşaretçiyi, oluşturma sırasında NULL olarak başlatılır.
+İşaretçi oluşturma sırasında NULL olarak başlatılır.
 
-##  <a name="queryinterface"></a>  CComTearOffObject::QueryInterface
+##  <a name="queryinterface"></a>CComTearOffObject:: QueryInterface
 
 İstenen arabirim için bir işaretçi alır.
 
@@ -171,23 +171,23 @@ STDMETHOD(QueryInterface)(REFIID iid, void** ppvObject);
 
 ### <a name="parameters"></a>Parametreler
 
-*IID*<br/>
-[in] İstenen arabirim Laboratuvardaki.
+*'si*<br/>
+'ndaki İstenen arabirimin IID 'si.
 
 *ppvObject*<br/>
-[out] Tarafından tanımlanan bir arabirim işaretçisi için bir işaretçi *IID*, veya arabirim bulunamazsa NULL.
+dışı Arabirim bulunmazsa, *IID*tarafından tanımlanan arabirim işaretçisine yönelik bir işaretçi veya ARABIRIM bulunamazsa null.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT değerini.
+Standart bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk etkinleştiriliyorken sınıfınızın arabirimleri için sorgular. Arabirimi, sorgular için sahip nesne arabirimi yoksa. İstenen arabirimi ise `IUnknown`, döndürür `IUnknown` sahibinin.
+İlk olarak, ayırma sınıflarınızdaki arabirimler için sorgular. Arabirim orada değilse, sahip nesnesi üzerindeki arabirim için sorgular. İstenen arabirim ise `IUnknown`, sahibinin ' i `IUnknown` döndürür.
 
-##  <a name="release"></a>  CComTearOffObject::Release
+##  <a name="release"></a>CComTearOffObject:: Release
 
-Başvuru sayısını bir azaltır ve başvuru sayısı sıfır ise siler `CComTearOffObject`.
+Başvuru sayısını bir sayı azaltır ve başvuru sayısı sıfır ise, `CComTearOffObject`öğesini siler.
 
 ```
 STDMETHOD_ULONG Release();
@@ -195,9 +195,9 @@ STDMETHOD_ULONG Release();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Hata ayıklama olmayan yapılarında, her zaman sıfır döndürür. Hata ayıklama yapılarında, tanılama için kullanışlı veya test olabilecek bir değer döndürür.
+Hata ayıklama olmayan derlemelerde, her zaman sıfır döndürür. Hata ayıklama yapılarında, tanılama veya test için yararlı olabilecek bir değer döndürür.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [CComCachedTearOffObject Sınıfı](../../atl/reference/ccomcachedtearoffobject-class.md)<br/>
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)
+[Sınıfa genel bakış](../../atl/atl-class-overview.md)

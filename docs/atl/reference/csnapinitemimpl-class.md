@@ -1,5 +1,5 @@
 ---
-title: Csnapınıtemımpl sınıfı
+title: Csnapınitemımpl sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CSnapInItemImpl
@@ -27,19 +27,19 @@ helpviewer_keywords:
 - CSnapInItemImpl class
 - snap-ins
 ms.assetid: 52caefbd-9eae-49b0-add2-d55524271aa7
-ms.openlocfilehash: 27f3e8a17a9538a72a6592177a88a9b415b1a27c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a9ebcf8827d79a9613ce14251d361dd607aa6af3
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62277714"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69496558"
 ---
-# <a name="csnapinitemimpl-class"></a>Csnapınıtemımpl sınıfı
+# <a name="csnapinitemimpl-class"></a>Csnapınitemımpl sınıfı
 
-Bu sınıf, bir ek düğüm nesnesi uygulamak için yöntemler sağlar.
+Bu sınıf, bir ek bileşen düğüm nesnesi uygulamak için yöntemler sağlar.
 
 > [!IMPORTANT]
->  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.
+>  Bu sınıf ve üyeleri Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -50,11 +50,11 @@ class ATL_NO_VTABLE CSnapInItemImpl : public CSnapInItem
 
 #### <a name="parameters"></a>Parametreler
 
-*T*<br/>
-Sınıfınız, türetilen `CSnapInItemImpl`.
+*ŞI*<br/>
+Sınıfınız, öğesinden `CSnapInItemImpl`türetilir.
 
-*bIsExtension*<br/>
-Nesnenin ek uzantı ise TRUE; Aksi durumda FALSE.
+*Iki kez Ifade*<br/>
+Nesne bir ek bileşen uzantısı ise doğru; Aksi halde yanlış.
 
 ## <a name="members"></a>Üyeler
 
@@ -62,37 +62,37 @@ Nesnenin ek uzantı ise TRUE; Aksi durumda FALSE.
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CSnapInItemImpl::CSnapInItemImpl](#csnapinitemimpl)|Oluşturucu.|
+|[Csnapınitemımpl:: Csnapınitemımpl](#csnapinitemimpl)|Oluşturucu.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CSnapInItemImpl::AddMenuItems](#addmenuitems)|Menü öğeleri için bir bağlam menüsü ekler.|
-|[CSnapInItemImpl::Command](#command)|Özel menü öğesi seçildiğinde Konsolu tarafından çağrılır.|
-|[CSnapInItemImpl::CreatePropertyPages](#createpropertypages)|Sayfaları için ek bileşeninin özellik sayfası ekler.|
-|[CSnapInItemImpl::FillData](#filldata)|Belirtilen akış eklentisini nesnesindeki bilgileri kopyalar.|
-|[CSnapInItemImpl::GetResultPaneInfo](#getresultpaneinfo)|Alır `RESULTDATAITEM` ek bileşenini yapısı.|
-|[CSnapInItemImpl::GetResultViewType](#getresultviewtype)|Sonuç bölmesindeki tarafından kullanılan görünüm türünü belirler.|
-|[CSnapInItemImpl::GetScopePaneInfo](#getscopepaneinfo)|Alır `SCOPEDATAITEM` ek bileşenini yapısı.|
-|[CSnapInItemImpl::Notify](#notify)|Kullanıcı tarafından gerçekleştirilen eylemlerin ve eklentinin bildirmek için konsolu tarafından çağrılır.|
-|[CSnapInItemImpl::QueryPagesFor](#querypagesfor)|Ek bileşenini düğümü özellik sayfaları destekleyip desteklemediğini görmek için çağrılır.|
-|[CSnapInItemImpl::SetMenuInsertionFlags](#setmenuinsertionflags)|Bir ek bileşen nesne menü ekleme bayrakları değiştirir.|
-|[CSnapInItemImpl::SetToolbarButtonInfo](#settoolbarbuttoninfo)|Belirtilen araç çubuğu düğmesini bilgilerini ayarlar.|
-|[CSnapInItemImpl::UpdateMenuState](#updatemenustate)|Bir bağlam menüsü öğesi durumunu güncelleştirir.|
-|[CSnapInItemImpl::UpdateToolbarButton](#updatetoolbarbutton)|Belirtilen araç çubuğu düğmesini durumunu güncelleştirir.|
+|[Csnapınitemımpl:: AddMenuItems](#addmenuitems)|Bağlam menüsüne menü öğeleri ekler.|
+|[Csnapınitemımpl:: komutu](#command)|Özel bir menü öğesi seçildiğinde konsol tarafından çağırılır.|
+|[Csnapınitemımpl:: CreatePropertyPages](#createpropertypages)|Ek bileşenin Özellik sayfasına sayfa ekler.|
+|[Csnapınitemımpl:: FillData](#filldata)|Ek bileşen nesnesindeki bilgileri belirtilen akışa kopyalar.|
+|[Csnapınitemımpl:: Getresultbölmesi bilgileri](#getresultpaneinfo)|Ek bileşenin `RESULTDATAITEM` yapısını alır.|
+|[Csnapınitemımpl:: GetResultViewType](#getresultviewtype)|Sonuç bölmesi tarafından kullanılan görünüm türünü belirler.|
+|[Csnapınitemımpl:: Getscopebölmesi bilgileri](#getscopepaneinfo)|Ek bileşenin `SCOPEDATAITEM` yapısını alır.|
+|[Csnapınitemımpl:: Notify](#notify)|Kullanıcı tarafından gerçekleştirilen eylemlerin ek bileşenlerine bildirimde bulunulmayı sağlamak için konsol tarafından çağırılır.|
+|[Csnapınitemımpl:: QueryPagesFor](#querypagesfor)|Ek bileşen düğümünün özellik sayfalarını destekleyip desteklemediğini görmek için çağırılır.|
+|[Csnapınitemımpl:: Setmenuınsertionflags](#setmenuinsertionflags)|Bir ek bileşen nesnesi için menü ekleme bayraklarını değiştirir.|
+|[Csnapınitemımpl:: Settoolbarbuttonınfo](#settoolbarbuttoninfo)|Belirtilen araç çubuğu düğmesinin bilgilerini ayarlar.|
+|[Csnapınitemımpl:: UpdateMenuState](#updatemenustate)|Bir bağlam menüsü öğesinin durumunu güncelleştirir.|
+|[Csnapınitemımpl:: UpdateToolbarButton](#updatetoolbarbutton)|Belirtilen araç çubuğu düğmesinin durumunu güncelleştirir.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CSnapInItemImpl::m_bstrDisplayName](#m_bstrdisplayname)|Ek Bileşen Nesne adı.|
-|[CSnapInItemImpl::m_resultDataItem](#m_resultdataitem)|Windows `RESULTDATAITEM` yapısı tarafından kullanılan `CSnapInItemImpl` nesne.|
-|[CSnapInItemImpl::m_scopeDataItem](#m_scopedataitem)|Windows `SCOPEDATAITEM` yapısı tarafından kullanılan `CSnapInItemImpl` nesne.|
+|[Csnapınitemımpl:: m_bstrDisplayName](#m_bstrdisplayname)|Ek bileşen nesnesinin adı.|
+|[Csnapınitemımpl:: m_resultDataItem](#m_resultdataitem)|Nesnesi tarafından kullanılan Windows `RESULTDATAITEM` yapısı. `CSnapInItemImpl`|
+|[Csnapınitemımpl:: m_scopeDataItem](#m_scopedataitem)|Nesnesi tarafından kullanılan Windows `SCOPEDATAITEM` yapısı. `CSnapInItemImpl`|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CSnapInItemImpl` menü öğeleri ve araç çubuklarını ekleme ve uygun bir işleyici işlevi için ek düğüm için komutları iletme gibi ek olarak, ek bileşenini düğüm nesnesi için temel bir uygulamasını sağlar. Bu özellikler, birkaç farklı arabirimi kullanılarak uygulanır ve türleri eşlenir. Varsayılan uygulama doğru türetilmiş bir sınıf örneğini belirleyerek ve ardından doğru örneğine iletirken düğüm nesnesi için gönderilen bildirimleri işler.
+`CSnapInItemImpl`menü öğelerini ve araç çubuklarını ekleme ve ek bileşen düğümü için komutları uygun işleyici işlevine iletme gibi bir ek bileşen düğüm nesnesi için temel bir uygulama sağlar. Bu özellikler birçok farklı arabirim ve eşleme türü kullanılarak uygulanır. Varsayılan uygulama, türetilmiş sınıfın doğru örneğini belirleyerek ve sonra iletiyi doğru örneğe ileterek düğüm nesnesine gönderilen bildirimleri işler.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -102,11 +102,11 @@ Nesnenin ek uzantı ise TRUE; Aksi durumda FALSE.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlsnap.h
+**Üstbilgi:** atlsnap. h
 
-##  <a name="addmenuitems"></a>  CSnapInItemImpl::AddMenuItems
+##  <a name="addmenuitems"></a>Csnapınitemımpl:: AddMenuItems
 
-Bu yöntem Win32 işlevini uygulayan [IExtendContextMenu::AddMenuItems](/windows/desktop/api/mmc/nf-mmc-iextendcontextmenu-addmenuitems).
+Bu yöntem, [IExtendContextMenu:: AddMenuItems](/windows/win32/api/mmc/nf-mmc-iextendcontextmenu-addmenuitems)Win32 işlevini uygular.
 
 ```
 AddMenuItems(
@@ -118,33 +118,33 @@ AddMenuItems(
 ### <a name="parameters"></a>Parametreler
 
 *piCallback*<br/>
-[in] İşaretçi `IContextMenuCallback` için bağlam menüsü öğeleri eklemek.
+'ndaki Bağlam menüsüne öğe `IContextMenuCallback` ekleyebilirler öğesine yönelik işaretçi.
 
 *pInsertionAllowed*<br/>
-[out içinde] Tanımlayan kullanılacak Microsoft Yönetim Konsolu MMC tanımlı menü öğesi ekleme noktaları. Bu, aşağıdaki bayrakların birleşimi olabilir:
+[in, out] Kullanılabilecek Microsoft Yönetim Konsolu (MMC) tanımlı, menü öğesi ekleme noktalarını tanımlar. Bu, aşağıdaki bayrakların bir birleşimi olabilir:
 
-- Bağlam menüsünün üstünde CCM_INSERTIONALLOWED_TOP öğeleri eklenebilir.
+- CCM_INSERTIONALLOWED_TOP öğeler, bir bağlam menüsünün üst kısmına eklenebilir.
 
-- Yeni Oluştur alt menüde CCM_INSERTIONALLOWED_NEW öğeleri eklenebilir.
+- CCM_INSERTIONALLOWED_NEW öğeleri yeni oluştur alt menüsünde eklenebilir.
 
-- Görev alt menüde CCM_INSERTIONALLOWED_TASK öğeleri eklenebilir.
+- CCM_INSERTIONALLOWED_TASK öğeleri görev alt menüsüne eklenebilir.
 
-- CCM_INSERTIONALLOWED_VIEW öğeleri araç Görünüm menüsü ya da sonuç bölmesi bağlam menüsü Görünüm alt eklenebilir.
+- CCM_INSERTIONALLOWED_VIEW öğeleri araç çubuğu Görünüm menüsüne veya sonuç bölmesi bağlam menüsünün görünüm alt menüsüne eklenebilir.
 
 *type*<br/>
-[in] Nesne türünü belirtir. Aşağıdaki değerlerden biri olabilir:
+'ndaki Nesne türünü belirtir. Aşağıdaki değerlerden birine sahip olabilir:
 
-- Kapsam bölmesi bağlamının CCT_SCOPE veri nesnesi.
+- Kapsam bölmesi bağlamı için CCT_SCOPE veri nesnesi.
 
-- Sonuç bölmesinde bağlamının CCT_RESULT veri nesnesi.
+- Sonuç bölmesi bağlamı için CCT_RESULT veri nesnesi.
 
-- Eklenti Yöneticisi içerik için CCT_SNAPIN_MANAGER veri nesnesi.
+- Ek Bileşen Yöneticisi bağlamı için CCT_SNAPIN_MANAGER veri nesnesi.
 
-- CCT_UNINITIALIZED veri nesnesi, geçersiz bir türe sahip.
+- CCT_UNINITIALIZED veri nesnesinin türü geçersiz.
 
-##  <a name="command"></a>  CSnapInItemImpl::Command
+##  <a name="command"></a>Csnapınitemımpl:: komutu
 
-Bu yöntem Win32 işlevini uygulayan [IExtendContextMenu::Command](/windows/desktop/api/mmc/nf-mmc-iextendcontextmenu-command).
+Bu yöntem, [IExtendContextMenu:: komutunu](/windows/win32/api/mmc/nf-mmc-iextendcontextmenu-command)Win32 işlevini uygular.
 
 ```
 Command(long lCommandID, DATA_OBJECT_TYPES type);
@@ -153,22 +153,22 @@ Command(long lCommandID, DATA_OBJECT_TYPES type);
 ### <a name="parameters"></a>Parametreler
 
 *lCommandID*<br/>
-[in] Menü öğesinin komut tanımlayıcısını belirtir.
+'ndaki Menü öğesinin komut tanımlayıcısını belirtir.
 
 *type*<br/>
-[in] Nesne türünü belirtir. Aşağıdaki değerlerden biri olabilir:
+'ndaki Nesne türünü belirtir. Aşağıdaki değerlerden birine sahip olabilir:
 
-- Kapsam bölmesi bağlamının CCT_SCOPE veri nesnesi.
+- Kapsam bölmesi bağlamı için CCT_SCOPE veri nesnesi.
 
-- Sonuç bölmesinde bağlamının CCT_RESULT veri nesnesi.
+- Sonuç bölmesi bağlamı için CCT_RESULT veri nesnesi.
 
-- Eklenti Yöneticisi içerik için CCT_SNAPIN_MANAGER veri nesnesi.
+- Ek Bileşen Yöneticisi bağlamı için CCT_SNAPIN_MANAGER veri nesnesi.
 
-- CCT_UNINITIALIZED veri nesnesi, geçersiz bir türe sahip.
+- CCT_UNINITIALIZED veri nesnesinin türü geçersiz.
 
-##  <a name="createpropertypages"></a>  CSnapInItemImpl::CreatePropertyPages
+##  <a name="createpropertypages"></a>Csnapınitemımpl:: CreatePropertyPages
 
-Bu yöntem Win32 işlevini uygulayan [IExtendPropertySheet::CreatePropertyPages](/windows/desktop/api/mmc/nn-mmc-iextendpropertysheet2).
+Bu yöntem, [IExtendPropertySheet:: CreatePropertyPages](/windows/win32/api/mmc/nn-mmc-iextendpropertysheet2)Win32 işlevini uygular.
 
 ```
 CreatePropertyPages(
@@ -181,34 +181,34 @@ CreatePropertyPages(
 ### <a name="parameters"></a>Parametreler
 
 *lpProvider*<br/>
-[in] İşaretçi `IPropertySheetCallback` arabirimi.
+'ndaki `IPropertySheetCallback` Arabirim işaretçisi.
 
-*Tanıtıcı*<br/>
-[in] Uygun veri sınıfa MMCN_PROPERTY_CHANGE bildirim iletisini yönlendirmek için kullanılan tanıtıcı belirtir.
+*tutamaçlardan*<br/>
+'ndaki MMCN_PROPERTY_CHANGE bildirim iletisini uygun veri sınıfına yönlendirmek için kullanılan tanıtıcıyı belirtir.
 
-*pUnk*<br/>
-[in] İşaretçi `IExtendPropertySheet` arabiriminde düğüm hakkında bağlam bilgisi içeren nesne.
+*pUnk dili*<br/>
+'ndaki Nesne üzerinde, `IExtendPropertySheet` düğüm hakkındaki bağlam bilgilerini içeren arabirime yönelik işaretçi.
 
 *type*<br/>
-[in] Nesne türünü belirtir. Aşağıdaki değerlerden biri olabilir:
+'ndaki Nesne türünü belirtir. Aşağıdaki değerlerden birine sahip olabilir:
 
-- Kapsam bölmesi bağlamının CCT_SCOPE veri nesnesi.
+- Kapsam bölmesi bağlamı için CCT_SCOPE veri nesnesi.
 
-- Sonuç bölmesinde bağlamının CCT_RESULT veri nesnesi.
+- Sonuç bölmesi bağlamı için CCT_RESULT veri nesnesi.
 
-- Eklenti Yöneticisi içerik için CCT_SNAPIN_MANAGER veri nesnesi.
+- Ek Bileşen Yöneticisi bağlamı için CCT_SNAPIN_MANAGER veri nesnesi.
 
-- CCT_UNINITIALIZED veri nesnesi, geçersiz bir türe sahip.
+- CCT_UNINITIALIZED veri nesnesinin türü geçersiz.
 
-##  <a name="csnapinitemimpl"></a>  CSnapInItemImpl::CSnapInItemImpl
+##  <a name="csnapinitemimpl"></a>Csnapınitemımpl:: Csnapınitemımpl
 
-Oluşturur bir `CSnapInItemImpl` nesne.
+Bir `CSnapInItemImpl` nesnesi oluşturur.
 
 ```
 CSnapInItemImpl();
 ```
 
-##  <a name="filldata"></a>  CSnapInItemImpl::FillData
+##  <a name="filldata"></a>Csnapınitemımpl:: FillData
 
 Bu işlev, öğe hakkında bilgi almak için çağrılır.
 
@@ -218,19 +218,19 @@ FillData(CLIPFORMAT cf, LPSTREAM pStream);
 
 ### <a name="parameters"></a>Parametreler
 
-*cf*<br/>
-[in] Biçimi (metin, zengin metin veya OLE öğeleri ile zengin metin) Pano.
+*CF*<br/>
+'ndaki Panonun biçimi (metin, zengin metin veya OLE öğeleriyle zengin metin).
 
 *pStream*<br/>
-[in] Nesne verilerini içeren akış için bir işaretçi.
+'ndaki Nesne verilerini içeren akışa yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev düzgün bir şekilde uygulamak için doğru bilgileri akışa kopyalayın (*pStream*) tarafından belirtilen Pano biçimi bağlı olarak *cf*.
+Bu işlevi düzgün şekilde uygulamak için, *CF*tarafından belirtilen Pano biçimine bağlı olarak doğru bilgileri akışa (*pStream*) kopyalayın.
 
-##  <a name="getresultviewtype"></a>  CSnapInItemImpl::GetResultViewType
+##  <a name="getresultviewtype"></a>Csnapınitemımpl:: GetResultViewType
 
-Sonuç bölmesini eklentisini nesnenin görünümünü türünü almak için bu işlevi çağırın.
+Ek bileşen nesnesinin sonuç bölmesinin görünüm türünü almak için bu işlevi çağırın.
 
 ```
 GetResultViewType(
@@ -241,18 +241,18 @@ GetResultViewType(
 ### <a name="parameters"></a>Parametreler
 
 *ppViewType*<br/>
-[out] Adres döndürülen görünüm türünün işaretçisi.
+dışı Döndürülen görünüm türünün adresi işaretçisi.
 
 *pViewOptions*<br/>
-[out] Konsolu, sahip olan ek bileşenini tarafından belirtilen seçeneklerle sağlar MMC_VIEW_OPTIONS sabit listesi için işaretçi. Bu değer aşağıdakilerden biri olabilir:
+dışı Konsola sahip olan ek bileşen tarafından belirtilen seçenekleri sağlayan MMC_VIEW_OPTIONS numaralandırması işaretçisi. Bu değer aşağıdakilerden biri olabilir:
 
-- MMC_VIEW_OPTIONS_NOLISTVIEWS = 0x00000001 belirten standart liste görünümü seçenekleri görüntülemesini ayarladıysa konsola **görünümü** menüsü. Ek bileşeni, kendi özel görünümlerinizi yalnızca sonuç görünümü bölmesinde görüntülenecek sağlar. Şu anda tanımlı olan tek seçenek bayrak budur.
+- MMC_VIEW_OPTIONS_NOLISTVIEWS = 0x00000001, konsola **Görünüm** menüsünde standart liste görünümü seçenekleri sunmaktan kaçınmasını söyler. Ek bileşenin kendi özel görünümlerini yalnızca sonuç görünümü bölmesinde görüntülemesini sağlar. Bu, şu anda tanımlanan tek seçenek bayrağıdır.
 
-- MMC_VIEW_OPTIONS_NONE verir 0 = varsayılan görüntüleme seçenekleri.
+- MMC_VIEW_OPTIONS_NONE = 0 varsayılan görünüm seçeneklerine Izin verir.
 
-##  <a name="getscopepaneinfo"></a>  CSnapInItemImpl::GetScopePaneInfo
+##  <a name="getscopepaneinfo"></a>Csnapınitemımpl:: Getscopebölmesi bilgileri
 
-Almak için bu işlevi çağırın `SCOPEDATAITEM` ek bileşenini yapısı.
+Ek bileşenin `SCOPEDATAITEM` yapısını almak için bu işlevi çağırın.
 
 ```
 GetScopePaneInfo (SCOPEDATAITEM* pScopeDataItem);
@@ -260,12 +260,12 @@ GetScopePaneInfo (SCOPEDATAITEM* pScopeDataItem);
 
 ### <a name="parameters"></a>Parametreler
 
-*pScopeDataItem*<br/>
-[out] Bir işaretçi `SCOPEDATAITEM` yapısını `CSnapInItemImpl` nesne.
+*Pscopedataıtem*<br/>
+dışı `SCOPEDATAITEM` Nesnenin yapısına`CSnapInItemImpl` yönelik bir işaretçi.
 
-##  <a name="getresultpaneinfo"></a>  CSnapInItemImpl::GetResultPaneInfo
+##  <a name="getresultpaneinfo"></a>Csnapınitemımpl:: Getresultbölmesi bilgileri
 
-Almak için bu işlevi çağırın `RESULTDATAITEM` ek bileşenini yapısı.
+Ek bileşenin `RESULTDATAITEM` yapısını almak için bu işlevi çağırın.
 
 ```
 GetResultPaneInfo (RESULTDATAITEM* pResultDataItem);
@@ -274,35 +274,35 @@ GetResultPaneInfo (RESULTDATAITEM* pResultDataItem);
 ### <a name="parameters"></a>Parametreler
 
 *pResultDataItem*<br/>
-[out] Bir işaretçi `RESULTDATAITEM` yapısını `CSnapInItemImpl` nesne.
+dışı `RESULTDATAITEM` Nesnenin yapısına`CSnapInItemImpl` yönelik bir işaretçi.
 
-##  <a name="m_bstrdisplayname"></a>  CSnapInItemImpl::m_bstrDisplayName
+##  <a name="m_bstrdisplayname"></a>Csnapınitemımpl:: m_bstrDisplayName
 
-Düğüm öğe için görüntülenen dizeyi içerir.
+Düğüm öğesi için görünen dizeyi içerir.
 
 ```
 CComBSTR m_bstrDisplayName;
 ```
 
-##  <a name="m_scopedataitem"></a>  CSnapInItemImpl::m_scopeDataItem
+##  <a name="m_scopedataitem"></a>Csnapınitemımpl:: m_scopeDataItem
 
-`SCOPEDATAITEM` Yapısını ek veri nesnesi.
+Ek bileşen veri nesnesinin yapısı.`SCOPEDATAITEM`
 
 ```
 SCOPEDATAITEM m_scopeDataItem;
 ```
 
-##  <a name="m_resultdataitem"></a>  CSnapInItemImpl::m_resultDataItem
+##  <a name="m_resultdataitem"></a>Csnapınitemımpl:: m_resultDataItem
 
-[RESULTDATAITEM](/windows/desktop/api/mmc/ns-mmc-resultdataitem) yapısını ek veri nesnesi.
+Ek bileşen veri nesnesinin [RESULTDATAITEM](/windows/win32/api/mmc/ns-mmc-resultdataitem) yapısı.
 
 ```
 RESULTDATAITEM m_resultDataItem;
 ```
 
-##  <a name="notify"></a>  CSnapInItemImpl::Notify
+##  <a name="notify"></a>Csnapınitemımpl:: Notify
 
-Ek Bileşen Nesne kullanıcı tarafından izlemede çağrılır.
+Ek bileşen nesnesi Kullanıcı tarafından üzerinde işlem yapıldığında çağırılır.
 
 ```
 STDMETHOD(Notify)(
@@ -317,70 +317,70 @@ STDMETHOD(Notify)(
 ### <a name="parameters"></a>Parametreler
 
 *event*<br/>
-[in] Bir kullanıcı tarafından gerçekleştirilen bir eylem belirtir. Aşağıdaki bildirimler mümkündür:
+'ndaki Bir kullanıcı tarafından gerçekleştirilen eylemi tanımlar. Aşağıdaki bildirimler mümkündür:
 
-- Bir pencere edilirken MMCN_ACTIVATE gönderilen etkinleştirilir ve devre dışı bırakıldı.
+- MMCN_ACTIVATE, bir pencere etkinleştirildiğinde ve devre dışı bırakıldığında gönderilir.
 
-- Görüntüleri sonucu bölmesine eklemek için MMCN_ADD_IMAGES gönderilir.
+- MMCN_ADD_IMAGES, sonuç bölmesine görüntü eklemek için gönderildi.
 
-- Kullanıcı araç çubuğu düğmeleri tıkladığında MMCN_BTN_CLICK gönderilir.
+- MMCN_BTN_CLICK, Kullanıcı araç çubuğu düğmelerinden birine tıkladığında gönderilir.
 
-- Bir kullanıcı bir liste görünümü öğesi bir fare düğmesine tıkladığında MMCN_CLICK gönderilir.
+- MMCN_CLICK, bir Kullanıcı liste görünümü öğesindeki fare düğmesine tıkladığında gönderilir.
 
-- Bir kullanıcı bir liste görünümü öğesi bir fare düğmesine çift tıkladığında MMCN_DBLCLICK gönderilir.
+- MMCN_DBLCLICK, bir Kullanıcı liste görünümü öğesinde fare düğmesine çift tıkladığında gönderilir.
 
-- MMCN_DELETE nesne olmalıdır ve eklentinin bilgilendirmek için gönderilen silindi.
+- MMCN_DELETE, nesnenin silinmesi gereken ek bileşeni bilgilendirmek için gönderilir.
 
-- Bir klasör ayrılmadan veya genişletilmeden sözleşmeleri yapılır gerektiğinde MMCN_EXPAND gönderilir.
+- MMCN_EXPAND, bir klasörün genişletilmesi veya sağlaması gerektiğinde gönderilir.
 
-- Bir pencere edilirken MMCN_MINIMIZED gönderilen küçültülebilir ya da ekranı.
+- Bir pencere küçültüldüğünde veya ekranı kaplamış olduğunda MMCN_MINIMIZED gönderilir.
 
-- Ek bileşenini nesnenin görünümü değişmek üzere bir ek bileşenini nesnesini bildirmek için MMCN_PROPERTY_CHANGE gönderdi.
+- MMCN_PROPERTY_CHANGE, ek bileşen nesnesinin görünümünün değiştirmek üzere olduğu bir ek bileşen nesnesine bildirim göndermek için gönderildi.
 
-- Tüm alt ağacı ek bileşenini silmeniz gerektiğinde MMCN_REMOVE_CHILDREN gönderilen belirtilen düğümün eklemiştir.
+- Ek bileşenin, belirtilen düğümün altına eklediği alt ağacın tamamını silmesi gerektiğinde MMCN_REMOVE_CHILDREN gönderilir.
 
-- İlk kez sorgu için bir yeniden adlandırma ve yeniden adlandırma yapmak için ikinci kez MMCN_RENAME gönderilir.
+- MMCN_RENAME yeniden adlandırma için ilk kez ve yeniden adlandırma için ikinci kez gönderilir.
 
-- Kapsam ya da sonuç görünümü bölmesinde bir öğe seçildiğinde MMCN_SELECT gönderilir.
+- Kapsam veya sonuç görünümü bölmesindeki bir öğe seçildiğinde MMCN_SELECT gönderilir.
 
-- Kapsam öğesini seçtikten veya ilk kez seçili MMCN_SHOW gönderilir.
+- Kapsam öğesi seçildiğinde veya ilk kez seçili değilken MMCN_SHOW gönderilir.
 
-- Bir değişiklik olduğunda ek bileşenini tüm görünümlere güncelleştirebilirsiniz MMCN_VIEW_CHANGE gönderilir.
+- MMCN_VIEW_CHANGE, ek bileşen bir değişiklik olduğunda tüm görünümleri güncelleştiremediğinde gönderilir.
 
-*bağımsız değişken*<br/>
-[in] Bildirim türüne göre değişir.
+*değişkeni*<br/>
+'ndaki Bildirim türüne bağlıdır.
 
-*param*<br/>
-[in] Bildirim türüne göre değişir.
+*larına*<br/>
+'ndaki Bildirim türüne bağlıdır.
 
 *pComponentData*<br/>
-[out] Uygulayan nesne için bir işaretçi `IComponentData`. Bildirim alanından gönderilmekte olduğu değil, bu parametre null `IComponentData::Notify`.
+dışı Uygulayan `IComponentData`nesneye yönelik bir işaretçi. Bildirimin iletilemediği `IComponentData::Notify`Bu parametre null.
 
 *pComponent*<br/>
-[out] Uygulayan nesne işaretçisi `IComponent`. Bildirim alanından gönderilmekte olduğu değil, bu parametre null `IComponent::Notify`.
+dışı Uygulayan `IComponent`nesneye yönelik bir işaretçi. Bildirimin iletilemediği `IComponent::Notify`Bu parametre null.
 
 *type*<br/>
-[in] Nesne türünü belirtir. Aşağıdaki değerlerden biri olabilir:
+'ndaki Nesne türünü belirtir. Aşağıdaki değerlerden birine sahip olabilir:
 
-- Kapsam bölmesi bağlamının CCT_SCOPE veri nesnesi.
+- Kapsam bölmesi bağlamı için CCT_SCOPE veri nesnesi.
 
-- Sonuç bölmesinde bağlamının CCT_RESULT veri nesnesi.
+- Sonuç bölmesi bağlamı için CCT_RESULT veri nesnesi.
 
-- Eklenti Yöneticisi içerik için CCT_SNAPIN_MANAGER veri nesnesi.
+- Ek Bileşen Yöneticisi bağlamı için CCT_SNAPIN_MANAGER veri nesnesi.
 
-- CCT_UNINITIALIZED veri nesnesi, geçersiz bir türe sahip.
+- CCT_UNINITIALIZED veri nesnesinin türü geçersiz.
 
-##  <a name="querypagesfor"></a>  CSnapInItemImpl::QueryPagesFor
+##  <a name="querypagesfor"></a>Csnapınitemımpl:: QueryPagesFor
 
-Ek bileşenini düğümü özellik sayfaları destekleyip desteklemediğini görmek için çağrılır.
+Ek bileşen düğümünün özellik sayfalarını destekleyip desteklemediğini görmek için çağırılır.
 
 ```
 QueryPagesFor(DATA_OBJECT_TYPES type);
 ```
 
-##  <a name="setmenuinsertionflags"></a>  CSnapInItemImpl::SetMenuInsertionFlags
+##  <a name="setmenuinsertionflags"></a>Csnapınitemımpl:: Setmenuınsertionflags
 
-Tarafından belirtilen menü ekleme bayrakları değiştirmek için bu işlevi çağırın *pInsertionAllowed*, ek nesne.
+Ek bileşen nesnesi için, *pInsertionAllowed*tarafından belirtilen menü ekleme bayraklarını değiştirmek için bu işlevi çağırın.
 
 ```
 void SetMenuInsertionFlags(
@@ -390,29 +390,29 @@ void SetMenuInsertionFlags(
 
 ### <a name="parameters"></a>Parametreler
 
-*bBeforeInsertion*<br/>
-[in] Bağlam menüsüne eklenen öğeler önce işlevin çağrılması gerektiğini olursa sıfır dışı; Aksi durumda 0.
+*Bbeforeekleme*<br/>
+'ndaki Öğe bağlam menüsüne eklenmeden önce işlev çağrılmalıdır. Aksi takdirde 0.
 
 *pInsertionAllowed*<br/>
-[out içinde] Tanımlayan kullanılacak Microsoft Yönetim Konsolu MMC tanımlı menü öğesi ekleme noktaları. Bu, aşağıdaki bayrakların birleşimi olabilir:
+[in, out] Kullanılabilecek Microsoft Yönetim Konsolu (MMC) tanımlı, menü öğesi ekleme noktalarını tanımlar. Bu, aşağıdaki bayrakların bir birleşimi olabilir:
 
-- Bağlam menüsünün üstünde CCM_INSERTIONALLOWED_TOP öğeleri eklenebilir.
+- CCM_INSERTIONALLOWED_TOP öğeler, bir bağlam menüsünün üst kısmına eklenebilir.
 
-- Yeni Oluştur alt menüde CCM_INSERTIONALLOWED_NEW öğeleri eklenebilir.
+- CCM_INSERTIONALLOWED_NEW öğeleri yeni oluştur alt menüsünde eklenebilir.
 
-- Görev alt menüde CCM_INSERTIONALLOWED_TASK öğeleri eklenebilir.
+- CCM_INSERTIONALLOWED_TASK öğeleri görev alt menüsüne eklenebilir.
 
-- CCM_INSERTIONALLOWED_VIEW öğeleri araç Görünüm menüsü ya da sonuç bölmesi bağlam menüsü Görünüm alt eklenebilir.
+- CCM_INSERTIONALLOWED_VIEW öğeleri araç çubuğu Görünüm menüsüne veya sonuç bölmesi bağlam menüsünün görünüm alt menüsüne eklenebilir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir birincil ek bileşenini geliştiriyorsanız, herhangi bir üçüncü taraf uzantı ekleyebileceğiniz menü öğelerinin türü kısıtlama bir yolu olarak ekleme bayrakların sıfırlayabilirsiniz. Örneğin, birincil ve eklentinin uzantıları kendi yeni oluştur menü öğeleri eklemesini engellemek için CCM_INSERTIONALLOWED_NEW bayrağı temizleyebilirsiniz.
+Birincil ek bileşen geliştiriyorsanız, bir üçüncü taraf uzantısının ekleyebilen menü öğelerinin türünü kısıtlayan bir yöntem olarak ekleme bayraklarını sıfırlayabilirsiniz. Örneğin, birincil ek bileşen, uzantılarının kendi yeni oluştur menü öğelerini eklemesini engellemek için CCM_INSERTIONALLOWED_NEW bayrağını temizleyebilir.
 
-BITS kümesinde yüklemeye çalışmamalısınız *pInsertionAllowed* , başlangıçta silinmesinden. Şu anda tanımlanmamış BITS değiştirmemelisiniz. Bu nedenle şu anda tanımlı BITS MMC gelecek sürümlerinde kullanabilirsiniz.
+İlk olarak temizlenmiş *pInsertionAllowed* içindeki bitleri ayarlamaya çalışmayın. MMC 'nin gelecek sürümleri, şu anda tanımlı olmayan bitleri kullanmamalıdır. bu nedenle, şu anda tanımlanmamış bitleri değiştirmemelisiniz.
 
-##  <a name="settoolbarbuttoninfo"></a>  CSnapInItemImpl::SetToolbarButtonInfo
+##  <a name="settoolbarbuttoninfo"></a>Csnapınitemımpl:: Settoolbarbuttonınfo
 
-Araç oluşturulmadan önce ek bileşenini nesnesinin tüm araç çubuğu düğmesi stilleri değiştirmek için bu işlevi çağırın.
+Araç çubuğu oluşturulmadan önce, ek bileşen nesnesinin herhangi bir araç çubuğu düğme stilini değiştirmek için bu işlevi çağırın.
 
 ```
 void SetToolbarButtonInfo(
@@ -424,39 +424,39 @@ void SetToolbarButtonInfo(
 ### <a name="parameters"></a>Parametreler
 
 *id*<br/>
-[in] Ayarlanacak araç çubuğu düğmesini kimliği.
+'ndaki Ayarlanacak araç çubuğu düğmesinin KIMLIĞI.
 
 *fsState*<br/>
-[in] Düğmenin durumu bayrakları. Bir veya daha fazlasını olabilir:
+'ndaki Düğmenin durum bayrakları. Aşağıdakilerden biri veya daha fazlası olabilir:
 
-- Düğme TBSTYLE_CHECKED stilde ve basıldığında TBSTATE_CHECKED.
+- TBSTATE_CHECKED TBSTYLE_CHECKED stiline sahiptir ve bu düğme basılabilir.
 
-- TBSTATE_ENABLED düğmeyi, kullanıcı girişi kabul eder. Bu duruma sahip olmayan bir düğme kullanıcı girdisi kabul etmiyor ve renkte gösterilir.
+- TBSTATE_ENABLED düğme Kullanıcı girişini kabul eder. Bu duruma sahip olmayan bir düğme Kullanıcı girişini kabul etmez ve gri renkte olur.
 
-- TBSTATE_HIDDEN düğmesi görünür değil ve kullanıcı girişi alamaz.
+- TBSTATE_HIDDEN düğme görünür değil ve Kullanıcı girişi alamıyor.
 
-- TBSTATE_INDETERMINATE düğmesi gri.
+- Düğme gri TBSTATE_INDETERMINATE.
 
-- Düğmeye basıldığında TBSTATE_PRESSED.
+- TBSTATE_PRESSED düğmeye basılmakta.
 
-- Düğme TBSTATE_WRAP bir satır sonu izler. Düğme de TBSTATE_ENABLED olması gerekir.
+- TBSTATE_WRAP A satır sonu düğme izler. Düğmenin de TBSTATE_ENABLED olması gerekir.
 
 *fsType*<br/>
-[in] Düğmenin durumu bayrakları. Bir veya daha fazlasını olabilir:
+'ndaki Düğmenin durum bayrakları. Aşağıdakilerden biri veya daha fazlası olabilir:
 
-- TBSTYLE_BUTTON standart bir düğme oluşturur.
+- TBSTYLE_BUTTON standart bir Gönder düğmesi oluşturur.
 
-- Basılı ve değil basılı durumları her zaman arasında geçiş yapar kullanıcı bir düğme TBSTYLE_CHECK oluşturur, tıklar. Basılı durumdayken farklı arka plan rengi düğmesi vardır.
+- TBSTYLE_CHECK, Kullanıcı tarafından her tıkladığında basıldığında basılan ve basılan durumlar arasında geçiş yapan bir düğme oluşturur. Düğme, basılan durumda olduğunda farklı bir arka plan rengine sahiptir.
 
-- Başka bir düğme grubundaki basılana kadar kalır bir onay düğmesine basıldığında TBSTYLE_CHECKGROUP oluşturur.
+- TBSTYLE_CHECKGROUP, gruptaki başka bir düğmeye basılana kadar basılı kalan bir onay düğmesi oluşturur.
 
-- Gruptaki başka bir düğmeye basıldığında kadar kalır bir düğmeye basıldığını TBSTYLE_GROUP oluşturur.
+- TBSTYLE_GROUP, gruptaki başka bir düğmeye basılana kadar basılı kalan bir düğme oluşturur.
 
-- TBSTYLE_SEP düğme grupları arasında küçük bir aralık sağlayan bir ayırıcı oluşturur. Bu stil bulunan bir düğme, kullanıcı girişini almaz.
+- TBSTYLE_SEP, düğme grupları arasında küçük bir boşluk sağlayan bir ayırıcı oluşturur. Bu stile sahip bir düğme Kullanıcı girişi almaz.
 
-##  <a name="updatemenustate"></a>  CSnapInItemImpl::UpdateMenuState
+##  <a name="updatemenustate"></a>Csnapınitemımpl:: UpdateMenuState
 
-Ek Bileşen Nesne bağlam menüsüne eklenmeden önce bir menü öğesini değiştirmek için bu işlevi çağırın.
+Bir menü öğesini, ek bileşen nesnesinin bağlam menüsüne eklenmeden önce değiştirmek için bu işlevi çağırın.
 
 ```
 void UpdateMenuState(
@@ -468,45 +468,45 @@ void UpdateMenuState(
 ### <a name="parameters"></a>Parametreler
 
 *id*<br/>
-[in] Ayarlanacak menü öğesinin kimliği.
+'ndaki Ayarlanacak menü öğesinin KIMLIĞI.
 
-*pBuf*<br/>
-[in] Güncelleştirilecek menü öğesi için bir dizeye bir işaretçi.
+*Parabelleğe*<br/>
+'ndaki Güncelleştirileceği menü öğesi için dizeye yönelik bir işaretçi.
 
-*bayrakları*<br/>
-[in] Yeni durum bayrakları belirtir. Bu, aşağıdaki bayrakların birleşimi olabilir:
+*larına*<br/>
+'ndaki Yeni durum bayraklarını belirtir. Bu, aşağıdaki bayrakların bir birleşimi olabilir:
 
-- MF_POPUP bu bağlam menüsü içine olduğunu belirtir. Menü öğeleri ekleme noktaları ve daha fazla alt menülerini kullanarak bu alt eklenebilir, `lCommandID` olarak kendi `IInsertionPointID`.
+- MF_POPUP, bunun bağlam menüsü içinde bir alt menü olduğunu belirtir. Menü öğeleri, ekleme noktaları ve diğer alt menüler bu alt menüye, `lCommandID` `IInsertionPointID`olarak kullanılarak eklenebilir.
 
-- MF_BITMAP ve MF_OWNERDRAW Bu bayraklar izin verilmez E_INVALIDARG dönüş değeri neden olur.
+- MF_BITMAP ve MF_OWNERDRAW bu bayraklara izin verilmez ve bir E_INVALIDARG dönüş değeri elde edilir.
 
-- MF_SEPARATOR yatay bir çizgi çizer. Yalnızca `IContextMenuProvider` MF_SEPARATOR kümesi ile menü öğesi eklemek için izin verilir.
+- MF_SEPARATOR yatay bir bölme çizgisi çizer. Yalnızca `IContextMenuProvider` MF_SEPARATOR set içeren menü öğeleri eklemesine izin verilir.
 
-- Menü öğesinin yanında bir onay işareti MF_CHECKED yerleştirir.
+- MF_CHECKED, menü öğesinin yanına bir onay işareti koyar.
 
-- MF_DISABLED devre dışı bırakır menü öğesi seçilemez bu nedenle, ancak bayrağı değil gri bu.
+- MF_DISABLED menü öğesini devre dışı bırakır, bu nedenle seçilemez, ancak bayrak bunu gri yapmaz.
 
-- Bu, kendi gri durumundan geri seçilemiyor MF_ENABLED menü öğesini sağlar.
+- MF_ENABLED, menü öğesinin seçilebilmesini sağlayacak şekilde, bu öğenin gri olan durumundan geri yüklenmesini mümkün kılar.
 
-- MF_GRAYED menü öğesi seçilemez bu nedenle, grileştirmesi devre dışı bırakır.
+- MF_GRAYED, menü öğesini devre dışı bırakır, böylece seçilemez.
 
-- MF_MENUBARBREAK işlevleri MF_MENUBREAK aynı bir menü çubuğu için bayrak. Bir açılan menü, alt veya kısayol menüsünden için yeni bir sütun eski sütunu dikey bir çizgiyle ayrılır.
+- MF_MENUBARBREAK, bir menü çubuğu için MF_MENUBREAK bayrağıyla aynı şekilde çalışır. Açılan menü, alt menü veya kısayol menüsü için yeni sütun, eski sütundan dikey bir çizgi ile ayrılır.
 
-- (Bir menü çubuğu için) yeni bir satıra MF_MENUBREAK yerleştirir öğesi veya sütun ayırıcı olmadan yeni bir sütun (için açılan menüsünden, alt veya kısayol menüsünden).
+- MF_MENUBREAK öğeyi, sütunları ayırarak yeni bir satıra (bir menü çubuğu için) veya yeni bir sütuna (açılan menü, alt menü veya kısayol menüsü için) koyar.
 
-- MF_UNCHECKED yapar (varsayılan) öğesinin yanındaki onay işareti koyun değil.
+- MF_UNCHECKED öğenin yanına bir onay işareti yerleştirmez (varsayılan).
 
-Aşağıdaki gruplar bayrakların birlikte kullanılamaz:
+Aşağıdaki bayrak grupları birlikte kullanılamaz:
 
-- MF_DISABLED MF_ENABLED ve MF_GRAYED.
+- MF_DISABLED, MF_ENABLED ve MF_GRAYED.
 
 - MF_MENUBARBREAK ve MF_MENUBREAK.
 
 - MF_CHECKED ve MF_UNCHECKED.
 
-##  <a name="updatetoolbarbutton"></a>  CSnapInItemImpl::UpdateToolbarButton
+##  <a name="updatetoolbarbutton"></a>Csnapınitemımpl:: UpdateToolbarButton
 
-Ek bileşenini nesnesinin bir araç çubuğu düğmesi gösterilmeden önce değiştirmek için bu işlevi çağırın.
+Bu işlevi, ek bileşen nesnesinin görüntülenmeden önce bir araç çubuğu düğmesini değiştirmek için çağırın.
 
 ```
 BOOL UpdateToolbarButton(UINT id, BYTE fsState);
@@ -515,21 +515,21 @@ BOOL UpdateToolbarButton(UINT id, BYTE fsState);
 ### <a name="parameters"></a>Parametreler
 
 *id*<br/>
-Güncelleştirilecek araç çubuğu düğmesini düğmesi Kimliğini belirtir.
+Güncelleştirileceği araç çubuğu düğmesinin düğme KIMLIĞINI belirtir.
 
 *fsState*<br/>
-Araç çubuğu düğmesi durumunu belirtir. Ayarlamak için bu durum ise, TRUE döndürür. Bu, aşağıdaki bayrakların birleşimi olabilir:
+Bir araç çubuğu düğme durumunu belirtir. Bu durum ayarlandıysanız, doğru döndürün. Bu, aşağıdaki bayrakların bir birleşimi olabilir:
 
-- Etkin, düğme kullanıcı girişi kabul eder. Bu duruma sahip olmayan bir düğme kullanıcı girdisi kabul etmiyor ve renkte gösterilir.
+- ETKIN düğme Kullanıcı girişini kabul eder. Bu duruma sahip olmayan bir düğme Kullanıcı girişini kabul etmez ve gri renkte olur.
 
-- Düğmenin İŞARETLİ stil sahiptir ve basıldığında teslim.
+- IŞARETLENMIŞ düğme IŞARETLI stile sahip ve basılmakta.
 
-- Gizli düğmesi görünür değil ve kullanıcı girişi alamaz.
+- GIZLI düğme görünür değildir ve Kullanıcı girişi alamaz.
 
-- Düğme gri BELİRSİZ.
+- BELIRSIZ düğme gri.
 
-- Düğmeye basıldığında BUTTONPRESSED.
+- Düğmeye BASıLDıĞıNDA düğmeye basıldı.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)
+[Sınıfa genel bakış](../../atl/atl-class-overview.md)

@@ -1,21 +1,21 @@
 ---
-title: kısıtlı (C++ COM özniteliği)
+title: kısıtlanmış (C++ com özniteliği)
 ms.date: 10/03/2018
 f1_keywords:
 - vc-attr.restricted
 helpviewer_keywords:
 - restricted attribute
 ms.assetid: 504a96be-b904-4269-8be1-920feba201b4
-ms.openlocfilehash: 86f40fa49daf88668e37bef07f0db33d01cf1942
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 01dabcd15eb1a14734c16b9e54c0ab2e030d0479
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62407360"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69514065"
 ---
 # <a name="restricted"></a>kısıtlı
 
-Bir modül, arabirim veya dispinterface üyesi rasgele çağrılamaz belirtir.
+Bir Module, Interface veya dispınterface üyesinin rastgele çağrılamıyor olduğunu belirtir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -27,16 +27,16 @@ Bir modül, arabirim veya dispinterface üyesi rasgele çağrılamaz belirtir.
 
 ### <a name="parameters"></a>Parametreler
 
-*Arabirimleri*<br/>
-Rasgele bir COM nesnesi üzerinde çağrılamaz bir veya daha fazla arabirim. Bu parametre, yalnızca bir sınıfa uygulandığında geçerlidir.
+*arabirimlerdeki*<br/>
+Bir COM nesnesi üzerinde rastgele çağrılmayan bir veya daha fazla arabirim. Bu parametre yalnızca bir sınıfa uygulandığında geçerlidir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Kısıtlı** C++ özniteliği ile aynı işlevlere sahip [kısıtlı](/windows/desktop/Midl/restricted) MIDL özniteliği.
+**Restricted** C++ özniteliği, [kısıtlı](/windows/win32/Midl/restricted) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod nasıl kullanılacağını gösterir **kısıtlı** özniteliği:
+Aşağıdaki kod, **Kısıtlanmış** özniteliği nasıl kullanacağınızı gösterir:
 
 ```cpp
 // cpp_attr_ref_restricted.cpp
@@ -67,12 +67,12 @@ class c : public a, public b
 
 |||
 |-|-|
-|**İçin geçerlidir**|Arabirim yöntemini **arabirimi**, **sınıfı**, **yapısı**|
+|**Uygulama hedefi**|Arabirim yöntemi, **arabirim**, **sınıf**, **Yapı**|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|**coclass'ı** (uygulandığında **sınıfı** veya **yapı**)|
-|**Geçersiz öznitelikler**|None|
+|**Gerekli öznitelikler**|**coclass** ( **sınıfa** veya **yapıya**uygulandığında)|
+|**Geçersiz öznitelikler**|Yok.|
 
-Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
+Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -12,16 +12,16 @@ helpviewer_keywords:
 - CMFCToolBarFontComboBox [MFC], GetFontDesc
 - CMFCToolBarFontComboBox [MFC], SetFont
 ms.assetid: 25f8e08c-aadd-4cb5-9581-a99d49d444b1
-ms.openlocfilehash: 89767a3ed6880703c3c754700ea5669c0cc183e5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7e19fc9257c1fe986ff09a8bbc86bf2fb55af7ee
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62218369"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69504739"
 ---
 # <a name="cmfctoolbarfontcombobox-class"></a>CMFCToolBarFontComboBox sınıfı
 
-Sistem yazı tiplerini listesinden bir yazı tipi seçmek kullanıcının sağlayan bir birleşik giriş kutusu denetimi içeren bir araç çubuğu düğmesi.
+Kullanıcının bir sistem yazı listesi listesinden yazı tipi seçmesini sağlayan bir açılan kutu denetimi içeren bir araç çubuğu düğmesi.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -35,35 +35,35 @@ class CMFCToolBarFontComboBox : public CMFCToolBarComboBoxButton
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CMFCToolBarFontComboBox::CMFCToolBarFontComboBox](#cmfctoolbarfontcombobox)|Oluşturur bir `CMFCToolBarFontComboBox` nesne.|
+|[CMFCToolBarFontComboBox:: CMFCToolBarFontComboBox](#cmfctoolbarfontcombobox)|Bir `CMFCToolBarFontComboBox` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CMFCToolBarFontComboBox::GetFontDesc](#getfontdesc)|Bir işaretçi döndürür `CMFCFontInfo` birleşik giriş kutusunda belirtilen dizin için nesne.|
-|[CMFCToolBarFontComboBox::SetFont](#setfont)|Yazı tipinin adını ya da yazı tipini öneki ve karakter kümesini yazı tipi birleşik giriş kutusundaki göre ya da bir yazıtipi seçer.|
+|[CMFCToolBarFontComboBox:: GetFontDesc](#getfontdesc)|Birleşik giriş kutusundaki belirtilen dizin `CMFCFontInfo` için nesneye bir işaretçi döndürür.|
+|[CMFCToolBarFontComboBox:: SetFont](#setfont)|Yazı tipinin adına veya yazı tipinin önek ve karakter kümesine göre yazı tipi Birleşik giriş kutusunda bir yazı tipi seçer.|
 
 ### <a name="data-members"></a>Veri üyeleri
 
-[CMFCToolBarFontComboBox::m_nFontHeight](#m_nfontheight)<br/>
-Yazı tipi birleşik giriş kutusundaki karakterler yüksekliği.
+[CMFCToolBarFontComboBox:: m_nFontHeight](#m_nfontheight)<br/>
+Yazı tipi Birleşik giriş kutusundaki karakterlerin yüksekliği.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir yazı tipi birleşik giriş kutusu düğmesi için araç çubuğu eklemek için bu adımları izleyin:
+Bir araç çubuğuna bir yazı tipi açılan kutusu düğmesi eklemek için aşağıdaki adımları izleyin:
 
-1. Üst araç çubuğunda kaynağında düğme için bir işlevsiz kaynak kimliği saklı tutarız.
+1. Ana araç çubuğu kaynağında düğme için bir kukla kaynak KIMLIĞI ayırın.
 
-1. Oluşturmak bir `CMFCToolBarFontComboBox` nesne.
+1. Bir `CMFCToolBarFontComboBox` nesne oluşturun.
 
-1. Yeni bir birleşik giriş kutusu düğmesi ile özgün düğmesini kullanarak AFX_WM_RESETTOOLBAR iletiyi işleyen ileti işleyicisi değiştirin [CMFCToolBar::ReplaceButton](../../mfc/reference/cmfctoolbar-class.md#replacebutton).
+1. AFX_WM_RESETTOOLBAR iletisini işleyen ileti işleyicisinde, [CMFCToolBar:: ReplaceButton](../../mfc/reference/cmfctoolbar-class.md#replacebutton)öğesini kullanarak özgün düğmesini Yeni Birleşik giriş kutusu düğmesiyle değiştirin.
 
-1. Yazı tipi birleşik giriş kutusuna belgenin yazı tipi ile kullanarak seçili eşitleme [CMFCToolBarFontComboBox::SetFont](#setfont) yöntemi.
+1. Açılan kutuda seçilen yazı tipini, [CMFCToolBarFontComboBox:: SetFont](#setfont) yöntemini kullanarak belgedeki yazı tipiyle eşitler.
 
-Belgenin yazı tipi birleşik giriş kutusunda seçili yazı tipi ile eşitlemek için kullanın [CMFCToolBarFontComboBox::GetFontDesc](#getfontdesc) seçili yazı tipinin öznitelikleri almak ve oluşturmak için öznitelikleri kullanmak için yöntemi bir [ CFont sınıfı](../../mfc/reference/cfont-class.md) nesne.
+Belgenin yazı tipini Birleşik giriş kutusunda seçilen yazı tipiyle eşleştirmek için, [CMFCToolBarFontComboBox:: GetFontDesc](#getfontdesc) metodunu kullanarak seçilen yazı tipinin özniteliklerini alın ve bu öznitelikleri bir [CFont sınıfı](../../mfc/reference/cfont-class.md) nesnesi oluşturmak için kullanın.
 
-Yazı tipi birleşik giriş kutusu düğmesi Win32 işlevini çağırır [EnumFontFamiliesEx](/windows/desktop/api/wingdi/nf-wingdi-enumfontfamiliesexa) ekran ve yazıcı yazı sistemi için kullanılabilir belirlemek için.
+Yazı tipi açılan kutusu düğmesi, sistem tarafından kullanılabilen ekran ve yazıcı yazı tiplerini öğrenmek için [EnumFontFamiliesEx](/windows/win32/api/wingdi/nf-wingdi-enumfontfamiliesexw) Win32 işlevini çağırır.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -77,11 +77,11 @@ Yazı tipi birleşik giriş kutusu düğmesi Win32 işlevini çağırır [EnumFo
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxtoolbarfontcombobox.h
+**Üstbilgi:** afxtoolbarfontcombobox. h
 
-##  <a name="cmfctoolbarfontcombobox"></a>  CMFCToolBarFontComboBox::CMFCToolBarFontComboBox
+##  <a name="cmfctoolbarfontcombobox"></a>CMFCToolBarFontComboBox:: CMFCToolBarFontComboBox
 
-Oluşturur bir [CMFCToolBarFontComboBox](../../mfc/reference/cmfctoolbarfontcombobox-class.md) nesne.
+[CMFCToolBarFontComboBox](../../mfc/reference/cmfctoolbarfontcombobox-class.md) nesnesi oluşturur.
 
 ```
 public:
@@ -106,14 +106,14 @@ CMFCToolBarFontComboBox();
 
 ### <a name="parameters"></a>Parametreler
 
-*uiID*<br/>
-[in] Birleşik giriş kutusu komut kimliği.
+*Uııd*<br/>
+'ndaki Birleşik giriş kutusunun komut KIMLIĞI.
 
-*iImage*<br/>
-[in] Bir araç çubuğu görüntüsü sıfır tabanlı dizini. Görüntüsü bulunan [Cmfctoolbarımages sınıfı](../../mfc/reference/cmfctoolbarimages-class.md) nesnesinin [CMFCToolBar sınıfı](../../mfc/reference/cmfctoolbar-class.md) sınıfı tutar.
+*IImage*<br/>
+'ndaki Bir araç çubuğu görüntüsünün sıfır tabanlı dizini. Resim, [CMFCToolBar sınıf](../../mfc/reference/cmfctoolbar-class.md) sınıfının tuttuğu [CMFCToolBarImages sınıfı](../../mfc/reference/cmfctoolbarimages-class.md) nesnesinde bulunur.
 
 *nFontType*<br/>
-[in] Birleşik giriş kutusu içeren yazı tipleri türleri. Bu parametre aşağıdaki değerlerden (mantıksal veya) birleşimi olabilir:
+'ndaki Birleşik giriş kutusunun içerdiği yazı tipi türleri. Bu parametre aşağıdaki değerlerden oluşan bir bileşim (Boolean veya) olabilir:
 
 DEVICE_FONTTYPE
 
@@ -122,33 +122,33 @@ RASTER_FONTTYPE
 TRUETYPE_FONTTYPE
 
 *nCharSet*<br/>
-[in] Tüm karakter kümelerindeki tüm benzersiz adlı yazı DEFAULT_CHARSET, birleşik giriş kutusu kümesine içeriyorsa. (Varsa aynı ada sahip iki yazı tipi birleşik giriş kutusu bunlardan biri içeriyor.) Yalnızca belirtilen karakter kümesini yazı tipi birleşik giriş kutusu bir geçersiz karakter kümesi değere ayarlanmış içeriyorsa. Bkz: [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) olası karakter bir listesi için ayarlar.
+'ndaki DEFAULT_CHARSET olarak ayarlanırsa, Birleşik giriş kutusu tüm karakter kümelerinde benzersiz olarak adlandırılan tüm yazı tiplerini içerir. (Aynı ada sahip iki yazı tipi varsa, Birleşik giriş kutusu bunlardan birini içerir.) Geçerli bir karakter kümesi değeri olarak ayarlanırsa, Birleşik giriş kutusu yalnızca belirtilen karakter kümesindeki yazı tiplerini içerir. Olası karakter kümelerinin listesi için bkz. [LOGFONT](/windows/win32/api/wingdi/ns-wingdi-logfontw) .
 
 *dwStyle*<br/>
-[in] Birleşik giriş kutusunun stili. (bkz [birleşik giriş kutusu stilleri](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles))
+'ndaki Birleşik giriş kutusunun stili. (bkz. [Birleşik giriş kutusu stilleri](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles))
 
-*iWidth*<br/>
-[in] Düzenleme denetiminin piksel cinsinden genişliği.
+*ıwidth*<br/>
+'ndaki Düzenleme denetiminin piksel cinsinden genişliği.
 
-*nPitchAndFamily*<br/>
-[in] Küme DEFAULT_PITCH, birleşik giriş kutusu için yazı tiplerini aralık bakılmaksızın içeriyorsa. FIXED_PITCH veya VARIABLE_PITCH ayarlayın, birleşik giriş kutusu yalnızca bu aralık türü yazı tiplerini içeriyorsa. Yazı tipi ailesini temel alan filtre şu anda desteklenmiyor.
+*Nstachandfamily*<br/>
+'ndaki DEFAULT_PITCH olarak ayarlandıysa, Birleşik giriş kutusu, sıklıktaki bağımsız yazı tiplerini içerir. FIXED_PITCH veya VARIABLE_PITCH olarak ayarlandıysa, Birleşik giriş kutusu yalnızca bu Aralık türüyle yazı tiplerini içerir. Yazı tipi ailesini temel alan filtreleme şu anda desteklenmiyor.
 
 *pLstFontsExternal*<br/>
-[out] İşaretçi bir [CObList sınıfı](../../mfc/reference/coblist-class.md) yazı tiplerini depolayan bir nesne.
+dışı Kullanılabilir yazı tiplerini depolayan bir [CObList sınıfı](../../mfc/reference/coblist-class.md) nesnesine yönelik işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Genellikle, `CMFCToolBarFontComboBox` nesneleri depolamak kullanılabilir yazı tiplerinin bir listesini tek bir paylaşılan `CObList` nesne. İkinci oluşturucu aşırı yüklemesini kullanın ve geçerli işaretçi sağlayan *pLstFontsExternal*, o `CMFCToolBarFontComboBox` nesne yerine doldurur `CObList` , *pLstFontsExternal* kullanılabilir yazı tipleri ile işaret eder.
+Genellikle nesneler `CMFCToolBarFontComboBox` , kullanılabilir yazı tiplerinin listesini tek bir paylaşılan `CObList` nesnede depolar. Oluşturucunun ikinci aşırı yüklemesini kullanırsanız ve *pLstFontsExternal*için geçerli bir işaretçi sağlarsanız, bu `CMFCToolBarFontComboBox` nesne bunun yerine `CObList` bu *pLstFontsExternal* noktalarını kullanılabilir yazı tipleriyle dolduracaktır.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek nasıl oluşturulacağını gösterir. bir `CMFCToolBarFontComboBox` nesne. Bu kod parçacığı parçasıdır [Word paneli örnek](../../overview/visual-cpp-samples.md).
+Aşağıdaki örnek, bir `CMFCToolBarFontComboBox` nesnesinin nasıl oluşturulduğunu gösterir. Bu kod parçacığı, [sözcük paneli örneğinin](../../overview/visual-cpp-samples.md)bir parçasıdır.
 
 [!code-cpp[NVC_MFC_WordPad#7](../../mfc/reference/codesnippet/cpp/cmfctoolbarfontcombobox-class_1.cpp)]
 
-##  <a name="getfontdesc"></a>  CMFCToolBarFontComboBox::GetFontDesc
+##  <a name="getfontdesc"></a>CMFCToolBarFontComboBox:: GetFontDesc
 
-Bir işaretçi döndürür `CMFCFontInfo` birleşik giriş kutusunda belirtilen dizin için nesne.
+Birleşik giriş kutusundaki belirtilen dizin `CMFCFontInfo` için nesneye bir işaretçi döndürür.
 
 ```
 const CMFCFontInfo* GetFontDesc(int iIndex=-1) const;
@@ -156,16 +156,16 @@ const CMFCFontInfo* GetFontDesc(int iIndex=-1) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*İIndex*<br/>
-[in] Bir birleşik giriş kutusu öğesinin sıfır tabanlı dizinini belirtir.
+*IIndex*<br/>
+'ndaki Birleşik giriş kutusu öğesinin sıfır tabanlı dizinini belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir işaretçi bir `CMFCFontInfo` nesne. Varsa *İIndex* bir geçerli öğe dizini belirtmiyor döndürülen değer NULL olur.
+Bir `CMFCFontInfo` nesne işaretçisi. *IIndex* geçerli bir öğe dizini belirtmezse, dönüş değeri null olur.
 
-##  <a name="m_nfontheight"></a>  CMFCToolBarFontComboBox::m_nFontHeight
+##  <a name="m_nfontheight"></a>CMFCToolBarFontComboBox:: m_nFontHeight
 
-Sahip çizim stili açılan kutusu varsa, yazı tipi birleşik giriş kutusundaki karakterler piksel cinsinden yüksekliğini belirtir.
+Birleşik giriş kutusunun sahip çizim stili varsa, yazı tipi Birleşik giriş kutusunda bulunan karakterlerin piksel cinsinden yüksekliğini belirtir.
 
 ```
 static int m_nFontHeight
@@ -173,11 +173,11 @@ static int m_nFontHeight
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsa `m_nFontHeight` değişkeni 0 ise, yüksekliğini otomatik olarak varsayılan yazı tipi birleşik giriş kutusunun göre hesaplanır. Yüksekliği, taban çizgisinin karakter ascent hem iniş altında temel karakter içerir.
+`m_nFontHeight` Değişken 0 ise, yükseklik Birleşik giriş kutusunun varsayılan yazı tipine göre otomatik olarak hesaplanır. Yükseklik, taban çizgisinin üzerindeki karakterlerin yokunu ve taban çizgisinin altındaki karakterlerin uzunluğunu içerir.
 
-##  <a name="setfont"></a>  CMFCToolBarFontComboBox::SetFont
+##  <a name="setfont"></a>CMFCToolBarFontComboBox:: SetFont
 
-Yazı tipini yazı tipi birleşik giriş kutusunda yazı tipi adı ve karakter göre kümesi seçer parametrelerinde belirtilir.
+Yazı tipi Birleşik giriş kutusundaki yazı tipini, parametrelerde belirtilen yazı tipi adına ve karakter kümesine göre seçer.
 
 ```
 BOOL SetFont(
@@ -189,21 +189,21 @@ BOOL SetFont(
 ### <a name="parameters"></a>Parametreler
 
 *lpszName*<br/>
-[in] Yazı tipi adı veya ön ekini belirtir.
+'ndaki Yazı tipi adını veya önekini belirtir.
 
 *nCharSet*<br/>
-[in] Karakter kümesini belirtir.
+'ndaki Karakter kümesini belirtir.
 
-*bExact*<br/>
-[in] Belirtir olup olmadığını *lpszName* yazı tipi adı veya yazı tipi ön ek içeriyor.
+*bTam*<br/>
+'ndaki *LpszName* 'in yazı tipi adını mı yoksa yazı tipi önekini mı içerdiğini belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yazı tipi başarıyla seçildiyse sıfır olmayan; Aksi durumda 0.
+Yazı tipi başarıyla seçildiyse sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsa *bExact* doğru ise, bu yöntem, tam olarak belirtilen adla eşleşen bir yazı tipi seçer *lpszName*. Varsa *bExact* yanlış, metni ile başlayıp bir yazı tipi olarak belirtilen bu yöntemin seçer *lpszName* olarak belirtilen karakter kümesini kullanan ve *nCharSet*. Varsa *nCharSet* ayarlanır DEFAULT_CHARSET için yok sayıldı ve yalnızca karakter kümesi olacak *lpszName* bir yazı tipi seçmek için kullanılacak.
+*BTAM* doğru ise, bu yöntem *lpszName*olarak belirttiğiniz adla tam olarak eşleşen bir yazı tipi seçer. *BTam* değeri false ise, bu yöntem *lpszName* olarak belirtilen metinle başlayan ve *nCharSet*olarak belirttiğiniz karakter kümesini kullanan bir yazı tipi seçer. *NCharSet* DEFAULT_CHARSET olarak ayarlandıysa, karakter kümesi yok sayılır ve yalnızca *lpszName* , bir yazı tipi seçmek için kullanılır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
@@ -213,5 +213,5 @@ Varsa *bExact* doğru ise, bu yöntem, tam olarak belirtilen adla eşleşen bir 
 [CMFCToolBarButton Sınıfı](../../mfc/reference/cmfctoolbarbutton-class.md)<br/>
 [CMFCToolBarComboBoxButton Sınıfı](../../mfc/reference/cmfctoolbarcomboboxbutton-class.md)<br/>
 [CMFCFontInfo Sınıfı](../../mfc/reference/cmfcfontinfo-class.md)<br/>
-[CMFCToolBar::ReplaceButton](../../mfc/reference/cmfctoolbar-class.md#replacebutton)<br/>
-[İzlenecek yol: Araç çubuklarına denetimler yerleştirme](../../mfc/walkthrough-putting-controls-on-toolbars.md)
+[CMFCToolBar:: ReplaceButton](../../mfc/reference/cmfctoolbar-class.md#replacebutton)<br/>
+[İzlenecek yol: Araç Çubuklarına Denetimler Yerleştirme](../../mfc/walkthrough-putting-controls-on-toolbars.md)

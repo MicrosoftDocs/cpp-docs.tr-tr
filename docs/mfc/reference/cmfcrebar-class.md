@@ -28,12 +28,12 @@ helpviewer_keywords:
 - CMFCReBar [MFC], OnUpdateCmdUI
 - CMFCReBar [MFC], SetPaneAlignment
 ms.assetid: 02a60e29-6224-49c1-9e74-e0a7d9f8d023
-ms.openlocfilehash: ccd500547bdcf65e922f7b5e5ca8d30e0423933d
-ms.sourcegitcommit: bd7ddc044f9083246614b602ef6a758775313214
+ms.openlocfilehash: d348cf7aac57ce213e4d3f602501d12cee8e20d8
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68866177"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69505436"
 ---
 # <a name="cmfcrebar-class"></a>CMFCReBar sınıfı
 
@@ -120,7 +120,7 @@ BOOL AddBar(
 [in, out] Yeniden çubuk arka planında görüntülenecek bit eşlemi belirtir.
 
 *dwStyle*<br/>
-'ndaki Bantta uygulanacak stili içerir. Bant stillerinin tüm listesi için, Windows SDK belgelerindeki `fStyle` [rebarbanınfo](/windows/desktop/api/commctrl/ns-commctrl-tagrebarbandinfoa) yapısında Açıklama bölümüne bakın.
+'ndaki Bantta uygulanacak stili içerir. Bant stillerinin tüm listesi için, Windows SDK belgelerindeki `fStyle` [rebarbanınfo](/windows/win32/api/commctrl/ns-commctrl-rebarbandinfow) yapısında Açıklama bölümüne bakın.
 
 *Clrön*<br/>
 'ndaki Yeniden çubuğun ön plan rengini temsil eder.
@@ -150,7 +150,7 @@ BOOL Create(
 [in, out] Bu yeniden çubuk denetiminin üst penceresine yönelik bir işaretçi.
 
 *dwCtrlStyle*<br/>
-'ndaki Rebar denetiminin stilini belirtir. Varsayılan stil değeri, Rebar denetimindeki bitişik bantları ayırmak için dar çizgiler görüntüleyen **rbs_bandborders**' dir. Geçerli stillerin bir listesi için, Windows SDK belgelerindeki [Rebar Control Styles](/windows/desktop/Controls/rebar-control-styles) bölümüne bakın.
+'ndaki Rebar denetiminin stilini belirtir. Varsayılan stil değeri, Rebar denetimindeki bitişik bantları ayırmak için dar çizgiler görüntüleyen **rbs_bandborders**' dir. Geçerli stillerin bir listesi için, Windows SDK belgelerindeki [Rebar Control Styles](/windows/win32/Controls/rebar-control-styles) bölümüne bakın.
 
 *dwStyle*<br/>
 'ndaki Rebar denetiminin pencere stili. Geçerli stillerin bir listesi için bkz. [pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#window-styles).

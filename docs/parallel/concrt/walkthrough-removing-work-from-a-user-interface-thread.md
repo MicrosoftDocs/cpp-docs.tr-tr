@@ -1,26 +1,26 @@
 ---
-title: 'İzlenecek yol: Bir kullanıcı arabirimi iş parçacığından işi kaldırma'
+title: 'İzlenecek yol: Kullanıcı arabirimi Iş parçacığından Iş kaldırma'
 ms.date: 04/25/2019
 helpviewer_keywords:
 - user-interface threads, removing work from [Concurrency Runtime]
 - removing work from user-interface threads [Concurrency Runtime]
 ms.assetid: a4a65cc2-b3bc-4216-8fa8-90529491de02
-ms.openlocfilehash: 3bd41b1815737730067929c4728b32181cb2fc03
-ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
+ms.openlocfilehash: 214796777968c8aec7116a848e791aeef0d3af7b
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64856998"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69512258"
 ---
-# <a name="walkthrough-removing-work-from-a-user-interface-thread"></a>İzlenecek yol: Bir kullanıcı arabirimi iş parçacığından işi kaldırma
+# <a name="walkthrough-removing-work-from-a-user-interface-thread"></a>İzlenecek yol: Kullanıcı arabirimi Iş parçacığından Iş kaldırma
 
-Bu belge, bir çalışan iş parçacığı için Microsoft Foundation Classes (MFC) uygulamasında kullanıcı arabirimi (UI) iş parçacığı tarafından gerçekleştirilen iş taşımak için eşzamanlılık çalışma zamanı nasıl yapılacağı açıklanır. Bu belge ayrıca uzun bir çizim işlem performansını gösterir.
+Bu belge, bir Microsoft Foundation Sınıfları (MFC) uygulamasında kullanıcı arabirimi (UI) iş parçacığı tarafından gerçekleştirilen işi çalışan iş parçacığına taşımak için Eşzamanlılık Çalışma Zamanı nasıl kullanacağınızı gösterir. Bu belgede ayrıca uzun bir çizim işleminin performansının nasıl iyileştireceğiniz gösterilmektedir.
 
-İş, engelleme işlemleri boşaltarak UI iş parçacığından işi kaldırma, örneğin, çizim, çalışan iş parçacıkları için uygulamanızın yanıt hızını artırabilirsiniz. Bu izlenecek yolda engelleme kilitlemekten göstermek için Mandelbrot düzgünleştiren parçalı oluşturan çizim bir yordamı kullanır. Her pikselin hesaplama diğer tüm hesaplamaları bağımsız Mandelbrot düzgünleştiren parçalı oluşturulmasını da paralelleştirme için iyi bir aday olduğundan.
+Engelleme işlemlerini boşaltarak (örneğin, çizim) çalışan iş parçacıkları için iş akışı iş parçacığından kaldırma, uygulamanızın yanıt hızını iyileştirebilirler. Bu izlenecek yol, uzun bir engelleme işlemini göstermek için Mandelbrot Fractal 'i oluşturan bir çizim yordamı kullanır. Her bir pikselin hesaplaması diğer tüm hesaplamalarından bağımsız olduğundan, Mandelert Fractal 'in üretilmesi de paralelleştirme için iyi bir adaydır.
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-Bu kılavuza başlamadan önce aşağıdaki konuları okuyun:
+Bu yönergeyi başlamadan önce aşağıdaki konuları okuyun:
 
 - [Görev Paralelliği](../../parallel/concrt/task-parallelism-concurrency-runtime.md)
 
@@ -32,193 +32,193 @@ Bu kılavuza başlamadan önce aşağıdaki konuları okuyun:
 
 - [PPL'de İptal](cancellation-in-the-ppl.md)
 
-Ayrıca bu kılavuza başlamadan önce MFC Uygulama geliştirme ve GDI + temellerini anladığınızı öneririz. MFC hakkında daha fazla bilgi için bkz: [MFC Masaüstü uygulamaları](../../mfc/mfc-desktop-applications.md). GDI + hakkında daha fazla bilgi için bkz: [GDI +](https://msdn.microsoft.com/library/windows/desktop/ms533798).
+Ayrıca, bu yönergeyi başlamadan önce MFC uygulama geliştirme ve GDI+ temellerini de anladığınızı öneririz. MFC hakkında daha fazla bilgi için bkz. [MFC masaüstü uygulamaları](../../mfc/mfc-desktop-applications.md). GDI+ hakkında daha fazla bilgi için bkz. [GDI+](/windows/win32/gdiplus/-gdiplus-gdi-start).
 
-##  <a name="top"></a> Bölümleri
+##  <a name="top"></a>Başlıklı
 
 Bu izlenecek yol aşağıdaki bölümleri içerir:
 
 - [MFC uygulaması oluşturma](#application)
 
-- [Uygulama seri Mandelbrot uygulama sürümü](#serial)
+- [Mandelbrot uygulamasının seri sürümünü uygulama](#serial)
 
-- [Kullanıcı arabirimi iş parçacığından işi kaldırma](#removing-work)
+- [Kullanıcı arabirimi Iş parçacığından Iş kaldırma](#removing-work)
 
-- [Çizim performansı artırma](#performance)
+- [Çizim performansını iyileştirme](#performance)
 
-- [İptal için destek ekleme](#cancellation)
+- [Iptal için destek ekleme](#cancellation)
 
-##  <a name="application"></a> MFC uygulaması oluşturma
+##  <a name="application"></a>MFC uygulaması oluşturma
 
-Bu bölümde, temel MFC uygulaması oluşturma işlemini açıklar.
+Bu bölümde, temel MFC uygulamasının nasıl oluşturulacağı açıklanmaktadır.
 
 ### <a name="to-create-a-visual-c-mfc-application"></a>Bir Visual C++ MFC uygulaması oluşturmak için
 
-1. Kullanım **MFC Uygulama Sihirbazı** tüm varsayılan ayarlarla bir MFC uygulaması oluşturmak için. Bkz: [izlenecek yol: Yeni MFC Kabuk denetimlerini kullanma](../../mfc/walkthrough-using-the-new-mfc-shell-controls.md) Visual Studio sürümünüz için Sihirbazı'nı açmak yönergeler.
+1. Tüm varsayılan ayarlarla bir MFC uygulaması oluşturmak için **MFC Uygulama Sihirbazı** ' nı kullanın. Bkz [. İzlenecek yol: Visual Studio sürümünüz için sihirbazın nasıl](../../mfc/walkthrough-using-the-new-mfc-shell-controls.md) açılacağı hakkında yönergeler için yeni MFC kabuk denetimlerini kullanma.
 
-1. Proje için bir ad yazın örneğin, `Mandelbrot`ve ardından **Tamam** görüntülenecek **MFC Uygulama Sihirbazı**.
+1. Proje için bir ad yazın, örneğin `Mandelbrot`, ve ardından **MFC Uygulama sihirbazını**göstermek için **Tamam** ' a tıklayın.
 
-1. İçinde **uygulama türü** bölmesinde **tek belge**. Emin **belge/görünüm mimarisi desteği** onay kutusu işaretli değilse.
+1. **Uygulama türü** bölmesinde **tek belge**' yi seçin. **Belge/görünüm mimarisi desteği** onay kutusunun temizlenmiş olduğundan emin olun.
 
-1. Tıklayın **son** projeyi oluşturmak ve kapatmak için **MFC Uygulama Sihirbazı**.
+1. Projeyi oluşturmak ve **MFC Uygulama Sihirbazı 'nı**kapatmak için **son** ' a tıklayın.
 
-   Oluşturma ve çalışan uygulamanın başarıyla oluşturulduğunu doğrulayın. Uygulama derlemek için **derleme** menüsünde tıklatın **Çözümü Derle**. Uygulama başarıyla derlenirse tıklayarak uygulamayı çalıştırmak **hata ayıklamayı Başlat** üzerinde **hata ayıklama** menüsü.
+   Uygulamanın oluşturup çalıştırarak başarıyla oluşturulduğunu doğrulayın. Uygulamayı derlemek için, **Yapı** menüsünde **çözüm oluştur**' a tıklayın. Uygulama başarıyla yapılandığında **hata ayıklama** menüsünde **hata ayıklamayı Başlat** ' a tıklayarak uygulamayı çalıştırın.
 
-##  <a name="serial"></a> Uygulama seri Mandelbrot uygulama sürümü
+##  <a name="serial"></a>Mandelbrot uygulamasının seri sürümünü uygulama
 
-Bu bölümde, Mandelbrot düzgünleştiren parçalı çizmek kullanılan nasıl açıklanmaktadır. Bu sürüm Mandelbrot düzgünleştiren parçalı bir GDI + çizer [bit eşlem](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-bitmap) nesnesi ve ardından istemci penceresine, bit eşlem içeriğini kopyalar.
+Bu bölüm, Mandelbrot Fractal 'in nasıl çizileceğini açıklar. Bu sürüm, Mandeli Fractal 'i bir GDI+ [bit eşlem](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-bitmap) nesnesine çizer ve ardından bu bit eşlemin içeriğini istemci penceresine kopyalar.
 
-#### <a name="to-implement-the-serial-version-of-the-mandelbrot-application"></a>Seri Mandelbrot uygulamanın sürümünü uygulamak için
+#### <a name="to-implement-the-serial-version-of-the-mandelbrot-application"></a>Mandelbrot uygulamasının seri sürümünü uygulamak için
 
-1. Stdafx.h içinde aşağıdaki ekleme `#include` yönergesi:
+1. Stbafx. h içinde aşağıdaki `#include` yönergeyi ekleyin:
 
    [!code-cpp[concrt-mandelbrot#1](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_1.h)]
 
-1. İçinde ChildView.h, sonra `pragma` yönergesi, tanımlama `BitmapPtr` türü. `BitmapPtr` Türü bir işaretçi sağlayan bir `Bitmap` birden çok bileşen tarafından paylaşılacak nesne. `Bitmap` Nesne artık herhangi bir bileşen tarafından başvurulduğunda silinir.
+1. ChildView. h içinde, `pragma` yönergesinden sonra `BitmapPtr` türü tanımlayın. Türü `BitmapPtr` , bir `Bitmap` nesnenin birden çok bileşen tarafından paylaşılabilmesi için bir işaretçi sağlar. Artık herhangi bir bileşen tarafından başvurulmuyorsa nesnesilinir.`Bitmap`
 
    [!code-cpp[concrt-mandelbrot#2](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_2.h)]
 
-1. ChildView.h içinde aşağıdaki kodu ekleyin `protected` bölümünü `CChildView` sınıfı:
+1. ChildView. h içinde, `protected` `CChildView` sınıfının bölümüne aşağıdaki kodu ekleyin:
 
    [!code-cpp[concrt-mandelbrot#3](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_3.h)]
 
-1. ChildView.cpp, açıklama satırı yapın veya aşağıdaki satırları kaldırın.
+1. ChildView. cpp içinde, aşağıdaki satırları açıklama veya kaldırma.
 
    [!code-cpp[concrt-mandelbrot#4](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_4.cpp)]
 
-   Hata ayıklama yapılarında, bu adımı kullanarak uygulamanın engeller `DEBUG_NEW` GDI +'ile uyumsuz olan ayırıcı.
+   Hata ayıklama yapılarında, bu adım uygulamanın GDI+ ile uyumlu olmayan `DEBUG_NEW` ayırıcıyı kullanmasını önler.
 
-1. ChildView.cpp içinde ekleme bir `using` yönergesini `Gdiplus` ad alanı.
+1. ChildView. cpp içinde, `using` `Gdiplus` ad alanına bir yönerge ekleyin.
 
    [!code-cpp[concrt-mandelbrot#5](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_5.cpp)]
 
-1. Oluşturucu ve yıkıcı, için aşağıdaki kodu ekleyin `CChildView` başlatmak ve GDI + kapatmak için sınıf.
+1. GDI+ ' yı başlatmak ve kapatmak için aşağıdaki kodu `CChildView` sınıfın oluşturucusuna ve yıkıcılarına ekleyin.
 
    [!code-cpp[concrt-mandelbrot#6](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_6.cpp)]
 
-1. Uygulama `CChildView::DrawMandelbrot` yöntemi. Bu yöntem Mandelbrot düzgünleştiren parçalı belirtilen çizer `Bitmap` nesne.
+1. `CChildView::DrawMandelbrot` Yöntemini uygulayın. Bu yöntem, belirtilen `Bitmap` nesneye Mandelbrot Fractal çizer.
 
    [!code-cpp[concrt-mandelbrot#7](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_7.cpp)]
 
-1. Uygulama `CChildView::OnPaint` yöntemi. Bu yöntemin çağırdığı `CChildView::DrawMandelbrot` ve ardından içeriğini kopyalar `Bitmap` pencereye bir nesne.
+1. `CChildView::OnPaint` Yöntemini uygulayın. Bu yöntem, `CChildView::DrawMandelbrot` öğesini çağırır ve sonra `Bitmap` nesnenin içeriğini pencereye kopyalar.
 
    [!code-cpp[concrt-mandelbrot#8](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_8.cpp)]
 
-1. Oluşturmaya ve çalıştırmaya uygulama başarıyla güncelleştirildiğini doğrulayın.
+1. Uygulamanın oluşturup çalıştırarak başarıyla güncelleştirildiğinden emin olun.
 
-Aşağıdaki çizim Mandelbrot uygulama sonuçları gösterilmektedir.
+Aşağıdaki çizimde, Mandelbrot uygulamasının sonuçları gösterilmektedir.
 
-![Mandelbrot uygulama](../../parallel/concrt/media/mandelbrot.png "Mandelbrot uygulama")
+![Mandelbrot uygulaması](../../parallel/concrt/media/mandelbrot.png "Mandelbrot uygulaması")
 
-Hesaplama için her piksel hesaplama açısından pahalı olduğundan, genel hesaplama bitmeden UI iş parçacığı ek iletiler işleyemiyor. Bu uygulama yanıtlama hızını azaltır. Ancak, bu sorunu UI iş parçacığından işi kaldırma tarafından hafifletmek.
+Her pikselin hesaplaması hesaplama açısından pahalı olduğundan, UI iş parçacığı genel hesaplama bitene kadar ek iletileri işleyemez. Bu, uygulamadaki yanıt hızını düşürebilir. Ancak, Kullanıcı arabirimi iş parçacığından iş kaldırarak bu sorunu da ortadan kaldırabilirsiniz.
 
 [[Üst](#top)]
 
-##  <a name="removing-work"></a> UI iş parçacığından işi kaldırma
+##  <a name="removing-work"></a>Kullanıcı arabirimi Iş parçacığından kaldırma
 
-Bu bölümde, Mandelbrot uygulama kullanıcı Arabirimi iş parçacığında çizim iş kaldırma işlemi gösterilmektedir. Bir iş parçacığı UI iş parçacığından çizim iş taşıyarak, arka planda çalışan iş parçacığı görüntü oluştururken UI iş parçacığı iletileri işleyebilir.
+Bu bölüm, çizim işinin Mandelbrot uygulamasındaki UI iş parçacığından nasıl kaldırılacağını gösterir. Çizim işini UI iş parçacığından çalışan iş parçacığına taşıyarak, çalışan iş parçacığı görüntüyü arka planda oluşturduğu için Kullanıcı arabirimi iş parçacığı iletileri işleyebilir.
 
-Eşzamanlılık Çalışma zamanı görevleri çalıştırmak için üç yol sunar: [görev grupları](../../parallel/concrt/task-parallelism-concurrency-runtime.md), [zaman uyumsuz aracılar](../../parallel/concrt/asynchronous-agents.md), ve [Basit görevler](../../parallel/concrt/task-scheduler-concurrency-runtime.md). UI iş parçacığından iş kaldırmak için Bu mekanizmaların birini kullanabilirsiniz, ancak bu örnekte bir [concurrency::task_group](reference/task-group-class.md) görev grupları iptali desteklediğinden nesne. Bu izlenecek yol, daha sonra istemci penceresi yeniden boyutlandırıldığında gerçekleştirilen iş miktarını azaltmaya ve pencerenin kaldırıldığında temizleme işlemini gerçekleştirmek için İptal kullanır.
+Eşzamanlılık Çalışma Zamanı görevleri çalıştırmak için üç yol sağlar: [görev grupları](../../parallel/concrt/task-parallelism-concurrency-runtime.md), [zaman uyumsuz aracılar](../../parallel/concrt/asynchronous-agents.md)ve [hafif görevler](../../parallel/concrt/task-scheduler-concurrency-runtime.md). Kullanıcı arabirimi iş parçacığından iş kaldırmak için bu mekanizmalardan herhangi birini kullanabilseniz de, görev grupları iptali desteklediği için bu örnek bir [concurrency:: task_group](reference/task-group-class.md) nesnesi kullanır. Bu izlenecek yol daha sonra, istemci penceresi yeniden boyutlandırılırken gerçekleştirilen iş miktarını azaltmak ve pencere yok edildiğinde temizleme işlemini gerçekleştirmek için iptal 'i kullanır.
 
-Bu örnekte ayrıca bir [concurrency::unbounded_buffer](reference/unbounded-buffer-class.md) UI iş parçacığı ve birbirleri ile iletişim kurmak için iş parçacığı etkinleştirmek için nesne. Çalışan iş parçacığı görüntü üretiyor sonra bir işaretçi gönderdiği `Bitmap` nesnesini `unbounded_buffer` nesnesi ve ardından UI iş parçacığına bir boyama iletisi gönderir. UI iş parçacığı ardından gelen alan `unbounded_buffer` nesne `Bitmap` nesne ve istemci penceresine çizer.
+Bu örnek ayrıca UI iş parçacığını ve çalışan iş parçacığını birbirleriyle iletişim kuracak şekilde etkinleştirmek için bir [concurrency:: unbounded_buffer](reference/unbounded-buffer-class.md) nesnesi kullanır. Çalışan iş parçacığı görüntüyü üretirse, nesnesine nesnesine bir işaretçi `Bitmap` `unbounded_buffer` gönderir ve ardından Kullanıcı arabirimi iş parçacığına bir Paint iletisi gönderir. UI iş parçacığı bundan sonra nesnesinden nesnesinden `unbounded_buffer` alır `Bitmap` ve istemci penceresine çizer.
 
-#### <a name="to-remove-the-drawing-work-from-the-ui-thread"></a>UI iş parçacığından çizim iş kaldırmak için
+#### <a name="to-remove-the-drawing-work-from-the-ui-thread"></a>Kullanıcı arabirimi iş parçacığından çizim işini kaldırmak için
 
-1. Stdafx.h içinde aşağıdaki ekleme `#include` yönergeleri:
+1. Stbafx. h içinde aşağıdaki `#include` yönergeleri ekleyin:
 
    [!code-cpp[concrt-mandelbrot#101](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_9.h)]
 
-1. ChildView.h içinde ekleme `task_group` ve `unbounded_buffer` üye değişkenlerine `protected` bölümünü `CChildView` sınıfı. `task_group` Nesnesi tutar; çizim gerçekleştirdiği görevleri `unbounded_buffer` nesnesi tamamlanmış Mandelbrot görüntüsü tutar.
+1. ChildView. h `task_group` içinde, `CChildView` sınıfının `protected` bölümüne `unbounded_buffer` ve üye değişkenlerini ekleyin. Nesne, çizim gerçekleştiren görevleri barındırır `unbounded_buffer` ; nesne tamamlanmış mandelt görüntüsünü tutar. `task_group`
 
    [!code-cpp[concrt-mandelbrot#102](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_10.h)]
 
-1. ChildView.cpp içinde ekleme bir `using` yönergesini `concurrency` ad alanı.
+1. ChildView. cpp içinde, `using` `concurrency` ad alanına bir yönerge ekleyin.
 
    [!code-cpp[concrt-mandelbrot#103](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_11.cpp)]
 
-1. İçinde `CChildView::DrawMandelbrot` yöntem çağrısından sonra `Bitmap::UnlockBits`, çağrı [concurrency::send](reference/concurrency-namespace-functions.md#send) geçirilecek işlevi `Bitmap` UI iş parçacığı için nesne. Ardından UI iş parçacığı Boya ileti gönderin ve istemci alanı geçersiz.
+1. Yöntemine çağrısından sonra, `Bitmap` nesneyi UI iş parçacığına iletmek için [concurrency:: Send](reference/concurrency-namespace-functions.md#send) işlevini çağırın. `Bitmap::UnlockBits` `CChildView::DrawMandelbrot` Ardından Kullanıcı arabirimi iş parçacığına bir Paint iletisi gönderin ve istemci alanını geçersiz kılın.
 
    [!code-cpp[concrt-mandelbrot#104](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_12.cpp)]
 
-1. Güncelleştirme `CChildView::OnPaint` güncelleştirilmiş almak üzere yöntemini `Bitmap` nesne ve istemci penceresine görüntü çizin.
+1. `CChildView::OnPaint` Güncelleştirilmiş`Bitmap` nesneyi almak için yöntemini güncelleştirin ve görüntüyü istemci penceresine çizin.
 
    [!code-cpp[concrt-mandelbrot#105](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_13.cpp)]
 
-   `CChildView::OnPaint` Yöntemi, bir iletiyi arabelleğe mevcut değilse Mandelbrot görüntü oluşturmak için bir görev oluşturur. İleti arabelleği değil içerecek bir `Bitmap` durumlarda örneğin ilk boyama iletisi ve istemci penceresi önüne başka bir pencere taşındığında nesne.
+   `CChildView::OnPaint` Yöntemi, ileti arabelleğinde yoksa Mandelbrot görüntüsünü oluşturmak için bir görev oluşturur. İleti ara belleği, ilk Paint iletisi `Bitmap` gibi durumlarda ve istemci penceresinin önüne başka bir pencere taşındığında bir nesne içermeyecektir.
 
-1. Oluşturmaya ve çalıştırmaya uygulama başarıyla güncelleştirildiğini doğrulayın.
+1. Uygulamanın oluşturup çalıştırarak başarıyla güncelleştirildiğinden emin olun.
 
-Çizim iş arka planda gerçekleştirildiği için kullanıcı Arabirimi artık daha hızlı yanıt.
+Çizim işi arka planda gerçekleştirildiğinden, Kullanıcı arabirimi artık daha çabuk yanıt verir.
 
 [[Üst](#top)]
 
-##  <a name="performance"></a> Çizim performansı artırma
+##  <a name="performance"></a>Çizim performansını iyileştirme
 
-Her pikselin hesaplama diğer tüm hesaplamaları bağımsız olduğundan nesil Mandelbrot düzgünleştiren parçalı paralelleştirme için iyi bir adaydır. Çizim yordamı paralel hale getirmek için dış dönüştürme `for` içinde döngü `CChildView::DrawMandelbrot` yöntemine bir çağrı [concurrency::parallel_for](reference/concurrency-namespace-functions.md#parallel_for) aşağıdaki gibi bir algoritma.
+Her bir pikselin hesaplaması diğer tüm hesaplamalarından bağımsız olduğundan, Mandelert Fractal 'in üretimi paralelleştirme için iyi bir adaydır. Çizim yordamını paralel hale getirmek için, `for` `CChildView::DrawMandelbrot` yöntemindeki dış döngüyü aşağıdaki şekilde [eşzamanlılık::p arallel_for](reference/concurrency-namespace-functions.md#parallel_for) algoritmasına bir çağrıya dönüştürün.
 
 [!code-cpp[concrt-mandelbrot#301](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_14.cpp)]
 
-Her bir bit eşlem öğesinin hesaplama bağımsız olduğundan, bit eşlem bellek erişim çizim işlemlerini eşitlemeniz gerekmez. Bu performans sayısı arttıkça kullanılabilir işlemci ölçeklendirme sağlar.
+Her bir bit eşlem öğesinin hesaplaması bağımsız olduğundan, bit eşlem belleğine erişen çizim işlemlerini eşitlemeniz gerekmez. Bu, kullanılabilir işlemcilerin sayısı arttıkça performansın ölçeklendirilmesine olanak sağlar.
 
 [[Üst](#top)]
 
-##  <a name="cancellation"></a> İptal için destek ekleme
+##  <a name="cancellation"></a>Iptal için destek ekleme
 
-Bu bölümde, pencereyi yeniden boyutlandırma nasıl ele alınacağını ve pencerenin kaldırıldığında tüm etkin çizim görevleri iptal etme açıklanmaktadır.
+Bu bölümde pencere yeniden boyutlandırmanın nasıl işleneceği ve pencere yok edildiğinde etkin çizim görevlerinin nasıl iptal edileceği açıklanmaktadır.
 
-Belge [ppl'de iptal](cancellation-in-the-ppl.md) iptal çalışma zamanında nasıl çalıştığını açıklar. İptali ortaktır; Bu nedenle, hemen gerçekleşmez. İptal edilen bir görev durdurmak için Çalışma Zamanı Modülü çalışma zamanı içinde görev sonraki çağrı sırasında iç özel durum oluşturur. Önceki bölümde nasıl kullanılacağını gösterir `parallel_for` çizim görev performansını artırmak için algoritma. Çağrı `parallel_for` görevi durdurmak çalışma zamanı sağlar ve bu nedenle iptal çalışacak şekilde etkinleştirir.
+[PPL 'de belge iptali](cancellation-in-the-ppl.md) , İptalin çalışma zamanında nasıl çalıştığını açıklar. İptal etme birlikte çalışır; Bu nedenle, hemen gerçekleşmez. İptal edilen bir görevi durdurmak için, çalışma zamanı görevden sonraki bir çağrı sırasında çalışma zamanına bir iç özel durum atar. Önceki bölümde, çizim görevinin performansını artırmak için `parallel_for` algoritmanın nasıl kullanılacağı gösterilmektedir. ' A yapılan `parallel_for` çağrı, çalışma zamanının görevi durdurmasını sağlar ve bu nedenle İptalin çalışmasına olanak sağlar.
 
-### <a name="cancelling-active-tasks"></a>Etkin görevleri iptal ediliyor
+### <a name="cancelling-active-tasks"></a>Etkin görevleri iptal etme
 
-Mandelbrot uygulaması oluşturan `Bitmap` boyutlarının istemci penceresinin boyutunu eşleşen nesneleri. Her seferinde istemci penceresi yeniden boyutlandırılırken, uygulamanın yeni pencere boyutu için bir görüntü oluşturmak için bir ek arka plan görevi oluşturur. Uygulama Ara görüntülerin gerektirmez; yalnızca görüntü için son pencere boyutu gerektirir. Bu ek işlemler gerçekleştirme uygulamanın önlemek için ileti işleyicileri için tüm etkin çizim görevleri iptal edebilirsiniz `WM_SIZE` ve `WM_SIZING` iletileri ve sonra yeniden çizim pencereyi yeniden boyutlandırıldıktan sonra çalışır.
+Mandelbrot uygulaması, boyutları `Bitmap` istemci penceresinin boyutuyla eşleşen nesneler oluşturur. İstemci penceresi her yeniden boyutlandırılırken, uygulama yeni pencere boyutu için bir görüntü oluşturmak üzere ek bir arka plan görevi oluşturur. Uygulama bu ara görüntüleri gerektirmez; yalnızca son pencere boyutu için görüntü gerektirir. Uygulamanın bu ek işi gerçekleştirmesini engellemek için, `WM_SIZE` ve `WM_SIZING` iletileri için ileti işleyicilerindeki etkin çizim görevlerini iptal edebilir ve ardından pencere yeniden boyutlandırdıktan sonra çizim işini yeniden zamanlayabilirsiniz.
 
-Pencereyi yeniden boyutlandırıldığında çizim etkin görevleri iptal etmek için uygulamayı çağırır [concurrency::task_group::cancel](reference/task-group-class.md#cancel) işleyicileri yönteminde `WM_SIZING` ve `WM_SIZE` iletileri. İşleyici için `WM_SIZE` iletisi ayrıca çağrıları [CONCURRENCY::task_group:: wait](reference/task-group-class.md#wait) tüm etkin görevleri tamamlamak için ve ardından güncelleştirilmiş pencere boyutu için çizim görev tarih değiştirdiğinde bekleme için yöntemi.
+Pencere yeniden boyutlandırılırken etkin çizim görevlerini iptal etmek için, uygulama işleyicilerde `WM_SIZING` ve `WM_SIZE` iletileri için [concurrency:: task_group:: Cancel](reference/task-group-class.md#cancel) metodunu çağırır. `WM_SIZE` İleti işleyicisi Ayrıca tüm etkin görevlerin tamamlanmasını beklemek için [concurrency:: task_group:: wait](reference/task-group-class.md#wait) yöntemini çağırır ve sonra güncelleştirilmiş pencere boyutu için çizim görevini müşteri sizinle randevusunu.
 
-İstemci penceresi kaldırıldığında, bu herhangi bir etkin çizim görevi iptal etmek iyi bir uygulamadır. Tüm etkin çizim görevleri iptal etme istemci penceresi yok sonra çalışan iş parçacığı UI iş parçacığı iletileri göndermeyin emin olur. Uygulama işleyicisindeki çizim herhangi etkin görevleri iptal `WM_DESTROY` ileti.
+İstemci penceresi yok edildiğinde, etkin çizim görevlerini iptal etmek iyi bir uygulamadır. Etkin çizim görevlerinin iptal edilmesi, çalışan iş parçacıklarının istemci penceresi yok edilirken Kullanıcı arabirimi iş parçacığına ileti göndermediğinden emin olur. Uygulama, `WM_DESTROY` ileti için işleyicide etkin olan tüm çizim görevlerini iptal eder.
 
-### <a name="responding-to-cancellation"></a>İptal için yanıtlama
+### <a name="responding-to-cancellation"></a>Iptal 'e yanıt verme
 
-`CChildView::DrawMandelbrot` Çizim görev gerçekleştiren yöntemi iptal için yanıt gerekir. Çalışma zamanı özel durum görevleri iptal etmek için işleme kullandığından `CChildView::DrawMandelbrot` yöntemi, tüm kaynaklarının doğru temizlenmiş emin güvence altına almak için bir özel durum açısından güvenli mekanizması kullanmalıdır. Bu örnekte *olduğu kaynak alımı başlatma* görev iptal edildiğinde, bit eşlem bitleri kilidi güvence altına almak için (RAII) deseni.
+Çizim görevini gerçekleştiren yöntemi iptal 'e yanıt vermelidir. `CChildView::DrawMandelbrot` Çalışma zamanı görevleri iptal etmek için özel durum işleme kullandığından, `CChildView::DrawMandelbrot` tüm kaynakların doğru şekilde temizlendiğinden emin olmak için yöntemin özel durum güvenli bir mekanizma kullanması gerekir. Bu örnek, görev iptal edildiğinde bit eşlem bitlerinin kilidinin açılması güvence altına almak için *kaynak alımı başlatma* (rampa) modelini kullanır.
 
-##### <a name="to-add-support-for-cancellation-in-the-mandelbrot-application"></a>Mandelbrot uygulamada iptal için destek eklemek için
+##### <a name="to-add-support-for-cancellation-in-the-mandelbrot-application"></a>Mandelbrot uygulamasında iptal desteği eklemek için
 
-1. İçinde ChildView.h, içinde `protected` bölümünü `CChildView` sınıfı, bildirimler için ekleme `OnSize`, `OnSizing`, ve `OnDestroy` ileti eşlemesi işlevleri.
+1. ChildView. h `protected` içinde `OnDestroy` , `CChildView` sınıfının bölümünde,, ve ileti eşleme işlevlerine yönelik `OnSize` `OnSizing`bildirimler ekleyin.
 
    [!code-cpp[concrt-mandelbrot#201](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_15.h)]
 
-1. İleti eşlemesi için işleyiciler içerecek şekilde ChildView.cpp içinde değiştirmek `WM_SIZE`, `WM_SIZING`, ve `WM_DESTROY` iletileri.
+1. ChildView. cpp içinde, ileti eşlemini `WM_SIZE`, `WM_SIZING`, ve `WM_DESTROY` iletileri için işleyiciler içerecek şekilde değiştirin.
 
    [!code-cpp[concrt-mandelbrot#202](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_16.cpp)]
 
-1. Uygulama `CChildView::OnSizing` yöntemi. Bu yöntem herhangi bir mevcut çizim görevi iptal eder.
+1. `CChildView::OnSizing` Yöntemini uygulayın. Bu yöntem, varolan çizim görevlerini iptal eder.
 
    [!code-cpp[concrt-mandelbrot#203](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_17.cpp)]
 
-1. Uygulama `CChildView::OnSize` yöntemi. Bu yöntem herhangi bir mevcut çizim görevi iptal eder ve güncelleştirilmiş istemci pencere boyutu için yeni bir çizim görev oluşturur.
+1. `CChildView::OnSize` Yöntemini uygulayın. Bu yöntem, var olan çizim görevlerini iptal eder ve güncelleştirilmiş istemci pencere boyutu için yeni bir çizim görevi oluşturur.
 
    [!code-cpp[concrt-mandelbrot#204](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_18.cpp)]
 
-1. Uygulama `CChildView::OnDestroy` yöntemi. Bu yöntem herhangi bir mevcut çizim görevi iptal eder.
+1. `CChildView::OnDestroy` Yöntemini uygulayın. Bu yöntem, varolan çizim görevlerini iptal eder.
 
    [!code-cpp[concrt-mandelbrot#205](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_19.cpp)]
 
-1. ChildView.cpp içinde tanımlayın `scope_guard` RAII deseni uygulayan bir sınıf.
+1. ChildView. cpp içinde, bir `scope_guard` sınıfını tanımlayın.
 
    [!code-cpp[concrt-mandelbrot#206](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_20.cpp)]
 
-1. Aşağıdaki kodu ekleyin `CChildView::DrawMandelbrot` yöntem çağrısından sonra `Bitmap::LockBits`:
+1. Çağrısının ardından `CChildView::DrawMandelbrot` yöntemine aşağıdaki kodu ekleyin: `Bitmap::LockBits`
 
    [!code-cpp[concrt-mandelbrot#207](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_21.cpp)]
 
-   Bu kod oluşturarak iptal işleme bir `scope_guard` nesne. Nesne kapsam dışına çıktığında, bit eşlem bitleri kilidini açar.
+   Bu kod, bir `scope_guard` nesnesi oluşturarak iptali işler. Nesne kapsam dışına çıktığında, bit eşlem bitlerinin kilidini açar.
 
-1. Sonuna değiştirme `CChildView::DrawMandelbrot` kapatmak için yöntemi `scope_guard` bit eşlem bitleri kilitsiz sonra ancak kullanıcı Arabirimi iş parçacığına herhangi bir ileti gönderilmeden önce nesne. Bu, bit eşlem bitleri kilidi olmadan önce UI iş parçacığı güncelleştirilmez sağlar.
+1. Bit eşlem bitleri kilidi açıldıktan `CChildView::DrawMandelbrot` sonra, ancak herhangi `scope_guard` bir ileti kullanıcı arabirimi iş parçacığına gönderilmeden önce, yöntemi kapatmak için yönteminin sonunu değiştirin. Bu, bit eşlem bitlerinin kilidi açılmadan önce UI iş parçacığının güncelleştirilmesini sağlar.
 
    [!code-cpp[concrt-mandelbrot#208](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_22.cpp)]
 
-9. Oluşturmaya ve çalıştırmaya uygulama başarıyla güncelleştirildiğini doğrulayın.
+9. Uygulamanın oluşturup çalıştırarak başarıyla güncelleştirildiğinden emin olun.
 
-İş çizim penceresini yeniden boyutlandırdığınızda, yalnızca son pencere boyutunu gerçekleştirilir. Pencerenin kaldırıldığında tüm etkin çizim görevleri de iptal edilir.
+Pencereyi yeniden boyutlandırdığınızda, çizim işi yalnızca son pencere boyutu için gerçekleştirilir. Pencere yok edildiğinde, etkin çizim görevleri de iptal edilir.
 
 [[Üst](#top)]
 

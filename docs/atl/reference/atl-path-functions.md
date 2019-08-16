@@ -41,79 +41,79 @@ f1_keywords:
 - ATLPATH/ATL::ATLPath::StripToRoot
 - ATLPATH/ATL::ATLPath::UnquoteSpaces
 ms.assetid: d1ec2b8d-7ec7-43ea-90dd-0a740d2a742b
-ms.openlocfilehash: 683fd9c6464187e416ea032840507b2062de1fa3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 76efbb0bd43b800f186eac1afa168fc2a0c939f6
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62248196"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69497979"
 ---
 # <a name="atl-path-functions"></a>ATL yol işlevleri
 
-ATL yol biçiminde işlemek için ATLPath sınıfı sağlar [CPathT](cpatht-class.md). Bu kod atlpath.h içinde bulunabilir.
+ATL, [CPathT](cpatht-class.md)biçimindeki yolları Işlemek Için ATLPath sınıfını sağlar. Bu kod, atlpath. h içinde bulunabilir.
 
 ### <a name="related-classes"></a>İlgili sınıflar
 
 |||
 |-|-|
-|[CPathT Sınıfı](cpatht-class.md)|Bu sınıf, bir yol gösterir.|
+|[CPathT Sınıfı](cpatht-class.md)|Bu sınıf bir yolu temsil eder.|
 
 ### <a name="related-typedefs"></a>İlgili tür tanımları
 
 |||
 |-|-|
-|`CPath`|Bir alt uzmanlaşması [CPathT](cpatht-class.md) kullanarak `CString`.|
-|`CPathA`|Bir alt uzmanlaşması [CPathT](cpatht-class.md) kullanarak `CStringA`.|
-|`CPathW`|Bir alt uzmanlaşması [CPathT](cpatht-class.md) kullanarak `CStringW`.|
+|`CPath`|Kullanarak`CString` [CPathT](cpatht-class.md) özelleştirmesi.|
+|`CPathA`|Kullanarak`CStringA` [CPathT](cpatht-class.md) özelleştirmesi.|
+|`CPathW`|Kullanarak`CStringW` [CPathT](cpatht-class.md) özelleştirmesi.|
 
 ### <a name="functions"></a>İşlevler
 
 |||
 |-|-|
-|[ATLPath::AddBackslash](#addbackslash)|Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathAddBackslash](/windows/desktop/api/shlwapi/nf-shlwapi-pathaddbackslasha).|
-|[ATLPath::AddExtension](#addextension)|Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathAddExtension](/windows/desktop/api/shlwapi/nf-shlwapi-pathaddextensiona).|
-|[ATLPath::Append](#append)|Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathAppend](/windows/desktop/api/shlwapi/nf-shlwapi-pathappenda).|
-|[ATLPath::BuildRoot](#buildroot)|Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathBuildRoot](/windows/desktop/api/shlwapi/nf-shlwapi-pathbuildroota).|
-|[ATLPath::Canonicalize](#canonicalize)|Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathCanonicalize](/windows/desktop/api/shlwapi/nf-shlwapi-pathcanonicalizea).|
-|[ATLPath::Combine](#combine)|Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathCombine](/windows/desktop/api/shlwapi/nf-shlwapi-pathcombinea).|
-|[ATLPath::CommonPrefix](#commonprefix)|Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathCommonPrefix](/windows/desktop/api/shlwapi/nf-shlwapi-pathcommonprefixa).|
-|[ATLPath::CompactPath](#compactpath)|Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathCompactPath](/windows/desktop/api/shlwapi/nf-shlwapi-pathcompactpatha).|
-|[ATLPath::CompactPathEx](#compactpathex)|Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathCompactPathEx](/windows/desktop/api/shlwapi/nf-shlwapi-pathcompactpathexa).|
-|[ATLPath::FileExists](#fileexists)|Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathFileExists](/windows/desktop/api/shlwapi/nf-shlwapi-pathfileexistsa).|
-|[ATLPath::FindExtension](#findextension)|Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathFindExtension](/windows/desktop/api/shlwapi/nf-shlwapi-pathfindextensiona).|
-|[ATLPath::FindFileName](#findfilename)|Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathFindFileName](/windows/desktop/api/shlwapi/nf-shlwapi-pathfindfilenamea).|
-|[ATLPath::GetDriveNumber](#getdrivenumber)|Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathGetDriveNumber](/windows/desktop/api/shlwapi/nf-shlwapi-pathgetdrivenumbera).|
-|[ATLPath::IsDirectory](#isdirectory)|Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [Pathısdirectory](/windows/desktop/api/shlwapi/nf-shlwapi-pathisdirectorya).|
-|[ATLPath::IsFileSpec](#isfilespec)|Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [Pathısfilespec](/windows/desktop/api/shlwapi/nf-shlwapi-pathisfilespeca).|
-|[ATLPath::IsPrefix](#isprefix)|Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [Pathısprefix](/windows/desktop/api/shlwapi/nf-shlwapi-pathisprefixa).|
-|[ATLPath::IsRelative](#isrelative)|Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [Pathısrelative](/windows/desktop/api/shlwapi/nf-shlwapi-pathisrelativea).|
-|[ATLPath::IsRoot](#isroot)|Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [Pathısroot](/windows/desktop/api/shlwapi/nf-shlwapi-pathisroota).|
-|[ATLPath::IsSameRoot](#issameroot)|Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [Pathıssameroot](/windows/desktop/api/shlwapi/nf-shlwapi-pathissameroota).|
-|[ATLPath::IsUNC](#isunc)|Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [Pathısunc](/windows/desktop/api/shlwapi/nf-shlwapi-pathisunca).|
-|[ATLPath::IsUNCServer](#isuncserver)|Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [Pathısuncserver](/windows/desktop/api/shlwapi/nf-shlwapi-pathisuncservera).|
-|[ATLPath::IsUNCServerShare](#isuncservershare)|Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [Pathısuncservershare](/windows/desktop/api/shlwapi/nf-shlwapi-pathisuncserversharea).|
-|[ATLPath::MakePretty](#makepretty)|Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathMakePretty](/windows/desktop/api/shlwapi/nf-shlwapi-pathmakeprettya).|
-|[ATLPath::MatchSpec](#matchspec)|Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathMatchSpec](/windows/desktop/api/shlwapi/nf-shlwapi-pathmatchspeca).|
-|[ATLPath::QuoteSpaces](#quotespaces)|Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathQuoteSpaces](/windows/desktop/api/shlwapi/nf-shlwapi-pathquotespacesa).|
-|[ATLPath::RelativePathTo](#relativepathto)|Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathRelativePathTo](/windows/desktop/api/shlwapi/nf-shlwapi-pathrelativepathtoa).|
-|[ATLPath::RemoveArgs](#removeargs)|Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathRemoveArgs](/windows/desktop/api/shlwapi/nf-shlwapi-pathremoveargsa).|
-|[ATLPath::RemoveBackslash](#removebackslash)|Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathRemoveBackslash](/windows/desktop/api/shlwapi/nf-shlwapi-pathremovebackslasha).|
-|[ATLPath::RemoveBlanks](#removeblanks)|Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathRemoveBlanks](/windows/desktop/api/shlwapi/nf-shlwapi-pathremoveblanksa).|
-|[ATLPath::RemoveExtension](#removeextension)|Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathRemoveExtension](/windows/desktop/api/shlwapi/nf-shlwapi-pathremoveextensiona).|
-|[ATLPath::RemoveFileSpec](#removefilespec)|Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathRemoveFileSpec](/windows/desktop/api/shlwapi/nf-shlwapi-pathremovefilespeca).|
-|[ATLPath::RenameExtension](#renameextension)|Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathRenameExtension](/windows/desktop/api/shlwapi/nf-shlwapi-pathrenameextensiona).|
-|[ATLPath::SkipRoot](#skiproot)|Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathSkipRoot](/windows/desktop/api/shlwapi/nf-shlwapi-pathskiproota).|
-|[ATLPath::StripPath](#strippath)|Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathStripPath](/windows/desktop/api/shlwapi/nf-shlwapi-pathstrippatha).|
-|[ATLPath::StripToRoot](#striptoroot)|Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathStripToRoot](/windows/desktop/api/shlwapi/nf-shlwapi-pathstriptoroota).|
-|[ATLPath::UnquoteSpaces](#unquotespaces)|Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathUnquoteSpaces](/windows/desktop/api/shlwapi/nf-shlwapi-pathunquotespacesa).|
+|[ATLPath:: Addters eğik çizgi](#addbackslash)|Bu işlev [Pathaddters eğik çizgi](/windows/win32/api/shlwapi/nf-shlwapi-pathaddbackslashw)için aşırı yüklenmiş bir sarmalayıcıdır.|
+|[ATLPath:: Addexgeri](#addextension)|Bu işlev [Pathaddexgeri](/windows/win32/api/shlwapi/nf-shlwapi-pathaddextensionw)için aşırı yüklenmiş bir sarmalayıcıdır.|
+|[ATLPath:: Append](#append)|Bu işlev, [PathAppend](/windows/win32/api/shlwapi/nf-shlwapi-pathappendw)için aşırı yüklenmiş bir sarmalayıcıdır.|
+|[ATLPath:: BuildRoot](#buildroot)|Bu işlev, [PathBuildRoot](/windows/win32/api/shlwapi/nf-shlwapi-pathbuildrootw)için aşırı yüklenmiş bir sarmalayıcıdır.|
+|[ATLPath:: canonicalize](#canonicalize)|Bu işlev, [PathCanonicalize](/windows/win32/api/shlwapi/nf-shlwapi-pathcanonicalizew)için aşırı yüklenmiş bir sarmalayıcıdır.|
+|[ATLPath:: birleştirin](#combine)|Bu işlev, [Pathbirleştirme](/windows/win32/api/shlwapi/nf-shlwapi-pathcombinew)için aşırı yüklenmiş bir sarmalayıcıdır.|
+|[ATLPath:: CommonPrefix](#commonprefix)|Bu işlev, [PathCommonPrefix](/windows/win32/api/shlwapi/nf-shlwapi-pathcommonprefixw)için aşırı yüklenmiş bir sarmalayıcıdır.|
+|[ATLPath:: CompactPath](#compactpath)|Bu işlev, [PathCompactPath](/windows/win32/api/shlwapi/nf-shlwapi-pathcompactpathw)için aşırı yüklenmiş bir sarmalayıcıdır.|
+|[ATLPath:: CompactPathEx](#compactpathex)|Bu işlev, [PathCompactPathEx](/windows/win32/api/shlwapi/nf-shlwapi-pathcompactpathexw)için aşırı yüklenmiş bir sarmalayıcıdır.|
+|[ATLPath:: FileExists](#fileexists)|Bu işlev, [PathFileExists](/windows/win32/api/shlwapi/nf-shlwapi-pathfileexistsw)için aşırı yüklenmiş bir sarmalayıcıdır.|
+|[ATLPath:: Findexgeri](#findextension)|Bu işlev, [Pathfindexgeri](/windows/win32/api/shlwapi/nf-shlwapi-pathfindextensionw)için aşırı yüklenmiş bir sarmalayıcıdır.|
+|[ATLPath:: FindFileName](#findfilename)|Bu işlev, [PathFindFileName](/windows/win32/api/shlwapi/nf-shlwapi-pathfindfilenamew)için aşırı yüklenmiş bir sarmalayıcıdır.|
+|[ATLPath:: GetDriveNumber](#getdrivenumber)|Bu işlev, [PathGetDriveNumber](/windows/win32/api/shlwapi/nf-shlwapi-pathgetdrivenumberw)için aşırı yüklenmiş bir sarmalayıcıdır.|
+|[ATLPath:: IsDirectory](#isdirectory)|Bu işlev [Pathisdirectory](/windows/win32/api/shlwapi/nf-shlwapi-pathisdirectoryw)için aşırı yüklenmiş bir sarmalayıcıdır.|
+|[ATLPath:: ısdosyabelirtimi](#isfilespec)|Bu işlev [Pathisdosyabelirtimi](/windows/win32/api/shlwapi/nf-shlwapi-pathisfilespecw)için aşırı yüklenmiş bir sarmalayıcıdır.|
+|[ATLPath:: Isprefıx](#isprefix)|Bu işlev [Pathisprefix](/windows/win32/api/shlwapi/nf-shlwapi-pathisprefixw)için aşırı yüklenmiş bir sarmalayıcıdır.|
+|[ATLPath:: ısgöreli](#isrelative)|Bu işlev, [Pathısgöreli](/windows/win32/api/shlwapi/nf-shlwapi-pathisrelativew)için aşırı yüklenmiş bir sarmalayıcıdır.|
+|[ATLPath:: IsRoot](#isroot)|Bu işlev, [Pathisroot](/windows/win32/api/shlwapi/nf-shlwapi-pathisrootw)için aşırı yüklenmiş bir sarmalayıcıdır.|
+|[ATLPath:: IsSameRoot](#issameroot)|Bu işlev [Pathissameroot](/windows/win32/api/shlwapi/nf-shlwapi-pathissamerootw)için aşırı yüklenmiş bir sarmalayıcıdır.|
+|[ATLPath:: IsUnc](#isunc)|Bu işlev [Pathisunc](/windows/win32/api/shlwapi/nf-shlwapi-pathisuncw)için aşırı yüklenmiş bir sarmalayıcıdır.|
+|[ATLPath:: ısuncserver](#isuncserver)|Bu işlev [Pathisuncserver](/windows/win32/api/shlwapi/nf-shlwapi-pathisuncserverw)için aşırı yüklenmiş bir sarmalayıcıdır.|
+|[ATLPath:: ısuncservershare](#isuncservershare)|Bu işlev [Pathisuncservershare](/windows/win32/api/shlwapi/nf-shlwapi-pathisuncserversharew)için aşırı yüklenmiş bir sarmalayıcıdır.|
+|[ATLPath:: Makeoldukça](#makepretty)|Bu işlev, [Pathmakeoldukça](/windows/win32/api/shlwapi/nf-shlwapi-pathmakeprettyw)için aşırı yüklenmiş bir sarmalayıcıdır.|
+|[ATLPath:: MatchSpec](#matchspec)|Bu işlev, [PathMatchSpec](/windows/win32/api/shlwapi/nf-shlwapi-pathmatchspecw)için aşırı yüklenmiş bir sarmalayıcıdır.|
+|[ATLPath:: QuoteSpaces](#quotespaces)|Bu işlev, [PathQuoteSpaces](/windows/win32/api/shlwapi/nf-shlwapi-pathquotespacesw)için aşırı yüklenmiş bir sarmalayıcıdır.|
+|[ATLPath:: RelativePathTo](#relativepathto)|Bu işlev [PathRelativePathTo](/windows/win32/api/shlwapi/nf-shlwapi-pathrelativepathtow)için aşırı yüklenmiş bir sarmalayıcıdır.|
+|[ATLPath:: RemoveArgs](#removeargs)|Bu işlev [PathRemoveArgs](/windows/win32/api/shlwapi/nf-shlwapi-pathremoveargsw)için aşırı yüklenmiş bir sarmalayıcıdır.|
+|[ATLPath:: Removeters eğik çizgi](#removebackslash)|Bu işlev [Pathremoveters eğik çizgi](/windows/win32/api/shlwapi/nf-shlwapi-pathremovebackslashw)için aşırı yüklenmiş bir sarmalayıcıdır.|
+|[ATLPath:: Removeboşlar](#removeblanks)|Bu işlev, [Pathremoveboşluklar](/windows/win32/api/shlwapi/nf-shlwapi-pathremoveblanksw)için aşırı yüklenmiş bir sarmalayıcıdır.|
+|[ATLPath:: RemoveExtension](#removeextension)|Bu işlev [PathRemoveExtension](/windows/win32/api/shlwapi/nf-shlwapi-pathremoveextensionw)için aşırı yüklenmiş bir sarmalayıcıdır.|
+|[ATLPath:: Removedosyabelirtimi](#removefilespec)|Bu işlev, [Pathremovedosyabelirtimi](/windows/win32/api/shlwapi/nf-shlwapi-pathremovefilespecw)için aşırı yüklenmiş bir sarmalayıcıdır.|
+|[ATLPath:: RenameExtension](#renameextension)|Bu işlev [PathRenameExtension](/windows/win32/api/shlwapi/nf-shlwapi-pathrenameextensionw)için aşırı yüklenmiş bir sarmalayıcıdır.|
+|[ATLPath:: SkipRoot](#skiproot)|Bu işlev [PathSkipRoot](/windows/win32/api/shlwapi/nf-shlwapi-pathskiprootw)için aşırı yüklenmiş bir sarmalayıcıdır.|
+|[ATLPath:: StripPath](#strippath)|Bu işlev, [PathStripPath](/windows/win32/api/shlwapi/nf-shlwapi-pathstrippathw)için aşırı yüklenmiş bir sarmalayıcıdır.|
+|[ATLPath:: StripToRoot](#striptoroot)|Bu işlev, [PathStripToRoot](/windows/win32/api/shlwapi/nf-shlwapi-pathstriptorootw)için aşırı yüklenmiş bir sarmalayıcıdır.|
+|[ATLPath:: UnquoteSpaces](#unquotespaces)|Bu işlev, [PathUnquoteSpaces](/windows/win32/api/shlwapi/nf-shlwapi-pathunquotespacesw)için aşırı yüklenmiş bir sarmalayıcıdır.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlpath.h
+**Üstbilgi:** atlpath. h
 
-## <a name="addbackslash"></a> ATLPath::AddBackSlash
+## <a name="addbackslash"></a>ATLPath:: Addters eğik çizgi
 
-Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathAddBackslash](/windows/desktop/api/shlwapi/nf-shlwapi-pathaddbackslasha).
+Bu işlev [Pathaddters eğik çizgi](/windows/win32/api/shlwapi/nf-shlwapi-pathaddbackslashw)için aşırı yüklenmiş bir sarmalayıcıdır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -124,11 +124,11 @@ inline wchar_t* AddBackslash(wchar_t* pszPath);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [PathAddBackslash](/windows/desktop/api/shlwapi/nf-shlwapi-pathaddbackslasha) Ayrıntılar için.
+Ayrıntılar için bkz. [Pathaddters eğik çizgi](/windows/win32/api/shlwapi/nf-shlwapi-pathaddbackslashw) .
 
-## <a name="addextension"></a> ATLPath::AddExtension
+## <a name="addextension"></a>ATLPath:: Addexgeri
 
-Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathAddExtension](/windows/desktop/api/shlwapi/nf-shlwapi-pathaddextensiona).
+Bu işlev [Pathaddexgeri](/windows/win32/api/shlwapi/nf-shlwapi-pathaddextensionw)için aşırı yüklenmiş bir sarmalayıcıdır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -139,11 +139,11 @@ inline BOOL AddExtension(wchar_t* pszPath, const wchar_t* pszExtension);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [PathAddExtension](/windows/desktop/api/shlwapi/nf-shlwapi-pathaddextensiona) Ayrıntılar için.
+Ayrıntılar için bkz. [Pathaddexgeri](/windows/win32/api/shlwapi/nf-shlwapi-pathaddextensionw) .
 
-## <a name="append"></a> ATLPath::Append
+## <a name="append"></a>ATLPath:: Append
 
-Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathAppend](/windows/desktop/api/shlwapi/nf-shlwapi-pathappenda).
+Bu işlev, [PathAppend](/windows/win32/api/shlwapi/nf-shlwapi-pathappendw)için aşırı yüklenmiş bir sarmalayıcıdır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -154,11 +154,11 @@ inline BOOL Append(wchar_t* pszPath, const wchar_t* pszMore);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [PathAppend](/windows/desktop/api/shlwapi/nf-shlwapi-pathappenda) Ayrıntılar için.
+Ayrıntılar için bkz. [PathAppend](/windows/win32/api/shlwapi/nf-shlwapi-pathappendw) .
 
-## <a name="buildroot"></a> ATLPath::BuildRoot
+## <a name="buildroot"></a>ATLPath:: BuildRoot
 
-Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathBuildRoot](/windows/desktop/api/shlwapi/nf-shlwapi-pathbuildroota).
+Bu işlev, [PathBuildRoot](/windows/win32/api/shlwapi/nf-shlwapi-pathbuildrootw)için aşırı yüklenmiş bir sarmalayıcıdır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -169,11 +169,11 @@ inline wchar_t* BuildRoot(wchar_t* pszPath, int iDrive);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [PathBuildRoot](/windows/desktop/api/shlwapi/nf-shlwapi-pathbuildroota) Ayrıntılar için.
+Ayrıntılar için bkz. [PathBuildRoot](/windows/win32/api/shlwapi/nf-shlwapi-pathbuildrootw) .
 
-## <a name="canonicalize"></a> ATLPath::Canonicalize
+## <a name="canonicalize"></a>ATLPath:: canonicalize
 
-Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathCanonicalize](/windows/desktop/api/shlwapi/nf-shlwapi-pathcanonicalizea).
+Bu işlev, [PathCanonicalize](/windows/win32/api/shlwapi/nf-shlwapi-pathcanonicalizew)için aşırı yüklenmiş bir sarmalayıcıdır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -184,11 +184,11 @@ inline BOOL Canonicalize(wchar_t* pszDest, const wchar_t* pszSrc);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [PathCanonicalize](/windows/desktop/api/shlwapi/nf-shlwapi-pathcanonicalizea) Ayrıntılar için.
+Ayrıntılar için bkz. [PathCanonicalize](/windows/win32/api/shlwapi/nf-shlwapi-pathcanonicalizew) .
 
-## <a name="combine"></a> ATLPath::Combine
+## <a name="combine"></a>ATLPath:: birleştirin
 
-Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathCombine](/windows/desktop/api/shlwapi/nf-shlwapi-pathcombinea).
+Bu işlev, [Pathbirleştirme](/windows/win32/api/shlwapi/nf-shlwapi-pathcombinew)için aşırı yüklenmiş bir sarmalayıcıdır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -207,11 +207,11 @@ inline wchar_t* Combine(
 
 ### <a name="remarks"></a>Açıklamalar
 
-PathCombine Ayrıntılar için bkz.
+Ayrıntılar için bkz. Pathbirleştirme.
 
-## <a name="commonprefix"></a> ATLPath::CommonPrefix
+## <a name="commonprefix"></a>ATLPath:: CommonPrefix
 
-Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathCommonPrefix](/windows/desktop/api/shlwapi/nf-shlwapi-pathcommonprefixa).
+Bu işlev, [PathCommonPrefix](/windows/win32/api/shlwapi/nf-shlwapi-pathcommonprefixw)için aşırı yüklenmiş bir sarmalayıcıdır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -229,11 +229,11 @@ inline int CommonPrefix(
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [PathCommonPrefix](/windows/desktop/api/shlwapi/nf-shlwapi-pathcommonprefixa) Ayrıntılar için.
+Ayrıntılar için bkz. [PathCommonPrefix](/windows/win32/api/shlwapi/nf-shlwapi-pathcommonprefixw) .
 
-## <a name="compactpath"></a> ATLPath::CompactPath
+## <a name="compactpath"></a>ATLPath:: CompactPath
 
-Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathCompactPath](/windows/desktop/api/shlwapi/nf-shlwapi-pathcompactpatha).
+Bu işlev, [PathCompactPath](/windows/win32/api/shlwapi/nf-shlwapi-pathcompactpathw)için aşırı yüklenmiş bir sarmalayıcıdır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -251,11 +251,11 @@ inline BOOL CompactPath(
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [PathCompactPath](/windows/desktop/api/shlwapi/nf-shlwapi-pathcompactpatha) Ayrıntılar için.
+Ayrıntılar için bkz. [PathCompactPath](/windows/win32/api/shlwapi/nf-shlwapi-pathcompactpathw) .
 
-## <a name="compactpathex"></a> ATLPath::CompactPathEx
+## <a name="compactpathex"></a>ATLPath:: CompactPathEx
 
-Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathCompactPathEx](/windows/desktop/api/shlwapi/nf-shlwapi-pathcompactpathexa).
+Bu işlev, [PathCompactPathEx](/windows/win32/api/shlwapi/nf-shlwapi-pathcompactpathexw)için aşırı yüklenmiş bir sarmalayıcıdır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -275,11 +275,11 @@ inline BOOL CompactPathEx(
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [PathCompactPathEx](/windows/desktop/api/shlwapi/nf-shlwapi-pathcompactpathexa) Ayrıntılar için.
+Ayrıntılar için bkz. [PathCompactPathEx](/windows/win32/api/shlwapi/nf-shlwapi-pathcompactpathexw) .
 
-## <a name="fileexists"></a> ATLPath::FileExists
+## <a name="fileexists"></a>ATLPath:: FileExists
 
-Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathFileExists](/windows/desktop/api/shlwapi/nf-shlwapi-pathfileexistsa).
+Bu işlev, [PathFileExists](/windows/win32/api/shlwapi/nf-shlwapi-pathfileexistsw)için aşırı yüklenmiş bir sarmalayıcıdır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -290,11 +290,11 @@ inline BOOL FileExists(const wchar_t* pszPath);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [PathFileExists](/windows/desktop/api/shlwapi/nf-shlwapi-pathfileexistsa) Ayrıntılar için.
+Ayrıntılar için bkz. [PathFileExists](/windows/win32/api/shlwapi/nf-shlwapi-pathfileexistsw) .
 
-## <a name="findextension"></a> ATLPath::FindExtension
+## <a name="findextension"></a>ATLPath:: Findexgeri
 
-Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathFindExtension](/windows/desktop/api/shlwapi/nf-shlwapi-pathfindextensiona).
+Bu işlev, [Pathfindexgeri](/windows/win32/api/shlwapi/nf-shlwapi-pathfindextensionw)için aşırı yüklenmiş bir sarmalayıcıdır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -305,11 +305,11 @@ inline wchar_t* FindExtension(const wchar_t* pszPath);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [PathFindExtension](/windows/desktop/api/shlwapi/nf-shlwapi-pathfindextensiona) Ayrıntılar için.
+Ayrıntılar için bkz. [Pathfındexgeri](/windows/win32/api/shlwapi/nf-shlwapi-pathfindextensionw) .
 
-## <a name="findfilename"></a> ATLPath::FindFileName
+## <a name="findfilename"></a>ATLPath:: FindFileName
 
-Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathFindFileName](/windows/desktop/api/shlwapi/nf-shlwapi-pathfindfilenamea).
+Bu işlev, [PathFindFileName](/windows/win32/api/shlwapi/nf-shlwapi-pathfindfilenamew)için aşırı yüklenmiş bir sarmalayıcıdır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -320,11 +320,11 @@ inline wchar_t* FindFileName(const wchar_t* pszPath);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [PathFindFileName](/windows/desktop/api/shlwapi/nf-shlwapi-pathfindfilenamea) Ayrıntılar için.
+Ayrıntılar için bkz. [PathFindFileName](/windows/win32/api/shlwapi/nf-shlwapi-pathfindfilenamew) .
 
-## <a name="getdrivenumber"></a> ATLPath::GetDriveNumber
+## <a name="getdrivenumber"></a>ATLPath:: GetDriveNumber
 
-Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathGetDriveNumber](/windows/desktop/api/shlwapi/nf-shlwapi-pathgetdrivenumbera).
+Bu işlev, [PathGetDriveNumber](/windows/win32/api/shlwapi/nf-shlwapi-pathgetdrivenumberw)için aşırı yüklenmiş bir sarmalayıcıdır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -335,11 +335,11 @@ inline int GetDriveNumber(const wchar_t* pszPath);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [PathGetDriveNumber](/windows/desktop/api/shlwapi/nf-shlwapi-pathgetdrivenumbera) Ayrıntılar için.
+Ayrıntılar için bkz. [PathGetDriveNumber](/windows/win32/api/shlwapi/nf-shlwapi-pathgetdrivenumberw) .
 
-## <a name="isdirectory"></a>  ATLPath::IsDirectory
+## <a name="isdirectory"></a>ATLPath:: IsDirectory
 
-Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [Pathısdirectory](/windows/desktop/api/shlwapi/nf-shlwapi-pathisdirectorya).
+Bu işlev [Pathisdirectory](/windows/win32/api/shlwapi/nf-shlwapi-pathisdirectoryw)için aşırı yüklenmiş bir sarmalayıcıdır.
 
 ```
 inline BOOL IsDirectory(const char* pszPath);
@@ -348,11 +348,11 @@ inline BOOL IsDirectory(const wchar_t* pszPath);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Pathısdirectory Ayrıntılar için bkz.
+Ayrıntılar için bkz. PathIsDirectory.
 
-## <a name="isfilespec"></a> ATLPath::IsFileSpec
+## <a name="isfilespec"></a>ATLPath:: ısdosyabelirtimi
 
-Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [Pathısfilespec](/windows/desktop/api/shlwapi/nf-shlwapi-pathisfilespeca).
+Bu işlev [Pathisdosyabelirtimi](/windows/win32/api/shlwapi/nf-shlwapi-pathisfilespecw)için aşırı yüklenmiş bir sarmalayıcıdır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -363,11 +363,11 @@ inline BOOL IsFileSpec(const wchar_t* pszPath);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [Pathısfilespec](/windows/desktop/api/shlwapi/nf-shlwapi-pathisfilespeca) Ayrıntılar için.
+Ayrıntılar için bkz. [Pathisdosyabelirtimi](/windows/win32/api/shlwapi/nf-shlwapi-pathisfilespecw) .
 
-## <a name="isprefix"></a> ATLPath::IsPrefix
+## <a name="isprefix"></a>ATLPath:: Isprefıx
 
-Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [Pathısprefix](/windows/desktop/api/shlwapi/nf-shlwapi-pathisprefixa).
+Bu işlev [Pathisprefix](/windows/win32/api/shlwapi/nf-shlwapi-pathisprefixw)için aşırı yüklenmiş bir sarmalayıcıdır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -378,11 +378,11 @@ inline BOOL IsPrefix(const wchar_t* pszPrefix, const wchar_t* pszPath);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [Pathısprefix](/windows/desktop/api/shlwapi/nf-shlwapi-pathisprefixa) Ayrıntılar için.
+Ayrıntılar için bkz. [Pathisprefix](/windows/win32/api/shlwapi/nf-shlwapi-pathisprefixw) .
 
-## <a name="isrelative"></a> ATLPath::IsRelative
+## <a name="isrelative"></a>ATLPath:: ısgöreli
 
-Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [Pathısrelative](/windows/desktop/api/shlwapi/nf-shlwapi-pathisrelativea).
+Bu işlev, [Pathısgöreli](/windows/win32/api/shlwapi/nf-shlwapi-pathisrelativew)için aşırı yüklenmiş bir sarmalayıcıdır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -393,11 +393,11 @@ inline BOOL IsRelative(const wchar_t* pszPath);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [Pathısrelative](/windows/desktop/api/shlwapi/nf-shlwapi-pathisrelativea) Ayrıntılar için.
+Ayrıntılar için bkz. [Pathısgöreli](/windows/win32/api/shlwapi/nf-shlwapi-pathisrelativew) .
 
-## <a name="isroot"></a> ATLPath::IsRoot
+## <a name="isroot"></a>ATLPath:: IsRoot
 
-Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [Pathısroot](/windows/desktop/api/shlwapi/nf-shlwapi-pathisroota).
+Bu işlev, [Pathisroot](/windows/win32/api/shlwapi/nf-shlwapi-pathisrootw)için aşırı yüklenmiş bir sarmalayıcıdır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -408,11 +408,11 @@ inline BOOL IsRoot(const wchar_t* pszPath);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [Pathısroot](/windows/desktop/api/shlwapi/nf-shlwapi-pathisroota) Ayrıntılar için.
+Ayrıntılar için bkz. [PathIsRoot](/windows/win32/api/shlwapi/nf-shlwapi-pathisrootw) .
 
-## <a name="issameroot"></a> ATLPath::IsSameRoot
+## <a name="issameroot"></a>ATLPath:: IsSameRoot
 
-Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [Pathıssameroot](/windows/desktop/api/shlwapi/nf-shlwapi-pathissameroota).
+Bu işlev [Pathissameroot](/windows/win32/api/shlwapi/nf-shlwapi-pathissamerootw)için aşırı yüklenmiş bir sarmalayıcıdır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -423,11 +423,11 @@ inline BOOL IsSameRoot(const wchar_t* pszPath1, const wchar_t* pszPath2);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [Pathıssameroot](/windows/desktop/api/shlwapi/nf-shlwapi-pathissameroota) Ayrıntılar için.
+Ayrıntılar için bkz. [Pathissameroot](/windows/win32/api/shlwapi/nf-shlwapi-pathissamerootw) .
 
-## <a name="isunc"></a> ATLPath::IsUNC
+## <a name="isunc"></a>ATLPath:: IsUnc
 
-Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [Pathısunc](/windows/desktop/api/shlwapi/nf-shlwapi-pathisunca).
+Bu işlev [Pathisunc](/windows/win32/api/shlwapi/nf-shlwapi-pathisuncw)için aşırı yüklenmiş bir sarmalayıcıdır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -438,11 +438,11 @@ inline BOOL IsUNC(const wchar_t* pszPath);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [Pathısunc](/windows/desktop/api/shlwapi/nf-shlwapi-pathisunca) Ayrıntılar için.
+Ayrıntılar için bkz. [Pathisunc](/windows/win32/api/shlwapi/nf-shlwapi-pathisuncw) .
 
-## <a name="isuncserver"></a> ATLPath::IsUNCServer
+## <a name="isuncserver"></a>ATLPath:: ısuncserver
 
-Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [Pathısuncserver](/windows/desktop/api/shlwapi/nf-shlwapi-pathisuncservera).
+Bu işlev [Pathisuncserver](/windows/win32/api/shlwapi/nf-shlwapi-pathisuncserverw)için aşırı yüklenmiş bir sarmalayıcıdır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -453,11 +453,11 @@ inline BOOL IsUNCServer(const wchar_t* pszPath);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [Pathısuncserver](/windows/desktop/api/shlwapi/nf-shlwapi-pathisuncservera) Ayrıntılar için.
+Ayrıntılar için bkz. [Pathisuncserver](/windows/win32/api/shlwapi/nf-shlwapi-pathisuncserverw) .
 
-## <a name="isuncservershare"></a> ATLPath::IsUNCServerShare
+## <a name="isuncservershare"></a>ATLPath:: ısuncservershare
 
-Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [Pathısuncservershare](/windows/desktop/api/shlwapi/nf-shlwapi-pathisuncserversharea).
+Bu işlev [Pathisuncservershare](/windows/win32/api/shlwapi/nf-shlwapi-pathisuncserversharew)için aşırı yüklenmiş bir sarmalayıcıdır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -468,11 +468,11 @@ inline BOOL IsUNCServerShare(const wchar_t* pszPath);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [Pathısuncservershare](/windows/desktop/api/shlwapi/nf-shlwapi-pathisuncserversharea) Ayrıntılar için.
+Ayrıntılar için bkz. [Pathisuncservershare](/windows/win32/api/shlwapi/nf-shlwapi-pathisuncserversharew) .
 
-## <a name="makepretty"></a> ATLPath::MakePretty
+## <a name="makepretty"></a>ATLPath:: Makeoldukça
 
-Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathMakePretty](/windows/desktop/api/shlwapi/nf-shlwapi-pathmakeprettya).
+Bu işlev, [Pathmakeoldukça](/windows/win32/api/shlwapi/nf-shlwapi-pathmakeprettyw)için aşırı yüklenmiş bir sarmalayıcıdır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -483,11 +483,11 @@ inline BOOL MakePretty(wchar_t* pszPath);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [PathMakePretty](/windows/desktop/api/shlwapi/nf-shlwapi-pathmakeprettya) Ayrıntılar için.
+Ayrıntılar için bkz. [Pathmakeoldukça](/windows/win32/api/shlwapi/nf-shlwapi-pathmakeprettyw) .
 
-## <a name="matchspec"></a> ATLPath::MatchSpec
+## <a name="matchspec"></a>ATLPath:: MatchSpec
 
-Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathMatchSpec](/windows/desktop/api/shlwapi/nf-shlwapi-pathmatchspeca).
+Bu işlev, [PathMatchSpec](/windows/win32/api/shlwapi/nf-shlwapi-pathmatchspecw)için aşırı yüklenmiş bir sarmalayıcıdır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -498,11 +498,11 @@ inline BOOL MatchSpec(const wchar_t* pszPath, const wchar_t* pszSpec);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [PathMatchSpec](/windows/desktop/api/shlwapi/nf-shlwapi-pathmatchspeca) Ayrıntılar için.
+Ayrıntılar için bkz. [PathMatchSpec](/windows/win32/api/shlwapi/nf-shlwapi-pathmatchspecw) .
 
-## <a name="quotespaces"></a> ATLPath::QuoteSpaces
+## <a name="quotespaces"></a>ATLPath:: QuoteSpaces
 
-Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathQuoteSpaces](/windows/desktop/api/shlwapi/nf-shlwapi-pathquotespacesa).
+Bu işlev, [PathQuoteSpaces](/windows/win32/api/shlwapi/nf-shlwapi-pathquotespacesw)için aşırı yüklenmiş bir sarmalayıcıdır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -513,11 +513,11 @@ inline void QuoteSpaces(wchar_t* pszPath);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [PathQuoteSpaces](/windows/desktop/api/shlwapi/nf-shlwapi-pathquotespacesa) Ayrıntılar için.
+Ayrıntılar için bkz. [PathQuoteSpaces](/windows/win32/api/shlwapi/nf-shlwapi-pathquotespacesw) .
 
-## <a name="relativepathto"></a> ATLPath::RelativePathTo
+## <a name="relativepathto"></a>ATLPath:: RelativePathTo
 
-Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathRelativePathTo](/windows/desktop/api/shlwapi/nf-shlwapi-pathrelativepathtoa).
+Bu işlev [PathRelativePathTo](/windows/win32/api/shlwapi/nf-shlwapi-pathrelativepathtow)için aşırı yüklenmiş bir sarmalayıcıdır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -539,11 +539,11 @@ inline BOOL RelativePathTo(
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [PathRelativePathTo](/windows/desktop/api/shlwapi/nf-shlwapi-pathrelativepathtoa) Ayrıntılar için.
+Ayrıntılar için bkz. [PathRelativePathTo](/windows/win32/api/shlwapi/nf-shlwapi-pathrelativepathtow) .
 
-## <a name="removeargs"></a> ATLPath::RemoveArgs
+## <a name="removeargs"></a>ATLPath:: RemoveArgs
 
-Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathRemoveArgs](/windows/desktop/api/shlwapi/nf-shlwapi-pathremoveargsa).
+Bu işlev [PathRemoveArgs](/windows/win32/api/shlwapi/nf-shlwapi-pathremoveargsw)için aşırı yüklenmiş bir sarmalayıcıdır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -554,11 +554,11 @@ inline void RemoveArgs(wchar_t* pszPath);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [PathRemoveArgs](/windows/desktop/api/shlwapi/nf-shlwapi-pathremoveargsa) Ayrıntılar için.
+Ayrıntılar için bkz. [PathRemoveArgs](/windows/win32/api/shlwapi/nf-shlwapi-pathremoveargsw) .
 
-## <a name="removebackslash"></a> ATLPath::RemoveBackslash
+## <a name="removebackslash"></a>ATLPath:: Removeters eğik çizgi
 
-Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathRemoveBackslash](/windows/desktop/api/shlwapi/nf-shlwapi-pathremovebackslasha).
+Bu işlev [Pathremoveters eğik çizgi](/windows/win32/api/shlwapi/nf-shlwapi-pathremovebackslashw)için aşırı yüklenmiş bir sarmalayıcıdır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -569,11 +569,11 @@ inline wchar_t* RemoveBackslash(wchar_t* pszPath);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [PathRemoveBackslash](/windows/desktop/api/shlwapi/nf-shlwapi-pathremovebackslasha) Ayrıntılar için.
+Ayrıntılar için bkz. [Pathremoveters eğik çizgi](/windows/win32/api/shlwapi/nf-shlwapi-pathremovebackslashw) .
 
-## <a name="removeblanks"></a> ATLPath::RemoveBlanks
+## <a name="removeblanks"></a>ATLPath:: Removeboşlar
 
-Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathRemoveBlanks](/windows/desktop/api/shlwapi/nf-shlwapi-pathremoveblanksa).
+Bu işlev, [Pathremoveboşluklar](/windows/win32/api/shlwapi/nf-shlwapi-pathremoveblanksw)için aşırı yüklenmiş bir sarmalayıcıdır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -584,11 +584,11 @@ inline void RemoveBlanks(wchar_t* pszPath);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [PathRemoveBlanks](/windows/desktop/api/shlwapi/nf-shlwapi-pathremoveblanksa) Ayrıntılar için.
+Ayrıntılar için bkz. [Pathremoveboşlar](/windows/win32/api/shlwapi/nf-shlwapi-pathremoveblanksw) .
 
-## <a name="removeextension"></a> ATLPath::RemoveExtension
+## <a name="removeextension"></a>ATLPath:: RemoveExtension
 
-Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathRemoveExtension](/windows/desktop/api/shlwapi/nf-shlwapi-pathremoveextensiona).
+Bu işlev [PathRemoveExtension](/windows/win32/api/shlwapi/nf-shlwapi-pathremoveextensionw)için aşırı yüklenmiş bir sarmalayıcıdır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -599,11 +599,11 @@ inline void RemoveExtension(wchar_t* pszPath);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [PathRemoveExtension](/windows/desktop/api/shlwapi/nf-shlwapi-pathremoveextensiona) Ayrıntılar için.
+Ayrıntılar için bkz. [PathRemoveExtension](/windows/win32/api/shlwapi/nf-shlwapi-pathremoveextensionw) .
 
-## <a name="removefilespec"></a> ATLPath::RemoveFileSpec
+## <a name="removefilespec"></a>ATLPath:: Removedosyabelirtimi
 
-Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathRemoveFileSpec](/windows/desktop/api/shlwapi/nf-shlwapi-pathremovefilespeca).
+Bu işlev, [Pathremovedosyabelirtimi](/windows/win32/api/shlwapi/nf-shlwapi-pathremovefilespecw)için aşırı yüklenmiş bir sarmalayıcıdır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -614,11 +614,11 @@ inline BOOL RemoveFileSpec(wchar_t* pszPath);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [PathRemoveFileSpec](/windows/desktop/api/shlwapi/nf-shlwapi-pathremovefilespeca) Ayrıntılar için.
+Ayrıntılar için bkz. [Pathremovedosyabelirtimi](/windows/win32/api/shlwapi/nf-shlwapi-pathremovefilespecw) .
 
-## <a name="renameextension"></a> ATLPath::RenameExtension
+## <a name="renameextension"></a>ATLPath:: RenameExtension
 
-Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathRenameExtension](/windows/desktop/api/shlwapi/nf-shlwapi-pathrenameextensiona).
+Bu işlev [PathRenameExtension](/windows/win32/api/shlwapi/nf-shlwapi-pathrenameextensionw)için aşırı yüklenmiş bir sarmalayıcıdır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -629,11 +629,11 @@ inline BOOL RenameExtension(wchar_t* pszPath, const wchar_t* pszExt);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [PathRenameExtension](/windows/desktop/api/shlwapi/nf-shlwapi-pathrenameextensiona) Ayrıntılar için.
+Ayrıntılar için bkz. [PathRenameExtension](/windows/win32/api/shlwapi/nf-shlwapi-pathrenameextensionw) .
 
-## <a name="skiproot"></a> ATLPath::SkipRoot
+## <a name="skiproot"></a>ATLPath:: SkipRoot
 
-Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathSkipRoot](/windows/desktop/api/shlwapi/nf-shlwapi-pathskiproota).
+Bu işlev [PathSkipRoot](/windows/win32/api/shlwapi/nf-shlwapi-pathskiprootw)için aşırı yüklenmiş bir sarmalayıcıdır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -644,11 +644,11 @@ inline wchar_t* SkipRoot(const wchar_t* pszPath);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [PathSkipRoot](/windows/desktop/api/shlwapi/nf-shlwapi-pathskiproota) Ayrıntılar için.
+Ayrıntılar için bkz. [PathSkipRoot](/windows/win32/api/shlwapi/nf-shlwapi-pathskiprootw) .
 
-## <a name="strippath"></a> ATLPath::StripPath
+## <a name="strippath"></a>ATLPath:: StripPath
 
-Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathStripPath](/windows/desktop/api/shlwapi/nf-shlwapi-pathstrippatha).
+Bu işlev, [PathStripPath](/windows/win32/api/shlwapi/nf-shlwapi-pathstrippathw)için aşırı yüklenmiş bir sarmalayıcıdır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -659,11 +659,11 @@ inline void StripPath(wchar_t* pszPath);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [PathStripPath](/windows/desktop/api/shlwapi/nf-shlwapi-pathstrippatha) Ayrıntılar için.
+Ayrıntılar için bkz. [PathStripPath](/windows/win32/api/shlwapi/nf-shlwapi-pathstrippathw) .
 
-## <a name="striptoroot"></a> ATLPath::StripToRoot
+## <a name="striptoroot"></a>ATLPath:: StripToRoot
 
-Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathStripToRoot](/windows/desktop/api/shlwapi/nf-shlwapi-pathstriptoroota).
+Bu işlev, [PathStripToRoot](/windows/win32/api/shlwapi/nf-shlwapi-pathstriptorootw)için aşırı yüklenmiş bir sarmalayıcıdır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -674,11 +674,11 @@ inline BOOL StripToRoot(wchar_t* pszPath);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [PathStripToRoot](/windows/desktop/api/shlwapi/nf-shlwapi-pathstriptoroota) Ayrıntılar için.
+Ayrıntılar için bkz. [PathStripToRoot](/windows/win32/api/shlwapi/nf-shlwapi-pathstriptorootw) .
 
-## <a name="unquotespaces"></a> ATLPath::UnquoteSpaces
+## <a name="unquotespaces"></a>ATLPath:: UnquoteSpaces
 
-Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathUnquoteSpaces](/windows/desktop/api/shlwapi/nf-shlwapi-pathunquotespacesa).
+Bu işlev, [PathUnquoteSpaces](/windows/win32/api/shlwapi/nf-shlwapi-pathunquotespacesw)için aşırı yüklenmiş bir sarmalayıcıdır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -689,4 +689,4 @@ inline void UnquoteSpaces(wchar_t* pszPath);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [PathUnquoteSpaces](/windows/desktop/api/shlwapi/nf-shlwapi-pathunquotespacesa) Ayrıntılar için.
+Ayrıntılar için bkz. [PathUnquoteSpaces](/windows/win32/api/shlwapi/nf-shlwapi-pathunquotespacesw) .

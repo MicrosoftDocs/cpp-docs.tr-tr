@@ -26,16 +26,16 @@ helpviewer_keywords:
 - _mbtowc_l function
 - mbtowc_l function
 ms.assetid: dfd1c8a7-e73a-4307-9353-53b70b45d4d1
-ms.openlocfilehash: c02d1a636db75b4a26891a93fa20327b7430443d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 13ac8ad139cc12310663fbd23a21a461cd207236
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62156622"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69499723"
 ---
-# <a name="mbtowc-mbtowcl"></a>mbtowc, _mbtowc_l
+# <a name="mbtowc-_mbtowc_l"></a>mbtowc, _mbtowc_l
 
-Çok baytlı karakteri karşılık gelen bir geniş karakter dönüştürün.
+Çok baytlı bir karakteri karşılık gelen geniş bir karaktere dönüştürün.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -56,37 +56,37 @@ int _mbtowc_l(
 ### <a name="parameters"></a>Parametreler
 
 *wchar*<br/>
-Bir geniş karakter adresini (tür **wchar_t**).
+Geniş bir karakterin adresi (tür **wchar_t**).
 
 *mbchar*<br/>
-Bayt (bir çok baytlı karakter) sırasını adresi.
+Bir bayt dizisinin adresi (çok baytlı bir karakter).
 
-*Sayısı*<br/>
+*biriktirme*<br/>
 Denetlenecek bayt sayısı.
 
-*Yerel ayar*<br/>
+*ayarlar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Varsa **mbchar** değil **NULL** ve nesne, *mbchar* formları için geçerli bir çok baytlı karakter işaret **mbtowc** uzunluğunu döndürür çok baytlı karakterinin bayt. Varsa *mbchar* olduğu **NULL** veya işaret nesnesi geniş karakterli null karakteri (L '\0'), işlev 0 döndürür. Nesne, *mbchar* noktalarına geçerli çok baytlı bir karakterin ilk form değil *sayısı* karakterler, -1 döndürür.
+**Mbchar** **null** değilse ve *mbchar* 'ın geçerli bir çok baytlı karakter üzerinde işaret ettiği bir nesne ise **mbtowc** , çok baytlı karakterin bayt cinsinden uzunluğunu döndürür. *Mbchar* **null** ise veya işaret ettiği nesne geniş karakterli bir null karakterdir (L ' \ 0 '), işlev 0 döndürür. *Mbchar* 'ın işaret ettiği nesne ilk *sayı* karakterleri içinde geçerli bir çok baytlı karakter oluşturmuyor,-1 döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Mbtowc** işlev dönüştürür *sayısı* ya da daha az bayt işaret ettiği *mbchar*, *mbchar* değil **NULL**, karşılık gelen bir geniş karakter. **mbtowc** elde edilen geniş karakter konumunda depolar *wchar,* varsa *wchar* değil **NULL**. **mbtowc** değil inceleyin birden fazla **MB_CUR_MAX** bayt. **mbtowc** yerel ayara bağlı davranışı için; geçerli yerel ayarı kullanır **_mbtowc_l** bunun yerine iletilmiş yerel ayarı kullanması dışında aynıdır. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
+**Mbtowc** işlevi, mbchar **null**değilse, karşılık gelen genişbir karaktere, mbchar tarafından işaret edilen *sayıyı* veya daha az baytı dönüştürür. **mbtowc** , wchar **null**değilse, sonuçta elde edilen geniş karakteri *wchar* 'da depolar. **mbtowc** , **MB_CUR_MAX** bayttan fazlasını incelemez. **mbtowc** , yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır; **_mbtowc_l** , bunun yerine geçirilen yerel ayarı kullanması dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**mbtowc**|\<stdlib.h >|
-|**_mbtowc_l**|\<stdlib.h >|
+|**mbtowc**|\<Stdlib. h >|
+|**_mbtowc_l**|\<Stdlib. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 
-Tüm sürümleri [C çalışma zamanı kitaplıkları](../../c-runtime-library/crt-library-features.md).
+[C çalışma zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md)tüm sürümleri.
 
 ## <a name="example"></a>Örnek
 
@@ -147,7 +147,7 @@ Attempt to convert a NULL pointer to a wide character:
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Veri Dönüştürme](../../c-runtime-library/data-conversion.md)<br/>
-[MultiByteToWideChar](/windows/desktop/api/stringapiset/nf-stringapiset-multibytetowidechar)<br/>
+[MultiByteToWideChar](/windows/win32/api/stringapiset/nf-stringapiset-multibytetowidechar)<br/>
 [locale](../../c-runtime-library/locale.md)<br/>
 [Çok Baytlı Karakter Sıralarının Yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [_mbclen, mblen, _mblen_l](mbclen-mblen-mblen-l.md)<br/>

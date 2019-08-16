@@ -5,50 +5,50 @@ helpviewer_keywords:
 - ATL, reference
 - ATL, about ATL
 ms.assetid: 291f38d1-d2de-4687-86a9-99b4fd35706c
-ms.openlocfilehash: e1ee9364cfcd382c8699014fd2ef4a807b63bb0f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: dab865215a357a29be2ff1cd187ceb1c44af897c
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62223404"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69491884"
 ---
 # <a name="atl-com-desktop-components"></a>ATL COM Masaüstü bileşenleri
 
-Etkin Şablon kitaplığı (ATL), Bileşen Nesne Modeli (COM) nesneleri programlamayı kolaylaştıran şablon tabanlı C++ sınıfları kümesi ATL başvuru belgeleri. COM, oluşturma ve Windows üzerinde yazılım bileşenlerini kullanan bir ikili bir özelliğidir. ATL tam olarak yararlanmak için bir bilgiye sahip olunduğunu COM önemle tavsiye edilir. COM hakkında daha fazla bilgi için bkz: [Bileşen Nesne Modeli (COM)](/windows/desktop/com/component-object-model--com--portal).
+ATL başvurusu, bileşen nesne modeli (COM) nesnelerinin programlamayı kolaylaştıran bir dizi şablon tabanlı C++ sınıf olan etkin şablon kitaplığı 'Nı (ATL) belgeler. COM, Windows üzerinde yazılım bileşenleri oluşturmak ve kullanmak için ikili bir belirtimdir. ATL 'nin tamamen avantajlarından yararlanmak için, COM ile çalışan bir bilme önerilir. COM hakkında daha fazla bilgi için bkz. [bileşen nesne modeli (com)](/windows/win32/com/component-object-model--com--portal).
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
 [ATL Sınıfına Genel Bakış](../atl/atl-class-overview.md)<br/>
-Bağlantılar ve kısa açıklamaları kategorilere göre düzenlenmiş ATL sınıfları sağlar.
+Kategoriye göre düzenlenmiş ATL sınıflarının bağlantılarını ve kısa açıklamalarını sağlar.
 
 [ATL Sınıfları ve Yapıları](../atl/reference/atl-classes.md)<br/>
-Sınıflar ve yapılar alfabetik olarak düzenlenmiş başvuru malzemesi sağlar.
+Alfabetik olarak düzenlenmiş sınıflar ve yapılar üzerinde başvuru malzemesi sağlar.
 
 [ATL İşlevleri](../atl/reference/atl-functions.md)<br/>
-Alfabetik olarak düzenlenmiş genel işlevlerde başvuru malzemesi sağlar. İşlevler kategorilere göre düzenlemeye konularını içerir.
+Alfabetik olarak düzenlenmiş genel işlevlerde başvuru malzemesi sağlar. İşlevleri kategoriler halinde organize eden konuları içerir.
 
 [ATL Genel Değişkenler](../atl/reference/atl-global-variables.md)<br/>
-Alfabetik olarak düzenlenmiş genel değişkenlere başvuru malzemesi sağlar.
+Alfabetik olarak düzenlenmiş genel değişkenler üzerinde başvuru malzemesi sağlar.
 
 [ATL Makroları](../atl/reference/atl-macros.md)<br/>
-Alfabetik olarak düzenlenmiş makroları başvuru malzemesi sağlar. Makroları kategorilere göre düzenlemeye konularını içerir.
+Alfabetik olarak düzenlenmiş makrolar üzerinde başvuru malzemesi sağlar. Makroları kategoriler halinde düzenleme konularını içerir.
 
 [ATL Tür tanımları](../atl/reference/atl-typedefs.md)<br/>
-Alfabetik olarak düzenlenmiş tür tanımları üzerinde başvuru malzemesi sağlar
+Alfabetik olarak düzenlenmiş tür tanımları üzerinde başvuru malzemeleri sağlar
 
 [Çalışan Modeli](../atl/reference/worker-archetype.md)<br/>
-Bir ATL çalışan modeli bağlantılar sağlar.
+ATL Worker arşiv ETYPE için bir bağlantı sağlar.
 
 ## <a name="related-sections"></a>İlgili Bölümler
 
 [ATL](../atl/active-template-library-atl-concepts.md)<br/>
-Etkin Şablon kitaplığı (ATL) kullanarak programlama hakkında konuları sağlar.
+, Etkin şablon kitaplığı (ATL) ile programlama hakkında konular sağlar.
 
-[ATL öğretici](../atl/active-template-library-atl-tutorial.md)<br/>
-Bir denetimin oluşturulmasını müşteri adayları ve işleminde bazı ATL temelleri gösterir.
+[ATL öğreticisi](../atl/active-template-library-atl-tutorial.md)<br/>
+Bir denetim oluşturma işlemi boyunca size yol gösterir ve işlemdeki bazı ATL temellerini gösterir.
 
 [ATL örnekleri](../overview/visual-cpp-samples.md)<br/>
-ATL COM nesneleri yazmak için nasıl kullanılacağını gösteren örnek kodu.
+ATL 'nin COM nesneleri yazmak için nasıl kullanılacağını gösteren örnek kod.
 
 [OLE DB Şablonları](../data/oledb/ole-db-templates.md)<br/>
-OLE DB Tüketici ve sağlayıcı şablonları için başvuru materyalleri pek çok yaygın olarak kullanılan OLE DB arabirimi uygulayan bir şablon sınıf kümesi sağlar.
+Birçok yaygın olarak kullanılan OLE DB arabirimini uygulayan bir dizi şablon sınıfı olan OLE DB tüketicisi ve sağlayıcı şablonları için başvuru malzemeleri sağlar.

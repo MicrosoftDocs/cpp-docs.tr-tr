@@ -33,19 +33,19 @@ helpviewer_keywords:
 - mbsnbcpy_l function
 - tcsncpy function
 ms.assetid: 83d17b50-3cbf-4df9-bce8-3b6d52f85d04
-ms.openlocfilehash: 1f22e8066b5b32feef642b01ad82955935a450e4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9940146e46990c91a49478a0450d5ff489e51bc5
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62285580"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69499839"
 ---
-# <a name="mbsnbcpy-mbsnbcpyl"></a>_mbsnbcpy, _mbsnbcpy_l
+# <a name="_mbsnbcpy-_mbsnbcpy_l"></a>_mbsnbcpy, _mbsnbcpy_l
 
-Kopya **n** baytlık dizeyi hedef dizeye. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz [_mbsnbcpy_s, _mbsnbcpy_s_l](mbsnbcpy-s-mbsnbcpy-s-l.md).
+Bir dizenin **n** baytını bir hedef dizeye kopyalar. Bu işlevlerin daha güvenli sürümleri mevcuttur — bkz. [_mbsnbcpy_s, _mbsnbcpon_s_l](mbsnbcpy-s-mbsnbcpy-s-l.md).
 
 > [!IMPORTANT]
-> Bu API, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -79,53 +79,53 @@ unsigned char * _mbsnbcpy_l(
 ### <a name="parameters"></a>Parametreler
 
 *strDest*<br/>
-Kopyalanacak karakter dizesi için hedef.
+Kopyalanacak karakter dizesinin hedefi.
 
 *strSource*<br/>
 Kopyalanacak karakter dizesi.
 
-*Sayısı*<br/>
+*biriktirme*<br/>
 Kopyalanacak bayt sayısı.
 
-*Yerel ayar*<br/>
+*ayarlar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_mbsnbcpy** karakter hedef dizeye bir işaretçi döndürür. Dönüş değeri bir hatayı göstermek üzere ayrılmıştır.
+**_mbsnbcpy** , hedef karakter dizesine bir işaretçi döndürür. Bir hatayı göstermek için hiçbir dönüş değeri ayrılmadı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Mbsnbcpy** işlev kopyaları *sayısı* bayt *strSource* için *strDest*. Varsa *sayısı* boyutunu aşıyor *strDest* veya üst üste, davranışını kaynak ve hedef dizeleri **_mbsnbcpy** tanımsızdır.
+**_Mbsnbcpy** işlevi, *sayı* baytlarını *strSource* 'tan *strDest*öğesine kopyalar. *Sayım* , *strDest* boyutunu aşıyorsa veya kaynak ve hedef dizeleri örtüştürürse, **_mbsnbcpy** 'nin davranışı tanımsızdır.
 
-Varsa *strSource* veya *strDest* null bir işaretçiyse, bu işlev içinde açıklanan şekilde geçersiz parametre işleyicisi çağırır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse, işlev döndürür **NULL** ve ayarlar **errno** için **EINVAL**.
+*StrSource* veya *strDest* null bir işaretçisiyse, bu işlev [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, işlev **null** değerini döndürür ve **errno** 'ı **EINVAL**olarak ayarlar.
 
-Çıkış değeri ayarından etkilenir **LC_CTYPE** yerel ayarının kategori ayarına; bkz: [setlocale, _wsetlocale](setlocale-wsetlocale.md) daha fazla bilgi için. Bu işlevlerin sürümleri, dışında olmayan, aynıdır **_l** soneki geçerli yerel ayarı ve sahip olmayan sürümleri kullanan **_l** soneki, bunun yerine yerel ayar parametresini kullanın Bu geçirildi. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
+Çıkış değeri yerel ayarın **LC_CTYPE** kategori ayarı ayarından etkilenir; daha fazla bilgi için bkz. [setlocale, _wsetlocale](setlocale-wsetlocale.md) . Bu işlevlerin sürümleri aynıdır, çünkü **_l** sonekine sahip olmayanlar geçerli yerel ayarı kullanır ve bunun yerine **_l** sonekine sahip olan sürümler, geçirilen yerel ayar parametresini kullanır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
 > [!IMPORTANT]
-> Bu işlevler, arabellek taşma tehditlerine açık olabilir. Arabellek taşmaları, bir unwarranted ayrıcalık yükselmesine neden ve sistemden rastgele bir saldırgan kod yürütmek için kullanılabilir. Daha fazla bilgi için [arabellek taşmalarını](/windows/desktop/SecBP/avoiding-buffer-overruns).
+> Bu işlevler, arabellek taşma tehditlerine karşı savunmasız olabilir. Arabellek taşmaları, rasgele bir saldırgan kodu yürütmek için kullanılabilir, bu da garanti edilmemiş ayrıcalık yükselmesine neden olabilir ve sistemin güvenliğini tehlikeye atabilir. Daha fazla bilgi için bkz. [arabellek taşmalarını önleme](/windows/win32/SecBP/avoiding-buffer-overruns).
 
-C++'da, bu işlevler, bu işlevlerin daha yeni ve güvenli karşılıklarını çağırma şablon aşırı yüklemeleri vardır. Daha fazla bilgi için [güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
+' C++De, bu işlevlerde bu işlevlerin daha yeni ve daha güvenli bir şekilde çağrılmasını sağlayan şablon aşırı yüklemeleri vardır. Daha fazla bilgi için bkz. [Güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
 |Tchar.h yordamı|_UNICODE ve _MBCS tanımlanmaz|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|--------------------------------------|--------------------|-----------------------|
 |**_tcsncpy**|[strncpy](strncpy-strncpy-l-wcsncpy-wcsncpy-l-mbsncpy-mbsncpy-l.md)|**_mbsnbcpy**|[wcsncpy](strncpy-strncpy-l-wcsncpy-wcsncpy-l-mbsncpy-mbsncpy-l.md)|
-|**_tcsncpy_l**|**_strncpy_l**|**_mbsnbcp_l**|**_wcsncpy_l**|
+|**_tcsncpyı_l**|**_strncpyı_l**|**_mbsnbcp_l**|**_wcsncpy_l**|
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_mbsnbcpy**|\<Mbstring.h >|
-|**_mbsnbcpy_l**|\<Mbstring.h >|
+|**_mbsnbcpy**|\<mbstring. h >|
+|**_mbsnbcpy_l**|\<mbstring. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dize düzenlemesi](../../c-runtime-library/string-manipulation-crt.md)<br/>
+[Dize düzenleme](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [_mbsnbcat, _mbsnbcat_l](mbsnbcat-mbsnbcat-l.md)<br/>
 [_mbsnbcmp, _mbsnbcmp_l](mbsnbcmp-mbsnbcmp-l.md)<br/>
 [_strncnt, _wcsncnt, _mbsnbcnt, _mbsnbcnt_l, _mbsnccnt, _mbsnccnt_l](strncnt-wcsncnt-mbsnbcnt-mbsnbcnt-l-mbsnccnt-mbsnccnt-l.md)<br/>

@@ -1,5 +1,5 @@
 ---
-title: 'Çoklu iş parçacığı kullanımı: MFC programlama ipuçları'
+title: 'Çoklu iş parçacığı kullanımı: MFC programlama Ipuçları'
 ms.date: 08/27/2018
 helpviewer_keywords:
 - multithreading [C++], programming tips
@@ -16,48 +16,48 @@ helpviewer_keywords:
 - troubleshooting [C++], multithreading
 - Windows handle maps [C++]
 ms.assetid: ad14cc70-c91c-4c24-942f-13a75e58bf8a
-ms.openlocfilehash: e89d0d534638f7216f142bc3f86633a59b8b0ff7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: deaf53d7b337fd33214bbcc4567e73bd33345d49
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62212437"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69511722"
 ---
-# <a name="multithreading-mfc-programming-tips"></a>Çoklu iş parçacığı kullanımı: MFC programlama ipuçları
+# <a name="multithreading-mfc-programming-tips"></a>Çoklu iş parçacığı kullanımı: MFC programlama Ipuçları
 
-Çok iş parçacıklı uygulamalar tek iş parçacıklı uygulamaların operations hedeflenen sırayla birden çok iş parçacığı tarafından erişilebilen herhangi bir veri bozuk olmadığından emin olun ve daha büyük dikkat gerektirir. Bu konu, çok iş parçacıklı uygulamalarda Microsoft Foundation Class (MFC) kitaplığı programlama yaparken olası sorunları önleme teknikleri açıklar.
+Çok iş parçacıklı uygulamalar, işlemlerin amaçlanan sırada gerçekleşmesini sağlamak için tek iş parçacıklı uygulamalardan daha sıkı bir şekilde ihtiyaç duyar ve birden fazla iş parçacığı tarafından erişilen tüm veriler bozuk değildir. Bu konuda, Microsoft Foundation Class (MFC) kitaplığıyla çok iş parçacıklı uygulamaları programlarken olası sorunları önleme teknikleri açıklanmaktadır.
 
-- [Birden fazla iş parçacığından nesnelere erişme](#_core_accessing_objects_from_multiple_threads)
+- [Birden çok Iş parçacığından nesnelere erişme](#_core_accessing_objects_from_multiple_threads)
 
-- [MFC dışı iş parçacıklarından MFC nesnelere erişme](#_core_accessing_mfc_objects_from_non.2d.mfc_threads)
+- [MFC nesneleri MFC olmayan Iş parçacıklarından erişme](#_core_accessing_mfc_objects_from_non.2d.mfc_threads)
 
 - [Windows tanıtıcı eşlemeleri](#_core_windows_handle_maps)
 
-- [İş parçacıkları arasında iletişim kurma](#_core_communicating_between_threads)
+- [Iş parçacıkları arasında iletişim kurma](#_core_communicating_between_threads)
 
-##  <a name="_core_accessing_objects_from_multiple_threads"></a> Birden fazla iş parçacığından nesnelere erişme
+##  <a name="_core_accessing_objects_from_multiple_threads"></a>Birden çok Iş parçacığından nesnelere erişme
 
-MFC nesneleri kendileri tarafından iş parçacığı açısından güvenli değildir. MFC eşitleme sınıfları ve/veya uygun Win32 eşitleme nesneleri gibi kritik bölümler kullanmadığınız sürece, iki ayrı iş parçacığı aynı nesne kullanamazsınız. İlgili nesneler ve diğer kritik bölümleri hakkında daha fazla bilgi için bkz: [eşitleme](/windows/desktop/Sync/synchronization) Windows SDK.
+MFC nesneleri kendi kendine iş parçacığı güvenli değildir. MFC eşitleme sınıflarını ve/veya uygun Win32 eşitleme nesnelerini (örneğin, kritik bölümler) kullanmadığınız sürece iki ayrı iş parçacığı aynı nesneyi işleyebilir. Kritik bölümler ve diğer ilgili nesneler hakkında daha fazla bilgi için Windows SDK [eşitleme](/windows/win32/Sync/synchronization) konusuna bakın.
 
-Sınıf kitaplığı hata ayıklama bellek ayırma tarafından kullanılanlar gibi genel veri yapılarını korumak kritik bölümler dahili olarak kullanır.
+Sınıf kitaplığı, hata ayıklama belleği ayırma tarafından kullanılanlar gibi genel veri yapılarını korumak için önemli bölümleri dahili olarak kullanır.
 
-##  <a name="_core_accessing_mfc_objects_from_non.2d.mfc_threads"></a> MFC dışı iş parçacıklarından MFC nesnelere erişme
+##  <a name="_core_accessing_mfc_objects_from_non.2d.mfc_threads"></a>MFC nesneleri MFC olmayan Iş parçacıklarından erişme
 
-Kullanarak başka bir şekilde bir iş parçacığı oluşturan bir çok iş parçacıklı uygulamanız varsa bir [CWinThread](../mfc/reference/cwinthread-class.md) nesnesi, bu iş parçacığından diğer MFC nesneleri erişemiyor. Diğer bir deyişle, her MFC nesnesinin ikincil bir iş parçacığından erişmek istiyorsanız, açıklanan yöntemlerden biri ile bu iş parçacığı oluşturmalısınız [çoklu iş parçacığı kullanımı: Kullanıcı arabirimi iş parçacıkları oluşturma](multithreading-creating-user-interface-threads.md) veya [çoklu iş parçacığı kullanımı: Çalışan iş parçacıkları oluşturma](multithreading-creating-worker-threads.md). Bu yöntemler izin veren sınıf kitaplığının çok iş parçacıklı uygulamalar işlemek için gerekli iç değişkenlerini başlatmak yalnızca olanlardır.
+Bir iş parçacığını, bir [CWinThread](../mfc/reference/cwinthread-class.md) nesnesi kullanmaktan başka bir şekilde oluşturan çok iş parçacıklı bir uygulamanız varsa, o iş parçacığından diğer MFC nesnelerine erişemezsiniz. Diğer bir deyişle, ikincil bir iş parçacığından herhangi bir MFC nesnesine erişmek istiyorsanız, bu iş parçacığını Çoklu iş parçacığı bölümünde [açıklanan yöntemlerden biriyle oluşturmanız gerekir: Kullanıcı arabirimi iş parçacıkları](multithreading-creating-user-interface-threads.md) veya [çoklu iş parçacığı oluşturma: Çalışan Iş parçacıkları](multithreading-creating-worker-threads.md)oluşturuluyor. Bu yöntemler, sınıf kitaplığının çok iş parçacıklı uygulamaları işlemek için gerekli iç değişkenleri başlatmasını sağlayan tek alanlardır.
 
-##  <a name="_core_windows_handle_maps"></a> Windows tanıtıcı eşlemeleri
+##  <a name="_core_windows_handle_maps"></a>Windows tanıtıcı eşlemeleri
 
-Genel kural olarak, bir iş parçacığı oluşturan MFC nesneleri erişebilirsiniz. Bu durum, birden çok iş parçacığı erişimlerinden koruma sağlamak için iş parçacığı yerel depolama Windows tanıtıcı eşlemeleri geçici ve kalıcı tutulur çünkü. İş parçacığı gibi olamaz ve bir hesaplama gerçekleştirmek sonra belgenin çağrı `UpdateAllViews` değiştiren yeni verilerin görünümlerini içeren windows için üye işlevi. Bu, çünkü etkisizdir eşlemesinden `CWnd` Cwnd'lerden için nesneleri, birincil iş parçacığına yerel. Bu, tek bir iş parçacığı bir C++ nesnesi için bir Windows tanıtıcı eşlemeyi olabilir, ancak başka bir iş parçacığı için farklı bir C++ nesnesi aynı tanıtıcıyı eşleyebilir anlamına gelir. Bir iş parçacığında yapılan değişiklikler diğer yansıtılmaz.
+Genel bir kural olarak, bir iş parçacığı yalnızca oluşturduğu MFC nesnelerine erişebilir. Bunun nedeni, geçici ve kalıcı Windows tanıtıcı eşlemelerinin, iş parçacığı yerel depolama alanında birden çok iş parçacığından eşzamanlı erişimlerden korunmasını sağlamaya yardımcı olur. Örneğin, bir çalışan iş parçacığı bir hesaplama gerçekleştiremez ve sonra, değiştirilen yeni verilerde Görünümler `UpdateAllViews` içeren pencerelerin olması için bir belgenin üye işlevini çağırabilir. `CWnd` Nesnelerden HWND 'e olan eşleme birincil iş parçacığına yereldir çünkü bu, hiçbir etkiye sahip değildir. Bu, bir iş parçacığının bir Windows tanıtıcısından bir C++ nesneye eşleme olabileceği, ancak başka bir iş parçacığının aynı tanıtıcıyı farklı C++ bir nesneye eşleyebileceğiniz anlamına gelir. Bir iş parçacığında yapılan değişiklikler diğerine yansıtılmaz.
 
-Bu sorunu gidermek için birkaç yol vardır. İlk tek tek işler (örneğin, bir HWND) çalışan iş parçacığı C++ nesneleri yerine geçirmektir. Çalışan iş parçacığı ardından bu nesneleri geçici eşlemesine uygun çağırarak ekler `FromHandle` üye işlevi. Çağırarak iş parçacığının kalıcı haritaya nesne ekleyebilirsiniz `Attach`, ancak yalnızca nesne iş parçacığı artık mevcut garanti edilir, bunun yapılması gerekir.
+Bu sorunu çözmek için birkaç yol vardır. Birincisi, çalışan iş parçacığına C++ nesneler yerine bireysel TUTAMAÇLARı (HWND gibi) geçirmektir. Ardından çalışan iş parçacığı, ilgili `FromHandle` üye işlevini çağırarak bu nesneleri geçici eşlemesine ekler. Ayrıca, öğesini çağırarak `Attach`iş parçacığının kalıcı eşlemesine nesneyi ekleyebilirsiniz, ancak bu, yalnızca nesnenin iş parçacığından daha uzun bir süre var olacağını garanti ediyorsanız yapılmalıdır.
 
-Farklı görevler, çalışan iş parçacıkları gerçekleştirme ve uygulamanın ana pencere için bu ileti göndermek için karşılık gelen yeni kullanıcı tanımlı iletileri oluşturmak için başka bir yöntemdir kullanarak `::PostMessage`. Bu yöntem iletişim dışında her iki iş parçacığı aynı adres alanında yürütülen konuşmaya iki farklı uygulamalara benzerdir.
+Başka bir yöntem de çalışan iş parçacıklarından farklı görevlere karşılık gelen yeni kullanıcı tanımlı iletiler oluşturmaktır ve bu iletileri kullanarak `::PostMessage`uygulamanın ana penceresine nakleder. Bu iletişim yöntemi, her iki iş parçacığının de aynı adres alanında yürütülmesi dışında iki farklı uygulamaya benzer.
 
-Tanıtıcı eşlemeleri hakkında daha fazla bilgi için bkz. [Teknik Not 3](../mfc/tn003-mapping-of-windows-handles-to-objects.md). İş parçacığı yerel depolama hakkında daha fazla bilgi için bkz. [iş parçacığında yerel depolama](/windows/desktop/ProcThread/thread-local-storage) ve [kullanarak iş parçacığı yerel depolama](/windows/desktop/ProcThread/using-thread-local-storage) Windows SDK.
+Tanıtıcı haritaları hakkında daha fazla bilgi için bkz. [teknik notta 3](../mfc/tn003-mapping-of-windows-handles-to-objects.md). İş parçacığı yerel depolama hakkında daha fazla bilgi için bkz. [Iş parçacığı yerel depolama](/windows/win32/ProcThread/thread-local-storage) ve Windows SDK [Iş parçacığı yerel depolama kullanma](/windows/win32/ProcThread/using-thread-local-storage) .
 
-##  <a name="_core_communicating_between_threads"></a> İş parçacıkları arasında iletişim kurma
+##  <a name="_core_communicating_between_threads"></a>Iş parçacıkları arasında iletişim kurma
 
-MFC, birkaç iş parçacığı güvenliği sağlamak için nesnelere erişimi eşitlemek için iş parçacığı izin sınıflar sağlar. Bu sınıfların kullanımı, açıklanan [çoklu iş parçacığı kullanımı: Eşitleme sınıflarının nasıl kullanılacağını](multithreading-how-to-use-the-synchronization-classes.md) ve [çoklu iş parçacığı kullanımı: Zaman eşitleme sınıflarını kullanma](multithreading-when-to-use-the-synchronization-classes.md). Bu nesneler hakkında daha fazla bilgi için bkz: [eşitleme](/windows/desktop/Sync/synchronization) Windows SDK.
+MFC iş parçacıklarının iş parçacığı güvenliğini sürdürmek üzere nesnelere erişimi eşitlemesine izin veren bir dizi sınıf sağlar. Bu sınıfların kullanımı çoklu iş parçacığı bölümünde [açıklanmaktadır: Eşitleme sınıflarını](multithreading-how-to-use-the-synchronization-classes.md) ve [çoklu iş parçacığı kullanımını kullanma: Eşitleme sınıfları](multithreading-when-to-use-the-synchronization-classes.md)ne zaman kullanılır? Bu nesneler hakkında daha fazla bilgi için Windows SDK [eşitleme](/windows/win32/Sync/synchronization) konusuna bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

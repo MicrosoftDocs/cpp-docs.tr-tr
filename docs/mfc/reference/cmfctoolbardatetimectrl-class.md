@@ -48,16 +48,16 @@ helpviewer_keywords:
 - CMFCToolBarDateTimeCtrl [MFC], SetTime
 - CMFCToolBarDateTimeCtrl [MFC], SetTimeAll
 ms.assetid: a3853cb9-8ebc-444f-a1e4-9cf905e24c18
-ms.openlocfilehash: dfe1d3dc058371dd13cc335968b9c3a89e057da2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7ab6a240a403e70446ebc1860474f6cb9e1d71e3
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62218481"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69504768"
 ---
 # <a name="cmfctoolbardatetimectrl-class"></a>CMFCToolBarDateTimeCtrl sınıfı
 
-Bir tarih ve Saat Seçici denetimini içeren bir araç çubuğu düğmesi.
+Tarih ve saat seçici denetimi içeren bir araç çubuğu düğmesi.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -71,46 +71,46 @@ class CMFCToolBarDateTimeCtrl : public CMFCToolBarButton
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CMFCToolBarDateTimeCtrl::CMFCToolBarDateTimeCtrl](#cmfctoolbardatetimectrl)|Oluşturur bir `CMFCToolBarDateTimeCtrl` nesne.|
+|[CMFCToolBarDateTimeCtrl:: CMFCToolBarDateTimeCtrl](#cmfctoolbardatetimectrl)|Bir `CMFCToolBarDateTimeCtrl` nesnesi oluşturur.|
 |`CMFCToolBarDateTimeCtrl::~CMFCToolBarDateTimeCtrl`|Yıkıcı.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CMFCToolBarDateTimeCtrl::CanBeStretched](#canbestretched)|Bir kullanıcı, düğme özelleştirme sırasında esnetme olup olmadığını belirtir. (Geçersiz kılmaları [CMFCToolBarButton::CanBeStretched](../../mfc/reference/cmfctoolbarbutton-class.md#canbestretched).)|
-|[CMFCToolBarDateTimeCtrl::CopyFrom](#copyfrom)|Başka bir araç çubuğu düğmesi özelliklerini geçerli düğmeyi kopyalar. (Geçersiz kılmaları [CMFCToolBarButton::CopyFrom](../../mfc/reference/cmfctoolbarbutton-class.md#copyfrom).)|
+|[CMFCToolBarDateTimeCtrl:: Canbeesnetilen](#canbestretched)|Kullanıcının özelleştirme sırasında düğmeyi uzatılamayacağını belirtir. ( [CMFCToolBarButton:: Canbeesnei](../../mfc/reference/cmfctoolbarbutton-class.md#canbestretched)geçersiz kılar.)|
+|[CMFCToolBarDateTimeCtrl:: CopyFrom](#copyfrom)|Başka bir araç çubuğu düğmesinin özelliklerini geçerli düğmeye kopyalar. ( [CMFCToolBarButton:: CopyFrom](../../mfc/reference/cmfctoolbarbutton-class.md#copyfrom).)|
 |`CMFCToolBarDateTimeCtrl::DuplicateData`|Daha sonraki kullanımlar için ayrılmıştır.|
-|[CMFCToolBarButton::ExportToMenuButton](../../mfc/reference/cmfctoolbarbutton-class.md#exporttomenubutton)|Menüye araç çubuğu düğmesi metni kopyalar.|
-|`CMFCToolBarDateTimeCtrl::CreateObject`|Bu sınıf türünün dinamik bir örneğini oluşturmak için framework tarafından kullanılır.|
-|[CMFCToolBarDateTimeCtrl::GetByCmd](#getbycmd)|İlk alır `CMFCToolBarDateTimeCtrl` belirtilen komut kimliği olan bir uygulama nesnesi|
-|[CMFCToolBarDateTimeCtrl::GetDateTimeCtrl](#getdatetimectrl)|Tarih ve Saat Seçici denetimine bir işaretçi döndürür.|
-|[CMFCToolBarDateTimeCtrl::GetHwnd](#gethwnd)|Araç çubuğu düğmesi ile ilişkili olan bir pencere tutucu alır. (Geçersiz kılmaları [CMFCToolBarButton::GetHwnd](../../mfc/reference/cmfctoolbarbutton-class.md#gethwnd).)|
-|`CMFCToolBarDateTimeCtrl::GetThisClass`|Bir işaretçi alma için framework tarafından kullanılan [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) bu sınıfı türü ile ilişkilendirilmiş nesne.|
-|[CMFCToolBarDateTimeCtrl::GetTime](#gettime)|Bir tarih ve saat seçici denetimi seçili zaman alır ve belirtilen koyar [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) yapısı.|
-|[CMFCToolBarDateTimeCtrl::GetTimeAll](#gettimeall)|Saat Seçici denetimini düğmesinden belirtilen komut kimliği vardır. seçilen zamanda döndürür|
-|[CMFCToolBarDateTimeCtrl::HaveHotBorder](#havehotborder)|Bir kullanıcı bir düğmeyi seçtiğinde düğme bir kenarlık görüntülenip görüntülenmeyeceğini belirler. (Geçersiz kılmaları [CMFCToolBarButton::HaveHotBorder](../../mfc/reference/cmfctoolbarbutton-class.md#havehotborder).)|
-|[CMFCToolBarDateTimeCtrl::NotifyCommand](#notifycommand)|Düğme işler olup olmadığını belirtir [WM_COMMAND](/windows/desktop/menurc/wm-command) ileti. (Geçersiz kılmaları [CMFCToolBarButton::NotifyCommand](../../mfc/reference/cmfctoolbarbutton-class.md#notifycommand).)|
-|[CMFCToolBarDateTimeCtrl::OnAddToCustomizePage](#onaddtocustomizepage)|Framework tarafından düğmenin eklendiğinde çağırılır bir **Özelleştir** iletişim kutusu. (Geçersiz kılmaları [CMFCToolBarButton::OnAddToCustomizePage](../../mfc/reference/cmfctoolbarbutton-class.md#onaddtocustomizepage).)|
-|`CMFCToolBarDateTimeCtrl::OnCalculateSize`|Yerleştirme durumu ve belirtilen bir cihaz bağlamı için düğmenin boyutunu hesaplamak için framework tarafından çağırılır. (Geçersiz kılmaları [CMFCToolBarButton::OnCalculateSize](../../mfc/reference/cmfctoolbarbutton-class.md#oncalculatesize).)|
-|[CMFCToolBarDateTimeCtrl::OnChangeParentWnd](#onchangeparentwnd)|Yeni bir araç çubuğu düğmesi eklendiğinde framework tarafından çağırılır. (Geçersiz kılmaları [CMFCToolBarButton::OnChangeParentWnd](../../mfc/reference/cmfctoolbarbutton-class.md#onchangeparentwnd).)|
-|[CMFCToolBarDateTimeCtrl::OnClick](#onclick)|Kullanıcı denetime tıkladığında framework tarafından çağırılır. (Geçersiz kılmaları [CMFCToolBarButton::OnClick](../../mfc/reference/cmfctoolbarbutton-class.md#onclick).)|
-|[CMFCToolBarDateTimeCtrl::OnCtlColor](#onctlcolor)|Üst araç çubuğunda WM_CTLCOLOR iletisi işlediğinde framework tarafından çağırılır. (Geçersiz kılmaları [CMFCToolBarButton::OnCtlColor](../../mfc/reference/cmfctoolbarbutton-class.md#onctlcolor).)|
-|`CMFCToolBarDateTimeCtrl::OnDraw`|Belirtilen stillerini ve seçeneklerini kullanarak bir düğme çizmek için framework tarafından çağırılır. (Geçersiz kılmaları [CMFCToolBarButton::OnDraw](../../mfc/reference/cmfctoolbarbutton-class.md#ondraw).)|
-|`CMFCToolBarDateTimeCtrl::OnDrawOnCustomizeList`|Düğme çizim için framework tarafından çağırılır **komutları** bölmesinde **Özelleştir** iletişim kutusu. (Geçersiz kılmaları [CMFCToolBarButton::OnDrawOnCustomizeList](../../mfc/reference/cmfctoolbarbutton-class.md#ondrawoncustomizelist).)|
-|[CMFCToolBarDateTimeCtrl::OnGlobalFontsChanged](#onglobalfontschanged)|Genel yazı tipi değiştiğinde framework tarafından çağırılır. (Geçersiz kılmaları [CMFCToolBarButton::OnGlobalFontsChanged](../../mfc/reference/cmfctoolbarbutton-class.md#onglobalfontschanged).)|
-|[CMFCToolBarDateTimeCtrl::OnMove](#onmove)|Üst araç çubuğunda hareket ettiğinde framework tarafından çağırılır. (Geçersiz kılmaları [CMFCToolBarButton::OnMove](../../mfc/reference/cmfctoolbarbutton-class.md#onmove).)|
-|[CMFCToolBarDateTimeCtrl::OnShow](#onshow)|Düğme olduğunda görünür veya gizli framework tarafından çağırılır. (Geçersiz kılmaları [CMFCToolBarButton::OnShow](../../mfc/reference/cmfctoolbarbutton-class.md#onshow).)|
-|`CMFCToolBarDateTimeCtrl::OnSize`|Üst araç çubuğunda boyutunu değiştirir veya konumu ve bu değişiklik neden boyutunu değiştirmek düğmeyi framework tarafından çağırılır. (Geçersiz kılmaları [CMFCToolBarButton::OnSize](../../mfc/reference/cmfctoolbarbutton-class.md#onsize).)|
-|[CMFCToolBarDateTimeCtrl::OnUpdateToolTip](#onupdatetooltip)|Üst araç çubuğunda, araç ipucu metni güncelleştirdiğinde framework tarafından çağırılır. (Geçersiz kılmaları [CMFCToolBarButton::OnUpdateToolTip](../../mfc/reference/cmfctoolbarbutton-class.md#onupdatetooltip).)|
-|`CMFCToolBarDateTimeCtrl::Serialize`|Bu nesne bir arşivden okur veya arşive, yazar (geçersiz kılmaları [CMFCToolBarButton::Serialize](../../mfc/reference/cmfctoolbarbutton-class.md#serialize).)|
-|`CMFCToolBarDateTimeCtrl::SetStyle`|Araç çubuğu düğmesini stilini ayarlar. (Geçersiz kılmaları [CMFCToolBarButton::SetStyle](../../mfc/reference/cmfctoolbarbutton-class.md#setstyle).)|
-|[CMFCToolBarDateTimeCtrl::SetTime](#settime)|Tarih Saat Seçici denetiminde ayarlar.|
-|[CMFCToolBarDateTimeCtrl::SetTimeAll](#settimeall)|Tarih ve saat belirtilen komut kimliği olan tüm durumlarda saat seçici denetimi değerini ayarlar.|
+|[CMFCToolBarButton:: Exporttomenubtan](../../mfc/reference/cmfctoolbarbutton-class.md#exporttomenubutton)|Araç çubuğu düğmesinden bir menüye metin kopyalar.|
+|`CMFCToolBarDateTimeCtrl::CreateObject`|Framework tarafından bu sınıf türünün dinamik bir örneğini oluşturmak için kullanılır.|
+|[CMFCToolBarDateTimeCtrl:: GetByCmd](#getbycmd)|Uygulamadaki belirtilen komut `CMFCToolBarDateTimeCtrl` kimliğine sahip ilk nesneyi alır.|
+|[CMFCToolBarDateTimeCtrl:: GetDateTimeCtrl](#getdatetimectrl)|Tarih ve saat Seçici denetimine bir işaretçi döndürür.|
+|[CMFCToolBarDateTimeCtrl:: GetHwnd](#gethwnd)|Araç çubuğu düğmesiyle ilişkili pencere tanıtıcısını alır. ( [CMFCToolBarButton:: GetHwnd](../../mfc/reference/cmfctoolbarbutton-class.md#gethwnd).) öğesini geçersiz kılar|
+|`CMFCToolBarDateTimeCtrl::GetThisClass`|Bu sınıf türüyle ilişkili [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) nesnesine bir işaretçi almak için Framework tarafından kullanılır.|
+|[CMFCToolBarDateTimeCtrl:: GetTime](#gettime)|Tarih ve saat seçici denetiminden seçilen saati alır ve belirtilen bir [SystemTime](/windows/win32/api/minwinbase/ns-minwinbase-systemtime) yapısına koyar.|
+|[CMFCToolBarDateTimeCtrl:: GetTimeAll](#gettimeall)|Belirtilen komut KIMLIĞINE sahip olan zaman Seçicisi denetim düğmesinden seçilen saati döndürür.|
+|[CMFCToolBarDateTimeCtrl:: HaveHotBorder](#havehotborder)|Kullanıcı düğmeyi seçtiğinde düğme kenarlığının görüntülenip görüntülenmeyeceğini belirler. ( [CMFCToolBarButton:: HaveHotBorder](../../mfc/reference/cmfctoolbarbutton-class.md#havehotborder)geçersiz kılar.)|
+|[CMFCToolBarDateTimeCtrl:: NotifyCommand](#notifycommand)|Düğmenin [WM_COMMAND](/windows/win32/menurc/wm-command) iletisini işlemediğini belirtir. ( [CMFCToolBarButton:: NotifyCommand](../../mfc/reference/cmfctoolbarbutton-class.md#notifycommand).) öğesini geçersiz kılar|
+|[CMFCToolBarDateTimeCtrl:: OnAddToCustomizePage](#onaddtocustomizepage)|Düğme bir **Özelleştirme** iletişim kutusuna eklendiğinde Framework tarafından çağırılır. ( [CMFCToolBarButton:: OnAddToCustomizePage](../../mfc/reference/cmfctoolbarbutton-class.md#onaddtocustomizepage).) öğesini geçersiz kılar|
+|`CMFCToolBarDateTimeCtrl::OnCalculateSize`|Belirtilen cihaz bağlamı ve yerleştirme durumu için düğmenin boyutunu hesaplamak üzere Framework tarafından çağırılır. ( [CMFCToolBarButton:: OnCalculateSize](../../mfc/reference/cmfctoolbarbutton-class.md#oncalculatesize).) öğesini geçersiz kılar|
+|[CMFCToolBarDateTimeCtrl:: OnChangeParentWnd](#onchangeparentwnd)|Düğme yeni bir araç çubuğuna eklendiğinde Framework tarafından çağırılır. ( [CMFCToolBarButton:: OnChangeParentWnd](../../mfc/reference/cmfctoolbarbutton-class.md#onchangeparentwnd)geçersiz kılar.)|
+|[CMFCToolBarDateTimeCtrl:: OnClick](#onclick)|Kullanıcı denetime tıkladığında Framework tarafından çağırılır. ( [CMFCToolBarButton:: OnClick](../../mfc/reference/cmfctoolbarbutton-class.md#onclick)geçersiz kılar.)|
+|[CMFCToolBarDateTimeCtrl:: OnCtlColor](#onctlcolor)|Ana araç çubuğu bir WM_CTLCOLOR iletisini işlediğinde Framework tarafından çağırılır. ( [CMFCToolBarButton:: OnCtlColor](../../mfc/reference/cmfctoolbarbutton-class.md#onctlcolor).) öğesini geçersiz kılar|
+|`CMFCToolBarDateTimeCtrl::OnDraw`|Belirtilen stilleri ve seçenekleri kullanarak düğmeyi çizmek için Framework tarafından çağırılır. ( [CMFCToolBarButton:: OnDraw](../../mfc/reference/cmfctoolbarbutton-class.md#ondraw)geçersiz kılar.)|
+|`CMFCToolBarDateTimeCtrl::OnDrawOnCustomizeList`|**Özelleştirme** Iletişim kutusunun **Komutlar** bölmesinde düğme çizmek için Framework tarafından çağırılır. ( [CMFCToolBarButton:: OnDrawOnCustomizeList](../../mfc/reference/cmfctoolbarbutton-class.md#ondrawoncustomizelist).) öğesini geçersiz kılar|
+|[CMFCToolBarDateTimeCtrl:: OnGlobalFontsChanged](#onglobalfontschanged)|Genel yazı tipi değiştirildiğinde Framework tarafından çağırılır. ( [CMFCToolBarButton:: OnGlobalFontsChanged](../../mfc/reference/cmfctoolbarbutton-class.md#onglobalfontschanged)geçersiz kılınır.)|
+|[CMFCToolBarDateTimeCtrl:: OnMove](#onmove)|Ana araç çubuğu taşırken Framework tarafından çağırılır. ( [CMFCToolBarButton:: OnMove](../../mfc/reference/cmfctoolbarbutton-class.md#onmove)geçersiz kılar.)|
+|[CMFCToolBarDateTimeCtrl:: OnShow](#onshow)|Düğme görünür veya görünmez hale geldiğinde Framework tarafından çağırılır. ( [CMFCToolBarButton:: OnShow](../../mfc/reference/cmfctoolbarbutton-class.md#onshow).) öğesini geçersiz kılar|
+|`CMFCToolBarDateTimeCtrl::OnSize`|Ana araç çubuğu boyutunu veya konumunu değiştirdiğinde Framework tarafından çağırılır ve bu değişiklik düğmenin boyutunu değiştirmesine neden olur. ( [CMFCToolBarButton:: OnSize](../../mfc/reference/cmfctoolbarbutton-class.md#onsize)geçersiz kılar.)|
+|[CMFCToolBarDateTimeCtrl:: OnUpdateToolTip](#onupdatetooltip)|Ana araç çubuğu kendi araç ipucu metnini güncelleştirdiğinde Framework tarafından çağırılır. ( [CMFCToolBarButton:: OnUpdateToolTip](../../mfc/reference/cmfctoolbarbutton-class.md#onupdatetooltip)' i geçersiz kılar.)|
+|`CMFCToolBarDateTimeCtrl::Serialize`|Bu nesneyi bir arşivden okur veya bir arşive yazar, ( [CMFCToolBarButton:: Serialize](../../mfc/reference/cmfctoolbarbutton-class.md#serialize)geçersiz kılar)|
+|`CMFCToolBarDateTimeCtrl::SetStyle`|Araç çubuğu düğmesinin stilini ayarlar. ( [CMFCToolBarButton:: SetStyle](../../mfc/reference/cmfctoolbarbutton-class.md#setstyle)geçersiz kılar)|
+|[CMFCToolBarDateTimeCtrl:: SetTime](#settime)|Saat seçici denetimindeki saat ve tarihi ayarlar.|
+|[CMFCToolBarDateTimeCtrl:: SetTimeAll](#settimeall)|Belirli bir komut KIMLIĞINE sahip olan zaman seçici denetiminin tüm örneklerinde saat ve Tarih ayarlar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-ToolbarDateTimePicker örnek proje bir tarih ve Saat Seçici denetimini kullanma örneği için bkz. Araç çubuklarına denetimi düğmeleri ekleme hakkında daha fazla bilgi için bkz: [izlenecek yol: Araç çubuklarına denetimler yerleştirme](../../mfc/walkthrough-putting-controls-on-toolbars.md).
+Tarih ve saat seçici denetiminin nasıl kullanılacağına ilişkin bir örnek için, bkz. ToolbarDateTimePicker örnek projesi. Araç çubuklarına denetim düğmeleri ekleme hakkında daha fazla bilgi için bkz [. İzlenecek yol: Denetimleri araç çubuklarına](../../mfc/walkthrough-putting-controls-on-toolbars.md)yerleştirme.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -122,11 +122,11 @@ ToolbarDateTimePicker örnek proje bir tarih ve Saat Seçici denetimini kullanma
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxtoolbardatetimectrl.h
+**Üstbilgi:** afxtoolbardatetimectrl. h
 
-##  <a name="canbestretched"></a>  CMFCToolBarDateTimeCtrl::CanBeStretched
+##  <a name="canbestretched"></a>CMFCToolBarDateTimeCtrl:: Canbeesnetilen
 
-Bir kullanıcı, düğme özelleştirme sırasında esnetme olup olmadığını belirtir.
+Kullanıcının özelleştirme sırasında düğmeyi uzatılamayacağını belirtir.
 
 ```
 virtual BOOL CanBeStretched() const;
@@ -134,15 +134,15 @@ virtual BOOL CanBeStretched() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu yöntem, TRUE döndürür.
+Bu yöntem TRUE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, çerçeve sırasında özelleştirme araç çubuğu düğmesi uzatmak kullanıcı izin vermiyor. Temel sınıf uygulamasına bu yöntemin genişlettiği ( [CMFCToolBarButton::CanBeStretched](../../mfc/reference/cmfctoolbarbutton-class.md#canbestretched)) kullanıcının bir tarih ve saat araç çubuğu düğmesini özelleştirme sırasında esnetme sağlayarak.
+Varsayılan olarak, çerçeve özelleştirme sırasında kullanıcının bir araç çubuğu düğmesini uzamasına izin vermez. Bu yöntem, kullanıcının özelleştirme sırasında bir tarih ve saat araç çubuğu düğmesini genişlemesine izin vererek temel sınıf uygulamasını ( [CMFCToolBarButton:: Canbeesnetilmiş](../../mfc/reference/cmfctoolbarbutton-class.md#canbestretched)) genişletir.
 
-##  <a name="cmfctoolbardatetimectrl"></a>  CMFCToolBarDateTimeCtrl::CMFCToolBarDateTimeCtrl
+##  <a name="cmfctoolbardatetimectrl"></a>CMFCToolBarDateTimeCtrl:: CMFCToolBarDateTimeCtrl
 
-Oluşturur ve başlatır bir [CMFCToolBarDateTimeCtrl](../../mfc/reference/cmfctoolbardatetimectrl-class.md) nesne.
+[CMFCToolBarDateTimeCtrl](../../mfc/reference/cmfctoolbardatetimectrl-class.md) nesnesini oluşturur ve başlatır.
 
 ```
 CMFCToolBarDateTimeCtrl(
@@ -154,31 +154,31 @@ CMFCToolBarDateTimeCtrl(
 
 ### <a name="parameters"></a>Parametreler
 
-*uiID*<br/>
-[in] Denetim kimliği.
+*Uııd*<br/>
+'ndaki Denetim KIMLIĞI.
 
-*iImage*<br/>
-[in] Araç çubuğunun, görüntünün dizinini `CMFCToolBarImages` nesne.
+*IImage*<br/>
+'ndaki Araç çubuğunun `CMFCToolBarImages` nesnesindeki görüntünün dizini.
 
 *dwStyle*<br/>
-[in] Stilini `CMFCToolBarDateTimeCtrlImpl` pencere, kullanıcı düğmeye tıkladığında oluşturulur.
+'ndaki Kullanıcı düğmeye tıkladığında oluşturulan `CMFCToolBarDateTimeCtrlImpl` pencerenin stili.
 
-*iWidth*<br/>
-[in] Denetimin piksel cinsinden genişliği.
+*ıwidth*<br/>
+'ndaki Denetimin genişliği (piksel cinsinden).
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu nesne için sistem tarihi ve saati başlatılır. Pencere stili iç `CMFCToolBarDateTimeCtrlImpl` nesneyi içeren *dwStyle* parametresi ve WS_CHILD ve ws_vısıble stilleri. Bu stiller değiştiremezsiniz `CMFCToolBarDateTimeCtrl::SetStyle`. Kullanım `SetStyle` stilini değiştirmek için `CMFCToolBarDateTimeCtrl` denetimi.
+Bu nesne, sistem tarihi ve saatine göre başlatılır. İç `CMFCToolBarDateTimeCtrlImpl` nesnenin pencere stili, *dwStyle* parametresini ve WS_CHILD ve WS_VISIBLE stillerini içerir. Bu stilleri kullanarak `CMFCToolBarDateTimeCtrl::SetStyle`değiştiremezsiniz. Denetimin`CMFCToolBarDateTimeCtrl` stilini değiştirmek için kullanın `SetStyle` .
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, bir nesne oluşturmak gösterilmiştir `CMFCToolBarDateTimeCtrl` sınıfı. Bu kod parçacığı parçasıdır [araç tarih saat Seçici örnek](../../overview/visual-cpp-samples.md).
+Aşağıdaki örnek, `CMFCToolBarDateTimeCtrl` sınıfının bir nesnesinin nasıl oluşturulduğunu gösterir. Bu kod parçacığı, [araç çubuğu tarih saat seçici örneğinin](../../overview/visual-cpp-samples.md)bir parçasıdır.
 
 [!code-cpp[NVC_MFC_ToolbarDateTimePicker#1](../../mfc/reference/codesnippet/cpp/cmfctoolbardatetimectrl-class_1.cpp)]
 
-##  <a name="copyfrom"></a>  CMFCToolBarDateTimeCtrl::CopyFrom
+##  <a name="copyfrom"></a>CMFCToolBarDateTimeCtrl:: CopyFrom
 
-Başka bir araç çubuğu düğmesi özelliklerini geçerli düğmeyi kopyalar.
+Başka bir araç çubuğu düğmesinin özelliklerini geçerli düğmeye kopyalar.
 
 ```
 virtual void CopyFrom(const CMFCToolBarButton& src);
@@ -186,16 +186,16 @@ virtual void CopyFrom(const CMFCToolBarButton& src);
 
 ### <a name="parameters"></a>Parametreler
 
-*src*<br/>
-[in] Kopyalanacak kaynak düğmesini başvuru.
+*YN*<br/>
+'ndaki Kopyalanacak kaynak düğmesine bir başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu araç çubuğu düğmesi için başka bir araç çubuğu düğmesini kopyalama için bu yöntemi çağırın. *src* türünde olmalıdır `CMFCToolBarDateTimeCtrl`.
+Bu araç çubuğu düğmesine başka bir araç çubuğu düğmesi kopyalamak için bu yöntemi çağırın. *src* türünde `CMFCToolBarDateTimeCtrl`olmalıdır.
 
-##  <a name="exporttomenubutton"></a>  CMFCToolBarDateTimeCtrl::ExportToMenuButton
+##  <a name="exporttomenubutton"></a>CMFCToolBarDateTimeCtrl:: Exporttomenubtan
 
-Menüye araç çubuğu düğmesi metni kopyalar.
+Araç çubuğu düğmesinden bir menüye metin kopyalar.
 
 ```
 virtual BOOL ExportToMenuButton(CMFCToolBarMenuButton& menuButton) const;
@@ -203,20 +203,20 @@ virtual BOOL ExportToMenuButton(CMFCToolBarMenuButton& menuButton) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*MenuButton*<br/>
-[in] Hedef menü düğmesine bir başvuru.
+*menuButton*<br/>
+'ndaki Hedef menü düğmesine bir başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu yöntem, TRUE döndürür.
+Bu yöntem TRUE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Temel sınıf uygulamasına bu metodu geçersiz kılar ( [CMFCToolBarButton::ExportToMenuButton](../../mfc/reference/cmfctoolbarbutton-class.md#exporttomenubutton)) tarafından denetim komut kimliği ile ilişkili dize kaynağı yükleniyor. Dize kaynakları hakkında daha fazla bilgi için bkz: [CStringT::LoadString](../../atl-mfc-shared/reference/cstringt-class.md#loadstring).
+Bu yöntem, denetimin komut KIMLIĞIYLE ilişkili dize kaynağını yükleyerek temel sınıf uygulamasını ( [CMFCToolBarButton:: Exporttomenubtan](../../mfc/reference/cmfctoolbarbutton-class.md#exporttomenubutton)) geçersiz kılar. Dize kaynakları hakkında daha fazla bilgi için bkz. [CStringT:: LoadString](../../atl-mfc-shared/reference/cstringt-class.md#loadstring).
 
-##  <a name="getbycmd"></a>  CMFCToolBarDateTimeCtrl::GetByCmd
+##  <a name="getbycmd"></a>CMFCToolBarDateTimeCtrl:: GetByCmd
 
-İlk alır `CMFCToolBarDateTimeCtrl` belirtilen komut kimliği olan bir uygulama nesnesi
+Uygulamadaki belirtilen komut `CMFCToolBarDateTimeCtrl` kimliğine sahip ilk nesneyi alır.
 
 ```
 static CMFCToolBarDateTimeCtrl* __stdcall GetByCmd(UINT uiCmd);
@@ -224,20 +224,20 @@ static CMFCToolBarDateTimeCtrl* __stdcall GetByCmd(UINT uiCmd);
 
 ### <a name="parameters"></a>Parametreler
 
-*uiCmd*<br/>
-[in] Komut Kimliği Al düğmesi.
+*Uımd*<br/>
+'ndaki Alınacak düğmenin komut KIMLIĞI.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk `CMFCToolBarDateTimeCtrl` Hayır ise belirtilen komut kimliği veya boş olan uygulamayı nesnesinde `CMFCToolBarDateTimeCtrl` nesneler sahip belirtilen komut kimliği.
+Belirtilen komut `CMFCToolBarDateTimeCtrl` kimliğine sahip uygulamadaki ilk nesne veya belirtilen komut kimliğine sahip olmayan bir `CMFCToolBarDateTimeCtrl` nesne yoksa null.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu paylaşılan yardımcı yöntem gibi yöntemler tarafından kullanılan [CMFCToolBarDateTimeCtrl::SetTimeAll](#settimeall) ve [CMFCToolBarDateTimeCtrl::GetTimeAll](#gettimeall) ayarlayın veya zaman tüm örneklerinin tarih ve saat Belirtilen komut kimliğine sahip seçici denetimi
+Bu paylaşılan yardımcı program yöntemi, belirli bir komut KIMLIĞINE sahip olan zaman seçici denetiminin tüm örneklerinin saat ve tarihini ayarlamak veya almak için [CMFCToolBarDateTimeCtrl:: SetTimeAll](#settimeall) ve [CMFCToolBarDateTimeCtrl:: GetTimeAll](#gettimeall) gibi yöntemler tarafından kullanılır.
 
-##  <a name="getdatetimectrl"></a>  CMFCToolBarDateTimeCtrl::GetDateTimeCtrl
+##  <a name="getdatetimectrl"></a>CMFCToolBarDateTimeCtrl:: GetDateTimeCtrl
 
-Tarih ve Saat Seçici denetimine bir işaretçi döndürür.
+Tarih ve saat Seçici denetimine bir işaretçi döndürür.
 
 ```
 CDateTimeCtrl* GetDateTimeCtrl() const;
@@ -245,15 +245,15 @@ CDateTimeCtrl* GetDateTimeCtrl() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Tarih ve saat seçici denetimi için bir işaretçi; ya da denetimi mevcut değilse NULL.
+Tarih ve saat Seçici denetimine yönelik bir işaretçi; ya da denetim yoksa NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CMFCToolBarDateTimeCtrl` Sınıfı başlatır `m_pWndDateTime` eklediğinizde veri üyesi bir `CMFCToolBarDateTimeCtrl` nesnesine bir araç.
+Bir araç çubuğuna `CMFCToolBarDateTimeCtrl` nesne `m_pWndDateTime` eklediğinizde, sınıfveriüyesinibaşlatır.`CMFCToolBarDateTimeCtrl`
 
-##  <a name="gethwnd"></a>  CMFCToolBarDateTimeCtrl::GetHwnd
+##  <a name="gethwnd"></a>CMFCToolBarDateTimeCtrl:: GetHwnd
 
-Araç çubuğu düğmesi ile ilişkili olan bir pencere tutucu alır.
+Araç çubuğu düğmesiyle ilişkili pencere tanıtıcısını alır.
 
 ```
 virtual HWND GetHwnd();
@@ -261,15 +261,15 @@ virtual HWND GetHwnd();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Tarih ve saat araç çubuğu düğmesi ile ilişkili pencere tanıtıcısı.
+Tarih ve saat araç çubuğu düğmesiyle ilişkilendirilen pencere tutamacı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu metot geçersiz kılmaları [CMFCToolBarButton::GetHwnd](../../mfc/reference/cmfctoolbarbutton-class.md#gethwnd) yöntemi.
+Bu yöntem [CMFCToolBarButton:: GetHwnd](../../mfc/reference/cmfctoolbarbutton-class.md#gethwnd) metodunu geçersiz kılar.
 
-##  <a name="gettime"></a>  CMFCToolBarDateTimeCtrl::GetTime
+##  <a name="gettime"></a>CMFCToolBarDateTimeCtrl:: GetTime
 
-Seçilen zamanda ilişkili tarih ve Saat Seçici denetiminin alır ve belirtilen koyar [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) yapısı
+İlişkili tarih ve saat seçici denetiminden seçilen saati alır ve belirtilen bir [SystemTime](/windows/win32/api/minwinbase/ns-minwinbase-systemtime) yapısına koyar
 
 ```
 BOOL GetTime(COleDateTime& timeDest) const;
@@ -280,22 +280,22 @@ DWORD GetTime(LPSYSTEMTIME pTimeDest) const;
 ### <a name="parameters"></a>Parametreler
 
 *timeDest*<br/>
-[out] İlk aşırı yükleme içinde bir [COleDateTime sınıfı](../../atl-mfc-shared/reference/coledatetime-class.md) sistem saat bilgilerini alacak nesne. İkinci aşırı yükleme, bir [CTime](../../atl-mfc-shared/reference/ctime-class.md) sistem saat bilgilerini alacak nesne.
+dışı İlk aşırı yüklemede, sistem saati bilgilerini alacak bir [Coeldatetime sınıfı](../../atl-mfc-shared/reference/coledatetime-class.md) nesnesi. İkinci aşırı yüklemede, sistem saati bilgilerini alacak bir [CTime](../../atl-mfc-shared/reference/ctime-class.md) nesnesi.
 
 *pTimeDest*<br/>
-[out] Bir işaretçi [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) sistem saat bilgilerini almak için yapısı. NULL olmamalıdır.
+dışı Sistem saati bilgilerini almak için [SystemTime](/windows/win32/api/minwinbase/ns-minwinbase-systemtime) yapısına yönelik bir işaretçi. NULL olmamalıdır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk aşırı yükleme, zaman başarıyla yazılır, sıfır olmayan, [COleDateTime sınıfı](../../atl-mfc-shared/reference/coledatetime-class.md) nesne; Aksi durumda 0. İkinci ve üçüncü aşırı belirlenip dwFlag üye eşit olan bir DWORD dönüş değeri olduğu [NMDATETIMECHANGE](/windows/desktop/api/commctrl/ns-commctrl-tagnmdatetimechange) yapısı.
+İlk aşırı yüklemede, zaman [Colandatetime sınıfı](../../atl-mfc-shared/reference/coledatetime-class.md) nesnesine başarıyla yazılmışsa, sıfır dışında; Aksi takdirde 0. İkinci ve üçüncü aşırı yüklerde, dönüş değeri, [Nmdatetimechange](/windows/win32/api/commctrl/ns-commctrl-nmdatetimechange) yapısında ayarlanan dwFlag üyesine eşit olan bir DWORD değeridir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yöntem kümeleri [NMDATETIMECHANGE](/windows/desktop/api/commctrl/ns-commctrl-tagnmdatetimechange) yapı üyesi CertOpenStore tarih ve Saat Seçici bir tarih ve saat için ayarlanmış olup olmadığını belirtmek için. Değer GDT_NONE eşitse, denetimin kümesine `no date` durumu ve DTS_SHOWNONE stili kullanır. Döndürülen değer GDT_VALID eşitse, sistem saati başarıyla hedef konumda depolanır.
+Yöntemi, tarih ve saat seçicisinin tarih ve saat olarak ayarlandığını belirtmek için [Nmdatetimechange](/windows/win32/api/commctrl/ns-commctrl-nmdatetimechange) yapısı üye dwFlags değerini ayarlar. Değer GDT_NONE eşitse, Denetim `no date` Status olarak ayarlanır ve DTS_SHOWNONE stilini kullanır. Döndürülen değer GDT_VALID eşitse, sistem saati hedef konumda başarıyla depolanır.
 
-##  <a name="gettimeall"></a>  CMFCToolBarDateTimeCtrl::GetTimeAll
+##  <a name="gettimeall"></a>CMFCToolBarDateTimeCtrl:: GetTimeAll
 
-Belirtilen komut kimliğe sahip zaman seçici denetimi düğmesini kullanıcı tarafından seçilen noktaya döndürür
+Belirtilen komut KIMLIĞINE sahip olan zaman Seçicisi denetim düğmesinden Kullanıcı tarafından seçilen zamanı döndürür.
 
 ```
 static BOOL GetTimeAll(
@@ -313,26 +313,26 @@ static DWORD GetTimeAll(
 
 ### <a name="parameters"></a>Parametreler
 
-*uiCmd*<br/>
-[in] Bir araç çubuğu düğmesinin komut kimliğini belirtir.
+*Uımd*<br/>
+'ndaki Bir araç çubuğu düğmesinin komut KIMLIĞINI belirtir.
 
 *timeDest*<br/>
-[out] İlk aşırı yükleme içinde bir [COleDateTime sınıfı](../../atl-mfc-shared/reference/coledatetime-class.md) sistem saat bilgilerini alacak nesne. İkinci aşırı yükleme, bir [CTime](../../atl-mfc-shared/reference/ctime-class.md) sistem saat bilgilerini alacak nesne.
+dışı İlk aşırı yüklemede, sistem saati bilgilerini alacak bir [Coeldatetime sınıfı](../../atl-mfc-shared/reference/coledatetime-class.md) nesnesi. İkinci aşırı yüklemede, sistem saati bilgilerini alacak bir [CTime](../../atl-mfc-shared/reference/ctime-class.md) nesnesi.
 
 *pTimeDest*<br/>
-[out] Bir işaretçi [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) sistem saat bilgilerini almak için yapısı. NULL olmamalıdır.
+dışı Sistem saati bilgilerini almak için [SystemTime](/windows/win32/api/minwinbase/ns-minwinbase-systemtime) yapısına yönelik bir işaretçi. NULL olmamalıdır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Framework komut kimlik eşleştiren bir araç çubuğu düğmesi bulamazsanız *uiCmd*, ilk aşırı yükleme sıfır ve diğer aşırı yüklemeler de GDT_NONE değer döndürülür. Araç çubuğu düğmesini bulunursa, dönüş değeri bir çağrıdan dönüş değeri aynıdır [CMFCToolBarDateTimeCtrl::GetTime](#gettime) bu düğmesine. Dönüş değeri sıfır veya GDT_NONE düğmesi, olduğunu belirten bulunduğunda oluşabilir çağrısı `GetTime` diğer bir neden için geçerli bir tarih döndürmedi.
+Çerçeve, *Uıicmd*komut kimliğiyle eşleşen bir araç çubuğu düğmesi bulamazsa, ilk aşırı yüklemede döndürülen değer sıfırdır ve diğer aşırı yüklerde GDT_NONE. Araç çubuğu düğmesi bulunursa, dönüş değeri, Bu düğmedeki [CMFCToolBarDateTimeCtrl:: GetTime](#gettime) çağrısından gelen dönüş değeri ile aynıdır. Bir diğer nedenle geçerli bir tarih döndürmediğini belirten `GetTime` , düğme bulunduğunda sıfır veya GDT_NONE dönüş değeri oluşabilir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem çağrıları ve belirtilen komut kimliği olan bir araç çubuğu düğmesi görünür [CMFCToolBarDateTimeCtrl::GetTime](#gettime) bu düğmeyi yöntemi.
+Bu yöntem, belirtilen komut KIMLIĞINE sahip bir araç çubuğu düğmesine bakar ve bu düğme üzerinde [CMFCToolBarDateTimeCtrl:: GetTime](#gettime) yöntemini çağırır.
 
-##  <a name="havehotborder"></a>  CMFCToolBarDateTimeCtrl::HaveHotBorder
+##  <a name="havehotborder"></a>CMFCToolBarDateTimeCtrl:: HaveHotBorder
 
-Bir kullanıcı bir düğmeyi seçtiğinde düğme bir kenarlık görüntülenip görüntülenmeyeceğini belirler.
+Kullanıcı düğmeyi seçtiğinde düğme kenarlığının görüntülenip görüntülenmeyeceğini belirler.
 
 ```
 virtual BOOL HaveHotBorder() const;
@@ -340,15 +340,15 @@ virtual BOOL HaveHotBorder() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir düğme seçildiğinde kenarlığını görüntüler olursa sıfır dışı; Aksi durumda 0.
+Seçili olduğunda bir düğme kenarlığını görüntülüyorsa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Denetimin görünür olması halinde bu yöntem, sıfır olmayan bir değer döndürür.
+Bu yöntem, denetim görünür durumdaysa sıfır dışında bir değer döndürür.
 
-##  <a name="notifycommand"></a>  CMFCToolBarDateTimeCtrl::NotifyCommand
+##  <a name="notifycommand"></a>CMFCToolBarDateTimeCtrl:: NotifyCommand
 
-Düğme işler olup olmadığını belirtir [WM_COMMAND](/windows/desktop/menurc/wm-command) ileti.
+Düğmenin [WM_COMMAND](/windows/win32/menurc/wm-command) iletisini işlemediğini belirtir.
 
 ```
 virtual BOOL NotifyCommand(int iNotifyCode);
@@ -357,21 +357,21 @@ virtual BOOL NotifyCommand(int iNotifyCode);
 ### <a name="parameters"></a>Parametreler
 
 *iNotifyCode*<br/>
-[in] Komutu ile ilişkili bir uyarı iletisi.
+'ndaki Komutuyla ilişkili bildirim iletisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-WM_COMMAND ileti veya yanlış ileti üst araç tarafından ele alınması gerektiğini göstermek için düğmeyi işler TRUE.
+Düğme WM_COMMAND iletisini işliyorsa TRUE, iletinin üst araç çubuğu tarafından işlenmesi gerektiğini belirtmek için FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Göndermek üzere olduğunda framework bu yöntemi çağıran bir [WM_COMMAND](/windows/desktop/menurc/wm-command) üst penceresine ileti.
+Framework, ana pencereye bir [WM_COMMAND](/windows/win32/menurc/wm-command) iletisi göndermek üzere olduğunda bu yöntemi çağırır.
 
-Temel sınıf uygulamasına bu yöntemin genişlettiği ( [CMFCToolBarButton::NotifyCommand](../../mfc/reference/cmfctoolbarbutton-class.md#notifycommand)) işleme tarafından [dtn_datetımechange](/windows/desktop/Controls/dtn-datetimechange) bildirim. İç zaman durumunu güncelleştirir ve tüm zaman özellik güncelleştirmeleri `CMFCToolBarDateTimeCtrl` nesnelerle aynı komut kimliği.
+Bu yöntem, [DTN_DATETIMECHANGE](/windows/win32/Controls/dtn-datetimechange) bildirimini işleyerek temel sınıf uygulamasını ( [CMFCToolBarButton:: NotifyCommand](../../mfc/reference/cmfctoolbarbutton-class.md#notifycommand)) genişletir. İç zaman durumunu güncelleştirir ve aynı komut kimlikli tüm `CMFCToolBarDateTimeCtrl` nesnelerin saat özelliğini günceller.
 
-##  <a name="onaddtocustomizepage"></a>  CMFCToolBarDateTimeCtrl::OnAddToCustomizePage
+##  <a name="onaddtocustomizepage"></a>CMFCToolBarDateTimeCtrl:: OnAddToCustomizePage
 
-Framework tarafından düğmenin eklendiğinde çağırılır bir **Özelleştir** iletişim kutusu.
+Düğme bir **Özelleştirme** iletişim kutusuna eklendiğinde Framework tarafından çağırılır.
 
 ```
 virtual void OnAddToCustomizePage();
@@ -379,13 +379,13 @@ virtual void OnAddToCustomizePage();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Temel sınıf uygulamasına bu yöntemin genişlettiği [CMFCToolBarButton::OnAddToCustomizePage](../../mfc/reference/cmfctoolbarbutton-class.md#onaddtocustomizepage), göre ilk tarihten özelliklerini kopyalama ve bu nesneninkiyle aynı komutu Kimliğine sahip herhangi bir araç çubuğu denetiminde zaman. Bu yöntem, hiçbir araç bu nesneninkiyle aynı komut kimliği olan bir tarih ve saat denetim varsa, hiçbir şey yapmaz.
+Bu yöntem, bu nesneyle aynı komut KIMLIĞINE sahip herhangi bir araç çubuğundaki ilk tarih ve saat denetiminden özellikleri kopyalayarak, [CMFCToolBarButton:: OnAddToCustomizePage](../../mfc/reference/cmfctoolbarbutton-class.md#onaddtocustomizepage)temel sınıf uygulamasını genişletir. Hiçbir araç çubuğu bu nesneyle aynı komut KIMLIĞINE sahip bir tarih ve saat denetimine sahip değilse, bu yöntem hiçbir şey yapmaz.
 
-Hakkında daha fazla bilgi için **Özelleştir** iletişim kutusu, bkz: [CMFCToolBarsCustomizeDialog sınıfı](../../mfc/reference/cmfctoolbarscustomizedialog-class.md).
+**Özelleştirme** iletişim kutusu hakkında daha fazla bilgi için bkz. [CMFCToolBarsCustomizeDialog Class](../../mfc/reference/cmfctoolbarscustomizedialog-class.md).
 
-##  <a name="onchangeparentwnd"></a>  CMFCToolBarDateTimeCtrl::OnChangeParentWnd
+##  <a name="onchangeparentwnd"></a>CMFCToolBarDateTimeCtrl:: OnChangeParentWnd
 
-Yeni bir araç çubuğu düğmesi eklendiğinde framework tarafından çağırılır.
+Düğme yeni bir araç çubuğuna eklendiğinde Framework tarafından çağırılır.
 
 ```
 virtual void OnChangeParentWnd(CWnd* pWndParent);
@@ -394,15 +394,15 @@ virtual void OnChangeParentWnd(CWnd* pWndParent);
 ### <a name="parameters"></a>Parametreler
 
 *pWndParent*<br/>
-[in] Yeni üst pencere.
+'ndaki Yeni üst pencere.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Temel sınıf uygulamasına bu metodu geçersiz kılar ( [CMFCToolBarButton::OnChangeParentWnd](../../mfc/reference/cmfctoolbarbutton-class.md#onchangeparentwnd)) iç yeniden tarafından `CMFCToolBarDateTimeCtrlImpl` nesne.
+Bu yöntem, iç `CMFCToolBarDateTimeCtrlImpl` nesneyi yeniden oluşturarak temel sınıf uygulamasını ( [CMFCToolBarButton:: OnChangeParentWnd](../../mfc/reference/cmfctoolbarbutton-class.md#onchangeparentwnd)) geçersiz kılar.
 
-##  <a name="onclick"></a>  CMFCToolBarDateTimeCtrl::OnClick
+##  <a name="onclick"></a>CMFCToolBarDateTimeCtrl:: OnClick
 
-Kullanıcı denetime tıkladığında framework tarafından çağırılır.
+Kullanıcı denetime tıkladığında Framework tarafından çağırılır.
 
 ```
 virtual BOOL OnClick(
@@ -413,22 +413,22 @@ virtual BOOL OnClick(
 ### <a name="parameters"></a>Parametreler
 
 *pWnd*<br/>
-[in] Kullanılmayan.
+'ndaki Kullanılmayan.
 
 *bDelay*<br/>
-[in] Kullanılmayan.
+'ndaki Kullanılmayan.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Düğmenin click iletiyi işler olursa sıfır dışı; Aksi durumda 0.
+Düğme tıklama iletisini işliyorsa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Temel sınıf uygulamasına bu metodu geçersiz kılar [CMFCToolBarButton::OnClick](../../mfc/reference/cmfctoolbarbutton-class.md#onclick), sıfır dışında bir değeri varsa döndürerek iç `CMFCToolBarDateTimeCtrlImpl` nesne görünür.
+Bu yöntem, iç `CMFCToolBarDateTimeCtrlImpl` nesne görünür durumdaysa sıfır dışında bir değer döndürerek, [CMFCToolBarButton:: OnClick](../../mfc/reference/cmfctoolbarbutton-class.md#onclick)temel sınıf uygulamasını geçersiz kılar.
 
-##  <a name="onctlcolor"></a>  CMFCToolBarDateTimeCtrl::OnCtlColor
+##  <a name="onctlcolor"></a>CMFCToolBarDateTimeCtrl:: OnCtlColor
 
-Üst araç çubuğunda WM_CTLCOLOR iletisi işlediğinde framework tarafından çağırılır.
+Ana araç çubuğu bir WM_CTLCOLOR iletisini işlediğinde Framework tarafından çağırılır.
 
 ```
 virtual HBRUSH OnCtlColor(
@@ -438,25 +438,25 @@ virtual HBRUSH OnCtlColor(
 
 ### <a name="parameters"></a>Parametreler
 
-*pDC*<br/>
-[in] Düğme görüntüler cihaz bağlamı.
+*Kökündeki*<br/>
+'ndaki Düğmeyi görüntüleyen cihaz bağlamı.
 
 *nCtlColor*<br/>
-[in] Kullanılmayan.
+'ndaki Kullanılmayan.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Düğmenin arka plan boyama için framework kullanan genel fırçasına tanıtıcı.
+Düğmenin arka planını boyamak için çerçevenin kullandığı küresel fırçaya yönelik bir tanıtıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Temel sınıf uygulamasına bu metodu geçersiz kılar [CMFCToolBarButton::OnCtlColor](../../mfc/reference/cmfctoolbarbutton-class.md#onctlcolor), göre metin ayarlama ve arka plan genel metin için sağlanan cihaz bağlamının renkleri ve arka plan renklerini, sırasıyla.
+Bu yöntem, belirtilen cihaz bağlamının metin ve arka plan renklerini sırasıyla genel metin ve arka plan renkleriyle ayarlayarak [CMFCToolBarButton:: OnCtlColor](../../mfc/reference/cmfctoolbarbutton-class.md#onctlcolor)temel sınıf uygulamasını geçersiz kılar.
 
-Uygulamanız için mevcut olan genel seçenekleri hakkında daha fazla bilgi için bkz. [AFX_GLOBAL_DATA yapısı](../../mfc/reference/afx-global-data-structure.md).
+Uygulamanız için kullanılabilen genel seçenekler hakkında daha fazla bilgi için bkz. [AFX_GLOBAL_DATA yapısı](../../mfc/reference/afx-global-data-structure.md).
 
-##  <a name="onglobalfontschanged"></a>  CMFCToolBarDateTimeCtrl::OnGlobalFontsChanged
+##  <a name="onglobalfontschanged"></a>CMFCToolBarDateTimeCtrl:: OnGlobalFontsChanged
 
-Genel yazı tipi değiştiğinde framework tarafından çağırılır.
+Genel yazı tipi değiştirildiğinde Framework tarafından çağırılır.
 
 ```
 virtual void OnGlobalFontsChanged();
@@ -464,13 +464,13 @@ virtual void OnGlobalFontsChanged();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Temel sınıf uygulamasına bu yöntemin genişlettiği ( [CMFCToolBarButton::OnGlobalFontsChanged](../../mfc/reference/cmfctoolbarbutton-class.md#onglobalfontschanged)) genel yazı tipini, yazı tipini denetimi değiştirerek.
+Bu yöntem, denetimin yazı tipini genel yazı tipi ile değiştirerek temel sınıf uygulamasını ( [CMFCToolBarButton:: OnGlobalFontsChanged](../../mfc/reference/cmfctoolbarbutton-class.md#onglobalfontschanged)) genişletir.
 
-Uygulamanız için mevcut olan genel seçenekleri hakkında daha fazla bilgi için bkz. [AFX_GLOBAL_DATA yapısı](../../mfc/reference/afx-global-data-structure.md).
+Uygulamanız için kullanılabilen genel seçenekler hakkında daha fazla bilgi için bkz. [AFX_GLOBAL_DATA yapısı](../../mfc/reference/afx-global-data-structure.md).
 
-##  <a name="onmove"></a>  CMFCToolBarDateTimeCtrl::OnMove
+##  <a name="onmove"></a>CMFCToolBarDateTimeCtrl:: OnMove
 
-Üst araç çubuğunda hareket ettiğinde framework tarafından çağırılır.
+Ana araç çubuğu taşırken Framework tarafından çağırılır.
 
 ```
 virtual void OnMove();
@@ -478,11 +478,11 @@ virtual void OnMove();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan sınıf uygulamasını bu metodu geçersiz kılar ( [CMFCToolBarButton::OnMove](../../mfc/reference/cmfctoolbarbutton-class.md#onmove)) iç konumunu güncelleştirerek `CMFCToolBarDateTimeCtrlImpl` nesne.
+Bu yöntem, iç `CMFCToolBarDateTimeCtrlImpl` nesnenin konumunu güncelleştirerek varsayılan sınıf uygulamasını ( [CMFCToolBarButton:: OnMove](../../mfc/reference/cmfctoolbarbutton-class.md#onmove)) geçersiz kılar.
 
-##  <a name="onshow"></a>  CMFCToolBarDateTimeCtrl::OnShow
+##  <a name="onshow"></a>CMFCToolBarDateTimeCtrl:: OnShow
 
-Düğme olduğunda görünür veya gizli framework tarafından çağırılır.
+Düğme görünür veya görünmez hale geldiğinde Framework tarafından çağırılır.
 
 ```
 virtual void OnShow(BOOL bShow);
@@ -490,16 +490,16 @@ virtual void OnShow(BOOL bShow);
 
 ### <a name="parameters"></a>Parametreler
 
-*bBilgi Göster*<br/>
-[in] Düğmenin görünür olup olmadığını belirtir. Bu parametre TRUE ise, düğmeyi görülebilir. Aksi halde düğme görünür değil.
+*bShow*<br/>
+'ndaki Düğmenin görünür olup olmadığını belirtir. Bu parametre TRUE ise, düğme görünür olur. Aksi takdirde, düğme görünür değildir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Temel sınıf uygulamasına bu yöntemin genişlettiği ( [CMFCToolBarButton::OnShow](../../mfc/reference/cmfctoolbarbutton-class.md#onshow)), düğmeyi görüntüleyerek *bBilgi Göster* true'dur. Aksi takdirde, bu yöntem düğmesi gizlenir.
+Bu yöntem, *BSHOW* true ise düğmeyi görüntüleyerek temel sınıf uygulamasını ( [CMFCToolBarButton:: OnShow](../../mfc/reference/cmfctoolbarbutton-class.md#onshow)) genişletir. Aksi takdirde, bu yöntem düğmeyi gizler.
 
-##  <a name="onsize"></a>  CMFCToolBarDateTimeCtrl::OnSize
+##  <a name="onsize"></a>CMFCToolBarDateTimeCtrl:: OnSize
 
-Üst araç çubuğunda boyutunu değiştirir veya konumu ve bu değişiklik neden boyutunu değiştirmek düğmeyi framework tarafından çağırılır.
+Ana araç çubuğu boyutunu veya konumunu değiştirdiğinde Framework tarafından çağırılır ve bu değişiklik düğmenin boyutunu değiştirmesine neden olur.
 
 ```
 virtual void OnSize(int iSize);
@@ -508,15 +508,15 @@ virtual void OnSize(int iSize);
 ### <a name="parameters"></a>Parametreler
 
 *iSize*<br/>
-[in] Yeni piksel cinsinden düğmenin genişliği.
+'ndaki Düğmenin piksel cinsinden yeni genişliği.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan sınıf uygulamasını bu metodu geçersiz kılar ( [CMFCToolBarButton::OnSize](../../mfc/reference/cmfctoolbarbutton-class.md#onsize)) boyutunu ve konumunu iç güncelleştirerek `CMFCToolBarDateTimeCtrlImpl` nesne.
+Bu yöntem, iç `CMFCToolBarDateTimeCtrlImpl` nesnenin boyutunu ve konumunu güncelleştirerek varsayılan sınıf uygulamasını ( [CMFCToolBarButton:: OnSize](../../mfc/reference/cmfctoolbarbutton-class.md#onsize)) geçersiz kılar.
 
-##  <a name="onupdatetooltip"></a>  CMFCToolBarDateTimeCtrl::OnUpdateToolTip
+##  <a name="onupdatetooltip"></a>CMFCToolBarDateTimeCtrl:: OnUpdateToolTip
 
-Üst araç çubuğunda, araç ipucu metni güncelleştirdiğinde framework tarafından çağırılır.
+Ana araç çubuğu kendi araç ipucu metnini güncelleştirdiğinde Framework tarafından çağırılır.
 
 ```
 virtual BOOL OnUpdateToolTip(
@@ -529,28 +529,28 @@ virtual BOOL OnUpdateToolTip(
 ### <a name="parameters"></a>Parametreler
 
 *pWndParent*<br/>
-[in] Üst pencere.
+'ndaki Üst pencere.
 
-*iButtonIndex*<br/>
-[in] Düğmenin üst düğme koleksiyondaki sıfır tabanlı dizini.
+*ıbuttonındex*<br/>
+'ndaki Ana düğme koleksiyonundaki düğmenin sıfır tabanlı dizini.
 
 *wndToolTip*<br/>
-[in] Araç ipucu metnini görüntüleyen denetim.
+'ndaki Araç ipucu metnini görüntüleyen denetim.
 
-*str*<br/>
-[out] A `CString` güncelleştirilmiş araç ipucunu alan nesnesi.
+*üstbilgisine*<br/>
+dışı Güncelleştirilmiş araç ipucu metnini alan nesne.`CString`
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Araç İpucu metni yöntemi güncelleştirmeleri olursa sıfır dışı; Aksi durumda 0.
+Yöntem araç ipucu metnini güncelleştirse sıfır dışında; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Temel sınıf uygulamasına bu yöntemin genişlettiği ( [CMFCToolBarButton::OnUpdateToolTip](../../mfc/reference/cmfctoolbarbutton-class.md#onupdatetooltip)) görüntüleyerek düğmesi ile ilişkili olan araç ipucu metni. Düğmenin yatay olarak yuvalanmış değilse bu yöntem, hiçbir şey yapmaz ve false değerini döndürür.
+Bu yöntem, düğme ile ilişkili araç ipucu metnini görüntüleyerek temel sınıf uygulamasını ( [CMFCToolBarButton:: OnUpdateToolTip](../../mfc/reference/cmfctoolbarbutton-class.md#onupdatetooltip)) genişletir. Düğme yatay olarak yerleştirilmemişse, bu yöntem hiçbir şey yapmaz ve FALSE döndürür.
 
-##  <a name="settime"></a>  CMFCToolBarDateTimeCtrl::SetTime
+##  <a name="settime"></a>CMFCToolBarDateTimeCtrl:: SetTime
 
-Tarih Saat Seçici denetiminde ayarlar.
+Saat seçici denetimindeki saat ve tarihi ayarlar.
 
 ```
 BOOL SetTime(const COleDateTime& timeNew);
@@ -560,23 +560,23 @@ BOOL SetTime(LPSYSTEMTIME pTimeNew=NULL);
 
 ### <a name="parameters"></a>Parametreler
 
-*timeNew*<br/>
-[in] İlk sürümünde, bir başvuru bir [COleDateTime sınıfı](../../atl-mfc-shared/reference/coledatetime-class.md) için Denetim ayarlanacak zaman içeren nesne. İkinci sürümünde, bir işaretçi bir [CTime](../../atl-mfc-shared/reference/ctime-class.md) olduğu denetim ayarlanacak zaman içeren nesne.
+*Timeneni*<br/>
+'ndaki İlk sürümde, denetimin ayarlanacağı saati içeren bir [Colandatetime sınıfı](../../atl-mfc-shared/reference/coledatetime-class.md) nesnesine bir başvuru. İkinci sürümde, denetimin ayarlanacağı saati içeren bir [CTime](../../atl-mfc-shared/reference/ctime-class.md) nesnesine yönelik bir işaretçi.
 
-*pTimeNew*<br/>
-[in] Bir işaretçi [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) için Denetim ayarlanacak zamanı içeren yapısı.
+*Ptimeneni*<br/>
+'ndaki Denetimin ayarlanacağı saati içeren [SystemTime](/windows/win32/api/minwinbase/ns-minwinbase-systemtime) yapısına yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi durumda 0.
+Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağırarak bir tarih ve Saat Seçici denetiminde süreyi ayarlar [CDateTimeCtrl::SetTime](../../mfc/reference/cdatetimectrl-class.md#settime).
+Bir tarih ve saat seçici denetimindeki süreyi [CDateTimeCtrl:: setTime](../../mfc/reference/cdatetimectrl-class.md#settime)çağırarak ayarlar.
 
-##  <a name="settimeall"></a>  CMFCToolBarDateTimeCtrl::SetTimeAll
+##  <a name="settimeall"></a>CMFCToolBarDateTimeCtrl:: SetTimeAll
 
-Tarih ve saat belirtilen komut kimliği olan tüm durumlarda saat seçici denetimi değerini ayarlar.
+Belirli bir komut KIMLIĞINE sahip olan zaman seçici denetiminin tüm örneklerinde saat ve Tarih ayarlar.
 
 ```
 static BOOL SetTimeAll(
@@ -594,26 +594,26 @@ static BOOL SetTimeAll(
 
 ### <a name="parameters"></a>Parametreler
 
-*uiCmd*<br/>
-[in] Bir araç çubuğu düğmesinin komut kimliğini belirtir.
+*Uımd*<br/>
+'ndaki Bir araç çubuğu düğmesinin komut KIMLIĞINI belirtir.
 
-*timeNew*<br/>
-[in] İlk sürümünde, bir [COleDateTime sınıfı](../../atl-mfc-shared/reference/coledatetime-class.md) için Denetim ayarlanacak zaman içeren nesne. İkinci sürümünde, bir işaretçi bir [CTime](../../atl-mfc-shared/reference/ctime-class.md) olduğu denetim ayarlanacak zaman içeren nesne.
+*Timeneni*<br/>
+'ndaki İlk sürümde, denetimin ayarlanacağı saati içeren bir [Copadatetime sınıfı](../../atl-mfc-shared/reference/coledatetime-class.md) nesnesi. İkinci sürümde, denetimin ayarlanacağı saati içeren bir [CTime](../../atl-mfc-shared/reference/ctime-class.md) nesnesine yönelik bir işaretçi.
 
-*pTimeNew*<br/>
-[in] Bir işaretçi [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) için Denetim ayarlanacak zamanı içeren yapısı.
+*Ptimeneni*<br/>
+'ndaki Denetimin ayarlanacağı saati içeren [SystemTime](/windows/win32/api/minwinbase/ns-minwinbase-systemtime) yapısına yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi durumda 0.
+Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Belirtilen komut kimliği ile bir araç çubuğu düğmesi arar ve çağırarak bir tarih ve Saat Seçici denetiminde süreyi ayarlar [CMFCToolBarDateTimeCtrl::SetTime](#settime).
+Belirtilen komut KIMLIĞIYLE bir araç çubuğu düğmesine bakar ve [CMFCToolBarDateTimeCtrl:: SetTime](#settime)çağırarak tarih ve saat seçici denetimindeki saati ayarlar.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>
 [CMFCToolBarButton Sınıfı](../../mfc/reference/cmfctoolbarbutton-class.md)<br/>
-[İzlenecek yol: Araç çubuklarına denetimler yerleştirme](../../mfc/walkthrough-putting-controls-on-toolbars.md)
+[İzlenecek yol: Araç Çubuklarına Denetimler Yerleştirme](../../mfc/walkthrough-putting-controls-on-toolbars.md)

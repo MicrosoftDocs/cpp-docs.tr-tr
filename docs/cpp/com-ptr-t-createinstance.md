@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - CreateInstance method [C++]
 ms.assetid: ab89b0e1-9da3-4784-a079-58b17340f111
-ms.openlocfilehash: c4f6cd54b90ab5fab69f91df67a8bf60b0b658f8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 82b180b3f40683495ed2cfa284bdae8e1afaef9e
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62399375"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69498657"
 ---
-# <a name="comptrtcreateinstance"></a>_com_ptr_t::CreateInstance
+# <a name="_com_ptr_tcreateinstance"></a>_com_ptr_t::CreateInstance
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Verilen nesne yeni bir örneğini oluşturur bir `CLSID` veya `ProgID`.
+`CLSID` Veya`ProgID`verilen bir nesnenin yeni bir örneğini oluşturur.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -41,32 +41,32 @@ HRESULT CreateInstance(
 
 #### <a name="parameters"></a>Parametreler
 
-*rclsid*<br/>
+*rclsıd*<br/>
 `CLSID` Bir nesne.
 
-*clsidString*<br/>
-Bulunduran bir Unicode dizesini bir `CLSID` (sürümünden itibaren "**{**") veya bir `ProgID`.
+*Clsıdstring*<br/>
+`CLSID` (" **{** `ProgID`" İle başlayarak) veya içeren bir Unicode dizesi.
 
-*clsidStringA*<br/>
-Bulunduran ANSI kod sayfasını kullanarak çok baytlı bir dize bir `CLSID` (sürümünden itibaren "**{**") veya bir `ProgID`.
+*Clsıdstringa*<br/>
+`CLSID` (" **{** `ProgID`" İle başlayarak) veya ' ı içeren ANSI kod sayfası kullanan çok baytlı bir dize.
 
 *dwClsContext*<br/>
 Yürütülebilir kodu çalıştırmak için bağlam.
 
 *pOuter*<br/>
-İçin dış bilinmeyen [toplama](../atl/aggregation.md).
+[Toplama](../atl/aggregation.md)için bilinmeyen dış.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevleri çağırma `CoCreateInstance` yeni bir COM nesnesi ve ardından bu akıllı işaretçinin arabirim türünü sorgularını oluşturmak için. Elde edilen işaretçi, daha bu `_com_ptr_t` nesnesinin içinde kapsüllenir. `Release` daha önce Kapsüllenen işaretçi için başvuru sayısını azaltma için çağrılır. Bu yordam, başarıyı veya başarısızlığı göstermek için HRESULT döndürür.
+Bu üye işlevleri, `CoCreateInstance` yeni bir com nesnesi oluşturmak ve ardından bu akıllı işaretçinin arabirim türüne yönelik sorgular için çağırır. Elde edilen işaretçi, daha bu `_com_ptr_t` nesnesinin içinde kapsüllenir. `Release`, daha önce kapsüllenmiş işaretçinin başvuru sayısını azaltmak için çağırılır. Bu yordam, başarılı veya başarısız olduğunu göstermek için HRESULT döndürür.
 
-- **CreateInstance (***rclsid* **,***dwClsContext***)** bir verilmişbirnesneninyeniçalışanbirörneğinioluşturur`CLSID`.
+- **CreateInstance (** *rclsıd* **,** *dwClsContext* **)** Verilen bir `CLSID`nesnenin yeni bir çalışan örneğini oluşturur.
 
-- **CreateInstance (***clsidString* **,***dwClsContext***)** verilmiş bir nesnenin yeni çalışan bir örneğini oluşturur bir Bulunduran Unicode dizesi bir `CLSID` (sürümünden itibaren "**{**") veya bir `ProgID`.
+- **CreateInstance (** *clsidstring* **,** *dwClsContext* **)** `CLSID` (" **{** `ProgID`" İle başlayarak) veya içeren bir Unicode dizesi verilen bir nesne için yeni bir çalışan örneği oluşturur.
 
-- **CreateInstance (***clsidStringA* **,***dwClsContext***)** verilmiş bir nesnenin yeni çalışan bir örneğini oluşturur bir bulunduran çok baytlı karakter dizesi bir `CLSID` (sürümünden itibaren "**{**") veya bir `ProgID`. Çağrıları [MultiByteToWideChar](/windows/desktop/api/stringapiset/nf-stringapiset-multibytetowidechar), dizenin OEM kod sayfası yerine ANSI kod sayfası olduğunu varsayar.
+- **CreateInstance (** *clsidstringa* **,** *dwClsContext* **)** `CLSID` (" **{** `ProgID`" İle başlayarak) veya ' i tutan çok baytlı bir karakter dizesi verilen bir nesnenin yeni bir çalışan örneğini oluşturur. Dizenin bir OEM kod sayfası yerine ANSI kod sayfasında olduğunu varsayan [MultiByteToWideChar](/windows/win32/api/stringapiset/nf-stringapiset-multibytetowidechar)' ı çağırır.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

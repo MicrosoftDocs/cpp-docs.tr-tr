@@ -22,12 +22,12 @@ helpviewer_keywords:
 - COleCurrency [MFC], m_cur
 - COleCurrency [MFC], m_status
 ms.assetid: 3a36e345-303f-46fb-a57c-858274378a8d
-ms.openlocfilehash: 6fac62e396791da69d8d94f6c42337c8c3afd528
-ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
+ms.openlocfilehash: 00515e6822dad000c6745063c72d0ffaf367670b
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68916979"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69504261"
 ---
 # <a name="colecurrency-class"></a>Cotacurrency sınıfı
 
@@ -128,15 +128,15 @@ Bu oluşturucuların hepsi, belirtilen değere `COleCurrency` başlatılan yeni 
 
 - Cotacurrency (), 0 `COleCurrency` (sıfır) olarak başlatılan bir nesne oluşturur.
 
-- Copacurrency (`cySrc`), bir `COleCurrency` [para birimi](/windows/desktop/api/wtypes/ns-wtypes-tagcy) değerinden bir nesne oluşturur.
+- Copacurrency (`cySrc`), bir `COleCurrency` [para birimi](/windows/win32/api/wtypes/ns-wtypes-cy) değerinden bir nesne oluşturur.
 
 - Copacurrency (`curSrc`) varolan `COleCurrency` bir `COleCurrency` nesneden bir nesne oluşturur. Yeni nesne, kaynak nesneyle aynı duruma sahip.
 
-- Copacurrency (`varSrc`) bir `COleCurrency` nesne oluşturur. Bir [değişken](/windows/desktop/api/oaidl/ns-oaidl-tagvariant) yapısını veya `COleVariant` nesneyi para birimi (VT_CY) değerine dönüştürmeye çalışır. Bu dönüştürme başarılı olursa, dönüştürülmüş değer yeni `COleCurrency` nesneye kopyalanır. Değilse, `COleCurrency` nesnenin değeri sıfır (0) ve durumu geçersiz olarak ayarlanır.
+- Copacurrency (`varSrc`) bir `COleCurrency` nesne oluşturur. Bir [değişken](/windows/win32/api/oaidl/ns-oaidl-variant) yapısını veya `COleVariant` nesneyi para birimi (VT_CY) değerine dönüştürmeye çalışır. Bu dönüştürme başarılı olursa, dönüştürülmüş değer yeni `COleCurrency` nesneye kopyalanır. Değilse, `COleCurrency` nesnenin değeri sıfır (0) ve durumu geçersiz olarak ayarlanır.
 
 - `COleCurrency(`belirtilen sayısal`, `bileşenlerden`) Constructs a `nunits nFractionalUnits cotacurrency ' nesnesi. Kesir bölümünün mutlak değeri 10.000 ' den büyükse, birimlere uygun ayarlama yapılır. Birimler ve kesir bölümünün imzalanmış uzun değerlerle belirtilir.
 
-Daha fazla bilgi için Windows SDK [para birimine](/windows/desktop/api/wtypes/ns-wtypes-tagcy) ve [Varyant](/windows/desktop/api/oaidl/ns-oaidl-tagvariant) girişlerine bakın.
+Daha fazla bilgi için Windows SDK [para birimine](/windows/win32/api/wtypes/ns-wtypes-cy) ve [Varyant](/windows/win32/api/oaidl/ns-oaidl-variant) girişlerine bakın.
 
 ### <a name="example"></a>Örnek
 
@@ -236,14 +236,14 @@ Durumu geçersiz olarak ayarlayaetkileyebilecek işlemler hakkında daha fazla b
 
 ##  <a name="m_cur"></a>Colet para birimi:: m_cur
 
-Bu`COleCurrency` nesne için temeldeki [para birimi](/windows/desktop/api/wtypes/ns-wtypes-tagcy) yapısı.
+Bu`COleCurrency` nesne için temeldeki [para birimi](/windows/win32/api/wtypes/ns-wtypes-cy) yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
 > [!CAUTION]
 >  Bu işlevin döndürdüğü işaretçinin eriştiği `CURRENCY` yapıda değeri değiştirmek, bu `COleCurrency` nesnenin değerini değiştirecek. Bu `COleCurrency` nesnenin durumunu değiştirmez.
 
-Daha fazla bilgi için Windows SDK [para birimi](/windows/desktop/api/wtypes/ns-wtypes-tagcy) girdisine bakın.
+Daha fazla bilgi için Windows SDK [para birimi](/windows/win32/api/wtypes/ns-wtypes-cy) girdisine bakın.
 
 ##  <a name="m_status"></a>Colet para birimi:: m_status
 
@@ -314,7 +314,7 @@ Her işlecin kısa bir açıklaması aşağıdadır:
 
 - **operator = (** *varSrc* **)** Değer (veya [COleVariant](../../mfc/reference/colevariant-class.md) nesnesi) bir para birimine ( `VT_CY`) dönüştürme `COleCurrency` başarılı olursa, dönüştürülen değer bu nesneye kopyalanır ve durumu geçerli olarak ayarlanır. `VARIANT` Dönüştürme başarılı olmazsa, `COleCurrency` nesnenin değeri 0 olarak ve durumu geçersiz olarak ayarlanır.
 
-Daha fazla bilgi için Windows SDK [para birimine](/windows/desktop/api/wtypes/ns-wtypes-tagcy) ve [Varyant](/windows/desktop/api/oaidl/ns-oaidl-tagvariant) girişlerine bakın.
+Daha fazla bilgi için Windows SDK [para birimine](/windows/win32/api/wtypes/ns-wtypes-cy) ve [Varyant](/windows/win32/api/oaidl/ns-oaidl-variant) girişlerine bakın.
 
 ### <a name="example"></a>Örnek
 

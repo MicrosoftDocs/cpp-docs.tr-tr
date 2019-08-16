@@ -53,16 +53,16 @@ helpviewer_keywords:
 - _exec function
 - _texecvpe function
 ms.assetid: a261df93-206a-4fdc-b8ac-66aa7db83bc6
-ms.openlocfilehash: 72300f754015e54daf14863ca2ae677bde8f7d1a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d31192a25cce86dad6f8e1e8b0258a457d0a5436
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62289695"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69500133"
 ---
-# <a name="exec-wexec-functions"></a>_exec, _wexec İşlevleri
+# <a name="_exec-_wexec-functions"></a>_exec, _wexec İşlevleri
 
-Bu iş ailesindeki her işlev, yükler ve yeni bir işlem yürütür:
+Bu ailedeki her bir işlev yeni bir işlem yükler ve yürütür:
 
 |||
 |-|-|
@@ -71,18 +71,18 @@ Bu iş ailesindeki her işlev, yükler ve yeni bir işlem yürütür:
 |[_execlp, _wexeclp](../c-runtime-library/reference/execlp-wexeclp.md)|[_execvp, _wexecvp](../c-runtime-library/reference/execvp-wexecvp.md)|
 |[_execlpe, _wexeclpe](../c-runtime-library/reference/execlpe-wexeclpe.md)|[_execvpe, _wexecvpe](../c-runtime-library/reference/execvpe-wexecvpe.md)|
 
-İşlev adının sonuna bir harf çeşitlemesini belirler.
+İşlev adının sonundaki harf, çeşitlemesi belirler.
 
 |_exec işlevi soneki|Açıklama|
 |----------------------------|-----------------|
-|`e`|`envp`, dizi işaretçileri ortam ayarlarına, yeni işlemin geçirilir.|
-|`l`|Komut satırı bağımsız değişkenleri için ayrı ayrı geçirilir `_exec` işlevi. Genellikle, yeni işlem için parametre sayısı önceden bilindiğinde kullanılır.|
-|`p`|`PATH` ortam değişkeni, yürütülecek dosyayı bulmak için kullanılır.|
-|`v`|`argv`, dizi işaretçileri komut satırı bağımsız değişkenleri, geçirilen `_exec`. Genellikle, yeni işlem için parametre sayısı değişken olduğunda kullanılır.|
+|`e`|`envp`, ortam ayarlarına işaretçiler dizisi yeni işleme geçirilir.|
+|`l`|Komut satırı bağımsız değişkenleri `_exec` işleve tek tek geçirilir. Genellikle yeni işlem için parametre sayısı önceden bilindiğinde kullanılır.|
+|`p`|`PATH`yürütülecek dosyayı bulmak için ortam değişkeni kullanılır.|
+|`v`|`argv`, komut satırı bağımsız değişkenlerine işaretçiler dizisi öğesine `_exec`geçirilir. Genellikle yeni işlem için parametre sayısı değişken olduğunda kullanılır.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Her `_exec` işlevi yükler ve yeni bir işlem yürütür. Tüm `_exec` işlevleri aynı işletim sistemi işlevini kullanın ([CreateProcess](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessa)). `_exec` İşlevleri çok baytlı karakter sıralarını şu anda çok baytlı kod sayfasına göre algılamayı çok baytlı karakter dizesi bağımsız değişkenleri uygun şekilde otomatik olarak işler. `_wexec` İşlevleri olan geniş karakter sürümleri `_exec` işlevleri. `_wexec` İşlevler öğesine aynı şekilde davranır, `_exec` ailesi ortaklarınıza hariç, çok baytlı karakter dizelerini işlemez.
+Her `_exec` işlev yeni bir işlem yükler ve yürütür. Tüm `_exec` işlevler aynı işletim sistemi işlevini ([CreateProcess](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessw)) kullanır. `_exec` İşlevler çok baytlı karakter dizesi bağımsız değişkenlerini uygun şekilde otomatik olarak işler ve çok baytlı karakter dizilerini kullanımda olan çok baytlı kod sayfasına göre kullanır. İşlevleri, `_exec` işlevlerinin geniş karakterli sürümleridir. `_wexec` İşlevler `_wexec` çok baytlı karakter dizelerini işleyememesi dışında, kendi aile karşılıklarıyla `_exec` aynı şekilde davranır.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -97,29 +97,29 @@ Her `_exec` işlevi yükler ve yeni bir işlem yürütür. Tüm `_exec` işlevle
 |`_texecvp`|`_execvp`|`_execvp`|`_wexecvp`|
 |`_texecvpe`|`_execvpe`|`_execvpe`|`_wexecvpe`|
 
-`cmdname` Parametresi, yeni bir işlem olarak yürütülecek dosyayı belirtir. Bir tam yolu (kök), (konumundan geçerli çalışma dizini) kısmi bir yol veya dosya adı belirtebilirsiniz. Varsa `cmdname` bir dosya adı uzantısına sahip değil veya bir nokta (.) ile bitmiyor `_exec` işlev adlı dosyayı arar. Arama başarısız olursa, aynı temel ada .com dosya adı uzantısına sahip, ardından .exe, .bat ve .cmd dosya adı uzantıları ile çalışır. Varsa `cmdname` bir dosya adı uzantısına sahip yalnızca bir uzantı aramaya kullanılır. Varsa `cmdname` nokta ile biten `_exec` işlevi arar `cmdname` hiçbir dosya adı uzantısına sahip. `_execlp`, `_execlpe`, `_execvp`, ve `_execvpe` arama `cmdname` (aynı yordamları kullanarak) tarafından belirtilen dizinlerde `PATH` ortam değişkeni. Varsa `cmdname` (diğer bir deyişle, göreli bir yol ise), bir sürücü tanımlayıcısı veya herhangi bir eğik çizgi içeren, `_exec` çağrı için yalnızca belirtilen dosyasını arar; yolu yapılmaz.
+`cmdname` Parametresi, yeni işlem olarak yürütülecek dosyayı belirtir. Tam yolu (kökten), kısmi yolu (geçerli çalışma dizininden) veya bir dosya adını belirtebilir. Dosya adı uzantısına sahip değilse veya nokta (.) ile bitmezse `_exec` , işlev adlandırılmış dosyayı arar. `cmdname` Arama başarısız olursa,. com dosya adı uzantısıyla aynı temel adı ve ardından. exe,. bat ve. cmd dosya adı uzantılarını dener. Bir dosya adı uzantısına sahipse,aramadayalnızcaouzantıkullanılır.`cmdname` Bir noktayla `_exec` biterdiğinde, işlev dosya adı uzantısı olmadan arama yapar `cmdname`. `cmdname` `_execlp``PATH` `_execlpe` `cmdname` ,, ve`_execvpe` ortam değişkeni tarafından belirtilen dizinlerde (aynı yordamları kullanarak) arama yapın. `_execvp` Bir sürücü belirticisi veya eğik çizgi `_exec` içeriyorsa(yani,görelibiryolise),çağrıyalnızcabelirtilendosyaiçinaramayapar;yolaranmaz.`cmdname`
 
-Parametreler, parametre olarak karakter dizeleri için bir veya daha fazla işaretçiden vererek yeni işleme geçirilir `_exec` çağırın. Bu karakter dizeleri yeni işlem için parametre listesi oluşturur. Devralınan ortam ayarlarını ve yeni işlem için parametre listesi oluşturuluyor dizelerinin toplam uzunluğu 32 kilobaytı aşamaz. Sondaki boş karakter ('\0') için her dizeye sayı yer almaz, ancak boşluk karakterleri (parametreleri ayırmak için otomatik olarak eklenir) sayılır.
+`_exec` Çağrı içinde parametre olarak karakter dizelerine bir veya daha fazla işaretçi vererek parametreler yeni işleme geçirilir. Bu karakter dizeleri yeni işlem için parametre listesini oluşturur. Devralınan ortam ayarlarının birleştirilmiş uzunluğu ve yeni işlem için parametre listesini oluşturan dizeler 32 kilobayttan büyük olmamalıdır. Her bir dizenin Sonlandırıcı null karakteri (' \ 0 ') sayıma dahil değildir, ancak boşluk karakterleri (parametreleri ayırmak için otomatik olarak eklenir) sayılır.
 
 > [!NOTE]
->  Dizeler gömülü boşluklar beklenmeyen davranışlara neden olabilir; Örneğin, geçirme `_exec` dize `"hi there"` iki bağımsız değişkeni, alma yeni işleminde sonuçlanır `"hi"` ve `"there"`. Amaç adlı bir dosyayı açma yeni işlem sahip ise "Merhaba yok", işlem başarısız olur. Bu dize Alıntısı tarafından kaçının: `"\"hi there\""`.
+>  Dizelerde eklenen boşluklar beklenmeyen davranışlara neden olabilir; Örneğin, dizenin `"hi there"` geçirilmesi `_exec` yeni `"hi"` işlemin iki bağımsız değişken `"there"`elde edilmesine neden olur. Amaç yeni işlemin "Merhaba." adlı bir dosyayı açma süreciydi, işlem başarısız olur. Bunu, dizeyi tırnak içine alarak önleyebilirsiniz: `"\"hi there\""`.
 
 > [!IMPORTANT]
->  Kullanıcı girişi için geçmeyin `_exec` açıkça içeriğini Denetlemeden. `_exec` bir çağrı sonuçlanır [CreateProcess](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessa) şekilde nitelenmemiş yol adları için olası güvenlik açıklarını müşteri adayı göz önünde bulundurun.
+>  Kullanıcı girişini, içeriği açıkça denetlenmeden öğesine `_exec` geçirmeyin. `_exec`, bir [CreateProcess](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessw) çağrısının oluşmasına neden olacak şekilde, nitelenmemiş yol adlarının olası güvenlik açıklarına yol açabileceğini aklınızda bulundurun.
 
-`_exec` İşlevleri kendi parametrelerini doğrular. Parametreleri null karmaşık işaretçilere beklenir, boş dizeler ya da yoksayılır, `_exec` işlevleri açıklandığı gibi geçersiz parametre işleyicisi çağırır [Parameter Validation](../c-runtime-library/parameter-validation.md). Yürütme devam etmesine izin verilirse bu işlevler kümesi `errno` için `EINVAL` ve -1 döndürür. Yeni bir işlem yürütülmedi.
+`_exec` İşlevleri parametrelerini doğrular. Beklenen parametreler null işaretçilerdir, boş dizelerdir veya atlanırsa, `_exec` işlevler [parametre doğrulamasında](../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler olarak `errno` `EINVAL` ayarlanır ve-1 döndürür. Yeni bir işlem yürütülmedi.
 
-Bağımsız değişken işaretçileri ayrı bir parametre olarak geçirilebilir (içinde `_execl`, `_execle`, `_execlp`, ve `_execlpe`) veya bir işaretçiler dizisi olarak (içinde `_execv`, `_execve`, `_execvp`, ve `_execvpe`). En az bir parametre `arg0`, yeni işlemin; geçirilmelidir Bu parametre `argv`[0] yeni bir işlem. Genellikle, bu parametre bir kopyasıdır `cmdname`. (Farklı bir değer, bir hata oluşturmaz.)
+Bağımsız `_execl`değişken işaretçileri ayrı parametreler olarak ( `_execve` `_execv` `_execlpe` `_execlp` `_execle`,,, ve içinde `_execvpe` `_execvp`) veya işaretçiler dizisi olarak geçirilebilir (,,, ve). En az bir parametresi, `arg0`yeni işleme geçirilmesi gerekiyor; bu `argv`parametre yeni işlemin [0]. Genellikle, bu parametre bir kopyasıdır `cmdname`. (Farklı bir değer bir hata oluşturmaz.)
 
-`_execl`, `_execle`, `_execlp`, Ve `_execlpe` çağrıları parametre sayısı önceden bilindiğinde genellikle kullanılır. Parametre `arg0` genellikle işaretçisidir `cmdname`. Parametreleri `arg1` aracılığıyla `argn` yeni parametre listesini oluşturan karakter dizelerine işaretçilerdir için gelin. Bir null işaretçi izlemelidir `argn` parametre listesinin sonunu işaretlemek için.
+,,, Ve`_execlpe` çağrıları genellikle parametre sayısı önceden bilindiğinde kullanılır. `_execle` `_execl` `_execlp` Parametresi `arg0` genellikle bir `cmdname`işaretçisidir. `arg1` İçindeki`argn` parametreler, yeni parametre listesini oluşturan karakter dizelerine işaret. Parametre listesinin sonunu işaretlemek `argn` için bir null işaretçisi gelmelidir.
 
-`_execv`, `_execve`, `_execvp`, Ve `_execvpe` çağrılarıdır kullanışlı ne zaman yeni işlem için parametre sayısı değişkenidir. Parametreler için işaretçiler, bir dizi olarak geçirilir `argv`. Parametre `argv`[0] genellikle işaretçisidir `cmdname`. Parametreleri `argv`[1] aracılığıyla `argv`[`n`] yeni parametre listesini oluşturan karakter dizelerine işaretçilerdir için gelin. Parametre `argv`[`n`+ 1] olmalıdır bir **NULL** parametre listesinin sonunu işaretlemek için işaretçi.
+,,, Ve`_execvpe` çağrıları yeni işlem için parametre sayısı değişken olduğunda faydalıdır. `_execve` `_execv` `_execvp` Parametrelere yönelik işaretçiler dizi `argv`olarak geçirilir. [0 `argv`] parametresi, genellikle bir `cmdname`işaretçisidir. [1 `argv`]- `argv`[`n`] parametreleri, yeni parametre listesini oluşturan karakter dizelerini işaret ettikten sonra. Parametre listesinin `argv`sonunu`n`işaretlemek için [+ 1] parametresi **null** bir işaretçi olmalıdır.
 
-Açık dosyaların bir `_exec` çağrı yapılır yeni işlem içinde açık kalır. İçinde `_execl`, `_execlp`, `_execv`, ve `_execvp` çağrıları, yeni işlem ortam çağırma işleminin devralır. `_execle`, `_execlpe`, `_execve`, ve `_execvpe` çağrılar ortam ayarlarının listesi geçirerek yeni işlem ortamını alter `envp` parametresi. `envp` (son öğe) hariç her öğesi null ile sonlandırılmış dizeye işaret eden bir karakter işaretçiler dizisi, bir ortam değişkeni tanımlamaktır. Bu tür bir dize genellikle formundadır `NAME` = `value` burada `NAME` bir ortam değişkeni adıdır ve `value` bu değişkeni ayarlamak dize değeridir. (Unutmayın `value` çift tırnak işaretleri arasına değil.) Son öğenin `envp` dizisi olmalıdır **NULL**. Zaman `envp` kendisi **NULL**, yeni işlem çağırma işleminin ortam ayarlarını devralır.
+Bir `_exec` çağrı yapıldığında açık olan dosyalar yeni işlemde açık kalır. ,,, Ve`_execvp` çağrılarında, yeni işlem çağıran işlemin ortamını devralır. `_execlp` `_execl` `_execv` `_execle`,, ve `_execlpe` `envp` çağrıları, bir ortam ayarları listesini parametresi aracılığıyla geçirerek yeni işlem için ortamı değiştirir. `_execvpe` `_execve` `envp`, bir karakter işaretçileri dizisi olan her öğe (Final öğesi hariç), bir ortam değişkenini tanımlayan null ile sonlandırılmış bir dizeye işaret eder. Bu tür bir dize genellikle bir ortam `NAME` değişkeninin `NAME` adı olduğu ve `value` söz konusu değişkenin ayarlandığı dize değerinin bulunduğu biçimdedir =. `value` (Çift tırnak `value` işareti içine alınmadığını unutmayın.) `envp` Dizinin son öğesi **null**olmalıdır. Kendisi null olduğunda, yeni işlem çağıran işlemin ortam ayarlarını devralır. `envp`
 
-Biri ile çalıştırılan bir program `_exec` işlevleri her zaman belleğe yüklendiği alacağı en fazla ayırma alanın programın .exe dosyasının üst bilgisindeki 0xFFFFH varsayılan değerine ayarlandı.
+`_exec` İşlevlerden biriyle yürütülen bir program, programın. exe dosya üstbilgisindeki en büyük ayırma alanının varsayılan olarak 0xFFFFH değerine ayarlanmış olması halinde belleğe yüklenir.
 
-`_exec` Çağrıları açık dosyaların çeviri modları korumak değil. Yeni işlem çağırma işlemden devralındı dosyaları kullanmanız gerekir, kullanın [_setmode](../c-runtime-library/reference/setmode.md) yordamı bu dosyaların çeviri modu istenen moda ayarlanacak. Açıkça temizleme gerekir (kullanarak `fflush` veya `_flushall`) veya herhangi bir akışı önce kapatmak `_exec` işlev çağrısı. Sinyal ayarları korunmaz yapılan çağrılar tarafından oluşturulan yeni işlemlerinde `_exec` yordamları. Sinyal ayarları yeni süreç içerisinde varsayılan sıfırlanır.
+`_exec` Çağrılar, açık dosyaların çeviri modlarını korumaz. Yeni işlemin çağıran işlemden devralınan dosyaları kullanması gerekiyorsa, bu dosyaların çeviri modunu istenen moda ayarlamak için [_setmode](../c-runtime-library/reference/setmode.md) yordamını kullanın. İşlev çağrısından önce herhangi bir akışı `fflush` açık `_flushall`bir şekilde boşaltıp (veya kullanarak) veya kapatmanız gerekir. `_exec` Sinyal ayarları, `_exec` yordamlara çağrılar tarafından oluşturulan yeni işlemlerde korunmaz. Yeni işlemdeki sinyal Ayarları varsayılana sıfırlanır.
 
 ## <a name="example"></a>Örnek
 
@@ -152,7 +152,7 @@ char **envp )       // Array of environment variable strings
 }
 ```
 
-Aşağıdaki program Crt_args.exe yürütmek için çalıştırın:
+Crt_args. exe ' yi yürütmek için aşağıdaki programı çalıştırın:
 
 ```
 // crt_exec.c
@@ -231,7 +231,7 @@ int main( int ac, char* av[] )
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** process.h
+**Üstbilgi:** Process. h
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -29,16 +29,16 @@ helpviewer_keywords:
 - CComBSTR class
 - CComBSTR
 ms.assetid: 8fea1879-a05e-47a5-a803-8dec60eaa534
-ms.openlocfilehash: 48447b9e6a211927d8e729dd761d2e14ecd89615
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: dd45c2ff9b43148e0fe27ebd410a2390a4d12ce2
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62246569"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69497550"
 ---
 # <a name="ccombstr-class"></a>CComBSTR sınıfı
 
-Bu sınıf için bir sarmalayıcı olan [BSTR](/previous-versions/windows/desktop/automat/bstr)s.
+Bu sınıf, [BSTR](/previous-versions/windows/desktop/automat/bstr)'leri için bir sarmalayıcı.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -52,73 +52,73 @@ class CComBSTR
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CComBSTR::CComBSTR](#ccombstr)|Oluşturucu.|
-|[CComBSTR::~CComBSTR](#dtor)|Yıkıcı.|
+|[CComBSTR:: CComBSTR](#ccombstr)|Oluşturucu.|
+|[CComBSTR:: ~ CComBSTR](#dtor)|Yok edicisi.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CComBSTR::Append](#append)|İçin bir dize ekler `m_str`.|
-|[CComBSTR::AppendBSTR](#appendbstr)|BSTR için ekler `m_str`.|
-|[CComBSTR::AppendBytes](#appendbytes)|Belirtilen sayıda bayt ekler `m_str`.|
-|[CComBSTR::ArrayToBSTR](#arraytobstr)|Her öğesine SAFEARRAY'i ilk karakteri bir BSTR oluşturur ve ona ekler `CComBSTR` nesne.|
-|[CComBSTR::AssignBSTR](#assignbstr)|BSTR için atar `m_str`.|
-|[CComBSTR::Attach](#attach)|BSTR için ekler `CComBSTR` nesne.|
-|[CComBSTR::BSTRToArray](#bstrtoarray)|Dizinin her öğesi, bir karakter olduğu bir sıfır tabanlı bir tek boyutlu SAFEARRAY'i oluşturur `CComBSTR` nesne.|
-|[CComBSTR::ByteLength](#bytelength)|Uzunluğunu döndürür `m_str` bayt.|
-|[CComBSTR::Copy](#copy)|Bir kopyasını döndürür `m_str`.|
-|[CComBSTR::CopyTo](#copyto)|Bir kopyasını döndürür `m_str` aracılığıyla bir **[out]** parametresi|
-|[CComBSTR::Detach](#detach)|Ayırır `m_str` gelen `CComBSTR` nesne.|
-|[CComBSTR::Empty](#empty)|Serbest bırakma `m_str`.|
-|[CComBSTR::Length](#length)|Uzunluğunu döndürür `m_str`.|
-|[CComBSTR::LoadString](#loadstring)|Bir dize kaynağı yükler.|
-|[CComBSTR::ReadFromStream](#readfromstream)|BSTR nesnesi bir akışından yükler.|
-|[CComBSTR::ToLower](#tolower)|Dizeyi küçük harfe dönüştürür.|
-|[CComBSTR::ToUpper](#toupper)|Dizeyi büyük harfe dönüştürür.|
-|[CComBSTR::WriteToStream](#writetostream)|Kaydeder `m_str` bir akışa.|
+|[CComBSTR:: Append](#append)|Bir dize `m_str`ekler.|
+|[CComBSTR:: AppendBSTR](#appendbstr)|İçin `m_str`bir BSTR ekler.|
+|[CComBSTR:: AppendBytes](#appendbytes)|Belirtilen sayıda baytı `m_str`sonuna ekler.|
+|[CComBSTR:: ArrayToBSTR](#arraytobstr)|SafeArray içindeki her bir öğenin ilk karakterinden bir BSTR oluşturur ve `CComBSTR` nesneye iliştirir.|
+|[CComBSTR:: Atamabstr](#assignbstr)|İçin `m_str`bir BSTR atar.|
+|[CComBSTR:: Attach](#attach)|`CComBSTR` Nesnesine bir BSTR ekler.|
+|[CComBSTR:: BSTRToArray](#bstrtoarray)|Dizinin her öğesi `CComBSTR` nesnesinden bir karakter olduğunda, sıfır tabanlı tek boyutlu bir SAFEARRAY oluşturur.|
+|[CComBSTR:: ByteLength](#bytelength)|Bayt `m_str` cinsinden uzunluğunu döndürür.|
+|[CComBSTR:: Copy](#copy)|Bir kopyasını `m_str`döndürür.|
+|[CComBSTR:: CopyTo](#copyto)|**[Out]** parametresi `m_str` aracılığıyla bir kopyasını döndürür|
+|[CComBSTR::D etach](#detach)|Nesneden ayırır `m_str`. `CComBSTR`|
+|[CComBSTR:: Empty](#empty)|Serbest `m_str`bırakır.|
+|[CComBSTR:: length](#length)|Uzunluğunu `m_str`döndürür.|
+|[CComBSTR:: LoadString](#loadstring)|Bir dize kaynağı yükler.|
+|[CComBSTR:: ReadFromStream](#readfromstream)|Akıştan bir BSTR nesnesi yükler.|
+|[CComBSTR:: ToLower](#tolower)|Dizeyi küçük harfe dönüştürür.|
+|[CComBSTR:: ToUpper](#toupper)|Dizeyi büyük harfe dönüştürür.|
+|[CComBSTR:: WriteToStream](#writetostream)|Bir `m_str` akışa kaydeder.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[BSTR CComBSTR::operator](#operator_bstr)|Yayınları bir `CComBSTR` BSTR için nesne.|
-|[CComBSTR::operator!](#operator_not)|TRUE veya FALSE bağlı olarak döndürür `m_str`null.|
-|[CComBSTR::operator !=](#operator_neq)|Karşılaştıran bir `CComBSTR` içeren bir dize.|
-|[CComBSTR::operator &](#operator_amp)|Adresini döndürür `m_str`.|
-|[CComBSTR::operator +=](#operator_add_eq)|Ekler bir `CComBSTR` nesneye.|
-|[CComBSTR::operator <](#operator_lt)|Karşılaştıran bir `CComBSTR` içeren bir dize.|
-|[CComBSTR::operator =](#operator_eq)|Bir değer atar `m_str`.|
-|[CComBSTR::operator ==](#operator_eq_eq)|Karşılaştıran bir `CComBSTR` içeren bir dize.|
-|[CComBSTR::operator >](#operator_gt)|Karşılaştıran bir `CComBSTR` içeren bir dize.|
+|[CComBSTR:: operator BSTR](#operator_bstr)|Bir `CComBSTR` nesneyi BSTR 'ye yayınlar.|
+|[CComBSTR:: operator!](#operator_not)|NULL olup olmadığına `m_str`bağlı olarak true veya false değerini döndürür.|
+|[CComBSTR:: operator! =](#operator_neq)|Bir dizeyle `CComBSTR` bir ile karşılaştırır.|
+|[CComBSTR:: operator &](#operator_amp)|Adresini `m_str`döndürür.|
+|[CComBSTR:: operator + =](#operator_add_eq)|Nesnesine bir `CComBSTR` ekler.|
+|[CComBSTR:: operator <](#operator_lt)|Bir dizeyle `CComBSTR` bir ile karşılaştırır.|
+|[CComBSTR:: operator =](#operator_eq)|Öğesine `m_str`bir değer atar.|
+|[CComBSTR:: operator = =](#operator_eq_eq)|Bir dizeyle `CComBSTR` bir ile karşılaştırır.|
+|[CComBSTR:: operator >](#operator_gt)|Bir dizeyle `CComBSTR` bir ile karşılaştırır.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CComBSTR::m_str](#m_str)|İle ilişkili BSTR içeren `CComBSTR` nesne.|
+|[CComBSTR:: m_str](#m_str)|`CComBSTR` Nesneyle ilişkili BSTR 'yi içerir.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CComBSTR` Dizeleri ön eki uzunluğu olan BSTR'lerin için bir sarmalayıcı sınıftır. Uzunluğu bir tamsayı veri dizesinde önceki bellek konumunda saklanır.
+`CComBSTR` Sınıfı, uzunluk ön eki olan dizeler olan BSTRs için bir sarmalayıcıdır. Uzunluk, dizedeki verilerden önceki bellek konumunda bir tamsayı olarak depolanır.
 
-A [BSTR](/previous-versions/windows/desktop/automat/bstr) boş sonra son karakter sayılan ancak aynı zamanda dizede katıştırılmış null karakterleri içerebilir sonlandırılmıştır. Dize uzunluğu ilk null karakteri değil karakter sayısı tarafından belirlenir.
-
-> [!NOTE]
->  `CComBSTR` Sınıfı bir dizi ANSI veya Unicode dize bağımsız değişken olarak ele üyeleri (Oluşturucular, atama işleçleri ve Karşılaştırma işleçleri) sağlar. Geçici Unicode dizelerini genellikle dahili olarak oluşturulduğundan bu işlevler ANSI sürümleri, Unicode emsallerinden çok daha az verimlidir. Verimliliği için mümkün olduğunda Unicode sürümlerini kullanın.
+[BSTR](/previous-versions/windows/desktop/automat/bstr) , son sayılan karakterden sonra null ile sonlandırılır, ancak dize içine gömülü null karakterler de içerebilir. Dize uzunluğu, ilk null karakter değil karakter sayısına göre belirlenir.
 
 > [!NOTE]
->  Visual Studio. NET'te uygulanan Gelişmiş arama davranış nedeniyle, aşağıdaki gibi kod `bstr = L"String2" + bstr;`, hangi önceki sürümlerde, derlenmiş yerine uygulanmasını olarak `bstr = CStringW(L"String2") + bstr`.
+>  `CComBSTR` Sınıfı, bağımsız değişken olarak ANSI veya Unicode dizeleri alan bir dizi üye (oluşturucular, atama işleçleri ve karşılaştırma işleçleri) sağlar. Geçici Unicode dizeleri genellikle dahili olarak oluşturulduğundan, bu işlevlerin ANSI sürümleri Unicode karşılıklarından daha az verimlidir. Verimlilik için mümkün olan yerlerde Unicode sürümlerini kullanın.
 
-Kullanırken uyarıların bir listesi için `CComBSTR`, bkz: [CComBSTR ile programlama](../../atl/programming-with-ccombstr-atl.md).
+> [!NOTE]
+>  Visual Studio .NET içinde uygulanan geliştirilmiş arama davranışı nedeniyle, gibi bir kod `bstr = L"String2" + bstr;`, önceki sürümlerde derlenmiş olabilecek gibi, yerine `bstr = CStringW(L"String2") + bstr`uygulanmalıdır.
+
+Kullanırken `CComBSTR`uyarı listesi için bkz. [CComBSTR ile programlama](../../atl/programming-with-ccombstr-atl.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlbase.h
+**Üstbilgi:** atlbase. h
 
-##  <a name="append"></a>  CComBSTR::Append
+##  <a name="append"></a>CComBSTR:: Append
 
-Ya da ekler *lpsz* veya BSTR üyesi *bstrSrc* için [m_str](#m_str).
+*Bstrsrc* 'nin [m_str](#m_str)'e *lpsz* veya BSTR üyesini ekler.
 
 ```
 HRESULT Append(const CComBSTR& bstrSrc) throw();
@@ -132,32 +132,32 @@ HRESULT Append(LPCOLESTR lpsz, int nLen) throw();
 ### <a name="parameters"></a>Parametreler
 
 *bstrSrc*<br/>
-[in] A `CComBSTR` eklenecek nesne.
+'ndaki Eklenecek `CComBSTR` nesne.
 
 *ch*<br/>
-[in] Eklenecek bir karakter.
+'ndaki Eklenecek karakter.
 
 *lpsz*<br/>
-[in] Eklenecek sıfır ile sonlandırılmış dize. Bir Unicode dize LPCOLESTR aşırı yükleme ya da bir ANSI dizesine LPCSTR sürümü aracılığıyla aracılığıyla geçirebilirsiniz.
+'ndaki Sona eklenecek sıfır ile sonlandırılmış bir karakter dizesi. Bir Unicode dizesini LPCOLISTR aşırı yüklemesi veya bir ANSI dizesi aracılığıyla LPCSTR sürümü aracılığıyla geçirebilirsiniz.
 
 *nLen*<br/>
-[in] Karakter sayısı *lpsz* eklenecek.
+'ndaki *Lpsz* 'den eklenecek karakterlerin sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-S_OK başarılı ya da standart HRESULT hatası herhangi bir değer.
+Başarılı veya herhangi bir standart HRESULT hata değerine S_OK.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir ANSI dizesine eklenen önce Unicode'a dönüştürülür.
+Bir ANSI dizesi eklenmeden önce Unicode olarak dönüştürülecek.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATL_Utilities#32](../../atl/codesnippet/cpp/ccombstr-class_1.cpp)]
 
-##  <a name="appendbstr"></a>  CComBSTR::AppendBSTR
+##  <a name="appendbstr"></a>CComBSTR:: AppendBSTR
 
-Ekler için belirtilen BSTR [m_str](#m_str).
+Belirtilen BSTR 'yi [m_str](#m_str)'e ekler.
 
 ```
 HRESULT AppendBSTR(BSTR p) throw();
@@ -166,23 +166,23 @@ HRESULT AppendBSTR(BSTR p) throw();
 ### <a name="parameters"></a>Parametreler
 
 *p*<br/>
-[in] Eklenecek BSTR.
+'ndaki Eklenecek BSTR.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-S_OK başarılı ya da standart HRESULT hatası herhangi bir değer.
+Başarılı veya herhangi bir standart HRESULT hata değerine S_OK.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sıradan bir geniş karakter dizesi için bu yöntem geçirmeyin. Derleyici, hata catch ve çalışma zamanı hataları meydana gelir.
+Bu yönteme sıradan bir geniş karakterli dize geçirmeyin. Derleyici hatayı yakalayamaz ve çalıştırma zamanı hataları oluşur.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATL_Utilities#33](../../atl/codesnippet/cpp/ccombstr-class_2.cpp)]
 
-##  <a name="appendbytes"></a>  CComBSTR::AppendBytes
+##  <a name="appendbytes"></a>CComBSTR:: AppendBytes
 
-Belirtilen sayıda baytı için ekler [m_str](#m_str) dönüştürme olmadan.
+Dönüştürme olmadan, belirtilen bayt sayısını [m_str](#m_str) 'e ekler.
 
 ```
 HRESULT AppendBytes(const char* lpsz, int nLen) throw();
@@ -191,22 +191,22 @@ HRESULT AppendBytes(const char* lpsz, int nLen) throw();
 ### <a name="parameters"></a>Parametreler
 
 *lpsz*<br/>
-[in] Eklenecek Bayt dizisine bir işaretçi.
+'ndaki Eklenecek bayt dizisinin bir işaretçisi.
 
 *p*<br/>
-[in] Eklenecek bayt sayısı.
+'ndaki Eklenecek bayt sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-S_OK başarılı ya da standart HRESULT hatası herhangi bir değer.
+Başarılı veya herhangi bir standart HRESULT hata değerine S_OK.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATL_Utilities#34](../../atl/codesnippet/cpp/ccombstr-class_3.cpp)]
 
-##  <a name="arraytobstr"></a>  CComBSTR::ArrayToBSTR
+##  <a name="arraytobstr"></a>CComBSTR:: ArrayToBSTR
 
-Tutulan varolan bir dizeyi boşaltır `CComBSTR` nesne, ardından her öğesine SAFEARRAY'i ilk karakteri bir BSTR oluşturur ve ona ekler `CComBSTR` nesne.
+`CComBSTR` Nesnede tutulan mevcut dizeleri serbest bırakır, ardından SAFEARRAY içindeki her bir öğenin ilk karakterinden bir BSTR oluşturur ve `CComBSTR` nesneye iliştirir.
 
 ```
 HRESULT ArrayToBSTR(const SAFEARRAY* pSrc) throw();
@@ -215,15 +215,15 @@ HRESULT ArrayToBSTR(const SAFEARRAY* pSrc) throw();
 ### <a name="parameters"></a>Parametreler
 
 *pSrc*<br/>
-[in] Dizeyi oluşturmak için kullanılan öğeleri içeren SAFEARRAY'i.
+'ndaki Dizeyi oluşturmak için kullanılan öğeleri içeren SAFEARRAY.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-S_OK başarılı ya da standart HRESULT hatası herhangi bir değer.
+Başarılı veya herhangi bir standart HRESULT hata değerine S_OK.
 
-##  <a name="assignbstr"></a>  CComBSTR::AssignBSTR
+##  <a name="assignbstr"></a>CComBSTR:: Atamabstr
 
-BSTR için atar [m_str](#m_str).
+[M_str](#m_str)'e bir BSTR atar.
 
 ```
 HRESULT AssignBSTR(const BSTR bstrSrc) throw();
@@ -232,15 +232,15 @@ HRESULT AssignBSTR(const BSTR bstrSrc) throw();
 ### <a name="parameters"></a>Parametreler
 
 *bstrSrc*<br/>
-[in] Geçerli atamak için bir BSTR `CComBSTR` nesne.
+'ndaki Geçerli `CComBSTR` nesneye atanacak bir BSTR.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-S_OK başarılı ya da standart HRESULT hatası herhangi bir değer.
+Başarılı veya herhangi bir standart HRESULT hata değerine S_OK.
 
-##  <a name="attach"></a>  CComBSTR::Attach
+##  <a name="attach"></a>CComBSTR:: Attach
 
-BSTR için ekler `CComBSTR` ayarlayarak nesne [m_str](#m_str) üyesine *src*.
+[M_str](#m_str) üyesini *src*olarak ayarlayarak `CComBSTR` nesnesine bir BSTR ekler.
 
 ```
 void Attach(BSTR src) throw();
@@ -248,23 +248,23 @@ void Attach(BSTR src) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*src*<br/>
-[in] Nesnesine eklenecek BSTR.
+*YN*<br/>
+'ndaki Nesneye iliştirilecek BSTR.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sıradan bir geniş karakter dizesi için bu yöntem geçirmeyin. Derleyici, hata catch ve çalışma zamanı hataları meydana gelir.
+Bu yönteme sıradan bir geniş karakterli dize geçirmeyin. Derleyici hatayı yakalayamaz ve çalıştırma zamanı hataları oluşur.
 
 > [!NOTE]
->  Bu yöntem, onay `m_str` NULL değil.
+>  Bu yöntem, null `m_str` değilse onay olacaktır.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATL_Utilities#35](../../atl/codesnippet/cpp/ccombstr-class_4.cpp)]
 
-##  <a name="bstrtoarray"></a>  CComBSTR::BSTRToArray
+##  <a name="bstrtoarray"></a>CComBSTR:: BSTRToArray
 
-Dizinin her öğesi, bir karakter olduğu bir sıfır tabanlı bir tek boyutlu SAFEARRAY'i oluşturur `CComBSTR` nesne.
+Dizinin her öğesi `CComBSTR` nesnesinden bir karakter olduğunda, sıfır tabanlı tek boyutlu bir SAFEARRAY oluşturur.
 
 ```
 HRESULT BSTRToArray(LPSAFEARRAY* ppArray) throw();
@@ -273,15 +273,15 @@ HRESULT BSTRToArray(LPSAFEARRAY* ppArray) throw();
 ### <a name="parameters"></a>Parametreler
 
 *ppArray*<br/>
-[out] İşlevinin sonuçlarını tutmak için kullanılan SAFEARRAY'i işaretçisi.
+dışı İşlevin sonuçlarını tutmak için kullanılan SAFEARRAY işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-S_OK başarılı ya da standart HRESULT hatası herhangi bir değer.
+Başarılı veya herhangi bir standart HRESULT hata değerine S_OK.
 
-##  <a name="bytelength"></a>  CComBSTR::ByteLength
+##  <a name="bytelength"></a>CComBSTR:: ByteLength
 
-Bayt sayısını döndürür `m_str`, sondaki null karakter hariç.
+' Deki `m_str`, Sonlandırıcı null karakteri hariç bayt sayısını döndürür.
 
 ```
 unsigned int ByteLength() const throw();
@@ -289,19 +289,19 @@ unsigned int ByteLength() const throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Uzunluğunu [m_str](#m_str) üye bayt.
+[M_str](#m_str) üyesinin bayt cinsinden uzunluğu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-0 döndürür `m_str` null.
+NULL ise 0 `m_str` döndürür.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATL_Utilities#36](../../atl/codesnippet/cpp/ccombstr-class_5.cpp)]
 
-##  <a name="ccombstr"></a>  CComBSTR::CComBSTR
+##  <a name="ccombstr"></a>CComBSTR:: CComBSTR
 
-Oluşturucu. Varsayılan Oluşturucu kümeleri [m_str](#m_str) üyesi null.
+Oluşturucu. Varsayılan Oluşturucu [m_str](#m_str) üyesini null olarak ayarlar.
 
 ```
 CComBSTR() throw();
@@ -318,37 +318,37 @@ CComBSTR(CComBSTR&& src) throw(); // (Visual Studio 2017)
 ### <a name="parameters"></a>Parametreler
 
 *nSize*<br/>
-[in] Kopyalanacak karakter sayısını *sz* veya ilk boyutu için karakter cinsinden `CComBSTR`.
+'ndaki *SZ* 'den kopyalanacak karakter sayısı veya için `CComBSTR`karakter cinsinden başlangıç boyutu.
 
-*sz*<br/>
-[in] Kopyalamak için bir dize. Unicode sürümü bir LPCOLESTR belirtir. ANSI sürümü bir LPCSTR belirtir.
+*SZ*<br/>
+'ndaki Kopyalanacak dize. Unicode sürümü bir LPCOELSTR belirtir; ANSI sürümü bir LPCSTR belirtir.
 
 *pSrc*<br/>
-[in] Kopyalamak için bir dize. Unicode sürümü bir LPCOLESTR belirtir. ANSI sürümü bir LPCSTR belirtir.
+'ndaki Kopyalanacak dize. Unicode sürümü bir LPCOELSTR belirtir; ANSI sürümü bir LPCSTR belirtir.
 
-*src*<br/>
-[in] A `CComBSTR` nesne.
+*YN*<br/>
+'ndaki Bir `CComBSTR` nesne.
 
-*GUID*<br/>
-[in] Bir başvuru bir `GUID` yapısı.
+*guid*<br/>
+'ndaki Bir `GUID` yapıya başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kopya Oluşturucu kümeleri `m_str` BSTR üyesi bir kopyasına *src*. `REFGUID` Oluşturucusu kullanarak bir dize GUID dönüştürür `StringFromGUID2` ve sonucu depolar.
+Kopya Oluşturucu, `m_str` *src*öğesinin BSTR üyesinin bir kopyasına ayarlanır. Oluşturucu, kullanarak `StringFromGUID2` GUID 'yi bir dizeye dönüştürür ve sonucu depolar. `REFGUID`
 
-Bir oluşturucu kümesi `m_str` belirtilen dizenin bir kopyası için. Bir değer geçirmek, *nSize*, yalnızca *nSize* karakter kopyalanır, bir sonlandırıcı null karakter tarafından izlenen.
+Diğer oluşturucular belirtilen dizenin `m_str` bir kopyasına ayarlanır. *NSize*için bir değer geçirirseniz, yalnızca *nSize* karakterleri kopyalanacak ve ardından bir Sonlandırıcı null karakteri gelir.
 
-`CComBSTR` taşıma semantiği destekler. Taşıma Oluşturucusu kullanabilirsiniz (bir rvalue başvurusu alan oluşturucu (`&&`) geçirdiğiniz nesne kopyalama iş yükü olmadan bir bağımsız değişken olarak eski nesnesi olarak aynı temel verilerini kullanan yeni bir nesne oluşturmak için.
+`CComBSTR`taşıma semantiğini destekler. Nesne kopyalama ek yükü olmadan, bir bağımsız değişken olarak geçirdiğiniz eski nesneyle aynı temel`&&`verileri kullanan yeni bir nesne oluşturmak için, taşıma oluşturucusunu (bir rvalue başvurusu () alan Oluşturucu () kullanabilirsiniz.
 
-Yok edici işaret ettiği bir dizeyi boşaltır `m_str`.
+Yıkıcı, tarafından `m_str`işaret edilen dizeyi serbest bırakır.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATL_Utilities#37](../../atl/codesnippet/cpp/ccombstr-class_6.cpp)]
 
-##  <a name="dtor"></a>  CComBSTR::~CComBSTR
+##  <a name="dtor"></a>CComBSTR:: ~ CComBSTR
 
-Yıkıcı.
+Yok edicisi.
 
 ```
 ~CComBSTR();
@@ -356,11 +356,11 @@ Yıkıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yok edici işaret ettiği bir dizeyi boşaltır `m_str`.
+Yıkıcı, tarafından `m_str`işaret edilen dizeyi serbest bırakır.
 
-##  <a name="copy"></a>  CComBSTR::Copy
+##  <a name="copy"></a>CComBSTR:: Copy
 
-Ayırır ve bir kopyasını döndürür `m_str`.
+Bir kopyasını `m_str`ayırır ve döndürür.
 
 ```
 BSTR Copy() const throw();
@@ -368,15 +368,15 @@ BSTR Copy() const throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir kopyasını [m_str](#m_str) üyesi. Varsa `m_str` null, NULL döndürür.
+[M_str](#m_str) üyesinin bir kopyası. `m_str` Null ise, null döndürür.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATL_Utilities#38](../../atl/codesnippet/cpp/ccombstr-class_7.cpp)]
 
-##  <a name="copyto"></a>  CComBSTR::CopyTo
+##  <a name="copyto"></a>CComBSTR:: CopyTo
 
-Ayırır ve bir kopyasını döndürür [m_str](#m_str) parametresi aracılığıyla.
+Parametresi aracılığıyla [m_str](#m_str) kopyasını ayırır ve döndürür.
 
 ```
 HRESULT CopyTo(BSTR* pbstr) throw();
@@ -387,26 +387,26 @@ HRESULT CopyTo(VARIANT* pvarDest) throw();
 ### <a name="parameters"></a>Parametreler
 
 *pbstr*<br/>
-[out] Burada bu yöntem tarafından ayrılan dize döndürecek şekilde BSTR adresi.
+dışı Bu yöntem tarafından ayrılan dizenin döndürüleceği bir BSTR 'nin adresi.
 
 *pvarDest*<br/>
-[out] Bir değişken, bu yöntem tarafından ayrılan dize döndürecek şekilde adresi.
+dışı Bu yöntem tarafından ayrılan dizenin döndürüleceği bir DEĞIŞKENIN adresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart HRESULT başarısı veya başarısızlığı kopyanın belirten değer.
+Kopyanın başarısını veya başarısızlığını belirten standart bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntemi çağrıldıktan sonra DEĞİŞKENİ tarafından işaret edilen *pvarDest* VT_BSTR türünde olacaktır.
+Bu yöntemi çağırdıktan sonra, *pvarDest* tarafından Işaret EDILEN değişken VT_BSTR türünde olacaktır.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATL_Utilities#39](../../atl/codesnippet/cpp/ccombstr-class_8.cpp)]
 
-##  <a name="detach"></a>  CComBSTR::Detach
+##  <a name="detach"></a>CComBSTR::D etach
 
-Ayırır [m_str](#m_str) gelen `CComBSTR` nesne ve ayarlar `m_str` null.
+`m_str` [M_str](#m_str) `CComBSTR` nesnesinden ayırır ve null olarak ayarlar.
 
 ```
 BSTR Detach() throw();
@@ -414,15 +414,15 @@ BSTR Detach() throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-BSTR ilişkili `CComBSTR` nesne.
+`CComBSTR` Nesneyle ilişkili BSTR.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATL_Utilities#40](../../atl/codesnippet/cpp/ccombstr-class_9.cpp)]
 
-##  <a name="empty"></a>  CComBSTR::Empty
+##  <a name="empty"></a>CComBSTR:: Empty
 
-Serbest bırakma [m_str](#m_str) üyesi.
+[M_str](#m_str) üyesini serbest bırakır.
 
 ```
 void Empty() throw();
@@ -432,9 +432,9 @@ void Empty() throw();
 
 [!code-cpp[NVC_ATL_Utilities#41](../../atl/codesnippet/cpp/ccombstr-class_10.cpp)]
 
-##  <a name="length"></a>  CComBSTR::Length
+##  <a name="length"></a>CComBSTR:: length
 
-Karakter sayısını döndürür `m_str`, sondaki null karakter hariç.
+' Deki `m_str`karakter sayısını, Sonlandırıcı null karakteri hariç döndürür.
 
 ```
 unsigned int Length() const throw();
@@ -442,15 +442,15 @@ unsigned int Length() const throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Uzunluğunu [m_str](#m_str) üyesi.
+[M_str](#m_str) üyesinin uzunluğu.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATL_Utilities#42](../../atl/codesnippet/cpp/ccombstr-class_11.cpp)]
 
-##  <a name="loadstring"></a>  CComBSTR::LoadString
+##  <a name="loadstring"></a>CComBSTR:: LoadString
 
-Tarafından belirtilen bir dize kaynağı yükler *nID* ve bu nesnesi içine kaydeder.
+*NID* tarafından belirtilen bir dize kaynağını yükler ve bu nesnede depolar.
 
 ```
 bool LoadString(HINSTANCE hInst, UINT nID) throw();
@@ -459,23 +459,23 @@ bool LoadString(UINT nID) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-Bkz: [LoadString](/windows/desktop/api/winuser/nf-winuser-loadstringa) Windows SDK içinde.
+Windows SDK [LoadString](/windows/win32/api/winuser/nf-winuser-loadstringw) öğesine bakın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dize başarıyla yüklenip yüklenmediğini TRUE döndürür; Aksi takdirde FALSE döndürür.
+Dize başarıyla yüklenirse TRUE değerini döndürür; Aksi takdirde, FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk işlev sizin tarafınızdan belirlenen modülündeki kaynak yükler *hInst* parametresi. Kaynak ikinci işlevi ile ilişkili kaynak modülü yükler [CComModule](../../atl/reference/ccommodule-class.md)-türetilmiş bu projede kullanılan nesne.
+İlk işlev, *hinst* parametresi aracılığıyla sizin tarafınızdan tanımlanan modülden kaynağı yükler. İkinci işlev, bu projede kullanılan [CComModule](../../atl/reference/ccommodule-class.md)ile türetilmiş nesneyle ilişkili kaynak modülünden kaynağı yükler.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATL_Utilities#43](../../atl/codesnippet/cpp/ccombstr-class_12.cpp)]
 
-##  <a name="m_str"></a>  CComBSTR::m_str
+##  <a name="m_str"></a>CComBSTR:: m_str
 
-İle ilişkili BSTR içeren `CComBSTR` nesne.
+`CComBSTR` Nesneyle ilişkili BSTR 'yi içerir.
 
 ```
 BSTR m_str;
@@ -485,9 +485,9 @@ BSTR m_str;
 
 [!code-cpp[NVC_ATL_Utilities#49](../../atl/codesnippet/cpp/ccombstr-class_13.cpp)]
 
-##  <a name="operator_bstr"></a>  BSTR CComBSTR::operator
+##  <a name="operator_bstr"></a>CComBSTR:: operator BSTR
 
-Yayınları bir `CComBSTR` BSTR için nesne.
+Bir `CComBSTR` nesneyi BSTR 'ye yayınlar.
 
 ```
 operator BSTR() const throw();
@@ -495,15 +495,15 @@ operator BSTR() const throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Geçirmenize olanak `CComBSTR` nesnelere sahip işlevlerin **[in] BSTR** parametreleri.
+Nesneleri `CComBSTR` **[in] BSTR** parametrelerine sahip işlevlere geçirmenize olanak sağlar.
 
 ### <a name="example"></a>Örnek
 
-Örneğin bakın [CComBSTR::m_str](#m_str).
+[CComBSTR:: m_str](#m_str)örneğine bakın.
 
-##  <a name="operator_not"></a>  CComBSTR::operator!
+##  <a name="operator_not"></a>CComBSTR:: operator!
 
-BSTR dizesi NULL olup olmadığını denetler.
+BSTR dizesinin NULL olup olmadığını denetler.
 
 ```
 bool operator!() const throw();
@@ -511,19 +511,19 @@ bool operator!() const throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Gerekirse TRUE döndürür [m_str](#m_str) üyesi NULL; Aksi takdirde FALSE.
+[M_str](#m_str) üyesi null ise true döndürür; Aksi takdirde, FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işleç sadece boş bir dize için bir NULL değer denetler.
+Bu işleç, boş bir dize için değil, yalnızca NULL değer olup olmadığını denetler.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATL_Utilities#35](../../atl/codesnippet/cpp/ccombstr-class_4.cpp)]
 
-##  <a name="operator_neq"></a>  CComBSTR::operator! =
+##  <a name="operator_neq"></a>CComBSTR:: operator! =
 
-Mantıksal tersini döndürür [işleç ==](#operator_eq_eq).
+[= = İşlecinin](#operator_eq_eq)mantıksal tersini döndürür.
 
 ```
 bool operator!= (const CComBSTR& bstrSrc) const throw();
@@ -535,25 +535,25 @@ bool operator!= (int nNull) const throw();
 ### <a name="parameters"></a>Parametreler
 
 *bstrSrc*<br/>
-[in] A `CComBSTR` nesne.
+'ndaki Bir `CComBSTR` nesne.
 
 *pszSrc*<br/>
-[in] Sıfır ile sonlandırılmış dize.
+'ndaki Sıfır ile sonlandırılmış bir dize.
 
 *nNull*<br/>
-[in] NULL olmalıdır.
+'ndaki NULL olmalıdır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Karşılaştırılan öğesi eşit değilse TRUE döndürür `CComBSTR` nesne; Aksi takdirde FALSE döndürür.
+Karşılaştırılan öğe `CComBSTR` nesnesine eşitse true, değilse false döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CComBSTR`s kullanıcının varsayılan yerel ayar bağlamında metin içeriğini eklemek karşılaştırılır. Son karşılaştırma işleci yalnızca NULL kapsanan dizeyi karşılaştırır.
+`CComBSTR`metin içeriğini eklemek, kullanıcının varsayılan yerel ayarı bağlamında karşılaştırılır. Son karşılaştırma işleci yalnızca kapsanan dizeyi NULL ile karşılaştırır.
 
-##  <a name="operator_amp"></a>  CComBSTR::operator &amp;
+##  <a name="operator_amp"></a>CComBSTR:: işleci&amp;
 
-Depolanan BSTR adresini döndürür [m_str](#m_str) üyesi.
+[M_str](#m_str) ÜYESINDE depolanan BSTR 'nin adresini döndürür.
 
 ```
 BSTR* operator&() throw();
@@ -561,9 +561,9 @@ BSTR* operator&() throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CComBstr operator &` özel bir onaylama işlemi bellek sızıntılarını belirlemenize yardımcı olması için onunla ilişkilendirilir. Programın ne zaman iddia `m_str` üye başlatılır. Burada Programcı kullanan durumları belirlemek için bu onay oluşturulduğu `& operator` için yeni bir değer atamak için `m_str` ilk ayırma boşaltma olmadan üye `m_str`. Varsa `m_str` NULL eşittir, programın bu m_str değildi ayrılan henüz varsayar. Bu durumda, program iddia etmeyecektir.
+`CComBstr operator &`, bellek sızıntılarını belirlemenize yardımcı olmak için kendisiyle ilişkili özel bir onaylama işlemi içerir. Program, `m_str` üye başlatıldığında onay alacak. Bu onaylama, `& operator` bir programcının ilk ayırmayı `m_str`boşaltmadan `m_str` üyeye yeni bir değer atamak için kullandığı durumları belirlemek için oluşturulmuştur. Eşittir `m_str` null ise program m_str henüz ayrılmadığı varsayılır. Bu durumda, program onay olmaz.
 
-Bu onay, varsayılan olarak etkin değildir. Bu onay etkinleştirmek için ATL_CCOMBSTR_ADDRESS_OF_ASSERT tanımlayın.
+Bu onaylama varsayılan olarak etkin değildir. Bu onayı etkinleştirmek için ATL_CCOMBSTR_ADDRESS_OF_ASSERT tanımlayın.
 
 ### <a name="example"></a>Örnek
 
@@ -571,9 +571,9 @@ Bu onay, varsayılan olarak etkin değildir. Bu onay etkinleştirmek için ATL_C
 
 [!code-cpp[NVC_ATL_Utilities#47](../../atl/codesnippet/cpp/ccombstr-class_15.cpp)]
 
-##  <a name="operator_add_eq"></a>  CComBSTR::operator +=
+##  <a name="operator_add_eq"></a>CComBSTR:: operator + =
 
-İçin bir dize ekler `CComBSTR` nesne.
+`CComBSTR` Nesnesine bir dize ekler.
 
 ```
 CComBSTR& operator+= (const CComBSTR& bstrSrc);
@@ -583,22 +583,22 @@ CComBSTR& operator+= (const LPCOLESTR pszSrc);
 ### <a name="parameters"></a>Parametreler
 
 *bstrSrc*<br/>
-[in] A `CComBSTR` eklenecek nesne.
+'ndaki Eklenecek `CComBSTR` nesne.
 
 *pszSrc*<br/>
-[in] Eklenecek sıfır ile sonlandırılmış dize.
+'ndaki Sona eklenecek sıfır ile sonlandırılmış dize.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CComBSTR`s kullanıcının varsayılan yerel ayar bağlamında metin içeriğini eklemek karşılaştırılır. LPCOLESTR karşılaştırma yapılır kullanarak `memcmp` her bir dizenin ham verileri. Geçici bir Unicode kopyalayın sonra LPCSTR karşılaştırma aynı şekilde gerçekleştirilir *pszSrc* oluşturuldu. Son karşılaştırma işleci yalnızca NULL kapsanan dizeyi karşılaştırır.
+`CComBSTR`metin içeriğini eklemek, kullanıcının varsayılan yerel ayarı bağlamında karşılaştırılır. Lpcotastr karşılaştırması, her dizedeki ham `memcmp` verilerde kullanılarak yapılır. LPCSTR karşılaştırması, *pszSrc* 'nin geçici bir Unicode kopyası oluşturulduktan sonra aynı şekilde yürütülür. Son karşılaştırma işleci yalnızca kapsanan dizeyi NULL ile karşılaştırır.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATL_Utilities#48](../../atl/codesnippet/cpp/ccombstr-class_16.cpp)]
 
-##  <a name="operator_lt"></a>  CComBSTR::operator &lt;
+##  <a name="operator_lt"></a>CComBSTR:: işleci&lt;
 
-Karşılaştıran bir `CComBSTR` içeren bir dize.
+Bir dizeyle `CComBSTR` bir ile karşılaştırır.
 
 ```
 bool operator<(const CComBSTR& bstrSrc) const throw();
@@ -608,15 +608,15 @@ bool operator<(LPCSTR pszSrc) const throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Karşılaştırılan öğe ise TRUE döndürür küçüktür `CComBSTR` nesne; Aksi takdirde FALSE döndürür.
+Karşılaştırılan öğe `CComBSTR` nesnesinden küçükse true, değilse false döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Karşılaştırma, kullanıcının varsayılan yerel ayar kullanılarak gerçekleştirilir.
+Karşılaştırma, kullanıcının varsayılan yerel ayarı kullanılarak gerçekleştirilir.
 
-##  <a name="operator_eq"></a>  CComBSTR::operator =
+##  <a name="operator_eq"></a>CComBSTR:: operator =
 
-Kümeleri [m_str](#m_str) üyeye bir kopyası *pSrc* veya BSTR üyesi bir kopyasını *src*. Taşıma atama işlecini taşır `src` kopyalayarak olmadan.
+[M_str](#m_str) üyesini bir *pSrc* KOPYASı veya *src*'nin BSTR üyesinin bir kopyasına ayarlar. Taşıma atama işleci kopyalanmadan `src` taşınır.
 
 ```
 CComBSTR& operator= (const CComBSTR& src);
@@ -627,15 +627,15 @@ CComBSTR& operator= (CComBSTR&& src) throw(); // (Visual Studio 2017)
 
 ### <a name="remarks"></a>Açıklamalar
 
-*PSrc* parametresi bir LPCOLESTR Unicode sürümleri ya da ANSI sürümleri LPCSTR belirtir.
+*PSrc* parametresi, Unicode sürümleri IÇIN BIR LPCOYESTR veya ANSI sürümleri için LPCSTR belirtir.
 
 ### <a name="example"></a>Örnek
 
-Örneğin bakın [CComBSTR::Copy](#copy).
+[CComBSTR:: Copy](#copy)örneğine bakın.
 
-##  <a name="operator_eq_eq"></a>  CComBSTR::operator ==
+##  <a name="operator_eq_eq"></a>CComBSTR:: operator = =
 
-Karşılaştıran bir `CComBSTR` içeren bir dize. `CComBSTR`s kullanıcının varsayılan yerel ayar bağlamında metin içeriğini eklemek karşılaştırılır.
+Bir dizeyle `CComBSTR` bir ile karşılaştırır. `CComBSTR`metin içeriğini eklemek, kullanıcının varsayılan yerel ayarı bağlamında karşılaştırılır.
 
 ```
 bool operator== (const CComBSTR& bstrSrc) const throw();
@@ -647,25 +647,25 @@ bool operator== (int nNull) const throw();
 ### <a name="parameters"></a>Parametreler
 
 *bstrSrc*<br/>
-[in] A `CComBSTR` nesne.
+'ndaki Bir `CComBSTR` nesne.
 
 *pszSrc*<br/>
-[in] Sıfır ile sonlandırılmış dize.
+'ndaki Sıfır ile sonlandırılmış bir dize.
 
 *nNull*<br/>
-[in] NULL olmalıdır.
+'ndaki NULL olmalıdır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Karşılaştırılan öğe eşitse TRUE döndürür `CComBSTR` nesne; Aksi takdirde FALSE döndürür.
+Karşılaştırılan öğe `CComBSTR` nesnesine eşitse true, değilse false döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Son karşılaştırma işleci yalnızca NULL kapsanan dizeyi karşılaştırır.
+Son karşılaştırma işleci yalnızca kapsanan dizeyi NULL ile karşılaştırır.
 
-##  <a name="operator_gt"></a>  CComBSTR::operator &gt;
+##  <a name="operator_gt"></a>CComBSTR:: işleci&gt;
 
-Karşılaştıran bir `CComBSTR` içeren bir dize.
+Bir dizeyle `CComBSTR` bir ile karşılaştırır.
 
 ```
 bool operator>(const CComBSTR& bstrSrc) const throw();
@@ -673,15 +673,15 @@ bool operator>(const CComBSTR& bstrSrc) const throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Karşılaştırılan öğesi sayısından büyükse TRUE döndürür `CComBSTR` nesne; Aksi takdirde FALSE döndürür.
+Karşılaştırılan öğe `CComBSTR` nesneden büyükse true, değilse false döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Karşılaştırma, kullanıcının varsayılan yerel ayar kullanılarak gerçekleştirilir.
+Karşılaştırma, kullanıcının varsayılan yerel ayarı kullanılarak gerçekleştirilir.
 
-##  <a name="readfromstream"></a>  CComBSTR::ReadFromStream
+##  <a name="readfromstream"></a>CComBSTR:: ReadFromStream
 
-Kümeleri [m_str](#m_str) üye belirtilen akışında bulunan BSTR.
+[M_str](#m_str) üyesini belirtilen AKıŞTA bulunan BSTR 'ye ayarlar.
 
 ```
 HRESULT ReadFromStream(IStream* pStream) throw();
@@ -690,23 +690,23 @@ HRESULT ReadFromStream(IStream* pStream) throw();
 ### <a name="parameters"></a>Parametreler
 
 *pStream*<br/>
-[in] Bir işaretçi [IStream](/windows/desktop/api/objidl/nn-objidl-istream) akış verilerini içeren bir arabirimdeki.
+'ndaki Verileri içeren akıştaki [IStream](/windows/win32/api/objidl/nn-objidl-istream) arabirimine yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT değerini.
+Standart bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`ReadToStream` geçerli konumda bir çağrı tarafından yazılan veri biçimi ile uyumlu olacak şekilde akış içeriğini gerektirir [WriteToStream](#writetostream).
+`ReadToStream`bir [WriteToStream](#writetostream)çağrısıyla yazılmış veri biçimiyle uyumlu olması için geçerli konumdaki akışın içeriğini gerektirir.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATL_Utilities#44](../../atl/codesnippet/cpp/ccombstr-class_17.cpp)]
 
-##  <a name="tolower"></a>  CComBSTR::ToLower
+##  <a name="tolower"></a>CComBSTR:: ToLower
 
-Kapsanan dizeyi küçük harfe dönüştürür.
+İçerilen dizeyi küçük harfe dönüştürür.
 
 ```
 HRESULT ToLower() throw();
@@ -714,15 +714,15 @@ HRESULT ToLower() throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT değerini.
+Standart bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: `CharLowerBuff` dönüştürme nasıl gerçekleştirildiğini hakkında daha fazla bilgi.
+Dönüştürmenin `CharLowerBuff` nasıl gerçekleştirildiği hakkında daha fazla bilgi için bkz.
 
-##  <a name="toupper"></a>  CComBSTR::ToUpper
+##  <a name="toupper"></a>CComBSTR:: ToUpper
 
-Kapsanan dizeyi büyük harfe dönüştürür.
+İçerilen dizeyi büyük harfe dönüştürür.
 
 ```
 HRESULT ToUpper() throw();
@@ -730,15 +730,15 @@ HRESULT ToUpper() throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT değerini.
+Standart bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: `CharUpperBuff` dönüştürme nasıl gerçekleştirildiğini hakkında daha fazla bilgi.
+Dönüştürmenin `CharUpperBuff` nasıl gerçekleştirildiği hakkında daha fazla bilgi için bkz.
 
-##  <a name="writetostream"></a>  CComBSTR::WriteToStream
+##  <a name="writetostream"></a>CComBSTR:: WriteToStream
 
-Kaydeder [m_str](#m_str) bir akışa üyesi.
+[M_str](#m_str) üyesini bir akışa kaydeder.
 
 ```
 HRESULT WriteToStream(IStream* pStream) throw();
@@ -747,15 +747,15 @@ HRESULT WriteToStream(IStream* pStream) throw();
 ### <a name="parameters"></a>Parametreler
 
 *pStream*<br/>
-[in] Bir işaretçi [IStream](/windows/desktop/api/objidl/nn-objidl-istream) arabirimdeki bir akış.
+'ndaki Akıştaki IStream arabirimine [](/windows/win32/api/objidl/nn-objidl-istream) yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT değerini.
+Standart bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-BSTR içeriğinden stream kullanarak yeniden oluşturabilirsiniz [ReadFromStream](#readfromstream) işlevi.
+[ReadFromStream](#readfromstream) işlevini kullanarak akışın IÇERIĞINDEN bir BSTR 'yi yeniden oluşturabilirsiniz.
 
 ### <a name="example"></a>Örnek
 
@@ -763,5 +763,5 @@ BSTR içeriğinden stream kullanarak yeniden oluşturabilirsiniz [ReadFromStream
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)<br/>
-[ATL ve MFC dize dönüşüm makroları](string-conversion-macros.md)
+[Sınıfa genel bakış](../../atl/atl-class-overview.md)<br/>
+[ATL ve MFC dize dönüştürme makroları](string-conversion-macros.md)

@@ -22,16 +22,16 @@ helpviewer_keywords:
 - CMFCColorDialog [MFC], SetPageOne
 - CMFCColorDialog [MFC], SetPageTwo
 ms.assetid: 235bbbbc-a3b1-46e0-801b-fb55093ec579
-ms.openlocfilehash: 1b9f57e46d5ac74dd52f7ddb7ebd90f8888891e3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9e018c122cded09e5366c3b349525fa7cc004897
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62403743"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69505336"
 ---
 # <a name="cmfccolordialog-class"></a>CMFCColorDialog sınıfı
 
-`CMFCColorDialog` Sınıfı, bir renk seçimi iletişim kutusunu gösterir.
+`CMFCColorDialog` Sınıf bir renk seçimi iletişim kutusunu temsil eder.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -45,44 +45,44 @@ class CMFCColorDialog : public CDialogEx
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CMFCColorDialog::CMFCColorDialog](#cmfccolordialog)|Oluşturur bir `CMFCColorDialog` nesne.|
+|[CMFCColorDialog:: CMFCColorDialog](#cmfccolordialog)|Bir `CMFCColorDialog` nesnesi oluşturur.|
 |`CMFCColorDialog::~CMFCColorDialog`|Yıkıcı.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CMFCColorDialog::GetColor](#getcolor)|Geçerli seçili rengi döndürür.|
-|[CMFCColorDialog::GetPalette](#getpalette)|Renk paleti döndürür.|
-|`CMFCColorDialog::PreTranslateMessage`|Pencere iletileri için dağıtılmadan önce çevirir [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) ve [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage) Windows işlevleri. Söz dizimi ve daha fazla bilgi için bkz: [CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage). (Geçersiz kılmaları `CDialogEx::PreTranslateMessage`.)|
-|[CMFCColorDialog::RebuildPalette](#rebuildpalette)|Sistem paletinden bir palet türetilir.|
-|[CMFCColorDialog::SetCurrentColor](#setcurrentcolor)|Geçerli seçili rengini ayarlar.|
-|[CMFCColorDialog::SetNewColor](#setnewcolor)|Belirtilen bir RGB değeri en eşdeğer rengini ayarlar.|
-|[CMFCColorDialog::SetPageOne](#setpageone)|İlk özellik sayfası için bir RGB değeri seçer.|
-|[CMFCColorDialog::SetPageTwo](#setpagetwo)|İkinci özellik sayfası için bir RGB değeri seçer.|
+|[CMFCColorDialog:: GetColor](#getcolor)|Seçilen geçerli rengi döndürür.|
+|[CMFCColorDialog:: GetPalette](#getpalette)|Rengin paletini döndürür.|
+|`CMFCColorDialog::PreTranslateMessage`|[TranslateMessage](/windows/win32/api/winuser/nf-winuser-translatemessage) ve [DispatchMessage](/windows/win32/api/winuser/nf-winuser-dispatchmessage) Windows işlevlerine dağıtılmadan önce pencere iletilerini çevirir. Sözdizimi ve daha fazla bilgi için bkz. [CWnd::P reTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage). (Geçersiz `CDialogEx::PreTranslateMessage`kılmalar.)|
+|[CMFCColorDialog:: RebuildPalette](#rebuildpalette)|Sistem paletinden bir palet türetir.|
+|[CMFCColorDialog:: SetCurrentColor](#setcurrentcolor)|Geçerli seçili rengi ayarlar.|
+|[CMFCColorDialog:: SetNewColor](#setnewcolor)|Belirtilen RGB değerine en çok denk rengi ayarlar.|
+|[CMFCColorDialog:: SetPageOne](#setpageone)|İlk özellik sayfası için bir RGB değeri seçer.|
+|[CMFCColorDialog:: SetPageTwo](#setpagetwo)|İkinci özellik sayfası için bir RGB değeri seçer.|
 
 ### <a name="protected-data-members"></a>Korumalı veri üyeleri
 
 |Ad|Açıklama|
 |----------|-----------------|
-|`m_bIsMyPalette`|Renk seçimi iletişim kutusunu renk paletini kullanıyorsa TRUE veya FALSE iletişim kutusu içinde belirtilen bir palet kullanıyorsa `CMFCColorDialog` Oluşturucusu.|
-|`m_bPickerMode`|Kullanıcı bir renk seçimi iletişim kutusundan seçim sırasında TRUE; Aksi takdirde FALSE.|
-|`m_btnColorSelect`|Kullanıcının seçtiği bir renk düğmesi.|
-|`m_CurrentColor`|Şu anda seçili rengi.|
-|`m_hcurPicker`|İmleç bir renk seçmek için kullanılır.|
-|`m_NewColor`|Olası kalıcı olarak seçili veya özgün renge geri renk seçili.|
-|`m_pColourSheetOne`|Renk seçimi özellik sayfasının ilk özellik sayfası için bir işaretçi.|
-|`m_pColourSheetTwo`|Renk seçimi özellik sayfasının ikinci özellik sayfası için bir işaretçi.|
-|`m_pPalette`|Geçerli mantıksal paletini.|
-|`m_pPropSheet`|Renk seçimi iletişim kutusu için özellik sayfası için bir işaretçi.|
-|`m_wndColors`|Bir renk seçici denetim nesnesi.|
-|`m_wndStaticPlaceHolder`|Renk Seçici özellik sayfası için bir yer tutucudur statik denetimi.|
+|`m_bIsMyPalette`|Renk seçimi iletişim kutusu kendi renk paletini kullanıyorsa true, iletişim kutusu `CMFCColorDialog` oluşturucuda belirtilen bir paleti kullanıyorsa false.|
+|`m_bPickerMode`|Kullanıcı seçim iletişim kutusundan bir renk seçerken doğru. Aksi takdirde, FALSE.|
+|`m_btnColorSelect`|Kullanıcının seçtiği renk düğmesi.|
+|`m_CurrentColor`|Şu anda seçili olan renk.|
+|`m_hcurPicker`|Bir renk seçmek için kullanılan imleç.|
+|`m_NewColor`|Kalıcı olarak seçilebilen veya orijinal renge geri döndürülebilmesi olası seçili renk.|
+|`m_pColourSheetOne`|Renk seçimi Özellik sayfasının ilk özellik sayfasına yönelik bir işaretçi.|
+|`m_pColourSheetTwo`|Renk seçimi Özellik sayfasının ikinci özellik sayfasına yönelik bir işaretçi.|
+|`m_pPalette`|Geçerli mantıksal palet.|
+|`m_pPropSheet`|Renk seçimi iletişim kutusu için özellik sayfasına yönelik bir işaretçi.|
+|`m_wndColors`|Renk Seçici denetim nesnesi.|
+|`m_wndStaticPlaceHolder`|Renk seçici Özellik sayfası için yer tutucu olan statik bir denetim.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Renk seçimi iletişim kutusunu bir özellik sayfasını iki sayfa olarak görüntülenir. İlk sayfasında, sistem paletten standart bir renk seçin; ikinci sayfasında, özel bir renk seçin.
+Renk seçimi iletişim kutusu, iki sayfalı bir özellik sayfası olarak görüntülenir. İlk sayfada sistem paletinden standart bir renk seçersiniz; İkinci sayfada özel bir renk seçersiniz.
 
-Oluşturulabilir bir `CMFCColorDialog` yığında nesne ve sonra çağrı `DoModal`, ilk renk bir parametre olarak geçirerek `CMFCColorDialog` Oluşturucusu. Renk seçimi iletişim kutusunu daha sonra birkaç oluşturur [CMFCColorPickerCtrl sınıfı](../../mfc/reference/cmfccolorpickerctrl-class.md) her renk paletini işlemek için nesneler.
+Yığında bir `CMFCColorDialog` nesne oluşturabilir ve sonra ilk rengi `CMFCColorDialog` oluşturucuya bir parametre `DoModal`olarak geçirerek çağırın. Renk seçimi iletişim kutusu, her renk paletini işlemek için birkaç [CMFCColorPickerCtrl sınıf](../../mfc/reference/cmfccolorpickerctrl-class.md) nesnesi oluşturur.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -100,17 +100,17 @@ Oluşturulabilir bir `CMFCColorDialog` yığında nesne ve sonra çağrı `DoMod
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, çeşitli yöntemlerle kullanarak renkli bir iletişimde yapılandırma işlemi gösterilmektedir `CMFCColorDialog` sınıfı. Örnek, geçerli ve yeni renklerinin iletişim nasıl ayarlanacağını ve seçili rengin kırmızı, yeşil ve mavi bileşenlerinin renk iletişim kutusu iki özellik sayfalarında ayarlama işlemini gösterir. Bu örneğin parçasıdır [yeni denetimler örnek](../../overview/visual-cpp-samples.md).
+Aşağıdaki örnek, `CMFCColorDialog` sınıfında çeşitli yöntemler kullanarak bir renk iletişim kutusunun nasıl yapılandırılacağını gösterir. Örnekte, iletişim kutusunun geçerli ve yeni renklerinin nasıl ayarlanacağı ve renk iletişim kutusunun iki özellik sayfasında seçili bir rengin kırmızı, yeşil ve mavi bileşenlerinin nasıl ayarlanacağı gösterilmektedir. Bu örnek, [Yeni denetimler örneğinin](../../overview/visual-cpp-samples.md)bir parçasıdır.
 
 [!code-cpp[NVC_MFC_NewControls#3](../../mfc/reference/codesnippet/cpp/cmfccolordialog-class_1.cpp)]
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxcolordialog.h
+**Üstbilgi:** afxcolordialog. h
 
-##  <a name="cmfccolordialog"></a>  CMFCColorDialog::CMFCColorDialog
+##  <a name="cmfccolordialog"></a>CMFCColorDialog:: CMFCColorDialog
 
-Oluşturur bir `CMFCColorDialog` nesne.
+Bir `CMFCColorDialog` nesnesi oluşturur.
 
 ```
 CMFCColorDialog(
@@ -123,24 +123,24 @@ CMFCColorDialog(
 ### <a name="parameters"></a>Parametreler
 
 *clrInit*<br/>
-[in] Varsayılan renk seçimi. Değer belirtilmezse, varsayılan RGB(0,0,0) (siyah) olur.
+'ndaki Varsayılan renk seçimi. Değer belirtilmemişse, varsayılan RGB 'dir (0, 0, 0) (siyah).
 
-*CertOpenStore*<br/>
-[in] Ayrılmış.
+*dwFlags*<br/>
+'ndaki Ayrılamadı.
 
 *pParentWnd*<br/>
-[in] İletişim kutusunun üst veya sahip penceresine bir işaretçi.
+'ndaki İletişim kutusunun üst veya sahip penceresine yönelik bir işaretçi.
 
 *hPal*<br/>
-[in] Renk paleti işleyici.
+'ndaki Renk paleti için bir tanıtıcı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="getcolor"></a>  CMFCColorDialog::GetColor
+##  <a name="getcolor"></a>CMFCColorDialog:: GetColor
 
-Renk iletişim kutusundan kullanıcının seçtiği rengini alır.
+Kullanıcının renk iletişim kutusundan seçtiği rengi alır.
 
 ```
 COLORREF GetColor() const;
@@ -148,15 +148,15 @@ COLORREF GetColor() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-A [COLORREF](/windows/desktop/gdi/colorref) renk iletişim kutusunda seçilen renk RGB bilgilerini içeren bir değer.
+Renk iletişim kutusunda seçilen rengin RGB bilgilerini içeren [colorref](/windows/win32/gdi/colorref) değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağırdıktan sonra bu işlevi çağırın `DoModal` yöntemi.
+`DoModal` Yöntemi çağırdıktan sonra bu işlevi çağırın.
 
-##  <a name="getpalette"></a>  CMFCColorDialog::GetPalette
+##  <a name="getpalette"></a>CMFCColorDialog:: GetPalette
 
-Geçerli renk iletişim kutusunda kullanılabilir olan renk paletini alır.
+Geçerli renk iletişim kutusunda bulunan renk paletini alır.
 
 ```
 CPalette* GetPalette() const;
@@ -164,23 +164,23 @@ CPalette* GetPalette() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir işaretçi `CPalette` belirtilen nesne `CMFCColorDialog` Oluşturucusu.
+Oluşturucuda`CMFCColorDialog` belirtilen `CPalette` nesneye yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanıcı seçebilir renklerin renk paletini belirtir.
+Renk paleti, kullanıcının seçecan renkleri belirtir.
 
-##  <a name="rebuildpalette"></a>  CMFCColorDialog::RebuildPalette
+##  <a name="rebuildpalette"></a>CMFCColorDialog:: RebuildPalette
 
-Sistem paletinden bir palet türetilir.
+Sistem paletinden bir palet türetir.
 
 ```
 void RebuildPalette();
 ```
 
-##  <a name="setcurrentcolor"></a>  CMFCColorDialog::SetCurrentColor
+##  <a name="setcurrentcolor"></a>CMFCColorDialog:: SetCurrentColor
 
-İletişim kutusu geçerli rengini ayarlar.
+İletişim kutusunun geçerli rengini ayarlar.
 
 ```
 void SetCurrentColor(COLORREF rgb);
@@ -188,14 +188,14 @@ void SetCurrentColor(COLORREF rgb);
 
 ### <a name="parameters"></a>Parametreler
 
-*RGB*<br/>
-[in] Bir RGB renk değeri
+*'ye*<br/>
+'ndaki Bir RGB renk değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="setnewcolor"></a>  CMFCColorDialog::SetNewColor
+##  <a name="setnewcolor"></a>CMFCColorDialog:: SetNewColor
 
-Geçerli renk en benzer geçerli paletindeki rengini ayarlar.
+Geçerli rengi geçerli palet içindeki renge en benzer şekilde ayarlar.
 
 ```
 void SetNewColor(COLORREF rgb);
@@ -203,14 +203,14 @@ void SetNewColor(COLORREF rgb);
 
 ### <a name="parameters"></a>Parametreler
 
-*RGB*<br/>
-[in] A [COLORREF](/windows/desktop/gdi/colorref) bir RGB rengi belirtir.
+*'ye*<br/>
+'ndaki Bir RGB rengi belirten [colorref](/windows/win32/gdi/colorref) .
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="setpageone"></a>  CMFCColorDialog::SetPageOne
+##  <a name="setpageone"></a>CMFCColorDialog:: SetPageOne
 
-Açıkça Seçili rengin kırmızı, yeşil ve mavi bileşenlerinin renkli bir iletişimde ilk özellik sayfasında belirtir.
+Açık olarak, bir renk iletişim kutusunun ilk özellik sayfasında seçili rengin kırmızı, yeşil ve mavi bileşenlerini belirtir.
 
 ```
 void SetPageOne(
@@ -222,19 +222,19 @@ void SetPageOne(
 ### <a name="parameters"></a>Parametreler
 
 *R*<br/>
-[in] Kırmızı bileşeni RGB değeri belirtir.
+'ndaki RGB değerinin kırmızı bileşenini belirtir.
 
 *G*<br/>
-[in] Yeşil bileşeni RGB değeri belirtir.
+'ndaki RGB değerinin yeşil bileşenini belirtir.
 
 *B*<br/>
-[in] Mavi bileşeni RGB değeri belirtir.
+'ndaki RGB değerinin mavi bileşenini belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="setpagetwo"></a>  CMFCColorDialog::SetPageTwo
+##  <a name="setpagetwo"></a>CMFCColorDialog:: SetPageTwo
 
-Açıkça Seçili rengin kırmızı, yeşil ve mavi bileşenlerinin renkli bir iletişimde ikinci özellik sayfasında belirtir.
+Açık olarak, bir renk iletişim kutusunun ikinci özellik sayfasında seçili rengin kırmızı, yeşil ve mavi bileşenlerini belirtir.
 
 ```
 void SetPageTwo(
@@ -246,13 +246,13 @@ void SetPageTwo(
 ### <a name="parameters"></a>Parametreler
 
 *R*<br/>
-[in] RGB değeri kırmızı bir bileşeni belirtir.
+'ndaki RGB değerinin kırmızı bileşenini belirtir
 
 *G*<br/>
-[in] Bir RGB değeri yeşil bir bileşeni belirtir.
+'ndaki RGB değerinin yeşil bir bileşenini belirtir
 
 *B*<br/>
-[in] Bir RGB değeri mavi bir bileşeni belirtir.
+'ndaki Bir RGB değerinin mavi bileşenini belirtir
 
 ### <a name="remarks"></a>Açıklamalar
 

@@ -7,29 +7,29 @@ helpviewer_keywords:
 - CListCtrl class [MFC], image lists
 - list items [MFC], image lists
 ms.assetid: 317d095f-f978-47da-acb6-7bfe7dd3bc69
-ms.openlocfilehash: 1679b5c59c6dd55ca47c70ea7c880493304ebf4e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 77dd2f6a056ca74ff3334878a9cf1ef51c773335
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62365279"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69508356"
 ---
 # <a name="list-items-and-image-lists"></a>Liste Öğeleri ve Görüntü Listeleri
 
-Bir "öğesinde" liste denetimi ([CListCtrl](../mfc/reference/clistctrl-class.md)) bir simge bir etiket ve büyük olasılıkla diğer bilgiler ("alt öğesi") oluşur.
+Liste denetimindeki bir "öğe" ([CListCtrl](../mfc/reference/clistctrl-class.md)) bir simge, etiket ve muhtemelen diğer bilgilerden oluşur ("alt öğeler" içinde).
 
-Liste denetim öğeleri için simgeler, görüntü listeleri yer alır. Bir görüntü listesi simge görünümünde kullanılan tam boyutlu simgeler içerir. İkinci, isteğe bağlı, görüntü listesi denetimi diğer görünümleri kullanmak için aynı simgeleri daha küçük sürümlerini içerir. İsteğe bağlı üçüncü bir liste gibi belirli görünümlerinde küçük simgeleri önünde görüntülemek için onay kutularını "state" görüntüleri içerir. Dördüncü isteğe bağlı bir liste içinde tek tek üstbilgi öğeleri listesi denetiminin görüntülenen görüntüleri içerir.
+Liste denetim öğelerinin simgeleri resim listelerinde bulunur. Bir görüntü listesi, simge görünümünde kullanılan tam boyutlu simgeleri içerir. İkinci bir isteğe bağlı görüntü listesi, denetimin diğer görünümlerinde kullanmak için aynı simgelerin daha küçük sürümlerini içerir. Üçüncü bir isteğe bağlı liste, belirli görünümlerde küçük simgelerin önünde görüntülenmek üzere, onay kutuları gibi "durum" görüntülerini içerir. Dördüncü bir isteğe bağlı liste, liste denetiminin tek başlık öğelerinde görüntülenen görüntüleri içerir.
 
 > [!NOTE]
->  Bir liste görünümü denetimi LVS_SHAREIMAGELISTS stiliyle oluşturduysanız, artık kullanımda olduğunda görüntü listeleri yok etmek sorumludur. Birden fazla liste görünümü denetimi aynı görüntü atamanız durumunda bu stil listeleri belirtin. Aksi takdirde, birden fazla denetim aynı görüntü listesi yok edilemiyor deneyebilir.
+>  LVS_SHAREIMAGELISTS stiliyle bir liste görünümü denetimi oluşturulduysa, artık kullanımda olmadığında görüntü listelerinin yok edilmesi sizin sorumluluğunuzdadır. Aynı görüntü listelerini birden çok liste görünümü denetimine atarsanız, bu stili belirtin; Aksi halde, birden fazla denetim aynı görüntü listesini yok etme deneyebilir.
 
-Liste öğeleri hakkında daha fazla bilgi için bkz. [liste görünümü görüntü listeler](/windows/desktop/Controls/using-list-view-controls) ve [öğeler ve alt öğeleri](/windows/desktop/Controls/using-list-view-controls) Windows SDK. Ayrıca bkz [Cımagelist](../mfc/reference/cimagelist-class.md) içinde *MFC başvurusu* ve [Cımagelist kullanma](../mfc/using-cimagelist.md) makaleler bu ailesi.
+Liste öğeleri hakkında daha fazla bilgi için bkz. [liste görünümü görüntü listeleri](/windows/win32/Controls/using-list-view-controls) ve [öğe ve](/windows/win32/Controls/using-list-view-controls) alt öğeleri Windows SDK. Ayrıca, *MFC başvurusu* ' nda sınıf [CImageList](../mfc/reference/cimagelist-class.md) ' i ve bu makale ailesinde [CImageList](../mfc/using-cimagelist.md) ' i kullanma bölümüne bakın.
 
-Liste denetimi oluşturmak için görüntü listeleri listeye yeni öğeler eklediğinizde, kullanılacak sağlamanız gerekir. Aşağıdaki örnek, bu yordamı gösterir. burada *m_pImagelist* bir işaretçi türü `CImageList` ve *m_listctrl* olduğu bir `CListCtrl` veri üyesi.
+Liste denetimi oluşturmak için, listeye yeni öğeler eklediğinizde kullanılacak görüntü listeleri sağlamanız gerekir. Aşağıdaki örnek, *m_pImagelist* `CImageList` türünde bir işaretçi ve *m_listCtrl* 'in bir `CListCtrl` veri üyesi olduğu bu yordamı gösterir.
 
 [!code-cpp[NVC_MFCControlLadenDialog#19](../mfc/codesnippet/cpp/list-items-and-image-lists_1.cpp)]
 
-Ancak, liste görünümü veya liste denetimi simgeleri göstermek planlamıyorsanız, görüntü listeleri gerekmez.
+Ancak, liste görünümünüzde veya liste denetiminizdeki simgeleri görüntülemeyi düşünmüyorsanız, görüntü listelerine ihtiyacınız yoktur.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

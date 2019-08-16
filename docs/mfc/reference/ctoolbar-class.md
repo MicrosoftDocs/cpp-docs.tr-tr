@@ -44,16 +44,16 @@ helpviewer_keywords:
 - CToolBar [MFC], SetHeight
 - CToolBar [MFC], SetSizes
 ms.assetid: e868da26-5e07-4607-9651-e2f863ad9059
-ms.openlocfilehash: aa49ebed2d48d9818c2d39ae4894d8caf1fbbf81
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4977cbe0b749724f999d6d7089d46f12d1e2963e
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62323654"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69502384"
 ---
 # <a name="ctoolbar-class"></a>CToolBar sınıfı
 
-Bit eşlemli düğmeler ve isteğe bağlı ayırıcılar içeren bir satırın sahip denetim çubukları.
+Bit eşlenmiş düğmelerin ve isteğe bağlı ayırıcıların bulunduğu denetim çubukları.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -67,81 +67,81 @@ class CToolBar : public CControlBar
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CToolBar::CToolBar](#ctoolbar)|Oluşturur bir `CToolBar` nesne.|
+|[CToolBar:: CToolBar](#ctoolbar)|Bir `CToolBar` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CToolBar::CommandToIndex](#commandtoindex)|Belirtilen komut kimliği. bir düğmeyle indisini döndürür|
-|[CToolBar::Create](#create)|Windows araç çubuğu oluşturur ve ona ekler `CToolBar` nesne.|
-|[CToolBar::CreateEx](#createex)|Oluşturur bir `CToolBar` embedded için ek stilleri nesnesiyle `CToolBarCtrl` nesne.|
-|[CToolBar::GetButtonInfo](#getbuttoninfo)|Kimliği, stili ve bir düğmeyi görüntü sayısını alır.|
-|[CToolBar::GetButtonStyle](#getbuttonstyle)|Bir düğmenin stilini alır.|
-|[CToolBar::GetButtonText](#getbuttontext)|Bir düğme üzerinde görünen metni alır.|
-|[CToolBar::GetItemID](#getitemid)|Bir düğme veya ayırıcı verilen dizindeki komut Kimliğini döndürür.|
-|[CToolBar::GetItemRect](#getitemrect)|Belirtilen dizindeki öğe için görünen dikdörtgen alır.|
-|[CToolBar::GetToolBarCtrl](#gettoolbarctrl)|Temel alınan bir ortak denetimi doğrudan erişim sağlar.|
-|[CToolBar::LoadBitmap](#loadbitmap)|Bit eşlem bit eşlem düğmesi görüntüleri içeren yükler.|
-|[CToolBar::LoadToolBar](#loadtoolbar)|Kaynak Düzenleyicisi ile oluşturulmuş bir araç çubuğu kaynağı yükler.|
-|[CToolBar::SetBitmap](#setbitmap)|Bit eşlemli görüntüyü ayarlar.|
-|[CToolBar::SetButtonInfo](#setbuttoninfo)|Kimliği, stili ve bir düğmeyi görüntü sayısını ayarlar.|
-|[CToolBar::SetButtons](#setbuttons)|Stilleri ve bit eşlem düğmesi yansımalar dizinini Ayarlar düğmesi.|
-|[CToolBar::SetButtonStyle](#setbuttonstyle)|Bir düğmenin stilini ayarlar.|
-|[CToolBar::SetButtonText](#setbuttontext)|Bir düğme üzerinde görünen metin ayarlar.|
-|[CToolBar::SetHeight](#setheight)|Araç çubuğunun yüksekliği ayarlar.|
-|[CToolBar::SetSizes](#setsizes)|Düğmeler ve bunların bit eşlemler boyutunu ayarlar.|
+|[CToolBar:: Commandtoındex](#commandtoindex)|Verilen komut KIMLIKLI bir düğmenin dizinini döndürür.|
+|[CToolBar:: Create](#create)|Windows araç çubuğunu oluşturur ve `CToolBar` nesneye ekler.|
+|[CToolBar:: CreateEx](#createex)|`CToolBar` Katıştırılmış`CToolBarCtrl` nesne için ek stillere sahip bir nesne oluşturur.|
+|[CToolBar:: GetButtonInfo](#getbuttoninfo)|Bir düğmenin KIMLIĞINI, stilini ve resim numarasını alır.|
+|[CToolBar:: GetButtonStyle](#getbuttonstyle)|Bir düğmenin stilini alır.|
+|[CToolBar:: GetButtonText](#getbuttontext)|Bir düğme üzerinde görünecek metni alır.|
+|[CToolBar:: GetItemID](#getitemid)|Verilen dizindeki bir düğmenin veya ayırıcının komut KIMLIĞINI döndürür.|
+|[CToolBar:: GetItemRect](#getitemrect)|Verilen dizindeki öğe için görüntüleme dikdörtgenini alır.|
+|[CToolBar:: GetToolBarCtrl](#gettoolbarctrl)|Temel alınan ortak denetime doğrudan erişim sağlar.|
+|[CToolBar:: LoadBitmap](#loadbitmap)|Bit eşlem düğmesi görüntüleri içeren bit eşlemi yükler.|
+|[CToolBar:: LoadToolBar](#loadtoolbar)|Kaynak Düzenleyicisi ile oluşturulan bir araç çubuğu kaynağını yükler.|
+|[CToolBar:: SetBit eşlem](#setbitmap)|Bit eşlemeli bir görüntü ayarlar.|
+|[CToolBar:: SetButtonInfo](#setbuttoninfo)|Bir düğmenin KIMLIĞINI, stilini ve resim numarasını ayarlar.|
+|[CToolBar:: SetButtons](#setbuttons)|Düğme stillerini ve bit eşlem içindeki düğme görüntülerinin dizinini ayarlar.|
+|[CToolBar:: SetButtonStyle](#setbuttonstyle)|Bir düğmenin stilini ayarlar.|
+|[CToolBar:: SetButtonText](#setbuttontext)|Bir düğme üzerinde görünecek metni ayarlar.|
+|[CToolBar:: SetHeight](#setheight)|Araç çubuğunun yüksekliğini ayarlar.|
+|[CToolBar:: Setboyutlar](#setsizes)|Düğmelerin ve bit eşlemlerinin boyutlarını ayarlar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Düğmeleri pushbuttons, onay kutusu düğmeleri veya radyo düğmeleri gibi davranabilir. `CToolBar` sınıfından türetilen çerçeve pencere nesneleri genellikle katıştırılmış üyeleri nesnelerdir [CFrameWnd](../../mfc/reference/cframewnd-class.md) veya [CMDIFrameWnd](../../mfc/reference/cmdiframewnd-class.md).
+Düğmeler, pushbuttons, onay kutusu düğmeleri veya radyo düğmeleri gibi davranabilir. `CToolBar`nesneler, genellikle [CFrameWnd](../../mfc/reference/cframewnd-class.md) veya [CMDIFrameWnd](../../mfc/reference/cmdiframewnd-class.md)sınıfından türetilmiş çerçeve pencere nesnelerinin katıştırılmış üyeleridir.
 
-[CToolBar::GetToolBarCtrl](#gettoolbarctrl), üye işlevi yeni MFC 4.0 için araç çubuğu özelleştirme ve ek işlevsellik için Windows ortak denetim destek avantajlarından yararlanmak sağlar. `CToolBar` üye işlevleri, çoğu Windows ortak denetimleri işlevlerini sağlar; Ancak, çağırdığınızda `GetToolBarCtrl`, çubuklarınızı Windows 95/98 araç çubukları özelliklerini daha da verebilirsiniz. Çağırdığınızda `GetToolBarCtrl`, bir başvuru döndürür bir `CToolBarCtrl` nesne. Bkz: [CToolBarCtrl](../../mfc/reference/ctoolbarctrl-class.md) Windows ortak denetimleri kullanma araç çubukları tasarlama hakkında daha fazla bilgi için. Ortak Denetimler hakkında daha fazla genel bilgi için bkz: [ortak denetimleri](/windows/desktop/Controls/common-controls-intro) Windows SDK.
+[CToolBar:: GetToolBarCtrl](#gettoolbarctrl), MFC 4,0 ' ye yeni bir üye Işlevi, Windows ortak denetim 'in araç çubuğu özelleştirmesi ve ek işlevler için destek avantajlarından yararlanmanızı sağlar. `CToolBar`üye işlevleri, Windows ortak denetimleri işlevlerinin çoğunu sağlar; Ancak, öğesini çağırdığınızda `GetToolBarCtrl`Windows 95/98 araç çubuklarının özelliklerine daha da sahip olan araç çubuklarınızı sağlayabilirsiniz. Öğesini çağırdığınızda `GetToolBarCtrl`, bir `CToolBarCtrl` nesnesine bir başvuru döndürür. Windows ortak denetimleri kullanarak araç çubukları tasarlama hakkında daha fazla bilgi için bkz. [CToolBarCtrl](../../mfc/reference/ctoolbarctrl-class.md) . Ortak denetimler hakkında daha fazla genel bilgi için bkz. Windows SDK [ortak denetimleri](/windows/win32/Controls/common-controls-intro) .
 
-Visual C++ araç oluşturmak için iki yöntem sunar. Kaynak Düzenleyicisi'ni kullanarak bir araç çubuğu kaynağı oluşturmak için aşağıdaki adımları izleyin:
+Görsel C++ , bir araç çubuğu oluşturmak için size iki yöntem sunar. Kaynak düzenleyicisini kullanarak bir araç çubuğu kaynağı oluşturmak için aşağıdaki adımları izleyin:
 
-1. Araç çubuğu kaynağı oluşturun.
+1. Bir araç çubuğu kaynağı oluşturun.
 
-1. Oluşturmak `CToolBar` nesne.
+1. `CToolBar` Nesnesini oluşturun.
 
-1. Çağrı [Oluştur](#create) (veya [CreateEx](#createex)) Windows araç çubuğu oluşturma ve buna eklemek için işlevi `CToolBar` nesne.
+1. Windows araç çubuğunu oluşturmak ve `CToolBar` nesneye iliştirmek için [Create](#create) (veya [CreateEx](#createex)) işlevini çağırın.
 
-1. Çağrı [LoadToolBar](#loadtoolbar) araç çubuğu kaynağı yüklenemedi.
+1. Araç çubuğu kaynağını yüklemek için [LoadToolBar](#loadtoolbar) çağrısı yapın.
 
 Aksi takdirde, aşağıdaki adımları izleyin:
 
-1. Oluşturmak `CToolBar` nesne.
+1. `CToolBar` Nesnesini oluşturun.
 
-1. Çağrı [Oluştur](#create) (veya [CreateEx](#createex)) Windows araç çubuğu oluşturma ve buna eklemek için işlevi `CToolBar` nesne.
+1. Windows araç çubuğunu oluşturmak ve `CToolBar` nesneye iliştirmek için [Create](#create) (veya [CreateEx](#createex)) işlevini çağırın.
 
-1. Çağrı [LoadBitmap](#loadbitmap) araç çubuğu düğmesi görüntüleri içeren bit eşlem yüklenemiyor.
+1. Araç çubuğu düğme görüntülerini içeren bit eşlemi yüklemek için [LoadBitmap](#loadbitmap) çağrısı yapın.
 
-1. Çağrı [SetButtons](#setbuttons) düğme stilini ayarlayın ve her düğme bit eşlemde görüntü ile ilişkilendirin.
+1. Düğme stilini ayarlamak ve her düğmeyi bit eşlemdeki bir görüntüyle ilişkilendirmek için [SetButtons](#setbuttons) çağırın.
 
-Araç çubuğunda düğme resimlerini her düğme için bir görüntü içermelidir bir bit eşlem alınmıştır. Tüm görüntüleri, aynı boyutta olmalıdır; 16 piksel genişliğinde ve 15 piksel yüksekliğinde varsayılan değerdir. Görüntüler, bit eşlem yan yana olmalıdır.
+Araç çubuğundaki tüm düğme görüntüleri, her düğme için bir resim içermesi gereken bir bit eşlemden alınır. Tüm görüntüler aynı boyutta olmalıdır; Varsayılan değer 16 piksel genişliğinde ve 15 piksel yüksekliğinde olur. Görüntülerin bit eşlemde yan yana olması gerekir.
 
-`SetButtons` İşlev denetimi kimlikleri ve dizideki öğelerin sayısını belirten bir tamsayı dizisi için bir işaretçi alır. İşlevi, karşılık gelen öğe dizinin değerine her düğmenin Kimliğini ayarlar ve her düğme bit eşleminde düğmenin görüntü konumu belirtir bir görüntü dizini atar. Bir dizi öğesine ID_SEPARATOR değeri varsa, hiçbir görüntü dizini atanır.
+`SetButtons` İşlevi bir denetim kimliği dizisine bir işaretçi ve dizideki öğelerin sayısını belirten bir tamsayı alır. İşlevi, her düğmenin KIMLIĞINI dizinin karşılık gelen öğesinin değerine ayarlar ve her düğmeye, düğme resminin bit eşlemdeki konumunu belirten bir resim dizini atar. Bir dizi öğesinin ID_SEPARATOR değeri varsa, hiçbir görüntü dizini atanmaz.
 
-Bit eşlem resmi genellikle sipariş ekrandaki çizileceğini ancak kullanabilirsiniz sırasıdır [SetButtonInfo](#setbuttoninfo) görüntü sırası ve çizim sırası arasındaki ilişkiyi değiştirmek için işlevi.
+Bit eşlemdeki görüntülerin sırası genellikle ekranda çizilme sırasıdır, ancak görüntü sırası ve çizim sırası arasındaki ilişkiyi değiştirmek için [SetButtonInfo](#setbuttoninfo) işlevini kullanabilirsiniz.
 
-Tüm bir araç çubuğu düğmeleri aynı boyuttadır. Varsayılan değer 24 x 22, dağıtabilirler pikseldir *yazılım tasarımı için Windows arabirimi yönergelerine*. Görüntü ve düğme boyutları arasında ek alan, görüntünün çevresine bir kenarlık oluşturmak için kullanılır.
+Bir araç çubuğundaki tüm düğmeler aynı boyutlardır. *Yazılım tasarımı Için Windows arabirim yönergelerine*uygun olarak, varsayılan değer 24 x 22 pikseldir. Görüntü ve düğme boyutları arasındaki ek boşluklar görüntünün etrafında kenarlık oluşturmak için kullanılır.
 
-Her düğmesi bir görüntü vardır. Çeşitli durumları düğmesi ve stilleri (basılı yukarı, aşağı, devre dışı, aşağı devre dışı bırakılmış ve belirsiz), bir görüntüden oluşturulur. Bit eşlemler herhangi bir renk olabilse de, siyah, gri görüntülerle en iyi sonuçlar elde edebilirsiniz.
+Her düğmenin bir görüntüsü vardır. Çeşitli düğme durumları ve stilleri (basıldığında, yukarı, aşağı, devre dışı, devre dışı ve belirsiz) bu görüntüden oluşturulur. Bit eşlemler herhangi bir renk olabilse de, görüntülerde siyah ve gri gölgelerle en iyi sonuçları elde edebilirsiniz.
 
 > [!WARNING]
-> `CToolBar` bit eşlemler 16 renk en fazla destekler. Görüntüyü bir araç çubuğu Düzenleyicisi'ne yüklemek, Visual Studio otomatik olarak görüntü 16 renk bit eşleme, gerekirse dönüştürür ve görüntü dönüştürdüyseniz bir uyarı iletisi görüntüler. Görüntüyü (görüntü düzenlemek için bir dış düzenleyici kullanarak), 16'dan fazla renklerle kullanırsanız, uygulama beklenmedik şekilde davranabilir.
+> `CToolBar`en fazla 16 renk olan bit eşlemleri destekler. Bir araç çubuğu düzenleyicisine bir görüntü yüklediğinizde, Visual Studio, gerekirse görüntüyü otomatik olarak 16 renkli bir bit eşlem 'e dönüştürür ve görüntü dönüştürülürse bir uyarı mesajı görüntüler. 16 ' dan fazla renge sahip bir görüntü kullanırsanız (görüntüyü düzenlemek için harici bir düzenleyici kullanarak), uygulama beklenmedik şekilde davranabilir.
 
-Araç çubuğu düğmeleri, varsayılan olarak pushbuttons taklit edin. Ancak, araç çubuğu düğmeleri de düğmeler onay kutusu veya radyo düğmeleri taklit. Onay kutusu düğmeleri, üç durumu vardır: işaretli, temizlenen ve belirsiz. Radyo düğmeleri yalnızca iki durum vardır: işaretli ve temizlenir.
+Araç çubuğu düğmeleri varsayılan olarak itme düğmelerini taklit et. Ancak, araç çubuğu düğmeleri de onay kutusu düğmelerini veya radyo düğmelerini taklit edebilir. Onay kutusu düğmelerinin üç durumu vardır: işaretlendi, temizlendi ve belirsiz. Radyo düğmelerinin yalnızca iki durumu vardır: işaretlendi ve temizlendi.
 
-Bir diziye işaret eden olmadan, bir düğmeye veya ayıraç stili ayarlamak için çağrı [GetButtonStyle](#getbuttonstyle) stili almak ve ardından çağırmak için [SetButtonStyle](#setbuttonstyle) yerine `SetButtons`. `SetButtonStyle` Çalışma zamanında bir düğmenin stilini değiştirmek istediğiniz zaman en kullanışlıdır.
+Tek bir düğme veya ayırıcı stilini bir diziye işaret etmeden ayarlamak için, stili almak için [GetButtonStyle](#getbuttonstyle) ' ı çağırın ve yerine `SetButtons` [SetButtonStyle](#setbuttonstyle) öğesini çağırın. `SetButtonStyle`çalışma zamanında bir düğmenin stilini değiştirmek istediğinizde en yararlı seçenektir.
 
-Arama çubuğunda görüntülenecek metni atamak [GetButtonText](#getbuttontext) düğme üzerinde görünen ve ardından çağırmak üzere metin almak için [SetButtonText](#setbuttontext) metnini ayarlamak için.
+Bir düğme üzerinde görünecek metin atamak için, düğme üzerinde görünecek metni almak üzere [GetButtonText](#getbuttontext) komutunu çağırın ve sonra metni ayarlamak Için [SetButtonText](#setbuttontext) öğesini çağırın.
 
-Bir onay kutusu düğmesi oluşturma, TBBS_CHECKBOX stili atama veya kullanmak için bir `CCmdUI` nesnenin `SetCheck` on_update_command_uı işleyicisindeki üye işlevi. Çağırma `SetCheck` bir onay kutusu düğmesi bir basma düğmesi dönüşür. Geçirmek `SetCheck` bir bağımsız değişkeni 0 işaretli 1 için işaretli ya da 2 için belirsiz.
+Bir onay kutusu düğmesi oluşturmak için, TBBS_CHECKBOX stilini atayın veya bir ON_UPDATE_COMMAND_UI işleyicisinde `CCmdUI` `SetCheck` nesnenin üye işlevini kullanın. Çağırma `SetCheck` , bir basma kutusunu onay kutusu düğmesine dönüştürür. İşaretsiz `SetCheck` için 0, Checked için 1 veya belirsiz için 2 bağımsız değişkenini geçirin.
 
-Bir radyo düğmesi oluşturmak için arama bir [Ccmduı](../../mfc/reference/ccmdui-class.md) nesnenin [SetRadio](../../mfc/reference/ccmdui-class.md#setradio) on_update_command_uı işleyicisinden üye işlevi. Geçirmek `SetRadio` denetlenmeyen ve iade için sıfır için 0 bağımsız değişken. Radyo grubun birbirini dışlayan davranışı sağlamak için gruptaki tüm düğmeler on_update_command_uı işleyicileri olması gerekir.
+Bir radyo düğmesi oluşturmak için bir ON_UPDATE_COMMAND_UI işleyicisinden [CCmdUI](../../mfc/reference/ccmdui-class.md) nesnesinin [SetRadio](../../mfc/reference/ccmdui-class.md#setradio) üye işlevini çağırın. Checked `SetRadio` için 0 bağımsız değişkenini işaretsiz veya sıfır dışında bir değere geçirin. Radyo grubunun birbirini dışlayan davranışı sağlamak için gruptaki tüm düğmeler için ON_UPDATE_COMMAND_UI İşleyicileriniz olmalıdır.
 
-Kullanma hakkında daha fazla bilgi için `CToolBar`, makaleye göz atın [MFC araç çubuğu uygulaması](../../mfc/mfc-toolbar-implementation.md) ve [Teknik Not 31: Denetim çubukları](../../mfc/tn031-control-bars.md).
+Kullanma `CToolBar`hakkında daha fazla bilgi için bkz. [MFC araç çubuğu uygulama](../../mfc/mfc-toolbar-implementation.md) ve [teknik Not31: Denetim Çubukları](../../mfc/tn031-control-bars.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -157,11 +157,11 @@ Kullanma hakkında daha fazla bilgi için `CToolBar`, makaleye göz atın [MFC a
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxext.h
+**Üstbilgi:** afxext. h
 
-##  <a name="commandtoindex"></a>  CToolBar::CommandToIndex
+##  <a name="commandtoindex"></a>CToolBar:: Commandtoındex
 
-Bu üye işlevi komut kimliği eşleşen 0 konumunda başlayan ilk araç çubuğu düğmesini indisini döndürür `nIDFind`.
+Bu üye işlevi, komut KIMLIĞI eşleşen `nIDFind`0 konumundan başlayarak ilk araç çubuğu düğmesinin dizinini döndürür.
 
 ```
 int CommandToIndex(UINT nIDFind) const;
@@ -169,16 +169,16 @@ int CommandToIndex(UINT nIDFind) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*nIDFind*<br/>
-Araç çubuğu düğmesi komut kimliği.
+*Nıdfind*<br/>
+Bir araç çubuğu düğmesinin komut KIMLIĞI.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Düğme veya hiçbir düğmesi belirtilen komut kimliği yoksa -1 dizini
+Düğmenin dizini veya hiçbir düğme verilen komut KIMLIĞINE sahip değilse-1.
 
-##  <a name="create"></a>  CToolBar::Create
+##  <a name="create"></a>CToolBar:: Create
 
-Bu üye işlevi bir Windows araç çubuğu (alt pencere) oluşturur ve bunu ile ilişkilendirir `CToolBar` nesne.
+Bu üye işlevi bir Windows araç çubuğu (alt pencere) oluşturur ve `CToolBar` nesneyle ilişkilendirir.
 
 ```
 virtual BOOL Create(
@@ -190,47 +190,47 @@ virtual BOOL Create(
 ### <a name="parameters"></a>Parametreler
 
 *pParentWnd*<br/>
-Araç çubuğunun üst penceresine işaretçisi.
+Araç çubuğunun üst öğesi olan pencerenin işaretçisi.
 
 *dwStyle*<br/>
-Araç çubuğu stili. Desteklenen ek toolbar stilleri şunlardır:
+Araç çubuğu stili. Desteklenen ek araç çubuğu stilleri şunlardır:
 
-- Çerçeve penceresinin üst kısmındaki CBRS_TOP denetim çubuğudur.
+- CBRS_TOP denetim çubuğu, çerçeve penceresinin en üstünde bulunur.
 
-- Çerçeve penceresinin alt kısmında CBRS_BOTTOM denetim çubuğu bulunmaktadır.
+- CBRS_BOTTOM denetim çubuğu, çerçeve penceresinin en altında bulunur.
 
-- Üst yeniden boyutlandırıldığında CBRS_NOALIGN denetim çubuğu yeniden konumlandırıldığında değil.
+- Üst yeniden boyutlandırıldığında CBRS_NOALIGN denetim çubuğu yeniden konumlandırılmaz.
 
-- Cbrs_tooltıps denetim çubuğunun araç ipuçlarını gösterir.
+- CBRS_TOOLTIPS denetim çubuğu araç ipuçlarını görüntüler.
 
-- Cbrs_sıze_dynamıc denetim çubuğu dinamiktir.
+- CBRS_SIZE_DYNAMIC denetim çubuğu dinamiktir.
 
-- Cbrs_sıze_fıxed denetim çubuğu sabittir.
+- CBRS_SIZE_FIXED denetim çubuğu düzeltildi.
 
-- CBRS_FLOATING denetim çubuğu kayan.
+- CBRS_FLOATING denetim çubuğu kayar.
 
-- CBRS_FLYBY durum çubuğu düğme hakkındaki bilgileri görüntüler.
+- CBRS_FLYBY durum çubuğunda düğme hakkında bilgi görüntülenir.
 
-- Kullanıcıya CBRS_HIDE_INPLACE denetim çubuğu görüntülenmez.
+- CBRS_HIDE_INPLACE denetim çubuğu kullanıcıya gösterilmez.
 
-*nID*<br/>
-Araç çubuğunun alt penceresi kimliği
+*NID*<br/>
+Araç çubuğunun alt pencere KIMLIĞI.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi durumda 0.
+Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ayrıca araç yüksekliği için varsayılan bir değer ayarlar.
+Ayrıca, araç çubuğu yüksekliğini varsayılan bir değere ayarlar.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDocView#179](../../mfc/codesnippet/cpp/ctoolbar-class_1.cpp)]
 
-##  <a name="createex"></a>  CToolBar::CreateEx
+##  <a name="createex"></a>CToolBar:: CreateEx
 
-Bir Windows araç çubuğu (alt pencere) oluşturun ve bunu ile ilişkilendirmek için bu işlevi çağırın `CToolBar` nesne.
+Bir Windows araç çubuğu (alt pencere) oluşturmak ve `CToolBar` nesneyle ilişkilendirmek için bu işlevi çağırın.
 
 ```
 virtual BOOL CreateEx(
@@ -248,37 +248,37 @@ virtual BOOL CreateEx(
 ### <a name="parameters"></a>Parametreler
 
 *pParentWnd*<br/>
-Araç çubuğunun üst penceresine işaretçisi.
+Araç çubuğunun üst öğesi olan pencerenin işaretçisi.
 
 *dwCtrlStyle*<br/>
-Katıştırılmış oluşturulması için ek stilleri [CToolBarCtrl](../../mfc/reference/ctoolbarctrl-class.md) nesne. Varsayılan olarak, bu değer için TBSTYLE_FLAT ayarlanır. Toolbar stilleri tam bir listesi için bkz. *dwStyle*.
+Gömülü [CToolBarCtrl](../../mfc/reference/ctoolbarctrl-class.md) nesnesinin oluşturulmasına yönelik ek stiller. Varsayılan olarak, bu değer TBSTYLE_FLAT olarak ayarlanır. Araç çubuğu stillerinin tüm listesi için bkz. *dwStyle*.
 
 *dwStyle*<br/>
-Araç çubuğu stili. Bkz: [araç çubuğu denetimi ve düğme stilleri](/windows/desktop/Controls/toolbar-control-and-button-styles) uygun stilleri bir listesi için Windows SDK.
+Araç çubuğu stili. Uygun stillerin listesi için Windows SDK [araç çubuğu denetimi ve düğme stilleri](/windows/win32/Controls/toolbar-control-and-button-styles) ' ne bakın.
 
-*rcBorders*<br/>
-A [CRect](../../atl-mfc-shared/reference/crect-class.md) araç penceresi kenarlık genişliğini tanımlayan nesne. Bu kenarlıkları böylece hiçbir kenarlık ile bir araç penceresi sonuçta varsayılan olarak 0,0,0,0 için ayarlanır.
+*Rckenarlýklar*<br/>
+Araç çubuğu pencere kenarlıklarının genişliklerini tanımlayan bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi. Bu kenarlıklar varsayılan olarak 0, 0, 0, 0 olarak ayarlanır ve bu sayede bir kenarlık olmadan bir araç çubuğu penceresi ile sonuçlanır.
 
-*nID*<br/>
-Araç çubuğunun alt penceresi kimliği
+*NID*<br/>
+Araç çubuğunun alt pencere KIMLIĞI.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi durumda 0.
+Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ayrıca araç yüksekliği için varsayılan bir değer ayarlar.
+Ayrıca, araç çubuğu yüksekliğini varsayılan bir değere ayarlar.
 
-Kullanım `CreateEx`, yerine [Oluştur](#create), belirli stilleri katıştırılmış araç çubuğu denetiminin oluşturma sırasında mevcut olması gerekir. Örneğin, *dwCtrlStyle* TBSTYLE_FLAT için &#124; TBSTYLE_TRANSPARENT Internet Explorer 4 araç çubukları benzer bir araç çubuğu oluşturmak için.
+Katıştırılmış `CreateEx`araç çubuğu denetiminin oluşturulması sırasında belirli stillerin bulunması gereken durumlarda, [Oluştur](#create)yerine kullanın. Örneğin, Internet Explorer 4 araç çubuklarına &#124; benzer bir araç çubuğu oluşturmak için dwCtrlStyle tbstyle_flat tbstyle_transparent olarak ayarlayın.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDocView#180](../../mfc/codesnippet/cpp/ctoolbar-class_2.cpp)]
 
-##  <a name="ctoolbar"></a>  CToolBar::CToolBar
+##  <a name="ctoolbar"></a>CToolBar:: CToolBar
 
-Bu üye işlevi oluşturan bir `CToolBar` nesnesini ve varsayılan boyutları ayarlar.
+Bu üye işlevi bir `CToolBar` nesne oluşturur ve varsayılan boyutları ayarlar.
 
 ```
 CToolBar();
@@ -286,11 +286,11 @@ CToolBar();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağrı [Oluştur](#create) araç penceresi oluşturmak için üye işlevi.
+Araç çubuğu penceresini oluşturmak için üye [Oluştur](#create) işlevini çağırın.
 
-##  <a name="getbuttoninfo"></a>  CToolBar::GetButtonInfo
+##  <a name="getbuttoninfo"></a>CToolBar:: GetButtonInfo
 
-Denetim kimliği, stili ve araç çubuğu düğmesi ve ayırıcı tarafından belirtilen konumda görüntü dizini alır. Bu üye işlevi *nIndex.*
+Bu üye işlevi, denetim KIMLIĞI, stili ve araç çubuğu düğmesi veya ayırıcı tarafından belirtilen konumdaki ayırıcı için resim dizinini alır *.*
 
 ```
 void GetButtonInfo(
@@ -302,27 +302,27 @@ void GetButtonInfo(
 
 ### <a name="parameters"></a>Parametreler
 
-*nIndex*<br/>
-Araç çubuğu düğmesini veya ayırıcı alınacak olan bilgilerdir dizini.
+*nDizin*<br/>
+Bilgileri alınacak olan araç çubuğu düğmesinin veya ayırıcısının dizini.
 
-*nID*<br/>
-Düğmenin komut kimliği ayarlayan bir UINT başvuru.
+*NID*<br/>
+Düğmenin komut KIMLIĞINE ayarlanmış bir UINT öğesine başvuru.
 
 *nStyle*<br/>
-Stile düğmesinin ayarlanmış bir UINT başvuru.
+Düğme stiline ayarlanan bir UINT öğesine başvuru.
 
-*iImage*<br/>
-Düğmenin görüntü bit eşlem içindeki dizini olarak ayarlanmış bir tamsayı başvuru.
+*IImage*<br/>
+Bit eşlem içindeki düğme resminin dizinine ayarlanmış bir tamsayıya başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu değerler tarafından başvurulan değişkenleri atanan *nID*, *nStyle*, ve *iImage*. Görüntü dizini görüntü içeren tüm araç çubuğu düğmeleri için görüntü bit eşlem içindeki konumudur. İlk 0 konumuna görüntüdür.
+Bu değerler, *NID*, *nStyle*ve *IImage*tarafından başvurulan değişkenlere atanır. Görüntü dizini, görüntünün tüm araç çubuğu düğmelerinin görüntülerini içeren bit eşlemdeki konumudur. İlk görüntü 0 konumundayken.
 
-Varsa *nIndex* bir ayırıcı belirtir *iImage* ayırıcı genişliğini piksel cinsinden ayarlayın.
+*NIndex* bir ayırıcı belirtiyorsa, *IImage* piksel cinsinden ayırıcı genişliğe ayarlanır.
 
-##  <a name="getbuttonstyle"></a>  CToolBar::GetButtonStyle
+##  <a name="getbuttonstyle"></a>CToolBar:: GetButtonStyle
 
-Bir düğme veya araç çubuğunda ayırıcı stilini almak için bu üye işlevini çağırın.
+Araç çubuğundaki bir düğmenin veya ayırıcının stilini almak için bu üye işlevi çağırın.
 
 ```
 UINT GetButtonStyle(int nIndex) const;
@@ -330,20 +330,20 @@ UINT GetButtonStyle(int nIndex) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*nIndex*<br/>
-Alınacak araç çubuğu düğmesini veya ayırıcı style dizini.
+*nDizin*<br/>
+Alınacak araç çubuğu düğmesinin veya ayırıcı stilin dizini.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Düğme veya ayırıcı tarafından belirtilen stilini *nIndex*.
+*NIndex*tarafından belirtilen düğme veya ayırıcısının stili.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Düğme nasıl göründüğünü ve nasıl kullanıcı girişine yanıt veren bir düğmenin stilini belirler. Bkz: [SetButtonStyle](#setbuttonstyle) düğme stilleri örnekleri için.
+Düğmenin stili, düğmenin nasıl göründüğünü ve kullanıcı girişine nasıl yanıt vereceğini belirler. Düğme stillerinin örnekleri için bkz. [SetButtonStyle](#setbuttonstyle) .
 
-##  <a name="getbuttontext"></a>  CToolBar::GetButtonText
+##  <a name="getbuttontext"></a>CToolBar:: GetButtonText
 
-Bir düğme üzerinde görünen metin almak için bu üye işlevini çağırın.
+Bir düğme üzerinde görünen metni almak için bu üye işlevini çağırın.
 
 ```
 CString GetButtonText(int nIndex) const;
@@ -355,23 +355,23 @@ void GetButtonText(
 
 ### <a name="parameters"></a>Parametreler
 
-*nIndex*<br/>
-Alınacak metin dizini.
+*nDizin*<br/>
+Alınacak metnin dizini.
 
 *rString*<br/>
-Bir başvuru bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) alınacak metni içeren bir nesne.
+Alınacak metni içeren bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) nesnesine başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-A `CString` düğme metnini içeren nesne.
+Düğme metnini içeren nesne. `CString`
 
 ### <a name="remarks"></a>Açıklamalar
 
-İkinci form, bu üye işlev dolgular bir `CString` dize metin içeren nesne.
+Bu üye işlevin ikinci formu, bir `CString` nesneyi dize metniyle doldurur.
 
-##  <a name="getitemid"></a>  CToolBar::GetItemID
+##  <a name="getitemid"></a>CToolBar:: GetItemID
 
-Bu üye işlevi döndürür düğmesine veya ayırıcı tarafından belirtilen komut kimliği *nIndex*.
+Bu üye işlevi, *nIndex*tarafından belirtilen düğme veya AYıRıCıNıN komut kimliğini döndürür.
 
 ```
 UINT GetItemID(int nIndex) const;
@@ -379,20 +379,20 @@ UINT GetItemID(int nIndex) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*nIndex*<br/>
-Alınacak Kimliğine sahip öğenin dizini.
+*nDizin*<br/>
+KIMLIĞI alınacak olan öğenin dizini.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Düğme veya ayırıcı tarafından belirtilen komut kimliği *nIndex*.
+*Nindex*tarafından belirtilen düğme veya AYıRıCıNıN komut kimliği.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Ayırıcılar ID_SEPARATOR döndürür.
 
-##  <a name="getitemrect"></a>  CToolBar::GetItemRect
+##  <a name="getitemrect"></a>CToolBar:: GetItemRect
 
-Bu üye işlevi doldurur `RECT` adresini kapsanıyorsa yapısı *lpRect* düğme veya ayırıcı tarafından belirtilen koordinatları ile *nIndex*.
+Bu üye işlevi, `RECT` *nIndex*tarafından belirtilen düğme veya ayırıcının koordinatları ile *lpRect* içinde yer alan yapıyı doldurur.
 
 ```
 virtual void GetItemRect(
@@ -402,25 +402,25 @@ virtual void GetItemRect(
 
 ### <a name="parameters"></a>Parametreler
 
-*nIndex*<br/>
-Dikdörtgen koordinatları alınacak olan öğenin dizini (düğme veya ayırıcı).
+*nDizin*<br/>
+Dikdörtgen koordinatları alınacak olan öğenin (düğme veya ayırıcı) dizini.
 
 *lpRect*<br/>
-Adresi [RECT](/windows/desktop/api/windef/ns-windef-tagrect) yapısı öğenin koordinatlarını içerir.
+Öğenin koordinatlarını içerecek olan [Rect](/windows/win32/api/windef/ns-windef-rect) yapısının adresi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Piksel araç çubuğunun sol üst köşesindeki göreli koordinatları.
+Koordinatlar, araç çubuğunun sol üst köşesine göre piksel cinsinden yapılır.
 
-Kullanım `GetItemRect` bir birleşik giriş kutusu ya da diğer denetim değiştirmek istediğiniz bir ayırıcı koordinatları alınacak.
+Bir `GetItemRect` Birleşik giriş kutusuyla veya başka bir denetimle değiştirmek istediğiniz ayırıcının koordinatlarını almak için kullanın.
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [CToolBar::SetSizes](#setsizes).
+  [CToolBar:: Setboyutlar](#setsizes)örneğine bakın.
 
-##  <a name="gettoolbarctrl"></a>  CToolBar::GetToolBarCtrl
+##  <a name="gettoolbarctrl"></a>CToolBar:: GetToolBarCtrl
 
-Bu üye işlevi, temel alınan bir ortak denetimi doğrudan erişim sağlar.
+Bu üye işlevi, temel alınan ortak denetime doğrudan erişim sağlar.
 
 ```
 CToolBarCtrl& GetToolBarCtrl() const;
@@ -428,21 +428,21 @@ CToolBarCtrl& GetToolBarCtrl() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir başvuru bir `CToolBarCtrl` nesne.
+Bir `CToolBarCtrl` nesneye başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanım `GetToolBarCtrl` Windows araç çubuğu ortak denetim işlevlerini avantajlarından yararlanın ve Destek avantajlarından yararlanmak için [CToolBarCtrl](../../mfc/reference/ctoolbarctrl-class.md) için araç çubuğu özelleştirmesini sağlar.
+Windows `GetToolBarCtrl` araç çubuğu ortak denetiminin işlevselliğinin avantajlarından yararlanmak ve araç çubuğu özelleştirmesi için [CToolBarCtrl](../../mfc/reference/ctoolbarctrl-class.md) desteğinin avantajlarından yararlanmak için kullanın.
 
-Ortak denetimleri kullanma hakkında daha fazla bilgi için bkz [denetimleri](../../mfc/controls-mfc.md) ve [ortak denetimleri](/windows/desktop/Controls/common-controls-intro) Windows SDK.
+Ortak denetimleri kullanma hakkında daha fazla bilgi için Windows SDK makalesine ve [](../../mfc/controls-mfc.md) [genel denetimlere](/windows/win32/Controls/common-controls-intro) bakın.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDocViewSDI#15](../../mfc/codesnippet/cpp/ctoolbar-class_3.cpp)]
 
-##  <a name="loadbitmap"></a>  CToolBar::LoadBitmap
+##  <a name="loadbitmap"></a>CToolBar:: LoadBitmap
 
-Tarafından belirtilen bit eşlem yüklemek için bu üye işlevi çağrısı `lpszResourceName` veya `nIDResource`.
+`lpszResourceName` Veya`nIDResource`tarafından belirtilen bit eşlemi yüklemek için bu üye işlevi çağırın.
 
 ```
 BOOL LoadBitmap(LPCTSTR lpszResourceName);
@@ -452,25 +452,25 @@ BOOL LoadBitmap(UINT nIDResource);
 ### <a name="parameters"></a>Parametreler
 
 *lpszResourceName*<br/>
-Kaynak adı yüklenecek bit eşlemin işaretçisi.
+Yüklenecek bit eşlemin kaynak adı işaretçisi.
 
 *nIDResource*<br/>
-Yüklenecek bit eşlemin kaynak kimliği.
+Yüklenecek bit eşlemin kaynak KIMLIĞI.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi durumda 0.
+Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Her araç çubuğu düğmesi için bir görüntü bit eşlem içermelidir. Görüntüleri standart boyutu (16 piksel genişliğinde ve 15 piksel yüksekliğinde) çağrısı değilse, [SetSizes](#setsizes) düğme boyutlarını ve resimlerinin ayarlamak için.
+Bit eşlem, her bir araç çubuğu düğmesi için bir resim içermelidir. Görüntüler standart boyutta değilse (16 piksel genişliğinde ve 15 piksel yüksekliğinde), düğme boyutlarını ve bunların görüntülerini ayarlamak için [Setboyutlar](#setsizes) ' ı çağırın.
 
 > [!WARNING]
-> `CToolBar` bit eşlemler 16 renk en fazla destekler. Görüntüyü bir araç çubuğu Düzenleyicisi'ne yüklemek, Visual Studio otomatik olarak görüntü 16 renk bit eşleme, gerekirse dönüştürür ve görüntü dönüştürdüyseniz bir uyarı iletisi görüntüler. Görüntüyü (görüntü düzenlemek için bir dış düzenleyici kullanarak), 16'dan fazla renklerle kullanırsanız, uygulama beklenmedik şekilde davranabilir.
+> `CToolBar`en fazla 16 renk olan bit eşlemleri destekler. Bir araç çubuğu düzenleyicisine bir görüntü yüklediğinizde, Visual Studio, gerekirse görüntüyü otomatik olarak 16 renkli bir bit eşlem 'e dönüştürür ve görüntü dönüştürülürse bir uyarı mesajı görüntüler. 16 ' dan fazla renge sahip bir görüntü kullanırsanız (görüntüyü düzenlemek için harici bir düzenleyici kullanarak), uygulama beklenmedik şekilde davranabilir.
 
-##  <a name="loadtoolbar"></a>  CToolBar::LoadToolBar
+##  <a name="loadtoolbar"></a>CToolBar:: LoadToolBar
 
-Tarafından belirtilen araç yüklemek için bu üye işlevi çağrısı *lpszResourceName* veya *nIDResource*.
+*LpszResourceName* veya *nidresource*tarafından belirtilen araç çubuğunu yüklemek için bu üye işlevi çağırın.
 
 ```
 BOOL LoadToolBar(LPCTSTR lpszResourceName);
@@ -480,26 +480,26 @@ BOOL LoadToolBar(UINT nIDResource);
 ### <a name="parameters"></a>Parametreler
 
 *lpszResourceName*<br/>
-Kaynak adı araç çubuğunun yüklenecek işaretçisi.
+Yüklenecek araç çubuğunun kaynak adı işaretçisi.
 
 *nIDResource*<br/>
-Yüklenecek araç çubuğunun kaynak kimliği.
+Yüklenecek araç çubuğunun kaynak KIMLIĞI.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi durumda 0.
+Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [araç çubuğu Düzenleyicisi](../../windows/toolbar-editor.md) içinde bir araç çubuğu kaynağı oluşturma hakkında daha fazla bilgi için.
+Bir araç çubuğu kaynağı oluşturma hakkında daha fazla bilgi için bkz. [Araç Çubuğu Düzenleyicisi](../../windows/toolbar-editor.md) .
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [CToolBar::CreateEx](#createex).
+  [CToolBar:: CreateEx](#createex)örneğine bakın.
 
-##  <a name="setbitmap"></a>  CToolBar::SetBitmap
+##  <a name="setbitmap"></a>CToolBar:: SetBit eşlem
 
-Araç çubuğu için bit eşlem resmi ayarlamak için bu üye işlevini çağırın.
+Araç çubuğunun bit eşlem resmini ayarlamak için bu üye işlevi çağırın.
 
 ```
 BOOL SetBitmap(HBITMAP hbmImageWell);
@@ -507,20 +507,20 @@ BOOL SetBitmap(HBITMAP hbmImageWell);
 
 ### <a name="parameters"></a>Parametreler
 
-*hbmImageWell*<br/>
-Bir araç çubuğu ile ilişkili olan bit eşlem görüntüsüne tanıtıcısı.
+*Hbmımagewell*<br/>
+Bir araç çubuğuyla ilişkili bir bit eşlem görüntüsünün tanıtıcısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi durumda 0.
+Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Örneğin, çağrı `SetBitmap` kullanıcı, bir düğmenin eylemi değiştiren bir belgeyi bir eylem gerçekleştirdikten sonra bit eşlemli resmi değiştirmek için.
+Örneğin, Kullanıcı bir `SetBitmap` düğmenin eylemini değiştiren bir belge üzerinde bir eylem gerçekleştirdikten sonra bit eşlenmiş görüntüyü değiştirme çağrısı yapın.
 
-##  <a name="setbuttoninfo"></a>  CToolBar::SetButtonInfo
+##  <a name="setbuttoninfo"></a>CToolBar:: SetButtonInfo
 
-Düğmenin komut kimliği, stili ve görüntü sayısı ayarlamak için bu üye işlevini çağırın.
+Düğmenin komut KIMLIĞINI, stilini ve resim numarasını ayarlamak için bu üye işlevini çağırın.
 
 ```
 void SetButtonInfo(
@@ -532,46 +532,46 @@ void SetButtonInfo(
 
 ### <a name="parameters"></a>Parametreler
 
-*nIndex*<br/>
-Düğme veya bilgi ayarlanacak olduğu ayırıcı sıfır tabanlı dizini.
+*nDizin*<br/>
+Hangi bilgilerin ayarlanacağı düğme veya ayırıcısının sıfır tabanlı dizini.
 
-*nID*<br/>
-Değer, düğmenin komut kimliği ayarlanır.
+*NID*<br/>
+Düğmenin komut KIMLIĞININ ayarlandığı değer.
 
 *nStyle*<br/>
 Yeni düğme stili. Aşağıdaki düğme stilleri desteklenir:
 
 - TBBS_BUTTON standart basma düğmesi (varsayılan)
 
-- TBBS_SEPARATOR ayırıcı
+- TBBS_SEPARATOR ayırıcısı
 
 - TBBS_CHECKBOX otomatik onay kutusu düğmesi
 
-- TBBS_GROUP düğmesi grubu başlangıcını işaretler.
+- TBBS_GROUP bir düğme grubunun başlangıcını Işaretler
 
-- TBBS_CHECKGROUP onay kutusu düğmesi grubu başlangıcını işaretler.
+- TBBS_CHECKGROUP bir onay kutusu düğme grubunun başlangıcını Işaretler
 
-- Açılır liste düğmesinde TBBS_DROPDOWN oluşturur.
+- TBBS_DROPDOWN bir açılan liste düğmesi oluşturur.
 
-- Düğmenin genişliği hesaplanır TBBS_AUTOSIZE görüntüsünün boyutu değil, bir düğmenin metni temel.
+- TBBS_AUTOSIZE düğmenin genişliği, resmin boyutunun değil, düğme metni temel alınarak hesaplanır.
 
-- Düğme metnini TBBS_NOPREFIX kendisiyle ilişkilendirilmiş bir Hızlandırıcı öneki yoktur.
+- TBBS_NOPREFIX düğme metninde ilişkili bir Hızlandırıcı öneki olmayacaktır.
 
-*iImage*<br/>
-Düğmenin görüntü bit eşlem içindeki yeni dizini.
+*IImage*<br/>
+Düğmenin bit eşlem içindeki görüntüsü için yeni dizin.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Depolanan değere piksel cinsinden TBBS_SEPARATOR stili olan ayırıcılar için bu işlevi ayırıcı'nın genişliğini ayarlar *iImage*.
+TBBS_SEPARATOR stiline sahip ayırıcılar için, bu işlev ayırıcıdaki genişliği *IImage*içinde depolanan değere ayarlar.
 
 > [!NOTE]
->  Düğme durumları kullanarak da ayarlayabilirsiniz *nStyle* parametre; ancak, düğme durumları tarafından denetlenir çünkü [on_update_command_uı](message-map-macros-mfc.md#on_update_command_ui) herhangi işleyici, durum kullanarak ayarladığınız `SetButtonInfo` kaybolacak sonraki boşta işleme sırasında. Bkz: [kullanıcı arabirimi nesnelerini güncelleştirme](../../mfc/how-to-update-user-interface-objects.md) ve [TN031: Denetim çubukları](../../mfc/tn031-control-bars.md) daha fazla bilgi için.
+>  Düğme durumlarını *nStyle* parametresini kullanarak da ayarlayabilirsiniz; Ancak, düğme durumları [ON_UPDATE_COMMAND_UI](message-map-macros-mfc.md#on_update_command_ui) işleyicisi tarafından denetlendiğinden, kullanarak `SetButtonInfo` ayarladığınız herhangi bir durum, bir sonraki boşta işleme sırasında kaybedilir. Bkz. [Kullanıcı arabirimi nesnelerini güncelleştirme](../../mfc/how-to-update-user-interface-objects.md) ve [TN031: Daha fazla](../../mfc/tn031-control-bars.md) bilgi için denetim çubukları.
 
-Bit eşlem resimleri ve düğmeleri hakkında daha fazla bilgi için bkz: [CToolBar](../../mfc/reference/ctoolbar-class.md) genel bakış ve [CToolBar::LoadBitmap](#loadbitmap).
+Bit eşlem görüntüleri ve düğmeleri hakkında daha fazla bilgi için bkz. [CToolBar](../../mfc/reference/ctoolbar-class.md) genel bakış ve [CToolBar:: LoadBitmap](#loadbitmap).
 
-##  <a name="setbuttons"></a>  CToolBar::SetButtons
+##  <a name="setbuttons"></a>CToolBar:: SetButtons
 
-Her araç çubuğu düğmesinin komut kimliği bu üye işlevi dizinin karşılık gelen öğe tarafından belirtilen değere ayarlar *lpIDArray*.
+Bu üye işlevi, her bir araç çubuğu düğmesinin komut KIMLIĞINI dizi *lpIDArray*karşılık gelen öğesi tarafından belirtilen değere ayarlar.
 
 ```
 BOOL SetButtons(
@@ -582,26 +582,26 @@ BOOL SetButtons(
 ### <a name="parameters"></a>Parametreler
 
 *lpIDArray*<br/>
-Komut kimlikleri bir dizi için işaretçi. Boş düğme ayrılacak NULL olabilir.
+Komut kimlikleri dizisine yönelik işaretçi. Boş düğme ayırmak için NULL olabilir.
 
 *nIDCount*<br/>
-Dizideki öğelerin sayısı tarafından işaret edilen *lpIDArray*.
+Dizide *lpIDArray*tarafından işaret edilen öğe sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi durumda 0.
+Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir öğe dizinin ID_SEPARATOR değeri varsa, ayırıcı araç ilgili konumda oluşturulur. Bu işlev ayrıca TBBS_BUTTON ve TBBS_SEPARATOR stiline her ayırıcı'nın her bir düğmenin stilini ayarlar ve her düğme için resim dizini atar. Görüntü dizini düğmenin görüntü bit eşlem içindeki konumunu belirtir.
+Dizinin bir öğesi ID_SEPARATOR değerine sahipse, araç çubuğunun ilgili konumunda bir ayırıcı oluşturulur. Bu işlev Ayrıca her düğmenin stilini TBBS_BUTTON ve her ayırıcı stilini TBBS_SEPARATOR olarak ayarlar ve her düğmeye bir görüntü dizini atar. Görüntü dizini düğmenin bit eşlem içindeki resminin konumunu belirtir.
 
-Bit eşlem ayırıcılar için bu işlevi ayırıcılar için görüntü dizinleri atamaz çünkü hesabı gerekmez. Araç pozisyon 0 düğmesi varsa, 1 ve 3 ve ayırıcı 2 konumundaki, görüntüler, bit eşlem içinde 0, 1 ve 2 konumlarda düğmeleri konumlarda 0, 1 ve 3, sırasıyla atanır.
+Bu işlev ayırıcılar için görüntü dizinleri atamadığı için bit eşlemdeki ayırıcılar için hesap yapmanız gerekmez. Araç çubuğundayken 0, 1 ve 3 konumunda düğmeler varsa ve 2 konumundaki bir ayırıcı varsa, bit eşleminizdeki 0, 1 ve 2 konumlarındaki görüntüler sırasıyla 0, 1 ve 3 konumlarda bulunan düğmelere atanır.
 
-Varsa *lpIDArray* NULL ise bu işlev tarafından belirtilen öğe sayısı için alanı ayırır *nIDCount*. Kullanım [SetButtonInfo](#setbuttoninfo) her öğenin öznitelikleri ayarlanamadı.
+*LPIDARRAY* null ise, bu Işlev *nIDCount*tarafından belirtilen öğe sayısı için alan ayırır. Her öğenin özniteliklerini ayarlamak için [SetButtonInfo](#setbuttoninfo) kullanın.
 
-##  <a name="setbuttonstyle"></a>  CToolBar::SetButtonStyle
+##  <a name="setbuttonstyle"></a>CToolBar:: SetButtonStyle
 
-Bir düğme veya ayırıcı ya da Grup düğmeleri ayarlamak için bu üye işlevini çağırın.
+Düğme veya ayırıcısının stilini veya grup düğmelerini ayarlamak için bu üye işlevini çağırın.
 
 ```
 void SetButtonStyle(
@@ -611,40 +611,40 @@ void SetButtonStyle(
 
 ### <a name="parameters"></a>Parametreler
 
-*nIndex*<br/>
-Düğme veya ayarlanacak olan bilgilerdir ayırıcı dizini.
+*nDizin*<br/>
+Bilgileri ayarlanacak düğme veya ayıracının dizini.
 
 *nStyle*<br/>
 Düğme stili. Aşağıdaki düğme stilleri desteklenir:
 
 - TBBS_BUTTON standart basma düğmesi (varsayılan)
 
-- TBBS_SEPARATOR ayırıcı
+- TBBS_SEPARATOR ayırıcısı
 
 - TBBS_CHECKBOX otomatik onay kutusu düğmesi
 
-- TBBS_GROUP düğmesi grubu başlangıcını işaretler.
+- TBBS_GROUP bir düğme grubunun başlangıcını Işaretler
 
-- TBBS_CHECKGROUP onay kutusu düğmesi grubu başlangıcını işaretler.
+- TBBS_CHECKGROUP bir onay kutusu düğme grubunun başlangıcını Işaretler
 
-- Açılır liste düğmesinde TBBS_DROPDOWN oluşturur
+- TBBS_DROPDOWN bir açılan liste düğmesi oluşturur
 
-- Resmin boyutu değil, bir düğmenin metni düğmenin genişliği hesaplanır TBBS_AUTOSIZE dayalı
+- TBBS_AUTOSIZE düğmenin genişliği, görüntünün boyutunda değil, düğme metni temel alınarak hesaplanacak
 
-- Kendisiyle ilişkili bir Hızlandırıcı öneki TBBS_NOPREFIX düğme metnini olmaz
+- TBBS_NOPREFIX düğme metni kendisiyle ilişkili bir Hızlandırıcı öneki olmayacak
 
 ### <a name="remarks"></a>Açıklamalar
 
-Düğme nasıl göründüğünü ve nasıl kullanıcı girişine yanıt veren bir düğmenin stilini belirler.
+Düğmenin stili, düğmenin nasıl göründüğünü ve kullanıcı girişine nasıl yanıt vereceğini belirler.
 
-Çağırmadan önce `SetButtonStyle`, çağrı [GetButtonStyle](#getbuttonstyle) düğme veya ayırıcı stili almak için üye işlevi.
+Çağrılmadan `SetButtonStyle`önce, düğme veya ayırıcı stilini almak için [GetButtonStyle](#getbuttonstyle) üye işlevini çağırın.
 
 > [!NOTE]
->  Düğme durumları kullanarak da ayarlayabilirsiniz *nStyle* parametre; ancak, düğme durumları tarafından denetlenir çünkü [on_update_command_uı](message-map-macros-mfc.md#on_update_command_ui) herhangi işleyici, durum kullanarak ayarladığınız `SetButtonStyle` kaybolacak sonraki boşta işleme sırasında. Bkz: [kullanıcı arabirimi nesnelerini güncelleştirme](../../mfc/how-to-update-user-interface-objects.md) ve [TN031: Denetim çubukları](../../mfc/tn031-control-bars.md) daha fazla bilgi için.
+>  Düğme durumlarını *nStyle* parametresini kullanarak da ayarlayabilirsiniz; Ancak, düğme durumları [ON_UPDATE_COMMAND_UI](message-map-macros-mfc.md#on_update_command_ui) işleyicisi tarafından denetlendiğinden, kullanarak `SetButtonStyle` ayarladığınız herhangi bir durum, bir sonraki boşta işleme sırasında kaybedilir. Bkz. [Kullanıcı arabirimi nesnelerini güncelleştirme](../../mfc/how-to-update-user-interface-objects.md) ve [TN031: Daha fazla](../../mfc/tn031-control-bars.md) bilgi için denetim çubukları.
 
-##  <a name="setbuttontext"></a>  CToolBar::SetButtonText
+##  <a name="setbuttontext"></a>CToolBar:: SetButtonText
 
-Bir düğme metnini ayarlamak için bu işlevi çağırın.
+Düğmeye metin ayarlamak için bu işlevi çağırın.
 
 ```
 BOOL SetButtonText(
@@ -654,23 +654,23 @@ BOOL SetButtonText(
 
 ### <a name="parameters"></a>Parametreler
 
-*nIndex*<br/>
-Metni ayarlamak için olan düğme dizini.
+*nDizin*<br/>
+Metni ayarlanacak düğmenin dizini.
 
 *lpszText*<br/>
-Metin bir düğme olarak işaret eder.
+Bir düğme üzerinde ayarlanacak metni gösterir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi durumda 0.
+Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [CToolBar::GetToolBarCtrl](#gettoolbarctrl).
+  [CToolBar:: GetToolBarCtrl](#gettoolbarctrl)örneğine bakın.
 
-##  <a name="setheight"></a>  CToolBar::SetHeight
+##  <a name="setheight"></a>CToolBar:: SetHeight
 
-Bu üye işlevi, araç çubuğunun yüksekliği, piksel cinsinden belirtilen değere ayarlar *cyHeight*.
+Bu üye işlevi, araç çubuğunun yüksekliğini *Cyheight*olarak belirtilen piksel olarak ayarlar.
 
 ```
 void SetHeight(int cyHeight);
@@ -683,13 +683,13 @@ Araç çubuğunun piksel cinsinden yüksekliği.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Arama sonra [SetSizes](#setsizes), standart araç çubuğu yüksekliği geçersiz kılmak için bu üye işlevi'ni kullanın. Yükseklik depolayamayacak kadar küçükse, düğmeler altındaki kırpılır.
+[Setboyutları](#setsizes)çağırdıktan sonra, Standart araç çubuğu yüksekliğini geçersiz kılmak için bu üye işlevini kullanın. Yükseklik çok küçükse düğmeler en alta kırpılacak.
 
-Bu işlev çağrılır değil, framework düğmenin boyutunu araç yüksekliği belirlemek için kullanır.
+Bu işlev çağrılmaması halinde, çerçeve, araç çubuğunun yüksekliğini anlamak için düğmenin boyutunu kullanır.
 
-##  <a name="setsizes"></a>  CToolBar::SetSizes
+##  <a name="setsizes"></a>CToolBar:: Setboyutlar
 
-Belirtilen piksel cinsinden boyuta araç çubuğunun düğmeleri ayarlamak için bu üye işlevi çağrısı *sizeButton*.
+Araç çubuğunun düğmelerini *sizeButton*'da belirtilen boyuta piksel olarak ayarlamak için bu üye işlevini çağırın.
 
 ```
 void SetSizes(
@@ -700,16 +700,16 @@ void SetSizes(
 ### <a name="parameters"></a>Parametreler
 
 *sizeButton*<br/>
-Düğmelerin piksel cinsinden boyutu.
+Her düğmenin piksel cinsinden boyutu.
 
 *sizeImage*<br/>
-Her resminin piksel cinsinden boyutu.
+Her resmin piksel cinsinden boyutu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*SizeImage* boyutunu piksel cinsinden araç çubuğunun bit eşlem resmi parametre içermelidir. Boyutlar *sizeButton* görüntünün yanı sıra 7 piksel cinsinden genişliği ek ve 6 piksel cinsinden yüksekliği ek tutmak yeterli olmalıdır. Bu işlev, ayrıca araç yüksekliğini düğmeleri ayarlar.
+*SizeImage* parametresi, Toolbar 'ın bit eşlemdeki görüntülerin piksel cinsinden boyutunu içermelidir. *SizeButton* içindeki Boyutlar, görüntüyü ve 6 piksel ekstra genişlik ve yükseklik ve 6 piksel ekstra bir şekilde tutmak için yeterli olmalıdır. Bu işlev ayrıca araç çubuğu yüksekliğini düğmelere uyacak şekilde ayarlar.
 
-İzleyen değil yalnızca araç çubukları için bu üye işlevi çağrısı *yazılım tasarımı için Windows arabirimi yönergelerine* düğmesi ve görüntü boyutları için öneriler.
+Bu üye işlevini yalnızca, düğme ve resim boyutlarına yönelik *yazılım tasarımı önerileri Için Windows arabirim yönergeleri* ' ni takip eden araç çubukları için çağırın.
 
 ### <a name="example"></a>Örnek
 

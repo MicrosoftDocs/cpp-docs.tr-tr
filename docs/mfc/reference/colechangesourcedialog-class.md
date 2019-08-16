@@ -1,5 +1,5 @@
 ---
-title: COleChangeSourceDialog sınıfı
+title: Colet Changesourcedialog sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - COleChangeSourceDialog
@@ -24,16 +24,16 @@ helpviewer_keywords:
 - COleChangeSourceDialog [MFC], IsValidSource
 - COleChangeSourceDialog [MFC], m_cs
 ms.assetid: d0e08be7-21ef-45e1-97af-fe27d99e3bac
-ms.openlocfilehash: 1d118b132fc110402967e9c7f2b1d74a2164d7c8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 239d7eed89796f414a7665b203ca50fafec51277
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62399726"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69504395"
 ---
-# <a name="colechangesourcedialog-class"></a>COleChangeSourceDialog sınıfı
+# <a name="colechangesourcedialog-class"></a>Colet Changesourcedialog sınıfı
 
-OLE Change Source iletişim kutusu için kullanıldı.
+OLE değişim kaynağı iletişim kutusu için kullanılır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -47,33 +47,33 @@ class COleChangeSourceDialog : public COleDialog
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[COleChangeSourceDialog::COleChangeSourceDialog](#colechangesourcedialog)|Oluşturur bir `COleChangeSourceDialog` nesne.|
+|[Colet Changesourcedialog:: Cotachangesourcedialog](#colechangesourcedialog)|Bir `COleChangeSourceDialog` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[COleChangeSourceDialog::DoModal](#domodal)|OLE Change Source iletişim kutusu görüntüler.|
-|[COleChangeSourceDialog::GetDisplayName](#getdisplayname)|Tam kaynak görünen adını alır.|
-|[COleChangeSourceDialog::GetFileName](#getfilename)|Dosya adı, kaynak adından alır.|
-|[COleChangeSourceDialog::GetFromPrefix](#getfromprefix)|Önceki kaynak önekini alır.|
-|[COleChangeSourceDialog::GetItemName](#getitemname)|Öğe adı, kaynak adından alır.|
-|[COleChangeSourceDialog::GetToPrefix](#gettoprefix)|Yeni kaynak önekini alır|
-|[COleChangeSourceDialog::IsValidSource](#isvalidsource)|Kaynak geçerli olup olmadığını gösterir.|
+|[Colet Changesourcedialog::D oModal](#domodal)|OLE değişiklik kaynağı iletişim kutusunu görüntüler.|
+|[Colet Changesourcedialog:: GetDisplayName](#getdisplayname)|Kaynak görünen adının tamamını alır.|
+|[Colet Changesourcedialog:: GetFileName](#getfilename)|Kaynak adından dosya adını alır.|
+|[Colet Changesourcedialog:: Getfrompredüzeltmesini](#getfromprefix)|Önceki kaynağın önekini alır.|
+|[Colet Changesourcedialog:: GetItemName](#getitemname)|Kaynak adından öğe adını alır.|
+|[Colet Changesourcedialog:: GetToPrefix](#gettoprefix)|Yeni kaynağın önekini alır|
+|[Colet Changesourcedialog:: ısvalidsource](#isvalidsource)|Kaynağın geçerli olup olmadığını gösterir.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[COleChangeSourceDialog::m_cs](#m_cs)|İletişim kutusunun davranışını kontrol eden bir yapı.|
+|[Colet Changesourcedialog:: m_cs](#m_cs)|İletişim kutusunun davranışını denetleyen bir yapı.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıfın bir nesnesi oluşturma `COleChangeSourceDialog` bu iletişim kutusunu çağırmak istediğinizde. Sonra bir `COleChangeSourceDialog` nesne oluşturulur, kullanabileceğiniz [m_cs](#m_cs) yapısı değerleri veya durumları iletişim kutusundaki denetimlerin başlatılamadı. `m_cs` Yapısıdır türünü [OLEUICHANGESOURCE](/windows/desktop/api/oledlg/ns-oledlg-tagoleuichangesourcea). Bu iletişim kutusu sınıfı kullanma hakkında daha fazla bilgi için bkz. [DoModal](#domodal) üye işlevi.
+Bu iletişim kutusunu çağırmak istediğinizde `COleChangeSourceDialog` , sınıfının bir nesnesi oluşturun. Bir `COleChangeSourceDialog` nesne oluşturulduktan sonra, iletişim kutusundaki denetimlerin değerlerini veya durumlarını başlatmak için [m_cs](#m_cs) yapısını kullanabilirsiniz. Yapı `m_cs` , [oleuichangesource](/windows/win32/api/oledlg/ns-oledlg-oleuichangesourcew)türündedir. Bu iletişim kutusu sınıfını kullanma hakkında daha fazla bilgi için bkz. [DoModal](#domodal) üye işlevi.
 
-Daha fazla bilgi için [OLEUICHANGESOURCE](/windows/desktop/api/oledlg/ns-oledlg-tagoleuichangesourcea) Windows SDK'sındaki yapısı.
+Daha fazla bilgi için Windows SDK içindeki [Oleuichangesource](/windows/win32/api/oledlg/ns-oledlg-oleuichangesourcew) yapısına bakın.
 
-Özel OLE iletişim kutuları hakkında daha fazla bilgi için bkz [ole'deki iletişim kutuları](../../mfc/dialog-boxes-in-ole.md).
+OLE 'e özgü iletişim kutuları hakkında daha fazla bilgi için [OLE 'deki makale Iletişim kutularına](../../mfc/dialog-boxes-in-ole.md)bakın.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -87,17 +87,17 @@ Daha fazla bilgi için [OLEUICHANGESOURCE](/windows/desktop/api/oledlg/ns-oledlg
 
 [CCommonDialog](../../mfc/reference/ccommondialog-class.md)
 
-[COleDialog](../../mfc/reference/coledialog-class.md)
+[Colet Iletişim kutusu](../../mfc/reference/coledialog-class.md)
 
 `COleChangeSourceDialog`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxodlgs.h
+**Üst bilgi:** afxodlgs. h
 
-##  <a name="colechangesourcedialog"></a>  COleChangeSourceDialog::COleChangeSourceDialog
+##  <a name="colechangesourcedialog"></a>Colet Changesourcedialog:: Cotachangesourcedialog
 
-Bu işlevi oluşturan bir `COleChangeSourceDialog` nesne.
+Bu işlev bir `COleChangeSourceDialog` nesnesi oluşturur.
 
 ```
 explicit COleChangeSourceDialog(
@@ -108,20 +108,20 @@ explicit COleChangeSourceDialog(
 ### <a name="parameters"></a>Parametreler
 
 *pItem*<br/>
-Bağlı işaretçisi [Coleclientıtem](../../mfc/reference/coleclientitem-class.md) olan kaynağıdır güncelleştirilecek.
+Kaynağı Güncellenme bağlantılı [Colet TItem](../../mfc/reference/coleclientitem-class.md) 'ın işaretçisi.
 
 *pParentWnd*<br/>
-Üst veya sahibi pencere nesnesi için işaret (tür `CWnd`) ait olduğu iletişim nesnesi. NULL ise, ana uygulama penceresini iletişim kutusunun üst pencere ayarlanır.
+İletişim nesnesinin ait olduğu üst veya sahip pencere nesnesine (türü `CWnd`) işaret eder. NULL ise, iletişim kutusunun ana penceresi ana uygulama penceresine ayarlanır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İletişim kutusunu görüntülemek için çağrı [DoModal](#domodal) işlevi.
+İletişim kutusunu göstermek için [DoModal](#domodal) işlevini çağırın.
 
-Daha fazla bilgi için [OLEUICHANGESOURCE](/windows/desktop/api/oledlg/ns-oledlg-tagoleuichangesourcea) yapısı ve [OleUIChangeSource](/windows/desktop/api/oledlg/nf-oledlg-oleuichangesourcea) Windows SDK'sında işlev.
+Daha fazla bilgi için Windows SDK içindeki [oleuichangesource](/windows/win32/api/oledlg/ns-oledlg-oleuichangesourcew) yapısına ve [oleuichangesource](/windows/win32/api/oledlg/nf-oledlg-oleuichangesourcew) işlevine bakın.
 
-##  <a name="domodal"></a>  COleChangeSourceDialog::DoModal
+##  <a name="domodal"></a>Colet Changesourcedialog::D oModal
 
-OLE Change Source iletişim kutusunu görüntülemek için bu işlevi çağırın.
+OLE değişiklik kaynağı iletişim kutusunu göstermek için bu işlevi çağırın.
 
 ```
 virtual INT_PTR DoModal();
@@ -129,19 +129,19 @@ virtual INT_PTR DoModal();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Tamamlanma durumu iletişim kutusu için. Aşağıdaki değerlerden biri:
+İletişim kutusu için tamamlanma durumu. Aşağıdaki değerlerden biri:
 
-- İletişim kutusu başarıyla görüntülendiyse IDOK.
+- İletişim kutusu başarıyla görüntüleniyorsa ıDOK.
 
-- Kullanıcı iletişim kutusunu iptal edildiyse IDCANCEL.
+- Kullanıcı iletişim kutusunu iptal edildiyse ıDCANCEL.
 
-- Bir hata oluşursa IDABORT. IDABORT döndürülürse, çağrı [COleDialog::GetLastError](../../mfc/reference/coledialog-class.md#getlasterror) konusu hatanın türü hakkında daha fazla bilgi almak için üye işlevi. Olası hataları bir listesi için bkz. [OleUIChangeSource](/windows/desktop/api/oledlg/nf-oledlg-oleuichangesourcea) Windows SDK'sında işlev.
+- Bir hata oluştuysa ıDADBORT. IDADBORT döndürülürse, oluşan hata türü hakkında daha fazla bilgi edinmek için [Cotadialog:: GetLastError](../../mfc/reference/coledialog-class.md#getlasterror) üye işlevini çağırın. Olası hataların listesi için, Windows SDK içindeki [Oleuichangesource](/windows/win32/api/oledlg/nf-oledlg-oleuichangesourcew) işlevine bakın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çeşitli iletişim kutusu denetimleri üyeleri ayarlayarak başlatmak istiyorsanız [m_cs](#m_cs) yapısı, bunu çağırmadan önce yapmalısınız `DoModal`, ancak iletişim nesnesi oluşturulur.
+[M_cs](#m_cs) yapısının üyelerini ayarlayarak çeşitli iletişim kutusu denetimlerini başlatmak isterseniz, bunu çağırmadan `DoModal`önce, ancak iletişim kutusu nesnesi oluşturulduktan sonra yapmanız gerekir.
 
-Varsa `DoModal` IDOK, döndürür üye iletişim kutusundan kullanıcı tarafından girilen ayarları veya bilgi almak için işlevleri çağırabilir. Aşağıdaki listede, tipik sorgu işlevleri adları:
+IDOK `DoModal` döndürürse, iletişim kutusundan Kullanıcı tarafından girilen ayarları veya bilgileri almak için üye işlevlerini çağırabilirsiniz. Aşağıdaki liste tipik sorgu işlevlerini adlandırır:
 
 - [GetFileName](#getfilename)
 
@@ -149,9 +149,9 @@ Varsa `DoModal` IDOK, döndürür üye iletişim kutusundan kullanıcı tarafın
 
 - [GetItemName](#getitemname)
 
-##  <a name="getdisplayname"></a>  COleChangeSourceDialog::GetDisplayName
+##  <a name="getdisplayname"></a>Colet Changesourcedialog:: GetDisplayName
 
-Bağlı istemci öğesi için tam görünen adın almak için bu işlevi çağırın.
+Bağlı istemci öğesi için tüm görünen adı almak için bu işlevi çağırın.
 
 ```
 CString GetDisplayName();
@@ -159,11 +159,11 @@ CString GetDisplayName();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Tam kaynak görünen adı (ad) [Coleclientıtem](../../mfc/reference/coleclientitem-class.md) oluşturucuda belirtilen.
+Oluşturucuda belirtilen [Cotaclientitıtem](../../mfc/reference/coleclientitem-class.md) için kaynak görünen adı (bilinen ad).
 
-##  <a name="getfilename"></a>  COleChangeSourceDialog::GetFileName
+##  <a name="getfilename"></a>Colet Changesourcedialog:: GetFileName
 
-Bağlı istemci öğesi için görünen ad dosya adı kısmı almak için bu işlevi çağırın.
+Bağlı istemci öğesi için görünen adın dosya bilinen ad bölümünü almak için bu işlevi çağırın.
 
 ```
 CString GetFileName();
@@ -171,15 +171,15 @@ CString GetFileName();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dosya kaynak görüntü adı için bilinen ad kısmı [Coleclientıtem](../../mfc/reference/coleclientitem-class.md) oluşturucuda belirtilen.
+Oluşturucuda belirtilen [Colet clientıtem](../../mfc/reference/coleclientitem-class.md) için kaynak görünen adının dosya bilinen adı bölümü.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Öğe bilinen adı ile birlikte dosya ad, tam görünen adın sağlar.
+Dosya bilinen adı öğe bilinen adıyla birlikte, tüm görünen adı verir.
 
-##  <a name="getfromprefix"></a>  COleChangeSourceDialog::GetFromPrefix
+##  <a name="getfromprefix"></a>Colet Changesourcedialog:: Getfrompredüzeltmesini
 
-Kaynağı önceki ön ek dizesini almak için bu işlevi çağırın.
+Kaynağın önceki ön ek dizesini almak için bu işlevi çağırın.
 
 ```
 CString GetFromPrefix();
@@ -187,19 +187,19 @@ CString GetFromPrefix();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kaynak önceki önek dizesi.
+Kaynağın önceki ön eki dizesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev yalnızca çağrı [DoModal](#domodal) IDOK döndürür.
+Bu işlevi yalnızca [DoModal](#domodal) , IDOK öğesini döndürdüğünden çağırın.
 
-Bu değer, doğrudan gelir `lpszFrom` üyesi [OLEUICHANGESOURCE](/windows/desktop/api/oledlg/ns-oledlg-tagoleuichangesourcea) yapısı.
+Bu değer, doğrudan `lpszFrom` [oleuichangesource](/windows/win32/api/oledlg/ns-oledlg-oleuichangesourcew) yapısının üyesinden gelir.
 
-Daha fazla bilgi için [OLEUICHANGESOURCE](/windows/desktop/api/oledlg/ns-oledlg-tagoleuichangesourcea) Windows SDK'sındaki yapısı.
+Daha fazla bilgi için Windows SDK içindeki [Oleuichangesource](/windows/win32/api/oledlg/ns-oledlg-oleuichangesourcew) yapısına bakın.
 
-##  <a name="getitemname"></a>  COleChangeSourceDialog::GetItemName
+##  <a name="getitemname"></a>Colet Changesourcedialog:: GetItemName
 
-Bağlı istemci öğesi için görünen ad öğe bilinen adı kısmı almak için bu işlevi çağırın.
+Bağlı istemci öğesinin görünen adının öğe bilinen adını almak için bu işlevi çağırın.
 
 ```
 CString GetItemName();
@@ -207,15 +207,15 @@ CString GetItemName();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kaynak görünen adı öğe bilinen adı kısmı [Coleclientıtem](../../mfc/reference/coleclientitem-class.md) oluşturucuda belirtilen.
+Oluşturucuda belirtilen [Cotaclientitıtem](../../mfc/reference/coleclientitem-class.md) için kaynak görünen adının öğe bilinen adı bölümü.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Öğe bilinen adı ile birlikte dosya ad, tam görünen adın sağlar.
+Dosya bilinen adı öğe bilinen adıyla birlikte, tüm görünen adı verir.
 
-##  <a name="gettoprefix"></a>  COleChangeSourceDialog::GetToPrefix
+##  <a name="gettoprefix"></a>Colet Changesourcedialog:: GetToPrefix
 
-Kaynak için yeni ön ek dizesini almak için bu işlevi çağırın.
+Kaynak için yeni önek dizesini almak için bu işlevi çağırın.
 
 ```
 CString GetToPrefix();
@@ -223,19 +223,19 @@ CString GetToPrefix();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kaynak yeni önek dizesi.
+Kaynağın yeni önek dizesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev yalnızca çağrı [DoModal](#domodal) IDOK döndürür.
+Bu işlevi yalnızca [DoModal](#domodal) , IDOK öğesini döndürdüğünden çağırın.
 
-Bu değer, doğrudan gelir `lpszTo` üyesi [OLEUICHANGESOURCE](/windows/desktop/api/oledlg/ns-oledlg-tagoleuichangesourcea) yapısı.
+Bu değer, doğrudan `lpszTo` [oleuichangesource](/windows/win32/api/oledlg/ns-oledlg-oleuichangesourcew) yapısının üyesinden gelir.
 
-Daha fazla bilgi için [OLEUICHANGESOURCE](/windows/desktop/api/oledlg/ns-oledlg-tagoleuichangesourcea) Windows SDK'sındaki yapısı.
+Daha fazla bilgi için Windows SDK içindeki [Oleuichangesource](/windows/win32/api/oledlg/ns-oledlg-oleuichangesourcew) yapısına bakın.
 
-##  <a name="m_cs"></a>  COleChangeSourceDialog::m_cs
+##  <a name="m_cs"></a>Colet Changesourcedialog:: m_cs
 
-Bu veri üyesi türünün bir yapıdır [OLEUICHANGESOURCE](/windows/desktop/api/oledlg/ns-oledlg-tagoleuichangesourcea).
+Bu veri üyesi, [Oleuichangesource](/windows/win32/api/oledlg/ns-oledlg-oleuichangesourcew)türünde bir yapıdır.
 
 ```
 OLEUICHANGESOURCE m_cs;
@@ -243,13 +243,13 @@ OLEUICHANGESOURCE m_cs;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`OLEUICHANGESOURCE` OLE Change Source iletişim kutusu davranışını denetlemek için kullanılır. Bu yapının üyelerine doğrudan değiştirilebilir.
+`OLEUICHANGESOURCE`OLE değişim kaynağı iletişim kutusunun davranışını denetlemek için kullanılır. Bu yapının üyeleri doğrudan değiştirilebilir.
 
-Daha fazla bilgi için [OLEUICHANGESOURCE](/windows/desktop/api/oledlg/ns-oledlg-tagoleuichangesourcea) Windows SDK'sındaki yapısı.
+Daha fazla bilgi için Windows SDK içindeki [Oleuichangesource](/windows/win32/api/oledlg/ns-oledlg-oleuichangesourcew) yapısına bakın.
 
-##  <a name="isvalidsource"></a>  COleChangeSourceDialog::IsValidSource
+##  <a name="isvalidsource"></a>Colet Changesourcedialog:: ısvalidsource
 
-Yeni kaynak geçerli olup olmadığını belirlemek için bu işlevi çağırın.
+Yeni kaynağın geçerli olup olmadığını öğrenmek için bu işlevi çağırın.
 
 ```
 BOOL IsValidSource();
@@ -257,13 +257,13 @@ BOOL IsValidSource();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yeni kaynak geçerliyse, sıfır olmayan Aksi durumda 0.
+Yeni kaynak geçerliyse sıfır dışı, değilse 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev yalnızca çağrı [DoModal](#domodal) IDOK döndürür.
+Bu işlevi yalnızca [DoModal](#domodal) , IDOK öğesini döndürdüğünden çağırın.
 
-Daha fazla bilgi için [OLEUICHANGESOURCE](/windows/desktop/api/oledlg/ns-oledlg-tagoleuichangesourcea) Windows SDK'sındaki yapısı.
+Daha fazla bilgi için Windows SDK içindeki [Oleuichangesource](/windows/win32/api/oledlg/ns-oledlg-oleuichangesourcew) yapısına bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

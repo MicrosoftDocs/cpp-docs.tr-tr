@@ -6,27 +6,27 @@ f1_keywords:
 helpviewer_keywords:
 - robustness [CRT]
 ms.assetid: 7f1a87f8-eff9-4b76-ae9b-d133d3de6adf
-ms.openlocfilehash: c70c9a2bf0b95063fa3f679ca6c3053d2a4f2df5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f41fc019c6a1779362644e29c5518d40690fe9db
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62184573"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69500678"
 ---
 # <a name="robustness"></a>Sağlamlık
 
-Programın sağlamlığını artırmak için aşağıdaki C çalışma zamanı kitaplık işlevleri kullanın.
+Programınızın sağlamlığını artırmak için aşağıdaki C çalışma zamanı kitaplığı işlevlerini kullanın.
 
-## <a name="run-time-robustness-functions"></a>Çalışma zamanı sağlamlık işlevleri
+## <a name="run-time-robustness-functions"></a>Çalışma zamanı sağlamlık Işlevleri
 
 |İşlev|Bir yönetim grubuna bağlanmak veya bağlı bir yönetim grubunun özelliklerini düzenlemek için Yönetim çalışma alanında|
 |--------------|---------|
-|[_set_new_handler](../c-runtime-library/reference/set-new-handler.md)|Varsa, hata işleme mekanizması aktarır denetim **yeni** işleci başarısız bellek ayrılamadı.|
-|[_set_se_translator](../c-runtime-library/reference/set-se-translator.md)|Tanıtıcıları Win32 özel durumlar (C yapısal özel durumlarını) olarak C++ özel durumları yazdınız.|
-|[set_terminate](../c-runtime-library/reference/set-terminate-crt.md)|Kendi sonlandırma işlevi çağrılacak yükler [sonlandırmak](../c-runtime-library/reference/terminate-crt.md).|
-|[set_unexpected](../c-runtime-library/reference/set-unexpected-crt.md)|Kendi sonlandırma işlevi çağrılacak yükler [beklenmeyen](../c-runtime-library/reference/unexpected-crt.md).|
+|[_set_new_handler](../c-runtime-library/reference/set-new-handler.md)|**Yeni** operatör bellek ayıramazsa, denetimi hata işleme mekanizmanıza aktarır.|
+|[_set_se_translator](../c-runtime-library/reference/set-se-translator.md)|Oluşturulmuş özel durumlar olarak C++ Win32 özel durumlarını (C yapılandırılmış özel durumlar) işler.|
+|[set_terminate](../c-runtime-library/reference/set-terminate-crt.md)|[Terminate](../c-runtime-library/reference/terminate-crt.md)tarafından çağrılacak kendi sonlandırma işlevinizi kurar.|
+|[set_unexpected](../c-runtime-library/reference/set-unexpected-crt.md)|[Beklenmeyen](../c-runtime-library/reference/unexpected-crt.md)bir şekilde çağrılacak kendi sonlandırma işlevinizi kurar.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Kategoriye göre Evrensel C çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)<br/>
-[SetUnhandledExceptionFilter](https://msdn.microsoft.com/library/windows/desktop/ms680634.aspx)<br/>
+[SetUnhandledExceptionFilter](/win32/api/errhandlingapi/nf-errhandlingapi-setunhandledexceptionfilter)<br/>

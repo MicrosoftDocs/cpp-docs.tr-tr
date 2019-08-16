@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - GetActiveObject method [C++]
 ms.assetid: 2fa94853-0410-4620-91f2-136dae923f9f
-ms.openlocfilehash: 84e43de9c40baa3c596c68ed7739471c059cbac7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f13a42878392f63096cdfcb405f3f91cc0efe451
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62154857"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69498892"
 ---
-# <a name="comptrtgetactiveobject"></a>_com_ptr_t::GetActiveObject
+# <a name="_com_ptr_tgetactiveobject"></a>_com_ptr_t::GetActiveObject
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Verilen bir nesnenin varolan örneğine için bir `CLSID` veya `ProgID`.
+`CLSID` Veya`ProgID`verilen bir nesnenin var olan örneğine iliştirir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -35,26 +35,26 @@ HRESULT GetActiveObject(
 
 #### <a name="parameters"></a>Parametreler
 
-*rclsid*<br/>
+*rclsıd*<br/>
 `CLSID` Bir nesne.
 
-*clsidString*<br/>
-Bulunduran bir Unicode dizesini bir `CLSID` (sürümünden itibaren "**{**") veya bir `ProgID`.
+*Clsıdstring*<br/>
+`CLSID` (" **{** `ProgID`" İle başlayarak) veya içeren bir Unicode dizesi.
 
-*clsidStringA*<br/>
-Bulunduran ANSI kod sayfasını kullanarak çok baytlı bir dize bir `CLSID` (sürümünden itibaren "**{**") veya bir `ProgID`.
+*Clsıdstringa*<br/>
+`CLSID` (" **{** `ProgID`" İle başlayarak) veya ' ı içeren ANSI kod sayfası kullanan çok baytlı bir dize.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevleri çağırma **GetActiveObject** OLE ile kaydedilmiş çalışan bir nesnenin işaretçisini almak için ve ardından bu akıllı işaretçinin sorgularında arabirim türü. Elde edilen işaretçi, daha bu `_com_ptr_t` nesnesinin içinde kapsüllenir. `Release` daha önce Kapsüllenen işaretçi için başvuru sayısını azaltma için çağrılır. Bu yordam, başarıyı veya başarısızlığı göstermek için HRESULT döndürür.
+Bu üye işlevleri, OLE ile kaydedilmiş çalışan bir nesnenin işaretçisini almak için **GetActiveObject** öğesini çağırır ve ardından bu akıllı işaretçinin arabirim türünü sorgular. Elde edilen işaretçi, daha bu `_com_ptr_t` nesnesinin içinde kapsüllenir. `Release`, daha önce kapsüllenmiş işaretçinin başvuru sayısını azaltmak için çağırılır. Bu yordam, başarılı veya başarısız olduğunu göstermek için HRESULT döndürür.
 
-- **GetActiveObject (**`rclsid`**)** için verilen bir nesnenin varolan örneğine bir `CLSID`.
+- **GetActiveObject (** `rclsid` **)** , verilen bir `CLSID`nesnenin var olan bir örneğine iliştirir.
 
-- **GetActiveObject (**`clsidString`**)** bulunduran Unicode dizesi verilmiş nesnenin varolan örneğine için bir `CLSID` (sürümünden itibaren "**{**") veya bir `ProgID`.
+- **GetActiveObject (** `clsidString` **)** , `CLSID` (" **{** " ile `ProgID`başlayarak) veya içeren bir Unicode dizesi verilen bir nesnenin varolan bir örneğine iliştirir.
 
-- **GetActiveObject (**`clsidStringA`**)** bulunduran çok baytlı karakter dizesi verilmiş nesnenin varolan örneğine bağlanan bir `CLSID` (sürümünden itibaren "**{**") veya `ProgID`. Çağrıları [MultiByteToWideChar](/windows/desktop/api/stringapiset/nf-stringapiset-multibytetowidechar), dizenin OEM kod sayfası yerine ANSI kod sayfası olduğunu varsayar.
+- **GetActiveObject (** `clsidStringA` **)** , `CLSID` (" **{** " ile `ProgID`başlayarak) veya ' i tutan çok baytlı bir karakter dizesi verilen bir nesnenin varolan bir örneğine iliştirir. Dizenin bir OEM kod sayfası yerine ANSI kod sayfasında olduğunu varsayan [MultiByteToWideChar](/windows/win32/api/stringapiset/nf-stringapiset-multibytetowidechar)' ı çağırır.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

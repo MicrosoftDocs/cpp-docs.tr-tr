@@ -5,12 +5,12 @@ ms.topic: reference
 helpviewer_keywords:
 - NotifyHandler function
 ms.assetid: 5ff953ec-de35-42bc-8b3c-d384d636c139
-ms.openlocfilehash: d875a039b01b7458a1df46a2539cf5c68aa67e41
-ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
+ms.openlocfilehash: 16fb330d2da83ddfd013e33a2d4b688b2711103b
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68915930"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69492299"
 ---
 # <a name="notifyhandler"></a>NotifyHandler
 
@@ -31,7 +31,7 @@ LRESULT NotifyHandler(
 İletiyi gönderen denetimin tanımlayıcısı.
 
 *PNMH*<br/>
-Bildirim kodu ve ek bilgiler içeren bir [nmhdr](/windows/desktop/api/richedit/ns-richedit-nmhdr) yapısının adresi. Bazı bildirim iletileri için, bu parametre, ilk üyesi olarak `NMHDR` yapısına sahip daha büyük bir yapıya işaret eder.
+Bildirim kodu ve ek bilgiler içeren bir [nmhdr](/windows/win32/api/richedit/ns-richedit-nmhdr) yapısının adresi. Bazı bildirim iletileri için, bu parametre, ilk üyesi olarak `NMHDR` yapısına sahip daha büyük bir yapıya işaret eder.
 
 *Bişlenmiş*<br/>
 Çağrılan ileti haritası, *NotifyHandler* çağrılmadan önce true değerine ayarlanır. *NotifyHandler* iletiyi tam olarak işlemezse, iletinin daha fazla işleme ihtiyacı olduğunu göstermek Için *Bişlenmiş* olarak **false** olarak ayarlanmalıdır.
@@ -48,4 +48,4 @@ Bu ileti işleyicisini bir ileti eşlemesinde kullanmanın bir örneği için bk
 
 [Pencere Uygulama](../atl/implementing-a-window.md)<br/>
 [İleti haritaları](../atl/message-maps-atl.md)<br/>
-[WM_NOTIFY](/windows/desktop/controls/wm-notify)
+[WM_NOTIFY](/windows/win32/controls/wm-notify)

@@ -30,56 +30,56 @@ helpviewer_keywords:
 - MFC, file operations
 - registration [MFC], shell
 ms.assetid: 0480cd01-f629-4249-b221-93432d95b431
-ms.openlocfilehash: 910660253c9d306b13294a710021a6bbd36c1952
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e96753a5dbc77fdc7aab365439e997585e00f43b
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62307321"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69511336"
 ---
 # <a name="special-cwinapp-services"></a>Özel CWinApp Hizmetleri
 
-İleti döngüsü çalıştırmak ve uygulamayı başlatın ve sonra temizleme fırsatı veren yanı sıra [CWinApp](../mfc/reference/cwinapp-class.md) diğer birçok hizmet sunar.
+İleti döngüsünü çalıştırmanın yanı sıra uygulamayı başlatmak ve sonrasında temizlemek için bir fırsat vererek, [CWinApp](../mfc/reference/cwinapp-class.md) birçok farklı hizmeti sağlar.
 
-##  <a name="_core_shell_registration"></a> Kabuk kaydı
+##  <a name="_core_shell_registration"></a>Kabuk kaydı
 
-Varsayılan olarak, MFC Uygulama Sihirbazı bunları dosya Gezgini ya da Dosya Yöneticisi çift tıklayarak uygulamanızın oluşturduğu veri dosyalarını açmak kullanıcı sağlar. Uygulamanızı bir MDI uygulamasıdır ve uygulamanız tarafından oluşturulan dosyalar için bir uzantı belirtirseniz, MFC Uygulama Sihirbazı çağrıları ekler [RegisterShellFileTypes](../mfc/reference/cwinapp-class.md#registershellfiletypes) ve [EnableShellOpen](../mfc/reference/cwinapp-class.md#enableshellopen)üye işlevleri [CWinApp](../mfc/reference/cwinapp-class.md) için `InitInstance` sizin yerinize yazar geçersiz kılma.
+Varsayılan olarak, MFC Uygulama Sihirbazı, kullanıcının uygulamanızın oluşturduğu veri dosyalarını dosya Gezgini veya dosya yöneticisi 'nde çift tıklayarak açmasını mümkün hale getirir. Uygulamanız bir MDI uygulaması ise ve uygulamanızın oluşturduğu dosyalar için bir uzantı belirtirseniz, MFC Uygulama Sihirbazı [RegisterShellFileTypes](../mfc/reference/cwinapp-class.md#registershellfiletypes) ve [CWinApp](../mfc/reference/cwinapp-class.md) 'ın [EnableShellOpen](../mfc/reference/cwinapp-class.md#enableshellopen) üye işlevlerine çağrı ekler sizin için yazdığı geçersiz kılma. `InitInstance`
 
-`RegisterShellFileTypes` Uygulamanızın belge türleri, dosya Gezgini ya da Dosya Yöneticisi ile kaydeder. İşlev girişleri Windows tutan kayıt veritabanına ekler. Girişleri her belge türünü kaydetmek, dosya türü ile bir dosya uzantısı ilişkilendirme, uygulamayı açmak için bir komut satırı belirtin ve bu tür bir belgeyi açmak için dinamik veri değişimi (DDE) komutu belirtin.
+`RegisterShellFileTypes`Uygulamanızın belge türlerini dosya Gezgini veya Dosya Yöneticisi ile kaydeder. İşlevi, girdileri Windows 'un koruduğu kayıt veritabanına ekler. Girdiler her belge türünü kaydeder, dosya uzantısını dosya türüyle ilişkilendirir, uygulamayı açmak için bir komut satırı belirtir ve bu türden bir belgeyi açmak için bir dinamik veri değişimi (DDE) komutu belirtir.
 
-`EnableShellOpen` Dosya Gezgini veya Dosya Yöneticisi kullanıcı tarafından seçilen dosyayı açmaya DDE komutları almak üzere uygulamanızı vererek işlemi tamamlar.
+`EnableShellOpen`Uygulamanızın Dosya Gezgini 'nden veya dosya yöneticisinden DDE komutları almasına izin vererek Kullanıcı tarafından seçilen dosyayı açmasını sağlayarak işlemi tamamlar.
 
-Bu otomatik kayıt desteği `CWinApp` .reg dosyası kullanarak uygulamanızı dağıtmayı veya özel yükleme iş yapma ihtiyacını ortadan kaldırır.
+' Deki `CWinApp` bu otomatik kayıt desteği, uygulamanıza bir. reg dosyası gönderme veya özel yükleme çalışması oluşturma gereksinimini ortadan kaldırır.
 
-GDI +'da, uygulamanız için başlatmak istiyorsanız (çağırarak [GdiplusStartup](/windows/desktop/api/gdiplusinit/nf-gdiplusinit-gdiplusstartup) içinde [InitInstance](../mfc/reference/cwinapp-class.md#initinstance) işlevi), GDI +'da arka plan iş parçacığı bastırmak vardır.
+Uygulamanız için GDI+ başlatmak istiyorsanız ( [InitInstance](../mfc/reference/cwinapp-class.md#initinstance) Işlevinizde [Gdılusstartup](/windows/win32/api/gdiplusinit/nf-gdiplusinit-gdiplusstartup) ' ı çağırarak), GDI+ arka plan iş parçacığını bastırın.
 
-Bunu ayarlayarak yapabilirsiniz `SuppressBackgroundThread` üyesi [GdiplusStartupInput](/windows/desktop/api/gdiplusinit/ns-gdiplusinit-gdiplusstartupinput) için yapı **TRUE**. Ne zaman gizleme GDI +'da arka plan iş parçacığı `NotificationHook` ve `NotificationUnhook` çağrıları yapılacak yalnızca önceki girme ve uygulamanın ileti döngüsünden çıkılıyor. Bu çağrılar hakkında daha fazla bilgi için bkz. [GdiplusStartupOutput](/windows/desktop/api/gdiplusinit/ns-gdiplusinit-gdiplusstartupoutput). Çağırmak için bu nedenle, iyi bir yer `GdiplusStartup` ve bildirim kanca işlevlerini raporlama sanal işlevi geçersiz kılma seçeneğinde olacağını [CWinApp::Run](../mfc/reference/cwinapp-class.md#run), aşağıda gösterildiği gibi:
+Bunu, `SuppressBackgroundThread` [gdılusstartupınput](/windows/win32/api/gdiplusinit/ns-gdiplusinit-gdiplusstartupinput) yapısının üyesini **true**olarak ayarlayarak yapabilirsiniz. GDI+ arka plan iş parçacığını bastırdığınızda, `NotificationHook` ve `NotificationUnhook` çağrılarının, uygulamanın ileti döngüsünden çıkmadan ve çıkmadan hemen önce yapılması gerekir. Bu çağrılar hakkında daha fazla bilgi için bkz. [Gdılusstartupoutput](/windows/win32/api/gdiplusinit/ns-gdiplusinit-gdiplusstartupoutput). Bu nedenle, çağrı `GdiplusStartup` yapılacak iyi bir yerdir ve kanca bildirim işlevleri aşağıda gösterildiği gibi, [CWinApp:: Run](../mfc/reference/cwinapp-class.md#run)sanal işlevindeki bir geçersiz kılmada olacaktır:
 
 [!code-cpp[NVC_MFCDocView#6](../mfc/codesnippet/cpp/special-cwinapp-services_1.cpp)]
 
-GDI +'da iş parçacığı arka plan bastırmayın, kendi ana pencere oluşturulmadan önce DDE komutları beklenenden önce de uygulamaya verilebilir. Kabuk tarafından verilen DDE komutları zamanından önce hata iletilerine kaynaklanan iptal.
+Arka plan GDI+ iş parçacığını bastırmadıysanız, ana penceresi oluşturulduktan sonra, DDE komutları uygulamaya erken verilmeyebilir. Kabuk tarafından verilen DDE komutları zamanından önce iptal edilebilir ve bu da hata iletilerine neden olabilir.
 
-##  <a name="_core_file_manager_drag_and_drop"></a> Dosya Yöneticisi sürükleme ve bırakma
+##  <a name="_core_file_manager_drag_and_drop"></a>Dosya Yöneticisi sürükleme ve bırakma
 
-Dosyaları Dosya Yöneticisi veya dosya Gezgini'nde dosya Görünümü penceresinden uygulamanızdaki bir pencere için sürüklenebilir. Örneğin, bir veya daha fazla dosyaları burada uygulama dosya adlarını alabilir ve bu dosyalara ilişkin MDI alt öğe pencerelerini açmak MDI uygulamanın ana pencere, sürüklenmesi etkinleştirebileceğiniz.
+Dosyalar, dosya yöneticisi veya dosya Gezgini 'ndeki dosya görünümü penceresinden uygulamanızdaki bir pencereye sürüklenebilir. Örneğin, bir veya daha fazla dosyanın bir MDI uygulamasının ana penceresine sürüklenmesi için, uygulamanın dosya adlarını alabildiği ve bu dosyalar için MDI alt pencerelerini açabilbileceği durumlar olabilir.
 
-MFC Uygulama Sihirbazı dosya sürükle ve bırak uygulamanızda etkinleştirmek için bir çağrı Yazar [CWnd](../mfc/reference/cwnd-class.md) üye işlevi [DragAcceptFiles](../mfc/reference/cwnd-class.md#dragacceptfiles) için ana çerçeve pencerenizde, `InitInstance`. Sürükle ve bırak özelliğini uygulamak istemiyorsanız, bu çağrı kaldırabilirsiniz.
+Uygulamanızda dosya sürüklemeyi ve bırakmayı etkinleştirmek için, MFC Uygulama Sihirbazı, içindeki ana çerçeve `InitInstance`pencerenizin [CWnd](../mfc/reference/cwnd-class.md) üye işlevi [DragAcceptFiles](../mfc/reference/cwnd-class.md#dragacceptfiles) öğesine bir çağrı yazar. Sürükle ve bırak özelliğini uygulamak istemiyorsanız bu çağrıyı kaldırabilirsiniz.
 
 > [!NOTE]
->  Daha fazla genel sürükle ve bırak özellikleri de uygulayabilirsiniz: belge içinde veya arasında veri sürükleyerek — OLE ile. Bilgi için bkz [sürükleme ve bırakma (OLE)](../mfc/drag-and-drop-ole.md).
+>  Ayrıca, OLE ile verileri belgeler arasında veya belge içinde sürükleyerek daha genel sürükle ve bırak özellikleri de uygulayabilirsiniz. Daha fazla bilgi için bkz. [sürükleme ve bırakma (OLE)](../mfc/drag-and-drop-ole.md)makalesi.
 
-##  <a name="_core_keeping_track_of_the_most_recently_used_documents"></a> En çok izlemek son kullanılan belgeler
+##  <a name="_core_keeping_track_of_the_most_recently_used_documents"></a>En son kullanılan belgeleri takip tutma
 
-Kullanıcı açılır ve dosyaları kapatır gibi uygulama nesnesi dört en son kullanılan dosyaları izler. Bu dosyaların dosya menüsüne eklenen ve bunlar değiştirdiğinizde güncelleştirilir. Framework, bu dosya adları ya da kayıt defteri veya projeniz gibi aynı ada sahip bir .ini dosyası içinde depolar ve uygulamanızı başladığında bunları dosyadan okur. `InitInstance` Geçersiz kılmak için bir çağrı içerdiğine MFC Uygulama Sihirbazı oluşturur [CWinApp](../mfc/reference/cwinapp-class.md) üye işlevi [LoadStdProfileSettings](../mfc/reference/cwinapp-class.md#loadstdprofilesettings), kayıt defteri ya da .ini bilgileri yükler Dosya, en yakın zamanda da dahil olmak üzere, dosya adları kullanılır.
+Kullanıcı, dosyaları açıp kapattığında, uygulama nesnesi en son kullanılan dört dosyayı izler. Bu dosyaların adları Dosya menüsüne eklenir ve değiştiğinde güncelleştirilir. Çerçeve bu dosya adlarını kayıt defterinde veya. ini dosyasında, projenizle aynı ada sahip olacak şekilde depolar ve uygulamanız başlatıldığında onları dosyadan okur. MFC Uygulama Sihirbazı 'nın sizin için oluşturduğu [](../mfc/reference/cwinapp-class.md) geçersizkılma,ensonkullanılandosyadahilkayıtdefteriveya.inidosyasındanbilgileriyükleyenbirCWinAppÜyeişleviLoadStdProfileSettingsöğesinebirçağrı`InitInstance` içerir. [](../mfc/reference/cwinapp-class.md#loadstdprofilesettings) adlardan.
 
-Bu girişler gibi depolanır:
+Bu girişler aşağıdaki gibi depolanır:
 
-- Windows NT, Windows 2000 ve üstü, değer bir kayıt defteri anahtarında depolanır.
+- Windows NT, Windows 2000 ve sonraki sürümlerde, değer bir kayıt defteri anahtarına depolanır.
 
-- Windows içinde 3.x değeri WIN depolanır. INI dosyası.
+- Windows 3. x ' de, değer WIN 'da depolanır. INı dosyası.
 
-- Windows 95 ve sonraki sürümlerinde, değer WIN önbelleğe alınmış bir sürümünde depolanır. INI.
+- Windows 95 ve üzeri sürümlerde, bu değer WIN 'ın önbelleğe alınmış bir sürümünde depolanır. Dosyası.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[CWinApp: Uygulama sınıfı](../mfc/cwinapp-the-application-class.md)
+[CWinApp: Uygulama Sınıfı](../mfc/cwinapp-the-application-class.md)

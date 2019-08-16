@@ -46,16 +46,16 @@ helpviewer_keywords:
 - vsprintf function
 - _vstprintf function
 ms.assetid: b8ef1c0d-58f9-4a18-841a-f1a989e1c29b
-ms.openlocfilehash: 4b6dd55f90a3766dc250040e27b80f9b1c64fde3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8eb73a5149c1127332b9b8e464da02c6d528610e
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62383431"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69499019"
 ---
-# <a name="vsprintf-vsprintfl-vswprintf-vswprintfl-vswprintfl"></a>vsprintf, _vsprintf_l, vswprintf, _vswprintf_l, __vswprintf_l
+# <a name="vsprintf-_vsprintf_l-vswprintf-_vswprintf_l-__vswprintf_l"></a>vsprintf, _vsprintf_l, vswprintf, _vswprintf_l, __vswprintf_l
 
-Bağımsız değişkenler listesine bir işaretçi kullanarak biçimlendirilmiş çıktı yazın. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz: [vsprintf_s, _vsprintf_s_l, vswprintf_s, _vswprintf_s_l](vsprintf-s-vsprintf-s-l-vswprintf-s-vswprintf-s-l.md).
+Bağımsız değişken listesi için bir işaretçi kullanarak biçimli çıktı yazın. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz. [vsprintf_s, _vsprintf_s_l, vswprintf_s, _vswprintf_s_l](vsprintf-s-vsprintf-s-l-vswprintf-s-vswprintf-s-l.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -120,55 +120,55 @@ int _vswprintf_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*Arabellek*<br/>
+*arabelleğin*<br/>
 Çıktı için depolama konumu.
 
-*Sayısı*<br/>
-Bu işlev geniş dize sürümlerinde saklanacak karakter sayısı.
+*biriktirme*<br/>
+Bu işlevin geniş dize sürümlerinde depolanacak en fazla karakter sayısı.
 
-*Biçim*<br/>
+*format*<br/>
 Biçim belirtimi.
 
 *argptr*<br/>
-Bağımsız değişkenler listesine işaretçi.
+Bağımsız değişken listesi işaretçisi.
 
-*Yerel ayar*<br/>
+*ayarlar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**vsprintf** ve **vswprintf** bir hata oluşursa, sondaki boş karakter veya negatif bir değer içermeyen yazılan karakter sayısını döndürür. Varsa *arabellek* veya *biçimi* null bir işaretçiyse, bu işlevler içinde açıklanan şekilde geçersiz parametre işleyicisi çağırır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse, bu işlevler -1 döndürür ve **errno** için **EINVAL**.
+**vsprıntf** ve **vswprintf** , yazılan karakter sayısını, Sonlandırıcı null karakterini veya bir çıkış hatası oluşursa negatif bir değeri geri döndürür. *Arabellek* veya *Biçim* null işaretçisiyse, bu işlevler [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler-1 döndürür ve **errno** , **EINVAL**olarak ayarlanır.
 
-Bunlar ve diğer hata kodları hakkında daha fazla bilgi için bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Bu ve diğer hata kodları hakkında bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevlerin her biri bir bağımsız değişken listesi için bir işaretçi alır ve ardından biçimlendirir ve tarafından işaret edilen bellek verilen verileri Yazar *arabellek*.
+Bu işlevlerin her biri bağımsız değişken listesi için bir işaretçi alır ve sonra verilen verileri *arabelleğe*göre işaret eden belleğe biçimlendirir ve yazar.
 
-Sahip bu işlevlerin sürümleri **_l** sonekine, geçerli iş parçacığı yerel ayarı yerine iletilen yerel ayar parametresini kullanmalarıdır.
+**_L** sonekine sahip bu işlevlerin sürümleri, geçerli iş parçacığı yerel ayarı yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır.
 
 > [!IMPORTANT]
-> Kullanarak **vsprintf**, orada karakter sayısını sınırlama yolu yoktur yazılır, bu işlevi kullanarak kod arabellek taşmasına maruz olduğu anlamına gelir. Kullanım [_vsnprintf](vsnprintf-vsnprintf-vsnprintf-l-vsnwprintf-vsnwprintf-l.md) bunun yerine veya arama [_vscprintf](vscprintf-vscprintf-l-vscwprintf-vscwprintf-l.md) ne büyüklükte bir arabellek gerekli belirlemek için. Ayrıca, emin *biçimi* kullanıcı tanımlı bir dize değil. Daha fazla bilgi için [arabellek taşmalarını](/windows/desktop/SecBP/avoiding-buffer-overruns).
+> **Vsprıntf**' i kullanarak, yazılan karakter sayısını sınırlamanın bir yolu yoktur, bu da bu işlevi kullanan kodun arabellek taşmalarına açıktır. Bunun yerine [_vsnprintf](vsnprintf-vsnprintf-vsnprintf-l-vsnwprintf-vsnwprintf-l.md) kullanın veya bir arabelleğin ne kadar büyük olacağını öğrenmek için [_vscprintf](vscprintf-vscprintf-l-vscwprintf-vscwprintf-l.md) ' i çağırın. Ayrıca, *biçimin* Kullanıcı tanımlı bir dize olmadığından emin olun. Daha fazla bilgi için bkz. [arabellek taşmalarını önleme](/windows/win32/SecBP/avoiding-buffer-overruns).
 
-**vswprintf** ISO C ikinci parametresini gerektiren standardı'na uygundur *sayısı*, türü **size_t**. Eski standart dışı davranışı zorlamak için tanımladığınız **_CRT_NON_CONFORMING_SWPRINTFS**. Yeni ve uyumlu davranışın kullanılabilmesi için kod değiştirilmelidir. Bu nedenle gelecekte yayımlanacak bir sürümde eski davranışı olmayabilir.
+**vswprintf** , **size_t**türünde ikinci parametreyi ( *Count*) gerektiren ISO C standardına uyar. Standart olmayan eski davranışı zorlamak için **_CRT_NON_CONFORMING_SWPRINTFS**tanımlayın. Eski davranış gelecek bir sürümde olmayabilir, bu nedenle kodun yeni uyumlu davranışı kullanacak şekilde değiştirilmesi gerekir.
 
-C++'da, bu işlevler, bu işlevlerin daha yeni ve güvenli karşılıklarını çağırma şablon aşırı yüklemeleri vardır. Daha fazla bilgi için [güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
+' C++De, bu işlevlerde bu işlevlerin daha yeni ve güvenli karşılıkları çağıran şablon aşırı yüklemeleri vardır. Daha fazla bilgi için bkz. [Güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|**_vstprintf**|**vsprintf**|**vsprintf**|**vswprintf**|
+|**_vstprintf**|**vsprıntf**|**vsprıntf**|**vswprintf**|
 |**_vstprintf_l**|**_vsprintf_l**|**_vsprintf_l**|**_vswprintf_l**|
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli başlık|İsteğe bağlı üst bilgiler|
+|Yordam|Gerekli başlık|İsteğe bağlı üstbilgiler|
 |-------------|---------------------|----------------------|
-|**vsprintf**, **_vsprintf_l**|\<stdio.h > ve \<stdarg.h >|\<XENIX > *|
-|**vswprintf**, **_vswprintf_l**|\<stdio.h > veya \<wchar.h >, ve \<stdarg.h >|\<XENIX > *|
+|**vsprıntf**, **_vsprintf_l**|\<stdio. h > ve \<stdarg. h >|\<varargs. h > *|
+|**vswprintf**, **_vswprintf_l**|\<stdio. h > veya \<wchar. h > ve \<stdarg. h >|\<varargs. h > *|
 
-\* UNIX V uyumluluğu için gerekli.
+\*UNIX V uyumluluğu için gereklidir.
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -220,7 +220,7 @@ This is a string
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Stream g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [vprintf İşlevleri](../../c-runtime-library/vprintf-functions.md)<br/>
 [Biçim Belirtim Sözdizimi: printf ve wprintf İşlevleri](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)<br/>
 [fprintf, _fprintf_l, fwprintf, _fwprintf_l](fprintf-fprintf-l-fwprintf-fwprintf-l.md)<br/>

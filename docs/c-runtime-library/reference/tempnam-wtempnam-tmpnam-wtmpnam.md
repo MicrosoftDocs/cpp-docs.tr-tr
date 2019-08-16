@@ -40,16 +40,16 @@ helpviewer_keywords:
 - _wtmpnam function
 - _wtempnam function
 ms.assetid: 3ce75f0f-5e30-42a6-9791-8d7cbfe70fca
-ms.openlocfilehash: 29fa8fc836b1b52bcf66247b3f6aaba47b8c2eaa
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0e8e11182948e9bccf1c55685cc7c3d55ff697c8
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62284879"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69500762"
 ---
-# <a name="tempnam-wtempnam-tmpnam-wtmpnam"></a>_tempnam, _wtempnam, tmpnam, _wtmpnam
+# <a name="_tempnam-_wtempnam-tmpnam-_wtmpnam"></a>_tempnam, _wtempnam, tmpnam, _wtmpnam
 
-Geçici dosyalar oluşturmak için kullanabileceğiniz adları oluşturun. Bu işlevlerden bazılarının daha güvenli sürümleri mevcuttur; bkz: [tmpnam_s, _wtmpnam_s](tmpnam-s-wtmpnam-s.md).
+Geçici dosyalar oluşturmak için kullanabileceğiniz adlar oluşturun. Bu işlevlerin bazılarının daha güvenli sürümleri mevcuttur; bkz. [tmpnam_s, _wtmpnam_s](tmpnam-s-wtmpnam-s.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -73,44 +73,44 @@ wchar_t *_wtmpnam(
 ### <a name="parameters"></a>Parametreler
 
 *prefix*<br/>
-Bekletilen tarafından döndürülen adlarına olacak dize **_tempnam**.
+**_Tempnam**tarafından döndürülen adlara önceden gönderilecek dize.
 
-*dizini*<br/>
-Dosya adında hiçbir TMP ortam değişkeni yoksa veya TMP geçerli bir dizin değil ise kullanılan yol.
+*öğesini*<br/>
+TMP ortam değişkeni yoksa veya TMP geçerli bir dizin değilse dosya adında kullanılan yol.
 
-*str*<br/>
-Oluşturulan adı tutacak ve işlevin döndürdüğü adıyla aynı olacak işaretçisi. Oluşturulan ad kaydetmek için kullanışlı bir yoldur.
+*üstbilgisine*<br/>
+Oluşturulan adı tutan ve işlevin döndürdüğü adla aynı olacak olan işaretçi. Bu, oluşturulan adı kaydetmek için kullanışlı bir yoldur.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Oluşturulan ad bu işlevlerin her biri işaretçi döndürür veya **NULL** bir hata varsa. Çalışırsanız hata meydana gelebilir birden fazla **TMP_MAX** (STDIO bakın. H) çağrılarını **tmpnam** veya kullanıyorsanız **_tempnam** ve TMP ortam değişkenini hem de belirtilen geçersiz dizin adı *dir* parametresi.
+Bu işlevlerin her biri, bir hata varsa, oluşturulan veya **null** olan ada bir işaretçi döndürür. **TMP_MAX** 'den fazlasını denerseniz hata oluşabilir (bkz. stdio. H) **tmpnam** ile çağırır veya **_TEMPNAM** kullanırsanız ve TMP ortam değişkeninde ve *dir* parametresinde geçersiz bir dizin adı belirtildi.
 
 > [!NOTE]
-> Tarafından döndürülen işaretçileri **tmpnam** ve **_wtmpnam** noktası statik iç arabellek. [Ücretsiz](free.md) bu işaretçileri serbest bırakmak çağrılmamalıdır. **Ücretsiz** tarafından ayrılan işaretçiler için çağrılması gereken **_tempnam** ve **_wtempnam**.
+> **Tmpnam** ve **_wtmpnam** tarafından döndürülen işaretçiler iç statik arabelleklere işaret. Bu işaretçileri serbest bırakmak için [Free](free.md) çağrılmamalıdır. **_tempnam** ve **_wtempnam**tarafından ayrılan işaretçiler için **ücretsiz** olarak çağrılması gerekir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevlerin her biri, şu anda mevcut olmayan bir dosya adını döndürür. **tmpnam** tarafından döndürülen belirlenen Windows geçici dizinde benzersiz bir ad verir [GetTempPathW](/windows/desktop/api/fileapi/nf-fileapi-gettemppathw). **\_tempnam** atanmış farklı bir dizinde benzersiz bir ad oluşturur. Bir dosya adı bekletilen ters eğik çizgi ve \fname21 gibi hiçbir yol bilgisi olduğunda bu adı geçerli çalışma dizini için geçerli olduğunu belirttiğinden unutmayın.
+Bu işlevlerin her biri, şu anda mevcut olmayan bir dosyanın adını döndürür. **tmpnam** , [Gettemppathw](/windows/win32/api/fileapi/nf-fileapi-gettemppathw)tarafından döndürülen belirlenmiş Windows geçici dizininde benzersiz bir ad döndürür. tempnam, belirtilen bir dizinde benzersiz bir ad oluşturur.  **\_** Bir dosya adının ters eğik çizgiyle ön halden önceden sonlandırıldığına ve \fname21 gibi yol bilgilerine sahip olmadığına, bu adın geçerli çalışma dizini için geçerli olduğunu gösterir.
 
-İçin **tmpnam**, bu oluşturulan dosya adında depolayabilirsiniz *str*. Varsa *str* olduğu **NULL**, ardından **tmpnam** sonucu bir iç statik arabellek bırakır. Bu nedenle sonraki çağrılar, bu değer yok. Tarafından oluşturulan adı **tmpnam** bir program tarafından oluşturulan dosya adı ve ilk çağrısından sonra oluşan **tmpnam**, sıralı sayıların temel 32 bir dosya uzantısı (.1-.vvu olduğunda **TMP_MAX**  STDIO içinde. H 32.767 ise).
+**Tmpnam**için, bu oluşturulan dosya adını *Str*içinde depolayabilirler. *Str* **null**ise, **tmpnam** sonucu bir iç statik arabellekte bırakır. Bu nedenle, sonraki çağrılar bu değeri yok eder. **Tmpnam** tarafından oluşturulan ad, program tarafından oluşturulan bir dosya adından ve ilk **tmpnam**çağrısından sonra, stdio 'daki **TMP_MAX** olduğunda, temel 32 (. 1-. vvu) içindeki sıralı sayıların bir dosya uzantısı ile oluşur. H 32.767).
 
-**_tempnam** benzersiz bir dosya adı aşağıdaki kurallara göre seçilen bir dizin oluşturur:
+**_tempnam** , aşağıdaki kurallar tarafından seçilen bir dizin için benzersiz bir dosya adı oluşturur:
 
-- TMP ortam değişkenini tanımlanır ve geçerli dizin adına ayarlayın, benzersiz dosya adları TMP tarafından belirtilen dizin için oluşturulur.
+- TMP ortam değişkeni tanımlanmışsa ve geçerli bir dizin adına ayarlandıysa, TMP tarafından belirtilen dizin için benzersiz dosya adları oluşturulur.
 
-- TMP ortam değişkeni tanımlanmamışsa veya var olmayan bir dizin adını ayarlarsanız **_tempnam** kullanacağı *dir* parametre olarak, bunu oluşturacağını benzersiz adlar yolu.
+- TMP ortam değişkeni tanımlanmazsa veya var olmayan bir dizinin adına ayarlandıysa, **_tempnam** benzersiz adlar oluşturacak yol olarak *dır* parametresini kullanır.
 
-- TMP ortam değişkeni tanımlanmamışsa veya var olmayan bir dizin adını ayarlarsanız ve varsa *dir* ya da **NULL** veya mevcut değil, bir dizinin adına ayarlayın **_ tempnam** geçerli çalışma dizini benzersiz adlar oluşturmak için kullanır. Şu anda, hem TMP ve *dir* yok, dizin adlarını belirtmek **_tempnam** işlev çağrısı başarısız olur.
+- TMP ortam değişkeni tanımlanmazsa veya var olmayan bir dizinin adına ayarlandıysa ve Dizin **null** ise ya da varolmayan bir dizinin adına ayarlandıysa, **_tempnam** geçerli çalışma dizinini gene olarak kullanır. benzersiz adları derecelendirin. Şu anda, hem TMP hem de *dir* , mevcut olmayan dizinlerin adlarını belirtmekte, **_tempnam** işlev çağrısı başarısız olur.
 
-Tarafından döndürülen adı **_tempnam** bir birleşimi olacaktır *önek* ve benzersiz bir dosya adı için belirtilen dizin oluşturmak için birleştirecek bir sıralı numara. **_tempnam** hiçbir uzantılı dosya adları oluşturur. **_tempnam** kullanan [malloc](malloc.md) ; dosya adı için alan ayırmak için artık gerekli değilse, bu alanı boşaltmayı içeren için sorumlu bir programdır.
+**_Tempnam** tarafından döndürülen ad, *ön ek* ve ardışık bir sayı olacak, belirtilen dizin için benzersiz bir dosya adı oluşturacak şekilde birleştirilir. **_tempnam** uzantısı olmayan dosya adları oluşturuyor. **_tempnam** dosya adı için alan ayırmak üzere [malloc](malloc.md) kullanır; program artık gerekli olmadığında bu alanı boşaltmaktan sorumludur.
 
-**_tempnam** ve **tmpnam** otomatik olarak algılamayı OEM kod sayfasına göre çok baytlı karakter dizileri tanıtıcı çok baytlı karakter dizesi bağımsız değişken olarak uygun alınan işletim sisteminden. **_wtempnam** geniş karakterli sürümüdür **_tempnam**; bağımsız değişkenler ve dönüş değeri **_wtempnam** geniş karakterli dizelerdir. **_wtempnam** ve **_tempnam** aynı şekilde davranır **_wtempnam** çok baytlı karakter dizelerini işlemez. **_wtmpnam** geniş karakterli sürümüdür **tmpnam**; bağımsız değişkeni ve dönüş değeri **_wtmpnam** geniş karakterli dizelerdir. **_wtmpnam** ve **tmpnam** aynı şekilde davranır **_wtmpnam** çok baytlı karakter dizelerini işlemez.
+**_tempnam** ve **tmpnam** uygun şekilde çok baytlı karakter dize bağımsız değişkenlerini otomatik olarak işler ve işletim sisteminden alınan OEM kod sayfasına göre çok baytlı karakter dizilerini tanıyor. **_wtempnam** , **_tempnam**; öğesinin geniş karakterli bir sürümüdür **_wtempnam** bağımsız değişkenleri ve dönüş değeri geniş karakterli dizelerdir. _wtempnam ve **_tempnam** aynı şekilde davranır. Bu, **_wtempnam** çok baytlı karakter dizelerini işlemez. **_wtmpnam** , **tmpnam**öğesinin geniş karakterli bir sürümüdür. **_wtmpnam** öğesinin bağımsız değişkeni ve dönüş değeri geniş karakterli dizelerdir. _wtmpnam, çok baytlı karakter dizelerini işleyememesi dışında **_wtmpnam** ve **tmpnam** aynı şekilde davranır.
 
-Varsa **_DEBUG** ve **_CRTDBG_MAP_ALLOC** tanımlanan **_tempnam** ve **_wtempnam** çağrılarıyla değiştirilir [_tempnam _dbg ve _wtempnam_dbg](tempnam-dbg-wtempnam-dbg.md).
+**_Debug** ve **_Crtdbg_map_ayırma** tanımlanmışsa, **_tempnam** ve **_wtempnam** , [_tempnam_dbg ve _wtempnam_dbg](tempnam-dbg-wtempnam-dbg.md)çağrılarıyla değiştirilmiştir.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_ttmpnam**|**tmpnam**|**tmpnam**|**_wtmpnam**|
 |**_ttempnam**|**_tempnam**|**_tempnam**|**_wtempnam**|
@@ -119,9 +119,9 @@ Varsa **_DEBUG** ve **_CRTDBG_MAP_ALLOC** tanımlanan **_tempnam** ve **_wtempna
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_tempnam**|\<stdio.h >|
-|**_wtempnam**, **_wtmpnam**|\<stdio.h > veya \<wchar.h >|
-|**tmpnam**|\<stdio.h >|
+|**_tempnam**|\<stdio. h >|
+|**_wtempnam**, **_wtmpnam**|\<stdio. h > veya \<wchar. h >|
+|**tmpnam**|\<stdio. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -198,7 +198,7 @@ c:\tmp\stq3 is safe to use as a temporary file.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Stream g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [_getmbcp](getmbcp.md)<br/>
 [malloc](malloc.md)<br/>
 [_setmbcp](setmbcp.md)<br/>

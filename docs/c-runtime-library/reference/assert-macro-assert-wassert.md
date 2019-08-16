@@ -1,5 +1,5 @@
 ---
-title: Assert makrosu, _assert, _wassert
+title: onaylama makrosu, _Onay, _TatLı
 ms.date: 11/04/2016
 apiname:
 - assert
@@ -28,16 +28,16 @@ helpviewer_keywords:
 - assert function
 - assert macro
 ms.assetid: a9ca031a-648b-47a6-bdf1-65fc7399dd40
-ms.openlocfilehash: 7ac299213ba3de878f7cf2dc99b44c45273bc3b2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a2cc780fbc93aa66bd7fd613c3e155cda27eb7f9
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62341372"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69500332"
 ---
-# <a name="assert-macro-assert-wassert"></a>Assert makrosu, _assert, _wassert
+# <a name="assert-macro-_assert-_wassert"></a>onaylama makrosu, _Onay, _TatLı
 
-Bir ifade ve sonucu olduğunda değerlendirir **false**, bir tanılama iletisi yazdırır ve programı durdurur.
+Bir ifadeyi değerlendirir ve sonuç **yanlış**olduğunda bir tanılama iletisi yazdırır ve programı iptal eder.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -59,47 +59,47 @@ void _wassert(
 
 ### <a name="parameters"></a>Parametreler
 
-*İfade*<br/>
-İçin sıfır dışında değerlendirilen (işaretçi ifadeleri dahil) bir skaler ifade (**true**) veya 0 (**false**).
+*ifadesini*<br/>
+Sıfır (**true**) veya 0 (**false**) olarak değerlendirilen skaler bir ifade (işaretçi ifadeleri dahil).
 
 *message*<br/>
 Görüntülenecek ileti.
 
-*Dosya adı*<br/>
-Kaynak dosyanın adı, onaylama işlemi başarısız oldu.
+*kısaltın*<br/>
+Onaylama işlemi başarısız kaynak dosyanın adı.
 
-*Satır*<br/>
-Onaylama başarısız kaynak dosyadaki satır numarası.
+*satırı*<br/>
+Başarısız onaylama kaynak dosyasındaki satır numarası.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Assert** makrosu genellikle program geliştirme sırasında mantık hataları tanımlamak için kullanılır. Beklenmeyen durumlar uygulayarak ortaya çıktığında, program yürütme durdurmak için kullanmak *ifade* bağımsız değişkeni için değerlendirilecek **false** yalnızca zaman programı hatalı biçimde çalışıyor. Onaylama işlemi denetimleri kapatılabilir derleme zamanında makro tanımlayarak **NDEBUG**. Devre dışı bırakabilirsiniz **assert** kaynak dosyalarını kullanarak değiştirmeden makro bir **/DNDEBUG** komut satırı seçeneği. Devre dışı bırakabilirsiniz **assert** makrosu kullanarak, kaynak kodunuzda bir `#define NDEBUG` önce yönerge \<assert.h > dahildir.
+**Onaylama** makrosu genellikle program geliştirme sırasında mantık hatalarını belirlemek için kullanılır. Yalnızca program yanlış çalıştığında **yanlış** olarak değerlendirmek için *ifade* bağımsız değişkenini uygulayarak beklenmeyen durumlar meydana geldiğinde program yürütmesini durdurmak için bunu kullanın. Onaylama denetimleri, **ndebug**makrosunu tanımlayarak derleme zamanında kapatılabilir. Bir **/Dndebug** komut satırı seçeneğini kullanarak kaynak dosyalarınızı değiştirmeden **onaylama** makrosunu kapatabilirsiniz. Onay. h > dahil etmeden önce `#define NDEBUG` \<bir yönerge kullanarak kaynak kodunuzda onay makrosunu devre dışı bırakabilirsiniz.
 
-**Assert** bir tanılama iletisi makrosu yazdırır *ifade* değerlendiren **false** (0) ve çağrıları [iptal](abort.md) Programı sonlandırmak için yürütme. Hiçbir işlem yapılmadı, *ifade* olduğu **true** (sıfır dışında). Tanılama iletisi başarısız ifadesi, onaylama işlemi başarısız olduğu kaynak dosya ve satır numarası adını içerir.
+**Onaylama** makrosu, *ifade* **yanlış** (0) olarak değerlendirildiğinde ve program yürütmeyi sonlandırmak için [iptal](abort.md) 'i çağırdığında bir tanılama iletisi yazdırır. *İfade* **true** ise (sıfır dışında) hiçbir eylem yapılmaz. Tanılama iletisi başarısız ifadeyi, kaynak dosyanın adını ve onaylama işlemi başarısız olan satır numarasını içerir.
 
-Tanılama iletisi geniş karakter yazdırılır. Bu nedenle, ifade Unicode karakterler olsa beklendiği gibi çalışır.
+Tanılama iletisi geniş karakterlerle yazdırılır. Bu nedenle, ifadede Unicode karakterler olsa bile beklendiği gibi çalışacaktır.
 
-Tanılama iletisi hedefinin yordamı çağıran uygulama türüne bağlıdır. Konsol uygulamaları her zaman aracılığıyla iletisini alırsınız **stderr**. Windows tabanlı bir uygulama içinde **assert** Windows çağırır [MessageBox](/windows/desktop/api/winuser/nf-winuser-messagebox) beraber iletiyi görüntülemek için bir ileti kutusu oluşturmak için işlevi bir **Tamam** düğmesi. Kullanıcı tıkladığında **Tamam**, program hemen durdurur.
+Tanı iletisinin hedefi, yordamı çağıran uygulamanın türüne bağlıdır. Konsol uygulamaları her zaman **stderr**aracılığıyla iletiyi alır. Windows tabanlı bir uygulamada, **onaylama** , Iletiyi bir **Tamam** düğmesiyle birlikte göstermek üzere bir Ileti kutusu oluşturmak için Windows [MessageBox](/windows/win32/api/winuser/nf-winuser-messagebox) işlevini çağırır. Kullanıcı **Tamam**' a tıkladığında program hemen iptal edilir.
 
-Uygulama çalışma zamanı kitaplıklarının hata ayıklama sürümü ile ilişkilendirildiğinde **assert** bir ileti kutusu üç düğmesi oluşturur: **Abort**, **yeniden**, ve **Yoksay**. Kullanıcı tıklarsa **iptal**, program hemen durdurur. Kullanıcı tıklarsa **yeniden**, hata ayıklayıcı adı verilir ve tam zamanında (JIT) hata ayıklama etkinleştirilirse kullanıcı programı hata ayıklaması yapabilirsiniz. Kullanıcı tıklarsa **Yoksay**, **assert** normal yürütülmeye devam eder: ileti kutusuyla oluşturma **Tamam** düğmesi. Sonuçlandığını unutmayın **Yoksay** bir hata koşulu olduğunda mevcut tanımsız davranışlara neden olabilir.
+Uygulama, çalışma zamanı kitaplıklarının hata ayıklama sürümüyle bağlantılı olduğunda, onay üç düğme içeren bir ileti kutusu oluşturur: **Durdur**, **yeniden dene**ve **Yoksay**. Kullanıcı **Durdur**' a tıkladığında program hemen iptal edilir. Kullanıcı **yeniden dene**' ye tıkladığında, hata ayıklayıcı çağrılır ve tam ZAMANıNDA (JIT) hata ayıklama etkinse Kullanıcı programda hata ayıklayabilirler. Kullanıcı **Yoksay**' ı tıklarsa, **onaylama** normal yürütmeye devam eder: **Tamam** düğmesi ile ileti kutusunu oluşturma. Bir hata koşulu varken **Yoksay** ' a tıklamak tanımsız davranışa neden olabilir.
 
 CRT hata ayıklama hakkında daha fazla bilgi için bkz. [CRT hata ayıklama teknikleri](/visualstudio/debugger/crt-debugging-techniques).
 
-**_Assert** ve **_wassert** iç CRT işlevleri işlevlerdir. Bunlar, nesne dosyalarında onaylar desteklemek için gerekli kodu en aza yardımcı olur. Bu işlevler doğrudan çağrı önermiyoruz.
+**_Onaylama** ve **_TatLı** işlevleri iç CRT işlevlerdir. Bunlar, onayları desteklemek için nesne dosyalarınızda gereken kodu en aza indirmenize yardımcı olur. Bu işlevleri doğrudan çağırmanız önerilmez.
 
-**Assert** makrosu her iki sürüm ve hata ayıklama sürümleri C çalışma zamanı kitaplıklarının etkin olduğunda **NDEBUG** tanımlı değil. Zaman **NDEBUG** olan tanımlanan, makro kullanılabilir ancak bağımsız değerlendirmez ve hiçbir etkisi olmaz. Etkinleştirildiğinde, **assert** makrosu çağrıları **_wassert** uygulanması için. Diğer onaylama makroları [_ASSERT](assert-asserte-assert-expr-macros.md), [_ASSERTE](assert-asserte-assert-expr-macros.md) ve [_ASSERT_EXPR](assert-asserte-assert-expr-macros.md), ayrıca kullanılabilir ancak bunlar yalnızca bunları ne zaman geçirilen ifadeleri değerlendirme [_DEBUG](../../c-runtime-library/debug.md) makro tanımlandıktan ve kodda hata ayıklama sürümü C çalışma zamanı kitaplıkları ile bağlı olduklarında.
+Onay makrosu, **ndebug** tanımlanmadığında C çalışma zamanı kitaplıklarının hem yayın hem de hata ayıklama sürümlerinde etkinleştirilir. **Ndebug** tanımlandığında, makro kullanılabilir ancak bağımsız değişkenini değerlendirmez ve herhangi bir etkiye sahip değildir. Etkin olduğunda, **onaylama** makrosu kendi uygulamasına göre **_ıtlı** çağırır. Diğer onaylama makroları, [_Onaylama](assert-asserte-assert-expr-macros.md), [_Asserte](assert-asserte-assert-expr-macros.md) ve [_ASSERT_EXPR](assert-asserte-assert-expr-macros.md)de mevcuttur, ancak yalnızca [_DEBUG](../../c-runtime-library/debug.md) makrosu tanımlandığında ve hata ayıklama ile bağlantılı kodlarlarsa bunlara geçirilen ifadeleri değerlendirir C çalışma zamanı kitaplıklarının sürümü.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**assert**, **_wassert**|\<Assert.h >|
+|**onaylama**, **_TatLı**|\<onaylama. h >|
 
-İmzası **_assert** işlevi kullanılabilir değil bir üstbilgi dosyasında. İmzası **_wassert** işlevi, yalnızca kullanılabilir olduğunda **NDEBUG** Makro tanımlı değil.
+**_Onaylama** işlevinin imzası bir üstbilgi dosyasında kullanılamaz. **_İlesert** işlevinin Imzası yalnızca **ndebug** makrosu tanımlanmadığı zaman kullanılabilir.
 
 ## <a name="example"></a>Örnek
 
-Bu programa **analyze_string** işlevini kullanan **assert** çeşitli koşulları test etmeye yönelik makro dize uzunluğu ile ilgili. Program, koşullardan herhangi biri başarısız olursa hatanın nedenini belirten bir ileti yazdırır.
+Bu programda, **analyze_string** işlevi dize ve uzunlukla ilgili çeşitli koşulları test etmek için onay makrosunu kullanır. Koşullardan herhangi biri başarısız olursa, program hatanın nedenini belirten bir ileti yazdırır.
 
 ```C
 // crt_assert.c
@@ -132,7 +132,7 @@ void analyze_string( char * string )
 }
 ```
 
-Program şu çıktıyı üretir:
+Program bu çıktıyı oluşturur:
 
 ```Output
 Analyzing string 'abc'
@@ -140,13 +140,13 @@ Analyzing string '(null)'
 Assertion failed: string != NULL, file crt_assert.c, line 25
 ```
 
-Çalışma zamanı kitaplığı ve işletim sistemi sürümüne bağlı olarak bir onaylama işlemi hatası sonra aşağıdaki gibi içeren bir ileti kutusu görebilirsiniz:
+Onaylama hatasından sonra, işletim sisteminin ve çalışma zamanı kitaplığının sürümüne bağlı olarak, aşağıdakine benzer bir ileti kutusu görebilirsiniz:
 
 ```Output
 A problem caused the program to stop working correctly. Windows will close the program and notify you if a solution is available.
 ```
 
-Bir hata ayıklayıcısı yüklüyse seçin **hata ayıklama** hata ayıklayıcıyı başlatmak için düğmeye veya **Programı Kapat** çıkmak için.
+Bir hata ayıklayıcı yüklüyse, hata ayıklayıcıyı başlatmak için **Hata Ayıkla** düğmesini seçin veya çıkmak Için **programı kapatın** .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

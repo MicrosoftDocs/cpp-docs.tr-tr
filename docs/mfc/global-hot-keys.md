@@ -7,20 +7,20 @@ helpviewer_keywords:
 - access keys [MFC], hot keys
 - global hot keys [MFC]
 ms.assetid: e0b95d14-c571-4c9a-9cd1-e7fc1f0e278d
-ms.openlocfilehash: eedeb0547320c8b421fa72647f51b02f834af300
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 59918648ea24fd1e2a86ca786de3081cd6cca2df
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62219612"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69508563"
 ---
 # <a name="global-hot-keys"></a>Genel Sık Kullanılan Tuşlar
 
-Genel sık kullanılan tuş belirli nonchild penceresiyle ilişkilidir. Bu sistemin herhangi bir bölümünden penceresini etkinleştir izin verir. Bir uygulama belirli bir pencere için genel bir kısayol tuşu göndererek ayarlar [WM_SETHOTKEY](/windows/desktop/inputdev/wm-sethotkey) bu penceresine ileti. Örneğin, varsa `m_HotKeyCtrl` olan [CHotKeyCtrl](../mfc/reference/chotkeyctrl-class.md) nesne ve `pMainWnd` gösteren bir işaretçidir penceresine kısayol tuşuna basıldığında etkinleştirilmesi için sık kullanılan tuş denetimi ile belirtilen ilişkilendirmek için aşağıdaki kodu kullanabilirsiniz pencere tarafından işaret edilen `pMainWnd`.
+Genel bir kısayol tuşu, belirli bir alt öğe olmayan pencere ile ilişkilendirilir. Kullanıcının pencereyi sistemin herhangi bir bölümünden etkinleştirmesine izin verir. Bir uygulama belirli bir pencere için genel bir kısayol tuşu ayarlar ve bu pencereye [wm_sethotkey](/windows/win32/inputdev/wm-sethotkey) iletisi gönderir. Örneğin, `m_HotKeyCtrl` [CHotKeyCtrl](../mfc/reference/chotkeyctrl-class.md) nesnesi ise ve `pMainWnd` kısayol tuşuna basıldığında etkinleştirilecek pencere için bir işaretçisiyse, denetimde belirtilen kısayol tuşunu tarafından işaret edilen pencereyle ilişkilendirmek için aşağıdaki kodu kullanabilirsiniz `pMainWnd`.
 
 [!code-cpp[NVC_MFCControlLadenDialog#18](../mfc/codesnippet/cpp/global-hot-keys_1.cpp)]
 
-Genel sık kullanılan tuş kullanıcı olduğunda, belirtilen pencere alır bir [WM_SYSCOMMAND](/windows/desktop/menurc/wm-syscommand) belirten bir ileti **SC_HOTKEY** komut türü. Bu iletiyi aldıktan sonra penceresi de etkinleştirir. Bu ileti basıldığını tam anahtar herhangi bir bilgi içermediği için bu yöntemi kullanarak aynı pencere için eklenen farklı bir kısayol tuşları arasında ayrım izin vermez. Kısayol tuşu gönderilen uygulama kadar geçerli kalır **WM_SETHOTKEY** çıkar.
+Kullanıcı genel bir kısayol tuşuna bastığında, belirtilen pencere, komutun türü olarak **SC_HOTKEY** belirten bir [WM_SYSCOMMAND](/windows/win32/menurc/wm-syscommand) iletisi alır. Bu ileti ayrıca onu alan pencereyi etkinleştirir. Bu ileti, basılan kesin anahtar hakkında herhangi bir bilgi içermediğinden, bu yöntemin kullanılması aynı pencereye iliştirilebilecek farklı kısayol tuşları arasında ayrım yapmanıza izin vermez. Etkin anahtar, **wm_sethotkey** gönderen uygulamaya çıkılana kadar geçerli kalır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

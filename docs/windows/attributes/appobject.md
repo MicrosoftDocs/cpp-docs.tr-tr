@@ -1,21 +1,21 @@
 ---
-title: appobject (C++ COM özniteliği)
+title: appobject (C++ com özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.appobject
 helpviewer_keywords:
 - appobject attribute
 ms.assetid: 8ce30b73-e945-403e-a755-6bc78078a695
-ms.openlocfilehash: 8219c8fdd1b1df93f92fc6c1d0324a2475d3384b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e02cedff70ac32f7edfdb92b240269c34befee7e
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62409713"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490943"
 ---
 # <a name="appobject"></a>appobject
 
-Bir tam .exe uygulamayla ilişkili olan ve coclass'ı özellikleri ve işlevleri bu küresel olarak kullanılabilir olduğunu gösterir bir uygulama nesnesi olarak coclass'ı tanımlayan [tür kitaplığı](../../mfc/automation-clients-using-type-libraries.md).
+Bir tam. exe uygulamasıyla ilişkili bir uygulama nesnesi olarak coclass 'ı tanımlar ve coclass 'ın işlevlerinin ve özelliklerinin bu [tür kitaplığında](../../mfc/automation-clients-using-type-libraries.md)genel olarak kullanılabildiğini gösterir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -25,11 +25,11 @@ Bir tam .exe uygulamayla ilişkili olan ve coclass'ı özellikleri ve işlevleri
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Appobject** C++ özniteliği ile aynı işlevlere sahip [appobject](/windows/desktop/Midl/appobject) MIDL özniteliği.
+**Appobject** C++ özniteliği [appobject](/windows/win32/Midl/appobject) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kodu içeren bir öznitelik bloğu tarafından öncesinde bir basit sınıf tanımını gösterir **appobject**:
+Aşağıdaki kod, **appobject**içeren bir öznitelik bloğunun önünde bir basit sınıf tanımını gösterir:
 
 ```cpp
 // cpp_attr_ref_appobject.cpp
@@ -52,12 +52,12 @@ class A : public ICustom {
 
 |||
 |-|-|
-|**İçin geçerlidir**|**sınıf**, **yapısı**|
+|**Uygulama hedefi**|**sınıf**, **Yapı**|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|`coclass`|
+|**Gerekli öznitelikler**|`coclass`|
 |**Geçersiz öznitelikler**|Yok.|
 
-Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
+Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

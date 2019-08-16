@@ -1,17 +1,17 @@
 ---
-title: (out C++ COM özniteliği)
+title: Out (C++ com özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.out
 helpviewer_keywords:
 - out attribute
 ms.assetid: 5051b1bf-4949-4bf1-b82f-35e14f0f244b
-ms.openlocfilehash: 7020bd6cfcf8bcdbfb773908e693c6364a29e343
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 11c8e4473f0b849fab7846a825b90da3ed9f036f
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62407607"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69514293"
 ---
 # <a name="out-c"></a>out (C++)
 
@@ -25,11 +25,11 @@ ms.locfileid: "62407607"
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Kullanıma** C++ özniteliği ile aynı işlevlere sahip [kullanıma](/windows/desktop/Midl/out-idl) MIDL özniteliği.
+**Out** C++ özniteliği, [Out](/windows/win32/Midl/out-idl) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
 
 ## <a name="example"></a>Örnek
 
-Örneğin bakın [bağlanabilir](bindable.md) örnek kullanımı için **kullanıma**.
+Örnek kullanım için [bağlanabilir](bindable.md) örneğine bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -37,12 +37,12 @@ ms.locfileid: "62407607"
 
 |||
 |-|-|
-|**İçin geçerlidir**|Parametre arabirimi|
+|**Uygulama hedefi**|Arabirim parametresi|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|Yok.|
-|**Geçersiz öznitelikler**|None|
+|**Gerekli öznitelikler**|Yok.|
+|**Geçersiz öznitelikler**|Yok.|
 
-Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
+Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

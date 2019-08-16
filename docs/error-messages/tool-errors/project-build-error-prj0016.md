@@ -6,25 +6,25 @@ f1_keywords:
 helpviewer_keywords:
 - PRJ0016
 ms.assetid: e9745336-883a-4c70-9c40-7753e02f0325
-ms.openlocfilehash: ada89b074fd8e0c2bfc75ba833e9c5966a145312
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6733ef1f390f2ff377356dda3f7cd3ebfe10cc2b
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62359429"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69509875"
 ---
 # <a name="project-build-error-prj0016"></a>Proje Derleme Hatası PRJ0016
 
-Kullanıcının güvenlik ayarları, işlemin oluşturulmasını önleyin. Bu ayarlar, derleme için gereklidir.
+Kullanıcının güvenlik ayarları, işlemin oluşturulmasını engelliyor. Bu ayarlar, oluşturma için gereklidir.
 
-Bir işlem kullanarak işlemleri oluşturma izinlerine sahip olmayan bir kullanıcı olarak oturum açtınız. Bu kullanıcı hesabı için izin düzeylerini değiştirin veya hesap yöneticinize başvurun.
+İşlem kullanarak işlem oluşturma izni olmayan bir kullanıcı olarak oturum açtınız. Bu Kullanıcı hesabı için izin düzeylerini değiştirmeniz veya hesap yöneticinize başvurmanız gerekir.
 
-Aşağıdaki kayıt defteri anahtarını ayarlanmışsa bu hatayı da meydana gelebilir:
+Bu hata, aşağıdaki kayıt defteri anahtarı ayarlanmışsa de oluşabilir:
 
 \\\HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\RestrictRun
 
-Bu hatayı gidermek için RestrictRun anahtarı silin. Bu kayıt defteri anahtarı gerekli olursa, ekleme **vcspawn.exe** anahtar girişlerinde listesi.
+Bu hatayı çözmek için, Kısıttrun anahtarını silin. Bu kayıt defteri anahtarı gerekliyse, anahtar içindeki giriş listesine **vcspiyonu. exe** ' yi ekleyin.
 
-Bu hata başka bir nedeni, ilke ayarını VCSpawn.exe HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\RestrictRun kayıt defteri anahtarı altında bu kullanıcı hesabı için izin verilen bir pencere program içermediğinden ' dir.
+Bu hatanın başka bir nedeni de Ilke ayarınız, bu kullanıcı hesabı için izin verilen bir pencere programı olarak HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\RestrictRun kayıt defteri anahtarı altında Vcspiyonu. exe ' yi içermez.
 
-Ek bilgi için bkz: [uymak için Sistem İlkesi ayarları](https://msdn.microsoft.com/library/aa372139), içindeki "Yalnızca izin verilen Windows uygulamaları Çalıştır" bölümü.
+Daha fazla bilgi için, "yalnızca izin verilen Windows uygulamalarını çalıştır" bölümündeki [sistem Ilkesi ayarlarına bağlanma](/previous-versions/windows/desktop/Policy/adhering-to-system-policy-settings)bölümüne bakın.

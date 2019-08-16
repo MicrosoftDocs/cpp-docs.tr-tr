@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - CMFCPropertyPage [MFC], CMFCPropertyPage
 ms.assetid: d279d7f2-2d81-418d-9f23-6147d6e8df09
-ms.openlocfilehash: 62e33da998f1e5332436d887c38d3fd65526561b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4be584135ef789d7fbe3b1743ac0ad6ce66ac5b1
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62310495"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69505038"
 ---
 # <a name="cmfcpropertypage-class"></a>CMFCPropertyPage sınıfı
 
@@ -31,23 +31,23 @@ class CMFCPropertyPage : public CPropertyPage
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CMFCPropertyPage::CMFCPropertyPage](#cmfcpropertypage)|Oluşturur bir `CMFCPropertyPage` nesne.|
+|[CMFCPropertyPage:: CMFCPropertyPage](#cmfcpropertypage)|Bir `CMFCPropertyPage` nesnesi oluşturur.|
 |`CMFCPropertyPage::~CMFCPropertyPage`|Yıkıcı.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|`CMFCPropertyPage::CreateObject`|Bu sınıf türünün dinamik bir örneğini oluşturmak için framework tarafından kullanılır.|
-|`CMFCPropertyPage::GetThisClass`|Bir işaretçi alma için framework tarafından kullanılan [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) bu sınıfı türü ile ilişkilendirilmiş nesne.|
-|`CMFCPropertyPage::OnSetActive`|Sayfa kullanıcı tarafından seçilir ve etkin sayfa olur, bu üye işlevi framework tarafından çağırılır. (Geçersiz kılmaları [CPropertyPage::OnSetActive](../../mfc/reference/cpropertypage-class.md#onsetactive).)|
-|`CMFCPropertyPage::PreTranslateMessage`|Pencere iletileri için dağıtılmadan önce çevirir [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) ve [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage) Windows işlevleri. Daha fazla bilgi ve yöntem sözdizimi için bkz. [CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage). (Geçersiz kılmaları `CPropertyPage::PreTranslateMessage`.)|
+|`CMFCPropertyPage::CreateObject`|Framework tarafından bu sınıf türünün dinamik bir örneğini oluşturmak için kullanılır.|
+|`CMFCPropertyPage::GetThisClass`|Bu sınıf türüyle ilişkili [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) nesnesine bir işaretçi almak için Framework tarafından kullanılır.|
+|`CMFCPropertyPage::OnSetActive`|Bu üye işlevi, sayfa Kullanıcı tarafından seçildiğinde çerçeve tarafından çağrılır ve etkin sayfa olur. ( [CPropertyPage:: OnSetActive](../../mfc/reference/cpropertypage-class.md#onsetactive)geçersiz kılar.)|
+|`CMFCPropertyPage::PreTranslateMessage`|[TranslateMessage](/windows/win32/api/winuser/nf-winuser-translatemessage) ve [DispatchMessage](/windows/win32/api/winuser/nf-winuser-dispatchmessage) Windows işlevlerine dağıtılmadan önce pencere iletilerini çevirir. Daha fazla bilgi ve Yöntem sözdizimi için bkz. [CWnd::P reTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage). (Geçersiz `CPropertyPage::PreTranslateMessage`kılmalar.)|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CMFCPropertyPage` Sınıfı, aksi takdirde bir sekme iletişim kutusu bilinen bir özellik sayfası, her bir sayfayı temsil eder.
+`CMFCPropertyPage` Sınıfı, bir özellik sayfasının tek tek sayfalarını temsil eder, aksi halde sekme iletişim kutusu olarak bilinir.
 
-Kullanım `CMFCPropertyPage` ile birlikte sınıfı [CMFCPropertySheet](../../mfc/reference/cmfcpropertysheet-class.md) sınıfı. Bir özellik sayfasında menüleri kullanmak için tüm oluşumlarını değiştirin `CPropertyPage` sınıfıyla `CMFCPropertyPage` sınıfı.
+Sınıfını CMFCPropertySheet sınıfıyla birlikte kullanın. [](../../mfc/reference/cmfcpropertysheet-class.md) `CMFCPropertyPage` Bir özellik sayfasında menüleri kullanmak için, `CPropertyPage` sınıfın `CMFCPropertyPage` tüm oluşumlarını sınıfla değiştirin.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -65,11 +65,11 @@ Kullanım `CMFCPropertyPage` ile birlikte sınıfı [CMFCPropertySheet](../../mf
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxpropertypage.h
+**Üstbilgi:** afxpropertypage. h
 
-##  <a name="cmfcpropertypage"></a>  CMFCPropertyPage::CMFCPropertyPage
+##  <a name="cmfcpropertypage"></a>CMFCPropertyPage:: CMFCPropertyPage
 
-Oluşturur bir `CMFCPropertyPage` nesne.
+Bir `CMFCPropertyPage` nesnesi oluşturur.
 
 ```
 CMFCPropertyPage(
@@ -83,20 +83,20 @@ CMFCPropertyPage(
 
 ### <a name="parameters"></a>Parametreler
 
-*nIDTemplate*<br/>
-Bu sayfa şablonu kaynak kimliği.
+*Nıdtemplate*<br/>
+Bu sayfa için şablonun kaynak KIMLIĞI.
 
 *nIDCaption*<br/>
-Bu sayfa için sekmesinde koymak için etiketin kaynak kimliği. 0 ise, bu sayfa için iletişim kutusu şablonundan adı elde edilir. Varsayılan değer 0’dır.
+Bu sayfanın sekmesine yerleştirilecek etiketin kaynak KIMLIĞI. 0 ise, bu sayfanın iletişim kutusu şablonundan ad alınır. Varsayılan değer 0’dır.
 
 *lpszTemplateName*<br/>
-Bu sayfa şablonunun adını işaret. NULL olamaz.
+Bu sayfa için şablon adını gösterir. NULL olamaz.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-Oluşturucu parametreler hakkında daha fazla bilgi için bkz. [CPropertyPage::CPropertyPage](../../mfc/reference/cpropertypage-class.md#cpropertypage).
+Oluşturucu parametreleri hakkında daha fazla bilgi için bkz. [CPropertyPage:: CPropertyPage](../../mfc/reference/cpropertypage-class.md#cpropertypage).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

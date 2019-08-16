@@ -192,12 +192,12 @@ helpviewer_keywords:
 - CWinApp [MFC], m_nAutosaveInterval
 - CWinApp [MFC], m_pDataRecoveryHandler
 ms.assetid: e426a3cd-0d15-40d6-bd55-beaa5feb2343
-ms.openlocfilehash: 066494f4ba0119f4576e0c8e3c06d87ff736aea3
-ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
+ms.openlocfilehash: 732bdf980240b1f496c1aca56c8a89b6a7f52d27
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68916726"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69502177"
 ---
 # <a name="cwinapp-class"></a>CWinApp sınıfı
 
@@ -260,7 +260,7 @@ class CWinApp : public CWinThread
 |[CWinApp:: OnIdle](#onidle)|Uygulamaya özgü boşta kalma süresi işlemini gerçekleştirmek için geçersiz kılın.|
 |[CWinApp:: OpenDocumentFile](#opendocumentfile)|Bir dosyadan belge açmak için Framework tarafından çağırılır.|
 |[CWinApp::P arseCommandLine](#parsecommandline)|Komut satırında bağımsız parametreleri ve bayrakları ayrıştırır.|
-|[CWinApp::P reTranslateMessage](#pretranslatemessage)|İletileri, [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) ve [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage)Windows işlevlerine dağıtılmadan önce filtreler.|
+|[CWinApp::P reTranslateMessage](#pretranslatemessage)|İletileri, [TranslateMessage](/windows/win32/api/winuser/nf-winuser-translatemessage) ve [DispatchMessage](/windows/win32/api/winuser/nf-winuser-dispatchmessage)Windows işlevlerine dağıtılmadan önce filtreler.|
 |[CWinApp::P rocessMessageFilter](#processmessagefilter)|Uygulamaya ulaşmadan önce belirli iletileri keser.|
 |[CWinApp::P rocessShellCommand](#processshellcommand)|Komut satırı bağımsız değişkenlerini ve bayraklarını işler.|
 |[CWinApp::P rocessWndProcException](#processwndprocexception)|Uygulamanın iletisi ve komut işleyicileri tarafından oluşturulan işlenmemiş özel durumları karşılar.|
@@ -850,7 +850,7 @@ BOOL GetPrinterDeviceDefaults(struct tagPDA* pPrintDlg);
 ### <a name="parameters"></a>Parametreler
 
 *pPrintDlg*<br/>
-[PrintDlg](/windows/desktop/api/commdlg/ns-commdlg-tagpda) yapısına yönelik bir işaretçi.
+[PrintDlg](/windows/win32/api/commdlg/ns-commdlg-pdw) yapısına yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -902,7 +902,7 @@ Bu üye işlevi büyük/küçük harfe duyarlı değildir, bu nedenle *lpszSecti
 > `GetProfileBinary`bir arabellek ayırır ve \* *ppData*içinde adresini döndürür. Çağıran, **delete []** kullanılarak arabelleği boşaltmaktan sorumludur.
 
 > [!IMPORTANT]
-> Bu işlev tarafından döndürülen verilerin NULL sonlandırılacağı ve çağıranın doğrulama gerçekleştirmesi gerekir. Daha fazla bilgi için bkz. [arabellek taşmalarını önleme](/windows/desktop/SecBP/avoiding-buffer-overruns).
+> Bu işlev tarafından döndürülen verilerin NULL sonlandırılacağı ve çağıranın doğrulama gerçekleştirmesi gerekir. Daha fazla bilgi için bkz. [arabellek taşmalarını önleme](/windows/win32/SecBP/avoiding-buffer-overruns).
 
 ### <a name="example"></a>Örnek
 
@@ -943,7 +943,7 @@ Bu üye işlevi, içindeki değeri için onaltılı gösterimi destekler. INı d
 Bu üye işlevi büyük/küçük harfe duyarlı değildir, bu nedenle *lpszSection* ve *lpszEntry* parametrelerindeki dizeler büyük/küçük harf bakımından farklı olabilir.
 
 > [!IMPORTANT]
-> Bu işlev tarafından döndürülen verilerin NULL sonlandırılacağı ve çağıranın doğrulama gerçekleştirmesi gerekir. Daha fazla bilgi için bkz. [arabellek taşmalarını önleme](/windows/desktop/SecBP/avoiding-buffer-overruns).
+> Bu işlev tarafından döndürülen verilerin NULL sonlandırılacağı ve çağıranın doğrulama gerçekleştirmesi gerekir. Daha fazla bilgi için bkz. [arabellek taşmalarını önleme](/windows/win32/SecBP/avoiding-buffer-overruns).
 
 ### <a name="example"></a>Örnek
 
@@ -980,7 +980,7 @@ Dönüş değeri, uygulamanın bir dizesidir. Dize bulunamazsa ıNı dosyası ve
 ### <a name="remarks"></a>Açıklamalar
 
 > [!IMPORTANT]
-> Bu işlev tarafından döndürülen verilerin NULL sonlandırılacağı ve çağıranın doğrulama gerçekleştirmesi gerekir. Daha fazla bilgi için bkz. [arabellek taşmalarını önleme](/windows/desktop/SecBP/avoiding-buffer-overruns).
+> Bu işlev tarafından döndürülen verilerin NULL sonlandırılacağı ve çağıranın doğrulama gerçekleştirmesi gerekir. Daha fazla bilgi için bkz. [arabellek taşmalarını önleme](/windows/win32/SecBP/avoiding-buffer-overruns).
 
 ### <a name="example"></a>Örnek
 
@@ -1036,7 +1036,7 @@ virtual void HtmlHelp(
 Ek verileri belirtir. Kullanılan değer *nCmd* parametresinin değerine bağlıdır. Varsayılan olarak `0x000F` [HH_HELP_CONTEXT](/previous-versions/windows/desktop/htmlhelp/hh-help-context-command)anlamına gelir.
 
 *nCmd*<br/>
-İstenen yardım türünü belirtir. Olası değerlerin bir listesi ve *dwData* parametresini nasıl etkilediği için, Windows SDK [htmlhelpw](/windows/desktop/api/htmlhelp/nf-htmlhelp-htmlhelpw) veya [Htmlhelpa](/windows/desktop/api/htmlhelp/nf-htmlhelp-htmlhelpa) API işlevlerinde açıklanan *uıcommand* parametresine bakın.  
+İstenen yardım türünü belirtir. Olası değerlerin bir listesi ve *dwData* parametresini nasıl etkilediği için, Windows SDK [htmlhelpw](/windows/win32/api/htmlhelp/nf-htmlhelp-htmlhelpw) veya [Htmlhelpa](/windows/win32/api/htmlhelp/nf-htmlhelp-htmlhelpa) API işlevlerinde açıklanan *uıcommand* parametresine bakın.  
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1063,7 +1063,7 @@ Uygulama başlatma kavramsal olarak iki bölüme ayrılmıştır: program ilk ke
 Uygulamanızın `InitInstance` Windows altında çalışan her yeni örneğini başlatmak için geçersiz kılın. Genellikle, ana pencere `InitInstance` nesnenizi oluşturmak için geçersiz kılınır ve `CWinThread::m_pMainWnd` veri üyesini bu pencereye işaret etmek üzere ayarlarsınız. Bu üye işlevi geçersiz kılma hakkında daha fazla bilgi için [bkz. CWinApp: Uygulama sınıfı](../../mfc/cwinapp-the-application-class.md).
 
 > [!NOTE]
-> MFC uygulamalarının tek iş parçacıklı grup (STA) olarak başlatılması gerekir. `InitInstance` Geçersiz kılmada [CoInitializeEx](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializeex) öğesini çağırırsanız, COINIT_APARTMENTTHREADED (COINIT_MULTITHREADED yerine) belirtin.
+> MFC uygulamalarının tek iş parçacıklı grup (STA) olarak başlatılması gerekir. `InitInstance` Geçersiz kılmada [CoInitializeEx](/windows/win32/api/combaseapi/nf-combaseapi-coinitializeex) öğesini çağırırsanız, COINIT_APARTMENTTHREADED (COINIT_MULTITHREADED yerine) belirtin.
 
 ### <a name="example"></a>Örnek
 
@@ -1099,7 +1099,7 @@ HCURSOR LoadCursor(LPCTSTR lpszResourceName) const;  HCURSOR LoadCursor(UINT nID
 İmleç kaynağının adını içeren, null ile sonlandırılmış bir dizeye işaret eder. Bu bağımsız değişken için `CString` bir kullanabilirsiniz.
 
 *nIDResource*<br/>
-İmleç kaynağının KIMLIĞI. Kaynak listesi için Windows SDK [LoadCursor](/windows/desktop/api/winuser/nf-winuser-loadcursora) bölümüne bakın.
+İmleç kaynağının KIMLIĞI. Kaynak listesi için Windows SDK [LoadCursor](/windows/win32/api/winuser/nf-winuser-loadcursorw) bölümüne bakın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1142,7 +1142,7 @@ Başarılı olursa simgeye yönelik bir tanıtıcı; Aksi takdirde NULL.
 Önceden tanımlanmış Windows simgelerine erişmek için [Loadstandardıon](#loadstandardicon) veya [LoadOEMIcon](#loadoemicon) member işlevini kullanabilirsiniz.
 
 > [!NOTE]
-> Bu üye işlevi, yalnızca boyutu SM_CXICON ve SM_CYICON sistem ölçüm değerlerine uyan bir simge yükleyebilen [loadıcon](/windows/desktop/api/winuser/nf-winuser-loadicona)Win32 API işlevini çağırır.
+> Bu üye işlevi, yalnızca boyutu SM_CXICON ve SM_CYICON sistem ölçüm değerlerine uyan bir simge yükleyebilen [loadıcon](/windows/win32/api/winuser/nf-winuser-loadiconw)Win32 API işlevini çağırır.
 
 ##  <a name="loadoemcursor"></a>CWinApp:: LoadOEMCursor
 
@@ -1252,7 +1252,7 @@ HICON LoadStandardIcon(LPCTSTR lpszIconName) const;
 ### <a name="parameters"></a>Parametreler
 
 *lpszIconName*<br/>
-Önceden tanımlanmış bir pencere simgesi belirten bir bildirim sabiti tanımlayıcısı. Bu tanımlayıcılar WINDOWS 'da tanımlanmıştır. Olsun. Önceden tanımlanmış olabilecek değerlerin ve açıklamalarının listesi için, Windows SDK [LoadIcon](/windows/desktop/api/winuser/nf-winuser-loadicona) Içindeki *Lpiconname* parametresine bakın.
+Önceden tanımlanmış bir pencere simgesi belirten bir bildirim sabiti tanımlayıcısı. Bu tanımlayıcılar WINDOWS 'da tanımlanmıştır. Olsun. Önceden tanımlanmış olabilecek değerlerin ve açıklamalarının listesi için, Windows SDK [LoadIcon](/windows/win32/api/winuser/nf-winuser-loadiconw) Içindeki *Lpiconname* parametresine bakın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1784,7 +1784,7 @@ Komut satırı bayraklarının bir açıklaması için bkz. [CCommandLineInfo:: 
 
 ##  <a name="pretranslatemessage"></a>CWinApp::P reTranslateMessage
 
-Pencere iletilerini [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) ve [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage) Windows işlevlerine dağıtılmadan önce filtrelemek için bu işlevi geçersiz kılın varsayılan uygulama kısayol tuşu çevirisini gerçekleştirir, bu nedenle şunu çağırmanız `CWinApp::PreTranslateMessage`gerekirgeçersiz kılınan sürümdeki üye işlevi.
+Pencere iletilerini [TranslateMessage](/windows/win32/api/winuser/nf-winuser-translatemessage) ve [DispatchMessage](/windows/win32/api/winuser/nf-winuser-dispatchmessage) Windows işlevlerine dağıtılmadan önce filtrelemek için bu işlevi geçersiz kılın varsayılan uygulama kısayol tuşu çevirisini gerçekleştirir, bu nedenle şunu çağırmanız `CWinApp::PreTranslateMessage`gerekirgeçersiz kılınan sürümdeki üye işlevi.
 
 ```
 virtual BOOL PreTranslateMessage(MSG* pMsg);
@@ -1793,7 +1793,7 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 ### <a name="parameters"></a>Parametreler
 
 *pMsg*<br/>
-İşlenecek iletiyi içeren bir [msg](/windows/desktop/api/winuser/ns-winuser-tagmsg) yapısına yönelik işaretçi.
+İşlenecek iletiyi içeren bir [msg](/windows/win32/api/winuser/ns-winuser-tagmsg) yapısına yönelik işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1815,7 +1815,7 @@ virtual BOOL ProcessMessageFilter(
 Bir kanca kodu belirtir. Bu üye işlevi, *lpMsg* 'in nasıl işleyeceğini anlamak için kodu kullanır.
 
 *lpMsg*<br/>
-Windows [msg](/windows/desktop/api/winuser/ns-winuser-tagmsg) yapısına yönelik bir işaretçi.
+Windows [msg](/windows/win32/api/winuser/ns-winuser-msg)structuralbir işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1886,7 +1886,7 @@ virtual LRESULT ProcessWndProcException(
 Yakalanamayan özel durum işaretçisi.
 
 *pMsg*<br/>
-Framework 'ün özel durum oluşturmasını sağlayan Windows iletisi hakkında bilgi içeren bir [msg](/windows/desktop/api/winuser/ns-winuser-tagmsg) yapısı.
+Framework 'ün özel durum oluşturmasını sağlayan Windows iletisi hakkında bilgi içeren bir [msg](/windows/win32/api/winuser/ns-winuser-msg).
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -2118,7 +2118,7 @@ void SelectPrinter(
 ### <a name="parameters"></a>Parametreler
 
 *hDevNames*<br/>
-Belirli bir yazıcının sürücüsünü, cihazını ve çıkış bağlantı noktası adlarını tanımlayan bir [DEVNAMES](/windows/desktop/api/commdlg/ns-commdlg-tagdevnames) yapısına yönelik bir tanıtıcı.
+Belirli bir yazıcının sürücüsünü, cihazını ve çıkış bağlantı noktası adlarını tanımlayan bir [DEVNAMES](/windows/win32/api/commdlg/ns-commdlg-devnames)için tanıtıcı.
 
 *hDevMode*<br/>
 Bir yazıcı cihazının cihaz başlatması ve ortamı hakkındaki bilgileri belirten bir [DEVMODE](/windows/win32/api/wingdi/ns-wingdi-devmodea) yapısına yönelik bir tanıtıcı.
@@ -2260,7 +2260,7 @@ virtual void WinHelp(
 Ek verileri belirtir. Kullanılan değer *nCmd* parametresinin değerine bağlıdır.
 
 *nCmd*<br/>
-İstenen yardım türünü belirtir. Olası değerler listesi ve bunların *dwData* parametresini nasıl etkilediği hakkında bilgi Için, [WinHelp](/windows/desktop/api/winuser/nf-winuser-winhelpa) Windows işlevine bakın.
+İstenen yardım türünü belirtir. Olası değerler listesi ve bunların *dwData* parametresini nasıl etkilediği hakkında bilgi Için, [WinHelp](/windows/win32/api/winuser/nf-winuser-winhelpw) Windows işlevine bakın.
 
 ### <a name="remarks"></a>Açıklamalar
 

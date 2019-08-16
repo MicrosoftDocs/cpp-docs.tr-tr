@@ -6,26 +6,26 @@ helpviewer_keywords:
 - CHeaderCtrl class [MFC], adding items
 - header controls [MFC], adding items to
 ms.assetid: 2e9a28b1-7302-4a93-8037-c5a4183e589a
-ms.openlocfilehash: 897612c6d5ac96704cc0a945df65146e6a01480a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d9a35123ddbe77b8e5e1779651fc4cde233863ae
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62394760"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69509310"
 ---
 # <a name="adding-items-to-the-header-control"></a>Üstbilgi Denetimine Öğe Ekleme
 
-Sonra üstbilgi denetimi oluşturma ([CHeaderCtrl](../mfc/reference/cheaderctrl-class.md)) kendi üst penceresinde "gereksinim duyduğunuz kadar çok üstbilgi öğeleri" ekleyin: genellikle bir sütun başına.
+Üst penceresinde üstbilgi denetiminizi ([CHeaderCtrl](../mfc/reference/cheaderctrl-class.md)) oluşturduktan sonra, gerek duyduğunuz kadar "Başlık öğesi" ekleyin: genellikle her sütun için bir.
 
-### <a name="to-add-a-header-item"></a>Üstbilgi öğesi eklemek için
+### <a name="to-add-a-header-item"></a>Üst bilgi öğesi eklemek için
 
-1. Hazırlama bir [HD_ITEM](/windows/desktop/api/commctrl/ns-commctrl-_hd_itema) yapısı.
+1. [HD_ITEM](/windows/win32/api/commctrl/ns-commctrl-_hd_itemw) yapısını hazırlayın.
 
-1. Çağrı [CHeaderCtrl::InsertItem](../mfc/reference/cheaderctrl-class.md#insertitem), yapısı geçirme.
+1. Yapıyı geçirerek [CHeaderCtrl:: InsertItem](../mfc/reference/cheaderctrl-class.md#insertitem)' ı çağırın.
 
-1. Adım 1 ve 2 ek öğeler için yineleyin.
+1. Ek öğeler için 1 ve 2. adımları tekrarlayın.
 
-Daha fazla bilgi için [bir üstbilgi denetimine öğe ekleme](/windows/desktop/Controls/header-controls) Windows SDK.
+Daha fazla bilgi için bkz. Windows SDK [üst bilgi denetimine öğe ekleme](/windows/win32/Controls/header-controls) .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

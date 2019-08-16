@@ -7,38 +7,38 @@ helpviewer_keywords:
 - Ribbon Designer (MFC)
 - MFC Ribbon Designer
 ms.assetid: 0806dfd6-7d11-471a-99e1-4072852231f9
-ms.openlocfilehash: 5740b2f93f451a74407483c98ce5bf547b79bf35
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1634eee30063a48041d60fc1b7116ca9543c9de2
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62309215"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69511465"
 ---
 # <a name="ribbon-designer-mfc"></a>Şerit Tasarımcısı (MFC)
 
-Şerit Tasarımcısı oluşturmanızı ve MFC uygulamalarında şeritler özelleştirme sağlar. Şerit, mantıksal gruplarda komutları düzenleyen bir kullanıcı arabirimi (UI) öğesidir. Bu grupların bir Şeritte ayrı sekmeler pencerenin üst kısmında görünür. Şerit menü çubuğu ve araç çubukları değiştirir. Şerit, uygulamanın kullanılabilirliğini önemli ölçüde artırabilir. Daha fazla bilgi için [şeritler](/windows/desktop/uxguide/cmd-ribbons). Aşağıdaki çizim Şerit gösterir.
+Şerit Tasarımcısı, MFC uygulamalarında şeritler oluşturmanıza ve özelleştirmenize olanak sağlar. Şerit, komutları mantıksal gruplar halinde düzenleyen bir kullanıcı arabirimi (UI) öğesidir. Bu gruplar pencerenin üst kısmındaki bir şeridinde ayrı sekmelerde görüntülenir. Şerit, menü çubuğu ve araç çubuklarının yerini alır. Bir şerit, uygulama kullanılabilirliğini önemli ölçüde iyileştirebilir. Daha fazla bilgi için bkz. [şeritler](/windows/win32/uxguide/cmd-ribbons). Aşağıdaki çizimde bir şerit gösterilmektedir.
 
-![MFC Şerit kaynak denetimi](../mfc/media/ribbon_no_callouts.png "MFC Şerit kaynak denetimi")
+![MFC Şeridi Kaynak denetimi](../mfc/media/ribbon_no_callouts.png "MFC Şeridi Kaynak denetimi")
 
-Visual Studio'nun önceki sürümlerinde şeritler gerekiyordu gibi MFC Şerit sınıflarını kullanan kod yazılarak oluşturulmak [CMFCRibbonBar sınıfı](../mfc/reference/cmfcribbonbar-class.md). Visual Studio 2010 ve sonraki sürümlerinde, Şerit Tasarımcısı Şerit oluşturmak için alternatif bir yöntem sağlar. İlk olarak, oluşturma ve bir Şerit kaynağı olarak özelleştirebilirsiniz. Ardından MFC uygulamasındaki koddan Şerit kaynağını yükleyin. Hatta Şerit kaynaklarını ve MFC Şerit sınıflarını birlikte kullanabilirsiniz. Örneğin, bir Şerit kaynağı oluşturabilir ve ardından program aracılığıyla daha fazla öğe çalışma zamanında kodu kullanarak ekleyin.
+Visual Studio 'nun önceki sürümlerinde,, [CMFCRibbonBar sınıfı](../mfc/reference/cmfcribbonbar-class.md)gibi mfc şerit sınıflarını kullanan kod yazarak şeritlerin oluşturulması gerekiyordu. Visual Studio 2010 ve üzeri sürümlerde, Şerit Tasarımcısı şeritler oluşturmak için alternatif bir yöntem sağlar. İlk olarak, bir şeridi kaynak olarak oluşturun ve özelleştirin. Ardından, şerit kaynağını MFC uygulamasındaki koddan yükleyin. Şerit kaynaklarını ve MFC şerit sınıflarını da birlikte kullanabilirsiniz. Örneğin, bir şerit kaynağı oluşturabilir ve daha sonra kodu kullanarak çalışma zamanında buna program aracılığıyla daha fazla öğe ekleyebilirsiniz.
 
-## <a name="understanding-the-ribbon-designer"></a>Şerit Tasarımcısı'nı anlama
+## <a name="understanding-the-ribbon-designer"></a>Şerit Tasarımcısını anlama
 
-Şerit Tasarımcısı oluşturur ve şeridi bir kaynak olarak depolar. Bir Şerit kaynağı oluşturduğunuzda, Şerit Tasarımcısı şu üç şeyi yapar:
+Şerit Tasarımcısı, şeridi oluşturur ve bir kaynak olarak depolar. Bir şerit kaynağı oluşturduğunuzda, Şerit Tasarımcısı bu üç şeyi yapar:
 
-- Bir giriş ekler proje kaynağı tanımlama betiğine (* .rc). Aşağıdaki örnekte, ıdr_rıbbon Şerit kaynağını tanımlayan benzersiz addır, RT_RIBBON_XML kaynak türüdür ve ribbon.mfcribbon ms kaynak dosyasının adıdır.
+- Proje kaynak tanımı betiğine (*. RC) bir giriş ekler. Aşağıdaki örnekte, IDR_RIBBON, şerit kaynağını tanımlayan benzersiz addır, RT_RIBBON_XML kaynak türüdür ve Ribbon. mfcribbon-ms kaynak dosyasının adıdır.
 
 ```
     IDR_RIBBON RT_RIBBON_XML      "res\\ribbon.mfcribbon-ms"
 ```
 
-- Tanımları komut kimliklerinin tanımını resource.h öğesine ekler.
+- Komut kimliklerinin tanımlarını Resource. h öğesine ekler.
 
 ```
 #define IDR_RIBBON            307
 ```
 
-- Şeridin düğmeleri, denetimleri ve özniteliklerini tanımlayan XML kodunu içeren bir Şerit kaynak dosyası (*.mfcribbon-ms) oluşturur. Şerit tasarımcısındaki Şeritte yapılan değişiklikler kaynak dosyasında XML olarak depolanır. Aşağıdaki kod örneği içeriğini parçası gösterir bir \*.mfcribbon-ms dosyası:
+- Şeridin düğmelerini, denetimlerini ve özniteliklerini tanımlayan XML kodunu içeren bir Şerit kaynak dosyası (*. mfcribbon-ms) oluşturur. Şerit tasarımcısındaki şeritte yapılan değişiklikler kaynak dosyasında XML olarak depolanır. Aşağıdaki kod örneği bir \*. mfcribbon-ms dosyasının içeriğinin bir parçasını gösterir:
 
 ```
 <RIBBON_BAR>
@@ -50,64 +50,64 @@ Visual Studio'nun önceki sürümlerinde şeritler gerekiyordu gibi MFC Şerit s
 </ID>
 ```
 
-Şerit kaynağını MFC uygulamanızda kullanmak için çağırarak kaynağı yükleyin [CMFCRibbonBar::LoadFromResource](../mfc/reference/cmfcribbonbar-class.md#loadfromresource).
+MFC uygulamanızda şerit kaynağını kullanmak için [CMFCRibbonBar:: LoadFromResource](../mfc/reference/cmfcribbonbar-class.md#loadfromresource)öğesini çağırarak kaynağı yükleyin.
 
-## <a name="creating-a-ribbon-by-using-the-ribbon-designer"></a>Şerit Tasarımcısı kullanarak Şerit oluşturma
+## <a name="creating-a-ribbon-by-using-the-ribbon-designer"></a>Şerit Tasarımcısını kullanarak şerit oluşturma
 
-MFC projenize Şerit kaynağı eklemek için iki şekilde şunlardır:
+Bunlar, MFC projenize Şerit kaynağı eklemenin iki yolu vardır:
 
-- Bir MFC uygulaması oluşturun ve şeridi oluşturmak üzere MFC proje sihirbazını yapılandırın. Daha fazla bilgi için [izlenecek yol: MFC kullanarak Şerit uygulaması oluşturma](../mfc/walkthrough-creating-a-ribbon-application-by-using-mfc.md).
+- Bir MFC uygulaması oluşturun ve şerit oluşturmak için MFC Proje Sihirbazı 'Nı yapılandırın. Daha fazla bilgi için bkz [. İzlenecek yol: MFC](../mfc/walkthrough-creating-a-ribbon-application-by-using-mfc.md)kullanarak şerit uygulaması oluşturma.
 
-- Mevcut bir MFC projesinde bir Şerit kaynağı oluşturabilir ve yükleyin. Daha fazla bilgi için [izlenecek yol: (Kısım 1) MFC karalama uygulamasını güncelleştirme](../mfc/walkthrough-updating-the-mfc-scribble-application-part-1.md).
+- Varolan bir MFC projesinde, bir şerit kaynağı oluşturup yükleyin. Daha fazla bilgi için bkz [. İzlenecek yol: MFC karalama uygulamasını güncelleştirme (Bölüm 1)](../mfc/walkthrough-updating-the-mfc-scribble-application-part-1.md).
 
-Projeniz el ile kodlanmış bir Şerit zaten varsa, MFC, mevcut şeridi bir Şerit kaynağına dönüştürmek için kullanabileceğiniz işlevleri vardır. Daha fazla bilgi için [nasıl yapılır: Varolan bir MFC şeridini Şerit kaynağına dönüştürme](../mfc/how-to-convert-an-existing-mfc-ribbon-to-a-ribbon-resource.md).
+Projenizin zaten el ile kodlanmış bir şeridi varsa, MFC, varolan Şeriti bir şerit kaynağına dönüştürmek için kullanabileceğiniz işlevlere sahiptir. Daha fazla bilgi için [nasıl yapılır: Varolan bir MFC şeridini şerit kaynağına](../mfc/how-to-convert-an-existing-mfc-ribbon-to-a-ribbon-resource.md)dönüştürün.
 
 > [!NOTE]
->  İletişim tabanlı uygulamalarda Şerit oluşturulamaz. Daha fazla bilgi için [Application Type, MFC Uygulama Sihirbazı](../mfc/reference/application-type-mfc-application-wizard.md).
+>  İletişim kutusu tabanlı uygulamalarda şeritler oluşturulamaz. Daha fazla bilgi için bkz. [uygulama türü, MFC Uygulama Sihirbazı](../mfc/reference/application-type-mfc-application-wizard.md).
 
 ## <a name="customizing-ribbons"></a>Şeritleri özelleştirme
 
-Şerit Tasarımcısı'nda bir Şerit açmak için kaynak görünümünde Şerit kaynağını çift tıklayın. Tasarımcıda ekleyin, kaldırın ve Şerit, uygulama düğmesini veya hızlı erişim araç çubuğu öğelerini özelleştirdiğiniz. Düğme tıklama olayları ve menü olayları gibi olayları da uygulamanızda bir yönteme de bağlayabilirsiniz.
+Şerit tasarımcısında bir şerit açmak için Kaynak Görünümü şerit kaynağına çift tıklayın. Tasarımcıda şerit, uygulama düğmesi veya hızlı erişim araç çubuğu üzerinde öğeleri ekleyebilir, kaldırabilir ve özelleştirebilirsiniz. Olayları, örneğin düğme tıklama olayları ve menü olayları gibi uygulamanızdaki bir yönteme da bağlayabilirsiniz.
 
-Aşağıdaki çizim Şerit tasarımcısındaki çeşitli bileşenleri gösterir.
+Aşağıdaki çizim, Şerit Tasarımcısı 'ndaki çeşitli bileşenleri göstermektedir.
 
 ![MFC Şerit Tasarımcısı](../mfc/media/ribbon_designer.png "MFC Şerit Tasarımcısı")
 
-- **Araç kutusu:** Tasarımcı yüzeyine sürüklenebilen denetimler içerir.
+- **Araç kutusu** Tasarımcı yüzeyine sürüklenebilen denetimleri içerir.
 
-- **Tasarımcı yüzeyi:** Şerit kaynağını görsel temsilini içerir.
+- **Tasarımcı yüzeyi:** Şerit kaynağının görsel gösterimini içerir.
 
 - **Özellikler penceresi:** Tasarımcı yüzeyinde seçilen öğenin özniteliklerini listeler.
 
-- **Kaynak Görünümü penceresi:** Projenize Şerit kaynakları dahil kaynakları görüntüler.
+- **Kaynak Görünümü penceresi:** Projenizdeki şerit kaynaklarını içeren kaynakları görüntüler.
 
-- **Şerit Düzenleyicisi araç çubuğu:** Şeridi önizlemenizi ve görsel temasını değiştirmenizi sağlayan komutları içerir.
+- **Şerit Düzenleyicisi araç çubuğu:** Şeridin önizlemesini yapmanızı ve görsel temasını değiştirmenize olanak sağlayan komutları içerir.
 
-Aşağıdaki konular, Şerit Tasarımcısı'nda özelliklerini kullanmak nasıl açıklar:
+Aşağıdaki konularda, Şerit tasarımcısında özelliklerin nasıl kullanılacağı açıklanır:
 
-- [Nasıl yapılır: Uygulama düğmesini özelleştirme](../mfc/how-to-customize-the-application-button.md)
+- [Nasıl yapılır: Uygulama Düğmesini Özelleştirme](../mfc/how-to-customize-the-application-button.md)
 
-- [Nasıl yapılır: Hızlı Erişim Araç çubuğunu özelleştirme](../mfc/how-to-customize-the-quick-access-toolbar.md)
+- [Nasıl yapılır: Hızlı Erişim Araç Çubuğunu Özelleştirme](../mfc/how-to-customize-the-quick-access-toolbar.md)
 
-- [Nasıl yapılır: Şerit denetimleri ve olay işleyicileri ekleme](../mfc/how-to-add-ribbon-controls-and-event-handlers.md)
+- [Nasıl yapılır: Şerit Denetimleri ve Olay İşleyicileri Ekleme](../mfc/how-to-add-ribbon-controls-and-event-handlers.md)
 
-- [Nasıl yapılır: Bir MFC uygulamasından Şerit kaynağı yükleme](../mfc/how-to-load-a-ribbon-resource-from-an-mfc-application.md)
+- [Nasıl yapılır: MFC Uygulamasından Şerit Kaynağı Yükleme](../mfc/how-to-load-a-ribbon-resource-from-an-mfc-application.md)
 
 ## <a name="definitions-of-ribbon-elements"></a>Şerit öğelerinin tanımları
 
-![MFC Şerit](../mfc/media/ribbon.png "MFC Şeridi")
+![MFC Şeridi](../mfc/media/ribbon.png "MFC Şeridi")
 
-- **Uygulama düğmesi:** Şerit üzerinde üst sol löşede görüntülenen düğme. Uygulama düğmesi Dosya menüsünün yerini alır ve hatta Şerit küçültüldüğünde bile görülebilir. Düğme tıklandığında komutların bir listesini içeren bir menü görüntülenir.
+- **Uygulama düğmesi:** Şeridin sol üst köşesinde görünen düğme. Uygulama düğmesi Dosya menüsünün yerini alır ve şerit küçültüldüğünde bile görünür. Düğmeye tıklandığında, komut listesi içeren bir menü görüntülenir.
 
-- **Hızlı Erişim Araç çubuğu:** Sık görüntüleyen küçük ve özelleştirilebilir bir araç komutları kullanılır.
+- **Hızlı erişim araç çubuğu:** Sık kullanılan komutları görüntüleyen küçük, özelleştirilebilir bir araç çubuğu.
 
-- **Kategori**: Bir Şerit sekmesinin içeriğini temsil eden mantıksal gruplama.
+- **Kategori**: Şerit sekmesinin içeriğini temsil eden mantıksal gruplama.
 
-- **Kategori varsayılan düğmesi:** Şerit küçültüldüğünde Şerit üzerinde görüntülenen düğme. Düğme tıklandığında kategori menü olarak yeniden görüntülenir.
+- **Kategori varsayılan düğmesi:** Şerit küçültüldüğünde görüntülenen düğme. Düğmeye tıklandığında kategori bir menü olarak yeniden görüntülenir.
 
-- **Pano:** Bir alan bir ilgili denetimlerin grubunu görüntüleyen Şerit çubuğu. Her Şerit kategorisi bir veya daha fazla Şerit paneli içerir.
+- **Paneliyle** Bir ilişkili denetimler grubunu görüntüleyen şerit çubuğunun alanı. Her Şerit kategorisi bir veya daha fazla şerit paneli içerir.
 
-- **Şerit öğeleri:** Panel üzerindeki, örneğin, düğmeler ve birleşik giriş kutuları denetler. Bir Şeritte barındırılabilecek farklı denetimleri görmek için bkz: [RibbonGadgets örneği: Şerit araçları uygulaması](../overview/visual-cpp-samples.md).
+- **Şerit öğeleri:** Panellerdeki, düğme ve Birleşik giriş kutularındaki denetimler. Bir şeritte barındırılabilecek çeşitli denetimleri görmek için bkz [. ribbonaraçları örneği: Şerit araçları uygulaması](../overview/visual-cpp-samples.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

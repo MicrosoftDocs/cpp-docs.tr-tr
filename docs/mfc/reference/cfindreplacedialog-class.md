@@ -32,16 +32,16 @@ helpviewer_keywords:
 - CFindReplaceDialog [MFC], SearchDown
 - CFindReplaceDialog [MFC], m_fr
 ms.assetid: 610f0b5d-b398-4ef6-8c05-e9d6641e50a8
-ms.openlocfilehash: de48d8f495802bdf1c5f69e7a4edc41153c9599f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 71234adec214bcbf5d42090edb582a7e5dd552b0
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62206019"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69506535"
 ---
 # <a name="cfindreplacedialog-class"></a>CFindReplaceDialog sınıfı
 
-Standart dize Bul/Değiştir iletişim kutuları uygulamanıza olanak sağlar.
+Uygulamanızda standart dize Bul/Değiştir iletişim kutuları uygulamanıza olanak tanır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -55,51 +55,51 @@ class CFindReplaceDialog : public CCommonDialog
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CFindReplaceDialog::CFindReplaceDialog](#cfindreplacedialog)|Oluşturmak için bu işlevi çağırın bir `CFindReplaceDialog` nesne.|
+|[CFindReplaceDialog:: CFindReplaceDialog](#cfindreplacedialog)|Bir `CFindReplaceDialog` nesne oluşturmak için bu işlevi çağırın.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CFindReplaceDialog::Create](#create)|Oluşturur ve görüntüler bir `CFindReplaceDialog` iletişim kutusu.|
-|[CFindReplaceDialog::FindNext](#findnext)|Sonrakini Bul dizesi bulmak kullanıcının istediği olup olmadığını belirlemek için bu işlevi çağırın.|
-|[CFindReplaceDialog::GetFindString](#getfindstring)|Geçerli bulma dizesini almak için bu işlevi çağırın.|
-|[CFindReplaceDialog::GetNotifier](#getnotifier)|Almak için bu işlevi çağırın `FINDREPLACE` yapısında, kayıtlı bir ileti işleyicisi.|
-|[CFindReplaceDialog::GetReplaceString](#getreplacestring)|Geçerli değiştirme dizesini almak için bu işlevi çağırın.|
-|[CFindReplaceDialog::IsTerminating](#isterminating)|İletişim kutusu sonlandırma olup olmadığını belirlemek için bu işlevi çağırın.|
-|[CFindReplaceDialog::MatchCase](#matchcase)|Kullanıcı Bul dizenin biçimi tam olarak eşleşmesi isteyip istemediğini belirlemek için bu işlevi çağırın.|
-|[CFindReplaceDialog::MatchWholeWord](#matchwholeword)|Kullanıcı yalnızca tüm sözcükleri eşleştirmeyi isteyip istemediğini belirlemek için bu işlevi çağırın.|
-|[CFindReplaceDialog::ReplaceAll](#replaceall)|Kullanıcının değiştirilecek dizenin tüm oluşumlarını istediği olup olmadığını belirlemek için bu işlevi çağırın.|
-|[CFindReplaceDialog::ReplaceCurrent](#replacecurrent)|Kullanıcının değiştirilmesi geçerli kelimenin istediği olup olmadığını belirlemek için bu işlevi çağırın.|
-|[CFindReplaceDialog::SearchDown](#searchdown)|Kullanıcı Arama aşağı yönde devam etmek isteyip istemediğini belirlemek için bu işlevi çağırın.|
+|[CFindReplaceDialog:: Create](#create)|Bir `CFindReplaceDialog` iletişim kutusu oluşturur ve görüntüler.|
+|[CFindReplaceDialog:: Sonrabul](#findnext)|Kullanıcının bulma dizesinin bir sonraki oluşumunu bulmak isteyip istemediğini öğrenmek için bu işlevi çağırın.|
+|[CFindReplaceDialog:: GetFindString](#getfindstring)|Geçerli bulma dizesini almak için bu işlevi çağırın.|
+|[CFindReplaceDialog:: Getbildiricisi](#getnotifier)|Kayıtlı ileti işleyicinizdeki `FINDREPLACE` yapıyı almak için bu işlevi çağırın.|
+|[CFindReplaceDialog:: GetReplaceString](#getreplacestring)|Geçerli değiştirme dizesini almak için bu işlevi çağırın.|
+|[CFindReplaceDialog:: ısating](#isterminating)|İletişim kutusunun sonlandıranıp sonlandırılmadığını öğrenmek için bu işlevi çağırın.|
+|[CFindReplaceDialog:: MatchCase](#matchcase)|Kullanıcının bul dizesinin durumunu tam olarak eşleştirmek isteyip istemediğini öğrenmek için bu işlevi çağırın.|
+|[CFindReplaceDialog:: MatchWholeWord](#matchwholeword)|Kullanıcının yalnızca tüm sözcükleri eşleştirmek isteyip istemediğini öğrenmek için bu işlevi çağırın.|
+|[CFindReplaceDialog:: ReplaceAll](#replaceall)|Kullanıcının dizenin tüm tekrarlarının değiştirilmesini isteyip istemediğini öğrenmek için bu işlevi çağırın.|
+|[CFindReplaceDialog:: Replacececurkiralık](#replacecurrent)|Kullanıcının geçerli sözcüğün değiştirilmesini isteyip istemediğini öğrenmek için bu işlevi çağırın.|
+|[CFindReplaceDialog:: SearchKey](#searchdown)|Kullanıcının aramanın aşağı doğru bir yönde devam etmesini isteyip istemediğini öğrenmek için bu işlevi çağırın.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CFindReplaceDialog::m_fr](#m_fr)|Özelleştirmek için kullanılan bir yapının bir `CFindReplaceDialog` nesne.|
+|[CFindReplaceDialog:: m_fr](#m_fr)|Bir `CFindReplaceDialog` nesneyi özelleştirmek için kullanılan bir yapı.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Diğer Windows ortak iletişim kutuları, farklı `CFindReplaceDialog` nesnelerdir geçici, kullanıcıların ekranda sırasında diğer windows ile etkileşim kurmasına izin verme. İki tür vardır, `CFindReplaceDialog` nesneler: İletişim kutuları ve Bul/Değiştir iletişim kutuları bulun. Kullanıcı Giriş arama ve arama/yer değiştirme dizeleri için iletişim kutularını izin verse de, bunlar herhangi bir arama veya değiştirme işlevleri gerçekleştirmeyin. Bu uygulamaya eklemeniz gerekir.
+Diğer Windows ortak iletişim kutularının `CFindReplaceDialog` aksine nesneler modsuz olduğundan, kullanıcıların ekrandayken diğer pencereler ile etkileşime geçmesini sağlar. İki tür `CFindReplaceDialog` nesne vardır: İletişim kutularını bul ve Bul/Değiştir iletişim kutuları. İletişim kutuları kullanıcının arama ve arama/değiştirme dizelerini eklemesine izin verse de, arama veya değiştirme işlevlerini gerçekleştirmez. Bunları uygulamaya eklemeniz gerekir.
 
-Oluşturmak için bir `CFindReplaceDialog` nesne, (herhangi bir bağımsız değişken olan) sağlanan bir oluşturucu kullanın. Bu modsuz iletişim kutusu olduğundan, nesne yığını kullanarak şirket ayrılamadı **yeni** işleç yerine yığında.
+Bir `CFindReplaceDialog` nesne oluşturmak için, sunulan oluşturucuyu (bağımsız değişken olmayan) kullanın. Bu engelleyici olmayan bir iletişim kutusu olduğundan, yığın üzerinde, yığında değil **New** işlecini kullanarak nesneyi ayırın.
 
-Bir kez bir `CFindReplaceDialog` nesne oluşturulur, çağırmalısınız [Oluştur](#create) oluşturmak ve iletişim kutusunu görüntülemek için üye işlevi.
+Bir `CFindReplaceDialog` nesne oluşturulduktan sonra iletişim kutusunu oluşturmak ve göstermek için üye [Oluştur](#create) işlevini çağırmanız gerekir.
 
-Kullanım [m_fr](#m_fr) çağırmadan önce iletişim kutusunu başlatmak için yapı `Create`. `m_fr` Yapısıdır türünü [FINDREPLACE](/windows/desktop/api/commdlg/ns-commdlg-tagfindreplacea). Bu yapı hakkında daha fazla bilgi için Windows SDK'sı bakın.
+' İ [](#m_fr) çağırmadan `Create`önce iletişim kutusunu başlatmak için m_fr yapısını kullanın. Yapı FindReplace türüdür. [](/windows/win32/api/commdlg/ns-commdlg-findreplacew) `m_fr` Bu yapı hakkında daha fazla bilgi için Windows SDK bakın.
 
-Ana pencereyi Bul/Değiştir isteklerini almak için sırada Windows kullanmalısınız [RegisterWindowMessage](/windows/desktop/api/winuser/nf-winuser-registerwindowmessagea) işlev ve kullanmak [on_regıstered_message](message-map-macros-mfc.md#on_registered_message) çerçeveniz içinde ileti eşleme makrosu Bu kayıtlı ileti işler penceresini açın.
+Üst pencereye Bul/Değiştir isteklerinin bildirilmesi için, Windows [RegisterWindowMessage](/windows/win32/api/winuser/nf-winuser-registerwindowmessagew) işlevini kullanmanız ve bu kayıtlı iletiyi işleyen çerçeve pencerenizde [ON_REGISTERED_MESSAGE](message-map-macros-mfc.md#on_registered_message) Message-Map makrosunu kullanmanız gerekir.
 
-Kullanıcı iletişim kutusu sonlandırmak verdi olup olmadığını belirlemek `IsTerminating` üye işlevi.
+Kullanıcının, iletişim kutusunu `IsTerminating` üye işleviyle sonlandırmayı kararması olup olmadığını belirleyebilirsiniz.
 
-`CFindReplaceDialog` üzerinde COMMDLG kullanır. Windows 3.1 ve sonraki sürümleri ile birlikte gelen DLL dosyası.
+`CFindReplaceDialog`, COMMDLG 'e dayanır. Windows sürümleri 3,1 ve üzeri ile birlikte gelen DLL dosyası.
 
-Özelleştir iletişim kutusu için öğesinden bir sınıf türetin `CFindReplaceDialog`, bir özel iletişim şablonu sağlar ve genişletilmiş denetimlerden bildirim iletilerini işlemek için ileti eşlemesi ekleyin. İşlenmemiş tüm iletiler için temel sınıf geçirilmelidir.
+İletişim kutusunu özelleştirmek için, öğesinden `CFindReplaceDialog`bir sınıf türetebilir, özel bir iletişim kutusu şablonu sağlayın ve genişletilmiş denetimlerden gelen bildirim iletilerini işlemek için bir ileti eşlemesi ekleyin. İşlenmemiş tüm iletiler taban sınıfına geçirilmelidir.
 
-Kanca işlevini özelleştirme gerekli değildir.
+Kanca işlevinin özelleştirilmesi gerekli değildir.
 
-Kullanma hakkında daha fazla bilgi için `CFindReplaceDialog`, bkz: [ortak iletişim kutusu sınıfları](../../mfc/common-dialog-classes.md).
+Kullanma `CFindReplaceDialog`hakkında daha fazla bilgi için bkz. [ortak iletişim kutusu sınıfları](../../mfc/common-dialog-classes.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -117,11 +117,11 @@ Kullanma hakkında daha fazla bilgi için `CFindReplaceDialog`, bkz: [ortak ilet
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxdlgs.h
+**Üstbilgi:** afxdlgs. h
 
-##  <a name="cfindreplacedialog"></a>  CFindReplaceDialog::CFindReplaceDialog
+##  <a name="cfindreplacedialog"></a>CFindReplaceDialog:: CFindReplaceDialog
 
-Oluşturur bir `CFindReplaceDialog` nesne.
+Bir `CFindReplaceDialog` nesnesi oluşturur.
 
 ```
 CFindReplaceDialog();
@@ -129,19 +129,19 @@ CFindReplaceDialog();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çünkü `CFindReplaceDialog` nesnesinin modsuz iletişim kutusu, kullanarak, yığında oluşturmalıdır **yeni** işleci.
+Nesnesi kalıcı olmayan bir iletişim kutusu olduğundan, New işlecini kullanarak yığında oluşturmanız gerekir. `CFindReplaceDialog`
 
-Yok etme sırasında framework gerçekleştirmeye bir **bu silme** işaretçinin iletişim kutusu. İletişim kutusu yığına oluşturduysanız **bu** işaretçi yok ve tanımsız davranışa neden olabilir.
+Yok etme sırasında, çerçeve iletişim kutusu işaretçisi üzerinde **bunu silme** işlemini gerçekleştirmeye çalışır. Yığın üzerinde iletişim kutusunu oluşturduysanız, **Bu** işaretçi yoktur ve tanımsız davranış ortaya çıkabilir.
 
-Oluşumu hakkında daha fazla bilgi için `CFindReplaceDialog` nesneleri bkz [CFindReplaceDialog](../../mfc/reference/cfindreplacedialog-class.md) genel bakış. Kullanım [CFindReplaceDialog::Create](#create) iletişim kutusunu görüntülemek için üye işlevi.
+`CFindReplaceDialog` Nesnelerin oluşturulması hakkında daha fazla bilgi için bkz. [CFindReplaceDialog](../../mfc/reference/cfindreplacedialog-class.md) genel bakış. İletişim kutusunu göstermek için [CFindReplaceDialog:: Create](#create) member işlevini kullanın.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDocView#170](../../mfc/codesnippet/cpp/cfindreplacedialog-class_1.cpp)]
 
-##  <a name="create"></a>  CFindReplaceDialog::Create
+##  <a name="create"></a>CFindReplaceDialog:: Create
 
-Oluşturur ve Bul veya Bul/Değiştir iletişim kutusu nesnesini değerine bağlı olarak görüntüler `bFindDialogOnly`.
+Değerine bağlı olarak bir bul veya Bul/Değiştir iletişim kutusu nesnesi oluşturur ve görüntüler `bFindDialogOnly`.
 
 ```
 virtual BOOL Create(
@@ -154,28 +154,28 @@ virtual BOOL Create(
 
 ### <a name="parameters"></a>Parametreler
 
-*bFindDialogOnly*<br/>
-Bu parametre görüntülemek için TRUE olarak ayarlanmış bir **Bul** iletişim kutusu. Görüntülemek için FALSE olarak ayarlanmış bir **Bul/Değiştir** iletişim kutusu.
+*yalnızca bfinddialog*<br/>
+Bir **bul** iletişim kutusunu göstermek için bu parametreyi true olarak ayarlayın. **Bul/Değiştir** iletişim kutusunu göstermek IÇIN bu değeri false olarak ayarlayın.
 
 *lpszFindWhat*<br/>
-İletişim kutusu görüntülendiğinde varsayılan arama dizeye yönelik işaretçi. NULL ise, iletişim kutusunda varsayılan arama dizesini içermiyor.
+İletişim kutusu göründüğünde varsayılan arama dizesinin işaretçisi. NULL ise, iletişim kutusu varsayılan arama dizesi içermez.
 
 *lpszReplaceWith*<br/>
-İletişim kutusu görüntülendiğinde varsayılan değiştirilen dizeye yönelik işaretçi. NULL ise varsayılan bir değiştirme dizesi iletişim kutusu içermiyor.
+İletişim kutusu göründüğünde varsayılan değiştirme dizesinin işaretçisi. NULL ise, iletişim kutusu varsayılan bir değiştirme dizesi içermez.
 
-*CertOpenStore*<br/>
-Bit düzeyinde OR işleci kullanılarak birleştirilen iletişim kutusunun ayarlarını özelleştirmek için kullanabileceğiniz bir veya daha fazla bayraklar. Arama aşağı yönde devam etmek üzere olduğunu belirten FR_DOWN varsayılan değerdir. Bkz: [FINDREPLACE](/windows/desktop/api/commdlg/ns-commdlg-tagfindreplacea) yapısı içinde bu bayraklar hakkında daha fazla bilgi için Windows SDK'sı.
+*dwFlags*<br/>
+Bit düzeyinde OR işleci kullanılarak birleştirilen iletişim kutusunun ayarlarını özelleştirmek için kullanabileceğiniz bir veya daha fazla bayrak. Varsayılan değer, aramanın aşağı doğru bir yönde devam etmek olduğunu belirten FR_DOWN ' dir. Bu bayraklar hakkında daha fazla bilgi için Windows SDK [FindReplace](/windows/win32/api/commdlg/ns-commdlg-findreplacew) yapısına bakın.
 
 *pParentWnd*<br/>
-İletişim kutusunun üst veya sahip penceresine bir işaretçi. Bu bulma/değiştirme eylemi istenip istenmediğini belirten özel ileti alacak penceredir. NULL ise, uygulamanın ana pencere kullanılır.
+İletişim kutusunun üst veya sahip penceresine yönelik bir işaretçi. Bu, bir Bul/Değiştir eyleminin istendiğini belirten özel iletiyi alacak olan penceresidir. NULL ise uygulamanın ana penceresi kullanılır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İletişim kutusu nesne başarıyla oluşturuldu olursa sıfır dışı; Aksi durumda 0.
+İletişim kutusu nesnesi başarıyla oluşturulduysa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ana pencereyi Bul/Değiştir isteklerini almak için sırada Windows kullanmalısınız [RegisterWindowMessage](/windows/desktop/api/winuser/nf-winuser-registerwindowmessagea) işlevi dönüş değeri olan uygulama örneği için benzersiz bir ileti numarası. Geri çağırma işlevi bildiren bir ileti eşleme girişi, çerçeve penceresi olmalıdır ( `OnFindReplace` örnekte) kayıtlı bu iletiyi işleyen. Aşağıdaki kod parçası adlı bir çerçeve penceresi sınıfı için bunun nasıl yapılacağını örneğidir `CMyRichEditView`:
+Üst pencereye Bul/Değiştir isteklerinin bildirilmesi için, dönüş değeri uygulamanın örneğine özgü bir ileti numarası olan Windows [RegisterWindowMessage](/windows/win32/api/winuser/nf-winuser-registerwindowmessagew) işlevini kullanmanız gerekir. Çerçeve pencerenizin, bu kayıtlı iletiyi işleyen geri çağırma işlevini ( `OnFindReplace` aşağıdaki örnekte) bildiren bir ileti eşleme girişi olmalıdır. Aşağıdaki kod parçası, şunu adlı `CMyRichEditView`bir çerçeve penceresi sınıfı için bunun nasıl yapılacağını gösteren bir örnektir:
 
 [!code-cpp[NVC_MFCDocView#171](../../mfc/codesnippet/cpp/cfindreplacedialog-class_2.h)]
 
@@ -183,15 +183,15 @@ Ana pencereyi Bul/Değiştir isteklerini almak için sırada Windows kullanmalı
 
 [!code-cpp[NVC_MFCDocView#173](../../mfc/codesnippet/cpp/cfindreplacedialog-class_4.cpp)]
 
-İçinde `OnFindReplace` işlevini kullanarak kullanıcının amaçları yorumlama [CFindReplaceDialog::FindNext](#findnext) ve [CFindReplaceDialog::IsTerminating](#isterminating) yöntemleri ve kod oluşturma Bul/Değiştir işlemleri için.
+İşlevinizde `OnFindReplace` [CFindReplaceDialog:: sonrakini](#findnext) ve [CFindReplaceDialog:: ısating](#isterminating) yöntemlerini kullanarak kullanıcının amaçları 'nı yorumlayıp bulma/değiştirme işlemleri için kodu oluşturursunuz.
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [CFindReplaceDialog::CFindReplaceDialog](#cfindreplacedialog).
+  [CFindReplaceDialog:: CFindReplaceDialog](#cfindreplacedialog)örneğine bakın.
 
-##  <a name="findnext"></a>  CFindReplaceDialog::FindNext
+##  <a name="findnext"></a>CFindReplaceDialog:: Sonrabul
 
-Kullanıcı arama dizesinin sonraki oluşumunu bulur isteyip istemediğini belirlemek için geri çağırma işlevinizden bu işlevi çağırın.
+Kullanıcının arama dizesinin bir sonraki tekrarını bulmak isteyip istemediğini öğrenmek için bu işlevi geri çağırma işlevinizden çağırın.
 
 ```
 BOOL FindNext() const;
@@ -199,11 +199,11 @@ BOOL FindNext() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Arama dizesinin sonraki oluşumunu bulmak kullanıcının istediği olursa sıfır dışı; Aksi durumda 0.
+Kullanıcı, arama dizesinin bir sonraki tekrarını bulmak isterse sıfır dışı. Aksi takdirde 0.
 
-##  <a name="getfindstring"></a>  CFindReplaceDialog::GetFindString
+##  <a name="getfindstring"></a>CFindReplaceDialog:: GetFindString
 
-Bu işlevi bulmak için varsayılan dizesini almak için geri çağırma işlevini çağırın.
+Bulunacak varsayılan dizeyi almak için bu işlevi geri çağırma işlevinizden çağırın.
 
 ```
 CString GetFindString() const;
@@ -211,15 +211,15 @@ CString GetFindString() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bulmak için varsayılan dize.
+Bulunacak varsayılan dize.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDocView#69](../../mfc/codesnippet/cpp/cfindreplacedialog-class_5.cpp)]
 
-##  <a name="getnotifier"></a>  CFindReplaceDialog::GetNotifier
+##  <a name="getnotifier"></a>CFindReplaceDialog:: Getbildiricisi
 
-Geçerli Bul Değiştir iletişim kutusu için bir işaretçi almak için bu işlevi çağırın.
+Geçerli Bul Değiştir iletişim kutusuna bir işaretçi almak için bu işlevi çağırın.
 
 ```
 static CFindReplaceDialog* PASCAL GetNotifier(LPARAM lParam);
@@ -228,23 +228,23 @@ static CFindReplaceDialog* PASCAL GetNotifier(LPARAM lParam);
 ### <a name="parameters"></a>Parametreler
 
 *lParam*<br/>
-*Lparam* çerçeve penceresinin için geçirilen değer `OnFindReplace` üye işlevi.
+Çerçeve penceresinin `OnFindReplace` üye işlevine geçirilen lParam değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli iletişim kutusu için bir işaretçi.
+Geçerli iletişim kutusu işaretçisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu, geri çağırma işlevi içinde kullanılması gereken geçerli iletişim kutusuna erişmek için kendi üye işlevleri ve erişim çağırın `m_fr` yapısı.
+Geçerli iletişim kutusuna erişmek, üye işlevlerini çağırmak ve `m_fr` yapıya erişmek için geri çağırma işlevinizde kullanılması gerekir.
 
 ### <a name="example"></a>Örnek
 
-Bkz: [CFindReplaceDialog::Create](#create) Bul Değiştir iletişim kutusundan bildirimleri almak için OnFindReplace işleyicisini kaydetmek bir örnek.
+Değiştirme yerini bul iletişim kutusundan bildirimleri almak için OnFindReplace işleyicisinin nasıl kaydedileceği hakkında bir örnek için bkz. [CFindReplaceDialog:: Create](#create) .
 
 [!code-cpp[NVC_MFCDocView#69](../../mfc/codesnippet/cpp/cfindreplacedialog-class_5.cpp)]
 
-##  <a name="getreplacestring"></a>  CFindReplaceDialog::GetReplaceString
+##  <a name="getreplacestring"></a>CFindReplaceDialog:: GetReplaceString
 
 Geçerli değiştirme dizesini almak için bu işlevi çağırın.
 
@@ -254,15 +254,15 @@ CString GetReplaceString() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Birlikte bulunan dizeleri değiştirmek varsayılan dize.
+Bulunan dizelerin yerine geçecek varsayılan dize.
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [CFindReplaceDialog::GetFindString](#getfindstring).
+  [CFindReplaceDialog:: GetFindString](#getfindstring)örneğine bakın.
 
-##  <a name="isterminating"></a>  CFindReplaceDialog::IsTerminating
+##  <a name="isterminating"></a>CFindReplaceDialog:: ısating
 
-Kullanıcı iletişim kutusu sonlandırmak verdi olup olmadığını belirlemek için geri çağırma işlevi içinde bu işlevi çağırın.
+Kullanıcının iletişim kutusunu sonlandırmaya karar verip içermediğini öğrenmek için bu işlevi geri çağırma işlevinizde çağırın.
 
 ```
 BOOL IsTerminating() const;
@@ -270,19 +270,19 @@ BOOL IsTerminating() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kullanıcı iletişim kutusu sonlandırmak verdi olursa sıfır dışı; Aksi durumda 0.
+Kullanıcı iletişim kutusunu sonlandırmayı kararmışsa sıfır dışında; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, sıfır dışı döndürürse, çağırmalıdır `DestroyWindow` üye işlevi geçerli iletişim kutusunu ve tüm iletişim kutusu işaretçi değişkeninin NULL olarak ayarlayın. İsteğe bağlı olarak, ayrıca en son girilen Bul/Değiştir metin depolamak ve sonraki Bul/Değiştir iletişim kutusunu başlatmak için kullanın.
+Bu işlev sıfır dışında bir değer döndürürse, geçerli iletişim `DestroyWindow` kutusunun üye işlevini çağırmanız ve iletişim kutusu işaretçisi değişkenini null olarak ayarlamanız gerekir. İsteğe bağlı olarak, Bul/Değiştir metnini de saklayabilir ve sonraki Bul/Değiştir iletişim kutusunu başlatmak için onu kullanabilirsiniz.
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [CFindReplaceDialog::GetFindString](#getfindstring).
+  [CFindReplaceDialog:: GetFindString](#getfindstring)örneğine bakın.
 
-##  <a name="m_fr"></a>  CFindReplaceDialog::m_fr
+##  <a name="m_fr"></a>CFindReplaceDialog:: m_fr
 
-Özelleştirmek için kullanılan bir `CFindReplaceDialog` nesne.
+Bir `CFindReplaceDialog` nesneyi özelleştirmek için kullanılır.
 
 ```
 FINDREPLACE m_fr;
@@ -290,17 +290,17 @@ FINDREPLACE m_fr;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`m_fr` bir yapı türü [FINDREPLACE](/windows/desktop/api/commdlg/ns-commdlg-tagfindreplacea). Özellikleri iletişim kutusu nesnesinin üyeleri depolayın. Oluşturma sonrasında bir `CFindReplaceDialog` nesne kullanabileceğiniz `m_fr` iletişim kutusunda çeşitli değerleri değiştirmek için.
+`m_fr`, [FindReplace](/windows/win32/api/commdlg/ns-commdlg-findreplacew)türünde bir yapıdır. Üyeleri iletişim kutusu nesnesinin özelliklerini depolar. Bir `CFindReplaceDialog` nesne oluşturduktan sonra iletişim kutusundaki çeşitli değerleri `m_fr` değiştirmek için kullanabilirsiniz.
 
-Bu yapı hakkında daha fazla bilgi için bkz. `FINDREPLACE` Windows SDK'sındaki yapısı.
+Bu yapı hakkında daha fazla bilgi için Windows SDK `FINDREPLACE` yapıya bakın.
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [CFindReplaceDialog::CFindReplaceDialog](#cfindreplacedialog).
+  [CFindReplaceDialog:: CFindReplaceDialog](#cfindreplacedialog)örneğine bakın.
 
-##  <a name="matchcase"></a>  CFindReplaceDialog::MatchCase
+##  <a name="matchcase"></a>CFindReplaceDialog:: MatchCase
 
-Kullanıcı Bul dizenin biçimi tam olarak eşleşmesi isteyip istemediğini belirlemek için bu işlevi çağırın.
+Kullanıcının bul dizesinin durumunu tam olarak eşleştirmek isteyip istemediğini öğrenmek için bu işlevi çağırın.
 
 ```
 BOOL MatchCase() const;
@@ -308,11 +308,11 @@ BOOL MatchCase() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Arama dizesinin tam olarak harf arama dizesinin oluşumlarını bulmak kullanıcının istediği olursa sıfır dışı; Aksi durumda 0.
+Kullanıcı, arama dizesinin durumuyla tam olarak eşleşen arama dizesinin tekrarlamalarını bulmak isterse sıfır dışında; Aksi takdirde 0.
 
-##  <a name="matchwholeword"></a>  CFindReplaceDialog::MatchWholeWord
+##  <a name="matchwholeword"></a>CFindReplaceDialog:: MatchWholeWord
 
-Kullanıcı yalnızca tüm sözcükleri eşleştirmeyi isteyip istemediğini belirlemek için bu işlevi çağırın.
+Kullanıcının yalnızca tüm sözcükleri eşleştirmek isteyip istemediğini öğrenmek için bu işlevi çağırın.
 
 ```
 BOOL MatchWholeWord() const;
@@ -320,11 +320,11 @@ BOOL MatchWholeWord() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kullanıcının yalnızca arama dizesinin tüm sözcükleri eşleştirmeyi istediği olursa sıfır dışı; Aksi durumda 0.
+Kullanıcı yalnızca arama dizesinin tüm sözcüklerini eşleştirmek isterse, sıfır dışı. Aksi takdirde 0.
 
-##  <a name="replaceall"></a>  CFindReplaceDialog::ReplaceAll
+##  <a name="replaceall"></a>CFindReplaceDialog:: ReplaceAll
 
-Kullanıcının değiştirilecek dizenin tüm oluşumlarını istediği olup olmadığını belirlemek için bu işlevi çağırın.
+Kullanıcının dizenin tüm tekrarlarının değiştirilmesini isteyip istemediğini öğrenmek için bu işlevi çağırın.
 
 ```
 BOOL ReplaceAll() const;
@@ -332,11 +332,11 @@ BOOL ReplaceAll() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kullanıcı değiştirme dizesi ile eşleşen tüm dizeleri değiştirilmesi isteğinde olursa sıfır dışı; Aksi durumda 0.
+Kullanıcı Değiştirme dizesiyle eşleşen tüm dizelerin değiştirilmesini istediyse sıfır dışında olur; Aksi takdirde 0.
 
-##  <a name="replacecurrent"></a>  CFindReplaceDialog::ReplaceCurrent
+##  <a name="replacecurrent"></a>CFindReplaceDialog:: Replacececurkiralık
 
-Kullanıcının değiştirilmesi geçerli kelimenin istediği olup olmadığını belirlemek için bu işlevi çağırın.
+Kullanıcının geçerli sözcüğün değiştirilmesini isteyip istemediğini öğrenmek için bu işlevi çağırın.
 
 ```
 BOOL ReplaceCurrent() const;
@@ -344,11 +344,11 @@ BOOL ReplaceCurrent() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kullanıcı şu anda seçili dizeyi değiştirme dizesi ile değiştirilmesi isteğinde olursa sıfır dışı; Aksi durumda 0.
+Kullanıcı şu anda seçili dizenin değiştirme dizesiyle değiştirilmesini istediyse sıfır dışında; Aksi takdirde 0.
 
-##  <a name="searchdown"></a>  CFindReplaceDialog::SearchDown
+##  <a name="searchdown"></a>CFindReplaceDialog:: SearchKey
 
-Kullanıcı Arama aşağı yönde devam etmek isteyip istemediğini belirlemek için bu işlevi çağırın.
+Kullanıcının aramanın aşağı doğru bir yönde devam etmesini isteyip istemediğini öğrenmek için bu işlevi çağırın.
 
 ```
 BOOL SearchDown() const;
@@ -356,7 +356,7 @@ BOOL SearchDown() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kullanıcı aşağı yönde devam etmek için arama isterse sıfır; Kullanıcı bir yukarı yönde devam etmek için arama isterse 0.
+Kullanıcı aramanın aşağı doğru bir yönde devam etmesini istiyorsa sıfır dışı; Kullanıcı aramanın daha yukarı yönde devam etmesini istiyorsa 0.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

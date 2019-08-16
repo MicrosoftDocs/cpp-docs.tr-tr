@@ -1,21 +1,21 @@
 ---
-title: last_is (C++ COM özniteliği)
+title: last_is (C++ com özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.last_is
 helpviewer_keywords:
 - last_is attribute
 ms.assetid: 9e045ac0-fa38-4249-af55-67bde5d0a58c
-ms.openlocfilehash: 39b35b218f3402839d956c4da0a00f290fe5d595
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4745d4eb59fd2adb79937b34184081dbbd0814fb
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62409427"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69514512"
 ---
-# <a name="lastis"></a>last_is
+# <a name="last_is"></a>last_is
 
-Aktarılacak olan son dizi öğenin dizinini belirtir.
+İletilmek üzere son dizi öğesinin dizinini belirtir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -25,16 +25,16 @@ Aktarılacak olan son dizi öğenin dizinini belirtir.
 
 ### <a name="parameters"></a>Parametreler
 
-*İfade*<br/>
-Bir veya daha fazla C dili ifadeleri. Boş bağımsız değişken yuvaları izin verilir.
+*ifadesini*<br/>
+Bir veya daha fazla C-dil ifadesi. Boş bağımsız değişken yuvalarına izin veriliyor.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Last_is** C++ özniteliği ile aynı işlevlere sahip [last_is](/windows/desktop/Midl/last-is) MIDL özniteliği.
+**Last_is** C++ özniteliği, [last_is](/windows/win32/Midl/last-is) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
 
 ## <a name="example"></a>Örnek
 
-Bkz: [first_is](first-is.md) örneği nasıl bir dizinin bir bölümünü belirtin.
+Dizinin bir bölümünü belirtme örneği için bkz. [first_is](first-is.md) .
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -42,12 +42,12 @@ Bkz: [first_is](first-is.md) örneği nasıl bir dizinin bir bölümünü belirt
 
 |||
 |-|-|
-|**İçin geçerlidir**|İçinde alan **yapı** veya **birleşim**, parametre arabirim, arabirim yöntemi|
+|**Uygulama hedefi**|**Struct** veya **Union**içindeki alan, arabirim parametresi, arabirim yöntemi|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|Yok.|
+|**Gerekli öznitelikler**|Yok.|
 |**Geçersiz öznitelikler**|Yok.|
 
-Daha fazla bilgi için [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
+Daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

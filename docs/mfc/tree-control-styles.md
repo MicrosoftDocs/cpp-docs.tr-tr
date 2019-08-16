@@ -19,26 +19,26 @@ helpviewer_keywords:
 - TVS_HASBUTTONS [MFC]
 - tree controls [MFC], styles
 ms.assetid: f43faebd-a355-479e-888a-bf0673d5e1b4
-ms.openlocfilehash: d03961c1c905689af5894897a59262c8f00e73fa
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f5f28025d0349e9bcd95aba50d4110d304fed376
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62181529"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69510943"
 ---
 # <a name="tree-control-styles"></a>Ağaç Denetimi Stilleri
 
-Ağaç denetimi ([CTreeCtrl](../mfc/reference/ctreectrl-class.md)) stilleri bir ağaç denetimin görünümünü yönlerini yönetir. Ağaç denetimi oluştururken ilk stilleri ayarlayın. Alabilir ve kullanarak oluşturduktan sonra ağaç denetimi stilleri değiştirme [GetWindowLong](/windows/desktop/api/winuser/nf-winuser-getwindowlonga) ve [SetWindowLong](/windows/desktop/api/winuser/nf-winuser-setwindowlonga) belirterek Windows işlevlerini **GWL_STYLE** için *nIndex* parametresi. Stilleri tam bir listesi için bkz. [ağaç görünümü denetiminin pencere stilleri](/windows/desktop/Controls/tree-view-control-window-styles) Windows SDK.
+Ağaç denetimi ([Ctreecy](../mfc/reference/ctreectrl-class.md)) stilleri, bir ağaç denetimi görünümünün yönlerini yönetir. Ağaç denetimini oluştururken ilk stilleri ayarlarsınız. Ağaç denetimini oluşturduktan sonra, [GetWindowLong](/windows/win32/api/winuser/nf-winuser-getwindowlongw) ve [SetWindowLong](/windows/win32/api/winuser/nf-winuser-setwindowlongw) Windows Işlevlerini kullanarak, *nIndex* parametresi için **GWL_STYLE** belirterek stilleri alabilir ve değiştirebilirsiniz. Stillerin tüm listesi için bkz. Windows SDK [ağaç görünümü Denetim penceresi stilleri](/windows/win32/Controls/tree-view-control-window-styles) .
 
-**TVS_HASLINES** stili alt öğeleri karşılık gelen kendi üst öğesine bağlamak satırları çizerek bir ağaç denetimin hiyerarşi grafik gösterimi geliştirir. Bu stil hiyerarşinin kökündeki öğeleri bağlamak değil. Bunu yapmak için birleştirmeniz gerekir **TVS_HASLINES** ve **TVS_LINESATROOT** stilleri.
+**TVS_HASLINES** stili, alt öğeleri karşılık gelen üst öğelerine bağlayan çizgiler çizerek ağaç denetimi hiyerarşisinin grafik gösterimini geliştirir. Bu stil, hiyerarşinin kökündeki öğeleri bağlamaz. Bunu yapmak için **TVS_HASLINES** ve **TVS_LINESATROOT** stillerini birleştirmeniz gerekir.
 
-Kullanıcı genişletebilir veya üst öğesini tıklatarak bir üst öğenin alt öğelerinin listesini Daralt. Sahip bir ağaç denetimi **TVS_SINGLEEXPAND** genişletmek için seçilen öğe ve daraltmak için seçili öğe stili neden olur. Fare tek tıklamayla seçili öğe için kullanılır ve bu öğe kapalı, genişletilir. Seçili öğeyi tek-açık olduğunda tıkladıysanız, daraltılmış.
+Kullanıcı üst öğeye çift tıklayarak bir üst öğenin alt öğe listesini genişletebilir veya daraltabilir. **TVS_SINGLEEXPAND** stiline sahip bir ağaç denetimi, öğenin genişlemesine ve seçili öğenin daraltılacak olmasına neden olur. Fare seçili öğeye tek tıklamak için kullanılmışsa ve bu öğe kapalıysa, genişletilir. Seçili öğe açık olduğunda tek tıklanmışsa daraltılır.
 
-Sahip bir ağaç denetimi **TVS_HASBUTTONS** stili, her bir üst öğenin sol tarafı bir düğme ekler. Kullanıcı genişletmek veya daraltmak için üst öğe çift alternatif olarak alt öğeler için düğmesine tıklayabilirsiniz. **TVS_HASBUTTONS** düğmeleri hiyerarşi kökündeki öğeleri için eklemez. Bunu yapmak için birleştirebilirsiniz **TVS_HASLINES**, **TVS_LINESATROOT**, ve **TVS_HASBUTTONS**.
+**Tvs_hasbuttons** stiline sahip bir ağaç denetimi, her üst öğenin sol tarafına bir düğme ekler. Kullanıcı alt öğeleri genişletmek veya daraltmak için düğmeye tıklayarak üst öğeyi çift tıklayabileceğiniz bir alternatif olarak. **Tvs_hasbuttons** , hiyerarşinin kökündeki öğelere düğme eklemez. Bunu yapmak için **TVS_HASLINES**, **TVS_LINESATROOT**ve **tvs_hasbuttons**birleştirmelisiniz.
 
-**TVS_EDITLABELS** stil mümkün kılar kullanıcının ağaç denetim öğesi etiketleri düzenle. Etiketleri düzenleme hakkında daha fazla bilgi için bkz. [ağaç denetimi etiketini düzenleme](../mfc/tree-control-label-editing.md) bu konuda.
+**TVS_EDITLABELS** stili, kullanıcının ağaç denetim öğelerinin etiketlerini düzenlemesini mümkün hale getirir. Etiketleri düzenlemeyle ilgili daha fazla bilgi için, bu konunun ilerleyen kısımlarında [Ağaç Denetim etiketi düzenlemesi](../mfc/tree-control-label-editing.md) bölümüne bakın.
 
-**TVS_NOTOOLTIPS** stili, ağaç görünümü denetimleri otomatik araç ipucu özelliğini devre dışı bırakır. Bu özellik otomatik olarak tüm başlığını şu anda görünür değilse, fare imleci altında öğesinin başlığını içeren bir araç ipucu görüntülenir.
+**TVS_NOTOOLTIPS** stili, ağaç görünümü denetimlerinin otomatik araç ipucu özelliğini devre dışı bırakır. Bu özellik, tüm başlık Şu anda görünür değilse, fare imleci altındaki öğenin başlığını içeren bir araç ipucunu otomatik olarak görüntüler.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

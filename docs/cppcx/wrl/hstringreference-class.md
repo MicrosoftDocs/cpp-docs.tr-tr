@@ -22,16 +22,16 @@ helpviewer_keywords:
 - Microsoft::WRL::Wrappers::HStringReference::operator!= operator
 - Microsoft::WRL::Wrappers::HStringReference::operator< operator
 ms.assetid: 9bf823b1-17eb-4ac4-8c5d-27d27c7a4150
-ms.openlocfilehash: 9c17a9df8fcc7d849bbbd4f613bf5dce6dae8983
-ms.sourcegitcommit: fd466f2e14ad001f52f3dbe54f46d77be10f2d7b
+ms.openlocfilehash: 591af0d66c9c209ba56310a0bd5cf5cd74e34929
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67894388"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69498342"
 ---
 # <a name="hstringreference-class"></a>HStringReference Sınıfı
 
-Varolan bir dizeden oluşturulan bir HSTRING temsil eder.
+Varolan bir dizeden oluşturulan bir HSTRıNG temsil eder.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -41,7 +41,7 @@ class HStringReference;
 
 ## <a name="remarks"></a>Açıklamalar
 
-Yeni HSTRING öğesindeki yedekleme arabelleğinin yaşam süresi Windows çalışma zamanı tarafından yönetilmiyor. Arayanın yığın ayırmasını engellemek ve bellek sızıntısı riskini ortadan kaldırmak için yığın çerçevesinde bir kaynak dizesi ayırır. Ayrıca, arayanın eklenen HSTRING ömrü boyunca kaynak dizesi değişmeden kalır emin olmalısınız. Daha fazla bilgi için [WindowsCreateStringReference işlevi](/windows/desktop/api/winstring/nf-winstring-windowscreatestringreference).
+Yeni HSTRING 'teki yedekleme arabelleğinin yaşam süresi Windows Çalışma Zamanı tarafından yönetilmiyor. Çağıran, yığın ayırmayı önlemek ve bellek sızıntısı riskini ortadan kaldırmak için yığın çerçevesinde bir kaynak dizesi ayırır. Ayrıca çağıran, eklenen HSTRING 'in ömrü boyunca kaynak dizenin değişmeden kalmasını sağlamalıdır. Daha fazla bilgi için bkz. [Windowscreatestringreference işlevi](/windows/win32/api/winstring/nf-winstring-windowscreatestringreference).
 
 ## <a name="members"></a>Üyeler
 
@@ -49,24 +49,24 @@ Yeni HSTRING öğesindeki yedekleme arabelleğinin yaşam süresi Windows çalı
 
 Ad                                                    | Açıklama
 ------------------------------------------------------- | -----------------------------------------------------------
-[HStringReference::HStringReference](#hstringreference) | Yeni bir örneğini başlatır `HStringReference` sınıfı.
+[HStringReference:: HStringReference](#hstringreference) | Yeni bir örneğini başlatır `HStringReference` sınıfı.
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 Üye                              | Açıklama
 ----------------------------------- | ------------------------------------------------------------------
-[HStringReference::CopyTo](#copyto) | Geçerli kopyalar `HStringReference` nesnesini bir HSTRING nesnesine.
-[HStringReference::Get](#get)       | Temel HSTRING tanıtıcısının değerini alır.
-[HStringReference::GetRawBuffer](#getrawbuffer) | Temel dize verileri için bir işaretçi alır.
+[HStringReference:: CopyTo](#copyto) | Geçerli `HStringReference` nesneyi bir HString nesnesine kopyalar.
+[HStringReference:: Get](#get)       | Temel alınan HSTRıNG tanıtıcısının değerini alır.
+[HStringReference:: GetRawBuffer](#getrawbuffer) | Temel alınan dize verilerine yönelik bir işaretçi alır.
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
 Ad                                                  | Açıklama
 ----------------------------------------------------- | ----------------------------------------------------------------------------------------------
-[HStringReference::operator =](#operator-assign)       | Başka bir değer taşır `HStringReference` geçerli nesneye `HStringReference` nesne.
-[HStringReference::operator ==](#operator-equality)    | İki parametrenin eşit olup olmadığını gösterir.
-[HStringReference::operator! =](#operator-inequality)  | İki parametrenin eşit olup olmadığını gösterir.
-[HStringReference::operator&lt;](#operator-less-than) | İkinci parametre ilk parametre olup değerinden gösterir.
+[HStringReference:: operator =](#operator-assign)       | Başka bir `HStringReference` nesnenin değerini geçerli `HStringReference` nesneye kaydırır.
+[HStringReference:: operator = =](#operator-equality)    | İki parametrenin eşit olup olmadığını gösterir.
+[HStringReference:: operator! =](#operator-inequality)  | İki parametrenin eşit olup olmadığını gösterir.
+[HStringReference:: işleci&lt;](#operator-less-than) | İlk parametrenin ikinci parametreden küçük olup olmadığını gösterir.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -74,13 +74,13 @@ Ad                                                  | Açıklama
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** corewrappers.h
+**Üstbilgi:** corewrapper. h
 
-**Namespace:** Microsoft::wrl:: Wrappers
+**Uzayına** Microsoft:: WRL:: sarmalayıcılar
 
-## <a name="copyto"></a>HStringReference::CopyTo
+## <a name="copyto"></a>HStringReference:: CopyTo
 
-Geçerli kopyalar `HStringReference` nesnesini bir HSTRING nesnesine.
+Geçerli `HStringReference` nesneyi bir HString nesnesine kopyalar.
 
 ```cpp
 HRESULT CopyTo(
@@ -90,16 +90,16 @@ HRESULT CopyTo(
 
 ### <a name="parameters"></a>Parametreler
 
-*str*<br/>
-Kopyayı alan HSTRING.
+*üstbilgisine*<br/>
+Kopyayı alan HSTRıNG.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntemin çağırdığı [WindowsDuplicateString](/windows/desktop/api/winstring/nf-winstring-windowsduplicatestring) işlevi.
+Bu yöntem, [WindowsDuplicateString](/windows/win32/api/winstring/nf-winstring-windowsduplicatestring) işlevini çağırır.
 
-## <a name="get"></a>HStringReference::Get
+## <a name="get"></a>HStringReference:: Get
 
-Temel HSTRING tanıtıcısının değerini alır.
+Temel alınan HSTRıNG tanıtıcısının değerini alır.
 
 ```cpp
 HSTRING Get() const throw()
@@ -107,24 +107,24 @@ HSTRING Get() const throw()
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Temel HSTRING tanıtıcısının değerini.
+Temel alınan HSTRıNG tanıtıcısının değeri.
 
-## <a name="getrawbuffer"></a>HStringReference::GetRawBuffer
+## <a name="getrawbuffer"></a>HStringReference:: GetRawBuffer
 
-Temel dize verileri için bir işaretçi alır.
+Temel alınan dize verilerine yönelik bir işaretçi alır.
 
 ```cpp
 const wchar_t* GetRawBuffer(unsigned int* length) const;
 ```
 ### <a name="parameters"></a>Parametreler
 
-*uzunluğu* işaretçi bir **int** değişken veri uzunluğunu alır.
+*uzunluk* Verilerin uzunluğunu alan bir **int** değişkeninin işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-A **const** temel alınan verileri dize işaretçisi.
+Temel alınan dize verilerine yönelik **const** işaretçisi.
 
-## <a name="hstringreference"></a>HStringReference::HStringReference
+## <a name="hstringreference"></a>HStringReference:: HStringReference
 
 Yeni bir örneğini başlatır `HStringReference` sınıfı.
 
@@ -142,28 +142,28 @@ HStringReference(HStringReference&& other) throw();
 ### <a name="parameters"></a>Parametreler
 
 *sizeDest*<br/>
-Hedef boyutunu belirten bir şablon parametresi `HStringReference` arabellek.
+Hedef `HStringReference` arabelleğin boyutunu belirten bir şablon parametresi.
 
-*str*<br/>
-Bir geniş karakter dizesi bir başvuru.
+*üstbilgisine*<br/>
+Geniş karakterli bir dizeye başvuru.
 
-*Len*<br/>
-En büyük uzunluğunu *str* parametre arabelleği bu işlemi kullanmak için. Varsa *len* parametresi belirtilmediyse, tüm *str* parametresi kullanılır. Varsa *len* büyüktür *sizeDest*, *len* ayarlanır *sizeDest*-1.
+*tepe*<br/>
+Bu işlemde kullanılacak *Str* parametre arabelleğinin uzunluk üst sınırı. *Len* parametresi belirtilmemişse, *Str* parametresinin tamamı kullanılır. *Len* , *sizedest*değerinden büyükse, *len* , *sizedest*-1 olarak ayarlanır.
 
-*Diğer*<br/>
-Başka bir `HStringReference` nesne.
+*farklı*<br/>
+Başka `HStringReference` bir nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk Oluşturucu, yeni bir başlatır `HStringReference` aynı boyuttaki parametre olarak nesne *str*.
+İlk Oluşturucu, *Str*parametresiyle aynı `HStringReference` boyutta olan yeni bir nesne başlatır.
 
-İkinci Oluşturucu, yeni bir başlatır `HStringReference` nesnesinin boyutu specifeid parametresi tarafından *len*.
+İkinci Oluşturucu, boyutun parametre `HStringReference` *uzunluğu*tarafından belirtilen yeni bir nesnesi başlatır.
 
-Üçüncü Oluşturucu, yeni bir başlatır `HStringReference` değerini nesnesine *diğer* parametresi ve ardından yok eder *diğer* parametresi.
+Üçüncü Oluşturucu, *diğer* parametrenin değerine `HStringReference` yeni bir nesnesi başlatır ve ardından *diğer* parametreyi yok eder.
 
-## <a name="operator-assign"></a>HStringReference::operator =
+## <a name="operator-assign"></a>HStringReference:: operator =
 
-Başka bir değer taşır `HStringReference` geçerli nesneye `HStringReference` nesne.
+Başka bir `HStringReference` nesnenin değerini geçerli `HStringReference` nesneye kaydırır.
 
 ```cpp
 HStringReference& operator=(HStringReference&& other) throw()
@@ -171,14 +171,14 @@ HStringReference& operator=(HStringReference&& other) throw()
 
 ### <a name="parameters"></a>Parametreler
 
-*Diğer*<br/>
+*farklı*<br/>
 Varolan bir `HStringReference` nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varolan değerin *diğer* nesne geçerli kopyalanır `HStringReference` nesnesi ve ardından *diğer* nesnesi yok edildiğinde.
+Varolan *diğer* nesnenin değeri geçerli `HStringReference` nesneye kopyalanır ve sonra *diğer* nesne yok edilir.
 
-## <a name="operator-equality"></a>HStringReference::operator ==
+## <a name="operator-equality"></a>HStringReference:: operator = =
 
 İki parametrenin eşit olup olmadığını gösterir.
 
@@ -198,17 +198,17 @@ inline bool operator==(
 
 ### <a name="parameters"></a>Parametreler
 
-*lhs*<br/>
-Karşılaştırılacak ilk parametre. *lhs* olabilir bir `HStringReference` nesnesi veya bir HSTRING tanıtıcısına.
+*Point*<br/>
+Karşılaştırılacak ilk parametre. *LHS* bir `HStringReference` nesne veya HString tutamacı olabilir.
 
-*Sol*<br/>
-Karşılaştırılacak ikinci parametre.  *Sol* olabilir bir `HStringReference` nesnesi veya bir HSTRING tanıtıcısına.
+*sağ taraftan*<br/>
+Karşılaştırılacak ikinci parametre.  *RHS* bir `HStringReference` nesne veya HString tutamacı olabilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** varsa *lhs* ve *sol* parametreleri eşit; Aksi takdirde **false**.
+*LHS* ve *RHS* parametreleri eşitse **true** ; Aksi takdirde, **false**.
 
-## <a name="operator-inequality"></a>HStringReference::operator! =
+## <a name="operator-inequality"></a>HStringReference:: operator! =
 
 İki parametrenin eşit olup olmadığını gösterir.
 
@@ -228,19 +228,19 @@ inline bool operator!=(
 
 ### <a name="parameters"></a>Parametreler
 
-*lhs*<br/>
-Karşılaştırılacak ilk parametre. *lhs* olabilir bir `HStringReference` nesnesi veya bir HSTRING tanıtıcısına.
+*Point*<br/>
+Karşılaştırılacak ilk parametre. *LHS* bir `HStringReference` nesne veya HString tutamacı olabilir.
 
-*Sol*<br/>
-Karşılaştırılacak ikinci parametre.  *Sol* olabilir bir `HStringReference` nesnesi veya bir HSTRING tanıtıcısına.
+*sağ taraftan*<br/>
+Karşılaştırılacak ikinci parametre.  *RHS* bir `HStringReference` nesne veya HString tutamacı olabilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** varsa *lhs* ve *sol* parametreleri eşit; Aksi takdirde değil **false**.
+*LHS* ve *RHS* parametreleri eşitse **true** ; Aksi takdirde, **false**.
 
-## <a name="operator-less-than"></a>HStringReference::operator&lt;
+## <a name="operator-less-than"></a>HStringReference:: işleci&lt;
 
-İkinci parametre ilk parametre olup değerinden gösterir.
+İlk parametrenin ikinci parametreden küçük olup olmadığını gösterir.
 
 ```cpp
 inline bool operator<(
@@ -250,12 +250,12 @@ inline bool operator<(
 
 ### <a name="parameters"></a>Parametreler
 
-*lhs*<br/>
-Karşılaştırılacak ilk parametre. *lhs* başvuru olabilir bir `HStringReference`.
+*Point*<br/>
+Karşılaştırılacak ilk parametre. *LHS* bir başvurusu `HStringReference`olabilir.
 
-*Sol*<br/>
-Karşılaştırılacak ikinci parametre.  *Sol* başvuru olabilir bir `HStringReference`.
+*sağ taraftan*<br/>
+Karşılaştırılacak ikinci parametre.  *RHS* bir `HStringReference`başvurusu olabilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** varsa *lhs* parametresi değerinden daha küçük *sol* parametre; Aksi takdirde **false**.
+*LHS* parametresi *RHS* parametresinden küçükse **true** ; Aksi takdirde, **false**.

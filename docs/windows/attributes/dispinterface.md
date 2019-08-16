@@ -1,21 +1,21 @@
 ---
-title: dispinterface (C++ COM özniteliği)
+title: dispınterface (C++ com özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.dispinterface
 helpviewer_keywords:
 - dispinterface attribute
 ms.assetid: 61c5a4a1-ae92-47e9-8ee4-f847be90172b
-ms.openlocfilehash: 6fd5010dc20d03c518206d81919e3beafbcaa9a9
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 6360c5e97eae19d7b2d74b3b43d4feae07d4b091
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64346298"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69501621"
 ---
 # <a name="dispinterface"></a>dispinterface
 
-Bir arabirim gönderme arabirimi olarak .idl dosyasına yerleştirir.
+Bir arabirimi. IDL dosyasına bir dağıtım arabirimi olarak koyar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -25,22 +25,22 @@ Bir arabirim gönderme arabirimi olarak .idl dosyasına yerleştirir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Zaman **dispinterface** C++ özniteliği önündeki bir arabirim, oluşturulan .idl dosyasındaki kitaplığı bloğunun yerleştirilecek arabirimi neden olur.
+**Dispınterface** C++ özniteliği bir arabirimden önce olduğunda, arabirimin oluşturulan. IDL dosyasındaki kitaplık bloğunun içine yerleştirilmesine neden olur.
 
-Dağıtım arabirimi türetilir bir temel sınıf belirtmediğiniz sürece `IDispatch`. Belirtmelisiniz bir [kimliği](id.md) gönderme arabirimin üyeleri için.
+Bir temel sınıf belirtmediğiniz takdirde, bir dağıtım arabirimi öğesinden `IDispatch`türetilir. Dağıtım arabiriminin üyeleri için bir [kimlik](id.md) belirtmeniz gerekir.
 
-Kullanım örneği için [dispinterface](/windows/desktop/Midl/dispinterface) MIDL belgelerinde:
+MıDL belgelerindeki [dispınterface](/windows/win32/Midl/dispinterface) için kullanım örneği:
 
 ```cpp
 dispinterface helloPro
    { interface hello; };
 ```
 
-için geçerli değil **dispinterface** özniteliği.
+, **dispınterface** özniteliği için geçerli değil.
 
 ## <a name="example"></a>Örnek
 
-Örneğin bakın [bağlanabilir](bindable.md) nasıl kullanılacağına ilişkin bir örnek **dispinterface**.
+**Dispınterface**'in nasıl [](bindable.md) kullanılacağına ilişkin örnek için bkz.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -48,12 +48,12 @@ için geçerli değil **dispinterface** özniteliği.
 
 |||
 |-|-|
-|**İçin geçerlidir**|**interface**|
+|**Uygulama hedefi**|**interface**|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|Yok.|
+|**Gerekli öznitelikler**|Yok.|
 |**Geçersiz öznitelikler**|`dual`, `object`, `oleautomation`, `local`, `ms_union`|
 
-Daha fazla bilgi için [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
+Daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

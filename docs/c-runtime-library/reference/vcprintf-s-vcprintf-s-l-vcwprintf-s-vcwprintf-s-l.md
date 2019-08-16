@@ -43,19 +43,19 @@ helpviewer_keywords:
 - vtcprintf_s function
 - formatted text [C++]
 ms.assetid: 5a46d45a-30db-45df-9850-455cbdac5636
-ms.openlocfilehash: e27018d02c8fb77b0e2a1c02164d3b6d112448ab
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ccd346141db9f4974ee5f9300792260bf2a8ec72
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62365357"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69499322"
 ---
-# <a name="vcprintfs-vcprintfsl-vcwprintfs-vcwprintfsl"></a>_vcprintf_s, _vcprintf_s_l, _vcwprintf_s, _vcwprintf_s_l
+# <a name="_vcprintf_s-_vcprintf_s_l-_vcwprintf_s-_vcwprintf_s_l"></a>_vcprintf_s, _vcprintf_s_l, _vcwprintf_s, _vcwprintf_s_l
 
-Bağımsız değişkenler listesine bir işaretçi kullanarak biçimlendirilmiş çıktı konsola yazar. Bu sürümleri [_vcprintf, _vcprintf_l, _vcwprintf, _vcwprintf_l](vcprintf-vcprintf-l-vcwprintf-vcwprintf-l.md) açıklandığı gibi güvenlik geliştirmeleri vardır [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
+Bağımsız değişken listesine yönelik bir işaretçi kullanarak konsola biçimli çıktıyı yazar. [_Vcprintf, _vcprintf_l, _vcwprintf, _vcwprintf_l](vcprintf-vcprintf-l-vcwprintf-vcwprintf-l.md) 'in bu sürümleri [CRT 'daki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklandığı gibi güvenlik geliştirmeleri içerir.
 
 > [!IMPORTANT]
-> Bu API, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -82,47 +82,47 @@ int _vcwprintf_s_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*Biçim*<br/>
+*format*<br/>
 Biçim belirtimi.
 
 *argptr*<br/>
-Bağımsız değişkenler listesine işaretçi.
+Bağımsız değişken listesi işaretçisi.
 
-*Yerel ayar*<br/>
+*ayarlar*<br/>
 Kullanılacak yerel ayar.
 
-Daha fazla bilgi için [biçim belirtim Sözdizimi: printf ve wprintf işlevleri](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).
+Daha fazla bilgi için bkz. [Biçim belirtimi sözdizimi: printf ve wprintf işlevleri](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Yazılan karakter sayısını veya bir hata oluştuğunda negatif bir değer.
+Bir çıkış hatası oluşursa, yazılan karakterlerin sayısı veya negatif bir değer.
 
-Bu işlevlerin daha az güvenli sürümleri gibi *biçimi* null bir işaretçiyse, açıklanan şekilde geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Ayrıca, bu işlevlerin daha az güvenli sürümlerinin aksine, *biçimi* geçerli bir biçim belirtmiyor geçersiz parametre özel durum oluşturulur. Devam etmek için bu işlevler bir hata kodu döndürür ve kümesi yürütülmesine izin veriliyorsa **errno** bu hata kodu. Varsayılan hata kodu **EINVAL** daha belirli bir değer geçerli değilse.
+Bu işlevlerin daha az güvenli sürümleri gibi, *Biçim* null Işaretçisiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Ayrıca, bu işlevlerin daha az güvenli sürümlerinden farklı olarak, *Biçim* geçerli bir biçim belirtmezse geçersiz bir parametre özel durumu oluşturulur. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler bir hata kodu döndürür ve **errno** öğesini bu hata koduna ayarlar. Varsayılan hata kodu, daha belirli bir değer uygulanmadığından, **EINVAL** .
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevlerin her biri bir bağımsız değişken listesi için bir işaretçi alır ve ardından biçimlendirir ve konsola verilen verileri yazar. **_vcwprintf_s** öğesinin geniş karakterli sürümüdür **_vcprintf_s**. İşlem, bir geniş karakter dizesi bağımsız değişken olarak alır.
+Bu işlevlerin her biri bağımsız değişken listesi için bir işaretçi alır ve sonra verilen verileri biçimlendirir ve konsola yazar. **_vcwprintf_s** , **_vcprintf_s**öğesinin geniş karakterli sürümüdür. Bağımsız değişken olarak geniş karakterli bir dize alır.
 
-Sahip bu işlevlerin sürümleri **_l** sonekine dışında geçerli yerel ayarı yerine iletilen yerel ayar parametresini kullanırlar.
+**_L** sonekine sahip bu işlevlerin sürümleri, geçerli yerel ayar yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır.
 
 > [!IMPORTANT]
-> Emin *biçimi* kullanıcı tanımlı bir dize değil. Daha fazla bilgi için [arabellek taşmalarını](/windows/desktop/SecBP/avoiding-buffer-overruns).
+> *Biçimin* Kullanıcı tanımlı bir dize olmadığından emin olun. Daha fazla bilgi için bkz. [arabellek taşmalarını önleme](/windows/win32/SecBP/avoiding-buffer-overruns).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_vtcprintf_s**|**_vcprintf_s**|**_vcprintf_s**|**_vcwprintf_s**|
 |**_vtcprintf_s_l**|**_vcprintf_s_l**|**_vcprintf_s_l**|**_vcwprintf_s_l**|
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli başlık|İsteğe bağlı üst bilgiler|
+|Yordam|Gerekli başlık|İsteğe bağlı üstbilgiler|
 |-------------|---------------------|----------------------|
-|**_vcprintf_s**, **_vcprintf_s_l**|\<conio.h > ve \<stdarg.h >|\<XENIX > *|
-|**_vcwprintf_s**, **_vcwprintf_s_l**|\<conio.h > veya \<wchar.h >, ve \<stdarg.h >|\<XENIX > *|
+|**_vcprintf_s**, **_vcprintf_s_l**|\<conio. h > ve \<stdarg. h >|\<varargs. h > *|
+|**_vcwprintf_s**, **_vcwprintf_s_l**|\<conio. h > veya \<wchar. h > ve \<stdarg. h >|\<varargs. h > *|
 
-\* UNIX V uyumluluğu için gerekli.
+\*UNIX V uyumluluğu için gereklidir.
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -159,7 +159,7 @@ int main()
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Stream g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [vprintf İşlevleri](../../c-runtime-library/vprintf-functions.md)<br/>
 [_cprintf, _cprintf_l, _cwprintf, _cwprintf_l](cprintf-cprintf-l-cwprintf-cwprintf-l.md)<br/>
 [fprintf, _fprintf_l, fwprintf, _fwprintf_l](fprintf-fprintf-l-fwprintf-fwprintf-l.md)<br/>

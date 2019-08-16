@@ -12,16 +12,16 @@ helpviewer_keywords:
 - CSharedFile [MFC], Detach
 - CSharedFile [MFC], SetHandle
 ms.assetid: 5d000422-9ede-4318-a8c9-f7412b674f39
-ms.openlocfilehash: 0a9bbf3072a665c04501025d421839fa90a37225
-ms.sourcegitcommit: 6cf0c67acce633b07ff31b56cebd5de3218fd733
+ms.openlocfilehash: 74a34ec169868d3e28f78f33da38dbda21ef23b3
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "67344417"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69502608"
 ---
 # <a name="csharedfile-class"></a>CSharedFile sınıfı
 
-[CMemFile](../../mfc/reference/cmemfile-class.md)-paylaşılan bellek dosyalarını destekleyen türetilmiş bir sınıf.
+Paylaşılan bellek dosyalarını destekleyen [CMemFile](../../mfc/reference/cmemfile-class.md)ile türetilmiş sınıf.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -35,28 +35,28 @@ class CSharedFile : public CMemFile
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CSharedFile::CSharedFile](#csharedfile)|Oluşturur bir `CSharedFile` nesne.|
+|[CSharedFile:: CSharedFile](#csharedfile)|Bir `CSharedFile` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CSharedFile::Detach](#detach)|Paylaşılan bellek dosyayı kapatır ve kendi bellek bloğu tanıtıcısını döndürür.|
-|[CSharedFile::SetHandle](#sethandle)|Paylaşılan bellek dosyasına bir bellek bloğuna ekler.|
+|[CSharedFile::D etach](#detach)|Paylaşılan bellek dosyasını kapatır ve bellek bloğunun tanıtıcısını döndürür.|
+|[CSharedFile:: SetHandle](#sethandle)|Paylaşılan bellek dosyasını bir bellek bloğuna iliştirir.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bellek dosyalarını disk dosyaları gibi davranır. Fark, bir bellek dosyası RAM yerine diskte depolanır. Bellek dosyasını ham bayt aktarma veya hızlı bir geçici depolama için kullanışlı veya bağımsız işlemler arasında nesneleri seri hale getirilmiş.
+Bellek dosyaları disk dosyaları gibi davranır. Fark, bir bellek dosyasının disk yerine RAM 'e depolanmasıdır. Bellek dosyası hızlı geçici depolama için veya bağımsız süreçler arasında ham baytları veya seri hale getirilmiş nesnelerin aktarılması için yararlıdır.
 
-Paylaşılan bellek dosyalarını, bunlar için bellek ile ayrılır, diğer bellek dosyalarından farklı [GlobalAlloc](/windows/desktop/api/winbase/nf-winbase-globalalloc) Windows işlevi. `CSharedFile` Sınıfı bir küresel olarak ayrılan bellek bloğu içinde verileri depolar (kullanılarak oluşturulan `GlobalAlloc`), bu bellek bloğunda DDE, Pano veya diğer OLE/COM Tekdüzen veri aktarımı işlemleri, örneğin, kullanarak kullanarak paylaşılabilir `IDataObject`.
+Paylaşılan bellek dosyaları, [GlobalAlloc](/windows/win32/api/winbase/nf-winbase-globalalloc) Windows işleviyle ayrılmaları için bellekteki diğer bellek dosyalarından farklıdır. Sınıfı, verileri genel olarak ayrılmış bir bellek bloğunda (kullanılarak `GlobalAlloc`oluşturulur) depolar ve bu bellek bloğu, örneğin kullanarak `IDataObject`DDE, pano veya diğer ole/com Tekdüzen veri aktarımı işlemleri kullanılarak paylaşılabilir. `CSharedFile`
 
-`GlobalAlloc` bir HGLOBAL işlemek yerine tarafından döndürülen işaretçi gibi bir bellek işaretçi döndürür [malloc](../../c-runtime-library/reference/malloc.md). Belirli uygulamalarda HGLOBAL işleyicisini gereklidir. Örneğin, verileri Pano'ya yerleştirme HGLOBAL işleyicisini gerekir.
+`GlobalAlloc`[malloc](../../c-runtime-library/reference/malloc.md)tarafından döndürülen işaretçi gibi bir bellek işaretçisi yerıne BIR HGLOBAL tanıtıcı döndürür. HGLOBAL tanıtıcısı belirli uygulamalarda gereklidir. Örneğin, panoya veri koymak için bir HGLOBAL tanıtıcısı gerekir.
 
-`CSharedFile` bellek eşlemeli dosyaları kullan ve verileri doğrudan işlemler arasında paylaşılamaz değil.
+`CSharedFile`bellekle eşlenen dosyaları kullanmaz ve veriler doğrudan süreçler arasında paylaştırılamaz.
 
-`CSharedFile` nesneleri otomatik olarak kendi bellek ayırabilirsiniz. Veya kendi bellek bloğuna eklediğiniz `CSharedFile` çağırarak [CSharedFile::SetHandle](#sethandle). Her iki durumda da, bellek dosyası otomatik olarak büyüyen için bellek tahsis edilmez `nGrowBytes`-Artımlar, boyutlandırılmış `nGrowBytes` sıfır değil.
+`CSharedFile`nesneler, kendi belleğini otomatik olarak ayırabilir. Ya da, [CSharedFile:: SetHandle](#sethandle)öğesini `CSharedFile` çağırarak kendi bellek blobunu nesnesine ekleyebilirsiniz. Her iki durumda da, sıfır `nGrowBytes` `nGrowBytes` değilse bellek dosyası otomatik olarak büyümeye yönelik bellek, boyutlandırılmış artışlarla ayrılır.
 
-Daha fazla bilgi için bkz [MFC'deki dosyalar](../../mfc/files-in-mfc.md) ve [dosya işleme](../../c-runtime-library/file-handling.md) içinde *çalışma zamanı kitaplığı başvurusu*.
+Daha fazla bilgi için bkz. [MFC 'Deki dosyalar](../../mfc/files-in-mfc.md) ve *çalışma zamanı kitaplığı başvurusunda* [Dosya işleme](../../c-runtime-library/file-handling.md) .
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -70,11 +70,11 @@ Daha fazla bilgi için bkz [MFC'deki dosyalar](../../mfc/files-in-mfc.md) ve [do
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxadv.h
+**Üstbilgi:** afxadv. h
 
-##  <a name="csharedfile"></a>  CSharedFile::CSharedFile
+##  <a name="csharedfile"></a>CSharedFile:: CSharedFile
 
-Oluşturur bir `CSharedFile` nesne ve onun için bellek ayırır.
+Bir `CSharedFile` nesne oluşturur ve bellek ayırır.
 
 ```
 CSharedFile(
@@ -85,14 +85,14 @@ CSharedFile(
 ### <a name="parameters"></a>Parametreler
 
 *nAllocFlags*<br/>
-Nasıl ayrılacak bellek olduğunu belirten bayrak. Bkz: [GlobalAlloc](/windows/desktop/api/winbase/nf-winbase-globalalloc) geçerli bayrak değerleri listesi.
+Belleğin nasıl ayrılacağını gösteren Bayraklar. Geçerli bayrak değerlerinin listesi için bkz. [GlobalAlloc](/windows/win32/api/winbase/nf-winbase-globalalloc) .
 
 *nGrowBytes*<br/>
-Bayt cinsinden bellek ayırma artırma.
+Bayt cinsinden bellek ayırma artışı.
 
-##  <a name="detach"></a>  CSharedFile::Detach
+##  <a name="detach"></a>CSharedFile::D etach
 
-Bellek dosyayı kapatın ve bellek bloğundan ayırmak için bu işlevi çağırın.
+Bellek dosyasını kapatmak ve bellek bloğundan ayırmak için bu işlevi çağırın.
 
 ```
 HGLOBAL Detach();
@@ -100,15 +100,15 @@ HGLOBAL Detach();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bellek dosyasının içeriğini içeren bellek bloğu tanıtıcısı.
+Bellek dosyasının içeriğini içeren bellek bloğunun tanıtıcısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağırarak yeniden açabilirsiniz [SetHandle](#sethandle), tarafından döndürülen tanıtıcı kullanmanın **ayırma**.
+**Ayırma**ile döndürülen tanıtıcıyı kullanarak [SetHandle](#sethandle)çağırarak yeniden açabilirsiniz.
 
-##  <a name="sethandle"></a>  CSharedFile::SetHandle
+##  <a name="sethandle"></a>CSharedFile:: SetHandle
 
-İçin genel bellek bloğu eklemek için bu işlevi çağırın `CSharedFile` nesne.
+`CSharedFile` Nesneye bir genel bellek bloğu iliştirmek için bu işlevi çağırın.
 
 ```
 void SetHandle(
@@ -119,14 +119,14 @@ void SetHandle(
 ### <a name="parameters"></a>Parametreler
 
 *hGlobalMemory*<br/>
-Tanıtıcı eklenmesi için genel bellek `CSharedFile`.
+Öğesine eklenecek genel belleği işleyin `CSharedFile`.
 
 *bAllowGrow*<br/>
-Bellek bloğu büyümesine izin verilip verilmediğini belirtir.
+Bellek bloğunun büyümesine izin verilip verilmeyeceğini belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsa *bAllowGrow* olduğundan daha fazla bayt bellek blok boyutu dosya yazma denerseniz, sıfır olmayan, bellek blok boyutu gerektiği şekilde, örneğin, artırılır.
+*BAllowGrow* sıfırdan büyükse, bellek bloğunun boyutu gerektiği gibi artar, örneğin, dosyaya bellek bloğunun boyutundan daha fazla bayt yazmayı denerseniz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

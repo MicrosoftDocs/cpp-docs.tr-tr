@@ -28,16 +28,16 @@ helpviewer_keywords:
 - CScrollView [MFC], SetScaleToFitSize
 - CScrollView [MFC], SetScrollSizes
 ms.assetid: 4ba16dac-1acb-4be0-bb55-5fb695b6948d
-ms.openlocfilehash: d60082092bd42fbe220eee08953ad5fda0ff0a85
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: b89daaae4bb578d328e1468cc29470825e19c670
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64339593"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69502599"
 ---
 # <a name="cscrollview-class"></a>CScrollView sınıfı
 
-A [CView](../../mfc/reference/cview-class.md) kaydırma özelliğine sahip.
+Kaydırma özelliklerine sahip bir [CView](../../mfc/reference/cview-class.md) .
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -51,58 +51,58 @@ class CScrollView : public CView
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CScrollView::CScrollView](#cscrollview)|Oluşturur bir `CScrollView` nesne.|
+|[CScrollView:: CScrollView](#cscrollview)|Bir `CScrollView` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CScrollView::CheckScrollBars](#checkscrollbars)|Kaydırma görünümü yatay ve dikey kaydırma çubuğu olup olmadığını gösterir.|
-|[CScrollView::FillOutsideRect](#filloutsiderect)|Kaydırma alanının dışına görünüm alanı doldurur.|
-|[CScrollView::GetDeviceScrollPosition](#getdevicescrollposition)|Cihaz birimi geçerli kaydırma konumunu alır.|
-|[CScrollView::GetDeviceScrollSizes](#getdevicescrollsizes)|Geçerli eşleme modu, toplam boyutu ve kaydırılabilir görünümü satır ve sayfa boyutunu alır. Cihaz birimlerinde boyutlarıdır.|
-|[CScrollView::GetScrollPosition](#getscrollposition)|Mantıksal birimler cinsinden geçerli kaydırma konumunu alır.|
-|[CScrollView::GetTotalSize](#gettotalsize)|Mantıksal birimler cinsinden kaydırma görünümün toplam boyutunu alır.|
-|[CScrollView::ResizeParentToFit](#resizeparenttofit)|Çerçevesini boyutunu söylemesi görünümün boyutunu neden olur.|
-|[CScrollView::ScrollToPosition](#scrolltoposition)|Mantıksal birimler cinsinden belirtilen belirli bir noktaya görünümüne kaydırır.|
-|[CScrollView::SetScaleToFitSize](#setscaletofitsize)|Kaydırma görünümü, Ölçek uygun moduna geçirir.|
-|[CScrollView::SetScrollSizes](#setscrollsizes)|Kaydırma görünümün eşleme modu, toplam boyutu ve yatay ve dikey kaydırma miktarları ayarlar.|
+|[CScrollView:: CheckScrollBars](#checkscrollbars)|Kaydırma görünümünün yatay ve dikey kaydırma çubuklarına sahip olup olmadığını gösterir.|
+|[CScrollView:: FillOutsideRect](#filloutsiderect)|Bir görünümün alanını kaydırma alanı dışında doldurur.|
+|[CScrollView:: GetDeviceScrollPosition](#getdevicescrollposition)|Cihaz birimlerindeki geçerli kaydırma konumunu alır.|
+|[CScrollView:: GetDeviceScrollSizes](#getdevicescrollsizes)|Geçerli eşleme modunu, toplam boyutunu ve kaydırılabilir görünümün çizgi ve sayfa boyutlarını alır. Boyutlar, cihaz birimleridir.|
+|[CScrollView:: GetScrollPosition](#getscrollposition)|Mantıksal birimlerde geçerli kaydırma konumunu alır.|
+|[CScrollView:: GetTotalSize](#gettotalsize)|Mantıksal birimlerde kaydırma görünümünün toplam boyutunu alır.|
+|[CScrollView:: ResizeParentToFit](#resizeparenttofit)|Görünümün boyutunun Çerçevenin boyutunu dikte etmesine neden olur.|
+|[CScrollView:: ScrollToPosition](#scrolltoposition)|Görünümü mantıksal birimlerde belirtilen belirli bir noktaya kaydırır.|
+|[CScrollView:: SetScaleToFitSize](#setscaletofitsize)|Kaydırma görünümünü ölçeklendirme moduna geçirir.|
+|[CScrollView:: Setscrollboyutlar](#setscrollsizes)|Kaydırma görünümünün eşleme modunu, toplam boyutunu, yatay ve dikey kaydırma tutarlarını ayarlar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Standart kendiniz türetilen herhangi bir sınıf kaydırma işleyebilir `CView` ileti eşlemeli kılarak [OnHScroll](../../mfc/reference/cwnd-class.md#onhscroll) ve [OnVScroll](../../mfc/reference/cwnd-class.md#onvscroll) üye işlevleri. Ancak `CScrollView` için aşağıdaki özellikleri ekler, `CView` özellikleri:
+İleti eşlemeli [OnHScroll](../../mfc/reference/cwnd-class.md#onhscroll) ve [OnVScroll](../../mfc/reference/cwnd-class.md#onvscroll) üye işlevlerini `CView` geçersiz kılarak, kendi içinden türetilmiş herhangi bir sınıfta standart kaydırmayı işleyebilirsiniz. Ancak `CScrollView` `CView` özelliklerine aşağıdaki özellikleri ekler:
 
-- Bu pencere ve Görünüm penceresi boyutları ve eşleme modları yönetir.
+- Pencere ve Görünüm penceresi boyutlarını ve eşleme modlarını yönetir.
 
-- Otomatik kaydırma çubuğu iletilere yanıt olarak kaydırır.
+- Kaydırma çubuğu iletilerine yanıt olarak otomatik olarak kayar.
 
-- Klavye, fare kaydırma olmayan ya da IntelliMouse tekerleğini yanıt iletilerine otomatik olarak kayar.
+- Klavyeden, kaydırılmayan bir fare veya IntelliMouse tekerindeki iletilere yanıt olarak otomatik olarak kayar.
 
-Klavye yanıt iletilerine otomatik olarak kaydırmak için WM_KEYDOWN iletisi ekleyin ve test VK_DOWN, VK_PREV ve çağrı [SetScrollPos](/windows/desktop/api/winuser/nf-winuser-setscrollpos).
+Klavyeden gelen iletilere yanıt olarak otomatik olarak kaydırmak için, bir WM_KEYDOWN iletisi ekleyin ve VK_DOWN, VK_PREV için test edin ve [SetScrollPos](/windows/win32/api/winuser/nf-winuser-setscrollpos)'u çağırın.
 
-Fare tekerleği kendiniz ileti eşlemeli geçersiz kılarak kaydırma işleyebilir [OnMouseWheel](../../mfc/reference/cwnd-class.md#onmousewheel) ve [OnRegisteredMouseWheel](../../mfc/reference/cwnd-class.md#onregisteredmousewheel) üye işlevleri. İçin oldukları gibi `CScrollView`, bu üye işlevleri desteklemek için önerilen davranışı [WM_MOUSEWHEEL](/windows/desktop/inputdev/wm-mousewheel), tekerlek döndürme ileti.
+İleti eşlemeli [OnMouseWheel](../../mfc/reference/cwnd-class.md#onmousewheel) ve [OnRegisteredMouseWheel](../../mfc/reference/cwnd-class.md#onregisteredmousewheel) member işlevlerini geçersiz kılarak fare tekerleğini kaydırmayı kendiniz de işleyebilirsiniz. İçin `CScrollView`, bu üye işlevleri, tekerlek döndürme iletisi olan [wm_mousewheel](/windows/win32/inputdev/wm-mousewheel)için önerilen davranışı destekler.
 
-Otomatik kaydırma avantajından yararlanmak için görünümü sınıfından türetilen `CScrollView` yerine gelen `CView`. Görünüm ilk oluşturulduğunda, belge, çağrı boyutuna göre kaydırılabilir görünümü boyutunu hesaplamak isterseniz `SetScrollSizes` kılacağınızı ya da üye işlev [CView::OnInitialUpdate](../../mfc/reference/cview-class.md#oninitialupdate) veya [ CView::OnUpdate](../../mfc/reference/cview-class.md#onupdate). (Belgenin boyutunu sorgulamak için kendi kodunuzu yazmanız gerekir. Bir örnek için bkz. [Scribble örneğinin](../../overview/visual-cpp-samples.md).)
+Otomatik kaydırmanın avantajlarından yararlanmak için, from `CScrollView` `CView`yerine ' den görünüm sınıfınızı türetebilirsiniz. Görünüm ilk oluşturulduğunda, belge boyutuna bağlı olarak kaydırılabilir görünümün boyutunu hesaplamak istiyorsanız, `SetScrollSizes` [CView:: OnInitialUpdate](../../mfc/reference/cview-class.md#oninitialupdate) veya [CView:: OnUpdate](../../mfc/reference/cview-class.md#onupdate)' in geçersiz kılınınızdan üye işlevini çağırın. (Belgenin boyutunu sorgulamak için kendi kodunuzu yazmanız gerekir. Bir örnek için bkz. [karalama örneği](../../overview/visual-cpp-samples.md).)
 
-Çağrı `SetScrollSizes` üye işlevi, görünümün eşleme modu, kaydırma görünümü ve yatay ve dikey kaydırma tutarlarının toplam boyutunu ayarlar. Tüm boyutlarda mantıksal birimler cinsinden. Bu görünüm mantıksal boyutu genellikle belge içinde depolanan verilerden hesaplanır, ancak bazı durumlarda bir sabit boyut belirtmek isteyebilirsiniz. Her iki yaklaşım örnekleri için bkz: [CScrollView::SetScrollSizes](#setscrollsizes).
+`SetScrollSizes` Üye işlevine yapılan çağrı görünümün eşleme modunu, kaydırma görünümünün toplam boyutlarını ve yatay ve dikey olarak kaydırmak için miktarları ayarlar. Tüm boyutlar mantıksal birimlerde bulunur. Görünümün mantıksal boyutu genellikle belgede depolanan verilerden hesaplanır, ancak bazı durumlarda sabit bir boyut belirtmek isteyebilirsiniz. Her iki yaklaşımın örnekleri için bkz. [CScrollView:: Setscrollboyutlar](#setscrollsizes).
 
-Mantıksal birimler cinsinden yatay ve dikey kaydırma tutarlarının belirtirsiniz. Varsayılan olarak kullanıcının kaydırma kutusunun dışında bir kaydırma çubuğu mil tıklarsa `CScrollView` kayan bir "sayfası." Kullanıcı her iki ucunda bir kaydırma çubuğunun kaydırma oku tıklarsa `CScrollView` kayan "satırı." Varsayılan olarak, bir sayfa 1/10 görünümün toplam boyutunu olur; Sayfa boyutu 1/10 satırıdır. Özel boyutlarında geçirerek bu varsayılan değerleri geçersiz kılmak `SetScrollSizes` üye işlevi. Örneğin, yatay boyutunu toplam boyutu ve bir satırın yüksekliğini dikey boyutuna genişliğinin süreliğine için geçerli yazı tipini ayarlayabilirsiniz.
+Mantıksal birimlerde yatay ve dikey olarak kaydırmak için miktarları belirtirsiniz. Varsayılan olarak, Kullanıcı kaydırma kutusunun dışında bir kaydırma çubuğu Shaft tıkladığında, `CScrollView` bir "sayfa" kaydırır. Kullanıcı, kaydırma çubuğunun iki ucundaki bir kaydırma okuna tıkladığında, `CScrollView` bir "Line" kaydırır. Varsayılan olarak, bir sayfa, görünümün toplam boyutunun 1/10 ' dir; sayfa boyutunun 1/10 bir satırı vardır. Bu varsayılan değerleri, `SetScrollSizes` üye işlevindeki özel boyutları geçirerek geçersiz kılın. Örneğin, yatay boyutunu toplam boyut genişliğinin bir kesirine ve dikey boyutun geçerli yazı tipindeki bir satırın yüksekliğine kadar olan boyutunu ayarlayabilirsiniz.
 
-Dikey kaydırma yerine `CScrollView` pencere boyutunu geçerli görünüme otomatik olarak ölçeklendirebilirsiniz. Bu modda, kaydırma çubukları görünümü vardır ve mantıksal görünümü esnetildiğini veya pencerenin istemci alanını tam olarak sığması için küçültülebilir. Bu ölçek uygun özellikten yararlanabilmek için çağrı [CScrollView::SetScaleToFitSize](#setscaletofitsize). (Çağırın ya da `SetScaleToFitSize` veya `SetScrollSizes`, ikisini birden belirtmeyin.)
+Kaydırma yerine, `CScrollView` görünümü otomatik olarak geçerli pencere boyutuna ölçeklendirebilir. Bu modda, görünümün bir kaydırma çubuğu yoktur ve mantıksal görünüm, pencerenin istemci alanına tam olarak sığacak şekilde uzatılır veya daraltıladır. Bu ölçeğe uyacak özelliği kullanmak için [CScrollView:: SetScaleToFitSize](#setscaletofitsize)çağırın. (Ya `SetScaleToFitSize` `SetScrollSizes`da ' i çağırın, ancak ikisini birden değil.)
 
-Önce `OnDraw` türetilmiş görünüm sınıfının üye işlevi çağrıldığında `CScrollView` otomatik olarak görünüm penceresinin başlangıç noktasını ayarlar `CPaintDC` geçirir, cihaz bağlamındaki nesne `OnDraw`.
+Türetilmiş Görünüm sınıfınızın `CScrollView` `CPaintDC` `OnDraw`üye işlevine çağrılmadan önce, geçiş yaptığı cihaz bağlamı nesnesinin Görünüm penceresini otomatik olarak ayarlar. `OnDraw`
 
-Kayan pencere, Görünüm penceresi başlangıcı ayarlamak için `CScrollView` geçersiz kılmalar [CView::OnPrepareDC](../../mfc/reference/cview-class.md#onpreparedc). Bu düzeltme için otomatik `CPaintDC` cihaz bağlamı, `CScrollView` geçirir `OnDraw`, ancak çağırmalısınız `CScrollView::OnPrepareDC` kendiniz herhangi bir cihaz bağlamları, gibi kullandığınız bir `CClientDC`. Geçersiz kılabilirsiniz `CScrollView::OnPrepareDC` Kalem, arka plan rengi ve diğer çizim öznitelikleri ayarlanmasına, ancak ölçeklendirme yapmak için temel sınıfı çağırın.
+Kayan pencerenin `CScrollView` görünüm penceresinin kaynağını ayarlamak için [CView:: onhazırlık EDC](../../mfc/reference/cview-class.md#onpreparedc)geçersiz kılar. `CPaintDC` Bu ayarlama `OnDraw`, ' a `CScrollView::OnPrepareDC` `CScrollView` geçişyapancihazbağlamıiçinotomatiktir,ancaksizingibikullandığınızdiğercihazbağlamlarıiçinkendikendinizeçağrıyapmanızgerekir.`CClientDC` Kalemi, arka `CScrollView::OnPrepareDC` plan rengini ve diğer çizim özniteliklerini ayarlamak için geçersiz kılabilirsiniz, ancak ölçeklendirilmesi için temel sınıfı çağırabilirsiniz.
 
-Kaydırma çubukları aşağıdaki durumlarda gösterildiği gibi bir görünüm göre üç yerde görünebilir:
+Aşağıdaki durumlarda gösterildiği gibi, kaydırma çubukları bir görünüme göre üç yerde görünebilir:
 
-- WS_HSCROLL ve WS_VSCROLL kullanarak görünüm için standart pencere stili kaydırma çubukları ayarlanabilir[Windows stilleri](../../mfc/reference/styles-used-by-mfc.md#window-styles).
+- WS_HSCROLL ve WS_VSCROLL[Windows stillerini](../../mfc/reference/styles-used-by-mfc.md#window-styles)kullanarak görünüm için standart pencere stili kaydırma çubukları ayarlanabilir.
 
-- Kaydırma çubuğu denetimleri de görünümü içeren çerçevenin eklenebilir, bu durumda framework WM_HSCROLL ve WM_VSCROLL iletileri: çerçeve penceresinde şu anda etkin görünüme iletir.
+- Kaydırma çubuğu denetimleri, görünümü içeren çerçeveye da eklenebilir, bu durumda Framework çerçeve penceresinden WM_HSCROLL ve WM_VSCROLL iletilerini Şu anda etkin görünüme iletir.
 
-- Framework ayrıca iletir kaydırma gelen iletileri bir `CSplitterWnd` Bölümlendirici denetimi şu anda etkin Bölümlendirici bölmesine (Görünüm). Konumlandırıldığında bir [CSplitterWnd](../../mfc/reference/csplitterwnd-class.md) paylaşılan kaydırma çubuklu bir `CScrollView` nesne kendi oluşturmak yerine paylaşılan olanları kullanır.
+- Çerçeve ayrıca, bir `CSplitterWnd` Splitter denetimindeki kaydırma iletilerini Şu anda etkin olan Bölümlendirici bölmesine (bir görünüm) iletir. Paylaşılan kaydırma çubuklarıyla bir [CSplitterWnd](../../mfc/reference/csplitterwnd-class.md) 'e yerleştirildiğinde, bir `CScrollView` nesne kendi kendine oluşturulması yerine paylaşılan olanları kullanacaktır.
 
-Kullanma hakkında daha fazla bilgi için `CScrollView`, bkz: [belge/görünüm mimarisi](../../mfc/document-view-architecture.md) ve [türetilmiş görünüm sınıfları kullanılabilir MFC'de](../../mfc/derived-view-classes-available-in-mfc.md).
+Kullanma `CScrollView`hakkında daha fazla bilgi için bkz. MFC 'de kullanılabilen [belge/görünüm mimarisi](../../mfc/document-view-architecture.md) ve [türetilmiş Görünüm sınıfları](../../mfc/derived-view-classes-available-in-mfc.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -118,11 +118,11 @@ Kullanma hakkında daha fazla bilgi için `CScrollView`, bkz: [belge/görünüm 
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxwin.h
+**Üstbilgi:** Afxwin. h
 
-##  <a name="checkscrollbars"></a>  CScrollView::CheckScrollBars
+##  <a name="checkscrollbars"></a>CScrollView:: CheckScrollBars
 
-Kaydırma görünümü yatay ve dikey çubuklar olup olmadığını belirlemek için bu üye işlevini çağırın.
+Kaydırma görünümünün yatay ve dikey çubuklara sahip olup olmadığını anlamak için bu üye işlevini çağırın.
 
 ```
 void CheckScrollBars(
@@ -132,15 +132,15 @@ void CheckScrollBars(
 
 ### <a name="parameters"></a>Parametreler
 
-*bHasHorzBar*<br/>
-Uygulama bir yatay kaydırma çubuğu olduğunu gösterir.
+*Bhakısalzbar*<br/>
+Uygulamanın yatay kaydırma çubuğu olduğunu gösterir.
 
 *bHasVertBar*<br/>
-Uygulama dikey kaydırma çubuğu olduğunu gösterir.
+Uygulamanın dikey bir kaydırma çubuğu olduğunu gösterir.
 
-##  <a name="cscrollview"></a>  CScrollView::CScrollView
+##  <a name="cscrollview"></a>CScrollView:: CScrollView
 
-Oluşturur bir `CScrollView` nesne.
+Bir `CScrollView` nesnesi oluşturur.
 
 ```
 CScrollView();
@@ -148,11 +148,11 @@ CScrollView();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ya da çağırmalıdır `SetScrollSizes` veya `SetScaleToFitSize` önce kaydırma görünümü kullanılamaz.
+Kaydırma görünümü kullanılabilir olmadan `SetScrollSizes` önce `SetScaleToFitSize` ya da ' i çağırmanız gerekir.
 
-##  <a name="filloutsiderect"></a>  CScrollView::FillOutsideRect
+##  <a name="filloutsiderect"></a>CScrollView:: FillOutsideRect
 
-Çağrı `FillOutsideRect` kaydırma alanının dışında görünen görünümün alanı dolduracak şekilde.
+Görünümün `FillOutsideRect` , kaydırma alanının dışında görünen alanını doldurmasını sağlayan çağrı.
 
 ```
 void FillOutsideRect(
@@ -162,23 +162,23 @@ void FillOutsideRect(
 
 ### <a name="parameters"></a>Parametreler
 
-*pDC*<br/>
-Doldurma yapılacak olan cihaz bağlamı.
+*Kökündeki*<br/>
+Doldurmanın yapılacağı cihaz bağlamı.
 
 *pBrush*<br/>
-Fırça ile doldurulacak bir alandır.
+Alanın doldurulması gereken fırça.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanım `FillOutsideRect` kaydırma görünümünüzün içinde `OnEraseBkgnd` aşırı arka plan yeniden çizerken önlemek için işleyici işlevi.
+Aşırı `FillOutsideRect` arka plan arkalenmesini engellemek `OnEraseBkgnd` için kaydırma görünümlerinizin işleyici işlevinde kullanın.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDocView#164](../../mfc/codesnippet/cpp/cscrollview-class_1.cpp)]
 
-##  <a name="getdevicescrollposition"></a>  CScrollView::GetDeviceScrollPosition
+##  <a name="getdevicescrollposition"></a>CScrollView:: GetDeviceScrollPosition
 
-Çağrı `GetDeviceScrollPosition` geçerli yatay ve dikey konumlarını Kaydırma kutusu içinde kaydırma çubukları gerektiğinde.
+Kaydırma `GetDeviceScrollPosition` çubuklarındaki kaydırma kutularının geçerli yatay ve dikey konumlarına ihtiyacınız olduğunda çağrı yapın.
 
 ```
 CPoint GetDeviceScrollPosition() const;
@@ -186,17 +186,17 @@ CPoint GetDeviceScrollPosition() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yatay ve dikey konumda (cihaz birimleri) Kaydırma kutusu bir `CPoint` nesne.
+Kaydırma kutularının bir `CPoint` nesne olarak yatay ve dikey konumları (cihaz birimlerinde).
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu koordinat çifti görünümünün sol üst köşesinde kaydırılan belge içindeki konumuna karşılık gelir. Fare aygıtı konumları kaydırma görünümü cihaz konumlara mahsup için kullanışlıdır.
+Bu koordinat çifti, görünümün sol üst köşesinin kaydırılabildiği belgedeki konuma karşılık gelir. Bu, cihaz konumlarını kaydırmak için fare aygıtı konumlarının gezmek için yararlıdır.
 
-`GetDeviceScrollPosition` cihaz birimlerinde değerlerini döndürür. Mantıksal birimler istiyorsanız kullanın `GetScrollPosition` yerine.
+`GetDeviceScrollPosition`cihaz birimlerindeki değerleri döndürür. Mantıksal birimleri istiyorsanız bunun yerine kullanın `GetScrollPosition` .
 
-##  <a name="getdevicescrollsizes"></a>  CScrollView::GetDeviceScrollSizes
+##  <a name="getdevicescrollsizes"></a>CScrollView:: GetDeviceScrollSizes
 
-`GetDeviceScrollSizes` Geçerli eşleme modu, toplam boyutu ve kaydırılabilir görünümü satır ve sayfa boyutunu alır.
+`GetDeviceScrollSizes`Geçerli eşleme modunu, toplam boyutunu ve kaydırılabilir görünümün çizgi ve sayfa boyutlarını alır.
 
 ```
 void GetDeviceScrollSizes(
@@ -209,24 +209,24 @@ void GetDeviceScrollSizes(
 ### <a name="parameters"></a>Parametreler
 
 *nMapMode*<br/>
-Bu görünüm için geçerli eşleme modunu döndürür. Olası değerler listesi için bkz. `SetScrollSizes`.
+Bu görünüm için geçerli eşleme modunu döndürür. Olası değerler listesi için bkz `SetScrollSizes`.
 
-*sizeTotal*<br/>
-Kaydırma görünümü, şu anki toplam boyutu, cihaz birimleri cinsinden döndürür.
+*Toplam Boyut*<br/>
+Cihaz birimlerindeki kaydırma görünümünün geçerli toplam boyutunu döndürür.
 
 *sizePage*<br/>
-Bir kaydırma çubuğu mil her bir yönde yanıt olarak bir fare kaydırma geçerli yatay ve dikey miktarları tıklayın döndürür. `cx` Üyeyi içeren yatay tutar. `cy` Üyeyi içeren dikey tutar.
+Bir kaydırma çubuğu biçimlendirbir çubukta fare tıklamasını yanıtlamak üzere her yönde kaydırmak için geçerli yatay ve dikey miktarları döndürür. `cx` Üye yatay miktarı içerir. `cy` Üye dikey miktarı içerir.
 
 *sizeLine*<br/>
-Yanıt olarak bir fare her yönde kaydırmak için geçerli yatay ve dikey miktarları kaydırma okunu döndürür. `cx` Üyeyi içeren yatay tutar. `cy` Üyeyi içeren dikey tutar.
+Bir kaydırma okuna fare tıklaması karşılığında her bir yönde kaydırmak için geçerli yatay ve dikey miktarları döndürür. `cx` Üye yatay miktarı içerir. `cy` Üye dikey miktarı içerir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Cihaz birimlerinde boyutlarıdır. Bu üye işlev nadiren çağrılır.
+Boyutlar, cihaz birimleridir. Bu üye işlevi nadiren çağırılır.
 
-##  <a name="getscrollposition"></a>  CScrollView::GetScrollPosition
+##  <a name="getscrollposition"></a>CScrollView:: GetScrollPosition
 
-Çağrı `GetScrollPosition` geçerli yatay ve dikey konumlarını Kaydırma kutusu içinde kaydırma çubukları gerektiğinde.
+Kaydırma `GetScrollPosition` çubuklarındaki kaydırma kutularının geçerli yatay ve dikey konumlarına ihtiyacınız olduğunda çağrı yapın.
 
 ```
 CPoint GetScrollPosition() const;
@@ -234,17 +234,17 @@ CPoint GetScrollPosition() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yatay ve dikey konumda (mantıksal birimler cinsinden) Kaydırma kutusu bir `CPoint` nesne.
+Kaydırma kutularının bir `CPoint` nesne olarak yatay ve dikey konumları (mantıksal birimler cinsinden).
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu koordinat çifti görünümünün sol üst köşesinde kaydırılan belge içindeki konumuna karşılık gelir.
+Bu koordinat çifti, görünümün sol üst köşesinin kaydırılabildiği belgedeki konuma karşılık gelir.
 
-`GetScrollPosition` değerleri, mantıksal birimler cinsinden döndürür. Cihaz birimleri istiyorsanız kullanın `GetDeviceScrollPosition` yerine.
+`GetScrollPosition`mantıksal birimlerdeki değerleri döndürür. Cihaz birimleri istiyorsanız bunun yerine kullanın `GetDeviceScrollPosition` .
 
-##  <a name="gettotalsize"></a>  CScrollView::GetTotalSize
+##  <a name="gettotalsize"></a>CScrollView:: GetTotalSize
 
-Çağrı `GetTotalSize` kaydırma görünümü geçerli yatay ve dikey boyutları alınamadı.
+Kaydırma `GetTotalSize` görünümünün geçerli yatay ve dikey boyutlarını almak için çağırın.
 
 ```
 CSize GetTotalSize() const;
@@ -252,11 +252,11 @@ CSize GetTotalSize() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kaydırma görünümü mantıksal birimler cinsinden toplam boyutu. Yatay boyutu `cx` üyesi `CSize` değeri döndürür. Dikey boyutu `cy` üyesi.
+Mantıksal birimlerde kaydırma görünümünün toplam boyutu. Yatay boyut `cx` , `CSize` dönüş değerinin üyesidir. Dikey boyut `cy` üye içinde.
 
-##  <a name="resizeparenttofit"></a>  CScrollView::ResizeParentToFit
+##  <a name="resizeparenttofit"></a>CScrollView:: ResizeParentToFit
 
-Çağrı `ResizeParentToFit` görünümünüzü boyutunu, çerçeve penceresinin boyutunu dikte izin vermek için.
+Görünümlerinizin boyutunun çerçeve penceresinin boyutunu görüntülemesini sağlamak için çağrısı `ResizeParentToFit` yapın.
 
 ```
 void ResizeParentToFit(BOOL bShrinkOnly = TRUE);
@@ -264,20 +264,20 @@ void ResizeParentToFit(BOOL bShrinkOnly = TRUE);
 
 ### <a name="parameters"></a>Parametreler
 
-*bShrinkOnly*<br/>
-Yeniden boyutlandırma gerçekleştirmek için türü. Varsayılan değer TRUE, çerçeve penceresi uygunsa küçültür. Kaydırma çubukları, büyük görünümleri ya da küçük çerçeve pencereleri için yine de görünür. FALSE değeri her zaman tam olarak çerçeve penceresi yeniden boyutlandırmak görünüm neden olur. Çerçeve penceresi içinde birden çok belge arabirimi (MDI) çerçeve penceresi veya ekran sığmayacak kadar büyük alma olduğundan bu biraz tehlikeli olabilir.
+*Bshrınkonly*<br/>
+Gerçekleştirilecek yeniden boyutlandırma türü. Varsayılan değer TRUE, uygunsa çerçeve penceresini küçültür. Büyük görünümler veya küçük çerçeve pencereleri için kaydırma çubukları görünmeye devam eder. FALSE değeri, görünümün çerçeve penceresini her zaman yeniden boyutlandırmasına neden olur. Çerçeve penceresi birden çok belge arabirimi (MDI) çerçeve penceresi veya ekranı içine sığmayacak kadar büyük olduğundan, bu biraz tehlikeli olabilir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu, yalnızca MDI alt çerçeve pencereleri görünümlerde için önerilir. Kullanım `ResizeParentToFit` içinde `OnInitialUpdate` işleyici işlevi türetilmiş `CScrollView` sınıfı. Bu üye işlevi bir örnek için bkz [CScrollView::SetScrollSizes](#setscrollsizes).
+Bu yalnızca MDI alt çerçeve pencerelerinin görünümleri için önerilir. Türetilmiş `ResizeParentToFit` sınıfınızın`CScrollView` işleyici `OnInitialUpdate` işlevinde kullanın. Bu üye işlevine bir örnek için bkz. [CScrollView:: Setscrollboyutlar](#setscrollsizes).
 
-`ResizeParentToFit` Görünüm penceresinin boyutunu ayarlayın varsayar. Görünüm penceresi boyutu ne zaman ayarlanmamış ise `ResizeParentToFit` olan adlı bir onay alırsınız. Bu gerçekleşmez için aşağıdaki çağrıyı çağırmadan önce olun `ResizeParentToFit`:
+`ResizeParentToFit`Görünüm penceresinin boyutunun ayarlandığını varsayar. Çağrıldığında Görünüm penceresi boyutu ayarlanmamışsa `ResizeParentToFit` bir onaylama işlemi alırsınız. Bunun gerçekleşmediğinden emin olmak için çağrılmadan `ResizeParentToFit`önce aşağıdaki çağrıyı yapın:
 
 [!code-cpp[NVC_MFCDocView#165](../../mfc/codesnippet/cpp/cscrollview-class_2.cpp)]
 
-##  <a name="scrolltoposition"></a>  CScrollView::ScrollToPosition
+##  <a name="scrolltoposition"></a>CScrollView:: ScrollToPosition
 
-Çağrı `ScrollToPosition` görünümünde belirli bir noktaya kaydırın.
+Görünümdeki `ScrollToPosition` belirli bir noktaya kaydırmak için çağırın.
 
 ```
 void ScrollToPosition(POINT pt);
@@ -285,16 +285,16 @@ void ScrollToPosition(POINT pt);
 
 ### <a name="parameters"></a>Parametreler
 
-*PT*<br/>
-Gidin, mantıksal birimler cinsinden noktası. `x` Üye pozitif bir değer (en az 0 olarak görünümün toplam boyutu kadar) olması gerekir. Aynı true `y` eşleme modu MM_TEXT olduğunda üyesi. `y` Üyesidir negatif eşleme modda MM_TEXT dışında.
+*yönergelerinin*<br/>
+Mantıksal birimlerde kaydırma noktası. `x` Üyenin pozitif bir değer olması gerekir (en fazla, görünümün toplam boyutuna kadar, 0 ' dan büyük veya buna eşit). Eşleme modu MM_TEXT olduğunda aynı `y` üye için de geçerlidir. Üye `y` , MM_TEXT dışındaki eşleme modlarında negatiftir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Böylece bu noktası penceresinin sol üst köşesindeki görünümü kaydırılan. Görünüm sığacak şekilde ölçeklendirilir, bu üye işlevi çağrılmaması gerekir.
+Bu noktanın pencerenin sol üst köşesinde olması için görünüm kaydırılacaktır. Görünüm sığacak şekilde ölçeklendirildiyse, bu üye işlevin çağrılmaması gerekir.
 
-##  <a name="setscaletofitsize"></a>  CScrollView::SetScaleToFitSize
+##  <a name="setscaletofitsize"></a>CScrollView:: SetScaleToFitSize
 
-Çağrı `SetScaleToFitSize` geçerli pencere boyutuna Görünüm penceresi boyutu otomatik olarak ölçeklendirme istediğinizde.
+Görünüm `SetScaleToFitSize` penceresinin boyutunu otomatik olarak geçerli pencere boyutuna ölçeklendirmek istediğinizde çağırın.
 
 ```
 void SetScaleToFitSize(SIZE sizeTotal);
@@ -302,24 +302,24 @@ void SetScaleToFitSize(SIZE sizeTotal);
 
 ### <a name="parameters"></a>Parametreler
 
-*sizeTotal*<br/>
-Görünüm ölçeklendirilmesi olduğu yatay ve dikey boyutları. Kaydırma görünümün boyutu, mantıksal birimler cinsinden ölçülür. Yatay boyutunu bulunan `cx` üyesi. Dikey boyutu bulunan `cy` üyesi. Her ikisi de `cx` ve `cy` değerinden büyük veya 0'a eşit olmalıdır.
+*Toplam Boyut*<br/>
+Görünümün ölçeklendirileceği yatay ve dikey boyutlar. Kaydırma görünümünün boyutu mantıksal birimlerde ölçülür. Yatay boyut `cx` üye içinde yer alır. Dikey boyut `cy` üye içinde yer alır. Her `cx` ikisi `cy` de 0 ' dan büyük veya buna eşit olmalıdır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kaydırma çubukları ile mantıksal görünümü sadece bir kısmı herhangi bir zamanda görünür olabilir. Ancak ölçek Sığdır özelliğine sahip hiçbir kaydırma çubukları görünümü vardır ve mantıksal görünümü esnetildiğini veya pencerenin istemci alanını tam olarak sığması için küçültülebilir. Görünüm penceresi yeniden boyutlandırıldığında verilerini pencere boyutuna bağlı olarak yeni bir ölçekte çizer.
+Kaydırma çubukları ile, yalnızca mantıksal görünümün bir kısmı herhangi bir zamanda görünür olabilir. Ancak ölçeklendirme özelliği sayesinde, görünümün bir kaydırma çubuğu yoktur ve mantıksal görünüm, pencerenin istemci alanına tam olarak sığacak şekilde uzatılır veya daraltıladır. Pencere yeniden boyutlandırılırken, görünüm verileri pencerenin boyutuna bağlı olarak yeni bir ölçekte çizer.
 
-Genellikle çağrısı ekleyeceğiniz `SetScaleToFitSize` kılacağınızı görünümün içinde `OnInitialUpdate` üye işlevi. Otomatik ölçeklendirme istemiyorsanız çağrı `SetScrollSizes` üye işlevini yerine.
+Bu çağrıyı genellikle `OnInitialUpdate` görünümün üye işlevindeki geçersiz `SetScaleToFitSize` kılmada olacak şekilde yerleştirebilirsiniz. Otomatik ölçeklendirmeyi istemiyorsanız, bunun yerine `SetScrollSizes` üye işlevini çağırın.
 
-`SetScaleToFitSize` bir "Yakınlaştırmak için uygun" işlemini uygulamak için kullanılabilir. Kullanım `SetScrollSizes` kaydırma yeniden başlatmak için.
+`SetScaleToFitSize`"sığacak kadar yaklaştır" işlemi uygulamak için kullanılabilir. Kaydırmayı `SetScrollSizes` yeniden başlatmak için kullanın.
 
-`SetScaleToFitSize` Görünüm penceresinin boyutunu ayarlayın varsayar. Görünüm penceresi boyutu ne zaman ayarlanmamış ise `SetScaleToFitSize` olan adlı bir onay alırsınız. Bu gerçekleşmez için aşağıdaki çağrıyı çağırmadan önce olun `SetScaleToFitSize`:
+`SetScaleToFitSize`Görünüm penceresinin boyutunun ayarlandığını varsayar. Çağrıldığında Görünüm penceresi boyutu ayarlanmamışsa `SetScaleToFitSize` bir onaylama işlemi alırsınız. Bunun gerçekleşmediğinden emin olmak için çağrılmadan `SetScaleToFitSize`önce aşağıdaki çağrıyı yapın:
 
 [!code-cpp[NVC_MFCDocView#165](../../mfc/codesnippet/cpp/cscrollview-class_2.cpp)]
 
-##  <a name="setscrollsizes"></a>  CScrollView::SetScrollSizes
+##  <a name="setscrollsizes"></a>CScrollView:: Setscrollboyutlar
 
-Çağrı `SetScrollSizes` görünümü olduğunda hakkında güncelleştirilecek.
+Görünüm `SetScrollSizes` Güncellenme geldiğinde çağırın.
 
 ```
 void SetScrollSizes(
@@ -334,39 +334,39 @@ void SetScrollSizes(
 *nMapMode*<br/>
 Bu görünüm için ayarlanacak eşleme modu. Olası değerler şunlardır:
 
-|Eşleme modu|Mantıksal birim|Pozitif y ekseni Extends...|
+|Eşleme modu|Mantıksal birim|Pozitif y ekseni genişletiliyor...|
 |------------------|------------------|---------------------------------|
-|MM_TEXT|1 piksel|Aşağı|
-|MM_HIMETRIC|0,01 mm|Upward|
-|MM_TWIPS|1/1440|Upward|
-|MM_HIENGLISH|0,001 giriş|Upward|
-|MM_LOMETRIC|0,1 mm|Upward|
-|MM_LOENGLISH|0,01 giriş|Upward|
+|MM_TEXT|1 piksel|Aşağıya|
+|MM_HIMETRIC|0,01 mm|Yukarıya|
+|MM_TWIPS|1/1440|Yukarıya|
+|MM_HIENGLISH|0,001|Yukarıya|
+|MM_LOMETRIC|0,1 mm|Yukarıya|
+|MM_LOENGLISH|0,01|Yukarıya|
 
-Tüm bu modlardan Windows tarafından tanımlanır. İki standart eşleme modu, MM_ISOTROPIC ve MM_ANISOTROPIC, için kullanılmaz `CScrollView`. Sınıf kitaplığı sağlar `SetScaleToFitSize` görünümüne pencere boyutunu ölçeklendirmeye yönelik üye işlevi. Yukarıdaki tablosunda üç sütun koordinat yönünü açıklar.
+Tüm bu modlar Windows tarafından tanımlanır. İki standart eşleme modu, MM_ISOTROPIC ve MM_ANISOTROPIC, için `CScrollView`kullanılmaz. Sınıf kitaplığı, görünümü pencere `SetScaleToFitSize` boyutuna ölçeklemek için üye işlevi sağlar. Yukarıdaki tabloda üçüncü sütun, koordinat yönünü açıklar.
 
-*sizeTotal*<br/>
-Kaydırma görünümü toplam boyutu. `cx` Üye yatay ölçüde içerir. `cy` Üye dikey ölçüde içerir. Mantıksal birimler cinsinden boyutlarıdır. Her ikisi de `cx` ve `cy` değerinden büyük veya 0'a eşit olmalıdır.
+*Toplam Boyut*<br/>
+Kaydırma görünümünün toplam boyutu. `cx` Üye yatay kapsamı içerir. `cy` Üye dikey kapsamı içerir. Boyutlar mantıksal birimlerdir. Her `cx` ikisi `cy` de 0 ' dan büyük veya buna eşit olmalıdır.
 
 *sizePage*<br/>
-Bir kaydırma çubuğu mil her bir yönde yanıt olarak bir fare kaydırma yatay ve dikey tutarlarının tıklayın. `cx` Üyeyi içeren yatay tutar. `cy` Üyeyi içeren dikey tutar.
+Bir kaydırma çubuğu biçimlendirbir çubukta fare tıklaması sırasında her yönde kaydırılan yatay ve dikey tutarlar. `cx` Üye yatay miktarı içerir. `cy` Üye dikey miktarı içerir.
 
 *sizeLine*<br/>
-Her bir yönde yanıt olarak bir fare kaydırma yatay ve dikey tutarlarının bir kaydırma oka tıklayın. `cx` Üyeyi içeren yatay tutar. `cy` Üyeyi içeren dikey tutar.
+Bir kaydırma okuna fare tıklaması için her yönde kaydırılan yatay ve dikey tutarlar. `cx` Üye yatay miktarı içerir. `cy` Üye dikey miktarı içerir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Geçersiz kılmada çağrı `OnUpdate` gibi belge görüntülendiğinde, veya boyutu değiştiğinde kaydırma özelliklerini ayarlamak için üye işlevi.
+Örneğin, belge başlangıçta veya boyut değiştirdiğinde `OnUpdate` , kaydırma özelliklerini ayarlamak için üye işlevini geçersiz kılmanızda çağırın.
 
-Belki de adlı bir belge üye işlevini çağırarak boyutu bilgileri görünümün ilişkili belge genellikle alacaktır `GetMyDocSize`, belge türetilmiş sınıfınızın sağladığınız. Aşağıdaki kod, bu yaklaşım gösterilmektedir:
+Genellikle, türetilmiş belge sınıfınız ile sağladığınız bir belge üye işlevini `GetMyDocSize`çağırarak görünümün ilişkili belgesinden boyut bilgilerini elde edersiniz. Aşağıdaki kod bu yaklaşımı göstermektedir:
 
 [!code-cpp[NVC_MFCDocView#166](../../mfc/codesnippet/cpp/cscrollview-class_3.cpp)]
 
-Alternatif olarak, bazı durumlarda, aşağıdaki kodda gösterildiği gibi bir sabit boyutlu ayarlamanız gerekebilir:
+Alternatif olarak, aşağıdaki kodda olduğu gibi bazen sabit bir boyut ayarlamanız gerekebilir:
 
 [!code-cpp[NVC_MFCDocView#167](../../mfc/codesnippet/cpp/cscrollview-class_4.cpp)]
 
-MM_ISOTROPIC veya MM_ANISOTROPIC dışında Windows eşleme modun herhangi birinde için eşleme modunu ayarlamanız gerekir. Sınırlandırılmamış eşleme modunu kullanmak istiyorsanız, çağrı `SetScaleToFitSize` üye işlevi yerine `SetScrollSizes`.
+Eşleme modunu MM_ISOTROPIC veya MM_ANISOTROPIC dışında herhangi bir Windows eşleme modundan birine ayarlamanız gerekir. Kısıtlanmış olmayan bir eşleme modunu kullanmak istiyorsanız, `SetScaleToFitSize` `SetScrollSizes`yerine üye işlevini çağırın.
 
 ### <a name="example"></a>Örnek
 

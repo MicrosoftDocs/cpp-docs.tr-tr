@@ -13,18 +13,18 @@ helpviewer_keywords:
 - explicit linking [C++]
 - DLLs [C++], unloading
 ms.assetid: 4a48d290-3971-43e9-8e97-ba656cd0c8f8
-ms.openlocfilehash: 59deb75ad77b0a80efc69d9991e093ecef95c51e
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: 9c657bb0d583270f81658afa53f36b1be6a4fd4a
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65221420"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69493258"
 ---
 # <a name="freelibrary-and-afxfreelibrary"></a>FreeLibrary ve AfxFreeLibrary
 
-Bir DLL çağrı açıkça bir bağlantı işlemleri [FreeLibrary](/windows/desktop/api/libloaderapi/nf-libloaderapi-freelibrary) DLL Modulü artık gerekli olmadığında işlev. Bu modülün başvuru sayısını azaltır işlev ve başvuru sayısı sıfır olursa, işlemin adres alanından eşlemesini.
+Bir DLL 'ye açıkça bağlanan süreçler, DLL modülüne artık gerek kalmadığında [FreeLibrary](/windows/win32/api/libloaderapi/nf-libloaderapi-freelibrary) işlevini çağırır. Bu işlev, modülün başvuru sayısını azaltır ve başvuru sayısı sıfır ise, işlemin adres alanından eşlemelerden kaldırır.
 
-Bir MFC uygulamasında [AfxFreeLibrary](../mfc/reference/application-information-and-management.md#afxfreelibrary) yerine `FreeLibrary` bir MFC uzantılı DLL kaldırılamıyor. ' % S'arabirimi (işlev prototipi) için `AfxFreeLibrary` aynı `FreeLibrary`.
+Bir MFC uygulamasında, bir MFC uzantı dll 'sini kaldırmak `FreeLibrary` için yerine [AfxFreeLibrary](../mfc/reference/application-information-and-management.md#afxfreelibrary) ' i kullanın. İçin `AfxFreeLibrary` Arabirim (işlev prototipi) ile `FreeLibrary`aynıdır.
 
 ## <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsunuz?
 
@@ -40,6 +40,6 @@ Bir MFC uygulamasında [AfxFreeLibrary](../mfc/reference/application-information
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual Studio'da C/C++ DLL'leri oluşturma](dlls-in-visual-cpp.md)<br/>
-[FreeLibrary](/windows/desktop/api/libloaderapi/nf-libloaderapi-freelibrary)
+[Visual Studio 'daC++ C/dll oluşturma](dlls-in-visual-cpp.md)<br/>
+[](/windows/win32/api/libloaderapi/nf-libloaderapi-freelibrary)FreeLibrary
 [AfxFreeLibrary](../mfc/reference/application-information-and-management.md#afxfreelibrary)

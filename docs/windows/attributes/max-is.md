@@ -1,21 +1,21 @@
 ---
-title: max_is (C++ COM özniteliği)
+title: max_is (C++ com özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.max_is
 helpviewer_keywords:
 - max_is attribute
 ms.assetid: 7c851f5c-6649-4d77-a792-247c37d8f560
-ms.openlocfilehash: dca2a3dc18aa3c3e75bbb682ed0b1b90adcd9236
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f2e6db997891817620c1b2c1f70cb310818dd346
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62409284"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69514420"
 ---
-# <a name="maxis"></a>max_is
+# <a name="max_is"></a>max_is
 
-Geçerli dizi dizini için maksimum değeri atar.
+Geçerli bir dizi dizininin en büyük değerini belirtir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -25,12 +25,12 @@ Geçerli dizi dizini için maksimum değeri atar.
 
 ### <a name="parameters"></a>Parametreler
 
-*İfade*<br/>
-Bir veya daha fazla C dili ifadeleri. Boş bağımsız değişken yuvaları izin verilir.
+*ifadesini*<br/>
+Bir veya daha fazla C-dil ifadesi. Boş bağımsız değişken yuvalarına izin veriliyor.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Max_is** C++ özniteliği ile aynı işlevlere sahip [max_is](/windows/desktop/Midl/max-is) MIDL özniteliği.
+**Max_is** C++ özniteliği, [max_is](/windows/win32/Midl/max-is) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -38,16 +38,16 @@ Bir veya daha fazla C dili ifadeleri. Boş bağımsız değişken yuvaları izin
 
 |||
 |-|-|
-|**İçin geçerlidir**|İçinde alan **yapı** veya **birleşim**, parametre arabirim, arabirim yöntemi|
+|**Uygulama hedefi**|**Struct** veya **Union**içindeki alan, arabirim parametresi, arabirim yöntemi|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|Yok.|
+|**Gerekli öznitelikler**|Yok.|
 |**Geçersiz öznitelikler**|**size_is**|
 
-Daha fazla bilgi için [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
+Daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="example"></a>Örnek
 
-Bkz: [first_is](first-is.md) örneği nasıl bir dizinin bir bölümünü belirtin.
+Dizinin bir bölümünü belirtme örneği için bkz. [first_is](first-is.md) .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

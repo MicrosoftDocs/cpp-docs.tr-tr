@@ -4,94 +4,94 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - Concurrency Runtime, compared to other models
 ms.assetid: d8b9a1f4-f15f-43c3-a5b4-c0991edf9c86
-ms.openlocfilehash: 885cce09707e1c067efdeb0bdc8b7d8a40841c02
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9cc48687eb083ea4fab53380f62856b747c9d86a
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62337719"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69512819"
 ---
 # <a name="comparing-the-concurrency-runtime-to-other-concurrency-models"></a>Eşzamanlılık Çalışma Zamanını Diğer Eşzamanlılık Modelleriyle Karşılaştırma
 
-Bu belge özellikleri ve Eşzamanlılık Çalışma zamanı ve diğer teknolojilerden oluşan programlama modelleri arasındaki farkları açıklar. Nasıl eşzamanlılık çalışma zamanı avantajlarını diğer programlama modellerini kullanarak avantajlarını Karşılaştır anlayarak, uygulamalarınızın gereksinimlerini en iyi şekilde karşılayan teknolojisini seçebilirsiniz.
+Bu belgede Eşzamanlılık Çalışma Zamanı ve diğer teknolojilerin Özellikler ve programlama modelleri arasındaki farklar açıklanmaktadır. Eşzamanlılık Çalışma Zamanı avantajlarının diğer programlama modellerinin avantajları ile nasıl karşılaştırılacağını anlamak için, uygulamalarınızın gereksinimlerini en iyi şekilde karşılayan teknolojiyi seçebilirsiniz.
 
-Şu anda, OpenMP ve Windows iş parçacığı havuzu gibi başka bir programlama modeli kullanıyorsanız burada eşzamanlılık çalışma zamanına geçirmek uygun olabilir durumlar vardır. Örneğin, konu [OpenMP döngüsünden eşzamanlılık çalışma zamanına geçiş](../../parallel/concrt/migrating-from-openmp-to-the-concurrency-runtime.md) zaman OpenMP döngüsünden eşzamanlılık çalışma zamanına geçirmek uygun olabilir açıklar. Ancak, uygulama performansı ve geçerli hata ayıklama desteği ile memnun kaldığınızda, geçiş gerekli değildir.
+Şu anda Windows iş parçacığı havuzu veya OpenMP gibi başka bir programlama modeli kullanıyorsanız, Eşzamanlılık Çalışma Zamanı geçiş için uygun olabilecek durumlar vardır. Örneğin, [OpenMP 'dan eşzamanlılık çalışma zamanı geçiş](../../parallel/concrt/migrating-from-openmp-to-the-concurrency-runtime.md) konusu, openmp 'dan eşzamanlılık çalışma zamanı geçirmeye ne zaman uygun olduğunu anlatmaktadır. Ancak, uygulama performansı ve geçerli hata ayıklama desteğiyle memnun kaldıysanız geçiş gerekli değildir.
 
-Başka bir tutarlılık modelini kullanan mevcut uygulamanızı tamamlamak için eşzamanlılık çalışma zamanı üretkenlik avantajları ve özellikleri kullanabilirsiniz. Eşzamanlılık Çalışma zamanı, aynı işlem kaynakları için birden çok görev planlayıcılar rekabet Yük Dengeleme garanti edemez. Ancak, iş yüklerini çakışmaması, bu etkiyi en alt düzeydedir.
+Başka bir eşzamanlılık modeli kullanan mevcut uygulamanızı tamamlamak için Eşzamanlılık Çalışma Zamanı özellikleri ve verimlilik avantajlarından yararlanabilirsiniz. Eşzamanlılık Çalışma Zamanı, birden çok görev zamanlayıcılar aynı bilgi işlem kaynakları için rekabet edildiğinde yük dengelemeyi garanti edemez. Ancak, iş yükleri çakışmazsa, bu efekt en düşük düzeydedir.
 
-##  <a name="top"></a> Bölümleri
+##  <a name="top"></a>Başlıklı
 
-- [İşbirlikçi planlama için PreEmptive planlama karşılaştırma](#models)
+- [Preemptive zamanlamasını birlikte çalışır zamanlamaya göre karşılaştırma](#models)
 
-- [Eşzamanlılık Çalışma zamanı için Windows API ile karşılaştırma](#winapi)
+- [Eşzamanlılık Çalışma Zamanı Windows API 'siyle karşılaştırma](#winapi)
 
-- [Eşzamanlılık çalışma zamanını OpenMP karşılaştırma](#openmp)
+- [Eşzamanlılık Çalışma Zamanı OpenMP ile karşılaştırma](#openmp)
 
-##  <a name="models"></a> İşbirlikçi planlama için PreEmptive planlama karşılaştırma
+##  <a name="models"></a>Preemptive zamanlamasını birlikte çalışır zamanlamaya göre karşılaştırma
 
-Preemptive modeli ve modelleri zamanlama Guyana bilgi işlem kaynaklarını paylaşmak birden çok görevi etkinleştirmek için iki ortak işlemcileri veya donanım iş parçacıklarının yöntemleridir.
+Preemptive modeli ve birlikte çalışırken zamanlama modelleri, işlem kaynaklarını paylaşmak için birden çok görevi etkinleştirmenin iki yaygın yollarıdır. Örneğin, işlemciler veya donanım iş parçacıkları.
 
-### <a name="preemptive-and-cooperative-scheduling"></a>PreEmptive ve işbirlikçi zamanlama
+### <a name="preemptive-and-cooperative-scheduling"></a>PreEmptive ve Cooperative zamanlaması
 
-*PreEmptive zamanlama* her görev özel erişim, belirli bir süre için bir bilgi işlem kaynağına sağlar ve ardından başka bir göreve geçiş hepsini bir kez deneme, öncelik tabanlı bir mekanizma. PreEmptive zamanlama kullanılsın işletim sistemlerinde Windows gibi yaygın bir durumdur. *İşbirlikçi zamanlama* her görev özel erişim görev bitene kadar veya görev kaynak erişimini verir kadar bilgi işlem kaynak sağlayan bir mekanizmadır. Eşzamanlılık Çalışma zamanı, kaynakları işleme en fazla kullanım elde etmek için işletim sisteminin preemptive Zamanlayıcı ile birlikte işbirlikçi zamanlama kullanır.
+*Preemptive zamanlama* , her görevin belirli bir süre için bir bilgi işlem kaynağına özel erişim izni veren ve daha sonra başka bir göreve geçiş yapan, hepsini bir kez deneme, önceliğe dayalı bir mekanizmadır. Preemptive zamanlama, Windows gibi çok görevli işletim sistemlerinde ortaktır. *Ortak zamanlama* , görev bitene veya görev kaynağa erişimi yapana kadar, her görevin bir bilgi işlem kaynağına özel olarak erişmesini sağlayan bir mekanizmadır. Eşzamanlılık Çalışma Zamanı, işlem kaynaklarının en yüksek kullanımını sağlamak için işletim sisteminin preemptive Scheduler ile birlikte birlikte çalışan zamanlamayı kullanır.
 
-### <a name="differences-between-preemptive-and-cooperative-schedulers"></a>Preemptive ve işbirlikçi zamanlayıcılar arasındaki farklar
+### <a name="differences-between-preemptive-and-cooperative-schedulers"></a>PreEmptive ve Cooperative zamanlayıcılar arasındaki farklar
 
-Bulut bilgi işlem kaynakları, her iş parçacığı ilerleme aklınızdan sağlamak için birden çok iş parçacığı eşit şekilde erişmesini sağlamak PreEmptive zamanlayıcılar isteyin. Çok sayıda bilgi işlem kaynakları olan bilgisayarlarda adil erişim sağlayarak daha az sorunlu olur; Bununla birlikte, kaynakların verimli kullanımı sağlayarak daha sorunlu hale gelir.
+Her iş parçacığının devam ettiğinden emin olmak için birden çok iş parçacığını, bilgi işlem kaynaklarına erişim izni vermek için preemptive zamanlayıcılar arama. Birçok bilgi işlem kaynağına sahip bilgisayarlarda, dengeli erişim sağlamak daha az sorunlu olur; Ancak, kaynakların etkin kullanımının daha fazla soruna neden olma.
 
-Preemptive çekirdek modu Zamanlayıcı planlama kararları vermek için bu işletim sisteminde yararlanmayı uygulama kodu gerektirir. Buna karşılık, bir kullanıcı modu ortak scheduler kendi planlama kararları vermek uygulama kodu sağlar. İşbirlikçi planlama uygulama tarafından çok sayıda planlama kararlarına sağladığından çok çekirdek modu eşitleme ile ilişkili ek yükü azaltır. Zamanlamak için diğer işleri olduğunda ortak scheduler, genellikle işletim sistemi çekirdeği için zamanlama kararlarını erteleyen. Ortak scheduler çekirdeğe bildiriliyor engelleyici bir işlem yoktur ancak işlem, kullanıcı modu Zamanlayıcı bildiriliyor değil de işletim sistemi zamanlayıcı erteler.
+Bir preemptive çekirdek modu Zamanlayıcı, uygulama kodunun zamanlama kararları vermek için işletim sistemine dayanmasını gerektirir. Buna karşılık, Kullanıcı modu bir örnek Zamanlayıcı, uygulama kodunun kendi zamanlama kararlarını yapmasını sağlar. Ortak zamanlama, uygulama tarafından birçok zamanlama kararı sağladığından, çekirdek modu eşitlemeyle ilişkili ek yükün çoğunu azaltır. Ortak bir Zamanlayıcı genellikle zamanlamaya yönelik başka bir iş olmadığında, işletim sistemi çekirdeğine kararlar vermez. Aynı zamanda, çekirdeğe iletilen bir engelleme işlemi olduğunda, ancak bu işlem Kullanıcı modu zamanlayıcısına iletilmeyen bir zamanlayıcı, aynı zamanda işletim sistemi zamanlayıcısına de erteler.
 
-### <a name="cooperative-scheduling-and-efficiency"></a>İşbirlikçi zamanlama ve verimliliği
+### <a name="cooperative-scheduling-and-efficiency"></a>İşbirliksel zamanlama ve verimlilik
 
-Preemptive bir zamanlayıcı için aynı öncelik düzeyine sahip tüm iş eşittir. Preemptive Zamanlayıcı genellikle iş parçacığı içinde oluşturuldukları sırada zamanlar. Ayrıca, preemptive Zamanlayıcı iş parçacığı önceliği temelinde hepsini bir kez deneme şekilde, bir zaman dilimi her iş parçacığı sağlar. Bu mekanizma (her iş parçacığı ilerleme sağlar) eşitliği sağlasa da, verimliliği bazı maliyetle birlikte gelir. Örneğin, çok sayıda hesaplama yoğunluklu algoritmaları eşitliği gerektirmez. Bunun yerine, ilgili görevleri genel az sürede tamamlamanız önemlidir. İşbirlikçi zamanlama çalışması daha verimli bir şekilde zamanlamak bir uygulama sağlar. Örneğin, birçok iş parçacığı olan bir uygulama düşünün. Eşzamanlı olarak çalıştırılmasını kaynakların paylaşmayan iş parçacıklarını zamanlama, eşitleme ek yükü azaltmak ve böylelikle verimliliği artırabilirsiniz. Böylece her bir işlem hattı aşama girişi bellek önbelleğe zaten yüklü olan görevleri zamanlamak için başka bir etkin görevlerin işlem hatları (burada her görev, Öncekine çıkışı üzerinde çalışır) çalıştırmak için aynı işlemci üzerinde yoludur.
+Bir preemptive Scheduler 'da, aynı öncelik düzeyine sahip olan tüm işler eşittir. Bir preemptive Zamanlayıcı genellikle iş parçacıklarını oluşturuldukları sırada zamanlar. Ayrıca, bir preemptive Zamanlayıcı, iş parçacığı önceliğine göre her iş parçacığını her bir zaman dilimi olarak bir zaman dilimine sahip olacak şekilde verir. Bu mekanizma eşitliği sağlar (her iş parçacığı ileri ilerleme durumu oluşturur), bu, verimlilik açısından biraz daha gelir. Örneğin, birçok hesaplama yoğunluklu algoritma eşitliği gerektirmez. Bunun yerine, ilgili görevlerin en az genel sürede sona ermesi önemlidir. Ortak zamanlama, uygulamanın daha verimli bir şekilde çalışmasını sağlar. Örneğin, çok sayıda iş parçacığı olan bir uygulamayı düşünün. Aynı anda çalıştırılacak kaynakları paylaşmayan zamanlama iş parçacıkları, eşitleme yükünü azaltabilir ve böylece verimliliği artırabilir. Görevleri zamanlamaya yönelik başka bir yöntem de, her bir ardışık düzen aşamasının daha önce bellek önbelleğine yüklenmiş olması için, görevlerin işlem hatlarını (her görevin bir önceki birinin çıktısı üzerinde hareket ettiği yer) çalıştırması.
 
-### <a name="using-preemptive-and-cooperative-scheduling-together"></a>PreEmptive ve işbirlikçi birlikte zamanlama kullanma
+### <a name="using-preemptive-and-cooperative-scheduling-together"></a>PreEmptive ve Cooperative zamanlamasını birlikte kullanma
 
-İşbirlikçi zamanlama tüm zamanlama sorunları çözer değil. Örneğin, görevler diğer görevlere oldukça yield değil tüm kullanılabilir bilgi işlem kaynaklarını tüketebilir ve ilerleme kaydetmesinin diğer görevleri engellemek. Eşzamanlılık Çalışma zamanı işbirlikçi zamanlama verimliliği avantajları preemptive zamanlama eşitliği garanti tamamlamak üzere kullanır. Varsayılan olarak, bir işi kaplayan algoritması verimli bir şekilde bilgi işlem kaynaklarını aralarında iş dağıtmak için kullandığı işbirlikçi Zamanlayıcı'yı eşzamanlılık çalışma zamanı sağlar. Ancak, eşzamanlılık çalışma zamanı Zamanlayıcısı'nı da oldukça kaynakları uygulamalar arasında dağıtmak için işletim sisteminin preemptive Zamanlayıcı kullanır. İş parçacığı üzerinde ayrıntılı denetim oluşturmak için uygulamalarınızda özel zamanlayıcılar ve Zamanlayıcı ilkeleri de oluşturabilirsiniz.
+Ortak zamanlama, tüm zamanlama sorunlarını çözmez. Örneğin, diğer görevlere oldukça bir şekilde davranmayan görevler, kullanılabilir tüm bilgi işlem kaynaklarını kullanabilir ve diğer görevlerin ilerleme yapmasını önler. Eşzamanlılık Çalışma Zamanı, preemptive Scheduling 'in eşitliği garantilerini tamamlamak için birlikte kullanılan iş çizelgelemenin verimlilik avantajlarını kullanır. Varsayılan olarak Eşzamanlılık Çalışma Zamanı, işlem kaynakları arasında çalışmayı verimli bir şekilde dağıtmak için bir iş hırsızlığı algoritması kullanan bir ortak Zamanlayıcı sağlar. Ancak Eşzamanlılık Çalışma Zamanı Zamanlayıcı, kaynakları uygulamalar arasında oldukça dağıtmak için işletim sisteminin preemptive Scheduler ' u de kullanır. Ayrıca, iş parçacığı yürütmesi üzerinde ayrıntılı denetim oluşturmak için uygulamalarınızda özel zamanlayıcılar ve Zamanlayıcı ilkeleri de oluşturabilirsiniz.
 
 [[Üst](#top)]
 
-##  <a name="winapi"></a> Eşzamanlılık Çalışma zamanı için Windows API ile karşılaştırma
+##  <a name="winapi"></a>Eşzamanlılık Çalışma Zamanı Windows API 'siyle karşılaştırma
 
-Genellikle Windows API olarak adlandırılır (ve eski Win32 bilinir), Microsoft Windows uygulama programlama arabirimi, uygulamalarınızda eşzamanlılık sağlayan bir programlama modeli sağlar. Eşzamanlılık Çalışma zamanı, alttaki işletim sisteminden bulunmayan ek programlama modelleri sağlamak için Windows API üzerine inşa edilmiştir.
+Genellikle Windows API (ve daha önce Win32 olarak bilinirdi) olarak adlandırılan Microsoft Windows uygulama programlama arabirimi, uygulamalarınızda eşzamanlılık sağlayan bir programlama modeli sağlar. Eşzamanlılık Çalışma Zamanı, temel işletim sisteminden kullanılamayan ek programlama modelleri sağlamak için Windows API üzerinde oluşturulur.
 
-Eşzamanlılık Çalışma Zamanı paralel çalışmayı gerçekleştirmek için Windows API iş parçacığı modeli oluşturur. Ayrıca, Windows API bellek yönetimi ve iş parçacığı-yerel depolamayı mekanizmalarını kullanır. Windows 7 ve Windows Server 2008 R2 üzerinde kullanıcı zamanlanabilen iş parçacıklarını ve 64'ten fazla donanım iş parçacıklarının olan bilgisayarlar için Windows API desteği kullanır. Eşzamanlılık Çalışma zamanı Windows API modelini, işbirlikçi Görev Zamanlayıcısı'nı ve işi kaplayan bir algoritma bilgi işlem kaynaklarının kullanımını en üst düzeye çıkarmak için sağlayarak ve birden çok eş zamanlı Zamanlayıcı örnekleri sağlayarak genişletir.
+Eşzamanlılık Çalışma Zamanı paralel çalışma gerçekleştirmek için Windows API iş parçacığı modelinde oluşturulur. Ayrıca Windows API bellek yönetimi ve iş parçacığı yerel depolama mekanizmalarını kullanır. Windows 7 ve Windows Server 2008 R2 'de, Kullanıcı-zamanlanabilen iş parçacıkları ve 64 ' den fazla donanım iş parçacığına sahip bilgisayarlar için Windows API desteği kullanır. Eşzamanlılık Çalışma Zamanı, bilgi işlem kaynaklarının kullanımını en üst düzeye çıkarmak ve birden çok eş zamanlı zamanlayıcı örneğini etkinleştirerek bir iş hırsızlığı algoritması sağlayarak Windows API modelini genişletir.
 
 ### <a name="programming-languages"></a>Programlama Dilleri
 
-Windows API, programlama modeli kullanıma sunmak için C programlama dilini kullanır. Eşzamanlılık Çalışma zamanı C++ dilinde en yeni özelliklerinden yararlanır bir C++ programlama arabirimi sağlar. Örneğin, lambda işlevleri paralel iş işlevlerini tanımlama için birleştiren, tür kullanımı uyumlu bir mekanizma sağlar. Eşzamanlılık Çalışma zamanı kullanan en yeni C++ özellikleri hakkında daha fazla bilgi için bkz. [genel bakış](../../parallel/concrt/asynchronous-message-blocks.md).
+Windows API, programlama modelini göstermek için C programlama dilini kullanır. Eşzamanlılık Çalışma Zamanı, C++ dilin en C++ yeni özelliklerinden faydalanan bir programlama arabirimi sağlar. Örneğin, Lambda işlevleri paralel çalışma işlevlerini tanımlamak için kısa, tür açısından güvenli bir mekanizma sağlar. Eşzamanlılık Çalışma Zamanı kullandığı en yeni C++ özellikler hakkında daha fazla bilgi için bkz. [genel bakış](../../parallel/concrt/asynchronous-message-blocks.md).
 
-### <a name="threads-and-thread-pools"></a>İş parçacıkları ve iş parçacığı havuzları
+### <a name="threads-and-thread-pools"></a>İş parçacıkları ve Iş parçacığı havuzları
 
-İş parçacığı Windows API merkezi eşzamanlılık mekanizmadır. Tipik olarak kullandığınız [CreateThread](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createthread) iş parçacığı oluşturmak için işlevi. İş parçacığı oluşturma ve kullanma daha kolay olsa da, işletim sistemi önemli miktarda zaman ve bunları yönetmek için diğer kaynakları ayırır. Her iş parçacığı aynı öncelik düzeyinde başka bir iş parçacığıyla aynı yürütme süresi almak için garanti edilir olsa da, ayrıca, ilişkili ek yükü, yeterince geniş kapsamlı görevlerin oluşturmanız gerekir. Daha küçük ya da daha ayrıntılı görevler için eşzamanlılık ile ilişkili ek yükü görevleri paralel olarak çalışan avantajından daha fazla olabilir.
+Windows API 'sindeki merkezi eşzamanlılık mekanizması iş parçacığıdır. Genellikle iş parçacığı oluşturmak için [CreateThread](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createthread) işlevini kullanırsınız. İş parçacıklarının oluşturulması ve kullanılması görece kolay olsa da, işletim sistemi bunları yönetmek için önemli miktarda süre ve diğer kaynakları ayırır. Buna ek olarak, her iş parçacığının aynı çalışma zamanını aynı öncelik düzeyinde alması garanti edilse de, ilişkili ek yük, yeterince büyük görevler oluşturmanızı gerektirir. Daha küçük veya daha ayrıntılı görevler için, eşzamanlılık ile ilişkili ek yük, görevleri paralel olarak çalıştırmanın avantajını engelleyebilir.
 
-İş parçacığı havuzu iş parçacığı Yönetim maliyetini azaltmak için bir yoludur. Özel iş parçacığı havuzları ve her ikisini de etkinleştirmek küçük iş öğeleri verimli bir şekilde paralel olarak çalıştırmak Windows API tarafından sağlanan iş parçacığı havuzu uygulaması. Windows iş parçacığı havuzu iş öğeleri, ilk giren ilk çıkar (FIFO) kuyruktaki tutar. Her iş öğesi, havuza eklenen sırayla başlatılır.
+İş parçacığı havuzları, iş parçacığı yönetiminin maliyetini azaltmanın bir yoludur. Windows API tarafından sunulan özel iş parçacığı havuzları ve iş parçacığı havuzu uygulamasının her ikisi de küçük çalışma öğelerini paralel olarak verimli bir şekilde çalışacak şekilde etkinleştirir. Windows iş parçacığı havuzu, iş öğelerini ilk ın, ilk çıkar (FıFO) kuyruğunda tutar. Her iş öğesi havuza eklendiği sırayla başlatılır.
 
-Eşzamanlılık Çalışma zamanı zamanlama mekanizmasını FIFO genişletmek için işi kaplayan bir algoritma uygular. Algoritma iş öğelerini dışında çalışan iş parçacığı henüz başlamamış görevleri taşır. İşi kaplayan algoritması iş yükleri dengelemek olsa da, ayrıca iş öğelerini düzenlenmesine izin neden olabilir. Bu sipariş işleme zaman gönderildiği olandan farklı bir sırada başlatmak bir iş öğesi neden olabilir. Bu yinelemeli algoritmalar ile kullanışlıdır daha iyi olduğu veri daha yeni görevler eskiler arasında paylaşılır, fırsat. İlk çalıştırma için yeni öğeleri alınıyor, daha az İsabetsiz Önbellek okuma sayısı ve büyük olasılıkla daha az sayfa hataları anlamına gelir.
+Eşzamanlılık Çalışma Zamanı, FıFO zamanlama mekanizmasını genişletmek için bir iş hırsızlığı algoritması uygular. Algoritma, henüz başlatılmamış görevleri iş öğelerinin dışında çalışan iş parçacıklarına taşımıyor. İş hırsızlığı algoritması iş yüklerini dengeleyebilir, ancak iş öğelerinin yeniden düzenlenmesine da neden olabilir. Bu yeniden sıralama işlemi, bir iş öğesinin gönderildiğinden farklı bir sırayla başlatılmasına neden olabilir. Bu, verilerin daha yeni görevler arasında daha eski olanlar arasından paylaşıldığından daha iyi bir şansınız olan özyinelemeli algoritmalarda yararlıdır. İlk önce çalıştırılacak yeni öğeleri almak, daha az önbellek isabetsizlik ve muhtemelen daha az sayfa hatası anlamına gelir.
 
-İşletim sistemi açısından bakıldığında, iş çalarak adil değil. Ancak alt görevler arasındaki eşitliği her zaman önemli bir algoritma veya paralel olarak çalıştırmak için görev uygulama geliştirdiğinde, değildir. Önemli değildir, genel görevinin nasıl hızlı bir şekilde biten olur. Diğer algoritmalar için FIFO uygun zamanlama stratejisidir.
+İşletim sisteminin perspektifinden, iş hırsızlığı dengeli değildir. Ancak, bir uygulama bir algoritma veya görevi paralel olarak çalışacak şekilde uygularsa, alt görevler arasında eşitliği her zaman bir önemi yoktur. Genel görevin ne kadar hızlı bir şekilde bitdiğine göre. Diğer algoritmalar için, FıFO uygun zamanlama stratejisidir.
 
-### <a name="behavior-on-various-operating-systems"></a>Çeşitli işletim sistemlerinde davranışı
+### <a name="behavior-on-various-operating-systems"></a>Çeşitli Işletim sistemlerinde davranış
 
-Windows Vista'da yığın performansı geliştirildi dışında Windows XP ve Windows Vista, eşzamanlılık çalışma zamanı kullanan uygulamalar benzer şekilde davranır.
+Windows XP ve Windows Vista 'da, Windows Vista 'da yığın performansı iyileştirildiğinden, Eşzamanlılık Çalışma Zamanı kullanan uygulamalar benzer şekilde davranır.
 
-Windows 7 ve Windows Server 2008 R2 işletim sisteminin daha fazla eşzamanlılık ve ölçeklenebilirliği destekler. Örneğin, bu işletim sistemlerinin 64'ten fazla donanım iş parçacıklarının olan bilgisayarları destekler. Windows API kullanan mevcut bir uygulama bu yeni özelliklerden yararlanmak için değiştirilmesi gerekir. Ancak, otomatik olarak eşzamanlılık çalışma zamanı kullanan bir uygulamayı bu özellikleri kullanır ve değişiklik gerektirmez.
+Windows 7 ve Windows Server 2008 R2 'de, işletim sistemi Eşzamanlılık ve ölçeklenebilirliği daha da destekler. Örneğin, bu işletim sistemleri 64 ' den fazla donanım iş parçacığına sahip bilgisayarları destekler. Bu yeni özelliklerden faydalanmak için Windows API kullanan mevcut bir uygulamanın değiştirilmesi gerekir. Ancak, Eşzamanlılık Çalışma Zamanı kullanan bir uygulama otomatik olarak bu özellikleri kullanır ve değişiklik gerektirmez.
 
-[Base.user mode_scheduling](https://msdn.microsoft.com/library/windows/desktop/dd627187)
+[Base. User-mode_scheduling](/windows/win32/procthread/user-mode-scheduling)
 
 [[Üst](#top)]
 
-##  <a name="openmp"></a> Eşzamanlılık çalışma zamanını OpenMP karşılaştırma
+##  <a name="openmp"></a>Eşzamanlılık Çalışma Zamanı OpenMP ile karşılaştırma
 
-Eşzamanlılık Çalışma zamanı, çeşitli programlama modelleri sağlar. Bu modeller çakışmamalıdır veya diğer kitaplıkları modelleri tamamlar. Bu bölüm için eşzamanlılık çalışma zamanı karşılaştırır [OpenMP](../../parallel/concrt/comparing-the-concurrency-runtime-to-other-concurrency-models.md#openmp).
+Eşzamanlılık Çalışma Zamanı çeşitli programlama modellerine izin vermez. Bu modeller diğer kitaplıkların modellerini örtüşebilir veya tamamlayabilir. Bu bölüm Eşzamanlılık Çalışma Zamanı [OpenMP](../../parallel/concrt/comparing-the-concurrency-runtime-to-other-concurrency-models.md#openmp)ile karşılaştırır.
 
-OpenMP programlama modeli, açık bir standart tarafından tanımlanır ve Fortran ve C/C++ programlama dilleri için iyi tanımlanmış bağlamaları vardır. OpenMP sürümleri 2.0 ve 2.5 yinelemeli paralel algoritmalar için çok uygundur; diğer bir deyişle, bunlar paralel yineleme bir veri dizisi üzerinde gerçekleştirin. Paralellik derecesini önceden belirlenir ve sistemin kullanılabilir kaynaklara eşleşen OpenMP en etkili yoldur. OpenMP için yüksek performanslı bilgi işlem, özellikle de iyi bir eşleşme büyük işlem sorunları tek bir bilgisayarın işlem kaynakları arasında dağıtıldığı modelidir. Bu senaryoda, donanım ortamı denir ve geliştirici algoritma yürütüldüğünde, bilgi işlem kaynakları için özel erişim sağlamak makul bekleyebilirsiniz.
+OpenMP programlama modeli açık bir standart tarafından tanımlanır ve FORTRAN ve C/C++ programlama dillerinde iyi tanımlanmış bağlamalar vardır. OpenMP 2,0 ve 2,5 sürümleri, yinelemeli bir paralel algoritmalarda iyi uygundur; diğer bir deyişle, bir dizi veri üzerinde paralel yineleme gerçekleştirir. Paralellik derecesi önceden belirleniyorsa ve sistemdeki kullanılabilir kaynaklarla eşleşiyorsa OpenMP en verimli yöntemdir. OpenMP modeli, çok büyük hesaplama sorunlarının tek bir bilgisayarın işleme kaynaklarında dağıtıldığı yüksek performanslı bilgi işlem için özellikle iyi bir eşleşmedir. Bu senaryoda, donanım ortamı bilinirdi ve geliştirici, algoritma yürütüldüğünde işlem kaynaklarına özel erişime sahip olmasını makul bir şekilde bekleyebilir.
 
-Ancak, diğer kısıtlanmış bilgi işlem ortamlarının daha az OpenMP için iyi bir eşleşme olmayabilir. Örneğin, özyinelemeli sorunları (örneğin, Hızlı sıralama algoritmasını veya bir veri ağacı arama) OpenMP uygulamak daha zordur. Eşzamanlılık Çalışma zamanı sağlayarak OpenMP özelliklerini tamamlar [paralel desenler Kitaplığı](../../parallel/concrt/parallel-patterns-library-ppl.md) (PPL) ve [zaman uyumsuz aracılar Kitaplığı](../../parallel/concrt/asynchronous-agents-library.md). OpenMP, eşzamanlılık çalışma zamanı için kullanılabilir kaynaklar uyum sağlar ve iş yükü değiştikçe paralellik derecesini ayarlayan bir dinamik Zamanlayıcı sağlar.
+Ancak, diğer, daha az kısıtlanmış bilgi işlem ortamları OpenMP için iyi bir eşleşmeyebilir. Örneğin, özyinelemeli sorunlar (Hızlı sıralama algoritması veya bir veri ağacını arama gibi), OpenMP kullanarak uygulanması daha zordur. Eşzamanlılık Çalışma Zamanı, [paralel Desenler kitaplığı](../../parallel/concrt/parallel-patterns-library-ppl.md) (ppl) ve [zaman uyumsuz aracılar Kitaplığı](../../parallel/concrt/asynchronous-agents-library.md)sağlayarak OpenMP özelliklerini tamamlar. OpenMP 'den farklı olarak Eşzamanlılık Çalışma Zamanı, kullanılabilir kaynaklara uyum sağlayan dinamik bir Zamanlayıcı sağlar ve iş yükleri değiştiğinde paralellik derecesini ayarlar.
 
-Eşzamanlılık Çalışma zamanındaki özelliklerin çoğu uzatabilirsiniz. Ayrıca, yeni bir tane oluşturmak için var olan özellikler birleştirebilirsiniz. OpenMP derleyici yönergelerinde kullandığından, kolayca genişletilemez.
+Eşzamanlılık Çalışma Zamanı özelliklerin birçoğu genişletilebilir. Ayrıca, yeni yenilerini oluşturmak için var olan özellikleri birleştirebilirsiniz. OpenMP derleyici yönergelerini kullandığından, kolayca genişletilemez.
 
-Eşzamanlılık Çalışma zamanı karşılaştırır OpenMP ve Eşzamanlılık Çalışma zamanı kullanmak için mevcut OpenMP kod geçirme hakkında daha fazla bilgi için bkz: [OpenMP döngüsünden eşzamanlılık çalışma zamanına geçiş](../../parallel/concrt/migrating-from-openmp-to-the-concurrency-runtime.md).
+Eşzamanlılık Çalışma Zamanı OpenMP ile nasıl Karşılaştırıldığı ve mevcut OpenMP kodunun Eşzamanlılık Çalışma Zamanı kullanmak için nasıl geçirileceğiyle ilgili daha fazla bilgi için, bkz. [OpenMP 'den eşzamanlılık çalışma zamanı 'e geçme](../../parallel/concrt/migrating-from-openmp-to-the-concurrency-runtime.md).
 
 [[Üst](#top)]
 

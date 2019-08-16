@@ -402,12 +402,12 @@ helpviewer_keywords:
 - CDC [MFC], m_hAttribDC
 - CDC [MFC], m_hDC
 ms.assetid: 715b3334-cb2b-4c9c-8067-02eb7c66c8b2
-ms.openlocfilehash: 4f9f08ae751ba2482967c1eee4268c6d5f6d4a76
-ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
+ms.openlocfilehash: bae2f9a5a4f39c4eeffe68cc33e744e44c6800c8
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68916241"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69507011"
 ---
 # <a name="cdc-class"></a>CDC sınıfı
 
@@ -810,7 +810,7 @@ Kaynak dikdörtgenin mantıksal birimleri cinsinden genişliği belirtir.
 Kaynak dikdörtgenin mantıksal birimlerindeki yüksekliğini belirtir.
 
 *karıştır*<br/>
-Bir [BLENDFUNCTION](/windows/desktop/api/wingdi/ns-wingdi-blendfunction) yapısını belirtir.
+Bir [BLENDFUNCTION](/windows/win32/api/wingdi/ns-wingdi-blendfunction) yapısını belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -818,7 +818,7 @@ Başarılı olursa doğru; Aksi halde yanlış.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için bkz. Windows SDK [Alfablend](/windows/desktop/api/wingdi/nf-wingdi-alphablend) .
+Daha fazla bilgi için bkz. Windows SDK [Alfablend](/windows/win32/api/wingdi/nf-wingdi-alphablend) .
 
 ##  <a name="anglearc"></a>CDC:: AngleArc
 
@@ -913,7 +913,7 @@ Yay uç noktasını tanımlayan noktanın y koordinatını belirtir (mantıksal 
 Sınırlayıcı dikdörtgeni (mantıksal birimler cinsinden) belirtir. Bu parametre için bir LPRECT ya da [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi geçirebilirsiniz.
 
 *ptStart*<br/>
-Yay başlangıç noktasını tanımlayan noktanın x ve y koordinatlarını belirtir (mantıksal birimler cinsinden). Bu noktanın, tam olarak yay üzerinde olması gerekmez. Bu parametre için bir [nokta](/windows/desktop/api/windef/ns-windef-tagpoint) yapısını ya da [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesnesini geçirebilirsiniz.
+Yay başlangıç noktasını tanımlayan noktanın x ve y koordinatlarını belirtir (mantıksal birimler cinsinden). Bu noktanın, tam olarak yay üzerinde olması gerekmez. Bu parametre için bir [nokta](/windows/win32/api/windef/ns-windef-point) yapısını ya da [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesnesini geçirebilirsiniz.
 
 *ptEnd 'ler*<br/>
 Yay bitiş noktasını tanımlayan noktanın x ve y koordinatlarını belirtir (mantıksal birimler cinsinden). Bu noktanın, tam olarak yay üzerinde olması gerekmez. Bu parametre için bir `POINT` yapı ya da bir `CPoint` nesne geçirebilirsiniz.
@@ -980,10 +980,10 @@ Yay uç noktasını tanımlayan noktanın x koordinatını belirtir (mantıksal 
 Yay uç noktasını tanımlayan noktanın y koordinatını belirtir (mantıksal birimler cinsinden). Bu noktanın, tam olarak yay üzerinde olması gerekmez.
 
 *lpRect*<br/>
-Sınırlayıcı dikdörtgeni (mantıksal birimler cinsinden) belirtir. Bu parametre için, bir [Rect](/windows/desktop/api/windef/ns-windef-tagrect) veri yapısına veya bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesine bir işaretçi geçirebilirsiniz.
+Sınırlayıcı dikdörtgeni (mantıksal birimler cinsinden) belirtir. Bu parametre için, bir [Rect](/windows/win32/api/windef/ns-windef-rect) veri yapısına veya bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesine bir işaretçi geçirebilirsiniz.
 
 *ptStart*<br/>
-Yay başlangıç noktasını tanımlayan noktanın x ve y koordinatlarını belirtir (mantıksal birimler cinsinden). Bu noktanın, tam olarak yay üzerinde olması gerekmez. Bu parametre için bir [nokta](/windows/desktop/api/windef/ns-windef-tagpoint) veri yapısını veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesnesini geçirebilirsiniz.
+Yay başlangıç noktasını tanımlayan noktanın x ve y koordinatlarını belirtir (mantıksal birimler cinsinden). Bu noktanın, tam olarak yay üzerinde olması gerekmez. Bu parametre için bir [nokta](/windows/win32/api/windef/ns-windef-point) veri yapısını veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesnesini geçirebilirsiniz.
 
 *ptEnd 'ler*<br/>
 Yay bitiş noktasını tanımlayan noktanın x ve y koordinatlarını belirtir (mantıksal birimler cinsinden). Bu noktanın, tam olarak yay üzerinde olması gerekmez. Bu parametre için bir `POINT` veri yapısını ya da bir `CPoint` nesneyi geçirebilirsiniz.
@@ -1035,7 +1035,7 @@ BOOL BeginPath();
 
 Yol ayracı açıldıktan sonra bir uygulama, yolda bulunan noktaları tanımlamak için GDI çizim işlevlerini çağırmaya başlayabilir. Bir uygulama, `EndPath` üye işlevini çağırarak açık yol ayracını kapatabilir. Bir uygulama çağırdığında `BeginPath`, önceki tüm yollar atılır.
 
-Bir yoldaki noktaları tanımlayan çizim işlevlerinin bir listesi için Windows SDK [BeginPath](/windows/desktop/api/wingdi/nf-wingdi-beginpath) bölümüne bakın.
+Bir yoldaki noktaları tanımlayan çizim işlevlerinin bir listesi için Windows SDK [BeginPath](/windows/win32/api/wingdi/nf-wingdi-beginpath) bölümüne bakın.
 
 ### <a name="example"></a>Örnek
 
@@ -1081,9 +1081,9 @@ Kaynak bit eşlemin sol üst köşesinin mantıksal x koordinatını belirtir.
 Kaynak bit eşlemin sol üst köşesinin mantıksal y koordinatını belirtir.
 
 *dwRop*<br/>
-Gerçekleştirilecek ızgara işlemini belirtir. Raster-işlem kodları, GDI 'nın renkleri geçerli bir fırça, olası bir kaynak bit eşlem ve hedef bit eşlem içeren çıkış işlemlerinde nasıl birleştirdiğini tanımlar. *DwRop* için raster işlem kodlarının listesi ve açıklamaları Için Windows SDK [BitBlt](/windows/desktop/api/wingdi/nf-wingdi-bitblt) ' i inceleyin
+Gerçekleştirilecek ızgara işlemini belirtir. Raster-işlem kodları, GDI 'nın renkleri geçerli bir fırça, olası bir kaynak bit eşlem ve hedef bit eşlem içeren çıkış işlemlerinde nasıl birleştirdiğini tanımlar. *DwRop* için raster işlem kodlarının listesi ve açıklamaları Için Windows SDK [BitBlt](/windows/win32/api/wingdi/nf-wingdi-bitblt) ' i inceleyin
 
-Raster işlem kodlarının tam listesi için, Windows SDK [tarama Işlemi kodları hakkında](/windows/desktop/gdi/raster-operation-codes) bölümüne bakın.
+Raster işlem kodlarının tam listesi için, Windows SDK [tarama Işlemi kodları hakkında](/windows/win32/gdi/raster-operation-codes) bölümüne bakın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1169,7 +1169,7 @@ Sınırlayıcı dikdörtgeni (mantıksal birimler cinsinden) belirtir. Bu parame
 Başların başlangıç noktasını tanımlayan noktanın x ve y koordinatlarını belirtir (mantıksal birimler cinsinden). Bu noktanın tam olarak bu noktada olması gerekmez. Bu parametre için bir `POINT` yapı ya da bir `CPoint` nesne geçirebilirsiniz.
 
 *ptEnd 'ler*<br/>
-Chmalların bitiş noktasını tanımlayan noktanın x ve y koordinatlarını belirtir (mantıksal birimler cinsinden). Bu noktanın tam olarak bu noktada olması gerekmez. Bu parametre için bir [nokta](/windows/desktop/api/windef/ns-windef-tagpoint) yapısını ya da [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesnesini geçirebilirsiniz.
+Chmalların bitiş noktasını tanımlayan noktanın x ve y koordinatlarını belirtir (mantıksal birimler cinsinden). Bu noktanın tam olarak bu noktada olması gerekmez. Bu parametre için bir [nokta](/windows/win32/api/windef/ns-windef-point) yapısını ya da [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesnesini geçirebilirsiniz.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1361,7 +1361,7 @@ void DPtoHIMETRIC(LPSIZE lpSize) const;
 ### <a name="parameters"></a>Parametreler
 
 *lpSize*<br/>
-[Boyut](/windows/desktop/api/windef/ns-windef-tagsize) yapısına veya [CSize](../../atl-mfc-shared/reference/csize-class.md) nesnesine işaret eder.
+[Boyut](/windows/win32/api/windef/ns-windef-size) yapısına veya [CSize](../../atl-mfc-shared/reference/csize-class.md) nesnesine işaret eder.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1383,16 +1383,16 @@ void DPtoLP(LPSIZE lpSize) const;
 ### <a name="parameters"></a>Parametreler
 
 *lpPoints*<br/>
-[Nokta](/windows/desktop/api/windef/ns-windef-tagpoint) yapıları veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesneleri dizisine işaret eder.
+[Nokta](/windows/win32/api/windef/ns-windef-point) yapıları veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesneleri dizisine işaret eder.
 
 *nCount*<br/>
 Dizideki noktaların sayısı.
 
 *lpRect*<br/>
-Bir [Rect](/windows/desktop/api/windef/ns-windef-tagrect) yapısına veya [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesine işaret eder. Bu parametre, bir dikdörtgeni cihaz noktalarından mantıksal noktalara dönüştürmekle ilgili basit bir durum için kullanılır.
+Bir [Rect](/windows/win32/api/windef/ns-windef-rect) yapısına veya [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesine işaret eder. Bu parametre, bir dikdörtgeni cihaz noktalarından mantıksal noktalara dönüştürmekle ilgili basit bir durum için kullanılır.
 
 *lpSize*<br/>
-[Boyut](/windows/desktop/api/windef/ns-windef-tagsize) yapısına veya [CSize](../../atl-mfc-shared/reference/csize-class.md) nesnesine işaret eder.
+[Boyut](/windows/win32/api/windef/ns-windef-size) yapısına veya [CSize](../../atl-mfc-shared/reference/csize-class.md) nesnesine işaret eder.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1420,7 +1420,7 @@ void Draw3dRect(
 ### <a name="parameters"></a>Parametreler
 
 *lpRect*<br/>
-Sınırlayıcı dikdörtgeni (mantıksal birimler cinsinden) belirtir. Bu parametre için bir [Rect](/windows/desktop/api/windef/ns-windef-tagrect) yapısına ya da [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesine bir işaretçi geçirebilirsiniz.
+Sınırlayıcı dikdörtgeni (mantıksal birimler cinsinden) belirtir. Bu parametre için bir [Rect](/windows/win32/api/windef/ns-windef-rect) yapısına ya da [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesine bir işaretçi geçirebilirsiniz.
 
 *clrTopLeft*<br/>
 Üç boyutlu dikdörtgenin üst ve sol taraflarındaki rengi belirtir.
@@ -1465,13 +1465,13 @@ void DrawDragRect(
 ### <a name="parameters"></a>Parametreler
 
 *lpRect*<br/>
-Bir dikdörtgenin mantıksal koordinatlarını belirten bir [Rect](/windows/desktop/api/windef/ns-windef-tagrect) yapısına veya bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesine işaret eder — bu durumda dikdörtgenin, yeniden çizilmekte olan bitiş konumudur.
+Bir dikdörtgenin mantıksal koordinatlarını belirten bir [Rect](/windows/win32/api/windef/ns-windef-rect) yapısına veya bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesine işaret eder — bu durumda dikdörtgenin, yeniden çizilmekte olan bitiş konumudur.
 
 *boyutla*<br/>
 Dış kenarlığın sol üst köşesinden (yani kenarlığın kalınlığı) bir dikdörtgenin sol üst köşesine kadar olan öteyi belirtir.
 
 *lpRectLast*<br/>
-Dikdörtgen bir yapının [](/windows/desktop/api/windef/ns-windef-tagrect) veya bir dikdörtgenin konumunun mantıksal koordinatlarını belirten bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesine işaret eder; bu durumda dikdörtgenin orijinal konumu yeniden çizilir.
+Dikdörtgen bir yapının [](/windows/win32/api/windef/ns-windef-rect) veya bir dikdörtgenin konumunun mantıksal koordinatlarını belirten bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesine işaret eder; bu durumda dikdörtgenin orijinal konumu yeniden çizilir.
 
 *sizeLast*<br/>
 Yeniden çizmekte olan özgün dikdörtgenin sol üst köşesinin (yani kenarlığın kalınlığı) dış kenarlığın sol üst köşesinden yer alan öteyi belirtir.
@@ -1505,7 +1505,7 @@ BOOL DrawEdge(
 Dikdörtgenin mantıksal koordinatlarını içeren `RECT` bir yapıya yönelik işaretçi.
 
 *nEdge*<br/>
-Çizilecek iç ve dış kenarın türünü belirtir. Bu parametre bir iç kenarlık bayrağının ve bir dış kenarlık bayrağının bir birleşimi olmalıdır. Parametrenin türlerin bir tablosu için Windows SDK bkz. [Drasürgülü](/windows/desktop/api/winuser/nf-winuser-drawedge) .
+Çizilecek iç ve dış kenarın türünü belirtir. Bu parametre bir iç kenarlık bayrağının ve bir dış kenarlık bayrağının bir birleşimi olmalıdır. Parametrenin türlerin bir tablosu için Windows SDK bkz. [Drasürgülü](/windows/win32/api/winuser/nf-winuser-drawedge) .
 
 *nFlags*<br/>
 Çizilecek kenarlık türünü belirten bayraklar. Parametrenin `DrawEdge` değerlerinin bir tablosu için Windows SDK bakın. Çapraz çizgiler için, BF_RECT bayrakları dikdörtgen parametresi tarafından sınırlanmış bir vektör bitiş noktasını belirtir.
@@ -1555,7 +1555,7 @@ void DrawFocusRect(LPCRECT lpRect);
 ### <a name="parameters"></a>Parametreler
 
 *lpRect*<br/>
-Çizilecek dikdörtgenin mantıksal koordinatlarını belirten bir [Rect](/windows/desktop/api/windef/ns-windef-tagrect) yapısına veya [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesine işaret eder.
+Çizilecek dikdörtgenin mantıksal koordinatlarını belirten bir [Rect](/windows/win32/api/windef/ns-windef-rect) yapısına veya [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesine işaret eder.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1581,7 +1581,7 @@ BOOL DrawFrameControl(
 Dikdörtgenin mantıksal koordinatlarını içeren `RECT` bir yapıya yönelik işaretçi.
 
 *nTür*<br/>
-Çizilecek çerçeve denetiminin türünü belirtir. Bu parametrenin olası değerlerinin bir listesi için Windows SDK, [DrawFrameControl](/windows/desktop/api/winuser/nf-winuser-drawframecontrol) Içindeki *Utürü* parametresi ' ne bakın.
+Çizilecek çerçeve denetiminin türünü belirtir. Bu parametrenin olası değerlerinin bir listesi için Windows SDK, [DrawFrameControl](/windows/win32/api/winuser/nf-winuser-drawframecontrol) Içindeki *Utürü* parametresi ' ne bakın.
 
 *nDurum*<br/>
 Çerçeve denetiminin başlangıç durumunu belirtir. Windows SDK içinde *Ustate* parametresi `DrawFrameControl` için tanımlanan bir veya daha fazla değer olabilir. Basma düğmesinin çevresindeki kenarı hariç tutmak üzere sınırlayıcı dikdörtgeni ayarlamak için *nState* değeri DFCS_ADJUSTRECT ' i kullanın.
@@ -1675,7 +1675,7 @@ Simgenin sol üst köşesinin mantıksal y koordinatını belirtir.
 Çizilecek simgenin tanıtıcısını tanımlar.
 
 *seçeneğinin*<br/>
-Simgenin sol üst köşesinin mantıksal x ve y koordinatlarını belirtir. Bu parametre için bir [nokta](/windows/desktop/api/windef/ns-windef-tagpoint) yapısını veya bir [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesnesini geçirebilirsiniz.
+Simgenin sol üst köşesinin mantıksal x ve y koordinatlarını belirtir. Bu parametre için bir [nokta](/windows/win32/api/windef/ns-windef-point) yapısını veya bir [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesnesini geçirebilirsiniz.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1774,7 +1774,7 @@ Görüntünün boyutunu belirtir.
 Bit eşlem tutamacı.
 
 *nFlags*<br/>
-Görüntü türünü ve durumunu belirten bayraklar. Olası *nFlags* türleri ve durumları Için Windows SDK [DrawState](/windows/desktop/api/winuser/nf-winuser-drawstatea) bölümüne bakın.
+Görüntü türünü ve durumunu belirten bayraklar. Olası *nFlags* türleri ve durumları Için Windows SDK [DrawState](/windows/win32/api/winuser/nf-winuser-drawstatew) bölümüne bakın.
 
 *hBrush*<br/>
 Bir fırçanın tutamacı.
@@ -1798,7 +1798,7 @@ Hızlandırıcı anımsatıcı içerebilen metin. *LDATA* parametresi, dizenin a
 *LpszText*tarafından işaret edilen metin dizesinin uzunluğu. *NTextLen* 0 ise, dizenin null ile sonlandırıldığını kabul edilir.
 
 *lpDrawProc*<br/>
-Bir görüntüyü işlemek için kullanılan geri çağırma işlevine yönelik bir işaretçi. *NFlags* içindeki görüntü türü DST_COMPLEX ise bu parametre gereklidir. Bu, isteğe bağlıdır ve görüntü türü DST_TEXT ise NULL olabilir. Diğer tüm görüntü türleri için bu parametre yok sayılır. Geri çağırma işlevi hakkında daha fazla bilgi için Windows SDK [DrawStateProc](/windows/desktop/api/winuser/nc-winuser-drawstateproc) işlevine bakın.
+Bir görüntüyü işlemek için kullanılan geri çağırma işlevine yönelik bir işaretçi. *NFlags* içindeki görüntü türü DST_COMPLEX ise bu parametre gereklidir. Bu, isteğe bağlıdır ve görüntü türü DST_TEXT ise NULL olabilir. Diğer tüm görüntü türleri için bu parametre yok sayılır. Geri çağırma işlevi hakkında daha fazla bilgi için Windows SDK [DrawStateProc](/windows/win32/api/winuser/nc-winuser-drawstateproc) işlevine bakın.
 
 *lData*<br/>
 Görüntüyle ilgili bilgileri belirtir. Bu parametrenin anlamı, görüntü türüne bağlıdır.
@@ -1833,13 +1833,13 @@ int DrawText(
 Dizedeki karakter sayısını belirtir. *NCount* değeri-1 ise, *lpszString* null ile sonlandırılmış bir dizeye uzun bir işaretçi olarak kabul edilir ve `DrawText` karakter sayısını otomatik olarak hesaplar.
 
 *lpRect*<br/>
-Metnin biçimlendirildiği dikdörtgeni (mantıksal koordinatlarla) içeren bir [Rect](/windows/desktop/api/windef/ns-windef-tagrect) yapısına veya [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesine işaret eder.
+Metnin biçimlendirildiği dikdörtgeni (mantıksal koordinatlarla) içeren bir [Rect](/windows/win32/api/windef/ns-windef-rect) yapısına veya [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesine işaret eder.
 
 *üstbilgisine*<br/>
 Çizilecek belirtilen karakterleri içeren bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) nesnesi.
 
 *nFormat*<br/>
-Metni biçimlendirme yöntemini belirtir. Windows SDK [DrawText](/windows/desktop/api/winuser/nf-winuser-drawtext) Içindeki *uFormat* parametresi için tanımlanan değerlerin herhangi bir birleşimi olabilir. (bit düzeyinde OR işlecini kullanarak birleştirin):
+Metni biçimlendirme yöntemini belirtir. Windows SDK [DrawText](/windows/win32/api/winuser/nf-winuser-drawtext) Içindeki *uFormat* parametresi için tanımlanan değerlerin herhangi bir birleşimi olabilir. (bit düzeyinde OR işlecini kullanarak birleştirin):
 
 > [!NOTE]
 >  Bazı *uFormat* bayrak birleşimleri, geçen dizenin değiştirilmesine neden olabilir. DT_END_ELLIPSIS veya DT_PATH_ELLIPSIS ile DT_MODIFYSTRING kullanmak, dizenin değiştirilmesine neden olabilir ve bu da `CString` geçersiz kılmada bir onaylama işlemi yapılmasına yol açabilir. DT_CALCRECT, DT_EXTERNALLEADING, DT_INTERNAL, DT_NOCLIP ve DT_NOPREFIX değerleri DT_TABSTOP değeri ile kullanılamaz.
@@ -1890,23 +1890,23 @@ int DrawTextEx(
 Dizedeki karakter sayısını belirtir. *NCount* değeri-1 ise, *lpszString* null ile sonlandırılmış bir dizeye uzun bir işaretçi olarak kabul edilir ve `DrawText` karakter sayısını otomatik olarak hesaplar.
 
 *lpRect*<br/>
-Metnin biçimlendirildiği dikdörtgeni (mantıksal koordinatlarla) içeren bir [Rect](/windows/desktop/api/windef/ns-windef-tagrect) yapısına veya [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesine işaret eder.
+Metnin biçimlendirildiği dikdörtgeni (mantıksal koordinatlarla) içeren bir [Rect](/windows/win32/api/windef/ns-windef-rect) yapısına veya [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesine işaret eder.
 
 *üstbilgisine*<br/>
 Çizilecek belirtilen karakterleri içeren bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) nesnesi.
 
 *nFormat*<br/>
-Metni biçimlendirme yöntemini belirtir. Windows SDK [DrawText](/windows/desktop/api/winuser/nf-winuser-drawtext) Içindeki *uFormat* parametresi için tanımlanan değerlerin herhangi bir birleşimi olabilir. (Bit düzeyinde **or** işlecini kullanarak birleştirin):
+Metni biçimlendirme yöntemini belirtir. Windows SDK [DrawText](/windows/win32/api/winuser/nf-winuser-drawtext) Içindeki *uFormat* parametresi için tanımlanan değerlerin herhangi bir birleşimi olabilir. (Bit düzeyinde **or** işlecini kullanarak birleştirin):
 
 > [!NOTE]
 >  Bazı *uFormat* bayrak birleşimleri, geçen dizenin değiştirilmesine neden olabilir. DT_END_ELLIPSIS veya DT_PATH_ELLIPSIS ile DT_MODIFYSTRING kullanmak, dizenin değiştirilmesine neden olabilir ve bu da `CString` geçersiz kılmada bir onaylama işlemi yapılmasına yol açabilir. DT_CALCRECT, DT_EXTERNALLEADING, DT_INTERNAL, DT_NOCLIP ve DT_NOPREFIX değerleri DT_TABSTOP değeri ile kullanılamaz.
 
 *lpDTParams*<br/>
-Ek biçimlendirme seçenekleri belirten bir [drawtextparams](/windows/desktop/api/winuser/ns-winuser-tagdrawtextparams) yapısına yönelik işaretçi. Bu parametre NULL olabilir.
+Ek biçimlendirme seçenekleri belirten bir [drawtextparams](/windows/win32/api/winuser/ns-winuser-drawtextparams) yapısına yönelik işaretçi. Bu parametre NULL olabilir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sekmeleri uygun alanlara genişleterek, metni belirli bir dikdörtgenin soluna, sağına veya merkezine hizalayarak ve metni verilen dikdörtgenin içine sığan çizgilere bölerek metin biçimlendirir. Biçimlendirme türü *nFormat* ve *lpDTParams*tarafından belirtilir. Daha fazla bilgi için Windows SDK bkz. [CDC::D rawText](#drawtext) ve [DrawTextEx](/windows/desktop/api/winuser/nf-winuser-drawtextexa) .
+Sekmeleri uygun alanlara genişleterek, metni belirli bir dikdörtgenin soluna, sağına veya merkezine hizalayarak ve metni verilen dikdörtgenin içine sığan çizgilere bölerek metin biçimlendirir. Biçimlendirme türü *nFormat* ve *lpDTParams*tarafından belirtilir. Daha fazla bilgi için Windows SDK bkz. [CDC::D rawText](#drawtext) ve [DrawTextEx](/windows/win32/api/winuser/nf-winuser-drawtextexw) .
 
 Metin rengi [CDC:: SetTextColor](#settextcolor)ile ayarlanabilir.
 
@@ -2087,7 +2087,7 @@ int Escape(
 *nEscape*<br/>
 Gerçekleştirilecek kaçış işlevini belirtir.
 
-Kaçış işlevlerinin tüm listesi için, Windows SDK [kaçış](/windows/desktop/api/wingdi/nf-wingdi-escape) bölümüne bakın.
+Kaçış işlevlerinin tüm listesi için, Windows SDK [kaçış](/windows/win32/api/wingdi/nf-wingdi-escape) bölümüne bakın.
 
 *nCount*<br/>
 *LpszInData*tarafından işaret edilen veri baytlarının sayısını belirtir.
@@ -2140,11 +2140,11 @@ Win32 programlama için, `CDC` bunlara karşılık gelen yazıcı kaçışların
 
 - [CDC:: StartPage](#startpage)
 
-Ayrıca, [CDC:: GetDeviceCaps](#getdevicecaps) , diğer yazıcı kaçışları yerine geçen Win32 dizinlerini destekler. Daha fazla bilgi için Windows SDK bkz. [GetDeviceCaps](/windows/desktop/api/wingdi/nf-wingdi-getdevicecaps) .
+Ayrıca, [CDC:: GetDeviceCaps](#getdevicecaps) , diğer yazıcı kaçışları yerine geçen Win32 dizinlerini destekler. Daha fazla bilgi için Windows SDK bkz. [GetDeviceCaps](/windows/win32/api/wingdi/nf-wingdi-getdevicecaps) .
 
 Bu üye işlevi, uygulamaların GDI aracılığıyla doğrudan kullanılamayan belirli bir cihazın tesislere erişmesini sağlar.
 
-Uygulamanız önceden tanımlanmış kaçış değerlerini kullanıyorsa, ilk sürümü kullanın. Uygulamanız özel kaçış değerlerini tanımlıyorsa ikinci sürümü kullanın. İkinci sürüm hakkında daha fazla bilgi için Windows SDK [ExtEscape](/windows/desktop/api/wingdi/nf-wingdi-extescape) bakın.
+Uygulamanız önceden tanımlanmış kaçış değerlerini kullanıyorsa, ilk sürümü kullanın. Uygulamanız özel kaçış değerlerini tanımlıyorsa ikinci sürümü kullanın. İkinci sürüm hakkında daha fazla bilgi için Windows SDK [ExtEscape](/windows/win32/api/wingdi/nf-wingdi-extescape) bakın.
 
 ##  <a name="excludecliprect"></a>CDC:: Excludeclienprect
 
@@ -2301,7 +2301,7 @@ Dikdörtgen türünü belirtir. Bu parametre bir, her ikisi de olabilir ya da a�
 - ETO_OPAQUE geçerli arka plan renginin dikdörtgeni doldurduğunu belirtir. (Geçerli arka plan rengini [SetBkColor](#setbkcolor) ve [GetBkColor](#getbkcolor) üye işlevleriyle ayarlayıp sorgulayabilirsiniz.)
 
 *lpRect*<br/>
-Dikdörtgenin boyutlarını belirleyen bir [Rect](/windows/desktop/api/windef/ns-windef-tagrect) yapısına işaret eder. Bu parametre NULL olabilir. Ayrıca, bu parametre için bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi geçirebilirsiniz.
+Dikdörtgenin boyutlarını belirleyen bir [Rect](/windows/win32/api/windef/ns-windef-rect) yapısına işaret eder. Bu parametre NULL olabilir. Ayrıca, bu parametre için bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi geçirebilirsiniz.
 
 *lpszString*<br/>
 Çizilecek belirtilen karakter dizesine işaret eder. Ayrıca, bu parametre için bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) nesnesi geçirebilirsiniz.
@@ -2354,7 +2354,7 @@ void FillRect(
 ### <a name="parameters"></a>Parametreler
 
 *lpRect*<br/>
-Doldurulacak dikdörtgenin mantıksal koordinatlarını içeren bir [Rect](/windows/desktop/api/windef/ns-windef-tagrect) yapısına işaret eder. Ayrıca, bu parametre için bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi geçirebilirsiniz.
+Doldurulacak dikdörtgenin mantıksal koordinatlarını içeren bir [Rect](/windows/win32/api/windef/ns-windef-rect) yapısına işaret eder. Ayrıca, bu parametre için bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi geçirebilirsiniz.
 
 *pBrush*<br/>
 Dikdörtgeni dolduracak şekilde kullanılan fırçayı tanımlar.
@@ -2419,7 +2419,7 @@ void FillSolidRect(
 ### <a name="parameters"></a>Parametreler
 
 *lpRect*<br/>
-Sınırlayıcı dikdörtgeni (mantıksal birimler cinsinden) belirtir. Bu parametre için, bir [Rect](/windows/desktop/api/windef/ns-windef-tagrect) veri yapısına veya `CRect` nesnesine bir işaretçi geçirebilirsiniz.
+Sınırlayıcı dikdörtgeni (mantıksal birimler cinsinden) belirtir. Bu parametre için, bir [Rect](/windows/win32/api/windef/ns-windef-rect) veri yapısına veya `CRect` nesnesine bir işaretçi geçirebilirsiniz.
 
 *clr* Dikdörtgeni doldururken kullanılacak rengi belirtir.
 
@@ -2501,7 +2501,7 @@ void FrameRect(
 ### <a name="parameters"></a>Parametreler
 
 *lpRect*<br/>
-Dikdörtgenin sol üst ve sağ alt köşelerinden oluşan mantıksal koordinatları içeren bir [Rect](/windows/desktop/api/windef/ns-windef-tagrect) yapısına veya [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesine işaret eder. Ayrıca, bu parametre için `CRect` bir nesne geçirebilirsiniz.
+Dikdörtgenin sol üst ve sağ alt köşelerinden oluşan mantıksal koordinatları içeren bir [Rect](/windows/win32/api/windef/ns-windef-rect) yapısına veya [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesine işaret eder. Ayrıca, bu parametre için `CRect` bir nesne geçirebilirsiniz.
 
 *pBrush*<br/>
 Dikdörtgenin çerçeveleme için kullanılacak fırçayı tanımlar.
@@ -2718,16 +2718,16 @@ DWORD GetCharacterPlacement(
 İşlenecek karakter dizesine yönelik bir işaretçi.
 
 *nCount*<br/>
-Dizenin uzunluğunu belirtir. ANSI sürümü için, bir bayt sayısıdır ve Unicode işlevi için bir sözcük sayısı olur. Daha fazla bilgi için bkz. [Getkarakteryerleşimi](/windows/desktop/api/wingdi/nf-wingdi-getcharacterplacementa).
+Dizenin uzunluğunu belirtir. ANSI sürümü için, bir bayt sayısıdır ve Unicode işlevi için bir sözcük sayısı olur. Daha fazla bilgi için bkz. [Getkarakteryerleşimi](/windows/win32/api/wingdi/nf-wingdi-getcharacterplacementw).
 
 *Nmaxkapsam*<br/>
 Dizenin işlendiği maksimum kapsamı (mantıksal birimler cinsinden) belirtir. İşlenirse, bu kapsamı aşacağından karakterler yok sayılır. Gerekli sıralama veya glif dizileri için hesaplamalar yalnızca dahil edilen karakterlere uygulanır. Bu parametre yalnızca *dwFlags* parametresinde GCP_MAXEXTENT değeri belirtilmişse kullanılır. İşlev giriş dizesini işlerken, her bir karakter ve kapsamı yalnızca toplam kapsam en yüksek değeri aşmadığı takdirde çıkışa, kapsama ve diğer dizilere eklenir. Sınıra ulaşıldığında işleme durdurulur.
 
 *lpResults*<br/>
-İşlevin sonuçlarını alan bir [GCP_Results](/windows/desktop/api/wingdi/ns-wingdi-taggcp_resultsa) yapısına yönelik işaretçi.
+İşlevin sonuçlarını alan bir [GCP_Results](/windows/win32/api/wingdi/ns-wingdi-gcp_resultsw) yapısına yönelik işaretçi.
 
 *dwFlags*<br/>
-Dizenin gerekli dizilere nasıl işlenmesi gerektiğini belirtir. Bu parametre, [Getkarakteryerleşimi](/windows/desktop/api/wingdi/nf-wingdi-getcharacterplacementa) konusunun *dwFlags* bölümünde listelenen değerlerden biri veya daha fazlası olabilir.
+Dizenin gerekli dizilere nasıl işlenmesi gerektiğini belirtir. Bu parametre, [Getkarakteryerleşimi](/windows/win32/api/wingdi/nf-wingdi-getcharacterplacementw) konusunun *dwFlags* bölümünde listelenen değerlerden biri veya daha fazlası olabilir.
 
 *üstbilgisine*<br/>
 İşlemek için bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) nesnesi işaretçisi.
@@ -2740,7 +2740,7 @@ Dizenin gerekli dizilere nasıl işlenmesi gerektiğini belirtir. Bu parametre, 
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, Windows SDK bölümünde açıklandığı gibi, [Getkarakteryerleştirmesi](/windows/desktop/api/wingdi/nf-wingdi-getcharacterplacementa)işlevinin işlevselliğine öykünür.
+Bu üye işlevi, Windows SDK bölümünde açıklandığı gibi, [Getkarakteryerleştirmesi](/windows/win32/api/wingdi/nf-wingdi-getcharacterplacementw)işlevinin işlevselliğine öykünür.
 
 ##  <a name="getcharabcwidths"></a>CDC:: GetCharABCWidths
 
@@ -2767,10 +2767,10 @@ Karakter genişliklerinin döndürüldüğü geçerli yazı tipindeki karakter a
 Geçerli yazı tipindeki karakter genişliklerinin döndürüldüğü karakter aralığındaki son karakteri belirtir.
 
 *lpabc*<br/>
-İşlev döndürüldüğünde karakter genişliklerini alan bir [ABC](/windows/desktop/api/wingdi/ns-wingdi-abc) yapıları dizisine işaret eder. Bu dizi en az, `ABC` *nFirstChar* ve *nLastChar* parametreleriyle belirtilen aralıkta karakter olan en az sayıda yapı içermelidir.
+İşlev döndürüldüğünde karakter genişliklerini alan bir [ABC](/windows/win32/api/wingdi/ns-wingdi-abc) yapıları dizisine işaret eder. Bu dizi en az, `ABC` *nFirstChar* ve *nLastChar* parametreleriyle belirtilen aralıkta karakter olan en az sayıda yapı içermelidir.
 
 *lpABCF*<br/>
-İşlev döndürüldüğünde karakter genişliklerinin alınacağı bir [abcfloat](/windows/desktop/api/wingdi/ns-wingdi-abcfloat) yapıları dizisiyle uygulama tarafından sağlanan bir arabelleğe işaret eder. Bu işlevin döndürdüğü genişlikler IEEE kayan nokta biçimindedir.
+İşlev döndürüldüğünde karakter genişliklerinin alınacağı bir [abcfloat](/windows/win32/api/wingdi/ns-wingdi-abcfloat) yapıları dizisiyle uygulama tarafından sağlanan bir arabelleğe işaret eder. Bu işlevin döndürdüğü genişlikler IEEE kayan nokta biçimindedir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -2784,11 +2784,11 @@ TrueType tarayıcısı, belirli bir nokta boyutu seçildikten sonra "ABC" karakt
 
 `GetCharABCWidths` Üye işlevi bir karakter için negatif "A" veya "C" genişlikleri aldığında, bu karakter eksik askıda kalıyor veya aşırı askıda kalıyor.
 
-ABC genişliklerini yazı tipi tasarım birimlerine dönüştürmek için, bir uygulamanın yüksekliği `lfHeight` ( [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) yapısının üyesinde belirtildiği gibi), `ntmSizeEM` [newtextmetric](/windows/desktop/api/wingdi/ns-wingdi-tagnewtextmetrica) üyesinde depolanan değere eşit olan bir yazı tipi oluşturulmalıdır yapısı. ( `ntmSizeEM` Üyenin değeri, [enumfontaileleri](/windows/desktop/api/wingdi/nf-wingdi-enumfontfamiliesa) Windows işlevi çağırarak alınabilir.)
+ABC genişliklerini yazı tipi tasarım birimlerine dönüştürmek için, bir uygulamanın yüksekliği `lfHeight` ( [LOGFONT](/windows/win32/api/wingdi/ns-wingdi-logfontw) yapısının üyesinde belirtildiği gibi), `ntmSizeEM` [newtextmetric](/windows/win32/api/wingdi/ns-wingdi-newtextmetricw) üyesinde depolanan değere eşit olan bir yazı tipi oluşturulmalıdır yapısı. ( `ntmSizeEM` Üyenin değeri, [enumfontaileleri](/windows/win32/api/wingdi/nf-wingdi-enumfontfamiliesw) Windows işlevi çağırarak alınabilir.)
 
 Varsayılan karakterin ABC genişlikleri, şu anda seçili olan yazı tipinin dışında kalan karakterler için kullanılır.
 
-TrueType olmayan yazı tiplerinde karakterlerin genişliklerini almak için, uygulamaların [GetCharWidth](/windows/desktop/api/wingdi/nf-wingdi-getcharwidtha) Windows işlevini kullanması gerekir.
+TrueType olmayan yazı tiplerinde karakterlerin genişliklerini almak için, uygulamaların [GetCharWidth](/windows/win32/api/wingdi/nf-wingdi-getcharwidthw) Windows işlevini kullanması gerekir.
 
 ##  <a name="getcharabcwidthsi"></a>CDC:: GetCharABCWidthsI
 
@@ -2814,7 +2814,7 @@ Glif dizinlerinin sayısını belirtir.
 Glif dizinleri içeren bir dizi işaretçisi. Değer NULL ise, bunun yerine *GIST* parametresi kullanılır. *CGI* parametresi, bu dizideki glif dizinlerinin sayısını belirtir.
 
 *lpabc*<br/>
-Karakter genişliklerini alan bir [ABC](/windows/desktop/api/wingdi/ns-wingdi-abc) yapıları dizisine yönelik işaretçi. Bu dizi en az, *CGI* parametresi tarafından `ABC` belirtilen glif dizinleri olan en az sayıda yapı içermelidir.
+Karakter genişliklerini alan bir [ABC](/windows/win32/api/wingdi/ns-wingdi-abc) yapıları dizisine yönelik işaretçi. Bu dizi en az, *CGI* parametresi tarafından `ABC` belirtilen glif dizinleri olan en az sayıda yapı içermelidir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -2822,7 +2822,7 @@ Karakter genişliklerini alan bir [ABC](/windows/desktop/api/wingdi/ns-wingdi-ab
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, Windows SDK bölümünde açıklandığı gibi, [GetCharABCWidthsI](/windows/desktop/api/wingdi/nf-wingdi-getcharabcwidthsi)işlevinin işlevselliğine öykünür.
+Bu üye işlevi, Windows SDK bölümünde açıklandığı gibi, [GetCharABCWidthsI](/windows/win32/api/wingdi/nf-wingdi-getcharabcwidthsi)işlevinin işlevselliğine öykünür.
 
 ##  <a name="getcharwidth"></a>CDC:: GetCharWidth
 
@@ -2898,7 +2898,7 @@ Genişlikler alan bir arabelleğin işaretçisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, Windows SDK bölümünde açıklandığı gibi, [GetCharWidthI](/windows/desktop/api/wingdi/nf-wingdi-getcharwidthi)işlevinin işlevselliğine öykünür.
+Bu üye işlevi, Windows SDK bölümünde açıklandığı gibi, [GetCharWidthI](/windows/win32/api/wingdi/nf-wingdi-getcharwidthi)işlevinin işlevselliğine öykünür.
 
 ##  <a name="getclipbox"></a>CDC:: GetClipBox
 
@@ -2911,7 +2911,7 @@ virtual int GetClipBox(LPRECT lpRect) const;
 ### <a name="parameters"></a>Parametreler
 
 *lpRect*<br/>
-Dikdörtgen boyutlarını alacak olan [Rect](/windows/desktop/api/windef/ns-windef-tagrect) yapısına veya [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesine işaret eder.
+Dikdörtgen boyutlarını alacak olan [Rect](/windows/win32/api/windef/ns-windef-rect) yapısına veya [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesine işaret eder.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -2940,7 +2940,7 @@ BOOL GetColorAdjustment(LPCOLORADJUSTMENT lpColorAdjust) const;
 ### <a name="parameters"></a>Parametreler
 
 *Lpcolorayarla*<br/>
-Renk ayarlama değerlerini almak için [colorayarlamasının](/windows/desktop/api/wingdi/ns-wingdi-tagcoloradjustment) veri yapısına işaret eder.
+Renk ayarlama değerlerini almak için [colorayarlamasının](/windows/win32/api/wingdi/ns-wingdi-coloradjustment) veri yapısına işaret eder.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -3052,13 +3052,13 @@ COLORREF GetDCBrushColor() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarılı olursa, dönüş değeri geçerli fırça rengi için [colorref](/windows/desktop/gdi/colorref) değeridir.
+İşlev başarılı olursa, dönüş değeri geçerli fırça rengi için [colorref](/windows/win32/gdi/colorref) değeridir.
 
 İşlev başarısız olursa, dönüş değeri CLR_INVALID olur.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, Windows SDK bölümünde açıklandığı gibi [Getdcbrühcolor](/windows/desktop/api/wingdi/nf-wingdi-getdcbrushcolor)işlevinin işlevselliğine öykünür.
+Bu üye işlevi, Windows SDK bölümünde açıklandığı gibi [Getdcbrühcolor](/windows/win32/api/wingdi/nf-wingdi-getdcbrushcolor)işlevinin işlevselliğine öykünür.
 
 ##  <a name="getdcpencolor"></a>CDC:: GetDCPenColor
 
@@ -3070,13 +3070,13 @@ COLORREF GetDCPenColor() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarılı olursa, dönüş değeri geçerli kalem rengi için [colorref](/windows/desktop/gdi/colorref) değeridir.
+İşlev başarılı olursa, dönüş değeri geçerli kalem rengi için [colorref](/windows/win32/gdi/colorref) değeridir.
 
 İşlev başarısız olursa, dönüş değeri CLR_INVALID olur.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, Windows SDK bölümünde açıklandığı gibi, [GetDCPenColor](/windows/desktop/api/wingdi/nf-wingdi-getdcpencolor)Win32 işlevini kullanır.
+Bu üye işlevi, Windows SDK bölümünde açıklandığı gibi, [GetDCPenColor](/windows/win32/api/wingdi/nf-wingdi-getdcpencolor)Win32 işlevini kullanır.
 
 ##  <a name="getdevicecaps"></a>CDC:: GetDeviceCaps
 
@@ -3089,7 +3089,7 @@ int GetDeviceCaps(int nIndex) const;
 ### <a name="parameters"></a>Parametreler
 
 *nDizin*<br/>
-Döndürülecek bilgi türünü belirtir. Değerlerin listesi için Windows SDK bkz. [GetDeviceCaps](/windows/desktop/api/wingdi/nf-wingdi-getdevicecaps) .
+Döndürülecek bilgi türünü belirtir. Değerlerin listesi için Windows SDK bkz. [GetDeviceCaps](/windows/win32/api/wingdi/nf-wingdi-getdevicecaps) .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -3135,7 +3135,7 @@ Alınacak bilgiler, yazı tipi dosyasına bir konum ve döndürülecek bilgileri
 
 Bir uygulama bazen bir belge ile `GetFontData` bir TrueType yazı tipi kaydetmek için üye işlevini kullanabilir. Bunu yapmak için, uygulama yazı tipinin katıştırılabileceğini belirler ve ardından, *Dwtable*, *Dwkayması*ve *cbData* parametreleri için 0 belirterek tüm yazı tipi dosyasını alır.
 
-Uygulamalar, `otmfsType` [outlinetextmetric](/windows/desktop/api/wingdi/ns-wingdi-outlinetextmetrica) yapısının üyesini denetleyerek bir yazı tipinin katıştırılamayacağını tespit edebilir. Bit 1 ' in `otmfsType` ayarlanmış olması halinde, yazı tipi için eklemeye izin verilmez. Bit 1 boş ise, yazı tipi gömülebilir. Bit 2 ayarlanmışsa, katıştırma salt okunurdur.
+Uygulamalar, `otmfsType` [outlinetextmetric](/windows/win32/api/wingdi/ns-wingdi-outlinetextmetricw) yapısının üyesini denetleyerek bir yazı tipinin katıştırılamayacağını tespit edebilir. Bit 1 ' in `otmfsType` ayarlanmış olması halinde, yazı tipi için eklemeye izin verilmez. Bit 1 boş ise, yazı tipi gömülebilir. Bit 2 ayarlanmışsa, katıştırma salt okunurdur.
 
 Bir uygulama, TrueType olmayan bir yazı tipi için bilgi almak üzere bu işlevi kullanmayı denerse, `GetFontData` üye işlevi-1 döndürür.
 
@@ -3149,11 +3149,11 @@ DWORD GetFontLanguageInfo() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dönüş değeri şu anda seçili olan yazı tipinin özelliklerini tanımlar. Olası değerlerin tamamen listesi için bkz. [GetFontLanguageInfo](/windows/desktop/api/wingdi/nf-wingdi-getfontlanguageinfo).
+Dönüş değeri şu anda seçili olan yazı tipinin özelliklerini tanımlar. Olası değerlerin tamamen listesi için bkz. [GetFontLanguageInfo](/windows/win32/api/wingdi/nf-wingdi-getfontlanguageinfo).
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, Windows SDK açıklanan [GetFontLanguageInfo](/windows/desktop/api/wingdi/nf-wingdi-getfontlanguageinfo)işlevinin işlevselliğine öykünür.
+Bu üye işlevi, Windows SDK açıklanan [GetFontLanguageInfo](/windows/win32/api/wingdi/nf-wingdi-getfontlanguageinfo)işlevinin işlevselliğine öykünür.
 
 ##  <a name="getglyphoutline"></a>  CDC::GetGlyphOutline
 
@@ -3182,7 +3182,7 @@ Bilgilerin döndürüleceği karakteri belirtir.
 |GGO_BITMAP|Glif bit eşlemini döndürür. İşlev döndürüldüğünde, *lpBuffer* tarafından işaret edilen arabellek, satırları doubleword sınırları üzerinde başlayan bir piksel başına 1 bit eşlem içerir.|
 |GGO_NATIVE|Cihaz birimleri kullanarak, tarayıcının yerel biçimindeki eğri veri noktalarını döndürür. Bu değer belirtildiğinde, *lpmat2* içinde belirtilen herhangi bir dönüşüm yok sayılır.|
 
-*NFormat* değeri 0 olduğunda, Işlev bir [glyphölçümler](/windows/desktop/api/wingdi/ns-wingdi-glyphmetrics) yapısını doldurur ancak glif ana hat verilerini döndürmez.
+*NFormat* değeri 0 olduğunda, Işlev bir [glyphölçümler](/windows/win32/api/wingdi/ns-wingdi-glyphmetrics) yapısını doldurur ancak glif ana hat verilerini döndürmez.
 
 *lpgm*<br/>
 Karakter hücresindeki glifin yerleşimini açıklayan bir GLYPHÖLÇÜMLER yapısına işaret eder.
@@ -3194,7 +3194,7 @@ Karakter hücresindeki glifin yerleşimini açıklayan bir GLYPHÖLÇÜMLER yap�
 İşlevin, ana hat karakteriyle ilgili bilgileri kopyaladığı bir arabelleğe işaret eder. *NFormat* GGO_NATIVE değerini belirtirse, bilgiler TTPOLYGONHEADER ve TTPOLYCURVE yapıları biçiminde kopyalanır. Bu değer NULL ise ve *nFormat* GGO_BITMAP ya da GGO_NATIVE değeri ise, işlev arabelleğin gereken boyutunu döndürür.
 
 *lpmat2*<br/>
-Karakter için bir dönüştürme matrisi içeren bir [mat2](/windows/desktop/api/wingdi/ns-wingdi-mat2) yapısına işaret eder. Bu parametre, GGO_NATIVE değeri *nFormat*için BELIRTILDIĞINDE bile null olamaz.
+Karakter için bir dönüştürme matrisi içeren bir [mat2](/windows/win32/api/wingdi/ns-wingdi-mat2) yapısına işaret eder. Bu parametre, GGO_NATIVE değeri *nFormat*için BELIRTILDIĞINDE bile null olamaz.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -3204,7 +3204,7 @@ Karakter için bir dönüştürme matrisi içeren bir [mat2](/windows/desktop/ap
 
 Bir uygulama, *lpmat2*tarafından işaret edilen yapıda 2 ' ye kadar bir dönüşüm matrisi belirterek bit eşlem biçiminde alınan karakterleri döndürebilir.
 
-Glif anahattı bir dizi kontur olarak döndürülür. Her bir kontur, bir [TTPOLYGONHEADER](/windows/desktop/api/wingdi/ns-wingdi-tagttpolygonheader) yapısı tarafından tanımlanır ve bunu anlatmak `TTPOLYCURVE` için gereken birçok yapıyı izler. Tüm noktaları [Pointfx](/windows/desktop/api/wingdi/ns-wingdi-tagpointfx) yapıları olarak döndürülür ve göreli taşımaları değil mutlak konumları temsil eder. `pfxStart` [TTPOLYGONHEADER](/windows/desktop/api/wingdi/ns-wingdi-tagttpolygonheader) yapısının üyesi tarafından verilen başlangıç noktası, bir konturun ana hattının başladığı noktasıdır. Aşağıdaki [TTPOLYCURVE](/windows/desktop/api/wingdi/ns-wingdi-tagttpolycurve) yapıları, tek çizgi kayıtları veya eğri kayıtları olabilir. Çoklu çizgi kayıtları bir dizi noktalardır; noktaları arasına çizilen çizgiler, karakterin ana hattını anlatmaktadır. Eğri kayıtları, TrueType tarafından kullanılan karesel eğrileri temsil eder (yani, ikinci derece b-splines).
+Glif anahattı bir dizi kontur olarak döndürülür. Her bir kontur, bir [TTPOLYGONHEADER](/windows/win32/api/wingdi/ns-wingdi-ttpolygonheader) yapısı tarafından tanımlanır ve bunu anlatmak `TTPOLYCURVE` için gereken birçok yapıyı izler. Tüm noktaları [Pointfx](/windows/win32/api/wingdi/ns-wingdi-pointfx) yapıları olarak döndürülür ve göreli taşımaları değil mutlak konumları temsil eder. `pfxStart` [TTPOLYGONHEADER](/windows/win32/api/wingdi/ns-wingdi-ttpolygonheader) yapısının üyesi tarafından verilen başlangıç noktası, bir konturun ana hattının başladığı noktasıdır. Aşağıdaki [TTPOLYCURVE](/windows/win32/api/wingdi/ns-wingdi-ttpolycurve) yapıları, tek çizgi kayıtları veya eğri kayıtları olabilir. Çoklu çizgi kayıtları bir dizi noktalardır; noktaları arasına çizilen çizgiler, karakterin ana hattını anlatmaktadır. Eğri kayıtları, TrueType tarafından kullanılan karesel eğrileri temsil eder (yani, ikinci derece b-splines).
 
 ##  <a name="getgraphicsmode"></a>CDC:: GetGraphicsMode
 
@@ -3216,15 +3216,15 @@ int GetGraphicsMode() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda geçerli grafik modunu döndürür. Bu yöntemin döndüreme değerlerinin bir listesi için bkz. [GetGraphicsMode](/windows/desktop/api/wingdi/nf-wingdi-getgraphicsmode).
+Başarı durumunda geçerli grafik modunu döndürür. Bu yöntemin döndüreme değerlerinin bir listesi için bkz. [GetGraphicsMode](/windows/win32/api/wingdi/nf-wingdi-getgraphicsmode).
 
 Hatada 0 döndürür.
 
-Genişletilmiş hata bilgilerini almak için [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror)çağrısı yapın.
+Genişletilmiş hata bilgilerini almak için [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror)çağrısı yapın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [GetGraphicsMode](/windows/desktop/api/wingdi/nf-wingdi-getgraphicsmode)Windows GDI işlevini sarmalanmış.
+Bu yöntem, [GetGraphicsMode](/windows/win32/api/wingdi/nf-wingdi-getgraphicsmode)Windows GDI işlevini sarmalanmış.
 
 ##  <a name="gethalftonebrush"></a>CDC:: GetHalftoneBrush
 
@@ -3257,7 +3257,7 @@ int GetKerningPairs(
 ### <a name="parameters"></a>Parametreler
 
 *Nçiftler*<br/>
-*Lpkronnpair*tarafından Işaret edilen [kerningpair](/windows/desktop/api/wingdi/ns-wingdi-tagkerningpair) yapılarının sayısını belirtir. İşlev, *nPairs*tarafından belirtilenden daha fazla karakter aralığı çifti kopyalamacaktır.
+*Lpkronnpair*tarafından Işaret edilen [kerningpair](/windows/win32/api/wingdi/ns-wingdi-kerningpair) yapılarının sayısını belirtir. İşlev, *nPairs*tarafından belirtilenden daha fazla karakter aralığı çifti kopyalamacaktır.
 
 *lpkronnpair*<br/>
 İşlev döndürüldüğünde karakter aralığı çiftlerini `KERNINGPAIR` alan bir yapı dizisine işaret eder. Bu dizi en az *nPairs*tarafından belirtilen sayıda yapıya sahip olmalıdır. Bu parametre NULL ise, işlev yazı tipi için karakter aralığı çiftinin toplam sayısını döndürür.
@@ -3276,7 +3276,7 @@ DWORD GetLayout() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, geçerli cihaz bağlamı için Düzen bayrakları. Aksi halde, GDI_ERROR. Genişletilmiş hata bilgileri için [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror)çağrısı yapın. Düzen bayraklarının bir listesi için bkz. [CDC:: SetLayout](#setlayout).
+Başarılı olursa, geçerli cihaz bağlamı için Düzen bayrakları. Aksi halde, GDI_ERROR. Genişletilmiş hata bilgileri için [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror)çağrısı yapın. Düzen bayraklarının bir listesi için bkz. [CDC:: SetLayout](#setlayout).
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -3351,7 +3351,7 @@ UINT GetOutlineTextMetrics(
 ### <a name="parameters"></a>Parametreler
 
 *lpotm*<br/>
-Bir [Outlinetextmetric](/windows/desktop/api/wingdi/ns-wingdi-outlinetextmetrica) yapıları dizisine işaret eder. Bu parametre NULL ise, işlev alınan ölçüm verileri için gereken arabelleğin boyutunu döndürür.
+Bir [Outlinetextmetric](/windows/win32/api/wingdi/ns-wingdi-outlinetextmetricw) yapıları dizisine işaret eder. Bu parametre NULL ise, işlev alınan ölçüm verileri için gereken arabelleğin boyutunu döndürür.
 
 *cbData*<br/>
 Bilgilerin döndürüldüğü arabelleğin boyutunu bayt cinsinden belirtir.
@@ -3365,7 +3365,7 @@ Bir `OUTLINETEXTMETRIC` yapıya işaret eder. Bu parametre NULL ise, işlev alı
 
 ### <a name="remarks"></a>Açıklamalar
 
-[Outlinetextmetric](/windows/desktop/api/wingdi/ns-wingdi-outlinetextmetrica) yapısı, bir [textmetric](/windows/desktop/api/wingdi/ns-wingdi-tagtextmetrica) yapısı dahil olmak üzere TrueType biçimiyle birlikte sunulan yazı tipi ölçüm bilgilerinin çoğunu içerir. `OUTLINETEXTMETRIC` Yapının son dört üyesi, dizelerin işaretçileridir. Uygulamalar, diğer Üyeler için gereken alana ek olarak bu dizeler için alan ayırmalıdır. Dizelerin boyutuyla ilgili sistem tarafından uygulanan sınır olmadığından, bellek ayırmak için en basit yöntem, `GetOutlineTextMetrics` işleve yapılan ilk çağrıda *lpotm* için null belirterek gereken boyutu almadır.
+[Outlinetextmetric](/windows/win32/api/wingdi/ns-wingdi-outlinetextmetricw) yapısı, bir [textmetric](/windows/win32/api/wingdi/ns-wingdi-textmetricw) yapısı dahil olmak üzere TrueType biçimiyle birlikte sunulan yazı tipi ölçüm bilgilerinin çoğunu içerir. `OUTLINETEXTMETRIC` Yapının son dört üyesi, dizelerin işaretçileridir. Uygulamalar, diğer Üyeler için gereken alana ek olarak bu dizeler için alan ayırmalıdır. Dizelerin boyutuyla ilgili sistem tarafından uygulanan sınır olmadığından, bellek ayırmak için en basit yöntem, `GetOutlineTextMetrics` işleve yapılan ilk çağrıda *lpotm* için null belirterek gereken boyutu almadır.
 
 ##  <a name="getoutputcharwidth"></a>CDC:: GetOutputCharWidth
 
@@ -3424,7 +3424,7 @@ CSize GetOutputTabbedTextExtent(
 Ölçülecek bir karakter dizesini işaret eder. Ayrıca, bu parametre için bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) nesnesi geçirebilirsiniz.
 
 *nCount*<br/>
-*LpszString*tarafından işaret [edilen dizenin uzunluğunu](/windows/desktop/gdi/specifying-length-of-text-output-string) belirtir.
+*LpszString*tarafından işaret [edilen dizenin uzunluğunu](/windows/win32/gdi/specifying-length-of-text-output-string) belirtir.
 
 *nTabPositions*<br/>
 Dizideki, *lpnTabStopPositions*tarafından işaret edilen sekme durağı konumlarının sayısını belirtir.
@@ -3467,7 +3467,7 @@ CSize GetOutputTextExtent(const CString& str) const;
 Bir karakter dizesini işaret eder. Ayrıca, bu parametre için bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) nesnesi geçirebilirsiniz.
 
 *nCount*<br/>
-*LpszString*tarafından işaret [edilen dizenin uzunluğunu](/windows/desktop/gdi/specifying-length-of-text-output-string) belirtir.
+*LpszString*tarafından işaret [edilen dizenin uzunluğunu](/windows/win32/gdi/specifying-length-of-text-output-string) belirtir.
 
 *üstbilgisine*<br/>
 Ölçülecek belirtilen karakterleri içeren nesne.`CString`
@@ -3493,7 +3493,7 @@ BOOL GetOutputTextMetrics(LPTEXTMETRIC lpMetrics) const;
 ### <a name="parameters"></a>Parametreler
 
 *Lpmetrikleri*<br/>
-Ölçümleri alan [Textmetric](/windows/desktop/api/wingdi/ns-wingdi-tagtextmetrica) yapısına işaret eder.
+Ölçümleri alan [Textmetric](/windows/win32/api/wingdi/ns-wingdi-textmetricw) yapısına işaret eder.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -3513,7 +3513,7 @@ int GetPath(
 ### <a name="parameters"></a>Parametreler
 
 *lpPoints*<br/>
-[Nokta](/windows/desktop/api/windef/ns-windef-tagpoint) veri yapıları veya `CPoint` çizgi uç noktaları ve eğri denetim noktalarının yerleştirildiği nesneler dizisini işaret eder.
+[Nokta](/windows/win32/api/windef/ns-windef-point) veri yapıları veya `CPoint` çizgi uç noktaları ve eğri denetim noktalarının yerleştirildiği nesneler dizisini işaret eder.
 
 *lpTypes*<br/>
 Köşe türlerinin yerleştirildiği bir bayt dizisine işaret eder. Değerler aşağıdakilerden biridir:
@@ -3531,7 +3531,7 @@ PT_BEZIERTO türler her zaman üç kümesinde gerçekleşir. Yolun hemen önünd
 - PT_CLOSEFIGURE, ilgili çizgi veya eğri çizildikten sonra şeklin otomatik olarak kapatıldığını belirtir. Şekil, çizgi veya eğri uç noktasından son PT_MOVETO karşılık gelen noktaya bir çizgi çizerek kapalıdır.
 
 *nCount*<br/>
-*LpPoints* dizisine yerleştirilebilecek olan [nokta](/windows/desktop/api/windef/ns-windef-tagpoint) veri yapılarının toplam sayısını belirtir. Bu değer, *lpTypes* dizisine yerleştirilebilecek bayt sayısıyla aynı olmalıdır.
+*LpPoints* dizisine yerleştirilebilecek olan [nokta](/windows/win32/api/windef/ns-windef-point) veri yapılarının toplam sayısını belirtir. Bu değer, *lpTypes* dizisine yerleştirilebilecek bayt sayısıyla aynı olmalıdır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -3578,7 +3578,7 @@ Nokta, kırpma bölgesinde olmalıdır. Nokta kırpma bölgesinde değilse, işl
 
 Tüm cihazlar `GetPixel` işlevi desteklemez. Daha fazla bilgi için bkz. [GetDeviceCaps](#getdevicecaps) üye IşLEVI altındaki RC_BITBLT raster özelliği.
 
-`GetPixel` Member işlevinin iki formu vardır. Birincisi iki koordinat değeri alır; İkincisi, bir [nokta](/windows/desktop/api/windef/ns-windef-tagpoint) yapısını veya bir [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesnesini alır.
+`GetPixel` Member işlevinin iki formu vardır. Birincisi iki koordinat değeri alır; İkincisi, bir [nokta](/windows/win32/api/windef/ns-windef-point) yapısını veya bir [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesnesini alır.
 
 ##  <a name="getpolyfillmode"></a>  CDC::GetPolyFillMode
 
@@ -3669,7 +3669,7 @@ CSize GetTabbedTextExtent(
 Bir karakter dizesini işaret eder. Ayrıca, bu parametre için bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) nesnesi geçirebilirsiniz.
 
 *nCount*<br/>
-*LpszString*tarafından işaret [edilen dizenin uzunluğunu](/windows/desktop/gdi/specifying-length-of-text-output-string) belirtir.
+*LpszString*tarafından işaret [edilen dizenin uzunluğunu](/windows/win32/gdi/specifying-length-of-text-output-string) belirtir.
 
 *nTabPositions*<br/>
 Dizideki, *lpnTabStopPositions*tarafından işaret edilen sekme durağı konumlarının sayısını belirtir.
@@ -3841,7 +3841,7 @@ Biçimlendirilen dizenin mantıksal birimlerinde izin verilen en büyük genişl
 Kısmi karakter kapsamlarını alan tamsayılar dizisine yönelik bir işaretçi. Dizideki her öğe, karakter indisler dizisinin başlangıcı ve *Nmaxuzantısı*tarafından belirtilen boşluğa uyan karakterlerden biri arasındaki uzaklığı mantıksal birimlerde verir. Bu dizide en az *CGI*tarafından belirtilen karakter dizinleri olan çok sayıda öğe olması gerekse de işlev, diziyi, *LPNFit*tarafından belirtilen sayıda karakter dizini için yalnızca uzantıya doldurur. *LpnDx* null ise, işlev kısmi dize genişliklerini hesaplamaz.
 
 *lpSize*<br/>
-Mantıksal birimlerde glif dizinleri dizisinin boyutlarını alan [Boyut](/windows/desktop/api/windef/ns-windef-tagsize) yapısına yönelik işaretçi. Bu değer NULL olamaz.
+Mantıksal birimlerde glif dizinleri dizisinin boyutlarını alan [Boyut](/windows/win32/api/windef/ns-windef-size) yapısına yönelik işaretçi. Bu değer NULL olamaz.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -3849,7 +3849,7 @@ Mantıksal birimlerde glif dizinleri dizisinin boyutlarını alan [Boyut](/windo
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, Windows SDK bölümünde açıklandığı gibi [Gettexbir Texpointi](/windows/desktop/api/wingdi/nf-wingdi-gettextextentexpointi)işlevinin işlevselliğine öykünür.
+Bu üye işlevi, Windows SDK bölümünde açıklandığı gibi [Gettexbir Texpointi](/windows/win32/api/wingdi/nf-wingdi-gettextextentexpointi)işlevinin işlevselliğine öykünür.
 
 ##  <a name="gettextextentpointi"></a>CDC:: Gettextpointı
 
@@ -3871,7 +3871,7 @@ Kapsam alınacak bir karakter dizini dizisine yönelik bir işaretçi.
 *Pgiin*tarafından işaret edilen dizideki karakter sayısını belirtir.
 
 *lpSize*<br/>
-Mantıksal birimlerde glif dizinleri dizisinin boyutlarını alan [Boyut](/windows/desktop/api/windef/ns-windef-tagsize) yapısına yönelik işaretçi. Bu değer NULL olamaz.
+Mantıksal birimlerde glif dizinleri dizisinin boyutlarını alan [Boyut](/windows/win32/api/windef/ns-windef-size) yapısına yönelik işaretçi. Bu değer NULL olamaz.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -3879,7 +3879,7 @@ Mantıksal birimlerde glif dizinleri dizisinin boyutlarını alan [Boyut](/windo
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, Windows SDK açıklanan [Gettexıda Tpointi](/windows/desktop/api/wingdi/nf-wingdi-gettextextentpointi)işlevinin işlevselliğine öykünür.
+Bu üye işlevi, Windows SDK açıklanan [Gettexıda Tpointi](/windows/win32/api/wingdi/nf-wingdi-gettextextentpointi)işlevinin işlevselliğine öykünür.
 
 ##  <a name="gettextface"></a>CDC:: GetTextFace
 
@@ -3923,7 +3923,7 @@ BOOL GetTextMetrics(LPTEXTMETRIC lpMetrics) const;
 ### <a name="parameters"></a>Parametreler
 
 *Lpmetrikleri*<br/>
-Ölçümleri alan [Textmetric](/windows/desktop/api/wingdi/ns-wingdi-tagtextmetrica) yapısına işaret eder.
+Ölçümleri alan [Textmetric](/windows/win32/api/wingdi/ns-wingdi-textmetricw) yapısına işaret eder.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -4004,7 +4004,7 @@ BOOL GetWorldTransform(XFORM& rXform) const;
 ### <a name="parameters"></a>Parametreler
 
 *rXform*<br/>
-Geçerli dünya alanını sayfa boşluğu dönüşümüne alan bir [XFORM](/windows/desktop/api/wingdi/ns-wingdi-tagxform) yapısına başvuru.
+Geçerli dünya alanını sayfa boşluğu dönüşümüne alan bir [XFORM](/windows/win32/api/wingdi/ns-wingdi-xform) yapısına başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -4012,11 +4012,11 @@ Başarılı olduğunda sıfır olmayan bir değer döndürür.
 
 Hatada 0 döndürür.
 
-Genişletilmiş hata bilgilerini almak için [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror)çağrısı yapın.
+Genişletilmiş hata bilgilerini almak için [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror)çağrısı yapın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [GetWorldTransform](/windows/desktop/api/wingdi/nf-wingdi-getworldtransform)Windows GDI işlevini sarmalanmış.
+Bu yöntem, [GetWorldTransform](/windows/win32/api/wingdi/nf-wingdi-getworldtransform)Windows GDI işlevini sarmalanmış.
 
 ##  <a name="gradientfill"></a>CDC:: GradientFill
 
@@ -4034,19 +4034,19 @@ BOOL GradientFill(
 ### <a name="parameters"></a>Parametreler
 
 *Pköşeleri*<br/>
-Her birinin üçgen köşe tanımlayan bir [üç](/windows/desktop/api/wingdi/ns-wingdi-trivertex) nokta yapısı dizisine yönelik işaretçi.
+Her birinin üçgen köşe tanımlayan bir [üç](/windows/win32/api/wingdi/ns-wingdi-trivertex) nokta yapısı dizisine yönelik işaretçi.
 
 *Nköşeleri*<br/>
 Köşe sayısı.
 
 *Pkafes*<br/>
-Üçgen modunda [GRADIENT_TRIANGLE](/windows/desktop/api/wingdi/ns-wingdi-gradient_triangle) yapıları dizisi veya dikdörtgen modundaki bir [GRADIENT_RECT](/windows/desktop/api/wingdi/ns-wingdi-gradient_rect) yapıları dizisi.
+Üçgen modunda [GRADIENT_TRIANGLE](/windows/win32/api/wingdi/ns-wingdi-gradient_triangle) yapıları dizisi veya dikdörtgen modundaki bir [GRADIENT_RECT](/windows/win32/api/wingdi/ns-wingdi-gradient_rect) yapıları dizisi.
 
 *nMeshElements*<br/>
 *Pkafes*'teki öğelerin (üçgenler veya dikdörtgenler) sayısı.
 
 *dwMode*<br/>
-Gradyan dolgusu modunu belirtir. Olası değerler listesi için Windows SDK [GradientFill](/windows/desktop/api/wingdi/nf-wingdi-gradientfill) bakın.
+Gradyan dolgusu modunu belirtir. Olası değerler listesi için Windows SDK [GradientFill](/windows/win32/api/wingdi/nf-wingdi-gradientfill) bakın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -4111,7 +4111,7 @@ Dize çizildiyse veya `TextOut` işlev ya da uygulama tarafından sağlanan çı
 
 Bir uygulama, `GrayString` üye işlevi çağrılmadan düz bir gri rengi destekleyen cihazlarda soluk (gri) dizeler çizebilir. Sistem rengi COLOR_GRAYTEXT, devre dışı bırakılan metni çizmek için kullanılan, düz gri sistem rengidir. Uygulama, COLOR_GRAYTEXT Color değerini `GetSysColor` almak için Windows işlevini çağırabilir. Renk 0 ' dan (siyah) farklı ise, uygulama, metin rengini renk değerine `SetTextColor` ayarlamak için üye işlevini çağırabilir ve sonra dizgiyi doğrudan çizebilirler. Alınan renk siyahsa, uygulamanın, metni Dim (gri `GrayString` ) olarak çağırması gerekir.
 
-*LpfnOutput* null Ise, GDI Windows [TextOut](/windows/desktop/api/wingdi/nf-wingdi-textouta) Işlevini kullanır ve *lpData* , çıkış olacak karaktere bir işaretçi olarak kabul edilir. Çıktı olacak karakterler `TextOut` üye işlev tarafından işlenemezse (örneğin, dize bir bit eşlem olarak depolanır), uygulamanın kendi çıkış işlevini sağlaması gerekir.
+*LpfnOutput* null Ise, GDI Windows [TextOut](/windows/win32/api/wingdi/nf-wingdi-textoutw) Işlevini kullanır ve *lpData* , çıkış olacak karaktere bir işaretçi olarak kabul edilir. Çıktı olacak karakterler `TextOut` üye işlev tarafından işlenemezse (örneğin, dize bir bit eşlem olarak depolanır), uygulamanın kendi çıkış işlevini sağlaması gerekir.
 
 Ayrıca, geri çağırma işlevlerinin Windows 'a döndürülmeden önce Microsoft Foundation özel durumlarını yakalamayacağını unutmayın. Özel durumlar hakkında daha fazla bilgi için bkz. Makale [özel durumları](../../mfc/exception-handling-in-mfc.md).
 
@@ -4130,7 +4130,7 @@ void HIMETRICtoDP(LPSIZE lpSize) const;
 ### <a name="parameters"></a>Parametreler
 
 *lpSize*<br/>
-[Boyut](/windows/desktop/api/windef/ns-windef-tagsize) yapısına veya [CSize](../../atl-mfc-shared/reference/csize-class.md) nesnesine işaret eder.
+[Boyut](/windows/win32/api/windef/ns-windef-size) yapısına veya [CSize](../../atl-mfc-shared/reference/csize-class.md) nesnesine işaret eder.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -4147,7 +4147,7 @@ void HIMETRICtoLP(LPSIZE lpSize) const;
 ### <a name="parameters"></a>Parametreler
 
 *lpSize*<br/>
-[Boyut](/windows/desktop/api/windef/ns-windef-tagsize) yapısına veya [CSize](../../atl-mfc-shared/reference/csize-class.md) nesnesine işaret eder.
+[Boyut](/windows/win32/api/windef/ns-windef-size) yapısına veya [CSize](../../atl-mfc-shared/reference/csize-class.md) nesnesine işaret eder.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -4309,16 +4309,16 @@ void LPtoDP(LPSIZE lpSize) const;
 ### <a name="parameters"></a>Parametreler
 
 *lpPoints*<br/>
-Bir dizi noktaya işaret eder. Dizideki her bir nokta bir [nokta](/windows/desktop/api/windef/ns-windef-tagpoint) yapısı veya bir [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesnesidir.
+Bir dizi noktaya işaret eder. Dizideki her bir nokta bir [nokta](/windows/win32/api/windef/ns-windef-point) yapısı veya bir [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesnesidir.
 
 *nCount*<br/>
 Dizideki noktaların sayısı.
 
 *lpRect*<br/>
-Bir [Rect](/windows/desktop/api/windef/ns-windef-tagrect) yapısına veya bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesine işaret eder. Bu parametre, bir dikdörtgeni mantıksal ile cihaz birimlerine eşlemek için kullanılan yaygın bir durumdur.
+Bir [Rect](/windows/win32/api/windef/ns-windef-rect) yapısına veya bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesine işaret eder. Bu parametre, bir dikdörtgeni mantıksal ile cihaz birimlerine eşlemek için kullanılan yaygın bir durumdur.
 
 *lpSize*<br/>
-[Boyut](/windows/desktop/api/windef/ns-windef-tagsize) yapısına veya [CSize](../../atl-mfc-shared/reference/csize-class.md) nesnesine işaret eder.
+[Boyut](/windows/win32/api/windef/ns-windef-size) yapısına veya [CSize](../../atl-mfc-shared/reference/csize-class.md) nesnesine işaret eder.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -4448,10 +4448,10 @@ BOOL ModifyWorldTransform(
 ### <a name="parameters"></a>Parametreler
 
 *rXform*<br/>
-Verilen cihaz bağlamı için dünya dönüşümünü değiştirmek üzere kullanılan bir [XFORM](/windows/desktop/api/wingdi/ns-wingdi-tagxform) yapısına başvuru.
+Verilen cihaz bağlamı için dünya dönüşümünü değiştirmek üzere kullanılan bir [XFORM](/windows/win32/api/wingdi/ns-wingdi-xform) yapısına başvuru.
 
 *ımode*<br/>
-Dönüştürme verilerinin geçerli dünya dönüşümünü nasıl değiştirdiğine belirtir. Bu parametrenin ele aldığı değerlerin bir listesi için bkz. [ModifyWorldTransform](/windows/desktop/api/wingdi/nf-wingdi-modifyworldtransform).
+Dönüştürme verilerinin geçerli dünya dönüşümünü nasıl değiştirdiğine belirtir. Bu parametrenin ele aldığı değerlerin bir listesi için bkz. [ModifyWorldTransform](/windows/win32/api/wingdi/nf-wingdi-modifyworldtransform).
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -4459,11 +4459,11 @@ Başarılı olduğunda sıfır olmayan bir değer döndürür.
 
 Hatada 0 döndürür.
 
-Genişletilmiş hata bilgilerini almak için [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror)çağrısı yapın.
+Genişletilmiş hata bilgilerini almak için [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror)çağrısı yapın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, Windows GDI işlevi [ModifyWorldTransform](/windows/desktop/api/wingdi/nf-wingdi-modifyworldtransform)' i sarmalanmış.
+Bu yöntem, Windows GDI işlevi [ModifyWorldTransform](/windows/win32/api/wingdi/nf-wingdi-modifyworldtransform)' i sarmalanmış.
 
 ##  <a name="moveto"></a>CDC:: MoveTo
 
@@ -4713,7 +4713,7 @@ Yay uç noktasının y koordinatını (mantıksal birimler cinsinden) belirtir. 
 Sınırlayıcı dikdörtgeni belirtir. Bu parametre için bir `CRect` nesne ya da bir `RECT` yapı işaretçisi geçirebilirsiniz.
 
 *ptStart*<br/>
-Yay başlangıç noktasını belirtir. Bu noktanın, tam olarak yay üzerinde olması gerekmez. Bu parametre için bir [nokta](/windows/desktop/api/windef/ns-windef-tagpoint) yapısını ya da [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesnesini geçirebilirsiniz.
+Yay başlangıç noktasını belirtir. Bu noktanın, tam olarak yay üzerinde olması gerekmez. Bu parametre için bir [nokta](/windows/win32/api/windef/ns-windef-point) yapısını ya da [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesnesini geçirebilirsiniz.
 
 *ptEnd 'ler*<br/>
 Yay uç noktasını belirtir. Bu noktanın, tam olarak yay üzerinde olması gerekmez. Bu parametre için bir `POINT` yapı ya da bir `CPoint` nesne geçirebilirsiniz.
@@ -4850,7 +4850,7 @@ BOOL PolyBezier(
 ### <a name="parameters"></a>Parametreler
 
 *lpPoints*<br/>
-, Nesnelerin uç noktalarını ve denetim noktalarını içeren bir [nokta](/windows/desktop/api/windef/ns-windef-tagpoint) veri yapıları dizisine işaret eder.
+, Nesnelerin uç noktalarını ve denetim noktalarını içeren bir [nokta](/windows/win32/api/windef/ns-windef-point) veri yapıları dizisine işaret eder.
 
 *nCount*<br/>
 *LpPoints* dizisindeki noktaların sayısını belirtir. Her Bzier eğrisi iki denetim noktası ve bir uç nokta gerektirdiğinden ve başlangıç eğrisi ek bir başlangıç noktası gerektirdiğinden, bu değer üç kereden fazla üç kez olmalıdır.
@@ -4878,7 +4878,7 @@ BOOL PolyBezierTo(
 ### <a name="parameters"></a>Parametreler
 
 *lpPoints*<br/>
-Uç noktaları ve denetim noktalarını içeren bir [nokta](/windows/desktop/api/windef/ns-windef-tagpoint) veri yapıları dizisine işaret eder.
+Uç noktaları ve denetim noktalarını içeren bir [nokta](/windows/win32/api/windef/ns-windef-point) veri yapıları dizisine işaret eder.
 
 *nCount*<br/>
 *LpPoints* dizisindeki noktaların sayısını belirtir. Her Bzier eğrisi iki denetim noktası ve bir uç nokta gerektirdiğinden bu değer çizilecek daki cetvelleri sayısının üç katı olmalıdır.
@@ -4909,7 +4909,7 @@ BOOL PolyDraw(
 ### <a name="parameters"></a>Parametreler
 
 *lpPoints*<br/>
-Her bir satır parçasının bitiş noktalarını ve her bir Bzier eğrisi için uç noktaları ve denetim noktalarını içeren bir [nokta](/windows/desktop/api/windef/ns-windef-tagpoint) veri yapıları dizisine işaret eder.
+Her bir satır parçasının bitiş noktalarını ve her bir Bzier eğrisi için uç noktaları ve denetim noktalarını içeren bir [nokta](/windows/win32/api/windef/ns-windef-point) veri yapıları dizisine işaret eder.
 
 *lpTypes*<br/>
 *LpPoints* dizisindeki her noktanın nasıl kullanıldığını belirten bir diziyi işaret eder. Değerler aşağıdakilerden biri olabilir:
@@ -5001,7 +5001,7 @@ Dizideki noktaların sayısını belirtir. Bu değer en az 2 olmalıdır.
 
 Satırlar, geçerli kalemin kullanıldığı sonraki noktalara göre ilk noktadan çizilir. Üye işlevinin aksine `Polyline` , işlev geçerli konumu kullanmaz veya güncelleştirmez. `LineTo`
 
-Daha fazla bilgi için Windows SDK [Çoklu çizgi](/windows/desktop/api/wingdi/nf-wingdi-polyline) bölümüne bakın.
+Daha fazla bilgi için Windows SDK [Çoklu çizgi](/windows/win32/api/wingdi/nf-wingdi-polyline) bölümüne bakın.
 
 ##  <a name="polylineto"></a>CDC::P olylineTo
 
@@ -5016,7 +5016,7 @@ BOOL PolylineTo(
 ### <a name="parameters"></a>Parametreler
 
 *lpPoints*<br/>
-Çizginin köşelerini içeren bir [nokta](/windows/desktop/api/windef/ns-windef-tagpoint) veri yapıları dizisine işaret eder.
+Çizginin köşelerini içeren bir [nokta](/windows/win32/api/windef/ns-windef-point) veri yapıları dizisine işaret eder.
 
 *nCount*<br/>
 Dizideki noktaların sayısını belirtir.
@@ -5932,7 +5932,7 @@ BOOL SetColorAdjustment(const COLORADJUSTMENT* lpColorAdjust);
 ### <a name="parameters"></a>Parametreler
 
 *Lpcolorayarla*<br/>
-Renk ayarlama değerlerini içeren bir [colorayarlamasının](/windows/desktop/api/wingdi/ns-wingdi-tagcoloradjustment) veri yapısına işaret eder.
+Renk ayarlama değerlerini içeren bir [colorayarlamasının](/windows/win32/api/wingdi/ns-wingdi-coloradjustment) veri yapısına işaret eder.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -5963,7 +5963,7 @@ Yeni fırça rengini belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, Windows SDK açıklandığı gibi [Setdcbrühcolor](/windows/desktop/api/wingdi/nf-wingdi-setdcbrushcolor)işlevinin işlevselliğine öykünür.
+Bu yöntem, Windows SDK açıklandığı gibi [Setdcbrühcolor](/windows/win32/api/wingdi/nf-wingdi-setdcbrushcolor)işlevinin işlevselliğine öykünür.
 
 ##  <a name="setdcpencolor"></a>CDC:: SetDCPenColor
 
@@ -5984,7 +5984,7 @@ Yeni kalem rengini belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, Windows SDK bölümünde açıklandığı gibi, [SetDCPenColor](/windows/desktop/api/wingdi/nf-wingdi-setdcpencolor)Win32 işlevini kullanır.
+Bu üye işlevi, Windows SDK bölümünde açıklandığı gibi, [SetDCPenColor](/windows/win32/api/wingdi/nf-wingdi-setdcpencolor)Win32 işlevini kullanır.
 
 ##  <a name="setgraphicsmode"></a>CDC:: SetGraphicsMode
 
@@ -5997,17 +5997,17 @@ int SetGraphicsMode(int iMode);
 ### <a name="parameters"></a>Parametreler
 
 *ımode*<br/>
-Grafik modunu belirtir. Bu parametrenin ele aldığı değerlerin bir listesi için bkz. [SetGraphicsMode](/windows/desktop/api/wingdi/nf-wingdi-setgraphicsmode).
+Grafik modunu belirtir. Bu parametrenin ele aldığı değerlerin bir listesi için bkz. [SetGraphicsMode](/windows/win32/api/wingdi/nf-wingdi-setgraphicsmode).
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 Başarı durumunda eski grafik modunu döndürür.
 
-Hatada 0 döndürür. Genişletilmiş hata bilgilerini almak için [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror)çağrısı yapın.
+Hatada 0 döndürür. Genişletilmiş hata bilgilerini almak için [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror)çağrısı yapın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [SetGraphicsMode](/windows/desktop/api/wingdi/nf-wingdi-setgraphicsmode)Windows GDI işlevini sarmalanmış.
+Bu yöntem, [SetGraphicsMode](/windows/win32/api/wingdi/nf-wingdi-setgraphicsmode)Windows GDI işlevini sarmalanmış.
 
 ##  <a name="setlayout"></a>CDC:: SetLayout
 
@@ -6032,7 +6032,7 @@ Cihaz bağlamı düzeni ve bit eşlem denetim bayrakları. Aşağıdaki değerle
 
 Başarılı olursa, cihaz bağlamının önceki düzeni.
 
-Başarısız olursa, GDI_ERROR. Genişletilmiş hata bilgilerini almak için [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror)çağrısı yapın.
+Başarısız olursa, GDI_ERROR. Genişletilmiş hata bilgilerini almak için [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror)çağrısı yapın.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -6042,7 +6042,7 @@ Normalde, bir pencere çağırmayın `SetLayout` . Bunun yerine, WS_EX_RTLREADIN
 
 Birçok bit eşlem gibi bazı durumlarda, soldan sağa düzeni korumak isteyebilirsiniz. Bu durumlarda, veya `BitBlt` `StretchBlt`çağırarak görüntüyü işleme, sonra *dwLayout* için bit eşlem denetim bayrağını LAYOUT_BITMAPORIENTATIONPRESERVED olarak ayarlayın.
 
-Düzeni LAYOUT_RTL bayrağıyla değiştirdiğinizde normalde sağ veya sol belirten bayraklar ters çevrilir. Karışıklıkları önlemek için standart bayraklar için alternatif adlar tanımlamak isteyebilirsiniz. Önerilen alternatif bayrak adlarının bir listesi için Windows SDK [SetLayout](/windows/desktop/api/wingdi/nf-wingdi-setlayout) bölümüne bakın.
+Düzeni LAYOUT_RTL bayrağıyla değiştirdiğinizde normalde sağ veya sol belirten bayraklar ters çevrilir. Karışıklıkları önlemek için standart bayraklar için alternatif adlar tanımlamak isteyebilirsiniz. Önerilen alternatif bayrak adlarının bir listesi için Windows SDK [SetLayout](/windows/win32/api/wingdi/nf-wingdi-setlayout) bölümüne bakın.
 
 ##  <a name="setmapmode"></a>CDC:: SetMapMode
 
@@ -6177,7 +6177,7 @@ Ayarlanacak noktanın mantıksal x koordinatını belirtir.
 Ayarlanacak noktanın mantıksal y koordinatını belirtir.
 
 *crColor*<br/>
-Noktayı boyamak için kullanılan rengi belirten COLORREF RGB değeri. Bu değerin bir açıklaması için Windows SDK [colorref](/windows/desktop/gdi/colorref) bölümüne bakın.
+Noktayı boyamak için kullanılan rengi belirten COLORREF RGB değeri. Bu değerin bir açıklaması için Windows SDK [colorref](/windows/win32/gdi/colorref) bölümüne bakın.
 
 *seçeneğinin*<br/>
 Ayarlanacak noktanın mantıksal x ve y koordinatlarını belirtir. Bu parametre için bir `POINT` yapı ya da bir `CPoint` nesne geçirebilirsiniz.
@@ -6219,7 +6219,7 @@ Ayarlanacak noktanın, mantıksal birimler cinsinden y koordinatını belirtir.
 Noktayı boyamak için kullanılacak rengi belirtir.
 
 *seçeneğinin*<br/>
-Ayarlanacak noktanın mantıksal x ve y koordinatlarını belirtir. Bu parametre için bir [nokta](/windows/desktop/api/windef/ns-windef-tagpoint) veri yapısını veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesnesini geçirebilirsiniz.
+Ayarlanacak noktanın mantıksal x ve y koordinatlarını belirtir. Bu parametre için bir [nokta](/windows/win32/api/windef/ns-windef-point) veri yapısını veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesnesini geçirebilirsiniz.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -6327,7 +6327,7 @@ Uzatma modunu belirtir. Aşağıdaki değerlerden herhangi biri olabilir:
 |BLACKONWHITE|Ortadan kaldırılan ve var olan piksellerin renk değerlerini kullanarak bir Boole ve işlem gerçekleştirir. Bit eşlem, tek renkli bir bit eşlemdir, bu mod beyaz piksellerin masrafına göre Siyah pikselleri korur.|
 |COLORONCOLOR|Pikselleri siler. Bu mod, bilgilerini korumaya çalışmamadan tüm ortadan kaldırılan piksel satırları siler.|
 |LAMASI|Kaynak dikdörtgenden pikselleri hedef dikdörtgendeki piksel bloklarına eşler. Piksel hedef bloğunun üzerindeki ortalama renk, kaynak piksellerin rengine yaklaştırır.|
-||YARı ton uzatma modunu ayarladıktan sonra bir uygulamanın, fırça kaynağını ayarlamak için [SetBrushOrgEx](/windows/desktop/api/wingdi/nf-wingdi-setbrushorgex) Win32 işlevini çağırması gerekir. Başarısız olursa, fırça hatalı hizalaması oluşur.|
+||YARı ton uzatma modunu ayarladıktan sonra bir uygulamanın, fırça kaynağını ayarlamak için [SetBrushOrgEx](/windows/win32/api/wingdi/nf-wingdi-setbrushorgex) Win32 işlevini çağırması gerekir. Başarısız olursa, fırça hatalı hizalaması oluşur.|
 |STRETCH_ANDSCANS|**Windows 95/98**: BLACKONWHITE ile aynı|
 |STRETCH_DELETESCANS|**Windows 95/98**: COLORONCOLOR ile aynı|
 |STRETCH_HALFTONE|**Windows 95/98**: NOKTALı resım.|
@@ -6649,7 +6649,7 @@ BOOL SetWorldTransform(const XFORM& rXform);
 ### <a name="parameters"></a>Parametreler
 
 *rXform*<br/>
-Dönüşüm verilerini içeren bir [XFORM](/windows/desktop/api/wingdi/ns-wingdi-tagxform) yapısına başvuru.
+Dönüşüm verilerini içeren bir [XFORM](/windows/win32/api/wingdi/ns-wingdi-xform) yapısına başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -6657,11 +6657,11 @@ Başarılı olduğunda sıfır olmayan bir değer döndürür.
 
 Hatada 0 döndürür.
 
-Genişletilmiş hata bilgilerini almak için [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror)çağrısı yapın.
+Genişletilmiş hata bilgilerini almak için [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror)çağrısı yapın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [SetWorldTransform](/windows/desktop/api/wingdi/nf-wingdi-setworldtransform)Windows GDI işlevini sarmalanmış.
+Bu yöntem, [SetWorldTransform](/windows/win32/api/wingdi/nf-wingdi-setworldtransform)Windows GDI işlevini sarmalanmış.
 
 ##  <a name="startdoc"></a>CDC:: StartDoc
 
@@ -6675,7 +6675,7 @@ int StartDoc(LPCTSTR lpszDocName);
 ### <a name="parameters"></a>Parametreler
 
 *lpDocInfo*<br/>
-Belge dosyasının adını ve çıkış dosyasının adını içeren bir [DOCINFO](/windows/desktop/api/wingdi/ns-wingdi-docinfoa) yapısına işaret eder.
+Belge dosyasının adını ve çıkış dosyasının adını içeren bir [DOCINFO](/windows/win32/api/wingdi/ns-wingdi-docinfow) yapısına işaret eder.
 
 *lpszDocName*<br/>
 Belge dosyasının adını içeren bir dize işaretçisi.
@@ -6891,7 +6891,7 @@ Dizenin başlangıç noktasının mantıksal y koordinatını belirtir.
 Çizilecek karakter dizesini işaret eder. Bu parametre için bir karakter dizisine ya da bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) nesnesine bir işaretçi geçirebilirsiniz.
 
 *nCount*<br/>
-*LpszString*tarafından işaret [edilen dizenin uzunluğunu](/windows/desktop/gdi/specifying-length-of-text-output-string) belirtir.
+*LpszString*tarafından işaret [edilen dizenin uzunluğunu](/windows/win32/gdi/specifying-length-of-text-output-string) belirtir.
 
 *nTabPositions*<br/>
 Sekme durağı konumları dizisindeki değer sayısını belirtir.
@@ -7023,7 +7023,7 @@ Başarılı olursa doğru; Aksi halde yanlış.
 
 `TransparentBlt`saydamlığa izin verir; diğer bir deyişle, *clrTransparent* tarafından belirtilen RGB rengi aktarım için saydam olarak işlenir.
 
-Daha fazla bilgi için Windows SDK [TransparentBlt](/windows/desktop/api/wingdi/nf-wingdi-transparentblt) bakın.
+Daha fazla bilgi için Windows SDK [TransparentBlt](/windows/win32/api/wingdi/nf-wingdi-transparentblt) bakın.
 
 ##  <a name="updatecolors"></a>CDC:: UpdateColors
 
@@ -7037,7 +7037,7 @@ void UpdateColors();
 
 Gerçekleştirilmiş bir mantıksal palet içeren etkin olmayan bir pencere, `UpdateColors` sistem paleti değiştiğinde istemci alanının yeniden çizilmesi için alternatif olarak çağrçıkabilir.
 
-Renk paletleri kullanma hakkında daha fazla bilgi için Windows SDK [UpdateColors](/windows/desktop/api/wingdi/nf-wingdi-updatecolors) bölümüne bakın.
+Renk paletleri kullanma hakkında daha fazla bilgi için Windows SDK [UpdateColors](/windows/win32/api/wingdi/nf-wingdi-updatecolors) bölümüne bakın.
 
 `UpdateColors` Üye işlevi, genellikle alanı yeniden çizmeyi kullanmaktan daha hızlı bir şekilde istemci alanı güncelleştirir. Ancak, işlev, sistem paleti değiştirilmeden önce her bir pikselin rengine bağlı olarak renk çevirisini gerçekleştirdiğinden, bu işleve yapılan her çağrı bazı renk doğruluğu kaybına neden olur.
 

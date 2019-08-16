@@ -14,12 +14,12 @@ helpviewer_keywords:
 - CRichEditDoc [MFC], GetView
 - CRichEditDoc [MFC], m_bRTF
 ms.assetid: c936ec18-d516-49d4-b7fb-c9aa0229eddc
-ms.openlocfilehash: d296185fe2ea2216f4abe17b191f71b6fa36e1f9
-ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
+ms.openlocfilehash: def0c55ff1faf12729226aa445c9614119c546c4
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68916716"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69502671"
 ---
 # <a name="cricheditdoc-class"></a>CRichEditDoc sınıfı
 
@@ -88,7 +88,7 @@ virtual CRichEditCntrItem* CreateClientItem(REOBJECT* preo = NULL) const = 0;
 ### <a name="parameters"></a>Parametreler
 
 *Preo*<br/>
-Bir OLE öğesini açıklayan bir [reobject](/windows/desktop/api/richole/ns-richole-reobject) yapısına yönelik işaretçi. Yeni `CRichEditCntrItem` nesne bu ole öğesi etrafında oluşturulur. *Preo* null ise, yeni istemci öğesi boştur.
+Bir OLE öğesini açıklayan bir [reobject](/windows/win32/api/richole/ns-richole-reobject) yapısına yönelik işaretçi. Yeni `CRichEditCntrItem` nesne bu ole öğesi etrafında oluşturulur. *Preo* null ise, yeni istemci öğesi boştur.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -98,7 +98,7 @@ Bu belgeye eklenen yeni bir [Cricheditcntridıtem](../../mfc/reference/crichedit
 
 Bu işlev herhangi bir OLE başlatması gerçekleştirmez.
 
-Daha fazla bilgi için Windows SDK [reobject](/windows/desktop/api/richole/ns-richole-reobject) yapısına bakın.
+Daha fazla bilgi için Windows SDK [reobject](/windows/win32/api/richole/ns-richole-reobject) yapısına bakın.
 
 ##  <a name="getstreamformat"></a>CRichEditDoc:: GetStreamFormat
 

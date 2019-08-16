@@ -1,21 +1,21 @@
 ---
-title: iid_is (C++ COM özniteliği)
+title: iid_is (C++ com özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.iid_is
 helpviewer_keywords:
 - iid_is attribute
 ms.assetid: 2f9b42a9-7130-4b08-9b1e-0d5d360e10ff
-ms.openlocfilehash: b91fb7937bb0e20f2500eace9695bc0ddba21b26
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8bfa20f55afd85019795fdd40548158c2f49e126
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62409531"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69514663"
 ---
-# <a name="iidis"></a>iid_is
+# <a name="iid_is"></a>iid_is
 
-Bir arabirim işaretçisi tarafından işaret edilen COM arabirimi Laboratuvardaki belirtir.
+Bir arabirim işaretçisi tarafından işaret edilen COM arabiriminin IID 'sini belirtir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -25,16 +25,16 @@ Bir arabirim işaretçisi tarafından işaret edilen COM arabirimi Laboratuvarda
 
 ### <a name="parameters"></a>Parametreler
 
-*İfade*<br/>
-Bir COM arabirimi Laboratuvardaki belirten C dil ifadesi için bir arabirim işaretçisi tarafından işaret.
+*ifadesini*<br/>
+Bir arabirim işaretçisi tarafından işaret edilen bir COM arabiriminin IID öğesini belirten bir C dili ifadesi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**İid_is** C++ özniteliği ile aynı işlevlere sahip [iid_is](/windows/desktop/Midl/iid-is) MIDL özniteliği.
+**İid_is** C++ özniteliği, [iid_is](/windows/win32/Midl/iid-is) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod kullanımını gösterir **iid_is**:
+Aşağıdaki kod, **iid_is**kullanımını gösterir:
 
 ```cpp
 // cpp_attr_ref_iid_is.cpp
@@ -57,12 +57,12 @@ __interface IFireTabCtrl : IDispatch
 
 |||
 |-|-|
-|**İçin geçerlidir**|Arabirimi parametresi, veri üyesi|
+|**Uygulama hedefi**|Arabirim parametresi, veri üyesi|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|Yok.|
+|**Gerekli öznitelikler**|Yok.|
 |**Geçersiz öznitelikler**|Yok.|
 
-Daha fazla bilgi için [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
+Daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

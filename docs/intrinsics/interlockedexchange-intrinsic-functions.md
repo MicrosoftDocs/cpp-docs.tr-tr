@@ -1,5 +1,5 @@
 ---
-title: _Interlockedexchange iç işlevleri
+title: _InterlockedExchange İç İşlevleri
 ms.date: 12/17/2018
 f1_keywords:
 - _InterlockedExchange_rel
@@ -44,18 +44,18 @@ helpviewer_keywords:
 - _InterlockedExchange intrinsic
 - _InterlockedExchange8_nf
 ms.assetid: be2f232a-6301-462a-a92b-fcdeb8b0f209
-ms.openlocfilehash: 3945b8a7516962531050e999e96bdef31b179bbb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c96ce57854bfb3eea0e1b8bc6283984c7fce50f9
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62396749"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69509392"
 ---
-# <a name="interlockedexchange-intrinsic-functions"></a>_Interlockedexchange iç işlevleri
+# <a name="_interlockedexchange-intrinsic-functions"></a>_InterlockedExchange İç İşlevleri
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Belirtilen değere ayarlanacak atomik bir yönerge oluşturur.
+Belirtilen değeri ayarlamak için atomik bir yönerge oluşturur.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -145,42 +145,42 @@ __int64 _InterlockedExchange64_rel(
 #### <a name="parameters"></a>Parametreler
 
 *Hedef*<br/>
-[out içinde] Değiştirilecek değer işaretçisi. Bu değişken işlev ayarlar `Value` ve önceki değerini döndürür.
+[in, out] Değiş tokuş edilecek değere yönelik işaretçi. İşlevi bu değişkeni olarak `Value` ayarlar ve önceki değerini döndürür.
 
 *Değer*<br/>
-[in] Değeri ile değiştirilecek değeri tarafından işaret edilen `Target`.
+'ndaki Tarafından `Target`işaret edilen değer ile değiştirilecek değer.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-İşaret ettiği ilk değeri döndürür `Target`.
+Tarafından `Target`işaret edilen ilk değeri döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İç|Mimari|Üstbilgi|
+|Alanlarla|Mimari|Üstbilgi|
 |---------------|------------------|------------|
-|`_InterlockedExchange`, `_InterlockedExchange8`, `_InterlockedExchange16`, `_InterlockedExchange64`|x86, ARM, x64|\<intrin.h >|
-|`_InterlockedExchange_acq`, `_InterlockedExchange_nf`, `_InterlockedExchange_rel`, `_InterlockedExchange8_acq`, `_InterlockedExchange8_nf`, `_InterlockedExchange8_rel`, `_InterlockedExchange16_acq`, `_InterlockedExchange16_nf`, `_InterlockedExchange16_rel`, `_InterlockedExchange64_acq`, `_InterlockedExchange64_nf`, `_InterlockedExchange64_rel`,|ARM|\<intrin.h >|
-|`_InterlockedExchange_HLEAcquire`, `_InterlockedExchange_HLERelease`, `_InterlockedExchange64_HLEAcquire`, `_InterlockedExchange64_HLERelease`|x86, x64|\<immintrin.h >|
+|`_InterlockedExchange`, `_InterlockedExchange8`, `_InterlockedExchange16`, `_InterlockedExchange64`|x86, ARM, x64|\<Intrin. h >|
+|`_InterlockedExchange_acq`, `_InterlockedExchange_nf`, `_InterlockedExchange_rel`, `_InterlockedExchange8_acq`, `_InterlockedExchange8_nf`, `_InterlockedExchange8_rel`, `_InterlockedExchange16_acq`, `_InterlockedExchange16_nf`, `_InterlockedExchange16_rel`, `_InterlockedExchange64_acq`, `_InterlockedExchange64_nf`, `_InterlockedExchange64_rel`,|ARM|\<Intrin. h >|
+|`_InterlockedExchange_HLEAcquire`, `_InterlockedExchange_HLERelease`, `_InterlockedExchange64_HLEAcquire`, `_InterlockedExchange64_HLERelease`|x86, x64|\<ımintrin. h >|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`_InterlockedExchange` Win32 Windows SDK'sı için derleyici iç desteği sağlayan [InterlockedExchange](/windows/desktop/api/winnt/nf-winnt-interlockedexchange) işlevi.
+`_InterlockedExchange`Win32 Windows SDK [InterlockedExchange](/windows/win32/api/winnt/nf-winnt-interlockedexchange) işlevi için derleyicinin iç desteğini sağlar.
 
-Bazı farklılıklar vardır `_InterlockedExchange` , bunlar içeren veri türleri ve olup işlemciye özgü alma göre farklılık veya release semantikleri kullanılır.
+Üzerinde bulunan `_InterlockedExchange` veri türlerine göre farklılık gösteren çeşitli çeşitlemeler vardır ve işlemciye özgü alma veya yayınlama semantiği kullanılıp kullanılmayacağını belirtir.
 
-Sırada `_InterlockedExchange` işlevi 32-bit tamsayı değerleri üzerinde çalışır `_InterlockedExchange8` 8 bit tam sayı değerleri üzerinde çalışan `_InterlockedExchange16` 16 bit tam sayı değerler üzerinde çalışır ve `_InterlockedExchange64` 64-bit tamsayı değerler üzerinde çalışır.
+İşlev 32 bitlik tamsayı değerlerinde çalışırken, `_InterlockedExchange8` 8 bit tamsayı değerleri üzerinde çalışır, `_InterlockedExchange16` 16 bit tam sayı değerlerinde çalışır ve `_InterlockedExchange64` 64 bit tamsayı değerlerinde çalışır. `_InterlockedExchange`
 
-ARM platformlarında, yapı içleri ile kullanmak `_acq` ve `_rel` sonekleri edinme ve sürüm semantiği gibi kritik bir bölüm başında ve sonunda. Yapı içleri ile bir `_nf` ("hiçbir sınır") soneki bellek önünde bir engel hareket değil.
+ARM platformlarında, önemli bir bölümün başındaki ve `_acq` sonundaki `_rel` gibi alma ve bırakma semantiği için iç bilgileri ve sonekleri kullanın. `_nf` ("Sınır yok") sonekine sahip iç bilgiler bellek engeli olarak davranmaz.
 
-Donanım kilit eleme (HLE) yönergeleri yapı içleri ile destekleyen Intel platformlarında `_HLEAcquire` ve `_HLERelease` sonekleri kapsayacak performans donanım kilit yazma adımda ortadan kaldırarak hızlandırabilir işlemci bir ipucu verir. Bu iç HLE desteklemeyen platformları üzerinde çağrılırsa ipucu yoksayıldı.
+Donanım kilidi (HLE) yönergelerini destekleyen Intel platformlarında, `_HLEAcquire` ve `_HLERelease` son ekler, donanımda bir kilit yazma adımını ortadan kaldırarak işlemciyi hızlandıran bir ipucu içerir. Bu iç bilgiler HLE 'yı desteklemeyen platformlarda çağrılırsa, ipucu yok sayılır.
 
-Bu yordamlar, yalnızca iç öğe olarak kullanılabilir.
+Bu yordamlar yalnızca iç bilgiler olarak kullanılabilir.
 
 ## <a name="example"></a>Örnek
 
-Nasıl kullanılacağını gösteren bir örnek `_InterlockedExchange`, bkz: [_ınterlockeddecrement](../intrinsics/interlockeddecrement-intrinsic-functions.md).
+Öğesinin nasıl kullanılacağına `_InterlockedExchange`ilişkin bir örnek için bkz. [_ınterlockedazaltma](../intrinsics/interlockeddecrement-intrinsic-functions.md).
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

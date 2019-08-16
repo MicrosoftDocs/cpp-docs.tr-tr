@@ -1,5 +1,5 @@
 ---
-title: Ipropertypageımpl sınıfı
+title: IPropertyPageImpl sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - IPropertyPageImpl
@@ -31,19 +31,19 @@ helpviewer_keywords:
 - IPropertyPage ATL implementation
 - IPropertyPageImpl class
 ms.assetid: f9b7c8b1-7a04-4eab-aa63-63efddb740fa
-ms.openlocfilehash: a3b92e3d2f72ca48238eb22404947d2eafde0378
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 69842e77aecaa94be66432e5fbba437a6fa3c5a4
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62197883"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69495577"
 ---
-# <a name="ipropertypageimpl-class"></a>Ipropertypageımpl sınıfı
+# <a name="ipropertypageimpl-class"></a>IPropertyPageImpl sınıfı
 
-Bu sınıfın uyguladığı `IUnknown` ve varsayılan bir uygulama sağlar [IPropertyPage](/windows/desktop/api/ocidl/nn-ocidl-ipropertypage) arabirimi.
+Bu sınıf, `IUnknown` [IPropertyPage](/windows/win32/api/ocidl/nn-ocidl-ipropertypage) arabiriminin varsayılan bir uygulamasını uygular ve sunar.
 
 > [!IMPORTANT]
->  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.
+>  Bu sınıf ve üyeleri Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -54,8 +54,8 @@ class IPropertyPageImpl
 
 #### <a name="parameters"></a>Parametreler
 
-*T*<br/>
-Sınıfınız, türetilen `IPropertyPageImpl`.
+*ŞI*<br/>
+Sınıfınız, öğesinden `IPropertyPageImpl`türetilir.
 
 ## <a name="members"></a>Üyeler
 
@@ -63,44 +63,44 @@ Sınıfınız, türetilen `IPropertyPageImpl`.
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[IPropertyPageImpl::IPropertyPageImpl](#ipropertypageimpl)|Oluşturucu.|
+|[IPropertyPageImpl:: IPropertyPageImpl](#ipropertypageimpl)|Oluşturucu.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[IPropertyPageImpl::Activate](#activate)|Özellik sayfası iletişim kutusu penceresi oluşturur.|
-|[IPropertyPageImpl::Apply](#apply)|Geçerli özellik sayfası değerleri aracılığıyla belirtilen temel nesnelere uygulanır `SetObjects`. ATL uygulamasını S_OK döndürür.|
-|[IPropertyPageImpl::Deactivate](#deactivate)|Oluşturulan penceresini yok eder `Activate`.|
-|[IPropertyPageImpl::GetPageInfo](#getpageinfo)|Özellik sayfasını hakkındaki bilgileri alır.|
-|[IPropertyPageImpl::Help](#help)|Windows Yardım özellik sayfası için çağırır.|
-|[IPropertyPageImpl::IsPageDirty](#ispagedirty)|Özellik sayfasını, etkinleştirilmesinden sonra değiştirilip değiştirilmediğini belirtir.|
-|[IPropertyPageImpl::Move](#move)|Yerleştirir ve özellik sayfası iletişim kutusu yeniden boyutlandırır.|
-|[IPropertyPageImpl::SetDirty](#setdirty)|Özellik sayfa durumu değiştirilmiş veya değişmemiş olarak işaretler.|
-|[IPropertyPageImpl::SetObjects](#setobjects)|Bir dizi sağlar `IUnknown` özellik sayfası ile ilişkili nesnelerin işaretçileri. Bu nesneler yapılan bir çağrıyla geçerli özellik sayfası değerlerini alma `Apply`.|
-|[IPropertyPageImpl::SetPageSite](#setpagesite)|Özellik sayfası ile sağlar bir `IPropertyPageSite` özellik sayfası özellik çerçevesi ile iletişim işaretçisi.|
-|[IPropertyPageImpl::Show](#show)|Özellik sayfası iletişim kutusu görünür veya gizli hale getirir.|
-|[IPropertyPageImpl::TranslateAccelerator](#translateaccelerator)|Belirtilen bir tuş vuruşu işler.|
+|[IPropertyPageImpl:: Activate](#activate)|Özellik sayfası için iletişim kutusu penceresi oluşturur.|
+|[IPropertyPageImpl:: Apply](#apply)|Geçerli özellik sayfası değerlerini ile `SetObjects`belirtilen temel nesnelere uygular. ATL uygulamaları S_OK döndürür.|
+|[IPropertyPageImpl::D eactivate](#deactivate)|İle `Activate`oluşturulan pencereyi yok eder.|
+|[IPropertyPageImpl:: GetPageInfo](#getpageinfo)|Özellik sayfası hakkındaki bilgileri alır.|
+|[IPropertyPageImpl:: help](#help)|Özellik sayfası için Windows yardımını çağırır.|
+|[IPropertyPageImpl:: IsPageDirty](#ispagedirty)|Özellik sayfasının etkinleştirildikten sonra değiştirilip değiştirilmediğini belirtir.|
+|[IPropertyPageImpl:: Move](#move)|Özellik sayfası iletişim kutusunu konumlandırır ve yeniden boyutlandırır.|
+|[IPropertyPageImpl:: SetDirty](#setdirty)|Özellik sayfasının durumunu değiştirilmiş veya değişmemiş olarak işaretler.|
+|[IPropertyPageImpl:: SetObjects](#setobjects)|Özellik sayfasıyla ilişkili nesneler `IUnknown` için bir işaretçiler dizisi sağlar. Bu nesneler, öğesine `Apply`yapılan çağrısıyla geçerli özellik sayfası değerlerini alır.|
+|[IPropertyPageImpl:: SetPageSite](#setpagesite)|Özellik sayfasının özellik çerçevesiyle iletişim kurduğu `IPropertyPageSite` bir işaretçi ile özellik sayfasını sağlar.|
+|[IPropertyPageImpl:: show](#show)|Özellik sayfası iletişim kutusunu görünür veya görünmez hale getirir.|
+|[IPropertyPageImpl:: TranslateAccelerator](#translateaccelerator)|Belirtilen tuş vuruşunu işler.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[IPropertyPageImpl::m_bDirty](#m_bdirty)|Özellik sayfanın durumu değiştirilip değiştirilmediğini belirtir.|
-|[IPropertyPageImpl::m_dwDocString](#m_dwdocstring)|Özellik sayfasını açıklayan bir metin dizesi ile ilişkili kaynak tanımlayıcısı depolar.|
-|[IPropertyPageImpl::m_dwHelpContext](#m_dwhelpcontext)|Özellik sayfası ile ilişkili bir Yardım konusu bağlam tanımlayıcısı depolar.|
-|[IPropertyPageImpl::m_dwHelpFile](#m_dwhelpfile)|Özellik sayfasını açıklayan Yardım dosyasının adı ile ilişkili kaynak tanımlayıcısı depolar.|
-|[IPropertyPageImpl::m_dwTitle](#m_dwtitle)|Özellik sayfası için sekmesinde görüntülenen metin dizesi ile ilişkili kaynak tanımlayıcısı depolar.|
-|[IPropertyPageImpl::m_nObjects](#m_nobjects)|Özellik sayfası ile ilişkili nesne sayısını depolar.|
-|[IPropertyPageImpl::m_pPageSite](#m_ppagesite)|İşaret `IPropertyPageSite` özellik sayfası özellik çerçevesi ile iletişim arabirimi.|
-|[IPropertyPageImpl::m_ppUnk](#m_ppunk)|İşaret dizilerine `IUnknown` özellik sayfası ile ilişkili nesne işaretçileri.|
-|[IPropertyPageImpl::m_size](#m_size)|Özellik sayfasının iletişim kutusunun genişliği ve yüksekliği, piksel cinsinden depolar.|
+|[IPropertyPageImpl:: m_bDirty](#m_bdirty)|Özellik sayfası durumunun değiştirilip değiştirilmediğini belirtir.|
+|[IPropertyPageImpl:: m_dwDocString](#m_dwdocstring)|Özellik sayfasını açıklayan metin dizesiyle ilişkili kaynak tanımlayıcısını depolar.|
+|[IPropertyPageImpl:: m_dwHelpContext](#m_dwhelpcontext)|Özellik sayfasıyla ilişkili Yardım konusunun bağlam tanımlayıcısını depolar.|
+|[IPropertyPageImpl:: m_dwHelpFile](#m_dwhelpfile)|Özellik sayfasını açıklayan Yardım dosyasının adıyla ilişkili kaynak tanımlayıcısını depolar.|
+|[IPropertyPageImpl:: m_dwTitle](#m_dwtitle)|Özellik sayfasının sekmesinde görüntülenen metin dizesiyle ilişkili kaynak tanımlayıcısını depolar.|
+|[IPropertyPageImpl:: m_nObjects](#m_nobjects)|Özellik sayfasıyla ilişkili nesne sayısını depolar.|
+|[IPropertyPageImpl:: m_pPageSite](#m_ppagesite)|Özellik sayfasının özellik çerçevesiyle iletişim kurduğu arabirimeişareteder.`IPropertyPageSite`|
+|[IPropertyPageImpl:: m_ppUnk](#m_ppunk)|Özellik sayfasıyla ilişkili nesnelere `IUnknown` işaretçiler dizisine işaret eder.|
+|[IPropertyPageImpl:: m_size](#m_size)|Özellik sayfasının iletişim kutusunun yüksekliğini ve genişliğini piksel cinsinden depolar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-[IPropertyPage](/windows/desktop/api/ocidl/nn-ocidl-ipropertypage) nesnenin bir özellik sayfası içinde belirli bir özellik sayfası yönetmek arabirim sağlar. Sınıf `IPropertyPageImpl` bu arabirimin bir varsayılan uygulamasını sağlar ve uygulayan `IUnknown` dökümünü almak için bilgi göndererek hata ayıklama cihazı oluşturur.
+[IPropertyPage](/windows/win32/api/ocidl/nn-ocidl-ipropertypage) arabirimi bir nesnenin özellik sayfası içinde belirli bir özellik sayfasını yönetmesine izin verir. Sınıfı `IPropertyPageImpl` , bu arabirimin varsayılan bir uygulamasını sağlar ve hata `IUnknown` ayıklama yapılarında döküm cihazına bilgi göndererek uygular.
 
-**İle ilgili makaleler** [ATL öğretici](../../atl/active-template-library-atl-tutorial.md), [ATL projesi oluşturma](../../atl/reference/creating-an-atl-project.md)
+**Ilgili makaleler** ATL [öğreticisi](../../atl/active-template-library-atl-tutorial.md), [ATL projesi oluşturma](../../atl/reference/creating-an-atl-project.md)
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -110,11 +110,11 @@ Sınıfınız, türetilen `IPropertyPageImpl`.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlctl.h
+**Üstbilgi:** atlctl. h
 
-##  <a name="activate"></a>  IPropertyPageImpl::Activate
+##  <a name="activate"></a>IPropertyPageImpl:: Activate
 
-Özellik sayfası iletişim kutusu penceresi oluşturur.
+Özellik sayfası için iletişim kutusu penceresi oluşturur.
 
 ```
 HRESULT Activate(
@@ -125,13 +125,13 @@ HRESULT Activate(
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, iletişim kutusunda her zaman değerine bakılmaksızın geçici *bModal* parametresi.
+Varsayılan olarak, *bModal* parametresinin değeri ne olursa olsun iletişim kutusu her zaman modsuz olur.
 
-Bkz: [IPropertyPage::Activate](/windows/desktop/api/ocidl/nf-ocidl-ipropertypage-activate) Windows SDK içinde.
+Windows SDK [IPropertyPage:: Activate](/windows/win32/api/ocidl/nf-ocidl-ipropertypage-activate) öğesine bakın.
 
-##  <a name="apply"></a>  IPropertyPageImpl::Apply
+##  <a name="apply"></a>IPropertyPageImpl:: Apply
 
-Geçerli özellik sayfası değerleri aracılığıyla belirtilen temel nesnelere uygulanır `SetObjects`.
+Geçerli özellik sayfası değerlerini ile `SetObjects`belirtilen temel nesnelere uygular.
 
 ```
 HRESULT Apply();
@@ -139,15 +139,15 @@ HRESULT Apply();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa S_OK döndürür.
+S_OK döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [IPropertyPage::Apply](/windows/desktop/api/ocidl/nf-ocidl-ipropertypage-apply) Windows SDK içinde.
+Windows SDK [IPropertyPage:: Apply](/windows/win32/api/ocidl/nf-ocidl-ipropertypage-apply) öğesine bakın.
 
-##  <a name="deactivate"></a>  IPropertyPageImpl::Deactivate
+##  <a name="deactivate"></a>IPropertyPageImpl::D eactivate
 
-Oluşturulan iletişim kutusu penceresini yok eder [etkinleştirme](#activate).
+[Etkinleştir](#activate)ile oluşturulan iletişim kutusu penceresini yok eder.
 
 ```
 HRESULT Deactivate();
@@ -155,11 +155,11 @@ HRESULT Deactivate();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [IPropertyPage::Deactivate](/windows/desktop/api/ocidl/nf-ocidl-ipropertypage-deactivate) Windows SDK içinde.
+Bkz. [IPropertyPage: Windows SDK eactivate:D](/windows/win32/api/ocidl/nf-ocidl-ipropertypage-deactivate) .
 
-##  <a name="getpageinfo"></a>  IPropertyPageImpl::GetPageInfo
+##  <a name="getpageinfo"></a>IPropertyPageImpl:: GetPageInfo
 
-Doldurur *pPageInfo* yapısı bilgilerle veri üyeleri.
+*Ppageınfo* yapısını veri üyelerinde bulunan bilgilerle doldurur.
 
 ```
 HRESULT GetPageInfo(PROPPAGEINFO* pPageInfo);
@@ -167,13 +167,13 @@ HRESULT GetPageInfo(PROPPAGEINFO* pPageInfo);
 
 ### <a name="remarks"></a>Açıklamalar
 
-`GetPageInfo` ilişkili dize kaynakları yükler [m_dwDocString](#m_dwdocstring), [m_dwHelpFile](#m_dwhelpfile), ve [m_dwTitle](#m_dwtitle).
+`GetPageInfo`[m_dwDocString](#m_dwdocstring), [m_dwHelpFile](#m_dwhelpfile)ve [m_dwTitle](#m_dwtitle)ile ilişkili dize kaynaklarını yükler.
 
-Bkz: [IPropertyPage::GetPageInfo](/windows/desktop/api/ocidl/nf-ocidl-ipropertypage-getpageinfo) Windows SDK içinde.
+Windows SDK [IPropertyPage:: GetPageInfo](/windows/win32/api/ocidl/nf-ocidl-ipropertypage-getpageinfo) bölümüne bakın.
 
-##  <a name="help"></a>  IPropertyPageImpl::Help
+##  <a name="help"></a>IPropertyPageImpl:: help
 
-Windows Yardım özellik sayfası için çağırır.
+Özellik sayfası için Windows yardımını çağırır.
 
 ```
 HRESULT Help(PROPPAGEINFO* pPageInfo);
@@ -181,9 +181,9 @@ HRESULT Help(PROPPAGEINFO* pPageInfo);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [IPropertyPage::Help](/windows/desktop/api/ocidl/nf-ocidl-ipropertypage-help) Windows SDK içinde.
+Windows SDK [IPropertyPage:: help](/windows/win32/api/ocidl/nf-ocidl-ipropertypage-help) bölümüne bakın.
 
-##  <a name="ipropertypageimpl"></a>  IPropertyPageImpl::IPropertyPageImpl
+##  <a name="ipropertypageimpl"></a>IPropertyPageImpl:: IPropertyPageImpl
 
 Oluşturucu.
 
@@ -193,11 +193,11 @@ IPropertyPageImpl();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tüm veri üyeleri başlatır.
+Tüm veri üyelerini başlatır.
 
-##  <a name="ispagedirty"></a>  IPropertyPageImpl::IsPageDirty
+##  <a name="ispagedirty"></a>IPropertyPageImpl:: IsPageDirty
 
-Özellik sayfasını, etkinleştirilmesinden sonra değiştirilip değiştirilmediğini belirtir.
+Özellik sayfasının etkinleştirildikten sonra değiştirilip değiştirilmediğini belirtir.
 
 ```
 HRESULT IsPageDirty(void);
@@ -205,83 +205,83 @@ HRESULT IsPageDirty(void);
 
 ### <a name="remarks"></a>Açıklamalar
 
-`IsPageDirty` etkinleştirildi ancak sayfa değişmişse S_OK döndürür.
+`IsPageDirty`sayfa etkinleştirildikten sonra değiştiyse S_OK döndürür.
 
-##  <a name="m_bdirty"></a>  IPropertyPageImpl::m_bDirty
+##  <a name="m_bdirty"></a>IPropertyPageImpl:: m_bDirty
 
-Özellik sayfanın durumu değiştirilip değiştirilmediğini belirtir.
+Özellik sayfası durumunun değiştirilip değiştirilmediğini belirtir.
 
 ```
 BOOL m_bDirty;
 ```
 
-##  <a name="m_nobjects"></a>  IPropertyPageImpl::m_nObjects
+##  <a name="m_nobjects"></a>IPropertyPageImpl:: m_nObjects
 
-Özellik sayfası ile ilişkili nesne sayısını depolar.
+Özellik sayfasıyla ilişkili nesne sayısını depolar.
 
 ```
 ULONG m_nObjects;
 ```
 
-##  <a name="m_dwhelpcontext"></a>  IPropertyPageImpl::m_dwHelpContext
+##  <a name="m_dwhelpcontext"></a>IPropertyPageImpl:: m_dwHelpContext
 
-Özellik sayfası ile ilişkili bir Yardım konusu bağlam tanımlayıcısı depolar.
+Özellik sayfasıyla ilişkili Yardım konusunun bağlam tanımlayıcısını depolar.
 
 ```
 DWORD m_dwHelpContext;
 ```
 
-##  <a name="m_dwdocstring"></a>  IPropertyPageImpl::m_dwDocString
+##  <a name="m_dwdocstring"></a>IPropertyPageImpl:: m_dwDocString
 
-Özellik sayfasını açıklayan bir metin dizesi ile ilişkili kaynak tanımlayıcısı depolar.
+Özellik sayfasını açıklayan metin dizesiyle ilişkili kaynak tanımlayıcısını depolar.
 
 ```
 UINT m_dwDocString;
 ```
 
-##  <a name="m_dwhelpfile"></a>  IPropertyPageImpl::m_dwHelpFile
+##  <a name="m_dwhelpfile"></a>IPropertyPageImpl:: m_dwHelpFile
 
-Özellik sayfasını açıklayan Yardım dosyasının adı ile ilişkili kaynak tanımlayıcısı depolar.
+Özellik sayfasını açıklayan Yardım dosyasının adıyla ilişkili kaynak tanımlayıcısını depolar.
 
 ```
 UINT m_dwHelpFile;
 ```
 
-##  <a name="m_dwtitle"></a>  IPropertyPageImpl::m_dwTitle
+##  <a name="m_dwtitle"></a>IPropertyPageImpl:: m_dwTitle
 
-Özellik sayfası için sekmesinde görüntülenen metin dizesi ile ilişkili kaynak tanımlayıcısı depolar.
+Özellik sayfasının sekmesinde görüntülenen metin dizesiyle ilişkili kaynak tanımlayıcısını depolar.
 
 ```
 UINT m_dwTitle;
 ```
 
-##  <a name="m_ppagesite"></a>  IPropertyPageImpl::m_pPageSite
+##  <a name="m_ppagesite"></a>IPropertyPageImpl:: m_pPageSite
 
-İşaret [IPropertyPageSite](/windows/desktop/api/ocidl/nn-ocidl-ipropertypagesite) özellik sayfası özellik çerçevesi ile iletişim arabirimi.
+Özellik sayfasının özellik çerçevesiyle iletişim kurduğu [IPropertyPageSite](/windows/win32/api/ocidl/nn-ocidl-ipropertypagesite) arabirimine işaret eder.
 
 ```
 IPropertyPageSite* m_pPageSite;
 ```
 
-##  <a name="m_ppunk"></a>  IPropertyPageImpl::m_ppUnk
+##  <a name="m_ppunk"></a>IPropertyPageImpl:: m_ppUnk
 
-İşaret dizilerine `IUnknown` özellik sayfası ile ilişkili nesne işaretçileri.
+Özellik sayfasıyla ilişkili nesnelere `IUnknown` işaretçiler dizisine işaret eder.
 
 ```
 IUnknown** m_ppUnk;
 ```
 
-##  <a name="m_size"></a>  IPropertyPageImpl::m_size
+##  <a name="m_size"></a>IPropertyPageImpl:: m_size
 
-Özellik sayfasının iletişim kutusunun genişliği ve yüksekliği, piksel cinsinden depolar.
+Özellik sayfasının iletişim kutusunun yüksekliğini ve genişliğini piksel cinsinden depolar.
 
 ```
 SIZE m_size;
 ```
 
-##  <a name="move"></a>  IPropertyPageImpl::Move
+##  <a name="move"></a>IPropertyPageImpl:: Move
 
-Yerleştirir ve özellik sayfası iletişim kutusu yeniden boyutlandırır.
+Özellik sayfası iletişim kutusunu konumlandırır ve yeniden boyutlandırır.
 
 ```
 HRESULT Move(LPCRECT pRect);
@@ -289,11 +289,11 @@ HRESULT Move(LPCRECT pRect);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [IPropertyPage::Move](/windows/desktop/api/ocidl/nf-ocidl-ipropertypage-move) Windows SDK içinde.
+Windows SDK [IPropertyPage:: Move](/windows/win32/api/ocidl/nf-ocidl-ipropertypage-move) öğesine bakın.
 
-##  <a name="setdirty"></a>  IPropertyPageImpl::SetDirty
+##  <a name="setdirty"></a>IPropertyPageImpl:: SetDirty
 
-Özellik sayfa durumu olarak değiştirilmiş veya değerine bağlı olarak, değiştirilmeden bayrakları *bDirty*.
+*BDirty*değerine bağlı olarak, özellik sayfasının durumunu değiştirilmiş veya değiştirilmemiş olarak işaretler.
 
 ```
 void SetDirty(BOOL bDirty);
@@ -302,15 +302,15 @@ void SetDirty(BOOL bDirty);
 ### <a name="parameters"></a>Parametreler
 
 *bDirty*<br/>
-[in] TRUE ise özellik sayfanın durumu değişmiş olarak işaretlenir. Aksi takdirde, işaretli olarak değişmez.
+'ndaki TRUE ise Özellik sayfasının durumu değiştirildi olarak işaretlenir. Aksi takdirde, değiştirilmez olarak işaretlenir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Gerekirse, `SetDirty` özellik sayfasını değişti çerçeve bildirir.
+Gerekirse, `SetDirty` Özellik sayfasının değiştiğini çerçeveye bildirir.
 
-##  <a name="setobjects"></a>  IPropertyPageImpl::SetObjects
+##  <a name="setobjects"></a>IPropertyPageImpl:: SetObjects
 
-Bir dizi sağlar `IUnknown` özellik sayfası ile ilişkili nesnelerin işaretçileri.
+Özellik sayfasıyla ilişkili nesneler `IUnknown` için bir işaretçiler dizisi sağlar.
 
 ```
 HRESULT SetObjects(ULONG nObjects, IUnknown** ppUnk);
@@ -318,11 +318,11 @@ HRESULT SetObjects(ULONG nObjects, IUnknown** ppUnk);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [IPropertyPage::SetObjects](/windows/desktop/api/ocidl/nf-ocidl-ipropertypage-setobjects) Windows SDK içinde.
+Windows SDK [IPropertyPage:: SetObjects](/windows/win32/api/ocidl/nf-ocidl-ipropertypage-setobjects) öğesine bakın.
 
-##  <a name="setpagesite"></a>  IPropertyPageImpl::SetPageSite
+##  <a name="setpagesite"></a>IPropertyPageImpl:: SetPageSite
 
-Özellik sayfası ile sağlar bir [IPropertyPageSite](/windows/desktop/api/ocidl/nn-ocidl-ipropertypagesite) özellik sayfası özellik çerçevesi ile iletişim işaretçisi.
+Özellik sayfasının özellik çerçevesiyle iletişim kurduğu bir [IPropertyPageSite](/windows/win32/api/ocidl/nn-ocidl-ipropertypagesite) işaretçisi ile özellik sayfasını sağlar.
 
 ```
 HRESULT SetPageSite(IPropertyPageSite* pPageSite);
@@ -330,11 +330,11 @@ HRESULT SetPageSite(IPropertyPageSite* pPageSite);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [IPropertyPage::SetPageSite](/windows/desktop/api/ocidl/nf-ocidl-ipropertypage-setpagesite) Windows SDK içinde.
+Windows SDK [IPropertyPage:: SetPageSite](/windows/win32/api/ocidl/nf-ocidl-ipropertypage-setpagesite) bölümüne bakın.
 
-##  <a name="show"></a>  IPropertyPageImpl::Show
+##  <a name="show"></a>IPropertyPageImpl:: show
 
-Özellik sayfası iletişim kutusu görünür veya gizli hale getirir.
+Özellik sayfası iletişim kutusunu görünür veya görünmez hale getirir.
 
 ```
 HRESULT Show(UINT nCmdShow);
@@ -342,11 +342,11 @@ HRESULT Show(UINT nCmdShow);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [IPropertyPage::Show](/windows/desktop/api/ocidl/nf-ocidl-ipropertypage-show) Windows SDK içinde.
+Bkz. [IPropertyPage:: Windows SDK gösterme](/windows/win32/api/ocidl/nf-ocidl-ipropertypage-show) .
 
-##  <a name="translateaccelerator"></a>  IPropertyPageImpl::TranslateAccelerator
+##  <a name="translateaccelerator"></a>IPropertyPageImpl:: TranslateAccelerator
 
-Belirtilen tuş vuruşu işler `pMsg`.
+İçinde `pMsg`belirtilen tuş vuruşunu işler.
 
 ```
 HRESULT TranslateAccelerator(MSG* pMsg);
@@ -354,11 +354,11 @@ HRESULT TranslateAccelerator(MSG* pMsg);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [IPropertyPage::TranslateAccelerator](/windows/desktop/api/ocidl/nf-ocidl-ipropertypage-translateaccelerator) Windows SDK içinde.
+Windows SDK [IPropertyPage:: TranslateAccelerator](/windows/win32/api/ocidl/nf-ocidl-ipropertypage-translateaccelerator) öğesine bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [IPropertyPage2Impl Sınıfı](../../atl/reference/ipropertypage2impl-class.md)<br/>
 [IPerPropertyBrowsingImpl Sınıfı](../../atl/reference/iperpropertybrowsingimpl-class.md)<br/>
 [ISpecifyPropertyPagesImpl Sınıfı](../../atl/reference/ispecifypropertypagesimpl-class.md)<br/>
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)
+[Sınıfa genel bakış](../../atl/atl-class-overview.md)

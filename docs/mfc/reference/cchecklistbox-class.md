@@ -28,16 +28,16 @@ helpviewer_keywords:
 - CCheckListBox [MFC], SetCheck
 - CCheckListBox [MFC], SetCheckStyle
 ms.assetid: 1dd78438-00e8-441c-b36f-9c4f9ac0d019
-ms.openlocfilehash: 9c649dd979b28e2b545a797c5453a2ec9aa6d0dc
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f8c725ea30754a42ce3045f1160b7a09c4481e39
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62206738"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69507344"
 ---
 # <a name="cchecklistbox-class"></a>CCheckListBox sınıfı
 
-Bir Windows Denetim listesi kutusu işlevlerini sağlar.
+Windows Denetim listesi kutusunun işlevlerini sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -51,50 +51,50 @@ class CCheckListBox : public CListBox
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CCheckListBox::CCheckListBox](#cchecklistbox)|Oluşturur bir `CCheckListBox` nesne.|
+|[CCheckListBox:: CCheckListBox](#cchecklistbox)|Bir `CCheckListBox` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CCheckListBox::Create](#create)|Windows Denetim listesi kutusu oluşturur ve ona ekler `CCheckListBox` nesne.|
-|[CCheckListBox::DrawItem](#drawitem)|Görsel bir özelliği bir sahip çizim liste kutusu değişiklikler olduğunda framework tarafından çağırılır.|
-|[CCheckListBox::Enable](#enable)|Etkinleştirir veya bir denetim listesi kutusu öğesi devre dışı bırakır.|
-|[CCheckListBox::GetCheck](#getcheck)|Bir öğenin onay kutusunun durumunu alır.|
-|[CCheckListBox::GetCheckStyle](#getcheckstyle)|Denetimin onay kutularını stilini alır.|
-|[CCheckListBox::IsEnabled](#isenabled)|Bir öğe etkin olup olmadığını belirler.|
-|[CCheckListBox::MeasureItem](#measureitem)|Sahip çizim stili bir liste kutusu oluşturulduğunda framework tarafından çağırılır.|
-|[CCheckListBox::OnGetCheckPosition](#ongetcheckposition)|Onay kutusu öğenin konumunu almak için framework tarafından çağırılır.|
-|[CCheckListBox::SetCheck](#setcheck)|Bir öğenin onay kutusunun durumunu ayarlar.|
-|[CCheckListBox::SetCheckStyle](#setcheckstyle)|Denetimin onay kutularını stilini ayarlar.|
+|[CCheckListBox:: Create](#create)|Windows Denetim listesi kutusunu oluşturur ve `CCheckListBox` nesneye ekler.|
+|[CCheckListBox::D rawItem](#drawitem)|Bir sahip çizimi liste kutusunun görsel yönü değiştiğinde Framework tarafından çağırılır.|
+|[CCheckListBox:: Enable](#enable)|Denetim listesi kutusu öğesini etkinleştirilir veya devre dışı bırakır.|
+|[CCheckListBox:: GetCheck](#getcheck)|Bir öğenin onay kutusunun durumunu alır.|
+|[CCheckListBox:: GetCheckStyle](#getcheckstyle)|Denetimin onay kutularının stilini alır.|
+|[CCheckListBox:: IsEnabled](#isenabled)|Bir öğenin etkin olup olmadığını belirler.|
+|[CCheckListBox:: MeasureItem](#measureitem)|Sahip çizim stili olan bir liste kutusu oluşturulduğunda Framework tarafından çağırılır.|
+|[CCheckListBox:: OnGetCheckPosition](#ongetcheckposition)|Bir öğenin onay kutusunun konumunu almak için Framework tarafından çağırılır.|
+|[CCheckListBox:: SetCheck](#setcheck)|Bir öğenin onay kutusunun durumunu ayarlar.|
+|[CCheckListBox:: SetCheckStyle](#setcheckstyle)|Denetimin onay kutularının stilini ayarlar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir "Yapılacaklar listesi kutusu" dosya adları gibi öğeleri listesini görüntüler. Listedeki her öğe kullanıcının işaretleyin veya temizleyin yanında bir onay kutusu var.
+"Denetim listesi kutusu" dosya adları gibi öğelerin bir listesini görüntüler. Listedeki her öğe, kullanıcının denetleyip temizle, temizle, temizle, işaret edip temizlebir onay kutusu içerir.
 
-`CCheckListBox` yalnızca kullanıcı çizimli denetimler için listenin en fazla metin dizelerini içeren olmasıdır. En basit şekliyle, bir denetim listesi kutusu metin dizelerini ve onay kutularını içerir, ancak metin hiç sahip olmanız gerekmez. Örneğin, küçük bit eşlemler her öğesinin yanındaki onay kutusu listesi olabilir.
+`CCheckListBox`yalnızca sahibi tarafından çizilen denetimler içindir çünkü liste metin dizeleri içeriyor. En basit noktada, bir denetim listesi kutusu metin dizeleri ve onay kutuları içerir, ancak bir metin olması gerekmez. Örneğin, her öğenin yanında bir onay kutusu olan küçük bit eşlemlerin listesine sahip olabilirsiniz.
 
-Kendi Yapılacaklar listesi kutusu oluşturmak için kendi sınıfından türetilir `CCheckListBox`. Türetilmiş sınıf için bir oluşturucu kendi sınıf türetmek yazmak için ardından çağırın `Create`.
+Kendi denetim listesi kutusunu oluşturmak için, kendi sınıfınızı ' den `CCheckListBox`türetmeniz gerekir. Kendi sınıfınızı türetmek için, türetilmiş sınıf için bir Oluşturucu yazın ve ardından öğesini çağırın `Create`.
 
-Liste kutusu tarafından yollanır Windows bildirim iletilerini işlemek isterseniz (öğesinden türetilmiş bir sınıf genellikle [CDialog](../../mfc/reference/cdialog-class.md)), üst sınıfın her ileti için ileti eşleme girişi ve ileti işleyicisi üye işlevi ekleyin.
+Bir liste kutusu tarafından üst öğeye (genellikle [CDialog](../../mfc/reference/cdialog-class.md)'dan türetilmiş bir sınıf) gönderilen Windows bildirim iletilerini işlemek istiyorsanız, her ileti için üst sınıfa bir ileti eşleme girişi ve ileti işleyici üye işlevi ekleyin.
 
 Her ileti eşleme girişi aşağıdaki biçimi alır:
 
-**ON\_**_bildirim_ **(** _kimliği_, _memberFxn_ **)**
+Bildirimde (kimlik, memberFxn) **\_**
 
-Burada `id` bildirimi gönderilmesi denetimi alt pencere Kimliğini belirtir ve `memberFxn` bildirimini işlemek için yazdığınız üst üye işlev adıdır.
+Burada `id` bildirimi gönderen denetimin alt pencere kimliğini belirtir ve `memberFxn` bildirimi işlemek için yazdığınız üst üye işlevinin adıdır.
 
 Üst öğenin işlev prototipi aşağıdaki gibidir:
 
 `afx_msg void memberFxn();`
 
-Özellikle çok ilgilidir yalnızca bir ileti eşleme giriş `CCheckListBox` (ancak ileti eşlemesi girişleri için Ayrıca bkz: [CListBox](../../mfc/reference/clistbox-class.md)):
+Özellikle `CCheckListBox` ilgili olan yalnızca bir ileti eşleme girişi vardır (ancak aynı zamanda, [clienstbox](../../mfc/reference/clistbox-class.md)için ileti eşleme girişlerine bakın):
 
-- ON_CLBN_CHKCHANGE kullanıcının bir öğenin onay kutusunun durumunu değiştirdi.
+- ON_CLBN_CHKCHANGE Kullanıcı bir öğenin onay kutusunun durumunu değiştirdi.
 
-Bir varsayılan denetim listesi kutusu (her solundaki varsayılan boyutunda onay kutuları içeren dizeleri listesini), yapılacaklar listesi kutusu ise varsayılan kullanabileceğiniz [CCheckListBox::DrawItem](#drawitem) Yapılacaklar listesi kutusu çizmek için. Aksi takdirde, kılmalı [CListBox::CompareItem](../../mfc/reference/clistbox-class.md#compareitem) işlevi ve [CCheckListBox::DrawItem](#drawitem) ve [CCheckListBox::MeasureItem](#measureitem) işlevleri.
+Denetim listesi kutusu varsayılan bir denetim listesi kutusu ise (her birinin solunda varsayılan boyutlu onay kutularına sahip dizelerin listesi), denetim listesi kutusunu çizmek için varsayılan [CCheckListBox::D rawitem](#drawitem) kullanabilirsiniz. Aksi takdirde [Clienstbox:: CompareItem](../../mfc/reference/clistbox-class.md#compareitem) Işlevini ve [cchecklistbox::D Rawitem](#drawitem) ve [CCheckListBox:: MeasureItem](#measureitem) işlevlerini geçersiz kılmanız gerekir.
 
-Bir iletişim kutusu şablonundan ya da kodunuzda doğrudan bir denetim listesi kutusu oluşturabilirsiniz.
+Bir iletişim kutusu şablonundan ya da doğrudan kodunuzda bir denetim listesi kutusu oluşturabilirsiniz.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -110,11 +110,11 @@ Bir iletişim kutusu şablonundan ya da kodunuzda doğrudan bir denetim listesi 
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxwin.h
+**Üstbilgi:** Afxwin. h
 
-##  <a name="cchecklistbox"></a>  CCheckListBox::CCheckListBox
+##  <a name="cchecklistbox"></a>CCheckListBox:: CCheckListBox
 
-Oluşturur bir `CCheckListBox` nesne.
+Bir `CCheckListBox` nesnesi oluşturur.
 
 ```
 CCheckListBox();
@@ -122,15 +122,15 @@ CCheckListBox();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Oluşturmak bir `CCheckListBox` iki adımda nesne. İlk türetilen bir sınıf tanımlamak `CCheckListBox`, ardından çağırın `Create`, Windows Denetim listesi kutusu başlatır ve ekler `CCheckListBox` nesne.
+İki adımda bir `CCheckListBox` nesne oluşturursunuz. İlk olarak, öğesinden `CCheckListBox`türetilmiş bir sınıf tanımlayın, `Create`sonra Windows Denetim listesi kutusunu başlatan `CCheckListBox` ve nesneyi nesnesine iliştirir.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCControlLadenDialog#60](../../mfc/codesnippet/cpp/cchecklistbox-class_1.cpp)]
 
-##  <a name="create"></a>  CCheckListBox::Create
+##  <a name="create"></a>CCheckListBox:: Create
 
-Windows Denetim listesi kutusu oluşturur ve ona ekler `CCheckListBox` nesne.
+Windows Denetim listesi kutusunu oluşturur ve `CCheckListBox` nesneye ekler.
 
 ```
 virtual BOOL Create(
@@ -143,48 +143,48 @@ virtual BOOL Create(
 ### <a name="parameters"></a>Parametreler
 
 *dwStyle*<br/>
-Yapılacaklar listesi kutusu stilini belirtir. Stil lbs_hasstrıngs ve lbs_ownerdrawfıxed (listedeki tüm öğeleri aynı yükseklikte olan) veya lbs_ownerdrawvarıable olmalıdır (listedeki öğeleri, değişken uzunluklarının olabilir). Bu stil ile birleştirilebilir [liste kutusu stilleri](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) LBS_USETABSTOPS hariç.
+Denetim listesi kutusunun stilini belirtir. Stil, LBS_HASSTRINGS ve LBS_OWNERDRAWFIXED (listedeki tüm öğeler aynı yükseklikte) ya da LBS_OWNERDRAWVARIABLE (listedeki öğeler farklı yüksekliklerdir) olmalıdır. Bu stil, LBS_USETABSTOPS hariç diğer [liste kutusu stilleriyle](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) birleştirilebilir.
 
 *Rect*<br/>
-Yapılacaklar listesi kutusu boyutunu ve konumunu belirtir. Olabilir bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya bir [RECT](/windows/desktop/api/windef/ns-windef-tagrect) yapısı.
+Denetim listesi-kutusunun boyutunu ve konumunu belirtir. Bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi ya da bir [Rect](/windows/win32/api/windef/ns-windef-rect) yapısı olabilir.
 
 *pParentWnd*<br/>
-Denetim listesi kutunun üst penceresine belirtir (genellikle bir `CDialog` nesne). NULL olmamalıdır.
+Denetim listesi kutusunun üst penceresini (genellikle bir `CDialog` nesne) belirtir. NULL olmaması gerekir.
 
-*nID*<br/>
-Denetim listesi kutunun denetim kimliğini belirtir.
+*NID*<br/>
+Denetim listesi kutusunun Denetim KIMLIĞINI belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi durumda 0.
+Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Oluşturmak bir `CCheckListBox` iki adımda nesne. İlk olarak, türetilen bir sınıf tanımlama `CcheckListBox` ve sonra çağrı `Create`, Windows Denetim listesi kutusu başlatır ve ekler `CCheckListBox`. Bkz: [CCheckListBox::CCheckListBox](#cchecklistbox) örneği.
+İki adımda bir `CCheckListBox` nesne oluşturursunuz. İlk olarak, öğesinden `CcheckListBox` türetilmiş bir sınıf tanımlayın ve `Create`sonra Windows Denetim listesi kutusunu başlatan `CCheckListBox`ve bunu öğesine iliştirir. Örnek için bkz. [CCheckListBox:: CCheckListBox](#cchecklistbox) .
 
-Zaman `Create` yürütür, Windows gönderir [WM_NCCREATE](../../mfc/reference/cwnd-class.md#onnccreate), [WM_CREATE](../../mfc/reference/cwnd-class.md#oncreate), [WM_NCCALCSIZE](../../mfc/reference/cwnd-class.md#onnccalcsize), ve [WM_GETMINMAXINFO](../../mfc/reference/cwnd-class.md#ongetminmaxinfo) Yapılacaklar listesi kutusu denetim iletileri.
+[](../../mfc/reference/cwnd-class.md#ongetminmaxinfo) [](../../mfc/reference/cwnd-class.md#oncreate) [](../../mfc/reference/cwnd-class.md#onnccalcsize) [](../../mfc/reference/cwnd-class.md#onnccreate)Yürütüldüğünde, Windows, WM_NCCREATE, WM_CREATE, WM_NCCALCSIZE ve WM_GETMINMAXINFO iletilerini denetim listesi-Box denetimine gönderir. `Create`
 
-Bu iletiler tarafından varsayılan olarak işlenir [OnNcCreate](../../mfc/reference/cwnd-class.md#onnccreate), [OnCreate](../../mfc/reference/cwnd-class.md#oncreate), [OnNcCalcSize](../../mfc/reference/cwnd-class.md#onnccalcsize), ve [Ongetminmaxınfo](../../mfc/reference/cwnd-class.md#ongetminmaxinfo) üye işlevleri içinde `CWnd` temel sınıfı. Varsayılan ileti işleme genişletmek için ileti eşlemesi için ekleme türetilmiş bir sınıf ve üye işlevleri geçersiz kılma önceki ileti işleyicisi. Geçersiz kılma `OnCreate`, örneğin, gerekli başlatma için yeni bir sınıf gerçekleştirmek için.
+Bu iletiler, `CWnd` temel sınıftaki [OnNcCreate](../../mfc/reference/cwnd-class.md#onnccreate), [OnCreate](../../mfc/reference/cwnd-class.md#oncreate), [OnNcCalcSize](../../mfc/reference/cwnd-class.md#onnccalcsize)ve [OnGetMinMaxInfo](../../mfc/reference/cwnd-class.md#ongetminmaxinfo) member işlevleri tarafından varsayılan olarak işlenir. Varsayılan ileti işlemeyi genişletmek için, türetilmiş sınıfınıza bir ileti haritası ekleyin ve önceki ileti işleyici üye işlevlerini geçersiz kılın. Yeni `OnCreate`bir sınıf için gerekli başlatmayı gerçekleştirmek üzere, örneğin, öğesini geçersiz kılın.
 
-Aşağıdaki uygulama [pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#window-styles) bir denetim listesi kutusu denetimine:
+Aşağıdaki [pencere stillerini](../../mfc/reference/styles-used-by-mfc.md#window-styles) bir denetim listesi kutusu denetimine uygulayın:
 
 - WS_CHILD her zaman
 
-- Ws_vısıble genellikle
+- WS_VISIBLE genellikle
 
-- Ws_dısabled nadiren
+- WS_DISABLED nadiren
 
-- WS_VSCROLL için dikey kaydırma çubuğu ekleyin
+- Dikey kaydırma çubuğunu eklemek Için WS_VSCROLL
 
-- WS_HSCROLL için yatay kaydırma çubuğu ekleyin
+- Yatay kaydırma çubuğu eklemek Için WS_HSCROLL
 
-- WS_GROUP grup denetimleri için
+- WS_GROUP denetimleri
 
-- WS_TABSTOP izin vermek için bu denetimin sekme
+- WS_TABSTOP bu denetime sekmeye izin vermek Için
 
-##  <a name="drawitem"></a>  CCheckListBox::DrawItem
+##  <a name="drawitem"></a>CCheckListBox::D rawItem
 
-Görsel bir özelliği bir sahip tarafından çizilmiş denetim listesi kutusu değişiklikler olduğunda framework tarafından çağırılır.
+Sahip tarafından çizilmiş bir denetim listesi kutusunun görsel bir yönü değiştiğinde Framework tarafından çağırılır.
 
 ```
 virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
@@ -193,21 +193,21 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
 ### <a name="parameters"></a>Parametreler
 
 *lpDrawItemStruct*<br/>
-Uzun bir işaretçi bir [DRAWITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagdrawitemstruct) gerekli çizim türü hakkında bilgi içeren yapısı.
+Gerekli çizim türü hakkında bilgi içeren [Drawitemstruct](/windows/win32/api/winuser/ns-winuser-drawitemstruct) yapısına yönelik uzun bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`itemAction` Ve `itemState` üyeleri `DRAWITEMSTRUCT` yapısı gerçekleştirilecek çizim eylemi tanımlayın.
+Yapının ve `itemState` üyeleri gerçekleştirilecek çizim eylemini tanımlar. `itemAction` `DRAWITEMSTRUCT`
 
-Varsayılan olarak, bu işlev bir dize listesi her varsayılan boyutunda bir onay kutusu sol ile oluşan varsayılan onay kutusu listesi, çizer. Belirtilen onay kutusu listesi boyutu öğedir [Oluştur](#create).
+Varsayılan olarak, bu işlev varsayılan bir onay kutusu listesi çizer, bu, her biri varsayılan boyutlu bir onay kutusu olan dizelerin listesinden oluşur. CheckBox listesinin boyutu [Create](#create)içinde belirtilen bir değer.
 
-Dize olmayan listeleri, değişken yükseklik öğeleri veya sol tarafta olmayan onay kutularını denetim kutuları gibi varsayılan olmayan özelleştirilmiş çizimli denetim listesi kutusu çizim uygulamak için bu üye işlevini geçersiz kılar. Uygulama görünen bağlam sağlanan için seçilen tüm grafik cihaz arabirimi (GDI) nesneleri geri yüklemeniz gerekir *lpDrawItemStruct* bu üye işlevinin sona ermeden önce.
+Dize olmayan listelerle, değişken yükseklikli öğelerle veya sol tarafta olmayan onay kutularına sahip denetim listesi kutuları gibi, varsayılan olmayan sahip çizim denetim listesi kutularının çizimini uygulamak için bu üye işlevini geçersiz kılın. Uygulamanın, bu üye işlevin sonlandırılması için *Lpdrawitemstruct* içinde sağlanan görüntüleme bağlamı için seçilen tüm grafik cihaz ARABIRIMI (GDI) nesnelerini geri yüklemesi gerekir.
 
-Denetim listesi kutusu öğeleri aynı yükseklikte emin değilseniz, Denetim listesi kutusu stili (belirtilen `Create`) olmalıdır ** LBS_OWNERVARIABLE ve kılmalı [MeasureItem](#measureitem) işlevi.
+Denetim listesi kutusu öğeleri aynı yükseklikte değilse, denetim listesi kutusu stili (içinde `Create`belirtilen) * * LBS_OWNERVARIABLE olmalıdır ve [MeasureItem](#measureitem) işlevini geçersiz kılmanız gerekir.
 
-##  <a name="enable"></a>  CCheckListBox::Enable
+##  <a name="enable"></a>CCheckListBox:: Enable
 
-Etkinleştirmek veya devre dışı bir denetim listesi kutusu öğesi için bu işlevi çağırın.
+Denetim listesi kutusu öğesini etkinleştirmek veya devre dışı bırakmak için bu işlevi çağırın.
 
 ```
 void Enable(
@@ -217,13 +217,13 @@ void Enable(
 
 ### <a name="parameters"></a>Parametreler
 
-*nIndex*<br/>
-Etkinleştirilmesi için Denetim listesi kutusu öğenin dizini.
+*nDizin*<br/>
+Etkinleştirilecek denetim listesi kutusu öğesinin dizini.
 
-*bEtkin*<br/>
-Öğe etkin mi yoksa devre dışı mı olduğunu belirtir.
+*bEnabled*<br/>
+Öğenin etkin veya devre dışı olduğunu belirtir.
 
-##  <a name="getcheck"></a>  CCheckListBox::GetCheck
+##  <a name="getcheck"></a>CCheckListBox:: GetCheck
 
 Belirtilen onay kutusunun durumunu alır.
 
@@ -233,22 +233,22 @@ int GetCheck(int nIndex);
 
 ### <a name="parameters"></a>Parametreler
 
-*nIndex*<br/>
-Liste kutusunda bulunan bir onay kutusu sıfır tabanlı dizini.
+*nDizin*<br/>
+Liste kutusunda bulunan onay kutusunun sıfır tabanlı dizini.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen onay kutusunun durumunu. Olası değerler aşağıdaki tabloda listelenmektedir.
+Belirtilen onay kutusunun durumu. Aşağıdaki tabloda olası değerler listelenmektedir.
 
 |Değer|Açıklama|
 |-----------|-----------------|
-|BST_CHECKED|Onay kutusunun işaretli olduğundan.|
-|BST_UNCHECKED|Onay kutusu işaretli değildir.|
-|BST_INDETERMINATE|Onay kutusunun durumunu belirsiz.|
+|BST_CHECKED|Onay kutusu işaretlenir.|
+|BST_UNCHECKED|Onay kutusu işaretli değil.|
+|BST_INDETERMINATE|Onay kutusu durumu belirsiz.|
 
-##  <a name="getcheckstyle"></a>  CCheckListBox::GetCheckStyle
+##  <a name="getcheckstyle"></a>CCheckListBox:: GetCheckStyle
 
-Denetim listesi kutunun stili almak için bu işlevi çağırın.
+Denetim listesi kutusunun stilini almak için bu işlevi çağırın.
 
 ```
 UINT GetCheckStyle();
@@ -256,15 +256,15 @@ UINT GetCheckStyle();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Denetimin onay kutularını stili.
+Denetimin onay kutularının stili.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Olası stilleri hakkında daha fazla bilgi için bkz: [SetCheckStyle](#setcheckstyle).
+Olası stiller hakkında daha fazla bilgi için bkz. [SetCheckStyle](#setcheckstyle).
 
-##  <a name="isenabled"></a>  CCheckListBox::IsEnabled
+##  <a name="isenabled"></a>CCheckListBox:: IsEnabled
 
-Bir öğe etkin olup olmadığını belirlemek için bu işlevi çağırın.
+Bir öğenin etkin olup olmadığını öğrenmek için bu işlevi çağırın.
 
 ```
 BOOL IsEnabled(int nIndex);
@@ -272,16 +272,16 @@ BOOL IsEnabled(int nIndex);
 
 ### <a name="parameters"></a>Parametreler
 
-*nIndex*<br/>
+*nDizin*<br/>
 Öğenin dizini.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğe etkin olursa sıfır dışı; Aksi durumda 0.
+Öğe etkinse sıfır dışı; Aksi takdirde 0.
 
-##  <a name="measureitem"></a>  CCheckListBox::MeasureItem
+##  <a name="measureitem"></a>CCheckListBox:: MeasureItem
 
-Varsayılan olmayan stilinde bir denetim listesi kutusu oluşturulduğunda framework tarafından çağırılır.
+Varsayılan olmayan bir stil içeren bir denetim listesi oluşturulduğunda Framework tarafından çağırılır.
 
 ```
 virtual void MeasureItem(LPMEASUREITEMSTRUCT lpMeasureItemStruct);
@@ -290,15 +290,15 @@ virtual void MeasureItem(LPMEASUREITEMSTRUCT lpMeasureItemStruct);
 ### <a name="parameters"></a>Parametreler
 
 *lpMeasureItemStruct*<br/>
-Uzun bir işaretçi bir [MEASUREITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagmeasureitemstruct) yapısı.
+[MEASUREITEMSTRUCT](/windows/win32/api/winuser/ns-winuser-measureitemstruct) yapısına yönelik uzun bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, bu üye işlev hiçbir şey yapmaz. Bu üye işlevini geçersiz kılabilir ve doldurun `MEASUREITEMSTRUCT` Windows Denetim listesi kutusu öğeleri boyutlarının bildirmek için yapısı. Yapılacaklar listesi kutusu ile oluşturulursa [lbs_ownerdrawvarıable](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) stili framework çağıran bu üye işlevi liste kutusunda her bir öğe için. Aksi takdirde, bu üye, yalnızca bir kez çağrılır.
+Varsayılan olarak, bu üye işlevi hiçbir şey yapmaz. Bu üye işlevini geçersiz kılın ve pencere denetim `MEASUREITEMSTRUCT` kutusu öğeleri boyutlarını bilgilendirmek için yapıyı girin. Denetim listesi kutusu [LBS_OWNERDRAWVARIABLE](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) stiliyle oluşturulduysa, çerçeve liste kutusundaki her öğe için bu üye işlevini çağırır. Aksi takdirde, bu üye yalnızca bir kez çağrılır.
 
-##  <a name="ongetcheckposition"></a>  CCheckListBox::OnGetCheckPosition
+##  <a name="ongetcheckposition"></a>CCheckListBox:: OnGetCheckPosition
 
-Framework, bir öğedeki onay kutusunun boyutunu ve konumunu almak için bu işlevi çağırır.
+Framework, bir öğedeki onay kutusunun konumunu ve boyutunu almak için bu işlevi çağırır.
 
 ```
 virtual CRect OnGetCheckPosition(
@@ -308,21 +308,21 @@ virtual CRect OnGetCheckPosition(
 
 ### <a name="parameters"></a>Parametreler
 
-*rectItem*<br/>
-Liste öğesi boyutunu ve konumunu.
+*Rectıtem*<br/>
+Liste öğesinin konumu ve boyutu.
 
 *rectCheckBox*<br/>
-Bir öğenin boyutunu ve varsayılan konumu onay kutusunu işaretleyin.
+Bir öğenin onay kutusunun varsayılan konumu ve boyutu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir öğenin boyutunu ve konumunu onay kutusunu işaretleyin.
+Bir öğenin onay kutusunun konumu ve boyutu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan uygulama yalnızca onay kutusunun boyutunu ve varsayılan konumunu döndürür (`rectCheckBox`). Varsayılan olarak onay kutusu öğenin sol üst köşesinde bulunan hizalanır ve standart onay kutusunun boyutu. Burada, sağ taraftaki onay kutularını istiyorsanız veya daha büyük veya küçük bir onay kutusunu istediğiniz durumlar olabilir. Bu durumda geçersiz kılma `OnGetCheckPosition` onay kutusunun konumu ve boyutu öğesinin içinde değiştirmek için.
+Varsayılan uygulama yalnızca onay kutusunun (`rectCheckBox`) varsayılan konumunu ve boyutunu döndürür. Varsayılan olarak, bir onay kutusu öğenin sol üst köşesine hizalanır ve standart onay kutusu boyutudur. Onay kutularının sağ tarafta olmasını veya daha büyük ya da daha küçük bir onay kutusu olmasını istediğiniz durumlar olabilir. Bu durumlarda, öğe içindeki `OnGetCheckPosition` onay kutusu konumunu ve boyutunu değiştirmek için geçersiz kılın.
 
-##  <a name="setcheck"></a>  CCheckListBox::SetCheck
+##  <a name="setcheck"></a>CCheckListBox:: SetCheck
 
 Belirtilen onay kutusunun durumunu ayarlar.
 
@@ -334,25 +334,25 @@ void SetCheck(
 
 ### <a name="parameters"></a>Parametreler
 
-*nIndex*<br/>
-Liste kutusunda bulunan bir onay kutusu sıfır tabanlı dizini.
+*nDizin*<br/>
+Liste kutusunda bulunan onay kutusunun sıfır tabanlı dizini.
 
-*Nbakım*<br/>
-Belirtilen onay kutusu düğmesi durumu. Olası değerler için Açıklamalar bölümüne bakın.
+*Nhatayla*<br/>
+Belirtilen onay kutusu için düğme durumu. Olası değerler için açıklamalar bölümüne bakın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İçin olası değerler aşağıdaki tabloda *Nbakım* parametresi.
+Aşağıdaki tabloda, *nCheck* parametresi için olası değerler listelenmektedir.
 
 |Değer|Açıklama|
 |-----------|-----------------|
-|BST_CHECKED|Belirtilen onay kutusunu işaretleyin.|
+|BST_CHECKED|Belirtilen onay kutusunu seçin.|
 |BST_UNCHECKED|Belirtilen onay kutusunu temizleyin.|
-|BST_INDETERMINATE|Belirtilen onay kutusunun durumunu belirsiz şekilde ayarlayın.<br /><br /> Bu durum, yalnızca onay kutusu stili BS_AUTO3STATE veya BS_3STATE olduğunda kullanılabilir. Daha fazla bilgi için [düğme stilleri](../../mfc/reference/styles-used-by-mfc.md#button-styles).|
+|BST_INDETERMINATE|Belirtilen onay kutusu durumunu belirsiz olarak ayarlayın.<br /><br /> Bu durum yalnızca onay kutusu stili BS_AUTO3STATE veya BS_3STATE olduğunda kullanılabilir. Daha fazla bilgi için bkz. [düğme stilleri](../../mfc/reference/styles-used-by-mfc.md#button-styles).|
 
-##  <a name="setcheckstyle"></a>  CCheckListBox::SetCheckStyle
+##  <a name="setcheckstyle"></a>CCheckListBox:: SetCheckStyle
 
-Onay kutularını stilini Yapılacaklar listesi kutusu içinde ayarlamak için bu işlevi çağırın.
+Denetim listesi kutusundaki onay kutularının stilini ayarlamak için bu işlevi çağırın.
 
 ```
 void SetCheckStyle(UINT nStyle);
@@ -361,7 +361,7 @@ void SetCheckStyle(UINT nStyle);
 ### <a name="parameters"></a>Parametreler
 
 *nStyle*<br/>
-Yapılacaklar listesi kutusu onay kutularına stilini belirler.
+Denetim listesi kutusundaki onay kutularının stilini belirler.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -375,7 +375,7 @@ Geçerli stiller şunlardır:
 
 - BS_3STATE
 
-Bu stiller hakkında daha fazla bilgi için bkz: [düğme stilleri](../../mfc/reference/styles-used-by-mfc.md#button-styles).
+Bu stillerle ilgili bilgi için bkz. [düğme stilleri](../../mfc/reference/styles-used-by-mfc.md#button-styles).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

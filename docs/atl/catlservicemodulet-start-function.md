@@ -1,26 +1,26 @@
 ---
-title: CAtlServiceModuleT::Start işlevi
+title: 'CAtlServiceModuleT:: Start Işlevi'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - Start method
 ms.assetid: b5193a23-41bc-42d2-8d55-3eb43dc62238
-ms.openlocfilehash: 204d02a1122ee78b38850bedae5f98b1f338ab1d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e6de15f40e89bfffba504db04ee7a16b2a68cac9
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62250751"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69491660"
 ---
-# <a name="catlservicemoduletstart-function"></a>CAtlServiceModuleT::Start işlevi
+# <a name="catlservicemoduletstart-function"></a>CAtlServiceModuleT:: Start Işlevi
 
-Hizmet çalıştırıldığında `_tWinMain` çağrıları `CAtlServiceModuleT::WinMain`, sırayla çağıran `CAtlServiceModuleT::Start`.
+Hizmet çalıştırıldığında `_tWinMain` `CAtlServiceModuleT::WinMain`çağrılır ,çağırır.`CAtlServiceModuleT::Start`
 
-`CAtlServiceModuleT::Start` bir dizi ayarlar `SERVICE_TABLE_ENTRY` her hizmetin kendi başlangıç işleve eşlemenizi yapılar. Bu dizi ardından Win32 API işlevine geçirilen [StartServiceCtrlDispatcher](/windows/desktop/api/winsvc/nf-winsvc-startservicectrldispatchera). Teorik olarak, bir EXE birden çok hizmet işlemlerini gerçekleştirebilir ve birden çok dizisine sahip `SERVICE_TABLE_ENTRY` yapıları. Şu anda, ancak bir ATL oluşturulan hizmet EXE başına yalnızca bir hizmet destekler. Bu nedenle, hizmet adını içeren tek bir giriş dizi sahip ve `_ServiceMain` olarak başlangıç işlevi. `_ServiceMain` bir statik üye işlevi olduğu `CAtlServiceModuleT` statik olmayan üye işlev çağrılarının `ServiceMain`.
+`CAtlServiceModuleT::Start`her hizmeti başlangıç işlevine eşleyen `SERVICE_TABLE_ENTRY` yapıların dizisini ayarlar. Daha sonra bu dizi Win32 API işlevine geçirilir, [StartServiceCtrlDispatcher](/windows/win32/api/winsvc/nf-winsvc-startservicectrldispatcherw). Teorik olarak, bir exe birden çok hizmeti işleyebilir ve dizi birden fazla `SERVICE_TABLE_ENTRY` yapıya sahip olabilir. Ancak şu anda, ATL tarafından oluşturulan bir hizmet EXE başına yalnızca bir hizmet destekler. Bu nedenle, dizinin, hizmet adını ve `_ServiceMain` başlangıç işlevini içeren tek bir girişi vardır. `_ServiceMain``CAtlServiceModuleT` ,`ServiceMain`statik olmayan üye işlevi çağıran öğesinin statik bir üye işlevidir.
 
 > [!NOTE]
->  Hata `StartServiceCtrlDispatcher` bağlanmak için Hizmet Denetimi Yöneticisi (SCM) büyük olasılıkla program hizmet olarak çalışmıyor anlamına gelir. Bu durumda, program çağırır `CAtlServiceModuleT::Run` doğrudan programın yerel sunucu olarak çalıştırabilirsiniz. Programı yerel sunucu olarak çalıştırma hakkında daha fazla bilgi için bkz. [hata ayıklama ipuçları](../atl/debugging-tips.md).
+>  `StartServiceCtrlDispatcher` Service Control Manager 'a (SCM) Bağlanamamak, programın hizmet olarak çalışmadığı anlamına gelir. Bu durumda program doğrudan çağırır `CAtlServiceModuleT::Run` , böylece program yerel sunucu olarak çalıştırılabilir. Programı yerel sunucu olarak çalıştırma hakkında daha fazla bilgi için bkz. [hata ayıklama ipuçları](../atl/debugging-tips.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Hizmetler](../atl/atl-services.md)<br/>
-[CAtlServiceModuleT::Start](../atl/reference/catlservicemodulet-class.md#start)
+[CAtlServiceModuleT:: Start](../atl/reference/catlservicemodulet-class.md#start)

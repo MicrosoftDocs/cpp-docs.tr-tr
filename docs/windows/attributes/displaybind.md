@@ -1,21 +1,21 @@
 ---
-title: displaybind (C++ COM özniteliği)
+title: displaybind (C++ com özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.displaybind
 helpviewer_keywords:
 - displaybind attribute
 ms.assetid: b3d70396-78e4-43d9-9583-16ddb8c9bb1f
-ms.openlocfilehash: b16e809781170d0c5dfe301e6dd73e6a27046835
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 168db224e7b15656308259f9507e1079744f1a73
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62409700"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490881"
 ---
 # <a name="displaybind"></a>displaybind
 
-Kullanıcıya bağlanabilir olarak görüntülenmesi gereken özelliği belirtir.
+Kullanıcıya bağlanabilir olarak görüntülenmesi gereken bir özelliği gösterir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -25,11 +25,11 @@ Kullanıcıya bağlanabilir olarak görüntülenmesi gereken özelliği belirtir
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Displaybind** C++ özniteliği ile aynı işlevlere sahip [displaybind](/windows/desktop/Midl/displaybind) MIDL özniteliği.
+**Displaybind** C++ özniteliği [displaybind](/windows/win32/Midl/displaybind) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
 
 ## <a name="example"></a>Örnek
 
-Örneğin bakın [bağlanabilir](bindable.md) nasıl kullanılacağına ilişkin bir örnek **displaybind**.
+**Displaybind**'in nasıl kullanılacağına ilişkin bir örnek için bkz. [bağlanabilir](bindable.md) .
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -37,12 +37,12 @@ Kullanıcıya bağlanabilir olarak görüntülenmesi gereken özelliği belirtir
 
 |||
 |-|-|
-|**İçin geçerlidir**|Arabirim yöntemi|
+|**Uygulama hedefi**|Interface yöntemi|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|Yok.|
+|**Gerekli öznitelikler**|Yok.|
 |**Geçersiz öznitelikler**|Yok.|
 
-Daha fazla bilgi için [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
+Daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -44,16 +44,16 @@ helpviewer_keywords:
 - vwprintf_p_l function
 - formatted text [C++]
 ms.assetid: 3f99bde3-c891-493d-908f-30559c421058
-ms.openlocfilehash: 266df8c033fc9d1c8459aff9f2b95771947d88d1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8b41c7307ccdbbec4cd16c662d1d123642c339f8
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62364707"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69499195"
 ---
-# <a name="vprintfp-vprintfpl-vwprintfp-vwprintfpl"></a>_vprintf_p, _vprintf_p_l, _vwprintf_p, _vwprintf_p_l
+# <a name="_vprintf_p-_vprintf_p_l-_vwprintf_p-_vwprintf_p_l"></a>_vprintf_p, _vprintf_p_l, _vwprintf_p, _vwprintf_p_l
 
-Bağımsız değişkenler listesine bir işaretçi kullanarak biçimlendirilmiş çıktı yazar ve bağımsız değişkenler kullanılan order belirtimi sağlar.
+Bağımsız değişken listesi için bir işaretçi kullanarak biçimlendirilen çıktıyı yazar ve bağımsız değişkenlerin kullanıldığı sıranın belirtimini sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -80,55 +80,55 @@ int _vwprintf_p_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*Biçim*<br/>
+*format*<br/>
 Biçim belirtimi.
 
 *argptr*<br/>
-Bağımsız değişkenler listesine işaretçi.
+Bağımsız değişken listesi işaretçisi.
 
-*Yerel ayar*<br/>
+*ayarlar*<br/>
 Kullanılacak yerel ayar.
 
-Daha fazla bilgi için [biçim belirtimleri](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).
+Daha fazla bilgi için bkz. [Biçim belirtimleri](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_vprintf_p** ve **_vwprintf_p** bir hata oluşursa, sondaki boş karakter veya negatif bir değer içermeyen yazılan karakter sayısını döndürür.
+**_vprintf_p** ve **_vwprintf_p** yazılan karakter sayısını, Sonlandırıcı null karakterini veya bir çıkış hatası oluşursa negatif bir değeri geri döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevlerin her biri bir bağımsız değişken listesi için bir işaretçi alır sonra biçimlendirir ve belirtilen verileri Yazar **stdout**. Bu işlevler farklı **vprintf_s** ve **vwprintf_s** yalnızca bunlar bağımsız değişkenlerin kullanıldığı sırayı belirleme özelliğini desteklemesidir. Daha fazla bilgi için [printf_p konumsal parametreler](../../c-runtime-library/printf-p-positional-parameters.md).
+Bu işlevlerin her biri bağımsız değişken listesi için bir işaretçi alır ve sonra verilen verileri **stdout**'a biçimlendirir ve yazar. Bu işlevler, **vprintf_s** ve **vwprintf_s** ' den yalnızca bağımsız değişkenlerin kullanıldığı sırayı belirleme yeteneğini destekledikleri için farklılık gösterir. Daha fazla bilgi için bkz. [Printf_p konumsal Parameters](../../c-runtime-library/printf-p-positional-parameters.md).
 
-**_vwprintf_p** öğesinin geniş karakterli sürümüdür **_vprintf_p**; akış ANSI modunda açılırsa iki işlev aynı şekilde davranır. **_vprintf_p** UNICODE akışına çıkış şu anda desteklemiyor.
+**_vwprintf_p** , **_vprintf_p**öğesinin geniş karakterli sürümüdür; Akış ANSI modunda açılırsa iki işlev aynı şekilde davranır. **_vprintf_p** Şu anda UNICODE bir akışa çıktıyı desteklemez.
 
-Sahip bu işlevlerin sürümleri **_l** sonekine, geçerli iş parçacığı yerel ayarı yerine iletilen yerel ayar parametresini kullanmalarıdır.
+**_L** sonekine sahip bu işlevlerin sürümleri, geçerli iş parçacığı yerel ayarı yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır.
 
 > [!IMPORTANT]
-> Emin *biçimi* kullanıcı tanımlı bir dize değil. Daha fazla bilgi için [arabellek taşmalarını](/windows/desktop/SecBP/avoiding-buffer-overruns).
+> *Biçimin* Kullanıcı tanımlı bir dize olmadığından emin olun. Daha fazla bilgi için bkz. [arabellek taşmalarını önleme](/windows/win32/SecBP/avoiding-buffer-overruns).
 
-Varsa *biçimi* null bir işaretçiyse veya biçim dizesi geçersiz biçim karakterleri içeriyorsa, geçersiz parametre işleyicisi açıklandığı gibi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse, İşlevler -1 döndürür ve **errno** için **EINVAL**.
+*Biçim* null işaretçisiyse veya biçim dizesi geçersiz biçimlendirme karakterleri Içeriyorsa, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, işlevler-1 döndürür ve **errno** , **EINVAL**olarak ayarlanır.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_vtprintf_p**|**_vprintf_p**|**_vprintf_p**|**_vwprintf_p**|
 |**_vtprintf_p_l**|**_vprintf_p_l**|**_vprintf_p_l**|**_vwprintf_p_l**|
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli başlık|İsteğe bağlı üst bilgiler|
+|Yordam|Gerekli başlık|İsteğe bağlı üstbilgiler|
 |-------------|---------------------|----------------------|
-|**_vprintf_p**, **_vprintf_p_l**|\<stdio.h > ve \<stdarg.h >|\<XENIX > *|
-|**_vwprintf_p**, **_vwprintf_p_l**|\<stdio.h > veya \<wchar.h >, ve \<stdarg.h >|\<XENIX > *|
+|**_vprintf_p**, **_vprintf_p_l**|\<stdio. h > ve \<stdarg. h >|\<varargs. h > *|
+|**_vwprintf_p**, **_vwprintf_p_l**|\<stdio. h > veya \<wchar. h > ve \<stdarg. h >|\<varargs. h > *|
 
-\* UNIX V uyumluluğu için gerekli.
+\*UNIX V uyumluluğu için gereklidir.
 
-Konsolu, Evrensel Windows Platformu (UWP) uygulamaları desteklenmez. Konsolları ile ilişkili standart akış işleyicileri **stdin**, **stdout**, ve **stderr**, C çalışma zamanı işlevleri bunları UWP uygulamalarında kullanmadan önce yeniden yönlendirilmesi gerekiyor . Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Konsol Evrensel Windows Platformu (UWP) uygulamalarında desteklenmez. Console, **STDIN**, **stdout**ve **stderr**Ile ilişkili standart akış TUTAMAÇLARı, C çalışma zamanı işlevlerinin UWP uygulamalarında kullanabilmesi için yeniden yönlendirilmelidir. Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Stream g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [vprintf İşlevleri](../../c-runtime-library/vprintf-functions.md)<br/>
 [_fprintf_p, _fprintf_p_l, _fwprintf_p, _fwprintf_p_l](fprintf-p-fprintf-p-l-fwprintf-p-fwprintf-p-l.md)<br/>
 [_printf_p, _printf_p_l, _wprintf_p, _wprintf_p_l](printf-p-printf-p-l-wprintf-p-wprintf-p-l.md)<br/>

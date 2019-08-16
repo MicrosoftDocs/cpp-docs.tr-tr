@@ -7,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - CComEnum class
 ms.assetid: bff7dd7b-eb6e-4d6e-96ed-2706e66c8b3b
-ms.openlocfilehash: 4d83b06f37c132c0d2325304e2cc155ccb490690
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7252eb2fa5d34618a1c38484a2506bae27a1106a
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62246401"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69497218"
 ---
 # <a name="ccomenum-class"></a>CComEnum sınıfı
 
-Bu sınıf, bir dizi üzerinde temel bir COM Numaralandırıcı nesnesi tanımlar.
+Bu sınıf bir diziyi temel alan bir COM Numaralandırıcı nesnesi tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -31,36 +31,36 @@ public CComObjectRootEx<ThreadModel>
 
 #### <a name="parameters"></a>Parametreler
 
-*temel*<br/>
-COM Numaralandırıcı arabirimi. Bkz: [IEnumString](/windows/desktop/api/objidl/nn-objidl-ienumstring) örneği.
+*Temel*<br/>
+COM Numaralandırıcı arabirimi. Örnek için bkz. [IEnumString](/windows/win32/api/objidl/nn-objidl-ienumstring) .
 
-*piid*<br/>
-Numaralandırıcı arabirimi arabirim kimliği için bir işaretçi.
+*piıd*<br/>
+Numaralandırıcı arabiriminin arabirim KIMLIĞINE yönelik bir işaretçi.
 
-*T*<br/>
-Numaralandırıcı arabirim tarafından sunulan öğe türü.
+*ŞI*<br/>
+Numaralandırıcı arabirimi tarafından kullanıma sunulan öğenin türü.
 
 *Kopyala*<br/>
-Bir homojen [kopyalama İlkesi sınıfı](../../atl/atl-copy-policy-classes.md).
+Homojen [kopya ilke sınıfı](../../atl/atl-copy-policy-classes.md).
 
 *ThreadModel*<br/>
-Sınıfın iş parçacığı modeli. Bu parametre, projenizde kullanılan genel nesnesi iş parçacığı modelini varsayılan kullanır.
+Sınıfın iş parçacığı modeli. Bu parametrenin varsayılan değeri, projenizde kullanılan genel nesne iş parçacığı modelidir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CComEnum` bir dizi üzerinde temel bir COM Numaralandırıcı nesnesi tanımlar. Bu sınıf için benzer [CComEnumOnSTL](../../atl/reference/ccomenumonstl-class.md) bir C++ Standart Kitaplığı kapsayıcı dayalı bir numaralandırıcı uygular. Bu sınıf kullanmak için tipik adımları aşağıda özetlenmiştir. Daha fazla bilgi için [ATL koleksiyonları ve numaralandırıcıları](../../atl/atl-collections-and-enumerators.md).
+`CComEnum`bir diziyi temel alan bir COM Numaralandırıcı nesnesi tanımlar. Bu sınıf, C++ standart bir kitaplık kapsayıcısını temel alan bir Numaralandırıcı uygulayan [CComEnumOnSTL](../../atl/reference/ccomenumonstl-class.md) öğesine benzerdir. Bu sınıfı kullanmanın tipik adımları aşağıda özetlenmiştir. Daha fazla bilgi için bkz. [atl koleksiyonları ve Numaralandırıcılar](../../atl/atl-collections-and-enumerators.md).
 
-## <a name="to-use-this-class"></a>Bu sınıf kullanmak için:
+## <a name="to-use-this-class"></a>Bu sınıfı kullanmak için:
 
-- **TypeDef** bu sınıfın özelleştirmesi.
+- **typedef** bu sınıfın özelleştirmesi.
 
-- Kullanım **typedef** özelleştirmesi şablon bağımsız değişken olarak `CComObject`.
+- Öğesinin`CComObject`bir özelleştirmesi içinde şablon bağımsız değişkeni olarak **typedef** kullanın.
 
-- Bir örneğini oluşturmak `CComObject` özelleştirmesi.
+- `CComObject` Özelleşmenin bir örneğini oluşturun.
 
-- Numaralandırıcı nesnesi çağırarak denetlediği başlatmak [CComEnumImpl::Init](../../atl/reference/ccomenumimpl-class.md#init).
+- [CComEnumImpl:: Init](../../atl/reference/ccomenumimpl-class.md#init)çağırarak Numaralandırıcı nesnesini başlatın.
 
-- Numaralandırıcı arabirimi istemciye döndürür.
+- Numaralandırıcı arabirimini istemciye döndürün.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -76,23 +76,23 @@ Sınıfın iş parçacığı modeli. Bu parametre, projenizde kullanılan genel 
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlcom.h
+**Üstbilgi:** atlcom. h
 
 ## <a name="example"></a>Örnek
 
-Aşağıda gösterilen kod oluşturma ve bir numaralandırıcı nesnesi başlatılırken yeniden kullanılabilir bir işlev sağlar.
+Aşağıda gösterilen kod, bir Numaralandırıcı nesnesi oluşturmak ve başlatmak için yeniden kullanılabilir bir işlev sağlar.
 
 [!code-cpp[NVC_ATL_COM#32](../../atl/codesnippet/cpp/ccomenum-class_1.h)]
 
-Bu şablon işlevi uygulamak için kullanılan `_NewEnum` aşağıda gösterildiği gibi bir toplama arabirimin özelliği:
+Bu şablon işlevi, `_NewEnum` aşağıda gösterildiği gibi bir koleksiyon arabiriminin özelliğini uygulamak için kullanılabilir:
 
 [!code-cpp[NVC_ATL_COM#33](../../atl/codesnippet/cpp/ccomenum-class_2.h)]
 
-Bu kod oluşturur bir **typedef** için `CComEnum` çeşitler arasında oluşan bir vektörü sunan `IEnumVariant` arabirimi. `CVariantArrayCollection` Sınıfı yalnızca uzmanlaşmış `CreateEnumerator` bu türde ve geçişleri gerekli bağımsız değişkenler Numaralandırıcı nesnelerle çalışmayı.
+Bu kod, bir için `CComEnum` bir typedef oluşturur ve bu, `IEnumVariant` arabirim aracılığıyla bir çeşit vektörü gösterir. `CVariantArrayCollection` Sınıfı`CreateEnumerator` , bu türün Numaralandırıcı nesneleriyle çalışmayı özelleştirmektedir ve gerekli bağımsız değişkenleri geçirir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)<br/>
+[Sınıfa genel bakış](../../atl/atl-class-overview.md)<br/>
 [CComObjectThreadModel](atl-typedefs.md#ccomobjectthreadmodel)<br/>
 [CComEnumImpl Sınıfı](../../atl/reference/ccomenumimpl-class.md)<br/>
 [CComObjectRootEx Sınıfı](../../atl/reference/ccomobjectrootex-class.md)

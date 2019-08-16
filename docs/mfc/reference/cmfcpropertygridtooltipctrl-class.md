@@ -1,5 +1,5 @@
 ---
-title: CMFCPropertyGridToolTipCtrl Class
+title: CMFCPropertyGridToolTipCtrl sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CMFCPropertyGridToolTipCtrl
@@ -20,16 +20,16 @@ helpviewer_keywords:
 - CMFCPropertyGridToolTipCtrl [MFC], SetTextMargin
 - CMFCPropertyGridToolTipCtrl [MFC], Track
 ms.assetid: 84b436e5-6695-4da0-9569-1a875e087711
-ms.openlocfilehash: 6c14ed1f11a7a414332b34566a314459d76b911b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f1b6f626b5f9844c73cd2225a7d6311f5b2f7d4f
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62310480"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69505089"
 ---
-# <a name="cmfcpropertygridtooltipctrl-class"></a>CMFCPropertyGridToolTipCtrl Class
+# <a name="cmfcpropertygridtooltipctrl-class"></a>CMFCPropertyGridToolTipCtrl sınıfı
 
-Uygulayan bir araç ipucu denetimi [CMFCPropertyGridCtrl sınıfı](../../mfc/reference/cmfcpropertygridctrl-class.md) araç ipuçlarını görüntülemek için kullanır.
+[CMFCPropertyGridCtrl sınıfının](../../mfc/reference/cmfcpropertygridctrl-class.md) araç ipuçlarını göstermek için kullandığı bir araç ipucu denetimi uygular.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -44,7 +44,7 @@ class CMFCPropertyGridToolTipCtrl : public CWnd
 |||
 |-|-|
 |Ad|Açıklama|
-|[CMFCPropertyGridToolTipCtrl::CMFCPropertyGridToolTipCtrl](#cmfcpropertygridtooltipctrl)|Oluşturur bir `CMFCPropertyGridToolTipCtrl` nesne.|
+|[CMFCPropertyGridToolTipCtrl:: CMFCPropertyGridToolTipCtrl](#cmfcpropertygridtooltipctrl)|Bir `CMFCPropertyGridToolTipCtrl` nesnesi oluşturur.|
 |`CMFCPropertyGridToolTipCtrl::~CMFCPropertyGridToolTipCtrl`|Yıkıcı.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
@@ -52,23 +52,23 @@ class CMFCPropertyGridToolTipCtrl : public CWnd
 |||
 |-|-|
 |Ad|Açıklama|
-|[CMFCPropertyGridToolTipCtrl::Create](#create)|Araç İpucu denetimi için bir pencere oluşturur.|
-|[CMFCPropertyGridToolTipCtrl::Deactivate](#deactivate)|Devre dışı bırakır ve araç ipucu denetimi gizler.|
-|[CMFCPropertyGridToolTipCtrl::GetLastRect](#getlastrect)|Araç İpucu denetimi son konum koordinatlarını döndürür.|
-|[CMFCPropertyGridToolTipCtrl::Hide](#hide)|Araç İpucu denetimi gizler.|
-|`CMFCPropertyGridToolTipCtrl::PreTranslateMessage`|Sınıfı tarafından kullanılan [CWinApp](../../mfc/reference/cwinapp-class.md) için dağıtılmadan önce pencere iletilerini çevrilecek [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) ve [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage) Windows işlevleri. (Geçersiz kılmaları [CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage).)|
-|[CMFCPropertyGridToolTipCtrl::SetTextMargin](#settextmargin)|Araç İpucu metni ve araç ipucu penceresinin kenarlığı arasındaki boşluğu ayarlar.|
-|[CMFCPropertyGridToolTipCtrl::Track](#track)|Araç İpucu denetimi görüntüler.|
+|[CMFCPropertyGridToolTipCtrl:: Create](#create)|Araç ipucu denetimi için bir pencere oluşturur.|
+|[CMFCPropertyGridToolTipCtrl::D eactivate](#deactivate)|Araç ipucu denetimini devre dışı bırakır ve gizler.|
+|[CMFCPropertyGridToolTipCtrl:: GetLastRect](#getlastrect)|Araç ipucu denetiminin son konumunun koordinatlarını döndürür.|
+|[CMFCPropertyGridToolTipCtrl:: Hide](#hide)|Araç ipucu denetimini gizler.|
+|`CMFCPropertyGridToolTipCtrl::PreTranslateMessage`|[TranslateMessage](/windows/win32/api/winuser/nf-winuser-translatemessage) ve [DispatchMessage](/windows/win32/api/winuser/nf-winuser-dispatchmessage) Windows işlevlerine dağıtılmadan önce pencere iletilerini dönüştürmek için [CWinApp](../../mfc/reference/cwinapp-class.md) sınıfı tarafından kullanılır. ( [CWnd::P reTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage)geçersiz kılar.)|
+|[CMFCPropertyGridToolTipCtrl:: SetTextMargin](#settextmargin)|Araç ipucu metni ve araç ipucu penceresinin kenarlığı arasındaki boşluğu ayarlar.|
+|[CMFCPropertyGridToolTipCtrl:: Track](#track)|Araç ipucu denetimini görüntüler.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Araç ipuçları, fare işaretçisini bir özellik adı getirdiğinde görüntülenir. [CMFCPropertyGridToolTipCtrl](../../mfc/reference/cmfcpropertygridtooltipctrl-class.md) sınıfı, böylece kullanıcı tarafından kolay okunabilir bir araç ipucu görüntüler. Genellikle, bir araç ipucunun konumunu işaretçinin konumu tarafından belirlenir. Bu sınıfı kullanarak, araç ipucu özellik adı görüntülenir ve özellik adı tam olarak görünür olması, doğal özelliği uzantısı benzer.
+İpucu, işaretçi bir özellik adının üzerine geldiğinde görüntülenir. [CMFCPropertyGridToolTipCtrl](../../mfc/reference/cmfcpropertygridtooltipctrl-class.md) sınıfı, Kullanıcı tarafından kolayca okunabilmesi için bir araç ipucu görüntüler. Genellikle, bir araç ipucunun konumu işaretçinin konumuyla belirlenir. Bu sınıfı kullanarak araç ipucu, özellik adının üzerinde görünür ve doğal özellik uzantısına benzer, böylece Özellik adı tamamen görünür olur.
 
-MFC otomatik olarak bu denetimi oluşturur ve onu kullanan [CMFCPropertyGridCtrl sınıfı](../../mfc/reference/cmfcpropertygridctrl-class.md).
+MFC bu denetimi otomatik olarak oluşturur ve [CMFCPropertyGridCtrl sınıfında](../../mfc/reference/cmfcpropertygridctrl-class.md)kullanır.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, bir nesne oluşturmak gösterilmiştir `CMFCPropertyGridToolTipCtrl` sınıfı ve araç ipucu denetimi görüntüleme.
+Aşağıdaki örnek, `CMFCPropertyGridToolTipCtrl` sınıfının bir nesnesinin nasıl oluşturulduğunu ve araç ipucu denetiminin nasıl görüntüleneceğini gösterir.
 
 [!code-cpp[NVC_MFC_RibbonApp#23](../../mfc/reference/codesnippet/cpp/cmfcpropertygridtooltipctrl-class_1.cpp)]
 
@@ -84,19 +84,19 @@ Aşağıdaki örnek, bir nesne oluşturmak gösterilmiştir `CMFCPropertyGridToo
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxpropertygridtooltipctrl.h
+**Üstbilgi:** afxpropertygridtooltipctrl. h
 
-##  <a name="cmfcpropertygridtooltipctrl"></a>  CMFCPropertyGridToolTipCtrl::CMFCPropertyGridToolTipCtrl
+##  <a name="cmfcpropertygridtooltipctrl"></a>CMFCPropertyGridToolTipCtrl:: CMFCPropertyGridToolTipCtrl
 
-Oluşturur bir `CMFCPropertyGridToolTipCtrl` nesne.
+Bir `CMFCPropertyGridToolTipCtrl` nesnesi oluşturur.
 
 ```
 CMFCPropertyGridToolTipCtrl::CMFCPropertyGridToolTipCtrl();
 ```
 
-##  <a name="create"></a>  CMFCPropertyGridToolTipCtrl::Create
+##  <a name="create"></a>CMFCPropertyGridToolTipCtrl:: Create
 
-Araç İpucu denetimi için bir pencere oluşturur.
+Araç ipucu denetimi için bir pencere oluşturur.
 
 ```
 BOOL Create(CWnd* pWndParent);
@@ -105,15 +105,15 @@ BOOL Create(CWnd* pWndParent);
 ### <a name="parameters"></a>Parametreler
 
 *pWndParent*<br/>
-[in] Üst penceresine bir işaretçi.
+'ndaki Ana pencereye yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Pencerenin başarıyla oluşturulursa TRUE; Aksi takdirde FALSE.
+Pencere başarıyla oluşturulduysa doğru; Aksi takdirde, FALSE.
 
-##  <a name="deactivate"></a>  CMFCPropertyGridToolTipCtrl::Deactivate
+##  <a name="deactivate"></a>CMFCPropertyGridToolTipCtrl::D eactivate
 
-Devre dışı bırakır ve araç ipucu denetimi gizler.
+Araç ipucu denetimini devre dışı bırakır ve gizler.
 
 ```
 void Deactivate();
@@ -121,11 +121,11 @@ void Deactivate();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Gelecekteki çağrılar, bu yöntem son konum ve metin boş değerler için ayarlar [CMFCPropertyGridToolTipCtrl::Track](#track) araç ipucunu görüntülemek.
+Bu yöntem, son konumu ve metni boş değerlere ayarlar, böylece gelecekteki [CMFCPropertyGridToolTipCtrl:: Track](#track) çağrısı araç ipucunu görüntüler.
 
-##  <a name="getlastrect"></a>  CMFCPropertyGridToolTipCtrl::GetLastRect
+##  <a name="getlastrect"></a>CMFCPropertyGridToolTipCtrl:: GetLastRect
 
-Araç İpucu denetimi son konum koordinatlarını döndürür.
+Araç ipucu denetiminin son konumunun koordinatlarını döndürür.
 
 ```
 void GetLastRect(CRect& rect) const;
@@ -134,19 +134,19 @@ void GetLastRect(CRect& rect) const;
 ### <a name="parameters"></a>Parametreler
 
 *Rect*<br/>
-[out] Araç İpucu denetimi son konumunu içerir.
+dışı Araç ipucu denetiminin son konumunu içerir.
 
-##  <a name="hide"></a>  CMFCPropertyGridToolTipCtrl::Hide
+##  <a name="hide"></a>CMFCPropertyGridToolTipCtrl:: Hide
 
-Araç İpucu denetimi gizler.
+Araç ipucu denetimini gizler.
 
 ```
 void Hide();
 ```
 
-##  <a name="settextmargin"></a>  CMFCPropertyGridToolTipCtrl::SetTextMargin
+##  <a name="settextmargin"></a>CMFCPropertyGridToolTipCtrl:: SetTextMargin
 
-Araç İpucu metni ve araç ipucu penceresinin kenarlığı arasındaki boşluğu ayarlar.
+Araç ipucu metni ve araç ipucu penceresinin kenarlığı arasındaki boşluğu ayarlar.
 
 ```
 void SetTextMargin(int nTextMargin);
@@ -155,11 +155,11 @@ void SetTextMargin(int nTextMargin);
 ### <a name="parameters"></a>Parametreler
 
 *nTextMargin*<br/>
-[in] Araç ipucunu denetimini araç ipucu penceresinin kenarlığı arasındaki boşluğu belirtir. Varsayılan değer 10 pikseldir.
+'ndaki Araç İpucu denetim metni ve araç ipucu penceresinin kenarlığı arasındaki boşluğu belirtir. Varsayılan değer 10 pikseldir.
 
-##  <a name="track"></a>  CMFCPropertyGridToolTipCtrl::Track
+##  <a name="track"></a>CMFCPropertyGridToolTipCtrl:: Track
 
-Araç İpucu denetimi görüntüler.
+Araç ipucu denetimini görüntüler.
 
 ```
 void Track(
@@ -170,14 +170,14 @@ void Track(
 ### <a name="parameters"></a>Parametreler
 
 *Rect*<br/>
-[in] Araç İpucu denetiminin boyutunu ve konumunu belirtir.
+'ndaki Araç ipucu denetiminin konumunu ve boyutunu belirtir.
 
 *strText*<br/>
-[in] Araç ipucunda gösterilecek olan metni belirtir.
+'ndaki Araç ipucunda gösterilecek metni belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem tarafından belirtilen boyut ve konum araç ipucu denetimi görüntüler *rect*. Konum, boyut ve metin bu yöntemi çağrıldı son saatinden itibaren değişmiş değil, bu yöntem etkisizdir.
+Bu yöntem, *Rect*tarafından belirtilen konumda ve boyutta araç ipucu denetimini görüntüler. Bu yöntemin en son çağrılmasından bu yana konum, boyut ve metin değiştirilmediyseniz, bu yöntemin hiçbir etkisi yoktur.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,5 +1,5 @@
 ---
-title: 'TN003: İşleyicilerini nesnelere eşleme Windows'
+title: 'TN003: Windows tanıtıcılarının nesneleriyle eşleme'
 ms.date: 11/04/2016
 f1_keywords:
 - vc.mapping
@@ -9,26 +9,26 @@ helpviewer_keywords:
 - Windows handles to objects [MFC]
 - mappings [MFC], Windows handles to objects
 ms.assetid: fbea9f38-992c-4091-8dbc-f29e288617d6
-ms.openlocfilehash: e7844398ebaf5a8fdf8c56ab18b33d8c7717d1ad
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 45492963e1b686e03eb59c320fdc3d52d1534f7d
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62306386"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69513529"
 ---
-# <a name="tn003-mapping-of-windows-handles-to-objects"></a>TN003: İşleyicilerini nesnelere eşleme Windows
+# <a name="tn003-mapping-of-windows-handles-to-objects"></a>TN003: Windows tanıtıcılarının nesneleriyle eşleme
 
-Bu Not MFC açıklar Windows eşleme desteği rutinleri C++ nesnelerinin tanıtıcıları nesne.
+Bu notta, Windows nesne tanıtıcılarını C++ nesnelere EŞLEMEYI destekleyen MFC yordamları açıklanmaktadır.
 
 ## <a name="the-problem"></a>Sorun
 
-Windows nesneler genellikle temsil edilir çeşitli tarafından [İŞLEMEK](/windows/desktop/WinProg/windows-data-types) nesneleri MFC sınıfları sarmalamak Windows nesne tutamaçları ile C++ nesne. MFC sınıf kitaplığı işlevleri sarmalama tanıtıcı belirli bir tanıtıcı Windows nesnesi sarmalama C++ nesne bulmanızı sağlar. Ancak, bazen bir nesnenin bir C++ sarmalayıcı nesnesini yok ve bu saatlerde sistem C++ sarmalayıcı görev yapacak geçici bir nesne oluşturur.
+Windows nesneleri genellikle çeşitli [tanıtıcı](/windows/win32/WinProg/windows-data-types) nesneleri tarafından temsıl edilir MFC sınıflarının nesneleri ile C++ Windows nesne tutamaçlarını sarması. MFC sınıf kitaplığının tanıtıcı kaydırma işlevleri, belirli bir tanıtıcıya sahip olan Windows C++ nesnesini sarmaladığı nesneyi bulmanızı sağlar. Ancak, bazen bir nesne C++ sarmalayıcı nesnesine sahip değildir ve bu saatlerde sistem C++ sarmalayıcı olarak davranacak geçici bir nesne oluşturur.
 
-Tanıtıcı eşlemeleri kullanan Windows nesneler aşağıdaki gibidir:
+Tanıtıcı haritaları kullanan Windows nesneleri aşağıdaki gibidir:
 
-- HWND ([CWnd](../mfc/reference/cwnd-class.md) ve `CWnd`-türetilmiş sınıflar)
+- HWND ([CWnd](../mfc/reference/cwnd-class.md) ve `CWnd`-türetilen sınıflar)
 
-- HDC ([CDC](../mfc/reference/cdc-class.md) ve `CDC`-türetilmiş sınıflar)
+- HDC ([CDC](../mfc/reference/cdc-class.md) ve `CDC`-türetilen sınıflar)
 
 - HMENU ([CMenu](../mfc/reference/cmenu-class.md))
 
@@ -38,36 +38,36 @@ Tanıtıcı eşlemeleri kullanan Windows nesneler aşağıdaki gibidir:
 
 - HFONT (`CGdiObject`)
 
-- HBITMAP (`CGdiObject`)
+- HBIT EŞLEM`CGdiObject`()
 
 - HPALETTE (`CGdiObject`)
 
 - HRGN (`CGdiObject`)
 
-- HIMAGELIST ([Cımagelist](../mfc/reference/cimagelist-class.md))
+- HıMAGELIST ([CImageList](../mfc/reference/cimagelist-class.md))
 
 - YUVA ([CSocket](../mfc/reference/csocket-class.md))
 
-Bu nesnelerin herhangi biri için bir tanıtıcı göz önünde bulundurulduğunda, statik metodunu çağırarak tanıtıcı sarmalayan MFC nesne bulabilirsiniz `FromHandle`. Örneğin, adında bir HWND verilen *hWnd*, aşağıdaki satırı için bir işaretçi döndürür `CWnd` sonuna geldik *hWnd*:
+Bu nesnelerden herhangi birine yönelik bir tanıtıcı verildiğinde, statik yöntemi `FromHandle`çağırarak TUTAMACı sarmalayan MFC nesnesini bulabilirsiniz. Örneğin, *HWND*adlı bir HWND verildiğinde, aşağıdaki satır `CWnd` *HWND*'yi sarmalayan öğesine bir işaretçi döndürür:
 
 ```
 CWnd::FromHandle(hWnd)
 ```
 
-Varsa *hWnd* geçici bir özel kapsayıcı nesnesi yok `CWnd` sarmalamak için oluşturulan *hWnd*. Geçerli bir C++ nesnesi herhangi bir tutamacı almak mümkün kılar.
+*HWND* 'nin belirli bir sarmalayıcı nesnesi yoksa, *HWND*sarmalamak için `CWnd` geçici bir oluşturma oluşturulur. Bu, herhangi bir tanıtıcıdan geçerli C++ bir nesne elde etmek mümkün hale getirir.
 
-Bir sarmalayıcı nesnesini oluşturduktan sonra bir ortak üye değişkeninin sarmalayıcı sınıfın tanıtıcısını alabilirsiniz. Durumunda, bir `CWnd`, *m_hWnd* HWND bu nesne içerir.
+Sarmalayıcı nesneniz olduktan sonra, öğesini sarmalayıcı sınıfının ortak üye değişkeninden elde edebilirsiniz. Bu durumda `CWnd`, *m_hWnd* bu nesne için hwnd içerir.
 
-## <a name="attaching-handles-to-mfc-objects"></a>MFC nesneleri tanıtıcıları ekleme
+## <a name="attaching-handles-to-mfc-objects"></a>MFC nesnelerine Işleyiciler iliştirme
 
-Yeni oluşturulan tanıtıcı sarmalayıcı nesnesine ve bir tanıtıcı bir Windows nesnesine verilen, çağırarak iki ilişkilendirebilirsiniz `Attach` Bu örnekte olduğu gibi işlev:
+Yeni oluşturulan bir tanıtıcı sarmalayıcı nesnesi ve bir Windows nesnesine yönelik bir tanıtıcı verildiğinde, `Attach` işlevi bu örnekte olduğu gibi çağırarak iki ilişki de ilişkilendirebilirsiniz:
 
 ```
 CWnd myWnd;
 myWnd.Attach(hWnd);
 ```
 
-Bu ilişkilendirme kalıcı eşlem içinde bir giriş yapar *myWnd* ve *hWnd*. Çağırma `CWnd::FromHandle(hWnd)` artık bir işaretçi döndürür *myWnd*. Zaman *myWnd* olduğu silinmiş yıkıcı otomatik olarak silecektir *hWnd* Windows çağırarak [DestroyWindow](/windows/desktop/api/winuser/nf-winuser-destroywindow) işlevi. Bu istenmiyorsa *hWnd* gelen ayrılması *myWnd* önce *myWnd* yok (normalde kapsamda ayrılırken *myWnd*tanımlanmıştır). `Detach` Yöntemi bunu yapar.
+Bu, *myWnd* ve *HWND*ile ilişkili kalıcı haritada bir giriş yapar. Çağırmak `CWnd::FromHandle(hWnd)` şimdi *myWnd*için bir işaretçi döndürüyor. *MyWnd* silindiğinde, yıkıcı otomatik olarak Windows [destroyıwindow](/windows/win32/api/winuser/nf-winuser-destroywindow) işlevini çağırarak *HWND* 'yi yok eder. Bu istenmiyorsa, *myWnd* 'in yok edileceği (normalde, myWnd 'in tanımlandığı kapsamdan ayrılırken), *HWND* *myWnd* 'den ayrılmalıdır. `Detach` Yöntemi bunu yapar.
 
 ```
 myWnd.Detach();
@@ -75,13 +75,13 @@ myWnd.Detach();
 
 ## <a name="more-about-temporary-objects"></a>Geçici nesneler hakkında daha fazla bilgi
 
-Geçici nesneler oluşturulan her `FromHandle` zaten bir sarmalayıcı nesnesine sahip olmayan bir tanıtıcı verilir. Bu geçici nesneler, tanıtıcıdan kullanımdan çıkarıldı ve silen `DeleteTempMap` işlevleri. Varsayılan olarak [CWinThread::OnIdle](../mfc/reference/cwinthread-class.md#onidle) otomatik olarak çağıran `DeleteTempMap` geçici tanıtıcı eşlemeleri destekleyen her sınıf için. Bu, geçici bir nesne için bir işaretçi işaretçiyi nereye edinilen geçerli işlevden çıkış noktası geçmiş olacaktır varsayamazsınız anlamına gelir.
+Geçici nesneler `FromHandle` , zaten sarmalayıcı nesnesine sahip olmayan bir tanıtıcı verildiğinde oluşturulur. Bu geçici nesneler tanıtıcılarından ayrılır ve `DeleteTempMap` işlevler tarafından silinir. Varsayılan olarak [CWinThread:: OnIdle](../mfc/reference/cwinthread-class.md#onidle) , `DeleteTempMap` geçici tanıtıcı eşlemelerini destekleyen her sınıf için otomatik olarak çağırır. Yani, geçici bir nesne işaretçisinin, işaretçinin alındığı işlevden çıkış noktasından geçmiş olduğunu varsaymayacak anlamına gelir.
 
-## <a name="wrapper-objects-and-multiple-threads"></a>Sarmalayıcı nesneleri ve birden çok iş parçacığı
+## <a name="wrapper-objects-and-multiple-threads"></a>Sarmalayıcı nesneler ve birden çok Iş parçacığı
 
-Geçici ve kalıcı nesneleri bir iş parçacığı başına temelinde korunur. Diğer bir deyişle, bir iş parçacığı, geçici veya kalıcı olmasına bakılmaksızın C++ sarmalayıcı nesneleri başka bir iş parçacığının, erişemez.
+Hem geçici hem de kalıcı nesneler iş parçacığı başına temelinde tutulur. Diğer bir deyişle, bir iş parçacığı geçici veya kalıcı C++ olmasına bakılmaksızın başka bir iş parçacığının sarmalayıcı nesnelerine erişemez.
 
-Bu nesneler bir iş parçacığından diğerine geçirmek için her zaman kendi yerel şirketlerde `HANDLE` türü. Bir iş parçacığından bir C++ sarmalayıcı nesnesini geçirerek genellikle beklenmeyen sonuçlara neden olur.
+Bu nesneleri bir iş parçacığından diğerine geçirmek için, her zaman yerel `HANDLE` türleri olarak gönderin. C++ Sarmalayıcı nesnesini bir iş parçacığından diğerine geçirmek genellikle beklenmeyen sonuçlara neden olur.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

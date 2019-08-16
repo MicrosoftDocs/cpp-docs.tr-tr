@@ -104,12 +104,12 @@ helpviewer_keywords:
 - CMFCTabCtrl [MFC], SynchronizeScrollBar
 - CMFCTabCtrl [MFC], m_bEnableActivate
 ms.assetid: d441385d-2c72-4203-96fa-deae2273da35
-ms.openlocfilehash: db2dcf7c60d164f9d04eb98f8eaac79ae14e3e73
-ms.sourcegitcommit: c3bf94210bdb73be80527166264d49e33784152c
+ms.openlocfilehash: 442860b1751591c5763a768f9bd9b6ba59f33fa5
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68821259"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69504881"
 ---
 # <a name="cmfctabctrl-class"></a>CMFCTabCtrl sınıfı
 
@@ -121,7 +121,7 @@ Sınıfı `CMFCTabCtrl` , bir sekme denetimi için işlevsellik sağlar. Sekme d
 class CMFCTabCtrl : public CMFCBaseTabCtrl
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Üyeler
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
@@ -177,7 +177,7 @@ class CMFCTabCtrl : public CMFCBaseTabCtrl
 |[CMFCTabCtrl:: OnDragEnter](#ondragenter)|İmleç ilk olarak sekme denetim penceresine sürüklendiğinde Framework tarafından çağırılır.|
 |[CMFCTabCtrl:: OnDragOver](#ondragover)|Fare bırakma hedefi penceresi üzerine taşındığında bir sürükleme işlemi sırasında Framework tarafından çağırılır. ( [CMFCBaseTabCtrl:: OnDragOver](../../mfc/reference/cmfcbasetabctrl-class.md#ondragover)geçersiz kılar.)|
 |[CMFCTabCtrl:: OnShowTabDocumentsMenu](#onshowtabdocumentsmenu)|Sekmeli pencerelerin açılan menüsünü görüntüler, Kullanıcı bir sekme seçinceye kadar bekler ve seçili sekmeyi etkin sekmesini yapar.|
-|`CMFCTabCtrl::PreTranslateMessage`|[TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) ve [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage) Windows işlevlerine dağıtılmadan önce pencere iletilerini çevirir. ( [CMFCBaseTabCtrl::P reTranslateMessage](../../mfc/reference/cmfcbasetabctrl-class.md#pretranslatemessage)geçersiz kılar.)|
+|`CMFCTabCtrl::PreTranslateMessage`|[TranslateMessage](/windows/win32/api/winuser/nf-winuser-translatemessage) ve [DispatchMessage](/windows/win32/api/winuser/nf-winuser-dispatchmessage) Windows işlevlerine dağıtılmadan önce pencere iletilerini çevirir. ( [CMFCBaseTabCtrl::P reTranslateMessage](../../mfc/reference/cmfcbasetabctrl-class.md#pretranslatemessage)geçersiz kılar.)|
 |`CMFCTabCtrl::RecalcLayout`|Sekme denetiminin iç yerleşimini yeniden hesaplar. ( [CMFCBaseTabCtrl:: RecalcLayout](../../mfc/reference/cmfcbasetabctrl-class.md#recalclayout).)|
 |[CMFCTabCtrl:: Setactiveınmdıtabgroup](#setactiveinmditabgroup)|Bir sekme denetiminin geçerli sekmesini birden çok belge arabirimi sekme grubunda etkin sekme olarak ayarlar.|
 |[CMFCTabCtrl:: SetActiveTab](#setactivetab)|Bir sekmeyi etkinleştirir. ( [CMFCBaseTabCtrl:: SetActiveTab](../../mfc/reference/cmfcbasetabctrl-class.md#setactivetab)geçersiz kılar.)|
@@ -348,7 +348,7 @@ Aşağıdaki tabloda *Stil* parametresi için belirtebileceğiniz değerler aç�
 
 Aşağıdaki tabloda *konum* parametresi için belirtebileceğiniz değerler listelenmiştir.
 
-|Location|Açıklama|
+|Konum|Açıklama|
 |--------------|-----------------|
 |LOCATION_BOTTOM|Sekmeler sekme denetiminin en altında bulunur.|
 |LOCATION_TOP|Sekmeler sekme denetiminin en üstünde bulunur.|
@@ -874,7 +874,7 @@ virtual DROPEFFECT OnDragEnter(
 'ndaki Kullanıcının sürüklediği verileri içeren bir veri nesnesine işaret eder.
 
 *dwKeyState*<br/>
-'ndaki Değiştirici anahtarlarının durumunu içerir. Bu parametre aşağıdaki değerlerden oluşan bit düzeyinde bir birleşimidir (veya): MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON ve MK_RBUTTON. Daha fazla bilgi için [fare girişi hakkında](/windows/desktop/inputdev/about-mouse-input)konusunun **ileti parametreleri** bölümüne bakın.
+'ndaki Değiştirici anahtarlarının durumunu içerir. Bu parametre aşağıdaki değerlerden oluşan bit düzeyinde bir birleşimidir (veya): MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON ve MK_RBUTTON. Daha fazla bilgi için [fare girişi hakkında](/windows/win32/inputdev/about-mouse-input)konusunun **ileti parametreleri** bölümüne bakın.
 
 *seçeneğinin*<br/>
 'ndaki İmlecin istemci koordinatlarındaki geçerli konumunu içerir.
@@ -906,7 +906,7 @@ virtual DROPEFFECT OnDragOver(
 'ndaki Bırakma hedefinin üzerine sürüklenen bir [Cotadataobject](../../mfc/reference/coledataobject-class.md) nesnesine yönelik işaretçi.
 
 *dwKeyState*<br/>
-'ndaki MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON ve MK_RBUTTON bit düzeyinde bir bileşim (veya) olan değiştirici anahtarlarının durumu. Daha fazla bilgi için [fare girişinde](/windows/desktop/inputdev/about-mouse-input)"ileti parametreleri" bölümüne bakın.
+'ndaki MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON ve MK_RBUTTON bit düzeyinde bir bileşim (veya) olan değiştirici anahtarlarının durumu. Daha fazla bilgi için [fare girişinde](/windows/win32/inputdev/about-mouse-input)"ileti parametreleri" bölümüne bakın.
 
 *seçeneğinin*<br/>
 'ndaki Geçerli fare konumu.

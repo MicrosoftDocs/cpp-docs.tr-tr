@@ -7,38 +7,38 @@ helpviewer_keywords:
 - RBN_ notification messages [MFC]
 - notifications [MFC], CReBarCtrl
 ms.assetid: 40f43a60-0c18-4d8d-8fab-213a095624f9
-ms.openlocfilehash: 8ac225802bd1d0a0a4b0f30e017fa677f1072fd3
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 948990c8597c2ccdcec496252c6801c02a78cbf5
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64339634"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69507953"
 ---
 # <a name="processing-notification-messages-in-a-rebar-control"></a>Bir Rebar Denetiminde Bildirim İletilerini İşleme
 
-Çubuk barınağı denetiminin üst sınıfta oluşturma bir `OnChildNotify` switch deyimi için herhangi bir çubuk barınağı denetimi işleyicisi işlevini (`CReBarCtrl`) bildirim iletilerini işlemek istediğiniz. Kullanıcı çubuk barınağı şeritleri siler rebar bantları düzenini çubuk barınağı şeritleri ve benzeri bantları değişiklikleri nesneleri sürüklediğinde bildirimleri üst pencereye gönderilir.
+Rebar denetiminin üst sınıfında, işlemek istediğiniz herhangi bir Rebar `OnChildNotify` Control (`CReBarCtrl`) bildirim iletisi için Switch ifadesiyle bir işleyici işlevi oluşturun. Kullanıcı, nesneleri yeniden çubuk denetimi üzerine sürüklediğinde, yeniden çubuk bantların yerleşimini değiştirdiğinde, yeniden çubuk denetiminden bantları sildiği ve bu şekilde devam eden bildirimler üst pencereye gönderilir.
 
-Aşağıdaki bildirim iletileri çubuk barınağı denetimi nesne tarafından gönderilebilecek:
+Aşağıdaki bildirim iletileri, Rebar denetim nesnesi tarafından gönderilebilir:
 
-- RBN_AUTOSIZE gönderilen (RBS_AUTOSIZE stiliyle oluşturan) bir çubuk barınağı denetimi tarafından ne zaman çubuk barınağı otomatik olarak yeniden boyutlandırır kendisi.
+- Yeniden çubuk kendini otomatik olarak yeniden boyutlandırdığında bir Rebar denetimi tarafından gönderilen (RBS_AUTOSIZE stiliyle oluşturulan) RBN_AUTOSIZE.
 
-- RBN_BEGINDRAG kullanıcı bir bant sürükleme işlemi başladığında, bir çubuk barınağı denetimi tarafından gönderilir.
+- Kullanıcı bir bandı sürüklemeye başladığında bir Rebar denetimi tarafından gönderilen RBN_BEGINDRAG.
 
-- RBN_CHILDSIZE bir bandın çocuk penceresi yeniden boyutlandırıldığında bir çubuk barınağı denetimi tarafından gönderilir.
+- Bir bandın alt penceresi yeniden boyutlandırılırken bir Rebar denetimi tarafından gönderilen RBN_CHILDSIZE.
 
-- RBN_DELETEDBAND bir bant silindikten sonra bir çubuk barınağı denetimi tarafından gönderilir.
+- RBN_DELETEDBAND bir bant silindikten sonra bir Rebar denetimi tarafından gönderilir.
 
-- RBN_DELETINGBAND bir bant silinmek üzere olduğunda bir çubuk barınağı denetimi tarafından gönderilir.
+- Bir bant silinmek üzere olduğunda bir Rebar denetimi tarafından gönderilen RBN_DELETINGBAND.
 
-- RBN_ENDDRAG kullanıcı bir bant sürükleyerek durdurulduğunda bir çubuk barınağı denetimi tarafından gönderilir.
+- RBN_ENDDRAG, Kullanıcı bir bandı sürüklemeyi kestiğinde bir Rebar denetimi tarafından gönderilir.
 
-- RBN_GETOBJECT gönderilen (RBS_REGISTERDROP stiliyle oluşturan) bir çubuk barınağı denetimi tarafından ne zaman bir nesne sürüklediğiniz denetiminde bir bant üzerinde.
+- Bir nesne denetimdeki bir bandı üzerine sürüklendiğinde bir Rebar denetimi tarafından gönderilen (RBS_REGISTERDROP stiliyle oluşturulan) RBN_GETOBJECT.
 
-- RBN_HEIGHTCHANGE yükseklik değiştiğinde bir çubuk barınağı denetimi tarafından gönderilir.
+- RBN_HEIGHTCHANGE, yüksekliği değiştiğinde bir Rebar denetimi tarafından gönderilir.
 
-- RBN_LAYOUTCHANGED kullanıcı denetiminin bantları düzenini değiştirdiği zaman bir çubuk barınağı denetimi tarafından gönderilir.
+- RBN_LAYOUTCHANGED, Kullanıcı denetimin bantların yerleşimini değiştirdiğinde bir Rebar denetimi tarafından gönderilir.
 
-Bu bildirimleri hakkında daha fazla bilgi için bkz. [Rebar denetimi başvuru](/windows/desktop/controls/rebar-control-reference) Windows SDK.
+Bu bildirimler hakkında daha fazla bilgi için bkz. Windows SDK [Rebar Control Reference](/windows/win32/controls/rebar-control-reference) .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

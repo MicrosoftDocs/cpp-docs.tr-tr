@@ -1,21 +1,21 @@
 ---
-title: HelpString (C++ COM özniteliği)
+title: HelpString (C++ com özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.helpstring
 helpviewer_keywords:
 - helpstring attribute [C++]
 ms.assetid: 0401e905-a63e-4fad-98d0-d1efea111966
-ms.openlocfilehash: 623b2c7fb4ce7c3e5de87d21f012d008720fdee2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 47a07ee94ad774bde46dce00ea46612fae3a4eca
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62409596"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490868"
 ---
 # <a name="helpstring"></a>helpstring
 
-Uygulandığı öğe açıklamak için kullanılan bir karakter dizesi belirtir.
+Uygulandığı öğeyi anlatmak için kullanılan bir karakter dizesini belirtir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -26,15 +26,15 @@ Uygulandığı öğe açıklamak için kullanılan bir karakter dizesi belirtir.
 ### <a name="parameters"></a>Parametreler
 
 *string*<br/>
-Yardım dizesi metni.
+Yardım dizesinin metni.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Helpstring** C++ özniteliği ile aynı işlevlere sahip [helpstring](/windows/desktop/Midl/helpstring) MIDL özniteliği.
+**HelpString** C++ özniteliği, [HelpString](/windows/win32/Midl/helpstring) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
 
 ## <a name="example"></a>Örnek
 
-Örneğin bakın [defaultvalue](defaultvalue.md) nasıl kullanılacağına ilişkin bir örnek **helpstring**.
+**HelpString**'i nasıl kullanacağınızı gösteren bir örnek için bkz. [DefaultValue](defaultvalue.md) örneği.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -42,12 +42,12 @@ Yardım dizesi metni.
 
 |||
 |-|-|
-|**İçin geçerlidir**|**arabirimi**, **typedef**, **sınıfı**, yöntem, özellik|
+|**Uygulama hedefi**|**Interface**, **typedef**, **Class**, Method, Property|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|Yok.|
+|**Gerekli öznitelikler**|Yok.|
 |**Geçersiz öznitelikler**|Yok.|
 
-Daha fazla bilgi için [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
+Daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

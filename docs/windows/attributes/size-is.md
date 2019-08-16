@@ -1,21 +1,21 @@
 ---
-title: size_is (C++ COM özniteliği)
+title: size_is (C++ com özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.size_is
 helpviewer_keywords:
 - size_is attribute
 ms.assetid: 70192d09-f6c5-4d52-b3fe-303f8cb10aa5
-ms.openlocfilehash: a7b990a708bafba78c9dc4153315f8b7b20351ba
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 504f1bf72b8ffa15e8df50bb00c86ef909688f1e
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62407334"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69514031"
 ---
-# <a name="sizeis"></a>size_is
+# <a name="size_is"></a>size_is
 
-Bellek boyutu boyutlu işaretçiler için ayrılan, boyutlandırılmış işaretçiler ve tek veya çok boyutlu diziler işaretçilere boyutu belirtin.
+Boyutlandırılmış işaretçiler için ayrılan bellek boyutunu, boyutlandırılmış işaretçilere boyutlandırılmış boyutları ve tek veya çok boyutlu dizileri belirtin.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -25,16 +25,16 @@ Bellek boyutu boyutlu işaretçiler için ayrılan, boyutlandırılmış işaret
 
 ### <a name="parameters"></a>Parametreler
 
-*İfade*<br/>
+*ifadesini*<br/>
 Boyutlandırılmış işaretçiler için ayrılan bellek boyutu.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Size_is** C++ özniteliği ile aynı işlevlere sahip [size_is](/windows/desktop/Midl/size-is) MIDL özniteliği.
+**Size_is** C++ özniteliği, [size_is](/windows/win32/Midl/size-is) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
 
 ## <a name="example"></a>Örnek
 
-Örneğin bakın [first_is](first-is.md) örneği için nasıl bir dizinin bir bölümünü belirtin.
+Dizinin bir bölümünü belirtme örneği için bkz. [first_is](first-is.md) örneği.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -42,12 +42,12 @@ Boyutlandırılmış işaretçiler için ayrılan bellek boyutu.
 
 |||
 |-|-|
-|**İçin geçerlidir**|İçinde alan **yapı** veya **birleşim**, parametre arabirim, arabirim yöntemi|
+|**Uygulama hedefi**|**Struct** veya **Union**içindeki alan, arabirim parametresi, arabirim yöntemi|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|Yok.|
+|**Gerekli öznitelikler**|Yok.|
 |**Geçersiz öznitelikler**|`max_is`|
 
-Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
+Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,5 +1,5 @@
 ---
-title: Colechangeıcondialog sınıfı
+title: Colet Changeicondialog sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - COleChangeIconDialog
@@ -16,16 +16,16 @@ helpviewer_keywords:
 - COleChangeIconDialog [MFC], GetIconicMetafile
 - COleChangeIconDialog [MFC], m_ci
 ms.assetid: 8d6e131b-ddbb-4dff-a432-f239efda8e3d
-ms.openlocfilehash: eb5fe38d7cf4058e8de31da3de39dca906671a85
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4cbf1137a15a9f86a6377980526e6d188f4d0a69
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62396177"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69504779"
 ---
-# <a name="colechangeicondialog-class"></a>Colechangeıcondialog sınıfı
+# <a name="colechangeicondialog-class"></a>Colet Changeicondialog sınıfı
 
-OLE Change Icon iletişim kutusu için kullanıldı.
+OLE Change Icon iletişim kutusu için kullanılır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -39,29 +39,29 @@ class COleChangeIconDialog : public COleDialog
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[COleChangeIconDialog::COleChangeIconDialog](#colechangeicondialog)|Oluşturur bir `COleChangeIconDialog` nesne.|
+|[Colet Changeicondialog:: Cotachangeicondialog](#colechangeicondialog)|Bir `COleChangeIconDialog` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[COleChangeIconDialog::DoChangeIcon](#dochangeicon)|İletişim kutusunda belirtilen değişiklik yapar.|
-|[COleChangeIconDialog::DoModal](#domodal)|OLE 2 Change Icon iletişim kutusu görüntüler.|
-|[COleChangeIconDialog::GetIconicMetafile](#geticonicmetafile)|Bu öğenin icon formla ilişkili meta dosyası için bir tanıtıcı alır.|
+|[Colet Changeicondialog::D Ochangeıcon](#dochangeicon)|İletişim kutusunda belirtilen değişikliği gerçekleştirir.|
+|[Colet Changeicondialog::D oModal](#domodal)|OLE 2 simge Değiştir iletişim kutusunu görüntüler.|
+|[Colet Changeicondialog:: Getıconicmetafile](#geticonicmetafile)|Bu öğenin IIC formuyla ilişkili meta dosyası için bir tanıtıcı alır.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[COleChangeIconDialog::m_ci](#m_ci)|İletişim kutusunun davranışını kontrol eden bir yapı.|
+|[Colet Changeicondialog:: m_ci](#m_ci)|İletişim kutusunun davranışını denetleyen bir yapı.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıfın bir nesnesi oluşturma `COleChangeIconDialog` bu iletişim kutusunu çağırmak istediğinizde. Sonra bir `COleChangeIconDialog` nesne oluşturulur, kullanabileceğiniz [m_ci](#m_ci) yapısı değerleri veya durumları iletişim kutusundaki denetimlerin başlatılamadı. `m_ci` OLEUICHANGEICON türünü yapısıdır. Bu iletişim kutusu sınıfı kullanma hakkında daha fazla bilgi için bkz. [DoModal](#domodal) üye işlevi.
+Bu iletişim kutusunu çağırmak istediğinizde `COleChangeIconDialog` , sınıfının bir nesnesi oluşturun. Bir `COleChangeIconDialog` nesne oluşturulduktan sonra, iletişim kutusundaki denetimlerin değerlerini veya durumlarını başlatmak için [m_ci](#m_ci) yapısını kullanabilirsiniz. Yapı `m_ci` , oleuichangeıcon türündedir. Bu iletişim kutusu sınıfını kullanma hakkında daha fazla bilgi için bkz. [DoModal](#domodal) üye işlevi.
 
-Daha fazla bilgi için [OLEUICHANGEICON](/windows/desktop/api/oledlg/ns-oledlg-tagoleuichangeicona) Windows SDK'sındaki yapısı.
+Daha fazla bilgi için Windows SDK [Oleuichangeıcon](/windows/win32/api/oledlg/ns-oledlg-oleuichangeiconw) yapısına bakın.
 
-Özel OLE iletişim kutuları hakkında daha fazla bilgi için bkz [ole'deki iletişim kutuları](../../mfc/dialog-boxes-in-ole.md).
+OLE 'e özgü iletişim kutuları hakkında daha fazla bilgi için [OLE 'deki makale Iletişim kutularına](../../mfc/dialog-boxes-in-ole.md)bakın.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -75,17 +75,17 @@ Daha fazla bilgi için [OLEUICHANGEICON](/windows/desktop/api/oledlg/ns-oledlg-t
 
 [CCommonDialog](../../mfc/reference/ccommondialog-class.md)
 
-[COleDialog](../../mfc/reference/coledialog-class.md)
+[Colet Iletişim kutusu](../../mfc/reference/coledialog-class.md)
 
 `COleChangeIconDialog`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxodlgs.h
+**Üst bilgi:** afxodlgs. h
 
-##  <a name="colechangeicondialog"></a>  COleChangeIconDialog::COleChangeIconDialog
+##  <a name="colechangeicondialog"></a>Colet Changeicondialog:: Cotachangeicondialog
 
-Bu işlev yalnızca oluşturan bir `COleChangeIconDialog` nesne.
+Bu işlev yalnızca bir `COleChangeIconDialog` nesnesi oluşturur.
 
 ```
 explicit COleChangeIconDialog(
@@ -99,31 +99,31 @@ explicit COleChangeIconDialog(
 *pItem*<br/>
 Dönüştürülecek öğeyi işaret eder.
 
-*CertOpenStore*<br/>
-Aşağıdaki değerlerden herhangi bir sayı içeren oluşturma bayrağı birleştirilmiş bit kullanarak- or işleci:
+*dwFlags*<br/>
+Bit düzeyinde OR işleci kullanılarak birleştirilmiş aşağıdaki değerlerin sayısını içeren oluşturma bayrağı:
 
-- Geçerli radyo düğmesinin olacak CIF_SELECTCURRENT belirtir, başlangıçta iletişim kutusunu ne zaman çağrıldığını seçili. Bu varsayılandır.
+- CIF_SELECTCURRENT iletişim kutusu çağrıldığında geçerli radyo düğmesinin başlangıçta seçili olacağını belirtir. Bu varsayılandır.
 
-- Varsayılan radyo düğmesini olacak CIF_SELECTDEFAULT belirtir, başlangıçta iletişim kutusunu ne zaman çağrıldığını seçili.
+- CIF_SELECTDEFAULT, iletişim kutusu çağrıldığında varsayılan radyo düğmesinin başlangıçta seçili olacağını belirtir.
 
-- Dosyadan radyo düğmesini olacak CIF_SELECTFROMFILE belirtir, başlangıçta iletişim kutusunu ne zaman çağrıldığını seçili.
+- CIF_SELECTFROMFILE, iletişim kutusu çağrıldığında, başlangıç dosyası radyo düğmesinin başlangıçta seçilme olacağını belirtir.
 
-- CIF_SHOWHELP iletişim kutusu çağrıldığında Yardım düğmesini gösterileceğini belirtir.
+- CIF_SHOWHELP iletişim kutusu çağrıldığında Yardım düğmesinin görüntülendiğini belirtir.
 
-- CIF_USEICONEXE belirtir simgesi belirtilen yürütülebilir ayıklanacağı `szIconExe` alanını [m_ci](#m_ci) yerine türünden alınan. Bu, ekleme veya OLE dışı dosyalarına bağlama için kullanışlıdır.
+- CIF_USEICONEXE, simgenin, türden alınmak yerine `szIconExe` [m_ci](#m_ci) alanında belirtilen yürütülebilir dosyadan ayıklanıp ayıklanamayacağını belirtir. Bu, OLE olmayan dosyalara ekleme veya bağlama için kullanışlıdır.
 
 *pParentWnd*<br/>
-Üst veya sahibi pencere nesnesi için işaret (tür `CWnd`) ait olduğu iletişim nesnesi. NULL ise, ana uygulama penceresini iletişim kutusunun üst pencere ayarlanır.
+İletişim nesnesinin ait olduğu üst veya sahip pencere nesnesine (türü `CWnd`) işaret eder. NULL ise, iletişim kutusunun ana penceresi ana uygulama penceresine ayarlanır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İletişim kutusunu görüntülemek için çağrı [DoModal](#domodal) işlevi.
+İletişim kutusunu göstermek için [DoModal](#domodal) işlevini çağırın.
 
-Daha fazla bilgi için [OLEUICHANGEICON](/windows/desktop/api/oledlg/ns-oledlg-tagoleuichangeicona) Windows SDK'sındaki yapısı.
+Daha fazla bilgi için Windows SDK [Oleuichangeıcon](/windows/win32/api/oledlg/ns-oledlg-oleuichangeiconw) yapısına bakın.
 
-##  <a name="dochangeicon"></a>  COleChangeIconDialog::DoChangeIcon
+##  <a name="dochangeicon"></a>Colet Changeicondialog::D Ochangeıcon
 
-Sonra iletişim kutusunda seçilen bir öğeyi temsil eden simgeyi değiştirmek için bu işlevi çağırın [DoModal](#domodal) IDOK döndürür.
+Bu işlevi, [DoModal](#domodal) , IDOK döndürbaşladıktan sonra iletişim kutusunda seçili bir öğeyi temsil eden simgeyi değiştirmek için çağırın.
 
 ```
 BOOL DoChangeIcon(COleClientItem* pItem);
@@ -132,15 +132,15 @@ BOOL DoChangeIcon(COleClientItem* pItem);
 ### <a name="parameters"></a>Parametreler
 
 *pItem*<br/>
-Simgesini değiştirme öğeyi işaret eder.
+Simgesi değişen öğeyi işaret eder.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Değişiklik başarılı olursa sıfır dışı; Aksi durumda 0.
+Değişiklik başarılı olursa sıfır dışı; Aksi takdirde 0.
 
-##  <a name="domodal"></a>  COleChangeIconDialog::DoModal
+##  <a name="domodal"></a>Colet Changeicondialog::D oModal
 
-OLE Change Icon iletişim kutusunu görüntülemek için bu işlevi çağırın.
+OLE Change Icon iletişim kutusunu göstermek için bu işlevi çağırın.
 
 ```
 virtual INT_PTR DoModal();
@@ -148,23 +148,23 @@ virtual INT_PTR DoModal();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Tamamlanma durumu iletişim kutusu için. Aşağıdaki değerlerden biri:
+İletişim kutusu için tamamlanma durumu. Aşağıdaki değerlerden biri:
 
-- İletişim kutusu başarıyla görüntülendiyse IDOK.
+- İletişim kutusu başarıyla görüntüleniyorsa ıDOK.
 
-- Kullanıcı iletişim kutusunu iptal edildiyse IDCANCEL.
+- Kullanıcı iletişim kutusunu iptal edildiyse ıDCANCEL.
 
-- Bir hata oluşursa IDABORT. IDABORT döndürülürse, çağrı `COleDialog::GetLastError` konusu hatanın türü hakkında daha fazla bilgi almak için üye işlevi. Olası hataları bir listesi için bkz. [OleUIChangeIcon](/windows/desktop/api/oledlg/nf-oledlg-oleuichangeicona) Windows SDK'sında işlev.
+- Bir hata oluştuysa ıDADBORT. Idadbort döndürülürse, oluşan hata türü hakkında `COleDialog::GetLastError` daha fazla bilgi edinmek için üye işlevini çağırın. Olası hataların listesi için Windows SDK [Oleuichangeıcon](/windows/win32/api/oledlg/nf-oledlg-oleuichangeiconw) işlevine bakın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çeşitli iletişim kutusu denetimleri üyeleri ayarlayarak başlatmak istiyorsanız [m_ci](#m_ci) yapısı, bunu çağırmadan önce yapmalısınız `DoModal`, ancak iletişim nesnesi oluşturulur.
+[M_ci](#m_ci) yapısının üyelerini ayarlayarak çeşitli iletişim kutusu denetimlerini başlatmak isterseniz, bunu çağırmadan `DoModal`önce, ancak iletişim kutusu nesnesi oluşturulduktan sonra yapmanız gerekir.
 
-Varsa `DoModal` döndürür IDOK, diğer üye ayarları veya kullanıcı tarafından iletişim kutusuna giriş bilgi almak için işlevleri çağırabilir.
+IDOK `DoModal` döndürürse, Kullanıcı tarafından iletişim kutusuna girilen ayarları veya bilgileri almak için diğer üye işlevlerini çağırabilirsiniz.
 
-##  <a name="geticonicmetafile"></a>  COleChangeIconDialog::GetIconicMetafile
+##  <a name="geticonicmetafile"></a>Colet Changeicondialog:: Getıconicmetafile
 
-Seçilen öğenin icon boy içeren meta dosyası için bir tanıtıcı almak için bu işlevi çağırın.
+Seçili öğenin ıfıic boyutunu içeren meta dosyasına bir tanıtıcı almak için bu işlevi çağırın.
 
 ```
 HGLOBAL GetIconicMetafile() const;
@@ -172,11 +172,11 @@ HGLOBAL GetIconicMetafile() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İletişim kutusunu seçerek kapattıysanız yeni simgesine icon yönüyle içeren meta tanıtıcısını **Tamam**; Aksi takdirde, bu simgeyi olan iletişim kutusunda görüntülenen önce.
+İletişim kutusu **Tamam**' ı seçerek, yeni simgenin ıfer en boy oranını içeren dosya tanıtıcısı. Aksi halde, iletişim kutusu görüntülenmeden önceki simgesi.
 
-##  <a name="m_ci"></a>  COleChangeIconDialog::m_ci
+##  <a name="m_ci"></a>Colet Changeicondialog:: m_ci
 
-Yapı türünü OLEUICHANGEICON Change Icon iletişim kutusu davranışını denetlemek için kullanılır.
+Simge Değiştir iletişim kutusunun davranışını denetlemek için kullanılan OLEUICHANGEıCON türü yapı.
 
 ```
 OLEUICHANGEICON m_ci;
@@ -184,9 +184,9 @@ OLEUICHANGEICON m_ci;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yapının üyelerine, doğrudan ya da üye işlevleri aracılığıyla değiştirilebilir.
+Bu yapının üyeleri, doğrudan veya üye işlevleri aracılığıyla değiştirilebilir.
 
-Daha fazla bilgi için [OLEUICHANGEICON](/windows/desktop/api/oledlg/ns-oledlg-tagoleuichangeicona) Windows SDK'sındaki yapısı.
+Daha fazla bilgi için Windows SDK [Oleuichangeıcon](/windows/win32/api/oledlg/ns-oledlg-oleuichangeiconw) yapısına bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

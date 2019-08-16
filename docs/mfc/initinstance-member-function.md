@@ -9,34 +9,34 @@ helpviewer_keywords:
 - MFC, initializing
 - initializing MFC applications
 ms.assetid: 4ef09267-ff7f-4c39-91a0-57454a264f83
-ms.openlocfilehash: c96d009cf19981a475209233ee397af1cdcb352d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c1f83f794cc40fa7f4d290fa4a147fe9f7e074be
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62219526"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69508367"
 ---
 # <a name="initinstance-member-function"></a>InitInstance Üye İşlevi
 
-Windows işletim sisteminin birden fazla kopya veya "aynı uygulamanın" örneği çalıştırmanıza olanak sağlar. `WinMain` çağrıları [InitInstance](../mfc/reference/cwinapp-class.md#initinstance) her zaman uygulamanın yeni bir örneğini başlatır.
+Windows işletim sistemi, aynı uygulamanın birden fazla kopyasını veya "örneğini" çalıştırmanızı sağlar. `WinMain`uygulamanın her yeni örneği başlatıldığında [InitInstance](../mfc/reference/cwinapp-class.md#initinstance) 'ı çağırır.
 
-Standart `InitInstance` MFC Uygulama Sihirbazı tarafından oluşturulan uygulama, aşağıdaki görevleri gerçekleştirir:
+MFC Uygulama `InitInstance` Sihirbazı tarafından oluşturulan standart uygulama aşağıdaki görevleri gerçekleştirir:
 
-- Merkez eylem, buna karşılık, belgeler, görünümler ve çerçeve pencereleri oluşturma belge şablonları oluşturur. Bu işlem bir açıklaması için bkz: [belge şablonu oluşturma](../mfc/document-template-creation.md).
+- Merkezi eylemi olarak, belge, görünüm ve çerçeve pencereleri oluşturan belge şablonlarını oluşturur. Bu işlemin açıklaması için bkz. [belge şablonu oluşturma](../mfc/document-template-creation.md).
 
-- Standart dosya seçenekleri programı bir .ini dosyası veya en son kullanılan dosya adlarını dahil olmak üzere Windows kayıt defterinde yükler.
+- En son kullanılan dosyaların adları da dahil olmak üzere bir. ini dosyasından veya Windows kayıt defterinden standart dosya seçeneklerini yükler.
 
-- Bir veya daha fazla belge şablonları kaydeder.
+- Bir veya daha fazla belge şablonunu kaydeder.
 
-- Bir MDI uygulaması için bir ana çerçeve penceresi oluşturur.
+- MDI uygulaması için bir ana çerçeve penceresi oluşturur.
 
-- Komut satırı komut satırında belirtilen belgeyi açın veya yeni, boş bir belge açmak için işler.
+- Komut satırında belirtilen bir belgeyi açmak veya yeni, boş bir belge açmak için komut satırını işler.
 
-Sihirbaz tarafından yazılan kodu değiştirin ya da kendi başlatma kodunu ekleyin.
+Kendi başlatma kodunuzu ekleyebilir veya sihirbaz tarafından yazılan kodu değiştirebilirsiniz.
 
 > [!NOTE]
->  MFC uygulamaları tek iş parçacıklı grup (STA) başlatılması gerekir. Eğer [CoInitializeEx](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializeex) içinde `InitInstance` geçersiz kılmak, COINIT_APARTMENTTHREADED (COINIT_MULTITHREADED yerine) belirtin.
+>  MFC uygulamalarının tek iş parçacıklı grup (STA) olarak başlatılması gerekir. `InitInstance` Geçersiz kılmada [CoInitializeEx](/windows/win32/api/combaseapi/nf-combaseapi-coinitializeex) öğesini çağırırsanız, COINIT_APARTMENTTHREADED (COINIT_MULTITHREADED yerine) belirtin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[CWinApp: Uygulama sınıfı](../mfc/cwinapp-the-application-class.md)
+[CWinApp: Uygulama Sınıfı](../mfc/cwinapp-the-application-class.md)
