@@ -1,5 +1,5 @@
 ---
-title: CComAutoCriticalSection sınıfı
+title: Ccomautocriticalhandle bölüm sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CComAutoCriticalSection
@@ -8,16 +8,16 @@ f1_keywords:
 helpviewer_keywords:
 - CComAutoCriticalSection class
 ms.assetid: 491a9d90-3398-4f90-88f5-fd2172a46b30
-ms.openlocfilehash: 613440eceb71f0277f4cc5de2af89fe263772797
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 116c550f45bf622e7620b3a6f552339b4bcc24a7
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62260200"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69497926"
 ---
-# <a name="ccomautocriticalsection-class"></a>CComAutoCriticalSection sınıfı
+# <a name="ccomautocriticalsection-class"></a>Ccomautocriticalhandle bölüm sınıfı
 
-`CComAutoCriticalSection` kritik bölüm nesnenin sahipliğini serbest bırakma ve alma için yöntemler sağlar.
+`CComAutoCriticalSection`kritik bölüm nesnesinin sahipliğini almak ve serbest bırakmak için yöntemler sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -31,16 +31,16 @@ class CComAutoCriticalSection : public CComCriticalSection
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CComAutoCriticalSection::CComAutoCriticalSection](#ccomautocriticalsection)|Oluşturucu.|
-|[CComAutoCriticalSection:: ~ CComAutoCriticalSection](#dtor)|Yıkıcı.|
+|[Ccomautocriticalhandle bölümü:: Ccomautocriticalhandle bölümü](#ccomautocriticalsection)|Oluşturucu.|
+|[Ccomautocriticalhandle bölümü:: ~ Ccomautocriticalhandle bölümü](#dtor)|Yok edicisi.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CComAutoCriticalSection` sınıfına benzer [CComCriticalSection](../../atl/reference/ccomcriticalsection-class.md), dışında `CComAutoCriticalSection` kritik bölüm nesneye otomatik olarak başlatır.
+`CComAutoCriticalSection`,`CComAutoCriticalSection` kurucudaki kritik bölüm nesnesini otomatik olarak başlatan sınıf [ccomcriticalhandle bölümüne](../../atl/reference/ccomcriticalsection-class.md)benzerdir.
 
-Genellikle, kullandığınız `CComAutoCriticalSection` aracılığıyla `typedef` adı [AutoCriticalSection](ccommultithreadmodel-class.md#autocriticalsection). Bu ada başvuran `CComAutoCriticalSection` olduğunda [CComMultiThreadModel](../../atl/reference/ccommultithreadmodel-class.md) kullanılıyor.
+Genellikle, `CComAutoCriticalSection` `typedef` ad [oto](ccommultithreadmodel-class.md#autocriticalsection)adı ' nı kullanırsınız. Bu ad, `CComAutoCriticalSection` [CComMultiThreadModel](../../atl/reference/ccommultithreadmodel-class.md) kullanılırken başvuruda bulunur.
 
-`Init` Ve `Term` yöntemlerinden [CComCriticalSection](../../atl/reference/ccomcriticalsection-class.md) Bu sınıf kullanırken kullanılamaz.
+[Ccomcriticalhandle bölümündeki](../../atl/reference/ccomcriticalsection-class.md) `Term` veyöntemleribusınıfkullanılırkenkullanılamaz.`Init`
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -50,9 +50,9 @@ Genellikle, kullandığınız `CComAutoCriticalSection` aracılığıyla `typede
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlcore.h
+**Üstbilgi:** atlcore. h
 
-##  <a name="ccomautocriticalsection"></a>  CComAutoCriticalSection::CComAutoCriticalSection
+##  <a name="ccomautocriticalsection"></a>Ccomautocriticalhandle bölümü:: Ccomautocriticalhandle bölümü
 
 Oluşturucu.
 
@@ -62,11 +62,11 @@ CComAutoCriticalSection();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Win32 işlevini çağırır [InitializeCriticalSection](/windows/desktop/api/synchapi/nf-synchapi-initializecriticalsection), kritik bölüm nesnesi başlatır.
+Kritik bölüm nesnesini başlatan [InitializeCriticalSection](/windows/win32/api/synchapi/nf-synchapi-initializecriticalsection)Win32 işlevini çağırır.
 
-##  <a name="dtor"></a>  CComAutoCriticalSection:: ~ CComAutoCriticalSection
+##  <a name="dtor"></a>Ccomautocriticalhandle bölümü:: ~ Ccomautocriticalhandle bölümü
 
-Yıkıcı.
+Yok edicisi.
 
 ```
 ~CComAutoCriticalSection() throw();
@@ -74,10 +74,10 @@ Yıkıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yıkıcı çağrıları [DeleteCriticalSection](/windows/desktop/api/synchapi/nf-synchapi-deletecriticalsection), kritik bölüm nesne tarafından kullanılan tüm sistem kaynakları serbest bırakır.
+Yıkıcı, kritik bölüm nesnesi tarafından kullanılan tüm sistem kaynaklarını serbest bırakarak [Deletecriticalhandle bölümünü](/windows/win32/api/synchapi/nf-synchapi-deletecriticalsection)çağırır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [CComFakeCriticalSection Sınıfı](../../atl/reference/ccomfakecriticalsection-class.md)<br/>
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)<br/>
+[Sınıfa genel bakış](../../atl/atl-class-overview.md)<br/>
 [CComCriticalSection Sınıfı](../../atl/reference/ccomcriticalsection-class.md)

@@ -60,12 +60,12 @@ helpviewer_keywords:
 - CFile [MFC], m_hFile
 - CFile [MFC], m_pTM
 ms.assetid: b2eb5757-d499-4e67-b044-dd7d1abaa0f8
-ms.openlocfilehash: a258773633f503dc0638d76509953b3410dafbd8
-ms.sourcegitcommit: 878a164fe6d550ca81ab87d8425c8d3cd52fe384
+ms.openlocfilehash: a9161764f6c8646766a73add01c25cce5619ad19
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68375766"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69506580"
 ---
 # <a name="cfile-class"></a>CFile sınıfı
 
@@ -166,7 +166,7 @@ virtual void Abort();
 
 Nesneyi yok etmeden önce dosyayı kapatmadıysanız, yıkıcı sizin için kapatır.
 
-Özel durumları işlerken, `CFile::Abort` iki önemli `CFile::Close` şekilde farklılık gösterir. İlk olarak, `Abort` sorunlar tarafından `Abort`yoksayıldığından, işlev hatalarda bir özel durum oluşturmaz. İkincisi, `Abort` dosya  açılmadıysa veya daha önce kapatılmışsa onay vermez.
+Özel durumları işlerken, `CFile::Abort` iki önemli `CFile::Close` şekilde farklılık gösterir. İlk olarak, `Abort` sorunlar tarafından `Abort`yoksayıldığından, işlev hatalarda bir özel durum oluşturmaz. İkincisi, `Abort` dosya açılmadıysa veya daha önce kapatılmışsa onay vermez.
 
 `CFile` Nesneyi yığında ayırmak için **Yeni** ' yi kullandıysanız dosyayı kapattıktan sonra silmeniz gerekir. `Abort``m_hFile` olarak`CFile::hFileNull`ayarlanır.
 
@@ -382,7 +382,7 @@ Temel alınan dosyanın başlığı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, dosyanın başlığını almak için [GetFileTitle](/windows/desktop/api/commdlg/nf-commdlg-getfiletitlea) öğesini çağırır. Başarılı olursa, yöntemi, sistemin Kullanıcı için dosya adını göstermek için kullanacağı dizeyi döndürür. Aksi takdirde, yöntemi, temel alınan dosyanın dosya adını (dosya uzantısı dahil) almak için [PathFindFileName](/windows/desktop/api/shlwapi/nf-shlwapi-pathfindfilenamea) öğesini çağırır. Bu, dosya uzantısının döndürülen dosya başlığı dizesine her zaman dahil olmadığı anlamına gelir. Daha fazla bilgi için Windows SDK [GetFileTitle](/windows/desktop/api/commdlg/nf-commdlg-getfiletitlea) ve [PathFindFileName](/windows/desktop/api/shlwapi/nf-shlwapi-pathfindfilenamea) bölümüne bakın.
+Bu yöntem, dosyanın başlığını almak için [GetFileTitle](/windows/win32/api/commdlg/nf-commdlg-getfiletitlew) öğesini çağırır. Başarılı olursa, yöntemi, sistemin Kullanıcı için dosya adını göstermek için kullanacağı dizeyi döndürür. Aksi takdirde, yöntemi, temel alınan dosyanın dosya adını (dosya uzantısı dahil) almak için [PathFindFileName](/windows/win32/api/shlwapi/nf-shlwapi-pathfindfilenamew) öğesini çağırır. Bu, dosya uzantısının döndürülen dosya başlığı dizesine her zaman dahil olmadığı anlamına gelir. Daha fazla bilgi için Windows SDK [GetFileTitle](/windows/win32/api/commdlg/nf-commdlg-getfiletitlew) ve [PathFindFileName](/windows/win32/api/shlwapi/nf-shlwapi-pathfindfilenamew) bölümüne bakın.
 
 Adı da dahil olmak üzere dosyanın tüm yolunu döndürmek için [GetFilePath](#getfilepath)' i çağırın. Yalnızca dosyanın adını döndürmek için [GetFileName](#getfilename)' i çağırın.
 
@@ -613,7 +613,7 @@ Aşağıdaki tabloda, olası sonuçları `Open`açıklanmaktadır.
 
 ##  <a name="operator_handle"></a>CFile:: operator işleci
 
-`CFile` [ReadFileEx](/windows/desktop/api/fileapi/nf-fileapi-readfileex) ve [GetFileTime](/windows/desktop/api/fileapi/nf-fileapi-getfiletime) gibi işlevlere bir nesneye bir tanıtıcı geçirmek için bu işleci kullanın `HANDLE`.
+`CFile` [ReadFileEx](/windows/win32/api/fileapi/nf-fileapi-readfileex) ve [GetFileTime](/windows/win32/api/fileapi/nf-fileapi-getfiletime) gibi işlevlere bir nesneye bir tanıtıcı geçirmek için bu işleci kullanın `HANDLE`.
 
 ```
 operator HANDLE() const;

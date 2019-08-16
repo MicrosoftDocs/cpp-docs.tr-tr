@@ -116,16 +116,16 @@ helpviewer_keywords:
 - CDHtmlDialog [MFC], m_strCurrentUrl
 - CDHtmlDialog [MFC], m_szHtmlResID
 ms.assetid: 3f941c85-87e1-4f0f-9cc5-ffee8498b312
-ms.openlocfilehash: d53d3afb464b9dcfa32ab3cf4ee51446f8313a92
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ec424e433dc84bf4188e349eb6450888aeeeb463
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62168069"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69506894"
 ---
 # <a name="cdhtmldialog-class"></a>CDHtmlDialog sınıfı
 
-HTML kullanan iletişim kutuları oluşturmak için kullanılan kullanıcı arabirimini uygulamak için iletişim kutusu kaynakları yerine.
+, Kullanıcı arabirimini uygulamak için iletişim kutusu kaynakları yerine HTML kullanan iletişim kutuları oluşturmak için kullanılır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -139,78 +139,78 @@ class CDHtmlDialog : public CDialog, public CDHtmlEventSink
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CDHtmlDialog::CDHtmlDialog](#cdhtmldialog)|CDHtmlDialog bir nesne oluşturur.|
+|[CDHtmlDialog:: CDHtmlDialog](#cdhtmldialog)|Bir CDHtmlDialog nesnesi oluşturur.|
 |[CDHtmlDialog:: ~ CDHtmlDialog](#_dtorcdhtmldialog)|CDHtmlDialog nesnesini yok eder.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CDHtmlDialog::CanAccessExternal](#canaccessexternal)|Geçersiz kılınabilir, betik oluşturma nesneleri yüklenen sayfasında dış gönderme denetim sitenin erişip erişemeyeceğini görmek için bir erişim denetimi adlandırılır. Dağıtım komut dosyası için güvenli olmayan nesneler için güvenli betik oluşturma ya da geçerli bölge sağlayan olduğundan emin olmak için denetler.|
-|[CDHtmlDialog::CreateControlSite](#createcontrolsite)|Overridable iletişim kutusundaki WebBrowser denetimi barındırmak için bir denetim site örneği oluşturmak için kullanılır.|
-|[CDHtmlDialog::DDX_DHtml_AxControl](#ddx_dhtml_axcontrol)|Bir üye değişkenine ActiveX denetiminin bir HTML sayfasında özellik değeri arasında verileri birbiriyle değiştirir.|
-|[CDHtmlDialog::DDX_DHtml_CheckBox](#ddx_dhtml_checkbox)|Bir HTML sayfasında bir onay kutusu ile bir üye değişkeni arasında verileri birbiriyle değiştirir.|
-|[CDHtmlDialog::DDX_DHtml_ElementText](#ddx_dhtml_elementtext)|Bir HTML sayfasında herhangi bir HTML öğesi özelliği ile bir üye değişkeni arasında verileri birbiriyle değiştirir.|
-|[CDHtmlDialog::DDX_DHtml_Radio](#ddx_dhtml_radio)|Bir HTML sayfasında bir radyo düğmesi ile bir üye değişkeni arasında verileri birbiriyle değiştirir.|
-|[CDHtmlDialog::DDX_DHtml_SelectIndex](#ddx_dhtml_selectindex)|Dizinini alır veya bir liste kutusunun bir HTML sayfasına ayarlar.|
-|[CDHtmlDialog::DDX_DHtml_SelectString](#ddx_dhtml_selectstring)|Alır veya bir HTML sayfasında (geçerli dizin tabanlı) bir liste kutusu girişi görüntü metnini ayarlar.|
-|[CDHtmlDialog::DDX_DHtml_SelectValue](#ddx_dhtml_selectvalue)|Alır veya bir HTML sayfasında (geçerli dizin tabanlı) bir liste kutusu Girişi değerini ayarlar.|
-|[CDHtmlDialog::DestroyModeless](#destroymodeless)|Kalıcı olmayan iletişim kutusunu yok eder.|
-|[CDHtmlDialog::EnableModeless](#enablemodeless)|Kalıcı olmayan iletişim kutuları sağlar.|
-|[CDHtmlDialog::FilterDataObject](#filterdataobject)|Barındırılan tarayıcı tarafından oluşturulan Pano veri nesneleri filtrelemek iletişim kutusu sağlar.|
-|[CDHtmlDialog::GetControlDispatch](#getcontroldispatch)|Alır `IDispatch` arabirimdeki bir ActiveX denetimi HTML belgesinde katıştırılmış.|
-|[CDHtmlDialog::GetControlProperty](#getcontrolproperty)|Belirtilen ActiveX denetiminin istenen özelliği alır.|
-|[CDHtmlDialog::GetCurrentUrl](#getcurrenturl)|Alır Tekdüzen Kaynak Konum Belirleyicisi (URL), geçerli belge ile ilişkilendirilmiş.|
-|[CDHtmlDialog::GetDHtmlDocument](#getdhtmldocument)|Şu anda yüklü HTML belgesi Ihtmldocument2 arabirimde alır.|
-|[CDHtmlDialog::GetDropTarget](#getdroptarget)|Bir bırakma hedefi alternatif sağlamak iletişim izin vermek için kullanılan tarafından kapsanan WebBrowser denetimi çağırılır [ıdroptarget'ı](/windows/desktop/api/oleidl/nn-oleidl-idroptarget).|
-|[CDHtmlDialog::GetElement](#getelement)|HTML öğesi bir arabirim alır.|
-|[CDHtmlDialog::GetElementHtml](#getelementhtml)|Alır `innerHTML` HTML öğesi bir özelliğidir.|
-|[CDHtmlDialog::GetElementInterface](#getelementinterface)|HTML öğeden istenen arabirim işaretçisi alır.|
-|[CDHtmlDialog::GetElementProperty](#getelementproperty)|Bir HTML öğenin özelliğinin değerini alır.|
-|[CDHtmlDialog::GetElementText](#getelementtext)|Alır `innerText` HTML öğesi bir özelliğidir.|
-|[CDHtmlDialog::GetEvent](#getevent)|Alır `IHTMLEventObj` için geçerli olay nesnesine işaretçi.|
-|[CDHtmlDialog::GetExternal](#getexternal)|Ana bilgisayarın alır `IDispatch` arabirimi.|
-|[CDHtmlDialog::GetHostInfo](#gethostinfo)|Ana bilgisayarın kullanıcı Arabirimi özellikleri alır.|
-|[CDHtmlDialog::GetOptionKeyPath](#getoptionkeypath)|Kullanıcı tercihleri depolandığı kayıt defteri anahtarı alır.|
-|[CDHtmlDialog::HideUI](#hideui)|Ana bilgisayarın kullanıcı arabirimini gizler.|
-|[CDHtmlDialog::IsExternalDispatchSafe](#isexternaldispatchsafe)|Belirtir olup olmadığını konağın `IDispatch` arabirimidir komut dosyası için güvenli.|
-|[CDHtmlDialog::LoadFromResource](#loadfromresource)|Belirtilen kaynak WebBrowser denetimine yükler.|
-|[CDHtmlDialog::Navigate](#navigate)|Belirtilen URL'ye gider.|
-|[CDHtmlDialog::OnBeforeNavigate](#onbeforenavigate)|Gezinti olayı harekete geçirilmeden önce framework tarafından çağırılır.|
-|[CDHtmlDialog::OnDocumentComplete](#ondocumentcomplete)|Bir belge READYSTATE_COMPLETE durumuna ulaştı, uygulamaya bildirmek için framework tarafından çağırılır.|
-|[CDHtmlDialog::OnDocWindowActivate](#ondocwindowactivate)|Belge penceresini etkinleştirmek veya framework tarafından çağırılır.|
-|[CDHtmlDialog::OnFrameWindowActivate](#onframewindowactivate)|Çerçeve penceresini etkinleştirmek veya framework tarafından çağırılır.|
-|[CDHtmlDialog::OnInitDialog](#oninitdialog)|WM_INITDIALOG iletiye yanıt olarak çağrılır.|
-|[CDHtmlDialog::OnNavigateComplete](#onnavigatecomplete)|Gezinti olayı tamamlandıktan sonra framework tarafından çağırılır.|
-|[CDHtmlDialog::ResizeBorder](#resizeborder)|Kenarlık alanı yeniden boyutlandırmak için ihtiyaç duyduğu nesne uyarır.|
-|[CDHtmlDialog::SetControlProperty](#setcontrolproperty)|ActiveX denetimi özelliği, yeni değere ayarlar.|
-|[CDHtmlDialog::SetElementHtml](#setelementhtml)|Kümeleri `innerHTML` HTML öğesi bir özelliğidir.|
-|[CDHtmlDialog::SetElementProperty](#setelementproperty)|HTML öğesi bir özelliğini ayarlar.|
-|[CDHtmlDialog::SetElementText](#setelementtext)|Kümeleri `innerText` HTML öğesi bir özelliğidir.|
-|[CDHtmlDialog::SetExternalDispatch](#setexternaldispatch)|Ana bilgisayarın ayarlar `IDispatch` arabirimi.|
-|[CDHtmlDialog::SetHostFlags](#sethostflags)|Ana bilgisayarın UI bayraklarını ayarlar.|
-|[CDHtmlDialog::ShowContextMenu](#showcontextmenu)|Bir menü gösterilmek üzereyken çağırılır.|
-|[CDHtmlDialog::ShowUI](#showui)|Ana bilgisayarın kullanıcı Arabirimi gösterilir.|
-|[CDHtmlDialog::TranslateAccelerator](#translateaccelerator)|Menü kısayol tuşu iletilerini işlemek için çağrılır.|
-|[CDHtmlDialog::TranslateUrl](#translateurl)|Yüklenecek URL'sini değiştirmek için çağrılır.|
-|[CDHtmlDialog::UpdateUI](#updateui)|Komut durumu değişti ana bilgisayara bildirmek için çağırılır.|
+|[CDHtmlDialog:: CanAccessExternal](#canaccessexternal)|Yüklenen sayfada betik nesnelerinin denetim sitesinin dış gönderimi 'ne erişip erişemeyeceğini görmek için erişim denetimi olarak çağrılan geçersiz kılınabilir. Dağıtım için güvenli hale geldiğinden veya geçerli bölgenin betik için güvenli olmayan nesneler için izin verdiğinden emin olmak için denetler.|
+|[CDHtmlDialog:: CreateControlSite](#createcontrolsite)|Geçersiz kılınabilir, iletişim kutusunda WebBrowser denetimini barındırmak üzere bir denetim sitesi örneği oluşturmak için kullanılır.|
+|[CDHtmlDialog::D DX_DHtml_AxControl](#ddx_dhtml_axcontrol)|Bir üye değişkeni ve bir HTML sayfasındaki ActiveX denetiminin özellik değeri arasındaki verileri değiş tokuş eder.|
+|[CDHtmlDialog::D DX_DHtml_CheckBox](#ddx_dhtml_checkbox)|Bir üye değişkeni ve bir HTML sayfasındaki onay kutusu arasındaki verileri değiş tokuş eder.|
+|[CDHtmlDialog::D DX_DHtml_ElementText](#ddx_dhtml_elementtext)|Bir HTML sayfasındaki üye değişkeni ile herhangi bir HTML öğesi özelliği arasındaki verileri değiş tokuş eder.|
+|[CDHtmlDialog::D DX_DHtml_Radio](#ddx_dhtml_radio)|Bir üye değişkeni ve bir HTML sayfasındaki radyo düğmesi arasındaki verileri değiş tokuş eder.|
+|[CDHtmlDialog::D DX_DHtml_SelectIndex](#ddx_dhtml_selectindex)|HTML sayfasındaki liste kutusunun dizinini alır veya ayarlar.|
+|[CDHtmlDialog::D DX_DHtml_SelectString](#ddx_dhtml_selectstring)|Bir HTML sayfasındaki liste kutusu girişinin (geçerli dizine göre) görüntüleme metnini alır veya ayarlar.|
+|[CDHtmlDialog::D DX_DHtml_SelectValue](#ddx_dhtml_selectvalue)|Bir HTML sayfasındaki liste kutusu girişinin (geçerli dizine göre) değerini alır veya ayarlar.|
+|[CDHtmlDialog::D estroyModeless](#destroymodeless)|Kalıcı olmayan iletişim kutusunu yok eder.|
+|[CDHtmlDialog:: Enablemodsuz](#enablemodeless)|Kalıcı olmayan iletişim kutularını izin vermez.|
+|[CDHtmlDialog:: FilterDataObject](#filterdataobject)|İletişim kutusunun barındırılan tarayıcı tarafından oluşturulan Pano veri nesnelerini filtrelemesine olanak sağlar.|
+|[CDHtmlDialog:: GetControlDispatch](#getcontroldispatch)|HTML belgesine katıştırılmış ActiveX denetimindeki arabirimialır.`IDispatch`|
+|[CDHtmlDialog:: GetControlProperty](#getcontrolproperty)|Belirtilen ActiveX denetiminin istenen özelliğini alır.|
+|[CDHtmlDialog:: GetCurrentUrl](#getcurrenturl)|Geçerli belgeyle ilişkili Tekdüzen Kaynak Konumlandırıcı 'Sını (URL) alır.|
+|[CDHtmlDialog:: GetDHtmlDocument](#getdhtmldocument)|Şu anda yüklü olan HTML belgesinde IHTMLDocument2 arabirimini alır.|
+|[CDHtmlDialog:: GetDropTarget](#getdroptarget)|İletişim kutusunun alternatif bir [IDropTarget](/windows/win32/api/oleidl/nn-oleidl-idroptarget)sağlaması için bırakma hedefi olarak kullanıldığında içerilen WebBrowser denetimi tarafından çağırılır.|
+|[CDHtmlDialog:: GetElement](#getelement)|Bir HTML öğesinde bir arabirim alır.|
+|[CDHtmlDialog:: GetElementHtml](#getelementhtml)|Bir HTML öğesinin özelliğini alır. `innerHTML`|
+|[CDHtmlDialog:: Getelementınterface](#getelementinterface)|Bir HTML öğesinden istenen arabirim işaretçisini alır.|
+|[CDHtmlDialog:: GetElementProperty](#getelementproperty)|Bir HTML öğesinin özelliğinin değerini alır.|
+|[CDHtmlDialog:: GetElementText](#getelementtext)|Bir HTML öğesinin özelliğini alır. `innerText`|
+|[CDHtmlDialog:: GetEvent](#getevent)|Geçerli olay nesnesine olan işaretçiyialır.`IHTMLEventObj`|
+|[CDHtmlDialog:: GetExternal](#getexternal)|Konağın `IDispatch` arabirimini alır.|
+|[CDHtmlDialog:: GetHostInfo](#gethostinfo)|Konağın Kullanıcı arabirimi yeteneklerini alır.|
+|[CDHtmlDialog:: GetOptionKeyPath](#getoptionkeypath)|Kullanıcı tercihlerinin depolanacağı kayıt defteri anahtarını alır.|
+|[CDHtmlDialog:: HideUI](#hideui)|Konağın Kullanıcı arabirimini gizler.|
+|[CDHtmlDialog:: ısexternaldispatchsafe](#isexternaldispatchsafe)|Ana bilgisayarın `IDispatch` arabiriminin komut dosyası oluşturma için güvenli olup olmadığını gösterir.|
+|[CDHtmlDialog:: LoadFromResource](#loadfromresource)|Belirtilen kaynağı WebBrowser denetimine yükler.|
+|[CDHtmlDialog:: gezinmek](#navigate)|Belirtilen URL 'ye gider.|
+|[CDHtmlDialog:: OnBeforeNavigate](#onbeforenavigate)|Bir gezinti olayı tetiklenmadan önce Framework tarafından çağırılır.|
+|[CDHtmlDialog:: Ondocumenttamamlanmıştır](#ondocumentcomplete)|Bir belge READYSTATE_COMPLETE durumuna ulaştığında bir uygulamaya bildirim almak için Framework tarafından çağırılır.|
+|[CDHtmlDialog:: OnDocWindowActivate](#ondocwindowactivate)|Belge penceresi etkinleştirildiğinde veya devre dışı bırakıldığında Framework tarafından çağırılır.|
+|[CDHtmlDialog:: OnFrameWindowActivate](#onframewindowactivate)|Çerçeve penceresi etkinleştirildiğinde veya devre dışı bırakıldığında Framework tarafından çağırılır.|
+|[CDHtmlDialog:: OnInitDialog](#oninitdialog)|WM_INITDIALOG iletisine yanıt olarak çağırılır.|
+|[CDHtmlDialog:: Onnavigatetamamlanmıştır](#onnavigatecomplete)|Bir gezinti olayı tamamlandıktan sonra Framework tarafından çağırılır.|
+|[CDHtmlDialog:: ResizeBorder](#resizeborder)|Nesnenin kenarlık alanını yeniden boyutlandırmak için ihtiyacı olan nesneyi uyarır.|
+|[CDHtmlDialog:: SetControlProperty](#setcontrolproperty)|ActiveX denetiminin özelliğini yeni bir değere ayarlar.|
+|[CDHtmlDialog:: SetElementHtml](#setelementhtml)|Bir HTML öğesinin özelliğini ayarlar. `innerHTML`|
+|[CDHtmlDialog:: SetElementProperty](#setelementproperty)|Bir HTML öğesinin özelliğini ayarlar.|
+|[CDHtmlDialog:: SetElementText](#setelementtext)|Bir HTML öğesinin özelliğini ayarlar. `innerText`|
+|[CDHtmlDialog:: SetExternalDispatch](#setexternaldispatch)|Konağın `IDispatch` arabirimini ayarlar.|
+|[CDHtmlDialog:: SetHostFlags](#sethostflags)|Konağın Kullanıcı arabirimi bayraklarını ayarlar.|
+|[CDHtmlDialog:: ShowContextMenu](#showcontextmenu)|Bağlam menüsü görüntülenmek üzereyken çağırılır.|
+|[CDHtmlDialog:: ShowUI](#showui)|Konağın Kullanıcı arabirimini gösterir.|
+|[CDHtmlDialog:: TranslateAccelerator](#translateaccelerator)|Menü Hızlandırıcısı anahtar iletilerini işlemek için çağırılır.|
+|[CDHtmlDialog:: TranslateUrl](#translateurl)|Yüklenecek URL 'YI değiştirmek için çağırılır.|
+|[CDHtmlDialog:: UpdateUI](#updateui)|Ana bilgisayara komut durumunun değiştiğini bildirmek için çağırılır.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CDHtmlDialog::m_bUseHtmlTitle](#m_busehtmltitle)|HTML belgenin başlığını iletişim başlığı kullanılıp kullanılmayacağını belirtir.|
-|[CDHtmlDialog::m_nHtmlResID](#m_nhtmlresid)|Görüntülenecek kaynak kimliği, HTML kaynak.|
-|[CDHtmlDialog::m_pBrowserApp](#m_pbrowserapp)|Bir Web tarayıcı uygulaması için bir işaretçi.|
-|[CDHtmlDialog::m_spHtmlDoc](#m_sphtmldoc)|Bir HTML belge işaretçisi.|
-|[CDHtmlDialog::m_strCurrentUrl](#m_strcurrenturl)|Geçerli URL.|
-|[CDHtmlDialog::m_szHtmlResID](#m_szhtmlresid)|HTML kaynak kimliği dize sürümü|
+|[CDHtmlDialog:: m_bUseHtmlTitle](#m_busehtmltitle)|HTML belgesinin başlığının iletişim kutusu başlığı olarak kullanılıp kullanılmayacağını gösterir.|
+|[CDHtmlDialog:: m_nHtmlResID](#m_nhtmlresid)|Görüntülenecek HTML kaynağının kaynak KIMLIĞI.|
+|[CDHtmlDialog:: m_pBrowserApp](#m_pbrowserapp)|Web tarayıcı uygulaması için bir işaretçi.|
+|[CDHtmlDialog:: m_spHtmlDoc](#m_sphtmldoc)|HTML belgesi işaretçisi.|
+|[CDHtmlDialog:: m_strCurrentUrl](#m_strcurrenturl)|Geçerli URL.|
+|[CDHtmlDialog:: m_szHtmlResID](#m_szhtmlresid)|HTML kaynak KIMLIĞININ dize sürümü.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CDHtmlDialog` ya da bir HTML kaynaktan görüntülenecek HTML veya URL yükleyebilirsiniz.
+`CDHtmlDialog`HTML 'den veya URL 'den görüntülenmek üzere HTML yükleyebilir.
 
-`CDHtmlDialog` Ayrıca veri HTML denetimleri ile exchange ve düğmesine tıklar gibi HTML denetimlerini, olaylarından işleme.
+`CDHtmlDialog`Ayrıca, HTML denetimleriyle veri alışverişi yapabilir ve düğme tıklamaları gibi HTML denetimlerinden olayları işleyebilir.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -234,28 +234,28 @@ class CDHtmlDialog : public CDialog, public CDHtmlEventSink
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxdhtml.h
+**Üstbilgi:** afxdhtml. h
 
-##  <a name="ddx_dhtml_helper_macros"></a>  DDX_DHtml yardımcı makroları
+##  <a name="ddx_dhtml_helper_macros"></a>DDX_DHtml Yardımcısı makroları
 
-DDX_DHtml yardımcı makroları, yaygın olarak kullanılan bir HTML sayfasında denetimlerin özelliklerini kolay erişim sağlar.
+DDX_DHtml yardımcı makroları, HTML sayfasındaki denetimlerin yaygın olarak kullanılan özelliklerine kolayca erişim sağlar.
 
-### <a name="data-exchange-macros"></a>Veri Değişim makroları
+### <a name="data-exchange-macros"></a>Veri değişimi makroları
 
 |||
 |-|-|
-|[DDX_DHtml_ElementValue](../../mfc/reference/ddx-dhtml-helper-macros.md#ddx_dhtml_elementvalue)|Seçili denetiminden Value özelliği alır veya belirler.|
-|[DDX_DHtml_ElementInnerText](../../mfc/reference/ddx-dhtml-helper-macros.md#ddx_dhtml_elementinnertext)|Geçerli öğenin başlangıç ve bitiş etiketleri arasındaki metni alır veya ayarlar.|
-|[DDX_DHtml_ElementInnerHtml](../../mfc/reference/ddx-dhtml-helper-macros.md#ddx_dhtml_elementinnerhtml)|Geçerli öğenin başlangıç ve bitiş etiketleri arasında HTML alır veya ayarlar.|
-|[DDX_DHtml_Anchor_Href](../../mfc/reference/ddx-dhtml-helper-macros.md#ddx_dhtml_anchor_href)|Hedef URL veya bağlantı noktası alır veya ayarlar.|
-|[DDX_DHtml_Anchor_Target](../../mfc/reference/ddx-dhtml-helper-macros.md#ddx_dhtml_anchor_target)|Hedef pencere veya çerçeve alır veya ayarlar.|
-|[DDX_DHtml_Img_Src](../../mfc/reference/ddx-dhtml-helper-macros.md#ddx_dhtml_img_src)|Bir görüntü veya video klip belgedeki adını alır veya ayarlar.|
-|[DDX_DHtml_Frame_Src](../../mfc/reference/ddx-dhtml-helper-macros.md#ddx_dhtml_frame_src)|İlişkili çerçeve URL'sini alır veya ayarlar.|
-|[DDX_DHtml_IFrame_Src](../../mfc/reference/ddx-dhtml-helper-macros.md#ddx_dhtml_iframe_src)|İlişkili çerçeve URL'sini alır veya ayarlar.|
+|[DDX_DHtml_ElementValue](../../mfc/reference/ddx-dhtml-helper-macros.md#ddx_dhtml_elementvalue)|Seçili denetimden değer özelliğini ayarlar veya alır.|
+|[DDX_DHtml_ElementInnerText](../../mfc/reference/ddx-dhtml-helper-macros.md#ddx_dhtml_elementinnertext)|Geçerli öğenin başlangıç ve bitiş etiketleri arasındaki metni ayarlar veya alır.|
+|[DDX_DHtml_ElementInnerHtml](../../mfc/reference/ddx-dhtml-helper-macros.md#ddx_dhtml_elementinnerhtml)|Geçerli öğenin başlangıç ve bitiş etiketleri arasında HTML ayarlar veya alır.|
+|[DDX_DHtml_Anchor_Href](../../mfc/reference/ddx-dhtml-helper-macros.md#ddx_dhtml_anchor_href)|Hedef URL 'YI veya bağlantı noktasını ayarlar veya alır.|
+|[DDX_DHtml_Anchor_Target](../../mfc/reference/ddx-dhtml-helper-macros.md#ddx_dhtml_anchor_target)|Hedef pencereyi veya çerçeveyi ayarlar veya alır.|
+|[DDX_DHtml_Img_Src](../../mfc/reference/ddx-dhtml-helper-macros.md#ddx_dhtml_img_src)|Belgedeki bir görüntünün veya video klibinin adını ayarlar veya alır.|
+|[DDX_DHtml_Frame_Src](../../mfc/reference/ddx-dhtml-helper-macros.md#ddx_dhtml_frame_src)|İlişkili çerçevenin URL 'sini ayarlar veya alır.|
+|[DDX_DHtml_IFrame_Src](../../mfc/reference/ddx-dhtml-helper-macros.md#ddx_dhtml_iframe_src)|İlişkili çerçevenin URL 'sini ayarlar veya alır.|
 
-##  <a name="canaccessexternal"></a>  CDHtmlDialog::CanAccessExternal
+##  <a name="canaccessexternal"></a>CDHtmlDialog:: CanAccessExternal
 
-Geçersiz kılınabilir, betik oluşturma nesneleri yüklenen sayfasında dış gönderme denetim sitenin erişip erişemeyeceğini görmek için bir erişim denetimi adlandırılır. Dağıtım komut dosyası için güvenli olmayan nesneler için güvenli betik oluşturma ya da geçerli bölge sağlayan olduğundan emin olmak için denetler.
+Yüklenen sayfada betik nesnelerinin denetim sitesinin dış gönderimi 'ne erişip erişemeyeceğini görmek için erişim denetimi olarak çağrılan geçersiz kılınabilir. Dağıtım için güvenli hale geldiğinden veya geçerli bölgenin betik için güvenli olmayan nesneler için izin verdiğinden emin olmak için denetler.
 
 ```
 virtual BOOL CanAccessExternal();
@@ -263,9 +263,9 @@ virtual BOOL CanAccessExternal();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi durumda 0.
+Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
-##  <a name="cdhtmldialog"></a>  CDHtmlDialog::CDHtmlDialog
+##  <a name="cdhtmldialog"></a>CDHtmlDialog:: CDHtmlDialog
 
 Kaynak tabanlı dinamik HTML iletişim kutusu oluşturur.
 
@@ -286,25 +286,25 @@ CDHtmlDialog(
 ### <a name="parameters"></a>Parametreler
 
 *lpszTemplateName*<br/>
-Bir iletişim kutusu şablonu kaynak adı null ile sonlandırılmış bir dize.
+Bir iletişim kutusu şablon kaynağının adı olan null ile sonlandırılmış dize.
 
-*szHtmlResID*<br/>
-Bir HTML kaynak adı null ile sonlandırılmış bir dize.
+*Szhtmlresd*<br/>
+Bir HTML kaynağının adı olan null ile sonlandırılmış dize.
 
 *pParentWnd*<br/>
-Üst veya sahibi pencere nesnesi için bir işaretçi (tür [CWnd](../../mfc/reference/cwnd-class.md)) ait olduğu iletişim nesnesi. NULL ise, ana uygulama penceresini iletişim nesnenin üst penceresine ayarlanır.
+İletişim nesnesinin ait olduğu üst veya sahip pencere nesnesine ( [CWnd](../../mfc/reference/cwnd-class.md)türü) yönelik bir işaretçi. NULL ise, iletişim kutusu nesnesinin ana penceresi ana uygulama penceresine ayarlanır.
 
-*nIDTemplate*<br/>
-Bir iletişim kutusu şablon kaynağı kimliği numarasını içerir.
+*Nıdtemplate*<br/>
+Bir iletişim kutusu şablon kaynağının KIMLIK numarasını içerir.
 
-*nHtmlResID*<br/>
-Bir HTML kaynağının kimliği numarasını içerir.
+*Nhtmlresd*<br/>
+Bir HTML kaynağının KIMLIK numarasını içerir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İkinci form oluşturucunun şablon adı aracılığıyla iletişim kaynağa erişim sağlar. Oluşturucunun üçüncü formu aracılığıyla kaynak şablonu kimliği iletişim kutusu kaynağı erişim sağlar. Genellikle, kimliği ile başlayıp başlamadığını **IDD_** önek.
+Oluşturucunun ikinci formu, şablon adı aracılığıyla iletişim kaynağına erişim sağlar. Oluşturucunun üçüncü formu, kaynak şablonun KIMLIĞI üzerinden iletişim kaynağına erişim sağlar. Genellikle, KIMLIK **IDD_** ön ekiyle başlar.
 
-##  <a name="_dtorcdhtmldialog"></a>  CDHtmlDialog:: ~ CDHtmlDialog
+##  <a name="_dtorcdhtmldialog"></a>CDHtmlDialog:: ~ CDHtmlDialog
 
 CDHtmlDialog nesnesini yok eder.
 
@@ -314,11 +314,11 @@ virtual ~CDHtmlDialog();
 
 ### <a name="remarks"></a>Açıklamalar
 
-[CWnd::DestroyWindow](../../mfc/reference/cwnd-class.md#destroywindow) üye işlevi tarafından oluşturulan kalıcı olmayan iletişim kutuları yok etmek için kullanılması gereken [CDialog::Create](../../mfc/reference/cdialog-class.md#create).
+[CWnd::D estroyWindow](../../mfc/reference/cwnd-class.md#destroywindow) üye Işlevi, [CDialog:: Create](../../mfc/reference/cdialog-class.md#create)tarafından oluşturulan kalıcı olmayan iletişim kutularını yok etmek için kullanılmalıdır.
 
-##  <a name="createcontrolsite"></a>  CDHtmlDialog::CreateControlSite
+##  <a name="createcontrolsite"></a>CDHtmlDialog:: CreateControlSite
 
-Overridable iletişim kutusundaki WebBrowser denetimi barındırmak için bir denetim site örneği oluşturmak için kullanılır.
+Geçersiz kılınabilir, iletişim kutusunda WebBrowser denetimini barındırmak üzere bir denetim sitesi örneği oluşturmak için kullanılır.
 
 ```
 virtual BOOL CreateControlSite(
@@ -330,23 +330,23 @@ virtual BOOL CreateControlSite(
 
 ### <a name="parameters"></a>Parametreler
 
-*Implement_serıalıze*<br/>
-Bir işaretçi [COleControlContainer](../../mfc/reference/colecontrolcontainer-class.md) nesnesi
+*pContainer*<br/>
+[Cotacontrolcontainer](../../mfc/reference/colecontrolcontainer-class.md) nesnesine yönelik bir işaretçi
 
 *ppSite*<br/>
-Bir işaretçi işaretçisi bir [COleControlSite](../../mfc/reference/colecontrolsite-class.md).
+[Cotacontrolsite](../../mfc/reference/colecontrolsite-class.md)işaretçisinin işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi durumda 0.
+Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kendi denetimi site sınıfının bir örneğini döndürmek için bu üye işlevini geçersiz kılabilirsiniz.
+Kendi denetim sitesi sınıfınızın bir örneğini döndürmek için bu üye işlevi geçersiz kılabilirsiniz.
 
-##  <a name="ddx_dhtml_axcontrol"></a>  CDHtmlDialog::DDX_DHtml_AxControl
+##  <a name="ddx_dhtml_axcontrol"></a>CDHtmlDialog::D DX_DHtml_AxControl
 
-Bir üye değişkenine ActiveX denetiminin bir HTML sayfasında özellik değeri arasında verileri birbiriyle değiştirir.
+Bir üye değişkeni ve bir HTML sayfasındaki ActiveX denetiminin özellik değeri arasındaki verileri değiş tokuş eder.
 
 ```
 void DDX_DHtml_AxControl(
@@ -365,27 +365,27 @@ void DDX_DHtml_AxControl(
 ### <a name="parameters"></a>Parametreler
 
 *pDX*<br/>
-Bir işaretçi bir [CDataExchange](../../mfc/reference/cdataexchange-class.md) nesne.
+[CDataExchange](../../mfc/reference/cdataexchange-class.md) nesnesine yönelik bir işaretçi.
 
-*szId*<br/>
-ActiveX denetimi için HTML kaynak nesne etiketin kimliği parametrenin değeri.
+*szID*<br/>
+ActiveX denetimi için HTML kaynağındaki nesne etiketinin ID parametresinin değeri.
 
-*dispId*<br/>
-Veri değişimi istediğiniz özellik gönderme kimliği.
+*Dı*<br/>
+Veri alışverişi yapmak istediğiniz özelliğin dağıtım KIMLIĞI.
 
 *szPropName*<br/>
 Özelliğin adı.
 
 *var*<br/>
-Veri üyesi tür ÇEŞİDİ [COleVariant](../../mfc/reference/colevariant-class.md), veya [CComVariant](../../atl/reference/ccomvariant-class.md), ActiveX denetim özelliği ile değiştirilen değer tutar.
+ActiveX denetim özelliğiyle değiş tokuş edilen değeri tutan VARIANT, [Cotavariant](../../mfc/reference/colevariant-class.md)veya [CComVariant](../../atl/reference/ccomvariant-class.md)türünde veri üyesi.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCHtmlHttp#1](../../mfc/reference/codesnippet/cpp/cdhtmldialog-class_1.cpp)]
 
-##  <a name="ddx_dhtml_checkbox"></a>  CDHtmlDialog::DDX_DHtml_CheckBox
+##  <a name="ddx_dhtml_checkbox"></a>CDHtmlDialog::D DX_DHtml_CheckBox
 
-Bir HTML sayfasında bir onay kutusu ile bir üye değişkeni arasında verileri birbiriyle değiştirir.
+Bir üye değişkeni ve bir HTML sayfasındaki onay kutusu arasındaki verileri değiş tokuş eder.
 
 ```
 void DDX_DHtml_CheckBox(
@@ -397,21 +397,21 @@ void DDX_DHtml_CheckBox(
 ### <a name="parameters"></a>Parametreler
 
 *pDX*<br/>
-Bir işaretçi bir [CDataExchange](../../mfc/reference/cdataexchange-class.md) nesne.
+[CDataExchange](../../mfc/reference/cdataexchange-class.md) nesnesine yönelik bir işaretçi.
 
-*szId*<br/>
-HTML denetiminin kimliği parametresi için belirtilen değer.
+*szID*<br/>
+HTML denetiminin ID parametresi için belirttiğiniz değer.
 
 *value*<br/>
-Değiştirilen değer.
+Takas edilmekte olan değer.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCHtmlHttp#2](../../mfc/reference/codesnippet/cpp/cdhtmldialog-class_2.cpp)]
 
-##  <a name="ddx_dhtml_elementtext"></a>  CDHtmlDialog::DDX_DHtml_ElementText
+##  <a name="ddx_dhtml_elementtext"></a>CDHtmlDialog::D DX_DHtml_ElementText
 
-Bir HTML sayfasında herhangi bir HTML öğesi özelliği ile bir üye değişkeni arasında verileri birbiriyle değiştirir.
+Bir HTML sayfasındaki üye değişkeni ile herhangi bir HTML öğesi özelliği arasındaki verileri değiş tokuş eder.
 
 ```
 void DDX_DHtml_ElementText(
@@ -460,20 +460,20 @@ void DDX_DHtml_ElementText(
 ### <a name="parameters"></a>Parametreler
 
 *pDX*<br/>
-Bir işaretçi bir [CDataExchange](../../mfc/reference/cdataexchange-class.md) nesne.
+[CDataExchange](../../mfc/reference/cdataexchange-class.md) nesnesine yönelik bir işaretçi.
 
-*szId*<br/>
-HTML denetiminin kimliği parametresi için belirtilen değer.
+*szID*<br/>
+HTML denetiminin ID parametresi için belirttiğiniz değer.
 
-*dispId*<br/>
-Dağıtım kimliği ile veri değişimi istediğiniz HTML öğesi.
+*Dı*<br/>
+Veri alışverişi yapmak istediğiniz HTML öğesinin dağıtım KIMLIĞI.
 
 *value*<br/>
-Değiştirilen değer.
+Takas edilmekte olan değer.
 
-##  <a name="ddx_dhtml_radio"></a>  CDHtmlDialog::DDX_DHtml_Radio
+##  <a name="ddx_dhtml_radio"></a>CDHtmlDialog::D DX_DHtml_Radio
 
-Bir HTML sayfasında bir radyo düğmesi ile bir üye değişkeni arasında verileri birbiriyle değiştirir.
+Bir üye değişkeni ve bir HTML sayfasındaki radyo düğmesi arasındaki verileri değiş tokuş eder.
 
 ```
 void DDX_DHtml_Radio(
@@ -485,17 +485,17 @@ void DDX_DHtml_Radio(
 ### <a name="parameters"></a>Parametreler
 
 *pDX*<br/>
-Bir işaretçi bir [CDataExchange](../../mfc/reference/cdataexchange-class.md) nesne.
+[CDataExchange](../../mfc/reference/cdataexchange-class.md) nesnesine yönelik bir işaretçi.
 
-*szId*<br/>
-HTML denetiminin kimliği parametresi için belirtilen değer.
+*szID*<br/>
+HTML denetiminin ID parametresi için belirttiğiniz değer.
 
 *value*<br/>
-Değiştirilen değer.
+Takas edilmekte olan değer.
 
-##  <a name="ddx_dhtml_selectindex"></a>  CDHtmlDialog::DDX_DHtml_SelectIndex
+##  <a name="ddx_dhtml_selectindex"></a>CDHtmlDialog::D DX_DHtml_SelectIndex
 
-Dizinini alır veya bir liste kutusunun bir HTML sayfasına ayarlar.
+HTML sayfasındaki liste kutusunun dizinini alır veya ayarlar.
 
 ```
 void DDX_DHtml_SelectIndex(
@@ -507,17 +507,17 @@ void DDX_DHtml_SelectIndex(
 ### <a name="parameters"></a>Parametreler
 
 *pDX*<br/>
-Bir işaretçi bir [CDataExchange](../../mfc/reference/cdataexchange-class.md) nesne.
+[CDataExchange](../../mfc/reference/cdataexchange-class.md) nesnesine yönelik bir işaretçi.
 
-*szId*<br/>
-HTML denetim için belirttiğiniz değeri `id` parametresi.
+*szID*<br/>
+HTML denetiminin `id` parametresi için belirttiğiniz değer.
 
 *value*<br/>
-Değiştirilen değer.
+Takas edilmekte olan değer.
 
-##  <a name="ddx_dhtml_selectstring"></a>  CDHtmlDialog::DDX_DHtml_SelectString
+##  <a name="ddx_dhtml_selectstring"></a>CDHtmlDialog::D DX_DHtml_SelectString
 
-Alır veya bir HTML sayfasında (geçerli dizin tabanlı) bir liste kutusu girişi görüntü metnini ayarlar.
+Bir HTML sayfasındaki liste kutusu girişinin (geçerli dizine göre) görüntüleme metnini alır veya ayarlar.
 
 ```
 void DDX_DHtml_SelectString(
@@ -529,17 +529,17 @@ void DDX_DHtml_SelectString(
 ### <a name="parameters"></a>Parametreler
 
 *pDX*<br/>
-Bir işaretçi bir [CDataExchange](../../mfc/reference/cdataexchange-class.md) nesne.
+[CDataExchange](../../mfc/reference/cdataexchange-class.md) nesnesine yönelik bir işaretçi.
 
-*szId*<br/>
-HTML denetiminin kimliği parametresi için belirtilen değer.
+*szID*<br/>
+HTML denetiminin ID parametresi için belirttiğiniz değer.
 
 *value*<br/>
-Değiştirilen değer.
+Takas edilmekte olan değer.
 
-##  <a name="ddx_dhtml_selectvalue"></a>  CDHtmlDialog::DDX_DHtml_SelectValue
+##  <a name="ddx_dhtml_selectvalue"></a>CDHtmlDialog::D DX_DHtml_SelectValue
 
-Alır veya bir HTML sayfasında (geçerli dizin tabanlı) bir liste kutusu Girişi değerini ayarlar.
+Bir HTML sayfasındaki liste kutusu girişinin (geçerli dizine göre) değerini alır veya ayarlar.
 
 ```
 void DDX_DHtml_SelectValue(
@@ -551,29 +551,29 @@ void DDX_DHtml_SelectValue(
 ### <a name="parameters"></a>Parametreler
 
 *pDX*<br/>
-Bir işaretçi bir [CDataExchange](../../mfc/reference/cdataexchange-class.md) nesne.
+[CDataExchange](../../mfc/reference/cdataexchange-class.md) nesnesine yönelik bir işaretçi.
 
-*szId*<br/>
-HTML denetiminin kimliği parametresi için belirtilen değer.
+*szID*<br/>
+HTML denetiminin ID parametresi için belirttiğiniz değer.
 
 *value*<br/>
-Değiştirilen değer.
+Takas edilmekte olan değer.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCHtmlHttp#3](../../mfc/reference/codesnippet/cpp/cdhtmldialog-class_3.cpp)]
 
-##  <a name="destroymodeless"></a>  CDHtmlDialog::DestroyModeless
+##  <a name="destroymodeless"></a>CDHtmlDialog::D estroyModeless
 
-Kalıcı olmayan iletişim kutusundan ayırır `CDHtmlDialog` nesnesini ve nesne yok eder.
+`CDHtmlDialog` Nesneden kalıcı olmayan iletişim kutusu ayırır ve nesneyi yok eder.
 
 ```
 void DestroyModeless();
 ```
 
-##  <a name="enablemodeless"></a>  CDHtmlDialog::EnableModeless
+##  <a name="enablemodeless"></a>CDHtmlDialog:: Enablemodsuz
 
-Kalıcı olmayan iletişim kutuları sağlar.
+Kalıcı olmayan iletişim kutularını izin vermez.
 
 ```
 STDMETHOD(EnableModeless)(BOOL fEnable);
@@ -582,19 +582,19 @@ STDMETHOD(EnableModeless)(BOOL fEnable);
 ### <a name="parameters"></a>Parametreler
 
 *fEnable*<br/>
-Bkz: *fEnable* içinde [IDocHostUIHandler::EnableModeless](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753253\(v=vs.85\)) Windows SDK.
+Windows SDK, [ıdochostuihandler:: Enablemodin](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753253\(v=vs.85\)) Içinde *fEnable* bölümüne bakın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Returns E_NOTIMPL.
+E_NOTIMPL döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi CDHtmlDialog'ın uygulamasıdır [IDocHostUIHandler::EnableModeless](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753253\(v=vs.85\))Windows SDK içinde açıklandığı gibi.
+Bu üye işlevi, Windows SDK bölümünde açıklandığı gibi, CDHtmlDialog 'ın [ıdochostuihandler:: Enablemodary](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753253\(v=vs.85\))uygulamasıdır.
 
-##  <a name="filterdataobject"></a>  CDHtmlDialog::FilterDataObject
+##  <a name="filterdataobject"></a>CDHtmlDialog:: FilterDataObject
 
-Barındırılan tarayıcı tarafından oluşturulan Pano veri nesneleri filtrelemek iletişim kutusu sağlar.
+İletişim kutusunun barındırılan tarayıcı tarafından oluşturulan Pano veri nesnelerini filtrelemesine olanak sağlar.
 
 ```
 STDMETHOD(FilterDataObject)(
@@ -604,11 +604,11 @@ STDMETHOD(FilterDataObject)(
 
 ### <a name="parameters"></a>Parametreler
 
-*pDO*<br/>
-Bkz: *pDO* içinde [IDocHostUIHandler::FilterDataObject](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753254\(v=vs.85\)) Windows SDK.
+*Kaldırıldığında*<br/>
+Windows SDK için bkz. [ıdochostuihandler:: FilterDataObject](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753254\(v=vs.85\)) içindeki *pDO* .
 
 *ppDORet*<br/>
-Bkz: *ppDORet* içinde `IDocHostUIHandler::FilterDataObject` Windows SDK.
+Windows SDK içindeki *ppdoret* `IDocHostUIHandler::FilterDataObject` bölümüne bakın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -616,11 +616,11 @@ S_FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi CDHtmlDialog'ın uygulamasıdır [IDocHostUIHandler::FilterDataObject](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753254\(v=vs.85\))Windows SDK içinde açıklandığı gibi.
+Bu üye işlevi, Windows SDK bölümünde açıklandığı gibi, CDHtmlDialog 'ın [ıdochostuihandler:: FilterDataObject](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753254\(v=vs.85\))uygulamasıdır.
 
-##  <a name="getcontroldispatch"></a>  CDHtmlDialog::GetControlDispatch
+##  <a name="getcontroldispatch"></a>CDHtmlDialog:: GetControlDispatch
 
-Alır `IDispatch` ActiveX denetimi arabirimde katıştırılmış tarafından döndürülen HTML belgesinde [GetDHtmlDocument](#getdhtmldocument).
+[Getdhtmldocument](#getdhtmldocument)tarafından döndürülen HTML belgesinde gömülü bir ActiveX denetimindeki arabirimialır.`IDispatch`
 
 ```
 HRESULT GetControlDispatch(
@@ -630,19 +630,19 @@ HRESULT GetControlDispatch(
 
 ### <a name="parameters"></a>Parametreler
 
-*szId*<br/>
-ActiveX denetimi HTML kimliği.
+*szID*<br/>
+ActiveX denetiminin HTML KIMLIĞI.
 
-*ppdisp*<br/>
-`IDispatch` Denetimin arabirimi varsa Web sayfasında bulunan.
+*ppDisp*<br/>
+Web sayfasında bulunursa denetimin arabirimi.`IDispatch`
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT değerini.
+Standart bir HRESULT değeri.
 
-##  <a name="getcontrolproperty"></a>  CDHtmlDialog::GetControlProperty
+##  <a name="getcontrolproperty"></a>CDHtmlDialog:: GetControlProperty
 
-Belirtilen ActiveX denetiminin istenen özelliği alır.
+Belirtilen ActiveX denetiminin istenen özelliğini alır.
 
 ```
 VARIANT GetControlProperty(
@@ -660,29 +660,29 @@ VARIANT GetControlProperty(
 
 ### <a name="parameters"></a>Parametreler
 
-*szId*<br/>
-ActiveX denetimi HTML kimliği.
+*szID*<br/>
+ActiveX denetiminin HTML KIMLIĞI.
 
 *szPropName*<br/>
-Bir özelliğin varsayılan yerel ayar geçerli kullanıcının adı.
+Geçerli kullanıcının varsayılan yerel ayarında bir özelliğin adı.
 
 *pdispControl*<br/>
-`IDispatch` ActiveX denetimi işaretçisi.
+Bir ActiveX denetimi işaretçisi. `IDispatch`
 
-*dispId*<br/>
-Bir özellik gönderme kimliği.
+*Dı*<br/>
+Bir özelliğin dağıtım KIMLIĞI.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Denetim veya özellik bulunamadı, istenen özellik ya da boş bir değişken içeren bir değişken.
+Denetim veya özellik bulunamazsa, istenen özelliği veya boş bir değişkeni içeren bir değişken.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Aşırı yüklemeler, alttaki en verimli şekilde az verimli üst öğesinden listelenir.
+Aşırı yüklemeler en üstte en çok etkin olarak listelenir.
 
-##  <a name="getcurrenturl"></a>  CDHtmlDialog::GetCurrentUrl
+##  <a name="getcurrenturl"></a>CDHtmlDialog:: GetCurrentUrl
 
-Alır Tekdüzen Kaynak Konum Belirleyicisi (URL), geçerli belge ile ilişkilendirilmiş.
+Geçerli belgeyle ilişkili Tekdüzen Kaynak Konumlandırıcı 'Sını (URL) alır.
 
 ```
 void GetCurrentUrl(CString& szUrl);
@@ -691,11 +691,11 @@ void GetCurrentUrl(CString& szUrl);
 ### <a name="parameters"></a>Parametreler
 
 *szUrl*<br/>
-A [CString](../../atl-mfc-shared/reference/cstringt-class.md) alınacak URL'sini içeren nesne.
+Alınacak URL 'YI içeren bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) nesnesi.
 
-##  <a name="getdhtmldocument"></a>  CDHtmlDialog::GetDHtmlDocument
+##  <a name="getdhtmldocument"></a>CDHtmlDialog:: GetDHtmlDocument
 
-Alır [Ihtmldocument2](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752574\(v=vs.85\)) yüklü HTML belgesinde arabirimi.
+Şu anda yüklü olan HTML belgesinde [IHTMLDocument2](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752574\(v=vs.85\)) arabirimini alır.
 
 ```
 HRESULT GetDHtmlDocument(IHTMLDocument2 **pphtmlDoc);
@@ -703,15 +703,15 @@ HRESULT GetDHtmlDocument(IHTMLDocument2 **pphtmlDoc);
 
 ### <a name="parameters"></a>Parametreler
 
-*\*\*pphtmlDoc* HTML belgesi için bir işaretçi işaretçisi.
+bir HTML belgesi işaretçisine yönelik bir işaretçi olan pphtmldoc.  *\* \**
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT. Başarılıysa S_OK döndürür.
+Standart HRESULT. Başarılı olursa S_OK döndürür.
 
-##  <a name="getdroptarget"></a>  CDHtmlDialog::GetDropTarget
+##  <a name="getdroptarget"></a>CDHtmlDialog:: GetDropTarget
 
-Bir bırakma hedefi alternatif sağlamak iletişim izin vermek için kullanılan tarafından kapsanan WebBrowser denetimi çağırılır [ıdroptarget'ı](/windows/desktop/api/oleidl/nn-oleidl-idroptarget).
+İletişim kutusunun alternatif bir [IDropTarget](/windows/win32/api/oleidl/nn-oleidl-idroptarget)sağlaması için bırakma hedefi olarak kullanıldığında içerilen WebBrowser denetimi tarafından çağırılır.
 
 ```
 STDMETHOD(GetDropTarget)(
@@ -722,22 +722,22 @@ STDMETHOD(GetDropTarget)(
 ### <a name="parameters"></a>Parametreler
 
 *pDropTarget*<br/>
-Bkz: *pDropTarget* içinde [IDocHostUIHandler::GetDropTarget](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753255\(v=vs.85\)) Windows SDK.
+Windows SDK [ıdochostuihandler:: GetDropTarget](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753255\(v=vs.85\)) Içindeki *pdroptarget* bölümüne bakın.
 
 *ppDropTarget*<br/>
-Bkz: *ppDropTarget* içinde `IDocHostUIHandler::GetDropTarget` Windows SDK.
+Windows SDK içindeki *ppdroptarget* `IDocHostUIHandler::GetDropTarget` bölümüne bakın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Returns E_NOTIMPL.
+E_NOTIMPL döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi CDHtmlDialog'ın uygulamasıdır [IDocHostUIHandler::GetDropTarget](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753255\(v=vs.85\))Windows SDK içinde açıklandığı gibi.
+Bu üye işlevi, Windows SDK bölümünde açıklandığı gibi, CDHtmlDialog 'ın [ıdochostuihandler:: GetDropTarget](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753255\(v=vs.85\))uygulamasıdır.
 
-##  <a name="getelement"></a>  CDHtmlDialog::GetElement
+##  <a name="getelement"></a>CDHtmlDialog:: GetElement
 
-Belirtilen HTML öğesi üzerinde bir arabirim döndürür *szElementId*.
+*SzElementId*tarafından belirtilen HTML öğesinde bir arabirim döndürür.
 
 ```
 HRESULT GetElement(
@@ -753,30 +753,30 @@ HRESULT GetElement(
 ### <a name="parameters"></a>Parametreler
 
 *szElementId*<br/>
-HTML öğesi kimliği.
+Bir HTML öğesinin KIMLIĞI.
 
-*ppdisp*<br/>
-Bir `IDispatch` İstenen öğe veya öğeleri koleksiyonu işaretçisi.
+*ppDisp*<br/>
+İstenen `IDispatch` öğe veya öğe koleksiyonu için bir işaretçi.
 
 *pbCollection*<br/>
-Nesnesi tarafından temsil edilen olup olmadığını belirten bir Boole *ppdisp* tek bir öğe veya öğeleri koleksiyonu.
+*PpDisp* tarafından temsil edilen nesnenin tek bir öğe mi yoksa bir öğe koleksiyonu mu olduğunu gösteren bir bool.
 
 *pphtmlElement*<br/>
-Bir `IHTMLElement` istenen öğesinin işaretçisi.
+İstenen `IHTMLElement` öğeye yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT değerini.
+Standart bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Koşul içinde olabilir belirtilen kimliğe sahip birden fazla öğe işlemeniz gereken ilk aşırı yükleme kullanın Son parametresi, döndürülen arabirim işaretçisinde bir koleksiyon ya da tek bir öğe olup olmadığını anlamak için kullanabilirsiniz. Arabirim işaretçisi üzerindeki bir koleksiyona ise sorgulayabilirsiniz `IHTMLElementCollection` ve kendi `item` sıra konumuna öğelerine başvurmak için özellik.
+Belirtilen KIMLIĞE sahip birden fazla öğe olabileceği koşulları işlemeniz gerekiyorsa, ilk tekrar yüklemeyi kullanın. Döndürülen arabirim işaretçisinin bir koleksiyona mi yoksa tek bir öğe mi olduğunu öğrenmek için son parametresini kullanabilirsiniz. Arabirim işaretçisi bir koleksiyon üzerinde ise, ' i sorgulayabilir `IHTMLElementCollection` ve `item` özelliğini kullanarak öğeleri sıralı konuma göre başvurabilirsiniz.
 
-İkinci aşırı yükleme sayfasında aynı Kimliğe sahip birden fazla öğe varsa başarısız olur.
+Sayfada aynı KIMLIĞE sahip birden fazla öğe varsa ikinci aşırı yükleme başarısız olur.
 
-##  <a name="getelementhtml"></a>  CDHtmlDialog::GetElementHtml
+##  <a name="getelementhtml"></a>CDHtmlDialog:: GetElementHtml
 
-Alır `innerHTML` özelliği tarafından tanımlanan HTML öğesi *szElementId*.
+*SzElementId*tarafından tanımlanan html öğesinin özelliğinialır.`innerHTML`
 
 ```
 BSTR GetElementHtml(LPCTSTR szElementId);
@@ -785,15 +785,15 @@ BSTR GetElementHtml(LPCTSTR szElementId);
 ### <a name="parameters"></a>Parametreler
 
 *szElementId*<br/>
-HTML öğesi kimliği.
+Bir HTML öğesinin KIMLIĞI.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`innerHTML` Özelliği tarafından tanımlanan HTML öğesi *szElementId* veya öğe bulunamadı, NULL.
+Öğe bulunamazsa *szElementId* tarafından tanımlanan html öğesinin özelliğiveyanull.`innerHTML`
 
-##  <a name="getelementinterface"></a>  CDHtmlDialog::GetElementInterface
+##  <a name="getelementinterface"></a>CDHtmlDialog:: Getelementınterface
 
-HTML öğesi tarafından tanımlanan istenen arabirim işaretçisi alır *szElementId*.
+*SzElementId*tarafından tanımlanan html öğesinden istenen arabirim işaretçisini alır.
 
 ```
 template <class Q> HRESULT GetElementInterface(
@@ -809,25 +809,25 @@ HRESULT GetElementInterface(
 ### <a name="parameters"></a>Parametreler
 
 *szElementId*<br/>
-HTML öğesi kimliği.
+Bir HTML öğesinin KIMLIĞI.
 
 *ppvObj*<br/>
-Adresi öğe bulunmazsa, istenen arabirim işaretçisi ile doldurulmuş bir işaretçi ve sorgu başarılı olur.
+Öğe bulunursa ve sorgu başarılı olursa istenen arabirim işaretçiyle doldurulacak bir işaretçinin adresi.
 
-*refiid*<br/>
-Arabirim Kimliğini (IID), istenen arabirim.
+*yeniden fııd*<br/>
+İstenen arabirimin arabirim KIMLIĞI (IID).
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT değerini.
+Standart bir HRESULT değeri.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCHtmlHttp#4](../../mfc/reference/codesnippet/cpp/cdhtmldialog-class_4.cpp)]
 
-##  <a name="getelementproperty"></a>  CDHtmlDialog::GetElementProperty
+##  <a name="getelementproperty"></a>CDHtmlDialog:: GetElementProperty
 
-Tarafından belirtilen özelliğin değerini alır. *DISPID* tarafından tanımlanan HTML öğesinden *szElementId*.
+*SzElementId*tarafından tanımlanan html öğesinden *DISPID* tarafından tanımlanan özelliğin değerini alır.
 
 ```
 VARIANT GetElementProperty(
@@ -838,18 +838,18 @@ VARIANT GetElementProperty(
 ### <a name="parameters"></a>Parametreler
 
 *szElementId*<br/>
-HTML öğesi kimliği.
+Bir HTML öğesinin KIMLIĞI.
 
-*dispId*<br/>
-Bir özellik gönderme kimliği.
+*Dı*<br/>
+Bir özelliğin dağıtım KIMLIĞI.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Özellik ya da özellik veya öğe bulunamadı, boş bir değişken değeri.
+Özellik veya öğe bulunamazsa, özelliğin veya boş bir varyantın değeri.
 
-##  <a name="getelementtext"></a>  CDHtmlDialog::GetElementText
+##  <a name="getelementtext"></a>CDHtmlDialog:: GetElementText
 
-Alır `innerText` özelliği tarafından tanımlanan HTML öğesi *szElementId*.
+*SzElementId*tarafından tanımlanan html öğesinin özelliğinialır.`innerText`
 
 ```
 BSTR GetElementText(LPCTSTR szElementId);
@@ -858,15 +858,15 @@ BSTR GetElementText(LPCTSTR szElementId);
 ### <a name="parameters"></a>Parametreler
 
 *szElementId*<br/>
-HTML öğesi kimliği.
+Bir HTML öğesinin KIMLIĞI.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`innerText` Özelliği tarafından tanımlanan HTML öğesi *szElementId* veya özellik veya öğe bulunamadı, NULL.
+Property veya element bulunamazsa *szElementId* tarafından tanımlanan html öğesinin özelliğiveyanull.`innerText`
 
-##  <a name="getevent"></a>  CDHtmlDialog::GetEvent
+##  <a name="getevent"></a>CDHtmlDialog:: GetEvent
 
-Döndürür `IHTMLEventObj` için geçerli olay nesnesine işaretçi.
+Geçerli olay nesnesine olan işaretçiyidöndürür.`IHTMLEventObj`
 
 ```
 HRESULT GetEvent(IHTMLEventObj** ppEventObj);
@@ -875,19 +875,19 @@ HRESULT GetEvent(IHTMLEventObj** ppEventObj);
 ### <a name="parameters"></a>Parametreler
 
 *ppEventObj*<br/>
-Adresi ile doldurulan bir işaretçi `IHTMLEventObj` arabirim işaretçisi.
+`IHTMLEventObj` Arabirim işaretçiyle doldurulacak işaretçinin adresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT değerini.
+Standart bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev yalnızca DHTML olay işleyicisi çağrılmalıdır.
+Bu işlev yalnızca bir DHTML olay işleyicisi içinden çağrılmalıdır.
 
-##  <a name="getexternal"></a>  CDHtmlDialog::GetExternal
+##  <a name="getexternal"></a>CDHtmlDialog:: GetExternal
 
-Ana bilgisayarın alır `IDispatch` arabirimi.
+Konağın `IDispatch` arabirimini alır.
 
 ```
 STDMETHOD(GetExternal)(IDispatch** ppDispatch);
@@ -896,19 +896,19 @@ STDMETHOD(GetExternal)(IDispatch** ppDispatch);
 ### <a name="parameters"></a>Parametreler
 
 *ppDispatch*<br/>
-Bkz: *ppDispatch* içinde [IDocHostUIHandler::GetExternal](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753256\(v=vs.85\)) Windows SDK.
+Windows SDK [ıdochostuihandler:: GetExternal](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753256\(v=vs.85\)) Içindeki *ppdispatch* öğesine bakın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa S_OK döndürür başarı veya E_NOTIMPL başarısız.
+Başarılı veya E_NOTIMPL hatada S_OK döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi CDHtmlDialog'ın uygulamasıdır [IDocHostUIHandler::GetExternal](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753256\(v=vs.85\))Windows SDK içinde açıklandığı gibi.
+Bu üye işlevi, Windows SDK bölümünde açıklandığı gibi, CDHtmlDialog 'ın [ıdochostuihandler:: GetExternal](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753256\(v=vs.85\))uygulamasıdır.
 
-##  <a name="gethostinfo"></a>  CDHtmlDialog::GetHostInfo
+##  <a name="gethostinfo"></a>CDHtmlDialog:: GetHostInfo
 
-Ana bilgisayarın kullanıcı Arabirimi özellikleri alır.
+Konağın Kullanıcı arabirimi yeteneklerini alır.
 
 ```
 STDMETHOD(GetHostInfo)(DOCHOSTUIINFO* pInfo);
@@ -917,19 +917,19 @@ STDMETHOD(GetHostInfo)(DOCHOSTUIINFO* pInfo);
 ### <a name="parameters"></a>Parametreler
 
 *pInfo*<br/>
-Bkz: *pInfo* içinde [IDocHostUIHandler::GetHostInfo](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753257\(v=vs.85\)) Windows SDK.
+Windows SDK, [ıdochostuihandler:: GetHostInfo](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753257\(v=vs.85\)) Içindeki *pInfo* bölümüne bakın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa S_OK döndürür.
+S_OK döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi CDHtmlDialog'ın uygulamasıdır [IDocHostUIHandler::GetHostInfo](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753257\(v=vs.85\))Windows SDK içinde açıklandığı gibi.
+Bu üye işlevi, Windows SDK bölümünde açıklandığı gibi, CDHtmlDialog 'ın [ıdochostuihandler:: GetHostInfo](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753257\(v=vs.85\))uygulamasıdır.
 
-##  <a name="getoptionkeypath"></a>  CDHtmlDialog::GetOptionKeyPath
+##  <a name="getoptionkeypath"></a>CDHtmlDialog:: GetOptionKeyPath
 
-Kullanıcı tercihleri depolandığı kayıt defteri anahtarı alır.
+Kullanıcı tercihlerinin depolanacağı kayıt defteri anahtarını alır.
 
 ```
 STDMETHOD(GetOptionKeyPath)(
@@ -940,22 +940,22 @@ STDMETHOD(GetOptionKeyPath)(
 ### <a name="parameters"></a>Parametreler
 
 *pchKey*<br/>
-Bkz: *pchKey* içinde [IDocHostUIHandler::GetOptionKeyPath](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753258\(v=vs.85\)) Windows SDK.
+Windows SDK [ıdochostuihandler:: GetOptionKeyPath](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753258\(v=vs.85\)) Içindeki *pchkey* öğesine bakın.
 
-*dw*<br/>
-Bkz: *dw* içinde `IDocHostUIHandler::GetOptionKeyPath` Windows SDK içinde.
+*DW*<br/>
+Windows SDK içinde DW `IDocHostUIHandler::GetOptionKeyPath` 'de bakın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Returns E_NOTIMPL.
+E_NOTIMPL döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi CDHtmlDialog'ın uygulamasıdır [IDocHostUIHandler::GetOptionKeyPath](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753258\(v=vs.85\))Windows SDK içinde açıklandığı gibi.
+Bu üye işlevi, Windows SDK bölümünde açıklandığı gibi, CDHtmlDialog 'ın [ıdochostuihandler:: GetOptionKeyPath](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753258\(v=vs.85\))'in uygulamasıdır.
 
-##  <a name="hideui"></a>  CDHtmlDialog::HideUI
+##  <a name="hideui"></a>CDHtmlDialog:: HideUI
 
-Ana bilgisayarın kullanıcı arabirimini gizler.
+Konağın Kullanıcı arabirimini gizler.
 
 ```
 STDMETHOD(HideUI)(void);
@@ -963,15 +963,15 @@ STDMETHOD(HideUI)(void);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Returns E_NOTIMPL.
+E_NOTIMPL döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi CDHtmlDialog'ın uygulamasıdır [IDocHostUIHandler::HideUI](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753259\(v=vs.85\))Windows SDK içinde açıklandığı gibi.
+Bu üye işlevi, Windows SDK bölümünde açıklandığı gibi, CDHtmlDialog 'ın [ıdochostuihandler:: HideUI](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753259\(v=vs.85\))uygulamasıdır.
 
-##  <a name="isexternaldispatchsafe"></a>  CDHtmlDialog::IsExternalDispatchSafe
+##  <a name="isexternaldispatchsafe"></a>CDHtmlDialog:: ısexternaldispatchsafe
 
-Belirtir olup olmadığını konağın `IDispatch` arabirimidir komut dosyası için güvenli.
+Ana bilgisayarın `IDispatch` arabiriminin komut dosyası oluşturma için güvenli olup olmadığını gösterir.
 
 ```
 virtual BOOL IsExternalDispatchSafe();
@@ -981,9 +981,9 @@ virtual BOOL IsExternalDispatchSafe();
 
 FALSE döndürür.
 
-##  <a name="loadfromresource"></a>  CDHtmlDialog::LoadFromResource
+##  <a name="loadfromresource"></a>CDHtmlDialog:: LoadFromResource
 
-WebBrowser denetimine DHTML iletişim kutusunda belirtilen kaynak yükler.
+Belirtilen kaynağı DHTML iletişim kutusunda WebBrowser denetimine yükler.
 
 ```
 BOOL LoadFromResource(LPCTSTR lpszResource);
@@ -993,18 +993,18 @@ BOOL LoadFromResource(UINT nRes);
 ### <a name="parameters"></a>Parametreler
 
 *lpszResource*<br/>
-Yüklemek için kaynak adını içeren bir dize işaretçisi.
+Yüklenecek kaynağın adını içeren bir dize işaretçisi.
 
 *nRes*<br/>
-Yüklemek için kaynak kimliği.
+Yüklenecek kaynağın KIMLIĞI.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa TRUE; Aksi durumda FALSE.
+Başarılı olursa doğru; Aksi halde yanlış.
 
-##  <a name="m_busehtmltitle"></a>  CDHtmlDialog::m_bUseHtmlTitle
+##  <a name="m_busehtmltitle"></a>CDHtmlDialog:: m_bUseHtmlTitle
 
-HTML belgenin başlığını iletişim başlığı kullanılıp kullanılmayacağını belirtir.
+HTML belgesinin başlığının iletişim kutusu başlığı olarak kullanılıp kullanılmayacağını gösterir.
 
 ```
 BOOL m_bUseHtmlTitle;
@@ -1012,11 +1012,11 @@ BOOL m_bUseHtmlTitle;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsa **m**_ **bUseHtmlTitle** doğru ise, iletişim başlığı HTML belgesinin başlığı eşit olarak ayarlanır; Aksi takdirde, iletişim kutusu kaynağı yazısında kullanılır.
+**E**_ **busehtmltitle** değeri true ise, iletişim kutusu başlığı html belgesinin başlığına eşit olarak ayarlanır; Aksi takdirde, iletişim kutusu kaynağındaki başlık kullanılır.
 
-##  <a name="m_nhtmlresid"></a>  CDHtmlDialog::m_nHtmlResID
+##  <a name="m_nhtmlresid"></a>CDHtmlDialog:: m_nHtmlResID
 
-Görüntülenecek kaynak kimliği, HTML kaynak.
+Görüntülenecek HTML kaynağının kaynak KIMLIĞI.
 
 ```
 UINT m_nHtmlResID;
@@ -1026,23 +1026,23 @@ UINT m_nHtmlResID;
 
 [!code-cpp[NVC_MFCHtmlHttp#5](../../mfc/reference/codesnippet/cpp/cdhtmldialog-class_5.cpp)]
 
-##  <a name="m_pbrowserapp"></a>  CDHtmlDialog::m_pBrowserApp
+##  <a name="m_pbrowserapp"></a>CDHtmlDialog:: m_pBrowserApp
 
-Bir Web tarayıcı uygulaması için bir işaretçi.
+Web tarayıcı uygulaması için bir işaretçi.
 
 ```
 CComPtr <IWebBrowser2> m_pBrowserApp;
 ```
 
-##  <a name="m_sphtmldoc"></a>  CDHtmlDialog::m_spHtmlDoc
+##  <a name="m_sphtmldoc"></a>CDHtmlDialog:: m_spHtmlDoc
 
-Bir HTML belge işaretçisi.
+HTML belgesi işaretçisi.
 
 ```
 CComPtr<IHTMLDocument2> m_spHtmlDoc;
 ```
 
-##  <a name="m_strcurrenturl"></a>  CDHtmlDialog::m_strCurrentUrl
+##  <a name="m_strcurrenturl"></a>CDHtmlDialog:: m_strCurrentUrl
 
 Geçerli URL.
 
@@ -1050,9 +1050,9 @@ Geçerli URL.
 CString m_strCurrentUrl;
 ```
 
-##  <a name="m_szhtmlresid"></a>  CDHtmlDialog::m_szHtmlResID
+##  <a name="m_szhtmlresid"></a>CDHtmlDialog:: m_szHtmlResID
 
-HTML kaynak kimliği dize sürümü
+HTML kaynak KIMLIĞININ dize sürümü.
 
 ```
 LPTSTR m_szHtmlResID;
@@ -1062,9 +1062,9 @@ LPTSTR m_szHtmlResID;
 
 [!code-cpp[NVC_MFCHtmlHttp#6](../../mfc/reference/codesnippet/cpp/cdhtmldialog-class_6.cpp)]
 
-##  <a name="navigate"></a>  CDHtmlDialog::Navigate
+##  <a name="navigate"></a>CDHtmlDialog:: gezinmek
 
-Tarafından belirtilen URL'ye göre tanımlanan bir kaynağa gider *lpszURL*.
+*LpszURL*tarafından belirtilen URL tarafından tanımlanan kaynağa gider.
 
 ```
 void Navigate(
@@ -1079,26 +1079,26 @@ void Navigate(
 ### <a name="parameters"></a>Parametreler
 
 *lpszURL*<br/>
-Hedeflenecek URL'sini içeren bir dize işaretçisi.
+Hedeflenecek URL 'YI içeren bir dize işaretçisi.
 
-*CertOpenStore*<br/>
-Kaynak geçmişi listeye eklenip eklenmeyeceğini, okuma önbelleğe veya önbellekten yazma ve yeni bir pencerede kaynak görüntülenip görüntülenmeyeceğini belirten bir değişken bayraklar. Değişkeni tarafından tanımlanan değerlerin bir birleşimi olabilir [BrowserNavConstants](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768360\(v=vs.85\)) sabit listesi.
+*dwFlags*<br/>
+Kaynağın geçmiş listesine eklenip eklenmeyeceğini, önbelleğe okunup okunmayacağını veya önbellekten yazılacağını ve kaynağın yeni bir pencerede görüntülenip görüntülenmeyeceğini belirten bir değişkenin bayrakları. Değişken, [Browsernavsabitleri](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768360\(v=vs.85\)) numaralandırması tarafından tanımlanan değerlerin bir birleşimi olabilir.
 
 *lpszTargetFrameName*<br/>
-Kaynak görüntülenecek çerçevede adını içeren bir dize işaretçisi.
+Kaynağın görüntüleneceği çerçevenin adını içeren bir dize işaretçisi.
 
 *lpszHeaders*<br/>
-Sunucuya gönderilecek HTTP üst bilgilerini belirten bir değer için bir işaretçi. Bu üst bilgileri için varsayılan Internet Explorer üstbilgileri eklenir. Üst bilgileri gibi bilgileri, sunucu, sunucu veya bir durum kodu geçirilen verinin türü için gereken eylemi olarak belirtebilirsiniz. URL bir HTTP URL'si değilse bu parametre yoksayılır.
+Sunucuya göndermek için HTTP üstbilgilerini belirten bir değere yönelik işaretçi. Bu üstbilgiler varsayılan Internet Explorer üst bilgilerine eklenir. Üst bilgiler, sunucuda gereken eylem, sunucuya geçirilen verilerin türü veya bir durum kodu gibi bilgileri belirtebilir. URL bir HTTP URL 'SI değilse bu parametre yoksayılır.
 
 *lpvPostData*<br/>
-Veri ile HTTP POST işlemi göndermek için bir işaretçi. Örneğin, POST işlemi, bir HTML formuna tarafından toplanan verileri göndermek için kullanılır. Bu parametre, herhangi bir gönderme verisi belirtmezse `Navigate` bir HTTP GET işlemi verir. URL bir HTTP URL'si değilse bu parametre yoksayılır.
+HTTP POST hareketiyle gönderilecek verilerin bir işaretçisi. Örneğin, POST işlemi bir HTML formu tarafından toplanan verileri göndermek için kullanılır. Bu parametre hiçbir gönderi verisi belirtmezse, `Navigate` bir http get işlemi yayınlar. URL bir HTTP URL 'SI değilse bu parametre yoksayılır.
 
 *dwPostDataLen*<br/>
-HTTP POST işlemi ile gönderilecek veri. Örneğin, POST işlemi, bir HTML formuna tarafından toplanan verileri göndermek için kullanılır. Bu parametre, herhangi bir gönderme verisi belirtmezse `Navigate` bir HTTP GET işlemi verir. URL bir HTTP URL'si değilse bu parametre yoksayılır.
+HTTP POST hareketiyle gönderilecek veriler. Örneğin, POST işlemi bir HTML formu tarafından toplanan verileri göndermek için kullanılır. Bu parametre hiçbir gönderi verisi belirtmezse, `Navigate` bir http get işlemi yayınlar. URL bir HTTP URL 'SI değilse bu parametre yoksayılır.
 
-##  <a name="onbeforenavigate"></a>  CDHtmlDialog::OnBeforeNavigate
+##  <a name="onbeforenavigate"></a>CDHtmlDialog:: OnBeforeNavigate
 
-Bir olay bir gezinti gerçekleşmeden önce ateşlenmesine neden için framework tarafından çağırılır.
+Bir gezinti gerçekleşmeden önce bir olayın tetiklenmesine neden olmak için Framework tarafından çağırılır.
 
 ```
 virtual void OnBeforeNavigate(
@@ -1109,14 +1109,14 @@ virtual void OnBeforeNavigate(
 ### <a name="parameters"></a>Parametreler
 
 *pDisp*<br/>
-Bir işaretçi bir `IDispatch` nesne.
+Bir `IDispatch` nesne işaretçisi.
 
 *szUrl*<br/>
-Gidilecek URL'yi içeren bir dize işaretçisi.
+Gidilecek URL 'YI içeren bir dize işaretçisi.
 
-##  <a name="ondocumentcomplete"></a>  CDHtmlDialog::OnDocumentComplete
+##  <a name="ondocumentcomplete"></a>CDHtmlDialog:: Ondocumenttamamlanmıştır
 
-Bir belge READYSTATE_COMPLETE durumu elde ettiği zaman uygulamaya bildirmek için framework tarafından çağırılır.
+Bir belge READYSTATE_COMPLETE durumuna geldiğinde bir uygulamaya bildirim almak için Framework tarafından çağırılır.
 
 ```
 virtual void OnDocumentComplete(
@@ -1127,14 +1127,14 @@ virtual void OnDocumentComplete(
 ### <a name="parameters"></a>Parametreler
 
 *pDisp*<br/>
-Bir işaretçi bir `IDispatch` nesne.
+Bir `IDispatch` nesne işaretçisi.
 
 *szUrl*<br/>
-İçin çıkıldığında URL'sini içeren bir dize işaretçisi.
+Gezindiği URL 'YI içeren bir dize işaretçisi.
 
-##  <a name="ondocwindowactivate"></a>  CDHtmlDialog::OnDocWindowActivate
+##  <a name="ondocwindowactivate"></a>CDHtmlDialog:: OnDocWindowActivate
 
-Belge penceresini etkinleştirmek veya framework tarafından çağırılır.
+Belge penceresi etkinleştirildiğinde veya devre dışı bırakıldığında Framework tarafından çağırılır.
 
 ```
 STDMETHOD(OnDocWindowActivate)(BOOL fActivate);
@@ -1143,19 +1143,19 @@ STDMETHOD(OnDocWindowActivate)(BOOL fActivate);
 ### <a name="parameters"></a>Parametreler
 
 *fActivate*<br/>
-Bkz: *fActivate* içinde [IDocHostUIHandler::OnDocWindowActivate](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753261\(v=vs.85\)) Windows SDK.
+Windows SDK, [ıdochostuihandler:: OnDocWindowActivate](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753261\(v=vs.85\)) Içindeki *factivate* öğesine bakın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Returns E_NOTIMPL.
+E_NOTIMPL döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi CDHtmlDialog'ın uygulamasıdır [IDocHostUIHandler::OnDocWindowActivate](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753261\(v=vs.85\))Windows SDK içinde açıklandığı gibi.
+Bu üye işlevi, Windows SDK bölümünde açıklandığı gibi, CDHtmlDialog 'ın [ıdochostuihandler:: OnDocWindowActivate](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753261\(v=vs.85\))uygulamasıdır.
 
-##  <a name="onframewindowactivate"></a>  CDHtmlDialog::OnFrameWindowActivate
+##  <a name="onframewindowactivate"></a>CDHtmlDialog:: OnFrameWindowActivate
 
-Çerçeve penceresini etkinleştirmek veya framework tarafından çağırılır.
+Çerçeve penceresi etkinleştirildiğinde veya devre dışı bırakıldığında Framework tarafından çağırılır.
 
 ```
 STDMETHOD(OnFrameWindowActivate)(BOOL fActivate);
@@ -1164,19 +1164,19 @@ STDMETHOD(OnFrameWindowActivate)(BOOL fActivate);
 ### <a name="parameters"></a>Parametreler
 
 *fActivate*<br/>
-Bkz: *fActivate* içinde [IDocHostUIHandler::OnFrameWindowActivate](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753262\(v=vs.85\)) Windows SDK.
+Windows SDK, [ıdochostuihandler:: OnFrameWindowActivate](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753262\(v=vs.85\)) Içindeki *factivate* bölümüne bakın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Returns E_NOTIMPL.
+E_NOTIMPL döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi CDHtmlDialog'ın uygulamasıdır [IDocHostUIHandler::OnFrameWindowActivate](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753262\(v=vs.85\))Windows SDK içinde açıklandığı gibi.
+Bu üye işlevi, Windows SDK bölümünde açıklandığı gibi, CDHtmlDialog 'ın [ıdochostuihandler:: OnFrameWindowActivate](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753262\(v=vs.85\))uygulamasıdır.
 
-##  <a name="oninitdialog"></a>  CDHtmlDialog::OnInitDialog
+##  <a name="oninitdialog"></a>CDHtmlDialog:: OnInitDialog
 
-WM_INITDIALOG iletiye yanıt olarak çağrılır.
+WM_INITDIALOG iletisine yanıt olarak çağırılır.
 
 ```
 virtual BOOL OnInitDialog();
@@ -1184,19 +1184,19 @@ virtual BOOL OnInitDialog();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Varsayılan uygulama, TRUE döndürür.
+Varsayılan uygulama TRUE değerini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu ileti sırasında iletişim kutusuna gönderilir `Create`, `CreateIndirect`, veya `DoModal` hemen iletişim kutusu görüntülenmeden önce oluşan çağırır.
+Bu ileti `Create`, `CreateIndirect`, veya `DoModal` çağrıları sırasında iletişim kutusu görüntülenmeden hemen önce gerçekleşen iletişim kutusuna gönderilir.
 
-İletişim kutusu başlatılırken özel işlem yapmanız gerekiyorsa bu üye işlevini geçersiz kılar. Geçersiz kılınan sürümünde temel sınıfı çağırın `OnInitDialog` ancak dönüş değerini dikkate. Normalde, geçersiz kılınan üye işlev TRUE döndürür.
+İletişim kutusu başlatıldığında özel işlem gerçekleştirmeniz gerekiyorsa, bu üye işlevi geçersiz kılın. Geçersiz kılınan sürümde, önce temel sınıfı `OnInitDialog` çağırın, ancak dönüş değerini yok sayın. Normalde geçersiz kılınan üye işlevinizden doğru bir değer döndürülecektir.
 
-Windows çağrıları `OnInitDialog` işlev aracılığıyla tüm Microsoft Foundation Class Kitaplığı iletişim kutuları için ortak standart genel iletişim kutusu yordamını yerine, ileti eşlemesi, bu nedenle, bir ileti eşleme girişi için bu üye işlevi ihtiyacınız yoktur.
+Windows, `OnInitDialog` işlevi ileti haritanız yerine tüm Microsoft Foundation Class Kitaplığı iletişim kutularında ortak olan standart genel iletişim kutusu yordamı aracılığıyla çağırır. bu nedenle, bu üye işlevi için bir ileti eşleme girişi gerekmez.
 
-##  <a name="onnavigatecomplete"></a>  CDHtmlDialog::OnNavigateComplete
+##  <a name="onnavigatecomplete"></a>CDHtmlDialog:: Onnavigatetamamlanmıştır
 
-Belirtilen URL Gezinti tamamlandıktan sonra framework tarafından çağırılır.
+Belirtilen URL 'nin gezintisi tamamlandıktan sonra Framework tarafından çağırılır.
 
 ```
 virtual void OnNavigateComplete(
@@ -1207,14 +1207,14 @@ virtual void OnNavigateComplete(
 ### <a name="parameters"></a>Parametreler
 
 *pDisp*<br/>
-Bir işaretçi bir `IDispatch` nesne.
+Bir `IDispatch` nesne işaretçisi.
 
 *szUrl*<br/>
-İçin çıkıldığında URL'sini içeren bir dize işaretçisi.
+Gezindiği URL 'YI içeren bir dize işaretçisi.
 
-##  <a name="resizeborder"></a>  CDHtmlDialog::ResizeBorder
+##  <a name="resizeborder"></a>CDHtmlDialog:: ResizeBorder
 
-Kenarlık alanı yeniden boyutlandırmak için ihtiyaç duyduğu nesne uyarır.
+Nesnenin kenarlık alanını yeniden boyutlandırmak için ihtiyacı olan nesneyi uyarır.
 
 ```
 STDMETHOD(ResizeBorder)(
@@ -1226,21 +1226,21 @@ STDMETHOD(ResizeBorder)(
 ### <a name="parameters"></a>Parametreler
 
 *prcBorder*<br/>
-Bkz: *prcBorder* içinde [IDocHostUIHandler::ResizeBorder](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753263\(v=vs.85\)) Windows SDK.
+Windows SDK [ıdochostuihandler:: ResizeBorder](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753263\(v=vs.85\)) Içindeki *prcborder* bölümüne bakın.
 
 *pUIWindow*<br/>
-Bkz: *pUIWindow* içinde `IDocHostUIHandler::ResizeBorder` Windows SDK.
+Windows SDK içindeki *puıwindow* ' `IDocHostUIHandler::ResizeBorder` a bakın.
 
 *fFrameWindow*<br/>
-Bkz: *fFrameWindow* içinde `IDocHostUIHandler::ResizeBorder` Windows SDK.
+Windows SDK içindeki *fframewindow* `IDocHostUIHandler::ResizeBorder` öğesine bakın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Returns E_NOTIMPL.
+E_NOTIMPL döndürür.
 
-##  <a name="setcontrolproperty"></a>  CDHtmlDialog::SetControlProperty
+##  <a name="setcontrolproperty"></a>CDHtmlDialog:: SetControlProperty
 
-ActiveX denetimi özelliği, yeni değere ayarlar.
+ActiveX denetiminin özelliğini yeni bir değere ayarlar.
 
 ```
 void SetControlProperty(
@@ -1262,23 +1262,23 @@ void SetControlProperty(
 ### <a name="parameters"></a>Parametreler
 
 *szElementId*<br/>
-ActiveX denetimi HTML kimliği.
+ActiveX denetiminin HTML KIMLIĞI.
 
-*dispId*<br/>
-Ayarlanacak özellik gönderme kimliği.
+*Dı*<br/>
+Ayarlanacak özelliğin dağıtım KIMLIĞI.
 
 *pVar*<br/>
-Yeni özellik değeri içeren bir değişken işaretçisi.
+Yeni özellik değerini içeren bir DEĞIŞKEN işaretçisi.
 
 *pdispControl*<br/>
-İşaretçi bir ActiveX denetiminin `IDispatch` arabirimi.
+ActiveX denetiminin `IDispatch` arabirimine yönelik işaretçi.
 
 *szPropName*<br/>
 Ayarlanacak özelliğin adını içeren dize.
 
-##  <a name="setelementhtml"></a>  CDHtmlDialog::SetElementHtml
+##  <a name="setelementhtml"></a>CDHtmlDialog:: SetElementHtml
 
-Kümeleri `innerHTML` HTML öğesi bir özelliğidir.
+Bir HTML öğesinin özelliğini ayarlar. `innerHTML`
 
 ```
 void SetElementHtml(
@@ -1293,17 +1293,17 @@ void SetElementHtml(
 ### <a name="parameters"></a>Parametreler
 
 *szElementId*<br/>
-HTML öğesi kimliği.
+Bir HTML öğesinin KIMLIĞI.
 
 *bstrText*<br/>
-Öğesinin yeni değeri `innerHTML` özelliği.
+`innerHTML` Özelliğin yeni değeri.
 
 *punkElem*<br/>
-`IUnknown` Bir HTML öğesinin işaretçisi.
+HTML `IUnknown` öğesinin işaretçisi.
 
-##  <a name="setelementproperty"></a>  CDHtmlDialog::SetElementProperty
+##  <a name="setelementproperty"></a>CDHtmlDialog:: SetElementProperty
 
-HTML öğesi bir özelliğini ayarlar.
+Bir HTML öğesinin özelliğini ayarlar.
 
 ```
 void SetElementProperty(
@@ -1315,17 +1315,17 @@ void SetElementProperty(
 ### <a name="parameters"></a>Parametreler
 
 *szElementId*<br/>
-HTML öğesi kimliği.
+Bir HTML öğesinin KIMLIĞI.
 
-*dispId*<br/>
-Ayarlanacak özellik gönderme kimliği.
+*Dı*<br/>
+Ayarlanacak özelliğin dağıtım KIMLIĞI.
 
 *pVar*<br/>
 Özelliğin yeni değeri.
 
-##  <a name="setelementtext"></a>  CDHtmlDialog::SetElementText
+##  <a name="setelementtext"></a>CDHtmlDialog:: SetElementText
 
-Kümeleri `innerText` HTML öğesi bir özelliğidir.
+Bir HTML öğesinin özelliğini ayarlar. `innerText`
 
 ```
 void SetElementText(
@@ -1340,17 +1340,17 @@ void SetElementText(
 ### <a name="parameters"></a>Parametreler
 
 *szElementId*<br/>
-HTML öğesi kimliği.
+Bir HTML öğesinin KIMLIĞI.
 
 *bstrText*<br/>
-Öğesinin yeni değeri `innerText` özelliği.
+`innerText` Özelliğin yeni değeri.
 
 *punkElem*<br/>
-`IUnknown` Bir HTML öğesinin işaretçisi.
+HTML `IUnknown` öğesinin işaretçisi.
 
-##  <a name="setexternaldispatch"></a>  CDHtmlDialog::SetExternalDispatch
+##  <a name="setexternaldispatch"></a>CDHtmlDialog:: SetExternalDispatch
 
-Ana bilgisayarın ayarlar `IDispatch` arabirimi.
+Konağın `IDispatch` arabirimini ayarlar.
 
 ```
 void SetExternalDispatch(IDispatch* pdispExternal);
@@ -1359,11 +1359,11 @@ void SetExternalDispatch(IDispatch* pdispExternal);
 ### <a name="parameters"></a>Parametreler
 
 *pdispExternal*<br/>
-Yeni `IDispatch` arabirimi.
+Yeni `IDispatch` arabirim.
 
-##  <a name="sethostflags"></a>  CDHtmlDialog::SetHostFlags
+##  <a name="sethostflags"></a>CDHtmlDialog:: SetHostFlags
 
-Konak kullanıcı Arabirimi bayraklarını ayarlar.
+Konak Kullanıcı arabirimi bayraklarını ayarlar.
 
 ```
 void SetHostFlags(DWORD dwFlags);
@@ -1371,12 +1371,12 @@ void SetHostFlags(DWORD dwFlags);
 
 ### <a name="parameters"></a>Parametreler
 
-*CertOpenStore*<br/>
-Olası değerler için bkz. [DOCHOSTUIFLAG](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753277\(v=vs.85\)) Windows SDK.
+*dwFlags*<br/>
+Olası değerler için Windows SDK [Dochostuiflag](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753277\(v=vs.85\)) bölümüne bakın.
 
-##  <a name="showcontextmenu"></a>  CDHtmlDialog::ShowContextMenu
+##  <a name="showcontextmenu"></a>CDHtmlDialog:: ShowContextMenu
 
-Bir menü gösterilmek üzereyken çağırılır.
+Bağlam menüsü görüntülenmek üzereyken çağırılır.
 
 ```
 STDMETHOD(ShowContextMenu)(
@@ -1388,17 +1388,17 @@ STDMETHOD(ShowContextMenu)(
 
 ### <a name="parameters"></a>Parametreler
 
-*dwID*<br/>
-Bkz: *dwID* içinde [IDocHostUIHandler::ShowContextMenu](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753264\(v=vs.85\)) Windows SDK.
+*Dwıd*<br/>
+Windows SDK [ıdochostuihandler:: ShowContextMenu](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753264\(v=vs.85\)) Içindeki *dwıd* öğesine bakın.
 
-*ppt*<br/>
-Bkz: *ppt* içinde `IDocHostUIHandler::ShowContextMenu` Windows SDK içinde.
+*PPT*<br/>
+Windows SDK içindeki PPT `IDocHostUIHandler::ShowContextMenu` 'yi inceleyin.
 
 *pcmdtReserved*<br/>
-Bkz: *pcmdtReserved* içinde `IDocHostUIHandler::ShowContextMenu` Windows SDK.
+Windows SDK içindeki pcmdtReserved `IDocHostUIHandler::ShowContextMenu` bakın.
 
-*pdispReserved*<br/>
-Bkz: *pdispReserved* içinde `IDocHostUIHandler::ShowContextMenu` Windows SDK.
+*Pdiskorundu*<br/>
+Windows SDK içindeki *pdiskoruna* `IDocHostUIHandler::ShowContextMenu` bakın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1406,11 +1406,11 @@ S_FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi CDHtmlDialog'ın uygulamasıdır [IDocHostUIHandler::ShowContextMenu](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753264\(v=vs.85\))Windows SDK içinde açıklandığı gibi.
+Bu üye işlevi, Windows SDK bölümünde açıklandığı gibi, CDHtmlDialog 'ın [ıdochostuihandler:: ShowContextMenu](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753264\(v=vs.85\))uygulamasıdır.
 
-##  <a name="showui"></a>  CDHtmlDialog::ShowUI
+##  <a name="showui"></a>CDHtmlDialog:: ShowUI
 
-Ana bilgisayarın kullanıcı Arabirimi gösterilir.
+Konağın Kullanıcı arabirimini gösterir.
 
 ```
 STDMETHOD(ShowUI)(
@@ -1423,20 +1423,20 @@ STDMETHOD(ShowUI)(
 
 ### <a name="parameters"></a>Parametreler
 
-*dwID*<br/>
-Bkz: *dwID* içinde [IDocHostUIHandler::ShowUI](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753265\(v=vs.85\)) Windows SDK.
+*Dwıd*<br/>
+Windows SDK, [ıdochostuihandler:: ShowUI](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753265\(v=vs.85\)) öğesinde *dwıd* öğesine bakın.
 
 *pActiveObject*<br/>
-Bkz: *d pActiveObject* içinde `IDocHostUIHandler::ShowUI` Windows SDK.
+Windows SDK içindeki *d pactiveobject* `IDocHostUIHandler::ShowUI` öğesine bakın.
 
 *pCommandTarget*<br/>
-Bkz: *pCommandTarget* içinde `IDocHostUIHandler::ShowUI` Windows SDK.
+Windows SDK içindeki pCommandTarget `IDocHostUIHandler::ShowUI` bakın.
 
 *pFrame*<br/>
-Bkz: *pFrame* içinde `IDocHostUIHandler::ShowUI` Windows SDK.
+Windows SDK içindeki *pframe* `IDocHostUIHandler::ShowUI` bölümüne bakın.
 
 *pDoc*<br/>
-Bkz: *pDoc* içinde `IDocHostUIHandler::ShowUI` Windows SDK.
+Windows SDK içindeki *pDoc* `IDocHostUIHandler::ShowUI` bölümüne bakın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1444,11 +1444,11 @@ S_FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi CDHtmlDialog'ın uygulamasıdır [IDocHostUIHandler::ShowUI](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753265\(v=vs.85\))Windows SDK içinde açıklandığı gibi.
+Bu üye işlevi, Windows SDK bölümünde açıklandığı gibi, CDHtmlDialog 'ın [ıdochostuihandler:: ShowUI](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753265\(v=vs.85\))uygulamasıdır.
 
-##  <a name="translateaccelerator"></a>  CDHtmlDialog::TranslateAccelerator
+##  <a name="translateaccelerator"></a>CDHtmlDialog:: TranslateAccelerator
 
-Menü kısayol tuşu iletilerini işlemek için çağrılır.
+Menü Hızlandırıcısı anahtar iletilerini işlemek için çağırılır.
 
 ```
 STDMETHOD(TranslateAccelerator)(
@@ -1460,13 +1460,13 @@ STDMETHOD(TranslateAccelerator)(
 ### <a name="parameters"></a>Parametreler
 
 *lpMsg*<br/>
-Bkz: *lpMsg* içinde [IDocHostUIHandler::TranslateAccelerator](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753266\(v=vs.85\)) Windows SDK.
+Windows SDK için bkz. [ıdochostuihandler:: TranslateAccelerator](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753266\(v=vs.85\)) öğesinde *lpMsg* .
 
 *pguidCmdGroup*<br/>
-Bkz: *pguidCmdGroup* içinde `IDocHostUIHandler::TranslateAccelerator` Windows SDK.
+Windows SDK içindeki *pguidCmdGroup* `IDocHostUIHandler::TranslateAccelerator` öğesine bakın.
 
 *nCmdID*<br/>
-Bkz: *nCmdID* içinde `IDocHostUIHandler::TranslateAccelerator` Windows SDK.
+Windows SDK *nCmdID* `IDocHostUIHandler::TranslateAccelerator` bölümüne bakın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1474,11 +1474,11 @@ S_FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi CDHtmlDialog'ın uygulamasıdır [IDocHostUIHandler::TranslateAccelerator](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753266\(v=vs.85\))Windows SDK içinde açıklandığı gibi.
+Bu üye işlevi, Windows SDK bölümünde açıklandığı gibi, CDHtmlDialog 'ın [ıdochostuihandler:: TranslateAccelerator](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753266\(v=vs.85\))' in uygulamasıdır.
 
-##  <a name="translateurl"></a>  CDHtmlDialog::TranslateUrl
+##  <a name="translateurl"></a>CDHtmlDialog:: TranslateUrl
 
-Yüklenecek URL'sini değiştirmek için çağrılır.
+Yüklenecek URL 'YI değiştirmek için çağırılır.
 
 ```
 STDMETHOD(TranslateUrl)(
@@ -1490,13 +1490,13 @@ STDMETHOD(TranslateUrl)(
 ### <a name="parameters"></a>Parametreler
 
 *dwTranslate*<br/>
-Bkz: *dwTranslate* içinde [IDocHostUIHandler::TranslateUrl](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753267\(v=vs.85\)) Windows SDK.
+Windows SDK [ıdochostuihandler:: TranslateUrl](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753267\(v=vs.85\)) Içinde *dwtranslate* öğesine bakın.
 
 *pchURLIn*<br/>
-Bkz: *pchURLIn* içinde `IDocHostUIHandler::TranslateUrl` Windows SDK.
+Windows SDK 'de *pchurlin* `IDocHostUIHandler::TranslateUrl` bölümüne bakın.
 
 *ppchURLOut*<br/>
-Bkz: *ppchURLOut* içinde `IDocHostUIHandler::TranslateUrl` Windows SDK.
+Windows SDK içindeki *ppchurlout* `IDocHostUIHandler::TranslateUrl` bölümüne bakın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1504,11 +1504,11 @@ S_FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi CDHtmlDialog'ın uygulamasıdır [IDocHostUIHandler::TranslateUrl](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753267\(v=vs.85\))Windows SDK içinde açıklandığı gibi.
+Bu üye işlevi, Windows SDK bölümünde açıklandığı gibi, CDHtmlDialog 'ın [ıdochostuihandler:: TranslateUrl](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753267\(v=vs.85\))'nin uygulamasıdır.
 
-##  <a name="updateui"></a>  CDHtmlDialog::UpdateUI
+##  <a name="updateui"></a>CDHtmlDialog:: UpdateUI
 
-Komut durumu değişti ana bilgisayara bildirmek için çağırılır.
+Ana bilgisayara komut durumunun değiştiğini bildirmek için çağırılır.
 
 ```
 STDMETHOD(UpdateUI)(void);
@@ -1516,11 +1516,11 @@ STDMETHOD(UpdateUI)(void);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Returns E_NOTIMPL.
+E_NOTIMPL döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi CDHtmlDialog'ın uygulamasıdır [IDocHostUIHandler::UpdateUI](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753268\(v=vs.85\))Windows SDK içinde açıklandığı gibi.
+Bu üye işlevi, Windows SDK bölümünde açıklandığı gibi, CDHtmlDialog 'ın [ıdochostuihandler:: UpdateUI](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753268\(v=vs.85\))uygulamasıdır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

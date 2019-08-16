@@ -1,5 +1,5 @@
 ---
-title: _Interlockeddecrement iç işlevleri
+title: _InterlockedDecrement İç İşlevleri
 ms.date: 12/17/2018
 f1_keywords:
 - _InterlockedDecrement16_rel_cpp
@@ -44,18 +44,18 @@ helpviewer_keywords:
 - _InterlockedDecrement64_nf intrinsic
 - InterlockedDecrement_rel intrinsic
 ms.assetid: 5268fce3-86b5-4b2b-b96c-2e531a3fb9b5
-ms.openlocfilehash: 525c40f4260d59f370f0580d2cb7d9e8f184ee4c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 43bf7a9b788c176490ec3fe08e370708eaf000ce
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62396762"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69509412"
 ---
-# <a name="interlockeddecrement-intrinsic-functions"></a>_Interlockeddecrement iç işlevleri
+# <a name="_interlockeddecrement-intrinsic-functions"></a>_InterlockedDecrement İç İşlevleri
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Win32 Windows SDK'sı için derleyici iç desteği sağlayan [InterlockedDecrement](/windows/desktop/api/winnt/nf-winnt-interlockeddecrement) işlevi.
+Win32 Windows SDK [ınterlockedazaltma](/windows/win32/api/winnt/nf-winnt-interlockeddecrement) işlevi için derleyicinin iç desteğini sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -101,32 +101,32 @@ __int64 _InterlockedDecrement64_nf(
 #### <a name="parameters"></a>Parametreler
 
 *lpAddend*<br/>
-[out içinde] Azaltılacak değişken işaretçisi.
+[in, out] Azaltılangirecek değişkene yönelik işaretçi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Dönüş değeri elde edilen indirildiği değerdir.
+Dönüş değeri, ortaya çıkan, azaltma değeridir.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İç|Mimari|
+|Alanlarla|Mimari|
 |---------------|------------------|
 |`_InterlockedDecrement`, `_InterlockedDecrement16`, `_InterlockedDecrement64`|x86, ARM, x64|
 |`_InterlockedDecrement_acq`, `_InterlockedDecrement_rel`, `_InterlockedDecrement_nf`, `_InterlockedDecrement16_acq`, `_InterlockedDecrement16_rel`, `_InterlockedDecrement16_nf`, `_InterlockedDecrement64_acq`, `_InterlockedDecrement64_rel`, `_InterlockedDecrement64_nf`,|ARM|
 
-**Üst bilgi dosyası** \<intrin.h >
+**Üst bilgi dosyası** \<Intrin. h >
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bazı farklılıklar vardır `_InterlockedDecrement` , bunlar içeren veri türleri ve olup işlemciye özgü alma göre farklılık veya release semantikleri kullanılır.
+Üzerinde bulunan `_InterlockedDecrement` veri türlerine göre farklılık gösteren çeşitli çeşitlemeler vardır ve işlemciye özgü alma veya yayınlama semantiği kullanılıp kullanılmayacağını belirtir.
 
-Sırada `_InterlockedDecrement` işlevi 32-bit tamsayı değerleri üzerinde çalışır `_InterlockedDecrement16` 16 bit tam sayı değerler üzerinde çalışır ve `_InterlockedDecrement64` 64-bit tamsayı değerler üzerinde çalışır.
+İşlev 32 bitlik tamsayı değerlerinde çalışırken, `_InterlockedDecrement16` 16 bit tamsayı değerlerinde çalışır ve `_InterlockedDecrement64` 64 bit tamsayı değerlerinde çalışır. `_InterlockedDecrement`
 
-ARM platformlarında, yapı içleri ile kullanmak `_acq` ve `_rel` almak ve yayın semantiğini gibi kritik bir bölüm başında ve sonunda sonekleri. Yapı içleri ile bir `_nf` ("hiçbir sınır") soneki bellek önünde bir engel hareket değil.
+ARM platformlarında, önemli bir bölümün başındaki ve `_acq` sonundaki `_rel` gibi alma ve bırakma semantiklerine ihtiyacınız varsa, iç bilgileri ve son eklerini kullanın. `_nf` ("Sınır yok") sonekine sahip iç bilgiler bellek engeli olarak davranmaz.
 
-Değişkeni tarafından işaret edilen `lpAddend` parametresi bir 32-bit sınırında hizalanmış olmalıdır; aksi takdirde, bu işlev üzerinde çok işlemcili x86 başarısız sistemleri ve x86 olmayan sistemler. Daha fazla bilgi için [hizalama](../cpp/align-cpp.md).
+`lpAddend` Parametresi tarafından işaret edilen değişken 32 bitlik bir sınıra hizalanmalıdır; Aksi takdirde, bu işlev çok işlemcili x86 sistemlerinde ve x86 olmayan sistemlerde başarısız olur. Daha fazla bilgi için bkz. [ALIGN](../cpp/align-cpp.md).
 
-Bu yordamlar, yalnızca iç öğe olarak kullanılabilir.
+Bu yordamlar yalnızca iç bilgiler olarak kullanılabilir.
 
 ## <a name="example"></a>Örnek
 

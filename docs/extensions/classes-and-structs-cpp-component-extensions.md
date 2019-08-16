@@ -1,5 +1,5 @@
 ---
-title: başvuru sınıfı ve ref struct (C++/CLI ve C++/CX)
+title: başvuru sınıfı ve başvuru yapısı (C++/CLI ve C++/CX)
 ms.date: 05/30/2019
 ms.topic: reference
 f1_keywords:
@@ -13,16 +13,16 @@ helpviewer_keywords:
 - value struct keyword [C++]
 - ref struct keyword [C++]
 ms.assetid: 5c360764-b229-49c6-9357-66213afbc372
-ms.openlocfilehash: 7db1683ee153c34b3476c51eb22fb99eae4c6891
-ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
+ms.openlocfilehash: dd58f32d031068785cd6020549f9eea4b2182786
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66450370"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69509812"
 ---
-# <a name="ref-class-and-ref-struct--ccli-and-ccx"></a>başvuru sınıfı ve ref struct (C++/CLI ve C++/CX)
+# <a name="ref-class-and-ref-struct--ccli-and-ccx"></a>başvuru sınıfı ve başvuru yapısı (C++/CLI ve C++/CX)
 
-**Başvuru sınıfı** veya **ref struct** uzantıları bildirmek için bir sınıf veya yapı, *nesne yaşam süresi* otomatik olarak yönetilir. Nesnenin artık erişilebilir değil veya kapsam dışına gider, belleği serbest kalır.
+**Başvuru sınıfı** veya **başvuru yapısı** uzantıları, *nesne ömrü* otomatik olarak yönetilen bir sınıf veya yapı bildirir. Nesne artık erişilebilir olmadığında veya kapsam dışına geçtiğinde bellek serbest bırakılır.
 
 ## <a name="all-runtimes"></a>Tüm Çalışma Zamanları
 
@@ -41,39 +41,39 @@ class_accessvalue structnamemodifier :  inherit_accessbase_type {};
 ### <a name="parameters"></a>Parametreler
 
 *class_access*<br/>
-(İsteğe bağlı) Sınıfın veya yapının derleme dışından erişilebilirlik. Olası değerler **genel** ve **özel** (**özel** varsayılandır). İç içe geçmiş sınıflar veya yapılar sahip bir *class_access* tanımlayıcısı.
+Seçim Sınıf veya yapının derleme dışındaki erişilebilirliği. Olası değerler **genel** ve **özeldir** (**özel** varsayılandır). İç içe geçmiş sınıflar veya yapıların bir *class_access* belirleyicisi olamaz.
 
 *name*<br/>
-Sınıfın veya yapının adı.
+Sınıf veya yapının adı.
 
-*Değiştiricisi*<br/>
-(İsteğe bağlı) [soyut](abstract-cpp-component-extensions.md) ve [korumalı](sealed-cpp-component-extensions.md) geçerli değiştiricilerdir.
+*icisi*<br/>
+Seçim [abstract](abstract-cpp-component-extensions.md) ve [Sealed](sealed-cpp-component-extensions.md) geçerli değiştiriciler.
 
 *inherit_access*<br/>
-(İsteğe bağlı) Erişilebilirliğini *taban_türü*. Yalnızca izin verilen erişilebilirlik, **genel** (**genel** varsayılandır).
+Seçim *Base_type*'in erişilebilirliği. İzin verilen tek erişilebilirlik **geneldir** (**genel** varsayılandır).
 
-*taban_türü*<br/>
-(İsteğe bağlı) Bir taban türü. Ancak, bir değer türü temel tür olarak davranamaz.
+*base_type*<br/>
+Seçim Temel tür. Ancak, bir değer türü temel tür olarak çalışamaz.
 
-Daha fazla bilgi için bu parametre Windows çalışma zamanı ve ortak dil çalışma zamanı bölümleri dile özgü açıklamaları bakın.
+Daha fazla bilgi için, Windows Çalışma Zamanı ve ortak dil çalışma zamanı bölümlerinde bu parametrenin dile özgü açıklamalarına bakın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir nesnenin varsayılan üye erişilebilirliği ile bildirilen **başvuru sınıfı** veya **değer sınıfının** olduğu **özel**. Ve bir nesnenin varsayılan üye erişilebilirliği ile bildirilen **ref struct** veya **değeri yapı** olduğu **genel**.
+**Başvuru sınıfı** veya **değer sınıfıyla** belirtilen bir nesnenin varsayılan üyesi erişilebilirliği **özeldir**. Ve **ref struct** veya **Value struct** ile belirtilen bir nesnenin varsayılan üyesi erişilebilirliği **geneldir**.
 
-Bir başvuru türü başka bir başvuru türünden devralan, temel sınıfta sanal işlevler açıkça geçersiz kılınmalıdır (ile [geçersiz kılma](override-cpp-component-extensions.md)) veya gizli (ile [yeni (vtable'da yeni yuva)](new-new-slot-in-vtable-cpp-component-extensions.md)). Türetilmiş sınıf işlevleri de açık olarak işaretlenmelidir **sanal**.
+Bir başvuru türü başka bir başvuru türünden devralırsa, taban sınıftaki sanal işlevlerin açıkça geçersiz kılınabilmesi gerekir ( [geçersiz kılma](override-cpp-component-extensions.md)ile) veya gizli ( [Yeni (vtable 'da yeni yuva)](new-new-slot-in-vtable-cpp-component-extensions.md)). Türetilmiş sınıf işlevlerinin de açıkça **sanal**olarak işaretlenmesi gerekir.
 
-Derleme zamanında bir tür olup olmadığını algılamak için bir **başvuru sınıfı** veya **ref struct**, veya bir **değer sınıfının** veya **değeri yapı**, kullanın `__is_ref_class (type)`, `__is_value_class (type)`, veya `__is_simple_value_class (type)`. Daha fazla bilgi için [tür özellikleri için derleyici desteği](compiler-support-for-type-traits-cpp-component-extensions.md).
+Bir türün **başvuru sınıfı** veya **başvuru yapısı**, ya da bir **değer sınıfı** veya **değer yapısı**olup olmadığı derleme zamanında algılamak için, veya `__is_ref_class (type)` `__is_simple_value_class (type)`kullanın `__is_value_class (type)`. Daha fazla bilgi için bkz. [tür nitelikleri Için derleyici desteği](compiler-support-for-type-traits-cpp-component-extensions.md).
 
-Sınıflar ve yapı birimleri hakkında daha fazla bilgi için bkz.
+Sınıflar ve yapılar hakkında daha fazla bilgi için bkz.
 
-- [Örnekleme sınıflar ve yapılar](../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md)
+- [Sınıfları ve yapıları örnekleme](../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md)
 
 - [Referans Türleri için C++ Yığın Anlamları](../dotnet/cpp-stack-semantics-for-reference-types.md)
 
 - [Sınıflar, yapılar ve birleşimler](../cpp/classes-and-structs-cpp.md)
 
-- [Yok ediciler ve sonlandırıcılar, nasıl yapılır: Sınıfları ve yapıları tanımlama ve kullanma (C++/CLI)](../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers)
+- [Nasıl yapılır: Sınıfları ve yapıları tanımlama ve kullanma (C++/CLI)](../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers)
 
 - [Kullanıcı Tanımlı İşleçler (C++/CLI)](../dotnet/user-defined-operators-cpp-cli.md)
 
@@ -87,39 +87,39 @@ Sınıflar ve yapı birimleri hakkında daha fazla bilgi için bkz.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [başvuru sınıfları ve yapıları](../cppcx/ref-classes-and-structs-c-cx.md) ve [değer sınıfları ve yapıları](https://msdn.microsoft.com/library/windows/apps/hh699861.aspx).
+Bkz. [başvuru sınıfları ve yapıları](../cppcx/ref-classes-and-structs-c-cx.md) ve [değer sınıfları ve yapıları](../cppcx/value-classes-and-structs-c-cx.md).
 
 ### <a name="parameters"></a>Parametreler
 
-*taban_türü*<br/>
-(İsteğe bağlı) Bir taban türü. A **başvuru sınıfı** veya **ref struct** sıfır veya daha fazla arabirimi ve sıfır veya bir devralabilir **ref** türleri. A **değer sınıfının** veya **değeri yapı** yalnızca sıfır veya daha fazla ara birimden devralınabilir.
+*base_type*<br/>
+Seçim Temel tür. Bir **başvuru sınıfı** veya **başvuru yapısı** sıfır veya daha fazla arabirimden ve sıfır veya bir **başvuru** türünden kalıtımla alabilir. **Değer sınıfı** veya **değer yapısı** yalnızca sıfır veya daha fazla arabirimden devralınabilir.
 
-Kullanarak bir nesne bildirdiğinizde **başvuru sınıfı** veya **ref struct** anahtar sözcükler, nesne tarafından erişildiğinde bir nesne için bir tanıtıcı; diğer bir deyişle, bir nesneye başvuru sayaç işaretçi. Bildirilmiş bir değişken kapsam dışına çıktığında, derleyici, temel alınan nesnede otomatik olarak siler. Nesne bir arama parametresi olarak kullanılan veya bir değişkende depolanan nesnesi için bir tanıtıcı gerçekten aktarılan veya depolanan.
+**Başvuru sınıfını** veya **ref struct** anahtar sözcüklerini kullanarak bir nesnesi bildirdiğinizde, nesnesine nesnesine bir tanıtıcı erişilir; diğer bir deyişle, nesneye yönelik bir başvuru sayacı işaretçisi. Belirtilen değişken kapsam dışına geçtiğinde, derleyici temel nesneyi otomatik olarak siler. Nesne, çağrıda bir parametre olarak kullanıldığında veya bir değişkende depolanıyorsa, nesne tanıtıcısı aslında geçirilir veya depolanır.
 
-Kullanarak bir nesne bildirdiğinizde **değer sınıfının** veya **değeri yapı** anahtar sözcükler, bildirilen nesnenin nesne ömrü denetlenmiyor. Herhangi diğer standart C++ sınıf veya yapı gibi nesnedir.
+**Değer sınıfını** veya **Value struct** anahtar sözcüklerini kullanarak bir nesnesi bildirdiğinizde, belirtilen nesnenin nesne ömrü denetimli değildir. Nesnesi diğer standart C++ sınıf veya yapı gibi.
 
 ### <a name="requirements"></a>Gereksinimler
 
-Derleyici seçeneği: `/ZW`
+Derleyici seçeneği:`/ZW`
 
 ## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı
 
 ### <a name="remarks"></a>Açıklamalar
 
-Aşağıdaki tabloda gösterilen söz dizimi farklılıklarını **tüm çalışma zamanları** C + belirli bir bölüm +/ CLI.
+Aşağıdaki tabloda,/Clia 'ya C++özgü tüm çalışma **zamanları** bölümünde gösterilen sözdizimindeki farklılıklar listelenmiştir.
 
 ### <a name="parameters"></a>Parametreler
 
-*taban_türü*<br/>
-(İsteğe bağlı) Bir taban türü. A **başvuru sınıfı** veya **ref struct** arabirimleri ve sıfır veya bir başvuru türlerinde birden fazla yönetilen ya da sıfırdan devralabilir. A **değer sınıfının** veya **değeri yapı** yalnızca sıfır veya daha fazla yönetilen Ara birimden devralınabilir.
+*base_type*<br/>
+Seçim Temel tür. Bir **başvuru sınıfı** veya **başvuru yapısı** , sıfır veya daha fazla yönetilen arabirimden ve sıfır ya da bir başvuru türünden devralınabilir. **Değer sınıfı** veya **değer yapısı** yalnızca sıfır veya daha fazla yönetilen arabirimden devralınabilir.
 
-**Başvuru sınıfı** ve **ref struct** anahtar sözcükleri yığında ayrılacak sınıf veya yapıda olduğundan derleyici söyleyin. Nesne bir arama parametresi olarak kullanılan veya bir değişkende depolanan nesnesine bir başvuru gerçekten aktarılan veya depolanan.
+**Ref sınıfı** ve **ref struct** anahtar sözcükleri derleyiciye sınıf veya yapının yığına ayrılacağını söyler. Nesne, çağrıda bir parametre olarak kullanıldığında veya bir değişkende depolanıyorsa, nesne başvurusu aslında geçirilir veya depolanır.
 
-**Değer sınıfının** ve **değeri yapı** anahtar sözcükler derleyiciye ayrılmış sınıf veya yapı değerini işlevlerine geçirilen veya üyeleri depolanmış.
+**Değer sınıfı** ve **değer yapısı** anahtar sözcükleri derleyiciye ayrılan sınıf veya yapının değerinin işlevlere geçtiğini veya üyelerde depolandığını söyler.
 
 ### <a name="requirements"></a>Gereksinimler
 
-Derleyici seçeneği: `/clr`
+Derleyici seçeneği:`/clr`
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

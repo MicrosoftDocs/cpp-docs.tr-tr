@@ -8,40 +8,40 @@ helpviewer_keywords:
 - Clipboard, programming
 - transferring data
 ms.assetid: a71b2824-1f14-4914-8816-54578d73ad4e
-ms.openlocfilehash: 5814b2fdfc7fbcaca00037cc64dd71aa27d65cc3
-ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
+ms.openlocfilehash: d405a7bbe15d2658380e19c1c908e57f2e40a574
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66504621"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69508936"
 ---
 # <a name="clipboard"></a>Pano
 
-Bu makaleler ailesi Windows Pano desteği, MFC uygulamalarında uygulamak açıklanmaktadır. Windows panosu iki şekilde kullanılır:
+Bu makale ailesinde MFC uygulamalarında Windows panosuna yönelik desteğin nasıl uygulanacağı açıklanmaktadır. Windows Panosu iki şekilde kullanılır:
 
-- Kesme, kopyalama ve yapıştırma gibi standart düzenleme menü komutları uygulama.
+- Kes, Kopyala ve Yapıştır gibi standart düzenleme menü komutlarını uygulama.
 
-- Uygulama Tekdüzen veri aktarımı ile sürükle ve bırakma (OLE).
+- Sürükleme ve bırakma (OLE) ile Tekdüzen veri aktarımını uygulama.
 
-Pano bir kaynak ve hedef arasında veri aktarımı için standart Windows yöntemdir. Ayrıca OLE işlemlerinde çok kullanışlı olabilir. OLE gelişinden ile Windows iki Pano mekanizma vardır. Standart Windows panosu API'si hala kullanılabilir, ancak OLE veri aktarım mekanizması ile takıma. OLE Tekdüzen veri aktarımı (UDT), kesme, kopyalama ve yapıştırma panoyla destekler ve sürükleyin ve bırakın.
+Pano, verileri bir kaynak ve hedef arasında aktarmaya yönelik standart Windows yöntemidir. OLE işlemlerinde de çok yararlı olabilir. OLE 'nin KAG 'i ile Windows 'da iki Pano mekanizması vardır. Standart Windows Pano API 'SI yine de kullanılabilir, ancak OLE veri aktarım mekanizmasıyla takıma sunuldu. OLE Tekdüzen veri aktarımı (UDT) Pano ile kesme, kopyalama ve yapıştırmayı destekler ve sürükleyip bırakın.
 
-Pano, tanıtıcı veya sınıf kendi içermez tüm Windows oturumu tarafından paylaşılan bir sistemi hizmetidir. Pano sınıfın üye işlevleri aracılığıyla yönetmek [CWnd](../mfc/reference/cwnd-class.md).
+Pano, tüm Windows oturumu tarafından paylaşılan bir sistem hizmetidir, bu nedenle kendine ait bir tanıtıcıya veya sınıfına sahip değildir. Panoyu [CWnd](../mfc/reference/cwnd-class.md)sınıfının üye işlevleri aracılığıyla yönetirsiniz.
 
-## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz
+## <a name="what-do-you-want-to-know-more-about"></a>Hakkında daha fazla bilgi edinmek istiyorsunuz
 
 - [Her Pano mekanizmasının ne zaman kullanılacağı](../mfc/clipboard-when-to-use-each-clipboard-mechanism.md)
 
-- [Geleneksel Windows panosu API'si kullanma](../mfc/clipboard-using-the-windows-clipboard.md)
+- [Geleneksel Windows Pano API 'sini kullanma](../mfc/clipboard-using-the-windows-clipboard.md)
 
-- [OLE Pano mekanizmasını kullanma](../mfc/clipboard-using-the-ole-clipboard-mechanism.md)
+- [OLE panosu mekanizmasını kullanma](../mfc/clipboard-using-the-ole-clipboard-mechanism.md)
 
-- [Veri kopyalama ve yapıştırma](../mfc/clipboard-copying-and-pasting-data.md)
+- [Verileri kopyalama ve yapıştırma](../mfc/clipboard-copying-and-pasting-data.md)
 
 - [Diğer biçimleri ekleme](../mfc/clipboard-adding-other-formats.md)
 
-- [Windows panosu](/windows/desktop/dataxchg/clipboard)
+- [Windows Panosu](/windows/win32/dataxchg/clipboard)
 
-- [Sürükleme ve bırakma (OLE) uygulama](../mfc/drag-and-drop-ole.md)
+- [Sürükleme ve bırakma uygulama (OLE)](../mfc/drag-and-drop-ole.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

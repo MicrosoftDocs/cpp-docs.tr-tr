@@ -1,196 +1,196 @@
 ---
-title: ARM özel durum işleme
+title: ARM özel durum Işleme
 ms.date: 07/11/2018
 ms.assetid: fe0e615f-c033-4ad5-97f4-ff96af45b201
-ms.openlocfilehash: f4e56284ce8db18ec76b0143253ee1e25f3fd82c
-ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
+ms.openlocfilehash: a3d1a5f3becefc064c5bb38dc566892ae8da8530
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66450486"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69493374"
 ---
-# <a name="arm-exception-handling"></a>ARM özel durum işleme
+# <a name="arm-exception-handling"></a>ARM özel durum Işleme
 
-ARM üzerinde Windows Donanım tarafından oluşturulan zaman uyumsuz özel durumları ve zaman uyumlu yazılım tarafından oluşturulan özel durumlar için aynı yapılandırılmış özel durum işleme mekanizmasını kullanır. Dile özgü özel durum işleyicileri dil yardımcı işlevleri kullanarak Windows yapılandırılmış özel durum işleme üzerinde oluşturulur. Bu belgede, özel durum işleme Windows ARM ve Microsoft ARM derleyicisi ve MSVC derleyici tarafından oluşturulan kodu tarafından kullanılan dil Yardımcıları içinde açıklanmıştır.
+ARM 'de Windows, zaman uyumsuz donanım tarafından oluşturulan özel durumlar ve zaman uyumlu yazılım tarafından oluşturulan özel durumlar için aynı yapılandırılmış özel durum işleme mekanizmasını kullanır. Dile özgü özel durum işleyicileri dil Yardımcısı işlevleri kullanılarak Windows yapılandırılmış özel durum işlemenin üzerine kurulmuştur. Bu belge, ARM 'de Windows 'da özel durum işlemeyi ve Microsoft ARM Assembler ve MSVC derleyicisi tarafından oluşturulan kod tarafından kullanılan dil yardımcılarını açıklar.
 
-## <a name="arm-exception-handling"></a>ARM özel durum işleme
+## <a name="arm-exception-handling"></a>ARM özel durum Işleme
 
-ARM üzerinde Windows kullanan *geriye doğru izleme kodları* sırasında yığın geriye doğru izleme denetlemek için [yapılandırılmış özel durum işleme](/windows/desktop/debug/structured-exception-handling) (SEH). Geriye doğru izleme kodları şunlardır: yürütülebilir resmin sanal işlem bulunur bölümde depolanan bayt dizisi. Arayanın yığın çerçevesi için geriye doğru izleme hazırlanırken bir işlevin prolog etkilerini alınabilir, soyut bir yolla işlev prolog ve Epilog kodu işlemi açıklanmaktadır.
+ARM 'de Windows, [yapılandırılmış özel durum işleme](/windows/win32/debug/structured-exception-handling) (SEH) sırasında yığın geri sarımı denetlemek için *bırakma kodlarını* kullanır. Geriye doğru izleme kodları, yürütülebilir görüntünün. xdata bölümünde depolanan baytların bir dizisidir. İşlev işlem ve epıg kodu, bir soyut bir şekilde işlev işlemini anlatmaktadır, böylece bir işlevin prolog 'nin etkileri çağıranın yığın çerçevesine geri sarıya hazırlanmaya hazırlanmak üzere geri alınabilir.
 
-ARM EABI (katıştırılmış uygulama ikili arabirimi) kullanan bir özel durumu geriye doğru izleme modeli geriye doğru izleme kodları belirtir, ancak SEH içindeki zaman uyumsuz durumda işlemci ortasında prolog olduğu işlemelidir Windows, geriye doğru izleme için yeterli değil veya Kapanış işlev. Windows ARM EABI içinde birleşik işlev düzeyi geriye doğru izleme ve dile özgü kapsam geriye doğru izleme, geriye doğru izleme denetimi ayrıca ayırır. Bu nedenlerden dolayı Windows ARM hakkında daha fazla ayrıntı için geriye doğru izleme verileri ve yordamı belirtir.
+ARM EABI (katıştırılmış uygulama ikili arabirimi), geriye doğru izleme kodları kullanan bir özel durum izleme modeli belirtir, ancak Windows 'ta SEH geri sarma için yeterli değildir bir işlevin epıg. Windows ayrıca, bir sargı denetimini, ARM EABı 'da birleştirilmiş olan işlev düzeyinde geriye doğru ve dile özgü kapsam geri sarıya ayırır. Bu nedenlerden dolayı ARM 'de Windows, geriye doğru izleme verileri ve yordamı için daha fazla ayrıntı belirler.
 
 ### <a name="assumptions"></a>Varsayımlar
 
-ARM üzerinde Windows yürütülebilir görüntüler taşınabilir yürütülebilir (PE) biçimini kullanın. Daha fazla bilgi için [Microsoft PE ve COFF belirtimi](https://go.microsoft.com/fwlink/p/?linkid=84140). Özel durum bilgi işleme resminin .pdata ve .xdata bölümlerde depolanır.
+ARM 'de Windows için yürütülebilir görüntüler taşınabilir yürütülebilir (PE) biçimini kullanır. Daha fazla bilgi için bkz. [MICROSOFT PE ve COFF belirtimi](https://go.microsoft.com/fwlink/p/?linkid=84140). Özel durum işleme bilgileri görüntünün. pdata ve. xdata bölümlerinde depolanır.
 
-Özel durum işleme mekanizmasını, üzerinde ARM ABI Windows için aşağıdaki kod ile ilgili bazı varsayımlarda bulunur:
+Özel durum işleme mekanizması ARM 'de Windows için ABı izleyen kod hakkında bazı varsayımlar yapar:
 
-- Bir işlev gövdesinin içinde bir özel durum oluştuğunda, prolog ait işlemler geri alınır veya kapanış ait işlemler ileriye doğru bir şekilde gerçekleştirilir bir önemi yoktur. Her ikisi de benzer sonuçlar üretmelidir.
+- Bir işlevin gövdesinde bir özel durum oluştuğunda, bu, prolog işlemlerinin geri alınmadığına veya epıg işlemlerinin ileri bir şekilde gerçekleştirildiğine önemli değildir. Her ikisi de özdeş sonuçlar üretmelidir.
 
-- Öğesinin ve sonuçları yansıması eğilimindedir. Bu, geriye doğru izleme açıklamak için gereken meta verilerin boyutunu azaltmak için kullanılabilir.
+- Prologues ve epıtes birbirini yansıtmaya eğilimlidir. Bu, geriye doğru izlemeyi anlatmak için gereken meta verilerin boyutunu azaltmak için kullanılabilir.
 
-- İşlevler, nispeten küçük olma eğilimindedir. Çeşitli iyileştirmeler bu etkin verileri paketleme için kullanır.
+- İşlevler görece küçük olma eğilimindedir. Çeşitli iyileştirmeler, verilerin verimli bir şekilde paketlenmesi için bunu kullanır.
 
-- Bir koşul üzerinde bir kapanış yerleştirilirse, kapanış her yönerge için eşit oranda geçerlidir.
+- Bir durum, bir başlangıç üzerine yerleştirilmişse, bu durum, epıg 'deki her yönergeye eşit olarak uygulanır.
 
-- Yığın işaretçisi (SP) kaydedilir, böylece özgün SP herhangi bir zamanda kurtarılabilir kayıt kalmalıdır prolog, başka bir kayıttaki işlevi değişmedi.
+- Yığın işaretçisi (SP), prolog 'daki başka bir kasada kaydedildiyse, bu kayıt işlevin tamamında değişmeden kalmalıdır, böylece özgün SP herhangi bir zamanda kurtarılabilir.
 
-- Tüm işlenmesini, SP başka bir kayıttaki kaydedilmezse kesinlikle prolog ve epilog içinde gerçekleşmelidir.
+- SP başka bir kayda kaydedilmediği takdirde, tüm düzenleme işlemi tamamen bir başlangıç ve epıg dahilinde gerçekleşmelidir.
 
-- Herhangi bir yığın çerçevesi geriye doğru izlemek için bu işlemler gereklidir:
+- Herhangi bir yığın çerçevesini geriye doğru bırakmak için bu işlemler gereklidir:
 
-  - R13 ayarlayın (SP) 4 baytlık halinde.
+  - R13 (SP) öğesini 4 baytlık artışlarla ayarlayın.
 
-  - Açılan bir veya daha fazla tamsayı kaydeder.
+  - Bir veya daha fazla tamsayı kaydı açılır.
 
-  - Bir veya daha fazla VFP pop (sanal kayan nokta) kaydeder.
+  - Bir veya daha fazla VFP (sanal kayan nokta) kaydı açılır.
 
-  - Bir rastgele yazmaç değerini r13 için kopyalayın (SP).
+  - Rastgele bir yazmaç değerini R13 (SP) öğesine kopyalayın.
 
-  - SP Yığından küçük bir sonrası azaltma işlemi kullanarak yükleyin.
+  - Küçük bir azaltma sonrası işlemi kullanarak SP 'yi yığından yükleyin.
 
-  - Birkaç iyi tanımlanmış çerçeve türlerinden birini ayrıştırılamıyor.
+  - İyi tanımlanmış birkaç çerçeve türünden birini ayrıştırın.
 
-### <a name="pdata-records"></a>.pdata kayıtları
+### <a name="pdata-records"></a>. pdata kayıtları
 
-Her yığın düzenleme işlevi tanımlayan sabit uzunluklu öğelerinin sıralı bir diziye bir PE biçimi görüntüde .pdata kayıtlardır. Yığın düzenleme yok, diğer işlevleri çağırmayın işlevleri olan yaprak İşlevler, .pdata kayıt gerektirmez. (Diğer bir deyişle, bunlar herhangi bir yerel depolama alanı gerektirmez ve kaydetmek veya geçici olmayan kayıtlar geri yüklemek gerekmez.). Bu işlevler için kayıtları alanından tasarruf etmek için .pdata bölümünden atlanabilir. Bu işlevlerden biri bir bırakma işlemi yalnızca dönüş adresi bağlantı kaydetme (LR gelen) program sayacının çağırana taşımak (PC) kopyalayabilirsiniz.
+Bir PE biçimli görüntüde. pdata kayıtları, yığın işleme işlevinin her birini tanımlayan sabit uzunluklu öğelerin sıralı dizisidir. Diğer işlevleri çağırmayan işlevler olan yaprak işlevleri, yığını işlediklerinde. pdata kayıtları gerektirmez. (Yani, yerel depolama gerektirmez ve geçici olmayan kayıtları kaydetmek veya geri yüklemek zorunda kalmaz.). Bu işlevlerin kayıtları, alan kazanmak için. pdata bölümünde atlanabilir. Bu işlevlerden birindeki bir geriye doğru izleme işlemi, çağrıyı yapana ilerlemek için yalnızca bağlantı kaydındaki (LR) geri dönüş adresini program sayacına (PC) kopyalayabilir.
 
-ARM her .pdata kaydı 8 bayt uzun içindir. Bir kaydın genel biçimi, değişken uzunluklu sanal işlem bulunur bloğu için bir işaretçi veya kurallı bir işlevi tanımlayan paketlenmiş bir sözcük içeren ikinci bir sözcük ilk 32-bit Word işlevi başlangıç göreli sanal adres (RVA) yerleştirir. Bu tabloda gösterildiği gibi geriye doğru izleme sırası:
+ARM için tüm. pdata kayıtları 8 bayt uzunluğundadır. Bir kaydın genel biçimi, işlevin göreli sanal adresini (RVA) ilk 32 bitlik sözcüğe, sonra da değişken uzunluklu bir. xdata bloğuna yönelik bir işaretçi ya da kurallı bir işlevi açıklayan bir paketlenmiş sözcük içeren ikinci bir kelime ile başlar Bu tabloda gösterildiği gibi, geriye doğru sarma sırası:
 
-|Word uzaklığı|Bits|Amaç|
+|Sözcük boşluğu|Bits|Amaç|
 |-----------------|----------|-------------|
-|0|0-31|*İşlevi Başlat RVA* 32-bit RVA işlevi başlangıcı olduğu. İşlev thumb kodu içeriyorsa, bu adres, düşük bit ayarlamanız gerekir.|
-|1.|0-1|*Bayrağı* kalan 30 bit ikinci .pdata word'ün yorumlama gösteren bir 2 bit alanıdır. Varsa *bayrağı* 0'dır ve ardından form kalan bitleri bir *özel durum bilgileri RVA* (düşük iki bit örtük olarak 0). Varsa *bayrağı* form kalan bitleri sonra sıfır olan bir *geriye doğru izleme verileri paketlenmiş* yapısı.|
-|1.|2-31|*Özel durum bilgilerini RVA* veya *paketlenmiş veri bırakma*.<br /><br /> *Özel durum bilgileri RVA* sanal işlem bulunur bölümde depolanan değişken uzunluklu özel durum bilgisi yapısı adresidir. Bu veriler, 4 bayt hizalı olmalıdır.<br /><br /> *Geriye doğru izleme verileri paketlenmiş* kurallı biçimi varsayılarak bir işlevden geriye doğru izleme için gerekli işlemleri sıkıştırılmış bir açıklaması verilmektedir. Bu durumda, hiçbir sanal işlem bulunur kayıt gereklidir.|
+|0|0-31|*Işlev başlangıç RVA* , işlevin başlangıcına ait 32 bitlik RVA 'ya sahiptir. İşlev Thumb kodu içeriyorsa, bu adresin düşük bitinin ayarlanması gerekir.|
+|1\.|0-1|*Bayrak* , ikinci. pdata sözcüğünün kalan 30 bitini nasıl yorumlayacağını belirten 2 bitlik bir alandır. *Bayrak* 0 ise, kalan bit bir *özel durum bilgisi RVA* (düşük iki bit örtülü 0) oluşturur. *Bayrak* sıfır olmayan bir değer ise, kalan bitler *paketlenmiş bir geriye doğru izleme veri* yapısı oluşturur.|
+|1\.|2-31|*Özel durum BILGISI RVA* veya *paketlenmiş bırakma verileri*.<br /><br /> *Özel durum BILGISI RVA* ,. xdata bölümünde depolanan değişken uzunluklu özel durum bilgisi yapısının adresidir. Bu veriler 4 bayt hizalı olmalıdır.<br /><br /> *Paketlenmiş geriye doğru Izleme verileri* , bir işlevden geri dönmek için gereken işlemlerin sıkıştırılmış bir açıklamasıdır; kurallı bir form kabul edilir. Bu durumda, hiçbir. xdata kaydı gerekli değildir.|
 
-### <a name="packed-unwind-data"></a>Paketlenmiş veri bırakma
+### <a name="packed-unwind-data"></a>Paketlenmiş geriye doğru Izleme verileri
 
-Veriler, öğesinin ve sonuçları izleyin, aşağıda açıklanan kurallı biçimi paketlenmiş işlevleri geriye doğru izleme için kullanılabilir. Bu bir sanal işlem bulunur kaydı gereksinimini ortadan kaldırır ve sağlamak için gereken alanı önemli ölçüde azaltır veri bırakma. Kurallı öğesinin ve sonuçları bir özel durum işleyicisi gerektirmez ve kurulumu ve kaldırma işlemlerini gerçekleştiren standart bir sırada, basit bir işlevi ortak gereksinimlerini karşılayacak şekilde tasarlanmıştır.
+Prologues ve epıtes işlevleri aşağıda açıklanan kurallı biçimde izlenen işlevler için, paketlenmiş geriye doğru izleme verileri kullanılabilir. Bu,. xdata kaydına yönelik gereksinimi ortadan kaldırır ve geriye doğru izleme verileri sağlamak için gereken alanı önemli ölçüde azaltır. Kurallı işlem ve epingues, özel durum işleyicisi gerektirmeyen basit bir işlevin ortak gereksinimlerini karşılayacak şekilde tasarlanmıştır ve kurulum ve test işlemlerini standart sırada gerçekleştirir.
 
-Bu tablo biçimi gösterir bir .pdata paketlenmiş kayıt veri geriye doğru izleme:
+Bu tabloda, paketlenmiş geri bırakma verilerine sahip bir. pdata kaydının biçimi gösterilmektedir:
 
-|Word uzaklığı|Bits|Amaç|
+|Sözcük boşluğu|Bits|Amaç|
 |-----------------|----------|-------------|
-|0|0-31|*İşlevi Başlat RVA* 32-bit RVA işlevi başlangıcı olduğu. İşlev thumb kodu içeriyorsa, bu adres, düşük bit ayarlamanız gerekir.|
-|1.|0-1|*Bayrağı* bu anlamlara sahip 2 bit alanı:<br /><br />-00 = paketlenmiş kullanılmıyor; veri bırakma Kalan bitleri için sanal işlem bulunur kayıt noktası.<br />-01 = paketlenmiş veri bırakma.<br />-10 = paketlenmiş burada işlevi varsayılır hiçbir prolog sağlamak için veri bırakma. Bu işlev başlangıcı bitişik olmayan işlev parçalarını tanımlamak için yararlıdır.<br />-11 = ayrılmış.|
-|1.|2-12|*İşlev uzunluğu* uzunluğu 2 ile bölünen bayt tüm işlevi sağlayan bir 11 bit alanıdır. İşlevin 4 K bayt'tan büyükse, bir tam sanal işlem bulunur kaydı yerine kullanılmalıdır.|
-|1.|13-14|*Ret* nasıl işlevi döndürür gösteren 2 bit alanı:<br /><br />-00 pop {pc} aracılığıyla iade = ( *L* bayrağı biti ayarlanmış olması gerekir 1 Bu durumda).<br />-01 16-bit dal kullanarak dönüş =.<br />-10 32 bit dal kullanarak dönüş =.<br />-11 hiçbir kapanış hiç =. Bu, yalnızca bir prolog içerebilir, ancak başka bir yerde, kapanış olduğu bir bitişik olmayan işlev parça açıklamak için kullanışlıdır.|
-|1.|15|*H* işlevi "tam sayı parametresi homes olup olmadığını" belirten bir 1 bit bayrağı işlevi başlangıcında ileterek (r0-r3) kaydeder ve dönmeden önce yığını, 16 bayt kaldırır. (0 = 1 kaydeder ev değil havaalanlarından kayıtları =.)|
-|1.|16-18|*Reg* son dizinini belirten bir 3-bit alanı geçici olmayan kaydı kaydedilir. Varsa *R* bit, 0 ve ardından yalnızca tamsayı kayıtlar kaydediliyor ve aralığında r4-kaydırmayı, burada N, 4'e eşit olarak kabul edilir + *Reg*. Varsa *R* bit, 1, ardından yalnızca kayan nokta kayıtlarını kaydediliyor ve d8-dN, burada N, 8'e eşit aralığında olduğu varsayılır + *Reg*. Özel birleşimi *R* = 1 ve *Reg* = 7 yazmaç yok kaydedildiğini gösterir.|
-|1.|19|*R* kaydedilen geçici olmayan kayıtları tamsayı (0) kayıtları olup veya kayan nokta kayıtlarını (1) belirten bir 1 bit bayrağı. Varsa *R* 1 olarak ayarlayın ve *Reg* alanı, 7'ye ayarlanmışsa, geçici olmayan yazmaç yok gönderildi.|
-|1.|20|*M* işlevi kaydeder/LR, tarafından belirtilen diğer kayıtlara birlikte geri yükleme işlemleri olup olmadığını gösteren bir 1 bit bayrağı *Reg* alan. (0 = değil kaydedilemiyor/geri, 1 = mu kaydedilemiyor/geri.)|
-|1.|21|*C* işlevi (1) veya hızlı yığın (0) için bir çerçeve zinciri ayarlamak için ek yönergeler içerip içermediğini gösteren bir 1 bit bayrağı. Bu biti ayarlanmışsa r11 örtük olarak kaydedilen tamsayı geçici olmayan kayıtları listesine eklenir. (Eğer aşağıda kısıtlamalarını *C* bayrağı kullanılır.)|
-|1.|22-31|*Ayarla yığın* yığınının bölü 4, bu işlev için ayrılan bayt sayısını gösteren bir 10-bit alanıdır. Ancak, yalnızca değerleri 0x000 0x3F3 arasında doğrudan kodlanabilir. 4044 bayttan daha fazla yığın ayırma işlevleri tam bir sanal işlem bulunur kaydı kullanmanız gerekir. Varsa *yığını ayarlamak* alandır 0x3F4 veya daha büyük, daha sonra düşük 4 BITS özel bir anlamı yoktur:<br /><br />-Bitler 0-1 yığın düzeltmesi (1-4), eksi 1 sözcük sayısını gösterir.<br />-Bu düzeltme, anında iletme işlemde prolog birleştirildiğinde bit 2 1 olarak ayarlanır.<br />-Kapanış pop, işlemde bu ayarlama birleştirildiğinde bit 3 1 olarak ayarlanır.|
+|0|0-31|*Işlev başlangıç RVA* , işlevin başlangıcına ait 32 bitlik RVA 'ya sahiptir. İşlev Thumb kodu içeriyorsa, bu adresin düşük bitinin ayarlanması gerekir.|
+|1\.|0-1|*Bayrak* , bu anlamlara sahip 2 bitlik bir alandır:<br /><br />-00 = paketlenmiş bırakma verileri kullanılmıyor; kalan BITS. xdata kaydına işaret.<br />-01 = paketlenmiş bırakma verileri.<br />-10 = işlevin hiçbir şekilde kabul edildiği varsayılabileceği paketlenmiş geri açılım verileri. Bu, işlevin başlangıcına bitişik olmayan işlev parçalarını açıklamak için yararlıdır.<br />-11 = ayrılmış.|
+|1\.|2-12|*Işlev uzunluğu* , tüm işlevin uzunluğunu 2 ' ye bölünen bayt cinsinden sağlayan 11 bitlik bir alandır. İşlev 4K bayttan büyükse, bunun yerine tam bir. xdata kaydı kullanılmalıdır.|
+|1\.|13-14|*Ret* , işlevin nasıl dönüşdiğini belirten 2 bitlik bir alandır:<br /><br />-00 = pop {PC} aracılığıyla geri dön (Bu durumda *L* bayrağı biti 1 olarak ayarlanmalıdır).<br />-01 = 16 bit dal kullanarak döndürün.<br />-10 = 32 bitlik bir dal kullanarak geri döndürün.<br />-11 = hiç bir ön uç yok. Bu, yalnızca bir prolog içerebilen, ancak epıg başka bir yerde olan bitişik olmayan bir işlev parçasını açıklamak için yararlıdır.|
+|1\.|15|*H* , "ana" işlevin (R0-R3), işlevin başlangıcında göndererek (-) işlevinin kayıt yapıp kullanmadığını belirten 1 bitlik bir bayraktır ve döndürmeden önce 16 baytlık yığını kaldırır. (0 = ana kayıt kayıtları, 1 = ev kayıtları.)|
+|1\.|16-18|*Reg* , son kaydedilen geçici kayıt dizinini gösteren 3 bitlik bir alandır. *R* biti 0 ise, yalnızca tamsayı Yazmaçları kaydedilir ve R4-RN aralığında olduğu varsayılır; burada N, 4 + *reg*' e eşittir. *R* bit 1 ise, yalnızca kayan nokta kayıtları kaydedilir ve D8-DN aralığında oldukları varsayılır; burada N, 8 + *reg*' e eşittir. *R* = 1 ve *reg* = 7 ' nin özel birleşimi hiçbir kayıt kaydedilmez.|
+|1\.|19|*R* , kayıtlı geçici kayıtların tamsayı Yazmaçları (0) veya kayan nokta Yazmaçları (1) olup olmadığını gösteren 1 bitlik bir bayraktır. *R* 1 olarak ayarlanmışsa ve *reg* alanı 7 olarak ayarlanırsa, geçici olmayan kayıtlar itilmedi.|
+|1\.|20|*L* , Işlevin, *reg* alanı tarafından belirtilen DIĞER yazmaçlarla birlikte g/geri yükleme yapıp kullanmadığını belirten 1 bitlik bir bayrak. (0 = kaydetme/geri yükleme değil, 1 = kaydet/geri yükle.)|
+|1\.|21|*C* , işlevin hızlı yığın yürümesi için bir çerçeve zinciri ayarlamaya yönelik ek yönergeler içerip içermediğini belirten 1 bitlik bir bayraktır (1) veya (0). Bu bit ayarlandıysa, R11, kaydedilen tamsayı olmayan kayıtların listesine örtülü olarak eklenir. ( *C* bayrağı kullanılırsa aşağıdaki kısıtlamalara bakın.)|
+|1\.|22-31|*Stack ayarlaması* , bu işlev için ayrılan yığının bayt sayısını belirten 10 bitlik bir alandır. Ancak, yalnızca 0x000-0x3F3 arasındaki değerler doğrudan kodlanabilir. 4044 bayttan fazlasını ayıran işlevlerin tam bir. xdata kaydı kullanması gerekir. *Yığın ayar* alanı 0x3F4 veya daha büyükse, düşük 4 bit özel anlam taşır:<br /><br />-Bit 0-1, yığın ayarlamasının (1-4) eksi 1 kelimelerin sayısını belirtir.<br />-Bit 2, bu ayarlamayı gönderim işleminde birleştirirse 1 olarak ayarlanır.<br />Epııte bu ayarlamayı bu ayarlamayı bir araya alıyorsa-bit 3, 1 olarak ayarlanır.|
 
-Yukarıdaki Kodlamalar, olası fazlalıkları nedeniyle bu kısıtlamalar uygulanır:
+Yukarıdaki kodlamalarda olası artıklıkları nedeniyle bu kısıtlamalar geçerlidir:
 
-- Varsa *C* bayrağı 1 olarak ayarlayın:
+- *C* bayrağı 1 olarak ayarlandıysa:
 
-   - *L* bayrağı da ayarlanmalıdır 1, çerçeve zincirleme r11 hem LR gerekli olduğu.
+   - Çerçeve zinciri hem R11 hem de LR gerektirdiğinden *L* bayrağı da 1 olarak ayarlanmalıdır.
 
-   - R11 gerekir dahil edilmeyecek tarafından açıklanan yazmaç kümesini *Reg*. Diğer bir deyişle, r4 r11 itilir, *Reg* r4 r10, çünkü yalnızca açıklamalıdır *C* bayrağı r11 anlamına gelir.
+   - R11, *reg*tarafından tanımlanan kayıt kümesine dahil edilmemelidir. Diğer bir deyişle, R4-R11 itilmesi durumunda *reg* yalnızca r4-r10 ' i tanımlıyor çünkü *C* bayrağı R11 ' ı gösterir.
 
-- Varsa *Ret* alanı 0 olarak ayarlanmış *L* bayrağı 1 olarak ayarlanması gerekir.
+- *Ret* alanı 0 olarak ayarlandıysa, *L* bayrağının 1 olarak ayarlanması gerekir.
 
-Bu kısıtlamalar ihlal desteklenmeyen dizisi neden olur.
+Bu kısıtlamaları ihlal etmek desteklenmeyen bir diziye neden olur.
 
-İki sahte bayrakları türetilmiştir tartışma aşağıdaki amaçlarla *yığını ayarlamak*:
+Aşağıdaki tartışmanın amaçları doğrultusunda, *yığın ayarlamalarından*iki sözde bayrak türetilir:
 
-- *PF* veya gösterir "prolog Katlama" *yığını ayarlamak* 0x3F4 ya da daha büyük ve bit 2 ayarlanır.
+- *PF* veya "prolog katlaması", *yığın Ayarlanmesinin* 0x3F4 veya daha büyük olduğunu ve bit 2 ' nin ayarlandığını gösterir.
 
-- *EF* veya gösterir "kapanış Katlama" *yığını ayarlamak* 0x3F4 ya da daha büyük ve bit 3 ayarlanır.
+- *EF* veya "epıg katlaması", *yığın ayarlamalarının* 0x3F4 veya daha büyük ve bit 3 ' ün ayarlandığını gösterir.
 
-Öğesinin kurallı işlevler için en fazla 5 yönergeleri (bildirim 3a ve 3b birbirinden bağımsızdır) olabilir:
+Kurallı işlevler için prologues, en fazla 5 yönerge içerebilir (3A ve 3B birbirini dışlamalı olduğuna dikkat edin):
 
-|Yönerge|Opcode mevcut varsayılır varsa:|Boyut|Opcode|Geriye doğru izleme kodları|
+|Yönergenin|Şu durumlarda işlem kodu varsayılır:|Boyut|Ml|Bırakma kodları|
 |-----------------|-----------------------------------|----------|------------|------------------|
-|1.|*H*1 ==|16|`push {r0-r3}`|04|
-|2|*C*1 == veya *L*1 == veya *R*0 veya PF == 1 ==|16/32|`push {registers}`|80-BF/D0-SD/EC-ED|
-|3a|*C*1 == ve (*L*== 0 ve *R*1 ve PF == 0 ==)|16|`mov r11,sp`|C0-CF/FB|
-|3B|*C*1 == ve (*L*1 == veya *R*0 veya PF == 1 ==)|32|`add r11,sp,#xx`|FC|
-|4|*R*1 == ve *Reg* ! = 7|32|`vpush {d8-dE}`|E0-E7|
-|5|*Yığın ayarlamak* ! = 0 ve PF == 0|16/32|`sub sp,sp,#xx`|00-7F/E8-EB|
+|1\.|*H*= = 1|16|`push {r0-r3}`|04|
+|2|*C*= = 1 veya *L*= = 1 veya *R*= = 0 ya da PF = = 1|16/32|`push {registers}`|80-BF/D0-DF/EC-ED|
+|3A@@|*C*= = 1 ve (*L*= = 0 ve *R*= = 1 ve PF = = 0)|16|`mov r11,sp`|C0-CF/FB|
+|3B|*C*= = 1 ve (*L*= = 1 veya *R*= = 0 veya PF = = 1)|32|`add r11,sp,#xx`|FC|
+|4|*R*= = 1 ve *reg* ! = 7|32|`vpush {d8-dE}`|E0-E7|
+|5|*Stack ayarla* ! = 0 ve PF = = 0|16/32|`sub sp,sp,#xx`|00-7F/E8-EB|
 
-Yönerge 1 varsa her zaman, *H* biti 1 olarak ayarlanır.
+Yönerge 1, *H* bit 1 olarak ayarlandıysa her zaman vardır.
 
-Çerçeve zincirleme ayarlamak üzere, yönerge 3a veya 3b varsa, *C* bitinin ayarlanmasıdır. Bir 16-bit, `mov` yoksa r11 ve LR dışında kayıtları itilir; Aksi takdirde, 32 bit bir değer `add`.
+Çerçeve zincirlemesini ayarlamak için, *C* bit ayarlandıysa yönerge 3A veya 3B vardır. R11 ve LR dışında bir kayıt `mov` yoksa, 16 bittir; Aksi takdirde, 32 bittir. `add`
 
-Katlanmış olmayan bir ayarı belirtilirse, 5 açık yığın ayarlama yönergedir.
+Katsız bir ayarlama belirtilirse, yönerge 5 açık yığın ayarlamadır.
 
-2 ve 4 yönergeler bir anında iletme gerekli olmasına göre ayarlanır. Bu tablo hangi kayıtları göre kaydedilir özetler *C*, *L*, *R*, ve *PF* alanları. Tüm durumlarda *N* eşittir *Reg* + 4 *E* eşittir *Reg* + 8, ve *S* eşittir (~*Yığını ayarlamak*) ve 3.
+Yönergeler 2 ve 4, bir gönderme gerekli olup olmadığına göre ayarlanır. Bu tablo, *C*, *L*, *R*ve *PF* alanlarına göre hangi yazmaçların kaydedileceğini özetler. Her durumda, *N* , *reg* + 4 ' e eşittir, *E* de *reg* + 8 ' e eşittir ve *S* şuna eşittir (~*Stack ayarlaması*) & 3.
 
-|C|L|R|PF|Tamsayı kayıtları gönderildi|VFP kaydeder gönderildi|
+|C|L|R|PF|Gönderilen tamsayı Yazmaçları|VFP kayıtları gönderildi|
 |-------|-------|-------|--------|------------------------------|--------------------------|
-|0|0|0|0|r R4*N*|yok|
-|0|0|0|1.|r*S*- r*N*|yok|
-|0|0|1.|0|yok|D8-d*E*|
-|0|0|1.|1.|r*S*-r3|D8-d*E*|
-|0|1.|0|0|r R4*N*, LR|yok|
-|0|1.|0|1.|r*S*- r*N*, LR|yok|
-|0|1.|1|0|LR|D8-d*E*|
-|0|1.|1.|1.|r*S*-r3, LR|D8-d*E*|
-|1.|0|0|0|r R4*N*, r11|yok|
-|1.|0|0|1.|r*S*- r*N*, r11|yok|
-|1.|0|1.|0|R11|D8-d*E*|
-|1.|0|1.|1.|r*S*-r3, r11|D8-d*E*|
-|1.|1|0|0|r R4*N*, r11, LR|yok|
-|1.|1|0|1.|r*S*- r*N*, r11, LR|yok|
-|1.|1.|1|0|R11, LR|D8-d*E*|
-|1.|1.|1.|1.|r*S*-r3, r11, LR|D8-d*E*|
+|0|0|0|0|R4-r*N*|yok|
+|0|0|0|1\.|r*S*-r*N*|yok|
+|0|0|1\.|0|yok|D8-d*E*|
+|0|0|1\.|1\.|r*S*-R3|D8-d*E*|
+|0|1\.|0|0|R4-r*N*, LR|yok|
+|0|1\.|0|1\.|r*S*-r*N*, LR|yok|
+|0|1\.|1|0|LR|D8-d*E*|
+|0|1\.|1\.|1\.|r*S*-R3, LR|D8-d*E*|
+|1\.|0|0|0|R4-r*N*, R11|yok|
+|1\.|0|0|1\.|r*S*-r*N*, R11|yok|
+|1\.|0|1\.|0|r11|D8-d*E*|
+|1\.|0|1\.|1\.|r*S*-R3, R11|D8-d*E*|
+|1\.|1|0|0|R4-r*N*, R11, LR|yok|
+|1\.|1|0|1\.|r*S*-r*N*, R11, LR|yok|
+|1\.|1\.|1|0|R11, LR|D8-d*E*|
+|1\.|1\.|1\.|1\.|r*S*-R3, R11, LR|D8-d*E*|
 
-Sonuçları kurallı işlevler izleyin benzer bir form ancak tersine ve bazı ek seçeneklere sahip. Kapanış en fazla 5 yönergeleri uzun olabilir ve kendi form prolog form tarafından kesin olarak belirlenmiştir.
+Kurallı işlevler için epıtes benzer bir biçimde, ancak ters ve bazı ek seçeneklerle birlikte izler. Epıg en fazla 5 yönerge uzunluğunda olabilir ve kendi formu, her zaman bir başlangıç biçimi tarafından tamamen dikte edilir.
 
-|Yönerge|Opcode mevcut varsayılır varsa:|Boyut|Opcode|
+|Yönergenin|Şu durumlarda işlem kodu varsayılır:|Boyut|Ml|
 |-----------------|-----------------------------------|----------|------------|
-|6|*Yığın ayarlamak*! = 0 ve *EF*== 0|16/32|`add   sp,sp,#xx`|
-|7|*R*1 == ve *Reg*! = 7|32|`vpop  {d8-dE}`|
-|8|*C*1 == veya (*L*1 == ve *H*== 0) veya *R*== 0 veya *EF*1 ==|16/32|`pop   {registers}`|
-|9a|*H*1 == ve *L*== 0|16|`add   sp,sp,#0x10`|
-|9b|*H*1 == ve *L*1 ==|32|`ldr   pc,[sp],#0x14`|
-|10A|*Ret*1 ==|16|`bx    reg`|
-|10b|*Ret*2 ==|32|`b     address`|
+|6|*Stack ayarla*! = 0 ve *EF*= = 0|16/32|`add   sp,sp,#xx`|
+|7|*R*= = 1 ve *reg*! = 7|32|`vpop  {d8-dE}`|
+|8|*C*= = 1 veya (*L*= = 1 ve *H*= = 0) ya da *R*= = 0 veya *EF*= = 1|16/32|`pop   {registers}`|
+|9A|*H*= = 1 ve *L*= = 0|16|`add   sp,sp,#0x10`|
+|9B|*H*= = 1 ve *L*= = 1|32|`ldr   pc,[sp],#0x14`|
+|10A|*Ret*= = 1|16|`bx    reg`|
+|10B|*Ret*= = 2|32|`b     address`|
 
-Katlanmış olmayan bir ayarı belirtilirse 6 açık yığın ayarlama yönergedir. Çünkü *PF* bağımsızdır *EF*, yönerge 5 6 yönerge var veya tam tersi olması mümkündür.
+Yönerge 6, katsız bir düzeltme belirtilmişse açık yığın ayarlamadır. *PF* , *EF*'ten bağımsız olduğundan, yönerge 5 ' in 6 ' dan veya bunun tersi olmadan kullanılabilmesi mümkündür.
 
-Yönergeleri 7 ve 8 hangi kayıtları yığından geri belirlemek için giriş aynı mantığı kullanır, ancak bu iki değiştirir: ilk *EF* yerine kullanılan *PF*; ikinci, varsa *Ret*  = 0, LR, kayıt listesinde PC ile değiştirilir ve kapanış hemen sonlandırır.
+7\. ve 8. yönergeler, yığından hangi yazmaçların geri yüklendiğini belirleyen aynı mantığı kullanır, ancak bu iki değişiklikle: ilk olarak, *PF*'Nin yerine *EF* kullanılır; İkincisi, *ret* = 0 ise, kayıt LISTESINDE LR bilgisayar ile değiştirilmiştir ve epıte sona erer.
 
-Varsa *H* yönerge 9a ya da 9b sonra ayarlanır. Yönerge 9a kullanılan zaman *L* LR yığında olmadığını göstermek için 0 ' dır. Bu durumda, yığın el ile ayarlanır ve *Ret* 1 ya da açık bir dönüş belirtmek için 2 olmalıdır. Yönerge 9b kullanılan zaman *L* kapanış erken sona belirtmek ve dönün ve yığın aynı anda ayarlamak için 1 ' dir.
+*H* ayarlandıysa, her iki yönerge 9A veya 9B vardır. Of yönergesi, *l* 0 olduğunda, LR 'in yığında olmadığını belirtmek için kullanılır. Bu durumda, yığın el ile ayarlanır ve açık bir dönüş belirtmek için *ret* 1 veya 2 olmalıdır. Yönerge 9B, *L* 1 olduğunda, ön tarihte erken bir başlangıç olduğunu göstermek ve yığını aynı anda döndürmek ve ayarlamak için kullanılır.
 
-Kapanış değil zaten sona erdi, 10a yönerge sonra ya da veya 10b 16-bit veya 32-bit bir dal belirtmek için mevcut değerine göre *Ret*.
+Epıg zaten bitdiyse, bir 16 bit veya 32 bitlik dalı, *ret*değerine göre göstermek için, her iki yönerge 10A veya 10B vardır.
 
-### <a name="xdata-records"></a>Sanal işlem bulunur kayıtları
+### <a name="xdata-records"></a>. xdata kayıtları
 
-Paketlenmiş geriye doğru izleme biçimi işlevi geriye doğru izleme açıklamak için yetersiz olduğunda, bir değişken uzunluklu sanal işlem bulunur kaydı oluşturulmalıdır. Bu kaydın adresini .pdata kaydın ikinci Word'de depolanır. Sanal işlem bulunur dört bölüm olan bir değişken uzunluklu dizi paketlenmiş sözcükleri biçimdedir:
+Paketlenmiş bırakma biçimi, bir işlevin geri sarılini anlatmak için yetersizse, değişken uzunluklu bir. xdata kaydı oluşturulmalıdır. Bu kaydın adresi. pdata kaydının ikinci sözcüğündeki saklanır. . Xdata biçimi, dört bölümden oluşan, paketlenmiş değişken uzunlukta bir kelime kümesidir:
 
-1. Sanal işlem bulunur yapısı toplam boyutunu açıklayan ve anahtar işlevi veri sağlayan bir 1 veya 2 sözcük üstbilgisi. İkinci sözcük yalnızca var ise *kapanış sayısı* ve *kod sözcükleri* alanları her ikisi de 0 olarak ayarlanır. Bu tablodaki alanlar belirtilir:
+1. . Xdata yapısının genel boyutunu açıklayan ve anahtar işlev verileri sağlayan 1 veya 2 sözcüklü bir üst bilgi. İkinci kelime yalnızca *Epıg Count* ve *Code Words* alanlarının her ikisi de 0 olarak ayarlandığında vardır. Alanlar bu tabloda bölünür:
 
    |Word|Bits|Amaç|
    |----------|----------|-------------|
-   |0|0-17|*İşlev uzunluğu* işlevi 2 ile bölünen bayt cinsinden toplam uzunluğunu belirten bir 18 bit alanıdır. Bir işlev 512 KB'den büyükse, .pdata ve .xdata birden çok kayıt işlevi tanımlamak için kullanılmalıdır. Ayrıntılar için bu belgede büyük işlevler bölümüne bakın.|
-   |0|18-19|*Vers* 2-bit alanı, kalan xdata sürümü açıklanmaktadır. Yalnızca 0 sürümü şu anda tanımlanır; 1-3, değerler ayrılmıştır.|
-   |0|20|*X* varlığı (1) veya özel durum verileri yokluğu (0) gösteren bir 1 bit alanıdır.|
-   |0|21|*E* olan ek kapsam gerektiren yerine tek bir kapanış açıklayan bilgileri (1) üstbilgisine iyileştirmesiyle doludur gösteren bir 1 bit alanı sözcükleri sonraki (0).|
-   |0|22|*F* bu kaydı işlevi parça (1) veya tam bir işlev (0) açıklayan gösteren bir 1 bit alanıdır. Bir parça yok prolog olduğunu ve tüm prolog işleme yoksayılıp yoksayılmaması gerektiğini gösterir.|
-   |0|23-27|*Kapanış sayısı* durumuna bağlı olarak iki anlama sahip 5-bit alanı *E* bit:<br /><br /> -Eğer *E* 0'dır, bu alan 3 bölümünde açıklanan özel durum kapsamları toplam sayısı bir sayıdır. Birden fazla 31 kapsamları işlevi ve ardından bu alan varsa ve *kod sözcükleri* alanı hem de ayarlanması gerekir 0 için bir uzantı Word'ün gerekli olduğunu belirtmek için.<br />-Eğer *E* 1, bu alan yalnızca kapanış açıklayan ilk geriye doğru izleme kodu dizinini belirtir.|
-   |0|28-31|*Kod sözcük* tüm bölüm 4'teki geriye doğru izleme kodları içermesi için gerekli 32 bit sözcük sayısını belirten bir 4-bit alanıdır. En fazla 63 geriye doğru izleme kodu bayt için bu alan 15'ten fazla sözcük gerekiyorsa ve *kapanış sayısı* alanı hem de ayarlanması gerekir 0 için bir uzantı Word'ün gerekli olduğunu belirtmek için.|
-   |1.|0-15|*Kapanış sayısı Genişletilmiş* sonuçları olağan dışı derecede büyük sayıda kodlama için daha fazla alan sağlayan bir 16 bit alanıdır. Bu alan içeren uzantı sözcüğünü yalnızca var ise *kapanış sayısı* ve *kod sözcükleri* ilk üstbilgi sözcük alanlarında hem de 0 olarak ayarlanır.|
-   |1.|16-23|*Kod sözcük Genişletilmiş* olağan dışı derecede büyük bir geriye doğru izleme kodu sözcük sayısını kodlama için daha fazla alan sağlayan bir 8 bit alanıdır. Bu alan içeren uzantı sözcüğünü yalnızca var ise *kapanış sayısı* ve *kod sözcükleri* ilk üstbilgi sözcük alanlarında hem de 0 olarak ayarlanır.|
-   |1.|24-31|Ayrılmış|
+   |0|0-17|*Işlev uzunluğu* , işlevin toplam uzunluğunu bayt cinsinden belirten ve 2 ' ye bölünen 18 bitlik bir alandır. Bir işlev 512 KB 'tan büyükse, işlevi anlatmak için birden çok. pdata ve. xdata kaydı kullanılmalıdır. Ayrıntılar için bu belgenin büyük Işlevler bölümüne bakın.|
+   |0|18-19|Sunucular, kalan XData 'ın sürümünü açıklayan 2 bitlik bir alandır. Şu anda yalnızca sürüm 0 tanımlı; 1-3 değerleri ayrılmıştır.|
+   |0|20|*X* , varlık (1) veya Devamsızlık (0) özel durum verilerinin olduğunu gösteren 1 bitlik bir alandır.|
+   |0|21|*E* , tek bir ön uç tanımlayan bilgilerin, daha sonra ek kapsam sözcükleri gerektirmek yerine üst bilgiye (1) paketlendiğini belirten 1 bitlik bir alandır (0).|
+   |0|22|*F* , bu kaydın bir işlev parçasını (1) veya tam işlevi (0) açıklar olduğunu gösteren 1 bitlik bir alandır. Bir parça, hiçbir işlem olmaması ve tüm prolog işlemenin yoksayılması anlamına gelir.|
+   |0|23-27|*Epıg sayısı* , *E* -bit durumuna bağlı olarak iki anlamı olan 5 bitlik bir alandır:<br /><br /> - *E* 0 ise, bu alan 3. bölümde açıklanan toplam özel durum kapsamları sayısıdır. İşlevde 31 ' den fazla kapsam varsa, bu alan ve *kod kelimeleri* alanı her ikisi de bir uzantı sözcüğünün gerekli olduğunu göstermek için 0 olarak ayarlanmalıdır.<br />- *E* 1 ise, bu alan tek başına bir ön izleme kodunun dizinini tanımlar.|
+   |0|28-31|*Kod sözcükleri* , Bölüm 4 ' teki tüm bırakma kodlarını içermesi için gereken 32 bitlik sözcüklerin sayısını belirten 4 bitlik bir alandır. 63 ' den fazla bırakma kodu baytı için 15 ' ten fazla sözcük gerekliyse, bir uzantı sözcüğünün gerekli olduğunu göstermek için bu alanın ve *Epıg Count* alanının her ikisi de 0 olarak ayarlanmalıdır.|
+   |1\.|0-15|*Genişletilmiş* ön ek sayısı, alışılmadık çok sayıda epıte daha fazla alan sağlayan 16 bitlik bir alandır. Bu alanı içeren uzantı sözcüğü yalnızca ilk üstbilgi kelimesinin *Epıg Count* ve *Code Words* alanlarının her ikisi de 0 olarak ayarlandığında bulunur.|
+   |1\.|16-23|*Genişletilmiş kod sözcükleri* , alışılmadık çok sayıda bırakma kodu sözcüklerini kodlamak için daha fazla alan sağlayan 8 bitlik bir alandır. Bu alanı içeren uzantı sözcüğü yalnızca ilk üstbilgi kelimesinin *Epıg Count* ve *Code Words* alanlarının her ikisi de 0 olarak ayarlandığında bulunur.|
+   |1\.|24-31|Ayrılmış|
 
-1. Özel durum verileri sonra (varsa *E* bit üst bilgisindeki 0 olarak ayarlanmıştır), başlangıç uzaklığını artan sıraya göre depolanır ve bir Word paketlenmiş kapanış kapsamları hakkında bilgi listesidir. Her kapsam, bu alanları içerir:
+1. Özel durum verileri (üstbilgideki *E* biti 0 olarak ayarlandıysa), bir sözcüğe paketlenmiş ve başlangıç sapmasını artırma sırasına göre depolanan epıg kapsamları hakkında bilgi listesidir. Her kapsam şu alanları içerir:
 
    |Bits|Amaç|
    |----------|-------------|
-   |0-17|*Kapanış başlangıç uzaklığı* kapanış, 2, işlev başlangıcını göre bölü bayt uzaklığı açıklayan bir 18 bit alanıdır.|
-   |18-19|*Res* gelecekteki genişleme için ayrılmış bir 2 bit alanıdır. Değeri 0 olmalıdır.|
-   |20-23|*Koşul* altında kapanış yürütülen koşulu sağlayan bir 4-bit alanıdır. Koşulsuz sonuçları için "her zaman" gösteren 0xE ayarlamanız gerekir. (Bir kapanış tamamen koşullu ya da tamamen koşulsuz olmalıdır ve ilk yönerge sonra BT opcode ile kapanış Thumb-2 modunda başlar.)|
-   |24-31|*Kapanış başlangıç dizini* bu kapanış açıklayan ilk geriye doğru izleme kodu bayt dizinini belirten bir 8 bit alanıdır.|
+   |0-17|*Epıg başlangıç boşluğu* , başlangıç sayısının, işlevin başlangıcına göre 2 ' ye bölünen bayt cinsinden sayısını açıklayan 18 bitlik bir alandır.|
+   |18-19|*Res* , gelecekteki genişlemeye ayrılmış 2 bitlik bir alandır. Değeri 0 olmalıdır.|
+   |20-23|*Koşul* , epıg 'nin yürütüldüğü koşulu veren 4 bitlik bir alandır. Koşulsuz olarak, "Always" belirten, 0xE olarak ayarlanmalıdır. (Epıg tamamen koşullu veya tamamen koşulsuz olmalıdır ve Thumb-2 modunda, epıg, It Opcode 'dan sonraki ilk yönergeyle başlar.)|
+   |24-31|*Epıg başlangıç dizini* , bu ön eki açıklayan ilk bırakma kodunun bayt dizinini gösteren 8 bitlik bir alandır.|
 
-1. Bu makalede geriye doğru izleme kodları bölümünde ayrıntılı olarak açıklanan geriye doğru izleme kodları içeren bir bayt dizisi kapanış kapsam listesi çağrıldıktan sonra. Bu dizi için en yakın tam sözcük sınırı sonunda sıfır eklenir. Küçük endian modunda doğrudan getirilebilir, böylece bayt little endian sırayla depolanır.
+1. Epıg kapsamları listesi oluşturulduktan sonra, bu makaledeki geriye doğru Izleme kodları bölümünde ayrıntılı olarak açıklanan bırakma kodlarını içeren bir bayt dizisi gelir. Bu dizi, sonda en yakın tam sözcük sınırına doldurulur. Baytlar, küçük endian modunda doğrudan getiribilecekleri şekilde küçük endian sırasıyla depolanır.
 
-1. Varsa *X* üstbilgisinde alan 1, geriye doğru izleme kodu bayt özel durum işleyicisi bilgilerini tarafından izlenir. Bu birini oluşur *özel durum işleyicisi RVA* adresi özel durum işleyicisi tarafından gerekli verileri (değişken uzunluklu) miktarına göre hemen ardından özel durum işleyicisinin içerir.
+1. Başlıktaki *X* alanı 1 ise, geriye doğru izleme kodu baytları, özel durum işleyicisi bilgileri izler. Bu, özel durum işleyicisinin adresini içeren bir *özel durum IŞLEYICI RVA* ve ardından, özel durum işleyicisi için gereken veri miktarı (değişken uzunluklu) tarafından hemen oluşur.
 
-Sanal işlem bulunur kaydı ilk 8 bayt getirmek ve aşağıdaki özel durum değişken boyutlu veri uzunluğu dahil değil kayıt tam boyutunu hesaplamak mümkündür şekilde tasarlanmıştır. Bu kod parçacığı, kayıt boyutunu hesaplar:
+. Xdata kaydı, izleyen ve değişken boyutlu özel durum verilerinin uzunluğunu dahil değil, ilk 8 baytı getirmek ve kaydın tam boyutunu hesaplamak mümkün olacak şekilde tasarlanmıştır. Bu kod parçacığı, kayıt boyutunu hesaplar:
 
 ```cpp
 ULONG ComputeXdataSize(PULONG *Xdata)
@@ -220,64 +220,64 @@ ULONG ComputeXdataSize(PULONG *Xdata)
 }
 ```
 
-Prolog ve epilog her bir dizine geriye doğru izleme kodları olsa tablo bunlar arasında paylaşılır. Bunların tümü aynı geriye doğru izleme kodları paylaşabilirsiniz seyrek değil. Derleyici yazıcıları belirtilebilecek en büyük dizinden 255'tir ve bu belirli bir işlev için olası geriye doğru izleme kodları toplam sayısını sınırlar çünkü bu durumda, iyileştirme öneririz.
+Prolog ve her bir epıg 'nin bırakma kodlarına bir dizini olsa da, tablo aralarında paylaşılır. Hepsi aynı bırakma kodlarını paylaşabildiklerinden, yaygın olmayan bir durumdur. Belirtilen en büyük dizin 255 olduğundan ve belirli bir işlev için mümkün olan toplam bırakma kodu sayısını sınırladığından, bu durum için derleyici yazıcılarının iyileştirmenize önerilir.
 
-### <a name="unwind-codes"></a>Geriye doğru izleme kodları
+### <a name="unwind-codes"></a>Bırakma kodları
 
-Geriye doğru izleme kodları işlemleri geri alınmalıdır sırada prolog etkilerini geri nasıl tam olarak açıklayan yönerge sıralarını havuzu dizisidir. Geriye doğru izleme kodları bir bayt dizisi kodlanmış bir mini yönerge kümesidir. Yürütme tamamlandıktan sonra çağıran işlevin dönüş adresi LR kaydıdır ve tüm geçici olmayan kasalar değerlerine işlev çağrıldı zaman geri yüklenir.
+Geriye doğru izleme kodları dizisi, işlemin geri alınması gereken sırada, prolog 'nin etkilerini tam olarak nasıl geri alınacağını açıklayan bir yönerge dizileri havuzudur. Geriye doğru izleme kodları, bayt dizesi olarak kodlanan bir mini yönerge kümesidir. Yürütme tamamlandığında, çağırma işlevine döndürülen adres, LR kaydına, geçici olmayan tüm Yazmaçları ise işlevin çağrıldığı zaman değerlerine geri yüklenir.
 
-Dizisi özel durumları her zaman sadece bir işlev gövdesinin içinde gerçekleşmesi için garantili ve hiçbir zaman bir prolog veya kapanış içinde yalnızca bir bırakma gerekli olacaktır. Ancak, Windows geriye doğru izleme modeli kısmen yürütülen prolog veya kapanış içinde dan geriye doğru izleme yeteneği gerektirir. Bu gereksinimi karşılamak için geriye doğru izleme kodları dikkatle prolog ve epilog ilgili her opcode için belirsiz bire bir eşleme sağlamak için tasarlanmıştır. Bu, birkaç olası etkilere sahiptir:
+Özel durumların yalnızca bir işlev gövdesinde gerçekleşmesi ve bir prolog ya da epinin içinde hiç olması garanti edildiği durumlarda, yalnızca bir geriye doğru sıralama işlemi gereklidir. Ancak, Windows unsargı modeli kısmen yürütülen bir prolog veya epıg içinden geriye doğru izleme olanağı gerektirir. Bu gereksinime uyum sağlamak için, geriye doğru izleme kodları, prolog ve EPG 'deki ilgili işlem koduna yönelik belirsiz bir bire bir eşlemeye sahip olacak şekilde dikkatlice tasarlanmıştı. Bu çeşitli etkilere sahiptir:
 
-- Geriye doğru izleme kodları sayısı sayılarak prolog ve epilog uzunluğunu hesaplamak mümkündür. 16-bit ve 32-bit işlem için ayrı eşlemeleri olmadığından bu bile değişken uzunluklu Thumb-2 yönergeleri ile mümkündür.
+- Bırakma kodlarının sayısını sayarak, prolog ve epıg 'nin uzunluğunu hesaplamak mümkündür. 16 bit ve 32 bit opkodlara yönelik ayrı eşlemeler olduğundan, bu, değişken uzunluklu Thumb-2 yönergeleriyle bile mümkündür.
 
-- Yönerge bir kapanış kapsamı başlangıcını geçmiş sayısını sayma tarafından geriye doğru izleme kodları eşdeğeri olan sayıyı atlayabilir ve kısmen yürütülen tamamlamak için bir dizi rest yürütmek mümkündür kapanış gerçekleştirmekte olduğu geriye doğru izleme.
+- Bir epıg kapsamının başlangıcından geçen yönergelerin sayısını sayarak, geriye doğru izleme kodlarının sayısını atlayıp bir sıranın geri kalanını yürüterek, bu da bir sıra geri kalanı yürütülecektir.
 
-- Yönerge prolog bitmeden önce sayısını sayma tarafından geriye doğru izleme kodları eşdeğeri olan sayıyı atlayabilir ve sırası, yalnızca yürütme tamamlanan prolog bölümlerini geri kalanını yürütmek mümkündür.
+- İşlem, işlem tamamlanmadan önce gelen yönergelerin sayısını sayarak, geriye doğru bırakma kodlarının sayısını atlayıp, yalnızca yürütmeyi tamamlamış olan prolog bölümlerinin geri alınması için sıranın geri kalanını yürütür.
 
-Aşağıdaki tabloda, geriye doğru izleme kodları eşleme işlem kodlarını gösterir. Daha az ortak olanları iki, üç veya dört bile bayt gerektirirken en yaygın yalnızca tek baytlık kodlarıdır. Her kod en önemli bayt için en az önemli bayt depolanır. Geriye doğru izleme kod yapısını kodlamadan çünkü bu geriye doğru izleme kodları bire bir eşleme işlem için giriş sağlamak için tasarlanmıştır ve öğesinin ve sonuçları, kısmen geriye doğru izleme için izin vermek için kapanış yürütülen ARM EABI içinde açıklanan farklıdır.
+Aşağıdaki tabloda, bırakma kodlarından opkodlara eşleme gösterilmektedir. En yaygın olarak kullanılan kodlar yalnızca bir bayttır, daha az yaygın olarak iki, üç veya dört bayt gerektirir. Her kod, en önemli bayttan en az önemli bayta depolanır. Bu geriye doğru izleme kodları, kısmen yürütülen prologues ve epıtes 'in geriye doğru bir şekilde yürütülmesine izin vermek için, bu bırakma kodları, bir prolog ve epıg içindeki Opcode 'lar için bire bir eşlemeye sahip olacak şekilde tasarlandığından, geriye doğru izleme kodu yapısı ARM EABı 'da açıklanan kodlamadan farklıdır.
 
-|1 bayt|2 bayt|Bayt 3|4 bayt|Opsize|Açıklama|
+|Bayt 1|Byte 2|Byte 3|Bayt 4|Opsize|Açıklama|
 |------------|------------|------------|------------|------------|-----------------|
-|00-7F||||16|`add   sp,sp,#X`<br /><br /> burada X, (kod & 0x7F) \* 4|
-|80 BF|00-FF|||32|`pop   {r0-r12, lr}`<br /><br /> Kod & 0x2000 ve r0-r12 karşılık gelen bit kod & 0x1FFF ayarlanırsa, POP, LR burada POP|
-|C0 CF||||16|`mov   sp,rX`<br /><br /> Kod & 0x0F X olduğu|
-|D0-D7||||16|`pop   {r4-rX,lr}`<br /><br /> burada X, (kod & 0x03) + 4 ve LR, kaldırılmaz kod & 0x04|
-|DF D8||||32|`pop   {r4-rX,lr}`<br /><br /> burada X, (kod & 0x03) + 8 ve LR, kaldırılmaz kod & 0x04|
-|E0-E7||||32|`vpop  {d8-dX}`<br /><br /> X (kod & 0x07) burada + 8|
-|E8-EB|00-FF|||32|`addw  sp,sp,#X`<br /><br /> burada X, (kod & 0x03FF) \* 4|
-|EC-ED|00-FF|||16|`pop   {r0-r7,lr}`<br /><br /> Kod & 0x0100 ve r0-r7 karşılık gelen bit kod & 0x00FF ayarlanırsa, POP, LR burada POP|
-|EE|00-0F|||16|Microsoft'a özgü|
-|EE|10-FF|||16|Kullanılabilir|
-|EF|00-0F|||32|`ldr   lr,[sp],#X`<br /><br /> burada X, (kod & 0x000F) \* 4|
-|EF|10-FF|||32|Kullanılabilir|
-|F0 F4||||-|Kullanılabilir|
-|F5|00-FF|||32|`vpop  {dS-dE}`<br /><br /> (kod & 0x00F0) S olduğu >> 4 E ise kod & 0x000F|
-|F6|00-FF|||32|`vpop  {dS-dE}`<br /><br /> S olduğu ((Code & 0x00F0) >> 4) + 16 ve E (kod & 0x000F) + 16|
-|F7|00-FF|00-FF||16|`add   sp,sp,#X`<br /><br /> burada X, (kod & 0x00FFFF) \* 4|
-|F8|00-FF|00-FF|00-FF|16|`add   sp,sp,#X`<br /><br /> burada X, (kod & 0x00FFFFFF) \* 4|
-|F9|00-FF|00-FF||32|`add   sp,sp,#X`<br /><br /> burada X, (kod & 0x00FFFF) \* 4|
-|FA|00-FF|00-FF|00-FF|32|`add   sp,sp,#X`<br /><br /> burada X, (kod & 0x00FFFFFF) \* 4|
-|FB||||16|NOP (16-bit)|
-|FC||||32|NOP (32-bit)|
-|FD||||16|Son + 16 bit nop kapanış içinde|
-|FE||||32|Son + 32-bit nop kapanış içinde|
-|TT||||-|end|
+|00-7F||||16|`add   sp,sp,#X`<br /><br /> Burada X, (kod & 0x7F) \* 4|
+|80-BF|00-FF|||32|`pop   {r0-r12, lr}`<br /><br /> Code & 0x1FFF kodunda karşılık gelen bit ayarlandıysa, & 0x2000 ve R0-R12 kodu posoında LR eksik|
+|C0-CF||||16|`mov   sp,rX`<br /><br /> Burada X kod & 0x0F|
+|D0-D7||||16|`pop   {r4-rX,lr}`<br /><br /> Burada X (kod & 0x03) + 4 ve LR, kod & 0x04 ise|
+|D8-DF||||32|`pop   {r4-rX,lr}`<br /><br /> Burada X (kod & 0x03) + 8 ve LR, kod & 0x04 ise|
+|E0-E7||||32|`vpop  {d8-dX}`<br /><br /> Burada X, (kod & 0x07) + 8|
+|E8-EB|00-FF|||32|`addw  sp,sp,#X`<br /><br /> Burada X şeklindedir (kod & 0x03ff) \* 4|
+|EC-ED|00-FF|||16|`pop   {r0-r7,lr}`<br /><br /> Bu kod & 0x0100 ve R0-R7 kodu, karşılık gelen bit & kodda ayarlandıysa "0x00FF"|
+|PROFIL|00-0F|||16|Microsoft'a özgü|
+|PROFIL|10-FF|||16|Kullanılabilir|
+|AŞV|00-0F|||32|`ldr   lr,[sp],#X`<br /><br /> Burada X, (kod & 0x000f) \* 4|
+|AŞV|10-FF|||32|Kullanılabilir|
+|F0-F4||||-|Kullanılabilir|
+|F5|00-FF|||32|`vpop  {dS-dE}`<br /><br /> burada S (kod & 0x00F0) > > 4 ve E kod & 0x000F|
+|F6|00-FF|||32|`vpop  {dS-dE}`<br /><br /> burada S ((kod & 0x00F0) > > 4) + 16 ve E 'dir (kod & 0x000F) + 16|
+|F7|00-FF|00-FF||16|`add   sp,sp,#X`<br /><br /> Burada X (kod & 0x00ffff) \* 4|
+|F8|00-FF|00-FF|00-FF|16|`add   sp,sp,#X`<br /><br /> Burada X, (kod & 0x00ffffff) \* 4|
+|F9|00-FF|00-FF||32|`add   sp,sp,#X`<br /><br /> Burada X (kod & 0x00ffff) \* 4|
+|BELIRLEDIĞINIZ|00-FF|00-FF|00-FF|32|`add   sp,sp,#X`<br /><br /> Burada X, (kod & 0x00ffffff) \* 4|
+|ARIAL||||16|nop (16 bit)|
+|FC||||32|nop (32-bit)|
+|FD||||16|Son + 16-bit NOP, epıg|
+|KARAKTERLER||||32|son + 32 bitlik NOP, epıg|
+|BENZERI||||-|end|
 
-Bu bir geriye doğru izleme kodu ile onaltılı değerler için her bir bayt aralığı gösterir *kod*, opcode boyutu birlikte *Opsize* ve karşılık gelen özgün yönerge yorumu. Boş hücreleri kısa geriye doğru izleme kodları belirtin. Birden fazla bayt kapsayan büyük değerlere sahip yönergelerde en önemli bitleri ilk depolanır. *Opsize* alan her bir Thumb-2 işlemle ilişkili örtük opcode boyutunu gösterir. Görünen yinelenen girişler farklı kodlamaları tabloda, farklı opcode boyutları arasında ayrım yapmak için kullanılır.
+Bu, bir geriye doğru izleme kodu *kodundaki*her bir bayt için onaltılık değerlerin aralığını, *Opsize* ve karşılık gelen orijinal yönerge yorumunu gösterir. Boş hücreler daha kısa bırakma kodlarını gösterir. Birden çok bayt kapsayan büyük değerlere sahip yönergelerde, en önemli bitler önce depolanır. *Opsize* alanı her Thumb-2 işlemiyle ilişkili örtük Opcode boyutunu gösterir. Farklı kodlarla tablodaki görünen yinelenen girişler, farklı Opcode boyutlarını ayırt etmek için kullanılır.
 
-Geriye doğru izleme kodları, kodun ilk baytı karşılık gelen opcode yönerge akış boyutu ve kodun bayt cinsinden toplam boyut söyler şekilde tasarlanmıştır. Epilog ve prolog boyutunu hesaplamak için geriye doğru izleme kodları, dizinin başından sonuna kadar size yol ve karşılık gelen opcode ne olduğunu belirlemek için arama tablosu veya benzer bir yöntem kullanın.
+Geriye doğru izleme kodları, kodun ilk baytlık her ikisi de kodun baytındaki toplam boyutu ve yönerge akışındaki karşılık gelen Opcode boyutunu söylerken tasarlanmıştır. İşlem veya başlangıç boyutunu hesaplamak için, sıranın başından sonuna kadar geriye doğru izleme kodları yapın ve ilgili Opcode 'ın ne kadar süreyle olduğunu anlamak için bir arama tablosu veya benzer bir yöntem kullanın.
 
-Geriye doğru izleme kodları 0xFD ve normal son kod 0xFF, ancak bir ek nop opcode kapanış durumda, 16 bit veya 32-bit için hesap 0xFE eşdeğerdir. Öğesinin için kodları 0xFD ve 0xFE 0xFF tam olarak eşdeğerdir. Bu hesaplar için ortak kapanış sonlarını `bx lr` veya `b <tailcall-target>`, eşdeğer prolog yönergesi yok. Bu artış dizileri geriye doğru izleme olasılığını prolog ve sonuçları arasında paylaşılabilir.
+Geriye doğru izleme kodları 0xFD ve 0xFE, normal bitiş kodu 0xFF ile eşdeğerdir, ancak epıg durumunda 16 bit ya da 32 bit olan bir ek NOP işlem kodunun hesabıdır. Prologues için, 0xFD, 0xFE ve 0xFF kodları tam olarak eşdeğerdir. Bu hesap, yaygın olarak kullanılan `bx lr` ve eşdeğer bir prolog yönergesi olmayan bir veya `b <tailcall-target>`daha fazla. Bu, geri bırakma sıralarının, prolog ve epengues arasında paylaşılabilmesi olasılığını artırır.
 
-Çoğu durumda, geriye doğru izleme kodları aynı dizi prolog ve tüm sonuçları için kullanmak mümkündür. Ancak, kısmen yürütülen öğesinin ve sonuçları geriye doğru izleme işlemek için sıralama veya davranış farklılık birden çok geriye doğru izleme kodu dizilerinizi olması gerekebilir. Her kapanış kendi yürütmeye başlamak nereye gösterilecek bırakma dizi dizine sahip olmasının nedeni budur.
+Çoğu durumda, prolog ve tüm epenler için aynı bırakma kodları kümesini kullanmak mümkün olmalıdır. Ancak, kısmen yürütülen prologues ve epıtes 'nin geriye doğru listesini işlemek için, sıralama veya davranışta değişen birden fazla bırakma kodu sırası olması gerekebilir. Bu nedenle, her bir epıg 'nin yürütme işlemini nereden başlayabileceğiniz göstermek için geriye doğru bırakma dizisine sahip olduğu.
 
-### <a name="unwinding-partial-prologues-and-epilogues"></a>Geriye doğru izleme kısmi öğesinin ve sonuçları
+### <a name="unwinding-partial-prologues-and-epilogues"></a>Kısmi prologues ve Epıletler 'in geriye doğru sıkıştırması
 
-Prolog ve tüm sonuçları uzağa işlevinin gövdesi içinde özel durum oluştuğunda en yaygın geriye doğru bir durumdur. Bu durumda, unwinder dizin 0 geriye doğru izleme dizi başında kodları yürütür ve son opcode algılandığında kadar devam eder.
+En yaygın geri sarma, özel durumun işlevin gövdesinde gerçekleştiği ve tüm epenlerden uzakta olması durumdur. Bu durumda, unwinder dizin 0 ' dan başlayan geri açılım dizisindeki kodları yürütür ve bir bitiş Opcode saptanana kadar devam eder.
 
-Bir başlangıç sırasında bir özel durum oluşur veya kapanış Yürütülüyor, yığın çerçevesini yalnızca kısmen oluşturulur ve tam olarak ne doğru geri almak için yapılmıştır unwinder belirlemeniz gerekir.
+Bir prolog veya epıg yürütülürken bir özel durum oluştuğunda, yığın çerçevesi yalnızca kısmen oluşturulur ve unwinder doğru şekilde geri almak için tam olarak nelerin yapıldığını belirlemelidir.
 
-Örneğin, bu prolog ve epilog sırası göz önünde bulundurun:
+Örneğin, bu prolog ve epıg sırasını göz önünde bulundurun:
 
 ```asm
 0000:   push  {r0-r3}         ; 0x04
@@ -290,61 +290,61 @@ Bir başlangıç sırasında bir özel durum oluşur veya kapanış Yürütülü
 0148:   bx    lr
 ```
 
-Her opcode yanında, bu işlemi tanımlamak için uygun geriye doğru izleme kodudur. Son yönergede sayılmaz, kapanış geriye doğru izleme kodları bir Ayna görüntüsünü prolog için geriye doğru izleme kodları dizisidir. Bu durumda yaygındır ve prolog için geriye doğru izleme kodları her zaman prolog'ın yürütme siparişi ters sırada depolanır varsayılır nedenidir. Bu bize geriye doğru izleme kodları ortak bir dizi sağlar:
+Her Opcode seçeneğinin yanında, bu işlemi anlatmak için uygun geriye doğru izleme kodu bulunur. Prolog için bırakma kodları sırası, son yönergeyi saymadan, epıg için bırakma kodlarının bir yansıtma görüntüsüdür. Bu durum yaygın bir durumdur ve, prolog 'nin bırakma kodlarından her zaman ters sırada depolanmak üzere kabul edilmesi nedenidir. Bu, bize ortak bir bırakma kodları kümesi sağlar:
 
 ```asm
 0xc7, 0xdd, 0x04, 0xfd
 ```
 
-Son sırasının kapanış prolog uzun bir 16 bit yönergesi olduğu anlamına gelir için özel bir kod 0xFD kodudur. Geriye doğru izleme kodları büyük paylaşımı bu mümkün kılar.
+0xFD kodu, epıg 'nin 1 16-bit yönergesinin, prolog 'den daha uzun olduğu anlamına gelen sıranın sonuna yönelik özel bir koddur. Bu, geriye doğru izleme kodları paylaşımını mümkün kılar.
 
-Prolog ve epilog arasındaki işlev gövdesi yürütülürken bir özel durum oluşursa örnek kapanış ile geriye doğru izleme başlar, uzaklığındaki 0 Epilog kodu içinde veririz. Bu örnekte uzaklığı 0x140 karşılık gelir. Temizlik yapılmadığı için unwinder tam geriye doğru izleme dizisini yürütür. Özel durum Epilog kodu bir yönerge başına sonra oluşursa, bunun yerine, unwinder başarıyla ilk geriye doğru izleme kodu atlayarak geriye doğru izleyebilirsiniz. Verilen işlem kodlarını arasında bire bir eşleme ve, yönergesinden geriye doğru izleme, geriye doğru izleme kodları *n* kapanış içinde ilk unwinder atlamalısınız *n* geriye doğru izleme kodları.
+Örnekte, prolog ve epıg arasındaki işlev gövdesi yürütülürken bir özel durum oluşursa, epıg kodu içindeki 0 uzaklığında, geriye doğru izleme durumuyla başlar. Bu, örnekte 0x140 ' ın sapmasını karşılık gelir. Temizlik yapılmadığından, unwinder tam geriye doğru sırayı yürütür. Bunun yerine, özel durum, epıg kodunun başlangıcından sonraki bir yönerge oluşursa, unwinder ilk bırakma kodunu atlayarak başarıyla geriye doğru geri alabilir. İşlem kodları ve bırakma kodları arasında bire bir eşleme verildiğinde, epıg 'de yönerge *n* ' den geriye doğru geri dönmek için, unwinder ilk *n* bırakma kodunu atmalıdır.
 
-Benzer bir mantık için prolog tersine çalışır. Başlangıç Uzaklığı 0'dan geriye doğru izleme, yürütülecek bir şey vardır. Prolog geriye doğru izleme kodları ters sırada depolandığından tek bir yönerge geriye doğru izleme, geriye doğru izleme dizisi bir geriye doğru izleme kodu sonundan başlamanız gerekir. Genel durumda yönergesinden geriye doğru izleme, *n* prolog geriye doğru izleme sırasında yürütülen başlamalıdır *n* geriye doğru izleme kodları sonundan itibaren kodlarının listesi.
+Benzer mantık, prolog için ters bir şekilde çalışmaktadır. İşlem için 0 ' dan geriye doğru kaydıysanız, hiçbir şeyin yürütülmesi gerekmez. İçindeki bir yönergeden geri doğru bir şekilde geçiş yaptıysanız, işlem geri sarma kodları ters sırada depolandığından, geriye doğru izleme sırası uçtan bir geriye doğru izleme kodu başlatmalıdır. Genel durumda, prolog 'daki yönerge *n* ' den geri sarısı, kod listesinin sonundaki *n* geriye doğru izleme kodlarından yürütülmeye başlamamalıdır.
 
-Prolog ve epilog geriye doğru izleme kodları tam olarak her zaman eşleşmiyor. Bu durumda, geriye doğru izleme kodu dizisi kodlarının birkaç dizileri içeren gerekebilir. Kodları işlemesi için uzaklık belirlemek için bu mantıksal kullanın:
+Prolog ve epıg bırakma kodları her zaman tam olarak eşleşmez. Bu durumda, bırakma kodu dizisinin çeşitli kod dizilerini içermesi gerekebilir. Kodların işlenmesine başlama sapmasını öğrenmek için şu mantığı kullanın:
 
-1. Gelen işlevinin gövdesi içinde geriye doğru izleme, geriye doğru izleme kodları dizin 0 konumunda çalıştırmaya başlar ve son opcode ulaşılana kadar devam edin.
+1. İşlevin gövdesinin içinden geri sarılırsa, 0 dizininden bırakma kodlarını yürütmeye başlayın ve bir bitiş işlem koduna ulaşılana kadar devam edin.
 
-2. Gelen bir kapanış içinde geriye doğru izleme, kapanış kapsamı tarafından sağlanan kapanış özgü başlangıç dizini kullanın. Kaç bilgisayar bayttır kapanış başlangıcından hesaplayın. Tüm zaten yürütüldü yönergeleri muhasebesi kadar İleri geriye doğru izleme kodları atlayın. Bu noktada başlangıç geriye doğru izleme dizisi yürütün.
+2. Bir epınm içinden geriye doğru geri sarılıyorsanız, epıg kapsamı tarafından sunulan epıg 'e özgü başlangıç dizinini kullanın. BILGISAYARıN, epıg 'nin başından itibaren kaç bayt olduğunu hesaplayın. Tüm önceden yürütülmüş yönergelerin hesaba gelene kadar geriye doğru izleme kodları üzerinden ileri atlayın. Bu noktadan başlayarak geriye doğru izleme sırasını yürütün.
 
-3. Gelen giriş içinde geriye doğru izleme, geriye doğru izleme kodları 0 dizinden başlatın. Sıra prolog koddan uzunluğunu hesaplamak ve ardından kaç bayt PC prolog sonundan hesaplamak. Tüm yürütme geri yönergeleri muhasebesi kadar İleri geriye doğru izleme kodları atlayın. Bu noktada başlangıç geriye doğru izleme dizisi yürütün.
+3. Log 'nin içinden geriye doğru geri geçiş yaptıysanız, bırakma kodlarında 0 dizininden başlayın. Sıradaki prolog kodunun uzunluğunu hesaplayın ve sonra BILGISAYARıN bir süre sonundan itibaren kaç bayt olduğunu hesaplayın. Yürütülemeyen yönergelerin tümü için hesap tamamlanana kadar geriye doğru izleme kodları üzerinden ileri atlayın. Bu noktadan başlayarak geriye doğru izleme sırasını yürütün.
 
-Geriye doğru izleme kodları için prolog ilk dizideki her zaman olmalıdır. Bunlar aynı zamanda gelen gövdesi içinde geriye doğru izleme genel kullanım durumu geriye doğru izleme için kullanılan kodlarıdır. Herhangi bir kapanış özgü kodu dizilerinizi prolog kod dizisi hemen sonra uygulamanız gerekir.
+Prolog 'nin bırakma kodları her zaman dizide ilk olmalıdır. Bunlar aynı zamanda gövdeden geri doğru bir şekilde geçiş yapmak için kullanılan kodlardır. Epıg özgü kod dizileri, başlangıç kodu sırasından hemen sonra gelmelidir.
 
 ### <a name="function-fragments"></a>İşlev parçaları
 
-Kod iyileştirme için bir işlev bitişik olmayan parçalara bölmek yararlı olabilir. Bu yapıldığında, işlevin her parçayı kendi ayrı .pdata gerektirir — ve büyük olasılıkla .xdata — kayıt.
+Kod iyileştirmesi için bir işlevi bitişik olmayan parçalara bölmek faydalı olabilir. Bu işlem tamamlandığında, her işlev parçası kendi ayrı. pdata — ve muhtemelen. xdata — kaydı gerektirir.
 
-İşlev prolog işlevi başındaki ve bölünemez varsayılarak, dört işlev parça durumlar vardır:
+İşlevin başlangıcında olduğu ve bölünemeyeceği varsayıldığında, dört işlev parçası durumu vardır:
 
-- Yalnızca prolog; Tüm sonuçları diğer parçaları.
+- Yalnızca prolog; diğer parçalarla tüm epgular.
 
-- Prolog ve sonuçları; bir veya daha fazla diğer parçaları ek sonuçları.
+- Prolog ve bir veya daha fazla epengues; diğer parçalarla daha fazla epenler.
 
-- Prolog veya sonuçları yok; prolog ve diğer parçaları bir veya daha fazla sonuçları.
+- Prolog veya EPIO 'lar yok; diğer parçalarla bir veya daha fazla ependen sorumlu.
 
-- Sonuçları yalnızca; prolog ve diğer parçaları muhtemelen diğer sonuçları.
+- Yalnızca epengues; prolog ve büyük olasılıkla diğer parçalardan ek epenler.
 
-Bu durumda, yalnızca giriş tanımlanmış olmalıdır. Bu kısa .pdata formunda prolog normalde açıklayan ve belirterek yapılabilir bir *Ret* hiçbir kapanış belirtmek için 3 değeri. Tam sanal işlem bulunur formda dizin 0 konumunda prolog geriye doğru izleme kodları zamanki sağlama ve kapanış sayısı 0 belirterek bu yapılabilir.
+İlk durumda, yalnızca prolog 'nin açıklanmalıdır. Bu, normal olarak genel olarak açıklanarak ve hiç bir başlangıç değeri olmadığını göstermek için 3 ' ün bir *ret* değeri belirtilerek Compact. pdata formunda yapılabilir. Full. xdata formunda bu, dizin 0 ' da her zamanki gibi prolog bırakma kodları eklenerek ve bir epıg sayısı 0 olarak belirtilerek yapılabilir.
 
-Bir normal işlev gibi ikinci bir durumdur. Parça içinde yalnızca bir kapanış yoktur ve parça sonunda ise compact .pdata kaydı kullanılabilir. Aksi halde, tam bir sanal işlem bulunur kayıt kullanılmalıdır. Kapanış başlangıç için belirtilen uzaklık parça, işlevin özgün start başlangıcını göreli olduğunu aklınızda bulundurun.
+İkinci durum, normal bir işlev gibidir. Parçada yalnızca bir tane varsa ve parçanın sonunda ise, bir Compact. pdata kaydı kullanılabilir. Aksi takdirde, tam bir. xdata kaydı kullanılmalıdır. Epıg başlangıcı için belirtilen uzaklıklarla, işlevin orijinal başlangıcına değil, parçanın başlangıcına göre olduğunu unutmayın.
 
-Bunlar bir prolog içermeyen dışında üçüncü ve dördüncü birinci ve ikinci durumda, türevleri sırasıyla örnekleridir. Bu durumda kapanış başlamadan önce kod ve bu normalde prolog etkilerini geri alma tarafından sapmasına işlev gövdesinin bir parçası olarak kabul edilir varsayılır. Bu nedenle bu gibi durumlarda bırakma açıklar bir sözde prolog ile kodlanmalı gelen gövdesi içinde fakat belirlerken, 0-uzunluğu değerlendirilir yapılıp yapılmayacağını kısmi bir parça başlangıcında geriye doğru izleme. Alternatif olarak, bu sözde giriş muhtemelen eşdeğer işlemler gerçekleştirdiğinden kapanış aynı geriye doğru izleme kodları kullanarak açıklanan.
+Üçüncü ve dördüncü durumlar, ilk ve ikinci durumların, sırasıyla, bir prolog içermediği durumlar haricinde çeşitlerdir. Bu durumlarda, açığa çıkabilecek başlangıçtan önce kod olduğunu ve işlevin gövdesinin bir parçası olarak kabul edildiği varsayılır ve bu durum normalde, prolog 'un etkilerini geri alarak kaçınılırdı. Bu nedenle, gövdenin başlangıcında nasıl geriye doğru bir geriye doğru bir geri alma yapılıp yapılmayacağını belirleyen bir sözde prolog ile kodlanmış olması gerekir. Alternatif olarak, bu sözde prolog, eşdeğer işlemleri kabul ettiğinden, epıg ile aynı geriye doğru izleme kodları kullanılarak açıklanabilir.
 
-Üçüncü ve dördüncü durumlarda sözde prolog varlığını ya da ayarlayarak belirtilen *bayrağı* 2 ya da ayarlayarak compact .pdata kaydının alan *F* 1 sanal işlem bulunur üst bilgisindeki bayrağı. Her iki durumda da çekin kısmi prolog geriye doğru izleme göz ardı edilir ve kapanış olmayan tüm geriye doğru izler kabul edilir dolu.
+Üçüncü ve dördüncü durumlarda, sahte prolog 'nin varlığı, Compact. pdata kaydının *bayrak* alanı 2 ' ye ayarlanarak veya. xdata üstbilgisindeki *F* bayrağını 1 ' e ayarlayarak belirtilir. Her iki durumda da kısmi bir başlangıç geri bırakma denetimi yok sayılır ve tüm epıg olmayan kaynaklar dolu olarak kabul edilir.
 
-#### <a name="large-functions"></a>Büyük işlevleri
+#### <a name="large-functions"></a>Büyük Işlevler
 
-Parçaları, İşlevler sanal işlem bulunur üst bilgisindeki bit alanları tarafından uygulanan 512 KB sınırdan daha büyük açıklamak için kullanılabilir. Çok büyük bir işlev açıklamak için yalnızca bu parçaları 512 KB'tan küçük bölün. Her parça, böylece bir kapanış birden fazla parçaya bölmediğinden düşüncesiyle ayarlanması gerekir.
+Parçalar,. xdata üstbilgisindeki bit alanları tarafından uygulanan 512 KB sınırından daha büyük işlevleri tanımlamaya yönelik olarak kullanılabilir. Çok büyük bir işlevi anlatmak için, bunu 512 KB 'tan küçük parçalara kesmeniz yeterlidir. Her parça birden çok parçaya bölünemeyecek şekilde ayarlanmalıdır.
 
-İşlev yalnızca ilk parçasını bir giriş içerir. diğer tüm parçaları hiçbir prolog sahip olarak işaretlenir. Sonuçları sayısına bağlı olarak, her parça sıfır veya daha fazla sonuçları içerebilir. Her bir parça kapanış kapsamda parça, start işlevin başlangıcını göreli başlangıç uzaklığı belirtir aklınızda bulundurun.
+Yalnızca işlevin ilk parçasında bir prolog bulunur; diğer tüm parçalar hiçbir bir başlangıç olmadan işaretlenir. EPIO 'lar sayısına bağlı olarak, her parça sıfır veya daha fazla epgues içerebilir. Bir parçadaki her bir epıg kapsamının, işlevin başlangıcına değil, parçanın başlangıcına göre başlangıç sapmasını belirttiğinden emin olmak için aklınızda bulundurun.
 
-Hiçbir prolog ve epilog herhangi bir parçaya sahipse, kendi .pdata hala gerektirir — ve büyük olasılıkla .xdata — kaydı gelen işlevinin gövdesi içinde bırakma açıklar.
+Bir parçanın hiç bir başlangıç süresi yoksa ve hiçbir kaynak yoksa, işlevin gövdesinin içinden geriye doğru nasıl geri alınacağını betimleyen kendi. pdata — ve muhtemelen. xdata — için de kayıt gerekir.
 
-#### <a name="shrink-wrapping"></a>Sabit
+#### <a name="shrink-wrapping"></a>Küçültme-kaydırma
 
-Daha karmaşık bir özel durum işlevi parçaların *sabit*, işlevinde kaydı kaydetme gerektirmeyen basit durumlar için en iyi duruma getirmek için daha sonra işleve başından itibaren kayıt ertelemek için bir teknik kaydeder. Bu, bir dış bölgesi yığın alanı ayırır, ancak en az bir yazmaç kümesini kaydeder ve kaydeder ve ek kayıtlar geri yükleyen bir iç bölgesi açıklanabilir.
+İşlev parçalarının daha karmaşık bir özel durumu, *küçültme-sarmalama*, kayıt kaydetme gerektirmeyen basit servis taleplerini iyileştirmek için, kaydın başından sonra işlevin başlangıcından daha sonraki bir şekilde kaydedilmesini sağlayan bir tekniktir. Bu, yığın alanını ayıran, ancak en az sayıda kayıt kaydeden ve ek kayıtları kaydeden ve geri yükleyen bir iç bölgenin bulunduğu bir dış bölge olarak açıklanabilir.
 
 ```asm
 ShrinkWrappedFunction
@@ -360,19 +360,19 @@ ShrinkWrappedFunction
     pop    {r4, pc}          ; C:
 ```
 
-Naylon işlevleri genellikle normal prolog içinde ek kayıt kaydeder alan önceden ayırmak için beklenen ve kayıt kaydeder kullanarak gerçekleştirin `str` veya `stm` yerine `push`. Bu işlevin özgün prolog içinde tüm yığın işaretçisi işleme tutar.
+Daraltma Sarmalanan işlevler genellikle, ek kayıt için alanın önceden ayrılması, normal bir `str` `push`prolog 'da kaydedilir ve ardından kayıt işlemini veya `stm` yerine kullanarak kaydeder. Bu, işlevin özgün prolog öğesinde tüm yığın işaretçisi işlemesini korur.
 
-Örnek naylon işlevi A olarak işaretlenmiş, üç bölgelere bozuk durumda B ve C olarak yorumlar. Bir bölge işlevin sonuna kadar ek geçici olmayan kaydeder başlangıç ilk kapsar. Bu parça bir prolog ve hiçbir sonuçları sahip olarak tanımlamak için bir .pdata veya sanal işlem bulunur kaydı yeniden oluşturulması gerekir.
+Örnek küçültme Sarmalanan işlev, açıklamalarda bir, B ve C olarak işaretlenen üç bölgeye bölünmemelidir. İlk A bölgesi, diğer geçici olmayan kaydetme işlemi boyunca işlevin başlangıcını ele alır. Bir. pdata veya. xdata kaydı, bu parçayı, bir prolog ve epıtes yok olarak anlatmak için oluşturulmalıdır.
 
-Orta B bölge hiçbir prolog ve epilog hiçbir sahip bir parçasını tanımlayan kendi .pdata veya sanal işlem bulunur kaydı alır. Ancak, bu bölge için geriye doğru izleme kodları nedeniyle bir işlev gövdesinin dikkate almıştır mevcut olmalıdır. Bir bölge prolog ve işlem bir dizisi tarafından üretilmiş olan gibi B, bölge girmeden önce kaydedilmiş ek kayıtlar kayıtlı hem özgün kayıtları temsil eden bir bileşik prolog kodları açıklamanız gerekir.
+Orta B bölgesi, hiç bir prolog ve hiçbir kaynak olmayan bir parçayı açıklayan kendi. pdata veya. xdata kaydını alır. Ancak, bir işlev gövdesi olarak kabul edildiği için, bu bölgenin bırakma kodlarının hala mevcut olması gerekir. Kodlar, tek bir işlem dizisi tarafından üretilmiş gibi, bölge-A ' y A girmeden önce bir prolog ve bölge B ' yi girmeden önce kaydedilen ek Yazmaçları temsil eden bileşik bir prolog 'yi tanımlamalıdır.
 
-Kayıt bölgesi B açıklanan bileşik prolog bölge A prolog hem kaydedilmiş ek kayıtlar açıklamanız gerekir çünkü bir "İç prolog" B düşünülmez bölge için kaydeder. Parça B bir prolog sahip olacak şekilde açıklandığı gibi geriye doğru izleme kodları bu prolog boyutunu da kapsıyor ve bileşik prolog bire bir olarak yalnızca ek kayıtlar Kaydet işlem ile eşleyen bir şekilde tanımlamak için bir yolu yoktur.
+B bölgesi için belirtilen bileşik prolog 'nin hem bir prolog hem de ek kayıt kaydedilmesi gerektiğinden, B bölgesinin kayıt kayıtları "İç prolog" olarak kabul edilmez. B bölümü bir işlem ile açıklandığı takdirde, geriye doğru izleme kodları o işlem için de bu değeri de anladı ve bileşik prolog 'yi yalnızca ek kayıtları kaydeden Opcode 'ları ile eşleyen bir şekilde tanımlamanın bir yolu yoktur.
 
-Bunlar tamamlanana kadar bileşik prolog yığının durumunu doğru şekilde tanımlamaz çünkü ek kayıt kaydeder ve bölgesinin bir parçası dikkate alınmalıdır.
+Ek yazmaç, A bölgesinin bir parçası olarak düşünülmelidir, çünkü tamamlanana kadar, bileşik prolog yığının durumunu doğru bir şekilde açıklamaz.
 
-Son C bölge bir kapanış var ancak hiçbir prolog bir parça açıklayan kendi .pdata veya sanal işlem bulunur kayıt alır.
+Son C bölgesi kendi. pdata veya. xdata kaydını alır, bu, hiç bir prolog içermeyen ancak bir epıg içeren bir parçayı tanımlar.
 
-Bir yönerge için bölge B girişinden önce yığını düzenlenmesini azaltılabilir, alternatif bir yaklaşım da çalışabilir:
+Alternatif bir yaklaşım, B bölgesine girmeden önce yapılan yığın işleme işlemi bir yönergeye indirgenmeden da çalışabilir:
 
 ```asm
 ShrinkWrappedFunction
@@ -386,31 +386,31 @@ ShrinkWrappedFunction
     pop    {r4, pc}          ; C: restore non-volatile registers
 ```
 
-Burada her yönerge sınırında yığın geriye doğru izleme kodları bölge ile tam olarak tutarlı olduğunu anahtardır. Bu örnekte iç anında iletme önce bir geriye doğru izleme meydana gelirse, A bölgesinin bir parçası olarak kabul edilir ve yalnızca bir giriş bölgesi geriye doğru çözülür. Geriye doğru izleme iç anında iletme sonra meydana gelirse, hiçbir prolog var, ancak iç anında iletme hem özgün prolog A. benzer bir mantık bölgeden açıklayan geriye doğru izleme kodları olan B bölgesinin bir parçası için iç pop tutan kabul edilir.
+Buradaki anahtar, her yönerge sınırında, yığının, bölgenin bırakma kodlarıyla tamamen tutarlı olmasını sağlayan bir anahtardır. Bu örnekte iç göndermeden önce geriye doğru bir geri yükleme gerçekleşirse, A bölgesinin bir parçası olarak değerlendirilir ve yalnızca bir prolog bölgesi bozuk olur. Geri yükleme, iç göndermeden sonra gerçekleşirse, B bölgesinin bir parçası olarak kabul edilir, ancak iç gönderimi ve A bölgesinden gelen özgün prolog 'yi açıklayan bırakma kodlarına sahiptir. iç pop için benzer Logic barındırır.
 
-### <a name="encoding-optimizations"></a>Kodlama iyileştirmeleri
+### <a name="encoding-optimizations"></a>Kodlama Iyileştirmeleri
 
-Geriye doğru izleme kodları ve Dengeleme compact ve genişletilmiş veri biçimlerini yeteneği zenginliklere nedeniyle daha fazla alanı azaltmak için kodlama iyileştirmek için birçok fırsat vardır. Bu teknikler agresif kullanımıyla, İşlevler ve parçaları geriye doğru izleme kodları kullanarak açıklayan ağ yükünü oldukça minimal düzeyde olabilir.
+Bırakma kodlarının zenginliği ve verilerin sıkıştırılmış ve genişletilmiş biçimlerini kullanabilme özelliği sayesinde, alanı daha fazla azaltmak için kodlamayı iyileştirmek üzere çok sayıda fırsat vardır. Bu tekniklerin agresif kullanımıyla, geriye doğru izleme kodlarını kullanarak işlevleri ve parçaları tanımlamaya yönelik net ek yükü oldukça az olabilir.
 
-En önemli iyileştirme prolog/kapanış sınırları geriye doğru izleme amacıyla mantıksal prolog/kapanış sınırları derleyici açısından ile karıştırmamaya dikkat sağlamaktır. Geriye doğru izleme sınırları, TempDB'de ve verimliliği artırmak için sıkı yapılır. Örneğin, ek doğrulama gerçekleştirmek için yığın Kurulumu denendikten sonra bir prolog kodu içerebilir. Ancak tüm yığın işleme tamamlandıktan sonra daha fazla operations kodlamak için gerek yoktur ve ötesinde herhangi bir şey geriye doğru izleme prolog kaldırılabilir.
+En önemli iyileştirme, bir derleyici perspektifinden mantıksal prolog/epıg sınırları ile geriye doğru izleme için prolog/epıg sınırlarını kanıtlama konusunda dikkatli değildir. Geri sarma sınırları daraltılamaz ve verimliliği artırmak için daha sıkı hale getirilebilir. Örneğin, bir prolog, ek doğrulama denetimleri gerçekleştirmek için yığın kurulumundan sonra kod içerebilir. Ancak, tüm yığın düzenlemesi tamamlandıktan sonra, diğer işlemleri kodlamaya gerek kalmaz ve bunun dışındaki herhangi bir şey, geriye doğru izleme işleminden kaldırılabilirler.
 
-Bu aynı kural işlevi uzunluğu için geçerlidir. Veri yoksa — Örneğin, bir değişmez değer havuz —, izleyen bir işlevdeki bir kapanış, işlev uzunluğu bir parçası olarak dahil olmamalıdır. Yalnızca işlevin bir parçası olan kod için işlev küçülterek olasılığını kapanış sonuna ve CD olacağını çok büyük. kaydı kullanılabilir.
+Bu kural, işlev uzunluğu için de geçerlidir. Veriler varsa — Örneğin, bir işlev içinde bir epıden sonraki bir değer varsa, işlev uzunluğunun bir parçası olarak eklenmemelidir. İşlevi, işlevin yalnızca bir parçası olan koda daraltarak, epıg 'nin çok uçta ve bir Compact yolunda olacağı çok daha büyük olur. PDATA kaydı kullanılabilir.
 
-Bir giriş yığın işaretçisi başka bir kasaya kaydedildikten sonra genellikle herhangi bir başka işlem kaydetmek için gerek yoktur. İşlevi geriye doğru izlemek için kaydedilen kasadan SP kurtarmak için ilk şey yapmış olan ve kadar başka işlem bırakma üzerinde hiçbir etkisi yoktur.
+Bir prolog 'da, yığın işaretçisi başka bir kayda kaydedildikten sonra, genellikle başka bir ek kod kaydetmeniz gerekmez. İşlevi geriye doğru bırakmak için, yapılan ilk şey, değişiklikleri kaydedilen kayıt 'den kurtarmaktır ve bu nedenle daha fazla işlem, geriye doğru izleme üzerinde hiçbir etkiye sahip olmaz.
 
-Tek yönergeli sonuçları hiç, kapsam olarak kodlanması gerekmez veya olarak geriye doğru izleme kodları. Bu yönerge yürütülmeden önce bir geriye doğru izleme yer alıyorsa, ardından, işlev gövdesinde arasında için kabul edilebilir ve prolog geriye doğru izleme kodları yalnızca yürütme yeterlidir. Tek bir yönerge yürütüldükten sonra geriye doğru izleme yer alıyorsa, ardından tanımı gereği, başka bir bölgede gerçekleşir.
+Tek yönergeden epıtes 'in, kapsam veya bırakma kodları olarak her birinde kodlanmalıdır. Bu yönerge yürütülmeden önce bir geriye doğru hale getirmeniz durumunda, işlevin gövdesinde olduğu kabul edilebilir ve yalnızca işlem geri bırakma kodlarını yürütmek yeterlidir. Tek yönerge yürütüldükten sonra geri doğru gerçekleşdikten sonra, tanım tarafından başka bir bölgede gerçekleşir.
 
-Aynı nedenle önceki noktaya olarak kapanış ilk yönergesinin kodlamak çok yönerge sonuçları gerekmez: tam prolog geriye doğru izleme bu yönerge yürütülmeden önce geriye doğru izleme gerçekleşir, yeterli olur. Geriye doğru izleme bu yönerge sonra yer alıyorsa, yalnızca sonraki işlemleri göz önünde bulundurulması gerekir.
+Multi-instruction epıtes, önceki nokta ile aynı nedenden dolayı epıg 'nin ilk yönergesini kodlamak zorunda değildir: geriye doğru izleme, bu yönerge yürütülmeden önce gerçekleşmişse, tam bir prolog açılımı yeterlidir. Bu yönergeden sonra geri doğru gerçekleşirken yalnızca sonraki işlemler göz önünde bulundurulmalıdır.
 
-Bırakma, kod yeniden kullanımı agresif olmalıdır. Her dizide bir rastgele başlangıç noktası geriye doğru izleme kodları kapanış kapsam işaret tarafından belirtilen dizin. Bir önceki sıra başlangıcına işaret edecek şekilde yok; Bu, ortadaki işaret edebilir. Burada en iyi yaklaşım, istenen kod dizisi oluşturmak ve sonra bir tam bayt eşleşme sıralarının zaten kodlanmış havuzundaki tarayın ve yeniden kullanımı için herhangi bir kusursuz bir başlangıç noktası olarak kullanın sağlamaktır.
+Bırakma kodu yeniden kullanımı agresif olmalıdır. Her bir epıg kapsamı tarafından belirtilen dizin, geriye doğru izleme kodları dizisinde rastgele bir başlangıç noktasını işaret eder. Önceki bir dizinin başlangıcına işaret etmek zorunda değildir; Bu, ortaya işaret edebilir. Buradaki en iyi yaklaşım, istenen kod sırasını oluşturmak ve ardından, daha önce kodlanmış sıralar havuzunda tam bayt eşleşmesi için tarama yapmak ve yeniden kullanmak için bir başlangıç noktası olarak herhangi bir kusursuz eşleşme kullanmak içindir.
 
-Tek yönergeli sonuçları göz ardı edilir sonra varsa, kalan hiçbir sonuçları compact .pdata form; kullanmayı düşünün çok büyük olasılıkla bir kapanış olmaması durumunda olur.
+Tek yönergeden sonra, tek yönergeden sonra yok sayılırsa, bir Compact. pdata formu kullanmayı düşünün; Bu, bir epıte yokluğunda çok daha büyük olur.
 
 ## <a name="examples"></a>Örnekler
 
-Bu örneklerde, 0x00400000 görüntü tabanıdır.
+Bu örneklerde, görüntü tabanı 0x00400000 ' dır.
 
-### <a name="example-1-leaf-function-no-locals"></a>Örnek 1: Yaprak işlevi, hiçbir yerel öğeler
+### <a name="example-1-leaf-function-no-locals"></a>Örnek 1: Yaprak Işlevi, Yereller yok
 
 ```asm
 Prologue:
@@ -420,31 +420,31 @@ Epilogue:
   00453658: 4770      bx          lr
 ```
 
-.pdata (sabit, 2 kelimeden):
+. pdata (düzeltildi, 2 sözcük):
 
-- Word 0
+- Sözcük 0
 
-   - *İşlevi Başlat RVA* 0x000535F8 (= 0x004535F8 0x00400000) =
+   - *Işlev başlangıç RVA* = 0x000535f8 (= 0x004535f8-0x00400000)
 
-- Word 1
+- Sözcük 1
 
-   - *Bayrağı* = 1, kurallı prolog ve epilog biçimlerini belirten
+   - *Bayrak* = 1, kurallı prolog ve epıg biçimlerini belirtir
 
-   - *İşlev uzunluğu* 0x31 = (0x62/2 =)
+   - *Işlev uzunluğu* = 0x31 (= 0x62/2)
 
-   - *Ret* 16-bit dala iade gösteren, 1 =
+   - *Ret* = 1, 16 bit dal dönüşü belirtir
 
-   - *H* = 0, parametrelerini belirten değil bağlantılı
+   - *H* = 0, parametrelerin bağlantılı olmadığını belirtir
 
-   - *R*= 0 ve *Reg* = 1, anında iletme/pop r4 r5 belirten
+   - *R*= 0 ve *reg* = 1, R4-R5 push/pop belirten
 
-   - *M* hiçbir LR kaydedilemiyor/geri belirten, 0 =
+   - *L* = 0, bir LR kaydet/geri yükle olduğunu belirtir
 
-   - *C* hiçbir çerçeve zincirleme belirten, 0 =
+   - *C* = 0, çerçeve zinciri olmadığını gösterir
 
-   - *Ayarla yığın* hiçbir yığın ayarlama belirten, 0 =
+   - Yığın ayarlama = 0, yığın ayarlaması olmadığını gösterir
 
-### <a name="example-2-nested-function-with-local-allocation"></a>Örnek 2: Yerel ayırma ile iç içe geçmiş işlevi
+### <a name="example-2-nested-function-with-local-allocation"></a>Örnek 2: Yerel ayırma ile iç içe Işlev
 
 ```asm
 Prologue:
@@ -455,31 +455,31 @@ Epilogue:
   00453414: BDF0      pop         {r4-r7, pc}
 ```
 
-.pdata (sabit, 2 kelimeden):
+. pdata (düzeltildi, 2 sözcük):
 
-- Word 0
+- Sözcük 0
 
-   - *İşlevi Başlat RVA* 0x000533AC = (0x004533AC =-0x00400000)
+   - *Işlev başlangıç RVA* = 0x000533ac (= 0x004533ac-0x00400000)
 
-- Word 1
+- Sözcük 1
 
-   - *Bayrağı* = 1, kurallı prolog ve epilog biçimlerini belirten
+   - *Bayrak* = 1, kurallı prolog ve epıg biçimlerini belirtir
 
-   - *İşlev uzunluğu* 0x35 = (0x6A/2 =)
+   - *Işlev uzunluğu* = 0x35 (= 0x6A/2)
 
-   - *Ret* dönüş pop {pc} belirten, 0 =
+   - *Ret* = 0, bir pop {PC} dönüşü olduğunu belirtir
 
-   - *H* = 0, parametrelerini belirten değil bağlantılı
+   - *H* = 0, parametrelerin bağlantılı olmadığını belirtir
 
-   - *R*= 0 ve *Reg* = 3, anında iletme/pop r4 r7 belirten
+   - *R*= 0 ve *reg* = 3, R4-R7 push/pop 'u belirten
 
-   - *M* = 1, LR gösteren kayıtlı/geri yüklendi
+   - *L* = 1, LR 'in kaydedildiğini/geri yüklendiğini belirtir
 
-   - *C* hiçbir çerçeve zincirleme belirten, 0 =
+   - *C* = 0, çerçeve zinciri olmadığını gösterir
 
-   - *Yığın ayarlamak* = 3 (0x0C/4 =)
+   - *Stack ayarlaması* = 3 (= 0x0C/4)
 
-### <a name="example-3-nested-variadic-function"></a>Örnek 3: İç içe geçmiş bağımsız değişken içeren işlevi
+### <a name="example-3-nested-variadic-function"></a>Örnek 3: İç içe değişen bağımsız değişken Işlevi
 
 ```asm
 Prologue:
@@ -490,31 +490,31 @@ Epilogue:
   004539D8: F85D FB14 ldr         pc, [sp], #0x14
 ```
 
-.pdata (sabit, 2 kelimeden):
+. pdata (düzeltildi, 2 sözcük):
 
-- Word 0
+- Sözcük 0
 
-   - *İşlevi Başlat RVA* 0x00053988 (= 0x00453988 0x00400000) =
+   - *Işlev başlangıç RVA* = 0x00053988 (= 0x00453988-0x00400000)
 
-- Word 1
+- Sözcük 1
 
-   - *Bayrağı* = 1, kurallı prolog ve epilog biçimlerini belirten
+   - *Bayrak* = 1, kurallı prolog ve epıg biçimlerini belirtir
 
-   - *İşlev uzunluğu* 0x2A = (0x54/2 =)
+   - *Işlev uzunluğu* = 0x2A (= 0x54/2)
 
-   - *Ret* = {pc} pop belirten, 0-style return (Bu durumda bir ldr pc [], #0x14 return sp)
+   - *Ret* = 0, bir pop {PC} stili geri dönüşü (Bu durumda bir LDR bilgisayar, [SP], #0x14 dönüşü) belirtir
 
-   - *H* = 1, parametrelerini belirten bağlantılı
+   - *H* = 1, parametre bağlı olduğunu belirtir
 
-   - *R*= 0 ve *Reg* = 2, anında iletme/pop r4 r6 belirten
+   - *R*= 0 ve *reg* = 2, R4-R6 push/pop belirten
 
-   - *M* = 1, LR gösteren kayıtlı/geri yüklendi
+   - *L* = 1, LR 'in kaydedildiğini/geri yüklendiğini belirtir
 
-   - *C* hiçbir çerçeve zincirleme belirten, 0 =
+   - *C* = 0, çerçeve zinciri olmadığını gösterir
 
-   - *Ayarla yığın* hiçbir yığın ayarlama belirten, 0 =
+   - Yığın ayarlama = 0, yığın ayarlaması olmadığını gösterir
 
-### <a name="example-4-function-with-multiple-epilogues"></a>Örnek 4: Birden çok sonuçları ile işlevi
+### <a name="example-4-function-with-multiple-epilogues"></a>Örnek 4: Birden çok Epengues ile işlev
 
 ```asm
 Prologue:
@@ -536,47 +536,47 @@ Epilogues:
   00459636: F028 FF0F bl          KeBugCheckEx     ; end of function
 ```
 
-.pdata (sabit, 2 kelimeden):
+. pdata (düzeltildi, 2 sözcük):
 
-- Word 0
+- Sözcük 0
 
-   - *İşlevi Başlat RVA* 0x000592F4 (= 0x004592F4 0x00400000) =
+   - *Işlev başlangıç RVA* = 0x000592f4 (= 0x004592f4-0x00400000)
 
-- Word 1
+- Sözcük 1
 
-   - *Bayrağı* = 0, mevcut sanal işlem bulunur kaydı (birden çok sonuçları nedeniyle gereklidir) gösteren
+   - *Bayrak* = 0,. xdata kaydı mevcut (birden çok epiler nedeniyle gereklidir)
 
-   - *Sanal işlem bulunur adresi* -0x00400000
+   - *. xdata adresi* -0x00400000
 
-(değişken, 6 sözcükleri) sanal işlem bulunur:
+. xdata (değişken, 6 sözcük):
 
-- Word 0
+- Sözcük 0
 
-   - *İşlev uzunluğu* 0x0001A3 (= 0x000346/2) =
+   - *Işlev uzunluğu* = 0x0001a3 (= 0x000346/2)
 
-   - *Vers* xdata ürününün ilk sürümünü belirten, 0 =
+   - *Vers* = 0, ilk XData sürümünü belirtir
 
-   - *X* hiçbir özel durum verileri belirten, 0 =
+   - *X* = 0, özel durum verisi olmadığını gösterir
 
-   - *E* kapanış kapsam listesi belirten, 0 =
+   - *E* = 0, bir epıg kapsamlarının listesini belirtir
 
-   - *F* prolog dahil tam işlev açıklamasını belirten, 0 =
+   - *F* = 0, prolog dahil olmak üzere tam bir işlev açıklaması belirtir
 
-   - *Kapanış sayısı* 0x04, 4 toplam kapanış kapsamları belirten =
+   - *Epıg sayısı* = 0x04, toplam 4 Toplam epıg kapsamını belirten
 
-   - *Kod sözcük* 0x01, geriye doğru izleme kodları bir 32-bit sözcük belirten =
+   - *Kod kelimeleri* = 0x01, geriye doğru izleme kodları için 1 32 bit kelime
 
-- 1-4, 4 konumlarda 4 kapanış kapsamları açıklayan sözcükler. Her kapsam bırakma kodlarının 0x00, uzaklığında prolog paylaşılan, ortak bir dizi sahip ve koşul 0x0E belirtme koşulsuz (her zaman).
+- 4 konumda 4 epıg kapsamlarını açıklayan 1-4 kelimeleri. Her kapsam, 0x00 uzaklığında ortak bir geriye doğru bırakma kodları kümesine sahiptir ve bu, 0Xe (her zaman) koşulunu belirterek koşulsuz olur.
 
-- Geriye doğru izleme kodları, Word 5 başlatılıyor: (prolog/kapanış arasında paylaşılan)
+- Geriye doğru izleme kodları, 5. sözcükten itibaren: (prolog/epıg arasında paylaşılan)
 
-   - 0 = 0x06 kod geriye doğru izleme: sp += (6 << 2)
+   - Bırakma kodu 0 = 0x06: SP + = (6 < < 2)
 
-   - Bırakma kodu 1 = 0xDE: pop {r4 r10, lr}
+   - Bırakma kodu 1 = 0xDE: pop {r4-r10, LR}
 
-   - Bırakma kodu 2 = 0xFF: son
+   - Bırakma kodu 2 = 0xFF: bitiş
 
-### <a name="example-5-function-with-dynamic-stack-and-inner-epilogue"></a>Örnek 5: Dinamik yığınını ve iç kapanış işlevi
+### <a name="example-5-function-with-dynamic-stack-and-inner-epilogue"></a>Örnek 5: Dinamik yığın ve Iç EPG ile işlev
 
 ```asm
 Prologue:
@@ -596,49 +596,49 @@ Epilogue:
   00485E2A: F7FF BE7D b           #0x485B28    ; end of function
 ```
 
-.pdata (sabit, 2 kelimeden):
+. pdata (düzeltildi, 2 sözcük):
 
-- Word 0
+- Sözcük 0
 
-   - *İşlevi Başlat RVA* 0x00085A20 (= 0x00485A20 0x00400000) =
+   - *Işlev başlangıç RVA* = 0x00085a20 (= 0x00485a20-0x00400000)
 
-- Word 1
+- Sözcük 1
 
-   - *Bayrağı* = 0, mevcut sanal işlem bulunur kaydı (birden çok sonuçları nedeniyle gereklidir) gösteren
+   - *Bayrak* = 0,. xdata kaydı mevcut (birden çok epiler nedeniyle gereklidir)
 
-   - *Sanal işlem bulunur adresi* -0x00400000
+   - *. xdata adresi* -0x00400000
 
-(değişken, 3 sözcükleri) sanal işlem bulunur:
+. xdata (değişken, 3 sözcük):
 
-- Word 0
+- Sözcük 0
 
-   - *İşlev uzunluğu* 0x0001A3 (= 0x000346/2) =
+   - *Işlev uzunluğu* = 0x0001a3 (= 0x000346/2)
 
-   - *Vers* xdata ürününün ilk sürümünü belirten, 0 =
+   - *Vers* = 0, ilk XData sürümünü belirtir
 
-   - *X* hiçbir özel durum verileri belirten, 0 =
+   - *X* = 0, özel durum verisi olmadığını gösterir
 
-   - *E* kapanış kapsam listesi belirten, 0 =
+   - *E* = 0, bir epıg kapsamlarının listesini belirtir
 
-   - *F* prolog dahil tam işlev açıklamasını belirten, 0 =
+   - *F* = 0, prolog dahil olmak üzere tam bir işlev açıklaması belirtir
 
-   - *Kapanış sayısı* 0x001, 1 toplam kapanış kapsamını belirten =
+   - *Epıg sayısı* = 0x001, toplam 1 Toplam epıg kapsamını belirten
 
-   - *Kod sözcük* 0x01, geriye doğru izleme kodları bir 32-bit sözcük belirten =
+   - *Kod kelimeleri* = 0x01, geriye doğru izleme kodları için 1 32 bit kelime
 
-- Word 1: Kapanış kapsamda 0x00 ve 0x0E (her zaman), bir koşul ile geriye doğru izleme kodu dizininden başlayarak uzaklığı 0xC6, (0x18C/2 =)
+- Word 1: 0xC6 (= 0x18C/2) uzaklığında epıg kapsamı, 5. yeniden bırakma kodu dizinini 0x00 ve 0x0E (her zaman) durumuyla başlatma
 
-- Geriye doğru izleme kodları, Word 2 konumunda başlayarak: (prolog/kapanış arasında paylaşılan)
+- Bırakma kodları, Word 2 ' den başlayarak: (prolog/epıg arasında paylaşılan)
 
-   - Bırakma kodu 0 = 0xC6: sp r6 =
+   - Bırakma kodu 0 = 0xC6: SP = R6
 
-   - Bırakma kodu 1 = 0xDC: pop {r4 r8, lr}
+   - Bırakma kodu 1 = 0xDC: pop {r4-R8, LR}
 
-   - 2 = 0x04 kod geriye doğru izleme: sp += (4 << 2)
+   - Bırakma kodu 2 = 0x04: SP + = (4 < < 2)
 
-   - Kod 3 = 0xFD bırakma: son, kapanış 16-bit yönergesi olarak sayar
+   - Bırakma kodu 3 = 0xFD: son, epıg için 16 bit yönerge olarak sayılır
 
-### <a name="example-6-function-with-exception-handler"></a>Örnek 6: Özel durum işleyicisi işlevi
+### <a name="example-6-function-with-exception-handler"></a>Örnek 6: Özel durum Işleyicisi olan işlev
 
 ```asm
 Prologue:
@@ -654,51 +654,51 @@ Epilogue:
   00488C70: BD90      pop         {r4, r7, pc}
 ```
 
-.pdata (sabit, 2 kelimeden):
+. pdata (düzeltildi, 2 sözcük):
 
-- Word 0
+- Sözcük 0
 
-   - *İşlevi Başlat RVA* 0x00088C24 (= 0x00488C24 0x00400000) =
+   - *Işlev başlangıç RVA* = 0x00088c24 (= 0x00488c24-0x00400000)
 
-- Word 1
+- Sözcük 1
 
-   - *Bayrağı* = 0, mevcut sanal işlem bulunur kaydı (birden çok sonuçları nedeniyle gereklidir) gösteren
+   - *Bayrak* = 0,. xdata kaydı mevcut (birden çok epiler nedeniyle gereklidir)
 
-   - *Sanal işlem bulunur adresi* -0x00400000
+   - *. xdata adresi* -0x00400000
 
-(değişken, 5 sözcük) sanal işlem bulunur:
+. xdata (değişken, 5 sözcük):
 
-- Word 0
+- Sözcük 0
 
-   - *İşlev uzunluğu* 0x000027 (= 0x00004E/2) =
+   - *Işlev uzunluğu* = 0x000027 (= 0x00004e/2)
 
-   - *Vers* xdata ürününün ilk sürümünü belirten, 0 =
+   - *Vers* = 0, ilk XData sürümünü belirtir
 
-   - *X* = 1, özel durum verileri gösteren
+   - *X* = 1, özel durum verilerinin mevcut olduğunu belirtir
 
-   - *E* tek bir kapanış gösteren, 1 =
+   - *E* = 1, tek bir epıg olduğunu belirtir
 
-   - *F* prolog dahil tam işlev açıklamasını belirten, 0 =
+   - *F* = 0, prolog dahil olmak üzere tam bir işlev açıklaması belirtir
 
-   - *Kapanış sayısı* 0x00, kapanış geriye doğru izleme kodları Başlat 0x00 uzaklığında belirten =
+   - *EPIO Count* = 0x00, epıg bırakma kodları 0x00 uzaklığında başlar
 
-   - *Kod sözcük* 0x02, geriye doğru izleme kodları iki 32-bit sözcük belirten =
+   - *Kod kelimeleri* = 0x02, geriye doğru izleme kodlarının 2 32 bitlik sözcüklerini belirten
 
-- Geriye doğru izleme kodları, Word 1'den başlayarak:
+- Geriye doğru izleme kodları, 1. sözcükten itibaren:
 
-   - Bırakma kodu 0 = 0xC7: sp r7 =
+   - Bırakma kodu 0 = 0xC7: SP = R7
 
-   - Bırakma kodu 1 = 0x05: sp += (5 << 2).
+   - Bırakma kodu 1 = 0x05: SP + = (5 < < 2)
 
-   - Bırakma 2 = 0xED/0x90 kodu: {r4, r7, lr} açılır
+   - Bırakma kodu 2 = 0Faksla/0x90: pop {r4, R7, LR}
 
-   - Bırakma kodu 4 = 0xFF: son
+   - Bırakma kodu 4 = 0xFF: bitiş
 
-- Word 3 belirtir bir özel durum işleyicisi 0x0019A7ED = (0x0059A7ED - = 0x00400000)
+- Word 3 bir özel durum işleyicisi belirtir = 0x0019A7ED (= 0x0059A7ED-0x00400000)
 
-- Sözcükleri 4 ve ötesine satır içine alınmış bir özel durum verileri
+- 4 ve ötesi sözcükleri satır içine alınmış özel durum verileri
 
-### <a name="example-7-funclet"></a>Örnek 7: Funclet'inde
+### <a name="example-7-funclet"></a>Örnek 7: Funclet 'inde sembol
 
 ```asm
 Function:
@@ -713,29 +713,29 @@ Function:
   00488C86: BD00      pop         {pc}
 ```
 
-.pdata (sabit, 2 kelimeden):
+. pdata (düzeltildi, 2 sözcük):
 
-- Word 0
+- Sözcük 0
 
-   - *İşlevi Başlat RVA* 0x00088C72 (= 0x00488C72 0x00400000) =
+   - *Işlev başlangıç RVA* = 0x00088c72 (= 0x00488c72-0x00400000)
 
-- Word 1
+- Sözcük 1
 
-   - *Bayrağı* = 1, kurallı prolog ve epilog biçimlerini belirten
+   - *Bayrak* = 1, kurallı prolog ve epıg biçimlerini belirtir
 
-   - *İşlev uzunluğu* 0x0B = (0x16/2 =)
+   - *Işlev uzunluğu* = 0x0B (= 0x16/2)
 
-   - *Ret* dönüş pop {pc} belirten, 0 =
+   - *Ret* = 0, bir pop {PC} dönüşü olduğunu belirtir
 
-   - *H* = 0, parametrelerini belirten değil bağlantılı
+   - *H* = 0, parametrelerin bağlantılı olmadığını belirtir
 
-   - *R*= 0 ve *Reg* = 7 yazmaç yok belirten kaydedilen ve geri
+   - *R*= 0 ve *reg* = 7, kaydedilmiş bir kayıt olmadığını ve geri yüklendiğini belirtir
 
-   - *M* = 1, LR gösteren kayıtlı/geri yüklendi
+   - *L* = 1, LR 'in kaydedildiğini/geri yüklendiğini belirtir
 
-   - *C* hiçbir çerçeve zincirleme belirten, 0 =
+   - *C* = 0, çerçeve zinciri olmadığını gösterir
 
-   - *Ayarla yığın* 1 × 4 bayt yığın ayarlama gösteren, 1 =
+   - *Yığın ayarlama* = 1, 1 × 4 baytlık yığın ayarlamayı belirtir
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

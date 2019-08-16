@@ -8,27 +8,27 @@ helpviewer_keywords:
 - threading [ATL], free threaded marshaler
 - FTM in ATL
 ms.assetid: 2db88a13-2217-4ebc-aa7e-432d5da902eb
-ms.openlocfilehash: ddea5a74dbd40d097398d04c0b2bc274df5ec972
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 94e4961c69e9441d160d72d9b72afcee3677e25f
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62252513"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69491906"
 ---
 # <a name="atl-and-the-free-threaded-marshaler"></a>ATL ve Ücretsiz İş Parçacıklı Sıralayıcı
 
-ATL Basit Nesne Sihirbazı'nın öznitelikler sayfasını ücretsiz iş parçacıklı sıralayıcı (FTM) toplamak kendi sınıfınızı izin veren bir seçenek sunar.
+ATL basit nesne Sihirbazı 'nın öznitelikler sayfası, sınıfınızın boş iş parçacıklı Sıralayıcı 'yı (FTM) toplamasını sağlayan bir seçenek sunar.
 
-Sihirbaz ücretsiz iş parçacıklı Sıralayıcı bir örneğini oluşturmak için kod oluşturur `FinalConstruct` ve bu örnekte sürüm `FinalRelease`. COM_INTERFACE_ENTRY_AGGREGATE makrosu COM eşlemesine emin olmak için otomatik olarak eklenen `QueryInterface` için istekleri [IMarshal](/windows/desktop/api/objidlbase/nn-objidlbase-imarshal) ücretsiz iş parçacıklı sıralayıcı tarafından işlenir.
+Sihirbaz, içindeki `FinalConstruct` serbest iş parçacıklı Sıralayıcı 'nın bir örneğini oluşturmak için kod üretir ve bu `FinalRelease`örneği serbest bırakın. COM_INTERFACE_ENTRY_AGGREGATE makrosu, `QueryInterface` [imarshal](/windows/win32/api/objidlbase/nn-objidlbase-imarshal) isteklerinin ücretsiz iş parçacıklı Sıralayıcı tarafından işlenmesini sağlamak için otomatik olarak com haritasına eklenir.
 
-Ücretsiz iş parçacıklı Sıralayıcı doğrudan erişim arabirimlerine nesneniz üzerinde herhangi bir iş parçacığı aynı işlemde, çapraz-grup aramaları hızlandırma izin verir. Bu seçenek her iki iş parçacığı modeli kullandığınız sınıflar için tasarlanmıştır.
+Ücretsiz iş parçacıklı Sıralayıcı, aynı işlemdeki herhangi bir iş parçacığından nesneniz üzerindeki arabirimlere doğrudan erişim sağlar ve gruplar arası çağrıları hızlandırın. Bu seçenek, her Iki iş parçacığı modelini kullanan sınıflar için tasarlanmıştır.
 
-Bu seçenek kullanıldığında, sınıf verilerini iş parçacığı güvenliği için sorumluluğunu üstlenmelidir. Ayrıca, ücretsiz iş parçacıklı Sıralayıcı toplama ve diğer nesnelerden elde edilen arabirim işaretçilerini kullanması gereken nesneleri, arabirimler doğru sıralanmış emin olmak için ek adımlar atmanız gerekir. Genellikle bu arabirim işaretçilerini genel arabirim tablosu (GIT) depolama ve işaretçiyi GİT'ten her kullanılışında alma içerir. ATL sağlar sınıfını [Ccomgıtptr](../atl/reference/ccomgitptr-class.md) git'te arabirim işaretçilerini kullanmanıza yardımcı olacak.
+Bu seçenek kullanıldığında, sınıfların iş parçacığı güvenliği için bir sorumluluğu olmalıdır. Ayrıca, serbest iş parçacıklı sıralayıcıyı toplayan ve diğer nesnelerden elde edilen arabirim işaretçilerinin kullanılması gereken nesneler, arabirimlerin doğru bir şekilde sıralanmasını sağlamak için ek adımlar almalıdır. Genellikle bu, arabirim işaretçilerinin genel arabirim tablosunda (GIT) depolanmasını ve her kullanıldığında GIT 'ten işaretçiyi almanızı içerir. ATL, GIT 'te depolanan arabirim işaretçilerini kullanmanıza yardımcı olmak için [CComGITPtr](../atl/reference/ccomgitptr-class.md) sınıfını sağlar.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kavramları](../atl/active-template-library-atl-concepts.md)<br/>
-[CoCreateFreeThreadedMarshaler](/windows/desktop/api/combaseapi/nf-combaseapi-cocreatefreethreadedmarshaler)<br/>
-[IMarshal](/windows/desktop/api/objidlbase/nn-objidlbase-imarshal)<br/>
-[Genel arabirim tablosu kullanma zamanı](/windows/desktop/com/when-to-use-the-global-interface-table)<br/>
-[İşlem sunucusu iş parçacığı oluşturma sorunları](/windows/desktop/com/in-process-server-threading-issues)
+[Tiren](../atl/active-template-library-atl-concepts.md)<br/>
+[CoCreateFreeThreadedMarshaler](/windows/win32/api/combaseapi/nf-combaseapi-cocreatefreethreadedmarshaler)<br/>
+[IMarshal](/windows/win32/api/objidlbase/nn-objidlbase-imarshal)<br/>
+[Genel arabirim tablosunun ne zaman kullanılacağı](/windows/win32/com/when-to-use-the-global-interface-table)<br/>
+[Işlem içi sunucu Iş parçacığı sorunları](/windows/win32/com/in-process-server-threading-issues)

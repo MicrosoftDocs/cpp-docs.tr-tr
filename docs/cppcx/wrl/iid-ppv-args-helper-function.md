@@ -7,19 +7,19 @@ f1_keywords:
 helpviewer_keywords:
 - IID_PPV_ARGS_Helper function
 ms.assetid: afee9b23-8df1-4575-903f-e9ba748418f0
-ms.openlocfilehash: 5ef4dd6c9db2d19e0c8a4143c5b4ed3f0ac75f6a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e7733ae6084b64c20dff5a2c35d7a31c614d6e44
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62398270"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69500501"
 ---
-# <a name="iidppvargshelper-function"></a>IID_PPV_ARGS_Helper İşlevi
+# <a name="iid_ppv_args_helper-function"></a>IID_PPV_ARGS_Helper İşlevi
 
-Belirtilen bağımsız değişken türü öğesinden türetilen doğrular `IUnknown` arabirimi.
+Belirtilen bağımsız değişkenin türünün `IUnknown` arabiriminden türediğini doğrular.
 
 > [!IMPORTANT]
-> Bu şablon uzmanlığı WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir. Kullanım [IID_PPV_ARGS](/windows/desktop/api/combaseapi/nf-combaseapi-iid_ppv_args) yerine.
+> Bu şablon özelleştirmesi WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir. Bunun yerine [IID_PPV_ARGS](/windows/win32/api/combaseapi/nf-combaseapi-iid_ppv_args) kullanın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -32,21 +32,21 @@ void** IID_PPV_ARGS_Helper(
 
 ### <a name="parameters"></a>Parametreler
 
-*T*<br/>
-Bağımsız değişken türünü *pp*.
+*ŞI*<br/>
+*PP*bağımsız değişkeninin türü.
 
-*PP*<br/>
-Karakteriyle dolaylı bir işaretçi.
+*Sy*<br/>
+Düzenli olarak dolaylı bir işaretçi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bağımsız değişken *pp* işaretçi-için-a-işaretçisine dönüştürme **void**.
+Bağımsız değişkeni, **void**işaretçisine bir işaretçiden işaretçisine *PP* .
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir derleme zamanı hatası oluşturulur şablon parametresi *T* öğesinden türetilen değil `IUnknown`.
+Derleme zamanı hatası, *T* şablon parametresi öğesinden `IUnknown`türetilmezse oluşturulur.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** client.h
+**Üstbilgi:** Client. h
 

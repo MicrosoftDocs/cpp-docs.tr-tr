@@ -1,5 +1,5 @@
 ---
-title: Platform::COMException sınıfı
+title: 'Platform:: COMException sınıfı'
 ms.date: 12/30/2016
 ms.topic: reference
 f1_keywords:
@@ -9,16 +9,16 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::COMException Class
 ms.assetid: 44fda4e5-574f-4d12-ab5f-4ff3f277448d
-ms.openlocfilehash: 5a74184a8cbc4126988da2ba0be61d9f5b2bb71c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: eb6f3e0e4860687d0d47294e11b7741294abac20
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62383353"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69500543"
 ---
-# <a name="platformcomexception-class"></a>Platform::COMException sınıfı
+# <a name="platformcomexception-class"></a>Platform:: COMException sınıfı
 
-Uygulama yürütme sırasında gerçekleşen COM hataları temsil eder. COMException bir dizi önceden tanımlanmış, standart özel durumlar için temel sınıftır.
+Uygulama yürütme sırasında oluşan COM hatalarını temsil eder. COMException, bir dizi önceden tanımlanmış standart özel durum için temel sınıftır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -28,9 +28,9 @@ public ref class COMException : Exception,    IException,    IPrintable,    IEqu
 
 ### <a name="members"></a>Üyeler
 
-COMException sınıfı nesne sınıfı ve IException IPrintable ve IEquatable arabirimleri devralır.
+COMException sınıfı, nesne sınıfından ve ıvınexception, ıyazdırılabilir ve IEquatable arabirimlerinden devralır.
 
-COMException aşağıdaki üye türlerinden de vardır.
+COMException Ayrıca aşağıdaki üye türlerine sahiptir.
 
 **Oluşturucular**
 
@@ -40,7 +40,7 @@ COMException aşağıdaki üye türlerinden de vardır.
 
 **Yöntemler**
 
-COMException sınıfı ' lerin üzerine yaz, Finalize() ifadesini, GetHashCode(), GetType(), MemberwiseClose() ve ToString() yöntemler öğesinden devralan [Platform::Object sınıfı](../cppcx/platform-object-class.md).
+COMException sınıfı, [Platform:: Object sınıfından](../cppcx/platform-object-class.md)Equals (), Finalize (), GetHashCode (), GetType (), MemberwiseClose () ve ToString () yöntemlerini devralır.
 
 **Özellikler**
 
@@ -48,42 +48,42 @@ COMException sınıfı aşağıdaki özelliklere sahiptir.
 
 |Üye|Açıklama|
 |------------|-----------------|
-|[Exception::HResult](#hresult)|Özel duruma karşılık gelen HRESULT.|
-|[Exception::Message](#message)|Özel durumu açıklayan ileti.|
+|[Özel durum:: HResult](#hresult)|Özel duruma karşılık gelen HRESULT.|
+|[Özel durum:: Ileti](#message)|Özel durumu açıklayan ileti.|
 
-## <a name="derived-exceptions"></a>Türetilen özel durumları
+## <a name="derived-exceptions"></a>Türetilmiş özel durumlar
 
-Aşağıdaki önceden tanımlanmış özel durumlar COMException türetilmiştir. COMException dışında da farklı olmaları yalnızca adında, oluşturucularına ve kendi temel HRESULT değerini adı.
+Aşağıdaki önceden tanımlanmış özel durumlar COMException öğesinden türetilir. Bunlar, COMException 'dan yalnızca kendi adında, oluşturucusunun adına ve temel alınan HRESULT değerine göre farklılık gösterir.
 
 |Ad|Temel alınan HRESULT|Açıklama|
 |----------|------------------------|-----------------|
-|COMException|*Kullanıcı tanımlı hresult*|Tanınmayan HRESULT bir COM yöntem çağrısından döndürülen zaman oluşturulur.|
-|AccessDeniedException|E_ACCESSDENIED|Bir kaynağa veya özellik erişimi reddedilirse oluşturulur.|
-|ChangedStateException|E_CHANGED_STATE|Yöntemin sonuçları geçersiz kılmalarını üst koleksiyon değiştikten sonra bir koleksiyon yineleyici veya koleksiyon görünümü yöntemler çağrıldığında oluşturulur.|
-|ClassNotRegisteredException|REGDB_E_CLASSNOTREG|Bir COM sınıfı kaydedilmemiş olduğu zaman oluşturulur.|
-|DisconnectedException|RPC_E_DISCONNECTED|Bir nesnenin, istemcileriyle bağlantısı kesildiğinde oluşturulur.|
-|FailureException|E_FAIL|Bir işlemi başarısız olduğunda oluşturulur.|
-|InvalidArgumentException|E_INVALIDARG|Bir yöntem için sağlanan bağımsız değişkenlerden biri geçerli olmadığında oluşturulur.|
-|InvalidCastException|E_NOINTERFACE|Bir tür başka bir türe dönüştüremezsiniz zaman oluşturulur.|
-|NotImplementedException|E_NOTIMPL|Bir arabirim yöntemi, bir sınıf üzerinde uygulanmadı durum.|
-|NullReferenceException|E_POINTER|Bir null Nesne başvurusu başvuru girişimi olduğunda oluşturulur.|
+|COMException|*Kullanıcı tanımlı HRESULT*|Bir COM yöntem çağrısından tanınmayan HRESULT döndürüldüğünde oluşturulur.|
+|AccessDeniedException Oluşturucusu|E_ACCESSDENIED|Bir kaynak veya özelliğe erişim reddedildiğinde oluşturulur.|
+|Changedstateexception Oluşturucusu|E_CHANGED_STATE|Üst koleksiyon değiştirildikten sonra bir koleksiyon yineleyici veya koleksiyon görünümü metotları çağrıldığında, yöntemin sonuçları geçersiz kılınırken oluşturulur.|
+|Classnotregisteredexception Oluşturucusu|REGDB_E_CLASSNOTREG|Bir COM sınıfı kaydedilmemişse oluşturulur.|
+|Disconnectedexception Oluşturucusu|RPC_E_DISCONNECTED|Bir nesnenin istemcileriyle bağlantısı kesildiğinde oluşturulur.|
+|FailureException Oluşturucusu|E_FAIL|Bir işlem başarısız olduğunda oluşturulur.|
+|InvalidArgumentException Oluşturucusu|E_INVALIDARG|Bir yönteme verilen bağımsız değişkenlerden biri geçerli değilse oluşturulur.|
+|InvalidCastException|E_NOINTERFACE|Bir tür başka bir türe yayınlanatılamayacağını ortaya atılır.|
+|NotImplementedException|E_NOTIMPL|Bir arabirim yöntemi bir sınıfa uygulanmadıysa oluşturulur.|
+|Durumu|E_POINTER|Null nesne başvurusunu başvuru girişimi olduğunda oluşturulur.|
 |OperationCanceledException|E_ABORT|Bir işlem iptal edildiğinde oluşturulur.|
-|OutOfBoundsException|E_BOUNDS|Bir işlem, geçerli aralığın dışında veri erişim girişiminde bulunduğunda oluşturulur.|
-|OutOfMemoryException|E_OUTOFMEMORY|İşlemi tamamlamak için bellek yetersiz olduğunda oluşturulur.|
+|Outofboundsexception Oluşturucusu|E_BOUNDS|Bir işlem geçerli Aralık dışında veriye erişmeye çalıştığında oluşturulur.|
+|OutOfMemoryException|E_OUTOFMEMORY|İşlemi gerçekleştirmek için yeterli bellek kalmadığında oluşturulur.|
 
 ### <a name="requirements"></a>Gereksinimler
 
-**En düşük desteklenen istemci:** Windows 8
+**Desteklenen en düşük istemci:** Windows 8
 
-**Sunucu desteklenen en düşük:** Windows Server 2012
+**Desteklenen en düşük sunucu:** Windows Server 2012
 
-**Namespace:** Platform
+**Uzayına** Platform
 
-**Meta veri:** platform.winmd
+**Meta veri:** platform. winmd
 
-## <a name="ctor"></a> COMException::COMException Oluşturucusu
+## <a name="ctor"></a>COMException:: COMException Oluşturucusu
 
-COMException sınıfının yeni bir örneğini başlatır.
+COMException sınıfının yeni bir örneğini başlattıktan sonra.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -94,9 +94,9 @@ COMException( int hresult )
 ### <a name="parameters"></a>Parametreler
 
 *HRESULT*<br/>
-Özel durum tarafından temsil edilen HRESULT hatası.
+Özel durumla temsil edilen HRESULT hatası.
 
-## <a name="hresult"></a> COMException::HResult özelliği
+## <a name="hresult"></a>COMException:: HResult özelliği
 
 Özel duruma karşılık gelen HRESULT.
 
@@ -109,13 +109,13 @@ public:
 
 ## <a name="property-value"></a>Özellik Değeri
 
-Hata belirten bir HRESULT değeri.
+Hatayı belirten bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-HRESULT değerini yorumlama hakkında daha fazla bilgi için bkz. [yapısı COM hata kodlarını](/windows/desktop/com/structure-of-com-error-codes).
+HRESULT değerini yorumlama hakkında daha fazla bilgi için bkz. [com hata kodlarının yapısı](/windows/win32/com/structure-of-com-error-codes).
 
-## <a name="message"></a> COMException::Message özelliği
+## <a name="message"></a>COMException:: Message özelliği
 
 Özel durumu açıklayan ileti.
 

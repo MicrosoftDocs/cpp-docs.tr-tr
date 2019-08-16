@@ -1,63 +1,63 @@
 ---
-title: "Nasıl yapılır: Windows 10 kullanan Windows Masaüstü uygulama SDK'sı"
+title: "Nasıl yapılır: Windows 10 SDK 'Yı bir Windows masaüstü uygulamasında kullanma"
 ms.custom: get-started-article
 ms.date: 07/12/2018
 ms.assetid: eed6421e-9355-44a6-9582-3f1d453a6d44
-ms.openlocfilehash: f3f6897dfa0f180f629a2ca169ff74c5e5588365
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8dbf18d24c0369507743c3c1da624838f9ab4703
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62351031"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69513825"
 ---
-# <a name="how-to-use-the-windows-10-sdk-in-a-windows-desktop-application"></a>Nasıl yapılır: Windows 10 kullanan Windows Masaüstü uygulama SDK'sı
+# <a name="how-to-use-the-windows-10-sdk-in-a-windows-desktop-application"></a>Nasıl yapılır: Windows 10 SDK 'Yı bir Windows masaüstü uygulamasında kullanma
 
-Visual Studio 2017'de bir Klasik Windows Masaüstü projesi oluşturduğunuzda, bu varsayılan olarak C++ Masaüstü iş yükü yüklendiğinde veya son güncelleştirme, yüklü Windows 10 SDK sürümünü oluşturmak için ayarlanır. Windows SDK'ın bu sürümü Windows 7 ve sonraki sürümlerle uyumludur. Bkz: [Windows üst bilgileri kullanma](/windows/desktop/WinProg/using-the-windows-headers) belirli Windows sürümlerini hedefleme hakkında daha fazla bilgi.
+Visual Studio 2017 ' de klasik bir Windows Masaüstü projesi oluşturduğunuzda, C++ masaüstü iş yükü yüklenirken veya en son güncelleştirildiği sırada yüklenen WINDOWS 10 SDK sürümü ile oluşturmak için varsayılan olarak ayarlanır. Windows SDK bu sürümü Windows 7 ve üzeri sürümlerle uyumludur. Belirli Windows sürümlerini hedefleme hakkında daha fazla bilgi için bkz. [Windows üst bilgilerini kullanma](/windows/win32/WinProg/using-the-windows-headers) .
 
-SDK'sının önceki bir sürümü hedeflemek istiyorsanız, açabileceğiniz **proje | Özellikleri** ve Windows SDK sürümü açılan listede kullanılabilir başka bir SDK sürümleri seçin.
+SDK 'nın önceki bir sürümünü hedeflemek istiyorsanız **projeyi açabilirsiniz | Özellikler** ve Windows SDK sürüm açılan menüsünde bulunan DIĞER SDK sürümlerinden seçim yapın.
 
-Visual Studio 2015 ve Windows 10 SDK'sı ile başlayarak, CRT kitaplığı (ucrtbase) içeren bir evrensel Windows uygulamalarında kullanılmak üzere kabul edilebilir işlevleri ve diğer her şey (vcruntime140) içeren bir tane olmak üzere iki bölüme ayrıldı. Windows 10 SDK'sı birçok C99 işlevleri gibi yeni işlevler içerdiğinden bu işlevleri kullanmak için şu adımları izlemesi gerekir. Bkz: [CRT kitaplık özellikleri](../c-runtime-library/crt-library-features.md).
+Visual Studio 2015 ve Windows 10 SDK ile başlayarak, CRT kitaplığı, Evrensel Windows uygulamalarında kullanılması kabul edilebilir işlevleri içeren bir (ucrtbase), diğeri de (vcruntime140) olan her şeyi içeren iki parçaya ayrılmıştır. Windows 10 SDK, çok C99 işlevleri gibi yeni işlevler içerdiğinden, bu işlevleri kullanabilmeniz için bu adımları izlemeniz gerekir. Bkz. [CRT kitaplık özellikleri](../c-runtime-library/crt-library-features.md).
 
-### <a name="to-target-the-windows-10-sdk"></a>Windows 10 SDK'yı hedeflemek için
+### <a name="to-target-the-windows-10-sdk"></a>Windows 10 SDK 'sını hedeflemek için
 
-1. Windows 10 SDK'sı yüklü olduğundan emin olun. Windows 10 SDK'sı bir parçası olarak yüklü **C++ ile masaüstü geliştirme** iş yükü. Bağımsız bir sürümü kullanılabilir [Windows 10 için indirmeler ve Araçlar](https://developer.microsoft.com/windows/downloads).
+1. Windows 10 SDK 'nın yüklü olduğundan emin olun. Windows 10 SDK, iş yüküyle **Masaüstü geliştirmenin C++**  bir parçası olarak yüklenir. [Windows 10 Için indirmeler ve araçlar](https://developer.microsoft.com/windows/downloads)'da tek başına sürüm kullanılabilir.
 
-2. Proje düğümü için kısayol menüsünü açın ve **SDK sürümü yeniden hedefle**.
+2. Proje düğümü için kısayol menüsünü açın ve **SDK sürümünü yeniden hedefle**' yi seçin.
 
-   ![SDK sürümü için hedefi yeniden](../windows/media/retargetingwindowssdk1.PNG "RetargetingWindowsSDK1")
+   ![SDK sürümünü yeniden hedefle](../windows/media/retargetingwindowssdk1.PNG "RetargetingWindowsSDK1")
 
-   **Çözüm eylemleri gözden geçirin** iletişim kutusu görüntülenir.
+   **Çözüm eylemlerini gözden geçir** iletişim kutusu görüntülenir.
 
-   ![Çözüm eylemlerini gözden](../windows/media/retargetingwindowssdk2.PNG "RetargetingWindowsSDK2")
+   ![Çözüm eylemlerini gözden geçirme](../windows/media/retargetingwindowssdk2.PNG "RetargetingWindowsSDK2")
 
-3. İçinde **hedef Platform sürümü** açılan listesinde, hedeflemek istediğiniz Windows 10 SDK'sı sürümünü seçin. Değişikliği uygulamak için Tamam düğmesini seçin.
+3. **Hedef platform sürümü** açılan listesinde, hedeflemek istediğiniz WINDOWS 10 SDK sürümünü seçin. Değişikliği uygulamak için Tamam düğmesini seçin.
 
-   Bu bağlamda 8.1 backwardly Windows 8, Windows Server 2012, Windows 7, Windows Server 2008 ve Windows Vista ile uyumlu olan Windows SDK'sı sürüm anlamına geldiğini unutmayın.
+   Bu bağlamdaki 8,1, Windows 8, Windows Server 2012, Windows 7, Windows Server 2008 ve Windows Vista ile de backwardly uyumlu olan Windows SDK sürümüne başvurur.
 
-   Bu adım, başarılı olursa, aşağıdaki metni çıkış penceresinde görüntülenir:
+   Bu adım başarılı olursa, çıkış penceresinde aşağıdaki metin görüntülenir:
 
    `Retargeting End: 1 completed, 0 failed, 0 skipped`
 
-4. Proje özelliklerini açın ve **yapılandırma özellikleri, genel** bölümünde, değerlerini **Windows hedef Platform sürümü**. Buradaki değer değiştirme, aşağıdaki yordamı aynı etkiye sahiptir. Bkz: [genel özellik sayfası (Proje)](../build/reference/general-property-page-project.md).
+4. Proje özelliklerini açın ve **yapılandırma özellikleri, genel** bölümünde **Windows hedef platformu sürümü**değerlerini görürsünüz. Burada değeri değiştirmek, bu yordamın takip eden etkile aynı etkiye sahiptir. Bkz. [genel özellik sayfası (proje)](../build/reference/general-property-page-project.md).
 
-   ![Hedef Platform sürümü](../windows/media/retargetingwindowssdk3.PNG "RetargetingWindowsSDK3")
+   ![Hedef platform sürümü](../windows/media/retargetingwindowssdk3.PNG "RetargetingWindowsSDK3")
 
-   Bu eylem, üst bilgi dosyaları ve kitaplık dosyaları için yol eklemeyi proje makrolarını değerlerini değiştirir. Nelerin, buna değiştiğini görmek için **Visual C++ dizinleri** bölümünü **proje özellikleri** iletişim kutusunda, özelliklerden biri gibi seçin **ekleme dizinleri**, seçin açılan listeyi açın ve \<Düzenle >. **Ekleme dizinleri** iletişim kutusu görüntülenir.
+   Bu eylem, üstbilgi dosyalarına ve kitaplık dosyalarına yollar içeren proje makrolarının değerlerini değiştirir. Nelerin değiştiğini görmek için, **Proje özellikleri** iletişim kutusunun **görsel C++ dizinler** bölümünde, **içerme dizinleri**gibi özelliklerden birini seçin, açılan listeyi açmak için seçin ve > Düzenle ' yi seçin \<. **Dizinleri dahil et** iletişim kutusu görüntülenir.
 
-   ![Dizinleri iletişim kutusu içeren](../windows/media/retargetingwindowssdk4.PNG "RetargetingWindowsSDK4")
+   ![Dizinleri dahil et iletişim kutusu](../windows/media/retargetingwindowssdk4.PNG "RetargetingWindowsSDK4")
 
-   Seçin **makroları >>** düğmesi ve yeni değerleri görmek için Windows SDK'sı makroları makrolar listesini aşağı kaydırın.
+   **Makrolar > >** düğmesini seçin ve tüm yeni değerleri görmek için makrolar listesini Windows SDK makrolarına kaydırın.
 
-   ![Windows SDK'sı makroları](../windows/media/retargetingwindowssdk5.PNG "RetargetingWindowsSDK5")
+   ![Windows SDK makrolar](../windows/media/retargetingwindowssdk5.PNG "RetargetingWindowsSDK5")
 
-5. Diğer projeler için gerektiği şekilde yineleyin ve çözümü yeniden oluşturun.
+5. Gerektiğinde diğer projeler için tekrarlayın ve çözümü yeniden derleyin.
 
-### <a name="to-target-the-windows-81-sdk"></a>Windows 8.1 SDK'yı hedeflemek için
+### <a name="to-target-the-windows-81-sdk"></a>Windows 8.1 SDK 'sını hedeflemek için
 
-1. Proje düğümü için kısayol menüsünü açın ve **SDK sürümü yeniden hedefle**.
+1. Proje düğümü için kısayol menüsünü açın ve **SDK sürümünü yeniden hedefle**' yi seçin.
 
-2. İçinde **hedef Platform sürümü** açılan listesinde **8.1**.
+2. **Hedef platform sürümü** açılan listesinde **8,1**' yi seçin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Windows Masaüstü uygulamaları (Visual C++)](../windows/how-to-use-the-windows-10-sdk-in-a-windows-desktop-application.md)
+[Windows Masaüstü uygulamaları (görsel C++)](../windows/how-to-use-the-windows-10-sdk-in-a-windows-desktop-application.md)

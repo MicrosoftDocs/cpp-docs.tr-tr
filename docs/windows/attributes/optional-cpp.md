@@ -1,21 +1,21 @@
 ---
-title: İsteğe bağlı (C++ COM özniteliği)
+title: isteğe bağlıC++ (com özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.optional
 helpviewer_keywords:
 - optional attribute
 ms.assetid: 86656a66-8e11-4589-8e30-9b0f34eeed03
-ms.openlocfilehash: bc6422ff652cfaba5fa71285294b93c1f0e8990e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7891d75adbfeba0d91d4a3aed60423975838951f
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62407594"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69514347"
 ---
 # <a name="optional-c"></a>isteğe bağlı (C++)
 
-Bir üye işlev için isteğe bağlı bir parametre belirtir.
+Bir üye işlevi için isteğe bağlı bir parametre belirtir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -25,11 +25,11 @@ Bir üye işlev için isteğe bağlı bir parametre belirtir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**İsteğe bağlı** C++ özniteliği ile aynı işlevlere sahip [isteğe bağlı](/windows/desktop/Midl/optional) MIDL özniteliği.
+**İsteğe bağlı** C++ öznitelik, [isteğe bağlı](/windows/win32/Midl/optional) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kodda gösterildiği nasıl **isteğe bağlı** kullanılabilir:
+Aşağıdaki kod, **isteğe bağlı** olarak nasıl kullanılabileceğini göstermektedir:
 
 ```cpp
 // cpp_attr_ref_optional.cpp
@@ -50,12 +50,12 @@ __interface IFireTabCtrl : IDispatch
 
 |||
 |-|-|
-|**İçin geçerlidir**|Parametre arabirimi|
+|**Uygulama hedefi**|Arabirim parametresi|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|Yok.|
+|**Gerekli öznitelikler**|Yok.|
 |**Geçersiz öznitelikler**|Yok.|
 
-Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
+Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

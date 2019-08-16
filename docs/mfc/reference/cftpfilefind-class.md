@@ -14,12 +14,12 @@ helpviewer_keywords:
 - CFtpFileFind [MFC], FindNextFile
 - CFtpFileFind [MFC], GetFileURL
 ms.assetid: 9667cf01-657f-4b11-b9db-f11e5a7b4e4c
-ms.openlocfilehash: 9afe2bf563ffa80a3238548d75efa69178fa1f64
-ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
+ms.openlocfilehash: 2f4a394e29be135cac95edf6f504d8b066f53414
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68916061"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69506241"
 ---
 # <a name="cftpfilefind-class"></a>CFtpFileFind sınıfı
 
@@ -121,7 +121,7 @@ Bu oturumun nasıl işleneceğini açıklayan bayraklar. Bu bayraklar bit düzey
 
 - INTERNET_FLAG_DONT_CACHE, yerel olarak veya herhangi bir ağ geçidi içinde verileri önbelleğe almaz.
 
-- INTERNET_FLAG_RAW_DATA ham verileri döndürmek için varsayılan ayarı geçersiz kılar (FTP için [WIN32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-win32_find_dataa) yapıları).
+- INTERNET_FLAG_RAW_DATA ham verileri döndürmek için varsayılan ayarı geçersiz kılar (FTP için [WIN32_FIND_DATA](/windows/win32/api/minwinbase/ns-minwinbase-win32_find_dataw) yapıları).
 
 - INTERNET_FLAG_SECURE, Güvenli Yuva Katmanı veya PCT ile iletişimlerdeki işlemleri korur. Bu bayrak yalnızca HTTP istekleri için geçerlidir.
 
@@ -129,7 +129,7 @@ Bu oturumun nasıl işleneceğini açıklayan bayraklar. Bu bayraklar bit düzey
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi takdirde 0. Genişletilmiş hata bilgilerini almak için, WIN32 işlevini çağırın [](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror).
+Başarılı olursa sıfır dışı; Aksi takdirde 0. Genişletilmiş hata bilgilerini almak için, WIN32 işlevini çağırın [](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror).
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -149,13 +149,13 @@ virtual BOOL FindNextFile();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Daha fazla dosya varsa sıfır dışı; Dosya, dizinde sonuncu ise veya bir hata oluştuysa sıfır olur. Genişletilmiş hata bilgilerini almak için, WIN32 işlevini çağırın [](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror). Bulunan dosya dizindeki son dosya ise veya eşleşen dosya bulunamazsa `GetLastError` , işlev ERROR_NO_MORE_FILES döndürür.
+Daha fazla dosya varsa sıfır dışı; Dosya, dizinde sonuncu ise veya bir hata oluştuysa sıfır olur. Genişletilmiş hata bilgilerini almak için, WIN32 işlevini çağırın [](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror). Bulunan dosya dizindeki son dosya ise veya eşleşen dosya bulunamazsa `GetLastError` , işlev ERROR_NO_MORE_FILES döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Herhangi bir öznitelik işlevini çağırmadan önce bu işlevi en az bir kez çağırmanız gerekir (bkz. [CFileFind:: FindNextFile](../../mfc/reference/cfilefind-class.md#findnextfile)).
 
-`FindNextFile`Win32 işlevi [FindNextFile dosyasını](/windows/desktop/api/fileapi/nf-fileapi-findnextfilea)kaydırır.
+`FindNextFile`Win32 işlevi [FindNextFile dosyasını](/windows/win32/api/fileapi/nf-fileapi-findnextfilew)kaydırır.
 
 ### <a name="example"></a>Örnek
 

@@ -1,21 +1,21 @@
 ---
-title: wire_marshal (C++ COM özniteliği)
+title: wire_marshal (C++ com özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.wire_marshal
 helpviewer_keywords:
 - wire_marshal attribute
 ms.assetid: 244f9d72-776d-4ebd-b60a-cee600a126b5
-ms.openlocfilehash: d1d18336a20644338a50ab66c7fcb06959e5760a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e1067b74191dcde98dd9c85a246db2acd26eff9c
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62407022"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69514855"
 ---
-# <a name="wiremarshal"></a>wire_marshal
+# <a name="wire_marshal"></a>wire_marshal
 
-Bir uygulamaya özel veri türü yerine iletim için kullanılacak olan veri türünü belirtir.
+Uygulamaya özgü veri türü yerine iletim için kullanılacak bir veri türü belirtir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -25,11 +25,11 @@ Bir uygulamaya özel veri türü yerine iletim için kullanılacak olan veri tü
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Wire_marshal** C++ özniteliği ile aynı işlevlere sahip [wire_marshal](/windows/desktop/Midl/wire-marshal) MIDL özniteliği.
+**Wire_marshal** C++ özniteliği, [wire_marshal](/windows/win32/Midl/wire-marshal) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod, bir kullanımını göstermektedir. **wire_marshal**:
+Aşağıdaki kod, **wire_marshal**kullanımını gösterir:
 
 ```cpp
 // cpp_attr_ref_wire_marshal.cpp
@@ -53,12 +53,12 @@ Aşağıdaki kod, bir kullanımını göstermektedir. **wire_marshal**:
 
 |||
 |-|-|
-|**İçin geçerlidir**|**tür tanımı**|
+|**Uygulama hedefi**|**genişletiyor**|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|Yok.|
+|**Gerekli öznitelikler**|Yok.|
 |**Geçersiz öznitelikler**|Yok.|
 
-Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
+Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,188 +1,188 @@
 ---
-title: Olası yükseltme sorunlarına (Visual C++) genel bakış
+title: Olası Yükseltme Sorunlarına Genel Bakış (Visual C++)
 ms.date: 05/03/2019
 ms.assetid: 2c99a8cb-098f-4a9d-bf2c-b80fd06ace43
-ms.openlocfilehash: 27cfe90f33f71d82af90cf4fa62186c1c0a189ce
-ms.sourcegitcommit: bde3279f70432f819018df74923a8bb895636f81
+ms.openlocfilehash: 10c2de547611cf7b1b47de2b1ec05dcf419c6225
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66174848"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69511547"
 ---
-# <a name="overview-of-potential-upgrade-issues-visual-c"></a>Olası yükseltme sorunlarına (Visual C++) genel bakış
+# <a name="overview-of-potential-upgrade-issues-visual-c"></a>Olası Yükseltme Sorunlarına Genel Bakış (Visual C++)
 
-Microsoft yıllar C++ derleyici değişiklikleri birlikte birçok değişiklik undergone C++ dil kendisini C++ standart kitaplığı, C çalışma zamanı (CRT) ve MFC ve ATL gibi diğer kitaplıkları Sonuç olarak, bir uygulama, Visual Studio'nun önceki bir sürümden yükseltirken, derleyici ve bağlayıcı hataları ve Uyarıları düzgün bir şekilde daha önce derlenmiş kodda karşılaşabilirsiniz. Eski özgün kod tabanı, bu tür hatalar daha olası. Bu genel bakışta karşılaşabileceğiniz olası sorunların en yaygın sınıfları özetler ve daha ayrıntılı bilgi için bağlantılar sağlar.
-
-> [!NOTE]
-> Geçmişte, birçok Visual Studio sürümü span yükseltmeleri aynı anda gerçekleştirilen artımlı olarak bir sürüm olması gerektiğini önerilir. Artık bu yaklaşım önerilir. Bunun hemen her zaman ne kadar eski kod tabanı ne olursa olsun Visual Studio'nun en güncel sürüme yükseltmek daha basit olduğunu bulduk.
-
-Sorularınız veya yükseltme işlemi hakkında yorumlar göndermenin vcupgrade@microsoft.com.
-
-## <a name="library-and-toolset-dependencies"></a>Kitaplık ve araç takımı bağımlılıkları
+Yıl boyunca, Microsoft C++ derleyicisi, C++ dilin kendisindeki değişikliklerle birlikte, C++ standart KITAPLıK, C çalışma zamanı (CRT) ve MFC ve ATL gibi diğer kitaplıklarda çok sayıda değişiklik yapılmıştır. Sonuç olarak, bir uygulamayı Visual Studio 'nun önceki bir sürümünden yükseltirken, derleyici ve bağlayıcı hatalarıyla ve daha önce düzgün şekilde derlenen koddaki uyarılarla karşılaşabilirsiniz. Eski kod tabanı, bu tür hataların potansiyeli artar. Bu genel bakışta, büyük ihtimalle karşılaştığınız sorunların en yaygın sınıflarını özetler ve daha ayrıntılı bilgi için bağlantılar sağlanmaktadır.
 
 > [!NOTE]
-> Bu bölüm, uygulamaları ve kitaplıkları Visual Studio 2013 ve daha önce oluşturulmuş için geçerlidir. Visual Studio 2015, Visual Studio 2017 ve Visual Studio 2019 kullanılan araç takımları ikili uyumludur. Daha fazla bilgi için [ C++ Visual Studio 2015 ve Visual Studio 2019 ikili uyumluluğu](binary-compat-2015-2017.md).
+> Geçmişte, Visual Studio 'nun birden çok sürümünü yayan yükseltmelerin aynı anda bir sürümü bir kez gerçekleştirmelerini öneririz. Bu yaklaşımı artık önermiyoruz. Kod tabanının ne kadar eski olduğuna bakılmaksızın, Visual Studio 'nun en güncel sürümüne yükseltmek için neredeyse her zaman daha kolay olduğunu belirledik.
 
-Bir uygulamayı Visual Studio'nun yeni bir sürüme yükselttiğinizde, hem de önerilir ve çoğunda da tüm kitaplıkları ve uygulamanın bağlandığı DLL'leri yükseltmek için gereken durumlarda. Kaynak koduna erişim iznine sahip veya kitaplık satıcı yeni ikili dosyaları aynı ana sürümüne derleyici ile derlenmiş sağlayabilir gerektiriyor. Şu koşullardan biri doğruysa, ikili uyumluluğu ayrıntılarını ile ilgilenen bu bölümü atlayabilirsiniz. Sonra yükseltilen uygulamanızdaki kitaplıkları kullanmayı mümkün olmayabilir diğerinden durumda olup olmadığını. Bu bölümdeki bilgiler, yükseltme işlemine devam olup olmadığını anlamanıza yardımcı olur.
+Yükseltme işlemiyle ilgili soruların veya açıklamaların gönderileceği vcupgrade@microsoft.comyer.
+
+## <a name="library-and-toolset-dependencies"></a>Kitaplık ve araç kümesi bağımlılıkları
+
+> [!NOTE]
+> Bu bölüm, Visual Studio 2013 ve öncesiyle oluşturulan uygulamalar ve kitaplıklar için geçerlidir. Visual Studio 2015 ' de kullanılan araç kümeleri, Visual Studio 2017 ve Visual Studio 2019 ikili uyumludur. Daha fazla bilgi için bkz [ C++ . Visual Studio 2015 ve Visual Studio 2019 arasında ikili uyumluluk](binary-compat-2015-2017.md).
+
+Bir uygulamayı Visual Studio 'nun yeni bir sürümüne yükseltirken, her ikisi de önerilir ve uygulamanın bağlandığı tüm kitaplıkları ve DLL 'Leri de yükseltmeniz gerekir. Kaynak koda erişiminizin olmasını veya kitaplık satıcısının derleyicinin aynı ana sürümüyle derlenen yeni ikili dosyalar sağlayabilmeniz gerekir. Bu koşullardan biri doğru ise, ikili uyumluluğun ayrıntılarıyla ilgilenen bu bölümü atlayabilirsiniz. Böyle bir durum söz konusu değilse, yükseltilen uygulamanızdaki kitaplıkları kullanmeyebilirsiniz. Bu bölümdeki bilgiler, yükseltmeye devam edip edemeyeceğinizi anlamanıza yardımcı olur.
 
 ### <a name="toolset"></a>Araç Takımı
 
-.Obj ve .lib dosyası biçimleri, iyi tanımlanmış ve nadiren değiştirin. Bu dosya biçimleri için yapılan eklemeler bazen, ancak bu eklemeler nesne dosyaları ve kitaplıkları eski araç takımları tarafından üretilen kullanma olanağı yeni araç takımları, genellikle etkilemez. Ana burada kullanarak derlerseniz istisnadır [/GL (bütün Program iyileştirmesi)](../build/reference/gl-whole-program-optimization.md). Kullanarak derleme yaparsanız `/GL`, sonuçta elde edilen nesne dosyası yalnızca bu üretmek için kullanılan araç kümesini kullanarak bağlanabilir. Bu nedenle sahip bir nesne dosyası üretmek `/GL` ve Visual Studio 2017 (v141) derleyici kullanarak, Visual Studio 2017 (v141) bağlayıcı kullanarak bağlanmalıdır. Bu nesne dosyalarının iç veri yapılarını araç ana sürümler arasında tutarlı değil ve yeni araç takımları eski veri biçimlerini anlamadığınız olmasıdır.
+. Obj ve. lib dosya biçimleri iyi tanımlanmış ve nadiren değiştirilebilir. Bazı durumlarda bu dosya biçimlerinde eklemeler yapılır, ancak bu eklemeler genellikle daha yeni araç kümelerinin, daha eski araç kümeleri tarafından üretilen nesne dosyalarını ve kitaplıklarını tüketme yeteneğini etkilemez. Buradaki önemli özel durum/GL kullanarak derlerseniz [(tüm program iyileştirmesi)](../build/reference/gl-whole-program-optimization.md). Kullanarak `/GL`derlerseniz, elde edilen nesne dosyası yalnızca onu oluşturmak için kullanılan araç kümesiyle bağlantılı olabilir. Bu nedenle, `/GL` ve Visual Studio 2017 (v141) derleyicisini kullanarak bir nesne dosyası üretemiyor, Visual Studio 2017 (v141) bağlayıcı kullanarak bağlamanız gerekir. Bunun nedeni, nesne dosyalarındaki iç veri yapılarının araç takımının ana sürümleri arasında kararlı olmaması ve daha yeni araç kümelerinin eski veri biçimlerini anlamamalarıdır.
 
-C++kararlı bir uygulama ikili arabiriminde (ABI) sahip değil. Ancak Visual Studio tutan bir kararlı C++ ABI tüm ikincil sürümlerinin bir yayın. Visual Studio 2015'nı (v140), Visual Studio 2017 (v141) ve Visual Studio 2019 (v142) yalnızca ikincil sürümü farklılık gösterir. Hepsi 14 olduğu aynı büyük sürüm numarasına sahiptir. Daha fazla bilgi için [ C++ Visual Studio 2015 ve Visual Studio 2019 ikili uyumluluğu](binary-compat-2015-2017.md).
+C++kararlı bir uygulama ikili arabirimine (ABı) sahip değildir. Ancak Visual Studio, bir sürümün C++ tüm küçük sürümleri için kararlı bir ABI tutar. Visual Studio 2015 (v140), Visual Studio 2017 (v141) ve Visual Studio 2019 (v142) yalnızca küçük sürümlerinde farklılık gösterir. Hepsi, 14 olan aynı ana sürüm numarasına sahiptir. Daha fazla bilgi için bkz [ C++ . Visual Studio 2015 ve Visual Studio 2019 arasında ikili uyumluluk](binary-compat-2015-2017.md).
 
-İle dış sembolü olmayan bir nesne dosyası varsa C++ nesne dosyası değil bağlama doğru şekilde farklı bir ana sürümü araç takımı tarafından üretilen nesne dosyaları ile bağlantı,. Birçok olası sonuçları vardır: (ad düzenlemesi değiştirdiyseniz tamamen Örneğin,) bağlantı başarısız olabilir. Bağlantı başarısız olabilir ve noktalar (örneğin, türü düzeni değişirse) çalışma zamanında çalışmayabilir. Çoğu durumda çalışmaya şeyler ortaya çıkabilir ve hiçbir şey yanlış gidecek. Ayrıca unutmayın, ancak C++ ABI kararlı, değil C ABI ve alt kümesini C++ ABI için COM gerekli kararlı.
+Bağlantısı olan C++ dış sembolleri olan bir nesne dosyanız varsa, bu nesne dosyası araç takımının farklı bir ana sürümü tarafından oluşturulan nesne dosyalarıyla doğru şekilde bağlantı olmayabilir. Birçok olası sonuç vardır: bağlantı tamamen başarısız olabilir (örneğin, ad dekorasyonu değiştirilirse). Bağlantı başarılı olabilir ve işlemler çalışma zamanında çalışmayabilir (örneğin, tür düzeni değiştirilirse). Ya da pek çok durumda, şeyler işe başlayabilir ve hiçbir şey yanlış olmayacaktır. Ayrıca, C++ ABI kararlı olmasa da, com için gerekli olan C ABI ve C++ ABI alt kümesinin kararlı olduğunu da göz önünde bulabilirsiniz.
 
-Bir içeri aktarma kitaplığına bağlarsanız, sonraki bir sürümünü ABI uyumluluğu korumak Visual Studio yeniden dağıtılabilir kitaplıkların çalışma zamanında kullanılabilir. Uygulamanız derlenir ve Visual Studio 2015 güncelleştirme 3 araç takımı kullanarak bağlı, bir 2015, 2017 ve 2019 kitaplıkları ikili geriye dönük uyumluluk korunur olduğundan, herhangi bir Visual Studio 2017 veya yeniden dağıtılabilir, Visual Studio 2019 kullanabilirsiniz. Tersi doğru değildir: Uyumlu bir ABI olsa bile, kodunuzu derlemek için kullanılan çok yeniden dağıtılabilir araç önceki bir sürümü için kullanamazsınız.
+İçeri aktarma kitaplığına bağlantı verirseniz, ABı uyumluluğunu koruyan Visual Studio Redistributable kitaplıklarının daha sonraki bir sürümü çalışma zamanında kullanılabilir. Örneğin, uygulamanız Visual Studio 2015 güncelleştirme 3 araç takımı kullanılarak derlenip bağlanmışsa, 2015, 2017 ve 2019 kitaplıkları geriye doğru ikili uyumluluğu korunduğu için herhangi bir Visual Studio 2017 veya Visual Studio 2019 Redistributable kullanabilirsiniz. Tersi doğru değildir: Bir araç takımının, uyumlu bir ABı olsa bile, kodunuzu oluşturmak için kullandığınız daha önceki bir sürümü için yeniden dağıtılabilir kullanamazsınız.
 
 ### <a name="libraries"></a>Kitaplıklar
 
-Visual Studio C++ kitaplıkları üst bilgi dosyaları belirli bir sürümünü kullanarak bir kaynak dosyasını derlerseniz (tarafından # üst bilgiler including), sonuçta elde edilen nesne dosyası kitaplıkları aynı sürümü ile bağlanması gerekir. Böylece, örneğin, kaynak dosyanız Visual Studio 2015 güncelleştirme 3 ile derlenmişse \<immintrin.h >, Visual Studio 2015 güncelleştirme 3'ü vcruntime kitaplığıyla bağlamanız gerekir. Benzer şekilde, kaynak dosyanız Visual Studio 2017 sürüm 15.5 ile derlenmiş olan \<iostream >, Visual Studio 2017 sürüm 15.5 standart C++ kitaplığı ile msvcprt bağlamanız gerekir. Karıştırma ve eşleşen desteklenmiyor.
+Visual Studio C++ kitaplıkları üstbilgi dosyalarının belirli bir sürümünü kullanarak bir kaynak dosya derlerseniz (üst bilgileri #including), sonuçta elde edilen nesne dosyası kütüphanelerin aynı sürümüyle bağlantılı olmalıdır. Bu nedenle, örneğin, kaynak dosyanız Visual Studio 2015 güncelleştirme 3 \<ımmintrin. h > ile derlenmişse, Visual Studio 2015 güncelleştirme 3 vcruntime kitaplığı ile bağlantı oluşturmanız gerekir. Benzer şekilde, kaynak dosyanız Visual Studio 2017 sürüm 15,5 \<iostream > ile derlenmişse, Visual Studio 2017 sürüm 15,5 standart C++ kitaplığı, MSVCPRT ile bağlantı oluşturmanız gerekir. Karıştırma ve eşleştirme desteklenmez.
 
-C++ Standart Kitaplığı için karıştırma ve eşleşen açıkça kullanımı aracılığıyla verilmedi `#pragma detect_mismatch` Visual Studio 2010 itibaren standart üst bilgisindeki. Uyumsuz nesne dosyalarını bağlamanız deneyin veya bağlantı yanlış standart kitaplığı ile çalıştığınızda, bağlantı başarısız olur
+C++ Standart kitaplık için, Visual Studio 2010 ' den beri standart üst bilgilerde kullanımı `#pragma detect_mismatch` aracılığıyla karma ve eşleştirme açıkça devre dışı bırakıldı. Uyumsuz nesne dosyalarını bağlamayı denerseniz veya yanlış standart kitaplıkla bağlantı yapmayı denerseniz bağlantı başarısız olur.
 
-CRT karıştırma ve eşleşen hiçbir zaman destekleniyordu, ancak bir API yüzeyi çoğu zaman içinde değiştirmediğinden genellikle yalnızca, en az Visual Studio 2015 ve evrensel CRT kadar çalıştınız. Böylece gelecekte biz geriye dönük uyumluluğu korumak Evrensel CRT geriye dönük uyumluluk kesildi. Diğer bir deyişle, yeni, gelecekte tutulan Evrensel CRT ikili tanıtmak için herhangi bir plan sahibiz. Bunun yerine, mevcut Evrensel CRT sunulmuştur yerinde güncelleştirilir.
+CRT için, karışık ve eşleme hiç desteklenmedi, ancak API yüzeyi zaman içinde çok fazla değişmediği için, en azından yalnızca Visual Studio 2015 ve Universal CRT kadar az çalıştık. Evrensel CRT, daha sonra geriye dönük uyumluluğu koruyabilmemiz için geriye dönük uyumlulukla uyum sağlayabilir. Diğer bir deyişle, gelecekte yeni, sürümlü Evrensel CRT ikilileri tanıtmak için planımız yok. Bunun yerine, mevcut Evrensel CRT artık yerinde güncelleştirilir.
 
-Nesne dosyaları (ve kitaplıklar) eski sürümleri Microsoft C çalışma zamanı üst bilgileri ile derlenmiş kısmi bağlantı uyum sağlamak için bir kitaplık legacy_stdio_definitions.lib, Visual Studio 2015 ve sonraki sunuyoruz. Bu kitaplık uyumluluk semboller için evrensel CRT kaldırılan işlevleri ve verileri dışarı aktarmaları çoğunu sağlar. Uyumluluk sembolleri legacy_stdio_definitions.lib tarafından sağlanan dizi tüm bağımlılıkları Windows SDK'da bulunan kitaplıkları dahil olmak üzere çoğu bağımlılıklarını karşılamak yeterli olur. Ancak, uyumluluk sembolleri sağlamak mümkün değil Evrensel CRT'ye kaldırılan bazı simgeleri vardır. Bazı işlevler bu sembolleri içerir (örneğin, \_ \_iob\_func) ve veri dışarı aktarmaları (örneğin, \_ \_Imp\_\_\_iob, \_ \_Imp\_\_\_pctype, \_ \_Imp\_\_\_mb\_ven\_max).
+Microsoft C çalışma zamanı üst bilgilerinin daha eski sürümleriyle derlenen nesne dosyalarıyla (ve kitaplıklarıyla) kısmi bağlantı uyumluluğu sağlamak için, Visual Studio 2015 ve üzeri bir kitaplığı, legacy_stdio_definitions. lib adlı bir kitaplık sağlıyoruz. Bu kitaplık, Evrensel CRT 'den kaldırılan işlevlerin ve veri dışa aktarımlarının çoğu için uyumluluk sembolleri sağlar. Legacy_stdio_definitions. lib tarafından sağlanan uyumluluk sembolleri kümesi, Windows SDK dahil olan kitaplıklardaki tüm bağımlılıklar dahil olmak üzere çoğu bağımlılığı karşılamak için yeterlidir. Ancak, Evrensel CRT 'den kaldırılan ve uyumluluk sembolleri sağlamak mümkün olmayan bazı semboller vardır. Bu semboller \_bazı işlevleri (örneğin, \_IOB\_Func) ve veri dışarı aktarmaları (örneğin,\_ \_ \_imp\_\_iob \_)içerir.imp\_pctype\_,imp\_MB en fazla).\_\_ \_ \_ \_\_\_\_
 
-C çalışma zamanı üst bilgileri daha eski bir sürümüyle oluşturulmuş bir statik kitaplık varsa, bu sırada aşağıdaki eylemler, öneririz:
+C çalışma zamanı üst bilgilerinin daha eski bir sürümüyle oluşturulmuş bir statik kitaplığınız varsa, şu sırayla aşağıdaki eylemleri yapmanızı öneririz:
 
-1. Statik kitaplık ile Evrensel CRT bağlama desteklemek için Visual Studio ve evrensel CRT üstbilgileri yeni sürümünü kullanarak yeniden oluşturun. Bu yaklaşım tam olarak desteklenir (ve bu nedenle en iyi) seçenektir.
+1. Evrensel CRT ile bağlamayı desteklemek için, Visual Studio 'nun yeni sürümünü ve Evrensel CRT üst bilgilerini kullanarak statik kitaplığı yeniden derleyin. Bu yaklaşım, tam olarak desteklenen (ve bu nedenle en iyi) seçenektir.
 
-1. Kullanılamaz (veya istemiyorsanız varsa) ile eski bağlama çalışabilir, statik kitaplık yeniden\_stdio\_definitions.lib. Bağlama zamanı bağımlılıklarını, statik kitaplık uyuyorsa, ikili dosyada bu olumsuz herhangi biri tarafından etkilenmez, emin olmak için kullanıldığı gibi statik kitaplık sınamanız isteyeceksiniz [yapılan davranış değişiklikleri Evrensel CRT](visual-cpp-change-history-2003-2015.md#BK_CRT).
+1. Statik kitaplığı yeniden derlemek için (veya istemiyorsanız), eski\_stdio\_Definitions. lib ile bağlamayı deneyebilirsiniz. Statik kitaplığınızın bağlantı süresi bağımlılıklarını karşılıyorsa, [Evrensel CRT ' de yapılan davranış değişikliklerinden](visual-cpp-change-history-2003-2015.md#BK_CRT) olumsuz bir şekilde etkilenmediğinden emin olmak için statik kitaplığı ikili dosyada kullanıldığı gibi kapsamlı bir şekilde test etmek isteyeceksiniz. .
 
-1. Statik kitaplık bağımlılıkları eski tarafından tatmin edici değil\_stdio\_definitions.lib veya kitaplık yukarıda sözü edilen davranış değişiklikleri nedeniyle Evrensel CRT ile işe yaramazsa, şifrelenmiş öneririz, Microsoft C çalışma zamanı doğru sürümü ile bağlantı bir DLL statik kitaplığa. Örneğin, statik kitaplık Visual Studio 2013 kullanılarak oluşturulduysa, Visual Studio 2013 ve Visual Studio 2013 C++ kitaplıkları da kullanarak bu DLL'yi oluşturmak istiyorsunuz. Bir DLL içine kitaplığı oluşturarak, belirli bir Microsoft C çalışma zamanı sürümü bağımlı olan uygulama ayrıntısı kapsüller. Bu DLL arabirimi hangi C çalışma zamanı, örneğin, dosya * döndüren DLL sınırında veya malloc ayrılan bir işaretçi döndüren ve ücretsiz için çağıranı bekleniyor kullandığı ayrıntıları sızıntı değil dikkatli olmanız gerekir.
+1. Statik kitaplığınızın bağımlılıkları eski\_stdio\_Definitions. lib tarafından karşılanmazsa veya kitaplık Evrensel CRT ile birlikte çalışmazsa, yukarıda bahsedilen davranış değişiklikleri nedeniyle, Microsoft C çalışma zamanının doğru sürümüyle bağlantılı olduğunuz bir DLL 'ye statik kitaplık. Örneğin, statik kitaplık Visual Studio 2013 kullanılarak oluşturulduysa, Visual Studio 2013 ve Visual Studio 2013 C++ kitaplıklarını kullanarak bu DLL 'yi de oluşturmak istersiniz. Kitaplığı bir DLL dosyasına oluşturarak, Microsoft C çalışma zamanının belirli bir sürümüne bağımlılığı olan uygulama ayrıntılarını yalıtır. DLL arabirimine hangi C çalışma zamanının kullandığı, örneğin DLL sınırında bir dosya döndürerek veya malloc ile ayrılmış bir işaretçi döndürerek ve çağıranın onu serbest bırakmasını gerektirdiğinden emin olmak isteyeceksiniz.
 
-Tek bir işlemde birden çok büyüklükteki CRT'lerden kullanımını içinde ve kendisinin (aslında çoğu işlemler birden çok CRT DLL'leri yükleme sona erer; Örneğin, Windows işletim sistemi bileşenleri üzerinde msvcrt.dll bağlıdır ve CLR kendi özel CRT üzerinde bağlıdır) sorunlu değildir. Farklı büyüklükteki CRT'lerden durumundan jumble olduğunda sorunları ortaya çıkar. Örneğin, değil msvcr110.dll!malloc kullanarak bellek ayırma ve msvcr120.dll!free kullanarak bu belleği serbest bırakma girişimi ve msvcr110 kullanarak bir dosyayı açmaya çalışmamalısınız! dosya fopen ve buradan okuma girişimi msvcr120 kullanarak! fread. Farklı büyüklükteki CRT'lerden durumundan jumble yoksa sürece, güvenli bir şekilde tek bir işlemde yüklü birden fazla büyüklükteki CRT'lerden olabilir.
+Tek bir işlemde birden çok CRI 'nin kullanımı kendi sorunlu değildir (Aslında, çoğu işlem birden çok CRT DLL 'yi yükler; Örneğin, Windows işletim sistemi bileşenleri Msvcrt. dll ' ye bağlıdır ve CLR kendi özel CRT 'sine bağlıdır). Farklı CRTs 'lerden küçük bir durum olduğunda sorunlar oluşur. Örneğin, Msvcr110. dll! malloc kullanarak bellek ayırmamalıdır ve Msvcr120. dll! ' yi kullanarak bu belleği serbest bırakma girişimi yapmanız gerekir ve Msvcr110! fopen kullanarak bir dosyayı açmaya çalışmamalısınız ve Msvcr120! fread kullanarak bu dosyadan okumaya çalışmazsınız. Farklı CRTs 'lerden önemli bir durum olmadığı sürece, tek bir işlemde birden çok CRTs yüklenmiş olabilir.
 
-Daha fazla bilgi için [kodunuzu Evrensel CRT'ye yükseltme](upgrade-your-code-to-the-universal-crt.md).
+Daha fazla bilgi için bkz. [kodunuzu Evrensel CRT 'ye yükseltme](upgrade-your-code-to-the-universal-crt.md).
 
-## <a name="errors-due-to-project-settings"></a>Hatalar nedeniyle proje ayarları
+## <a name="errors-due-to-project-settings"></a>Proje ayarlarından kaynaklanan hatalar
 
-Yükseltme işlemine başlamak için bir eski proje/çözüm/çalışma alanı Visual Studio'nun en son sürümünde açın. Visual Studio, eski proje ayarlarına göre yeni bir proje oluşturur. Eski proje kitaplığın veya standart olmayan konumlara sabit kodlanmış yollar içeriyorsa, bu projenin varsayılan ayarları kullanır, bu yollar dosyalarında derleyici için görünür olmaz mümkündür. Daha fazla bilgi için [bağlayıcı ÇıkışDosyası ayarının](porting-guide-spy-increment.md#linker_output_settings).
+Yükseltme işlemini başlatmak için, Visual Studio 'nun en son sürümünde eski bir projeyi/çözümü/çalışma alanını açın. Visual Studio, eski proje ayarlarına bağlı olarak yeni bir proje oluşturur. Eski projenin kitaplığı varsa veya standart olmayan konumlara sabit kodlanmış yollar içeriyorsa, proje varsayılan ayarları kullandığında, bu yollardaki dosyalar derleyiciye görünmez hale gelir. Daha fazla bilgi için bkz. [bağlayıcı ÇıktıDosyası ayarı](porting-guide-spy-increment.md#linker_output_settings).
 
-Genel olarak, artık proje Bakımı basitleştirmek için proje kodunuzun düzgün şekilde düzenlemek için mükemmel bir fırsattır ve Yardım olabildiğince çabuk derleme yükseltilen kodunuzu alın. Kaynak kodunuzu zaten iyi düzenlenmiş ve Visual Studio 2010 veya sonraki bir sürümü eski projeniz derlenir, derleme üzerinde hem bir eski ve yeni derleyici desteği için yeni proje dosyasını el ile düzenleyebilirsiniz. Aşağıdaki örnek, Visual Studio 2015 ve Visual Studio 2017 için derleme gösterilmektedir:
+Genel olarak, proje bakımını basitleştirmek ve yükseltilen kod derlemelerinizi mümkün olduğunca hızlı bir şekilde almak için proje kodunuzu doğru bir şekilde düzenlemek için harika bir zaman vardır. Kaynak kodunuz zaten iyi düzenlenmişse ve eski projeniz Visual Studio 2010 veya sonraki bir sürümü ile derlenmişse, hem eski hem de yeni derleyicide derlemeyi desteklemek için yeni proje dosyasını el ile düzenleyebilirsiniz. Aşağıdaki örnekte, Visual Studio 2015 ve Visual Studio 2017 için nasıl derleme yapılacağı gösterilmektedir:
 
 ```xml
 <PlatformToolset Condition="'$(VisualStudioVersion)'=='14.0'">v140</PlatformToolset>
 <PlatformToolset Condition="'$(VisualStudioVersion)'=='15.0'">v141</PlatformToolset>
 ```
 
-### <a name="lnk2019-unresolved-external"></a>LNK2019: Çözülmemiş dış öğe
+### <a name="lnk2019-unresolved-external"></a>LNK2019 Çözümlenmemiş dış
 
-Çözülmemiş simgeler için proje ayarlarınızın düzeltme gerekebilir.
+Çözümlenmemiş semboller için, proje ayarlarınızı çözmeniz gerekebilir.
 
-- Varsayılan olmayan bir konumda, projenin yolu eklemek yaptığınız kaynak dosyası ise, dizinleri dahil edilsin mi?
+- Kaynak dosya varsayılan olmayan bir konumdaysa, yolu projenin dahil olduğu dizine ekleyin mi?
 
-- Dış bir .lib dosyasına tanımlanmazsa, proje özelliklerinde LIB yolu belirtmiş olduğunuz ve orada bulunan .lib dosyasına doğru sürümü nedir?
+- External bir. lib dosyasında tanımlanmışsa, proje özelliklerinde LIB yolunu belirtsin ve. lib dosyasının doğru sürümü var mı?
 
-- Farklı bir Visual Studio sürümü ile derlenen bir .lib dosyasına bağlantı çalışıyorsunuz? Bu durumda, önceki bölümde kitaplık ve araç takımı bağımlılıkları bakın.
+- Farklı bir Visual Studio sürümü ile derlenen bir. lib dosyasına bağlantı kurmaya çalışıyor musunuz? Bu durumda, kitaplık ve araç kümesi bağımlılıklarındaki önceki bölüme bakın.
 
-- Çağrı sitesinde bağımsız değişkenlerinin türlerine gerçekten var olan bir aşırı işlevin eşleşiyor mu? İşlev imzası ve işlevi çağıran kodu her tür tanımları için temel alınan türler olmalarını beklediğiniz olduğundan emin olun.
+- Çağrı sitesindeki bağımsız değişkenlerin türleri, işlevin var olan aşırı yüklemesiyle eşleşiyor mu? İşlevin imzasında ve işlev çağıran kodda, işlevleri çağıran kodda herhangi bir tür tanımları için temeldeki türleri doğrulayın.
 
-Çözümlenmeyen sembol hataları gidermek için bir ikili dosyada tanımlanan simgeleri incelemek için dumpbin.exe kullanmayı deneyebilirsiniz. Bir kitaplık tanımlanan semboller görüntülemek için şu komut satırını deneyin:
+Çözümlenmemiş sembol hatalarını gidermek için, bir ikili dosyada tanımlanan sembolleri incelemek üzere dumpbin. exe ' yi kullanmayı deneyebilirsiniz. Kitaplıkta tanımlanan sembolleri görüntülemek için aşağıdaki komut satırını deneyin:
 
 ```cmd
 dumpbin.exe /LINKERMEMBER somelibrary.lib
 ```
 
-### <a name="zcwchart-wchart-is-native-type"></a>/Zc:wchar_t (wchar_t Yerel Tür)
+### <a name="zcwchar_t-wchar_t-is-native-type"></a>/Zc:wchar_t (wchar_t Yerel Tür)
 
-(Microsoft Visual içinde C++ 6.0 ve önceki sürümleri, **wchar_t** yerleşik bir tür olarak uygulanmadı, ancak wchar.h içinde işaretsiz için bir typedef bildirildi.) C++ Standart gerektirir **wchar_t** yerleşik bir türdür. Typedef sürümünü kullanarak, taşınabilirlik sorunlarına neden olabilir. Visual Studio'nun önceki sürümlerinden yükseltin ve kod örtük dönüştürmeye çalıştığı için derleyici hatası C2664 karşılaştığınız bir **wchar_t** için **işaretsiz**, size değiştirmenizi öneririz ayar yerine hatayı gidermek için kod `/Zc:wchar_t-`. Daha fazla bilgi için [/ZC: wchar_t (wchar_t yerel türü olduğu)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md).
+(Microsoft Visual C++ 6,0 ve önceki sürümlerde **wchar_t** , yerleşik bir tür olarak uygulanmadı, ancak wchar. h 'de işaretsiz Short için typedef olarak bildirildi.) Standart C++ , **wchar_t** 'nin yerleşik bir tür olmasını gerektirir. TypeDef sürümünün kullanılması taşınabilirlik sorunlarına neden olabilir. Visual Studio 'nun önceki sürümlerinden yükseltme yaparsanız ve kod bir **wchar_t** 'yi **işaretsiz Short**'a dönüştürmeye çalıştığı için derleyici hatası C2664 ile karşılaşırsanız, bu kodu, bu ayarı yapmakyerinehatayıgiderecekşekildedeğiştirmenizönerilir`/Zc:wchar_t-`. Daha fazla bilgi için bkz. [/Zc: wchar_t (wchar_t yerel tür)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md).
 
-### <a name="upgrading-with-the-linker-options-nodefaultlib-entry-and-noentry"></a>/ Nodefaultlıb/Entry ve/NOENTRY bağlayıcı seçenekleri ile yükseltme
+### <a name="upgrading-with-the-linker-options-nodefaultlib-entry-and-noentry"></a>Bağlayıcı seçenekleri/NODEFAULTLIB,/ENTRY ve/NOENTRY ile yükseltiliyor
 
-`/NODEFAULTLIB` Bağlayıcı seçeneği (veya tüm varsayılan kitaplıkları yoksay bağlayıcı özelliği) bağlayıcıya otomatik olarak varsayılan kitaplık CRT gibi bağlantısını değil. Bu, her kitaplık ayrı ayrı giriş olarak listelenecek olduğu anlamına gelir. Bu kitaplıklar listesi verilir **ek bağımlılıklar** özelliğinde **bağlayıcı** bölümünü **proje özellikleri** iletişim.
+`/NODEFAULTLIB` Bağlayıcı seçeneği (veya tüm varsayılan kitaplıkları Yoksay bağlayıcı özelliği), bağlayıcının CRT gibi varsayılan kitaplıklarda otomatik olarak bağlantı oluşturmasını söyler. Her kitaplığın tek tek giriş olarak listelenmesi gerektiği anlamına gelir. Bu kitaplıkların listesi, **Proje özellikleri** Iletişim kutusunun **bağlayıcı** bölümündeki **ek bağımlılıklar** özelliğinde verilmiştir.
 
-Bazı varsayılan kitaplık içeriğini yeniden düzenlenen çünkü bu seçeneği kullanın projeleri yükseltme yaparken, bir sorun sunar. Her kitaplık yer alması gerektiğinden **ek bağımlılıklar** özelliği veya bağlayıcı komut satırına tüm geçerli adlar kullanacak şekilde kitaplıkların listesini güncelleştirmeniz gerekir.
+Bu seçeneği kullanan projeler, bazı varsayılan kitaplıkların içerikleri yeniden düzenlenmiş olduğundan, yükseltme sırasında bir sorun sunar. Her kitaplığın **ek bağımlılıklar** özelliğinde veya bağlayıcı komut satırında listelenmesi gerektiğinden, kitaplıkların listesini tüm geçerli adları kullanacak şekilde güncelleştirmeniz gerekir.
 
-Aşağıdaki tablo, Visual Studio 2015 ile başlayan içeriği değiştirildi kitaplıkları gösterir. Yükseltmek için ilk sütunda kitaplıklarda ikinci sütun, yeni kitaplık adlarını eklemeniz gerekir. Bu kitaplıklar içeri aktarma kitaplıkları bazıları, ancak önemli olmamalıdır.
+Aşağıdaki tabloda, içeriği Visual Studio 2015 ile başlayarak değiştirilen kitaplıklar gösterilmektedir. Yükseltmek için, ikinci sütundaki yeni kitaplık adlarını ilk sütundaki kitaplıklara eklemeniz gerekir. Bu kitaplıkların bazıları içeri aktarma kitaplıklarıdır, ancak böyle bir önemi yoktur.
 
 |||
 |-|-|
-|Kullandıysanız:|Bu kitaplıklar kullanmanız gerekir:|
-|libcmt.lib|libcmt.lib, libucrt.lib, libvcruntime.lib|
-|libcmtd.lib|libcmtd.lib, libucrtd.lib, libvcruntimed.lib|
-|msvcrt.lib|msvcrt.lib, ucrt.lib, vcruntime.lib|
-|msvcrtd.lib|msvcrtd.lib, ucrtd.lib, vcruntimed.lib|
+|Şunu kullanıyorsanız:|Şu kitaplıkları kullanmanız gerekir:|
+|Libcmt. lib|Libcmt. lib, libucrt. lib, libvcruntime. lib|
+|libcmtd.lib|libcmtd. lib, libucrtd. lib, libvcruntimed. lib|
+|msvcrt.lib|Msvcrt. lib, UCRT. lib, vcruntime. lib|
+|msvcrtd.lib|msvcrtd. lib, ucrtd. lib, vcrunzamanlandı. lib|
 
-Aynı sorunu, ayrıca kullandığınız geçerlidir `/ENTRY` seçeneği veya `/NOENTRY` varsayılan kitaplık atlayarak etkisini de seçeneği.
+Aynı sorun, varsayılan kitaplıkları atlama etkisi de olan `/ENTRY` seçeneğini `/NOENTRY` veya seçeneğini kullanırsanız de geçerlidir.
 
-## <a name="errors-due-to-improved-language-conformance"></a>Hatalar nedeniyle geliştirilmiş dil uyumluluğu
+## <a name="errors-due-to-improved-language-conformance"></a>Geliştirilmiş dil uyumluluğu nedeniyle hatalar oluştu
 
-Microsoft C++ derleyici, uyumluluk sürekli olarak geliştirildi C++ yıllar standart. Önceki sürümlerinde derlenmiş kod, derleyici doğru açıkça izin verilen veya önceden yoksayıldı hata işaretler çünkü Visual Studio'nun sonraki sürümlerinde derlemek başarısız olabilir.
+Microsoft C++ derleyicisi, yıl boyunca C++ standart uyumluluk uyumluluğunu sürekli olarak iyileştirdi. Önceki sürümlerde derlenen kod, derleyici daha önce yoksayılan veya açıkça izin verilen bir hatayı doğru bir şekilde ayarlayacağından Visual Studio 'nun sonraki sürümlerinde derlenemeyebilir.
 
-Örneğin, `/Zc:forScope` anahtar erken MSVC geçmişinde tanıtılmıştır. Bu davranışı loop değişkenleri DSCP izin verir. Bu anahtar artık kullanım dışıdır ve gelecek sürümlerde kaldırılabilir. Bu anahtar, kodunuzu yükseltirken kullanmayacak şekilde önemle tavsiye edilir. Daha fazla bilgi için [/Zc:forScope-kullanım dışı](porting-guide-spy-increment.md#deprecated_forscope).
+Örneğin, `/Zc:forScope` anahtar MSVC geçmişinden erken sunulmuştur. Döngü değişkenleri için uyumlu olmayan davranışa izin verir. Bu anahtar artık kullanım dışıdır ve gelecek sürümlerde kaldırılabilir. Kodunuzu yükseltirken bu anahtarın kullanılması kesinlikle önerilir. Daha fazla bilgi için bkz. [/Zc: forScope-kullanım dışıdır](porting-guide-spy-increment.md#deprecated_forscope).
 
-Const olmayan bir bağımsız değişken için const bir parametre olarak geçirildiğinde yükseltirken görebileceğiniz ortak bir derleyici hatası için bir örnektir. Derleyicisinin eski sürümleri her zaman bu hata olarak bayrak. Daha fazla bilgi için [derleyicinin daha katı dönüştürmeler](porting-guide-spy-increment.md#stricter_conversions).
+Bir const parametreye const olmayan bir bağımsız değişken geçirildiğinde görebileceğiniz yaygın bir derleyici hatası örneği. Derleyicinin eski sürümleri her zaman bir hata olarak bayrak almadı. Daha fazla bilgi için [derleyicinin daha katı dönüştürmelerine](porting-guide-spy-increment.md#stricter_conversions)bakın.
 
-Belirli bir uyumluluk geliştirmeleri hakkında daha fazla bilgi için bkz. [Visual C++ değişiklik geçmişi 2003-2015](visual-cpp-change-history-2003-2015.md) ve [Visual Studio'da C++ uyumluluk geliştirmeleri](../overview/cpp-conformance-improvements.md).
+Belirli uygunluk geliştirmeleri hakkında daha fazla bilgi için bkz. Visual Studio 'da [ C++ görsel değişiklik geçmişi 2003-2015](visual-cpp-change-history-2003-2015.md) ve [ C++ uyumluluk geliştirmeleri](../overview/cpp-conformance-improvements.md).
 
-## <a name="errors-involving-stdinth-integral-types"></a>Hatalar içeren \<stdint.h > tam sayı türleri
+## <a name="errors-involving-stdinth-integral-types"></a>Stdint \<. h > integral türlerini içeren hatalar
 
-\<Stdint.h > Üstbilgi typedefs tanımlar ve, yerleşik tam sayı türleri farklı garanti makroları, tüm platformlarda belirtilen uzunluğa sahip. Bazı örnekler `uint32_t` ve `int64_t`. \<Stdint.h > üst bilgi, Visual Studio 2010'da eklendi. 2010'dan önce yazılmış kod, bu türleri için özel tanımları sağlanan ve bu tanımları her zaman ile tutarlı olmayabilir \<stdint.h > tanımlar.
+\<Stdint. h > üst bilgisi, yerleşik integral türlerin aksine, tüm platformlarda belirtilen uzunlukta olması garantisini veren tür tanımları ve makroları tanımlar. Bazı örnekler `uint32_t` ve `int64_t`. \<Stdınt. h > üstbilgisi Visual Studio 2010 ' ye eklenmiştir. 2010 'den önce yazılan kod bu türler için özel tanımlar sağlamış olabilir ve bu tanımlar her zaman \<stdınt. h > tanımlarıyla tutarlı olmayabilir.
 
-Hatası C2371 ise ve a `stdint` türü eklendiyse, bu büyük olasılıkla türü kodunuzu veya üçüncü taraf kitaplığı dosya üstbilgisinde tanımlanır anlamına gelir. Yükseltme sırasında hiçbir özel tanımları ortadan \<stdint.h > türlerini, ancak ilk geçerli standart tanımları özel tanımları karşılaştırmak, değil Karşınızda yeni sorunlar emin olmak için.
+Hata C2371 ise ve bir `stdint` tür varsa, büyük olasılıkla türün kodunuzda veya üçüncü taraf lib dosyasında tanımlandığı anlamına gelir. ' Yi yükseltirken, \<stdint. h > türlerinin özel tanımlarını ortadan kaldırmanız gerekir, ancak ilk olarak özel tanımları geçerli standart tanımlarla karşılaştırarak yeni sorunlarla karşılaştığınızdan emin olun.
 
-Basabilirsiniz **F12** (**Tanıma Git**) söz konusu tür tanımlandığı görmek için.
+Söz konusu türün nerede tanımlandığını görmek için **F12** tuşuna (**Tanıma Git**) basabilirsiniz.
 
-[/Showıncludes](../build/reference/showincludes-list-include-files.md) derleyici seçeneği yararlı olabilir burada. İçinde **özellik sayfaları** iletişim kutusunu açın, projeniz için **C/C++** > **Gelişmiş** sayfasında ve ayarlayın **Göster içerir** için **Evet**. Ardından projenizi yeniden derleyin ve listesini `#include`çıktı penceresinde s. Her bir üst bilgi içeren bir üst bilgisi altında girintili hale getirilir.
+[/ShowIncludes](../build/reference/showincludes-list-include-files.md) derleyici seçeneği burada yararlı olabilir.  > Projenizin **Özellik sayfaları** iletişim kutusunda **C/C++** **Gelişmiş** sayfasını açın ve **eklemeleri göster** ' i **Evet**olarak ayarlayın. Ardından projenizi yeniden derleyin ve çıkış penceresinde `#include`s listesini görüntüleyin. Her üst bilgi, onu içeren üst bilgi altında girintilenir.
 
-## <a name="errors-involving-crt-functions"></a>CRT işlevlerinin ilgili hatalar
+## <a name="errors-involving-crt-functions"></a>CRT işlevleriyle ilgili hatalar
 
-Birçok değişiklik için C çalışma zamanı yıllar içinde yapıldı. İşlevlerin güvenli sürümleri birçok eklenen ve bazı kaldırıldı. Ayrıca, bu makalenin önceki bölümlerinde açıklandığı gibi CRT, Microsoft'un uygulama Visual Studio 2015'te yeni ikili dosyaları ve ilişkili .lib dosyaları halinde yeniden düzenlenmeden.
+C çalışma zamanında yıllarda çok sayıda değişiklik yapılmıştır. İşlevlerin birçok güvenli sürümü eklenmiştir ve bazıları kaldırılmıştır. Ayrıca, bu makalenin önceki kısımlarında açıklandığı gibi, Microsoft 'un CRT 'nin uygulanması, Visual Studio 2015 ' de yeni ikili dosyalar ve ilişkili. lib dosyaları yeniden düzenlenmiş.
 
-Hata bir CRT işlevini içeriyorsa, arama [Visual C++ değişiklik geçmişi 2003-2015](visual-cpp-change-history-2003-2015.md) veya [ C++ Visual Studio'da uyumluluk geliştirmeleri](../overview/cpp-conformance-improvements.md) Bu makaleler ek içerip içermediğini görmek için bilgiler. Hatası LNK2019, çözülmemiş dış ise işlev kaldırılmamıştır emin olun. İşlev hala mevcut olduğundan ve çağırma kodunun doğru olduğundan emin olup, aksi takdirde, projenizi kullanıp kullanmadığını denetleyin `/NODEFAULTLIB`. Bu durumda, böylece yeni evrensel (UCRT) kitaplıkları kullanan proje kitaplıkların listesini güncelleştirmeniz gerekiyor. Daha fazla bilgi için kitaplık ve bağımlılıkları yukarıdaki bölüme bakın.
+Bir hata CRT işlevi içeriyorsa, bu makalelerin ek bilgiler içerdiğini görmek için [görsel C++ değişiklik geçmişi 2003-2015](visual-cpp-change-history-2003-2015.md) ' i veya [ C++ Visual Studio 'daki uygunluk geliştirmelerini](../overview/cpp-conformance-improvements.md) arayın. Hata LNK2019 ise, çözümlenmemiş dış ise işlevin kaldırılmadığından emin olun. Aksi takdirde, işlevin hala mevcut olduğundan eminseniz ve çağıran kod doğru olduğundan, projenizin `/NODEFAULTLIB`kullanıp kullanmadığını kontrol edin. Bu durumda, projenin yeni Evrensel (UCRT) kitaplıklarını kullanması için kitaplıkların listesini güncelleştirmeniz gerekir. Daha fazla bilgi için kitaplık ve bağımlılıklarda yukarıdaki bölüme bakın.
 
-Hata içeriyorsa `printf` veya `scanf`, özel olarak ya da işlev stdio.h dahil etmeden tanımladığınız değil, emin olun. Bu durumda, özel tanımları kaldırın veya bağlantısını için eski\_stdio\_definitions.lib. Bu kitaplık ayarlayabileceğiniz **özellik sayfaları** iletişim altında **yapılandırma özellikleri** > **bağlayıcı** > **giriş** , **ek bağımlılıklar** özelliği. Windows 8.1 SDK'sı ile bağlama veya önceki bir sürümü varsa, eski eklersiniz\_stdio\_definitions.lib.
+Hata ya `printf` `scanf`da içeriyorsa, stdio. h dahil olmadan bir işlevi özel olarak tanımlamadığınızdan emin olun. Varsa, özel tanımları kaldırın veya eski\_stdio\_Definitions. lib bağlantısını kaldırın. Bu kitaplığı, **ek bağımlılıklar** özelliğindeki **yapılandırma özellikleri** > **bağlayıcı** > **girişi**altındaki **Özellik sayfaları** iletişim kutusunda ayarlayabilirsiniz. Windows SDK 8,1 veya önceki bir sürümü ile bağlıyorsanız, eski\_stdio\_Definitions. lib ekleyin.
 
-Biçim dizesi bağımsız değişkenleri hata içeriyorsa, derleyici standart zorlama hakkında daha sıkı büyük olasılıkla olmasıdır. Daha fazla bilgi için değişiklik geçmişini görebilir. Bir güvenlik riski potansiyel olarak temsil edebilir çünkü Kapat hataları burada dikkat edin.
+Hata, biçim dizesi bağımsız değişkenlerini içeriyorsa, büyük olasılıkla derleyicinin standart zorlama konusunda daha sıkı olmasından kaynaklanır. Daha fazla bilgi için bkz. değişiklik geçmişi. Bir güvenlik riskini potansiyel olarak temsil ettiğinden, buradaki hatalara yakın bir şekilde dikkat edin.
 
-## <a name="errors-due-to-changes-in-the-c-standard"></a>C++ Standart değişiklikleri nedeniyle hataları
+## <a name="errors-due-to-changes-in-the-c-standard"></a>C++ Standart değişikliklerden kaynaklanan hatalar
 
-C++ Standart her zaman geriye dönük olarak uyumlu olmayan şekilde gelişmiştir. C ++ 11 taşıma semantiği, yeni anahtar sözcükleri ve diğer dili ve standart kitaplık özellikleri giriş, potansiyel olarak derleyici hatalarına neden olur ve hatta farklı çalışma zamanı davranışı.
+Standart C++ , her zaman geriye dönük olarak uyumlu olmayan yollarla gelişmiştir. C++ 11 ' in taşıma semantiklerine, yeni anahtar sözcüklere ve diğer dil ve standart kitaplık özelliklerine giriş, büyük olasılıkla derleyici hatalarına ve hatta farklı çalışma zamanı davranışına neden olabilir.
 
-Örneğin, eski bir C++ programını iostream.h üst bilgisi içerebilir. Bu üstbilgi C++ geçmişinde erken kullanım dışı bırakıldı ve Visual Studio'dan sonuçta tamamen kaldırıldı. Bu durumda, kullanmanız gerekecektir \<iostream > ve kodunuzu yeniden yazma. Daha fazla bilgi için [eski iostreams kodunu güncelleştirme](porting-guide-spy-increment.md#updating_iostreams_code).
+Örneğin, eski C++ bir program iostream. h üst bilgisini içerebilir. Bu üst bilgi, geçmişinden erken kullanımdan kaldırılmıştır C++ ve sonunda Visual Studio 'dan tamamen kaldırılmıştır. Bu durumda, ıostream > kullanmanız \<ve kodunuzu yeniden yazmanız gerekir. Daha fazla bilgi için bkz. [eski Iostreams kodunu güncelleştirme](porting-guide-spy-increment.md#updating_iostreams_code).
 
-### <a name="c4838-narrowing-conversion-warning"></a>C4838: dönüştürme uyarı daraltma
+### <a name="c4838-narrowing-conversion-warning"></a>C4838: daraltma dönüştürme uyarısı
 
-C++ standardı artık işaretsiz dönüşümlerse imzalı tam sayı değerlerine daraltma dönüşümleri olarak kabul edilir belirtir. Derleyici bu uyarıyı önce Visual Studio 2015 vermedi. Daraltma kodunuzun doğruluğunu etkilemez emin olmak için her oluşumu inceleyin.
+Standart C++ Şu anda işaretsiz ve işaretli integral değerleri için dönüştürmelerin daraltma dönüştürmesi olarak kabul edileceğini belirtir. Derleyici, Visual Studio 2015 ' dan önce bu uyarıyı yükseltmedi. Daraltmaya ait kodunuzun doğruluğunu etkilemediğinden emin olmak için her bir oluşumu inceleyin.
 
-## <a name="warnings-to-use-secure-crt-functions"></a>Güvenli CRT işlevleri kullanmak için uyarılar
+## <a name="warnings-to-use-secure-crt-functions"></a>Güvenli CRT işlevlerini kullanma uyarıları
 
-C çalışma zamanı işlevlerin güvenli sürümleri yıllar içinde tanıtılmıştır. Eski ve güvenli olmayan sürümler hala kullanılabilir olsa da, kodunuzu güvenli sürümler kullanmak için değiştirmeniz önerilir. Derleyici, güvenli olmayan sürümlerden kullanımı için bir uyarı verir. Devre dışı bırakmak veya bu uyarılarını gözardı seçebilirsiniz. Çözümünüzdeki tüm projeler için uyarıyı devre dışı bırakmak için açın **görünümü** > **özellik Yöneticisi**, uyarıyı devre dışı bırakın ve ardından seçili sağ istediğiniz tüm projeleri seçin öğeleri ve seçin **özellikleri**. İçinde **özellik sayfaları** iletişim altında **yapılandırma özellikleri** > **C/C++** > **Gelişmiş**, seçin **belirli uyarıları devre dışı**. Aşağı açılan oka tıklayın ve ardından **Düzenle**. 4996 metin kutusuna girin. ('C' ön eki dahil değildir.) Daha fazla bilgi için [güvenli CRT kullanılacak taşıma](porting-guide-spy-increment.md#porting_to_secure_crt).
+Yıllarca, C çalışma zamanı işlevlerinin güvenli sürümleri sunulmuştur. Eski, güvenli olmayan sürümler hala kullanılabilir olsa da, kodunuzun güvenli sürümlerini kullanmak için değiştirilmesi önerilir. Derleyici, güvenli olmayan sürümlerin kullanımı için bir uyarı verecek. Bu uyarıları devre dışı bırakmayı veya yoksaymayı seçebilirsiniz. Çözümünüzdeki tüm projelere yönelik uyarıyı devre dışı bırakmak için, **Görünüm** > **Özellik Yöneticisi**açın, uyarıyı devre dışı bırakmak istediğiniz tüm projeler ' i seçin, ardından seçili öğelere sağ tıklayıp **Özellikler**' i seçin. **Özellik sayfaları** iletişim kutusunda, **yapılandırma özellikleri** >  > **C/C++** **Gelişmiş**altında, **belirli uyarıları devre dışı bırak**' ı seçin. Açılan oka tıklayın ve ardından **Düzenle**' ye tıklayın. Metin kutusuna 4996 girin. (' C ' önekini eklemeyin.) Daha fazla bilgi için bkz. [GÜVENLI CRT 'yi kullanmak Için taşıma](porting-guide-spy-increment.md#porting_to_secure_crt).
 
-## <a name="errors-due-to-changes-in-windows-apis-or-obsolete-sdks"></a>Windows API'leri veya eski bir SDK'ları değişiklikleri nedeniyle hataları
+## <a name="errors-due-to-changes-in-windows-apis-or-obsolete-sdks"></a>Windows API 'Lerinde veya eski SDK 'larda yapılan değişikliklerden kaynaklanan hatalar
 
-Yıllar içinde Windows API'leri ve veri türleri eklenir ve bazen değiştirilmiş veya kaldırıldı. Ayrıca, diğer çekirdek işletim sistemine ait olmayan SDK'ları gelen gitti ve. Eski programları, bu nedenle artık mevcut API'lere giden çağrıların içerebilir. Ayrıca, artık desteklenen diğer Microsoft SDKs API'lere giden çağrıların içeriyor olabilir. Windows API bir veya daha eski bir Microsoft SDK API içeren bir hata görürseniz, bir API kaldırıldı ve/veya daha yeni ve güvenli bir işlev tarafından değiştirilen olduğunu mümkündür.
+Yıl boyunca, Windows API 'Leri ve veri türleri eklenmiştir ve bazen değişir ya da kaldırılır. Ayrıca, çekirdek işletim sistemine ait olmayan diğer SDK 'lar da gelir ve kayboldu. Bu nedenle, daha eski programlar artık varolmayan API 'lere çağrılar içerebilir. Ayrıca, artık desteklenmeyen diğer Microsoft SDK 'Lerinde API 'lere çağrılar de içerebilir. Eski bir Microsoft SDK 'dan bir Windows API 'sini veya API 'yi içeren bir hata görürseniz, bir API 'nin kaldırılması ve/veya yerini daha yeni, daha güvenli bir işlev ile yerine getirmek mümkündür.
 
-Belirli bir Windows API'si için en düşük desteklenen işletim sistemleri ve geçerli API hakkında daha fazla bilgi için bkz. [Microsoft API ve başvuru Kataloğu](https://msdn.microsoft.com/library) ve söz konusu API gidin.
+Geçerli API kümesi ve belirli bir Windows API 'SI için desteklenen en düşük işletim sistemleri hakkında daha fazla bilgi için bkz. [MICROSOFT API ve başvuru kataloğu](https://msdn.microsoft.com/library) ve söz konusu API 'ye gitme.
 
 ### <a name="windows-version"></a>Windows sürümü
 
-Windows API doğrudan veya dolaylı olarak kullanan bir program yükseltirken desteklemek için en düşük Windows sürümü karar vermeniz gerekir. Çoğu durumda, Windows 7 iyi bir seçimdir. Daha fazla bilgi için [üstbilgi dosya sorunlarını](porting-guide-spy-increment.md#header_file_problems). `WINVER` Makro tanımlar, programınız için tasarlanan Windows en eski sürümünü çalıştırın. MFC programınızı WINVER 0x0501 (Windows XP) için ayarlar MFC artık XP desteklediğinden derleyici XP modu sahip olsa da, bir uyarı alırsınız.
+Windows API kullanan bir programı doğrudan veya dolaylı olarak yükseltirken, desteklemek için en düşük Windows sürümüne karar vermeniz gerekir. Çoğu durumda, Windows 7 iyi bir seçimdir. Daha fazla bilgi için bkz. [üstbilgi dosyası sorunları](porting-guide-spy-increment.md#header_file_problems). `WINVER` Makro, programınızın üzerinde çalışmak üzere tasarlandığı en eski Windows sürümünü tanımlar. MFC programınız WINVER 'yi 0x0501 olmalı (Windows XP) olarak ayarlamışsa, derleyicinin kendisi bir XP moduna sahip olsa bile, MFC artık XP 'yi desteklemediği için bir uyarı alırsınız.
 
-Daha fazla bilgi için [hedef Windows sürümüne güncelleştirmeden](porting-guide-spy-increment.md#updating_winver) ve [daha üst bilgi dosyaları'nı eski](porting-guide-spy-increment.md#outdated_header_files).
+Daha fazla bilgi için bkz. [hedef Windows sürümü](porting-guide-spy-increment.md#updating_winver) ve [daha güncel olmayan üstbilgi dosyaları](porting-guide-spy-increment.md#outdated_header_files)güncelleştiriliyor.
 
-## <a name="atl--mfc"></a>ATL / MFC
+## <a name="atl--mfc"></a>ATL/MFC
 
-ATL ve MFC göreceli olarak kararlı apı'lerdir ancak bazen yapılan değişiklikler. Daha fazla bilgi için [Visual C++ değişiklik geçmişi 2003-2015](visual-cpp-change-history-2003-2015.md), [görsel için Yenilikler C++ Visual Studio'daki](../overview/what-s-new-for-visual-cpp-in-visual-studio.md), ve [ C++ görselde uyumluluk geliştirmeleri Studio](../overview/cpp-conformance-improvements.md).
+ATL ve MFC görece kararlı API 'lardır, ancak değişiklikler zaman zaman yapılır. Daha fazla bilgi için bkz [. C++ görsel değişiklik geçmişi 2003-2015](visual-cpp-change-history-2003-2015.md), Visual [Studio 'da Visual C++ için](../overview/what-s-new-for-visual-cpp-in-visual-studio.md)yenilikler ve [ C++ Visual Studio 'da uygunluk geliştirmeleri](../overview/cpp-conformance-improvements.md).
 
-### <a name="lnk-2005-dllmain12-already-defined-in-msvcrtdlib"></a>LNK 2005 _DllMain@12 MSVCRTD.lib içinde zaten tanımlı
+### <a name="lnk-2005-_dllmain12-already-defined-in-msvcrtdlib"></a>LNK 2005 _DllMain@12 zaten msvcrtd. lib içinde tanımlandı
 
-MFC uygulamalarında bu hata oluşabilir. Bu, CRT kitaplık ve MFC kitaplığını arasındaki sıralama bir sorun olduğunu gösterir. Böylece yeni sağlar ve delete işleçleri MFC bağlanması gerekir. Hatayı düzeltmek için kullanmak `/NODEFAULTLIB` bu varsayılan kitaplıkları Yoksay olarak geçin: MSVCRTD.lib and mfcs140d.lib. Daha sonra bu aynı libs ek bağımlılıkları olarak ekleyin.
+Bu hata MFC uygulamalarında meydana gelebilir. CRT kitaplığı ve MFC Kitaplığı arasında bir sıralama sorunu olduğunu gösterir. MFC, New ve delete işleçleri sağlamak için önce bağlanmalıdır. Hatayı düzeltemedi, bu varsayılan kitaplıkları `/NODEFAULTLIB` yoksaymak için anahtarını kullanın: MSVCRTD. lib ve mfcs140d. lib. Daha sonra bu aynı kitaplıklar 'leri ek bağımlılıklar olarak ekleyin.
 
-## <a name="32-vs-64-bit"></a>32 ve 64 bit
+## <a name="32-vs-64-bit"></a>32 vs 64 bit
 
-32-bit sistemler için özgün kod derlenir, yerine veya yeni bir 32 bit uygulama yanı sıra 64-bit sürümünü oluşturma seçeneğiniz vardır. Genel olarak, 32 bit modunda derleme programınızı ilk alın ve sonra 64-bit denemeniz gerekir. 64 bit için derleme basittir, ancak bazı durumlarda 32-bit derlemeler tarafından gizlenmiş hataları ortaya çıkarabilir.
+Özgün kodunuz 32-bit sistemler için derlenmişse, yeni bir 32 bit uygulamanın yanı sıra veya yerine 64 bit sürümü oluşturma seçeneğiniz vardır. Genel olarak, program derlemek için önce 32 bit modunda, sonra da 64 bit deneyirsiniz. 64-bit için derleme basittir, ancak bazı durumlarda 32 bit derlemeler tarafından gizlenen hataları ortaya çıkaralabilir.
 
-Ayrıca, işaretçi boyutu, zaman ve boyut değerleri ve biçim belirticileri printf veya scanf işlevindeki ilgili, derleme zamanı ve çalışma zamanı olası sorunların farkında olmalıdır. Daha fazla bilgi için [yapılandırma Visual C++ 64 bit x64 için hedefleri](../build/configuring-programs-for-64-bit-visual-cpp.md) ve [yaygın Visual C++ 64 bit geçiş sorunları](../build/common-visual-cpp-64-bit-migration-issues.md). Ek geçiş ipuçları için bkz: [64 bit Windows için Programlama Kılavuzu](/windows/desktop/WinProg64/programming-guide-for-64-bit-windows).
+Ayrıca, işaretçi boyutu, zaman ve boyut değerleriyle ilgili olası derleme zamanı ve çalışma zamanı sorunlarından ve printf ve scanf işlevlerinde biçim belirticilerine dikkat etmeniz gerekir. Daha fazla bilgi için bkz. [Visual C++ configure for 64-bit, x64 hedefleri](../build/configuring-programs-for-64-bit-visual-cpp.md) ve [genel C++ Visual 64-bit geçiş sorunları](../build/common-visual-cpp-64-bit-migration-issues.md). Ek geçiş ipuçları için bkz. [64 bit Windows Için Programlama Kılavuzu](/windows/win32/WinProg64/programming-guide-for-64-bit-windows).
 
-## <a name="unicode-vs-mbcsascii"></a>Unicode ve MBCS/ASCII
+## <a name="unicode-vs-mbcsascii"></a>Unicode vs MBCS/ASCII
 
-Unicode standart önce birçok program çok baytlı karakter kümesi (MBCS) ASCII karakter kümesinde yer almayan karakterlerini temsil etmek için kullanılır. Eski MFC projelerinde MBCS varsayılan ayar olan ve böyle bir program yükselttiğinizde, Unicode kullanmayı öneri uyarıları görürsünüz. Devre dışı bırakma veya Unicode dönüştürme geliştirme maliyeti karşılıyor olmadığını karar verirseniz, uyarıyı yok sayın tercih edebilirsiniz. Çözümünüzdeki tüm projeler için devre dışı bırakmak için açın **görünümü** > **özellik Yöneticisi**, uyarıyı devre dışı bırakmak ve ardından seçili öğeleri üzerinde sağ istediğiniz tüm projeleri seçin ve seçin **özellikleri**. İçinde **özellik sayfaları** iletişim kutusunda **yapılandırma özellikleri** > **C/C++** > **Gelişmiş**. İçinde **belirli uyarıları devre dışı** özelliği, açılan liste okunu açın ve ardından **Düzenle**. 4996 metin kutusuna girin. ('C' ön eki dahil değildir.) Seçin **Tamam** özelliği kaydetmek için ardından **Tamam** yaptığınız değişiklikleri kaydedin.
+Unicode, standartlaştırılmış olmadan önce, ASCII karakter kümesinde bulunmayan karakterleri temsil etmek için çok baytlı karakter kümesi (MBCS) kullandı. Daha eski MFC projelerinde, MBCS varsayılan ayardır ve böyle bir programı yükselttiğinizde, bunun yerine Unicode kullanmaya yönelik uyarılar görürsünüz. Unicode 'a dönüştürmeye karar verirseniz geliştirme maliyetine değer vermez, uyarıyı devre dışı bırakmayı veya yoksayabilirsiniz. Çözümünüzdeki tüm projeler için bunu devre dışı bırakmak için, **Görünüm** > **Özellik Yöneticisi**açın, uyarıyı devre dışı bırakmak istediğiniz tüm projeler ' i seçin, ardından seçili öğelere sağ tıklayıp **Özellikler**' i seçin. **Özellik sayfaları** iletişim kutusunda, **yapılandırma özellikleri** >  > **C/C++** **Gelişmiş**' i seçin. **Belirli uyarıları devre dışı bırak** özelliğinde, açılan oku açın ve ardından **Düzenle**' yi seçin. Metin kutusuna 4996 girin. (' C ' önekini eklemeyin.) Özelliği kaydetmek için **Tamam** ' ı seçin ve ardından değişikliklerinizi kaydetmek için **Tamam** ' ı seçin.
 
-Daha fazla bilgi için [MBCS, Unicode taşıma](porting-guide-spy-increment.md#porting_to_unicode). MBCS vs hakkında genel bilgi için. Unicode bkz [Visual C++'da metin ve dizeler](../text/text-and-strings-in-visual-cpp.md) ve [uluslararası duruma getirme](../c-runtime-library/internationalization.md) .
+Daha fazla bilgi için bkz. [MBCS 'Den Unicode 'A taşıma](porting-guide-spy-increment.md#porting_to_unicode). MBCS ile ilgili genel bilgiler için Unicode, bkz. görsel [](../c-runtime-library/internationalization.md) [ C++ ve uluslararası hale getirme içindeki metin ve dizeler](../text/text-and-strings-in-visual-cpp.md) .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -24,16 +24,16 @@ helpviewer_keywords:
 - Fire_OnRowChange method
 - Fire_OnRowsetChange method
 ms.assetid: ccef402b-94a0-4c2e-9a13-7e854ef82390
-ms.openlocfilehash: a3ab63206ce7ac53ff996ecf1bb64bdaa0b79fcb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 481c2c0ec28972e9cef8d1103e49afa2037c2393
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62390743"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69501383"
 ---
 # <a name="irowsetnotifycp-class"></a>IRowsetNotifyCP Sınıfı
 
-Sağlayıcı sitesi için bağlantı noktası arabirimi uygulayan [IRowsetNotify](/previous-versions/windows/desktop/ms712959(v=vs.85)).
+Bağlantı noktası arabirimi [ırowsetnotıfy](/previous-versions/windows/desktop/ms712959(v=vs.85))için sağlayıcı sitesini uygular.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -49,21 +49,21 @@ class IRowsetNotifyCP :
 
 ### <a name="parameters"></a>Parametreler
 
-*T*<br/>
-Öğesinden türetilen bir sınıf `IRowsetNotifyCP`.
+*ŞI*<br/>
+Sınıfından türetilmiş `IRowsetNotifyCP`bir sınıf.
 
-*ReentrantEventSync*<br/>
-Yeniden giriş destekleyen bir mutex sınıfı (varsayılan değer `CComSharedMutex`). Bir mutex bir iş parçacığı bir kaynağa karşılıklı olarak dışlama erişimine izin veren bir eşitleme nesnesi olan.
+*Reentrance Teventsync*<br/>
+Yeniden girişi destekleyen bir mutex sınıfı (varsayılan değer `CComSharedMutex`). Mutex, bir iş parçacığının bir kaynağa karşılıklı olarak erişilmesini sağlayan bir eşitleme nesnesidir.
 
-*piid*<br/>
-Bir arabirim kimliği işaretçisi (`IID*`) için bir `IRowsetNotify` bağlantı noktası arabirimi. Varsayılan değer `&__uuidof(IRowsetNotify)` şeklindedir.
+*piıd*<br/>
+`IRowsetNotify` Bağlantı noktası arabirimi için arabirim`IID*`kimlik işaretçisi (). Varsayılan değer `&__uuidof(IRowsetNotify)` şeklindedir.
 
 *DynamicUnkArray*<br/>
-Türünde bir dizi [CComDynamicUnkArray](../../atl/reference/ccomdynamicunkarray-class.md), dinamik olarak ayrılan dizi olduğu `IUnknown` istemci işaretçileri havuz arabirimleri.
+İstemci havuzu arabirimlerine yönelik bir dizi `IUnknown` işaretçilerin dinamik olarak ayrılmış dizisi olan [CComDynamicUnkArray](../../atl/reference/ccomdynamicunkarray-class.md)türünde bir dizi.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atldb.h
+**Üstbilgi:** Atldb. h
 
 ## <a name="members"></a>Üyeler
 
@@ -71,21 +71,21 @@ Türünde bir dizi [CComDynamicUnkArray](../../atl/reference/ccomdynamicunkarray
 
 |||
 |-|-|
-|[Fire_OnFieldChange](#onfieldchange)|Bir sütunun değerini değişiklik tüketicisinin bildirir.|
-|[Fire_OnRowChange](#onrowchange)|Satırları etkileyen bir değişiklik tüketicisinin bildirir.|
-|[Fire_OnRowsetChange](#onrowsetchange)|Tüm satır kümesini etkileyen bir değişiklik tüketicisinin bildirir.|
+|[Fire_OnFieldChange](#onfieldchange)|Bir sütunun değerinde bir değişikliğin tüketicisini bilgilendirir.|
+|[Fire_OnRowChange](#onrowchange)|Tüketiciye, satırları etkileyen bir değişiklik olduğunu bildirir.|
+|[Fire_OnRowsetChange](#onrowsetchange)|Tüketiciye tüm satır kümesini etkileyen bir değişiklik olduğunu bildirir.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`IRowsetNotifyCP` uygular bağlantı noktası üzerinde dinleyici bildirmek için işlevleri yayın `IID_IRowsetNotify` değişiklik kümesi içeriği.
+`IRowsetNotifyCP`, satır kümesinin içeriğinde yapılan değişikliklerin bağlantı noktasındaki `IID_IRowsetNotify` dinleyicileri bildirmek için yayın işlevlerini uygular.
 
-Ayrıca uygulama ve kaydetme gerekir unutmayın `IRowsetNotify` kullanarak tüketici (diğer adıyla "havuz") [IRowsetNotifyImpl](../../data/oledb/irowsetnotifyimpl-class.md) tüketici bildirimleri işleyebilmeniz. Bkz: [bildirimleri alma](../../data/oledb/receiving-notifications.md) tüketici üzerinde bağlantı noktası arabirimini uygulayan hakkında.
+Tüketicinin bildirimleri işleyebilmesi için, `IRowsetNotify` [IRowsetNotifyImpl](../../data/oledb/irowsetnotifyimpl-class.md) kullanarak tüketiciyi ("havuz" olarak da bilinir) da uygulamanız ve kaydettirmeniz gerektiğini unutmayın. Bkz. tüketici üzerinde bağlantı noktası arabirimini uygulamayla ilgili [Bildirimler alma](../../data/oledb/receiving-notifications.md) .
 
-Bildirimleri uygulama ile ilgili ayrıntılı bilgi için bkz: "Destek bildirimleri" [güncelleştirilebilir sağlayıcı oluşturma](../../data/oledb/creating-an-updatable-provider.md).
+Bildirimleri uygulamayla ilgili ayrıntılı bilgi için, [güncelleştirilebilir bir sağlayıcı oluşturma](../../data/oledb/creating-an-updatable-provider.md)konusunda "bildirimleri destekleme" bölümüne bakın.
 
-## <a name="onfieldchange"></a> IRowsetNotifyCP::fire_onfieldchange
+## <a name="onfieldchange"></a>IRowsetNotifyCP:: Fire_OnFieldChange
 
-Yayınlar bir [OnFieldChange](/previous-versions/windows/desktop/ms715961(v=vs.85)) olay tüketicileri bir sütun değerine değişikliği bildirir.
+Bir sütunun değerindeki bir değişikliğin tüketicilerini bilgilendirmek için [OnFieldChange](/previous-versions/windows/desktop/ms715961(v=vs.85)) olayını yayınlar.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -101,11 +101,11 @@ HRESULT Fire_OnFieldChange(IRowset* pRowset,
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz: [IRowsetNotify::OnFieldChange](/previous-versions/windows/desktop/ms715961(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
+*OLE DB Programcı başvurusunda* [IRowsetNotify:: OnFieldChange öğesine](/previous-versions/windows/desktop/ms715961(v=vs.85)) bakın.
 
-## <a name="onrowchange"></a> IRowsetNotifyCP::fire_onrowchange
+## <a name="onrowchange"></a>IRowsetNotifyCP:: Fire_OnRowChange
 
-Yayınlar bir [OnRowChange](/previous-versions/windows/desktop/ms722694(v=vs.85)) tüm dinleyici bağlantı noktası üzerinde olaya `IID_IRowsetNotify` satırları etkileyen bir değişiklik tüketicilerinin bildirir.
+, Satırları etkileyen bir değişikliği tüketicilere bildirmek için bağlantı noktasındaki `IID_IRowsetNotify` tüm dinleyicilerle [OnRowChange](/previous-versions/windows/desktop/ms722694(v=vs.85)) olayını yayınlar.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -120,11 +120,11 @@ HRESULT Fire_OnRowChange(IRowset* pRowset,
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz: [IRowsetNotify::OnRowChange](/previous-versions/windows/desktop/ms722694(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
+*OLE DB Programcı başvurusunda* [IRowsetNotify:: OnRowChange öğesine](/previous-versions/windows/desktop/ms722694(v=vs.85)) bakın.
 
-## <a name="onrowsetchange"></a> IRowsetNotifyCP::Fire_OnRowsetChange
+## <a name="onrowsetchange"></a>IRowsetNotifyCP:: Fire_OnRowsetChange
 
-Yayınlar bir [OnRowsetChange](/previous-versions/windows/desktop/ms722669(v=vs.85)) tüm dinleyici bağlantı noktası üzerinde olaya `IID_IRowsetNotify` tüm satır kümesini etkileyen bir değişiklik tüketicilerinin bildirir.
+Tüm satır kümesini etkileyen bir değişikliği tüketicilere bildirmek için bağlantı noktasındaki `IID_IRowsetNotify` tüm dinleyicilerle [OnRowsetChange](/previous-versions/windows/desktop/ms722669(v=vs.85)) olayını yayınlar.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -137,13 +137,13 @@ HRESULT Fire_OnRowsetChange(IRowset* pRowset,
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz: [IRowsetNotify::OnRowsetChange](/previous-versions/windows/desktop/ms722669(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
+*OLE DB Programcı başvurusunda* [IRowsetNotify:: OnRowsetChange öğesine](/previous-versions/windows/desktop/ms722669(v=vs.85)) bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)<br/>
-[Bildirimler (COM)](/windows/desktop/com/notifications)<br/>
+[Bildirimler (COM)](/windows/win32/com/notifications)<br/>
 [BEGIN_CONNECTION_POINT_MAP](../../atl/reference/connection-point-macros.md#begin_connection_point_map)<br/>
 [END_CONNECTION_POINT_MAP](../../atl/reference/connection-point-macros.md#end_connection_point_map)<br/>
 [CONNECTION_POINT_ENTRY](../../atl/reference/connection-point-macros.md#connection_point_entry)<br/>

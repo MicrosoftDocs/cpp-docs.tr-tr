@@ -37,16 +37,16 @@ helpviewer_keywords:
 - m_szName
 - m_szParseName
 ms.assetid: 21e8e7ea-3511-4afe-b33f-d520f4ff82bb
-ms.openlocfilehash: e609b346bb4a0c2469c24e20540c646fa869ae26
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: dd698499607a5c4f04ccd01207d78fef9328c079
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62230738"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69501401"
 ---
 # <a name="cenumeratoraccessor-class"></a>CEnumeratorAccessor Sınıfı
 
-Tarafından kullanılan [CEnumerator](../../data/oledb/cenumerator-class.md) Numaralandırıcı satır kümesinden verilere erişmek için.
+Bir Numaralandırıcı satır kümesinden veriye erişmek için [CEnumerator](../../data/oledb/cenumerator-class.md) tarafından kullanılır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -56,7 +56,7 @@ class CEnumeratorAccessor
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atldbcli.h
+**Üstbilgi:** atldbclı. h
 
 ## <a name="members"></a>Üyeler
 
@@ -64,19 +64,19 @@ class CEnumeratorAccessor
 
 |||
 |-|-|
-|[m_bIsParent](#bisparent)|Satır bir numaralandırıcı ise Numaralandırıcı bir üst Numaralandırıcı olup olmadığını belirten bir değişken.|
-|[m_nType](#ntype)|Satır bir veri kaynağı veya bir numaralandırıcı tanımlayıp tanımlamadığını belirten bir değişken.|
-|[m_szDescription](#szdescription)|Veri kaynağı veya numaralandırıcı açıklaması.|
-|[m_szName](#szname)|Veri kaynağı veya numaralandırıcı adı.|
-|[m_szParseName](#szparsename)|Geçirilecek dize [IParseDisplayName](/windows/desktop/api/oleidl/nn-oleidl-iparsedisplayname) Numaralandırıcı ve veri kaynağı için bir bilinen ad elde edilir.|
+|[m_bIsParent](#bisparent)|Satır bir Numaralandırıcı ise, Numaralandırıcının bir üst Numaralandırıcı olup olmadığını gösteren bir değişken.|
+|[m_nType](#ntype)|Satırın bir veri kaynağını mı yoksa bir Numaralandırıcı mi olduğunu gösteren bir değişken.|
+|[m_szDescription](#szdescription)|Veri kaynağının veya Numaralandırıcının açıklaması.|
+|[m_szName](#szname)|Veri kaynağının veya Numaralandırıcının adı.|
+|[m_szParseName](#szparsename)|Veri kaynağı veya Numaralandırıcı için bir bilinen ad almak üzere [IParseDisplayName](/windows/win32/api/oleidl/nn-oleidl-iparsedisplayname) 'e geçirilecek dize.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu satır kümesi veri kaynakları ve geçerli Numaralandırıcının görünür numaralandırıcılar oluşur.
+Bu satır kümesi, geçerli Numaralandırıcı tarafından görünen veri kaynaklarından ve numaralandırıcılardan oluşur.
 
-## <a name="bisparent"></a> Cenumeratoraccessor::m_bısparent
+## <a name="bisparent"></a>CEnumeratorAccessor:: m_bIsParent
 
-Satır bir numaralandırıcı ise Numaralandırıcı bir üst Numaralandırıcı olup olmadığını belirten bir değişken.
+Satır bir Numaralandırıcı ise, Numaralandırıcının bir üst Numaralandırıcı olup olmadığını gösteren bir değişken.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -86,11 +86,11 @@ VARIANT_BOOL m_bIsParent;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [ISourcesRowset::GetSourcesRowset](/previous-versions/windows/desktop/ms711200(v=vs.85)) içinde *OLE DB Programcının Başvurusu* daha fazla bilgi için.
+Daha fazla bilgi için *OLE DB Programcının başvurusunda* bulunan [ISourcesRowset:: GetSourcesRowset](/previous-versions/windows/desktop/ms711200(v=vs.85)) bölümüne bakın.
 
-## <a name="ntype"></a> CEnumeratorAccessor::m_nType
+## <a name="ntype"></a>CEnumeratorAccessor:: m_nType
 
-Satır bir veri kaynağı veya bir numaralandırıcı tanımlayıp tanımlamadığını belirten bir değişken.
+Satırın bir veri kaynağını mı yoksa bir Numaralandırıcı mi olduğunu gösteren bir değişken.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -100,11 +100,11 @@ USHORT m_nType;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [ISourcesRowset::GetSourcesRowset](/previous-versions/windows/desktop/ms711200(v=vs.85)) içinde *OLE DB Programcının Başvurusu* daha fazla bilgi için.
+Daha fazla bilgi için *OLE DB Programcının başvurusunda* bulunan [ISourcesRowset:: GetSourcesRowset](/previous-versions/windows/desktop/ms711200(v=vs.85)) bölümüne bakın.
 
-## <a name="szdescription"></a> CEnumeratorAccessor::m_szDescription
+## <a name="szdescription"></a>CEnumeratorAccessor:: m_szDescription
 
-Veri kaynağı veya numaralandırıcı açıklaması.
+Veri kaynağının veya Numaralandırıcının açıklaması.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -114,11 +114,11 @@ WCHAR m_szDescription[129];
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [ISourcesRowset::GetSourcesRowset](/previous-versions/windows/desktop/ms711200(v=vs.85)) içinde *OLE DB Programcının Başvurusu* daha fazla bilgi için.
+Daha fazla bilgi için *OLE DB Programcının başvurusunda* bulunan [ISourcesRowset:: GetSourcesRowset](/previous-versions/windows/desktop/ms711200(v=vs.85)) bölümüne bakın.
 
-## <a name="szname"></a> CEnumeratorAccessor::m_szName
+## <a name="szname"></a>CEnumeratorAccessor:: m_szName
 
-Veri kaynağı veya numaralandırıcı adı.
+Veri kaynağının veya Numaralandırıcının adı.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -128,11 +128,11 @@ WCHAR m_szName[129];
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [ISourcesRowset::GetSourcesRowset](/previous-versions/windows/desktop/ms711200(v=vs.85)) içinde *OLE DB Programcının Başvurusu* daha fazla bilgi için.
+Daha fazla bilgi için *OLE DB Programcının başvurusunda* bulunan [ISourcesRowset:: GetSourcesRowset](/previous-versions/windows/desktop/ms711200(v=vs.85)) bölümüne bakın.
 
-## <a name="szparsename"></a> CEnumeratorAccessor::m_szParseName
+## <a name="szparsename"></a>CEnumeratorAccessor:: m_szParseName
 
-Geçirilecek dize [IParseDisplayName](/windows/desktop/api/oleidl/nn-oleidl-iparsedisplayname) Numaralandırıcı ve veri kaynağı için bir bilinen ad elde edilir.
+Veri kaynağı veya Numaralandırıcı için bir bilinen ad almak üzere [IParseDisplayName](/windows/win32/api/oleidl/nn-oleidl-iparsedisplayname) 'e geçirilecek dize.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -142,9 +142,9 @@ WCHAR m_szParseName[129];
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [ISourcesRowset::GetSourcesRowset](/previous-versions/windows/desktop/ms711200(v=vs.85)) içinde *OLE DB Programcının Başvurusu* daha fazla bilgi için.
+Daha fazla bilgi için *OLE DB Programcının başvurusunda* bulunan [ISourcesRowset:: GetSourcesRowset](/previous-versions/windows/desktop/ms711200(v=vs.85)) bölümüne bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
+[OLE DB tüketici şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Tüketici Şablonları Başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)

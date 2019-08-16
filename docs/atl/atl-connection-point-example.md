@@ -5,20 +5,20 @@ helpviewer_keywords:
 - connection points [C++], examples
 - examples [ATL]
 ms.assetid: a49721b7-f308-43de-8868-f662a94bc81a
-ms.openlocfilehash: 3113637a3f777a56bc0b0994203ce709fbc189d5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f33364cee65031c358fb546312f3fe2b7ae854d3
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62223348"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69491790"
 ---
 # <a name="atl-connection-point-example"></a>ATL bağlantı noktası örneği
 
-Bu örnek, destekleyen bir nesne gösterir [Ipropertynotifysink](/windows/desktop/api/ocidl/nn-ocidl-ipropertynotifysink) giden bir arabirim olarak:
+Bu örnek, bir giden arabirim olarak [IPropertyNotifySink](/windows/win32/api/ocidl/nn-ocidl-ipropertynotifysink) destekleyen bir nesne gösterir:
 
 [!code-cpp[NVC_ATL_Windowing#84](../atl/codesnippet/cpp/atl-connection-point-example_1.h)]
 
-Belirtirken `IPropertyNotifySink` giden bir arabirim sınıfını kullanabilirsiniz [Ipropertynotifysinkcp](../atl/reference/ipropertynotifysinkcp-class.md) yerine `IConnectionPointImpl`. Örneğin:
+Giden arabirim `IPropertyNotifySink` olarak belirtirken, yerine `IConnectionPointImpl` [IPropertyNotifySinkCP](../atl/reference/ipropertynotifysinkcp-class.md) sınıfını kullanabilirsiniz. Örneğin:
 
 [!code-cpp[NVC_ATL_Windowing#85](../atl/codesnippet/cpp/atl-connection-point-example_2.h)]
 

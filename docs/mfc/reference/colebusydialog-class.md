@@ -1,5 +1,5 @@
 ---
-title: COleBusyDialog sınıfı
+title: Cotabusi Iletişim kutusu sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - COleBusyDialog
@@ -14,16 +14,16 @@ helpviewer_keywords:
 - COleBusyDialog [MFC], GetSelectionType
 - COleBusyDialog [MFC], m_bz
 ms.assetid: c881a532-9672-4c41-b51b-5ce4a7246a6b
-ms.openlocfilehash: 08e482e6900e96f1d02c34efddc7635bb8e0120e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: aa3f0d85bcbf34d325125187b22b38c4da01fb43
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62400714"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69504399"
 ---
-# <a name="colebusydialog-class"></a>COleBusyDialog sınıfı
+# <a name="colebusydialog-class"></a>Cotabusi Iletişim kutusu sınıfı
 
-OLE Server Not Responding veya Server Busy iletişim kutuları için kullanıldı.
+OLE sunucusu yanıt vermiyor veya sunucu meşgul iletişim kutuları için kullanılır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,31 +37,31 @@ class COleBusyDialog : public COleDialog
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[COleBusyDialog::COleBusyDialog](#colebusydialog)|Oluşturur bir `COleBusyDialog` nesne.|
+|[Copabusydialog:: Cotabusydialog](#colebusydialog)|Bir `COleBusyDialog` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[COleBusyDialog::DoModal](#domodal)|OLE sunucu meşgul iletişim kutusunu görüntüler.|
-|[COleBusyDialog::GetSelectionType](#getselectiontype)|İletişim kutusunda yaptığınız seçime belirler.|
+|[Cotabusydialog::D oModal](#domodal)|OLE sunucusu meşgul iletişim kutusunu görüntüler.|
+|[Cotabusydialog:: GetSelectionType](#getselectiontype)|İletişim kutusunda yapılan seçimi belirler.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[COleBusyDialog::m_bz](#m_bz)|Yapı türü iletişim kutusu davranışını denetleyen OLEUIBUSY.|
+|[Cotabusydialog:: m_bz](#m_bz)|İletişim kutusunun davranışını denetleyen OLEUıBUSY türünün yapısı.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıfın bir nesnesi oluşturma `COleBusyDialog` bu iletişim kutularından çağırmak istediğinizde. Sonra bir `COleBusyDialog` nesne oluşturulur, kullanabileceğiniz [m_bz](#m_bz) yapısı değerleri veya durumları iletişim kutusundaki denetimlerin başlatılamadı. `m_bz` OLEUIBUSY türünü yapısıdır. Bu iletişim kutusu sınıfı kullanma hakkında daha fazla bilgi için bkz. [DoModal](#domodal) üye işlevi.
+Bu iletişim kutularını çağırmak istediğinizde `COleBusyDialog` , sınıfının bir nesnesini oluşturun. Bir `COleBusyDialog` nesne oluşturulduktan sonra, iletişim kutusundaki denetimlerin değerlerini veya durumlarını başlatmak için [m_bz](#m_bz) yapısını kullanabilirsiniz. `m_bz` Yapı, OLEUIBUSY türündedir. Bu iletişim kutusu sınıfını kullanma hakkında daha fazla bilgi için bkz. [DoModal](#domodal) üye işlevi.
 
 > [!NOTE]
 >  Uygulama Sihirbazı tarafından oluşturulan kapsayıcı kodu bu sınıfı kullanır.
 
-Daha fazla bilgi için [OLEUIBUSY](/windows/desktop/api/oledlg/ns-oledlg-tagoleuibusya) Windows SDK'sındaki yapısı.
+Daha fazla bilgi için Windows SDK [OLEUIBUSY](/windows/win32/api/oledlg/ns-oledlg-oleuibusyw) yapısına bakın.
 
-Özel OLE iletişim kutuları hakkında daha fazla bilgi için bkz [ole'deki iletişim kutuları](../../mfc/dialog-boxes-in-ole.md).
+OLE 'e özgü iletişim kutuları hakkında daha fazla bilgi için [OLE 'deki makale Iletişim kutularına](../../mfc/dialog-boxes-in-ole.md)bakın.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -75,17 +75,17 @@ Daha fazla bilgi için [OLEUIBUSY](/windows/desktop/api/oledlg/ns-oledlg-tagoleu
 
 [CCommonDialog](../../mfc/reference/ccommondialog-class.md)
 
-[COleDialog](../../mfc/reference/coledialog-class.md)
+[Colet Iletişim kutusu](../../mfc/reference/coledialog-class.md)
 
 `COleBusyDialog`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxodlgs.h
+**Üst bilgi:** afxodlgs. h
 
-##  <a name="colebusydialog"></a>  COleBusyDialog::COleBusyDialog
+##  <a name="colebusydialog"></a>Copabusydialog:: Cotabusydialog
 
-Bu işlev yalnızca oluşturan bir `COleBusyDialog` nesne.
+Bu işlev yalnızca bir `COleBusyDialog` nesne oluşturur.
 
 ```
 explicit COleBusyDialog(
@@ -98,32 +98,32 @@ explicit COleBusyDialog(
 ### <a name="parameters"></a>Parametreler
 
 *htaskBusy*<br/>
-Meşgul sunucu görevini işleyin.
+Meşgul olan sunucu görevinin tanıtıcısı.
 
-*bNotResponding*<br/>
-Doğruysa, yanıt vermeyen iletişim kutusu yerine sunucu meşgul iletişim kutusu çağırın. Yanıt iletişim kutusu içindeki ifadeleri biraz farklı sunucu meşgul iletişim kutusu içindeki ifadeleri ve iptal düğmesi devre dışıdır.
+*Bnotyanýt*<br/>
+DOĞRU ise, sunucu meşgul iletişim kutusu yerine yanıt vermiyor iletişim kutusunu çağırın. Yanıt vermiyor iletişim kutusundaki ifade, sunucu meşgul iletişim kutusundaki düğenden biraz farklıdır ve Iptal düğmesi devre dışıdır.
 
-*CertOpenStore*<br/>
-Oluşturma bayrak. Sıfır veya daha fazla bit düzeyinde OR işleci ile birlikte aşağıdaki değerleri içerebilir:
+*dwFlags*<br/>
+Oluşturma bayrağı. , Bit düzeyinde OR işleci ile birlikte aşağıdaki değerlerden sıfır veya daha fazlasını içerebilir:
 
-- BZ_DISABLECANCELBUTTON iletişim kutusu çağırırken iptal düğmesi devre dışı.
+- BZ_DISABLECANCELBUTTON iletişim kutusunu çağırırken Iptal düğmesini devre dışı bırakır.
 
-- BZ_DISABLESWITCHTOBUTTON iletişim kutusu çağırırken geçiş yap düğmesi devre dışı.
+- BZ_DISABLESWITCHTOBUTTON iletişim kutusu çağrılırken düğmeye geçin düğmesini devre dışı bırakın.
 
-- BZ_DISABLERETRYBUTTON iletişim kutusu çağırırken yeniden deneme düğmesi devre dışı.
+- BZ_DISABLERETRYBUTTON iletişim kutusunu çağırırken yeniden dene düğmesini devre dışı bırakır.
 
 *pParentWnd*<br/>
-Üst veya sahibi pencere nesnesi için işaret (tür `CWnd`) ait olduğu iletişim nesnesi. NULL ise, ana uygulama penceresini iletişim nesnenin üst pencere ayarlanır.
+İletişim nesnesinin ait olduğu üst veya sahip pencere nesnesine (türü `CWnd`) işaret eder. NULL ise, iletişim kutusu nesnesinin ana penceresi ana uygulama penceresine ayarlanır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İletişim kutusunu görüntülemek için çağrı [DoModal](#domodal).
+İletişim kutusunu göstermek için [DoModal](#domodal)' ı çağırın.
 
-Daha fazla bilgi için [OLEUIBUSY](/windows/desktop/api/oledlg/ns-oledlg-tagoleuibusya) Windows SDK'sındaki yapısı.
+Daha fazla bilgi için Windows SDK [OLEUIBUSY](/windows/win32/api/oledlg/ns-oledlg-oleuibusyw) yapısına bakın.
 
-##  <a name="domodal"></a>  COleBusyDialog::DoModal
+##  <a name="domodal"></a>Cotabusydialog::D oModal
 
-OLE sunucu meşgul veya sunucu yanıt iletişim kutusunu görüntülemek için bu işlevi çağırın.
+OLE sunucusu meşgul veya sunucu yanıt vermiyor iletişim kutusunu göstermek için bu işlevi çağırın.
 
 ```
 virtual INT_PTR DoModal();
@@ -131,23 +131,23 @@ virtual INT_PTR DoModal();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Tamamlanma durumu iletişim kutusu için. Aşağıdaki değerlerden biri:
+İletişim kutusu için tamamlanma durumu. Aşağıdaki değerlerden biri:
 
-- İletişim kutusu başarıyla görüntülendiyse IDOK.
+- İletişim kutusu başarıyla görüntüleniyorsa ıDOK.
 
-- Kullanıcı iletişim kutusunu iptal edildiyse IDCANCEL.
+- Kullanıcı iletişim kutusunu iptal edildiyse ıDCANCEL.
 
-- Bir hata oluşursa IDABORT. IDABORT döndürülürse, çağrı `COleDialog::GetLastError` konusu hatanın türü hakkında daha fazla bilgi almak için üye işlevi. Olası hataları bir listesi için bkz. [OleUIBusy](/windows/desktop/api/oledlg/nf-oledlg-oleuibusya) Windows SDK'sında işlev.
+- Bir hata oluştuysa ıDADBORT. Idadbort döndürülürse, oluşan hata türü hakkında `COleDialog::GetLastError` daha fazla bilgi edinmek için üye işlevini çağırın. Olası hataların listesi için Windows SDK [OLEUIBUSY](/windows/win32/api/oledlg/nf-oledlg-oleuibusyw) işlevine bakın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çeşitli iletişim kutusu denetimleri üyeleri ayarlayarak başlatmak istiyorsanız [m_bz](#m_bz) yapısı, bunu çağırmadan önce yapmalısınız `DoModal`, ancak iletişim nesnesi oluşturulur.
+[M_bz](#m_bz) yapısının üyelerini ayarlayarak çeşitli iletişim kutusu denetimlerini başlatmak isterseniz, bunu çağırmadan `DoModal`önce, ancak iletişim kutusu nesnesi oluşturulduktan sonra yapmanız gerekir.
 
-Varsa `DoModal` döndürür IDOK, diğer üye ayarları veya kullanıcı tarafından iletişim kutusuna giriş bilgi almak için işlevleri çağırabilir.
+IDOK `DoModal` döndürürse, Kullanıcı tarafından iletişim kutusuna girilen ayarları veya bilgileri almak için diğer üye işlevlerini çağırabilirsiniz.
 
-##  <a name="getselectiontype"></a>  COleBusyDialog::GetSelectionType
+##  <a name="getselectiontype"></a>Cotabusydialog:: GetSelectionType
 
-Sunucu meşgul iletişim kutusunda kullanıcı tarafından seçmiş seçim türünü almak için bu işlevi çağırın.
+Sunucu meşgul iletişim kutusunda Kullanıcı tarafından seçilen seçim türünü almak için bu işlevi çağırın.
 
 ```
 UINT GetSelectionType() const;
@@ -159,7 +159,7 @@ Yapılan seçim türü.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dönüş türü değerleri tarafından belirtilen `Selection` numaralandırma türü içinde bildirilen `COleBusyDialog` sınıfı.
+Dönüş türü değerleri, `Selection` `COleBusyDialog` sınıfında belirtilen numaralandırma türü tarafından belirtilir.
 
 ```
 enum Selection {
@@ -169,17 +169,17 @@ enum Selection {
     };
 ```
 
-Bu değerleri kısa açıklamaları izleyin:
+Bu değerlerin kısa açıklamaları şu şekilde yapılır:
 
-- `COleBusyDialog::switchTo` Geçiş için düğmesine basıldı.
+- `COleBusyDialog::switchTo`Düğmeye geç düğmesine basılmıştı.
 
-- `COleBusyDialog::retry` Yeniden deneme düğmesine basıldı.
+- `COleBusyDialog::retry`Yeniden dene düğmesine basılmıştı.
 
-- `COleBusyDialog::callUnblocked` Çağrı Sunucusu'nu etkinleştirmek için artık engeli kaldırılır.
+- `COleBusyDialog::callUnblocked`Sunucuyu etkinleştirme çağrısı artık engellenmektedir.
 
-##  <a name="m_bz"></a>  COleBusyDialog::m_bz
+##  <a name="m_bz"></a>Cotabusydialog:: m_bz
 
-Yapı türünü OLEUIBUSY sunucu meşgul iletişim kutusu davranışını denetlemek için kullanılır.
+Sunucu meşgul iletişim kutusunun davranışını denetlemek için kullanılan OLEUıBUSY türünün yapısı.
 
 ```
 OLEUIBUSY m_bz;
@@ -187,9 +187,9 @@ OLEUIBUSY m_bz;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yapının üyelerine, doğrudan ya da üye işlevleri aracılığıyla değiştirilebilir.
+Bu yapının üyeleri doğrudan veya üye işlevleri aracılığıyla değiştirilebilir.
 
-Daha fazla bilgi için [OLEUIBUSY](/windows/desktop/api/oledlg/ns-oledlg-tagoleuibusya) Windows SDK'sındaki yapısı.
+Daha fazla bilgi için Windows SDK [OLEUIBUSY](/windows/win32/api/oledlg/ns-oledlg-oleuibusyw) yapısına bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

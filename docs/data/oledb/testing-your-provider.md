@@ -6,22 +6,22 @@ helpviewer_keywords:
 - testing providers
 - OLE DB providers, testing
 ms.assetid: bf824fe4-81af-4ffb-beb3-4fa2928dc450
-ms.openlocfilehash: d7a3adad546834e2bdc80a695f4c3bf2259dc0ba
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 722757b93d3423b02340c382b16e08a31626bc01
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62389131"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69501257"
 ---
 # <a name="testing-your-provider"></a>Sağlayıcınızı Test Etme
 
-Bir sağlayıcı yayınlamadan önce gösterilen sırada aşağıdaki testleri yapmanız gerekir. Bu testler, olası kullanıcılar için düzgün şekilde sağlayıcısı işlevleri göstermektedir.
+Bir sağlayıcıyı bırakmadan önce, belirtilen sırayla aşağıdaki testleri yapmanız gerekir. Bu sınamalar, sağlayıcının birçok olası Kullanıcı için düzgün şekilde işlediğini gösterir.
 
-1. Kullanarak sağlayıcıyı test bir [tüketici](../../data/oledb/creating-an-ole-db-consumer.md) OLE DB tüketici şablonlarıyla yazılmış uygulaması. Test tüketici sağlayıcınızın (eklendiğinde veya değiştirildiğinde tüm kodlar) tüm işlevsel alanlar kapsamalıdır.
+1. OLE DB tüketici şablonlarıyla yazılmış bir [Tüketici](../../data/oledb/creating-an-ole-db-consumer.md) uygulaması kullanarak sağlayıcıyı test edin. Test tüketicisi, sağlayıcınızın tüm işlevsel bölgelerini kapsamalıdır (eklediğiniz veya değiştirdiğiniz tüm kodlar).
 
-1. ADO ile yazılmış bir tüketici uygulaması kullanarak sağlayıcıyı test edin. Çoğu geliştirici (özellikle de Microsoft Visual Basic ve Microsoft C# geliştiricilerin) ADO ya da ADO.NET tüketici uygulamaları için kullanın. Test tüketici tüm işlevsel alanlar sağlayıcınızın kapsamalıdır. ADO tüketici uygulaması örneği için bkz: [ADO kod örnekleri Visual Basic'de](https://msdn.microsoft.com/library/ms807514.aspx).
+1. Sağlayıcıyı ADO ile yazılmış bir tüketici uygulamasını kullanarak test edin. Çoğu geliştirici (özellikle Microsoft Visual Basic ve Microsoft C# geliştiricileri), tüketici UYGULAMALARı için ADO veya ADO.net kullanır. Test tüketicisi, sağlayıcınızın tüm işlevsel bölgelerini kapsamalıdır. ADO tüketici uygulamasına bir örnek için bkz. [Microsoft Visual Basic 'Da ADO kodu örnekleri](/previous-versions/ms807514(v=msdn.10)).
 
-1. Sağlayıcınız için OLE DB Sağlayıcısı 0 standart düzeyi karşıladığını gösterilecek (ADO uygunluk testlerini dahil) OLE DB uygunluk testlerini çalıştırın. (0 düzeyi açıklaması için arama **OLE DB düzeyi 0 uygunluk testlerini** adresindeki [OLE DB Programcı Kılavuzu](/sql/connect/oledb/ole-db/oledb-driver-for-sql-server-programming). Bu testleri ve ilişkili belgeler Visual C++'da veri erişim SDK'sı dahil edilmiştir. Bu testleri sağlayıcınız da diğerini toplandığında çalıştığını göstermek için de yardımcı [hizmeti sağlayıcıları](../../data/oledb/ole-db-resource-pooling-and-services.md) değiştirir veya özellik eklemek özellikle yararlıdır. Uygunluk testleri hakkında daha fazla bilgi için Visual Studio CDs birinde bulunan veri erişim SDK'sı için Benioku dosyasına bakın.
+1. Sağlayıcının OLE DB sağlayıcıları için düzey 0 standardını karşıladığını göstermek için OLE DB uygunluk testlerini (ADO uygunluk testleri dahil) çalıştırın. (Düzey 0 ' ın bir açıklaması için, [OLE DB Programcı Kılavuzu](/sql/connect/oledb/ole-db/oledb-driver-for-sql-server-programming)'Nda **OLE DB düzey 0 uyumluluk testlerini** arayın. Bu testler ve ilişkili belgeler, veri erişimi SDK C++ 'sında görsele dahildir. Bu sınamalar, sağlayıcınızın diğer [hizmet sağlayıcıları](../../data/oledb/ole-db-resource-pooling-and-services.md) tarafından toplanarak iyi şekilde çalıştığını ve özellikle de Özellikler eklediğinizde ya da eklerseniz yararlı olduğunu göstermeye yardımcı olur. Uygunluk testleri hakkında daha fazla bilgi için, Visual Studio CD 'Lerinden birinde bulunan veri erişimi SDK 'Sı için Benioku dosyasına bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

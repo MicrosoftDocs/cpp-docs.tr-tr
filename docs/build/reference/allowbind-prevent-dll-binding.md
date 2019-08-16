@@ -12,12 +12,12 @@ helpviewer_keywords:
 - -ALLOWBIND linker option
 - DLLs [C++], preventing binding
 ms.assetid: 30e37e24-12e4-407e-988a-39d357403598
-ms.openlocfilehash: bd9976e434441d2480386ee6fa3d0315fd8d2ef5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d963a7145ab2e8c8872dc21c485bdc8f877b0b76
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62295157"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69493152"
 ---
 # <a name="allowbind-prevent-dll-binding"></a>/ALLOWBIND (DLL Bağlamayı Önle)
 
@@ -27,17 +27,17 @@ ms.locfileid: "62295157"
 
 ## <a name="remarks"></a>Açıklamalar
 
-/ALLOWBIND:No görüntü bağlanması için izin verilmiyor Bind.exe'yi gösteren DLL üst bilgisinde bir bit ayarlar. Bir DLL dijital olarak imzalanmışsa bağlı olmasını istemeyebilirsiniz (bağlama imzayı).
+/ALLOWBIND: NO, DLL 'nin üst bilgisinde, görüntünün bağlı olmasına izin verilmediğini belirten bir bit belirler. Dijital olarak imzalanmışsa DLL 'nin bağlanmasını istemeyebilirsiniz (bağlama imzayı geçersiz kılar).
 
-Mevcut bir DLL ile /ALLOWBIND işlevselliği için düzenleyebilirsiniz [/ALLOWBIND](allowbind.md) yardımcı programının EDITBIN seçeneği.
+Mevcut bir DLL 'yi, EDITBIN yardımcı programının [/allowbind](allowbind.md) seçeneğiyle birlikte/allowbind işlevselliği için düzenleyebilirsiniz.
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual C++ Studio 'da derleyici ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Genişletin **yapılandırma özellikleri**, **bağlayıcı**seçip **komut satırı**.
+1. **Yapılandırma özellikleri**, **bağlayıcı**ve **komut satırı**Seç ' i genişletin.
 
-1. Girin `/ALLOWBIND:NO` içine **ek seçenekler**.
+1. `/ALLOWBIND:NO` **Ek seçeneklere**girin.
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
 
@@ -47,5 +47,5 @@ Mevcut bir DLL ile /ALLOWBIND işlevselliği için düzenleyebilirsiniz [/ALLOWB
 
 [MSVC bağlayıcı başvurusu](linking.md)<br/>
 [MSVC Bağlayıcı Seçenekleri](linker-options.md)<br/>
-[BindImage işlevi](/windows/desktop/api/imagehlp/nf-imagehlp-bindimage)<br/>
-[BindImageEx işlevi](/windows/desktop/api/imagehlp/nf-imagehlp-bindimageex)
+[BindImage işlevi](/windows/win32/api/imagehlp/nf-imagehlp-bindimage)<br/>
+[BindImageEx işlevi](/windows/win32/api/imagehlp/nf-imagehlp-bindimageex)

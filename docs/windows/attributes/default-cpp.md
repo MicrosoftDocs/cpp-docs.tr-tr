@@ -1,5 +1,5 @@
 ---
-title: Varsayılan (C++ COM özniteliği)
+title: Varsayılan (C++ com özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.default
@@ -8,16 +8,16 @@ helpviewer_keywords:
 - attributes [C#], default attribute
 - defaults, default attribute
 ms.assetid: 0cdca716-1ba8-46d7-9399-167e55492870
-ms.openlocfilehash: c6448b00fef50a7654816a2c39af2943db12d314
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 291e16ad0967acd1869874fcc9fa6eb5529e4b44
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62148087"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69501689"
 ---
 # <a name="default-c"></a>default (C++)
 
-Özel veya dispinterface coclass'ı içinde tanımlanan varsayılan programlama arabirimi temsil ettiğini gösterir.
+Bir coclass içinde tanımlanan özel veya dispınterface 'in varsayılan programlama arabirimini temsil ettiğini belirtir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -28,22 +28,22 @@ ms.locfileid: "62148087"
 ### <a name="parameters"></a>Parametreler
 
 *arabirimi1*<br/>
-Bir nesne oluşturmak, komut dosyası ortamlar için kullanılabilir hale getirilir varsayılan arabirimi ile tanımlanan sınıfın temel **varsayılan** özniteliği.
+**Varsayılan** öznitelik ile tanımlanmış sınıfa dayalı bir nesne oluşturan ortamlar için kullanılabilir hale getirilen varsayılan arabirim.
 
-Herhangi bir varsayılan arabirim belirtilirse, bir kaynak arabirimi ilk geçtiği varsayılan olarak kullanılır.
+Varsayılan arabirim belirtilmemişse, kaynak olmayan bir arabirimin ilk oluşumu varsayılan olarak kullanılır.
 
 *interface2*<br/>
-(İsteğe bağlı) Varsayılan kaynak arabirimi. Bu arabirim ile de belirtmeniz gerekir [kaynak](source-cpp.md) özniteliği.
+Seçim Varsayılan kaynak arabirimi. Bu arabirimi [kaynak](source-cpp.md) özniteliğiyle de belirtmeniz gerekir.
 
-İlk kaynak arabirimi, hiçbir varsayılan kaynak arabirimi belirtilmezse, varsayılan olarak kullanılır.
+Varsayılan kaynak arabirim belirtilmemişse, ilk kaynak arabirim varsayılan olarak kullanılır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Varsayılan** C++ özniteliği ile aynı işlevlere sahip [varsayılan](/windows/desktop/Midl/default) MIDL özniteliği. **Varsayılan** özniteliği ile kullanılan ayrıca [çalışması](case-cpp.md) özniteliği.
+**Varsayılan** C++ öznitelik [varsayılan](/windows/win32/Midl/default) MIDL özniteliğiyle aynı işlevselliğe sahiptir. **Varsayılan** öznitelik [Case](case-cpp.md) özniteliğiyle de kullanılır.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kodda gösterildiği nasıl **varsayılan** coclass'ı tanımını belirtmek için kullanılan `ICustomDispatch` varsayılan programlama arabirimi olarak:
+Aşağıdaki kod, varsayılan programlama arabirimi olarak belirtmek `ICustomDispatch` için bir coclass 'ın tanımında varsayılan olarak nasıl kullanıldığını gösterir:
 
 ```cpp
 // cpp_attr_ref_default.cpp
@@ -91,7 +91,7 @@ int main() {
 }
 ```
 
-[Kaynak](source-cpp.md) ayrıca özniteliğinin nasıl kullanılacağına ilişkin bir örnek **varsayılan**.
+[Kaynak](source-cpp.md) özniteliğinin Ayrıca **varsayılan**olarak nasıl kullanılacağına ilişkin bir örneği de vardır.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -99,12 +99,12 @@ int main() {
 
 |||
 |-|-|
-|**İçin geçerlidir**|**sınıf**, **yapı**, veri üyesi|
+|**Uygulama hedefi**|**sınıf**, **Yapı**, veri üyesi|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|**coclass'ı** (uygulandığında **sınıfı** veya **yapı**)|
+|**Gerekli öznitelikler**|**coclass** ( **sınıfa** veya **yapıya**uygulandığında)|
 |**Geçersiz öznitelikler**|Yok.|
 
-Daha fazla bilgi için [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
+Daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

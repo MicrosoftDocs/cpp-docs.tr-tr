@@ -30,16 +30,16 @@ helpviewer_keywords:
 - _endthreadex function
 - threading [C++], terminating threads
 ms.assetid: 18a91f2f-659e-40b4-b266-ec12dcf2abf5
-ms.openlocfilehash: 2f54ca9c4cd5e863ca960f1d9c3634b85e7896dd
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5afbc907356d4c5b14b749de5de0c8d36280891e
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62288829"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69499958"
 ---
-# <a name="endthread-endthreadex"></a>_endthread, _endthreadex
+# <a name="_endthread-_endthreadex"></a>_endthread, _endthreadex
 
-Bir iş parçacığı sona erer; **_endthread** tarafından oluşturulan bir iş parçacığı sonlandırıldığında **_beginthread** ve **_endthreadex** tarafından oluşturulan bir iş parçacığı sonlandırıldığında **_beginthreadex**.
+Bir iş parçacığını sonlandırır; **_endthread** , **_beginthread** ve **_endthreadex** tarafından oluşturulan bir iş parçacığını, **_beginthreadex**tarafından oluşturulan bir iş parçacığını sonlandırır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -57,34 +57,34 @@ void _endthreadex(
 
 ## <a name="remarks"></a>Açıklamalar
 
-Çağırabilirsiniz **_endthread** veya **_endthreadex** açıkça bir iş parçacığını sonlandırmak için ancak **_endthread** veya **_endthreadex** çağrılır iş parçacığı yordamdan döndüğünde otomatik olarak geçirilen bir parametre olarak **_beginthread** veya **_beginthreadex**. Çağrısıyla bir iş parçacığı sonlandırma **endthread** veya **_endthreadex** iş parçacığına ayrılan kaynakların doğru kurtarma sağlamaya yardımcı olur.
+Bir iş parçacığını sonlandırmak için **_endthread** veya **_endthreadex** öğesini açıkça çağırabilirsiniz; Ancak, iş parçacığı **_beginthread** veya **_beginthreadex**'e parametre olarak geçirilen yordamın döndürdüğü zaman **_endthread** veya **_endthreadex** otomatik olarak çağrılır. **Endthread** veya **_endthreadex** çağrısıyla bir iş parçacığını sonlandırmak, iş parçacığı için ayrılan kaynakların doğru şekilde kurtarılmasını sağlamaya yardımcı olur.
 
 > [!NOTE]
-> LIBCMT.lib ile bağlantılı bir yürütülebilir dosya için Win32 çağırmayın [ExitThread](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-exitthread) API; Bu, ayrılan kaynakları tekrar kullanılabilir hale çalışma zamanı sistemi engeller. **_endthread** ve **_endthreadex** ayrılan iş parçacığı kaynaklarını geri kazanır ve sonra çağrı **ExitThread**.
+> Libcmt. lib ile bağlantılı bir yürütülebilir dosya için Win32 [ExitThread](/windows/win32/api/processthreadsapi/nf-processthreadsapi-exitthread) API 'sini çağırmayın; Bu, çalışma zamanı sisteminin geri kazanma tarafından ayrılmış kaynaklardan yapılmasını önler. **_endthread** ve **_endthreadex** ayrılan iş parçacığı kaynaklarını geri kazanın ve sonra **ExitThread**'i çağırır.
 
-**_endthread** iş parçacığı işleyicisini otomatik olarak kapanır. (Bu davranış, Win32 farklıdır **ExitThread** API.) Bu nedenle, kullandığınız zaman **_beginthread** ve **_endthread**, açıkça iş parçacığı işleyicisini Win32 çağırarak kapatmayın [CloseHandle](/windows/desktop/api/handleapi/nf-handleapi-closehandle) API.
+**_endthread** iş parçacığı tanıtıcısını otomatik olarak kapatır. (Bu davranış, Win32 **ExitThread** API 'sinden farklıdır.) Bu nedenle, **_beginthread** ve **_Endthread**kullandığınızda, Win32 [CloseHandle](/windows/win32/api/handleapi/nf-handleapi-closehandle) API 'sini çağırarak iş parçacığı tanıtıcısını açıkça kapatmayın.
 
-Win32 gibi **ExitThread** API **_endthreadex** iş parçacığı işleyicisini kapatmaz. Bu nedenle, kullandığınız zaman **_beginthreadex** ve **_endthreadex**, iş parçacığı işleyicisini Win32 çağırarak kapatmalısınız **CloseHandle** API.
+Win32 **ExitThread** API 'si gibi, **_endthreadex** iş parçacığı tanıtıcısını kapatmaz. Bu nedenle, **_beginthreadex** ve **_Endthreadex**kullandığınızda, Win32 **CloseHandle** API 'sini çağırarak iş parçacığı tanıtıcısını kapatmanız gerekir.
 
 > [!NOTE]
-> **_endthread** ve **_endthreadex** neden C++ bekleyen yok ediciler değil çağrılacak bir iş parçacığı.
+> **_endthread** ve **_endthreadex** , C++ iş parçacığında bekleyen yok edicilerin çağrılmamasına neden oluyor.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**_endthread**|\<Process.h >|
-|**_endthreadex**|\<Process.h >|
+|**_endthread**|\<Process. h >|
+|**_endthreadex**|\<Process. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 
-Çoklu iş parçacığı sürümleri [C çalışma zamanı kitaplıkları](../../c-runtime-library/crt-library-features.md) yalnızca.
+Yalnızca [C çalışma zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md) çok iş parçacıklı sürümleri.
 
 ## <a name="example"></a>Örnek
 
-Örneğin bakın [_beginthread](beginthread-beginthreadex.md).
+[_Beginthread](beginthread-beginthreadex.md)örneğine bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

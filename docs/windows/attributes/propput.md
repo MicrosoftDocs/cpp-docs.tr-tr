@@ -1,17 +1,17 @@
 ---
-title: propput (C++ COM özniteliği)
+title: propput (C++ com özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.propput
 helpviewer_keywords:
 - propput attribute
 ms.assetid: 1f84dda9-9cce-4e16-aaf0-b2c5219827f2
-ms.openlocfilehash: c9853b38675abfa0a94a319ac752eb2ef61a48e0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5e10edba60832112a9023f796be56d88afd52042
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62407529"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69514197"
 ---
 # <a name="propput"></a>propput
 
@@ -25,11 +25,11 @@ Bir özellik ayarı işlevi belirtir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Propput** C++ özniteliği ile aynı işlevlere sahip [propput](/windows/desktop/Midl/propput) MIDL özniteliği.
+**Propput** C++ özniteliği, [propput](/windows/win32/Midl/propput) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
 
 ## <a name="example"></a>Örnek
 
-Örneğin bakın [bağlanabilir](bindable.md) örnek kullanımı için **propput**.
+**Propput**'ın örnek kullanımı için [bağlanabilir](bindable.md) örneğine bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -37,12 +37,12 @@ Bir özellik ayarı işlevi belirtir.
 
 |||
 |-|-|
-|**İçin geçerlidir**|Yöntem|
+|**Uygulama hedefi**|Yöntem|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|Yok.|
+|**Gerekli öznitelikler**|Yok.|
 |**Geçersiz öznitelikler**|`propget`, `propputref`|
 
-Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
+Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

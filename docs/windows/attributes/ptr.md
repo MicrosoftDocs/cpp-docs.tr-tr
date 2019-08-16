@@ -1,21 +1,21 @@
 ---
-title: PTR (C++ COM özniteliği)
+title: ptr (C++ com özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.ptr
 helpviewer_keywords:
 - ptr attribute
 ms.assetid: 95eaea57-a5be-45f6-a612-ba2c9bc4645a
-ms.openlocfilehash: 2c712a2d9c85e0fe8fd8c4dbad5c7f48812ab1a2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e5f2d694f3525f27e4a8371f04efa28940f21bba
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62407399"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69514159"
 ---
 # <a name="ptr"></a>ptr
 
-Bir işaretçinin tam bir işaretçi olarak belirler.
+Bir işaretçiyi tam bir işaretçi olarak belirler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -25,11 +25,11 @@ Bir işaretçinin tam bir işaretçi olarak belirler.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Ptr** C++ özniteliği ile aynı işlevlere sahip [ptr](/windows/desktop/Midl/ptr) MIDL özniteliği.
+**PTR** C++ özniteliği, [PTR](/windows/win32/Midl/ptr) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
 
 ## <a name="example"></a>Örnek
 
-Örneğin bakın [defaultvalue](defaultvalue.md) örnek kullanımı için **ptr**.
+Örnek bir **PTR**kullanımı için [DefaultValue](defaultvalue.md) örneğine bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -37,12 +37,12 @@ Bir işaretçinin tam bir işaretçi olarak belirler.
 
 |||
 |-|-|
-|**İçin geçerlidir**|Arabirimi parametreyi, arabirim yöntemi **tür tanımı**|
+|**Uygulama hedefi**|Arabirim parametresi, arabirim yöntemi, **typedef**|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|Yok.|
-|**Geçersiz öznitelikler**|None|
+|**Gerekli öznitelikler**|Yok.|
+|**Geçersiz öznitelikler**|Yok.|
 
-Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
+Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

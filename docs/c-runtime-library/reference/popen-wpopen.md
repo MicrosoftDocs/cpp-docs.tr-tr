@@ -33,19 +33,19 @@ helpviewer_keywords:
 - wpopen function
 - _wpopen function
 ms.assetid: eb718ff2-c87d-4bd4-bd2e-ba317c3d6973
-ms.openlocfilehash: 5284685f56a73c4c7e48fce981745220651399a1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 03eb36573abe8e26c47e6dd38c009e5819e60f8f
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62156167"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69499593"
 ---
-# <a name="popen-wpopen"></a>_popen, _wpopen
+# <a name="_popen-_wpopen"></a>_popen, _wpopen
 
-Bir kanal oluşturur ve bir komutu yürütür.
+Bir kanal oluşturur ve bir komut yürütür.
 
 > [!IMPORTANT]
-> Bu API, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -62,33 +62,33 @@ FILE *_wpopen(
 
 ### <a name="parameters"></a>Parametreler
 
-*Komutu*<br/>
+*komutundaki*<br/>
 Yürütülecek komut.
 
-*Modu*<br/>
-Döndürülen akışa modu.
+*modundaysa*<br/>
+Döndürülen akışın modu.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Oluşturulan kanal bir uç ile ilişkili bir akış döndürür. Bir kanal sonuna üretilmiş komut standart giriş veya standart çıkış ile ilişkilidir. İşlevler dönüş **NULL** üzerinde hata. IF gibi geçersiz bir parametre hataysa *komut* veya *modu* null bir işaretçiyse veya *modu* geçerli bir moda değil **errno** ayarlanır **EINVAL**. Geçerli mod için Açıklamalar bölümüne bakın.
+Oluşturulan kanalın bir sonuyla ilişkili bir akış döndürür. Kanalın diğer ucu, oluşturulan komutun standart girişi veya standart çıkışıyla ilişkilendirilir. İşlevler bir hata üzerinde **null değeri** döndürür. Hata geçersiz bir parametredir (örneğin, *komut* veya *mod* null işaretçisiyse veya *mod* geçerli bir mod değilse, **errno** , **EINVAL**olarak ayarlanır. Geçerli modlar için açıklamalar bölümüne bakın.
 
-Bu ve diğer hata kodları hakkında daha fazla bilgi için bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Bu ve diğer hata kodları hakkında daha fazla bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Popen** işlevi bir kanal oluşturur ve belirtilen dizeyi içeren komut işleyicisi üretilmiş bir kopyasını zaman uyumsuz olarak yürütür *komut*. Karakter dizesi *modu* gibi istenen erişim türünü belirtir.
+**_Popen** işlevi bir kanal oluşturur ve belirtilen dize *komutuyla*komut işlemcisinin oluşturulan bir kopyasını zaman uyumsuz olarak yürütür. Karakter dizesi *modu* , istenen erişim türünü aşağıdaki gibi belirtir.
 
 |Erişim modu|Açıklama|
 |-|-|
-|**"r"**|Çağırma işlemi üretilmiş komut standart çıkışında döndürülen akışa kullanarak okuyabilir.|
-|**"w"**|Çağırma işlemi, döndürülen akışa kullanarak üretilmiş komut standart girişi yazabilirsiniz.|
-|**"b"**|İkili modda açık.|
-|**"t"**|Metin modunda açın.|
+|**"r"**|Çağıran işlem, döndürülen akışı kullanarak, oluşturulan komutun standart çıkışını okuyabilir.|
+|**"w"**|Çağıran işlem, döndürülen akışı kullanarak, oluşturulan komutun standart girişine yazabilir.|
+|**"b"**|İkili modda açın.|
+|**şı**|Metin modunda açın.|
 
 > [!NOTE]
-> Bir Windows programı kullandıysanız **_popen** işlevi, programın süresiz olarak yanıt vermemesine neden olan bir geçersiz dosya işaretçisini döndürür. **_popen** bir konsol uygulamasında düzgün çalışır. Giriş ve çıkış yönlendiren bir Windows uygulaması oluşturmak için bkz: [yeniden yönlendirilen giriş ve çıkış bir alt işlemi oluşturma](/windows/desktop/ProcThread/creating-a-child-process-with-redirected-input-and-output) Windows SDK.
+> Bir Windows programında kullanılırsa, **_popen** işlevi, programın süresiz olarak yanıt vermemesine neden olan geçersiz bir dosya işaretçisi döndürür. **_popen** , konsol uygulamasında düzgün şekilde çalışmaktadır. Girişi ve çıktıyı yeniden yönlendiren bir Windows uygulaması oluşturmak için, bkz. Windows SDK [yeniden yönlendirilen giriş ve çıkışlarla bir alt Işlem oluşturma](/windows/win32/ProcThread/creating-a-child-process-with-redirected-input-and-output) .
 
-**_wpopen** geniş karakterli sürümüdür **_popen**; *yolu* bağımsız değişkeni **_wpopen** geniş karakterli bir dizedir. **_wpopen** ve **_popen** aynı şekilde davranır.
+**_wpopen** , **_popen**; öğesinin geniş karakterli bir sürümüdür. **_wpopen** için *yol* bağımsız değişkeni geniş karakterli bir dizedir. **_wpopen** ve **_popen** aynı şekilde davranır.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -100,14 +100,14 @@ Bu ve diğer hata kodları hakkında daha fazla bilgi için bkz: [_doserrno, err
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_popen**|\<stdio.h >|
-|**_wpopen**|\<stdio.h > veya \<wchar.h >|
+|**_popen**|\<stdio. h >|
+|**_wpopen**|\<stdio. h > veya \<wchar. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 
-Tüm sürümleri [C çalışma zamanı kitaplıkları](../../c-runtime-library/crt-library-features.md).
+[C çalışma zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md)tüm sürümleri.
 
 ## <a name="example"></a>Örnek
 
@@ -155,7 +155,7 @@ int main( void )
 
 ### <a name="sample-output"></a>Örnek Çıktı
 
-Bu çıkış, yalnızca bir dosya var. geçerli dizindeki .c dosya adı uzantısına sahip varsayar.
+Bu çıktı, geçerli dizinde. c dosya adı uzantısına sahip yalnızca bir dosya olduğunu varsayar.
 
 ```Output
 Volume in drive C is CDRIVE

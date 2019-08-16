@@ -7,51 +7,51 @@ helpviewer_keywords:
 - TN014
 - custom controls [MFC]
 ms.assetid: 1917a498-f643-457c-b570-9a0af7dbf7bb
-ms.openlocfilehash: c68b60f065e69213b3ab32c887bc7af129a70fef
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2960c5b8585519adb535e5611315ec4ececcf53e
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62306226"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69511190"
 ---
 # <a name="tn014-custom-controls"></a>TN014: Özel denetimler
 
-Bu Not, özel ve kendi kendine çizim denetimleri için MFC desteğini açıklar. Ayrıca Dinamik sınıflara açıklar ve arasındaki ilişkiyi açıklar [CWnd](../mfc/reference/cwnd-class.md) nesneleri ve `HWND`s.
+Bu notta, özel ve kendi kendine çizim denetimleri için MFC desteği açıklanmaktadır. Ayrıca, dinamik altsınıflama açıklar ve [CWnd](../mfc/reference/cwnd-class.md) nesneleri ile `HWND`s arasındaki ilişkiyi açıklar.
 
-MFC örnek uygulamayı CTRLTEST birçok özel denetimler kullanılması gösterilmektedir. MFC genel örnek için kaynak koduna bakın [CTRLTEST](../overview/visual-cpp-samples.md) ve çevrimiçi Yardım.
+MFC örnek uygulaması CTRLTEST birçok özel denetimi nasıl kullanacağınızı gösterir. MFC genel örnek [ctrltest](../overview/visual-cpp-samples.md) ve çevrimiçi yardım için kaynak koda bakın.
 
-## <a name="owner-draw-controlsmenus"></a>Özelleştirilmiş Çizimli denetimler/menüleri
+## <a name="owner-draw-controlsmenus"></a>Sahip-çizim denetimleri/menüler
 
-Windows Windows iletileri kullanarak özelleştirilmiş çizimli denetimler ve menüler için destek sağlar. Herhangi bir denetim veya menü üst pencere yanıt olarak bu iletiler ve çağırır işlevler alır. Sahip çizim denetimi ya da menü davranışını ve görünümünü özelleştirmek için bu işlevler geçersiz kılabilirsiniz.
+Windows, Windows iletilerini kullanarak sahip çizim denetimleri ve menüleri için destek sağlar. Herhangi bir denetimin veya menünün üst penceresi bu iletileri alır ve yanıt olarak işlevleri çağırır. Sahip çizim denetiminizin veya menüsünün görsel görünümünü ve davranışını özelleştirmek için bu işlevleri geçersiz kılabilirsiniz.
 
-MFC, sahip çizim doğrudan destekler aşağıdaki işlevleri ile:
+MFC, aşağıdaki işlevlerle doğrudan sahip çizmeyi destekler:
 
-- [CWnd::OnDrawItem](../mfc/reference/cwnd-class.md#ondrawitem)
+- [CWnd:: OnDrawItem](../mfc/reference/cwnd-class.md#ondrawitem)
 
-- [CWnd::OnMeasureItem](../mfc/reference/cwnd-class.md#onmeasureitem)
+- [CWnd:: OnMeasureItem](../mfc/reference/cwnd-class.md#onmeasureitem)
 
-- [CWnd::OnCompareItem](../mfc/reference/cwnd-class.md#oncompareitem)
+- [CWnd:: OnCompareItem](../mfc/reference/cwnd-class.md#oncompareitem)
 
-- [CWnd::OnDeleteItem](../mfc/reference/cwnd-class.md#ondeleteitem)
+- [CWnd:: OnDeleteItem](../mfc/reference/cwnd-class.md#ondeleteitem)
 
-Bu işlevleri geçersiz kılma, `CWnd` türetilmiş sınıf özel çizim davranışı uygulamak.
+Özel çizim davranışı uygulamak için, türetilmiş `CWnd` sınıfınıza bu işlevleri geçersiz kılabilirsiniz.
 
-Bu yaklaşım, yeniden kullanılabilir bir kod neden olmaz. İki farklı iki benzer denetimi varsa `CWnd` sınıfları, iki konumda özel denetimi davranışı uygulamalıdır. MFC tarafından desteklenen Self çizim denetimi mimarisi bu sorunu çözer.
+Bu yaklaşım, yeniden kullanılabilir koda neden olmaz. İki farklı `CWnd` sınıfta iki benzer denetiminiz varsa, özel denetim davranışını iki konumda uygulamanız gerekir. MFC tarafından desteklenen kendi kendine çizim denetim mimarisi bu sorunu çözer.
 
-## <a name="self-draw-controls-and-menus"></a>Denetimleri ve menüler Self çizme
+## <a name="self-draw-controls-and-menus"></a>Kendi kendine çizim denetimleri ve Menüleri
 
-MFC varsayılan uygulamasını sağlar (içinde `CWnd` ve [CMenu](../mfc/reference/cmenu-class.md) sınıflar) için standart özelleştirilmiş çizimli iletileri. Bu varsayılan uygulama, sahip çizim parametrelerini'kodunu çözme ve denetimleri veya menüye sahip çizim iletileri temsilci. Çizim kodu denetimi ya da menü, sahibi penceresinde sınıfına olduğundan bu kendi kendine çizmek çağrılır.
+MFC, standart sahip çizim iletileri için varsayılan `CWnd` bir uygulama (ve [CMenu](../mfc/reference/cmenu-class.md) sınıflarında) sağlar. Bu varsayılan uygulama, sahip çizim parametrelerinin kodunu çözer ve denetim ya da menüye sahip çizim iletilerini devredebilir. Bu, çizim kodu sahip penceresinde değil denetimin veya menünün sınıfında olduğundan, kendi kendine çizim olarak adlandırılır.
 
-Kendi kendine çizmek denetimlerini kullanarak denetim görüntülemek için özelleştirilmiş çizimli semantiklerini kullanan yeniden kullanılabilir denetim sınıfları oluşturabilirsiniz. Bir denetim çizmek için denetim sınıfı, kendi üst kodudur. Özel denetim programlama nesne odaklı bir yaklaşım budur. Aşağıdaki listede yer alan İşlevler, kendi kendine çizmek sınıflarınızı ekleyin:
+Kendi kendine çizim denetimlerini kullanarak, denetimi göstermek için Owner çizim semantiğini kullanan yeniden kullanılabilir denetim sınıfları oluşturabilirsiniz. Denetimi çizme kodu, üst öğesinin değil Denetim sınıfıdır. Bu, özel denetim programlamaya nesne odaklı bir yaklaşımdır. Aşağıdaki işlev listesini kendi çizim sınıflarınıza ekleyin:
 
-- Düğmeler Self çizmek için:
+- Otomatik çizim düğmeleri için:
 
     ```cpp
     CButton:DrawItem(LPDRAWITEMSTRUCT);
     // insert code to draw this button
     ```
 
-- Menüler Self çizmek için:
+- Otomatik çizim menüleri için:
 
     ```cpp
     CMenu:MeasureItem(LPMEASUREITEMSTRUCT);
@@ -60,7 +60,7 @@ Kendi kendine çizmek denetimlerini kullanarak denetim görüntülemek için öz
     // insert code to draw an item in this menu
     ```
 
-- Kendi kendine çizim liste kutuları için:
+- Kendinden çizimli liste kutuları için:
 
     ```cpp
     CListBox:MeasureItem(LPMEASUREITEMSTRUCT);
@@ -74,7 +74,7 @@ Kendi kendine çizmek denetimlerini kullanarak denetim görüntülemek için öz
     // insert code to delete an item from this list box
     ```
 
-- Kendi kendine çizmek birleşik giriş kutuları için:
+- Kendinden çizimli Birleşik giriş kutuları için:
 
     ```cpp
     CComboBox:MeasureItem(LPMEASUREITEMSTRUCT);
@@ -88,49 +88,49 @@ Kendi kendine çizmek denetimlerini kullanarak denetim görüntülemek için öz
     // insert code to delete an item from this combo box
     ```
 
-Sahip çizim yapıları hakkında ayrıntılı bilgi için ([DRAWITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagdrawitemstruct), [MEASUREITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagmeasureitemstruct), [COMPAREITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagcompareitemstruct), ve [DELETEITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagdeleteitemstruct)) MFC belgelerine bakın `CWnd::OnDrawItem`, `CWnd::OnMeasureItem`, `CWnd::OnCompareItem`, ve `CWnd::OnDeleteItem` sırasıyla.
+Sahip çizimi yapıları ([drawitemstruct](/windows/win32/api/winuser/ns-winuser-drawitemstruct), [MEASUREITEMSTRUCT](/windows/win32/api/winuser/ns-winuser-measureitemstruct), [COMPAREITEMSTRUCT](/windows/win32/api/winuser/ns-winuser-compareitemstruct)ve [DELETEITEMSTRUCT](/windows/win32/api/winuser/ns-winuser-deleteitemstruct) `CWnd::OnDrawItem` `CWnd::OnMeasureItem`) hakkındaki ayrıntılar için `CWnd::OnCompareItem`bkz.,, ve içinMFCbelgeleri`CWnd::OnDeleteItem` sırasıyla.
 
-## <a name="using-self-draw-controls-and-menus"></a>Kendi kendine çizmek denetimlerini ve menüler kullanma
+## <a name="using-self-draw-controls-and-menus"></a>Otomatik çizim denetimlerini ve menülerini kullanma
 
-İçin kendi kendine çizmek menüler, her ikisi de tanımlamalısınız `OnMeasureItem` ve `OnDrawItem` yöntemleri.
+Kendi kendine çizim menüleri için hem hem de `OnMeasureItem` `OnDrawItem` yöntemlerini geçersiz kılmanız gerekir.
 
-Kendi kendine çizim liste kutuları ve birleşik giriş kutuları için geçersiz kılmanız gerekir `OnMeasureItem` ve `OnDrawItem`. Lbs_ownerdrawvarıable stili için liste kutuları veya birleşik giriş kutuları için cbs_ownerdrawvarıable style iletişim şablonda belirtmeniz gerekir. Sabit öğe yüksekliğini Self çizmek denetimleri liste kutusuna eklenen önce belirlediğinden OWNERDRAWFIXED stili Self çizmek öğeleriyle çalışmaz. (Yöntemlerini kullanabilirsiniz [CListBox::SetItemHeight](../mfc/reference/clistbox-class.md#setitemheight) ve [CComboBox::SetItemHeight](../mfc/reference/ccombobox-class.md#setitemheight) bu sınırlamanın üstesinden gelmek için.)
+Kendinden çizimli liste kutuları ve Birleşik giriş kutuları için, ve `OnMeasureItem` `OnDrawItem`geçersiz kılmanız gerekir. İletişim şablonundaki Birleşik giriş kutuları için liste kutuları veya CBS_OWNERDRAWVARIABLE stili için LBS_OWNERDRAWVARIABLE stilini belirtmeniz gerekir. Sabit öğe yüksekliği, otomatik çizim denetimleri liste kutusuna iliştirilmeden önce belirlendiği için, Owner DRAWFIXED stili, otomatik çizim öğeleri ile çalışmaz. (Bu kısıtlamayı aşmak için [CListBox:: SetItemHeight](../mfc/reference/clistbox-class.md#setitemheight) ve [CComboBox:: SetItemHeight](../mfc/reference/ccombobox-class.md#setitemheight) yöntemlerini kullanabilirsiniz.)
 
-Bir OWNERDRAWVARIABLE stilini değiştirme NOINTEGRALHEIGHT stili denetime uygulamak için sistem zorlar. Denetimin değişken boyutlu öğeleri içeren bir tamsayı yükseklik hesaplanamıyor çünkü INTEGRALHEIGHT varsayılan stilini göz ardı edilir ve her zaman NOINTEGRALHEIGHT denetimidir. Öğelerinizi yükseklik sabitse, bir tamsayı çarpan öğe boyutunun denetimin boyutunu belirterek çizilen gelen kısmi öğe engelleyebilirsiniz.
+Bir OWNERDRAWVARIABLE stiline geçiş yapmak, sistemin denetime NOINTEGRALHEIGHT stilini uygulamasını zorlayacaktır. Denetim, değişken boyutlu öğelerle tamsayı yüksekliğini hesaplayamadığından, INTEGRALHEIGHT öğesinin varsayılan stili yok sayılır ve denetim her zaman NOINTEGRALHEIGHT olur. Öğeleriniz sabit boyarsa, denetim boyutunu öğe boyutunun tamsayı çarpanı olacak şekilde belirterek kısmi öğelerin çizilmesini engelleyebilirsiniz.
 
-Liste kutuları ve birleşik giriş kutuları LBS_SORT veya CBS_SORT stiliyle Self çizim için geçersiz kılmanız gerekir `OnCompareItem` yöntemi.
+Lbs_sort veya cbs_sort stilinde kendi kendine çizim liste kutuları ve Birleşik giriş kutuları için, `OnCompareItem` yöntemini geçersiz kılmanız gerekir.
 
-Liste kutuları ve birleşik giriş kutuları, kendi kendine çizmek için `OnDeleteItem` genellikle geçersiz. Geçersiz kılabilirsiniz `OnDeleteItem` herhangi bir özel işlem gerçekleştirmek istiyorsanız. Ek bellek veya diğer kaynaklara her liste kutusu veya birleşik giriş kutusu öğesi ile depolandığında ise bunun geçerli olacağı bir durumdur.
+Kendi kendine çizim liste kutuları ve Birleşik giriş kutuları `OnDeleteItem` için genellikle geçersiz kılınmaz. Özel bir işlem `OnDeleteItem` gerçekleştirmek istiyorsanız, geçersiz kılabilirsiniz. Bunun geçerli olacağı bir durum, her liste kutusu veya Birleşik giriş kutusu öğesiyle ek bellek veya diğer kaynakların depolandığı durumdur.
 
-## <a name="examples-of-self-drawing-controls-and-menus"></a>Kendi kendine çizim denetimleri ve menüler örnekleri
+## <a name="examples-of-self-drawing-controls-and-menus"></a>Kendi kendine çizim denetimleri ve menülerinin örnekleri
 
-MFC genel örnek [CTRLTEST](../overview/visual-cpp-samples.md) bir kendi kendine çizim menüsü ve kendi kendine çizim liste kutusu örnekleri sağlar.
+MFC genel örneği [ctrltest](../overview/visual-cpp-samples.md) , bir otomatik çizim menüsü ve kendi kendine çizim listesi kutusu örnekleri sunar.
 
-En sık karşılaşılan bir kendi kendine çizim düğmesini bir bit eşlem düğmesi örneğidir. Bir bit eşlem düğmesi, bir, iki veya üç farklı durumlar için bit eşlem resimleri gösteren bir düğme vardır. Buna örnek olarak, MFC sınıfı sağlanan [CBitmapButton](../mfc/reference/cbitmapbutton-class.md).
+Bir kendinden çizim düğmesinin en yaygın örneği bir bit eşlem düğmesidir. Bit eşlem düğmesi, farklı durumlar için bir, iki veya üç bit eşlem resmini gösteren bir düğmedir. Bu örnek, [CBitmapButton](../mfc/reference/cbitmapbutton-class.md)mfc sınıfında verilmiştir.
 
-## <a name="dynamic-subclassing"></a>Dinamik sınıflara
+## <a name="dynamic-subclassing"></a>Dinamik Altsınıflama
 
-Bazen, zaten var olan bir nesne işlevlerini değiştirmek isteyebilirsiniz. Önceki örneklerde, oluşturuldukları önce denetimleri özelleştirmek gereklidir. Dinamik sınıflara zaten oluşturulmuş bir denetimi özelleştirmenize olanak sağlar.
+Bazen zaten var olan bir nesnenin işlevlerini değiştirmek isteyeceksiniz. Önceki örneklerde, denetimleri oluşturulmadan önce özelleştirmeniz gerekir. Dinamik altsınıflama, zaten oluşturulmuş bir denetimi özelleştirmenize olanak sağlar.
 
-Sınıflara olan değiştirmek için Windows terimi <xref:System.Windows.Forms.Control.WndProc%2A> özelleştirilmiş pencerenin `WndProc` ve eski çağırma `WndProc` varsayılan işlevler için.
+Altsınıflama, bir pencerenin özelleştirilmiş <xref:System.Windows.Forms.Control.WndProc%2A> `WndProc` bir pencere ile değiştirilmesi ve varsayılan olarak eski `WndProc` işlevleri çağırmak için Windows terimidir.
 
-Bu C++ sınıf türetme ile karıştırılmamalıdır. Açıklama, C++ koşulları için *temel sınıfı* ve *türetilmiş sınıf* için benzer *sınıfın* ve *alt* Windows içinde nesne modeli. MFC ve Windows sınıflara sahip C++ türetme işlevsel olarak benzer dışında C++ dinamik sınıflara desteklemez.
+Bu, C++ sınıf türetmede karıştırılmamalıdır. C++ Açıklama için, *temel sınıf* ve *türetilmiş sınıf* terimleri Windows nesne modelindeki *üst* sınıfa ve *alt* sınıfa benzerdir. C++MFC ve Windows altsınıflama ile türetme işlevsel olarak benzerdir, ancak C++ dinamik altsınıflama desteklemez.
 
-`CWnd` Sınıfı, bir C++ nesnesi arasında bağlantı sağlar (türetilen `CWnd`) ve Windows pencere nesnesi (olarak bilinen bir `HWND`).
+Sınıfı bir C++ nesne (öğesinden `CWnd`türetilmiş) ve bir Windows pencere nesnesi (bir `HWND`olarak bilinir) arasındaki bağlantıyı sağlar. `CWnd`
 
-Bu ilgili üç yaygın yol vardır:
+Bunların birbirleriyle ilgili üç yaygın yöntemi vardır:
 
-- `CWnd` oluşturur `HWND`. Türetilen bir sınıf oluşturarak türetilmiş bir sınıf içinde davranışını değiştirebilirsiniz `CWnd`. `HWND` Uygulamanız çağırdığında oluşturulan [CWnd::Create](../mfc/reference/cwnd-class.md#create).
+- `CWnd`öğesini oluşturur `HWND`. Öğesinden `CWnd`türetilmiş bir sınıf oluşturarak türetilmiş bir sınıftaki davranışı değiştirebilirsiniz. , `HWND` Uygulamanız [CWnd:: Create](../mfc/reference/cwnd-class.md#create)yöntemini çağırdığında oluşturulur.
 
-- Uygulama ekler bir `CWnd` varolan `HWND`. Var olan pencereyi davranışı değiştirilmez. Bu temsilci bir durumunun ve çağrılarak gerçekleştirilir [CWnd::Attach](../mfc/reference/cwnd-class.md#attach) diğer adı varolan `HWND` için bir `CWnd` nesne.
+- Uygulama, var olan `CWnd` `HWND`bir öğesine iliştirir. Mevcut pencerenin davranışı değiştirilmez. Bu bir temsilcilidir ve [CWnd:: Attach](../mfc/reference/cwnd-class.md#attach) ' i çağırarak bir `HWND` `CWnd` nesne için var olan diğer ada ekleyin.
 
-- `CWnd` Mevcut bir bağlı `HWND` ve türetilen bir sınıfta davranışını değiştirebilirsiniz. Bu, çünkü biz davranışı ve bu nedenle, çalışma zamanında bir Windows nesnenin sınıfını değiştirme sınıflara dinamik çağrılır.
+- `CWnd`Mevcut `HWND` bir öğesine iliştirilir ve türetilmiş bir sınıftaki davranışı değiştirebilirsiniz. Bu, çalışma zamanında bir Windows nesnesinin davranışını ve bu nedenle sınıfını değiştirdiğimiz için dinamik altsınıflama olarak adlandırılır.
 
-Yöntemleri kullanarak dinamik sınıflara elde edebileceğiniz [CWnd::SubclassWindow](../mfc/reference/cwnd-class.md#subclasswindow) ve[CWnd::SubclassDlgItem](../mfc/reference/cwnd-class.md#subclassdlgitem).
+[CWnd:: SubclassWindow](../mfc/reference/cwnd-class.md#subclasswindow) ve[CWnd:: SubclassDlgItem](../mfc/reference/cwnd-class.md#subclassdlgitem)yöntemlerini kullanarak dinamik altsınıflama elde edebilirsiniz.
 
-Her iki yordam ekleme bir `CWnd` varolan nesne `HWND`. `SubclassWindow` alan `HWND` doğrudan. `SubclassDlgItem` Denetim kimliği ve ana pencereyi bir yardımcı işlevdir. `SubclassDlgItem` bir iletişim kutusu şablondan oluşturulan iletişim kutusu denetimleri için C++ nesneleri eklemek için tasarlanmıştır.
+Her iki yordam de `CWnd` varolan `HWND`bir nesne ekler. `SubclassWindow``HWND` doğrudan alır. `SubclassDlgItem`, bir denetim KIMLIĞI ve üst pencereyi alan bir yardımcı işlevdir. `SubclassDlgItem`iletişim kutusu şablonundan oluşturulan C++ iletişim kutusu denetimlerine nesne iliştirmek için tasarlanmıştır.
 
-Bkz: [CTRLTEST](../overview/visual-cpp-samples.md) ne zaman kullanılacağı çeşitli örneklerini örneğin `SubclassWindow` ve `SubclassDlgItem`.
+Ve ' [](../overview/visual-cpp-samples.md) `SubclassWindow` ninnezamankullanılacağıhakkındadahafazlaörnekiçinctrltestörneğine`SubclassDlgItem`bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -10,16 +10,16 @@ helpviewer_keywords:
 - CWindowDC [MFC], CWindowDC
 - CWindowDC [MFC], m_hWnd
 ms.assetid: 876a3641-4cde-471c-b0d1-fe58b32af79c
-ms.openlocfilehash: 55a9ccfc496c95c9e7410cbd5645135ee555ff26
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0ef9b4917dc834eb8335690f9b0d171245f5c170
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62323391"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69502147"
 ---
 # <a name="cwindowdc-class"></a>CWindowDC sınıfı
 
-Türetilmiş `CDC`.
+Öğesinden `CDC`türetilir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -33,19 +33,19 @@ class CWindowDC : public CDC
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CWindowDC::CWindowDC](#cwindowdc)|Oluşturur bir `CWindowDC` nesne.|
+|[CWindowDC:: CWindowDC](#cwindowdc)|Bir `CWindowDC` nesnesi oluşturur.|
 
 ### <a name="protected-data-members"></a>Korumalı veri üyeleri
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CWindowDC::m_hWnd](#m_hwnd)|Bu HWND `CWindowDC` eklenir.|
+|[CWindowDC:: m_hWnd](#m_hwnd)|Bu `CWindowDC` eklenen HWND.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Windows işlevini çağıran [GetWindowDC](/windows/desktop/api/winuser/nf-winuser-getwindowdc)oluşturma zamanında ve [ReleaseDC](/windows/desktop/api/winuser/nf-winuser-releasedc) yok etme. Diğer bir deyişle bir `CWindowDC` nesne tüm ekran alanına eriştiği bir [CWnd](../../mfc/reference/cwnd-class.md) (hem istemci hem de istemci dışı alanlar).
+Oluşturma sırasında [GetWindowDC](/windows/win32/api/winuser/nf-winuser-getwindowdc)Windows işlevini çağırır ve yok etme sırasında [ReleaseDC](/windows/win32/api/winuser/nf-winuser-releasedc) . Bu, bir `CWindowDC` nesnenin bir [CWnd](../../mfc/reference/cwnd-class.md) (hem istemci hem de istemci olmayan alan) tüm ekran alanına eriştiği anlamına gelir.
 
-Kullanma hakkında daha fazla bilgi için `CWindowDC`, bkz: [cihaz bağlamları](../../mfc/device-contexts.md).
+Kullanma `CWindowDC`hakkında daha fazla bilgi için bkz. [cihaz bağlamları](../../mfc/device-contexts.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -57,11 +57,11 @@ Kullanma hakkında daha fazla bilgi için `CWindowDC`, bkz: [cihaz bağlamları]
 
 ## <a name="requirements"></a>Gereksinimler
 
-Üstbilgi: afxwin.h
+Üstbilgi: Afxwin. h
 
-##  <a name="cwindowdc"></a>  CWindowDC::CWindowDC
+##  <a name="cwindowdc"></a>CWindowDC:: CWindowDC
 
-Oluşturur bir `CWindowDC` erişen tüm ekran alanına (hem istemci hem de istemci olmayan) nesne `CWnd` nesne tarafından işaret edilen *pWnd*.
+`CWindowDC` *PWnd*tarafından işaret edilen `CWnd` nesnenin tüm ekran alanına (hem istemci hem de istemci olmayan) erişen bir nesne oluşturur.
 
 ```
 explicit CWindowDC(CWnd* pWnd);
@@ -70,21 +70,21 @@ explicit CWindowDC(CWnd* pWnd);
 ### <a name="parameters"></a>Parametreler
 
 *pWnd*<br/>
-Penceresinin istemci alanını cihaz bağlamındaki nesne erişim sağlar.
+İstemci alanı cihaz bağlamı nesnesine erişecek olan pencere.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Windows işlevi oluşturucuyu çağırır [GetWindowDC](/windows/desktop/api/winuser/nf-winuser-getwindowdc).
+Oluşturucu, [GetWindowDC](/windows/win32/api/winuser/nf-winuser-getwindowdc)Windows işlevini çağırır.
 
-Bir özel durum (tür `CResourceException`) oluşturulur Windows `GetWindowDC` çağrısı başarısız olur. Bir cihaz bağlamı Windows zaten tüm kendi kullanılabilir cihaz bağlamları ayırdığı kullanılabilir olmayabilir. Uygulamanız için beş ortak görüntü bağlamlarında kullanılabilir Windows altında herhangi bir belirli zamanda rekabet.
+`CResourceException` Windows`GetWindowDC` çağrısı başarısız olursa bir özel durum (tür) oluşturulur. Windows, tüm kullanılabilir cihaz bağlamlarını zaten ayırmışsa bir cihaz bağlamı kullanılamayabilir. Uygulamanız, Windows altında herhangi bir zamanda kullanılabilir olan beş ortak görüntü bağlamına sahiptir.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDocView#188](../../mfc/codesnippet/cpp/cwindowdc-class_1.cpp)]
 
-##  <a name="m_hwnd"></a>  CWindowDC::m_hWnd
+##  <a name="m_hwnd"></a>CWindowDC:: m_hWnd
 
-HWND, `CWnd` işaretçi oluşturmak için kullanılan `CWindowDC` nesne.
+`CWnd` İşaretçinin HWND 'si `CWindowDC` nesneyi oluşturmak için kullanılır.
 
 ```
 HWND m_hWnd;
@@ -92,11 +92,11 @@ HWND m_hWnd;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`m_hWnd` HWND türündeki korumalı bir değişkendir.
+`m_hWnd`, HWND türünde korunan bir değişkendir.
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [CWindowDC::CWindowDC](#cwindowdc).
+  [CWindowDC:: CWindowDC](#cwindowdc)örneğine bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

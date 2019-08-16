@@ -13,12 +13,12 @@ f1_keywords:
 helpviewer_keywords:
 - CDacl class
 ms.assetid: 2dc76616-6362-4967-b6cf-e2d39ca37ddd
-ms.openlocfilehash: 2bc962407bac947f475368b43f5039bca3c1da1e
-ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
+ms.openlocfilehash: a37ef47a4ea89d9ec24fac417e5b715bd2602fd7
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68915811"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69496924"
 ---
 # <a name="cdacl-class"></a>CDacl sınıfı
 
@@ -66,7 +66,7 @@ Bir nesnenin DACL 'sini almak için nesnenin sahibi olmanız veya nesneye READ_C
 
 `CDacl` Nesnesinden Ace 'ler oluşturmak, eklemek, kaldırmak ve silmek için belirtilen sınıf yöntemlerini kullanın. Ayrıca bkz. [AtlGetDacl](security-global-functions.md#atlgetdacl) ve [AtlSetDacl](security-global-functions.md#atlsetdacl).
 
-Windows 'daki erişim denetim modeline giriş için Windows SDK [Access Control](/windows/desktop/SecAuthZ/access-control) bakın.
+Windows 'daki erişim denetim modeline giriş için Windows SDK [Access Control](/windows/win32/SecAuthZ/access-control) bakın.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -121,7 +121,7 @@ Ace `CDacl` nesneye eklenirse true, hata durumunda FALSE döndürür.
 
 `CDacl` Nesne, nesnesine erişebilen kullanıcıları ve grupları belirleyen sıfır veya daha fazla ACE (erişim denetimi girişleri) içerir. Bu yöntem, `CDacl` nesnesine erişime izin veren bir ace ekler.
 
-`AceFlags` Parametresinde ayarlayabilen çeşitli bayrakların açıklaması için bkz. [ACE_HEADER](/windows/desktop/api/winnt/ns-winnt-ace_header) .
+`AceFlags` Parametresinde ayarlayabilen çeşitli bayrakların açıklaması için bkz. [ACE_HEADER](/windows/win32/api/winnt/ns-winnt-ace_header) .
 
 ##  <a name="adddeniedace"></a>CDacl:: Adddenıedadce
 
@@ -166,7 +166,7 @@ Ace `CDacl` nesneye eklenirse true, hata durumunda FALSE döndürür.
 
 `CDacl` Nesne, nesnesine erişebilen kullanıcıları ve grupları belirleyen sıfır veya daha fazla ACE (erişim denetimi girişleri) içerir. Bu yöntem, `CDacl` nesnesine erişimi reddeden bir ace ekler.
 
-`AceFlags` Parametresinde ayarlayabilen çeşitli bayrakların açıklaması için bkz. [ACE_HEADER](/windows/desktop/api/winnt/ns-winnt-ace_header) .
+`AceFlags` Parametresinde ayarlayabilen çeşitli bayrakların açıklaması için bkz. [ACE_HEADER](/windows/win32/api/winnt/ns-winnt-ace_header) .
 
 ##  <a name="cdacl"></a>CDacl:: CDacl
 
@@ -264,7 +264,7 @@ Nesnesinde ( `ACE` varsa) her (erişim denetimi girişi) yapısını kaldırır.
 
 [Güvenlik örneği](../../overview/visual-cpp-samples.md)<br/>
 [CAcl Sınıfı](../../atl/reference/cacl-class.md)<br/>
-[Cacls](/windows/desktop/SecAuthZ/access-control-lists)<br/>
-[Ace 'ler](/windows/desktop/SecAuthZ/access-control-entries)<br/>
+[Cacls](/windows/win32/SecAuthZ/access-control-lists)<br/>
+[Ace 'ler](/windows/win32/SecAuthZ/access-control-entries)<br/>
 [Sınıfa genel bakış](../../atl/atl-class-overview.md)<br/>
 [Güvenlik Genel İşlevleri](../../atl/reference/security-global-functions.md)

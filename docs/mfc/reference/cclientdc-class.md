@@ -10,16 +10,16 @@ helpviewer_keywords:
 - CClientDC [MFC], CClientDC
 - CClientDC [MFC], m_hWnd
 ms.assetid: 8a871d6b-06f8-496e-9fa3-9a5780848369
-ms.openlocfilehash: a67af5d7d82b8bd7d0490d4ae6f9535bf3283ea2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 46428740d052c70218d4443395777428cdf3c3b0
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62206630"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69507334"
 ---
 # <a name="cclientdc-class"></a>CClientDC sınıfı
 
-Windows işlevlerini çağırma üstlenir [GetDC](/windows/desktop/api/winuser/nf-winuser-getdc) oluşturma zamanında ve [ReleaseDC](/windows/desktop/api/winuser/nf-winuser-releasedc) yok etme.
+Oluşturma sırasında [GetDC](/windows/win32/api/winuser/nf-winuser-getdc) Windows işlevleri ve yok etme sırasında [ReleaseDC](/windows/win32/api/winuser/nf-winuser-releasedc) çağırma işlemini gerçekleştirir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -33,19 +33,19 @@ class CClientDC : public CDC
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CClientDC::CClientDC](#cclientdc)|Oluşturur bir `CClientDC` bağlı nesne `CWnd`.|
+|[CClientDC:: CClientDC](#cclientdc)|Öğesine bağlı `CClientDC` bir nesne oluşturur. `CWnd`|
 
 ### <a name="protected-data-members"></a>Korumalı veri üyeleri
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CClientDC::m_hWnd](#m_hwnd)|Bu pencerenin HWND `CClientDC` geçerlidir.|
+|[CClientDC:: m_hWnd](#m_hwnd)|Bunun `CClientDC` geçerli olduğu pencerenin HWND 'si.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Cihaz bağlamı ile ilişkili buna bir `CClientDC` pencerenin istemci alanını nesnedir.
+Bu, bir `CClientDC` nesneyle ilişkili cihaz bağlamının bir pencerenin istemci alanı olduğu anlamına gelir.
 
-Daha fazla bilgi için `CClientDC`, bkz: [cihaz bağlamları](../../mfc/device-contexts.md).
+Hakkında `CClientDC`daha fazla bilgi için bkz. [cihaz bağlamları](../../mfc/device-contexts.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -57,11 +57,11 @@ Daha fazla bilgi için `CClientDC`, bkz: [cihaz bağlamları](../../mfc/device-c
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxwin.h
+**Üstbilgi:** Afxwin. h
 
-##  <a name="cclientdc"></a>  CClientDC::CClientDC
+##  <a name="cclientdc"></a>CClientDC:: CClientDC
 
-Oluşturur bir `CClientDC` erişen istemci alanının nesne [CWnd](../../mfc/reference/cwnd-class.md) işaret ettiği *pWnd*.
+`CClientDC` *PWnd*tarafından işaret edilen [CWnd](../../mfc/reference/cwnd-class.md) 'ın istemci alanına erişen bir nesne oluşturur.
 
 ```
 explicit CClientDC(CWnd* pWnd);
@@ -70,21 +70,21 @@ explicit CClientDC(CWnd* pWnd);
 ### <a name="parameters"></a>Parametreler
 
 *pWnd*<br/>
-Pencere istemci alanını cihaz bağlamındaki erişim sağlar.
+İstemci alanı cihaz bağlamı nesnesine erişecek olan pencere.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Windows işlevi oluşturucuyu çağırır [GetDC](/windows/desktop/api/winuser/nf-winuser-getdc).
+Oluşturucu, [GetDC](/windows/win32/api/winuser/nf-winuser-getdc)Windows işlevini çağırır.
 
-Bir özel durum (tür `CResourceException`) oluşturulur Windows `GetDC` çağrısı başarısız olur. Bir cihaz bağlamı Windows zaten tüm kendi kullanılabilir cihaz bağlamları ayırdığı kullanılabilir olmayabilir. Uygulamanız için beş ortak görüntü bağlamlarında kullanılabilir Windows altında herhangi bir belirli zamanda rekabet.
+`CResourceException` Windows`GetDC` çağrısı başarısız olursa bir özel durum (tür) oluşturulur. Windows, tüm kullanılabilir cihaz bağlamlarını zaten ayırmışsa bir cihaz bağlamı kullanılamayabilir. Uygulamanız, Windows altında herhangi bir zamanda kullanılabilir olan beş ortak görüntü bağlamına sahiptir.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDocView#42](../../mfc/codesnippet/cpp/cclientdc-class_1.cpp)]
 
-##  <a name="m_hwnd"></a>  CClientDC::m_hWnd
+##  <a name="m_hwnd"></a>CClientDC:: m_hWnd
 
-`HWND` , `CWnd` İşaretçi oluşturmak için kullanılan `CClientDC` nesne.
+Nesneyi oluşturmak için kullanılan `CWnd`işaretçinin. `HWND` `CClientDC`
 
 ```
 HWND m_hWnd;
@@ -92,11 +92,11 @@ HWND m_hWnd;
 
 ### <a name="remarks"></a>Açıklamalar
 
-*m_hWnd* korumalı bir değişkendir.
+*m_hWnd* , korumalı bir değişkendir.
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [CClientDC::CClientDC](#cclientdc).
+  [CClientDC:: CClientDC](#cclientdc)örneğine bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

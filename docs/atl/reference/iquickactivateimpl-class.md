@@ -1,5 +1,5 @@
 ---
-title: Iquickactivateımpl sınıfı
+title: IQuickActivateImpl sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - IQuickActivateImpl
@@ -13,19 +13,19 @@ helpviewer_keywords:
 - IQuickActivateImpl class
 - IQuickActivate ATL implementation
 ms.assetid: aa80c056-1041-494e-b21d-2acca7dc27ea
-ms.openlocfilehash: 2a2b11746249b6ee4f6ddd578717aacc374d53bc
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2169686ebbf756c5caf9232f5031532c62ac8265
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62198155"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69495514"
 ---
-# <a name="iquickactivateimpl-class"></a>Iquickactivateımpl sınıfı
+# <a name="iquickactivateimpl-class"></a>IQuickActivateImpl sınıfı
 
-Bu sınıf, kapsayıcılar denetimi başlatma tek bir çağrı halinde birleştirir.
+Bu sınıf, kapsayıcıların denetim başlatmasını tek bir çağrıda birleştirir.
 
 > [!IMPORTANT]
->  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.
+>  Bu sınıf ve üyeleri Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -36,8 +36,8 @@ class ATL_NO_VTABLE IQuickActivateImpl : public IQuickActivate
 
 #### <a name="parameters"></a>Parametreler
 
-*T*<br/>
-Sınıfınız, türetilen `IQuickActivateImpl`.
+*ŞI*<br/>
+Sınıfınız, öğesinden `IQuickActivateImpl`türetilir.
 
 ## <a name="members"></a>Üyeler
 
@@ -45,15 +45,15 @@ Sınıfınız, türetilen `IQuickActivateImpl`.
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[IQuickActivateImpl::GetContentExtent](#getcontentextent)|Çalışan bir denetim için geçerli görüntü boyutunu alır.|
-|[IQuickActivateImpl::QuickActivate](#quickactivate)|Hızlı Başlatma yüklenen denetimleri gerçekleştirir.|
-|[IQuickActivateImpl::SetContentExtent](#setcontentextent)|Kapsayıcı atanmış ne kadar görüntüleme alanı denetim bildirir.|
+|[IQuickActivateImpl:: GetContentExtent](#getcontentextent)|Çalışan bir denetim için geçerli görüntüleme boyutunu alır.|
+|[IQuickActivateImpl:: QuickActivate](#quickactivate)|Yüklenmekte olan denetimlerin hızlı başlatılmasını gerçekleştirir.|
+|[IQuickActivateImpl:: SetContentExtent](#setcontentextent)|Kapsayıcının kendisine ne kadar alan gösterdiğine ilişkin denetimi bilgilendirir.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-[IQuickActivate](/windows/desktop/api/ocidl/nn-ocidl-iquickactivate) arabirimi denetimleri, tek bir çağrı başlatma birleştirerek yüklenirken gecikmeleri önlemek kapsayıcıları yardımcı olur. `QuickActivate` Yöntemi sağlayan bir işaretçiyi kapsayıcıya bir [QACONTAINER](/windows/desktop/api/ocidl/ns-ocidl-tagqacontainer) tüm arabirimleri denetimi işaretçileri tutan yapı gerekiyor. Getirisi, denetim için bir işaretçi geri geçer bir [QACONTROL](/windows/desktop/api/ocidl/ns-ocidl-tagqacontrol) kapsayıcı tarafından kullanılan kendi arabirimlerine işaretçileri tutan yapı. Sınıf `IQuickActivateImpl` bir varsayılan uygulamayı sağlar `IQuickActivate` ve uygulayan `IUnknown` dökümünü almak için bilgi göndererek hata ayıklama cihazı oluşturur.
+[IQuickActivate](/windows/win32/api/ocidl/nn-ocidl-iquickactivate) arabirimi, tek bir çağrıda başlatmayı birleştirerek bir denetimin yüklenmesi sırasında kapsayıcıların gecikmelerden kaçınmanıza yardımcı olur. Yöntemi, kapsayıcının denetim ihtiyacı olan tüm arabirimlerin işaretçilerini tutan bir [qacontainer](/windows/win32/api/ocidl/ns-ocidl-qacontainer) yapısına işaretçi geçmesine izin verir. `QuickActivate` Dönüş sırasında denetim, kapsayıcı tarafından kullanılan kendi arabirimine işaretçiler tutan bir [qacontrol](/windows/win32/api/ocidl/ns-ocidl-qacontrol) yapısına işaretçi geri geçirir. Sınıfı `IQuickActivateImpl` , hata ayıklama yapılarında döküm `IQuickActivate` cihazına bilgi `IUnknown` göndererek varsayılan bir uygulamasını sağlar ve uygular.
 
-**İle ilgili makaleler** [ATL öğretici](../../atl/active-template-library-atl-tutorial.md), [ATL projesi oluşturma](../../atl/reference/creating-an-atl-project.md)
+**Ilgili makaleler** ATL [öğreticisi](../../atl/active-template-library-atl-tutorial.md), [ATL projesi oluşturma](../../atl/reference/creating-an-atl-project.md)
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -63,11 +63,11 @@ Sınıfınız, türetilen `IQuickActivateImpl`.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlctl.h
+**Üstbilgi:** atlctl. h
 
-##  <a name="getcontentextent"></a>  IQuickActivateImpl::GetContentExtent
+##  <a name="getcontentextent"></a>IQuickActivateImpl:: GetContentExtent
 
-Çalışan bir denetim için geçerli görüntü boyutunu alır.
+Çalışan bir denetim için geçerli görüntüleme boyutunu alır.
 
 ```
 STDMETHOD(GetContentExtent)(LPSIZEL pSize);
@@ -75,13 +75,13 @@ STDMETHOD(GetContentExtent)(LPSIZEL pSize);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Denetimin tam işleme için büyüklüğünde ve HIMETRIC birimleri cinsinden belirtilir.
+Boyut, denetimin tam olarak işlenmesi içindir ve HIMETRIK birimlerde belirtilir.
 
-Bkz: [IQuickActivate::GetContentExtent](/windows/desktop/api/ocidl/nf-ocidl-iquickactivate-getcontentextent) Windows SDK içinde.
+Windows SDK [IQuickActivate:: GetContentExtent](/windows/win32/api/ocidl/nf-ocidl-iquickactivate-getcontentextent) bölümüne bakın.
 
-##  <a name="quickactivate"></a>  IQuickActivateImpl::QuickActivate
+##  <a name="quickactivate"></a>IQuickActivateImpl:: QuickActivate
 
-Hızlı Başlatma yüklenen denetimleri gerçekleştirir.
+Yüklenmekte olan denetimlerin hızlı başlatılmasını gerçekleştirir.
 
 ```
 STDMETHOD(QuickActivate)(
@@ -91,13 +91,13 @@ STDMETHOD(QuickActivate)(
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yapısı, Denetim ve ortam bazı özelliklerin değerlerini tarafından gerekli arabirim işaretçileri içerir. İade sırasında denetim için bir işaretçi geçirir. bir [QACONTROL](/windows/desktop/api/ocidl/ns-ocidl-tagqacontrol) kapsayıcı gerektiren kendi arabirimleri ve ek durum bilgilerini işaretçileri içeren yapısı.
+Yapı, denetim için gereken arabirimlerin ve bazı çevresel özelliklerin değerlerinin işaretçilerini içerir. Geri dönüş sırasında denetim, kapsayıcının gerektirdiği kendi arayüzlerinin işaretçilerini ve ek durum bilgilerini içeren bir [qacontrol](/windows/win32/api/ocidl/ns-ocidl-qacontrol) yapısına işaretçi geçirir.
 
-Bkz: [IQuickActivate::QuickActivate](/windows/desktop/api/ocidl/nf-ocidl-iquickactivate-quickactivate) Windows SDK içinde.
+Windows SDK [IQuickActivate:: QuickActivate](/windows/win32/api/ocidl/nf-ocidl-iquickactivate-quickactivate) ' a bakın.
 
-##  <a name="setcontentextent"></a>  IQuickActivateImpl::SetContentExtent
+##  <a name="setcontentextent"></a>IQuickActivateImpl:: SetContentExtent
 
-Kapsayıcı atanmış ne kadar görüntüleme alanı denetim bildirir.
+Kapsayıcının kendisine ne kadar alan gösterdiğine ilişkin denetimi bilgilendirir.
 
 ```
 STDMETHOD(SetContentExtent)(LPSIZEL pSize);
@@ -105,11 +105,11 @@ STDMETHOD(SetContentExtent)(LPSIZEL pSize);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Boyutunu HIMETRIC birimleri cinsinden belirtilir.
+Boyut, HIMETRIK birimlerde belirtilir.
 
-Bkz: [IQuickActivate::SetContentExtent](/windows/desktop/api/ocidl/nf-ocidl-iquickactivate-setcontentextent) Windows SDK içinde.
+Windows SDK [IQuickActivate:: SetContentExtent](/windows/win32/api/ocidl/nf-ocidl-iquickactivate-setcontentextent) bölümüne bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [CComControl Sınıfı](../../atl/reference/ccomcontrol-class.md)<br/>
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)
+[Sınıfa genel bakış](../../atl/atl-class-overview.md)

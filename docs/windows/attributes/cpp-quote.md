@@ -1,21 +1,21 @@
 ---
-title: cpp_quote (C++ COM özniteliği)
+title: cpp_quote (C++ com özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.cpp_quote
 helpviewer_keywords:
 - cpp_quote attribute
 ms.assetid: f75327ff-42bd-498b-9177-7ffa25427e1f
-ms.openlocfilehash: 378435ced5a541785b7b32bc9d2f408034d5a2d8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 905c9fc41b1b42dffe9c7b39fae0b096cdc24950
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62148243"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69501763"
 ---
-# <a name="cppquote"></a>cpp_quote
+# <a name="cpp_quote"></a>cpp_quote
 
-Belirtilen dizeyi tırnak karakterleri olmadan oluşturulan .idl dosyasına yayar.
+Belirtilen dizeyi, tırnak karakterleri olmadan, oluşturulan. IDL dosyasına yayar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -25,20 +25,20 @@ Belirtilen dizeyi tırnak karakterleri olmadan oluşturulan .idl dosyasına yaya
 
 ### <a name="parameters"></a>Parametreler
 
-*Deyimi*<br/>
-Bir C yönergesi.
+*Ekstre*<br/>
+C yönergesi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Cpp_quote** C++ öznitelik, bir .idl dosyasında bir önişlemci yönergesine koymak istiyorsanız kullanışlıdır.
+Bir. IDL dosyasına bir Önişlemci yönergesi koymak istiyorsanız, **cpp_quote** C++ özniteliği yararlı olur.
 
-Ayrıca **cpp_quote** ve MIDL derlemenin bir parçası bir .h dosyası oluşturun. C++ IDL öznitelikleri kullanır ancak bazı görev için bu dosyayı kullanamazsınız bir C++ üstbilgi dosyası varsa, örneğin, daha sonra kullanabilmek için bir MIDL tarafından oluşturulan .h dosyası oluşturmak için derleyebilirsiniz.
+Ayrıca, **cpp_quote** kullanabilir ve MIDL derlemesinin bir parçası olarak bir. h dosyası oluşturabilirsiniz. Örneğin, IDL öznitelikleri kullanan C++ C++ bir başlık dosyanız varsa ancak bazı görevler için bu dosyayı kullanamaz, kullanabilmeniz için onu DERLEYEBILMENIZ gereken bir MIDL tarafından oluşturulan. h dosyası oluşturabilirsiniz.
 
-**Cpp_quote** özniteliği ile aynı işlevlere sahip [cpp_quote](/windows/desktop/Midl/cpp-quote) MIDL özniteliği.
+**Cpp_quote** özniteliği, [cpp_quote](/windows/win32/Midl/cpp-quote) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
 
 ## <a name="example"></a>Örnek
 
-Örneğin bakın [çift](dual.md) kullanma hakkında bir örnek için **cpp_quote**.
+Örnek için bkz. [](dual.md) **cpp_quote**'in nasıl kullanılacağını gösteren örnek.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -46,12 +46,12 @@ Ayrıca **cpp_quote** ve MIDL derlemenin bir parçası bir .h dosyası oluşturu
 
 |||
 |-|-|
-|**İçin geçerlidir**|Her yerde|
+|**Uygulama hedefi**|Yerdeki|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|Yok.|
+|**Gerekli öznitelikler**|Yok.|
 |**Geçersiz öznitelikler**|Yok.|
 
-Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
+Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

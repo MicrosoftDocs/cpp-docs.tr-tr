@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - defaultcollelem attribute
 ms.assetid: 3dbbd293-8b83-4f70-a36b-64cc1d0b6713
-ms.openlocfilehash: be4ea7097bd811444fca050525338931867998d0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c8848562c1470198d3f2a1b6f285510bcbb43d7c
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62148061"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69501664"
 ---
 # <a name="defaultcollelem"></a>defaultcollelem
 
-Visual Basic kod iyileştirme için kullanılır.
+Visual Basic kodu iyileştirmesi için kullanılır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -25,11 +25,11 @@ Visual Basic kod iyileştirme için kullanılır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Defaultcollelem** C++ özniteliği ile aynı işlevlere sahip [defaultcollelem](/windows/desktop/Midl/defaultcollelem) MIDL özniteliği.
+**Defaultcollelem** C++ özniteliği, [defaultcollelem](/windows/win32/Midl/defaultcollelem) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod, bir arabirim yöntemini kullanarak göstermektedir **defaultcollelem** özniteliği:
+Aşağıdaki kod, **defaultcollelem** özniteliğini kullanarak bir arabirim yöntemi gösterir:
 
 ```cpp
 // cpp_attr_ref_defaultcollelem.cpp
@@ -50,12 +50,12 @@ __interface IMyForm
 
 |||
 |-|-|
-|**İçin geçerlidir**|Arabirim yöntemi|
+|**Uygulama hedefi**|Interface yöntemi|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|None|
-|**Geçersiz öznitelikler**|None|
+|**Gerekli öznitelikler**|Yok.|
+|**Geçersiz öznitelikler**|Yok.|
 
-Daha fazla bilgi için [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
+Daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

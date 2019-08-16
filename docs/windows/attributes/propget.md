@@ -1,21 +1,21 @@
 ---
-title: propget (C++ COM özniteliği)
+title: propget (C++ com özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.propget
 helpviewer_keywords:
 - propget attribute
 ms.assetid: c9d4a97f-36dd-4b61-8eb0-b1a217598f14
-ms.openlocfilehash: 8f60e8e8fc98ba3b75acefe80812069bfac78e6c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 044562ba870d6e36ddfcec0c7e84253b111a9eea
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62407633"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69514213"
 ---
 # <a name="propget"></a>propget
 
-Bir özelliği erişimci işlevi belirtir.
+Bir özellik erişimcisi işlevi belirtir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -25,11 +25,11 @@ Bir özelliği erişimci işlevi belirtir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Propget** C++ özniteliği ile aynı işlevlere sahip [propget](/windows/desktop/Midl/propget) MIDL özniteliği.
+**Propget** C++ özniteliği [propget](/windows/win32/Midl/propget) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
 
 ## <a name="example"></a>Örnek
 
-Örneğin bakın [bağlanabilir](bindable.md) örnek kullanımı için **propget**.
+**Propget**'in örnek kullanımı için [bağlanabilir](bindable.md) örneğine bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -37,12 +37,12 @@ Bir özelliği erişimci işlevi belirtir.
 
 |||
 |-|-|
-|**İçin geçerlidir**|Yöntem|
+|**Uygulama hedefi**|Yöntem|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|None|
+|**Gerekli öznitelikler**|Yok.|
 |**Geçersiz öznitelikler**|`propput`, `propputref`|
 
-Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
+Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

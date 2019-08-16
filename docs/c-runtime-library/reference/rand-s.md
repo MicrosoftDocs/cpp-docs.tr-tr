@@ -27,16 +27,16 @@ helpviewer_keywords:
 - cryptographically secure random numbers
 - pseudorandom numbers
 - numbers, generating pseudorandom
-ms.openlocfilehash: d196a6f5d7483deb9a7e1b8d7fa929532b6197db
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7a2c57713d4b455971f24b64dc124862749e927a
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62358131"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69499558"
 ---
-# <a name="rands"></a>rand_s
+# <a name="rand_s"></a>rand_s
 
-Sözde rastgele sayı oluşturur. Bu işlevin daha güvenli bir sürümü olduğu [rand](rand.md), açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
+Pseudportaıdom numarası üretir. Bu, güvenlik geliştirmeleri olan [S_SAYI_ÜRET](rand.md)'in daha güvenli bir sürümüdür ve bu [özellik, CRT 'daki güvenlik özelliklerinde](../../c-runtime-library/security-features-in-the-crt.md)açıklanmıştır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -46,33 +46,33 @@ errno_t rand_s(unsigned int* randomValue);
 
 ### <a name="parameters"></a>Parametreler
 
-*randomValue*<br/>
-Oluşturulan değerini tutacak bir tamsayı işaretçisi.
+*Rasgeledeğeri*<br/>
+Üretilen değeri tutacak bir tamsayıya yönelik bir işaretçi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa sıfır Aksi takdirde bir hata kodu. Giriş işaretleyicisini _randomValue_ null bir işaretçiyse, işlevi içinde açıklanan şekilde geçersiz parametre işleyicisini çağırır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse, işlev döndürür **EINVAL** ve ayarlar **errno** için **EINVAL**. Diğer herhangi bir nedenle için işlev başarısız olursa *_randomValue_ 0 olarak ayarlayın.
+Başarılı olursa sıfır, aksi takdirde bir hata kodu. Giriş işaretçisi _rastgele değeri_ null bir işaretçisiyse, Işlev [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, işlev **EINVAL** döndürür ve **errno** 'ı **EINVAL**olarak ayarlar. İşlev başka bir nedenle başarısız olursa, *_Rasgelevalue_ 0 olarak ayarlanır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Rand_s** işlevi için 0 aralığındaki bir sözde rastgele tamsayı Yazar **uınt_max** Giriş işaretçisi. **Rand_s** işlevi işletim sistemi şifreleme yoluyla güvenli rasgele sayılar üretmek için kullanır. Tarafından oluşturulan çekirdek kullanmaz [srand](srand.md) işlevi, ya da tarafından kullanılan rastgele bir sayı sıra etkilemez [rand](rand.md).
+**Rand_s** işlevi, giriş işaretçisine 0 ile **UINT_MAX** arasında bir pseudportadom tamsayıyı yazar. **Rand_s** işlevi, şifreleme güvenli rastgele sayılar oluşturmak için işletim sistemini kullanır. [SRVe](srand.md) işlevi tarafından oluşturulan çekirdeği kullanmaz ve [S_SAYI_ÜRET](rand.md)tarafından kullanılan rastgele sayı sırasını da etkilemez.
 
-**Rand_s** işlevi gerektirir, sabiti **_CRT_RAND_S** tanımlanmış olması için aşağıdaki örnekte olduğu gibi bildirilen işlev ekleme deyimi önce:
+**Rand_s** işlevi, aşağıdaki örnekte olduğu gibi, işlevin dahil edilmesi için ekleme ifadesiyle önce sabit **_CRT_RAND_S** 'in tanımlanmasını gerektirir:
 
 ```C
 #define _CRT_RAND_S
 #include <stdlib.h>
 ```
 
-**rand_s** bağlıdır [RtlGenRandom](/windows/desktop/api/ntsecapi/nf-ntsecapi-rtlgenrandom) API, yalnızca Windows XP'de kullanılabilir ve desteklenir.
+**rand_s** , yalnızca Windows XP ve üzeri sürümlerde bulunan [Rtlgenrandom](/windows/win32/api/ntsecapi/nf-ntsecapi-rtlgenrandom) API 'sine bağlıdır.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**rand_s**|\<stdlib.h >|
+|**rand_s**|\<Stdlib. h >|
 
-Daha fazla bilgi için [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla bilgi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

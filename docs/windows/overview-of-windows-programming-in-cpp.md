@@ -2,12 +2,12 @@
 title: C++'da Windows Programlamasına Genel Bakış
 ms.date: 07/28/2019
 ms.assetid: efc691d7-21f3-47ae-ae56-cab999ccf59d
-ms.openlocfilehash: f72e6320493027728a85741ba6d87025454c3b9e
-ms.sourcegitcommit: 720b74dddb1cdf4e570d55103158304ee1df81f8
+ms.openlocfilehash: 10ef9698e27099d5856c1ed5f8ed2f21cea72c24
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68607521"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69514799"
 ---
 # <a name="overview-of-windows-programming-in-c"></a>C++'da Windows Programlamasına Genel Bakış
 
@@ -21,9 +21,9 @@ C++Konsol uygulamaları konsol penceresinde komut satırından çalışır ve ya
 
 ## <a name="native-desktop-client-applications"></a>Yerel Masaüstü istemci uygulamaları
 
-*Yerel Masaüstü istemci uygulaması* , işletim sistemine erişmek için C++ özgün yerel [Windows C API 'lerini veya bileşen nesne modeli (com) API 'lerini](/windows/desktop/apiindex/windows-api-list) kullanan bir C veya pencereli uygulamadır. Bu API 'Ler çoğunlukla C içinde yazılır. Yerel masaüstü uygulaması oluşturmanın birden çok yolu vardır: İşletim sistemi olaylarını işleyen C stili bir ileti döngüsü kullanarak doğrudan Win32 API 'Leri kullanarak program yapabilirsiniz. Ya da, Win32 sarmalayan  hafif bir nesne yönelimli C++ kitaplık olan Microsoft Foundation sınıfları (MFC) kullanarak program yapabilirsiniz. Hiçbir yaklaşım, Evrensel Windows Platformu (UWP) ile karşılaştırıldığında "modern" olarak kabul edilir, ancak her ikisi de tamamen desteklenmektedir ve dünyanın dört bir kısmında çalışan milyonlarca kod satırı vardır. Bir pencerede çalışan bir Win32 uygulaması, geliştiricinin bir Windows yordamı işlevi içinde Windows iletileriyle açık bir şekilde çalışmasını gerektirir. Ada karşın, bir Win32 uygulaması 32 bitlik (x86) veya 64 bit (x64) ikili olarak derlenebilir. Visual Studio IDE 'de, x86 ve Win32 terimleri eşanlamlı olarak anlamlıdır.
+*Yerel Masaüstü istemci uygulaması* , işletim sistemine erişmek için C++ özgün yerel [Windows C API 'lerini veya bileşen nesne modeli (com) API 'lerini](/windows/win32/apiindex/windows-api-list) kullanan bir C veya pencereli uygulamadır. Bu API 'Ler çoğunlukla C içinde yazılır. Yerel masaüstü uygulaması oluşturmanın birden çok yolu vardır: İşletim sistemi olaylarını işleyen C stili bir ileti döngüsü kullanarak doğrudan Win32 API 'Leri kullanarak program yapabilirsiniz. Ya da, Win32 sarmalayan hafif bir nesne yönelimli C++ kitaplık olan Microsoft Foundation sınıfları (MFC) kullanarak program yapabilirsiniz. Hiçbir yaklaşım, Evrensel Windows Platformu (UWP) ile karşılaştırıldığında "modern" olarak kabul edilir, ancak her ikisi de tamamen desteklenmektedir ve dünyanın dört bir kısmında çalışan milyonlarca kod satırı vardır. Bir pencerede çalışan bir Win32 uygulaması, geliştiricinin bir Windows yordamı işlevi içinde Windows iletileriyle açık bir şekilde çalışmasını gerektirir. Ada karşın, bir Win32 uygulaması 32 bitlik (x86) veya 64 bit (x64) ikili olarak derlenebilir. Visual Studio IDE 'de, x86 ve Win32 terimleri eşanlamlı olarak anlamlıdır.
 
-Geleneksel Windows C++ programlama ile çalışmaya başlamak için bkz. [Win32 ve C++ile çalışmaya ](/windows/desktop/LearnWin32/learn-to-program-for-windows)başlama. Win32 hakkında biraz bilgi sahibi olduktan sonra [MFC masaüstü uygulamaları](../mfc/mfc-desktop-applications.md)hakkında daha fazla bilgi edinmek daha kolay olacaktır. Gelişmiş grafikler kullanan geleneksel C++ masaüstü uygulamasına bir örnek için bkz [. Tepo: C++ Windows](https://msdn.microsoft.com/library/windows/desktop/ff708696.aspx)için uygulamalar geliştirme.
+Geleneksel Windows C++ programlama ile çalışmaya başlamak için bkz. [Win32 ve C++ile çalışmaya ](/windows/win32/LearnWin32/learn-to-program-for-windows)başlama. Win32 hakkında biraz bilgi sahibi olduktan sonra [MFC masaüstü uygulamaları](../mfc/mfc-desktop-applications.md)hakkında daha fazla bilgi edinmek daha kolay olacaktır. Gelişmiş grafikler kullanan geleneksel C++ masaüstü uygulamasına bir örnek için bkz [. Tepo: C++ Windows](https://msdn.microsoft.com/library/windows/desktop/ff708696.aspx)için uygulamalar geliştirme.
 
 ### <a name="c-or-net"></a>C++veya .NET?
 
@@ -39,7 +39,7 @@ Genel olarak, sürümünde C# .NET programlama daha az karmaşıktır, daha az h
 
 ## <a name="com-components"></a>COM bileşenleri
 
-[Bileşen nesne modeli (com)](/windows/desktop/com/the-component-object-model) , farklı dillerde yazılmış programların birbirleriyle iletişim kurmasına olanak tanıyan bir belirtimdir. Birçok Windows bileşeni COM nesneleri olarak uygulanır ve nesne oluşturma, arabirim bulma ve nesne yok etme için standart COM kurallarını izler.  C++ Masaüstü uygulamalarından com nesnelerinin kullanılması nispeten basittir, ancak kendi com nesneniz yazmak daha gelişmiş bir işlemdir. [Etkin Şablon kitaplığı (ATL)](../atl/atl-com-desktop-components.md) , com geliştirmeyi kolaylaştıran makrolar ve yardımcı işlevler sağlar. Daha fazla bilgi için bkz. [atl com Masaüstü bileşenleri](../atl/atl-com-desktop-components.md).
+[Bileşen nesne modeli (com)](/windows/win32/com/the-component-object-model) , farklı dillerde yazılmış programların birbirleriyle iletişim kurmasına olanak tanıyan bir belirtimdir. Birçok Windows bileşeni COM nesneleri olarak uygulanır ve nesne oluşturma, arabirim bulma ve nesne yok etme için standart COM kurallarını izler.  C++ Masaüstü uygulamalarından com nesnelerinin kullanılması nispeten basittir, ancak kendi com nesneniz yazmak daha gelişmiş bir işlemdir. [Etkin Şablon kitaplığı (ATL)](../atl/atl-com-desktop-components.md) , com geliştirmeyi kolaylaştıran makrolar ve yardımcı işlevler sağlar. Daha fazla bilgi için bkz. [atl com Masaüstü bileşenleri](../atl/atl-com-desktop-components.md).
 
 ## <a name="universal-windows-platform-apps"></a>Evrensel Windows platformu uygulamaları
 
@@ -55,7 +55,7 @@ Visual Studio 2017 sürüm 15,4 ve üzeri, mevcut masaüstü uygulamanızı pake
 
 ## <a name="games"></a>Oynayabilir
 
-DirectX oyunları PC veya Xbox üzerinde çalışabilir. Daha fazla bilgi için bkz. [DirectX grafik ve oyun](/windows/desktop/directx).
+DirectX oyunları PC veya Xbox üzerinde çalışabilir. Daha fazla bilgi için bkz. [DirectX grafik ve oyun](/windows/win32/directx).
 
 ## <a name="sql-server-database-clients"></a>SQL Server veritabanı istemcileri
 
@@ -67,7 +67,7 @@ Sürücüler, donanım aygıtlarından uygulamalar ve diğer işletim sistemi bi
 
 ## <a name="windows-services"></a>Windows hizmetleri
 
-Windows *hizmeti* , çok az kullanıcı etkileşimi ile arka planda çalışabilecek bir programdır. Bu programlara UNIX sistemlerinde *Daemon 'ları* adı verilir. Daha fazla bilgi için bkz. [Hizmetler](/windows/desktop/services/services).
+Windows *hizmeti* , çok az kullanıcı etkileşimi ile arka planda çalışabilecek bir programdır. Bu programlara UNIX sistemlerinde *Daemon 'ları* adı verilir. Daha fazla bilgi için bkz. [Hizmetler](/windows/win32/services/services).
 
 ## <a name="sdks-libraries-and-header-files"></a>SDK 'lar, kitaplıklar ve üst bilgi dosyaları
 

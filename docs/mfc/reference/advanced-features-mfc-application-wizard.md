@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - MFC Application Wizard, advanced features
 ms.assetid: 8a6681c5-6576-4b12-841a-6862beee76fa
-ms.openlocfilehash: 44d85e7614f6a82af2e58f03a6d65d5d7740ab9b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: dc2b745bf97dff65a3612c29745c9d0e455a347d
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62338434"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69507802"
 ---
 # <a name="advanced-features-mfc-application-wizard"></a>Gelişmiş Özellikler, MFC Uygulama Sihirbazı
 
@@ -19,13 +19,13 @@ Bu başlıkta; uygulamanıza yönelik, Yardım, yazdırma desteği vb. gibi ek �
 
 - **Bağlama duyarlı Yardım (HTML)**
 
-   Bağlama duyarlı Yardım için F1 ve Yardım menüsünü kullanarak veya tıklayarak kullanılabilir Yardım dosyaları kümesi üretir bir **yardımcı** bir iletişim kutusu düğmesine. Yardım desteği yardım derleyicisi gerektirir. Yardım derleyicisini yüklemediyseniz, Kur'u yeniden çalıştırarak yükleyebilirsiniz.
+   Bağlam duyarlı yardım için F1 ve yardım menüsü kullanılarak veya iletişim kutusunda bir **Yardım** düğmesine tıklayarak kullanabileceğiniz bir dizi yardım dosyası oluşturur. Yardım desteği yardım derleyicisi gerektirir. Yardım derleyicisini yüklemediyseniz, Kur'u yeniden çalıştırarak yükleyebilirsiniz.
 
-   Bkz: [HTML Yardımı: Programlarınızı için bağlama duyarlı Yardım](../../mfc/html-help-context-sensitive-help-for-your-programs.md) ve [Yardım dosyaları (HTML Yardım)](../../build/reference/help-files-html-help.md) daha fazla bilgi için.
+   Bkz [. HTML Yardımı: Daha fazla bilgi için programlarınız](../../mfc/html-help-context-sensitive-help-for-your-programs.md) ve yardım dosyalarınız için bağlama duyarlı Yardım [(HTML Yardımı)](../../build/reference/help-files-html-help.md) .
 
-- **Yazdırmayı ve Baskı Önizleme**
+- **Yazdırma ve baskı önizleme**
 
-   Üye işlevlerini çağırarak Yazdırma Kurulumu ve yazdırma önizleme komutlarını, yazdırma işlemek için kod oluşturur [CView sınıfı](../../mfc/reference/cview-class.md) MFC Kitaplığı'ndan. Ayrıca, sihirbaz, bu işlevlerin komutlarını uygulamanın menüsüne ekler. Yazdırma desteği yalnızca belirttiğiniz uygulamalar için kullanılabilir **belge/görünüm mimarisi desteği** içinde [Application Type, MFC Uygulama Sihirbazı](../../mfc/reference/application-type-mfc-application-wizard.md) Sihirbazı sayfası. Varsayılan olarak, belge/görünüm uygulamaları yazdırma desteğine sahiptir.
+   MFC kitaplığından [CView sınıfındaki](../../mfc/reference/cview-class.md) üye işlevlerini çağırarak yazdırma, yazdırma Kurulumu ve baskı önizleme komutlarını işleyecek kodu üretir. Ayrıca, sihirbaz, bu işlevlerin komutlarını uygulamanın menüsüne ekler. Yazdırma desteği yalnızca sihirbazın [uygulama türü, MFC Uygulama Sihirbazı](../../mfc/reference/application-type-mfc-application-wizard.md) sayfasında **belge/görünüm mimarisi desteğini** belirten uygulamalar için kullanılabilir. Varsayılan olarak, belge/görünüm uygulamaları yazdırma desteğine sahiptir.
 
 - **Otomatikleştirme**
 
@@ -33,9 +33,9 @@ Bu başlıkta; uygulamanıza yönelik, Yardım, yazdırma desteği vb. gibi ek �
 
 - **ActiveX denetimleri**
 
-   ActiveX denetimlerini (varsayılan) destekler. Bu seçeneği etmez ve daha sonra ActiveX denetimlerini projenize eklemek istiyorsanız, bir çağrı ekleyin [AfxEnableControlContainer](ole-initialization.md#afxenablecontrolcontainer) uygulamanızın [CWinApp::InitInstance](../../mfc/reference/cwinapp-class.md#initinstance) üyesi işlev.
+   ActiveX denetimlerini (varsayılan) destekler. Bu seçeneği seçmezseniz ve daha sonra projenize ActiveX denetimleri eklemek istiyorsanız, uygulamanızın [CWinApp:: InitInstance](../../mfc/reference/cwinapp-class.md#initinstance) üye Işlevindeki [AfxEnableControlContainer](ole-initialization.md#afxenablecontrolcontainer) öğesine bir çağrı eklemeniz gerekir.
 
-- **MAPI (Messaging API)**
+- **MAPI (mesajlaşma API 'SI)**
 
    Uygulamanın e-posta iletilerini oluşturabileceğini, kullanabileceğini, aktarabileceğini ve depolayabileceğini belirtir.
 
@@ -45,7 +45,7 @@ Bu başlıkta; uygulamanıza yönelik, Yardım, yazdırma desteği vb. gibi ek �
 
 - **Etkin Erişilebilirlik**
 
-   İçin destek ekler [IAccessible](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) için [CWnd](../../mfc/reference/cwnd-class.md)-türetilmiş sınıflar, daha iyi Etkin Erişilebilirlik istemcileri için kullanıcı arabirimini özelleştirmek için kullanabilirsiniz.
+   , Erişilebilirlik istemcileriyle daha iyi etkileşim sağlamak üzere Kullanıcı arabirimini özelleştirmek için kullanabileceğiniz [CWnd](../../mfc/reference/cwnd-class.md)ile türetilmiş sınıflar Için [ıerişilebilen](/windows/win32/api/oleacc/nn-oleacc-iaccessible) destek ekler.
 
 - **Ortak denetim bildirimi**
 
@@ -53,23 +53,23 @@ Bu başlıkta; uygulamanıza yönelik, Yardım, yazdırma desteği vb. gibi ek �
 
    Ortak Denetim DLL 6 sürümü, varolan uygulamalarınızın kullandığı Ortak Denetimlerin önceki sürümünü otomatik olarak güncelleştirmez. Ortak Denetim DLL 6 sürümünü kullanmak için, uygulamanızı DLL'yi yüklemeye yönlendiren bir uygulama bildirimi oluşturmanız gerekir. Bu Ortak Denetim DLL Windows XP temalarını da destekler.
 
-   Bir uygulama bildirimi, diğer DLL'leri ve uygulamanızın ihtiyaç duyduğu sürümleri de belirtebilir. Uygulama bildirimleri hakkında daha fazla bilgi için bkz: [yalıtılmış uygulamalar ve yan yana derlemeler](/windows/desktop/SbsCs/isolated-applications-and-side-by-side-assemblies-portal) Windows SDK.
+   Bir uygulama bildirimi, diğer DLL'leri ve uygulamanızın ihtiyaç duyduğu sürümleri de belirtebilir. Uygulama bildirimleri hakkında daha fazla bilgi için, bkz. Windows SDK [Yalıtılmış uygulamalar ve yan yana derlemeler](/windows/win32/SbsCs/isolated-applications-and-side-by-side-assemblies-portal) .
 
-- **Yeniden başlatma Yöneticisi desteği**
+- **Yeniden başlatma yöneticisini destekle**
 
-   İçin destek ekler [Windows yeniden başlatma Yöneticisi](/windows/desktop/RstMgr/using-restart-manager). Bu videoda, MFC'den yeniden başlatma Yöneticisi kullanma işlemini gösterir: [Nasıl Yaparım Yeni yeniden başlatma Yöneticisi'ni](/previous-versions/visualstudio/visual-studio-2010/dd831853(v%3dvs.100)).
+   [Windows yeniden başlatma Yöneticisi](/windows/win32/RstMgr/using-restart-manager)için destek ekler. Bu videoda, MFC 'den yeniden başlatma Yöneticisi 'nin nasıl kullanılacağı gösterilmektedir: [Nasıl yapılır: Yeni yeniden başlatma Yöneticisini](/previous-versions/visualstudio/visual-studio-2010/dd831853(v%3dvs.100))kullanın.
 
 - **Gelişmiş çerçeve bölmeleri**
 
    |Seçenek|Açıklama|
    |------------|-----------------|
-   |**Gezgin yerleştirme bölmesi**|Visual Studio benzeri bir yerleştirme bölmesi oluşturur **Çözüm Gezgini** ana çerçeve penceresinin sol.|
-   |**Çıktı yerleştirme çerçevesi**|Visual Studio benzeri bir yerleştirme bölmesi oluşturur **çıkış** ana çerçeve penceresinin bölmesi.|
-   |**Özellikler yerleştirme bölmesi**|Visual Studio benzeri bir yerleştirme bölmesi oluşturur **özellikleri** ana çerçeve penceresinin sağ bölmesindeki.|
+   |**Gezgin yerleştirme bölmesi**|Ana çerçeve penceresinin solundaki Visual Studio **Çözüm Gezgini** benzer bir yerleştirme bölmesi oluşturur.|
+   |**Çıkış yerleştirme çerçevesi**|Ana çerçeve penceresi altında bulunan Visual Studio **çıktı** bölmesine benzer bir yerleştirme bölmesi oluşturur.|
+   |**Özellikler yerleştirme bölmesi**|Ana çerçeve penceresinin sağında yer alan Visual Studio **Özellikler** bölmesine benzer bir yerleştirme bölmesi oluşturur.|
    |**Gezinti Bölmesi**|Outlook gezinti çubuğuna benzer ve ana çerçeve penceresinin sol tarafında bulunan bir yerleştirme bölmesi oluşturur.|
    |**Başlık çubuğu**|Ana çerçeve penceresinin üzerinde, Office stili bir başlık çubuğu oluşturur.|
 
-- **Son kullanılan dosya listesindeki dosya sayısı**
+- **Son kullanılan dosya listesindeki dosyaların sayısı**
 
    En son kullanılan listesinde listelenen dosyaların sayısını belirtir. Varsayılan sayı 4'tür.
 

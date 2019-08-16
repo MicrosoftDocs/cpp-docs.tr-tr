@@ -1,21 +1,21 @@
 ---
-title: noncreatable (C++ COM özniteliği)
+title: noncreatable (C++ com özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.noncreatable
 helpviewer_keywords:
 - noncreatable attribute
 ms.assetid: 4d17937b-0bff-41af-ba57-53e18b7ab5a9
-ms.openlocfilehash: a10d93650c0ae564019a09b34c3a604d12327998
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e855497cb6f619ecdaa6aedf16a04f045a60faa7
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62305326"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69514569"
 ---
 # <a name="noncreatable"></a>noncreatable
 
-Tek başına oluşturulamaz bir nesneyi tanımlar.
+Kendisi tarafından örneklenemez bir nesne tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -25,9 +25,9 @@ Tek başına oluşturulamaz bir nesneyi tanımlar.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Noncreatable** C++ özniteliği ile aynı işlevlere sahip [noncreatable](/windows/desktop/Midl/noncreatable) MIDL özniteliği ve otomatik olarak aracılığıyla oluşturulan geçirilir. IDL dosyası derleyici tarafından.
+**Creatable** C++ olmayan öznitelik, [creatable](/windows/win32/Midl/noncreatable) MIDL özniteliğiyle aynı işlevselliğe sahiptir ve otomatik olarak oluşturulan ' a geçirilir. Derleyiciye göre IDL dosyası.
 
-Bu öznitelik ATL kullanan bir proje içinde kullanıldığında, öznitelik davranışını değiştirir. Yukarıdaki davranışa ek olarak, öznitelik de eklediği [OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO](../../atl/reference/object-map-macros.md#object_entry_non_createable_ex_auto) makrosu. Bu makro, nesne harici olarak oluşturulamıyor ATL için gösterir.
+Bu öznitelik, ATL kullanan bir proje içinde kullanıldığında, öznitelik davranışı değişir. Yukarıdaki davranışa ek olarak, öznitelik [object_entry_non_createable_ex_auto](../../atl/reference/object-map-macros.md#object_entry_non_createable_ex_auto) makrosunu de çıkartır. Bu makro, ATL 'nin nesnenin dışarıdan oluşturuamayacağını gösterir.
 
 ## <a name="example"></a>Örnek
 
@@ -55,12 +55,12 @@ class CMyClass : public A
 
 |||
 |-|-|
-|**İçin geçerlidir**|**sınıf**, **yapısı**|
+|**Uygulama hedefi**|**sınıf**, **Yapı**|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|**coclass**|
+|**Gerekli öznitelikler**|**coclass**|
 |**Geçersiz öznitelikler**|Yok.|
 
-Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
+Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

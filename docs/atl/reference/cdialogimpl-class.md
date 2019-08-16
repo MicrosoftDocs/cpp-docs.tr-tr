@@ -1,5 +1,5 @@
 ---
-title: Cdialogımpl sınıfı
+title: CDialogImpl sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CDialogImpl
@@ -17,19 +17,19 @@ helpviewer_keywords:
 - dialog boxes, ATL
 - CDialogImpl class
 ms.assetid: d430bc7b-8a28-4ad3-9507-277bdd2c2c2e
-ms.openlocfilehash: 1124630d8ee15dd284893516bef8057f852b4632
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bc39a5deeb270b0426a4b199fc9ba01917c292bc
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62245761"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69496808"
 ---
-# <a name="cdialogimpl-class"></a>Cdialogımpl sınıfı
+# <a name="cdialogimpl-class"></a>CDialogImpl sınıfı
 
-Bu sınıf, kalıcı veya geçici bir iletişim kutusu oluşturmak için yöntemleri sağlar.
+Bu sınıf, kalıcı veya kalıcı olmayan iletişim kutusu oluşturmak için yöntemler sağlar.
 
 > [!IMPORTANT]
->  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.
+>  Bu sınıf ve üyeleri Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -41,11 +41,11 @@ template <class T,
 
 #### <a name="parameters"></a>Parametreler
 
-*T*<br/>
-Sınıfınız, türetilen `CDialogImpl`.
+*ŞI*<br/>
+Sınıfınız, öğesinden `CDialogImpl`türetilir.
 
-*Ttemel*<br/>
-Yeni sınıfın temel sınıf. Varsayılan temel sınıf [CWindow](../../atl/reference/cwindow-class.md).
+*TBase*<br/>
+Yeni sınıfınızın temel sınıfı. Varsayılan temel sınıf [CWindow](../../atl/reference/cwindow-class.md)' dır.
 
 ## <a name="members"></a>Üyeler
 
@@ -53,55 +53,55 @@ Yeni sınıfın temel sınıf. Varsayılan temel sınıf [CWindow](../../atl/ref
 
 |||
 |-|-|
-|[Oluşturma](#create)|Modsuz iletişim kutusu oluşturur.|
+|[Oluşturma](#create)|Kalıcı olmayan iletişim kutusu oluşturur.|
 |[DestroyWindow](#destroywindow)|Kalıcı olmayan iletişim kutusunu yok eder.|
 |[DoModal](#domodal)|Kalıcı bir iletişim kutusu oluşturur.|
-|[EndDialog](#enddialog)|Kalıcı bir iletişim kutusu yok eder.|
+|[EndDialog](#enddialog)|Kalıcı iletişim kutusunu yok eder.|
 
 ### <a name="cdialogimplbaset-methods"></a>CDialogImplBaseT yöntemleri
 
 |||
 |-|-|
 |[GetDialogProc](#getdialogproc)|Geçerli iletişim kutusu yordamını döndürür.|
-|[MapDialogRect](#mapdialogrect)|Belirtilen dikdörtgenin iletişim kutusu birimleri (piksel) ekran birimine eşler.|
-|[OnFinalMessage](#onfinalmessage)|Genellikle WM_NCDESTROY son iletiyi aldıktan sonra çağrılır.|
+|[MapDialogRect](#mapdialogrect)|Belirtilen dikdörtgenin iletişim kutusu birimlerini ekran birimlerine (piksel) eşler.|
+|[OnFinalMessage](#onfinalmessage)|Son iletiyi aldıktan sonra çağırılır, genellikle WM_NCDESTROY.|
 
 ### <a name="static-functions"></a>Statik işlevler
 
 |||
 |-|-|
 |[DialogProc](#dialogproc)|İletişim kutusuna gönderilen iletileri işler.|
-|[StartDialogProc](#startdialogproc)|İletişim kutusuna gönderilen iletileri işlemek için ilk ileti alındığında çağrılır.|
+|[StartDialogProc](#startdialogproc)|İletişim kutusuna gönderilen iletileri işlemek için ilk ileti alındığında çağırılır.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-İle `CDialogImpl` kalıcı veya geçici bir iletişim kutusu oluşturabilirsiniz. `CDialogImpl` uygun işleyicileri iletilerini yönlendirmek için varsayılan ileti eşlemesi kullanan iletişim kutusu yordam sağlar.
+İle `CDialogImpl` , kalıcı veya kalıcı olmayan bir iletişim kutusu oluşturabilirsiniz. `CDialogImpl`iletileri uygun işleyicilere yönlendirmek için varsayılan ileti eşlemesini kullanan iletişim kutusu yordamını sağlar.
 
-Temel sınıf yok edicisini `~CWindowImplRoot` pencere nesnesi yok etme öncesinde gittiğini sağlar.
+Taban sınıf yok edicisi `~CWindowImplRoot` , bir nesneyi yok etmeden önce pencerenin kaybolmasını sağlar.
 
-`CDialogImpl` öğesinden türetilen `CDialogImplBaseT`, hangi sırayla türetilir `CWindowImplRoot`.
+`CDialogImpl`öğesinden türetilir `CWindowImplRoot`ve ' den türetilir. `CDialogImplBaseT`
 
 > [!NOTE]
->  Sınıfınıza tanımlamalıdır bir `IDD` iletişim şablonu kaynak kimliğini belirtir. üye Örneğin, ATL Proje Sihirbazı otomatik olarak sınıfınıza aşağıdaki satırı ekler:
+>  Sınıfınız, iletişim kutusu şablonu `IDD` kaynak kimliğini belirten bir üye tanımlamalıdır. Örneğin, ATL Proje Sihirbazı, sınıfınıza aşağıdaki satırı otomatik olarak ekler:
 
 [!code-cpp[NVC_ATL_Windowing#41](../../atl/codesnippet/cpp/cdialogimpl-class_1.h)]
 
-Burada `MyDlg` olduğu **kısa ad** Sihirbazı'nda kişinin girilen **adları** sayfası.
+Burada `MyDlg` sihirbazın **adlar** sayfasına girilen **kısa addır** .
 
-|Daha fazla bilgi|Bkz. |
+|Daha fazla bilgi|Bkz.|
 |--------------------------------|---------|
-|Denetimler oluşturma|[ATL öğretici](../../atl/active-template-library-atl-tutorial.md)|
-|ATL iletişim kutuları kullanma|[ATL Pencere Sınıfları](../../atl/atl-window-classes.md)|
-|ATL projesi Sihirbazı|[ATL Projesi Oluşturma](../../atl/reference/creating-an-atl-project.md)|
-|İletişim kutuları|[İletişim kutuları](/windows/desktop/dlgbox/dialog-boxes) ve sonraki konularda Windows SDK'sı|
+|Denetimler oluşturma|[ATL öğreticisi](../../atl/active-template-library-atl-tutorial.md)|
+|ATL 'de iletişim kutularını kullanma|[ATL Pencere Sınıfları](../../atl/atl-window-classes.md)|
+|ATL Proje Sihirbazı|[ATL Projesi Oluşturma](../../atl/reference/creating-an-atl-project.md)|
+|İletişim kutuları|Windows SDK [Iletişim kutuları](/windows/win32/dlgbox/dialog-boxes) ve sonraki konular|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlwin.h
+**Üstbilgi:** atlwin. h
 
-##  <a name="create"></a>  CDialogImpl::Create
+##  <a name="create"></a>CDialogImpl:: Create
 
-Modsuz iletişim kutusu oluşturur.
+Kalıcı olmayan iletişim kutusu oluşturur.
 
 ```
 HWND Create(
@@ -117,22 +117,22 @@ HWND Create(
 ### <a name="parameters"></a>Parametreler
 
 *hWndParent*<br/>
-[in] İşleci sahip penceresine.
+'ndaki Sahip penceresi için tanıtıcı.
 
-**RECT &** *rect* [in] A [RECT](/previous-versions/dd162897\(v=vs.85\)) Yapısı iletişim kutusunun boyutunu ve konumunu belirtme.
+**RECT &** *Rect* 'ndaki İletişim kutusunun boyutunu ve konumunu belirten bir [Rect](/previous-versions/dd162897\(v=vs.85\)) yapısı.
 
 *dwInitParam*<br/>
-[in] İletişim kutusundaki geçirmek için bir değer belirtir *lParam* WM_INITDIALOG iletisinin parametresi.
+'ndaki WM_INITDIALOG iletisinin *lParam* parametresindeki iletişim kutusuna geçirilecek değeri belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yeni oluşturulan bir iletişim kutusu için tanıtıcı.
+Yeni oluşturulan iletişim kutusunun tanıtıcısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu iletişim kutusu otomatik olarak bağlı `CDialogImpl` nesne. Kalıcı bir iletişim kutusu oluşturmak için arama [DoModal](#domodal). Yalnızca Yukarıdaki ikinci geçersiz kılma kullanılan [CComControl](../../atl/reference/ccomcontrol-class.md).
+Bu iletişim kutusu `CDialogImpl` nesneye otomatik olarak eklenir. Kalıcı bir iletişim kutusu oluşturmak için [DoModal](#domodal)' ı çağırın. Yukarıdaki ikinci geçersiz kılma yalnızca [CComControl](../../atl/reference/ccomcontrol-class.md)ile kullanılır.
 
-##  <a name="destroywindow"></a>  CDialogImpl::DestroyWindow
+##  <a name="destroywindow"></a>CDialogImpl::D estroyWindow
 
 Kalıcı olmayan iletişim kutusunu yok eder.
 
@@ -142,13 +142,13 @@ BOOL DestroyWindow();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İletişim kutusu başarıyla silindi TRUE; Aksi durumda FALSE.
+İletişim kutusu başarıyla iptal edildiğinde doğru; Aksi halde yanlış.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İletişim kutusunu yok edildi başarıyla TRUE döndürür; Aksi durumda FALSE.
+İletişim kutusu başarıyla iptal edildiğinde doğru döndürür; Aksi halde yanlış.
 
-##  <a name="dialogproc"></a>  CDialogImpl::DialogProc
+##  <a name="dialogproc"></a>CDialogImpl::D ıalogproc
 
 Bu statik işlev iletişim kutusu yordamını uygular.
 
@@ -162,29 +162,29 @@ static LRESULT CALLBACK DialogProc(
 
 ### <a name="parameters"></a>Parametreler
 
-*hWnd*<br/>
-[in] İletişim kutusu için tanıtıcı.
+*lendiği*<br/>
+'ndaki İletişim kutusunun tutamacı.
 
 *uMsg*<br/>
-[in] İletişim kutusuna gönderilen ileti.
+'ndaki İletişim kutusuna gönderilen ileti.
 
 *wParam*<br/>
-[in] İletiye özgü ek bilgiler.
+'ndaki İletiye özgü ek bilgiler.
 
 *lParam*<br/>
-[in] İletiye özgü ek bilgiler.
+'ndaki İletiye özgü ek bilgiler.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İleti işleme TRUE; Aksi takdirde FALSE.
+İleti işlendiyse doğru; Aksi takdirde, FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`DialogProc` uygun işleyicileri iletilerini yönlendirmek için varsayılan ileti eşlemesi kullanır.
+`DialogProc`, iletileri uygun işleyicilere yönlendirmek için varsayılan ileti eşlemesini kullanır.
 
-Geçersiz kılabilirsiniz `DialogProc` iletileri işlemek için farklı bir mekanizma sağlamak için.
+İletileri işlemeye yönelik `DialogProc` farklı bir mekanizma sağlamak için geçersiz kılabilirsiniz.
 
-##  <a name="domodal"></a>  CDialogImpl::DoModal
+##  <a name="domodal"></a>CDialogImpl::D oModal
 
 Kalıcı bir iletişim kutusu oluşturur.
 
@@ -197,24 +197,24 @@ INT_PTR DoModal(
 ### <a name="parameters"></a>Parametreler
 
 *hWndParent*<br/>
-[in] İşleci sahip penceresine. Varsayılan değer dönüş değeri [GetActiveWindow](/windows/desktop/api/winuser/nf-winuser-getactivewindow) Win32 işlevi.
+'ndaki Sahip penceresi için tanıtıcı. Varsayılan değer, [GetActiveWindow](/windows/win32/api/winuser/nf-winuser-getactivewindow) Win32 işlevinin dönüş değeridir.
 
 *dwInitParam*<br/>
-[in] İletişim kutusundaki geçirmek için bir değer belirtir *lParam* WM_INITDIALOG iletisinin parametresi.
+'ndaki WM_INITDIALOG iletisinin *lParam* parametresindeki iletişim kutusuna geçirilecek değeri belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, değerini *nRetCode* yapılan çağrıda belirtilen parametre [EndDialog](#enddialog). Aksi durumda, -1.
+Başarılı olursa, [EndDialog](#enddialog)çağrısında belirtilen *nekcode* parametresinin değeri. Aksi takdirde,-1.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu iletişim kutusu otomatik olarak bağlı `CDialogImpl` nesne.
+Bu iletişim kutusu `CDialogImpl` nesneye otomatik olarak eklenir.
 
-Modsuz iletişim kutusu oluşturmak için arama [Oluştur](#create).
+Kalıcı olmayan bir iletişim kutusu oluşturmak için [Oluştur](#create)' u çağırın.
 
-##  <a name="enddialog"></a>  CDialogImpl::EndDialog
+##  <a name="enddialog"></a>CDialogImpl:: EndDialog
 
-Kalıcı bir iletişim kutusu yok eder.
+Kalıcı iletişim kutusunu yok eder.
 
 ```
 BOOL EndDialog(int nRetCode);
@@ -222,23 +222,23 @@ BOOL EndDialog(int nRetCode);
 
 ### <a name="parameters"></a>Parametreler
 
-*nRetCode*<br/>
-[in] Tarafından döndürülen değer [CDialogImpl::DoModal](#domodal).
+*Nekcode*<br/>
+'ndaki [Cdialogimpl::D oModal](#domodal)tarafından döndürülecek değer.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İletişim kutusunu yok TRUE; Aksi takdirde FALSE.
+İletişim kutusu yok edildiğinde doğru; Aksi takdirde, FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`EndDialog` iletişim yordam boyunca çağrılmalıdır. İletişim kutusunu yok sonra Windows değerini kullanır. *nRetCode* dönüş değeri olarak `DoModal`, iletişim kutusu oluşturulur.
+`EndDialog`iletişim kutusu yordamı aracılığıyla çağrılmalıdır. İletişim kutusu yok edildikten sonra, Windows, iletişim kutusunu oluşturan için `DoModal`dönüş değeri olarak *nekcode* değerini kullanır.
 
 > [!NOTE]
->  Çağırmayın `EndDialog` modsuz iletişim kutusu yok edilemiyor. Çağrı [CWindow::DestroyWindow](../../atl/reference/cwindow-class.md#destroywindow) yerine.
+>  Kalıcı olmayan iletişim `EndDialog` kutusunu yok etme çağrısı yapın. Bunu çağırın: bunun yerine [estroyWindow:D](../../atl/reference/cwindow-class.md#destroywindow) .
 
-##  <a name="getdialogproc"></a>  CDialogImpl::GetDialogProc
+##  <a name="getdialogproc"></a>CDialogImpl:: GetDialogProc
 
-Döndürür `DialogProc`, geçerli iletişim kutusu yordamını.
+Geçerli `DialogProc`iletişim kutusu yordamını döndürür.
 
 ```
 virtual WNDPROC GetDialogProc();
@@ -246,15 +246,15 @@ virtual WNDPROC GetDialogProc();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli iletişim kutusunu yordam.
+Geçerli iletişim kutusu yordamı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İletişim kutusu yordamını sizinkiyle değiştirmek için bu yöntemi yok sayın.
+İletişim kutusu yordamını kendi kendinize değiştirmek için bu yöntemi geçersiz kılın.
 
-##  <a name="mapdialogrect"></a>  CDialogImpl::MapDialogRect
+##  <a name="mapdialogrect"></a>CDialogImpl:: MapDialogRect
 
-(Maps) belirtilen dikdörtgen ekran için iletişim kutusu ölçü birimleri (piksel) dönüştürür.
+Belirtilen dikdörtgenin iletişim kutusu birimlerini ekran birimlerine (piksel) dönüştürür (eşler).
 
 ```
 BOOL MapDialogRect(LPRECT lpRect);
@@ -263,19 +263,19 @@ BOOL MapDialogRect(LPRECT lpRect);
 ### <a name="parameters"></a>Parametreler
 
 *lpRect*<br/>
-İşaret eden bir `CRect` nesne veya [RECT](/windows/desktop/api/windef/ns-windef-tagrect) güncelleştirme bölgeyi kapsayan güncelleştirme istemci koordinatlarını almak için yapısı.
+Güncelleştirme bölgesini kapsayan `CRect` güncelleştirmenin istemci koordinatlarını alacak bir nesne veya [Rect](/windows/win32/api/windef/ns-windef-rect) yapısına işaret eder.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Güncelleştirme başarılı olursa sıfır dışı; güncelleştirme başarısız olursa 0. Genişletilmiş hata bilgilerini almak için arama `GetLastError`.
+Güncelleştirme başarılı olursa sıfır dışı; güncelleştirme başarısız olursa 0. Genişletilmiş hata bilgilerini almak için çağrısı `GetLastError`yapın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlev koordinatlarında belirtilen değiştirir `RECT` yapısı dönüştürülmüş koordinatlarıyla olanak sağlayan bir iletişim kutusu oluşturmak veya bir denetimi içinde bir iletişim kutusu konum için kullanılacak yapı.
+İşlevi, belirtilen `RECT` yapıda koordinatları, bir iletişim kutusu oluşturmak veya bir denetimi iletişim kutusu içinde konumlandırmak için kullanılmasına izin veren dönüştürülmüş koordinatlarla değiştirir.
 
-##  <a name="onfinalmessage"></a>  CDialogImpl::OnFinalMessage
+##  <a name="onfinalmessage"></a>CDialogImpl:: OnFinalMessage
 
-Son ileti alındıktan sonra çağırılır (genellikle `WM_NCDESTROY`).
+Son iletiyi aldıktan sonra çağırılır (genellikle `WM_NCDESTROY`).
 
 ```
 virtual void OnFinalMessage(HWND hWnd);
@@ -283,16 +283,16 @@ virtual void OnFinalMessage(HWND hWnd);
 
 ### <a name="parameters"></a>Parametreler
 
-*hWnd*<br/>
-[in] Yok ediliyor penceresi için bir tanıtıcı.
+*lendiği*<br/>
+'ndaki Yok edilecek pencere için bir tanıtıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Pencere yok etme sırasında nesne otomatik olarak silmek istiyorsanız, çağırabilirsiniz unutmayın **; bunu silin** burada.
+Nesneyi pencere yok etme sonrasında otomatik olarak silmek istiyorsanız, **bunu Sil** ' i çağırabilirsiniz.
 
-##  <a name="startdialogproc"></a>  CDialogImpl::StartDialogProc
+##  <a name="startdialogproc"></a>CDialogImpl:: StartDialogProc
 
-İlk ileti alındığında iletişim kutusuna gönderilen iletileri işlemek için yalnızca bir kez çağrılır.
+İlk ileti alındığında, iletişim kutusuna gönderilen iletileri işlemek için yalnızca bir kez çağırılır.
 
 ```
 static LRESULT CALLBACK StartDialogProc(
@@ -304,17 +304,17 @@ static LRESULT CALLBACK StartDialogProc(
 
 ### <a name="parameters"></a>Parametreler
 
-*hWnd*<br/>
-[in] İletişim kutusu için tanıtıcı.
+*lendiği*<br/>
+'ndaki İletişim kutusunun tutamacı.
 
 *uMsg*<br/>
-[in] İletişim kutusuna gönderilen ileti.
+'ndaki İletişim kutusuna gönderilen ileti.
 
 *wParam*<br/>
-[in] İletiye özgü ek bilgiler.
+'ndaki İletiye özgü ek bilgiler.
 
 *lParam*<br/>
-[in] İletiye özgü ek bilgiler.
+'ndaki İletiye özgü ek bilgiler.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -322,9 +322,9 @@ Pencere yordamı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk çağrısından sonra `StartDialogProc`, `DialogProc` iletişim yordamı ve ek çağrıları vardır kullandıkça ayarlanmış.
+İlk çağrısından `StartDialogProc`sonra, `DialogProc` bir iletişim kutusu yordamı olarak ayarlanır ve daha fazla çağrı buraya gider.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map)<br/>
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)
+[Sınıfa genel bakış](../../atl/atl-class-overview.md)

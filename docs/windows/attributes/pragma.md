@@ -1,21 +1,21 @@
 ---
-title: pragma (C++ COM özniteliği)
+title: pragma (C++ com özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.pragma
 helpviewer_keywords:
 - pragma attribute
 ms.assetid: 3f90d023-b8b5-4007-8311-008bb72cbea1
-ms.openlocfilehash: 159e1570c2bde07bb4df8fa904a519e8e0018a6a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5c3ee0d3f99bd27ca41d68b11c11522e92c8d40a
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62407464"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69514268"
 ---
 # <a name="pragma"></a>pragma
 
-Belirtilen dizeyi tırnak işaretleri kullanmanıza gerek kalmadan oluşturulan .idl dosyasına yayar.
+Belirtilen dizeyi, tırnak işaretlerinin kullanımı olmadan oluşturulan. IDL dosyasına yayar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -26,11 +26,11 @@ Belirtilen dizeyi tırnak işaretleri kullanmanıza gerek kalmadan oluşturulan 
 ### <a name="parameters"></a>Parametreler
 
 *pragma_statement*<br/>
-Oluşturulan .idl dosyasına gitmek istiyorsanız pragması.
+Oluşturulan. IDL dosyasına gitmek istediğiniz pragma.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Pragma** C++ özniteliği ile aynı işlevlere sahip [pragma](/windows/desktop/Midl/pragma) MIDL özniteliği.
+**Pragma** C++ özniteliği, [pragma](/windows/win32/Midl/pragma) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
 
 ## <a name="example"></a>Örnek
 
@@ -54,12 +54,12 @@ __interface A
 
 |||
 |-|-|
-|**İçin geçerlidir**|Her yerde|
+|**Uygulama hedefi**|Yerdeki|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|Yok.|
+|**Gerekli öznitelikler**|Yok.|
 |**Geçersiz öznitelikler**|Yok.|
 
-Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
+Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

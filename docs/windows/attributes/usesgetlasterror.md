@@ -1,21 +1,21 @@
 ---
-title: usesgetlasterror (C++ COM özniteliği)
+title: uısesgetlasterror (C++ com özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.usesgetlasterror
 helpviewer_keywords:
 - usesgetlasterror attribute
 ms.assetid: d149e33d-35a7-46cb-9137-ae6883d86122
-ms.openlocfilehash: 9f050bbf69edf1ab8327a283299cb5e687ce5380
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b14316bd929f4b41b13a76c41e94b31b7534e9d8
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62407074"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69513886"
 ---
 # <a name="usesgetlasterror"></a>usesgetlasterror
 
-Bu işlev çağrılırken bir hata ise sonra çağıran ardından çağırabileceğiniz çağıran söyler `GetLastError` hata kodu alınamıyor.
+Çağrıyı yapana, bu işlevi çağırırken bir hata oluşursa, çağıran daha sonra hata kodunu almak için çağırabilirler `GetLastError` .
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -25,11 +25,11 @@ Bu işlev çağrılırken bir hata ise sonra çağıran ardından çağırabilec
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Usesgetlasterror** C++ özniteliği ile aynı işlevlere sahip [usesgetlasterror](/windows/desktop/Midl/usesgetlasterror) MIDL özniteliği.
+**Uısesgetlasterror** C++ özniteliği, [uısesgetlasterror](/windows/win32/Midl/usesgetlasterror) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
 
 ## <a name="example"></a>Örnek
 
-Bkz: [idl_module](idl-module.md) nasıl kullanılacağına ilişkin bir örnek için örnek **usesgetlasterror**.
+**Uısesgetlasterror**kullanımı örneği için [idl_module](idl-module.md) örneğine bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -37,12 +37,12 @@ Bkz: [idl_module](idl-module.md) nasıl kullanılacağına ilişkin bir örnek i
 
 |||
 |-|-|
-|**İçin geçerlidir**|**Modül** özniteliği|
+|**Uygulama hedefi**|**module** özniteliği|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|Yok.|
+|**Gerekli öznitelikler**|Yok.|
 |**Geçersiz öznitelikler**|Yok.|
 
-Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
+Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

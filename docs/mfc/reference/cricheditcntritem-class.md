@@ -10,12 +10,12 @@ helpviewer_keywords:
 - CRichEditCntrItem [MFC], CRichEditCntrItem
 - CRichEditCntrItem [MFC], SyncToRichEditObject
 ms.assetid: 6c0b4efe-0fb8-4621-b5e1-fdcb8ec48c3b
-ms.openlocfilehash: b333cbbe33b42709614376cf98be01111be967a2
-ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
+ms.openlocfilehash: 8e242504c8ab0f59f6dec0602d4a5352a2d84867
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68916817"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69502722"
 ---
 # <a name="cricheditcntritem-class"></a>Cricheditcntridıtem sınıfı
 
@@ -80,7 +80,7 @@ CRichEditCntrItem(
 ### <a name="parameters"></a>Parametreler
 
 *Preo*<br/>
-Bir OLE öğesini açıklayan bir [reobject](/windows/desktop/api/richole/ns-richole-reobject) yapısına yönelik işaretçi. Yeni `CRichEditCntrItem` nesne bu ole öğesi etrafında oluşturulur. *Preo* null ise, istemci öğesi boştur.
+Bir OLE öğesini açıklayan bir [reobject](/windows/win32/api/richole/ns-richole-reobject) yapısına yönelik işaretçi. Yeni `CRichEditCntrItem` nesne bu ole öğesi etrafında oluşturulur. *Preo* null ise, istemci öğesi boştur.
 
 *pContainer*<br/>
 Bu öğeyi içerecek kapsayıcı belgesi işaretçisi. *PContainer* null ise, bu istemci öğesini bir belgeye eklemek Için [Cotadocument:: AddItem](../../mfc/reference/coledocument-class.md#additem) öğesini açıkça çağırmanız gerekir.
@@ -89,11 +89,11 @@ Bu öğeyi içerecek kapsayıcı belgesi işaretçisi. *PContainer* null ise, bu
 
 Bu işlev herhangi bir OLE başlatması gerçekleştirmez.
 
-Daha fazla bilgi için Windows SDK [reobject](/windows/desktop/api/richole/ns-richole-reobject) yapısına bakın.
+Daha fazla bilgi için Windows SDK [reobject](/windows/win32/api/richole/ns-richole-reobject) yapısına bakın.
 
 ##  <a name="synctoricheditobject"></a>Cricheditcntridıtem:: SyncToRichEditObject
 
-Bu işlevi, bunun `CRichEditCntrltem` , [DVASPECT](/windows/desktop/api/wtypes/ne-wtypes-tagdvaspect)olan cihaz yönünü, *REO*tarafından belirtilen şekilde eşitleyecek şekilde çağırın.
+Bu işlevi, bunun `CRichEditCntrltem` , [DVASPECT](/windows/win32/api/wtypes/ne-wtypes-dvaspect)olan cihaz yönünü, *REO*tarafından belirtilen şekilde eşitleyecek şekilde çağırın.
 
 ```
 void SyncToRichEditObject(REOBJECT& reo);
@@ -102,11 +102,11 @@ void SyncToRichEditObject(REOBJECT& reo);
 ### <a name="parameters"></a>Parametreler
 
 *yeniden oluştur*<br/>
-OLE öğesini açıklayan bir [reobject](/windows/desktop/api/richole/ns-richole-reobject) yapısına başvuru.
+OLE öğesini açıklayan bir [reobject](/windows/win32/api/richole/ns-richole-reobject) yapısına başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için Windows SDK bkz. [DVASPECT](/windows/desktop/api/wtypes/ne-wtypes-tagdvaspect) .
+Daha fazla bilgi için Windows SDK bkz. [DVASPECT](/windows/win32/api/wtypes/ne-wtypes-dvaspect) .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

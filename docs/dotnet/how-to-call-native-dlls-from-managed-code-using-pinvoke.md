@@ -1,5 +1,5 @@
 ---
-title: "Nasıl yapılır: Yönetilen Koddan PInvoke kullanarak yerel DLL'leri Çağırma"
+title: "Nasıl yapılır: Yönetilen koddan PInvoke kullanarak yerel dll 'Leri çağırma"
 ms.custom: get-started-article
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,24 +8,24 @@ helpviewer_keywords:
 - marshaling [C++], calling native DLLs
 - data marshaling [C++], calling native DLLs
 ms.assetid: 3273eb4b-38d1-4619-92a6-71bda542be72
-ms.openlocfilehash: e51e094cc013250fc254a09e279745f1f9c108ac
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b36496690c4d83837a6dff1752f3f0db514869eb
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62222817"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69501235"
 ---
-# <a name="how-to-call-native-dlls-from-managed-code-using-pinvoke"></a>Nasıl yapılır: Yönetilen Koddan PInvoke kullanarak yerel DLL'leri Çağırma
+# <a name="how-to-call-native-dlls-from-managed-code-using-pinvoke"></a>Nasıl yapılır: Yönetilen koddan PInvoke kullanarak yerel dll 'Leri çağırma
 
-Platform Çağırma (P/Invoke) işlevini kullanarak yönetilen koddan yönetilmeyen DLL'ler uygulanan işlevler çağrılabilir. DLL kaynak kodunu kullanılabilir durumda değilse, P/Invoke birlikte çalışma için tek seçenektir. Ancak, diğer .NET dilleri farklı olarak, Visual C++ P/Invoke bir alternatif sunar. Daha fazla bilgi için [C++ Çalışabilirliği kullanma (örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md).
+Yönetilmeyen DLL 'lerde uygulanan işlevler, platform Invoke (P/Invoke) işlevi kullanılarak yönetilen koddan çağrılabilir. DLL için kaynak kodu kullanılamıyorsa, her çalışma için P/Invoke tek seçenektir. Ancak, diğer .NET dillerinin aksine, Visual C++ P/Invoke için bir alternatif sağlar. Daha fazla bilgi için bkz [. C++ birlikte çalışabilirliği kullanma (örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md).
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği, Win32 kullanan [GetSystemMetrics](/windows/desktop/api/winuser/nf-winuser-getsystemmetrics) ekrandaki piksel cinsinden geçerli çözünürlüğünü almak için işlevi.
+Aşağıdaki kod örneği, ekranın geçerli çözünürlüğünü piksel olarak almak için Win32 [Getsystemölçümlerini](/windows/win32/api/winuser/nf-winuser-getsystemmetrics) işlevini kullanır.
 
-Bağımsız değişken olarak yalnızca iç türleri ve dönüş değerleri işlevler için hiçbir ek iş gereklidir. İşlev işaretçileri, diziler ve yapılar, gibi diğer veri türlerine uygun veri hazırlama sağlamak için ek öznitelikler gerektirir.
+Bağımsız değişkenler ve dönüş değerleri olarak yalnızca iç türleri kullanan işlevler için ek çalışma gerekmez. İşlev işaretçileri, diziler ve yapılar gibi diğer veri türleri, doğru veri sıralamasını sağlamak için ek öznitelikler gerektirir.
 
-Gerekli olmamasına karşın, böylece genel ad alanında yok Bu örnekte gösterildiği gibi bir değer sınıfının P/Invoke bildirimleri statik üyeleri yapmak iyi bir uygulamadır.
+Gerekli olmasa da, bu örnekte gösterildiği gibi, genel ad alanında yer almayan P/Invoke bildirimleri için bir değer sınıfının statik üyeleri yapmak iyi bir uygulamadır.
 
 ```
 // pinvoke_basic.cpp

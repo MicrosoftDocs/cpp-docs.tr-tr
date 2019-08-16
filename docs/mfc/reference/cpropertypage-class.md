@@ -40,12 +40,12 @@ helpviewer_keywords:
 - CPropertyPage [MFC], SetModified
 - CPropertyPage [MFC], m_psp
 ms.assetid: d9000a21-aa81-4530-85d9-f43432afb4dc
-ms.openlocfilehash: f9116306fd2bd6145096b055025bd4dd2075b0c1
-ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
+ms.openlocfilehash: 6a6223708c83f7a5b3e6532a2016660d558f8270
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68916885"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69502799"
 ---
 # <a name="cpropertypage-class"></a>CPropertyPage sınıfı
 
@@ -71,7 +71,7 @@ class CPropertyPage : public CDialog
 |----------|-----------------|
 |[CPropertyPage:: CancelToClose](#canceltoclose)|Tamam düğmesini Oku Kapat olarak değiştirir ve kalıcı özellik sayfası sayfasında kurtarılamaz bir değişiklikten sonra Iptal düğmesini devre dışı bırakır.|
 |[CPropertyPage:: yapısı](#construct)|Bir `CPropertyPage` nesnesi oluşturur. Çalışma `Construct` zamanında parametrelerinizi belirtmek istiyorsanız veya diziler kullanıyorsanız kullanın.|
-|[CPropertyPage:: GetPSP](#getpsp)|`CPropertyPage` Nesnesiyle ilişkili Windows [propsheetpage](/windows/desktop/api/prsht/ns-prsht-propsheetpagea_v2) yapısını alır.|
+|[CPropertyPage:: GetPSP](#getpsp)|`CPropertyPage` Nesnesiyle ilişkili Windows [propsheetpage](/windows/win32/api/prsht/ns-prsht-propsheetpagea_v2) yapısını alır.|
 |[CPropertyPage:: OnApply](#onapply)|Şimdi Uygula düğmesine tıklandığında Framework tarafından çağırılır.|
 |[CPropertyPage:: OnCancel](#oncancel)|Iptal düğmesine tıklandığında Framework tarafından çağırılır.|
 |[CPropertyPage:: OnKillActive](#onkillactive)|Geçerli sayfa artık etkin sayfa olmadığında Framework tarafından çağırılır. Veri doğrulamasını burada gerçekleştirin.|
@@ -89,7 +89,7 @@ class CPropertyPage : public CDialog
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CPropertyPage:: m_psp](#m_psp)|Windows [propsheetpage](/windows/desktop/api/prsht/ns-prsht-propsheetpagea_v2) yapısı. Temel özellik sayfası parametrelerine erişim sağlar.|
+|[CPropertyPage:: m_psp](#m_psp)|Windows [propsheetpage](/windows/win32/api/prsht/ns-prsht-propsheetpagea_v2) yapısı. Temel özellik sayfası parametrelerine erişim sağlar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -261,7 +261,7 @@ Birden çok parametreye sahipseniz (örneğin, bir dizi kullanıyorsanız), yeri
 
 ##  <a name="getpsp"></a>CPropertyPage:: GetPSP
 
-`CPropertyPage` Nesnesiyle ilişkili Windows [propsheetpage](/windows/desktop/api/prsht/ns-prsht-propsheetpagea_v2) yapısını alır.
+`CPropertyPage` Nesnesiyle ilişkili Windows [propsheetpage](/windows/win32/api/prsht/ns-prsht-propsheetpagea_v2) yapısını alır.
 
 ```
 const PROPSHEETPAGE& GetPSP() const;
@@ -275,7 +275,7 @@ PROPSHEETPAGE& GetPSP();
 
 ##  <a name="m_psp"></a>CPropertyPage:: m_psp
 
-`m_psp`, üyeleri [propsheetpage](/windows/desktop/api/prsht/ns-prsht-propsheetpagea_v2)özelliklerini depolayan bir yapıdır.
+`m_psp`, üyeleri [propsheetpage](/windows/win32/api/prsht/ns-prsht-propsheetpagea_v2)özelliklerini depolayan bir yapıdır.
 
 ```
 PROPSHEETPAGE m_psp;
@@ -311,7 +311,7 @@ Kullanıcı Şimdi Uygula düğmesine tıkladığında programınızın hangi ey
 
 `OnApply` Çağrıların`OnOK`varsayılan uygulama.
 
-Kullanıcı bir özellik sayfasında Şimdi Uygula veya Tamam düğmesine bastığında gönderilen bildirim iletileri hakkında daha fazla bilgi için, Windows SDK [PSN_APPLY](/windows/desktop/Controls/psn-apply) bakın.
+Kullanıcı bir özellik sayfasında Şimdi Uygula veya Tamam düğmesine bastığında gönderilen bildirim iletileri hakkında daha fazla bilgi için, Windows SDK [PSN_APPLY](/windows/win32/Controls/psn-apply) bakın.
 
 ### <a name="example"></a>Örnek
 
@@ -367,7 +367,7 @@ virtual void OnOK();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanıcı Tamam ' ı ya da şimdi Uygula düğmesini seçtiğinde, çerçeve özellik sayfasından [PSN_APPLY](/windows/desktop/Controls/psn-apply) bildirimini alır. Özellik sayfası bildirimi `OnOK` bu durumda göndermediğinden [CPropertySheet::P ressbutton](../../mfc/reference/cpropertysheet-class.md#pressbutton) öğesini çağırdığınızda çağrı yapılmaz.
+Kullanıcı Tamam ' ı ya da şimdi Uygula düğmesini seçtiğinde, çerçeve özellik sayfasından [PSN_APPLY](/windows/win32/Controls/psn-apply) bildirimini alır. Özellik sayfası bildirimi `OnOK` bu durumda göndermediğinden [CPropertySheet::P ressbutton](../../mfc/reference/cpropertysheet-class.md#pressbutton) öğesini çağırdığınızda çağrı yapılmaz.
 
 Kullanıcı tüm özellik sayfasını devre dışı kılıyorsa, şu anda etkin olan sayfaya özgü ek davranışı uygulamak için bu üye işlevi geçersiz kılın.
 
@@ -481,7 +481,7 @@ Bir Kullanıcı bir sihirbazda **son** düğmesine tıkladığında framework bu
 
 Son düğmesine basıldığında kullanıcının yapması gereken eylemi belirtmek için bu üye işlevi geçersiz kılabilirsiniz. Bu işlevi geçersiz kıldığınızda, özellik sayfasının yok edilmesi için FALSE döndürün.
 
-Kullanıcı sihirbaz Özellik sayfasında son düğmesine bastığında gönderilen bildirim iletileri hakkında daha fazla bilgi için, Windows SDK [PSN_WIZFINISH](/windows/desktop/Controls/psn-wizfinish) bakın.
+Kullanıcı sihirbaz Özellik sayfasında son düğmesine bastığında gönderilen bildirim iletileri hakkında daha fazla bilgi için, Windows SDK [PSN_WIZFINISH](/windows/win32/Controls/psn-wizfinish) bakın.
 
 Sihirbaz türü özellik sayfası oluşturma hakkında daha fazla bilgi için bkz. [CPropertySheet:: SetWizardMode](../../mfc/reference/cpropertysheet-class.md#setwizardmode).
 

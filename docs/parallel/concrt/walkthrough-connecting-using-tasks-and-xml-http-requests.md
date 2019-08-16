@@ -1,110 +1,110 @@
 ---
-title: 'İzlenecek yol: Görevleri ve XML HTTP isteklerini kullanarak bağlanma'
+title: 'İzlenecek yol: Görevleri ve XML HTTP Isteklerini kullanarak bağlanma'
 ms.date: 04/25/2019
 helpviewer_keywords:
 - connecting to web services, UWP apps [C++]
 - IXMLHTTPRequest2 and tasks, example
 - IXHR2 and tasks, example
 ms.assetid: e8e12d46-604c-42a7-abfd-b1d1bb2ed6b3
-ms.openlocfilehash: 449f99f37f0d328b7c874730b814335f8b69e807
-ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
+ms.openlocfilehash: b11b56578cadc4b3bd037acf84014a718f9fad84
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64856288"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69512138"
 ---
-# <a name="walkthrough-connecting-using-tasks-and-xml-http-requests"></a>İzlenecek yol: Görevleri ve XML HTTP isteklerini kullanarak bağlanma
+# <a name="walkthrough-connecting-using-tasks-and-xml-http-requests"></a>İzlenecek yol: Görevleri ve XML HTTP Isteklerini kullanarak bağlanma
 
-Bu örnek nasıl kullanılacağını gösterir [Ixmlhttprequest2](/windows/desktop/api/msxml6/nn-msxml6-ixmlhttprequest2) ve [Ixmlhttprequest2callback](/windows/desktop/api/msxml6/nn-msxml6-ixmlhttprequest2callback) arabirimleri birlikte bir web hizmeti, bir evrensel Windows Platformu (UWP HTTP GET ve POST istekleri göndermek için görevler ) uygulama. Birleştirme tarafından `IXMLHTTPRequest2` görevleri ile birlikte diğer görevlerle ölçeklemesini kod yazabilirsiniz. Örneğin, indirme görev görevleri zinciri bir parçası olarak kullanabilirsiniz. İş iptal edildiğinde indirme görev de yanıt verebilirsiniz.
-
-> [!TIP]
->  C++ REST SDK'sı, C++ uygulaması kullanarak UWP uygulaması veya bir masaüstü C++ uygulama HTTP isteklerini gerçekleştirmek için de kullanabilirsiniz. Daha fazla bilgi için bkz. [C++ REST SDK (Codename "Kazablanka")](https://github.com/Microsoft/cpprestsdk).
-
-Görevler hakkında daha fazla bilgi için bkz. [görev Paralelliği](../../parallel/concrt/task-parallelism-concurrency-runtime.md). Bir UWP uygulamasında görevler kullanma hakkında daha fazla bilgi için bkz. [C++ zaman uyumsuz programlamada](/windows/uwp/threading-async/asynchronous-programming-in-cpp-universal-windows-platform-apps) ve [oluşturma zaman uyumsuz işlemler c++ UWP uygulamaları için](../../parallel/concrt/creating-asynchronous-operations-in-cpp-for-windows-store-apps.md).
-
-Bu belge ilk nasıl oluşturulacağını gösterir `HttpRequest` ve bunun destekleyici sınıfları. Ardından, C++ ve XAML kullanan bir UWP uygulamasında bu sınıfının nasıl kullanılacağını gösterir.
-
-Kullanan bir örnek için `IXMLHTTPRequest2` ancak olmayan görevleri kullanın, bkz: [hızlı başlangıç: XML HTTP isteğini (Ixmlhttprequest2) kullanarak bağlanma](/previous-versions/windows/apps/hh770550\(v=win.10\)).
+Bu örnek, bir Evrensel Windows Platformu (UWP) uygulamasında bir Web hizmetine HTTP GET ve POST istekleri göndermek için [IXMLHTTPRequest2](/windows/win32/api/msxml6/nn-msxml6-ixmlhttprequest2) ve [IXMLHTTPRequest2Callback](/windows/win32/api/msxml6/nn-msxml6-ixmlhttprequest2callback) arabirimlerinin görevlerle birlikte nasıl kullanılacağını gösterir. Görevlerle birlikte `IXMLHTTPRequest2` birleştirerek, diğer görevlerle Birleşik bir kod yazabilirsiniz. Örneğin, İndirme görevini bir görev zincirinin parçası olarak kullanabilirsiniz. İndirme görevi, iş iptal edildiğinde da yanıt verebilir.
 
 > [!TIP]
->  `IXMLHTTPRequest2` ve `IXMLHTTPRequest2Callback` bir UWP uygulamasında kullanmak için önerdiğimiz arabirimdir. Bu örnek masaüstü uygulamasını kullanmak için de uyarlayabilirsiniz.
+>  Uygulama veya Masaüstü C++ UYGULAMASıNDAN bir C++ UWP uygulamasından http istekleri gerçekleştirmek için REST SDK 'sını de kullanabilirsiniz. C++ Daha fazla bilgi için bkz [ C++ . Rest SDK (kod adı "Casablanca")](https://github.com/Microsoft/cpprestsdk).
+
+Görevler hakkında daha fazla bilgi için bkz. [Görev Paralelliği](../../parallel/concrt/task-parallelism-concurrency-runtime.md). UWP uygulamasında görevlerin nasıl kullanılacağı hakkında daha fazla bilgi için bkz. ' [de C++ zaman uyumsuz programlama](/windows/uwp/threading-async/asynchronous-programming-in-cpp-universal-windows-platform-apps) ve [UWP uygulamaları için içinde C++ zaman uyumsuz işlemler oluşturma](../../parallel/concrt/creating-asynchronous-operations-in-cpp-for-windows-store-apps.md).
+
+Bu belgede önce `HttpRequest` ve destekleyici sınıflarının nasıl oluşturulduğu gösterilir. Daha sonra, ve XAML kullanan C++ bir UWP uygulamasından bu sınıfın nasıl kullanılacağını gösterir.
+
+Kullanan `IXMLHTTPRequest2` ancak görevleri kullanmayan bir örnek için bkz [. hızlı başlangıç: XML HTTP Isteği (IXMLHTTPRequest2)](/previous-versions/windows/apps/hh770550\(v=win.10\))kullanılarak bağlanıyor.
+
+> [!TIP]
+>  `IXMLHTTPRequest2`UWP uygulamasında kullanmak için önerdiğimiz arabirimlerdir.`IXMLHTTPRequest2Callback` Ayrıca, bu örneği bir masaüstü uygulamasında kullanmak üzere uyarlayabilirsiniz.
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-UWP destek, isteğe bağlı olarak Visual Studio 2017 ve sonrasında mevcuttur. Yüklemek için Windows Başlat Menüsü'nden Visual Studio Yükleyicisi'ni açın ve kullanmakta olduğunuz Visual Studio sürümünü seçin. Tıklayın **Değiştir** emin olun ve düğme **UWP geliştirme** kutucuk denetlenir. Altında **isteğe bağlı bileşenler** emin  **C++ UWP Araçları** denetlenir. Visual Studio 2017 veya Visual Studio 2019 için v142 v141 kullanın.
+UWP desteği, Visual Studio 2017 ve üzeri sürümlerde isteğe bağlıdır. Yüklemek için, Windows Başlat menüsünden Visual Studio Yükleyicisi açın ve kullandığınız Visual Studio sürümünü seçin. **Değiştir** düğmesine tıklayın ve **UWP geliştirme** kutucuğunun işaretli olduğundan emin olun. **İsteğe bağlı bileşenler** altında,  **C++ UWP araçlarının** işaretli olduğundan emin olun. Visual Studio 2017 için v141 veya Visual Studio 2019 için v142 kullanın.
 
 ## <a name="defining-the-httprequest-httprequestbufferscallback-and-httprequeststringcallback-classes"></a>HttpRequest, HttpRequestBuffersCallback ve HttpRequestStringCallback Sınıflarını Tanımlama
 
-Kullanırken `IXMLHTTPRequest2` HTTP üzerinden web istekleri oluşturmak için arabirim, uygulamanız `IXMLHTTPRequest2Callback` sunucu yanıtını almak ve diğer olaylarına tepki vermek için arabirim. Bu örnek tanımlar `HttpRequest` web istekleri oluşturmak için sınıf ve `HttpRequestBuffersCallback` ve `HttpRequestStringCallback` yanıtları işlemek için sınıflar. `HttpRequestBuffersCallback` Ve `HttpRequestStringCallback` destek sınıfları `HttpRequest` sınıfı; yalnızca çalışmanıza `HttpRequest` uygulama kodundan sınıfı.
+HTTP üzerinden Web istekleri `IXMLHTTPRequest2` oluşturmak için arabirimini kullandığınızda, sunucu yanıtını almak ve diğer olaylara `IXMLHTTPRequest2Callback` yanıt vermek için arabirimini uygulayın. Bu örnek, Web `HttpRequest` istekleri oluşturmak için sınıfını `HttpRequestBuffersCallback` ve yanıtları işlemek için ve `HttpRequestStringCallback` sınıflarını tanımlar. Ve sınıfları sınıfı destekler; yalnızca`HttpRequest` uygulama kodundaki sınıfla çalışırsınız. `HttpRequestStringCallback` `HttpRequest` `HttpRequestBuffersCallback`
 
-`GetAsync`, `PostAsync` Yöntemlerinin `HttpRequest` sınıfı HTTP GET ve POST işlemleri, sırasıyla Başlat olanak tanır. Bu yöntemleri `HttpRequestStringCallback` sunucu yanıtını bir dize olarak okumak için sınıf. `SendAsync` Ve `ReadAsync` yöntemleri öbekler halinde büyük içerik akışı, sağlar. Bu yöntemlerin her iade [concurrency::task](../../parallel/concrt/reference/task-class.md) işlemi temsil etmek için. `GetAsync` Ve `PostAsync` yöntemleri `task<std::wstring>` değer, burada `wstring` bölümü sunucu yanıtını temsil eder. `SendAsync` Ve `ReadAsync` yöntemleri `task<void>` değerleri; bu görevler gönderme ve okuma işlemlerini tamamladıktan sonra tamamlandı.
+`GetAsync` ,Sınıfının`HttpRequest` yöntemleri sırasıyla http get ve post işlemlerini başlamanıza olanak sağlar. `PostAsync` Bu yöntemler, `HttpRequestStringCallback` sunucu yanıtını bir dize olarak okumak için sınıfını kullanır. `SendAsync` Ve`ReadAsync` yöntemleri, öbeklerde büyük içerik akışını sağlar. Bu yöntemlerin her biri, işlemi temsil etmek için [concurrency:: Task](../../parallel/concrt/reference/task-class.md) döndürür. Ve yöntemleri, `wstring` parçanın sunucunun yanıtını temsil ettiği değeri üretir `task<std::wstring>`. `GetAsync` `PostAsync` Ve yöntemleri değerler üretir`task<void>` ; gönderme ve okuma işlemleri tamamlandığında bu görevler tamamlanır. `ReadAsync` `SendAsync`
 
-Çünkü `IXMLHTTPRequest2` arabirimleri zaman uyumsuz olarak davranan, bu örnekte [concurrency::task_completion_event](../../parallel/concrt/reference/task-completion-event-class.md) geri çağırma nesnesi tamamlandığında veya indirme işlemi iptal sonra tamamlanan bir görev oluşturmak için. `HttpRequest` Sınıfı, bir görev tabanlı devamlılık nihai sonucu ayarlamak için bu görevi oluşturur. `HttpRequest` Sınıfı önceki görevde bir hata oluşturur veya iptal edilen bile devamlılık görevi çalıştığından emin olmak için bir görev tabanlı devamlılık kullanır. Görev tabanlı devamlılık hakkında daha fazla bilgi için bkz: [görev Paralelliği](../../parallel/concrt/task-parallelism-concurrency-runtime.md)
+Arabirimler zaman uyumsuz olarak davrandığı için bu örnek, geri çağırma nesnesi tamamlandıktan sonra tamamlanan bir görev oluşturmak için [concurrency:: task_completion_event](../../parallel/concrt/reference/task-completion-event-class.md) kullanır veya indirme işlemini iptal eder. `IXMLHTTPRequest2` Sınıfı `HttpRequest` , son sonucu ayarlamak için bu görevden görev tabanlı bir devamlılık oluşturur. Bu `HttpRequest` sınıf, önceki görev bir hata üretse veya iptal edildiğinde bile devamlılık görevinin çalışmasını sağlamak için görev tabanlı devamlılık kullanır. Görev tabanlı devamlılıklar hakkında daha fazla bilgi için bkz. [Görev Paralelliği](../../parallel/concrt/task-parallelism-concurrency-runtime.md)
 
-İptali desteklemek için `HttpRequest`, `HttpRequestBuffersCallback`, ve `HttpRequestStringCallback` iptal belirteçlerini sınıflarını kullanın. `HttpRequestBuffersCallback` Ve `HttpRequestStringCallback` sınıfları kullanın [CONCURRENCY::cancellation_token:: register_callback](reference/cancellation-token-class.md#register_callback) iptal için yanıt vermek görev tamamlama olayı etkinleştirmek için yöntemi. Bu iptal geri yüklemeyi durdurur. İptal etme hakkında daha fazla bilgi için bkz. [iptal](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md#cancellation).
+`HttpRequestStringCallback` İptali `HttpRequest` desteklemek`HttpRequestBuffersCallback`için,, ve sınıfları iptal belirteçlerini kullanır. Ve sınıfları, görev tamamlama olayının iptal 'e yanıt vermesini sağlamak için [concurrency:: cancellation_token:: register_callback](reference/cancellation-token-class.md#register_callback) yöntemini kullanır. `HttpRequestStringCallback` `HttpRequestBuffersCallback` Bu iptal geri çağırması indirmeyi iptal eder. İptal hakkında daha fazla bilgi için bkz. [iptal](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md#cancellation).
 
 #### <a name="to-define-the-httprequest-class"></a>HttpRequest Sınıfını tanımlamak için
 
-1. Ana menüden **dosya** > **yeni** > **proje**. 
+1. Ana menüden **Dosya** > **Yeni** > **Proje**' yi seçin. 
 
-1. Kullanım C++ **boş uygulama (Evrensel Windows)** boş bir XAML uygulaması projesi oluşturmak için şablon. Bu örnek proje adları `UsingIXMLHTTPRequest2`.
+1. C++ Boş bir xaml uygulaması projesi oluşturmak için **boş uygulama (Evrensel Windows)** şablonunu kullanın. Bu örnek, projeyi `UsingIXMLHTTPRequest2`adlandırır.
 
-1. Projeye HttpRequest.h adlı bir üstbilgi dosyası ve HttpRequest.cpp adlı bir kaynak dosyası ekleyin.
+1. Projeye HttpRequest. h adlı bir üst bilgi dosyası ve HttpRequest. cpp adlı bir kaynak dosyası ekleyin.
 
-1. Pch.h içinde bu kodu ekleyin:
+1. PCH. h içinde şu kodu ekleyin:
 
    [!code-cpp[concrt-using-ixhr2#1](../../parallel/concrt/codesnippet/cpp/walkthrough-connecting-using-tasks-and-xml-http-requests_1.h)]
 
-1. HttpRequest.h içinde bu kodu ekleyin:
+1. HttpRequest. h içinde şu kodu ekleyin:
 
    [!code-cpp[concrt-using-ixhr2#2](../../parallel/concrt/codesnippet/cpp/walkthrough-connecting-using-tasks-and-xml-http-requests_2.h)]
 
-1. HttpRequest.cpp içinde bu kodu ekleyin:
+1. HttpRequest. cpp içinde şu kodu ekleyin:
 
    [!code-cpp[concrt-using-ixhr2#3](../../parallel/concrt/codesnippet/cpp/walkthrough-connecting-using-tasks-and-xml-http-requests_3.cpp)]
 
-## <a name="using-the-httprequest-class-in-a-uwp-app"></a>HttpRequest sınıfını bir UWP uygulamasında kullanma
+## <a name="using-the-httprequest-class-in-a-uwp-app"></a>UWP uygulamasında HttpRequest sınıfını kullanma
 
-Bu bölümde, nasıl kullanılacağını gösteren `HttpRequest` bir UWP uygulamasında sınıfı. Uygulama, bir URL kaynağı tanımlar bir giriş kutusu ve GET ve POST işlemleri düğme komutları ve geçerli işlemi iptal eden bir düğme komutunu sağlar.
+Bu bölümde, `HttpRequest` sınıfının bir UWP uygulamasında nasıl kullanılacağı gösterilmektedir. Uygulama, URL kaynağını ve GET ve POST işlemlerini gerçekleştiren düğme komutlarını ve geçerli işlemi iptal eden bir Button komutunu tanımlayan bir giriş kutusu sağlar.
 
 #### <a name="to-use-the-httprequest-class"></a>HttpRequest Sınıfını kullanmak için
 
-1. MainPage.xaml içinde tanımlayın [StackPanel](https://msdn.microsoft.com/library/windows/apps/xaml/windows.ui.xaml.controls.stackpanel.aspx) şekilde öğesi.
+1. MainPage. xaml dosyasında, [StackPanel](/uwp/api/Windows.UI.Xaml.Controls.StackPanel) öğesini aşağıdaki gibi tanımlayın.
 
    [!code-xml[concrt-using-ixhr2#A1](../../parallel/concrt/codesnippet/xaml/walkthrough-connecting-using-tasks-and-xml-http-requests_4.xaml)]
 
-2. Mainpage.xaml.h içinde bu düz bu ekleme `#include` yönergesi:
+2. MainPage. xaml. h içinde şu `#include` yönergeyi ekleyin:
 
    [!code-cpp[concrt-using-ixhr2#A2](../../parallel/concrt/codesnippet/cpp/walkthrough-connecting-using-tasks-and-xml-http-requests_5.h)]
 
-3. Mainpage.xaml.h içinde bu düz eklemeniz `private` üye değişkenlerine `MainPage` sınıfı:
+3. MainPage. xaml. h içinde bu `private` üye değişkenlerini `MainPage` sınıfa ekleyin:
 
    [!code-cpp[concrt-using-ixhr2#A3](../../parallel/concrt/codesnippet/cpp/walkthrough-connecting-using-tasks-and-xml-http-requests_6.h)]
 
-4. Mainpage.xaml.h içinde bu düz bildirmek `private` yöntemi `ProcessHttpRequest`:
+4. MainPage. xaml. h içinde, `private` yöntemi `ProcessHttpRequest`bildirin:
 
    [!code-cpp[concrt-using-ixhr2#A4](../../parallel/concrt/codesnippet/cpp/walkthrough-connecting-using-tasks-and-xml-http-requests_7.h)]
 
-5. MainPage.xaml.cpp içinde eklemeniz `using` ifadeleri:
+5. MainPage. xaml. cpp içinde şu `using` deyimleri ekleyin:
 
    [!code-cpp[concrt-using-ixhr2#A5](../../parallel/concrt/codesnippet/cpp/walkthrough-connecting-using-tasks-and-xml-http-requests_8.cpp)]
 
-6. Mainpage.xaml.cpp içinde `GetButton_Click`, `PostButton_Click`, ve `CancelButton_Click` yöntemlerinin `MainPage` sınıfı.
+6. MainPage. xaml. cpp `GetButton_Click`içinde, `MainPage` sınıfının, ve `PostButton_Click` `CancelButton_Click` yöntemlerini uygulayın.
 
    [!code-cpp[concrt-using-ixhr2#A6](../../parallel/concrt/codesnippet/cpp/walkthrough-connecting-using-tasks-and-xml-http-requests_9.cpp)]
 
    > [!TIP]
-   > Uygulamanızı iptal için destek gerektirmiyorsa geçirmek [concurrency::cancellation_token:: none](reference/cancellation-token-class.md#none) için `HttpRequest::GetAsync` ve `HttpRequest::PostAsync` yöntemleri.
+   > Uygulamanız iptal için destek gerektirmiyorsa, `HttpRequest::GetAsync` ve `HttpRequest::PostAsync` yöntemlerine [concurrency:: cancellation_token:: None](reference/cancellation-token-class.md#none) geçirin.
 
-1. Mainpage.xaml.cpp içinde `MainPage::ProcessHttpRequest` yöntemi.
+1. MainPage. xaml. cpp içinde `MainPage::ProcessHttpRequest` yöntemini uygulayın.
 
    [!code-cpp[concrt-using-ixhr2#A7](../../parallel/concrt/codesnippet/cpp/walkthrough-connecting-using-tasks-and-xml-http-requests_10.cpp)]
 
-8. Proje özelliklerinde altında **bağlayıcı**, **giriş**, belirtin `shcore.lib` ve `msxml6.lib`.
+8. Proje Özellikleri ' nde **bağlayıcı**, **giriş**, ve `shcore.lib` `msxml6.lib`belirtin ' i seçin.
 
-Çalışan uygulamaya şu şekildedir:
+Çalışan uygulama şu şekildedir:
 
-![Çalışan Windows çalışma zamanı uygulama](../../parallel/concrt/media/concrt_usingixhr2.png "çalıştırılan Windows çalışma zamanı uygulama")
+![Çalışan Windows çalışma zamanı uygulaması](../../parallel/concrt/media/concrt_usingixhr2.png "Çalışan Windows çalışma zamanı uygulaması")
 
 ## <a name="next-steps"></a>Sonraki Adımlar
 
@@ -114,8 +114,8 @@ Bu bölümde, nasıl kullanılacağını gösteren `HttpRequest` bir UWP uygulam
 
 [Görev Paralelliği](../../parallel/concrt/task-parallelism-concurrency-runtime.md)<br/>
 [PPL'de İptal](cancellation-in-the-ppl.md)<br/>
-[C++ zaman uyumsuz programlama](/windows/uwp/threading-async/asynchronous-programming-in-cpp-universal-windows-platform-apps)<br/>
+[İçinde zaman uyumsuz programlamaC++](/windows/uwp/threading-async/asynchronous-programming-in-cpp-universal-windows-platform-apps)<br/>
 [UWP Uygulamaları için C++ Uygulamasında Zaman Uyumsuz İşlemler Oluşturma](../../parallel/concrt/creating-asynchronous-operations-in-cpp-for-windows-store-apps.md)<br/>
-[Hızlı Başlangıç: XML HTTP isteğini (Ixmlhttprequest2) kullanarak bağlanma](/previous-versions/windows/apps/hh770550\(v=win.10\))
-[task sınıfı (eşzamanlılık çalışma zamanı)](../../parallel/concrt/reference/task-class.md)<br/>
+[Hızlı Başlangıç: XML http isteği (IXMLHTTPRequest2)](/previous-versions/windows/apps/hh770550\(v=win.10\))
+[görev sınıfını kullanarak bağlanma (eşzamanlılık çalışma zamanı)](../../parallel/concrt/reference/task-class.md)<br/>
 [task_completion_event Sınıfı](../../parallel/concrt/reference/task-completion-event-class.md)

@@ -1,21 +1,21 @@
 ---
-title: public (C++ öznitelikleri) (C++ COM özniteliği)
+title: Public (C++ öznitelikler) (C++ com özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.public
 helpviewer_keywords:
 - public attribute
 ms.assetid: c42e1fd5-6cb1-48fe-8a03-95f2a2e0137c
-ms.openlocfilehash: a12ab0905064a72057dffac03340b667f07b3ae5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 274af011f2d61521885e93d4ce1eddad149748ad
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62407555"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69514169"
 ---
 # <a name="public-c-attributes"></a>genel (C++ Öznitelikleri)
 
-Bu gelen .idl dosyasında başvurulmuyor olsa bile bir typedef tür kitaplığına geçer sağlar.
+Bir typedef 'in,. IDL dosyası içinden başvurulmamış olsa bile tür kitaplığına gitmesini sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -25,11 +25,11 @@ Bu gelen .idl dosyasında başvurulmuyor olsa bile bir typedef tür kitaplığı
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Genel** C++ özniteliği ile aynı işlevlere sahip [genel](/windows/desktop/Midl/public) MIDL özniteliği.
+**Public** C++ özniteliği, [genel](/windows/win32/Midl/public) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod nasıl kullanılacağını gösterir **genel** özniteliği:
+Aşağıdaki kod **ortak** özniteliğin nasıl kullanılacağını gösterir:
 
 ```cpp
 // cpp_attr_ref_public.cpp
@@ -51,12 +51,12 @@ __interface IFireTabCtrl : IDispatch
 
 |||
 |-|-|
-|**İçin geçerlidir**|**tür tanımı**|
+|**Uygulama hedefi**|**genişletiyor**|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|None|
-|**Geçersiz öznitelikler**|None|
+|**Gerekli öznitelikler**|Yok.|
+|**Geçersiz öznitelikler**|Yok.|
 
-Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
+Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

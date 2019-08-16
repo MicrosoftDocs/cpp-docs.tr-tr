@@ -1,6 +1,6 @@
 ---
 title: Visual C++ Proje Türleri
-ms.date: 07/02/2019
+ms.date: 08/13/2019
 helpviewer_keywords:
 - programs [C++], projects
 - project templates [Visual Studio], C++
@@ -10,84 +10,84 @@ helpviewer_keywords:
 - applications [C++], projects
 - C++ projects, types
 ms.assetid: 7337987e-1e7b-4120-9a4b-94f0401f15e7
-ms.openlocfilehash: 98f8ea11cce61ca91fbdc8f8afb900a7ba5b42c9
-ms.sourcegitcommit: 9b904e490b1e262293a602bd1291a8f3045e755b
+ms.openlocfilehash: f234f9a05a871fe474b783a68f644cb4f2b1c2e7
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67552221"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69498436"
 ---
 # <a name="c-project-templates"></a>C++ proje şablonları
 
-Kaynak kodu dosyaları, derleyici seçenekleri, menüler, araç çubukları, simgeler, başvurular, Visual Studio Proje şablonları oluşturmak ve `#include` oluşturmak istediğiniz proje türü için uygun olan deyimleri. Visual Studio, birçok tür içerir, C++ proje şablonları ve sihirbazları kaç tanesinin oluştururken projelerinizi özelleştirebilmeniz için sağlar. Hemen bir proje oluşturduğunuzda, derleyin ve uygulamayı çalıştırın; Uygulamanızı geliştirirken, aralıklı olarak oluşturmak için iyi bir uygulamadır.
+Visual Studio proje şablonları, oluşturmak istediğiniz proje türü için uygun olan kaynak kodu dosyalarını, derleyici seçeneklerini, menüleri, `#include` araç çubuklarını, simgeleri, başvuruları ve deyimleri oluşturur. Visual Studio çeşitli C++ proje şablonu türlerini içerir ve bunların birçoğu için sihirbazları sağlar, böylece projelerinizi oluşturduğunuz şekilde özelleştirebilirsiniz. Projeyi oluşturduktan hemen sonra, oluşturup uygulamayı çalıştırabilirsiniz; uygulamanızı geliştirirken zaman zaman oluşturmak iyi bir uygulamadır.
 
 > [!NOTE]
-> C++ proje şablonlarını kullanarak bir C dili projesi oluşturabilirsiniz. Oluşturulan proje bir .cpp olarak değiştirin ve dosya adı uzantısına sahip dosyaları bulun. c. Ardından **proje özellikleri** sayfasında projenin (için çözüm) **yapılandırma özellikleri**, **C/C++** seçip **Gelişmiş**. Değişiklik **derleme olarak** ayarını **C kodu olarak derle (/ TC)** .
+> Proje şablonları kullanarak C++ C dili bir proje oluşturabilirsiniz. Oluşturulan projede,. cpp dosya adı uzantısına sahip dosyaları bulun ve. c olarak değiştirin. Ardından, proje için **Proje özellikleri** sayfasında (çözüm için değil), **yapılandırma özellikleri**, **C/C++**  öğesini genişletin ve **Gelişmiş**' i seçin. **Derleme olarak derle** ayarını **C kodu olarak derle (/TC)** olarak değiştirin.
 
 ## <a name="project-templates"></a>Proje şablonları
 
-Visual Studio'daki proje şablonları, ürün sürümü ve yüklediğiniz iş yükleri bağlıdır. İle masaüstü geliştirme yüklediyseniz C++ iş yükü, Visual Studio sahip bu C++ proje şablonları.
+Visual Studio 'ya dahil edilen proje şablonları ürün sürümüne ve yüklediğiniz iş yüklerine bağlıdır. Masaüstü geliştirmeyi C++ iş yüküne yüklediyseniz, Visual Studio bu C++ proje şablonlarına sahiptir.
 
 ### <a name="windows-desktop"></a>Windows Masaüstü
 
 |Proje şablonu|Açıklama|
 |----------------------|-----------------------------|
-|[Windows konsol uygulaması](../../windows/creating-a-console-application.md)|Bir Windows konsol uygulaması oluşturmaya yönelik bir proje.|
-|[Windows masaüstü uygulaması](../../windows/walkthrough-creating-windows-desktop-applications-cpp.md)|Windows Masaüstü (Win32) uygulaması oluşturmaya yönelik bir proje.|
-|[Dinamik bağlantı kitaplığı](../walkthrough-creating-and-using-a-dynamic-link-library-cpp.md)|Bir dinamik bağlantı kitaplığı (DLL) oluşturmak için bir proje.|
-|[Statik kitaplık](../../windows/walkthrough-creating-and-using-a-static-library-cpp.md)|Statik kitaplık (LIB) oluşturmak için bir proje.|
-|Windows Masaüstü Sihirbazı|Ek seçenekler ile Windows Masaüstü uygulamaları ve kitaplıkları oluşturmak için bir sihirbaz.|
+|[Windows konsol uygulaması](../../windows/creating-a-console-application.md)|Windows konsol uygulaması oluşturmak için bir proje.|
+|[Windows masaüstü uygulaması](../../windows/walkthrough-creating-windows-desktop-applications-cpp.md)|Windows Masaüstü (Win32) uygulaması oluşturmak için bir proje.|
+|[Dinamik bağlantı kitaplığı](../walkthrough-creating-and-using-a-dynamic-link-library-cpp.md)|Dinamik bağlantı kitaplığı (DLL) oluşturmak için bir proje.|
+|[Statik kitaplık](../../windows/walkthrough-creating-and-using-a-static-library-cpp.md)|Statik kitaplık (LıB) oluşturmak için bir proje.|
+|[Windows Masaüstü Sihirbazı](../../windows/windows-desktop-wizard.md)|Ek seçeneklerle Windows Masaüstü uygulamaları ve kitaplıkları oluşturmaya yönelik bir sihirbaz.|
 
 ### <a name="general"></a>Genel
 
 |Proje şablonu|Açıklama|
 |----------------------|-----------------------------|
-|Boş Proje|Bir uygulama, kitaplık veya DLL'i oluşturmak için boş proje. Herhangi bir kod veya gerekli kaynakları eklemeniz gerekir.|
-|[Derleme görevleri dosyası projesi](creating-a-makefile-project.md)|Visual Studio projede derleme görevleri dosyası Windows sarmalayan bir proje. (Derleme görevleri dosyası olarak açmak için-Visual Studio kullanımı [klasörünü Aç](../open-folder-projects-cpp.md).|
-|Paylaşılan öğeler projesi|Kod veya kaynak dosyalar birden çok proje arasında paylaşmak için kullanılan bir proje. Bu proje türü, yürütülebilir bir dosya oluşturmaz.|
+|Boş Proje|Uygulama, kitaplık veya DLL oluşturmak için boş bir proje. Gerekli herhangi bir kod veya kaynak eklemeniz gerekir.|
+|[Makefile projesi](creating-a-makefile-project.md)|Bir Visual Studio projesinde Windows makefile 'ı sarmalayan bir proje. (Derleme görevleri dosyasını Visual Studio 'da olduğu gibi açmak için, [klasörü aç](../open-folder-projects-cpp.md)' ı kullanın.|
+|Paylaşılan öğeler projesi|Birden çok proje arasında kod dosyalarını veya kaynak dosyalarını paylaşmak için kullanılan bir proje. Bu proje türü yürütülebilir bir dosya oluşturmuyor.|
 
 ### <a name="atl"></a>ATL
 
 |Proje şablonu|Açıklama|
 |----------------------|-----------------------------|
-|[ATL projesi](../../atl/reference/creating-an-atl-project.md)|Etkin Şablon Kütüphanesi kullanan bir proje.|
+|[ATL projesi](../../atl/reference/creating-an-atl-project.md)|Etkin şablon kitaplığını kullanan bir proje.|
 
 ### <a name="test"></a>Test
 
 |Proje şablonu|Açıklama|
 |----------------------|-----------------------------|
-|[Yerel birim testi projesi](/visualstudio/test/writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp)|Yerel C++ birim testleri içeren bir proje.|
+|[Yerel birim testi projesi](/visualstudio/test/writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp)|Yerel C++ birim testlerini içeren bir proje.|
 
 ### <a name="mfc"></a>MFC
 
-Visual Studio yüklemenizin bileşenine MFC ve ATL desteği eklerseniz, bu proje şablonları için Visual Studio eklenir.
+MFC ve ATL desteği bileşenini Visual Studio yüklemenize eklerseniz, bu proje şablonları Visual Studio 'ya eklenir.
 
 |Proje şablonu|Açıklama|
 |----------------------|-----------------------------|
-|[MFC uygulaması](../../mfc/reference/creating-an-mfc-application.md)|Microsoft Foundation Class (MFC) kitaplığı kullanan bir uygulama oluşturmaya yönelik bir proje.|
-|[MFC ActiveX denetimi](../../mfc/reference/creating-an-mfc-activex-control.md)|MFC kitaplığını kullanan ActiveX denetimi oluşturmak için bir proje.|
-|[MFC DLL](../../mfc/reference/creating-an-mfc-dll-project.md)|MFC Kitaplığı'nı kullanan dinamik bağlantı kitaplığı oluşturma projesi.|
+|[MFC uygulaması](../../mfc/reference/creating-an-mfc-application.md)|Microsoft Foundation Class (MFC) kitaplığı kullanan bir uygulama oluşturmak için bir proje.|
+|[MFC ActiveX denetimi](../../mfc/reference/creating-an-mfc-activex-control.md)|MFC kitaplığı kullanan ActiveX denetimi oluşturmak için bir proje.|
+|[MFC DLL](../../mfc/reference/creating-an-mfc-dll-project.md)|MFC kitaplığını kullanan bir dinamik bağlantı kitaplığı oluşturmak için bir proje.|
 
-### <a name="windows-universal-apps"></a>Evrensel Windows uygulamaları
+### <a name="windows-universal-apps"></a>Windows Evrensel uygulamaları
 
-Visual Studio yüklemenizin C++ Evrensel Windows platformu araçları bileşeni eklerseniz, bu proje şablonları, Visual Studio'ya eklenir.
+Visual Studio yüklemenize C++ Windows Universal platform araçları bileşeni eklerseniz, bu proje şablonları Visual Studio 'ya eklenir.
 
-C++'ta Windows Evrensel uygulamaları genel bakış için bkz. [Evrensel Windows uygulamaları (C++)](../../cppcx/universal-windows-apps-cpp.md).
+İçindeki C++Windows Evrensel uygulamalarına genel bakış için bkz. [Evrensel Windows uygulamaları (C++)](../../cppcx/universal-windows-apps-cpp.md).
 
 |Proje şablonu|Açıklama|
 |----------------------|-----------------------------|
-|Boş Uygulama|Önceden tanımlanmış denetimleri veya düzeni olmayan tek sayfalık bir evrensel Windows Platformu (UWP) uygulama projesi.|
-|DirectX 11 uygulaması|DirectX 11 kullanan bir evrensel Windows platformu uygulamasına yönelik bir proje.|
-|DirectX 12 uygulaması|DirectX 12 kullanan bir evrensel Windows platformu uygulamasına yönelik bir proje.|
-|DirectX 11 ve XAML uygulaması|DirectX 11 ve XAML kullanan bir evrensel Windows platformu uygulaması için bir proje.|
-|Birim testi uygulaması|Evrensel Windows Platformu (UWP) uygulamaları için birim testi uygulaması oluşturmaya yönelik bir proje.|
-|DLL|Evrensel Windows platformu uygulaması veya çalışma zamanı bileşeni tarafından kullanılabilen yerel dinamik bağlantı kitaplığı (DLL) projesi.|
-|Statik kitaplık|Evrensel Windows platformu uygulaması veya çalışma zamanı bileşeni tarafından kullanılabilen yerel statik bağlantı kitaplığı (LIB) projesi.|
-|Windows Çalışma Zamanı Bileşeni|Hangi programlama dilinde yazıldığına bakılmaksızın bir evrensel Windows platformu uygulaması tarafından kullanılabilen bir Windows çalışma zamanı bileşeni projesi.|
-|Windows uygulaması paketleme projesi|Bir UWP paket oluşturan bir proje, dışarıdan yüklenen veya Microsoft Store aracılığıyla dağıtılmış bir masaüstü uygulaması sağlar.|
+|Boş Uygulama|Önceden tanımlanmış denetimleri veya düzeni olmayan tek sayfalı Evrensel Windows Platformu (UWP) uygulamasına yönelik bir proje.|
+|DirectX 11 uygulaması|DirectX 11 kullanan Evrensel Windows Platformu uygulamasına yönelik bir proje.|
+|DirectX 12 uygulaması|DirectX 12 kullanan Evrensel Windows Platformu uygulama için bir proje.|
+|DirectX 11 ve XAML uygulaması|DirectX 11 ve XAML kullanan bir Evrensel Windows Platformu uygulaması için proje.|
+|Birim test uygulaması|Evrensel Windows Platformu (UWP) uygulamaları için birim testi uygulaması oluşturmaya yönelik bir proje.|
+|DLL|Bir Evrensel Windows Platformu uygulaması veya çalışma zamanı bileşeni tarafından kullanılabilen yerel dinamik bağlantı kitaplığı (DLL) projesi.|
+|Statik kitaplık|Bir Evrensel Windows Platformu uygulaması veya çalışma zamanı bileşeni tarafından kullanılabilen yerel statik bağlantı kitaplığı (LıB) projesi.|
+|Windows Çalışma Zamanı Bileşeni|Uygulamanın yazıldığı programlama dilinden bağımsız olarak, bir Evrensel Windows Platformu uygulaması tarafından kullanılabilen bir Windows Çalışma Zamanı bileşeni projesi.|
+|Windows uygulaması paketleme projesi|Bir masaüstü uygulamasının Microsoft Store aracılığıyla dışarıdan yüklenmesini veya dağıtılmasını sağlayan UWP paketi oluşturan bir proje.|
 
-## <a name="todo-comments"></a>TODO yorumları
+## <a name="todo-comments"></a>TODO açıklamaları
 
-Birçok proje şablonu tarafından oluşturulan dosyalar, kendi kaynak kodunuz nerede sağlayabilirsiniz tanımlamanıza yardımcı olması için TODO açıklamaları içerir. Kodun nasıl ekleneceği hakkında daha fazla bilgi için bkz. [kod sihirbazlarıyla işlevsellik ekleme](../../ide/adding-functionality-with-code-wizards-cpp.md) ve [kaynak dosyalarıyla çalışma](../../windows/working-with-resource-files.md).
+Bir proje şablonu tarafından oluşturulan dosyaların birçoğu, kendi kaynak kodunuzu sağlayabileceğiniz yeri belirlemenize yardımcı olacak TODO açıklamalarını içerir. Kod ekleme hakkında daha fazla bilgi için bkz. [kod sihirbazları Ile Işlevsellik ekleme](../../ide/adding-functionality-with-code-wizards-cpp.md) ve [kaynak dosyalarıyla çalışma](../../windows/working-with-resource-files.md).
 
 

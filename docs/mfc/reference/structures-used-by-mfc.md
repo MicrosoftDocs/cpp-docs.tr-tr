@@ -5,12 +5,12 @@ helpviewer_keywords:
 - structures
 - structures, MFC
 ms.assetid: 2168fcc6-e800-4814-aabf-0bca86ff790d
-ms.openlocfilehash: 3370736ebea81bdd19350f6236d2716cb9e54844
-ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
+ms.openlocfilehash: da2df7758ef01d03380e8f8a2a79c8adec591d6d
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68917015"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69511401"
 ---
 # <a name="structures-used-by-mfc"></a>MFC Tarafından Kullanılan Yapılar
 
@@ -18,31 +18,31 @@ Aşağıdaki tabloda, çeşitli üye işlevlerinden çağrılan yapılar listele
 
 |||
 |-|-|
-|[ABC Yapısı](/windows/desktop/api/wingdi/ns-wingdi-abc)|[HSE_VERSION_INFO Yapısı](../../mfc/reference/hse-version-info-structure.md)|
-|[ABCFLOAT yapısı](/windows/desktop/api/wingdi/ns-wingdi-abcfloat)|[LINGER Yapısı](/windows/desktop/api/winsock/ns-winsock-linger)|
-|[AFX_EXTENSION_MODULE Yapısı](../../mfc/reference/afx-extension-module-structure.md)|[LOGBRUSH Yapısı](/windows/desktop/api/wingdi/ns-wingdi-taglogbrush)|
-|[BITMAP Yapısı](/windows/desktop/api/wingdi/ns-wingdi-tagbitmap)|[LOGPEN Yapısı](/windows/desktop/api/Wingdi/ns-wingdi-taglogpen)|
-|[BITMAPINFO Yapısı](/windows/desktop/api/wingdi/ns-wingdi-tagbitmapinfo)|[MEASUREITEMSTRUCT Yapısı](/windows/desktop/api/winuser/ns-winuser-tagmeasureitemstruct)|
-|[CDaoDatabaseInfo Yapısı](../../mfc/reference/cdaodatabaseinfo-structure.md)|[MINMAXINFO Yapısı](/windows/desktop/api/winuser/ns-winuser-tagminmaxinfo)|
-|[CDaoErrorInfo Yapısı](../../mfc/reference/cdaoerrorinfo-structure.md)|[MSG yapısı](/windows/desktop/api/winuser/ns-winuser-tagmsg)|
-|[CDaoFieldInfo Yapısı](../../mfc/reference/cdaofieldinfo-structure.md)|[NCCALCSIZE_PARAMS Yapısı](/windows/desktop/api/winuser/ns-winuser-tagnccalcsize_params)|
-|[CDaoIndexFieldInfo Yapısı](../../mfc/reference/cdaoindexfieldinfo-structure.md)|[PAINTSTRUCT Yapısı](/windows/desktop/api/winuser/ns-winuser-tagpaintstruct)|
-|[CDaoIndexInfo Yapısı](../../mfc/reference/cdaoindexinfo-structure.md)|[NOKTA yapısı](/windows/desktop/api/windef/ns-windef-tagpoint)|
-|[CDaoParameterInfo Yapısı](../../mfc/reference/cdaoparameterinfo-structure.md)|[RECT yapısı](/windows/desktop/api/windef/ns-windef-tagrect)|
-|[CDaoQueryDefInfo Yapısı](../../mfc/reference/cdaoquerydefinfo-structure.md)|[RGNDATA Yapısı](/windows/desktop/api/wingdi/ns-wingdi-rgndata)|
-|[CDaoRelationFieldInfo Yapısı](../../mfc/reference/cdaorelationfieldinfo-structure.md)|[SOCKADDR Yapısı](/windows/desktop/winsock/sockaddr-2)|
-|[CDaoRelationInfo Yapısı](../../mfc/reference/cdaorelationinfo-structure.md)|[SOCKADDR_IN Yapısı](/windows/desktop/winsock/sockaddr-2)|
-|[CDaoTableDefInfo Yapısı](../../mfc/reference/cdaotabledefinfo-structure.md)|[SYSTEMTIME yapısı](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime)
-|[CDaoWorkspaceInfo Yapısı](../../mfc/reference/cdaoworkspaceinfo-structure.md)|[WINDOWPLACEMENT Yapısı](/windows/desktop/api/winuser/ns-winuser-tagwindowplacement)|
-|[CODBCFieldInfo Yapısı](../../mfc/reference/codbcfieldinfo-structure.md)|[WINDOWPOS yapısı](/windows/desktop/api/winuser/ns-winuser-tagwindowpos)
-|[COLORADJUSTMENT Yapısı](/windows/desktop/api/wingdi/ns-wingdi-tagcoloradjustment)|[WSADATA Yapısı](/windows/desktop/api/winsock2/ns-winsock2-wsadata)|
-|[COMPAREITEMSTRUCT Yapısı](/windows/desktop/api/winuser/ns-winuser-tagcompareitemstruct)|[XFORM Yapısı](/windows/desktop/api/wingdi/ns-wingdi-tagxform)|
-|[CREATESTRUCT Yapısı](/windows/desktop/api/winuser/ns-winuser-tagcreatestructa)||
-|[DELETEITEMSTRUCT Yapısı](/windows/desktop/api/winuser/ns-winuser-tagdeleteitemstruct)||
-|[DEVNAMES Yapısı](/windows/desktop/api/commdlg/ns-commdlg-tagdevnames)||
+|[ABC Yapısı](/windows/win32/api/wingdi/ns-wingdi-abc)|[HSE_VERSION_INFO Yapısı](../../mfc/reference/hse-version-info-structure.md)|
+|[ABCFLOAT yapısı](/windows/win32/api/wingdi/ns-wingdi-abcfloat)|[LINGER Yapısı](/windows/win32/api/winsock/ns-winsock-linger)|
+|[AFX_EXTENSION_MODULE Yapısı](../../mfc/reference/afx-extension-module-structure.md)|[LOGBRUSH Yapısı](/windows/win32/api/wingdi/ns-wingdi-logbrush)|
+|[BITMAP Yapısı](/windows/win32/api/wingdi/ns-wingdi-bitmap)|[LOGPEN Yapısı](/windows/win32/api/Wingdi/ns-wingdi-logpen)|
+|[BITMAPINFO Yapısı](/windows/win32/api/wingdi/ns-wingdi-bitmapinfo)|[MEASUREITEMSTRUCT Yapısı](/windows/win32/api/winuser/ns-winuser-measureitemstruct)|
+|[CDaoDatabaseInfo Yapısı](../../mfc/reference/cdaodatabaseinfo-structure.md)|[MINMAXINFO Yapısı](/windows/win32/api/winuser/ns-winuser-minmaxinfo)|
+|[CDaoErrorInfo Yapısı](../../mfc/reference/cdaoerrorinfo-structure.md)|[MSG yapısı](/windows/win32/api/winuser/ns-winuser-msg)|
+|[CDaoFieldInfo Yapısı](../../mfc/reference/cdaofieldinfo-structure.md)|[NCCALCSIZE_PARAMS Yapısı](/windows/win32/api/winuser/ns-winuser-nccalcsize_params)|
+|[CDaoIndexFieldInfo Yapısı](../../mfc/reference/cdaoindexfieldinfo-structure.md)|[PAINTSTRUCT Yapısı](/windows/win32/api/winuser/ns-winuser-paintstruct)|
+|[CDaoIndexInfo Yapısı](../../mfc/reference/cdaoindexinfo-structure.md)|[NOKTA yapısı](/windows/win32/api/windef/ns-windef-point)|
+|[CDaoParameterInfo Yapısı](../../mfc/reference/cdaoparameterinfo-structure.md)|[RECT yapısı](/windows/win32/api/windef/ns-windef-rect)|
+|[CDaoQueryDefInfo Yapısı](../../mfc/reference/cdaoquerydefinfo-structure.md)|[RGNDATA Yapısı](/windows/win32/api/wingdi/ns-wingdi-rgndatw)|
+|[CDaoRelationFieldInfo Yapısı](../../mfc/reference/cdaorelationfieldinfo-structure.md)|[SOCKADDR Yapısı](/windows/win32/winsock/sockaddr-2)|
+|[CDaoRelationInfo Yapısı](../../mfc/reference/cdaorelationinfo-structure.md)|[SOCKADDR_IN Yapısı](/windows/win32/winsock/sockaddr-2)|
+|[CDaoTableDefInfo Yapısı](../../mfc/reference/cdaotabledefinfo-structure.md)|[SYSTEMTIME yapısı](/windows/win32/api/minwinbase/ns-minwinbase-systemtime)
+|[CDaoWorkspaceInfo Yapısı](../../mfc/reference/cdaoworkspaceinfo-structure.md)|[WINDOWPLACEMENT Yapısı](/windows/win32/api/winuser/ns-winuser-windowplacement)|
+|[CODBCFieldInfo Yapısı](../../mfc/reference/codbcfieldinfo-structure.md)|[WINDOWPOS yapısı](/windows/win32/api/winuser/ns-winuser-windowpos)
+|[COLORADJUSTMENT Yapısı](/windows/win32/api/wingdi/ns-wingdi-coloradjustment)|[WSADATA Yapısı](/windows/win32/api/winsock2/ns-winsock2-wsadatw)|
+|[COMPAREITEMSTRUCT Yapısı](/windows/win32/api/winuser/ns-winuser-compareitemstruct)|[XFORM Yapısı](/windows/win32/api/wingdi/ns-wingdi-xform)|
+|[CREATESTRUCT Yapısı](/windows/win32/api/winuser/ns-winuser-createstructw)||
+|[DELETEITEMSTRUCT Yapısı](/windows/win32/api/winuser/ns-winuser-deleteitemstruct)||
+|[DEVNAMES Yapısı](/windows/win32/api/commdlg/ns-commdlg-devnames)||
 |[DHtmlUrlEventMapEntry Yapısı](../../mfc/reference/dhtmlurleventmapentry-structure.md)||
-|[DRAWITEMSTRUCT Yapısı](/windows/desktop/api/winuser/ns-winuser-tagdrawitemstruct)||
-|[FILETIME Yapısı](/windows/desktop/api/minwinbase/ns-minwinbase-filetime)||
+|[DRAWITEMSTRUCT Yapısı](/windows/win32/api/winuser/ns-winuser-drawitemstruct)||
+|[FILETIME Yapısı](/windows/win32/api/minwinbase/ns-minwinbase-filetime)||
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

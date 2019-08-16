@@ -5,23 +5,23 @@ helpviewer_keywords:
 - ODBC, ODBC classes
 - MFC, database applications
 ms.assetid: 88aabe65-84e3-4122-b636-5d334a5fe570
-ms.openlocfilehash: bf0aa11a020a5d15cd23463c31f2713aba38a037
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b57d71ae2dc4e81f10855dc4075713170af952e4
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62182879"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69500354"
 ---
 # <a name="mfc-database-classes"></a>MFC veritabanı sınıfları
 
 > [!NOTE]
->  Microsoft öneriyor ODBC aracılığıyla Microsoft ODBC sürücüsü 13 (veya üzeri) kullanarak SQL Server için yeni projeler için. DAO artık desteklenmiyor.
+>  Microsoft, yeni projeler için SQL Server için Microsoft ODBC sürücüsü 13 (veya üzeri) aracılığıyla ODBC kullanılmasını önerir. DAO artık desteklenmiyor.
 
 Daha fazla bilgi için aşağıdaki konulara bakın:
 
-- [Veri erişim teknolojileri yol haritası](https://msdn.microsoft.com/library/ms810810.aspx)
+- [Microsoft SQL Server için sürücü geçmişi](/sql/connect/connect-history)
 
-- [SQL Server'ın yayınlanan için ODBC sürücüsü 13.1](https://blogs.technet.microsoft.com/dataplatforminsider/2016/08/03/odbc-driver-13-1-for-sql-server-released/) SQL Server için Microsoft ODBC sürücüsü 13, yeni uygulamalar oluşturabilir veya SQL Server 2016 yeni özelliklerden yararlanmak için ihtiyacı olan mevcut uygulamalar geliştirmek için kullanılmalıdır.
+- [SQL Server yayınlanan ODBC sürücüsü 13,1](https://blogs.technet.microsoft.com/dataplatforminsider/2016/08/03/odbc-driver-13-1-for-sql-server-released/) SQL Server için Microsoft ODBC sürücüsü 13, yeni uygulamalar oluşturmak veya yeni SQL Server 2016 özelliklerinden yararlanmak için gereken mevcut uygulamaları geliştirmek için kullanılmalıdır.
 
 - [ODBC ve MFC](../data/odbc/odbc-and-mfc.md)
 

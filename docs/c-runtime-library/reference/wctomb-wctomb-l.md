@@ -29,16 +29,16 @@ helpviewer_keywords:
 - characters, converting
 - string conversion, multibyte character strings
 ms.assetid: 4a543f0e-5516-4d81-8ff2-3c5206f02ed5
-ms.openlocfilehash: df0abdd644027f9bab8cd177dfd4d0af4c98df35
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6902ff925e49d894f70b0d7083b99388d5271d1d
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62188551"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69500737"
 ---
-# <a name="wctomb-wctombl"></a>wctomb, _wctomb_l
+# <a name="wctomb-_wctomb_l"></a>wctomb, _wctomb_l
 
-Çok baytlı karaktere karşılık gelen bir geniş karakter dönüştürün. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz: [wctomb_s, _wctomb_s_l](wctomb-s-wctomb-s-l.md).
+Geniş bir karakteri karşılık gelen çok baytlı karaktere dönüştürün. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz. [wctomb_s, _wckaldırıldı _s_l](wctomb-s-wctomb-s-l.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -60,29 +60,29 @@ int _wctomb_l(
 Çok baytlı bir karakterin adresi.
 
 *wchar*<br/>
-Bir geniş karakter.
+Geniş bir karakter.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Varsa **wctomb** geniş karakter dönüştürür isteğe bağlı olarak bir çok baytlı karakterin bayt sayısını döndürür (olan hiçbir zaman büyüktür **MB_CUR_MAX**) geniş karakter. Varsa *wchar* geniş karakterli null karakteri (L '\0') **wctomb** 1 döndürür. Hedef işaretçi *mbchar* olduğu **NULL**, **wctomb** 0 döndürür. Geçerli yerel ayarda dönüştürme mümkün değilse, **wctomb** -1 döndürür ve **errno** ayarlanır **EILSEQ**.
+**Wctomb** geniş karakteri çok baytlı bir karaktere dönüştürdüğünde, geniş karakter içindeki bayt sayısını ( **MB_CUR_MAX**' dan büyük olmayan) döndürür. *Wchar* , geniş karakterli null karakterdir (L ' \ 0 '), **wctomb** 1 döndürür. Hedef işaretçi *mbchar* değeri **null**ise, **wctomb** 0 döndürür. Dönüştürme geçerli yerel ayarda mümkün değilse, **wctomb** -1 döndürür ve **errno** , **eilseq**olarak ayarlanır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Wctomb** işlev dönüştürür, *wchar* çok baytlı karaktere karşılık gelen bağımsız değişken ve sonucunda depolar *mbchar*. Herhangi bir programda herhangi bir noktasından işlevi çağırabilir. **wctomb** herhangi bir yerel ayara bağımlı davranış için; geçerli yerel ayarı kullanır **_wctomb_l** aynıdır **wctomb** bunun yerine iletilmiş yerel ayar kullanması hariç, aynıdır. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
+**Wctomb** işlevi, *wchar* bağımsız değişkenini karşılık gelen çok baytlı karaktere dönüştürür ve sonucu *mbchar*üzerinde depolar. İşlevi herhangi bir programda herhangi bir noktadan çağırabilirsiniz. **wctomb** , herhangi bir yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır; **_wckaldırıldı _l** , bunun yerine geçirilen yerel ayarı kullanması dışında **wctomb** ile aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
-**wctomb** kendi parametrelerini doğrular. Varsa *mbchar* olduğu **NULL**, açıklanan şekilde geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse **errno** ayarlanır **EINVAL** ve işlev -1 döndürür.
+**wctomb** , parametrelerini doğrular. *Mbchar* **null**ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, **errno** **EINVAL** olarak ayarlanır ve işlev-1 döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**wctomb**|\<stdlib.h >|
+|**wctomb**|\<Stdlib. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
-Bu program wctomb işlevi davranışını gösterir.
+Bu program wctomb işlevinin davranışını gösterir.
 
 ```cpp
 // crt_wctomb.cpp
@@ -118,4 +118,4 @@ Convert a wide character:
 [mbstowcs, _mbstowcs_l](mbstowcs-mbstowcs-l.md)<br/>
 [mbtowc, _mbtowc_l](mbtowc-mbtowc-l.md)<br/>
 [wcstombs, _wcstombs_l](wcstombs-wcstombs-l.md)<br/>
-[WideCharToMultiByte](/windows/desktop/api/stringapiset/nf-stringapiset-widechartomultibyte)<br/>
+[Widechartoçok baytlı](/windows/win32/api/stringapiset/nf-stringapiset-widechartomultibyte)<br/>

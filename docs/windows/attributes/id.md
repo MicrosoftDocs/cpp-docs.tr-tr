@@ -1,21 +1,21 @@
 ---
-title: Kimliği (C++ COM özniteliği)
+title: kimlik (C++ com özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.id
 helpviewer_keywords:
 - id attribute
 ms.assetid: a48d2c99-c5d2-4f46-bf96-5ac88dcb5d0c
-ms.openlocfilehash: 5faf08418771deda3086a434cff6b1900a37e36e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6f1d1d2b9d147e8b33b3b5fae629e0805971bb71
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62409505"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69501416"
 ---
 # <a name="id"></a>kimlik
 
-Belirtir bir *DISPID* (bir özellik veya bir arabirim veya dispinterface bir yöntem), bir üye işlev için parametre.
+Bir üye işlev için bir *DISPID* parametresi belirtir (bir özellik veya bir yöntem, bir arabirim veya dispınterface).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -25,16 +25,16 @@ Belirtir bir *DISPID* (bir özellik veya bir arabirim veya dispinterface bir yö
 
 ### <a name="parameters"></a>Parametreler
 
-*DISPID*<br/>
-Arabirim yöntemi için gönderme kimliği.
+*dı*<br/>
+Arabirim yöntemi için dağıtım KIMLIĞI.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Kimliği** C++ özniteliği ile aynı işlevlere sahip [kimliği](/windows/desktop/Midl/id) MIDL özniteliği.
+**ID** C++ özniteliği, [ID](/windows/win32/Midl/id) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
 
 ## <a name="example"></a>Örnek
 
-Örneğin bakın [bağlanabilir](bindable.md) nasıl kullanılacağına ilişkin bir örnek **kimliği**.
+**Kimliği**nasıl kullanacağınızı gösteren [](bindable.md) bir örnek için bkz.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -42,12 +42,12 @@ Arabirim yöntemi için gönderme kimliği.
 
 |||
 |-|-|
-|**İçin geçerlidir**|Arabirim yöntemi|
+|**Uygulama hedefi**|Interface yöntemi|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|Yok.|
-|**Geçersiz öznitelikler**|None|
+|**Gerekli öznitelikler**|Yok.|
+|**Geçersiz öznitelikler**|Yok.|
 
-Daha fazla bilgi için [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
+Daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

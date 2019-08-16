@@ -5,84 +5,84 @@ ms.topic: reference
 helpviewer_keywords:
 - collection classes
 ms.assetid: eff95de6-78ef-4212-9d7d-1dacbdd4cc58
-ms.openlocfilehash: 0a91b34dc28ace3a8fc0fe1ac1c59d86b19ece43
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fe795e54274e1d32dddb7310446bfa5aea22091a
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62235231"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69492471"
 ---
 # <a name="collection-classes"></a>Koleksiyon Sınıfları
 
-Aşağıdaki sınıflar, diziler, listeler, haritalar ve ayrıca karşılaştırmaları ve öğe erişimi ile yardımcı olmak için nitelikler yöntemleri için destek sağlar.
+Aşağıdaki sınıflar, karşılaştırmalar ve öğe erişimiyle ilgili yardım için diziler, listeler, haritalar ve ayrıca nitelikler yöntemleri için destek sağlar.
 
-- [CAtlArray](../atl/reference/catlarray-class.md) bu sınıfı bir dizi nesnesi uygular.
+- [CAtlArray](../atl/reference/catlarray-class.md) Bu sınıf bir dizi nesnesi uygular.
 
-- [CAtlList](../atl/reference/catllist-class.md) bu sınıfı oluşturmak ve bir liste nesnesi yönetmek için yöntemler sağlar.
+- [CAtlList](../atl/reference/catllist-class.md) Bu sınıf, bir liste nesnesi oluşturmak ve yönetmek için yöntemler sağlar.
 
-- [CAtlMap](../atl/reference/catlmap-class.md) bu sınıfın sağladığı yöntemlerle oluşturma ve yönetme harita nesnesi.
+- [CAtlMap](../atl/reference/catlmap-class.md) Bu sınıf bir harita nesnesi oluşturmak ve yönetmek için yöntemler sağlar.
 
-- [CAutoPtrArray](../atl/reference/cautoptrarray-class.md) akıllı işaretçiler dizisi oluştururken bu sınıfın sağladığı yöntemlerle yararlıdır.
+- [CAutoPtrArray](../atl/reference/cautoptrarray-class.md) Bu sınıf, akıllı işaretçiler dizisi oluştururken yararlı yöntemler sağlar.
 
-- [CAutoPtrElementTraits](../atl/reference/cautoptrelementtraits-class.md) akıllı işaretçiler koleksiyonları oluştururken bu sınıfı yöntemleri statik işlevler ve tür tanımları yararlı sağlar.
+- [Cautoptrelementnitelikler](../atl/reference/cautoptrelementtraits-class.md) Bu sınıf, akıllı işaretçiler koleksiyonları oluştururken yararlı yöntemler, statik işlevler ve tür tanımları sağlar.
 
-- [CAutoPtrList](../atl/reference/cautoptrlist-class.md) akıllı işaretçiler listesi oluşturulurken, bu sınıfın sağladığı yöntemlerle yararlıdır.
+- [CAutoPtrList](../atl/reference/cautoptrlist-class.md) Bu sınıf, akıllı işaretçiler listesi oluştururken yararlı yöntemler sağlar.
 
-- [CAutoVectorPtrElementTraits](../atl/reference/cautovectorptrelementtraits-class.md) bu sınıfın sağladığı yöntemlerle, statik işlevler ve tür tanımları akıllı işaretçiler kullanarak koleksiyonları oluştururken yararlı vektör new ve delete işleçleri.
+- [Cautovectorptrelementnitelikler](../atl/reference/cautovectorptrelementtraits-class.md) Bu sınıf, vector New ve DELETE işleçlerini kullanarak akıllı işaretçilerin koleksiyonları oluştururken yararlı yöntemler, statik işlevler ve tür tanımları sağlar.
 
-- [Ccomqıptrelementtraits](../atl/reference/ccomqiptrelementtraits-class.md) bu sınıfın sağladığı yöntemlerle, statik işlevler ve tür tanımları COM koleksiyonları oluştururken kullanışlı arabirim işaretçileri.
+- [Ccomqiptrelementnitelikler](../atl/reference/ccomqiptrelementtraits-class.md) Bu sınıf, COM arabirim işaretçilerinden oluşan koleksiyonlar oluştururken yararlı yöntemler, statik işlevler ve tür tanımları sağlar.
 
-- [CComSafeArray](../atl/reference/ccomsafearray-class.md) Bu sınıf için bir sarmalayıcı olan [SAFEARRAY'i veri türü](/windows/desktop/api/oaidl/ns-oaidl-tagsafearray) yapısı.
+- [CComSafeArray](../atl/reference/ccomsafearray-class.md) Bu sınıf, [SAFEARRAY veri türü](/windows/win32/api/oaidl/ns-oaidl-tagsafearray) yapısına yönelik bir sarmalayıcıdır.
 
-- [CComSafeArrayBound](../atl/reference/ccomsafearraybound-class.md) Bu sınıf için bir sarmalayıcı olan bir [SAFEARRAYBOUND](/windows/desktop/api/oaidl/ns-oaidl-tagsafearraybound) yapısı.
+- [CComSafeArrayBound](../atl/reference/ccomsafearraybound-class.md) Bu sınıf, [safearraybound](/windows/win32/api/oaidl/ns-oaidl-tagsafearraybound) yapısına yönelik bir sarmalayıcıdır.
 
-- [CComUnkArray](../atl/reference/ccomunkarray-class.md) Bu sınıf depolar **IUnknown** işaretçileri ve parametre olarak kullanılmak üzere tasarlanmış [Iconnectionpointımpl](../atl/reference/iconnectionpointimpl-class.md) Şablon sınıfı.
+- [CComUnkArray](../atl/reference/ccomunkarray-class.md) Bu sınıf, **IUnknown** işaretçilerini depolar ve [IConnectionPointImpl](../atl/reference/iconnectionpointimpl-class.md) şablon sınıfına parametre olarak kullanılmak üzere tasarlanmıştır.
 
-- [CDefaultCharTraits](../atl/reference/cdefaultchartraits-class.md) Bu sınıf, büyük ve küçük arasındaki karakter dönüştürme için iki statik işlevler sağlar.
+- [Cdefaultcharnitelikler](../atl/reference/cdefaultchartraits-class.md) Bu sınıf, büyük harf ve küçük harf arasında karakterleri dönüştürmek için iki statik işlev sağlar.
 
-- [CDefaultCompareTraits](../atl/reference/cdefaultcomparetraits-class.md) Bu sınıf, varsayılan öğe karşılaştırma işlevleri sağlar.
+- [Cdefaultcomparetoyits](../atl/reference/cdefaultcomparetraits-class.md) Bu sınıf varsayılan öğe karşılaştırma işlevlerini sağlar.
 
-- [CDefaultElementTraits](../atl/reference/cdefaultelementtraits-class.md) Bu sınıf bir koleksiyon sınıfı için varsayılan yöntemleri ve işlevleri sağlar.
+- [Cdefaultelementnitelikler](../atl/reference/cdefaultelementtraits-class.md) Bu sınıf, bir koleksiyon sınıfı için varsayılan yöntemleri ve işlevleri sağlar.
 
-- [CDefaultHashTraits](../atl/reference/cdefaulthashtraits-class.md) karma değerleri hesaplamak için bu sınıfın statik işlev sağlar.
+- [CDefaultHashTraits](../atl/reference/cdefaulthashtraits-class.md) Bu sınıf, karma değerleri hesaplamak için statik bir işlev sağlar.
 
-- [CElementTraits](../atl/reference/celementtraits-class.md) Bu sınıf, koleksiyon sınıfları tarafından taşıma, kopyalama, karşılaştırma ve işlemleri karma yöntemleri ve işlevleri sağlamak için kullanılır.
+- [Celementnitelikler](../atl/reference/celementtraits-class.md) Bu sınıf, taşıma, kopyalama, karşılaştırma ve karma işlemleri için yöntemler ve işlevler sağlamak üzere koleksiyon sınıfları tarafından kullanılır.
 
-- [CElementTraitsBase](../atl/reference/celementtraitsbase-class.md) bu sınıfın varsayılan bir koleksiyon sınıfı için kopyalama ve taşıma yöntemleri sağlar.
+- [CElementTraitsBase](../atl/reference/celementtraitsbase-class.md) Bu sınıf, bir koleksiyon sınıfı için varsayılan kopyalama ve taşıma yöntemleri sağlar.
 
-- [CHeapPtrElementTraits](../atl/reference/cheapptrelementtraits-class.md) yığın işaretçileri koleksiyonları oluştururken bu sınıfı yöntemleri statik işlevler ve tür tanımları yararlı sağlar.
+- [Cheapptrelementnitelikler](../atl/reference/cheapptrelementtraits-class.md) Bu sınıf, yığın işaretçileri koleksiyonları oluştururken yararlı yöntemler, statik işlevler ve tür tanımları sağlar.
 
-- [CHeapPtrList](../atl/reference/cheapptrlist-class.md) yığın işaretçileri listesi oluşturulurken, bu sınıfın sağladığı yöntemlerle yararlıdır.
+- [CHeapPtrList](../atl/reference/cheapptrlist-class.md) Bu sınıf, yığın işaretçileri listesi oluştururken yararlı yöntemler sağlar.
 
-- [Cınterfacearray](../atl/reference/cinterfacearray-class.md) bir COM arabirimi işaretçiler dizisi oluştururken bu sınıfın sağladığı yöntemlerle yararlıdır.
+- [CInterfaceArray](../atl/reference/cinterfacearray-class.md) Bu sınıf bir COM arabirim işaretçileri dizisi oluştururken yararlı yöntemler sağlar.
 
-- [Cınterfacelist](../atl/reference/cinterfacelist-class.md) COM arabirim işaretçilerini listesi oluşturulurken, bu sınıfın sağladığı yöntemlerle yararlıdır.
+- [CInterfaceList](../atl/reference/cinterfacelist-class.md) Bu sınıf, COM arabirim işaretçilerinin bir listesini oluştururken yararlı yöntemler sağlar.
 
-- [CPrimitiveElementTraits](../atl/reference/cprimitiveelementtraits-class.md) bu sınıfın sağladığı yöntemlerle varsayılan ve işlevleri koleksiyon sınıfı için temel veri türlerini oluşur.
+- [Cprimitiveelementnitelikler](../atl/reference/cprimitiveelementtraits-class.md) Bu sınıf, temel veri türlerinden oluşan bir koleksiyon sınıfı için varsayılan yöntemleri ve işlevleri sağlar.
 
-- [CRBMap](../atl/reference/crbmap-class.md) Bu sınıf Red-siyah bir ikili Ağacı'nı kullanarak bir eşleme yapısını temsil eder.
+- [CRBMap](../atl/reference/crbmap-class.md) Bu sınıf, bir eşleme yapısını, kırmızı siyah bir ikili ağacı kullanarak temsil eder.
 
-- [CRBMultiMap](../atl/reference/crbmultimap-class.md) Bu sınıf, her anahtar Red-siyah bir ikili Ağacı'nı kullanarak birden fazla değer ile ilişkilendirilecek izin veren bir eşleme yapısını temsil eder.
+- [CRBMultiMap](../atl/reference/crbmultimap-class.md) Bu sınıf, her anahtarın bir kırmızı siyah ikili ağaç kullanılarak birden çok değerle ilişkilendirilmesine izin veren bir eşleme yapısını temsil eder.
 
-- [CRBTree](../atl/reference/crbtree-class.md) Bu sınıf, oluşturma ve Red-siyah ağaç kullanan yöntemleri sağlar.
+- [CRBTree](../atl/reference/crbtree-class.md) Bu sınıf, kırmızı siyah ağaç oluşturmak ve kullanmak için yöntemler sağlar.
 
-- [CSimpleArray](../atl/reference/csimplearray-class.md) Bu sınıf bir Basit dizi yönetmek için yöntemler sağlar.
+- [CSimpleArray](../atl/reference/csimplearray-class.md) Bu sınıf basit bir diziyi yönetmek için yöntemler sağlar.
 
-- [CSimpleArrayEqualHelper](../atl/reference/csimplearrayequalhelper-class.md) Bu sınıf için Yardımcısı, [CSimpleArray](../atl/reference/csimplearray-class.md) sınıfı.
+- [CSimpleArrayEqualHelper](../atl/reference/csimplearrayequalhelper-class.md) Bu sınıf [CSimpleArray](../atl/reference/csimplearray-class.md) sınıfı için yardımcı olur.
 
-- [CSimpleArrayEqualHelperFalse](../atl/reference/csimplearrayequalhelperfalse-class.md) Bu sınıf için Yardımcısı, [CSimpleArray](../atl/reference/csimplearray-class.md) sınıfı.
+- [CSimpleArrayEqualHelperFalse](../atl/reference/csimplearrayequalhelperfalse-class.md) Bu sınıf [CSimpleArray](../atl/reference/csimplearray-class.md) sınıfı için yardımcı olur.
 
-- [CSimpleMap](../atl/reference/csimplemap-class.md) Bu sınıf, bir basit eşleme dizisi için destek sağlar.
+- [CSimpleMap](../atl/reference/csimplemap-class.md) Bu sınıf bir basit eşleme dizisi için destek sağlar.
 
-- [CSimpleMapEqualHelper](../atl/reference/csimplemapequalhelper-class.md) Bu sınıf için Yardımcısı, [CSimpleMap](../atl/reference/csimplemap-class.md) sınıfı.
+- [CSimpleMapEqualHelper](../atl/reference/csimplemapequalhelper-class.md) Bu sınıf, [CSimpleMap](../atl/reference/csimplemap-class.md) sınıfı için bir yardımcıdır.
 
-- [CSimpleMapEqualHelperFalse](../atl/reference/csimplemapequalhelperfalse-class.md) Bu sınıf için Yardımcısı, [CSimpleMap](../atl/reference/csimplemap-class.md) sınıfı.
+- [CSimpleMapEqualHelperFalse](../atl/reference/csimplemapequalhelperfalse-class.md) Bu sınıf, [CSimpleMap](../atl/reference/csimplemap-class.md) sınıfı için bir yardımcıdır.
 
-- [CStringElementTraits](../atl/reference/cstringelementtraits-class.md) statik işlevler depolama koleksiyon sınıfları tarafından kullanılan bu sınıfın sağladığı `CString` nesneleri.
+- [Cstrıngelementnitelikler](../atl/reference/cstringelementtraits-class.md) Bu sınıf, nesneleri depolayan `CString` koleksiyon sınıfları tarafından kullanılan statik işlevler sağlar.
 
-- [Cstringelementtraitsı](../atl/reference/cstringelementtraitsi-class.md) Bu sınıf koleksiyon sınıfı nesnelerini depolanan dizeleri ilgili statik işlevler sağlar. Benzer [CStringElementTraits](../atl/reference/cstringelementtraits-class.md), ancak büyük küçük harf duyarsız bir karşılaştırma gerçekleştirir.
+- [Cstrıngelementtraitsı](../atl/reference/cstringelementtraitsi-class.md) Bu sınıf, koleksiyon sınıfı nesnelerinde depolanan dizelerle ilişkili statik işlevler sağlar. [Cstrıngelementnitelikler](../atl/reference/cstringelementtraits-class.md)'e benzerdir, ancak büyük/küçük harfe duyarsız karşılaştırmalar gerçekleştirir.
 
-- [CStringRefElementTraits](../atl/reference/cstringrefelementtraits-class.md) Bu sınıf koleksiyon sınıfı nesnelerini depolanan dizeleri ilgili statik işlevler sağlar. Dize nesnelerinin, başvuru olarak ile dağıtılır.
+- [Cstringrefelementnitelikler](../atl/reference/cstringrefelementtraits-class.md) Bu sınıf, koleksiyon sınıfı nesnelerinde depolanan dizelerle ilişkili statik işlevler sağlar. Dize nesneleri başvuru olarak ele alınır.
 
 ## <a name="related-articles"></a>İlgili Makaleler
 
@@ -90,5 +90,5 @@ Aşağıdaki sınıflar, diziler, listeler, haritalar ve ayrıca karşılaştır
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıfına genel bakış](../atl/atl-class-overview.md)<br/>
+[Sınıfa genel bakış](../atl/atl-class-overview.md)<br/>
 [Koleksiyon Sınıfları](../atl/atl-collection-classes.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: Ekleme, düzenleme veya silme denetimleri (C++)'
+title: 'Nasıl yapılır: Denetimleri ekleme, düzenleme veya silme (C++)'
 ms.date: 02/15/2019
 f1_keywords:
 - vc.editors.dialog.dialog
@@ -43,186 +43,186 @@ helpviewer_keywords:
 - RichEdit 1.0 control
 - rich edit controls [C++], RichEdit 1.0
 ms.assetid: 73cef03f-5c8c-456a-87d1-1458dff185cf
-ms.openlocfilehash: 3c311e44a7e618bf932b0f4abf865a523a7fbead
-ms.sourcegitcommit: 8bb2bea1384b290b7570b01608a86c7488ae7a02
+ms.openlocfilehash: b940e94faf710de8ae5bc604b47dc35a1bc290a7
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67400748"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69491175"
 ---
-# <a name="how-to-add-edit-or-delete-controls-c"></a>Nasıl yapılır: Ekleme, düzenleme veya silme denetimleri (C++)
+# <a name="how-to-add-edit-or-delete-controls-c"></a>Nasıl yapılır: Denetimleri ekleme, düzenleme veya silme (C++)
 
-Kullanarak **iletişim kutusu Düzenleyicisi**ekleyebilir, yeniden boyutlandır, Düzenle ve Sil iletişim kutularındaki denetimler. Ayrıca kendi kimliği gibi bir denetimin özelliklerini düzenleyebilir ya da çalışma zamanında başlangıçta görünür olup.
+Iletişim kutusu **düzenleyicisini**kullanarak, iletişim kutularında denetimleri ekleyebilir, yeniden boyutlandırabilir, düzenleyebilir ve silebilirsiniz. Ayrıca, bir denetimin özelliklerini (KIMLIĞI gibi) veya başlangıçta çalışma zamanında görünür olup olmadığını düzenleyebilirsiniz.
 
-**İletişim kutusu Düzenleyicisi** sekme görünür [araç penceresi](/visualstudio/ide/reference/toolbox) çalışırken **iletişim kutusu Düzenleyicisi**. Ayrıca özelleştirebilirsiniz **araç kutusu** penceresi daha kolay kullanım için. Daha fazla bilgi için [araç kutusunu kullanma](/visualstudio/ide/using-the-toolbox) ve [göster veya gizle Araç kutusu penceresini](showing-or-hiding-the-dialog-editor-toolbar.md).
+İletişim kutusu **düzenleyicisinde**çalışırken [araç kutusu penceresinde](/visualstudio/ide/reference/toolbox) **iletişim kutusu Düzenleyicisi** sekmesi görüntülenir. Ayrıca, **araç kutusu** penceresini daha kolay kullanılmak üzere özelleştirebilirsiniz. Daha fazla bilgi için bkz. [araç kutusunu kullanma](/visualstudio/ide/using-the-toolbox) ve [araç kutusu penceresini gösterme veya gizleme](showing-or-hiding-the-dialog-editor-toolbar.md).
 
 > [!TIP]
-> Kullanırken **iletişim kutusu Düzenleyicisi**, çoğu durumda, sık kullanılan komutlar kısayol menüsünü görüntülemek için sağ fare düğmesini seçebilirsiniz.
+> Birçok örnekte **Iletişim kutusu düzenleyicisini**kullanırken, sık kullanılan komutların kısayol menüsünü göstermek için sağ fare düğmesini seçebilirsiniz.
 
-## <a name="add-controls"></a>Denetimler ekleme
+## <a name="add-controls"></a>Denetim Ekle
 
-### <a name="to-add-a-control"></a>Bir denetim eklemek için
+### <a name="to-add-a-control"></a>Denetim eklemek için
 
-1. Sekmeli pencere iletişim kutusu Düzenleyicisi çerçeveyi geçerli belgede olduğundan emin olun. Bir iletişim kutusu geçerli belge değilse göremezsiniz **iletişim kutusu Düzenleyicisi sekmesi** içinde **araç kutusu**.
+1. İletişim kutusu sekmeli pencerenin düzenleyici çerçevesindeki geçerli belge olduğundan emin olun. Bir iletişim kutusu geçerli belge değilse **araç kutusunda** **Iletişim kutusu Düzenleyici sekmesini** görmezsiniz.
 
-1. Üzerinde **iletişim kutusu Düzenleyicisi** sekmesinde **araç kutusu** penceresinde istediğiniz denetimi ya da sonra seçin:
+1. **Araç kutusu** penceresinin **iletişim kutusu düzenleyici** sekmesinde istediğiniz denetimi seçin, sonra aşağıdakilerden birini yapın:
 
-   - İletişim kutusunu denetimi yerleştirmek istediğiniz yeri seçin ve burada seçtiğiniz denetimi görünür.
+   - Denetimi yerleştirmek istediğiniz konumdaki iletişim kutusunu seçin ve denetimin seçtiğiniz yerde görünmesini sağlayabilirsiniz.
 
-   - Sürükle ve bırak denetiminden **araç kutusu** pencere, iletişim kutusu konumuna. Denetimin etrafında taşıyın veya boyutunu veya şeklini değiştirin.
+   - **Araç** kutusu penceresinde denetimi sürükleyip iletişim kutusundaki konuma bırakın. Daha sonra denetimi taşıyabilir veya boyutunu ve şeklini değiştirebilirsiniz.
 
-   - Denetimde çift **araç kutusu** penceresinde, iletişim kutusunda görüntülenir. Denetim yeniden konumlandırmak tercih ettiğiniz konumu.
+   - **Araç** kutusu penceresinde denetime çift tıklayın ve iletişim kutusunda görünür. Denetimi tercih ettiğiniz konuma göre yeniden konumlandırın.
 
 ### <a name="to-add-multiple-controls"></a>Birden çok denetim eklemek için
 
-1. Tutarken **Ctrl** anahtar, bir denetimi seçin **araç kutusu** penceresi.
+1. **CTRL** tuşunu basılı tutarken **araç kutusu** penceresinde bir denetim seçin.
 
-1. Yayın **Ctrl** anahtar ve birçok kez olarak özel denetim eklemek istediğiniz gibi iletişim kutusunu seçin.
+1. **CTRL** tuşunu basılı bırakın ve belirli bir denetimi eklemek istediğiniz sayıda iletişim kutusunu seçin.
 
-1. Tuşuna **Esc** denetimleri yerleştirme durdurmak için.
+1. Denetimleri yerleştirmeyi durdurmak için **ESC** tuşuna basın.
 
-### <a name="to-size-a-control-while-you-add-it"></a>Eklerken denetimi bir boyutu
+### <a name="to-size-a-control-while-you-add-it"></a>Eklerken bir denetimi boyutlandırma
 
-1. Bir denetimi seçin **araç kutusu** penceresi.
+1. **Araç kutusu** penceresinde bir denetim seçin.
 
-1. Yeni Denetim, iletişim kutusunda sol üst köşesindeki istediğiniz işaretçileri görünen imleci yerleştirin.
+1. Yeni denetimin sağ üst köşesinin iletişim kutusunda olmasını istediğiniz imlecinizi, artı artı olarak görünen imlecinizi yerleştirin.
 
-1. Seçin ve iletişim kutusunda, denetimin sol üst köşesinin bağlantı için fare düğmesini basılı tutun. Denetimin istediğiniz boyuta kadar imleç sağa ve aşağı doğru sürükleyin.
+1. İletişim kutusunda denetiminizin sol üst köşesine bağlamak için fare düğmesini seçin ve basılı tutun. Ardından, denetim istediğiniz boyuta gelinceye kadar imleci sağa ve aşağı sürükleyin.
 
    > [!NOTE]
-   > Dört köşe, çizim denetimi sabitleyebilirsiniz. Bu yordam üst sol löşede örnek olarak kullanılır.
+   > Çizim yaptığınız denetimin dört köşelerinden herhangi birini bağlayabilirsiniz. Bu yordam örnek olarak sol üst köşeyi kullandı.
 
-1. Fare düğmesini bırakın. İletişim kutusunda, belirtilen boyut üzerine denetimini kapatır.
+1. Fare düğmesini bırakın. Denetim, belirttiğiniz boyuttaki iletişim kutusunun üzerine yükler.
 
 > [!TIP]
-> İletişim kutusuna boyutlandırma kenarlığı denetimin taşıyarak bırakmadan sonra denetimi yeniden boyutlandırabilirsiniz. Daha fazla bilgi için [tek denetimleri boyutlandırma](../windows/sizing-individual-controls.md).
+> Denetimin kenarlığının boyutlandırma tutamaçlarını taşıyarak iletişim kutusuna bırakarak denetimi yeniden boyutlandırabilirsiniz. Daha fazla bilgi için bkz. [tek denetimleri boyutlandırma](../windows/sizing-individual-controls.md).
 
-### <a name="to-add-a-custom-control"></a>Özel denetim eklemek için
+### <a name="to-add-a-custom-control"></a>Özel bir denetim eklemek için
 
-İletişim kutusuna özel denetimleri ekleyebilirsiniz. Seçin **özel denetim** simgesini **araç kutusu** , iletişim kutusuna sürükleyin. Eklemek için bir `Syslink` denetimi, bir özel denetim eklemek ve ardından denetimin değiştirme **sınıfı** özelliğini `Syslink`. Bu eylem yenileyin ve göstermek için özellikleri neden olacak `Syslink` denetim özellikleri. MFC sarmalayıcı sınıfı hakkında daha fazla bilgi için bkz. [CLinkCtrl](../mfc/reference/clinkctrl-class.md).
+İletişim kutusuna özel denetimler ekleyebilirsiniz. **Araç kutusu** ' nda **özel denetim** simgesini seçin ve iletişim kutusuna sürükleyin. Bir `Syslink` denetim eklemek için özel bir denetim ekleyin, sonra denetimin **Class** özelliğini olarak `Syslink`değiştirin. Bu eylem, özelliklerin yenilenmesini ve `Syslink` denetim özelliklerini göstermesini sağlar. MFC sarmalayıcı sınıfı hakkında daha fazla bilgi için bkz. [CLinkCtrl](../mfc/reference/clinkctrl-class.md).
 
-## <a name="edit-controls"></a>Düzenleme denetimleri
+## <a name="edit-controls"></a>Denetimleri Düzenle
 
-### <a name="to-edit-the-properties-of-a-control-or-controls"></a>Bir denetim veya denetimlerin özelliklerini düzenlemek için
+### <a name="to-edit-the-properties-of-a-control-or-controls"></a>Bir denetimin veya denetimlerin özelliklerini düzenlemek için
 
 1. İletişim kutusunda, değiştirmek istediğiniz denetimi seçin.
 
    > [!NOTE]
-   > Birden çok denetim seçerseniz yalnızca seçili denetimleri ortak özelliklerini düzenleyebilirsiniz.
+   > Birden çok denetim seçerseniz, yalnızca seçili denetimlerde ortak olan özellikler düzenlenebilir.
 
-1. İçinde [Özellikler penceresi](/visualstudio/ide/reference/properties-window), denetim özelliklerini değiştirin.
+1. [Özellikler penceresi](/visualstudio/ide/reference/properties-window), denetiminizin özelliklerini değiştirin.
 
    > [!NOTE]
-   > Ayarladığınızda **bit eşlem** özelliği için bir düğme, radyo düğmesinin veya onay kutusu denetimi eşit **True**, bs_bıtmap denetim için uygulanan stili. Daha fazla bilgi için [düğme stilleri](../mfc/reference/styles-used-by-mfc.md#button-styles). Bir bit eşlem bir denetimle ilişkilendirme ilişkin bir örnek için bkz [CButton::SetBitmap](../mfc/reference/cbutton-class.md#setbitmap). Bit eşlemler içerikteyken denetiminizi görünmez **iletişim kutusu Düzenleyicisi**.
+   > Bir düğme, radyo düğmesi veya onay kutusu denetiminin **bit eşlem** özelliğini **true**değerine EŞITSE, denetiminiz için BS_BITMAP stili uygulanır. Daha fazla bilgi için bkz. [düğme stilleri](../mfc/reference/styles-used-by-mfc.md#button-styles). Bir bitmapi bir denetimle ilişkilendirme örneği için bkz. [CButton:: SetBit eşlem](../mfc/reference/cbutton-class.md#setbitmap). **Iletişim kutusu Düzenleyicinizde**, bit eşlemler denetiminiz üzerinde görünmez.
 
-### <a name="to-undo-changes-to-the-properties-of-a-control"></a>Bir denetimin özelliklerini değişiklikleri geri almak için
+### <a name="to-undo-changes-to-the-properties-of-a-control"></a>Bir denetimin özelliklerinde yapılan değişiklikleri geri almak için
 
-1. Denetim odağa sahip olduğundan emin olun **iletişim kutusu Düzenleyicisi**.
+1. Denetimin **Iletişim kutusu düzenleyicisine**odaklanıp bulunmadığından emin olun.
 
-1. Menü Git **Düzenle** > **geri**. Odak denetimde değilse **geri** komutu kullanılamaz.
+1. Menüyü **Düzenle** > **geri al**'a gidin. Odak denetimde yoksa, **geri al** komutu kullanılamaz olur.
 
-### <a name="to-define-a-member-variable-for-a-non-button-dialog-box-control"></a>(Düğme olmayan) iletişim kutusu denetimi için bir üye değişkeni tanımlamak için
+### <a name="to-define-a-member-variable-for-a-non-button-dialog-box-control"></a>Bir (düğme dışı) iletişim kutusu denetimi için bir üye değişkeni tanımlamak için
 
 > [!NOTE]
-> Bu işlem yalnızca bir MFC projesi içinde iletişim kutusu denetimleri için geçerlidir. ATL projeleri kullanması gereken **yeni Windows iletileri ve olay işleyicileri** iletişim kutusu. Daha fazla bilgi için [ileti türlerini kullanıcı arabirimi nesneleri ile ilişkili](../mfc/reference/message-types-associated-with-user-interface-objects.md), [ileti işleyicisini düzenleme](../mfc/reference/editing-a-message-handler.md), ve [için yansıtılan iletiiletiişleyicisitanımlama](../mfc/reference/defining-a-message-handler-for-a-reflected-message.md).
+> Bu işlem yalnızca bir MFC projesi içindeki iletişim kutusu denetimleri için geçerlidir. ATL projeleri **Yeni Windows iletileri ve olay işleyicileri** iletişim kutusunu kullanmalıdır. Daha fazla bilgi için bkz. [Kullanıcı arabirimi nesneleriyle Ilişkili Ileti türleri](../mfc/reference/message-types-associated-with-user-interface-objects.md), [ileti Işleyicisini düzenlemeyle](../mfc/reference/editing-a-message-handler.md)ve [yansıtılan bir ileti için ileti işleyicisi tanımlama](../mfc/reference/defining-a-message-handler-for-a-reflected-message.md).
 
-1. İçinde [iletişim kutusu Düzenleyicisi](../windows/dialog-editor.md), bir denetim seçin.
+1. [Iletişim kutusu düzenleyicisinde](../windows/dialog-editor.md)bir denetim seçin.
 
-1. Tuşlarına basarak çalışırken **Ctrl** anahtar, iletişim kutusu denetimini çift tıklayın.
+1. **CTRL** tuşuna basıldığında iletişim kutusu denetimine çift tıklayın.
 
-   [Üye değişkeni Ekleme Sihirbazı'nı](../ide/add-member-variable-wizard.md) görünür.
+   [Üye değişkeni Ekleme Sihirbazı](../ide/add-member-variable-wizard.md) görünür.
 
-1. İlgili bilgileri yazın **üye değişkeni ekleme** Sihirbazı. Daha fazla bilgi için [iletişim kutusu veri değişimi](../mfc/dialog-data-exchange.md).
+1. **Üye değişkeni ekleme** sihirbazına ilgili bilgileri yazın. Daha fazla bilgi için bkz. [Iletişim kutusu veri değişimi](../mfc/dialog-data-exchange.md).
 
-1. Seçin **Tamam** dönmek için **iletişim kutusu Düzenleyicisi**.
+1. **Iletişim kutusu düzenleyicisine**dönmek için **Tamam ' ı** seçin.
 
 > [!TIP]
-> Herhangi bir iletişim kutusu denetiminden mevcut işleyicisine atlamak için denetimi çift tıklatın.
+> Herhangi bir iletişim kutusu denetiminden mevcut işleyicisine geçmek için denetime çift tıklayın.
 
-Ayrıca **üye değişkenleri** sekmesinde [MFC Sınıf Sihirbazı](../mfc/reference/mfc-class-wizard.md) belirli bir sınıf için yeni üye değişkenleri ekleyip zaten tanımlı üye değişkenlerine görüntüleyin.
+Ayrıca, belirtilen bir sınıf için yeni üye değişkenleri eklemek ve önceden tanımlı üye değişkenlerini görüntülemek için [MFC sınıf Sihirbazı](../mfc/reference/mfc-class-wizard.md) 'Ndaki **üye değişkenleri** sekmesini de kullanabilirsiniz.
 
 ## <a name="delete-controls"></a>Denetimleri Sil
 
-İletişim kutusunda bir denetimi tuşuna **Sil** anahtar veya menüsüne gidin **Düzenle** > **Sil**.
+İletişim kutusunda, denetimi seçin, ardından **Delete** tuşuna basın veya menü **Düzenle** > **Sil**' e gidin.
 
 ## <a name="other-issues"></a>Diğer Sorunlar
 
 ### <a name="troubleshooting"></a>Sorun giderme
 
-Bir iletişim kutusu için bir ortak denetimi veya zengin düzenleme denetimi ekledikten sonra iletişim kutusunu test ettiğinizde görünmez. Veya iletişim görünmez. Örneğin:
+İletişim kutusuna ortak denetim veya zengin düzenleme denetimi ekledikten sonra, iletişim kutusunu test ettiğinizde görünmez. Ya da iletişim kutusu görünmez. Örneğin:
 
-1. Bir Windows uygulaması (konsol uygulaması değil) oluşturmak için uygulama ayarları değiştirme bir Win32 projesi oluşturun.
+1. Bir Windows uygulaması (konsol uygulaması değil) oluşturmak için uygulama ayarlarını değiştirerek bir Win32 projesi oluşturun.
 
-1. İçinde [kaynak görünümü](how-to-create-a-resource-script-file.md#create-resources), çift tıklayarak *.rc* dosya.
+1. [Kaynak görünümü](how-to-create-a-resource-script-file.md#create-resources), *. RC* dosyasına çift tıklayın.
 
-1. İletişim seçeneği altında çift **hakkında** kutusu.
+1. İletişim kutusu seçeneğinde **hakkında** kutusuna çift tıklayın.
 
-1. Ekleme bir **IP adresi denetimi** iletişim kutusu.
+1. İletişim kutusuna bir **IP adresi denetimi** ekleyin.
 
-1. Kaydet ve **tümünü yeniden derle**.
+1. Tümünü kaydedin ve **yeniden derleyin**.
 
-1. Programı çalıştırın.
+1. Programı yürütün.
 
-1. İletişim kutusunun üzerinde **yardımcı** menüsünde **hakkında** komutu ve herhangi bir iletişim kutusu görüntülenir gözlemleyin.
+1. İletişim kutusunun **Yardım** menüsünde, **hakkında** komutunu seçin ve Hayır iletişim kutusu görüntülenir.
 
-Şu anda **iletişim kutusu Düzenleyicisi** otomatik olarak kod projenize aşağıdaki ortak denetimleri sürükleyip veya zengin düzenleme denetimleri bir iletişim kutusu üzerine eklemez. Ya da bu sorun ortaya çıktığında, Visual Studio bir hata veya uyarı sağlar. Sorunu gidermek için el ile denetim için kod ekleyin.
+Şu anda, iletişim kutusunda aşağıdaki ortak denetimleri veya zengin düzenleme denetimlerini sürükleyip bıraktığınızda, **iletişim kutusu Düzenleyicisi** projenize otomatik olarak kod eklemez. Visual Studio, bu sorun oluştuğunda bir hata veya uyarı sağlar. Onarmak için, denetimin kodunu el ile ekleyin.
 
 ||||
 |-|-|-|
-|Kaydırıcı denetimi|Ağaç denetimi|Tarih Saat Seçici|
+|Kaydırıcı denetimi|Ağaç denetimi|Tarih saat seçici|
 |Döndürme denetimi|Sekme denetimi|Aylık takvim|
 |İlerleme denetimi|Animasyon denetimi|IP adresi denetimi|
 |Kısayol tuşu|Zengin düzenleme denetimi|Genişletilmiş Birleşik giriş kutusu|
-|Liste denetimi|Zengin düzenleme 2.0 denetimi|Özel Denetim|
+|Liste denetimi|Zengin düzenleme 2,0 denetimi|Özel denetim|
 
-İletişim kutusunda ortak denetimleri kullanmak için çağrı gerekir [InitCommonControlsEx](/windows/desktop/api/commctrl/nf-commctrl-initcommoncontrolsex) veya `AFXInitCommonControls` iletişim kutusu oluşturmadan önce.
+İletişim kutusu üzerinde ortak denetimleri kullanmak için, [InitCommonControlsEx](/windows/win32/api/commctrl/nf-commctrl-initcommoncontrolsex) ' ı çağırmanız veya `AFXInitCommonControls` iletişim kutusunu oluşturmadan önce bunu yapmanız gerekir.
 
-RichEdit denetimleri kullanmak için çağırmalıdır `LoadLibrary`. Daha fazla bilgi için [hakkında zengin düzenleme denetimleri](/windows/desktop/Controls/about-rich-edit-controls) Windows SDK ve [zengin düzenleme denetimine genel bakış](../mfc/overview-of-the-rich-edit-control.md).
+RichEdit denetimlerini kullanmak için çağrısı `LoadLibrary`yapmanız gerekir. Daha fazla bilgi için bkz. Windows SDK [zengin düzenleme denetimleri](/windows/win32/Controls/about-rich-edit-controls) ve [zengin düzenleme denetimine genel bakış](../mfc/overview-of-the-rich-edit-control.md).
 
 > [!NOTE]
-> MFC ile RichEdit denetimini kullanmak için öncelikle çağırmalısınız [Afxınitrichedit2](../mfc/reference/application-information-and-management.md#afxinitrichedit2) RichEdit 2.0 denetimi (RICHED20. yüklemek için DLL) veya çağrı [Afxınitrichedit](../mfc/reference/application-information-and-management.md#afxinitrichedit) eski RichEdit 1.0 denetimini (RICHED32. yüklemek için DLL).
+> Bir RichEdit denetimini MFC ile birlikte kullanmak için, öncelikle [AfxInitRichEdit2](../mfc/reference/application-information-and-management.md#afxinitrichedit2) öğesini çağırıp RichEdit 2,0 DENETIMINI (RICHED20) yüklemeniz gerekir. DLL) veya eski RichEdit 1,0 denetimini (RICHED32) yüklemek için [AfxInitRichEdit](../mfc/reference/application-information-and-management.md#afxinitrichedit) 'i çağırın. DLL).
 >
-> Geçerli kullanabilir [CRichEditCtrl](../mfc/reference/cricheditctrl-class.md) eski RichEdit 1.0 denetimi sınıfıyla ancak `CRichEditCtrl` yalnızca 2.0 RichEdit denetimini desteklemek için tasarlanmıştır. RichEdit 1.0 ve 2.0 RichEdit benzer olduğundan, çoğu yöntemleri çalışır. Ancak, bazı yöntemler yanlış çalışmasına veya hiç çalışmıyor 1.0 ve 2.0 denetimlerini, arasındaki bazı farklar vardır.
+> Geçerli [CRichEditCtrl](../mfc/reference/cricheditctrl-class.md) sınıfını eski RichEdit 1,0 denetimiyle kullanabilirsiniz, ancak `CRichEditCtrl` yalnızca RichEdit 2,0 denetimini destekleyecek şekilde tasarlanmıştır. RichEdit 1,0 ve RichEdit 2,0 benzer olduğundan çoğu Yöntem çalışacaktır. Ancak, 1,0 ve 2,0 denetimleri arasında bazı farklılıklar vardır. bu nedenle bazı yöntemler yanlış çalışabilir veya hiç çalışmayabilir.
 
 ### <a name="activex-controls"></a>ActiveX Denetimleri
 
-Visual Studio, iletişim kutusuna ActiveX denetimleri eklemenize olanak tanır. Daha fazla bilgi için [MFC ActiveX denetimleri](../mfc/mfc-activex-controls.md) ve [ActiveX denetim kapsayıcıları](../mfc/activex-control-containers.md).
+Visual Studio, iletişim kutusuna ActiveX denetimleri eklemenize olanak sağlar. Daha fazla bilgi için bkz. [MFC ActiveX denetimleri](../mfc/mfc-activex-controls.md) ve [ActiveX denetim kapsayıcıları](../mfc/activex-control-containers.md).
 
-**ActiveX denetimi Ekle** iletişim kutusu kullanırken, iletişim kutusuna ActiveX denetimleri eklemenize olanak sağlayan [iletişim kutusu Düzenleyicisi](../windows/dialog-editor.md). Bu iletişim kutusunda, aşağıdaki özellikleri içerir:
+**ActiveX denetimi Ekle** iletişim kutusu, Iletişim kutusu [düzenleyicisini](../windows/dialog-editor.md)kullanırken iletişim kutusuna ActiveX denetimleri eklemenize olanak sağlar. Bu iletişim kutusu aşağıdaki özellikleri içerir:
 
 |Özellik|Açıklama|
 |---|---|
-|**ActiveX denetimi**|ActiveX denetimleri listesini görüntüler.<br/><br/>Bu iletişim kutusundan bir denetim ekleme, bir sarmalayıcı sınıfı oluşturmaz. Sarmalayıcı sınıf ihtiyacınız varsa, [sınıf görünümü](/visualstudio/ide/viewing-the-structure-of-code) oluşturmak için bkz: [sınıf ekleme](../ide/adding-a-class-visual-cpp.md).<br/><br/>Bu iletişim kutusunda ActiveX denetimi görünmüyorsa, satıcının yönergelerine göre denetim yükleme deneyin.|
-|**Yolu**|ActiveX denetimi içinde bulunan dosyayı görüntüler.|
+|**ActiveX denetimi**|ActiveX denetimlerinin bir listesini görüntüler.<br/><br/>Bu iletişim kutusundan bir denetim eklemek sarmalayıcı sınıfı oluşturmaz. Sarmalayıcı sınıfa ihtiyacınız varsa, oluşturmak için [sınıf görünümü](/visualstudio/ide/viewing-the-structure-of-code) kullanın, bkz. [sınıf ekleme](../ide/adding-a-class-visual-cpp.md).<br/><br/>ActiveX denetimi bu iletişim kutusunda görünmezse, denetimi satıcının yönergelerine göre yüklemeyi deneyin.|
+|**Yolu**|ActiveX denetiminin bulunduğu dosyayı görüntüler.|
 
 > [!CAUTION]
-> ActiveX denetimleri, sisteminizdeki tüm dağıtmak için geçerli olmayabilir. Denetimleri yüklü yazılımlar için lisans sözleşmesi bakın veya yazılım şirketine başvurun.
+> Sisteminizdeki tüm ActiveX denetimlerini dağıtmak yasal olmayabilir. Denetimleri yükleyen yazılım için lisans sözleşmesine başvurun veya yazılım şirketiyle iletişim kurun.
 
 #### <a name="to-add-an-activex-control"></a>ActiveX denetimi eklemek için
 
-1. Açık bir iletişim kutusunda **iletişim kutusu Düzenleyicisi**.
+1. **İletişim kutusu düzenleyicisinde**bir iletişim kutusu açın.
 
-1. İletişim kutusunun gövdesinde herhangi bir yere sağ tıklayıp **ActiveX denetimi Ekle**.
+1. İletişim kutusunun gövdesinde herhangi bir yere sağ tıklayın ve **ActiveX denetimi Ekle**' yi seçin.
 
-   **ActiveX denetimi Ekle** iletişim kutusu görüntülenirse, sisteminizdeki tüm ActiveX denetimlerini gösterme. ActiveX denetimi dosyasının yolu iletişim kutusunun en altında görünür.
+   Sisteminizdeki tüm ActiveX denetimlerini gösteren **ActiveX denetimi Ekle** iletişim kutusu görünür. İletişim kutusunun en altında, ActiveX Denetim dosyasının yolu görüntülenir.
 
-1. Seçin ve iletişim kutusuna, eklemek istediğiniz denetimi seçin **Tamam**.
+1. İletişim kutusuna eklemek istediğiniz denetimi seçin ve **Tamam**' ı seçin.
 
-   Denetim, düzenlemek veya başka bir denetimde olduğu gibi işleyicileri için oluşturma iletişim kutusunda görüntülenir.
+   Denetim, iletişim kutusunda görünür, burada, diğer denetimleri yaptığınız gibi onu düzenleyebilir veya işleyicileri oluşturabilirsiniz.
 
 > [!TIP]
-> Kısayol menüsünde kullanabileceğiniz **iletişim kutusu Düzenleyicisi** hızlı bir şekilde iletişim kutusuna kayıtlı ActiveX denetimleri ekleme veya ActiveX denetimlerini eklemeyi deneyin **araç kutusu** penceresi kolay erişim için.
+> İletişim kutusuna kayıtlı ActiveX denetimlerini hızlıca eklemek veya kolay erişim için **araç kutusu** penceresine ActiveX denetimleri eklemeyi denemek için **iletişim kutusu düzenleyicisindeki** kısayol menüsünü kullanabilirsiniz.
 
-#### <a name="to-edit-properties-for-an-activex-control"></a>ActiveX denetimi özelliklerini düzenlemek için
+#### <a name="to-edit-properties-for-an-activex-control"></a>ActiveX denetiminin özelliklerini düzenlemek için
 
-ActiveX denetimleri bağımsız satıcıları tarafından sağlanan kendi özellikleri ve özellikleri ile donatıldı gelebilir. Bu özellikler görüntülenir **özellikleri** penceresi. ActiveX denetiminin yazarlar tarafından oluşturulan tüm özellik sayfaları görüntülenen **özellikler sayfaları** iletişim kutusu. (Görüntülenecek **özellik sayfası** belirli bir ActiveX denetimi seçin **özellik sayfası** düğmesine [Özellikler penceresi](/visualstudio/ide/reference/properties-window)).
+Bağımsız satıcılar tarafından sağlanan ActiveX denetimleri kendi özellikleri ve özellikleriyle donatılmış olabilir. Bu özellikler **Özellikler** penceresinde görüntülenir. ActiveX denetiminin yazarları tarafından oluşturulan tüm özellik sayfaları, **Özellikler sayfaları** iletişim kutusunda görüntülenir. (Belirli bir ActiveX denetiminin **özellik sayfasını** görüntülemek için [Özellikler penceresi](/visualstudio/ide/reference/properties-window)) **özellik sayfası** düğmesini seçin.
 
-- Seçin **ActiveX** menüsüne gidin ve Denetim **görünümü** > **özellik sayfası** özelliklerini görüntülemek için. Özellik sayfasında gerekli değişiklikleri yapın.
+- Özellikleri görüntülemek için **ActiveX** denetimini seçin ve menü **görünümü** > **özellik sayfasına** gidin. Özellik sayfasında gerektiğinde değişiklik yapın.
 
-   Çeşitli sekmelere ActiveX denetiminin bir parçası olarak gelen özellik sayfalarını bağlı olarak bir ActiveX denetimi için özellik sayfası görüntülenir.
+   ActiveX denetiminin bir parçası olarak gelen özellik sayfalarına bağlı olarak, ActiveX denetiminin özellik sayfasında çeşitli sekmeler görüntülenir.
 
 > [!NOTE]
-> Bu yordam özellik sayfasını kullanarak ActiveX denetimlerini düzenlemek için geçerlidir. Ayrıca göz atabilir ve ActiveX özellikleri yeni Düzenle **özellikleri** penceresi.
+> Bu yordam, ActiveX denetimlerini düzenlemek için özellik sayfasını kullanma için geçerlidir. Ayrıca, yeni **Özellikler** penceresinde ActiveX özelliklerine gözatabilir ve bunları düzenleyebilirsiniz.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -230,7 +230,7 @@ Win32
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İletişim kutusu denetimleri yönetme](controls-in-dialog-boxes.md)<br/>
+[Iletişim kutusu denetimlerini Yönet](controls-in-dialog-boxes.md)<br/>
 [Nasıl yapılır: Düzen Denetimleri](arrangement-of-controls-on-dialog-boxes.md)<br/>
 [Nasıl yapılır: Denetim Erişimini ve Değerlerini Tanımlama](defining-mnemonics-access-keys.md)
 

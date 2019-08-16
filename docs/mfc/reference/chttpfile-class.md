@@ -26,12 +26,12 @@ helpviewer_keywords:
 - CHttpFile [MFC], SendRequest
 - CHttpFile [MFC], SendRequestEx
 ms.assetid: 399e7c68-bbce-4374-8c55-206e9c7baac6
-ms.openlocfilehash: ff050a89a10c68c639c141891dd51b1b2d58e105
-ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
+ms.openlocfilehash: 0c8c401b43361a5e1472e3470f5ea452c91b957f
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68915992"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69505956"
 ---
 # <a name="chttpfile-class"></a>CHttpFile sınıfı
 
@@ -126,7 +126,7 @@ Eklenecek istek üst bilgisini veya üst bilgileri içeren bir [CString](../../a
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi takdirde 0. Çağrı başarısız olursa, hatanın nedenini öğrenmek için [](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) WIN32 Win32 işlevi çağrılabilir.
+Başarılı olursa sıfır dışı; Aksi takdirde 0. Çağrı başarısız olursa, hatanın nedenini öğrenmek için [](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) WIN32 Win32 işlevi çağrılabilir.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -198,10 +198,10 @@ BOOL EndRequest(
 ### <a name="parameters"></a>Parametreler
 
 *dwFlags*<br/>
-İşlemi açıklayan bayraklar. Uygun bayrakların bir listesi için, Windows SDK [HttpEndRequest](/windows/desktop/api/wininet/nf-wininet-httpendrequesta) bölümüne bakın.
+İşlemi açıklayan bayraklar. Uygun bayrakların bir listesi için, Windows SDK [HttpEndRequest](/windows/win32/api/wininet/nf-wininet-httpendrequestw) bölümüne bakın.
 
 *lpBuffIn*<br/>
-İşlem için kullanılan giriş arabelleğini açıklayan başlatılmış bir [INTERNET_BUFFERS](/windows/desktop/api/wininet/ns-wininet-internet_buffersa) işaretçisi.
+İşlem için kullanılan giriş arabelleğini açıklayan başlatılmış bir [INTERNET_BUFFERS](/windows/win32/api/wininet/ns-wininet-internet_buffersw) işaretçisi.
 
 *dwContext*<br/>
 `CHttpFile` İşlemin bağlam tanımlayıcısı. Bu parametre hakkında daha fazla bilgi için bkz. açıklamalar.
@@ -293,7 +293,7 @@ Sorgulanacak özniteliğin bir birleşimi ve istenen bilgi türünü belirten a�
 
 - HTTP_QUERY_FLAG_REQUEST_HEADERS genellikle uygulama, yanıt üst bilgilerini sorgular, ancak bir uygulama bu bayrağı kullanarak istek üstbilgilerini de sorgulayabilir.
 
-- HTTP_QUERY_FLAG_SYSTEMTIME değeri bir tarih/saat dizesi olan ("son değiştirilme zamanı" gibi), bu bayrak üst bilgi değerini uygulamanın verileri ayrıştırmasına gerek olmayan standart bir Win32 [SystemTime](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) yapısı olarak döndürür. Bu bayrağı kullanırsanız, işlevini `SYSTEMTIME` geçersiz kılmayı kullanmak isteyebilirsiniz.
+- HTTP_QUERY_FLAG_SYSTEMTIME değeri bir tarih/saat dizesi olan ("son değiştirilme zamanı" gibi), bu bayrak üst bilgi değerini uygulamanın verileri ayrıştırmasına gerek olmayan standart bir Win32 [SystemTime](/windows/win32/api/minwinbase/ns-minwinbase-systemtime) yapısı olarak döndürür. Bu bayrağı kullanırsanız, işlevini `SYSTEMTIME` geçersiz kılmayı kullanmak isteyebilirsiniz.
 
 - Değer, durum kodu gibi bir sayı olan bu üstbilgiler Için HTTP_QUERY_FLAG_NUMBER, bu bayrak, verileri 32 bitlik bir sayı olarak döndürür.
 
@@ -315,11 +315,11 @@ Döndürülen bilgileri alan [CString](../../atl-mfc-shared/reference/cstringt-c
 Bir dizin değeri. Bkz. *lpdwIndex*.
 
 *pSysTime*<br/>
-Win32 [SystemTime](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) yapısına yönelik bir işaretçi.
+Win32 [SystemTime](/windows/win32/api/minwinbase/ns-minwinbase-systemtime) yapısına yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi takdirde 0. Çağrı başarısız olursa, hatanın nedenini öğrenmek için [](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) WIN32 Win32 işlevi çağrılabilir.
+Başarılı olursa sıfır dışı; Aksi takdirde 0. Çağrı başarısız olursa, hatanın nedenini öğrenmek için [](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) WIN32 Win32 işlevi çağrılabilir.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -398,7 +398,7 @@ Bir durum koduna başvuru. Durum kodları, istenen olayın başarısını veya b
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi takdirde 0. Çağrı başarısız olursa, hatanın nedenini öğrenmek için [](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) WIN32 Win32 işlevi çağrılabilir.
+Başarılı olursa sıfır dışı; Aksi takdirde 0. Çağrı başarısız olursa, hatanın nedenini öğrenmek için [](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) WIN32 Win32 işlevi çağrılabilir.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -485,13 +485,13 @@ BOOL SendRequestEx(
 İstekte gönderilecek bayt sayısı.
 
 *dwFlags*<br/>
-İşlemi açıklayan bayraklar. Uygun bayrakların bir listesi için, Windows SDK bkz. [HttpSendRequestEx](/windows/desktop/api/wininet/nf-wininet-httpsendrequestexa) .
+İşlemi açıklayan bayraklar. Uygun bayrakların bir listesi için, Windows SDK bkz. [HttpSendRequestEx](/windows/win32/api/wininet/nf-wininet-httpsendrequestexw) .
 
 *dwContext*<br/>
 `CHttpFile` İşlemin bağlam tanımlayıcısı. Bu parametre hakkında daha fazla bilgi için bkz. açıklamalar.
 
 *lpBuffIn*<br/>
-İşlem için kullanılan giriş arabelleğini açıklayan başlatılmış bir [INTERNET_BUFFERS](/windows/desktop/api/wininet/ns-wininet-internet_buffersa) işaretçisi.
+İşlem için kullanılan giriş arabelleğini açıklayan başlatılmış bir [INTERNET_BUFFERS](/windows/win32/api/wininet/ns-wininet-internet_buffersw) işaretçisi.
 
 *lpBuffOut*<br/>
 İşlem için kullanılan çıkış arabelleğini açıklayan başlatılmış bir INTERNET_BUFFERS işaretçisi.

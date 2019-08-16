@@ -22,19 +22,19 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlTemporaryFile class
 ms.assetid: 05f0f2a5-94f6-4594-8dae-b114292ff5f9
-ms.openlocfilehash: c1da5037deb0143c6d05009baccc8c1553616028
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d6a7a61d1886a264f8575e8d7325d6639d21338d
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62246908"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69497707"
 ---
 # <a name="catltemporaryfile-class"></a>CAtlTemporaryFile sınıfı
 
-Bu sınıf, oluşturulmasını ve kullanımını geçici bir dosya için yöntemler sağlar.
+Bu sınıf, geçici bir dosyanın oluşturulması ve kullanılması için yöntemler sağlar.
 
 > [!IMPORTANT]
->  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.
+>  Bu sınıf ve üyeleri Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -49,46 +49,46 @@ class CAtlTemporaryFile
 |Ad|Açıklama|
 |----------|-----------------|
 |[CAtlTemporaryFile::CAtlTemporaryFile](#catltemporaryfile)|Oluşturucu.|
-|[CAtlTemporaryFile:: ~ CAtlTemporaryFile](#dtor)|Yıkıcı.|
+|[CAtlTemporaryFile:: ~ CAtlTemporaryFile](#dtor)|Yok edicisi.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CAtlTemporaryFile::Close](#close)|Geçici bir dosya kapatmak için bu yöntemi çağırın ve ya da içeriğini silin veya bunları altında belirtilen dosya adı depolar.|
-|[CAtlTemporaryFile::Create](#create)|Geçici bir dosya oluşturmak için bu yöntemi çağırın.|
-|[CAtlTemporaryFile::Flush](#flush)|Geçici bir dosyaya yazılacak dosya arabelleğinde kalan herhangi bir veri zorlamak için bu yöntemi çağırın.|
-|[CAtlTemporaryFile::GetPosition](#getposition)|Geçerli dosya işaretçisi konumunu almak için bu yöntemi çağırın.|
-|[CAtlTemporaryFile::GetSize](#getsize)|Geçici dosya bir bayt cinsinden boyutunu almak için bu yöntemi çağırın.|
-|[CAtlTemporaryFile::HandsOff](#handsoff)|Dosyadan ilişkisini kaldırmak için bu yöntemi çağırın `CAtlTemporaryFile` nesne.|
-|[CAtlTemporaryFile::HandsOn](#handson)|Var olan geçici dosyasını açın ve dosyanın sonuna işaretçiyi için bu yöntemi çağırın.|
-|[CAtlTemporaryFile::LockRange](#lockrange)|Diğer işlemlerin erişimini engellemek için dosyanın bir bölgede kilitlemek için bu yöntemi çağırın.|
-|[CAtlTemporaryFile::Read](#read)|Dosya işaretçisi tarafından belirtilen konumda başlayarak geçici dosyadan veri okumak için bu yöntemi çağırın.|
-|[CAtlTemporaryFile::Seek](#seek)|Geçici dosya, dosya işaretçisini taşımak için bu yöntemi çağırın.|
-|[CAtlTemporaryFile::SetSize](#setsize)|Geçici dosya boyutunu ayarlamak için bu yöntemi çağırın.|
-|[CAtlTemporaryFile::TempFileName](#tempfilename)|Geçici dosya adını döndürmek için bu yöntemi çağırın.|
-|[CAtlTemporaryFile::UnlockRange](#unlockrange)|Bir bölge geçici dosyanın kilidini açmak için bu yöntemi çağırın.|
-|[CAtlTemporaryFile::Write](#write)|Dosya işaretçisi tarafından belirtilen konumda başlayarak geçici dosya verileri yazmak için bu yöntemi çağırın.|
+|[CAtlTemporaryFile:: Close](#close)|Geçici bir dosyayı kapatmak ve içeriğini silmek ya da belirtilen dosya adı altında depolamak için bu yöntemi çağırın.|
+|[CAtlTemporaryFile:: Create](#create)|Geçici bir dosya oluşturmak için bu yöntemi çağırın.|
+|[CAtlTemporaryFile:: Flush](#flush)|Dosya arabelleğinde kalan tüm verileri geçici dosyaya yazılmasına zorlamak için bu yöntemi çağırın.|
+|[CAtlTemporaryFile:: GetPosition](#getposition)|Geçerli dosya işaretçisi konumunu almak için bu yöntemi çağırın.|
+|[CAtlTemporaryFile:: GetSize](#getsize)|Geçici dosyanın bayt cinsinden boyutunu almak için bu yöntemi çağırın.|
+|[CAtlTemporaryFile:: HandsOff](#handsoff)|Dosyanın `CAtlTemporaryFile` nesneden ilişkilendirmesini kaldırmak için bu yöntemi çağırın.|
+|[CAtlTemporaryFile:: HandsOn](#handson)|Varolan geçici bir dosyayı açmak ve işaretçiyi dosyanın sonuna yerleştirmek için bu yöntemi çağırın.|
+|[CAtlTemporaryFile:: LockRange](#lockrange)|Diğer işlemlerin bu işleme erişmesini engellemek için dosyadaki bir bölgeyi kilitlemek üzere bu yöntemi çağırın.|
+|[CAtlTemporaryFile:: Read](#read)|Dosya işaretçisi tarafından belirtilen konumdan başlayarak geçici dosyadaki verileri okumak için bu yöntemi çağırın.|
+|[CAtlTemporaryFile:: Seek](#seek)|Geçici dosyanın dosya işaretçisini taşımak için bu yöntemi çağırın.|
+|[CAtlTemporaryFile:: SetSize](#setsize)|Geçici dosyanın boyutunu ayarlamak için bu yöntemi çağırın.|
+|[CAtlTemporaryFile:: TempFileName](#tempfilename)|Geçici dosyanın adını döndürmek için bu yöntemi çağırın.|
+|[CAtlTemporaryFile:: UnlockRange](#unlockrange)|Geçici dosyanın bir bölgesinin kilidini açmak için bu yöntemi çağırın.|
+|[CAtlTemporaryFile:: Write](#write)|Dosya işaretçisi tarafından belirtilen konumdan başlayarak geçici dosyaya veri yazmak için bu yöntemi çağırın.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CAtlTemporaryFile::operator TANITICISI](#operator_handle)|Geçici dosya için bir tanıtıcı döndürür.|
+|[CAtlTemporaryFile:: operator işleci](#operator_handle)|Geçici dosyaya bir tanıtıcı döndürür.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CAtlTemporaryFile` geçici bir dosya oluşturup kullanacağınızı kolaylaştırır. Dosya otomatik olarak adlandırılmış, kapalı, silinen ve açıldı. Dosya kapatıldıktan sonra dosya içeriklerini gerekliyse, belirtilen ada sahip yeni bir dosyaya kaydedilebilir.
+`CAtlTemporaryFile`geçici bir dosya oluşturmayı ve kullanmayı kolaylaştırır. Dosya otomatik olarak adlandırılır, açılır, kapatılır ve silinir. Dosya kapatıldıktan sonra dosya içeriği gerekliyse, belirtilen ada sahip yeni bir dosyaya kaydedilebilir.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlfile.h
+**Üstbilgi:** atlfile. h
 
 ## <a name="example"></a>Örnek
 
-Örneğin bakın [CAtlTemporaryFile::CAtlTemporaryFile](#catltemporaryfile).
+[CAtlTemporaryFile:: CAtlTemporaryFile](#catltemporaryfile)için örneğe bakın.
 
-##  <a name="catltemporaryfile"></a>  CAtlTemporaryFile::CAtlTemporaryFile
+##  <a name="catltemporaryfile"></a>CAtlTemporaryFile::CAtlTemporaryFile
 
 Oluşturucu.
 
@@ -98,15 +98,15 @@ CAtlTemporaryFile() throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-İçin bir çağrı yapılır kadar bir dosya gerçekten açılmadı [CAtlTemporaryFile::Create](#create).
+Bir dosya, [CAtlTemporaryFile:: Create](#create)öğesine bir çağrı yapana kadar aslında açılmaz.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATL_Utilities#73](../../atl/codesnippet/cpp/catltemporaryfile-class_1.cpp)]
 
-##  <a name="dtor"></a>  CAtlTemporaryFile:: ~ CAtlTemporaryFile
+##  <a name="dtor"></a>CAtlTemporaryFile:: ~ CAtlTemporaryFile
 
-Yıkıcı.
+Yok edicisi.
 
 ```
 ~CAtlTemporaryFile() throw();
@@ -114,11 +114,11 @@ Yıkıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yıkıcı çağrıları [CAtlTemporaryFile::Close](#close).
+Yıkıcı [CAtlTemporaryFile:: Close](#close)çağırır.
 
-##  <a name="close"></a>  CAtlTemporaryFile::Close
+##  <a name="close"></a>CAtlTemporaryFile:: Close
 
-Geçici bir dosya kapatmak için bu yöntemi çağırın ve ya da içeriğini silin veya bunları altında belirtilen dosya adı depolar.
+Geçici bir dosyayı kapatmak ve içeriğini silmek ya da belirtilen dosya adı altında depolamak için bu yöntemi çağırın.
 
 ```
 HRESULT Close(LPCTSTR szNewName = NULL) throw();
@@ -126,18 +126,18 @@ HRESULT Close(LPCTSTR szNewName = NULL) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*szNewName*<br/>
-Geçici dosya içeriği depolamak yeni bir dosya adı. Bu bağımsız değişken NULL ise, geçici dosya içeriği silinir.
+*Szyeniad*<br/>
+İçindeki geçici dosyanın içeriğini depolayan yeni dosyanın adı. Bu bağımsız değişken NULL ise, geçici dosyanın içeriği silinir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
+Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
 
 ### <a name="example"></a>Örnek
 
-Örneğin bakın [CAtlTemporaryFile::CAtlTemporaryFile](#catltemporaryfile).
+[CAtlTemporaryFile:: CAtlTemporaryFile](#catltemporaryfile)için örneğe bakın.
 
-##  <a name="create"></a>  CAtlTemporaryFile::Create
+##  <a name="create"></a>CAtlTemporaryFile:: Create
 
 Geçici bir dosya oluşturmak için bu yöntemi çağırın.
 
@@ -148,22 +148,22 @@ HRESULT Create(LPCTSTR pszDir = NULL, DWORD dwDesiredAccess = GENERIC_WRITE) thr
 ### <a name="parameters"></a>Parametreler
 
 *pszDir*<br/>
-Geçici dosya yolu. Bu, NULL ise [GetTempPath](/windows/desktop/api/fileapi/nf-fileapi-gettemppatha) yol atamak için çağrılır.
+Geçici dosyanın yolu. Bu NULL ise, bir yol atamak için [GetTempPath](/windows/win32/api/fileapi/nf-fileapi-gettemppathw) çağırılır.
 
 *dwDesiredAccess*<br/>
-İstenen erişim. Bkz: *dwDesiredAccess* içinde [CreateFile](/windows/desktop/api/fileapi/nf-fileapi-createfilea) Windows SDK.
+İstenen erişim. Windows SDK [CreateFile](/windows/win32/api/fileapi/nf-fileapi-createfilew) öğesinde *dwDesiredAccess* öğesine bakın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
+Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
 
 ### <a name="example"></a>Örnek
 
-Örneğin bakın [CAtlTemporaryFile::CAtlTemporaryFile](#catltemporaryfile).
+[CAtlTemporaryFile:: CAtlTemporaryFile](#catltemporaryfile)için örneğe bakın.
 
-##  <a name="flush"></a>  CAtlTemporaryFile::Flush
+##  <a name="flush"></a>CAtlTemporaryFile:: Flush
 
-Geçici bir dosyaya yazılacak dosya arabelleğinde kalan herhangi bir veri zorlamak için bu yöntemi çağırın.
+Dosya arabelleğinde kalan tüm verileri geçici dosyaya yazılmasına zorlamak için bu yöntemi çağırın.
 
 ```
 HRESULT Flush() throw();
@@ -171,17 +171,17 @@ HRESULT Flush() throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
+Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Benzer şekilde [CAtlTemporaryFile::HandsOff](#handsoff)dışında dosya kapatılmadı.
+[CAtlTemporaryFile:: HandsOff](#handsoff)ile benzer, dosyanın kapanmamış olması gerekir.
 
 ### <a name="example"></a>Örnek
 
-Örneğin bakın [CAtlTemporaryFile::CAtlTemporaryFile](#catltemporaryfile).
+[CAtlTemporaryFile:: CAtlTemporaryFile](#catltemporaryfile)için örneğe bakın.
 
-##  <a name="getposition"></a>  CAtlTemporaryFile::GetPosition
+##  <a name="getposition"></a>CAtlTemporaryFile:: GetPosition
 
 Geçerli dosya işaretçisi konumunu almak için bu yöntemi çağırın.
 
@@ -192,19 +192,19 @@ HRESULT GetPosition(ULONGLONG& nPos) const throw();
 ### <a name="parameters"></a>Parametreler
 
 *nPos*<br/>
-Bayt cinsinden konumu.
+Bayt cinsinden konum.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
+Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dosya işaretçisi konumunu değiştirmek için kullanın [CAtlTemporaryFile::Seek](#seek).
+Dosya işaretçisi konumunu değiştirmek için [CAtlTemporaryFile:: Seek](#seek)kullanın.
 
-##  <a name="getsize"></a>  CAtlTemporaryFile::GetSize
+##  <a name="getsize"></a>CAtlTemporaryFile:: GetSize
 
-Geçici dosya bir bayt cinsinden boyutunu almak için bu yöntemi çağırın.
+Geçici dosyanın bayt cinsinden boyutunu almak için bu yöntemi çağırın.
 
 ```
 HRESULT GetSize(ULONGLONG& nLen) const throw();
@@ -213,15 +213,15 @@ HRESULT GetSize(ULONGLONG& nLen) const throw();
 ### <a name="parameters"></a>Parametreler
 
 *nLen*<br/>
-Dosyanın bayt sayısı.
+Dosyadaki bayt sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
+Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
 
-##  <a name="handsoff"></a>  CAtlTemporaryFile::HandsOff
+##  <a name="handsoff"></a>CAtlTemporaryFile:: HandsOff
 
-Dosyadan ilişkisini kaldırmak için bu yöntemi çağırın `CAtlTemporaryFile` nesne.
+Dosyanın `CAtlTemporaryFile` nesneden ilişkilendirmesini kaldırmak için bu yöntemi çağırın.
 
 ```
 HRESULT HandsOff() throw();
@@ -229,15 +229,15 @@ HRESULT HandsOff() throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
+Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`HandsOff` ve [CAtlTemporaryFile::HandsOn](#handson) dosyanın bir nesne ilişkisini keser ve gerekirse yeniden kullanılır. `HandsOff` , geçici bir dosyaya yazılacak dosya arabelleğinde kalan herhangi bir veri zorlamak ve dosyayı kaydedip kapatın. Kapatın ve dosyayı kalıcı olarak silmek isterseniz ya da kapatmak ve belirli bir ada sahip bir dosyanın içeriğini korumak kullanmak istediğiniz varsa [CAtlTemporaryFile::Close](#close).
+`HandsOff`ve [CAtlTemporaryFile:: HandsOn](#handson) , dosyanın nesneyle ilişkisini kaldırmak ve gerekirse yeniden iliştirmek için kullanılır. `HandsOff`dosya arabelleğinde kalan tüm verileri geçici dosyaya yazılacak şekilde zorlar ve sonra dosyayı kapatır. Dosyayı kalıcı olarak kapatmak ve silmek istiyorsanız veya dosyanın içeriğini belirli bir adla kapatmak ve sürdürmek istiyorsanız, [CAtlTemporaryFile:: Close](#close)kullanın.
 
-##  <a name="handson"></a>  CAtlTemporaryFile::HandsOn
+##  <a name="handson"></a>CAtlTemporaryFile:: HandsOn
 
-Var olan geçici dosyasını açın ve dosyanın sonuna işaretçiyi için bu yöntemi çağırın.
+Varolan geçici bir dosyayı açmak ve işaretçiyi dosyanın sonuna yerleştirmek için bu yöntemi çağırın.
 
 ```
 HRESULT HandsOn() throw();
@@ -245,15 +245,15 @@ HRESULT HandsOn() throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
+Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-[CAtlTemporaryFile::HandsOff](#handsoff) ve `HandsOn` dosyanın bir nesne ilişkisini keser ve gerekirse yeniden kullanılır.
+[CAtlTemporaryFile:: HandsOff](#handsoff) ve `HandsOn` dosyanın nesneyle ilişkisi için kullanılır ve gerekirse yeniden ekleyin.
 
-##  <a name="lockrange"></a>  CAtlTemporaryFile::LockRange
+##  <a name="lockrange"></a>CAtlTemporaryFile:: LockRange
 
-Bir bölgede diğer işlemlerin erişimini önlemek için geçici dosya kilitleme için bu yöntemi çağırın.
+Başka işlemlerin bu işleme erişmesini engellemek için geçici dosyadaki bir bölgeyi kilitlemek üzere bu yöntemi çağırın.
 
 ```
 HRESULT LockRange(ULONGLONG nPos, ULONGLONG nCount) throw();
@@ -262,30 +262,30 @@ HRESULT LockRange(ULONGLONG nPos, ULONGLONG nCount) throw();
 ### <a name="parameters"></a>Parametreler
 
 *nPos*<br/>
-Kilit nerede başlayacağını dosyanın konumu.
+Dosyadaki kilidin başlayacağı konum.
 
 *nCount*<br/>
-Kilitlenecek bayt aralığı cinsinden uzunluğu.
+Kilitlenecek bayt aralığının uzunluğu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
+Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir dosyadaki baytları kilitleme erişim için bu baytlardan başka işlemler tarafından engeller. Bir dosyanın birden fazla bölgeye kilitleyebilirsiniz ancak çakışan bölge izin verilir. Bir bölge başarıyla kilidini açmak için kullanmak [CAtlTemporaryFile::UnlockRange](#unlockrange), bayt aralığı sağlayarak daha önce kilitli olan bölge tam olarak karşılık gelir. `LockRange` bitişik bölgeleri birleştirmez; kilitli iki bölgeleri bitişikse, her ayrı olarak kilidini açmanız gerekir.
+Bir dosyadaki kilitleme baytları diğer işlemlere göre bu baytlara erişimi engeller. Bir dosyanın birden fazla bölgesini kilitleyebilmeniz, ancak çakışan bölgelere izin verilmez. Bir bölgenin kilidini başarıyla açmak için, [CAtlTemporaryFile:: UnlockRange](#unlockrange)kullanın. Bu, bayt aralığının daha önce kilitlenen bölgeye tam olarak karşılık gelmesini sağlamaktır. `LockRange`bitişik bölgeleri birleştirmez; iki kilitli bölge bitişik ise, her birinin kilidini ayrı olarak açmanız gerekir.
 
-##  <a name="operator_handle"></a>  CAtlTemporaryFile::operator TANITICISI
+##  <a name="operator_handle"></a>CAtlTemporaryFile:: operator işleci
 
-Geçici dosya için bir tanıtıcı döndürür.
+Geçici dosyaya bir tanıtıcı döndürür.
 
 ```
 operator HANDLE() throw();
 ```
 
-##  <a name="read"></a>  CAtlTemporaryFile::Read
+##  <a name="read"></a>CAtlTemporaryFile:: Read
 
-Dosya işaretçisi tarafından belirtilen konumda başlayarak geçici dosyadan veri okumak için bu yöntemi çağırın.
+Dosya işaretçisi tarafından belirtilen konumdan başlayarak geçici dosyadaki verileri okumak için bu yöntemi çağırın.
 
 ```
 HRESULT Read(
@@ -297,29 +297,29 @@ HRESULT Read(
 ### <a name="parameters"></a>Parametreler
 
 *pBuffer*<br/>
-Dosyadan okunan veriler alacak arabellek için işaretçi.
+Dosyadan okunan verileri alacak olan arabelleğin işaretçisi.
 
 *nBufSize*<br/>
-Arabellek boyutu bayt cinsinden.
+Bayt cinsinden arabellek boyutu.
 
 *nBytesRead*<br/>
 Okunan bayt sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
+Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağrıları [CAtlFile::Read](../../atl/reference/catlfile-class.md#read). Dosya işaretçisi konumunu değiştirmek için çağrı [CAtlTemporaryFile::Seek](#seek).
+[CAtlFile:: Read](../../atl/reference/catlfile-class.md#read)çağırır. Dosya işaretçisinin konumunu değiştirmek için [CAtlTemporaryFile:: Seek](#seek)çağırın.
 
 ### <a name="example"></a>Örnek
 
-Örneğin bakın [CAtlTemporaryFile::CAtlTemporaryFile](#catltemporaryfile).
+[CAtlTemporaryFile:: CAtlTemporaryFile](#catltemporaryfile)için örneğe bakın.
 
-##  <a name="seek"></a>  CAtlTemporaryFile::Seek
+##  <a name="seek"></a>CAtlTemporaryFile:: Seek
 
-Geçici dosya, dosya işaretçisini taşımak için bu yöntemi çağırın.
+Geçici dosyanın dosya işaretçisini taşımak için bu yöntemi çağırın.
 
 ```
 HRESULT Seek(LONGLONG nOffset, DWORD dwFrom = FILE_CURRENT) throw();
@@ -327,27 +327,27 @@ HRESULT Seek(LONGLONG nOffset, DWORD dwFrom = FILE_CURRENT) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*nOffset*<br/>
-Başlangıç noktası tarafından verilen, bayt uzaklığı *dwFrom.*
+*nKonum*<br/>
+*DwFrom* tarafından verilen başlangıç noktasından bayt cinsinden fark.
 
 *dwFrom*<br/>
 Başlangıç noktası (FILE_BEGIN, FILE_CURRENT veya FILE_END).
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
+Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağrıları [CAtlFile::Seek](../../atl/reference/catlfile-class.md#seek). Geçerli dosya işaretçisi konumunu almak için çağrı [CAtlTemporaryFile::GetPosition](#getposition).
+[CAtlFile:: Seek](../../atl/reference/catlfile-class.md#seek)çağırır. Geçerli dosya işaretçisi konumunu almak için, [CAtlTemporaryFile:: GetPosition](#getposition)çağırın.
 
 ### <a name="example"></a>Örnek
 
-Örneğin bakın [CAtlTemporaryFile::CAtlTemporaryFile](#catltemporaryfile).
+[CAtlTemporaryFile:: CAtlTemporaryFile](#catltemporaryfile)için örneğe bakın.
 
-##  <a name="setsize"></a>  CAtlTemporaryFile::SetSize
+##  <a name="setsize"></a>CAtlTemporaryFile:: SetSize
 
-Geçici dosya boyutunu ayarlamak için bu yöntemi çağırın.
+Geçici dosyanın boyutunu ayarlamak için bu yöntemi çağırın.
 
 ```
 HRESULT SetSize(ULONGLONG nNewLen) throw();
@@ -356,19 +356,19 @@ HRESULT SetSize(ULONGLONG nNewLen) throw();
 ### <a name="parameters"></a>Parametreler
 
 *nNewLen*<br/>
-Yeni dosyanın bayt cinsinden uzunluğu.
+Dosyanın bayt cinsinden yeni uzunluğu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
+Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağrıları [CAtlFile::SetSize](../../atl/reference/catlfile-class.md#setsize). Getirisi, dosya işaretçisini dosyanın sonunda konumlandırıldı.
+[CAtlFile:: SetSize](../../atl/reference/catlfile-class.md#setsize)çağırır. Dönüş sırasında dosya işaretçisi dosyanın sonuna yerleştirilir.
 
-##  <a name="tempfilename"></a>  CAtlTemporaryFile::TempFileName
+##  <a name="tempfilename"></a>CAtlTemporaryFile:: TempFileName
 
-Geçici dosya adını döndürmek için bu yöntemi çağırın.
+Geçici dosyanın adını döndürmek için bu yöntemi çağırın.
 
 ```
 LPCTSTR TempFileName() throw();
@@ -380,11 +380,11 @@ Dosya adına işaret eden LPCTSTR döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dosya adı içinde oluşturulan [CAtlTemporaryFile::CAtlTemporaryFile](#catltemporaryfile) çağrısıyla [GetTempFile](/windows/desktop/api/fileapi/nf-fileapi-gettempfilenamea)Windows SDK'sı işlevi. Dosya uzantısı, her zaman için geçici dosya "TFR" olur.
+Dosya adı [CAtlTemporaryFile:: CAtlTemporaryFile](#catltemporaryfile) ' de [gettempfile](/windows/win32/api/fileapi/nf-fileapi-gettempfilenamew)Windows SDK işlevine yapılan bir çağrıda oluşturulur. Dosya Uzantısı her zaman geçici dosya için "TFR" olacaktır.
 
-##  <a name="unlockrange"></a>  CAtlTemporaryFile::UnlockRange
+##  <a name="unlockrange"></a>CAtlTemporaryFile:: UnlockRange
 
-Bir bölge geçici dosyanın kilidini açmak için bu yöntemi çağırın.
+Geçici dosyanın bir bölgesinin kilidini açmak için bu yöntemi çağırın.
 
 ```
 HRESULT UnlockRange(ULONGLONG nPos, ULONGLONG nCount) throw();
@@ -393,22 +393,22 @@ HRESULT UnlockRange(ULONGLONG nPos, ULONGLONG nCount) throw();
 ### <a name="parameters"></a>Parametreler
 
 *nPos*<br/>
-Kilit açma nerede başlayacağını dosya konumu.
+Dosyadaki kilidinin başlayacağı konum.
 
 *nCount*<br/>
-Kilidinin açılması için bayt aralığı cinsinden uzunluğu.
+Kilidinin açılacağı bayt aralığının uzunluğu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
+Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağrıları [CAtlFile::UnlockRange](../../atl/reference/catlfile-class.md#unlockrange).
+[CAtlFile:: UnlockRange](../../atl/reference/catlfile-class.md#unlockrange)öğesini çağırır.
 
-##  <a name="write"></a>  CAtlTemporaryFile::Write
+##  <a name="write"></a>CAtlTemporaryFile:: Write
 
-Dosya işaretçisi tarafından belirtilen konumda başlayarak geçici dosya verileri yazmak için bu yöntemi çağırın.
+Dosya işaretçisi tarafından belirtilen konumdan başlayarak geçici dosyaya veri yazmak için bu yöntemi çağırın.
 
 ```
 HRESULT Write(
@@ -420,27 +420,27 @@ HRESULT Write(
 ### <a name="parameters"></a>Parametreler
 
 *pBuffer*<br/>
-Dosyaya yazılacak veriler içeren arabellek.
+Dosyaya yazılacak verileri içeren arabellek.
 
 *nBufSize*<br/>
-Arabellekteki aktarılacak bayt sayısı.
+Arabellekten aktarılacak bayt sayısı.
 
 *pnBytesWritten*<br/>
 Yazılan bayt sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
+Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağrıları [CAtlFile::Write](../../atl/reference/catlfile-class.md#write).
+[CAtlFile:: Write](../../atl/reference/catlfile-class.md#write)öğesini çağırır.
 
 ### <a name="example"></a>Örnek
 
-Örneğin bakın [CAtlTemporaryFile::CAtlTemporaryFile](#catltemporaryfile).
+[CAtlTemporaryFile:: CAtlTemporaryFile](#catltemporaryfile)için örneğe bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)<br/>
+[Sınıfa genel bakış](../../atl/atl-class-overview.md)<br/>
 [CAtlFile Sınıfı](../../atl/reference/catlfile-class.md)

@@ -30,12 +30,12 @@ helpviewer_keywords:
 - CScrollBar [MFC], SetScrollRange
 - CScrollBar [MFC], ShowScrollBar
 ms.assetid: f3735ca5-73ea-46dc-918b-4d824c9fe47f
-ms.openlocfilehash: 5bc9c0190ea200b25b8ea3b20311c98c1c131838
-ms.sourcegitcommit: c3bf94210bdb73be80527166264d49e33784152c
+ms.openlocfilehash: cd0c1ed85969d50548cf6b2be1d5677ed62110bc
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68821273"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69502568"
 ---
 # <a name="cscrollbar-class"></a>CScrollBar sınıfı
 
@@ -47,7 +47,7 @@ Windows kaydırma çubuğu denetimi işlevlerini sağlar.
 class CScrollBar : public CWnd
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Üyeler
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
@@ -203,7 +203,7 @@ BOOL GetScrollBarInfo(PSCROLLBARINFO pScrollInfo) const;
 ### <a name="parameters"></a>Parametreler
 
 *pScrollInfo*<br/>
-[SCROLLBARINFO](/windows/desktop/api/winuser/ns-winuser-tagscrollbarinfo) yapısına yönelik bir işaretçi.
+[SCROLLBARINFO](/windows/win32/api/winuser/ns-winuser-scrollbarinfo) yapısına yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -211,7 +211,7 @@ Başarılı olduğunda TRUE, hatada FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, Windows SDK açıklandığı gibi [SBM_SCROLLBARINFO](/windows/desktop/Controls/sbm-getscrollbarinfo) iletisinin işlevselliğine öykünür.
+Bu üye işlevi, Windows SDK açıklandığı gibi [SBM_SCROLLBARINFO](/windows/win32/Controls/sbm-getscrollbarinfo) iletisinin işlevselliğine öykünür.
 
 ##  <a name="getscrollinfo"></a>CScrollBar:: Getscrollinınfo
 

@@ -1,21 +1,21 @@
 ---
-title: salt okunur (C++ COM özniteliği)
+title: ReadOnly (C++ com özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.readonly
 helpviewer_keywords:
 - readonly attribute
 ms.assetid: 1246cadd-5304-43a9-beea-51153d12704d
-ms.openlocfilehash: 7eea071b62130c65fbb46ebc8827fc2b428c4c0c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 93f7393f76596766e841dfc25f6d12e20e3db618
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62407347"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69514126"
 ---
 # <a name="readonly-c"></a>readonly (C++)
 
-Bir veri üyesine atama yasaklar.
+Bir veri üyesine atamayı yasaklar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -25,13 +25,13 @@ Bir veri üyesine atama yasaklar.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Salt okunur** C++ özniteliği ile aynı işlevlere sahip [salt okunur](/windows/desktop/Midl/readonly) MIDL özniteliği.
+**ReadOnly** C++ özniteliği, [ReadOnly](/windows/win32/Midl/readonly) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
 
-Bir yöntem parametresi değiştirilmesini engellemek istiyorsanız, ardından kullanmak [içinde](in-cpp.md) özniteliği.
+Bir yöntem parametresinin değiştirilmesini yasaklamak istiyorsanız [ın](in-cpp.md) özniteliğini kullanın.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod, bir kullanımını göstermektedir. **salt okunur** özniteliği:
+Aşağıdaki kod **ReadOnly** özniteliğinin kullanımını gösterir:
 
 ```cpp
 // cpp_attr_ref_readonly.cpp
@@ -53,12 +53,12 @@ __interface IFireTabCtrl
 
 |||
 |-|-|
-|**İçin geçerlidir**|Arabirim yöntemi|
+|**Uygulama hedefi**|Interface yöntemi|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|Yok.|
+|**Gerekli öznitelikler**|Yok.|
 |**Geçersiz öznitelikler**|Yok.|
 
-Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
+Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

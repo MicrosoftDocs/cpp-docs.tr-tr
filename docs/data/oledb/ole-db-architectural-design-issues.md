@@ -4,41 +4,41 @@ ms.date: 05/09/2019
 helpviewer_keywords:
 - OLE DB, application design considerations
 ms.assetid: 8caa7d99-d2bb-42c9-8884-74f228bb6ecc
-ms.openlocfilehash: ef2837ea80c61f074cf567ee1fe61fa2cfa0ae73
-ms.sourcegitcommit: 00e26915924869cd7eb3c971a7d0604388abd316
+ms.openlocfilehash: b481d9948d3055247bd284ca794a0fa65905e21b
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65525314"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69501348"
 ---
 # <a name="ole-db-architectural-design-issues"></a>OLE DB Mimari Tasarım Sorunları
 
 > [!NOTE]
-> ATL OLE DB Tüketicisi Sihirbazı'nı ve sonrasında Visual Studio 2019 içinde kullanılabilir değil. İşlevselliğini el ile eklemeye devam edebilirsiniz. Daha fazla bilgi için [olmadan bir tüketici kullanarak sihirbaz oluşturma](creating-a-consumer-without-using-a-wizard.md).
+> ATL OLE DB Tüketici Sihirbazı, Visual Studio 2019 ve sonrasında kullanılamaz. İşlevselliği el ile de ekleyebilirsiniz. Daha fazla bilgi için bkz. [Sihirbaz kullanmadan tüketici oluşturma](creating-a-consumer-without-using-a-wizard.md).
 
-Aşağıdaki sorunlar, OLE DB uygulamayı başlatmadan önce göz önünde bulundurun:
+OLE DB uygulamanızı başlatmadan önce aşağıdaki sorunları göz önünde bulundurun:
 
-## <a name="what-programming-implementation-will-you-use-to-write-your-ole-db-application"></a>Hangi programlama uygulamasını OLE DB uygulamanızı yazmak için kullanacak mısınız?
+## <a name="what-programming-implementation-will-you-use-to-write-your-ole-db-application"></a>OLE DB uygulamanızı yazmak için hangi programlama uygulamasını kullanacaksınız?
 
-Microsoft, bu görevi gerçekleştirmek için birden çok kitaplık sunar: OLE DB Şablon kitaplığı, OLE DB öznitelikleri ve OLE DB SDK ham OLE DB arabirimler. Aynı zamanda, programınız yazmanıza Yardım sihirbazları vardır. Bu uygulamalar, şurada açıklanan [OLE DB Şablonları, öznitelikler ve diğer uygulamalar](../../data/oledb/ole-db-templates-attributes-and-other-implementations.md).
+Microsoft, bu görevi gerçekleştirmek için çeşitli kitaplıklar sunmaktadır: OLE DB SDK 'daki OLE DB Şablon kitaplığı, OLE DB öznitelikleri ve ham OLE DB arabirimleri. Ayrıca, programınızı yazmanıza yardımcı olan sihirbazlar de vardır. Bu uygulamalar [OLE DB şablonlar, öznitelikler ve diğer uygulamalarda](../../data/oledb/ole-db-templates-attributes-and-other-implementations.md)açıklanmıştır.
 
-## <a name="do-you-need-to-write-your-own-provider"></a>Kendi sağlayıcınızı yazma gerekiyor mu?
+## <a name="do-you-need-to-write-your-own-provider"></a>Kendi sağlayıcınızı yazmanız mı gerekiyor?
 
-Çoğu geliştirici, kendi sağlayıcı yazma gerekmez. Microsoft çeşitli sağlayıcılar sunar. Bir veri bağlantısı oluşturduğunuzda (örneğin, eklediğinizde, bir tüketici kullanarak projenize **ATL OLE DB Tüketicisi Sihirbazı**), **veri bağlantı özellikleri** iletişim kutusu, kullanılabilir tüm sağlayıcıları listeler Sisteminizde kayıtlı. Sağlayıcılardan birini kendi veri deposu ve veri erişim uygulamanız için uygun değilse, kolay bir şey yapmak için aşağıdakilerden birini kullanmaktır. Ancak, veri deponuz Bu kategorilerden birini sığmıyorsa, kendi sağlayıcınızı oluşturmanız gerekir. Sağlayıcılar oluşturma hakkında daha fazla bilgi için bkz: [OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md).
+Çoğu geliştiricilerin kendi sağlayıcısını yazması gerekmez. Microsoft çeşitli sağlayıcılar sağlar. Bir veri bağlantısı oluşturduğunuz zaman (örneğin, **ATL OLE DB Tüketici Sihirbazı 'nı**kullanarak projenize bir tüketici eklediğinizde), **veri bağlantısı özellikleri** iletişim kutusunda sisteminizde kayıtlı olan tüm mevcut sağlayıcılar listelenir. Sağlayıcılardan biri kendi veri deponuza ve veri erişim uygulamanıza uygunsa, en kolay şey bunlardan birini kullanmaktır. Ancak, veri depolubirisi bu kategorilerden birine sığmıyorsa, kendi sağlayıcınızı oluşturmanız gerekir. Sağlayıcılar oluşturma hakkında daha fazla bilgi için bkz. [OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md).
 
-## <a name="what-level-of-support-do-you-need-for-your-consumer"></a>Hangi düzeyde desteği için tüketici gerekiyor mu?
+## <a name="what-level-of-support-do-you-need-for-your-consumer"></a>Tüketicinize gereken destek düzeyi nedir?
 
-Bazı tüketiciler temel olabilir. diğer karmaşık olabilir, ancak. OLE DB nesnelerin işlevselliğini özellikleri tarafından belirtilir. Kullanırken **ATL OLE DB Tüketicisi Sihirbazı** bir tüketici oluşturma veya **veritabanı sağlayıcısı Sihirbazı** bir sağlayıcı oluşturmak için standart bir dizi size uygun nesne özelliklerini ayarlar İşlevler. Sihirbazın ürettiği tüketici veya sağlayıcısı sınıfları bunları yapmak için ihtiyacınız olan her şeyi desteklemez, ancak bu sınıfların arabirimlerini başvurmak gerekiyorsa, [OLE DB şablonları kitaplığı](../../data/oledb/ole-db-templates.md). Bu arabirimler, bunları sizin için daha kolay hale getirmek için fazladan uygulama sağlama ham OLE DB birimleri kaydır.
+Bazı tüketiciler temel olabilir; bazıları karmaşık olabilir. OLE DB nesnelerinin işlevselliği, özelliklerle belirtilir. Bir sağlayıcı oluşturmak için bir tüketici veya **veritabanı sağlayıcı Sihirbazı** oluşturmak üzere **ATL OLE DB Tüketici Sihirbazı** 'nı kullandığınızda, size standart bir işlevler kümesi vermeniz için uygun nesne özelliklerini ayarlar. Bununla birlikte, sihirbaz tarafından oluşturulan tüketici veya sağlayıcı sınıfları, gerek duyduğunuz her şeyi desteklemiyorsa, [OLE DB şablonları kitaplığındaki](../../data/oledb/ole-db-templates.md)bu sınıfların arabirimlerine başvurmanız gerekir. Bu arabirimler, ham OLE DB arabirimlerini sararak sizin için daha kolay bir şekilde kullanılmasını sağlamak üzere ek uygulama sağlar.
 
-Bir satır kümesi veri güncelleştirmek istiyor ancak Sihirbazı ile tüketici oluşturduğunuzda bu belirtmek, örneğin, işlevselliği olaydan sonra ayarlayarak belirtebilirsiniz `DBPROP_IRowsetChange` ve `DBPROP_UPDATABILITY` command nesnesindeki özellikleri. Ardından, satır kümesi oluşturulduğunda sahip `IRowsetChange` arabirimi.
+Örneğin, bir satır kümesindeki verileri güncelleştirmek istiyorsanız, ancak Sihirbazı ile tüketiciyi oluştururken bunu belirtmeyi unuttuysanız, komut nesnesi üzerinde `DBPROP_IRowsetChange` ve `DBPROP_UPDATABILITY` özelliklerini ayarlayarak olguyu daha sonra belirtebilirsiniz. Sonra, satır kümesi oluşturulduğunda, `IRowsetChange` arabirimine sahiptir.
 
-## <a name="do-you-have-older-code-using-another-data-access-technology-ado-odbc-or-dao"></a>Eski kod başka bir veri erişim teknolojisi (ADO, ODBC ve DAO) kullanılarak var mı?
+## <a name="do-you-have-older-code-using-another-data-access-technology-ado-odbc-or-dao"></a>Başka bir veri erişim teknolojisini (ADO, ODBC veya DAO) kullanarak daha eski bir kodunuz var mı?
 
-Olası eşleştirme birleşimlerini (örneğin, OLE DB bileşenlerle ADO bileşenlerini kullanma ve OLE DB için ODBC kodu geçirme) teknolojileri göz önünde bulundurulduğunda, tüm durumları kapsayan Visual C++ belgelerinin kapsamıdır. Ancak, aşağıdaki Microsoft web sitelerinde çeşitli senaryoları kapsayan birçok makale mevcuttur:
+Olası teknoloji birleşimleri (örneğin, OLE DB bileşenleri ile ADO bileşenlerini kullanma ve ODBC kodunu OLE DB olarak geçirme gibi) verildiğinde, tüm durumları kapsayan görsel C++ belgelerinin kapsamı ötesinde. Ancak, çeşitli senaryolar kapsayan birçok makale aşağıdaki Microsoft Web sitelerinde bulunabilir:
 
 - [Microsoft Yardım ve Destek](https://support.microsoft.com/)
 
-- [Microsoft Data Access teknik makaleler genel bakış](https://msdn.microsoft.com/library/ms810811.aspx)
+- [Microsoft veri erişimi teknik makalelerine genel bakış](/previous-versions/ms810811(v=msdn.10))
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

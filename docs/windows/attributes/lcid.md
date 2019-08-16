@@ -1,21 +1,21 @@
 ---
-title: LCID (C++ COM özniteliği)
+title: LCID (C++ com özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.lcid
 helpviewer_keywords:
 - LCID attribute
 ms.assetid: 7f248c69-ee1c-42c3-9411-39cf27c9f43d
-ms.openlocfilehash: d97ad86e143102c96e87ae0a32245b0c01042501
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7c737661bb8429e416b515e4e7fcaf54956385d0
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62409271"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69514544"
 ---
 # <a name="lcid"></a>lcid
 
-Bir işlev için bir yerel ayar tanımlayıcısı geçirmenize olanak tanır.
+Bir işleve yerel ayar tanımlayıcıyı geçirmenize olanak sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -25,7 +25,7 @@ Bir işlev için bir yerel ayar tanımlayıcısı geçirmenize olanak tanır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**LCID** C++ özniteliği işlevselliğini uygulayan [LCID](/windows/desktop/Midl/lcid) MIDL özniteliği. Yerel bir kitaplığı bloğu için uygulamak istediğiniz kullanırsanız **LCID =** `lcid` parametresi [Modülü](module-cpp.md) özniteliği.
+**LCID** C++ özniteliği, [LCID](/windows/win32/Midl/lcid) MIDL özniteliğinin işlevlerini uygular. Bir kitaplık bloğu için yerel ayar uygulamak istiyorsanız, [Modül](module-cpp.md) özniteliğinde **LCID =** `lcid` parametresini kullanın.
 
 ## <a name="example"></a>Örnek
 
@@ -48,12 +48,12 @@ __interface IStatic {
 
 |||
 |-|-|
-|**İçin geçerlidir**|Parametre arabirimi|
+|**Uygulama hedefi**|Arabirim parametresi|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|Yok.|
+|**Gerekli öznitelikler**|Yok.|
 |**Geçersiz öznitelikler**|Yok.|
 
-Daha fazla bilgi için [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
+Daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

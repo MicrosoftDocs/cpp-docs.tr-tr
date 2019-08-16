@@ -6,20 +6,20 @@ helpviewer_keywords:
 - image lists [MFC], image overlays in
 - CImageList class [MFC], image overlays in
 ms.assetid: aaf4e1c4-cd12-42c8-9af4-1bb458889b4e
-ms.openlocfilehash: 8dd0b30ef29a48ebc763564e6fe23632cd300831
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ec795193a28a68d8aee61e9932481a89c4b3e8e0
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62407971"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69508380"
 ---
 # <a name="image-overlays-in-image-lists"></a>Görüntü Listelerindeki Görüntü Yer Paylaşımları
 
-Her bir görüntü listesi ([Cımagelist](../mfc/reference/cimagelist-class.md)) katman maskeleri olarak kullanılacak görüntülerin bir listesini içerir. Bir "katman maskesi" şeffaf bir şekilde başka bir görüntünün üzerine çizilmiş bir görüntüsüdür. Herhangi bir görüntü, bir katman maskesi kullanılabilir. Görüntü listesi başına en fazla dört katman maskeleri belirtebilirsiniz.
+Her görüntü listesi ([CImageList](../mfc/reference/cimagelist-class.md)), kaplama maskeleri olarak kullanılacak görüntülerin bir listesini içerir. "Yer paylaşımı maskesi", başka bir görüntünün üzerinde saydam olarak çizilen bir görüntüdür. Herhangi bir görüntü, bir kaplama maskesi olarak kullanılabilir. Her görüntü listesi için en fazla dört kaplama maskesi belirtebilirsiniz.
 
-Katman maskeleri listesine de bir görüntünün dizinini kullanarak eklemek [SetOverlayImage](../mfc/reference/cimagelist-class.md#setoverlayimage) üye işlevi, bir görüntünün dizinini ve katman maskesi dizini. Katman maskeleri için dizin tabanlı yerine sıfır tabanlı olduğunu unutmayın.
+Bir görüntünün dizinini, [SetOverlayImage](../mfc/reference/cimagelist-class.md#setoverlayimage) üye işlevini, bir görüntünün dizinini ve bir kaplama maskesinin dizinini kullanarak, kaplama maskeleri listesine eklersiniz. Yer paylaşımı maskeleri için dizin, sıfır tabanlı yerine tek tabanlı olduğunu unutmayın.
 
-Bir katman maskesi üzerinden tek bir çağrı kullanarak görüntü çizme `Draw`. Parametreleri çizmek için görüntünün dizinini ve katman maskesi dizinini içerir. Kullanmalısınız [INDEXTOOVERLAYMASK](/windows/desktop/api/commctrl/nf-commctrl-indextooverlaymask) makrosuna katman maskesi dizinini belirtin. Bir katmana görüntü çağırırken belirtebilirsiniz [DrawIndirect](../mfc/reference/cimagelist-class.md#drawindirect) üye işlevi.
+Tek bir çağrısı `Draw`kullanarak bir görüntü üzerinde bir kaplama maskesi çizersiniz. Parametreler, çizilecek görüntünün dizinini ve bir kaplama maskesinin dizinini içerir. Yer paylaşımı maskesinin dizinini belirtmek için [INDEXTOOVERLAYMASK](/windows/win32/api/commctrl/nf-commctrl-indextooverlaymask) makrosunu kullanmanız gerekir. Ayrıca, [DrawIndirect](../mfc/reference/cimagelist-class.md#drawindirect) üye işlevini çağırırken bir kaplama görüntüsü de belirtebilirsiniz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

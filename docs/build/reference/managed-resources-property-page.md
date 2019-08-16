@@ -8,35 +8,35 @@ f1_keywords:
 helpviewer_keywords:
 - Managed Resources property page
 ms.assetid: 80b80384-ee55-494d-9f0e-907bb98cfc19
-ms.openlocfilehash: 394aac779fceb4d9d5918e4a5ad36eee8be896ea
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 97cf05f881949444879b0d48e3b3c2703a614985
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62321468"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69498226"
 ---
 # <a name="managed-resources-property-page"></a>Yönetilen Kaynaklar Özellik Sayfası
 
-Kaynak derleyicisi için ayarları sağlar.
+Kaynak derleyicisi için ayarları etkinleştirilir.
 
-**Yönetilen kaynaklar** özellik sayfası, aşağıdaki özellikleri içerir:
+**Yönetilen kaynaklar** Özellik sayfası aşağıdaki özellikleri içerir:
 
-- **Mantıksal kaynak adı**
+- **Kaynak mantıksal adı**
 
-   Belirtir *mantıksal adı* üretilen Ara .resources dosyasının. Mantıksal ad kaynağı yüklemek için kullanılan addır. Mantıksal hiçbir ad belirtilmediği takdirde, kaynak (.resx) dosyası adına mantıksal adı olarak kullanılır.
+   Oluşturulan ara. resources dosyasının *mantıksal adını* belirtir. Mantıksal ad, kaynağı yüklemek için kullanılan addır. Mantıksal ad belirtilmemişse, kaynak (. resx) dosya adı mantıksal ad olarak kullanılır.
 
 - **Çıkış dosyası adı**
 
-   Kaynak (.resx) dosyasının katıldığı son çıktı dosyasının adını belirtir.
+   Kaynak (. resx) dosyasının katkıda bulunduğu son çıkış dosyasının adını belirtir.
 
 - **Varsayılan yerelleştirilmiş kaynaklar**
 
-   Belirtilen .resx dosyasının varsayılan kaynaklara mı uydu .dll DLL'e mi katılacağını belirtir.
+   Verilen. resx dosyasının varsayılan kaynaklara mı yoksa uydu. dll ' ye mi katkıda bulunduğunu belirtir.
 
-Erişim hakkında daha fazla bilgi için **yönetilen kaynaklar** özellik sayfasında bakın [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+**Yönetilen kaynaklar** Özellik sayfasına erişme hakkında daha fazla bilgi için bkz. [Visual Studio C++ 'Da derleyici ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[RC (RC komut satırı) kullanma](/windows/desktop/menurc/using-rc-the-rc-command-line-)<br>
-[C++ projesi özellik Sayfa başvurusu](property-pages-visual-cpp.md)<br>
+[RC kullanma (RC komut satırı)](/windows/win32/menurc/using-rc-the-rc-command-line-)<br>
+[C++Proje özellik sayfası başvurusu](property-pages-visual-cpp.md)<br>
 [/ASSEMBLYRESOURCE (Yönetilen Kaynağı Katıştır)](assemblyresource-embed-a-managed-resource.md)

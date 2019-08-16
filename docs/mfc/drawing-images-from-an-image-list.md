@@ -7,12 +7,12 @@ helpviewer_keywords:
 - image lists [MFC], drawing images from
 - images [MFC], drawing
 ms.assetid: 2f6063fb-1c28-45f8-a333-008c064db11c
-ms.openlocfilehash: e4e60f0e6e4ee22712e4bbce344fd6437cf3db7e
-ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
+ms.openlocfilehash: fb307d5557c0e136c1c44c29f08af6062bb1c19d
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68916418"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69508602"
 ---
 # <a name="drawing-images-from-an-image-list"></a>Resim Listesinden Resim Çizme
 
@@ -28,7 +28,7 @@ Bir maskelenmiş görüntü listesi ([CImageList](../mfc/reference/cimagelist-cl
 
 Maskelenmiş olmayan bir görüntü, `SRCCOPY` tarama işlemi kullanılarak hedef cihaz bağlamına kopyalanır. Görüntüdeki renkler, cihaz bağlamının arka plan rengine bakılmaksızın aynı görüntülenir. ' De `Draw` belirtilen çizim stillerinin, maskeli olmayan bir görüntünün görünümü üzerinde hiçbir etkisi yoktur.
 
-Çiz üye işlevine ek olarak, başka bir işlev olan [DrawIndirect](../mfc/reference/cimagelist-class.md#drawindirect), bir görüntüyü işleme yeteneğini genişletir. `DrawIndirect`, bir [IMAGELISTDRAWPARAMS](/windows/desktop/api/commctrl/ns-commctrl-imagelistdrawparams) yapısı olan bir parametre olarak alır. Bu yapı, raster işlem (ROP) kodlarının kullanımı da dahil olmak üzere geçerli görüntünün işlenmesini özelleştirmek için kullanılabilir. ROP kodları hakkında daha fazla bilgi için, Windows SDK fırçalar olarak [raster Işlem kodları](/windows/desktop/gdi/raster-operation-codes) ve [bit eşlemler](/windows/desktop/gdi/bitmaps-as-brushes) bölümüne bakın.
+Çiz üye işlevine ek olarak, başka bir işlev olan [DrawIndirect](../mfc/reference/cimagelist-class.md#drawindirect), bir görüntüyü işleme yeteneğini genişletir. `DrawIndirect`, bir [IMAGELISTDRAWPARAMS](/windows/win32/api/commctrl/ns-commctrl-imagelistdrawparams) yapısı olan bir parametre olarak alır. Bu yapı, raster işlem (ROP) kodlarının kullanımı da dahil olmak üzere geçerli görüntünün işlenmesini özelleştirmek için kullanılabilir. ROP kodları hakkında daha fazla bilgi için, Windows SDK fırçalar olarak [raster Işlem kodları](/windows/win32/gdi/raster-operation-codes) ve [bit eşlemler](/windows/win32/gdi/bitmaps-as-brushes) bölümüne bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

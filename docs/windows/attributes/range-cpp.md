@@ -1,21 +1,21 @@
 ---
-title: Aralık (C++ COM özniteliği)
+title: Aralık (C++ com özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.range
 helpviewer_keywords:
 - range attribute
 ms.assetid: f352f79e-ecb3-4cdd-9cdd-8406ef473594
-ms.openlocfilehash: 9ce941fe95f2bbef3895c039984db1e1d2985ae1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d1221192eb1813d759f293fe5555d7aaa5b367ab
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62407490"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69514147"
 ---
 # <a name="range-c"></a>aralık (C++)
 
-Bağımsız değişkenler veya değerleri çalışma zamanında ayarlanır alanlar için izin verilen değer aralığı belirtir.
+Değerleri çalışma zamanında ayarlanmış olan bağımsız değişkenler veya alanlar için izin verilen değerler aralığını belirtir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -25,15 +25,15 @@ Bağımsız değişkenler veya değerleri çalışma zamanında ayarlanır alanl
 
 ### <a name="parameters"></a>Parametreler
 
-*Düşük*<br/>
-Düşük aralık değeri.
+*zayıf*<br/>
+Düşük Aralık değeri.
 
-*Yüksek*<br/>
-Yüksek bir aralık değeri.
+*geniş*<br/>
+Yüksek Aralık değeri.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Aralığı** C++ özniteliği ile aynı işlevlere sahip [aralığı](/windows/desktop/Midl/range) MIDL özniteliği.
+**Range** C++ özniteliği, MIDL özniteliğiyle aynı işlevselliğe sahiptir [](/windows/win32/Midl/range) .
 
 ## <a name="example"></a>Örnek
 
@@ -57,12 +57,12 @@ __interface ICustom {
 
 |||
 |-|-|
-|**İçin geçerlidir**|Arabirim yöntemini, arabirim parametresi|
+|**Uygulama hedefi**|Arabirim yöntemi, arabirim parametresi|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|None|
-|**Geçersiz öznitelikler**|None|
+|**Gerekli öznitelikler**|Yok.|
+|**Geçersiz öznitelikler**|Yok.|
 
-Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
+Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

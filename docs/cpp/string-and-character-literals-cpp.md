@@ -14,12 +14,12 @@ helpviewer_keywords:
 - literal strings [C++]
 - string literals [C++]
 ms.assetid: 61de8f6f-2714-4e7b-86b6-a3f885d3b9df
-ms.openlocfilehash: df690bea81b9799b30ae91313ce7157400ef8413
-ms.sourcegitcommit: bd7ddc044f9083246614b602ef6a758775313214
+ms.openlocfilehash: e7f0d4291aeb2e3d8dc1eac4dd08ef3e961468ff
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68866090"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69498528"
 ---
 # <a name="string-and-character-literals-c"></a>Dize ve karakter değişmez değerleriC++()
 
@@ -216,7 +216,7 @@ char u5 = '\U00000041'; // \U UCN 'A'
 
 Evrensel karakter adları, D800-DFFF yedek kod noktası aralığındaki değerleri kodlayamıyor. Unicode vekil çiftleri için, kullanarak `\UNNNNNNNN`evrensel karakter adını belirtin, burada nnnnnnnn karakter için sekiz basamaklı bir kod noktasıdır. Derleyici, gerekirse bir vekil çift oluşturur.
 
-C++ 03 ' de, dil yalnızca evrensel karakter adlarıyla temsil edilecek bir karakter alt kümesine izin verilir ve gerçekte geçerli bir Unicode karakteri temsil etmeyen bazı evrensel karakter adlarına izin verilir. Bu hata C++ 11 standardında düzeltildi. C++ 11 ' de, hem karakter hem de dize sabit değerleri ve tanımlayıcılar evrensel karakter adlarını kullanabilir.  Evrensel karakter adları hakkında daha fazla bilgi için bkz. [karakter kümeleri](../cpp/character-sets.md). Unicode hakkında daha fazla bilgi için bkz. [Unicode](https://msdn.microsoft.com/library/dd374081). Vekil çiftleri hakkında daha fazla bilgi için bkz. [vekil çiftleri ve tamamlayıcı karakterler](/windows/desktop/Intl/surrogates-and-supplementary-characters).
+C++ 03 ' de, dil yalnızca evrensel karakter adlarıyla temsil edilecek bir karakter alt kümesine izin verilir ve gerçekte geçerli bir Unicode karakteri temsil etmeyen bazı evrensel karakter adlarına izin verilir. Bu hata C++ 11 standardında düzeltildi. C++ 11 ' de, hem karakter hem de dize sabit değerleri ve tanımlayıcılar evrensel karakter adlarını kullanabilir.  Evrensel karakter adları hakkında daha fazla bilgi için bkz. [karakter kümeleri](../cpp/character-sets.md). Unicode hakkında daha fazla bilgi için bkz. [Unicode](/windows/win32/intl/unicode). Vekil çiftleri hakkında daha fazla bilgi için bkz. [vekil çiftleri ve tamamlayıcı karakterler](/windows/win32/Intl/surrogates-and-supplementary-characters).
 
 ## <a name="string-literals"></a>Dize sabit değerleri
 

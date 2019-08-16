@@ -12,12 +12,12 @@ helpviewer_keywords:
 - /DELAY linker option
 - -DELAY linker option
 ms.assetid: 9334b332-cc58-4dae-b10f-a4c75972d50c
-ms.openlocfilehash: d3c32ba04cbad509ff2819020a35102698d6ceb3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ef6f5f768cf86f470d1322fa2a7bee6db794c2ef
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62272132"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69493002"
 ---
 # <a name="delay-delay-load-import-settings"></a>/DELAY (Gecikme Yükü İçe Aktarma Ayarları)
 
@@ -28,27 +28,27 @@ ms.locfileid: "62272132"
 
 ## <a name="remarks"></a>Açıklamalar
 
-/ Delay seçeneği denetimleri [Gecikmeli yükleme](linker-support-for-delay-loaded-dlls.md) DLL'lerin:
+/DELAY seçeneği, dll 'lerin [gecikmeli yüklenmesini](linker-support-for-delay-loaded-dlls.md) denetler:
 
-- UNLOAD niteleyicisi gecikme yükleme yardımcı işlevine açık DLL'i kaldırma desteklemek için söyler. İçeri aktarma adres tablosu (IAT), özgün formuna IAT işaretçileri geçersiz kılınması ve bunları üzerine yazılmasına neden sıfırlanır.
+- KALDıRMA niteleyicisi, gecikme Yükleme Yardımcısı işlevine DLL 'nin açıkça kaldırılmasını desteklememesini söyler. Içeri aktarma adres tablosu (ıAT) orijinal biçimine sıfırlanır, ıAT işaretçilerine geçersiz kılınır ve üzerine yazılmasına neden olur.
 
-   UNLOAD belirlemezseniz herhangi çağrısı [FUnloadDelayLoadedDLL](explicitly-unloading-a-delay-loaded-dll.md) başarısız olur.
+   Kaldır ' ı seçmezseniz, [FUnloadDelayLoadedDLL](explicitly-unloading-a-delay-loaded-dll.md) çağrısı başarısız olur.
 
-- NOBIND niteleyicisi bağlayıcıya son görüntüde bağlanabilir IAT eklememesini söyler. Gecikmeli yüklenen DLL'ler için bağlanabilir IAT oluşturmak için varsayılandır. Elde edilen görüntü statik olarak bağlanamaz. (Bağlanabilir IATs görüntülerle yürütme önce statik olarak bağlanabilir.) Bkz: [/bağlama](bind.md).
+- NOBIND niteleyicisi, bağlayıcının son görüntüde bağlanabilir bir ıAT içermeyeceğini söyler. Varsayılan olarak, Gecikmeli yüklenen dll 'Ler için bağlanabilir ıAT oluşturulur. Elde edilen görüntü, statik olarak bağlanamaz. (Bağlanabilir IATS içeren görüntüler, yürütmeden önce statik olarak bağlanabilir.) Bkz. [/bind](bind.md).
 
-   DLL bağlıysa yardımcı işlevini çağırmak yerine ilişkili bilgileri kullanmak deneyecek [GetProcAddress](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) her başvurulan alır. Zaman damgası veya tercih edilen adresi bu yüklenen DLL'nin ile eşleşmiyorsa yardımcı işlevini ilişkili IAT güncel değil ve ilişkili IAT yoksa olarak devam edecek varsayar.
+   DLL bağlı ise yardımcı işlevi, başvurulan içeri aktarmaların her birinde [GetProcAddress](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) çağırmak yerine bağlı bilgileri kullanmayı dener. Zaman damgası ya da tercih edilen adres, yüklenen DLL 'nin olanlarla eşleşmezse, yardımcı işlev, ıAT 'nın, o 'nun güncel olmadığını varsayar ve BAĞLANıAT yok gibi devam eder.
 
-   Programınızı büyük olacak şekilde görüntü ancak hızlandırabilirsiniz NOBIND nedenleri DLL'nin zaman yükleyin. Hiçbir zaman DLL'yi bağlamak istiyorsanız, NOBIND ilişkili IAT oluşturulmasını engeller.
+   NOBIND, program görüntünüzün daha büyük olmasına neden olur, ancak DLL yükleme süresini hızlandırabilir. DLL 'yi bağlamayı hiç düşünmüyorsanız, NOBIND bağlı ıAT 'in oluşturulmasını engeller.
 
-Gecikme yükü DLL'lerini belirtmek için kullanın [/delayload](delayload-delay-load-import.md) seçeneği.
+Yük gecikmesi olacak dll 'Leri belirtmek için [/delayload](delayload-delay-load-import.md) seçeneğini kullanın.
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Bilgi için [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Bilgi için bkz. [Visual C++ Studio 'da derleyici ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Genişletin **yapılandırma özellikleri**, **bağlayıcı**ve ardından **Gelişmiş**.
+1. **Yapılandırma özellikleri**' ni ve **bağlayıcı**' yı genişletin ve **Gelişmiş**' i seçin.
 
-1. Değiştirme **Gecikmeli yüklenen DLL'i** özelliği.
+1. **Yüklenen dll 'Yi geciktir** özelliğini değiştirin.
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
 

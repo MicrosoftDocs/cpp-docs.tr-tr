@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - uuid attribute
 ms.assetid: 90562a94-5e28-451b-a4b0-cadda7f66efe
-ms.openlocfilehash: eae79f9a4d0af6375834c0792c4004f52a16e07e
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: d644f59ac92bf4e39f191c291dd4fef626411c3d
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65448934"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69514944"
 ---
 # <a name="uuid-c-attributes"></a>uuid (C++ Öznitelikleri)
 
-Bir sınıf veya arabirim için benzersiz Kimliğini belirtir.
+Bir sınıf veya arabirim için benzersiz KIMLIĞI belirtir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -28,21 +28,21 @@ Bir sınıf veya arabirim için benzersiz Kimliğini belirtir.
 ### <a name="parameters"></a>Parametreler
 
 *uuid*<br/>
-128-bit, benzersiz tanımlayıcısı.
+128 bit, benzersiz bir tanımlayıcı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir arabirim veya sınıf tanımını belirtme **UUID** C++ özniteliği, ardından Microsoft C++ derleyici bir sağlayacaktır. Belirttiğinizde bir **UUID**, tırnak işaretleri eklemeniz gerekir.
+Bir arabirimin veya sınıfın tanımı **UUID** C++ özniteliğini belirtmezse, Microsoft C++ derleyicisi bir tane sağlayacaktır. Bir **UUID**belirttiğinizde, tırnak işaretleri dahil etmeniz gerekir.
 
-Siz belirtmezseniz **UUID**, derleyici bir makinede farklı öznitelik projelerinde arabirimler veya aynı ada sahip sınıflar için aynı GUID oluşturur.
+**UUID**belirtmezseniz, derleyici bir makinedeki farklı öznitelik projelerinde aynı ada sahip arabirimler veya sınıflar IÇIN aynı GUID 'i oluşturur.
 
-Uuidgen.exe veya Guidgen.exe kendi benzersiz kimlikler oluşturmak için kullanabilirsiniz. (Bu araçlardan birini çalıştırmak için tıklayın **Başlat** tıklatıp **çalıştırma** menüsünde. Ardından gerekli aracının adını girin.)
+Kendi benzersiz kimliklerinizi oluşturmak için Uuidgen. exe veya GUIDgen. exe kullanabilirsiniz. (Bu araçlardan birini çalıştırmak için **Başlat** ' a tıklayın ve menüden **Çalıştır** ' a tıklayın. Ardından gerekli aracın adını girin.)
 
-ATL ayrıca kullanmayan bir projede kullanılan belirttiğinizde **UUID** özniteliktir belirtmekle aynı [UUID](../../cpp/uuid-cpp.md) **__declspec** değiştiricisi. Alınacak **UUID** bir sınıfı, kullandığınız [__uuidof](../../cpp/uuidof-operator.md)
+ATL kullanmayan bir projede kullanıldığında, **UUID** özniteliği belirtildiğinde [UUID](../../cpp/uuid-cpp.md) **__declspec** değiştiricisi belirtilerek aynı olur. Bir sınıfın **UUID** 'sini almak için [__uuidof](../../cpp/uuidof-operator.md) kullanabilirsiniz
 
 ## <a name="example"></a>Örnek
 
-Bkz: [bağlanabilir](bindable.md) örnek kullanımını örneğin **UUID**.
+**UUID**'nin örnek bir kullanımı için [bağlanabilir](bindable.md) örneğe bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -50,12 +50,12 @@ Bkz: [bağlanabilir](bindable.md) örnek kullanımını örneğin **UUID**.
 
 |||
 |-|-|
-|**İçin geçerlidir**|**sınıf**, **yapı**, **arabirimi**, **birleşim**, **sabit listesi**|
+|**Uygulama hedefi**|**sınıf**, **Yapı**, **arabirim**, **birleşim**, **enum**|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|Yok.|
+|**Gerekli öznitelikler**|Yok.|
 |**Geçersiz öznitelikler**|Yok.|
 
-Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
+Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
@@ -63,4 +63,4 @@ Bkz: [bağlanabilir](bindable.md) örnek kullanımını örneğin **UUID**.
 [Arabirim Öznitelikleri](interface-attributes.md)<br/>
 [Sınıf Öznitelikleri](class-attributes.md)<br/>
 [Typedef, Enum, Union ve Struct Öznitelikleri](typedef-enum-union-and-struct-attributes.md)<br/>
-[uuid](/windows/desktop/Midl/uuid)
+[uuid](/windows/win32/Midl/uuid)

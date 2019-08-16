@@ -1,21 +1,21 @@
 ---
-title: toplanabilir (C++ COM özniteliği)
+title: toplanamayanC++ (com özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.aggregatable
 helpviewer_keywords:
 - aggregatable attribute
 ms.assetid: 9253a46a-cd76-41f2-b3b6-86f709bb069c
-ms.openlocfilehash: 8d5ceb46a124db8c0082495d48e6ee0e21655422
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: aa70c2417b3262e98118b5e717ce39d0147024de
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62391003"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69491009"
 ---
 # <a name="aggregatable"></a>toplanabilir
 
-Sınıf toplama desteklediğini belirtir.
+Sınıfın toplamayı desteklediğini gösterir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -26,25 +26,25 @@ Sınıf toplama desteklediğini belirtir.
 ### <a name="parameters"></a>Parametreler
 
 *value*<br/>
-(İsteğe bağlı) COM nesnesinin ne zaman toplanabilir belirtmek için bir parametre:
+Seçim COM nesnesinin toplanabileceği zaman gösteren bir parametre:
 
-- `never` COM nesnesi toplanamaz.
+- `never`COM nesnesi toplanamıyor.
 
-- `allowed` COM Nesne doğrudan oluşturulabilir veya onu toplanabilir. Bu varsayılandır.
+- `allowed`COM nesnesi doğrudan oluşturulabilir veya toplanabilir. Bu varsayılandır.
 
-- `always` COM Nesne doğrudan oluşturulamaz ve yalnızca toplanabilir. Çağırdığınızda `CoCreateInstance` bu nesne için toplama nesnenin belirtmelisiniz `IUnknown` arabirimi (denetleme `IUnknown`).
+- `always`COM nesnesi doğrudan oluşturulamaz ve yalnızca toplanabilir. Bu nesne için `CoCreateInstance` çağırdığınızda, toplanan `IUnknown` nesnenin arabirimini (Denetim `IUnknown`) belirtmeniz gerekir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Toplanabilir** C++ özniteliği ile aynı işlevlere sahip [toplanabilir](/windows/desktop/Midl/aggregatable) MIDL özniteliği. Bu derleyici geçer anlamına gelir **toplanabilir** oluşturulan .idl dosyasına özniteliği aracılığıyla.
+**Toplanamayan** C++ öznitelik, [toplanabilir](/windows/win32/Midl/aggregatable) MIDL özniteliğiyle aynı işlevselliğe sahiptir. Bu, derleyicinin **toplanabilir** özniteliğini oluşturulan. IDL dosyasına geçimeyeceği anlamına gelir.
 
-Bu öznitelik gerektiren [coclass'ı](coclass.md), [ProgID](progid.md), veya [vi_progid](vi-progid.md) özniteliği (ya da bunlardan birini anlamına gelir. başka bir öznitelik) da uygulanabilir aynı öğeye. Herhangi bir tek öznitelik kullandıysanız, diğer iki otomatik olarak uygulanır. Örneğin, varsa `progid` uygulanan `vi_progid` ve `coclass` de uygulanır.
+Bu öznitelik, [coclass](coclass.md), [ProgID](progid.md)veya [vi_progid](vi-progid.md) özniteliğinin (ya da bunlardan birini belirten başka bir özniteliğin) aynı öğeye uygulanmasını gerektirir. Tek bir öznitelik kullanılırsa, diğer ikisi otomatik olarak uygulanır. Örneğin, `progid` `vi_progid` uygulanmışsa ve`coclass` de uygulanır.
 
 ### <a name="atl-projects"></a>ATL projeleri
 
-Bu öznitelik ATL kullanan bir proje içinde kullanılıyorsa, öznitelik davranışını değiştirir. Daha önce açıklandığı gibi davranışa ek olarak, öznitelik ayrıca aşağıdaki makroları biri hedef sınıfına ekler:
+Bu öznitelik, ATL kullanan bir proje içinde kullanılıyorsa, öznitelik davranışı değişir. Daha önce açıklanan davranışa ek olarak, özniteliği de hedef sınıfa aşağıdaki makrolardan birini ekler:
 
-|Parametre değeri|Eklenen makrosu|
+|Parametre değeri|Makro ekleniyor|
 |---------------------|--------------------|
 |`Never`|[DECLARE_NOT_AGGREGATABLE](../../atl/reference/aggregation-and-class-factory-macros.md#declare_not_aggregatable)|
 |`Allowed`|[DECLARE_POLY_AGGREGATABLE](../../atl/reference/aggregation-and-class-factory-macros.md#declare_poly_aggregatable)|
@@ -72,16 +72,16 @@ class CMyClass {};
 
 |||
 |-|-|
-|**İçin geçerlidir**|**sınıf**, **yapısı**|
+|**Uygulama hedefi**|**sınıf**, **Yapı**|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|Bir veya daha fazlasını: `coclass`, `progid`, veya `vi_progid`.|
+|**Gerekli öznitelikler**|Aşağıdakilerden biri veya daha fazlası: `coclass`, `progid`, veya `vi_progid`.|
 |**Geçersiz öznitelikler**|Yok.|
 
-Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
+Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [IDL öznitelikleri](idl-attributes.md)<br/>
 [Sınıf Öznitelikleri](class-attributes.md)<br/>
 [Typedef, Enum, Union ve Struct Öznitelikleri](typedef-enum-union-and-struct-attributes.md)<br/>
-[Toplama](/windows/desktop/com/aggregation)
+[Toplama](/windows/win32/com/aggregation)

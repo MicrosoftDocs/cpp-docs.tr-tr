@@ -25,16 +25,16 @@ helpviewer_keywords:
 - _get_heap_handle function
 - get_heap_handle function
 ms.assetid: a4d05049-8528-494a-8281-a470d1e1115c
-ms.openlocfilehash: 82ea108a41bec1d0276e2c952b3f509f36bab8ab
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7e82686c4b33dc11f02f387a97966d3ff5a47085
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62332123"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69499923"
 ---
-# <a name="getheaphandle"></a>_get_heap_handle
+# <a name="_get_heap_handle"></a>_get_heap_handle
 
-C çalışma zamanı sistemi tarafından kullanılan yığın tanıtıcısını döndürür.
+C çalışma zamanı sistemi tarafından kullanılan yığının tanıtıcısını döndürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -48,13 +48,13 @@ C çalışma zamanı sistemi tarafından kullanılan Win32 yığınının tanıt
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevi çağırmak istediğinizde kullanın [Heapsetınformation](/windows/desktop/api/heapapi/nf-heapapi-heapsetinformation) ve ve CRT yığınında düşük parçalanma yığınını etkinleştirmek.
+[HeapSetInformation](/windows/win32/api/heapapi/nf-heapapi-heapsetinformation) ÇAĞıRMAK ve CRT yığınında düşük parçalanma yığınını etkinleştirmek istiyorsanız bu işlevi kullanın.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_get_heap_handle**|\<malloc.h >|
+|**_get_heap_handle**|\<malloc. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

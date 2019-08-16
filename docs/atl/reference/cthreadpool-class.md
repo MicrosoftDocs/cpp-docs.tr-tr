@@ -20,12 +20,12 @@ f1_keywords:
 helpviewer_keywords:
 - CThreadPool class
 ms.assetid: 06683718-01b9-413c-9481-2dc1734ec70f
-ms.openlocfilehash: 07fd470a6aeab0575f2733d72650bd695b8e2752
-ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
+ms.openlocfilehash: f0b732efdce5cf04349f468363b8d86621d90204
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68915681"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69496303"
 ---
 # <a name="cthreadpool-class"></a>CThreadPool sınıfı
 
@@ -78,7 +78,7 @@ Havuzun başlatılması, yeniden boyutlandırılması veya kapatılması durumun
 
 İş parçacığı oluşturulduktan hemen sonra, işparçacığı ile ilişkili`Initialize` nesne üzerinde çalışan:: çağırılır. Bir iş parçacığının yok edilmesiyle hemen önce, *Worker*:`Terminate` : çağrılır. Her iki yöntem de **void** <strong>\*</strong> bağımsız değişkenini kabul etmelidir. Bu bağımsız değişkenin değeri, [CThreadPool:: Initialize](#initialize)öğesinin *pvWorkerParam* parametresi aracılığıyla iş parçacığı havuzuna geçirilir.
 
-Kuyrukta ve çalışan iş parçacıklarında iş öğeleri olduğunda, bir çalışan iş parçacığı kuyruktan bir öğe çeker ve o iş parçacığı için `Execute` *çalışan* nesnesinin yöntemini çağırır. Üç öğe daha sonra yönteme geçirilir: kuyruktaki öğe, `pvWorkerParam` *Worker*:: `Initialize` ve *Worker*:: `Terminate`olarak ve GÇ tamamlama bağlantı noktası kuyruğu için kullanılan [örtüşen](/windows/desktop/api/minwinbase/ns-minwinbase-overlapped) yapıya yönelik bir işaretçi. .
+Kuyrukta ve çalışan iş parçacıklarında iş öğeleri olduğunda, bir çalışan iş parçacığı kuyruktan bir öğe çeker ve o iş parçacığı için `Execute` *çalışan* nesnesinin yöntemini çağırır. Üç öğe daha sonra yönteme geçirilir: kuyruktaki öğe, `pvWorkerParam` *Worker*:: `Initialize` ve *Worker*:: `Terminate`olarak ve GÇ tamamlama bağlantı noktası kuyruğu için kullanılan [örtüşen](/windows/win32/api/minwinbase/ns-minwinbase-overlapped) yapıya yönelik bir işaretçi. .
 
 *Çalışan* sınıfı, bir typedef, *Worker*:: `RequestType`ile iş parçacığı havuzunda sıraya eklenecek öğelerin türünü bildirir. Bu tür, bir ULONG_PTR öğesine ve öğesinden tür dönüştürme yeteneğine sahip olmalıdır.
 
@@ -344,7 +344,7 @@ void Shutdown(DWORD dwMaxWait = 0) throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, havuzdaki tüm iş parçacıklarına bir kapalı isteği gönderir. Zaman aşımı süresi dolarsa, bu yöntem, çıkış olmayan herhangi bir iş parçacığında [TerminateThread](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-terminatethread) öğesini çağırır. Bu yöntem, sınıfının yıkıcısında otomatik olarak çağrılır.
+Bu yöntem, havuzdaki tüm iş parçacıklarına bir kapalı isteği gönderir. Zaman aşımı süresi dolarsa, bu yöntem, çıkış olmayan herhangi bir iş parçacığında [TerminateThread](/windows/win32/api/processthreadsapi/nf-processthreadsapi-terminatethread) öğesini çağırır. Bu yöntem, sınıfının yıkıcısında otomatik olarak çağrılır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

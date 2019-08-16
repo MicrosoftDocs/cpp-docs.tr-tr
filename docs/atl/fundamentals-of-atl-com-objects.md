@@ -7,72 +7,72 @@ helpviewer_keywords:
 - ATL COM objects
 - COM objects, ATL
 ms.assetid: 0f9c9d98-cc28-45da-89ac-dc94cee422fe
-ms.openlocfilehash: cba26ede01b69e4a077f1e842982adc8c2127331
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ec83539b2d7101c534bbc1df33577df422e76152
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62198926"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69492363"
 ---
 # <a name="fundamentals-of-atl-com-objects"></a>ATL COM nesnelerinin temelleri
 
-ATL COM nesnesini tanımlamak için kullanılan arabirimler ve sınıflar arasındaki ilişkiyi aşağıdaki çizimde gösterilmektedir.
+Aşağıdaki çizimde, ATL COM nesnesini tanımlamak için kullanılan sınıflar ve arabirimler arasındaki ilişki gösterilmektedir.
 
 ![ATL yapısı](../atl/media/vc307y1.gif "ATL yapısı")
 
 > [!NOTE]
->  Bu diyagramda gösterilmektedir `CComObject` türetilir `CYourClass` ise `CComAggObject` ve `CComPolyObject` dahil `CYourClass` bir üye değişkeni.
+>  Bu `CComObject` diyagram, '`CComAggObject` den `CYourClass` türetilen ve üye değişkeni `CComPolyObject` olarak `CYourClass` dahil olan ' i gösterir.
 
-ATL COM nesnesini tanımlamak için üç yolu vardır. Standart seçeneğini kullanmaktır `CComObject` sınıfından türetilen sınıf `CYourClass`. İkinci seçenek kullanılarak toplanan nesne oluşturma, `CComAggObject` sınıfı. Üçüncü seçenek kullanmaktır `CComPolyObject` sınıfı. `CComPolyObject` karma davranır: olarak işlev görebilir bir `CComObject` sınıfı veya farklı bir `CComAggObject` nasıl ilk oluşturulduğuna bağlı olarak sınıfı. Nasıl kullanılacağı hakkında daha fazla bilgi için `CComPolyObject` sınıfı [CComPolyObject sınıfı](../atl/reference/ccompolyobject-class.md).
+ATL COM nesnesi tanımlamanın üç yolu vardır. Standart seçeneği, öğesinden `CComObject` `CYourClass`türetilen sınıfı kullanmaktır. İkinci seçenek, `CComAggObject` sınıfını kullanarak toplanmış bir nesne oluşturmaktır. Üçüncü seçenek `CComPolyObject` sınıfını kullanmaktır. `CComPolyObject`karma işlevi görür: ilk oluşturulma şekline bağlı olarak bir `CComObject` sınıf veya `CComAggObject` sınıf olarak çalışabilir. `CComPolyObject` Sınıfının nasıl kullanılacağı hakkında daha fazla bilgi için bkz. [CComPolyObject sınıfı](../atl/reference/ccompolyobject-class.md).
 
-Standart ATL COM kullandığınızda, iki nesne kullanın: dış bir nesne ve bir iç nesne. Dış istemcilere işlevselliğini iç nesne dış nesne içinde tanımlanan sarmalayıcı işlevleri aracılığıyla erişin. Dış nesne türünde `CComObject`.
+Standart ATL COM kullandığınızda iki nesne kullanırsınız: bir dış nesne ve bir iç nesne. Dış istemciler, dış nesnede tanımlanan sarmalayıcı işlevleri aracılığıyla iç nesne işlevlerine erişir. Dış nesne türündedir `CComObject`.
 
-Toplanan nesne kullandığınızda, dış nesne sarmalayıcıları için iç nesneyi işlevselliğini sağlamaz. Bunun yerine, dış nesne, dış istemciler tarafından doğrudan erişilebilen bir işaretçi sağlar. Bu senaryoda dış nesne türünde `CComAggObject`. İç nesne dış nesne üyesi değişkeninin ve türü `CYourClass`.
+Toplanmış bir nesne kullandığınızda, dış nesne iç nesnenin işlevselliği için sarmalayıcılar sağlamaz. Bunun yerine, dış nesne doğrudan dış istemciler tarafından erişilen bir işaretçi sağlar. Bu senaryoda, dış nesne türündedir `CComAggObject`. İç nesne, dış nesnenin üye değişkenidir ve türüdür `CYourClass`.
 
-İstemci iç nesneyi ile etkileşim kurmak için dış nesne aracılığıyla Git sahip olmadığından, toplu genellikle daha verimli nesneleridir. Ayrıca, toplu nesnenin arabirimi istemciye doğrudan kullanılabilir olması koşuluyla, toplanan nesnesinin işlevselliğini bilmek dış nesne yok. Ancak, tüm nesneleri toplanabilir. Toplanacak bir nesne için bunu aklınızda toplama ile tasarlanmış olması gerekir.
+İstemci, iç nesneyle etkileşimde bulunmak için dış nesneden gezinmek zorunda olmadığından, toplanmış nesneler genellikle daha etkilidir. Ayrıca, toplanan nesnenin arabirimi doğrudan istemci tarafından kullanılabilir olduğu için, dış nesne, toplanmış nesnenin işlevselliğini bilmelidir. Ancak, tüm nesneler toplanamaz. Toplanacak bir nesne için, dikkat etmeniz gereken toplama ile tasarlanmalıdır.
 
-ATL uygulayan [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) iki aşama içinde:
+ATL, [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) 'yi iki aşamada uygular:
 
-- [CComObject](../atl/reference/ccomobject-class.md), [CComAggObject](../atl/reference/ccomaggobject-class.md), veya [CComPolyObject](../atl/reference/ccompolyobject-class.md) uygulayan `IUnknown` yöntemleri.
+- [CComObject](../atl/reference/ccomobject-class.md), [CComAggObject](../atl/reference/ccomaggobject-class.md)veya `IUnknown` [CComPolyObject](../atl/reference/ccompolyobject-class.md) yöntemleri uygular.
 
-- [CComObjectRoot](../atl/reference/ccomobjectroot-class.md) veya [CComObjectRootEx](../atl/reference/ccomobjectrootex-class.md) dış işaretçileri ve başvuru sayısını yönetir `IUnknown`.
+- [CComObjectRoot](../atl/reference/ccomobjectroot-class.md) veya [CComObjectRootEx](../atl/reference/ccomobjectrootex-class.md) , başvuru sayısını ve `IUnknown`dış işaretçilerini yönetir.
 
-ATL COM nesnenizin diğer yönleri diğer sınıfları tarafından işlenir:
+ATL COM nesnenizin diğer yönleri diğer sınıflar tarafından işlenir:
 
-- [CComCoClass](../atl/reference/ccomcoclass-class.md) nesnenin varsayılan sınıf üreteci ve toplama modelini tanımlar.
+- [CComCoClass](../atl/reference/ccomcoclass-class.md) , nesnenin varsayılan sınıf fabrikası ve toplama modelini tanımlar.
 
-- [Idispatchımpl](../atl/reference/idispatchimpl-class.md) bir varsayılan uygulamayı sağlar `IDispatch Interface` nesne üzerinde herhangi bir ikili arabirimler kısmı.
+- [IDispatchImpl](../atl/reference/idispatchimpl-class.md) nesne üzerindeki herhangi bir çift arabirimin `IDispatch Interface` bölümünün varsayılan bir uygulamasını sağlar.
 
-- [Isupporterrorınfoımpl](../atl/reference/isupporterrorinfoimpl-class.md) uygulayan `ISupportErrorInfo` hata bilgilerini sağlar arabirimi yayılan çağrı zincirini doğru.
+- [Iupporterrorınfoımpl](../atl/reference/isupporterrorinfoimpl-class.md) , hata `ISupportErrorInfo` bilgilerinin çağrı zincirini doğru şekilde yayılmasını sağlayan arabirimi uygular.
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
 [CComObjectRootEx Uygulama](../atl/implementing-ccomobjectrootex.md)<br/>
-Örnek uygulama için COM eşleme girişleri show `CComObjectRootEx`.
+Uygulamak `CComObjectRootEx`için örnek com eşleme girdilerini gösterir.
 
 [CComObject, CComAggObject ve CComPolyObject Uygulama](../atl/implementing-ccomobject-ccomaggobject-and-ccompolyobject.md)<br/>
-Açıklar nasıl **DECLARE_\*_AGGREGATABLE** makroları kullanımını etkileyen `CComObject`, `CComAggObject`, ve `CComPolyObject`.
+`CComObject` **Declare_\*_toplanabilir** makroların ,`CComAggObject`, ve`CComPolyObject`kullanımını nasıl etkilediğini açıklar.
 
 [IDispatch ve IErrorInfo Destekleme](../atl/supporting-idispatch-and-ierrorinfo.md)<br/>
-ATL uygulama sınıfları desteklemek için kullanılacak listeler `IDispatch` ve `IErrorInfo` arabirimleri.
+`IDispatch` Ve`IErrorInfo` arabirimlerini desteklemek için kullanılacak atl uygulama sınıflarını listeler.
 
 [IDispEventImpl Destekleme](../atl/supporting-idispeventimpl.md)<br/>
-Sınıfınız için bir bağlantı noktası uygulanacak adımlar açıklanmaktadır.
+Sınıfınız için bir bağlantı noktası uygulamak için gereken adımları açıklar.
 
 [Varsayılan Sınıf Üreteci ve Toplama Modelini Değiştirme](../atl/changing-the-default-class-factory-and-aggregation-model.md)<br/>
-Varsayılan sınıf üreteci ve toplama modelini değiştirme için kullanılacak hangi makroları gösterir.
+Varsayılan sınıf fabrikası ve toplama modelini değiştirmek için kullanılacak makroları görüntüleyin.
 
 [Toplanan Nesne oluşturma](../atl/creating-an-aggregated-object.md)<br/>
-Toplanan nesne oluşturma adımları listelenir.
+Toplu bir nesne oluşturmak için gereken adımları listeler.
 
 ## <a name="related-sections"></a>İlgili Bölümler
 
 [ATL Projesi Oluşturma](../atl/reference/creating-an-atl-project.md)<br/>
-ATL COM Nesne oluşturma hakkında bilgi sağlar.
+ATL COM nesnesi oluşturma hakkında bilgi sağlar.
 
 [ATL](../atl/active-template-library-atl-concepts.md)<br/>
-Active Template Library kullanarak programlama hakkında kavramsal konulara bağlantılar sağlar.
+Etkin Şablon kitaplığı 'nı kullanarak programla programlama hakkında kavramsal konuların bağlantılarını sağlar.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kavramları](../atl/active-template-library-atl-concepts.md)
+[Tiren](../atl/active-template-library-atl-concepts.md)

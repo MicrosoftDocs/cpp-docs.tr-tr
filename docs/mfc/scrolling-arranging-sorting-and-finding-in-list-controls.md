@@ -11,18 +11,18 @@ helpviewer_keywords:
 - CListCtrl class [MFC], sorting
 - CListCtrl class [MFC], arranging the list
 ms.assetid: dcc51e4c-0ca8-4319-bec5-6994cc8ac9e5
-ms.openlocfilehash: 7826b7d08869f8df01f8dad2c4da3c24c468d1be
-ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
+ms.openlocfilehash: 76cff3e5b972c41d395ccec671f95c921005f1b9
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66504254"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69511272"
 ---
 # <a name="scrolling-arranging-sorting-and-finding-in-list-controls"></a>Liste Denetimlerinde Kaydırma, Düzenleme Sıralama ve Bulma
 
-Liste denetimleri ([CListCtrl](../mfc/reference/clistctrl-class.md)) varsayılan olarak kaydırılabilir olan. Daha fazla bilgi için [kaydırma konumunu](/windows/desktop/Controls/using-list-view-controls) Windows SDK ve [kaydırma](../mfc/reference/clistctrl-class.md#scroll) üye işlevi.
+Liste denetimleri ([CListCtrl](../mfc/reference/clistctrl-class.md)) varsayılan olarak kaydırılabilir. Daha fazla bilgi için Windows SDK ve [kaydırma](../mfc/reference/clistctrl-class.md#scroll) üye Işlevindeki [kaydırma konumu](/windows/win32/Controls/using-list-view-controls) bölümüne bakın.
 
-Çağırabilirsiniz `CListCtrl` denetimindeki liste öğelerini düzenlemek için üye işlevleri öğeleri sıralama ve belirli öğeleri bulun. Daha fazla bilgi için [kullanarak ListView denetimleri](/windows/desktop/Controls/using-list-view-controls) Windows SDK ve [CListCtrl](../mfc/reference/clistctrl-class.md) üyeleri [Yerleştir](../mfc/reference/clistctrl-class.md#arrange), [SortItems](../mfc/reference/clistctrl-class.md#sortitems), ve [FindItem](../mfc/reference/clistctrl-class.md#finditem).
+Denetimdeki liste öğelerini `CListCtrl` düzenlemek, öğeleri sıralamak ve belirli öğeleri bulmak için üye işlevlerini çağırabilirsiniz. Daha fazla bilgi için, bkz. Windows SDK [ListView denetimlerini kullanma](/windows/win32/Controls/using-list-view-controls) ve [CListCtrl](../mfc/reference/clistctrl-class.md) üyeleri [düzenleme](../mfc/reference/clistctrl-class.md#arrange), [SortItems](../mfc/reference/clistctrl-class.md#sortitems)ve [FindItem](../mfc/reference/clistctrl-class.md#finditem).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

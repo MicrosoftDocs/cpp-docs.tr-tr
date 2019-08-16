@@ -1,5 +1,5 @@
 ---
-title: COleDateTime sınıfı
+title: Cotadatetime sınıfı
 ms.date: 03/27/2019
 f1_keywords:
 - COleDateTime
@@ -34,16 +34,16 @@ helpviewer_keywords:
 - dates, handling in MFC
 - time, handling in MFC
 ms.assetid: e718f294-16ec-4649-88b6-a4dbae5178fb
-ms.openlocfilehash: 63c2971f5d55cb5198925650bcf90b2f1a8b0958
-ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
+ms.openlocfilehash: a254019d1efe916365799affa3d2c5271883bafb
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66503223"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69491266"
 ---
-# <a name="coledatetime-class"></a>COleDateTime sınıfı
+# <a name="coledatetime-class"></a>Cotadatetime sınıfı
 
-Kapsülleyen `DATE` OLE Otomasyonu nesnesi etkin kullanılan veri türü.
+OLE Otomasyonu 'nda kullanılan veritürünükapsüller.`DATE`
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -57,90 +57,90 @@ class COleDateTime
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[COleDateTime::COleDateTime](#coledatetime)|Oluşturur bir `COleDateTime` nesne.|
+|[Copadatetime:: Cotadatetime](#coledatetime)|Bir `COleDateTime` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[COleDateTime::Format](#format)|Bir biçimlendirilmiş dize gösterimini oluşturur bir `COleDateTime` nesne.|
-|[COleDateTime::GetAsDBTIMESTAMP](#getasdbtimestamp)|Sürede elde etmek için bu yöntemi çağırın `COleDateTime` nesnesinin bir `DBTIMESTAMP` veri yapısı.|
-|[COleDateTime::GetAsSystemTime](#getassystemtime)|Sürede elde etmek için bu yöntemi çağırın `COleDateTime` nesnesinin bir [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) veri yapısı.|
-|[COleDateTime::GetAsUDATE](#getasudate)|Sürede elde etmek için bu yöntemi çağırın `COleDateTime` olarak bir `UDATE` veri yapısı.|
-|[COleDateTime::GetCurrentTime](#getcurrenttime)|Oluşturur bir `COleDateTime` (statik üye işlevini) geçerli zamanı temsil eden nesne.|
-|[COleDateTime::GetDay](#getday)|Bu günlük döndürür `COleDateTime` nesnesi (1-31) temsil eder.|
-|[COleDateTime::GetDayOfWeek](#getdayofweek)|Bu haftanın gününü döndürür `COleDateTime` nesnesi (Pazar = 1) temsil eder.|
-|[COleDateTime::GetDayOfYear](#getdayofyear)|Bu yılın gününü döndürür `COleDateTime` nesnesi (Ocak 1 = 1) temsil eder.|
-|[COleDateTime::GetHour](#gethour)|Bu saati döndürür `COleDateTime` nesnesini temsil eder (0 - 23).|
-|[COleDateTime::GetMinute](#getminute)|Bu dakika döndürür `COleDateTime` nesnesini temsil eder (0 - 59).|
-|[COleDateTime::GetMonth](#getmonth)|Bu ay döndürür `COleDateTime` nesnesi (1-12) temsil eder.|
-|[COleDateTime::GetSecond](#getsecond)|Bu ikinci döndürür `COleDateTime` nesnesini temsil eder (0 - 59).|
-|[COleDateTime::GetStatus](#getstatus)|Bu durum (geçerlilik) alır `COleDateTime` nesne.|
-|[COleDateTime::GetYear](#getyear)|Bu yıl döndürür `COleDateTime` nesnesini temsil eder.|
-|[COleDateTime::ParseDateTime](#parsedatetime)|Bir dizeden bir tarih/saat değerini okur ve değerini ayarlar `COleDateTime`.|
-|[COleDateTime::SetDate](#setdate)|Bu ayarlar `COleDateTime` nesne belirtilen salt değer.|
-|[COleDateTime::SetDateTime](#setdatetime)|Bu ayarlar `COleDateTime` nesne belirtilen tarih/saat değeri.|
-|[COleDateTime::SetStatus](#setstatus)|' % S'durumunu (geçerlilik) Bu ayarlar `COleDateTime` nesne.|
-|[COleDateTime::SetTime](#settime)|Bu ayarlar `COleDateTime` nesne belirtilen yalnızca saat değeri.|
+|[Cotadatetime:: Format](#format)|Bir `COleDateTime` nesnenin biçimli dize temsilini oluşturur.|
+|[Cotadatetime:: GetAsDBTIMESTAMP](#getasdbtimestamp)|`COleDateTime` Nesne içindeki saati bir `DBTIMESTAMP` veri yapısı olarak almak için bu yöntemi çağırın.|
+|[Cotadatetime:: GetAsSystemTime](#getassystemtime)|`COleDateTime` Nesne içindeki saati bir [SystemTime](/windows/win32/api/minwinbase/ns-minwinbase-systemtime) veri yapısı olarak almak için bu yöntemi çağırın.|
+|[Cotadatetime:: GetAsUDATE](#getasudate)|Saati `COleDateTime` `UDATE` veri yapısı olarak almak için bu yöntemi çağırın.|
+|[Cotadatetime:: GetCurrentTime](#getcurrenttime)|Geçerli saati `COleDateTime` (statik üye işlevi) temsil eden bir nesne oluşturur.|
+|[Cotadatetime:: GetDay](#getday)|Bu `COleDateTime` nesnenin gösterdiği günü döndürür (1-31).|
+|[Cotadatetime:: GetDayOfWeek](#getdayofweek)|Bu `COleDateTime` nesnenin temsil ettiği haftanın gününü döndürür (Pazar = 1).|
+|[Cotadatetime:: GetDayOfYear](#getdayofyear)|Bu `COleDateTime` nesnenin temsil ettiği yılın gününü döndürür (Ocak 1 = 1).|
+|[Cotadatetime:: GetHour](#gethour)|Bu `COleDateTime` nesnenin temsil ettiği saati döndürür (0-23).|
+|[Cotadatetime:: GetMinute](#getminute)|Bu `COleDateTime` nesnenin temsil ettiği dakikayı döndürür (0-59).|
+|[Cotadatetime:: GetMonth](#getmonth)|Bu `COleDateTime` nesnenin temsil ettiği ayı döndürür (1-12).|
+|[Cotadatetime:: GetSecond](#getsecond)|Bu `COleDateTime` nesnenin temsil ettiği saniyeyi döndürür (0-59).|
+|[Cotadatetime:: GetStatus](#getstatus)|Bu `COleDateTime` nesnenin durumunu (geçerlilik) alır.|
+|[Cotadatetime:: GetYear](#getyear)|Bu `COleDateTime` nesnenin temsil ettiği yılı döndürür.|
+|[Cotadatetime::P arseDateTime](#parsedatetime)|Bir dizeden tarih/saat değerini okur ve değerini `COleDateTime`ayarlar.|
+|[Cotadatetime:: SetDate](#setdate)|Bu `COleDateTime` nesnenin değerini yalnızca belirtilen tarih-değer değerine ayarlar.|
+|[Cotadatetime:: SetDateTime](#setdatetime)|Bu `COleDateTime` nesnenin değerini belirtilen tarih/saat değerine ayarlar.|
+|[Cotadatetime:: SetStatus](#setstatus)|Bu `COleDateTime` nesnenin durumunu (geçerlilik) ayarlar.|
+|[Cotadatetime:: SetTime](#settime)|Bu `COleDateTime` nesnenin değerini belirtilen yalnızca saat değerine ayarlar.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[COleDateTime::operator ==, COleDateTime::operator < vb.](#coledatetime_relational_operators)|Karşılaştırabilirsiniz `COleDateTime` değerleri.|
-|[COleDateTime::operator +, COleDateTime::operator-](#operator_add_-)|Ekleme ve çıkarmayı `COleDateTime` değerleri.|
-|[COleDateTime::operator +=, COleDateTime::operator-=](#operator_add_eq_-_eq)|Ekleme ve çıkarmayı bir `COleDateTime` bu değerden `COleDateTime` nesne.|
-|[COleDateTime::operator =](#operator_eq)|Kopya bir `COleDateTime` değeri.|
-|[Tarih, COleDateTime::operator COleDateTime::operator tarih *](#operator_date)|Dönüştürür bir `COleDateTime` içine değeri bir `DATE` veya `DATE*`.|
+|[COleDateTime:: operator = =, COleDateTime:: operator <, vb.](#coledatetime_relational_operators)|İki `COleDateTime` değeri karşılaştırın.|
+|[COleDateTime:: operator +, COleDateTime:: operator-](#operator_add_-)|Değer ekleme ve `COleDateTime` çıkarma.|
+|[COleDateTime:: operator + =, COleDateTime:: operator-=](#operator_add_eq_-_eq)|`COleDateTime` Bu`COleDateTime` nesneden bir değer ekleyin ve çıkarın.|
+|[COleDateTime:: operator =](#operator_eq)|Bir `COleDateTime` değeri kopyalar.|
+|[COleDateTime:: operator DATE, COleDateTime:: operator Date *](#operator_date)|Bir değeri bir `DATE` veya`DATE*`öğesine dönüştürür. `COleDateTime`|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[COleDateTime::m_dt](#m_dt)|Arka plandaki içeren `DATE` bu `COleDateTime` nesne.|
-|[COleDateTime::m_status](#m_status)|Bu durumu içeren `COleDateTime` nesne.|
+|[Cotadatetime:: m_dt](#m_dt)|`DATE` Bu`COleDateTime` nesne için temeldeki öğesini içerir.|
+|[Cotadatetime:: m_status](#m_status)|Bu `COleDateTime` nesnenin durumunu içerir.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`COleDateTime` bir temel sınıfa sahip değil.
+`COleDateTime`taban sınıfına sahip değildir.
 
-Olası türlerinde biridir [değişken](/windows/desktop/api/oaidl/ns-oaidl-tagvariant) OLE Otomasyonu nesnesi etkin veri türü. A `COleDateTime` değeri bir mutlak tarih ve saat değerini temsil eder.
+OLE otomasyonunun [değişken](/windows/win32/api/oaidl/ns-oaidl-variant) veri türü için olası türlerden biridir. `COleDateTime` Değer, mutlak bir tarih ve saat değerini temsil eder.
 
-`DATE` Türü, bir kayan nokta değeri gerçekleştirilir. Gün 30 Aralık 1899 ' gece yarısı olarak ölçülür. Aşağıdaki tablo bazı tarihleri ve ilişkili değerleri gösterir:
+Tür `DATE` , kayan noktalı bir değer olarak uygulanır. Gün sayısı 30 Aralık 1899, gece yarısı ölçülür. Aşağıdaki tabloda bazı tarihler ve bunlarla ilişkili değerler gösterilmektedir:
 
 |Tarih|Değer|
 |----------|-----------|
-|29 Aralık 1899 gece yarısı|-1.0|
-|29 Aralık 1899'den itibaren 6 saatlerinde|-1.25|
-|30 Aralık 1899 gece yarısı|0.0|
-|31 Aralık 1899 gece yarısı|1.0|
-|1 Ocak 1900'den itibaren 6 AM|2.25|
+|29 Aralık 1899, gece yarısı|-1.0|
+|29 Aralık 1899, 6 A. d|-1.25|
+|30 Aralık 1899, gece yarısı|0.0|
+|31 Aralık 1899, gece yarısı|1.0|
+|1 Ocak 1900, 11:00|2.25|
 
 > [!CAUTION]
-> 30 Aralık 1899 gece yarısından önce gün değerleri negatif olabilir ancak yukarıdaki tabloda, günün saati değerler dönüştürülmez. Örneğin, 6: 00'da her zaman gününü temsil eden tamsayı (sonra 30 Aralık 1899) pozitif veya negatif (önce 30 Aralık 1899) olmasına bakılmaksızın bir kesir değerini 0,25 temsil edilir. Basit bir kayan nokta karşılaştırma deneyebileceğinizi sıralamanız gerekir yani bir `COleDateTime` 6: 00'da 29/12/1899 temsil eden **daha sonra** 7: 00'da aynı günde birden temsil eden.
+> Yukarıdaki tabloda, gün değerleri 30 Aralık 1899 ' de gece yarısından önce negatif hale gelir, ancak gün saati değerleri değildir. Örneğin, günü temsil eden tamsayının pozitif mi (30 Aralık 6:00 1899 ' den önce) yoksa negatif mi (30 Aralık 1899 tarihinden önce) olsun, olarak her zaman bir kesirli değer 0,25 olarak temsil edilir. Bu, basit bir kayan nokta karşılaştırmasının yanlışlıkla 12/29/1899 ' de bir `COleDateTime` temsil eden 6:00 ' i, aynı günde bir ' ı temsil 7:00 eden farklı bir şekilde sıralaması gerektiği anlamına gelir.
 
-`COleDateTime` Sınıfı tarihler 1 Ocak 100-31 Aralık 9999 işler. `COleDateTime` Sınıfı Miladi takvimini kullanır; Jülyen tarihleri desteklemez. `COleDateTime` gün ışığından yararlanma yok sayar. (Bkz [tarih ve saat: Otomasyon desteği](../../atl-mfc-shared/date-and-time-automation-support.md).)
+`COleDateTime` Sınıfı, 1 Ocak 100 ' den 31 Aralık 9999 ' ye kadar olan tarihleri işler. `COleDateTime` Sınıf, Gregoryen takvimini kullanır; bu, Jülyen tarihleri desteklemez. `COleDateTime`Gündüz kaydetme süresini yoksayar. (Bkz [. Tarih ve Saat: Otomasyon desteği](../../atl-mfc-shared/date-and-time-automation-support.md).)
 
 > [!NOTE]
-> Kullanabileceğiniz `%y` iki basamaklı bir yıl 1900 başlangıç tarihler için alınacak biçimi. Kullanırsanız `%y` kod 1900, önceki bir tarih biçimi, bir onay hatası oluşturur.
+> Yalnızca 1900 ' den `%y` başlayan tarihler için iki basamaklı bir yıl almak üzere biçimini kullanabilirsiniz. `%y` Biçimi 1900 ' den önceki bir tarih üzerinde kullanırsanız, kod bir onaylama hatası oluşturur.
 
-Bu tür, yalnızca tarih veya yalnızca saat değerlerini temsil etmek için de kullanılır. Kural olarak, yalnızca saat değerleri için kullanılan 0 (30 Aralık 1899) tarih ve saat 00:00 (gece yarısı) yalnızca tarih değerleri için kullanılır.
+Bu tür, yalnızca tarih veya yalnızca saat değerlerini temsil etmek için de kullanılır. Kurala göre, 0 (Aralık 30, 1899) tarihi yalnızca saat değerleri için kullanılır ve 00:00 (gece yarısı) zamanı yalnızca tarih değerleri için kullanılır.
 
-Oluşturursanız, bir `COleDateTime` nesnesi kullanarak bir tarih değerinden 100 tarihi kabul edilen, ancak sonraki çağrılar, `GetYear`, `GetMonth`, `GetDay`, `GetHour`, `GetMinute`, ve `GetSecond` başarısız ve -1 döndürür. Daha önce iki basamaklı tarihleri kullanabilirsiniz, ancak tarihler, 100 veya daha büyüktür, MFC 4.2 ve üzeri olması gerekir.
+100 'den küçük bir `COleDateTime` Tarih kullanarak bir nesne oluşturursanız, tarih kabul edilir, ancak sonraki `GetYear`, `GetMinute` `GetHour` `GetMonth` `GetDay`,,,, ve `GetSecond` başarısız olur ve-1 döndürür. Daha önce, iki basamaklı tarihleri kullanabilirsiniz, ancak tarihler MFC 4,2 ve sonrasında 100 veya daha büyük olmalıdır.
 
-Sorunları önlemek için dört basamaklı bir tarih belirtin. Örneğin:
+Sorunlardan kaçınmak için dört basamaklı bir tarih belirtin. Örneğin:
 
 [!code-cpp[NVC_ATLMFC_Utilities#1](../../atl-mfc-shared/codesnippet/cpp/coledatetime-class_1.cpp)]
 
-Temel aritmetik işlemleri için `COleDateTime` değerlerinde Yardımcısı sınıfı [COleDateTimeSpan](../../atl-mfc-shared/reference/coledatetimespan-class.md). `COleDateTimeSpan` bir zaman aralığı değerleri tanımlayın. Bu sınıflar arasındaki ilişkiyi arasında bir benzer [CTime](../../atl-mfc-shared/reference/ctime-class.md) ve [CTimeSpan](../../atl-mfc-shared/reference/ctimespan-class.md).
+`COleDateTime` Değerler için temel aritmetik işlemler [cotadatetimespan](../../atl-mfc-shared/reference/coledatetimespan-class.md)yardımcı sınıfını kullanır. `COleDateTimeSpan`değerler bir zaman aralığı tanımlar. Bu sınıflar arasındaki ilişki, [CTime](../../atl-mfc-shared/reference/ctime-class.md) ve [CTimeSpan](../../atl-mfc-shared/reference/ctimespan-class.md)arasında bir örneğe benzerdir.
 
-Hakkında daha fazla bilgi için `COleDateTime` ve `COleDateTimeSpan` sınıfları, başlıklı makaleye bakın [tarih ve saat: Otomasyon desteği](../../atl-mfc-shared/date-and-time-automation-support.md).
+`COleDateTime` [Ve sınıflarıhakkındadahafazlabilgiiçinbkz.Tarihvesaatmakalesi:`COleDateTimeSpan` Otomasyon desteği](../../atl-mfc-shared/date-and-time-automation-support.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** ATLComTime.h
+**Üst bilgi** ATLComTime. h
 
-##  <a name="coledatetime_relational_operators"></a>  COleDateTime ilişkisel işleçleri
+##  <a name="coledatetime_relational_operators"></a>Cotadatetime Ilişkisel Işleçleri
 
 Karşılaştırma işleçleri.
 
@@ -155,13 +155,13 @@ bool operator>=(const COleDateTime& date) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*Tarih*<br/>
-`COleDateTime` Karşılaştırılacak nesne.
+*güncel*<br/>
+Karşılaştırılacak `COleDateTime` nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
 > [!NOTE]
->  İki işlenenden geçersiz ise bir ATLASSERT meydana gelir.
+>  İki işlenenden biri geçersiz olursa ATLASSERT meydana gelir.
 
 ### <a name="example"></a>Örnek
 
@@ -169,13 +169,13 @@ bool operator>=(const COleDateTime& date) const throw();
 
 ### <a name="example"></a>Örnek
 
-İşleçler **>=** , **\< =** , **>** , ve **<** , varsa onay `COleDateTime` kümesi nesnesi null.
+,, **>=** Ve **\<işleçleri ,=nesnenullolarak** ayarlandıysaonayalacak`COleDateTime` . **>** **<**
 
 [!code-cpp[NVC_ATLMFC_Utilities#170](../../atl-mfc-shared/codesnippet/cpp/coledatetime-class_3.cpp)]
 
-##  <a name="coledatetime"></a>  COleDateTime::COleDateTime
+##  <a name="coledatetime"></a>Copadatetime:: Cotadatetime
 
-Oluşturur bir `COleDateTime` nesne.
+Bir `COleDateTime` nesnesi oluşturur.
 
 ```
 COleDateTime() throw();
@@ -200,84 +200,84 @@ COleDateTime(const DBTIMESTAMP& timeStamp) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*dateSrc*<br/>
-Mevcut bir `COleDateTime` yeni içine kopyalanacak nesne `COleDateTime` nesne.
+*Tarih Kaynak*<br/>
+`COleDateTime` Yeni`COleDateTime` nesneye Kopyalanacak varolan bir nesne.
 
 *varSrc*<br/>
-Mevcut bir `VARIANT` veri yapısı (büyük olasılıkla bir `COleVariant` nesnesi) bir tarih/saat değeri (VT_DATE) dönüştürülür ve yeni kopyalanan `COleDateTime` nesne.
+Bir tarih `VARIANT` /saat değerine (VT_DATE `COleVariant` ) dönüştürülecek ve yeni `COleDateTime` nesneye kopyalanabilecek mevcut bir veri yapısı (muhtemelen bir nesne).
 
 *dtSrc*<br/>
-Bir tarih/saat (`DATE`) yeni içine kopyalanacak değeri `COleDateTime` nesne.
+`DATE` Yeni`COleDateTime` nesneye kopyalanacak bir tarih/saat () değeri.
 
-*timeSrc*<br/>
-A `time_t` veya `__time64_t` değerini bir tarih/saat değerine dönüştürülür ve yeni kopyalanan `COleDateTime` nesne.
+*zaman dilimlerini*<br/>
+Bir `time_t` Tarih `__time64_t` /saat değerine dönüştürülecek ve yeni `COleDateTime` nesneye kopyalandığı bir veya değeri.
 
 *systimeSrc*<br/>
-A `SYSTEMTIME` yapısı bir tarih/saat değerine dönüştürülür ve yeni kopyalanan `COleDateTime` nesne.
+Bir `SYSTEMTIME` tarih/saat değerine dönüştürülecek ve yeni `COleDateTime` nesneye kopyaladığınız bir yapı.
 
 *filetimeSrc*<br/>
-A `FILETIME` yapısı bir tarih/saat değerine dönüştürülür ve yeni kopyalanan `COleDateTime` nesne. A `FILETIME` Eşgüdümlü Evrensel Saat (UTC) kullanan yerel saati yapısında geçirirseniz, sonuçlarınızı yanlış olur. Bkz: [dosya zamanlarını](/windows/desktop/SysInfo/file-times) daha fazla bilgi için Windows SDK.
+Bir `FILETIME` tarih/saat değerine dönüştürülecek ve yeni `COleDateTime` nesneye kopyaladığınız bir yapı. , Evrensel Eşgüdümlü saat (UTC) kullanır,bunedenleyapıdayerelbirsaatgeçirirseniz,sonuçlarınızyanlışolur.`FILETIME` Daha fazla bilgi için Windows SDK [Dosya sürelerine](/windows/win32/SysInfo/file-times) bakın.
 
-*nYear*, *nMonth*, *nhatalı günü*, *nHour*, *nMin*, *nSec*<br/>
-Yeni içine kopyalanacak tarih ve saat değerleri gösterir `COleDateTime` nesne.
+*nYear*, *nmonth*, *nday*, *nhour*, *nMin*, *NSEC*<br/>
+Yeni `COleDateTime` nesneye kopyalanacak tarih ve saat değerlerini belirtin.
 
-*wDosDate*, *wDosTime*<br/>
-Bir tarih/saat değerine dönüştürülür ve yeni kopyalanan için tarih ve saat değerlerini MS-DOS `COleDateTime` nesne.
+*Wdosdate*, *wdostime*<br/>
+Bir tarih/saat değerine dönüştürülecek ve yeni `COleDateTime` nesneye kopyalandığı MS-DOS tarih ve saat değerleri.
 
-*Zaman damgası*<br/>
-Bir başvuru bir [DBTimeStamp](/dotnet/api/system.data.oledb.oledbtype) geçerli yerel saat içeren yapısı.
+*Ilişkin*<br/>
+Geçerli yerel saati içeren bir [DBTimeStamp](/dotnet/api/system.data.oledb.oledbtype) yapısına başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu oluşturucular Yeni Oluştur `COleDateTime` nesneleri belirtilen değerle başlatılır. Aşağıdaki tabloda her bir tarih ve saat bileşeni için geçerli aralıklar gösterilmektedir:
+Tüm bu oluşturucular, belirtilen `COleDateTime` değere başlatılan yeni nesneler oluşturur. Aşağıdaki tabloda her bir tarih ve saat bileşeni için geçerli aralıklar gösterilmektedir:
 
-|Tarih/Saat bileşeni|Geçerli aralık|
+|Tarih/saat bileşeni|Geçerli Aralık|
 |--------------------------|-----------------|
 |yıl|100 - 9999|
 |ay|0 - 12|
 |gün|0 - 31|
-|Saat|0 - 23|
-|Dakika|0 - 59|
-|Saniye|0 - 59|
+|saate|0 - 23|
+|dakikaya|0 - 59|
+|İkincisi|0 - 59|
 
-Gün bileşenini gerçek üst sınırını değişir Not, ay ve yıl bileşenlerine göre. Ayrıntılar için bkz `SetDate` veya `SetDateTime` üye işlevleri.
+Gün bileşeni için gerçek üst sınır, ay ve yıl bileşenlerine göre farklılık gösterir. Ayrıntılar için bkz `SetDate` . veya `SetDateTime` üye işlevleri.
 
-Her Oluşturucu kısa bir açıklaması verilmiştir:
+Her oluşturucunun kısa bir açıklaması aşağıda verilmiştir:
 
-- `COleDateTime(` **)** Oluşturan bir `COleDateTime` nesne (gece yarısı, 30 Aralık 1899) 0 olarak başlatılır.
+- `COleDateTime(` **)** 0 olarak `COleDateTime` başlatılan bir nesne oluşturur (gece yarısı, 30 Aralık 1899).
 
-- `COleDateTime(` `dateSrc` **)** Oluşturan bir `COleDateTime` mevcut bir nesne `COleDateTime` nesne.
+- `COleDateTime(`) Var olan `COleDateTime` bir`COleDateTime` nesneden bir nesne oluşturur. `dateSrc`
 
-- `COleDateTime(` *varSrc* **)** oluşturan bir `COleDateTime` nesne. Dönüştürmeye çalışır bir `VARIANT` yapısı veya [COleVariant](../../mfc/reference/colevariant-class.md) nesneye bir tarih/saat ( `VT_DATE`) değeri. Bu dönüştürmenin başarılı olursa, dönüştürülen değer yeni kopyalanan `COleDateTime` nesne. Değerini, değilse `COleDateTime` nesnesi, 0 (gece yarısı, 30 Aralık 1899)'geçersiz durumu ayarlanır.
+- `COleDateTime(`*varSrc* **)** Bir `COleDateTime` nesnesi oluşturur. Bir `VARIANT` yapıyı veya [cotavariant](../../mfc/reference/colevariant-class.md) nesnesini bir tarih/saat ( `VT_DATE`) değerine dönüştürmeye çalışır. Bu dönüştürme başarılı olursa, dönüştürülmüş değer yeni `COleDateTime` nesneye kopyalanır. Değilse, `COleDateTime` nesnenin değeri 0 (gece yarısı, 30 Aralık 1899) ve durumu geçersiz olarak ayarlanır.
 
-- `COleDateTime(` `dtSrc` **)** Oluşturan bir `COleDateTime` nesnesinden bir `DATE` değeri.
+- `COleDateTime(`) Bir değerden`DATE` bir `COleDateTime` nesne oluşturur. `dtSrc`
 
-- `COleDateTime(` `timeSrc` **)** Oluşturan bir `COleDateTime` nesnesinden bir `time_t` değeri.
+- `COleDateTime(`) Bir değerden`time_t` bir `COleDateTime` nesne oluşturur. `timeSrc`
 
-- `COleDateTime(` *systimeSrc* **)** oluşturan bir `COleDateTime` nesnesinden bir `SYSTEMTIME` değeri.
+- `COleDateTime(`*Systimesrc* **)** Bir `SYSTEMTIME` değerden `COleDateTime` bir nesne oluşturur.
 
-- `COleDateTime(` `filetimeSrc` **)** Oluşturan bir `COleDateTime` nesnesinden bir `FILETIME` değeri. biçimindeki telefon numarasıdır. A `FILETIME` Eşgüdümlü Evrensel Saat (UTC) kullanan yerel saati yapısında geçirirseniz, sonuçlarınızı yanlış olur. Daha fazla bilgi için [dosya zamanlarını](/windows/desktop/SysInfo/file-times) Windows SDK.
+- `COleDateTime(`) Bir değerden`FILETIME` bir `COleDateTime` nesne oluşturur. `filetimeSrc` biçimindeki telefon numarasıdır. , Evrensel Eşgüdümlü saat (UTC) kullanır,bunedenleyapıdayerelbirsaatgeçirirseniz,sonuçlarınızyanlışolur.`FILETIME` Daha fazla bilgi için Windows SDK [Dosya zamanları](/windows/win32/SysInfo/file-times) bölümüne bakın.
 
-- `COleDateTime(` `nYear``nMonth`, `nDay`, `nHour`, `nMin`, `nSec` **)** Oluşturan bir `COleDateTime` nesnesinden belirtilen sayısal değerler.
+- `COleDateTime(``nYear`, ,`nMonth` ,,`nMin`,)Belirtilensayısal değerlerden bir nesne`COleDateTime` oluşturur. `nSec` `nHour` `nDay`
 
-- `COleDateTime(` `wDosDate``wDosTime` **)** Oluşturan bir `COleDateTime` nesnesinden belirtilen MS-DOS tarih ve saat değerleri.
+- `COleDateTime(``wDosDate`, )`wDosTime` Belirtilen MS-DOS `COleDateTime` tarih ve saat değerlerinden bir nesne oluşturur.
 
-Daha fazla bilgi için `time_t` veri türünü görmek [zaman](../../c-runtime-library/reference/time-time32-time64.md) işlevi *çalışma zamanı kitaplığı başvurusu*.
+`time_t` Veri türü hakkında daha fazla bilgi için *çalışma zamanı kitaplık başvurusundaki* [Time](../../c-runtime-library/reference/time-time32-time64.md) işlevine bakın.
 
-Daha fazla bilgi için [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) ve [FILETIME](/windows/desktop/api/minwinbase/ns-minwinbase-filetime) yapıları, Windows SDK'sı.
+Daha fazla bilgi için Windows SDK [SystemTime](/windows/win32/api/minwinbase/ns-minwinbase-systemtime) ve [filetime](/windows/win32/api/minwinbase/ns-minwinbase-filetime) yapılarına bakın.
 
-Sınırları hakkında daha fazla bilgi için `COleDateTime` değerleri başlıklı makaleye bakın [tarih ve saat: Otomasyon desteği](../../atl-mfc-shared/date-and-time-automation-support.md).
+`COleDateTime` Değerlerin sınırları hakkında daha fazla bilgi için bkz. Tarih ve saat [makalesi: Otomasyon desteği](../../atl-mfc-shared/date-and-time-automation-support.md).
 
 > [!NOTE]
-> Oluşturucu kullanılarak `DBTIMESTAMP` parametresi, yalnızca kullanılabilir biçim dahil edildiğinde.
+> Parametresi kullanılarak `DBTIMESTAMP` Oluşturucu yalnızca OLEDB. h dahil edildiğinde kullanılabilir.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATLMFC_Utilities#2](../../atl-mfc-shared/codesnippet/cpp/coledatetime-class_4.cpp)]
 
-##  <a name="format"></a>  COleDateTime::Format
+##  <a name="format"></a>Cotadatetime:: Format
 
-Biçimlendirilmiş bir tarih/saat değeri temsilini oluşturur.
+Tarih/saat değerinin biçimli bir temsilini oluşturur.
 
 ```
 CString Format(DWORD dwFlags = 0,  LCID lcid = LANG_USER_DEFAULT) const;
@@ -287,58 +287,58 @@ CString Format(UINT nFormatID) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*CertOpenStore*<br/>
-Aşağıdaki yerel ayar bayraklarından birini gösterir:
+*dwFlags*<br/>
+Aşağıdaki yerel ayar bayraklarından birini belirtir:
 
-- LOCALE_NOUSEROVERRIDE sistem varsayılan yerel ayarları yerine özel kullanıcı ayarları kullanın.
+- LOCALE_NOUSEROVERRIDE özel Kullanıcı ayarları yerine sistem varsayılan yerel ayar ayarlarını kullanın.
 
-- VAR_TIMEVALUEONLY tarih bölümü ayrıştırılırken yoksayın.
+- VAR_TIMEVALUEONLY, ayrıştırma sırasında tarih bölümünü yoksayar.
 
-- VAR_DATEVALUEONLY Ayrıştırma sırasında saat kısmının yoksayın.
+- VAR_DATEVALUEONLY, ayrıştırma sırasında zaman bölümünü yoksayar.
 
 *lcid*<br/>
-Dönüştürme için kullanılacak yerel ayar Kimliğini belirtir. Dil tanımlayıcıları hakkında daha fazla bilgi için bkz. [Dil tanımlayıcıları](/windows/desktop/Intl/language-identifiers).
+Dönüştürme için kullanılacak yerel ayar KIMLIĞINI gösterir. Dil tanımlayıcıları hakkında daha fazla bilgi için bkz. [Dil tanımlayıcıları](/windows/win32/Intl/language-identifiers).
 
 *lpszFormat*<br/>
-Bir biçimlendirme dizesi benzer `printf` biçimlendirme dizesi. Her bir yüzde öncesinde, kod biçimlendirme ( `%`) oturum açın, ilgili değiştirilir `COleDateTime` bileşeni. Biçimlendirme dizesi diğer karakterler döndürülen dizeye değiştirilmeden kopyalanır. Daha fazla bilgi için bkz. çalışma zamanı işlevi [strftime](../../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md). Değer ve biçimlendirme kodları anlamını `Format` şunlardır:
+Biçimlendirme dizesine benzer `printf` bir biçimlendirme dizesi. Bir yüzde ( `%`) işaretinden önce gelen her biçimlendirme kodu, ilgili `COleDateTime` bileşen ile değiştirilmiştir. Biçimlendirme dizesindeki diğer karakterler, döndürülen dizeye değiştirilmeden kopyalanır. Daha fazla bilgi için bkz. çalışma zamanı işlevi [strftime](../../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md). İçin `Format` biçimlendirme kodlarının değeri ve anlamı şunlardır:
 
-- `%H` Geçerli günün saat
+- `%H`Geçerli gündeki saat
 
-- `%M` Geçerli bir saatteki dakika
+- `%M`Geçerli saat içindeki dakika sayısı
 
-- `%S` Geçerli dakika, saniye
+- `%S`Geçerli dakikadaki Saniyeler
 
-- `%%` Yüzde işareti
+- `%%`Yüzde işareti
 
 *nFormatID*<br/>
-Biçim Denetimi dizesi kaynak kimliği.
+Biçim denetimi dizesinin kaynak KIMLIĞI.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-A `CString` biçimlendirilmiş tarih/saat değeri içeren.
+Biçimli `CString` tarih/saat değerini içeren bir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsa bu durum `COleDateTime` nesnesi null ise, dönüş değeri boş bir dizedir. Geçersiz durum ise, dize kaynağı ATL_IDS_DATETIME_INVALID dizesini belirtilir.
+Bu `COleDateTime` nesnenin durumu null ise, dönüş değeri boş bir dizedir. Durum geçersizse, döndürülen dize ATL_IDS_DATETIME_INVALID dize kaynağı tarafından belirtilir.
 
-Bu işlev için üç formları kısa bir açıklaması aşağıdaki gibidir:
+Bu işlev için üç formun kısa bir açıklaması aşağıdadır:
 
-`Format`( *CertOpenStore*, *LCID*)<br/>
-Bu form değeri (yerel ayar kimlikleri) dil özellikleri kullanarak tarih ve saat için biçimlendirir. Varsayılan parametreleri kullanarak, bu formu tarih ve saat saat kısmının 0 (gece yarısı), durumda yalnızca tarihi yazdırır veya tarih bölümü 0 (30 Aralık 1899), bu durumda tam zamanında yazdırılacağı içinde yazdırır. Tarih/saat değeri 0 (30 Aralık 1899, gece yarısıdır) ise, bu formu varsayılan parametreleri olan gece yarısı yazdırır.
+`Format`( *dwFlags*, *LCID*)<br/>
+Bu form, tarih ve saat için dil belirtimlerini (yerel ayar kimlikleri) kullanarak değeri biçimlendirir. Bu form, varsayılan parametreleri kullanarak tarihi ve saati, zaman kısmı 0 (gece yarısı) değilse, bu durumda yalnızca tarihi yazdıracaktır veya tarih kısmı 0 (30 Aralık 1899) ise, bu durumda yalnızca saati yazdıracaktır. Tarih/saat değeri 0 (30 Aralık 1899, gece yarısı) ise, Varsayılan parametrelere sahip bu form gece yarısı yazdırılır.
 
 `Format`( *lpszFormat*)<br/>
-Bu form değeri (%) yüzde işareti tarafından öncelenen özel biçimlendirme kodları içeren bir biçim dizesi kullanarak olarak biçimlendirir `printf`. Biçimlendirme dizesi, parametre olarak işleve geçirilir. Biçimlendirme kodları hakkında daha fazla bilgi için bkz. [strftime, wcsftime](../../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) çalışma zamanı kitaplığı başvurusu.
+Bu form, içinde `printf`olduğu gibi yüzde işareti (%) olan özel biçimlendirme kodları içeren biçim dizesini kullanarak değeri biçimlendirir. Biçimlendirme dizesi, işleve parametre olarak geçirilir. Biçimlendirme kodları hakkında daha fazla bilgi için bkz. çalışma zamanı kitaplık başvurusunda [strftime, wcsftime](../../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) .
 
 `Format`( *nFormatID*)<br/>
-Bu form değeri (%) yüzde işareti tarafından öncelenen özel biçimlendirme kodları içeren bir biçim dizesi kullanarak olarak biçimlendirir `printf`. Biçimlendirme dizesi bir kaynaktır. Bu dize kaynak kimliği, parametre olarak geçirilir. Biçimlendirme kodları hakkında daha fazla bilgi için bkz. [strftime, wcsftime](../../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) içinde *çalışma zamanı kitaplığı başvurusu*.
+Bu form, içinde `printf`olduğu gibi yüzde işareti (%) olan özel biçimlendirme kodları içeren biçim dizesini kullanarak değeri biçimlendirir. Biçimlendirme dizesi bir kaynaktır. Bu dize kaynağının KIMLIĞI parametre olarak geçirilir. Biçimlendirme kodları hakkında daha fazla bilgi için bkz. *çalışma zamanı kitaplık başvurusunda* [strftime, wcsftime](../../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) .
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATLMFC_Utilities#3](../../atl-mfc-shared/codesnippet/cpp/coledatetime-class_5.cpp)]
 
-##  <a name="getasdbtimestamp"></a>  COleDateTime::GetAsDBTIMESTAMP
+##  <a name="getasdbtimestamp"></a>Cotadatetime:: GetAsDBTIMESTAMP
 
-Sürede elde etmek için bu yöntemi çağırın `COleDateTime` nesnesinin bir `DBTIMESTAMP` veri yapısı.
+`COleDateTime` Nesne içindeki saati bir `DBTIMESTAMP` veri yapısı olarak almak için bu yöntemi çağırın.
 
 ```
 bool GetAsDBTIMESTAMP(DBTIMESTAMP& timeStamp) const throw();
@@ -346,24 +346,24 @@ bool GetAsDBTIMESTAMP(DBTIMESTAMP& timeStamp) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*Zaman damgası*<br/>
-Bir başvuru bir [DBTimeStamp](/dotnet/api/system.data.oledb.oledbtype) yapısı.
+*Ilişkin*<br/>
+[DBTimeStamp](/dotnet/api/system.data.oledb.oledbtype) yapısına başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi durumda 0.
+Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sonuçta elde edilen zaman başvurulan depolar *zaman damgası* yapısı. `DBTIMESTAMP` Bu işlev tarafından başlatılan veri yapısı olacaktır, `fraction` üye sıfır olarak ayarlayın.
+Elde edilen süreyi başvurulan *zaman damgası* yapısına depolar. Bu işlev tarafından başlatılan `fraction` veriyapısınınüyesisıfıraayarlanmışolacak.`DBTIMESTAMP`
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATLMFC_Utilities#4](../../atl-mfc-shared/codesnippet/cpp/coledatetime-class_6.cpp)]
 
-##  <a name="getassystemtime"></a>  COleDateTime::GetAsSystemTime
+##  <a name="getassystemtime"></a>Cotadatetime:: GetAsSystemTime
 
-Sürede elde etmek için bu yöntemi çağırın `COleDateTime` nesnesinin bir `SYSTEMTIME` veri yapısı.
+`COleDateTime` Nesne içindeki saati bir `SYSTEMTIME` veri yapısı olarak almak için bu yöntemi çağırın.
 
 ```
 bool GetAsSystemTime(SYSTEMTIME& sysTime) const throw();
@@ -372,21 +372,21 @@ bool GetAsSystemTime(SYSTEMTIME& sysTime) const throw();
 ### <a name="parameters"></a>Parametreler
 
 *sysTime*<br/>
-Bir başvuru bir [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) dönüştürülen bir tarih/saat değerinden almaya yapısı `COleDateTime` nesne.
+`COleDateTime` Nesnesinden dönüştürülmüş tarih/saat değerini almak için bir [SystemTime](/windows/win32/api/minwinbase/ns-minwinbase-systemtime) yapısına başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sahipse TRUE değerini döndürür; FALSE dönüştürme başarısız olursa veya `COleDateTime` nesnedir NULL veya geçersiz.
+Başarılı olursa TRUE döndürür; Dönüştürme başarısız olursa veya `COleDateTime` nesne null ya da geçersiz ise false.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`GetAsSystemTime` Sonuçta elde edilen zaman başvurulan depolar *sysTime* nesne. `SYSTEMTIME` Bu işlev tarafından başlatılan veri yapısı olacaktır, `wMilliseconds` üye sıfır olarak ayarlayın.
+`GetAsSystemTime`elde edilen süreyi başvurulan *SysTime* nesnesinde depolar. Bu işlev tarafından başlatılan `wMilliseconds` veriyapısınınüyesisıfıraayarlanmışolacak.`SYSTEMTIME`
 
-Tutulan durum bilgileri hakkında daha fazla bilgi için bir `COleDateTime` nesne, bkz: [GetStatus](#getstatus).
+Bir `COleDateTime` nesnede tutulan durum bilgileri hakkında daha fazla bilgi için bkz. [GetStatus](#getstatus).
 
-##  <a name="getasudate"></a>  COleDateTime::GetAsUDATE
+##  <a name="getasudate"></a>Cotadatetime:: GetAsUDATE
 
-Sürede elde etmek için bu yöntemi çağırın `COleDateTime` nesnesinin bir `UDATE` veri yapısı.
+`COleDateTime` Nesne içindeki saati bir `UDATE` veri yapısı olarak almak için bu yöntemi çağırın.
 
 ```
 bool GetAsUDATE(UDATE& uDate) const throw();
@@ -394,18 +394,18 @@ bool GetAsUDATE(UDATE& uDate) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*uDate*<br/>
-Bir başvuru bir `UDATE` dönüştürülen bir tarih/saat değerinden almaya yapısı `COleDateTime` nesne.
+*Uıdate*<br/>
+Nesnesinden dönüştürülmüş Tarih/ `UDATE` saat değerini almak için bir yapıya başvuru. `COleDateTime`
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sahipse TRUE değerini döndürür; FALSE dönüştürme başarısız olursa veya `COleDateTime` nesnedir NULL veya geçersiz.
+Başarılı olursa TRUE döndürür; Dönüştürme başarısız olursa veya `COleDateTime` nesne null ya da geçersiz ise false.
 
 ### <a name="remarks"></a>Açıklamalar
 
-A `UDATE` yapısı "paketten çıkarılan" bir tarihi temsil eder.
+Bir `UDATE` yapı "paketten çıkarılan" bir tarihi temsil eder.
 
-##  <a name="getcurrenttime"></a>  COleDateTime::GetCurrentTime
+##  <a name="getcurrenttime"></a>Cotadatetime:: GetCurrentTime
 
 Geçerli tarih/saat değerini döndürmek için bu statik üye işlevini çağırın.
 
@@ -417,7 +417,7 @@ static COleDateTime WINAPI GetCurrentTime() throw();
 
 [!code-cpp[NVC_ATLMFC_Utilities#5](../../atl-mfc-shared/codesnippet/cpp/coledatetime-class_7.cpp)]
 
-##  <a name="getday"></a>  COleDateTime::GetDay
+##  <a name="getday"></a>Cotadatetime:: GetDay
 
 Bu tarih/saat değeri ile temsil edilen ayın gününü alır.
 
@@ -427,13 +427,13 @@ int GetDay() const throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu değeri tarafından temsil edilen ayın gününü `COleDateTime` nesne veya `COleDateTime::error` gün alınamadığından.
+Bu `COleDateTime` nesnenin değeri ile temsil edilen ayın günü veya `COleDateTime::error` gün elde edilememe.
 
 ### <a name="remarks"></a>Açıklamalar
 
-1 ile 31 arasında geçerli bir dönüş değerleri aralığı.
+Geçerli dönüş değerleri 1 ile 31 arasında değişir.
 
-Bu değeri sorgu diğer üye işlevleri hakkında bilgi için `COleDateTime` nesne, aşağıdaki üye işlevleri bakın:
+Bu `COleDateTime` nesnenin değerini sorgulayan diğer üye işlevleri hakkında daha fazla bilgi için, aşağıdaki üye işlevlere bakın:
 
 - [GetMonth](#getmonth)
 
@@ -453,7 +453,7 @@ Bu değeri sorgu diğer üye işlevleri hakkında bilgi için `COleDateTime` nes
 
 [!code-cpp[NVC_ATLMFC_Utilities#6](../../atl-mfc-shared/codesnippet/cpp/coledatetime-class_8.cpp)]
 
-##  <a name="getdayofweek"></a>  COleDateTime::GetDayOfWeek
+##  <a name="getdayofweek"></a>Cotadatetime:: GetDayOfWeek
 
 Bu tarih/saat değeri ile temsil edilen ayın gününü alır.
 
@@ -463,13 +463,13 @@ int GetDayOfWeek() const throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu değeri tarafından temsil edilen haftanın gününü `COleDateTime` nesne veya `COleDateTime::error` , haftanın günü sağlanamadı.
+Bu `COleDateTime` nesnenin değeri ile temsil edilen veya `COleDateTime::error` haftanın günü alınamadığından haftanın günü.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Geçerli dönüş değerleri aralığı 7, 1 ila 1 Pazar, 2 = Pazartesi vb.
+Geçerli dönüş değerleri 1 ile 7 arasında, 1 = Pazar, 2 = Pazartesi vb. arasında değişir.
 
-Bu değeri sorgu diğer üye işlevleri hakkında bilgi için `COleDateTime` nesne, aşağıdaki üye işlevleri bakın:
+Bu `COleDateTime` nesnenin değerini sorgulayan diğer üye işlevleri hakkında daha fazla bilgi için, aşağıdaki üye işlevlere bakın:
 
 - [GetDay](#getday)
 
@@ -489,7 +489,7 @@ Bu değeri sorgu diğer üye işlevleri hakkında bilgi için `COleDateTime` nes
 
 [!code-cpp[NVC_ATLMFC_Utilities#7](../../atl-mfc-shared/codesnippet/cpp/coledatetime-class_9.cpp)]
 
-##  <a name="getdayofyear"></a>  COleDateTime::GetDayOfYear
+##  <a name="getdayofyear"></a>Cotadatetime:: GetDayOfYear
 
 Bu tarih/saat değeri ile temsil edilen yılın gününü alır.
 
@@ -499,13 +499,13 @@ int GetDayOfYear() const throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu değeri tarafından temsil edilen yılın gününü `COleDateTime` nesne veya `COleDateTime::error` , yılın gününü sağlanamadı.
+Bu `COleDateTime` nesnenin değeri ile temsil edilen yılın günü veya `COleDateTime::error` yılın günü edinilemedi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Geçerli dönüş değerleri aralığı 1 ile 366 arasında nerede 1 Ocak = 1.
+Geçerli dönüş değerleri 1 ile 366 arasında (1 = 1) arasındadır.
 
-Bu değeri sorgu diğer üye işlevleri hakkında bilgi için `COleDateTime` nesne, aşağıdaki üye işlevleri bakın:
+Bu `COleDateTime` nesnenin değerini sorgulayan diğer üye işlevleri hakkında daha fazla bilgi için, aşağıdaki üye işlevlere bakın:
 
 - [GetDay](#getday)
 
@@ -525,9 +525,9 @@ Bu değeri sorgu diğer üye işlevleri hakkında bilgi için `COleDateTime` nes
 
 [!code-cpp[NVC_ATLMFC_Utilities#8](../../atl-mfc-shared/codesnippet/cpp/coledatetime-class_10.cpp)]
 
-##  <a name="gethour"></a>  COleDateTime::GetHour
+##  <a name="gethour"></a>Cotadatetime:: GetHour
 
-Bu tarih/saat değeri ile temsil edilen saat alır.
+Bu tarih/saat değeri ile temsil edilen saati alır.
 
 ```
 int GetHour() const throw();
@@ -535,13 +535,13 @@ int GetHour() const throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu değeri tarafından temsil edilen saat `COleDateTime` nesne veya `COleDateTime::error` saat alınamadığından.
+Bu `COleDateTime` nesnenin değeri ile temsil edilen saat veya `COleDateTime::error` saat elde edilememelidir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dönüş değerleri aralığı 0 ile 23 arasında.
+Geçerli dönüş değerleri 0 ile 23 arasında.
 
-Bu değeri sorgu diğer üye işlevleri hakkında bilgi için `COleDateTime` nesne, aşağıdaki üye işlevleri bakın:
+Bu `COleDateTime` nesnenin değerini sorgulayan diğer üye işlevleri hakkında daha fazla bilgi için, aşağıdaki üye işlevlere bakın:
 
 - [GetDay](#getday)
 
@@ -561,9 +561,9 @@ Bu değeri sorgu diğer üye işlevleri hakkında bilgi için `COleDateTime` nes
 
 [!code-cpp[NVC_ATLMFC_Utilities#9](../../atl-mfc-shared/codesnippet/cpp/coledatetime-class_11.cpp)]
 
-##  <a name="getminute"></a>  COleDateTime::GetMinute
+##  <a name="getminute"></a>Cotadatetime:: GetMinute
 
-Bu tarih/saat değeri ile temsil edilen dakika alır.
+Bu tarih/saat değeri ile temsil edilen dakikayı alır.
 
 ```
 int GetMinute() const throw();
@@ -571,13 +571,13 @@ int GetMinute() const throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu değeri tarafından temsil edilen dakika `COleDateTime` nesne veya `COleDateTime::error` dakika alınamadığından.
+Bu `COleDateTime` nesnenin değeri ile temsil edilen dakika veya `COleDateTime::error` dakika elde edilememe.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dönüş değerleri aralığı 0 ile 59 arasında.
+Geçerli dönüş değerleri 0 ile 59 arasında değişir.
 
-Bu değeri sorgu diğer üye işlevleri hakkında bilgi için `COleDateTime` nesne, aşağıdaki üye işlevleri bakın:
+Bu `COleDateTime` nesnenin değerini sorgulayan diğer üye işlevleri hakkında daha fazla bilgi için, aşağıdaki üye işlevlere bakın:
 
 - [GetDay](#getday)
 
@@ -595,11 +595,11 @@ Bu değeri sorgu diğer üye işlevleri hakkında bilgi için `COleDateTime` nes
 
 ### <a name="example"></a>Örnek
 
-Örneğin bakın [GetHour](#gethour).
+[GetHour](#gethour)örneğine bakın.
 
-##  <a name="getmonth"></a>  COleDateTime::GetMonth
+##  <a name="getmonth"></a>Cotadatetime:: GetMonth
 
-Bu tarih/saat değeri ile temsil edilen aylık alır.
+Bu tarih/saat değeri ile temsil edilen ayı alır.
 
 ```
 int GetMonth() const throw();
@@ -607,13 +607,13 @@ int GetMonth() const throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu değeri tarafından temsil edilen aylık `COleDateTime` nesne veya `COleDateTime::error` ay alınamadığından.
+Bu `COleDateTime` nesnenin değeri veya `COleDateTime::error` ay elde edibir değere göre temsil edilen ay.
 
 ### <a name="remarks"></a>Açıklamalar
 
-1 ile 12 arasında geçerli bir dönüş değerleri aralığı.
+Geçerli dönüş değerleri 1 ile 12 arasında değişir.
 
-Bu değeri sorgu diğer üye işlevleri hakkında bilgi için `COleDateTime` nesne, aşağıdaki üye işlevleri bakın:
+Bu `COleDateTime` nesnenin değerini sorgulayan diğer üye işlevleri hakkında daha fazla bilgi için, aşağıdaki üye işlevlere bakın:
 
 - [GetDay](#getday)
 
@@ -631,11 +631,11 @@ Bu değeri sorgu diğer üye işlevleri hakkında bilgi için `COleDateTime` nes
 
 ### <a name="example"></a>Örnek
 
-Örneğin bakın [GetDay](#getday).
+[GetDay](#getday)örneğine bakın.
 
-##  <a name="getsecond"></a>  COleDateTime::GetSecond
+##  <a name="getsecond"></a>Cotadatetime:: GetSecond
 
-Bu tarih/saat değeri ile temsil edilen saniye alır.
+Bu tarih/saat değeri ile temsil edilen saniyeyi alır.
 
 ```
 int GetSecond() const throw();
@@ -643,18 +643,18 @@ int GetSecond() const throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu değeri tarafından temsil edilen ikinci `COleDateTime` nesne veya `COleDateTime::error` , ikinci sağlanamadı.
+Bu `COleDateTime` nesnenin değeri veya `COleDateTime::error` ikincisi alınamadığından temsil edilen ikinci değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dönüş değerleri aralığı 0 ile 59 arasında.
+Geçerli dönüş değerleri 0 ile 59 arasında değişir.
 
 > [!NOTE]
->  `COleDateTime` Sınıfı artık saniye desteklemez.
+>  Sınıf `COleDateTime` , artık saniyeler desteklemez.
 
-Uygulama hakkında daha fazla bilgi için `COleDateTime`, makaleye göz atın [tarih ve saat: Otomasyon desteği](../../atl-mfc-shared/date-and-time-automation-support.md).
+Uygulamasına yönelik `COleDateTime`uygulama hakkında daha fazla bilgi için bkz. Tarih [ve saat makalesi: Otomasyon desteği](../../atl-mfc-shared/date-and-time-automation-support.md).
 
-Bu değeri sorgu diğer üye işlevleri hakkında bilgi için `COleDateTime` nesne, aşağıdaki üye işlevleri bakın:
+Bu `COleDateTime` nesnenin değerini sorgulayan diğer üye işlevleri hakkında daha fazla bilgi için, aşağıdaki üye işlevlere bakın:
 
 - [GetDay](#getday)
 
@@ -672,11 +672,11 @@ Bu değeri sorgu diğer üye işlevleri hakkında bilgi için `COleDateTime` nes
 
 ### <a name="example"></a>Örnek
 
-Örneğin bakın [GetHour](#gethour).
+[GetHour](#gethour)örneğine bakın.
 
-##  <a name="getstatus"></a>  COleDateTime::GetStatus
+##  <a name="getstatus"></a>Cotadatetime:: GetStatus
 
-(Geçerlilik) durumunu alır bir verilen `COleDateTime` nesne.
+Belirli `COleDateTime` bir nesnenin durumunu (geçerlilik) alır.
 
 ```
 DateTimeStatus GetStatus() const throw();
@@ -684,11 +684,11 @@ DateTimeStatus GetStatus() const throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu durumunu döndüren `COleDateTime` değeri. Eğer `GetStatus` üzerinde bir `COleDateTime` yapılandırılmış varsayılan nesne, geçerli döndürür. Eğer `GetStatus` üzerinde bir `COleDateTime` Oluşturucusu ayarlanan null ile başlatılan nesne `GetStatus` null döndürür.
+Bu `COleDateTime` değerin durumunu döndürür. Varsayılan değer ile `GetStatus` oluşturulmuş bir `COleDateTime` nesne üzerinde çağrı yaparsanız, geçerli döndürülür. Oluşturucu null olarak `GetStatus` ayarlanmış şekilde `COleDateTime` başlatılan bir nesneyi çağırırsanız, `GetStatus` null döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dönüş değeri tarafından tanımlanan `DateTimeStatus` listelenmiş içinde tanımlanan bir türü `COleDateTime` sınıfı.
+Dönüş değeri, `COleDateTime` sınıfı içinde tanımlanan, `DateTimeStatus` numaralandırılmış tür tarafından tanımlanır.
 
 ```
 enum DateTimeStatus
@@ -700,49 +700,49 @@ enum DateTimeStatus
 };
 ```
 
-Bu durum değerleri kısa bir açıklaması için aşağıdaki listeye bakın:
+Bu durum değerlerinin kısa bir açıklaması için aşağıdaki listeye bakın:
 
-- `COleDateTime::error` Tarih/saat değerinin bölümünü alınmaya çalışılırken bir hata oluştuğunu gösterir.
+- `COleDateTime::error`Tarih/saat değerinin bir bölümünü almaya çalışırken bir hata oluştuğunu belirtir.
 
-- `COleDateTime::valid` Belirten bu `COleDateTime` nesne geçerlidir.
+- `COleDateTime::valid`Bu `COleDateTime` nesnenin geçerli olduğunu gösterir.
 
-- `COleDateTime::invalid` Belirten bu `COleDateTime` Nesne geçersiz; diğer bir deyişle, değeri yanlış olabilir.
+- `COleDateTime::invalid`Bu `COleDateTime` nesnenin geçersiz olduğunu gösterir; diğer bir deyişle, değeri yanlış olabilir.
 
-- `COleDateTime::null` Belirten bu `COleDateTime` nesnesi, null, diğer bir deyişle, bu nesne için hiçbir değer belirtilmiş. ("Null" bir "herhangi bir değer NULL C++ aksine kullanılmasının" veritabanı anlamında budur.)
+- `COleDateTime::null`Bu `COleDateTime` nesnenin null olduğunu, yani bu nesne için hiçbir değer sağlanmadığını gösterir. (Bu, "değer olmadan", C++ null değerinin aksine, veritabanı "null" değeridir.)
 
-Durumunu bir `COleDateTime` aşağıdaki durumlarda nesne geçersiz:
+Bir `COleDateTime` nesnenin durumu aşağıdaki durumlarda geçersizdir:
 
-- Gelen değerini ayarlarsanız bir `VARIANT` veya `COleVariant` değerini bir tarih/saat değerine dönüştürülemedi.
+- Değeri bir tarih/saat değerine dönüştürülemeyen `VARIANT` bir `COleVariant` veya değerinden ayarlandıysa.
 
-- Gelen değerini ayarlarsanız bir `time_t`, `SYSTEMTIME`, veya `FILETIME` geçerli tarih/saat değerine dönüştürülemiyor değer.
+- Değeri, geçerli bir tarih/saat `time_t`değerine `SYSTEMTIME`dönüştürülemeyen bir `FILETIME` , veya değerinden ayarlandıysa.
 
-- Değeri ayarlanmışsa `SetDateTime` geçersiz parametre değerleri ile.
+- Değeri geçersiz parametre değerleriyle ayarlanmış `SetDateTime` ise.
 
-- Bu nesne bir taşma veya yetersiz gelme aritmetik atama işlemi sırasında yani karşılaştı, `+=` veya `-=`.
+- Bu nesne bir aritmetik atama işlemi `+=` `-=`sırasında bir taşma veya yetersiz
 
-- Bu nesne için geçersiz bir değere atanırsa.
+- Bu nesneye geçersiz bir değer atanmışsa.
 
-- Bu nesne durumunu kullanarak geçersiz açıkça ayarlandığını `SetStatus`.
+- Bu nesnenin durumu, kullanılarak `SetStatus`açıkça geçersiz olarak ayarlandıysa.
 
-İşlemleri hakkında daha fazla bilgi için geçersiz, aşağıdaki üye işlevleri için durumunu ayarlayabilir:
+Durumu geçersiz olarak ayarlayaetkileyebilecek işlemler hakkında daha fazla bilgi için aşağıdaki üye işlevlere bakın:
 
-- [COleDateTime](#coledatetime)
+- [Cotadatetime](#coledatetime)
 
 - [SetDateTime](#setdatetime)
 
-- [operator +, -](#operator_add_-)
+- [işleç +,-](#operator_add_-)
 
-- [operator +=-=](#operator_add_eq_-_eq)
+- [işleç + =,-=](#operator_add_eq_-_eq)
 
-Sınırları hakkında daha fazla bilgi için `COleDateTime` değerleri başlıklı makaleye bakın [tarih ve saat: Otomasyon desteği](../../atl-mfc-shared/date-and-time-automation-support.md).
+`COleDateTime` Değerlerin sınırları hakkında daha fazla bilgi için bkz. Tarih ve saat [makalesi: Otomasyon desteği](../../atl-mfc-shared/date-and-time-automation-support.md).
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATLMFC_Utilities#10](../../atl-mfc-shared/codesnippet/cpp/coledatetime-class_12.cpp)]
 
-##  <a name="getyear"></a>  COleDateTime::GetYear
+##  <a name="getyear"></a>Cotadatetime:: GetYear
 
-Bu tarih/saat değeri ile temsil edilen yıl alır.
+Bu tarih/saat değeri ile temsil edilen yılı alır.
 
 ```
 int GetYear() const throw();
@@ -750,13 +750,13 @@ int GetYear() const throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu değeri tarafından temsil edilen yıl `COleDateTime` nesne veya `COleDateTime::error` yıl alınamadığından.
+Bu `COleDateTime` nesnenin değeri ile temsil edilen yıl veya `COleDateTime::error` yıl elde edilememe.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yüzyıl içeren geçerli dönüş değerleri aralığı 100 ile 9999 arasında.
+Geçerli dönüş değerleri, yüzyıl 'yi içeren 100 ve 9999 arasında değişir.
 
-Bu değeri sorgu diğer üye işlevleri hakkında bilgi için `COleDateTime` nesne, aşağıdaki üye işlevleri bakın:
+Bu `COleDateTime` nesnenin değerini sorgulayan diğer üye işlevleri hakkında daha fazla bilgi için, aşağıdaki üye işlevlere bakın:
 
 - [GetDay](#getday)
 
@@ -772,15 +772,15 @@ Bu değeri sorgu diğer üye işlevleri hakkında bilgi için `COleDateTime` nes
 
 - [GetDayOfYear](#getdayofyear)
 
-Sınırları hakkında daha fazla bilgi için `COleDateTime` değerleri başlıklı makaleye bakın [tarih ve saat: Otomasyon desteği](../../atl-mfc-shared/date-and-time-automation-support.md).
+`COleDateTime` Değerlerin sınırları hakkında daha fazla bilgi için bkz. Tarih ve saat [makalesi: Otomasyon desteği](../../atl-mfc-shared/date-and-time-automation-support.md).
 
 ### <a name="example"></a>Örnek
 
-Örneğin bakın [GetDay](#getday).
+[GetDay](#getday)örneğine bakın.
 
-##  <a name="m_dt"></a>  COleDateTime::m_dt
+##  <a name="m_dt"></a>Cotadatetime:: m_dt
 
-Arka plandaki `DATE` yapısı bu `COleDateTime` nesne.
+`DATE` Bu`COleDateTime` nesnenin temel yapısı.
 
 ```
 DATE m_dt;
@@ -789,13 +789,13 @@ DATE m_dt;
 ### <a name="remarks"></a>Açıklamalar
 
 > [!CAUTION]
->  Değer değiştirme `DATE` bu işlev tarafından döndürülen işaretçi tarafından erişilen nesne bu değeri değişecek `COleDateTime` nesne. Bu durumu değiştirmez `COleDateTime` nesne.
+>  Bu işlevin döndürdüğü işaretçinin eriştiği `DATE` nesnedeki değeri değiştirmek, bu `COleDateTime` nesnenin değerini değiştirecek. Bu `COleDateTime` nesnenin durumunu değiştirmez.
 
-Uygulaması hakkında daha fazla bilgi için `DATE` nesne, makaleye göz atın [tarih ve saat: Otomasyon desteği](../../atl-mfc-shared/date-and-time-automation-support.md).
+`DATE` Nesnesinin uygulanması hakkında daha fazla bilgi için bkz. Tarih ve saat makalesi [: Otomasyon desteği](../../atl-mfc-shared/date-and-time-automation-support.md).
 
-##  <a name="m_status"></a>  COleDateTime::m_status
+##  <a name="m_status"></a>Cotadatetime:: m_status
 
-Bu durumu içeren `COleDateTime` nesne.
+Bu `COleDateTime` nesnenin durumunu içerir.
 
 ```
 DateTimeStatus m_status;
@@ -803,14 +803,14 @@ DateTimeStatus m_status;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu veri üyesi listeden seçimli türü türüdür `DateTimeStatus`, içinde tanımlanan `COleDateTime` sınıfı. Daha fazla bilgi için [COleDateTime::GetStatus](#getstatus).
+Bu veri üyesinin türü, `DateTimeStatus` `COleDateTime` sınıfı içinde tanımlanan, numaralandırılmış türüdür. Daha fazla bilgi için bkz. [Copadatetime:: GetStatus](#getstatus).
 
 > [!CAUTION]
->  Gelişmiş programlama durumlar için bu verileri üyesidir. Satır içi üye işlevleri kullanmalıdır [GetStatus](#getstatus) ve [SetStatus](#setstatus). Bkz: `SetStatus` açıkça bu veri üyesi ayarlama ile ilgili daha fazla uyarılar için.
+>  Bu veri üyesi gelişmiş programlama durumlarına yöneliktir. [GetStatus](#getstatus) ve [SetStatus](#setstatus)satır içi üye işlevlerini kullanmanız gerekir. Bu `SetStatus` veri üyesini açıkça ayarlamayla ilgili daha fazla uyarı için bkz.
 
-##  <a name="operator_eq"></a>  COleDateTime::operator =
+##  <a name="operator_eq"></a>COleDateTime:: operator =
 
-Kopya bir `COleDateTime` değeri.
+Bir `COleDateTime` değeri kopyalar.
 
 ```
 COleDateTime& operator=(const VARIANT& varSrc) throw();
@@ -824,33 +824,33 @@ COleDateTime& operator=(const UDATE& uDate) throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu aşırı yüklenmiş atama işleçleri bu kaynak tarih değeri kopyalayın `COleDateTime` nesne. Bunlar her kısa bir açıklamasını aşırı yüklenmiş atama işleçleri aşağıdaki:
+Bu aşırı yüklenmiş atama işleçleri, kaynak tarih/saat değerini bu `COleDateTime` nesneye kopyalar. Bu aşırı yüklenmiş tüm atama işleçleri için kısa bir açıklama aşağıda verilmiştir:
 
-- **operator = (** `dateSrc` **)** işlenen durumunu ve değer bu kopyalanır `COleDateTime` nesne.
+- **operator = (** `dateSrc` **)** işlenenin değeri ve durumu bu `COleDateTime` nesneye kopyalanır.
 
-- **işleç = (** *varSrc* **)** varsa dönüştürülmesi [değişken](/windows/desktop/api/oaidl/ns-oaidl-tagvariant) değeri (veya [COleVariant](../../mfc/reference/colevariant-class.md) nesne) için bir tarih/saat (VT_ TARİHİ) başarılı olur, dönüştürülen değer bu kopyalanır `COleDateTime` nesne ve durumuna ayarlanır için geçerli. Dönüştürme başarılı olmazsa, bu nesnenin değeri sıfır (30 Aralık 1899 için gece yarısıdır) ayarlanır ve durumu geçersiz.
+- **operator = (** *varSrc* **)** [Değişken](/windows/win32/api/oaidl/ns-oaidl-variant) değer (veya [colevaryant](../../mfc/reference/colevariant-class.md) nesnesi) bir tarih/saat (VT_DATE) olarak dönüştürülürse, dönüştürülen değer bu `COleDateTime` nesneye kopyalanır ve durumu geçerli olarak ayarlanır. Dönüştürme başarılı olmazsa, bu nesnenin değeri sıfır (30 Aralık 1899, gece yarısı) ve durumu geçersiz olarak ayarlanır.
 
-- **operator = (** `dtSrc` **)** `DATE` değeri bu kopyalanır `COleDateTime` nesne ve durumuna ayarlanır için geçerli.
+- **operator = (** `dtSrc` **)** `DATE` değer Bu`COleDateTime` nesneye kopyalanır ve durumu geçerli olarak ayarlanır.
 
-- **operator = (** `timeSrc` **)** `time_t` veya `__time64_t` değere dönüştürülür ve bu kopyalanan `COleDateTime` nesne. Dönüştürme başarılı olursa, bu nesnenin durumu geçerli ayarlanır; başarısız ayarlanmış olup olmadığını geçersiz.
+- **operator = (** `timeSrc` `COleDateTime` **)** `time_t` veya`__time64_t` değeri dönüştürülür ve bu nesneye kopyalanır. Dönüştürme başarılı olursa, bu nesnenin durumu geçerli olarak ayarlanır; başarısız olursa, geçersiz olarak ayarlanır.
 
-- **operator = (** *systimeSrc* **)** [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) değere dönüştürülür ve bu kopyalanan `COleDateTime` nesne. Dönüştürme başarılı olursa, bu nesnenin durumu geçerli ayarlanır; başarısız ayarlanmış olup olmadığını geçersiz.
+- **operator = (** *systimesrc* **)** [SystemTime](/windows/win32/api/minwinbase/ns-minwinbase-systemtime) değeri dönüştürülür ve bu `COleDateTime` nesneye kopyalanır. Dönüştürme başarılı olursa, bu nesnenin durumu geçerli olarak ayarlanır; başarısız olursa, geçersiz olarak ayarlanır.
 
-- **operator = (** `uDate` **)** `UDATE` değere dönüştürülür ve bu kopyalanan `COleDateTime` nesne. Dönüştürme başarılı olursa, bu nesnenin durumu geçerli ayarlanır; başarısız ayarlanmış olup olmadığını geçersiz. A `UDATE` yapısı "paketten çıkarılan" bir tarihi temsil eder. Daha fazla bilgi için bkz: işlev [VarDateFromUdate](/windows/desktop/api/oleauto/nf-oleauto-vardatefromudate).
+- **operator = (** `uDate` `COleDateTime` )`UDATE` değer dönüştürülür ve bu nesneye kopyalanır. Dönüştürme başarılı olursa, bu nesnenin durumu geçerli olarak ayarlanır; başarısız olursa, geçersiz olarak ayarlanır. Bir `UDATE` yapı "paketten çıkarılan" bir tarihi temsil eder. Daha fazla bilgi için bkz. [VarDateFromUdate](/windows/win32/api/oleauto/nf-oleauto-vardatefromudate)işlevi.
 
-- **operator = (** `filetimeSrc` **)** [FILETIME](/windows/desktop/api/minwinbase/ns-minwinbase-filetime) değere dönüştürülür ve bu kopyalanan `COleDateTime` nesne. Dönüştürme başarılı olursa, bu nesnenin durumu geçerli ayarlanır; Aksi takdirde ayarlamak için geçersiz. `FILETIME` UTC saati yapısında geçirirseniz, sonuçlarınızı UTC zamanından yerel saate dönüştürülür ve değişken zaman olarak depolanacak şekilde Eşgüdümlü Evrensel Saat (UTC) kullanır. Bu davranış Visual C++ 6.0 ve Visual C++ .NET 2003 SP2 için de aynıdır. Daha fazla bilgi için [dosya zamanlarını](/windows/desktop/SysInfo/file-times) Windows SDK.
+- **operator = (** `filetimeSrc` **)** [filetime](/windows/win32/api/minwinbase/ns-minwinbase-filetime) değeri dönüştürülür ve bu `COleDateTime` nesneye kopyalanır. Dönüştürme başarılı olursa, bu nesnenin durumu geçerli olarak ayarlanır; Aksi halde, geçersiz olarak ayarlanır. `FILETIME`Evrensel Eşgüdümlü saat (UTC) kullanır. bu nedenle, yapıya bir UTC saati geçirirseniz, sonuçlarınız UTC saatinden yerel saate dönüştürülür ve değişken zaman olarak depolanır. Bu davranış, Visual C++ 6,0 ve visual C++.NET 2003 SP2 ile aynıdır. Daha fazla bilgi için Windows SDK [Dosya zamanları](/windows/win32/SysInfo/file-times) bölümüne bakın.
 
-Daha fazla bilgi için [değişken](/windows/desktop/api/oaidl/ns-oaidl-tagvariant) Windows SDK'sı girişi.
+Daha fazla bilgi için Windows SDK [Varyant](/windows/win32/api/oaidl/ns-oaidl-variant) girişine bakın.
 
-Daha fazla bilgi için `time_t` veri türünü görmek [zaman](../../c-runtime-library/reference/time-time32-time64.md) işlevi *çalışma zamanı kitaplığı başvurusu*.
+`time_t` Veri türü hakkında daha fazla bilgi için *çalışma zamanı kitaplık başvurusundaki* [Time](../../c-runtime-library/reference/time-time32-time64.md) işlevine bakın.
 
-Daha fazla bilgi için [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) ve [FILETIME](/windows/desktop/api/minwinbase/ns-minwinbase-filetime) yapıları, Windows SDK'sı.
+Daha fazla bilgi için Windows SDK [SystemTime](/windows/win32/api/minwinbase/ns-minwinbase-systemtime) ve [filetime](/windows/win32/api/minwinbase/ns-minwinbase-filetime) yapılarına bakın.
 
-Sınırları hakkında daha fazla bilgi için `COleDateTime` değerleri başlıklı makaleye bakın [tarih ve saat: Otomasyon desteği](../../atl-mfc-shared/date-and-time-automation-support.md).
+`COleDateTime` Değerlerin sınırları hakkında daha fazla bilgi için bkz. Tarih ve saat [makalesi: Otomasyon desteği](../../atl-mfc-shared/date-and-time-automation-support.md).
 
-##  <a name="operator_add_-"></a>  COleDateTime::operator +, -
+##  <a name="operator_add_-"></a>COleDateTime:: operator +,-
 
-Ekleme ve çıkarmayı `ColeDateTime` değerleri.
+Değer ekleme ve `ColeDateTime` çıkarma.
 
 ```
 COleDateTime operator+(COleDateTimeSpan dateSpan) const throw();
@@ -860,27 +860,27 @@ COleDateTimeSpan operator-(const COleDateTime& date) const throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-`COleDateTime` nesneleri, mutlak bir kez temsil eder. [COleDateTimeSpan](../../atl-mfc-shared/reference/coledatetimespan-class.md) nesneleri için göreli bir kez temsil eder. İlk iki işleç ekleme ve çıkarmayı sağlar bir `COleDateTimeSpan` değerini bir `COleDateTime` değeri. Üçüncü işleci bir çıkarma sağlar `COleDateTime` elde etmek üzere başka bir değerden bir `COleDateTimeSpan` değeri.
+`COleDateTime`nesneler mutlak zamanları temsil eder. [Cotadatetimespan](../../atl-mfc-shared/reference/coledatetimespan-class.md) nesneleri göreli zamanları temsil eder. İlk iki operatör bir `COleDateTimeSpan` `COleDateTime` değerden değer eklemenize ve çıkartabilir olanak sağlar. Üçüncü işleç bir değeri başka bir değerden çıkarmak `COleDateTime` için `COleDateTimeSpan` bir değer elde etmenizi sağlar.
 
-İşlenenler biri geçerli olduğunda null, ortaya çıkan durumunu `COleDateTime` değeri NULL'dur.
+İşlenenden biri null ise, sonuçta elde edilen `COleDateTime` değerin durumu null olur.
 
-Durumunda ortaya çıkan `COleDateTime` değer kabul edilebilir değerler, bu durum sınırları dışında kalan `COleDateTime` değeri geçersiz.
+Elde edilen `COleDateTime` değer kabul edilebilir değerler sınırlarının dışında kalırsa, bu `COleDateTime` değerin durumu geçersiz olur.
 
-İşlenenden ya da geçersiz ve diğerini null değilse ortaya çıkan durumu `COleDateTime` değeri geçersiz.
+İşlenenden biri geçersiz ve diğeri null değilse, sonuçta elde edilen `COleDateTime` değerin durumu geçersizdir.
 
-**+** Ve **-** işleçleri assert, `COleDateTime` kümesi nesnesi null. Bkz: [COleDateTime ilişkisel işleçler](#coledatetime_relational_operators) örneği.
+Ve **+** **işleçleri-,nesnenullolarak** ayarlandıysaonayalacak.`COleDateTime` Bir örnek için bkz. [Copadatetime Ilişkisel işleçleri](#coledatetime_relational_operators) .
 
-Geçerli, geçersiz ve boş durum değerleri hakkında daha fazla bilgi için bkz. [m_status](#m_status) üye değişkeni.
+Geçerli, geçersiz ve null durum değerleri hakkında daha fazla bilgi için bkz. [m_status](#m_status) üye değişkeni.
 
-Sınırları hakkında daha fazla bilgi için `COleDateTime` değerleri başlıklı makaleye bakın [tarih ve saat: Otomasyon desteği](../../atl-mfc-shared/date-and-time-automation-support.md).
+`COleDateTime` Değerlerin sınırları hakkında daha fazla bilgi için bkz. Tarih ve saat [makalesi: Otomasyon desteği](../../atl-mfc-shared/date-and-time-automation-support.md).
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATLMFC_Utilities#12](../../atl-mfc-shared/codesnippet/cpp/coledatetime-class_13.cpp)]
 
-##  <a name="operator_add_eq_-_eq"></a>  COleDateTime::operator +=-=
+##  <a name="operator_add_eq_-_eq"></a>COleDateTime:: operator + =,-=
 
-Ekleme ve çıkarmayı bir `ColeDateTime` bu değerden `COleDateTime` nesne.
+`ColeDateTime` Bu`COleDateTime` nesneden bir değer ekleyin ve çıkarın.
 
 ```
 COleDateTime& operator+=(COleDateTimeSpan dateSpan) throw();
@@ -889,21 +889,21 @@ COleDateTime& operator-=(COleDateTimeSpan dateSpan) throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işleçler, ekleme ve çıkarmayı sağlar bir `COleDateTimeSpan` için ve bu değer `COleDateTime`. İşlenenler biri geçerli olduğunda null, ortaya çıkan durumunu `COleDateTime` değeri NULL'dur.
+Bu işleçler, bu `COleDateTimeSpan` `COleDateTime`değerden ve öğesinden bir değer eklemenizi ve çıkartabilir. İşlenenden biri null ise, sonuçta elde edilen `COleDateTime` değerin durumu null olur.
 
-Durumunda ortaya çıkan `COleDateTime` değer kabul edilebilir değerler, bu durumu sınırları dışında kalan `COleDateTime` değeri ayarı geçersiz.
+Elde edilen `COleDateTime` değer kabul edilebilir değerler sınırlarının dışında kalırsa, bu `COleDateTime` değerin durumu geçersiz olarak ayarlanır.
 
-İşlenenden ya da geçersiz ve diğer null değilse ortaya çıkan durumu `COleDateTime` değeri geçersiz.
+İşlenenden biri geçersiz ve diğeri null değilse, sonuçta elde edilen `COleDateTime` değerin durumu geçersizdir.
 
-Geçerli, geçersiz ve boş durum değerleri hakkında daha fazla bilgi için bkz. [m_status](#m_status) üye değişkeni.
+Geçerli, geçersiz ve null durum değerleri hakkında daha fazla bilgi için bkz. [m_status](#m_status) üye değişkeni.
 
-**+=** Ve **-=** işleçleri assert, `COleDateTime` kümesi nesnesi null. Bkz: [COleDateTime ilişkisel işleçler](#coledatetime_relational_operators) örneği.
+Ve **+=** **işleçleri-=,nesnenullolarak** ayarlandıysaonayalacak.`COleDateTime` Bir örnek için bkz. [Copadatetime Ilişkisel işleçleri](#coledatetime_relational_operators) .
 
-Sınırları hakkında daha fazla bilgi için `COleDateTime` değerleri başlıklı makaleye bakın [tarih ve saat: Otomasyon desteği](../../atl-mfc-shared/date-and-time-automation-support.md).
+`COleDateTime` Değerlerin sınırları hakkında daha fazla bilgi için bkz. Tarih ve saat [makalesi: Otomasyon desteği](../../atl-mfc-shared/date-and-time-automation-support.md).
 
-##  <a name="operator_date"></a>  COleDateTime::operator tarihi
+##  <a name="operator_date"></a>COleDateTime:: operator TARIHI
 
-Dönüştürür bir `ColeDateTime` içine değeri bir `DATE`.
+`ColeDateTime` Bir değeri öğesine dönüştürür `DATE`.
 
 ```
 operator DATE() const throw();
@@ -911,13 +911,13 @@ operator DATE() const throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işleç döndürür bir `DATE` nesne değeri bu kopyalanır `COleDateTime` nesne. Uygulaması hakkında daha fazla bilgi için `DATE` nesne, makaleye göz atın [tarih ve saat: Otomasyon desteği](../../atl-mfc-shared/date-and-time-automation-support.md).
+Bu işleç, değeri `DATE` bu `COleDateTime` nesneden kopyalanmış olan bir nesne döndürür. `DATE` Nesnesinin uygulanması hakkında daha fazla bilgi için bkz. Tarih ve saat makalesi [: Otomasyon desteği](../../atl-mfc-shared/date-and-time-automation-support.md).
 
-`DATE` İşleci assert, `COleDateTime` kümesi nesnesi null. Bkz: [COleDateTime ilişkisel işleçler](#coledatetime_relational_operators) örneği.
+İşleci, `COleDateTime` nesne null olarak ayarlandıysa onay alacak. `DATE` Bir örnek için bkz. [Copadatetime Ilişkisel işleçleri](#coledatetime_relational_operators) .
 
-##  <a name="parsedatetime"></a>  COleDateTime::ParseDateTime
+##  <a name="parsedatetime"></a>Cotadatetime::P arseDateTime
 
-Bir tarih/saat değerini okumak için bir dizeyi ayrıştırır.
+Bir tarih/saat değerini okumak için bir dize ayrıştırır.
 
 ```
 bool ParseDateTime(
@@ -929,32 +929,32 @@ bool ParseDateTime(
 ### <a name="parameters"></a>Parametreler
 
 *lpszDate*<br/>
-Ayrıştırılacak olan boş sonlandırılmış dizeye bir işaretçi. Ayrıntılar için açıklamalara bakın.
+Ayrıştırılacak null ile sonlandırılmış dizeye yönelik bir işaretçi. Ayrıntılar için bkz. açıklamalar.
 
-*CertOpenStore*<br/>
-Yerel ayarlar ve ayrıştırmaktan bayrakları belirtir. Bir veya daha fazla aşağıdaki bayraklar:
+*dwFlags*<br/>
+Yerel ayar ayarları ve ayrıştırma için bayrakları gösterir. Aşağıdaki bayraklardan biri veya daha fazlası:
 
-- LOCALE_NOUSEROVERRIDE sistem varsayılan yerel ayarları yerine özel kullanıcı ayarları kullanın.
+- LOCALE_NOUSEROVERRIDE özel Kullanıcı ayarları yerine sistem varsayılan yerel ayar ayarlarını kullanın.
 
-- VAR_TIMEVALUEONLY tarih bölümü ayrıştırılırken yoksayın.
+- VAR_TIMEVALUEONLY, ayrıştırma sırasında tarih bölümünü yoksayar.
 
-- VAR_DATEVALUEONLY Ayrıştırma sırasında saat kısmının yoksayın.
+- VAR_DATEVALUEONLY, ayrıştırma sırasında zaman bölümünü yoksayar.
 
 *lcid*<br/>
-Dönüştürme için kullanılacak yerel ayar Kimliğini belirtir.
+Dönüştürme için kullanılacak yerel ayar KIMLIĞINI gösterir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dizeyi tarih/saat değerine, aksi takdirde FALSE başarıyla dönüştürüldü varsa TRUE değerini döndürür.
+Dize bir tarih/saat değerine başarıyla dönüştürülürse TRUE, değilse FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dize bir tarih/saat başarılı bir şekilde dönüştürülmüş değeri, bu değeri `COleDateTime` nesne ayarlandığından bu değeri ve durumu için geçerli.
+Dize bir tarih/saat değerine başarıyla dönüştürülürse, bu nesnenin değeri bu `COleDateTime` değere ve durumu geçerli olarak ayarlanır.
 
 > [!NOTE]
->  Yıl değerlerini aralığında 100 ve 9999 arasında olmalıdır.
+>  Yıl değerlerinin ikisi de dahil 100 ile 9999 arasında olmalıdır.
 
-*LpszDate* parametresi, çeşitli biçimlerde alabilir. Örneğin, aşağıdaki dizeleri kabul edilebilir bir tarih/saat biçimleri içerir:
+*LpszDate* parametresi çeşitli biçimlerde olabilir. Örneğin, aşağıdaki dizeler kabul edilebilir tarih/saat biçimlerini içerir:
 
 `"25 January 1996"`
 
@@ -968,17 +968,17 @@ Dize bir tarih/saat başarılı bir şekilde dönüştürülmüş değeri, bu de
 
 `"1/25/1996 8:30:00"  // always specify the full year, even in a 'short date' format`
 
-Yerel ayar Kimliğini, dize biçiminde bir tarih/saat değerine dönüştürme için kabul edilebilir olup olmadığını da etkiler.
+Yerel ayar KIMLIĞI, dize biçiminin bir tarih/saat değerine dönüştürme için kabul edilebilir olup olmadığını da etkiler.
 
-VAR_DATEVALUEONLY söz konusu olduğunda, 0 veya gece saat saat değerine ayarlanır. VAR_TIMEVALUEONLY söz konusu olduğunda, tarih değeri 30 Aralık 1899 anlamına gelen tarih için 0, ayarlanır.
+VAR_DATEVALUEONLY durumunda, zaman değeri saat 0 veya gece yarısı olarak ayarlanır. VAR_TIMEVALUEONLY durumunda Date değeri 0 tarihi, yani 30 Aralık 1899 olarak ayarlanır.
 
-Dizeyi tarih/saat değerine dönüştürülemedi veya sayısal bir taşma, bu durum ise `COleDateTime` nesnesi geçersiz.
+Dize bir tarih/saat değerine dönüştürülemiyorsa veya sayısal bir taşma varsa, bu `COleDateTime` nesnenin durumu geçersiz olur.
 
-Logrequest olayını ve sınırları hakkında daha fazla bilgi için `COleDateTime` değerleri başlıklı makaleye bakın [tarih ve saat: Otomasyon desteği](../../atl-mfc-shared/date-and-time-automation-support.md).
+Değerler için `COleDateTime` sınır ve uygulama hakkında daha fazla bilgi için bkz. Tarih ve [saat makalesi: Otomasyon desteği](../../atl-mfc-shared/date-and-time-automation-support.md).
 
-##  <a name="setdate"></a>  COleDateTime::SetDate
+##  <a name="setdate"></a>Cotadatetime:: SetDate
 
-Bu tarihin ayarlar `COleDateTime` nesne.
+Bu `COleDateTime` nesnenin tarihini ayarlar.
 
 ```
 int SetDate(
@@ -989,41 +989,41 @@ int SetDate(
 
 ### <a name="parameters"></a>Parametreler
 
-*nYear*, *nMonth*, *nhatalı günü*<br/>
-Bu kopyalanacak tarih bileşenleri gösteren `COleDateTime` nesne.
+*nYear*, *nmonth*, *nday*<br/>
+Bu `COleDateTime` nesneye kopyalanacak Tarih bileşenlerini belirtin.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfır ise bu değeri `COleDateTime` nesne 1 ayarlandığı başarıyla; Aksi takdirde. Bu dönüş değeri dayanır `DateTimeStatus` listelenmiş türü. Daha fazla bilgi için [SetStatus](#setstatus) üye işlevi.
+Bu `COleDateTime` nesnenin değeri başarıyla ayarlandıysa sıfır; Aksi takdirde, 1. Bu dönüş değeri, `DateTimeStatus` numaralandırılmış türü temel alır. Daha fazla bilgi için bkz. [SetStatus](#setstatus) üye işlevi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tarih için belirtilen değerlere ayarlanır. Süresi, süresi 0, gece yarısı olarak ayarlanır.
+Tarih, belirtilen değerlere ayarlanır. Saat 0, gece yarısı olarak ayarlanır.
 
-Parametre değerleri için sınırları için aşağıdaki tabloya bakın:
+Parametre değerlerinin sınırları için aşağıdaki tabloya bakın:
 
 |Parametre|Sınırları|
 |---------------|------------|
-|*nYear*|100 - 9999|
-|*nMonth*|1 - 12|
-|*nhatalı günü*|0 - 31|
+|*Nyıl*|100 - 9999|
+|*Nay*|1 - 12|
+|*nHatalı*|0 - 31|
 
-Ayın gününü taşarsa doğru sonraki ayın ve ayın günü için dönüştürülür ve/veya yıl buna göre artırılır. Sıfır gün değerini, önceki ayın son gününü belirtir. Aynı durum geçerlidir `SystemTimeToVariantTime`.
+Ayın günü taşarsa, sonraki ayın doğru gününe dönüştürülür ve ay ve/veya yıl uygun şekilde artırılır. Sıfır gün değeri, önceki ayın son gününü gösterir. Davranış, ile `SystemTimeToVariantTime`aynıdır.
 
-Parametrelerle belirtilen bir tarih değeri geçerli değil, bu nesnenin durumu kümesine `COleDateTime::invalid`. Kullanmanız gereken [GetStatus](#getstatus) geçerliliğini denetlemek için `DATE` değeri ve bu varsayımında bulunmamalıdır değerini [m_dt](#m_dt) değiştirilmemiş olarak kalır.
+Parametreler tarafından belirtilen tarih değeri geçerli değilse, bu nesnenin durumu olarak `COleDateTime::invalid`ayarlanır. `DATE` Değerin geçerliliğini denetlemek için [GetStatus](#getstatus) kullanmanız gerekir ve [m_dt](#m_dt) değerinin değiştirilmemiş olarak kalacağını varsaymamalıdır.
 
-Tarih değerlerine ilişkin bazı örnekler şunlardır:
+Tarih değerlerine ilişkin bazı örnekler aşağıda verilmiştir:
 
-|*nYear*|*nMonth*|*nhatalı günü*|Değer|
+|*Nyıl*|*Nay*|*nHatalı*|Değer|
 |-------------|--------------|------------|-----------|
 |2000|2|29|29 Şubat 2000|
 |1776|7|4|4 Temmuz 1776|
-|1925|4|35|35 Nisan 1925 (geçersiz tarih)|
-|10000|1.|1.|1 Ocak 10000 (geçersiz tarih)|
+|1925|4|35|1925 Nisan 35 (Geçersiz tarih)|
+|10000|1\.|1\.|1 Ocak 10000 (Geçersiz tarih)|
 
-Tarih ve saat hem ayarlamak için bkz: [COleDateTime::SetDateTime](#setdatetime).
+Hem tarih hem de saati ayarlamak için bkz. [copadatetime:: SetDateTime](#setdatetime).
 
-Bu değeri sorgu üye işlevleri hakkında bilgi için `COleDateTime` nesne, aşağıdaki üye işlevleri bakın:
+Bu `COleDateTime` nesnenin değerini sorgulayan üye işlevleri hakkında daha fazla bilgi için, aşağıdaki üye işlevlere bakın:
 
 - [GetDay](#getday)
 
@@ -1041,15 +1041,15 @@ Bu değeri sorgu üye işlevleri hakkında bilgi için `COleDateTime` nesne, aş
 
 - [GetDayOfYear](#getdayofyear)
 
-Sınırları hakkında daha fazla bilgi için `COleDateTime` değerleri başlıklı makaleye bakın [tarih ve saat: Otomasyon desteği](../../atl-mfc-shared/date-and-time-automation-support.md).
+`COleDateTime` Değerlerin sınırları hakkında daha fazla bilgi için bkz. Tarih ve saat [makalesi: Otomasyon desteği](../../atl-mfc-shared/date-and-time-automation-support.md).
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATLMFC_Utilities#11](../../atl-mfc-shared/codesnippet/cpp/coledatetime-class_14.cpp)]
 
-##  <a name="setdatetime"></a>  COleDateTime::SetDateTime
+##  <a name="setdatetime"></a>Cotadatetime:: SetDateTime
 
-Tarih ve saat bu ayarlar `COleDateTime` nesne.
+Bu `COleDateTime` nesnenin tarihini ve saatini ayarlar.
 
 ```
 int SetDateTime(
@@ -1063,51 +1063,51 @@ int SetDateTime(
 
 ### <a name="parameters"></a>Parametreler
 
-*nYear*, *nMonth*, *nhatalı günü*, *nHour*, *nMin*, *nSec*<br/>
-Bu kopyalanacak tarih ve saat bileşenlerini belirtmek `COleDateTime` nesne.
+*nYear*, *nmonth*, *nday*, *nhour*, *nMin*, *NSEC*<br/>
+Bu `COleDateTime` nesneye kopyalanacak tarih ve saat bileşenlerini belirtin.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfır ise bu değeri `COleDateTime` nesne 1 ayarlandığı başarıyla; Aksi takdirde. Bu dönüş değeri dayanır `DateTimeStatus` listelenmiş türü. Daha fazla bilgi için [SetStatus](#setstatus) üye işlevi.
+Bu `COleDateTime` nesnenin değeri başarıyla ayarlandıysa sıfır; Aksi takdirde, 1. Bu dönüş değeri, `DateTimeStatus` numaralandırılmış türü temel alır. Daha fazla bilgi için bkz. [SetStatus](#setstatus) üye işlevi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Parametre değerleri için sınırları için aşağıdaki tabloya bakın:
+Parametre değerlerinin sınırları için aşağıdaki tabloya bakın:
 
 |Parametre|Sınırları|
 |---------------|------------|
-|*nYear*|100 - 9999|
-|*nMonth*|1 - 12|
-|*nhatalı günü*|0 - 31|
-|*nHour*|0 - 23|
-|*nMin*|0 - 59|
+|*Nyıl*|100 - 9999|
+|*Nay*|1 - 12|
+|*nHatalı*|0 - 31|
+|*Ngünün saati*|0 - 23|
+|*Ngünde en az*|0 - 59|
 |*nSec*|0 - 59|
 
-Ayın gününü taşarsa doğru sonraki ayın ve ayın günü için dönüştürülür ve/veya yıl buna göre artırılır. Sıfır gün değerini, önceki ayın son gününü belirtir. Aynı durum geçerlidir [SystemTimeToVariantTime](/windows/desktop/api/oleauto/nf-oleauto-systemtimetovarianttime).
+Ayın günü taşarsa, sonraki ayın doğru gününe dönüştürülür ve ay ve/veya yıl uygun şekilde artırılır. Sıfır gün değeri, önceki ayın son gününü gösterir. Davranış, [SystemTimeToVariantTime](/windows/win32/api/oleauto/nf-oleauto-systemtimetovarianttime)ile aynıdır.
 
-Parametreler ile belirtilen tarih veya saat değeri, bu nesnenin durumu geçersiz ve bu nesnenin değeri olarak ayarlanır, geçerli değilse değiştirilmez.
+Parametreler tarafından belirtilen tarih veya saat değeri geçerli değilse, bu nesnenin durumu geçersiz olarak ayarlanır ve bu nesnenin değeri değiştirilmez.
 
-Zaman değerlerine ilişkin bazı örnekler şunlardır:
+Zaman değerlerinin bazı örnekleri aşağıda verilmiştir:
 
-|*nHour*|*nMin*|*nSec*|Değer|
+|*Ngünün saati*|*Ngünde en az*|*nSec*|Değer|
 |-------------|------------|------------|-----------|
-|1.|3|3|01:03:03|
+|1\.|3|3|01:03:03|
 |23|45|0|23:45:00|
 |25|30|0|Geçersiz|
 |9|60|0|Geçersiz|
 
-Tarih değerlerine ilişkin bazı örnekler şunlardır:
+Tarih değerlerine ilişkin bazı örnekler aşağıda verilmiştir:
 
-|*nYear*|*nMonth*|*nhatalı günü*|Değer|
+|*Nyıl*|*Nay*|*nHatalı*|Değer|
 |-------------|--------------|------------|-----------|
 |1995|4|15|15 Nisan 1995|
 |1789|7|14|17 Temmuz 1789|
 |1925|2|30|Geçersiz|
-|10000|1.|1.|Geçersiz|
+|10000|1\.|1\.|Geçersiz|
 
-Yalnızca tarihi ayarlamak için bkz [COleDateTime::SetDate](#setdate). Yalnızca bir kez ayarlamak için bkz [COleDateTime::SetTime](#settime).
+Yalnızca tarihi ayarlamak için bkz. [Copadatetime:: SetDate](#setdate). Yalnızca saati ayarlamak için bkz. [Copadatetime:: SetTime](#settime).
 
-Bu değeri sorgu üye işlevleri hakkında bilgi için `COleDateTime` nesne, aşağıdaki üye işlevleri bakın:
+Bu `COleDateTime` nesnenin değerini sorgulayan üye işlevleri hakkında daha fazla bilgi için, aşağıdaki üye işlevlere bakın:
 
 - [GetDay](#getday)
 
@@ -1125,15 +1125,15 @@ Bu değeri sorgu üye işlevleri hakkında bilgi için `COleDateTime` nesne, aş
 
 - [GetDayOfYear](#getdayofyear)
 
-Sınırları hakkında daha fazla bilgi için `COleDateTime` değerleri başlıklı makaleye bakın [tarih ve saat: Otomasyon desteği](../../atl-mfc-shared/date-and-time-automation-support.md).
+`COleDateTime` Değerlerin sınırları hakkında daha fazla bilgi için bkz. Tarih ve saat [makalesi: Otomasyon desteği](../../atl-mfc-shared/date-and-time-automation-support.md).
 
 ### <a name="example"></a>Örnek
 
-Örneğin bakın [GetStatus](#getstatus).
+[GetStatus](#getstatus)örneğine bakın.
 
-##  <a name="setstatus"></a>  COleDateTime::SetStatus
+##  <a name="setstatus"></a>Cotadatetime:: SetStatus
 
-Bu durumu ayarlar `COleDateTime` nesne.
+Bu `COleDateTime` nesnenin durumunu ayarlar.
 
 ```
 void SetStatus(DateTimeStatus status) throw();
@@ -1142,22 +1142,22 @@ void SetStatus(DateTimeStatus status) throw();
 ### <a name="parameters"></a>Parametreler
 
 *status*<br/>
-Bu yeni durum değeri `COleDateTime` nesne.
+Bu `COleDateTime` nesnenin yeni durum değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*Durumu* parametre değeri tarafından tanımlanan `DateTimeStatus` listelenmiş içinde tanımlanan bir türü `COleDateTime` sınıfı. Bkz: [COleDateTime::GetStatus](#getstatus) Ayrıntılar için.
+*Durum* parametresi değeri, `DateTimeStatus` `COleDateTime` sınıfı içinde tanımlanan, numaralandırılmış tür tarafından tanımlanır. Ayrıntılar için bkz. [Copadatetime:: GetStatus](#getstatus) .
 
 > [!CAUTION]
->  Bu işlev, Gelişmiş programlama durumlar için kullanılır. Bu işlev, bu nesne verileri değiştirmez. Durumu ayarlamak için en sık kullanılacak **null** veya **geçersiz**. Atama işleci ([işleç =](#operator_eq)) ve [SetDateTime](#setdatetime) kaynak değerleri üzerinde temel bir nesnenin durumu ayarlayın.
+>  Bu işlev, gelişmiş programlama durumları içindir. Bu işlev, bu nesnedeki verileri değiştirmez. En sık, durumu **null** veya **geçersiz**olarak ayarlamak için kullanılır. Atama işleci ([operator =](#operator_eq)) ve [SetDateTime](#setdatetime) , kaynak değer (ler) i temel alarak nesnenin durumunu ayarlar.
 
 ### <a name="example"></a>Örnek
 
-Örneğin bakın [GetStatus](#getstatus).
+[GetStatus](#getstatus)örneğine bakın.
 
-##  <a name="settime"></a>  COleDateTime::SetTime
+##  <a name="settime"></a>Cotadatetime:: SetTime
 
-Bu süreyi ayarlar `COleDateTime` nesne.
+Bu `COleDateTime` nesnenin saatini ayarlar.
 
 ```
 int SetTime(
@@ -1168,39 +1168,39 @@ int SetTime(
 
 ### <a name="parameters"></a>Parametreler
 
-*nHour*, *nMin*, *nSec*<br/>
-Bu kopyalanacak zaman bileşenleri gösteren `COleDateTime` nesne.
+*Nhour*, *nMin*, *NSEC*<br/>
+Bu `COleDateTime` nesneye kopyalanacak saat bileşenlerini belirtin.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfır ise bu değeri `COleDateTime` nesne 1 ayarlandığı başarıyla; Aksi takdirde. Bu dönüş değeri dayanır `DateTimeStatus` listelenmiş türü. Daha fazla bilgi için [SetStatus](#setstatus) üye işlevi.
+Bu `COleDateTime` nesnenin değeri başarıyla ayarlandıysa sıfır; Aksi takdirde, 1. Bu dönüş değeri, `DateTimeStatus` numaralandırılmış türü temel alır. Daha fazla bilgi için bkz. [SetStatus](#setstatus) üye işlevi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Saat için belirtilen değerlere ayarlanır. 30 Aralık 1899 anlamına gelen tarih için 0, tarihi ayarlanır.
+Zaman, belirtilen değerlere ayarlanır. Tarih 0 ' a, yani 30 Aralık 1899 ' e ayarlanır.
 
-Parametre değerleri için sınırları için aşağıdaki tabloya bakın:
+Parametre değerlerinin sınırları için aşağıdaki tabloya bakın:
 
 |Parametre|Sınırları|
 |---------------|------------|
-|*nHour*|0 - 23|
-|*nMin*|0 - 59|
+|*Ngünün saati*|0 - 23|
+|*Ngünde en az*|0 - 59|
 |*nSec*|0 - 59|
 
-Parametreler ile belirtilen değer geçerli değil. zaman bu nesnenin durumu geçersiz ve bu nesnenin değerini ayarlanırsa değiştirilmez.
+Parametreler tarafından belirtilen zaman değeri geçerli değilse, bu nesnenin durumu geçersiz olarak ayarlanır ve bu nesnenin değeri değiştirilmez.
 
-Zaman değerlerine ilişkin bazı örnekler şunlardır:
+Zaman değerlerinin bazı örnekleri aşağıda verilmiştir:
 
-|*nHour*|*nMin*|*nSec*|Değer|
+|*Ngünün saati*|*Ngünde en az*|*nSec*|Değer|
 |-------------|------------|------------|-----------|
-|1.|3|3|01:03:03|
+|1\.|3|3|01:03:03|
 |23|45|0|23:45:00|
 |25|30|0|Geçersiz|
 |9|60|0|Geçersiz|
 
-Tarih ve saat hem ayarlamak için bkz: [COleDateTime::SetDateTime](#setdatetime).
+Hem tarih hem de saati ayarlamak için bkz. [copadatetime:: SetDateTime](#setdatetime).
 
-Bu değeri sorgu üye işlevleri hakkında bilgi için `COleDateTime` nesne, aşağıdaki üye işlevleri bakın:
+Bu `COleDateTime` nesnenin değerini sorgulayan üye işlevleri hakkında daha fazla bilgi için, aşağıdaki üye işlevlere bakın:
 
 - [GetDay](#getday)
 
@@ -1218,11 +1218,11 @@ Bu değeri sorgu üye işlevleri hakkında bilgi için `COleDateTime` nesne, aş
 
 - [GetDayOfYear](#getdayofyear)
 
-Sınırları hakkında daha fazla bilgi için `COleDateTime` değerleri başlıklı makaleye bakın [tarih ve saat: Otomasyon desteği](../../atl-mfc-shared/date-and-time-automation-support.md).
+`COleDateTime` Değerlerin sınırları hakkında daha fazla bilgi için bkz. Tarih ve saat [makalesi: Otomasyon desteği](../../atl-mfc-shared/date-and-time-automation-support.md).
 
 ### <a name="example"></a>Örnek
 
-Örneğin bakın [SetDate](#setdate).
+Bkz. [setDate](#setdate)örneği.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

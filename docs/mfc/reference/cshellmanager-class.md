@@ -28,12 +28,12 @@ helpviewer_keywords:
 - CShellManager [MFC], GetParentItem
 - CShellManager [MFC], ItemFromPath
 ms.assetid: f15c4c1a-6fae-487d-9913-9b7369b33da0
-ms.openlocfilehash: 14e8da573621f712ae9e27647122d305be54b7b0
-ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
+ms.openlocfilehash: 8151550dafdd1bdf8593d555008af387cf548bc8
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68916690"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69502616"
 ---
 # <a name="cshellmanager-class"></a>CShellManager sınıfı
 
@@ -113,7 +113,7 @@ dışı Yöntemi tarafından seçilen klasörün yolunu depolamak için kullanı
 'ndaki İletişim kutusu için başlık.
 
 *ulFlags*<br/>
-'ndaki İletişim kutusu seçeneklerini belirten bayraklar. Ayrıntılı açıklama için bkz. [BROWSEINFO](/windows/desktop/api/shlobj_core/ns-shlobj_core-browseinfoa) .
+'ndaki İletişim kutusu seçeneklerini belirten bayraklar. Ayrıntılı açıklama için bkz. [BROWSEINFO](/windows/win32/api/shlobj_core/ns-shlobj_core-browseinfow) .
 
 *piFolderImage*<br/>
 dışı Metodun seçili klasörün görüntü dizinini yazdığı tamsayı değerine yönelik bir işaretçi.
@@ -156,7 +156,7 @@ LPITEMIDLIST ConcatenateItem(
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, hem *pidl1* hem de *pidl2*içermesi için yeterince büyük olan yeni bir [ımidlist](/windows/desktop/api/shtypes/ns-shtypes-itemidlist) oluşturur. Daha sonra *pidl1* ve *pidl2* öğesini yeni listeye kopyalar.
+Bu yöntem, hem *pidl1* hem de *pidl2*içermesi için yeterince büyük olan yeni bir [ımidlist](/windows/win32/api/shtypes/ns-shtypes-itemidlist) oluşturur. Daha sonra *pidl1* ve *pidl2* öğesini yeni listeye kopyalar.
 
 ##  <a name="copyitem"></a>CShellManager:: CopyItem
 

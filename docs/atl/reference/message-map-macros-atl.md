@@ -37,61 +37,61 @@ f1_keywords:
 - atlwin/ATL::REFLECTED_NOTIFY_RANGE_CODE_HANDLER
 - atlwin/ATL::REFLECTED_NOTIFY_RANGE_HANDLER
 ms.assetid: eefdd546-8934-4a30-b263-9c06a8addcbd
-ms.openlocfilehash: bedef3a8563e27f72017720530e3b7addb78ec3d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 42fdc7a3f09568b641229e897a2a493994a7ba8a
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62197438"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69495351"
 ---
 # <a name="message-map-macros-atl"></a>İleti eşleme makroları (ATL)
 
-İleti eşlemeleri ve girişleri bu makroları tanımlar.
+Bu makrolar ileti haritaları ve girdileri tanımlar.
 
 |||
 |-|-|
-|[ALT_MSG_MAP](#alt_msg_map)|Bir diğer ileti eşlemesi başlangıcını işaretler.|
-|[BEGIN_MSG_MAP](#begin_msg_map)|Varsayılan ileti eşlemesi başlangıcını işaretler.|
-|[CHAIN_MSG_MAP_ALT](#chain_msg_map_alt)|Bir diğer ileti eşlemesi temel sınıfta yetkilisine zincirleme bağlanır.|
-|[CHAIN_MSG_MAP_ALT_MEMBER](#chain_msg_map_alt_member)|Zincirleri için alternatif bir ileti sınıfının veri üyesi eşleyin.|
-|[CHAIN_MSG_MAP](#chain_msg_map)|Varsayılan ileti eşlemesi'temel sınıfında yetkilisine zincirleme bağlanır.|
-|[CHAIN_MSG_MAP_DYNAMIC](#chain_msg_map_dynamic)|Çalışma zamanında başka bir sınıf ileti eşlemede yetkilisine zincirleme bağlanır.|
-|[CHAIN_MSG_MAP_MEMBER](#chain_msg_map_member)|Sınıf veri üyesi varsayılan ileti eşlemede yetkilisine zincirleme bağlanır.|
-|[COMMAND_CODE_HANDLER](#command_code_handler)|WM_COMMAND ileti bildirimi koduna göre bir işleyici işlevi eşlenir.|
-|[COMMAND_HANDLER](#command_handler)|WM_COMMAND ileti bildirimi kodunu ve menü öğesi, denetim ya da Hızlandırıcı tanımlayıcısını dayalı bir işleyici işlevi eşlenir.|
-|[COMMAND_ID_HANDLER](#command_id_handler)|WM_COMMAND ileti menü öğesi, denetim ya da Hızlandırıcı tanımlayıcısına göre bir işleyici işlevi eşlenir.|
-|[COMMAND_RANGE_CODE_HANDLER](#command_range_code_handler)|WM_COMMAND ileti bildirimi kodunu ve bir aralıkta denetimi tanımlayıcıları temel alan bir işleyici işlevi eşlenir.|
-|[COMMAND_RANGE_HANDLER](#command_range_handler)|WM_COMMAND ileti denetim tanımlayıcıların bitişik bir aralığı tabanlı bir işleyici işlevi eşlenir.|
-|[DECLARE_EMPTY_MSG_MAP](#declare_empty_msg_map)|Boş ileti eşleme uygular.|
-|[DEFAULT_REFLECTION_HANDLER](#default_reflection_handler)|Aksi takdirde işlenmez yansımış iletiler için varsayılan işleyici sağlar.|
-|[END_MSG_MAP](#end_msg_map)|İleti eşlemesi sonunu işaretler.|
-|[FORWARD_NOTIFICATIONS](#forward_notifications)|Bildirim iletilerini üst penceresine iletir.|
-|[MESSAGE_HANDLER](#message_handler)|Windows ileti işleyici işlevine eşler.|
-|[MESSAGE_RANGE_HANDLER](#message_range_handler)|Bitişik Windows iletileri için bir işleyici işlevi eşler.|
-|[NOTIFY_CODE_HANDLER](#notify_code_handler)|Wm_notıfy iletisi bildirimi koduna göre bir işleyici işlevi eşlenir.|
-|[NOTIFY_HANDLER](#notify_handler)|Wm_notıfy iletisi bildirimi kodunu ve denetim tanımlayıcısı dayalı bir işleyici işlevi eşlenir.|
-|[NOTIFY_ID_HANDLER](#notify_id_handler)|Wm_notıfy iletisi denetim tanımlayıcısına göre bir işleyici işlevi eşlenir.|
-|[NOTIFY_RANGE_CODE_HANDLER](#notify_range_code_handler)|Wm_notıfy iletisi bildirimi kodunu ve bir aralıkta denetimi tanımlayıcıları temel alan bir işleyici işlevi eşlenir.|
-|[NOTIFY_RANGE_HANDLER](#notify_range_handler)|Wm_notıfy iletisi denetim tanımlayıcıların bitişik bir aralığı tabanlı bir işleyici işlevi eşlenir.|
-|[REFLECT_NOTIFICATIONS](#reflect_notifications)|Bildirim iletilerini gönderen penceresine dönüp yansıtır.|
-|[REFLECTED_COMMAND_CODE_HANDLER](#reflected_command_code_handler)|Yansımış bir WM_COMMAND ileti bildirimi koduna göre bir işleyici işlevi eşlenir.|
-|[REFLECTED_COMMAND_HANDLER](#reflected_command_handler)|Yansımış bir WM_COMMAND ileti bildirimi kodunu ve menü öğesi, denetim ya da Hızlandırıcı tanımlayıcısını dayalı bir işleyici işlevi eşlenir.|
-|[REFLECTED_COMMAND_ID_HANDLER](#reflected_command_id_handler)|Yansımış bir WM_COMMAND ileti menü öğesi, denetim ya da Hızlandırıcı tanımlayıcısına göre bir işleyici işlevi eşlenir.|
-|[REFLECTED_COMMAND_RANGE_CODE_HANDLER](#reflected_command_range_code_handler)|Yansımış bir WM_COMMAND ileti bildirimi kodunu ve bir aralıkta denetimi tanımlayıcıları temel alan bir işleyici işlevi eşlenir.|
-|[REFLECTED_COMMAND_RANGE_HANDLER](#reflected_command_range_handler)|Yansımış bir WM_COMMAND ileti denetim tanımlayıcıların bitişik bir aralığı tabanlı bir işleyici işlevi eşlenir.|
-|[REFLECTED_NOTIFY_CODE_HANDLER](#reflected_notify_code_handler)|Yansıtılan bir wm_notıfy iletisi bildirimi koduna göre bir işleyici işlevi eşlenir.|
-|[REFLECTED_NOTIFY_HANDLER](#reflected_notify_handler)|Yansıtılan bir wm_notıfy iletisi bildirimi kodunu ve denetim tanımlayıcısı dayalı bir işleyici işlevi eşlenir.|
-|[REFLECTED_NOTIFY_ID_HANDLER](#reflected_notify_id_handler)|Yansıtılan bir wm_notıfy iletisi denetim tanımlayıcısına göre bir işleyici işlevi eşlenir.|
-|[REFLECTED_NOTIFY_RANGE_CODE_HANDLER](#reflected_notify_range_code_handler)|Yansıtılan bir wm_notıfy iletisi bildirimi kodunu ve bir aralıkta denetimi tanımlayıcıları temel alan bir işleyici işlevi eşlenir.|
-|[REFLECTED_NOTIFY_RANGE_HANDLER](#reflected_notify_range_handler)|Yansıtılan bir wm_notıfy iletisi denetim tanımlayıcıların bitişik bir aralığı tabanlı bir işleyici işlevi eşlenir.|
+|[ALT_MSG_MAP](#alt_msg_map)|Alternatif ileti eşlemesinin başlangıcını işaretler.|
+|[BEGIN_MSG_MAP](#begin_msg_map)|Varsayılan ileti eşlemesinin başlangıcını işaretler.|
+|[CHAIN_MSG_MAP_ALT](#chain_msg_map_alt)|Temel sınıftaki alternatif bir ileti eşlemesine zincirler.|
+|[CHAIN_MSG_MAP_ALT_MEMBER](#chain_msg_map_alt_member)|Sınıfının bir veri üyesinde alternatif bir ileti eşlemesine zincirler.|
+|[CHAIN_MSG_MAP](#chain_msg_map)|Temel sınıftaki varsayılan ileti eşlemesine zincirler.|
+|[CHAIN_MSG_MAP_DYNAMIC](#chain_msg_map_dynamic)|Çalışma zamanında başka bir sınıftaki ileti eşlemesine zincirler.|
+|[CHAIN_MSG_MAP_MEMBER](#chain_msg_map_member)|Sınıfının bir veri üyesinde varsayılan ileti eşlemesine zincirler.|
+|[COMMAND_CODE_HANDLER](#command_code_handler)|Bildirim koduna göre bir WM_COMMAND iletisini bir işleyici işleviyle eşler.|
+|[COMMAND_HANDLER](#command_handler)|Bir WM_COMMAND iletisini, bildirim koduna ve menü öğesi, denetim ya da Hızlandırıcı tanımlayıcısına göre bir işleyici işleviyle eşler.|
+|[COMMAND_ID_HANDLER](#command_id_handler)|Bir WM_COMMAND iletisini, menü öğesi, denetim veya hızlandırıcı tanımlayıcısını temel alarak bir işleyici işleviyle eşler.|
+|[COMMAND_RANGE_CODE_HANDLER](#command_range_code_handler)|Bildirim koduna ve bitişik denetim tanımlayıcılarına bir aralığa göre bir WM_COMMAND iletisini bir işleyici işleviyle eşler.|
+|[COMMAND_RANGE_HANDLER](#command_range_handler)|Bir WM_COMMAND iletisini, bir dizi denetim tanımlayıcısı temelinde bir işleyici işleviyle eşler.|
+|[DECLARE_EMPTY_MSG_MAP](#declare_empty_msg_map)|Boş bir ileti eşlemesi uygular.|
+|[DEFAULT_REFLECTION_HANDLER](#default_reflection_handler)|Aksi halde işlenmemiş iletiler için varsayılan bir işleyici sağlar.|
+|[END_MSG_MAP](#end_msg_map)|İleti eşlemesinin sonunu işaretler.|
+|[FORWARD_NOTIFICATIONS](#forward_notifications)|Bildirim iletilerini ana pencereye iletir.|
+|[MESSAGE_HANDLER](#message_handler)|Bir Windows iletisini bir işleyici işleviyle eşler.|
+|[MESSAGE_RANGE_HANDLER](#message_range_handler)|Bir dizi Windows iletisini bir işleyici işlevine eşler.|
+|[NOTIFY_CODE_HANDLER](#notify_code_handler)|Bildirim koduna göre bir WM_NOTIFY iletisini bir işleyici işleviyle eşler.|
+|[NOTIFY_HANDLER](#notify_handler)|Bir WM_NOTIFY iletisini, bildirim koduna ve denetim tanımlayıcısına göre bir işleyici işleviyle eşler.|
+|[NOTIFY_ID_HANDLER](#notify_id_handler)|Denetim tanımlayıcısına bağlı olarak bir WM_NOTIFY iletisini bir işleyici işleviyle eşler.|
+|[NOTIFY_RANGE_CODE_HANDLER](#notify_range_code_handler)|Bildirim koduna ve bitişik denetim tanımlayıcılarına bir aralığa göre bir WM_NOTIFY iletisini bir işleyici işleviyle eşler.|
+|[NOTIFY_RANGE_HANDLER](#notify_range_handler)|Bir WM_NOTIFY iletisini, bir dizi denetim tanımlayıcısı temelinde bir işleyici işleviyle eşler.|
+|[REFLECT_NOTIFICATIONS](#reflect_notifications)|Bildirim iletilerini gönderen pencereye geri yansıtır.|
+|[REFLECTED_COMMAND_CODE_HANDLER](#reflected_command_code_handler)|Yansıtılan bir WM_COMMAND iletisini, bildirim koduna göre bir işleyici işlevine eşler.|
+|[REFLECTED_COMMAND_HANDLER](#reflected_command_handler)|Yansıtılan bir WM_COMMAND iletisini, bildirim koduna ve menü öğesi, denetim ya da Hızlandırıcı tanıtıcısına göre bir işleyici işlevine eşler.|
+|[REFLECTED_COMMAND_ID_HANDLER](#reflected_command_id_handler)|Yansıtılan bir WM_COMMAND iletisini, menü öğesi, denetim veya hızlandırıcı tanıtıcısına göre bir işleyici işlevine eşler.|
+|[REFLECTED_COMMAND_RANGE_CODE_HANDLER](#reflected_command_range_code_handler)|Yansıtılan bir WM_COMMAND iletisini, bildirim koduna ve bitişik denetim tanımlayıcılarına bir aralığa göre bir işleyici işlevine eşler.|
+|[REFLECTED_COMMAND_RANGE_HANDLER](#reflected_command_range_handler)|Yansıtılan bir WM_COMMAND iletisini, bir dizi denetim tanımlayıcısı temelinde bir işleyici işlevine eşler.|
+|[REFLECTED_NOTIFY_CODE_HANDLER](#reflected_notify_code_handler)|Yansıtılan bir WM_NOTIFY iletisini, bildirim koduna göre bir işleyici işlevine eşler.|
+|[REFLECTED_NOTIFY_HANDLER](#reflected_notify_handler)|Yansıtılan bir WM_NOTIFY iletisini, bildirim koduna ve denetim tanımlayıcısına göre bir işleyici işlevine eşler.|
+|[REFLECTED_NOTIFY_ID_HANDLER](#reflected_notify_id_handler)|Yansıtılmış bir WM_NOTIFY iletisini, denetim tanımlayıcısına göre bir işleyici işlevine eşler.|
+|[REFLECTED_NOTIFY_RANGE_CODE_HANDLER](#reflected_notify_range_code_handler)|Yansıtılan bir WM_NOTIFY iletisini, bildirim koduna ve bitişik denetim tanımlayıcılarına bir aralığa göre bir işleyici işlevine eşler.|
+|[REFLECTED_NOTIFY_RANGE_HANDLER](#reflected_notify_range_handler)|Yansıtılan bir WM_NOTIFY iletisini, bir dizi denetim tanımlayıcısı temelinde bir işleyici işlevine eşler.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlwin.h
+**Üstbilgi:** atlwin. h
 
-##  <a name="alt_msg_map"></a>  ALT_MSG_MAP
+##  <a name="alt_msg_map"></a>ALT_MSG_MAP
 
-Bir diğer ileti eşlemesi başlangıcını işaretler.
+Alternatif ileti eşlemesinin başlangıcını işaretler.
 
 ```
 ALT_MSG_MAP(msgMapID)
@@ -100,37 +100,37 @@ ALT_MSG_MAP(msgMapID)
 ### <a name="parameters"></a>Parametreler
 
 *msgMapID*<br/>
-[in] İleti eşleme tanımlayıcısı.
+'ndaki İleti eşleme tanımlayıcısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-ATL her ileti eşlemesi bir sayı olarak tanımlar. Varsayılan ileti eşlemesi (ile BEGIN_MSG_MAP makrosu bildirildi) 0 ile tanımlanır. Bir diğer ileti eşlemesi tarafından tanımlanan *msgMapID*.
+ATL her ileti eşlemini bir sayıyla tanımlar. Varsayılan ileti eşlemesi (BEGIN_MSG_MAP makrosu ile belirtilen) 0 ile tanımlanır. Alternatif bir ileti eşlemesi *msgMapID*tarafından tanımlanır.
 
-İleti eşlemeleri bir pencereye gönderilen iletileri işlemek için kullanılır. Örneğin, [CContainedWindow](../../atl/reference/ccontainedwindowt-class.md) ileti eşlemesi tanımlayıcısını içeren nesneyi belirtmenizi sağlar. [CContainedWindow::WindowProc](ccontainedwindowt-class.md#windowproc) ardından uygun bir işleyici işlevi veya başka bir ileti eşlemesi kapsanan pencerenin iletileri yönlendirmek için bu ileti eşlemesi kullanır. İşleyici işlevlerini bildirme makroları listesi için bkz. [BEGIN_MSG_MAP](#begin_msg_map).
+İleti haritaları bir pencereye gönderilen iletileri işlemek için kullanılır. Örneğin, [CContainedWindow](../../atl/reference/ccontainedwindowt-class.md) , kapsayan nesne içindeki bir ileti eşlemesinin tanımlayıcısını belirtmenize olanak tanır. [CContainedWindow:: WindowProc](ccontainedwindowt-class.md#windowproc) daha sonra içerilen pencerenin iletilerini uygun işleyici işlevine ya da başka bir ileti eşlemesine yönlendirmek için bu ileti haritasını kullanır. İşleyici işlevleri bildiren makroların bir listesi için bkz. [BEGIN_MSG_MAP](#begin_msg_map).
 
-Her zaman bir ileti eşlemesi BEGIN_MSG_MAP ile başlar. Ardından, sonraki diğer ileti eşlemeleri bildirebilirsiniz.
+İleti haritasını her zaman BEGIN_MSG_MAP ile başlatın. Ardından, sonraki alternatif ileti eşlemelerini bildirebilirsiniz.
 
-[END_MSG_MAP](#end_msg_map) makrosu ileti eşlemede sonunu işaretler. Her zaman tam olarak bir örneği BEGIN_MSG_MAP ve END_MSG_MAP dikkat edin.
+[End_msg_map](#end_msg_map) makrosu ileti eşlemesinin sonunu işaretler. Her zaman tam olarak bir BEGIN_MSG_MAP ve END_MSG_MAP örneği olduğunu unutmayın.
 
-ATL ileti eşlemeleri hakkında daha fazla bilgi için bkz. [ileti eşlemeleri](../../atl/message-maps-atl.md).
+ATL 'de ileti eşlemelerini kullanma hakkında daha fazla bilgi için bkz. [Ileti haritaları](../../atl/message-maps-atl.md).
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, varsayılan ileti eşlemesi ve her bir işleyici işlevi içeren bir diğer ileti eşlemesi gösterir:
+Aşağıdaki örnek, her biri bir işleyici işlevi içeren varsayılan ileti eşlemesini ve bir alternatif ileti haritasını gösterir:
 
 [!code-cpp[NVC_ATL_Windowing#98](../../atl/codesnippet/cpp/message-map-macros-atl_1.h)]
 
-Sonraki örnek, iki farklı ileti eşlemeleri gösterir. Varsayılan ileti eşlemesi yok.
+Sonraki örnekte, iki alternatif ileti haritası gösterilmektedir. Varsayılan ileti eşlemesi boş.
 
 [!code-cpp[NVC_ATL_Windowing#99](../../atl/codesnippet/cpp/message-map-macros-atl_2.h)]
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlwin.h
+**Üstbilgi:** atlwin. h
 
-##  <a name="begin_msg_map"></a>  BEGIN_MSG_MAP
+##  <a name="begin_msg_map"></a>BEGIN_MSG_MAP
 
-Varsayılan ileti eşlemesi başlangıcını işaretler.
+Varsayılan ileti eşlemesinin başlangıcını işaretler.
 
 ```
 BEGIN_MSG_MAP(theClass)
@@ -138,78 +138,78 @@ BEGIN_MSG_MAP(theClass)
 
 ### <a name="parameters"></a>Parametreler
 
-*Sınıfın*<br/>
-[in] İleti eşlemesi içeren sınıfın adı.
+*Sınıf*<br/>
+'ndaki İleti eşlemesini içeren sınıfın adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-[CWindowImpl::WindowProc](cwindowimpl-class.md#windowproc) penceresine gönderilen iletileri işlemek için varsayılan ileti eşlemesi kullanır. İleti eşlemesi uygun işleyici işlevine veya başka bir ileti haritasına iletileri yönlendirir.
+[CWindowImpl:: WindowProc](cwindowimpl-class.md#windowproc) , pencereye gönderilen iletileri işlemek için varsayılan ileti eşlemesini kullanır. İleti eşleme, iletileri uygun işleyici işlevine ya da başka bir ileti eşlemesine yönlendirir.
 
-Aşağıdaki makro bir işleyici işlevine bir ileti eşleyin. Bu işlev tanımlanmalıdır *sınıfın*.
-
-|Makrosu|Açıklama|
-|-----------|-----------------|
-|[MESSAGE_HANDLER](#message_handler)|Windows ileti işleyici işlevine eşler.|
-|[MESSAGE_RANGE_HANDLER](#message_range_handler)|Bitişik Windows iletileri için bir işleyici işlevi eşler.|
-|[COMMAND_HANDLER](#command_handler)|WM_COMMAND ileti bildirimi kodunu ve menü öğesi, denetim ya da Hızlandırıcı tanımlayıcısını dayalı bir işleyici işlevi eşlenir.|
-|[COMMAND_ID_HANDLER](#command_id_handler)|WM_COMMAND ileti menü öğesi, denetim ya da Hızlandırıcı tanımlayıcısına göre bir işleyici işlevi eşlenir.|
-|[COMMAND_CODE_HANDLER](#command_handler)|WM_COMMAND ileti bildirimi koduna göre bir işleyici işlevi eşlenir.|
-|[COMMAND_RANGE_HANDLER](#command_range_handler)|Menü öğesi, denetim ya da Hızlandırıcı tanımlayıcısına göre bir işleyici işlevi, bitişik WM_COMMAND iletileri eşlenir.|
-|[NOTIFY_HANDLER](#notify_handler)|Wm_notıfy iletisi bildirimi kodunu ve denetim tanımlayıcısı dayalı bir işleyici işlevi eşlenir.|
-|[NOTIFY_ID_HANDLER](#notify_id_handler)|Wm_notıfy iletisi denetim tanımlayıcısına göre bir işleyici işlevi eşlenir.|
-|[NOTIFY_CODE_HANDLER](#notify_code_handler)|Wm_notıfy iletisi bildirimi koduna göre bir işleyici işlevi eşlenir.|
-|[NOTIFY_RANGE_HANDLER](#notify_range_handler)|Denetim tanımlayıcısına göre bir işleyici işlevi, bitişik wm_notıfy iletileri eşlenir.|
-
-Aşağıdaki makroları, başka bir ileti haritasına iletileri doğrudan. Bu işlem "bağlama" olarak adlandırılır
+Aşağıdaki makrolar bir iletiyi bir işleyici işlevine eşler. Bu işlev, bir *sınıf*içinde tanımlanmalıdır.
 
 |Makrosu|Açıklama|
 |-----------|-----------------|
-|[CHAIN_MSG_MAP](#chain_msg_map)|Varsayılan ileti eşlemesi'temel sınıfında yetkilisine zincirleme bağlanır.|
-|[CHAIN_MSG_MAP_MEMBER](#chain_msg_map_member)|Sınıf veri üyesi varsayılan ileti eşlemede yetkilisine zincirleme bağlanır.|
-|[CHAIN_MSG_MAP_ALT](#chain_msg_map_alt)|Bir diğer ileti eşlemesi temel sınıfta yetkilisine zincirleme bağlanır.|
-|[CHAIN_MSG_MAP_ALT_MEMBER](#chain_msg_map_alt_member)|Zincirleri için alternatif bir ileti sınıfının veri üyesi eşleyin.|
-|[CHAIN_MSG_MAP_DYNAMIC](#chain_msg_map_dynamic)|Çalışma zamanında başka bir sınıfın varsayılan ileti eşlemede yetkilisine zincirleme bağlanır.|
+|[MESSAGE_HANDLER](#message_handler)|Bir Windows iletisini bir işleyici işleviyle eşler.|
+|[MESSAGE_RANGE_HANDLER](#message_range_handler)|Bir dizi Windows iletisini bir işleyici işlevine eşler.|
+|[COMMAND_HANDLER](#command_handler)|Bir WM_COMMAND iletisini, bildirim koduna ve menü öğesi, denetim ya da Hızlandırıcı tanımlayıcısına göre bir işleyici işleviyle eşler.|
+|[COMMAND_ID_HANDLER](#command_id_handler)|Bir WM_COMMAND iletisini, menü öğesi, denetim veya hızlandırıcı tanımlayıcısını temel alarak bir işleyici işleviyle eşler.|
+|[COMMAND_CODE_HANDLER](#command_handler)|Bildirim koduna göre bir WM_COMMAND iletisini bir işleyici işleviyle eşler.|
+|[COMMAND_RANGE_HANDLER](#command_range_handler)|Menü öğesi, denetim veya hızlandırıcı tanımlayıcısını temel alarak, ardışık bir WM_COMMAND ileti aralığını bir işleyici işlevine eşler.|
+|[NOTIFY_HANDLER](#notify_handler)|Bir WM_NOTIFY iletisini, bildirim koduna ve denetim tanımlayıcısına göre bir işleyici işleviyle eşler.|
+|[NOTIFY_ID_HANDLER](#notify_id_handler)|Denetim tanımlayıcısına bağlı olarak bir WM_NOTIFY iletisini bir işleyici işleviyle eşler.|
+|[NOTIFY_CODE_HANDLER](#notify_code_handler)|Bildirim koduna göre bir WM_NOTIFY iletisini bir işleyici işleviyle eşler.|
+|[NOTIFY_RANGE_HANDLER](#notify_range_handler)|Denetim tanımlayıcısına bağlı olarak, bitişik bir WM_NOTIFY ileti aralığını bir işleyici işlevine eşler.|
 
-Aşağıdaki makroları üst pencere iletileri "yansıtılan" doğrudan. Örneğin, bir denetim normalde bildirim iletilerini üst pencereye işleme gönderir, ancak üst pencere ileti denetim yansıtabilir.
+Aşağıdaki makrolar iletileri başka bir ileti eşlemesine yönlendirir. Bu işleme "zincirleme" adı verilir.
 
 |Makrosu|Açıklama|
 |-----------|-----------------|
-|[REFLECTED_COMMAND_HANDLER](#reflected_command_handler)|Yansımış bir WM_COMMAND ileti bildirimi kodunu ve menü öğesi, denetim ya da Hızlandırıcı tanımlayıcısını dayalı bir işleyici işlevi eşlenir.|
-|[REFLECTED_COMMAND_ID_HANDLER](#reflected_command_id_handler)|Yansımış bir WM_COMMAND ileti menü öğesi, denetim ya da Hızlandırıcı tanımlayıcısına göre bir işleyici işlevi eşlenir.|
-|[REFLECTED_COMMAND_CODE_HANDLER](#reflected_command_code_handler)|Yansımış bir WM_COMMAND ileti bildirimi koduna göre bir işleyici işlevi eşlenir.|
-|[REFLECTED_COMMAND_RANGE_HANDLER](#reflected_command_range_handler)|Yansımış bir WM_COMMAND ileti denetim tanımlayıcıların bitişik bir aralığı tabanlı bir işleyici işlevi eşlenir.|
-|[REFLECTED_COMMAND_RANGE_CODE_HANDLER](#reflected_command_range_code_handler)|Yansımış bir WM_COMMAND ileti bildirimi kodunu ve bir aralıkta denetimi tanımlayıcıları temel alan bir işleyici işlevi eşlenir.|
-|[REFLECTED_NOTIFY_HANDLER](#reflected_notify_handler)|Yansıtılan bir wm_notıfy iletisi bildirimi kodunu ve denetim tanımlayıcısı dayalı bir işleyici işlevi eşlenir.|
-|[REFLECTED_NOTIFY_ID_HANDLER](#reflected_notify_id_handler)|Yansıtılan bir wm_notıfy iletisi denetim tanımlayıcısına göre bir işleyici işlevi eşlenir.|
-|[REFLECTED_NOTIFY_CODE_HANDLER](#reflected_notify_code_handler)|Yansıtılan bir wm_notıfy iletisi bildirimi koduna göre bir işleyici işlevi eşlenir.|
-|[REFLECTED_NOTIFY_RANGE_HANDLER](#reflected_notify_range_handler)|Yansıtılan bir wm_notıfy iletisi denetim tanımlayıcıların bitişik bir aralığı tabanlı bir işleyici işlevi eşlenir.|
-|[REFLECTED_NOTIFY_RANGE_CODE_HANDLER](#reflected_notify_range_code_handler)|Yansıtılan bir wm_notıfy iletisi bildirimi kodunu ve bir aralıkta denetimi tanımlayıcıları temel alan bir işleyici işlevi eşlenir.|
+|[CHAIN_MSG_MAP](#chain_msg_map)|Temel sınıftaki varsayılan ileti eşlemesine zincirler.|
+|[CHAIN_MSG_MAP_MEMBER](#chain_msg_map_member)|Sınıfının bir veri üyesinde varsayılan ileti eşlemesine zincirler.|
+|[CHAIN_MSG_MAP_ALT](#chain_msg_map_alt)|Temel sınıftaki alternatif bir ileti eşlemesine zincirler.|
+|[CHAIN_MSG_MAP_ALT_MEMBER](#chain_msg_map_alt_member)|Sınıfının bir veri üyesinde alternatif bir ileti eşlemesine zincirler.|
+|[CHAIN_MSG_MAP_DYNAMIC](#chain_msg_map_dynamic)|Çalışma zamanında başka bir sınıftaki varsayılan ileti eşlemesine zincirler.|
+
+Aşağıdaki makrolar, ana penceredeki "yansıtılan" iletileri doğrudan yönlendirir. Örneğin, bir denetim genellikle bildirim iletilerini işlenmek üzere üst penceresine gönderir, ancak üst pencere iletiyi denetime geri yansıtabilir.
+
+|Makrosu|Açıklama|
+|-----------|-----------------|
+|[REFLECTED_COMMAND_HANDLER](#reflected_command_handler)|Yansıtılan bir WM_COMMAND iletisini, bildirim koduna ve menü öğesi, denetim ya da Hızlandırıcı tanıtıcısına göre bir işleyici işlevine eşler.|
+|[REFLECTED_COMMAND_ID_HANDLER](#reflected_command_id_handler)|Yansıtılan bir WM_COMMAND iletisini, menü öğesi, denetim veya hızlandırıcı tanıtıcısına göre bir işleyici işlevine eşler.|
+|[REFLECTED_COMMAND_CODE_HANDLER](#reflected_command_code_handler)|Yansıtılan bir WM_COMMAND iletisini, bildirim koduna göre bir işleyici işlevine eşler.|
+|[REFLECTED_COMMAND_RANGE_HANDLER](#reflected_command_range_handler)|Yansıtılan bir WM_COMMAND iletisini, bir dizi denetim tanımlayıcısı temelinde bir işleyici işlevine eşler.|
+|[REFLECTED_COMMAND_RANGE_CODE_HANDLER](#reflected_command_range_code_handler)|Yansıtılan bir WM_COMMAND iletisini, bildirim koduna ve bitişik denetim tanımlayıcılarına bir aralığa göre bir işleyici işlevine eşler.|
+|[REFLECTED_NOTIFY_HANDLER](#reflected_notify_handler)|Yansıtılan bir WM_NOTIFY iletisini, bildirim koduna ve denetim tanımlayıcısına göre bir işleyici işlevine eşler.|
+|[REFLECTED_NOTIFY_ID_HANDLER](#reflected_notify_id_handler)|Yansıtılmış bir WM_NOTIFY iletisini, denetim tanımlayıcısına göre bir işleyici işlevine eşler.|
+|[REFLECTED_NOTIFY_CODE_HANDLER](#reflected_notify_code_handler)|Yansıtılan bir WM_NOTIFY iletisini, bildirim koduna göre bir işleyici işlevine eşler.|
+|[REFLECTED_NOTIFY_RANGE_HANDLER](#reflected_notify_range_handler)|Yansıtılan bir WM_NOTIFY iletisini, bir dizi denetim tanımlayıcısı temelinde bir işleyici işlevine eşler.|
+|[REFLECTED_NOTIFY_RANGE_CODE_HANDLER](#reflected_notify_range_code_handler)|Yansıtılan bir WM_NOTIFY iletisini, bildirim koduna ve bitişik denetim tanımlayıcılarına bir aralığa göre bir işleyici işlevine eşler.|
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATL_Windowing#102](../../atl/codesnippet/cpp/message-map-macros-atl_3.h)]
 
-Olduğunda bir `CMyExtWindow` nesnesi WM_PAINT iletisini aldığında, iletiyi yönlendirildiği `CMyExtWindow::OnPaint` gerçek işleme için. Varsa `OnPaint` ileti gerekli daha fazla işleme, ileti gösterir sonra varsayılan ileti eşlemede yönlendirilebilir `CMyBaseWindow`.
+Bir `CMyExtWindow` nesne bir WM_PAINT iletisi aldığında, ileti gerçek işleme `CMyExtWindow::OnPaint` için yönlendirilir. İletinin daha fazla işlem gerektirdiğini `CMyBaseWindow` gösteriyorsaileti,içindekivarsayılaniletieşlemesineyönlendirilir.`OnPaint`
 
-Varsayılan ileti eşlemesi ek olarak, bir diğer ileti eşlemesi ile tanımlayabilirsiniz [ALT_MSG_MAP](#alt_msg_map). Her zaman bir ileti eşlemesi BEGIN_MSG_MAP ile başlar. Ardından, sonraki diğer ileti eşlemeleri bildirebilirsiniz. Aşağıdaki örnek, varsayılan ileti eşlemesi ve her bir işleyici işlevi içeren bir diğer ileti eşlemesi gösterir:
+Varsayılan ileti eşlemesine ek olarak, [ALT_MSG_MAP](#alt_msg_map)ile alternatif bir ileti eşlemesi tanımlayabilirsiniz. İleti haritasını her zaman BEGIN_MSG_MAP ile başlatın. Ardından, sonraki alternatif ileti eşlemelerini bildirebilirsiniz. Aşağıdaki örnek, her biri bir işleyici işlevi içeren varsayılan ileti eşlemesini ve bir alternatif ileti haritasını gösterir:
 
 [!code-cpp[NVC_ATL_Windowing#98](../../atl/codesnippet/cpp/message-map-macros-atl_1.h)]
 
-Sonraki örnek, iki farklı ileti eşlemeleri gösterir. Varsayılan ileti eşlemesi yok.
+Sonraki örnekte, iki alternatif ileti haritası gösterilmektedir. Varsayılan ileti eşlemesi boş.
 
 [!code-cpp[NVC_ATL_Windowing#99](../../atl/codesnippet/cpp/message-map-macros-atl_2.h)]
 
-[END_MSG_MAP](#end_msg_map) makrosu ileti eşlemede sonunu işaretler. Her zaman tam olarak bir örneği BEGIN_MSG_MAP ve END_MSG_MAP dikkat edin.
+[End_msg_map](#end_msg_map) makrosu ileti eşlemesinin sonunu işaretler. Her zaman tam olarak bir BEGIN_MSG_MAP ve END_MSG_MAP örneği olduğunu unutmayın.
 
-ATL ileti eşlemeleri hakkında daha fazla bilgi için bkz. [ileti eşlemeleri](../../atl/message-maps-atl.md).
+ATL 'de ileti eşlemelerini kullanma hakkında daha fazla bilgi için bkz. [Ileti haritaları](../../atl/message-maps-atl.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlwin.h
+**Üstbilgi:** atlwin. h
 
-##  <a name="chain_msg_map_alt"></a>  CHAIN_MSG_MAP_ALT
+##  <a name="chain_msg_map_alt"></a>CHAIN_MSG_MAP_ALT
 
-Bir giriş ileti eşlemede tanımlar.
+İleti eşlemesindeki bir girdiyi tanımlar.
 
 ```
 CHAIN_MSG_MAP_ALT(theChainClass, msgMapID)
@@ -218,27 +218,27 @@ CHAIN_MSG_MAP_ALT(theChainClass, msgMapID)
 ### <a name="parameters"></a>Parametreler
 
 *theChainClass*<br/>
-[in] İleti eşlemesi içeren temel sınıfın adı.
+'ndaki İleti haritasını içeren temel sınıfın adı.
 
 *msgMapID*<br/>
-[in] İleti eşleme tanımlayıcısı.
+'ndaki İleti eşleme tanımlayıcısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-CHAIN_MSG_MAP_ALT bir temel sınıfta bir diğer ileti haritasına iletileri yönlendirir. Bu alternatif ileti eşlemesi ile bildirilen gerekir [ALT_MSG_MAP(msgMapID)](#alt_msg_map). Temel sınıfın varsayılan ileti haritasına iletileri yönlendirmek için (ile bildirilen [BEGIN_MSG_MAP](#begin_msg_map)), CHAIN_MSG_MAP kullanın. Bir örnek için bkz. [CHAIN_MSG_MAP](#chain_msg_map).
+CHAIN_MSG_MAP_ALT, iletileri bir temel sınıfta alternatif bir ileti eşlemesine yönlendirir. Bu alternatif ileti haritasını [ALT_MSG_MAP (msgMapID)](#alt_msg_map)ile bildirmeli. İletileri bir temel sınıfın varsayılan ileti eşlemesine ( [BEGIN_MSG_MAP](#begin_msg_map)ile bildirilmiştir) yönlendirmek IÇIN, CHAIN_MSG_MAP kullanın. Bir örnek için bkz. [CHAIN_MSG_MAP](#chain_msg_map).
 
 > [!NOTE]
->  Her zaman bir ileti eşlemesi BEGIN_MSG_MAP ile başlar. Ardından, sonraki diğer ileti eşlemeleri ile ALT_MSG_MAP bildirebilirsiniz. [END_MSG_MAP](#end_msg_map) makrosu ileti eşlemede sonunu işaretler. Her ileti eşlemesi BEGIN_MSG_MAP ve END_MSG_MAP tek bir örneği olması gerekir.
+>  İleti haritasını her zaman BEGIN_MSG_MAP ile başlatın. Daha sonra, ALT_MSG_MAP ile sonraki alternatif ileti eşlemelerini bildirebilirsiniz. [End_msg_map](#end_msg_map) makrosu ileti eşlemesinin sonunu işaretler. Her ileti eşlemesinin yalnızca bir BEGIN_MSG_MAP ve END_MSG_MAP örneği olmalıdır.
 
-ATL ileti eşlemeleri hakkında daha fazla bilgi için bkz. [ileti eşlemeleri](../../atl/message-maps-atl.md).
+ATL 'de ileti eşlemelerini kullanma hakkında daha fazla bilgi için bkz. [Ileti haritaları](../../atl/message-maps-atl.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlwin.h
+**Üstbilgi:** atlwin. h
 
-##  <a name="chain_msg_map_alt_member"></a>  CHAIN_MSG_MAP_ALT_MEMBER
+##  <a name="chain_msg_map_alt_member"></a>CHAIN_MSG_MAP_ALT_MEMBER
 
-Bir giriş ileti eşlemede tanımlar.
+İleti eşlemesindeki bir girdiyi tanımlar.
 
 ```
 CHAIN_MSG_MAP_ALT_MEMBER(theChainMember, msgMapID)
@@ -247,27 +247,27 @@ CHAIN_MSG_MAP_ALT_MEMBER(theChainMember, msgMapID)
 ### <a name="parameters"></a>Parametreler
 
 *theChainMember*<br/>
-[in] İleti eşlemesi içeren veri üyesinin adı.
+'ndaki İleti haritasını içeren veri üyesinin adı.
 
 *msgMapID*<br/>
-[in] İleti eşleme tanımlayıcısı.
+'ndaki İleti eşleme tanımlayıcısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-CHAIN_MSG_MAP_ALT_MEMBER veri üyesi bir diğer ileti haritasına iletileri yönlendirir. Bu alternatif ileti eşlemesi ile bildirilen gerekir [ALT_MSG_MAP(msgMapID)](#alt_msg_map). Bir veri üyesinin varsayılan ileti haritasına iletileri yönlendirmek için (ile bildirilen [BEGIN_MSG_MAP](#begin_msg_map)), CHAIN_MSG_MAP_MEMBER kullanın. Bir örnek için bkz. [CHAIN_MSG_MAP_MEMBER](#chain_msg_map_member).
+CHAIN_MSG_MAP_ALT_MEMBER, iletileri bir veri üyesinde alternatif bir ileti eşlemesine yönlendirir. Bu alternatif ileti haritasını [ALT_MSG_MAP (msgMapID)](#alt_msg_map)ile bildirmeli. İletileri bir veri üyesinin varsayılan ileti eşlemesine ( [BEGIN_MSG_MAP](#begin_msg_map)ile bildirilmiştir) yönlendirmek IÇIN, CHAIN_MSG_MAP_MEMBER kullanın. Bir örnek için bkz. [CHAIN_MSG_MAP_MEMBER](#chain_msg_map_member).
 
 > [!NOTE]
->  Her zaman bir ileti eşlemesi BEGIN_MSG_MAP ile başlar. Ardından, sonraki diğer ileti eşlemeleri ile ALT_MSG_MAP bildirebilirsiniz. [END_MSG_MAP](#end_msg_map) makrosu ileti eşlemede sonunu işaretler. Her ileti eşlemesi BEGIN_MSG_MAP ve END_MSG_MAP tek bir örneği olması gerekir.
+>  İleti haritasını her zaman BEGIN_MSG_MAP ile başlatın. Daha sonra, ALT_MSG_MAP ile sonraki alternatif ileti eşlemelerini bildirebilirsiniz. [End_msg_map](#end_msg_map) makrosu ileti eşlemesinin sonunu işaretler. Her ileti eşlemesinin yalnızca bir BEGIN_MSG_MAP ve END_MSG_MAP örneği olmalıdır.
 
-ATL ileti eşlemeleri hakkında daha fazla bilgi için bkz. [ileti eşlemeleri](../../atl/message-maps-atl.md).
+ATL 'de ileti eşlemelerini kullanma hakkında daha fazla bilgi için bkz. [Ileti haritaları](../../atl/message-maps-atl.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlwin.h
+**Üstbilgi:** atlwin. h
 
-##  <a name="chain_msg_map"></a>  CHAIN_MSG_MAP
+##  <a name="chain_msg_map"></a>CHAIN_MSG_MAP
 
-Bir giriş ileti eşlemede tanımlar.
+İleti eşlemesindeki bir girdiyi tanımlar.
 
 ```
 CHAIN_MSG_MAP(theChainClass)
@@ -276,36 +276,36 @@ CHAIN_MSG_MAP(theChainClass)
 ### <a name="parameters"></a>Parametreler
 
 *theChainClass*<br/>
-[in] İleti eşlemesi içeren temel sınıfın adı.
+'ndaki İleti haritasını içeren temel sınıfın adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Temel sınıfın varsayılan ileti haritasına iletileri CHAIN_MSG_MAP yönlendirir (ile bildirilen [BEGIN_MSG_MAP](#begin_msg_map)). Temel sınıfın diğer ileti haritasına iletileri yönlendirmek için (ile bildirilen [ALT_MSG_MAP](#alt_msg_map)), kullanın [CHAIN_MSG_MAP_ALT](#chain_msg_map_alt).
+CHAIN_MSG_MAP, iletileri bir temel sınıfın varsayılan ileti eşlemesine ( [BEGIN_MSG_MAP](#begin_msg_map)ile belirtilen) yönlendirir. İletileri bir temel sınıfın alternatif ileti eşlemesine ( [ALT_MSG_MAP](#alt_msg_map)ile belirtilen) yönlendirmek Için, [CHAIN_MSG_MAP_ALT](#chain_msg_map_alt)kullanın.
 
 > [!NOTE]
->  Her zaman bir ileti eşlemesi BEGIN_MSG_MAP ile başlar. Ardından, sonraki diğer ileti eşlemeleri ile ALT_MSG_MAP bildirebilirsiniz. [END_MSG_MAP](#end_msg_map) makrosu ileti eşlemede sonunu işaretler. Her ileti eşlemesi BEGIN_MSG_MAP ve END_MSG_MAP tek bir örneği olması gerekir.
+>  İleti haritasını her zaman BEGIN_MSG_MAP ile başlatın. Daha sonra, ALT_MSG_MAP ile sonraki alternatif ileti eşlemelerini bildirebilirsiniz. [End_msg_map](#end_msg_map) makrosu ileti eşlemesinin sonunu işaretler. Her ileti eşlemesinin yalnızca bir BEGIN_MSG_MAP ve END_MSG_MAP örneği olmalıdır.
 
-ATL ileti eşlemeleri hakkında daha fazla bilgi için bkz. [ileti eşlemeleri](../../atl/message-maps-atl.md).
+ATL 'de ileti eşlemelerini kullanma hakkında daha fazla bilgi için bkz. [Ileti haritaları](../../atl/message-maps-atl.md).
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATL_Windowing#107](../../atl/codesnippet/cpp/message-map-macros-atl_4.h)]
 
-Bu örnekte aşağıda gösterilmektedir:
+Bu örnekte aşağıdakiler gösterilmektedir:
 
-- Bir pencere yordamını kullanıyorsa `CMyClass`ait varsayılan ileti eşlemesi ve `OnPaint` bir ileti, ileti yönlendirilir tanıtıcısı yok `CMyBaseClass`'s işleme için varsayılan ileti eşlemesi.
+- Bir pencere yordamı varsayılan ileti eşlemesini `CMyClass`kullanıyorsa ve `OnPaint` bir iletiyi işlemezse ileti, işlenmek üzere varsayılan ileti eşlemesine yönlendirilir `CMyBaseClass`.
 
-- Pencere yordamı ilk diğer ileti eşlemede kullanıp kullanmadığını `CMyClass`, tüm iletileri yönlendirilmiş `CMyBaseClass`ait varsayılan ileti eşlemesi.
+- Bir pencere yordamı ' de `CMyClass`ilk alternatif ileti haritasını kullanıyorsa, tüm iletiler varsayılan ileti eşlemesine `CMyBaseClass`yönlendirilir.
 
-- Bir pencere yordamını kullanıyorsa `CMyClass`ikinci alternatif bir ileti kullanıcının harita ve `OnChar` bir ileti, ileti belirtilen diğer ileti eşlemede yönlendirilir tanıtıcı mu `CMyBaseClass`. `CMyBaseClass` Bu ileti eşlemesi ALT_MSG_MAP(1) ile bildirilen gerekir.
+- Bir pencere yordamı, ikinci alternatif `CMyClass`ileti eşlemesini kullanıyorsa ve `OnChar` bir iletiyi işlemezse ileti, içindeki `CMyBaseClass`belirtilen alternatif ileti eşlemesine yönlendirilir. `CMyBaseClass`Bu ileti haritasını ALT_MSG_MAP (1) ile bildirmeli.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlwin.h
+**Üstbilgi:** atlwin. h
 
-##  <a name="chain_msg_map_dynamic"></a>  CHAIN_MSG_MAP_DYNAMIC
+##  <a name="chain_msg_map_dynamic"></a>CHAIN_MSG_MAP_DYNAMIC
 
-Bir giriş ileti eşlemede tanımlar.
+İleti eşlemesindeki bir girdiyi tanımlar.
 
 ```
 CHAIN_MSG_MAP_DYNAMIC(dynaChainID)
@@ -314,24 +314,24 @@ CHAIN_MSG_MAP_DYNAMIC(dynaChainID)
 ### <a name="parameters"></a>Parametreler
 
 *dynaChainID*<br/>
-[in] Bir nesnenin ileti eşlemesi için benzersiz tanımlayıcı.
+'ndaki Bir nesnenin ileti eşlemesi için benzersiz tanımlayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-CHAIN_MSG_MAP_DYNAMIC çalışma zamanında, başka bir nesneye varsayılan ileti haritasına iletileri yönlendirir. Nesne ve onun ileti eşlemesi ile ilişkili *dynaChainID*, aracılığıyla tanımladığınız [CDynamicChain::SetChainEntry](cdynamicchain-class.md#setchainentry). Sizin sınıfınızdan türetilmelidir `CDynamicChain` CHAIN_MSG_MAP_DYNAMIC kullanmak için. Bir örnek için bkz. [CDynamicChain](../../atl/reference/cdynamicchain-class.md) genel bakış.
+CHAIN_MSG_MAP_DYNAMIC, çalışma zamanında iletileri başka bir nesnede varsayılan ileti eşlemesine yönlendirir. Nesnesi ve ileti eşlemesi, [Cdynamiczincirde:: SetChainEntry](cdynamicchain-class.md#setchainentry)aracılığıyla tanımladığınız *dynaChainID*ile ilişkilendirilir. CHAIN_MSG_MAP_DYNAMIC kullanabilmeniz için sınıfınızı ' den `CDynamicChain` türetmeniz gerekir. Bir örnek için, [Cdynamiczincirine](../../atl/reference/cdynamicchain-class.md) genel bakış bölümüne bakın.
 
 > [!NOTE]
->  Her zaman bir ileti eşlemesi ile başlayan [BEGIN_MSG_MAP](#begin_msg_map). Ardından, sonraki diğer ileti eşlemeleri ile ALT_MSG_MAP bildirebilirsiniz. [END_MSG_MAP](#end_msg_map) makrosu ileti eşlemede sonunu işaretler. Her ileti eşlemesi BEGIN_MSG_MAP ve END_MSG_MAP tek bir örneği olması gerekir.
+>  İleti haritasını her zaman [BEGIN_MSG_MAP](#begin_msg_map)ile başlatın. Daha sonra, ALT_MSG_MAP ile sonraki alternatif ileti eşlemelerini bildirebilirsiniz. [End_msg_map](#end_msg_map) makrosu ileti eşlemesinin sonunu işaretler. Her ileti eşlemesinin yalnızca bir BEGIN_MSG_MAP ve END_MSG_MAP örneği olmalıdır.
 
-ATL ileti eşlemeleri hakkında daha fazla bilgi için bkz. [ileti eşlemeleri](../../atl/message-maps-atl.md).
+ATL 'de ileti eşlemelerini kullanma hakkında daha fazla bilgi için bkz. [Ileti haritaları](../../atl/message-maps-atl.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlwin.h
+**Üstbilgi:** atlwin. h
 
-##  <a name="chain_msg_map_member"></a>  CHAIN_MSG_MAP_MEMBER
+##  <a name="chain_msg_map_member"></a>CHAIN_MSG_MAP_MEMBER
 
-Bir giriş ileti eşlemede tanımlar.
+İleti eşlemesindeki bir girdiyi tanımlar.
 
 ```
 CHAIN_MSG_MAP_MEMBER(theChainMember)
@@ -340,36 +340,36 @@ CHAIN_MSG_MAP_MEMBER(theChainMember)
 ### <a name="parameters"></a>Parametreler
 
 *theChainMember*<br/>
-[in] İleti eşlemesi içeren veri üyesinin adı.
+'ndaki İleti haritasını içeren veri üyesinin adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir veri üyesinin varsayılan ileti haritasına iletileri CHAIN_MSG_MAP_MEMBER yönlendirir (ile bildirilen [BEGIN_MSG_MAP](#begin_msg_map)). Bir veri üyesinin diğer ileti haritasına iletileri yönlendirmek için (ile bildirilen [ALT_MSG_MAP](#alt_msg_map)), kullanın [CHAIN_MSG_MAP_ALT_MEMBER](#chain_msg_map_alt_member).
+CHAIN_MSG_MAP_MEMBER, iletileri bir veri üyesinin varsayılan ileti eşlemesine ( [BEGIN_MSG_MAP](#begin_msg_map)ile belirtilen) yönlendirir. İletileri bir veri üyesinin alternatif ileti eşlemesine ( [ALT_MSG_MAP](#alt_msg_map)ile belirtilen) yönlendirmek Için, [CHAIN_MSG_MAP_ALT_MEMBER](#chain_msg_map_alt_member)kullanın.
 
 > [!NOTE]
->  Her zaman bir ileti eşlemesi BEGIN_MSG_MAP ile başlar. Ardından, sonraki diğer ileti eşlemeleri ile ALT_MSG_MAP bildirebilirsiniz. [END_MSG_MAP](#end_msg_map) makrosu ileti eşlemede sonunu işaretler. Her ileti eşlemesi BEGIN_MSG_MAP ve END_MSG_MAP tek bir örneği olması gerekir.
+>  İleti haritasını her zaman BEGIN_MSG_MAP ile başlatın. Daha sonra, ALT_MSG_MAP ile sonraki alternatif ileti eşlemelerini bildirebilirsiniz. [End_msg_map](#end_msg_map) makrosu ileti eşlemesinin sonunu işaretler. Her ileti eşlemesinin yalnızca bir BEGIN_MSG_MAP ve END_MSG_MAP örneği olmalıdır.
 
-ATL ileti eşlemeleri hakkında daha fazla bilgi için bkz. [ileti eşlemeleri](../../atl/message-maps-atl.md).
+ATL 'de ileti eşlemelerini kullanma hakkında daha fazla bilgi için bkz. [Ileti haritaları](../../atl/message-maps-atl.md).
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATL_Windowing#108](../../atl/codesnippet/cpp/message-map-macros-atl_5.h)]
 
-Bu örnekte aşağıda gösterilmektedir:
+Bu örnekte aşağıdakiler gösterilmektedir:
 
-- Bir pencere yordamını kullanıyorsa `CMyClass`ait varsayılan ileti eşlemesi ve `OnPaint` bir ileti, ileti yönlendirilir tanıtıcısı yok `m_obj`'s işleme için varsayılan ileti eşlemesi.
+- Bir pencere yordamı varsayılan ileti eşlemesini `CMyClass`kullanıyorsa ve `OnPaint` bir iletiyi işlemezse ileti, işlenmek üzere varsayılan ileti eşlemesine yönlendirilir `m_obj`.
 
-- Pencere yordamı ilk diğer ileti eşlemede kullanıp kullanmadığını `CMyClass`, tüm iletileri yönlendirilmiş `m_obj`ait varsayılan ileti eşlemesi.
+- Bir pencere yordamı ' de `CMyClass`ilk alternatif ileti haritasını kullanıyorsa, tüm iletiler varsayılan ileti eşlemesine `m_obj`yönlendirilir.
 
-- Bir pencere yordamını kullanıyorsa `CMyClass`ikinci alternatif bir ileti kullanıcının harita ve `OnChar` bir ileti, ileti belirtilen diğer ileti Haritası yönlendirilmiş tanıtıcı mu `m_obj`. Sınıf `CMyContainedClass` bu ileti eşlemesi ALT_MSG_MAP(1) ile bildirilen gerekir.
+- Bir pencere yordamı, ikinci alternatif `CMyClass`ileti eşlemesini kullanıyorsa ve `OnChar` bir iletiyi işlemezse ileti, `m_obj`belirtilen alternatif ileti eşlemesine yönlendirilir. Sınıf `CMyContainedClass` , ALT_MSG_MAP (1) ile bu ileti haritasını bildirmeli.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlwin.h
+**Üstbilgi:** atlwin. h
 
-##  <a name="command_code_handler"></a>  COMMAND_CODE_HANDLER
+##  <a name="command_code_handler"></a>COMMAND_CODE_HANDLER
 
-Benzer şekilde [COMMAND_HANDLER](#command_handler), ancak eşleyen bir [WM_COMMAND](/windows/desktop/menurc/wm-command) ileti tabanlı yalnızca bildirim kod.
+[COMMAND_HANDLER](#command_handler)benzer, ancak yalnızca bildirim koduna dayalı bir [WM_COMMAND](/windows/win32/menurc/wm-command) iletisini eşler.
 
 ```
 COMMAND_CODE_HANDLER(code, func)
@@ -377,19 +377,19 @@ COMMAND_CODE_HANDLER(code, func)
 
 ### <a name="parameters"></a>Parametreler
 
-*Kod*<br/>
-[in] Uyarı kodu.
+*kodudur*<br/>
+'ndaki Bildirim kodu.
 
-*FUNC*<br/>
-[in] İleti işleyici işlevinin adı.
+*func*<br/>
+'ndaki İleti işleyici işlevinin adı.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlwin.h
+**Üstbilgi:** atlwin. h
 
-##  <a name="command_handler"></a>  COMMAND_HANDLER
+##  <a name="command_handler"></a>COMMAND_HANDLER
 
-Bir giriş ileti eşlemede tanımlar.
+İleti eşlemesindeki bir girdiyi tanımlar.
 
 ```
 COMMAND_HANDLER(id, code, func)
@@ -398,40 +398,40 @@ COMMAND_HANDLER(id, code, func)
 ### <a name="parameters"></a>Parametreler
 
 *id*<br/>
-[in] Menü öğesi, denetim ya da Hızlandırıcı tanımlayıcısı.
+'ndaki Menü öğesinin, denetimin veya hızlandırıcının tanımlayıcısı.
 
-*Kod*<br/>
-[in] Uyarı kodu.
+*kodudur*<br/>
+'ndaki Bildirim kodu.
 
-*FUNC*<br/>
-[in] İleti işleyici işlevinin adı.
+*func*<br/>
+'ndaki İleti işleyici işlevinin adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-COMMAND_HANDLER eşleyen bir [WM_COMMAND](/windows/desktop/menurc/wm-command) bildirim kodu ve denetim tanımlayıcısına göre belirtilen işleyici işlevine ileti. Örneğin:
+COMMAND_HANDLER, bir [WM_COMMAND](/windows/win32/menurc/wm-command) iletisini, bildirim koduna ve denetim tanımlayıcısına göre belirtilen işleyici işlevine eşler. Örneğin:
 
 [!code-cpp[NVC_ATL_Windowing#119](../../atl/codesnippet/cpp/message-map-macros-atl_6.h)]
 
-COMMAND_HANDLER makroda belirtilen herhangi bir işlev gibi tanımlanmış olması gerekir:
+Bir COMMAND_HANDLER makrosunda belirtilen herhangi bir işlev aşağıdaki şekilde tanımlanmalıdır:
 
 `LRESULT CommandHandler(WORD wNotifyCode, WORD wID, HWND hWndCtl, BOOL& bHandled);`
 
-İleti eşleme kümeleri `bHandled` önce true `CommandHandler` çağrılır. Varsa `CommandHandler` tam iletiyi işlemez ayarlamanız gerekir `bHandled` ihtiyaç daha fazla işleme belirtmek için false.
+İleti eşlemesi çağrılmadan önce `bHandled` `CommandHandler` true olarak ayarlanır. İletiyi tam olarak işlemezse, iletinin daha fazla işleme ihtiyacı olduğunu göstermek için false olarak ayarlanmalıdır `bHandled`. `CommandHandler`
 
 > [!NOTE]
->  Her zaman bir ileti eşlemesi ile başlayan [BEGIN_MSG_MAP](#begin_msg_map). Ardından, sonraki diğer ileti eşlemeleri ile bildirebilirsiniz [ALT_MSG_MAP](#alt_msg_map). [END_MSG_MAP](#end_msg_map) makrosu ileti eşlemede sonunu işaretler. Her ileti eşlemesi BEGIN_MSG_MAP ve END_MSG_MAP tek bir örneği olması gerekir.
+>  İleti haritasını her zaman [BEGIN_MSG_MAP](#begin_msg_map)ile başlatın. Daha sonra, [ALT_MSG_MAP](#alt_msg_map)ile sonraki alternatif ileti eşlemelerini bildirebilirsiniz. [End_msg_map](#end_msg_map) makrosu ileti eşlemesinin sonunu işaretler. Her ileti eşlemesinin yalnızca bir BEGIN_MSG_MAP ve END_MSG_MAP örneği olmalıdır.
 
-COMMAND_HANDLER ek olarak, kullandığınız [MESSAGE_HANDLER](#message_handler) tanımlayıcı veya kod bakılmaksızın WM_COMMAND ileti eşlemek için. Bu durumda, `MESSAGE_HANDLER(WM_COMMAND, OnHandlerFunction)` tüm WM_COMMAND iletileri yönlendirecek `OnHandlerFunction`.
+COMMAND_HANDLER 'e ek olarak, bir tanımlayıcı veya kodla ilgili olmadan WM_COMMAND iletisini eşlemek için [message_handler](#message_handler) kullanabilirsiniz. Bu durumda, `MESSAGE_HANDLER(WM_COMMAND, OnHandlerFunction)` tüm WM_COMMAND iletilerini öğesine `OnHandlerFunction`yönlendirir.
 
-ATL ileti eşlemeleri hakkında daha fazla bilgi için bkz. [ileti eşlemeleri](../../atl/message-maps-atl.md).
+ATL 'de ileti eşlemelerini kullanma hakkında daha fazla bilgi için bkz. [Ileti haritaları](../../atl/message-maps-atl.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlwin.h
+**Üstbilgi:** atlwin. h
 
-##  <a name="command_id_handler"></a>  COMMAND_ID_HANDLER
+##  <a name="command_id_handler"></a>COMMAND_ID_HANDLER
 
-Benzer şekilde [COMMAND_HANDLER](#command_handler), ancak eşleyen bir [WM_COMMAND](/windows/desktop/menurc/wm-command) ileti tabanlı menü öğesi, denetim ya da Hızlandırıcı, yalnızca tanımlayıcısı.
+[COMMAND_HANDLER](#command_handler)benzer, ancak yalnızca menü öğesi, denetim veya hızlandırıcı tanıtıcısına dayalı bir [WM_COMMAND](/windows/win32/menurc/wm-command) iletisini eşler.
 
 ```
 COMMAND_ID_HANDLER(id, func)
@@ -440,18 +440,18 @@ COMMAND_ID_HANDLER(id, func)
 ### <a name="parameters"></a>Parametreler
 
 *id*<br/>
-[in] Menü öğesi, denetim ya da Hızlandırıcı iletiyi gönderen tanımlayıcısı.
+'ndaki İletiyi gönderen menü öğesinin, denetimin veya hızlandırıcının tanımlayıcısı.
 
-*FUNC*<br/>
-[in] İleti işleyici işlevinin adı.
+*func*<br/>
+'ndaki İleti işleyici işlevinin adı.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlwin.h
+**Üstbilgi:** atlwin. h
 
-##  <a name="command_range_code_handler"></a>  COMMAND_RANGE_CODE_HANDLER
+##  <a name="command_range_code_handler"></a>COMMAND_RANGE_CODE_HANDLER
 
-Benzer şekilde [COMMAND_RANGE_HANDLER](#command_range_handler), ancak haritaları [WM_COMMAND](/windows/desktop/menurc/wm-command) iletileri kod içeren bir özel bildirim denetimlerini aralığından tek işleyici işlevi.
+[COMMAND_RANGE_HANDLER](#command_range_handler)gibi, ancak belirli bir bildirim koduna sahip [WM_COMMAND](/windows/win32/menurc/wm-command) iletilerini bir denetim aralığından tek bir işleyici işlevine eşler.
 
 ```
 COMMAND_RANGE_CODE_HANDLER(idFirst, idLast, code, func)
@@ -459,29 +459,29 @@ COMMAND_RANGE_CODE_HANDLER(idFirst, idLast, code, func)
 
 ### <a name="parameters"></a>Parametreler
 
-*idFirst*<br/>
-[in] Bir aralıkta denetimi tanımlayıcıları başlangıcını işaretler.
+*Önce ıdden*<br/>
+'ndaki Bitişik denetim tanımlayıcılarının aralığının başlangıcını işaretler.
 
-*idLast*<br/>
-[in] Denetim tanımlayıcıların bitişik bir aralığın sonunu işaretler.
+*ıdlast*<br/>
+'ndaki Bitişik denetim tanımlayıcılarının aralığının sonunu işaretler.
 
-*Kod*<br/>
-[in] Uyarı kodu.
+*kodudur*<br/>
+'ndaki Bildirim kodu.
 
-*FUNC*<br/>
-[in] İleti işleyici işlevinin adı.
+*func*<br/>
+'ndaki İleti işleyici işlevinin adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu aralık, menü öğesi, denetim ya da ileti gönderilirken Hızlandırıcı tanıtıcısı temel alır.
+Bu Aralık, ileti gönderen menü öğesi, denetim veya hızlandırıcı tanımlayıcısını temel alır.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlwin.h
+**Üstbilgi:** atlwin. h
 
-##  <a name="command_range_handler"></a>  COMMAND_RANGE_HANDLER
+##  <a name="command_range_handler"></a>COMMAND_RANGE_HANDLER
 
-Benzer şekilde [COMMAND_HANDLER](#command_handler), ancak haritaları [WM_COMMAND](/windows/desktop/menurc/wm-command) iletileri denetimleri aralığından tek işleyici işlevi.
+[COMMAND_HANDLER](#command_handler)benzer, ancak bir denetim aralığından [WM_COMMAND](/windows/win32/menurc/wm-command) iletilerini tek bir işleyici işlevine eşler.
 
 ```
 COMMAND_RANGE_HANDLER( idFirst, idLast, func)
@@ -489,26 +489,26 @@ COMMAND_RANGE_HANDLER( idFirst, idLast, func)
 
 ### <a name="parameters"></a>Parametreler
 
-*idFirst*<br/>
-[in] Bir aralıkta denetimi tanımlayıcıları başlangıcını işaretler.
+*Önce ıdden*<br/>
+'ndaki Bitişik denetim tanımlayıcılarının aralığının başlangıcını işaretler.
 
-*idLast*<br/>
-[in] Denetim tanımlayıcıların bitişik bir aralığın sonunu işaretler.
+*ıdlast*<br/>
+'ndaki Bitişik denetim tanımlayıcılarının aralığının sonunu işaretler.
 
-*FUNC*<br/>
-[in] İleti işleyici işlevinin adı.
+*func*<br/>
+'ndaki İleti işleyici işlevinin adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu aralık, menü öğesi, denetim ya da ileti gönderilirken Hızlandırıcı tanıtıcısı temel alır.
+Bu Aralık, ileti gönderen menü öğesi, denetim veya hızlandırıcı tanımlayıcısını temel alır.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlwin.h
+**Üstbilgi:** atlwin. h
 
-##  <a name="declare_empty_msg_map"></a>  DECLARE_EMPTY_MSG_MAP
+##  <a name="declare_empty_msg_map"></a>DECLARE_EMPTY_MSG_MAP
 
-Bir boş ileti eşlemesi bildirir.
+Boş bir ileti eşlemesi bildirir.
 
 ```
 DECLARE_EMPTY_MSG_MAP()
@@ -516,13 +516,13 @@ DECLARE_EMPTY_MSG_MAP()
 
 ### <a name="remarks"></a>Açıklamalar
 
-DECLARE_EMPTY_MSG_MAP makroları çağıran bir makrodur kolaylık [BEGIN_MSG_MAP](#begin_msg_map) ve [END_MSG_MAP](#end_msg_map) bir boş ileti eşlemesi oluşturmak için:
+DECLARE_EMPTY_MSG_MAP, boş bir ileti eşlemesi oluşturmak için [BEGIN_MSG_MAP](#begin_msg_map) ve [end_msg_map](#end_msg_map) makrolarını çağıran kolay bir makrodur:
 
 [!code-cpp[NVC_ATL_Windowing#122](../../atl/codesnippet/cpp/message-map-macros-atl_7.h)]
 
-##  <a name="default_reflection_handler"></a>  DEFAULT_REFLECTION_HANDLER
+##  <a name="default_reflection_handler"></a>DEFAULT_REFLECTION_HANDLER
 
-Yansımış iletileri alacak alt pencerenin (Denetim) için bir varsayılan işleyici sağlar. işleyici düzgün bir şekilde işlenmemiş iletiler geçer `DefWindowProc`.
+, Yansıtılan iletileri alacak alt pencere (denetim) için varsayılan bir işleyici sağlar; işleyici işlenmeyen iletileri öğesine doğru bir şekilde `DefWindowProc`geçilecektir.
 
 ```
 DEFAULT_REFLECTION_HANDLER()
@@ -530,11 +530,11 @@ DEFAULT_REFLECTION_HANDLER()
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlwin.h
+**Üstbilgi:** atlwin. h
 
-##  <a name="end_msg_map"></a>  END_MSG_MAP
+##  <a name="end_msg_map"></a>END_MSG_MAP
 
-İleti eşlemesi sonunu işaretler.
+İleti eşlemesinin sonunu işaretler.
 
 ```
 END_MSG_MAP()
@@ -542,29 +542,29 @@ END_MSG_MAP()
 
 ### <a name="remarks"></a>Açıklamalar
 
-Her zaman [BEGIN_MSG_MAP](#begin_msg_map) makrosu ileti eşlemesi başlangıcını işaretler. Kullanım [ALT_MSG_MAP](#alt_msg_map) sonraki diğer ileti eşlemeleri bildirmek için.
+İleti eşlemesinin başlangıcını işaretlemek için her zaman [BEGIN_MSG_MAP](#begin_msg_map) makrosunu kullanın. Sonraki alternatif ileti eşlemelerini bildirmek için [ALT_MSG_MAP](#alt_msg_map) kullanın.
 
-Her zaman tam olarak bir örneği BEGIN_MSG_MAP ve END_MSG_MAP dikkat edin.
+Her zaman tam olarak bir BEGIN_MSG_MAP ve END_MSG_MAP örneği olduğunu unutmayın.
 
-ATL ileti eşlemeleri hakkında daha fazla bilgi için bkz. [ileti eşlemeleri](../../atl/message-maps-atl.md).
+ATL 'de ileti eşlemelerini kullanma hakkında daha fazla bilgi için bkz. [Ileti haritaları](../../atl/message-maps-atl.md).
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, varsayılan ileti eşlemesi ve her bir işleyici işlevi içeren bir diğer ileti eşlemesi gösterir:
+Aşağıdaki örnek, her biri bir işleyici işlevi içeren varsayılan ileti eşlemesini ve bir alternatif ileti haritasını gösterir:
 
 [!code-cpp[NVC_ATL_Windowing#98](../../atl/codesnippet/cpp/message-map-macros-atl_1.h)]
 
-Sonraki örnek, iki farklı ileti eşlemeleri gösterir. Varsayılan ileti eşlemesi yok.
+Sonraki örnekte, iki alternatif ileti haritası gösterilmektedir. Varsayılan ileti eşlemesi boş.
 
 [!code-cpp[NVC_ATL_Windowing#99](../../atl/codesnippet/cpp/message-map-macros-atl_2.h)]
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlwin.h
+**Üstbilgi:** atlwin. h
 
-##  <a name="forward_notifications"></a>  FORWARD_NOTIFICATIONS
+##  <a name="forward_notifications"></a>FORWARD_NOTIFICATIONS
 
-Bildirim iletilerini üst penceresine iletir.
+Bildirim iletilerini ana pencereye iletir.
 
 ```
 FORWARD_NOTIFICATIONS()
@@ -572,15 +572,15 @@ FORWARD_NOTIFICATIONS()
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu makro, ileti eşlemesi bir parçası olarak belirtin.
+İleti Haritalarınızın bir parçası olarak bu makroyu belirtin.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlwin.h
+**Üstbilgi:** atlwin. h
 
-##  <a name="message_handler"></a>  MESSAGE_HANDLER
+##  <a name="message_handler"></a>MESSAGE_HANDLER
 
-Bir giriş ileti eşlemede tanımlar.
+İleti eşlemesindeki bir girdiyi tanımlar.
 
 ```
 MESSAGE_HANDLER( msg, func )
@@ -588,28 +588,28 @@ MESSAGE_HANDLER( msg, func )
 
 ### <a name="parameters"></a>Parametreler
 
-*ileti*<br/>
-[in] Windows ileti.
+*MS*<br/>
+'ndaki Windows iletisi.
 
-*FUNC*<br/>
-[in] İleti işleyici işlevinin adı.
+*func*<br/>
+'ndaki İleti işleyici işlevinin adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-MESSAGE_HANDLER belirtilen işleyici işlevine bir Windows ileti eşlemeleri.
+MESSAGE_HANDLER, bir Windows iletisini belirtilen işleyici işlevine eşler.
 
-MESSAGE_HANDLER makroda belirtilen herhangi bir işlev gibi tanımlanmış olması gerekir:
+Bir MESSAGE_HANDLER makrosunda belirtilen herhangi bir işlev aşağıdaki şekilde tanımlanmalıdır:
 
 `LRESULT MessageHandler(UINT uMsg, WPARAM wParam, LPARAM lParam, BOOL& bHandled);`
 
-İleti eşleme kümeleri `bHandled` önce true `MessageHandler` çağrılır. Varsa `MessageHandler` tam iletiyi işlemez ayarlamanız gerekir `bHandled` ihtiyaç daha fazla işleme belirtmek için false.
+İleti eşlemesi çağrılmadan önce `bHandled` `MessageHandler` true olarak ayarlanır. İletiyi tam olarak işlemezse, iletinin daha fazla işleme ihtiyacı olduğunu göstermek için false olarak ayarlanmalıdır `bHandled`. `MessageHandler`
 
 > [!NOTE]
->  Her zaman bir ileti eşlemesi ile başlayan [BEGIN_MSG_MAP](#begin_msg_map). Ardından, sonraki diğer ileti eşlemeleri ile bildirebilirsiniz [ALT_MSG_MAP](#alt_msg_map). [END_MSG_MAP](#end_msg_map) makrosu ileti eşlemede sonunu işaretler. Her ileti eşlemesi BEGIN_MSG_MAP ve END_MSG_MAP tek bir örneği olması gerekir.
+>  İleti haritasını her zaman [BEGIN_MSG_MAP](#begin_msg_map)ile başlatın. Daha sonra, [ALT_MSG_MAP](#alt_msg_map)ile sonraki alternatif ileti eşlemelerini bildirebilirsiniz. [End_msg_map](#end_msg_map) makrosu ileti eşlemesinin sonunu işaretler. Her ileti eşlemesinin yalnızca bir BEGIN_MSG_MAP ve END_MSG_MAP örneği olmalıdır.
 
-MESSAGE_HANDLER ek olarak, kullandığınız [COMMAND_HANDLER](#command_handler) ve [NOTIFY_HANDLER](#notify_handler) eşlemek için [WM_COMMAND](/windows/desktop/menurc/wm-command) ve [wm_notıfy](/windows/desktop/controls/wm-notify) iletileri , sırasıyla.
+MESSAGE_HANDLER 'e ek olarak, sırasıyla [WM_COMMAND](/windows/win32/menurc/wm-command) ve [WM_NOTIFY](/windows/win32/controls/wm-notify) iletilerini eşlemek için [COMMAND_HANDLER](#command_handler) ve [NOTIFY_HANDLER](#notify_handler) kullanabilirsiniz.
 
-ATL ileti eşlemeleri hakkında daha fazla bilgi için bkz. [ileti eşlemeleri](../../atl/message-maps-atl.md).
+ATL 'de ileti eşlemelerini kullanma hakkında daha fazla bilgi için bkz. [Ileti haritaları](../../atl/message-maps-atl.md).
 
 ### <a name="example"></a>Örnek
 
@@ -617,11 +617,11 @@ ATL ileti eşlemeleri hakkında daha fazla bilgi için bkz. [ileti eşlemeleri](
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlwin.h
+**Üstbilgi:** atlwin. h
 
-##  <a name="message_range_handler"></a>  MESSAGE_RANGE_HANDLER
+##  <a name="message_range_handler"></a>MESSAGE_RANGE_HANDLER
 
-Benzer şekilde [MESSAGE_HANDLER](#message_handler), ancak, bir aralık Windows iletileri bir tek işleyicisi işlevini eşlemeleri.
+[Message_handler](#message_handler)ile benzerdir, ancak bir dizi Windows iletisini tek bir işleyici işlevine eşler.
 
 ```
 MESSAGE_RANGE_HANDLER( msgFirst, msgLast, func )
@@ -629,22 +629,22 @@ MESSAGE_RANGE_HANDLER( msgFirst, msgLast, func )
 
 ### <a name="parameters"></a>Parametreler
 
-*msgFirst*<br/>
-[in] İletileri bir aralıkta başlangıcını işaretler.
+*önce msg*<br/>
+'ndaki Bitişik bir ileti aralığının başlangıcını işaretler.
 
 *msgLast*<br/>
-[in] İletilerin bitişik bir aralığın sonunu işaretler.
+'ndaki Bitişik bir ileti aralığının sonunu işaretler.
 
-*FUNC*<br/>
-[in] İleti işleyici işlevinin adı.
+*func*<br/>
+'ndaki İleti işleyici işlevinin adı.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlwin.h
+**Üstbilgi:** atlwin. h
 
-##  <a name="notify_code_handler"></a>  NOTIFY_CODE_HANDLER
+##  <a name="notify_code_handler"></a>NOTIFY_CODE_HANDLER
 
-Benzer şekilde [NOTIFY_HANDLER](#notify_handler), ancak eşleyen bir [wm_notıfy](/windows/desktop/controls/wm-notify) ileti tabanlı yalnızca bildirim kod.
+[NOTIFY_HANDLER](#notify_handler)benzer, ancak yalnızca bildirim koduna dayalı bir [WM_NOTIFY](/windows/win32/controls/wm-notify) iletisini eşler.
 
 ```
 NOTIFY_CODE_HANDLER(cd, func)
@@ -652,19 +652,19 @@ NOTIFY_CODE_HANDLER(cd, func)
 
 ### <a name="parameters"></a>Parametreler
 
-*cd*<br/>
-[in] Uyarı kodu.
+*CD*<br/>
+'ndaki Bildirim kodu.
 
-*FUNC*<br/>
-[in] İleti işleyici işlevinin adı.
+*func*<br/>
+'ndaki İleti işleyici işlevinin adı.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlwin.h
+**Üstbilgi:** atlwin. h
 
-##  <a name="notify_handler"></a>  NOTIFY_HANDLER
+##  <a name="notify_handler"></a>NOTIFY_HANDLER
 
-Bir giriş ileti eşlemede tanımlar.
+İleti eşlemesindeki bir girdiyi tanımlar.
 
 ```
 NOTIFY_HANDLER( id, cd, func )
@@ -673,30 +673,30 @@ NOTIFY_HANDLER( id, cd, func )
 ### <a name="parameters"></a>Parametreler
 
 *id*<br/>
-[in] İletiyi gönderen denetim tanımlayıcısı.
+'ndaki İletiyi gönderen denetimin tanımlayıcısı.
 
-*cd*<br/>
-[in] Uyarı kodu.
+*CD*<br/>
+'ndaki Bildirim kodu.
 
-*FUNC*<br/>
-[in] İleti işleyici işlevinin adı.
+*func*<br/>
+'ndaki İleti işleyici işlevinin adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-NOTIFY_HANDLER eşleyen bir [wm_notıfy](/windows/desktop/controls/wm-notify) bildirim kodu ve denetim tanımlayıcısına göre belirtilen işleyici işlevine ileti.
+NOTIFY_HANDLER, bir [WM_NOTIFY](/windows/win32/controls/wm-notify) iletisini, bildirim koduna ve denetim tanımlayıcısına göre belirtilen işleyici işlevine eşler.
 
-NOTIFY_HANDLER makroda belirtilen herhangi bir işlev gibi tanımlanmış olması gerekir:
+Bir NOTIFY_HANDLER makrosunda belirtilen herhangi bir işlev aşağıdaki şekilde tanımlanmalıdır:
 
 `LRESULT NotifyHandler(int idCtrl, LPNMHDR pnmh, BOOL& bHandled);`
 
-İleti eşleme kümeleri `bHandled` önce true `NotifyHandler` çağrılır. Varsa `NotifyHandler` tam iletiyi işlemez ayarlamanız gerekir `bHandled` ihtiyaç daha fazla işleme belirtmek için false.
+İleti eşlemesi çağrılmadan önce `bHandled` `NotifyHandler` true olarak ayarlanır. İletiyi tam olarak işlemezse, iletinin daha fazla işleme ihtiyacı olduğunu göstermek için false olarak ayarlanmalıdır `bHandled`. `NotifyHandler`
 
 > [!NOTE]
->  Her zaman bir ileti eşlemesi ile başlayan [BEGIN_MSG_MAP](#begin_msg_map). Ardından, sonraki diğer ileti eşlemeleri ile bildirebilirsiniz [ALT_MSG_MAP](#alt_msg_map). [END_MSG_MAP](#end_msg_map) makrosu ileti eşlemede sonunu işaretler. Her ileti eşlemesi BEGIN_MSG_MAP ve END_MSG_MAP tek bir örneği olması gerekir.
+>  İleti haritasını her zaman [BEGIN_MSG_MAP](#begin_msg_map)ile başlatın. Daha sonra, [ALT_MSG_MAP](#alt_msg_map)ile sonraki alternatif ileti eşlemelerini bildirebilirsiniz. [End_msg_map](#end_msg_map) makrosu ileti eşlemesinin sonunu işaretler. Her ileti eşlemesinin yalnızca bir BEGIN_MSG_MAP ve END_MSG_MAP örneği olmalıdır.
 
-NOTIFY_HANDLER ek olarak, kullandığınız [MESSAGE_HANDLER](#message_handler) tanımlayıcı veya kod bakılmaksızın bir wm_notıfy iletisi eşlemek için. Bu durumda, `MESSAGE_HANDLER(WM_NOTIFY, OnHandlerFunction)` tüm wm_notıfy iletileri yönlendirecek `OnHandlerFunction`.
+NOTIFY_HANDLER 'e ek olarak, bir tanımlayıcı veya kodla ilgili olmadan WM_NOTIFY iletisini eşlemek için [message_handler](#message_handler) kullanabilirsiniz. Bu durumda, `MESSAGE_HANDLER(WM_NOTIFY, OnHandlerFunction)` tüm WM_NOTIFY iletilerini öğesine `OnHandlerFunction`yönlendirir.
 
-ATL ileti eşlemeleri hakkında daha fazla bilgi için bkz. [ileti eşlemeleri](../../atl/message-maps-atl.md).
+ATL 'de ileti eşlemelerini kullanma hakkında daha fazla bilgi için bkz. [Ileti haritaları](../../atl/message-maps-atl.md).
 
 ### <a name="example"></a>Örnek
 
@@ -704,11 +704,11 @@ ATL ileti eşlemeleri hakkında daha fazla bilgi için bkz. [ileti eşlemeleri](
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlwin.h
+**Üstbilgi:** atlwin. h
 
-##  <a name="notify_id_handler"></a>  NOTIFY_ID_HANDLER
+##  <a name="notify_id_handler"></a>NOTIFY_ID_HANDLER
 
-Benzer şekilde [NOTIFY_HANDLER](#notify_handler), ancak eşleyen bir [wm_notıfy](/windows/desktop/controls/wm-notify) ileti tabanlı yalnızca denetim tanımlayıcısı.
+[NOTIFY_HANDLER](#notify_handler)benzer, ancak yalnızca denetim tanımlayıcısına dayalı bir [WM_NOTIFY](/windows/win32/controls/wm-notify) iletisini eşler.
 
 ```
 NOTIFY_ID_HANDLER( id, func )
@@ -717,18 +717,18 @@ NOTIFY_ID_HANDLER( id, func )
 ### <a name="parameters"></a>Parametreler
 
 *id*<br/>
-[in] İletiyi gönderen denetim tanımlayıcısı.
+'ndaki İletiyi gönderen denetimin tanımlayıcısı.
 
-*FUNC*<br/>
-[in] İleti işleyici işlevinin adı.
+*func*<br/>
+'ndaki İleti işleyici işlevinin adı.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlwin.h
+**Üstbilgi:** atlwin. h
 
-##  <a name="notify_range_code_handler"></a>  NOTIFY_RANGE_CODE_HANDLER
+##  <a name="notify_range_code_handler"></a>NOTIFY_RANGE_CODE_HANDLER
 
-Benzer şekilde [NOTIFY_RANGE_HANDLER](#notify_range_handler), ancak haritaları [wm_notıfy](/windows/desktop/controls/wm-notify) iletileri kod içeren bir özel bildirim denetimlerini aralığından tek işleyici işlevi.
+[NOTIFY_RANGE_HANDLER](#notify_range_handler)gibi, ancak belirli bir bildirim koduna sahip [WM_NOTIFY](/windows/win32/controls/wm-notify) iletilerini bir denetim aralığından tek bir işleyici işlevine eşler.
 
 ```
 NOTIFY_RANGE_CODE_HANDLER( idFirst, idLast, cd, func )
@@ -736,29 +736,29 @@ NOTIFY_RANGE_CODE_HANDLER( idFirst, idLast, cd, func )
 
 ### <a name="parameters"></a>Parametreler
 
-*idFirst*<br/>
-[in] Bir aralıkta denetimi tanımlayıcıları başlangıcını işaretler.
+*Önce ıdden*<br/>
+'ndaki Bitişik denetim tanımlayıcılarının aralığının başlangıcını işaretler.
 
-*idLast*<br/>
-[in] Denetim tanımlayıcıların bitişik bir aralığın sonunu işaretler.
+*ıdlast*<br/>
+'ndaki Bitişik denetim tanımlayıcılarının aralığının sonunu işaretler.
 
-*cd*<br/>
-[in] Uyarı kodu.
+*CD*<br/>
+'ndaki Bildirim kodu.
 
-*FUNC*<br/>
-[in] İleti işleyici işlevinin adı.
+*func*<br/>
+'ndaki İleti işleyici işlevinin adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu aralık, ileti gönderilirken denetimin tanımlayıcının temel alır.
+Bu Aralık, iletiyi gönderen denetimin tanımlayıcısını temel alır.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlwin.h
+**Üstbilgi:** atlwin. h
 
-##  <a name="notify_range_handler"></a>  NOTIFY_RANGE_HANDLER
+##  <a name="notify_range_handler"></a>NOTIFY_RANGE_HANDLER
 
-Benzer şekilde [NOTIFY_HANDLER](#notify_handler), ancak haritaları [wm_notıfy](/windows/desktop/controls/wm-notify) iletileri denetimleri aralığından tek işleyici işlevi.
+[NOTIFY_HANDLER](#notify_handler)benzer, ancak bir denetim aralığından [WM_NOTIFY](/windows/win32/controls/wm-notify) iletilerini tek bir işleyici işlevine eşler.
 
 ```
 NOTIFY_RANGE_HANDLER( idFirst, idLast, func )
@@ -766,26 +766,26 @@ NOTIFY_RANGE_HANDLER( idFirst, idLast, func )
 
 ### <a name="parameters"></a>Parametreler
 
-*idFirst*<br/>
-[in] Bir aralıkta denetimi tanımlayıcıları başlangıcını işaretler.
+*Önce ıdden*<br/>
+'ndaki Bitişik denetim tanımlayıcılarının aralığının başlangıcını işaretler.
 
-*idLast*<br/>
-[in] Denetim tanımlayıcıların bitişik bir aralığın sonunu işaretler.
+*ıdlast*<br/>
+'ndaki Bitişik denetim tanımlayıcılarının aralığının sonunu işaretler.
 
-*FUNC*<br/>
-[in] İleti işleyici işlevinin adı.
+*func*<br/>
+'ndaki İleti işleyici işlevinin adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu aralık, ileti gönderilirken denetimin tanımlayıcının temel alır.
+Bu Aralık, iletiyi gönderen denetimin tanımlayıcısını temel alır.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlwin.h
+**Üstbilgi:** atlwin. h
 
-##  <a name="reflect_notifications"></a>  REFLECT_NOTIFICATIONS
+##  <a name="reflect_notifications"></a>REFLECT_NOTIFICATIONS
 
-Bildirim iletileri gönderen alt penceresine dönüp (Denetim) yansıtır.
+Bildirim iletilerini gönderilen alt pencereye (denetim) geri yansıtır.
 
 ```
 REFLECT_NOTIFICATIONS()
@@ -793,15 +793,15 @@ REFLECT_NOTIFICATIONS()
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu makro, üst pencere ileti eşlemesi bir parçası olarak belirtin.
+Bu makroyu, ana pencerenin ileti eşlemesinin bir parçası olarak belirtin.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlwin.h
+**Üstbilgi:** atlwin. h
 
-##  <a name="reflected_command_code_handler"></a>  REFLECTED_COMMAND_CODE_HANDLER
+##  <a name="reflected_command_code_handler"></a>REFLECTED_COMMAND_CODE_HANDLER
 
-Benzer şekilde [COMMAND_CODE_HANDLER](#command_code_handler), ancak üst penceresinden yansıtılan komutları eşler.
+[COMMAND_CODE_HANDLER](#command_code_handler)benzeri, ancak üst pencereden yansıtılan komutları eşleştirir.
 
 ```
 REFLECTED_COMMAND_CODE_HANDLER( code, func )
@@ -809,19 +809,19 @@ REFLECTED_COMMAND_CODE_HANDLER( code, func )
 
 ### <a name="parameters"></a>Parametreler
 
-*Kod*<br/>
-[in] Uyarı kodu.
+*kodudur*<br/>
+'ndaki Bildirim kodu.
 
-*FUNC*<br/>
-[in] İleti işleyici işlevinin adı.
+*func*<br/>
+'ndaki İleti işleyici işlevinin adı.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlwin.h
+**Üstbilgi:** atlwin. h
 
-##  <a name="reflected_command_handler"></a>  REFLECTED_COMMAND_HANDLER
+##  <a name="reflected_command_handler"></a>REFLECTED_COMMAND_HANDLER
 
-Benzer şekilde [COMMAND_HANDLER](#command_handler), ancak üst penceresinden yansıtılan komutları eşler.
+[COMMAND_HANDLER](#command_handler)benzeri, ancak üst pencereden yansıtılan komutları eşleştirir.
 
 ```
 REFLECTED_COMMAND_HANDLER( id, code, func )
@@ -830,21 +830,21 @@ REFLECTED_COMMAND_HANDLER( id, code, func )
 ### <a name="parameters"></a>Parametreler
 
 *id*<br/>
-[in] Menü öğesi, denetim ya da Hızlandırıcı tanımlayıcısı.
+'ndaki Menü öğesinin, denetimin veya hızlandırıcının tanımlayıcısı.
 
-*Kod*<br/>
-[in] Uyarı kodu.
+*kodudur*<br/>
+'ndaki Bildirim kodu.
 
-*FUNC*<br/>
-[in] İleti işleyici işlevinin adı.
+*func*<br/>
+'ndaki İleti işleyici işlevinin adı.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlwin.h
+**Üstbilgi:** atlwin. h
 
-##  <a name="reflected_command_id_handler"></a>  REFLECTED_COMMAND_ID_HANDLER
+##  <a name="reflected_command_id_handler"></a>REFLECTED_COMMAND_ID_HANDLER
 
-Benzer şekilde [COMMAND_ID_HANDLER](#command_id_handler), ancak üst penceresinden yansıtılan komutları eşler.
+[COMMAND_ID_HANDLER](#command_id_handler)benzeri, ancak üst pencereden yansıtılan komutları eşleştirir.
 
 ```
 REFLECTED_COMMAND_ID_HANDLER( id, func )
@@ -853,18 +853,18 @@ REFLECTED_COMMAND_ID_HANDLER( id, func )
 ### <a name="parameters"></a>Parametreler
 
 *id*<br/>
-[in] Menü öğesi, denetim ya da Hızlandırıcı tanımlayıcısı.
+'ndaki Menü öğesinin, denetimin veya hızlandırıcının tanımlayıcısı.
 
-*FUNC*<br/>
-[in] İleti işleyici işlevinin adı.
+*func*<br/>
+'ndaki İleti işleyici işlevinin adı.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlwin.h
+**Üstbilgi:** atlwin. h
 
-##  <a name="reflected_command_range_code_handler"></a>  REFLECTED_COMMAND_RANGE_CODE_HANDLER
+##  <a name="reflected_command_range_code_handler"></a>REFLECTED_COMMAND_RANGE_CODE_HANDLER
 
-Benzer şekilde [COMMAND_RANGE_CODE_HANDLER](#command_range_code_handler), ancak üst penceresinden yansıtılan komutları eşler.
+[COMMAND_RANGE_CODE_HANDLER](#command_range_code_handler)benzeri, ancak üst pencereden yansıtılan komutları eşleştirir.
 
 ```
 REFLECTED_COMMAND_RANGE_CODE_HANDLER( idFirst, idLast, code, func )
@@ -872,25 +872,25 @@ REFLECTED_COMMAND_RANGE_CODE_HANDLER( idFirst, idLast, code, func )
 
 ### <a name="parameters"></a>Parametreler
 
-*idFirst*<br/>
-[in] Bir aralıkta denetimi tanımlayıcıları başlangıcını işaretler.
+*Önce ıdden*<br/>
+'ndaki Bitişik denetim tanımlayıcılarının aralığının başlangıcını işaretler.
 
-*idLast*<br/>
-[in] Denetim tanımlayıcıların bitişik bir aralığın sonunu işaretler.
+*ıdlast*<br/>
+'ndaki Bitişik denetim tanımlayıcılarının aralığının sonunu işaretler.
 
-*Kod*<br/>
-[in] Uyarı kodu.
+*kodudur*<br/>
+'ndaki Bildirim kodu.
 
-*FUNC*<br/>
-[in] İleti işleyici işlevinin adı.
+*func*<br/>
+'ndaki İleti işleyici işlevinin adı.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlwin.h
+**Üstbilgi:** atlwin. h
 
-##  <a name="reflected_command_range_handler"></a>  REFLECTED_COMMAND_RANGE_HANDLER
+##  <a name="reflected_command_range_handler"></a>REFLECTED_COMMAND_RANGE_HANDLER
 
-Benzer şekilde [COMMAND_RANGE_HANDLER](#command_range_handler), ancak üst penceresinden yansıtılan komutları eşler.
+[COMMAND_RANGE_HANDLER](#command_range_handler)benzeri, ancak üst pencereden yansıtılan komutları eşleştirir.
 
 ```
 REFLECTED_COMMAND_RANGE_HANDLER( idFirst, idLast, func )
@@ -898,22 +898,22 @@ REFLECTED_COMMAND_RANGE_HANDLER( idFirst, idLast, func )
 
 ### <a name="parameters"></a>Parametreler
 
-*idFirst*<br/>
-[in] Bir aralıkta denetimi tanımlayıcıları başlangıcını işaretler.
+*Önce ıdden*<br/>
+'ndaki Bitişik denetim tanımlayıcılarının aralığının başlangıcını işaretler.
 
-*idLast*<br/>
-[in] Denetim tanımlayıcıların bitişik bir aralığın sonunu işaretler.
+*ıdlast*<br/>
+'ndaki Bitişik denetim tanımlayıcılarının aralığının sonunu işaretler.
 
-*FUNC*<br/>
-[in] İleti işleyici işlevinin adı.
+*func*<br/>
+'ndaki İleti işleyici işlevinin adı.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlwin.h
+**Üstbilgi:** atlwin. h
 
-##  <a name="reflected_notify_code_handler"></a>  REFLECTED_NOTIFY_CODE_HANDLER
+##  <a name="reflected_notify_code_handler"></a>REFLECTED_NOTIFY_CODE_HANDLER
 
-Benzer şekilde [NOTIFY_CODE_HANDLER](#notify_code_handler), ancak üst penceresinden yansıtılan bildirimleri eşler.
+[NOTIFY_CODE_HANDLER](#notify_code_handler)benzeri, ancak üst pencereden yansıtılan bildirimleri eşler.
 
 ```
 REFLECTED_NOTIFY_CODE_HANDLER_EX( cd, func )
@@ -921,19 +921,19 @@ REFLECTED_NOTIFY_CODE_HANDLER_EX( cd, func )
 
 ### <a name="parameters"></a>Parametreler
 
-*cd*<br/>
-[in] Uyarı kodu.
+*CD*<br/>
+'ndaki Bildirim kodu.
 
-*FUNC*<br/>
-[in] İleti işleyici işlevinin adı.
+*func*<br/>
+'ndaki İleti işleyici işlevinin adı.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlwin.h
+**Üstbilgi:** atlwin. h
 
-##  <a name="reflected_notify_handler"></a>  REFLECTED_NOTIFY_HANDLER
+##  <a name="reflected_notify_handler"></a>REFLECTED_NOTIFY_HANDLER
 
-Benzer şekilde [NOTIFY_HANDLER](#notify_handler), ancak üst penceresinden yansıtılan bildirimleri eşler.
+[NOTIFY_HANDLER](#notify_handler)benzeri, ancak üst pencereden yansıtılan bildirimleri eşler.
 
 ```
 REFLECTED_NOTIFY_HANDLER( id, cd, func )
@@ -942,21 +942,21 @@ REFLECTED_NOTIFY_HANDLER( id, cd, func )
 ### <a name="parameters"></a>Parametreler
 
 *id*<br/>
-[in] Menü öğesi, denetim ya da Hızlandırıcı tanımlayıcısı.
+'ndaki Menü öğesinin, denetimin veya hızlandırıcının tanımlayıcısı.
 
-*cd*<br/>
-[in] Uyarı kodu.
+*CD*<br/>
+'ndaki Bildirim kodu.
 
-*FUNC*<br/>
-[in] İleti işleyici işlevinin adı.
+*func*<br/>
+'ndaki İleti işleyici işlevinin adı.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlwin.h
+**Üstbilgi:** atlwin. h
 
-##  <a name="reflected_notify_id_handler"></a>  REFLECTED_NOTIFY_ID_HANDLER
+##  <a name="reflected_notify_id_handler"></a>REFLECTED_NOTIFY_ID_HANDLER
 
-Benzer şekilde [NOTIFY_ID_HANDLER](#notify_id_handler), ancak üst penceresinden yansıtılan bildirimleri eşler.
+[NOTIFY_ID_HANDLER](#notify_id_handler)benzeri, ancak üst pencereden yansıtılan bildirimleri eşler.
 
 ```
 REFLECTED_NOTIFY_ID_HANDLER( id, func )
@@ -965,18 +965,18 @@ REFLECTED_NOTIFY_ID_HANDLER( id, func )
 ### <a name="parameters"></a>Parametreler
 
 *id*<br/>
-[in] Menü öğesi, denetim ya da Hızlandırıcı tanımlayıcısı.
+'ndaki Menü öğesinin, denetimin veya hızlandırıcının tanımlayıcısı.
 
-*FUNC*<br/>
-[in] İleti işleyici işlevinin adı.
+*func*<br/>
+'ndaki İleti işleyici işlevinin adı.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlwin.h
+**Üstbilgi:** atlwin. h
 
-##  <a name="reflected_notify_range_code_handler"></a>  REFLECTED_NOTIFY_RANGE_CODE_HANDLER
+##  <a name="reflected_notify_range_code_handler"></a>REFLECTED_NOTIFY_RANGE_CODE_HANDLER
 
-Benzer şekilde [NOTIFY_RANGE_CODE_HANDLER](#notify_range_code_handler), ancak üst penceresinden yansıtılan bildirimleri eşler.
+[NOTIFY_RANGE_CODE_HANDLER](#notify_range_code_handler)benzeri, ancak üst pencereden yansıtılan bildirimleri eşler.
 
 ```
 REFLECTED_NOTIFY_RANGE_CODE_HANDLER( idFirst, idLast, cd, func )
@@ -984,25 +984,25 @@ REFLECTED_NOTIFY_RANGE_CODE_HANDLER( idFirst, idLast, cd, func )
 
 ### <a name="parameters"></a>Parametreler
 
-*idFirst*<br/>
-[in] Bir aralıkta denetimi tanımlayıcıları başlangıcını işaretler.
+*Önce ıdden*<br/>
+'ndaki Bitişik denetim tanımlayıcılarının aralığının başlangıcını işaretler.
 
-*idLast*<br/>
-[in] Denetim tanımlayıcıların bitişik bir aralığın sonunu işaretler.
+*ıdlast*<br/>
+'ndaki Bitişik denetim tanımlayıcılarının aralığının sonunu işaretler.
 
-*cd*<br/>
-[in] Uyarı kodu.
+*CD*<br/>
+'ndaki Bildirim kodu.
 
-*FUNC*<br/>
-[in] İleti işleyici işlevinin adı.
+*func*<br/>
+'ndaki İleti işleyici işlevinin adı.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlwin.h
+**Üstbilgi:** atlwin. h
 
-##  <a name="reflected_notify_range_handler"></a>  REFLECTED_NOTIFY_RANGE_HANDLER
+##  <a name="reflected_notify_range_handler"></a>REFLECTED_NOTIFY_RANGE_HANDLER
 
-Benzer şekilde [NOTIFY_RANGE_HANDLER](#notify_range_handler), ancak üst penceresinden yansıtılan bildirimleri eşler.
+[NOTIFY_RANGE_HANDLER](#notify_range_handler)benzeri, ancak üst pencereden yansıtılan bildirimleri eşler.
 
 ```
 REFLECTED_NOTIFY_RANGE_HANDLER( idFirst, idLast, func )
@@ -1010,15 +1010,15 @@ REFLECTED_NOTIFY_RANGE_HANDLER( idFirst, idLast, func )
 
 ### <a name="parameters"></a>Parametreler
 
-*idFirst*<br/>
-[in] Bir aralıkta denetimi tanımlayıcıları başlangıcını işaretler.
+*Önce ıdden*<br/>
+'ndaki Bitişik denetim tanımlayıcılarının aralığının başlangıcını işaretler.
 
-*idLast*<br/>
-[in] Denetim tanımlayıcıların bitişik bir aralığın sonunu işaretler.
+*ıdlast*<br/>
+'ndaki Bitişik denetim tanımlayıcılarının aralığının sonunu işaretler.
 
-*FUNC*<br/>
-[in] İleti işleyici işlevinin adı.
+*func*<br/>
+'ndaki İleti işleyici işlevinin adı.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Makroları](../../atl/reference/atl-macros.md)
+[Larının](../../atl/reference/atl-macros.md)

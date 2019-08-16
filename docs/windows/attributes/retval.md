@@ -1,17 +1,17 @@
 ---
-title: retval (C++ COM özniteliği)
+title: retval (C++ com özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.retval
 helpviewer_keywords:
 - retval attribute
 ms.assetid: bfa16f08-157d-4eea-afde-1232c54b8501
-ms.openlocfilehash: 9f5ad86a289f8904278a58636e66809ae0edd55b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2a2865c1eda229f1a2fcd457c22119b2908c1caa
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62407412"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69514052"
 ---
 # <a name="retval"></a>retval
 
@@ -25,13 +25,13 @@ ms.locfileid: "62407412"
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Retval** C++ özniteliği ile aynı işlevlere sahip [retval](/windows/desktop/Midl/retval) MIDL özniteliği.
+**Retval** C++ özniteliği, [retval](/windows/win32/Midl/retval) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
 
-**retval** son bağımsız değişken işlevin bildiriminde yer almalıdır.
+**retval** , bir işlevin bildiriminde yer alan son bağımsız değişkende yer almalıdır.
 
 ## <a name="example"></a>Örnek
 
-Örneğin bakın [bağlanabilir](bindable.md) örnek kullanımı için **retval**.
+**Retval**öğesinin örnek kullanımı için [bağlanabilir](bindable.md) örneğine bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -39,12 +39,12 @@ ms.locfileid: "62407412"
 
 |||
 |-|-|
-|**İçin geçerlidir**|Arabirimi parametresi, arabirim yöntemi|
+|**Uygulama hedefi**|Arabirim parametresi, arabirim yöntemi|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|**out**|
+|**Gerekli öznitelikler**|**out**|
 |**Geçersiz öznitelikler**|**in**|
 
-Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
+Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

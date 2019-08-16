@@ -1,5 +1,5 @@
 ---
-title: CMFCMenuButton sınıfı
+title: Cmfcmenubtan sınıfı
 ms.date: 07/15/2019
 f1_keywords:
 - CMFCMenuButton
@@ -24,16 +24,16 @@ helpviewer_keywords:
 - CMFCMenuButton [MFC], m_nMenuResult
 - CMFCMenuButton [MFC], m_bDefaultClick
 ms.assetid: 53d3d459-1e5a-47c5-8b7f-2e61f6af5187
-ms.openlocfilehash: 71d239c9d1084c69ab2e159a479e66f0cbe66d7a
-ms.sourcegitcommit: fd466f2e14ad001f52f3dbe54f46d77be10f2d7b
+ms.openlocfilehash: d7c23cbda0a5af4dc3fa6b2d9f59497acc9bf5ff
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67894429"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69505205"
 ---
-# <a name="cmfcmenubutton-class"></a>CMFCMenuButton sınıfı
+# <a name="cmfcmenubutton-class"></a>Cmfcmenubtan sınıfı
 
-Bir açılır menü görüntüleyen ve kullanıcı menüsü seçeneklerini raporlayan bir düğme.
+Açılır menüyü ve kullanıcının menü seçimleriyle ilgili raporları görüntüleyen bir düğme.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -47,35 +47,35 @@ class CMFCMenuButton : public CMFCButton
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CMFCMenuButton::CMFCMenuButton](#cmfcmenubutton)|Oluşturur bir `CMFCMenuButton` nesne.|
+|[Cmfcmenubtan:: Cmfcmenubtan](#cmfcmenubutton)|Bir `CMFCMenuButton` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CMFCMenuButton::PreTranslateMessage](#pretranslatemessage)|Pencere iletilerini dağıtılmadan önce çevirmek için framework tarafından çağırılır. (Geçersiz kılmaları `CMFCButton::PreTranslateMessage`.)|
-|[CMFCMenuButton::SizeToContent](#sizetocontent)|Düğme metin ve görüntü boyutuna göre boyutunu değiştirir.|
+|[Cmfcmenubtan::P reTranslateMessage](#pretranslatemessage)|Dağıtılmadan önce pencere iletilerini çevirmek için Framework tarafından çağırılır. (Geçersiz `CMFCButton::PreTranslateMessage`kılmalar.)|
+|[Cmfcmenubtan:: SizeToContent](#sizetocontent)|Düğmenin boyutunu metin ve görüntü boyutuna göre değiştirir.|
 
 ### <a name="data-members"></a>Veri üyeleri
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CMFCMenuButton::m_bOSMenu](#m_bosmenu)|Varsayılan sistem açılan menüyü görüntülemek mi kullanılacağını belirtir [CContextMenuManager::TrackPopupMenu](../../mfc/reference/ccontextmenumanager-class.md#trackpopupmenu).|
-|[CMFCMenuButton::m_bRightArrow](#m_brightarrow)|Açılan menü altında veya düğmenin sağındaki görüntülenip görüntülenmeyeceğini belirtir.|
-|[CMFCMenuButton::m_bStayPressed](#m_bstaypressed)|Kullanıcı düğmeyi yayımlandıktan sonra menü düğmesine durumuna değiştirilip değiştirilmediğini belirtir.|
-|[CMFCMenuButton::m_hMenu](#m_hmenu)|Ekli Windows menüsüne tanıtıcı.|
-|[CMFCMenuButton::m_nMenuResult](#m_nmenuresult)|Hangi öğeyi gösteren tanımlayıcı açılır menüden kullanıcı seçildi.|
-|[CMFCMenuButton::m_bDefaultClick](#m_bdefaultclick)| Varsayılan (düğme metin/resim) olarak işleme izin verir.|
+|[Cmfcmenubtan:: m_bOSMenu](#m_bosmenu)|Varsayılan sistem açılır menüsünü mi yoksa [CContextMenuManager:: TrackPopupMenu](../../mfc/reference/ccontextmenumanager-class.md#trackpopupmenu)mi kullanacağınızı belirtir.|
+|[Cmfcmenubtan:: m_bRightArrow](#m_brightarrow)|Açılır menünün düğmenin altında mi yoksa sağ tarafında mı görüneceğini belirtir.|
+|[Cmfcmenubtan:: m_bStayPressed](#m_bstaypressed)|Kullanıcı düğmeyi güncelleştirdikten sonra menü düğmesinin durumunu değiştirmeyeceğini belirtir.|
+|[Cmfcmenubtan:: m_hMenu](#m_hmenu)|Ekli Windows menüsüne yönelik bir tanıtıcı.|
+|[Cmfcmenubtan:: m_nMenuResult](#m_nmenuresult)|Kullanıcının açılır menüden hangi öğeyi seçdiğini belirten bir tanımlayıcı.|
+|[Cmfcmenubtan:: m_bDefaultClick](#m_bdefaultclick)| Varsayılana izin ver (düğme metin/görüntü üzerinde) işleme.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CMFCMenuButton` Sınıfı türetilen [CMFCButton sınıfı](../../mfc/reference/cmfcbutton-class.md) buna karşılık, türetilen [CButton sınıfı](../../mfc/reference/cbutton-class.md). Bu nedenle, kullanabileceğiniz `CMFCMenuButton` kodunuzda kullandığınız aynı şekilde `CButton`.
+Sınıfı, [CButton sınıfından](../../mfc/reference/cbutton-class.md)türetilen [CMFCButton sınıfından](../../mfc/reference/cmfcbutton-class.md) türetilir. `CMFCMenuButton` Bu nedenle, kodunuzda kullandığınız `CMFCMenuButton` şekilde `CButton`kullanabilirsiniz.
 
-Oluştururken bir `CMFCMenuButton`, ilişkili açılır menüsüne bir tanıtıcıda geçmesi gerekir. Ardından, işlev çağrısı `CMFCMenuButton::SizeToContent`. `CMFCMenuButton::SizeToContent` Düğme Boyutu açılır pencerede - yani altında veya düğmenin sağındaki görüneceği yeri konumu gösteren bir ok dahil etmek yeterli olup olmadığını denetler.
+Bir `CMFCMenuButton`oluşturduğunuzda, ilişkili açılır menüye bir tanıtıcı geçirmeniz gerekir. Sonra, işlevini `CMFCMenuButton::SizeToContent`çağırın. `CMFCMenuButton::SizeToContent`düğme boyutunun, açılır pencerenin göründüğü konuma işaret eden bir ok eklemek için yeterli olup olmadığını denetler (yani, düğmenin altında veya sağında).
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, framework tarafından görüntülenen açılır menü düğmesine iliştirilmiş menü tanıtıcısı yapmak, düğme metin ve görüntü boyutuna göre yeniden boyutlandır ve gösterilmektedir. Bu kod parçacığı parçasıdır [yeni denetimler örnek](../../overview/visual-cpp-samples.md).
+Aşağıdaki örnek, düğmesine eklenen menünün tanıtıcısını ayarlamayı, metni metin ve görüntü boyutuna göre yeniden boyutlandırmayı ve Framework tarafından görüntülenen açılır menüyü ayarlamayı gösterir. Bu kod parçacığı, [Yeni denetimler örneğinin](../../overview/visual-cpp-samples.md)bir parçasıdır.
 
 [!code-cpp[NVC_MFC_NewControls#38](../../mfc/reference/codesnippet/cpp/cmfcmenubutton-class_1.h)]
 [!code-cpp[NVC_MFC_NewControls#39](../../mfc/reference/codesnippet/cpp/cmfcmenubutton-class_2.cpp)]
@@ -92,23 +92,23 @@ Aşağıdaki örnek, framework tarafından görüntülenen açılır menü düğ
 
 [CMFCButton](../../mfc/reference/cmfcbutton-class.md)
 
-[CMFCMenuButton](../../mfc/reference/cmfcmenubutton-class.md)
+[Cmfcmenubtan](../../mfc/reference/cmfcmenubutton-class.md)
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxmenubutton.h
+**Üstbilgi:** afxmenubtan. h
 
-##  <a name="cmfcmenubutton"></a>  CMFCMenuButton::CMFCMenuButton
+##  <a name="cmfcmenubutton"></a>Cmfcmenubtan:: Cmfcmenubtan
 
-Yeni bir oluşturur [CMFCMenuButton](../../mfc/reference/cmfcmenubutton-class.md) nesne.
+Yeni bir [Cmfcmenubtan](../../mfc/reference/cmfcmenubutton-class.md) nesnesi oluşturur.
 
 ```
 CMFCMenuButton();
 ```
 
-##  <a name="m_bosmenu"></a>  CMFCMenuButton::m_bOSMenu
+##  <a name="m_bosmenu"></a>Cmfcmenubtan:: m_bOSMenu
 
-Açılan menüyü gösteren bir Boolean üye değişkeni framework görüntüler.
+Çerçevenin görüntülediği açılan menüyü gösteren bir Boolean üye değişkeni.
 
 ```
 BOOL m_bOSMenu;
@@ -116,11 +116,11 @@ BOOL m_bOSMenu;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsa `m_bOSMenu` doğru ise, framework devralınan çağırır `TrackPopupMenu` bu nesne için yöntemi. Aksi takdirde, framework çağırır [CContextMenuManager::TrackPopupMenu](../../mfc/reference/ccontextmenumanager-class.md#trackpopupmenu).
+TRUE ise, çerçeve bu nesne için devralınmış `TrackPopupMenu` yöntemi çağırır. `m_bOSMenu` Aksi halde Framework [CContextMenuManager:: TrackPopupMenu](../../mfc/reference/ccontextmenumanager-class.md#trackpopupmenu)öğesini çağırır.
 
-##  <a name="m_brightarrow"></a>  CMFCMenuButton::m_bRightArrow
+##  <a name="m_brightarrow"></a>Cmfcmenubtan:: m_bRightArrow
 
-Açılır menü konumunu belirten bir Boolean üye değişkeni.
+Açılır menünün konumunu gösteren bir Boolean üye değişkeni.
 
 ```
 BOOL m_bRightArrow;
@@ -128,11 +128,11 @@ BOOL m_bRightArrow;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanıcı menü düğmesine bastığında uygulama açılır menü gösterir. Framework düğmesinin altındaki veya düğmenin sağındaki açılan menü görüntüler. Düğme, açılan menüyü nerede görüneceğini gösteren küçük bir ok de vardır. Varsa `m_bRightArrow` doğru ise, framework açılır menü düğmesinin sağında görüntülenir. Aksi takdirde, düğmesinin altındaki açılan menü görüntüler.
+Kullanıcı menü düğmesine bastığında, uygulama bir açılan menü gösterir. Çerçeve, açılır menüyü düğme altında veya düğmenin sağında görüntüler. Düğme, açılan menünün nerede görüneceğini belirten küçük bir oka de sahiptir. TRUE `m_bRightArrow` ise, çerçeve düğmenin sağındaki açılır menüyü görüntüler. Aksi takdirde, düğme altındaki açılır menüyü görüntüler.
 
-##  <a name="m_bstaypressed"></a>  CMFCMenuButton::m_bStayPressed
+##  <a name="m_bstaypressed"></a>Cmfcmenubtan:: m_bStayPressed
 
-Menü düğmesine görüntülenip görüntülenmeyeceğini belirten bir Boolean üye değişkeni, kullanıcı açılır menüden seçim yaparken basılı.
+Kullanıcı açılır menüden seçim yaptığında menü düğmesinin basılı görünüp başlatılmayacağını gösteren bir Boolean üye değişkeni.
 
 ```
 BOOL m_bStayPressed;
@@ -140,13 +140,13 @@ BOOL m_bStayPressed;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsa `m_bStayPressed` üye FALSE ise, menü düğmesine ne zaman basılmadı haline kullandığı düğmesine tıklar. Bu durumda, framework yalnızca açılır menü görüntüler.
+`m_bStayPressed` Üye false ise, kullanımları düğme tıkladığı zaman menü düğmesine basmaz. Bu durumda, çerçeve yalnızca açılan menüyü görüntüler.
 
-Varsa `m_bStayPressed` üye ise TRUE, kullanıcı düğmeye tıkladığında menü düğmesine basıldığında olur. Kullanıcı açılır menüsünde, bir seçim yaparak veya iptal etme kapatıldıktan sonra kadar basılı kalır.
+`m_bStayPressed` Üye true ise, Kullanıcı düğmeye tıkladığında menü düğmesi basılı hale gelir. Kullanıcı, bir seçim yaparak veya iptal ederek, açılır menüyü kapatana kadar basılı kalır.
 
-##  <a name="m_hmenu"></a>  CMFCMenuButton::m_hMenu
+##  <a name="m_hmenu"></a>Cmfcmenubtan:: m_hMenu
 
-Ekli menüsüne tanıtıcısı.
+Eklenen menünün tanıtıcısı.
 
 ```
 HMENU m_hMenu;
@@ -154,11 +154,11 @@ HMENU m_hMenu;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Framework kullanıcı menü düğmesine tıkladığında bu üye değişkeni tarafından belirtilen menü görüntüler.
+Çerçeve, Kullanıcı menü düğmesine tıkladığında bu üye değişkeni tarafından belirtilen menüyü görüntüler.
 
-##  <a name="m_nmenuresult"></a>  CMFCMenuButton::m_nMenuResult
+##  <a name="m_nmenuresult"></a>Cmfcmenubtan:: m_nMenuResult
 
-Hangi öğeyi gösteren bir tam sayı, açılır menüden kullanıcı seçer.
+Kullanıcının açılır menüden seçtiği öğeyi gösteren bir tamsayı.
 
 ```
 int m_nMenuResult;
@@ -166,11 +166,11 @@ int m_nMenuResult;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye değişkeninin değeri bir seçim yapmadan kullanıcı menü iptal ederse veya bir hata oluşursa sıfırdır.
+Kullanıcı bir seçim yapmadan veya bir hata oluşursa, bu üye değişkeninin değeri sıfır olur.
 
-##  <a name="m_bdefaultclick"></a>  CMFCMenuButton::m_bDefaultClick
+##  <a name="m_bdefaultclick"></a>Cmfcmenubtan:: m_bDefaultClick
 
-Düğmede varsayılan metin veya görüntü işlenmesini sağlar.
+Düğme üzerinde metin veya görüntülerin varsayılan işlemesine izin verir.
 
 ```
 BOOL  m_bDefaultClick;
@@ -178,11 +178,11 @@ BOOL  m_bDefaultClick;
 
 ### <a name="remarks"></a>Açıklamalar
 
-False ayarı m_bDefaultClick herhangi bir yere düğmesine tıkladığınızda menüsünü göster düğmesini neden olur.
+M_bDefaultClick ayarının false olarak ayarlanması, düğme üzerinde herhangi bir yere tıkladığınızda düğmenin menüyü göstermesini sağlar.
 
-##  <a name="m_nmenuresult"></a>  CMFCMenuButton::m_nMenuResult
+##  <a name="m_nmenuresult"></a>Cmfcmenubtan:: m_nMenuResult
 
-Hangi öğeyi gösteren bir tam sayı, açılır menüden kullanıcı seçer.
+Kullanıcının açılır menüden seçtiği öğeyi gösteren bir tamsayı.
 
 ```
 int m_nMenuResult;
@@ -190,9 +190,9 @@ int m_nMenuResult;
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="pretranslatemessage"></a>  CMFCMenuButton::PreTranslateMessage
+##  <a name="pretranslatemessage"></a>Cmfcmenubtan::P reTranslateMessage
 
-Pencere iletilerini dağıtılmadan önce çevirmek için framework tarafından çağırılır.
+Dağıtılmadan önce pencere iletilerini çevirmek için Framework tarafından çağırılır.
 
 ```
 virtual BOOL PreTranslateMessage(MSG* pMsg);
@@ -201,17 +201,17 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 ### <a name="parameters"></a>Parametreler
 
 *pMsg*<br/>
-[in] İşaret eden bir [MSG](/windows/desktop/api/winuser/ns-winuser-tagmsg) işlemek için bir ileti içeren yapısı.
+'ndaki İşlenecek iletiyi içeren bir [msg](/windows/win32/api/winuser/ns-winuser-msg) yapısına işaret eder.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İleti çevrilmiştir ve değil dağıtılması olursa sıfır dışı; 0 ileti değil çevrilmiştir ve dağıtılması.
+İleti çevrilmişse ve dağıtılması gerekiyorsa sıfır dışında; ileti çevrilmişse ve dağıtılması gerekiyorsa 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="sizetocontent"></a>  CMFCMenuButton::SizeToContent
+##  <a name="sizetocontent"></a>Cmfcmenubtan:: SizeToContent
 
-Düğme, metin boyutu ve görüntü boyutuna göre boyutunu değiştirir.
+Düğmenin boyutunu metin boyutuna ve görüntü boyutuna göre değiştirir.
 
 ```
 virtual CSize SizeToContent(BOOL bCalcOnly = FALSE);
@@ -220,17 +220,17 @@ virtual CSize SizeToContent(BOOL bCalcOnly = FALSE);
 ### <a name="parameters"></a>Parametreler
 
 *bCalcOnly*<br/>
-[in] Bu yöntem düğmeyi yeniden boyutlandırıp boyutlandıramayacağını gösteren bir Boole parametresi.
+'ndaki Bu yöntemin düğmeyi yeniden boyutlandırdığını belirten bir Boole parametresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-A [CSize](../../atl-mfc-shared/reference/csize-class.md) nesnesini düğme için yeni bir boyut belirtir.
+Düğme için yeni boyutu belirten [CSize](../../atl-mfc-shared/reference/csize-class.md) nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev çağırırsanız ve *bCalcOnly* TRUE ise `SizeToContent` düğmesi yalnızca yeni boyutunu yeniden hesaplar.
+Bu işlevi çağırırsanız ve *bCalcOnly* değeri true ise, `SizeToContent` yalnızca düğmenin yeni boyutunu hesaplar.
 
-Yeni boyut düğmenin düğme metin, görüntü ve ok uyacak şekilde hesaplanır. Framework ayrıca yatay edge için 10 piksel ve 5 piksel dikey edge için önceden tanımlanmış kenar boşluklarını ekler.
+Düğmenin yeni boyutu düğme metin, resim ve oka uyacak şekilde hesaplanır. Framework Ayrıca dikey kenar için yatay kenar ve 5 piksel için 10 pikselin önceden tanımlanmış kenar boşluklarına de ekler.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,5 +1,5 @@
 ---
-title: Atl_drawınfo yapısı
+title: ATL_DRAWINFO yapısı
 ms.date: 11/04/2016
 f1_keywords:
 - ATL::ATL_DRAWINFO
@@ -8,16 +8,16 @@ f1_keywords:
 helpviewer_keywords:
 - ATL_DRAWINFO structure
 ms.assetid: dd2e2aa8-e8c5-403b-b4df-35c0f6f57fb7
-ms.openlocfilehash: 77ef56f73be1ed9ddfc63c459b6bab3ad4decb3f
-ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
+ms.openlocfilehash: 728a7eed418a6600c9247b91ff7b777dd458e621
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66503424"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69498002"
 ---
-# <a name="atldrawinfo-structure"></a>Atl_drawınfo yapısı
+# <a name="atl_drawinfo-structure"></a>ATL_DRAWINFO yapısı
 
-Bir yazıcı, meta dosyası ya da ActiveX denetimi gibi çeşitli hedeflere işleme için kullanılan bilgileri içerir.
+Bir yazıcı, meta dosya veya ActiveX denetimi gibi çeşitli hedeflere işleme için kullanılan bilgileri içerir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -45,53 +45,53 @@ struct ATL_DRAWINFO {
 Yapının bayt cinsinden boyutu.
 
 `dwDrawAspect`<br/>
-Nasıl gösterilemeyecek kadar hedef olduğunu belirtir. Gösterimleri, içerik, simge, küçük resim veya yazdırılan belge içerebilir. Olası değerler listesi için bkz. [DVASPECT](/windows/desktop/api/wtypes/ne-wtypes-tagdvaspect) ve [DVASPECT2](/windows/desktop/api/ocidl/ne-ocidl-tagdvaspect2).
+Hedefin nasıl temsil edileceğini belirtir. Temsiller, içerik, simge, küçük resim veya yazdırılmış bir belge içerebilir. Olası değerler listesi için bkz. [DVASPECT](/windows/win32/api/wtypes/ne-wtypes-dvaspect) ve [DVASPECT2](/windows/win32/api/ocidl/ne-ocidl-dvaspect2).
 
 `lindex`<br/>
-Çizim işlemi için hedef kısmı. Değerine bağlı olarak yorumlanması değişir `dwDrawAspect` üyesi.
+Hedefin, çizim işleminin ilgilendiği kısmı. Yorumu, `dwDrawAspect` üyenin değerine bağlı olarak değişir.
 
 `ptd`<br/>
-İşaretçi bir [DVTARGETDEVICE](/windows/desktop/api/objidl/ns-objidl-tagdvtargetdevice) belirtilen boyut bağlı olarak çizim iyileştirmelerini sağlayan yapısı. Yeni nesneleri ve en iyi duruma getirilmiş çizim arabirimleri destekleyen kapsayıcılar bu üyeyi de destekleyip desteklemediğini unutmayın. Eski nesneler ve her zaman en iyi duruma getirilmiş çizim arabirimleri desteklemeyen kapsayıcıları bu üye için NULL belirtin.
+Belirtilen değere bağlı olarak en iyi duruma getirme imkanı sağlayan bir [Dvtargetdevice](/windows/win32/api/objidl/ns-objidl-dvtargetdevice) yapısına yönelik işaretçi. İyileştirilmiş çizim arabirimlerini destekleyen yeni nesne ve kapsayıcıların bu üyeyi de desteklediğini unutmayın. En iyi duruma getirilmiş çizim arabirimlerini desteklemeyen eski nesneler ve kapsayıcılar, bu üye için her zaman NULL değer belirtir.
 
 `hicTargetDev`<br/>
-Hedef cihaz bağlamının bilgi tarafından işaret edilen `ptd` içinden nesne cihaz ölçümleri ayıklayın ve cihazın özelliklerini test edebilirsiniz. Varsa `ptd` null, nesne değeri sayılmalıdır `hicTargetDev` üyesi.
+Tarafından `ptd` işaret edilen hedef cihaz için, nesnenin cihaz ölçümlerini ayıklayabileceği ve cihazın yeteneklerini test eden bilgi bağlamı. NULL ise, nesne `hicTargetDev` üye içindeki değeri yok saymalıdır. `ptd`
 
 `hdcDraw`<br/>
-Cihaz bağlamı üretileceği çizin. Penceresiz bir nesne için `hdcDraw` üyesiyse `MM_TEXT` pencerenin istemci koordinatları eşleşen mantıksal koordinatları ile eşleme modu. Ayrıca, cihaz bağlam normalde geçirilen aynı duruma olmalıdır bir `WM_PAINT` ileti.
+Üzerine çizilecek cihaz bağlamı. Penceresiz bir nesne `hdcDraw` için üye `MM_TEXT` , kapsayan pencerenin istemci koordinatlarıyla eşleşen mantıksal koordinatlarıyla eşleme modundadır. Buna ek olarak, cihaz bağlamı, normalde bir `WM_PAINT` ileti tarafından geçirildiği ile aynı durumda olmalıdır.
 
 `prcBounds`<br/>
-İşaretçi bir [RECTL](/previous-versions//dd162907\(v=vs.85\)) dikdörtgen belirterek yapısı `hdcDraw` ve nesne çizileceğini. Bu üye, konumlandırma ve nesnenin uzatma denetler. Bu üye penceresiz yerinde etkin nesne çizmek için NULL olmalıdır. Diğer her durumda, NULL geçerli bir değer değil ve neden bir `E_INVALIDARG` hata kodu. Kapsayıcı penceresiz bir nesne için bir NULL olmayan değer geçerse, nesne dikdörtgen ve belirtilen bir cihaz bağlamı içinde istenen boyut işlemesi gerekir. Bir kapsayıcı bir penceresiz nesneden nesnesinin ikinci, etkin olmayan görünüm işlemek için veya nesneyi yazdırmak için bu talep edebilir.
+Üzerinde`hdcDraw` nesnenin çizilmesi gereken dikdörtgeni belirten [rectl](/previous-versions//dd162907\(v=vs.85\)) yapısına yönelik işaretçi. Bu üye nesnenin konumlandırılmasını ve uzamasını denetler. Bu üye, bir penceresiz yerinde etkin nesne çizmek için NULL olmalıdır. Her durumda null değeri geçerli bir değer değildir ve bir `E_INVALIDARG` hata kodu ile sonuçlanmalıdır. Kapsayıcı, penceresiz bir nesneye NULL olmayan bir değer geçirirse, nesne istenen yönü belirtilen cihaz bağlamı ve dikdörtgenine işlemelidir. Bir kapsayıcı, nesnenin ikinci, etkin olmayan bir görünümünü işlemek veya nesneyi yazdırmak için bunu penceresiz bir nesneden isteyebilir.
 
 `prcWBounds`<br/>
-Varsa `hdcDraw` bir meta dosyası cihaz bağlamı (bkz [GetDeviceCaps](/windows/desktop/api/wingdi/nf-wingdi-getdevicecaps) Windows SDK), bu işaretçisidir bir `RECTL` yapısı temel alınan meta sınırlayıcı belirtme. Dikdörtgen yapı penceresi başlangıç ve pencere uzantı içeriyor. Bu değerler, meta çizmek için yararlıdır. Tarafından belirtilen dikdörtgen `prcBounds` bu iç içe geçmiş `prcWBounds` dikdörtgen; aynı koordinat alanında oldukları.
+Bir meta dosyası cihaz bağlamıdır (bkz. Windows SDK [GetDeviceCaps](/windows/win32/api/wingdi/nf-wingdi-getdevicecaps) ), bu, temel alınan meta dosyasındaki sınırlayıcı `RECTL` dikdörtgeni belirten bir yapıya işaretçidir. `hdcDraw` Dikdörtgen yapısı pencere kapsamı ve pencere kaynağını içerir. Bu değerler, meta dosyaları çizmek için yararlıdır. Tarafından `prcBounds` belirtilen dikdörtgen bu `prcWBounds` dikdörtgenin içinde iç içe yerleştirilmiş; aynı koordinat alanında yer alırlar.
 
 `bOptimize`<br/>
-Çizim denetimi olacak şekilde iyileştirilmiştir, aksi durumda 0 ise sıfır olmayan. Çizim en iyi duruma getirilmiş işiniz bittiğinde durumu cihaz bağlamı otomatik olarak geri yüklenir işleme.
+Denetimin çizimi iyileştirilemez, aksi durumda 0. Çizim iyileştiriliyorsa, işleme işiniz bittiğinde cihaz bağlamının durumu otomatik olarak geri yüklenir.
 
 `bZoomed`<br/>
-Aksi durumda 0 yakınlaştırma faktörünü hedefi varsa, sıfır dışında. Yakınlaştırma faktörünü depolanan `ZoomNum`.
+Hedefte bir yakınlaştırma faktörü varsa sıfır dışı, aksi durumda 0. Yakınlaştırma faktörü içinde `ZoomNum`depolanır.
 
 `bRectInHimetric`<br/>
-Gösterimiyse boyutlarını `prcBounds` HIMETRIC, aksi durumda 0 olan.
+Boyutlar `prcBounds` himetrik ise, aksi durumda 0.
 
 `ZoomNum`<br/>
-Genişlik ve yükseklik dikdörtgenin içine bir nesne oluşturulur. Yakınlaştırma faktörünü hedefinin (nesnenin geçerli kapsamı doğal boyutuna oranı) x ekseni boyunca değeri `ZoomNum.cx` değeriyle bölünmüş `ZoomDen.cx`. Yakınlaştırma faktörünü y ekseni boyunca benzer şekilde sağlanır.
+Nesnenin işlendiği dikdörtgenin genişliği ve yüksekliği. Hedef değerinin x ekseni (nesnenin doğal boyutunun geçerli adına göre oranı) üzerindeki yakınlaştırma faktörü, `ZoomNum.cx` `ZoomDen.cx`değerine bölünen değeridir. Y ekseni üzerindeki yakınlaştırma faktörü benzer bir biçimde elde edilir.
 
 `ZoomDen`<br/>
-Gerçek genişlik ve yükseklik hedef.
+Hedefin gerçek genişliği ve yüksekliği.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu yapının tipik kullanım hedef nesnenin işleme sırasında bilgilerin alınmasını olacaktır. Örneğin, değerleri atl_drawınfo, aşırı yüklemesini içinde alabilir [CComControlBase::OnDrawAdvanced](ccomcontrolbase-class.md#ondrawadvanced).
+Bu yapının tipik kullanımı, hedef nesnenin işlenmesi sırasında bilgilerin alınması olacaktır. Örneğin, [CComControlBase:: OnDrawAdvanced](ccomcontrolbase-class.md#ondrawadvanced)öğesinin aşırı yüklerinizin içindeki ATL_DRAWINFO değerleri alabilirsiniz.
 
-Bu yapı, hedef cihaz için bir nesnenin görünümü işlemek için kullanılan bilgileri depolar. Çizim ekran, yazıcı veya hatta bir meta dosyası içinde sağlanan bilgileri kullanılabilir.
+Bu yapı, hedef cihaz için bir nesnenin görünümünü işlemek üzere kullanılan ilgili bilgileri depolar. Girilen bilgiler, ekranda, yazıcıda veya hatta bir meta dosyasına çizimde kullanılabilir.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlctl.h
+**Üstbilgi:** atlctl. h
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıflar ve yapılar](../../atl/reference/atl-classes.md)<br/>
-[IViewObject::Draw](/windows/desktop/api/oleidl/nf-oleidl-iviewobject-draw)<br/>
-[CComControlBase::OnDrawAdvanced](../../atl/reference/ccomcontrolbase-class.md#ondrawadvanced)
+[IViewObject::D RAW](/windows/win32/api/oleidl/nf-oleidl-iviewobject-draw)<br/>
+[CComControlBase:: OnDrawAdvanced](../../atl/reference/ccomcontrolbase-class.md#ondrawadvanced)

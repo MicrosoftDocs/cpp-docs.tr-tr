@@ -30,12 +30,12 @@ helpviewer_keywords:
 - CPageSetupDialog [MFC], PreDrawPage
 - CPageSetupDialog [MFC], m_psd
 ms.assetid: 049c0ac8-f254-4854-9414-7a8271d1447a
-ms.openlocfilehash: a9009c4ea08771949cea2c44e4f6265783ced35a
-ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
+ms.openlocfilehash: 18b17d0f40aaab6ba2a018a568950549eda23016
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68916931"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69503008"
 ---
 # <a name="cpagesetupdialog-class"></a>CPageSetupDialog sınıfı
 
@@ -142,7 +142,7 @@ CPageSetupDialog(
 
 - PSD_DISABLEORIENTATION, sayfa yönlendirme iletişim kutusu denetimini devre dışı bırakır.
 
-- PSD_RETURNDEFAULT, `CPageSetupDialog` bir iletişim kutusu görüntülemeden sistem varsayılan yazıcısı için başlatılan [DEVMODE](/windows/win32/api/wingdi/ns-wingdi-devmodea) ve [DEVNAMES](/windows/desktop/api/commdlg/ns-commdlg-tagdevnames) yapılarını döndürmesine neden olur. Her ikisi de `hDevNames` `hDevMode` null olduğu varsayılır; Aksi takdirde, işlev bir hata döndürür. Sistem varsayılan yazıcısı eski bir yazıcı sürücüsü (Windows sürüm 3,0 ' den önceki sürümler) tarafından destekleniyorsa, yalnızca `hDevNames` döndürülür; `hDevMode` null.
+- PSD_RETURNDEFAULT, `CPageSetupDialog` bir iletişim kutusu görüntülemeden sistem varsayılan yazıcısı için başlatılan [DEVMODE](/windows/win32/api/wingdi/ns-wingdi-devmodea) ve [DEVNAMES](/windows/win32/api/commdlg/ns-commdlg-devnames) yapılarını döndürmesine neden olur. Her ikisi de `hDevNames` `hDevMode` null olduğu varsayılır; Aksi takdirde, işlev bir hata döndürür. Sistem varsayılan yazıcısı eski bir yazıcı sürücüsü (Windows sürüm 3,0 ' den önceki sürümler) tarafından destekleniyorsa, yalnızca `hDevNames` döndürülür; `hDevMode` null.
 
 - PSD_DISABLEPAPER, kağıt seçim denetimini devre dışı bırakır.
 
@@ -171,7 +171,7 @@ CPageSetupDialog(
 
 ##  <a name="createprinterdc"></a>  CPageSetupDialog::CreatePrinterDC
 
-[DEVMODE](/windows/win32/api/wingdi/ns-wingdi-devmodea) ve [DEVNAMES](/windows/desktop/api/commdlg/ns-commdlg-tagdevnames) yapılarından bir yazıcı cihaz bağlamı oluşturur.
+[DEVMODE](/windows/win32/api/wingdi/ns-wingdi-devmodea) ve [DEVNAMES](/windows/win32/api/commdlg/ns-commdlg-devnames) yapılarından bir yazıcı cihaz bağlamı oluşturur.
 
 ```
 HDC CreatePrinterDC();
@@ -191,7 +191,7 @@ virtual INT_PTR DoModal();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-IDOK veya ıDCANCEL. IDCANCEL döndürülürse, bir hatanın oluşup oluşmadığını öğrenmek için Windows [Commıdextendebir](/windows/desktop/api/commdlg/nf-commdlg-commdlgextendederror) işlevini çağırın.
+IDOK veya ıDCANCEL. IDCANCEL döndürülürse, bir hatanın oluşup oluşmadığını öğrenmek için Windows [Commıdextendebir](/windows/win32/api/commdlg/nf-commdlg-commdlgextendederror) işlevini çağırın.
 
 IDOK ve ıDCANCEL, kullanıcının Tamam veya Iptal düğmesini seçip seçmediğini belirten sabitlerdir.
 
@@ -231,7 +231,7 @@ LPDEVMODE GetDevMode() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Cihaz başlatma ve yazdırma sürücüsünün ortamı hakkında bilgi içeren [DEVMODE](/windows/win32/api/wingdi/ns-wingdi-devmodea) veri yapısı. Windows SDK açıklanan Windows [GlobalUnlock](/windows/desktop/api/winbase/nf-winbase-globalunlock) işleviyle bu yapı tarafından alınan belleğin kilidini açmanız gerekir.
+Cihaz başlatma ve yazdırma sürücüsünün ortamı hakkında bilgi içeren [DEVMODE](/windows/win32/api/wingdi/ns-wingdi-devmodea) veri yapısı. Windows SDK açıklanan Windows [GlobalUnlock](/windows/win32/api/winbase/nf-winbase-globalunlock) işleviyle bu yapı tarafından alınan belleğin kilidini açmanız gerekir.
 
 ##  <a name="getdrivername"></a>  CPageSetupDialog::GetDriverName
 
@@ -262,7 +262,7 @@ void GetMargins(
 ### <a name="parameters"></a>Parametreler
 
 *lpRectMargins*<br/>
-Şu anda seçili olan yazıcının yazdırma kenar boşluklarını 1/100 1/1000 açıklayan bir [Rect](/windows/desktop/api/windef/ns-windef-tagrect) yapısına veya [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesine yönelik işaretçi. Bu dikdörtgenle ilgilenmiyorsanız, bu parametre için NULL değeri geçirin.
+Şu anda seçili olan yazıcının yazdırma kenar boşluklarını 1/100 1/1000 açıklayan bir [Rect](/windows/win32/api/windef/ns-windef-rect) yapısına veya [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesine yönelik işaretçi. Bu dikdörtgenle ilgilenmiyorsanız, bu parametre için NULL değeri geçirin.
 
 *Lprectminkenar boşlukları*<br/>
 Şu anda seçili `RECT` olan yazıcı `CRect` için en düşük yazdırma kenar boşluklarını (1/1000 inç veya 1/100 mm 'de) açıklayan bir yapı veya nesne işaretçisi. Bu dikdörtgenle ilgilenmiyorsanız, bu parametre için NULL değeri geçirin.
@@ -305,7 +305,7 @@ Bir `CPageSetupDialog` nesne oluşturduktan sonra, `DoModal` üye işlevini ça�
 
 `m_psd` Veri üyesini doğrudan değiştirirseniz, varsayılan davranışı geçersiz kılarsınız.
 
-[Pagesetupdlg](/windows/desktop/api/commdlg/ns-commdlg-tagpsda) yapısı hakkında daha fazla bilgi için Windows SDK bakın.
+[Pagesetupdlg](/windows/win32/api/commdlg/ns-commdlg-psdw) yapısı hakkında daha fazla bilgi için Windows SDK bakın.
 
 [CPageSetupDialog:: CPageSetupDialog](#cpagesetupdialog)örneğine bakın.
 
@@ -341,7 +341,7 @@ Sayfanın Şu anda çizildiği alanı belirten bir ileti belirtir. Aşağıdakil
 - Dönüş adres gösterimi için WM_PSD_YAFULLPAGERECT alanı. Bu alan, örnek sayfa alanının kenarlarını genişletir.
 
 *lpRect*<br/>
-Çizim alanının koordinatlarını içeren bir [CRect](../../atl-mfc-shared/reference/crect-class.md) veya [Rect](/windows/desktop/api/windef/ns-windef-tagrect) nesnesine yönelik işaretçi.
+Çizim alanının koordinatlarını içeren bir [CRect](../../atl-mfc-shared/reference/crect-class.md) veya [Rect](/windows/win32/api/windef/ns-windef-rect) nesnesine yönelik işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -393,7 +393,7 @@ Kağıdın veya zarfın yönünü ve yazıcının bir nokta vuruşlu veya HPPCL 
 - dikey modda 0x01f zarfı (nokta matris)
 
 *pPSD*<br/>
-`PAGESETUPDLG` Yapı işaretçisi. [Pagesetupdlg](/windows/desktop/api/commdlg/ns-commdlg-tagpsda)hakkında daha fazla bilgi için Windows SDK bakın.
+`PAGESETUPDLG` Yapı işaretçisi. [Pagesetupdlg](/windows/win32/api/commdlg/ns-commdlg-psdw)hakkında daha fazla bilgi için Windows SDK bakın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

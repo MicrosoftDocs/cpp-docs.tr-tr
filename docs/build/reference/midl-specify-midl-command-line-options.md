@@ -11,39 +11,39 @@ helpviewer_keywords:
 - MIDL linker option
 - MIDL, command line options
 ms.assetid: 22dc259e-b34c-4ed3-a380-4beb734482c1
-ms.openlocfilehash: 584958ac51bdc491ad1bdd16117ecaad6e000ec7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ca172428943d2446490eeb10741966f5e8c9ea85
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62321078"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69492717"
 ---
 # <a name="midl-specify-midl-command-line-options"></a>/MIDL (MIDL Komut Satırı Seçeneklerini Belirt)
 
-MIDL komut satırı seçenekleri için bir yanıt dosyası belirtir
+MıDL komut satırı seçenekleri için bir yanıt dosyası belirtir
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **/ MIDL:\@**<em>dosyası</em>
+> **/MIDL:\@** <em>Dosya</em>
 
 ## <a name="arguments"></a>Arguments
 
-*Dosya*<br/>
-İçeren dosyanın adını [MIDL komut satırı seçeneklerini](/windows/desktop/Midl/general-midl-command-line-syntax).
+*dosyasýný*<br/>
+[MIDL komut satırı seçeneklerini](/windows/win32/Midl/general-midl-command-line-syntax)içeren dosyanın adı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-TLB dosya bir IDL dosyası dönüştürülmesi için tüm seçenekleri verilmelidir *dosya*; MIDL komut satırı seçenekleri, bağlayıcı'nın komut satırında belirtilemez. /MIDL belirtilmezse, MIDL Derleyici yalnızca IDL dosyası adı ve diğer bir seçenek ile çağrılır.
+Bir IDL dosyasını bir TLB dosyasına dönüştürmeye yönelik tüm seçenekler *dosyada*verilmelidir; MıDL komut satırı seçenekleri bağlayıcının komut satırında belirtilemez. /MıDL belirtilmemişse, MıDL derleyicisi yalnızca IDL dosya adı ve başka hiçbir seçenek olmadan çağrılır.
 
-Bu dosya her satırda bir MIDL komut satırı seçeneği içermelidir.
+Dosya, her satır için bir MıDL komut satırı seçeneği içermelidir.
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual C++ Studio 'da derleyici ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Seçin **yapılandırma özellikleri** > **bağlayıcı** > **katıştırılmış IDL** özellik sayfası.
+1. **Yapılandırma özellikleri** > Bağlayıcısıkatıştırılmış > **IDL** özellik sayfasını seçin.
 
-1. Değiştirme **MIDL komutları** özelliği.
+1. **MIDL Commands** özelliğini değiştirin.
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
 

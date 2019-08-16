@@ -7,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - CComEnumOnSTL class
 ms.assetid: befe1a44-7a00-4f28-9a2e-cc0fa526643c
-ms.openlocfilehash: f9bf9c227984b2fdbf460f970357f395934b238c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ab11ea5e5347c9c8684e8710e9742fdbcad8a46b
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62246388"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69497162"
 ---
 # <a name="ccomenumonstl-class"></a>CComEnumOnSTL sınıfı
 
-Bu sınıf, bir C++ Standart Kitaplığı koleksiyonuna bağlı bir COM Numaralandırıcı nesnesi tanımlar.
+Bu sınıf, bir C++ standart kitaplık koleksiyonunu temel alan bir com Numaralandırıcı nesnesi tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -32,44 +32,44 @@ CollType>,
 
 #### <a name="parameters"></a>Parametreler
 
-*temel*<br/>
-Bir COM Numaralandırıcı. Bkz: [IEnumString](/windows/desktop/api/objidl/nn-objidl-ienumstring) örneği.
+*Temel*<br/>
+COM numaralandırıcısı. Örnek için bkz. [IEnumString](/windows/win32/api/objidl/nn-objidl-ienumstring) .
 
-*piid*<br/>
-Numaralandırıcı arabirimi arabirim kimliği için bir işaretçi.
+*piıd*<br/>
+Numaralandırıcı arabiriminin arabirim KIMLIĞINE yönelik bir işaretçi.
 
-*T*<br/>
-Numaralandırıcı arabirim tarafından sunulan öğe türü.
+*ŞI*<br/>
+Numaralandırıcı arabirimi tarafından kullanıma sunulan öğenin türü.
 
 *Kopyala*<br/>
-A [kopyalama İlkesi](../../atl/atl-copy-policy-classes.md) sınıfı.
+Bir [kopyalama ilkesi](../../atl/atl-copy-policy-classes.md) sınıfı.
 
 *CollType*<br/>
-Bir C++ Standart Kitaplığı kapsayıcı sınıfı.
+C++ Standart kitaplık kapsayıcı sınıfı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CComEnumOnSTL` bir C++ Standart Kitaplığı koleksiyonuna bağlı bir COM Numaralandırıcı nesnesi tanımlar. Bu sınıf kendi veya o ilkelerle birlikte kullanılabilir [Icollectiononstlımpl](../../atl/reference/icollectiononstlimpl-class.md). Bu sınıf kullanmak için tipik adımları aşağıda özetlenmiştir. Daha fazla bilgi için [ATL koleksiyonları ve numaralandırıcıları](../../atl/atl-collections-and-enumerators.md).
+`CComEnumOnSTL`C++ standart kitaplık koleksiyonunu temel alan bir com Numaralandırıcı nesnesi tanımlar. Bu sınıf, kendi içinde veya [ıollectiononstlımpl](../../atl/reference/icollectiononstlimpl-class.md)ile birlikte kullanılabilir. Bu sınıfı kullanmanın tipik adımları aşağıda özetlenmiştir. Daha fazla bilgi için bkz. [atl koleksiyonları ve Numaralandırıcılar](../../atl/atl-collections-and-enumerators.md).
 
-## <a name="to-use-this-class-with-icollectiononstlimpl"></a>Bu sınıf Icollectiononstlımpl ile kullanmak için:
+## <a name="to-use-this-class-with-icollectiononstlimpl"></a>Bu sınıfı ıollectiononstlımpl ile kullanmak için:
 
-- **TypeDef** bu sınıfın özelleştirmesi.
+- **typedef** bu sınıfın özelleştirmesi.
 
-- Kullanım **typedef** özelleştirmesi son şablon bağımsız değişken olarak `ICollectionOnSTLImpl`.
+- Öğesinin`ICollectionOnSTLImpl`bir özelleştirmesinde son şablon bağımsız değişkeni olarak **typedef** kullanın.
 
-Bkz: [ATL koleksiyonları ve numaralandırıcıları](../../atl/atl-collections-and-enumerators.md) örneği.
+Bir örnek için bkz. [atl koleksiyonları ve Numaralandırıcılar](../../atl/atl-collections-and-enumerators.md) .
 
-## <a name="to-use-this-class-independently-of-icollectiononstlimpl"></a>Bu sınıf Icollectiononstlımpl bağımsız olarak kullanmak için:
+## <a name="to-use-this-class-independently-of-icollectiononstlimpl"></a>Bu sınıfı ıollectiononstlımpl 'dan bağımsız olarak kullanmak için:
 
-- **TypeDef** bu sınıfın özelleştirmesi.
+- **typedef** bu sınıfın özelleştirmesi.
 
-- Kullanım **typedef** özelleştirmesi şablon bağımsız değişken olarak `CComObject`.
+- Öğesinin`CComObject`bir özelleştirmesi içinde şablon bağımsız değişkeni olarak **typedef** kullanın.
 
-- Bir örneğini oluşturmak `CComObject` özelleştirmesi.
+- `CComObject` Özelleşmenin bir örneğini oluşturun.
 
-- Numaralandırıcı nesnesi çağırarak denetlediği başlatmak [IEnumOnSTLImpl::Init](../../atl/reference/ienumonstlimpl-class.md#init).
+- [IEnumOnSTLImpl:: Init](../../atl/reference/ienumonstlimpl-class.md#init)çağırarak Numaralandırıcı nesnesini başlatın.
 
-- Numaralandırıcı arabirimi istemciye döndürür.
+- Numaralandırıcı arabirimini istemciye döndürün.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -85,25 +85,25 @@ Bkz: [ATL koleksiyonları ve numaralandırıcıları](../../atl/atl-collections-
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlcom.h
+**Üstbilgi:** atlcom. h
 
 ## <a name="example"></a>Örnek
 
-Aşağıda gösterilen kod oluşturulması ve başlatılması bir sabit listesi nesnesi işlemek için genel bir işlev sağlar:
+Aşağıda gösterilen kod, bir Numaralandırıcı nesnesinin oluşturulmasını ve başlatılmasını işlemek için genel bir işlev sağlar:
 
 [!code-cpp[NVC_ATL_COM#34](../../atl/codesnippet/cpp/ccomenumonstl-class_1.h)]
 
-Bu şablon işlevi uygulamak için kullanılan `_NewEnum` aşağıda gösterildiği gibi bir toplama arabirimin özelliği:
+Bu şablon işlevi, `_NewEnum` aşağıda gösterildiği gibi bir koleksiyon arabiriminin özelliğini uygulamak için kullanılabilir:
 
 [!code-cpp[NVC_ATL_COM#35](../../atl/codesnippet/cpp/ccomenumonstl-class_2.h)]
 
-Bu kod oluşturur bir **typedef** için `CComEnumOnSTL` oluşan bir vektörü sunan `CComVariant`s yoluyla `IEnumVariant` arabirimi. `CVariantCollection` Sınıfı yalnızca uzmanlaşmış `CreateSTLEnumerator` Numaralandırıcı bu tür nesnelerle çalışmayı.
+Bu kod, bir için bir `CComEnumOnSTL` typedef oluşturur ve `IEnumVariant` bu bir `CComVariant`for arayüzü aracılığıyla bir vektör sunar. Sınıfı `CVariantCollection` , bu türün Numaralandırıcı `CreateSTLEnumerator` nesneleriyle birlikte çalışmak için de uzmanlaşmış.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [IEnumOnSTLImpl](../../atl/reference/ienumonstlimpl-class.md)<br/>
-[ATLCollections örneği: Icollectiononstlımpl ve CComEnumOnSTL özel kopyalama İlkesi sınıfları gösterir](../../overview/visual-cpp-samples.md)<br/>
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)<br/>
+[ATLCollections örneği: Iollectiononstlımpl, CComEnumOnSTL ve özel kopya Ilkesi sınıflarını gösterir](../../overview/visual-cpp-samples.md)<br/>
+[Sınıfa genel bakış](../../atl/atl-class-overview.md)<br/>
 [CComObjectRootEx Sınıfı](../../atl/reference/ccomobjectrootex-class.md)<br/>
 [CComObjectThreadModel](atl-typedefs.md#ccomobjectthreadmodel)<br/>
 [IEnumOnSTLImpl Sınıfı](../../atl/reference/ienumonstlimpl-class.md)

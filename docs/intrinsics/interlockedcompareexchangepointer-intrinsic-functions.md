@@ -1,5 +1,5 @@
 ---
-title: _Interlockedcompareexchangepointer iç işlevleri
+title: _InterlockedCompareExchangePointer İç İşlevleri
 ms.date: 11/04/2016
 f1_keywords:
 - _InterlockedCompareExchangePointer_HLERelease
@@ -24,18 +24,18 @@ helpviewer_keywords:
 - _InterlockedCompareExchangePointer_nf intrinsic
 - _InterlockedCompareExchangePointer_np intrinsic
 ms.assetid: 97fde59d-2bf9-42aa-a0fe-a5b6befdd44b
-ms.openlocfilehash: 2db18c73f7765454d29e2dfdbd9408f62c51d32a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7b8ba4fe6224292d0160f859aeb630fc17c2d992
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62348737"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69509431"
 ---
-# <a name="interlockedcompareexchangepointer-intrinsic-functions"></a>_Interlockedcompareexchangepointer iç işlevleri
+# <a name="_interlockedcompareexchangepointer-intrinsic-functions"></a>_InterlockedCompareExchangePointer İç İşlevleri
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Depolayan atomik işlem gerçekleştirir `Exchange` içindeki adres `Destination` adres `Comparand` ve `Destination` adresi eşit.
+Ve adresi eşitse adresi `Destination` `Exchange` adresini`Destination` depolayan atomik bir işlem gerçekleştirir. `Comparand`
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -79,44 +79,44 @@ long _InterlockedCompareExchangePointer_rel (
 
 #### <a name="parameters"></a>Parametreler
 
-*Hedef*<br/>
-[out içinde] Hedef değer için bir işaretçi işaretçisi. Oturum yok sayılır.
+*Hedefine*<br/>
+[in, out] Hedef değer işaretçisinin işaretçisi. İşaret yok sayılır.
 
 *Exchange*<br/>
-[in] Exchange işaretçisi. Oturum yok sayılır.
+'ndaki Exchange işaretçisi. İşaret yok sayılır.
 
-*Karşılaştırılan*<br/>
-[in] Hedefe karşılaştırmak için işaretçi. Oturum yok sayılır.
+*Karşılaştırılanı desteklemiyor*<br/>
+'ndaki Hedefle Karşılaştırılacak işaretçi. İşaret yok sayılır.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Dönüş değeri hedef ilk değeridir.
+Dönüş değeri, hedefin ilk değeridir.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İç|Mimari|Üstbilgi|
+|Alanlarla|Mimari|Üstbilgi|
 |---------------|------------------|------------|
-|`_InterlockedCompareExchangePointer`|x86, ARM, x64|\<intrin.h >|
-|`_InterlockedCompareExchangePointer_acq`, `_InterlockedCompareExchangePointer_nf`, `_InterlockedCompareExchangePointer_rel`|ARM|\<iiintrin.h >|
-|`_InterlockedCompareExchangePointer_HLEAcquire`, `_InterlockedCompareExchangePointer_HLERelease`|x86, x64|\<immintrin.h >|
+|`_InterlockedCompareExchangePointer`|x86, ARM, x64|\<Intrin. h >|
+|`_InterlockedCompareExchangePointer_acq`, `_InterlockedCompareExchangePointer_nf`, `_InterlockedCompareExchangePointer_rel`|ARM|\<iiıntrin. h >|
+|`_InterlockedCompareExchangePointer_HLEAcquire`, `_InterlockedCompareExchangePointer_HLERelease`|x86, x64|\<ımintrin. h >|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`_InterlockedCompareExchangePointer` atomik bir karşılaştırma gerçekleştirir `Destination` ele `Comparand` adresi. Varsa `Destination` adresi eşittir `Comparand` adresi `Exchange` adresi tarafından belirtilen adresi depolanan `Destination`. Aksi takdirde, hiçbir işlem yapılmadı.
+`_InterlockedCompareExchangePointer``Destination` adresle`Comparand` ilgili atomik bir karşılaştırma gerçekleştirir. Adres adrese eşitse`Exchange` , adres tarafından`Destination`belirtilen adreste saklanır. `Comparand` `Destination` Aksi takdirde, işlem yapılmaz.
 
-`_InterlockedCompareExchangePointer` Win32 Windows SDK'sı için derleyici iç desteği sağlayan [_ınterlockedcompareexchangepointer](https://msdn.microsoft.com/library/ff547863.aspx) işlevi.
+`_InterlockedCompareExchangePointer`Win32 Windows SDK [ınterlockedcompareexchangepointer](/windows-hardware/drivers/ddi/content/wdm/nf-wdm-interlockedcompareexchangepointer) işlevi için derleyicinin iç desteğini sağlar.
 
-Nasıl kullanılacağını gösteren bir örnek `_InterlockedCompareExchangePointer`, bkz: [_ınterlockeddecrement](../intrinsics/interlockeddecrement-intrinsic-functions.md).
+Öğesinin nasıl kullanılacağına `_InterlockedCompareExchangePointer`ilişkin bir örnek için bkz. [_ınterlockedazaltma](../intrinsics/interlockeddecrement-intrinsic-functions.md).
 
-ARM platformlarında, yapı içleri ile kullanmak `_acq` ve `_rel` almak ve yayın semantiğini gibi kritik bir bölüm başında ve sonunda sonekleri. ARM iç bilgileri ile bir `_nf` ("hiçbir sınır") soneki bellek önünde bir engel hareket değil.
+ARM platformlarında, önemli bir bölümün başındaki ve `_acq` sonundaki `_rel` gibi alma ve bırakma semantiklerine ihtiyacınız varsa, iç bilgileri ve son eklerini kullanın. `_nf` ("Çit olmayan") son eki olan ARM iç öğeleri bellek engeli olarak davranmaz.
 
-Yapı içleri ile bir `_np` ("hiçbir hazırlık") soneki, derleyici tarafından eklenen bir olası önceden getirme işleminin engelle.
+`_np` ("Önceden getirme yok") sonekine sahip iç bilgiler, olası bir önceden getirme işleminin derleyici tarafından eklenmesini engeller.
 
-Donanım kilit eleme (HLE) yönergeleri yapı içleri ile destekleyen Intel platformlarında `_HLEAcquire` ve `_HLERelease` sonekleri kapsayacak performans donanım kilit yazma adımda ortadan kaldırarak hızlandırabilir işlemci bir ipucu verir. Bu iç HLE desteklemeyen platformları üzerinde çağrılırsa ipucu yoksayıldı.
+Donanım kilidi (HLE) yönergelerini destekleyen Intel platformlarında, `_HLEAcquire` ve `_HLERelease` son ekler, donanımda bir kilit yazma adımını ortadan kaldırarak işlemciyi hızlandıran bir ipucu içerir. Bu iç bilgiler HLE 'yı desteklemeyen platformlarda çağrılırsa, ipucu yok sayılır.
 
-Bu yordamlar, yalnızca iç öğe olarak kullanılabilir.
+Bu yordamlar yalnızca iç bilgiler olarak kullanılabilir.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

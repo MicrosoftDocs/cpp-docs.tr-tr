@@ -5,40 +5,40 @@ helpviewer_keywords:
 - CHeaderCtrl class [MFC], creating
 - header controls [MFC], creating
 ms.assetid: 7864d9d2-4a2c-4622-b58b-7b110a1e28d2
-ms.openlocfilehash: 669b13cf566f24bfcd5a29ae41af1cdb90513f73
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 99269214666c324214422ad989dbbd8bff6fc345
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62242321"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69508817"
 ---
 # <a name="creating-the-header-control"></a>Üstbilgi Denetimi Oluşturma
 
-Üstbilgi denetimi (bir üstbilgi denetimi içeren bir liste denetimini ekleyebiliyor olmanıza rağmen) doğrudan iletişim kutusu Düzenleyicisi'nde kullanılabilir değil.
+Üst bilgi denetimi iletişim kutusu düzenleyicisinde doğrudan kullanılamaz (ancak bir başlık denetimi içeren bir liste denetimi ekleyebilirsiniz).
 
-### <a name="to-put-a-header-control-in-a-dialog-box"></a>Üstbilgi denetimi bir iletişim kutusuna yerleştirin
+### <a name="to-put-a-header-control-in-a-dialog-box"></a>Bir iletişim kutusuna üst bilgi denetimi koymak için
 
-1. El ile türündeki üye değişkeni ekleme [CHeaderCtrl](../mfc/reference/cheaderctrl-class.md) iletişim sınıfınızdaki.
+1. İletişim sınıfınızı [CHeaderCtrl](../mfc/reference/cheaderctrl-class.md) türünde bir üye değişkenini el ile ekleyin.
 
-1. İçinde [OnInitDialog](../mfc/reference/cdialog-class.md#oninitdialog), oluşturun ve stillerini ayarlama `CHeaderCtrl`konumlandırın ve görüntüleyin.
+1. [OnInitDialog](../mfc/reference/cdialog-class.md#oninitdialog)' da, `CHeaderCtrl`için stilleri oluşturun ve ayarlayın, konumlandırın ve görüntüleyin.
 
-1. Üstbilgi denetimine öğe ekleyin.
+1. Üst bilgi denetimine öğe ekleyin.
 
-1. Özellikler penceresinde, herhangi bir üstbilgi denetimi bildirim iletileri için iletişim kutusu sınıfı işleyici işlevleri eşleştirmek için gereken işlemek için kullanın (bkz [iletileri işlevlere eşleme](../mfc/reference/mapping-messages-to-functions.md)).
+1. İşlemek için gereken tüm üst bilgi denetimi bildirim iletileri için İletişim sınıfındaki işleyici işlevlerini eşlemek için Özellikler penceresi kullanın (bkz. [Iletileri IŞLEVLERE eşleme](../mfc/reference/mapping-messages-to-functions.md)).
 
-### <a name="to-put-a-header-control-in-a-view-not-a-clistview"></a>Üstbilgi denetimi görünümünde (CListView değil) yerleştirmek için
+### <a name="to-put-a-header-control-in-a-view-not-a-clistview"></a>Bir görünüme üst bilgi denetimi koymak için (CListView değil)
 
-1. Ekleme bir [CHeaderCtrl](../mfc/reference/cheaderctrl-class.md) nesnesi, görünüm sınıfı.
+1. Görünüm sınıfınıza bir [CHeaderCtrl](../mfc/reference/cheaderctrl-class.md) nesnesi ekleyin.
 
-1. Stil, konumlandırma ve üst bilgi denetimi penceresi 's görüntülemek [OnInitialUpdate](../mfc/reference/cview-class.md#oninitialupdate) üye işlevi.
+1. Görünümün [OnInitialUpdate](../mfc/reference/cview-class.md#oninitialupdate) üye işlevindeki başlık Denetim penceresini stil, konum ve görüntüleme.
 
-1. Üstbilgi denetimine öğe ekleyin.
+1. Üst bilgi denetimine öğe ekleyin.
 
-1. Özellikler penceresinde, herhangi bir üstbilgi denetimi bildirim iletileri için Görünüm sınıfı işleyici işlevleri eşleştirmek için gereken işlemek için kullanın (bkz [iletileri işlevlere eşleme](../mfc/reference/mapping-messages-to-functions.md)).
+1. İşlemek için gereken tüm üst bilgi denetimi bildirim iletileri için Görünüm sınıfındaki işleyici işlevlerini eşlemek için Özellikler penceresi kullanın (bkz. [Iletileri IŞLEVLERE eşleme](../mfc/reference/mapping-messages-to-functions.md)).
 
-Görünüm veya iletişim nesne oluşturulduğunda, her iki durumda da, katıştırılmış denetime nesnesi oluşturulur. Çağırmalısınız sonra [CHeaderCtrl::Create](../mfc/reference/cheaderctrl-class.md#create) denetimi penceresi oluşturmak için. Denetim konumlandırmak için arama [CHeaderCtrl::Layout](../mfc/reference/cheaderctrl-class.md#layout) denetimin ilk boyutunu ve konumunu belirlemek için ve [SetWindowPos](../mfc/reference/cwnd-class.md#setwindowpos) istediğiniz konumu ayarlamak için. Daha sonra açıklandığı gibi öğeleri Ekle [üstbilgi denetimine öğe eklemeyi](../mfc/adding-items-to-the-header-control.md).
+Her iki durumda da, görünüm veya iletişim nesnesi oluşturulduğunda katıştırılmış denetim nesnesi oluşturulur. Sonra Denetim penceresini oluşturmak için [CHeaderCtrl:: Create](../mfc/reference/cheaderctrl-class.md#create) komutunu çağırmanız gerekir. Denetimi konumlandırmak için, denetimin ilk boyutunu ve konumunu ve [SetWindowPos](../mfc/reference/cwnd-class.md#setwindowpos) 'u istediğiniz konuma göre ayarlamak Için [CHeaderCtrl:: Layout](../mfc/reference/cheaderctrl-class.md#layout) komutunu çağırın. Ardından [üst bilgi denetimine öğe ekleme](../mfc/adding-items-to-the-header-control.md)bölümünde açıklandığı gibi öğeleri ekleyin.
 
-Daha fazla bilgi için [üstbilgi denetimi oluşturma](/windows/desktop/Controls/header-controls) Windows SDK.
+Daha fazla bilgi için, bkz. Windows SDK [üst bilgi denetimi oluşturma](/windows/win32/Controls/header-controls) .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

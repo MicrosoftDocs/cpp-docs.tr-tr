@@ -5,288 +5,288 @@ helpviewer_keywords:
 - MFC, classes
 - classes [MFC], MFC
 ms.assetid: 7b6db805-a572-43fd-9046-0fa6e3663e63
-ms.openlocfilehash: e31e7d68676a40da51f214496a13072d0d4d2b28
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: dab5c716cc21c0a07eaf03def7e0346c877f55b5
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62310324"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69502046"
 ---
 # <a name="mfc-classes"></a>MFC Sınıfları
 
-Aşağıdaki listede sınıflar Microsoft Foundation Class (MFC) Kitaplığı'nda dahil edilir.
+Aşağıdaki listede yer alan sınıflar, Microsoft Foundation Class (MFC) kitaplığına dahil edilmiştir.
 
 > [!TIP]
->  Hakkında bilgi için [CStringT](../../atl-mfc-shared/reference/cstringt-class.md) ve MFC ve ATL programlama için ortak olan diğer sınıflar [MFC ve ATL tarafından paylaşılan sınıfları](../../atl-mfc-shared/reference/classes-shared-by-mfc-and-atl.md).
+>  [CStringT](../../atl-mfc-shared/reference/cstringt-class.md) ve hem MFC hem de ATL programlamada ortak olan diğer sınıflar hakkında daha fazla bilgi için bkz. [MFC ve ATL tarafından paylaşılan sınıflar](../../atl-mfc-shared/reference/classes-shared-by-mfc-and-atl.md).
 
 > [!IMPORTANT]
->  MFC sınıfları ve üyeleri, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.
+>  MFC sınıfları ve üyeleri Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
 [CAccelerateDecelerateTransition Sınıfı](../../mfc/reference/cacceleratedeceleratetransition-class.md)<br/>
-Uygular-hızlandırma yavaşlatma geçişi.
+Hızlandırma-yavaşlatma geçişi uygular.
 
 [CAnimateCtrl Sınıfı](../../mfc/reference/canimatectrl-class.md)<br/>
 Windows ortak animasyon denetimi işlevlerini sağlar.
 
 [CAnimationBaseObject Sınıfı](../../mfc/reference/canimationbaseobject-class.md)<br/>
-Tüm animasyon nesneleri için taban sınıf.
+Tüm animasyon nesneleri için temel sınıf.
 
 [CAnimationColor Sınıfı](../../mfc/reference/canimationcolor-class.md)<br/>
-Olan kırmızı, yeşil ve mavi bileşenlerinin animasyonunu oluşturulabilen bir rengin işlevselliğini uygular.
+Kırmızı, yeşil ve mavi bileşenleri animasyonlu olabilecek bir rengin işlevselliğini uygular.
 
 [CAnimationController Sınıfı](../../mfc/reference/canimationcontroller-class.md)<br/>
-Oluşturmak ve animasyonları yönetmek için merkezi bir arabirim sağlayan animasyon denetleyicisini uygular.
+Animasyonların oluşturulması ve yönetilmesi için merkezi bir arabirim sağlayan animasyon denetleyicisini uygular.
 
 [CAnimationGroup Sınıfı](../../mfc/reference/canimationgroup-class.md)<br/>
-Oluşturmak ve animasyonları yönetmek için merkezi bir arabirim sağlayan animasyon denetleyicisini uygular.
+Animasyonların oluşturulması ve yönetilmesi için merkezi bir arabirim sağlayan animasyon denetleyicisini uygular.
 
 [CAnimationManagerEventHandler Sınıfı](../../mfc/reference/canimationmanagereventhandler-class.md)<br/>
-Animasyon yöneticisinin durumu değiştirildiğinde animasyon API'sı tarafından çağrılan bir geri arama gerçekleştirir.
+, Bir animasyon yöneticisinin durumu değiştirildiğinde animasyon API 'Sı tarafından çağrılan bir geri çağırma uygular.
 
 [CAnimationPoint Sınıfı](../../mfc/reference/canimationpoint-class.md)<br/>
-Koordinatlarının animasyonu oluşturulabilen bir nokta işlevselliğini uygular.
+Koordinatları animasyonlu olabilecek bir noktanın işlevselliğini uygular.
 
 [CAnimationRect Sınıfı](../../mfc/reference/canimationrect-class.md)<br/>
-Kenarlarının animasyonu oluşturulabilen bir dikdörtgen işlevselliğini uygular.
+Kenarları animasyonlu olabilecek bir dikdörtgenin işlevlerini uygular.
 
 [CAnimationSize Sınıfı](../../mfc/reference/canimationsize-class.md)<br/>
-Boyutlarının animasyonu oluşturulabilen bir nesne boyutlandırma işlevselliğini uygular.
+Boyutları animasyon uygulanabilir olan bir boyut nesnesi işlevselliğini uygular.
 
 [CAnimationStoryboardEventHandler Sınıfı](../../mfc/reference/canimationstoryboardeventhandler-class.md)<br/>
-Film şeridinin durumu değiştirildiğinde veya film şeridi güncelleştirildiğinde animasyon API'sı tarafından çağrılan bir geri arama gerçekleştirir.
+Film şeridinin durumu değiştirildiğinde veya bir görsel taslak güncelleştirilirken animasyon API 'Sı tarafından çağrılan bir geri çağırma uygular.
 
 [CAnimationTimerEventHandler Sınıfı](../../mfc/reference/canimationtimereventhandler-class.md)<br/>
-Zamanlama olayları oluştuğunda animasyon API'sı tarafından çağrılan bir geri arama gerçekleştirir.
+, Zamanlama olayları gerçekleştiğinde animasyon API 'Sı tarafından çağrılan bir geri çağırma uygular.
 
 [CAnimationValue Sınıfı](../../mfc/reference/canimationvalue-class.md)<br/>
-Bir değeri olan animasyon nesnesinin işlevselliğini uygular.
+Bir değere sahip animasyon nesnesinin işlevselliğini uygular.
 
 [CAnimationVariable Sınıfı](../../mfc/reference/canimationvariable-class.md)<br/>
 Bir animasyon değişkenini temsil eder.
 
 [CAnimationVariableChangeHandler Sınıfı](../../mfc/reference/canimationvariablechangehandler-class.md)<br/>
-Animasyon değişkeninin bir değeri değiştiğinde animasyon API'sı tarafından çağrılan bir geri arama gerçekleştirir.
+Animasyon değişkeninin değeri değiştiğinde animasyon API 'Sı tarafından çağrılan bir geri çağırma uygular.
 
 [CAnimationVariableIntegerChangeHandler Sınıfı](../../mfc/reference/canimationvariableintegerchangehandler-class.md)<br/>
-Animasyon değişkeninin bir değeri değiştiğinde animasyon API'sı tarafından çağrılan bir geri arama gerçekleştirir.
+Animasyon değişkeninin değeri değiştiğinde animasyon API 'Sı tarafından çağrılan bir geri çağırma uygular.
 
 [CArchive Sınıfı](../../mfc/reference/carchive-class.md)<br/>
-Bu nesneler silindikten sonra devam eden bir kalıcı ikili biçimde (genellikle disk depolama) karmaşık ağ nesnelerini kaydetmenizi sağlar.
+Karmaşık bir nesne ağını, bu nesneler silindikten sonra devam eden kalıcı bir ikili biçimde (genellikle disk depolaması) kaydetmenizi sağlar.
 
 [CArchiveException Sınıfı](../../mfc/reference/carchiveexception-class.md)<br/>
-Seri hale getirme özel durum koşulunu temsil eder.
+Serileştirme özel durum koşulunu temsil eder.
 
 [CArray Sınıfı](../../mfc/reference/carray-class.md)<br/>
-C dizilerine benzer, ancak dinamik büyütülebilen dizileri destekler gerektikçe büyütün.
+C dizilerine benzeyen dizileri destekler, ancak gerektiğinde dinamik olarak azalabilir ve büyüyebilir.
 
 [CAsyncMonikerFile Sınıfı](../../mfc/reference/casyncmonikerfile-class.md)<br/>
-ActiveX denetimlerinde zaman uyumsuz adların kullanılması için işlevsellik sağlar (eski adı OLE denetimleri).
+ActiveX denetimlerinde (eski adıyla OLE denetimleri) zaman uyumsuz adların kullanılması için işlevsellik sağlar.
 
 [CAsyncSocket Sınıfı](../../mfc/reference/casyncsocket-class.md)<br/>
-Bir Windows yuva bir uç nokta ağ iletişimi olduğu temsil eder.
+Ağ iletişiminin uç noktası olan bir Windows yuvasını temsil eder.
 
 [CAutoHideDockSite Sınıfı](../../mfc/reference/cautohidedocksite-class.md)<br/>
-Genişletir [CDockSite sınıfı](../../mfc/reference/cdocksite-class.md) otomatik gizleme dock panellerini uygulamak için.
+[CDockSite sınıfını](../../mfc/reference/cdocksite-class.md) genişleterek otomatik gizleme yerleştirme bölmelerini uygular.
 
 [CBaseKeyFrame Sınıfı](../../mfc/reference/cbasekeyframe-class.md)<br/>
-Bir ana karenin temel işlevlerini uygular.
+, Bir ana karenin temel işlevlerini uygular.
 
 [CBasePane Sınıfı](../../mfc/reference/cbasepane-class.md)<br/>
 Tüm bölmeler için temel sınıf.
 
 [CBaseTabbedPane Sınıfı](../../mfc/reference/cbasetabbedpane-class.md)<br/>
-İşlevselliğini genişletir [CDockablePane sınıfı](../../mfc/reference/cdockablepane-class.md) sekmeli pencerelerin oluşturulmasını desteklemek için.
+Sekmeli pencerelerin oluşturulmasını desteklemek için [CDockablePane sınıfının](../../mfc/reference/cdockablepane-class.md) işlevselliğini genişletir.
 
 [CBaseTransition Sınıfı](../../mfc/reference/cbasetransition-class.md)<br/>
 Temel bir geçişi temsil eder.
 
 [CBitmap Sınıfı](../../mfc/reference/cbitmap-class.md)<br/>
-Bir Windows grafik cihaz arabirimi (GDI) bit eşlemi kapsüller ve bit eşlemi yönlendirmek üzere öğe işlevleri sağlar.
+Bir Windows grafik cihaz arabirimi (GDI) bit eşlemini kapsüller ve bit eşlemi işlemek için üye işlevleri sağlar.
 
 [CBitmapButton Sınıfı](../../mfc/reference/cbitmapbutton-class.md)<br/>
-Metin yerine bit eşlemli görüntülerle etiketlenmiş pushbutton denetimleri oluşturur.
+Metin yerine biteşlenmiş görüntülerle etiketlenmiş basma düğmeli denetimleri oluşturur.
 
 [CBitmapRenderTarget Sınıfı](../../mfc/reference/cbitmaprendertarget-class.md)<br/>
-İçin sarmalayıcı `ID2D1BitmapRenderTarget`.
+İçin `ID2D1BitmapRenderTarget`bir sarmalayıcı.
 
 [CBrush Sınıfı](../../mfc/reference/cbrush-class.md)<br/>
-Bir Windows grafik cihaz arabirimi (GDI) Fırçası kapsüller.
+Bir Windows grafik cihaz arabirimi (GDI) fırçası kapsüller.
 
 [CButton Sınıfı](../../mfc/reference/cbutton-class.md)<br/>
-Windows düğme denetimleri işlevlerini sağlar.
+Windows düğme denetimlerinin işlevlerini sağlar.
 
 [CByteArray Sınıfı](../../mfc/reference/cbytearray-class.md)<br/>
-Dinamik bayt dizilerini destekler.
+, Dinamik bayt dizilerini destekler.
 
 [CCachedDataPathProperty Sınıfı](../../mfc/reference/ccacheddatapathproperty-class.md)<br/>
-Uygulayan bir OLE denetim, zaman uyumsuz olarak aktarılabilen ve bir bellek dosyasında önbelleğe özelliği.
+Zaman uyumsuz olarak aktarılan ve bir bellek dosyasında önbelleğe alınmış bir OLE denetim özelliği uygular.
 
 [CCheckListBox Sınıfı](../../mfc/reference/cchecklistbox-class.md)<br/>
-Bir Windows Denetim listesi kutusu işlevlerini sağlar.
+Windows Denetim listesi kutusunun işlevlerini sağlar.
 
 [CClientDC Sınıfı](../../mfc/reference/cclientdc-class.md)<br/>
-Windows işlevlerini çağıran işler [GetDC](/windows/desktop/api/winuser/nf-winuser-getdc) oluşturma zamanında ve [ReleaseDC](/windows/desktop/api/winuser/nf-winuser-releasedc) yok etme.
+Oluşturma zamanında Windows işlevleri [GetDC](/windows/win32/api/winuser/nf-winuser-getdc) 'nin çağrılmasını ve yok etme sırasında [ReleaseDC](/windows/win32/api/winuser/nf-winuser-releasedc) 'yi işler.
 
 [CCmdTarget Sınıfı](../../mfc/reference/ccmdtarget-class.md)<br/>
 Microsoft Foundation Class Kitaplığı ileti eşleme mimarisi için temel sınıf.
 
 [CCmdUI Sınıfı](../../mfc/reference/ccmdui-class.md)<br/>
-Yalnızca kullanılan bir `ON_UPDATE_COMMAND_UI` işleyicisinde bir `CCmdTarget`-türetilmiş sınıf.
+Yalnızca türetilmiş sınıftaki bir `ON_UPDATE_COMMAND_UI` işleyici `CCmdTarget`içinde kullanılır.
 
 [CColorDialog Sınıfı](../../mfc/reference/ccolordialog-class.md)<br/>
-Bir renk seçimi iletişim kutusunu uygulamanıza eklemenize olanak sağlar.
+Uygulamanıza renk seçimi iletişim kutusu eklemenize olanak sağlar.
 
 [CComboBox Sınıfı](../../mfc/reference/ccombobox-class.md)<br/>
-Windows birleşik giriş kutusu işlevlerini sağlar.
+Windows Birleşik giriş kutusunun işlevlerini sağlar.
 
 [CComboBoxEx Sınıfı](../../mfc/reference/ccomboboxex-class.md)<br/>
-Birleşik giriş kutusu denetim görüntü listeleri için destek sağlayarak genişletir.
+Görüntü listeleri için destek sağlayarak Birleşik giriş kutusu denetimini genişletir.
 
 [CCommandLineInfo Sınıfı](../../mfc/reference/ccommandlineinfo-class.md)<br/>
-Uygulama başlangıcında komut satırını ayrıştırma Yardımcıları.
+Uygulama başlangıcında komut satırını ayrıştırmaya yardımcı olur.
 
 [CCommonDialog Sınıfı](../../mfc/reference/ccommondialog-class.md)<br/>
-Windows ortak iletişim kutularının işlevlerini kapsayan sınıflar için taban sınıf.
+Windows ortak iletişim kutularının işlevselliğini kapsülleyen sınıflar için temel sınıf.
 
 [CConnectionPoint Sınıfı](../../mfc/reference/cconnectionpoint-class.md)<br/>
-Özel bir "bağlantı noktası." adlı diğer OLE nesneleri ile iletişim kurmak için kullanılan arabirim türünü tanımlar
+"Bağlantı noktası" olarak adlandırılan diğer OLE nesneleriyle iletişim kurmak için kullanılan özel bir arabirim türünü tanımlar.
 
 [CConstantTransition Sınıfı](../../mfc/reference/cconstanttransition-class.md)<br/>
-Bir sabit geçişi kapsüller.
+Sabit bir geçişi kapsüller.
 
 [CContextMenuManager Sınıfı](../../mfc/reference/ccontextmenumanager-class.md)<br/>
 Bağlam menüleri olarak da bilinen kısayol menülerini yönetir.
 
 [CControlBar Sınıfı](../../mfc/reference/ccontrolbar-class.md)<br/>
-Denetim çubuğu sınıfları için temel sınıf [CStatusBar sınıfı](../../mfc/reference/cstatusbar-class.md), [CToolBar sınıfı](../../mfc/reference/ctoolbar-class.md), [CDialogBar sınıfı](../../mfc/reference/cdialogbar-class.md), [CReBar sınıfı](../../mfc/reference/crebar-class.md)ve [ COleResizeBar sınıfı](../../mfc/reference/coleresizebar-class.md).
+Denetim çubuğu sınıfları [CStatusBar sınıfı](../../mfc/reference/cstatusbar-class.md), [CToolBar sınıfı](../../mfc/reference/ctoolbar-class.md), [CDialogBar sınıfı](../../mfc/reference/cdialogbar-class.md), [CReBar sınıfı](../../mfc/reference/crebar-class.md)ve [COleResizeBar sınıfı](../../mfc/reference/coleresizebar-class.md)için temel sınıf.
 
 [CCriticalSection Sınıfı](../../mfc/reference/ccriticalsection-class.md)<br/>
-"Bir kaynağa veya kod bölümüne erişmek için bir defada tek bir iş parçacığı sağlayan bir eşitleme nesnesi olan bir kritik bölüm" ü temsil eder.
+Bir kaynağa veya kod bölümüne erişmek için bir seferde bir iş parçacığına izin veren bir eşitleme nesnesi olan bir "kritik bölümü" temsil eder.
 
 [CCtrlView Sınıfı](../../mfc/reference/cctrlview-class.md)<br/>
-Belge / görünüm mimarisi için Windows 98 ve Windows NT tarafından 3.51 sürümü ve sonraki sürümlerde desteklenen ortak denetimlere uyum sağlar.
+Belge görünümü mimarisini Windows 98 ve Windows NT sürüm 3,51 ve üzeri tarafından desteklenen ortak denetimlerle uyum sağlar.
 
 [CCubicTransition Sınıfı](../../mfc/reference/ccubictransition-class.md)<br/>
-Bir üçüncü derece geçişi kapsüller.
+Üçüncü dereceden geçişi kapsüller.
 
 [CCustomInterpolator Sınıfı](../../mfc/reference/ccustominterpolator-class.md)<br/>
-Temel Ara değer hesaplayıcı uygular.
+Temel bir enterpolatör uygular.
 
 [CCustomTransition Sınıfı](../../mfc/reference/ccustomtransition-class.md)<br/>
 Özel bir geçiş uygular.
 
 [CD2DBitmap Sınıfı](../../mfc/reference/cd2dbitmap-class.md)<br/>
-İçin sarmalayıcı `ID2D1Bitmap`.
+İçin `ID2D1Bitmap`bir sarmalayıcı.
 
 [CD2DBitmapBrush Sınıfı](../../mfc/reference/cd2dbitmapbrush-class.md)<br/>
-İçin sarmalayıcı `ID2D1BitmapBrush`.
+İçin `ID2D1BitmapBrush`bir sarmalayıcı.
 
 [CD2DBrush Sınıfı](../../mfc/reference/cd2dbrush-class.md)<br/>
-İçin sarmalayıcı `ID2D1Brush`.
+İçin `ID2D1Brush`bir sarmalayıcı.
 
 [CD2DBrushProperties Sınıfı](../../mfc/reference/cd2dbrushproperties-class.md)<br/>
-İçin sarmalayıcı `D2D1_BRUSH_PROPERTIES`.
+İçin `D2D1_BRUSH_PROPERTIES`bir sarmalayıcı.
 
 [CD2DEllipse Sınıfı](../../mfc/reference/cd2dellipse-class.md)<br/>
-İçin sarmalayıcı `D2D1_BRUSH_PROPERTIES`.
+İçin `D2D1_BRUSH_PROPERTIES`bir sarmalayıcı.
 
 [CD2DGeometry Sınıfı](../../mfc/reference/cd2dgeometry-class.md)<br/>
-İçin sarmalayıcı `ID2D1Geometry`.
+İçin `ID2D1Geometry`bir sarmalayıcı.
 
 [CD2DGeometrySink Sınıfı](../../mfc/reference/cd2dgeometrysink-class.md)<br/>
-İçin sarmalayıcı `ID2D1GeometrySink`.
+İçin `ID2D1GeometrySink`bir sarmalayıcı.
 
 [CD2DGradientBrush Sınıfı](../../mfc/reference/cd2dgradientbrush-class.md)<br/>
-Temel sınıfını `CD2DLinearGradientBrush` ve `CD2DRadialGradientBrush` sınıfları.
+`CD2DLinearGradientBrush` Ve sınıflarınıntabansınıfı.`CD2DRadialGradientBrush`
 
 [CD2DLayer Sınıfı](../../mfc/reference/cd2dlayer-class.md)<br/>
-İçin sarmalayıcı `ID2D1Layer`.
+İçin `ID2D1Layer`bir sarmalayıcı.
 
 [CD2DLinearGradientBrush Sınıfı](../../mfc/reference/cd2dlineargradientbrush-class.md)<br/>
-İçin sarmalayıcı `ID2D1LinearGradientBrush`.
+İçin `ID2D1LinearGradientBrush`bir sarmalayıcı.
 
 [CD2DMesh Sınıfı](../../mfc/reference/cd2dmesh-class.md)<br/>
-İçin sarmalayıcı `ID2D1Mesh`.
+İçin `ID2D1Mesh`bir sarmalayıcı.
 
 [CD2DPathGeometry Sınıfı](../../mfc/reference/cd2dpathgeometry-class.md)<br/>
-İçin sarmalayıcı `ID2D1PathGeometry`.
+İçin `ID2D1PathGeometry`bir sarmalayıcı.
 
 [CD2DPointF Sınıfı](../../mfc/reference/cd2dpointf-class.md)<br/>
-İçin sarmalayıcı `D2D1_POINT_2F`.
+İçin `D2D1_POINT_2F`bir sarmalayıcı.
 
 [CD2DPointU Sınıfı](../../mfc/reference/cd2dpointu-class.md)<br/>
-İçin sarmalayıcı `D2D1_POINT_2U`.
+İçin `D2D1_POINT_2U`bir sarmalayıcı.
 
 [CD2DRadialGradientBrush Sınıfı](../../mfc/reference/cd2dradialgradientbrush-class.md)<br/>
-İçin sarmalayıcı `ID2D1RadialGradientBrush`.
+İçin `ID2D1RadialGradientBrush`bir sarmalayıcı.
 
 [CD2DRectF Sınıfı](../../mfc/reference/cd2drectf-class.md)<br/>
-İçin sarmalayıcı `D2D1_RECT_F`.
+İçin `D2D1_RECT_F`bir sarmalayıcı.
 
 [CD2DRectU Sınıfı](../../mfc/reference/cd2drectu-class.md)<br/>
-İçin sarmalayıcı `D2D1_RECT_U`.
+İçin `D2D1_RECT_U`bir sarmalayıcı.
 
 [CD2DResource Sınıfı](../../mfc/reference/cd2dresource-class.md)<br/>
-Oluşturmak ve yönetmek için bir arabirim sunan bir soyut sınıf `D2D` Fırçalar, Katmanlar ve metinler gibi kaynakları.
+Fırçalar, Katmanlar ve metinler gibi kaynakları oluşturmak ve yönetmek `D2D` için bir arabirim sağlayan soyut bir sınıf.
 
 [CD2DRoundedRect Sınıfı](../../mfc/reference/cd2droundedrect-class.md)<br/>
-İçin sarmalayıcı `D2D1_ROUNDED_RECT`.
+İçin `D2D1_ROUNDED_RECT`bir sarmalayıcı.
 
 [CD2DSizeF Sınıfı](../../mfc/reference/cd2dsizef-class.md)<br/>
-İçin sarmalayıcı `D2D1_SIZE_F`.
+İçin `D2D1_SIZE_F`bir sarmalayıcı.
 
 [CD2DSizeU Sınıfı](../../mfc/reference/cd2dsizeu-class.md)<br/>
-İçin sarmalayıcı `D2D1_SIZE_U`.
+İçin `D2D1_SIZE_U`bir sarmalayıcı.
 
 [CD2DSolidColorBrush Sınıfı](../../mfc/reference/cd2dsolidcolorbrush-class.md)<br/>
-İçin sarmalayıcı `ID2D1SolidColorBrush`.
+İçin `ID2D1SolidColorBrush`bir sarmalayıcı.
 
 [CD2DTextFormat Sınıfı](../../mfc/reference/cd2dtextformat-class.md)<br/>
-İçin sarmalayıcı `IDWriteTextFormat`.
+İçin `IDWriteTextFormat`bir sarmalayıcı.
 
 [CD2DTextLayout Sınıfı](../../mfc/reference/cd2dtextlayout-class.md)<br/>
-İçin sarmalayıcı `IDWriteTextLayout`.
+İçin `IDWriteTextLayout`bir sarmalayıcı.
 
 [CDaoDatabase Sınıfı](../../mfc/reference/cdaodatabase-class.md)<br/>
-Veriler üzerinde çalışabileceğiniz veritabanı bağlantısını temsil eder.
+Veri üzerinde çalışabileceğiniz bir veritabanı bağlantısını temsil eder.
 
 [CDaoException Sınıfı](../../mfc/reference/cdaoexception-class.md)<br/>
 Veri erişim nesnelerine (DAO) göre MFC veritabanı sınıflarından kaynaklanan bir özel durum koşulunu temsil eder.
 
 [CDaoFieldExchange Sınıfı](../../mfc/reference/cdaofieldexchange-class.md)<br/>
-DAO veritabanı sınıfları tarafından kullanılan DAO kayıt alanı değişimi (DFX) yordamlarını destekler.
+DAO veritabanı sınıfları tarafından kullanılan DAO Kayıt alanı değişimi (DFX) yordamlarını destekler.
 
 [CDaoQueryDef Sınıfı](../../mfc/reference/cdaoquerydef-class.md)<br/>
-Bir sorgu tanımını veya "querydef" genellikle bir bir veritabanında kayıtlı temsil eder.
+Genellikle bir veritabanına kaydedilmiş bir sorgu tanımını veya "QueryDef" öğesini temsil eder.
 
 [CDaoRecordset Sınıfı](../../mfc/reference/cdaorecordset-class.md)<br/>
-Bir veri kaynağından seçilen kayıt kümesini temsil eder.
+Bir veri kaynağından seçilen bir kayıt kümesini temsil eder.
 
 [CDaoRecordView Sınıfı](../../mfc/reference/cdaorecordview-class.md)<br/>
 Denetimlerde veritabanı kayıtlarını görüntüleyen bir görünüm.
 
 [CDaoTableDef Sınıfı](../../mfc/reference/cdaotabledef-class.md)<br/>
-Temel tablonun veya eklenen tablonun saklı tanımını temsil eder.
+Bir temel tablonun veya eklenmiş tablonun saklı tanımını temsil eder.
 
 [CDaoWorkspace Sınıfı](../../mfc/reference/cdaoworkspace-class.md)<br/>
-Adlandırılmış, parola korumalı veritabanı oturumunu, tek bir kullanıcı tarafından oturum kapatma için oturum açma işlemi yönetir.
+Bir adlandırılmış, parola korumalı veritabanı oturumunu, oturum açmak için, tek bir kullanıcı tarafından yönetir.
 
 [CDatabase Sınıfı](../../mfc/reference/cdatabase-class.md)<br/>
-Veri kaynağı üzerinde çalışabileceğiniz bir veri kaynağı bağlantısını temsil eder.
+Veri kaynağında çalışabileceğiniz bir veri kaynağıyla bağlantısını temsil eder.
 
 [CDataExchange Sınıfı](../../mfc/reference/cdataexchange-class.md)<br/>
-İletişim kutusu veri değişimi (DDX) ve Microsoft Foundation sınıfları tarafından kullanılan iletişim kutusu veri doğrulama (DDV) yordamlarını destekler.
+, Microsoft Foundation sınıfları tarafından kullanılan iletişim kutusu veri değişimi (DDX) ve iletişim verileri doğrulama (DDV) yordamlarını destekler.
 
 [CDataPathProperty Sınıfı](../../mfc/reference/cdatapathproperty-class.md)<br/>
-Uygulayan bir OLE denetim zaman uyumsuz olarak yüklenebilen özelliği.
+Zaman uyumsuz olarak yüklenebilen bir OLE denetim özelliği uygular.
 
 [CDataRecoveryHandler Sınıfı](../../mfc/reference/cdatarecoveryhandler-class.md)<br/>
-Kapanıyorsa, belgeler ve uygulama beklenmedik bir şekilde geri yükler.
+Belgeleri yeniden kaydeder ve bir uygulamanın beklenmedik şekilde çıkış durumunda bunları geri yükler.
 
 [CDateTimeCtrl Sınıfı](../../mfc/reference/cdatetimectrl-class.md)<br/>
-Bir tarih ve Saat Seçici denetiminin işlevselliğini kapsüller.
+Tarih ve saat seçici denetiminin işlevselliğini Kapsüller.
 
 [CDBException Sınıfı](../../mfc/reference/cdbexception-class.md)<br/>
 Veritabanı sınıflarından kaynaklanan bir özel durum koşulunu temsil eder.
@@ -295,178 +295,178 @@ Veritabanı sınıflarından kaynaklanan bir özel durum koşulunu temsil eder.
 MFC ODBC sınıfları için bir değişken veri türünü temsil eder.
 
 [CDC Sınıfı](../../mfc/reference/cdc-class.md)<br/>
-Bir cihaz bağlamı nesnesinin sınıfını tanımlar.
+Cihaz bağlamı nesnelerinin bir sınıfını tanımlar.
 
 [CDCRenderTarget Sınıfı](../../mfc/reference/cdcrendertarget-class.md)<br/>
-İçin sarmalayıcı `ID2D1DCRenderTarget`.
+İçin `ID2D1DCRenderTarget`bir sarmalayıcı.
 
 [CDHtmlDialog Sınıfı](../../mfc/reference/cdhtmldialog-class.md)<br/>
-HTML kullanan iletişim kutuları oluşturmak için kullanılan kullanıcı arabirimini uygulamak için iletişim kutusu kaynakları yerine.
+Kullanıcı arabirimini uygulamak için iletişim kutusu kaynakları yerine HTML kullanan iletişim kutuları oluşturmak için kullanılır.
 
 [CDialog Sınıfı](../../mfc/reference/cdialog-class.md)<br/>
-İletişim kutularını ekranda görüntülemek için kullanılan temel sınıf.
+Ekranda iletişim kutularını görüntülemek için kullanılan temel sınıf.
 
 [CDialogBar Sınıfı](../../mfc/reference/cdialogbar-class.md)<br/>
-Bir denetim çubuğundaki Windows modsuz iletişim kutusu işlevlerini sağlar.
+Bir denetim çubuğundaki Windows kalıcı olmayan iletişim kutusunun işlevlerini sağlar.
 
 [CDialogEx Sınıfı](../../mfc/reference/cdialogex-class.md)<br/>
-Bir iletişim kutusunun arka plan görüntüsü ve arka plan rengini belirtir.
+İletişim kutusunun arka plan rengini ve arka plan resmini belirtir.
 
 [CDiscreteTransition Sınıfı](../../mfc/reference/cdiscretetransition-class.md)<br/>
-Bir ayrık geçişi kapsüller.
+Ayrık bir geçişi kapsüller.
 
 [CDocItem Sınıfı](../../mfc/reference/cdocitem-class.md)<br/>
-Bir belgenin verilerinin bileşenleri olan belge öğeleri için temel sınıf.
+Belge öğeleri için temel sınıf, bir belge verilerinin bileşenleri.
 
 [CDockablePane Sınıfı](../../mfc/reference/cdockablepane-class.md)<br/>
-Bir dock sitesine yerleştirilebilen veya sekmeli bir bölmeye eklenebilen bir bölme uygular.
+Bir dock sitesine yerleştirilmiş ya da sekmeli bir bölmeye dahil olabilecek bir bölme uygular.
 
 [CDockablePaneAdapter Sınıfı](../../mfc/reference/cdockablepaneadapter-class.md)<br/>
-İçin yerleştirme desteği sağlar `CWnd`-bölmeler.
+İle türetilmiş bölmeler için `CWnd`yerleştirme desteği sağlar.
 
 [CDockingManager Sınıfı](../../mfc/reference/cdockingmanager-class.md)<br/>
-Ana çerçeve penceresindeki yerleştirme düzeni denetleyen temel işlevselliğini uygular.
+Ana çerçeve penceresinde yerleştirme yerleşimini denetleyen temel işlevselliği uygular.
 
 [CDockingPanesRow Sınıfı](../../mfc/reference/cdockingpanesrow-class.md)<br/>
-Aynı yatay veya dikey satırda dock sitesiyle (sütun) bulunan bölmeleri listesini yönetir.
+Bir dock sitesinin aynı yatay veya dikey satırında (sütun) bulunan bölmeler listesini yönetir.
 
 [CDockSite Sınıfı](../../mfc/reference/cdocksite-class.md)<br/>
-Öğesinden türetilen bölmeleri düzenlemek için işlevsellik sağlar [CPane sınıfı](../../mfc/reference/cpane-class.md) satır kümelerine.
+[CPane sınıfından](../../mfc/reference/cpane-class.md) türetilmiş bölmeleri satır kümelerine yerleştirmek için işlevsellik sağlar.
 
 [CDockState Sınıfı](../../mfc/reference/cdockstate-class.md)<br/>
-Seri hale getirilmiş bir `CObject` yükler, kaldırır veya bir veya daha fazla yerleştirme denetim durumunu temizler sınıfı çubuklarını kalıcı bellekte (bir dosya).
+Kalıcı bellekte `CObject` (bir dosya) bir veya daha fazla yerleştirme denetim çubuğunun durumunu yükleyen, kaldırmanın veya temizleyen serileştirilmiş bir sınıf.
 
 [CDocObjectServer Sınıfı](../../mfc/reference/cdocobjectserver-class.md)<br/>
-Normal hale getirmek için gereken ek OLE arabirimlerini uygular `COleDocument` sunucu bir tam DocObject sunucusuna: `IOleDocument`, `IOleDocumentView`, `IOleCommandTarget`, ve `IPrint`.
+,,, Ve için normal `COleDocument` bir sunucu oluşturmak için gereken ek OLE arabirimlerini uygular: `IOleDocument`, `IOleDocumentView` `IOleCommandTarget`, ve `IPrint`.
 
 [CDocObjectServerItem Sınıfı](../../mfc/reference/cdocobjectserveritem-class.md)<br/>
-DocObject sunucuları için özel OLE sunucu fiilleri uygular.
+Özellikle DocObject sunucuları için OLE sunucu fiillerini uygular.
 
 [CDocTemplate Sınıfı](../../mfc/reference/cdoctemplate-class.md)<br/>
-Belge şablonları için temel işlevselliği tanımlayan soyut bir temel sınıf.
+Belge şablonları için temel işlevselliği tanımlayan bir soyut temel sınıf.
 
 [CDocument Sınıfı](../../mfc/reference/cdocument-class.md)<br/>
 Kullanıcı tanımlı belge sınıfları için temel işlevleri sağlar.
 
 [CDragListBox Sınıfı](../../mfc/reference/cdraglistbox-class.md)<br/>
-Windows liste kutusu işlevselliği sağlayan yanı sıra `CDragListBox` sınıfı kullanıcının liste dosya adları gibi liste kutusu öğelerini taşımasına olanak tanır.
+`CDragListBox` Sınıfı, bir Windows liste kutusunun işlevlerini sağlamaya ek olarak, Kullanıcı adları liste kutusu içindeki dosya adları gibi liste kutusu öğelerini taşımaya izin verir.
 
 [CDrawingManager Sınıfı](../../mfc/reference/cdrawingmanager-class.md)<br/>
 Karmaşık çizim algoritmaları uygular.
 
 [CDumpContext Sınıfı](../../mfc/reference/cdumpcontext-class.md)<br/>
-Tanı çıktısını insanlar tarafından okunabilen metin biçiminde akış temelli destekler.
+, İnsan tarafından okunabilen metin biçiminde akış odaklı tanılama çıkışını destekler.
 
 [CDWordArray Sınıfı](../../mfc/reference/cdwordarray-class.md)<br/>
-32 bit doublewords dizilerini destekler.
+32-bit çift sözcüklerdeki dizileri destekler.
 
 [CEdit Sınıfı](../../mfc/reference/cedit-class.md)<br/>
 Windows düzenleme denetimi işlevlerini sağlar.
 
 [CEditView Sınıfı](../../mfc/reference/ceditview-class.md)<br/>
-Düzenleme denetimi ve basit metin düzenleyici işlevselliği uygulamak için kullanılan bir Windows işlevlerini sağlar sınıfını görüntüle türü.
+Bir Windows düzenleme denetiminin işlevselliğini sağlayan ve basit metin düzenleyici işlevselliği uygulamak için kullanılabilen bir görünüm sınıfı türü.
 
 [CEvent Sınıfı](../../mfc/reference/cevent-class.md)<br/>
-"Başka bir olayın oluştuğunu bildirmek bir iş parçacığını etkinleştiren eşitleme nesnesi olan bir olay" ı temsil eder.
+Bir olayın gerçekleştiği başka bir iş parçacığını bilgilendirmek için bir iş parçacığının kullanılmasına olanak tanıyan bir eşitleme nesnesi olan bir "olay" ı temsil eder.
 
 [CException Sınıfı](../../mfc/reference/cexception-class.md)<br/>
-Microsoft Foundation Class Kitaplığı'ndaki tüm özel durumlar için temel sınıf.
+Microsoft Foundation Class Kitaplığı tüm özel durumlar için temel sınıf.
 
 [CFieldExchange Sınıfı](../../mfc/reference/cfieldexchange-class.md)<br/>
-Kayıt alanı değişimi (RFX) ve veritabanı sınıfları tarafından kullanılan toplu kayıt alanı değişimi (Bulk RFX) yordamlarını destekler.
+Veritabanı sınıfları tarafından kullanılan kayıt alanı değişimi (RFX) ve toplu kayıt alanı değişimi (toplu RFX) yordamlarını destekler.
 
 [CFile Sınıfı](../../mfc/reference/cfile-class.md)<br/>
 Microsoft Foundation Class dosya sınıfları için temel sınıf.
 
 [CFileDialog Sınıfı](../../mfc/reference/cfiledialog-class.md)<br/>
-Windows için genel dosya iletişim kutusunu kapsüller.
+Windows için ortak dosya iletişim kutusunu kapsüller.
 
 [CFileException Sınıfı](../../mfc/reference/cfileexception-class.md)<br/>
-Bir dosya ile ilgili özel durum koşulunu temsil eder.
+Dosya ile ilgili özel durum koşulunu temsil eder.
 
 [CFileFind Sınıfı](../../mfc/reference/cfilefind-class.md)<br/>
-Yerel dosya aramaları gerçekleştirir ve temel sınıfı olan [CGopherFileFind sınıfı](../../mfc/reference/cgopherfilefind-class.md) ve [CFtpFileFind sınıfı](../../mfc/reference/cftpfilefind-class.md), Internet dosyalarında gerçekleştirin.
+Yerel dosya aramalarını gerçekleştirir ve Internet dosya aramalarını gerçekleştiren [CGopherFileFind sınıfı](../../mfc/reference/cgopherfilefind-class.md) ve [CFtpFileFind sınıfı](../../mfc/reference/cftpfilefind-class.md)için temel sınıftır.
 
 [CFindReplaceDialog Sınıfı](../../mfc/reference/cfindreplacedialog-class.md)<br/>
-Standart dize Bul/Değiştir iletişim kutuları uygulamanıza olanak sağlar.
+Uygulamanızda standart dize Bul/Değiştir iletişim kutuları uygulamanıza olanak sağlar.
 
 [CFolderPickerDialog Sınıfı](../../mfc/reference/cfolderpickerdialog-class.md)<br/>
 Klasör Seçici modunda CFileDialog uygular.
 
 [CFont Sınıfı](../../mfc/reference/cfont-class.md)<br/>
-Bir Windows grafik cihaz arabirimi (GDI) yazı tipi kapsüller ve yazı tipini yönlendirmek için işlevleri sağlar.
+Windows grafik cihaz arabirimi (GDI) yazı tipini kapsüller ve yazı tipini işlemek için üye işlevleri sağlar.
 
 [CFontDialog Sınıfı](../../mfc/reference/cfontdialog-class.md)<br/>
-Bir yazı tipi seçimi iletişim kutusunu uygulamanıza eklemenize olanak sağlar.
+Uygulamanıza bir yazı tipi seçme iletişim kutusu eklemenize olanak sağlar.
 
 [CFontHolder Sınıfı](../../mfc/reference/cfontholder-class.md)<br/>
-Stok yazı tipi özelliğini uygular ve bir Windows yazı tipi nesnesinin işlevselliğini kapsüller ve `IFont` arabirimi.
+Hisse senedi yazı tipi özelliğini uygular ve bir Windows yazı tipi nesnesinin ve `IFont` arabiriminin işlevselliğini Kapsüller.
 
 [CFormView Sınıfı](../../mfc/reference/cformview-class.md)<br/>
-Form görünümleri için kullanılan taban sınıf.
+Form görünümleri için kullanılan temel sınıf.
 
 [CFrameWnd Sınıfı](../../mfc/reference/cframewnd-class.md)<br/>
-Windows tek Belgeli Arabirim (SDI) çakışan veya açılır çerçeve penceresinde ve pencereyi yönetmek için üye işlevlerini sağlar.
+Windows tek belge arabirimi (SDI) örtüşen veya açılan çerçeve penceresinin, pencereyi yönetmek için üyelerle birlikte işlevlerini sağlar.
 
 [CFrameWndEx Sınıfı](../../mfc/reference/cframewndex-class.md)<br/>
-Implements işlevselliğinin bir Windows tek Belgeli Arabirim (SDI) çakışan veya açılır çerçeve penceresinde ve pencereyi yönetmek için üyeleri sağlar. Bunu genişleten [CFrameWnd sınıfı](../../mfc/reference/cframewnd-class.md) sınıfı.
+, Windows tek belge arabirimi (SDI) ile örtüşen veya açılan çerçeve penceresinin işlevlerini uygular ve pencereyi yönetmek için Üyeler sağlar. [CFrameWnd sınıf](../../mfc/reference/cframewnd-class.md) sınıfını genişletir.
 
 [CFtpConnection Sınıfı](../../mfc/reference/cftpconnection-class.md)<br/>
-Internet sunucusuyla olan FTP bağlantınızı yönetir ve dizinleri ve dosyaları bu sunucuda doğrudan işlenmesini sağlar.
+Bir Internet sunucusuyla FTP bağlantınızı yönetir ve bu sunucudaki dizinlerin ve dosyaların doğrudan işlemesini sağlar.
 
 [CFtpFileFind Sınıfı](../../mfc/reference/cftpfilefind-class.md)<br/>
-İnternet'e yönelik dosyası aramalarındaki FTP sunucuları.
+FTP sunucularının Internet dosya aramalarında yardımlıklar.
 
 [CGdiObject Sınıfı](../../mfc/reference/cgdiobject-class.md)<br/>
-Bir temel sınıf için çeşitli türlerdeki Windows grafik cihaz arabirimi (GDI) nesneleri bit eşlemler, bölgeler, Fırçalar, kalemler, paletler ve yazı tipleri gibi sağlar.
+Bit eşlemler, bölgeler, fırçalar, kalemler, paletler ve yazı tipleri gibi çeşitli türlerde Windows grafik cihaz arabirimi (GDI) nesneleri için bir temel sınıf sağlar.
 
 [CGopherConnection Sınıfı](../../mfc/reference/cgopherconnection-class.md)<br/>
-Gopher Internet sunucusuyla olan bağlantınızı yönetir.
+Bir gopher Internet sunucusuyla bağlantınızı yönetir.
 
 [CGopherFile Sınıfı](../../mfc/reference/cgopherfile-class.md)<br/>
-Bulmak ve bir gopher sunucusunda dosyaları okumak için gereken işlevleri sağlar.
+Bir gopher sunucusunda dosya bulma ve okuma işlevlerini sağlar.
 
 [CGopherFileFind Sınıfı](../../mfc/reference/cgopherfilefind-class.md)<br/>
-Gopher sunucularına, Internet dosyası aramalarındaki Yardımcıları.
+Gopher sunucularının Internet dosya aramalarında yardımlıklar.
 
 [CGopherLocator Sınıfı](../../mfc/reference/cgopherlocator-class.md)<br/>
-Bir gopher sunucusundan "Konum Belirleyicisi" alır, konum belirleyicinin türünü ve Bulucu kullanılabilmesini [CGopherFileFind sınıfı](../../mfc/reference/cgopherfilefind-class.md).
+Gopher sunucusundan bir gopher "Bulucu" alır, bulucunun türünü belirler ve Konumlandırıcı 'yı [CGopherFileFind sınıfı](../../mfc/reference/cgopherfilefind-class.md)için kullanılabilir hale getirir.
 
 [CHeaderCtrl Sınıfı](../../mfc/reference/cheaderctrl-class.md)<br/>
 Windows ortak üstbilgi denetimi işlevlerini sağlar.
 
 [CHotKeyCtrl Sınıfı](../../mfc/reference/chotkeyctrl-class.md)<br/>
-Windows ortak kısayol denetimi işlevlerini sağlar.
+Windows Common Hot Key Control işlevlerini sağlar.
 
 [CHtmlEditCtrl Sınıfı](../../mfc/reference/chtmleditctrl-class.md)<br/>
-Bir MFC penceresindeki WebBrowser ActiveX denetimi işlevlerini sağlar.
+Bir MFC penceresinde WebBrowser ActiveX denetiminin işlevlerini sağlar.
 
 [CHtmlEditCtrlBase Sınıfı](../../mfc/reference/chtmleditctrlbase-class.md)<br/>
-HTML düzenleme bileşenini temsil eder.
+Bir HTML Editing bileşenini temsil eder.
 
 [CHtmlEditDoc Sınıfı](../../mfc/reference/chtmleditdoc-class.md)<br/>
-İle [CHtmlEditView sınıfı](../../mfc/reference/chtmleditview-class.md), MFC belge görüntüleme mimarisi bağlamında WebBrowser düzenleme platformu işlevlerini sağlar.
+[CHtmlEditView sınıfı](../../mfc/reference/chtmleditview-class.md)Ile, MFC belge görünümü mimarisinin bağlamı içinde WebBrowser düzenlemesi platformunun işlevlerini sağlar.
 
 [CHtmlEditView Sınıfı](../../mfc/reference/chtmleditview-class.md)<br/>
-MFC'nin belge/görünüm mimarisi bağlamında WebBrowser düzenleme platformu işlevlerini sağlar.
+, MFC 'nin belge/görünüm mimarisi bağlamında WebBrowser düzenlemesi platformunun işlevlerini sağlar.
 
 [CHtmlView Sınıfı](../../mfc/reference/chtmlview-class.md)<br/>
-MFC'nin belge/görünüm mimarisi bağlamında WebBrowser denetimi işlevlerini sağlar.
+, MFC 'nin belge/görünüm mimarisi bağlamında WebBrowser denetiminin işlevlerini sağlar.
 
 [CHttpConnection Sınıfı](../../mfc/reference/chttpconnection-class.md)<br/>
-HTTP sunucusuyla olan bağlantınızı yönetir.
+Bir HTTP sunucusuyla bağlantınızı yönetir.
 
 [CHttpFile Sınıfı](../../mfc/reference/chttpfile-class.md)<br/>
-İstemek ve bir HTTP sunucusunda dosyaları okumak için gereken işlevleri sağlar.
+Bir HTTP sunucusunda dosya isteme ve okuma işlevlerini sağlar.
 
 [CHwndRenderTarget Sınıfı](../../mfc/reference/chwndrendertarget-class.md)<br/>
-İçin sarmalayıcı `ID2D1HwndRenderTarget`.
+İçin `ID2D1HwndRenderTarget`bir sarmalayıcı.
 
 [CImageList Sınıfı](../../mfc/reference/cimagelist-class.md)<br/>
 Windows ortak görüntü listesi denetimi işlevlerini sağlar.
 
 [CInstantaneousTransition Sınıfı](../../mfc/reference/cinstantaneoustransition-class.md)<br/>
-Bir anlık geçiş kapsüller.
+Anlık bir geçişi kapsüller.
 
 [CInternetConnection Sınıfı](../../mfc/reference/cinternetconnection-class.md)<br/>
 Internet sunucusuyla olan bağlantınızı yönetir.
@@ -475,22 +475,22 @@ Internet sunucusuyla olan bağlantınızı yönetir.
 Bir Internet işlemiyle ilgili bir özel durum koşulunu temsil eder.
 
 [CInternetFile Sınıfı](../../mfc/reference/cinternetfile-class.md)<br/>
-Internet protokolleri kullanan uzak sistemlerdeki dosyalara erişimi etkinleştirir.
+Internet protokolleri kullanan uzak sistemlerdeki dosyalara erişimi sağlar.
 
 [CInternetSession Sınıfı](../../mfc/reference/cinternetsession-class.md)<br/>
-Oluşturur ve tek bir veya birden çok eşzamanlı Internet oturumu başlatır ve gerekirse bağlantınızı bir ara sunucuya tanımlar.
+Tek veya birkaç eşzamanlı Internet oturumu oluşturur ve başlatır ve gerekirse bir ara sunucu bağlantısını açıklar.
 
 [CInterpolatorBase Sınıfı](../../mfc/reference/cinterpolatorbase-class.md)<br/>
-Bunu animasyon değişkenin yeni değerini hesaplamak zorunda kaldığında animasyon API'sı tarafından çağrılan bir geri arama gerçekleştirir.
+Animasyon değişkeninin yeni bir değerini hesaplamak zorunda olduğunda animasyon API 'SI tarafından çağrılan bir geri çağırma uygular.
 
 [CInvalidArgException Sınıfı](../../mfc/reference/cinvalidargexception-class.md)<br/>
-Bu sınıf, geçersiz bağımsız değişken özel durum koşulunu temsil eder.
+Bu sınıf geçersiz bir bağımsız değişken özel durum koşulunu temsil eder.
 
 [CIPAddressCtrl Sınıfı](../../mfc/reference/cipaddressctrl-class.md)<br/>
 Windows ortak IP adresi denetimi işlevlerini sağlar.
 
 [CJumpList Sınıfı](../../mfc/reference/cjumplist-class.md)<br/>
-Görev çubuğundaki bir simgeyi sağ tıkladığınızda ortaya çıkan kısayolların listesi.
+Görev çubuğundaki bir simgeye sağ tıkladığınızda ortaya çıkan kısayolların listesi.
 
 [CKeyboardManager Sınıfı](../../mfc/reference/ckeyboardmanager-class.md)<br/>
 Ana çerçeve penceresi ve alt çerçeve pencereleri için kısayol tuşu tablolarını yönetir.
@@ -499,772 +499,772 @@ Ana çerçeve penceresi ve alt çerçeve pencereleri için kısayol tuşu tablol
 Bir animasyon ana karesini temsil eder.
 
 [CLinearTransition Sınıfı](../../mfc/reference/clineartransition-class.md)<br/>
-Bir doğrusal geçişi kapsüller.
+Doğrusal bir geçişi kapsüller.
 
 [CLinearTransitionFromSpeed Sınıfı](../../mfc/reference/clineartransitionfromspeed-class.md)<br/>
-Bir doğrusal hızlı geçişi kapsüller.
+Doğrusal hızda bir geçişi kapsüller.
 
 [CLinkCtrl Sınıfı](../../mfc/reference/clinkctrl-class.md)<br/>
-Windows SysLink denetimi işlevlerini sağlar.
+Windows ortak SysLink denetimi işlevlerini sağlar.
 
 [CList Sınıfı](../../mfc/reference/clist-class.md)<br/>
-Sırayla veya değere göre sıralı listeler erişilebilir benzersiz olmayan nesnelerin destekler.
+Ardışık olarak veya değere göre erişilebilen, benzersiz olmayan nesnelerin sıralı listesini destekler.
 
 [CListBox Sınıfı](../../mfc/reference/clistbox-class.md)<br/>
 Windows liste kutusu işlevlerini sağlar.
 
 [CListCtrl Sınıfı](../../mfc/reference/clistctrl-class.md)<br/>
-"Her biri bir simge (bir görüntü listesinden) ve bir etiketten oluşan bir koleksiyonunu görüntüleyen öğeleri bir liste görünümü denetimi," işlevselliğini kapsüller.
+Her biri bir simge (bir görüntü listesinden) ve bir etiketten oluşan öğelerin bir koleksiyonunu görüntüleyen bir "liste görünümü denetimi" işlevselliğini Kapsüller.
 
 [CListView Sınıfı](../../mfc/reference/clistview-class.md)<br/>
-Liste denetimi ve, basitleştirir [CListCtrl sınıfı](../../mfc/reference/clistctrl-class.md), MFC'nin belge / görünüm mimarisi ile liste denetimi işlevini kapsayan sınıf.
+Liste denetiminin ve [Clıstctrl sınıfının](../../mfc/reference/clistctrl-class.md), MFC 'nin belge görünümü mimarisi ile List-Control işlevselliğini kapsülleyen sınıf kullanımını basitleştirir.
 
 [CLongBinary Sınıfı](../../mfc/reference/clongbinary-class.md)<br/>
-Veritabanındaki (genellikle BLOB veya "büyük ikili nesneler" olarak adlandırılır) çok büyük ikili veri nesnelerle çalışmayı kolaylaştırır.
+Bir veritabanında çok büyük ikili veri nesneleriyle (genellikle BLOB veya "ikili büyük nesneler" olarak adlandırılır) çalışmayı basitleştirir.
 
 [CMap Sınıfı](../../mfc/reference/cmap-class.md)<br/>
-Benzersiz anahtarlar ve değerleri eşleyen sözlük koleksiyon sınıfı.
+Benzersiz anahtarları değerlere eşleyen sözlük toplama sınıfı.
 
 [CMapPtrToPtr Sınıfı](../../mfc/reference/cmapptrtoptr-class.md)<br/>
-Void işaretçileriyle Anahtarlanan void işaretçilerin haritalarını destekler.
+Void işaretçilerle anahtarlı void işaretçilerin eşlemelerini destekler.
 
 [CMapPtrToWord Sınıfı](../../mfc/reference/cmapptrtoword-class.md)<br/>
-Void işaretçilerle Anahtarlanan 16 bit sözcüklerin haritalarını destekler.
+Void işaretçilerle anahtarlı 16 bit sözcüklerin haritalarını destekler.
 
 [CMapStringToOb Sınıfı](../../mfc/reference/cmapstringtoob-class.md)<br/>
-Benzersiz eşleyen sözlük koleksiyon sınıfı `CString` nesneleri için `CObject` işaretçileri.
+`CString` Benzersiz`CObject` nesneleri işaretçilerle eşleyen bir sözlük toplama sınıfı.
 
 [CMapStringToPtr Sınıfı](../../mfc/reference/cmapstringtoptr-class.md)<br/>
-Anahtarlanan void işaretçilerin haritalarını destekler `CString` nesneleri.
+Nesneler tarafından `CString` Anahtarlanan void işaretçilerin haritalarını destekler.
 
 [CMapStringToString Sınıfı](../../mfc/reference/cmapstringtostring-class.md)<br/>
-Haritalarını destekler `CString` Anahtarlanan `CString` nesneleri.
+Nesnelere göre `CString` `CString` anahtarlı nesnelerin haritalarını destekler.
 
 [CMapWordToOb Sınıfı](../../mfc/reference/cmapwordtoob-class.md)<br/>
-Haritalarını destekler `CObject` 16 bit sözcüklerle Anahtarlanan işaretçileri.
+16 bit sözcüklerle `CObject` anahtarlanan işaretçilerin haritalarını destekler.
 
 [CMapWordToPtr Sınıfı](../../mfc/reference/cmapwordtoptr-class.md)<br/>
 16 bit sözcüklerle Anahtarlanan void işaretçilerin haritalarını destekler.
 
 [CMDIChildWnd Sınıfı](../../mfc/reference/cmdichildwnd-class.md)<br/>
-Bir Windows işlevlerini birden çok Belgeli Arabirim (MDI) alt penceresi ve pencereyi yönetmek için üyeleri sağlar.
+Windows çoklu belge arabirimi (MDI) alt penceresi işlevlerini, pencereyi yönetmek için üyelerle birlikte sağlar.
 
 [CMDIChildWndEx Sınıfı](../../mfc/reference/cmdichildwndex-class.md)<br/>
-Çok Belgeli Arabirim (MDI) alt penceresi bir Windows işlevlerini sağlar. İşlevselliğini genişletir [Cmdıchildwnd sınıfı](../../mfc/reference/cmdichildwnd-class.md). Bir MDI uygulaması belirli MFC sınıflarını kullandığında, çatı bu sınıfı gerektirir.
+Windows çoklu belge arabirimi (MDI) alt penceresi işlevlerini sağlar. [Cmdictepdwnd sınıfının](../../mfc/reference/cmdichildwnd-class.md)işlevselliğini genişletir. Bir MDI uygulaması belirli MFC sınıflarını kullandığında Framework bu sınıfı gerektirir.
 
 [CMDIFrameWnd Sınıfı](../../mfc/reference/cmdiframewnd-class.md)<br/>
-Bir Windows işlevlerini birden çok Belgeli Arabirim (MDI) çerçeve penceresi ve pencereyi yönetmek için üyeleri sağlar.
+Windows çoklu belge arabirimi (MDI) çerçeve penceresi işlevlerini, pencereyi yönetmek için üyelerle birlikte sağlar.
 
 [CMDIFrameWndEx Sınıfı](../../mfc/reference/cmdiframewndex-class.md)<br/>
-İşlevselliğini genişletir [CFrameWnd sınıfı](../../mfc/reference/cframewnd-class.md), bir Windows Çok Belgeli Arabirim (MDI) çerçeve penceresi.
+, Bir Windows çoklu belge arabirimi (MDI) çerçeve penceresi olan [CFrameWnd sınıfının](../../mfc/reference/cframewnd-class.md)işlevselliğini genişletir.
 
 [CMDITabInfo Sınıfı](../../mfc/reference/cmditabinfo-class.md)<br/>
-Parametreleri geçirmek için kullanılan [CMDIFrameWndEx::EnableMDITabbedGroups](../../mfc/reference/cmdiframewndex-class.md#enablemditabbedgroups) yöntemi. Sekmeli grupları MDI davranışını denetlemek için bu sınıfın üyelerini ayarlayın.
+Parametreleri [Cmdiframewndex:: Enabhadıtabbedgroups](../../mfc/reference/cmdiframewndex-class.md#enablemditabbedgroups) metoduna geçirmek için kullanılır. MDI sekmeli gruplarının davranışını denetlemek için bu sınıfın üyelerini ayarlayın.
 
 [CMemFile Sınıfı](../../mfc/reference/cmemfile-class.md)<br/>
-[CFile sınıfı](../../mfc/reference/cfile-class.md)-türetilmiş bellek dosyalarını destekleyen bir sınıf.
+Bellek dosyalarını destekleyen [CFile sınıfı](../../mfc/reference/cfile-class.md)türetilmiş sınıfı.
 
 [CMemoryException Sınıfı](../../mfc/reference/cmemoryexception-class.md)<br/>
-Bellek yetersiz özel durum koşulunu temsil eder.
+Bellek dışı özel durum koşulunu temsil eder.
 
 [CMenu Sınıfı](../../mfc/reference/cmenu-class.md)<br/>
-Windows sarmalanmasını `HMENU`.
+Windows `HMENU`kapsülleme.
 
 [CMenuTearOffManager Sınıfı](../../mfc/reference/cmenutearoffmanager-class.md)<br/>
-Etiket menülerini yönetir. Bir etiket menü menü çubuğunda bir menü ' dir. Kullanıcının bir etiket menü menü çubuğundan kaydırmak ayrılabilir menüyü menü neden kaldırabilirsiniz.
+Koparmayı yönetme menülerini yönetir. Bir yırma menüsü menü çubuğundaki bir menü olur. Kullanıcı, menü çubuğundan bir yırma menüsünü kaldırarak, koparma menüsünün kayan olmasına neden olabilir.
 
 [CMetaFileDC Sınıfı](../../mfc/reference/cmetafiledc-class.md)<br/>
-İstediğiniz görüntüyü veya metni oluşturmanız için yeniden yürütebileceğiniz grafik cihaz arabirimi (GDI) komutları dizisini içeren bir Windows Meta dosyası uygular.
+İstenen bir görüntü veya metin oluşturmak için yeniden yürütebilmeniz gereken bir grafik cihaz arabirimi (GDI) komutları dizisi içeren bir Windows meta dosyası uygular.
 
 [CMFCAcceleratorKey Sınıfı](../../mfc/reference/cmfcacceleratorkey-class.md)<br/>
-Sanal tuş eşlemeyi ve biçimlendirmeyi uygulayan yardımcı sınıf.
+Sanal anahtar eşlemesini ve biçimlendirmeyi uygulayan yardımcı sınıf.
 
 [CMFCAcceleratorKeyAssignCtrl Sınıfı](../../mfc/reference/cmfcacceleratorkeyassignctrl-class.md)<br/>
-Genişletir [CEdit sınıfı](../../mfc/reference/cedit-class.md) ALT, CONTROL ve SHIFT gibi ek sistem düğmelerini desteklemek için.
+, ALT, DENETIM ve KAYDıRMA gibi ek sistem düğmelerini desteklemek için [Cedıt sınıfını](../../mfc/reference/cedit-class.md) genişletir.
 
 [CMFCAutoHideButton Sınıfı](../../mfc/reference/cmfcautohidebutton-class.md)<br/>
-Görüntüleyen veya gizleyen bir düğme bir [CDockablePane sınıfı](../../mfc/reference/cdockablepane-class.md) gizlenmek üzere yapılandırılmış.
+Gizleyecek şekilde yapılandırılmış bir [CDockablePane sınıfını](../../mfc/reference/cdockablepane-class.md) görüntüleyen veya gizleyen düğme.
 
 [CMFCBaseTabCtrl Sınıfı](../../mfc/reference/cmfcbasetabctrl-class.md)<br/>
-Sekmeli pencereler için temel işlevselliğini uygular.
+Sekmeli pencereler için temel işlevselliği uygular.
 
 [CMFCButton Sınıfı](../../mfc/reference/cmfcbutton-class.md)<br/>
-İşlevsellik ekler [CButton sınıfı](../../mfc/reference/cbutton-class.md) düğme metnini hizalama, düğme metni ve görüntüyü birleştirme, imleç seçme ve araç ipuçları belirleme gibi sınıf.
+Düğme metnini hizalama, düğme metnini ve görüntüyü birleştirme, imleç seçme ve araç ipucu belirtme gibi [CButton sınıf](../../mfc/reference/cbutton-class.md) sınıfına işlevsellik ekler.
 
 [CMFCCaptionBar Sınıfı](../../mfc/reference/cmfccaptionbar-class.md)<br/>
-Üç öğe görüntüleyebilen denetim çubuğu: bir düğmeye bir metin etiketi ve bir bit eşlem. Her türden bir öğe aynı anda yalnızca görüntüleyebilir. Her bir öğeyi denetimin sol veya sağ kenarına ya da ortasına hizalayabilirsiniz. Ayrıca, başlık çubuğunun üst ve alt kenarlıklarına düz veya 3B stil uygulayabilirsiniz.
+Üç öğe görüntüleyebilen denetim çubuğu: düğme, metin etiketi ve bit eşlem. Tek seferde her bir türden yalnızca bir öğe görüntüleyebilir. Her öğeyi denetimin sol veya sağ kenarlarına veya merkezine hizalayabilirsiniz. Ayrıca, başlık çubuğunun üst ve alt kenarlıklarına düz veya 3B bir stil uygulayabilirsiniz.
 
 [CMFCCaptionButton Sınıfı](../../mfc/reference/cmfccaptionbutton-class.md)<br/>
-Yerleştirme bölmesinin veya mini çerçevenin başlık çubuğunda görüntülenen bir düğme uygular. Genellikle, framework resim yazılı düğmelerini otomatik olarak oluşturur.
+Yerleştirme bölmesi veya mini çerçeve penceresi için başlık çubuğunda görüntülenen bir düğme uygular. Genellikle Framework, otomatik olarak açıklamalı alt yazı düğmeleri oluşturur.
 
 [CMFCColorBar Sınıfı](../../mfc/reference/cmfccolorbar-class.md)<br/>
-Bir belge veya uygulamadaki renkleri seçebileceğiniz takma denetim çubuğunu temsil eder.
+Bir belge veya uygulamadaki renkleri seçebileceğiniz bir yerleştirme denetim çubuğunu temsil eder.
 
 [CMFCColorButton Sınıfı](../../mfc/reference/cmfccolorbutton-class.md)<br/>
-`CMFCColorButton` Ve [CMFCColorBar sınıfı](../../mfc/reference/cmfccolorbar-class.md) sınıfları birlikte bir renk seçici denetimini uygulamak için kullanılır.
+Ve CMFCColorBar sınıf sınıfları bir renk seçici denetimi uygulamak için birlikte kullanılır. [](../../mfc/reference/cmfccolorbar-class.md) `CMFCColorButton`
 
 [CMFCColorDialog Sınıfı](../../mfc/reference/cmfccolordialog-class.md)<br/>
-Bir renk seçimi iletişim kutusunu temsil eder.
+Renk seçimi iletişim kutusunu temsil eder.
 
 [CMFCColorMenuButton Sınıfı](../../mfc/reference/cmfccolormenubutton-class.md)<br/>
-Bir menü komutu veya bir Renk Seçici iletişim kutusunu başlatan bir araç çubuğu düğmesini destekler.
+Bir menü komutunu veya Renk Seçici iletişim kutusu Başlatan bir araç çubuğu düğmesini destekler.
 
 [CMFCColorPickerCtrl Sınıfı](../../mfc/reference/cmfccolorpickerctrl-class.md)<br/>
 Renk seçmek için kullanılan bir denetim için işlevsellik sağlar.
 
 [CMFCDesktopAlertDialog Sınıfı](../../mfc/reference/cmfcdesktopalertdialog-class.md)<br/>
-İle birlikte kullanılan [CMFCDesktopAlertWnd sınıfı](../../mfc/reference/cmfcdesktopalertwnd-class.md) açılır pencerede özel bir iletişim kutusu görüntülenecek.
+Bir açılan pencerede özel bir iletişim kutusu göstermek için [CMFCDesktopAlertWnd sınıfıyla](../../mfc/reference/cmfcdesktopalertwnd-class.md) birlikte kullanılır.
 
 [CMFCDesktopAlertWnd Sınıfı](../../mfc/reference/cmfcdesktopalertwnd-class.md)<br/>
-Bir olay hakkında kullanıcıyı bilgilendirmek üzere ekranda görüntülenen modsuz iletişim kutusu işlevselliğini uygular.
+Kullanıcıya bir olay hakkında bilgi vermek için ekranda görünen kalıcı olmayan iletişim kutusunun işlevselliğini uygular.
 
 [CMFCDesktopAlertWndInfo Sınıfı](../../mfc/reference/cmfcdesktopalertwndinfo-class.md)<br/>
-İle kullanılan [CMFCDesktopAlertWnd sınıfı](../../mfc/reference/cmfcdesktopalertwnd-class.md). Masaüstü uyarı penceresi açıldığında görüntülenen denetimleri belirtir.
+[CMFCDesktopAlertWnd sınıfıyla](../../mfc/reference/cmfcdesktopalertwnd-class.md)birlikte kullanılır. Masaüstü Uyarısı penceresi açılıp görüntülenmediğinde görüntülenen denetimleri belirtir.
 
 [CMFCDragFrameImpl Sınıfı](../../mfc/reference/cmfcdragframeimpl-class.md)<br/>
-Kullanıcı standart dock modunda bir bölmeyi sürüklediğinde görünen sürükleme dikdörtgenini çizer.
+Kullanıcı Standart yerleştirme modunda bir bölme sürüklediğinde görüntülenen sürükleme dikdörtgenini çizer.
 
 [CMFCDropDownToolBar Sınıfı](../../mfc/reference/cmfcdropdowntoolbar-class.md)<br/>
-Kullanıcı bir üst düzey araç çubuğu düğmesini basılı tuttuğunda görünen bir araç çubuğu.
+Kullanıcı üst düzey bir araç çubuğu düğmesine bastığında ve bu düğmeyi tutuyorsa görüntülenen bir araç çubuğu.
 
 [CMFCDropDownToolbarButton Sınıfı](../../mfc/reference/cmfcdropdowntoolbarbutton-class.md)<br/>
-Tıklandığında normal bir düğme gibi davranan araç çubuğu düğmesi türü. Ancak, bir açılır araç çubuğunu açar ([CMFCDropDownToolBar sınıfı](../../mfc/reference/cmfcdropdowntoolbar-class.md) kullanıcının bastığında ve araç çubuğu düğmesini içeren.
+Tıklandığı zaman normal düğme gibi davranan bir araç çubuğu düğmesi türü. Ancak, Kullanıcı araç çubuğu düğmesini aşağı basarsa ve tutuyorsa bir açılan araç çubuğu ([CMFCDropDownToolBar sınıfı](../../mfc/reference/cmfcdropdowntoolbar-class.md) ) açar.
 
 [CMFCDynamicLayout Sınıfı](../../mfc/reference/cmfcdynamiclayout-class.md)<br/>
-Kullanıcı yeniden boyutlandırır gibi yeniden boyutlandırılan bir pencerede denetimlerinin nasıl taşınmış ve belirtir.
+Kullanıcı pencereyi yeniden boyutlandırdığında penceredeki denetimlerin nasıl taşındığını ve yeniden boyutlandırılacağını belirtir.
 
 [CMFCEditBrowseCtrl Sınıfı](../../mfc/reference/cmfceditbrowsectrl-class.md)<br/>
-İsteğe bağlı olarak bir Gözat düğmesi içeren düzenlenebilir metin kutusu olan düzenleme Gözat denetimini destekler. Kullanıcı gözatma düğmesini tıkladığında denetim özel bir eylem gerçekleştirir veya dosya Gezgini veya klasör Gezgini içeren standart iletişim kutusunu görüntüler.
+, İsteğe bağlı olarak bir tarama düğmesi içeren düzenlenebilir bir metin kutusu olan düzenleme gözden geçirme denetimini destekler. Kullanıcı, gözatma düğmesine tıkladığında, Denetim özel bir eylem gerçekleştirir veya bir dosya tarayıcısı ya da klasör tarayıcısı içeren standart bir iletişim kutusu görüntüler.
 
 [CMFCFilterChunkValueImpl Sınıfı](../../mfc/reference/cmfcfilterchunkvalueimpl-class.md)<br/>
-Öbek hem özellik değeri çiftinin mantığını basitleştirir.
+Hem öbek hem de özellik değeri çifti mantığını basitleştirir.
 
 [CMFCFontComboBox Sınıfı](../../mfc/reference/cmfcfontcombobox-class.md)<br/>
-Yazı tiplerinin bir listesini içeren bir birleşik giriş kutusu denetimi oluşturur.
+Yazı tiplerinin bir listesini içeren bir Birleşik giriş kutusu denetimi oluşturur.
 
 [CMFCFontInfo Sınıfı](../../mfc/reference/cmfcfontinfo-class.md)<br/>
-Adı ve diğer bir yazı tipi özniteliklerini açıklar.
+Bir yazı tipinin adını ve diğer özniteliklerini açıklar.
 
 [CMFCHeaderCtrl Sınıfı](../../mfc/reference/cmfcheaderctrl-class.md)<br/>
-Üstbilgi denetimindeki birden çok sütunu sıralamayı destekler.
+Üst bilgi denetiminde birden çok sütunu sıralamayı destekler.
 
 [CMFCImageEditorDialog Sınıfı](../../mfc/reference/cmfcimageeditordialog-class.md)<br/>
-Bir Resim Düzenleyicisi iletişim kutusunu destekler.
+Bir görüntü Düzenleyici iletişim kutusunu destekler.
 
 [CMFCKeyMapDialog Sınıfı](../../mfc/reference/cmfckeymapdialog-class.md)<br/>
-Komutları klavyedeki tuşlarla eşleyen bir denetimi destekler.
+Komutları klavyedeki anahtarlarla eşleyen bir denetimi destekler.
 
 [CMFCLinkCtrl Sınıfı](../../mfc/reference/cmfclinkctrl-class.md)<br/>
-Bir düğmeyi köprü olarak görüntüler ve düğme tıklandığında bağlantı hedefini çağırır.
+Düğme tıklandığında bir düğmeyi köprü olarak görüntüler ve bağlantının hedefini çağırır.
 
 [CMFCListCtrl Sınıfı](../../mfc/reference/cmfclistctrl-class.md)<br/>
-İşlevselliğini genişletir [CListCtrl sınıfı](../../mfc/reference/clistctrl-class.md) Gelişmiş üstbilgi denetim işlevini destekleyerek sınıfı [CMFCHeaderCtrl sınıfı](../../mfc/reference/cmfcheaderctrl-class.md).
+, [CMFCHeaderCtrl sınıfının](../../mfc/reference/cmfcheaderctrl-class.md)gelişmiş üstbilgi denetimi Işlevini destekleyerek [clienstctrl Class](../../mfc/reference/clistctrl-class.md) sınıfının işlevselliğini genişletir.
 
 [CMFCMaskedEdit Sınıfı](../../mfc/reference/cmfcmaskededit-class.md)<br/>
-Kullanıcı girişini maskeye doğrulayan ve doğrulanmış sonuçları bir şablona göre görüntüleyen maskelenmiş düzenleme denetimini destekler.
+Bir maskeye karşı Kullanıcı girişini doğrulayan ve doğrulanan sonuçları bir şablona göre gösteren maskelenmiş bir düzenleme denetimini destekler.
 
 [CMFCMenuBar Sınıfı](../../mfc/reference/cmfcmenubar-class.md)<br/>
-Yerleştirme uygulayan bir menü çubuğu.
+Yerleştirmeyi uygulayan bir menü çubuğu.
 
 [CMFCMenuButton Sınıfı](../../mfc/reference/cmfcmenubutton-class.md)<br/>
-Bir açılır menü görüntüleyen ve kullanıcı menüsü seçeneklerini raporlayan bir düğme.
+Açılır menüyü ve kullanıcının menü seçimleriyle ilgili raporları görüntüleyen bir düğme.
 
 [CMFCOutlookBar Sınıfı](../../mfc/reference/cmfcoutlookbar-class.md)<br/>
-Öğesinin görsel görünümüne sahip sekmeli bölme **Gezinti bölmesinde** Microsoft Outlook 2000 veya Outlook 2003'te. `CMFCOutlookBar` Nesne içeren bir [CMFCOutlookBarTabCtrl sınıfı](../../mfc/reference/cmfcoutlookbartabctrl-class.md) nesnesi ve bir dizi sekme. Sekmeleri olabilir [CMFCOutlookBarPane sınıfı](../../mfc/reference/cmfcoutlookbarpane-class.md) nesneleri veya `CWnd`-türetilmiş nesneler. Kullanıcıya Outlook Çubuğu bir dizi düğme ve görüntüleme alanı görünür. Kullanıcı bir düğmeyi tıkladığında karşılık gelen denetim veya düğme bölmesi görüntülenir.
+Microsoft Outlook 2000 veya Outlook 2003 ' deki **Gezinti bölmesinin** görsel görünüşünün bulunduğu sekmeli bir bölme. Nesne bir [CMFCOutlookBarTabCtrl sınıfı](../../mfc/reference/cmfcoutlookbartabctrl-class.md) nesnesi ve bir dizi sekme içerir. `CMFCOutlookBar` Sekmeler [CMFCOutlookBarPane sınıf](../../mfc/reference/cmfcoutlookbarpane-class.md) nesneleri ya `CWnd`da türetilmiş nesneler olabilir. Kullanıcıya Outlook çubuğu, bir dizi düğme ve bir görüntüleme alanı olarak görünür. Kullanıcı bir düğmeye tıkladığında, ilgili denetim veya düğme bölmesi görüntülenir.
 
 [CMFCOutlookBarPane Sınıfı](../../mfc/reference/cmfcoutlookbarpane-class.md)<br/>
-Öğesinden türetilen denetim [CMFCToolBar sınıfı](../../mfc/reference/cmfctoolbar-class.md) Outlook çubuğuna eklenebilir ([CMFCOutlookBar sınıfı](../../mfc/reference/cmfcoutlookbar-class.md)). Outlook Çubuğu bölmesi büyük düğmeler bir sütun içerir. Bölmeden daha büyük olması durumunda kullanıcı düğme listesinin yukarı ve aşağı kaydırma yapabilir. Kullanıcı bir Outlook Çubuğu bölmesini Outlook çubuğundan ayırdığında kayan veya ana çerçeve penceresine yerleştirilebilir yükleyebilir.
+Bir Outlook çubuğuna eklenebilen [CMFCToolBar sınıfından](../../mfc/reference/cmfctoolbar-class.md) türetilmiş bir denetim ([CMFCOutlookBar sınıfı](../../mfc/reference/cmfcoutlookbar-class.md)). Outlook çubuğu bölmesi, büyük düğmelerden oluşan bir sütun içerir. Kullanıcı, bölmeden daha büyükse düğme listesini yukarı ve aşağı kaydırabilirler. Kullanıcı Outlook çubuğu 'ndaki bir Outlook çubuğu bölmesini ayrıldığında, ana çerçeve penceresinde taşınabilir veya yuvaya yerleştirebilirsiniz.
 
 [CMFCOutlookBarTabCtrl Sınıfı](../../mfc/reference/cmfcoutlookbartabctrl-class.md)<br/>
-Öğesinin görsel görünümüne sahip sekme denetimi **Gezinti bölmesinde** Microsoft Outlook.
+Microsoft Outlook 'taki **Gezinti bölmesinin** görsel görünümüne sahip bir sekme denetimi.
 
 [CMFCPopupMenu Sınıfı](../../mfc/reference/cmfcpopupmenu-class.md)<br/>
-Windows açılır menü işlevselliğini uygular ve etiket menüler ve araç ipuçları gibi özellikleri ekleyerek genişletir.
+Windows açılır menü işlevselliğini uygular ve bu özelliği, tear menüleri ve araç ipuçları gibi özellikler ekleyerek genişletir.
 
 [CMFCPopupMenuBar Sınıfı](../../mfc/reference/cmfcpopupmenubar-class.md)<br/>
-Bir menü çubuğu açılır menüde gömülü.
+Açılır menüye eklenmiş bir menü çubuğu.
 
 [CMFCPreviewCtrlImpl Sınıfı](../../mfc/reference/cmfcpreviewctrlimpl-class.md)<br/>
-Bir kabuk tarafından sağlanan Zengin Önizleme için barındırıcı penceresine yerleştirilen bir pencere uygular.
+Zengin Önizleme için kabuk tarafından verilen bir konak penceresine yerleştirilmiş bir pencere uygular.
 
 [CMFCPropertyGridColorProperty Sınıfı](../../mfc/reference/cmfcpropertygridcolorproperty-class.md)<br/>
-Bir renk seçimi iletişim kutusunu açan bir özellik listesi denetim öğesini destekler.
+Renk seçimi iletişim kutusunu açan bir özellik listesi denetim öğesini destekler.
 
 [CMFCPropertyGridCtrl Sınıfı](../../mfc/reference/cmfcpropertygridctrl-class.md)<br/>
-Özellikleri alfabetik veya hiyerarşik sırayla görüntüleyebilen bir düzenlenebilir bir özellik Kılavuzu denetimini destekler.
+, Özellikleri alfabetik veya hiyerarşik düzende görüntüleyebilen düzenlenebilir bir özellik Kılavuzu denetimini destekler.
 
 [CMFCPropertyGridFileProperty Sınıfı](../../mfc/reference/cmfcpropertygridfileproperty-class.md)<br/>
-Dosya Seçimi iletişim kutusunu açan bir özellik listesi denetim öğesini destekler.
+Dosya seçimi iletişim kutusunu açan bir özellik listesi denetim öğesini destekler.
 
 [CMFCPropertyGridFontProperty Sınıfı](../../mfc/reference/cmfcpropertygridfontproperty-class.md)<br/>
-Bir yazı tipi seçimi iletişim kutusunu açan bir özellik listesi denetim öğesini destekler.
+Yazı tipi seçimi iletişim kutusunu açan bir özellik listesi denetim öğesini destekler.
 
 [CMFCPropertyGridProperty Sınıfı](../../mfc/reference/cmfcpropertygridproperty-class.md)<br/>
-Bir özellik liste denetiminin bir liste öğesini temsil eder.
+Bir özellik listesi denetimindeki liste öğesini temsil eder.
 
 [CMFCPropertyPage Sınıfı](../../mfc/reference/cmfcpropertypage-class.md)<br/>
-Bir özellik sayfasında açılır menülerin görüntülenmesini destekler.
+, Bir özellik sayfasında açılır menülerin görüntülenmesini destekler.
 
 [CMFCPropertySheet Sınıfı](../../mfc/reference/cmfcpropertysheet-class.md)<br/>
-Her bir özellik sayfası bir sayfa sekmesi, araç çubuğu düğmesi, ağaç denetimi düğümü veya bir liste öğesi tarafından burada gösterilen bir özellik sayfasını destekler.
+Her özellik sayfasının bir sayfa sekmesi, bir araç çubuğu düğmesi, bir ağaç denetim düğümü veya bir liste öğesi tarafından belirtilen bir özellik sayfasını destekler.
 
 [CMFCReBar Sınıfı](../../mfc/reference/cmfcrebar-class.md)<br/>
-Düzen, süreklilik ve çubuk barınağı denetimleri için durum bilgileri sağlayan denetim çubuğu.
+Yeniden çubuk denetimleri için düzen, kalıcılık ve durum bilgisi sağlayan denetim çubuğu.
 
 [CMFCRibbonApplicationButton Sınıfı](../../mfc/reference/cmfcribbonapplicationbutton-class.md)<br/>
-Uygular uygulama penceresinin sol üst köşedeki özel bir düğme bulunur. Tıklandığında, düğmeyi genellikle ortak içeren bir menü açılır **dosya** gibi komutlar **açık**, **Kaydet**, ve **çıkış**.
+Uygulama penceresinin sol üst köşesinde bulunan özel bir düğme uygular. Tıklandığında düğme, genellikle **Open**, **Save**ve **Exit**gibi ortak **Dosya** komutlarını içeren bir menü açar.
 
 [CMFCRibbonBaseElement Sınıfı](../../mfc/reference/cmfcribbonbaseelement-class.md)<br/>
-Ekleyebileceğiniz tüm öğeler için temel sınıf bir [CMFCRibbonBar sınıfı](../../mfc/reference/cmfcribbonbar-class.md). Şerit öğelerine ait örnekler olan Şerit düğmeleri, Şerit onay kutuları ve Şerit birleşik giriş kutularıdır.
+Bir [CMFCRibbonBar sınıfına](../../mfc/reference/cmfcribbonbar-class.md)ekleyebileceğiniz tüm öğeler için temel sınıf. Şerit öğeleri örnekleri Şerit düğmeleri, şerit onay kutuları ve Şerit açılan kutularıdır.
 
 [CMFCRibbonButton Sınıfı](../../mfc/reference/cmfcribbonbutton-class.md)<br/>
-Paneller, hızlı erişim araç çubukları ve açılır menüler gibi Şerit çubuğu öğeleri üzerine getirin düğmeler uygular.
+Panolar, hızlı erişim araç çubukları ve açılır menüler gibi şerit çubuğu öğelerini konumlandırabileceğiniz düğmeleri uygular.
 
 [CMFCRibbonButtonsGroup Sınıfı](../../mfc/reference/cmfcribbonbuttonsgroup-class.md)<br/>
-Bir grup olarak Şerit düğme kümesi düzenlemenizi sağlar. Gruptaki tüm düğmeler yatay olarak doğrudan yaratır ve bir kenarlık içine alınmıştır.
+Bir grup içinde şerit düğme kümesini düzenlemenizi sağlar. Gruptaki tüm düğmeler, yatay olarak birbirlerine ve kenarlıkta çevreye doğrudan bitişik.
 
 [CMFCRibbonCategory Sınıfı](../../mfc/reference/cmfcribboncategory-class.md)<br/>
-Bir grup içeren bir Şerit sekmesi uygular [CMFCRibbonPanel sınıfı](../../mfc/reference/cmfcribbonpanel-class.md).
+Bir [CMFCRibbonPanel sınıfı](../../mfc/reference/cmfcribbonpanel-class.md)grubunu içeren bir şerit sekmesi uygular.
 
 [CMFCRibbonCheckBox Sınıfı](../../mfc/reference/cmfcribboncheckbox-class.md)<br/>
-Bir Şerit paneli, hızlı erişim araç çubuğu veya açılır menü ekleyebileceğiniz bir onay kutusu uygular.
+Şerit paneline, hızlı erişim araç çubuğuna veya açılan menüye ekleyebileceğiniz bir onay kutusu uygular.
 
 [CMFCRibbonColorButton Sınıfı](../../mfc/reference/cmfcribboncolorbutton-class.md)<br/>
-Bir Şerit çubuğuna ekleyebileceğiniz bir renk düğmesi uygular. Şerit rengi düğmesi, bir veya daha fazla renk paleti içeren bir açılan menü görüntüler.
+Şerit çubuğuna ekleyebileceğiniz bir renk düğmesi uygular. Şerit rengi düğmesi bir veya daha fazla renk paletleri içeren bir açılan menü görüntüler.
 
 [CMFCRibbonComboBox Sınıfı](../../mfc/reference/cmfcribboncombobox-class.md)<br/>
-Bir Şerit çubuğuna, Şerit paneline veya Şerit açılır menüsüne ekleyebileceğiniz birleşik giriş kutusu denetimi uygular.
+Şerit çubuğuna, şerit paneline veya Şerit açılan menüsüne ekleyebileceğiniz bir Birleşik giriş kutusu denetimi uygular.
 
 [CMFCRibbonContextCaption Sınıfı](../../mfc/reference/cmfcribboncontextcaption-class.md)<br/>
 Şerit kategorisinin veya bağlam kategorisinin üst kısmında görünen renkli bir başlık uygular.
 
 [CMFCRibbonEdit Sınıfı](../../mfc/reference/cmfcribbonedit-class.md)<br/>
-Şerit üzerinde konumlandırılmış bir düzenleme denetimi uygular.
+Şeritte konumlandırılmış bir düzenleme denetimi uygular.
 
 [CMFCRibbonFontComboBox Sınıfı](../../mfc/reference/cmfcribbonfontcombobox-class.md)<br/>
-Yazı tiplerinin bir listesini içeren bir birleşik giriş kutusu uygular. Bir Şerit panel üzerine birleşik giriş kutusu yerleştirin.
+Yazı tiplerinin bir listesini içeren bir Birleşik giriş kutusu uygular. Birleşik giriş kutusunu bir şerit paneline yerleştirebilirsiniz.
 
 [CMFCRibbonGallery Sınıfı](../../mfc/reference/cmfcribbongallery-class.md)<br/>
 Office 2007 stili Şerit galerileri uygular.
 
 [CMFCRibbonGalleryMenuButton Sınıfı](../../mfc/reference/cmfcribbongallerymenubutton-class.md)<br/>
-Şerit galerilerini içeren bir Şerit menüsü düğmesi uygular.
+Şerit galerileri içeren bir şerit menü düğmesi uygular.
 
 [CMFCRibbonLabel Sınıfı](../../mfc/reference/cmfcribbonlabel-class.md)<br/>
-Bir Şerit için tıklanmayan bir metin etiketi uygular.
+Şerit için tıklatılabilir olmayan bir metin etiketi uygular.
 
 [CMFCRibbonLinkCtrl Sınıfı](../../mfc/reference/cmfcribbonlinkctrl-class.md)<br/>
-Şerit üzerinde konumlandırılmış bir köprü uygular. Düğmeyi tıklattığınızda köprüyü bir Web sayfası açılır.
+Şeritte konumlandırılmış bir köprü uygular. Köprü, tıkladığınızda bir Web sayfası açar.
 
 [CMFCRibbonMainPanel Sınıfı](../../mfc/reference/cmfcribbonmainpanel-class.md)<br/>
-' A tıkladığınızda görüntülenen bir Şerit paneli uygular [CMFCRibbonApplicationButton sınıfı](../../mfc/reference/cmfcribbonapplicationbutton-class.md).
+[CMFCRibbonApplicationButton sınıfına](../../mfc/reference/cmfcribbonapplicationbutton-class.md)tıkladığınızda görüntülenen şerit panelini uygular.
 
 [CMFCRibbonMiniToolBar Sınıfı](../../mfc/reference/cmfcribbonminitoolbar-class.md)<br/>
-Bağlamsal açılan araç çubuğu uygular.
+Bağlamsal açılan araç çubuğunu uygular.
 
 [CMFCRibbonPanel Sınıfı](../../mfc/reference/cmfcribbonpanel-class.md)<br/>
-Şerit öğeleri kümesi içeren bir panel uygular. Panel çizildiğinde, panelin boyutuna verilen mümkün olduğunca çok öğelerini görüntüler.
+Şerit öğeleri kümesi içeren bir panel uygular. Panel çizildiğinde, panelin boyutu verildiğinde mümkün olduğunca çok öğe görüntülenir.
 
 [CMFCRibbonProgressBar Sınıfı](../../mfc/reference/cmfcribbonprogressbar-class.md)<br/>
-Uzun bir işlemin ilerlemesini görsel olarak belirten bir denetim uygular.
+Uzun bir işlemin ilerlemesini görsel olarak gösteren bir denetim uygular.
 
 [CMFCRibbonSlider Sınıfı](../../mfc/reference/cmfcribbonslider-class.md)<br/>
-Bir Şerit çubuğuna veya Şerit durum çubuğuna ekleyebileceğiniz kaydırıcı denetimi uygular. Şerit kaydırıcı denetimi Office 2007 uygulamalarında görünen yakınlaştırma kaydırıcılarına benzer.
+Şerit çubuğuna veya şerit durum çubuğuna ekleyebileceğiniz bir kaydırıcı denetimi uygular. Şerit kaydırıcı denetimi, Office 2007 uygulamalarında görünen yakınlaştırma sürgüleriyle benzerdir.
 
 [CMFCRibbonStatusBar Sınıfı](../../mfc/reference/cmfcribbonstatusbar-class.md)<br/>
 Şerit öğelerini görüntüleyebilen bir durum çubuğu denetimi uygular.
 
 [CMFCRibbonStatusBarPane Sınıfı](../../mfc/reference/cmfcribbonstatusbarpane-class.md)<br/>
-Bir Şerit durum çubuğuna ekleyebileceğiniz bir Şerit öğesi uygular.
+Şerit durum çubuğuna ekleyebileceğiniz bir şerit öğesi uygular.
 
 [CMFCRibbonUndoButton Sınıfı](../../mfc/reference/cmfcribbonundobutton-class.md)<br/>
-Bölünmüş düğme, ana düğmenin sağ tarafında bir aşağı bakan üçgen olan küçük bir düğme uygular. Kullanıcılar kendi son gerçekleştirdikleri eylemleri, aşağı açılan listesini görüntülemek üzere üçgeni tıklayabilirsiniz. Kullanıcılar, ardından aşağı açılan listeden bir veya daha fazla eylem seçebilir. Ancak, kullanıcı yalnızca en son (en son eklenen) düğmesini tıklatırsa aşağı açılan listede eylem geri alınamaz. Eylemler listesiyle, kullanıcı gerçekleştirdikçe doldurmanız gerekir.
+Ana düğmenin en sağdaki bölümünde aşağı dönük bir işaret içeren küçük bir düğme olan bölünmüş bir düğme uygular. Kullanıcılar, en son gerçekleştirilen eylemlerinin açılan listesini göstermek için üçgeni tıklabilirler. Kullanıcılar daha sonra açılan listeden bir veya daha fazla eylem seçebilir. Ancak Kullanıcı düğmeyi tıklarsa, açılan listedeki yalnızca son (en son eklenen) eylem geri alınabilir. Kullanıcı tarafından gerçekleştirdiği için listeyi eylemlerle doldurmanız gerekir.
 
 [CMFCShellListCtrl Sınıfı](../../mfc/reference/cmfcshelllistctrl-class.md)<br/>
-Windows liste denetleme işlevlerini sağlar ve bir kabuk öğeleri listesi görüntüleme özelliğini ekleyerek bunu genişletir.
+Windows liste denetim işlevlerini sağlar ve kabuk öğelerinin listesini görüntüleme özelliğini ekleyerek genişletir.
 
 [CMFCShellTreeCtrl Sınıfı](../../mfc/reference/cmfcshelltreectrl-class.md)<br/>
-Genişletir [CTreeCtrl sınıfı](../../mfc/reference/ctreectrl-class.md) Kabuk öğeleri hiyerarşisini görüntüleyerek işlevselliği.
+Bir kabuk öğeleri hiyerarşisini görüntüleyerek [Ctreecu sınıfı](../../mfc/reference/ctreectrl-class.md) işlevselliğini genişletir.
 
 [CMFCSpinButtonCtrl Sınıfı](../../mfc/reference/cmfcspinbuttonctrl-class.md)<br/>
-Değer değiştirme düğmesi denetimi çizen bir görsel yöneticiyi destekler.
+Bir döndürme düğmesi denetimi çizen bir görsel yöneticiyi destekler.
 
 [CMFCStatusBar Sınıfı](../../mfc/reference/cmfcstatusbar-class.md)<br/>
-Benzer şekilde bir durum çubuğu uygular `CStatusBar` sınıfı. Ancak, `CMFCStatusBar` sınıfı tarafından önerilmeyen özelliklere sahiptir `CStatusBar` resimleri, animasyonları ve ilerleme çubuğunu görüntüleme ve çift tıklamalara yanıt verme gibi bir sınıf.
+`CStatusBar` Sınıfına benzer bir durum çubuğu uygular. Ancak, `CMFCStatusBar` sınıfı, görüntü, animasyon ve ilerleme çubuğu `CStatusBar` gibi, fare çift tıklamalarına yanıt verebilme gibi sınıf tarafından sunulmayan özelliklere sahiptir.
 
 [CMFCTabCtrl Sınıfı](../../mfc/reference/cmfctabctrl-class.md)<br/>
-Sekme denetimi için işlevsellik sağlar. Sekme denetimi, üstünde veya altında düz veya üç boyutlu sekmeler içeren bir yerleştirilebilir pencere görüntüler. Sekmeler metin ve resim görüntüleyebilir ve etkin olduğunda rengi değiştirebilirsiniz.
+Sekme denetimi için işlevsellik sağlar. Sekme denetimi, üst veya alt tarafında düz veya üç boyutlu sekmeler içeren bir yerleştirilebilir pencere görüntüler. Sekmeler metin ve görüntü görüntüleyebilir ve etkin olduğunda rengi değiştirebilir.
 
 [CMFCTabToolTipInfo Yapısı](../../mfc/reference/cmfctabtooltipinfo-structure.md)<br/>
-Kullanıcının üzerine geldiği MDI sekmesi hakkında bilgi sağlar.
+Kullanıcının üzerine gelindiğinde MDI sekmesi hakkında bilgi sağlar.
 
 [CMFCTasksPane Sınıfı](../../mfc/reference/cmfctaskspane-class.md)<br/>
-(Tıklanabilir öğelerin görevler) listesini uygular.
+Tıklatılabilir öğelerin (Görevler) bir listesini uygular.
 
 [CMFCTasksPaneTask Sınıfı](../../mfc/reference/cmfctaskspanetask-class.md)<br/>
-Görev bölmesi denetimi için görevleri temsil eden yardımcı sınıf ([CMFCTasksPane sınıfı](../../mfc/reference/cmfctaskspane-class.md)). Görev nesnesi görev grubundaki bir öğeyi temsil eder ([CMFCTasksPaneTaskGroup sınıfı](../../mfc/reference/cmfctaskspanetaskgroup-class.md)). Her görev bir kullanıcı görevi ve görev adının solunda görüntülenen simge tıkladığında framework yürüten bir komut içerebilir.
+Görev bölmesi denetimine yönelik görevleri temsil eden yardımcı sınıf ([CMFCTasksPane sınıfı](../../mfc/reference/cmfctaskspane-class.md)). Görev nesnesi, görev grubundaki bir öğeyi temsil eder ([CMFCTasksPaneTaskGroup sınıfı](../../mfc/reference/cmfctaskspanetaskgroup-class.md)). Her görev, bir kullanıcı görevi tıklattığında ve görev adının solunda görüntülenen bir simgenin bulunduğu bir komuta sahip olabilir.
 
 [CMFCTasksPaneTaskGroup Sınıfı](../../mfc/reference/cmfctaskspanetaskgroup-class.md)<br/>
-Tarafından kullanılan yardımcı sınıf [CMFCTasksPane sınıfı](../../mfc/reference/cmfctaskspane-class.md) denetimi. Türündeki nesneler `CMFCTasksPaneTaskGroup` temsil eden bir *görev grubu*. Görev grubu, framework Daralt düğmesi olan ayrı bir kutuda görüntülediği öğelerin listesidir. Kutu isteğe bağlı bir başlık (grup adı) olabilir. Bir grup daraltılmışsa, görevlerin listesi görünür değil.
+[CMFCTasksPane sınıfı](../../mfc/reference/cmfctaskspane-class.md) denetimi tarafından kullanılan yardımcı sınıfı. Türündeki `CMFCTasksPaneTaskGroup` nesneler bir *görev grubunu*temsil eder. Görev grubu, Framework 'ün daraltma düğmesi olan ayrı bir kutu içinde görüntülediği öğelerin listesidir. Kutu, isteğe bağlı bir açıklamalı alt yazı (grup adı) olabilir. Bir grup daraltılmışsa, görev listesi görünür değildir.
 
 [CMFCToolBar Sınıfı](../../mfc/reference/cmfctoolbar-class.md)<br/>
-Benzer [CToolBar sınıfı](../../mfc/reference/ctoolbar-class.md), ancak kullanıcı arabirimi özellikleri için ek destek sağlar. Bunlar düz araç çubuklarını, sık erişimli görüntüleri, büyük simgeleri, sayfa düğmelerini, kilitli araç çubuklarını, çubuk barınağı denetimleri, resim altında metinleri, arka plan görüntüleri, Resimli araç çubuklarını içerir ve sekmeli araç çubuklarını. `CMFCToolBar` Sınıfı ayrıca araç çubuğu kullanıcı tarafından özelleştirilmesi için yerleşik destek içerir ve menüler, sürükle ve bırak arasında araç çubukları ve menüler, birleşik giriş kutusu düğmeleri, düzenleme kutusu düğmeleri, renk seçiciler ve toplama düğmelerinin.
+[CToolBar sınıfına](../../mfc/reference/ctoolbar-class.md)benzer, ancak kullanıcı arabirimi özellikleri için ek destek sağlar. Bunlar arasında düz araç çubukları, sık kullanılan görüntüler, büyük simgeler, sayfalayıcı düğmeleri, kilitli araç çubukları, yeniden çubuk denetimleri, görüntüler altındaki metinler, arka plan görüntüleri ve sekmeli araç çubukları dahildir. Bu `CMFCToolBar` sınıf Ayrıca araç çubukları ve menülerin Kullanıcı özelleştirmesi, araç çubukları ve menüler arasında sürükle ve bırak, Birleşik giriş kutusu düğmeleri, düzenleme kutusu düğmeleri, renk seçiciler ve aşağı açılan düğmeler için yerleşik destek içerir.
 
 [CMFCToolBarImages Sınıfı](../../mfc/reference/cmfctoolbarimages-class.md)<br/>
 Uygulama kaynaklarından veya dosyalardan yüklenen araç çubuğu görüntülerini yönetir.
 
 [CMFCToolBarInfo Sınıfı](../../mfc/reference/cmfctoolbarinfo-class.md)<br/>
-Kaynak araç çubuğu görüntülerinin çeşitli durumlarda kimliklerini içerir. `CMFCToolBarInfo` bir parametre olarak kullanılan bir yardımcı sınıftır [CMFCToolBar::LoadToolBarEx](../../mfc/reference/cmfctoolbar-class.md#loadtoolbarex) yöntemi.
+Çeşitli durumlarda Toolbar görüntülerinin kaynak kimliklerini içerir. `CMFCToolBarInfo`, [CMFCToolBar:: LoadToolBarEx](../../mfc/reference/cmfctoolbar-class.md#loadtoolbarex) yönteminin parametresi olarak kullanılan bir yardımcı sınıftır.
 
 [CMFCToolBarMenuButton Sınıfı](../../mfc/reference/cmfctoolbarmenubutton-class.md)<br/>
-Açılır menü içeren bir araç çubuğu düğmesi.
+Bir açılır menü içeren bir araç çubuğu düğmesi.
 
 [CMFCToolBarsCustomizeDialog Sınıfı](../../mfc/reference/cmfctoolbarscustomizedialog-class.md)<br/>
-Modsuz sekme iletişim kutusu ([CPropertySheet sınıfı](../../mfc/reference/cpropertysheet-class.md)) araç çubuklarını, menüleri, klavye kısayolları, kullanıcı tanımlı Araçlar ve uygulamada görsel stil özelleştirmek için kullanıcı sağlar. Genellikle, bu iletişim kutusunu erişen seçerek kullanıcı **Özelleştir** gelen **Araçları** menüsü.
+Kullanıcının araç çubuklarını, menüleri, klavye kısayollarını, Kullanıcı tanımlı araçları ve bir uygulamada görsel stilini özelleştirmesini sağlayan, engelleyici olmayan bir sekme iletişim kutusu ([CPropertySheet sınıfı](../../mfc/reference/cpropertysheet-class.md)). Genellikle, Kullanıcı bu iletişim kutusuna **Araçlar** menüsünden **Özelleştir** ' i seçerek erişir.
 
 [CMFCToolTipCtrl Sınıfı](../../mfc/reference/cmfctooltipctrl-class.md)<br/>
-Genişletilmiş araç ipucu uygulaması temel alarak [CToolTipCtrl sınıfı](../../mfc/reference/ctooltipctrl-class.md). Bir araç ipucu temel alarak `CMFCToolTipCtrl` sınıfı bir simge bir etiket ve bir açıklama görüntüleyebilirsiniz. Degrade dolgusu, özel metin ve kenarlık renkleri, kalın metin, yuvarlak köşeler veya balon stili kullanarak görünümünü özelleştirebilirsiniz.
+[CToolTipCtrl sınıfına](../../mfc/reference/ctooltipctrl-class.md)dayalı genişletilmiş bir araç ipucu uygulama. `CMFCToolTipCtrl` Sınıfına dayalı bir araç ipucu, bir simge, etiket ve açıklama gösterebilir. Görsel görünümünü, bir gradyan dolgusu, özel metin ve kenarlık renkleri, kalın metin, yuvarlatılmış köşeler veya balon stili kullanarak özelleştirebilirsiniz.
 
 [CMFCToolTipInfo Sınıfı](../../mfc/reference/cmfctooltipinfo-class.md)<br/>
-Araç ipuçlarının görsel görünümünü hakkındaki bilgileri depolar.
+Araç ipuçlarının görsel görünümüyle ilgili bilgileri depolar.
 
 [CMFCVisualManager Sınıfı](../../mfc/reference/cmfcvisualmanager-class.md)<br/>
-Genel düzeyde, uygulamanızın görünümünü değiştirmek için destek sağlar. `CMFCVisualManager` Sınıfı, tutarlı bir stil kullanarak uygulamanızın GUI denetimlerini çizmek amacıyla yönergeler sağlayan bir sınıf birlikte çalışır. Bu diğer sınıflara görsel Yöneticiler denir ve bunlar devralınacak `CMFCBaseVisualManager`.
+Genel düzeyde uygulamanızın görünümünü değiştirmek için destek sağlar. `CMFCVisualManager` Sınıfı, tutarlı bir stil kullanarak uygulamanızın GUI denetimlerini çizmek için yönergeler sağlayan bir sınıfla birlikte çalışarak. Bu diğer sınıflar, görsel yöneticiler olarak adlandırılır ve ' den `CMFCBaseVisualManager`devralınır.
 
 [CMFCVisualManagerOffice2003 Sınıfı](../../mfc/reference/cmfcvisualmanageroffice2003-class.md)<br/>
-Uygulamaya Microsoft Office 2003 görünümü verir.
+Bir uygulamaya Microsoft Office 2003 görünümü verir.
 
 [CMFCVisualManagerOffice2007 Sınıfı](../../mfc/reference/cmfcvisualmanageroffice2007-class.md)<br/>
-Uygulamaya bir Microsoft Office 2007 görünümü verir.
+Bir uygulamaya Microsoft Office 2007 görünümü verir.
 
 [CMFCVisualManagerVS2005 Sınıfı](../../mfc/reference/cmfcvisualmanagervs2005-class.md)<br/>
-Uygulamaya Microsoft Visual Studio 2005 görünümü verir.
+Bir uygulamaya Microsoft Visual Studio 2005 görünümü verir.
 
 [CMFCVisualManagerWindows Sınıfı](../../mfc/reference/cmfcvisualmanagerwindows-class.md)<br/>
 Kullanıcı bir Windows XP veya Vista teması seçtiğinde Microsoft Windows XP veya Microsoft Vista görünümünü taklit eder.
 
 [CMFCVisualManagerWindows7 Sınıfı](../../mfc/reference/cmfcvisualmanagerwindows7-class.md)<br/>
-Uygulamanın bir Windows 7 uygulaması görünümü verir.
+Uygulamanın bir Windows 7 uygulamasının görünümünü sağlar.
 
 [CMFCWindowsManagerDialog Sınıfı](../../mfc/reference/cmfcwindowsmanagerdialog-class.md)<br/>
-Bir MDI uygulamasında MDI alt öğe pencerelerini yönetme olanağı sağlar.
+Bir MDI uygulamasında bir kullanıcının MDI alt pencerelerini yönetmesine olanak sağlar.
 
 [CMiniFrameWnd Sınıfı](../../mfc/reference/cminiframewnd-class.md)<br/>
-Genelde kayan araç çubukları geçici olarak görülen bir yarım yükseklikte pencereyi temsil eder.
+Genellikle kayan araç çubukları etrafında görülen yarı yükseklikli bir çerçeve penceresini temsil eder.
 
 [CMonikerFile Sınıfı](../../mfc/reference/cmonikerfile-class.md)<br/>
-Veri akışını temsil eder ([IStream](/windows/desktop/api/objidl/nn-objidl-istream)) tarafından adlandırılan bir [IMoniker](/windows/desktop/api/objidl/nn-objidl-imoniker).
+Bir [IMoniker](/windows/win32/api/objidl/nn-objidl-imoniker)tarafından[](/windows/win32/api/objidl/nn-objidl-istream)adlandırılan veri akışını (IStream) temsil eder.
 
 [CMonthCalCtrl Sınıfı](../../mfc/reference/cmonthcalctrl-class.md)<br/>
-Aylık takvim denetiminin işlevselliğini kapsüller.
+Aylık takvim denetiminin işlevselliğini Kapsüller.
 
 [CMouseManager Sınıfı](../../mfc/reference/cmousemanager-class.md)<br/>
-Bir kullanıcının farklı komutları belirli bir ilişkilendirme sağlayan [CView sınıfı](../../mfc/reference/cview-class.md) kullanıcı söz konusu görünümü çift tıkladığında nesne.
+Kullanıcının bu görünümü içinde çift tıkladığı durumlarda, kullanıcının belirli bir [CView sınıf](../../mfc/reference/cview-class.md) nesnesiyle farklı komutları ilişkilendirmelerini sağlar.
 
 [CMultiDocTemplate Sınıfı](../../mfc/reference/cmultidoctemplate-class.md)<br/>
-Çok Belgeli Arabirim (MDI) uygulayan bir belge şablonu tanımlar.
+Birden çok belge arabirimi (MDI) uygulayan bir belge şablonu tanımlar.
 
 [CMultiLock Sınıfı](../../mfc/reference/cmultilock-class.md)<br/>
-Çoklu iş parçacığı kullanan programda kaynaklara erişimi denetlemek için kullanılan erişim denetim mekanizmasını temsil eder.
+Çok iş parçacıklı bir programdaki kaynaklara erişimi denetlemek için kullanılan erişim denetimi mekanizmasını temsil eder.
 
 [CMultiPageDHtmlDialog Sınıfı](../../mfc/reference/cmultipagedhtmldialog-class.md)<br/>
-Birden çok sayfa iletişim birden çok HTML sayfasını sıralı olarak görüntüler ve her sayfadaki olayları işler.
+Çok sayfalı iletişim kutusu, birden fazla HTML sayfasını ardışık olarak görüntüler ve her sayfadaki olayları işler.
 
 [CMultiPaneFrameWnd Sınıfı](../../mfc/reference/cmultipaneframewnd-class.md)<br/>
-Genişletir [CPaneFrameWnd sınıfı](../../mfc/reference/cpaneframewnd-class.md). Bu, birden çok bölmeyi destekleyebilir. Bir denetim çubuğuna tek bir gömülü tanıtıcı yerine `CMultiPaneFrameWnd` içeren bir [CPaneContainerManager sınıfı](../../mfc/reference/cpanecontainermanager-class.md) bir kullanıcının sağlayan nesne `CMultiPaneFrameWnd` diğerine ve dinamik olarak birden fazla kayan oluşturmak, sekmeli Windows.
+[Cbölmesi Framewnd sınıfını](../../mfc/reference/cpaneframewnd-class.md)genişletir. Bu, birden çok bölmeyi destekleyebilir. Bir denetim çubuğuna tek bir katıştırılmış tanıtıcı yerine, `CMultiPaneFrameWnd` kullanıcının bir tane `CMultiPaneFrameWnd` diğerine yerleştirmeyi ve dinamik olarak birden çok kayan sekmeli pencere oluşturmasını sağlayan bir [cbölmesi containermanager sınıf](../../mfc/reference/cpanecontainermanager-class.md) nesnesi içerir.
 
 [CMutex Sınıfı](../../mfc/reference/cmutex-class.md)<br/>
-Bir iş parçacığı bir kaynağa karşılıklı olarak dışlama erişimine izin veren bir eşitleme nesnesi olan mutex'i temsil eder.
+Bir iş parçacığının bir kaynağa birbirini dışlamalı erişimine izin veren bir eşitleme nesnesi olan bir mutex 'i temsil eder.
 
 [CNetAddressCtrl Sınıfı](../../mfc/reference/cnetaddressctrl-class.md)<br/>
-`CNetAddressCtrl` Sınıfı, giriş ve IPv4, IPv6 ve adlandırılmış DNS adreslerinin biçimini doğrulamak için kullanabileceğiniz ağ adresi denetimini temsil eder.
+`CNetAddressCtrl` Sınıfı, IPv4, IPv6 ve adlandırılmış DNS adreslerinin biçimini girmek ve doğrulamak için kullanabileceğiniz ağ adresi denetimini temsil eder.
 
 [CNotSupportedException Sınıfı](../../mfc/reference/cnotsupportedexception-class.md)<br/>
-Desteklenmeyen bir özellik isteğinden kaynaklanan bir özel durum temsil eder.
+Desteklenmeyen bir özellik için isteğin sonucu olan bir özel durumu temsil eder.
 
 [CObArray Sınıfı](../../mfc/reference/cobarray-class.md)<br/>
-Dizilerini destekler `CObject` işaretçileri.
+`CObject` İşaretçiler dizilerini destekler.
 
 [CObject Sınıfı](../../mfc/reference/cobject-class.md)<br/>
-Microsoft Foundation Class Kitaplığı için asıl taban sınıf.
+Microsoft Foundation Class Kitaplığı için asıl temel sınıf.
 
 [CObList Sınıfı](../../mfc/reference/coblist-class.md)<br/>
-Sıralı listeler benzersiz olmayan destekler `CObject` işaretçileri erişilebilir sırayla veya işaretçinin değerine göre.
+Ardışık olarak veya işaretçi değerine göre erişilebilen `CObject` , benzersiz olmayan işaretçilerin sıralı listesini destekler.
 
 [COccManager Sınıfı](../../mfc/reference/coccmanager-class.md)<br/>
-Çeşitli özel denetim sitelerini yönetir; tarafından uygulanan `COleControlContainer` ve `COleControlSite` nesneleri.
+Çeşitli özel denetim sitelerini yönetir; `COleControlContainer` ve`COleControlSite` nesneleri tarafından uygulandı.
 
 [COleBusyDialog Sınıfı](../../mfc/reference/colebusydialog-class.md)<br/>
-OLE Server Not Responding veya Server Busy iletişim kutuları için kullanıldı.
+OLE sunucusu yanıt vermiyor veya sunucu meşgul iletişim kutuları için kullanılır.
 
 [COleChangeIconDialog Sınıfı](../../mfc/reference/colechangeicondialog-class.md)<br/>
-OLE Change Icon iletişim kutusu için kullanıldı.
+OLE Change Icon iletişim kutusu için kullanılır.
 
 [COleChangeSourceDialog Sınıfı](../../mfc/reference/colechangesourcedialog-class.md)<br/>
-OLE Change Source iletişim kutusu için kullanıldı.
+OLE değişim kaynağı iletişim kutusu için kullanılır.
 
 [COleClientItem Sınıfı](../../mfc/reference/coleclientitem-class.md)<br/>
-Kapsayıcı arabirimi OLE öğelerine tanımlar.
+OLE öğelerine kapsayıcı arabirimini tanımlar.
 
 [COleCmdUI Sınıfı](../../mfc/reference/colecmdui-class.md)<br/>
-Uygulayan bir yöntem için kullanıcı arabirimi nesnelerinin durumunu güncelleştirmek MFC ilgili `IOleCommandTarget`-uygulamanızın özelliklerini temelli.
+, MFC 'nin uygulamanızın odaklı özellikleriyle ilgili `IOleCommandTarget`Kullanıcı arabirimi nesnelerinin durumunu güncelleştirmesine yönelik bir yöntem uygular.
 
 [COleControl Sınıfı](../../mfc/reference/colecontrol-class.md)<br/>
-OLE denetimleri geliştirmek için güçlü bir temel sınıf.
+OLE denetimleri geliştirmeye yönelik güçlü bir temel sınıf.
 
 [COleControlContainer Sınıfı](../../mfc/reference/colecontrolcontainer-class.md)<br/>
-ActiveX denetimleri için Denetim kapsayıcısı gibi davranır.
+, ActiveX denetimleri için bir denetim kapsayıcısı işlevi görür.
 
 [COleControlModule Sınıfı](../../mfc/reference/colecontrolmodule-class.md)<br/>
-Bir OLE denetim modülü nesnesi türettiğiniz taban sınıfı.
+OLE denetim modülü nesnesi türettiğiniz temel sınıf.
 
 [COleControlSite Sınıfı](../../mfc/reference/colecontrolsite-class.md)<br/>
 Özel istemci tarafı denetim arabirimleri için destek sağlar.
 
 [COleConvertDialog Sınıfı](../../mfc/reference/coleconvertdialog-class.md)<br/>
-Daha fazla bilgi için [OLEUICONVERT](/windows/desktop/api/oledlg/ns-oledlg-tagoleuiconverta) Windows SDK'sındaki yapısı.
+Daha fazla bilgi için Windows SDK [Oleuiconvert](/windows/win32/api/oledlg/ns-oledlg-oleuiconvertw) yapısına bakın.
 
 [COleCurrency Sınıfı](../../mfc/reference/colecurrency-class.md)<br/>
-Kapsülleyen `CURRENCY` OLE Otomasyonu nesnesi etkin veri türü.
+OLE otomasyonunun `CURRENCY` veri türünü kapsüller.
 
 [COleDataObject Sınıfı](../../mfc/reference/coledataobject-class.md)<br/>
-Panodan, sürükle ve bırak ile veya katıştırılmış bir OLE öğesinden farklı biçimlerde veri almak için veri aktarımlarında kullanıldı.
+Panodan, sürükle ve bırak ile veya katıştırılmış bir OLE öğesinden çeşitli biçimlerdeki verileri almak için veri aktarımları kullanılır.
 
 [COleDataSource Sınıfı](../../mfc/reference/coledatasource-class.md)<br/>
-İçine bir uygulama oluşturma sırasında yerleşim verilerine sağlayacağı veri yerleştirir bir önbellek olarak görev yapar, Pano veya sürükle ve bırak işlemleri gibi işlemleri aktarın.
+, Bir uygulamanın pano veya sürükle ve bırak işlemleri gibi veri aktarımı işlemleri sırasında sunabileceği verileri yerleştirdiği bir önbellek gibi davranır.
 
 [COleDBRecordView Sınıfı](../../mfc/reference/coledbrecordview-class.md)<br/>
 Denetimlerde veritabanı kayıtlarını görüntüleyen bir görünüm.
 
 [COleDialog Sınıfı](../../mfc/reference/coledialog-class.md)<br/>
-OLE iletişim kutularındaki ortak işlevselliği sağlar.
+OLE için iletişim kutularında ortak işlevsellik sağlar.
 
 [COleDispatchDriver Sınıfı](../../mfc/reference/coledispatchdriver-class.md)<br/>
-OLE Otomasyonu nesnesi etkin tarafını uygular.
+OLE otomasyonunun istemci tarafını uygular.
 
 [COleDispatchException Sınıfı](../../mfc/reference/coledispatchexception-class.md)<br/>
-OLE belirli özel durumları işler `IDispatch` arabirimi OLE otomasyonunun önemli bir parçasıdır.
+OLE otomasyonunun önemli bir parçası `IDispatch` olan OLE arabirimine özgü özel durumları işler.
 
 [COleDocObjectItem Sınıfı](../../mfc/reference/coledocobjectitem-class.md)<br/>
-Etkin belge kapsamı uygular.
+Etkin belge kapsamayı uygular.
 
 [COleDocument Sınıfı](../../mfc/reference/coledocument-class.md)<br/>
-Görsel düzenlemeyi destekleyen OLE belgeleri için taban sınıf.
+Görsel düzenlemesini destekleyen OLE belgelerinin temel sınıfı.
 
 [COleDropSource Sınıfı](../../mfc/reference/coledropsource-class.md)<br/>
-Veri, bırakma hedefine sürüklenmesi etkinleştirir.
+Verilerin bir bırakma hedefine sürüklenip olmasını sağlar.
 
 [COleDropTarget Sınıfı](../../mfc/reference/coledroptarget-class.md)<br/>
 Bir pencere ve OLE kitaplıkları arasındaki iletişim mekanizmasını sağlar.
 
 [COleException Sınıfı](../../mfc/reference/coleexception-class.md)<br/>
-Bir OLE işlemiyle ilgili bir özel durum koşulunu temsil eder.
+OLE işlemiyle ilgili bir özel durum koşulunu temsil eder.
 
 [COleInsertDialog Sınıfı](../../mfc/reference/coleinsertdialog-class.md)<br/>
-OLE Insert Object iletişim kutusu için kullanıldı.
+OLE nesne Ekle iletişim kutusu için kullanılır.
 
 [COleIPFrameWnd Sınıfı](../../mfc/reference/coleipframewnd-class.md)<br/>
-Uygulamanızın yerinde düzenleme penceresi için taban dizini.
+Uygulamanızın yerinde düzenlemesi penceresi için temel.
 
 [COleIPFrameWndEx Sınıfı](../../mfc/reference/coleipframewndex-class.md)<br/>
-MFC'yi destekleyen OLE kapsayıcısı uygular. Uygulamanız için yerinde pencere sınıfını türetilmelidir `COleIPFrameWndEx` sınıf türetmeniz yerine [Coleıpframewnd](../../mfc/reference/coleipframewnd-class.md) sınıfı.
+MFC 'yi destekleyen bir OLE kapsayıcısı uygular. `COleIPFrameWndEx` [Copaipframewnd](../../mfc/reference/coleipframewnd-class.md) sınıfından türetmeniz yerine, uygulamanız için sınıf içi çerçeve pencere sınıfını türemeniz gerekir.
 
 [COleLinkingDoc Sınıfı](../../mfc/reference/colelinkingdoc-class.md)<br/>
-İçerdikleri katıştırılmış öğelere bağlamayı destekleyen OLE kapsayıcı belgeleri için taban sınıf.
+İçerdikleri katıştırılmış öğelere bağlamayı destekleyen OLE kapsayıcı belgelerinin temel sınıfı.
 
 [COleLinksDialog Sınıfı](../../mfc/reference/colelinksdialog-class.md)<br/>
-OLE Edit Links iletişim kutusu için kullanıldı.
+OLE düzenleme bağlantıları iletişim kutusu için kullanılır.
 
 [COleMessageFilter Sınıfı](../../mfc/reference/colemessagefilter-class.md)<br/>
-OLE uygulamalarının etkileşimi tarafından gereken eşzamanlılığı yönetir.
+OLE uygulamalarının etkileşimi için gereken eşzamanlılık düzeyini yönetir.
 
 [COleObjectFactory Sınıfı](../../mfc/reference/coleobjectfactory-class.md)<br/>
-Sınıf sunucuları, Otomasyon nesneleri ve belgeler gibi OLE nesnelerini oluşturan üretecini uygular.
+Sunucular, Otomasyon nesneleri ve belgeler gibi OLE nesneleri oluşturan OLE sınıfı fabrikasını uygular.
 
 [COlePasteSpecialDialog Sınıfı](../../mfc/reference/colepastespecialdialog-class.md)<br/>
-OLE Paste Special iletişim kutusu için kullanıldı.
+OLE Paste özel iletişim kutusu için kullanılır.
 
 [COlePropertiesDialog Sınıfı](../../mfc/reference/colepropertiesdialog-class.md)<br/>
-Windows ortak OLE nesne özelliği iletişim kutusunu kapsüller.
+Windows ortak OLE nesne özellikleri iletişim kutusunu kapsüller.
 
 [COlePropertyPage Sınıfı](../../mfc/reference/colepropertypage-class.md)<br/>
-Özel bir denetimin özelliklerini iletişim kutusuna benzer bir grafik arabiriminde görüntülemek için kullanılır.
+Bir iletişim kutusuna benzer şekilde bir grafik arabirimde özel bir denetimin özelliklerini göstermek için kullanılır.
 
 [COleResizeBar Sınıfı](../../mfc/reference/coleresizebar-class.md)<br/>
-Yerleşik OLE öğelerinin yeniden boyutlandırılmasını destekleyen denetim çubuğu türü.
+Yerinde OLE öğelerinin yeniden boyutlandırılmasını destekleyen bir denetim çubuğu türü.
 
 [COleSafeArray Sınıfı](../../mfc/reference/colesafearray-class.md)<br/>
-Rastgele tür ve boyut dizilerle çalışırken bir sınıf.
+Rastgele tür ve boyut dizileri ile çalışmaya yönelik bir sınıf.
 
 [COleServerDoc Sınıfı](../../mfc/reference/coleserverdoc-class.md)<br/>
-OLE sunucu belgeleri için taban sınıf.
+OLE sunucu belgeleri için temel sınıf.
 
 [COleServerItem Sınıfı](../../mfc/reference/coleserveritem-class.md)<br/>
-OLE öğelerine ilişkin sunucu arabirimini sağlar.
+OLE öğelerine sunucu arabirimi sağlar.
 
 [COleStreamFile Sınıfı](../../mfc/reference/colestreamfile-class.md)<br/>
-Veri akışını temsil eder (`IStream`) OLE yapılı depolama bir parçası olarak birleşik bir dosyadaki.
+Birleşik dosyadaki bir veri`IStream`akışını OLE yapılandırılmış depolamanın bir parçası olarak temsil eder.
 
 [COleTemplateServer Sınıfı](../../mfc/reference/coletemplateserver-class.md)<br/>
-OLE görsel düzenleme sunucuları, otomasyon sunucuları ve bağlantı kapsayıcıları (katıştırma için bağlantı destekleyen uygulamalar) için kullanılır.
+OLE görsel düzenlemesi sunucuları, otomasyon sunucuları ve bağlantı kapsayıcıları (katıştırlara bağlantıları destekleyen uygulamalar) için kullanılır.
 
 [COleUpdateDialog Sınıfı](../../mfc/reference/coleupdatedialog-class.md)<br/>
-Kullanılması gereken OLE Edit Links iletişim kutusu için bir özel durum kullanılan yalnızca mevcut güncelleştirme gerektiğinde, bağlantılı veya katıştırılmış bir belgede nesneleri.
+Bir belgede yalnızca mevcut bağlantılı veya katıştırılmış nesneleri güncelleştirmeniz gerektiğinde kullanılması gereken OLE düzenleme bağlantıları iletişim kutusunun özel bir durumu için kullanılır.
 
 [COleVariant Sınıfı](../../mfc/reference/colevariant-class.md)<br/>
-Kapsülleyen [değişken](/windows/desktop/api/oaidl/ns-oaidl-tagvariant) veri türü.
+[Değişken](/windows/win32/api/oaidl/ns-oaidl-variant) veri türünü kapsüller.
 
 [CPagerCtrl Sınıfı](../../mfc/reference/cpagerctrl-class.md)<br/>
-`CPagerCtrl` Sınıfı, kapsayan pencereye uymayan bir kapsanan pencere görünümüne kaydırabilirsiniz Windows sayfalama denetimini sarar.
+`CPagerCtrl` Sınıfı Windows sayfalayıcı denetimini sarmalanmış ve kapsayan pencereye uymayan bir içerilen pencereyi görüntülemeye kaydırabilen.
 
 [CPageSetupDialog Sınıfı](../../mfc/reference/cpagesetupdialog-class.md)<br/>
-Ayar ve yazdırma kenar boşluklarını değiştirmek için ek destek içeren Windows ortak OLE sayfa düzeni iletişim kutusu tarafından sağlanan hizmetleri kapsüller.
+Windows ortak OLE sayfa kurulumu iletişim kutusu tarafından sunulan hizmetleri, yazdırma kenar boşluklarını ayarlama ve değiştirme için ek destek ile kapsüller.
 
 [CPaintDC Sınıfı](../../mfc/reference/cpaintdc-class.md)<br/>
-Türetilen cihaz içeriği sınıfı [CDC sınıfı](../../mfc/reference/cdc-class.md).
+[CDC sınıfından](../../mfc/reference/cdc-class.md)türetilmiş bir cihaz bağlamı sınıfı.
 
 [CPalette Sınıfı](../../mfc/reference/cpalette-class.md)<br/>
-Bir Windows renk paleti kapsüller.
+Bir Windows renk paletini kapsüller.
 
 [CPane Sınıfı](../../mfc/reference/cpane-class.md)<br/>
-Geliştirmesini [CControlBar sınıfı](../../mfc/reference/ccontrolbar-class.md). Varolan bir MFC projesini yükseltiyorsanız tüm oluşumlarını değiştirmeye gerek `CControlBar` ile `CPane`.
+[CControlBar sınıfının](../../mfc/reference/ccontrolbar-class.md)geliştirilmesi. Varolan bir MFC projesini yükseltiyorsanız, tüm yinelemelerini `CControlBar` ile `CPane`değiştirmeniz gerekir.
 
 [CPaneContainer Sınıfı](../../mfc/reference/cpanecontainer-class.md)<br/>
-MFC tarafından uygulanan yerleştirme modelinin ana bileşenidir. Bu sınıfın bir nesnesi işaretçileri iki yerleştirme bölmesine veya iki örneğini depolar `CPaneContainer.` ayrıca bölmeleri (veya kapsayıcıları) ayıran ayırıcıya bir işaretçi depolar. Kapsayıcıları iç içe geçirerek kapsayıcılar, karmaşık yerleştirme düzenlerini temsil eden bir ikili ağacı framework oluşturabilirsiniz. İkili ağacın kökünde depolanan bir [CPaneContainerManager sınıfı](../../mfc/reference/cpanecontainermanager-class.md) nesne.
+MFC tarafından uygulanan yerleştirme modelinin temel bileşeni. Bu sınıfın bir nesnesi, `CPaneContainer.` işaretçileri iki yerleştirme bölmesine veya bunun iki örneğine depolar, ayrıca bölmeleri (veya kapsayıcıları) ayıran bölüçde bir işaretçi depolar. Kapsayıcılar kapsayıcı içinde iç içe geçirerek, çerçeve karmaşık yerleştirme düzenlerini temsil eden bir ikili ağaç oluşturabilir. İkili ağacın kökü bir [Cbölmesi Containermanager sınıfı](../../mfc/reference/cpanecontainermanager-class.md) nesnesinde depolanır.
 
 [CPaneContainerManager Sınıfı](../../mfc/reference/cpanecontainermanager-class.md)<br/>
-Depolama ve geçerli yerleştirme düzeni görünümünü yönetir.
+Geçerli yerleştirme düzeninin depolama ve görüntüleme işlemlerini yönetir.
 
 [CPaneDialog Sınıfı](../../mfc/reference/cpanedialog-class.md)<br/>
 Kalıcı olmayan, yerleştirilebilir bir iletişim kutusunu destekler.
 
 [CPaneDivider Sınıfı](../../mfc/reference/cpanedivider-class.md)<br/>
-İki bölmeyi ayırır, iki bölme grubunu ayırır veya bir grup bölmeleri ana çerçeve penceresinin istemci alanından ayırır.
+İki bölmeyi böler, iki bölme grubunu böler veya bir bölmeler grubunu ana çerçeve penceresinin istemci alanından ayırır.
 
 [CPaneFrameWnd Sınıfı](../../mfc/reference/cpaneframewnd-class.md)<br/>
-Bir bölme içeren bir mini çerçeve uygular. Bölme pencerenin istemci alanını doldurur.
+Bir bölme içeren bir mini çerçeve penceresi uygular. Bölmesi pencerenin istemci alanını doldurur.
 
 [CParabolicTransitionFromAcceleration Sınıfı](../../mfc/reference/cparabolictransitionfromacceleration-class.md)<br/>
-Bir parabolik ivmeli geçişi kapsüller.
+Bir parabolik hızlandırma geçişini kapsüller.
 
 [CPen Sınıfı](../../mfc/reference/cpen-class.md)<br/>
-Bir Windows grafik cihaz arabirimi (GDI) kalemi kapsüller.
+Windows grafik cihaz arabirimi (GDI) kalemini kapsüller.
 
 [CPictureHolder Sınıfı](../../mfc/reference/cpictureholder-class.md)<br/>
-Kullanıcının sizin Denetiminizdeki bir resmi görüntülemek sağlayan resim özelliği uygular.
+Kullanıcının denetiinizdeki bir resmi görüntülemesini sağlayan bir Picture özelliği uygular.
 
 [CPoint Sınıfı](../../atl-mfc-shared/reference/cpoint-class.md)<br/>
-Windows için benzer `POINT` yapısı.
+Windows `POINT` yapısına benzer.
 
 [CPrintDialog Sınıfı](../../mfc/reference/cprintdialog-class.md)<br/>
-Yazdırma için Windows ortak iletişim kutusu tarafından sağlanan hizmetleri kapsüller.
+Yazdırma için Windows ortak iletişim kutusu tarafından sunulan hizmetleri kapsüller.
 
 [CPrintDialogEx Sınıfı](../../mfc/reference/cprintdialogex-class.md)<br/>
-Windows Print özellik sayfası tarafından sağlanan hizmetleri kapsüller.
+Windows yazdırma özelliği sayfası tarafından sunulan hizmetleri kapsüller.
 
 [CProgressCtrl Sınıfı](../../mfc/reference/cprogressctrl-class.md)<br/>
-Windows ortak ilerleme çubuğu denetimi işlevlerini sağlar.
+Windows ortak ilerleme çubuğu denetiminin işlevlerini sağlar.
 
 [CPropertyPage Sınıfı](../../mfc/reference/cpropertypage-class.md)<br/>
-Aksi takdirde bir sekme iletişim kutusu bilinen bir özellik sayfası, her bir sayfayı temsil eder.
+Bir özellik sayfasının tek tek sayfalarını gösterir, aksi halde sekme iletişim kutusu olarak bilinir.
 
 [CPropertySheet Sınıfı](../../mfc/reference/cpropertysheet-class.md)<br/>
-Özellik sayfaları iletişim kutusu olarak da bilinen temsil eder.
+Sekme iletişim kutusu olarak da bilinen özellik sayfalarını temsil eder.
 
 [CPropExchange Sınıfı](../../mfc/reference/cpropexchange-class.md)<br/>
-OLE denetimleriniz için sürekliliğin uygulanmasını destekler.
+OLE Denetimleriniz için kalıcılık uygulamasını destekler.
 
 [CPtrArray Sınıfı](../../mfc/reference/cptrarray-class.md)<br/>
 Void işaretçileri dizilerini destekler.
 
 [CPtrList Sınıfı](../../mfc/reference/cptrlist-class.md)<br/>
-Void işaretçilerin listelerini destekler.
+Void işaretçilerinin listesini destekler.
 
 [CReBar Sınıfı](../../mfc/reference/crebar-class.md)<br/>
-Düzen, süreklilik ve çubuk barınağı denetimleri için durum bilgileri sağlayan denetim çubuğu.
+Rebar denetimleri için düzen, kalıcılık ve durum bilgilerini sağlayan bir denetim çubuğu.
 
 [CReBarCtrl Sınıfı](../../mfc/reference/crebarctrl-class.md)<br/>
-Alt pencere kapsayıcısı olan bir çubuk barınağı denetiminin işlevselliğini kapsüller.
+Bir alt pencerenin kapsayıcısı olan bir Rebar denetiminin işlevselliğini Kapsüller.
 
 [CRecentDockSiteInfo Sınıfı](../../mfc/reference/crecentdocksiteinfo-class.md)<br/>
-İçin son durum bilgilerini saklayan yardımcı sınıf [CPane sınıfı](../../mfc/reference/cpane-class.md).
+[CPane sınıfı](../../mfc/reference/cpane-class.md)için son durum bilgilerini depolayan yardımcı sınıf.
 
 [CRecentFileList Sınıfı](../../mfc/reference/crecentfilelist-class.md)<br/>
 En son kullanılan (MRU) dosya listesinin denetimini destekler.
 
 [CRecordset Sınıfı](../../mfc/reference/crecordset-class.md)<br/>
-Bir veri kaynağından seçilen kayıt kümesini temsil eder.
+Bir veri kaynağından seçilen bir kayıt kümesini temsil eder.
 
 [CRecordView Sınıfı](../../mfc/reference/crecordview-class.md)<br/>
 Denetimlerde veritabanı kayıtlarını görüntüleyen bir görünüm.
 
 [CRect Sınıfı](../../atl-mfc-shared/reference/crect-class.md)<br/>
-Benzer şekilde bir Windows [RECT yapısı](/windows/desktop/api/windef/ns-windef-tagrect).
+Bir Windows [Rect yapısına](/windows/win32/api/windef/ns-windef-rect)benzer.
 
 [CRectTracker Sınıfı](../../mfc/reference/crecttracker-class.md)<br/>
-Görüntülenen, taşınan ve farklı boyutlandırmak için bir öğe sağlar.
+Bir öğenin farklı fashiler içinde görüntülenmesini, taşınmasını ve yeniden boyutlandırılmasını sağlar.
 
 [CRenderTarget Sınıfı](../../mfc/reference/crendertarget-class.md)<br/>
-İçin sarmalayıcı `ID2D1RenderTarget`.
+İçin `ID2D1RenderTarget`bir sarmalayıcı.
 
 [CResourceException Sınıfı](../../mfc/reference/cresourceexception-class.md)<br/>
-Windows bulunamıyor veya istenen bir kaynağı ayırmak oluşturulur.
+Windows istenen bir kaynağı bulamadığında veya ayıramadığında oluşturulur.
 
 [CReversalTransition Sınıfı](../../mfc/reference/creversaltransition-class.md)<br/>
-Bir tersleme geçişini kapsüller.
+Ters çevirme geçişini kapsüller.
 
 [CRgn Sınıfı](../../mfc/reference/crgn-class.md)<br/>
-Bir Windows grafik cihaz arabirimi (GDI) bölgesi kapsüller.
+Bir Windows grafik cihaz arabirimi (GDI) bölgesini kapsüller.
 
 [CRichEditCntrItem Sınıfı](../../mfc/reference/cricheditcntritem-class.md)<br/>
-İle [CRichEditView sınıfı](../../mfc/reference/cricheditview-class.md) ve [CRichEditDoc sınıfı](../../mfc/reference/cricheditdoc-class.md), MFC'nin belge görüntüleme mimarisi bağlamında zengin düzenleme denetimi işlevlerini sağlar.
+[CRichEditView sınıfı](../../mfc/reference/cricheditview-class.md) ve [CRichEditDoc sınıfı](../../mfc/reference/cricheditdoc-class.md)ile, MFC 'nin belge görünümü mimarisinin bağlamı içinde zengin düzenleme denetimi işlevlerini sağlar.
 
 [CRichEditCtrl Sınıfı](../../mfc/reference/cricheditctrl-class.md)<br/>
 Zengin düzenleme denetimi işlevlerini sağlar.
 
 [CRichEditDoc Sınıfı](../../mfc/reference/cricheditdoc-class.md)<br/>
-İle [CRichEditView sınıfı](../../mfc/reference/cricheditview-class.md) ve [Cricheditcntrıtem sınıfı](../../mfc/reference/cricheditcntritem-class.md), MFC'nin belge görüntüleme mimarisi bağlamında zengin düzenleme denetimi işlevlerini sağlar.
+[CRichEditView sınıfı](../../mfc/reference/cricheditview-class.md) ve [Cricheditcntridıtem sınıfı](../../mfc/reference/cricheditcntritem-class.md)ile, MFC 'nin belge görünümü mimarisinin bağlamı içinde zengin düzenleme denetimi işlevlerini sağlar.
 
 [CRichEditView Sınıfı](../../mfc/reference/cricheditview-class.md)<br/>
-İle [CRichEditDoc sınıfı](../../mfc/reference/cricheditdoc-class.md) ve [Cricheditcntrıtem sınıfı](../../mfc/reference/cricheditcntritem-class.md), MFC'nin belge görüntüleme mimarisi bağlamında zengin düzenleme denetimi işlevlerini sağlar.
+[CRichEditDoc sınıfı](../../mfc/reference/cricheditdoc-class.md) ve [Cricheditcntridıtem sınıfı](../../mfc/reference/cricheditcntritem-class.md)ile, MFC 'nin belge görünümü mimarisinin bağlamı içinde zengin düzenleme denetimi işlevlerini sağlar.
 
 [CScrollBar Sınıfı](../../mfc/reference/cscrollbar-class.md)<br/>
 Windows kaydırma çubuğu denetimi işlevlerini sağlar.
 
 [CScrollView Sınıfı](../../mfc/reference/cscrollview-class.md)<br/>
-A [CView sınıfı](../../mfc/reference/cview-class.md) kaydırma özelliğine sahip.
+Kaydırma özelliklerine sahip bir [CView sınıfı](../../mfc/reference/cview-class.md) .
 
 [CSemaphore Sınıfı](../../mfc/reference/csemaphore-class.md)<br/>
-"Belirtilen kaynak şu anda erişen iş parçacığı sayısını aMaintains erişmek için bir veya daha fazla işlemde sınırlı sayıda iş parçacığına izin veren bir eşitleme nesnesi olan bir semaforu" temsil eder.
+Bir veya daha fazla işlemle sınırlı sayıda iş parçacığının belirli bir kaynağa erişmekte olan iş parçacığı sayısı sayısına erişmesine izin veren bir eşitleme nesnesi olan bir "semafor" temsil eder.
 
 [CSettingsStore Sınıfı](../../mfc/reference/csettingsstore-class.md)<br/>
-Windows API işlevlerini, kayıt defterine erişmek için kullandığınız bir nesne yönelimli bir arabirim sağlayan sarmalar.
+Windows API işlevlerini sarmalayan, kayıt defterine erişmek için kullandığınız nesne odaklı bir arabirim sağlar.
 
 [CSettingsStoreSP Sınıfı](../../mfc/reference/csettingsstoresp-class.md)<br/>
-Örneklerini oluşturmak için kullanabileceğiniz yardımcı sınıf [CSettingsStore sınıfı](../../mfc/reference/csettingsstore-class.md).
+[Csettingssbir sınıfının](../../mfc/reference/csettingsstore-class.md)örneklerini oluşturmak için kullanabileceğiniz yardımcı sınıfı.
 
 [CSharedFile Sınıfı](../../mfc/reference/csharedfile-class.md)<br/>
-[CMemFile sınıfı](../../mfc/reference/cmemfile-class.md)-paylaşılan bellek dosyalarını destekleyen türetilmiş bir sınıf.
+Paylaşılan bellek dosyalarını destekleyen [CMemFile sınıfı](../../mfc/reference/cmemfile-class.md)tarafından türetilmiş sınıf.
 
 [CShellManager Sınıfı](../../mfc/reference/cshellmanager-class.md)<br/>
-Tanımlayıcı listeleri (Pıdl'ler) için işaretçilerle çalışmanıza olanak tanıyan çeşitli yöntemler uygular.
+, Tanımlayıcı listelerine yönelik işaretçilerle çalışmanızı sağlayan çeşitli yöntemler uygular (PIDLs).
 
 [CSimpleException Sınıfı](../../mfc/reference/csimpleexception-class.md)<br/>
-Bu sınıf, kaynak kritik MFC özel durumları için temel sınıftır.
+Bu sınıf, kaynak açısından kritik MFC özel durumları için temel bir sınıftır.
 
 [CSingleDocTemplate Sınıfı](../../mfc/reference/csingledoctemplate-class.md)<br/>
-Tek Belgeli Arabirim (SDI) uygulayan bir belge şablonu tanımlar.
+Tek belge arabirimini (SDI) uygulayan bir belge şablonu tanımlar.
 
 [CSingleLock Sınıfı](../../mfc/reference/csinglelock-class.md)<br/>
-Çoklu iş parçacığı kullanan programda bir kaynağa erişimi denetlemek için kullanılan erişim denetim mekanizmasını temsil eder.
+Çok iş parçacıklı programda bir kaynağa erişimi denetlemek için kullanılan erişim denetimi mekanizmasını temsil eder.
 
 [CSinusoidalTransitionFromRange Sınıfı](../../mfc/reference/csinusoidaltransitionfromrange-class.md)<br/>
-Belirli bir salınım aralığına sahip bir sinüzoidal aralıklı geçişi kapsüller.
+Belirli bir sılation aralığına sahip bir sinusoidal Aralık geçişini kapsüller.
 
 [CSinusoidalTransitionFromVelocity Sınıfı](../../mfc/reference/csinusoidaltransitionfromvelocity-class.md)<br/>
-Animasyon değişkeninin başlangıç hızı tarafından belirlenen bir genliğe sahip sinüzoidal hızlı geçişi kapsüller.
+Animasyon değişkeninin ilk hızına göre belirlenen bir genlik değeri olan bir sinusoidal-hız geçişini kapsüller.
 
 [CSize Sınıfı](../../atl-mfc-shared/reference/csize-class.md)<br/>
-Windows için benzer [BOYUTU](/windows/desktop/api/windef/ns-windef-tagsize) göreli koordinat veya konum uygulayan yapısı.
+Göreli bir koordinat veya konum uygulayan Windows [Boyut](/windows/win32/api/windef/ns-windef-size) yapısına benzer.
 
 [CSliderCtrl Sınıfı](../../mfc/reference/csliderctrl-class.md)<br/>
 Windows ortak kaydırıcı denetimi işlevlerini sağlar.
 
 [CSmartDockingInfo Sınıfı](../../mfc/reference/csmartdockinginfo-class.md)<br/>
-Akıllı Yerleştirme işaretçilerinin görünümünü tanımlar.
+Akıllı yerleştirme işaretlerinin görünümünü tanımlar.
 
 [CSmoothStopTransition Sınıfı](../../mfc/reference/csmoothstoptransition-class.md)<br/>
-Yumuşak bitişli geçişi kapsüller.
+Kesintisiz bir geçişi kapsüller.
 
 [CSocket Sınıfı](../../mfc/reference/csocket-class.md)<br/>
-Öğesinden türetilen `CAsyncSocket`, Özet Windows Sockets API'sinin daha yüksek bir düzeyde temsil eder.
+' Dan `CAsyncSocket`türetilir ve Windows Sockets API 'sinin daha yüksek bir soyutlama düzeyini temsil eder.
 
 [CSocketFile Sınıfı](../../mfc/reference/csocketfile-class.md)<br/>
-A `CFile` göndermek ve ağ üzerinden Windows Sockets veri almak için kullanılan nesne.
+Windows `CFile` yuvaları aracılığıyla bir ağ üzerinden veri göndermek ve almak için kullanılan bir nesne.
 
 [CSpinButtonCtrl Sınıfı](../../mfc/reference/cspinbuttonctrl-class.md)<br/>
-Windows ortak değer değiştirme düğmesi denetimi işlevlerini sağlar.
+Windows ortak döndürme düğmesi denetiminin işlevlerini sağlar.
 
 [CSplitButton Sınıfı](../../mfc/reference/csplitbutton-class.md)<br/>
-Bölünmüş düğme denetimini temsil eder. Bir kullanıcı düğmenin ana bölümünü tıkladığında ve kullanıcı düğmenin aşağı açılan oka tıkladığında bir açılan menü görüntüler varsayılan davranışı Bölünmüş düğme denetimi gerçekleştirir.
+Bölünmüş düğme denetimini temsil eder. Bölünmüş düğme denetimi, bir Kullanıcı düğmenin ana kısmına tıkladığında varsayılan bir davranış gerçekleştirir ve bir Kullanıcı düğmenin aşağı açılan okuna tıkladığında bir açılan menü görüntüler.
 
 [CSplitterWnd Sınıfı](../../mfc/reference/csplitterwnd-class.md)<br/>
-Birden fazla bölme içeren bir pencere olan Bölümlendirici penceresinin işlevlerini sağlar.
+Birden çok bölme içeren bir pencere olan Bölümlendirici pencerenin işlevlerini sağlar.
 
 [CSplitterWndEx Sınıfı](csplitterwndex-class.md)<br/>
-Özelleştirilmiş Bölümlendirici pencereyi temsil eder.
+Özelleştirilmiş bir ayırıcı pencereyi temsil eder.
 
 [CStatic Sınıfı](../../mfc/reference/cstatic-class.md)<br/>
 Windows statik denetimi işlevlerini sağlar.
 
 [CStatusBar Sınıfı](../../mfc/reference/cstatusbar-class.md)<br/>
-Metin çıkış bölmeleri veya "göstergeler" satırına sahip bir denetim çubuğu
+Metin çıkış bölmeleri veya "göstergeler" satırı içeren bir denetim çubuğu.
 
 [CStatusBarCtrl Sınıfı](../../mfc/reference/cstatusbarctrl-class.md)<br/>
 Windows ortak durum çubuğu denetimi işlevlerini sağlar.
 
 [CStdioFile Sınıfı](../../mfc/reference/cstdiofile-class.md)<br/>
-Çalışma zamanı işlevi tarafından çalıştırıldığında C çalışma zamanı Akış dosyasını temsil eden [fopen, _wfopen](../../c-runtime-library/reference/fopen-wfopen.md).
+Çalışma zamanı işlevi [fopen, _wfopen](../../c-runtime-library/reference/fopen-wfopen.md)tarafından açılan bir C çalışma zamanı akış dosyasını temsil eder.
 
 [CStringArray Sınıfı](../../mfc/reference/cstringarray-class.md)<br/>
-Dizilerini destekler `CString` nesneleri.
+`CString` Nesne dizilerini destekler.
 
 [CStringList Sınıfı](../../mfc/reference/cstringlist-class.md)<br/>
-Listelerini destekler `CString` nesneleri.
+`CString` Nesne listelerini destekler.
 
 [CSyncObject Sınıfı](../../mfc/reference/csyncobject-class.md)<br/>
-Win32'de eşitleme nesneleriyle ortak işlevselliği sağlayan saf sanal sınıf.
+Win32 içindeki eşitleme nesnelerinde ortak işlevselliği sağlayan saf bir sanal sınıf.
 
 [CTabbedPane Sınıfı](../../mfc/reference/ctabbedpane-class.md)<br/>
-Çıkarılabilir sekmeler içeren bölme işlevselliğini uygular.
+Çıkarılabilir sekmeler içeren bir bölme işlevlerini uygular.
 
 [CTabCtrl Sınıfı](../../mfc/reference/ctabctrl-class.md)<br/>
 Windows ortak sekme denetimi işlevlerini sağlar.
 
 [CTabView Sınıfı](../../mfc/reference/ctabview-class.md)<br/>
-Sekme denetim sınıfının kullanımını kolaylaştırır ([CTabView sınıfı](../../mfc/reference/ctabview-class.md)) MFC'nin belge/görünüm mimarisini kullanan uygulamalarda.
+MFC 'nin belge/görünüm mimarisini kullanan uygulamalarda Tab denetim sınıfının ([CTabView sınıfı](../../mfc/reference/ctabview-class.md)) kullanımını basitleştirir.
 
 [CTaskDialog Sınıfı](../../mfc/reference/ctaskdialog-class.md)<br/>
-İşlevler bir açılır iletişim kutusunda bir ileti kutusu gibi ancak kullanıcıya ek bilgileri görüntüleyebilirsiniz. `CTaskDialog` Ayrıca kullanıcıdan bilgi toplama işlevi içerir.
+İleti kutusu gibi işlev gören, ancak kullanıcıya ek bilgiler görüntüleyebilen bir açılır iletişim kutusu. Ayrıca `CTaskDialog` , kullanıcıdan bilgi toplamaya yönelik işlevleri de içerir.
 
 [CToolBar Sınıfı](../../mfc/reference/ctoolbar-class.md)<br/>
-Bit eşlemli düğmeler ve isteğe bağlı ayırıcılar içeren bir satırın sahip denetim çubukları.
+Bit eşlenmiş düğmelerin ve isteğe bağlı ayırıcıların bulunduğu denetim çubukları.
 
 [CToolBarCtrl Sınıfı](../../mfc/reference/ctoolbarctrl-class.md)<br/>
-Windows ortak araç çubuğu denetimi işlevlerini sağlar.
+Windows Toolbar ortak denetiminin işlevlerini sağlar.
 
 [CToolTipCtrl Sınıfı](../../mfc/reference/ctooltipctrl-class.md)<br/>
-Bir "araç ipucunu denetimini," tek satırlık bir uygulamada bir aracın amacını açıklayan metin görüntüleyen küçük bir açılır pencere işlevselliğini kapsüller.
+Bir uygulamada aracın amacını açıklayan tek satırlık bir metin görüntüleyen küçük bir açılan pencere olan "araç ipucu denetimi" işlevselliğini Kapsüller.
 
 [CTooltipManager Sınıfı](../../mfc/reference/ctooltipmanager-class.md)<br/>
-İpuçları hakkındaki çalışma zamanı bilgilerini tutar. `CTooltipManager` Sınıfı, uygulama başına örneklenmiş bir kez.
+Araç ipuçları hakkında çalışma zamanı bilgilerini korur. `CTooltipManager` Sınıf, uygulama başına bir kez oluşturulur.
 
 [CTreeCtrl Sınıfı](../../mfc/reference/ctreectrl-class.md)<br/>
 Windows ortak ağaç görünümü denetimi işlevlerini sağlar.
 
 [CTreeView Sınıfı](../../mfc/reference/ctreeview-class.md)<br/>
-Ağaç denetimi ve, basitleştirir [CTreeCtrl sınıfı](../../mfc/reference/ctreectrl-class.md), MFC'nin belge / görünüm mimarisi ile ağaç denetimi işlevini kapsayan sınıf.
+Ağaç denetiminin ve [Ctreecp sınıfının](../../mfc/reference/ctreectrl-class.md)kullanımını basitleştirir, böylece MFC 'nin belge görünümü mimarisi ile ağaç denetimi işlevselliğini kapsülleyen sınıf.
 
 [CTypedPtrArray Sınıfı](../../mfc/reference/ctypedptrarray-class.md)<br/>
-Sınıfındaki nesneler için tür açısından güvenli bir "sarmalayıcı" sağlar `CPtrArray` veya `CObArray`.
+, Veya `CPtrArray` `CObArray`sınıfının nesneleri için tür açısından güvenli bir "sarmalayıcı" sağlar.
 
 [CTypedPtrList Sınıfı](../../mfc/reference/ctypedptrlist-class.md)<br/>
-Sınıfındaki nesneler için tür açısından güvenli bir "sarmalayıcı" sağlar `CPtrList`.
+Sınıfının `CPtrList`nesneleri için tür açısından güvenli bir "sarmalayıcı" sağlar.
 
 [CTypedPtrMap Sınıfı](../../mfc/reference/ctypedptrmap-class.md)<br/>
-Bir tür açısından güvenli, işaretçi eşleme sınıflarındaki nesneler için "sarmalayıcı" sağlar `CMapPtrToPtr`, `CMapPtrToWord`, `CMapWordToPtr`, ve `CMapStringToPtr`.
+İşaretçi `CMapPtrToPtr`eşleme sınıflarının `CMapPtrToWord` `CMapStringToPtr`,,, ve nesneleri için tür açısından güvenli bir "sarmalayıcı" sağlar. `CMapWordToPtr`
 
 [CUIntArray Sınıfı](../../mfc/reference/cuintarray-class.md)<br/>
-İşaretsiz tamsayı dizilerini destekler.
+İşaretsiz tamsayıların dizilerini destekler.
 
 [CUserException Sınıfı](../../mfc/reference/cuserexception-class.md)<br/>
-Son kullanıcı işlemini durdurmak için oluşturulur.
+Son Kullanıcı işlemini durdurmak için oluşturulur.
 
 [CUserTool Sınıfı](../../mfc/reference/cusertool-class.md)<br/>
-Bir dış uygulamayı çalıştıran menü öğesidir. **Araçları** sekmesinde **Özelleştir** iletişim kutusu ([CMFCToolBarsCustomizeDialog sınıfı](../../mfc/reference/cmfctoolbarscustomizedialog-class.md)) kullanıcının kullanıcı araçları eklemesine ve adını, komut, bağımsız değişken belirtmenizi sağlar ve Her kullanıcı aracı için başlangıç dizini.
+Dış uygulama çalıştıran menü öğesi. **Özelleştir** Iletişim kutusunun **Araçlar** sekmesi ([CMFCToolBarsCustomizeDialog sınıfı](../../mfc/reference/cmfctoolbarscustomizedialog-class.md)), kullanıcının Kullanıcı araçları eklemesini ve her kullanıcı aracı için ad, komut, bağımsız değişkenler ve başlangıç dizinini belirtmesini sağlar.
 
 [CUserToolsManager Sınıfı](../../mfc/reference/cusertoolsmanager-class.md)<br/>
-Koleksiyonunu tutar [CUserTool sınıfı](../../mfc/reference/cusertool-class.md) bir uygulamadaki nesneler. Kullanıcı aracı dış uygulamayı çalıştıran menü öğesidir. `CUserToolsManager` Kullanıcı veya uygulamaya yeni kullanıcı araçları eklemesine Geliştirici nesnesi sağlar. Kullanıcı araçlarıyla ilişkili komutların yürütülmesini destekler ve ayrıca Windows kayıt defterine kullanıcı araçlarıyla ilgili bilgileri kaydeder.
+Bir uygulamadaki [CUserTool sınıf](../../mfc/reference/cusertool-class.md) nesnelerinin koleksiyonunu tutar. Kullanıcı Aracı, dış uygulama çalıştıran bir menü öğesidir. `CUserToolsManager` Nesnesi, kullanıcının veya geliştiricinin uygulamaya Yeni Kullanıcı araçları eklemesini sağlar. Kullanıcı araçlarıyla ilişkili komutların yürütülmesini destekler ve ayrıca Windows kayıt defterindeki Kullanıcı araçlarıyla ilgili bilgileri kaydeder.
 
 [CView Sınıfı](../../mfc/reference/cview-class.md)<br/>
 Kullanıcı tanımlı görünüm sınıfları için temel işlevleri sağlar.
@@ -1273,36 +1273,36 @@ Kullanıcı tanımlı görünüm sınıfları için temel işlevleri sağlar.
 Düzenlenebilir bir liste denetimini destekler.
 
 [CWaitCursor Sınıfı](../../mfc/reference/cwaitcursor-class.md)<br/>
-Uzun bir işlem yaparken, genellikle bir kum saati görüntülenen bekleme imlecini göstermek için bir yol sağlar.
+Uzun bir işlem gerçekleştirirken genellikle kum saati olarak görünen Bekleme imlecini göstermek için tek satırlık bir yol sağlar.
 
 [CWinApp Sınıfı](../../mfc/reference/cwinapp-class.md)<br/>
-Bir Windows uygulama nesnesi türettiğiniz taban sınıfı.
+Windows uygulama nesnesini türettiğiniz temel sınıf.
 
 [CWinAppEx Sınıfı](../../mfc/reference/cwinappex-class.md)<br/>
-Uygulama durumu işler, durumu kayıt defterine kaydeder, kayıt defterinden durumu yükler, uygulama yöneticilerini başlatır ve aynı uygulama yöneticileri için bağlantılar sağlar.
+Uygulama durumunu işler, durumu kayıt defterine kaydeder, durumu kayıt defterinden yükler, uygulama yöneticilerini başlatır ve aynı uygulama yöneticilerine bağlantılar sağlar.
 
 [CWindowDC Sınıfı](../../mfc/reference/cwindowdc-class.md)<br/>
-Türetilmiş `CDC`.
+Öğesinden `CDC`türetilir.
 
 [CWinFormsControl Sınıfı](../../mfc/reference/cwinformscontrol-class.md)<br/>
-Bir Windows Forms denetimlerinin barındırılması için temel işlevleri sağlar.
+Windows Forms denetiminin barındırılmasına yönelik temel işlevleri sağlar.
 
 [CWinFormsDialog Sınıfı](../../mfc/reference/cwinformsdialog-class.md)<br/>
-Bir Windows Forms kullanıcı denetimi barındıran MFC iletişim kutusu sınıfı için sarmalayıcı.
+Windows Forms Kullanıcı denetimini barındıran MFC iletişim sınıfı için sarmalayıcı.
 
 [CWinFormsView Sınıfı](../../mfc/reference/cwinformsview-class.md)<br/>
-Windows Forms denetimlerinin MFC görünümü olarak barındırılması için genel işlevler sağlar.
+Bir Windows Forms denetimini MFC görünümü olarak barındırmak için genel işlevsellik sağlar.
 
 [CWinThread Sınıfı](../../mfc/reference/cwinthread-class.md)<br/>
-Uygulamadaki bir iş parçacığını temsil eder.
+Bir uygulama içindeki yürütmenin iş parçacığını temsil eder.
 
 [CWnd Sınıfı](../../mfc/reference/cwnd-class.md)<br/>
-Microsoft Foundation Class Kitaplığı'ndaki tüm pencere sınıflarının temel işlevlerini sağlar.
+Microsoft Foundation Class Kitaplığı tüm pencere sınıflarının temel işlevlerini sağlar.
 
 [CWordArray Sınıfı](../../mfc/reference/cwordarray-class.md)<br/>
-16 bit sözcük dizilerini destekler.
+16-bit sözcüklerdeki dizileri destekler.
 
 ## <a name="related-sections"></a>İlgili Bölümler
 
 [MFC Masaüstü Uygulamaları](../../mfc/mfc-desktop-applications.md)<br/>
-Sınıfları, genel işlevleri, genel değişkenler ve MFC kitaplığını oluşturan makrolar hakkındaki konulara bağlantılar içerir.
+MFC kitaplığını oluşturan sınıflar, genel işlevler, genel değişkenler ve makrolarla ilgili konuların bağlantılarını içerir.

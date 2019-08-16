@@ -10,16 +10,16 @@ helpviewer_keywords:
 - -GA compiler option [C++]
 - Optimize for Windows compiler options
 ms.assetid: be97323e-15a0-4836-862c-95980b51926a
-ms.openlocfilehash: a5eb6a10f3c4833ecc3e9d9c8451894788ebd938
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 85efa03a3f3d267580cbb0442839afb18ac6c313
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62292321"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69492861"
 ---
 # <a name="ga-optimize-for-windows-application"></a>/GA (Windows Uygulaması için İyileştir)
 
-İş parçacığı yerel depolama (TLS) değişkenleri erişmek için bir .exe dosyası için daha verimli kod sonuçlanır.
+İş parçacığı yerel depolama (TLS) değişkenlerine erişmek için bir. exe dosyası için daha verimli kod sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -29,19 +29,19 @@ ms.locfileid: "62292321"
 
 ## <a name="remarks"></a>Açıklamalar
 
-**/GA** veri erişimi ile bildirilmiş [gt;__declspec(thread)](../../cpp/declspec.md) Windows tabanlı bir programı. Bu seçenek ayarlandığında [__tls_index](/windows/desktop/ProcThread/thread-local-storage) makrosu 0 olarak varsayılır.
+**/Ga** Windows tabanlı bir programda [__declspec (thread)](../../cpp/declspec.md) ile belirtilen verilere erişimi hızlandırır. Bu seçenek ayarlandığında, [__tls_ındex](/windows/win32/ProcThread/thread-local-storage) makrosunun 0 olduğu varsayılır.
 
-Kullanarak **/GA** için bir DLL hatalı kod oluşturma neden olabilir.
+Bir DLL için **/ga** kullanmak, hatalı kod oluşturulmasına neden olabilir.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual C++ Studio 'da derleyici ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Tıklayın **C/C++** klasör.
+1. **C/C++**  klasörüne tıklayın.
 
-1. Tıklayın **komut satırı** özellik sayfası.
+1. **Komut satırı** Özellik sayfasına tıklayın.
 
-1. Derleyici seçeneğini yazın **ek seçenekler** kutusu.
+1. **Ek seçenekler** kutusuna derleyici seçeneğini yazın.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 

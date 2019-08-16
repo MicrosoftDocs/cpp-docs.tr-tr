@@ -56,12 +56,12 @@ helpviewer_keywords:
 - CFileFind [MFC], CloseContext
 - CFileFind [MFC], m_pTM
 ms.assetid: 9990068c-b023-4114-9580-a50182d15240
-ms.openlocfilehash: f2dfd3421d2154b4894b62b71d7993c483a77c53
-ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
+ms.openlocfilehash: 2ec8c50a317a09e97a212e8cd7b9be1b58272af9
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68916132"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69506567"
 ---
 # <a name="cfilefind-class"></a>CFileFind sınıfı
 
@@ -212,7 +212,7 @@ Türetilmiş sınıflarla polimorfik hale getirmek `FindFile` için ayrılmışt
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi takdirde 0. Genişletilmiş hata bilgilerini almak için, WIN32 işlevini çağırın [](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror).
+Başarılı olursa sıfır dışı; Aksi takdirde 0. Genişletilmiş hata bilgilerini almak için, WIN32 işlevini çağırın [](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror).
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -270,7 +270,7 @@ virtual BOOL FindNextFile();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Daha fazla dosya varsa sıfır dışı; Dosya, dizinde sonuncu ise veya bir hata oluştuysa sıfır olur. Genişletilmiş hata bilgilerini almak için, WIN32 işlevini çağırın [](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror). Bulunan dosya dizindeki son dosya ise veya eşleşen dosya bulunamazsa `GetLastError` , işlev ERROR_NO_MORE_FILES döndürür.
+Daha fazla dosya varsa sıfır dışı; Dosya, dizinde sonuncu ise veya bir hata oluştuysa sıfır olur. Genişletilmiş hata bilgilerini almak için, WIN32 işlevini çağırın [](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror). Bulunan dosya dizindeki son dosya ise veya eşleşen dosya bulunamazsa `GetLastError` , işlev ERROR_NO_MORE_FILES döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -314,7 +314,7 @@ Aşağıdaki öznitelik üye `FindNextFile` işlevlerinden birini çağırmadan 
 
 - [MatchesMask](#matchesmask)
 
-`FindNextFile`Win32 işlevi [FindNextFile dosyasını](/windows/desktop/api/fileapi/nf-fileapi-findnextfilea)kaydırır.
+`FindNextFile`Win32 işlevi [FindNextFile dosyasını](/windows/win32/api/fileapi/nf-fileapi-findnextfilew)kaydırır.
 
 ### <a name="example"></a>Örnek
 
@@ -332,7 +332,7 @@ virtual BOOL GetCreationTime(CTime& refTime) const;
 ### <a name="parameters"></a>Parametreler
 
 *pTimeStamp*<br/>
-Dosya oluşturulduğu saati içeren bir [filetime](/windows/desktop/api/minwinbase/ns-minwinbase-filetime) yapısına yönelik işaretçi.
+Dosya oluşturulduğu saati içeren bir [filetime](/windows/win32/api/minwinbase/ns-minwinbase-filetime) yapısına yönelik işaretçi.
 
 *refTime*<br/>
 [CTime](../../atl-mfc-shared/reference/ctime-class.md) nesnesine bir başvuru.
@@ -346,7 +346,7 @@ Başarılı olursa sıfır dışı; başarısız ise 0. `GetCreationTime`Bu`CFil
 Çağrılmadan`GetCreationTime`önce [FindNextFile](#findnextfile) öğesini en az bir kez çağırmanız gerekir.
 
 > [!NOTE]
->  Tüm dosya sistemleri bu işlev tarafından döndürülen zaman damgasını uygulamak için aynı semantiğini kullanmaz. Bu işlev, temeldeki dosya sistemi veya sunucusu zaman özniteliğini tutmayı desteklemiyorsa, diğer zaman damgası işlevleri tarafından döndürülen değeri döndürebilir. Zaman biçimleri hakkında bilgi için bkz. [Win32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-win32_find_dataa) yapısı. Bazı işletim sistemlerinde döndürülen süre, makinenin yerel olarak bulunduğu saat dilimindedir. Daha fazla bilgi için bkz. Win32 [FileTimeToLocalFileTime](/windows/desktop/api/fileapi/nf-fileapi-filetimetolocalfiletime) API.
+>  Tüm dosya sistemleri bu işlev tarafından döndürülen zaman damgasını uygulamak için aynı semantiğini kullanmaz. Bu işlev, temeldeki dosya sistemi veya sunucusu zaman özniteliğini tutmayı desteklemiyorsa, diğer zaman damgası işlevleri tarafından döndürülen değeri döndürebilir. Zaman biçimleri hakkında bilgi için bkz. [WIN32_FIND_DATA](/windows/win32/api/minwinbase/ns-minwinbase-win32_find_dataw) yapısı. Bazı işletim sistemlerinde döndürülen süre, makinenin yerel olarak bulunduğu saat dilimindedir. Daha fazla bilgi için bkz. Win32 [FileTimeToLocalFileTime](/windows/win32/api/fileapi/nf-fileapi-filetimetolocalfiletime) API.
 
 ### <a name="example"></a>Örnek
 
@@ -473,7 +473,7 @@ virtual BOOL GetLastAccessTime(FILETIME* pTimeStamp) const;
 [CTime](../../atl-mfc-shared/reference/ctime-class.md) nesnesine bir başvuru.
 
 *pTimeStamp*<br/>
-Dosyanın son erişildiği saati içeren bir [filetime](/windows/desktop/api/minwinbase/ns-minwinbase-filetime) yapısına yönelik işaretçi.
+Dosyanın son erişildiği saati içeren bir [filetime](/windows/win32/api/minwinbase/ns-minwinbase-filetime) yapısına yönelik işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -484,7 +484,7 @@ Başarılı olursa sıfır dışı; başarısız ise 0. `GetLastAccessTime`Bu`CF
 Çağrılmadan`GetLastAccessTime`önce [FindNextFile](#findnextfile) öğesini en az bir kez çağırmanız gerekir.
 
 > [!NOTE]
->  Tüm dosya sistemleri bu işlev tarafından döndürülen zaman damgasını uygulamak için aynı semantiğini kullanmaz. Bu işlev, temeldeki dosya sistemi veya sunucusu zaman özniteliğini tutmayı desteklemiyorsa, diğer zaman damgası işlevleri tarafından döndürülen değeri döndürebilir. Zaman biçimleri hakkında bilgi için bkz. [Win32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-win32_find_dataa) yapısı. Bazı işletim sistemlerinde döndürülen süre, makinenin yerel olarak bulunduğu saat dilimindedir. Daha fazla bilgi için bkz. Win32 [FileTimeToLocalFileTime](/windows/desktop/api/fileapi/nf-fileapi-filetimetolocalfiletime) API.
+>  Tüm dosya sistemleri bu işlev tarafından döndürülen zaman damgasını uygulamak için aynı semantiğini kullanmaz. Bu işlev, temeldeki dosya sistemi veya sunucusu zaman özniteliğini tutmayı desteklemiyorsa, diğer zaman damgası işlevleri tarafından döndürülen değeri döndürebilir. Zaman biçimleri hakkında bilgi için bkz. [WIN32_FIND_DATA](/windows/win32/api/minwinbase/ns-minwinbase-win32_find_dataw) yapısı. Bazı işletim sistemlerinde döndürülen süre, makinenin yerel olarak bulunduğu saat dilimindedir. Daha fazla bilgi için bkz. Win32 [FileTimeToLocalFileTime](/windows/win32/api/fileapi/nf-fileapi-filetimetolocalfiletime) API.
 
 ### <a name="example"></a>Örnek
 
@@ -502,7 +502,7 @@ virtual BOOL GetLastWriteTime(CTime& refTime) const;
 ### <a name="parameters"></a>Parametreler
 
 *pTimeStamp*<br/>
-Dosyanın son yazıldığı saati içeren bir [filetime](/windows/desktop/api/minwinbase/ns-minwinbase-filetime) yapısına yönelik işaretçi.
+Dosyanın son yazıldığı saati içeren bir [filetime](/windows/win32/api/minwinbase/ns-minwinbase-filetime) yapısına yönelik işaretçi.
 
 *refTime*<br/>
 [CTime](../../atl-mfc-shared/reference/ctime-class.md) nesnesine bir başvuru.
@@ -516,7 +516,7 @@ Başarılı olursa sıfır dışı; başarısız ise 0. `GetLastWriteTime`Bu`CFi
 Çağrılmadan`GetLastWriteTime`önce [FindNextFile](#findnextfile) öğesini en az bir kez çağırmanız gerekir.
 
 > [!NOTE]
->  Tüm dosya sistemleri bu işlev tarafından döndürülen zaman damgasını uygulamak için aynı semantiğini kullanmaz. Bu işlev, temeldeki dosya sistemi veya sunucusu zaman özniteliğini tutmayı desteklemiyorsa, diğer zaman damgası işlevleri tarafından döndürülen değeri döndürebilir. Zaman biçimleri hakkında bilgi için bkz. [Win32_Find_Data](/windows/desktop/api/minwinbase/ns-minwinbase-win32_find_dataa) yapısı. Bazı işletim sistemlerinde döndürülen süre, makinenin yerel olarak bulunduğu saat dilimindedir. Daha fazla bilgi için bkz. Win32 [FileTimeToLocalFileTime](/windows/desktop/api/fileapi/nf-fileapi-filetimetolocalfiletime) API.
+>  Tüm dosya sistemleri bu işlev tarafından döndürülen zaman damgasını uygulamak için aynı semantiğini kullanmaz. Bu işlev, temeldeki dosya sistemi veya sunucusu zaman özniteliğini tutmayı desteklemiyorsa, diğer zaman damgası işlevleri tarafından döndürülen değeri döndürebilir. Zaman biçimleri hakkında bilgi için bkz. [WIN32_FIND_DATA](/windows/win32/api/minwinbase/ns-minwinbase-win32_find_dataw) yapısı. Bazı işletim sistemlerinde döndürülen süre, makinenin yerel olarak bulunduğu saat dilimindedir. Daha fazla bilgi için bkz. Win32 [FileTimeToLocalFileTime](/windows/win32/api/fileapi/nf-fileapi-filetimetolocalfiletime) API.
 
 ### <a name="example"></a>Örnek
 
@@ -538,7 +538,7 @@ Bulunan dosyanın bayt cinsinden uzunluğu.
 
 Çağrılmadan`GetLength`önce [FindNextFile](#findnextfile) öğesini en az bir kez çağırmanız gerekir.
 
-`GetLength`dosya boyutunun değerini almak ve bayt cinsinden döndürmek için [WIN32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-win32_find_dataa) Win32 yapısını kullanır.
+`GetLength`dosya boyutunun değerini almak ve bayt cinsinden döndürmek için [WIN32_FIND_DATA](/windows/win32/api/minwinbase/ns-minwinbase-win32_find_dataw) Win32 yapısını kullanır.
 
 > [!NOTE]
 >  MFC 7,0 `GetLength` itibariyle 64 bit tamsayı türlerini destekler. Kitaplığın bu yeni sürümüyle oluşturulmuş daha önceden varolan kod, kesme uyarılarına neden olabilir.
@@ -583,7 +583,7 @@ Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Uygulamalar, [WIN32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-win32_find_dataa) yapısında tanımlanan bir dosya ÖZNITELIĞI olan FILE_ATTRIBUTE_ARCHIVE ile yedeklenecek veya kaldırılacak olan bir arşiv dosyasını işaretler.
+Uygulamalar, [WIN32_FIND_DATA](/windows/win32/api/minwinbase/ns-minwinbase-win32_find_dataw) yapısında tanımlanan bir dosya ÖZNITELIĞI olan FILE_ATTRIBUTE_ARCHIVE ile yedeklenecek veya kaldırılacak olan bir arşiv dosyasını işaretler.
 
 Çağrılmadan`IsArchived`önce [FindNextFile](#findnextfile) öğesini en az bir kez çağırmanız gerekir.
 
@@ -607,7 +607,7 @@ Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sıkıştırılmış bir dosya, [WIN32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-win32_find_dataa) yapısında tanımlanan bir dosya ÖZNITELIĞI olan FILE_ATTRIBUTE_COMPRESSED ile işaretlenir. Bir dosya için bu öznitelik, dosyadaki tüm verilerin sıkıştırıldığını gösterir. Bir dizin için bu öznitelik, yeni oluşturulan dosyalar ve alt dizinler için sıkıştırmanın varsayılan olduğunu gösterir.
+Sıkıştırılmış bir dosya, [WIN32_FIND_DATA](/windows/win32/api/minwinbase/ns-minwinbase-win32_find_dataw) yapısında tanımlanan bir dosya ÖZNITELIĞI olan FILE_ATTRIBUTE_COMPRESSED ile işaretlenir. Bir dosya için bu öznitelik, dosyadaki tüm verilerin sıkıştırıldığını gösterir. Bir dizin için bu öznitelik, yeni oluşturulan dosyalar ve alt dizinler için sıkıştırmanın varsayılan olduğunu gösterir.
 
 Çağrılmadan`IsCompressed`önce [FindNextFile](#findnextfile) öğesini en az bir kez çağırmanız gerekir.
 
@@ -631,7 +631,7 @@ Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir dizin olan dosya, [WIN32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-win32_find_dataa) yapısında tanımlanan FILE_ATTRIBUTE_DIRECTORY a File özniteliğiyle işaretlenir.
+Bir dizin olan dosya, [WIN32_FIND_DATA](/windows/win32/api/minwinbase/ns-minwinbase-win32_find_dataw) yapısında tanımlanan FILE_ATTRIBUTE_DIRECTORY a File özniteliğiyle işaretlenir.
 
 Çağrılmadan`IsDirectory`önce [FindNextFile](#findnextfile) öğesini en az bir kez çağırmanız gerekir.
 
@@ -677,7 +677,7 @@ Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-[WIN32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-win32_find_dataa) yapısında tanımlanan bir dosya ÖZNITELIĞI olan FILE_ATTRIBUTE_HIDDEN ile işaretlenen gizli dosyalar. Gizli bir dosya sıradan bir dizin listesine dahil edilmez.
+[WIN32_FIND_DATA](/windows/win32/api/minwinbase/ns-minwinbase-win32_find_dataw) yapısında tanımlanan bir dosya ÖZNITELIĞI olan FILE_ATTRIBUTE_HIDDEN ile işaretlenen gizli dosyalar. Gizli bir dosya sıradan bir dizin listesine dahil edilmez.
 
 Çağrılmadan`IsHidden`önce [FindNextFile](#findnextfile) öğesini en az bir kez çağırmanız gerekir.
 
@@ -701,7 +701,7 @@ Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-[WIN32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-win32_find_dataa) yapısında tanımlanan bir dosya ÖZNITELIĞI olan FILE_ATTRIBUTE_NORMAL ile işaretlenmiş dosyalar. Normal bir dosyanın ayarlanmış başka bir özniteliği yok. Diğer tüm dosya öznitelikleri bu özniteliği geçersiz kılar.
+[WIN32_FIND_DATA](/windows/win32/api/minwinbase/ns-minwinbase-win32_find_dataw) yapısında tanımlanan bir dosya ÖZNITELIĞI olan FILE_ATTRIBUTE_NORMAL ile işaretlenmiş dosyalar. Normal bir dosyanın ayarlanmış başka bir özniteliği yok. Diğer tüm dosya öznitelikleri bu özniteliği geçersiz kılar.
 
 Çağrılmadan`IsNormal`önce [FindNextFile](#findnextfile) öğesini en az bir kez çağırmanız gerekir.
 
@@ -725,7 +725,7 @@ Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Salt okunurdur bir dosya özniteliği, [WIN32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-win32_find_dataa) yapısında tanımlanan bir dosya ÖZNITELIĞI olan FILE_ATTRIBUTE_READONLY ile işaretlenir. Uygulamalar böyle bir dosyayı okuyabilir, ancak bunlara yazamaz veya silemez.
+Salt okunurdur bir dosya özniteliği, [WIN32_FIND_DATA](/windows/win32/api/minwinbase/ns-minwinbase-win32_find_dataw) yapısında tanımlanan bir dosya ÖZNITELIĞI olan FILE_ATTRIBUTE_READONLY ile işaretlenir. Uygulamalar böyle bir dosyayı okuyabilir, ancak bunlara yazamaz veya silemez.
 
 Çağrılmadan`IsReadOnly`önce [FindNextFile](#findnextfile) öğesini en az bir kez çağırmanız gerekir.
 
@@ -749,7 +749,7 @@ Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir sistem dosyası, [WIN32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-win32_find_dataa) yapısında tanımlanan bir dosya ÖZNITELIĞI olan FILE_ATTRIBUTE_SYSTEM ile işaretlenir. Bir sistem dosyası, işletim sistemi tarafından bir parçasıdır veya yalnızca tarafından kullanılır.
+Bir sistem dosyası, [WIN32_FIND_DATA](/windows/win32/api/minwinbase/ns-minwinbase-win32_find_dataw) yapısında tanımlanan bir dosya ÖZNITELIĞI olan FILE_ATTRIBUTE_SYSTEM ile işaretlenir. Bir sistem dosyası, işletim sistemi tarafından bir parçasıdır veya yalnızca tarafından kullanılır.
 
 Çağrılmadan`IsSystem`önce [FindNextFile](#findnextfile) öğesini en az bir kez çağırmanız gerekir.
 
@@ -773,7 +773,7 @@ Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Geçici bir dosya, [WIN32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-win32_find_dataa) yapısında tanımlanan bir dosya ÖZNITELIĞI olan FILE_ATTRIBUTE_TEMPORARY ile işaretlenir. Geçici depolama için geçici bir dosya kullanılır. Uygulamalar yalnızca kesinlikle gerekli olduğunda dosyaya yazmalıdır. Dosya yakında silineceğinden, dosyanın verilerinin çoğu medyaya boşaltılmadan bellekte kalır.
+Geçici bir dosya, [WIN32_FIND_DATA](/windows/win32/api/minwinbase/ns-minwinbase-win32_find_dataw) yapısında tanımlanan bir dosya ÖZNITELIĞI olan FILE_ATTRIBUTE_TEMPORARY ile işaretlenir. Geçici depolama için geçici bir dosya kullanılır. Uygulamalar yalnızca kesinlikle gerekli olduğunda dosyaya yazmalıdır. Dosya yakında silineceğinden, dosyanın verilerinin çoğu medyaya boşaltılmadan bellekte kalır.
 
 Çağrılmadan`IsTemporary`önce [FindNextFile](#findnextfile) öğesini en az bir kez çağırmanız gerekir.
 
@@ -804,7 +804,7 @@ virtual BOOL MatchesMask(DWORD dwMask) const;
 ### <a name="parameters"></a>Parametreler
 
 *dwMask*<br/>
-Bulunan dosya için [WIN32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-win32_find_dataa) yapısında tanımlanan bir veya daha fazla dosya özniteliği belirtir. Birden çok özniteliği aramak için bit düzeyinde OR (&#124;) işlecini kullanın. Aşağıdaki özniteliklerin herhangi bir birleşimi kabul edilebilir:
+Bulunan dosya için [WIN32_FIND_DATA](/windows/win32/api/minwinbase/ns-minwinbase-win32_find_dataw) yapısında tanımlanan bir veya daha fazla dosya özniteliği belirtir. Birden çok özniteliği aramak için bit düzeyinde OR (&#124;) işlecini kullanın. Aşağıdaki özniteliklerin herhangi bir birleşimi kabul edilebilir:
 
 - FILE_ATTRIBUTE_ARCHIVE dosya bir arşiv dosyasıdır. Uygulamalar, dosyaları yedekleme veya kaldırma için işaretlemek üzere bu özniteliği kullanır.
 
@@ -824,7 +824,7 @@ Bulunan dosya için [WIN32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinb
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi takdirde 0. Genişletilmiş hata bilgilerini almak için, WIN32 işlevini çağırın [](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror).
+Başarılı olursa sıfır dışı; Aksi takdirde 0. Genişletilmiş hata bilgilerini almak için, WIN32 işlevini çağırın [](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror).
 
 ### <a name="remarks"></a>Açıklamalar
 

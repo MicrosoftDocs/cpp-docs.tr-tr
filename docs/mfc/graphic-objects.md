@@ -41,21 +41,21 @@ helpviewer_keywords:
 - painting and device context [MFC]
 - CPalette class [MFC], HPALETTE handle type
 ms.assetid: 41963b25-34b7-4343-8446-34ba516b83ca
-ms.openlocfilehash: 3058bc5793a7766b0a6849ba77f0533f0bbbcef6
-ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
+ms.openlocfilehash: 4abc2764abd0f31b83253f37b8cb459be638ae5a
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66503815"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69508533"
 ---
 # <a name="graphic-objects"></a>Grafik Nesneler
 
-Çizim Araçları, cihaz bağlamlarında kullanmak için çeşitli Windows sağlar. Bu, kalemler, çizgiler, Fırçalar dolgu evin içindekiler ve metin çizmek için yazı tiplerini çizmek için sağlar. MFC Windows de çizim araçlarından eşdeğer grafik nesne sınıfları sağlar. Aşağıdaki tabloda kullanılabilir sınıflar ve eşdeğer Windows grafik cihaz arabirimi (GDI) tanıtıcı türlerine gösterir.
+Windows, cihaz bağlamlarında kullanmak için çeşitli çizim araçları sağlar. Çizgi çizme, türleri dolduracak fırçalar ve yazı tiplerinin metin çizmek için kalem sağlar. MFC, Windows 'daki çizim araçlarına eşdeğer grafik nesnesi sınıfları sağlar. Aşağıdaki tabloda kullanılabilir sınıflar ve eşdeğer Windows grafik cihaz arabirimi (GDI) tanıtıcı türleri gösterilmektedir.
 
 > [!NOTE]
->  Daha fazla bilgi için [GDI +'da SDK Belgeleri](/windows/desktop/gdiplus/-gdiplus-gdi-start).
+>  Daha fazla bilgi için bkz. [GDI+ SDK belgeleri](/windows/win32/gdiplus/-gdiplus-gdi-start).
 
-Bu makalede, bu grafik nesne sınıfları kullanımını açıklar:
+Bu makalede, bu grafik nesnesi sınıflarının kullanımı açıklanmaktadır:
 
 ### <a name="classes-for-windows-gdi-objects"></a>Windows GDI nesneleri için sınıflar
 
@@ -69,32 +69,32 @@ Bu makalede, bu grafik nesne sınıfları kullanımını açıklar:
 |[CRgn](../mfc/reference/crgn-class.md)|**HRGN**|
 
 > [!NOTE]
->  Sınıf [Cımage](../atl-mfc-shared/reference/cimage-class.md) Gelişmiş bit eşlem desteği sağlar.
+>  [CImage](../atl-mfc-shared/reference/cimage-class.md) sınıfı gelişmiş bit eşlem desteği sağlar.
 
-Sınıf Kitaplığı'nda her grafik nesne sınıfı, ardından uygun Oluştur işleviyle gibi başlatmalıdır söz konusu sınıfın grafik nesneleri oluşturma olanak tanıyan bir oluşturucusu vardır `CreatePen`.
+Sınıf kitaplığındaki her bir grafik nesnesi sınıfı, bu sınıfın grafik nesneleri oluşturmanızı sağlayan bir oluşturucuya sahiptir `CreatePen`. Bu, daha sonra, gibi uygun oluşturma işleviyle başlatılmalıdır.
 
-Sınıf Kitaplığı'nda her grafik nesne sınıfı, ilişkili Windows işlenecek bir MFC nesne başvurusuna bir atama işleci vardır. İlişkili nesneyi ayırır kadar elde edilen tanıtıcısı geçerli değil. Nesnenin kullanın `Detach` tanıtıcısı ayrılamadı üye işlevi.
+Sınıf kitaplığındaki her bir grafik nesnesi sınıfının, bir MFC nesnesini ilişkili Windows tanıtıcısına saçan bir atama işleci vardır. Elde edilen tutamaç, ilişkili nesne tarafından bölünene kadar geçerlidir. Tutamacı ayırmak için nesnenin `Detach` üye işlevini kullanın.
 
-Aşağıdaki kod yayınları bir `CPen` Windows işlemek için nesne:
+Aşağıdaki kod bir Windows tanıtıcısına `CPen` bir nesnesi yayınlar:
 
 [!code-cpp[NVC_MFCDocViewSDI#5](../mfc/codesnippet/cpp/graphic-objects_1.cpp)]
 
 #### <a name="to-create-a-graphic-object-in-a-device-context"></a>Bir cihaz bağlamında grafik nesnesi oluşturmak için
 
-1. Grafik nesnesi yığın çerçevesini tanımlar. Nesne türü-özel oluştur işlevi ile gibi başlatmak `CreatePen`. Alternatif olarak, oluşturucuda nesnesini başlatır. Açıklamalara [tek aşamalı ve iki aşamalı oluşturmayı](../mfc/one-stage-and-two-stage-construction-of-objects.md), kod örneği sağlar.
+1. Yığın çerçevesinde bir grafik nesnesi tanımlayın. Nesnesini, `CreatePen`gibi türe özgü oluşturma işleviyle başlatın. Alternatif olarak, oluşturucudaki nesneyi başlatın. Örnek kod sağlayan [tek aşamalı ve iki aşamalı oluşturma](../mfc/one-stage-and-two-stage-construction-of-objects.md)tartışmalarına bakın.
 
-1. [Geçerli cihaz bağlamına nesneyi seçin](../mfc/selecting-a-graphic-object-into-a-device-context.md), eski grafik nesnesi, kaydetmeden önce seçilmiştir.
+1. Daha önce seçilmiş olan eski grafik nesnesini kaydederek [geçerli cihaz bağlamında nesneyi seçin](../mfc/selecting-a-graphic-object-into-a-device-context.md).
 
-1. Geçerli grafik nesnesi ile işiniz bittiğinde, eski grafik nesnesinin durumunu geri yüklemek için geri cihaz bağlamına seçin.
+1. Geçerli grafik nesnesiyle işiniz bittiğinde, durumunu geri yüklemek için eski grafik nesnesini cihaz bağlamına geri doğru seçin.
 
-1. Kapsam çıkıldı olduğunda otomatik olarak silinmesi çerçeve tarafından ayrılmış grafik nesnesi sağlar.
+1. Kapsamda çıkış yapıldığında çerçeveye ayrılan grafik nesnesinin otomatik olarak silinmesine izin verin.
 
 > [!NOTE]
->  Grafik nesnesi sürekli olarak kullanacağınız bir kez ayırın ve her zaman gerekli bir cihaz bağlamına seçin. Artık ihtiyacınız olmadığında, böyle bir nesnenin silmek istediğinizden emin olun.
+>  Art arda bir grafik nesnesi kullanacaksanız, onu bir kez ayırabilir ve gerektiğinde bir cihaz bağlamına seçebilirsiniz. Artık ihtiyaç kalmadığında bu tür bir nesneyi sildiğinizden emin olun.
 
-### <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz
+### <a name="what-do-you-want-to-know-more-about"></a>Hakkında daha fazla bilgi edinmek istiyorsunuz
 
-- [Grafik nesnelerin tek aşamalı ve iki aşamalı yapımı](../mfc/one-stage-and-two-stage-construction-of-objects.md)
+- [Grafik nesnelerinin tek aşamalı ve iki aşamalı yapımı](../mfc/one-stage-and-two-stage-construction-of-objects.md)
 
 - [Bir ve iki aşamada kalem oluşturma örneği](../mfc/one-stage-and-two-stage-construction-of-objects.md)
 

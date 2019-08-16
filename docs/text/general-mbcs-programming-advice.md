@@ -7,32 +7,32 @@ helpviewer_keywords:
 - MBCS [C++], programming
 - dialog boxes [C++], fonts
 ms.assetid: 7b541235-f3e5-4af0-b2c2-a0112cd5fbfb
-ms.openlocfilehash: 31c17d6d6dee49f75f5cd8f84aa0690e649aa509
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 887387220105614eb3257f008ec601a6fc0adc18
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62410687"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69491180"
 ---
 # <a name="general-mbcs-programming-advice"></a>Genel MBCS Programlama Önerileri
 
 Aşağıdaki ipuçlarını kullanın:
 
-- Esneklik için çalışma zamanı makroları kullanın `_tcschr` ve `_tcscpy` mümkün olduğunda. Daha fazla bilgi için [Tchar.h'de genel metin eşlemeleri](../text/generic-text-mappings-in-tchar-h.md).
+- Esneklik için, mümkün olduğunda `_tcschr` ve `_tcscpy` gibi çalışma zamanı makrolarını kullanın. Daha fazla bilgi için, bkz. [Tchar. h 'de Genel metin eşlemeleri](../text/generic-text-mappings-in-tchar-h.md).
 
-- C çalışma zamanı kullanmak `_getmbcp` geçerli kod sayfası hakkında bilgi almak için işlevi.
+- Geçerli kod sayfasıyla ilgili bilgi almak `_getmbcp` için C çalışma zamanı işlevini kullanın.
 
-- Dize kaynakları yeniden kullanmayın. Hedef dile bağlı olarak, belirli bir dize çevrildiğinde farklı bir anlama sahip olabilir. Örneğin, "File" uygulamanın ana menü "Dosya" iletişim kutusunda bir dizeden farklı şekilde çevrilebilir. Aynı ada sahip birden fazla dize kullanmanız gerekiyorsa, her biri için farklı dize kimliklerini kullanın.
+- Dize kaynaklarını yeniden kullanmayın. Hedef dile bağlı olarak, belirli bir dize çevrildiğinde farklı anlamına sahip olabilir. Örneğin, uygulamanın ana menüsündeki "dosya" bir iletişim kutusunda "dosya" dizesinden farklı şekilde çevrilebilir. Aynı ada sahip birden fazla dize kullanmanız gerekiyorsa, her biri için farklı dize kimlikleri kullanın.
 
-- Uygulamanızı bir MBCS özellikli işletim sistemi üzerinde mi çalışan bulmak isteyebilirsiniz. Bunu yapmak için program başlangıcında bayrağının ayarlanması; API çağrılarında güvenmeyin.
+- Uygulamanızın MBCS özellikli bir işletim sisteminde çalışıp çalışmadığını öğrenmek isteyebilirsiniz. Bunu yapmak için program başlangıcında bir bayrak ayarlayın; API çağrılarına güvenmeyin.
 
-- İletişim kutusu tasarlarken, yaklaşık % 30'luk izin MBCS çeviri için statik metin denetimlerin sonunda fazladan boşluk.
+- İletişim kutularını tasarlarken, MBCS çevirisi için statik metin denetimlerinin sonunda yaklaşık% 30 ek alana izin verin.
 
-- Bazı yazı tipleri tüm sistemlerine kullanılamadığından, uygulamanıza yazı seçerken dikkatli olun.
+- Bazı yazı tipleri tüm sistemlerde kullanılamadığından uygulamanız için yazı tipi seçerken dikkatli olun.
 
-- İletişim kutuları için yazı tipini seçerken kullanmak [MS Shell Dlg](/windows/desktop/Intl/using-ms-shell-dlg-and-ms-shell-dlg-2) MS tırnaksız veya Helvetica yerine. MS Shell Dlg ile doğru yazı tipi iletişim kutusu oluşturmadan önce sistem tarafından değiştirilir. MS Shell Dlg kullanarak bu yazı tipi ile ilgili işletim sistemindeki değişiklikler otomatik olarak kullanılabilir olmasını sağlar. (Bu sistemlerin MS Shell Dlg doğru şekilde işlememesi çünkü MFC MS Shell Dlg DEFAULT_GUI_FONT veya sistem yazı tipi Windows 95, Windows 98 ve Windows NT 4 ile değiştirir.)
+- İletişim kutuları için yazı tipi seçerken MS Sans Serif veya Helvetica yerine [MS Shell Dlg](/windows/win32/Intl/using-ms-shell-dlg-and-ms-shell-dlg-2) kullanın. MS Shell Dlg, iletişim kutusu oluşturmadan önce sistem tarafından doğru yazı tipiyle değiştirilmiştir. MS Shell Dlg kullanımı, işletim sistemindeki bu yazı tipiyle başa çıkmak için tüm değişikliklerin otomatik olarak kullanılabilmesini sağlar. (MFC, MS Shell Dlg 'i Windows 95, Windows 98 ve Windows NT 4 ' te DEFAULT_GUI_FONT veya sistem yazı tipiyle değiştirir çünkü bu sistemler MS Shell Dlg 'i doğru şekilde işlemez.)
 
-- Uygulamanızı tasarlarken hangi dizeleri yerelleştirilmiş karar verin. Bu konuda şüpheleriniz varsa herhangi bir dize yerelleştirilmiş olduğunu varsayalım. Bu nedenle, yerelleştirilebilir dize yerelleştirilemeyen karıştırmayın.
+- Uygulamanızı tasarlarken hangi dizelerin yerelleştirilebileceğini belirleyin. Şüpheniz varsa, belirli bir dizenin yerelleştirileceğini varsayın. Bu nedenle, bu tür olmayan yerelleştirilebilecek dizeleri karışmayın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

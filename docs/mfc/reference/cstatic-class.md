@@ -28,12 +28,12 @@ helpviewer_keywords:
 - CStatic [MFC], SetEnhMetaFile
 - CStatic [MFC], SetIcon
 ms.assetid: e7c94cd9-5ebd-428a-aa30-b3e51f8efb95
-ms.openlocfilehash: 02e2f20cc568e8846923f7189da3ea45478fc289
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fd7b6787b372e220a32770e19d54d149f5ba6934
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62323875"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69502409"
 ---
 # <a name="cstatic-class"></a>CStatic sınıfı
 
@@ -51,32 +51,32 @@ class CStatic : public CWnd
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CStatic::CStatic](#cstatic)|Oluşturur bir `CStatic` nesne.|
+|[CStatic:: CStatic](#cstatic)|Bir `CStatic` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CStatic::Create](#create)|Windows statik denetimi oluşturur ve ona ekler `CStatic` nesne.|
-|[CStatic::DrawItem](#drawitem)|Sahip tarafından çizilmiş bir statik denetimi çizmek için geçersiz kılın.|
-|[CStatic::GetBitmap](#getbitmap)|Bit eşlem ile önceden ayarlanan tanıtıcısını alır [SetBitmap](#setbitmap).|
-|[CStatic::GetCursor](#getcursor)|İmleç görüntü tanıtıcısı ile önceden ayarlanan alır [SetCursor](#setcursor).|
-|[CStatic::GetEnhMetaFile](#getenhmetafile)|Gelişmiş Meta dosyası ile önceden ayarlanan tanıtıcısını alır [SetEnhMetaFile](#setenhmetafile).|
-|[CStatic::GetIcon](#geticon)|İle önceden ayarlanan simgesi tanıtıcısını alır [SetIcon](#seticon).|
-|[CStatic::SetBitmap](#setbitmap)|Statik Denetimde görüntülenecek bir bit eşlem belirtir.|
-|[CStatic::SetCursor](#setcursor)|Statik Denetimde görüntülenecek imleç resmi belirtir.|
-|[CStatic::SetEnhMetaFile](#setenhmetafile)|Statik Denetimde görüntülenecek bir Gelişmiş Meta dosyası belirtir.|
-|[CStatic::SetIcon](#seticon)|Statik Denetimde görüntülenecek bir simge belirtir.|
+|[CStatic:: Create](#create)|Windows statik denetimini oluşturur ve `CStatic` nesneye ekler.|
+|[CStatic::D rawItem](#drawitem)|Sahip tarafından çizilmiş bir statik denetim çizmek için geçersiz kılın.|
+|[CStatic:: GetBitmap](#getbitmap)|Daha önce [SetBitmap](#setbitmap)ile ayarlanan bit eşlemin tanıtıcısını alır.|
+|[CStatic:: GetCursor](#getcursor)|Daha önce [SetCursor](#setcursor)ile ayarlanmış imleç resminin tanıtıcısını alır.|
+|[CStatic:: GetEnhMetaFile](#getenhmetafile)|Daha önce [SetEnhMetaFile](#setenhmetafile)ile ayarlanmış olan gelişmiş meta dosyası tanıtıcısını alır.|
+|[CStatic:: GetIcon](#geticon)|Daha önce [setIcon](#seticon)ile ayarlanan simgenin tanıtıcısını alır.|
+|[CStatic:: SetBit eşlem](#setbitmap)|Statik denetimde görüntülenecek bir bit eşlem belirtir.|
+|[CStatic:: SetCursor](#setcursor)|Statik denetimde görüntülenecek imleç resmini belirtir.|
+|[CStatic:: SetEnhMetaFile](#setenhmetafile)|Statik denetimde görüntülenecek bir gelişmiş meta dosyası belirtir.|
+|[CStatic:: SetIcon](#seticon)|Statik denetimde görüntülenecek bir simge belirtir.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir metin dizesi, kutusu, dikdörtgen, simge, imleç, bit eşlem veya Gelişmiş Meta dosyası statik bir denetimi gösterir. Etiket, kutu veya diğer denetimleri ayırmak için kullanılabilir. Statik bir denetimi, normalde giriş yok alır ve çıktı sağlar; Ancak, ss_notıfy stiliyle oluşturduysanız fare tıklama üst bildirimde bulunabilir.
+Statik denetim bir metin dizesi, kutu, dikdörtgen, simge, imleç, bit eşlem veya geliştirilmiş meta dosya görüntüler. Diğer denetimleri etiketlemek, kutuyu veya ayırmak için kullanılabilir. Statik bir denetim normalde giriş gerçekleşmez ve çıkış vermez; Ancak, SS_NOTIFY stiliyle oluşturulduysa fare tıklamasının üst öğesine bildirimde bulunabilir.
 
-Statik bir denetimi iki adımda oluşturun. İlk olarak oluşturmak için oluşturucu çağrısı `CStatic` nesnesi ve ardından arama [Oluştur](#create) statik denetim oluşturma ve buna eklemek için üye işlevini `CStatic` nesne.
+İki adımda statik denetim oluşturun. İlk olarak, `CStatic` nesneyi oluşturmak için oluşturucuyu çağırın, ardından statik denetimi oluşturmak [](#create) ve `CStatic` nesneye iliştirmek için üye Oluştur işlevini çağırın.
 
-Oluşturursanız, bir `CStatic` nesnesi içinde bir iletişim kutusu (iletişim kaynak) aracılığıyla `CStatic` nesne kullanıcı iletişim kutusu kapandığında otomatik olarak yok.
+İletişim kutusu içinde ( `CStatic` bir iletişim kaynağı aracılığıyla) bir nesne oluşturursanız `CStatic` , Kullanıcı iletişim kutusunu kapattığında nesne otomatik olarak yok edilir.
 
-Oluşturursanız, bir `CStatic` nesnesi bir pencere içinde de gerekebilir, yok. A `CStatic` yığında bir pencere içinde oluşturulan nesne otomatik olarak yok. Oluşturursanız `CStatic` kullanarak yığında nesne **yeni** işlevini çağırmalıdır **Sil** ile işiniz bittiğinde yok etmek için nesne üzerinde.
+Bir pencere içinde bir `CStatic` nesne oluşturursanız, bunu yok etmeniz de gerekebilir. Bir `CStatic` pencere içindeki yığında oluşturulan bir nesne otomatik olarak yok edilir. `CStatic` Nesneyi **Yeni** işlevi kullanarak yığında oluşturursanız, işlem tamamlandıktan sonra yok etmek için nesneyi **silme** çağrısı yapmanız gerekir.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -90,11 +90,11 @@ Oluşturursanız, bir `CStatic` nesnesi bir pencere içinde de gerekebilir, yok.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxwin.h
+**Üstbilgi:** Afxwin. h
 
-##  <a name="create"></a>  CStatic::Create
+##  <a name="create"></a>CStatic:: Create
 
-Windows statik denetimi oluşturur ve ona ekler `CStatic` nesne.
+Windows statik denetimini oluşturur ve `CStatic` nesneye ekler.
 
 ```
 virtual BOOL Create(
@@ -108,55 +108,55 @@ virtual BOOL Create(
 ### <a name="parameters"></a>Parametreler
 
 *lpszText*<br/>
-Denetimde yerleştirmek için metni belirtir. NULL ise, hiçbir metin görünür olur.
+Denetime yerleştirilecek metni belirtir. NULL ise, hiçbir metin görünür olmaz.
 
 *dwStyle*<br/>
-Statik denetimin pencere stilini belirtir. Herhangi bir birleşimini uygulamak [statik denetim stilleri](../../mfc/reference/styles-used-by-mfc.md#static-styles) denetimi.
+Statik denetimin pencere stilini belirtir. Denetim için herhangi bir [statik denetim stilleri](../../mfc/reference/styles-used-by-mfc.md#static-styles) birleşimini uygulayın.
 
 *Rect*<br/>
-Statik denetimin boyutunu ve konumunu belirtir. Ya da olabilir bir `RECT` yapısı veya `CRect` nesne.
+Statik denetimin konumunu ve boyutunu belirtir. Bu bir `RECT` yapı `CRect` veya nesne olabilir.
 
 *pParentWnd*<br/>
-Belirtir `CStatic` üst penceresine, genellikle bir `CDialog` nesne. NULL olmamalıdır.
+Genellikle bir`CDialog` nesnesi olan üstpencereyibelirtir.`CStatic` NULL olmaması gerekir.
 
-*nID*<br/>
-Statik denetimin denetim kimliğini belirtir.
+*NID*<br/>
+Statik denetimin denetim KIMLIĞINI belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi durumda 0.
+Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Oluşturmak bir `CStatic` iki adımda nesne. İlk olarak, oluşturucusunu `CStatic`ve sonra çağrı `Create`, Windows statik denetimi oluşturur ve ona ekler `CStatic` nesne.
+İki adımda `CStatic` bir nesne oluşturun. İlk olarak, oluşturucuyu `CStatic`çağırın ve sonra Windows statik denetimini oluşturan `CStatic` ve bunu nesnesine ekleyen çağırın `Create`.
 
-Aşağıdaki uygulama [pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#window-styles) statik denetlemek için:
+Statik denetime aşağıdaki [pencere stillerini](../../mfc/reference/styles-used-by-mfc.md#window-styles) uygulayın:
 
 - WS_CHILD her zaman
 
-- Ws_vısıble genellikle
+- WS_VISIBLE genellikle
 
-- Ws_dısabled nadiren
+- WS_DISABLED nadiren
 
-Bir bit eşlem, imleç, simge veya meta dosyası statik denetimi görüntüleme kullanacaksanız, aşağıdakilerden birini geçerli gerekecektir [statik stiller](../../mfc/reference/styles-used-by-mfc.md#static-styles):
+Statik denetimde bir bit eşlem, imleç, simge veya meta dosya görüntüleyecekseniz, aşağıdaki [statik stillerden](../../mfc/reference/styles-used-by-mfc.md#static-styles)birini uygulamanız gerekir:
 
-- Ss_bıtmap bu stil için bit eşlemler kullanın.
+- SS_BITMAP bit eşlemler için bu stili kullanın.
 
-- Ss_ıcon, simgeler ve imleçler bu stil kullanın.
+- SS_ICON imleçler ve simgeler için bu stili kullanın.
 
-- Ss_enhmetafıle Gelişmiş Meta dosyası için bu stil kullanın.
+- SS_ENHMETAFILE gelişmiş meta dosyalar için bu stili kullanın.
 
-İmleçler, bit eşlemler veya simgeler, ayrıca şu stilini kullanmak isteyebilirsiniz:
+İmleçler, bit eşlemler veya simgeler için aşağıdaki stili de kullanmak isteyebilirsiniz:
 
-- Ss_centerımage statik denetiminde görüntü merkezi için kullanın.
+- SS_CENTERIMAGE, görüntüyü statik denetimde ortalamak için kullanın.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CStatic#1](../../mfc/reference/codesnippet/cpp/cstatic-class_1.cpp)]
 
-##  <a name="cstatic"></a>  CStatic::CStatic
+##  <a name="cstatic"></a>CStatic:: CStatic
 
-Oluşturur bir `CStatic` nesne.
+Bir `CStatic` nesnesi oluşturur.
 
 ```
 CStatic();
@@ -166,9 +166,9 @@ CStatic();
 
 [!code-cpp[NVC_MFC_CStatic#2](../../mfc/reference/codesnippet/cpp/cstatic-class_2.cpp)]
 
-##  <a name="drawitem"></a>  CStatic::DrawItem
+##  <a name="drawitem"></a>CStatic::D rawItem
 
-Sahip tarafından çizilmiş bir statik denetimi çizmek için framework tarafından çağırılır.
+Sahip tarafından çizilmiş bir statik denetim çizmek için Framework tarafından çağırılır.
 
 ```
 virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
@@ -177,15 +177,15 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
 ### <a name="parameters"></a>Parametreler
 
 *lpDrawItemStruct*<br/>
-Bir işaretçi bir [DRAWITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagdrawitemstruct) yapısı. Yapı çizilecek öğesi ve gerekli çizim türü hakkında bilgi içerir.
+[Drawitemstruct](/windows/win32/api/winuser/ns-winuser-drawitemstruct) yapısına yönelik bir işaretçi. Yapı, çizilecek öğe ve çizim türü hakkında bilgiler içerir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çizim için bir sahip tarafından çizilmiş uygulamak için bu işlevi geçersiz kılma `CStatic` nesne (Denetim SS_OWNERDRAW stili vardır).
+Sahip tarafından çizilmiş `CStatic` bir nesne için çizim uygulamak üzere bu işlevi geçersiz kılın (denetim ss_ownerdraw stiline sahiptir).
 
-##  <a name="getbitmap"></a>  CStatic::GetBitmap
+##  <a name="getbitmap"></a>CStatic:: GetBitmap
 
-Daha önce kümesi, bit eşlem tanıtıcısını alır [SetBitmap](#setbitmap), yani ilişkili `CStatic`.
+Daha önce ile `CStatic`ilişkili [SetBitmap](#setbitmap)ile ayarlanan bit eşlemin tanıtıcısını alır.
 
 ```
 HBITMAP GetBitmap() const;
@@ -193,15 +193,15 @@ HBITMAP GetBitmap() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Tanıtıcı geçerli bir bit eşlem ya da hiçbir bit eşlem ayarlarsanız NULL.
+Geçerli bit eşlem için bir tanıtıcı veya bit eşlem ayarlanmamışsa NULL.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CStatic#3](../../mfc/reference/codesnippet/cpp/cstatic-class_3.cpp)]
 
-##  <a name="getcursor"></a>  CStatic::GetCursor
+##  <a name="getcursor"></a>CStatic:: GetCursor
 
-İle önceden ayarlanan imleci tanıtıcısını alır [SetCursor](#setcursor), yani ilişkili `CStatic`.
+İle`CStatic`ilişkili olan, daha önce [SetCursor](#setcursor)ile ayarlanan imlecin tanıtıcısını alır.
 
 ```
 HCURSOR GetCursor();
@@ -209,15 +209,15 @@ HCURSOR GetCursor();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Tanıtıcı geçerli imleç ya da hiçbir imleç ayarlarsanız NULL.
+Geçerli imlecin bir tutamacı veya imleç ayarlanmamışsa NULL.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CStatic#4](../../mfc/reference/codesnippet/cpp/cstatic-class_4.cpp)]
 
-##  <a name="getenhmetafile"></a>  CStatic::GetEnhMetaFile
+##  <a name="getenhmetafile"></a>CStatic:: GetEnhMetaFile
 
-Daha önce kümesi Gelişmiş Meta dosyası tanıtıcısını alır [SetEnhMetafile](#setenhmetafile), yani ilişkili `CStatic`.
+İle`CStatic`ilişkili olan, daha önce [SetEnhMetaFile](#setenhmetafile)ile ayarlanmış olan gelişmiş meta dosyası tanıtıcısını alır.
 
 ```
 HENHMETAFILE GetEnhMetaFile() const;
@@ -225,15 +225,15 @@ HENHMETAFILE GetEnhMetaFile() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Tanıtıcı geçerli gelişmiş meta dosyası ya da hiçbir Gelişmiş Meta dosyası ayarlarsanız NULL.
+Geçerli Gelişmiş Meta dosyası için bir tanıtıcı veya gelişmiş bir dosya ayarlanmamışsa NULL.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CStatic#5](../../mfc/reference/codesnippet/cpp/cstatic-class_5.cpp)]
 
-##  <a name="geticon"></a>  CStatic::GetIcon
+##  <a name="geticon"></a>CStatic:: GetIcon
 
-İle önceden ayarlanan simgesi tanıtıcısını alır [SetIcon](#seticon), yani ilişkili `CStatic`.
+İle`CStatic`ilişkili olan, daha önce [setIcon](#seticon)ile ayarlanan simgenin tanıtıcısını alır.
 
 ```
 HICON GetIcon() const;
@@ -241,15 +241,15 @@ HICON GetIcon() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Tanıtıcı geçerli simge ya da herhangi bir simge ayarlarsanız NULL.
+Geçerli simgeye yönelik bir tanıtıcı veya hiçbir simge ayarlanmamışsa NULL.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CStatic#6](../../mfc/reference/codesnippet/cpp/cstatic-class_6.cpp)]
 
-##  <a name="setbitmap"></a>  CStatic::SetBitmap
+##  <a name="setbitmap"></a>CStatic:: SetBit eşlem
 
-Yeni bir bit eşlem statik denetimi ile ilişkilendirir.
+Statik denetimle yeni bir bit eşlem ilişkilendirir.
 
 ```
 HBITMAP SetBitmap(HBITMAP hBitmap);
@@ -257,41 +257,41 @@ HBITMAP SetBitmap(HBITMAP hBitmap);
 
 ### <a name="parameters"></a>Parametreler
 
-*Hbıtmap*<br/>
-Bit eşlem statik denetimi çizilecek tanıtıcısı.
+*HBITMAP*<br/>
+Statik denetimde çizilecek bit eşlemin tutamacı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Hiçbir bit eşlem statik denetimle ilişkili olduysa, daha önce statik denetim ya da NULL ile ilişkili bit eşlemi tanıtıcısı.
+Statik denetimle daha önce ilişkilendirilmiş olan bit eşlem tutamacı veya statik denetimle ilişkili bir bit eşlem yoksa NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bit eşlem statik denetimi otomatik olarak çizilir. Varsayılan olarak, sol üst köşede çizilecek ve statik denetim, bit eşlem boyutuna boyutlandırılır.
+Bit eşlem, statik denetimde otomatik olarak çizilecektir. Varsayılan olarak, sol üst köşede çizilir ve statik denetim, bit eşlemin boyutuna yeniden boyutlandırılır.
 
-Çeşitli pencere ve statik denetim stilleri, aşağıdakiler dahil olmak üzere kullanabilirsiniz:
+Aşağıdakiler de dahil olmak üzere çeşitli pencere ve statik denetim stilleri kullanabilirsiniz:
 
-- Ss_bıtmap bu stil her zaman için bit eşlemler kullanın.
+- SS_BITMAP bu stili her zaman bitmapler için kullanın.
 
-- Ss_centerımage statik denetiminde görüntü merkezi için kullanın. Görüntü statik denetimi büyükse, kırpılır. Statik denetim küçükse, görüntünün çevresine boş alanı bit eşlem sol üst köşesindeki piksel rengi tarafından doldurulur.
+- SS_CENTERIMAGE, görüntüyü statik denetimde ortalamak için kullanın. Görüntü statik denetimden büyükse kırpılacak. Statik denetimden daha küçükse, görüntünün çevresindeki boş alan, bit eşlemin sol üst köşesindeki pikselin rengi ile doldurulur.
 
-- MFC sağlar sınıfını `CBitmap`, bit eşlem görüntüsüne ile de çağırabilirsiniz Win32 daha fazla işlev gerektiğinde kullanabileceğiniz `LoadBitmap`. `CBitmap`, GDI nesnesi, bir tür içeren Sık kullanılan birlikte `CStatic`, olduğu bir `CWnd` grafik nesnesi statik denetim olarak görüntülemek için kullanılan sınıf.
+- MFC, yalnızca Win32 `CBitmap`işlevini `LoadBitmap`çağırmak yerine bir bit eşlem görüntüsüyle daha fazla yapmanız gerektiğinde kullanabileceğiniz sınıfını sağlar. `CBitmap`bir tür GDI nesnesi içeren, genellikle bir grafik nesnesini statik denetim olarak görüntülemek için kullanılan `CStatic`bir `CWnd` sınıf olan ile birlikte işlem içinde kullanılır.
 
-`CImage` Daha fazla cihaz bağımsız bit eşlemler (DIB) kolayca çalışmanıza olanak sağlayan bir ATL/MFC sınıftır. Daha fazla bilgi için [Cımage sınıfı](../../atl-mfc-shared/reference/cimage-class.md).
+`CImage`, cihazdan bağımsız bit eşlemlerle (DIB) daha kolay çalışabilmenizi sağlayan bir ATL/MFC sınıfıdır. Daha fazla bilgi için bkz. [CImage sınıfı](../../atl-mfc-shared/reference/cimage-class.md).
 
-- Tipik kullanımdır vermek `CStatic::SetBitmap` HBITMAP işleci tarafından döndürülen bir GDI nesnesi bir `CBitmap` veya `CImage` nesne. Bunu yapmak için kodu, aşağıdaki satırı benzer.
+- Tipik kullanım, bir `CStatic::SetBitmap` `CBitmap` veya `CImage` nesnesinin hbıx operatörü tarafından döndürülen bir GDI nesnesi vermektir. Bunu yapmak için kod aşağıdaki satıra benzer.
 
 ```
 MyStaticControl.SetBitmap(HBITMAP(MyBitmap));
 ```
-Aşağıdaki örnek iki oluşturur `CStatic` yığını üzerindeki nesneler. Ardından bir bit eşlem kullanarak bir sistem yükler `CBitmap::LoadOEMBitmap` kullanarak dosyanın öğesinden alınan `CImage::Load`.
+Aşağıdaki örnek yığında iki `CStatic` nesne oluşturur. Daha sonra bir dosya kullanarak `CBitmap::LoadOEMBitmap` bir sistem bit eşlemiyle ve diğeri kullanarak `CImage::Load`bir dosya yükler.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CStatic#3](../../mfc/reference/codesnippet/cpp/cstatic-class_3.cpp)]
 
-##  <a name="setcursor"></a>  CStatic::SetCursor
+##  <a name="setcursor"></a>CStatic:: SetCursor
 
-Yeni bir imleç görüntü statik denetimi ile ilişkilendirir.
+Yeni bir imleç görüntüsünü statik denetimle ilişkilendirir.
 
 ```
 HCURSOR SetCursor(HCURSOR hCursor);
@@ -300,29 +300,29 @@ HCURSOR SetCursor(HCURSOR hCursor);
 ### <a name="parameters"></a>Parametreler
 
 *hCursor*<br/>
-Statik denetimi çizilecek imleç tanıtıcı.
+Statik denetimde çizilecek imlecin tutamacı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Daha önce hiçbir imleç statik denetimle ilişkili olduysa statik denetim ya da NULL ile ilişkili imleci tanıtıcısı.
+Daha önce statik denetimle ilişkilendirilen imlecin tutamacı veya statik denetimle ilişkili imleç yoksa NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İmleç statik denetimi otomatik olarak çizilir. Varsayılan olarak, sol üst köşede çizilecek ve statik denetimi imleç boyutu için yeniden boyutlandırılır.
+İmleç, statik denetimde otomatik olarak çizilecektir. Varsayılan olarak, sol üst köşede çizilir ve statik denetim imlecin boyutuna yeniden boyutlandırılır.
 
-Çeşitli pencere ve statik denetim stilleri, aşağıdakiler dahil olmak üzere kullanabilirsiniz:
+Aşağıdakiler de dahil olmak üzere çeşitli pencere ve statik denetim stilleri kullanabilirsiniz:
 
-- Ss_ıcon kullanın Bu stil her zaman işaretçiler ve simgeler.
+- SS_ICON bu stili her zaman imleçler ve simgeler için kullanın.
 
-- Ss_centerımage statik denetimi merkezi için kullanın. Görüntü statik denetimi büyükse, kırpılır. Statik denetim küçükse, görüntünün çevresine boş alanı statik denetimin arka plan rengi ile doldurulur.
+- SS_CENTERIMAGE, statik denetimde ortalamak için kullanın. Görüntü statik denetimden büyükse kırpılacak. Statik denetimden daha küçükse, görüntünün çevresindeki boş alan statik denetimin arka plan rengiyle doldurulur.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CStatic#4](../../mfc/reference/codesnippet/cpp/cstatic-class_4.cpp)]
 
-##  <a name="setenhmetafile"></a>  CStatic::SetEnhMetaFile
+##  <a name="setenhmetafile"></a>CStatic:: SetEnhMetaFile
 
-Yeni gelişmiş meta dosyası görüntüsünü statik denetimi ile ilişkilendirir.
+Yeni bir geliştirilmiş meta dosyası görüntüsünü statik denetimle ilişkilendirir.
 
 ```
 HENHMETAFILE SetEnhMetaFile(HENHMETAFILE hMetaFile);
@@ -331,27 +331,27 @@ HENHMETAFILE SetEnhMetaFile(HENHMETAFILE hMetaFile);
 ### <a name="parameters"></a>Parametreler
 
 *hMetaFile*<br/>
-Statik denetimi çizilecek Gelişmiş Meta dosyası işleyicisi.
+Statik denetimde çizilecek gelişmiş meta dosyası tanıtıcısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Daha önce hiç Gelişmiş Meta dosyası statik denetimle ilişkili olduysa statik denetim ya da NULL ile ilişkili Gelişmiş Meta dosyası tanıtıcısı.
+Daha önce statik denetimle ilişkili olan gelişmiş meta dosyası tutamacı veya statik denetimle gelişmiş bir dosya ilişkilendirilmediği takdirde NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Gelişmiş Meta dosyası statik denetimi otomatik olarak çizilir. Gelişmiş Meta dosyası statik denetimin boyutuna sığacak şekilde ölçeklendirilir.
+Gelişmiş Meta dosyası otomatik olarak statik denetimde çizilecektir. Gelişmiş Meta dosyası statik denetimin boyutuna uyacak şekilde ölçeklendirilir.
 
-Çeşitli pencere ve statik denetim stilleri, aşağıdakiler dahil olmak üzere kullanabilirsiniz:
+Aşağıdakiler de dahil olmak üzere çeşitli pencere ve statik denetim stilleri kullanabilirsiniz:
 
-- Ss_enhmetafıle kullanmak her zaman bu stil meta dosyaları için Gelişmiş sağlar.
+- SS_ENHMETAFILE bu stili her zaman gelişmiş meta dosyalar için kullanın.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CStatic#5](../../mfc/reference/codesnippet/cpp/cstatic-class_5.cpp)]
 
-##  <a name="seticon"></a>  CStatic::SetIcon
+##  <a name="seticon"></a>CStatic:: SetIcon
 
-Yeni bir simge görüntüsü statik denetimi ile ilişkilendirir.
+Yeni bir simge görüntüsünü statik denetimle ilişkilendirir.
 
 ```
 HICON SetIcon(HICON hIcon);
@@ -359,22 +359,22 @@ HICON SetIcon(HICON hIcon);
 
 ### <a name="parameters"></a>Parametreler
 
-*hIcon*<br/>
-Statik denetimi çizilecek simge tanıtıcı.
+*HICON*<br/>
+Statik denetimde çizilecek simgenin tutamacı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Herhangi bir simge statik denetimle ilişkili olduysa daha önce statik denetim ya da NULL ile ilişkili simgeyi tanıtıcısı.
+Statik denetimle daha önce ilişkilendirilmiş simgenin tutamacı veya statik denetimle ilişkili bir simge yoksa NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Simge statik denetimi otomatik olarak çizilir. Varsayılan olarak, sol üst köşede çizilecek ve statik denetimin simgesi boyutu için yeniden boyutlandırılır.
+Simge, statik denetimde otomatik olarak çizilecektir. Varsayılan olarak, sol üst köşede çizilir ve statik denetim simgenin boyutuna yeniden boyutlandırılır.
 
-Çeşitli pencere ve statik denetim stilleri, aşağıdakiler dahil olmak üzere kullanabilirsiniz:
+Aşağıdakiler de dahil olmak üzere çeşitli pencere ve statik denetim stilleri kullanabilirsiniz:
 
-- Ss_ıcon kullanın Bu stil her zaman işaretçiler ve simgeler.
+- SS_ICON bu stili her zaman imleçler ve simgeler için kullanın.
 
-- Ss_centerımage statik denetimi merkezi için kullanın. Görüntü statik denetimi büyükse, kırpılır. Statik denetim küçükse, görüntünün çevresine boş alanı statik denetimin arka plan rengi ile doldurulur.
+- SS_CENTERIMAGE, statik denetimde ortalamak için kullanın. Görüntü statik denetimden büyükse kırpılacak. Statik denetimden daha küçükse, görüntünün çevresindeki boş alan statik denetimin arka plan rengiyle doldurulur.
 
 ### <a name="example"></a>Örnek
 

@@ -9,20 +9,20 @@ f1_keywords:
 helpviewer_keywords:
 - safe_cast keyword [C++]
 ms.assetid: 4fa688bf-a8ec-49bc-a4c5-f48134efa4f7
-ms.openlocfilehash: 199fda710a077998c6b10f101f6ebc15573e675e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 42e141caed720aa29cf918a2bdf69d9a2c4203dc
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62385345"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69509549"
 ---
-# <a name="safecast-ccli-and-ccx"></a>safe_cast (C++/CLI ve C++/CX)
+# <a name="safe_cast-ccli-and-ccx"></a>safe_cast (C++/CLI ve C++/CX)
 
-**Safe_cast** işlemi başarılı olursa, belirtilen tür olarak belirtilen bir ifade döndürür; Aksi durumda `InvalidCastException`.
+**Safe_cast** işlemi, başarılı olursa belirtilen tür olarak belirtilen ifadeyi döndürür; Aksi takdirde, `InvalidCastException`atar.
 
 ## <a name="all-runtimes"></a>Tüm Çalışma Zamanları
 
-(Bu dil özelliğinin tüm çalışma zamanları için geçerli olan açıklaması yoktur.)
+(Bu dil özelliği için tüm çalışma zamanları için uygulanan bir açıklama yoktur.)
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -32,7 +32,7 @@ ms.locfileid: "62385345"
 
 ## <a name="windows-runtime"></a>Windows Çalışma Zamanı
 
-**safe_cast** belirtilen ifade türünü değiştirmenize izin verir. Burada tam beklediğiniz bir değişken veya parametre belirli bir türe dönüştürülebilir durumlarda, kullandığınız **safe_cast** olmadan bir **try-catch** geliştirme sırasında programlama hatalarını algılamak için blok. Daha fazla bilgi için [atama (C++/CX)](https://msdn.microsoft.com/library/windows/apps/hh755802.aspx).
+**safe_cast** , belirtilen bir ifadenin türünü değiştirmenize izin verir. Bir değişkenin veya parametrenin belirli bir türe dönüştürülebilir olması durumunda, geliştirme sırasında programlama hatalarını algılamak için **try-catch** bloğu olmadan **safe_cast** kullanabilirsiniz. Daha fazla bilgi için bkz. [atamaC++(/CX)](../cppcx/casting-c-cx.md).
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -43,22 +43,22 @@ ms.locfileid: "62385345"
 ### <a name="parameters"></a>Parametreler
 
 *tür kimliği*<br/>
-Dönüştürme türü *ifade* için. Bir başvuru veya değer türü, bir değer türü veya başvuru veya değer türüne yönelik izleme başvurusuna yönelik bir tanıtıcı.
+*İfadenin* dönüştürülecek tür. Başvuruya veya değer türüne yönelik bir tanıtıcı, bir değer türü veya bir başvuruya veya değer türüne yönelik izleme başvurusu.
 
-*İfade*<br/>
-Bir başvuru veya değer türü, bir değer türü veya başvuru veya değer türüne yönelik izleme başvurusuna yönelik bir tanıtıcı için değerlendirilen bir ifade.
+*ifadesini*<br/>
+Başvuruya veya değer türüne bir tanıtıcı, bir değer türü veya bir başvuruya ya da değer türüne yönelik izleme başvurusuna değerlendirilen bir ifade.
 
 ### <a name="remarks"></a>Açıklamalar
 
-**safe_cast** oluşturur `InvalidCastException` bunu dönüştüremezse *ifade* tarafından belirtilen türe *türü kimliği*. Yakalamak için `InvalidCastException`, belirtin [/EH (özel durum işleme modeli)](../build/reference/eh-exception-handling-model.md) derleyici seçeneği ve kullanım bir **try/catch** deyimi.
+**safe_cast** , `InvalidCastException` *ifadeyi* *tür kimliği*tarafından belirtilen türe dönüştüremiyorsa atar. Yakalamak `InvalidCastException`için [/Eh (özel durum işleme modeli)](../build/reference/eh-exception-handling-model.md) derleyici seçeneğini belirtin ve bir **try/catch** ifadesini kullanın.
 
 ### <a name="requirements"></a>Gereksinimler
 
-Derleyici seçeneği: `/ZW`
+Derleyici seçeneği:`/ZW`
 
 ### <a name="examples"></a>Örnekler
 
-Aşağıdaki kod örneğinde nasıl kullanılacağını gösterir **safe_cast** Windows çalışma zamanı ile.
+Aşağıdaki kod örneği, Windows Çalışma Zamanı ile **safe_cast** 'in nasıl kullanılacağını gösterir.
 
 ```cpp
 // safe_cast_ZW.cpp
@@ -92,7 +92,7 @@ Caught expected exception: InvalidCastException
 
 ## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı
 
-**safe_cast** bir ifade türünü değiştirin ve doğrulanabilir MSIL kodu oluştur olanak tanır.
+**safe_cast** , bir ifadenin türünü değiştirmenize ve doğrulanabilir MSIL kodu oluşturmanıza olanak sağlar.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -103,38 +103,38 @@ Caught expected exception: InvalidCastException
 ### <a name="parameters"></a>Parametreler
 
 *tür kimliği*<br/>
-Bir başvuru veya değer türü, bir değer türü veya başvuru veya değer türüne yönelik izleme başvurusuna yönelik bir tanıtıcı.
+Başvuruya veya değer türüne yönelik bir tanıtıcı, bir değer türü veya bir başvuruya veya değer türüne yönelik izleme başvurusu.
 
-*İfade*<br/>
-Bir başvuru veya değer türü, bir değer türü veya başvuru veya değer türüne yönelik izleme başvurusuna yönelik bir tanıtıcı için değerlendirilen bir ifade.
+*ifadesini*<br/>
+Başvuruya veya değer türüne bir tanıtıcı, bir değer türü veya bir başvuruya ya da değer türüne yönelik izleme başvurusuna değerlendirilen bir ifade.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İfade `safe_cast<` *türü kimliği*`>(`*ifade* `)` işlenen dönüştürür *ifade* türündebirnesneiçin*türü kimliği*.
+İfade `safe_cast<` *türü-kimliği*`>(`*ifadesi*, işlenen ifadesini tür-kimliği türünde bir nesneye dönüştürür.`)`
 
-Derleyici kabul edileceği bir [static_cast](../cpp/static-cast-operator.md) kabul eder, birçok yerde bir **safe_cast**.  Ancak, **safe_cast** doğrulanabilir MSIL oluşturmak için garantili oysa bir **static_cast** doğrulanamayan MSIL'yi üretebilir.  Bkz: [saf ve doğrulanabilen kod (C++/CLI)](../dotnet/pure-and-verifiable-code-cpp-cli.md) ve [Peverify.exe (PEVerify aracı)](/dotnet/framework/tools/peverify-exe-peverify-tool) doğrulanabilen kod hakkında daha fazla bilgi için.
+Derleyici çoğu yerde bir **safe_cast**kabul edeceği bir [static_cast](../cpp/static-cast-operator.md) kabul eder.  Ancak **safe_cast** , bir **STATIC_CAST** 'nin doğrulanamayan MSIL üretebildiği doğrulanabilir MSIL oluşturma garantisi vardır.  Doğrulanabilen kod hakkında daha fazla bilgi için bkz. [saf ve Doğrulanabilen kod (C++/CLI)](../dotnet/pure-and-verifiable-code-cpp-cli.md) ve [PEVerify. exe (PEVerify Aracı)](/dotnet/framework/tools/peverify-exe-peverify-tool) .
 
-Gibi **static_cast**, **safe_cast** kullanıcı tanımlı dönüşümler çağırır.
+**Static_cast**gibi **safe_cast** , Kullanıcı tanımlı dönüştürmeleri çağırır.
 
-Atamaları hakkında daha fazla bilgi için bkz: [atama işleçleri](../cpp/casting-operators.md).
+Yayınlar hakkında daha fazla bilgi için bkz. [atama işleçleri](../cpp/casting-operators.md).
 
-**safe_cast** uygulanmaz bir **const_cast** (hemen cast **const**).
+**safe_cast** , **const_cast** ( **const sabitine**dönüştürme) uygulamaz.
 
-**safe_cast** CLI ad alanındadır.  Bkz: [Platform, varsayılan ve cli ad alanları](platform-default-and-cli-namespaces-cpp-component-extensions.md) daha fazla bilgi için.
+**safe_cast** , CLI ad alanıdır.  Daha fazla bilgi için bkz. [Platform, varsayılan ve CLI ad alanları](platform-default-and-cli-namespaces-cpp-component-extensions.md) .
 
-Daha fazla bilgi için **safe_cast**, bkz:
+**Safe_cast**hakkında daha fazla bilgi için bkz.
 
-- [/ CLR ile C türü atamalar (C++/CLI)](c-style-casts-with-clr-cpp-cli.md)
+- [/Clr (C++/CLI) Ile C stili atamalar](c-style-casts-with-clr-cpp-cli.md)
 
 - [Nasıl yapılır: C++/CLI üzerinde safe_cast kullanma](../dotnet/how-to-use-safe-cast-in-cpp-cli.md)
 
 ### <a name="requirements"></a>Gereksinimler
 
-Derleyici seçeneği: `/clr`
+Derleyici seçeneği:`/clr`
 
 ### <a name="examples"></a>Örnekler
 
-Bir örneği burada derleyici kabul bir **static_cast** kabul eder, ancak bir **safe_cast** ilgisiz arabirim türleri arasında yayınları içindir.  İle **safe_cast**, derleyici bir dönüştürme hatası veremez ve dönüştürme mümkün olup olmadığını görmek için çalışma zamanında bir denetimi gerçekleştirir
+Derleyicinin bir **static_cast** kabul etmesinin, ancak ilişkisiz arabirim türleri arasındaki yayınlar için bir **safe_cast** olduğunu kabul edeceği bir örnek.  **Safe_cast**ile derleyici bir dönüştürme hatası yayınmayacak ve dönüştürmenin mümkün olup olmadığını görmek için çalışma zamanında bir denetim gerçekleştirecek
 
 ```cpp
 // safe_cast.cpp

@@ -4,20 +4,20 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - manifests [C++]
 ms.assetid: a1f24221-5b09-4824-be48-92eae5644b53
-ms.openlocfilehash: ff8d9f214b4fe4d004691c54474dcdabf2c0af85
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 16d5efc5c5f7ce81b4b60269b0c666fd5d24266e
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62314747"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69492519"
 ---
 # <a name="understanding-manifest-generation-for-cc-programs"></a>C/C++ Programları Bildirim Üretimini Anlama
 
-A [bildirim](/windows/desktop/sbscs/manifests) dış bir XML dosyasına veya bir kaynak olabilir bir XML belgesi bir uygulama ya da derleme katıştırılır. Bildirimi bir [yalıtılmış uygulama](/windows/desktop/SbsCs/isolated-applications) adları ve paylaşılan yan yana derlemeler için uygulaması bağlama çalışma zamanında sürümlerini yönetmek için kullanılır. Yan yana derlemenin bildirimi, adları, sürümlerini, kaynaklarını ve diğer derlemeler bağımlılıklarını belirtir.
+[Bildirim](/windows/win32/sbscs/manifests) , BIR dış XML dosyası veya bir uygulama ya da derleme içine katıştırılmış kaynak olabılecek bir XML belgesidir. [Yalıtılmış bir uygulamanın](/windows/win32/SbsCs/isolated-applications) bildirimi, uygulamanın çalışma zamanında bağlanması gereken paylaşılan yan yana derlemelerin adlarını ve sürümlerini yönetmek için kullanılır. Yan yana derlemenin bildirimi, adları, sürümleri, kaynakları ve diğer derlemelerdeki bağımlılıklarını belirtir.
 
-Yalıtılmış bir uygulama veya bir yan yana derleme için bir bildirim oluşturmak için iki yolu vardır. İlk olarak, derleme yazarı kurallara ve adlandırma gereksinimlerini bildirim dosyasını el ile oluşturabilirsiniz. Bir program, CRT, MFC, ATL veya diğerleri gibi Visual C++ derlemeler yalnızca bağımlı olması durumunda, alternatif olarak, ardından bir bildirimi otomatik olarak bağlayıcı tarafından oluşturulabilir.
+Yalıtılmış bir uygulama veya yan yana derleme için bir bildirim oluşturmanın iki yolu vardır. İlk olarak, derlemenin yazarı kuralları ve adlandırma gereksinimlerini izleyerek el ile bir bildirim dosyası oluşturabilir. Alternatif olarak, bir program yalnızca CRT, MFC C++ , ATL veya diğerleri gibi görsel derlemelere bağımlıysa, bir bildirim bağlayıcı tarafından otomatik olarak oluşturulabilir.
 
-Visual C++ kitaplıklarının üstbilgileri derleme bilgilerini içeren ve uygulama kodunda kitaplıkları eklendiğinde bu derleme bilgileri bağlayıcı tarafından son ikili yönelik bir bildirim oluşturmak için kullanılır. Bağlayıcı, ikili içinde bildirim dosyası ekleme değildir ve yalnızca bir dış dosya olarak bildirimde oluşturabilir. Dış dosya bir bildirim olması için tüm senaryoları çalışmayabilir. Örneğin, özel derlemeler bildirimleri gömülü önerilir. Nmake Kodu derlemek için kullananlar gibi komut satırı derlemelerinde bildirim aracını kullanarak bir bildirim eklenebilir; Daha fazla bilgi için [Manifest Generation komut satırında](manifest-generation-at-the-command-line.md). Visual Studio'da oluşturma sırasında bir listesi için bildirim Aracı'nda bir özelliği ayarlayarak eklenebilir **proje özellikleri** iletişim; bkz: [Visual Studio'da bildirim oluşturma](manifest-generation-in-visual-studio.md).
+Görsel C++ kitaplıkların üst bilgileri derleme bilgilerini içerir ve kitaplıklar uygulama koduna dahil edildiğinde, bu derleme bilgileri bağlayıcı tarafından son ikiliye yönelik bir bildirim oluşturmak için kullanılır. Bağlayıcı, bildirim dosyasını ikili dosya içine eklemez ve yalnızca bir dış dosya olarak bildirim oluşturabilir. Bir bildirimin dış dosya olarak bulunması, tüm senaryolarda çalışmayabilir. Örneğin, özel derlemelerin katıştırılmış bildirimlere sahip olması önerilir. Kod oluşturmak için nmake 'i kullananlar gibi komut satırı Derlemeleriyle, bildirim aracı kullanılarak bir bildirim katıştırılabilir. daha fazla bilgi için bkz. [komut satırında bildirim oluşturma](manifest-generation-at-the-command-line.md). Visual Studio 'da derleme yaparken, bir bildirim, **Proje özellikleri** iletişim kutusunda bildirim aracı için bir özellik ayarlanarak gömülebilir. bkz. [Visual Studio 'Da bildirim oluşturma](manifest-generation-in-visual-studio.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

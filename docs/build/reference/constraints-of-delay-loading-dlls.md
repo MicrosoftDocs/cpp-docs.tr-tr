@@ -6,38 +6,38 @@ helpviewer_keywords:
 - delayed loading of DLLs, constraints
 - DLLs [C++], constraints
 ms.assetid: 0097ff65-550f-4a4e-8ac3-39bf6404f926
-ms.openlocfilehash: e37890fcd757a52ddeff0ccd79289bbc0c35e042
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: be5e5eb360f80e0b2ea9682f38f6787044cd3c63
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64344160"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69493066"
 ---
 # <a name="constraints-of-delay-loading-dlls"></a>DLL'leri Yüklemede Gecikme Kısıtlamaları
 
-İçeri aktarmalar Gecikmeli yüklenmesi ile ilgili kısıtlamalar vardır.
+İçeri aktarmaların gecikmeli yüklenmesine ilişkin kısıtlamalar vardır.
 
-- Veri içeri aktarmaları desteklenemez. Açıkça işlemek için geçici bir çözüm olan verileri kullanarak kendiniz almak `LoadLibrary` (veya `GetModuleHandle` DLL gecikme yükleme yardımcı yüklediğini öğrendikten sonra) ve `GetProcAddress`.
+- Verilerin içeri aktarmaları desteklenemez. Geçici bir çözüm, `LoadLibrary` (veya `GetModuleHandle` gecikme Yükleme Yardımcısı 'nın dll 'yi `GetProcAddress`yüklemiş olduğunu öğrendikten sonra), verileri doğrudan içeri aktarmayı açıkça işleymaktır.
 
-- Gecikmeli yükleme Kernel32.dll desteklenmiyor. Bu DLL için Gecikmeli Yükleme Yardımcısı rutinleri Gecikmeli yükleme gerçekleştirmek gerekli değildir.
+- Kernel32. dll yükleme gecikmesi desteklenmiyor. Bu DLL, Gecikmeli Yükleme Yardımcısı yordamları için gecikme yükleme işlemini gerçekleştirmeye yönelik gereklidir.
 
-- [Bağlama](binding-imports.md) girişi iletilen noktaları desteklenmez.
+- İletilen giriş noktalarının [bağlanması](binding-imports.md) desteklenmiyor.
 
-- Gecikmeli yüklenen DLL giriş noktası oluşan işlem başına başlatmalar varsa bir DLL gecikme yükleme işleminin aynı davranışa neden olabilir değil. Kullanılarak bildirilen statik TLS (iş parçacığı yerel depolama), diğer durumlar [gt;__declspec(thread)](../../cpp/thread.md), hangi işlenmez aracılığıyla DLL yüklendiğinde `LoadLibrary`. Kullanarak dinamik TLS `TlsAlloc`, `TlsFree`, `TlsGetValue`, ve `TlsSetValue`, statik veya Gecikmeli yüklenen DLL'ler için hala kullanılabilir.
+- Gecikmeli yüklenen DLL 'nin giriş noktasında gerçekleşen işlem başına başlatma işlemleri varsa, DLL 'nin gecikmesi, işlemin aynı davranış ile sonuçlanmayabilir. Diğer durumlarda, DLL aracılığıyla `LoadLibrary`yüklendiğinde işlenmemiş TLS (iş parçacığı yerel depolaması) kullanılarak, [__declspec (thread)](../../cpp/thread.md)kullanılarak bildirilmiştir. ,,, Ve `TlsAlloc` `TlsGetValue` `TlsFree` kullanan`TlsSetValue`dinamik TLS, statik veya Gecikmeli yüklenen dll 'lerde kullanılmaya devam etmektedir.
 
-- İçeri aktarılan işleve (Genel) statik işlev işaretçileri ilk işlev çağrısından sonra başlatılmasına. İşlev işaretçisi, ilk kullanım için dönüştürücü işaret edecek olmasıdır.
+- Statik (genel) işlev işaretçileri, işleve ilk çağrıdan sonra içeri aktarılan işlevlere yeniden başlatılacak. Bunun nedeni, işlev işaretçisinin ilk kullanımı, dönüştürücü 'e işaret edecektir.
 
-- Şu anda normal alma mekanizması kullanırken yalnızca belirli yordamları DLL'in yüklenmesini geciktirmek için hiçbir yolu yoktur.
+- Normal içeri aktarma mekanizmasını kullanırken, bir DLL 'den yalnızca belirli prosedürleri yüklemeyi geciktirmenin bir yolu yoktur.
 
-- Özel çağırma kuralları (üzerinde x86 koşul kodları kullanma gibi mimarileri) desteklenmez. Ayrıca, kayan nokta kayıtlarını herhangi bir platformda kaydedilmez. Özel yardımcı yordamı veya kanca rutinleri kayan nokta türleri kullanıyorsanız, bunlar tamamen kaydetmek ve çağırma kuralları kayan nokta parametrelerle yazmaç ile makinelerde kayan nokta durumu geri yükleme gerekir. Bir sayısal veri işlemcisi (NDP) yığınında Yardım işlevinde kayan nokta parametre alan CRT işlevleri çağırırsanız, CRT DLL yükleme gecikmesi hakkında dikkatli olun.
+- Özel çağırma kuralları (x86 mimarilerinde koşul kodlarını kullanma gibi) desteklenmez. Ayrıca, kayan nokta kayıtları herhangi bir platformda kaydedilmez. Özel yardımcı yordamınız veya kanca yordamlarınız kayan nokta türlerini kullanıyorsa, çağırma kurallarını, kayan nokta parametreleriyle Kaydet ' i içeren makinelerde kayan nokta durumunu tamamen kaydedip geri yüklemesi gerekir. Yardım işlevindeki bir sayısal veri işlemcisi (NDP) yığınında kayan nokta parametreleri alan CRT işlevlerini çağırırsanız, CRT DLL 'yi yükleme gecikmesi konusunda dikkatli olun.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Gecikmeli Yüklenen DLL'ler için Bağlayıcı Desteği](linker-support-for-delay-loaded-dlls.md)<br/>
-[LoadLibrary işlevi](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya)<br/>
-[GetModuleHandle işlevi](/windows/desktop/api/libloaderapi/nf-libloaderapi-getmodulehandlea)<br/>
-[GetProcAddress işlevi](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress)<br/>
-[TlsAlloc işlevi](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlsalloc)<br/>
-[TlsFree işlevi](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlsfree)<br/>
-[TlsGetValue işlevi](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlsgetvalue)<br/>
-[TlsSetValue işlevi](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlssetvalue)
+[LoadLibrary işlevi](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibraryw)<br/>
+[GetModuleHandle işlevi](/windows/win32/api/libloaderapi/nf-libloaderapi-getmodulehandlew)<br/>
+[GetProcAddress işlevi](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)<br/>
+[TlsAlloc işlevi](/windows/win32/api/processthreadsapi/nf-processthreadsapi-tlsalloc)<br/>
+[TlsFree işlevi](/windows/win32/api/processthreadsapi/nf-processthreadsapi-tlsfree)<br/>
+[TlsGetValue işlevi](/windows/win32/api/processthreadsapi/nf-processthreadsapi-tlsgetvalue)<br/>
+[TlsSetValue işlevi](/windows/win32/api/processthreadsapi/nf-processthreadsapi-tlssetvalue)

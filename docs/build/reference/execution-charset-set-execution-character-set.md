@@ -1,5 +1,5 @@
 ---
-title: / Execution-Charset (yürütme karakter kümesini Ayarla)
+title: /Execution-charset (yürütme karakter kümesini Ayarla)
 ms.date: 02/06/2019
 f1_keywords:
 - execution-charset
@@ -8,16 +8,16 @@ helpviewer_keywords:
 - /execution-charset compiler option
 - -execution-charset compiler option
 ms.assetid: 0e02f487-2236-45bc-95f3-5760933a8f96
-ms.openlocfilehash: 0a140bf438a44df152b1578f4569a087a604061c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 44e83524867bc8a914706e1f5b45b61bc4a48087
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62271443"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69492910"
 ---
-# <a name="execution-charset-set-execution-character-set"></a>/ Execution-Charset (yürütme karakter kümesini Ayarla)
+# <a name="execution-charset-set-execution-character-set"></a>/Execution-charset (yürütme karakter kümesini Ayarla)
 
-Yürütme karakter için yürütülebilir dosya kümesi belirtmenize olanak sağlar.
+Çalıştırılabilir için yürütme karakter kümesini belirtmenizi sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -28,28 +28,28 @@ Yürütme karakter için yürütülebilir dosya kümesi belirtmenize olanak sağ
 ## <a name="arguments"></a>Arguments
 
 *IANA_name*<br/>
-IANA tarafından tanımlanan karakter kümesinin adı.
+IANA tanımlı karakter kümesi adı.
 
 *CPID*<br/>
 Kod sayfası tanımlayıcısı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kullanabileceğiniz **/Execution-Charset** bir yürütme karakter kümesi belirtmek için seçeneği. Yürütme karakter kümesi, programınızın tüm adımları ön işleme derleme aşaması için giriş metni için kullanılan kodlamayı kümesidir. Bu karakter kümesi, bir dize veya karakter değişmez değerleri derlenmiş kodda iç gösterimi için kullanılır. Kaynak dosyalarınız temel yürütme karakter kümesinde temsil edilebilir olmayan karakterler içeren kullanmak için genişletilmiş yürütme karakter kümesi belirtmek için bu seçeneği ayarlayın. Ya da IANA kullanabilir veya ISO karakter kümesinin adı veya bir nokta (.) karakter kümesini belirtmek için bir 3-5 basamaklı ondalık kod sayfası tanımlayıcısı tarafından takip. Karakter kümesi adları ve kod sayfası tanımlayıcıları desteklenen bir listesi için bkz. [kod sayfası tanımlayıcıları](/windows/desktop/Intl/code-page-identifiers).
+Bir yürütme karakter kümesi belirtmek için **/Execution-charset** seçeneğini kullanabilirsiniz. Yürütme karakter kümesi, programınızın tüm ön işleme adımlarındaki derleme aşamasına giriş olan programınızdaki metin için kullanılan kodlardır. Bu karakter kümesi, derlenmiş koddaki herhangi bir dizenin veya karakter sabit gösteriminin iç temsili için kullanılır. Kaynak dosyalarınız temel yürütme karakter kümesinde gösterilemeyen karakterler içermesi durumunda kullanılacak genişletilmiş yürütme karakter kümesini belirtmek için bu seçeneği ayarlayın. Kullanılacak karakter kümesini belirtmek için ıANA veya ISO karakter kümesi adını ya da bir nokta (.) ve arkasından 3 ile 5 basamaklı bir ondalık kod sayfası tanımlayıcısı kullanabilirsiniz. Desteklenen kod sayfası tanımlayıcılarının ve karakter kümesi adlarının listesi için bkz. [kod sayfası tanımlayıcıları](/windows/win32/Intl/code-page-identifiers).
 
-Varsayılan olarak, Visual Studio kaynak dosya kodlanmış bir Unicode biçiminde, örneğin, UTF-16 veya UTF-8 olup olmadığını belirlemek için bayt sırası işareti algılar. Bayt sırası işareti yoksa bulunursa, kaynak dosyası kodlanmış geçerli kullanıcı kod sayfası kullanılarak bir karakter kümesi adı veya kod sayfasını kullanarak belirtilmedikçe varsayar **/Source-Charset** seçeneği veya **/UTF-8** seçeneği. Visual Studio birkaç karakter kodlamaları birini kullanarak C++ kaynak kod kaydetmenize olanak tanır. Kaynak ve yürütme karakter kümeleri hakkında daha fazla bilgi için bkz: [karakter kümeleri](../../cpp/character-sets.md) dil belgelerinde.
+Varsayılan olarak, Visual Studio, kaynak dosyanın kodlanmış bir Unicode biçiminde olup olmadığını (örneğin, UTF-16 veya UTF-8) belirlemekte kullanılacak bir bayt sıra işareti algılar. Herhangi bir bayt düzeni işareti bulunmazsa, **/Source-charset** seçeneğini veya **/UTF-8 belirtildiğinde** seçeneğini kullanarak bir karakter kümesi adı veya kod sayfası belirtmediğiniz müddetçe, kaynak dosyanın geçerli kullanıcı kodu sayfası kullanılarak kodlandığını varsayar. Visual Studio, birkaç karakter kodlamalarını C++ kullanarak kaynak kodunuzu kaydetmenizi sağlar. Kaynak ve yürütme karakter kümeleri hakkında bilgi için, dil belgelerindeki [karakter kümelerine](../../cpp/character-sets.md) bakın.
 
-Kaynak karakter kümesi hem yürütme karakter kümesini UTF-8'e ayarlamak istiyorsanız, kullanabileceğiniz **/UTF-8** kısayol olarak derleyici seçeneği. Belirtmeye eşdeğerdir **/source-charset:utf-8 /execution-charset:utf-8** komut satırında. Bunlardan birine seçenekleri de etkinleştirir **/Validate-Charset** varsayılan seçeneği.
+Hem kaynak karakter kümesini hem de yürütme karakter kümesini UTF-8 olarak ayarlamak istiyorsanız, **/UTF-8 belirtildiğinde** derleyici seçeneğini kısayol olarak kullanabilirsiniz. Komut satırında **/Source-charset: UTF-8/Execution-charset: UTF-8** belirtmeye eşdeğerdir. Bu seçeneklerden herhangi biri, varsayılan olarak **/Validate-charset** seçeneğini de etkinleştirmesine izin vermez.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projeyi açmak **özellik sayfaları** iletişim kutusu. Daha fazla bilgi için [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Proje **Özellik sayfaları** iletişim kutusunu açın. Daha fazla bilgi için bkz [. C++ Visual Studio 'da derleyici ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Genişletin **yapılandırma özellikleri**, **C/C++**, **komut satırı** klasör.
+1. **Yapılandırma özellikleri**, **CC++/** , **komut satırı** klasörünü genişletin.
 
-1. İçinde **ek seçenekler**, ekleme **/Execution-Charset** seçenek ve tercih edilen kodlamayı belirtin.
+1. **Ek seçenekler**' de **/Execution-charset** seçeneğini ekleyin ve tercih ettiğiniz kodlamayı belirtin.
 
-1. Seçin **Tamam** yaptığınız değişiklikleri kaydedin.
+1. Değişikliklerinizi kaydetmek için **Tamam ' ı** seçin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,5 +1,5 @@
 ---
-title: Araç çubuğu Düzenleyicisi (C++)
+title: Araç Çubuğu DüzenleyicisiC++()
 ms.date: 02/14/2019
 f1_keywords:
 - vc.editors.toolbar.F1
@@ -50,152 +50,152 @@ helpviewer_keywords:
 - buttons [C++], tool tips
 - Toolbar editor [C++], creating tool tips
 ms.assetid: aa9f0adf-60f6-4f79-ab05-bc330f15ec43
-ms.openlocfilehash: f0faa93cd4ea1fdc2fad90a5d4d47f2feeef65e6
-ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
+ms.openlocfilehash: 72c42a06da8276d118c6c204f838ed4b31d142b9
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66504218"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69514684"
 ---
-# <a name="toolbar-editor-c"></a>Araç çubuğu Düzenleyicisi (C++)
+# <a name="toolbar-editor-c"></a>Araç Çubuğu DüzenleyicisiC++()
 
-**Araç çubuğu Düzenleyicisi** araç çubuğu kaynakları oluşturmak ve bit eşlemleri araç çubuğu kaynakları dönüştürme sağlar. **Araç çubuğu Düzenleyicisi** bir araç ve tamamlanmış bir uygulamada nasıl atacağız yakın benzer düğmeleri göstermek için bir grafik görüntüsünü kullanır.
+**Araç Çubuğu Düzenleyicisi** , araç çubuğu kaynakları oluşturmanızı ve bit eşlemleri araç çubuğu kaynaklarına dönüştürmenizi sağlar. **Araç Çubuğu Düzenleyicisi** , tamamlanmış bir uygulamada nasıl göründükleri yakından benzeyen bir araç çubuğu ve düğme göstermek için bir grafik görüntüler kullanır.
 
-**Araç çubuğu Düzenleyicisi** düğmesi görüntünün, aynı iki Görünüm penceresi gösterir **Resim Düzenleyicisi** penceresi. Bölünmüş çubuk iki bölmeyi ayırır ve taraftan tarafı bölmelerin göreli boyutlarını değiştirmek için bölme çubuğunu sürükleyebilirsiniz. Etkin bölmede bir seçim kenarlığı görüntülenir ve görüntünün iki görünüm konu araç çubuğudur.
+**Araç Çubuğu Düzenleyicisi** penceresi, **resim Düzenleyicisi** penceresiyle aynı olan bir düğme resminin iki görünümünü gösterir. Bölünmüş çubuk iki bölmeyi ayırır ve bölmelerin göreli boyutlarını değiştirmek için bölme çubuğunu yan yana sürükleyebilirsiniz. Etkin bölmede bir seçim kenarlığı görüntülenir ve görüntünün iki görünümünün üzerinde konu araç çubuğu bulunur.
 
-![Araç çubuğu Düzenleyicisi](../mfc/media/vctoolbareditor.gif "vcToolbarEditor")<br/>
+![Araç Çubuğu Düzenleyicisi](../mfc/media/vctoolbareditor.gif "Vctoolbareditor")<br/>
 **Araç Çubuğu Düzenleyicisi**
 
-**Araç çubuğu Düzenleyicisi** benzer **Resim Düzenleyicisi** işlevselliği ve menü öğeleri, grafik araçları ve ikisi arasındaki bit eşlem kılavuz aynıdır. Bir menü komutu yoktur **görüntü** arasında geçiş yapmak için menü **araç çubuğu Düzenleyicisi** ve **Resim Düzenleyicisi**. Kullanma hakkında daha fazla bilgi için **grafik** araç **renkleri** paleti veya **görüntü** menüsünde görmek [görüntü Düzenleyicisi](../windows/image-editor-for-icons.md).
+**Araç Çubuğu Düzenleyicisi** , Işlevsellikten **Görüntü Düzenleyicisi** ile benzerdir ve ikisi arasındaki menü öğeleri, grafik araçları ve bit eşlem Kılavuzu aynıdır. **Araç Çubuğu Düzenleyicisi** ve **Görüntü Düzenleyicisi**arasında geçiş yapmak için **görüntü** menüsünde bir menü komutu vardır. **Grafik** araç çubuğunu, **renkler** paletini veya **görüntü** menüsünü kullanma hakkında daha fazla bilgi için bkz. [görüntü düzenleyici](../windows/image-editor-for-icons.md).
 
-Bir bit eşlem dönüştürerek bir C++ projesinde yeni bir araç çubuğu oluşturabilirsiniz. Bit eşlem Grafik araç çubuğu düğmesi görüntülerde dönüştürür. Genellikle her düğme için bir görüntü ile birkaç düğme resimlerini üzerinde tek bir bit eşlem bit eşlem içerir. Varsayılan olarak 16 piksel genişliğinde ve resmin yüksekliğini görüntüleri herhangi bir boyutta olabilir. Düğme görüntüleri boyutunu belirtebilirsiniz **yeni araç çubuğu kaynağı** seçtiğinizde iletişim kutusu **araç çubuğu Düzenleyicisi** gelen **görüntü** çalışırken menüde  **Görüntü Düzenleyicisi**.
+Bir bit eşlemi dönüştürerek bir C++ projede yeni bir araç çubuğu oluşturabilirsiniz. Bit eşlemdeki grafik, bir araç çubuğunun düğme görüntülerine dönüştürür. Genellikle bit eşlem, her düğme için bir görüntüyle tek bir bit eşlem üzerinde birkaç düğme görüntüsü içerir. Varsayılan değer 16 piksel genişliğinde ve görüntünün yüksekliği olacak şekilde görüntüler herhangi bir boyutta olabilir. **Görüntü Düzenleyicinizde** **resim** menüsünden **Araç Çubuğu Düzenleyicisi** ' ni seçtiğinizde, **Yeni araç çubuğu kaynağı** iletişim kutusunda düğme görüntülerinin boyutunu belirtebilirsiniz.
 
-**Yeni araç çubuğu kaynağı** iletişim kutusu, genişlik ve yükseklik bir C++ projesinde bir araç çubuğu kaynağı için eklediğiniz düğmelerinin belirtmenize olanak sağlar. Varsayılan değer 16 × 15 pikseldir.
+**Yeni araç çubuğu kaynağı** iletişim kutusu, C++ projedeki bir araç çubuğu kaynağına eklemekte olduğunuz düğmelerin genişlik ve yüksekliğini belirtmenize olanak tanır. Varsayılan değer 16 × 15 pikseldir.
 
-Araç çubuğu oluşturmak için kullanılan bir bit eşlem 2048, maksimum genişliği sahip bunu ayarlarsanız **düğmesi genişliği** için *512*, yalnızca dört düğme olabilir. Genişliğini ayarlamanız *513*, yalnızca üç düğme olabilir.
+Bir araç çubuğu oluşturmak için kullanılan bir bit eşlemin en yüksek genişliği 2048, bu nedenle **Düğme genişliğini** *512*olarak ayarlarsanız yalnızca dört düğme olabilir. Genişliği *513*olarak ayarlarsanız yalnızca üç düğme olabilir.
 
-**Yeni araç çubuğu kaynağı** iletişim kutusunda, aşağıdaki özelliklere sahiptir:
+**Yeni araç çubuğu kaynağı** iletişim kutusu aşağıdaki özelliklere sahiptir:
 
 |Özellik|Açıklama|
 |---|---------------|
-|**Düğme genişliği**|Araç çubuğu kaynak bit eşlem kaynağı dönüştürüyoruz araç çubuğu düğmeleri genişliğini girmek bir alan sağlar.|
-|**Düğme yüksekliği**|Araç çubuğu kaynak bit eşlem kaynağı dönüştürüyoruz araç çubuğu düğmeleri yüksekliği girmek bir alan sağlar.|
+|**Düğme genişliği**|Bir bit eşlem kaynağından bir araç çubuğu kaynağına dönüştürdüğünüz araç çubuğu düğmelerinin genişliğini girebileceğiniz bir alan sağlar.|
+|**Düğme yüksekliği**|Bir bit eşlem kaynağından bir araç çubuğu kaynağına dönüştürdüğünüz araç çubuğu düğmelerinin yüksekliğini girmeniz için bir alan sağlar.|
 
 > [!NOTE]
-> Resimleri belirtilen yükseklik ve genişlik kırpılmış ve renkleri (16 renk) standart araç çubuğu renklerini kullanmak için ayarlanır.
+> Görüntüler, belirtilen genişlik ve yüksekliğe kırpılır ve renkler standart araç çubuğu renklerini (16 renk) kullanacak şekilde ayarlanır.
 
-Varsayılan olarak, araç çubuğunun sağ ucuna yeni ya da boş bir düğme görüntülenir. Bu düğme düzenlemeden önce taşıyabilirsiniz. Yeni bir düğme oluşturduğunuzda, başka bir boş düğme düzenlenen düğmesinin sağında görüntülenir. Araç çubuğu kaydettiğinizde, boş düğme kaydedilmez.
+Varsayılan olarak, araç çubuğunun sağ ucunda yeni veya boş bir düğme görüntülenir. Düzenlemeden önce bu düğmeyi taşıyabilirsiniz. Yeni bir düğme oluşturduğunuzda, düzenlenen düğmesinin sağında başka bir boş düğme belirir. Bir araç çubuğunu kaydettiğinizde boş düğme kaydedilmez.
 
-Araç çubuğu düğmesi, aşağıdaki özelliklere sahiptir:
+Bir araç çubuğu düğmesi aşağıdaki özelliklere sahiptir:
 
 |Özellik|Açıklama|
 |--------------|-----------------|
-|**ID**|Düğme için kimliği tanımlar. Açılır listede ortak sağlar **kimliği** adları.|
-|**Genişlik**|Düğmesinin genişliğini belirler. 16 piksel önerilir.|
-|**Yükseklik**|Düğmenin yüksekliğini belirler. Bir düğme yüksekliğini, araç çubuğundaki tüm düğmeler yüksekliğini değiştirir. 15 piksel önerilir.|
-|**Sor**|Durum çubuğunda görüntülenen ileti tanımlar. Ekleme *\n* ve bir ad ekler bir **araç ipucu** bu araç çubuğu düğmesi için. Daha fazla bilgi için [bir araç ipucu oluşturmanın](../windows/creating-a-tool-tip-for-a-toolbar-button.md).|
+|**ID**|Düğme için KIMLIĞI tanımlar. Açılan liste, ortak **kimlik** adları sağlar.|
+|**Genişlik**|Düğmenin genişliğini ayarlar. 16 piksel önerilir.|
+|**Yükseklik**|Düğmenin yüksekliğini ayarlar. Bir düğmenin yüksekliği, araç çubuğundaki tüm düğmelerin yüksekliğini değiştirir. 15 piksel önerilir.|
+|**Sor**|Durum çubuğunda görünen iletiyi tanımlar. *\N* ve bir adı eklemek, bu araç çubuğu düğmesine bir araç **İpucu** ekler. Daha fazla bilgi için bkz. [araç Ipucu oluşturma](../windows/creating-a-tool-tip-for-a-toolbar-button.md).|
 
-**Genişlik** ve **yükseklik** tüm düğmeler için geçerlidir. Araç çubuğu oluşturmak için kullanılan bir bit eşlem 2048, maksimum genişliği sahip bu nedenle düğme genişliğini ayarlamak *512*, dört düğme dbmigrationsconfiguration ve genişliğini ayarlayın, *513*, yalnızca üç düğme olabilir.
+**Genişlik** ve **Yükseklik** tüm düğmelere uygulanır. Bir araç çubuğu oluşturmak için kullanılan bir bit eşlem maksimum 2048 genişliğine sahiptir, bu nedenle düğme genişliğini *512*olarak ayarlarsanız yalnızca dört düğme olabilir ve genişliği *513*olarak ayarlarsanız yalnızca üç düğme olabilir.
 
 ## <a name="how-to"></a>Nasıl Yapılır
 
-**Araç çubuğu Düzenleyicisi** sağlar:
+**Araç Çubuğu Düzenleyicisi** şunları yapmanızı mümkün:
 
-### <a name="to-create-new-toolbars"></a>Yeni araç çubukları oluşturma
+### <a name="to-create-new-toolbars"></a>Yeni araç çubukları oluşturmak için
 
-1. İçinde **kaynak görünümü**, sağ tıklayın, *.rc* seçin ve dosya **kaynak Ekle**. Var olan bir araç çubuğu varsa, *.rc* dosyası, sağ **araç** klasörü ve select **araç çubuğu ekleme**.
+1. **Kaynak görünümü**, *. RC* dosyanıza sağ tıklayıp **Kaynak Ekle**' yi seçin. *. RC* dosyanızda mevcut bir araç çubuğağınız varsa, **araç** çubuğu klasörüne sağ tıklayıp **Ekle araç çubuğu**' nu seçebilirsiniz.
 
-1. İçinde **kaynak Ekle** iletişim kutusunda **araç** içinde **kaynak türü** listeleyin ve ardından **yeni**.
+1. **Kaynak Ekle** Iletişim kutusunda **kaynak türü** listesinden **araç çubuğu** ' nu seçin ve ardından **Yeni**' yi seçin.
 
-   Bir artı işareti ( **+** ) yanında görünen **araç** kaynak türü geldiğini araç şablonları kullanılabilir. Şablonlar listesinde genişletin, bir şablon seçin veya seçmek için artı işaretini seçin **yeni**.
+   **Araç çubuğu** kaynak türünün yanında **+** bir artı işareti () görünürse, araç çubuğu şablonlarının kullanılabildiği anlamına gelir. Şablon listesini genişletmek için artı işaretini seçin, bir şablon seçin ve **Yeni**' yi seçin.
 
-### <a name="to-convert-bitmaps-to-toolbar-resources"></a>Bit eşlemleri araç çubuğu kaynakları dönüştürmek için
+### <a name="to-convert-bitmaps-to-toolbar-resources"></a>Bit eşlemleri araç çubuğu kaynaklarına dönüştürmek için
 
-1. Mevcut bir bit eşlem kaynağındaki açın [Resim Düzenleyicisi](../windows/image-editor-for-icons.md). Bit eşlem içinde değilse, *.rc* sağ tıklayın, dosya *.rc* seçin ve dosya **içeri aktarma**, eklemek istediğiniz bit eşlem penceresine gidin, *.rc*  seçin ve dosya **açık**.
+1. [Görüntü düzenleyicisinde](../windows/image-editor-for-icons.md)varolan bir bit eşlem kaynağını açın. Bit eşlem zaten *. RC* dosyanızda yoksa, *. RC* dosyasına sağ tıklayın ve **içeri aktar**' ı seçin, ardından *. RC* dosyanıza eklemek istediğiniz bit eşlem 'e gidin ve **Aç**' ı seçin.
 
-1. Menü Git **görüntü** > **araç çubuğu Düzenleyicisi**.
+1. Menü **resmi** > **Araç Çubuğu Düzenleyicisi**' ne gidin.
 
-   **Yeni araç çubuğu kaynağı** iletişim kutusu görüntülenir. Genişlik ve yükseklik simgesi görüntülerin bit eşlem eşleşecek şekilde değiştirebilirsiniz. Araç çubuğu görüntüsü ardından görüntülenen **araç çubuğu Düzenleyicisi**.
+   **Yeni araç çubuğu kaynağı** iletişim kutusu görüntülenir. Simge görüntülerinin genişliğini ve yüksekliğini bit eşlemle eşleşecek şekilde değiştirebilirsiniz. Araç çubuğu görüntüsü daha sonra **araç çubuğu düzenleyicisinde**görüntülenir.
 
-1. Dönüştürme işlemini tamamlamak için komutu değiştirmek **kimliği** düğmesini kullanarak [Özellikler penceresi](/visualstudio/ide/reference/properties-window). Yeni tür *kimliği* veya bir **kimliği** aşağı açılan listeden.
+1. Dönüştürme işleminin tamamlanabilmesi için, [Özellikler penceresi](/visualstudio/ide/reference/properties-window)kullanarak düğmenin komut **kimliğini** değiştirin. Yeni *kimliği* yazın veya açılan listeden bir **kimlik** seçin.
 
    > [!TIP]
-   > **Özellikleri** pencere bir başlık çubuğundaki Raptiye düğme içerir ve bu seçeneğin seçilmesi etkinleştirir veya devre dışı bırakır **Otomatik Gizle** penceresi. Tek tek özellik pencereleri yeniden açmak zorunda kalmadan tüm araç çubuğu düğmesi özellikleri arasında geçiş yapmak için kapatma **Otomatik Gizle** kapalı böylece **özellikleri** penceresi sabit kalır.
+   > **Özellikler** penceresi, başlık çubuğunda bir raptiye düğmesi içerir ve bu pencere Için **Otomatik gizlemeyi** etkinleştirilir veya devre dışı bırakır. Tek bir özellik pencerelerini yeniden açmak zorunda kalmadan tüm araç çubuğu düğmesi özellikleri arasında geçiş yapmak için, **Özellikler** penceresinin sabit kalmasını sağlamak üzere **otomatik gizleme** ' yi kapatın.
 
-   Yeni araç çubuğundaki düğmeler komut kimlikleri kullanarak da değiştirebilirsiniz [Özellikler penceresi](/visualstudio/ide/reference/properties-window).
+   Ayrıca, yeni araç çubuğundaki düğmelerin komut kimliklerini [Özellikler penceresi](/visualstudio/ide/reference/properties-window)kullanarak değiştirebilirsiniz.
 
-### <a name="to-manage-toolbar-buttons"></a>Araç çubuğu düğmeleri yönetmek için
+### <a name="to-manage-toolbar-buttons"></a>Araç çubuğu düğmelerini yönetmek için
 
-#### <a name="to-create-a-new-toolbar-button"></a>Yeni araç çubuğu düğmesi oluşturma
+#### <a name="to-create-a-new-toolbar-button"></a>Yeni bir araç çubuğu düğmesi oluşturmak için
 
-1. İçinde [kaynak görünümü](how-to-create-a-resource-script-file.md#create-resources) kaynak klasörünü genişletin (örneğin, *Project1.rc*).
+1. [Kaynak görünümü](how-to-create-a-resource-script-file.md#create-resources) kaynak klasörünü genişletin (örneğin, *Project1. RC*).
 
-1. Genişletin **araç** klasörü ve düzenlemek için bir araç çubuğunu seçin sonra yapın aşağıdakilerden biri:
+1. **Araç çubuğu** klasörünü genişletin ve düzenlemek üzere bir araç çubuğu seçin, sonra aşağıdakilerden birini yapın:
 
-   - Boş düğme araç çubuğunun sağ ucunda bir kimliği atayın. Düzenleyerek bunu yapabilirsiniz **kimliği** özelliğinde [Özellikler penceresi](/visualstudio/ide/reference/properties-window). Örneğin, aynı menü seçeneği Kimliğine araç çubuğu düğmesi vermek isteyebilirsiniz. Bu durumda, seçmek için aşağı açılan liste kutusunu kullanın **kimliği** menü seçeneğinin.
+   - Araç çubuğunun sağ ucundaki boş düğmeye bir KIMLIK atayın. Bunu, [Özellikler penceresinde](/visualstudio/ide/reference/properties-window) **ID** özelliğini düzenleyerek yapabilirsiniz. Örneğin, bir menü seçeneği olarak aynı KIMLIĞE bir araç çubuğu düğmesi vermek isteyebilirsiniz. Bu durumda, menü seçeneğinin **kimliğini** seçmek için açılan liste kutusunu kullanın.
 
-   - Araç çubuğunda sağ ucunda boş düğmeyi seçin **araç çubuğu görünümü** bölmesi ve çizim başlayın. Varsayılan düğme komut kimliği atanır (ID_BUTTON\<n >).
+   - **Araç çubuğu görünüm** bölmesinde araç çubuğunun sağ ucundaki boş düğmesini seçin ve çizim ' i başlatın. Varsayılan bir Button komutu kimliği atandı (ID_BUTTON\<n >).
 
-#### <a name="to-add-an-image-to-a-toolbar-as-a-button"></a>Görüntüyü bir araç çubuğuna bir düğme olarak eklemek için
+#### <a name="to-add-an-image-to-a-toolbar-as-a-button"></a>Bir araç çubuğuna düğme olarak görüntü eklemek için
 
-1. İçinde [kaynak görünümü](how-to-create-a-resource-script-file.md#create-resources), araç çift tıklayarak açın.
+1. [Kaynak görünümü](how-to-create-a-resource-script-file.md#create-resources)' de, araç çubuğunu çift tıklayarak açın.
 
-1. Ardından, araç için eklemek istediğiniz görüntü açın.
+1. Ardından, araç çubuğuna eklemek istediğiniz görüntüyü açın.
 
    > [!NOTE]
-   > Görüntüyü Visual Studio'da açın, içinde açılır **Resim Düzenleyicisi**. Diğer grafik programında görüntü de açabilirsiniz.
+   > Görüntüyü Visual Studio 'da açarsanız, **görüntü düzenleyicide**açılır. Görüntüyü diğer grafik programlarında da açabilirsiniz.
 
-1. Menü Git **Düzenle** > **kopyalama**.
+1. Menü**kopyasını** **Düzenle** > ' ye gidin.
 
-1. Kaynak pencerenin üst kısmındaki sekmesini seçerek, araç çubuğu'na geçin.
+1. Kaynak pencerenin üst kısmındaki sekmesini seçerek araç çubuğa geçiş yapın.
 
-1. Menü Git **Düzenle** > **Yapıştır**.
+1. Menü **Düzenle** > **Yapıştır**'a gidin.
 
    Görüntü, araç çubuğunda yeni bir düğme olarak görünür.
 
-#### <a name="to-move-a-toolbar-button"></a>Araç çubuğu düğmesini taşıma
+#### <a name="to-move-a-toolbar-button"></a>Bir araç çubuğu düğmesini taşımak için
 
-İçinde **araç çubuğu görünümü** bölmesinde, araç çubuğunda yeni konumuna taşımak istediğiniz düğme sürükleyin.
+**Araç çubuğu görünüm** bölmesinde, taşımak istediğiniz düğmeyi araç çubuğunda yeni konumuna sürükleyin.
 
-- Araç çubuğundan düğme kopyalama için basılı tutun **Ctrl** anahtarı ve **araç çubuğu görünümü** bölmesi, düğmeyi ya da yeni konumuna araç çubuğunda veya bir konuma başka bir araç sürükleyin.
+- Bir araç çubuğundan düğme kopyalamak için **CTRL** tuşunu basılı tutun ve **araç çubuğu görünüm** bölmesinde düğmeyi araç çubuğundaki yeni konumuna veya başka bir araç çubuğunda yer alan bir konuma sürükleyin.
 
-- Araç çubuğu düğmesi silme için araç çubuğu düğmesini seçin ve araç çubuğundan sürükleyin.
+- Bir araç çubuğu düğmesini silmek için araç çubuğu düğmesini seçin ve araç çubuğundan sürükleyin.
 
-- Ekleme veya araç çubuğundaki düğmeler arasındaki boşluğu kaldırma için ya da bunları UZAĞINIZDA veya başka bir doğrultusunda araç sürükleyin.
+- Araç çubuğundaki düğmeler arasına boşluk eklemek veya kaldırmak için, araç çubuğunda bir diğerine veya bir diğerine doğru sürükleyin.
 
 |Eylem|Adım|
 |------|------|
-|Ardından bir boşluk olmayan bir düğme öncesinde bir boşluk eklemek için|İleri düğmesine hakkında yarı yarıya çakışıyor kadar aşağı ya da sağ düğme sürükleyin.|
-|Sondaki boşluğu bulundurmanız gereken ve ardından bir boşluk bir düğme önce boşluk Ekle|Düğmeyi kadar sağa sürükleyin veya alt kenarı yalnızca İleri düğmesine oncollisionstay veya yalnızca çakışıyor.|
-|Ardından bir boşluk bir düğme önce bir boşluk ekleyin ve aşağıdaki söz konusu alanı kapatmak için|İleri düğmesine hakkında yarı yarıya çakışıyor kadar aşağı ya da sağ düğme sürükleyin.|
-|Araç çubuğundaki düğmeler arasına boşluk kaldırmak için|Kadar olan sürenin yarısına ulaşıldığında hakkında İleri düğmesine çakışıyor düğmeyi bir düğmeyi diğer tarafta doğru alanı alanı tarafında sürükleyin.|
+|Arkasından bir boşluk gelen bir düğmeden önce boşluk eklemek için|Alt yarısında ilgili sonraki düğmeyle örtüşene kadar düğmeyi sağa veya aşağı sürükleyin.|
+|Bir düğmeden önce bir boşluk gelen ve sondaki boşluğu tutan bir düğmeden önce boşluk eklemek için|Sağ veya alt kenar, ileri düğmesine dokunana kadar veya yalnızca onunla örtüşene kadar düğmeyi sürükleyin.|
+|Bir düğmeden önce bir boşluk gelen bir boşluk eklemek ve aşağıdaki alanı kapatmak için|Alt yarısında ilgili sonraki düğmeyle örtüşene kadar düğmeyi sağa veya aşağı sürükleyin.|
+|Araç çubuğundaki düğmeler arasındaki boşluğu kaldırmak için|Kenarı, üst yarısında ilgili bir sonraki düğmeyle çıkana kadar alanın diğer tarafındaki düğmeye doğru sürükleyerek düğmeyi sürükleyin.|
 
 > [!NOTE]
-> Liste kutusundan sürükleyerek düğmeyi kenarındaki boşluk varsa ve düğmeyi birden fazla bitişik düğmesi, son yarısı sürükleyin **araç çubuğu Düzenleyicisi** sürüklediğiniz düğmenin karşı tarafında boşluk ekler.
+> Düğmenin üzerine sürüklediğiniz bir boşluk yoksa ve düğmeyi bitişik düğmeden daha uzun bir yere sürüklerseniz **Araç Çubuğu Düzenleyicisi** , sürüklediğiniz düğmenin zıt tarafına bir boşluk ekler...
 
-#### <a name="to-change-the-properties-of-a-toolbar-button"></a>Araç çubuğu düğmesi özelliklerini değiştirme
+#### <a name="to-change-the-properties-of-a-toolbar-button"></a>Bir araç çubuğu düğmesinin özelliklerini değiştirmek için
 
-1. Bir C++ projesinde araç çubuğu düğmesini seçin.
+1. Bir C++ projede araç çubuğu düğmesini seçin.
 
-1. İçinde yeni kimlik yazın **kimliği** özelliğinde [Özellikler penceresi](/visualstudio/ide/reference/properties-window), ya da yeni bir seçmek için açılan listeyi kullanın **kimliği**.
+1. Yeni kimliği [Özellikler penceresinde](/visualstudio/ide/reference/properties-window) **kimlik** özelliğine yazın veya açılan listeyi kullanarak yeni bir **kimlik**seçin.
 
-#### <a name="to-create-a-tool-tip-for-a-toolbar-button"></a>Araç çubuğu düğmesi için araç ipucu oluşturmak için
+#### <a name="to-create-a-tool-tip-for-a-toolbar-button"></a>Bir araç çubuğu düğmesi için araç ipucu oluşturmak için
 
 1. Araç çubuğu düğmesini seçin.
 
-1. İçinde [Özellikler penceresi](/visualstudio/ide/reference/properties-window), **istemi** alan, düğmenin durum çubuğunu ve sonra yapılacak bir açıklama ekleyin, ekleme `\n` ve araç ipucu adı.
+1. [Özellikler penceresinde](/visualstudio/ide/reference/properties-window), **istem** alanına, durum çubuğu için bir açıklama ve iletiden sonra araç ipucu adı ekleyin `\n` .
 
-Örneğin, araç ipucu için görmek için **yazdırma** düğmesine **WordPad**:
+Örneğin, **WordPad**'de **Yazdır** düğmesine ait araç ipucunu görmek için:
 
-1. Açık **WordPad**.
+1. **WordPad 'i**açın.
 
-1. Fare işaretçinizi üzerine **yazdırma** araç çubuğu düğmesi ve bildirimi word `Print` fare işaretçinizi altında artık kayan noktalı.
+1. Fare işaretçinizi **Yazdır** araç çubuğu düğmesinin üzerine getirin ve Word 'ün `Print` artık fare işaretçiniz altında olduğuna dikkat edin.
 
-1. Durum çubuğu altındaki bakın **WordPad** penceresi ve bunu şimdi metin gösterildiğine dikkat edin `Prints the active document`.
+1. **WordPad** penceresinin alt kısmındaki durum çubuğuna bakın ve şimdi metni `Prints the active document`gösterir.
 
-`Print` Araç İpucu adıdır ve `Prints the active document` durum çubuğu düğmesini açıklaması.
+`Print`araç ipucu adıdır ve `Prints the active document` durum çubuğu düğmesinin açıklamasıdır.
 
-Efekt kullanarak bu istiyorsanız **araç çubuğu Düzenleyicisi**ayarlayın **istemi** özelliğini `Prints the active document\nPrint`.
+Bu etkiyi **araç çubuğu düzenleyicisini**kullanarak Istiyorsanız, **Prompt** özelliğini olarak `Prints the active document\nPrint`ayarlayın.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -204,5 +204,5 @@ MFC veya ATL
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Kaynak düzenleyicileri](../windows/resource-editors.md)
-[menüler ve diğer kaynaklar](/windows/desktop/menurc/resources)<br/>
+[menüleri ve diğer kaynaklar](/windows/win32/menurc/resources)<br/>
 [Araç Çubuğu Düğmesi Özellikleri](../windows/toolbar-button-properties.md)<br/>

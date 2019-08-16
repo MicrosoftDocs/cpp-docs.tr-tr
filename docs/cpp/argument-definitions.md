@@ -8,12 +8,12 @@ helpviewer_keywords:
 - argv argument
 - argc argument
 ms.assetid: 6148cbf3-ebe8-44f2-b277-de4b723991c7
-ms.openlocfilehash: 92e213b5accbf8fd5f48ac2111a169e585d82a1d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 14e5ea3a051d81828c5f88ac16df60b6ebb5b559
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62184455"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69498810"
 ---
 # <a name="argument-definitions"></a>Bağımsız Değişken Tanımları
 
@@ -27,26 +27,26 @@ int wmain( int argc, wchar_t* argv[], wchar_t* envp[]);
 bağımsız değişkenlerini komut satırlarıyla kolayca ayrıştırılmasına ve isteğe bağlı olarak ortam değişkenlerine erişime izin verir. Bağımsız değişken tanımları aşağıdaki gibidir:
 
 *argc*<br/>
-İçinde izleyen bağımsız değişkenlerin sayısını içeren bir tamsayı *argv*. *Argc* parametresi, her zaman 1'e eşit veya daha büyük.
+*Argv*içinde izleyen bağımsız değişkenlerin sayısını içeren bir tamsayı. *Argc* parametresi her zaman 1 ' den büyük veya eşittir.
 
 *argv*<br/>
-Programın kullanıcısı tarafından girilen komut satırı bağımsız değişkenlerini temsil eden boş sonlandırılmış bir dize dizisi. Kural olarak, `argv[0]` , programın çağrıldığı komuttur `argv[1]` kadar ilk komut satırı bağımsız değişkeni vb. olan `argv[argc]`, olduğu her zaman NULL. Bkz: [komut satırı işlemeyi özelleştirme](../cpp/customizing-cpp-command-line-processing.md) komut satırı işlemeyi gizleme hakkında bilgi için.
+Programın kullanıcısı tarafından girilen komut satırı bağımsız değişkenlerini temsil eden boş sonlandırılmış bir dize dizisi. Kuralına göre, `argv[0]` programın çağrıldığı komuttur, `argv[1]` ilk komut satırı bağımsız değişkeni, `argv[argc]`ve bu nedenle her zaman null olan. Komut satırı işlemeyi gizleme hakkında bilgi için bkz. [komut satırı Işlemeyi özelleştirme](../cpp/customizing-cpp-command-line-processing.md) .
 
-İlk komut satırı bağımsız değişkeni her zaman olduğu `argv[1]` ve sonuncu `argv[argc - 1]`.
+İlk komut satırı bağımsız değişkeni her zaman `argv[1]` ve en son `argv[argc - 1]`bir ' dır.
 
 > [!NOTE]
-> Kural olarak, `argv[0]` ile programın çağrıldığı komuttur.  Ancak, bunu kullanarak bir işlem oluşturmak mümkündür [CreateProcess](/windows/desktop/api/libloaderapi/nf-libloaderapi-getmodulefilenamea) ve ilk ve ikinci bağımsız kullanıyorsanız (*lpApplicationName* ve *lpCommandLine*), `argv[0]` ; yürütülebilir ad olmayabilir kullanma [GetModuleFileName](/windows/desktop/api/libloaderapi/nf-libloaderapi-getmodulefilenamea) yürütülebilir adı ve tam olarak nitelenmiş yolunu almak için.
+> Kuralına göre, `argv[0]` programın çağrıldığı komuttur.  Ancak, [CreateProcess](/windows/win32/api/libloaderapi/nf-libloaderapi-getmodulefilenamew) kullanarak bir işlem oluşturulabilir ve hem birinci hem de ikinci bağımsız değişkenleri (*lpApplicationName* ve `argv[0]` *lpCommandLine*) kullanırsanız yürütülebilir dosya adı olmayabilir; [GetModuleFileName kullanın ](/windows/win32/api/libloaderapi/nf-libloaderapi-getmodulefilenamew)yürütülebilir adını ve tam yolunu almak için.
 
 ## <a name="microsoft-specific"></a>Microsoft'a Özgü
 
 *envp*<br/>
-*Envp* çok UNIX sisteminde yaygın bir uzantı olan dizisi Microsoft C++'da kullanılır. Kullanıcının ortamında ayarlanmış değişkenleri temsil eden bir dize dizisidir. Bu dizi bir NULL girdisi ile sonlandırılır. Bir işaretçiler dizisi olarak bildirilebilir **char** (`char *envp[]`) veya işaretçilerinin işaretçisi olarak **char** (`char **envp`). Programınızı kullanıyorsa `wmain` yerine `main`, kullanın **wchar_t** veri türü yerine **char**. Öğesine geçirilen ortam bloğu `main` ve `wmain` geçerli ortamın "dondurulmuş" bir kopyasıdır. Daha sonra ortamı çağrısıyla değiştirirseniz `putenv` veya `_wputenv`, geçerli ortam (tarafından döndürülen `getenv` veya `_wgetenv` ve `_environ` veya `_wenviron` değişkeni) tarafından işaret edilen blok ancak değiştirir envp değiştirmez. Bkz: [komut satırı işlemeyi özelleştirme](../cpp/customizing-cpp-command-line-processing.md) ortam işlemeyi gizleme hakkında bilgi için. Bu bağımsız değişken, C'de ANSI ile uyumludur, ancak C++'da değildir.
+Birçok UNIX sisteminde ortak bir uzantı olan *envp* dizisi, Microsoft C++'ta kullanılır. Kullanıcının ortamında ayarlanmış değişkenleri temsil eden bir dize dizisidir. Bu dizi, NULL bir girdi tarafından sona erdirildi. **Char** (`char *envp[]`) işaretçilerinden oluşan bir dizi veya **char** (`char **envp`) işaretçilerine işaretçi olarak belirtilebilir. Programınız `wmain`yerine kullanıyorsa ,charyerinewchar_t`main`veri türünü kullanın. Ortam bloğu, `main` ve `wmain` geçerli ortamın "dondurulmuş" bir kopyasına geçirilir. Daha sonra ortamı bir `putenv` veya `_wputenv`çağrısı yoluyla değiştirirseniz, geçerli ortam (veya `_wgetenv` ile `_environ` veya `_wenviron` değişkeni tarafından `getenv` döndürülen) değişir, ancak bu blok tarafından işaret edilir envp değişmeyecektir. Ortam işlemeyi gizleme hakkında bilgi için bkz. [komut satırı Işlemeyi özelleştirme](../cpp/customizing-cpp-command-line-processing.md) . Bu bağımsız değişken, C'de ANSI ile uyumludur, ancak C++'da değildir.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek nasıl kullanılacağını gösterir *argc*, *argv*, ve *envp* bağımsız değişkenleri `main`:
+Aşağıdaki örnek, *argc*, `main` *argv*ve *envp* bağımsız değişkenlerinin nasıl kullanılacağını gösterir:
 
 ```cpp
 // argument_definitions.cpp

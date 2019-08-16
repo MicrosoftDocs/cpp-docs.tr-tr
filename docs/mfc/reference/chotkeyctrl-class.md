@@ -22,16 +22,16 @@ helpviewer_keywords:
 - CHotKeyCtrl [MFC], SetHotKey
 - CHotKeyCtrl [MFC], SetRules
 ms.assetid: 896f9766-0718-4f58-aab2-20325e118ca6
-ms.openlocfilehash: 66edc7d4a1b4c78480da7d11cf30f7feeecefe2c
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 9818c32a7779d646ca5a9485a1331dfa393408ba
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64339548"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69506157"
 ---
 # <a name="chotkeyctrl-class"></a>CHotKeyCtrl sınıfı
 
-Windows ortak kısayol denetimi işlevlerini sağlar.
+Windows Common Hot Key Control işlevlerini sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -45,31 +45,31 @@ class CHotKeyCtrl : public CWnd
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CHotKeyCtrl::CHotKeyCtrl](#chotkeyctrl)|Oluşturur bir `CHotKeyCtrl` nesne.|
+|[CHotKeyCtrl:: CHotKeyCtrl](#chotkeyctrl)|Bir `CHotKeyCtrl` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CHotKeyCtrl::Create](#create)|Bir sık kullanılan tuş denetimi oluşturur ve ona bağlanan bir `CHotKeyCtrl` nesne.|
-|[CHotKeyCtrl::CreateEx](#createex)|Belirtilen Windows genişletilmiş stilleriyle bir sık kullanılan tuş denetimi oluşturur ve ona ekler bir `CHotKeyCtrl` nesne.|
-|[CHotKeyCtrl::GetHotKey](#gethotkey)|Sanal anahtar kod ve değiştirici bayrakları bir kısayol tuşu, bir kısayol tuşu denetimini alır.|
-|[CHotKeyCtrl::GetHotKeyName](#gethotkeyname)|Sık kullanılan tuş için atanmış yerel karakter kümesindeki anahtar adını alır.|
-|[CHotKeyCtrl::GetKeyName](#getkeyname)|Belirtilen sanal anahtar koda atanmış yerel karakter kümesindeki anahtar adını alır.|
-|[CHotKeyCtrl::SetHotKey](#sethotkey)|Kısayol tuş bileşimi bir sık kullanılan tuş denetimi için ayarlar.|
-|[CHotKeyCtrl::SetRules](#setrules)|Geçersiz birleşimleri ve varsayılan değiştirici bileşimi için bir kısayol tuşu denetimini tanımlar.|
+|[CHotKeyCtrl:: Create](#create)|Etkin anahtar denetimi oluşturur ve bunu bir `CHotKeyCtrl` nesneye ekler.|
+|[CHotKeyCtrl:: CreateEx](#createex)|Belirtilen Windows genişletilmiş stilleriyle bir etkin anahtar denetimi oluşturur ve bunu bir `CHotKeyCtrl` nesneye ekler.|
+|[CHotKeyCtrl:: GetHotKey](#gethotkey)|Etkin anahtar denetiminden etkin bir anahtarın sanal anahtar kodunu ve değiştirici bayraklarını alır.|
+|[CHotKeyCtrl:: GetHotKeyName](#gethotkeyname)|Etkin bir anahtara atanan, yerel karakter kümesindeki anahtar adını alır.|
+|[CHotKeyCtrl:: GetKeyName](#getkeyname)|Belirtilen sanal anahtar koduna atanan, yerel karakter kümesindeki anahtar adını alır.|
+|[CHotKeyCtrl:: SetHotKey](#sethotkey)|Etkin anahtar denetimi için kısayol tuşu birleşimini ayarlar.|
+|[CHotKeyCtrl:: SetRules](#setrules)|Etkin anahtar denetimi için geçersiz birleşimleri ve varsayılan değiştirici bileşimini tanımlar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir "Sık kullanılan tuş denetimi" Sık erişimli bir anahtar oluşturmak kullanıcının sağlayan bir penceredir. "Sık kullanılan tuş" hızlı bir eylem gerçekleştirmek için kullanıcı basabilirsiniz anahtar bir birleşimidir. (Örneğin, bir kullanıcı belirli bir pencereyi etkinleştirir ve Z düzenini üstüne getiren bir kısayol tuşu oluşturabilirsiniz.) Sık kullanılan tuş denetimi, kullanıcının seçimlerini görüntüler ve kullanıcının geçerli bir tuş bileşimi seçmesini sağlar.
+"Kısayol tuşu denetimi", kullanıcının kısayol tuşu oluşturmasını sağlayan bir penceredir. "Kısayol tuşu", kullanıcının bir eylemi hızlı bir şekilde gerçekleştirmek için bastabileceği bir anahtar birleşimidir. (Örneğin, bir Kullanıcı belirli bir pencereyi etkinleştiren ve Z sırasının en üstüne getiren bir kısayol tuşu oluşturabilir.) Sık kullanılan anahtar denetimi kullanıcının seçimlerini gösterir ve kullanıcının geçerli bir anahtar birleşimi seçmesi sağlar.
 
-Bu denetimi (ve bu nedenle `CHotKeyCtrl` sınıfı) ve üzeri yalnızca Windows 95/98 ve Windows NT sürüm 3.51 altında çalışan programlar için kullanılabilir.
+Bu denetim (ve bu nedenle `CHotKeyCtrl` sınıfı) yalnızca Windows 95/98 ve Windows NT sürüm 3,51 ve üzeri sürümlerde çalışan programlar için kullanılabilir.
 
-Bir tuş bileşimi kullanıcının seçtiği zaman uygulama belirtilen tuş bileşimi denetiminden almak ve WM_SETHOTKEY ileti sistemde etkin anahtar ayarlamak için kullanın. Her kullanıcının kısayol tuşu bundan sonra sistemin herhangi bir bölümünden bastığında WM_SETHOTKEY iletisinde belirtilen pencere SC_HOTKEY belirten bir WM_SYSCOMMAND iletisini alır. Bu iletiyi aldıktan sonra pencereyi etkinleştirir. Kısayol tuşu WM_SETHOTKEY çıkar çağıran uygulama kadar geçerli kalır.
+Kullanıcı bir anahtar birleşimi seçtiğinde, uygulama denetimden belirtilen anahtar birleşimini alabilir ve WM_SETHOTKEY iletisini kullanarak sistemde etkin anahtarı ayarlayabilir. Bundan sonra kullanıcının kısayol tuşuna basması durumunda, WM_SETHOTKEY iletisinde belirtilen pencere SC_HOTKEY belirten bir WM_SYSCOMMAND iletisi alır. Bu ileti, onu alan pencereyi etkinleştirir. Etkin anahtar, WM_SETHOTKEY adlı uygulama çıkıncaya kadar geçerli kalır.
 
-Bu mekanizma WM_HOTKEY ileti ve Windows bağlıdır etkin anahtar desteği farklıdır [RegisterHotKey](/windows/desktop/api/winuser/nf-winuser-registerhotkey) ve [UnregisterHotKey](/windows/desktop/api/winuser/nf-winuser-unregisterhotkey) işlevleri.
+Bu mekanizma, WM_HOTKEY iletisine ve Windows [registerkısayol](/windows/win32/api/winuser/nf-winuser-registerhotkey) 'A ve [unregisterkısayol](/windows/win32/api/winuser/nf-winuser-unregisterhotkey) işlevlerine bağlı olan sık kullanılan anahtar desteğinden farklıdır.
 
-Kullanma hakkında daha fazla bilgi için `CHotKeyCtrl`, bkz: [denetimleri](../../mfc/controls-mfc.md) ve [kullanarak CHotKeyCtrl](../../mfc/using-chotkeyctrl.md).
+Kullanma `CHotKeyCtrl`hakkında daha fazla bilgi için bkz [](../../mfc/controls-mfc.md) . [CHotKeyCtrl kullanma](../../mfc/using-chotkeyctrl.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -83,19 +83,19 @@ Kullanma hakkında daha fazla bilgi için `CHotKeyCtrl`, bkz: [denetimleri](../.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxcmn.h
+**Üstbilgi:** afxcmn. h
 
-##  <a name="chotkeyctrl"></a>  CHotKeyCtrl::CHotKeyCtrl
+##  <a name="chotkeyctrl"></a>CHotKeyCtrl:: CHotKeyCtrl
 
-Oluşturur bir `CHotKeyCtrl` nesne.
+Bir `CHotKeyCtrl` nesnesi oluşturur.
 
 ```
 CHotKeyCtrl();
 ```
 
-##  <a name="create"></a>  CHotKeyCtrl::Create
+##  <a name="create"></a>CHotKeyCtrl:: Create
 
-Bir sık kullanılan tuş denetimi oluşturur ve ona bağlanan bir `CHotKeyCtrl` nesne.
+Etkin anahtar denetimi oluşturur ve bunu bir `CHotKeyCtrl` nesneye ekler.
 
 ```
 virtual BOOL Create(
@@ -108,30 +108,30 @@ virtual BOOL Create(
 ### <a name="parameters"></a>Parametreler
 
 *dwStyle*<br/>
-Sık erişimli anahtar denetiminin stilini belirtir. Denetim stilleri herhangi bir bileşimini uygulayın. Bkz: [ortak denetim stilleri](/windows/desktop/Controls/common-control-styles) daha fazla bilgi için Windows SDK.
+Kısayol tuşu denetiminin stilini belirtir. Denetim stillerinin herhangi bir birleşimini uygulayın. Daha fazla bilgi için bkz. Windows SDK [ortak denetim stilleri](/windows/win32/Controls/common-control-styles) .
 
 *Rect*<br/>
-Sık erişimli anahtar denetimin boyutunu ve konumunu belirtir. Ya da olabilir bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya bir [RECT yapısı](/windows/desktop/api/windef/ns-windef-tagrect).
+Etkin anahtar denetiminin boyutunu ve konumunu belirtir. Bu, bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya bir [Rect yapısı](/windows/win32/api/windef/ns-windef-rect)olabilir.
 
 *pParentWnd*<br/>
-Sık erişimli anahtar denetiminin üst penceresine, genellikle belirtir bir [CDialog](../../mfc/reference/cdialog-class.md). NULL olmamalıdır.
+Sık kullanılan anahtar denetiminin üst penceresini belirtir, genellikle bir [CDialog](../../mfc/reference/cdialog-class.md). NULL olmaması gerekir.
 
-*nID*<br/>
-Sık erişimli anahtar denetimin kimliğini belirtir.
+*NID*<br/>
+Etkin anahtar denetiminin KIMLIĞINI belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfır başlatma başarılı olduysa; Aksi durumda 0.
+Başlatma başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Oluşturmak bir `CHotKeyCtrl` iki adımda nesne. İlk olarak, oluşturucusunu çağırın ve ardından arama `Create`, sık kullanılan tuş denetimi oluşturur ve ona ekler `CHotKeyCtrl` nesne.
+İki adımda bir `CHotKeyCtrl` nesne oluşturursunuz. İlk olarak, oluşturucuyu çağırın ve ardından, `Create`etkin anahtar denetimini oluşturan ve bunu `CHotKeyCtrl` nesnesine ekleyen çağırın.
 
-Genişletilmiş windows stilleri ile denetiminizi kullanmak istiyorsanız, çağrı [CreateEx](#createex) yerine `Create`.
+Denetimi ile genişletilmiş Windows stilleri kullanmak istiyorsanız, yerine `Create` [CreateEx](#createex) çağırın.
 
-##  <a name="createex"></a>  CHotKeyCtrl::CreateEx
+##  <a name="createex"></a>CHotKeyCtrl:: CreateEx
 
-Bir denetim (alt pencere) oluşturma ve ilişkilendirmek için bu işlevi çağırın `CHotKeyCtrl` nesne.
+Bir denetim (alt pencere) oluşturmak ve `CHotKeyCtrl` nesneyle ilişkilendirmek için bu işlevi çağırın.
 
 ```
 virtual BOOL CreateEx(
@@ -145,31 +145,31 @@ virtual BOOL CreateEx(
 ### <a name="parameters"></a>Parametreler
 
 *dwExStyle*<br/>
-Oluşturulan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows stilleri bir listesi için bkz. *dwExStyle* parametresi için [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) Windows SDK.
+Oluşturulmakta olan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows stillerinin listesi için, Windows SDK için bkz. [CreateWindowEx](/windows/win32/api/winuser/nf-winuser-createwindowexw) Için *dwExStyle* parametresi.
 
 *dwStyle*<br/>
-Sık erişimli anahtar denetiminin stilini belirtir. Denetim stilleri herhangi bir bileşimini uygulayın. Daha fazla bilgi için [ortak denetim stilleri](/windows/desktop/Controls/common-control-styles) Windows SDK.
+Kısayol tuşu denetiminin stilini belirtir. Denetim stillerinin herhangi bir birleşimini uygulayın. Daha fazla bilgi için, bkz. Windows SDK [ortak denetim stilleri](/windows/win32/Controls/common-control-styles) .
 
 *Rect*<br/>
-Bir başvuru bir [RECT](/previous-versions/dd162897\(v=vs.85\)) istemci koordinatları olarak oluşturulması için pencerenin konumunu ve boyutunu açıklayan yapısı *pParentWnd*.
+*PParentWnd*istemci koordinatları içinde oluşturulacak pencerenin boyutunu ve konumunu açıklayan bir [Rect](/previous-versions/dd162897\(v=vs.85\)) yapısına başvuru.
 
 *pParentWnd*<br/>
-Denetimin ana penceresine bir işaretçi.
+Denetimin üst öğesi olan pencerenin işaretçisi.
 
-*nID*<br/>
-Denetimin alt penceresi kimliği
+*NID*<br/>
+Denetimin alt pencere KIMLIĞI.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; Aksi durumda 0.
+Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanım `CreateEx` yerine [Oluştur](#create) Windows genişletilmiş sitil önsöz tarafından belirtilen Genişletilmiş Windows stilleri uygulamak için **WS_EX_**.
+Windows `CreateEx` genişletilmiş stili önsöz **ws_ex_** tarafından belirtilen Genişletilmiş Windows stillerini uygulamak için [Create](#create) yerine kullanın.
 
-##  <a name="gethotkey"></a>  CHotKeyCtrl::GetHotKey
+##  <a name="gethotkey"></a>CHotKeyCtrl:: GetHotKey
 
-Sanal anahtar kod ve değiştirici bayrakları klavye kısayolunun bir kısayol tuşu denetimini alır.
+Etkin anahtar denetiminden klavye kısayolunun sanal anahtar kodunu ve değiştirici bayraklarını alır.
 
 ```
 DWORD GetHotKey() const;
@@ -182,31 +182,31 @@ void GetHotKey(
 ### <a name="parameters"></a>Parametreler
 
 *wVirtualKeyCode*<br/>
-[out] Klavye kısayolunu sanal anahtar kodu. Winuser.h standart sanal anahtar kodlarının listesi için bkz.
+dışı Klavye kısayolunun sanal anahtar kodu. Standart sanal anahtar kodlarının listesi için bkz. Winuser. h.
 
-*wModifiers*<br/>
-[out] Bitsel bir birleşimi (veya) değiştirici tuşları, klavye kısayolunu gösteren bayrak.
+*Wdeğiştiriciler*<br/>
+dışı Klavye Kısayolunda değiştirici tuşlarını gösteren bir bit düzeyinde birleşim (veya) bayrakları.
 
 Değiştirici bayrakları aşağıdaki gibidir:
 
 |Bayrağı|Karşılık gelen anahtar|
 |----------|-----------------------|
 |HOTKEYF_ALT|ALT tuşu|
-|HOTKEYF_CONTROL|CTRL tuşunu|
-|HOTKEYF_EXT|Genişletilmiş Anahtar|
-|HOTKEYF_SHIFT|Shift tuşunu|
+|HOTKEYF_CONTROL|CTRL tuşu|
+|HOTKEYF_EXT|Genişletilmiş anahtar|
+|HOTKEYF_SHIFT|SHIFT tuşu|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk aşırı yüklenmiş yöntem, sanal anahtar kod ve değiştirici bayrakları içeren bir DWORD. Düşük düzey word'ün son bayt sanal tuş kodunu içeren, düşük düzey word'ün yüksek düzeyli bayt değiştirici bayrakları içeriyor ve dwpoint sıfırdır.
+İlk aşırı yüklenmiş yöntemde, sanal anahtar kodu ve değiştirici bayraklarını içeren bir DWORD. Düşük sıralı sözcüğün düşük sıra baytı sanal anahtar kodunu içerir, düşük sıralı sözcüğün üst sıra baytı değiştirici bayraklarını içerir ve yüksek sıralı sözcük sıfırdır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sanal anahtar kod ve birlikte değiştirici tuşları klavye kısayolunu tanımlayın.
+Sanal anahtar kodu ve değiştirici Anahtarlar birlikte klavye kısayolunu tanımlar.
 
-##  <a name="gethotkeyname"></a>  CHotKeyCtrl::GetHotKeyName
+##  <a name="gethotkeyname"></a>CHotKeyCtrl:: GetHotKeyName
 
-Kısayol tuşu yerelleştirilmiş adını almak için bu üye işlevini çağırın.
+Sık kullanılan anahtarın yerelleştirilmiş adını almak için bu üye işlevi çağırın.
 
 ```
 CString GetHotKeyName() const;
@@ -214,15 +214,15 @@ CString GetHotKeyName() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Şu anda seçili kısayol tuşu yerelleştirilmiş adı. Seçili hiçbir kısayol tuşu ise `GetHotKeyName` boş bir dize döndürür.
+Şu anda seçili olan etkin anahtarın yerelleştirilmiş adı. Seçili kısayol tuşu yoksa, `GetHotKeyName` boş bir dize döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevinin döndürdüğü adı klavye sürücüsünden gelir. Windows, yerelleştirilmiş bir sürümünde bir klavye yerelleştirilmemiş sürücüsünü yükleyebilirsiniz ve bunun tersi de geçerlidir.
+Bu üye işlevin döndürdüğü ad klavye sürücüsünden geliyor. Yerelleştirilmiş olmayan bir klavye sürücüsünü Windows 'un yerelleştirilmiş bir sürümüne yükleyebilirsiniz ve tam tersi de geçerlidir.
 
-##  <a name="getkeyname"></a>  CHotKeyCtrl::GetKeyName
+##  <a name="getkeyname"></a>CHotKeyCtrl:: GetKeyName
 
-Belirtilen sanal anahtar kod atanan anahtarı yerelleştirilmiş adını almak için bu üye işlevini çağırın.
+Belirtilen sanal anahtar koduna atanan anahtarın yerelleştirilmiş adını almak için bu üye işlevi çağırın.
 
 ```
 static CString GetKeyName(
@@ -232,27 +232,27 @@ static CString GetKeyName(
 
 ### <a name="parameters"></a>Parametreler
 
-*vk*<br/>
+*VK*<br/>
 Sanal anahtar kodu.
 
 *fExtended*<br/>
-Sanal anahtar kodu bir genişletilmiş anahtar TRUE ise; Aksi durumda FALSE.
+Sanal anahtar kodu bir genişletilmiş anahtardır, TRUE; Aksi halde yanlış.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yerelleştirilmiş adı tarafından belirtilen anahtarın *vk* parametresi. Anahtar eşlenen adı, yoksa `GetKeyName` boş bir dize döndürür.
+*VK* parametresi tarafından belirtilen anahtarın yerelleştirilmiş adı. Anahtar eşlenmiş bir ada sahip değilse, `GetKeyName` boş bir dize döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev döndüren anahtar adı klavye sürücüsünden sunulur; böylece bir klavye yerelleştirilmemiş sürücü Windows, yerelleştirilmiş bir sürümünü yükleyebilirsiniz ve bunun tersi de geçerlidir.
+Bu işlevin döndürdüğü anahtar adı klavye sürücüsünden geliyorsa, yerelleştirilmiş olmayan bir klavye sürücüsünü Windows 'un yerelleştirilmiş bir sürümüne yükleyebilirsiniz ve bunun tersini yapabilirsiniz.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCControlLadenDialog#69](../../mfc/codesnippet/cpp/chotkeyctrl-class_1.cpp)]
 
-##  <a name="sethotkey"></a>  CHotKeyCtrl::SetHotKey
+##  <a name="sethotkey"></a>CHotKeyCtrl:: SetHotKey
 
-Bir sık kullanılan tuş denetimi için klavye kısayolunu ayarlar.
+Kısayol tuşu denetimi için klavye kısayolunu ayarlar.
 
 ```
 void SetHotKey(
@@ -263,27 +263,27 @@ void SetHotKey(
 ### <a name="parameters"></a>Parametreler
 
 *wVirtualKeyCode*<br/>
-[in] Klavye kısayolunu sanal anahtar kodu. Winuser.h standart sanal anahtar kodlarının listesi için bkz.
+'ndaki Klavye kısayolunun sanal anahtar kodu. Standart sanal anahtar kodlarının listesi için bkz. Winuser. h.
 
-*wModifiers*<br/>
-[in] Bitsel bir birleşimi (veya) değiştirici tuşları, klavye kısayolunu gösteren bayrak.
+*Wdeğiştiriciler*<br/>
+'ndaki Klavye Kısayolunda değiştirici tuşlarını gösteren bir bit düzeyinde birleşim (veya) bayrakları.
 
 Değiştirici bayrakları aşağıdaki gibidir:
 
 |Bayrağı|Karşılık gelen anahtar|
 |----------|-----------------------|
 |HOTKEYF_ALT|ALT tuşu|
-|HOTKEYF_CONTROL|CTRL tuşunu|
-|HOTKEYF_EXT|Genişletilmiş Anahtar|
-|HOTKEYF_SHIFT|Shift tuşunu|
+|HOTKEYF_CONTROL|CTRL tuşu|
+|HOTKEYF_EXT|Genişletilmiş anahtar|
+|HOTKEYF_SHIFT|SHIFT tuşu|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sanal anahtar kod ve birlikte değiştirici tuşları klavye kısayolunu tanımlayın.
+Sanal anahtar kodu ve değiştirici Anahtarlar birlikte klavye kısayolunu tanımlar.
 
-##  <a name="setrules"></a>  CHotKeyCtrl::SetRules
+##  <a name="setrules"></a>CHotKeyCtrl:: SetRules
 
-Geçersiz birleşimleri ve varsayılan değiştirici bileşimi için bir kısayol tuşu denetimini tanımlamak için bu işlevi çağırın.
+Etkin anahtar denetimi için geçersiz birleşimleri ve varsayılan değiştirici bileşimini tanımlamak için bu işlevi çağırın.
 
 ```
 void SetRules(
@@ -294,30 +294,30 @@ void SetRules(
 ### <a name="parameters"></a>Parametreler
 
 *wInvalidComb*<br/>
-Geçersiz anahtar belirten bayrakları dizisi. Bu, aşağıdaki değerleri birleşimi olabilir:
+Geçersiz anahtar birleşimlerini belirten bayrakların dizisi. Aşağıdaki değerlerin bir birleşimi olabilir:
 
 - HKCOMB_A ALT
 
 - HKCOMB_C CTRL
 
-- HKCOMB_CA CTRL+ALT
+- HKCOMB_CA CTRL + ALT
 
-- HKCOMB_NONE değiştirilmemiş anahtarları
+- HKCOMB_NONE değiştirilmemiş anahtarlar
 
 - HKCOMB_S KAYDIRMA
 
-- HKCOMB_SA SHIFT+ALT
+- HKCOMB_SA SHIFT + ALT
 
-- HKCOMB_SC SHIFT+CTRL
+- HKCOMB_SC SHIFT + CTRL
 
 - HKCOMB_SCA SHIFT+CTRL+ALT
 
-*wModifiers*<br/>
-Kullanıcı obsahuje neplatnou kombinaci girdiğinde kullanmak için bir tuş bileşimini belirtir bayrakları dizisi. Değiştirici bayrakları hakkında daha fazla bilgi için bkz. [GetHotKey](#gethotkey).
+*Wdeğiştiriciler*<br/>
+Kullanıcı geçersiz bir bileşim girdiğinde kullanılacak anahtar birleşimini belirten bayrakların dizisi. Değiştirici bayrakları hakkında daha fazla bilgi için bkz. [GetHotKey](#gethotkey).
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir kullanıcı girdiğinde geçersiz bir tuş bileşimi belirtilen bayraklar tarafından tanımlandığı gibi *wInvalidComb*, sistem, belirtilen bayrağı ile kullanıcı tarafından girilen anahtarları birleştirmek için veya işlecini kullanır. *wModifiers*. Elde edilen tuş bileşimi bir dizeye dönüştürülür ve ardından sık kullanılan tuş denetimi içinde görüntülenir.
+Kullanıcı, *Winvalidcomb*'de belirtilen bayraklar tarafından tanımlandığı şekilde geçersiz bir anahtar birleşimi girdiğinde, sistem kullanıcı tarafından girilen anahtarları *wModifiers*'da belirtilen bayraklarla birleştirmek için veya işlecini kullanır. Elde edilen anahtar birleşimi bir dizeye dönüştürülür ve ardından sık kullanılan anahtar denetiminde görüntülenir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

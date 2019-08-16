@@ -49,19 +49,19 @@ helpviewer_keywords:
 - strlen function
 - _mbslen function
 ms.assetid: 16462f2a-1e0f-4eb3-be55-bf1c83f374c2
-ms.openlocfilehash: 4a12c87f1cff14582e21fbb7d617100fc2853dab
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7736e1e7889642c41a5e3853ac13221ab22f6d03
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62362289"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69500918"
 ---
-# <a name="strlen-wcslen-mbslen-mbslenl-mbstrlen-mbstrlenl"></a>strlen, wcslen, _mbslen, _mbslen_l, _mbstrlen, _mbstrlen_l
+# <a name="strlen-wcslen-_mbslen-_mbslen_l-_mbstrlen-_mbstrlen_l"></a>strlen, wcslen, _mbslen, _mbslen_l, _mbstrlen, _mbstrlen_l
 
-Geçerli yerel ayarı veya belirtilen yerel kullanarak bir dizenin uzunluğunu alır. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz: [strnlen, strnlen_s, wcsnlen, wcsnlen_s, _mbsnlen, _mbsnlen_l, _mbstrnlen, _mbstrnlen_l](strnlen-strnlen-s.md)
+Geçerli yerel ayarı veya belirtilen yerel ayarı kullanarak bir dizenin uzunluğunu alır. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz. [strnlen, strnlen_s, wcsnlen, wcsnlen_s, _mbsnlen, _mbsnlen_l, _mbstrnlen, _mbstrnlen_l](strnlen-strnlen-s.md)
 
 > [!IMPORTANT]
-> **_mbslen**, **_mbslen_l**, **_mbstrlen**, ve **_mbstrlen_l** Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **_mbslen**, **_mbslen_l**, **_mbstrlen**ve **_mbstrlen_l** Windows çalışma zamanı içinde yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -90,42 +90,42 @@ size_t _mbstrlen_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*str*<br/>
+*üstbilgisine*<br/>
 Null ile sonlandırılmış dize.
 
-*Yerel ayar*<br/>
+*ayarlar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu işlevlerin her biri, karakter sayısını döndürür *str*, terminal null dışında. Dışında hatayı belirtmek için dönüş değeri ayrılmış **_mbstrlen** ve **_mbstrlen_l**, hangi iade `((size_t)(-1))` , geçersiz bir çok baytlı karakter dizesi içerir.
+Bu işlevlerin her biri, Terminal null hariç olmak üzere *Str*içindeki karakter sayısını döndürür. Dize geçersiz bir çok baytlı karakter içeriyorsa döndürülen `((size_t)(-1))` **_mbstrlen** ve **_mbstrlen_l**dışında bir hata belirtmek için hiçbir dönüş değeri ayrılmamıştır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**strlen** çok baytlı karakter dizesi içeriyor olsa bile, dönüş değeri her zaman bayt sayısına eşit olacak şekilde bir dizeyi bir tek baytlı karakter dizesi yorumlar. **wcslen** geniş karakterli sürümüdür **strlen**; bağımsız değişkeni **wcslen** bir geniş karakterli dize ve karakter sayısı (iki baytlık) geniş karakter olmalıdır. **wcslen** ve **strlen** aynı şekilde davranır.
+**strlen** , dizeyi tek baytlık bir karakter dizesi olarak yorumlar, bu nedenle dönüş değeri dize çok baytlı karakterler içerse bile, her zaman bayt sayısına eşittir. **wcslen** , **strlen**; öğesinin geniş karakterli bir sürümüdür **wcslen** bağımsız değişkeni geniş karakterli bir dizedir ve karakter sayısı ise geniş (iki baytlık) karakterlerdir. **wcslen** ve **strlen** aynı şekilde davranır.
 
-**Güvenlik Notu** bu işlevler bir arabellek taşması sorunu duruma olası bir tehdit doğurur. Arabellek taşması sorunları, sistem saldırı, bir unwarranted ayrıcalık yükseltilmesi ile sonuçlanan sık kullanılan bir yöntemdir. Daha fazla bilgi için [arabellek taşmalarını](/windows/desktop/SecBP/avoiding-buffer-overruns).
+**Güvenlik notunun** Bu işlevler, bir arabellek taşması sorunu ile ilgili olası bir tehdit doğurur. Arabellek taşması sorunları, sistem saldırılarına karşı sık kullanılan bir yöntemdir ve bu da garanti edilmemiş ayrıcalık yükselmesine neden olur. Daha fazla bilgi için bkz. [arabellek taşmalarını önleme](/windows/win32/SecBP/avoiding-buffer-overruns).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_tcslen**|**strlen**|**strlen**|**wcslen**|
 |**_tcsclen**|**strlen**|**_mbslen**|**wcslen**|
 |**_tcsclen_l**|**strlen**|**_mbslen_l**|**wcslen**|
 
-**_mbslen** ve **_mbslen_l** çok baytlı karakter geçerliliğini sınamayın ancak bir çok baytlı karakter dizesi içinde birden çok baytlı karakter sayısını döndürür. **_mbstrlen** ve **_mbstrlen_l** çok baytlı karakter geçerliliğini sınamak ve çok baytlı karakter sıralarını tanır. Dize geçirilmiş **_mbstrlen** veya **_mbstrlen_l** kod sayfası, işlev -1 döndürür ve kümeleri için geçersiz bir çok baytlı karakter içeren **errno** için**EILSEQ**.
+**_mbslen** ve **_mbslen_l** çok baytlı karakter dizesindeki çok baytlı karakterlerin sayısını döndürür ancak çok baytlı karakter geçerliliği için test etmez. çok baytlı karakter geçerliliği için **_mbstrlen** ve **_mbstrlen_l** testi ve çok baytlı karakter dizilerini tanıma. **_Mbstrlen** veya **_mbstrlen_l** öğesine geçirilen dize, kod sayfası için geçersiz bir çok baytlı karakter içeriyorsa, işlev-1 döndürür ve **errno** 'u **eilseq**olarak ayarlar.
 
-Çıkış değeri ayarından etkilenir **LC_CTYPE** yerel ayarının kategori ayarına; bkz: [setlocale](setlocale-wsetlocale.md) daha fazla bilgi için. Bu işlevlerin sürümleri **_l** soneki geçerli yerel ayarı kullanır bu yerel ayara bağlı davranışı için; sürümleriyle **_l** sonekine bunların yerel ayar parametresini kullanmalarıdır Bunun yerine iletilmiş. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
+Çıkış değeri yerel ayarın **LC_CTYPE** kategori ayarı ayarından etkilenir; daha fazla bilgi için bkz. [setlocale](setlocale-wsetlocale.md) . **_L** sonekine sahip olmayan bu işlevlerin sürümleri, yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır; **_l** sonekine sahip sürümler, bunun yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**strlen**|\<String.h >|
-|**wcslen**|\<String.h > veya \<wchar.h >|
-|**_mbslen**, **_mbslen_l**|\<Mbstring.h >|
-|**_mbstrlen**, **_mbstrlen_l**|\<stdlib.h >|
+|**strlen**|\<String. h >|
+|**wcslen**|\<String. h > veya \<wchar. h >|
+|**_mbslen**, **_mbslen_l**|\<mbstring. h >|
+|**_mbstrlen**, **_mbstrlen_l**|\<Stdlib. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -194,7 +194,7 @@ Bytes in 'ABCァD' : 6
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dize düzenlemesi](../../c-runtime-library/string-manipulation-crt.md)<br/>
+[Dize düzenleme](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [Çok Baytlı Karakter Sıralarının Yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [locale](../../c-runtime-library/locale.md)<br/>
 [setlocale, _wsetlocale](setlocale-wsetlocale.md)<br/>

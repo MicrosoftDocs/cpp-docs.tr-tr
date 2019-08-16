@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C4312
 ms.assetid: 541906ed-4f62-4bcb-947f-cf9ae7411bcb
-ms.openlocfilehash: 666df7904a7aac88983af40d31a67271beaa0b1f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1983d7b89688568b8152372328216c2a814f7bc0
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62408322"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69510084"
 ---
 # <a name="compiler-warning-level-1-c4312"></a>Derleyici Uyarısı (düzey 1) C4312
 
 'operation' : 'type1' öğesinden daha büyük boyutlu 'type2' öğesine dönüştürme
 
-Bu uyarı bir 32-bit atama 64-bit işaretçi türü için örneğin, 32-bit bir değer atamak için bir deneme algılar `int` veya `long` 64-bit işaretçi.
+Bu uyarı, 32 bitlik bir değeri 64 bit işaretçi türüne atama girişimini algılar, örneğin, 32-bit `int` veya `long` 64-bit işaretçisi atama.
 
-Bu, güvenli olmayan bir dönüştürme bile 32 bit imza uzantısı oluştuğunda uyan işaretçi değerleri olabilir. Negatif bir 32 bit tamsayı bir 64-bit işaretçi türüne atanan işaret uzantısı tamsayı değerinden farklı bir bellek adresi başvurusu işaretçi değeri neden olur.
+Bu, oturum açma uzantısı gerçekleştiğinde 32 bite sığan işaretçi değerleri bile güvenli olmayan bir dönüştürme olabilir. Bir 64 bit işaretçi türüne negatif 32 bitlik bir tamsayı atanırsa, imza uzantısı, işaretçi değerinin tamsayının değerinden farklı bir bellek adresine başvurmasına neden olur.
 
-Bu uyarı, yalnızca 64 bit derleme hedefleri için görüntülenir. Daha fazla bilgi için [kullanarak işaretçileri için kuralları](/windows/desktop/WinProg64/rules-for-using-pointers).
+Bu uyarı yalnızca 64 bitlik derleme hedefleri için verilir. Daha fazla bilgi için bkz. [Işaretçiler kullanma kuralları](/windows/win32/WinProg64/rules-for-using-pointers).
 
-Aşağıdaki kod örneği, 64-bit hedefleri için derlendiğinde C4312 oluşturur:
+Aşağıdaki kod örneği 64-bit hedefler için derlendiğinde C4312 oluşturur:
 
 ```
 // C4312.cpp

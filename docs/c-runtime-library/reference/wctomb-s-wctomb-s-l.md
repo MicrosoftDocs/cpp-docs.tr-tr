@@ -29,16 +29,16 @@ helpviewer_keywords:
 - characters, converting
 - string conversion, multibyte character strings
 ms.assetid: 7e94a888-deed-4dbd-b5e9-d4a0455538b8
-ms.openlocfilehash: 08e8cb0ddaac342682776600fd0fd8b3d26b8953
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1eaa6f0b81daaa7d8c7626398fe30b45ead979c3
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62188491"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69498923"
 ---
-# <a name="wctombs-wctombsl"></a>wctomb_s, _wctomb_s_l
+# <a name="wctomb_s-_wctomb_s_l"></a>wctomb_s, _wctomb_s_l
 
-Bir geniş karakter karşılık gelen çok baytlı karaktere dönüştürür. Bir sürümünü [wctomb, _wctomb_l](wctomb-wctomb-l.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
+Geniş bir karakteri karşılık gelen çok baytlı karaktere dönüştürür. Bir [wctomb, _wckaldırıldı _l](wctomb-wctomb-l.md) 'nin BIR sürümü [CRT 'daki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklandığı gibi güvenlik geliştirmeleri içerir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -61,54 +61,54 @@ errno_t _wctomb_s_l(
 ### <a name="parameters"></a>Parametreler
 
 *pRetValue*<br/>
-Sonucu gösteren bir kod veya bayt sayısı.
+Bayt sayısı veya sonucu gösteren bir kod.
 
 *mbchar*<br/>
 Çok baytlı bir karakterin adresi.
 
 *sizeInBytes*<br/>
-Arabellek boyutu *mbchar*.
+*Mbchar*arabelleğinin boyutu.
 
 *wchar*<br/>
-Bir geniş karakter.
+Geniş bir karakter.
 
-*Yerel ayar*<br/>
+*ayarlar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa sıfır, bir hata kodu.
+Başarılıysa sıfır, hata durumunda hata kodu.
 
 Hata koşulları
 
 |*mbchar*|*sizeInBytes*|Dönüş değeri|*pRetValue*|
 |--------------|-------------------|------------------|-----------------|
-|**NULL**|>0|**EINVAL**|değiştirilmedi|
-|Tüm|>**INT_MAX**|**EINVAL**|değiştirilmedi|
-|Tüm|çok küçük|**EINVAL**|değiştirilmedi|
+|**DEĞER**|>0|**EINVAL**|değiştirilmedi|
+|kaydedilmemiş|>**INT_MAX**|**EINVAL**|değiştirilmedi|
+|kaydedilmemiş|çok küçük|**EINVAL**|değiştirilmedi|
 
-Yukarıdaki hata durumlardan biri oluşursa, geçersiz parametre işleyicisi açıklandığı gibi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse **wctomb** döndürür **EINVAL** ve ayarlar **errno** için **EINVAL**.
+Yukarıdaki hata koşullarından herhangi biri oluşursa, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa **wctomb** , **EINVAL** döndürür ve **errno** değerini **EINVAL**olarak ayarlar.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Wctomb_s** işlev dönüştürür, *wchar* çok baytlı karaktere karşılık gelen bağımsız değişken ve sonucunda depolar *mbchar*. Herhangi bir programda herhangi bir noktasından işlevi çağırabilir.
+**Wctomb_s** işlevi, *wchar* bağımsız değişkenini karşılık gelen çok baytlı karaktere dönüştürür ve sonucu *mbchar*üzerinde depolar. İşlevi herhangi bir programda herhangi bir noktadan çağırabilirsiniz.
 
-Varsa **wctomb_s** geniş karakter dönüştürür isteğe bağlı olarak bir çok baytlı karakterin bayt sayısını getirir (olan hiçbir zaman büyüktür **MB_CUR_MAX**) geniş karakter tarafındanişaretedilentamsayıiçine*pRetValue*. Varsa *wchar* geniş karakterli null karakteri (L '\0') **wctomb_s** doldurur *pRetValue* 1. Hedef işaretçi *mbchar* olduğu **NULL**, **wctomb_s** 0 koyar *pRetValue*. Geçerli yerel ayarda dönüştürme mümkün değilse, **wctomb_s** -1 koyar *pRetValue*.
+**Wctomb_s** geniş karakteri çok baytlı bir karaktere dönüştürdüğünde, geniş karakter içindeki bayt sayısını, *pRetValue*tarafından işaret edilen tamsayıyakoyar. *Wchar* , geniş karakterli null karakterdir (L ' \ 0 '), **Wctomb_s** *pRetValue değerini* 1 olarak doldurur. Hedef işaretçi *mbchar* değeri **null**Ise, **wctomb_s** *pRetValue*içine 0 koyar. Dönüştürme geçerli yerel ayarda mümkün değilse, **Wctomb_s** *pRetValue*içinde-1 koyar.
 
-**wctomb_s** için yerel ayara bağlı bilgiler; geçerli yerel ayarı kullanır **_wctomb_s_l** bunun yerine iletilmiş yerel ayarı kullanması dışında aynıdır. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
+**wctomb_s** , yerel ayara bağımlı bilgiler için geçerli yerel ayarı kullanır; **_wckaldırıldı _s_l** , bunun yerine geçirilen yerel ayarı kullanması dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**wctomb_s**|\<stdlib.h >|
-|**_wctomb_s_l**|\<stdlib.h >|
+|**wctomb_s**|\<Stdlib. h >|
+|**_wctomb_s_l**|\<Stdlib. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
-Bu program davranışlarını gösterir **wctomb** işlevi.
+Bu program **wctomb** işlevinin davranışını gösterir.
 
 ```cpp
 // crt_wctomb_s.cpp
@@ -142,4 +142,4 @@ Convert a wide character:
 [mbstowcs, _mbstowcs_l](mbstowcs-mbstowcs-l.md)<br/>
 [mbtowc, _mbtowc_l](mbtowc-mbtowc-l.md)<br/>
 [wcstombs, _wcstombs_l](wcstombs-wcstombs-l.md)<br/>
-[WideCharToMultiByte](/windows/desktop/api/stringapiset/nf-stringapiset-widechartomultibyte)<br/>
+[Widechartoçok baytlı](/windows/win32/api/stringapiset/nf-stringapiset-widechartomultibyte)<br/>

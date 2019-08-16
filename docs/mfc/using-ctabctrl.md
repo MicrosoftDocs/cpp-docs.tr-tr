@@ -7,20 +7,20 @@ helpviewer_keywords:
 - CTabCtrl class [MFC], using
 - tab controls [MFC], using
 ms.assetid: 6bda6798-0085-4c09-a5ea-fe0e97af5c95
-ms.openlocfilehash: 97844fea667edab5a4d1f1a49c3908454a203d1f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f07452fd52e2da3187e89ceafcd9f74e3f0cb159
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62411688"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69510775"
 ---
 # <a name="using-ctabctrl"></a>CTabCtrl Kullanma
 
-"Sekme denetimi" Bölücü içinde bir not defteri veya dosya dolabı etiketli klasörlerinde benzer. Sınıfı tarafından temsil edilen sekme denetimi kullanın [CTabCtrl](../mfc/reference/ctabctrl-class.md), bir kullanıcıya, eş ya da her sayfa mantıksal ilişkisi öneren bir biçimde teker teker bilgiler veya denetimler, birden çok sayfada gösterilecek.
+"Sekme denetimi" bir not defterindeki ayırıcıya veya bir dosya dolabında etiketlenmiş klasörler ile benzerdir. Her bir sayfa arasında bir eş veya mantıksal ilişki öneren bir biçimde, bir kullanıcıya birden çok bilgi veya denetim sayfası göstermek için [CTabCtrl](../mfc/reference/ctabctrl-class.md)sınıfı tarafından temsil edilen sekme denetimini kullanın.
 
-Sekme denetimleri hakkında daha fazla bilgi için bkz. [sekme denetimleri](/windows/desktop/Controls/tab-controls) Windows SDK.
+Sekme denetimleri hakkında daha fazla bilgi için Windows SDK [sekme denetimleri](/windows/win32/Controls/tab-controls) bölümüne bakın.
 
-## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz
+## <a name="what-do-you-want-to-know-more-about"></a>Hakkında daha fazla bilgi edinmek istiyorsunuz
 
 - [Sekme Denetimleri ve Özellik Sayfaları](../mfc/tab-controls-and-property-sheets.md)
 

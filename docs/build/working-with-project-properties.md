@@ -8,12 +8,12 @@ helpviewer_keywords:
 - Visual C++ projects, properties
 - projects [C++], properties
 ms.assetid: 9b0d6f8b-7d4e-4e61-aa75-7d14944816cd
-ms.openlocfilehash: 436c9c47d7e08176860144ce62cc874919351029
-ms.sourcegitcommit: 610751254a01cba6ad15fb1e1764ecb2e71f66bf
+ms.openlocfilehash: 57414bd56c72b951d3f1948e658243e9036f0179
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68313443"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69498121"
 ---
 # <a name="set-compiler-and-build-properties"></a>Derleyici ve derleme özelliklerini ayarlama
 
@@ -39,7 +39,7 @@ Aşağıdaki çizimde aynı proje özelliği sayfası görülmektedir, ancak yap
 
 ## <a name="target-platforms"></a>Hedef platformlar
 
-*Hedef platform* , yürütülebilir dosyanın çalışacağı cihaz ve/veya işletim sisteminin türünü ifade eder. Birden fazla platform için bir proje oluşturabilirsiniz. Projeler için C++ kullanılabilir hedef platformlar proje türüne bağlıdır; Bunlar, Win32, x64, ARM, Android ve iOS 'a dahil değildir ancak bunlarla sınırlı değildir.     **Configuration Manager** görebileceğiniz **x86** hedef platformu, yerel C++ projelerde **Win32** ile aynıdır. Win32, 32 bit Windows ve **x64** için 64 bit Windows anlamına gelir. Bu iki platform hakkında daha fazla bilgi için bkz. [32 bitlik uygulamalar çalıştırma](/windows/desktop/WinProg64/running-32-bit-applications).
+*Hedef platform* , yürütülebilir dosyanın çalışacağı cihaz ve/veya işletim sisteminin türünü ifade eder. Birden fazla platform için bir proje oluşturabilirsiniz. Projeler için C++ kullanılabilir hedef platformlar proje türüne bağlıdır; Bunlar, Win32, x64, ARM, Android ve iOS 'a dahil değildir ancak bunlarla sınırlı değildir.     **Configuration Manager** görebileceğiniz **x86** hedef platformu, yerel C++ projelerde **Win32** ile aynıdır. Win32, 32 bit Windows ve **x64** için 64 bit Windows anlamına gelir. Bu iki platform hakkında daha fazla bilgi için bkz. [32 bitlik uygulamalar çalıştırma](/windows/win32/WinProg64/running-32-bit-applications).
 
 **Configuration Manager** GÖREBILECEĞINIZ C++ **tüm CPU** hedefi platformu, yerel projeler üzerinde hiçbir etkiye sahip değildir; /CLI ve diğer .NET C++proje türleri için geçerlidir. Daha fazla bilgi için bkz. [/Clrimagetype (clr görüntü türünü belirt)](reference/clrimagetype-specify-type-of-clr-image.md).
 
@@ -60,7 +60,7 @@ C++derleyici ve bağlayıcı seçenekleri sol bölmedeki **yapılandırma özell
 
 MSBuild, belirli dize değerleri için "Makrolar" adlı derleme zamanı sabitlerinin kullanımını, dizinler ve yollar içerir. Bunlar özellik sayfalarında gösterilir. burada, [özellik düzenleyicisini](#property_editor)kullanarak bunları bulabilirsiniz ve değiştirebilirsiniz. 
 
-Aşağıdaki çizimde, bir Visual Studio C++ projesi için özellik sayfaları gösterilmektedir. Sol bölmede, **VC + + dizinleri** *kuralı* seçilidir ve sağ bölmede bu kuralla ilişkili özellikler listelenir. Değerler makrolar olarak adlandırılır.  `$(...)` *Makro* , Visual Studio veya MSBuild sistemi tarafından tanımlanan bir değere veya Kullanıcı tanımlı bir değere başvurabilen bir derleme zamanı sabiti. Dizin yolları gibi sabit kodlu değerler yerine makroları kullanarak, Özellikler ayarlarını makineler arasında ve Visual Studio sürümleri arasında daha kolay bir şekilde paylaşabilir ve proje ayarlarınızın özelliği içinde doğru bir şekilde katılmasını sağlayabilirsiniz. [ devralma](project-property-inheritance.md). 
+Aşağıdaki çizimde, bir Visual Studio C++ projesi için özellik sayfaları gösterilmektedir. Sol bölmede, **VC + + dizinleri** *kuralı* seçilidir ve sağ bölmede bu kuralla ilişkili özellikler listelenir. Değerler makrolar olarak adlandırılır. `$(...)` *Makro* , Visual Studio veya MSBuild sistemi tarafından tanımlanan bir değere veya Kullanıcı tanımlı bir değere başvurabilen bir derleme zamanı sabiti. Dizin yolları gibi sabit kodlu değerler yerine makroları kullanarak, Özellikler ayarlarını makineler arasında ve Visual Studio sürümleri arasında daha kolay bir şekilde paylaşabilir ve proje ayarlarınızın özelliği içinde doğru bir şekilde katılmasını sağlayabilirsiniz. [ devralma](project-property-inheritance.md). 
 
 ![Proje özellik sayfaları](media/project_property_pages_vc.png "Project_Property_Pages_VC")
 

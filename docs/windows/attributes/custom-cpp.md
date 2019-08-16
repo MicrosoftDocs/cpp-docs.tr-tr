@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - custom attributes, defining
 ms.assetid: 3abac928-4d55-4ea6-8cf6-8427a4ad79f1
-ms.openlocfilehash: 227e67696e679452a9c6c0e18c04e3d918f7a93f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 19f28963a18abf42c6f629ac0f6491628387aa6d
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62148187"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69491007"
 ---
 # <a name="custom-c"></a>özel (C++)
 
-Bir nesne için meta verileri tür kitaplığındaki tanımlar.
+Tür kitaplığındaki bir nesne için meta verileri tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -29,16 +29,16 @@ Bir nesne için meta verileri tür kitaplığındaki tanımlar.
 ### <a name="parameters"></a>Parametreler
 
 *uuid*<br/>
-Benzersiz kimliği
+Benzersiz bir KIMLIK.
 
 *value*<br/>
-Bir değişken koyabilirsiniz bir değer.
+Bir varyanta koyabileceğiniz bir değer.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Özel** C++ özniteliği tür kitaplığına yerleştirilecek bilgi neden olur. Tür kitaplığından özel değeri okuyan bir aracı gerekir.
+**Özel** C++ öznitelik, bilgilerin tür kitaplığına yerleştirilmesine neden olur. Tür kitaplığından özel değeri okuyan bir araca ihtiyacınız olacak.
 
-**Özel** özniteliği ile aynı işlevlere sahip [özel](/windows/desktop/Midl/custom) MIDL özniteliği.
+**Özel** öznitelik [özel](/windows/win32/Midl/custom) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -46,12 +46,12 @@ Bir değişken koyabilirsiniz bir değer.
 
 |||
 |-|-|
-|**İçin geçerlidir**|COM olmayan **arabirimi**, **sınıfı**, **enum**s, `idl_module` yöntemleri, arabirim üyeleri, arabirim parametrelerini **typedef**s, **birleşim**s, **yapı**s|
+|**Uygulama hedefi**|COM dışı **arabirim**, **sınıf**, **enum** `idl_module` s, Yöntemler, arabirim üyeleri, arabirim parametreleri, **typedef**, **birleşim**s, **Yapı**s|
 |**Tekrarlanabilir**|Evet|
-|**Gerekli öznitelikleri**|**coclass'ı** (sınıfı kullanıldığında)|
+|**Gerekli öznitelikler**|**coclass** (sınıfında kullanıldığında)|
 |**Geçersiz öznitelikler**|Yok.|
 
-Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
+Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

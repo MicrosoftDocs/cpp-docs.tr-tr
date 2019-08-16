@@ -1,21 +1,21 @@
 ---
-title: Lisanslı (C++ COM özniteliği)
+title: lisanslı (C++ com özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.licensed
 helpviewer_keywords:
 - licensed attribute
 ms.assetid: 09cf3b4a-d3f2-43e3-9180-d420333b23bf
-ms.openlocfilehash: 90fba74fb97ce49088145888c3b1925b4ee0829c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0c637f9e3f6d99b9f197474f49a1a9843744f38b
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62409336"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69514457"
 ---
 # <a name="licensed"></a>lisanslı
 
-Geçerli bir COM nesnesi lisanslanır ve kullanarak örneği oluşturulmalıdır gösterir `IClassFactory2`.
+Geçerli olduğu COM nesnesinin lisanslandığını ve kullanılarak `IClassFactory2`örneğinin oluşturulması gerektiğini gösterir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -25,7 +25,7 @@ Geçerli bir COM nesnesi lisanslanır ve kullanarak örneği oluşturulmalıdır
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Lisanslı** C++ özniteliği ile aynı işlevlere sahip [lisanslı](/windows/desktop/Midl/licensed) MIDL özniteliği.
+**Lisanslı** C++ öznitelik, [lisanslı](/windows/win32/Midl/licensed) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
 
 ## <a name="example"></a>Örnek
 
@@ -54,12 +54,12 @@ public:
 
 |||
 |-|-|
-|**İçin geçerlidir**|**sınıf**, **yapısı**|
+|**Uygulama hedefi**|**sınıf**, **Yapı**|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|`coclass`|
+|**Gerekli öznitelikler**|`coclass`|
 |**Geçersiz öznitelikler**|Yok.|
 
-Daha fazla bilgi için [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
+Daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

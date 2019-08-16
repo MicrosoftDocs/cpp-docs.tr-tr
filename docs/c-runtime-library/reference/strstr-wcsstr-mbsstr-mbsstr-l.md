@@ -44,19 +44,19 @@ helpviewer_keywords:
 - _mbsstr_l function
 - strstr function
 ms.assetid: 03d70c3f-2473-45cb-a5f8-b35beeb2748a
-ms.openlocfilehash: 42e02473e062c3af9524ed432aa163b7574342de
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 003e5fd88bdfaafff539c5c993a99cd9ecca0b82
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62223091"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69500815"
 ---
-# <a name="strstr-wcsstr-mbsstr-mbsstrl"></a>strstr, wcsstr, _mbsstr, _mbsstr_l
+# <a name="strstr-wcsstr-_mbsstr-_mbsstr_l"></a>strstr, wcsstr, _mbsstr, _mbsstr_l
 
-Bir arama dizesinin bir dizede ilk geçtiği yere bir işaretçi döndürür.
+Dizedeki arama dizesinin ilk oluşumuna yönelik bir işaretçi döndürür.
 
 > [!IMPORTANT]
-> `_mbsstr` ve `_mbsstr_l` Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> `_mbsstr`ve `_mbsstr_l` Windows çalışma zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -116,33 +116,33 @@ const unsigned char *_mbsstr_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*str*<br/>
-Aramak için null ile sonlandırılmış dize.
+*üstbilgisine*<br/>
+Aranacak null ile sonlandırılmış dize.
 
 *strSearch*<br/>
-Aramak için null ile sonlandırılmış dize.
+Aranacak null ile sonlandırılmış dize.
 
-*Yerel ayar*<br/>
+*ayarlar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-İlk geçtiği bir işaretçi döndürür *strSearch* içinde *str*, veya yoksa NULL *strSearch* görünmez *str*. Varsa *strSearch* işaret sıfır uzunluğunda bir dize için işlev döndürür *str*.
+*Str*Içinde *strSearch* 'ün ilk oluşumuna yönelik bir işaretçi veya *STRSEARCH* , *Str*içinde görünmezse null değerini döndürür. *StrSearch* , sıfır uzunluklu bir dizeye işaret ediyorsa, işlev *Str*döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-`strstr` İşlevi için ilk geçtiği bir işaretçi döndürür *strSearch* içinde *str*. Arama boş karakterlerin sonlandırılmasını içermez. `wcsstr` öğesinin geniş karakterli sürümüdür `strstr` ve `_mbsstr` çok baytlı karakter sürümüdür. Bağımsız değişkenler ve dönüş değeri `wcsstr` geniş karakterli dizelerdir; `_mbsstr` çok baytlı karakter dizeleridir. `_mbsstr` kendi parametrelerini doğrular. Varsa *str* veya *strSearch* NULL ise açıklandığı gibi geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md) . Yürütmenin devam etmesine izin verilirse `_mbsstr` ayarlar `errno` EINVAL ve 0 döndürür. `strstr` ve `wcsstr` kendi parametrelerini doğrulamazlar. Bu üç işlev aynı şekilde davranır.
+İşlev `strstr` , *Str*içinde *strSearch* 'ün ilk oluşumuna yönelik bir işaretçi döndürür. Arama, null karakter sonlandırılmasını içermez. `wcsstr`, öğesinin `strstr` geniş karakterli sürümüdür ve `_mbsstr` çok baytlı karakter sürümüdür. Bağımsız değişkenleri ve dönüş değeri `wcsstr` geniş karakterli dizelerdir; `_mbsstr` bunlar çok baytlı karakter dizeleridir. `_mbsstr`parametrelerini doğrular. *Str* veya *strSearch* null ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md) bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, `_mbsstr` EINVAL olarak ayarlar `errno` ve 0 döndürür. `strstr`ve `wcsstr` parametrelerini doğrulamaz. Bu üç işlev, aynı şekilde davranır.
 
 > [!IMPORTANT]
-> Bu işlevler, arabellek taşması sorunu kaynaklanan bir tehdit tabi olabilirsiniz. Arabellek taşması sorunları, bir unwarranted ayrıcalık yükselmesine neden olabilir rastgele kod yürütülmesine izin verebilir çünkü bir sistem saldırmak için kullanılabilir. Daha fazla bilgi için [arabellek taşmalarını](/windows/desktop/SecBP/avoiding-buffer-overruns).
+> Bu işlevler, arabellek taşması sorunundan bir tehdit oluşturabilir. Arabellek taşması sorunları, bir sisteme saldırmak için kullanılabilir ve bu, izin verilmeyen ayrıcalık yükselmesine neden olabilir. Daha fazla bilgi için bkz. [arabellek taşmalarını önleme](/windows/win32/SecBP/avoiding-buffer-overruns).
 
-C'de bu işlevler alır bir **const** ilk bağımsız değişken için bir işaretçi. C++'da, iki aşırı yüklemesi kullanılabilir. Bir işaretçi alan aşırı yüklemesini **const** bir işaretçi döndürür **const**; olmayan bir işaretçiye alan sürüm**const** olmayan bir işaretçi döndürür **const**. Her iki makro _CRT_CONST_CORRECT_OVERLOADS tanımlanan **const** ve olmayan-**const** bu işlevlerin sürümleri mevcuttur. Olmayan gerektiriyorsa**const** hem de davranışı C++ aşırı _const_return sembolünü.
+C 'de, bu işlevler ilk bağımsız değişken için bir **const** işaretçisi alır. ' C++De, iki aşırı yükleme mevcuttur. **Const** işaretçisi alan aşırı yükleme **const**için bir işaretçi döndürür; **const** olmayan bir işaretçi alan sürüm,**const**olmayan bir işaretçi döndürür. Bu işlevlerin hem **const** hem de**const** olmayan SÜRÜMLERI kullanılabilir değilse makro _CRT_CONST_CORRECT_OVERLOADS tanımlanmıştır. Her iki C++ aşırı yük için**const** olmayan DAVRANıŞLARA ihtiyacınız varsa, _CONST_RETURN sembolünü tanımlayın.
 
-Çıkış değeri LC_CTYPE yerel ayar kategori ayarından etkilenir; Daha fazla bilgi için [setlocale, _wsetlocale](setlocale-wsetlocale.md). Sahip olmayan bu işlevlerin sürümleri **_l** soneki geçerli yerel ayarı kullanır bu yerel ayara bağlı davranışı için; sahip sürümler **_l** sonekine yerine kullandıkları dışında geçirilen yerel ayar parametresini. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
+Çıkış değeri, LC_CTYPE yerel ayar kategorisi ayarından etkilenir; daha fazla bilgi için bkz. [setlocale, _wsetlocale](setlocale-wsetlocale.md). **_L** sonekine sahip olmayan bu işlevlerin sürümleri, yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır; **_l** sonekine sahip sürümler, bunun yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |`_tcsstr`|`strstr`|`_mbsstr`|`wcsstr`|
 |**yok**|**yok**|`_mbsstr_l`|**yok**|
@@ -151,9 +151,9 @@ C'de bu işlevler alır bir **const** ilk bağımsız değişken için bir işar
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|`strstr`|\<String.h >|
-|`wcsstr`|\<String.h > veya \<wchar.h >|
-|`_mbsstr`, `_mbsstr_l`|\<Mbstring.h >|
+|`strstr`|\<String. h >|
+|`wcsstr`|\<String. h > veya \<wchar. h >|
+|`_mbsstr`, `_mbsstr_l`|\<mbstring. h >|
 
 Uyumluluk hakkında daha fazla bilgi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -196,7 +196,7 @@ lazy found at position 36
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dize düzenlemesi](../../c-runtime-library/string-manipulation-crt.md)<br/>
+[Dize düzenleme](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [locale](../../c-runtime-library/locale.md)<br/>
 [Çok Baytlı Karakter Sıralarının Yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [strcspn, wcscspn, _mbscspn, _mbscspn_l](strcspn-wcscspn-mbscspn-mbscspn-l.md)<br/>
@@ -204,4 +204,4 @@ lazy found at position 36
 [strpbrk, wcspbrk, _mbspbrk, _mbspbrk_l](strpbrk-wcspbrk-mbspbrk-mbspbrk-l.md)<br/>
 [strrchr, wcsrchr, _mbsrchr, _mbsrchr_l](strrchr-wcsrchr-mbsrchr-mbsrchr-l.md)<br/>
 [strspn, wcsspn, _mbsspn, _mbsspn_l](strspn-wcsspn-mbsspn-mbsspn-l.md)<br/>
-[basic_string::Find](../../standard-library/basic-string-class.md#find)<br/>
+[basic_string:: Find](../../standard-library/basic-string-class.md#find)<br/>

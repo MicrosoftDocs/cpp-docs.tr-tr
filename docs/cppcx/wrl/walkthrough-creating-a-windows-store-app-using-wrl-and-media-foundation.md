@@ -1,67 +1,67 @@
 ---
-title: 'İzlenecek yol: WRL ve medya altyapısı kullanarak UWP uygulaması oluşturma'
+title: 'İzlenecek yol: WRL ve Medya Altyapısı kullanarak UWP uygulaması oluşturma'
 ms.date: 04/23/2019
 ms.topic: reference
 ms.assetid: 0336c550-fbeb-4dc4-aa9b-660f9fc45382
-ms.openlocfilehash: 1eee353bb13a3fa03fda42c3d0f7a4103dc5ad13
-ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
+ms.openlocfilehash: ac2c16fb94646af7445d41010253967be126636a
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66450148"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69498313"
 ---
-# <a name="walkthrough-creating-a-uwp-app-using-wrl-and-media-foundation"></a>İzlenecek yol: WRL ve medya altyapısı kullanarak UWP uygulaması oluşturma
+# <a name="walkthrough-creating-a-uwp-app-using-wrl-and-media-foundation"></a>İzlenecek yol: WRL ve Medya Altyapısı kullanarak UWP uygulaması oluşturma
 
 > [!NOTE]
-> Yeni UWP uygulamaları ve bileşenleri için kullanmanızı öneririz [ C++/WinRT](/windows/uwp/cpp-and-winrt-apis/), yeni standart C ++ 17 dil projeksiyon Windows Runtime API'ları için. C++/ WinRT Windows 10 SDK sürüm 1803 ileriye doğru kullanıma sunulmuştur. C++/ WinRT tamamen üstbilgi dosyalarında uygulanır ve modern Windows API ile birinci sınıf erişim sağlamak için tasarlanmıştır.
+> Yeni UWP uygulamaları ve bileşenleri için, Windows çalışma zamanı API 'leri için yeni bir Standart c++ 17 dil projeksiyonu olan [ C++/wınrt](/windows/uwp/cpp-and-winrt-apis/)kullanmanızı öneririz. C++/Wınrt, sürüm 1803 ' den Windows 10 SDK ' da kullanılabilir. C++/Wınrt tamamen başlık dosyalarında uygulanır ve modern Windows API 'sine ilk sınıf erişim sağlayacak şekilde tasarlanmıştır.
 
-Bu öğreticide, Windows çalışma zamanı kullanmak hakkında bilgi edineceksiniz C++ Şablon kitaplığı (kullanan bir evrensel Windows Platformu (UWP) uygulaması oluşturmak için WRL) [Microsoft Media Foundation](/windows/desktop/medfound/microsoft-media-foundation-sdk).
+Bu öğreticide, [Microsoft medya altyapısı](/windows/win32/medfound/microsoft-media-foundation-sdk)kullanan bir evrensel WINDOWS platformu (UWP) uygulaması C++ oluşturmak için Windows çalışma zamanı Şablon kitaplığı (WRL) kullanmayı öğreneceksiniz.
 
-Bu örnek, bir Web kamerası yakalanır görüntü gri tonlamalı etkisi uygulanacağı özel Media Foundation dönüşüm oluşturur. Uygulama, C++ özel dönüştürme ve yakalanan görüntülerin dönüştürmek için bileşeni kullanmak için C# tanımlamak için kullanır.
-
-> [!NOTE]
-> C# yerine, JavaScript, Visual Basic veya C++ özel dönüştürme bileşeni kullanmak için kullanabilirsiniz.
-
-Çoğu durumda, C + kullanabileceğiniz +/ CX Windows çalışma zamanı oluşturma. Ancak, bazen WRL kullanmak zorunda. Örneğin, Microsoft Media Foundation için bir ortam uzantısı oluşturduğunuzda hem Windows çalışma zamanı, hem de COM arabirimleri uygulayan bir bileşen oluşturmanız gerekir. Çünkü C++/CX yalnızca Windows çalışma zamanı nesneleri oluşturma hem Windows çalışma zamanı, hem de COM arabirimleri uygulamasını sağladığından medya uzantısı oluşturmak için WRL kullanmalısınız.
+Bu örnekte, bir Web kamerasından yakalanan görüntülere gri tonlamalı bir efekt uygulayan özel bir Medya Altyapısı dönüşümü oluşturulur. Uygulama, özel C++ dönüşümü tanımlamak ve C# yakalanan görüntüleri dönüştürmek üzere bileşeni kullanmak için kullanır.
 
 > [!NOTE]
-> Bu kod örneği uzun olmasına rağmen kullanışlı Media Foundation dönüşüm oluşturmak için gereken en düşük gösterir. Bunu kendi özel dönüştürme için bir başlangıç noktası olarak kullanabilirsiniz. Bu örnekte gelen uyarlanmış, [medya uzantılar örneği](https://code.msdn.microsoft.com/windowsapps/Media-extensions-sample-7b466096)uygulamak için hangi kullanan media uzantıları video efektleri video kod çözme ve medya akışlarının üreten düzeni işleyicileri oluşturun.
+> C#Yerine JavaScript, Visual Basic veya C++ özel dönüşüm bileşenini kullanmak için de kullanabilirsiniz.
+
+Çoğu durumda, Windows Çalışma Zamanı oluşturmak için/CX C++kullanabilirsiniz. Ancak, bazen WRL 'yi kullanmanız gerekir. Örneğin, Microsoft Medya Altyapısı için bir medya uzantısı oluşturduğunuzda hem COM hem de Windows Çalışma Zamanı arabirimlerini uygulayan bir bileşen oluşturmanız gerekir. /CX C++yalnızca Windows çalışma zamanı nesneler oluşturabileceğinden, bir medya uzantısı oluşturmak için, hem com hem de Windows çalışma zamanı arabirimlerinin uygulanmasını sağladığından WRL 'yi kullanmanız gerekir.
+
+> [!NOTE]
+> Bu kod örneği uzun olsa da, faydalı bir Medya Altyapısı dönüşümü oluşturmak için gereken en düşük değeri gösterir. Kendi özel dönüştürüyorsunuz için bir başlangıç noktası olarak kullanabilirsiniz. Bu örnek Medya Uzantıları [örneğinden](https://code.msdn.microsoft.com/windowsapps/Media-extensions-sample-7b466096)uyarlanmıştır, bu, video için etkileri uygulamak, video kodunu çözmek ve medya akışları üreten düzen işleyicileri oluşturmak için medya uzantıları 'nı kullanır.
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-- Visual Studio 2017 ve sonraki sürümlerinde, UWP destek isteğe bağlı bir bileşendir. Yüklemek için Windows Başlat Menüsü'nden Visual Studio Yükleyicisi'ni açın ve Visual Studio sürümünüze bulun. Seçin **Değiştir** ve emin olun **Evrensel Windows platformu geliştirme** kutucuk denetlenir. Altında **isteğe bağlı bileşenler** denetleyin  **C++ UWP (v141) için Araçlar** Visual Studio 2017 için veya  **C++ UWP (v142) için Araçlar** Visual Studio 2019 için. Ardından, kullanmak istediğiniz Windows SDK sürümünü denetleyin. 
+- Visual Studio 2017 ve üzeri sürümlerde UWP desteği isteğe bağlı bir bileşendir. Yüklemek için, Windows Başlat menüsünden Visual Studio Yükleyicisi açın ve Visual Studio sürümünüzü bulun. **Değiştir** ' i seçin ve ardından **Evrensel Windows platformu geliştirme** kutucuğunun işaretli olduğundan emin olun. **İsteğe bağlı bileşenler** altında, Visual Studio 2017 için  **C++ UWP (v141) için Araçlar** veya  **C++ Visual Studio 2019 için UWP (v142) araçları** ' na bakın. Ardından, kullanmak istediğiniz Windows SDK sürümünü denetleyin. 
 
-- Deneyimini [Windows çalışma zamanı](https://msdn.microsoft.com/library/windows/apps/br211377.aspx).
+- [Windows çalışma zamanı](/uwp/api/)deneyim.
 
-- Com ile deneyimi
+- COM ile deneyim.
 
 - Bir Web kamerası.
 
 ## <a name="key-points"></a>Önemli noktalar
 
-- Özel bir Media Foundation bileşeni oluşturmak için bir arabirim tanımlayın, bu arabirimi uygulayın ve ardından diğer bileşenlerden etkinleştirilebilir yapmak için bir Microsoft arabirim tanımı dili (MIDL) tanım dosyasını kullanın.
+- Özel bir Medya Altyapısı bileşeni oluşturmak için bir arabirim tanımlamak için bir Microsoft Arabirim Tanımlama Dili (MıDL) tanım dosyası kullanın, bu arabirimi uygulayın ve ardından diğer bileşenlerden etkinleştirilebilir yapın.
 
-- `namespace` Ve `runtimeclass` öznitelikleri ve `NTDDI_WIN8` [sürüm](/windows/desktop/Midl/version) öznitelik değeri olan önemli bölümleri WRL kullanan Media Foundation bileşen MIDL tanımı.
+- `namespace` Ve öznitelikleri`runtimeclass` ve Sürüm`NTDDI_WIN8`özniteliği değeri, WRL kullanan bir medya Altyapısı bileşeni için MIDL tanımının önemli parçalarından oluşur. [](/windows/win32/Midl/version)
 
-- [Microsoft::WRL::RuntimeClass](runtimeclass-class.md) özel Media Foundation bileşeni için temel sınıftır. [Microsoft::WRL::RuntimeClassType::WinRtClassicComMix](runtimeclasstype-enumeration.md) şablon bağımsız değişken sağlanan enum değeri, bir Windows çalışma zamanı sınıf hem klasik COM çalışma zamanı sınıf olarak kullanılacak olan sınıfını işaretler.
+- [Microsoft:: WRL:: RuntimeClass](runtimeclass-class.md) , özel medya Altyapısı bileşeni için temel sınıftır. Şablon bağımsız değişkeni olarak sunulan [Microsoft:: WRL:: RuntimeClassType:: WinRtClassicComMix](runtimeclasstype-enumeration.md) Enum değeri, hem Windows çalışma zamanı sınıfı hem de klasik com çalışma zamanı sınıfı olarak kullanılacak sınıfı işaretler.
 
-- [Inspectableclass](inspectableclass-macro.md) makrosu başvuru sayımı gibi temel COM işlevselliğini uygular ve `QueryInterface` yöntemi ve çalışma zamanı sınıf adı ve güven düzeyini ayarlar.
+- [InspectableClass](inspectableclass-macro.md) makrosu, başvuru sayma ve `QueryInterface` yöntemi gibi temel com işlevlerini uygular ve çalışma zamanı sınıf adını ve güven düzeyini ayarlar.
 
-- Kullanma Microsoft::WRL::[modül sınıfı](module-class.md) DLL giriş noktası işlevleri gibi uygulamak [DllGetActivationFactory](https://msdn.microsoft.com/library/br205771.aspx), [DllCanUnloadNow](/windows/desktop/api/combaseapi/nf-combaseapi-dllcanunloadnow), ve [ DllGetClassObject](/windows/desktop/api/combaseapi/nf-combaseapi-dllgetclassobject).
+- [DllGetActivationFactory](/windows/win32/winrt/functions), [DllCanUnloadNow](/windows/win32/api/combaseapi/nf-combaseapi-dllcanunloadnow)ve [DllGetClassObject](/windows/win32/api/combaseapi/nf-combaseapi-dllgetclassobject)gibi DLL giriş noktası işlevleri uygulamak için Microsoft:: WRL::[module sınıfını](module-class.md) kullanın.
 
-- Bileşeniniz DLL için runtimeobject.lib bağlayın. Ayrıca belirtin [/WINMD](../../cppcx/compiler-and-linker-options-c-cx.md) bağlayıcı satırında Windows meta verileri oluşturun.
+- Component DLL 'nizi Runtimeobject. lib öğesine bağlayın. Windows meta verileri oluşturmak için bağlayıcı satırında [/winmd](../../cppcx/compiler-and-linker-options-c-cx.md) de belirtin.
 
-- WRL bileşenlerinin UWP uygulamaları için erişilebilir hale getirmek için proje başvuruları kullanın.
+- WRL bileşenlerini UWP uygulamaları için erişilebilir hale getirmek için proje başvurularını kullanın.
 
-### <a name="to-use-the-wrl-to-create-the-media-foundation-grayscale-transform-component"></a>WRL Media Foundation gri tonlamalı oluşturmak için kullanılacak bileşen dönüştürme
+### <a name="to-use-the-wrl-to-create-the-media-foundation-grayscale-transform-component"></a>Medya Altyapısı gri tonlamalı dönüştürme bileşeni oluşturmak için WRL 'yi kullanmak için
 
-1. Visual Studio'da oluşturma bir **boş çözüm** proje. Örneğin, proje adını *MediaCapture*.
+1. Visual Studio 'da **boş bir çözüm** projesi oluşturun. Projeyi, örneğin, *MediaCapture*gibi adlandırın.
 
-1. Ekleme bir **DLL (Evrensel Windows)** çözüme bir proje. Örneğin, proje adını *GrayscaleTransform*.
+1. Çözüme bir **dll (Evrensel Windows)** projesi ekleyin. Projeyi, örneğin, *Griscaletransform*gibi adlandırın.
 
-1. Ekleme bir **Midl dosyası (.idl)** projeye dosya. Örneğin, dosya adını *GrayscaleTransform.idl*.
+1. Projeye bir **MIDL dosya (. IDL)** dosyası ekleyin. Dosyayı adlandırın, örneğin, *Griscaletransform. IDL*.
 
-1. GrayscaleTransform.idl için şu kodu ekleyin:
+1. Bu kodu Griscaletransform. IDL öğesine ekleyin:
 
    [!code-cpp[wrl-media-capture#1](../codesnippet/CPP/walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation_1.idl)]
 
@@ -69,17 +69,17 @@ Bu örnek, bir Web kamerası yakalanır görüntü gri tonlamalı etkisi uygulan
 
    [!code-cpp[wrl-media-capture#2](../codesnippet/CPP/walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation_2.h)]
 
-1. Projeye yeni bir üst bilgi dosyası ekleyin, adlandırın `BufferLock.h`ve ardından içerikleri şu kodla değiştirin:
+1. Projeye yeni bir üst bilgi dosyası ekleyin, bu dosyayı adlandırın `BufferLock.h`ve ardından içeriği şu kodla değiştirin:
 
    [!code-cpp[wrl-media-capture#3](../codesnippet/CPP/walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation_3.h)]
 
-1. `GrayscaleTransform.h` Bu örnekte kullanılmaz. İsterseniz projeden kaldırın.
+1. `GrayscaleTransform.h`Bu örnekte kullanılmaz. İsterseniz bunu projeden kaldırabilirsiniz.
 
 1. İçeriğini değiştirmek için aşağıdaki kodu kullanın `GrayscaleTransform.cpp`:
 
    [!code-cpp[wrl-media-capture#4](../codesnippet/CPP/walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation_4.cpp)]
 
-1. Projeye yeni bir modül tanım dosyası ekleyin, adlandırın `GrayscaleTransform.def`ve ardından bu kodu ekleyin:
+1. Projeye yeni bir modül tanımı dosyası ekleyin, bu dosyayı adlandırın `GrayscaleTransform.def`ve ardından şu kodu ekleyin:
 
    ```
    EXPORTS
@@ -92,23 +92,23 @@ Bu örnek, bir Web kamerası yakalanır görüntü gri tonlamalı etkisi uygulan
 
    [!code-cpp[wrl-media-capture#6](../codesnippet/CPP/walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation_6.cpp)]
 
-1. Projenin **özellik sayfaları** iletişim kutusunda, aşağıdakileri ayarlayın **bağlayıcı** özellikleri.
+1. Projenin **Özellik sayfaları** iletişim kutusunda, aşağıdaki **bağlayıcı** özelliklerini ayarlayın.
 
-   1. Altında **giriş**, için **modül tanım dosyası**, belirtin `GrayScaleTransform.def`.
+   1. **Giriş**altında, **modül tanım dosyası**için, belirtin `GrayScaleTransform.def`.
 
-   1. Ayrıca altında **giriş**, ekleme `runtimeobject.lib`, `mfuuid.lib`, ve `mfplat.lib` için **ek bağımlılıklar** özelliği.
+   1. Ayrıca, **giriş**altında, `runtimeobject.lib`ve `mfuuid.lib` `mfplat.lib` **ek bağımlılıklar** özelliği ekleyin.
 
-   1. Altında **Windows meta verileri**ayarlayın **Windows meta verileri oluşturma** için **Evet (/ WINMD)** .
+   1. **Windows meta verileri**altında, **Windows meta verilerini oluştur** seçeneğini **Evet (/WinMD)** olarak ayarlayın.
 
-### <a name="to-use-the-wrl-the-custom-media-foundation-component-from-a-c-app"></a>Bir C# uygulamasından özel Media Foundation bileşen WRL kullanmak için
+### <a name="to-use-the-wrl-the-custom-media-foundation-component-from-a-c-app"></a>C# Uygulamadan özel medya altyapısı bileşenini kullanmak için
 
-1. Yeni bir **C# boş uygulama (Evrensel Windows)** için proje `MediaCapture` çözüm. Örneğin, proje adını *MediaCapture*.
+1. `MediaCapture` Çözüme yeni  **C# bir boş uygulama (Evrensel Windows)** projesi ekleyin. Projeyi, örneğin, *MediaCapture*gibi adlandırın.
 
-1. İçinde **MediaCapture** projesi, bir başvuru ekleyin `GrayscaleTransform` proje. Bilgi edinmek için bkz. nasıl [nasıl yapılır: Başvurular ekleme veya kaldırma başvuru Yöneticisi'ni kullanarak](/visualstudio/ide/how-to-add-or-remove-references-by-using-the-reference-manager).
+1. **MediaCapture** projesinde `GrayscaleTransform` projeye bir başvuru ekleyin. Nasıl yapılacağını öğrenmek için bkz [. nasıl yapılır: Başvuru Yöneticisi 'Ni](/visualstudio/ide/how-to-add-or-remove-references-by-using-the-reference-manager)kullanarak başvuruları ekleyin veya kaldırın.
 
-1. İçinde `Package.appxmanifest`, **özellikleri** sekmesinde **mikrofon** ve **Web kamerası**. Her iki özelliği, Web kamerası gelen fotoğraf yakalamak için gereklidir.
+1. ' `Package.appxmanifest`De, **yetenekler** sekmesinde **mikrofon** ve **Web Kamerası**' ı seçin. Web kamerasından fotoğraf yakalamak için her iki özellik de gereklidir.
 
-1. İçinde `MainPage.xaml`, kök bu kodu ekleyin [kılavuz](https://msdn.microsoft.com/library/windows/apps/xaml/windows.ui.xaml.controls.grid.aspx) öğesi:
+1. İçinde `MainPage.xaml`, bu kodu kök [kılavuz](/uwp/api/Windows.UI.Xaml.Controls.Grid) öğesine ekleyin:
 
    [!code-xml[wrl-media-capture#7](../codesnippet/Xaml/walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation_7.xaml)]
 
@@ -116,16 +116,16 @@ Bu örnek, bir Web kamerası yakalanır görüntü gri tonlamalı etkisi uygulan
 
    [!code-cs[wrl-media-capture#8](../codesnippet/CSharp/walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation_8.cs)]
 
-Aşağıdaki çizimde gösterildiği `MediaCapture app`.
+Aşağıdaki çizimde gösterilmektedir `MediaCapture app`.
 
-![Fotoğraf yakalama MediaCapture uygulama](../media/wrl_media_capture.png "WRL_Media_Capture")
+![Bir fotoğrafı yakalayan MediaCapture uygulaması](../media/wrl_media_capture.png "WRL_Media_Capture")
 
 ## <a name="next-steps"></a>Sonraki Adımlar
 
-Örnekte, varsayılan Web kamerası bir gelen fotoğrafları aynı anda yakalama gösterilmektedir. [Medya uzantılar örneği](https://code.msdn.microsoft.com/windowsapps/Media-extensions-sample-7b466096) daha fazlasını yapar. Web kamerası cihazları listeleme ve yerel düzeni işleyicilerle iş yapmayı gösteren ve bireysel fotoğraf ve video akışları çalışma ek medya efektleri gösterir.
+Örnek, tek seferde varsayılan Web kamerasından fotoğrafların nasıl yakalanacağını göstermektedir. [Medya Uzantıları örneği](https://code.msdn.microsoft.com/windowsapps/Media-extensions-sample-7b466096) daha fazlasını yapar. Web Kamerası cihazlarının nasıl numaralandırılacağını ve yerel düzen işleyicileriyle nasıl çalışabileceğinizi ve hem tek tek fotoğraflarda hem de video akışında çalışan ek medya efektlerini gösterir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Windows Çalışma Zamanı C++ Şablon Kitaplığı (WRL)](windows-runtime-cpp-template-library-wrl.md)<br/>
-[Microsoft Media Foundation](/windows/desktop/medfound/microsoft-media-foundation-sdk)<br/>
-[Medya uzantılar örneği](https://code.msdn.microsoft.com/windowsapps/Media-extensions-sample-7b466096)
+[Microsoft Medya Altyapısı](/windows/win32/medfound/microsoft-media-foundation-sdk)<br/>
+[Medya Uzantıları örneği](https://code.msdn.microsoft.com/windowsapps/Media-extensions-sample-7b466096)

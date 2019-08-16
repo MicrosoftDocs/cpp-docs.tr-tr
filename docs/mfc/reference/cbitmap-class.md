@@ -34,12 +34,12 @@ helpviewer_keywords:
 - CBitmap [MFC], SetBitmapBits
 - CBitmap [MFC], SetBitmapDimension
 ms.assetid: 3980616a-c59d-495a-86e6-62bd3889c84c
-ms.openlocfilehash: 3cd194d0b6303c6d337d7157a521c825f77fc312
-ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
+ms.openlocfilehash: 7161a4cf4484b6cc9e76e6955de558ca6e9121ca
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68916231"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69507448"
 ---
 # <a name="cbitmap-class"></a>CBitmap sınıfı
 
@@ -155,7 +155,7 @@ Bir ekran cihazı için bir bit eşlem doğrudan seçilemese de, CDC:: [NesneSe�
 
 İşlev tarafından oluşturulan `CBitmap` nesneyle bitirdiğinizde, önce cihaz `CBitmap` bağlamından bit eşlemini seçin, sonra nesneyi silin. `CreateBitmap`
 
-Daha fazla bilgi için, `bmBits` `BITMAP` yapıdaki alanın açıklamasına bakın. [Bit eşlem](/windows/desktop/api/wingdi/ns-wingdi-tagbitmap) yapısı, [CBitmap:: createbitmapdolaylı](#createbitmapindirect) üye işlevi altında açıklanmaktadır.
+Daha fazla bilgi için, `bmBits` `BITMAP` yapıdaki alanın açıklamasına bakın. [Bit eşlem](/windows/win32/api/wingdi/ns-wingdi-bitmap) yapısı, [CBitmap:: createbitmapdolaylı](#createbitmapindirect) üye işlevi altında açıklanmaktadır.
 
 ##  <a name="createbitmapindirect"></a>CBitmap:: Createbitmapdolaylı
 
@@ -168,7 +168,7 @@ BOOL CreateBitmapIndirect(LPBITMAP lpBitmap);
 ### <a name="parameters"></a>Parametreler
 
 *Lpbit eşlem*<br/>
-Bit eşlem hakkında bilgi içeren bir [bit eşlem](/windows/desktop/api/wingdi/ns-wingdi-tagbitmap) yapısına işaret eder.
+Bit eşlem hakkında bilgi içeren bir [bit eşlem](/windows/win32/api/wingdi/ns-wingdi-bitmap) yapısına işaret eder.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -178,7 +178,7 @@ Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 Bir ekran cihazı için bir bit eşlem doğrudan seçilemese de, CDC:: [NesneSeç](../../mfc/reference/cdc-class.md#selectobject) kullanarak bir bellek cihaz bağlamı için geçerli bit eşlem olarak seçilebilir ve [CDC:: BitBlt](../../mfc/reference/cdc-class.md#bitblt) veya [CDC:: ile uyumlu herhangi bir cihaz bağlamına kopyalanabilir. Irblt](../../mfc/reference/cdc-class.md#stretchblt) işlevi. ( [CDC::P atBlt](../../mfc/reference/cdc-class.md#patblt) işlevi, geçerli fırça için bit eşlemi doğrudan görüntüleme cihazı bağlamına kopyalayabilir.)
 
-*Lpbıx* parametresi tarafından işaret edilen `GetObject` Yapıişlevikullanılarakdoldurulduysa,biteşleminbitleribelirtilmezvebiteşlembaşlatılmamışolur.`BITMAP` Bir uygulama, bit eşlemi başlatmak için, `CGdiObject::GetObject` ilk parametresi tarafından tanımlanan bit eşlemden tarafından `CreateBitmapIndirect`oluşturulan bit eşlemden bitleri kopyalamak üzere [CDC:: BitBlt](../../mfc/reference/cdc-class.md#bitblt) veya [SetDIBits](/windows/desktop/api/wingdi/nf-wingdi-setdibits) gibi bir işlevi kullanabilir.
+*Lpbıx* parametresi tarafından işaret edilen `GetObject` Yapıişlevikullanılarakdoldurulduysa,biteşleminbitleribelirtilmezvebiteşlembaşlatılmamışolur.`BITMAP` Bir uygulama, bit eşlemi başlatmak için, `CGdiObject::GetObject` ilk parametresi tarafından tanımlanan bit eşlemden tarafından `CreateBitmapIndirect`oluşturulan bit eşlemden bitleri kopyalamak üzere [CDC:: BitBlt](../../mfc/reference/cdc-class.md#bitblt) veya [SetDIBits](/windows/win32/api/wingdi/nf-wingdi-setdibits) gibi bir işlevi kullanabilir.
 
 İşlev ile `CBitmap` `CreateBitmapIndirect` oluşturulan nesneyle bitirdiğinizde, önce cihaz `CBitmap` bağlamından bit eşlemini seçin, sonra nesneyi silin.
 
@@ -286,7 +286,7 @@ int GetBitmap(BITMAP* pBitMap);
 ### <a name="parameters"></a>Parametreler
 
 *Pbımap*<br/>
-Görüntü özelliklerini alacak bir [bit eşlem](/windows/desktop/api/wingdi/ns-wingdi-tagbitmap) yapısına yönelik işaretçi. Bu parametre NULL olmamalıdır.
+Görüntü özelliklerini alacak bir [bit eşlem](/windows/win32/api/wingdi/ns-wingdi-bitmap) yapısına yönelik işaretçi. Bu parametre NULL olmamalıdır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -408,7 +408,7 @@ Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 Varsayılan olarak, `LoadMappedBitmap` düğme glifleri içinde yaygın olarak kullanılan renkleri eşler.
 
-Eşlenmiş bir bit eşlem oluşturma hakkında daha fazla bilgi için, Windows SDK Windows işlevi [CreateMappedBitmap](https://go.microsoft.com/fwlink/p/?linkid=230562) ve [ColorMap](/windows/desktop/api/commctrl/ns-commctrl-colormap) yapısına bakın.
+Eşlenmiş bir bit eşlem oluşturma hakkında daha fazla bilgi için, Windows SDK Windows işlevi [CreateMappedBitmap](https://go.microsoft.com/fwlink/p/?linkid=230562) ve [ColorMap](/windows/win32/api/commctrl/ns-commctrl-colormap) yapısına bakın.
 
 ##  <a name="loadoembitmap"></a>CBitmap:: LoadOEMBitmap
 
@@ -469,7 +469,7 @@ Başarılı olursa, `CBitmap` nesne tarafından temsil edilen Windows GDI nesnes
 
 Bu işleç, bir `HBITMAP` nesnenin doğrudan kullanımını destekleyen bir atama işleçtir.
 
-Grafik nesnelerini kullanma hakkında daha fazla bilgi için, Windows SDK [grafik nesneleri](/windows/desktop/gdi/graphic-objects) bölümüne bakın.
+Grafik nesnelerini kullanma hakkında daha fazla bilgi için, Windows SDK [grafik nesneleri](/windows/win32/gdi/graphic-objects) bölümüne bakın.
 
 ##  <a name="setbitmapbits"></a>CBitmap:: Setbitmapbitleri
 

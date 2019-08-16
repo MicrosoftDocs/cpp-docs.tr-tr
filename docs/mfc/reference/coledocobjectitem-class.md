@@ -24,12 +24,12 @@ helpviewer_keywords:
 - COleDocObjectItem [MFC], QueryCommand
 - COleDocObjectItem [MFC], Release
 ms.assetid: d150d306-8fd3-4831-b06d-afbe71d8fc9b
-ms.openlocfilehash: 454be491fe5875b1b1ac9b2b85fdebe2f1663ebc
-ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
+ms.openlocfilehash: c6e00bf42cf20b46c949c218efe1820cc7ce0f9b
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68916971"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69504016"
 ---
 # <a name="coledocobjectitem-class"></a>Cotadocobjectıtem sınıfı
 
@@ -142,7 +142,7 @@ HRESULT ExecCommand(
 Yürütülecek komutun tanımlayıcısı. *PguidCmdGroup*tarafından tanımlanan grupta olmalıdır.
 
 *nCmdExecOpt*<br/>
-Komut yürütme seçeneklerini belirtir. Varsayılan olarak, kullanıcıya sormadan komutu yürütmek üzere ayarlanır. Değerlerin listesi için bkz. [OLECMDEXECOPT](/windows/desktop/api/docobj/ne-docobj-olecmdexecopt) .
+Komut yürütme seçeneklerini belirtir. Varsayılan olarak, kullanıcıya sormadan komutu yürütmek üzere ayarlanır. Değerlerin listesi için bkz. [OLECMDEXECOPT](/windows/win32/api/docobj/ne-docobj-olecmdexecopt) .
 
 *pguidCmdGroup*<br/>
 Komut grubunun benzersiz tanıtıcısı. Varsayılan olarak, Standart grubunu belirten NULL değeri. *NCmdID* içinde geçirilen komut gruba ait olmalıdır.
@@ -176,7 +176,7 @@ LPOLEDOCUMENTVIEW GetActiveView() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Şu anda etkin olan görünümün [IOleDocumentView](/windows/desktop/api/docobj/nn-docobj-ioledocumentview) arabirimine yönelik bir işaretçi. Geçerli görünüm yoksa, NULL döndürür.
+Şu anda etkin olan görünümün [IOleDocumentView](/windows/win32/api/docobj/nn-docobj-ioledocumentview) arabirimine yönelik bir işaretçi. Geçerli görünüm yoksa, NULL döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -270,21 +270,21 @@ HRESULT QueryCommand(
 sorgulanırken komutun tanımlayıcısı.
 
 *pdwStatus*<br/>
-Sorgunun sonucu olarak döndürülen bayrakların işaretçisi. Olası değerler listesi için bkz. [OLECMDF](/windows/desktop/api/docobj/ne-docobj-olecmdf).
+Sorgunun sonucu olarak döndürülen bayrakların işaretçisi. Olası değerler listesi için bkz. [OLECMDF](/windows/win32/api/docobj/ne-docobj-olecmdf).
 
 *pCmdText*<br/>
-Tek bir komutun adının ve durum bilgilerinin döndürüleceği bir [OLECMDTEXT](/windows/desktop/api/docobj/ns-docobj-olecmdtext) yapısına yönelik işaretçi. Çağıranın bu bilgiye ihtiyacı olmadığını belirtmek için NULL olabilir.
+Tek bir komutun adının ve durum bilgilerinin döndürüleceği bir [OLECMDTEXT](/windows/win32/api/docobj/ns-docobj-olecmdtext) yapısına yönelik işaretçi. Çağıranın bu bilgiye ihtiyacı olmadığını belirtmek için NULL olabilir.
 
 *pguidCmdGroup*<br/>
 Komut grubunun benzersiz tanımlayıcısı; Standart grubu belirtmek için NULL olabilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dönüş değerlerinin tüm listesi için, bkz. Windows SDK [IOleCommandTarget:: QueryStatus](/windows/desktop/api/docobj/nf-docobj-iolecommandtarget-querystatus) .
+Dönüş değerlerinin tüm listesi için, bkz. Windows SDK [IOleCommandTarget:: QueryStatus](/windows/win32/api/docobj/nf-docobj-iolecommandtarget-querystatus) .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, Windows SDK açıklandığı gibi [IOleCommandTarget:: QueryStatus](/windows/desktop/api/docobj/nf-docobj-iolecommandtarget-querystatus) yönteminin işlevselliğine öykünür.
+Bu üye işlevi, Windows SDK açıklandığı gibi [IOleCommandTarget:: QueryStatus](/windows/win32/api/docobj/nf-docobj-iolecommandtarget-querystatus) yönteminin işlevselliğine öykünür.
 
 ##  <a name="release"></a>Cotadocobjectıtem:: Release
 

@@ -1,21 +1,21 @@
 ---
-title: importlib (C++ COM özniteliği)
+title: ımportlib (C++ com özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.importlib
 helpviewer_keywords:
 - importlib attribute
 ms.assetid: f129e459-b8d3-4aca-a0bc-ee53e18b62ed
-ms.openlocfilehash: 29c7df8fbedbd107a9bb0b05466addc4672fc555
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 92cf335e5c4754595f2c7af2e1aef30d309d2f5f
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62409401"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69514614"
 ---
 # <a name="importlib"></a>importlib
 
-Zaten başka bir tür kitaplığına oluşturulan tür kitaplığı için kullanılabilir derlenmiştir türleri sağlar.
+Oluşturulan tür kitaplığı için kullanılabilir başka bir tür kitaplığına derlenmiş olan türleri oluşturur.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -26,15 +26,15 @@ Zaten başka bir tür kitaplığına oluşturulan tür kitaplığı için kullan
 ### <a name="parameters"></a>Parametreler
 
 *tlb_file*<br/>
-Geçerli proje türü kitaplığına içeri aktarılan istediğiniz tırnak içinde .tlb dosyasının adı.
+Geçerli projenin tür kitaplığına içeri aktarılmasını istediğiniz. tlb dosyasının tırnak içinde adı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**İmportlib** C++ öznitelik neden olan bir `importlib` oluşturulan .idl dosyasının kitaplığı bloğunda yerleştirilecek deyimi. **İmportlib** özniteliği ile aynı işlevlere sahip [importlib](/windows/desktop/Midl/importlib) MIDL özniteliği.
+**Importlib** C++ özniteliği, bir `importlib` deyimin oluşturulan. IDL dosyasının Kitaplık bloğuna yerleştirilmesine neden olur. **Importlib** özniteliği, [ımportlib](/windows/win32/Midl/importlib) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği nasıl kullanılacağını gösterir **importlib**:
+Aşağıdaki kod, **ımportlib**kullanımına ilişkin bir örnek gösterir:
 
 ```cpp
 // cpp_attr_ref_importlib.cpp
@@ -49,12 +49,12 @@ Aşağıdaki kod örneği nasıl kullanılacağını gösterir **importlib**:
 
 |||
 |-|-|
-|**İçin geçerlidir**|Her yerde|
+|**Uygulama hedefi**|Yerdeki|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|Yok.|
+|**Gerekli öznitelikler**|Yok.|
 |**Geçersiz öznitelikler**|Yok.|
 
-Daha fazla bilgi için [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
+Daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

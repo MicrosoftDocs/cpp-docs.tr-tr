@@ -9,27 +9,27 @@ helpviewer_keywords:
 - spin button control
 - CSpinButtonCtrl class [MFC], using
 ms.assetid: a91db36b-e11e-42ef-8e89-51915cc486d2
-ms.openlocfilehash: 6bb663b6ff9b9b039bd774f6e607c7acdb1c4b11
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a2a12672f0e70248e135bdd177b76589b6197c75
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62411727"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69513472"
 ---
 # <a name="using-cspinbuttonctrl"></a>CSpinButtonCtrl Kullanma
 
-*Değer değiştirme düğmesi* denetimi (olarak da bilinen bir *yukarı-aşağı* denetimi), bir kullanıcının bir değer ayarlamak için tıklayabileceği oklar çifti sağlar. Bu değer olarak da bilinen *geçerli konumu*. Konumu değer değiştirme düğmesi aralığı içinde kalır. Kullanıcı Yukarı Oka tıkladığında en doğru konuma taşır; ve kullanıcı aşağı oka tıkladığında, en doğru konuma taşır.
+*Döndürme düğmesi* denetimi ( *Yukarı açılan* denetim olarak da bilinir), kullanıcının bir değeri ayarlamak için tıklabileceği bir çift ok sağlar. Bu değer *geçerli konum*olarak bilinir. Konum, döndürme düğmesinin aralığı içinde kalır. Kullanıcı yukarı oka tıkladığında, konum en büyük değere doğru hareket eder; Kullanıcı aşağı oka tıkladığında, konum en küçük değere doğru hareket eder.
 
-Değer değiştirme düğmesi denetimi, MFC tarafından temsil edilen [CSpinButtonCtrl](../mfc/reference/cspinbuttonctrl-class.md) sınıfı.
+Döndürme düğmesi denetimi, MFC 'de [CSpinButtonCtrl](../mfc/reference/cspinbuttonctrl-class.md) sınıfı tarafından temsil edilir.
 
 > [!NOTE]
->  Varsayılan olarak, değer değiştirme düğmesi aralığının üst sınırı sıfır (0) olarak ayarlayın ve en az 100'e ayarlayın vardır. Maksimum değer minimum değerden daha az olduğundan, konumu yukarı oka tıklayarak azaltır ve aşağı oka tıklayarak artırır. Kullanım [CSpinButtonCtrl::SetRange](../mfc/reference/cspinbuttonctrl-class.md#setrange) bu değerleri ayarlamak için.
+>  Varsayılan olarak, döndürme düğmesine yönelik Aralık sıfıra (0), minimum ise 100 olarak ayarlanmıştır. En büyük değer en küçük değerden daha az olduğu için, yukarı oka tıklamak konumu düşürür ve aşağı oka tıklamak onu arttırır. Bu değerleri ayarlamak için [CSpinButtonCtrl:: SetRange](../mfc/reference/cspinbuttonctrl-class.md#setrange) kullanın.
 
-Genellikle, geçerli konum bir yardımcı denetiminde görüntülenir. Özel denetim olarak bilinir *buddy penceresindeki*. Değer değiştirme düğmesi denetimi bir çizim için bkz [yukarı-aşağı denetimleri hakkında](/windows/desktop/Controls/up-down-controls) Windows SDK.
+Genellikle, geçerli konum bir yardımcı denetimde görüntülenir. Yardımcı denetim *arkadaş penceresi*olarak bilinir. Bir döndürme düğmesi denetiminin bir çizimi için bkz. Windows SDK [Yukarı açılan denetimler hakkında](/windows/win32/Controls/up-down-controls) .
 
-Döndürme denetimi ve bir düzenleme denetiminin buddy penceresindeki Visual Studio'da oluşturmak için önce bir düzenleme denetimi iletişim kutusunu veya penceresine sürükleyin ve ardından bir döndürme denetimi sürükleyin. Döndürme denetimi seçin ve ayarlayın, **otomatik Buddy** ve **ayarlamak arkadaş tamsayı** özelliklerine **True**. Ayrıca **hizalama** özelliği; **Sağa Hizala** en sık görülen bir durumdur. Doğrudan düzenleme denetiminin sekme sırasının kendisinden çünkü bu ayarlarla düzenleme denetiminin buddy penceresindeki gibi ayarlanır. Düzenleme denetimi tamsayı görüntüler ve döndürme denetimi düzenleme denetiminin sağ tarafında bulunan katıştırılır. İsteğe bağlı olarak, döndürme denetimi geçerli aralığı kullanarak ayarlayabileceğiniz [CSpinButtonCtrl::SetRange](../mfc/reference/cspinbuttonctrl-class.md#setrange) yöntemi. Hiçbir olay işleyicileri, çünkü onlar doğrudan veri değişimi döndürme denetimi ve buddy penceresindeki arasında iletişim kurmak için gereklidir. Döndürme denetimi başka bir amaç için kullanıyorsanız, örneğin, windows veya iletişim kutularında, bir dizi sayfasında UDN_DELTAPOS ileti işleyicisi eklersiniz ve vardır, özel eylem gerçekleştirme.
+Bir döndürme denetimi ve düzenleme denetimi arkadaş penceresi oluşturmak için, Visual Studio 'da, önce bir düzenleme denetimini iletişim kutusu veya pencereye sürükleyin ve sonra bir döndürme denetimini sürükleyin. Döndürme denetimini seçin ve kendi **Otomatik arkadaşları** ' nı ayarlayın ve **arkadaş tamsayı** özelliklerini **doğru**olarak ayarlayın. **Hizalama** özelliğini de ayarlayın; **Sağa Hizala** en normaldir. Bu ayarlarla düzenleme denetimi, doğrudan sekme düzeninde düzenleme denetiminden önce olduğu için arkadaş pencere olarak ayarlanır. Düzenleme denetimi tamsayılar görüntüler ve döndürme denetimi, düzenleme denetiminin sağ tarafına katıştırılır. İsteğe bağlı olarak, [CSpinButtonCtrl:: SetRange](../mfc/reference/cspinbuttonctrl-class.md#setrange) yöntemini kullanarak, döndürme denetiminin geçerli aralığını ayarlayabilirsiniz. Verileri doğrudan değiş tokuş ettiğinden, döndürme denetimi ve arkadaş penceresi arasında iletişim kurmak için herhangi bir olay işleyicisi gerekmez. Örneğin, bir dizi Windows veya iletişim kutusu aracılığıyla sayfa için bir döndürme denetimi kullanırsanız, UDN_DELTAPOS iletisi için bir işleyici ekleyin ve özel eyleminizi orada gerçekleştirin.
 
-## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz
+## <a name="what-do-you-want-to-know-more-about"></a>Hakkında daha fazla bilgi edinmek istiyorsunuz
 
 - [Döndür Düğmesi Stilleri](../mfc/spin-button-styles.md)
 

@@ -55,16 +55,16 @@ helpviewer_keywords:
 - AFX_GLOBAL_DATA structure [MFC]
 - AFX_GLOBAL_DATA constructor
 ms.assetid: c7abf2fb-ad5e-4336-a01d-260c29ed53a2
-ms.openlocfilehash: 0fd8143564beecccd8943f3ceba531e8697151d1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: dda3056cbed18ef93e09b52cd9d0a6b00e1db177
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62212928"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69507749"
 ---
-# <a name="afxglobaldata-structure"></a>AFX_GLOBAL_DATA Yapısı
+# <a name="afx_global_data-structure"></a>AFX_GLOBAL_DATA Yapısı
 
-`AFX_GLOBAL_DATA` Yapısı, alanları ve framework yönetmek veya uygulamanızın davranışını ve görünümünü özelleştirmek için kullanılan yöntemleri içerir.
+`AFX_GLOBAL_DATA` Yapı, Framework 'ü yönetmek veya uygulamanızın görünümünü ve davranışını özelleştirmek için kullanılan alanları ve yöntemleri içerir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -78,73 +78,73 @@ struct AFX_GLOBAL_DATA
 
 |Ad|Açıklama|
 |----------|-----------------|
-|`AFX_GLOBAL_DATA::AFX_GLOBAL_DATA`|Oluşturur bir `AFX_GLOBAL_DATA` yapısı.|
+|`AFX_GLOBAL_DATA::AFX_GLOBAL_DATA`|Bir `AFX_GLOBAL_DATA` yapı oluşturur.|
 |`AFX_GLOBAL_DATA::~AFX_GLOBAL_DATA`|Yıkıcı.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[AFX_GLOBAL_DATA::CleanUp](#cleanup)|Fırçalar, yazı tipleri ve DLL'ler gibi framework tarafından ayrılan kaynakları serbest bırakır.|
-|[AFX_GLOBAL_DATA::D2D1MakeRotateMatrix](#d2d1makerotatematrix)|Belirtilen bir nokta etrafında bir belirtilen açıyla döndüren döndürme dönüşümü oluşturur.|
-|[AFX_GLOBAL_DATA::DrawParentBackground](#drawparentbackground)|Belirtilen alanda bir denetimin üst arka planı çizer.|
-|[AFX_GLOBAL_DATA::DrawTextOnGlass](#drawtextonglass)|Belirtilen metni belirtilen tema görsel stilde çizer.|
-|[AFX_GLOBAL_DATA::ExcludeTag](#excludetag)|Belirtilen XML etiket çifti belirtilen arabellek kaldırır.|
-|[AFX_GLOBAL_DATA::GetColor](#getcolor)|Belirtilen kullanıcı arabirimi öğesi geçerli rengini alır.|
-|[AFX_GLOBAL_DATA::GetDirect2dFactory](#getdirect2dfactory)|Bir işaretçi döndürür `ID2D1Factory` genel verilerde depolanan arabirimi. Arabirim başlatılmadı ise oluşturulur ve varsayılan parametrelere sahip.|
-|[AFX_GLOBAL_DATA::GetHandCursor](#gethandcursor)|Bir yandan benzer önceden tanımlanmış imleci alır ve tanıtıcısı `IDC_HAND`.|
-|[AFX_GLOBAL_DATA::GetITaskbarList](#getitaskbarlist)|Oluşturur ve genel verilerde ITaskBarList arabirimi için bir işaretçi depolar.|
-|[AFX_GLOBAL_DATA::GetITaskbarList3](#getitaskbarlist3)|Oluşturur ve genel verilerde ITaskBarList3 arabirimi için bir işaretçi depolar.|
-|[AFX_GLOBAL_DATA::GetNonClientMetrics](#getnonclientmetrics)|İstemci olmayan alanındayken nonminimized Windows ile ilişkili ölçümleri alır.|
-|[AFX_GLOBAL_DATA::GetShellAutohideBars](#getshellautohidebars)|Kabuk otomatik konumlarını çubukları Gizle belirler.|
-|[AFX_GLOBAL_DATA::GetTextHeight](#gettextheight)|Geçerli yazı tipi, metin karakterleri yüksekliğini alır.|
-|[AFX_GLOBAL_DATA::GetWICFactory](#getwicfactory)|Bir işaretçi döndürür `IWICImagingFactory` genel verilerde depolanan arabirimi. Arabirim başlatılmadı ise oluşturulur ve varsayılan parametrelere sahip.|
-|[AFX_GLOBAL_DATA::GetWriteFactory](#getwritefactory)|Bir işaretçi döndürür `IDWriteFactory` genel verilerde depolanan arabirimi. Arabirim başlatılmadı ise oluşturulur ve varsayılan parametrelere sahip.|
-|[AFX_GLOBAL_DATA::IsD2DInitialized](#isd2dinitialized)|Başlatır `D2D`, `DirectWrite`, ve `WIC` üreteçleri. Ana pencereyi başlatılmadan önce bu yöntemi çağırın.|
-|[AFX_GLOBAL_DATA::Is32BitIcons](#is32biticons)|Önceden tanımlanmış 32-bit simgeler desteklenip desteklenmediğini gösterir.|
-|[AFX_GLOBAL_DATA::IsD2DInitialized](#isd2dinitialized)|Belirler olmadığını `D2D` başlatıldı.|
-|[AFX_GLOBAL_DATA::IsDwmCompositionEnabled](#isdwmcompositionenabled)|Windows çağırmak için basit bir yol sağlar [Dwmıscompositionenabled](/windows/desktop/api/dwmapi/nf-dwmapi-dwmiscompositionenabled) yöntemi.|
-|[AFX_GLOBAL_DATA::IsHighContrastMode](#ishighcontrastmode)|Görüntüleri yüksek karşıtlık, şu anda gösterilip gösterilmediğini gösterir.|
-|[AFX_GLOBAL_DATA::OnSettingChange](#onsettingchange)|Desktop'ın menü animasyon ve görev autohide özellikleri geçerli durumunu algılar.|
-|[AFX_GLOBAL_DATA::RegisterWindowClass](#registerwindowclass)|Belirtilen MFC pencere sınıfını kaydeder.|
-|[AFX_GLOBAL_DATA::ReleaseTaskBarRefs](#releasetaskbarrefs)|Arabirimleri GetITaskbarList ve GetITaskbarList3 yöntemleri elde edilen serbest bırakır.|
-|[AFX_GLOBAL_DATA::Resume](#resume)|Windows Destek yöntemlere erişmek iç işlev işaretçileri yeniden başlatır [temalar ve görsel stilleri](/windows/desktop/Controls/visual-styles-overview).|
-|[AFX_GLOBAL_DATA::SetLayeredAttrib](#setlayeredattrib)|Windows çağırmak için basit bir yol sağlar [SetLayeredWindowAttributes](/windows/desktop/api/winuser/nf-winuser-setlayeredwindowattributes) yöntemi.|
-|[AFX_GLOBAL_DATA::SetMenuFont](#setmenufont)|Belirtilen mantıksal yazı tipi oluşturur.|
-|[AFX_GLOBAL_DATA::ShellCreateItemFromParsingName](#shellcreateitemfromparsingname)|Oluşturur ve bir kabuk öğesi nesnesi ayrıştırma adından başlatır.|
-|[AFX_GLOBAL_DATA::UpdateFonts](#updatefonts)|Framework tarafından kullanılan mantıksal yazı tiplerinin reintializes.|
-|[AFX_GLOBAL_DATA::UpdateSysColors](#updatesyscolors)|Renkler, renk derinliği, Fırçalar, kalemler ve framework tarafından kullanılan görüntüleri başlatır.|
+|[AFX_GLOBAL_DATA:: CleanUp](#cleanup)|Çerçeve tarafından ayrılan, fırçalar, yazı tipleri ve DLL 'Ler gibi kaynakları serbest bırakır.|
+|[AFX_GLOBAL_DATA::D 2D1MakeRotateMatrix](#d2d1makerotatematrix)|Belirtilen bir nokta etrafında belirtilen açıyla döndüren bir döndürme dönüştürmesi oluşturur.|
+|[AFX_GLOBAL_DATA::D rawParentBackground](#drawparentbackground)|Belirtilen alanda bir denetimin üstünün arka planını çizer.|
+|[AFX_GLOBAL_DATA::D Rawtextoncam](#drawtextonglass)|Belirtilen metni belirtilen temanın görsel stilinde çizer.|
+|[AFX_GLOBAL_DATA:: ExcludeTag](#excludetag)|Belirtilen bir arabelleğin belirtilen XML etiketi çiftini kaldırır.|
+|[AFX_GLOBAL_DATA:: GetColor](#getcolor)|Belirtilen kullanıcı arabirimi öğesinin geçerli rengini alır.|
+|[AFX_GLOBAL_DATA:: GetDirect2dFactory](#getdirect2dfactory)|Genel verilerde depolanan `ID2D1Factory` arabirime yönelik bir işaretçi döndürür. Arabirim başlatılmamışsa, oluşturulur ve Varsayılan parametrelere sahiptir.|
+|[AFX_GLOBAL_DATA:: GetHandCursor](#gethandcursor)|Bir el ile benzeyen ve tanımlayıcısı `IDC_HAND`olan önceden tanımlanmış imleci alır.|
+|[AFX_GLOBAL_DATA:: GetITaskbarList](#getitaskbarlist)|Genel verilerde bir ITaskBarList arabirimine yönelik bir işaretçi oluşturur ve depolar.|
+|[AFX_GLOBAL_DATA::GetITaskbarList3](#getitaskbarlist3)|Genel verilerde bir ITaskBarList3 arabirimine yönelik bir işaretçi oluşturur ve depolar.|
+|[AFX_GLOBAL_DATA:: Getnonclientmetrikleri](#getnonclientmetrics)|Küçültülmüş olmayan pencerelerin istemci olmayan alanıyla ilişkili ölçümleri alır.|
+|[AFX_GLOBAL_DATA:: Getshellautohideçubuklarının](#getshellautohidebars)|Kabuk otomatik gizleme çubuklarının konumlarını belirler.|
+|[AFX_GLOBAL_DATA:: GetTextHeight](#gettextheight)|Geçerli yazı tipindeki metin karakterlerinin yüksekliğini alır.|
+|[AFX_GLOBAL_DATA:: GetWICFactory](#getwicfactory)|Genel verilerde depolanan `IWICImagingFactory` arabirime yönelik bir işaretçi döndürür. Arabirim başlatılmamışsa, oluşturulur ve Varsayılan parametrelere sahiptir.|
+|[AFX_GLOBAL_DATA:: GetWriteFactory](#getwritefactory)|Genel verilerde depolanan `IDWriteFactory` arabirime yönelik bir işaretçi döndürür. Arabirim başlatılmamışsa, oluşturulur ve Varsayılan parametrelere sahiptir.|
+|[AFX_GLOBAL_DATA::IsD2DInitialized](#isd2dinitialized)|, `D2D` `DirectWrite`Ve fabrikaları`WIC` başlatır. Ana pencere başlatılmadan önce bu yöntemi çağırın.|
+|[AFX_GLOBAL_DATA::Is32BitIcons](#is32biticons)|Önceden tanımlanmış 32 bitlik simgelerin desteklenip desteklenmediğini gösterir.|
+|[AFX_GLOBAL_DATA::IsD2DInitialized](#isd2dinitialized)|' `D2D` Nin başlatılmış olup olmadığını belirler.|
+|[AFX_GLOBAL_DATA:: Isdwmkompozisyontionenabled](#isdwmcompositionenabled)|Windows [Dwmiskompozisyontionenabled](/windows/win32/api/dwmapi/nf-dwmapi-dwmiscompositionenabled) yöntemini çağırmak için basit bir yol sağlar.|
+|[AFX_GLOBAL_DATA:: ıshighınstmode](#ishighcontrastmode)|Görüntülerin Şu anda yüksek karşıtlıkta görüntülenip görüntülenmediğini gösterir.|
+|[AFX_GLOBAL_DATA:: OnSettingChange](#onsettingchange)|Masaüstünün menü animasyon ve görev çubuğu otomatik gizleme özelliklerinin geçerli durumunu algılar.|
+|[AFX_GLOBAL_DATA:: RegisterWindowClass](#registerwindowclass)|Belirtilen MFC pencere sınıfını kaydeder.|
+|[AFX_GLOBAL_DATA:: ReleaseTaskBarRefs](#releasetaskbarrefs)|GetITaskbarList ve GetITaskbarList3 yöntemleriyle elde edilen arabirimleri yayınlar.|
+|[AFX_GLOBAL_DATA:: özgeçmişi](#resume)|Windows [temalarını ve görsel stilleri](/windows/win32/Controls/visual-styles-overview)destekleyen yöntemlere erişen iç işlev işaretçileri yeniden başlatılır.|
+|[AFX_GLOBAL_DATA:: SetLayeredAttrib](#setlayeredattrib)|Windows [SetLayeredWindowAttributes](/windows/win32/api/winuser/nf-winuser-setlayeredwindowattributes) yöntemini çağırmak için basit bir yol sağlar.|
+|[AFX_GLOBAL_DATA:: SetMenuFont](#setmenufont)|Belirtilen mantıksal yazı tipini oluşturur.|
+|[AFX_GLOBAL_DATA:: Shellcreateıtemfromparsingname](#shellcreateitemfromparsingname)|Ayrıştırma adından bir kabuk öğesi nesnesi oluşturur ve başlatır.|
+|[AFX_GLOBAL_DATA:: UpdateFonts](#updatefonts)|Framework tarafından kullanılan mantıksal yazı tiplerini yeniden başlatır.|
+|[AFX_GLOBAL_DATA:: UpdateSysColors](#updatesyscolors)|Çerçeve tarafından kullanılan renkleri, renk derinliğini, fırçaları, kalemleri ve görüntüleri başlatır.|
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[AFX_GLOBAL_DATA::EnableAccessibilitySupport](#enableaccessibilitysupport)|Etkinleştirir veya Microsoft Active Accessibility desteğini devre dışı bırakır. Etkin Erişilebilirlik kullanıcı arabirimi öğeleri hakkında bilgi kullanıma sunmak için güvenilir yöntemleri sağlar.|
-|[AFX_GLOBAL_DATA::IsAccessibilitySupport](#isaccessibilitysupport)|Microsoft Active Accessibility desteği etkin olup olmadığını gösterir.|
-|[AFX_GLOBAL_DATA::IsWindowsLayerSupportAvailable](#iswindowslayersupportavailable)|Katmanlı windows işletim sistemini destekleyip desteklemediğini belirtir.|
+|[AFX_GLOBAL_DATA::EnableAccessibilitySupport](#enableaccessibilitysupport)|Microsoft Etkin Erişilebilirlik desteğini etkinleştirilir veya devre dışı bırakır. Etkin Erişilebilirlik, Kullanıcı arabirimi öğeleriyle ilgili bilgileri açığa çıkarmak için güvenilir yöntemler sağlar.|
+|[AFX_GLOBAL_DATA:: IsAccessibilitySupport](#isaccessibilitysupport)|Microsoft Etkin Erişilebilirlik desteğinin etkin olup olmadığını gösterir.|
+|[AFX_GLOBAL_DATA:: ıswindowslayersupportavailable](#iswindowslayersupportavailable)|İşletim sisteminin katmanlı pencereleri destekleyip desteklemediğini gösterir.|
 
 ### <a name="data-members"></a>Veri üyeleri
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[AFX_GLOBAL_DATA::bIsOSAlphaBlendingSupport](#bisosalphablendingsupport)|Geçerli işletim sistemi alfa karıştırma destekleyip desteklemediğini belirtir.|
-|[AFX_GLOBAL_DATA::bIsWindows7](#biswindows7)|Uygulama altında Windows 7 işletim sistemi veya üzeri yürütülmekte olan olup olmadığını gösterir|
-|[AFX_GLOBAL_DATA::clrActiveCaptionGradient](#clractivecaptiongradient)|Etkin Başlık gradyan rengini belirtir. Genellikle bölmeleri yerleştirme için kullanılır.|
-|[AFX_GLOBAL_DATA::clrInactiveCaptionGradient](#clrinactivecaptiongradient)|Etkin olmayan etkin başlık gradyan rengini belirtir. Genellikle bölmeleri yerleştirme için kullanılır.|
-|[AFX_GLOBAL_DATA::m_bUseBuiltIn32BitIcons](#m_busebuiltin32biticons)|Çerçevenin önceden tanımlanmış 32 bit renk simgelerinin genişliğini veya daha düşük bir çözünürlüğe simgelerini kullanıp kullanmadığını belirtir.|
-|[AFX_GLOBAL_DATA::m_bUseSystemFont](#m_busesystemfont)|Sistem yazı tipini menüleri, araç çubukları ve şeritler için kullanılıp kullanılmayacağını belirtir.|
-|[AFX_GLOBAL_DATA::m_hcurHand](#m_hcurhand)|Tanıtıcı elde imleci için depolar.|
-|[AFX_GLOBAL_DATA::m_hcurStretch](#m_hcurstretch)|Yatay imleç esnetme için tanıtıcı depolar.|
-|[AFX_GLOBAL_DATA::m_hcurStretchVert](#m_hcurstretchvert)|Esnetme dikey imleç için tanıtıcı depolar.|
-|[AFX_GLOBAL_DATA::m_hiconTool](#m_hicontool)|Aracı simge tanıtıcı depolar.|
-|[AFX_GLOBAL_DATA::m_nAutoHideToolBarMargin](#m_nautohidetoolbarmargin)|En soldaki autohide araç çubuğundan takma çubuğu sol tarafına uzaklığını belirtir.|
-|[AFX_GLOBAL_DATA::m_nAutoHideToolBarSpacing](#m_nautohidetoolbarspacing)|Otomatik Gizle araç çubukları arasındaki boşluğu belirtir.|
-|[AFX_GLOBAL_DATA::m_nDragFrameThicknessDock](#m_ndragframethicknessdock)|Sabitlenmiş durum iletişim kurmak için kullanılan Sürükle çerçeve kalınlığı belirtir.|
-|[AFX_GLOBAL_DATA::m_nDragFrameThicknessFloat](#m_ndragframethicknessfloat)|Kayan duruma iletişim kurmak için kullanılan Sürükle çerçeve kalınlığı belirtir.|
+|[AFX_GLOBAL_DATA::bIsOSAlphaBlendingSupport](#bisosalphablendingsupport)|Geçerli işletim sisteminin Alfa karıştırmasını destekleyip desteklemediğini gösterir.|
+|[AFX_GLOBAL_DATA::bIsWindows7](#biswindows7)|Uygulamanın Windows 7 işletim sistemi veya üzeri kapsamında yürütülüp yürütülmediğini belirtir|
+|[AFX_GLOBAL_DATA:: clrActiveCaptionGradient](#clractivecaptiongradient)|Etkin açıklamalı alt yazısının gradyan rengini belirtir. Genellikle yerleştirme bölmeleri için kullanılır.|
+|[AFX_GLOBAL_DATA:: clrInactiveCaptionGradient](#clrinactivecaptiongradient)|Etkin olmayan etkin açıklamalı alt yazısının gradyan rengini belirtir. Genellikle yerleştirme bölmeleri için kullanılır.|
+|[AFX_GLOBAL_DATA::m_bUseBuiltIn32BitIcons](#m_busebuiltin32biticons)|Çerçevenin önceden tanımlanmış 32 bit renk simgeleri mi yoksa daha düşük bir çözümlemenin simgelerini mi kullanacağını gösterir.|
+|[AFX_GLOBAL_DATA::m_bUseSystemFont](#m_busesystemfont)|Menüler, araç çubukları ve şeritler için bir sistem yazı tipinin kullanılıp kullanılmadığını gösterir.|
+|[AFX_GLOBAL_DATA::m_hcurHand](#m_hcurhand)|El imleci için tanıtıcıyı depolar.|
+|[AFX_GLOBAL_DATA::m_hcurStretch](#m_hcurstretch)|Yatay Esnetme imleci için tanıtıcıyı depolar.|
+|[AFX_GLOBAL_DATA::m_hcurStretchVert](#m_hcurstretchvert)|Dikey Esnetme imleci için tanıtıcıyı depolar.|
+|[AFX_GLOBAL_DATA::m_hiconTool](#m_hicontool)|Araç simgesinin tanıtıcısını depolar.|
+|[AFX_GLOBAL_DATA::m_nAutoHideToolBarMargin](#m_nautohidetoolbarmargin)|Yerleştirme çubuğunun sol tarafında bulunan en sol otomatik gizle araç çubuğundan boşluğu belirtir.|
+|[AFX_GLOBAL_DATA::m_nAutoHideToolBarSpacing](#m_nautohidetoolbarspacing)|Otomatik gizleme araç çubukları arasındaki boşluğu belirtir.|
+|[AFX_GLOBAL_DATA::m_nDragFrameThicknessDock](#m_ndragframethicknessdock)|Sabitlenmiş durumu iletmek için kullanılan sürükleme çerçevesinin kalınlığını belirtir.|
+|[AFX_GLOBAL_DATA::m_nDragFrameThicknessFloat](#m_ndragframethicknessfloat)|Kayan durumu iletmek için kullanılan sürükleme çerçevesinin kalınlığını belirtir.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Verilerin çoğu `AFX_GLOBAL_DATA` yapısı, uygulamanız başlatıldığında başlatılır.
+`AFX_GLOBAL_DATA` Yapı içindeki verilerin çoğu uygulamanız başlatıldığında başlatılır.
 
 ### <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -152,11 +152,11 @@ Verilerin çoğu `AFX_GLOBAL_DATA` yapısı, uygulamanız başlatıldığında b
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxglobals.h
+**Üstbilgi:** afxglobals. h
 
-## <a name="bisosalphablendingsupport"></a> AFX_GLOBAL_DATA::bIsOSAlphaBlendingSupport
+## <a name="bisosalphablendingsupport"></a>AFX_GLOBAL_DATA::bIsOSAlphaBlendingSupport
 
-İşletim sistemi alfa karıştırma destekleyip desteklemediğini belirtir.
+İşletim sisteminin Alfa karıştırmasını destekleyip desteklemediğini gösterir.
 
 ```
 BOOL  bIsOSAlphaBlendingSupport;
@@ -164,19 +164,19 @@ BOOL  bIsOSAlphaBlendingSupport;
 
 ### <a name="remarks"></a>Açıklamalar
 
-TRUE, alfa karıştırma desteklendiğini gösterir; Aksi takdirde FALSE.
+TRUE, Alfa karıştırmasını desteklenen gösterir; Aksi takdirde, FALSE.
 
-## <a name="cleanup"></a> AFX_GLOBAL_DATA::CleanUp
+## <a name="cleanup"></a>AFX_GLOBAL_DATA:: CleanUp
 
-Fırçalar, yazı tipleri ve DLL'ler gibi framework tarafından ayrılan kaynakları serbest bırakır.
+Çerçeve tarafından ayrılan, fırçalar, yazı tipleri ve DLL 'Ler gibi kaynakları serbest bırakır.
 
 ```
 void CleanUp();
 ```
 
-## <a name="d2d1makerotatematrix"></a> AFX_GLOBAL_DATA::D2D1MakeRotateMatrix
+## <a name="d2d1makerotatematrix"></a>AFX_GLOBAL_DATA::D 2D1MakeRotateMatrix
 
-Belirtilen bir nokta etrafında bir belirtilen açıyla döndüren döndürme dönüşümü oluşturur.
+Belirtilen bir nokta etrafında belirtilen açıyla döndüren bir döndürme dönüştürmesi oluşturur.
 
 ```
 HRESULT D2D1MakeRotateMatrix(
@@ -187,22 +187,22 @@ HRESULT D2D1MakeRotateMatrix(
 
 ### <a name="parameters"></a>Parametreler
 
-*Açı*<br/>
-Saat yönünde bir döndürme derece cinsinden açı.
+*açısı*<br/>
+Saat yönünde döndürme açısı (derece cinsinden).
 
-*Merkezi*<br/>
-Döndürmek istediğiniz hakkında noktası.
+*merkezinden*<br/>
+Hangi noktada döndürüleceğini.
 
-*matrix*<br/>
-Bu yöntem döndürüldüğünde, yeni döndürme dönüşümü içerir. Bu parametre için depolama ayırmanız gerekir.
+*Matrisin*<br/>
+Bu yöntem döndüğünde, yeni döndürme dönüşümünü içerir. Bu parametre için depolama alanı ayırmanız gerekir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Aksi S_OK başarılı olursa ya da bir hata değeri döndürür.
+Başarılı olursa S_OK, aksi takdirde bir hata değeri döndürür.
 
-## <a name="drawparentbackground"></a> AFX_GLOBAL_DATA::DrawParentBackground
+## <a name="drawparentbackground"></a>AFX_GLOBAL_DATA::D rawParentBackground
 
-Belirtilen alanda bir denetimin üst arka planı çizer.
+Belirtilen alanda bir denetimin üstünün arka planını çizer.
 
 ```
 BOOL DrawParentBackground(
@@ -214,21 +214,21 @@ BOOL DrawParentBackground(
 ### <a name="parameters"></a>Parametreler
 
 *pWnd*<br/>
-[in] Bir denetimin pencere işaretçisi.
+'ndaki Bir denetimin penceresine yönelik işaretçi.
 
-*pDC*<br/>
-[in] Bir cihaz bağlamı işaretçisi.
+*Kökündeki*<br/>
+'ndaki Cihaz bağlamı işaretçisi.
 
 *lpRect*<br/>
-[in] Alanın, çizmek için sınırların bir dikdörtgen işaretçisi. Varsayılan değer NULL olur.
+'ndaki Çizilecek alanı sınıralan dikdörtgenin işaretçisi. Varsayılan değer NULL.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.
+Bu yöntem başarılı olursa TRUE; Aksi takdirde, FALSE.
 
-## <a name="drawtextonglass"></a> AFX_GLOBAL_DATA::DrawTextOnGlass
+## <a name="drawtextonglass"></a>AFX_GLOBAL_DATA::D Rawtextoncam
 
-Belirtilen metni belirtilen tema görsel stilde çizer.
+Belirtilen metni belirtilen temanın görsel stilinde çizer.
 
 ```
 BOOL DrawTextOnGlass(
@@ -246,47 +246,47 @@ BOOL DrawTextOnGlass(
 ### <a name="parameters"></a>Parametreler
 
 *hTheme*<br/>
-[in] Bir pencerenin tema verileri işlemek veya NULL. Çerçeve, bu parametre NULL değilse ve Temalar desteklenen metnini çizmek için belirtilen tema kullanır. Aksi takdirde, framework metnini çizmek için bir tema kullanmaz.
+'ndaki Pencerenin Tema verilerine veya NULL değere işleyin. Çerçeve, bu parametre NULL değilse ve Temalar destekleniyorsa metni çizmek için belirtilen temayı kullanır. Aksi halde, çerçeve metni çizmek için bir tema kullanmaz.
 
-Kullanım [OpenThemeData](/windows/desktop/api/uxtheme/nf-uxtheme-openthemedata) bir HTHEME oluşturmak için yöntemi.
+Bir HTHEME oluşturmak için [OpenThemeData](/windows/win32/api/uxtheme/nf-uxtheme-openthemedata) yöntemini kullanın.
 
-*pDC*<br/>
-[in] Bir cihaz bağlamı işaretçisi.
+*Kökündeki*<br/>
+'ndaki Cihaz bağlamı işaretçisi.
 
-*iPartId*<br/>
-[in] İstenen metin görünümü olan denetim bölümü. Daha fazla bilgi için tablonun bölümleri sütununu görmek [bölümler ve durumlar](/windows/desktop/controls/parts-and-states). Bu değer 0 ise, varsayılan yazı tipi veya bir yazı tipi cihaz bağlamına seçili metni çizilir.
+*ıpartıd*<br/>
+'ndaki İstenen metin görünümüne sahip olan denetim bölümü. Daha fazla bilgi için bkz. [bölümler ve durumlar](/windows/win32/controls/parts-and-states)'Daki tablonun parçalar sütunu. Bu değer 0 ise, metin varsayılan yazı tipinde çizilir veya cihaz bağlamına seçilen bir yazı tipidir.
 
 *iStateId*<br/>
-[in] İstenen metin görünümü olan denetim durumu. Daha fazla bilgi için bkz: durumları sütun tablonun [bölümler ve durumlar](/windows/desktop/controls/parts-and-states).
+'ndaki İstenen metin görünümüne sahip denetim durumu. Daha fazla bilgi için bkz. [bölümler ve eyaletler](/windows/win32/controls/parts-and-states)tablosunun durumlar sütunu.
 
 *strText*<br/>
-[in] Çizmek için metin.
+'ndaki Çizilecek metin.
 
 *Rect*<br/>
-[in] Belirtilen metin çizilen alanın sınır.
+'ndaki Belirtilen metnin çizildiği alanın sınırı.
 
-*CertOpenStore*<br/>
-[in] Bitsel bir birleşimi (veya) belirtilen metnin nasıl çizilmeden belirten bayraklar.
+*dwFlags*<br/>
+'ndaki Belirtilen metnin nasıl çizildiğini belirten bir bit düzeyinde birleşim (veya) bayrakları.
 
-Varsa *hTheme* parametresi `NULL` veya Temalar desteklenmez ve etkin *nFormat* parametresinin [CDC::DrawText](../../mfc/reference/cdc-class.md#drawtext) yöntemi geçerli açıklar bayrakları. Temalar destekleniyorsa, *CertOpenStore* parametresinin [DrawThemeTextEx](/windows/desktop/api/uxtheme/nf-uxtheme-drawthemetextex) yöntemi geçerli bayrakları açıklar.
+*HTheme* parametresi `NULL` ya da Temalar desteklenmiyorsa ve etkinleştirilmezse, [CDC::D rawtext](../../mfc/reference/cdc-class.md#drawtext) yönteminin *nFormat* parametresi geçerli bayrakları açıklar. Temalar destekleniyorsa, [DrawThemeTextEx](/windows/win32/api/uxtheme/nf-uxtheme-drawthemetextex) yönteminin *dwFlags* parametresi geçerli bayrakları açıklar.
 
-*nGlowSize*<br/>
-[in] Belirtilen metin çizmeden önce arka plan üzerine çizilmiş bir parlaklık efekti boyutu. Varsayılan değer 0’dır.
+*Nparlayan boyutu*<br/>
+'ndaki Belirtilen metni çizmeden önce arka planda çizilen bir ışıma efektinin boyutu. Varsayılan değer 0’dır.
 
 *clrText*<br/>
-[in] Belirtilen metin çizilen rengi. Varsayılan renk varsayılan değerdir.
+'ndaki Belirtilen metnin çizildiği renk. Varsayılan değer varsayılan renktir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen metni çizmek için bir tema kullanılıyorsa TRUE; Aksi takdirde FALSE.
+Belirtilen metni çizmek için bir tema kullanılıyorsa TRUE; Aksi takdirde, FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir tema, bir uygulamanın görsel stil tanımlar. Bir tema, metin çizmek için kullanılan değil *hTheme* parametredir NULL veya [DrawThemeTextEx](/windows/desktop/api/uxtheme/nf-uxtheme-drawthemetextex) yöntemi desteklenmiyor veya [Masaüstü Pencere Yöneticisi](/windows/desktop/dwm/dwm-overview) (DWM) kompozisyonu devre dışı bırakıldı.
+Bir tema, bir uygulamanın görsel stilini tanımlar. Bir tema, *hTheme* parametresi null ise ya da [DrawThemeTextEx](/windows/win32/api/uxtheme/nf-uxtheme-drawthemetextex) yöntemi desteklenmiyorsa veya [Masaüstü Pencere Yöneticisi](/windows/win32/dwm/dwm-overview) (dwm) birleşimi devre dışıysa metin çizmek için kullanılmaz.
 
-## <a name="enableaccessibilitysupport"></a> AFX_GLOBAL_DATA::EnableAccessibilitySupport
+## <a name="enableaccessibilitysupport"></a>AFX_GLOBAL_DATA::EnableAccessibilitySupport
 
-Etkinleştirir veya Microsoft Active Accessibility desteğini devre dışı bırakır.
+Microsoft Etkin Erişilebilirlik desteğini etkinleştirilir veya devre dışı bırakır.
 
 ```
 void EnableAccessibilitySupport(BOOL bEnable=TRUE);
@@ -294,18 +294,18 @@ void EnableAccessibilitySupport(BOOL bEnable=TRUE);
 
 ### <a name="parameters"></a>Parametreler
 
-*bSistemlerde*<br/>
-[in] Erişilebilirlik desteğini etkinleştirmek için TRUE; Erişilebilirlik desteği devre dışı bırakmak için FALSE. Varsayılan değer True'dur.
+*bEnable*<br/>
+'ndaki Erişilebilirlik desteğini etkinleştirmek için TRUE; Erişilebilirlik desteğini devre dışı bırakmak için FALSE. Varsayılan değer TRUE 'dur.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Etkin Erişilebilirlik şekilde programları ve Windows işletim sistemi iş yardımcı teknoloji ürünlerinin birlikte geliştiren bir COM tabanlı bir teknolojidir. Bu, kullanıcı arabirimi öğeleri hakkında bilgi kullanıma sunmak için güvenilir yöntemleri sağlar. Ancak, Microsoft UI Otomasyonu adlı yeni bir erişilebilirlik modeli kullanıma sunulmuştur. İki teknolojileri karşılaştırması için bkz: [UI Otomasyonu ve Microsoft Active Accessibility](/dotnet/framework/ui-automation/ui-automation-and-microsoft-active-accessibility).
+Etkin Erişilebilirlik, programların ve Windows işletim sisteminin yardımcı teknoloji ürünleriyle birlikte çalışma yöntemini artıran COM tabanlı bir teknolojidir. Kullanıcı arabirimi öğeleriyle ilgili bilgileri açığa çıkarmak için güvenilir yöntemler sağlar. Ancak, Microsoft UI Otomasyonu adlı daha yeni bir erişilebilirlik modeli artık kullanılabilir. İki teknolojinin karşılaştırması için bkz. [UI Otomasyonu ve Microsoft Active Accessibility](/dotnet/framework/ui-automation/ui-automation-and-microsoft-active-accessibility).
 
-Kullanım [AFX_GLOBAL_DATA::IsAccessibilitySupport](#isaccessibilitysupport) Microsoft Active Accessibility desteği etkin olup olmadığını belirlemek için yöntemi.
+Microsoft Etkin Erişilebilirlik desteğinin etkin olup olmadığını anlamak için [AFX_GLOBAL_DATA:: IsAccessibilitySupport](#isaccessibilitysupport) yöntemini kullanın.
 
-## <a name="excludetag"></a> AFX_GLOBAL_DATA::ExcludeTag
+## <a name="excludetag"></a>AFX_GLOBAL_DATA:: ExcludeTag
 
-Belirtilen XML etiket çifti belirtilen arabellek kaldırır.
+Belirtilen bir arabelleğin belirtilen XML etiketi çiftini kaldırır.
 
 ```
 BOOL ExcludeTag(
@@ -318,40 +318,40 @@ BOOL ExcludeTag(
 ### <a name="parameters"></a>Parametreler
 
 *strBuffer*<br/>
-[in] Metin arabelleği.
+'ndaki Metin arabelleği.
 
 *lpszTag*<br/>
-[in] Açma ve kapama XML etiketlerini çiftinin adı.
+'ndaki Açılış ve kapanış XML etiketlerinin bir çiftinin adı.
 
 *strTag*<br/>
-[out] Bu yöntem döndürüldüğünde, *strTag* parametresi tarafından adlandırılan etiketleri açılış ve kapanış XML arasında olan metni içeren *lpszTag* parametresi. Tüm başta veya sonda boşluk sonuçtan kırpılır.
+dışı Bu yöntem döndüğünde, *strTag* parametresi *lpszTag* parametresi tarafından ADLANDıRıLAN açılış ve kapanış XML etiketleri arasındaki metni içerir. Baştaki veya sondaki boşluklar sonuçtan kırpılır.
 
 *bIsCharsList*<br/>
-[in] Çıkış karakterlerinin tanınmasından dönüştürme simgeleri true *strTag* gerçek kaçış karakterleri; parametresine Dönüştürme işlemleri için FALSE. Varsayılan değer FALSE olur. Daha fazla bilgi için açıklamalara bakın.
+'ndaki *StrTag* parametresindeki kaçış karakterlerinin sembollerini gerçek kaçış karakterlerine dönüştürmek için true; Dönüştürme gerçekleştirmediğinden yanlış. Varsayılan değer FALSE 'dur. Daha fazla bilgi için bkz. açıklamalar.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.
+Bu yöntem başarılı olursa TRUE; Aksi takdirde, FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir XML etiket çifti açılış ve kapanış etiketlerinin başlangıç ve bitiş çalıştırma belirtilen arabellek metin gösteren adlı oluşur. *StrBuffer* arabellek parametre belirtir ve *lpszTag* parametresi, XML etiketlerini adını belirtir.
+Bir XML etiket çifti, belirtilen arabellekte bir metin çalıştırmasının başlangıcını ve sonunu belirten adlandırılmış açılış ve kapanış etiketlerinden oluşur. *StrBuffer* parametresi, arabelleği belirtir ve *LPSZTAG* parametresi, XML etiketlerinin adını belirtir.
 
-Simgeler aşağıdaki tabloda belirtilen arabellekteki kaçış karakterleri kodlayın için kullanın. DOĞRU belirtme *bIsCharsList* sembolleri dönüştürmek için parametre *strTag* gerçek kaçış karakterleri içine parametresi. Aşağıdaki tablo kullanan [_T()](../../c-runtime-library/data-type-mappings.md) sembol belirtin ve karakter dizeleri kaçış makrosu.
+Belirtilen arabellekteki bir kaçış karakterleri kümesini kodlamak için aşağıdaki tablodaki sembolleri kullanın. *StrTag* parametresindeki sembolleri gerçek kaçış karakterlerine dönüştürmek Için *bıcharslist* parametresi için true değerini belirtin. Aşağıdaki tablo, simge ve kaçış karakter dizelerini belirtmek için [_T ()](../../c-runtime-library/data-type-mappings.md) makrosunu kullanır.
 
 |Sembol|Atlatma karakteri|
 |------------|----------------------|
-|_T("\\\t")|_T("\t")|
-|_T ("\\\n")|_T("\n")|
-|_T("\\\r")|_T("\r")|
-|_T("\\\b")|_T("\b")|
-|_T("LT")|_T ("\<")|
-|_T("GT")|_T("&GT;")|
-|_T("AMP")|_T("&AMP;")|
+|_T ("\\\t")|_T ("\t")|
+|_T ("\\\n")|_T ("\n")|
+|_T ("\\\r")|_T ("\r")|
+|_T ("\\\b")|_T ("\b")|
+|_T ("LT")|_T ("\<")|
+|_T ("GT")|_T (">")|
+|_T ("AMP")|_T ("&")|
 
-## <a name="getcolor"></a> AFX_GLOBAL_DATA::GetColor
+## <a name="getcolor"></a>AFX_GLOBAL_DATA:: GetColor
 
-Belirtilen kullanıcı arabirimi öğesi geçerli rengini alır.
+Belirtilen kullanıcı arabirimi öğesinin geçerli rengini alır.
 
 ```
 COLORREF GetColor(int nColor);
@@ -360,19 +360,19 @@ COLORREF GetColor(int nColor);
 ### <a name="parameters"></a>Parametreler
 
 *nColor*<br/>
-[in] Bir kullanıcı arabirimi öğesi olan renk alınan belirten bir değeri. Geçerli değerlerin listesi için bkz. *nIndex* parametresinin [GetSysColor](/windows/desktop/api/winuser/nf-winuser-getsyscolor) yöntemi.
+'ndaki Rengi alınan bir kullanıcı arabirimi öğesini belirten bir değer. Geçerli değerlerin listesi için bkz. [Getsyscbir](/windows/win32/api/winuser/nf-winuser-getsyscolor) yönteminin *nindex* parametresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen kullanıcı arabirimi öğesi RGB renk değeri. Daha fazla bilgi için açıklamalara bakın.
+Belirtilen kullanıcı arabirimi öğesinin RGB renk değeri. Daha fazla bilgi için bkz. açıklamalar.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsa *nColor* parametresi aralık dışında olduğundan, dönüş değeri sıfırdır. Sıfır da geçerli bir RGB değeri olduğundan, sistem rengi geçerli işletim sistemi tarafından desteklenip desteklenmediğini belirlemek için bu yöntemi kullanamazsınız. Bunun yerine, [GetSysColorBrush](/windows/desktop/api/winuser/nf-winuser-getsyscolorbrush) rengi desteklenmiyorsa NULL döndüren bir yöntem.
+*NColor* parametresi aralık dışında ise, dönüş değeri sıfırdır. Sıfır de geçerli bir RGB değeri olduğundan, geçerli işletim sistemi tarafından bir sistem renginin desteklenip desteklenmediğini anlamak için bu yöntemi kullanamazsınız. Bunun yerine, renk desteklenmiyorsa NULL döndüren [GetSysColorBrush](/windows/win32/api/winuser/nf-winuser-getsyscolorbrush) metodunu kullanın.
 
-## <a name="getdirect2dfactory"></a> AFX_GLOBAL_DATA::GetDirect2dFactory
+## <a name="getdirect2dfactory"></a>AFX_GLOBAL_DATA:: GetDirect2dFactory
 
-Genel veriler ID2D1Factory arabirimi için bir işaretçi döndürür. Arabirim başlatılmadı ise oluşturulur ve varsayılan parametrelere sahip.
+Genel verilerde depolanan ID2D1Factory arabirimine yönelik bir işaretçi döndürür. Arabirim başlatılmamışsa, oluşturulur ve Varsayılan parametrelere sahiptir.
 
 ```
 ID2D1Factory* GetDirect2dFactory();
@@ -380,11 +380,11 @@ ID2D1Factory* GetDirect2dFactory();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Fabrika oluşturulması başarılı ya da oluşturulması başarısız olursa NULL ID2D1Factory arabirimi veya geçerli işletim sistemi için bir işaretçi D2D desteği yok.
+Fabrika işleminin başarılı olması durumunda ID2D1Factory arabirimine yönelik bir işaretçi, oluşturma başarısız olursa veya geçerli Işlem sisteminin D2D desteği yoksa NULL.
 
-## <a name="gethandcursor"></a>  AFX_GLOBAL_DATA::GetHandCursor
+## <a name="gethandcursor"></a>AFX_GLOBAL_DATA:: GetHandCursor
 
-Bir yandan benzer ve ayarlanmış bir tanımlayıcıdır IDC_HAND önceden tanımlanmış imleci alır.
+Bir el ile benzeyen ve tanımlayıcısı IDC_HAND olan önceden tanımlanmış imleci alır.
 
 ```
 HCURSOR GetHandCursor();
@@ -392,11 +392,11 @@ HCURSOR GetHandCursor();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İmleci elde tanıtıcısını.
+El işaretçisinin tutamacı.
 
-## <a name="getnonclientmetrics"></a> AFX_GLOBAL_DATA::GetNonClientMetrics
+## <a name="getnonclientmetrics"></a>AFX_GLOBAL_DATA:: Getnonclientmetrikleri
 
-İstemci olmayan alanındayken nonminimized Windows ile ilişkili ölçümleri alır.
+Küçültülmüş olmayan pencerelerin istemci olmayan alanıyla ilişkili ölçümleri alır.
 
 ```
 BOOL GetNonClientMetrics(NONCLIENTMETRICS& info);
@@ -404,16 +404,16 @@ BOOL GetNonClientMetrics(NONCLIENTMETRICS& info);
 
 ### <a name="parameters"></a>Parametreler
 
-*Bilgileri*<br/>
-[out içinde] A [NONCLIENTMETRICS](/windows/desktop/api/winuser/ns-winuser-tagnonclientmetricsa) nonminimized pencerenin istemci olmayan alanın ile ilişkili ölçeklenebilir ölçümleri içeren yapısı.
+*bilgisine*<br/>
+[in, out] Simge dışı olmayan bir pencerenin istemci olmayan alanıyla ilişkili ölçeklenebilir ölçümleri içeren [clientmetrik](/windows/win32/api/winuser/ns-winuser-nonclientmetricsw) yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.
+Bu yöntem başarılı olursa TRUE; Aksi takdirde, FALSE.
 
-## <a name="gettextheight"></a> AFX_GLOBAL_DATA::GetTextHeight
+## <a name="gettextheight"></a>AFX_GLOBAL_DATA:: GetTextHeight
 
-Geçerli yazı tipi, metin karakterleri yüksekliğini alır.
+Geçerli yazı tipindeki metin karakterlerinin yüksekliğini alır.
 
 ```
 int GetTextHeight(BOOL bHorz = TRUE);
@@ -422,15 +422,15 @@ int GetTextHeight(BOOL bHorz = TRUE);
 ### <a name="parameters"></a>Parametreler
 
 *bHorz*<br/>
-[in] Metin yatay olarak çalıştığında karakterlerin yüksekliği almak için TRUE; Metin dikey olarak çalıştığında karakterlerin yüksekliği almak için FALSE. Varsayılan değer True'dur.
+'ndaki Metin yatay olarak çalıştırıldığında karakterlerin yüksekliğini almak için TRUE; Metin dikey olarak çalıştırıldığında karakterlerin yüksekliğini almak için FALSE. Varsayılan değer TRUE 'dur.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-, Ascender için kendi descender ölçülür geçerli yazı yüksekliği.
+Geçerli yazı tipinin, Ascender öğesinden kendi Descender ölçülerek ölçülen yüksekliği.
 
-## <a name="getwicfactory"></a> AFX_GLOBAL_DATA::GetWICFactory
+## <a name="getwicfactory"></a>AFX_GLOBAL_DATA:: GetWICFactory
 
-Genel veriler IWICImagingFactory arabirimi için bir işaretçi döndürür. Arabirim başlatılmadı ise oluşturulur ve varsayılan parametrelere sahip.
+Genel verilerde depolanan ı' ıimagingfactory arabirimine bir işaretçi döndürür. Arabirim başlatılmamışsa, oluşturulur ve Varsayılan parametrelere sahiptir.
 
 ```
 IWICImagingFactory* GetWICFactory();
@@ -438,11 +438,11 @@ IWICImagingFactory* GetWICFactory();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Fabrika oluşturulması başarılı ya da oluşturulması başarısız olursa NULL IWICImagingFactory arabirimi veya geçerli işletim sistemi için bir işaretçi WIC desteği yok.
+Bir fabrika işleminin başarılı olması veya oluşturma Işlemi başarısız olursa veya geçerli Işlem sisteminde WIC desteği yoksa, ıimabgingfactory arabirimine yönelik bir işaretçi.
 
-## <a name="getwritefactory"></a> AFX_GLOBAL_DATA::GetWriteFactory
+## <a name="getwritefactory"></a>AFX_GLOBAL_DATA:: GetWriteFactory
 
-Genel veriler IDWriteFactory arabirimi için bir işaretçi döndürür. Arabirim başlatılmadı ise oluşturulur ve varsayılan parametrelere sahip.
+Genel verilerde depolanan IDWriteFactory arabirimine bir işaretçi döndürür. Arabirim başlatılmamışsa, oluşturulur ve Varsayılan parametrelere sahiptir.
 
 ```
 IDWriteFactory* GetWriteFactory();
@@ -450,11 +450,11 @@ IDWriteFactory* GetWriteFactory();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Fabrika oluşturulması başarılı ya da oluşturulması başarısız olursa NULL IDWriteFactory arabirimi veya geçerli işletim sistemi için bir işaretçi DirectWrite desteği yok.
+Fabrika başarılı bir şekilde oluşturulduğunda IDWriteFactory arabirimine yönelik bir işaretçi veya oluşturma başarısız olursa veya geçerli Işlem sisteminin DirectWrite desteği yoksa NULL.
 
-## <a name="initd2d"></a> AFX_GLOBAL_DATA::InitD2D
+## <a name="initd2d"></a>AFX_GLOBAL_DATA::InitD2D
 
-D2D ve DirectWrite WIC fabrikaları başlatır. Ana pencereyi başlatılmadan önce bu yöntemi çağırın.
+D2D, DirectWrite ve WIC fabrikalarını başlatır. Ana pencere başlatılmadan önce bu yöntemi çağırın.
 
 ```
 BOOL InitD2D(
@@ -465,18 +465,18 @@ BOOL InitD2D(
 ### <a name="parameters"></a>Parametreler
 
 *d2dFactoryType*<br/>
-D2D Fabrika ve kaynakları iş parçacığı modeli oluşturur.
+D2D fabrikasının ve oluşturduğu kaynakların iş parçacığı modeli.
 
 *writeFactoryType*<br/>
-Yazma üretecini paylaşılan veya yalıtılmış olup olmadığını belirten bir değeri
+Yazma fabrikası nesnesinin paylaşılıp paylaşılmayacağını veya yalıtılacağını belirten bir değer
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-DOĞRU fabrikaları intilalizrd, FALSE - Aksi durumda olup olmadığını döndürür.
+Fabrikalar ınitiallalizrd ise TRUE, değilse FALSE döndürür
 
-## <a name="is32biticons"></a> AFX_GLOBAL_DATA::Is32BitIcons
+## <a name="is32biticons"></a>AFX_GLOBAL_DATA::Is32BitIcons
 
-Önceden tanımlanmış 32-bit simgeler desteklenip desteklenmediğini gösterir.
+Önceden tanımlanmış 32 bitlik simgelerin desteklenip desteklenmediğini gösterir.
 
 ```
 BOOL Is32BitIcons() const;
@@ -484,15 +484,15 @@ BOOL Is32BitIcons() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Önceden tanımlanmış 32-bit simgeler destekleniyorsa TRUE; Aksi takdirde FALSE.
+Önceden tanımlanmış 32 bit simgeler destekleniyorsa TRUE; Aksi takdirde, FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, framework 32-bit yerleşik simgeler, destekliyorsa ve işletim sistemi, 16 bit / piksel veya daha fazla destekliyorsa ve görüntüleri yüksek karşıtlık görüntülenmiyorsa TRUE döndürür.
+Bu yöntem, çerçeve 32 bitlik yerleşik simgeleri destekliyorsa ve işletim sistemi piksel başına 16 bit ya da daha fazlasını destekliyorsa ve görüntüler yüksek bir karşıtlıkta görüntülenmiyorsa TRUE döndürür.
 
-## <a name="isaccessibilitysupport"></a> AFX_GLOBAL_DATA::IsAccessibilitySupport
+## <a name="isaccessibilitysupport"></a>AFX_GLOBAL_DATA:: IsAccessibilitySupport
 
-Microsoft Active Accessibility desteği etkin olup olmadığını gösterir.
+Microsoft Etkin Erişilebilirlik desteğinin etkin olup olmadığını gösterir.
 
 ```
 BOOL IsAccessibilitySupport() const;
@@ -500,17 +500,17 @@ BOOL IsAccessibilitySupport() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Erişilebilirlik destek etkinse TRUE; Aksi takdirde FALSE.
+Erişilebilirlik desteği etkinse doğru; Aksi takdirde, FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Microsoft Active Accessibility uygulamaları erişilebilir yapmak için önceki çözümü oldu. Microsoft UI Otomasyonu yeni erişilebilirlik model Microsoft Windows için yardımcı teknoloji ürünlerinin ihtiyaçlarınızı karşılamak üzere tasarlanmıştır ve otomatikleştirilmiş test araçları.
+Microsoft Etkin Erişilebilirlik, uygulamaları erişilebilir hale getirmek için daha önceki bir çözümdür. Microsoft UI Otomasyonu, Microsoft Windows için yeni erişilebilirlik modelidir ve yardımcı teknoloji ürünlerinin ve otomatikleştirilmiş test araçlarının ihtiyaçlarını karşılamak üzere tasarlanmıştır.
 
-Kullanım [AFX_GLOBAL_DATA::EnableAccessibilitySupport](#enableaccessibilitysupport) etkinleştirme veya devre dışı Active Accessibility desteği yöntemi.
+Etkin Erişilebilirlik desteğini etkinleştirmek veya devre dışı bırakmak için [AFX_GLOBAL_DATA:: EnableAccessibilitySupport](#enableaccessibilitysupport) metodunu kullanın.
 
-## <a name="isd2dinitialized"></a> AFX_GLOBAL_DATA::IsD2DInitialized
+## <a name="isd2dinitialized"></a>AFX_GLOBAL_DATA::IsD2DInitialized
 
-D2D başlatılmış olup olmadığını belirler
+D2D 'in başlatılmış olup olmadığını belirler
 
 ```
 BOOL IsD2DInitialized() const;
@@ -518,11 +518,11 @@ BOOL IsD2DInitialized() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-D2D başlatıldı TRUE; Aksi durumda FALSE.
+D2D başlatılmışsa TRUE; Aksi halde yanlış.
 
-## <a name="isdwmcompositionenabled"></a> AFX_GLOBAL_DATA::IsDwmCompositionEnabled
+## <a name="isdwmcompositionenabled"></a>AFX_GLOBAL_DATA:: Isdwmkompozisyontionenabled
 
-Windows çağırmak için basit bir yol sağlar [Dwmıscompositionenabled](/windows/desktop/api/dwmapi/nf-dwmapi-dwmiscompositionenabled) yöntemi.
+Windows [Dwmiskompozisyontionenabled](/windows/win32/api/dwmapi/nf-dwmapi-dwmiscompositionenabled) yöntemini çağırmak için basit bir yol sağlar.
 
 ```
 BOOL IsDwmCompositionEnabled();
@@ -530,26 +530,26 @@ BOOL IsDwmCompositionEnabled();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-TRUE ise [Masaüstü Pencere Yöneticisi](/windows/desktop/dwm/dwm-overview) (DWM) kompozisyonu etkinse; Aksi takdirde FALSE.
+[Masaüstü Pencere Yöneticisi](/windows/win32/dwm/dwm-overview) (dwm) oluşturma etkinse true; Aksi takdirde, FALSE.
 
-## <a name="ishighcontrastmode"></a> AFX_GLOBAL_DATA::IsHighContrastMode
+## <a name="ishighcontrastmode"></a>AFX_GLOBAL_DATA:: ıshighınstmode
 
-Görüntüleri yüksek karşıtlık, şu anda gösterilip gösterilmediğini gösterir.
+Görüntülerin Şu anda yüksek karşıtlıkta görüntülenip görüntülenmediğini gösterir.
 ```
 BOOL IsHighContrastMode() const;
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Görüntüleri şu anda siyah veya beyaz yüksek karşıtlık modunda görüntüleniyorsa TRUE; Aksi takdirde FALSE.
+Görüntüler şu anda siyah veya beyaz yüksek karşıtlık modunda görüntüleniyorsa doğru. Aksi takdirde, FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Siyah yüksek karşıtlık modunda beyaz ışık dönük kenarlar ve arka planı siyah. Beyaz yüksek karşıtlık modunda ışık dönük kenarlar için siyah olur ve arka planı beyaz.
+Siyah yüksek karşıtlık modunda, ışığın karşısındaki kenarlar beyazdır ve arka plan siyah olur. Beyaz yüksek karşıtlık modunda, ışığın karşısındaki kenarlar siyah ve arka plan da beyazdır.
 
-## <a name="iswindowslayersupportavailable"></a> AFX_GLOBAL_DATA::IsWindowsLayerSupportAvailable
+## <a name="iswindowslayersupportavailable"></a>AFX_GLOBAL_DATA:: ıswindowslayersupportavailable
 
-Katmanlı windows işletim sistemini destekleyip desteklemediğini belirtir.
+İşletim sisteminin katmanlı pencereleri destekleyip desteklemediğini gösterir.
 
 ```
 BOOL IsWindowsLayerSupportAvailable() const;
@@ -557,15 +557,15 @@ BOOL IsWindowsLayerSupportAvailable() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Katmanlı windows destekleniyorsa TRUE; Aksi takdirde FALSE.
+Katmanlı pencereler destekleniyorsa, doğru; Aksi takdirde, FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Katmanlı windows destekleniyorsa, *akıllı yerleştirme* işaretçileri katmanlı windows kullanın.
+Katmanlı pencereler destekleniyorsa, *akıllı yerleştirme* işaretçileri katmanlı pencereler kullanır.
 
-## <a name="m_busebuiltin32biticons"></a> AFX_GLOBAL_DATA::m_bUseBuiltIn32BitIcons
+## <a name="m_busebuiltin32biticons"></a>AFX_GLOBAL_DATA::m_bUseBuiltIn32BitIcons
 
-Çerçevenin önceden tanımlanmış 32 bit renk simgelerinin genişliğini veya daha düşük bir çözünürlüğe simgelerini kullanıp kullanmadığını belirtir.
+Çerçevenin önceden tanımlanmış 32 bit renk simgeleri mi yoksa daha düşük bir çözümlemenin simgelerini mi kullanacağını gösterir.
 
 ```
 BOOL  m_bUseBuiltIn32BitIcons;
@@ -573,13 +573,13 @@ BOOL  m_bUseBuiltIn32BitIcons;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Framework 32 bit renk simgelerinin genişliğini kullanmasını TRUE belirtir. Daha düşük çözünürlüklü simgeleri FALSE belirtir. `AFX_GLOBAL_DATA::AFX_GLOBAL_DATA` Oluşturucu, bu üye true başlatır.
+TRUE, Framework 'ün 32 bitlik renk simgeleri kullanmasını belirtir; FALSE, daha düşük çözünürlüklü simgeler belirtir. `AFX_GLOBAL_DATA::AFX_GLOBAL_DATA` Oluşturucu bu üyeyi doğru olarak başlatır.
 
-Bu üye, uygulama başlangıcında ayarlamanız gerekir.
+Bu üyenin uygulama başlangıcında ayarlanması gerekir.
 
-## <a name="m_busesystemfont"></a> AFX_GLOBAL_DATA::m_bUseSystemFont
+## <a name="m_busesystemfont"></a>AFX_GLOBAL_DATA::m_bUseSystemFont
 
-Sistem yazı tipini menüleri, araç çubukları ve şeritler için kullanılıp kullanılmayacağını belirtir.
+Menüler, araç çubukları ve şeritler için bir sistem yazı tipinin kullanılıp kullanılmadığını gösterir.
 
 ```
 BOOL m_bUseSystemFont;
@@ -587,45 +587,45 @@ BOOL m_bUseSystemFont;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sistem yazı tipini kullan TRUE belirtir; Aksi takdirde FALSE. `AFX_GLOBAL_DATA::AFX_GLOBAL_DATA` Oluşturucu, bu üye yanlış başlatır.
+DOĞRU, bir sistem yazı tipinin kullanılacağını belirtir; Aksi takdirde, FALSE. `AFX_GLOBAL_DATA::AFX_GLOBAL_DATA` Oluşturucu bu üyeyi false olarak başlatır.
 
-Bu üye'test etme, kullanılacak yazı tipini belirlemek için framework tek yolu değil. `AFX_GLOBAL_DATA::UpdateFonts` Yöntemi ayrıca hangi görsel stilleri menüleri, araç çubukları ve şeritler için uygulanabilir olduğunu belirlemek için varsayılan ve alternatif yazı tipleri sınar.
+Bu üyeyi test etmek, Framework 'ün kullanılacak yazı tipini belirlemesi için tek yol değildir. Bu `AFX_GLOBAL_DATA::UpdateFonts` Yöntem, menülere, araç çubuklarına ve şeritlere uygulanabilecek görsel stilleri belirlemek için varsayılan ve alternatif yazı tiplerini de sınar.
 
-## <a name="m_hcurhand"></a> AFX_GLOBAL_DATA::m_hcurHand
+## <a name="m_hcurhand"></a>AFX_GLOBAL_DATA::m_hcurHand
 
-Tanıtıcı elde imleci için depolar.
+El imleci için tanıtıcıyı depolar.
 
 ```
 HCURSOR m_hcurHand;
 ```
 
-## <a name="m_hcurstretch"></a> AFX_GLOBAL_DATA::m_hcurStretch
+## <a name="m_hcurstretch"></a>AFX_GLOBAL_DATA::m_hcurStretch
 
-Yatay imleç esnetme için tanıtıcı depolar.
+Yatay Esnetme imleci için tanıtıcıyı depolar.
 
 ```
 HCURSOR m_hcurStretch;
 ```
 
-## <a name="m_hcurstretchvert"></a> AFX_GLOBAL_DATA::m_hcurStretchVert
+## <a name="m_hcurstretchvert"></a>AFX_GLOBAL_DATA::m_hcurStretchVert
 
-Esnetme dikey imleç için tanıtıcı depolar.
+Dikey Esnetme imleci için tanıtıcıyı depolar.
 
 ```
 HCURSOR m_hcurStretchVert;
 ```
 
-## <a name="m_hicontool"></a> AFX_GLOBAL_DATA::m_hiconTool
+## <a name="m_hicontool"></a>AFX_GLOBAL_DATA::m_hiconTool
 
-Aracı simge tanıtıcı depolar.
+Araç simgesinin tanıtıcısını depolar.
 
 ```
 HICON m_hiconTool;
 ```
 
-## <a name="m_nautohidetoolbarmargin"></a> AFX_GLOBAL_DATA::m_nAutoHideToolBarMargin
+## <a name="m_nautohidetoolbarmargin"></a>AFX_GLOBAL_DATA::m_nAutoHideToolBarMargin
 
-En soldaki autohide araç çubuğundan dock çubuğunun sol tarafındaki uzaklığını belirtir.
+En soldaki otomatik gizle araç çubuğundan, yerleştirme çubuğunun sol tarafına olan sapmayı belirtir.
 
 ```
 int  m_nAutoHideToolBarMargin;
@@ -633,11 +633,11 @@ int  m_nAutoHideToolBarMargin;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`AFX_GLOBAL_DATA::AFX_GLOBAL_DATA` Oluşturucu, bu üye için 4 piksel başlatır.
+`AFX_GLOBAL_DATA::AFX_GLOBAL_DATA` Oluşturucu bu üyeyi 4 piksel olarak başlatır.
 
-## <a name="m_nautohidetoolbarspacing"></a> AFX_GLOBAL_DATA::m_nAutoHideToolBarSpacing
+## <a name="m_nautohidetoolbarspacing"></a>AFX_GLOBAL_DATA::m_nAutoHideToolBarSpacing
 
-Otomatik Gizle araç çubukları arasındaki boşluğu belirtir.
+Otomatik gizleme araç çubukları arasındaki boşluğu belirtir.
 
 ```
 int   m_nAutoHideToolBarSpacing;
@@ -645,11 +645,11 @@ int   m_nAutoHideToolBarSpacing;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`AFX_GLOBAL_DATA::AFX_GLOBAL_DATA` Oluşturucu, bu üye için 14 piksel başlatır.
+`AFX_GLOBAL_DATA::AFX_GLOBAL_DATA` Oluşturucu bu üyeyi 14 piksel olarak başlatır.
 
-## <a name="m_ndragframethicknessdock"></a> AFX_GLOBAL_DATA::m_nDragFrameThicknessDock
+## <a name="m_ndragframethicknessdock"></a>AFX_GLOBAL_DATA::m_nDragFrameThicknessDock
 
-Yerleşik durumunu göstermek için kullanılan Sürükle çerçeve kalınlığı belirtir.
+Sabitlenmiş durumu göstermek için kullanılan sürükleme çerçevesinin kalınlığını belirtir.
 
 ```
 int  m_nDragFrameThicknessDock;
@@ -657,11 +657,11 @@ int  m_nDragFrameThicknessDock;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`AFX_GLOBAL_DATA::AFX_GLOBAL_DATA` Oluşturucusu 3 piksel bu üyeye başlatır.
+`AFX_GLOBAL_DATA::AFX_GLOBAL_DATA` Oluşturucu bu üyeyi 3 piksel olarak başlatır.
 
-## <a name="m_ndragframethicknessfloat"></a> AFX_GLOBAL_DATA::m_nDragFrameThicknessFloat
+## <a name="m_ndragframethicknessfloat"></a>AFX_GLOBAL_DATA::m_nDragFrameThicknessFloat
 
-Kayan durumunu göstermek için kullanılan Sürükle çerçeve kalınlığı belirtir.
+Kayan durumu göstermek için kullanılan sürükleme çerçevesinin kalınlığını belirtir.
 
 ```
 int  m_nDragFrameThicknessFloat;
@@ -669,11 +669,11 @@ int  m_nDragFrameThicknessFloat;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`AFX_GLOBAL_DATA::AFX_GLOBAL_DATA` Oluşturucu, bu üye için 4 piksel başlatır.
+`AFX_GLOBAL_DATA::AFX_GLOBAL_DATA` Oluşturucu bu üyeyi 4 piksel olarak başlatır.
 
-## <a name="onsettingchange"></a> AFX_GLOBAL_DATA::OnSettingChange
+## <a name="onsettingchange"></a>AFX_GLOBAL_DATA:: OnSettingChange
 
-Desktop'ın menü animasyon ve görev autohide özellikleri geçerli durumunu algılar.
+Masaüstünün menü animasyon ve görev çubuğu otomatik gizleme özelliklerinin geçerli durumunu algılar.
 
 ```
 void OnSettingChange();
@@ -681,9 +681,9 @@ void OnSettingChange();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, kullanıcının masaüstü belirli bir öznitelik durumuna framework değişkenleri ayarlar. Bu yöntem, menü animasyon, menü fade ve görev çubuğunda autohide özellikleri geçerli durumunu algılar.
+Bu yöntem, çerçeve değişkenlerini kullanıcının masaüstünün belirli özniteliklerinin durumuna ayarlar. Bu yöntem, menü animasyonu, menü Soldur ve görev çubuğunun otomatik gizleme özelliklerinin geçerli durumunu algılar.
 
-## <a name="registerwindowclass"></a> AFX_GLOBAL_DATA::RegisterWindowClass
+## <a name="registerwindowclass"></a>AFX_GLOBAL_DATA:: RegisterWindowClass
 
 Belirtilen MFC pencere sınıfını kaydeder.
 
@@ -694,19 +694,19 @@ CString RegisterWindowClass(LPCTSTR lpszClassNamePrefix);
 ### <a name="parameters"></a>Parametreler
 
 *lpszClassNamePrefix*<br/>
-[in] Kaydedilecek pencere sınıfı adı.
+'ndaki Kayıt yapılacak pencere sınıfının adı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu yöntem başarılı olursa kayıtlı sınıfın tam adını; Aksi takdirde, bir [kaynak özel durum](exception-processing.md#afxthrowresourceexception).
+Bu yöntem başarılı olursa kayıtlı sınıfın tam adı; Aksi takdirde, [kaynak özel durumu](exception-processing.md#afxthrowresourceexception).
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dönüş değeri, virgülle ayrılmış listesidir *lpszClassNamePrefix* parametre dizesi ve geçerli uygulama örneğinin; tutamaçları onaltılı metin temsillerini ok uygulama imleci İmleç; olan bir tanımlayıcıdır IDC_ARROW ve arka plan Fırçası. MFC pencere sınıflarını kaydetme hakkında daha fazla bilgi için bkz. [AfxRegisterClass](../../mfc/reference/application-information-and-management.md#afxregisterclass).
+Dönüş değeri, *lpszClassNamePrefix* parametre dizesinin iki nokta ile ayrılmış listesidir ve geçerli uygulama örneğinin tanıtıcılarının onaltılık metin gösterimleridir; tanımlayıcısı IDC_ARROW olan ok imleci olan uygulama imleci. ve arka plan Fırçası. MFC pencere sınıflarını kaydetme hakkında daha fazla bilgi için bkz. [AfxRegisterClass](../../mfc/reference/application-information-and-management.md#afxregisterclass).
 
-## <a name="resume"></a> AFX_GLOBAL_DATA::Resume
+## <a name="resume"></a>AFX_GLOBAL_DATA:: özgeçmişi
 
-Görsel stiller ve Windows temaları destekleyen yöntemlere erişmek iç işlev işaretçileri yeniden başlatır.
+Windows temalarını ve görsel stilleri destekleyen yöntemlere erişen iç işlev işaretçileri yeniden başlatılır.
 
 ```
 BOOL Resume();
@@ -714,15 +714,15 @@ BOOL Resume();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE. Hata ayıklama modunda, bu yöntem, bu yöntem başarısız olup olmadığını onaylar.
+Bu yöntem başarılı olursa TRUE; Aksi takdirde, FALSE. Bu yöntem, hata ayıklama modunda bu yöntemin başarısız olup olmadığını onaylar.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, framework aldığında çağrılır [WM_POWERBROADCAST](/windows/desktop/Power/wm-powerbroadcast) ileti.
+Bu yöntem, Framework [WM_POWERBROADCAST](/windows/win32/Power/wm-powerbroadcast) iletisini aldığında çağrılır.
 
-## <a name="setlayeredattrib"></a> AFX_GLOBAL_DATA::SetLayeredAttrib
+## <a name="setlayeredattrib"></a>AFX_GLOBAL_DATA:: SetLayeredAttrib
 
-Windows çağırmak için basit bir yol sağlar [SetLayeredWindowAttributes](/windows/desktop/api/winuser/nf-winuser-setlayeredwindowattributes) yöntemi.
+Windows [SetLayeredWindowAttributes](/windows/win32/api/winuser/nf-winuser-setlayeredwindowattributes) yöntemini çağırmak için basit bir yol sağlar.
 
 ```
 BOOL SetLayeredAttrib(
@@ -734,25 +734,25 @@ BOOL SetLayeredAttrib(
 
 ### <a name="parameters"></a>Parametreler
 
-*HWND*<br/>
-[in] Katmanlı penceresine işleyin.
+*lendiği*<br/>
+'ndaki Katmanlı pencerenin tutamacı.
 
 *crKey*<br/>
-[in] Saydamlık rengi anahtar [Masaüstü Pencere Yöneticisi](/windows/desktop/dwm/dwm-overview) katmanlı pencere oluşturmak için kullanır.
+'ndaki [Masaüstü Pencere Yöneticisi](/windows/win32/dwm/dwm-overview) katmanlı pencereyi oluşturmak için kullandığı saydamlık rengi.
 
 *bAlpha*<br/>
-[in] Pencerenin katmanlı opaklığını açıklamak için kullanılan alfa değeri.
+'ndaki Katmanlı pencerenin opaklığını anlatmak için kullanılan alfa değeri.
 
-*CertOpenStore*<br/>
-[in] Bitsel bir birleşimi (veya) kullanmak için hangi yöntemi parametrelerini belirten bayrak. Kullanılacak LWA_COLORKEY belirtin *crKey* parametre olarak saydam rengi. Kullanılacak LWA_ALPHA belirtin *bAlpha* katmanlı pencere opaklığını belirlemek için parametre.
+*dwFlags*<br/>
+'ndaki Hangi yöntem parametrelerinin kullanılacağını belirten bir bit düzeyinde birleşim (veya). *CrKey* parametresini saydamlık rengi olarak kullanmak için LWA_COLORKEY belirtin. Katmanlı pencerenin opaklığını belirlemek için *bAlpha* parametresini kullanmak üzere LWA_ALPHA belirtin.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.
+Bu yöntem başarılı olursa TRUE; Aksi takdirde, FALSE.
 
-## <a name="setmenufont"></a> AFX_GLOBAL_DATA::SetMenuFont
+## <a name="setmenufont"></a>AFX_GLOBAL_DATA:: SetMenuFont
 
-Belirtilen mantıksal yazı tipi oluşturur.
+Belirtilen mantıksal yazı tipini oluşturur.
 
 ```
 BOOL SetMenuFont(
@@ -763,22 +763,22 @@ BOOL SetMenuFont(
 ### <a name="parameters"></a>Parametreler
 
 *lpLogFont*<br/>
-[in] Bir yazı tipi özniteliklerini içeren bir yapıya yönelik işaretçi.
+'ndaki Bir fontun özniteliklerini içeren bir yapıya yönelik işaretçi.
 
 *bHorz*<br/>
-[in] Metnin yatay olarak çalıştığını belirtmek için TRUE; FALSE metni dikey olarak çalışacağını belirtirsiniz.
+'ndaki Metnin yatay olarak çalışacağını belirtmek için TRUE; Metnin dikey olarak çalıştığını belirtmek için FALSE.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE. Hata ayıklama modunda, bu yöntem, bu yöntem başarısız olup olmadığını onaylar.
+Bu yöntem başarılı olursa TRUE; Aksi takdirde, FALSE. Bu yöntem, hata ayıklama modunda bu yöntemin başarısız olup olmadığını onaylar.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem bir yatay normal yazı tipi, altı çizili bir yazı tipi oluşturur ve bir kalın yazı menü öğeleri varsayılan kullanılır. Bu yöntem, isteğe bağlı olarak normal bir dikey yazı tipi oluşturur. Mantıksal yazı tipleri hakkında daha fazla bilgi için bkz: [CFont::CreateFontIndirect](../../mfc/reference/cfont-class.md#createfontindirect).
+Bu yöntem, varsayılan menü öğelerinde kullanılan yatay bir düzenli yazı tipi, altı çizili yazı tipi ve kalın yazı tipi oluşturur. Bu yöntem, isteğe bağlı olarak normal bir dikey yazı tipi oluşturur. Mantıksal yazı tipleri hakkında daha fazla bilgi için bkz. [CFont:: CreateFontIndirect](../../mfc/reference/cfont-class.md#createfontindirect).
 
-## <a name="updatefonts"></a> AFX_GLOBAL_DATA::UpdateFonts
+## <a name="updatefonts"></a>AFX_GLOBAL_DATA:: UpdateFonts
 
-Framework tarafından kullanılan mantıksal yazı tiplerinin reintializes.
+Framework tarafından kullanılan mantıksal yazı tiplerini yeniden başlatır.
 
 ```
 void UpdateFonts();
@@ -786,43 +786,43 @@ void UpdateFonts();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Mantıksal yazı tipleri hakkında daha fazla bilgi için bkz: `CFont::CreateFontIndirect`.
+Mantıksal yazı tipleri hakkında daha fazla bilgi için `CFont::CreateFontIndirect`bkz.
 
-## <a name="updatesyscolors"></a> AFX_GLOBAL_DATA::UpdateSysColors
+## <a name="updatesyscolors"></a>AFX_GLOBAL_DATA:: UpdateSysColors
 
-Renkler, renk derinliği, Fırçalar, kalemler ve framework tarafından kullanılan görüntüleri başlatır.
+Çerçeve tarafından kullanılan renkleri, renk derinliğini, fırçaları, kalemleri ve görüntüleri başlatır.
 
 ```
 void UpdateSysColors();
 ```
 
-## <a name="biswindows7"></a> AFX_GLOBAL_DATA::bIsWindows7
+## <a name="biswindows7"></a>AFX_GLOBAL_DATA::bIsWindows7
 
-Uygulama altında Windows 7 veya üzeri yürütülmekte olan olup olmadığını gösterir.
+Uygulamanın Windows 7 veya sonraki sürümlerinde yürütülüp yürütülmediğini belirtir.
 
 ```
 BOOL bIsWindows7;
 ```
 
-## <a name="clractivecaptiongradient"></a> AFX_GLOBAL_DATA::clrActiveCaptionGradient
+## <a name="clractivecaptiongradient"></a>AFX_GLOBAL_DATA:: clrActiveCaptionGradient
 
-Etkin Başlık gradyan rengini belirtir. Genellikle bölmeleri yerleştirme için kullanılır.
+Etkin açıklamalı alt yazısının gradyan rengini belirtir. Genellikle yerleştirme bölmeleri için kullanılır.
 
 ```
 COLORREF clrActiveCaptionGradient;
 ```
 
-## <a name="clrinactivecaptiongradient"></a> AFX_GLOBAL_DATA::clrInactiveCaptionGradient
+## <a name="clrinactivecaptiongradient"></a>AFX_GLOBAL_DATA:: clrInactiveCaptionGradient
 
-Etkin olmayan başlık gradyan rengini belirtir. Genellikle bölmeleri yerleştirme için kullanılır.
+Etkin olmayan açıklamalı alt yazısının gradyan rengini belirtir. Genellikle yerleştirme bölmeleri için kullanılır.
 
 ```
 COLORREF clrInactiveCaptionGradient;
 ```
 
-## <a name="getitaskbarlist"></a> AFX_GLOBAL_DATA::GetITaskbarList
+## <a name="getitaskbarlist"></a>AFX_GLOBAL_DATA:: GetITaskbarList
 
-Oluşturur ve genel verilerde yönelik bir işaretçi depolayan `ITaskBarList` arabirimi.
+Genel verilerde `ITaskBarList` arabirime yönelik bir işaretçi oluşturur ve depolar.
 
 ```
 ITaskbarList *GetITaskbarList();
@@ -830,11 +830,11 @@ ITaskbarList *GetITaskbarList();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir işaretçi `ITaskbarList` bir görev çubuğunda liste nesnesi oluşturma başarılı olursa; arabirimi Oluşturulması başarısız olursa veya geçerli işletim sistemi Windows 7'den küçükse null değerini DÖNDÜRÜR.
+Görev çubuğu listesi nesnesinin `ITaskbarList` oluşturulması başarılı olursa arabirime yönelik bir işaretçi. Oluşturma başarısız olursa veya geçerli Işletim sistemi Windows 7 ' den azsa NULL olur.
 
-## <a name="getitaskbarlist3"></a> AFX_GLOBAL_DATA::GetITaskbarList3
+## <a name="getitaskbarlist3"></a>AFX_GLOBAL_DATA::GetITaskbarList3
 
-Oluşturur ve genel verilerde yönelik bir işaretçi depolayan `ITaskBarList3` arabirimi.
+Genel verilerde `ITaskBarList3` arabirime yönelik bir işaretçi oluşturur ve depolar.
 
 ```
 ITaskbarList3 *GetITaskbarList3();
@@ -842,11 +842,11 @@ ITaskbarList3 *GetITaskbarList3();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir işaretçi `ITaskbarList3` bir görev çubuğunda liste nesnesi oluşturma başarılı olursa; arabirimi Oluşturulması başarısız olursa veya geçerli işletim sistemi Windows 7'den küçükse null değerini DÖNDÜRÜR.
+Görev çubuğu listesi nesnesinin `ITaskbarList3` oluşturulması başarılı olursa arabirime yönelik bir işaretçi. Oluşturma başarısız olursa veya geçerli Işletim sistemi Windows 7 ' den azsa NULL olur.
 
-## <a name="getshellautohidebars"></a> AFX_GLOBAL_DATA::GetShellAutohideBars
+## <a name="getshellautohidebars"></a>AFX_GLOBAL_DATA:: Getshellautohideçubuklarının
 
-Kabuk otomatik konumlarını çubukları Gizle belirler.
+Kabuk otomatik gizleme çubuklarının konumlarını belirler.
 
 ```
 int GetShellAutohideBars();
@@ -854,19 +854,19 @@ int GetShellAutohideBars();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir tamsayı değeri otomatik konumlarını belirtin kodlanmış bayrağı ile çubukları gizleyin. Bunu, aşağıdaki değerleri birleştirmek: AFX_AUTOHIDE_BOTTOM, AFX_AUTOHIDE_TOP, AFX_AUTOHIDE_LEFT, AFX_AUTOHIDE_RIGHT.
+Otomatik gizleme çubuklarının konumlarını belirten kodlanmış bayraklar içeren bir tamsayı değeri. Aşağıdaki değerleri birleştirebilirler: AFX_AUTOHIDE_BOTTOM, AFX_AUTOHIDE_TOP, AFX_AUTOHIDE_LEFT, AFX_AUTOHIDE_RIGHT.
 
-## <a name="releasetaskbarrefs"></a> AFX_GLOBAL_DATA::ReleaseTaskBarRefs
+## <a name="releasetaskbarrefs"></a>AFX_GLOBAL_DATA:: ReleaseTaskBarRefs
 
-Serbest arabirimler üzerinden alınan `GetITaskbarList` ve `GetITaskbarList3` yöntemleri.
+`GetITaskbarList` Ve`GetITaskbarList3` yöntemleri aracılığıyla elde edilen arabirimleri yayınlar.
 
 ```
 void ReleaseTaskBarRefs();
 ```
 
-## <a name="shellcreateitemfromparsingname"></a> AFX_GLOBAL_DATA::ShellCreateItemFromParsingName
+## <a name="shellcreateitemfromparsingname"></a>AFX_GLOBAL_DATA:: Shellcreateıtemfromparsingname
 
-Oluşturur ve bir kabuk öğesi nesnesi ayrıştırma adından başlatır.
+Ayrıştırma adından bir kabuk öğesi nesnesi oluşturur ve başlatır.
 
 ```
 HRESULT ShellCreateItemFromParsingName(
@@ -879,35 +879,35 @@ HRESULT ShellCreateItemFromParsingName(
 ### <a name="parameters"></a>Parametreler
 
 *pszPath*<br/>
-[in] Bir görünen ad için bir işaretçi.
+'ndaki Görünen ad işaretçisi.
 
-*pbc*<br/>
-Bir ayrıştırma işlemi denetleyen bir bağlama bağlamı için bir işaretçi.
+*PBC*<br/>
+Ayrıştırma işlemini denetleyen bağlama bağlamına yönelik bir işaretçi.
 
-*riid*<br/>
-Başvuru için bir arabirim kimliği.
+*riıd*<br/>
+Arabirim KIMLIĞINE başvuru.
 
-*ppv*<br/>
-[out] Bu işlev döndürüldüğünde, istenen arabirim işaretçisi içerir *riid*. Bu genellikle olacaktır `IShellItem` veya `IShellItem2`.
+*PPV*<br/>
+dışı Bu işlev döndüğünde, *riıd*içinde istenen arabirim işaretçisini içerir. Bu genellikle `IShellItem` veya `IShellItem2`olur.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa; başarılıysa S_OK döndürür Aksi takdirde bir hata değeri.
+Başarılıysa S_OK döndürür; Aksi halde bir hata değeri.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Hiyerarşi Grafiği](../hierarchy-chart.md)<br/>
 [Yapılar, Stiller, Geri Çağrılar ve İleti Eşlemeleri](structures-styles-callbacks-and-message-maps.md)<br/>
-[COLORREF](/windows/desktop/gdi/colorref)<br/>
-[Bölümler ve durumlar](/windows/desktop/controls/parts-and-states)<br/>
+[COLORREF](/windows/win32/gdi/colorref)<br/>
+[Parçalar ve durumlar](/windows/win32/controls/parts-and-states)<br/>
 [CDC::DrawText](cdc-class.md#drawtext)<br/>
-[DrawThemeTextEx](/windows/desktop/api/uxtheme/nf-uxtheme-drawthemetextex)<br/>
-[Masaüstü Pencere Yöneticisi](/windows/desktop/dwm/dwm-overview)<br/>
-[DWM bileşimini etkinleştir ve denetle](/windows/desktop/dwm/composition-ovw)<br/>
+[DrawThemeTextEx](/windows/win32/api/uxtheme/nf-uxtheme-drawthemetextex)<br/>
+[Masaüstü Pencere Yöneticisi](/windows/win32/dwm/dwm-overview)<br/>
+[DWM birleşimini etkinleştirin ve denetleyin](/windows/win32/dwm/composition-ovw)<br/>
 [UI Otomasyonu ve Microsoft Active Accessibility](/dotnet/framework/ui-automation/ui-automation-and-microsoft-active-accessibility)<br/>
-[GetSysColor işlevi](/windows/desktop/api/winuser/nf-winuser-getsyscolor)<br/>
-[GetSysColorBrush](/windows/desktop/api/winuser/nf-winuser-getsyscolorbrush)<br/>
-[NONCLIENTMETRICS yapısı](/windows/desktop/api/winuser/ns-winuser-tagnonclientmetricsa)<br/>
+[Getsyscrenkli Işlevi](/windows/win32/api/winuser/nf-winuser-getsyscolor)<br/>
+[GetSysColorBrush](/windows/win32/api/winuser/nf-winuser-getsyscolorbrush)<br/>
+[CLIENTNONÖLÇÜM yapısı](/windows/win32/api/winuser/ns-winuser-nonclientmetricsw)<br/>
 [AfxRegisterClass](application-information-and-management.md#afxregisterclass)<br/>
 [AfxThrowResourceException](exception-processing.md#afxthrowresourceexception)<br/>
-[SetLayeredWindowAttributes](/windows/desktop/api/winuser/nf-winuser-setlayeredwindowattributes)
+[SetLayeredWindowAttributes](/windows/win32/api/winuser/nf-winuser-setlayeredwindowattributes)

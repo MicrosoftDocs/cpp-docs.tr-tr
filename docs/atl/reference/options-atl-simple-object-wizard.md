@@ -1,70 +1,70 @@
 ---
-title: ATL Basit Nesne Sihirbazı Seçenekleri
+title: Seçenekler, ATL basit nesne Sihirbazı
 ms.date: 11/04/2016
 f1_keywords:
 - vc.codewiz.class.atl.simple.options
 helpviewer_keywords:
 - ATL Simple Object Wizard, options
 ms.assetid: 125fe179-942d-4181-8b82-33e92e1fd779
-ms.openlocfilehash: 327c78b00cbe69fcce4f055b0ae63c4dc2e5a7d9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e92f4909907645fc317590fbcc3601887346c642
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62197310"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69495165"
 ---
-# <a name="options-atl-simple-object-wizard"></a>ATL Basit Nesne Sihirbazı Seçenekleri
+# <a name="options-atl-simple-object-wizard"></a>Seçenekler, ATL basit nesne Sihirbazı
 
-ATL Basit Nesne Sihirbazı bu sayfa, daha fazla verimlilik ve nesne için hata destek tasarlamak için kullanın.
+Nesne için daha fazla verimlilik ve hata desteğini tasarlamak üzere ATL basit nesne Sihirbazı 'nın bu sayfasını kullanın.
 
-ATL projeleri ve ATL COM sınıfları hakkında daha fazla bilgi için bkz. [ATL COM Masaüstü bileşenleri](../../atl/atl-com-desktop-components.md).
+ATL projeleri ve ATL COM sınıfları hakkında daha fazla bilgi için bkz. [atl com Masaüstü bileşenleri](../../atl/atl-com-desktop-components.md).
 
 - **İş parçacığı modeli**
 
-   İş parçacıkları yönetmek için bir yöntemi gösterir. Varsayılan olarak projenin kullandığı **apartman** iş parçacığı oluşturma.
+   İş parçacıklarını yönetme yöntemini gösterir. Varsayılan olarak, proje **apartman** iş parçacığı kullanır.
 
-   Bkz: [projenin iş parçacıklı Model belirtme](../../atl/specifying-the-threading-model-for-a-project-atl.md) daha fazla bilgi için.
+   Daha fazla bilgi için bkz. [projenin Iş parçacığı modelini belirtme](../../atl/specifying-the-threading-model-for-a-project-atl.md) .
 
    |Seçenek|Açıklama|
    |------------|-----------------|
-   |**Tek**|Nesne her zaman birincil COM iş parçacığında çalışır belirtir. Bkz: [Single-Threaded apartmanlar](/windows/desktop/com/single-threaded-apartments) ve [Inprocserver32](/windows/desktop/com/inprocserver32) daha fazla bilgi için.|
-   |**Grup**|Nesne grubu iş parçacığı kullandığını belirtir. Eşdeğer tek iş parçacığı grubu. Her nesne bir boş iş parçacıklı bileşen nesne ömrü için kendi iş parçacığı için bir grup atanır; Ancak, birden çok iş parçacığı, birden çok nesne için kullanılabilir. Her grup, belirli bir iş parçacığına bağlıdır ve bir Windows ileti pompası (varsayılan) sahiptir.<br /><br /> Bkz: [Single-Threaded apartmanlar](/windows/desktop/com/single-threaded-apartments) daha fazla bilgi için.|
-   |**Her ikisi de**|Nesne grubu ya da boş iş parçacığı, oluşturulduktan bir iş parçacığının hangi tür gelen bağlı olarak kullanabileceğiniz belirtir.|
-   |**Ücretsiz**|Nesneyi serbest iş parçacığı oluşturma kullandığını belirtir. Ücretsiz iş parçacığı için bir çoklu iş parçacığı apartman modeli eşdeğerdir. Bkz: [birden çok iş parçacıklı apartmanlar](/windows/desktop/com/multithreaded-apartments) daha fazla bilgi için.|
-   |**Nötr**|Nesne birden çok iş parçacıklı apartmanlar yönelik yönergeleri takip eder, ancak iş parçacığı herhangi bir türden yürütebilirsiniz belirtir.|
+   |**Sunuculu**|Nesnenin her zaman birincil COM iş parçacığında çalışacağını belirtir. Daha fazla bilgi için bkz. [tek Iş parçacıklı Apartments](/windows/win32/com/single-threaded-apartments) ve [ınprocserver32](/windows/win32/com/inprocserver32) .|
+   |**Yapı**|Nesnenin apartman iş parçacığı kullandığını belirtir. Tek iş parçacığı grubu ile eşdeğerdir. Bir apartman iş parçacıklı bileşenin her nesnesine, nesne ömrü boyunca iş parçacığı için bir grup atanır; Ancak birden çok nesne için birden çok iş parçacığı kullanılabilir. Her grup belirli bir iş parçacığına bağlanır ve bir Windows ileti göndericisi (varsayılan) vardır.<br /><br /> Daha fazla bilgi için bkz. [tek Iş parçacıklı apartmanlar](/windows/win32/com/single-threaded-apartments) .|
+   |**İs**|Nesnenin, oluşturduğu iş parçacığı türünden bağımsız olarak Apartment veya Free iş parçacığı kullanıp kullanbileceğini belirtir.|
+   |**Ücretsiz**|Nesnenin serbest iş parçacığı kullandığını belirtir. Ücretsiz iş parçacığı, bir çoklu iş parçacığı grubu modeliyle eşdeğerdir. Daha fazla bilgi için bkz. [Çoklu Iş parçacıklı Apartments](/windows/win32/com/multithreaded-apartments) .|
+   |**Kültür**|Nesnenin çok iş parçacıklı apartmanlar için yönergeleri takip eder, ancak her türlü iş parçacığı üzerinde yürütebileceğini belirtir.|
 
 - **Toplama**
 
-   Nesne kullanıp kullanmadığını gösteren [toplama](/windows/desktop/com/aggregation). Toplama nesnesine hangi istemcilere göstermek için arabirimleri seçer ve toplama nesnesi bunlar yönetimlerini uygularsanız gibi arabirimler gösterilir. Toplama nesnesi, istemciler yalnızca toplama nesnesi ile iletişim kurar.
+   Nesnenin [toplamayı](/windows/win32/com/aggregation)kullanıp kullanmadığını belirtir. Toplama nesnesi, istemcilere hangi arabirimlerin sunumasını seçer ve arabirimler toplama nesnesi tarafından uygulandıkları gibi gösterilir. Toplama nesnesinin istemcileri yalnızca toplama nesnesiyle iletişim kurar.
 
    |Seçenek|Açıklama|
    |------------|-----------------|
-   |**Evet**|Nesnenin toplanabilir belirtir. Varsayılan.|
-   |**Yok**|Nesne değil toplanır belirtir.|
-   |**Yalnızca**|Nesne toplanması gereken belirtir.|
+   |**Evet**|Nesnenin toplanabilecek olduğunu belirtir. Varsayılan.|
+   |**Eşleşen**|Nesnenin toplanmadığını belirtir.|
+   |**Yalnızca**|Nesnenin toplanması gerektiğini belirtir.|
 
 - **Arabirimi**
 
-   Nesne destekleyen arabirim türünü belirtir. Varsayılan olarak, nesne çift arabirim destekler.
+   Nesnenin desteklediği arabirimin türünü gösterir. Varsayılan olarak, nesnesi bir çift arabirimi destekler.
 
    |Seçenek|Açıklama|
    |------------|-----------------|
-   |**Çift**|Nesne çift arabirim desteklediğini belirtir (özel arabirim işlevleri ek geç bağlama, vtable sahiptir `IDispatch` yöntemleri). Her iki COM istemcilerinin sağlar ve [Otomasyon denetleyicileri](../../mfc/automation-clients.md) nesneye erişim. Varsayılan.|
-   |**Özel**|Nesne (özel arabirim işlevleri kendi vtable sahiptir) özel bir arabirim desteklediğini belirtir. Özel arabirim özellikle işlem sınırları arasında çift arabirim, daha hızlı olabilir.<br /><br /> - **Otomasyon uyumlu** özel arabirim desteğine sahip bir nesneye erişmek için denetleyicileri Otomasyon sağlar.|
+   |**Çift**|Nesnenin çift arabirimi desteklediğini belirtir (vtable, özel arabirim işlevlerine ve geç bağlama `IDispatch` yöntemlerine sahiptir). Hem COM istemcilerinin hem de [Otomasyon denetleyicilerinin](../../mfc/automation-clients.md) nesneye erişmesine izin verir. Varsayılan.|
+   |**Özel**|Nesnenin özel arabirimi desteklediğini belirtir (vtable 'ın özel arabirim işlevleri vardır). Özel bir arabirim, özellikle işlem sınırları genelinde bir çift arabirimden daha hızlı olabilir.<br /><br /> - **Otomasyon uyumlu** Otomasyon denetleyicilerinin özel arabirim desteğine sahip bir nesneye erişmesine izin verir.|
 
 - **Destek**
 
-   Nesne için ek destek gösterir.
+   Nesne için ek desteği gösterir.
 
    |Seçenek|Açıklama|
    |------------|-----------------|
-   |**ISupportErrorInfo**|Desteği oluşturur [ISupportErrorInfo](../../atl/reference/isupporterrorinfoimpl-class.md) istemciye hata bilgilerini nesnenin dönebilmeniz arabirim.|
-   |**Bağlantı noktaları**|Nesneniz için bağlantı noktaları, nesnenin sınıfı türetilen yaparak sağlar [Iconnectionpointcontainerımpl](../../atl/reference/iconnectionpointcontainerimpl-class.md).|
-   |**Ücretsiz iş parçacıklı Sıralayıcı**|Aynı işlemdeki iş parçacıkları arasında verimli bir şekilde arabirim işaretçilerini sıralama bir ücretsiz iş parçacıklı bir Sıralayıcı nesnesini oluşturur. Nesnesi için kullanılabilir **hem** iş parçacığı modeli olarak.|
-   |**IObjectWithSite** (IE nesne desteği)|Implements [Iobjectwithsiteımpl](../../atl/reference/iobjectwithsiteimpl-class.md), bir kapsayıcıda bir nesne ve alt site arasındaki iletişimi desteklemek için basit bir yol sağlar.|
+   |**Iupporterrorınfo**|, Nesnenin istemciye hata bilgilerini döndürebilmesi için [ıupporterrorınfo](../../atl/reference/isupporterrorinfoimpl-class.md) arabirimi için destek oluşturur.|
+   |**Bağlantı noktaları**|, Nesnenizin sınıfının [IConnectionPointContainerImpl](../../atl/reference/iconnectionpointcontainerimpl-class.md)'den türemesini sağlayarak nesneniz için bağlantı noktalarını mümkün hale getirir.|
+   |**Serbest iş parçacıklı Sıralayıcı**|Aynı işlemdeki iş parçacıkları arasında arabirim işaretçilerini etkili bir şekilde sıralamak için serbest iş parçacıklı Sıralayıcı nesnesi oluşturur. **Her Ikisini de** iş parçacığı modeli olarak belirten nesne için kullanılabilir.|
+   |**IObjectWithSite** (IE nesne desteği)|Bir kapsayıcı içindeki bir nesne ile sitesi arasındaki iletişimi desteklemeye yönelik basit bir yol sağlayan [IObjectWithSiteImpl](../../atl/reference/iobjectwithsiteimpl-class.md)'yi uygular.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [ATL Basit Nesne Sihirbazı](../../atl/reference/atl-simple-object-wizard.md)<br/>
-[ATL Basit Nesne](../../atl/reference/adding-an-atl-simple-object.md)<br/>
-[İşlem sunucusu iş parçacığı oluşturma sorunları](/windows/desktop/com/in-process-server-threading-issues)
+[ATL basit nesnesi](../../atl/reference/adding-an-atl-simple-object.md)<br/>
+[Işlem içi sunucu Iş parçacığı sorunları](/windows/win32/com/in-process-server-threading-issues)

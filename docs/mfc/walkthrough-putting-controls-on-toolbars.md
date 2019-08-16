@@ -1,102 +1,102 @@
 ---
-title: 'İzlenecek yol: Araç çubuklarına denetimler yerleştirme'
+title: 'İzlenecek yol: Araç çubuklarına denetimleri yerleştirme'
 ms.date: 04/25/2019
 helpviewer_keywords:
 - Customize dialog box, adding controls
 - toolbars [MFC], adding controls
 ms.assetid: 8fc94bdf-0da7-45d9-8bc4-52b7b1edf205
-ms.openlocfilehash: f3e4653d1be2f4a1830288ba724d20ddb7610958
-ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
+ms.openlocfilehash: 0c62a8b484cb666427f873244221afec5d4719da
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64558145"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69510731"
 ---
-# <a name="walkthrough-putting-controls-on-toolbars"></a>İzlenecek yol: Araç çubuklarına denetimler yerleştirme
+# <a name="walkthrough-putting-controls-on-toolbars"></a>İzlenecek yol: Araç çubuklarına denetimleri yerleştirme
 
-Bu makalede, bir Windows denetimine bir araç çubuğu içeren bir araç çubuğu düğmesi eklemeyi açıklar. MFC içinde araç çubuğu düğmesi olmalıdır bir [CMFCToolBarButton sınıfı](../mfc/reference/cmfctoolbarbutton-class.md)-türetilmiş sınıf, örneğin [CMFCToolBarComboBoxButton sınıfı](../mfc/reference/cmfctoolbarcomboboxbutton-class.md), [CMFCToolBarEditBoxButton sınıfı](../mfc/reference/cmfctoolbareditboxbutton-class.md), [CMFCDropDownToolbarButton sınıfı](../mfc/reference/cmfcdropdowntoolbarbutton-class.md), veya [CMFCToolBarMenuButton sınıfı](../mfc/reference/cmfctoolbarmenubutton-class.md).
+Bu makalede bir araç çubuğuna Windows denetimi içeren bir araç çubuğu düğmesinin nasıl ekleneceği açıklanır. MFC 'de bir araç çubuğu düğmesi [CMFCToolBarButton sınıfında](../mfc/reference/cmfctoolbarbutton-class.md)türetilmiş bir sınıf olmalıdır, örneğin [CMFCToolBarComboBoxButton sınıfı](../mfc/reference/cmfctoolbarcomboboxbutton-class.md), [CMFCToolBarEditBoxButton sınıfı](../mfc/reference/cmfctoolbareditboxbutton-class.md), [CMFCDropDownToolbarButton sınıfı](../mfc/reference/cmfcdropdowntoolbarbutton-class.md)veya [ Cmfctoolbarmenubtan sınıfı](../mfc/reference/cmfctoolbarmenubutton-class.md).
 
-## <a name="adding-controls-to-toolbars"></a>Araç çubuklarına denetimler ekleme
+## <a name="adding-controls-to-toolbars"></a>Araç çubuklarına denetim ekleme
 
-Araç çubuğuna bir denetim eklemek için aşağıdaki adımları izleyin:
+Bir araç çubuğuna denetim eklemek için aşağıdaki adımları izleyin:
 
-1. Üst araç çubuğunda kaynağında düğme için bir işlevsiz kaynak kimliği saklı tutarız. Düğmeleri kullanarak oluşturma hakkında daha fazla bilgi için **araç çubuğu Düzenleyicisi** Visual Studio'da görmek [araç çubuğu Düzenleyicisi](../windows/toolbar-editor.md) makalesi.
+1. Ana araç çubuğu kaynağında düğme için bir kukla kaynak KIMLIĞI ayırın. Visual Studio 'da **araç çubuğu düzenleyicisini** kullanarak düğme oluşturma hakkında daha fazla bilgi Için [Araç Çubuğu Düzenleyicisi](../windows/toolbar-editor.md) makalesine bakın.
 
-1. Tüm bit eşlemler üst araç çubuğu düğmesi için araç çubuğu görüntüsü (düğmesinin simgesi) ayırın.
+1. Ana araç çubuğunun tüm bit eşlemleriyle ilgili düğme için bir araç çubuğu görüntüsünü (düğme simgesi) ayırın.
 
-1. İşler ileti işleyicisi `AFX_WM_RESETTOOLBAR` iletisi, aşağıdaki adımları uygulayın:
+1. `AFX_WM_RESETTOOLBAR` İletiyi işleyen ileti işleyicisinde, aşağıdaki adımları uygulayın:
 
-   1. Düğme denetimini kullanarak oluşturmak bir `CMFCToolbarButton`-türetilmiş sınıf.
+   1. Türetilmiş bir `CMFCToolbarButton`sınıf kullanarak düğme denetimini oluşturun.
 
-   1. İşlevsiz düğmesini kullanarak yeni denetim ile değiştirin. [CMFCToolBar::ReplaceButton](../mfc/reference/cmfctoolbar-class.md#replacebutton). Yığında bir düğme nesnesi olduğundan oluşturabilirsiniz `ReplaceButton` düğmesi nesnesini kopyalar ve kopyayı korur.
+   1. İşlevsiz düğmesini [CMFCToolBar:: ReplaceButton](../mfc/reference/cmfctoolbar-class.md#replacebutton)kullanarak yeni denetim ile değiştirin. Düğme nesnesini `ReplaceButton` kopyalar ve kopyayı koruduğundan, düğme nesnesini yığında oluşturabilirsiniz.
 
 > [!NOTE]
->  Uygulamanızda Özelleştirme etkinleştirilirse, araç çubuğunu kullanarak sıfırlamanız gerekebilir **sıfırlama** düğmesini **araç çubukları** sekmesinde **Özelleştir** görmek için iletişim kutusu uygulamanızı yeniden derlemeden sonra denetiminde güncelleştirildi. Araç çubuğu durumu Windows kayıt defterinde kaydedilir ve kayıt defteri bilgilerini yüklenir ve sonra uygulanan `ReplaceButton` yöntemi, uygulama başlatma sırasında yürütülür.
+>  Uygulamanızda özelleştirmeyi etkinleştirdiyseniz, yeniden derlemeden sonra uygulamanızdaki güncelleştirilmiş denetimi görmek için **Özelleştir** Iletişim kutusunun **araç çubukları** sekmesindeki **Sıfırla** düğmesini kullanarak araç çubuğunu sıfırlamanız gerekebilir. Araç çubuğu durumu Windows kayıt defterine kaydedilir ve kayıt defteri bilgileri, uygulama başlatılırken `ReplaceButton` Yöntem yürütüldükten sonra yüklenir ve uygulanır.
 
-## <a name="toolbar-controls-and-customization"></a>Araç çubuğu denetimleri ve özelleştirme
+## <a name="toolbar-controls-and-customization"></a>Araç çubuğu denetimleri ve özelleştirmesi
 
-**Komutları** sekmesinde **Özelleştir** iletişim kutusu uygulamada kullanılabilir komutların listesini içerir. Varsayılan olarak, **Özelleştir** iletişim kutusunda uygulama menüleri işler ve her bir kategorideki menü standart araç çubuğu düğmeleri listesini oluşturur. Araç çubuğu denetimleri sağlayan genişletilmiş işlevselliği tutmak için standart araç çubuğu düğmesi içinde özel denetimi ile değiştirmelisiniz **Özelleştir** iletişim kutusu.
+**Özelleştir** Iletişim kutusunun **Komutlar** sekmesi, uygulamada kullanılabilen komutların bir listesini içerir. Varsayılan olarak, **Özelleştir** iletişim kutusu uygulama menülerini işler ve her bir menü kategorisinde Standart araç çubuğu düğmelerinin bir listesini oluşturur. Araç çubuğu denetimlerinin sağladığı Genişletilmiş işlevselliği korumak için, Standart araç çubuğu düğmesini **Özelleştir** iletişim kutusundaki özel denetimle değiştirmelisiniz.
 
-Özelleştirme etkinleştirdiğinizde, oluşturduğunuz **Özelleştir** özelleştirme işleyici iletişim kutusunda `OnViewCustomize` kullanarak [CMFCToolBarsCustomizeDialog sınıfı](../mfc/reference/cmfctoolbarscustomizedialog-class.md) sınıfı. Görüntü önce **Özelleştir** iletişim kutusunu çağırarak [CMFCToolBarsCustomizeDialog::Create](../mfc/reference/cmfctoolbarscustomizedialog-class.md#create), çağrı [CMFCToolBarsCustomizeDialog::ReplaceButton](../mfc/reference/cmfctoolbarscustomizedialog-class.md#replacebutton) değiştirmek için Yeni denetimi ile standart düğmesi.
+Özelleştirmeyi etkinleştirdiğinizde, [CMFCToolBarsCustomizeDialog Class](../mfc/reference/cmfctoolbarscustomizedialog-class.md) sınıfını kullanarak özelleştirme işleyicisinde `OnViewCustomize` özelleştirme iletişim kutusunu oluşturursunuz. [CMFCToolBarsCustomizeDialog:: Create](../mfc/reference/cmfctoolbarscustomizedialog-class.md#create)öğesini çağırarak **Özelleştir** iletişim kutusunu görüntülemeden önce, standart düğmeyi yeni denetimle değiştirmek Için [CMFCToolBarsCustomizeDialog:: ReplaceButton](../mfc/reference/cmfctoolbarscustomizedialog-class.md#replacebutton) öğesini çağırın.
 
-## <a name="example-creating-a-find-combo-box"></a>Örnek: Bir bulma birleşik giriş kutusu oluşturma
+## <a name="example-creating-a-find-combo-box"></a>Örnek: Find açılan kutusu oluşturma
 
-Bu bölüm nasıl oluşturulacağını açıklar bir **Bul** araç çubuğunda görünür ve son kullanılan arama dizelerini içeren birleşik giriş kutusu denetimi. Kullanıcı denetiminde bir dizeyi yazın ve ardından bir belge aramak için enter tuşuna basın veya ana kareye odağı dönmek için ESC tuşuna basın. Bu örnekte, belgeyi görüntülendiğini varsayılmaktadır. bir [CEditView sınıfı](../mfc/reference/ceditview-class.md)-görünüm türetilmiş.
+Bu bölümde, bir araç çubuğunda görüntülenen ve en son kullanılan arama dizelerini içeren bir arama açılan kutusu denetiminin nasıl oluşturulacağı açıklanmaktadır. Kullanıcı denetimde bir dize yazabilir ve sonra bir belge aramak için ENTER tuşuna basabilir ya da odağı ana çerçeveye döndürmek için çıkış tuşuna basabilir. Bu örnek, belgenin bir [CEditView sınıfı](../mfc/reference/ceditview-class.md)türetilmiş görünümünde görüntülendiğini varsayar.
 
-### <a name="creating-the-find-control"></a>Bul denetiminin oluşturma
+### <a name="creating-the-find-control"></a>Bul denetimi oluşturma
 
-İlk olarak, oluşturma **Bul** birleşik giriş kutusu denetimi:
+İlk olarak, **bulma** açılan kutusu denetimini oluşturun:
 
-1. Düğme ve kendi komutları için uygulama kaynakları ekleyin:
+1. Uygulama kaynaklarına düğme ve komutlarını ekleyin:
 
-   1. Uygulama kaynakları ile yeni bir düğme eklemek bir `ID_EDIT_FIND` uygulamanızdaki bir araç çubuğuna ve araç ile ilişkili herhangi bir bit eşlemler komut kimliği.
+   1. Uygulama kaynaklarında, uygulamanızdaki bir araç çubuğuna ve araç çubuğuyla ilişkili `ID_EDIT_FIND` tüm bit eşlemlere komut kimliğiyle yeni bir düğme ekleyin.
 
-   1. Yeni Menü öğesiyle oluşturma `ID_EDIT_FIND` komut kimliği.
+   1. `ID_EDIT_FIND` Komut kimliğiyle yeni bir menü öğesi oluşturun.
 
-   1. Yeni bir dize "için dize tablosu text\nFind bulma" ekleyin ve atayın bir `ID_EDIT_FIND_COMBO` komut kimliği. Bu kimliği komut kimliği kullanılacak **Bul** birleşik giriş kutusu düğmesi.
+   1. Dize tablosuna "Text\nFind bul" dizesini ekleyin ve bir `ID_EDIT_FIND_COMBO` komut kimliği atayın. Bu KIMLIK, açılan kutu **bul** DÜĞMESININ komut kimliği olarak kullanılacaktır.
 
         > [!NOTE]
-        > Çünkü `ID_EDIT_FIND` tarafından işlenen standart bir komuttur `CEditView`, özel bir işleyici bu komut için uygulama gerekmez.  Ancak, yeni bir komut işleyici uygulamalıdır `ID_EDIT_FIND_COMBO`.
+        > `ID_EDIT_FIND` Tarafından`CEditView`işlenen standart bir komut olduğundan, bu komut için özel bir işleyici uygulamanız gerekmez.  Ancak, yeni komut `ID_EDIT_FIND_COMBO`için bir işleyici uygulamanız gerekir.
 
-1. Yeni bir sınıf oluşturun `CFindComboBox`, türetilmiş [CComboBox sınıfı](../mfc/reference/ccombobox-class.md).
+1. [CComboBox sınıfından](../mfc/reference/ccombobox-class.md)türetilmiş yeni `CFindComboBox`bir sınıf oluşturun.
 
-1. İçinde `CFindComboBox` sınıfı, geçersiz kılma `PreTranslateMessage` sanal yöntem. Bu yöntem işlemek birleşik giriş kutusu tanıyacak [WM_KEYDOWN](/windows/desktop/inputdev/wm-keydown) ileti. Kullanıcı escape tuşu değerse (`VK_ESCAPE`), odak noktası ana çerçeve penceresine geri dönün. Kullanıcı Enter tuşunu değerse (`VK_ENTER`), sonrası ana çerçeve penceresine bir `WM_COMMAND` içeren ileti `ID_EDIT_FIND_COMBO` komut kimliği.
+1. Sınıfında, `PreTranslateMessage` sanal yöntemi geçersiz kılın. `CFindComboBox` Bu yöntem, [WM_KEYDOWN](/windows/win32/inputdev/wm-keydown) iletisini işlemek için Birleşik giriş kutusunun etkinleştirecektir. Kullanıcı çıkış anahtarını (`VK_ESCAPE`) ziyaret ederseniz, odağı ana çerçeve penceresine döndürün. Kullanıcı ENTER tuşuna (`VK_ENTER`) rastluyorsa, ana çerçeve penceresine `ID_EDIT_FIND_COMBO` komut kimliğini içeren bir `WM_COMMAND` ileti gönderin.
 
-1. Sınıfı için oluşturma **Bul** birleşik giriş kutusu düğmesi, türetilen [CMFCToolBarComboBoxButton sınıfı](../mfc/reference/cmfctoolbarcomboboxbutton-class.md). Bu örnekte, adlı `CFindComboButton`.
+1. [CMFCToolBarComboBoxButton sınıfından](../mfc/reference/cmfctoolbarcomboboxbutton-class.md)türetilen Birleşik giriş kutusu **bul** düğmesi için bir sınıf oluşturun. Bu örnekte, olarak adlandırılmıştır `CFindComboButton`.
 
-1. Oluşturucusuna `CMFCToolbarComboBoxButton` üç parametreleri alır: düğme, düğme görüntü dizini ve birleşik giriş kutusunun stili komut kimliği. Bu parametreleri aşağıdaki gibi ayarlayın:
+1. Öğesinin `CMFCToolbarComboBoxButton` Oluşturucusu üç parametre alır: düğmenin komut kimliği, düğme görüntüsü dizini ve Birleşik giriş kutusunun stili. Bu parametreleri aşağıdaki şekilde ayarlayın:
 
-   1. Geçirmek `ID_EDIT_FIND_COMBO` olarak komut kimliği.
+   1. Komutunu komut kimliği olarak geçirin. `ID_EDIT_FIND_COMBO`
 
-   1. Kullanım [CCommandManager::GetCmdImage](reference/internal-classes.md) ile `ID_EDIT_FIND` resim dizinini alınamıyor.
+   1. Görüntü dizinini almak `ID_EDIT_FIND` için [CCommandManager:: GetCmdImage](reference/internal-classes.md) komutunu kullanın.
 
-   1. Kullanılabilir birleşik giriş kutusu stilleri bir listesi için bkz. [birleşik giriş kutusu stilleri](../mfc/reference/styles-used-by-mfc.md#combo-box-styles).
+   1. Kullanılabilir Birleşik giriş kutusu stillerinin listesi için bkz. [Birleşik giriş kutusu stilleri](../mfc/reference/styles-used-by-mfc.md#combo-box-styles).
 
-1. İçinde `CFindComboButton` sınıfı, geçersiz kılma `CMFCToolbarComboBoxButton::CreateCombo` yöntemi. Burada oluşturmalısınız `CFindComboButton` nesne ve ona bir işaretçi döndürür.
+1. Sınıfında, `CMFCToolbarComboBoxButton::CreateCombo` yöntemini geçersiz kılın. `CFindComboButton` Burada `CFindComboButton` nesneyi oluşturmanız ve ona bir işaretçi döndürmelisiniz.
 
-1. Kullanım [ımplement_serıal](../mfc/reference/run-time-object-model-services.md#implement_serial) açılan düğmeye kalıcı hale getirmek için makro. Çalışma Alanı Yöneticisi'ni otomatik olarak yükler ve düğmenin durumu Windows kayıt defterine kaydeder.
+1. Birleşik düğme ' i kalıcı hale getirmek için [IMPLEMENT_SERIAL](../mfc/reference/run-time-object-model-services.md#implement_serial) makrosunu kullanın. Çalışma alanı yöneticisi, Windows kayıt defteri 'nde düğmenin durumunu otomatik olarak yükler ve kaydeder.
 
-1. Uygulama `ID_EDIT_FIND_COMBO` belge görünümünüzdeki işleyici. Kullanım [CMFCToolBar::GetCommandButtons](../mfc/reference/cmfctoolbar-class.md#getcommandbuttons) ile `ID_EDIT_FIND_COMBO` tüm almak için **Bul** birleşik giriş kutusu düğmeleri. Özelleştirme nedeniyle çok sayıda kopya aynı komutu kimlikli bir düğmenin olabilir.
+1. `ID_EDIT_FIND_COMBO` İşleyiciyi belge görünüminizde uygulayın. Tüm **arama** açılan kutusu düğmelerini almak `ID_EDIT_FIND_COMBO` için [CMFCToolBar:: GetCommandButtons](../mfc/reference/cmfctoolbar-class.md#getcommandbuttons) komutunu kullanın. Özelleştirme nedeniyle aynı komut KIMLIĞINE sahip bir düğmenin birkaç kopyası olabilir.
 
-1. İçinde `ID_EDIT_FIND` ileti işleyicisi `OnFind`, kullanın [CMFCToolBar::IsLastCommandFromButton](../mfc/reference/cmfctoolbar-class.md#islastcommandfrombutton) FIND komutu gönderildiği olup olmadığını belirlemek için **Bul** birleşik giriş kutusu düğmesi. Bu durumda, metni bulmak ve birleşik giriş kutusuna arama dizesini ekleyin.
+1. İleti işleyicisinde `OnFind`, Find komutunun açılan kutuyu bul düğmesinden gönderilip gönderilmediğini öğrenmek için [CMFCToolBar:: IsLastCommandFromButton](../mfc/reference/cmfctoolbar-class.md#islastcommandfrombutton) komutunu kullanın. `ID_EDIT_FIND` Bu durumda, metni bulun ve arama dizesini Birleşik giriş kutusuna ekleyin.
 
-### <a name="adding-the-find-control-to-the-main-toolbar"></a>Ana araç çubuğuna bulma denetimi ekleme
+### <a name="adding-the-find-control-to-the-main-toolbar"></a>Ana araç çubuğuna bulma denetimini ekleme
 
-Birleşik giriş kutusu düğmesi eklemek için bu adımları izleyin:
+Araç çubuğuna Birleşik giriş kutusu düğmesini eklemek için aşağıdaki adımları izleyin:
 
-1. Uygulama `AFX_WM_RESETTOOLBAR` ileti işleyicisi `OnToolbarReset` ana çerçeve penceresinde.
-
-    > [!NOTE]
-    > Framework ana çerçeve penceresine araç çubuğu uygulaması başlatılırken başlatıldığında veya araç çubuğunu özelleştirme sırasında sıfırlandığında bu iletiyi gönderir. Her iki durumda da, standart araç çubuğu düğmesi ile özel değiştirmelisiniz **Bul** birleşik giriş kutusu düğmesi.
-
-1. İçinde `AFX_WM_RESETTOOLBAR` işleyicisi, diğer bir deyişle araç Kimliğine inceleyin, *WPARAM* AFX_WM_RESETTOOLBAR ileti. Araç çubuğu kimliği içeren araç çubuğu eşitse, **Bul** birleşik giriş kutusu düğmesi, çağrı [CMFCToolBar::ReplaceButton](../mfc/reference/cmfctoolbar-class.md#replacebutton) değiştirilecek **bulmak** düğmesine (diğer bir deyişle, Komut Kimliği düğmeyle `ID_EDIT_FIND)` ile bir `CFindComboButton` nesne.
+1. Ana çerçeve penceresinde `OnToolbarReset`iletiişleyicisiniuygulayın `AFX_WM_RESETTOOLBAR` .
 
     > [!NOTE]
-    > Oluşturulabilir bir `CFindComboBox` çünkü yığında nesne `ReplaceButton` düğmesi nesnesini kopyalar ve kopyayı korur.
+    > Çerçeve, uygulama başlangıcında bir araç çubuğu başlatıldığında veya özelleştirme sırasında bir araç çubuğu sıfırlandığında, bu iletiyi ana çerçeve penceresine gönderir. Her iki durumda da, Standart araç çubuğu düğmesini özel **bul** açılan kutusu düğmesi ile değiştirmelisiniz.
 
-### <a name="adding-the-find-control-to-the-customize-dialog-box"></a>Bul denetiminin özelleştirme iletişim kutusuna ekleme
+1. İşleyicisinde, araç çubuğu kimliğini, diğer bir deyişle, AFX_WM_RESETTOOLBAR iletisinin wParam ' ı inceleyin. `AFX_WM_RESETTOOLBAR` Araç çubuğu kimliği, açılan kutuyu **bul** düğmesini içeren araç çubuğundan eşitse, **bul** düğmesini (diğer bir deyişle, bir `ID_EDIT_FIND)` `CFindComboButton` nesnesiyle komut kimliği olan düğme) değiştirmek için [CMFCToolBar:: ReplaceButton](../mfc/reference/cmfctoolbar-class.md#replacebutton) öğesini çağırın.
 
-Özelleştirme işleyicisinde `OnViewCustomize`, çağrı [CMFCToolBarsCustomizeDialog::ReplaceButton](../mfc/reference/cmfctoolbarscustomizedialog-class.md#replacebutton) değiştirmek için **Bul** düğmesine (diğer bir deyişle, komut kimliği düğmeyle `ID_EDIT_FIND`) bir ile`CFindComboButton` nesne.
+    > [!NOTE]
+    > Düğme nesnesini `ReplaceButton` kopyalayan ve `CFindComboBox` kopyayı koruduğu için yığında bir nesne oluşturabilirsiniz.
+
+### <a name="adding-the-find-control-to-the-customize-dialog-box"></a>Özelleştirme Iletişim kutusuna bulma denetimini ekleme
+
+Özelleştirme işleyicisinde `OnViewCustomize`, **bul** düğmesini (diğer bir deyişle, komut kimliği `ID_EDIT_FIND`olan düğme) bir `CFindComboButton` nesneyle değiştirmek için [CMFCToolBarsCustomizeDialog:: ReplaceButton](../mfc/reference/cmfctoolbarscustomizedialog-class.md#replacebutton) öğesini çağırın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

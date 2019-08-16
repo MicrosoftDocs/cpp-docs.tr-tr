@@ -98,12 +98,12 @@ helpviewer_keywords:
 - CReBarCtrl [MFC], ShowBand
 - CReBarCtrl [MFC], SizeToRect
 ms.assetid: 154570d7-e48c-425d-8c7e-c64542bcb4cc
-ms.openlocfilehash: 102c06879ffaedb91f20a4b5085a10015d7a4c8b
-ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
+ms.openlocfilehash: 9a8c989988801bc7af993fbc69717ac7cff07dcf
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68916865"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69502733"
 ---
 # <a name="crebarctrl-class"></a>CReBarCtrl sınıfı
 
@@ -140,7 +140,7 @@ class CReBarCtrl : public CWnd
 |[CReBarCtrl:: GetBarHeight](#getbarheight)|Rebar denetiminin yüksekliğini alır.|
 |[CReBarCtrl:: Getbarınfo](#getbarinfo)|Rebar denetimi ve kullandığı görüntü listesi hakkında bilgi alır.|
 |[CReBarCtrl:: GetBkColor](#getbkcolor)|Bir Rebar denetiminin varsayılan arka plan rengini alır.|
-|[CReBarCtrl:: GetColorScheme](#getcolorscheme)|Rebar Denetimiyle ilişkili [colorscheme](/windows/desktop/api/commctrl/ns-commctrl-tagcolorscheme) yapısını alır.|
+|[CReBarCtrl:: GetColorScheme](#getcolorscheme)|Rebar Denetimiyle ilişkili [colorscheme](/windows/win32/api/commctrl/ns-commctrl-colorscheme) yapısını alır.|
 |[CReBarCtrl:: GetDropTarget](#getdroptarget)|Bir Rebar denetiminin `IDropTarget` arabirim işaretçisini alır.|
 |[CReBarCtrl:: Gebir Dedstyle](#getextendedstyle)|Geçerli yeniden çubuk denetiminin genişletilmiş stilini alır.|
 |[CReBarCtrl:: GetImageList](#getimagelist)|Bir Rebar Denetimiyle ilişkili resim listesini alır.|
@@ -201,7 +201,7 @@ Rebar denetimleri şunları destekler:
 
 - Özel çizim işlevselliği.
 
-- Standart pencere stillerine ek olarak çeşitli denetim stilleri. Bu stillerin bir listesi için, bkz. Windows SDK [Rebar Control Styles](/windows/desktop/Controls/rebar-control-styles) .
+- Standart pencere stillerine ek olarak çeşitli denetim stilleri. Bu stillerin bir listesi için, bkz. Windows SDK [Rebar Control Styles](/windows/win32/Controls/rebar-control-styles) .
 
 Daha fazla bilgi için bkz. [CReBarCtrl kullanma](../../mfc/using-crebarctrl.md).
 
@@ -221,7 +221,7 @@ Daha fazla bilgi için bkz. [CReBarCtrl kullanma](../../mfc/using-crebarctrl.md)
 
 ##  <a name="begindrag"></a>CReBarCtrl:: BeginDrag
 
-Windows SDK bölümünde açıklandığı gibi Win32 iletisinin [RB_BEGINDRAG](/windows/desktop/Controls/rb-begindrag)davranışını uygular.
+Windows SDK bölümünde açıklandığı gibi Win32 iletisinin [RB_BEGINDRAG](/windows/win32/Controls/rb-begindrag)davranışını uygular.
 
 ```
 void BeginDrag(
@@ -252,7 +252,7 @@ virtual BOOL Create(
 ### <a name="parameters"></a>Parametreler
 
 *dwStyle*<br/>
-Denetime uygulanan Rebar denetim stillerinin birleşimini belirtir. Desteklenen stillerin bir listesi için Windows SDK ' deki [yeniden çubuk denetim stillerine](/windows/desktop/Controls/rebar-control-styles) bakın.
+Denetime uygulanan Rebar denetim stillerinin birleşimini belirtir. Desteklenen stillerin bir listesi için Windows SDK ' deki [yeniden çubuk denetim stillerine](/windows/win32/Controls/rebar-control-styles) bakın.
 
 *Rect*<br/>
 Rebar denetiminin konumu ve boyutu olan bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesine veya [Rect](/previous-versions/dd162897\(v=vs.85\)) yapısına başvuru.
@@ -297,10 +297,10 @@ virtual BOOL CreateEx(
 ### <a name="parameters"></a>Parametreler
 
 *dwExStyle*<br/>
-Oluşturulmakta olan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows stillerinin listesi için, Windows SDK için bkz. [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) Için *dwExStyle* parametresi.
+Oluşturulmakta olan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows stillerinin listesi için, Windows SDK için bkz. [CreateWindowEx](/windows/win32/api/winuser/nf-winuser-createwindowexw) Için *dwExStyle* parametresi.
 
 *dwStyle*<br/>
-Denetime uygulanan Rebar denetim stillerinin birleşimini belirtir. Desteklenen stillerin bir listesi için, bkz. Windows SDK [yeniden çubuk denetim stilleri](/windows/desktop/Controls/rebar-control-styles) .
+Denetime uygulanan Rebar denetim stillerinin birleşimini belirtir. Desteklenen stillerin bir listesi için, bkz. Windows SDK [yeniden çubuk denetim stilleri](/windows/win32/Controls/rebar-control-styles) .
 
 *Rect*<br/>
 *PParentWnd*istemci koordinatları içinde oluşturulacak pencerenin boyutunu ve konumunu açıklayan bir [Rect](/previous-versions/dd162897\(v=vs.85\)) yapısına başvuru.
@@ -333,7 +333,7 @@ CReBarCtrl();
 
 ##  <a name="deleteband"></a>CReBarCtrl::D eleteBand
 
-Windows SDK bölümünde açıklandığı gibi Win32 iletisinin [RB_DELETEBAND](/windows/desktop/Controls/rb-deleteband)davranışını uygular.
+Windows SDK bölümünde açıklandığı gibi Win32 iletisinin [RB_DELETEBAND](/windows/win32/Controls/rb-deleteband)davranışını uygular.
 
 ```
 BOOL DeleteBand(UINT uBand);
@@ -354,7 +354,7 @@ Bant başarıyla silinmişse sıfır dışı; Aksi halde sıfır.
 
 ##  <a name="dragmove"></a>CReBarCtrl::D ragMove
 
-Windows SDK bölümünde açıklandığı gibi Win32 iletisinin [RB_DRAGMOVE](/windows/desktop/Controls/rb-dragmove)davranışını uygular.
+Windows SDK bölümünde açıklandığı gibi Win32 iletisinin [RB_DRAGMOVE](/windows/win32/Controls/rb-dragmove)davranışını uygular.
 
 ```
 void DragMove(DWORD dwPos = (DWORD)-1);
@@ -367,7 +367,7 @@ Yeni fare koordinatlarını içeren bir DWORD değeri. Yatay koordinat LOWORD i�
 
 ##  <a name="enddrag"></a>CReBarCtrl:: EndDrag
 
-Windows SDK bölümünde açıklandığı gibi Win32 iletisinin [RB_ENDDRAG](/windows/desktop/Controls/rb-enddrag)davranışını uygular.
+Windows SDK bölümünde açıklandığı gibi Win32 iletisinin [RB_ENDDRAG](/windows/win32/Controls/rb-enddrag)davranışını uygular.
 
 ```
 void EndDrag();
@@ -375,7 +375,7 @@ void EndDrag();
 
 ##  <a name="getbandborders"></a>CReBarCtrl:: GetBandBorders
 
-Windows SDK bölümünde açıklandığı gibi Win32 iletisinin [RB_GETBANDBORDERS](/windows/desktop/Controls/rb-getbandborders)davranışını uygular.
+Windows SDK bölümünde açıklandığı gibi Win32 iletisinin [RB_GETBANDBORDERS](/windows/win32/Controls/rb-getbandborders)davranışını uygular.
 
 ```
 void GetBandBorders(
@@ -389,11 +389,11 @@ void GetBandBorders(
 Kenarlıkların alınacağı bantın sıfır tabanlı dizini.
 
 *PRC*<br/>
-Şerit kenarlıklarını alacak bir [Rect](/previous-versions/dd162897\(v=vs.85\)) yapısına yönelik işaretçi. Rebar denetiminde RBS_BANDBORDERS stili varsa, bu yapının her bir üyesi, bandın karşılık gelen tarafına, kenarlığı oluşturan piksel sayısını alır. Rebar denetiminde RBS_BANDBORDERS stili yoksa, bu yapının yalnızca sol üyesi geçerli bilgileri alır. Rebar denetim stillerinin açıklaması için, bkz. Windows SDK [Rebar Control Styles](/windows/desktop/Controls/rebar-control-styles) .
+Şerit kenarlıklarını alacak bir [Rect](/previous-versions/dd162897\(v=vs.85\)) yapısına yönelik işaretçi. Rebar denetiminde RBS_BANDBORDERS stili varsa, bu yapının her bir üyesi, bandın karşılık gelen tarafına, kenarlığı oluşturan piksel sayısını alır. Rebar denetiminde RBS_BANDBORDERS stili yoksa, bu yapının yalnızca sol üyesi geçerli bilgileri alır. Rebar denetim stillerinin açıklaması için, bkz. Windows SDK [Rebar Control Styles](/windows/win32/Controls/rebar-control-styles) .
 
 ##  <a name="getbandcount"></a>CReBarCtrl:: GetBandCount
 
-Windows SDK bölümünde açıklandığı gibi Win32 iletisinin [RB_GETBANDCOUNT](/windows/desktop/Controls/rb-getbandcount)davranışını uygular.
+Windows SDK bölümünde açıklandığı gibi Win32 iletisinin [RB_GETBANDCOUNT](/windows/win32/Controls/rb-getbandcount)davranışını uygular.
 
 ```
 UINT GetBandCount() const;
@@ -405,7 +405,7 @@ Denetime atanan bantların sayısı.
 
 ##  <a name="getbandinfo"></a>CReBarCtrl:: Getbanınfo
 
-Windows SDK açıklanan Win32 ileti [RB_GETBANDINFO](/windows/desktop/Controls/rb-getbandinfo) davranışını uygular.
+Windows SDK açıklanan Win32 ileti [RB_GETBANDINFO](/windows/win32/Controls/rb-getbandinfo) davranışını uygular.
 
 ```
 BOOL GetBandInfo(
@@ -419,7 +419,7 @@ BOOL GetBandInfo(
 Bilgilerin alınacağı bantın sıfır tabanlı dizini.
 
 *prbbi*<br/>
-Bant bilgilerini almak için [Rebarbanınfo](/windows/desktop/api/commctrl/ns-commctrl-tagrebarbandinfoa) yapısına yönelik bir işaretçi. Bu yapının `cbSize` üyesini olarak `sizeof(REBARBANDINFO)` ayarlamanız ve bu iletiyi göndermeden önce `fMask` üyeyi almak istediğiniz öğelere ayarlamanız gerekir.
+Bant bilgilerini almak için [Rebarbanınfo](/windows/win32/api/commctrl/ns-commctrl-rebarbandinfow) yapısına yönelik bir işaretçi. Bu yapının `cbSize` üyesini olarak `sizeof(REBARBANDINFO)` ayarlamanız ve bu iletiyi göndermeden önce `fMask` üyeyi almak istediğiniz öğelere ayarlamanız gerekir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -436,11 +436,11 @@ void GetBandMargins(PMARGINS pMargins);
 ### <a name="parameters"></a>Parametreler
 
 *Pkenar boşlukları*<br/>
-Bilgileri alacak bir [kenar boşluğu](/windows/desktop/api/uxtheme/ns-uxtheme-margins)yapısına yönelik bir işaretçi.
+Bilgileri alacak bir [kenar boşluğu](/windows/win32/api/uxtheme/ns-uxtheme-margins)yapısına yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, Windows SDK açıklandığı gibi [RB_GETBANDMARGINS](/windows/desktop/Controls/rb-getbandmargins) iletisinin işlevselliğine öykünür.
+Bu üye işlevi, Windows SDK açıklandığı gibi [RB_GETBANDMARGINS](/windows/win32/Controls/rb-getbandmargins) iletisinin işlevselliğine öykünür.
 
 ##  <a name="getbarheight"></a>CReBarCtrl:: GetBarHeight
 
@@ -456,7 +456,7 @@ Denetimin piksel cinsinden yüksekliğini temsil eden değer.
 
 ##  <a name="getbarinfo"></a>CReBarCtrl:: Getbarınfo
 
-Windows SDK bölümünde açıklandığı gibi Win32 iletisinin [RB_GETBARINFO](/windows/desktop/Controls/rb-getbarinfo)davranışını uygular.
+Windows SDK bölümünde açıklandığı gibi Win32 iletisinin [RB_GETBARINFO](/windows/win32/Controls/rb-getbarinfo)davranışını uygular.
 
 ```
 BOOL GetBarInfo(REBARINFO* prbi) const;
@@ -465,7 +465,7 @@ BOOL GetBarInfo(REBARINFO* prbi) const;
 ### <a name="parameters"></a>Parametreler
 
 *prbi*<br/>
-Rebar denetim bilgilerini alacak bir [REBARINFO](/windows/desktop/api/commctrl/ns-commctrl-tagrebarinfo) yapısına yönelik işaretçi. Bu iletiyi göndermeden önce bu yapının *cbSize* üyesini olarak `sizeof(REBARINFO)` ayarlamanız gerekir.
+Rebar denetim bilgilerini alacak bir [REBARINFO](/windows/win32/api/commctrl/ns-commctrl-rebarinfo) yapısına yönelik işaretçi. Bu iletiyi göndermeden önce bu yapının *cbSize* üyesini olarak `sizeof(REBARINFO)` ayarlamanız gerekir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -473,7 +473,7 @@ Başarılı olursa sıfır dışı; Aksi halde sıfır.
 
 ##  <a name="getbkcolor"></a>CReBarCtrl:: GetBkColor
 
-Windows SDK bölümünde açıklandığı gibi Win32 iletisinin [RB_GETBKCOLOR](/windows/desktop/Controls/rb-getbkcolor)davranışını uygular.
+Windows SDK bölümünde açıklandığı gibi Win32 iletisinin [RB_GETBKCOLOR](/windows/win32/Controls/rb-getbkcolor)davranışını uygular.
 
 ```
 COLORREF GetBkColor() const;
@@ -485,7 +485,7 @@ Geçerli varsayılan arka plan rengini temsil eden bir COLORREF değeri.
 
 ##  <a name="getcolorscheme"></a>CReBarCtrl:: GetColorScheme
 
-Rebar denetimi için [colorscheme](/windows/desktop/api/commctrl/ns-commctrl-tagcolorscheme) yapısını alır.
+Rebar denetimi için [colorscheme](/windows/win32/api/commctrl/ns-commctrl-colorscheme) yapısını alır.
 
 ```
 BOOL GetColorScheme(COLORSCHEME* lpcs);
@@ -494,7 +494,7 @@ BOOL GetColorScheme(COLORSCHEME* lpcs);
 ### <a name="parameters"></a>Parametreler
 
 *lpcs*<br/>
-Windows SDK bölümünde açıklandığı gibi, [colorscheme](/windows/desktop/api/commctrl/ns-commctrl-tagcolorscheme) yapısına yönelik bir işaretçi.
+Windows SDK bölümünde açıklandığı gibi, [colorscheme](/windows/win32/api/commctrl/ns-commctrl-colorscheme) yapısına yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -506,7 +506,7 @@ Başarılı olursa sıfır dışı; Aksi halde sıfır.
 
 ##  <a name="getdroptarget"></a>CReBarCtrl:: GetDropTarget
 
-Windows SDK bölümünde açıklandığı gibi Win32 iletisinin [RB_GETDROPTARGET](/windows/desktop/Controls/rb-getdroptarget)davranışını uygular.
+Windows SDK bölümünde açıklandığı gibi Win32 iletisinin [RB_GETDROPTARGET](/windows/win32/Controls/rb-getdroptarget)davranışını uygular.
 
 ```
 IDropTarget* GetDropTarget() const;
@@ -514,7 +514,7 @@ IDropTarget* GetDropTarget() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-[IDropTarget](/windows/desktop/api/oleidl/nn-oleidl-idroptarget) arabirimine yönelik bir işaretçi.
+[IDropTarget](/windows/win32/api/oleidl/nn-oleidl-idroptarget) arabirimine yönelik bir işaretçi.
 
 ##  <a name="getextendedstyle"></a>CReBarCtrl:: Gebir Dedstyle
 
@@ -530,7 +530,7 @@ Genişletilmiş stilleri gösteren bir bit düzeyinde birleşim (veya) bayraklar
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, Windows SDK açıklanan [RB_GETEXTENDEDSTYLE](/windows/desktop/Controls/rb-dragmove) iletisini gönderir.
+Bu yöntem, Windows SDK açıklanan [RB_GETEXTENDEDSTYLE](/windows/win32/Controls/rb-dragmove) iletisini gönderir.
 
 ##  <a name="getimagelist"></a>CReBarCtrl:: GetImageList
 
@@ -546,7 +546,7 @@ Bir [CImageList](../../mfc/reference/cimagelist-class.md) nesnesine yönelik bir
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, Windows SDK bölümünde açıklandığı gibi [REBARINFO](/windows/desktop/api/commctrl/ns-commctrl-tagrebarinfo) yapısında depolanan boyut ve maske bilgilerini kullanır.
+Bu üye işlevi, Windows SDK bölümünde açıklandığı gibi [REBARINFO](/windows/win32/api/commctrl/ns-commctrl-rebarinfo) yapısında depolanan boyut ve maske bilgilerini kullanır.
 
 ##  <a name="getpalette"></a>CReBarCtrl:: GetPalette
 
@@ -570,7 +570,7 @@ Bu üye işlevin bir HPALETTE yerine `CPalette` dönüş değeri olarak bir nesn
 
 ##  <a name="getrect"></a>CReBarCtrl:: GetRect
 
-Windows SDK bölümünde açıklandığı gibi Win32 iletisinin [RB_GETRECT](/windows/desktop/Controls/rb-getrect)davranışını uygular.
+Windows SDK bölümünde açıklandığı gibi Win32 iletisinin [RB_GETRECT](/windows/win32/Controls/rb-getrect)davranışını uygular.
 
 ```
 BOOL GetRect(
@@ -596,7 +596,7 @@ Başarılı olursa sıfır dışı; Aksi halde sıfır.
 
 ##  <a name="getrowcount"></a>CReBarCtrl:: GetRowCount
 
-Windows SDK bölümünde açıklandığı gibi Win32 iletisinin [RB_GETROWCOUNT](/windows/desktop/Controls/rb-getrowcount)davranışını uygular.
+Windows SDK bölümünde açıklandığı gibi Win32 iletisinin [RB_GETROWCOUNT](/windows/win32/Controls/rb-getrowcount)davranışını uygular.
 
 ```
 UINT GetRowCount() const;
@@ -612,7 +612,7 @@ Denetimdeki bant satır sayısını temsil eden bir UINT değeri.
 
 ##  <a name="getrowheight"></a>CReBarCtrl:: GetRowHeight
 
-Windows SDK bölümünde açıklandığı gibi Win32 iletisinin [RB_GETROWHEIGHT](/windows/desktop/Controls/rb-getrowheight)davranışını uygular.
+Windows SDK bölümünde açıklandığı gibi Win32 iletisinin [RB_GETROWHEIGHT](/windows/win32/Controls/rb-getrowheight)davranışını uygular.
 
 ```
 UINT GetRowHeight(UINT uRow) const;
@@ -633,7 +633,7 @@ Piksel cinsinden satır yüksekliğini temsil eden bir UINT değeri.
 
 ##  <a name="gettextcolor"></a>CReBarCtrl:: GetTextColor
 
-Windows SDK bölümünde açıklandığı gibi Win32 iletisinin [RB_GETTEXTCOLOR](/windows/desktop/Controls/rb-gettextcolor)davranışını uygular.
+Windows SDK bölümünde açıklandığı gibi Win32 iletisinin [RB_GETTEXTCOLOR](/windows/win32/Controls/rb-gettextcolor)davranışını uygular.
 
 ```
 COLORREF GetTextColor() const;
@@ -645,7 +645,7 @@ Geçerli varsayılan metin rengini temsil eden bir COLORREF değeri.
 
 ##  <a name="gettooltips"></a>CReBarCtrl:: GetToolTip 'ler
 
-Windows SDK bölümünde açıklandığı gibi Win32 iletisinin [RB_GETTOOLTIPS](/windows/desktop/Controls/rb-gettooltips)davranışını uygular.
+Windows SDK bölümünde açıklandığı gibi Win32 iletisinin [RB_GETTOOLTIPS](/windows/win32/Controls/rb-gettooltips)davranışını uygular.
 
 ```
 CToolTipCtrl* GetToolTips() const;
@@ -661,7 +661,7 @@ MFC uygulamasının `GetToolTips` bir HWND yerine bir `CToolTipCtrl`işaretçi d
 
 ##  <a name="hittest"></a>CReBarCtrl:: HitTest
 
-Windows SDK bölümünde açıklandığı gibi Win32 iletisinin [RB_HITTEST](/windows/desktop/Controls/rb-hittest)davranışını uygular.
+Windows SDK bölümünde açıklandığı gibi Win32 iletisinin [RB_HITTEST](/windows/win32/Controls/rb-hittest)davranışını uygular.
 
 ```
 int HitTest(RBHITTESTINFO* prbht);
@@ -670,7 +670,7 @@ int HitTest(RBHITTESTINFO* prbht);
 ### <a name="parameters"></a>Parametreler
 
 *prbht*<br/>
-[Rbhittestınfo](/windows/desktop/api/commctrl/ns-commctrl-_rb_hittestinfo) yapısına yönelik bir işaretçi. İletiyi göndermeden önce, `pt` bu yapının üyesi, istemci koordinatları ' nde test edilecek noktaya başlatılmalıdır.
+[Rbhittestınfo](/windows/win32/api/commctrl/ns-commctrl-_rb_hittestinfo) yapısına yönelik bir işaretçi. İletiyi göndermeden önce, `pt` bu yapının üyesi, istemci koordinatları ' nde test edilecek noktaya başlatılmalıdır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -678,7 +678,7 @@ Belirtilen noktadaki bantın sıfır tabanlı dizini veya noktadan sonra çubuk 
 
 ##  <a name="idtoindex"></a>CReBarCtrl:: ıdtoindex
 
-Windows SDK bölümünde açıklandığı gibi Win32 iletisinin [RB_IDTOINDEX](/windows/desktop/controls/rb-idtoindex)davranışını uygular.
+Windows SDK bölümünde açıklandığı gibi Win32 iletisinin [RB_IDTOINDEX](/windows/win32/controls/rb-idtoindex)davranışını uygular.
 
 ```
 int IDToIndex(UINT uBandID) const;
@@ -687,7 +687,7 @@ int IDToIndex(UINT uBandID) const;
 ### <a name="parameters"></a>Parametreler
 
 *Ubandıd*<br/>
-Bant eklendiğinde `wID` [rebarbanınfo](/windows/desktop/api/commctrl/ns-commctrl-tagrebarbandinfoa) yapısının üyesine geçirilen belirtilen bandın uygulama tanımlı tanımlayıcısı.
+Bant eklendiğinde `wID` [rebarbanınfo](/windows/win32/api/commctrl/ns-commctrl-rebarbandinfow) yapısının üyesine geçirilen belirtilen bandın uygulama tanımlı tanımlayıcısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -695,7 +695,7 @@ Başarılı olursa sıfır tabanlı bant dizini veya-1 yoksa. Yinelenen bant diz
 
 ##  <a name="insertband"></a>CReBarCtrl:: InsertBand
 
-Windows SDK bölümünde açıklandığı gibi Win32 iletisinin [RB_INSERTBAND](/windows/desktop/Controls/rb-insertband)davranışını uygular.
+Windows SDK bölümünde açıklandığı gibi Win32 iletisinin [RB_INSERTBAND](/windows/win32/Controls/rb-insertband)davranışını uygular.
 
 ```
 BOOL InsertBand(
@@ -709,7 +709,7 @@ BOOL InsertBand(
 Bantın ekleneceği konumun sıfır tabanlı dizini. Bu parametreyi-1 olarak ayarlarsanız denetim, son konumdaki yeni bandı ekler.
 
 *prbbi*<br/>
-Eklenecek bandı tanımlayan [Rebarbanınfo](/windows/desktop/api/commctrl/ns-commctrl-tagrebarbandinfoa) yapısına yönelik bir işaretçi. Bu işlevi çağırmadan önce bu yapının *cbSize* üyesini olarak `sizeof(REBARBANDINFO)` ayarlamanız gerekir.
+Eklenecek bandı tanımlayan [Rebarbanınfo](/windows/win32/api/commctrl/ns-commctrl-rebarbandinfow) yapısına yönelik bir işaretçi. Bu işlevi çağırmadan önce bu yapının *cbSize* üyesini olarak `sizeof(REBARBANDINFO)` ayarlamanız gerekir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -734,7 +734,7 @@ void MaximizeBand(UINT uBand);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Windows SDK içinde açıklandığı gibi, Win32 iletisinin [RB_MAXIMIZEBAND](/windows/desktop/Controls/rb-maximizeband) `fIdeal` davranışını 0 olarak ayarlanmış şekilde uygular.
+Windows SDK içinde açıklandığı gibi, Win32 iletisinin [RB_MAXIMIZEBAND](/windows/win32/Controls/rb-maximizeband) `fIdeal` davranışını 0 olarak ayarlanmış şekilde uygular.
 
 ### <a name="example"></a>Örnek
 
@@ -755,7 +755,7 @@ Küçültülecek bantın sıfır tabanlı dizini.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Windows SDK bölümünde açıklandığı gibi Win32 iletisinin [RB_MINIMIZEBAND](/windows/desktop/Controls/rb-minimizeband)davranışını uygular.
+Windows SDK bölümünde açıklandığı gibi Win32 iletisinin [RB_MINIMIZEBAND](/windows/win32/Controls/rb-minimizeband)davranışını uygular.
 
 ### <a name="example"></a>Örnek
 
@@ -763,7 +763,7 @@ Windows SDK bölümünde açıklandığı gibi Win32 iletisinin [RB_MINIMIZEBAND
 
 ##  <a name="moveband"></a>CReBarCtrl:: MoveBand
 
-Windows SDK bölümünde açıklandığı gibi Win32 iletisinin [RB_MOVEBAND](/windows/desktop/Controls/rb-moveband)davranışını uygular.
+Windows SDK bölümünde açıklandığı gibi Win32 iletisinin [RB_MOVEBAND](/windows/win32/Controls/rb-moveband)davranışını uygular.
 
 ```
 BOOL MoveBand(
@@ -785,7 +785,7 @@ Başarılı olursa sıfır dışı; Aksi halde sıfır.
 
 ##  <a name="pushchevron"></a>CReBarCtrl::P Ushköşeli ayraç
 
-Windows SDK bölümünde açıklandığı gibi Win32 iletisinin [RB_PUSHCHEVRON](/windows/desktop/Controls/rb-pushchevron)davranışını uygular.
+Windows SDK bölümünde açıklandığı gibi Win32 iletisinin [RB_PUSHCHEVRON](/windows/win32/Controls/rb-pushchevron)davranışını uygular.
 
 ```
 void PushChevron(
@@ -799,7 +799,7 @@ void PushChevron(
 Köşeli ayracın gönderildiği bandın sıfır tabanlı dizini.
 
 *lAppValue*<br/>
-Uygulama tanımlı 32 bitlik bir değer. Windows SDK [RB_PUSHCHEVRON](/windows/desktop/Controls/rb-pushchevron) Içinde *lappvalue* bölümüne bakın.
+Uygulama tanımlı 32 bitlik bir değer. Windows SDK [RB_PUSHCHEVRON](/windows/win32/Controls/rb-pushchevron) Içinde *lappvalue* bölümüne bakın.
 
 ##  <a name="restoreband"></a>CReBarCtrl:: RestoreBand
 
@@ -816,7 +816,7 @@ void RestoreBand(UINT uBand);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Windows SDK ' de açıklandığı gibi, Win32 [](/windows/desktop/Controls/rb-maximizeband) iletisinin RB_MAXIMIZEBAND `fIdeal` davranışını 1 olarak ayarlanmış şekilde uygular.
+Windows SDK ' de açıklandığı gibi, Win32 [](/windows/win32/Controls/rb-maximizeband) iletisinin RB_MAXIMIZEBAND `fIdeal` davranışını 1 olarak ayarlanmış şekilde uygular.
 
 ### <a name="example"></a>Örnek
 
@@ -824,7 +824,7 @@ Windows SDK ' de açıklandığı gibi, Win32 [](/windows/desktop/Controls/rb-ma
 
 ##  <a name="setbandinfo"></a>CReBarCtrl:: Setbanınfo
 
-Windows SDK bölümünde açıklandığı gibi Win32 iletisinin [RB_SETBANDINFO](/windows/desktop/Controls/rb-setbandinfo)davranışını uygular.
+Windows SDK bölümünde açıklandığı gibi Win32 iletisinin [RB_SETBANDINFO](/windows/win32/Controls/rb-setbandinfo)davranışını uygular.
 
 ```
 BOOL SetBandInfo(
@@ -838,7 +838,7 @@ BOOL SetBandInfo(
 Yeni ayarları almak için bandın sıfır tabanlı dizini.
 
 *prbbi*<br/>
-Eklenecek bandı tanımlayan [Rebarbanınfo](/windows/desktop/api/commctrl/ns-commctrl-tagrebarbandinfoa) yapısına yönelik işaretçi. Bu iletiyi göndermeden önce `cbSize` bu yapının üyesini olarak `sizeof(REBARBANDINFO)` ayarlamanız gerekir.
+Eklenecek bandı tanımlayan [Rebarbanınfo](/windows/win32/api/commctrl/ns-commctrl-rebarbandinfow) yapısına yönelik işaretçi. Bu iletiyi göndermeden önce `cbSize` bu yapının üyesini olarak `sizeof(REBARBANDINFO)` ayarlamanız gerekir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -871,7 +871,7 @@ Yöntem başarılı olursa TRUE; Aksi takdirde, FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, Windows SDK açıklanan [RB_SETBANDWIDTH](/windows/desktop/Controls/rb-setbandwidth) iletisini gönderir.
+Bu yöntem, Windows SDK açıklanan [RB_SETBANDWIDTH](/windows/win32/Controls/rb-setbandwidth) iletisini gönderir.
 
 ### <a name="example"></a>Örnek
 
@@ -887,7 +887,7 @@ Aşağıdaki kod örneği her bir çubuk bandı aynı genişlik olacak şekilde 
 
 ##  <a name="setbarinfo"></a>CReBarCtrl:: Setbarınfo
 
-Windows SDK bölümünde açıklandığı gibi Win32 iletisinin [RB_SETBARINFO](/windows/desktop/Controls/rb-setbarinfo)davranışını uygular.
+Windows SDK bölümünde açıklandığı gibi Win32 iletisinin [RB_SETBARINFO](/windows/win32/Controls/rb-setbarinfo)davranışını uygular.
 
 ```
 BOOL SetBarInfo(REBARINFO* prbi);
@@ -896,7 +896,7 @@ BOOL SetBarInfo(REBARINFO* prbi);
 ### <a name="parameters"></a>Parametreler
 
 *prbi*<br/>
-Ayarlanacak bilgileri içeren bir [REBARINFO](/windows/desktop/api/commctrl/ns-commctrl-tagrebarinfo) yapısına yönelik işaretçi. Bu iletiyi göndermeden önce `cbSize` bu yapının üyesini olarak `sizeof(REBARINFO)` ayarlamanız gerekir
+Ayarlanacak bilgileri içeren bir [REBARINFO](/windows/win32/api/commctrl/ns-commctrl-rebarinfo) yapısına yönelik işaretçi. Bu iletiyi göndermeden önce `cbSize` bu yapının üyesini olarak `sizeof(REBARINFO)` ayarlamanız gerekir
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -908,7 +908,7 @@ Başarılı olursa sıfır dışı; Aksi halde sıfır.
 
 ##  <a name="setbkcolor"></a>CReBarCtrl:: SetBkColor
 
-Windows SDK bölümünde açıklandığı gibi Win32 iletisinin [RB_SETBKCOLOR](/windows/desktop/Controls/rb-setbkcolor)davranışını uygular.
+Windows SDK bölümünde açıklandığı gibi Win32 iletisinin [RB_SETBKCOLOR](/windows/win32/Controls/rb-setbkcolor)davranışını uygular.
 
 ```
 COLORREF SetBkColor(COLORREF clr);
@@ -921,7 +921,7 @@ Yeni varsayılan arka plan rengini temsil eden COLORREF değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Önceki varsayılan arka plan rengini temsil eden bir [colorref](/windows/desktop/gdi/colorref) değeri.
+Önceki varsayılan arka plan rengini temsil eden bir [colorref](/windows/win32/gdi/colorref) değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -938,7 +938,7 @@ void SetColorScheme(const COLORSCHEME* lpcs);
 ### <a name="parameters"></a>Parametreler
 
 *lpcs*<br/>
-Windows SDK bölümünde açıklandığı gibi, [colorscheme](/windows/desktop/api/commctrl/ns-commctrl-tagcolorscheme) yapısına yönelik bir işaretçi.
+Windows SDK bölümünde açıklandığı gibi, [colorscheme](/windows/win32/api/commctrl/ns-commctrl-colorscheme) yapısına yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -958,7 +958,7 @@ DWORD SetExtendedStyle(
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*dwMask*|'ndaki *DwStyleEx* parametresindeki hangi bayrakların uygulanacağını belirten bir bit düzeyinde BIRLEŞIM (veya) bayrakları. Aşağıdaki değerlerden birini veya daha fazlasını kullanın:<br /><br /> RBS_EX_SPLITTER: Varsayılan olarak, ayırıcıyı yatay modda ve sağ dikey modda gösterin.<br /><br /> RBS_EX_TRANSPARENT: [WM_ERASEBKGND](/windows/desktop/winmsg/wm-erasebkgnd) iletisini ana pencereye iletin.|
+|*dwMask*|'ndaki *DwStyleEx* parametresindeki hangi bayrakların uygulanacağını belirten bir bit düzeyinde BIRLEŞIM (veya) bayrakları. Aşağıdaki değerlerden birini veya daha fazlasını kullanın:<br /><br /> RBS_EX_SPLITTER: Varsayılan olarak, ayırıcıyı yatay modda ve sağ dikey modda gösterin.<br /><br /> RBS_EX_TRANSPARENT: [WM_ERASEBKGND](/windows/win32/winmsg/wm-erasebkgnd) iletisini ana pencereye iletin.|
 |*dwStyleEx*|'ndaki Uygulanacak stilleri belirten bir bit düzeyinde birleşim (veya). Bir stil ayarlamak için, *dwMask* parametresinde kullanılan bayrağın aynısını belirtin. Bir stili sıfırlamak için ikili sıfır değerini belirtin.|
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -967,7 +967,7 @@ DWORD SetExtendedStyle(
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, Windows SDK açıklanan [RB_SETEXTENDEDSTYLE](/windows/desktop/Controls/rb-setextendedstyle) iletisini gönderir.
+Bu yöntem, Windows SDK açıklanan [RB_SETEXTENDEDSTYLE](/windows/win32/Controls/rb-setextendedstyle) iletisini gönderir.
 
 ##  <a name="setimagelist"></a>CReBarCtrl:: SetImageList
 
@@ -988,7 +988,7 @@ Başarılı olursa sıfır dışı; Aksi halde sıfır.
 
 ##  <a name="setowner"></a>CReBarCtrl:: SetOwner
 
-Windows SDK bölümünde açıklandığı gibi Win32 iletisinin [RB_SETPARENT](/windows/desktop/Controls/rb-setparent)davranışını uygular.
+Windows SDK bölümünde açıklandığı gibi Win32 iletisinin [RB_SETPARENT](/windows/win32/Controls/rb-setparent)davranışını uygular.
 
 ```
 CWnd* SetOwner(CWnd* pWnd);
@@ -1012,7 +1012,7 @@ Bu üye işlevin, Windows için işleyiciler yerine `CWnd` , yeniden çubuk dene
 
 ##  <a name="setpalette"></a>CReBarCtrl:: SetPalette
 
-Windows SDK bölümünde açıklandığı gibi Win32 iletisinin [RB_SETPALETTE](/windows/desktop/Controls/rb-setpalette)davranışını uygular.
+Windows SDK bölümünde açıklandığı gibi Win32 iletisinin [RB_SETPALETTE](/windows/win32/Controls/rb-setpalette)davranışını uygular.
 
 ```
 CPalette* SetPalette(HPALETTE hPal);
@@ -1033,7 +1033,7 @@ Bu üye işlevin bir HPALETTE yerine `CPalette` dönüş değeri olarak bir nesn
 
 ##  <a name="settextcolor"></a>CReBarCtrl:: SetTextColor
 
-Windows SDK bölümünde açıklandığı gibi Win32 iletisinin [RB_SETTEXTCOLOR](/windows/desktop/Controls/rb-settextcolor)davranışını uygular.
+Windows SDK bölümünde açıklandığı gibi Win32 iletisinin [RB_SETTEXTCOLOR](/windows/win32/Controls/rb-settextcolor)davranışını uygular.
 
 ```
 COLORREF SetTextColor(COLORREF clr);
@@ -1046,7 +1046,7 @@ COLORREF SetTextColor(COLORREF clr);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`CReBarCtrl` Nesneyle ilişkili önceki metin rengini temsil eden [colorref](/windows/desktop/gdi/colorref) değeri.
+`CReBarCtrl` Nesneyle ilişkili önceki metin rengini temsil eden [colorref](/windows/win32/gdi/colorref) değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1088,11 +1088,11 @@ Dönüş değeri kullanılmaz.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, Windows SDK açıklandığı gibi [RB_SETWINDOWTHEME](/windows/desktop/Controls/rb-setwindowtheme) iletisinin işlevselliğine öykünür.
+Bu üye işlevi, Windows SDK açıklandığı gibi [RB_SETWINDOWTHEME](/windows/win32/Controls/rb-setwindowtheme) iletisinin işlevselliğine öykünür.
 
 ##  <a name="showband"></a>CReBarCtrl:: ShowBand
 
-Windows SDK bölümünde açıklandığı gibi Win32 iletisinin [RB_SHOWBAND](/windows/desktop/Controls/rb-showband)davranışını uygular.
+Windows SDK bölümünde açıklandığı gibi Win32 iletisinin [RB_SHOWBAND](/windows/win32/Controls/rb-showband)davranışını uygular.
 
 ```
 BOOL ShowBand(
@@ -1114,7 +1114,7 @@ Başarılı olursa sıfır dışı; Aksi halde sıfır.
 
 ##  <a name="sizetorect"></a>CReBarCtrl:: SizeToRect
 
-Windows SDK bölümünde açıklandığı gibi Win32 iletisinin [RB_SIZETORECT](/windows/desktop/Controls/rb-sizetorect)davranışını uygular.
+Windows SDK bölümünde açıklandığı gibi Win32 iletisinin [RB_SIZETORECT](/windows/win32/Controls/rb-sizetorect)davranışını uygular.
 
 ```
 BOOL SizeToRect(CRect& rect);

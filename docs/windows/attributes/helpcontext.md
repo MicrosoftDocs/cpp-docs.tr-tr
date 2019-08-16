@@ -1,21 +1,21 @@
 ---
-title: HelpContext (C++ COM özniteliği)
+title: HelpContext (C++ com özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.helpcontext
 helpviewer_keywords:
 - helpcontext attribute
 ms.assetid: 6fbb022d-a4b7-4989-a02f-7f18a9b0ad96
-ms.openlocfilehash: 22023b4087c67b62d540d021fa06fd3582c7e4e2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8ec13d785ae491a4082d0bbdc908448cb1b8a49c
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62409674"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490906"
 ---
 # <a name="helpcontext"></a>helpcontext
 
-Bu öğe ile ilgili kullanıcı bilgilerini görüntüle sağlayan bir bağlam kimliği belirtir **yardımcı** dosya.
+Kullanıcının **Yardım** dosyasında bu öğeyle ilgili bilgileri görüntülemesine imkan tanıyan BIR bağlam kimliği belirtir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -26,15 +26,15 @@ Bu öğe ile ilgili kullanıcı bilgilerini görüntüle sağlayan bir bağlam k
 ### <a name="parameters"></a>Parametreler
 
 *id*<br/>
-Yardım içeriği kimliği. Bkz: [HTML Yardımı: Programlarınızı için bağlama duyarlı Yardım](../../mfc/html-help-context-sensitive-help-for-your-programs.md) bağlam kimlikleri hakkında daha fazla bilgi için.
+Yardım konusunun bağlam KIMLIĞI. Bkz [. HTML Yardımı: Bağlam kimlikleri hakkında daha fazla bilgi için](../../mfc/html-help-context-sensitive-help-for-your-programs.md) programlarınız için bağlama duyarlı yardım.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Helpcontext** C++ özniteliği ile aynı işlevlere sahip [helpcontext](/windows/desktop/Midl/helpcontext) MIDL özniteliği.
+**HelpContext** C++ özniteliği, [HelpContext](/windows/win32/Midl/helpcontext) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
 
 ## <a name="example"></a>Örnek
 
-Örneğin bakın [defaultvalue](defaultvalue.md) nasıl kullanılacağına ilişkin bir örnek **helpcontext**.
+**HelpContext**'in nasıl kullanılacağına ilişkin bir örnek için bkz. [DefaultValue](defaultvalue.md) örneği.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -42,12 +42,12 @@ Yardım içeriği kimliği. Bkz: [HTML Yardımı: Programlarınızı için bağl
 
 |||
 |-|-|
-|**İçin geçerlidir**|**arabirimi**, **typedef**, **sınıfı**, yöntem, özellik|
+|**Uygulama hedefi**|**Interface**, **typedef**, **Class**, Method, Property|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|Yok.|
+|**Gerekli öznitelikler**|Yok.|
 |**Geçersiz öznitelikler**|Yok.|
 
-Daha fazla bilgi için [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
+Daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

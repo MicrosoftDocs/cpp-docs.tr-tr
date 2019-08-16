@@ -1,21 +1,21 @@
 ---
-title: ATL denetimi Sihirbazı, Seçenekler
+title: Seçenekler, ATL Denetim Sihirbazı
 ms.date: 11/04/2016
 f1_keywords:
 - vc.codewiz.class.atl.control.options
 helpviewer_keywords:
 - ATL Control Wizard, options
 ms.assetid: 4607c51a-992d-433e-9281-919c6f519a3d
-ms.openlocfilehash: 1dd136739162c72d8064deb9b1498794f1985e1b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 25db3995687011de5e9cc0a98506cd26f2f1af0b
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62197360"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69495447"
 ---
-# <a name="options-atl-control-wizard"></a>ATL denetimi Sihirbazı, Seçenekler
+# <a name="options-atl-control-wizard"></a>Seçenekler, ATL Denetim Sihirbazı
 
-Sihirbazın bu sayfası, oluşturmakta olduğunuz denetim türünü ve içerdiği arabirimi destek düzeyini tanımlamak için kullanın.
+Oluşturmakta olduğunuz denetim türünü ve içerdiği arabirim desteği düzeyini tanımlamak için sihirbazın bu sayfasını kullanın.
 
 ## <a name="uielement-list"></a>UIElement Listesi
 
@@ -23,67 +23,67 @@ Sihirbazın bu sayfası, oluşturmakta olduğunuz denetim türünü ve içerdiğ
 
 Oluşturmak istediğiniz denetim türü.
 
-- **Standart denetim**: ActiveX denetimi.
+- **Standart denetim**: Bir ActiveX denetimi.
 
-- **Bileşik Denetim**: (İletişim kutusuna benzer) içerebilir bir ActiveX denetimini diğer ActiveX denetimleri veya Windows denetimleri. Bileşik Denetim şunları içerir:
+- **Bileşik denetim**: Diğer ActiveX denetimleri veya Windows denetimleri içerebilen (iletişim kutusuyla benzer) bir ActiveX denetimidir. Bileşik denetim şunları içerir:
 
-  - Bileşik Denetim uygulayan iletişim kutusu için bir şablon.
+  - Bileşik denetimi uygulayan iletişim kutusu için bir şablon.
 
-  - Özel kaynak, kayıt defteri bileşik denetim çağrıldığında otomatik olarak kaydeder.
+  - Çağrıldığında bileşik denetimi otomatik olarak kaydeden özel bir kaynak, kayıt DEFTERI.
 
-  - Bileşik Denetim uygulayan bir C++ sınıf.
+  - Bileşik C++ denetimi uygulayan bir sınıf.
 
-  - Bileşik denetim tarafından kullanıma sunulan bir COM arabirimi.
+  - Bileşik denetim tarafından sunulan bir COM arabirimi.
 
-  - Bileşik Denetim içeren bir HTML test sayfası.
+  - Bileşik denetimi içeren bir HTML test sayfası.
 
-    Varsayılan olarak, bu denetim ayarlar [CComControlBase::m_bWindowOnly](../../atl/reference/ccomcontrolbase-class.md#m_bwindowonly) kadar pencereli denetimin olduğunu belirtmek için true. Bir havuz eşleme uygular. Daha fazla bilgi için [DHTML denetimi desteği](../../atl/atl-support-for-dhtml-controls.md).
+    Varsayılan olarak bu denetim, bu bir pencereli denetim olduğunu göstermek için [CComControlBase:: m_bWindowOnly](../../atl/reference/ccomcontrolbase-class.md#m_bwindowonly) değerini true olarak belirler. Havuz eşlemesini uygular. Daha fazla bilgi için bkz. [DHTML denetimi Için destek](../../atl/atl-support-for-dhtml-controls.md).
 
-- **DHTML denetimi**: ATL DHTML denetimini kullanarak HTML kullanıcı arabirimi belirtir. DHTML kullanıcı Arabirimi sınıfı bir COM eşlemesi içerir. Varsayılan olarak, bu denetim ayarlar [CComControlBase::m_bWindowOnly](../../atl/reference/ccomcontrolbase-class.md#m_bwindowonly) kadar pencereli denetimin olduğunu belirtmek için true.
+- **DHTML denetimi**: ATL DHTML denetimi, HTML kullanarak Kullanıcı arabirimini belirtir. DHTML Kullanıcı arabirimi sınıfı bir COM eşlemesi içerir. Varsayılan olarak bu denetim, bu bir pencereli denetim olduğunu göstermek için [CComControlBase:: m_bWindowOnly](../../atl/reference/ccomcontrolbase-class.md#m_bwindowonly) değerini true olarak belirler.
 
-   Daha fazla bilgi için [DHTML denetim projesinin öğelerini tanımlama](../../atl/identifying-the-elements-of-the-dhtml-control-project.md).
+   Daha fazla bilgi için bkz. [DHTML denetim projesinin öğelerini tanımlama](../../atl/identifying-the-elements-of-the-dhtml-control-project.md).
 
 ### <a name="minimal-control"></a>En az denetim
 
-Çoğu kapsayıcı tarafından kesinlikle gerekli arabirimleri destekler. Ayarlayabileceğiniz **en az bir denetim** herhangi bir denetim türü için: en az standart bir denetimde, en az bir bileşik denetim veya en az bir DHTML denetimi oluşturabilirsiniz.
+Yalnızca çoğu kapsayıcı tarafından kesinlikle gerekli olan arabirimleri destekler. Denetim türlerinden herhangi biri için **en az denetim** ayarlayabilirsiniz: en az bir standart denetim, en az bir bileşik denetim veya en az bir dhtml denetimi oluşturabilirsiniz.
 
 ### <a name="aggregation"></a>Toplama
 
-Oluşturmakta olduğunuz Denetim toplama desteği ekler. Daha fazla bilgi için [toplama](../../atl/aggregation.md).
+Oluşturmakta olduğunuz denetim için toplama desteği ekler. Daha fazla bilgi için bkz. [toplama](../../atl/aggregation.md).
 
-- **Evet**: Toplanabilir bir denetim oluşturursunuz.
+- **Evet**: Toplanabilecek bir denetim oluşturun.
 
-- **Hayır**: Toplanamaz bir denetim oluşturursunuz.
+- **Hayır**: Toplanmayan bir denetim oluşturun.
 
-- **Yalnızca**: Yalnızca toplama oluşturulan bir denetim oluşturursunuz.
+- **Yalnızca**: Yalnızca toplama yoluyla örneklenebilir bir denetim oluşturun.
 
 ### <a name="threading-model"></a>İş parçacığı modeli
 
-İş parçacığı modeli denetim tarafından kullanılan belirtir.
+Denetim tarafından kullanılan iş parçacığı modelinin belirtir.
 
-- **Tek**: Denetim, yalnızca birincil COM iş parçacığında çalışır.
+- **Tek**: Denetim yalnızca birincil COM iş parçacığında çalışır.
 
-- **Apartman**: Denetimin tüm tek iş parçacığı grubu oluşturulabilir. Varsayılan.
+- **Apartment**: Denetim herhangi bir tek iş parçacığı grubu içinde oluşturulabilir. Varsayılan.
 
 ### <a name="interface"></a>Arabirim
 
-Arabirim türü bu denetim için kapsayıcı gösterir.
+Bu denetimin kapsayıcı için sunduğu arabirimin türü.
 
-- **Çift**: Özellikler ve yöntemler aracılığıyla kullanıma sunduğu bir arabirim oluşturur `IDispatch` ve doğrudan VTBL.
+- **Çift**: Özellik ve yöntemleri doğrudan VTBL aracılığıyla ve aracılığıyla `IDispatch` kullanıma sunan bir arabirim oluşturur.
 
-- **Özel**: Doğrudan bir VTBL aracılığıyla yöntemlerini gösteren bir arabirim oluşturur.
+- **Özel**: Yöntemleri doğrudan bir VTBL aracılığıyla kullanıma sunan bir arabirim oluşturur.
 
-   Seçerseniz **özel**, denetimin olduğunu belirtin ve **otomasyon uyumlu**. Seçerseniz **otomasyon uyumlu**, sihirbaz ekler sonra [oleautomation](../../windows/oleautomation.md) IDL arabiriminde özniteliği ve arabirimi oleaut32.dll, Evrensel sıralayıcı tarafından sıralanabilir. Bkz: [hazırlama ayrıntıları](/windows/desktop/com/marshaling-details) daha fazla bilgi için Windows SDK.
+   **Özel**' i seçerseniz, denetimin **Otomasyon uyumlu**olduğunu belirtebilirsiniz. **Otomasyon uyumluluğu**' nu seçerseniz, SIHIRBAZ, IDL 'deki arabirime [oleautomation](../../windows/oleautomation.md) özniteliğini ekler ve arabirim, bu durumda, bu,,,,,, can. dll ' de evrensel sıralayıcı tarafından sıralanabilir. Daha fazla bilgi için Windows SDK [sıralama ayrıntılarına](/windows/win32/com/marshaling-details) bakın.
 
-   Ayrıca, seçerseniz **otomasyon uyumlu**, denetimdeki tüm yöntemler için tüm parametreleri VARYANT olmalıdır uyumlu.
+   Ayrıca, **Otomasyon uyumluluğu**' nu seçerseniz, denetimdeki tüm yöntemler için tüm parametrelerin değişken uyumlu olması gerekir.
 
 ### <a name="support"></a>Destek
 
-Ek çeşitli destek denetimi için ayarlar.
+Denetim için ek çeşitli destek ayarlar.
 
-- **Bağlantı noktaları**: Nesneniz için bağlantı noktaları, nesnenin sınıfı türetilen yaparak sağlar [Iconnectionpointcontainerımpl](../../atl/reference/iconnectionpointcontainerimpl-class.md) ve bir kaynak arabirimi kullanıma olanak tanır.
+- **Bağlantı noktaları**: , Nesnenizin sınıfının [IConnectionPointContainerImpl](../../atl/reference/iconnectionpointcontainerimpl-class.md) 'den türemesini ve bir kaynak arabirimini kullanıma sunmasına izin vererek nesneniz için bağlantı noktaları sağlar.
 
-- **Lisanslı**: Denetim için destek ekler [lisanslama](/windows/desktop/com/licensing). Lisanslı Denetimler, yalnızca istemci makinede doğru lisansa varsa barındırılabilir.
+- **Lisanslanmış**: [Lisanslama](/windows/win32/com/licensing)için denetime destek ekler. Lisanslı denetimler yalnızca istemci makinesinde doğru lisans varsa barındırılabilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

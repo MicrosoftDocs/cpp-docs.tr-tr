@@ -1,5 +1,5 @@
 ---
-title: CMFCFontInfo Class
+title: CMFCFontInfo sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CMFCFontInfo
@@ -18,16 +18,16 @@ helpviewer_keywords:
 - CMFCFontInfo [MFC], m_strName
 - CMFCFontInfo [MFC], m_strScript
 ms.assetid: f88329b2-d74e-4921-9441-a3bb6536a049
-ms.openlocfilehash: 930aceb4514195f0e844c35d326b52d9cd8d31fa
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a27606b494b13cd7b50f01b38fa95a918bacc7aa
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62237519"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69505273"
 ---
-# <a name="cmfcfontinfo-class"></a>CMFCFontInfo Class
+# <a name="cmfcfontinfo-class"></a>CMFCFontInfo sınıfı
 
-`CMFCFontInfo` Sınıfı adı ve diğer bir yazı tipi özniteliklerini açıklar.
+`CMFCFontInfo` Sınıfı, bir yazı tipinin adını ve diğer özniteliklerini açıklar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -41,41 +41,41 @@ class CMFCFontInfo : public CObject
 
 |Ad|Açıklama|
 |----------|-----------------|
-|`CMFCFontInfo`|Oluşturur bir `CMFCFontInfo` nesne.|
+|`CMFCFontInfo`|Bir `CMFCFontInfo` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CMFCFontInfo::GetFullName](#getfullname)|Alır, birleştirilmiş bir yazı tipi ve kendi karakter adlarını (betik) ayarlayın.|
+|[CMFCFontInfo:: GetFullName](#getfullname)|Yazı tipinin ve karakter kümesinin (betik) birleştirilmiş adlarını alır.|
 
 ### <a name="data-members"></a>Veri üyeleri
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CMFCFontInfo::m_nCharSet](#m_ncharset)|Yazı tipi ile ilişkilendirilmiş bir karakter kümesi (betik) belirten bir değeri.|
-|[CMFCFontInfo::m_nPitchAndFamily](#m_npitchandfamily)|Yazı tipi ailesi ve aralık belirten bir değeri.|
-|[CMFCFontInfo::m_nType](#m_ntype)|Yazı tipi türünü belirten bir değeri.|
-|[CMFCFontInfo::m_strName](#m_strname)|Yazı tipi adı; Örneğin, **Arial**.|
-|[CMFCFontInfo::m_strScript](#m_strscript)|Yazı tipi ile ilişkilendirilmiş bir karakter kümesi (betik) adı.|
+|[CMFCFontInfo:: m_nCharSet](#m_ncharset)|Yazı tipiyle ilişkili karakter kümesini (betiği) belirten bir değer.|
+|[CMFCFontInfo:: m_nPitchAndFamily](#m_npitchandfamily)|Yazı tipinin perdesini ve ailesini belirten bir değer.|
+|[CMFCFontInfo:: m_nType](#m_ntype)|Yazı tipinin türünü belirten bir değer.|
+|[CMFCFontInfo:: m_strName](#m_strname)|Yazı tipinin adı; Örneğin, **Arial**.|
+|[CMFCFontInfo:: m_strScript](#m_strscript)|Yazı tipiyle ilişkili bir karakter kümesi (betik) adı.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-İliştirebilmek için bir `CMFCFontInfo` nesnesinin bir öğesini [CMFCToolBarFontComboBox sınıfı](../../mfc/reference/cmfctoolbarfontcombobox-class.md) sınıfı. Çağrı [CMFCToolBarFontComboBox::GetFontDesc](../../mfc/reference/cmfctoolbarfontcombobox-class.md#getfontdesc) yönteminin bir işaretçiye almak için bir `CMFCFontInfo` nesne.
+`CMFCFontInfo` [CMFCToolBarFontComboBox sınıfı](../../mfc/reference/cmfctoolbarfontcombobox-class.md) sınıfının bir öğesine bir nesne ekleyebilirsiniz. Bir`CMFCFontInfo` nesnenin işaretçisini almak için [CMFCToolBarFontComboBox:: GetFontDesc](../../mfc/reference/cmfctoolbarfontcombobox-class.md#getfontdesc) metodunu çağırın.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, çeşitli üyelerine nasıl gösterir `CMFCFontInfo` sınıfı. Bu örnek nasıl alındığını anlatan bir `CMFCFontInfo` nesnesinden bir `CMFCRibbonFontComboBox`ve kendi yerel değişkenlere erişmek nasıl. Bu örneğin parçasıdır [MSOFFICE 2007 Tanıtımı örnek](../../overview/visual-cpp-samples.md).
+Aşağıdaki örnek, `CMFCFontInfo` sınıfının çeşitli üyelerini nasıl kullanacağınızı gösterir. Örnek, bir öğesinden bir `CMFCFontInfo` `CMFCRibbonFontComboBox`nesnesinin nasıl alınacağını ve yerel değişkenlerine nasıl erişebileceğinizi gösterir. Bu örnek, [MSOffice 2007 demo örneğinin](../../overview/visual-cpp-samples.md)bir parçasıdır.
 
 [!code-cpp[NVC_MFC_MSOffice2007Demo#6](../../mfc/reference/codesnippet/cpp/cmfcfontinfo-class_1.cpp)]
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxtoolbarfontcombobox.h
+**Üstbilgi:** afxtoolbarfontcombobox. h
 
-##  <a name="cmfcfontinfo"></a>  CMFCFontInfo::CMFCFontInfo
+##  <a name="cmfcfontinfo"></a>CMFCFontInfo:: CMFCFontInfo
 
-Oluşturur bir `CMFCFontInfo` nesne.
+Bir `CMFCFontInfo` nesnesi oluşturur.
 
 ```
 CMFCFontInfo(
@@ -91,32 +91,32 @@ CMFCFontInfo(const CMFCFontInfo& src);
 ### <a name="parameters"></a>Parametreler
 
 *lpszName*<br/>
-[in] Yazı tipi adı. Daha fazla bilgi için `lfFaceName` üyesi [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) yapısı.
+'ndaki Yazı tipinin adı. Daha fazla bilgi için `lfFaceName` [LOGFONT](/windows/win32/api/wingdi/ns-wingdi-logfontw) yapısının üyesine bakın.
 
 *lpszScript*<br/>
-[in] Yazı tipinin betik (karakter kümesi) adı.
+'ndaki Yazı tipinin (karakter kümesi) betiğinin adı.
 
 *nCharSet*<br/>
-[in] Yazı tipinin karakter kümesi (betik) belirten bir değeri. Daha fazla bilgi için `lfCharSet` üyesi [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) yapısı.
+'ndaki Yazı tipinin karakter kümesini (betiği) belirten bir değer. Daha fazla bilgi için `lfCharSet` [LOGFONT](/windows/win32/api/wingdi/ns-wingdi-logfontw) yapısının üyesine bakın.
 
-*nPitchAndFamily*<br/>
-[in] Yazı tipi ailesi ve aralık belirten bir değeri. Daha fazla bilgi için `lfPitchAndFamily` üyesi [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) yapısı.
+*Nstachandfamily*<br/>
+'ndaki Yazı tipinin perdesini ve ailesini belirten bir değer. Daha fazla bilgi için `lfPitchAndFamily` [LOGFONT](/windows/win32/api/wingdi/ns-wingdi-logfontw) yapısının üyesine bakın.
 
 *nTür*<br/>
-[in] Yazı tipi belirten bir değeri. Bu parametre karşılaştırmaya (veya) DEVICE_FONTTYPE RASTER_FONTTYPE ve TRUETYPE_FONTTYPE olabilir.
+'ndaki Yazı tipi türünü belirten bir değer. Bu parametre, DEVICE_FONTTYPE, RASTER_FONTTYPE ve TRUETYPE_FONTTYPE bit düzeyinde bir bileşim (veya) olabilir.
 
-*src*<br/>
-[in] Mevcut bir `CMFCFontInfo` üyeleri bu oluşturmak için kullanılan nesne `CMFCFontInfo` nesne.
+*YN*<br/>
+'ndaki Üyeleri bu `CMFCFontInfo` `CMFCFontInfo` nesneyi oluşturmak için kullanılan varolan bir nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu belgede koşulları kullanılır *karakter kümesi* ve *betik* birbirinin yerine. A *betik*, olarak da bilinen bir yazma sistemi olduğu, karakterleri ve bu karakterleri bir veya daha fazla dilde yazmak için kuralları koleksiyonudur. Bu betikte kullanılan noktalama işaretleri ve alfabetik karakter koleksiyonunu içerir. Örneğin, Latin betik Amerika Birleşik Devletleri'nde konuşmalar ve kendi alfabetik A ile Z arasındaki karakterleri içeren İngilizce için kullanılır. `lfCharSet` Üyesi [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) yapısı bir karakter kümesini belirtir. Örneğin, ' % s'değeri ANSI_CHARSET Latin betiğin alfabetik içerir ANSI karakter kümesini belirtir.
+Bu belgede terimler *karakter kümesi* ve *betiği* birbirinin yerine kullanılmaktadır. Yazma sistemi olarak da bilinen bir *komut dosyası*, bir veya daha fazla dilde bu karakterleri yazmak için bir karakter ve kural koleksiyonudur. Karakter koleksiyonu, bu betikte kullanılan alfabeyi ve noktalama işaretlerini içerir. Örneğin Latin betiği, Birleşik Devletler konuşulan Ingilizce için kullanılır ve alfabede A ile Z arasındaki karakterleri içerir. [LOGFONT](/windows/win32/api/wingdi/ns-wingdi-logfontw) yapısının üyesibirkarakterkümesibelirtir.`lfCharSet` Örneğin, ANSI_CHARSET değeri, Latin betiğinin alfabesini içeren ANSI karakter kümesini belirtir.
 
-##  <a name="getfullname"></a>  CMFCFontInfo::GetFullName
+##  <a name="getfullname"></a>CMFCFontInfo:: GetFullName
 
-Alır, birleştirilmiş bir yazı tipi ve kendi karakter adlarını (betik) ayarlayın.
+Yazı tipinin ve karakter kümesinin (betik) birleştirilmiş adlarını alır.
 
 ```
 CString GetFullName() const;
@@ -124,15 +124,15 @@ CString GetFullName() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Betik ve yazı tipi adı içeren bir dize.
+Yazı tipi adını ve betiği içeren bir dize.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yazı tipi tam adını almak için bu yöntemi kullanın. Örneğin, yazı tipi adı ise **Arial** ve yazı tipi **Kiril**, "Arial (Kiril)" Bu yöntemi döndürür.
+Yazı tipinin tam adını almak için bu yöntemi kullanın. Örneğin, yazı tipi adı **Arial** ise ve yazı tipi komut dosyası **Kiril**ise, bu yöntem "Arial (Kiril)" değerini döndürür.
 
-##  <a name="m_ncharset"></a>  CMFCFontInfo::m_nCharSet
+##  <a name="m_ncharset"></a>CMFCFontInfo:: m_nCharSet
 
-Yazı tipi ile ilişkilendirilmiş bir karakter kümesi (betik) belirten bir değeri.
+Yazı tipiyle ilişkili karakter kümesini (betiği) belirten bir değer.
 
 ```
 const BYTE m_nCharSet;
@@ -140,11 +140,11 @@ const BYTE m_nCharSet;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için *nCharSet* parametresinin [CMFCFontInfo::CMFCFontInfo](#cmfcfontinfo) Oluşturucusu.
+Daha fazla bilgi için bkz. [CMFCFontInfo:: CMFCFontInfo](#cmfcfontinfo) oluşturucusunun *nCharSet* parametresi.
 
-##  <a name="m_npitchandfamily"></a>  CMFCFontInfo::m_nPitchAndFamily
+##  <a name="m_npitchandfamily"></a>CMFCFontInfo:: m_nPitchAndFamily
 
-Aralık (nokta boyutu) ve yazı tipi ailesi (örneğin, serif, sans-serif ve tek aralıklı) belirten bir değeri.
+Yazı tipinin (örneğin, serif, sans-serif ve tek aralıklı) boyutunu belirten bir değer.
 
 ```
 const BYTE m_nPitchAndFamily;
@@ -152,11 +152,11 @@ const BYTE m_nPitchAndFamily;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için *nPitchAndFamily* parametresinin [CMFCFontInfo::CMFCFontInfo](#cmfcfontinfo) Oluşturucusu.
+Daha fazla bilgi için bkz. [CMFCFontInfo:: CMFCFontInfo](#cmfcfontinfo) oluşturucusunun *Nstachandfamily* parametresi.
 
-##  <a name="m_ntype"></a>  CMFCFontInfo::m_nType
+##  <a name="m_ntype"></a>CMFCFontInfo:: m_nType
 
-Yazı tipi türünü belirten bir değeri.
+Yazı tipinin türünü belirten bir değer.
 
 ```
 const int m_nType;
@@ -164,11 +164,11 @@ const int m_nType;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için *nTür* parametresinin [CMFCFontInfo::CMFCFontInfo](#cmfcfontinfo) Oluşturucusu.
+Daha fazla bilgi için bkz. [CMFCFontInfo:: CMFCFontInfo](#cmfcfontinfo) oluşturucusunun *nType* parametresi.
 
-##  <a name="m_strname"></a>  CMFCFontInfo::m_strName
+##  <a name="m_strname"></a>CMFCFontInfo:: m_strName
 
-Yazı tipinin adını: Örneğin, **Arial**.
+Yazı tipinin adı: Örneğin, **Arial**.
 
 ```
 const CString m_strName;
@@ -176,11 +176,11 @@ const CString m_strName;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için *lpszName* parametresinin [CMFCFontInfo::CMFCFontInfo](#cmfcfontinfo) Oluşturucusu.
+Daha fazla bilgi için, bkz. [CMFCFontInfo:: CMFCFontInfo](#cmfcfontinfo) oluşturucusunun *lpszName* parametresi.
 
-##  <a name="m_strscript"></a>  CMFCFontInfo::m_strScript
+##  <a name="m_strscript"></a>CMFCFontInfo:: m_strScript
 
-Yazı tipi ile ilişkilendirilmiş bir karakter kümesi (betik) adı.
+Yazı tipiyle ilişkili bir karakter kümesi (betik) adı.
 
 ```
 const CString m_strScript;
@@ -188,7 +188,7 @@ const CString m_strScript;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için *lpszScript* parametresinin [CMFCFontInfo::CMFCFontInfo](#cmfcfontinfo) Oluşturucusu.
+Daha fazla bilgi için, bkz. [CMFCFontInfo:: CMFCFontInfo](#cmfcfontinfo) oluşturucusunun *lpszScript* parametresi.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

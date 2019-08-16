@@ -1,21 +1,21 @@
 ---
-title: call_as (C++ COM özniteliği)
+title: call_as (C++ com özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.call_as
 helpviewer_keywords:
 - call_as attribute
 ms.assetid: a09d7f1f-353b-4870-9b45-f0284161695d
-ms.openlocfilehash: a0051cdca6673800b37d5733c0b849da24010fcb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f36cf8d1be589cc614a6def583b00af00aabdb61
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62148360"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69501801"
 ---
-# <a name="callas"></a>call_as
+# <a name="call_as"></a>call_as
 
-Sağlayan bir [yerel](local-cpp.md) uzak işlev çağrıldığında, yerel işlevin çağrılması, uzak bir işleve eşleştirilecek işlev.
+Uzak işlev çağrıldığında yerel işlev çağrıldığında [Yerel](local-cpp.md) bir işlevin uzak bir işlevle eşleştirilmesini sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -25,16 +25,16 @@ Sağlayan bir [yerel](local-cpp.md) uzak işlev çağrıldığında, yerel işle
 
 ### <a name="parameters"></a>Parametreler
 
-*İşlevi*<br/>
-Uzak bir işlev çağrıldığında çağrılacak istediğiniz yerel işlev.
+*çalışmayacaktır*<br/>
+Uzak bir işlev çağrıldığında çağrılmasını istediğiniz yerel işlev.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Call_as** C++ özniteliği ile aynı işlevlere sahip [call_as](/windows/desktop/Midl/call-as) MIDL özniteliği.
+**Call_as** C++ özniteliği, [call_as](/windows/win32/Midl/call-as) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod nasıl kullanabileceğinizi gösterir **call_as** nonremotable işlevi eşleştirmek için (`f1`) Uzaktan erişilebilir işlevi (`Remf1`):
+Aşağıdaki kod, Uzaktan erişilebilir olmayan bir işlevi (`f1`) uzaktan erişilebilen bir işleve`Remf1`() eşlemek için call_as 'i nasıl kullanabileceğinizi gösterir:
 
 ```cpp
 // cpp_attr_ref_call_as.cpp
@@ -54,12 +54,12 @@ __interface IMInterface {
 
 |||
 |-|-|
-|**İçin geçerlidir**|Arabirim yöntemi|
+|**Uygulama hedefi**|Interface yöntemi|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|Yok.|
+|**Gerekli öznitelikler**|Yok.|
 |**Geçersiz öznitelikler**|Yok.|
 
-Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
+Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

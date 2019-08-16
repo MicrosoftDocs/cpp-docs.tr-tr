@@ -26,16 +26,16 @@ helpviewer_keywords:
 - wmemset function
 - memset function
 ms.assetid: e7ceb01b-df69-49c2-b294-a39358ad4699
-ms.openlocfilehash: d517c5565ef07a834d7ef864e495a4bb33351007
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7d7b57292f582491a7750b4e12a8072112eac4dd
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62285161"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69501008"
 ---
 # <a name="memset-wmemset"></a>memset, wmemset
 
-Arabellekler belirtilen bir karaktere ayarlar.
+Arabellekleri belirtilen bir karaktere ayarlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -54,37 +54,37 @@ wchar_t *wmemset(
 
 ### <a name="parameters"></a>Parametreler
 
-*Hedef*<br/>
+*HD*<br/>
 Hedef işaretçisi.
 
 *c*<br/>
 Ayarlanacak karakter.
 
-*Sayısı*<br/>
+*biriktirme*<br/>
 Karakter sayısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Değerini *dest*.
+*Hedef*değeri.
 
 ## <a name="remarks"></a>Açıklamalar
 
-İlk Ayarlar *sayısı* karakterlerinden *dest* karaktere *c*.
+*Hedef* öğesinin ilk *sayı* karakterini *c*karakteriyle belirler.
 
-**Güvenlik Notu** hedef arabelleğinin en az için yeterli alan olduğundan emin olun *sayısı* karakter. Daha fazla bilgi için [arabellek taşmalarını](/windows/desktop/SecBP/avoiding-buffer-overruns).
+**Güvenlik notunun** Hedef arabellekte en az *sayı* karakteri için yeterli alan olduğundan emin olun. Daha fazla bilgi için bkz. [arabellek taşmalarını önleme](/windows/win32/SecBP/avoiding-buffer-overruns).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**memset**|\<Memory.h > veya \<string.h >|
-|**wmemset**|\<wchar.h >|
+|**memset**|\<Memory. h > veya \<String. h >|
+|**Wmemset**|\<wchar. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 
-Tüm sürümleri [C çalışma zamanı kitaplıkları](../../c-runtime-library/crt-library-features.md).
+[C çalışma zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md)tüm sürümleri.
 
 ## <a name="example"></a>Örnek
 
@@ -114,7 +114,7 @@ Before: This is a test of the memset function
 After:  **** is a test of the memset function
 ```
 
-Wmemset kullanımına bir örnek aşağıda verilmiştir:
+Aşağıda, Wmemset kullanımına bir örnek verilmiştir:
 
 ```C
 // crt_wmemset.c

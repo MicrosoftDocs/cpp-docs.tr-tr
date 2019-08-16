@@ -16,12 +16,12 @@ helpviewer_keywords:
 - ACL object global functions
 - security IDs [C++]
 ms.assetid: 6a584bfe-16b7-47f4-8439-9c789c41567a
-ms.openlocfilehash: 435ab4756808a530749e110302b73d16a31c38c6
-ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
+ms.openlocfilehash: 5f3c0464b239f4500d416b80ae4fdf06c2dc386f
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68915519"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69495170"
 ---
 # <a name="security-global-functions"></a>Güvenlik Genel Işlevleri
 
@@ -66,7 +66,7 @@ inline bool AtlGetDacl(
 Güvenlik bilgilerinin alınacağı nesnenin tanıtıcısı.
 
 *Nesne*<br/>
-[SE_OBJECT_TYPE](/windows/desktop/api/accctrl/ne-accctrl-se_object_type) numaralandırmasından, *hObject* parametresi tarafından tanımlanan nesne türünü gösteren bir değer belirtir.
+[SE_OBJECT_TYPE](/windows/win32/api/accctrl/ne-accctrl-se_object_type) numaralandırmasından, *hObject* parametresi tarafından tanımlanan nesne türünü gösteren bir değer belirtir.
 
 *pDacl*<br/>
 Alınan güvenlik bilgilerini içeren bir DACL nesnesine yönelik işaretçi.
@@ -100,7 +100,7 @@ inline bool AtlSetDacl(
 Güvenlik bilgilerinin ayarlanacağı nesneye yönelik işleyici.
 
 *Nesne*<br/>
-[SE_OBJECT_TYPE](/windows/desktop/api/accctrl/ne-accctrl-se_object_type) numaralandırmasından, *hObject* parametresi tarafından tanımlanan nesne türünü gösteren bir değer belirtir.
+[SE_OBJECT_TYPE](/windows/win32/api/accctrl/ne-accctrl-se_object_type) numaralandırmasından, *hObject* parametresi tarafından tanımlanan nesne türünü gösteren bir değer belirtir.
 
 *rDacl*<br/>
 Yeni güvenlik bilgilerini içeren DACL.
@@ -139,7 +139,7 @@ inline bool AtlGetGroupSid(
 Güvenlik bilgilerinin alınacağı nesnenin tanıtıcısı.
 
 *Nesne*<br/>
-[SE_OBJECT_TYPE](/windows/desktop/api/accctrl/ne-accctrl-se_object_type) numaralandırmasından, *hObject* parametresi tarafından tanımlanan nesne türünü gösteren bir değer belirtir.
+[SE_OBJECT_TYPE](/windows/win32/api/accctrl/ne-accctrl-se_object_type) numaralandırmasından, *hObject* parametresi tarafından tanımlanan nesne türünü gösteren bir değer belirtir.
 
 *PSID*<br/>
 Yeni güvenlik bilgilerini `CSid` içeren bir nesne işaretçisi.
@@ -172,7 +172,7 @@ inline bool AtlSetGroupSid(
 Güvenlik bilgilerinin ayarlanacağı nesneye yönelik işleyici.
 
 *Nesne*<br/>
-[SE_OBJECT_TYPE](/windows/desktop/api/accctrl/ne-accctrl-se_object_type) numaralandırmasından, *hObject* parametresi tarafından tanımlanan nesne türünü gösteren bir değer belirtir.
+[SE_OBJECT_TYPE](/windows/win32/api/accctrl/ne-accctrl-se_object_type) numaralandırmasından, *hObject* parametresi tarafından tanımlanan nesne türünü gösteren bir değer belirtir.
 
 *Rsıd*<br/>
 Yeni güvenlik bilgilerini içeren nesne.`CSid`
@@ -205,7 +205,7 @@ inline bool AtlGetOwnerSid(
 Güvenlik bilgilerinin alınacağı nesnenin tanıtıcısı.
 
 *Nesne*<br/>
-[SE_OBJECT_TYPE](/windows/desktop/api/accctrl/ne-accctrl-se_object_type) numaralandırmasından, *hObject* parametresi tarafından tanımlanan nesne türünü gösteren bir değer belirtir.
+[SE_OBJECT_TYPE](/windows/win32/api/accctrl/ne-accctrl-se_object_type) numaralandırmasından, *hObject* parametresi tarafından tanımlanan nesne türünü gösteren bir değer belirtir.
 
 *PSID*<br/>
 Yeni güvenlik bilgilerini `CSid` içeren bir nesne işaretçisi.
@@ -238,7 +238,7 @@ inline bool AtlSetOwnerSid(
 Güvenlik bilgilerinin ayarlanacağı nesneye yönelik işleyici.
 
 *Nesne*<br/>
-[SE_OBJECT_TYPE](/windows/desktop/api/accctrl/ne-accctrl-se_object_type) numaralandırmasından, *hObject* parametresi tarafından tanımlanan nesne türünü gösteren bir değer belirtir.
+[SE_OBJECT_TYPE](/windows/win32/api/accctrl/ne-accctrl-se_object_type) numaralandırmasından, *hObject* parametresi tarafından tanımlanan nesne türünü gösteren bir değer belirtir.
 
 *Rsıd*<br/>
 Yeni güvenlik bilgilerini içeren nesne.`CSid`
@@ -272,7 +272,7 @@ inline bool AtlGetSacl(
 Güvenlik bilgilerinin alınacağı nesnenin tanıtıcısı.
 
 *Nesne*<br/>
-[SE_OBJECT_TYPE](/windows/desktop/api/accctrl/ne-accctrl-se_object_type) numaralandırmasından, *hObject* parametresi tarafından tanımlanan nesne türünü gösteren bir değer belirtir.
+[SE_OBJECT_TYPE](/windows/win32/api/accctrl/ne-accctrl-se_object_type) numaralandırmasından, *hObject* parametresi tarafından tanımlanan nesne türünü gösteren bir değer belirtir.
 
 *pSacl*<br/>
 Alınan güvenlik bilgilerini içeren bir SACL nesnesi işaretçisi.
@@ -314,7 +314,7 @@ inline bool AtlSetSacl(
 Güvenlik bilgilerinin ayarlanacağı nesneye yönelik işleyici.
 
 *Nesne*<br/>
-[SE_OBJECT_TYPE](/windows/desktop/api/accctrl/ne-accctrl-se_object_type) numaralandırmasından, *hObject* parametresi tarafından tanımlanan nesne türünü gösteren bir değer belirtir.
+[SE_OBJECT_TYPE](/windows/win32/api/accctrl/ne-accctrl-se_object_type) numaralandırmasından, *hObject* parametresi tarafından tanımlanan nesne türünü gösteren bir değer belirtir.
 
 *rSacl*<br/>
 Yeni güvenlik bilgilerini içeren SACL.
@@ -363,13 +363,13 @@ bool bRequestNeededPrivileges = true) throw(...);
 Güvenlik bilgilerinin alınacağı nesnenin adını belirten, null ile sonlandırılmış bir dize işaretçisi.
 
 *Nesne*<br/>
-[SE_OBJECT_TYPE](/windows/desktop/api/accctrl/ne-accctrl-se_object_type) numaralandırmasından *pszObjectName* parametresi tarafından tanımlanan nesne türünü gösteren bir değer belirtir.
+[SE_OBJECT_TYPE](/windows/win32/api/accctrl/ne-accctrl-se_object_type) numaralandırmasından *pszObjectName* parametresi tarafından tanımlanan nesne türünü gösteren bir değer belirtir.
 
 *pSecurityDescriptor*<br/>
 İstenen güvenlik tanımlayıcısını alan nesne.
 
 *Requesteınfo*<br/>
-Alınacak güvenlik bilgilerinin türünü gösteren bir [SECURITY_INFORMATION](/windows/desktop/SecAuthZ/security-information) bit bayrakları kümesi. Bu parametre aşağıdaki değerlerin bir birleşimi olabilir.
+Alınacak güvenlik bilgilerinin türünü gösteren bir [SECURITY_INFORMATION](/windows/win32/SecAuthZ/security-information) bit bayrakları kümesi. Bu parametre aşağıdaki değerlerin bir birleşimi olabilir.
 
 *bRequestNeededPrivileges*<br/>
 True ise, işlev SE_SECURITY_NAME ayrıcalığını etkinleştirmeye çalışır ve tamamlandığında geri yükler.

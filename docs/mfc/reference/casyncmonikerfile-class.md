@@ -32,16 +32,16 @@ helpviewer_keywords:
 - CAsyncMonikerFile [MFC], OnStartBinding
 - CAsyncMonikerFile [MFC], OnStopBinding
 ms.assetid: 17378b66-a49a-4b67-88e3-7756ad26a2fc
-ms.openlocfilehash: b86cba0c2e8f7991902a552d404355d6c1474138
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: cd399368e46e4e9a86b4c6260e07aee07b80defb
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62237868"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69507496"
 ---
 # <a name="casyncmonikerfile-class"></a>CAsyncMonikerFile sınıfı
 
-ActiveX denetimlerinde zaman uyumsuz adların kullanılması için işlevsellik sağlar (eski adı OLE denetimleri).
+ActiveX denetimlerinde (eski adıyla OLE denetimleri) zaman uyumsuz adların kullanılması için işlevsellik sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -55,41 +55,41 @@ class CAsyncMonikerFile : public CMonikerFile
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CAsyncMonikerFile::CAsyncMonikerFile](#casyncmonikerfile)|Oluşturur bir `CAsyncMonikerFile` nesne.|
+|[CAsyncMonikerFile::CAsyncMonikerFile](#casyncmonikerfile)|Bir `CAsyncMonikerFile` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CAsyncMonikerFile::Close](#close)|Kapatır ve tüm kaynakları serbest bırakır.|
-|[CAsyncMonikerFile::GetBinding](#getbinding)|Zaman uyumsuz aktarımı bağlama bir işaretçi alır.|
-|[CAsyncMonikerFile::GetFormatEtc](#getformatetc)|Akıştaki verilerin biçimini alır.|
-|[CAsyncMonikerFile::Open](#open)|Zaman uyumsuz olarak bir dosya açar.|
+|[CAsyncMonikerFile:: Close](#close)|Tüm kaynakları kapatır ve serbest bırakır.|
+|[CAsyncMonikerFile:: GetBinding](#getbinding)|Zaman uyumsuz aktarım bağlamasının işaretçisini alır.|
+|[CAsyncMonikerFile:: GetFormatEtc](#getformatetc)|Akıştaki verilerin biçimini alır.|
+|[CAsyncMonikerFile:: Open](#open)|Bir dosyayı zaman uyumsuz olarak açar.|
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CAsyncMonikerFile::CreateBindStatusCallback](#createbindstatuscallback)|Uygulayan bir COM nesnesi oluşturur `IBindStatusCallback`.|
-|[CAsyncMonikerFile::GetBindInfo](#getbindinfo)|OLE sistem kitaplığı için bilgi oluşturulacak bağlama türünü tarafından çağrılır.|
-|[CAsyncMonikerFile::GetPriority](#getpriority)|Bağlama önceliğini almak için OLE sistem kitaplığı tarafından çağrılır.|
-|[CAsyncMonikerFile::OnDataAvailable](#ondataavailable)|Zaman uyumsuz bağlama işlemleri sırasında istemciye uygun olduğunda veri sağlamak için çağrılır.|
-|[CAsyncMonikerFile::OnLowResource](#onlowresource)|Kaynaklar yetersiz olduğunda çağrılır.|
-|[CAsyncMonikerFile::OnProgress](#onprogress)|Veri indirme işlemindeki ilerlemeyi belirtmek için çağrılır.|
-|[CAsyncMonikerFile::OnStartBinding](#onstartbinding)|Bağlama başlandığında çağırılır.|
-|[CAsyncMonikerFile::OnStopBinding](#onstopbinding)|Zaman uyumsuz aktarım bittiğinde çağırılır.|
+|[CAsyncMonikerFile:: CreateBindStatusCallback](#createbindstatuscallback)|Uygulayan `IBindStatusCallback`bir com nesnesi oluşturur.|
+|[CAsyncMonikerFile:: GetBindInfo](#getbindinfo)|Oluşturulacak bağlama türü hakkında bilgi istemek için OLE sistem kitaplığı tarafından çağırılır.|
+|[CAsyncMonikerFile:: GetPriority](#getpriority)|Bağlamanın önceliğini almak için OLE sistem kitaplığı tarafından çağırılır.|
+|[CAsyncMonikerFile:: OnDataAvailable](#ondataavailable)|Zaman uyumsuz bağlama işlemleri sırasında istemci tarafından kullanılabilir hale geldiği için verileri sağlamak üzere çağırılır.|
+|[CAsyncMonikerFile:: OnLowResource](#onlowresource)|Kaynaklar azaldığında çağırılır.|
+|[CAsyncMonikerFile:: OnProgress](#onprogress)|Veri indirme işlemindeki ilerlemeyi göstermek için çağırılır.|
+|[CAsyncMonikerFile:: OnStartBinding](#onstartbinding)|Bağlama başlatıldığında çağırılır.|
+|[CAsyncMonikerFile:: OnStopBinding](#onstopbinding)|Zaman uyumsuz aktarım durdurulduğunda çağırılır.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Öğesinden türetilen [CMonikerFile](../../mfc/reference/cmonikerfile-class.md), hangi sırayla türetilmiş olan [COleStreamFile](../../mfc/reference/colestreamfile-class.md), `CAsyncMonikerFile` kullanan [IMoniker](/windows/desktop/api/objidl/nn-objidl-imoniker) herhangi bir veri akışına erişmek için arabirimi zaman uyumsuz olarak dosyalarını bir URL'den zaman uyumsuz olarak yükleme dahil olmak üzere. Dosyaları datapath ActiveX denetimlerinin özelliklerini olabilir.
+[Cotastreamfile](../../mfc/reference/colestreamfile-class.md)'dan elde edilen [CMonikerFile](../../mfc/reference/cmonikerfile-class.md)öğesinden türetilmiş, bir URL 'den zaman uyumsuz olarak dosya yükleme de dahil olmak üzere herhangi bir veri akışına zaman uyumsuz olarak erişmek için [IMoniker](/windows/win32/api/objidl/nn-objidl-imoniker) arabirimini kullanır.`CAsyncMonikerFile` Dosyalar, ActiveX denetimlerinin DataPath özellikleri olabilir.
 
-Zaman uyumsuz adlar, öncelikle Internet özellikli uygulamalar ve ActiveX denetimleri, hızlı yanıt veren bir kullanıcı arabirimi dosya aktarımlarında sağlamak için kullanılır. Bu prime örneği kullanımıdır [CDataPathProperty](../../mfc/reference/cdatapathproperty-class.md) ActiveX denetimleri için zaman uyumsuz özellikler sağlamak için. `CDataPathProperty` Nesnesi tekrar tekrar uzun özelliği değişimi sırasında yeni verilerin kullanılabilirliğini belirtmek için bir geri alma.
+Zaman uyumsuz adlar öncelikle Internet etkin uygulamalar ve ActiveX denetimlerinde, dosya aktarımları sırasında yanıt veren bir kullanıcı arabirimi sağlamak için kullanılır. Bunun ana örneği, ActiveX denetimleri için zaman uyumsuz özellikler sağlamak üzere [CDataPathProperty](../../mfc/reference/cdatapathproperty-class.md) öğesinin kullanılması örneğidir. Nesne `CDataPathProperty` , uzun bir özellik değişim işlemi sırasında yeni verilerin kullanılabilirliğini göstermek için tekrar tekrar bir geri arama alır.
 
-Zaman uyumsuz adlar ve ActiveX denetimleri, Internet uygulamalarında kullanma hakkında daha fazla bilgi için aşağıdaki makalelere bakın:
+Internet uygulamalarında zaman uyumsuz bilinen adlar ve ActiveX denetimleri kullanma hakkında daha fazla bilgi için aşağıdaki makalelere bakın:
 
-- [Internet ilk adımlar: Zaman uyumsuz adlar](../../mfc/asynchronous-monikers-on-the-internet.md)
+- [Internet Ilk adımları: Zaman uyumsuz adlar](../../mfc/asynchronous-monikers-on-the-internet.md)
 
-- [Internet ilk adımlar: ActiveX denetimleri](../../mfc/activex-controls-on-the-internet.md)
+- [Internet Ilk adımları: ActiveX denetimleri](../../mfc/activex-controls-on-the-internet.md)
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -97,7 +97,7 @@ Zaman uyumsuz adlar ve ActiveX denetimleri, Internet uygulamalarında kullanma h
 
 [CFile](../../mfc/reference/cfile-class.md)
 
-[COleStreamFile](../../mfc/reference/colestreamfile-class.md)
+[Cotastreamfile](../../mfc/reference/colestreamfile-class.md)
 
 [CMonikerFile](../../mfc/reference/cmonikerfile-class.md)
 
@@ -105,11 +105,11 @@ Zaman uyumsuz adlar ve ActiveX denetimleri, Internet uygulamalarında kullanma h
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxole.h
+**Üstbilgi:** afxole. h
 
-##  <a name="casyncmonikerfile"></a>  CAsyncMonikerFile::CAsyncMonikerFile
+##  <a name="casyncmonikerfile"></a>CAsyncMonikerFile::CAsyncMonikerFile
 
-Oluşturur bir `CAsyncMonikerFile` nesne.
+Bir `CAsyncMonikerFile` nesnesi oluşturur.
 
 ```
 CAsyncMonikerFile();
@@ -117,13 +117,13 @@ CAsyncMonikerFile();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Oluşturma `IBindHost` arabirimi. `IBindHost` içinde yalnızca sağlarsanız, kullanılan `Open` üye işlevi.
+`IBindHost` Arabirimini oluşturmaz. `IBindHost`yalnızca onu `Open` üye işlevinde sağlarsanız kullanılır.
 
-Bir açıklaması için `IBindHost` arabirimi, Windows SDK'sı bakın.
+`IBindHost` Arabirimin açıklaması için bkz. Windows SDK.
 
-##  <a name="close"></a>  CAsyncMonikerFile::Close
+##  <a name="close"></a>CAsyncMonikerFile:: Close
 
-Kapat ve tüm kaynakları serbest bırakmak için bu işlevi çağırın.
+Tüm kaynakları kapatmak ve serbest bırakmak için bu işlevi çağırın.
 
 ```
 virtual void Close();
@@ -131,11 +131,11 @@ virtual void Close();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Açılmamış veya zaten kapalı dosyaları çağrılabilir.
+Açık olmayan veya zaten kapatılmış dosyalar üzerinde çağrılabilir.
 
-##  <a name="createbindstatuscallback"></a>  CAsyncMonikerFile::CreateBindStatusCallback
+##  <a name="createbindstatuscallback"></a>CAsyncMonikerFile:: CreateBindStatusCallback
 
-Uygulayan bir COM nesnesi oluşturur `IBindStatusCallback`.
+Uygulayan `IBindStatusCallback`bir com nesnesi oluşturur.
 
 ```
 virtual IUnknown* CreateBindStatusCallback(IUnknown* pUnkControlling);
@@ -143,26 +143,26 @@ virtual IUnknown* CreateBindStatusCallback(IUnknown* pUnkControlling);
 
 ### <a name="parameters"></a>Parametreler
 
-*pUnkControlling*<br/>
-Kontrol eden bilinmeyen bir işaretçi (dış `IUnknown`) veya toplama kullanılmadığı yoksa NULL.
+*Punkdenetleyen*<br/>
+Bilinmeyen denetim işaretçisi (dıştaki `IUnknown`) veya toplama kullanılmıyorsa null.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Varsa *pUnkControlling* NULL değil işlevi iç işaretçi döndüren `IUnknown` yeni bir COM nesnesi destekleme üzerinde `IBindStatusCallback`. Varsa `pUnkControlling` null, işlev için bir işaretçi döndürür bir `IUnknown` yeni bir COM nesnesi destekleme üzerinde `IBindStatusCallback`.
+*Punkdenetlemesini* null değilse, işlev, yeni bir com nesnesi destekleyen `IUnknown` `IBindStatusCallback`, iç öğesine bir işaretçi döndürür. NULL ise, işlev destekleyen `IBindStatusCallback`yeni bir com nesnesi `IUnknown` üzerinde bir işaretçi döndürür. `pUnkControlling`
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CAsyncMonikerFile` uygulayan bir COM nesnesi gerektirir `IBindStatusCallback`. Böyle bir nesnenin MFC uygular ve toplanabilir. Geçersiz kılabilirsiniz `CreateBindStatusCallback` kendi COM nesnesi döndürmek için. COM nesnesi çağırarak denetlediği MFC'nin toplayabilirsiniz `CreateBindStatusCallback` kontrol eden bilinmeyen COM Nesne ile. COM nesneleri kullanılarak uygulanan `CCmdTarget` COM desteği kontrol eden bilinmeyen kullanarak alabilir `CCmdTarget::GetControllingUnknown`.
+`CAsyncMonikerFile`uygulayan `IBindStatusCallback`bir com nesnesi gerektirir. MFC böyle bir nesnesi uygular ve toplanabilir. Kendi com nesneniz `CreateBindStatusCallback` döndürmek için geçersiz kılabilirsiniz. Com nesneniz, com nesnenizin bilinmeyen denetim ile çağırarak `CreateBindStatusCallback` MFC 'nin uygulamasını toplayabilir. `CCmdTarget` Com desteği kullanılarak uygulanan com nesneleri, kullanılarak `CCmdTarget::GetControllingUnknown`bilinmeyen denetim elde edebilir.
 
-Alternatif olarak, COM nesnenizin MFC'nin uygulaması çağırarak temsilci olarak atayabilir miyim `CreateBindStatusCallback( NULL )`.
+Alternatif olarak, COM nesneniz çağırarak `CreateBindStatusCallback( NULL )`MFC 'nin uygulamasına temsilci seçebilir.
 
-[CAsyncMonikerFile::Open](#open) çağrıları `CreateBindStatusCallback`.
+[CAsyncMonikerFile:: Open](#open) çağrıları `CreateBindStatusCallback`.
 
-Zaman uyumsuz adlar ve zaman uyumsuz bağlama hakkında daha fazla bilgi için bkz. [IBindStatusCallback](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms775060\(v=vs.85\)) arabirimi ve [ne zaman uyumsuz bağlama ve depolama iş](/windows/desktop/Stg/how-asynchronous-binding-and-storage-work). Toplama için bkz [toplama](/windows/desktop/com/aggregation). Tüm üç Windows SDK'da konulardır.
+Zaman uyumsuz adlar ve zaman uyumsuz bağlama hakkında daha fazla bilgi için, bkz. [IBindStatusCallback](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms775060\(v=vs.85\)) arabirimi ve [zaman uyumsuz bağlama ve depolama çalışma](/windows/win32/Stg/how-asynchronous-binding-and-storage-work). Toplama ile ilgili bir tartışma için bkz. [toplama](/windows/win32/com/aggregation). Üç konunun hepsi Windows SDK.
 
-##  <a name="getbindinfo"></a>  CAsyncMonikerFile::GetBindInfo
+##  <a name="getbindinfo"></a>CAsyncMonikerFile:: GetBindInfo
 
-Nasıl bağlanacağını istediği zaman uyumsuz ad bildirmek için istemciden zaman uyumsuz bir bilinen ad'ın adı.
+Zaman uyumsuz bilinen bir bilinen ad istemcisinden, nasıl bağlamak istediği hakkında bilgi vermek için çağırılır.
 
 ```
 virtual DWORD GetBindInfo() const;
@@ -170,17 +170,17 @@ virtual DWORD GetBindInfo() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ayarlarını alır `IBindStatusCallBack`. Bir açıklaması için `IBindStatusCallback` arabirimi, Windows SDK'sı bakın.
+Ayarlarını `IBindStatusCallBack`alır. `IBindStatusCallback` Arabirimin açıklaması için bkz. Windows SDK.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan uygulama bağlama depolama Orta (akışı) kullanın ve veri gönderimi modelini kullanmak için uyumsuz olarak ayarlar. Bağlama davranışını değiştirmek istiyorsanız, bu işlev geçersiz kılar.
+Varsayılan uygulama, bağlamayı zaman uyumsuz olacak şekilde, bir depolama ortamı (Stream) kullanacak şekilde ayarlar ve veri gönderim modelini kullanır. Bağlamanın davranışını değiştirmek istiyorsanız bu işlevi geçersiz kılın.
 
-Veri çekme modeli yerine veri gönderme modeli kullanarak bağlamak için bunu yapmak için bir neden olacaktır. Bir veri çekme modeli, bağlama işlemi istemci sürücüleri ve onu okunduğunda ad verileri istemciye yalnızca sağlar. Bir veri alım modelinde bilinen ad, zaman uyumsuz bağlama işlemi sürücüleri ve yeni veriler kullanılabilir olduğunda istemci sürekli olarak bildirir.
+Bunu yapmanın bir nedeni veri gönderim modeli yerine veri çekme modeli kullanılarak bağlanmalıdır. Bir veri çekme modelinde, istemci bağlama işlemini ve bilinen ad yalnızca istemciye okurken verileri sağlar. Veri gönderim modelinde, bilinen ad zaman uyumsuz bağlama işlemini ve yeni veriler kullanılabilir her seferinde sürekli olarak istemciye bildirir.
 
-##  <a name="getbinding"></a>  CAsyncMonikerFile::GetBinding
+##  <a name="getbinding"></a>CAsyncMonikerFile:: GetBinding
 
-Zaman uyumsuz aktarım bağlama bir işaretçi almak için bu işlevi çağırın.
+Zaman uyumsuz aktarım bağlamasının işaretçisini almak için bu işlevi çağırın.
 
 ```
 IBinding* GetBinding() const;
@@ -188,15 +188,15 @@ IBinding* GetBinding() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir işaretçi `IBinding` zaman uyumsuz aktarımı başladığında sağlanan arabirim. Herhangi bir nedenle, aktarımı NULL döndürür, zaman uyumsuz olarak yapılamaz.
+Zaman uyumsuz aktarım başladığında `IBinding` belirtilen arabirime yönelik bir işaretçi. Aktarımın zaman uyumsuz olarak yapılılamazsa NULL değerini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu, veri aktarım işlemi aracılığıyla denetlemenize olanak tanır `IBinding` , ile örnek için arabirim `IBinding::Abort`, `IBinding::Pause`, ve `IBinding::Resume`.
+Bu `IBinding` , örneğin, ve `IBinding::Abort` `IBinding::Pause` ileveriaktarımıişleminiarabirimüzerindendenetlemenizeolanaktanır.`IBinding::Resume`
 
-Bir açıklaması için `IBinding` arabirimi, Windows SDK'sı bakın.
+`IBinding` Arabirimin açıklaması için bkz. Windows SDK.
 
-##  <a name="getformatetc"></a>  CAsyncMonikerFile::GetFormatEtc
+##  <a name="getformatetc"></a>CAsyncMonikerFile:: GetFormatEtc
 
 Akıştaki verilerin biçimini almak için bu işlevi çağırın.
 
@@ -206,11 +206,11 @@ FORMATETC* GetFormatEtc() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Windows yapısı işaretçisi [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) şu anda açılan içerik akışı için. Zaman uyumsuz değilse, ad, bağlı değil veya zaman uyumsuz işlem başlatılmamıştır yoksa NULL döndürülür.
+Şu anda açık olan akış için Windows yapısı [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) işaretçisi. Bilinen ad, zaman uyumsuz değilse veya zaman uyumsuz işlem başlatılmazsa NULL değerini döndürür.
 
-##  <a name="getpriority"></a>  CAsyncMonikerFile::GetPriority
+##  <a name="getpriority"></a>CAsyncMonikerFile:: GetPriority
 
-İş parçacığına bağlama işlemi için verilen öncelik almak bağlama işlemi başlattığında çağrılan zaman uyumsuz bir bilinen ad istemci.
+Bağlama işlemi, bağlama işlemi için iş parçacığına verilen önceliği almaya başladığı için, zaman uyumsuz bir bilinen ad istemcisinden çağırılır.
 
 ```
 virtual LONG GetPriority() const;
@@ -218,15 +218,15 @@ virtual LONG GetPriority() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öncelik, zaman uyumsuz aktarımı yerini alacak. Standart iş parçacığı önceliği bayrakları biri: THREAD_PRIORITY_ABOVE_NORMAL, THREAD_PRIORITY_BELOW_NORMAL, THREAD_PRIORITY_HIGHEST, THREAD_PRIORITY_IDLE, THREAD_PRIORITY_LOWEST, THREAD_PRIORITY_NORMAL ve THREAD_PRIORITY_TIME_CRITICAL. Windows işlevi görmek [SetThreadPriority](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-setthreadpriority) bu değerleri bir açıklaması.
+Zaman uyumsuz aktarmanın gerçekleşcede olacağı öncelik. Standart iş parçacığı öncelik bayraklarından biri: THREAD_PRIORITY_ABOVE_NORMAL, THREAD_PRIORITY_BELOW_NORMAL, THREAD_PRIORITY_HIGHEST, THREAD_PRIORITY_IDLE, THREAD_PRIORITY_LOWEST, THREAD_PRIORITY_NORMAL ve THREAD_PRIORITY_TIME_CRITICAL. Bu değerlerin bir açıklaması için bkz. [SetThreadPriority](/windows/win32/api/processthreadsapi/nf-processthreadsapi-setthreadpriority) Windows işlevi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`GetPriority` doğrudan çağrılmamalıdır. THREAD_PRIORITY_NORMAL varsayılan uygulama tarafından döndürülür.
+`GetPriority`doğrudan çağrılmamalıdır. THREAD_PRIORITY_NORMAL varsayılan uygulama tarafından döndürülür.
 
-##  <a name="ondataavailable"></a>  CAsyncMonikerFile::OnDataAvailable
+##  <a name="ondataavailable"></a>CAsyncMonikerFile:: OnDataAvailable
 
-Zaman uyumsuz bir bilinen ad çağırır `OnDataAvailable` kullanılabilir olduğunda, istemcinin veri sağlamak için sırasında zaman uyumsuz işlemleri bağlayın.
+Zaman uyumsuz bir bilinen `OnDataAvailable` ad, istemciye, zaman uyumsuz bağlama işlemleri sırasında kullanılabilir hale geldiğinde veri sağlamak için çağırır.
 
 ```
 virtual void OnDataAvailable(DWORD dwSize, DWORD bscfFlag);
@@ -235,28 +235,28 @@ virtual void OnDataAvailable(DWORD dwSize, DWORD bscfFlag);
 ### <a name="parameters"></a>Parametreler
 
 *dwSize*<br/>
-Veri bağlama başlangıcından itibaren kullanılabilir toplam miktarı (bayt cinsinden). Veri miktarı işlemi için uygun değil ya da hiçbir belirli bir miktarın mevcut geldiğini gösteren sıfır olabilir.
+Bağlamanın başlangıcından bu yana kullanılabilir verilerin birikmeli miktarı (bayt cinsinden). Sıfır olabilir, bu da veri miktarının işlemle ilgili olmadığını veya belirli bir tutarın kullanılabilir olmadığını gösterir.
 
 *bscfFlag*<br/>
-BSCF numaralandırma değeri. Bir veya daha fazla aşağıdaki değerlerden biri olabilir:
+Bir BSCF numaralandırma değeri. Aşağıdaki değerlerden biri veya daha fazlası olabilir:
 
-- İlk çağrıda BSCF_FIRSTDATANOTIFICATION tanımlar `OnDataAvailable` verilen bağlama işlemi için.
+- BSCF_FIRSTDATANOTIFICATION, belirli bir bağlama işlemi `OnDataAvailable` için ilk çağrıyı tanımlar.
 
-- BSCF_INTERMEDIATEDATANOTIFICATION tanımlayan bir aracı çağrı `OnDataAvailable` bağlama işlemi için.
+- BSCF_INTERMEDIATEDATANOTIFICATION, bağlama işlemi `OnDataAvailable` için bir ara çağrı tanımlar.
 
-- BSCF_LASTDATANOTIFICATION tanımlayan son çağrı `OnDataAvailable` bağlama işlemi için.
+- BSCF_LASTDATANOTIFICATION, bağlama işlemi `OnDataAvailable` için son çağrıyı tanımlar.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlevin varsayılan uygulama, hiçbir şey yapmaz. Örnek uygulama için aşağıdaki örneğe bakın.
+Bu işlevin varsayılan uygulanması hiçbir şey yapmaz. Örnek uygulama için aşağıdaki örneğe bakın.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCWinInet#5](../../mfc/codesnippet/cpp/casyncmonikerfile-class_1.cpp)]
 
-##  <a name="onlowresource"></a>  CAsyncMonikerFile::OnLowResource
+##  <a name="onlowresource"></a>CAsyncMonikerFile:: OnLowResource
 
-Kaynaklar yetersiz olduğunda ad tarafından çağrılır.
+Kaynaklar düşük olduğunda bilinen ad tarafından çağırılır.
 
 ```
 virtual void OnLowResource();
@@ -264,11 +264,11 @@ virtual void OnLowResource();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan Uygulama çağrıları `GetBinding( )-> Abort( )`.
+Varsayılan uygulama çağrıları `GetBinding( )-> Abort( )`.
 
-##  <a name="onprogress"></a>  CAsyncMonikerFile::OnProgress
+##  <a name="onprogress"></a>CAsyncMonikerFile:: OnProgress
 
-Art arda genellikle aralıklarla makul uzun bir işlem sırasında bu bağlama işleminin geçerli ilerlemeyi göstermek için bilinen ad tarafından çağrılır.
+Genellikle uzun bir işlem sırasında makul aralıklarla bu bağlama işleminin geçerli ilerlemesini göstermek için bilinen ad tarafından çağırılır.
 
 ```
 virtual void OnProgress(
@@ -281,36 +281,36 @@ virtual void OnProgress(
 ### <a name="parameters"></a>Parametreler
 
 *ulProgress*<br/>
-Bağlama işlemi belirtilen beklenen en yüksek göre geçerli ilerlemesini gösteren *ulProgressMax*.
+Bağlama işleminin, *ulProgressMax*içinde gösterilen beklenen maksimum sınıra göre geçerli ilerlemesini gösterir.
 
 *ulProgressMax*<br/>
-Beklenen maksimum değeri belirten *ulProgress* yapılan çağrıların süresi `OnProgress` bu işlem için.
+Bu işlem `OnProgress` için çağrı süresince beklenen en büyük değer olan *ulProgress* değerini gösterir.
 
 *ulStatusCode*<br/>
-Bağlama işlemi ilerleme durumu ile ilgili ek bilgiler sağlar. Geçerli değerler verilerinden alınır `BINDSTATUS` sabit listesi. Uyarılar için olası değerler başvurun.
+Bağlama işleminin ilerleme durumuyla ilgili ek bilgi sağlar. Geçerli değerler `BINDSTATUS` numaralandırmasından alınır. Olası değerler için bkz. açıklamalar.
 
 *szStatusText*<br/>
-Değerine bağlı olarak, geçerli ilerleme durumu hakkında bilgi *ulStatusCode*. Uyarılar için olası değerler başvurun.
+Geçerli ilerleme hakkında, *ulStatusCode*değerine bağlı olarak bilgiler. Olası değerler için bkz. açıklamalar.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Olası değerler için *ulStatusCode* (ve *szStatusText* her değerin) şunlardır:
+*UlStatusCode* için olası değerler (ve her bir değer Için *szStatusText* ):
 
 |||
 |-|-|
-|BINDSTATUS_FINDINGRESOURCE  |Bağlama işlemi, nesne ya da depolama için bağlı kaynağı buluyor. *SzStatusText* Aranan kaynak görünen adını sağlar (örneğin, "www.microsoft.com") için.  |
-|BINDSTATUS_CONNECTING  |Bağlama işlemi nesne veya depolama için bağlı tutar kaynak bağlanıyor demektir. *SzStatusText* görünen adını (örneğin, bir IP adresi) bağlı kaynak sağlar.  |
-|BINDSTATUS_SENDINGREQUEST|Bağlama işlemi nesne veya depolama için bağlı istiyor. *SzStatusText* nesnesinin görünen adını (örneğin, bir dosya adı) sağlar.|
-|BINDSTATUS_REDIRECTING  |Bağlama işlemi, farklı veri konumuna yönlendirildi. *SzStatusText* yeni veri konumu görünen adını sağlar.  |
-|BINDSTATUS_USINGCACHEDCOPY  |Bağlama işlemi, depolama ve istenen nesne önbelleğe alınmış bir kopyasından alıyor. *SzStatusText* null.  |
-|BINDSTATUS_BEGINDOWNLOADDATA  |Bağlama işlemi, nesne veya depolama için bağlı Alma başladı. *SzStatusText* veri konumu görünen adını sağlar.|
-|BINDSTATUS_DOWNLOADINGDATA  |Bağlama işlemi, nesne veya depolama için bağlı almaya devam eder. *SzStatusText* veri konumu görünen adını sağlar.  |
-|BINDSTATUS_ENDDOWNLOADDATA  |Bağlama işlemi, nesne veya depolama için bağlı alma tamamlandı. *SzStatusText* veri konumu görünen adını sağlar.  |
-|BINDSTATUS_CLASSIDAVAILABLE  |Bağlanan nesne neredeyse oluşturulacak örneğidir. *SzStatusText* bağlama işlemi iptal etmek bir fırsat isterseniz rotasyonunun CLSID yeni nesnenin dize biçiminde sağlar.  |
+|BINDSTATUS_FINDINGRESOURCE  |Bağlama işlemi, bağlı olan nesneyi veya depolamayı tutan kaynağı buluyor. *SzStatusText* , aranan kaynağın görünen adını (örneğin, "www.Microsoft.com") sağlar.  |
+|BINDSTATUS_CONNECTING  |Bağlama işlemi, bağlı olan nesneyi veya depolamayı tutan kaynağa bağlanıyor. *SzStatusText* , bağlanılan kaynağın görünen adını (örneğin, bir IP adresi) sağlar.  |
+|BINDSTATUS_SENDINGREQUEST|Bağlama işlemi, bağlanan nesne veya depolamayı istiyor. *SzStatusText* nesnenin görünen adını (örneğin, bir dosya adı) sağlar.|
+|BINDSTATUS_REDIRECTING  |Bağlama işlemi farklı bir veri konumuna yeniden yönlendirildi. *SzStatusText* , yeni veri konumunun görünen adını sağlar.  |
+|BINDSTATUS_USINGCACHEDCOPY  |Bağlama işlemi, önbellekteki bir kopyadan istenen nesneyi veya depolamayı alıyor. *SzStatusText* null.  |
+|BINDSTATUS_BEGINDOWNLOADDATA  |Bağlama işlemi, bağlı olan nesne veya depolamayı almaya başladı. *SzStatusText* , veri konumunun görünen adını sağlar.|
+|BINDSTATUS_DOWNLOADINGDATA  |Bağlama işlemi, bağlanan nesne veya depolamayı almaya devam eder. *SzStatusText* , veri konumunun görünen adını sağlar.  |
+|BINDSTATUS_ENDDOWNLOADDATA  |Bağlama işlemi, bağlanan nesne veya depolama alanını almayı tamamladı. *SzStatusText* , veri konumunun görünen adını sağlar.  |
+|BINDSTATUS_CLASSIDAVAILABLE  |Bağlanmakta olan nesnenin bir örneği yalnızca oluşturulması için. *SzStatusText* , dize biçiminde yeni nesnenin CLSID değerini sağlar ve isterseniz, bağlantı işlemini iptal etmek için istemciye izin verir.  |
 
-##  <a name="onstartbinding"></a>  CAsyncMonikerFile::OnStartBinding
+##  <a name="onstartbinding"></a>CAsyncMonikerFile:: OnStartBinding
 
-Bu işlev, türetilmiş sınıflarda bağlama başlatma sırasında eylemleri gerçekleştirmek için geçersiz kılın.
+Bağlama başlatıldığında eylemler gerçekleştirmek için türetilmiş sınıflarınızda bu işlevi geçersiz kılın.
 
 ```
 virtual void OnStartBinding();
@@ -318,11 +318,11 @@ virtual void OnStartBinding();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, ad tarafından geri çağrılır. Varsayılan uygulama, hiçbir şey yapmaz.
+Bu işlev ad tarafından geri çağırılır. Varsayılan uygulama hiçbir şey yapmaz.
 
-##  <a name="onstopbinding"></a>  CAsyncMonikerFile::OnStopBinding
+##  <a name="onstopbinding"></a>CAsyncMonikerFile:: OnStopBinding
 
-Bağlama işlemi sonunda ad tarafından çağrılır.
+Bağlama işleminin sonundaki bilinen ad tarafından çağırılır.
 
 ```
 virtual void OnStopBinding(HRESULT hresult, LPCTSTR szError);
@@ -331,20 +331,20 @@ virtual void OnStopBinding(HRESULT hresult, LPCTSTR szError);
 ### <a name="parameters"></a>Parametreler
 
 *HRESULT*<br/>
-Hata veya uyarı değeri HRESULT.
+Hata veya uyarı değeri olan bir HRESULT.
 
 *szErrort*<br/>
 Hatayı açıklayan bir karakter dizesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Aktarım bittiğinde eylemleri gerçekleştirmek için bu işlevi geçersiz kılar. Varsayılan olarak, işlev serbest `IBinding`.
+Aktarım durdurulduğunda işlemleri gerçekleştirmek için bu işlevi geçersiz kılın. Varsayılan olarak işlev yayınlar `IBinding`.
 
-Bir açıklaması için `IBinding` arabirimi, Windows SDK'sı bakın.
+`IBinding` Arabirimin açıklaması için bkz. Windows SDK.
 
-##  <a name="open"></a>  CAsyncMonikerFile::Open
+##  <a name="open"></a>CAsyncMonikerFile:: Open
 
-Zaman uyumsuz olarak bir dosyayı açmak için bu üye işlevini çağırın.
+Bir dosyayı zaman uyumsuz olarak açmak için bu üye işlevini çağırın.
 
 ```
 virtual BOOL Open(
@@ -389,32 +389,32 @@ virtual BOOL Open(
 ### <a name="parameters"></a>Parametreler
 
 *lpszURL*<br/>
-Zaman uyumsuz olarak açılmasını dosyaya bir işaretçi. Dosya geçerli bir URL veya dosya adı olabilir.
+Dosyanın zaman uyumsuz olarak açılmasını sağlamak için bir işaretçi. Dosya herhangi bir geçerli URL veya dosya adı olabilir.
 
 *pError*<br/>
-Dosya özel durumları için bir işaretçi. Bir hata olması durumunda, neden ayarlanır.
+Dosya özel durumlarına yönelik bir işaretçi. Bir hata durumunda, nedeni olarak ayarlanır.
 
-*pMoniker*<br/>
-Zaman uyumsuz ad arabirim işaretçisi `IMoniker`, ile alabilirsiniz belgenin kendi ad birleşimidir kesin bir bilinen ad `IOleClientSite::GetMoniker(OLEWHICHMK_CONTAINER)`ve yol adından oluşturulmuş bir bilinen ad. Denetimi, bu ad bağlamak için kullanabilirsiniz, ancak bu denetimin kaydetmelisiniz bilinen adı değil.
+*Pbilinen*<br/>
+Zaman uyumsuz bilinen ad arabirimine `IMoniker`yönelik bir işaretçi, belgenin kendi bilinen adının birleşimi olan, ile `IOleClientSite::GetMoniker(OLEWHICHMK_CONTAINER)`alabileceğiniz ve yol adından oluşturulan bir ad olan kesin bir addır. Denetim, bu bilinen adı bağlamak için kullanabilir, ancak bu, denetimin kaydetmesi gereken addır.
 
 *pBindHost*<br/>
-Bir işaretçi `IBindHost` ad potansiyel olarak göreli bir yol oluşturmak için kullanılan arabirim. Bağlama ana bilgisayar geçersiz ya da bir bilinen ad sağlamaz, arama için varsayılan olarak `Open(lpszFileName,pError)`. Bir açıklaması için `IBindHost` arabirimi, Windows SDK'sı bakın.
+Potansiyel olarak göreli bir `IBindHost` yol adındaki bilinen adı oluşturmak için kullanılacak arabirime yönelik bir işaretçi. Bağlama Konağı geçersizse veya bir ad sağlamıyorsa, çağrının varsayılan değeri olarak `Open(lpszFileName,pError)`ayarlanır. `IBindHost` Arabirimin açıklaması için bkz. Windows SDK.
 
 *pServiceProvider*<br/>
-Bir işaretçi `IServiceProvider` arabirimi. Hizmet sağlayıcısı geçersiz, veya hizmet için sunamaz `IBindHost`, çağrı varsayılanları `Open(lpszFileName,pError)`.
+`IServiceProvider` Arabirime yönelik bir işaretçi. Hizmet sağlayıcısı geçersiz veya hizmeti `IBindHost`sağlayamazsa, arama varsayılan olarak `Open(lpszFileName,pError)`olur.
 
 *pUnknown*<br/>
-Bir işaretçi `IUnknown` arabirimi. Varsa `IServiceProvider` bulunduğunda işlevi sorgularında `IBindHost`. Hizmet sağlayıcısı geçersiz, veya hizmet için sunamaz `IBindHost`, çağrı varsayılanları `Open(lpszFileName,pError)`.
+`IUnknown` Arabirime yönelik bir işaretçi. Bulunursa, işlevi için `IBindHost`sorgular. `IServiceProvider` Hizmet sağlayıcısı geçersiz veya hizmeti `IBindHost`sağlayamazsa, arama varsayılan olarak `Open(lpszFileName,pError)`olur.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dosya başarıyla açıldı olursa sıfır dışı; Aksi durumda 0.
+Dosya başarıyla açılırsa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu çağrı, bağlama işlemi başlatır.
+Bu çağrı bağlama işlemini başlatır.
 
-Bir URL veya dosya adı için kullanabileceğiniz *lpszURL* parametresi. Örneğin:
+*LpszURL* parametresi IÇIN bir URL veya dosya adı kullanabilirsiniz. Örneğin:
 
 [!code-cpp[NVC_MFCWinInet#6](../../mfc/codesnippet/cpp/casyncmonikerfile-class_2.cpp)]
 

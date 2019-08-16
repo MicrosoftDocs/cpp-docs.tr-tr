@@ -1,21 +1,21 @@
 ---
-title: oleautomation (C++ COM özniteliği)
+title: OleAutomation (C++ com özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.oleautomation
 helpviewer_keywords:
 - oleautomation attribute
 ms.assetid: c1086c91-260b-4dc3-b244-662852d09906
-ms.openlocfilehash: 74701742de904b76e7b1152c8ddb3f2f5dd953c2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 56970d8b1067e1ac38230b6995074210ddc5549b
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62407620"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69514355"
 ---
 # <a name="oleautomation"></a>oleautomation
 
-Bir arabirim otomasyon ile uyumlu olduğunu gösterir.
+Bir arabirimin Otomasyon ile uyumlu olduğunu gösterir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -25,11 +25,11 @@ Bir arabirim otomasyon ile uyumlu olduğunu gösterir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Oleautomation** C++ özniteliği ile aynı işlevlere sahip [oleautomation](/windows/desktop/Midl/oleautomation) MIDL özniteliği.
+**Oleautomation** C++ özniteliği, [oleautomation](/windows/win32/Midl/oleautomation) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
 
 ## <a name="example"></a>Örnek
 
-Örnekler için bkz: [defaultvalue](defaultvalue.md) ve [nonextensible](nonextensible.md) örnek kullanımı için **oleautomation**.
+Bir **oleautomation**örneği kullanımı için [DefaultValue](defaultvalue.md) ve [genişletilebilen](nonextensible.md) örneklere bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -37,12 +37,12 @@ Bir arabirim otomasyon ile uyumlu olduğunu gösterir.
 
 |||
 |-|-|
-|**İçin geçerlidir**|**interface**|
+|**Uygulama hedefi**|**interface**|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|Yok.|
+|**Gerekli öznitelikler**|Yok.|
 |**Geçersiz öznitelikler**|**dispinterface**|
 
-Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
+Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

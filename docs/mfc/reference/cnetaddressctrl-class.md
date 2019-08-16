@@ -1,5 +1,5 @@
 ---
-title: CNetAddressCtrl sınıfı
+title: Cnetaddressc$sınıfı
 ms.date: 11/19/2018
 f1_keywords:
 - CNetAddressCtrl
@@ -20,16 +20,16 @@ helpviewer_keywords:
 - CNetAddressCtrl [MFC], GetAllowType
 - CNetAddressCtrl [MFC], SetAllowType
 ms.assetid: cb4c6aca-3f49-4b52-b76c-65f57096155b
-ms.openlocfilehash: 23160c51466ce1a2857d3648dd5f4970dfe172f7
-ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
+ms.openlocfilehash: 5e485c22bcc4bf35f61226d84345102052689f89
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66504205"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69504529"
 ---
-# <a name="cnetaddressctrl-class"></a>CNetAddressCtrl sınıfı
+# <a name="cnetaddressctrl-class"></a>Cnetaddressc$sınıfı
 
-`CNetAddressCtrl` Sınıfı, giriş ve IPv4, IPv6 ve adlandırılmış DNS adreslerinin biçimini doğrulamak için kullanabileceğiniz ağ adresi denetimini temsil eder.
+`CNetAddressCtrl` Sınıfı, IPv4, IPv6 ve adlandırılmış DNS adreslerinin biçimini girmek ve doğrulamak için kullanabileceğiniz ağ adresi denetimini temsil eder.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -43,38 +43,38 @@ class CNetAddressCtrl : public CEdit
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CNetAddressCtrl::CNetAddressCtrl](#cnetaddressctrl)|Oluşturur bir `CNetAddressCtrl` nesne.|
+|[Cnetaddressc$:: cnetaddressc$](#cnetaddressctrl)|Bir `CNetAddressCtrl` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CNetAddressCtrl::Create](#create)|Belirtilen stilleriyle bir ağ adresi denetimi oluşturur ve bunu geçerli ekler `CNetAddressCtrl` nesne.|
-|[CNetAddressCtrl::CreateEx](#createex)|Belirtilen genişletilmiş stilleriyle bir ağ adresi denetimi oluşturur ve bunu geçerli ekler `CNetAddressCtrl` nesne.|
-|[CNetAddressCtrl::DisplayErrorTip](#displayerrortip)|Kullanıcı geçerli ağ adresi denetimi desteklenmeyen ağ adresi girdiğinde bir hata balon ipucu görüntüler.|
-|[CNetAddressCtrl::GetAddress](#getaddress)|Geçerli ağ adresi denetimi ile ilişkili ağ adresi doğrulanmış ve ayrıştırılmış bir gösterimini alır.|
-|[CNetAddressCtrl::GetAllowType](#getallowtype)|Geçerli ağ adresi denetimini destekleyen ağ adresi türünü alır.|
-|[CNetAddressCtrl::SetAllowType](#setallowtype)|Geçerli ağ adresi denetimini destekleyen ağ adresi türünü ayarlar.|
+|[Cnetaddressc$:: Create](#create)|Belirtilen stillerle bir ağ adresi denetimi oluşturur ve geçerli `CNetAddressCtrl` nesneye ekler.|
+|[Cnetaddressc$:: CreateEx](#createex)|Belirtilen genişletilmiş stillerle bir ağ adresi denetimi oluşturur ve geçerli `CNetAddressCtrl` nesneye ekler.|
+|[Cnetaddressccu::D Isplayerrortıp](#displayerrortip)|Kullanıcı geçerli ağ adresi denetimine desteklenmeyen bir ağ adresi girdiğinde bir hata balonu ipucu görüntüler.|
+|[Cnetaddressc$:: GetAddress](#getaddress)|Geçerli ağ adresi denetimiyle ilişkili ağ adresinin doğrulanan ve ayrıştırılmış temsilini alır.|
+|[Cnetaddresscu:: GetAllowType](#getallowtype)|Geçerli ağ adresi denetiminin destekleyebileceği ağ adresi türünü alır.|
+|[Cnetaddresscu:: SetAllowType](#setallowtype)|Geçerli ağ adresi denetiminin destekleyebileceği ağ adresi türünü ayarlar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Ağ adresi denetimi, kullanıcının girdiği adresinin biçimi doğru olduğunu doğrular. Denetim ağ adresine bağlanmaz. [CNetAddressCtrl::SetAllowType](#setallowtype) yöntemini bir veya daha fazla adres türlerini belirtir, [CNetAddressCtrl::GetAddress](#getaddress) yöntemi ayrıştırabilir ve doğrulayın. Bir IPv4, IPv6 ve adlandırılmış bir sunucu, ağ, konak veya yayın iletisi hedef adresi biçiminde bir adres olabilir. Adresinin biçimi yanlış ise, kullanabileceğiniz [CNetAddressCtrl::DisplayErrorTip](#displayerrortip) grafik işaret ağ adresi denetimi için metin kutusu ve bir önceden tanımlanmış görüntüler bilgi ipucu ileti kutusu görüntülemek için yöntemi hata iletisi.
+Ağ adresi denetimi, kullanıcının girdiği adresin biçiminin doğru olduğunu doğrular. Denetim aslında ağ adresine bağlanmamıştır. [Cnetaddresscfy:: SetAllowType](#setallowtype) yöntemi, [Cnetaddresscfy:: GetAddress](#getaddress) yönteminin ayrıştırılabilir ve doğrulayabileceği bir veya daha fazla adres türünü belirtir. Bir adres, bir sunucu, ağ, ana bilgisayar veya yayın iletisi hedefi için bir IPv4, IPv6 veya adlandırılmış adres biçiminde olabilir. Adresin biçimi yanlış ise, ağ adresi denetiminin metin kutusuna grafiksel olarak işaret eden bir InfoTip ileti kutusu göstermek için [Cnetaddresscu::D Isplayerrortıp](#displayerrortip) yöntemini kullanabilirsiniz ve önceden tanımlanmış bir hata iletisi görüntüler.
 
-`CNetAddressCtrl` Sınıfı türetilen [CEdit](../../mfc/reference/cedit-class.md) sınıfı. Sonuç olarak, ağ adresi denetimi tüm Windows düzenleme denetimi iletileri erişim sağlar.
+Sınıfı, cedıt sınıfından türetilir. [](../../mfc/reference/cedit-class.md) `CNetAddressCtrl` Sonuç olarak, ağ adresi denetimi tüm Windows düzenleme denetim iletilerine erişim sağlar.
 
-Aşağıdaki şekil, bir ağ adresi denetimi içeren bir iletişim kutusu gösterir. Metin kutusunu (1) ağ adresi denetimi için bir geçersiz ağ adresi içeriyor. Ağ adresi geçersiz (2) bilgi ipucu iletisi görüntülenir.
+Aşağıdaki şekilde, bir ağ adresi denetimi içeren bir iletişim kutusu gösterilmektedir. Ağ adresi denetimi için (1) metin kutusu geçersiz bir ağ adresi içeriyor. Bilgi ipucu iletisi (2), ağ adresi geçersizse görüntülenir.
 
-![Bir ağ adresi denetimi ve Bilgi İpucu ile iletişim. ](../../mfc/reference/media/cnetaddctrl.png "İletişim bir ağ adresi denetimi ve bilgi ipucu.")
+![Ağ adresi denetimi ve bilgi ipucu Ile Iletişim kutusu.](../../mfc/reference/media/cnetaddctrl.png "Ağ adresi denetimi ve bilgi ipucu Ile Iletişim kutusu.")
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği, bir ağ adresi doğrulayan bir iletişim kutusu bölümüdür. Üç radyo düğmesi için olay işleyicileri, üç adresi türlerden biri olabilir ağ adresi belirtin. Kullanıcı ağ denetimi metin kutusuna bir adresi girer ve sonra adresinizi doğrulamak için bir düğmeye bastığında. Adresi geçerli bir başarı iletisi görüntülenir; Aksi takdirde, önceden tanımlı bilgi ipucu hata iletisi görüntülenir.
+Aşağıdaki kod örneği, bir ağ adresini doğrulayan bir iletişim kutusunun bölümüdür. Üç radyo düğmesi için olay işleyicileri, ağ adresinin üç adres türünden biri olabilir. Kullanıcı ağ denetiminin metin kutusuna bir adres girer ve sonra adresi doğrulamak için bir düğmeye basar. Adres geçerliyse, bir başarı iletisi görüntülenir; Aksi takdirde, önceden tanımlanmış Bilgi İpucu hata iletisi görüntülenir.
 
 [!code-cpp[NVC_MFC_CNetAddressCtrl_s1#1](../../mfc/reference/codesnippet/cpp/cnetaddressctrl-class_1.cpp)]
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği iletişim üstbilgi dosyasından tanımlar [NC_ADDRESS](/windows/desktop/api/shellapi/ns-shellapi-tagnc_address) ve [NET_ADDRESS_INFO](/windows/desktop/shell/hkey-type) gerektirdiği değişkenleri [CNetAddressCtrl::GetAddress](#getaddress)yöntemi.
+İletişim başlığı dosyasındaki aşağıdaki kod örneği, [Cnetaddressc$:: GetAddress](#getaddress) yöntemi Için gereken [NC_ADDRESS](/windows/win32/api/shellapi/ns-shellapi-nc_address) ve [NET_ADDRESS_INFO](/windows/win32/shell/hkey-type) değişkenlerini tanımlar.
 
 [!code-cpp[NVC_MFC_CNetAddressCtrl_s1#2](../../mfc/reference/codesnippet/cpp/cnetaddressctrl-class_2.h)]
 
@@ -92,15 +92,15 @@ Aşağıdaki kod örneği iletişim üstbilgi dosyasından tanımlar [NC_ADDRESS
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxcmn.h
+**Üstbilgi:** afxcmn. h
 
-Bu sınıf, Windows Vista ve sonraki sürümlerde desteklenir.
+Bu sınıf Windows Vista ve sonraki sürümlerde desteklenir.
 
-Bu sınıf için ek gereksinimler açıklanmıştır [yapı gereksinimleri için Windows Vista ortak denetimleri](../../mfc/build-requirements-for-windows-vista-common-controls.md).
+Bu sınıf için ek gereksinimler, [Windows Vista ortak denetimleri Için derleme gereksinimleri](../../mfc/build-requirements-for-windows-vista-common-controls.md)bölümünde açıklanmaktadır.
 
-##  <a name="cnetaddressctrl"></a>  CNetAddressCtrl::CNetAddressCtrl
+##  <a name="cnetaddressctrl"></a>Cnetaddressc$:: cnetaddressc$
 
-Oluşturur bir `CNetAddressCtrl` nesne.
+Bir `CNetAddressCtrl` nesnesi oluşturur.
 
 ```
 CNetAddressCtrl();
@@ -108,11 +108,11 @@ CNetAddressCtrl();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanım [CNetAddressCtrl::Create](#create) veya [CNetAddressCtrl::CreateEx](#createex) Ağ denetimi oluşturma ve buna eklemek için yöntem `CNetAddressCtrl` nesne.
+Bir ağ denetimi oluşturmak ve `CNetAddressCtrl` nesneye iliştirmek için [cnetaddressc$:: Create](#create) veya [cnetaddressc$:: CreateEx](#createex) metodunu kullanın.
 
-##  <a name="create"></a>  CNetAddressCtrl::Create
+##  <a name="create"></a>Cnetaddressc$:: Create
 
-Belirtilen stilleriyle bir ağ adresi denetimi oluşturur ve bunu geçerli ekler `CNetAddressCtrl` nesne.
+Belirtilen stillerle bir ağ adresi denetimi oluşturur ve geçerli `CNetAddressCtrl` nesneye ekler.
 
 ```
 virtual BOOL Create(
@@ -126,18 +126,18 @@ virtual BOOL Create(
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*dwStyle*|[in] Denetime uygulanacak stilleri Bitsel bir birleşimi. Daha fazla bilgi için [düzenleme stilleri](../../mfc/reference/styles-used-by-mfc.md#edit-styles).|
-|*Rect*|[in] Bir başvuru bir [RECT](/previous-versions/dd162897\(v=vs.85\)) denetimin boyutunu ve konumunu içeren yapısı.|
-|*pParentWnd*|[in] Null olmayan bir işaretçiye bir [CWnd](../../mfc/reference/cwnd-class.md) denetiminin üst penceresine olan nesne.|
-|*nID*|[in] Denetimin kimliği.|
+|*dwStyle*|'ndaki Denetime uygulanacak stillerin bit düzeyinde birleşimi. Daha fazla bilgi için bkz. [stilleri düzenleme](../../mfc/reference/styles-used-by-mfc.md#edit-styles).|
+|*Rect*|'ndaki Denetimin konumunu ve boyutunu içeren bir [Rect](/previous-versions/dd162897\(v=vs.85\)) yapısına başvuru.|
+|*pParentWnd*|'ndaki Denetimin üst penceresi olan bir [CWnd](../../mfc/reference/cwnd-class.md) nesnesine null olmayan bir işaretçi.|
+|*NID*|'ndaki Denetimin KIMLIĞI.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.
+Bu yöntem başarılı olursa TRUE; Aksi takdirde, FALSE.
 
-##  <a name="createex"></a>  CNetAddressCtrl::CreateEx
+##  <a name="createex"></a>Cnetaddressc$:: CreateEx
 
-Belirtilen genişletilmiş stilleriyle bir ağ adresi denetimi oluşturur ve bunu geçerli ekler `CNetAddressCtrl` nesne.
+Belirtilen genişletilmiş stillerle bir ağ adresi denetimi oluşturur ve geçerli `CNetAddressCtrl` nesneye ekler.
 
 ```
 virtual BOOL CreateEx(
@@ -152,19 +152,19 @@ virtual BOOL CreateEx(
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*dwExStyle*|[in] Bitsel bir birleşimi (veya) genişletilmiş stiller denetime uygulanacak. Daha fazla bilgi için *dwExStyle* parametresinin [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) işlevi.|
-|*dwStyle*|[in] Bitsel bir birleşimi (veya) denetime uygulanacak stilleri. Daha fazla bilgi için [düzenleme stilleri](../../mfc/reference/styles-used-by-mfc.md#edit-styles).|
-|*Rect*|[in] Bir başvuru bir [RECT](/previous-versions/dd162897\(v=vs.85\)) denetimin boyutunu ve konumunu içeren yapısı.|
-|*pParentWnd*|[in] Null olmayan bir işaretçiye bir [CWnd](../../mfc/reference/cwnd-class.md) denetiminin üst penceresine olan nesne.|
-|*nID*|[in] Denetimin kimliği.|
+|*dwExStyle*|'ndaki Denetime uygulanacak genişletilmiş stillerin bit tabanlı birleşimi (veya). Daha fazla bilgi için bkz. [CreateWindowEx](/windows/win32/api/winuser/nf-winuser-createwindowexw) Işlevinin *dwExStyle* parametresi.|
+|*dwStyle*|'ndaki Denetime uygulanacak stillerin bit tabanlı birleşimi (veya). Daha fazla bilgi için bkz. [stilleri düzenleme](../../mfc/reference/styles-used-by-mfc.md#edit-styles).|
+|*Rect*|'ndaki Denetimin konumunu ve boyutunu içeren bir [Rect](/previous-versions/dd162897\(v=vs.85\)) yapısına başvuru.|
+|*pParentWnd*|'ndaki Denetimin üst penceresi olan bir [CWnd](../../mfc/reference/cwnd-class.md) nesnesine null olmayan bir işaretçi.|
+|*NID*|'ndaki Denetimin KIMLIĞI.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.
+Bu yöntem başarılı olursa TRUE; Aksi takdirde, FALSE.
 
-##  <a name="displayerrortip"></a>  CNetAddressCtrl::DisplayErrorTip
+##  <a name="displayerrortip"></a>Cnetaddressccu::D Isplayerrortıp
 
-Geçerli ağ adresi denetimle ilişkili balon ipucu bir hata iletisi görüntüler.
+Geçerli ağ adresi denetimiyle ilişkili balon ipucunda bir hata mesajı görüntüler.
 
 ```
 HRESULT DisplayErrorTip();
@@ -172,17 +172,17 @@ HRESULT DisplayErrorTip();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Değer `S_OK` başarılıysa; değilse, bu yöntem, bir hata kodu.
+Bu yöntem `S_OK` başarılı olursa değeri, aksi takdirde bir hata kodu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanım [CNetAddressCtrl::SetAllowType](#setallowtype) geçerli ağ adresi denetimini destekleyen adresleri türlerini belirtmek için yöntemi. Kullanım [CNetAddressCtrl::GetAddress](#getaddress) doğrulamak ve kullanıcının girdiği ağ adresi ayrıştırmak için yöntemi. Kullanım [CNetAddressCtrl::DisplayErrorTip](#displayerrortip) yöntemi, bir hata iletisi bilgi ipucu görüntülenecek [CNetAddressCtrl::GetAddress](#getaddress) yöntemi başarısız.
+Geçerli ağ adresi denetiminin destekleyebileceği adres türlerini belirtmek için [Cnetaddressc$:: SetAllowType](#setallowtype) metodunu kullanın. Kullanıcının girdiği ağ adresini doğrulamak ve ayrıştırmak için [Cnetaddressc$:: GetAddress](#getaddress) metodunu kullanın. [Cnetaddressccu:: GetAddress](#getaddress) yöntemi başarısız olursa, bir hata iletisi bilgi ipucu göstermek Için [cnetaddressccu::D isplayerrortıp](#displayerrortip) metodunu kullanın.
 
-Bu ileti çağırır [NetAddr_DisplayErrorTip](/windows/desktop/api/shellapi/nf-shellapi-netaddr_displayerrortip) Windows SDK'da açıklanan makrosu. Bu makro gönderir `NCM_DISPLAYERRORTIP` ileti.
+Bu ileti, Windows SDK açıklanan [NetAddr_DisplayErrorTip](/windows/win32/api/shellapi/nf-shellapi-netaddr_displayerrortip) makrosunu çağırır. Bu makro `NCM_DISPLAYERRORTIP` iletiyi gönderir.
 
-##  <a name="getaddress"></a>  CNetAddressCtrl::GetAddress
+##  <a name="getaddress"></a>Cnetaddressc$:: GetAddress
 
-Geçerli ağ adresi denetimi ile ilişkili olan ağ adresi doğrulanmış ve ayrıştırılmış bir gösterimini alır.
+Geçerli ağ adresi denetimiyle ilişkili ağ adresinin doğrulanan ve ayrıştırılmış temsilini alır.
 
 ```
 HRESULT GetAddress(PNC_ADDRESS pAddress) const;
@@ -191,23 +191,23 @@ HRESULT GetAddress(PNC_ADDRESS pAddress) const;
 ### <a name="parameters"></a>Parametreler
 
 *pAddress*<br/>
-[out içinde] İşaretçi bir [NC_ADDRESS](/windows/desktop/api/shellapi/ns-shellapi-tagnc_address) yapısı.  Ayarlama *pAddrInfo* adresine bu yapı üyesi bir [NET_ADDRESS_INFO](/windows/desktop/shell/hkey-type) siz GetAddress yöntemi çağırmadan önce yapılandırın.
+[in, out] Bir [NC_ADDRESS](/windows/win32/api/shellapi/ns-shellapi-nc_address) yapısına yönelik işaretçi.  GetAddress yöntemini çağırmadan önce bu yapının *pAddrInfo* üyesini bir [NET_ADDRESS_INFO](/windows/win32/shell/hkey-type) yapısının adresine ayarlayın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu yöntem başarılıysa S_OK değeri; Aksi takdirde, bir COM hata kodu. Dönüş değerini bölümünü olası hata kodları hakkında daha fazla bilgi için bkz. [NetAddr_GetAddress](/windows/desktop/api/shellapi/nf-shellapi-netaddr_getaddress) makrosu.
+Bu yöntem başarılı olursa bu değer S_OK; Aksi halde bir COM hata kodu. Olası hata kodları hakkında daha fazla bilgi için [NetAddr_GetAddress](/windows/win32/api/shellapi/nf-shellapi-netaddr_getaddress) makrosunun dönüş değeri bölümüne bakın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem başarılı olursa [NET_ADDRESS_INFO](/windows/desktop/shell/hkey-type) yapısı ağ adresi hakkında ek bilgiler içerir.
+Bu yöntem başarılı olursa, [NET_ADDRESS_INFO](/windows/win32/shell/hkey-type) yapısı ağ adresiyle ilgili ek bilgiler içerir.
 
-Kullanım [CNetAddressCtrl::SetAllowType](#setallowtype) adresleri geçerli ağ adresi denetimi destekleyebilir türlerini belirtmek için yöntemi. Kullanım [CNetAddressCtrl::GetAddress](#getaddress) doğrulamak ve kullanıcının girdiği ağ adresi ayrıştırmak için yöntemi. Kullanım [CNetAddressCtrl::DisplayErrorTip](#displayerrortip) yöntemi, bir hata iletisi bilgi ipucu görüntülenecek [CNetAddressCtrl::GetAddress](#getaddress) yöntemi başarısız.
+Geçerli ağ adresi denetiminin destekleyebileceği adres türlerini belirtmek için [Cnetaddressc$:: SetAllowType](#setallowtype) yöntemini kullanın. Kullanıcının girdiği ağ adresini doğrulamak ve ayrıştırmak için [Cnetaddressc$:: GetAddress](#getaddress) metodunu kullanın. [Cnetaddressccu:: GetAddress](#getaddress) yöntemi başarısız olursa, bir hata iletisi bilgi ipucu göstermek Için [cnetaddressccu::D isplayerrortıp](#displayerrortip) metodunu kullanın.
 
-Bu metodu çağıran [NetAddr_GetAddress](/windows/desktop/api/shellapi/nf-shellapi-netaddr_getaddress) Windows SDK'da açıklanan makrosu. Bu makro NCM_GETADDRESS iletiyi gönderir.
+Bu yöntem, Windows SDK açıklanan [NetAddr_GetAddress](/windows/win32/api/shellapi/nf-shellapi-netaddr_getaddress) makrosunu çağırır. Bu makro NCM_GETADDRESS iletisini gönderir.
 
-##  <a name="getallowtype"></a>  CNetAddressCtrl::GetAllowType
+##  <a name="getallowtype"></a>Cnetaddresscu:: GetAllowType
 
-Geçerli ağ adresi denetimini destekleyen ağ adresi türünü alır.
+Geçerli ağ adresi denetiminin destekleyebileceği ağ adresi türünü alır.
 
 ```
 DWORD GetAllowType() const;
@@ -215,15 +215,15 @@ DWORD GetAllowType() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Tür adresi belirten bir bit düzeyinde (veya) bayrakların birleşimi ağ adresi denetimini destekler. Daha fazla bilgi için [NET_STRING](/windows/desktop/shell/net-string).
+Ağ adresi denetiminin destekleyebileceği adres türlerini belirten bayrakların bit düzeyinde birleşimi (veya). Daha fazla bilgi için bkz. [NET_STRING](/windows/win32/shell/net-string).
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu ileti çağırır [NetAddr_GetAllowType](/windows/desktop/api/shellapi/nf-shellapi-netaddr_getallowtype) Windows SDK'da açıklanan makrosu. Bu makro NCM_GETALLOWTYPE iletiyi gönderir.
+Bu ileti, Windows SDK açıklanan [NetAddr_GetAllowType](/windows/win32/api/shellapi/nf-shellapi-netaddr_getallowtype) makrosunu çağırır. Bu makro NCM_GETALLOWTYPE iletisini gönderir.
 
-##  <a name="setallowtype"></a>  CNetAddressCtrl::SetAllowType
+##  <a name="setallowtype"></a>Cnetaddresscu:: SetAllowType
 
-Geçerli ağ adresi denetimini destekleyen ağ adresi türünü ayarlar.
+Geçerli ağ adresi denetiminin destekleyebileceği ağ adresi türünü ayarlar.
 
 ```
 HRESULT SetAllowType(DWORD dwAddrMask);
@@ -233,17 +233,17 @@ HRESULT SetAllowType(DWORD dwAddrMask);
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*dwAddrMask*|[in] Tür adresi belirten bir bit düzeyinde (veya) bayrakların birleşimi ağ adresi denetimini destekler. Daha fazla bilgi için [NET_STRING](/windows/desktop/shell/net-string).|
+|*dwAddrMask*|'ndaki Ağ adresi denetiminin destekleyebileceği adres türlerini belirten bayrakların bit düzeyinde birleşimi (veya). Daha fazla bilgi için bkz. [NET_STRING](/windows/win32/shell/net-string).|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu yöntem başarılıysa S_OK; Aksi takdirde, bir COM hata kodu.
+Bu yöntem başarılı olursa S_OK; Aksi halde bir COM hata kodu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanım [CNetAddressCtrl::SetAllowType](#setallowtype) geçerli ağ adresi denetimini destekleyen adresleri türlerini belirtmek için yöntemi. Kullanım [CNetAddressCtrl::GetAddress](#getaddress) doğrulamak ve kullanıcının girdiği ağ adresi ayrıştırmak için yöntemi. Kullanım [CNetAddressCtrl::DisplayErrorTip](#displayerrortip) yöntemi, bir hata iletisi bilgi ipucu görüntülenecek [CNetAddressCtrl::GetAddress](#getaddress) yöntemi başarısız.
+Geçerli ağ adresi denetiminin destekleyebileceği adres türlerini belirtmek için [Cnetaddressc$:: SetAllowType](#setallowtype) metodunu kullanın. Kullanıcının girdiği ağ adresini doğrulamak ve ayrıştırmak için [Cnetaddressc$:: GetAddress](#getaddress) metodunu kullanın. [Cnetaddressccu:: GetAddress](#getaddress) yöntemi başarısız olursa, bir hata iletisi bilgi ipucu göstermek Için [cnetaddressccu::D isplayerrortıp](#displayerrortip) metodunu kullanın.
 
-Bu ileti çağırır [NetAddr_SetAllowType](/windows/desktop/api/shellapi/nf-shellapi-netaddr_setallowtype) Windows SDK'da açıklanan makrosu. Bu makro NCM_SETALLOWTYPE iletiyi gönderir.
+Bu ileti, Windows SDK açıklanan [NetAddr_SetAllowType](/windows/win32/api/shellapi/nf-shellapi-netaddr_setallowtype) makrosunu çağırır. Bu makro NCM_SETALLOWTYPE iletisini gönderir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

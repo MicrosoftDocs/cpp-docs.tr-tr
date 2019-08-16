@@ -1,5 +1,5 @@
 ---
-title: DLL'ler ve Visual C++ çalışma zamanı kitaplığı davranışı
+title: Dll 'Ler ve C++ görsel çalışma zamanı kitaplığı davranışı
 ms.date: 05/06/2019
 f1_keywords:
 - _DllMainCRTStartup
@@ -15,35 +15,35 @@ helpviewer_keywords:
 - run-time [C++], DLL startup sequence
 - DLLs [C++], startup sequence
 ms.assetid: e06f24ab-6ca5-44ef-9857-aed0c6f049f2
-ms.openlocfilehash: d3f3197b6b7b01e7f69767b72286d6d21470cb0e
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: d44f3bf7a8b06f567b1af221e17085d589e56aca
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65217746"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69492615"
 ---
-# <a name="dlls-and-visual-c-run-time-library-behavior"></a>DLL'ler ve Visual C++ çalışma zamanı kitaplığı davranışı
+# <a name="dlls-and-visual-c-run-time-library-behavior"></a>Dll 'Ler ve C++ görsel çalışma zamanı kitaplığı davranışı
 
-Varsayılan olarak Visual Studio kullanarak bir dinamik bağlantı kitaplığı (DLL) oluşturmak, bağlayıcı görseli içeren C++ çalışma zamanı kitaplığı (VCRuntime). VCRuntime başlatmak ve C/C++ yürütülebilir sonlandırmak için gereken kodu içerir. Bir DLL içine bağlandığında VCRuntime kod olarak adlandırılan bir iç DLL giriş noktası işlevi sağlar `_DllMainCRTStartup` eklemek veya bir işlem veya iş parçacığı ayırma dll Windows işletim sistemi iletileri işler. `_DllMainCRTStartup` İşlevi C çalışma zamanı kitaplığı (CRT) başlatma ve sonlandırma ayarlama, yığın arabelleği güvenlik gibi temel görevleri gerçekleştirir ve statik ve genel nesneler için oluşturucular ve Yıkıcılar için çağırır. `_DllMainCRTStartup` Ayrıca aramaları kanca işlevleri WinRT, MFC ve ATL gerçekleştirmek için kendi başlatma ve sonlandırma gibi diğer kitaplıkları. Bu başlatma, CRT ve diğer kitaplıkları, hem de, statik değişkenler, başlatılmamış bir durumda bırakılır. DLL'nizi MFC'ye statik olarak bağlı bir CRT veya dinamik olarak bağlı bir CRT DLL kullanıp kullanmayacağını aynı VCRuntime iç başlatma ve sonlandırma rutinleri çağrılır.
+Visual Studio kullanarak bir dinamik bağlantı kitaplığı (DLL) oluşturduğunuzda, varsayılan olarak bağlayıcı, görsel C++ çalışma zamanı kitaplığını (vcruntime) içerir. VCRuntime bir C/C++ yürütülebiliri başlatmak ve sonlandırmak için gereken kodu içerir. Bir dll 'ye bağlandığında, vcruntime kodu, bir işlem veya iş parçacığına iliştirilecek veya bu bilgisayardan ayrımak üzere dll 'ye Windows işletim sistemi iletilerini işleyen adlı `_DllMainCRTStartup` bir iç DLL giriş noktası işlevi sağlar. `_DllMainCRTStartup` İşlevi yığın arabelleği güvenlik kurulumu, C çalışma zamanı kitaplığı (CRT) başlatma ve sonlandırma ve statik ve genel nesneler için oluşturucular ve Yıkıcılar çağrıları gibi önemli görevleri gerçekleştirir. `_DllMainCRTStartup`Ayrıca kendi başlatma ve sonlandırma işlemleri gerçekleştirmek için WinRT, MFC ve ATL gibi diğer kitaplıklar için de kanca işlevleri çağırır. Bu başlatma olmadan, CRT ve diğer kitaplıklar, statik değişkenleriniz de başlatılmamış bir durumda bırakılır. Aynı VCRuntime iç başlatma ve sonlandırma yordamları, DLL 'nizin statik olarak bağlı bir CRT veya dinamik olarak bağlı bir CRT DLL kullanıp kullanmamasından bağımsız olarak adlandırılır.
 
-## <a name="default-dll-entry-point-dllmaincrtstartup"></a>Varsayılan DLL giriş noktası _DllMainCRTStartup
+## <a name="default-dll-entry-point-_dllmaincrtstartup"></a>Varsayılan DLL giriş noktası _DllMainCRTStartup
 
-Windows tüm DLL'leri genellikle adlı bir isteğe bağlı bir giriş noktası işlevi içerebilir `DllMain`, yani başlatma ve sonlandırma için çağrılır. Bu, tahsis edin ya da gerektiği gibi ek kaynakları serbest bırakmak için bir fırsat sağlar. Windows, dört durumda giriş noktası işlevini çağırır: işleme, işlemden ayrılma, iş parçacığı ekleme ve iş parçacığı ayırma. Bir DLL bir işlemin adres alanına onu kullanan bir uygulama yüklendiğinde veya uygulama çalışma zamanında DLL istediğinde yüklendiğinde işletim sistemi DLL'si verileri ayrı bir kopyasını oluşturur. Bu adlandırılır *bir sürece iliştirilip*. *İş parçacığı ekleme* DLL yüklendiği işlem yeni bir iş parçacığı oluşturduğunda gerçekleşir. *İş parçacığı ayırma* iş parçacığı sonlandığında gerçekleşir ve *işlemden ayrılma* DLL artık gerekli değildir ve bir uygulama tarafından yayımlanır. İşletim sistemi ayrı DLL giriş noktası her geçirme, bu olaylar için çağrıda bir *neden* her bir olay türü için bağımsız değişken. Örneğin, işletim Sisteminin gönderdiği `DLL_PROCESS_ATTACH` olarak *neden* işlemini göstermek için bağımsız değişken ekleyin.
+Windows 'da, tüm dll 'ler genellikle `DllMain`başlatma ve sonlandırma için çağrılan isteğe bağlı bir giriş noktası işlevi içerebilir. Bu, gerektiğinde ek kaynaklar ayırma veya serbest bırakma fırsatı sağlar. Windows, giriş noktası işlevini dört durumda çağırır: işlem iliştirme, işlem ayırma, iş parçacığı iliştirme ve iş parçacığı ayırma. Bir DLL bir işlem adres alanına yüklendiğinde, onu kullanan bir uygulama yüklendiğinde ya da uygulama çalışma zamanında DLL istediğinde, işletim sistemi DLL verilerinin ayrı bir kopyasını oluşturur. Buna *işlem iliştirme*denir. *Iş parçacığı iliştirme* , dll 'nin yüklendiği işlem yeni bir iş parçacığı oluşturduğunda oluşur. İş parçacığı *ayırma* , iş parçacığı sonlandırıldığında oluşur ve *işlem ayırma* dll artık gerekli olmadığında ve bir uygulama tarafından serbest bırakıldığında gerçekleşir. İşletim sistemi, her olay türü için bir *neden* bağımsız değişkeni geçirerek, bu olayların her bırı için DLL giriş noktasına ayrı bir çağrı yapar. Örneğin, işletim sistemi, işlem `DLL_PROCESS_ATTACH` eklemeyi bildirmek için *neden* bağımsız değişkeni olarak gönderir.
 
-VCRuntime kitaplığı adlı bir giriş noktası işlevi sağlar `_DllMainCRTStartup` varsayılan başlatma ve sonlandırma işlemleri işlemek için. İşlemi eklemek, `_DllMainCRTStartup` işlevi arabellek güvenlik denetimi ayarlar, CRT ve diğer kitaplıkları başlatır, çalışma zamanı türü bilgileri başlatır, başlatır ve statik ve yerel olmayan veriler için oluşturucuları çağırır, iş parçacığı-yerel depolamayı başlatır , her ek için bir iç statik sayacını artırır ve daha sonra bir kullanıcı tarafından veya kitaplığı-sağlanan çağırır `DllMain`. Ayırma işlemi, işlev bu adımları tersten geçer. Çağrı `DllMain`, azaltır, iç sayaç yok ediciler çağırır, çağrıları CRT sonlandırma işlevleri ve kayıtlı `atexit` işlevleri ve diğer tüm kitaplıkları sonlandırma bildirir. Ek Sayaç sıfıra gittiğinde işlevi döndürür `FALSE` Windows için DLL kaldırılabilip kaldırılamayacağını belirtmek için. `_DllMainCRTStartup` İşlevi olarak da adlandırılır sırasında iş parçacığı ekleme ve iş parçacığı ayırma. Bu gibi durumlarda, VCRuntime kod hiçbir ek başlatma veya sonlandırma kendi yapar ve yalnızca çağıran `DllMain` boyunca iletinin geçirilecek. Varsa `DllMain` döndürür `FALSE` işlemden ekleme, hata, sinyal `_DllMainCRTStartup` çağrıları `DllMain` yeniden ve geçirir `DLL_PROCESS_DETACH` olarak *neden* bağımsız değişken, daha sonra rest üzerinden gider sonlandırma işlemi.
+Vcruntime kitaplığı, varsayılan başlatma ve sonlandırma işlemlerini işlemek için `_DllMainCRTStartup` çağrılan bir giriş noktası işlevi sağlar. İşlem iliştirme üzerinde, `_DllMainCRTStartup` işlev arabellek güvenliği denetimleri ayarlıyor, CRT ve diğer kitaplıkları başlatır, çalışma zamanı tür bilgilerini başlatır, statik ve yerel olmayan veriler için Oluşturucu başlatır ve çağırır, iş parçacığı yerel depolamayı başlatır , her iliştirme için bir iç statik sayacı artırır ve ardından bir kullanıcı veya kitaplığı `DllMain`çağırır. İşlem ayırma sırasında, işlev bu adımları tersine geçer. Çağrı `DllMain`, iç sayacı azaltır, yıkıcıları çağırır, CRT sonlandırma işlevlerini ve kayıtlı `atexit` işlevleri çağırır ve diğer sonlandırma kitaplıklarına bildirir. Ek sayacı sıfıra gittiğinde, işlevi `FALSE` Windows 'un dll 'nin kaldırılabiliyor olduğunu gösterir. İşlev `_DllMainCRTStartup` , iş parçacığı iliştirme ve iş parçacığı ayırma sırasında da çağrılır. Bu durumlarda, vcruntime kodu hiç ek başlatma veya sonlandırma yapmaz ve yalnızca iletiyi anında geçirmek için çağırır `DllMain` . `FALSE` `DLL_PROCESS_DETACH` `DllMain` `_DllMainCRTStartup` İşlem iliştirme 'den döndürürse,sinyalhatası,yenidençağırırvenedenbağımsızdeğişkeniolarakgeçerse,sonlandırmasüreciningerikalanıüzerindenilerler.`DllMain`
 
-Visual Studio'da varsayılan giriş noktası DLL'leri oluşturma sırasında `_DllMainCRTStartup` tarafından sağlanan VCRuntime bağlı olarak otomatik olarak. Kullanarak DLL dosyanız için bir giriş noktası işlevi belirtmek gerekmez [/Entry (giriş noktası simgesi)](reference/entry-entry-point-symbol.md) bağlayıcı seçeneği.
+Visual Studio 'da dll 'ler oluştururken, vcruntime tarafından sağlanan `_DllMainCRTStartup` varsayılan giriş noktası otomatik olarak bağlanır. [/Entry (giriş noktası simgesi)](reference/entry-entry-point-symbol.md) bağlayıcı SEÇENEĞINI kullanarak dll 'niz için bir giriş noktası işlevi belirtmeniz gerekmez.
 
 > [!NOTE]
-> / Entry kullanarak DLL için başka bir giriş noktası işlevi belirlemek mümkün olmakla birlikte: bağlayıcı seçeneği değil öneririz, giriş noktası işlevinizi her şeyi çoğaltmak yeterli olacağından, `_DllMainCRTStartup` , aynı sırada yapar. VCRuntime davranışını yinelenen olanak tanıyan işlevler sağlar. Örneğin, çağırabilirsiniz [__security_init_cookie](../c-runtime-library/reference/security-init-cookie.md) hemen desteklemek için üzerinde bir sürece iliştirilip [/GS (arabellek güvenlik denetimi)](reference/gs-buffer-security-check.md) denetleme seçeneği arabellek. Çağırabilirsiniz `_CRT_INIT` işlevi, kalan DLL başlatma veya sonlandırma işlevleri gerçekleştirmek için giriş noktası işlevi aynı parametre geçirme.
+> /Entry: bağlayıcı seçeneğini kullanarak bir dll için başka bir giriş noktası işlevi belirtmek mümkün olsa da, giriş noktası işlevinizin her şeyi `_DllMainCRTStartup` aynı sırada yinelemeyeceğinden, bunu önermiyoruz. VCRuntime, davranışını çoğalttığınızda size izin veren işlevler sağlar. Örneğin, [/GS (arabellek güvenlik denetimi)](reference/gs-buffer-security-check.md) arabellek denetimi seçeneğini desteklemek için, işlem iliştirme üzerinde hemen [__security_ınit_cookie](../c-runtime-library/reference/security-init-cookie.md) çağırabilirsiniz. DLL başlatma veya sonlandırma `_CRT_INIT` işlevlerinin geri kalanını gerçekleştirmek için, giriş noktası işleviyle aynı parametreleri geçirerek işlevi çağırabilirsiniz.
 
 <a name="initializing-a-dll"></a>
 
-## <a name="initialize-a-dll"></a>DLL'yi Başlat
+## <a name="initialize-a-dll"></a>DLL 'yi başlatma
 
-DLL'niz DLL dosyanız yüklendiğinde yürütülmesi gereken başlatma kodu olabilir. Kendi DLL başlatma ve sonlandırma işlevleri gerçekleştirmek, sırayla `_DllMainCRTStartup` çağrılan işlev çağıran `DllMain` sağlayan. `DllMain` DLL giriş noktası için gerekli imzaya sahip olmalıdır. Varsayılan giriş noktası işlevini `_DllMainCRTStartup` çağrıları `DllMain` Windows tarafından geçirilen aynı parametreleri kullanarak. Siz belirtmezseniz varsayılan olarak bir `DllMain` işlevi, Visual Studio sizin için bir tane sağlar ve içinde bağlar böylece `_DllMainCRTStartup` çağırmak için bir şey her zaman vardır. Bu DLL dosyanızı başlatmanız gerekmiyorsa, DLL dosyanızı oluştururken yapmanız gereken özel bir şey anlamına gelir.
+Dll 'niz, DLL 'niz yüklenirken yürütülmesi gereken başlatma koduna sahip olabilir. Kendi dll başlatma ve sonlandırma işlevlerinizi gerçekleştirebilmeniz için, `_DllMainCRTStartup` sağlayabilmeniz için adlı `DllMain` bir işlev çağırır. DLL giriş noktası için gerekli imzaya sahip olmanızgerekir.`DllMain` Varsayılan giriş noktası işlevi `_DllMainCRTStartup` , Windows tarafından geçirilen parametreleri kullanarak çağırır. `DllMain` Varsayılan olarak, bir `DllMain` işlev sağlamazsanız, Visual Studio sizin için bir tane sağlar ve her zaman çağrılabilecek `_DllMainCRTStartup` bir şey olması için öğesine bağlanır. Bu, DLL 'nizi başlatmanıza gerek kalmadığında, DLL 'nizi oluştururken yapmanız gereken özel bir şey olmadığı anlamına gelir.
 
-İçin kullanılan imzayı budur `DllMain`:
+Bu imza şu şekilde kullanılır `DllMain`:
 
 ```cpp
 #include <windows.h>
@@ -54,16 +54,16 @@ extern "C" BOOL WINAPI DllMain (
     LPVOID    const reserved); // reserved
 ```
 
-Bazı kitaplıklar kaydırma `DllMain` işlevi sizin için. Örneğin, normal bir MFC DLL uygulamak `CWinApp` nesnenin `InitInstance` ve `ExitInstance` başlatma ve sonlandırma, DLL tarafından gerekli gerçekleştirmek için üye işlevleri. Daha fazla ayrıntı için [Normal MFC DLL'leri Başlat](#initializing-regular-dlls) bölümü.
+Bazı kitaplıklar `DllMain` işlevi sizin için sarmalıdır. Örneğin, normal bir MFC DLL 'de, dll 'niz için `CWinApp` gereken başlatma `InitInstance` ve `ExitInstance` sonlandırma gerçekleştirmek üzere nesnenin ve üye işlevlerini uygulayın. Daha ayrıntılı bilgi için bkz. [normal MFC DLL 'Leri başlatma](#initializing-regular-dlls) bölümü.
 
 > [!WARNING]
-> Güvenli bir şekilde bir DLL giriş noktası yapabilecekleriniz hakkında önemli sınırlamaları vardır. Bkz: [genel en iyi yöntemler](/windows/desktop/Dlls/dynamic-link-library-best-practices) çağırmak güvenli olmayan belirli Windows API'leri için `DllMain`. Ardından basit başlatma dışında hiçbir şeyde bir başlangıç işlevinde DLL için bunu varsa. Uygulamaları başlatma işlevinden sonra çağrılacak gerektirebilir `DllMain` sahip çalıştırma ve bunlar önce tüm diğer işlevleri çağırma DLL'de.
+> Bir DLL giriş noktasında güvenle yapabilecekleriniz için önemli sınırlamalar vardır. '`DllMain`İ çağırmak güvenli olmayan belirli Windows API 'Leri Için [Genel en iyi uygulamalar](/windows/win32/Dlls/dynamic-link-library-best-practices) bölümüne bakın. En basit başlatma için bir işlem yapmanız gerekiyorsa, bunu DLL için başlatma işlevinde yapın. Çalıştırıldıktan sonra `DllMain` ve DLL 'deki diğer işlevleri çağırmadan önce, uygulamaların başlatma işlevini çağırmasını zorunlu kılabilirsiniz.
 
 <a name="initializing-non-mfc-dlls"></a>
 
-### <a name="initialize-ordinary-non-mfc-dlls"></a>(MFC olmayan) Normal DLL'leri Başlat
+### <a name="initialize-ordinary-non-mfc-dlls"></a>Sıradan (MFC olmayan) dll 'Leri başlatma
 
-VCRuntime tarafından sağlanan kullanma (MFC olmayan) normal DLL'lerde kendi başlatma gerçekleştirmek için `_DllMainCRTStartup` giriş noktası, DLL kaynak kodunuzu çağrılan bir işlev içermelidir `DllMain`. Aşağıdaki kod tanımının gösteren temel bir çatı sunar `DllMain` aşağıdaki gibi görünmelidir:
+Vcruntime tarafından sağlanan `_DllMainCRTStartup` giriş noktasını kullanan sıradan (MFC olmayan) dll 'lerde kendi başlatma işlemini gerçekleştirmek için DLL kaynak kodunuzun adlı `DllMain`bir işlev içermesi gerekir. Aşağıdaki kod, tanımının `DllMain` ne gibi görünebileceğini gösteren temel bir iskelet sunar:
 
 ```cpp
 #include <windows.h>
@@ -98,31 +98,31 @@ extern "C" BOOL WINAPI DllMain (
 ```
 
 > [!NOTE]
-> Eski Windows SDK Belgeleri DLL giriş noktası işlevini gerçek adını üzerinde bağlayıcı/Entry seçeneği ile komut satırı belirtilmelidir diyor. Visual Studio ile giriş noktası işlevinizin adı ise/Entry seçeneği kullanmanız gerekmez `DllMain`. Aslında, adı ve/Entry seçeneği kullanırsanız, giriş noktası işlevini bir şey dışında `DllMain`, aynı başlatma çağrıları, giriş noktası işlevi yapmadığı sürece CRT düzgün başlatılmadı `_DllMainCRTStartup` yapar.
+> Daha eski Windows SDK belgeler, DLL giriş noktası işlevinin gerçek adının,/ENTRY seçeneğiyle bağlayıcı komut satırında belirtilmesi gerektiğini belirtir. Visual Studio ile, giriş noktası işlevinizin adı ise `DllMain`/entry seçeneğini kullanmanıza gerek kalmaz. Aslında,/Entry seçeneğini kullanırsanız ve giriş noktası işlevinizi dışında `DllMain`bir şey olarak adlandırırsanız, giriş noktası işleviniz `_DllMainCRTStartup` yaptığı başlatma çağrılarını yaptığı müddetçe CRT düzgün başlatılmaz.
 
 <a name="initializing-regular-dlls"></a>
 
-### <a name="initialize-regular-mfc-dlls"></a>Normal MFC DLL'leri Başlat
+### <a name="initialize-regular-mfc-dlls"></a>Normal MFC DLL 'Leri başlatma
 
-Normal MFC DLL'leri olduğundan bir `CWinApp` nesnesinde gerçekleştirdikleri başlatma ve sonlandırma görevlerinin bir MFC uygulaması ile aynı konumda: içinde `InitInstance` ve `ExitInstance` üye işlevleri DLL'nin `CWinApp`-türetilmiş sınıf. MFC sağladığından bir `DllMain` tarafından çağrılan işlevi `_DllMainCRTStartup` için `DLL_PROCESS_ATTACH` ve `DLL_PROCESS_DETACH`, kendi yazdığınız değil `DllMain` işlevi. MFC tarafından sağlanan `DllMain` işlev çağrılarında `InitInstance` ne zaman DLL'niz yüklenir ve çağrı yaptığı `ExitInstance` DLL kaldırılmadan önce.
+Normal MFC DLL 'leri `CWinApp` bir nesne içerdiğinden, kendi başlatma ve sonlandırma görevlerini bir MFC uygulamasıyla aynı konumda gerçekleştirmeleri gerekir: `InitInstance` dll 'nin `CWinApp`türetilen ve `ExitInstance` üye işlevlerinde sınıfı. `DllMain` MFC ve `DllMain` için tarafından çağrılan `_DllMainCRTStartup`bir işlevsağladığından,kendi`DLL_PROCESS_ATTACH`işleviniziyazmamalıdır `DLL_PROCESS_DETACH`. MFC tarafından sunulan `DllMain` işlev dll 'niz `InitInstance` yüklendiğinde çağırır ve DLL kaldırılmadan önce çağrılır `ExitInstance` .
 
-Normal MFC DLL'SİNİN birden çok iş parçacığı çağırarak takip edebilirsiniz [TlsAlloc](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlsalloc) ve [TlsGetValue](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlsgetvalue) içinde kendi `InitInstance` işlevi. Bu işlevler, iş parçacığına özgü verileri izlemek DLL'ye izin verme.
+Normal bir MFC DLL 'si, `InitInstance` işlevine [TlsAlloc](/windows/win32/api/processthreadsapi/nf-processthreadsapi-tlsalloc) ve [TlsGetValue](/windows/win32/api/processthreadsapi/nf-processthreadsapi-tlsgetvalue) çağırarak birden çok iş parçacığını izleyebilir. Bu işlevler, DLL 'nin iş parçacığına özgü verileri izlemesini sağlar.
 
-İçinde bir MFC OLE, MFC veritabanı (veya DAO) kullandığınız ya da MFC yuva desteği, sırasıyla, hata ayıklama MFC uzantısı DLL'leri MFCO MFC'ye, Normal MFC DLL'SİNİN*sürüm*D.dll, MFCD*sürüm*D.dll ve MFCN*sürüm*D.dll (burada *sürüm* sürüm numarasıdır) otomatik olarak bağlanır. Her biri, Normal MFC DLL içinde kullanıyorsanız bu DLL'ler için aşağıdaki önceden tanımlanmış başlatma işlevlerden birini çağırmalıdır `CWinApp::InitInstance`.
+MFC 'ye dinamik olarak bağlanan normal MFC DLL 'inizde MFC OLE, MFC veritabanı (veya DAO) ya da MFC Yuvaları desteğini, sırasıyla hata ayıkla MFC uzantı dll MFCO*Sürüm*d. dll, mfcd*Sürüm*d. dll ve mfcn*Sürüm*d. dll ( Sürüm numarası sürüm numarasıdır) otomatik olarak bağlanır. Normal MFC DLL `CWinApp::InitInstance`'leriniz Içinde kullandığınız her dll için aşağıdaki önceden tanımlanmış başlatma işlevlerinden birini çağırmanız gerekir.
 
-|MFC desteği türü|Çağrılacak başlatma işlevi|
+|MFC desteğinin türü|Çağırmak için başlatma işlevi|
 |-------------------------|-------------------------------------|
-|MFC OLE (MFCO*sürüm*D.dll)|`AfxOleInitModule`|
-|MFC veritabanı (MFCD*sürüm*D.dll)|`AfxDbInitModule`|
-|MFC yuva (MFCN*sürüm*D.dll)|`AfxNetInitModule`|
+|MFC OLE (MFCO*sürümü*D. dll)|`AfxOleInitModule`|
+|MFC veritabanı (MFCD*Sürüm*D. dll)|`AfxDbInitModule`|
+|MFC Yuvaları (MFCN*Sürüm*D. dll)|`AfxNetInitModule`|
 
 <a name="initializing-extension-dlls"></a>
 
-### <a name="initialize-mfc-extension-dlls"></a>MFC uzantı DLL'leri başlatma
+### <a name="initialize-mfc-extension-dlls"></a>MFC uzantı dll 'Lerini Başlat
 
-MFC uzantısı DLL'leri olmadığı için bir `CWinApp`-türetilmiş nesnesi (Normal MFC DLL'leri olduğu gibi), başlatma ve sonlandırma kodu buraya eklemelisiniz `DllMain` MFC DLL Sihirbazı oluşturan işlevi.
+MFC uzantı dll 'leri türetilmiş bir `CWinApp`nesneye sahip olmadığından (normal MFC DLL 'leri gibi), başlatma ve sonlandırma kodunuzu `DllMain` MFC DLL Sihirbazının oluşturduğu işleve eklemeniz gerekir.
 
-Sihirbaz aşağıdaki kodu, MFC uzantı DLL'leri sağlar. Kodda, `PROJNAME` projenizin adı için bir yer tutucudur.
+Sihirbaz MFC uzantı dll 'Leri için aşağıdaki kodu sağlar. Kodda, `PROJNAME` projenizin adı için bir yer tutucudur.
 
 ```cpp
 #include "stdafx.h"
@@ -157,29 +157,29 @@ DllMain(HINSTANCE hInstance, DWORD dwReason, LPVOID lpReserved)
 }
 ```
 
-Yeni bir oluşturma `CDynLinkLibrary` nesnesini başlatma sırasında sağlar, MFC uzantısı DLL dışarı aktarmak için `CRuntimeClass` nesneleri veya istemci uygulamasına kaynakları.
+Başlatma sırasında yeni `CDynLinkLibrary` bir nesne oluşturmak, MFC uzantı dll 'inin nesneleri veya `CRuntimeClass` kaynakları istemci uygulamasına dışarı aktarmaya izin verir.
 
-MFC uzantısı DLL dosyasından bir veya daha fazla Normal MFC DLL'leri kullanacaksanız, oluşturan bir başlatma işlev dışarı bir `CDynLinkLibrary` nesne. Bu işlev her MFC uzantısı DLL kullanan Normal MFC DLL'leri çağrılmalıdır. Bu başlatma işlevi çağırmak için uygun bir yere bulunduğu `InitInstance` Normal MFC DLL üye işlevinin `CWinApp`-nesne MFC uzantısı DLL dışarı aktarılan sınıflar veya İşlevler kullanmadan önce türetilmiş.
+MFC uzantı dll 'nizi bir veya daha fazla normal MFC DLL 'lerden kullanacaksanız, `CDynLinkLibrary` nesne oluşturan bir başlatma işlevini dışarı aktarmanız gerekir. Bu işlev, MFC uzantı DLL 'sini kullanan normal MFC DLL 'Lerinin her birinden çağrılmalıdır. Bu başlatma işlevini `InitInstance` çağırmak için uygun bir yer, MFC uzantı dll 'inin ya da işlevlerinin hiçbirini kullanmadan önce `CWinApp`normal MFC DLL 'nin türetilmiş nesnesinin üye işlevleridir.
 
-İçinde `DllMain` MFC DLL Sihirbazı'nın ürettiği çağrısı `AfxInitExtensionModule` modülünün çalışma zamanı sınıflar yakalar (`CRuntimeClass` yapıları), nesne fabrikaları yanı sıra (`COleObjectFactory` nesneleri) için kullanmak `CDynLinkLibrary` nesnesi oluşturulur. Dönüş değerini denetlemeniz gerekir `AfxInitExtensionModule`; sıfır değeri döndürdüyse `AfxInitExtensionModule`, sıfırdan döndürür, `DllMain` işlevi.
+`COleObjectFactory` `AfxInitExtensionModule` `CRuntimeClass` MFC DLL Sihirbazı 'nın ürettiği `CDynLinkLibrary` bir çağrı, modülün çalışma zamanı sınıflarını (yapılar) ve nesne oluşturulduğunda kullanılmak üzere nesne fabrikalarını (nesneleri) yakalar. `DllMain` Dönüş değerini `AfxInitExtensionModule`denetlemeniz gerekir; öğesinden `AfxInitExtensionModule`sıfır değer döndürülürse, işlevinizden `DllMain` sıfır döndürün.
 
-MFC uzantısı DLL için bir yürütülebilir açıkça bağlanacaksa (yürütülebilir çağrıları anlamı `AfxLoadLibrary` DLL'ye bağlandığı için), bir çağrı eklemeniz gerekir `AfxTermExtensionModule` üzerinde `DLL_PROCESS_DETACH`. Her işlem MFC uzantısı DLL ayırdığında MFC uzantısı DLL temizlemek MFC'nin bu işlevi sağlar (işlem çıktığında veya DLL sonucu olarak kaldırıldığında gerçekleşir bir `AfxFreeLibrary` arayın). MFC uzantısı DLL dolaylı çağrı uygulama bağlanacaksa `AfxTermExtensionModule` gerekli değildir.
+MFC uzantı dll 'niz bir yürütülebilir dosya ile açıkça bağlantılandırılır (dll 'ye bağlantı yapılacak yürütülebilir `AfxLoadLibrary` çağrılar anlamına gelir), `AfxTermExtensionModule` üzerine `DLL_PROCESS_DETACH`bir çağrısı eklemeniz gerekir. Bu işlev, MFC 'nin her bir işlem mfc uzantısı DLL 'sinden ayrıldığında (işlem çıktığında veya bir `AfxFreeLibrary` çağrı sonucu olarak DLL kaldırıldığında gerçekleşir) MFC uzantı dll 'sini temizleyesağlar. MFC uzantı dll 'niz uygulamaya örtük olarak bağlanırsa, çağrısı `AfxTermExtensionModule` gerekli değildir.
 
-MFC uzantı DLL'leri bağlantı açıkça çağırmalıdır uygulamaları `AfxTermExtensionModule` DLL'i. Ayrıca kullanması gereken `AfxLoadLibrary` ve `AfxFreeLibrary` (Win32 işlevlerini yerine `LoadLibrary` ve `FreeLibrary`) uygulama birden çok iş parçacığı kullanıyorsa. Kullanarak `AfxLoadLibrary` ve `AfxFreeLibrary` MFC uzantısı DLL yüklendiğinde ve kaldırıldığında genel MFC durumunun bozulmasına neden değil, yürütülen başlatma ve kapatma kod sağlar.
+MFC uzantısı DLL 'leri açıkça bağlayan uygulamaların DLL boşaltılırken `AfxTermExtensionModule` çağrılması gerekir. Uygulamanın birden çok iş `AfxLoadLibrary` parçacığı `AfxFreeLibrary` kullanması durumunda ve (Win32 işlevleri `LoadLibrary` `FreeLibrary`yerine) ve de kullanmaları gerekir. Kullanarak `AfxLoadLibrary` ,`AfxFreeLibrary` MFC uzantı dll 'si yüklendiğinde ve kaldırıldığında çalıştırılan başlatma ve başlatma kodunun genel MFC durumunu bozmamasını sağlar.
 
-MFCx0.dll zaman tam olarak başlatılmış olduğundan `DllMain` olan çağrılır, bellek ve içinde MFC işlevleri çağırma `DllMain` (aksine, MFC 16-bit sürümü).
+MFCx0. dll, zaman `DllMain` tarafından tam olarak başlatıldığından, bellek ayırabilir ve MFC işlevlerini içinde `DllMain` (MFC 'nin 16 bit sürümünden farklı olarak) çağırabilirsiniz.
 
-Uzantı DLL'leri halletmeniz işleme çoklu iş parçacığı `DLL_THREAD_ATTACH` ve `DLL_THREAD_DETACH` içinde durumlarda `DllMain` işlevi. Bu gibi durumlarda geçirilen `DllMain` zaman iş parçacığı ekleme ve DLL'den. Çağırma [TlsAlloc](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlsalloc) ne zaman bir DLL iliştiriyor iş parçacığı yerel depolama (TLS) dizinler için DLL bağlı her iş parçacığı için korumak DLL sağlar.
+Uzantı dll 'leri, `DLL_THREAD_ATTACH` `DllMain` işlevindeki ve `DLL_THREAD_DETACH` durumlarını işleyerek çoklu iş parçacıklı işlem yapabilir. Bu durumlar, iş parçacıkları `DllMain` dll 'ye iliştirildiğinde ve bu sunucudan ayrıldığınızda ' a geçirilir. Bir DLL eklendiğinde [TlsAlloc](/windows/win32/api/processthreadsapi/nf-processthreadsapi-tlsalloc) çağrısı, DLL 'nin dll 'ye bağlı her iş parçacığı için iş parçacığı yerel depolama (TLS) dizinlerini korumasına olanak tanır.
 
-Üst bilgi dosyası yapı tanımları tanımı gibi MFC uzantısı DLL'leri içinde kullanılan yapılar için özel tanımları içerir Not `AFX_EXTENSION_MODULE` ve `CDynLinkLibrary`. MFC uzantısı DLL Bu başlık dosyasının içermelidir.
+Afxdllx. h üstbilgi dosyasının, ve `AFX_EXTENSION_MODULE` `CDynLinkLibrary`için tanımı gibi MFC uzantı dll 'lerinde kullanılan yapılar için özel tanımlar içerdiğini unutmayın. Bu üstbilgi dosyasını MFC uzantı DLL 'nize dahil etmelisiniz.
 
 > [!NOTE]
->  Size tanımlama ne herhangi birini Kaldır, önemlidir `_AFX_NO_XXX` Stdafx.h makrolarındaki. Bu makrolar, yalnızca belirli hedef platform veya bu özelliği destekleyen olup olmadığını denetleme amacıyla mevcut. Bu makrolar denetlemek için programınızı yazabilirsiniz (örneğin, `#ifndef _AFX_NO_OLE_SUPPORT`), ancak programınızın hiçbir zaman tanımlayın veya bu makroların tanımlarını Kaldır.
+>  Stbafx. h içindeki `_AFX_NO_XXX` makroların hiçbirini tanımlamanız veya tanımlamadığınız önemlidir. Bu makrolar yalnızca belirli bir hedef platformun bu özelliği destekleyip desteklemediğini denetleme amacıyla mevcuttur. Bu makroları denetlemek için programınızı yazabilirsiniz (örneğin, `#ifndef _AFX_NO_OLE_SUPPORT`), ancak programınız bu makroları asla tanımlamaz veya tanımlamaz.
 
-Çoklu iş parçacığı kullanımı tanıtıcıları dahil bir örnek başlatma işlevi [kullanarak iş parçacığı yerel depolama dinamik bağlantı kitaplığı](/windows/desktop/Dlls/using-thread-local-storage-in-a-dynamic-link-library) Windows SDK. Örnek adlı bir giriş noktası işlevi içeren Not `LibMain`, ancak bu işlev adlandırmalısınız. `DllMain` böylece MFC ve C çalışma zamanı kitaplıkları ile çalışır.
+Çoklu iş parçacığını işleyen örnek bir başlatma işlevi, Windows SDK [dinamik bağlantı kitaplığında Iş parçacığı yerel depolama alanı kullanımına](/windows/win32/Dlls/using-thread-local-storage-in-a-dynamic-link-library) dahildir. Örnek adlı `LibMain`bir giriş noktası işlevi içerdiğini, ancak MFC ve C çalışma zamanı kitaplıklarıyla çalışacak şekilde bu `DllMain` işlevi adlandırmalısınız.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual Studio'da C/C++ DLL'leri oluşturma](dlls-in-visual-cpp.md)<br/>
-[DllMain giriş noktası](/windows/desktop/Dlls/dllmain)<br/>
-[Dinamik bağlantı kitaplığı en iyi uygulamalar](/windows/desktop/Dlls/dynamic-link-library-best-practices)
+[Visual Studio 'daC++ C/dll oluşturma](dlls-in-visual-cpp.md)<br/>
+[DllMain giriş noktası](/windows/win32/Dlls/dllmain)<br/>
+[Dinamik bağlantı kitaplığı En Iyi uygulamaları](/windows/win32/Dlls/dynamic-link-library-best-practices)

@@ -1,5 +1,5 @@
 ---
-title: 'Çoklu iş parçacığı kullanımı: MFC içinde çalışan iş parçacıkları oluşturma'
+title: "Çoklu iş parçacığı kullanımı: MFC 'de çalışan Iş parçacıkları oluşturma"
 ms.date: 11/04/2016
 helpviewer_keywords:
 - multithreading [C++], worker threads
@@ -10,60 +10,60 @@ helpviewer_keywords:
 - threading [MFC], worker threads
 - threading [C++], user input not required
 ms.assetid: 670adbfe-041c-4450-a3ed-be14aab15234
-ms.openlocfilehash: 38757337b1bfe5c7994f9a9f26aad2526aa0279c
-ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
+ms.openlocfilehash: c8df3dd9d17819b23362a3b31d8e198883aa9143
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66504573"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69512055"
 ---
-# <a name="multithreading-creating-worker-threads-in-mfc"></a>Çoklu iş parçacığı kullanımı: MFC içinde çalışan iş parçacıkları oluşturma
+# <a name="multithreading-creating-worker-threads-in-mfc"></a>Çoklu iş parçacığı kullanımı: MFC 'de çalışan Iş parçacıkları oluşturma
 
-İş parçacığı, kullanıcının uygulamanızı kullanmaya devam etmek için beklenecek olmaması gereken arka plan görevlerinin işlenmesi için yaygın olarak kullanılır. Yeniden hesaplama ve arka plan yazdırma gibi görevler, çalışan iş parçacıkları, iyi örneklerdir. Bu konu bir iş parçacığı oluşturmak gerekli adımları ayrıntılı olarak açıklanmaktadır. Konular şunlardır:
+Bir çalışan iş parçacığı genellikle kullanıcının uygulamanızı kullanmaya devam etmesi için beklemek zorunda olmaması gereken arka plan görevlerini işlemek için kullanılır. Yeniden hesaplama ve arka planda yazdırma gibi görevler, çalışan iş parçacıklarının iyi örnekleridir. Bu konuda, bir çalışan iş parçacığı oluşturmak için gereken adımlar ayrıntılı olarak açıklanmıştır. Konular şunları içerir:
 
-- [İş parçacığını başlatma](#_core_starting_the_thread)
+- [İş parçacığı başlatılıyor](#_core_starting_the_thread)
 
 - [Denetim işlevini uygulama](#_core_implementing_the_controlling_function)
 
 - [Örnek](#_core_controlling_function_example)
 
-Bir iş parçacığı oluşturmak göreceli olarak basit bir görevdir. İş parçacığınızın için yalnızca iki adım gereklidir: denetleme işlevini uygulamak ve iş parçacığı başlatılıyor. Öğesinden bir sınıf türetmek gerekli değil [CWinThread](../mfc/reference/cwinthread-class.md). Özel bir sürümünü gerekiyorsa bir sınıf türetebilirsiniz `CWinThread`, ancak en basit çalışan iş parçacıkları için gerekli değildir. Kullanabileceğiniz `CWinThread` yapmadan.
+Çalışan iş parçacığı oluşturma görece basit bir görevdir. İş parçacığın çalışmasını sağlamak için yalnızca iki adım gereklidir: denetim işlevini uygulama ve iş parçacığını başlatma. [CWinThread](../mfc/reference/cwinthread-class.md)öğesinden bir sınıf türetmek gerekli değildir. Özel bir sürümüne `CWinThread`ihtiyacınız varsa bir sınıf türetebilirsiniz, ancak çoğu basit çalışan iş parçacığı için gerekli değildir. Değişiklik olmadan kullanabilirsiniz `CWinThread` .
 
-##  <a name="_core_starting_the_thread"></a> İş parçacığını başlatma
+##  <a name="_core_starting_the_thread"></a>Iş parçacığı başlatılıyor
 
-İki aşırı yüklenmiş sürümleri `AfxBeginThread`: yalnızca çalışan iş parçacıkları oluşturabilirsiniz ve hem kullanıcı arabirimi iş parçacıkları ve çalışan iş parçacıkları oluşturabilirsiniz. İlk aşırı yükleme kullanarak, çalışan iş parçacığının yürütülmesini başlatmak için çağrı [AfxBeginThread](../mfc/reference/application-information-and-management.md#afxbeginthread), aşağıdaki bilgileri sağlayarak:
+Öğesinin `AfxBeginThread`iki aşırı yüklü sürümü vardır: yalnızca çalışan iş parçacıkları ve Kullanıcı arabirimi iş parçacıklarını ve çalışan iş parçacıklarını oluşturabileceğiniz bir tane olabilir. İlk aşırı yüklemeyi kullanarak çalışan iş parçacığınız yürütmeye başlamak için, aşağıdaki bilgileri sağlayarak [AfxBeginThread](../mfc/reference/application-information-and-management.md#afxbeginthread)çağırın:
 
-- Denetleme işlevi adresi.
+- Denetleyen işlevin adresi.
 
-- Denetim işlevine iletilecek parametre.
+- Denetim işlevine geçirilecek parametre.
 
-- (İsteğe bağlı) İş parçacığının istenen önceliği. Varsayılan, normal önceliktir. Kullanılabilir öncelik düzeyleri hakkında daha fazla bilgi için bkz: [SetThreadPriority](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-setthreadpriority) Windows SDK.
+- Seçim İş parçacığının istenen önceliği. Varsayılan değer normal önceliktir. Kullanılabilir öncelik düzeyleri hakkında daha fazla bilgi için Windows SDK [SetThreadPriority](/windows/win32/api/processthreadsapi/nf-processthreadsapi-setthreadpriority) bölümüne bakın.
 
-- (İsteğe bağlı) İş parçacığının istenen yığın boyutu. Oluşturulan iş parçacığıyla aynı boyutta bir yığına varsayılandır.
+- Seçim İş parçacığı için istenen yığın boyutu. Varsayılan değer, oluşturma iş parçacığıyla aynı boyut yığınıdır.
 
-- (İsteğe bağlı) CREATE_SUSPENDED iş parçacığının askıya alınmış durumda oluşturulmasını istiyorsanız. Varsayılan, 0 veya iş parçacığını normal olarak başlatın.
+- Seçim CREATE_SUSPENDED, iş parçacığının askıya alınma durumunda oluşturulmasını istiyorsanız. Varsayılan değer 0 ' dır veya iş parçacığını normal olarak başlatır.
 
-- (İsteğe bağlı) İstenen güvenlik öznitelikleri. Varsayılan ana iş parçacığıyla aynı erişimdir. Bu güvenlik bilgileri biçimi hakkında daha fazla bilgi için bkz. [SECURITY_ATTRIBUTES](/previous-versions/windows/desktop/legacy/aa379560\(v=vs.85\)) Windows SDK.
+- Seçim İstenen güvenlik öznitelikleri. Varsayılan, üst iş parçacığıyla aynı erişimdir. Bu güvenlik bilgilerinin biçimi hakkında daha fazla bilgi için, Windows SDK [SECURITY_ATTRIBUTES](/previous-versions/windows/desktop/legacy/aa379560\(v=vs.85\)) bakın.
 
-`AfxBeginThread` oluşturur ve başlatır bir `CWinThread` sizin için nesne başlar ve, daha sonra başvurduğu için adresini döndürür. Denetimleri, tüm nesnelerin düzgün bir şekilde oluşturmayı, herhangi bir bölümü başarısız olması serbest bırakıldığından emin olmak için yordam boyunca gerçekleştirilir.
+`AfxBeginThread`sizin için bir `CWinThread` nesne oluşturur ve başlatır, başlatılır ve daha sonra başvurmak için adresini döndürür. Tüm nesnelerin düzgün şekilde serbest bırakıldığından emin olmak için, oluşturma yordamının tamamında denetimler yapılır
 
-##  <a name="_core_implementing_the_controlling_function"></a> Denetim işlevini uygulama
+##  <a name="_core_implementing_the_controlling_function"></a>Denetim Işlevini uygulama
 
-Denetleme işlevi iş parçacığını tanımlar. Bu işlev girildiğinde, iş parçacığı başlatılır ve çıktığında iş parçacığı sonlanır. Bu işlev, aşağıdaki prototipi içermelidir:
+Denetim işlevi iş parçacığını tanımlar. Bu işlev girildiğinde, iş parçacığı başlar ve çıktığında iş parçacığı sonlanır. Bu işlev aşağıdaki prototipe sahip olmalıdır:
 
 ```
 UINT MyControllingFunction( LPVOID pParam );
 ```
 
-Parametre tek bir değerdir. Bu parametrede işlevin aldığı değer, iş parçacığı nesnesi oluşturulduğunda oluşturucuya geçirilen değerdir. Denetleme işlevi bu değeri seçtiği herhangi bir şekilde yorumlayabilir. Skaler değer ya da birden çok parametre içeren bir yapıya bir işaretçi olarak kabul ya da sayılabilir. Parametre bir yapıya başvurursa, yapı yalnızca arayandan iş parçacığına veri geçirmek, aynı zamanda veri iş parçacığından arayana iletmek için kullanılabilir. Böyle bir yapı çağırana geri veri aktarmak için kullanırsanız, iş parçacığı sonuçlar hazır olduğunda çağrıyı yapana bunu bildirmesi gerekir. Çalışan iş parçacığından arayana iletişim hakkında daha fazla bilgi için bkz: [çoklu iş parçacığı kullanımı: Programlama ipuçları](multithreading-programming-tips.md).
+Parametresi tek bir değerdir. İşlevin bu parametre içinde aldığı değer, iş parçacığı nesnesi oluşturulduğunda oluşturucuya geçirilen değerdir. Denetim işlevi bu değeri, seçtiği her şekilde yorumlayabilir. Bir skaler değer veya birden çok parametre içeren bir yapının işaretçisi olarak kabul edilebilir veya yoksayılabilir. Parametresi bir yapıya başvuruyorsa, yapı yalnızca çağırandan iş parçacığına veri geçirmek için değil, aynı zamanda verileri iş parçacığından arayana geri geçirmek için de kullanılabilir. Verileri çağırana geri geçirmek için böyle bir yapı kullanırsanız, sonuçlar hazırlandığında iş parçacığının çağrıyı bilgilendirilmesi gerekir. Çalışan iş parçacığından arayana iletişim hakkında daha fazla bilgi için bkz [. çoklu iş parçacığı: Programlama Ipuçları](multithreading-programming-tips.md).
 
-İşlev sonlandığında, sonlandırma nedenini belirten bir UINT değeri döndürmesi gerekir. Genellikle bu çıkış kodu farklı hatalar gösteren diğer değerler ile başarıyı belirtmek için 0'dır. Tamamen uygulamaya bağlıdır budur. Bazı iş parçacıkları nesnelerin kullanım sayısını korumak ve o nesnenin kullanan geçerli sayısını döndürür. Uygulamalar bu değeri nasıl alabildiğini görmek için bkz: [çoklu iş parçacığı kullanımı: İş parçacıklarını sonlandırma](multithreading-terminating-threads.md).
+İşlev sonlandırıldığında, sonlandırma nedenini gösteren bir UINT değeri döndürmelidir. Genellikle, bu çıkış kodu farklı hata türlerini gösteren diğer değerlerle başarıyı göstermek için 0 ' dır. Bu, tamamen uygulamaya bağımlıdır. Bazı iş parçacıkları nesne kullanım sayılarını koruyabilir ve o nesnenin geçerli kullanım sayısını döndürebilir. Uygulamaların bu değeri nasıl alabileceği hakkında bilgi için bkz [. çoklu iş parçacığı: Iş parçacıkları](multithreading-terminating-threads.md)sonlandırılıyor.
 
-MFC kitaplığı ile yazılan çoklu iş parçacığı kullanan programda yapabilecekleriniz bazı kısıtlamalar vardır. Bu kısıtlamalar ve iş parçacığı kullanma hakkında diğer ipuçları açıklamaları için bkz. [çoklu iş parçacığı kullanımı: Programlama ipuçları](multithreading-programming-tips.md).
+MFC kitaplığı ile yazılmış çok iş parçacıklı programda yapabilecekleriniz için bazı kısıtlamalar vardır. Bu kısıtlamaların açıklamaları ve iş parçacıklarını kullanma hakkında diğer ipuçları için bkz [. çoklu iş parçacığı kullanımı: Programlama Ipuçları](multithreading-programming-tips.md).
 
-##  <a name="_core_controlling_function_example"></a> Denetleme işlevi örneği
+##  <a name="_core_controlling_function_example"></a>Işlev örneğini denetleme
 
-Aşağıdaki örnek, bir denetleyen işlevin tanımlamak ve başka bir program bölümünden kullanma gösterilmektedir.
+Aşağıdaki örnek, bir denetim işlevinin nasıl tanımlanacağını ve bunu programın başka bir bölümünden nasıl kullanacağınızı gösterir.
 
 ```
 UINT MyThreadProc( LPVOID pParam )

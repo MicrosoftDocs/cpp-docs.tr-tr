@@ -5,27 +5,27 @@ helpviewer_keywords:
 - WINVER in an upgraded Visual Studio C++ project
 - _WIN32_WINNT in an upgraded Visual Studio C++ project
 ms.assetid: 6a1f1d66-ae0e-48a7-81c3-524d8e8f3447
-ms.openlocfilehash: a624118bdd192c5ec677be81f0b410d2392e62e9
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: a83e92444e7010e4d3b65153b2e60e1c5d952cef
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65449076"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69511607"
 ---
-# <a name="modifying-winver-and-win32winnt"></a>WINVER ve _WIN32_WINNT'de Değişiklik Yapma
+# <a name="modifying-winver-and-_win32_winnt"></a>WINVER ve _WIN32_WINNT'de Değişiklik Yapma
 
-Visual C++ artık hedefleme Windows 95, Windows 98, Windows ME, Windows NT veya Windows 2000 destekler. Varsa, **WINVER** veya **_WIN32_WINNT** makroları Windows'ın bu sürümlerinin birine atanır, makroları değiştirmeniz gerekir. Visual önceki bir sürümü kullanılarak oluşturulmuş bir projeyi yükselttiğinizde C++, derleme hatalarla ilgili **WINVER** veya **_WIN32_WINNT** bir sürüme atanmışsa makroları Windows, artık desteklenmiyor.
+Görsel C++ artık Windows 95, Windows 98, Windows Me, Windows NT veya Windows 2000 'in hedeflenmesini desteklememektedir. Bu Windows sürümlerinden birine **WINVER** veya **_Wın32_wınnt** makrolarınızı atanırsa, makroları değiştirmeniz gerekir. Visual C++'ın önceki bir sürümü kullanılarak oluşturulmuş bir projeyi yükselttiğinizde, artık desteklenmeyen bir Windows sürümüne atandıklarında, **WINVER** veya **_WIN32_WINNT** makrolarıyla ilgili derleme hataları görebilirsiniz.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Makroları değiştirmek için (Windows hedefleyen bir proje oluşturduğunuzda, dahil olan örnek targetver.h), üstbilgi dosyasında aşağıdaki satırları ekleyin.
+Makroları değiştirmek için bir başlık dosyasında (örneğin, Windows 'u hedefleyen bir proje oluşturduğunuzda dahil olan targetver. h), aşağıdaki satırları ekleyin.
 
 ```C
 #define WINVER 0x0A00
 #define _WIN32_WINNT 0x0A00
 ```
 
-Bu, Windows 10 işletim sistemini hedefler. Ayrıca her bir Windows sürümü için makroları tanımlayan SDKDDKVer.h Windows üstbilgi dosyasında bu değerleri listelenmektedir. Eklemeniz gerekir #define sdkddkver.h dosyasını eklemeden önce. SDKDDKVer.h Windows 10 sürümünden Windows her sürümü için değerleri kodlama satırları şunlardır:
+Bu, Windows 10 işletim sistemini hedefler. Bu değerler, her bir Windows sürümü için makroları da tanımlayan SDKDDKVer. h Windows üst bilgi dosyasında listelenmiştir. SDKDDKVer. h öğesini eklemeden önce #define ifadesini eklemelisiniz. Aşağıda, SDKDDKVer. h 'nin Windows 'un her bir sürümünün değerlerini kodlayan Windows 10 sürümünün satırları verilmiştir:
 
 ```C
 //
@@ -46,15 +46,15 @@ Bu, Windows 10 işletim sistemini hedefler. Ayrıca her bir Windows sürümü i�
 #define _WIN32_WINNT_WIN10                  0x0A00 // Windows 10
 ```
 
-Bu Windows sürümlerinin tümünün bir kopyasını görüntülemekte olduğunuz SDKDDKVer.h listelenen görmüyorsanız, büyük olasılıkla Windows SDK'sı daha eski bir sürümünü kullanıyor. Varsayılan olarak, Win32 projeleri Visual Studio 2017'de Windows 10 SDK'sını kullanın.
+Aradığınız SDKDDKVer. h kopyasında listelenen bu Windows sürümlerinin tümünü görmüyorsanız büyük olasılıkla Windows SDK eski bir sürümünü kullanıyorsunuz. Varsayılan olarak, Visual Studio 2017 ' de Win32 projeleri Windows 10 SDK 'sını kullanır.
 
 > [!NOTE]
-> Değerleri, uygulamanızda iç MFC üst bilgiler dahil ederseniz çalışmaya garanti edilmez.
+> Uygulamanıza iç MFC üstbilgileri eklerseniz, değerlerin çalışması garanti edilmez.
 
-Bu makroyu kullanarak da tanımlayabilirsiniz `/D` derleyici seçeneği. Daha fazla bilgi için [/D (önişlemci tanımları)](../build/reference/d-preprocessor-definitions.md).
+Bu makroyu `/D` derleyici seçeneğini kullanarak da tanımlayabilirsiniz. Daha fazla bilgi için bkz. [/d (Önişlemci tanımları)](../build/reference/d-preprocessor-definitions.md).
 
-Bu makrolar anlamlara hakkında daha fazla bilgi için bkz. [Windows üst bilgileri kullanma](/windows/desktop/WinProg/using-the-windows-headers).
+Bu makroların anlamları hakkında daha fazla bilgi için bkz. [Windows üst bilgilerini kullanma](/windows/win32/WinProg/using-the-windows-headers).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual C++ değişiklik geçmişi](../porting/visual-cpp-change-history-2003-2015.md)
+[Görsel C++ değişiklik geçmişi](../porting/visual-cpp-change-history-2003-2015.md)

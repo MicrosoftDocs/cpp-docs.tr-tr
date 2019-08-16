@@ -12,12 +12,12 @@ f1_keywords:
 helpviewer_keywords:
 - CSacl class
 ms.assetid: 8624889b-aebc-4183-9d29-a20f07837f05
-ms.openlocfilehash: b75dc4110b785f0ab1f55ba5c31df7d3fc6fbd37
-ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
+ms.openlocfilehash: c4bbdfccb2d6d8b167c537b7ae4df57c89438479
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68915752"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69496510"
 ---
 # <a name="csacl-class"></a>CSacl sınıfı
 
@@ -64,7 +64,7 @@ Bir nesnenin güvenlik tanımlayıcısına sahip SACL ayarlamak veya almak için
 
 `SACL` Nesnesinden Ace 'leri eklemek, kaldırmak, oluşturmak ve silmek için belirtilen sınıf yöntemlerini kullanın. Ayrıca bkz. [AtlGetSacl](security-global-functions.md#atlgetsacl) ve [AtlSetSacl](security-global-functions.md#atlsetsacl).
 
-Windows 'daki erişim denetim modeline giriş için Windows SDK [Access Control](/windows/desktop/SecAuthZ/access-control) bakın.
+Windows 'daki erişim denetim modeline giriş için Windows SDK [Access Control](/windows/win32/SecAuthZ/access-control) bakın.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -129,7 +129,7 @@ Ace `CSacl` nesneye eklenirse true, hata durumunda FALSE döndürür.
 
 Bir `CSacl` nesne, güvenlik olay günlüğünde denetim kayıtları üreten erişim denemeleri türlerini belirten erişim denetimi girdileri (ACE 'ler) içerir. Bu yöntem, `CSacl` nesnesine bir ace ekler.
 
-*Asetat bayrakları* parametresinde ayarlanbilen çeşitli bayrakların açıklaması için bkz. [ACE_HEADER](/windows/desktop/api/winnt/ns-winnt-ace_header) .
+*Asetat bayrakları* parametresinde ayarlanbilen çeşitli bayrakların açıklaması için bkz. [ACE_HEADER](/windows/win32/api/winnt/ns-winnt-ace_header) .
 
 ##  <a name="csacl"></a>CSacl:: CSacl
 
@@ -222,7 +222,7 @@ void RemoveAllAces() throw();
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [CAcl Sınıfı](../../atl/reference/cacl-class.md)<br/>
-[Cacls](/windows/desktop/SecAuthZ/access-control-lists)<br/>
-[Ace 'ler](/windows/desktop/SecAuthZ/access-control-entries)<br/>
+[Cacls](/windows/win32/SecAuthZ/access-control-lists)<br/>
+[Ace 'ler](/windows/win32/SecAuthZ/access-control-entries)<br/>
 [Sınıfa genel bakış](../../atl/atl-class-overview.md)<br/>
 [Güvenlik Genel İşlevleri](../../atl/reference/security-global-functions.md)

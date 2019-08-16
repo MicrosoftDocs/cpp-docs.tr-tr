@@ -1,21 +1,21 @@
 ---
-title: helpstringcontext (C++ COM özniteliği)
+title: helpstringcontext (C++ com özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.helpstringcontext
 helpviewer_keywords:
 - helpstringcontext attribute [C++]
 ms.assetid: d4cd135e-d91c-4aa3-9353-8aeb096f52cf
-ms.openlocfilehash: a6df5b63291fbc54d6c12a116fccd8372e8ced9a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ae48c6216b1f1d987b33eff50acf9d82dc551400
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62409583"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69501484"
 ---
 # <a name="helpstringcontext"></a>helpstringcontext
 
-Bir .hlp veya .chm dosyasında bir Yardım konusu Kimliğini belirtir.
+Bir. hlp veya. chm dosyasındaki Yardım konusunun KIMLIĞINI belirtir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -25,12 +25,12 @@ Bir .hlp veya .chm dosyasında bir Yardım konusu Kimliğini belirtir.
 
 ### <a name="parameters"></a>Parametreler
 
-*Contextıd*<br/>
-Bir 32-bit Yardım bağlamı tanımlayıcıda **yardımcı** dosya.
+*ContextId*<br/>
+**Yardım** dosyasında 32 bitlik bir yardım bağlamı tanımlayıcısı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Helpstringcontext** C++ özniteliği ile aynı işlevlere sahip [helpstringcontext](/windows/desktop/Midl/helpstringcontext) ODL özniteliği.
+**Helpstringcontext** C++ özniteliği, [helpstringcontext](/windows/win32/Midl/helpstringcontext) ODL özniteliğiyle aynı işlevselliğe sahiptir.
 
 ## <a name="example"></a>Örnek
 
@@ -54,12 +54,12 @@ __interface IMyI
 
 |||
 |-|-|
-|**İçin geçerlidir**|**sınıf**, **arabirimi**, arabirim yöntemi|
+|**Uygulama hedefi**|**Class**, **Interface**, Interface yöntemi|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|Yok.|
+|**Gerekli öznitelikler**|Yok.|
 |**Geçersiz öznitelikler**|Yok.|
 
-Daha fazla bilgi için [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
+Daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

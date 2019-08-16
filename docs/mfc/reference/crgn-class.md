@@ -46,12 +46,12 @@ helpviewer_keywords:
 - CRgn [MFC], RectInRegion
 - CRgn [MFC], SetRectRgn
 ms.assetid: d904da84-76aa-481e-8780-b09485f49e64
-ms.openlocfilehash: 66721f34a8ac2b6dac6addcfa04a88b46a37ee60
-ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
+ms.openlocfilehash: 34dcc618f603302c5598e42588ffad78d61ee222
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68916824"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69502706"
 ---
 # <a name="crgn-class"></a>CRgn sınıfı
 
@@ -78,13 +78,13 @@ class CRgn : public CGdiObject
 |[CRgn:: CombineRgn](#combinergn)|Bir `CRgn` nesneyi belirtilen `CRgn` iki nesnenin birleşimi ile eşdeğer olacak şekilde ayarlar.|
 |[CRgn:: CopyRgn](#copyrgn)|Bir `CRgn` nesneyi belirtilen `CRgn` nesnenin kopyası olacak şekilde ayarlar.|
 |[CRgn:: CreateEllipticRgn](#createellipticrgn)|Elips bölge `CRgn` içeren bir nesnesi başlatır.|
-|[CRgn:: CreateEllipticRgnIndirect](#createellipticrgnindirect)|Bir Rect `CRgn` yapısı tarafından tanımlanan elips bölge ile bir nesne [](/windows/desktop/api/windef/ns-windef-tagrect) başlatır.|
+|[CRgn:: CreateEllipticRgnIndirect](#createellipticrgnindirect)|Bir Rect `CRgn` yapısı tarafından tanımlanan elips bölge ile bir nesne [](/windows/win32/api/windef/ns-windef-tagrect) başlatır.|
 |[CRgn:: CreateFromData](#createfromdata)|Verilen bölge ve dönüşüm verilerinden bir bölge oluşturur.|
 |[CRgn:: CreateFromPath](#createfrompath)|Verilen cihaz bağlamına seçili olan yoldan bir bölge oluşturur.|
 |[CRgn:: CreatePolygonRgn](#createpolygonrgn)|`CRgn` Bir nesneyi Çokgen bölge ile başlatır. Sistem, gerekirse, en son köşenin ilk köşesini bir çizgi çizerek otomatik olarak çokgeni kapatır.|
 |[CRgn:: CreatePolyPolygonRgn](#createpolypolygonrgn)|Kapalı çokgenlerin bulunduğu bir bölgeden oluşan bir nesneyibaşlatır.`CRgn` Çokgenler kopuk olabilir veya örtüşebilir.|
 |[CRgn:: CreateRectRgn](#createrectrgn)|Dikdörtgen bir `CRgn` bölgeyle bir nesne başlatır.|
-|[CRgn:: Createrectrgndolaylı](#createrectrgnindirect)|Bir Rect `CRgn` yapısı tarafından tanımlanan dikdörtgen bölge ile bir nesneyi [](/windows/desktop/api/windef/ns-windef-tagrect) başlatır.|
+|[CRgn:: Createrectrgndolaylı](#createrectrgnindirect)|Dikdörtgen bölge tarafından tanımlanan bir [](/windows/win32/api/windef/ns-windef-rect) nesneyibirRectile`CRgn` başlatır.|
 |[CRgn:: CreateRoundRectRgn](#createroundrectrgn)|Yuvarlak köşeler `CRgn` içeren dikdörtgen bölge içeren bir nesneyi başlatır.|
 |[CRgn:: EqualRgn](#equalrgn)|Eşdeğer olup `CRgn` olmadığını anlamak için iki nesneyi denetler.|
 |[CRgn:: FromHandle](#fromhandle)|Bir Windows bölgesine bir tanıtıcı `CRgn` verildiğinde, nesne için bir işaretçi döndürür.|
@@ -297,13 +297,13 @@ BOOL CreateFromData(
 ### <a name="parameters"></a>Parametreler
 
 *lpXForm*<br/>
-Bölgede gerçekleştirilecek dönüşümü tanımlayan bir [XFORM](/windows/desktop/api/wingdi/ns-wingdi-tagxform) veri yapısına işaret eder. Bu işaretçi NULL ise, kimlik dönüştürmesi kullanılır.
+Bölgede gerçekleştirilecek dönüşümü tanımlayan bir [XFORM](/windows/win32/api/wingdi/ns-wingdi-xform)ata yapısına işaret eder. Bu işaretçi NULL ise, kimlik dönüştürmesi kullanılır.
 
 *nCount*<br/>
 *PRgnData*tarafından işaret edilen bayt sayısını belirtir.
 
 *pRgnData*<br/>
-Bölge verilerini içeren bir [rgndata](/windows/desktop/api/wingdi/ns-wingdi-rgndata) veri yapısına işaret eder.
+Bölge verilerini içeren bir [rgndata](/windows/win32/api/wingdi/ns-wingdi-rgndata) veri yapısına işaret eder.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -631,7 +631,7 @@ int GetRegionData(
 ### <a name="parameters"></a>Parametreler
 
 *lpRgnData*<br/>
-Bilgileri alan bir [rgndata](/windows/desktop/api/wingdi/ns-wingdi-rgndata) veri yapısına işaret eder. Bu parametre NULL ise, dönüş değeri bölge verileri için gereken bayt sayısını içerir.
+Bilgileri alan bir [rgndata](/windows/win32/api/wingdi/ns-wingdi-rgndata) veri yapısına işaret eder. Bu parametre NULL ise, dönüş değeri bölge verileri için gereken bayt sayısını içerir.
 
 *nCount*<br/>
 *LpRgnData* buffer boyutunu bayt cinsinden belirtir.
@@ -746,7 +746,7 @@ Başarılı olursa, `CRgn` nesne tarafından temsil edilen Windows GDI nesnesine
 
 Bu işleç, bir HRGN nesnesinin doğrudan kullanımını destekleyen bir atama işleçtir.
 
-Grafik nesnelerini kullanma hakkında daha fazla bilgi için, Windows SDK [grafik nesneleri](/windows/desktop/gdi/graphic-objects) makalesine bakın.
+Grafik nesnelerini kullanma hakkında daha fazla bilgi için, Windows SDK [grafik nesneleri](/windows/win32/gdi/graphic-objects) makalesine bakın.
 
 ##  <a name="ptinregion"></a>CRgn::P tInRegion
 

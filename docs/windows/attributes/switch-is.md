@@ -1,21 +1,21 @@
 ---
-title: switch_is (C++ COM özniteliği)
+title: switch_is (C++ com özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.switch_is
 helpviewer_keywords:
 - switch_is attribute
 ms.assetid: f1fffe5d-12d2-4e0f-8803-ccb715177d2d
-ms.openlocfilehash: ccac405480e415df17b42f02dce74759f578d025
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b72052f4cbd7f94b170ea58b8f7b284b85d7ab00
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62407256"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69513984"
 ---
-# <a name="switchis"></a>switch_is
+# <a name="switch_is"></a>switch_is
 
-İfade veya birleşim üyesi seçer birleşim discriminant davranan tanımlayıcısını belirtir.
+Birleşim üyesini seçen birleşim ayırt edici olarak davranan ifade veya tanımlayıcıyı belirtir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -25,11 +25,11 @@ ms.locfileid: "62407256"
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Switch_is** C++ özniteliği ile aynı işlevlere sahip [switch_is](/windows/desktop/Midl/switch-is) MIDL özniteliği.
+**Switch_is** C++ özniteliği, [switch_is](/windows/win32/Midl/switch-is) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
 
 ## <a name="example"></a>Örnek
 
-Bkz: [çalışması](case-cpp.md) örnek kullanımını örneğin **switch_is**.
+Örnek switch_is [](case-cpp.md) örnek kullanımı için bkz. örnek örneği.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -37,12 +37,12 @@ Bkz: [çalışması](case-cpp.md) örnek kullanımını örneğin **switch_is**.
 
 |||
 |-|-|
-|**İçin geçerlidir**|**tür tanımı**|
+|**Uygulama hedefi**|**genişletiyor**|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|Yok.|
+|**Gerekli öznitelikler**|Yok.|
 |**Geçersiz öznitelikler**|Yok.|
 
-Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
+Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,17 +1,17 @@
 ---
-title: bağlanabilir (C++ COM özniteliği)
+title: bağlanabilir (C++ com özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.bindable
 helpviewer_keywords:
 - bindable attribute
 ms.assetid: a2360f92-927b-4af8-98cc-6eca7f4ec954
-ms.openlocfilehash: 07f446b946d6703c4a8b9ae59ae0edd8172c6879
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4a74531a40bcacdae4ef98c292884e7a43fa82fe
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62148399"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69501833"
 ---
 # <a name="bindable"></a>bağlanabilir
 
@@ -25,19 +25,19 @@ ms.locfileid: "62148399"
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Bağlanabilir** C++ özniteliği ile aynı işlevlere sahip [bağlanabilir](/windows/desktop/Midl/bindable) MIDL özniteliği. Özellikleri ile tanımlanmış kullanabilirsiniz [propget](propget.md), [propput](propput.md), veya [propputref](propputref.md) öznitelikleri veya el ile tanımlayabilir bağlanabilir bir yöntem.
+**Bağlanabilir** C++ öznitelik, [bağlanabilir](/windows/win32/Midl/bindable) MIDL özniteliğiyle aynı işlevselliğe sahiptir. Bunu [propget](propget.md), [propput](propput.md)veya [propputref](propputref.md) öznitelikleriyle tanımlanan özelliklerde kullanabilir ya da bağlanabilir bir yöntemi el ile tanımlayabilirsiniz.
 
-Aşağıdaki MFC örnekleri kullanımı Göster **bağlanabilir**:
+Aşağıdaki MFC örnekleri, **bağlanabilir**kullanımını gösterir:
 
 - [Denetim örnekleri: MFC tabanlı ActiveX denetimleri](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/controls)
 
-- [DAİ örneği: ActiveX denetimi](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/controls)
+- [CIRC örneği: ActiveX denetimi](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/controls)
 
-- [TESTHELP örneği: Araç ipuçları ve Yardım ActiveX denetimi](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/controls)
+- [TESTHELP örneği: Araç Ipuçları ve yardım ile ActiveX denetimi](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/controls)
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod nasıl kullanabileceğinizi gösterir **bağlanabilir** özellikte:
+Aşağıdaki kod, bir özellikte **bağlanabilir** özelliği nasıl kullanabileceğinizi gösterir:
 
 ```cpp
 // cpp_attr_ref_bindable.cpp
@@ -64,12 +64,12 @@ __interface IPropDemo : IDispatch {
 
 |||
 |-|-|
-|**İçin geçerlidir**|Arabirim yöntemi|
+|**Uygulama hedefi**|Interface yöntemi|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|Yok.|
-|**Geçersiz öznitelikler**|None|
+|**Gerekli öznitelikler**|Yok.|
+|**Geçersiz öznitelikler**|Yok.|
 
-Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
+Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

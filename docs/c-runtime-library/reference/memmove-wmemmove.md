@@ -25,16 +25,16 @@ helpviewer_keywords:
 - wmemmove function
 - memmove function
 ms.assetid: 3a906114-9cf3-40d7-bd99-ee452004f218
-ms.openlocfilehash: 988af1c2678e20ea40ce4dfe331a3b6c49db0547
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 27811f56f1956bcaaea4ec589f7e6c71afaca380
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62156570"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69499626"
 ---
 # <a name="memmove-wmemmove"></a>memmove, wmemmove
 
-Bir arabellek diğerine taşır. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz: [memmove_s, wmemmove_s](memmove-s-wmemmove-s.md).
+Bir arabelleği diğerine gider. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz. [memmove_s, wmemmove_s](memmove-s-wmemmove-s.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -53,26 +53,26 @@ wchar_t *wmemmove(
 
 ### <a name="parameters"></a>Parametreler
 
-*Hedef*<br/>
+*HD*<br/>
 Hedef nesne.
 
-*src*<br/>
+*YN*<br/>
 Kaynak nesne.
 
-*Sayısı*<br/>
-Bayt sayısı (**memmove**) veya karakterleri (**wmemmove**) kopyalamak için.
+*biriktirme*<br/>
+Kopyalanacak bayt (**memmove**) veya karakter (**wmemmove**) sayısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Değerini *dest*.
+*Hedef*değeri.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kopya *sayısı* bayt (**memmove**) veya karakterleri (**wmemmove**) öğesinden *src* için *dest*. Bazı kaynak alanını ve hedef bölgelerini çakışırsa, her iki işlev çakışan bölgede özgün kaynak bayt üzerine önce kopyalandığından emin olun.
+*Src* 'den *hedefe*kadar olan *sayı* baytlarını (**memmove**) veya karakterleri (**wmemmove**) kopyalar. Kaynak alanın ve hedefin bazı bölgeleri çakışırsa, her iki işlev de çakışan bölgedeki özgün kaynak baytlarının üzerine yazılmadan önce kopyalanmasını güvence altına alınır.
 
-**Güvenlik Notu** boyutta veya daha büyük kaynak arabelleği hedef arabellek aynı olduğundan emin olun. Daha fazla bilgi için [arabellek taşmalarını](/windows/desktop/SecBP/avoiding-buffer-overruns).
+**Güvenlik notunun** Hedef arabelleğinin boyut veya Kaynak arabelleğinden daha büyük olduğundan emin olun. Daha fazla bilgi için bkz. [arabellek taşmalarını önleme](/windows/win32/SecBP/avoiding-buffer-overruns).
 
-**Memmove** ve **wmemmove** işlevleri yalnızca kullanımdan kaldırılacaktır varsa sabiti **_CRT_SECURE_DEPRECATE_MEMORY** ekleme deyimi için sırayla önce tanımlanır kullanım dışı, aşağıdaki örnekte olduğu gibi olmasını İşlevler:
+**Memmove** ve **wmemmove** işlevleri, işlevlerin kullanım dışı olması için, aşağıdaki örnekte olduğu gibi, yalnızca sabit **_CRT_SECURE_DEPRECATE_MEMORY** dahil olmak üzere ekleme ifadesiyle önce tanımlanmışsa kullanım dışı bırakılır:
 
 ```C
 #define _CRT_SECURE_DEPRECATE_MEMORY
@@ -90,8 +90,8 @@ veya
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**memmove**|\<String.h >|
-|**wmemmove**|\<wchar.h >|
+|**memmove**|\<String. h >|
+|**wmemmove**|\<wchar. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

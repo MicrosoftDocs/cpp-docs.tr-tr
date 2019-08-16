@@ -1,19 +1,19 @@
 ---
-title: length_is (C++ COM özniteliği)
+title: length_is (C++ com özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.length_is
 helpviewer_keywords:
 - length_is attribute
 ms.assetid: 1d99b883-84bb-4b1e-b098-eb780fc94f40
-ms.openlocfilehash: 1de168606b57c801bc3dc1fb9aee76eb6f3d54c8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4f4bfe233e3228c50aee734de4ad979c38a55fda
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62409310"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69514536"
 ---
-# <a name="lengthis"></a>length_is
+# <a name="length_is"></a>length_is
 
 Aktarılacak dizi öğelerinin sayısını belirtir.
 
@@ -25,16 +25,16 @@ Aktarılacak dizi öğelerinin sayısını belirtir.
 
 ### <a name="parameters"></a>Parametreler
 
-*İfade*<br/>
-Bir veya daha fazla C dili ifadeleri. Boş bağımsız değişken yuvaları izin verilir.
+*ifadesini*<br/>
+Bir veya daha fazla C-dil ifadesi. Boş bağımsız değişken yuvalarına izin veriliyor.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Length_is** C++ özniteliği ile aynı işlevlere sahip [length_is](/windows/desktop/Midl/length-is) MIDL özniteliği.
+**Length_is** C++ özniteliği, [length_is](/windows/win32/Midl/length-is) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
 
 ## <a name="example"></a>Örnek
 
-Bkz: [first_is](first-is.md) örneği nasıl bir dizinin bir bölümünü belirtin.
+Dizinin bir bölümünü belirtme örneği için bkz. [first_is](first-is.md) .
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -42,12 +42,12 @@ Bkz: [first_is](first-is.md) örneği nasıl bir dizinin bir bölümünü belirt
 
 |||
 |-|-|
-|**İçin geçerlidir**|İçinde alan **yapı** veya **birleşim**, parametre arabirim, arabirim yöntemi|
+|**Uygulama hedefi**|**Struct** veya **Union**içindeki alan, arabirim parametresi, arabirim yöntemi|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|None|
+|**Gerekli öznitelikler**|Yok.|
 |**Geçersiz öznitelikler**|Yok.|
 
-Daha fazla bilgi için [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
+Daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -2,90 +2,90 @@
 title: 'Taşıma Kılavuzu: MFC Scribble'
 ms.date: 11/19/2018
 ms.assetid: 8ddb517d-89ba-41a1-ab0d-4d2c6d9047e8
-ms.openlocfilehash: 0424b5e8c87c0103b4ebee65765244b40e8fa553
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: e808f67b1479653add27a54ddf91f6578c046734
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65448966"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69511537"
 ---
 # <a name="porting-guide-mfc-scribble"></a>Taşıma Kılavuzu: MFC Scribble
 
-Bu konu Visual Studio için yükseltme yordamını tanıtan çeşitli konular davranıştır C++ Visual Studio 2017 için Visual Studio'nun eski sürümlerinde oluşturulmuş projeleri. Bu konular yükseltme işlemi çok basit bir proje ile başlayan ve biraz daha karmaşık ayarlara taşıma örnek tarafından tanıtmaktadır. Bu konu başlığında, yükseltme işlemi için belirli bir proje, MFC karalama üzerinden çalışıyoruz. C++ projeleri için yükseltme işlemi için temel bir giriş olarak uygun.
+Bu konu, Visual Studio 'nun eski sürümlerinde Visual Studio 2017 ' ye oluşturulan Visual Studio C++ projeleri için yükseltme yordamına yol gösteren birkaç konunun ilk kavramından biridir. Bu konular, çok basit bir projeden başlayarak ve biraz daha karmaşık olanlara geçerek yükseltme işlemini örnek olarak sunar. Bu konu başlığında, belirli bir proje için yükseltme sürecinde, MFC karalama ile çalışacağız. Projeler için C++ yükseltme işlemine temel bir giriş olarak uygundur.
 
-Visual Studio'nun her sürümü Visual Studio'nun daha eski bir sürümden daha yeni bir tane taşıma kodu karmaşıklaştırabilir olası uyumsuzluklar tanıtır. Bazen gerekli kodunuzda derleyin ve kodunuzu güncelleştirmeniz gerekir ve bazen proje dosyaları için gerekli değişiklikleri olan değişikliklerdir. Visual Studio'nun önceki bir sürümüyle oluşturulmuş bir projeyi açtığınızda Visual Studio otomatik olarak bir proje veya çözüm en son sürüme güncelleştirilip güncelleştirilmeyeceğini ister. Bu araçlar, genellikle yalnızca proje dosyalarını yükseltme; Kaynak kodunuzu değiştirmeyin.
+Visual Studio 'nun her sürümü, Visual Studio 'nun eski bir sürümünden daha yeni bir sürümden kod taşımayı karmaşık hale getirebilecek olası uyumsuzluklar sunar. Bazen gerekli değişiklikler kodunuzda bulunur, bu nedenle kodunuzu yeniden derlemeniz ve güncelleştirmeniz gerekir, bazen gerekli değişiklikler proje dosyaları için de gereklidir. Visual Studio 'nun önceki bir sürümüyle oluşturulmuş bir projeyi açtığınızda, Visual Studio otomatik olarak bir proje veya çözümün en son sürüme güncelleştirilmesini isteyip istemediğinizi sorar. Bu araçlar genellikle yalnızca proje dosyalarını yükseltir; Bunlar, kaynak kodunuzu değiştirmez.
 
 ## <a name="mfc-scribble"></a>MFC Scribble
 
-MFC karalama birçok farklı sürümlerinde Visual C++ dahil iyi bilinen bir örnektir. Bu MFC temel özelliklerinden bazılarını gösteren basit bir çizim uygulamasıdır. Çeşitli hem yönetilen hem de dahil olmak üzere, kullanılabilir ve yerel kod sürümleri vardır. Bu örnekte, karalama eski bir sürümü Visual Studio 2005'ten yerel kodda bulunan ve Visual Studio 2017'de açılır.
+MFC karalama, birçok farklı görsel C++sürümünde bulunan iyi bilinen bir örnektir. MFC 'nin temel özelliklerinden bazılarını gösteren basit bir çizim uygulamasıdır. Hem yönetilen hem de yerel kod sürümleri dahil olmak üzere çeşitli sürümleri mevcuttur. Bu örnekte, Visual Studio 2005 ' den yerel kodda eski bir karalama sürümü bulduk ve Visual Studio 2017 ' de açıldı.
 
-Yükseltme işleminden önce Windows Masaüstü iş yükü yüklenmiş olduğundan emin olun. (Vs_installer.exe) Visual Studio Yükleyicisi'ni açın. Yükleyici açın yollarından biri açıklanmıştır seçmek için **dosya** > **yeni proje** ve kaydırma görene kadar yüklü şablonlar listesinden altına **açmak Visual Studio yükleyicisi**. Yükleyici açtıktan sonra tüm kullanılabilir iş yüklerinin görürsünüz. Varsa kutusunu **Windows Masaüstü** seçin ve tıklayın ardından iş yükü seçili **Değiştir** pencerenin alt kısmındaki düğmesi.
+Yükseltmeyi denemeden önce, Windows masaüstü iş yükünün yüklü olduğundan emin olun. Visual Studio yükleyicisi 'ni (vs_installer. exe) açın. Yükleyiciyi açmak için bir yol, **Dosya** > **Yeni proje** ' yi seçmek ve **Açık Visual Studio yükleyicisi**görene kadar yüklü şablonlar listesinin altına kaydırmanız. Yükleyiciyi açtıktan sonra, tüm kullanılabilir iş yüklerini görürsünüz. **Windows Masaüstü** iş yükü kutusu seçili değilse, bunu seçip pencerenin alt kısmındaki **Değiştir** düğmesine tıklayın.
 
-Ardından, çözümün tamamını ve tüm içerikleri yedekleyin.
+Sonra, tüm çözümü ve tüm içeriğini yedekleyin.
 
-Son olarak, yükseltme belirli yönteme karar vermek ihtiyacımız var. Daha karmaşık çözümleri ve uzun bir süredir yükseltilmemiş projeleri için Visual Studio'nun bir sürümü aynı anda yükseltme düşünmelisiniz. Bu şekilde, bir sorun, Visual Studio'nun hangi sürümünün sunulan aşağı daraltabilirsiniz. Basit bir proje için bu Visual Studio'nun en son sürümde açmaya çalışırken ve projeyi dönüştürmek sihirbazın değer olur. Bu işe yaramazsa, Visual Studio'nun uygun sürümleri erişiminiz varsa bir kerede bir sürümüne yükseltmeniz deneyebilirsiniz.
+Son olarak, belirli yükseltme yöntemine karar vermemiz gerekiyordu. Uzun süredir yükseltilmemiş daha karmaşık çözümler ve projeler için aynı anda bir Visual Studio sürümü yükseltmeniz önerilir. Bu şekilde, hangi Visual Studio sürümünün bir sorun sunmakta olduğunu daraltabilirsiniz. Basit bir proje için, Visual Studio 'nun en son sürümünde açmaya ve sihirbazın projeyi dönüştürmesine izin verilmesi gerekir. Bu işe yaramazsa, Visual Studio 'nun uygun sürümlerine erişiminiz varsa tek seferde bir sürümü yükseltmeyi deneyebilirsiniz.
 
-Komut satırında devenv da çalıştırabileceğinizi unutmayın kullanarak `/Upgrade` projelerinizi Yükseltme Sihirbazı'nı kullanmak yerine seçeneği. Bkz: [Upgrade (devenv.exe)](/visualstudio/ide/reference/upgrade-devenv-exe). Bu, çok sayıda projeleri için yükseltme işlemini otomatikleştirme yardımcı olabilir.
+Projelerinizi yükseltmek için Sihirbazı kullanmak yerine, komut satırında devenv ' `/Upgrade` i de çalıştırabileceğinizi unutmayın. Bkz. [/Upgrade (devenv. exe)](/visualstudio/ide/reference/upgrade-devenv-exe). Bu, çok sayıda projenin yükseltme işlemini otomatikleştirmede yararlı olabilir.
 
 ### <a name="step-1-converting-the-project-file"></a>Adım 1. Proje dosyası dönüştürülüyor
 
-Visual Studio 2017'deki eski bir proje dosyasını açtığınızda, proje dosyası biz kabul en son sürüme dönüştürmek üzere Visual Studio sunar. Aşağıdaki iletişim kutusu görüntülendiğinde:
+Visual Studio 2017 ' de eski bir proje dosyası açtığınızda, Visual Studio proje dosyasını kabul ettiğimiz en son sürüme dönüştürmek için teklifleri sunar. Aşağıdaki iletişim kutusu görüntülendü:
 
-![Proje ve çözüm değişikliklerini gözden](../porting/media/scribbleprojectupgrade.PNG "proje ve çözüm değişikliklerini gözden geçirin.")
+![Proje ve çözüm değişikliklerini gözden geçirme](../porting/media/scribbleprojectupgrade.PNG "Proje ve çözüm değişikliklerini gözden geçirme")
 
-Itanium hedef kullanılamıyor ve dönüştürülmez bize bildiren bir hata oluştu.
+Itanium hedefinin kullanılamadığı ve dönüştürülmeyeceği konusunda bize bildirimde bulunmak için bir hata oluştu.
 
 ```Output
 Platform 'Itanium' is missing from this project. All the configurations and their file configuration settings specific to this platform will be ignored. If you want this platform converted, please make sure you have the corresponding platform installed under '%vctargetpath%\platforms\Itanium'.Continue to convert this project without this platform?
 ```
 
-Önceki karalama projenin oluşturulduğu sırada, Itanium bir önemli hedef platformu da oldu. Artık Windows platformu, Itanium desteklediğinden, Itanium platformunu destekleyen olmadan devam etmek seçtik.
+Önceki karalama projesinin oluşturulduğu zamanda, Itanium önemli bir hedef platformudur. Windows platformu artık Itanium 'yi desteklemiyor, bu nedenle Itanium platformunu desteklemeye gerek kalmadan devam etmeyi seçtik.
 
-Visual Studio, ardından tüm sorunların eski proje dosyasıyla birlikte listeleyen bir geçiş raporu görüntülenir.
+Daha sonra Visual Studio, eski proje dosyası ile ilgili tüm sorunları listeleyerek bir geçiş raporu görüntülendi.
 
-![Yükseltme raporu](../porting/media/scribblemigrationreport.PNG "yükseltme raporu")
+![Yükseltme raporu](../porting/media/scribblemigrationreport.PNG "Yükseltme raporu")
 
-Bu durumda, tüm uyarıları sorunları olan ve Visual Studio Proje dosyasında yapılan uygun değişiklikler. Proje endişe kadar derleme aracını MSBuild'e vcbuild değiştiğini büyük fark ise. Bu değişiklik, ilk Visual Studio 2010'da sunulmuştur. Diğer değişiklikler, proje dosyasının kendisini bazı yeniden öğelerin dizisi içerir. Sorunlarından hiçbiri, daha fazla dikkat bu basit proje için gereklidir.
+Bu durumda, sorunlar tüm uyarılardır ve Visual Studio proje dosyasında uygun değişiklikleri yaptı. Projenin en büyük farkı, yapı aracının VCBuild 'den MSBuild 'e değiştiği bir kaygıdır. Bu değişiklik ilk olarak Visual Studio 2010 ' de tanıtılmıştı. Diğer değişiklikler, proje dosyasının kendisindeki öğelerin sırasını yeniden düzenleme içerir. Bu basit proje için daha fazla dikkat etmeniz gereken sorun yok.
 
-### <a name="step-2-getting-it-to-build"></a>Adım 2. Derleme için alma
+### <a name="step-2-getting-it-to-build"></a>Adım 2. Oluşturmaya alma
 
-Proje sistemi kullanarak hangi derleme sürümünün biliyoruz şekilde yapılandırmadan önce biz platform araç takımını denetleyin. Proje Özellikleri iletişim kutusunda, altında **yapılandırma özellikleri**, **genel** kategori göz **Platform araç takımını** özelliği. Bu sürümü Visual Studio ve bu durumda v141 araçları Visual Studio 2017 sürümü için platform Aracı sürüm numarasını içerir. Visual Studio 2010 ile derlenmiş bir proje dönüştürdüğünüzde, 2012, 2013 veya 2015 araç takımı otomatik olarak Visual Studio 2017 araç takımını güncelleştirilmez.
+Derlemeden önce, proje sisteminin hangi derleyici sürümünü kullandığını bilmemiz için platform araç takımını denetliyoruz. Proje Özellikleri iletişim kutusunda, **yapılandırma özellikleri**altında, **genel** kategorisinde, **platform araç takımı** özelliğine bakın. Visual Studio sürümünü ve bu örnekte, araçların Visual Studio 2017 sürümü için v141 olan platform Aracı sürüm numarasını içerir. Özgün olarak Visual Studio 2010, 2012, 2013 veya 2015 ile derlenen bir projeyi dönüştürdüğünüzde, araç takımı Visual Studio 2017 araç takımını otomatik olarak güncellenmez.
 
-Unicode'a geçiş yapmak için projenin özelliklerini açmak **yapılandırma özellikleri**, seçin **genel** bölümünde ve bulun **karakter kümesi** özelliği. Bu değişiklik **çok baytlı karakter kümesi kullanan** için **Unicode karakter kümesini Kullandırır**. Bu değişikliğin etkilerini o artık _UNICODE ve UNICODE makroları tanımlanır ve _MBCS değil, Özellikler iletişim kutusunda altında doğrulayabilirsiniz **C /C++**  kategori **komut satırı** özellik.
+Anahtarı Unicode 'a getirmek için, projenin özelliklerini açın, **yapılandırma özellikleri**altında **genel** bölümünü seçin ve **karakter kümesi** özelliğini bulun. Bunu, **birden çok baytlık karakter kümesini** **Unicode karakter kümesi kullanacak**şekilde değiştirin. Bu değişikliğin etkisi artık _unicode ve Unicode makrolarının tanımlandığından ve _MBCS 'nin, **komut satırı** özelliğindeki **C/C++**  kategori altındaki Özellikler iletişim kutusunda doğrulayabileceği anlamına gelir.
 
 ```Output
 /GS /analyze- /W4 /Zc:wchar_t /Zi /Gm- /Od /Fd".\Debug\vc141.pdb" /Zc:inline /fp:precise /D "_AFXDLL" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_UNICODE" /D "UNICODE" /errorReport:prompt /WX /Zc:forScope /Gd /Oy- /MDd /Fa".\Debug\" /EHsc /nologo /Fo".\Debug\" /Fp".\Debug\Scribble.pch" /diagnostics:classic
 ```
 
-Karalama proje Unicode karakterleriyle derlemek için ayarlanmış durumda olsa da, hiçbir şey gerçekten değiştirilmesi gereken şekilde zaten TCHAR ile char yerine yazılmış. Proje başarıyla Unicode karakter kümesi ile oluşturulur.
+Karalama projesi Unicode karakterlerle derlemek üzere ayarlanmamış olsa da, karakter yerine TCHAR ile zaten yazılmıştır, bu nedenle gerçekte değiştirilmeleri gerekmez. Proje Unicode karakter kümesiyle başarıyla oluşturulur.
 
-Artık çözümü oluşturun. Çıktı penceresinde, bize bu _WINNT32_WINNT tanımlanmamış derleyiciye:
+Şimdi Çözümü derleyin. Çıkış penceresinde derleyici, _WıNNT32_WıNNT 'in tanımlanmayacağını söyler:
 
 ```Output
 _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
 ```
 
-Bu uyarı, bir hata ve Visual Studio yükseltirken çok sık olarak C++ proje. Uygulamamızı üzerinde çalışacak Windows en düşük sürümünü tanımlayan makro budur. Şu uyarıyı yoksay, biz geçerli Windows sürümü anlamına _WIN32_WINNT_MAXVER varsayılan değeri kabul edin. Olası değerler tablo için bkz: [Windows üst bilgileri kullanma](/windows/desktop/WinProg/using-the-windows-headers). Örneğin, size tüm sürümlerde Vista ve sonraki sürümlerde çalıştırmak için ayarlayabilirsiniz.
+Bu bir uyarı değildir ve bir Visual Studio C++ projesi yükseltilirken çok yaygın bir hatadır. Bu, uygulamamız üzerinde hangi en düşük Windows sürümünün çalışacağını tanımlayan bir makrodur. Uyarıyı yok saydığımızda, geçerli Windows sürümü anlamına gelen, _WIN32_WıNNT_MAXVER varsayılan değerini kabul ediyoruz. Olası değerler tablosu için bkz. [Windows üst bilgilerini kullanma](/windows/win32/WinProg/using-the-windows-headers). Örneğin, bunu Vista 'dan herhangi bir sürümde çalışacak şekilde ayarlayabiliriz.
 
 ```cpp
 #define _WIN32_WINNT _WIN32_WINNT_VISTA
 ```
 
-Kodu Windows API ile bu makroyu belirttiğiniz Windows sürümünde kullanılamayan bölümleri kullanıyorsa, bir derleyici hatası görmeniz gerekir. Karalama kod söz konusu olduğunda, hata yoktur.
+Kod, bu makroyla belirttiğiniz Windows sürümünde kullanılamayan Windows API 'sinin parçalarını kullanıyorsa, bunu bir derleyici hatası olarak görmeniz gerekir. Karalama kodu söz konusu olduğunda, bir hata yoktur.
 
 ### <a name="step-3-testing-and-debugging"></a>Adım 3. Test ve hata ayıklama
 
-Hiçbir test paketi için uygulamayı kullanmaya yeni özellikleri kullanıcı Arabirimi aracılığıyla el ile test yok. Hiçbir sorun gözlemlenmedi.
+Test paketi yok, bu nedenle uygulamayı yalnızca kullanıcı arabiriminden el ile test ettik. Hiçbir sorun gözlemlenmedi.
 
-### <a name="step-4-improve-the-code"></a>4. adımı. Kodu geliştirecek
+### <a name="step-4-improve-the-code"></a>4\. adımı. Kodu geliştirme
 
-Visual Studio 2017'ye geçiş yaptıktan sonra yeni C++ özellikleri yararlanmak için bazı değişiklikler yapmak isteyebilirsiniz. Geçerli C++ derleyicisi C++ Standart sonra önceki sürümleri için çok daha fazla uyumlu bir göz önünde varsa, kodunuzu daha güvenli ve daha taşınabilir hale getirmek için diğer derleyiciler için bazı kod değişiklikleri ve işletim sistemleri, bazı düşünmelisiniz sürümüdür geliştirmeleri.
+Artık Visual Studio 2017 ' ye geçirdiniz, yeni C++ özelliklerden yararlanmak için bazı değişiklikler yapmak isteyebilirsiniz. C++ Derleyicinin geçerli sürümü standart ve C++ önceki sürümlere çok daha uyumlu olduğundan, kodunuzu daha güvenli hale getirmek için bazı kod değişiklikleri yapmanız ve diğer derleyiciler ve işletim sistemlerine daha fazla taşınabilir bazı iyileştirmeleri göz önünde bulundurun.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Karalama küçük ve basit Windows masaüstü uygulaması olduğundan ve dönüştürmek sabit değildi. Birçok küçük, basit uygulamaları kolayca yeni sürüme dönüştürün.  Daha fazla kod satır sayısını, modern mühendislik standartları kadar olmayabilir eski eski kod ile daha karmaşık uygulamalar için birden çok projeye ve kitaplıkları, özel derleme adımları veya karmaşık betikleştirilmiş otomatik derlemeler için yükseltmek için daha uzun sürer. Devam [sonraki örnekte](../porting/porting-guide-com-spy.md), COM Spy adlı ATL/COM uygulama.
+Karalama küçük ve basit bir Windows masaüstü uygulamasıdır ve dönüştürme zor değildir. Birçok küçük, basit uygulama yeni sürüme kolayca kolayca dönüştürülür.  Daha karmaşık uygulamalar için, çok daha fazla kod satırı, modern mühendislik standartları, birden fazla proje ve kitaplık, özel derleme adımı veya karmaşık komut dosyalı otomatik derlemeler için daha fazla eski kod, yükseltmenin yükseltilmesi daha fazla zaman alır. COM Spy adlı bir ATL/COM uygulaması olan bir [sonraki örnekle](../porting/porting-guide-com-spy.md)devam edin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Taşıma ve Yükseltme: Örnekler ve Örnek Olay İncelemeleri](../porting/porting-and-upgrading-examples-and-case-studies.md)<br/>
-[Sonraki örnekte: COM Spy](../porting/porting-guide-com-spy.md)
+[Sonraki örnek: COM Spy](../porting/porting-guide-com-spy.md)

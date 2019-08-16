@@ -152,12 +152,12 @@ helpviewer_keywords:
 - CRichEditCtrl [MFC], StreamOut
 - CRichEditCtrl [MFC], Undo
 ms.assetid: 2be52788-822c-4c27-aafd-2471231e74eb
-ms.openlocfilehash: 253b1958a93fea28fa2d1408bc8238a5eb0ca519
-ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
+ms.openlocfilehash: fc2b4c08b5a999f0369199e0dd65a09a7cdf8dff
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68916802"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69503157"
 ---
 # <a name="cricheditctrl-class"></a>CRichEditCtrl sınıfı
 
@@ -296,7 +296,7 @@ BOOL CanPaste(UINT nFormat = 0) const;
 ### <a name="parameters"></a>Parametreler
 
 *nFormat*<br/>
-Sorgulanacak Pano veri biçimi. Bu parametre, önceden tanımlanmış Pano biçimlerinden biri veya [RegisterClipboardFormat](/windows/desktop/api/winuser/nf-winuser-registerclipboardformata)tarafından döndürülen değerden biri olabilir.
+Sorgulanacak Pano veri biçimi. Bu parametre, önceden tanımlanmış Pano biçimlerinden biri veya [RegisterClipboardFormat](/windows/win32/api/winuser/nf-winuser-registerclipboardformatw)tarafından döndürülen değerden biri olabilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -306,7 +306,7 @@ Pano biçimi yapıştırılabiliyorsanız sıfır dışı; Aksi takdirde 0.
 
 *NFormat* 0 ise, `CanPaste` panoda Şu anda herhangi bir biçimi dener.
 
-Daha fazla bilgi için Windows SDK [EM_CANPASTE](/windows/desktop/Controls/em-canpaste) Message ve [RegisterClipboardFormat](/windows/desktop/api/winuser/nf-winuser-registerclipboardformata) işlevine bakın.
+Daha fazla bilgi için Windows SDK [EM_CANPASTE](/windows/win32/Controls/em-canpaste) Message ve [RegisterClipboardFormat](/windows/win32/api/winuser/nf-winuser-registerclipboardformatw) işlevine bakın.
 
 ### <a name="example"></a>Örnek
 
@@ -328,7 +328,7 @@ Yineleme kuyruğu eylemleri içeriyorsa sıfır dışı, aksi durumda 0.
 
 Yeniden yineleme sırasındaki işlemin adını öğrenmek için [CRichEditCtrl:: GetRedoName](#getredoname)' i çağırın. En son geri alma işlemini yinelemek için [Yinele](#redo)komutunu çağırın.
 
-Daha fazla bilgi için Windows SDK [EM_CANREDO](/windows/desktop/Controls/em-canredo) bakın.
+Daha fazla bilgi için Windows SDK [EM_CANREDO](/windows/win32/Controls/em-canredo) bakın.
 
 ##  <a name="canundo"></a>CRichEditCtrl:: CanUndo
 
@@ -344,7 +344,7 @@ Son düzenleme işlemi [geri alma](#undo) üye işlevine yapılan bir çağrı i
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için Windows SDK [EM_CANUNDO](/windows/desktop/Controls/em-canundo) bakın.
+Daha fazla bilgi için Windows SDK [EM_CANUNDO](/windows/win32/Controls/em-canundo) bakın.
 
 ### <a name="example"></a>Örnek
 
@@ -371,7 +371,7 @@ Belirtilen noktayı en yakın karakterin sıfır tabanlı karakter dizini. Belir
 
 Bu üye işlevi bir zengin düzenleme denetimiyle çalışır. Bir düzenleme denetimiyle ilgili bilgileri almak için [Cedıt:: CharFromPos](../../mfc/reference/cedit-class.md#charfrompos)çağırın.
 
-Daha fazla bilgi için Windows SDK [EM_CHARFROMPOS](/windows/desktop/Controls/em-charfrompos) bakın.
+Daha fazla bilgi için Windows SDK [EM_CHARFROMPOS](/windows/win32/Controls/em-charfrompos) bakın.
 
 ##  <a name="clear"></a>CRichEditCtrl:: Clear
 
@@ -387,7 +387,7 @@ Tarafından `Clear` gerçekleştirilen silme, [geri alma](#undo) üye işlevi ç
 
 Geçerli seçimi silmek ve silinen içerikleri Pano 'ya yerleştirmek için [Kes](#cut) üye işlevini çağırın.
 
-Daha fazla bilgi için Windows SDK [WM_CLEAR](/windows/desktop/dataxchg/wm-clear) bakın.
+Daha fazla bilgi için Windows SDK [WM_CLEAR](/windows/win32/dataxchg/wm-clear) bakın.
 
 ### <a name="example"></a>Örnek
 
@@ -403,7 +403,7 @@ void Copy();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için Windows SDK [WM_COPY](/windows/desktop/dataxchg/wm-copy) bakın.
+Daha fazla bilgi için Windows SDK [WM_COPY](/windows/win32/dataxchg/wm-copy) bakın.
 
 ### <a name="example"></a>Örnek
 
@@ -424,10 +424,10 @@ virtual BOOL Create(
 ### <a name="parameters"></a>Parametreler
 
 *dwStyle*<br/>
-Düzenleme denetiminin stilini belirtir. Aşağıdaki **açıklamalar** bölümünde listelenen pencere stillerinin birleşimini uygulayın ve Windows SDK açıklanan [Denetim stillerini düzenleyin](/windows/desktop/Controls/edit-control-styles).
+Düzenleme denetiminin stilini belirtir. Aşağıdaki **açıklamalar** bölümünde listelenen pencere stillerinin birleşimini uygulayın ve Windows SDK açıklanan [Denetim stillerini düzenleyin](/windows/win32/Controls/edit-control-styles).
 
 *Rect*<br/>
-Düzenleme denetiminin boyutunu ve konumunu belirtir. Bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya [Rect](/windows/desktop/api/windef/ns-windef-tagrect) yapısı olabilir.
+Düzenleme denetiminin boyutunu ve konumunu belirtir. Bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya [Rect](/windows/win32/api/windef/ns-windef-rect) yapısı olabilir.
 
 *pParentWnd*<br/>
 Düzenleme denetiminin üst penceresini belirtir (genellikle bir [CDialog](../../mfc/reference/cdialog-class.md)). NULL olmaması gerekir.
@@ -461,7 +461,7 @@ Bir düzenleme denetimine aşağıdaki [pencere stillerini](../../mfc/reference/
 
 - Düzenleme denetimini sekme sırasına eklemek Için WS_TABSTOP.
 
-Pencere stilleri hakkında daha fazla bilgi için Windows SDK, bkz. [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) .
+Pencere stilleri hakkında daha fazla bilgi için Windows SDK, bkz. [CreateWindow](/windows/win32/api/winuser/nf-winuser-createwindoww) .
 
 ### <a name="example"></a>Örnek
 
@@ -483,10 +483,10 @@ virtual BOOL CreateEx(
 ### <a name="parameters"></a>Parametreler
 
 *dwExStyle*<br/>
-Oluşturulmakta olan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows stillerinin listesi için, Windows SDK için bkz. [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) Için *dwExStyle* parametresi.
+Oluşturulmakta olan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows stillerinin listesi için, Windows SDK için bkz. [CreateWindowEx](/windows/win32/api/winuser/nf-winuser-createwindowexw) Için *dwExStyle* parametresi.
 
 *dwStyle*<br/>
-Düzenleme denetiminin stilini belirtir. Windows SDK açıklanan [Create](#create) ve [Edit denetim stillerinin](/windows/desktop/Controls/edit-control-styles) **açıklamalar** bölümünde listelenen pencere stillerinin birleşimini uygulayın.
+Düzenleme denetiminin stilini belirtir. Windows SDK açıklanan [Create](#create) ve [Edit denetim stillerinin](/windows/win32/Controls/edit-control-styles) **açıklamalar** bölümünde listelenen pencere stillerinin birleşimini uygulayın.
 
 *Rect*<br/>
 *PParentWnd*istemci koordinatları içinde oluşturulacak pencerenin boyutunu ve konumunu açıklayan bir [Rect](/previous-versions/dd162897\(v=vs.85\)) yapısına başvuru.
@@ -535,7 +535,7 @@ Tarafından `Cut` gerçekleştirilen silme, [geri alma](#undo) üye işlevi ça�
 
 Silinen metni panoya yerleştirmeksizin geçerli seçimi silmek için, [clear](#clear) member işlevini çağırın.
 
-Daha fazla bilgi için Windows SDK [WM_CUT](/windows/desktop/dataxchg/wm-cut) bakın.
+Daha fazla bilgi için Windows SDK [WM_CUT](/windows/win32/dataxchg/wm-cut) bakın.
 
 ### <a name="example"></a>Örnek
 
@@ -552,7 +552,7 @@ BOOL DisplayBand(LPRECT pDisplayRect);
 ### <a name="parameters"></a>Parametreler
 
 *pDisplayRect*<br/>
-Metnin görüntüleneceği, cihazın alanını belirten bir [Rect](/windows/desktop/api/windef/ns-windef-tagrect) veya [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi işaretçisi.
+Metnin görüntüleneceği, cihazın alanını belirten bir [Rect](/windows/win32/api/windef/ns-windef-rect) veya [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -562,7 +562,7 @@ Biçimlendirilen metnin görüntülenmesi başarılı olursa sıfır dışında,
 
 Metin ve OLE öğeleri, *pDisplayRect*işaretçisi tarafından belirtilen alana kırpılır.
 
-Daha fazla bilgi için Windows SDK [EM_DISPLAYBAND](/windows/desktop/Controls/em-displayband) bakın.
+Daha fazla bilgi için Windows SDK [EM_DISPLAYBAND](/windows/win32/Controls/em-displayband) bakın.
 
 ### <a name="example"></a>Örnek
 
@@ -582,7 +582,7 @@ Denetim artık son Düzenle işlemini geri alamıyor. Her zaman zengin düzenlem
 
 Her [CWnd](../../mfc/reference/cwnd-class.md) üye Işlevi [SetWindowText](../../mfc/reference/cwnd-class.md#setwindowtext)öğesini çağırdığınızda geri alma bayrağı otomatik olarak temizlenir.
 
-Daha fazla bilgi için Windows SDK [EM_EMPTYUNDOBUFFER](/windows/desktop/Controls/em-emptyundobuffer) bakın.
+Daha fazla bilgi için Windows SDK [EM_EMPTYUNDOBUFFER](/windows/win32/Controls/em-emptyundobuffer) bakın.
 
 ### <a name="example"></a>Örnek
 
@@ -601,10 +601,10 @@ long FindText(
 ### <a name="parameters"></a>Parametreler
 
 *dwFlags*<br/>
-Olası değerler listesi için Windows SDK içindeki *wParam* [EM_FINDTEXTEXT](/windows/desktop/Controls/em-findtextex) bakın.
+Olası değerler listesi için Windows SDK içindeki *wParam* [EM_FINDTEXTEXT](/windows/win32/Controls/em-findtextex) bakın.
 
 *pFindText*<br/>
-Arama için parametreleri sağlayan ve eşleşmenin bulunduğu aralığı döndüren [Findtextex](/windows/desktop/api/richedit/ns-richedit-findtextexa) yapısına yönelik işaretçi.
+Arama için parametreleri sağlayan ve eşleşmenin bulunduğu aralığı döndüren [Findtextex](/windows/win32/api/richedit/ns-richedit-findtextexw) yapısına yönelik işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -612,9 +612,9 @@ Sonraki eşleşmenin sıfır tabanlı karakter konumu; -1 daha fazla eşleşme y
 
 ### <a name="remarks"></a>Açıklamalar
 
-`FINDTEXTEX` Yapı içindeki [charrange](/windows/desktop/api/richedit/ns-richedit-charrange) yapısında uygun Aralık parametrelerini ayarlayarak yukarı veya aşağı doğru arama yapabilirsiniz.
+`FINDTEXTEX` Yapı içindeki [charrange](/windows/win32/api/richedit/ns-richedit-charrange) yapısında uygun Aralık parametrelerini ayarlayarak yukarı veya aşağı doğru arama yapabilirsiniz.
 
-Daha fazla bilgi için Windows SDK [EM_FINDTEXTEX](/windows/desktop/Controls/em-findtextex) Message and [findtextex](/windows/desktop/api/richedit/ns-richedit-findtextexa) yapısına bakın.
+Daha fazla bilgi için Windows SDK [EM_FINDTEXTEX](/windows/win32/Controls/em-findtextex) Message and [findtextex](/windows/win32/api/richedit/ns-richedit-findtextexw) yapısına bakın.
 
 ### <a name="example"></a>Örnek
 
@@ -640,7 +640,7 @@ Başlatılacağı sıfır tabanlı karakter konumu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*NCode*parametresine göre. Daha fazla bilgi için Windows SDK [EM_FINDWORDBREAK](/windows/desktop/Controls/em-findwordbreak) bakın.
+*NCode*parametresine göre. Daha fazla bilgi için Windows SDK [EM_FINDWORDBREAK](/windows/win32/Controls/em-findwordbreak) bakın.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -659,7 +659,7 @@ long FormatRange(
 ### <a name="parameters"></a>Parametreler
 
 *PFR*<br/>
-Çıkış aygıtıyla ilgili bilgileri içeren [FormatRange](/windows/desktop/api/richedit/ns-richedit-formatrange) yapısına yönelik işaretçi. NULL, zengin düzenleme denetimi içindeki önbelleğe alınmış bilgilerin serbest bırakılabileceğini belirtir.
+Çıkış aygıtıyla ilgili bilgileri içeren [FormatRange](/windows/win32/api/richedit/ns-richedit-formatrange) yapısına yönelik işaretçi. NULL, zengin düzenleme denetimi içindeki önbelleğe alınmış bilgilerin serbest bırakılabileceğini belirtir.
 
 *bDisplay*<br/>
 Metnin işlenip işlenmeyeceğini gösterir. YANLıŞ ise metin yalnızca ölçülmüş olur.
@@ -672,7 +672,7 @@ Bölgeye uyan son karakterin dizini ve bir.
 
 Genellikle, bu çağrının ardından [DisplayBand](#displayband)çağrısı gelir.
 
-Daha fazla bilgi için Windows SDK [EM_FORMATRANGE](/windows/desktop/Controls/em-formatrange) Message and [FormatRange](/windows/desktop/api/richedit/ns-richedit-formatrange) Structure bölümüne bakın.
+Daha fazla bilgi için Windows SDK [EM_FORMATRANGE](/windows/win32/Controls/em-formatrange) Message and [FormatRange](/windows/win32/api/richedit/ns-richedit-formatrange) Structure bölümüne bakın.
 
 ### <a name="example"></a>Örnek
 
@@ -699,7 +699,7 @@ Karakterin sıfır tabanlı dizini.
 
 Karakter, sıfır tabanlı dizin değeri vererek belirtilir. *LChar* , bu `CRichEditCtrl` nesnedeki son karakterin dizininden büyükse, dönüş değeri bu `CRichEditCtrl` nesnedeki son karakteri geçen karakter konumunun koordinatlarını belirtir.
 
-Daha fazla bilgi için Windows SDK [EM_POSFROMCHAR](/windows/desktop/Controls/em-posfromchar) bakın.
+Daha fazla bilgi için Windows SDK [EM_POSFROMCHAR](/windows/win32/Controls/em-posfromchar) bakın.
 
 ##  <a name="getdefaultcharformat"></a>CRichEditCtrl:: GetDefaultCharFormat
 
@@ -744,7 +744,7 @@ Bu `CRichEditCtrl` nesnenin olay maskesi.
 
 Olay maskesi `CRichEditCtrl` nesnenin üst penceresine gönderdiği bildirim iletilerini belirtir.
 
-Daha fazla bilgi için Windows SDK [EM_GETEVENTMASK](/windows/desktop/Controls/em-geteventmask) bakın.
+Daha fazla bilgi için Windows SDK [EM_GETEVENTMASK](/windows/win32/Controls/em-geteventmask) bakın.
 
 ### <a name="example"></a>Örnek
 
@@ -764,7 +764,7 @@ Bu `CRichEditCtrl` nesnedeki en büyük görünür çizginin sıfır tabanlı di
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için Windows SDK [EM_GETFIRSTVISIBLELINE](/windows/desktop/Controls/em-getfirstvisibleline) bakın.
+Daha fazla bilgi için Windows SDK [EM_GETFIRSTVISIBLELINE](/windows/win32/Controls/em-getfirstvisibleline) bakın.
 
 ### <a name="example"></a>Örnek
 
@@ -780,13 +780,13 @@ IRichEditOle* GetIRichEditOle() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu`CRichEditCtrl` nesnenin OLE işlevselliğine erişmek için kullanılabilecek [IRichEditOle](/windows/desktop/api/richole/nn-richole-iricheditole) arabirimine yönelik işaretçi; Arabirim erişilebilir değilse NULL.
+Bu`CRichEditCtrl` nesnenin OLE işlevselliğine erişmek için kullanılabilecek [IRichEditOle](/windows/win32/api/richole/nn-richole-iricheditole) arabirimine yönelik işaretçi; Arabirim erişilebilir değilse NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Bu `CRichEditCtrl` nesnenin OLE işlevselliğine erişmek için bu arabirimi kullanın.
 
-Daha fazla bilgi için Windows SDK [EM_GETOLEINTERFACE](/windows/desktop/Controls/em-getoleinterface) Message and [IRichEditOle](/windows/desktop/api/richole/nn-richole-iricheditole) Interface bölümüne bakın.
+Daha fazla bilgi için Windows SDK [EM_GETOLEINTERFACE](/windows/win32/Controls/em-getoleinterface) Message and [IRichEditOle](/windows/win32/api/richole/nn-richole-iricheditole) Interface bölümüne bakın.
 
 ##  <a name="getlimittext"></a>CRichEditCtrl:: GetLimitText
 
@@ -804,7 +804,7 @@ Bu `CRichEditCtrl` nesne için bayt cinsinden geçerli metin sınırı.
 
 Metin sınırı, zengin düzenleme denetiminin kabul edebileceği, bayt cinsinden maksimum metin miktarıdır.
 
-Daha fazla bilgi için Windows SDK [EM_GETLIMITTEXT](/windows/desktop/Controls/em-getlimittext) bakın.
+Daha fazla bilgi için Windows SDK [EM_GETLIMITTEXT](/windows/win32/Controls/em-getlimittext) bakın.
 
 ### <a name="example"></a>Örnek
 
@@ -847,7 +847,7 @@ Kopyalanmış satır Sonlandırıcı null karakteri içermiyor.
 > [!NOTE]
 >  Arabelleğin ilk sözcüğü kopyalanacak karakter sayısını depoladığından, arabelleğin en az 4 bayt uzunluğunda olduğundan emin olun.
 
-Daha fazla bilgi için Windows SDK [EM_GETLINE](/windows/desktop/Controls/em-getline) bakın.
+Daha fazla bilgi için Windows SDK [EM_GETLINE](/windows/win32/Controls/em-getline) bakın.
 
 ### <a name="example"></a>Örnek
 
@@ -867,7 +867,7 @@ Bu `CRichEditCtrl` nesnedeki satır sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için Windows SDK [EM_GETLINECOUNT](/windows/desktop/Controls/em-getlinecount) bakın.
+Daha fazla bilgi için Windows SDK [EM_GETLINECOUNT](/windows/win32/Controls/em-getlinecount) bakın.
 
 ### <a name="example"></a>Örnek
 
@@ -889,7 +889,7 @@ Bu `CRichEditCtrl` nesnedeki metin değiştirilmişse sıfır dışında; Aksi t
 
 Windows, zengin düzenleme denetimi içeriğinin değiştirilip değiştirilmediğini belirten bir iç bayrak tutar. Bu bayrak, düzenleme denetimi ilk oluşturulduğunda temizlenir ve [SetModify](#setmodify) üye işlevi çağırarak de temizlenemez.
 
-Daha fazla bilgi için Windows SDK [EM_GETMODIFY](/windows/desktop/Controls/em-getmodify) bakın.
+Daha fazla bilgi için Windows SDK [EM_GETMODIFY](/windows/win32/Controls/em-getmodify) bakın.
 
 ### <a name="example"></a>Örnek
 
@@ -905,7 +905,7 @@ UINT GetOptions() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli seçenek bayrak değerlerinin birleşimi. Bu değerlerin bir listesi için, Windows SDK açıklandığı gibi [EM_SETOPTIONS](/windows/desktop/Controls/em-setoptions) Iletisindeki *fOptions* parametresine bakın.
+Geçerli seçenek bayrak değerlerinin birleşimi. Bu değerlerin bir listesi için, Windows SDK açıklandığı gibi [EM_SETOPTIONS](/windows/win32/Controls/em-setoptions) Iletisindeki *fOptions* parametresine bakın.
 
 ##  <a name="getparaformat"></a>CRichEditCtrl:: GetParaFormat
 
@@ -918,9 +918,9 @@ DWORD GetParaFormat(PARAFORMAT& pf) const;  DWORD GetParaFormat(PARAFORMAT2& pf)
 ### <a name="parameters"></a>Parametreler
 
 *PF*<br/>
-İlk sürümde, geçerli seçimin paragraf biçimlendirme özniteliklerini tutacak bir [paraformat](/windows/desktop/api/richedit/ns-richedit-paraformat) yapısına yönelik bir işaretçi.
+İlk sürümde, geçerli seçimin paragraf biçimlendirme özniteliklerini tutacak bir [paraformat](/windows/win32/api/richedit/ns-richedit-paraformat) yapısına yönelik bir işaretçi.
 
-İkinci sürümde, `PARAFORMAT` yapıya yönelik zengin bir düzenleme 2,0 uzantısı olan [PARAFORMAT2](/windows/desktop/api/richedit/ns-richedit-paraformat2) yapısına yönelik bir işaretçi, varsayılan karakter biçimlendirme özniteliklerini tutan.
+İkinci sürümde, `PARAFORMAT` yapıya yönelik zengin bir düzenleme 2,0 uzantısı olan [PARAFORMAT2](/windows/win32/api/richedit/ns-richedit-paraformat2) yapısına yönelik bir işaretçi, varsayılan karakter biçimlendirme özniteliklerini tutan.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -930,7 +930,7 @@ DWORD GetParaFormat(PARAFORMAT& pf) const;  DWORD GetParaFormat(PARAFORMAT2& pf)
 
 Birden çok paragraf seçildiyse, *PF* ilk Seçili paragrafın özniteliklerini alır. Dönüş değeri, seçim boyunca hangi özniteliklerin tutarlı olduğunu belirtir.
 
-Daha fazla bilgi için Windows SDK [EM_GETPARAFORMAT](/windows/desktop/Controls/em-getparaformat) iletisine ve `PARAFORMAT` ve `PARAFORMAT2` yapılarına bakın.
+Daha fazla bilgi için Windows SDK [EM_GETPARAFORMAT](/windows/win32/Controls/em-getparaformat) iletisine ve `PARAFORMAT` ve `PARAFORMAT2` yapılarına bakın.
 
 ### <a name="example"></a>Örnek
 
@@ -949,10 +949,10 @@ BOOL GetPunctuation(
 ### <a name="parameters"></a>Parametreler
 
 *Type*<br/>
-Windows SDK [EM_GETPUNCTUATION](/windows/desktop/Controls/em-getpunctuation) ' nin *ftype* parametresinde açıklandığı gibi noktalama türü bayrağı.
+Windows SDK [EM_GETPUNCTUATION](/windows/win32/Controls/em-getpunctuation) ' nin *ftype* parametresinde açıklandığı gibi noktalama türü bayrağı.
 
 *lpPunc*<br/>
-Windows SDK açıklandığı gibi, [noktalama](/windows/desktop/api/richedit/ns-richedit-punctuation) yapısına yönelik bir işaretçi.
+Windows SDK açıklandığı gibi, [noktalama](/windows/win32/api/richedit/ns-richedit-punctuation) yapısına yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -973,13 +973,13 @@ void GetRect(LPRECT lpRect) const;
 ### <a name="parameters"></a>Parametreler
 
 *lpRect*<br/>
-[](../../atl-mfc-shared/reference/crect-class.md) Bu nesnenin`CRichEditCtrl` biçimlendirme dikdörtgenini almak için bir [Rect](/windows/desktop/api/windef/ns-windef-tagrect) veya işaretçi işaretçisi.
+[](../../atl-mfc-shared/reference/crect-class.md) Bu nesnenin`CRichEditCtrl` biçimlendirme dikdörtgenini almak için bir [Rect](/windows/win32/api/windef/ns-windef-rect) veya işaretçi işaretçisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Biçimlendirme dikdörtgeni metin için sınırlayıcı dikdörtgendir. Bu değer, `CRichEditCtrl` nesnenin boyutundan bağımsızdır.
 
-Daha fazla bilgi için Windows SDK [EM_GETRECT](/windows/desktop/Controls/em-getrect) bakın.
+Daha fazla bilgi için Windows SDK [EM_GETRECT](/windows/win32/Controls/em-getrect) bakın.
 
 ### <a name="example"></a>Örnek
 
@@ -995,7 +995,7 @@ UNDONAMEID GetRedoName() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, `GetRedoName` denetimin yineleme kuyruğundaki sonraki eylemin türünü gösteren [UNDONAMEID](/windows/desktop/api/richedit/ne-richedit-undonameid) sabit listesi türünü döndürür. Yeniden Uygula sırası boşsa veya kuyruktaki yineleme eylemi bilinmeyen bir tür `GetRedoName` ise 0 döndürür.
+Başarılı olursa, `GetRedoName` denetimin yineleme kuyruğundaki sonraki eylemin türünü gösteren [UNDONAMEID](/windows/win32/api/richedit/ne-richedit-undonameid) sabit listesi türünü döndürür. Yeniden Uygula sırası boşsa veya kuyruktaki yineleme eylemi bilinmeyen bir tür `GetRedoName` ise 0 döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1016,7 +1016,7 @@ void GetSel(
 ### <a name="parameters"></a>Parametreler
 
 *Return*<br/>
-Geçerli seçimin sınırlarını almak için bir [charrange](/windows/desktop/api/richedit/ns-richedit-charrange) yapısına başvuru.
+Geçerli seçimin sınırlarını almak için bir [charrange](/windows/win32/api/richedit/ns-richedit-charrange) yapısına başvuru.
 
 *nStartChar*<br/>
 Geçerli seçimdeki ilk karakterin sıfır tabanlı dizini.
@@ -1034,7 +1034,7 @@ Bu işlevin iki formu seçimin sınırlarını almanın alternatif yollarını s
 
 Başlangıç (`cpMin` veya *nStartChar*) 0 ise ve End (`cpMax` veya *nEndChar*)-1 ise seçim her şeyi içerir.
 
-Daha fazla bilgi için Windows SDK [EM_EXGETSEL](/windows/desktop/Controls/em-exgetsel) Message and [charrange](/windows/desktop/api/richedit/ns-richedit-charrange) yapısı bölümüne bakın.
+Daha fazla bilgi için Windows SDK [EM_EXGETSEL](/windows/win32/Controls/em-exgetsel) Message and [charrange](/windows/win32/api/richedit/ns-richedit-charrange) yapısı bölümüne bakın.
 
 ### <a name="example"></a>Örnek
 
@@ -1051,9 +1051,9 @@ DWORD GetSelectionCharFormat(CHARFORMAT& cf) const;  DWORD GetSelectionCharForma
 ### <a name="parameters"></a>Parametreler
 
 *CF*<br/>
-İlk sürümde, geçerli seçimin karakter biçimlendirme özniteliklerini almak için bir [Charformat](/windows/desktop/api/richedit/ns-richedit-_charformat) yapısına yönelik bir işaretçi.
+İlk sürümde, geçerli seçimin karakter biçimlendirme özniteliklerini almak için bir [Charformat](/windows/win32/api/richedit/ns-richedit-_charformat) yapısına yönelik bir işaretçi.
 
-İkinci sürümde, geçerli seçimin karakter biçimlendirme özniteliklerini almak [](/windows/desktop/api/richedit/ns-richedit-charformat2a) üzere `CHARFORMAT` yapıya yönelik zengin bir düzenleme 2,0 uzantısı olan CHARFORMAT2 yapısına yönelik bir işaretçi.
+İkinci sürümde, geçerli seçimin karakter biçimlendirme özniteliklerini almak [](/windows/win32/api/richedit/ns-richedit-charformat2w) üzere `CHARFORMAT` yapıya yönelik zengin bir düzenleme 2,0 uzantısı olan CHARFORMAT2 yapısına yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1063,7 +1063,7 @@ DWORD GetSelectionCharFormat(CHARFORMAT& cf) const;  DWORD GetSelectionCharForma
 
 *CF* parametresi, geçerli seçimdeki ilk karakterin özniteliklerini alır. Dönüş değeri, seçim boyunca hangi özniteliklerin tutarlı olduğunu belirtir.
 
-Daha fazla bilgi için Windows SDK [EM_GETCHARFORMAT](/windows/desktop/Controls/em-getcharformat) iletisine ve `CHARFORMAT` ve `CHARFORMAT2` yapılarına bakın.
+Daha fazla bilgi için Windows SDK [EM_GETCHARFORMAT](/windows/win32/Controls/em-getcharformat) iletisine ve `CHARFORMAT` ve `CHARFORMAT2` yapılarına bakın.
 
 ### <a name="example"></a>Örnek
 
@@ -1093,7 +1093,7 @@ Geçerli seçimin içeriğini gösteren Bayraklar. Aşağıdaki bayrakların bir
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için Windows SDK [EM_SELECTIONTYPE](/windows/desktop/Controls/em-selectiontype) bakın.
+Daha fazla bilgi için Windows SDK [EM_SELECTIONTYPE](/windows/win32/Controls/em-selectiontype) bakın.
 
 ### <a name="example"></a>Örnek
 
@@ -1124,7 +1124,7 @@ Geçerli seçimdeki metni almak için arabelleğin işaretçisi.
 
 **GetSelText (** `lpBuf` **)** ilk formunu kullanırsanız, arabelleğin alacağı metin için yeterince büyük olduğundan emin olmanız gerekir. Geçerli seçimdeki karakter sayısını öğrenmek için [GetSel](#getsel) 'i çağırın.
 
-Daha fazla bilgi için Windows SDK [EM_GETSELTEXT](/windows/desktop/Controls/em-getseltext) bakın.
+Daha fazla bilgi için Windows SDK [EM_GETSELTEXT](/windows/win32/Controls/em-getseltext) bakın.
 
 ### <a name="example"></a>Örnek
 
@@ -1144,7 +1144,7 @@ Bu `CRichEditCtrl` nesnedeki metnin uzunluğu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için Windows SDK [WM_GETTEXTLENGTH](/windows/desktop/winmsg/wm-gettextlength) bakın.
+Daha fazla bilgi için Windows SDK [WM_GETTEXTLENGTH](/windows/win32/winmsg/wm-gettextlength) bakın.
 
 ### <a name="example"></a>Örnek
 
@@ -1163,7 +1163,7 @@ long GetTextLengthEx(
 ### <a name="parameters"></a>Parametreler
 
 *dwFlags*<br/>
-Metin uzunluğunu belirlemede kullanılacak yöntemi belirten değer. Bu üye, Windows SDK açıklanan [gettextlengthex](/windows/desktop/api/richedit/ns-richedit-gettextlengthex) öğesinin Flags üyesinde listelenen değerlerden biri veya daha fazlası olabilir.
+Metin uzunluğunu belirlemede kullanılacak yöntemi belirten değer. Bu üye, Windows SDK açıklanan [gettextlengthex](/windows/win32/api/richedit/ns-richedit-gettextlengthex) öğesinin Flags üyesinde listelenen değerlerden biri veya daha fazlası olabilir.
 
 *Uıcodepage*<br/>
 Çeviri için kod sayfası (CP_ACP for ANSI Code Page, UNICODE için 1200).
@@ -1174,7 +1174,7 @@ Düzenleme denetimindeki karakter veya bayt sayısı. *DwFlags*içinde uyumsuz b
 
 ### <a name="remarks"></a>Açıklamalar
 
-`GetTextLengthEx`metnin uzunluğunu belirlemenin ek yollarını sağlar. Zengin düzenleme 2,0 işlevini destekler. Daha fazla bilgi Için bkz. Windows SDK 'da [zengin düzenleme denetimleri hakkında](/windows/desktop/Controls/about-rich-edit-controls) .
+`GetTextLengthEx`metnin uzunluğunu belirlemenin ek yollarını sağlar. Zengin düzenleme 2,0 işlevini destekler. Daha fazla bilgi Için bkz. Windows SDK 'da [zengin düzenleme denetimleri hakkında](/windows/win32/Controls/about-rich-edit-controls) .
 
 ##  <a name="gettextmode"></a>CRichEditCtrl:: GetTextMode
 
@@ -1186,7 +1186,7 @@ UINT GetTextMode() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Windows SDK bölümünde açıklandığı gibi, [TextMode](/windows/desktop/api/richedit/ne-richedit-tagtextmode) numaralandırma türünden bir bit bayrakları kümesi. Bayraklar geçerli metin modunu ve denetimin geri alma düzeyini gösterir.
+Windows SDK bölümünde açıklandığı gibi, [TextMode](/windows/win32/api/richedit/ne-richedit-textmode) numaralandırma türünden bir bit bayrakları kümesi. Bayraklar geçerli metin modunu ve denetimin geri alma düzeyini gösterir.
 
 ##  <a name="gettextrange"></a>CRichEditCtrl:: GetTextRange
 
@@ -1216,9 +1216,9 @@ Sonlandırıcı null karakteri dahil değil, kopyalanmış karakter sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için Windows SDK [EM_GETTEXTRANGE](/windows/desktop/Controls/em-gettextrange) bakın.
+Daha fazla bilgi için Windows SDK [EM_GETTEXTRANGE](/windows/win32/Controls/em-gettextrange) bakın.
 
-`GetTextRange`Zengin düzenleme 2,0 işlevini destekler. Daha fazla bilgi Için bkz. Windows SDK 'da [zengin düzenleme denetimleri hakkında](/windows/desktop/Controls/about-rich-edit-controls) .
+`GetTextRange`Zengin düzenleme 2,0 işlevini destekler. Daha fazla bilgi Için bkz. Windows SDK 'da [zengin düzenleme denetimleri hakkında](/windows/win32/Controls/about-rich-edit-controls) .
 
 ##  <a name="getundoname"></a>CRichEditCtrl:: GetUndoName
 
@@ -1230,7 +1230,7 @@ UNDONAMEID GetUndoName() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Denetimin geri alma kuyruğunda geri alma eylemi varsa, `GetUndoName` sıradaki bir sonraki eylemin türünü gösteren [UNDONAMEID](/windows/desktop/api/richedit/ne-richedit-undonameid) sabit listesi türünü döndürür. Geri alma kuyruğu boşsa veya kuyruktaki geri alma eylemi bilinmeyen bir tür `GetUndoName` ise 0 döndürür.
+Denetimin geri alma kuyruğunda geri alma eylemi varsa, `GetUndoName` sıradaki bir sonraki eylemin türünü gösteren [UNDONAMEID](/windows/win32/api/richedit/ne-richedit-undonameid) sabit listesi türünü döndürür. Geri alma kuyruğu boşsa veya kuyruktaki geri alma eylemi bilinmeyen bir tür `GetUndoName` ise 0 döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1246,7 +1246,7 @@ UINT GetWordWrapMode() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli sözcük kaydırma ve sözcük bölme seçenekleri. Bu seçenekler, Windows SDK [EM_SETWORDWRAPMODE](/windows/desktop/Controls/em-setwordwrapmode) ' de açıklanmaktadır.
+Geçerli sözcük kaydırma ve sözcük bölme seçenekleri. Bu seçenekler, Windows SDK [EM_SETWORDWRAPMODE](/windows/win32/Controls/em-setwordwrapmode) ' de açıklanmaktadır.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1274,7 +1274,7 @@ Seçimin görünürlük değişikliği için bu değişikliğin kalıcı olması
 
 *Bizin* doğru olduğunda, bu `CRichEditCtrl` nesne için ECO_NOHIDESEL seçeneğini değiştirir. Bu seçeneğin kısa bir açıklaması için bkz. [SetOptions](#setoptions). Bu `CRichEditCtrl` nesnenin tüm seçeneklerini ayarlamak için bu işlevi kullanabilirsiniz.
 
-Daha fazla bilgi için Windows SDK [EM_HIDESELECTION](/windows/desktop/Controls/em-hideselection) bakın.
+Daha fazla bilgi için Windows SDK [EM_HIDESELECTION](/windows/win32/Controls/em-hideselection) bakın.
 
 ### <a name="example"></a>Örnek
 
@@ -1300,7 +1300,7 @@ Metin sınırını değiştirmek yalnızca kullanıcının girebileceği metni k
 > [!NOTE]
 >  Metin sınırı için, her OLE öğesi tek bir karakter olarak sayılır.
 
-Daha fazla bilgi için Windows SDK [EM_EXLIMITTEXT](/windows/desktop/Controls/em-exlimittext) bakın.
+Daha fazla bilgi için Windows SDK [EM_EXLIMITTEXT](/windows/win32/Controls/em-exlimittext) bakın.
 
 ### <a name="example"></a>Örnek
 
@@ -1327,7 +1327,7 @@ Düzenleme denetiminin metninde istenen karakterin sıfır tabanlı dizin değer
 
 Karakter dizini, zengin düzenleme denetiminin başındaki karakter sayısıdır. Karakter sayımı için bir OLE öğesi tek bir karakter olarak sayılır.
 
-Daha fazla bilgi için Windows SDK [EM_EXLINEFROMCHAR](/windows/desktop/Controls/em-exlinefromchar) bakın.
+Daha fazla bilgi için Windows SDK [EM_EXLINEFROMCHAR](/windows/win32/Controls/em-exlinefromchar) bakın.
 
 ### <a name="example"></a>Örnek
 
@@ -1354,7 +1354,7 @@ Belirtilen satır numarası, düzenleme denetimindeki satır sayısından daha b
 
 Karakter dizini, zengin düzenleme denetiminin başından belirtilen satıra kadar olan karakter sayısıdır.
 
-Daha fazla bilgi için Windows SDK [EM_LINEINDEX](/windows/desktop/controls/em-lineindex) bakın.
+Daha fazla bilgi için Windows SDK [EM_LINEINDEX](/windows/win32/controls/em-lineindex) bakın.
 
 ### <a name="example"></a>Örnek
 
@@ -1381,7 +1381,7 @@ Birden çok satırlık bir düzenleme denetimi için çağrıldığında, dönü
 
 Bu`CRichEditCtrl` nesne içindeki belirli bir satır numarası için bir karakter dizini almak üzere [lineIndex](#lineindex) üye işlevini kullanın.
 
-Daha fazla bilgi için Windows SDK [EM_LINELENGTH](/windows/desktop/Controls/em-linelength) bakın.
+Daha fazla bilgi için Windows SDK [EM_LINELENGTH](/windows/win32/Controls/em-linelength) bakın.
 
 ### <a name="example"></a>Örnek
 
@@ -1411,7 +1411,7 @@ Düzenleme denetimi, düzenleme denetimindeki metnin son satırını aşan dikey
 
 `LineScroll`, herhangi bir satırın son karakterinin ötesinde yatay olarak kaydırmak için kullanılabilir.
 
-Daha fazla bilgi için Windows SDK [EM_LINESCROLL](/windows/desktop/Controls/em-linescroll) bakın.
+Daha fazla bilgi için Windows SDK [EM_LINESCROLL](/windows/win32/Controls/em-linescroll) bakın.
 
 ### <a name="example"></a>Örnek
 
@@ -1429,7 +1429,7 @@ void Paste();
 
 Veriler yalnızca, pano tarafından tanınan bir biçimde veri içeriyorsa eklenir.
 
-Daha fazla bilgi için Windows SDK [WM_PASTE](/windows/desktop/dataxchg/wm-paste) bakın.
+Daha fazla bilgi için Windows SDK [WM_PASTE](/windows/win32/dataxchg/wm-paste) bakın.
 
 ### <a name="example"></a>Örnek
 
@@ -1461,7 +1461,7 @@ Yapıştırılacak nesnenin ıfer görünümünü içeren meta dosyası için ta
 
 Yeni malzeme ekleme noktasına, giriş işaretinin konumuna eklenir.
 
-Daha fazla bilgi için Windows SDK [EM_PASTESPECIAL](/windows/desktop/Controls/em-pastespecial) bakın.
+Daha fazla bilgi için Windows SDK [EM_PASTESPECIAL](/windows/win32/Controls/em-pastespecial) bakın.
 
 ### <a name="example"></a>Örnek
 
@@ -1486,7 +1486,7 @@ Karakterin konumu (x, y). Tek satırlık bir düzenleme denetimi için y koordin
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için Windows SDK [EM_POSFROMCHAR](/windows/desktop/Controls/em-posfromchar) bakın.
+Daha fazla bilgi için Windows SDK [EM_POSFROMCHAR](/windows/win32/Controls/em-posfromchar) bakın.
 
 ##  <a name="redo"></a>CRichEditCtrl:: Yinele
 
@@ -1502,7 +1502,7 @@ Başarılı olursa sıfır dışı; Aksi takdirde, 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için Windows SDK [EM_REDO](/windows/desktop/Controls/em-redo) bakın.
+Daha fazla bilgi için Windows SDK [EM_REDO](/windows/win32/Controls/em-redo) bakın.
 
 ##  <a name="replacesel"></a>CRichEditCtrl:: ReplaceSel
 
@@ -1530,7 +1530,7 @@ Geçerli seçim yoksa, değiştirme metni ekleme noktasına, diğer bir deyişle
 
 Bu işlev, girilen metni varolan karakter biçimlendirmesiyle biçimlendirir. Tüm metin aralığını (çağrılmadan `SetSel` `ReplaceSel`önce (0,-1) çağırarak) değiştirirken, yeni eklenen metnin Devralındığı önceki paragrafın biçimlendirmesini koruyan bir paragraf sonu karakteri vardır.
 
-Daha fazla bilgi için Windows SDK [EM_REPLACESEL](/windows/desktop/Controls/em-replacesel) bakın.
+Daha fazla bilgi için Windows SDK [EM_REPLACESEL](/windows/win32/Controls/em-replacesel) bakın.
 
 ### <a name="example"></a>Örnek
 
@@ -1548,7 +1548,7 @@ void RequestResize();
 
 Bu işlev, tabansız `CRichEditCtrl` bir nesne için [CWnd:: OnSize](../../mfc/reference/cwnd-class.md#onsize) işleme sırasında faydalıdır.
 
-Daha fazla bilgi için Windows SDK [zengin düzenleme denetimleri hakkında](/windows/desktop/Controls/about-rich-edit-controls) konusunun [EM_REQUESTRESIZE](/windows/desktop/Controls/em-requestresize) Iletisi ve **Bottomless zengin düzenleme denetimleri** bölümüne bakın.
+Daha fazla bilgi için Windows SDK [zengin düzenleme denetimleri hakkında](/windows/win32/Controls/about-rich-edit-controls) konusunun [EM_REQUESTRESIZE](/windows/win32/Controls/em-requestresize) Iletisi ve **Bottomless zengin düzenleme denetimleri** bölümüne bakın.
 
 ##  <a name="setautourldetect"></a>CRichEditCtrl:: SetAutoURLDetect
 
@@ -1569,10 +1569,10 @@ Başarılı olursa sıfır, yoksa sıfır dışında. Örneğin, yetersiz bellek
 
 ### <a name="remarks"></a>Açıklamalar
 
-Etkinleştirilirse, zengin düzenleme denetimi, standart bir URL biçimiyle eşleşip eşleşmediğini anlamak için metni tarar. Bu URL biçimlerinin bir listesi için bkz. [EM_AUTOURLDETECT](/windows/desktop/Controls/em-autourldetect) in Windows SDK.
+Etkinleştirilirse, zengin düzenleme denetimi, standart bir URL biçimiyle eşleşip eşleşmediğini anlamak için metni tarar. Bu URL biçimlerinin bir listesi için bkz. [EM_AUTOURLDETECT](/windows/win32/Controls/em-autourldetect) in Windows SDK.
 
 > [!NOTE]
->  Düzenleme denetiminiz, `SetAutoURLDetect` URL 'lerden farklı metin için CFE_LINK efektini kullanıyorsa true olarak ayarlamayın. `SetAutoURLDetect`URL 'Ler için bu etkiyi sunar ve diğer tüm metinler için devre dışı bırakır. CFE_LINK etkisi hakkında daha fazla bilgi için bkz. [EN_LINK](/windows/desktop/Controls/en-link) .
+>  Düzenleme denetiminiz, `SetAutoURLDetect` URL 'lerden farklı metin için CFE_LINK efektini kullanıyorsa true olarak ayarlamayın. `SetAutoURLDetect`URL 'Ler için bu etkiyi sunar ve diğer tüm metinler için devre dışı bırakır. CFE_LINK etkisi hakkında daha fazla bilgi için bkz. [EN_LINK](/windows/win32/Controls/en-link) .
 
 ##  <a name="setbackgroundcolor"></a>CRichEditCtrl:: SetBackgroundColor
 
@@ -1598,9 +1598,9 @@ Bu `CRichEditCtrl` nesnenin önceki arka plan rengi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Arka plan rengi, sistem değerine veya belirtilen [colorref](/windows/desktop/gdi/colorref) değerine ayarlanabilir.
+Arka plan rengi, sistem değerine veya belirtilen [colorref](/windows/win32/gdi/colorref) değerine ayarlanabilir.
 
-Daha fazla bilgi için Windows SDK [EM_SETBKGNDCOLOR](/windows/desktop/Controls/em-setbkgndcolor) Message and [colorref](/windows/desktop/gdi/colorref) yapısı bölümüne bakın.
+Daha fazla bilgi için Windows SDK [EM_SETBKGNDCOLOR](/windows/win32/Controls/em-setbkgndcolor) Message and [colorref](/windows/win32/gdi/colorref) yapısı bölümüne bakın.
 
 ### <a name="example"></a>Örnek
 
@@ -1618,9 +1618,9 @@ BOOL SetDefaultCharFormat(CHARFORMAT2& cf);
 ### <a name="parameters"></a>Parametreler
 
 *CF*<br/>
-İlk sürümde, yeni varsayılan karakter biçimlendirme özniteliklerini içeren bir [Charformat](/windows/desktop/api/richedit/ns-richedit-_charformat) yapısına yönelik bir işaretçi.
+İlk sürümde, yeni varsayılan karakter biçimlendirme özniteliklerini içeren bir [Charformat](/windows/win32/api/richedit/ns-richedit-_charformat) yapısına yönelik bir işaretçi.
 
-İkinci sürümde, varsayılan karakter biçimlendirme özniteliklerini içeren, [](/windows/desktop/api/richedit/ns-richedit-charformat2a) `CHARFORMAT` yapıya yönelik zengin bir düzenleme 2,0 uzantısı olan CHARFORMAT2 yapısına yönelik bir işaretçi.
+İkinci sürümde, varsayılan karakter biçimlendirme özniteliklerini içeren, [](/windows/win32/api/richedit/ns-richedit-charformat2w) `CHARFORMAT` yapıya yönelik zengin bir düzenleme 2,0 uzantısı olan CHARFORMAT2 yapısına yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1630,7 +1630,7 @@ Başarılı olursa sıfır dışı; Aksi takdirde, 0.
 
 Yalnızca `dwMask` *CF* üyesi tarafından belirtilen öznitelikler bu işlev tarafından değiştirilir.
 
-Daha fazla bilgi için Windows SDK [EM_SETCHARFORMAT](/windows/desktop/Controls/em-setcharformat) iletisine ve `CHARFORMAT` ve `CHARFORMAT2` yapılarına bakın.
+Daha fazla bilgi için Windows SDK [EM_SETCHARFORMAT](/windows/win32/Controls/em-setcharformat) iletisine ve `CHARFORMAT` ve `CHARFORMAT2` yapılarına bakın.
 
 ### <a name="example"></a>Örnek
 
@@ -1657,7 +1657,7 @@ Bu `CRichEditCtrl` nesne için yeni olay maskesi.
 
 Olay maskesi `CRichEditCtrl` nesnenin üst penceresine gönderdiği bildirim iletilerini belirtir.
 
-Daha fazla bilgi için Windows SDK [EM_SETEVENTMASK](/windows/desktop/Controls/em-seteventmask) bakın.
+Daha fazla bilgi için Windows SDK [EM_SETEVENTMASK](/windows/win32/Controls/em-seteventmask) bakın.
 
 ### <a name="example"></a>Örnek
 
@@ -1680,7 +1680,7 @@ DOĞRU değeri, metnin değiştirildiğini ve yanlış değerinin değiştirilme
 
 Değiştirilen bayrak, düzenleme denetimindeki metnin değiştirilip değiştirilmediğini belirtir. Kullanıcı metni her değiştirdiğinde otomatik olarak ayarlanır. Değeri [GetModify](#getmodify) üye işleviyle alınabilir.
 
-Daha fazla bilgi için Windows SDK [EM_SETMODIFY](/windows/desktop/Controls/em-setmodify) bakın.
+Daha fazla bilgi için Windows SDK [EM_SETMODIFY](/windows/win32/Controls/em-setmodify) bakın.
 
 ### <a name="example"></a>Örnek
 
@@ -1697,7 +1697,7 @@ BOOL SetOLECallback(IRichEditOleCallback* pCallback);
 ### <a name="parameters"></a>Parametreler
 
 *pCallback*<br/>
-Bu`CRichEditCtrl` nesnenin OLE ile ilgili kaynakları ve bilgileri almak için kullanacağı bir [IRichEditOleCallback](/windows/desktop/api/richole/nn-richole-iricheditolecallback) nesnesine yönelik işaretçi.
+Bu`CRichEditCtrl` nesnenin OLE ile ilgili kaynakları ve bilgileri almak için kullanacağı bir [IRichEditOleCallback](/windows/win32/api/richole/nn-richole-iricheditolecallback) nesnesine yönelik işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1705,9 +1705,9 @@ Başarılı olursa sıfır dışı; Aksi takdirde, 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu `CRichEditCtrl` nesne, *pCallback*tarafından belirtilen com nesnesinin kullanım sayısını artırmak için [IUnknown:: AddRef](/windows/desktop/api/unknwn/nf-unknwn-iunknown-addref) öğesini çağırır.
+Bu `CRichEditCtrl` nesne, *pCallback*tarafından belirtilen com nesnesinin kullanım sayısını artırmak için [IUnknown:: AddRef](/windows/win32/api/unknwn/nf-unknwn-iunknown-addref) öğesini çağırır.
 
-Daha fazla bilgi için Windows SDK [EM_SETOLECALLBACK](/windows/desktop/Controls/em-setolecallback) Message and [IRichEditOleCallback](/windows/desktop/api/richole/nn-richole-iricheditolecallback) Interface bölümüne bakın.
+Daha fazla bilgi için Windows SDK [EM_SETOLECALLBACK](/windows/win32/Controls/em-setolecallback) Message and [IRichEditOleCallback](/windows/win32/api/richole/nn-richole-iricheditolecallback) Interface bölümüne bakın.
 
 ##  <a name="setoptions"></a>CRichEditCtrl:: SetOptions
 
@@ -1755,7 +1755,7 @@ Seçenekler aşağıdaki değerlerin bir birleşimi olabilir:
 
 - ECO_VERTICAL metin ve nesneleri dikey yönde çizer. Yalnızca Asya dilleri için kullanılabilir.
 
-Daha fazla bilgi için Windows SDK [EM_SETOPTIONS](/windows/desktop/Controls/em-setoptions) bakın.
+Daha fazla bilgi için Windows SDK [EM_SETOPTIONS](/windows/win32/Controls/em-setoptions) bakın.
 
 ### <a name="example"></a>Örnek
 
@@ -1773,9 +1773,9 @@ BOOL SetParaFormat(PARAFORMAT2& pf);
 ### <a name="parameters"></a>Parametreler
 
 *PF*<br/>
-İlk sürümde, yeni varsayılan paragraf biçimlendirme özniteliklerini içeren bir [paraformat](/windows/desktop/api/richedit/ns-richedit-paraformat) yapısına yönelik bir işaretçi.
+İlk sürümde, yeni varsayılan paragraf biçimlendirme özniteliklerini içeren bir [paraformat](/windows/win32/api/richedit/ns-richedit-paraformat) yapısına yönelik bir işaretçi.
 
-İkinci sürümde, `PARAFORMAT` yapıya yönelik zengin bir düzenleme 2,0 uzantısı olan [PARAFORMAT2](/windows/desktop/api/richedit/ns-richedit-paraformat2) yapısına yönelik bir işaretçi, varsayılan karakter biçimlendirme özniteliklerini tutan.
+İkinci sürümde, `PARAFORMAT` yapıya yönelik zengin bir düzenleme 2,0 uzantısı olan [PARAFORMAT2](/windows/win32/api/richedit/ns-richedit-paraformat2) yapısına yönelik bir işaretçi, varsayılan karakter biçimlendirme özniteliklerini tutan.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1785,7 +1785,7 @@ Başarılı olursa sıfır dışı; Aksi takdirde, 0.
 
 Yalnızca `dwMask` *PF* üyesi tarafından belirtilen öznitelikler bu işlev tarafından değiştirilir.
 
-Daha fazla bilgi için Windows SDK [EM_SETPARAFORMAT](/windows/desktop/Controls/em-setparaformat) iletisine ve `PARAFORMAT` ve `PARAFORMAT2` yapılarına bakın.
+Daha fazla bilgi için Windows SDK [EM_SETPARAFORMAT](/windows/win32/Controls/em-setparaformat) iletisine ve `PARAFORMAT` ve `PARAFORMAT2` yapılarına bakın.
 
 ### <a name="example"></a>Örnek
 
@@ -1804,10 +1804,10 @@ BOOL SetPunctuation(
 ### <a name="parameters"></a>Parametreler
 
 *Type*<br/>
-Noktalama işareti bayrağı. Olası değerler listesi için Windows SDK [EM_SETPUNCTUATION](/windows/desktop/Controls/em-setpunctuation) için *ftype* parametresine bakın.
+Noktalama işareti bayrağı. Olası değerler listesi için Windows SDK [EM_SETPUNCTUATION](/windows/win32/Controls/em-setpunctuation) için *ftype* parametresine bakın.
 
 *lpPunc*<br/>
-Windows SDK açıklandığı gibi, [noktalama](/windows/desktop/api/richedit/ns-richedit-punctuation) yapısına yönelik bir işaretçi.
+Windows SDK açıklandığı gibi, [noktalama](/windows/win32/api/richedit/ns-richedit-punctuation) yapısına yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1838,7 +1838,7 @@ Başarılı olursa sıfır dışı; Aksi takdirde, 0.
 
 Bu seçeneğin kısa bir açıklaması için bkz. [SetOptions](#setoptions). Bu `CRichEditCtrl` nesnenin tüm seçeneklerini ayarlamak için bu işlevi kullanabilirsiniz.
 
-Daha fazla bilgi için Windows SDK [EM_SETREADONLY](/windows/desktop/Controls/em-setreadonly) bakın.
+Daha fazla bilgi için Windows SDK [EM_SETREADONLY](/windows/win32/Controls/em-setreadonly) bakın.
 
 ### <a name="example"></a>Örnek
 
@@ -1855,13 +1855,13 @@ void SetRect(LPCRECT lpRect);
 ### <a name="parameters"></a>Parametreler
 
 *lpRect*<br/>
-[](../../atl-mfc-shared/reference/crect-class.md) Biçimlendirme dikdörtgeninin yeni sınırlarını gösteren bir [Rect](/windows/desktop/api/windef/ns-windef-tagrect) veya işaretçi.
+[](../../atl-mfc-shared/reference/crect-class.md) Biçimlendirme dikdörtgeninin yeni sınırlarını gösteren bir [Rect](/windows/win32/api/windef/ns-windef-rect) veya işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Biçimlendirme dikdörtgeni metin için sınırlayıcı dikdörtgendir. Sınırlayan dikdörtgen, zengin düzenleme denetimi penceresinin boyutundan bağımsızdır. Bu `CRichEditCtrl` nesne ilk oluşturulduğunda, biçimlendirme dikdörtgeni pencerenin istemci alanıyla aynı boyutta olur. Biçimlendirme `SetRect` dikdörtgenini zengin düzenleme penceresinden daha büyük veya küçük hale getirmek için kullanın.
 
-Daha fazla bilgi için Windows SDK [EM_SETRECT](/windows/desktop/Controls/em-setrect) bakın.
+Daha fazla bilgi için Windows SDK [EM_SETRECT](/windows/win32/Controls/em-setrect) bakın.
 
 ### <a name="example"></a>Örnek
 
@@ -1888,7 +1888,7 @@ Seçimin ilk karakterinin sıfır tabanlı dizini.
 Seçimin son karakterinin sıfır tabanlı dizini.
 
 *Return*<br/>
-Geçerli seçimin sınırlarını tutan [charrange](/windows/desktop/api/richedit/ns-richedit-charrange) yapısı.
+Geçerli seçimin sınırlarını tutan [charrange](/windows/win32/api/richedit/ns-richedit-charrange) yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1902,7 +1902,7 @@ Giriş işareti, Başlangıç`cpMin` (veya *nStartChar*) ve End (`cpMax` veya *n
 
 Bu `CRichEditCtrl` nesnedeki tüm metni seçmek için, 0 başlangıç diziniyle `SetSel` ve-1 ' in bir bitiş diziniyle çağırın.
 
-Daha fazla bilgi için Windows SDK [EM_EXSETSEL](/windows/desktop/Controls/em-exsetsel) Message and [charrange](/windows/desktop/api/richedit/ns-richedit-charrange) yapısı bölümüne bakın.
+Daha fazla bilgi için Windows SDK [EM_EXSETSEL](/windows/win32/Controls/em-exsetsel) Message and [charrange](/windows/win32/api/richedit/ns-richedit-charrange) yapısı bölümüne bakın.
 
 ### <a name="example"></a>Örnek
 
@@ -1920,9 +1920,9 @@ BOOL SetSelectionCharFormat(CHARFORMAT2& cf);
 ### <a name="parameters"></a>Parametreler
 
 *CF*<br/>
-İlk sürümde, geçerli seçim için yeni karakter biçimlendirme özniteliklerini içeren bir [Charformat](/windows/desktop/api/richedit/ns-richedit-_charformat) yapısına yönelik bir işaretçi.
+İlk sürümde, geçerli seçim için yeni karakter biçimlendirme özniteliklerini içeren bir [Charformat](/windows/win32/api/richedit/ns-richedit-_charformat) yapısına yönelik bir işaretçi.
 
-İkinci sürümde, geçerli seçim için yeni karakter biçimlendirme [](/windows/desktop/api/richedit/ns-richedit-charformat2a) özniteliklerini içeren, `CHARFORMAT` yapıya yönelik zengin bir düzenleme 2,0 uzantısı olan CHARFORMAT2 yapısına yönelik bir işaretçi.
+İkinci sürümde, geçerli seçim için yeni karakter biçimlendirme [](/windows/win32/api/richedit/ns-richedit-charformat2w) özniteliklerini içeren, `CHARFORMAT` yapıya yönelik zengin bir düzenleme 2,0 uzantısı olan CHARFORMAT2 yapısına yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1932,7 +1932,7 @@ Başarılı olursa sıfır dışı; Aksi takdirde, 0.
 
 Yalnızca `dwMask` *CF* üyesi tarafından belirtilen öznitelikler bu işlev tarafından değiştirilir.
 
-Daha fazla bilgi için Windows SDK [EM_SETCHARFORMAT](/windows/desktop/Controls/em-setcharformat) ve `CHARFORMAT` `CHARFORMAT2` yapılarına bakın.
+Daha fazla bilgi için Windows SDK [EM_SETCHARFORMAT](/windows/win32/Controls/em-setcharformat) ve `CHARFORMAT` `CHARFORMAT2` yapılarına bakın.
 
 ### <a name="example"></a>Örnek
 
@@ -1971,7 +1971,7 @@ Başarılı olursa sıfır dışı; Aksi takdirde, 0.
 
 Bu işlev başarılı olursa, zengin düzenleme denetimi bir parametre olarak geçirilmiş cihaz bağlamına sahiptir. Bu durumda, çağırma işlevi cihaz bağlamını yok etmez.
 
-Daha fazla bilgi için Windows SDK [EM_SETTARGETDEVICE](/windows/desktop/Controls/em-settargetdevice) bakın.
+Daha fazla bilgi için Windows SDK [EM_SETTARGETDEVICE](/windows/win32/Controls/em-settargetdevice) bakın.
 
 ### <a name="example"></a>Örnek
 
@@ -1988,7 +1988,7 @@ BOOL SetTextMode(UINT fMode);
 ### <a name="parameters"></a>Parametreler
 
 *fMode*<br/>
-Denetimin metin modunun ve geri alma düzeyi parametrelerinin yeni ayarlarını belirtir. Olası değerlerin bir listesi için, Windows SDK [EM_SETTEXTMODE](/windows/desktop/Controls/em-settextmode) için Mode parametresine bakın.
+Denetimin metin modunun ve geri alma düzeyi parametrelerinin yeni ayarlarını belirtir. Olası değerlerin bir listesi için, Windows SDK [EM_SETTEXTMODE](/windows/win32/Controls/em-settextmode) için Mode parametresine bakın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1998,7 +1998,7 @@ Başarılı olursa sıfır, yoksa sıfır dışında.
 
 Metin modlarının açıklaması için Windows SDK EM_SETTEXTMODE bakın.
 
-Denetimin metin içermesi durumunda bu üye işlevi başarısız olur. Denetimin boş olduğundan emin olmak için boş bir dize içeren bir [wm_settext](/windows/desktop/winmsg/wm-settext) iletisi gönderin.
+Denetimin metin içermesi durumunda bu üye işlevi başarısız olur. Denetimin boş olduğundan emin olmak için boş bir dize içeren bir [wm_settext](/windows/win32/winmsg/wm-settext) iletisi gönderin.
 
 ##  <a name="setundolimit"></a>CRichEditCtrl:: SetUndoLimit
 
@@ -2033,9 +2033,9 @@ BOOL SetWordCharFormat(CHARFORMAT2& cf);
 ### <a name="parameters"></a>Parametreler
 
 *CF*<br/>
-İlk sürümde, şu anda seçili olan sözcüğün yeni karakter biçimlendirme özniteliklerini içeren bir [Charformat](/windows/desktop/api/richedit/ns-richedit-_charformat) yapısına yönelik bir işaretçi.
+İlk sürümde, şu anda seçili olan sözcüğün yeni karakter biçimlendirme özniteliklerini içeren bir [Charformat](/windows/win32/api/richedit/ns-richedit-_charformat) yapısına yönelik bir işaretçi.
 
-İkinci sürümde, şu anda seçili olan sözcüğe yönelik [](/windows/desktop/api/richedit/ns-richedit-charformat2a) yeni karakter biçimlendirme özniteliklerini içeren, `CHARFORMAT` yapıya yönelik zengin bir düzenleme 2,0 uzantısı olan CHARFORMAT2 yapısına yönelik bir işaretçi.
+İkinci sürümde, şu anda seçili olan sözcüğe yönelik [](/windows/win32/api/richedit/ns-richedit-charformat2w) yeni karakter biçimlendirme özniteliklerini içeren, `CHARFORMAT` yapıya yönelik zengin bir düzenleme 2,0 uzantısı olan CHARFORMAT2 yapısına yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -2045,7 +2045,7 @@ Başarılı olursa sıfır dışı; Aksi takdirde, 0.
 
 Yalnızca `dwMask` *CF* üyesi tarafından belirtilen öznitelikler bu işlev tarafından değiştirilir.
 
-Daha fazla bilgi için Windows SDK [EM_SETCHARFORMAT](/windows/desktop/Controls/em-setcharformat) iletisine ve `CHARFORMAT` ve `CHARFORMAT2` yapılarına bakın.
+Daha fazla bilgi için Windows SDK [EM_SETCHARFORMAT](/windows/win32/Controls/em-setcharformat) iletisine ve `CHARFORMAT` ve `CHARFORMAT2` yapılarına bakın.
 
 ### <a name="example"></a>Örnek
 
@@ -2062,7 +2062,7 @@ UINT SetWordWrapMode(UINT uFlags) const;
 ### <a name="parameters"></a>Parametreler
 
 *uFlags*<br/>
-Sözcük kaydırma ve sözcük bölme için ayarlanacak seçenekler. Olası seçeneklerin bir listesi için bkz. [EM_SETWORDWRAPMODE](/windows/desktop/Controls/em-setwordwrapmode) in Windows SDK.
+Sözcük kaydırma ve sözcük bölme için ayarlanacak seçenekler. Olası seçeneklerin bir listesi için bkz. [EM_SETWORDWRAPMODE](/windows/win32/Controls/em-setwordwrapmode) in Windows SDK.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -2084,7 +2084,7 @@ void StopGroupTyping();
 
 Denetim, bir sonraki yazma eylemini, varsa geri alma sırasındaki yeni bir eyleme depolar.
 
-Daha fazla bilgi için Windows SDK [EM_STOPGROUPTYPING](/windows/desktop/Controls/em-stopgrouptyping) bakın.
+Daha fazla bilgi için Windows SDK [EM_STOPGROUPTYPING](/windows/win32/Controls/em-stopgrouptyping) bakın.
 
 ##  <a name="streamin"></a>CRichEditCtrl:: StreamIn
 
@@ -2102,7 +2102,7 @@ long StreamIn(
 Giriş verisi biçimlerini belirten bayraklar. Daha fazla bilgi için Açıklamalar bölümüne bakın.
 
 *es*<br/>
-Giriş akışını belirten [editstream](/windows/desktop/api/richedit/ns-richedit-editstream) yapısı. Daha fazla bilgi için Açıklamalar bölümüne bakın.
+Giriş akışını belirten [editstream](/windows/win32/api/richedit/ns-richedit-editstream) yapısı. Daha fazla bilgi için Açıklamalar bölümüne bakın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -2120,7 +2120,7 @@ Bu değerlerden herhangi biri, SFF_SELECTION ile birleştirilebilir. SFF_SELECTI
 
 Parametre es 'de, bir arabelleği metinle dolduran bir geri çağırma işlevi belirtirsiniz. `EDITSTREAM` Bu geri çağırma işlevi, giriş akışı tükenene kadar sürekli olarak çağrılır.
 
-Daha fazla bilgi için Windows SDK [EM_STREAMIN](/windows/desktop/Controls/em-streamin) Message and [editstream](/windows/desktop/api/richedit/ns-richedit-editstream) yapısına bakın.
+Daha fazla bilgi için Windows SDK [EM_STREAMIN](/windows/win32/Controls/em-streamin) Message and [editstream](/windows/win32/api/richedit/ns-richedit-editstream) yapısına bakın.
 
 ### <a name="example"></a>Örnek
 
@@ -2144,7 +2144,7 @@ long StreamOut(
 Çıkış verisi biçimlerini belirten bayraklar. Daha fazla bilgi için Açıklamalar bölümüne bakın.
 
 *es*<br/>
-Çıktı akışını belirten [Editstream](/windows/desktop/api/richedit/ns-richedit-editstream) yapısı. Daha fazla bilgi için Açıklamalar bölümüne bakın.
+Çıktı akışını belirten [Editstream](/windows/win32/api/richedit/ns-richedit-editstream) yapısı. Daha fazla bilgi için Açıklamalar bölümüne bakın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -2166,7 +2166,7 @@ Bu değerlerden herhangi biri, SFF_SELECTION ile birleştirilebilir. SFF_SELECTI
 
 Parametre es 'de, bir arabelleği metinle dolduran bir geri çağırma işlevi belirtirsiniz. `EDITSTREAM` Bu geri çağırma işlevi, çıkış akışı tükenene kadar sürekli olarak çağrılır.
 
-Daha fazla bilgi için Windows SDK [EM_STREAMOUT](/windows/desktop/Controls/em-streamout) Message and [editstream](/windows/desktop/api/richedit/ns-richedit-editstream) yapısına bakın.
+Daha fazla bilgi için Windows SDK [EM_STREAMOUT](/windows/win32/Controls/em-streamout) Message and [editstream](/windows/win32/api/richedit/ns-richedit-editstream) yapısına bakın.
 
 ### <a name="example"></a>Örnek
 
@@ -2190,7 +2190,7 @@ Geri alma işlemi başarılı olursa sıfır dışı; Aksi takdirde, 0.
 
 Geri alma işlemi de geri alınabilir. Örneğin, silinen metni ilk çağrısıyla `Undo`birlikte geri yükleyebilirsiniz. Aradaki düzenleme işlemi olmadığı sürece, ikinci bir çağrısıyla `Undo`metni yeniden kaldırabilirsiniz.
 
-Daha fazla bilgi için Windows SDK [EM_UNDO](/windows/desktop/Controls/em-undo) bakın.
+Daha fazla bilgi için Windows SDK [EM_UNDO](/windows/win32/Controls/em-undo) bakın.
 
 ### <a name="example"></a>Örnek
 

@@ -7,27 +7,27 @@ f1_keywords:
 helpviewer_keywords:
 - OLE initialization
 ms.assetid: aa8a54a7-24c3-4344-b2c6-dbcf6084fa31
-ms.openlocfilehash: 3d49b37ffc2561fa9a51463a893ec2ba4f4fb725
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6860697dd3adbe26197dd9075e84f402029e00a5
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62310287"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69502017"
 ---
 # <a name="ole-initialization"></a>OLE Başlatma
 
-Uygulamanın OLE sistem hizmetlerini kullanmadan önce OLE sistem DLL'lerini Başlat ve DLL'leri doğru sürüm olduğundan emin olun. `AfxOleInit` İşlevi OLE sistem DLL'lerini başlatır.
+Bir uygulamanın OLE sistem hizmetlerini kullanabilmesi için, OLE sistem dll 'Lerini başlatması ve DLL 'Lerin doğru sürüm olduğunu doğrulaması gerekir. `AfxOleInit` İşlevi OLE sistem dll 'lerini başlatır.
 
 ### <a name="ole-initialization"></a>OLE Başlatma
 
 |||
 |-|-|
-|[Afxoleınit](#afxoleinit)|OLE kitaplıklarının başlatır.|
-|[AfxEnableControlContainer](#afxenablecontrolcontainer)|Uygulama nesnenizin içinde bu işlevi çağırın `InitInstance` kapsama OLE denetimlerinin desteğini etkinleştirmek için işlevi.|
+|[AfxOleInit](#afxoleinit)|OLE kitaplıklarını başlatır.|
+|[AfxEnableControlContainer](#afxenablecontrolcontainer)|OLE denetimlerinin kapsama desteğini etkinleştirmek için uygulama nesnenizin `InitInstance` işlevinde bu işlevi çağırın.|
 
-## <a name="afxenablecontrolcontainer"></a> AfxEnableControlContainer
+## <a name="afxenablecontrolcontainer"></a>AfxEnableControlContainer
 
-Uygulama nesnenizin içinde bu işlevi çağırın `InitInstance` kapsama OLE denetimlerinin desteğini etkinleştirmek için işlevi.
+OLE denetimlerinin kapsama desteğini etkinleştirmek için uygulama nesnenizin `InitInstance` işlevinde bu işlevi çağırın.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -37,15 +37,15 @@ void AfxEnableControlContainer( );
 
 ### <a name="remarks"></a>Açıklamalar
 
-OLE denetimleri (artık ActiveX denetimleri olarak da bilinir) hakkında daha fazla bilgi için bkz: [ActiveX denetimi konuları](../mfc-activex-controls.md).
+OLE denetimleri hakkında daha fazla bilgi için (artık ActiveX denetimleri olarak adlandırılır) bkz. [ActiveX denetimi konuları](../mfc-activex-controls.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxdisp.h
+**Üstbilgi:** AfxDisp. h
 
-##  <a name="afxoleinit"></a>  Afxoleınit
+##  <a name="afxoleinit"></a>AfxOleInit
 
-OLE desteği için uygulamayı başlatır.
+Uygulama için OLE desteğini başlatır.
 
 ```
 BOOL AFXAPI AfxOleInit();
@@ -53,26 +53,26 @@ BOOL AFXAPI AfxOleInit();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır dışı; 0 OLE sistem DLL'leri yanlış sürümlerinin yüklü olduğunu başlatma, büyük olasılıkla başarısız olur.
+Başarılı olursa sıfır dışı; 0 başlatması başarısız olursa, büyük olasılıkla OLE sistem dll 'Lerinin yanlış sürümleri yüklü.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir MFC uygulaması OLE desteği başlatmak için bu işlevi çağırın. Bu işlev çağrıldığında aşağıdaki eylemler gerçekleşir:
+MFC uygulaması için OLE desteğini başlatmak üzere bu işlevi çağırın. Bu işlev çağrıldığında, aşağıdaki eylemler gerçekleşir:
 
-- Çağıran uygulamanın geçerli Grup COM kitaplık başlatır. Daha fazla bilgi için [OleInitialize](/windows/desktop/api/ole2/nf-ole2-oleinitialize).
+- Çağıran uygulamanın geçerli grubu üzerinde COM kitaplığını başlatır. Daha fazla bilgi için bkz. [OleInitialize](/windows/win32/api/ole2/nf-ole2-oleinitialize).
 
-- Bir ileti filtresi oluşturur, uygulama [ı](/windows/desktop/api/objidl/nn-objidl-imessagefilter) arabirimi. Bu ileti filtresi çağrısı ile erişilebilir [AfxOleGetMessageFilter](application-control.md#afxolegetmessagefilter).
-
-> [!NOTE]
->  Varsa **Afxoleınit** çağrılır bir MFC DLL dosyasından çağrı başarısız olur. Bir DLL dosyasından çağrılırsa, OLE sistem daha önce çağıran uygulama tarafından başlatıldı, işlev varsayar hata oluşur.
+- [IMessageFilter](/windows/win32/api/objidl/nn-objidl-imessagefilter) arabirimini uygulayarak bir ileti filtresi nesnesi oluşturur. Bu ileti filtresi, [AfxOleGetMessageFilter](application-control.md#afxolegetmessagefilter)çağrısıyla erişilebilir.
 
 > [!NOTE]
->  MFC uygulamaları tek iş parçacıklı grup (STA) başlatılması gerekir. Eğer [CoInitializeEx](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializeex) içinde `InitInstance` geçersiz kılmak, COINIT_APARTMENTTHREADED (COINIT_MULTITHREADED yerine) belirtin.
+>  Bir MFC DLL 'den **AfxOleInit** çağrılırsa, çağrı başarısız olur. Hata oluşur çünkü işlev DLL 'den çağrılırsa OLE sisteminin daha önce çağıran uygulama tarafından başlatılmış olduğunu varsaymaktadır.
+
+> [!NOTE]
+>  MFC uygulamalarının tek iş parçacıklı grup (STA) olarak başlatılması gerekir. `InitInstance` Geçersiz kılmada [CoInitializeEx](/windows/win32/api/combaseapi/nf-combaseapi-coinitializeex) öğesini çağırırsanız, COINIT_APARTMENTTHREADED (COINIT_MULTITHREADED yerine) belirtin.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxdisp.h
+**Üstbilgi:** AfxDisp. h
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Makroları ve genel öğeleri](../../mfc/reference/mfc-macros-and-globals.md)
+[Makrolar ve genel öğeler](../../mfc/reference/mfc-macros-and-globals.md)

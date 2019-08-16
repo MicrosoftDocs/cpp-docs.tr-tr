@@ -11,21 +11,21 @@ f1_keywords:
 helpviewer_keywords:
 - Resources property pages
 ms.assetid: dade2f6b-c51f-4c33-9023-41956ae4b5f6
-ms.openlocfilehash: 40852170d7b73016659af28a4667811ba8ef0a83
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 29d34faa83947dd5456a86df37794d115e9f0037
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62318790"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69498206"
 ---
 # <a name="resources-property-pages"></a>Kaynaklar Özellik Sayfaları
 
-Kaynak derleyicisi kullanarak daha fazla bilgi için bkz: [RC kullanma (RC komut satırı)](/windows/desktop/menurc/using-rc-the-rc-command-line-).
+Kaynak derleyicisini kullanma hakkında daha fazla bilgi için bkz. [RC (rc komut satırı) kullanma](/windows/win32/menurc/using-rc-the-rc-command-line-).
 
-Erişim hakkında daha fazla bilgi için **kaynakları** özellik sayfalarına bakın [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+**Kaynak** özelliği sayfalarına erişme hakkında daha fazla bilgi için bkz. [Visual Studio C++ 'Da derleyici ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-Bu özelliklere program aracılığıyla erişmek için bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCResourceCompilerTool>.
+Bu özelliklere programlı bir şekilde erişmek için <xref:Microsoft.VisualStudio.VCProjectEngine.VCResourceCompilerTool>bkz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ projesi özellik Sayfa başvurusu](property-pages-visual-cpp.md)
+[C++Proje özellik sayfası başvurusu](property-pages-visual-cpp.md)

@@ -1,21 +1,21 @@
 ---
-title: Kaynak (C++ COM özniteliği)
+title: Kaynak (C++ com özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.source
 helpviewer_keywords:
 - source attribute
 ms.assetid: 1878d05d-7709-4e97-b114-c62f38f5140e
-ms.openlocfilehash: 699ea64de49a4383bc8fb62b2f3b2133d7c496c9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 79614a345e6c07b03df351da93a847fe12e4b110
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62407191"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69514029"
 ---
 # <a name="source-c"></a>kaynak (C++)
 
-Sınıfta, COM nesnesinin kaynak arabirimleri için bağlantı noktalarını belirtir. Özellik veya yöntem üyesi bir nesne veya bir olay kaynağı olan Değişken döndürür gösterir.
+Bir sınıfında, bağlantı noktaları için COM nesnesinin kaynak arabirimlerini belirtir. Bir özellik veya yöntemde, üyenin bir olay kaynağı olan bir nesne veya DEĞIŞKEN döndürdüğünü gösterir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -25,14 +25,14 @@ Sınıfta, COM nesnesinin kaynak arabirimleri için bağlantı noktalarını bel
 
 ### <a name="parameters"></a>Parametreler
 
-*Arabirimleri*<br/>
-Kaynak uyguladığınızda belirttiğiniz bir veya daha fazla arabirim bir sınıfa öznitelik. Kaynak bir özellik veya yöntem uygulandığında, bu parametre kullanılmaz.
+*arabirimlerdeki*<br/>
+Bir sınıfa kaynak özniteliği uyguladığınızda belirttiğiniz bir veya daha fazla arabirim. Bu parametre, kaynak bir özelliğe veya yönteme uygulandığında kullanılmaz.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Kaynak** C++ özniteliği ile aynı işlevlere sahip [kaynak](/windows/desktop/Midl/source) MIDL özniteliği.
+**Kaynak** C++ öznitelik, [kaynak](/windows/win32/Midl/source) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
 
-Kullanabileceğiniz [varsayılan](default-cpp.md) nesnenin varsayılan kaynak arabirimi belirtmek için özniteliği.
+Bir nesnenin varsayılan kaynak arabirimini belirtmek için [varsayılan](default-cpp.md) özniteliğini kullanabilirsiniz.
 
 ## <a name="example"></a>Örnek
 
@@ -74,12 +74,12 @@ class NN : public b
 
 |||
 |-|-|
-|**İçin geçerlidir**|**sınıf**, **yapı**, **arabirimi**|
+|**Uygulama hedefi**|**sınıf**, **Yapı**, **arabirim**|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|`coclass` (sınıf veya yapı için uygulandığında)|
+|**Gerekli öznitelikler**|`coclass`(sınıfa veya yapıya uygulandığında)|
 |**Geçersiz öznitelikler**|Yok.|
 
-Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
+Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

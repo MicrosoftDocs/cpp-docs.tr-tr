@@ -6,16 +6,16 @@ helpviewer_keywords:
 - maps, property
 - property maps
 ms.assetid: 44abde56-90ad-4612-854e-d2fa5426fa80
-ms.openlocfilehash: 9df98dc85c9242693319542cea0730341d87a052
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 79a65290c24ab016d9f81b54b9b7720d5c4ff352
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62284039"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69501288"
 ---
 # <a name="property-maps"></a>Özellik Eşlemeleri
 
-Oturum, satır kümesi ve isteğe bağlı komut nesnesi ile her bir sağlayıcı bir veya daha fazla özelliklerini destekler. Bu özellikler tarafından oluşturulan üstbilgi dosyalarında depolanan özellik eşlemeleri tanımlanır **OLE DB sağlayıcısı Sihirbazı**. Her başlık dosyası, nesne veya bu dosyada tanımlanan nesneler için tanımlanan OLE DB özellik grubu özellikleri için bir harita içerir. Veri kaynağı nesnesi içeren üst bilgi dosyası için özellik eşlemesi de içeren [veri kaynağı özellikleri](https://msdn.microsoft.com/library/ms724188). `Session.h` özellik eşlemesi için içerir [oturum özellikleri](/previous-versions/windows/desktop/ms714221(v=vs.85)). Adlı bir tek üstbilgi dosyasında satır kümesi ve komut nesnelerdir *projectname*RS.h. Bu özellikler üyeleri [satır kümesi özellikleri](/previous-versions/windows/desktop/ms711252(v=vs.85)) grubu.
+Oturum, satır kümesi ve isteğe bağlı komut nesnesiyle, her sağlayıcı bir veya daha fazla özelliği destekler. Bu özellikler, **OLE DB sağlayıcı Sihirbazı**tarafından oluşturulan başlık dosyalarında depolanan Özellik eşlemelerinde tanımlanmıştır. Her üstbilgi dosyası, bu dosyada tanımlanan nesne veya nesneler için tanımlanan OLE DB özellik grubundaki özellikler için bir harita içerir. Veri kaynağı nesnesini içeren üstbilgi dosyası, [DataSource özellikleri](/previous-versions/windows/desktop/ms724188(v=vs.85))için özellik eşlemesini de içerir. `Session.h`[oturum özellikleri](/previous-versions/windows/desktop/ms714221(v=vs.85))için özellik eşlemesini içerir. Satır kümesi ve komut nesneleri, *ProjectName*RS. h adlı tek bir üst bilgi dosyasında bulunur. Bu özellikler, [satır kümesi özellikleri](/previous-versions/windows/desktop/ms711252(v=vs.85)) grubunun üyeleridir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

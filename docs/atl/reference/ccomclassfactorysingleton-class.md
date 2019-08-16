@@ -1,5 +1,5 @@
 ---
-title: CComClassFactorySingleton Class
+title: CComClassFactorySingleton sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CComClassFactorySingleton
@@ -9,19 +9,19 @@ f1_keywords:
 helpviewer_keywords:
 - CComClassFactorySingleton class
 ms.assetid: debb983c-382b-487b-8d42-7ea26dc158b8
-ms.openlocfilehash: c415da15341f7800a706379d991cb753f5991170
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: 71705d02140f0392a9ce023c64e7b4125c14443f
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65221167"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69497398"
 ---
-# <a name="ccomclassfactorysingleton-class"></a>CComClassFactorySingleton Class
+# <a name="ccomclassfactorysingleton-class"></a>CComClassFactorySingleton sınıfı
 
-Bu sınıfın türetildiği [CComClassFactory](../../atl/reference/ccomclassfactory-class.md) ve kullandığı [CComObjectGlobal](../../atl/reference/ccomobjectglobal-class.md) tek bir nesne oluşturmak için.
+Bu sınıf [CComClassFactory](../../atl/reference/ccomclassfactory-class.md) 'den türetilir ve tek bir nesne oluşturmak Için [CComObjectGlobal](../../atl/reference/ccomobjectglobal-class.md) kullanır.
 
 > [!IMPORTANT]
->  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.
+>  Bu sınıf ve üyeleri Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -32,10 +32,10 @@ class CComClassFactorySingleton : public CComClassFactory
 
 #### <a name="parameters"></a>Parametreler
 
-*T*<br/>
-Sınıfınıza.
+*ŞI*<br/>
+Sınıfınız.
 
-`CComClassFactorySingleton` öğesinden türetilen [CComClassFactory](../../atl/reference/ccomclassfactory-class.md) ve kullandığı [CComObjectGlobal](../../atl/reference/ccomobjectglobal-class.md) tek bir nesne oluşturmak için. Her çağrı `CreateInstance` yöntemi yalnızca bu nesne bir arabirim işaretçisi için sorgular.
+`CComClassFactorySingleton`[CComClassFactory](../../atl/reference/ccomclassfactory-class.md) 'den türetilir ve tek bir nesne oluşturmak Için [CComObjectGlobal](../../atl/reference/ccomobjectglobal-class.md) kullanır. `CreateInstance` Yöntemine yapılan her çağrı yalnızca bir arabirim işaretçisi için bu nesneyi sorgular.
 
 ## <a name="members"></a>Üyeler
 
@@ -43,17 +43,17 @@ Sınıfınıza.
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CComClassFactorySingleton::CreateInstance](#createinstance)|Sorguları `m_spObj` için bir arabirim işaretçisi.|
+|[CComClassFactorySingleton:: CreateInstance](#createinstance)|Arabirim `m_spObj` işaretçisi için sorgular.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CComClassFactorySingleton::m_spObj](#m_spobj)|[CComObjectGlobal](../../atl/reference/ccomobjectglobal-class.md) tarafından oluşturulan nesne `CComClassFactorySingleton`.|
+|[CComClassFactorySingleton:: m_spObj](#m_spobj)|Tarafından`CComClassFactorySingleton`oluşturulan [CComObjectGlobal](../../atl/reference/ccomobjectglobal-class.md) nesnesi.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-ATL nesneleri normalde türetilen bir sınıf üreteci almak [CComCoClass](../../atl/reference/ccomcoclass-class.md). Bu sınıf makro içerir [DECLARE_CLASSFACTORY](aggregation-and-class-factory-macros.md#declare_classfactory), hangi bildirir `CComClassFactory` olarak varsayılan sınıf üreteci. Kullanılacak `CComClassFactorySingleton`, belirtin [DECLARE_CLASSFACTORY_SINGLETON](aggregation-and-class-factory-macros.md#declare_classfactory_singleton) makrosu, nesnenin sınıf tanımında. Örneğin:
+ATL nesneleri, normal olarak [CComCoClass](../../atl/reference/ccomcoclass-class.md)'tan türeterek bir sınıf fabrikası elde ettiliyor. Bu sınıf, varsayılan sınıf [](aggregation-and-class-factory-macros.md#declare_classfactory)fabrikası olarak bildiren `CComClassFactory` DECLARE_CLASSFACTORY makrosunu içerir. Kullanmak `CComClassFactorySingleton`için, nesnenizin sınıf tanımında [DECLARE_CLASSFACTORY_SINGLETON](aggregation-and-class-factory-macros.md#declare_classfactory_singleton) makrosunu belirtin. Örneğin:
 
 [!code-cpp[NVC_ATL_COM#10](../../atl/codesnippet/cpp/ccomclassfactorysingleton-class_1.h)]
 
@@ -71,11 +71,11 @@ ATL nesneleri normalde türetilen bir sınıf üreteci almak [CComCoClass](../..
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlcom.h
+**Üstbilgi:** atlcom. h
 
-##  <a name="createinstance"></a>  CComClassFactorySingleton::CreateInstance
+##  <a name="createinstance"></a>CComClassFactorySingleton:: CreateInstance
 
-Çağrıları `QueryInterface` aracılığıyla [m_spObj](#m_spobj) bir arabirim işaretçisini almak için.
+M_spObj `QueryInterface` aracılığıyla [](#m_spobj) bir arabirim işaretçisi almak için çağırır.
 
 ```
 STDMETHOD(CreateInstance)(LPUNKNOWN pUnkOuter, REFIID riid, void** ppvObj);
@@ -84,21 +84,21 @@ STDMETHOD(CreateInstance)(LPUNKNOWN pUnkOuter, REFIID riid, void** ppvObj);
 ### <a name="parameters"></a>Parametreler
 
 *pUnkOuter*<br/>
-[in] Nesne bir toplamanın parçası olarak ardından oluşturuluyorsa *pUnkOuter* dış bilinmeyen olması gerekir. Aksi takdirde, *pUnkOuter* NULL olmalıdır.
+'ndaki Nesne bir toplamanın parçası olarak oluşturulduysa, *pUnkOuter* , bilinmeyen dıştaki olmalıdır. Aksi halde, *pUnkOuter* null olmalıdır.
 
-*riid*<br/>
-[in] İstenen arabirim Laboratuvardaki. Varsa *pUnkOuter* kullanmaktan, *riid* olmalıdır `IID_IUnknown`.
+*riıd*<br/>
+'ndaki İstenen arabirimin IID 'si. *PUnkOuter* null değilse, *riıd* olmalıdır `IID_IUnknown`.
 
 *ppvObj*<br/>
-[out] Tarafından tanımlanan bir arabirim işaretçisi için bir işaretçi *riid*. Nesne bu arabirimi desteklemiyorsa *ppvObj* NULL olarak ayarlandı.
+dışı *Riıd*tarafından tanımlanan arabirim işaretçisine yönelik bir işaretçi. Nesne bu arabirimi desteklemiyorsa, *ppvObj* null olarak ayarlanır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT değerini.
+Standart bir HRESULT değeri.
 
-##  <a name="m_spobj"></a>  CComClassFactorySingleton::m_spObj
+##  <a name="m_spobj"></a>CComClassFactorySingleton:: m_spObj
 
-[CComObjectGlobal](../../atl/reference/ccomobjectglobal-class.md) tarafından oluşturulan nesne `CComClassFactorySingleton`.
+Tarafından`CComClassFactorySingleton`oluşturulan [CComObjectGlobal](../../atl/reference/ccomobjectglobal-class.md) nesnesi.
 
 ```
 CComPtr<IUnknown> m_spObj;
@@ -106,15 +106,15 @@ CComPtr<IUnknown> m_spObj;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Her çağrı [CreateInstance](#createinstance) yöntemi yalnızca bu nesne bir arabirim işaretçisi için sorgular.
+[CreateInstance](#createinstance) yöntemine yapılan her çağrı yalnızca bir arabirim işaretçisi için bu nesneyi sorgular.
 
-Unutmayın, geçerli form `m_spObj` sunan bir arabirimden değişiklik, `CComClassFactorySingleton` ATL önceki sürümlerinde çalışan Önceki sürümlerde `CComClassFactorySingleton` nesnenin oluşturulduğu sınıf üreteci ile aynı zamanda sunucu başlatma sırasında. Görselde C++.NET 2003 ve sonraki nesne oluşturulur gevşek, ilk isteği. Bu değişiklik, üzerinde erken başlatma kullanan programlar hatalara yol açabilir.
+Geçerli formun `m_spObj` , ATL 'nin önceki sürümlerinde çalışma yoluyla bir son değişiklik olduğunu `CComClassFactorySingleton` unutmayın. Önceki sürümlerde `CComClassFactorySingleton` nesne, sunucu başlatma sırasında sınıf fabrikası ile aynı zamanda oluşturulmuştur. Visual C++.NET 2003 ve sonraki sürümlerde, nesne geç, ilk istekte oluşturulur. Bu değişiklik, erken başlatmaya dayalı programlarda hatalara neden olabilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[IClassFactory](/windows/desktop/api/unknwnbase/nn-unknwnbase-iclassfactory)<br/>
+[IClassFactory](/windows/win32/api/unknwnbase/nn-unknwnbase-iclassfactory)<br/>
 [CComClassFactory2 Sınıfı](../../atl/reference/ccomclassfactory2-class.md)<br/>
 [CComClassFactoryAutoThread Sınıfı](../../atl/reference/ccomclassfactoryautothread-class.md)<br/>
 [CComObjectRootEx Sınıfı](../../atl/reference/ccomobjectrootex-class.md)<br/>
 [CComGlobalsThreadModel](atl-typedefs.md#ccomglobalsthreadmodel)<br/>
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)
+[Sınıfa genel bakış](../../atl/atl-class-overview.md)

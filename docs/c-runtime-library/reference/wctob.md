@@ -23,16 +23,16 @@ helpviewer_keywords:
 - wctob function
 - characters, converting
 ms.assetid: 46aec98b-c2f2-4e9d-9d89-7db99ba8a9a6
-ms.openlocfilehash: 1d9dca16ca905afbc94d912a8083017ba9cc84e6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9c977bc204f4c9428a4aae09300269b1ed82d53e
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62188538"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69498963"
 ---
 # <a name="wctob"></a>wctob
 
-Bir geniş karakter karşılık gelen çok baytlı bir karakter ve çok baytlı karakterin gösterimine döndürür belirler.
+Geniş bir karakterin çok baytlı bir karaktere karşılık geldiğini ve çok baytlı karakter gösterimini döndürüp döndürmeyeceğini belirler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -45,29 +45,29 @@ int wctob(
 ### <a name="parameters"></a>Parametreler
 
 *wchar*<br/>
-Çevrilecek değeri.
+Çevrilecek değer.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Varsa **wctob** başarıyla bir geniş karakter dönüştürür, çok baytlı karakter gösterimi yalnızca çok baytlı karakter tam olarak bir bayt uzunluğunda olup olmadığını döndürür. Varsa **wctob** karşılaşıyorsa, dönüştüremiyor bir çok baytlı karakter veya çok baytlı karakterin bir geniş karakterse tam olarak bir bayt uzunluğunda, -1 döndürür.
+**Wctob** , geniş bir karakteri başarıyla dönüştürdüğünde, yalnızca çok baytlı karakter tam olarak bir bayt uzunluğunda ise çok baytlı karakter gösterimini döndürür. **Wctob** çok baytlı bir karaktere dönüştüremediği veya çok baytlı karakter tam olarak bir bayt uzunluğunda değilse,-1 döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Wctob** işlevi dönüştürür bulunan bir geniş karakter *wchar* dönüş tarafından geçirilen çok baytlı karaktere karşılık gelen **int** değerini ise çok baytlı tam olarak bir bayt uzunluğunda karakterdir.
+**Wctob** işlevi, çok baytlı karakter tam olarak bir bayt uzunsa, *wchar* içindeki bir geniş karakteri Return **Int** değeri ile geçirilen karşılık gelen çok baytlı karaktere dönüştürür.
 
-Varsa **wctob** başarısız oldu ve karşılık gelen hiçbir çok baytlı karakter bulundu, işlev ayarlar **errno** için **EILSEQ** ve -1 döndürür.
+**Wctob** başarısız olduysa ve karşılık gelen çok baytlı karakter bulunmazsa, işlev **errno** ' ı **eilseq** olarak ayarlar ve-1 döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**wctob**|\<wchar.h >|
+|**wctob**|\<wchar. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
-Bu program davranışlarını gösterir **wcstombs** işlevi.
+Bu program **wcstombs** işlevinin davranışını gösterir.
 
 ```C
 // crt_wctob.c
@@ -107,4 +107,4 @@ Determined the corresponding multibyte character to be "A".
 [mbstowcs, _mbstowcs_l](mbstowcs-mbstowcs-l.md)<br/>
 [mbtowc, _mbtowc_l](mbtowc-mbtowc-l.md)<br/>
 [wctomb, _wctomb_l](wctomb-wctomb-l.md)<br/>
-[WideCharToMultiByte](/windows/desktop/api/stringapiset/nf-stringapiset-widechartomultibyte)<br/>
+[Widechartoçok baytlı](/windows/win32/api/stringapiset/nf-stringapiset-widechartomultibyte)<br/>

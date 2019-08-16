@@ -16,16 +16,16 @@ helpviewer_keywords:
 - CMetaFileDC [MFC], Create
 - CMetaFileDC [MFC], CreateEnhanced
 ms.assetid: ffce60fa-4181-4d46-9832-25e46fad4db4
-ms.openlocfilehash: 95f54f50d7a87e9a2ad4689c14f3b7f8d42ff71e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 61e8442c085a5be0a7266409daf973bf63f52a7f
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62403951"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69505513"
 ---
 # <a name="cmetafiledc-class"></a>CMetaFileDC sınıfı
 
-İstediğiniz görüntüyü veya metni oluşturmanız için yeniden yürütebileceğiniz grafik cihaz arabirimi (GDI) komutları dizisini içeren bir Windows Meta dosyası uygular.
+İstenen bir görüntü veya metin oluşturmak için yeniden yürütebilmeniz gereken bir grafik cihaz arabirimi (GDI) komutları dizisi içeren bir Windows meta dosyası uygular.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -39,34 +39,34 @@ class CMetaFileDC : public CDC
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CMetaFileDC::CMetaFileDC](#cmetafiledc)|Oluşturur bir `CMetaFileDC` nesne.|
+|[CMetaFileDC:: CMetaFileDC](#cmetafiledc)|Bir `CMetaFileDC` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CMetaFileDC::Close](#close)|Cihaz bağlamı kapatır ve bir meta dosyası tanıtıcı oluşturur.|
-|[CMetaFileDC::CloseEnhanced](#closeenhanced)|Bir Gelişmiş Meta dosyası cihaz bağlamı kapatır ve Gelişmiş Meta dosyası tanıtıcı oluşturur.|
-|[CMetaFileDC::Create](#create)|Windows Meta dosyası cihaz bağlamı oluşturur ve ona ekler `CMetaFileDC` nesne.|
-|[CMetaFileDC::CreateEnhanced](#createenhanced)|Bir biçim Gelişmiş Meta dosyası için bir meta dosyası cihaz bağlamı oluşturur.|
+|[CMetaFileDC:: Close](#close)|Cihaz bağlamını kapatır ve bir meta dosyası tutamacı oluşturur.|
+|[CMetaFileDC:: CloseEnhanced](#closeenhanced)|Gelişmiş bir dosya cihazı bağlamını kapatır ve gelişmiş bir dosya tutamacı oluşturur.|
+|[CMetaFileDC:: Create](#create)|Windows meta dosyası cihaz bağlamını oluşturur ve `CMetaFileDC` nesneye ekler.|
+|[CMetaFileDC:: CreateEnhanced](#createenhanced)|Gelişmiş biçimdeki meta dosya için bir meta dosyası cihaz bağlamı oluşturur.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir Windows Meta dosyası uygulamak için ilk oluşturmak bir `CMetaFileDC` nesne. Çağırma `CMetaFileDC` oluşturucusu, ardından çağırın [Oluştur](#create) üye işlevi, bir Windows Meta dosyası cihaz bağlamı oluşturur ve ona ekler `CMetaFileDC` nesne.
+Bir Windows meta dosyası uygulamak için öncelikle bir `CMetaFileDC` nesne oluşturun. Oluşturucuyu çağırın, sonra bir Windows meta [](#create) dosyası cihaz bağlamı oluşturup bunu `CMetaFileDC` nesnesine bağlayan üye Oluştur işlevini çağırın. `CMetaFileDC`
 
-Sonraki Gönder `CMetaFileDC` düşündüğünüz CDC GDI komutları yeniden yürütme için bir dizi nesnesi. Çıkış, gibi oluşturan GDI komutları `MoveTo` ve `LineTo`, kullanılabilir.
+Sonra nesneyi, `CMetaFileDC` yeniden oynadığınız CDC GDI komutlarının dizisini gönderin. Yalnızca, `MoveTo` ve `LineTo`gibi çıkış oluşturan GDI komutları kullanılabilir.
 
-Meta dosyası için istenen komutların gönderdikten sonra çağrı `Close` meta dosyası cihaz bağlamları kapatır ve bir meta dosyası tanıtıcı döndüren üye işlevi. Ardından elden `CMetaFileDC` nesne.
+İstenen komutları meta dosyasına gönderdikten sonra, meta dosyası cihaz bağlamlarını kapatan `Close` ve bir meta dosyası tanıtıcısı döndüren üye işlevini çağırın. Sonra `CMetaFileDC` nesneyi atın.
 
-[CDC::PlayMetaFile](../../mfc/reference/cdc-class.md#playmetafile) ardından meta tanıtıcı meta tekrar tekrar oynatmak için kullanabilirsiniz. Meta dosyası ayrıca Windows işlevleri tarafından gibi yönetilebilir [CopyMetaFile](/windows/desktop/api/wingdi/nf-wingdi-copymetafilea), disk için bir meta dosyası kopyalar.
+[CDC::P layMetaFile](../../mfc/reference/cdc-class.md#playmetafile) , meta dosyası tekrar tekrar oynatmak için meta dosyası tanıtıcısını kullanabilir. Meta dosyası, bir dosya dosyasını diske kopyalayan [CopyMetaFile](/windows/win32/api/wingdi/nf-wingdi-copymetafilew)gibi Windows işlevleri tarafından da yönetilebilir.
 
-Meta dosyası artık gerekli olmadığında, bellek ile Sil [DeleteMetaFile](/windows/desktop/api/wingdi/nf-wingdi-deletemetafile) Windows işlevi.
+Meta dosyası artık gerekli olmadığında, [DeleteMetaFile](/windows/win32/api/wingdi/nf-wingdi-deletemetafile) Windows işleviyle bellekten silin.
 
-Ayrıca uygulayabilirsiniz `CMetaFileDC` işleyebileceği böylece hem de çıkış çağrıları ve öznitelik GDI çağrıları gibi nesne `GetTextExtent`. Böyle bir meta dosyası daha esnektir ve daha fazla çıkış ve öznitelik aramaları bir karışımını genellikle oluşan genel GDI kod kolayca yeniden kullanabilirsiniz. `CMetaFileDC` Sınıfından devralan iki cihaz bağlamları `m_hDC` ve `m_hAttribDC`, CDC öğesinden. `m_hDC` Cihaz bağlamı tüm işler [CDC](../../mfc/reference/cdc-class.md) GDI çıkış çağrıları ve `m_hAttribDC` cihaz bağlamı tüm CDC GDI öznitelik aramaları işler. Normalde, bu iki cihaz bağlamları aynı cihaza bakın. Durumunda, `CMetaFileDC`, DC öznitelik varsayılan olarak NULL olarak ayarlanır.
+Ayrıca, nesnesi gibi hem `CMetaFileDC` çıkış çağrılarını hem de öznitelik GDI çağrılarını `GetTextExtent`işleyebilmesi için nesnesini de uygulayabilirsiniz. Bu tür bir meta dosyası daha esnektir ve genellikle çıkış ve öznitelik çağrılarının karışımından oluşan genel GDI kodunu daha kolay bir şekilde yeniden kullanabilir. Sınıfı iki cihaz `m_hDC` bağlamı devralır ve `m_hAttribDC`CDC 'den. `CMetaFileDC` Cihaz bağlamı tüm [CDC](../../mfc/reference/cdc-class.md) GDI `m_hAttribDC` çıkış çağrılarını işler ve cihaz bağlamı tüm CDC GDI öznitelik çağrılarını işler. `m_hDC` Normalde, bu iki cihaz bağlamı aynı cihaza başvurur. Bu durumda `CMetaFileDC`, dc özniteliği varsayılan olarak null olarak ayarlanır.
 
-Ekran, yazıcı veya dışındaki bir meta dosyası cihaz noktalarına sonra çağıran ikinci bir cihaz bağlamı `SetAttribDC` üye işlevi, yeni bir cihaz bağlamı ile ilişkilendirilecek `m_hAttribDC`. GDI çağrıları bilgi artık yönlendirilir yeni `m_hAttribDC`. Çıkış GDI çağrıları için yazılacak `m_hDC`, meta dosyası temsil eder.
+Ekran, yazıcı veya dosya dışında bir cihaz gösteren ikinci bir cihaz bağlamı oluşturun ve ardından yeni cihaz bağlamını ile `SetAttribDC` `m_hAttribDC`ilişkilendirmek için üye işlevini çağırın. Bilgiler için GDI çağrıları artık yeni `m_hAttribDC`bir şekilde yönlendirilir. Çıktı GDI çağrıları, meta dosyasını `m_hDC`temsil eden öğesine gidecek.
 
-Daha fazla bilgi için `CMetaFileDC`, bkz: [cihaz bağlamları](../../mfc/device-contexts.md).
+Hakkında `CMetaFileDC`daha fazla bilgi için bkz. [cihaz bağlamları](../../mfc/device-contexts.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -78,11 +78,11 @@ Daha fazla bilgi için `CMetaFileDC`, bkz: [cihaz bağlamları](../../mfc/device
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxext.h
+**Üstbilgi:** afxext. h
 
-##  <a name="close"></a>  CMetaFileDC::Close
+##  <a name="close"></a>CMetaFileDC:: Close
 
-Meta dosyası cihaz bağlamı kapatır ve meta dosyası kullanarak yürütmek için kullanılan bir Windows Meta dosyası tanıtıcı oluşturur [CDC::PlayMetaFile](../../mfc/reference/cdc-class.md#playmetafile) üye işlevi.
+Meta dosyası cihaz bağlamını kapatır ve [CDC::P laymetafile](../../mfc/reference/cdc-class.md#playmetafile) üye işlevini kullanarak meta dosyası oynatmak için kullanılabilecek bir Windows meta dosyası tanıtıcısı oluşturur.
 
 ```
 HMETAFILE Close();
@@ -90,17 +90,17 @@ HMETAFILE Close();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarılı olursa geçerli bir HMETAFILE; bulunmazsa null değerini DÖNDÜRÜR.
+İşlev başarılı olursa geçerli bir HMETAFILE; Aksi takdirde NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Windows Meta dosyası tanıtıcı Windows işlevleri ile yazılmışsa gibi işlemek için de kullanılabilir [CopyMetaFile](/windows/desktop/api/wingdi/nf-wingdi-copymetafilea).
+Windows meta dosyası tanıtıcısı, [CopyMetaFile](/windows/win32/api/wingdi/nf-wingdi-copymetafilew)gibi Windows işlevleriyle meta dosyası işlemek için de kullanılabilir.
 
-Windows çağırarak meta kullandıktan sonra silin [DeleteMetaFile](/windows/desktop/api/wingdi/nf-wingdi-deletemetafile) işlevi.
+Windows [DeleteMetaFile](/windows/win32/api/wingdi/nf-wingdi-deletemetafile) işlevini çağırarak, kullandıktan sonra meta dosyası silin.
 
-##  <a name="closeenhanced"></a>  CMetaFileDC::CloseEnhanced
+##  <a name="closeenhanced"></a>CMetaFileDC:: CloseEnhanced
 
-Bir Gelişmiş Meta dosyası cihaz bağlamı kapatır ve bir biçim Gelişmiş Meta dosyası tanımlayan bir tanıtıcı döndürür.
+Gelişmiş bir meta dosyası cihaz bağlamını kapatır ve gelişmiş biçimdeki bir meta dosyası tanımlayan bir tanıtıcı döndürür.
 
 ```
 HENHMETAFILE CloseEnhanced();
@@ -108,33 +108,33 @@ HENHMETAFILE CloseEnhanced();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir Gelişmiş Meta dosyası, başarılı olursa tanıtıcısı; bulunmazsa null değerini DÖNDÜRÜR.
+Başarılı olursa, gelişmiş bir meta dosyası tanıtıcısı; Aksi takdirde NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir uygulama, bu işlev tarafından döndürülen Gelişmiş Meta dosyası tanıtıcı, aşağıdaki görevleri gerçekleştirmek için kullanabilirsiniz:
+Bir uygulama, aşağıdaki görevleri gerçekleştirmek için bu işlev tarafından döndürülen gelişmiş-meta dosya işleyicisini kullanabilir:
 
-- Bir Gelişmiş Meta dosyası içinde depolanan bir resmi görüntülemek
+- Gelişmiş bir meta dosyasında depolanan bir resmi görüntüleme
 
-- Gelişmiş Meta dosyası kopyasını oluşturma
+- Gelişmiş Meta dosyası kopyalarını oluşturma
 
-- Numaralandırma, düzenlemek veya Gelişmiş Meta dosyası içinde tek tek kayıtlar kopyalayın
+- Gelişmiş Meta dosyasındaki tek tek kayıtları listeleme, düzenleme veya kopyalama
 
-- Gelişmiş Meta dosyası başlığından isteğe bağlı bir açıklama meta dosyası içeriği alma
+- Gelişmiş-Meta dosyası başlığından meta dosyası içeriklerinin isteğe bağlı bir açıklamasını alın
 
-- Gelişmiş Meta dosyası üstbilgisi bir kopyasını alma
+- Gelişmiş-Meta dosyası üstbilgisinin bir kopyasını alın
 
-- Gelişmiş Meta dosyası ikili bir kopyasını alma
+- Gelişmiş Meta dosyası ikili kopyasını alma
 
-- İsteğe bağlı palet renkleri listeleme
+- İsteğe bağlı Paletteki renkleri listeleme
 
-- Bir Windows biçim meta dosyası bir biçim Gelişmiş Meta dosyası Dönüştür
+- Gelişmiş biçimdeki bir meta dosyası Windows-biçim meta dosyasına dönüştürme
 
-Uygulama artık gelişmiş meta dosyası tanıtıcı gerektiğinde, Win32 çağırarak tanıtıcıyı serbest `DeleteEnhMetaFile` işlevi.
+Uygulama artık gelişmiş meta dosyası tanıtıcısına ihtiyaç duymuyorsa, Win32 `DeleteEnhMetaFile` işlevini çağırarak tanıtıcıyı serbest bırakmalıdır.
 
-##  <a name="cmetafiledc"></a>  CMetaFileDC::CMetaFileDC
+##  <a name="cmetafiledc"></a>CMetaFileDC:: CMetaFileDC
 
-Oluşturmak bir `CMetaFileDC` iki adımda nesne.
+İki adımda `CMetaFileDC` bir nesne oluşturun.
 
 ```
 CMetaFileDC();
@@ -142,11 +142,11 @@ CMetaFileDC();
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk olarak, çağrı `CMetaFileDC`, ardından çağırın `Create`, hangi Windows Meta dosyası cihaz bağlamı oluşturur ve ona ekler `CMetaFileDC` nesne.
+İlk olarak `CMetaFileDC`, Windows meta dosyası `Create`cihaz bağlamını oluşturan `CMetaFileDC` ve bunu nesnesine bağlayan çağrısı yapın.
 
-##  <a name="create"></a>  CMetaFileDC::Create
+##  <a name="create"></a>CMetaFileDC:: Create
 
-Oluşturmak bir `CMetaFileDC` iki adımda nesne.
+İki adımda `CMetaFileDC` bir nesne oluşturun.
 
 ```
 BOOL Create(LPCTSTR lpszFilename = NULL);
@@ -155,7 +155,7 @@ BOOL Create(LPCTSTR lpszFilename = NULL);
 ### <a name="parameters"></a>Parametreler
 
 *lpszFilename*<br/>
-Null ile sonlandırılmış dizeye işaret eder. Dosya meta dosyası oluşturmak için adını belirtir. Varsa *lpszFilename* NULL ise yeni bir bellek içi meta dosyası oluşturulur.
+Null ile sonlandırılmış bir karakter dizesini işaret eder. Oluşturulacak meta dosyanın dosya adını belirtir. *LPSZFILENAME* null ise, yeni bir bellek içi meta dosyası oluşturulur.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -163,11 +163,11 @@ Null ile sonlandırılmış dizeye işaret eder. Dosya meta dosyası oluşturmak
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk olarak, oluşturucusunu `CMetaFileDC`, ardından çağırın `Create`, Windows Meta dosyası cihaz bağlamı oluşturur ve ona ekler `CMetaFileDC` nesne.
+İlk olarak, oluşturucuyu `CMetaFileDC`çağırın, sonra Windows meta dosyası cihaz bağlamını oluşturan `CMetaFileDC` ve bunu nesnesine ekleyen çağırın `Create`.
 
-##  <a name="createenhanced"></a>  CMetaFileDC::CreateEnhanced
+##  <a name="createenhanced"></a>CMetaFileDC:: CreateEnhanced
 
-Bir biçim Gelişmiş Meta dosyası için bir cihaz bağlamı oluşturur.
+Gelişmiş biçimdeki meta dosya için bir cihaz bağlamı oluşturur.
 
 ```
 BOOL CreateEnhanced(
@@ -183,35 +183,35 @@ BOOL CreateEnhanced(
 Gelişmiş Meta dosyası için bir başvuru cihazı tanımlar.
 
 *lpszFileName*<br/>
-Null ile sonlandırılmış dizeye işaret eder. Oluşturulacak Gelişmiş Meta dosyası için dosya adını belirtir. Bu parametre NULL ise, Gelişmiş Meta dosyası bellek tabanlı ve içeriğini nesnesi yok edildiğinde veya zaman kayıp olduğundan Win32 `DeleteEnhMetaFile` işlevi çağrılır.
+Null ile sonlandırılmış bir karakter dizesini işaret eder. Oluşturulacak gelişmiş meta dosyası için dosya adını belirtir. Bu parametre null ise, gelişmiş meta dosyası bellek tabanlıdır ve nesne yok edildiğinde ya da Win32 `DeleteEnhMetaFile` işlevi çağrıldığında kaybolur.
 
-*lpBounds*<br/>
-İşaret eden bir [RECT](/windows/desktop/api/windef/ns-windef-tagrect) veri yapısı veya [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesini resmi (artışlarla başına.01 milimetre) HIMETRIC birimleri Gelişmiş Meta dosyası içinde depolanacak boyutlarını belirtir.
+*Lpsınır*<br/>
+Bir [Rect](/windows/win32/api/windef/ns-windef-rect) veri yapısına veya bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesine işaret eder ve bu da, gelişmiş meta dosyasında depolanacak olan resmin himetrik birimlerindeki (.01-milimetre ölçer artışlarla) boyutlarını belirtir.
 
 *lpszDescription*<br/>
-Resmin başlığı yanı sıra resmi oluşturduğunuz uygulamayı adını belirten bir sıfır ile sonlandırılmış dize işaret eder.
+Resmi oluşturan uygulamanın adını ve resmin başlığını belirten sıfır ile sonlandırılmış bir dizeye işaret eder.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Gelişmiş Meta dosyası, başarılı olursa cihaz bağlamı tanıtıcısı; bulunmazsa null değerini DÖNDÜRÜR.
+Başarılı olursa, geliştirilmiş meta dosyası için bir cihaz bağlamı tutamacı; Aksi takdirde NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu etki alanı Denetleyicisinin bir CİHAZDAN bağımsız resmi depolamak için kullanılabilir.
+Bu DC, cihazdan bağımsız bir resim depolamak için kullanılabilir.
 
-Windows tarafından tanımlanan başvuru cihazını kullanan *pDCRef* çözümleme ve birimleri resim başlangıçta görünen cihaz kaydetmek için parametre. Varsa *pDCRef* parametre NULL ise, başvurusunu geçerli görüntü cihazı kullanır.
+Windows, bir resmin başlangıçta göründüğü cihazın çözünürlüğünü ve birimlerini kaydetmek için *pDCRef* parametresi tarafından tanımlanan başvuru cihazını kullanır. *PDCRef* parametresi null ise, başvuru için geçerli görüntüleme cihazını kullanır.
 
-Sol ve üst üyelerinin `RECT` veri yapısı tarafından işaret edilen *lpBounds* parametresi sağ ve alt üyelerin küçük olmalıdır sırasıyla. Dikdörtgenin kenarlarının noktaları resmi dahil edilir. Varsa *lpBounds* null, uygulama tarafından çizilen resmi içine en küçük dikdörtgenin boyutlarına grafik cihaz arabirimi (GDI) hesaplar. *LpBounds* mümkün olduğunda parametresi'nin belirtilmelidir.
+`RECT` *Lpsınır* parametresi tarafından işaret edilen veri yapısının sol ve üst üyeleri sırasıyla sağ ve alt üyelerden daha küçük olmalıdır. Dikdörtgenin kenarları üzerindeki noktaları resme dahil edilir. *Lpsınır* null ise, grafik cihaz ARABIRIMI (GDI), uygulama tarafından çizilen resmi kapsayan en küçük dikdörtgenin boyutlarını hesaplar. Mümkün olduğunda, *Lpsınır* parametresi sağlanmalıdır.
 
-Dize tarafından işaret edilen *lpszDescription* parametresi uygulama adı ve resim adı arasında bir null karakter içermeli ve iki null karakteri ile sonlandırmanız gerekir — Örneğin, "XYZ grafik Editor\0Bald Eagle\0\0, "nerede \0 null karakteri temsil eder. Varsa *lpszDescription* NULL ise Gelişmiş Meta dosyası üst bilgisinde karşılık gelen bir giriş yok.
+*LpszDescription* parametresi tarafından işaret edilen dize, uygulama adı ve resim adı arasında bir null karakter içermeli ve iki null karakterle sonlanmalıdır — Örneğin, "xyz grafik Editor\0Bald Eagle\0\0," burada \ 0 şunu temsil eder null karakter. *LPSZDESCRIPTION* null ise, gelişmiş-meta dosyası üstbilgisinde karşılık gelen bir giriş yoktur.
 
-Uygulamalar bu işlev tarafından oluşturulan DC bir Gelişmiş Meta dosyası içinde bir grafik resmini depolamak için kullanır. Bu DC tanımlayan tanıtıcı GDI fonksiyonlarla geçirilebilir.
+Uygulamalar, bir grafik resmini gelişmiş bir meta dosyasında depolamak için bu işlev tarafından oluşturulan DC 'yi kullanır. Bu DC 'yi tanımlayan tanıtıcı herhangi bir GDI işlevine geçirilebilir.
 
-Bir uygulama bir resim bir Gelişmiş Meta dosyası içinde depolar. sonra onu resmi herhangi bir çıktı cihazda çağırarak görüntüleyebilirsiniz `CDC::PlayMetaFile` işlevi. Resim görüntülerken, işaret ettiği dikdörtgen Windows kullanan *lpBounds* parametresi ve getirin ve resmi ölçeklendirmek için başvuru CİHAZDAN çözümleme verileri. Bu işlev tarafından döndürülen bir cihaz bağlamı ile yeni bir DC'ye ilişkili aynı varsayılan öznitelikleri içerir.
+Bir uygulama gelişmiş bir meta dosyasına bir resim depoladıktan sonra, `CDC::PlayMetaFile` işlevi çağırarak herhangi bir çıkış cihazında resmi görüntüleyebilir. Windows, resmi görüntülerken, *Lpsınır* parametresi tarafından işaret edilen dikdörtgeni ve resmi konumlandırmak ve ölçeklendirmek için başvuru cihazından çözüm verilerini kullanır. Bu işlev tarafından döndürülen cihaz bağlamı, yeni bir DC ile ilişkili aynı varsayılan öznitelikleri içeriyor.
 
-Win32 uygulamaları kullanmalıdır `GetWinMetaFileBits` bir Gelişmiş Meta dosyası eski Windows Meta dosyası biçimine dönüştürmek için işlevi.
+Uygulamalar, gelişmiş bir meta `GetWinMetaFileBits` dosyası eski Windows meta dosyası biçimine dönüştürmek için Win32 işlevini kullanmalıdır.
 
-Gelişmiş Meta dosyası için dosya adı kullanmanız gerekir. EMF uzantısı.
+Gelişmiş Meta dosyası için dosya adının ' i kullanması gerekir. EMF uzantısı.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

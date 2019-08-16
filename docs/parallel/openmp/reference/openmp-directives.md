@@ -29,48 +29,48 @@ helpviewer_keywords:
 - single OpenMP directive
 - threadprivate OpenMP directive
 ms.assetid: 0562c263-344c-466d-843e-de830d918940
-ms.openlocfilehash: d644b612c0c326692786c94046d799163dfbce8d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 108e23a91b2bd0041d95a2262007ce4f684fc671
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62362692"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69512184"
 ---
 # <a name="openmp-directives"></a>OpenMP Yönergeleri
 
-OpenMP API çağrısında kullanılan yönergelere bağlantılar sağlar.
+OpenMP API 'sinde kullanılan yönergelere bağlantılar sağlar.
 
-Görsel C++ aşağıdaki OpenMP yönergeleri destekler.
+Visual C++ , aşağıdaki OpenMP yönergelerini destekler.
 
-Paralel iş paylaşım için:
+Paralel iş paylaşımı için:
 
 |Yönergesi|Açıklama|
 |---------|-----------|
-|[parallel](#parallel)|Birden çok iş parçacığı paralel olarak yürütülen kodu bir paralel bölgenin tanımlar.|
-|[for](#for-openmp)|Çalışmanın neden olan bir `for` döngüsü iş parçacıkları arasında bölünmesi için bir paralel bölgenin içinde.|
-|[Bölümleri](#sections-openmp)|Tüm iş parçacıkları arasında bölünmesi için kod bölümleri tanımlar.|
-|[single](#single)|Kodun bir bölümünü tek bir iş parçacığı üzerinde mutlaka ana iş parçacığının yürütülmesi gereken belirtmenize olanak sağlar.|
+|[parallel](#parallel)|Paralel olarak birden çok iş parçacığı tarafından yürütülecek kod olan bir paralel bölgeyi tanımlar.|
+|[for](#for-openmp)|Paralel bölge içindeki bir `for` döngüde yapılan çalışmanın iş parçacıkları arasında ayrılmasına neden olur.|
+|[başlıklı](#sections-openmp)|Kod bölümlerini tüm iş parçacıkları arasında bölünecek şekilde tanımlar.|
+|[single](#single)|Kod bölümünün, ana iş parçacığı olması için tek bir iş parçacığında yürütülmesi gerektiğini belirtmenize izin verir.|
 
 Ana ve eşitleme için:
 
 |Yönergesi|Açıklama|
 |---------|-----------|
-|[master](#master)|Ana iş parçacığı programın bir bölümünde yürütüleceğini belirtir.|
-|[critical](#critical)|Bir kerede tek bir iş parçacığı üzerinde kod yalnızca yürütülür belirtir.|
-|[barrier](#barrier)|Takım tüm iş parçacıklarının eşitler; tüm iş parçacıklarının engeli yürütene kadar tüm iş parçacıklarının engeli duraklatın.|
-|[atomic](#atomic)|Belirten bir bellek konumuna atomik olarak güncelleştirilecek.|
-|[Temizleme](#flush-openmp)|Tüm iş parçacıkları aynı görünümde tüm paylaşılan nesneler için bellek olduğunu belirtir.|
-|[Sıralı](#ordered-openmp-directives)|Bu kod bir paralel belirtir `for` döngü gibi sıralı döngü yürütülmelidir.|
+|[master](#master)|Yalnızca ana iş parçacığının programın bir bölümünü yürütmesi gerektiğini belirtir.|
+|[critical](#critical)|Kodun tek seferde yalnızca bir iş parçacığında yürütüldüğünü belirtir.|
+|[barrier](#barrier)|Bir ekipteki tüm iş parçacıklarını eşitler; Tüm iş parçacıkları engeli yürütülene kadar tüm iş parçacıkları engelde duraklamalar.|
+|[atomic](#atomic)|Bir bellek konumunun otomatik olarak güncelleştirileceğini belirtir.|
+|[temizlenemiyor](#flush-openmp)|Tüm iş parçacıklarının tüm paylaşılan nesneler için aynı bellek görünümüne sahip olduğunu belirtir.|
+|[lerin](#ordered-openmp-directives)|Paralel `for` bir döngü altındaki kodun sıralı bir döngü gibi yürütülmesi gerektiğini belirtir.|
 
 Veri ortamı için:
 
 |Yönergesi|Açıklama|
 |---------|-----------|
-|[threadprivate](#threadprivate)|Bir değişken için bir iş parçacığı özel olduğunu belirtir.|
+|[threadprivate](#threadprivate)|Bir değişkenin bir iş parçacığına özel olduğunu belirtir.|
 
 ## <a name="atomic"></a>Atomik
 
-Belirten bir bellek konumuna atomik olarak güncelleştirilecek.
+Bir bellek konumunun otomatik olarak güncelleştirileceğini belirtir.
 
 ```
 #pragma omp atomic
@@ -79,14 +79,14 @@ Belirten bir bellek konumuna atomik olarak güncelleştirilecek.
 
 ### <a name="parameters"></a>Parametreler
 
-*İfade*<br/>
-Var deyimi *lvalue*, birden fazla yazma karşı korumak istediğiniz bellek konumu.
+*ifadesini*<br/>
+Bellek konumu birden fazla yazmaya karşı korumak istediğiniz *lvalue*olan bir ifade.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`atomic` Yönergesi yok yan tümceleri destekler.
+`atomic` Yönergesi hiçbir yan tümceyi destekler.
 
-Daha fazla bilgi için [2.6.4 atomic oluşturmak](../../../parallel/openmp/2-6-4-atomic-construct.md).
+Daha fazla bilgi için bkz. [2.6.4 atomik yapı](../../../parallel/openmp/2-6-4-atomic-construct.md).
 
 ### <a name="example"></a>Örnek
 
@@ -113,9 +113,9 @@ int main() {
 Number of threads: 10
 ```
 
-## <a name="barrier"></a>Engel
+## <a name="barrier"></a>engeli
 
-Takım tüm iş parçacıklarının eşitler; tüm iş parçacıklarının engeli yürütene kadar tüm iş parçacıklarının engeli duraklatın.
+Bir ekipteki tüm iş parçacıklarını eşitler; Tüm iş parçacıkları engeli yürütülene kadar tüm iş parçacıkları engelde duraklamalar.
 
 ```
 #pragma omp barrier
@@ -123,17 +123,17 @@ Takım tüm iş parçacıklarının eşitler; tüm iş parçacıklarının engel
 
 ### <a name="remarks"></a>Açıklamalar
 
-`barrier` Yönergesi yok yan tümceleri destekler.
+`barrier` Yönergesi hiçbir yan tümceyi destekler.
 
-Daha fazla bilgi için [2.6.3 barrier yönergesi](../../../parallel/openmp/2-6-3-barrier-directive.md).
+Daha fazla bilgi için bkz. [2.6.3 engel yönergesi](../../../parallel/openmp/2-6-3-barrier-directive.md).
 
 ### <a name="example"></a>Örnek
 
-Nasıl kullanılacağını gösteren bir örnek `barrier`, bkz: [ana](#master).
+Öğesinin kullanımıyla `barrier`ilgili bir örnek için bkz. [Master](#master).
 
-## <a name="critical"></a>Kritik
+## <a name="critical"></a>başlatma
 
-Kodu yalnızca olması yürütüldüğünde, bir iş parçacığında aynı anda belirtir.
+Kodun tek seferde yalnızca bir iş parçacığında yürütüleceğini belirtir.
 
 ```
 #pragma omp critical [(name)]
@@ -144,14 +144,14 @@ Kodu yalnızca olması yürütüldüğünde, bir iş parçacığında aynı anda
 
 ### <a name="parameters"></a>Parametreler
 
-*Adı*<br/>
-(İsteğe bağlı) Kritik kod tanımlamak için bir ad. Ad, parantez içine alınmalıdır.
+*name*<br/>
+Seçim Kritik kodu tanımlayacak bir ad. Adın parantez içine alınması gerekir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`critical` Yönergesi yok yan tümceleri destekler.
+`critical` Yönergesi hiçbir yan tümceyi destekler.
 
-Daha fazla bilgi için [2.6.2 kritik oluşturmak](../../../parallel/openmp/2-6-2-critical-construct.md).
+Daha fazla bilgi için bkz. [2.6.2 Critical Critical yapısı](../../../parallel/openmp/2-6-2-critical-construct.md).
 
 ### <a name="example"></a>Örnek
 
@@ -211,9 +211,9 @@ int main()
 max = 29358
 ```
 
-## <a name="flush-openmp"></a>Temizleme
+## <a name="flush-openmp"></a>temizlenemiyor
 
-Tüm iş parçacıkları aynı görünümde tüm paylaşılan nesneler için bellek olduğunu belirtir.
+Tüm iş parçacıklarının tüm paylaşılan nesneler için aynı bellek görünümüne sahip olduğunu belirtir.
 
 ```
 #pragma omp flush [(var)]
@@ -222,13 +222,13 @@ Tüm iş parçacıkları aynı görünümde tüm paylaşılan nesneler için bel
 ### <a name="parameters"></a>Parametreler
 
 *var*<br/>
-(İsteğe bağlı) Eşitlemek istediğiniz nesneleri temsil değişkenlerin virgülle ayrılmış listesi. Varsa *var* belirtilmediyse, tüm bellek temizlendi.
+Seçim Eşitlenmesini istediğiniz nesneleri temsil eden değişkenlerin virgülle ayrılmış bir listesi. *Var* belirtilmemişse, tüm bellek temizlenir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`flush` Yönergesi yok yan tümceleri destekler.
+`flush` Yönergesi hiçbir yan tümceyi destekler.
 
-Daha fazla bilgi için [2.6.5 flush yönergesi](../../../parallel/openmp/2-6-5-flush-directive.md).
+Daha fazla bilgi için bkz. [2.6.5 Flush yönergesi](../../../parallel/openmp/2-6-5-flush-directive.md).
 
 ### <a name="example"></a>Örnek
 
@@ -287,9 +287,9 @@ Thread 1: process data
 data = 2
 ```
 
-## <a name="for-openmp"></a>için
+## <a name="for-openmp"></a>bekleniyor
 
-Çalışmanın neden olan bir `for` döngüsü iş parçacıkları arasında bölünmesi için bir paralel bölgenin içinde.
+Paralel bölge içindeki bir `for` döngüde yapılan çalışmanın iş parçacıkları arasında ayrılmasına neden olur.
 
 ```
 #pragma omp [parallel] for [clauses]
@@ -298,11 +298,11 @@ data = 2
 
 ### <a name="parameters"></a>Parametreler
 
-*Yan tümceleri*<br/>
-(İsteğe bağlı) Sıfır veya daha fazla yan tümceleri bkz **açıklamalar** bölümü.
+*yan*<br/>
+Seçim Sıfır veya daha fazla yan tümce, **açıklamalar** bölümüne bakın.
 
 *for_statement*<br/>
-A `for` döngü. Tanımsız davranışa neden olur, kullanıcı kodu `for` döngüsünün dizin değişkeni değiştirir.
+Bir `for` döngü. Tanımsız davranış, `for` döngüde Kullanıcı kodu Dizin değişkenini değiştirdiğinde ortaya geçer.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -312,13 +312,13 @@ A `for` döngü. Tanımsız davranışa neden olur, kullanıcı kodu `for` döng
 - [firstprivate](openmp-clauses.md#firstprivate)
 - [lastprivate](openmp-clauses.md#lastprivate)
 - [reduction](openmp-clauses.md#reduction)
-- [Sıralı](openmp-clauses.md#ordered-openmp-clauses)
+- [lerin](openmp-clauses.md#ordered-openmp-clauses)
 - [schedule](openmp-clauses.md#schedule)
 - [nowait](openmp-clauses.md#nowait)
 
-Varsa `parallel` de belirtilirse, `clauses` herhangi yan tümcesi tarafından kabul edilebilen `parallel` veya `for` yönergeleri dışında `nowait`.
+`parallel` `parallel` Ayrıca`for` belirtilmişse, hariç veya`nowait`yönergeleri tarafından kabul edilen herhangi bir yan tümce olabilir. `clauses`
 
-Daha fazla bilgi için [2.4.1 yapı için](../../../parallel/openmp/2-4-1-for-construct.md).
+Daha fazla bilgi için bkz. [2.4.1 for yapısı](../../../parallel/openmp/2-4-1-for-construct.md).
 
 ### <a name="example"></a>Örnek
 
@@ -384,9 +384,9 @@ int main() {
 The sum of 1 through 10 is 55
 ```
 
-## <a name="master"></a>Ana
+## <a name="master"></a>şablonu
 
-Ana iş parçacığı programın bir bölümünde yürütüleceğini belirtir.
+Yalnızca ana iş parçacığının programın bir bölümünü yürütmesi gerektiğini belirtir.
 
 ```
 #pragma omp master
@@ -397,11 +397,11 @@ Ana iş parçacığı programın bir bölümünde yürütüleceğini belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`master` Yönergesi yok yan tümceleri destekler.
+`master` Yönergesi hiçbir yan tümceyi destekler.
 
-[Tek](#single) yönergesi, kodun bir bölümünden bir tek iş parçacığı üzerinde mutlaka ana iş parçacığı yürütülmesi gereken belirtmenize olanak sağlar.
+[Tek](#single) yönerge, kod bölümünün ana iş parçacığı olması için tek bir iş parçacığında yürütülmesi gerektiğini belirtmenize olanak tanır.
 
-Daha fazla bilgi için [2.6.1 master yapı](../../../parallel/openmp/2-6-1-master-construct.md).
+Daha fazla bilgi için bkz. [2.6.1 Master yapısı](../../../parallel/openmp/2-6-1-master-construct.md).
 
 ### <a name="example"></a>Örnek
 
@@ -446,9 +446,9 @@ a[3] = 9
 a[4] = 16
 ```
 
-## <a name="ordered-openmp-directives"></a>Sıralı
+## <a name="ordered-openmp-directives"></a>lerin
 
-Bu kod bir paralel belirtir `for` döngü gibi sıralı döngü yürütülmelidir.
+Paralel `for` bir döngü altındaki kodun sıralı bir döngü gibi yürütülmesi gerektiğini belirtir.
 
 ```
 #pragma omp ordered
@@ -457,11 +457,11 @@ Bu kod bir paralel belirtir `for` döngü gibi sıralı döngü yürütülmelidi
 
 ### <a name="remarks"></a>Açıklamalar
 
-`ordered` Yönergesi içinde dinamik kapsamı olmalıdır bir [için](#for-openmp) veya `parallel for` ile oluşturmak bir `ordered` yan tümcesi.
+Yönergesi bir `parallel for` [for veya bir for](#for-openmp) yantümcesiyledinamikkapsamıiçindeolmalıdır.`ordered` `ordered`
 
-`ordered` Yönergesi yok yan tümceleri destekler.
+`ordered` Yönergesi hiçbir yan tümceyi destekler.
 
-Daha fazla bilgi için [2.6.6 ordered yapı](../../../parallel/openmp/2-6-6-ordered-construct.md).
+Daha fazla bilgi için bkz. [2.6.6 sıralı yapısı](../../../parallel/openmp/2-6-6-ordered-construct.md).
 
 ### <a name="example"></a>Örnek
 
@@ -517,9 +517,9 @@ test2() iteration 3
 test2() iteration 4
 ```
 
-## <a name="parallel"></a>Paralel
+## <a name="parallel"></a>dir
 
-Birden çok iş parçacığı paralel olarak yürütülen kodu bir paralel bölgenin tanımlar.
+Paralel olarak birden çok iş parçacığı tarafından yürütülecek kod olan bir paralel bölgeyi tanımlar.
 
 ```
 #pragma omp parallel [clauses]
@@ -530,14 +530,14 @@ Birden çok iş parçacığı paralel olarak yürütülen kodu bir paralel bölg
 
 ### <a name="parameters"></a>Parametreler
 
-*Yan tümceleri*<br/>
-(İsteğe bağlı) Sıfır veya daha fazla yan tümceleri bkz **açıklamalar** bölümü.
+*yan*<br/>
+Seçim Sıfır veya daha fazla yan tümce, **açıklamalar** bölümüne bakın.
 
 ### <a name="remarks"></a>Açıklamalar
 
 `parallel` Yönergesi aşağıdaki yan tümceleri destekler:
 
-- [Eğer](openmp-clauses.md#if-openmp)
+- [if](openmp-clauses.md#if-openmp)
 - [private](openmp-clauses.md#private-openmp)
 - [firstprivate](openmp-clauses.md#firstprivate)
 - [default](openmp-clauses.md#default-openmp)
@@ -546,13 +546,13 @@ Birden çok iş parçacığı paralel olarak yürütülen kodu bir paralel bölg
 - [reduction](openmp-clauses.md#reduction)
 - [num_threads](openmp-clauses.md#num-threads)
 
-`parallel` ile de kullanılabilir [için](#for-openmp) ve [bölümleri](#sections-openmp) yönergeleri.
+`parallel`Ayrıca [for](#for-openmp) ve [sections](#sections-openmp) yönergeleriyle birlikte kullanılabilir.
 
-Daha fazla bilgi için [2.3 parallel yapı](../../../parallel/openmp/2-3-parallel-construct.md).
+Daha fazla bilgi için bkz. [2,3 paralel yapısı](../../../parallel/openmp/2-3-parallel-construct.md).
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, iş parçacığı sayısını ayarlayın ve bir paralel bölgenin tanımlamak gösterilmektedir. İş parçacığı sayısı, varsayılan olarak makinede mantıksal işlemci sayısı eşittir. Örneğin, bir makine hiper iş parçacıklı olan bir fiziksel işlemci ile varsa, iki mantıksal işlemciler ve iki iş parçacığı olması. Çıkış sırası farklı makinelerde farklılık gösterebilir.
+Aşağıdaki örnek, iş parçacıklarının sayısının nasıl ayarlanacağını ve bir paralel bölgenin nasıl tanımlanacağını gösterir. İş parçacığı sayısı, varsayılan olarak makinedeki mantıksal işlemci sayısına eşittir. Örneğin, hiper iş parçacığının etkinleştirildiği bir fiziksel işlemciye sahip bir makineniz varsa, iki mantıksal işlemciye ve iki iş parçacığına sahip olur. Çıktının sırası farklı makinelerde farklılık gösterebilir.
 
 ```cpp
 // omp_parallel.cpp
@@ -576,9 +576,9 @@ Hello from thread 2
 Hello from thread 3
 ```
 
-## <a name="sections-openmp"></a>Bölümleri
+## <a name="sections-openmp"></a>başlıklı
 
-Tüm iş parçacıkları arasında bölünmesi için kod bölümleri tanımlar.
+Kod bölümlerini tüm iş parçacıkları arasında bölünecek şekilde tanımlar.
 
 ```
 #pragma omp [parallel] sections [clauses]
@@ -592,12 +592,12 @@ Tüm iş parçacıkları arasında bölünmesi için kod bölümleri tanımlar.
 
 ### <a name="parameters"></a>Parametreler
 
-*Yan tümceleri*<br/>
-(İsteğe bağlı) Sıfır veya daha fazla yan tümceleri bkz **açıklamalar** bölümü.
+*yan*<br/>
+Seçim Sıfır veya daha fazla yan tümce, **açıklamalar** bölümüne bakın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`sections` Yönergesi, sıfır veya daha fazla içerebilir `section` yönergeleri.
+Yönergede sıfır veya daha fazla `section` yönerge bulunabilir. `sections`
 
 `sections` Yönergesi aşağıdaki yan tümceleri destekler:
 
@@ -607,9 +607,9 @@ Tüm iş parçacıkları arasında bölünmesi için kod bölümleri tanımlar.
 - [reduction](openmp-clauses.md#reduction)
 - [nowait](openmp-clauses.md#nowait)
 
-Varsa `parallel` de belirtilirse, `clauses` herhangi yan tümcesi tarafından kabul edilebilen `parallel` veya `sections` yönergeleri dışında `nowait`.
+`parallel` `parallel` Ayrıca`sections` belirtilmişse, hariç veya`nowait`yönergeleri tarafından kabul edilen herhangi bir yan tümce olabilir. `clauses`
 
-Daha fazla bilgi için [2.4.2 sections yapı](../../../parallel/openmp/2-4-2-sections-construct.md).
+Daha fazla bilgi için bkz. [2.4.2 sections sections yapısı](../../../parallel/openmp/2-4-2-sections-construct.md).
 
 ### <a name="example"></a>Örnek
 
@@ -634,9 +634,9 @@ Hello from thread 0
 Hello from thread 0
 ```
 
-## <a name="single"></a>Tek
+## <a name="single"></a>sunuculu
 
-Kodun bir bölümünü tek bir iş parçacığı üzerinde mutlaka ana iş parçacığının yürütülmesi gereken belirtmenize olanak sağlar.
+Kod bölümünün, ana iş parçacığı olması için tek bir iş parçacığında yürütülmesi gerektiğini belirtmenize izin verir.
 
 ```
 #pragma omp single [clauses]
@@ -647,8 +647,8 @@ Kodun bir bölümünü tek bir iş parçacığı üzerinde mutlaka ana iş parç
 
 ### <a name="parameters"></a>Parametreler
 
-*Yan tümceleri*<br/>
-(İsteğe bağlı) Sıfır veya daha fazla yan tümceleri bkz **açıklamalar** bölümü.
+*yan*<br/>
+Seçim Sıfır veya daha fazla yan tümce, **açıklamalar** bölümüne bakın.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -659,9 +659,9 @@ Kodun bir bölümünü tek bir iş parçacığı üzerinde mutlaka ana iş parç
 - [copyprivate](openmp-clauses.md#copyprivate)
 - [nowait](openmp-clauses.md#nowait)
 
-[Ana](#master) yönergesi, kodun bir bölümünden yalnızca ana iş parçacığı üzerinde yapılmalıdır belirtmenize olanak sağlar.
+[Ana](#master) yönerge, kod bölümünün yalnızca ana iş parçacığında yürütülmesi gerektiğini belirtmenize olanak tanır.
 
-Daha fazla bilgi için [2.4.3 tek oluşturmak](../../../parallel/openmp/2-4-3-single-construct.md).
+Daha fazla bilgi için bkz. [2.4.3 single yapısı](../../../parallel/openmp/2-4-3-single-construct.md).
 
 ### <a name="example"></a>Örnek
 
@@ -697,7 +697,7 @@ write output
 
 ## <a name="threadprivate"></a>threadprivate
 
-Bir değişken için bir iş parçacığı özel olduğunu belirtir.
+Bir değişkenin bir iş parçacığına özel olduğunu belirtir.
 
 ```
 #pragma omp threadprivate(var)
@@ -706,17 +706,17 @@ Bir değişken için bir iş parçacığı özel olduğunu belirtir.
 ### <a name="parameters"></a>Parametreler
 
 *var*<br/>
-Bir iş parçacığına özel yapmak istediğiniz değişkenleri virgülle ayrılmış listesi. *Varyasyon* genel veya ad alanı-kapsamlı bir değişken veya yerel bir statik değişken olmalıdır.
+Bir iş parçacığına özel hale getirmek istediğiniz değişkenlerin virgülle ayrılmış listesi. *var* , genel veya ad alanı kapsamlı bir değişken ya da yerel bir statik değişken olmalıdır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`threadprivate` Yönergesi yok yan tümceleri destekler.
+`threadprivate` Yönergesi hiçbir yan tümceyi destekler.
 
-`threadprivate` Yönergesi temel [iş parçacığı](../../../cpp/thread.md) kullanarak özniteliği [__declspec](../../../cpp/declspec.md) anahtar sözcüğü; barındırabileceğiniz `__declspec(thread)` uygulamak `threadprivate`. Örneğin, bir `threadprivate` değişkeni işlemde yalnızca bir paralel bölgenin tarafından üretilen bir iş parçacığı ekibin parçası olan iş parçacığı çalışmaya herhangi bir iş parçacığı var. Bu uygulama ayrıntısıdır dikkat edin. fark edebilirsiniz oluşturucuları bir `threadprivate` kullanıcı tanımlı tür genellikle beklenen sonra daha fazla çağrılır.
+`threadprivate`Yönergesi, [__declspec anahtar](../../../cpp/declspec.md) sözcüğünü kullanan [iş parçacığı](../../../cpp/thread.md) özniteliğini temel alır; için uygulanacaksınırlar.`__declspec(thread)` `threadprivate` Örneğin, `threadprivate` bir değişken yalnızca bir paralel bölge tarafından oluşturulan iş parçacığı ekibinin parçası olan iş parçacıklarında değil, işlemde başlatılan herhangi bir iş parçacığında mevcut olacaktır. Bu uygulama ayrıntısıyla haberdar olun; Kullanıcı tanımlı bir `threadprivate` tür için oluşturucuların daha sık olarak çağrıldığını ve beklendiğine fark edebilirsiniz.
 
-Kullanabileceğiniz `threadprivate` işlem başlangıçta statik olarak yüklenen bir DLL içinde ancak kullanamazsınız `threadprivate` aracılığıyla yüklenen herhangi bir DLL içinde [LoadLibrary](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) ile yüklenen DLL'ler gibi  [ /delayload (gecikme Yükü içe)](../../../build/reference/delayload-delay-load-import.md), kullanan `LoadLibrary`.
+İşlem başlangıcında statik olarak yüklenen dll `threadprivate` [](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibraryw) 'dekullanabilirsiniz,ancakaynızamandakullanan,/delayload(Gecikmeliyükiçeriaktarma)ileyüklenendll'lergibiLoadLibraryaracılığıylayüklenecekherhangibirdll'de`threadprivate` kullanamazsınız. [](../../../build/reference/delayload-delay-load-import.md) `LoadLibrary`.
 
-A `threadprivate` değişkenine bir *yıkıcı* türü adlı yok edici için alınamayabilir. Örneğin:
+Geri *dönüşlü* bir türün değişkeni,yokedicininçağrılmamasıdurumundagarantiedilmez.`threadprivate` Örneğin:
 
 ```
 struct MyType
@@ -733,10 +733,10 @@ int main()
 }
 ```
 
-Kullanıcılar için bir paralel bölgenin oluşturan iş parçacıklarının ne zaman sona erer denetiminiz yoktur. Bu iş parçacıkları işlemi, iş parçacıkları hakkında işlem çıkış bildirilmez ve yok edici için çağrılması gerekmez varsa `threaded_var` çıkar dışındaki herhangi bir iş parçacığı üzerinde (burada, birincil iş parçacığı). Kod üzerinde uygun edilmesine sayısı olmamalıdır şekilde `threadprivate` değişkenleri.
+Kullanıcılar, paralel bölge constituting iş parçacıklarının sonlanacak şekilde hiçbir denetime sahip değildir. İşlem çıkarken bu iş parçacıkları varsa, iş parçacıkları işlem çıkışı hakkında bilgilendirilmez ve yok edici (burada, birincil iş parçacığı) dışında herhangi `threaded_var` bir iş parçacığında yok edicinin çağrılmayacağı. Bu nedenle kod, `threadprivate` değişkenlerin düzgün şekilde yok sayımında saymamalıdır.
 
-Daha fazla bilgi için [2.7.1 threadprivate yönergesi](../../../parallel/openmp/2-7-1-threadprivate-directive.md).
+Daha fazla bilgi için bkz. [2.7.1 threadprivate yönergesi](../../../parallel/openmp/2-7-1-threadprivate-directive.md).
 
 ### <a name="example"></a>Örnek
 
-Kullanarak bir örnek için `threadprivate`, bkz: [özel](openmp-clauses.md#private-openmp).
+Kullanmanın `threadprivate`bir örneği için bkz. [Private](openmp-clauses.md#private-openmp).

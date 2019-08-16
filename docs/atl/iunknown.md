@@ -6,18 +6,18 @@ helpviewer_keywords:
 - COM interfaces, base interface
 - IUnknown interface
 ms.assetid: e6b85472-e54b-4b8c-b19f-4454d6c05a8f
-ms.openlocfilehash: 17561092c6cccbad264bb82d68dbef9c0e078f76
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9c9faa4cffcdc8e6840dfbbe141cb63f51155ded
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62250301"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69492066"
 ---
 # <a name="iunknown"></a>IUnknown
 
-[IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) diğer her COM arayüzünün temel arabirimdir.  Bu arabirim üç yöntemi tanımlar: [QueryInterface](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q_)), [AddRef](/windows/desktop/api/unknwn/nf-unknwn-iunknown-addref), ve [yayın](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release). [QueryInterface](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q_)) bir arabirim kullanıcısının nesnenin arabirimlerinin başka birine işaretçi soran sağlar. [AddRef](/windows/desktop/api/unknwn/nf-unknwn-iunknown-addref) ve [yayın](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) arabirimde sayılan başvuruyu uygular.
+[IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) , DIĞER tüm com arabiriminin temel arabirimidir.  Bu arabirim üç yöntemi tanımlar: [QueryInterface](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q_)), [AddRef](/windows/win32/api/unknwn/nf-unknwn-iunknown-addref)ve [Release](/windows/win32/api/unknwn/nf-unknwn-iunknown-release). [QueryInterface](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q_)) , bir arabirim kullanıcısına, arayüzünden başka bir işaretçi için nesne sormasını sağlar. [AddRef](/windows/win32/api/unknwn/nf-unknwn-iunknown-addref) ve [Release](/windows/win32/api/unknwn/nf-unknwn-iunknown-release) arabirim üzerinde başvuru sayma uygular.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [COM’a Giriş](../atl/introduction-to-com.md)<br/>
-[IUnknown ve arabirimi devralma](/windows/desktop/com/iunknown-and-interface-inheritance)
+[IUnknown ve Arabirim devralma](/windows/win32/com/iunknown-and-interface-inheritance)

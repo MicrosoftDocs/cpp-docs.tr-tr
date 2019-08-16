@@ -1,5 +1,5 @@
 ---
-title: CEditView Class
+title: CEditView sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CEditView
@@ -40,16 +40,16 @@ helpviewer_keywords:
 - CEditView [MFC], OnTextNotFound
 - CEditView [MFC], dwStyleDefault
 ms.assetid: bf38255c-fcbe-450c-95b2-3c5e35f86c37
-ms.openlocfilehash: 3ab276e83e8642aa5de2fd96305cb6d7b648fc40
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e9b7dea980e607c776e2d50c679042c765080fdb
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62164182"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69506720"
 ---
-# <a name="ceditview-class"></a>CEditView Class
+# <a name="ceditview-class"></a>CEditView sınıfı
 
-Düzenleme denetimi ve basit metin düzenleyici işlevselliği uygulamak için kullanılan bir Windows işlevlerini sağlar sınıfını görüntüle türü.
+Bir Windows düzenleme denetiminin işlevselliğini sağlayan ve basit metin düzenleyici işlevselliği uygulamak için kullanılabilen bir görünüm sınıfı türü.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -63,70 +63,70 @@ class CEditView : public CCtrlView
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CEditView::CEditView](#ceditview)|Türünde bir nesne oluşturur `CEditView`.|
+|[CEditView:: CEditView](#ceditview)|Türünde `CEditView`bir nesne oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CEditView::FindText](#findtext)|Metin içindeki bir dizeyi arar.|
-|[CEditView::GetBufferLength](#getbufferlength)|Karakter arabelleği uzunluğu alır.|
-|[CEditView::GetEditCtrl](#geteditctrl)|Erişim sağlayan `CEdit` kısmı bir `CEditView` nesne (Windows düzenleme denetimi).|
-|[CEditView::GetPrinterFont](#getprinterfont)|Geçerli yazıcı yazı tipini alır.|
-|[CEditView::GetSelectedText](#getselectedtext)|Geçerli metin seçimi alır.|
-|[CEditView::LockBuffer](#lockbuffer)|Arabellek kilitler.|
-|[CEditView::PrintInsideRect](#printinsiderect)|Belirli bir dikdörtgenin içindeki metni işler.|
-|[CEditView::SerializeRaw](#serializeraw)|Serileştiren bir `CEditView` ham metin olarak diske nesne.|
-|[CEditView::SetPrinterFont](#setprinterfont)|Yeni bir yazıcı yazı tipini ayarlar.|
-|[CEditView::SetTabStops](#settabstops)|Kümeleri durakları ekran görüntüsü hem de yazdırma için sekmesinde.|
-|[CEditView::UnlockBuffer](#unlockbuffer)|Arabellek kilidini açar.|
+|[CEditView:: FindText](#findtext)|Metin içinde bir dize arar.|
+|[CEditView:: GetBufferLength](#getbufferlength)|Karakter arabelleğinin uzunluğunu alır.|
+|[CEditView:: GetEditCtrl](#geteditctrl)|`CEdit` Bir`CEditView` nesnenin kısmına erişim sağlar (Windows düzenleme denetimi).|
+|[CEditView:: GetPrinterFont](#getprinterfont)|Geçerli yazıcı yazı tipini alır.|
+|[CEditView:: GetSelectedText](#getselectedtext)|Geçerli metin seçimini alır.|
+|[CEditView:: LockBuffer](#lockbuffer)|Arabelleği kilitler.|
+|[CEditView::P rintInsideRect](#printinsiderect)|Metni belirli bir dikdörtgen içinde işler.|
+|[CEditView:: Serializsilinebilir w](#serializeraw)|Bir `CEditView` nesneyi ham metin olarak diske dizleştirir.|
+|[CEditView:: SetPrinterFont](#setprinterfont)|Yeni bir yazıcı yazı tipi ayarlar.|
+|[CEditView:: Settabstop](#settabstops)|Ekran görüntüleme ve yazdırma için sekme duraklarının her ikisini de ayarlar.|
+|[CEditView:: UnlockBuffer](#unlockbuffer)|Arabelleğin kilidini açar.|
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CEditView::OnFindNext](#onfindnext)|Bir metin dizesinin sonraki oluşumunu bulur.|
-|[CEditView::OnReplaceAll](#onreplaceall)|Belirli bir dize tüm oluşumlarını yeni bir dize ile değiştirir.|
-|[CEditView::OnReplaceSel](#onreplacesel)|Şu anki seçimi yerleştirir.|
-|[CEditView::OnTextNotFound](#ontextnotfound)|Herhangi bir metin eşleşmesi bulma işlemi başarısız olduğunda çağrılır.|
+|[CEditView:: onsonra](#onfindnext)|Bir metin dizesinin sonraki tekrarını bulur.|
+|[CEditView:: OnReplaceAll](#onreplaceall)|Belirli bir dizenin tüm oluşumlarını yeni bir dizeyle değiştirir.|
+|[CEditView:: OnReplaceSel](#onreplacesel)|Geçerli seçimi değiştirir.|
+|[CEditView:: OnTextNotFound](#ontextnotfound)|Bir bul işlemi başka bir metinle eşleşmediğinde çağırılır.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CEditView::dwStyleDefault](#dwstyledefault)|Varsayılan Stil türü nesneler için `CEditView`.|
+|[CEditView::d wStyleDefault](#dwstyledefault)|Türündeki `CEditView`nesneler için varsayılan stil.|
 
 ## <a name="remarks"></a>Açıklamalar
 
 `CEditView` Sınıfı aşağıdaki ek işlevleri sağlar:
 
-- Yazdırın.
+- Yazdırdığımda.
 
 - Bul ve Değiştir.
 
-Çünkü sınıfı `CEditView` sınıfı türevi olan `CView`, sınıfın nesneleri `CEditView` belgeleri ve belge şablonları ile kullanılabilir.
+Sınıfı `CEditView` `CView`, sınıfının bir türevi olduğundan, sınıf `CEditView` nesneleri belgeler ve belge şablonlarıyla birlikte kullanılabilir.
 
-Her `CEditView` denetimin metninin kendi genel bellek nesnesinde tutulur. Uygulamanızı herhangi bir sayıda olabilir `CEditView` nesneleri.
+Her `CEditView` denetim metni kendi genel bellek nesnesinde tutulur. Uygulamanız herhangi bir sayıda `CEditView` nesneye sahip olabilir.
 
-Türündeki nesneler oluşturma `CEditView` yukarıda listelenen eklenen işlevselliğe sahip bir düzenleme penceresi istiyorsanız veya basit metin düzenleyici işlevselliği istiyorsanız. A `CEditView` nesne pencere tüm istemci alanını kaplayacak. Kendi sınıflarından `CEditView` eklemek veya temel işlevlerini değiştirmek için ya da bir belge şablonuna eklenebilir sınıfları bildirme.
+Yukarıda listelenen ekleme işlevleriyle `CEditView` bir düzenleme penceresi istiyorsanız veya basit metin düzenleyici işlevselliği istiyorsanız, türünde nesneler oluşturun. Bir `CEditView` nesne, bir pencerenin tüm istemci alanını açabilir. Temel işlevleri eklemek veya değiştirmek `CEditView` ya da bir belge şablonuna eklenebilen sınıfları bildirmek için ' den kendi sınıflarınızı türetebilirsiniz.
 
-Sınıfın varsayılan uygulaması `CEditView` aşağıdaki komutları işler: Id_edıt_select_all, ıd_edıt_fınd, ıd_edıt_replace, ıd_edıt_repeat ve ıd_fıle_prınt.
+Sınıfının `CEditView` varsayılan uygulanması aşağıdaki komutları işler: ID_EDIT_SELECT_ALL, ID_EDIT_FIND, ID_EDIT_REPLACE, ID_EDIT_REPEAT ve ID_FILE_PRINT.
 
-Varsayılan karakter sınırını `CEditView` olduğu (1024 \* 1048575 = 1024-1). Bu, temel alınan düzenleme denetiminin EM_LIMITTEXT işlevini çağırarak değiştirilebilir. Ancak, sınırları işletim sistemine göre farklılık gösterir ve türünü düzenleme denetimi (tek veya çok satırlı). Bu sınırlar hakkında daha fazla bilgi için bkz. [EM_LIMITTEXT](/windows/desktop/Controls/em-limittext).
+İçin `CEditView` varsayılan karakter sınırı (1024 \* 1024-1 = 1048575). Bu, temeldeki düzenleme denetiminin EM_LIMITTEXT işlevi çağırarak değiştirilebilir. Ancak, sınırlar işletim sistemine ve düzenleme denetiminin türüne (tek veya çok satırlı) bağlı olarak farklılık de vardır. Bu limitlerin hakkında daha fazla bilgi için bkz. [EM_LIMITTEXT](/windows/win32/Controls/em-limittext).
 
-Denetiminizin içinde bu sınırı değiştirmek için geçersiz kılın `OnCreate()` için işlev uygulamanızın `CEditView` sınıfı ve aşağıdaki kod satırını ekleyin:
+Denetiinizde bu sınırı değiştirmek için, `OnCreate()` `CEditView` sınıfınızın işlevini geçersiz kılın ve aşağıdaki kod satırını ekleyin:
 
 [!code-cpp[NVC_MFCDocView#65](../../mfc/codesnippet/cpp/ceditview-class_1.cpp)]
 
-Türündeki nesneler `CEditView` (veya türetilmiş türlerin `CEditView`) aşağıdaki sınırlamalara sahiptir:
+Türündeki `CEditView` nesneler (veya öğesinden `CEditView`türetilmiş türler) aşağıdaki sınırlamalara sahiptir:
 
-- `CEditView` TRUE uygulamıyor gördüğünüz (WYSIWYG) düzenleme aldığınızdır. Olduğunda bir seçim ekranında okunabilirlik ve eşleşen çıktılar, arasında `CEditView` ekran okunabilirlik açısından kabul eder.
+- `CEditView`, ne görmelerinizi (WYSıWYG) düzenlemenizi, doğru uygulamaz. Ekranda okunabilirlik ve eşleşen yazdırılmış çıktı `CEditView` arasında seçim olduğunda ekran okunabilirlik için OptIn 'ler vardır.
 
-- `CEditView` yalnızca tek bir yazı tipinde metni görüntüleyebilirsiniz. Hiçbir özel karakter biçimlendirme desteklenir. Sınıfına bakın [CRichEditView](../../mfc/reference/cricheditview-class.md) büyük özelliklerin.
+- `CEditView`yalnızca tek bir yazı tipinde metin gösterebilir. Özel karakter biçimlendirme desteklenmez. Daha fazla özellik için bkz. sınıf [CRichEditView](../../mfc/reference/cricheditview-class.md) .
 
-- Metin miktarını bir `CEditView` içerebilir sınırlıdır. Aynı limitlerdir `CEdit` denetimi.
+- Bir `CEditView` metnin içerebileceği metin miktarı sınırlıdır. Sınırlar, `CEdit` denetim ile aynıdır.
 
-Daha fazla bilgi için `CEditView`, bkz: [türetilmiş görünüm sınıfları kullanılabilir MFC'de](../../mfc/derived-view-classes-available-in-mfc.md).
+Hakkında `CEditView`daha fazla bilgi için bkz. [MFC 'de kullanılabilen türetilmiş Görünüm sınıfları](../../mfc/derived-view-classes-available-in-mfc.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -144,11 +144,11 @@ Daha fazla bilgi için `CEditView`, bkz: [türetilmiş görünüm sınıfları k
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxext.h
+**Üstbilgi:** afxext. h
 
-##  <a name="ceditview"></a>  CEditView::CEditView
+##  <a name="ceditview"></a>CEditView:: CEditView
 
-Türünde bir nesne oluşturur `CEditView`.
+Türünde `CEditView`bir nesne oluşturur.
 
 ```
 CEditView();
@@ -156,11 +156,11 @@ CEditView();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Nesne oluşturduktan sonra çağırmanız gerekir [CWnd::Create](../../mfc/reference/cwnd-class.md#create) düzenleme denetiminin kullanılmadan önce işlev. Öğesinden bir sınıf türetirseniz `CEditView` ve şablon kullanarak ekleyin `CWinApp::AddDocTemplate`, çerçevesi hem bu oluşturucuyu çağırır ve `Create` işlevi.
+Nesnesi oluşturulduktan sonra, düzenleme denetimi kullanılmadan önce [CWnd:: Create](../../mfc/reference/cwnd-class.md#create) işlevini çağırmanız gerekir. Öğesinden `CEditView` bir sınıf türetirsiniz ve kullanarak `CWinApp::AddDocTemplate`şablona eklerseniz, çerçeve `Create` hem bu oluşturucuyu hem de işlevini çağırır.
 
-##  <a name="dwstyledefault"></a>  CEditView::dwStyleDefault
+##  <a name="dwstyledefault"></a>CEditView::d wStyleDefault
 
-Varsayılan stilini içeren `CEditView` nesne.
+`CEditView` Nesnenin varsayılan stilini içerir.
 
 ```
 static const DWORD dwStyleDefault;
@@ -168,11 +168,11 @@ static const DWORD dwStyleDefault;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu statik bir üye olarak geçirmek *dwStyle* parametresinin `Create` işlevini varsayılan stilini alabilirsiniz `CEditView` nesne.
+Nesnenin varsayılan stilini almak için bu statik üyeyi `Create` işlevin *dwStyle* parametresi olarak geçirin. `CEditView`
 
-##  <a name="findtext"></a>  CEditView::FindText
+##  <a name="findtext"></a>CEditView:: FindText
 
-Çağrı `FindText` aranacak işlev `CEditView` nesnenin metin arabelleği.
+`CEditView` Nesnenin metin arabelleğini aramak için işleviçağırın.`FindText`
 
 ```
 BOOL FindText(
@@ -184,27 +184,27 @@ BOOL FindText(
 ### <a name="parameters"></a>Parametreler
 
 *lpszFind*<br/>
-Bulunacak metin.
+Bulunan metin.
 
-*bİleri*<br/>
-Arama yönünü belirtir. TRUE ise arama yönünü arabelleğin sonuna doğru ' dir. FALSE ise, arama yönünü arabellek doğru başlangıcıdır.
+*bNext*<br/>
+Aramanın yönünü belirtir. DOĞRU ise, arama yönü arabelleğin sonuna doğru olur. FALSE ise, arama yönü arabelleğin başına doğru olur.
 
 *bCase*<br/>
-Arama büyük/küçük harfe duyarlı olup olmadığını belirtir. TRUE ise, arama büyük/küçük harfe duyarlıdır. FALSE ise, arama büyük/küçük harfe duyarlı değil.
+Aramanın büyük/küçük harfe duyarlı olup olmadığını belirtir. DOĞRU ise, arama büyük/küçük harfe duyarlıdır. FALSE ise, arama büyük/küçük harfe duyarlı değildir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Arama metni bulundu olursa sıfır dışı; Aksi durumda 0.
+Arama metni bulunursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev metin tarafından belirtilen metin için arabellek arar *lpszFind*tarafından belirtilen yönde geçerli seçimi başlayan *bİleri*ile tarafındanbelirtilenbüyük/küçükharfeduyarlılık*bCase*. Metin bulunursa bulunan metinde seçimi ayarlar ve sıfır olmayan bir değer döndürür. Metin bulunamazsa, işlev 0 döndürür.
+Bu işlev, Geçerli seçimden başlayarak, *bNext*tarafından belirtilen yönde ve *bCase*tarafından belirtilen büyük/küçük harf duyarlılığı ile *lpszFind*tarafından belirtilen metin için arabellekteki metni arar. Metin bulunursa, seçimi bulunan metne ayarlar ve sıfır dışında bir değer döndürür. Metin bulunamazsa, işlev 0 döndürür.
 
-Normalde çağrı gerekmez `FindText` geçersiz kılmanız sürece işlev `OnFindNext`, çağıran `FindText`.
+Genellikle, öğesini geçersiz kılmadığınız `FindText` `OnFindNext`takdirde işlevini çağırmanız gerekmez, ancak çağırır `FindText`.
 
-##  <a name="getbufferlength"></a>  CEditView::GetBufferLength
+##  <a name="getbufferlength"></a>CEditView:: GetBufferLength
 
-Şu anda Sonlandırıcı null içermeden düzenleme denetiminin arabelleği karakter sayısını almak için bu üye işlevini çağırın.
+Null Sonlandırıcı dahil değil, düzenleme denetimi arabelleğinde Şu anda bulunan karakter sayısını almak için bu üye işlevi çağırın.
 
 ```
 UINT GetBufferLength() const;
@@ -212,11 +212,11 @@ UINT GetBufferLength() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dize arabelleği uzunluğu.
+Arabellekteki dizenin uzunluğu.
 
-##  <a name="geteditctrl"></a>  CEditView::GetEditCtrl
+##  <a name="geteditctrl"></a>CEditView:: GetEditCtrl
 
-Çağrı `GetEditCtrl` düzenleme görünümü tarafından kullanılan düzenleme denetimine bir başvuru almak için.
+Düzenleme `GetEditCtrl` görünümü tarafından kullanılan düzenleme denetimine başvuru almak için çağırın.
 
 ```
 CEdit& GetEditCtrl() const;
@@ -224,22 +224,22 @@ CEdit& GetEditCtrl() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir başvuru bir `CEdit` nesne.
+Bir `CEdit` nesneye başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu denetim türünde [CEdit](../../mfc/reference/cedit-class.md)kullanarak doğrudan Windows düzenleme denetimi değiştirebilirsiniz. Bu nedenle `CEdit` üye işlevleri.
+Bu denetim [cedıt](../../mfc/reference/cedit-class.md)türünde olduğundan, Windows düzenleme denetimini doğrudan `CEdit` üye işlevleri kullanarak değiştirebilirsiniz.
 
 > [!CAUTION]
->  Kullanarak `CEdit` nesnesi değişiklik durumunu temel alınan Windows düzenleme denetimi. Örneğin, kullanarak sekme ayarlarını değiştirmemelisiniz [CEdit::SetTabStops](../../mfc/reference/cedit-class.md#settabstops) olduğundan işlev `CEditView` hem de düzenleme denetiminin yazdırmada kullanmak için bu ayarları önbelleğe alır. Bunun yerine, [CEditView::SetTabStops](#settabstops).
+>  `CEdit` Nesnesini kullanmak, temeldeki Windows düzenleme denetiminin durumunu değiştirebilir. Örneğin, bu ayarları hem düzenleme denetiminde hem de baskıda kullanılmak üzere önbelleğe aldığından `CEditView` , [cedıt:: settabstop](../../mfc/reference/cedit-class.md#settabstops) işlevini kullanarak sekme ayarlarını değiştirmemelisiniz. Bunun yerine [CEditView:: Settabstop](#settabstops)kullanın.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDocView#66](../../mfc/codesnippet/cpp/ceditview-class_2.cpp)]
 
-##  <a name="getprinterfont"></a>  CEditView::GetPrinterFont
+##  <a name="getprinterfont"></a>CEditView:: GetPrinterFont
 
-Çağrı `GetPrinterFont` işaretçisi almak için bir [CFont](../../mfc/reference/cfont-class.md) geçerli yazıcı yazı tipini açıklayan nesnesi.
+Geçerli `GetPrinterFont` yazıcı yazı tipini açıklayan bir [CFont](../../mfc/reference/cfont-class.md) nesnesine bir işaretçi almak için çağırın.
 
 ```
 CFont* GetPrinterFont() const;
@@ -247,17 +247,17 @@ CFont* GetPrinterFont() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir işaretçi bir `CFont` geçerli yazıcı yazı tipi; belirten nesne Yazıcı yazı tipi ayarlanmamışsa yoksa NULL. İşaretçi geçici olabilir ve daha sonra kullanmak üzere saklanmalıdır değil.
+Geçerli yazıcı yazı tipini `CFont` belirten bir nesne işaretçisi; Yazıcı yazı tipi ayarlanmamışsa NULL. İşaretçi geçici olabilir ve daha sonra kullanılmak üzere depolanmamalıdır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yazıcı yazı tipi, varsayılan davranışını yazdırma ayarlanmamış ise `CEditView` görüntülemek için kullanılan yazı tipini kullanarak yazdırma sınıftır.
+Yazıcı yazı tipi ayarlanmamışsa, `CEditView` sınıfının varsayılan yazdırma davranışı, görüntüleme için kullanılan yazı tipini kullanarak yazdırılır.
 
-Geçerli yazıcı yazı tipi belirlemek için bu işlevi kullanın. İstenen yazıcı yazı tipi değil kullanırsanız [CEditView::SetPrinterFont](#setprinterfont) değiştirmek için.
+Geçerli yazıcı yazı tipini öğrenmek için bu işlevi kullanın. İstenen yazıcı yazı tipi değilse, değiştirmek için [CEditView:: SetPrinterFont](#setprinterfont) kullanın.
 
-##  <a name="getselectedtext"></a>  CEditView::GetSelectedText
+##  <a name="getselectedtext"></a>CEditView:: GetSelectedText
 
-Çağrı `GetSelectedText` seçilen metne kopyalamak için bir `CString` seçim ya da seçimdeki ilk satır başı karakteri önceki karakter sonuna kadar bir nesne.
+Seçili `GetSelectedText` metni, seçimin sonuna kadar veya seçimdeki `CString` ilk satır başı karakterden önceki karakteri bir nesneye kopyalamak için çağırın.
 
 ```
 void GetSelectedText(CString& strResult) const;
@@ -266,11 +266,11 @@ void GetSelectedText(CString& strResult) const;
 ### <a name="parameters"></a>Parametreler
 
 *strResult*<br/>
-Bir başvuru `CString` seçili metni almak için olan nesne.
+Seçili metni alacak `CString` nesneye bir başvuru.
 
-##  <a name="lockbuffer"></a>  CEditView::LockBuffer
+##  <a name="lockbuffer"></a>CEditView:: LockBuffer
 
-Bir işaretçi arabelleğe almak için bu üye işlevini çağırın. Arabellek değiştirilmemelidir.
+Arabelleğin işaretçisini almak için bu üye işlevini çağırın. Arabellek değiştirilmemelidir.
 
 ```
 LPCTSTR LockBuffer() const;
@@ -278,11 +278,11 @@ LPCTSTR LockBuffer() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Düzenleme denetiminin arabellek için işaretçi.
+Düzenleme denetiminin arabelleğine yönelik bir işaretçi.
 
-##  <a name="onfindnext"></a>  CEditView::OnFindNext
+##  <a name="onfindnext"></a>CEditView:: onsonra
 
-Metin olarak belirtilen metin için arabellek arar *lpszFind*, tarafından belirtilen yönde *bİleri*, büyük/küçük harfe duyarlılık tarafından belirtilen ile *bCase*.
+*LpszFind*tarafından belirtilen metin için arabellekteki metni, bCase tarafından büyük/küçük harf duyarlılığı belirtilmiş şekilde *bNext*tarafından belirtilen yönde arar.
 
 ```
 virtual void OnFindNext(
@@ -294,23 +294,23 @@ virtual void OnFindNext(
 ### <a name="parameters"></a>Parametreler
 
 *lpszFind*<br/>
-Bulunacak metin.
+Bulunan metin.
 
-*bİleri*<br/>
-Arama yönünü belirtir. TRUE ise arama yönünü arabelleğin sonuna doğru ' dir. FALSE ise, arama yönünü arabellek doğru başlangıcıdır.
+*bNext*<br/>
+Aramanın yönünü belirtir. DOĞRU ise, arama yönü arabelleğin sonuna doğru olur. FALSE ise, arama yönü arabelleğin başına doğru olur.
 
 *bCase*<br/>
-Arama büyük/küçük harfe duyarlı olup olmadığını belirtir. TRUE ise, arama büyük/küçük harfe duyarlıdır. FALSE ise, arama büyük/küçük harfe duyarlı değil.
+Aramanın büyük/küçük harfe duyarlı olup olmadığını belirtir. DOĞRU ise, arama büyük/küçük harfe duyarlıdır. FALSE ise, arama büyük/küçük harfe duyarlı değildir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Arama geçerli seçimi başlangıcında başlar ve yapılan bir çağrıyla gerçekleştirilir [FindText](#findtext). Varsayılan uygulamada, `OnFindNext` çağrıları [OnTextNotFound](#ontextnotfound) metin bulunmazsa.
+Arama, geçerli seçimin başlangıcında başlar ve [FindText](#findtext)çağrısıyla gerçekleştirilir. Varsayılan uygulamada, metin bulunamazsa `OnFindNext` [OnTextNotFound](#ontextnotfound) ' ı çağırır.
 
-Geçersiz kılma `OnFindNext` şeklini değiştirmek için bir `CEditView`-türetilmiş nesneden metin araması yapar. `CEditView` çağrıları `OnFindNext` , kullanıcının seçtiği Sonrakini Bul düğmesini standart Bul iletişim kutusunda.
+`OnFindNext` Bir`CEditView`türetilmiş nesnenin metni arama şeklini değiştirmek için geçersiz kılın. `CEditView`Kullanıcı `OnFindNext` standart bul iletişim kutusunda Sonrakini Bul düğmesini seçtiğinde çağırır.
 
-##  <a name="onreplaceall"></a>  CEditView::OnReplaceAll
+##  <a name="onreplaceall"></a>CEditView:: OnReplaceAll
 
-`CEditView` çağrıları `OnReplaceAll` kullanıcı standart Değiştir iletişim kutusunda Tümünü Değiştir düğmesini seçtiğinde.
+`CEditView`Kullanıcı `OnReplaceAll` standart Değiştir iletişim kutusundaki Tümünü Değiştir düğmesini seçtiğinde çağırır.
 
 ```
 virtual void OnReplaceAll(
@@ -322,25 +322,25 @@ virtual void OnReplaceAll(
 ### <a name="parameters"></a>Parametreler
 
 *lpszFind*<br/>
-Bulunacak metin.
+Bulunan metin.
 
 *lpszReplace*<br/>
-Arama metni değiştirilecek metni.
+Arama metninin yerini alacak metin.
 
 *bCase*<br/>
-Arama büyük/küçük harfe duyarlı olup olmadığını belirtir. TRUE ise, arama büyük/küçük harfe duyarlıdır. FALSE ise, arama büyük/küçük harfe duyarlı değil.
+Aramanın büyük/küçük harfe duyarlı olup olmadığını belirtir. DOĞRU ise, arama büyük/küçük harfe duyarlıdır. FALSE ise, arama büyük/küçük harfe duyarlı değildir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`OnReplaceAll` metin olarak belirtilen metin için arabellek arar *lpszFind*, büyük/küçük harfe duyarlılık tarafından belirtilen ile *bCase*. Arama geçerli seçimin başlangıçtan başlar. Her arama metni bulunamadı, bu işlev, oluşumunu metin tarafından belirtilen metinle değiştirir. *lpszReplace*. Arama yapılan bir çağrıyla gerçekleştirilir [FindText](#findtext). Varsayılan uygulamada, [OnTextNotFound](#ontextnotfound) metin bulunamazsa çağrılır.
+`OnReplaceAll`*lpszFind*tarafından belirtilen metin için arabellekteki metni, *bCase*ile belirtilen büyük/küçük harf duyarlılığı ile arar. Arama, geçerli seçimin başlangıcında başlar. Arama metninin her bulunduğu her seferinde, bu işlev metnin *lpszReplace*tarafından belirtilen metinle değiştirir. Arama, [FindText](#findtext)çağrısıyla gerçekleştirilir. Varsayılan uygulamada [OnTextNotFound](#ontextnotfound) , metin bulunamazsa çağırılır.
 
-Geçerli seçimi eşleşmiyorsa *lpszFind*, seçimi tarafından belirtilen metnin ilk geçtiği yere güncelleştirilir *lpszFind* ve bir değiştirme gerçekleştirilemiyor. Bu, kullanıcının bu seçimi değiştirilecek metni eşleşmediğinde yapmak istediğini olduğunu onaylamak sağlar.
+Geçerli seçim *lpszFind*ile eşleşmiyorsa, seçim *lpszFind* tarafından belirtilen metnin ilk oluşumuna güncelleştirilir ve bir değiştirme gerçekleştirilmez. Bu, kullanıcının, seçimi değiştirilmekte olan metinle eşleşmediği zaman ne yapmak istediğiyle ilgili olduğunu onaylamasını sağlar.
 
-Geçersiz kılma `OnReplaceAll` şeklini değiştirmek için bir `CEditView`-türetilmiş nesneden metin değiştirir.
+`OnReplaceAll` Bir`CEditView`türetilen nesnenin metni değiştirme şeklini değiştirmek için geçersiz kılın.
 
-##  <a name="onreplacesel"></a>  CEditView::OnReplaceSel
+##  <a name="onreplacesel"></a>CEditView:: OnReplaceSel
 
-`CEditView` çağrıları `OnReplaceSel` kullanıcı standart Değiştir iletişim kutusunda Değiştir düğmesini seçtiğinde.
+`CEditView`Kullanıcı `OnReplaceSel` standart değiştirme iletişim kutusunda Değiştir düğmesini seçtiğinde çağırır.
 
 ```
 virtual void OnReplaceSel(
@@ -353,26 +353,26 @@ virtual void OnReplaceSel(
 ### <a name="parameters"></a>Parametreler
 
 *lpszFind*<br/>
-Bulunacak metin.
+Bulunan metin.
 
-*bİleri*<br/>
-Arama yönünü belirtir. TRUE ise arama yönünü arabelleğin sonuna doğru ' dir. FALSE ise, arama yönünü arabellek doğru başlangıcıdır.
+*bNext*<br/>
+Aramanın yönünü belirtir. DOĞRU ise, arama yönü arabelleğin sonuna doğru olur. FALSE ise, arama yönü arabelleğin başına doğru olur.
 
 *bCase*<br/>
-Arama büyük/küçük harfe duyarlı olup olmadığını belirtir. TRUE ise, arama büyük/küçük harfe duyarlıdır. FALSE ise, arama büyük/küçük harfe duyarlı değil.
+Aramanın büyük/küçük harfe duyarlı olup olmadığını belirtir. DOĞRU ise, arama büyük/küçük harfe duyarlıdır. FALSE ise, arama büyük/küçük harfe duyarlı değildir.
 
 *lpszReplace*<br/>
-Bulunan metni değiştirilecek metni.
+Bulunan metnin yerine geçecek metin.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Seçimi değiştirildikten sonra bu işlevi metin Sonrakini tarafından belirtilen metin için arabellek arar *lpszFind*, tarafından belirtilen yönde *bİleri*, büyük/küçük harfe duyarlılık ile tarafından belirtilen *bCase*. Arama yapılan bir çağrıyla gerçekleştirilir [FindText](#findtext). Metin bulunamazsa [OnTextNotFound](#ontextnotfound) çağrılır.
+Bu işlev, seçimi değiştirdikten sonra, bCase tarafından belirtilen şekilde, *bCase*tarafından belirtilen şekilde, bNext tarafından belirtilen yönde *lpszFind*tarafından belirtilen metnin birsonraki tekrarı için arabellekteki metni arar. Arama, [FindText](#findtext)çağrısıyla gerçekleştirilir. Metin bulunamazsa [OnTextNotFound](#ontextnotfound) çağırılır.
 
-Geçersiz kılma `OnReplaceSel` şeklini değiştirmek için bir `CEditView`-türetilmiş nesnenin seçili metni değiştirir.
+`OnReplaceSel` Bir`CEditView`-türetilmiş nesnenin seçili metnin yerini değiştirme şeklini değiştirmek için geçersiz kılın.
 
-##  <a name="ontextnotfound"></a>  CEditView::OnTextNotFound
+##  <a name="ontextnotfound"></a>CEditView:: OnTextNotFound
 
-Windows işlevini çağıran varsayılan uygulamayı değiştirmek için bu işlevi geçersiz kılma `MessageBeep`.
+Windows işlevini `MessageBeep`çağıran varsayılan uygulamayı değiştirmek için bu işlevi geçersiz kılın.
 
 ```
 virtual void OnTextNotFound(LPCTSTR lpszFind);
@@ -381,11 +381,11 @@ virtual void OnTextNotFound(LPCTSTR lpszFind);
 ### <a name="parameters"></a>Parametreler
 
 *lpszFind*<br/>
-Bulunacak metin.
+Bulunan metin.
 
-##  <a name="printinsiderect"></a>  CEditView::PrintInsideRect
+##  <a name="printinsiderect"></a>CEditView::P rintInsideRect
 
-Çağrı `PrintInsideRect` tarafından belirtilen dikdörtgenin içindeki metni yazdırmak için *rectLayout*.
+`PrintInsideRect` *RectLayout*tarafından belirtilen dikdörtgende yazdırma metni çağrısı.
 
 ```
 UINT PrintInsideRect(
@@ -397,31 +397,31 @@ UINT PrintInsideRect(
 
 ### <a name="parameters"></a>Parametreler
 
-*pDC*<br/>
-Yazıcı cihaz bağlamı işaretçisi.
+*Kökündeki*<br/>
+Yazıcı cihaz bağlamına yönelik işaretçi.
 
 *rectLayout*<br/>
-Başvuru bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesne veya [RECT yapısı](/windows/desktop/api/windef/ns-windef-tagrect) metin olduğu işlenecek dikdörtgen belirtme.
+Metin işlenecek dikdörtgeni belirten bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesine veya [Rect yapısına](/windows/win32/api/windef/ns-windef-rect) başvuru.
 
 *nIndexStart*<br/>
-İşlenecek ilk karakterin arabellek içinde dizin.
+İşlenecek ilk karakter arabelleğinin içindeki dizin.
 
-*nIndexStop*<br/>
-İşlenecek son karakter izleyen karakterin arabellek içinde dizin.
+*Nındexstop*<br/>
+İşlenecek son karakteri izleyen karakter arabelleği içinde dizin.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yazdırılacak sıradaki karakterin dizini (diğer bir deyişle, işlenen son karakter karakter).
+Yazdırılacak sonraki karakterin dizini (diğer bir deyişle, işlenen son karakteri izleyen karakter).
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsa `CEditView` denetim stili ES_AUTOHSCROLL yok, metin işleme dikdörtgen içinde kaydırılır. Denetim stili ES_AUTOHSCROLL varsa, bu metin dikdörtgenin sağ kenarda kırpılır.
+`CEditView` Denetimde stil es_autohscroll yoksa metin işleme dikdörtgeni içinde sarmalanır. Denetimde ES_AUTOHSCROLL stili varsa, metin dikdörtgenin sağ kenarında kırpılır.
 
-`rect.bottom` Öğesinin *rectLayout* metne göre dolu özgün dikdörtgen parçası dikdörtgenin boyutlarını tanımlamak için nesne değiştirilir.
+*RectLayout* nesnesinin öğesi,dikdörtgeninboyutlarınınmetintarafındankullanılanorijinaldikdörtgeninparçasınıtanımlayabilmesiiçindeğiştirilir.`rect.bottom`
 
-##  <a name="serializeraw"></a>  CEditView::SerializeRaw
+##  <a name="serializeraw"></a>CEditView:: Serializsilinebilir w
 
-Çağrı `SerializeRaw` sağlamak için bir `CArchive` nesne okuma veya metin yazmak `CEditView` bir metin dosyasına nesne.
+`CEditView` Bir `SerializeRaw` nesnenin`CArchive` metin dosyasına okuma veya nesne içindeki metni yazma için çağrısı.
 
 ```
 void SerializeRaw(CArchive& ar);
@@ -429,16 +429,16 @@ void SerializeRaw(CArchive& ar);
 
 ### <a name="parameters"></a>Parametreler
 
-*ar*<br/>
-Başvuru `CArchive` seri hale getirilmiş metin depolayan bir nesne.
+*Ar*<br/>
+Seri hale getirilmiş metni depolayan nesneyebaşvuru.`CArchive`
 
 ### <a name="remarks"></a>Açıklamalar
 
-`SerializeRaw` farklıdır `CEditView`'s, iç uygulama `Serialize` okur ve yalnızca metin, nesne açıklama verilerini önceki olmadan yazar.
+`SerializeRaw`, önceki nesne açıklama verileri olmadan `Serialize` yalnızca metni okuyup yazdığından ' ın iç uygulamasına göre farklılık gösterir. `CEditView`
 
-##  <a name="setprinterfont"></a>  CEditView::SetPrinterFont
+##  <a name="setprinterfont"></a>CEditView:: SetPrinterFont
 
-Çağrı `SetPrinterFont` tarafından belirtilen yazı tipi yazıcı yazı tipi koymak için *pFont*.
+Yazıcı `SetPrinterFont` yazı tipini *pfont*tarafından belirtilen yazı tipine ayarlamak için çağırın.
 
 ```
 void SetPrinterFont(CFont* pFont);
@@ -447,15 +447,15 @@ void SetPrinterFont(CFont* pFont);
 ### <a name="parameters"></a>Parametreler
 
 *pFont*<br/>
-Türü bir nesneye bir işaretçi `CFont`. NULL ise, yazdırma için kullanılan yazıtipi görünen yazı tipini alır.
+Türünde `CFont`bir nesne için bir işaretçi. NULL ise, yazdırma için kullanılan yazı tipi, görüntüleme yazı tipine göre belirlenir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Görünümünüzü her zaman belirli bir yazı tipi yazdırma için kullanmak istiyorsanız, bir çağrı ekleyin `SetPrinterFont` sınıfınızın içinde `OnPreparePrinting` işlevi. Yazdırma gerçekleşmeden önce görünümün içeriğini yazdırılır önce yazı tipi değişiklik gerçekleşmeden şekilde bu sanal işlev çağrılır.
+Görünümlerinizin yazdırma için her zaman belirli bir yazı tipini kullanmasını istiyorsanız, `SetPrinterFont` `OnPreparePrinting` sınıfınızın işlevindeki bir çağrı ekleyin. Bu sanal işlev yazdırma gerçekleşmeden önce çağrılır, bu nedenle yazı tipi değişikliği, görünümün içerikleri yazdırılmadan önce gerçekleştirilir.
 
-##  <a name="settabstops"></a>  CEditView::SetTabStops
+##  <a name="settabstops"></a>CEditView:: Settabstop
 
-Görüntüleme ve yazdırma için kullanılan sekme durakları ayarlamak için bu işlevi çağırın.
+Görüntüleme ve yazdırma için kullanılan sekme duraklarının ayarlanması için bu işlevi çağırın.
 
 ```
 void SetTabStops(int nTabStops);
@@ -463,24 +463,24 @@ void SetTabStops(int nTabStops);
 
 ### <a name="parameters"></a>Parametreler
 
-*nTabStops*<br/>
-İletişim kutusu birimlerinde her sekme durağı genişliği.
+*Ntabstop*<br/>
+Her sekme durağını, iletişim kutusu birimlerinde Genişlik.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yalnızca tek bir sekme durağı genişliği desteklenir. ( `CEdit` nesneleri birden çok sekme genişliği destekler.) Eşit dörtte biri (büyük ve küçük harf alfabetik karakterleri üzerinde yalnızca bağlı olarak) ortalama karakter genişliği yazdırma veya görüntüleme sırasında kullanılan yazı tipi iletişim kutusu birimlerinde, genişliklerini var. Kullanmamalısınız `CEdit::SetTabStops` çünkü `CEditView` sekme durağı değerini önbelleğe gerekir.
+Yalnızca tek bir sekme durağı genişliği desteklenir. ( `CEdit` nesneler birden çok sekme genişliğini destekler.) Genişlikler, baskı veya görüntüleme sırasında kullanılan yazı tipinin (yalnızca büyük ve küçük harfli alfabetik karakterlere göre), ortalama karakter genişliğinin dörtte birine eşit olan iletişim kutusu birimleridir. ' İ kullanmanız `CEdit::SetTabStops` gerekir, `CEditView` çünkü Tab-stop değerini önbelleğe almalısınız.
 
-Bu işlev yalnızca sekmeler için çağırıldığı nesnenin değiştirir. Sekme değiştirmek için her biri için durdurur `CEditView` uygulamanızda nesnesi, her nesnenin `SetTabStops` işlevi.
+Bu işlev, yalnızca çağrılan nesnenin sekmelerini değiştirir. Uygulamanızdaki her `CEditView` bir nesne için sekme duraklarının değiştirilmesini değiştirmek için, her `SetTabStops` nesnenin işlevini çağırın.
 
 ### <a name="example"></a>Örnek
 
-Bu kod parçasını sekme durakları her dördüncü karakterin denetime ekleyeceğini yazı tipi ölçerek dikkatli bir şekilde ayarlar.
+Bu kod parçası, denetimin kullandığı yazı tipini dikkatle ölçerek denetimdeki sekme duraklarının her dördüncü karaktere göre ayarlanır.
 
 [!code-cpp[NVC_MFCDocView#67](../../mfc/codesnippet/cpp/ceditview-class_3.cpp)]
 
-##  <a name="unlockbuffer"></a>  CEditView::UnlockBuffer
+##  <a name="unlockbuffer"></a>CEditView:: UnlockBuffer
 
-Arabellek kilidini açmak için bu üye işlevini çağırın.
+Arabelleğin kilidini açmak için bu üye işlevini çağırın.
 
 ```
 void UnlockBuffer() const;
@@ -488,11 +488,11 @@ void UnlockBuffer() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağrı `UnlockBuffer` tarafından döndürülen işaretçi'ı kullanmayı bitirdikten sonra [LockBuffer](#lockbuffer).
+`UnlockBuffer` [LockBuffer](#lockbuffer)tarafından döndürülen işaretçiyi kullanmayı bitirdikten sonra çağrısı yapın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC örnek SUPERPAD](../../overview/visual-cpp-samples.md)<br/>
+[MFC örnek üst PANELI](../../overview/visual-cpp-samples.md)<br/>
 [CCtrlView Sınıfı](../../mfc/reference/cctrlview-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
 [CEdit Sınıfı](../../mfc/reference/cedit-class.md)<br/>

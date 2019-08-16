@@ -11,42 +11,42 @@ helpviewer_keywords:
 - Active technology [MFC]
 - COM [MFC], MFC support
 ms.assetid: 7646bdcb-3a06-4ed5-9386-9b00f3979dcb
-ms.openlocfilehash: 67c7ea3e93b3158abc552c552c450c31c109be80
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: eab688022c311f3d20fc092736ee4c7d37232a43
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62239199"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69508087"
 ---
 # <a name="mfc-com"></a>MFC COM
 
-MFC bir alt kümesi, en etkin Şablon kitaplığı (ATL), tasarlanmış olmasına rağmen COM'u desteklemek üzere tasarlanmıştır COM programlama için. Bu bölümde konu com için MFC'nin desteğini açıklar.
+MFC 'nin bir alt kümesi COM desteği için tasarlanmıştır, ancak etkin şablon kitaplığı (ATL) çoğu COM programlama için tasarlanmıştır. Konuların bu bölümü, MFC 'nin COM desteğini açıklar.
 
-(Örneğin, ActiveX denetimleri, etkin belge kapsaması, OLE ve benzeri) etkin teknolojileri, ağ ortamında, oldukları diline bakılmaksızın birbiriyle etkileşim kurmak yazılım bileşenlerini etkinleştirmek için Bileşen Nesne Modeli (COM) kullanın. oluşturuldu. Etkin teknoloji, masaüstü veya Internet üzerinde çalışan uygulamalar oluşturmak için kullanılabilir. Daha fazla bilgi için [COM'a giriş](../atl/introduction-to-com.md) veya [Bileşen Nesne modeli](/windows/desktop/com/the-component-object-model).
+Etkin teknolojiler (ActiveX denetimleri, etkin belge kapsama, OLE vb.), yazılım bileşenlerinin ağ ortamında birbirleriyle etkileşime geçmesini sağlamak için bileşen nesne modeli 'ni (COM) kullanır ve bu diller, yaratıl. Etkin teknolojiler masaüstü veya Internet üzerinde çalışan uygulamalar oluşturmak için kullanılabilir. Daha fazla bilgi için bkz. COM veya [bileşen nesne modeline](/windows/win32/com/the-component-object-model) [giriş](../atl/introduction-to-com.md) .
 
-Etkin teknoloji, aşağıdakiler dahil olmak üzere, istemci ve sunucu teknolojileri şunları içerir:
+Etkin teknolojiler, aşağıdakiler de dahil olmak üzere hem istemci hem de sunucu teknolojilerini içerir:
 
-- ActiveX denetimleri, bir Web sitesi gibi kapsayıcılar kullanılabilir etkileşimli nesnelerdir. ActiveX denetimleri hakkında daha fazla bilgi için bkz:
+- ActiveX denetimleri, Web sitesi gibi kapsayıcılarında kullanılabilen etkileşimli nesnelerdir. ActiveX denetimleri hakkında daha fazla bilgi için bkz.
 
    - [MFC ActiveX Denetimleri](../mfc/mfc-activex-controls.md)
 
    - [Internet'te ActiveX Denetimleri](../mfc/activex-controls-on-the-internet.md)
 
-   - [Genel Bakış: Internet](../mfc/mfc-internet-programming-basics.md)
+   - [Bakýþ Internet](../mfc/mfc-internet-programming-basics.md)
 
-   - [Internet'te kullanılacak varolan bir ActiveX denetimini yükseltme](../mfc/upgrading-an-existing-activex-control.md)
+   - [Internet 'te kullanılacak mevcut bir ActiveX denetimini yükseltme](../mfc/upgrading-an-existing-activex-control.md)
 
-   - [ActiveX denetimi hata ayıklama](/visualstudio/debugger/how-to-debug-an-activex-control)
+   - [ActiveX denetiminde hata ayıklama](/visualstudio/debugger/how-to-debug-an-activex-control)
 
-- Etkin komut dosyası, tarayıcı veya sunucu bir veya daha fazla ActiveX denetimlerini tümleşik davranışını denetler. Etkin komut dosyası oluşturma hakkında daha fazla bilgi için bkz. [Internet'te etkin teknoloji](../mfc/active-technology-on-the-internet.md).
+- Etkin betik bir tarayıcıdan veya sunucudan bir veya daha fazla ActiveX denetiminin tümleşik davranışını denetler. Etkin betik oluşturma hakkında daha fazla bilgi için bkz. [Internet üzerinde etkin teknoloji](../mfc/active-technology-on-the-internet.md).
 
-- [Otomasyon](../mfc/automation.md) (eski adıyla OLE Otomasyonu da bilinir), bir uygulama için başka bir uygulamaya uygulanan nesneleri değiştirmek ya da "bunlar işlenebilir nesneleri göstermek için" mümkün kılar.
+- [Otomasyon](../mfc/automation.md) (eski adı OLE Otomasyonu olarak bilinirdi), bir uygulamanın başka bir uygulamada uygulanan nesneleri işlemesini veya işlenebilmeleri için nesneleri "kullanıma sunabilmesi" mümkün hale getirir.
 
-   Otomatik nesne yerel veya uzak (başka bir makinedeki bir ağ üzerinden erişilebilir) olabilir. Otomasyon OLE hem COM nesneleri için kullanılabilir.
+   Otomatik nesne yerel veya uzak olabilir (ağ üzerinden erişilebilen başka bir makineye). Otomasyon hem OLE hem de COM nesneleri için kullanılabilir.
 
-- Bu bölümde, MFC, örneğin kullanarak COM bileşenlerini yazmaya yönelik bilgi de sağlar. [bağlantı noktaları](../mfc/connection-points.md).
+- Bu bölüm ayrıca, örneğin [bağlantı NOKTALARıNDA](../mfc/connection-points.md)MFC kullanarak com bileşenlerini yazma hakkında bilgi sağlar.
 
-Ne artık etkin teknoloji adı verilir ve hangi OLE yine de çağrılır, bir açıklaması için üzerinde konulara bakın. [OLE](../mfc/ole-in-mfc.md).
+Hala OLE olarak adlandırıldığına ve artık etkin teknolojinin ne olduğuna ilişkin bir tartışma için, [OLE](../mfc/ole-in-mfc.md)'deki konulara bakın.
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
@@ -60,4 +60,4 @@ Ne artık etkin teknoloji adı verilir ve hangi OLE yine de çağrılır, bir a�
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kavramları](../mfc/mfc-concepts.md)
+[Tiren](../mfc/mfc-concepts.md)

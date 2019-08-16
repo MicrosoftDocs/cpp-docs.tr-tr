@@ -30,16 +30,16 @@ helpviewer_keywords:
 - COccManager [MFC], SetDefaultButton
 - COccManager [MFC], SplitDialogTemplate
 ms.assetid: 7d47aeed-d1ab-48e3-b4cf-d429718e370a
-ms.openlocfilehash: a83f58b8de2411577d9fc025f7a8f8dc535ea8b3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c2a49e3396879e5f1e0864ab5342b57541c6b36c
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62388273"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69504495"
 ---
 # <a name="coccmanager-class"></a>COccManager sınıfı
 
-Çeşitli özel denetim sitelerini yönetir; tarafından uygulanan `COleControlContainer` ve `COleControlSite` nesneleri.
+Çeşitli özel denetim sitelerini yönetir; `COleControlContainer` ve`COleControlSite` nesneleri tarafından uygulandı.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -53,22 +53,22 @@ class COccManager : public CNoTrackObject
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[COccManager::CreateContainer](#createcontainer)|Oluşturur bir `COleContainer` nesne.|
-|[COccManager::CreateDlgControls](#createdlgcontrols)|ActiveX denetimleri, ilişkili tarafından barındırılan oluşturur `COleContainer` nesne.|
-|[COccManager::CreateSite](#createsite)|Oluşturur bir `COleClientSite` nesne.|
-|[COccManager::GetDefBtnCode](#getdefbtncode)|Varsayılan düğme kodunu alır.|
-|[COccManager::IsDialogMessage](#isdialogmessage)|Bir iletişim kutusu iletisinin hedefini belirler.|
-|[COccManager::IsLabelControl](#islabelcontrol)|Belirtilen denetiminin etiket denetimi olduğunu belirler.|
-|[COccManager::IsMatchingMnemonic](#ismatchingmnemonic)|Geçerli anımsatıcı belirtilen denetiminin anımsatıcı eşleşip eşleşmediğini belirler.|
-|[COccManager::OnEvent](#onevent)|Belirtilen olayı işlemek çalışır.|
-|[COccManager::PostCreateDialog](#postcreatedialog)|İletişim kutusu oluşturma sırasında ayrılan kaynakları serbest bırakır.|
-|[COccManager::PreCreateDialog](#precreatedialog)|ActiveX denetimleri için bir iletişim şablonunu işler.|
-|[COccManager::SetDefaultButton](#setdefaultbutton)|Belirtilen denetimi varsayılan duruma geçer.|
-|[COccManager::SplitDialogTemplate](#splitdialogtemplate)|Varolan bir ActiveX denetimleri belirtilen iletişim şablonunda ortak denetimleri ayırır.|
+|[COccManager:: CreateContainer](#createcontainer)|Bir `COleContainer` nesnesi oluşturur.|
+|[COccManager:: CreateDlgControls](#createdlgcontrols)|İlişkili `COleContainer` nesne tarafından barındırılan ActiveX denetimleri oluşturur.|
+|[COccManager:: CreateSite](#createsite)|Bir `COleClientSite` nesnesi oluşturur.|
+|[COccManager:: GetDefBtnCode](#getdefbtncode)|Varsayılan düğmenin kodunu alır.|
+|[COccManager:: IsDialogMessage](#isdialogmessage)|İletişim kutusu mesajının hedefini belirler.|
+|[COccManager:: ıslabelcontrol](#islabelcontrol)|Belirtilen denetimin bir etiket denetimi olup olmadığını belirler.|
+|[COccManager:: ısmatchinganımsatıcı](#ismatchingmnemonic)|Geçerli anımsatıcı belirtilen denetimin anımsatıcı ile eşleşip eşleşmediğini belirler.|
+|[COccManager:: OnEvent](#onevent)|Belirtilen olayı işlemeye çalışır.|
+|[COccManager::P ostCreateDialog](#postcreatedialog)|İletişim kutusu oluşturma sırasında ayrılan kaynakları boşaltır.|
+|[COccManager::P reCreateDialog](#precreatedialog)|ActiveX denetimleri için bir iletişim kutusu şablonunu işler.|
+|[COccManager:: SetDefaultButton](#setdefaultbutton)|Belirtilen denetimin varsayılan durumunu değiştirir.|
+|[COccManager:: SplitDialogTemplate](#splitdialogtemplate)|Varolan tüm ActiveX denetimlerini belirtilen iletişim kutusu şablonundaki ortak denetimlerden ayırır.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Temel sınıfı, `CNoTrackObject`, (AFXTLS içinde bulunur. belgelenmemiş bir taban sınıfı H). Türetilmiş sınıflar MFC çerçevesi tarafından kullanılmak üzere tasarlanan `CNoTrackObject` bellek sızıntısı algılamadan muaf sınıfı. Doğrudan öğesinden türetilen önerilmez `CNoTrackObject`.
+Temel sınıf, `CNoTrackObject`bir belgelenmemiş taban sınıftır (afxtls ' de bulunur. H). MFC çerçevesi tarafından kullanılmak üzere tasarlanan `CNoTrackObject` sınıftan türetilmiş sınıflar bellek sızıntısı algılamasında muaf tutulur. Doğrudan ' den `CNoTrackObject`türetmeniz önerilmez.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -78,11 +78,11 @@ Temel sınıfı, `CNoTrackObject`, (AFXTLS içinde bulunur. belgelenmemiş bir t
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxocc.h
+**Üstbilgi:** afxocc. h
 
-##  <a name="createcontainer"></a>  COccManager::CreateContainer
+##  <a name="createcontainer"></a>COccManager:: CreateContainer
 
-Bir denetim kapsayıcısı oluşturmak için framework tarafından çağırılır.
+Bir denetim kapsayıcısı oluşturmak için Framework tarafından çağırılır.
 
 ```
 virtual COleControlContainer* CreateContainer(CWnd* pWnd);
@@ -91,19 +91,19 @@ virtual COleControlContainer* CreateContainer(CWnd* pWnd);
 ### <a name="parameters"></a>Parametreler
 
 *pWnd*<br/>
-Özel site kapsayıcı ile ilişkili pencere nesnesi için bir işaretçi.
+Özel site kapsayıcısı ile ilişkili pencere nesnesine yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yeni oluşturulan kapsayıcı için bir işaretçi; bulunmazsa null değerini DÖNDÜRÜR.
+Yeni oluşturulan kapsayıcıya yönelik bir işaretçi; Aksi takdirde NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Özel site oluşturma ile ilgili daha fazla bilgi için bkz: [COleControlContainer::AttachControlSite](../../mfc/reference/colecontrolcontainer-class.md#attachcontrolsite).
+Özel siteler oluşturma hakkında daha fazla bilgi için bkz. [Colicontrolcontainer:: AttachControlSite](../../mfc/reference/colecontrolcontainer-class.md#attachcontrolsite).
 
-##  <a name="createdlgcontrols"></a>  COccManager::CreateDlgControls
+##  <a name="createdlgcontrols"></a>COccManager:: CreateDlgControls
 
-Tarafından belirtilen ActiveX denetimleri oluşturmak için bu işlevi çağırın *pOccDialogInfo* parametresi.
+*Poccdialogınfo* parametresi tarafından belirtilen ActiveX denetimleri oluşturmak için bu işlevi çağırın.
 
 ```
 virtual BOOL CreateDlgControls(
@@ -120,24 +120,24 @@ virtual BOOL CreateDlgControls(
 ### <a name="parameters"></a>Parametreler
 
 *pWndParent*<br/>
-İletişim nesnenin üst öğeye bir işaretçi.
+İletişim kutusu nesnesinin üst öğesine yönelik bir işaretçi.
 
 *lpszResourceName*<br/>
-Oluşturulan kaynak adı.
+Oluşturulmakta olan kaynağın adı.
 
-*pOccDialogInfo*<br/>
-İletişim nesnesi oluşturmak için kullanılan iletişim şablonu için bir işaretçi.
+*Poccdialogınfo*<br/>
+İletişim kutusu nesnesini oluşturmak için kullanılan iletişim kutusu şablonuna yönelik bir işaretçi.
 
 *lpResource*<br/>
-Bir kaynağa bir işaretçi.
+Kaynak işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Denetim başarıyla oluşturuldu olursa sıfır dışı; Aksi halde sıfır.
+Denetim başarıyla oluşturulduysa sıfır dışı; Aksi halde sıfır.
 
-##  <a name="createsite"></a>  COccManager::CreateSite
+##  <a name="createsite"></a>COccManager:: CreateSite
 
-İşaret ettiği kapsayıcı tarafından barındırılan bir denetim site oluşturmak için framework tarafından çağırılır *pCtrlCont*.
+*PCtrlCont*tarafından işaret edilen kapsayıcı tarafından barındırılan bir denetim sitesi oluşturmak için Framework tarafından çağırılır.
 
 ```
 virtual COleControlSite* CreateSite(COleControlContainer* pCtrlCont);
@@ -146,21 +146,21 @@ virtual COleControlSite* CreateSite(COleControlContainer* pCtrlCont);
 ### <a name="parameters"></a>Parametreler
 
 *pCtrlCont*<br/>
-Yeni Denetim site barındırma denetimi kapsayıcısı için bir işaretçi.
+Yeni denetim sitesini barındıran denetim kapsayıcısına yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yeni oluşturulan denetime site için bir işaretçi.
+Yeni oluşturulan denetim sitesine yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Özel bir denetim oluşturmak için bu işlevi geçersiz kılma kullanarak, site, [COleControlSite](../../mfc/reference/colecontrolsite-class.md)-türetilmiş sınıf.
+[Coelcontrolsıte](../../mfc/reference/colecontrolsite-class.md)ile türetilmiş sınıfınızı kullanarak özel bir denetim sitesi oluşturmak için bu işlevi geçersiz kılın.
 
-Her bir denetim kapsayıcısı birden çok site barındırma. Ek siteler birden çok çağrı oluşturmak `CreateSite`.
+Her denetim kapsayıcısı birden çok siteyi barındırabilirler. Birden çok çağrısı `CreateSite`olan ek siteler oluşturun.
 
-##  <a name="getdefbtncode"></a>  COccManager::GetDefBtnCode
+##  <a name="getdefbtncode"></a>COccManager:: GetDefBtnCode
 
-Denetimi varsayılan düğme olup olmadığını belirlemek için bu işlevi çağırın.
+Denetimin varsayılan bir gönderme düğmesi olup olmadığını öğrenmek için bu işlevi çağırın.
 
 ```
 static DWORD AFX_CDECL GetDefBtnCode(CWnd* pWnd);
@@ -175,15 +175,15 @@ Düğme denetimini içeren pencere nesnesi.
 
 Aşağıdaki değerlerden biri:
 
-- İletişim kutusunda varsayılan düğme DLGC_DEFPUSHBUTTON denetimidir.
+- DLGC_DEFPUSHBUTTON denetimi, iletişim kutusunda varsayılan düğmedir.
 
-- DLGC_UNDEFPUSHBUTTON denetim iletişim kutusunda varsayılan düğme değil.
+- DLGC_UNDEFPUSHBUTTON denetimi, iletişim kutusunda varsayılan düğme değildir.
 
-- **0** denetim bir düğme değil.
+- **0** denetimi bir düğme değildir.
 
-##  <a name="isdialogmessage"></a>  COccManager::IsDialogMessage
+##  <a name="isdialogmessage"></a>COccManager:: IsDialogMessage
 
-Bir ileti için belirtilen iletişim kutusu kullanılmaya ise, iletiyi işler olup olmadığını ve belirlemek için framework tarafından çağırılır.
+Çerçeve tarafından, belirtilen iletişim kutusu için bir iletinin amaçlanıp tasarlanmadığını ve varsa iletiyi işler olduğunu anlamak için çağırılır.
 
 ```
 virtual BOOL IsDialogMessage(
@@ -194,24 +194,24 @@ virtual BOOL IsDialogMessage(
 ### <a name="parameters"></a>Parametreler
 
 *pWndDlg*<br/>
-İletinin hedef iletişim için bir işaretçi.
+İletinin amaçlanan hedef iletişim kutusu işaretçisi.
 
 *lpMsg*<br/>
-Bir işaretçi bir `MSG` denetlenecek iletiyi içeren yapısı.
+Denetlenecek iletiyi içeren bir `MSG` yapıya yönelik işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İleti işleme olursa sıfır dışı; Aksi halde sıfır.
+İleti işlenirse sıfır dışı; Aksi halde sıfır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan davranışını `IsDialogMessage` klavye iletileri denetleyecek ve karşılık gelen iletişim kutusu için seçimleri dönüştürün. Örneğin, SEKME tuşuna basıldığında, sonraki denetim veya denetimlerin grubu seçer.
+Varsayılan davranışı `IsDialogMessage` , klavye iletilerini denetmek ve ilgili iletişim kutusu için bunları seçimlere dönüştürmelidir. Örneğin TAB tuşu basıldığında, bir sonraki denetimi veya denetim grubunu seçer.
 
-Bu işlev belirtilen bir iletişim kutusuna gönderilen iletiler için özel davranış sağlamak için geçersiz kılın.
+Belirtilen iletişim kutusuna gönderilen iletiler için özel davranış sağlamak üzere bu işlevi geçersiz kılın.
 
-##  <a name="islabelcontrol"></a>  COccManager::IsLabelControl
+##  <a name="islabelcontrol"></a>COccManager:: ıslabelcontrol
 
-Belirtilen denetiminin etiket denetimi olup olmadığını belirlemek için bu işlevi çağırın.
+Belirtilen denetimin bir etiket denetimi olup olmadığını öğrenmek için bu işlevi çağırın.
 
 ```
 static BOOL AFX_CDECL IsLabelControl(CWnd* pWnd);
@@ -221,19 +221,19 @@ static BOOL AFX_CDECL IsLabelControl(COleControlSiteOrWnd* pWnd);
 ### <a name="parameters"></a>Parametreler
 
 *pWnd*<br/>
-Denetimi içeren penceresine bir işaretçi.
+Denetimi içeren pencereye yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Denetimin etiket ise sıfır olmayan; Aksi halde sıfır
+Denetim bir etiketse sıfır dışı; Aksi halde sıfır
 
 ### <a name="remarks"></a>Açıklamalar
 
-Etiket denetimi için hangi denetim sıralamada sonraki etiket gibi davranan biridir.
+Etiket denetimi, sıralamada herhangi bir denetim için bir etiket gibi davranan bir etikettir.
 
-##  <a name="ismatchingmnemonic"></a>  COccManager::IsMatchingMnemonic
+##  <a name="ismatchingmnemonic"></a>COccManager:: ısmatchinganımsatıcı
 
-Geçerli anımsatıcı denetim tarafından temsil edilen eşleşip eşleşmediğini belirlemek için bu işlevi çağırın.
+Geçerli anımsatıcı denetimin temsil eden ile eşleşip eşleşmediğini öğrenmek için bu işlevi çağırın.
 
 ```
 static BOOL AFX_CDECL IsMatchingMnemonic(
@@ -248,20 +248,20 @@ static BOOL AFX_CDECL IsMatchingMnemonic(
 ### <a name="parameters"></a>Parametreler
 
 *pWnd*<br/>
-Denetimi içeren penceresine bir işaretçi.
+Denetimi içeren pencereye yönelik bir işaretçi.
 
 *lpMsg*<br/>
-Eşleştirilecek anımsatıcı içeren ileti için bir işaretçi.
+Eşleşecek anımsatıcı içeren iletiye yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Anımsatıcı denetim eşleşen olursa sıfır dışı; Aksi halde sıfır
+Anımsatıcı denetimle eşleşiyorsa sıfır dışı; Aksi halde sıfır
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="onevent"></a>  COccManager::OnEvent
+##  <a name="onevent"></a>COccManager:: OnEvent
 
-Belirtilen olayı işlemek için framework tarafından çağırılır.
+Belirtilen olayı işlemek için Framework tarafından çağırılır.
 
 ```
 virtual BOOL OnEvent(
@@ -274,28 +274,28 @@ virtual BOOL OnEvent(
 ### <a name="parameters"></a>Parametreler
 
 *pCmdTarget*<br/>
-Bir işaretçi `CCmdTarget` olayı işlemek çalışırken nesnesi
+Olayı işlemeye çalışan `CCmdTarget` nesneye yönelik bir işaretçi
 
-*idCtrl*<br/>
-Denetim kaynak kimliği.
+*ıdctrl*<br/>
+Denetimin kaynak KIMLIĞI.
 
 *pEvent*<br/>
-İşlenen olayı.
+İşlenmekte olan olay.
 
 *pHandlerInfo*<br/>
-BOŞ değilse `OnEvent` doldurur `pTarget` ve `pmf` üyeleri `AFX_CMDHANDLERINFO` yapısı yerine komut gönderme. Genellikle, bu parametre NULL olmalıdır.
+NULL değilse, `OnEvent` komutu dağıtma yerine `AFX_CMDHANDLERINFO` yapının `pTarget` ve `pmf` üyelerini doldurur. Genellikle, bu parametre NULL olmalıdır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Aksi halde sıfır olay işlenen olursa sıfır dışı.
+Olay işlenirse sıfır dışında sıfır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev varsayılan olay işleme işlemi özelleştirmek için geçersiz kılın.
+Varsayılan olay işleme işlemini özelleştirmek için bu işlevi geçersiz kılın.
 
-##  <a name="precreatedialog"></a>  COccManager::PreCreateDialog
+##  <a name="precreatedialog"></a>COccManager::P reCreateDialog
 
-ActiveX denetimleri için bir iletişim şablonunu gerçek iletişim kutusu oluşturmadan önce işlemek için framework tarafından çağırılır.
+Asıl iletişim kutusunu oluşturmadan önce ActiveX denetimleri için bir iletişim kutusu şablonunu işlemek üzere Framework tarafından çağırılır.
 
 ```
 virtual const DLGTEMPLATE* PreCreateDialog(
@@ -305,25 +305,25 @@ virtual const DLGTEMPLATE* PreCreateDialog(
 
 ### <a name="parameters"></a>Parametreler
 
-*pOccDialogInfo*<br/>
-Bir `_AFX_OCC_DIALOG_INFO` iletişim şablonunu ve iletişim kutusu tarafından barındırılan herhangi bir ActiveX denetimleri hakkında bilgi içeren yapıya.
+*Poccdialogınfo*<br/>
+İletişim `_AFX_OCC_DIALOG_INFO` kutusu şablonu ve iletişim kutusu tarafından barındırılan tüm ActiveX denetimleri hakkında bilgi içeren bir yapı.
 
 *pOrigTemplate*<br/>
-İletişim kutusu oluşturulurken kullanılacak iletişim şablonu için bir işaretçi.
+İletişim kutusunu oluştururken kullanılacak iletişim kutusu şablonuna yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İletişim kutusu oluşturmak için kullanılan bir iletişim şablonunu yapısı işaretçisi.
+İletişim kutusunu oluşturmak için kullanılan iletişim kutusu şablonu yapısına yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan davranış çağrıda `SplitDialogTemplate`olması durumunda tüm ActiveX denetimlerini mevcut belirleme ve sonra sonuçta elde edilen bir iletişim şablonunu döndürür.
+Varsayılan davranış öğesine `SplitDialogTemplate`bir çağrı yapar, varsa ActiveX denetimleri olup olmadığını belirler ve ardından sonuç iletişim kutusu şablonunu döndürür.
 
-ActiveX denetimlerini barındırma bir iletişim kutusu oluşturma işlemi özelleştirmek için bu işlevi geçersiz kılar.
+ActiveX denetimlerini barındıran bir iletişim kutusu oluşturma işlemini özelleştirmek için bu işlevi geçersiz kılın.
 
-##  <a name="postcreatedialog"></a>  COccManager::PostCreateDialog
+##  <a name="postcreatedialog"></a>COccManager::P ostCreateDialog
 
-İletişim şablonu için ayrılan belleği boşaltmak için framework tarafından çağırılır.
+İletişim kutusu şablonu için ayrılan belleği boşaltmak için Framework tarafından çağırılır.
 
 ```
 virtual void PostCreateDialog(_AFX_OCC_DIALOG_INFO* pOccDialogInfo);
@@ -331,16 +331,16 @@ virtual void PostCreateDialog(_AFX_OCC_DIALOG_INFO* pOccDialogInfo);
 
 ### <a name="parameters"></a>Parametreler
 
-*pOccDialogInfo*<br/>
-Bir `_AFX_OCC_DIALOG_INFO` iletişim şablonunu ve iletişim kutusu tarafından barındırılan herhangi bir ActiveX denetimleri hakkında bilgi içeren yapıya.
+*Poccdialogınfo*<br/>
+İletişim `_AFX_OCC_DIALOG_INFO` kutusu şablonu ve iletişim kutusu tarafından barındırılan tüm ActiveX denetimleri hakkında bilgi içeren bir yapı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu bellek için bir çağrı tarafından ayrılmış olan `SplitDialogTemplate`ve iletişim kutusunda barındırılan tüm ActiveX denetimleri için kullanıldı.
+Bu bellek, öğesine `SplitDialogTemplate`yapılan bir çağrı tarafından ayrıldı ve iletişim kutusundaki barındırılan tüm ActiveX denetimleri için kullanıldı.
 
-Bu işlev iletişim kutusu nesnesi tarafından kullanılan tüm kaynakları temizleme işlemi özelleştirmek için geçersiz kılın.
+İletişim kutusu nesnesi tarafından kullanılan tüm kaynakları temizleme işlemini özelleştirmek için bu işlevi geçersiz kılın.
 
-##  <a name="setdefaultbutton"></a>  COccManager::SetDefaultButton
+##  <a name="setdefaultbutton"></a>COccManager:: SetDefaultButton
 
 Denetimi varsayılan düğme olarak ayarlamak için bu işlevi çağırın.
 
@@ -353,10 +353,10 @@ static void AFX_CDECL SetDefaultButton(
 ### <a name="parameters"></a>Parametreler
 
 *pWnd*<br/>
-Denetimi içeren penceresine bir işaretçi.
+Denetimi içeren pencereye yönelik bir işaretçi.
 
-*bVarsayılan*<br/>
-Denetimi varsayılan düğme olacağını olursa sıfır dışı; Aksi halde sıfır.
+*bDefault*<br/>
+Denetimin varsayılan düğme olması halinde sıfır dışı; Aksi halde sıfır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -365,11 +365,11 @@ Başarılı olursa sıfır dışı; Aksi halde sıfır.
 ### <a name="remarks"></a>Açıklamalar
 
 > [!NOTE]
->  Denetim durumu bit kümesi OLEMISC_ACTSLIKEBUTTON olması gerekir. OLEMISC bayrakları hakkında daha fazla bilgi için bkz. [OLEMISC](/windows/desktop/api/oleidl/ne-oleidl-tagolemisc) konu başlığında Windows SDK'sı.
+>  Denetimin OLEMISC_ACTSLIKEBUTTON durum biti ayarlanmış olması gerekir. OLEMISC bayrakları hakkında daha fazla bilgi için Windows SDK [Olemisc](/windows/win32/api/oleidl/ne-oleidl-olemisc) konusuna bakın.
 
-##  <a name="splitdialogtemplate"></a>  COccManager::SplitDialogTemplate
+##  <a name="splitdialogtemplate"></a>COccManager:: SplitDialogTemplate
 
-Ortak iletişim kutusu denetimleri ActiveX denetimlerini bölmek için framework tarafından çağırılır.
+Ortak iletişim kutusu denetimlerinden ActiveX denetimlerini ayırmak için Framework tarafından çağırılır.
 
 ```
 virtual DLGTEMPLATE* SplitDialogTemplate(
@@ -380,25 +380,25 @@ virtual DLGTEMPLATE* SplitDialogTemplate(
 ### <a name="parameters"></a>Parametreler
 
 *pTemplate*<br/>
-İncelenecek iletişim şablonu için bir işaretçi.
+İncelenen iletişim kutusu şablonuna yönelik bir işaretçi.
 
 *ppOleDlgItems*<br/>
-ActiveX denetimleri iletişim kutusu öğeleri için işaretçiler listesi.
+ActiveX denetimleri olan iletişim kutusu öğelerine yönelik işaretçilerin listesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yalnızca olmayan ActiveX denetimleri içeren bir iletişim şablonunu yapısı işaretçisi. ActiveX denetim mevcut olması durumunda, NULL döndürülür.
+Yalnızca ActiveX olmayan denetimleri içeren bir iletişim kutusu şablonu yapısına yönelik bir işaretçi. Hiçbir ActiveX denetimi yoksa, NULL döndürülür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Herhangi bir ActiveX denetim bulunan varsa, şablonu analiz edilir ve yalnızca olmayan ActiveX denetimlerini içeren yeni bir şablonu oluşturulur. Bu işlem sırasında bulunan herhangi bir ActiveX denetimini eklenen *ppOleDlgItems*.
+Herhangi bir ActiveX denetimi bulunursa, şablon çözümlenir ve yalnızca ActiveX olmayan denetimleri içeren yeni bir şablon oluşturulur. Bu işlem sırasında bulunan tüm ActiveX denetimleri *ppOleDlgItems*öğesine eklenir.
 
-Şablonda ActiveX denetimler yoksa NULL döndürülür *.*
+Şablonda ActiveX denetimi yoksa, NULL döndürülür *.*
 
 > [!NOTE]
->  Yeni şablon serbest bırakılır için ayrılan bellek `PostCreateDialog` işlevi.
+>  Yeni şablon için ayrılan bellek, `PostCreateDialog` işlevde serbest bırakılır.
 
-Bu işlev, bu işlemi özelleştirmek için geçersiz kılın.
+Bu işlemi özelleştirmek için bu işlevi geçersiz kılın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

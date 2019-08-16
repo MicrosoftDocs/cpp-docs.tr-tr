@@ -8,22 +8,22 @@ helpviewer_keywords:
 - memory [MFC], managing
 - memory allocation [MFC], MFC
 ms.assetid: 934ac81b-d630-4232-88e5-ea74f7187987
-ms.openlocfilehash: 1c7f901009d5e1e7f0af20d493bb748b46b18480
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5d81bd0a8bdd24059951cba5c8b69751b3d1db86
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62219137"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69508267"
 ---
 # <a name="memory-management"></a>Bellek Yönetimi
 
-Bu grup makale, Microsoft Foundation Class Kitaplığı (bellek yönetimi ile ilgili MFC) genel amaçlı hizmetlerinden yararlanan açıklar. Bellek ayırma iki ana kategoriye ayrılabilir: çerçeve ayırma ve yığın ayırma.
+Bu makale grubu, bellek yönetimiyle ilgili Microsoft Foundation Class Kitaplığı (MFC) genel amaçlı hizmetlerinden nasıl yararlanılacağını açıklamaktadır. Bellek ayırma iki ana kategoriye ayrılabilir: çerçeve ayırmaları ve yığın ayırmaları.
 
-Yığın ayırma ile her zaman bellek bloğuna işaretçi verilir, genellikle gerçek bellek ile çalışmanıza çerçeve ayırma ile kendisi engellemek, iki ayırma teknikleri arasında ana farklardan biri olan. Başka bir önemli fark iki düzen arasında yığın nesnelerini Programcı tarafından açıkça silinmelidir ederken çerçeve nesneleri otomatik olarak, silinir.
+İki ayırma tekniği arasındaki bir temel fark, genellikle gerçek bellek bloğunun kendisiyle birlikte çalışarak, yığın ayırma ile her zaman bellek bloğuna bir işaretçi vermiş olursunuz. İki düzen arasındaki diğer önemli fark, çerçeve nesnelerinin otomatik olarak silindiği, yığın nesnelerinin ise programcı tarafından açıkça silinmesi gerekir.
 
-MFC olmayan Windows için programlar, bellek yönetimi hakkında bilgi için [bellek yönetimi](/windows/desktop/memory/memory-management) Windows SDK.
+Windows için programlarda bellek yönetimiyle ilgili MFC olmayan bilgiler için, Windows SDK [bellek yönetimi](/windows/win32/memory/memory-management) bölümüne bakın.
 
-## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz
+## <a name="what-do-you-want-to-know-more-about"></a>Hakkında daha fazla bilgi edinmek istiyorsunuz
 
 - [Çerçeve ayırma](../mfc/memory-management-frame-allocation.md)
 
@@ -31,9 +31,9 @@ MFC olmayan Windows için programlar, bellek yönetimi hakkında bilgi için [be
 
 - [Bir dizi için bellek ayırma](../mfc/memory-management-examples.md)
 
-- [Yığınından bir dizi bellek ayırma](../mfc/memory-management-examples.md)
+- [Yığından bir dizi için bellek ayırmayı kaldırma](../mfc/memory-management-examples.md)
 
-- [Bir veri yapısı için bellek ayırma](../mfc/memory-management-examples.md)
+- [Veri yapısı için bellek ayırma](../mfc/memory-management-examples.md)
 
 - [Bir nesne için bellek ayırma](../mfc/memory-management-examples.md)
 
@@ -41,5 +41,5 @@ MFC olmayan Windows için programlar, bellek yönetimi hakkında bilgi için [be
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kavramları](../mfc/mfc-concepts.md)<br/>
+[Tiren](../mfc/mfc-concepts.md)<br/>
 [Genel MFC Konuları](../mfc/general-mfc-topics.md)

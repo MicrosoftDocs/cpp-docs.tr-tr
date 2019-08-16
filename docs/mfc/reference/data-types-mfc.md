@@ -24,26 +24,26 @@ helpviewer_keywords:
 - LPARAM data type [MFC]
 - LPCSTR [MFC]
 ms.assetid: 8954848b-2c01-4a4f-abf5-ee55f6a05eeb
-ms.openlocfilehash: dfafe7c3c7c7cd43dd2ac194f5ed96fa8ea265ba
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 37dd9b9d3f3905a923cd9c51856c1c39819cb162
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62323209"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69502123"
 ---
 # <a name="data-types-mfc"></a>Veri Türleri (MFC)
 
-Bu konu Microsoft Foundation Class Kitaplığı en yaygın olarak kullanılan veri türlerini listeler. Diğerleri için MFC benzersiz veri türlerinin çoğu bu Platform Yazılım Geliştirme Seti (SDK), aynı bağlıdır.
+Bu konu, Microsoft Foundation Class Kitaplığı en yaygın olarak kullanılan veri türlerini listeler. Çoğu veri türü platform yazılım geliştirme seti (SDK) ile aynıdır, diğerleri MFC için benzersizdir.
 
-Windows SDK'sı ve MFC kullanılan veri türleri hakkında daha fazla bilgi için bkz: [Windows veri türleri](/windows/desktop/WinProg/windows-data-types).
+Hem Windows SDK hem de MFC 'de kullanılan veri türleri hakkında daha fazla bilgi için bkz. [Windows veri türleri](/windows/win32/WinProg/windows-data-types).
 
-Microsoft Foundation Class Kitaplığı'na benzersiz veri türleri şunlardır:
+Microsoft Foundation Class Kitaplığı özgü veri türleri şunlardır:
 
-- Bir koleksiyondaki bir öğenin konumunu belirtmek için kullanılan bir değer getirin; MFC koleksiyon sınıfları tarafından kullanılır.
+- Bir Koleksiyondaki öğenin konumunu belirtmek için kullanılan bir değeri KONUMLANDıRıR; MFC koleksiyon sınıfları tarafından kullanılır.
 
-- Bir sabit (değiştirilemez) LPCRECT bir 32 bit işaretçi `RECT` yapısı.
+- Lpcrect bir sabit (değiştirilemeyen) `RECT` yapıya 32 bitlik bir işaretçi.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıfına genel bakış](../../mfc/class-library-overview.md)<br/>
-[Makroları ve genel öğeleri](../../mfc/reference/mfc-macros-and-globals.md)
+[Sınıfa genel bakış](../../mfc/class-library-overview.md)<br/>
+[Makrolar ve genel öğeler](../../mfc/reference/mfc-macros-and-globals.md)

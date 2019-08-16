@@ -1,29 +1,29 @@
 ---
-title: CAtlServiceModuleT::ServiceMain işlevi
+title: 'CAtlServiceModuleT:: ServiceMain Işlevi'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - ServiceMain method
 ms.assetid: f21408c1-1919-4dec-88d8-bf5b39ac9808
-ms.openlocfilehash: 81cd8fcbdf275063b243e215301eff504a2b5cc6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b79767d4c1696174f90a325ea152ccc7939ed9fe
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62223215"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69491717"
 ---
-# <a name="catlservicemoduletservicemain-function"></a>CAtlServiceModuleT::ServiceMain işlevi
+# <a name="catlservicemoduletservicemain-function"></a>CAtlServiceModuleT:: ServiceMain Işlevi
 
-Hizmet Denetimi Yöneticisi (SCM) çağıran `ServiceMain` Hizmetler Denetim Masası uygulamasına açtığınızda, hizmeti seçin ve tıklayın **Başlat**.
+Hizmet Denetim Yöneticisi (SCM), Hizmetler `ServiceMain` Denetim Masası uygulamasını açtığınızda çağırır, hizmeti seçin ve **Başlat**' a tıklayın.
 
-SCM sonra çağıran `ServiceMain`, hizmet bir işleyici işlevi SCM vermeniz gerekir. Bu işlev, hizmetin durum elde edilir ve özel yönergeler (örneğin, duraklatmak veya durdurma) geçirmeniz SCM sağlar. Hizmet başarılı olduğunda bu işlev SCM alır `_Handler` Win32 API işlevi [RegisterServiceCtrlHandler](/windows/desktop/api/winsvc/nf-winsvc-registerservicectrlhandlera). (`_Handler` statik olmayan üye işlevi çağıran bir statik üye işlevi olan [işleyici](../atl/reference/catlservicemodulet-class.md#handler).)
+SCM çağrıldıktan sonra `ServiceMain`, bir hizmetin SCM 'ye bir işleyici işlevi vermesi gerekir. Bu işlev, SCM 'nin hizmetin durumunu almasına ve belirli yönergeleri geçirmeye (duraklatma veya durdurma gibi) olanak tanır. Hizmet, `_Handler` [RegisterServiceCtrlHandler](/windows/win32/api/winsvc/nf-winsvc-registerservicectrlhandlerw)Win32 API işlevine geçtiğinde SCM bu işlevi alır. (`_Handler` statik olmayan üye işlev [işleyicisini](../atl/reference/catlservicemodulet-class.md#handler)çağıran statik bir üye işlevidir.)
 
-Başlangıçta, bir hizmet de geçerli durumunu SCM bilgilendirmek. Bunu SERVICE_START_PENDING Win32 API işleve geçirerek yapar [artırılmış](/windows/desktop/api/winsvc/nf-winsvc-setservicestatus).
+Başlangıçta hizmet, SCM 'yi geçerli durumunun de bilgilendirmelidir. Bunu, [SetServiceStatus](/windows/win32/api/winsvc/nf-winsvc-setservicestatus)wın32 API işlevine SERVICE_START_PENDING geçirerek yapar.
 
-`ServiceMain` Daha sonra çağırır `CAtlExeModuleT::InitializeCom`, Win32 API işlevi çağırır [CoInitializeEx](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializeex). Varsayılan olarak, `InitializeCom` COINIT_MULTITHREADED bayrağı işleve geçirir. Bu bayrak, program ücretsiz iş parçacıklı bir sunucu olduğunu gösterir.
+`ServiceMain`ardından, `CAtlExeModuleT::InitializeCom` [CoInitializeEx](/windows/win32/api/combaseapi/nf-combaseapi-coinitializeex)Win32 API işlevini çağıran çağırır. Varsayılan olarak, `InitializeCom` işlevine COINIT_MULTITHREADED bayrağını geçirir. Bu bayrak, programın ücretsiz bir iş parçacıklı sunucu olduğunu gösterir.
 
-Şimdi, `CAtlServiceModuleT::Run` hizmet ana iş gerçekleştirmek üzere çağırılır. `Run` Hizmet durduruluncaya kadar yürütmeye devam eder.
+Şimdi, `CAtlServiceModuleT::Run` hizmetin ana işini gerçekleştirmek için çağrılır. `Run`hizmet durduruluncaya kadar yürütülmeye devam eder.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Hizmetler](../atl/atl-services.md)<br/>
-[CAtlServiceModuleT::ServiceMain](../atl/reference/catlservicemodulet-class.md#servicemain)
+[CAtlServiceModuleT:: ServiceMain](../atl/reference/catlservicemodulet-class.md#servicemain)

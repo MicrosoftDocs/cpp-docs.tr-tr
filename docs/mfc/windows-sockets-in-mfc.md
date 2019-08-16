@@ -10,41 +10,41 @@ helpviewer_keywords:
 - WSOCK32.DLL
 - sockets [MFC], MFC
 ms.assetid: 1f3c476a-9c68-49fe-9a25-d22971a334d0
-ms.openlocfilehash: 9992d2054c04eea1b3b63d591601acf0091acb5e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 44a4838a1cd863bd484701966a156be9f61f8988
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62348568"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69510618"
 ---
 # <a name="windows-sockets-in-mfc"></a>MFC'de Windows Yuvaları
 
 > [!NOTE]
->  MFC Windows Yuva 1'i destekler ancak desteklemediği [Windows Sockets 2](/windows/desktop/WinSock/windows-sockets-start-page-2). Windows Sockets 2 ilk sevk Windows 98 ve Windows 2000'de bulunan sürümüdür.
+>  MFC Windows Sockets 1 ' i destekler, ancak [Windows Sockets 2](/windows/win32/WinSock/windows-sockets-start-page-2)' i desteklemez. Windows Sockets 2 ilk olarak Windows 98 ile birlikte gelir ve Windows 2000 ' de yer alan sürümdür.
 
-MFC, iki MFC sınıfları düzenlenen Windows Sockets ile ağ iletişimi programları yazmak için iki modeli sağlar. Bu makalede bu modeller ve daha ayrıntılı bilgi MFC yuva desteği. "Yuva" olan bir uç nokta iletişim: üzerinden uygulamanızı iletişim kuran diğer Windows Sockets uygulamaları ile bir ağ üzerinden bir nesne.
+MFC, Windows Yuvaları olan ağ iletişim programlarını yazmak için iki model sağlar ve iki MFC sınıfına sahiptir. Bu makalede, bu modeller ve daha ayrıntılı olarak MFC Yuvaları desteği açıklanmaktadır. "Yuva" bir iletişim uç noktasıdır: uygulamanızın bir ağ üzerindeki diğer Windows Yuvaları uygulamalarıyla iletişim kurduğu nesne.
 
-Yuva kavram, bir açıklama da dahil olmak üzere Windows Sockets hakkında bilgi için bkz. [Windows Yuvaları: Arka plan](../mfc/windows-sockets-background.md).
+Yuva kavramının açıklaması da dahil olmak üzere Windows Yuvaları hakkında bilgi için bkz [. Windows Yuvaları: Arka](../mfc/windows-sockets-background.md)plan.
 
-##  <a name="_core_sockets_programming_models"></a> Yuva programlama modelleri
+##  <a name="_core_sockets_programming_models"></a>Sockets programlama modelleri
 
-MFC Windows programlama modellerini iki yuva aşağıdaki sınıflar tarafından desteklenir:
+İki MFC Windows Yuvaları programlama modeli aşağıdaki sınıflar tarafından desteklenir:
 
 - `CAsyncSocket`
 
-   Bu sınıf Windows Sockets API'SİNİN kapsüller. [CAsyncSocket](../mfc/reference/casyncsocket-class.md) olduğu programcılara ağ programlama bilmeniz ve programlama sockets API'si için doğrudan'ın esnekliği istiyoruz, ancak Ayrıca ağ olay bildirimi için geri çağırma işlevleri kolaylık istiyor. Yuva kullanılmak üzere C++ nesne yönelimli formunda paketleme dışında bu sınıfın sağladığı yalnızca ek Özet belirli yuva ilgili Windows iletilerini geri çağırmaları dönüştürüyor. Daha fazla bilgi için [Windows Yuvaları: Yuva bildirimleri](../mfc/windows-sockets-socket-notifications.md).
+   Bu sınıf Windows Sockets API 'sini kapsüller. [CAsyncSocket](../mfc/reference/casyncsocket-class.md) , ağ programlamayı bilen ve doğrudan yuvalar API 'sine programlama esnekliği isteyen ve ayrıca ağ olaylarının bildirilmesi için geri çağırma işlevlerinin rahatlığını tercih eden programcılar içindir. ' De C++kullanılmak üzere nesne odaklı biçimde paketleme yuvaları dışında, bu sınıfın sağladığı tek ek soyutlama, bazı yuvada ilgili Windows iletilerini geri çağırmaları dönüştürmektir. Daha fazla bilgi için bkz [. Windows Yuvaları: Yuva bildirimleri](../mfc/windows-sockets-socket-notifications.md).
 
 - `CSocket`
 
-   Bu sınıf, türetilen `CAsyncSocket`, yuva aracılığıyla bir MFC ile çalışmak için daha yüksek bir düzeyinde Özet sağlayan [CArchive](../mfc/reference/carchive-class.md) nesne. Bir yuva büyük ölçüde ile bir arşiv kullanarak MFC'nin dosya serileştirme protokolü kullanarak benzer. Bu sayede daha kolay daha `CAsyncSocket` modeli. [CSocket](../mfc/reference/csocket-class.md) birçok üye işlevleri devralan `CAsyncSocket` Windows Sockets API'leri kapsülleyen; bu işlevler bazılarını kullanmak ve yuva programlamasında genellikle anlamak gerekir. Ancak `CSocket` ham API veya sınıfı kullanarak kendiniz yapmak zorunda iletişim birçok yönüyle yönetir `CAsyncSocket`. En önemlisi, `CSocket` sağlar (arka plan Windows iletilerinin işlenmesini ile), engelleyici eşzamanlı işlemi için gerekli olan `CArchive`.
+   Öğesinden `CAsyncSocket`türetilen bu sınıf, bir MFC [CArchive](../mfc/reference/carchive-class.md) nesnesi aracılığıyla yuva ile çalışmaya yönelik daha yüksek düzey bir soyutlama sağlar. Bir arşiv ile bir yuva kullanılması, MFC 'nin dosya serileştirme protokolünü kullanarak büyük ölçüde benzerdir. Bu, `CAsyncSocket` modelden daha kolay kullanılmasını sağlar. [Csockets](../mfc/reference/csocket-class.md) , Windows Sockets API 'lerini `CAsyncSocket` kapsülleyen birçok üye işlevi devralır; bu işlevlerden bazılarını kullanmanız ve yuva programlamayı genel olarak anlamanız gerekir. Ancak `CSocket` ham API veya sınıf `CAsyncSocket`kullanarak kendiniz yapmanız gereken iletişimin birçok yönünü yönetir. En önemlisi, `CSocket` zaman uyumlu `CArchive`işlemi için gerekli olan engelleme (Windows iletilerinin arka plan işlemesi ile) sağlar.
 
-Oluşturma ve kullanma `CSocket` ve `CAsyncSocket` nesneleri açıklanan [Windows Yuvaları: Yuvaları Arşivlerle kullanma](../mfc/windows-sockets-using-sockets-with-archives.md) ve [Windows Yuvaları: Sınıf Casyncsocket'ini kullanma](../mfc/windows-sockets-using-class-casyncsocket.md).
+Ve [ `CSocket` nesnelerioluşturmavekullanmaWindows`CAsyncSocket` yuvaları 'nda açıklanmaktadır: Arşivleri](../mfc/windows-sockets-using-sockets-with-archives.md) ve[Windows yuvaları ile yuvaları kullanma: Sınıf CAsyncSocket](../mfc/windows-sockets-using-class-casyncsocket.md)kullanma.
 
-##  <a name="_core_mfc_socket_samples_and_windows_sockets_dlls"></a> Windows Yuvaları: DLL'leri
+##  <a name="_core_mfc_socket_samples_and_windows_sockets_dlls"></a>Windows Sockets dll 'Leri
 
-Microsoft Windows işletim sistemleri, Windows Sockets dinamik bağlantı kitaplıklarını (DLL) sağlayın. Visual C++, uygun bir başlık dosyaları ve kitaplıkları ve Windows yuva belirtimi sağlar.
+Microsoft Windows işletim sistemleri, Windows Sockets dinamik bağlantı kitaplıklarını (DLL) sağlar. Görsel C++ , uygun üst bilgi dosyalarını ve kitaplıklarını ve Windows Yuvaları belirtimini sağlar.
 
-Windows Yuvaları hakkında daha fazla bilgi için bkz:
+Windows Yuvaları hakkında daha fazla bilgi için bkz.
 
 - [Windows Yuvaları: Akış Yuvaları](../mfc/windows-sockets-stream-sockets.md)
 

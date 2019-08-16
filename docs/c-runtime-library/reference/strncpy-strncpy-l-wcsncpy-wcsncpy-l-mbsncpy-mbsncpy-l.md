@@ -62,19 +62,19 @@ helpviewer_keywords:
 - tcsncpy function
 - _strncpy_l function
 ms.assetid: ac4345a1-a129-4f2f-bb8a-373ec58ab8b0
-ms.openlocfilehash: 04ca1f0b689e68008b3b5a57d01e626ee92a60b9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fac7e052c5c1d5525946bdbc599404ac56d47f5a
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62209754"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69499451"
 ---
-# <a name="strncpy-strncpyl-wcsncpy-wcsncpyl-mbsncpy-mbsncpyl"></a>strncpy, _strncpy_l, wcsncpy, _wcsncpy_l, _mbsncpy, _mbsncpy_l
+# <a name="strncpy-_strncpy_l-wcsncpy-_wcsncpy_l-_mbsncpy-_mbsncpy_l"></a>strncpy, _strncpy_l, wcsncpy, _wcsncpy_l, _mbsncpy, _mbsncpy_l
 
-Bir dizenin karakterlerini diğerine kopyalayın. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz: [strncpy_s, _strncpy_s_l, wcsncpy_s, _wcsncpy_s_l, _mbsncpy_s, _mbsncpy_s_l](strncpy-s-strncpy-s-l-wcsncpy-s-wcsncpy-s-l-mbsncpy-s-mbsncpy-s-l.md).
+Bir dizenin karakterlerini diğerine kopyalayın. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz. [strncpy_s, _strncpyı_s_l, wcsncpy_s, _wcsncpyı_s_l, _mbsncpy_s, _mbsncpyı_s_l](strncpy-s-strncpy-s-l-wcsncpy-s-wcsncpy-s-l-mbsncpy-s-mbsncpy-s-l.md).
 
 > [!IMPORTANT]
-> **_mbsncpy** ve **_mbsncpy_l** Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **_mbsncpy** ve **_mbsncpyı_l** Windows çalışma zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -159,56 +159,56 @@ unsigned char *_mbsncpy_l(
 Hedef dize.
 
 *strSource*<br/>
-Kaynak dizesi.
+Kaynak dize.
 
-*Sayısı*<br/>
+*biriktirme*<br/>
 Kopyalanacak karakter sayısı.
 
-*Yerel ayar*<br/>
+*ayarlar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Döndürür *strDest*. Dönüş değeri bir hatayı göstermek üzere ayrılmıştır.
+*StrDest*döndürür. Bir hatayı göstermek için hiçbir dönüş değeri ayrılmadı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Strncpy** işlevi ilk kopyalar *sayısı* karakterlerinden *strSource* için *strDest* ve döndürür *strDest* . Varsa *sayısı* uzunluğunu küçük veya ona eşit *strSource*, bir null karakter kopyalanan dizeye otomatik olarak eklenmez. Varsa *sayısı* uzunluğundan büyükse *strSource*, uzunluğu en fazla null karakter hedef dizesi işaretleriyle *sayısı*. Davranışını **strncpy** kaynak ve hedef dizeleri örtüştürürse tanımsızdır.
+**Strncpy** Işlevi, *strSource* başlangıç *sayısı* karakterlerini *strDest* olarak kopyalar ve *strDest*değerini döndürür. *Count* , *strSource*'un uzunluğuna eşit veya daha küçükse, kopyalanmış dizeye bir null karakter otomatik olarak eklenmez. *Count* , *strSource*uzunluğundan büyükse, hedef dize, uzunluk *sayısına*kadar olan null karakterlerle doldurulur. Kaynak ve hedef dizeler çakıştığında, **strncpy** davranışı tanımsızdır.
 
 > [!IMPORTANT]
-> **strncpy** içinde yeterli yer denetlemez *strDest*; Bu, arabellek taşmalarına neden olabilir sağlar. *Sayısı* bağımsız kopyalanan karakter sayısını kısıtlar; bir sınır boyutu değil *strDest*. Aşağıdaki örnekte bakın. Daha fazla bilgi için [arabellek taşmalarını](/windows/desktop/SecBP/avoiding-buffer-overruns).
+> **strncpy** , *strDest*içinde yeterli alanı denetlemez; Bu, arabellek taşmalarının olası bir nedenini sağlar. *Count* bağımsız değişkeni, kopyalanmış karakter sayısını sınırlar; Bu, *strDest*boyutu için bir sınır değildir. Aşağıdaki örnekte bakın. Daha fazla bilgi için bkz. [arabellek taşmalarını önleme](/windows/win32/SecBP/avoiding-buffer-overruns).
 
-Varsa *strDest* veya *strSource* olduğu bir **NULL** işaretçisi veya *sayısı* küçük veya ona eşit sıfır olarak geçersiz parametre işleyicisi çağrılır, bölümünde anlatıldığı gibi [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse, bu işlevler -1 döndürür ve **errno** için **EINVAL**.
+*StrDest* veya *strSource* **null** bir işaretçisiyse veya *sayı* sıfıra eşit veya daha küçükse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler-1 döndürür ve **errno** , **EINVAL**olarak ayarlanır.
 
-**wcsncpy** ve **_mbsncpy** geniş karakter ve çok baytlı karakter sürümleridir **strncpy**. Bağımsız değişkenler ve dönüş değeri **wcsncpy** ve **_mbsncpy** buna göre değişir. Altı bu işlevler, aynı şekilde davranır.
+**wcsncpy** ve **_mbsncpy** , **strncpy**öğesinin geniş karakterli ve çok baytlı karakter sürümleridir. **Wcsncpy** ve **_mbsncpy** bağımsız değişkenleri ve dönüş değeri buna göre farklılık gösterir. Bu altı işlev, aynı şekilde davranır.
 
-Sahip bu işlevlerin sürümleri **_l** sonekine yerel ayara bağlı davranışları için geçerli yerel ayarı yerine iletilen yerel ayarı kullanmaları dışında. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
+**_L** sonekine sahip bu işlevlerin sürümleri, yerel ayara bağımlı davranış için geçerli yerel ayar yerine geçirilen yerel ayarı kullanmaları dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
-C++'da, bu işlevler, bu işlevlerin daha yeni ve güvenli karşılıklarını çağırma şablon aşırı yüklemeleri vardır. Daha fazla bilgi için [güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
+' C++De, bu işlevlerde bu işlevlerin daha yeni ve güvenli karşılıkları çağıran şablon aşırı yüklemeleri vardır. Daha fazla bilgi için bkz. [Güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_tcsncpy**|**strncpy**|**_mbsnbcpy**|**wcsncpy**|
-|**_tcsncpy_l**|**_strncpy_l**|**_mbsnbcpy_l**|**_wcsncpy_l**|
+|**_tcsncpyı_l**|**_strncpyı_l**|**_mbsnbcpy_l**|**_wcsncpy_l**|
 
 > [!NOTE]
-> **_strncpy_l** ve **_wcsncpy_l** öğelerinin yerel bağımlılığı yoktur; yalnızca için sağlanan **_tcsncpy_l** ve doğrudan çağrılması amaçlanmaz.
+> **_strncpyı_l** ve **_wcsncpyı_l** yerel ayar bağımlılığı yok; yalnızca **_tcsncpyı_l** için sağlanır ve doğrudan çağrılması amaçlanmamıştır.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**strncpy**|\<String.h >|
-|**wcsncpy**|\<String.h > veya \<wchar.h >|
-|**_mbsncpy**, **_mbsncpy_l**|\<Mbstring.h >|
+|**strncpy**|\<String. h >|
+|**wcsncpy**|\<String. h > veya \<wchar. h >|
+|**_mbsncpy**, **_mbsncpyı_l**|\<mbstring. h >|
 
 Ek platform uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, kullanımını gösterir **strncpy** ve nasıl, program hataları ve güvenlik sorunlarına neden kötüye kullanabilir. Derleyici yapılan her çağrı için bir uyarı oluşturur **strncpy** benzer **crt_strncpy_x86.c(15): C4996 Uyarı: 'strncpy': Bu işlev veya değişken güvenli olmayabilir. Strncpy_s kullanmayı düşünün. Kullanımdan kaldırma devre dışı bırakmak için _crt_secure_no_warnıngs kullanın. Ayrıntılar için çevrimiçi yardıma bakın.**
+Aşağıdaki örnek, **strncpy** kullanımını ve program hataları ve güvenlik sorunlarına yol açabilecek şekilde nasıl kötüye kullanılacağını göstermektedir. Derleyici, crt_strncpy_x86. c (15) ile **benzer her **strncpy** çağrısı için bir uyarı oluşturur: Warning C4996: ' strncpy ': Bu işlev veya değişken güvenli olmayabilir. Bunun yerine strncpy_s kullanmayı düşünün. Kullanımdan kaldırmayı devre dışı bırakmak için _CRT_SECURE_NO_WARNINGS kullanın. Ayrıntılar için çevrimiçi yardıma bakın.**
 
 ```C
 // crt_strncpy_x86.c
@@ -273,11 +273,11 @@ dogs like to chase cars.
 Buffer overrun: s = 'ars.' (should be 'test')
 ```
 
-Otomatik değişkenler düzenini ve hata algılama ve kod koruma düzeyini değiştirilen derleyici ayarları ile farklılık gösterebilir. Bu örnek, diğer derleme ortamlarda veya diğer derleyici seçenekleri ile yapılandırıldığında farklı sonuçlar verebilir.
+Otomatik değişkenlerin yerleşimi ve hata algılama ve kod koruma düzeyi, değişen derleyici ayarları ile farklılık gösterebilir. Bu örnek, diğer derleme ortamlarında veya diğer derleyici seçenekleriyle oluşturulduğunda farklı sonuçlara sahip olabilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dize düzenlemesi](../../c-runtime-library/string-manipulation-crt.md)<br/>
+[Dize düzenleme](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [locale](../../c-runtime-library/locale.md)<br/>
 [Çok Baytlı Karakter Sıralarının Yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [_mbsnbcpy, _mbsnbcpy_l](mbsnbcpy-mbsnbcpy-l.md)<br/>

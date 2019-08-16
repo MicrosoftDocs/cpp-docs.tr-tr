@@ -1,36 +1,36 @@
 ---
-title: COM'a giriş
+title: COM'a Giriş
 ms.custom: index-page
 ms.date: 11/04/2016
 helpviewer_keywords:
 - COM
 ms.assetid: 120735d9-db71-4ad3-a730-ce576ea2354e
-ms.openlocfilehash: 7631ba98b0e2cb00310400206b0b442ab7a23dd7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e29f761e0380357bc999af82cc4bde8bfbaf4d6e
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62262378"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69492353"
 ---
-# <a name="introduction-to-com"></a>COM'a giriş
+# <a name="introduction-to-com"></a>COM'a Giriş
 
-COM, hangi ActiveX denetimlerinin ve OLE oluşturulan temel "nesne modeli" olur. COM diğer bileşenleri ve uygulamaları barındırmak için işlevselliği göstermek bir nesne sağlar. Bu, hem nesnenin kendisini nasıl kullanıma sunar ve bu Etkilenme ağları ve işlemler arasında nasıl çalıştığını tanımlar. Ayrıca, COM nesnenin yaşam döngüsü tanımlar.
+COM, ActiveX denetimlerinin ve OLE 'nin oluşturulduğu temel "nesne modelidir". COM, bir nesnenin işlevselliğini diğer bileşenlere sergileme ve uygulamaları barındırmasına olanak tanır. Nesnenin kendisini nasıl kullanıma sunduğunu ve bu pozlamayı süreçler ve ağlar arasında nasıl çalıştığını tanımlar. COM Ayrıca nesnenin yaşam döngüsünü tanımlar.
 
-Bu kavramlar COM temel şunlardır:
+Temel-COM aşağıdaki kavramlardır:
 
-- [Arabirimleri](../atl/interfaces-atl.md) — bir nesne işlevselliği sunan mekanizması.
+- [Arabirimler](../atl/interfaces-atl.md) — bir nesnenin işlevlerini kullanıma sunma mekanizması.
 
-- [IUnknown](../atl/iunknown.md) — diğer tüm dayalı temel bir arabirim. Başvuru sayımı ve COM içinden çalıştıran mekanizmaları sorgulama arabirimi uygulayan
+- [IUnknown](../atl/iunknown.md) — tüm diğerlerinin temel aldığı temel arabirim. COM üzerinden çalışan başvuru saymasını ve arabirim sorgulama mekanizmalarını uygular.
 
-- [Başvuru sayımı](../atl/reference-counting.md) — teknik olarak bir nesne (ya da kesinlikle, bir arabirim) karar zaman artık kullanılmadığını ve bu nedenle kendisini kaldırmak ücretsiz olarak kullanılabilir.
+- [Başvuru sayımı](../atl/reference-counting.md) — bir nesnenin (ya da tamamen, bir arabirimin) artık kullanılmıyor olmasının ne zaman karar verdiği ve bu nedenle kendisini kaldırmak için boş olan teknik.
 
 - [QueryInterface](../atl/queryinterface.md) — belirli bir arabirim için bir nesneyi sorgulamak için kullanılan yöntem.
 
-- [Hazırlama](../atl/marshaling.md) — nesneler iş parçacığı, işlem ve ağ sınırlarını mekandan için izin verme, kullanılacak sağlayan mekanizma.
+- [Sıralama](../atl/marshaling.md) — nesnelerin iş parçacığı, süreç ve ağ sınırları genelinde kullanılmasını sağlayan mekanizma, konum bağımsızlığı için izin verir.
 
-- [Toplama](../atl/aggregation.md) — bir nesne yapabilir bir şekilde başka birine kullanın.
+- [Toplama](../atl/aggregation.md) — bir nesnenin diğeri tarafından ne şekilde kullanılabilir hale sunılabileceği bir yoldur.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [COM ve ATL’ye Giriş](../atl/introduction-to-com-and-atl.md)<br/>
-[Bileşen Nesne modeli](/windows/desktop/com/the-component-object-model)
+[Bileşen nesne modeli](/windows/win32/com/the-component-object-model)

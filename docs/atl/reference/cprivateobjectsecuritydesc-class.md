@@ -12,12 +12,12 @@ f1_keywords:
 helpviewer_keywords:
 - CPrivateObjectSecurityDesc class
 ms.assetid: 2c4bbb13-bf99-4833-912a-197f6815bb5d
-ms.openlocfilehash: c1ac15d4d8254107a66e577321edb3c40578f240
-ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
+ms.openlocfilehash: 97ea2b8411b404caf9f833ad85f226d18aea1e73
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68915803"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69496577"
 ---
 # <a name="cprivateobjectsecuritydesc-class"></a>CPrivateObjectSecurityDesc sınıfı
 
@@ -57,7 +57,7 @@ class CPrivateObjectSecurityDesc : public CSecurityDesc
 
 [CSecurityDesc](../../atl/reference/csecuritydesc-class.md)öğesinden türetilen bu sınıf, özel bir nesnenin güvenlik tanımlayıcısını oluşturmak ve yönetmek için yöntemler sağlar.
 
-Windows 'daki erişim denetim modeline giriş için Windows SDK [Access Control](/windows/desktop/SecAuthZ/access-control) bakın.
+Windows 'daki erişim denetim modeline giriş için Windows SDK [Access Control](/windows/win32/SecAuthZ/access-control) bakın.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -93,7 +93,7 @@ Geçerli nesneyle ilişkili `GUID` nesne türünü tanımlayan bir yapıya yöne
 Yeni nesnenin diğer nesneleri içerip içeremeyeceğini belirtir. True değeri, yeni nesnenin bir kapsayıcı olduğunu gösterir. False değeri, yeni nesnenin bir kapsayıcı olmadığını gösterir.
 
 *GenericMapping*<br/>
-Nesne için her bir genel sağdan belirli haklara eşlemeyi belirten bir [GENERIC_MAPPING](/windows/desktop/api/winnt/ns-winnt-generic_mapping) yapısına yönelik işaretçi.
+Nesne için her bir genel sağdan belirli haklara eşlemeyi belirten bir [GENERIC_MAPPING](/windows/win32/api/winnt/ns-winnt-generic_mapping) yapısına yönelik işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -101,7 +101,7 @@ Başarılı olma durumunda true, aksi durumda false değerini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, geçerli güvenlik tanımlayıcısının isteğe bağlı erişim denetimi listesi (DACL) ve sistem erişim denetimi listesi (SACL) içindeki Ace 'lerden üst güvenlik tanımlayıcısından devralınıp alınmayacağını saptamaya çalışır. [Converttooto ınherprınesnegüvenliği](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-converttoautoinheritprivateobjectsecurity) işlevini çağırır.
+Bu yöntem, geçerli güvenlik tanımlayıcısının isteğe bağlı erişim denetimi listesi (DACL) ve sistem erişim denetimi listesi (SACL) içindeki Ace 'lerden üst güvenlik tanımlayıcısından devralınıp alınmayacağını saptamaya çalışır. [Converttooto ınherprınesnegüvenliği](/windows/win32/api/securitybaseapi/nf-securitybaseapi-converttoautoinheritprivateobjectsecurity) işlevini çağırır.
 
 ##  <a name="cprivateobjectsecuritydesc"></a>CPrivateObjectSecurityDesc:: CPrivateObjectSecurityDesc
 
@@ -164,7 +164,7 @@ Yeni nesnenin diğer nesneleri içerip içeremeyeceğini belirtir. True değeri,
 Adına nesnesi oluşturulmakta olan istemci işlemi için [CAccessToken](../../atl/reference/caccesstoken-class.md) nesnesine başvuru.
 
 *GenericMapping*<br/>
-Nesne için her bir genel sağdan belirli haklara eşlemeyi belirten bir [GENERIC_MAPPING](/windows/desktop/api/winnt/ns-winnt-generic_mapping) yapısına yönelik işaretçi.
+Nesne için her bir genel sağdan belirli haklara eşlemeyi belirten bir [GENERIC_MAPPING](/windows/win32/api/winnt/ns-winnt-generic_mapping) yapısına yönelik işaretçi.
 
 *Nesne*<br/>
 Geçerli nesneyle ilişkili `GUID` nesne türünü tanımlayan bir yapıya yönelik işaretçi. Nesne bir GUID içermiyorsa *ObjectType* öğesini null olarak ayarlayın.
@@ -173,7 +173,7 @@ Geçerli nesneyle ilişkili `GUID` nesne türünü tanımlayan bir yapıya yöne
 Yeni nesnenin diğer nesneleri içerip içeremeyeceğini belirtir. True değeri, yeni nesnenin bir kapsayıcı olduğunu gösterir. False değeri, yeni nesnenin bir kapsayıcı olmadığını gösterir.
 
 *Oto devralma bayrakları*<br/>
-Erişim denetimi girişlerinin (ACE 'Ler) *pParent*'dan nasıl devralındığını denetleyen bir bit bayrakları kümesi. Daha fazla ayrıntı için bkz. [CreatePrivateObjectSecurityEx](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-createprivateobjectsecurityex) .
+Erişim denetimi girişlerinin (ACE 'Ler) *pParent*'dan nasıl devralındığını denetleyen bir bit bayrakları kümesi. Daha fazla ayrıntı için bkz. [CreatePrivateObjectSecurityEx](/windows/win32/api/securitybaseapi/nf-securitybaseapi-createprivateobjectsecurityex) .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -181,7 +181,7 @@ Başarılı olma durumunda true, aksi durumda false değerini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem [CreatePrivateObjectSercurity](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-createprivateobjectsecurity) veya [CreatePrivateObjectSecurityEx](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-createprivateobjectsecurityex)öğesini çağırır.
+Bu yöntem [CreatePrivateObjectSercurity](/windows/win32/api/securitybaseapi/nf-securitybaseapi-createprivateobjectsecurity) veya [CreatePrivateObjectSecurityEx](/windows/win32/api/securitybaseapi/nf-securitybaseapi-createprivateobjectsecurityex)öğesini çağırır.
 
 İkinci yöntem, yeni nesnenin nesne türü GUID 'INI belirtmeye veya Ace 'Leri nasıl devralındığını denetlemeye izin verir.
 
@@ -201,7 +201,7 @@ bool Get(
 ### <a name="parameters"></a>Parametreler
 
 *ortası*<br/>
-Alınacak güvenlik tanımlayıcısının parçalarını gösteren bir bit bayrakları kümesi. Bu değer, [SECURITY_INFORMATION](/windows/desktop/SecAuthZ/security-information) bit bayraklarının bir birleşimi olabilir.
+Alınacak güvenlik tanımlayıcısının parçalarını gösteren bir bit bayrakları kümesi. Bu değer, [SECURITY_INFORMATION](/windows/win32/SecAuthZ/security-information) bit bayraklarının bir birleşimi olabilir.
 
 *pResult*<br/>
 Belirtilen güvenlik tanımlayıcısından istenen bilgilerin bir kopyasını alan bir [CSecurityDesc](../../atl/reference/csecuritydesc-class.md) nesnesi işaretçisi.
@@ -253,19 +253,19 @@ bool Set(
 ### <a name="parameters"></a>Parametreler
 
 *ortası*<br/>
-Ayarlanacak güvenlik tanımlayıcısının parçalarını gösteren bir bit bayrakları kümesi. Bu değer, [SECURITY_INFORMATION](/windows/desktop/SecAuthZ/security-information) bit bayraklarının bir birleşimi olabilir.
+Ayarlanacak güvenlik tanımlayıcısının parçalarını gösteren bir bit bayrakları kümesi. Bu değer, [SECURITY_INFORMATION](/windows/win32/SecAuthZ/security-information) bit bayraklarının bir birleşimi olabilir.
 
 *Gerektirmeden*<br/>
 [CSecurityDesc](../../atl/reference/csecuritydesc-class.md) nesnesine yönelik işaretçi. Bu güvenlik tanımlayıcısının, *sı* parametresi tarafından belirtilen kısımları nesnenin güvenlik tanımlayıcısına uygulanır.
 
 *GenericMapping*<br/>
-Nesne için her bir genel sağdan belirli haklara eşlemeyi belirten bir [GENERIC_MAPPING](/windows/desktop/api/winnt/ns-winnt-generic_mapping) yapısına yönelik işaretçi.
+Nesne için her bir genel sağdan belirli haklara eşlemeyi belirten bir [GENERIC_MAPPING](/windows/win32/api/winnt/ns-winnt-generic_mapping) yapısına yönelik işaretçi.
 
 *Simgesinde*<br/>
 Adına nesnesi oluşturulmakta olan istemci işlemi için [CAccessToken](../../atl/reference/caccesstoken-class.md) nesnesine başvuru.
 
 *Oto devralma bayrakları*<br/>
-Erişim denetimi girişlerinin (ACE 'Ler) *pParent*'dan nasıl devralındığını denetleyen bir bit bayrakları kümesi. Daha fazla ayrıntı için bkz. [CreatePrivateObjectSecurityEx](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-createprivateobjectsecurityex) .
+Erişim denetimi girişlerinin (ACE 'Ler) *pParent*'dan nasıl devralındığını denetleyen bir bit bayrakları kümesi. Daha fazla ayrıntı için bkz. [CreatePrivateObjectSecurityEx](/windows/win32/api/securitybaseapi/nf-securitybaseapi-createprivateobjectsecurityex) .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -277,7 +277,7 @@ Başarılı olma durumunda true, aksi durumda false değerini döndürür.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[SECURITY_DESCRIPTOR](/windows/desktop/api/winnt/ns-winnt-security_descriptor)<br/>
+[SECURITY_DESCRIPTOR](/windows/win32/api/winnt/ns-winnt-security_descriptor)<br/>
 [Sınıfa genel bakış](../../atl/atl-class-overview.md)<br/>
 [Güvenlik Genel İşlevleri](../../atl/reference/security-global-functions.md)<br/>
 [CSecurityDesc Sınıfı](../../atl/reference/csecuritydesc-class.md)

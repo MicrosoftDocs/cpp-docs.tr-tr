@@ -160,12 +160,12 @@ helpviewer_keywords:
 - CRT_REPORT_HOOK type
 - _finddata_t type
 ms.assetid: 23312dd2-4a6a-4d70-9b48-2a5d0d8c9f28
-ms.openlocfilehash: d2b209e29b0690ec2003031e160ce9fd1f749b13
-ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
+ms.openlocfilehash: c93cf4bf138fc6bc648d33c180edbed0dbe5014e
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68915310"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69500634"
 ---
 # <a name="standard-types"></a>Standart Türler
 
@@ -202,7 +202,7 @@ Microsoft çalışma zamanı kitaplığı, aşağıdaki standart türleri ve tü
 |`div_t``ldiv_t` ve yapılar`lldiv_t`|Sırasıyla [div](../c-runtime-library/reference/div.md), [ldiv](../c-runtime-library/reference/ldiv-lldiv.md)ve [lldiv](../c-runtime-library/reference/ldiv-lldiv.md)tarafından döndürülen değerleri depolayın.|STDLIB.H|
 |`errno_t`gir|Hata kodlarıyla `errno`ilgilenen bir işlev dönüş türü veya parametresi için kullanılır.|STDDEF.H,<br /><br /> CRTDEFS.H|
 |`_exception`yapısı|[_Matherr](../c-runtime-library/reference/matherr.md)için hata bilgilerini depolar.|MATH.H|
-|`_EXCEPTION_POINTERS`|Bir özel durum kaydı içerir. Daha fazla bilgi için bkz. [EXCEPTION_POINTERS](/windows/desktop/api/winnt/ns-winnt-exception_pointers) .|FPIEEE.H|
+|`_EXCEPTION_POINTERS`|Bir özel durum kaydı içerir. Daha fazla bilgi için bkz. [EXCEPTION_POINTERS](/windows/win32/api/winnt/ns-winnt-exception_pointers) .|FPIEEE.H|
 |`FILE`yapısı|Akış geçerli durumuyla ilgili bilgileri depolar; tüm G/Ç işlemlerinde kullanılır.|STDIO.H|
 |`_finddata_t`, `_wfinddata_t` ,`_finddata32_t`, ,`_finddatai64_t`, ,`__finddata64_t`,,,, ,`__finddata64i32_t`yapıları `__wfinddata64_t` `__finddata32i64_t` `_wfinddatai64_t` `_wfinddata32_t` `__wfinddata32i64_t` `__wfinddata64i32_t`|[_Findfirst, _wfindfirst ve ilgili işlevler](../c-runtime-library/reference/findfirst-functions.md) ve [_sonraadı, _wsonraadı ve ilgili işlevler](../c-runtime-library/reference/findnext-functions.md)tarafından döndürülen dosya özniteliği bilgilerini depolayın. Yapı üyeleri hakkında bilgi için bkz. [dosya adı arama işlevleri](../c-runtime-library/filename-search-functions.md) .|IO.H, WCHAR.H|
 |`_FPIEEE_RECORD`yapısı|IEEE kayan nokta özel durumuyla ilgili bilgiler içerir; [_fpieee_flt](../c-runtime-library/reference/fpieee-flt.md)tarafından Kullanıcı tanımlı tuzak işleyicisine geçildi.|FPIEEE.H|

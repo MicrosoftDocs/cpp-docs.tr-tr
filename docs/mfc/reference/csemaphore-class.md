@@ -1,5 +1,5 @@
 ---
-title: CSemaphore sınıfı
+title: Csemafor sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CSemaphore
@@ -8,16 +8,16 @@ f1_keywords:
 helpviewer_keywords:
 - CSemaphore [MFC], CSemaphore
 ms.assetid: 385fc7e4-8f86-4be2-85e1-d23b38c12f7f
-ms.openlocfilehash: 6c518b6a9ad0fe857b0878bcecd3020ba97174e6
-ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
+ms.openlocfilehash: d5a0e4187107aaab7cedf4e7a0e2fc47b9f9f305
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66504708"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69502576"
 ---
-# <a name="csemaphore-class"></a>CSemaphore sınıfı
+# <a name="csemaphore-class"></a>Csemafor sınıfı
 
-Sınıfın bir nesnesi `CSemaphore` "semafor" temsil eder; bir tutar erişmek için bir veya daha fazla işlem içinde belirtilen bir kaynak şu anda erişen iş parçacığı sayısını sınırlı sayıda iş parçacığının veren bir eşitleme nesnesi.
+Bir veya daha fazla işlemde sınırlı sayıda iş parçacığına izin veren bir eşitleme nesnesi, bir veya daha fazla işlemde belirli bir kaynağa erişen iş parçacığı sayısı sayısını korur bir "semafor" temsileder.`CSemaphore`
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -31,21 +31,21 @@ class CSemaphore : public CSyncObject
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CSemaphore::CSemaphore](#csemaphore)|Oluşturur bir `CSemaphore` nesne.|
+|[Csemafor:: Csemafor](#csemaphore)|Bir `CSemaphore` nesnesi oluşturur.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Semafor, yalnızca sınırlı sayıda kullanıcıları destekleyebilir paylaşılan bir kaynağa erişimi denetlemek yararlıdır. Geçerli sayısı `CSemaphore` nesnedir, izin verilen ek kullanıcıların sayısı. Sayısı sıfır ulaştığında, tüm çalışır tarafından denetlenen kaynağı `CSemaphore` nesne sistem kuyruğa eklenir ve bunlar kadar bekleyin ya da zaman aşımı veya 0'ın üzerinde sayısı yükseldiğinde. Denetimli kaynak tek seferde erişebilen kullanıcı sayısı oluşumu sırasında belirtilen `CSemaphore` nesne.
+Semaforlar yalnızca sınırlı sayıda kullanıcıyı destekleyebilen paylaşılan bir kaynağa erişimi denetlemek için faydalıdır. `CSemaphore` Nesnenin geçerli sayısı izin verilen ek kullanıcı sayısıdır. Sayı sıfıra ulaştığında, `CSemaphore` nesne tarafından denetlenen kaynağı kullanmaya yönelik tüm girişimler bir sistem kuyruğuna eklenir ve zaman aşımına uğrar ya da sayı 0 ' dan fazla olacak şekilde bekler. Denetlenen kaynağa tek seferde erişebilen en fazla kullanıcı sayısı, `CSemaphore` nesne oluşturma sırasında belirtilir.
 
-Kullanılacak bir `CSemaphore` nesne, oluşturmak `CSemaphore` gerektiğinde nesne. Üzerinde beklenilen istediğiniz semafor adını belirtin ve uygulamanızı başlangıçta ait. Oluşturucu döndürdüğünde semafor erişebilirsiniz. Çağrı [CSyncObject::Unlock](../../mfc/reference/csyncobject-class.md#unlock) işiniz bittiğinde kontrollü bir kaynağa erişme.
+Bir `CSemaphore` nesne kullanmak için, gerektiğinde `CSemaphore` nesneyi oluşturun. Beklemek istediğiniz semaforun adını belirtin ve uygulamanızın başlangıçta sahip olması gerekir. Ardından, Oluşturucu döndüğünde semafora erişebilirsiniz. Denetlenen kaynağa erişmeyi bitirdiğinizde [CSyncObject:: unlock](../../mfc/reference/csyncobject-class.md#unlock) öğesini çağırın.
 
-Alternatif bir yöntem kullanarak `CSemaphore` türünde bir değişken eklemek için nesneleri, `CSemaphore` denetimine istediğiniz sınıfı için bir veri üyesi olarak. Denetlenen Nesne oluşturma sırasında oluşturucusuna çağrı `CSemaphore` ilk belirtme veri üyesi erişim sayısı, en fazla erişim sayısı, (Bu işlem sınırları ötesinde kullanılacaksa) semafor adını ve istenen güvenlik öznitelikleri.
+Nesneleri kullanmak `CSemaphore` için alternatif bir yöntem, denetlemek istediğiniz sınıfa bir veri üyesi `CSemaphore` olarak türünde bir değişken eklemektir. Denetlenen nesnenin oluşturulması sırasında, ilk erişim sayısını, en fazla erişim `CSemaphore` sayısını, semaforun adını (işlem sınırları genelinde kullanılacaksa) ve istenen güvenlik özniteliklerini belirten veri üyesinin oluşturucusunu çağırın.
 
-Denetlenen kaynaklarına erişmek için `CSemaphore` nesnelere bu şekilde, ilk iki türünde bir değişken oluşturun [CSingleLock](../../mfc/reference/csinglelock-class.md) veya türü [CMultiLock](../../mfc/reference/cmultilock-class.md) kaynağınızın erişim üye işlev. Ardından kilit nesnenin çağrı `Lock` üye işlevi (örneğin, [CSingleLock::Lock](../../mfc/reference/csinglelock-class.md#lock)). Bu noktada, iş parçacığı ya da kaynağa erişim, kaynak serbest bırakılması ve erişim veya zaman aşımı, kaynağa erişmek başarısız olan ve kaynak yayımlanacak bekleyin için bekleyin. Her iki durumda da, kaynak, bir iş parçacığı açısından güvenli şekilde erişilmedi. Kaynağı serbest bırakmak için kilit nesnenin kullanın `Unlock` üye işlevi (örneğin, [CSingleLock::Unlock](../../mfc/reference/csinglelock-class.md#unlock)), veya kilit nesne kapsam dışına düşen izin verin.
+Bu şekilde nesnelere göre `CSemaphore` denetlenen kaynaklara erişmek için, önce [CSingleLock](../../mfc/reference/csinglelock-class.md) türünden bir değişken oluşturun ya da kaynağınızın erişim üyesi işlevinizde [CMultiLock](../../mfc/reference/cmultilock-class.md) yazın. Ardından, Lock nesnesinin `Lock` üye işlevini çağırın (örneğin, [CSingleLock:: Lock](../../mfc/reference/csinglelock-class.md#lock)). Bu noktada, iş parçacığlarınız kaynağa erişim kazanacaktır, kaynağın serbest bırakılacağını ve erişim kazanmasını ya da kaynağın serbest bırakılacağını ve zaman aşımına gelmesini bekleyip kaynağa erişim elde edemeyecektir. Herhangi bir durumda, kaynağınız iş parçacığı güvenli bir şekilde erişilir. Kaynağı serbest bırakmak için, Lock nesnesinin `Unlock` üye işlevini kullanın (örneğin, [CSingleLock:: unlock](../../mfc/reference/csinglelock-class.md#unlock)) veya kilit nesnesinin kapsam dışına çıkmasına izin verin.
 
-Alternatif olarak, oluşturabileceğiniz bir `CSemaphore` tek başına nesne ve denetimli bir kaynağa erişmeyi denemeden önce açıkça erişim. Bu, kaynak kodunuzu okuyan kişi daha anlaşılır sırasında daha fazla hataya yöntemidir.
+Alternatif olarak, bir `CSemaphore` nesnesi tek başına oluşturabilir ve denetimli kaynağa erişmeyi denemeden önce açık olarak erişebilirsiniz. Bu yöntem, kaynak kodunuzu okuyan birisinin daha açık olması durumunda hataya açıktır.
 
-Nasıl kullanılacağı hakkında daha fazla bilgi için `CSemaphore` nesneleri başlıklı makaleye bakın [çoklu iş parçacığı kullanımı: Eşitleme sınıflarının nasıl kullanılacağını](../../parallel/multithreading-how-to-use-the-synchronization-classes.md).
+Nesneleri kullanma `CSemaphore` hakkında daha fazla bilgi için çoklu iş parçacığı oluşturma makalesine [bakın: Eşitleme sınıflarını](../../parallel/multithreading-how-to-use-the-synchronization-classes.md)kullanma.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -57,11 +57,11 @@ Nasıl kullanılacağı hakkında daha fazla bilgi için `CSemaphore` nesneleri 
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxmt.h
+**Başlık:** afxmt. h
 
-##  <a name="csemaphore"></a>  CSemaphore::CSemaphore
+##  <a name="csemaphore"></a>Csemafor:: Csemafor
 
-Adlandırışmış veya adlandırılmamış bir yapıları `CSemaphore` nesne.
+Adlandırılmış veya adlandırılmamış `CSemaphore` bir nesne oluşturur.
 
 ```
 CSemaphore(
@@ -74,23 +74,23 @@ CSemaphore(
 ### <a name="parameters"></a>Parametreler
 
 *lInitialCount*<br/>
-Semafor için ilk kullanım sayısı. En az 0 olmalıdır ve daha az veya buna eşit *lMaxCount*.
+Semaforun başlangıçtaki kullanım sayısı. 0 ' dan büyük veya buna eşit ve *lMaxCount*değerinden küçük veya buna eşit olmalıdır.
 
 *lMaxCount*<br/>
-Semafor için en fazla kullanım sayısı. 0'dan büyük olmalıdır.
+Semafor için en yüksek kullanım sayısı. 0 ' dan büyük olmalıdır.
 
 *pstrName*<br/>
-Semafor adı. Semafor işlem sınırları ötesinde erişecek olursa sağlanmalıdır. Varsa `NULL`, nesne adlandırılmamış olacaktır. Oluşturucu ad var olan bir semaforu eşleşiyorsa, yeni bir yapılar `CSemaphore` adının semafor başvuran nesne. Semafor olmayan mevcut bir eşitleme nesnesi adıyla, yapı başarısız olur.
+Semaforun adı. Semaforun işlem sınırları genelinde erişilmesi durumunda bu sağlanmalıdır. İse `NULL`, nesne adlandırılmamış olur. Ad mevcut bir semafora eşleşiyorsa, Oluşturucu bu adın semaforuna başvuran `CSemaphore` yeni bir nesne oluşturur. Ad, semafor olmayan mevcut bir eşitleme nesnesiyle eşleşiyorsa, oluşturma başarısız olur.
 
 *lpsaAttributes*<br/>
-Semafor nesne için güvenlik öznitelikleri. Bu yapı tam bir açıklaması için bkz. [SECURITY_ATTRIBUTES](/previous-versions/windows/desktop/legacy/aa379560\(v=vs.85\)) Windows SDK.
+Semafor nesnesi için güvenlik öznitelikleri. Bu yapının tam açıklaması için Windows SDK [SECURITY_ATTRIBUTES](/previous-versions/windows/desktop/legacy/aa379560\(v=vs.85\)) bakın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Erişim veya yayın için bir `CSemaphore` nesne, oluşturun bir [CMultiLock](../../mfc/reference/cmultilock-class.md) veya [CSingleLock](../../mfc/reference/csinglelock-class.md) nesne ve çağrı kendi [kilit](../../mfc/reference/csinglelock-class.md#lock) ve [kilidini](../../mfc/reference/csinglelock-class.md#unlock) üye işlevleri.
+Bir `CSemaphore` nesneye erişmek veya onu serbest bırakmak için bir [CMultiLock](../../mfc/reference/cmultilock-class.md) veya [CSingleLock](../../mfc/reference/csinglelock-class.md) nesnesi oluşturun ve [Lock](../../mfc/reference/csinglelock-class.md#lock) ve [unlock](../../mfc/reference/csinglelock-class.md#unlock) üye işlevlerini çağırın.
 
 > [!IMPORTANT]
->  Oluşturduktan sonra `CSemaphore` nesnesi [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) mutex zaten yoktu emin olmak için. Mutex beklenmedik bir şekilde mevcut olması, dolandırıcı işlemin ele geçirilmesi ve mutex kötü amaçlı olarak kullanmayı planlayan gösterebilir. Bu durumda, tanıtıcı kapatın ve var olan bir hata varmış gibi nesnesi oluşturulurken devam etmek için önerilen güvenliğe yordam aynıdır.
+>  Nesneyi oluşturduktan sonra, mutex ' i kullanarak mutex 'in zaten mevcut olmadığından emin olun. [](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) `CSemaphore` Mutex beklenmedik bir şekilde mevcutsa, bir standart dışı işlemin ele geçirilmesi gerektiğini belirtebilir ve mutex 'i kötü amaçlı olarak kullanmak için bu olabilir. Bu durumda, önerilen güvenlik bilincine sahip yordam, tanıtıcıyı kapatmak ve nesneyi oluştururken bir hata olması gibi devam eder.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

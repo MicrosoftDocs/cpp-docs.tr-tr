@@ -9,20 +9,20 @@ helpviewer_keywords:
 - side-by-side applications [C++]
 - builds [C++], side-by-side assemblies
 ms.assetid: 9465904e-76f7-48bd-bb3f-c55d8f1699b6
-ms.openlocfilehash: 8164ede1379e573b08f699cd55c199f6fa228823
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: b7deb68a441d392464dad8763f80bd4d9cdfcb17
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65220979"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69493352"
 ---
 # <a name="building-cc-isolated-applications-and-side-by-side-assemblies"></a>C/C++ Yalıtılmış Uygulamaları ve Yan Yana Derlemeleri Oluşturma
 
-Visual Studio fikrini tabanlı Windows istemci uygulamaları için bir dağıtım modeli destekler [yalıtılmış uygulamalar](/windows/desktop/SbsCs/isolated-applications) ve [yan yana derlemeler](/windows/desktop/SbsCs/about-side-by-side-assemblies-). Varsayılan olarak, Visual Studio tüm yerel C oluşturur /C++ uygulamaları kullanan yalıtılmış uygulamalar olarak [bildirimlerini](/windows/desktop/sbscs/manifests) görselde bağımlılıklarını tanımlamak için C++ kitaplıkları.
+Visual Studio, [yalıtılmış uygulamaların](/windows/win32/SbsCs/isolated-applications) ve [yan yana derlemelerin](/windows/win32/SbsCs/about-side-by-side-assemblies-)fikrini temel alarak Windows istemci uygulamalarına yönelik bir dağıtım modelini destekler. Varsayılan olarak, Visual Studio tüm yerel C/C++ uygulamalarını görsel C++ kitaplıklara bağımlılıklarını anlatmak için [bildirimleri](/windows/win32/sbscs/manifests) kullanan yalıtılmış uygulamalar olarak oluşturur.
 
-C/C++ programları olarak yalıtılmış uygulamalar derleme çeşitli avantajlar sunar. Örneğin, diğer C/C++ uygulamaları yüklediğinizde veya Visual C++ kitaplıklarının kaldırma yalıtılmış bir uygulama etkilenmez. Yalıtılmış uygulamalar tarafından kullanılan visual C++ kitaplıkları, yine de uygulamanın yerel klasörü veya (WinSxS); yerel derleme önbelleğine yükleme dağıtılabilir zaten dağıtılmış uygulamaları kullanılarak basitleştirilebilir için Visual C++ kitaplıklarının ancak bakım bir [yayımcı yapılandırma dosyası](/windows/desktop/SbsCs/publisher-configuration). Yalıtılmış uygulama dağıtım modeli hala olasılığını sistem yöneticileri için açık bırakarak belirli bir bilgisayarda çalışan bir C/C++ uygulamalarında Visual C++ kitaplıklarının en son sürümünü kullandığınızdan emin olmak kolaylaştırır ve uygulama yazarları, sürüm bağlama bunların bağımlı dll uygulamaları denetlemek için.
+Yalıtılmış uygulamalar olarakC++ C/programları oluşturmak bir dizi avantaj sunar. Örneğin, yalıtılmış bir uygulama, diğer C/C++ uygulamalar görsel C++ kitaplıkları yüklerken veya kaldırırken etkilenmemiştir. Yalıtılmış C++ uygulamalar tarafından kullanılan görsel kitaplıklar, uygulamanın yerel klasöründe veya yerel bütünleştirilmiş kod önbelleğine (WinSxS) yüklenmeye devam edebilir. Ancak, zaten dağıtılan uygulamalar C++ için görsel kitaplıkların bakımı bir [Yayımcı yapılandırma dosyası](/windows/win32/SbsCs/publisher-configuration)kullanılarak basitleştirilir. Yalıtılmış uygulama dağıtım modeli, belirli bir bilgisayarda çalışan C/C++ uygulamaların Visual C++ kitaplıklarının en son sürümünü kullandığından emin olmayı kolaylaştırır, ancak hala sistem olanağını açmaya devam ediyor. uygulamaların bağımlı dll 'lerine açık sürüm bağlamasını denetleyen Yöneticiler ve uygulama yazarları.
 
-Bu bölümde ele alınmaktadır nasıl yalıtılmış bir uygulama olarak C/C++ uygulamanızı derleme ve bildirim kullanarak Visual C++ kitaplıklarına bağlar emin olun. Bu bölümdeki bilgiler, öncelikle yerel ya da yönetilmeyen, geçerli C++ uygulamalar. Dağıtma hakkında bilgi yerel C++ bkz. Visual Studio ile oluşturulmuş uygulamalar [yeniden dağıtma Visual C++ dosyaları](../windows/redistributing-visual-cpp-files.md).
+Bu bölümde, C/C++ uygulamanızı yalıtılmış bir uygulama olarak nasıl oluşturabileceğiniz ve bir bildirim kullanarak görsel C++ kitaplıklara bağlandığı nasıl emin olduğunuz açıklanmaktadır. Bu bölümdeki bilgiler birincil olarak yerel veya yönetilmeyen C++ uygulamalar için geçerlidir. Visual Studio ile oluşturulan yerel C++ uygulamaları dağıtma hakkında bilgi için bkz. [ C++ görsel dosyaları yeniden dağıtma](../windows/redistributing-visual-cpp-files.md).
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
@@ -42,6 +42,6 @@ Bu bölümde ele alınmaktadır nasıl yalıtılmış bir uygulama olarak C/C++ 
 
 ## <a name="related-sections"></a>İlgili Bölümler
 
-[Yalıtılmış uygulamalar ve yan yana derlemeler](/windows/desktop/SbsCs/isolated-applications-and-side-by-side-assemblies-portal)
+[Yalıtılmış uygulamalar ve yan yana derlemeler](/windows/win32/SbsCs/isolated-applications-and-side-by-side-assemblies-portal)
 
-[Masaüstü uygulamalarını dağıtma](../windows/deploying-native-desktop-applications-visual-cpp.md)
+[Masaüstü uygulamaları dağıtma](../windows/deploying-native-desktop-applications-visual-cpp.md)

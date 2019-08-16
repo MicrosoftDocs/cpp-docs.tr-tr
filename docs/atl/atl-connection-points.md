@@ -6,37 +6,37 @@ helpviewer_keywords:
 - ATL, connection points
 - connection points [C++], about connection points
 ms.assetid: 17d76165-5f83-4f95-b36d-483821c247a1
-ms.openlocfilehash: 4d94396ef8839516d9bfee15a2611cce66baa6bd
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: df69496a6d245702a9598d684b25122ca55b1e6d
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62252313"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69491808"
 ---
 # <a name="atl-connection-points"></a>ATL Bağlantı Noktaları
 
-Bir bağlanılabilirlik giden arabirimleri destekleyen bir nesnedir. Bir istemci ile iletişim kurmak nesne giden bir arabirim sağlar. Giden her arayüz için bir bağlantı noktası bağlanılabilirlik nesne kullanıma sunar. Her giden bir arabirim bir havuz olarak adlandırılan bir nesne üzerinde bir istemci tarafından uygulanır.
+Bağlanılabilir bir nesne, giden arabirimleri destekleyen bir nesnedir. Giden arabirim, nesnenin bir istemciyle iletişim kurmasına izin verir. Her giden arabirim için, bağlanılabilir nesne bir bağlantı noktası gösterir. Her giden arabirim, havuz adlı bir nesne üzerinde bir istemci tarafından uygulanır.
 
-![Bağlantı noktaları](../atl/media/vc2zw31.gif "bağlantı noktaları")
+![Bağlantı noktaları](../atl/media/vc2zw31.gif "Bağlantı noktaları")
 
-Her bağlantı noktası destekleyen [IConnectionPoint](/windows/desktop/api/ocidl/nn-ocidl-iconnectionpoint) arabirimi. Bağlanılabilirlik nesne, bağlantı noktaları aracılığıyla istemcisine sunar [IConnectionPointContainer](/windows/desktop/api/ocidl/nn-ocidl-iconnectionpointcontainer) arabirimi.
+Her bağlantı noktası [IConnectionPoint](/windows/win32/api/ocidl/nn-ocidl-iconnectionpoint) arabirimini destekler. Bağlanılabilir nesne, [IConnectionPointContainer](/windows/win32/api/ocidl/nn-ocidl-iconnectionpointcontainer) arabirimi aracılığıyla istemciye bağlantı noktalarını kullanıma sunar.
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
 [ATL Bağlantı Noktası Sınıfları](../atl/atl-connection-point-classes.md)<br/>
-Bağlantı noktaları destekleyen ATL sınıfları kısaca açıklanmaktadır.
+Bağlantı noktalarını destekleyen ATL sınıflarını kısaca açıklar.
 
 [Bir Nesneye Bağlantı Noktaları Ekleme](../atl/adding-connection-points-to-an-object.md)<br/>
-Bir nesneye bağlantı noktaları eklemek için kullanılan adımları açıklanmaktadır.
+Bir nesneye bağlantı noktaları eklemek için kullanılan adımları özetler.
 
 [ATL Bağlantı Noktası Örneği](../atl/atl-connection-point-example.md)<br/>
-Bir bağlantı noktası bildirme bir örnek sağlar.
+Bir bağlantı noktası bildirme örneği sağlar.
 
 ## <a name="related-sections"></a>İlgili Bölümler
 
 [ATL](../atl/active-template-library-atl-concepts.md)<br/>
-Active Template Library kullanarak programlama hakkında kavramsal konulara bağlantılar sağlar.
+Etkin Şablon kitaplığı 'nı kullanarak programla programlama hakkında kavramsal konuların bağlantılarını sağlar.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kavramları](../atl/active-template-library-atl-concepts.md)
+[Tiren](../atl/active-template-library-atl-concepts.md)

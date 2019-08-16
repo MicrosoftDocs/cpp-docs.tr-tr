@@ -8,12 +8,12 @@ helpviewer_keywords:
 - DLLs [C++]
 - DLLs [C++], about DLLs
 ms.assetid: 5216bca4-51e2-466b-b221-0e3e776056f0
-ms.openlocfilehash: 9f5b34fda8a429f8e55631e1e0125ed6f79d5bae
-ms.sourcegitcommit: 0867d648e0955ebad7260b5fbebfd6cd4d58f3c7
+ms.openlocfilehash: 33f002143e306c99b4d17b7a01ddd4a9738e38e7
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68341073"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69493282"
 ---
 # <a name="create-cc-dlls-in-visual-studio"></a>Visual Studio 'daC++ C/dll oluşturma
 
@@ -80,7 +80,7 @@ DLL 'niz yüklenirken yürütülmesi gereken DLL başlatma kodunu açıklar.
 Çalışma zamanı kitaplığının DLL başlangıç dizisini nasıl gerçekleştirdiğini açıklar.
 
 [LoadLibrary ve AfxLoadLibrary](loadlibrary-and-afxloadlibrary.md)<br/>
-Çalışma zamanında  bir dll `AfxLoadLibrary` 'ye açıkça bağlantı için LoadLibrary ve kullanmayı açıklar.
+Çalışma zamanında bir dll `AfxLoadLibrary` 'ye açıkça bağlantı için LoadLibrary ve kullanmayı açıklar.
 
 [GetProcAddress](getprocaddress.md)<br/>
 DLL 'de dışarıya aktarılmış bir işlevin adresini almak için **GetProcAddress** kullanılarak açıklanır.
@@ -88,7 +88,7 @@ DLL 'de dışarıya aktarılmış bir işlevin adresini almak için **GetProcAdd
 [FreeLibrary ve AfxFreeLibrary](freelibrary-and-afxfreelibrary.md)<br/>
 **FreeLibrary** ve `AfxFreeLibrary` dll modülünün artık gerekli olmadığı açıklanır.
 
-[Dinamik bağlantı kitaplığı arama sırası](/windows/desktop/Dlls/dynamic-link-library-search-order)<br/>
+[Dinamik bağlantı kitaplığı arama sırası](/windows/win32/Dlls/dynamic-link-library-search-order)<br/>
 Windows işletim sisteminin sistemde bir DLL bulmak için kullandığı arama yolunu açıklar.
 
 [MFC'ye Dinamik Olarak Bağlı Normal MFC DLL'sinin Modül Durumları](module-states-of-a-regular-dll-dynamically-linked-to-mfc.md)<br/>

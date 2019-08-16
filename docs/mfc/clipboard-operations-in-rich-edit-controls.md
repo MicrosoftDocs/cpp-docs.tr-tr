@@ -10,24 +10,24 @@ helpviewer_keywords:
 - Clipboard, operations in CRichEditCtrl
 - rich edit controls [MFC], Clipboard operations
 ms.assetid: 15ce66bc-2636-4a35-a2ae-d52285dc1af6
-ms.openlocfilehash: 882c589d0d25b54650affa7fd41f916ecf6097d5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e232010b443ace245844f1c28649477cccc8e9e4
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62327112"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69508963"
 ---
 # <a name="clipboard-operations-in-rich-edit-controls"></a>Zengin Düzenleme Denetimlerinde Pano İşlemleri
 
-Uygulamanızı Pano içeriğini bir zengin düzenleme denetimine yapıştırabilirsiniz ([CRichEditCtrl](../mfc/reference/cricheditctrl-class.md)) en iyi kullanılabilir Pano biçimi veya belirli bir pano biçimi kullanarak. Ayrıca, bir zengin düzenleme denetimine bir pano biçimi yapıştırarak özelliğine sahip olup olmadığını belirleyebilirsiniz.
+Uygulamanız Pano içeriğini bir zengin düzenleme denetimine ([CRichEditCtrl](../mfc/reference/cricheditctrl-class.md)) En Iyi kullanılabilir Pano biçimini veya belirli bir Pano biçimini kullanarak yapıştırabilir. Ayrıca, bir zengin düzenleme denetiminin Pano biçimini yapıştırabilme yeteneğine sahip olup olmadığını belirleyebilirsiniz.
 
-Kopyalayın veya içeriği geçerli seçimi kullanarak Kes [kopyalama](../mfc/reference/cricheditctrl-class.md#copy) veya [Kes](../mfc/reference/cricheditctrl-class.md#cut) üye işlevi. Bir zengin düzenleme denetimine kullanarak Pano içeriğini benzer şekilde, yapıştırabilirsiniz [yapıştırın](../mfc/reference/cricheditctrl-class.md#paste) üye işlevi. Denetim, büyük olasılıkla en açıklayıcı bir biçim olduğu tanıdığı, ilk kullanılabilir biçimi yapıştırır.
+[Kopyala](../mfc/reference/cricheditctrl-class.md#copy) veya [Kes](../mfc/reference/cricheditctrl-class.md#cut) üye işlevini kullanarak geçerli seçimin içeriğini kopyalayabilir veya kesebilir. Benzer şekilde, [Yapıştırma](../mfc/reference/cricheditctrl-class.md#paste) üye Işlevini kullanarak panonun içeriğini bir zengin düzenleme denetimine yapıştırabilirsiniz. Denetim, tanıdığı ilk kullanılabilir biçimi yapıştırır, bu, en açıklayıcı biçim olarak kabul edilir.
 
-Belirli bir pano biçimi yapıştırmak için kullanabileceğiniz [denetlemeye](../mfc/reference/cricheditctrl-class.md#pastespecial) üye işlevi. Bu işlev, Pano biçimi seçmesini sağlayan bir Özel Yapıştır komut olan uygulamalar için yararlıdır. Kullanabileceğiniz [CanPaste](../mfc/reference/cricheditctrl-class.md#canpaste) verilen biçimini denetim tarafından tanınan olup olmadığını belirlemek için üye işlevi.
+Belirli bir Pano biçimini yapıştırmak için [PasteSpecial](../mfc/reference/cricheditctrl-class.md#pastespecial) member işlevini kullanabilirsiniz. Bu işlev, kullanıcının Pano biçimini seçmesini sağlayan özel bir Yapıştır komutu olan uygulamalar için faydalıdır. Belirli bir biçimin denetim tarafından tanınıp tanınmadığını anlamak için [CanPaste](../mfc/reference/cricheditctrl-class.md#canpaste) üye işlevini kullanabilirsiniz.
 
-Ayrıca `CanPaste` kullanılabilir tüm Pano biçimlerini bir zengin düzenleme denetimi tarafından tanınan olup olmadığını belirlemek için. Bu işlev yararlıdır `OnInitMenuPopup` işleyici. Bir uygulama etkinleştirin veya gri denetim kullanılabilir herhangi bir biçimde olup olmadığını yapıştırabilirsiniz bağlı olarak kendi Paste komutu.
+Kullanılabilir herhangi bir Pano `CanPaste` biçiminin zengin düzenleme denetimi tarafından tanınıp tanınmadığını öğrenmek için de kullanabilirsiniz. Bu işlev, `OnInitMenuPopup` işleyicide yararlıdır. Bir uygulama, denetimin kullanılabilir herhangi bir biçimi yapıştırmasına bağlı olarak yapıştırma komutunu etkinleştirebilir veya gri renkte açabilir.
 
-Zengin düzenleme denetimleri Kaydet iki Pano biçimleri: zengin metin biçimi ve RichEdit metin ve nesneleri adlı biçimi. Bir uygulamayı kullanarak bu biçimler kaydedebilirsiniz [RegisterClipboardFormat](/windows/desktop/api/winuser/nf-winuser-registerclipboardformata) belirterek işlev **CF_RTF** ve **CF_RETEXTOBJ** değerleri.
+Zengin düzenleme denetimleri iki Pano biçimini kaydeder: zengin metin biçimi ve RichEdit Metin ve nesneler adlı bir biçim. Bir uygulama, [RegisterClipboardFormat](/windows/win32/api/winuser/nf-winuser-registerclipboardformatw) işlevini kullanarak bu biçimleri **CF_RTF** ve **CF_RETEXTOBJ** değerlerini belirterek kaydedebilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

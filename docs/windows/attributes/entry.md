@@ -1,21 +1,21 @@
 ---
-title: Giriş (C++ COM özniteliği)
+title: Giriş (C++ com özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.entry
 helpviewer_keywords:
 - entry attribute
 ms.assetid: ba4843e3-d7ad-4b86-9a15-0b4192f0f698
-ms.openlocfilehash: 703a55ee7c56b64a5b168016770508508bab09e0
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 71abf4f183255fa137b43ac9cabd88d15c3fc85d
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64346129"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490897"
 ---
 # <a name="entry"></a>giriş
 
-Dışarı aktarılan işlevin ya da sabit bir modülün dll giriş noktası belirleyerek belirtir.
+DLL 'deki giriş noktasını tanımlayarak bir modülde, bir içe aktarılmış işlevi veya sabiti belirtir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -26,15 +26,15 @@ Dışarı aktarılan işlevin ya da sabit bir modülün dll giriş noktası beli
 ### <a name="parameters"></a>Parametreler
 
 *id*<br/>
-Giriş noktası kimliği.
+Giriş noktasının KIMLIĞI.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Giriş** C++ özniteliği ile aynı işlevlere sahip [giriş](/windows/desktop/Midl/entry) MIDL özniteliği.
+**Entry** C++ özniteliği, MIDL özniteliğiyle aynı işlevselliğe sahiptir [](/windows/win32/Midl/entry) .
 
 ## <a name="example"></a>Örnek
 
-Örneğin bakın [idl_module](idl-module.md) bir kullanımı örneği için **giriş**.
+**Girişin**örnek kullanımı için bkz. [idl_module](idl-module.md) .
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -42,12 +42,12 @@ Giriş noktası kimliği.
 
 |||
 |-|-|
-|**İçin geçerlidir**|`idl_module` Özniteliği|
+|**Uygulama hedefi**|`idl_module`özniteliğe|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|Yok.|
+|**Gerekli öznitelikler**|Yok.|
 |**Geçersiz öznitelikler**|Yok.|
 
-Daha fazla bilgi için [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
+Daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

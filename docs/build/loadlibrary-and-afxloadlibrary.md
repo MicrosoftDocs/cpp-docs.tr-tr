@@ -10,27 +10,27 @@ helpviewer_keywords:
 - LoadLibrary method
 - explicit linking [C++]
 ms.assetid: b4535d19-6243-4146-a31a-a5cca4c7c9e3
-ms.openlocfilehash: 661d7742fb0fedae45bc063ba3821193d6c5438e
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: c7700dd865e320686a2ad8bd036f207b9ecee6ac
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65220618"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69493217"
 ---
 # <a name="loadlibrary-and-afxloadlibrary"></a>LoadLibrary ve AfxLoadLibrary
 
-İşler çağrı [LoadLibraryExA](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibraryexa) veya [LoadLibraryExW](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibraryexw)(veya [AfxLoadLibrary](../mfc/reference/application-information-and-management.md#afxloadlibrary)) bir DLL'ye açıkça bağlanmak için. İşlev başarılı olursa, belirtilen DLL'yi çağıran işlemin adres alanına eşler ve diğer işlevlerle açık bağlamada kullanılan DLL için bir tanıtıcı döndürür; Örneğin, `GetProcAddress` ve `FreeLibrary`.
+İşlem bir DLL 'ye açıkça bağlanmak için [Loadlibraryexa](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibraryexa) veya [Loadlibraryexw](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibraryexw) (veya [AfxLoadLibrary](../mfc/reference/application-information-and-management.md#afxloadlibrary)) çağrısını çağırır. İşlev başarılı olursa, belirtilen DLL 'yi çağıran işlemin adres alanına eşler ve DLL 'ye, Açık bağlama içindeki diğer işlevlerle birlikte kullanılabilecek bir tanıtıcı döndürür — Örneğin, `GetProcAddress` ve. `FreeLibrary`
 
-`LoadLibrary` örtük bağlama için kullanılanla aynı arama sırasını kullanarak DLL'yi bulmaya çalışır. Sistem DLL'yi bulamazsa ya da giriş noktası işlevi FALSE döndürürse, `LoadLibrary` NULL döndürür. Çağrı `LoadLibrary` çağıran işlemin adres alanına eşlenmiş bir DLL modülü belirtiyorsa işlev modülün başvuru sayısını artırır ve DLL bir tanıtıcı döndürür.
+`LoadLibrary`örtük bağlama için kullanılan aynı arama dizisini kullanarak DLL 'yi bulmaya çalışır. Sistem DLL 'yi bulamazsa veya giriş noktası işlevi false döndürürse, `LoadLibrary` null değerini döndürür. Çağrısı, çağıran işlemin `LoadLibrary` adres alanına eşlenmiş bir dll modülü belirtiyorsa, işlev dll 'nin işleyicisini döndürür ve modülün başvuru sayısını artırır.
 
-DLL giriş noktası işlevi varsa, işletim sistemini çağıran iş parçacığının bağlamında işlevi çağırır. `LoadLibrary`. DLL, önceki arama nedeniyle işleme zaten bağlıysa, giriş noktası işlevi çağrılmaz `LoadLibrary` karşılık gelen hiçbir çağrısına sahip `FreeLibrary` işlevi.
+DLL 'de bir giriş noktası işlevi varsa, işletim sistemi işlevini çağıran iş parçacığı `LoadLibrary`bağlamında çağırır. `LoadLibrary` Bu, `FreeLibrary` işlevine karşılık gelen hiçbir çağrısı olmayan önceki bir çağrı nedeniyle, dll zaten işleme eklenmişse, giriş noktası işlevi çağrılmaz.
 
-MFC uzantı DLL'leri yükleyen MFC uygulamaları için biz kullanmanızı öneririz. `AfxLoadLibrary` yerine `LoadLibrary`. `AfxLoadLibrary` iş parçacığı eşitlemesini işler çağırmadan önce `LoadLibrary`. ' % S'arabirimi (işlev prototipi) için `AfxLoadLibrary` aynı `LoadLibrary`.
+MFC uzantı dll 'lerini yükleyen MFC uygulamaları için `AfxLoadLibrary` `LoadLibrary`yerine kullanmanızı öneririz. `AfxLoadLibrary`çağrısı `LoadLibrary`yapmadan önce iş parçacığı eşitlemesini işler. İçin arabirim (işlev prototipi) ile `AfxLoadLibrary` `LoadLibrary`aynıdır.
 
-Windows, DLL'yi yükleyemezse işlem hatadan kurtarmayı dener. Örneğin, işlem hatası kullanıcıyı uyarır ve kullanıcıdan başka bir DLL yolu belirtin.
+Windows DLL 'yi yükleyemediğinden, işlem hatadan kurtarmayı deneyebilir. Örneğin, işlem hatayı kullanıcıya bildirebilir ve kullanıcıdan DLL için başka bir yol belirtmesini ister.
 
 > [!IMPORTANT]
-> DLL'lerin tam yolunu belirttiğinizden emin olun. Dosyalar yüklendiğinde geçerli dizin ilk aranır. Dosya yolunu nitelendirmezseniz, hedeflenen bir olmayan bir dosya yüklenebilir. Bunu önlemek için başka bir yolu kullanmaktır [/DEPENDENTLOADFLAG](reference/dependentloadflag.md) bağlayıcı seçeneği.
+> Tüm dll 'Lerin tam yolunu belirttiğinizden emin olun. Dosyalar yüklendiğinde, geçerli dizin ilk olarak aranır. Dosyanın yolunu nitelendirmeyin, amaçlanan bir dosya yüklü olabilir. Bunu önlemenin bir diğer yolu da [/Dependentloadflag](reference/dependentloadflag.md) bağlayıcı seçeneğini kullanmaktır.
 
 ## <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsunuz?
 
@@ -40,7 +40,7 @@ Windows, DLL'yi yükleyemezse işlem hatadan kurtarmayı dener. Örneğin, işle
 
 ## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?
 
-- [Dinamik bağlantı kitaplığı arama sırası](/windows/desktop/Dlls/dynamic-link-library-search-order)
+- [Dinamik bağlantı kitaplığı arama sırası](/windows/win32/Dlls/dynamic-link-library-search-order)
 
 - [FreeLibrary ve AfxFreeLibrary](freelibrary-and-afxfreelibrary.md)
 
@@ -48,4 +48,4 @@ Windows, DLL'yi yükleyemezse işlem hatadan kurtarmayı dener. Örneğin, işle
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Visual Studio'da C/C++ DLL'leri oluşturma](dlls-in-visual-cpp.md)
+- [Visual Studio 'daC++ C/dll oluşturma](dlls-in-visual-cpp.md)

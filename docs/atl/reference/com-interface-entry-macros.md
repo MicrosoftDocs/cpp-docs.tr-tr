@@ -18,42 +18,42 @@ f1_keywords:
 helpviewer_keywords:
 - COM interfaces, COM interface entry macros
 ms.assetid: 19dcb768-2e1f-4b8d-a618-453a01a4bd00
-ms.openlocfilehash: f8439e973c935108d645076bb7e2bfae7207e65d
-ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
+ms.openlocfilehash: 1e1674bad1164e640939d430a860beac7a6e4208
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66503337"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69496718"
 ---
-# <a name="cominterfaceentry-macros"></a>COM_INTERFACE_ENTRY makroları
+# <a name="com_interface_entry-macros"></a>COM_INTERFACE_ENTRY makroları
 
-Bu makrolar böylece tarafından erişilebilecek bir nesnenin arabirimlerinin, COM eşlemesine girin. `QueryInterface`. Sipariş arabirimler için eşleşen bir IID sırasında edileceği COM eşlemesi girişleri sırasıdır `QueryInterface`.
+Bu makrolar, tarafından `QueryInterface`erişilebilmesi için com eşlemesine bir nesnenin arabirimlerini girer. COM eşlemesindeki girdilerin sırası, sırasında `QueryInterface`eşleşen bir IID için sıralama arayüzlerinin denetlenecektir.
 
 |||
 |-|-|
-|[COM_INTERFACE_ENTRY](#com_interface_entry)|Arabirimler COM arabirimi eşlemeye girer.|
-|[COM_INTERFACE_ENTRY2](#com_interface_entry2)|İki dal devralma belirsizliğini ortadan kaldırmak için bu makroyu kullanın.|
-|[COM_INTERFACE_ENTRY_IID](#com_interface_entry_iid)|COM eşlemesine arabirimi girin ve kendi IID belirtmek için bu makroyu kullanın.|
-|[COM_INTERFACE_ENTRY2_IID](#com_interface_entry2_iid)|Aynı [COM_INTERFACE_ENTRY2](#com_interface_entry2)dışında farklı bir IID belirtebilirsiniz.|
-|[COM_INTERFACE_ENTRY_AGGREGATE](#com_interface_entry_aggregate)|Ne zaman arabirimi tanımlanan *IID* , sorgulanan `COM_INTERFACE_ENTRY_AGGREGATE` iletir `punk`.|
-|[COM_INTERFACE_ENTRY_AGGREGATE_BLIND](#com_interface_entry_aggregate_blind)|Aynı [COM_INTERFACE_ENTRY_AGGREGATE](#com_interface_entry_aggregate), sorgulama için bir IID sorguya iletme sonuçları hariç, *punk*.|
-|[COM_INTERFACE_ENTRY_AUTOAGGREGATE](#com_interface_entry_autoaggregate)|Aynı [COM_INTERFACE_ENTRY_AGGREGATE](#com_interface_entry_aggregate), eğer dışında *punk* NULL ise tarafından açıklanan toplama otomatik olarak oluşturur *CLSID*.|
-|[COM_INTERFACE_ENTRY_AUTOAGGREGATE_BLIND](#com_interface_entry_autoaggregate_blind)|Aynı [COM_INTERFACE_ENTRY_AUTOAGGREGATE](#com_interface_entry_autoaggregate), sorgulama için bir IID sorguya iletme sonuçları hariç, *punk*ve eğer *punk* , NULL, otomatik olarak oluşturma tarafından açıklanan toplama *CLSID*.|
-|[COM_INTERFACE_ENTRY_BREAK](#com_interface_entry_break)|Programınızı çağırmak neden [DebugBreak](/windows/desktop/api/debugapi/nf-debugapi-debugbreak) zaman belirtilen arabirim sorgulanan için.|
+|[COM_INTERFACE_ENTRY](#com_interface_entry)|Arabirimleri COM arabirim eşlemesine girer.|
+|[COM_INTERFACE_ENTRY2](#com_interface_entry2)|Bu makroyu, devralma için iki dalı ortadan kaldırmak için kullanın.|
+|[COM_INTERFACE_ENTRY_IID](#com_interface_entry_iid)|Arabirimi COM haritasına girmek ve IID 'sini belirtmek için bu makroyu kullanın.|
+|[COM_INTERFACE_ENTRY2_IID](#com_interface_entry2_iid)|[COM_INTERFACE_ENTRY2](#com_interface_entry2)ile aynı, ancak farklı bir IID belirtebilirsiniz.|
+|[COM_INTERFACE_ENTRY_AGGREGATE](#com_interface_entry_aggregate)|*IID* tarafından tanımlanan arabirim için sorgulandığında, ' `COM_INTERFACE_ENTRY_AGGREGATE` a iletir. `punk`|
+|[COM_INTERFACE_ENTRY_AGGREGATE_BLIND](#com_interface_entry_aggregate_blind)|[COM_INTERFACE_ENTRY_AGGREGATE](#com_interface_entry_aggregate)ile aynıdır, ancak HERHANGI bir IID sorgusunun sorgu *punk*'a iletilme sonucu olur.|
+|[COM_INTERFACE_ENTRY_AUTOAGGREGATE](#com_interface_entry_autoaggregate)|[COM_INTERFACE_ENTRY_AGGREGATE](#com_interface_entry_aggregate)ile aynı, *punk* null olması dışında, *CLSID*tarafından tanımlanan toplamı otomatik olarak oluşturur.|
+|[COM_INTERFACE_ENTRY_AUTOAGGREGATE_BLIND](#com_interface_entry_autoaggregate_blind)|[COM_INTERFACE_ENTRY_AUTOAGGREGATE](#com_interface_entry_autoaggregate)ile aynı, hiçbir IID sorgusunun sorgu *punk*'a ILETIME ve *punk* null olması dışında, *CLSID*tarafından tanımlanan toplamı otomatik olarak oluşturarak.|
+|[COM_INTERFACE_ENTRY_BREAK](#com_interface_entry_break)|Belirtilen arabirim için sorgulandığında programınızın [DebugBreak](/windows/win32/api/debugapi/nf-debugapi-debugbreak) ' i çağırmasını sağlar.|
 |[COM_INTERFACE_ENTRY_CACHED_TEAR_OFF](#com_interface_entry_cached_tear_off)|Her örnek için arabirime özgü verileri kaydeder.|
-|[COM_INTERFACE_ENTRY_TEAR_OFF](#com_interface_entry_tear_off)|Etiket arabirimleri kullanıma sunar.|
-|[COM_INTERFACE_ENTRY_CHAIN](#com_interface_entry_chain)|İşleme bu girdiye COM eşlemesine ulaştığında temel sınıfın COM eşlemesine işler.|
-|[COM_INTERFACE_ENTRY_FUNC](#com_interface_entry_func)|ATL'nin takma için genel bir mekanizma `QueryInterface` mantığı.|
-|[COM_INTERFACE_ENTRY_FUNC_BLIND](#com_interface_entry_func_blind)|Aynı [COM_INTERFACE_ENTRY_FUNC](#com_interface_entry_func), sorgulama için bir IID çağrısı sonuçlanır. dışında *func*.|
-|[COM_INTERFACE_ENTRY_NOINTERFACE](#com_interface_entry_nointerface)|E_noınterface döndürür ve belirtilen arabirim için sorgulandığında COM harita işleme sonlandırır.|
+|[COM_INTERFACE_ENTRY_TEAR_OFF](#com_interface_entry_tear_off)|Yırma arabirimlerini gösterir.|
+|[COM_INTERFACE_ENTRY_CHAIN](#com_interface_entry_chain)|İşlem COM eşlemesinde bu girişe ulaştığında taban sınıfının COM haritasını işler.|
+|[COM_INTERFACE_ENTRY_FUNC](#com_interface_entry_func)|ATL 'nin `QueryInterface` mantığını aramak için genel bir mekanizma.|
+|[COM_INTERFACE_ENTRY_FUNC_BLIND](#com_interface_entry_func_blind)|[COM_INTERFACE_ENTRY_FUNC](#com_interface_entry_func)ile aynıdır, ancak HERHANGI bir IID sorgusu *Func*çağrısı ile sonuçlanır.|
+|[COM_INTERFACE_ENTRY_NOINTERFACE](#com_interface_entry_nointerface)|E_NOINTERFACE döndürür ve belirtilen arabirim için sorgulandığında COM eşleme işlemesini sonlandırır.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlcom.h
+**Üstbilgi:** atlcom. h
 
-## <a name="com_interface_entry"></a> COM_INTERFACE_ENTRY
+## <a name="com_interface_entry"></a>COM_INTERFACE_ENTRY
 
-Arabirimler COM arabirimi eşlemeye girer.
+Arabirimleri COM arabirim eşlemesine girer.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -64,11 +64,11 @@ COM_INTERFACE_ENTRY( x )
 ### <a name="parameters"></a>Parametreler
 
 *x*<br/>
-[in] Doğrudan sınıf nesnenizin öğesinden türetilen arabirimin adı.
+'ndaki Sınıf nesnenizin doğrudan türediği arabirimin adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Genellikle, en sık kullandığınız giriş türü budur.
+Genellikle bu, en sık kullandığınız giriş türüdür.
 
 ### <a name="example"></a>Örnek
 
@@ -82,11 +82,11 @@ END_COM_MAP()
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlcom.h
+**Üstbilgi:** atlcom. h
 
-##  <a name="com_interface_entry2"></a>  COM_INTERFACE_ENTRY2
+##  <a name="com_interface_entry2"></a>COM_INTERFACE_ENTRY2
 
-İki dal devralma belirsizliğini ortadan kaldırmak için bu makroyu kullanın.
+Bu makroyu, devralma için iki dalı ortadan kaldırmak için kullanın.
 
 ```
 COM_INTERFACE_ENTRY2(x, x2)
@@ -95,22 +95,22 @@ COM_INTERFACE_ENTRY2(x, x2)
 ### <a name="parameters"></a>Parametreler
 
 *x*<br/>
-[in] Bir nesneden kullanıma sunmak istediğiniz arabirimin adı.
+'ndaki Nesnenizin sergilemek istediğiniz arabirimin adı.
 
 *x2*<br/>
-[in] Devralma dalı adını *x* sunulur.
+'ndaki *X* 'in açığa çıkarılan devralma dalının adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Örneğin, iki çift arabirim, sınıf nesneden türetirseniz kullanıma `IDispatch` beri COM_INTERFACE_ENTRY2 kullanarak `IDispatch` arabirimlerin her iki tane elde edilebilir.
+Örneğin, iki çift arabirimden sınıf nesneniz türetirsiniz, arabirimlerden birinden elde edilebilir, bu `IDispatch` yana `IDispatch` COM_INTERFACE_ENTRY2 kullanarak kullanıma sunabilirsiniz.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATL_Windowing#118](../../atl/codesnippet/cpp/com-map-macros_2.h)]
 
-##  <a name="com_interface_entry_iid"></a>  COM_INTERFACE_ENTRY_IID
+##  <a name="com_interface_entry_iid"></a>COM_INTERFACE_ENTRY_IID
 
-COM eşlemesine arabirimi girin ve kendi IID belirtmek için bu makroyu kullanın.
+Arabirimi COM haritasına girmek ve IID 'sini belirtmek için bu makroyu kullanın.
 
 ```
 COM_INTERFACE_ENTRY_IID(iid, x)
@@ -118,19 +118,19 @@ COM_INTERFACE_ENTRY_IID(iid, x)
 
 ### <a name="parameters"></a>Parametreler
 
-*IID*<br/>
-[in] Kullanıma sunulan arabiriminin GUID'si.
+*'si*<br/>
+'ndaki Sunulan arabirimin GUID 'SI.
 
 *x*<br/>
-[in] Vtable ortaya tarafından tanımlanan arabirimi sınıfının adı *IID*.
+'ndaki Vtable, *IID*tarafından tanımlanan arabirim olarak kullanıma sunulacak olan sınıfın adı.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATL_Windowing#117](../../atl/codesnippet/cpp/com-map-macros_3.h)]
 
-##  <a name="com_interface_entry2_iid"></a>  COM_INTERFACE_ENTRY2_IID
+##  <a name="com_interface_entry2_iid"></a>COM_INTERFACE_ENTRY2_IID
 
-Aynı [COM_INTERFACE_ENTRY2](#com_interface_entry2)dışında farklı bir IID belirtebilirsiniz.
+[COM_INTERFACE_ENTRY2](#com_interface_entry2)ile aynı, ancak farklı bir IID belirtebilirsiniz.
 
 ```
 COM_INTERFACE_ENTRY2_IID(iid, x, x2)
@@ -138,18 +138,18 @@ COM_INTERFACE_ENTRY2_IID(iid, x, x2)
 
 ### <a name="parameters"></a>Parametreler
 
-*IID*<br/>
-[in] Arabirim için belirtiyorsanız GUID.
+*'si*<br/>
+'ndaki Arabirim için belirttiğiniz GUID.
 
 *x*<br/>
-[in] Doğrudan sınıf nesnenizin öğesinden türetilen arabirimin adı.
+'ndaki Sınıf nesnenizin doğrudan türediği arabirimin adı.
 
 *x2*<br/>
-[in] Doğrudan, sınıfı nesne öğesinden türer ikinci bir arabirimin adı.
+'ndaki Sınıf nesnenizin doğrudan türediği ikinci arabirimin adı.
 
-##  <a name="com_interface_entry_aggregate"></a>  COM_INTERFACE_ENTRY_AGGREGATE
+##  <a name="com_interface_entry_aggregate"></a>COM_INTERFACE_ENTRY_AGGREGATE
 
-Ne zaman arabirimi tanımlanan *IID* COM_INTERFACE_ENTRY_AGGREGATE iletir için sorgulanır *punk*.
+*IID* tarafından tanımlanan arabirim için SORGULANıRKEN, COM_INTERFACE_ENTRY_AGGREGATE, *punk*'e iletir.
 
 ```
 COM_INTERFACE_ENTRY_AGGREGATE(iid, punk)
@@ -157,23 +157,23 @@ COM_INTERFACE_ENTRY_AGGREGATE(iid, punk)
 
 ### <a name="parameters"></a>Parametreler
 
-*IID*<br/>
-[in] İçin sorgulanan arabiriminin GUID'si.
+*'si*<br/>
+'ndaki İçin sorgulanan arabirimin GUID 'SI.
 
-*Punk*<br/>
-[in] Adı bir `IUnknown` işaretçi.
+*punk dili*<br/>
+'ndaki `IUnknown` İşaretçinin adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*Punk* parametresi iç bilinmeyen bir toplama veya null, bu durumda giriş noktası için yok sayıldı varsayılır. Genellikle, yaptığınız `CoCreate` toplu halde `FinalConstruct`.
+*Punk* parametresinin, bir toplamanın iç Unknown değerini işaret eden veya null olan olarak kabul edilir, bu durumda giriş yok sayılır. Genellikle, içinde `CoCreate` `FinalConstruct`toplamanız gerekir.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATL_Windowing#112](../../atl/codesnippet/cpp/com-map-macros_4.h)]
 
-##  <a name="com_interface_entry_aggregate_blind"></a>  COM_INTERFACE_ENTRY_AGGREGATE_BLIND
+##  <a name="com_interface_entry_aggregate_blind"></a>COM_INTERFACE_ENTRY_AGGREGATE_BLIND
 
-Aynı [COM_INTERFACE_ENTRY_AGGREGATE](#com_interface_entry_aggregate), sorgulama için bir IID sorguya iletme sonuçları hariç, *punk*.
+[COM_INTERFACE_ENTRY_AGGREGATE](#com_interface_entry_aggregate)ile aynıdır, ancak HERHANGI bir IID sorgusunun sorgu *punk*'a iletilme sonucu olur.
 
 ```
 COM_INTERFACE_ENTRY_AGGREGATE_BLIND(punk)
@@ -181,20 +181,20 @@ COM_INTERFACE_ENTRY_AGGREGATE_BLIND(punk)
 
 ### <a name="parameters"></a>Parametreler
 
-*Punk*<br/>
-[in] Adı bir `IUnknown` işaretçi.
+*punk dili*<br/>
+'ndaki `IUnknown` İşaretçinin adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Arabirimi sorgu başarısız olursa, COM harita işleme devam eder.
+Arabirim sorgusu başarısız olursa, COM haritasını işleme devam eder.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATL_Windowing#113](../../atl/codesnippet/cpp/com-map-macros_5.h)]
 
-##  <a name="com_interface_entry_autoaggregate"></a>  COM_INTERFACE_ENTRY_AUTOAGGREGATE
+##  <a name="com_interface_entry_autoaggregate"></a>COM_INTERFACE_ENTRY_AUTOAGGREGATE
 
-Aynı [COM_INTERFACE_ENTRY_AGGREGATE](#com_interface_entry_aggregate), eğer dışında *punk* NULL ise tarafından açıklanan toplama otomatik olarak oluşturur *CLSID*.
+[COM_INTERFACE_ENTRY_AGGREGATE](#com_interface_entry_aggregate)ile aynı, *punk* null olması dışında, *CLSID*tarafından tanımlanan toplamı otomatik olarak oluşturur.
 
 ```
 COM_INTERFACE_ENTRY_AUTOAGGREGATE(iid, punk, clsid)
@@ -202,14 +202,14 @@ COM_INTERFACE_ENTRY_AUTOAGGREGATE(iid, punk, clsid)
 
 ### <a name="parameters"></a>Parametreler
 
-*IID*<br/>
-[in] İçin sorgulanan arabiriminin GUID'si.
+*'si*<br/>
+'ndaki İçin sorgulanan arabirimin GUID 'SI.
 
-*Punk*<br/>
-[in] Adı bir `IUnknown` işaretçi. COM eşlemesini içeren sınıfın bir üyesi olmanız gerekir.
+*punk dili*<br/>
+'ndaki `IUnknown` İşaretçinin adı. COM eşlemesini içeren sınıfın bir üyesi olmalıdır.
 
-*CLSID*<br/>
-[in] Tanımlayıcı oluşturulur toplamanın *punk* null.
+*in*<br/>
+'ndaki *Punk* null ise oluşturulacak toplamanın tanımlayıcısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -217,9 +217,9 @@ COM_INTERFACE_ENTRY_AUTOAGGREGATE(iid, punk, clsid)
 
 [!code-cpp[NVC_ATL_Windowing#114](../../atl/codesnippet/cpp/com-map-macros_6.h)]
 
-##  <a name="com_interface_entry_autoaggregate_blind"></a>  COM_INTERFACE_ENTRY_AUTOAGGREGATE_BLIND
+##  <a name="com_interface_entry_autoaggregate_blind"></a>COM_INTERFACE_ENTRY_AUTOAGGREGATE_BLIND
 
-Aynı [COM_INTERFACE_ENTRY_AUTOAGGREGATE](#com_interface_entry_autoaggregate), sorgulama için bir IID sorguya iletme sonuçları hariç, *punk*ve eğer *punk* , NULL, otomatik olarak oluşturma tarafından açıklanan toplama *CLSID*.
+[COM_INTERFACE_ENTRY_AUTOAGGREGATE](#com_interface_entry_autoaggregate)ile aynı, hiçbir IID sorgusunun sorgu *punk*'a ILETIME ve *punk* null olması dışında, *CLSID*tarafından tanımlanan toplamı otomatik olarak oluşturarak.
 
 ```
 COM_INTERFACE_ENTRY_AUTOAGGREGATE_BLIND(punk, clsid)
@@ -227,23 +227,23 @@ COM_INTERFACE_ENTRY_AUTOAGGREGATE_BLIND(punk, clsid)
 
 ### <a name="parameters"></a>Parametreler
 
-*Punk*<br/>
-[in] Adı bir `IUnknown` işaretçi. COM eşlemesini içeren sınıfın bir üyesi olmanız gerekir.
+*punk dili*<br/>
+'ndaki `IUnknown` İşaretçinin adı. COM eşlemesini içeren sınıfın bir üyesi olmalıdır.
 
-*CLSID*<br/>
-[in] Tanımlayıcı oluşturulur toplamanın *punk* null.
+*in*<br/>
+'ndaki *Punk* null ise oluşturulacak toplamanın tanımlayıcısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Arabirimi sorgu başarısız olursa, COM harita işleme devam eder.
+Arabirim sorgusu başarısız olursa, COM haritasını işleme devam eder.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATL_Windowing#115](../../atl/codesnippet/cpp/com-map-macros_7.h)]
 
-##  <a name="com_interface_entry_break"></a>  COM_INTERFACE_ENTRY_BREAK
+##  <a name="com_interface_entry_break"></a>COM_INTERFACE_ENTRY_BREAK
 
-Programınızı çağırmak neden [DebugBreak](/windows/desktop/api/debugapi/nf-debugapi-debugbreak) zaman belirtilen arabirim sorgulanan için.
+Belirtilen arabirim için sorgulandığında programınızın [DebugBreak](/windows/win32/api/debugapi/nf-debugapi-debugbreak) ' i çağırmasını sağlar.
 
 ```
 COM_INTERFACE_ENTRY_BREAK(x)
@@ -252,13 +252,13 @@ COM_INTERFACE_ENTRY_BREAK(x)
 ### <a name="parameters"></a>Parametreler
 
 *x*<br/>
-[in] Arabirim tanımlayıcısını oluşturmak için kullanılan metin.
+'ndaki Arabirim tanımlayıcısını oluşturmak için kullanılan metin.
 
 ### <a name="remarks"></a>Açıklamalar
 
-IID oluşturulmasını ekleyerek arabirime *x* için `IID_`. Örneğin, varsa *x* olduğu `IPersistStorage`, IID olacaktır `IID_IPersistStorage`.
+IID arabirimi *x* öğesine `IID_`eklenerek oluşturulacak. Örneğin, *x* ise `IPersistStorage`, IID `IID_IPersistStorage`olur.
 
-##  <a name="com_interface_entry_cached_tear_off"></a>  COM_INTERFACE_ENTRY_CACHED_TEAR_OFF
+##  <a name="com_interface_entry_cached_tear_off"></a>COM_INTERFACE_ENTRY_CACHED_TEAR_OFF
 
 Her örnek için arabirime özgü verileri kaydeder.
 
@@ -268,26 +268,26 @@ COM_INTERFACE_ENTRY_CACHED_TEAR_OFF(iid, x, punk)
 
 ### <a name="parameters"></a>Parametreler
 
-*IID*<br/>
-[in] Bölünmüş arabirim GUİD'si.
+*'si*<br/>
+'ndaki Yırma arabiriminin GUID 'SI.
 
 *x*<br/>
-[in] Arabirimini uygulayan sınıfın adı.
+'ndaki Arabirimi uygulayan sınıfın adı.
 
-*Punk*<br/>
-[in] Adı bir `IUnknown` işaretçi. COM eşlemesini içeren sınıfın bir üyesi olmanız gerekir. Sınıfı nesne oluşturucuda NULL olarak başlatılması gerekir.
+*punk dili*<br/>
+'ndaki `IUnknown` İşaretçinin adı. COM eşlemesini içeren sınıfın bir üyesi olmalıdır. Sınıf nesnesinin oluşturucusunda NULL olarak başlatılmalıdır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Arabirim kullanılmıyorsa bu nesnenizin genel örnek boyutunu azaltır.
+Arabirim kullanılmıyorsa, bu, nesnenizin genel örnek boyutunu düşürür.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATL_COM#54](../../atl/codesnippet/cpp/com-map-macros_8.h)]
 
-##  <a name="com_interface_entry_tear_off"></a>  COM_INTERFACE_ENTRY_TEAR_OFF
+##  <a name="com_interface_entry_tear_off"></a>COM_INTERFACE_ENTRY_TEAR_OFF
 
-Etiket arabirimleri kullanıma sunar.
+Yırma arabirimlerini gösterir.
 
 ```
 COM_INTERFACE_ENTRY_TEAR_OFF(iid, x)
@@ -295,23 +295,23 @@ COM_INTERFACE_ENTRY_TEAR_OFF(iid, x)
 
 ### <a name="parameters"></a>Parametreler
 
-*IID*<br/>
-[in] Bölünmüş arabirim GUİD'si.
+*'si*<br/>
+'ndaki Yırma arabiriminin GUID 'SI.
 
 *x*<br/>
-[in] Arabirimini uygulayan sınıfın adı.
+'ndaki Arabirimi uygulayan sınıfın adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bölünmüş arabirim arabirimi temsil eder her zaman örneği ayrı bir nesne için sorgulanır olarak uygulanır. Genellikle, arabirim da nadiren kullanılıyorsa bu ana nesnenizin her örneğinde bir vtable işaretçi kaydeder olduğundan bir bölünmüş Arabiriminizin oluşturun. Başvuru sayısı sıfır olduğunda etkinleştiriliyorken silinir. Bölünmüş uygulama sınıfı nesnesinden türetilmesi `CComTearOffObjectBase` ve kendi COM eşlemesine sahip.
+Bir ayırıcı arabirim, her temsil ettiği arabirim için her zaman tarafından oluşturulan ayrı bir nesne olarak uygulanır. Genellikle, arabirimi nadiren kullanılıyorsa, arayüzü, ana nesnenizin her örneğine bir vtable işaretçisi kaydettiği için bir yırt olarak derleyebilirsiniz. Başvuru sayısı sıfır olduğunda, tear silinir. Yırma uygulayan sınıf ' dan `CComTearOffObjectBase` türetilmiş olmalı ve kendi com eşlemesine sahip olmalıdır.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATL_COM#1](../../atl/codesnippet/cpp/com-map-macros_1.h)]
 
-##  <a name="com_interface_entry_chain"></a>  COM_INTERFACE_ENTRY_CHAIN
+##  <a name="com_interface_entry_chain"></a>COM_INTERFACE_ENTRY_CHAIN
 
-İşleme bu girdiye COM eşlemesine ulaştığında temel sınıfın COM eşlemesine işler.
+İşlem COM eşlemesinde bu girişe ulaştığında taban sınıfının COM haritasını işler.
 
 ```
 COM_INTERFACE_ENTRY_CHAIN(classname)
@@ -319,8 +319,8 @@ COM_INTERFACE_ENTRY_CHAIN(classname)
 
 ### <a name="parameters"></a>Parametreler
 
-*ClassName*<br/>
-[in] Geçerli nesnenin temel sınıf.
+*sınıf*<br/>
+'ndaki Geçerli nesnenin temel sınıfı.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -328,13 +328,13 @@ COM_INTERFACE_ENTRY_CHAIN(classname)
 
 [!code-cpp[NVC_ATL_Windowing#116](../../atl/codesnippet/cpp/com-map-macros_9.h)]
 
-COM eşlemesi ilk giriş COM eşlemesine içeren nesnesi bir arabirimde olması gerektiğini unutmayın. Bu nedenle, farklı bir nesnenin noktada aranacak COM eşlemesine neden COM_INTERFACE_ENTRY_CHAIN ile COM eşleme girişleri başlayamaz burada **COM_INTERFACE_ENTRY_CHAIN (** `COtherObject` **)** nesnenizin COM eşlemede görünür. COM eşlemesi başka bir nesnenin ilk arama yapmak istiyorsanız, bir arabirimi girdi ekleyin `IUnknown` COM haritanıza sonra başka bir nesnenin COM eşlemesi zincir. Örneğin:
+COM eşlemesindeki ilk girdinin COM eşlemesini içeren nesne üzerindeki bir arabirim olması gerektiğini unutmayın. Bu nedenle, com map girdilerinizi COM_INTERFACE_ENTRY_CHAIN ile başlatamazsınız. Bu, farklı bir nesnenin com eşlemesinin, nesnenizin com haritasında **COM_INTERFACE_ENTRY_CHAIN (** `COtherObject` **)** göründüğü noktada aranmasına neden olur. Önce başka bir nesnenin com haritasını aramak isterseniz, com haritanız için bir arabirim girişi `IUnknown` ekleyin ve ardından diğer nesnenin com eşlemesini zincirleyebilirsiniz. Örneğin:
 
 [!code-cpp[NVC_ATL_Windowing#111](../../atl/codesnippet/cpp/com-map-macros_10.h)]
 
-##  <a name="com_interface_entry_func"></a>  COM_INTERFACE_ENTRY_FUNC
+##  <a name="com_interface_entry_func"></a>COM_INTERFACE_ENTRY_FUNC
 
-ATL'nin takma için genel bir mekanizma `QueryInterface` mantığı.
+ATL 'nin `QueryInterface` mantığını aramak için genel bir mekanizma.
 
 ```
 COM_INTERFACE_ENTRY_FUNC(iid, dw, func)
@@ -342,26 +342,26 @@ COM_INTERFACE_ENTRY_FUNC(iid, dw, func)
 
 ### <a name="parameters"></a>Parametreler
 
-*IID*<br/>
-[in] Kullanıma sunulan arabiriminin GUID'si.
+*'si*<br/>
+'ndaki Sunulan arabirimin GUID 'SI.
 
-*dw*<br/>
-[in] Parametre geçirilen aracılığıyla *func*.
+*DW*<br/>
+'ndaki *İşlev*işlevine geçirilen parametre.
 
-*FUNC*<br/>
-[in] Döndüreceği işlev işaretçisi *IID*.
+*func*<br/>
+'ndaki *IID*döndürecek işlev işaretçisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsa *IID* IID için sorgulanan arabirimi, daha sonra tarafından belirtilen işlevin eşleşen *func* çağrılır. İşlev bildirimi olmalıdır:
+*IID* , için SORGULANAN arabirimin IID 'siyle eşleşiyorsa, *Func* tarafından belirtilen işlev çağrılır. İşlevin bildirimi şu olmalıdır:
 
 `HRESULT WINAPI func(void* pv, REFIID riid, LPVOID* ppv, DWORD_PTR dw);`
 
-İşlev çağrıldığında `pv` sınıfı nesnenizin işaret eder. *Riid* parametresi başvuruyor, sorgulanan arabirimine `ppv` işlevi depoladığınız arabirim işaretçisi konumunu işaretçisidir ve *dw* parametre, girişi belirtildi. İşlev ayarlamalısınız \* `ppv` NULL ve dönüş e_noınterface veya bir arabirim döndürmediğine seçerse S_FALSE. COM eşlemesi işleme e_noınterface ile sonlandırır. Hiçbir arabirim işaretçisi döndürülen olsa bile S_FALSE ile COM harita işleme, devam eder. İşlevi bir arabirim işaretçisi döndürürse, S_OK döndürmelidir.
+İşleviniz çağrıldığında, `pv` sınıf nesnenizin işaret eder. *Riıd* parametresi, için sorgulanmakta olan arabirimi ifade eder, `ppv` işlevin işaretçiyi arabirime depolaması gereken konumun işaretçisidir ve *DW* , girişte belirttiğiniz parametredir. İşlev null olarak ayarlanmalıdır \* `ppv` ve bir arabirim döndürmemelidir seçerse E_NOINTERFACE veya S_FALSE döndürmelidir. E_NOINTERFACE ile COM eşlemesi işlemi sonlanır. S_FALSE ile, hiçbir arabirim işaretçisi döndürülmese de COM eşlemesi işleme devam eder. İşlev bir arabirim işaretçisi döndürürse, S_OK döndürmelidir.
 
-##  <a name="com_interface_entry_func_blind"></a>  COM_INTERFACE_ENTRY_FUNC_BLIND
+##  <a name="com_interface_entry_func_blind"></a>COM_INTERFACE_ENTRY_FUNC_BLIND
 
-Aynı [COM_INTERFACE_ENTRY_FUNC](#com_interface_entry_func), sorgulama için bir IID çağrısı sonuçlanır. dışında *func*.
+[COM_INTERFACE_ENTRY_FUNC](#com_interface_entry_func)ile aynıdır, ancak HERHANGI bir IID sorgusu *Func*çağrısı ile sonuçlanır.
 
 ```
 COM_INTERFACE_ENTRY_FUNC_BLIND(dw, func)
@@ -369,19 +369,19 @@ COM_INTERFACE_ENTRY_FUNC_BLIND(dw, func)
 
 ### <a name="parameters"></a>Parametreler
 
-*dw*<br/>
-[in] Parametre geçirilen aracılığıyla *func*.
+*DW*<br/>
+'ndaki *İşlev*işlevine geçirilen parametre.
 
-*FUNC*<br/>
-[in] Bu girdiye COM eşlemesine işlendiğinde çağrılan işlev.
+*func*<br/>
+'ndaki COM eşlemesindeki bu giriş işlendiğinde çağrılan işlev.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Herhangi bir hata, COM haritada devam etmek işleme neden olur. İşlevi bir arabirim işaretçisi döndürürse, S_OK döndürmelidir.
+Herhangi bir hata, işlemin COM eşlemesinde devam etmesine neden olur. İşlev bir arabirim işaretçisi döndürürse, S_OK döndürmelidir.
 
-##  <a name="com_interface_entry_nointerface"></a>  COM_INTERFACE_ENTRY_NOINTERFACE
+##  <a name="com_interface_entry_nointerface"></a>COM_INTERFACE_ENTRY_NOINTERFACE
 
-E_noınterface döndürür ve belirtilen arabirim için sorgulandığında COM harita işleme sonlandırır.
+E_NOINTERFACE döndürür ve belirtilen arabirim için sorgulandığında COM eşleme işlemesini sonlandırır.
 
 ```
 COM_INTERFACE_ENTRY_NOINTERFACE(x)
@@ -390,10 +390,10 @@ COM_INTERFACE_ENTRY_NOINTERFACE(x)
 ### <a name="parameters"></a>Parametreler
 
 *x*<br/>
-[in] Arabirim tanımlayıcısını oluşturmak için kullanılan metin.
+'ndaki Arabirim tanımlayıcısını oluşturmak için kullanılan metin.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu makro, belirli bir durumda kullanılan bir arabirim önlemek için kullanabilirsiniz. Örneğin, COM haritanıza arabirimi için bir sorgu için toplam'ın iç bilinmeyen iletilmelerini önleyebilirsiniz COM_INTERFACE_ENTRY_AGGREGATE_BLIND hemen önce bu makroyu ekleyebilirsiniz.
+Bu makroyu, bir arabirimin belirli bir durumda kullanılmasını engellemek için kullanabilirsiniz. Örneğin, arabirimin toplamanın iç bilinmediği bir sorgunun iletilmesini engellemek için, bu makroyu COM haritanızda doğrudan COM_INTERFACE_ENTRY_AGGREGATE_BLIND öncesine ekleyebilirsiniz.
 
-IID oluşturulmasını ekleyerek arabirime *x* için `IID_`. Örneğin, varsa *x* olduğu `IPersistStorage`, IID olacaktır `IID_IPersistStorage`.
+IID arabirimi *x* öğesine `IID_`eklenerek oluşturulacak. Örneğin, *x* ise `IPersistStorage`, IID `IID_IPersistStorage`olur.

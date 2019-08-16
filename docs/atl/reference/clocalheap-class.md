@@ -11,19 +11,19 @@ f1_keywords:
 helpviewer_keywords:
 - CLocalHeap class
 ms.assetid: 1ffa87a5-5fc8-4f8d-8809-58e87e963bd2
-ms.openlocfilehash: 53288bea8a50f62437eab4dd81d5d816abf78f44
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a302ba4ea55c42ce214c8de4a24be843d6cb1b9f
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62258838"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69496742"
 ---
 # <a name="clocalheap-class"></a>CLocalHeap sınıfı
 
-Bu sınıfın uyguladığı [Iatlmemmgr](../../atl/reference/iatlmemmgr-class.md) Win32 yerel yığın işlevlerini kullanma.
+Bu sınıf, Win32 yerel yığın işlevlerini kullanarak [IAtlMemMgr](../../atl/reference/iatlmemmgr-class.md) uygular.
 
 > [!IMPORTANT]
->  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.
+>  Bu sınıf ve üyeleri Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,21 +37,21 @@ class CLocalHeap : public IAtlMemMgr
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CLocalHeap::Allocate](#allocate)|Bir bellek bloğu ayırmak için bu yöntemi çağırın.|
-|[CLocalHeap::Free](#free)|Bu bellek yöneticisi tarafından ayrılan bellek bloğunu serbest bırakmak için bu yöntemi çağırın.|
-|[CLocalHeap::GetSize](#getsize)|Bu bellek yöneticisi tarafından ayrılan bir bellek bloğu ayrılmış boyutunu almak için bu yöntemi çağırın.|
-|[CLocalHeap::Reallocate](#reallocate)|Bu bellek yöneticisi tarafından ayrılan bellek yeniden ayırmak üzere bu yöntemi çağırın.|
+|[CLocalHeap:: ayır](#allocate)|Bellek bloğunu ayırmak için bu yöntemi çağırın.|
+|[CLocalHeap:: ücretsiz](#free)|Bu bellek Yöneticisi tarafından ayrılan bir bellek bloğunu boşaltmak için bu yöntemi çağırın.|
+|[CLocalHeap:: GetSize](#getsize)|Bu bellek Yöneticisi tarafından ayrılan bir bellek bloğunun ayrılan boyutunu almak için bu yöntemi çağırın.|
+|[CLocalHeap:: yeniden tahsis](#reallocate)|Bu bellek Yöneticisi tarafından ayrılan belleği yeniden ayırmak için bu yöntemi çağırın.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CLocalHeap` bellek ayırma işlevleri için Win32 yerel yığın işlevlerini uygular.
+`CLocalHeap`Win32 yerel yığın işlevlerini kullanarak bellek ayırma işlevlerini uygular.
 
 > [!NOTE]
->  Yerel yığın işlevlerin diğer bellek yönetimi işlevleri yavaş çalışır ve gibi birçok özelliği sağlamaz. Bu nedenle, yeni uygulamalar kullanmalıdır [yığın işlevleri](/windows/desktop/Memory/heap-functions). Bunlar, kullanılabilir [CWin32Heap](../../atl/reference/cwin32heap-class.md) sınıfı.
+>  Yerel yığın işlevleri, diğer bellek yönetim işlevlerinden daha yavaştır ve birçok özellik sağlamaz. Bu nedenle, yeni uygulamalar [yığın işlevlerini](/windows/win32/Memory/heap-functions)kullanmalıdır. Bunlar [CWin32Heap](../../atl/reference/cwin32heap-class.md) sınıfında mevcuttur.
 
 ## <a name="example"></a>Örnek
 
-Örneğin bakın [Iatlmemmgr](../../atl/reference/iatlmemmgr-class.md).
+[IAtlMemMgr](../../atl/reference/iatlmemmgr-class.md)örneğine bakın.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -61,11 +61,11 @@ class CLocalHeap : public IAtlMemMgr
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlmem.h
+**Üstbilgi:** atlmem. h
 
-##  <a name="allocate"></a>  CLocalHeap::Allocate
+##  <a name="allocate"></a>CLocalHeap:: ayır
 
-Bir bellek bloğu ayırmak için bu yöntemi çağırın.
+Bellek bloğunu ayırmak için bu yöntemi çağırın.
 
 ```
 virtual __declspec(allocator) void* Allocate(size_t nBytes) throw();
@@ -74,21 +74,21 @@ virtual __declspec(allocator) void* Allocate(size_t nBytes) throw();
 ### <a name="parameters"></a>Parametreler
 
 *nBytes*<br/>
-İstenen bayt yeni bellek bloğu sayısı.
+Yeni bellek bloğunda istenen bayt sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yeni ayrılan bellek bloğu başlangıcı için bir işaretçi döndürür.
+Yeni ayrılan bellek bloğunun başlangıcına bir işaretçi döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağrı [CLocalHeap::Free](#free) veya [CLocalHeap::Reallocate](#reallocate) bu yöntem tarafından ayrılan bellek boşaltmak için.
+Bu yöntem tarafından ayrılan belleği serbest bırakmak için [CLocalHeap:: Free](#free) veya [CLocalHeap::](#reallocate) ' i çağırın.
 
-Kullanılarak uygulanan [LocalAlloc](/windows/desktop/api/winbase/nf-winbase-localalloc) LMEM_FIXED bayrağı parametresi ile.
+LMEM_FIXED öğesinin flag parametresi ile [LocalAlloc](/windows/win32/api/winbase/nf-winbase-localalloc) kullanılarak uygulanır.
 
-##  <a name="free"></a>  CLocalHeap::Free
+##  <a name="free"></a>CLocalHeap:: ücretsiz
 
-Bu bellek yöneticisi tarafından ayrılan bellek bloğunu serbest bırakmak için bu yöntemi çağırın.
+Bu bellek Yöneticisi tarafından ayrılan bir bellek bloğunu boşaltmak için bu yöntemi çağırın.
 
 ```
 virtual void Free(void* p) throw();
@@ -97,15 +97,15 @@ virtual void Free(void* p) throw();
 ### <a name="parameters"></a>Parametreler
 
 *p*<br/>
-Bu bellek yöneticisi tarafından önceden ayrılan bellek işaretçisi. NULL, geçerli bir değer ve hiçbir şey yapmaz.
+Bu bellek Yöneticisi tarafından daha önce ayrılan bellek işaretçisi. NULL geçerli bir değerdir ve hiçbir şey yapmaz.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanılarak uygulanan [LocalFree](/windows/desktop/api/winbase/nf-winbase-localfree).
+[LocalFree](/windows/win32/api/winbase/nf-winbase-localfree)kullanılarak uygulanır.
 
-##  <a name="getsize"></a>  CLocalHeap::GetSize
+##  <a name="getsize"></a>CLocalHeap:: GetSize
 
-Bu bellek yöneticisi tarafından ayrılan bir bellek bloğu ayrılmış boyutunu almak için bu yöntemi çağırın.
+Bu bellek Yöneticisi tarafından ayrılan bir bellek bloğunun ayrılan boyutunu almak için bu yöntemi çağırın.
 
 ```
 virtual size_t GetSize(void* p) throw();
@@ -114,19 +114,19 @@ virtual size_t GetSize(void* p) throw();
 ### <a name="parameters"></a>Parametreler
 
 *p*<br/>
-Bu bellek yöneticisi tarafından önceden ayrılan bellek işaretçisi.
+Bu bellek Yöneticisi tarafından daha önce ayrılan bellek işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ayrılan bellek blok boyutu bayt cinsinden döndürür.
+Ayrılan bellek bloğunun boyutunu bayt cinsinden döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanılarak uygulanan [LocalSize](/windows/desktop/api/winbase/nf-winbase-localsize).
+[LocalSize](/windows/win32/api/winbase/nf-winbase-localsize)kullanılarak uygulanır.
 
-##  <a name="reallocate"></a>  CLocalHeap::Reallocate
+##  <a name="reallocate"></a>CLocalHeap:: yeniden tahsis
 
-Bu bellek yöneticisi tarafından ayrılan bellek yeniden ayırmak üzere bu yöntemi çağırın.
+Bu bellek Yöneticisi tarafından ayrılan belleği yeniden ayırmak için bu yöntemi çağırın.
 
 ```
 virtual __declspec(allocator) void* Reallocate(void* p, size_t nBytes) throw();
@@ -135,24 +135,24 @@ virtual __declspec(allocator) void* Reallocate(void* p, size_t nBytes) throw();
 ### <a name="parameters"></a>Parametreler
 
 *p*<br/>
-Bu bellek yöneticisi tarafından önceden ayrılan bellek işaretçisi.
+Bu bellek Yöneticisi tarafından daha önce ayrılan bellek işaretçisi.
 
 *nBytes*<br/>
-İstenen bayt yeni bellek bloğu sayısı.
+Yeni bellek bloğunda istenen bayt sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yeni ayrılan bellek bloğu başlangıcı için bir işaretçi döndürür.
+Yeni ayrılan bellek bloğunun başlangıcına bir işaretçi döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağrı [CLocalHeap::Free](#free) bu yöntem tarafından ayrılan bellek boşaltmak için.
+Bu yöntem tarafından ayrılan belleği serbest bırakmak için [CLocalHeap:: Free](#free) öğesini çağırın.
 
-Kullanılarak uygulanan [LocalReAlloc](/windows/desktop/api/winbase/nf-winbase-localrealloc).
+[LocalReAlloc](/windows/win32/api/winbase/nf-winbase-localrealloc)kullanılarak uygulanır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)<br/>
+[Sınıfa genel bakış](../../atl/atl-class-overview.md)<br/>
 [CComHeap Sınıfı](../../atl/reference/ccomheap-class.md)<br/>
 [CWin32Heap Sınıfı](../../atl/reference/cwin32heap-class.md)<br/>
 [CGlobalHeap Sınıfı](../../atl/reference/cglobalheap-class.md)<br/>

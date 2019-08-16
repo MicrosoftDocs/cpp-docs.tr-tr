@@ -1,32 +1,32 @@
 ---
-title: 'İzlenecek yol: Mevcut kodu hafif görevleri kullanmaya uyarlama'
+title: 'İzlenecek yol: Mevcut kodu hafif görevleri kullanacak şekilde uyarlamak'
 ms.date: 04/25/2019
 helpviewer_keywords:
 - using lightweight tasks [Concurrency Runtime]
 - lightweight tasks, using [Concurrency Runtime]
 ms.assetid: 1edfe818-d274-46de-bdd3-e92967c9bbe0
-ms.openlocfilehash: 658cc82442bf362b7f50e787169ce75373275d9c
-ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
+ms.openlocfilehash: 406d4d24d0042c7bded4f94dcef1e7731ab3947f
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64857023"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69512157"
 ---
-# <a name="walkthrough-adapting-existing-code-to-use-lightweight-tasks"></a>İzlenecek yol: Mevcut kodu hafif görevleri kullanmaya uyarlama
+# <a name="walkthrough-adapting-existing-code-to-use-lightweight-tasks"></a>İzlenecek yol: Mevcut kodu hafif görevleri kullanacak şekilde uyarlamak
 
-Bu konuda, oluşturmak ve basit bir görev kullanmak için bir iş parçacığını yürütmek için Windows API kullanan mevcut kodu uyum gösterilmektedir.
+Bu konu başlığı altında, hafif bir görevi kullanmak üzere iş parçacığı oluşturmak ve yürütmek için Windows API kullanan mevcut kodların nasıl uyarlanyapılacağı gösterilmektedir.
 
-A *basit görev* doğrudan zamanlama bir görev bir [concurrency::Scheduler](../../parallel/concrt/reference/scheduler-class.md) veya [concurrency::ScheduleGroup](../../parallel/concrt/reference/schedulegroup-class.md) nesne. Eşzamanlılık Çalışma zamanı zamanlama işlevselliğini kullanmak için mevcut kodu uyarlamak için basit görevler yararlıdır.
+*Hafif görev* , doğrudan bir [eşzamanlılık:: Scheduler](../../parallel/concrt/reference/scheduler-class.md) veya [concurrency:: ScheduleGroup](../../parallel/concrt/reference/schedulegroup-class.md) nesnesinden zamanladığınız bir görevdir. Basit görevler, Eşzamanlılık Çalışma Zamanı zamanlama işlevini kullanmak üzere mevcut kodu uyarlıyorsanız faydalıdır.
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-Bu kılavuza başlamadan önce bu konuyu okuyun [Görev Zamanlayıcı](../../parallel/concrt/task-scheduler-concurrency-runtime.md).
+Bu yönergeyi başlamadan önce [Görev Zamanlayıcı](../../parallel/concrt/task-scheduler-concurrency-runtime.md)konusunu okuyun.
 
 ## <a name="example"></a>Örnek
 
 ### <a name="description"></a>Açıklama
 
-Aşağıdaki örnek, oluşturup bir iş parçacığını yürütmek için Windows API'ın tipik kullanım gösterir. Bu örnekte [CreateThread](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createthread) işlevi çağırmak için `MyThreadFunction` ayrı bir iş parçacığı üzerinde.
+Aşağıdaki örnek, bir iş parçacığı oluşturmak ve yürütmek için Windows API 'sinin tipik kullanımını gösterir. Bu örnek, `MyThreadFunction` öğesini ayrı bir iş parçacığında çağırmak için [CreateThread](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createthread) işlevini kullanır.
 
 ### <a name="code"></a>Kod
 
@@ -40,51 +40,51 @@ Bu örnek aşağıdaki çıktıyı üretir.
 Parameters = 50, 100
 ```
 
-Aşağıdaki adımlarda, uyum aynı görevi gerçekleştirmek için eşzamanlılık çalışma zamanı kullanmak için kod örneği gösterilmektedir.
+Aşağıdaki adımlarda, aynı görevi gerçekleştirmek üzere Eşzamanlılık Çalışma Zamanı kullanmak için kod örneğini nasıl uyarlayabileceğiniz gösterilmektedir.
 
 ### <a name="to-adapt-the-example-to-use-a-lightweight-task"></a>Örneği basit bir görev kullanacak şekilde uyarlamak için
 
-1. Ekleme bir `#include` üstbilgi dosyası concrt.h yönergesi.
+1. ConcRT `#include` . h üstbilgi dosyası için bir yönerge ekleyin.
 
 [!code-cpp[concrt-migration-lwt#2](../../parallel/concrt/codesnippet/cpp/walkthrough-adapting-existing-code-to-use-lightweight-tasks_2.cpp)]
 
-1. Ekleme bir `using` yönergesi `concurrency` ad alanı.
+1. Ad`concurrency` alanı `using` için bir yönerge ekleyin.
 
 [!code-cpp[concrt-migration-lwt#3](../../parallel/concrt/codesnippet/cpp/walkthrough-adapting-existing-code-to-use-lightweight-tasks_3.cpp)]
 
-1. Bildirimini değiştirmek `MyThreadFunction` kullanılacak `__cdecl` çağırma kuralı ve döndürülecek `void`.
+1. ' In `MyThreadFunction` bildirimini, `__cdecl` çağırma kuralını kullanacak ve döndürecek `void`şekilde değiştirin.
 
 [!code-cpp[concrt-migration-lwt#4](../../parallel/concrt/codesnippet/cpp/walkthrough-adapting-existing-code-to-use-lightweight-tasks_4.cpp)]
 
-1. Değiştirme `MyData` içerecek şekilde yapısı bir [concurrency::event](../../parallel/concrt/reference/event-class.md) nesnesini ana uygulama görevin tamamlandığını bildirir.
+1. Yapıyı, görevin tamamlandığı ana uygulamaya işaret eden bir [eşzamanlılık:: Event](../../parallel/concrt/reference/event-class.md) nesnesi içerecek şekilde değiştirin. `MyData`
 
 [!code-cpp[concrt-migration-lwt#5](../../parallel/concrt/codesnippet/cpp/walkthrough-adapting-existing-code-to-use-lightweight-tasks_5.cpp)]
 
-1. Çağrısını `CreateThread` çağrısıyla [concurrency::CurrentScheduler::ScheduleTask](reference/currentscheduler-class.md#scheduletask) yöntemi.
+1. Çağrısını `CreateThread` [concurrency:: CurrentScheduler:: ScheduleTask](reference/currentscheduler-class.md#scheduletask) yöntemi çağrısıyla değiştirin.
 
 [!code-cpp[concrt-migration-lwt#6](../../parallel/concrt/codesnippet/cpp/walkthrough-adapting-existing-code-to-use-lightweight-tasks_6.cpp)]
 
-1. Çağrısını `WaitForSingleObject` çağrısıyla [concurrency::event::wait](reference/event-class.md#wait) yöntemi görevin tamamlanmasını bekleyin.
+1. Çağrısını `WaitForSingleObject` , görevin bitmesini beklemek için [concurrency:: Event:: wait](reference/event-class.md#wait) yöntemine yönelik bir çağrı ile değiştirin.
 
 [!code-cpp[concrt-migration-lwt#7](../../parallel/concrt/codesnippet/cpp/walkthrough-adapting-existing-code-to-use-lightweight-tasks_7.cpp)]
 
-1. Çağrısını kaldırın `CloseHandle`.
+1. Çağrısını `CloseHandle`kaldırın.
 
-1. Tanımı imzasını Değiştir `MyThreadFunction` 3. adım eşleştirilecek.
+1. Tanımın imzasını 3. adım ile eşleşecek `MyThreadFunction` şekilde değiştirin.
 
 [!code-cpp[concrt-migration-lwt#8](../../parallel/concrt/codesnippet/cpp/walkthrough-adapting-existing-code-to-use-lightweight-tasks_8.cpp)]
 
-9. Sonunda `MyThreadFunction` işlev, çağrı [concurrency::event::set](reference/event-class.md#set) ana uygulama görevin tamamlandığını göstermek için yöntemi.
+9. `MyThreadFunction` İşlevin sonundaki [eşzamanlılık:: Event:: set](reference/event-class.md#set) metodunu, görevin bittiği ana uygulamaya işaret etmek için çağırın.
 
 [!code-cpp[concrt-migration-lwt#9](../../parallel/concrt/codesnippet/cpp/walkthrough-adapting-existing-code-to-use-lightweight-tasks_9.cpp)]
 
-10. Kaldırma `return` deyimden `MyThreadFunction`.
+10. `return` İfadesini öğesinden`MyThreadFunction`kaldırın.
 
 ## <a name="example"></a>Örnek
 
 ### <a name="description"></a>Açıklama
 
-Aşağıdaki tamamlanan örnek çağırmak için basit bir görev kullanan kodu gösterir `MyThreadFunction` işlevi.
+Aşağıdaki tamamlanan örnek, `MyThreadFunction` işlevini çağırmak için hafif bir görev kullanan kodu gösterir.
 
 ### <a name="code"></a>Kod
 
@@ -94,5 +94,5 @@ Aşağıdaki tamamlanan örnek çağırmak için basit bir görev kullanan kodu 
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Görev Zamanlayıcısı](../../parallel/concrt/task-scheduler-concurrency-runtime.md)<br/>
+[Görev Zamanlayıcı](../../parallel/concrt/task-scheduler-concurrency-runtime.md)<br/>
 [Zamanlayıcı Sınıfı](../../parallel/concrt/reference/scheduler-class.md)

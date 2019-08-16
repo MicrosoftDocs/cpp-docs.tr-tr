@@ -5,12 +5,12 @@ ms.topic: reference
 f1_keywords:
 - implements/Microsoft::WRL::InspectableClass
 ms.assetid: ff390b26-58cc-424f-87ac-1fe3cc692b59
-ms.openlocfilehash: 9d194f5a87ac4a142301bc896cb3ed172f119473
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ee2a76edb967923a03ce6720b4163baf1cc48c32
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62398205"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69500483"
 ---
 # <a name="inspectableclass-macro"></a>InspectableClass Makrosu
 
@@ -30,17 +30,17 @@ InspectableClass(
 Çalışma zamanı sınıfının tam metin adı.
 
 *trustLevel*<br/>
-Aşağıdakilerden birini [TrustLevel](/windows/desktop/api/inspectable/ne-inspectable-trustlevel) numaralandırılmış değerlerinin.
+[TrustLevel](/windows/win32/api/inspectable/ne-inspectable-trustlevel) numaralandırılmış değerlerden biri.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Inspectableclass** makrosu, yalnızca Windows çalışma zamanı türleri ile kullanılabilir.
+**InspectableClass** makrosu yalnızca Windows çalışma zamanı türleriyle kullanılabilir.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** implements.h
+**Üst bilgi:** uygular. h
 
-**Namespace:** Microsoft::WRL
+**Uzayına** Microsoft:: WRL
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

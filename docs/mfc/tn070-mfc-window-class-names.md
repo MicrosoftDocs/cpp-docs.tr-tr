@@ -5,40 +5,40 @@ helpviewer_keywords:
 - window class names [MFC]
 - TN070 [MFC]
 ms.assetid: 90617912-dd58-4a7c-9082-ced71736d7cd
-ms.openlocfilehash: e2818104c59a94b0e1239abc614a83dea8c3de08
-ms.sourcegitcommit: 934cb53fa4cb59fea611bfeb9db110d8d6f7d165
+ms.openlocfilehash: 1d9b5de07bcc2545df6294557d1ac9f9d29e856c
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65611204"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69513347"
 ---
 # <a name="tn070-mfc-window-class-names"></a>TN070: MFC pencere sınıfı adları
 
 > [!NOTE]
->  Aşağıdaki Teknik Not çevrimiçi belgelere ilk eklenmiştir beri güncelleştirilmemiş. Eski veya yanlış sonuç olarak, bazı yordamlar ve konular olabilir. En son bilgiler için bu konuyu çevrimiçi belge dizininde arama önerilir.
+>  Aşağıdaki teknik Not, çevrimiçi belgelere ilk eklenmesinden beri güncelleştirilmemiş. Sonuç olarak, bazı yordamlar ve konular güncel olmayabilir veya yanlış olabilir. En son bilgiler için çevrimiçi belge dizininde ilgilendiğiniz konuyu aramanız önerilir.
 
-MFC windows penceresi özelliklerini yansıtan bir dinamik olarak oluşturulan sınıf adı kullanın. MFC sınıf adları çerçeve pencereleri, görünümler ve uygulama tarafından üretilen açılır pencereleri için dinamik olarak oluşturur. İletişim kutuları ve bir MFC uygulaması tarafından üretilen denetimleri penceresinin söz konusu sınıf için Windows tarafından sağlanan ad var.
+MFC Windows, pencerenin özelliklerini yansıtan dinamik olarak oluşturulmuş bir sınıf adı kullanır. MFC, uygulama tarafından oluşturulan çerçeve pencereleri, görünümler ve açılan pencereler için dinamik olarak sınıf adları oluşturur. Bir MFC uygulaması tarafından oluşturulan iletişim kutuları ve denetimler, söz konusu pencerenin sınıfının Windows tarafından sağlanan adına sahiptir.
 
-Kendi pencere sınıfı kaydediliyor ve içinde geçersiz kılma kullanılarak dinamik olarak sağlanan sınıf adını değiştir [PreCreateWindow](../mfc/reference/cwnd-class.md#precreatewindow). MFC tarafından sağlanan sınıf adlarını iki aşağıdaki biçimlerden birini uygun:
+Kendi pencere sınıfınızı kaydederek ve bunu [ön](../mfc/reference/cwnd-class.md#precreatewindow)planda bir geçersiz kılmada kullanarak dinamik olarak sağlanmış sınıf adını değiştirebilirsiniz. MFC tarafından sağlanan sınıf adları aşağıdaki iki formdan birine uyum ister:
 
 ```
 Afx:%x:%x
 Afx:%x:%x:%x:%x:%x
 ```
 
-Yerini onaltılık basamak `%x` karakter doldurulur verilerden gelen [WNDCLASS](/windows/desktop/api/winuser/ns-winuser-tagwndclassa) yapısı. MFC bu tekniği kullanır böylece birden fazla C++ sınıfları aynı gerektiren **WNDCLASS** yapıları aynı kayıtlı pencere sınıfı paylaşabilir. En basit Win32 uygulamalardan farklı olarak, yalnızca bir MFC uygulamaları sahip **WNDPROC**, bu nedenle, bir kolayca paylaşabilirsiniz **WNDCLASS** süresi ve bellek kaydetmek için yapılar. Değiştirilebilir değerlerini `%x` yukarıda gösterilen karakter aşağıdaki gibidir:
+`%x` Karakterlerin yerini alan onaltılık basamaklar [WNDCLASS](/windows/win32/api/winuser/ns-winuser-wndclassw) yapısındaki verilerden doldurulur. MFC bu tekniği, aynı C++ **WNDCLASS** yapılarını gerektiren birden çok sınıfın aynı kayıtlı pencere sınıfını paylaşabilmesi için kullanır. Çoğu basit Win32 uygulamasının aksine, MFC uygulamalarında yalnızca bir **WndProc**vardır; bu sayede, zaman ve bellek tasarrufu sağlamak Için **WNDCLASS** yapılarını kolayca paylaşabilirsiniz. Yukarıda gösterilen `%x` karakterlerin değiştirilebilen değerleri şunlardır:
 
-- **WNDCLASS.hInstance**
+- **WNDCLASS. HINSTANCE**
 
-- **WNDCLASS.style**
+- **WNDCLASS. Style**
 
-- **WNDCLASS.hCursor**
+- **WNDCLASS. hCursor**
 
-- **WNDCLASS.hbrBackground**
+- **WNDCLASS. hbrBackground**
 
-- **WNDCLASS.hIcon**
+- **WNDCLASS. HICON**
 
-İlk form (`Afx:%x:%x`) kullanıldığında **hCursor**, **hbrBackground**, ve **hIcon** tümü **NULL**.
+İlk`Afx:%x:%x`form (), **hCursor**, **hbrBackground**ve **HICON** 'ın tamamen **null**olduğu durumlarda kullanılır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

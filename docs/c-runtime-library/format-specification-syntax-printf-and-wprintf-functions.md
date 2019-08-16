@@ -9,12 +9,12 @@ helpviewer_keywords:
 - width fields, printf function
 - precision fields, printf function
 ms.assetid: 664b1717-2760-4c61-bd9c-22eee618d825
-ms.openlocfilehash: 3ba4f91c86727986762b3431c093ee7304a3a83f
-ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
+ms.openlocfilehash: db144703a89fe1a6a76ed15f1cf77395c4565fab
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68915490"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69500087"
 ---
 # <a name="format-specification-syntax-printf-and-wprintf-functions"></a>Biçim belirtim sözdizimi: printf ve wprintf işlevleri
 
@@ -62,19 +62,19 @@ Biçim dizesini izleyen bağımsız değişkenler, karşılık gelen *tür* kara
 |**u**|Tamsayı|İşaretsiz ondalık tamsayı.|
 |**x**|Tamsayı|İşaretsiz onaltılık tamsayı; "abcdef" kullanır.|
 |**X**|Tamsayı|İşaretsiz onaltılık tamsayı; "ABCDEF" kullanır.|
-|**e**|Kayan nokta|[-]*D. gggg* __*dd*\[*d*] biçimindeki işaretli değer; burada *d* , bir ondalık basamak, belirtilen duyarlığa göre bir veya daha fazla ondalık basamak, ya da varsayılan olarak 6 ve *gg* d] üs 'un [Çıkış biçimine](../c-runtime-library/set-output-format.md) ve boyutuna bağlı olarak iki veya üç ondalık basamak olur. \[|
+|**e**|Kayan nokta|[-]*D. gggg*__e ±__*dd*\[*d*] biçimindeki işaretli değer; burada *d* , bir ondalık basamak, belirtilen duyarlığa göre bir veya daha fazla ondalık basamak, ya da varsayılan olarak 6 ve *gg* d] üs 'un [Çıkış biçimine](../c-runtime-library/set-output-format.md) ve boyutuna bağlı olarak iki veya üç ondalık basamak olur. \[|
 |**E**|Kayan nokta|E 'nin üs 'i sağlaması yerine e biçimi dışında, e biçimiyle aynıdır.|
 |**f**|Kayan nokta|[-]*Gggg*biçimindeki işaretli değer __.__ gggg, *gggg* bir veya daha fazla ondalık basamak. Ondalık ayırıcıdan önceki basamakların sayısı, sayının büyüklüğüne ve ondalık ayırıcıdan sonraki basamak sayısı, istenen duyarlığa veya altıya göre varsayılan olarak değişir.|
 |**F**|Kayan nokta|Sonsuzluk ve Nan çıkışının büyük harfli olduğu durumlar dışında **f** biçimiyle aynıdır.|
 |**g**|Kayan nokta|İşaretli değerler, verilen değer ve duyarlık için daha küçük olduğu için **f** veya **e** biçiminde görüntülenir. **E** biçimi, yalnızca değerin üs değeri-4 ' ten küçük veya *duyarlık* bağımsız değişkeninden büyük veya ona eşit olduğunda kullanılır. Sondaki sıfırlar kesilir ve ondalık nokta yalnızca bir veya daha fazla basamak bunu izlemişse görünür.|
 |**G**|Kayan nokta|**G** biçimiyle aynı, **e**yerine e 'nindeğil üs (uygun yerlerde) tanıtılmıştır.|
-|**a**|Kayan nokta|[-] 0x*h. sshh* __*dd*biçimindeki işaretli onaltılık çift duyarlıklı kayan nokta değeri; burada *h. hhhh* , Mantis için bir veya daha fazla rakam ve *gg* s. Duyarlık, noktadan sonraki basamak sayısını belirtir.|
-|**A**|Kayan nokta|[-] 0X*h. sshh* __*dd*biçimindeki işaretli onaltılık çift duyarlıklı kayan nokta değeri; burada *h. hhhh* , Mantis 'in onaltılık basamaklardır (büyük harfler kullanılarak) ve *gg* ise üs için bir veya daha fazla haneye sahiptir . Duyarlık, noktadan sonraki basamak sayısını belirtir.|
+|**a**|Kayan nokta|[-] 0x*h. sshh*__p ±__*dd*biçimindeki işaretli onaltılık çift duyarlıklı kayan nokta değeri; burada *h. hhhh* , Mantis için bir veya daha fazla rakam ve *gg* s. Duyarlık, noktadan sonraki basamak sayısını belirtir.|
+|**A**|Kayan nokta|[-] 0X*h. sshh*__P ±__*dd*biçimindeki işaretli onaltılık çift duyarlıklı kayan nokta değeri; burada *h. hhhh* , Mantis 'in onaltılık basamaklardır (büyük harfler kullanılarak) ve *gg* ise üs için bir veya daha fazla haneye sahiptir . Duyarlık, noktadan sonraki basamak sayısını belirtir.|
 |**n**|Tamsayı işaretçisi|Akışın veya arabelleğin şimdiye kadar başarıyla yazıldığı karakter sayısı. Bu değer, adresi bağımsız değişken olarak verilen tamsayı olarak depolanır. Gösterilen tamsayının boyutu bir bağımsız değişken boyut belirtimi öneki tarafından denetlenebilir. **N** belirticisi varsayılan olarak devre dışıdır; bilgi için önemli güvenlik notuna bakın.|
 |**p**|İşaretçi türü|Bağımsız değişkenini onaltılık rakamlarla bir adres olarak görüntüler.|
 |**s**|Dize|`printf` İşlevleriyle kullanıldığında, tek baytlık veya çok baytlı bir karakter dizesi belirtir; `wprintf` işlevlerle kullanıldığında, geniş karakterli bir dize belirtir. Karakterler ilk null karaktere kadar veya *duyarlık* değerine ulaşılana kadar görüntülenir.|
 |**S**|Dize|`printf` İşlevleriyle kullanıldığında, geniş karakterli bir dize belirtir; `wprintf` işlevlerle kullanıldığında, tek baytlık veya çok baytlı bir karakter dizesi belirtir. Karakterler ilk null karaktere kadar veya *duyarlık* değerine ulaşılana kadar görüntülenir.|
-|**Z**|`ANSI_STRING`veya `UNICODE_STRING` yapı|Bağımsız değişken olarak bir [ANSI_STRING](/windows/desktop/api/ntdef/ns-ntdef-string) veya [UNICODE_STRING](/windows/win32/api/ntdef/ns-ntdef-_unicode_string) yapısının adresi geçirildiğinde, yapının `Buffer` alanı tarafından işaret edilen arabellekte bulunan dizeyi görüntüler. `%wZ` Bir bağımsızdeğişkenbelirtmekiçinwiçinbirboyutdeğiştiriciönekikullanın—örneğin`UNICODE_STRING` ,. Yapının `Length` alanı, dizenin bayt cinsinden uzunluğa ayarlanmalıdır. Yapının `MaximumLength` alanı, arabelleğin bayt cinsinden uzunluğa ayarlanmalıdır.<br /><br /> Genellikle, **Z** türü karakteri yalnızca, `dbgPrint` ve `kdPrint`gibi bir dönüştürme belirtimi kullanan sürücü hata ayıklama işlevlerinde kullanılır.|
+|**Z**|`ANSI_STRING`veya `UNICODE_STRING` yapı|Bağımsız değişken olarak bir [ANSI_STRING](/windows/win32/api/ntdef/ns-ntdef-string) veya [UNICODE_STRING](/windows/win32/api/ntdef/ns-ntdef-_unicode_string) yapısının adresi geçirildiğinde, yapının `Buffer` alanı tarafından işaret edilen arabellekte bulunan dizeyi görüntüler. `%wZ` Bir bağımsızdeğişkenbelirtmekiçinwiçinbirboyutdeğiştiriciönekikullanın—örneğin`UNICODE_STRING` ,. Yapının `Length` alanı, dizenin bayt cinsinden uzunluğa ayarlanmalıdır. Yapının `MaximumLength` alanı, arabelleğin bayt cinsinden uzunluğa ayarlanmalıdır.<br /><br /> Genellikle, **Z** türü karakteri yalnızca, `dbgPrint` ve `kdPrint`gibi bir dönüştürme belirtimi kullanan sürücü hata ayıklama işlevlerinde kullanılır.|
 
 Visual Studio 2015 ' den itibaren, bir kayan nokta dönüştürme tanımlayıcısına (**a**, **a**, **e**, **e**, **f**, **f**, **g**, **g**) karşılık gelen bağımsız değişken sonsuz, sonsuz veya NaN ise, biçimlendirilen çıkış C99 standardına uyar. Bu tablo, biçimlendirilen çıktıyı listeler:
 

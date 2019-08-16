@@ -1,21 +1,21 @@
 ---
-title: (C++ COM özniteliği)
+title: ın (C++ com özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.in
 helpviewer_keywords:
 - in attribute
 ms.assetid: 7b450cc4-4d2e-4910-a195-7487c6b7c373
-ms.openlocfilehash: 06d78552ef2ebb878ed630eb377e6249ba60cad4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e97008d0399764beeca73dbbc5914e4b891df748
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62409349"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69514597"
 ---
 # <a name="in-c"></a>in (C++)
 
-Bir parametrenin çağıran yordamdan çağrılan yordama geçirileceğini gösterir.
+Çağıran yordamdan çağrılan yordama bir parametre geçirilecek olduğunu gösterir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -25,11 +25,11 @@ Bir parametrenin çağıran yordamdan çağrılan yordama geçirileceğini göst
 
 ## <a name="remarks"></a>Açıklamalar
 
-**İçinde** C++ özniteliği ile aynı işlevlere sahip [içinde](/windows/desktop/Midl/in) MIDL özniteliği.
+**In** C++ özniteliği, [ın](/windows/win32/Midl/in) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
 
 ## <a name="example"></a>Örnek
 
-Bkz: [bağlanabilir](bindable.md) nasıl kullanılacağına ilişkin bir örnek **içinde**.
+**' De**nasıl kullanılacağına ilişkin bir örnek için bkz. bağlanabilir. [](bindable.md)
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -37,12 +37,12 @@ Bkz: [bağlanabilir](bindable.md) nasıl kullanılacağına ilişkin bir örnek 
 
 |||
 |-|-|
-|**İçin geçerlidir**|Arabirimi parametresi, arabirim yöntemi|
+|**Uygulama hedefi**|Arabirim parametresi, arabirim yöntemi|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|None|
+|**Gerekli öznitelikler**|Yok.|
 |**Geçersiz öznitelikler**|**retval**|
 
-Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
+Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

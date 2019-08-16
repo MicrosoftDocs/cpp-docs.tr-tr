@@ -1,5 +1,5 @@
 ---
-title: Ccomenumımpl sınıfı
+title: CComEnumImpl sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CComEnumImpl
@@ -18,16 +18,16 @@ f1_keywords:
 helpviewer_keywords:
 - CComEnumImpl class
 ms.assetid: cc0d8e76-e608-46db-87cd-4c7161fe32d2
-ms.openlocfilehash: ccd083f3bfd9ae694c97e466fcb40b348fec0c27
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7d26c59a38bfe43e49215fbb6108453e10ca6dea
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62259868"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69497181"
 ---
-# <a name="ccomenumimpl-class"></a>Ccomenumımpl sınıfı
+# <a name="ccomenumimpl-class"></a>CComEnumImpl sınıfı
 
-Bu sınıf, numaralandırılan öğeleri bir dizi içinde depolandığı bir COM Numaralandırıcı arabirimi uygulamasını sağlar.
+Bu sınıf, numaralandırılmakta olan öğelerin bir dizide depolandığı bir COM Numaralandırıcı arabirimine yönelik uygulamayı sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -39,17 +39,17 @@ class ATL_NO_VTABLE CComEnumImpl : public Base
 
 #### <a name="parameters"></a>Parametreler
 
-*temel*<br/>
-COM Numaralandırıcı arabirimi. Bkz: [IEnumString](/windows/desktop/api/objidl/nn-objidl-ienumstring) örneği.
+*Temel*<br/>
+COM Numaralandırıcı arabirimi. Örnek için bkz. [IEnumString](/windows/win32/api/objidl/nn-objidl-ienumstring) .
 
-*piid*<br/>
-Numaralandırıcı arabirimi arabirim kimliği için bir işaretçi.
+*piıd*<br/>
+Numaralandırıcı arabiriminin arabirim KIMLIĞINE yönelik bir işaretçi.
 
-*T*<br/>
-Numaralandırıcı arabirim tarafından sunulan öğe türü.
+*ŞI*<br/>
+Numaralandırıcı arabirimi tarafından kullanıma sunulan öğenin türü.
 
 *Kopyala*<br/>
-Bir homojen [kopyalama İlkesi sınıfı](../../atl/atl-copy-policy-classes.md).
+Homojen [kopya ilke sınıfı](../../atl/atl-copy-policy-classes.md).
 
 ## <a name="members"></a>Üyeler
 
@@ -57,41 +57,41 @@ Bir homojen [kopyalama İlkesi sınıfı](../../atl/atl-copy-policy-classes.md).
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CComEnumImpl::CComEnumImpl](#ccomenumimpl)|Oluşturucu.|
-|[Ccomenumımpl:: ~ Ccomenumımpl](#dtor)|Yıkıcı.|
+|[CComEnumImpl:: CComEnumImpl](#ccomenumimpl)|Oluşturucu.|
+|[CComEnumImpl:: ~ CComEnumImpl](#dtor)|Yok edicisi.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CComEnumImpl::Clone](#clone)|Uygulamasını **kopya** numaralandırma arabirim yöntemi.|
-|[CComEnumImpl::Init](#init)|Numaralandırıcı başlatır.|
-|[CComEnumImpl::Next](#next)|Uygulamasını **sonraki**.|
-|[CComEnumImpl::Reset](#reset)|Uygulamasını **sıfırlama**.|
-|[CComEnumImpl::Skip](#skip)|Uygulamasını **atla**.|
+|[CComEnumImpl:: Clone](#clone)|**Clone** Enumeration Interface yönteminin uygulanması.|
+|[CComEnumImpl:: Init](#init)|Numaralandırıcı başlatır.|
+|[CComEnumImpl:: Next](#next)|**Sonraki**uygulama.|
+|[CComEnumImpl:: Reset](#reset)|**Sıfırlama**uygulamasının uygulanması.|
+|[CComEnumImpl:: Skip](#skip)|Atlanmayı uygulama.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CComEnumImpl::m_begin](#m_begin)|Dizideki ilk öğe işaretçisi.|
-|[CComEnumImpl::m_dwFlags](#m_dwflags)|Kopyalama aracılığıyla geçirilen bayraklar `Init`.|
-|[CComEnumImpl::m_end](#m_end)|Konumun dizi içindeki son öğenin hemen ötesinde bir işaretçi.|
-|[CComEnumImpl::m_iter](#m_iter)|Dizideki geçerli öğeye bir işaretçi.|
-|[CComEnumImpl::m_spUnk](#m_spunk)|`IUnknown` İşaretçi numaralandırılan koleksiyonu sağlayan nesne.|
+|[CComEnumImpl:: m_begin](#m_begin)|Dizideki ilk öğe için bir işaretçi.|
+|[CComEnumImpl:: m_dwFlags](#m_dwflags)|Kopyalama bayrakları geçti `Init`.|
+|[CComEnumImpl:: m_end](#m_end)|Dizideki son öğenin hemen ötesinde konuma yönelik bir işaretçi.|
+|[CComEnumImpl:: m_iter](#m_iter)|Dizideki geçerli öğeye yönelik bir işaretçi.|
+|[CComEnumImpl:: m_spUnk](#m_spunk)|Nesnenin, numaralandırılmakta olan koleksiyonu sağlayan işaretçisi.`IUnknown`|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bkz: [IEnumString](/windows/desktop/api/objidl/nn-objidl-ienumstring) yöntem uygulamaları ilişkin bir örnek. `CComEnumImpl` Numaralandırılan öğeleri bir dizi içinde depolandığı bir COM Numaralandırıcı arabirim uygulamasını sağlar. Bu sınıf için benzer `IEnumOnSTLImpl` Numaralandırıcı arabiriminin bir uygulamasını sağlar sınıfını, bir C++ Standart Kitaplığı kapsayıcı tabanlı.
+Yöntem uygulamalarına örnek olarak bkz. [IEnumString](/windows/win32/api/objidl/nn-objidl-ienumstring) . `CComEnumImpl`numaralandırılmakta olan öğelerin bir dizide depolandığı bir COM Numaralandırıcı arabirimi için uygulama sağlar. Bu sınıf, C++ standart kitaplık kapsayıcısını `IEnumOnSTLImpl` temel alan bir Numaralandırıcı arabirimin uygulanmasını sağlayan sınıfına benzerdir.
 
 > [!NOTE]
->  Daha fazla arasındaki farklar hakkında ayrıntılı bilgi için `CComEnumImpl` ve `IEnumOnSTLImpl`, bkz: [CComEnumImpl::Init](#init).
+>  `CComEnumImpl` Ve`IEnumOnSTLImpl`arasında daha fazla farklılık hakkındaki ayrıntılar için bkz. [CComEnumImpl:: Init](#init).
 
-Genellikle, görüntüler *değil* kendi Numaralandırıcı sınıfı bu arabirimi uygulamasından türetilerek oluşturmanız gerekir. ATL tarafından sağlanan bir dizisine göre bir numaralandırıcı kullanmak istiyorsanız, bir örneğini oluşturmak için daha yaygın [CComEnum](../../atl/reference/ccomenum-class.md).
+Genellikle, bu arabirim uygulamasından türeterek kendi Numaralandırıcı sınıfınızı oluşturmanız gerekmez. Bir dizi temelinde ATL tarafından sağlanan bir Numaralandırıcı kullanmak istiyorsanız, [CComEnum](../../atl/reference/ccomenum-class.md)'un bir örneğini oluşturmak daha yaygındır.
 
-Ancak, özel bir numaralandırıcı (örneğin, bir numaralandırıcı arabirimi yanı sıra arabirimleri kullanıma açıp) sağlamak gerekiyorsa, bu sınıftan türetebilirsiniz. Bu durumda geçersiz kılma gerekecektir olma olasılığı yüksektir [CComEnumImpl::Clone](#clone) kendi uygulamasını sağlamak için yöntemi.
+Ancak, özel bir Numaralandırıcı sağlamanız gerekiyorsa (örneğin, Numaralandırıcı arabirimine ek olarak arabirimler sunan bir tane), bu sınıftan türetebilirsiniz. Bu durumda, kendi uygulamanızı sağlamak için [CComEnumImpl:: Clone](#clone) metodunu geçersiz kılmanız gerekir.
 
-Daha fazla bilgi için [ATL koleksiyonları ve numaralandırıcıları](../../atl/atl-collections-and-enumerators.md).
+Daha fazla bilgi için bkz. [atl koleksiyonları ve Numaralandırıcılar](../../atl/atl-collections-and-enumerators.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -101,9 +101,9 @@ Daha fazla bilgi için [ATL koleksiyonları ve numaralandırıcıları](../../at
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlcom.h
+**Üstbilgi:** atlcom. h
 
-##  <a name="ccomenumimpl"></a>  CComEnumImpl::CComEnumImpl
+##  <a name="ccomenumimpl"></a>CComEnumImpl:: CComEnumImpl
 
 Oluşturucu.
 
@@ -111,17 +111,17 @@ Oluşturucu.
 CComEnumImpl();
 ```
 
-##  <a name="dtor"></a>  Ccomenumımpl:: ~ Ccomenumımpl
+##  <a name="dtor"></a>CComEnumImpl:: ~ CComEnumImpl
 
-Yıkıcı.
+Yok edicisi.
 
 ```
 ~CComEnumImpl();
 ```
 
-##  <a name="init"></a>  CComEnumImpl::Init
+##  <a name="init"></a>CComEnumImpl:: Init
 
-Numaralandırıcı arabirimine tüm istemciler için bir işaretçi geçirmeden önce bu yöntemi çağırmanız gerekir.
+Numaralandırıcı arabirimine bir işaretçiyi bir istemciye geri geçirmeden önce bu yöntemi çağırmanız gerekir.
 
 ```
 HRESULT Init(
@@ -133,29 +133,29 @@ HRESULT Init(
 
 ### <a name="parameters"></a>Parametreler
 
-*başlayın*<br/>
-Numaralandırılacak öğeleri içeren dizinin ilk öğesinin işaretçisi.
+*başladı*<br/>
+Numaralandırılacak öğeleri içeren dizinin ilk öğesine yönelik bir işaretçi.
 
-*Son*<br/>
-Konuma son sıralanması öğeleri içeren bir dizi öğesi için bir işaretçi.
+*erer*<br/>
+Numaralandırılacak öğeleri içeren dizinin son öğesinin hemen ötesinde konuma yönelik bir işaretçi.
 
-*pUnk*<br/>
-[in] `IUnknown` İşaretçiyi nesnenin Numaralandırıcı yaşam süresi boyunca canlı olarak tutulmalıdır. Böyle bir nesne varsa, NULL geçirin.
+*pUnk dili*<br/>
+'ndaki Numaralandırıcının ömrü boyunca etkin tutulması gereken bir nesne işaretçisi.`IUnknown` Böyle bir nesne yoksa NULL değeri geçirin.
 
-*bayrakları*<br/>
-Numaralandırıcı bir kopyasını oluşturmak veya dizinin sahipliğini olup olmadığını belirten işaretleri. Olası değerler, aşağıda açıklanmıştır.
+*larına*<br/>
+Numaralandırıcının dizinin sahipliğini alıp etmeyeceğini veya bir kopyasını yapıp belirtmeyeceğini belirten bayraklar. Olası değerler aşağıda açıklanmıştır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT değerini.
+Standart bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem yalnızca bir kez çağırmanız — Numaralandırıcı başlatmak, bunu kullanın ve ardından çöpe.
+Bu yöntemi yalnızca bir kez çağırın — numaralandırıcısı başlatın, kullanın ve sonra da oluşturun.
 
-Başka bir nesnede yer alacak bir dizi öğelerinde işaretçileri geçirebilirsiniz (ve veri kopyalamak için bir numaralandırıcı sorma varsa), kullanabileceğiniz *pUnk* nesne ve onun tutan dizinin olduğu sürece Numaralandırıcı için kullanılabilir olmasını sağlamak için parametre bunları gerekir. Numaralandırıcı, yalnızca etkin kalması için nesne üzerinde bir COM başvurusu tutar. COM başvurusu, numaralandırıcı kaldırıldığında otomatik olarak yayımlanır.
+Başka bir nesnede tutulan bir dizide yer alan öğelere işaretçiler geçirirseniz (ve Numaralandırıcının verileri kopyalamasını istememeniz halinde), Numaralandırıcı gereken nesne ve dizinin bulunduğundan emin olmak için *punk* parametresini kullanabilirsiniz. Numaralandırıcı, etkin tutmak için nesne üzerinde bir COM başvurusu tutar. Numaralandırıcı yok edildiğinde COM başvurusu otomatik olarak serbest bırakılır.
 
-*Bayrakları* parametresi Numaralandırıcı geçirilen dizi öğelerinin nasıl düşünmelisiniz belirtmenize olanak verir. *bayrakları* değerlerden birini alabilir `CComEnumFlags` sabit listesi aşağıda gösterilmektedir:
+*Flags* parametresi, Numaralandırıcının kendisine geçirilen dizi öğelerini nasıl ele almalıdır belirtmenize izin verir. *bayraklar* aşağıda gösterilen `CComEnumFlags` Numaralandırmadaki değerlerden birini alabilir:
 
 ```
 enum CComEnumFlags
@@ -166,18 +166,18 @@ enum CComEnumFlags
    };
 ```
 
-`AtlFlagNoCopy` dizinin ömrü numaralandırıcı tarafından denetlenmeyen anlamına gelir. Bu durumda, ya da dizi statik veya tarafından tanımlanan nesne olacak *pUnk* artık gerekli olmadığında, dizi boşaltma için sorumlu olursunuz.
+`AtlFlagNoCopy`dizinin ömrü Numaralandırıcı tarafından denetlenmediği anlamına gelir. Bu durumda, dizi statik olur ya da *punk* tarafından tanımlanan nesne, artık gerekli olmadığında diziyi boşaltmaktan sorumludur.
 
-`AtlFlagTakeOwnership` yok etme dizisi numaralandırıcı tarafından denetlenecek olduğu anlamına gelir. Bu durumda, dizi dinamik olarak kullanarak ayrılmış olmalıdır **yeni**. Numaralandırıcı, yok edici dizide siler. NULL genellikle geçecekse *pUnk*, ancak Numaralandırıcı yok etme herhangi bir nedenden dolayı bildirim almak gerekirse yine de geçerli bir işaretçi geçirebilirsiniz.
+`AtlFlagTakeOwnership`dizi yok etme işlemi Numaralandırıcı tarafından denetlenmektedir. Bu durumda, dizi **Yeni**kullanılarak dinamik olarak ayrılmış olmalıdır. Numaralandırıcı, dizi yıkıcısında diziyi silecektir. Genellikle, *punk*için null değeri geçirirsiniz, ancak bazı nedenlerle Numaralandırıcının yok edilmesiyle ilgili bilgilendirilmeniz gerekiyorsa geçerli bir işaretçiye geçiş yapabilirsiniz.
 
-`AtlFlagCopy` Yeni bir dizi için geçirilen dizisi kopyalayarak oluşturulması anlamına gelir `Init`. Yeni dizinin ömrü numaralandırıcı tarafından kontrol etmektir. Numaralandırıcı, yok edici dizide siler. NULL genellikle geçecekse *pUnk*, ancak Numaralandırıcı yok etme herhangi bir nedenden dolayı bildirim almak gerekirse yine de geçerli bir işaretçi geçirebilirsiniz.
+`AtlFlagCopy`öğesine `Init`geçirilen dizi kopyalanarak yeni bir dizi oluşturulacak anlamına gelir. Yeni dizinin ömrü Numaralandırıcı tarafından denetlenmelidir. Numaralandırıcı, dizi yıkıcısında diziyi silecektir. Genellikle, *punk*için null değeri geçirirsiniz, ancak bazı nedenlerle Numaralandırıcının yok edilmesiyle ilgili bilgilendirilmeniz gerekiyorsa geçerli bir işaretçiye geçiş yapabilirsiniz.
 
 > [!NOTE]
->  Bu yöntem prototipi türü olacak şekilde dizi öğeleri belirtir `T`burada `T` sınıfı için şablon parametresi olarak tanımlanmıştır. COM arabirimi yoluyla metodunun aynı türü budur [CComEnumImpl::Next](#next). Bu olduğu çıkarımında, benzer nitelikte değildir [Ienumonstlımpl](../../atl/reference/ienumonstlimpl-class.md), bu sınıf kullanıma sunulan veri türleri ve farklı depolama desteklemez. Dizideki öğelerin veri türü, COM arabirimi yoluyla kullanıma sunulan veri türü ile aynı olmalıdır.
+>  Bu yöntemin prototipi, sınıf için bir şablon parametresi olarak tanımlandığı gibi dizi `T`öğelerini türünde `T` belirtir. Bu, [CComEnumImpl:: Next](#next)com arabirim yöntemi aracılığıyla ortaya çıkarılan aynı türdür. Bu, [IEnumOnSTLImpl](../../atl/reference/ienumonstlimpl-class.md)'ın aksine, bu sınıfın farklı depolama ve sunulan veri türlerini desteklememesinden farklıdır. Dizideki öğelerin veri türü, COM arabirimi aracılığıyla ortaya çıkarılan veri türüyle aynı olmalıdır.
 
-##  <a name="clone"></a>  CComEnumImpl::Clone
+##  <a name="clone"></a>CComEnumImpl:: Clone
 
-Bu yöntem uygulamasını sağlar **kopya** türünde bir nesne oluşturarak yöntemi `CComEnum`, aynı dizi ve geçerli nesne tarafından kullanılan yineleyici başlatma ve yeni oluşturulan üzerinde arabirimi döndüren nesne.
+Bu yöntem, türünde `CComEnum`bir nesne oluşturarak, geçerli nesne tarafından kullanılan aynı dizi ve yineleyiciyi başlatarak ve yeni oluşturulan nesnesine arabirimini döndürürken **Clone** yönteminin uygulanmasını sağlar.
 
 ```
 STDMETHOD(Clone)(Base** ppEnum);
@@ -186,59 +186,59 @@ STDMETHOD(Clone)(Base** ppEnum);
 ### <a name="parameters"></a>Parametreler
 
 *ppEnum*<br/>
-[out] Yeni oluşturulan bir nesneye Numaralandırıcı arabirimde geçerli Numaralandırıcının kopyalandı.
+dışı Geçerli numaralandırıcıdan kopyalanmış yeni oluşturulan nesne üzerindeki Numaralandırıcı arabirimi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT değerini.
+Standart bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kopyalanan numaralandırıcılar hiç kendi yaptığınız Not özgün numaralandırıcı tarafından kullanılan veri kopyalama (veya sahipliği). Gerekirse, kopyalanan numaralandırıcılar özgün Numaralandırıcı Canlı (bir COM başvurusu kullanarak) ihtiyaç duydukları sürece verileri için kullanılabilir olduğundan emin olmak için tutar.
+Kopyalanan numaralandırıcıların özgün Numaralandırıcı tarafından kullanılan verilerin kendi kopyasını (veya sahipliğini al) hiçbir zaman yapmadığını unutmayın. Gerekirse, kopyalanmış Numaralandırıcılar, verilerin gerektiği sürece kullanılabilir olmasını sağlamak için özgün Numaralandırıcı canlı kalır (COM başvurusu kullanarak).
 
-##  <a name="m_spunk"></a>  CComEnumImpl::m_spUnk
+##  <a name="m_spunk"></a>CComEnumImpl:: m_spUnk
 
-Bu akıllı işaretçi geçirilen nesne üzerinde bir başvuru tutan [CComEnumImpl::Init](#init), bu Numaralandırıcının yaşam süresi boyunca Canlı çalışmayı sürdürdüğünden emin olma.
+Bu akıllı işaretçi, [CComEnumImpl:: Init](#init)öğesine geçirilen nesne üzerinde bir başvuru tutar ve bu da Numaralandırıcının ömrü boyunca etkin kalmasını sağlar.
 
 ```
 CComPtr<IUnknown> m_spUnk;
 ```
 
-##  <a name="m_begin"></a>  CComEnumImpl::m_begin
+##  <a name="m_begin"></a>CComEnumImpl:: m_begin
 
-Konuma son sıralanması öğeleri içeren bir dizi öğesi için bir işaretçi.
+Numaralandırılacak öğeleri içeren dizinin son öğesinin hemen ötesinde konuma yönelik bir işaretçi.
 
 ```
 T* m_begin;
 ```
 
-##  <a name="m_end"></a>  CComEnumImpl::m_end
+##  <a name="m_end"></a>CComEnumImpl:: m_end
 
-Numaralandırılacak öğeleri içeren dizinin ilk öğesinin işaretçisi.
+Numaralandırılacak öğeleri içeren dizinin ilk öğesine yönelik bir işaretçi.
 
 ```
 T* m_end;
 ```
 
-##  <a name="m_iter"></a>  CComEnumImpl::m_iter
+##  <a name="m_iter"></a>CComEnumImpl:: m_iter
 
-Geçerli sıralanması öğeleri içeren bir dizi öğesinin işaretçisi.
+Numaralandırılacak öğeleri içeren dizinin geçerli öğesine yönelik bir işaretçi.
 
 ```
 T* m_iter;
 ```
 
-##  <a name="m_dwflags"></a>  CComEnumImpl::m_dwFlags
+##  <a name="m_dwflags"></a>CComEnumImpl:: m_dwFlags
 
-Geçirilen bayraklar [CComEnumImpl::Init](#init).
+[CComEnumImpl:: Init](#init)öğesine geçirilen bayraklar.
 
 ```
 DWORD m_dwFlags;
 ```
 
-##  <a name="next"></a>  CComEnumImpl::Next
+##  <a name="next"></a>CComEnumImpl:: Next
 
-Bu yöntem uygulamasını sağlar **sonraki** yöntemi.
+Bu yöntem, **Next** yönteminin uygulanmasını sağlar.
 
 ```
 STDMETHOD(Next)(ULONG celt, T* rgelt, ULONG* pceltFetched);
@@ -247,21 +247,21 @@ STDMETHOD(Next)(ULONG celt, T* rgelt, ULONG* pceltFetched);
 ### <a name="parameters"></a>Parametreler
 
 *celt*<br/>
-[in] İstenen öğe sayısı.
+'ndaki İstenen öğe sayısı.
 
 *rgelt*<br/>
-[out] Öğelerle doldurulması dizisi.
+dışı Öğelerle doldurulacak dizi.
 
-*pceltFetched*<br/>
-[out] Gerçekte döndürülen öğe sayısını *rgelt*. Bu kısa *celt* az olursa *celt* öğeleri listede kaldı.
+*Pceltfettiz*<br/>
+dışı Aslında *rgelt*'de döndürülen öğelerin sayısı. Bu, celt öğelerinden daha azı listede kaldığı takdirde *celt* 'den daha az olabilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT değerini.
+Standart bir HRESULT değeri.
 
-##  <a name="reset"></a>  CComEnumImpl::Reset
+##  <a name="reset"></a>CComEnumImpl:: Reset
 
-Bu yöntem uygulamasını sağlar **sıfırlama** yöntemi.
+Bu yöntem, **sıfırlama** yönteminin uygulanmasını sağlar.
 
 ```
 STDMETHOD(Reset)(void);
@@ -269,11 +269,11 @@ STDMETHOD(Reset)(void);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT değerini.
+Standart bir HRESULT değeri.
 
-##  <a name="skip"></a>  CComEnumImpl::Skip
+##  <a name="skip"></a>CComEnumImpl:: Skip
 
-Bu yöntem uygulamasını sağlar **atla** yöntemi.
+Bu yöntem, **Skip** yönteminin uygulanmasını sağlar.
 
 ```
 STDMETHOD(Skip)(ULONG celt);
@@ -282,18 +282,18 @@ STDMETHOD(Skip)(ULONG celt);
 ### <a name="parameters"></a>Parametreler
 
 *celt*<br/>
-[in] Geçilecek öğelerin sayısı.
+'ndaki Atlanacak öğe sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT değerini.
+Standart bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-E_INVALIDARG döndürür *celt* sıfırsa, küçüktür, S_FALSE döndürür *celt* öğeleri döndürülür, aksi S_OK döndürür.
+*Celt* SıFıRSA, E_INVALIDARG döndürür, *celt* ÖĞELERINDEN daha azı döndürülürse S_FALSE değerini döndürür, aksi takdirde s_ok döndürür.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [IEnumOnSTLImpl Sınıfı](../../atl/reference/ienumonstlimpl-class.md)<br/>
 [CComEnum Sınıfı](../../atl/reference/ccomenum-class.md)<br/>
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)
+[Sınıfa genel bakış](../../atl/atl-class-overview.md)

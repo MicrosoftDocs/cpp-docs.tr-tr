@@ -1,21 +1,21 @@
 ---
-title: nonextensible (C++ COM özniteliği)
+title: Genişletilebilir olmayan (C++ com özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.nonextensible
 helpviewer_keywords:
 - nonextensible attribute
 ms.assetid: c7ef1554-809f-4ea0-a7cd-dc7786d40c3e
-ms.openlocfilehash: ed396b3d55e16cf195949c713ab574812b796a1a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f2947e223d068ea6cc92a41abe19cb7f920112b2
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62407581"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69514401"
 ---
 # <a name="nonextensible"></a>nonextensible
 
-Belirten `IDispatch` uygulaması yalnızca özellikleri içerir ve yöntemleri arabirimi açıklamasında listelenir ve çalışma zamanında ek üyeleriyle genişletilemez.
+`IDispatch` Uygulamanın yalnızca arabirim açıklamasında listelenen özellikleri ve yöntemleri içerdiğini belirtir ve çalışma zamanında ek üyelerle birlikte genişletilemez.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -25,13 +25,13 @@ Belirten `IDispatch` uygulaması yalnızca özellikleri içerir ve yöntemleri a
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Nonextensible** C++ özniteliği ile aynı işlevlere sahip [nonextensible](/windows/desktop/Midl/nonextensible) MIDL özniteliği.
+**Genişletilebilir** C++ olmayan öznitelik, [Genişletilebilir](/windows/win32/Midl/nonextensible) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
 
-Kullanım **nonextensible** ayrıca gerektirir [oleautomation](oleautomation.md) özniteliği.
+**Genişletilebilir olmayan** kullanımı, [oleautomation](oleautomation.md) özniteliğini de gerektirir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod bir kullanımını göstermektedir **nonextensible** özniteliği:
+Aşağıdaki kod, **genişletilebilen olmayan** özniteliğin bir kullanımını gösterir:
 
 ```cpp
 // cpp_attr_ref_nonextensible.cpp
@@ -54,12 +54,12 @@ __interface IFireTabCtrl
 
 |||
 |-|-|
-|**İçin geçerlidir**|**interface**|
+|**Uygulama hedefi**|**interface**|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|`dual` ve `oleautomation`, veya `dispinterface`|
+|**Gerekli öznitelikler**|`dual`ve `oleautomation`veya`dispinterface`|
 |**Geçersiz öznitelikler**|Yok.|
 
-Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
+Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

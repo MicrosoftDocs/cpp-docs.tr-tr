@@ -7,18 +7,18 @@ helpviewer_keywords:
 - CTreeCtrl class [MFC], item selection
 - item selection in tree controls
 ms.assetid: 7bcb3b16-b9c8-4c06-9350-7bc3c1c5009b
-ms.openlocfilehash: a88a2c8ea5b935bbcb1f40b705337ff676d8b8a5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 07c7b673e0f9029f8ece928b0ab17760b3863cc7
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62363565"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69513345"
 ---
 # <a name="tree-control-item-selection"></a>Ağaç Denetim Öğesi Seçimi
 
-Seçimi değiştiğinde bir öğeden diğerine, bir ağaç denetimi ([CTreeCtrl](../mfc/reference/ctreectrl-class.md)) gönderir [TVN_SELCHANGING](/windows/desktop/Controls/tvn-selchanging) ve [TVN_SELCHANGED](/windows/desktop/Controls/tvn-selchanged) bildirim iletileri. Her iki bildirim değişiklik fare tıklatın veya tuş vuruşu sonucu olup olmadığını belirten bir değer içerir. Bildirimler, ayrıca seçimi sağlamasını öğesi ve seçim kaybetme öğesi hakkında bilgiler içerir. Öğe seçimi durumuna bağımlı öğesi öznitelikleri ayarlamak için bu bilgileri kullanabilirsiniz. Döndüren **TRUE** yanıt olarak `TVN_SELCHANGING` döndüren değiştirmesini; seçimi engeller **FALSE** değişiklik sağlar.
+Seçim bir öğeden diğerine değiştirdiğinde, ağaç denetimi ([Ctreecu](../mfc/reference/ctreectrl-class.md)) [TVN_SELCHANGING](/windows/win32/Controls/tvn-selchanging) ve [TVN_SELCHANGED](/windows/win32/Controls/tvn-selchanged) bildirim iletileri gönderir. Her iki bildirim de, değişikliğin bir fare tıklaması veya bir tuş vuruşu sonucu olup olmadığını belirten bir değer içerir. Bildirimler ayrıca seçimi karşılayan öğe ve seçimi kaybetmekte olan öğe hakkındaki bilgileri de içerir. Bu bilgiyi, öğenin seçim durumuna bağlı öğe özniteliklerini ayarlamak için kullanabilirsiniz. Yanıtta **true döndürme** seçimin değiştirilmesini engelliyor;falsedöndürmedeğişikliğeizinverir.`TVN_SELCHANGING`
 
-Uygulama seçimi çağırarak değiştirebilirsiniz [SelectItem](../mfc/reference/ctreectrl-class.md#selectitem) üye işlevi.
+Bir uygulama [SelectItem](../mfc/reference/ctreectrl-class.md#selectitem) üye işlevini çağırarak seçimi değiştirebilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

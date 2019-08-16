@@ -6,25 +6,25 @@ f1_keywords:
 helpviewer_keywords:
 - CListCtrl class [MFC], using
 ms.assetid: 20d6a5d6-8f07-4ddf-975f-ea2dfebcc835
-ms.openlocfilehash: 2e8998000187b65b62886660116c4758c1f03962
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8641b7aec3aacf4de6aabfdcc9ffcbc64c278b41
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62386245"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69512910"
 ---
 # <a name="using-clistctrl"></a>CListCtrl Kullanma
 
-Simge etiketleri, dosya Gezgini ya da sütun listesi ile veya simgeler olmadan bir metin olduğu gibi tüm düzenlemesi görüntülemek için bir liste denetimini kullanın. Dört olası "görünümler" (MFC görünümlerle kafanız olarak değil) bir açıklaması için bir liste denetiminde olabilir — simge görünümünde, küçük simge görünümünde, liste görünümü ve rapor görünümü — Bkz görünümlerde [CListCtrl](../mfc/reference/clistctrl-class.md) sınıfına genel bakış.
+Dosya Gezgini 'nde olduğu gibi etiketlere sahip herhangi bir simge düzenini veya simgeleri olan veya olmayan metin listelerini göstermek için bir liste denetimi kullanın. Dört olası "Görünüm" (MFC görünümleriyle karıştırılmamalıdır) açıklaması için bir liste denetiminde (simge görünümü, küçük simge görünümü, liste görünümü ve rapor görünümü) sahip olabilirsiniz — bkz. [CListCtrl](../mfc/reference/clistctrl-class.md) sınıfına genel bakış.
 
-Bazı görünümlerde kullanıcılar simgeler farklı konumlara sürükleyin veya simge etiketleri düzenle. Örneğin, bir liste denetimini nondialog penceresinde kullanan dosya Gezgini sağ bölmede bakın. Explorer Görünüm menüsünde kullanılabilir görünümleri ile denemeler yapabilirsiniz.
+Bazı görünümlerde, kullanıcılar simgeleri farklı konumlara sürükleyebilir veya simge etiketlerini düzenleyebilir. Örneğin, dosya Gezgini 'nde, iletişim kutusu olmayan bir pencerede liste denetimi kullanan sağ bölmeye bakın. Gezgin 'in Görünüm menüsünde kullanılabilir görünümler ile denemeler yapabilirsiniz.
 
-İlgili bilgiler için bkz. [liste görünümü denetimleri hakkında](/windows/desktop/Controls/list-view-controls-overview) Windows SDK.
+İlgili bilgiler için, bkz. Windows SDK [liste görünümü denetimleri](/windows/win32/Controls/list-view-controls-overview) .
 
 > [!NOTE]
->  Windows SDK'sı için liste denetimleri "liste görünümü denetimi." ifade eder. Bu "Görünüm" kullanımını MFC görünüm sınıfları için özellikle başvurmuyor `CListView`. Daha fazla bilgi için [liste denetimi ve liste görünümü](../mfc/list-control-and-list-view.md).
+>  Windows SDK liste denetimlerine "liste görünümü denetimleri" olarak başvurur. Bu "Görünüm" kullanımı, özellikle `CListView`MFC görünüm sınıflarına başvurmaz. Daha fazla bilgi için bkz. [liste denetimi ve liste görünümü](../mfc/list-control-and-list-view.md).
 
-## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz
+## <a name="what-do-you-want-to-know-more-about"></a>Hakkında daha fazla bilgi edinmek istiyorsunuz
 
 - [Liste Denetimi ve Liste Görünümü](../mfc/list-control-and-list-view.md)
 

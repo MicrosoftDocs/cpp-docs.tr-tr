@@ -6,29 +6,29 @@ f1_keywords:
 helpviewer_keywords:
 - C1084
 ms.assetid: b2f273ef-3a14-4d5f-8ce0-7a11a0388fe6
-ms.openlocfilehash: 8c90616165a7b47d4251ace998fd49c613f244b5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b0c8e6a8f8321dccdfd7cee128a4cf06cebda991
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62208821"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69501130"
 ---
 # <a name="fatal-error-c1084"></a>Önemli hata C1084
 
-Dosya türü dosyası okunamıyor: 'file': ileti
+Dosya türü okunamıyor: ' dosya ': ileti
 
-Bu hata genellikle derleyici tarafından yapılan başarısız iç sistem API çağrısı sonucudur. Ne zaman bu hata ile gösterilen iletiyi sıklıkta ya da oluşturulduğu [_wcserror_s](../../c-runtime-library/reference/strerror-s-strerror-s-wcserror-s-wcserror-s.md) veya [FormatMessage](/windows/desktop/api/winbase/nf-winbase-formatmessage).
+Bu hata genellikle derleyici tarafından yapılan başarısız iç sistem API çağrısının sonucudur. Bu hatayla karşılaşıldığında gösterilen ileti, genellikle [_wcserror_s](../../c-runtime-library/reference/strerror-s-strerror-s-wcserror-s-wcserror-s.md) veya [FormatMessage iletisi](/windows/win32/api/winbase/nf-winbase-formatmessage)tarafından oluşturulur.
 
-Aşağıdaki adımları gerçekleştirmek, C1084 gidermenize yardımcı olabilir:
+Aşağıdaki adımların gerçekleştirilmesi C1084 çözümleme konusunda yardımcı olabilir:
 
 - Belirtilen dosyanın var olduğundan emin olun.
 
-- Belirtilen dosya erişmek için uygun izinleri ayarlayın sağlayın.
+- Belirtilen dosyaya erişmek için uygun izinlerin ayarlandığından emin olun.
 
-- Komut satırı sözdizimi aynılarını altında açıklanan kurallara için olun [derleyici komut satırı sözdizimi](../../build/reference/compiler-command-line-syntax.md).
+- Komut satırı sözdiziminin [derleyici komut satırı sözdizimi](../../build/reference/compiler-command-line-syntax.md)altında özetlenen kurallara uyduğundan emin olun.
 
-- Ortam değişkenlerini emin olun **TMP** ve **TEMP** düzgün kümesi yanı sıra, bu ortam değişkenlerine başvurmak için dizinleri erişmek için uygun izinleri olan. Tarafından başvurulan sürücüler de emin **TMP** ve **TEMP** ortam değişkenlerini içeren bir yeterli boş alan miktarı.
+- **Tmp** ve **Temp** ortam değişkenlerinin doğru ayarlandığından ve bu ortam değişkenlerinin başvurduğu dizinlere erişmek için uygun izinlerin olduğundan emin olun. Ayrıca, **tmp** ve **Temp** ortam değişkenlerinin başvurduğu sürücülerin yeterli miktarda boş alan içerdiğinden emin olun.
 
-- İleti "hatalı dosya numarası" derse, belirtilen dosya ön planda arka planda derlenirken kapatma.
+- İleti "hatalı dosya numarası" ise, arka planda derlenirken belirtilen dosya ön planda kapanıyor olabilir.
 
-Yukarıdaki tanılamalar gerçekleştirdikten sonra bir temiz yapı gerçekleştirin.
+Yukarıdaki tanılamayı gerçekleştirdikten sonra temiz bir derleme gerçekleştirin.

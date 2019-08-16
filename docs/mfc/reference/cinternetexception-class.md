@@ -1,5 +1,5 @@
 ---
-title: Cınternetexception sınıfı
+title: CInternetException Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CInternetException
@@ -12,14 +12,14 @@ helpviewer_keywords:
 - CInternetException [MFC], m_dwContext
 - CInternetException [MFC], m_dwError
 ms.assetid: 44fb3cbe-523e-4754-8843-a77909990b14
-ms.openlocfilehash: dedf8926f02dd36dc8d6ac8ab5ff4056b60dfc91
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c4f4c7a5b7594270aff9dfbc224e9a66ba09be3f
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62345714"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69505914"
 ---
-# <a name="cinternetexception-class"></a>Cınternetexception sınıfı
+# <a name="cinternetexception-class"></a>CInternetException Sınıfı
 
 Bir Internet işlemiyle ilgili bir özel durum koşulunu temsil eder.
 
@@ -35,20 +35,20 @@ class CInternetException : public CException
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CInternetException::CInternetException](#cinternetexception)|Oluşturur bir `CInternetException` nesne.|
+|[CInternetException:: CInternetException](#cinternetexception)|Bir `CInternetException` nesnesi oluşturur.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CInternetException::m_dwContext](#m_dwcontext)|Özel duruma neden işlemle ilişkilendirilen içerik değeri.|
-|[CInternetException::m_dwError](#m_dwerror)|Özel duruma neden hata.|
+|[CInternetException:: m_dwContext](#m_dwcontext)|Özel duruma neden olan işlemle ilişkili bağlam değeri.|
+|[CInternetException:: m_dwError](#m_dwerror)|Özel duruma neden hata.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CInternetException` Sınıfı iki genel veri üyeleri içerir: tutan bir özel durumla ilişkili hata kodu ve diğer hatayla ilişkili Internet uygulaması bağlam tanımlayıcısını tutar.
+`CInternetException` Sınıfı iki ortak veri üyesi içerir: biri özel durumla ilişkili hata kodunu barındırır ve diğeri hatayla ilişkili Internet uygulamasının bağlam tanımlayıcısını barındırır.
 
-Internet uygulamaları için bağlam tanımlayıcıları hakkında daha fazla bilgi için bkz [Winınet'in Internet programlama](../../mfc/win32-internet-extensions-wininet.md).
+Internet uygulamalarına yönelik bağlam tanımlayıcıları hakkında daha fazla bilgi için bkz. [Winınet Ile Internet programlama](../../mfc/win32-internet-extensions-wininet.md)makalesi.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -60,11 +60,11 @@ Internet uygulamaları için bağlam tanımlayıcıları hakkında daha fazla bi
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxinet.h
+**Üstbilgi:** AFXINET. h
 
-##  <a name="cinternetexception"></a>  CInternetException::CInternetException
+##  <a name="cinternetexception"></a>CInternetException:: CInternetException
 
-Bu üye işlevi aldığında çağrılan bir `CInternetException` nesnesi oluşturulur.
+Bu üye işlevi, bir `CInternetException` nesne oluşturulduğunda çağrılır.
 
 ```
 CInternetException(DWORD dwError);
@@ -77,11 +77,11 @@ CInternetException(DWORD dwError);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir Cınternetexception atmak için MFC genel işlev çağrısı [Afxthrowınternetexception](internet-url-parsing-globals.md#afxthrowinternetexception).
+CInternetException oluşturmak için, [AFXTHROWıNTERNETEXCEPTION](internet-url-parsing-globals.md#afxthrowinternetexception)MFC genel işlevini çağırın.
 
-##  <a name="m_dwcontext"></a>  CInternetException::m_dwContext
+##  <a name="m_dwcontext"></a>CInternetException:: m_dwContext
 
-İlgili Internet işlemle ilişkili içerik değeri.
+İlgili Internet işlemiyle ilişkili bağlam değeri.
 
 ```
 DWORD_PTR m_dwContext;
@@ -89,9 +89,9 @@ DWORD_PTR m_dwContext;
 
 ### <a name="remarks"></a>Açıklamalar
 
-İçerik tanımlayıcısı başlangıçta belirtilen [Cınternetsession](../../mfc/reference/cinternetsession-class.md) ve MFC'ye tarafından geçirilen [Cınternetconnection](../../mfc/reference/cinternetconnection-class.md)- ve [Cınternetfile](../../mfc/reference/cinternetfile-class.md)-türetilmiş sınıflar. Bu varsayılanı geçersiz kılmak ve herhangi bir Ata *dwContext* parametresi, seçtiğiniz bir değer. *dwContext* verilen nesnenin herhangi bir işlem ile ilişkilidir. *dwContext* tarafından döndürülen işlem durumu bilgilerini tanımlayan [CInternetSession::OnStatusCallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback).
+Bağlam tanımlayıcısı başlangıçta [CInternetSession](../../mfc/reference/cinternetsession-class.md) 'da BELIRTILIR ve MFC tarafından [CInternetConnection](../../mfc/reference/cinternetconnection-class.md)-ve [CInternetFile](../../mfc/reference/cinternetfile-class.md)ile türetilmiş sınıflara geçirilir. Bu varsayılanı geçersiz kılabilir ve seçtiğiniz bir değer için herhangi bir *dwContext* parametresini atayabilirsiniz. *dwContext* , belirtilen nesnenin herhangi bir işlemiyle ilişkili. *dwContext* , [CInternetSession:: OnStatusCallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback)tarafından döndürülen işlemin durum bilgilerini tanımlar.
 
-##  <a name="m_dwerror"></a>  CInternetException::m_dwError
+##  <a name="m_dwerror"></a>CInternetException:: m_dwError
 
 Özel duruma neden hata.
 
@@ -101,9 +101,9 @@ DWORD m_dwError;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu hata değeri bir sistem olabilir WINERROR içinde bulunan bir hata kodu. H veya WİNINET gelen bir hata değeri. H
+Bu hata değeri, WINERROR 'da bulunan bir sistem hata kodu olabilir. H veya WININET 'den bir hata değeri. Olsun.
 
-Win32 hata kodlarına listesi için bkz. [hata kodları](/windows/desktop/Debug/system-error-codes). Internet özel hata iletileri bir listesi için bkz. Windows SDK'yı hem konulardır.
+Win32 hata kodlarının listesi için bkz. [hata kodları](/windows/win32/Debug/system-error-codes). Internet 'e özgü hata iletilerinin listesi için bkz. Her iki konu de Windows SDK.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

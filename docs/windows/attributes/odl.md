@@ -1,21 +1,21 @@
 ---
-title: odl (C++ COM özniteliği)
+title: ODL (C++ com özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.odl
 helpviewer_keywords:
 - odl attribute
 ms.assetid: 75dcb314-b50f-4a63-9180-507ac1bc78f3
-ms.openlocfilehash: 90f9f1df23542138b2fac0dcfe0e122f1993d805
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a4ae1aa7f27348e37c565b35e3dc0b2b1011c9cb
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62407646"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69514323"
 ---
 # <a name="odl"></a>odl
 
-Arabirimdeki bir nesne Açıklama Dili (ODL) arabirim tanımlar. MIDL derleyicisi gerektirmez **odl** özniteliği; yalnızca eski .odl dosyaları ile uyumluluk için kabul edilir.
+Bir arabirimi nesne Açıklama Dili (ODL) arabirimi olarak tanımlar. MıDL derleyicisi **ODL** özniteliğini gerektirmez; yalnızca eski. odl dosyalarıyla uyumluluk için tanınır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -25,7 +25,7 @@ Arabirimdeki bir nesne Açıklama Dili (ODL) arabirim tanımlar. MIDL derleyicis
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Odl** C++ özniteliği ile aynı işlevlere sahip [odl](/windows/desktop/Midl/odl) MIDL özniteliği.
+**ODL** C++ özniteliği [ODL](/windows/win32/Midl/odl) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
 
 ## <a name="example"></a>Örnek
 
@@ -55,12 +55,12 @@ public:
 
 |||
 |-|-|
-|**İçin geçerlidir**|**interface**|
+|**Uygulama hedefi**|**interface**|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|None|
+|**Gerekli öznitelikler**|Yok.|
 |**Geçersiz öznitelikler**|Yok.|
 
-Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
+Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

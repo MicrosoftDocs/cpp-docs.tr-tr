@@ -8,12 +8,12 @@ helpviewer_keywords:
 - pragmas, pack
 - pack pragma
 ms.assetid: e4209cbb-5437-4b53-b3fe-ac264501d404
-ms.openlocfilehash: bf1ae81184d53dd271f63c26e8f9a52a6410b232
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: da4484ec86d39c8fa55a741eadd53a1d614b20dc
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62180036"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69510170"
 ---
 # <a name="pack"></a>pack
 Yapı, birleşim ve sınıf üyeleri için paketleme hizalamasını belirtir.
@@ -26,45 +26,45 @@ Yapı, birleşim ve sınıf üyeleri için paketleme hizalamasını belirtir.
 
 ### <a name="parameters"></a>Parametreler
 
-**Show**<br/>
-(İsteğe bağlı) Hizalama sevk geçerli bayt değeri görüntüler. Değer, bir uyarı iletisi görüntülenir.
+**göster**<br/>
+Seçim Paketleme hizalaması için geçerli bayt değerini görüntüler. Değer bir uyarı iletisiyle görüntülenir.
 
 **push**<br/>
-(İsteğe bağlı) Bildirim geçerli paketleme hizalama değeri iç derleyici yığınındaki ve geçerli paketleme hizalama değeri için kümeleri *n*. Varsa *n* belirtilmezse, geçerli hizalama değeri paketleme gönderildi.
+Seçim İç derleyici yığınında geçerli paketleme hizalama değerini iter ve geçerli paketleme hizalama değerini *n*olarak ayarlar. *N* belirtilmemişse, geçerli paketleme hizalama değeri gönderilir.
 
-**POP**<br/>
-(İsteğe bağlı) Kayıt, derleyici iç yığının üst kısmından kaldırır. Varsa *n* ile belirtilmemiş **pop**, yığının en üstündeki sonuç kaydıyla ilişkili paketleme değer yeni ise hizalama değeri paketleme. Varsa *n* , örneğin, belirtilen `#pragma pack(pop, 16)`, *n* yeni olur paketleme hizalama değeri. İle pop, *tanımlayıcı*, örneğin, `#pragma pack(pop, r1)`, yığında tüm kayıtları sahip kaydının kadar POP sonra *tanımlayıcı* bulunur. Kaydı silinmez ve yeni paketleme yığını üzerindeki bir sonuç kaydıyla ilişkili paket değeri olduğunu hizalama değeri. İle pop varsa bir *tanımlayıcı* bulunmayan yığını üzerinde herhangi bir kayıttaki sonra **pop** göz ardı edilir.
+**cağımız**<br/>
+Seçim Kaydı, iç derleyici yığınının üst öğesinden kaldırır. *Hayır* , **pop**ile belirtilmediyse, yığının en üstündeki sonuç kaydıyla ilişkili paketleme değeri, yeni paketleme hizalama değeridir. *N* belirtilmişse, örneğin `#pragma pack(pop, 16)`, *n* yeni paketleme hizalama değeri haline gelir. Örneğin `#pragma pack(pop, r1)`, tanımlayıcı ile birlikte açarsanız,, *tanımlayıcı* içeren kayıt bulunana kadar yığındaki tüm kayıtlar işlenir. Bu kayıt oluşur ve en üstündeki sonuç kaydıyla ilişkili paketleme değeri, yeni paketleme hizalama değerinin yığınlamasıdır. Yığındaki herhangi bir kayıtta bulunmayan bir *tanımlayıcı* ile birlikte açarsanız, **pop** yok sayılır.
 
-*tanımlayıcı*<br/>
-(İsteğe bağlı) İle kullanıldığında *anında iletme*, iç derleyici yığınındaki kayda bir ad atar. İle kullanıldığında **pop**, yığından kayıtları kadar iç yığının *tanımlayıcı* ; kaldırılır *tanımlayıcı* bulunamazsa iç yığında hiçbir şey kaldırılmaz.
+*Tanımlayıcısını*<br/>
+Seçim *Push*ile kullanıldığında, iç derleyici yığınındaki kayda bir ad atar. Pop ile kullanıldığında, *tanımlayıcı* kaldırılana kadar iç yığının pop 'ları **açılır**. iç yığında *tanımlayıcı* bulunamazsa hiçbir şey yapılmadı.
 
 *n*<br/>
-(İsteğe bağlı) Bayt cinsinden paketleme için kullanılacak değeri belirtir. Varsa derleyici seçeneği [/ZP](../build/reference/zp-struct-member-alignment.md) modülü için varsayılan değer ayarlanmadı *n* 8'dir. Geçerli değerler 1, 2, 4, 8 ve 16:. Bir üyenin hizalaması olduğunu veya bir sınır üzerinde katlarından biri olacak *n* veya üye boyutunun bir katı hangisi daha küçükse.
+Seçim Paketleme için kullanılacak değeri bayt cinsinden belirtir. Modül için [/ZP](../build/reference/zp-struct-member-alignment.md) derleyici seçeneği ayarlanmamışsa, *n* için varsayılan değer 8 ' dir. Geçerli değerler 1, 2, 4, 8 ve 16 ' dır. Üyenin hizalaması, ne kadar küçük bir değer olan *n* veya üyenin boyutunun birden çok katı olan bir sınırın üzerinde olacaktır.
 
-`#pragma pack(pop, identifier, n)` tanımlı değil.
+`#pragma pack(pop, identifier, n)`tanımlı değil.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir sınıf paketlenecek üyelerini doğrudan diğer bazı veya tüm üyeleri varsayılan hizalama hedef mimari daha küçük bir sınır üzerinde hizalanabilir gelebilir bellekte sonra yerleştirmektir. **Paketi** veri bildirimi düzeyinde denetim sağlar. Bu derleyici seçeneğini farklıdır [/ZP](../build/reference/zp-struct-member-alignment.md), modül düzeyi denetimi yalnızca sağlar. **Paketi** etkinleşir ilk **yapı**, **birleşim**, veya **sınıfı** pragma görüldüğünde sonra bildirimi. **Paketi** tanımları üzerinde hiçbir etkisi olmaz. Çağırma **paketi** hiçbir bağımsız değişken kümeleriyle *n* derleyici seçeneğini ayarlamak değerine `/Zp`. Derleyici seçeneği ayarlanmamışsa varsayılan değer 8'dir.
+Bir sınıfı paketlemesini sağlamak için, üyelerini doğrudan bellekteki her bir yerde yerleştirmekten bağımsız olarak, bazı veya tüm Üyeler hedef mimarinin varsayılan hizalamadan daha küçük bir sınıra hizalanabilir anlamına gelebilir. **paket** , veri bildirimi düzeyinde denetim sağlar. Bu, yalnızca modül düzeyi denetim sağlayan [/ZP](../build/reference/zp-struct-member-alignment.md)derleyici seçeneğinden farklıdır. **paket** , pragma görüntülendikten sonra ilk **Yapı**, **birleşim**veya **sınıf** bildiriminde devreye girer. **paketin** tanımları üzerinde hiçbir etkisi yoktur. Bağımsız değişken içermeyen çağrı **paketi** , derleyici seçeneğinde `/Zp`ayarlanan değere n olarak ayarlanır. Derleyici seçeneği ayarlanmamışsa, varsayılan değer 8 ' dir.
 
-Bir yapının hizalanması değiştirirseniz, bellek, ancak kadar alan performans bakın veya donanım tarafından oluşturulan bir özel durum hizalanmamış erişim için bile almak kullanamazsınız.  Bu özel durum davranışını kullanarak değiştirebileceğiniz [SetErrorMode](https://msdn.microsoft.com/library/windows/desktop/ms680621).
+Bir yapının hizalamasını değiştirirseniz bu, bellekte çok fazla alan kullanamaz, ancak performansın azaldığını veya hatta hizalanmamış erişim için donanım tarafından oluşturulan bir özel durum elde edebilir.  Bu özel durum davranışını [SetErrorMode](/windows/win32/api/errhandlingapi/nf-errhandlingapi-seterrormode)kullanarak değiştirebilirsiniz.
 
-Hizalama değiştirme hakkında daha fazla bilgi için şu konulara bakın:
+Hizalamayı değiştirme hakkında daha fazla bilgi için şu konulara bakın:
 
-- [__alignof](../cpp/alignof-operator.md)
+- [__hizalaması](../cpp/alignof-operator.md)
 
 - [align](../cpp/align-cpp.md)
 
 - [__unaligned](../cpp/unaligned.md)
 
-- [Yapı hizalama örnekleri](../build/x64-software-conventions.md#examples-of-structure-alignment) (x64 belirli)
+- [Yapı hizalaması örnekleri](../build/x64-software-conventions.md#examples-of-structure-alignment) (x64 'e özgü)
 
    > [!WARNING]
-   > Visual Studio 2015 ve sonraki işleçleri alignof ve alignas standart kullanabileceğinizi unutmayın, aksine `__alignof` ve `declspec( align )` derleyiciler arasında taşınabilen. Yine de kullanmalısınız C++ Standart paketleme, adres değil **paketi** (veya diğer derleyiciler karşılık gelen uzantının) hedef mimarisinin word boyuttan küçük hizalamaları belirtmek için.
+   > Visual Studio 2015 ve sonraki sürümlerde, derleyicilerin aksine `__alignof` ve `declspec( align )` bunlar arasında taşınabilen standart alignas ve hizalama değerlerini kullanabileceğinizi unutmayın. C++ Standart paketleme ' a yönelik değildir, bu nedenle hedef mimarinin sözcük boyutundan daha küçük hizalamaları belirtmek için **paketi** (veya diğer derleyicilerde karşılık gelen uzantıyı) kullanmaya devam etmeniz gerekir.
 
 ## <a name="examples"></a>Örnekler
 
-Aşağıdaki örnek nasıl kullanılacağını gösterir **paketi** pragması, bir yapının hizalanması değiştirmek için.
+Aşağıdaki örnek, bir yapının hizalamasını değiştirmek için **Pack** pragma 'ın nasıl kullanılacağını gösterir.
 
 ```cpp
 // pragma_directives_pack.cpp
@@ -100,7 +100,7 @@ int main() {
 0 4 6
 ```
 
-Aşağıdaki örnek nasıl kullanılacağını gösterir *anında iletme*, *pop*, ve *Göster* söz dizimi.
+Aşağıdaki örnek, *Push*, *pop*ve *Show* sözdiziminin nasıl kullanılacağını göstermektedir.
 
 ```cpp
 // pragma_directives_pack_2.cpp

@@ -31,19 +31,19 @@ helpviewer_keywords:
 - CComModule class
 - DLL modules [C++], ATL
 ms.assetid: f5face2c-8fd8-40e6-9ec3-54ab74701769
-ms.openlocfilehash: 6d95460902c44ff058a4c7b90c810ab44489d952
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 53138081a6d712f775a2cc8f1e6905c45d95d34d
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62259280"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69497116"
 ---
 # <a name="ccommodule-class"></a>CComModule sınıfı
 
-ATL 7. 0'den itibaren `CComModule` kullanım dışı bırakılmıştır: bkz [ATL modül sınıfları](../../atl/atl-module-classes.md) daha fazla ayrıntı için.
+ATL 7,0 `CComModule` itibariyle kullanım dışıdır: daha fazla ayrıntı için bkz. [ATL modül sınıfları](../../atl/atl-module-classes.md) .
 
 > [!IMPORTANT]
->  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.
+>  Bu sınıf ve üyeleri Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -57,55 +57,55 @@ class CComModule : public _ATL_MODULE
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CComModule::GetClassObject](#getclassobject)|Belirtilen CLSID'yi bir nesne oluşturur. Yalnızca DLL'leri için.|
-|[CComModule::GetModuleInstance](#getmoduleinstance)|Döndürür `m_hInst`.|
-|[CComModule::GetResourceInstance](#getresourceinstance)|Döndürür `m_hInstResource`.|
-|[CComModule::GetTypeLibInstance](#gettypelibinstance)|Döndürür `m_hInstTypeLib`.|
-|[Ccommodule::Init](#init)|Veri üyeleri başlatır.|
-|[CComModule::RegisterClassHelper](#registerclasshelper)|Standart sınıf kaydı bir nesnenin sistem kayıt defterinde girer.|
-|[CComModule::RegisterClassObjects](#registerclassobjects)|Sınıf nesnesini kaydeder. Exe dosyaları için yalnızca.|
-|[CComModule::RegisterServer](#registerserver)|Nesne eşlemesindeki her nesnenin sistem kayıt defterini güncelleştirir.|
-|[CComModule::RegisterTypeLib](#registertypelib)|Tür kitaplığını kaydeder.|
-|[CComModule::RevokeClassObjects](#revokeclassobjects)|Sınıf nesnesi iptal eder. Exe dosyaları için yalnızca.|
-|[CComModule::Term](#term)|Veri üyeleri serbest bırakır.|
-|[CComModule::UnregisterClassHelper](#unregisterclasshelper)|Standart sınıf kaydı bir nesnenin sistem kayıt defterinden kaldırır.|
-|[CComModule::UnregisterServer](#unregisterserver)|Nesne eşlemesindeki her nesnenin kaydını siler.|
-|[CComModule::UpdateRegistryClass](#updateregistryclass)|Kaydeder veya bir nesnenin standart sınıf kaydı kaydını siler.|
-|[CComModule::UpdateRegistryFromResourceD](#updateregistryfromresourced)|Belirtilen kaynak kaydetmek veya kaydını bir nesne için yer alan komut dosyasını çalıştırır.|
-|[CComModule::UpdateRegistryFromResourceS](#updateregistryfromresources)|Statik olarak bağlanan ATL kayıt defteri bileşeni. Belirtilen kaynak kaydetmek veya kaydını bir nesne için yer alan komut dosyasını çalıştırır.|
+|[CComModule:: GetClassObject](#getclassobject)|Belirtilen bir CLSID 'nin bir nesnesini oluşturur. Yalnızca dll 'Ler için.|
+|[CComModule:: GetModuleInstance](#getmoduleinstance)|Döndürür `m_hInst`.|
+|[CComModule:: GetResourceInstance](#getresourceinstance)|Döndürür `m_hInstResource`.|
+|[CComModule:: GetTypeLibInstance](#gettypelibinstance)|Döndürür `m_hInstTypeLib`.|
+|[CComModule:: Init](#init)|Veri üyelerini başlatır.|
+|[CComModule:: RegisterClassHelper](#registerclasshelper)|Bir nesnenin standart sınıf kaydını sistem kayıt defterine girer.|
+|[CComModule:: RegisterClassObjects](#registerclassobjects)|Sınıf nesnesini kaydeder. Yalnızca EXEs için.|
+|[CComModule:: RegisterServer](#registerserver)|Nesne eşlemesindeki her nesne için sistem kayıt defterini güncelleştirir.|
+|[CComModule:: RegisterTypeLib](#registertypelib)|Tür kitaplığını kaydeder.|
+|[CComModule:: RevokeClassObjects](#revokeclassobjects)|Sınıf nesnesini iptal eder. Yalnızca EXEs için.|
+|[CComModule:: Term](#term)|Veri üyelerini yayınlar.|
+|[CComModule:: UnregisterClassHelper](#unregisterclasshelper)|Bir nesnenin standart sınıf kaydını sistem kayıt defterinden kaldırır.|
+|[CComModule:: UnregisterServer](#unregisterserver)|Nesne eşlemesindeki her nesnenin kaydını siler.|
+|[CComModule:: UpdateRegistryClass](#updateregistryclass)|Bir nesnenin standart sınıf kaydını kaydettirir veya kaydını siler.|
+|[CComModule:: UpdateRegistryFromResourceD](#updateregistryfromresourced)|Bir nesneyi kaydetmek veya kaydını silmek için belirtilen bir kaynakta bulunan betiği çalıştırır.|
+|[CComModule:: UpdateRegistryFromResourceS](#updateregistryfromresources)|ATL kayıt defteri bileşenine statik olarak bağlantılar. Bir nesneyi kaydetmek veya kaydını silmek için belirtilen bir kaynakta bulunan betiği çalıştırır.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CComModule::m_csObjMap](#m_csobjmap)|Eşitlenen nesne eşleme bilgilerine erişim sağlar.|
-|[CComModule::m_csTypeInfoHolder](#m_cstypeinfoholder)|Tür kitaplığı bilgisi eşitlenmiş erişim sağlar.|
-|[CComModule::m_csWindowCreate](#m_cswindowcreate)|Pencere sınıfı bilgileri ve statik veri penceresi oluşturulurken kullanılan eşitlenmiş erişim sağlar.|
-|[CComModule::m_hInst](#m_hinst)|Modül örneğinin tanıtıcısını içerir.|
-|[CComModule::m_hInstResource](#m_hinstresource)|Varsayılan olarak, modül örneğinin tanıtıcısını içerir.|
-|[CComModule::m_hInstTypeLib](#m_hinsttypelib)|Varsayılan olarak, modül örneğinin tanıtıcısını içerir.|
-|[CComModule::m_pObjMap](#m_pobjmap)|Modül örneği tarafından tutulan nesne eşlemesine işaret eder.|
+|[CComModule:: m_csObjMap](#m_csobjmap)|Nesne eşleme bilgilerine eşitlenmiş erişimi sağlar.|
+|[CComModule:: m_csTypeInfoHolder](#m_cstypeinfoholder)|Tür kitaplığı bilgilerine eşitlenmiş erişimi sağlar.|
+|[CComModule:: m_csWindowCreate](#m_cswindowcreate)|Pencere oluşturma sırasında kullanılan Windows sınıf bilgilerine ve statik verilere eşitlenmiş erişimi sağlar.|
+|[CComModule:: m_hInst](#m_hinst)|Modül örneğine yönelik tanıtıcıyı içerir.|
+|[CComModule:: m_hInstResource](#m_hinstresource)|Varsayılan olarak, modül örneğine yönelik tanıtıcıyı içerir.|
+|[CComModule:: m_hInstTypeLib](#m_hinsttypelib)|Varsayılan olarak, modül örneğine yönelik tanıtıcıyı içerir.|
+|[CComModule:: m_pObjMap](#m_pobjmap)|Modül örneği tarafından tutulan nesne eşlemesini işaret eder.|
 
 ## <a name="remarks"></a>Açıklamalar
 
 > [!NOTE]
->  Bu sınıf kullanım dışıdır ve ATL kodu oluşturma sihirbazları artık kullanabilir [CAtlAutoThreadModule](../../atl/reference/catlautothreadmodule-class.md) ve [CAtlModule](../../atl/reference/catlmodule-class.md) türetilmiş sınıflar. Bkz: [ATL modül sınıfları](../../atl/atl-module-classes.md) daha fazla bilgi için. Aşağıdaki bilgiler, ATL daha eski sürümleri ile oluşturulan uygulamalarla kullanım içindir. `CComModule` hala ATL için geriye dönük özelliği parçasıdır.
+>  Bu sınıf kullanım dışıdır ve ATL kod oluşturma sihirbazları artık [CAtlAutoThreadModule](../../atl/reference/catlautothreadmodule-class.md) ve [CAtlModule](../../atl/reference/catlmodule-class.md) türetilmiş sınıflarını kullanır. Daha fazla bilgi için bkz. [ATL modül sınıfları](../../atl/atl-module-classes.md) . Aşağıdaki bilgiler, ATL 'nin eski sürümleriyle oluşturulan uygulamalarla kullanım içindir. `CComModule`, geriye doğru özellik için ATL 'nin bir parçası olmaya devam etmektedir.
 
-`CComModule` Modülün bileşenlerine erişmek bir istemci sağlayan bir COM sunucusu modülü uygular. `CComModule` DLL (işlem içi) hem de EXE (yerel) modülleri destekler.
+`CComModule`bir COM sunucu modülünü uygular ve istemcinin modülün bileşenlerine erişmesine izin verir. `CComModule`Hem DLL (işlem içi) hem de EXE (yerel) modüllerini destekler.
 
-A `CComModule` örneği sınıfı nesne tanımları kümesini korumak için bir nesne eşleme kullanır. Bu nesne eşlemesi bir dizi olarak uygulanan `_ATL_OBJMAP_ENTRY` yapıları ve bilgileri içerir:
+Bir `CComModule` örnek, sınıf nesne tanımlarının bir kümesini sürdürmek için bir nesne eşlemesi kullanır. Bu nesne eşlemesi bir `_ATL_OBJMAP_ENTRY` yapı dizisi olarak uygulanır ve şunun için bilgiler içerir:
 
-- Girme ve sistem kayıt defterinde nesnesi açıklamaları kaldırılıyor.
+- Nesne açıklamalarını sistem kayıt defterine girme ve kaldırma.
 
-- Bir sınıf üreteci nesnelerde örnekleme.
+- Bir sınıf fabrikası aracılığıyla nesneleri örnekleniyor.
 
-- Bir istemci kök nesnesi arasındaki iletişimi bileşen oluşturma.
+- Bileşendeki bir istemciyle kök nesne arasında iletişim kurma.
 
-- Sınıf nesnelerinin ömür Yönetimi gerçekleştiriliyor.
+- Sınıf nesnelerinin ömür yönetimi gerçekleştiriliyor.
 
-ATL COM AppWizard çalıştırdığınızda, sihirbaz otomatik olarak oluşturulur `_Module`, genel bir örneğini `CComModule` veya ondan türetilmiş bir sınıf. ATL projesi Sihirbazı hakkında daha fazla bilgi için bkz [ATL projesi oluşturma](../../atl/reference/creating-an-atl-project.md).
+ATL COM AppWizard 'ı çalıştırdığınızda sihirbaz, genel bir `_Module` `CComModule` örneği veya ondan türetilmiş bir sınıf otomatik olarak oluşturulur. ATL Proje Sihirbazı hakkında daha fazla bilgi için, [ATL projesi oluşturma](../../atl/reference/creating-an-atl-project.md)makalesine bakın.
 
-Ek olarak `CComModule`, ATL sağlar [CComAutoThreadModule](../../atl/reference/ccomautothreadmodule-class.md), sağlar ve exe ve Windows Hizmetleri için bir apartman modeli modülü uygular. Modülünüzün öğesinden türetilen `CComAutoThreadModule` içinde birden çok apartmanlar nesneleri oluşturmak istediğinizde.
+, ATL 'nin `CComModule`yanı sıra, exes ve Windows Hizmetleri için bir Grup modeli modülü uygulayan [CComAutoThreadModule](../../atl/reference/ccomautothreadmodule-class.md)de sağlar. Birden çok apartmanlarda nesne oluşturmak istediğiniz `CComAutoThreadModule` sırada modülünüzü türetebilirsiniz.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -113,17 +113,17 @@ Ek olarak `CComModule`, ATL sağlar [CComAutoThreadModule](../../atl/reference/c
 
 [CAtlModule](../../atl/reference/catlmodule-class.md)
 
-[CAtlModuleT](../../atl/reference/catlmodulet-class.md)
+[Catlmodület](../../atl/reference/catlmodulet-class.md)
 
 `CComModule`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlbase.h
+**Üstbilgi:** atlbase. h
 
-##  <a name="getclassobject"></a>  CComModule::GetClassObject
+##  <a name="getclassobject"></a>CComModule:: GetClassObject
 
-ATL 7. 0'den itibaren `CComModule` artık kullanılmıyor: bkz [ATL modül sınıfları](../../atl/atl-module-classes.md) daha fazla ayrıntı için.
+ATL 7,0 `CComModule` itibariyle artık kullanılmıyor: daha fazla ayrıntı için bkz. [ATL modül sınıfları](../../atl/atl-module-classes.md) .
 
 ```
 HRESULT GetClassObject(
@@ -134,28 +134,28 @@ HRESULT GetClassObject(
 
 ### <a name="parameters"></a>Parametreler
 
-*rclsid*<br/>
-[in] Oluşturulacak nesnenin CLSID.
+*rclsıd*<br/>
+'ndaki Oluşturulacak nesnenin CLSID değeri.
 
-*riid*<br/>
-[in] İstenen arabirim Laboratuvardaki.
+*riıd*<br/>
+'ndaki İstenen arabirimin IID 'si.
 
-*ppv*<br/>
-[out] Tarafından tanımlanan bir arabirim işaretçisi için bir işaretçi *riid*. Nesne bu arabirimi desteklemiyorsa *ppv* NULL olarak ayarlandı.
+*PPV*<br/>
+dışı *Riıd*tarafından tanımlanan arabirim işaretçisine yönelik bir işaretçi. Nesne bu arabirimi desteklemiyorsa, *PPV* null olarak ayarlanır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT değerini.
+Standart bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Belirtilen CLSID'yi bir nesne oluşturur ve bu nesne için bir arabirim işaretçisi alır.
+Belirtilen CLSID 'nin bir nesnesini oluşturur ve bu nesneye bir arabirim işaretçisi alır.
 
-`GetClassObject` yalnızca dll için kullanılabilir.
+`GetClassObject`yalnızca dll 'Ler tarafından kullanılabilir.
 
-##  <a name="getmoduleinstance"></a>  CComModule::GetModuleInstance
+##  <a name="getmoduleinstance"></a>CComModule:: GetModuleInstance
 
-ATL 7. 0'den itibaren `CComModule` artık kullanılmıyor: bkz [ATL modül sınıfları](../../atl/atl-module-classes.md) daha fazla ayrıntı için.
+ATL 7,0 `CComModule` itibariyle artık kullanılmıyor: daha fazla ayrıntı için bkz. [ATL modül sınıfları](../../atl/atl-module-classes.md) .
 
 ```
 HINSTANCE GetModuleInstance() throw();
@@ -163,15 +163,15 @@ HINSTANCE GetModuleInstance() throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu modül tanımlama HINSTANCE.
+Bu modülü tanımlayan HıNSTANCE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Döndürür [m_hInst](#m_hinst) veri üyesi.
+[M_hInst](#m_hinst) veri üyesini döndürür.
 
-##  <a name="getresourceinstance"></a>  CComModule::GetResourceInstance
+##  <a name="getresourceinstance"></a>CComModule:: GetResourceInstance
 
-ATL 7. 0'den itibaren `CComModule` artık kullanılmıyor: bkz [ATL modül sınıfları](../../atl/atl-module-classes.md) daha fazla ayrıntı için.
+ATL 7,0 `CComModule` itibariyle artık kullanılmıyor: daha fazla ayrıntı için bkz. [ATL modül sınıfları](../../atl/atl-module-classes.md) .
 
 ```
 HINSTANCE GetResourceInstance() throw();
@@ -179,15 +179,15 @@ HINSTANCE GetResourceInstance() throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir HINSTANCE.
+Bir HıNSTANCE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Döndürür [m_hInstResource](#m_hinstresource) veri üyesi.
+[M_hInstResource](#m_hinstresource) veri üyesini döndürür.
 
-##  <a name="gettypelibinstance"></a>  CComModule::GetTypeLibInstance
+##  <a name="gettypelibinstance"></a>CComModule:: GetTypeLibInstance
 
-ATL 7. 0'den itibaren `CComModule` artık kullanılmıyor: bkz [ATL modül sınıfları](../../atl/atl-module-classes.md) daha fazla ayrıntı için.
+ATL 7,0 `CComModule` itibariyle artık kullanılmıyor: daha fazla ayrıntı için bkz. [ATL modül sınıfları](../../atl/atl-module-classes.md) .
 
 ```
 HINSTANCE GetTypeLibInstance() const throw();
@@ -195,15 +195,15 @@ HINSTANCE GetTypeLibInstance() const throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir HINSTANCE.
+Bir HıNSTANCE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Döndürür [m_hInstTypeLib](#m_hinsttypelib) veri üyesi.
+[M_hInstTypeLib](#m_hinsttypelib) veri üyesini döndürür.
 
-##  <a name="init"></a>  Ccommodule::Init
+##  <a name="init"></a>CComModule:: Init
 
-ATL 7. 0'den itibaren `CComModule` artık kullanılmıyor: bkz [ATL modül sınıfları](../../atl/atl-module-classes.md) daha fazla ayrıntı için.
+ATL 7,0 `CComModule` itibariyle artık kullanılmıyor: daha fazla ayrıntı için bkz. [ATL modül sınıfları](../../atl/atl-module-classes.md) .
 
 ```
 HRESULT Init(
@@ -215,25 +215,25 @@ HRESULT Init(
 ### <a name="parameters"></a>Parametreler
 
 *p*<br/>
-[in] Bir nesne eşleme girişleri dizisine bir işaretçi.
+'ndaki Nesne eşleme girdileri dizisine yönelik bir işaretçi.
 
 *h*<br/>
-[in] Geçirilen HINSTANCE `DLLMain` veya `WinMain`.
+'ndaki `DLLMain` Ya`WinMain`da öğesine geçirilen HINSTANCE.
 
-*plibid*<br/>
-[in] Projeyle ilişkili tür kitaplığının Kitaplık kimliği için bir işaretçi.
+*plibıd*<br/>
+'ndaki Projeyle ilişkili tür kitaplığının LIBıD işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT değerini.
+Standart bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tüm veri üyeleri başlatır.
+Tüm veri üyelerini başlatır.
 
-##  <a name="m_csobjmap"></a>  CComModule::m_csObjMap
+##  <a name="m_csobjmap"></a>CComModule:: m_csObjMap
 
-ATL 7. 0'den itibaren `CComModule` artık kullanılmıyor: bkz [ATL modül sınıfları](../../atl/atl-module-classes.md) daha fazla ayrıntı için.
+ATL 7,0 `CComModule` itibariyle artık kullanılmıyor: daha fazla ayrıntı için bkz. [ATL modül sınıfları](../../atl/atl-module-classes.md) .
 
 ```
 CRITICAL_SECTION m_csObjMap;
@@ -241,11 +241,11 @@ CRITICAL_SECTION m_csObjMap;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Nesne eşlemesine eşitlenmiş erişim sağlar.
+Nesne haritasına eşitlenmiş erişimi sağlar.
 
-##  <a name="m_cstypeinfoholder"></a>  CComModule::m_csTypeInfoHolder
+##  <a name="m_cstypeinfoholder"></a>CComModule:: m_csTypeInfoHolder
 
-ATL 7. 0'den itibaren `CComModule` artık kullanılmıyor: bkz [ATL modül sınıfları](../../atl/atl-module-classes.md) daha fazla ayrıntı için.
+ATL 7,0 `CComModule` itibariyle artık kullanılmıyor: daha fazla ayrıntı için bkz. [ATL modül sınıfları](../../atl/atl-module-classes.md) .
 
 ```
 CRITICAL_SECTION m_csTypeInfoHolder;
@@ -253,11 +253,11 @@ CRITICAL_SECTION m_csTypeInfoHolder;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür kitaplığını eşitlenmiş erişim sağlar.
+Tür kitaplığına eşitlenmiş erişimi sağlar.
 
-##  <a name="m_cswindowcreate"></a>  CComModule::m_csWindowCreate
+##  <a name="m_cswindowcreate"></a>CComModule:: m_csWindowCreate
 
-ATL 7. 0'den itibaren `CComModule` artık kullanılmıyor: bkz [ATL modül sınıfları](../../atl/atl-module-classes.md) daha fazla ayrıntı için.
+ATL 7,0 `CComModule` itibariyle artık kullanılmıyor: daha fazla ayrıntı için bkz. [ATL modül sınıfları](../../atl/atl-module-classes.md) .
 
 ```
 CRITICAL_SECTION m_csWindowCreate;
@@ -265,11 +265,11 @@ CRITICAL_SECTION m_csWindowCreate;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Pencere sınıfı bilgileri ve statik veri penceresi oluşturulurken kullanılan eşitlenmiş erişim sağlar.
+Pencere sınıfı bilgilerine ve pencere oluşturma sırasında kullanılan statik verilere eşitlenmiş erişimi sağlar.
 
-##  <a name="m_hinst"></a>  CComModule::m_hInst
+##  <a name="m_hinst"></a>CComModule:: m_hInst
 
-ATL 7. 0'den itibaren `CComModule` artık kullanılmıyor: bkz [ATL modül sınıfları](../../atl/atl-module-classes.md) daha fazla ayrıntı için.
+ATL 7,0 `CComModule` itibariyle artık kullanılmıyor: daha fazla ayrıntı için bkz. [ATL modül sınıfları](../../atl/atl-module-classes.md) .
 
 ```
 HINSTANCE m_hInst;
@@ -277,13 +277,13 @@ HINSTANCE m_hInst;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Modül örneğinin tanıtıcısını içerir.
+Modül örneğine yönelik tanıtıcıyı içerir.
 
-[Init](#init) yöntemi kümeleri `m_hInst` geçirilen işlenecek `DLLMain` veya `WinMain`.
+[Init](#init) yöntemi, veya `m_hInst` `DLLMain` öğesine`WinMain`geçirilen tanıtıcıyı ayarlar.
 
-##  <a name="m_hinstresource"></a>  CComModule::m_hInstResource
+##  <a name="m_hinstresource"></a>CComModule:: m_hInstResource
 
-ATL 7. 0'den itibaren `CComModule` artık kullanılmıyor: bkz [ATL modül sınıfları](../../atl/atl-module-classes.md) daha fazla ayrıntı için.
+ATL 7,0 `CComModule` itibariyle artık kullanılmıyor: daha fazla ayrıntı için bkz. [ATL modül sınıfları](../../atl/atl-module-classes.md) .
 
 ```
 HINSTANCE m_hInstResource;
@@ -291,15 +291,15 @@ HINSTANCE m_hInstResource;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, modül örneğinin tanıtıcısını içerir.
+Varsayılan olarak, modül örneğine yönelik tanıtıcıyı içerir.
 
-[Init](#init) yöntemi kümeleri `m_hInstResource` geçirilen işlenecek `DLLMain` veya `WinMain`. Açıkça ayarlayabilirsiniz `m_hInstResource` bir kaynağa işlenecek.
+[Init](#init) yöntemi, veya `m_hInstResource` `DLLMain` öğesine`WinMain`geçirilen tanıtıcıyı ayarlar. Tanıtıcıya açıkça bir kaynak `m_hInstResource` olarak ayarlayabilirsiniz.
 
-[GetResourceInstance](#getresourceinstance) yöntemi içinde depolanan bir tanıtıcı döndürür `m_hInstResource`.
+[GetResourceInstance](#getresourceinstance) yöntemi içinde `m_hInstResource`depolanan tanıtıcıyı döndürür.
 
-##  <a name="m_hinsttypelib"></a>  CComModule::m_hInstTypeLib
+##  <a name="m_hinsttypelib"></a>CComModule:: m_hInstTypeLib
 
-ATL 7. 0'den itibaren `CComModule` artık kullanılmıyor: bkz [ATL modül sınıfları](../../atl/atl-module-classes.md) daha fazla ayrıntı için.
+ATL 7,0 `CComModule` itibariyle artık kullanılmıyor: daha fazla ayrıntı için bkz. [ATL modül sınıfları](../../atl/atl-module-classes.md) .
 
 ```
 HINSTANCE m_hInstTypeLib;
@@ -307,15 +307,15 @@ HINSTANCE m_hInstTypeLib;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, modül örneğinin tanıtıcısını içerir.
+Varsayılan olarak, modül örneğine yönelik tanıtıcıyı içerir.
 
-[Init](#init) yöntemi kümeleri `m_hInstTypeLib` geçirilen işlenecek `DLLMain` veya `WinMain`. Açıkça ayarlayabilirsiniz `m_hInstTypeLib` bir tür kitaplığı için işlenecek.
+[Init](#init) yöntemi, veya `m_hInstTypeLib` `DLLMain` öğesine`WinMain`geçirilen tanıtıcıyı ayarlar. Tanıtıcı olarak bir tür `m_hInstTypeLib` kitaplığına açıkça ayarlayabilirsiniz.
 
-[GetTypeLibInstance](#gettypelibinstance) yöntemi içinde depolanan bir tanıtıcı döndürür `m_hInstTypeLib`.
+[GetTypeLibInstance](#gettypelibinstance) yöntemi içinde `m_hInstTypeLib`depolanan tanıtıcıyı döndürür.
 
-##  <a name="m_pobjmap"></a>  CComModule::m_pObjMap
+##  <a name="m_pobjmap"></a>CComModule:: m_pObjMap
 
-ATL 7. 0'den itibaren `CComModule` artık kullanılmıyor: bkz [ATL modül sınıfları](../../atl/atl-module-classes.md) daha fazla ayrıntı için.
+ATL 7,0 `CComModule` itibariyle artık kullanılmıyor: daha fazla ayrıntı için bkz. [ATL modül sınıfları](../../atl/atl-module-classes.md) .
 
 ```
 _ATL_OBJMAP_ENTRY* m_pObjMap;
@@ -323,11 +323,11 @@ _ATL_OBJMAP_ENTRY* m_pObjMap;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Modül örneği tarafından tutulan nesne eşlemesine işaret eder.
+Modül örneği tarafından tutulan nesne eşlemesini işaret eder.
 
-##  <a name="registerclasshelper"></a>  CComModule::RegisterClassHelper
+##  <a name="registerclasshelper"></a>CComModule:: RegisterClassHelper
 
-ATL 7. 0'den itibaren `CComModule` artık kullanılmıyor: bkz [ATL modül sınıfları](../../atl/atl-module-classes.md) daha fazla ayrıntı için.
+ATL 7,0 `CComModule` itibariyle artık kullanılmıyor: daha fazla ayrıntı için bkz. [ATL modül sınıfları](../../atl/atl-module-classes.md) .
 
 ```
 ATL_DEPRECATED HRESULT RegisterClassHelper(
@@ -340,34 +340,34 @@ ATL_DEPRECATED HRESULT RegisterClassHelper(
 
 ### <a name="parameters"></a>Parametreler
 
-*CLSID*<br/>
-[in] CLSID kaydedilecek nesne.
+*in*<br/>
+'ndaki Kaydedilecek nesnenin CLSID 'SI.
 
 *lpszProgID*<br/>
-[in] Nesneyle ilişkili ProgID.
+'ndaki Nesneyle ilişkili ProgID.
 
 *lpszVerIndProgID*<br/>
-[in] Sürümden bağımsız bir nesneyle ilişkili ProgID.
+'ndaki Nesneyle ilişkili sürümden bağımsız ProgID.
 
-*nDescID*<br/>
-[in] Nesnenin tanımı için bir dize kaynağı tanımlayıcısı.
+*Ndescıd*<br/>
+'ndaki Nesnenin açıklamasına yönelik bir dize kaynağının tanımlayıcısı.
 
-*CertOpenStore*<br/>
-[in] Kayıt defterinde girmek için iş parçacığı modelini belirtir. Olası değerler şunlardır: THREADFLAGS_APARTMENT, THREADFLAGS_BOTH veya AUTPRXFLAG.
+*dwFlags*<br/>
+'ndaki Kayıt defterine girilecek iş parçacığı modelini belirtir. Olası değerler şunlardır THREADFLAGS_APARTMENT, THREADFLAGS_BOTH veya AUTPRXFLAG.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT değerini.
+Standart bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Standart sınıf kaydı bir nesnenin sistem kayıt defterinde girer.
+Bir nesnenin standart sınıf kaydını sistem kayıt defterine girer.
 
-[UpdateRegistryClass](#updateregistryclass) yöntem çağrılarını `RegisterClassHelper`.
+[UpdateRegistryClass](#updateregistryclass) yöntemi çağırır `RegisterClassHelper`.
 
-##  <a name="registerclassobjects"></a>  CComModule::RegisterClassObjects
+##  <a name="registerclassobjects"></a>CComModule:: RegisterClassObjects
 
-ATL 7. 0'den itibaren `CComModule` artık kullanılmıyor: bkz [ATL modül sınıfları](../../atl/atl-module-classes.md) daha fazla ayrıntı için.
+ATL 7,0 `CComModule` itibariyle artık kullanılmıyor: daha fazla ayrıntı için bkz. [ATL modül sınıfları](../../atl/atl-module-classes.md) .
 
 ```
 HRESULT RegisterClassObjects(DWORD dwClsContext, DWORD dwFlags) throw();
@@ -376,22 +376,22 @@ HRESULT RegisterClassObjects(DWORD dwClsContext, DWORD dwFlags) throw();
 ### <a name="parameters"></a>Parametreler
 
 *dwClsContext*<br/>
-[in] Sınıf nesnesi çalıştırılacak bağlamı belirtir. Olası değerler şunlardır: CLSCTX_INPROC_SERVER, CLSCTX_INPROC_HANDLER veya CLSCTX_LOCAL_SERVER. Bu değerlerin açıklaması için bkz [CLSCTX](/windows/desktop/api/wtypesbase/ne-wtypesbase-tagclsctx) Windows SDK.
+'ndaki Sınıf nesnesinin çalıştırılacağı bağlamı belirtir. Olası değerler şunlardır CLSCTX_INPROC_SERVER, CLSCTX_INPROC_HANDLER veya CLSCTX_LOCAL_SERVER. Bu değerlerin bir açıklaması için Windows SDK bkz. [clsctx](/windows/win32/api/wtypesbase/ne-wtypesbase-clsctx) .
 
-*CertOpenStore*<br/>
-[in] Bağlantı türleri sınıf nesnesi belirler. Olası değerler şunlardır: REGCLS_SINGLEUSE, REGCLS_MULTIPLEUSE veya REGCLS_MULTI_SEPARATE. Bu değerlerin açıklaması için bkz [REGCLS](/windows/desktop/api/combaseapi/ne-combaseapi-tagregcls) Windows SDK.
+*dwFlags*<br/>
+'ndaki Sınıf nesnesine bağlantı türlerini belirler. Olası değerler şunlardır REGCLS_SINGLEUSE, REGCLS_MULTIPLEUSE veya REGCLS_MULTI_SEPARATE. Bu değerlerin bir açıklaması için Windows SDK [regcls](/windows/win32/api/combaseapi/ne-combaseapi-regcls) bölümüne bakın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT değerini.
+Standart bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Diğer uygulamalar ona bağlanabilmesi için bir EXE sınıf nesnesini OLE ile kaydeder. Bu yöntem yalnızca exe için kullanılabilir.
+Diğer uygulamaların bağlanabilmesi için, OLE ile bir EXE sınıfı nesnesi kaydeder. Bu yöntem yalnızca EXEs tarafından kullanılabilir.
 
-##  <a name="registerserver"></a>  CComModule::RegisterServer
+##  <a name="registerserver"></a>CComModule:: RegisterServer
 
-ATL 7. 0'den itibaren `CComModule` artık kullanılmıyor: bkz [ATL modül sınıfları](../../atl/atl-module-classes.md) daha fazla ayrıntı için.
+ATL 7,0 `CComModule` itibariyle artık kullanılmıyor: daha fazla ayrıntı için bkz. [ATL modül sınıfları](../../atl/atl-module-classes.md) .
 
 ```
 HRESULT RegisterServer(
@@ -402,28 +402,28 @@ HRESULT RegisterServer(
 ### <a name="parameters"></a>Parametreler
 
 *bRegTypeLib*<br/>
-[in] Tür kitaplığı kayıtlı olup olmadığını gösterir. Varsayılan değer FALSE olur.
+'ndaki Tür kitaplığının kaydedilip edilmeyeceğini belirtir. Varsayılan değer FALSE 'dur.
 
 *pCLSID*<br/>
-[in] CLSID işaret kaydedilecek nesne. NULL (varsayılan değer), nesne eşlemesindeki tüm nesneleri kayıtlı değilse.
+'ndaki Kaydedilecek nesnenin CLSID değerini gösterir. NULL ise (varsayılan değer), nesne haritadaki tüm nesneler kaydedilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT değerini.
+Standart bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yapılandırmanıza bağlı olarak *pCLSID* parametre, bir tek sınıf nesnesini veya nesne eşlemesindeki tüm nesneleri için sistem kayıt defterini güncelleştirir.
+*PCLSID* parametresine bağlı olarak, tek bir sınıf nesnesi veya nesne eşlemesindeki tüm nesneler için sistem kayıt defterini güncelleştirir.
 
-Varsa *bRegTypeLib* TRUE ise tür kitaplığı bilgisi de güncelleştirilir.
+*BRegTypeLib* değeri true ise, tür kitaplığı bilgileri de güncelleştirilir.
 
-Bkz: [OBJECT_ENTRY_AUTO](object-map-macros.md#object_entry_auto) için nesne eşleme girişi ekleme hakkında daha fazla bilgi için.
+Nesne haritasına giriş ekleme hakkında bilgi için bkz. [OBJECT_ENTRY_AUTO](object-map-macros.md#object_entry_auto) .
 
-`RegisterServer` tarafından otomatik olarak çağrılacak `DLLRegisterServer` DLL ya da `WinMain` bir EXE ile çalıştırmak için `/RegServer` komut satırı seçeneği.
+`RegisterServer`, bir dll `DLLRegisterServer` için veya `/RegServer` komut satırı seçeneğiyle bir exe `WinMain` çalıştırması tarafından otomatik olarak çağrılır.
 
-##  <a name="registertypelib"></a>  CComModule::RegisterTypeLib
+##  <a name="registertypelib"></a>CComModule:: RegisterTypeLib
 
-ATL 7. 0'den itibaren `CComModule` artık kullanılmıyor: bkz [ATL modül sınıfları](../../atl/atl-module-classes.md) daha fazla ayrıntı için.
+ATL 7,0 `CComModule` itibariyle artık kullanılmıyor: daha fazla ayrıntı için bkz. [ATL modül sınıfları](../../atl/atl-module-classes.md) .
 
 ```
 HRESULT RegisterTypeLib() throw();
@@ -433,21 +433,21 @@ HRESULT RegisterTypeLib(LPCTSTR lpszIndex) throw();
 ### <a name="parameters"></a>Parametreler
 
 *lpszIndex*<br/>
-[in] Biçim dizesindeki `"\\N"`burada `N` TYPELIB kaynak tamsayı dizinidir.
+'ndaki Biçiminde `"\\N"` dize`N` , TYPELIB kaynağının tamsayı dizinidir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT değerini.
+Standart bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir tür kitaplığı hakkında bilgi için sistem kayıt defterine ekler.
+Bir tür kitaplığı hakkında bilgileri sistem kayıt defterine ekler.
 
-Modül örneğinin birden fazla tür kitaplığı içeriyorsa, hangi tür kitaplığı kullanılması gerektiğini belirtmek için bu yöntemi ikinci sürümü kullanın.
+Modül örneği birden çok tür kitaplığı içeriyorsa, hangi tür kitaplığının kullanılması gerektiğini belirtmek için bu yöntemin ikinci sürümünü kullanın.
 
-##  <a name="revokeclassobjects"></a>  CComModule::RevokeClassObjects
+##  <a name="revokeclassobjects"></a>CComModule:: RevokeClassObjects
 
-ATL 7. 0'den itibaren `CComModule` artık kullanılmıyor: bkz [ATL modül sınıfları](../../atl/atl-module-classes.md) daha fazla ayrıntı için.
+ATL 7,0 `CComModule` itibariyle artık kullanılmıyor: daha fazla ayrıntı için bkz. [ATL modül sınıfları](../../atl/atl-module-classes.md) .
 
 ```
 HRESULT RevokeClassObjects() throw();
@@ -455,15 +455,15 @@ HRESULT RevokeClassObjects() throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT değerini.
+Standart bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sınıf nesnesini kaldırır. Bu yöntem yalnızca exe için kullanılabilir.
+Sınıf nesnesini kaldırır. Bu yöntem yalnızca EXEs tarafından kullanılabilir.
 
-##  <a name="term"></a>  CComModule::Term
+##  <a name="term"></a>CComModule:: Term
 
-ATL 7. 0'den itibaren `CComModule` artık kullanılmıyor: bkz [ATL modül sınıfları](../../atl/atl-module-classes.md) daha fazla ayrıntı için.
+ATL 7,0 `CComModule` itibariyle artık kullanılmıyor: daha fazla ayrıntı için bkz. [ATL modül sınıfları](../../atl/atl-module-classes.md) .
 
 ```
 void Term() throw();
@@ -471,11 +471,11 @@ void Term() throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tüm veri üyeleri serbest bırakır.
+Tüm veri üyelerini yayınlar.
 
-##  <a name="unregisterclasshelper"></a>  CComModule::UnregisterClassHelper
+##  <a name="unregisterclasshelper"></a>CComModule:: UnregisterClassHelper
 
-ATL 7. 0'den itibaren `CComModule` artık kullanılmıyor: bkz [ATL modül sınıfları](../../atl/atl-module-classes.md) daha fazla ayrıntı için.
+ATL 7,0 `CComModule` itibariyle artık kullanılmıyor: daha fazla ayrıntı için bkz. [ATL modül sınıfları](../../atl/atl-module-classes.md) .
 
 ```
 ATL_DEPRECATED HRESULT UnregisterClassHelper(
@@ -486,28 +486,28 @@ ATL_DEPRECATED HRESULT UnregisterClassHelper(
 
 ### <a name="parameters"></a>Parametreler
 
-*CLSID*<br/>
-[in] CLSID kaydı nesnesi.
+*in*<br/>
+'ndaki Kaydı kaldırılacak nesnenin CLSID değeri.
 
 *lpszProgID*<br/>
-[in] Nesneyle ilişkili ProgID.
+'ndaki Nesneyle ilişkili ProgID.
 
 *lpszVerIndProgID*<br/>
-[in] Sürümden bağımsız bir nesneyle ilişkili ProgID.
+'ndaki Nesneyle ilişkili sürümden bağımsız ProgID.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT değerini.
+Standart bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Standart sınıf kaydı bir nesnenin sistem kayıt defterinden kaldırır.
+Bir nesnenin standart sınıf kaydını sistem kayıt defterinden kaldırır.
 
-[UpdateRegistryClass](#updateregistryclass) yöntem çağrılarını `UnregisterClassHelper`.
+[UpdateRegistryClass](#updateregistryclass) yöntemi çağırır `UnregisterClassHelper`.
 
-##  <a name="unregisterserver"></a>  CComModule::UnregisterServer
+##  <a name="unregisterserver"></a>CComModule:: UnregisterServer
 
-ATL 7. 0'den itibaren `CComModule` artık kullanılmıyor: bkz [ATL modül sınıfları](../../atl/atl-module-classes.md) daha fazla ayrıntı için.
+ATL 7,0 `CComModule` itibariyle artık kullanılmıyor: daha fazla ayrıntı için bkz. [ATL modül sınıfları](../../atl/atl-module-classes.md) .
 
 ```
 HRESULT UnregisterServer(const CLSID* pCLSID = NULL) throw ();
@@ -517,26 +517,26 @@ inline HRESULT UnregisterServer(BOOL bUnRegTypeLib, const CLSID* pCLSID = NULL) 
 ### <a name="parameters"></a>Parametreler
 
 *bUnRegTypeLib*<br/>
-TRUE ise tür kitaplığı da kaydı.
+TRUE ise tür kitaplığının de kaydı silindi.
 
 *pCLSID*<br/>
-CLSID işaret silinmesine izin nesnesi. NULL (varsayılan değer), nesne eşlemesindeki tüm nesneleri kaydı silinecek durumunda.
+Kaydı kaldırılacak nesnenin CLSID değerini gösterir. NULL ise (varsayılan değer), nesne eşlemesindeki tüm nesnelerin kaydı silinir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT değerini.
+Standart bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yapılandırmanıza bağlı olarak *pCLSID* parametresi, bir tek sınıf nesnesini veya nesne eşlemesindeki tüm nesneleri kaydını siler.
+*PCLSID* parametresine bağlı olarak, tek bir sınıf nesnesinin veya nesne eşlemesindeki tüm nesnelerin kaydını siler.
 
-`UnregisterServer` tarafından otomatik olarak çağrılacak `DLLUnregisterServer` DLL ya da `WinMain` bir EXE ile çalıştırmak için `/UnregServer` komut satırı seçeneği.
+`UnregisterServer`, bir dll `DLLUnregisterServer` için veya `/UnregServer` komut satırı seçeneğiyle bir exe `WinMain` çalıştırması tarafından otomatik olarak çağrılır.
 
-Bkz: [OBJECT_ENTRY_AUTO](object-map-macros.md#object_entry_auto) için nesne eşleme girişi ekleme hakkında daha fazla bilgi için.
+Nesne haritasına giriş ekleme hakkında bilgi için bkz. [OBJECT_ENTRY_AUTO](object-map-macros.md#object_entry_auto) .
 
-##  <a name="updateregistryclass"></a>  CComModule::UpdateRegistryClass
+##  <a name="updateregistryclass"></a>CComModule:: UpdateRegistryClass
 
-ATL 7. 0'den itibaren `CComModule` artık kullanılmıyor: bkz [ATL modül sınıfları](../../atl/atl-module-classes.md) daha fazla ayrıntı için.
+ATL 7,0 `CComModule` itibariyle artık kullanılmıyor: daha fazla ayrıntı için bkz. [ATL modül sınıfları](../../atl/atl-module-classes.md) .
 
 ```
 ATL_DEPRECATED HRESULT UpdateRegistryClass(
@@ -558,44 +558,44 @@ ATL_DEPRECATED HRESULT UpdateRegistryClass(
 
 ### <a name="parameters"></a>Parametreler
 
-*CLSID*<br/>
-Kayıtlı veya Kayıtsız CLSID nesne.
+*in*<br/>
+Kaydedilecek veya kaydı kaldırılacak nesnenin CLSID değeri.
 
 *lpszProgID*<br/>
 Nesneyle ilişkili ProgID.
 
 *lpszVerIndProgID*<br/>
-Sürümden bağımsız bir nesneyle ilişkili ProgID.
+Nesneyle ilişkili sürümden bağımsız ProgID.
 
-*nDescID*<br/>
-Nesnenin açıklamasını için dize kaynağı tanımlayıcısı.
+*Ndescıd*<br/>
+Nesnenin açıklamasına yönelik dize kaynağının tanımlayıcısı.
 
 *szDesc*<br/>
 Nesnenin açıklamasını içeren bir dize.
 
-*CertOpenStore*<br/>
-Kayıt defterinde girmek için iş parçacığı modelini belirtir. Olası değerler şunlardır: THREADFLAGS_APARTMENT, THREADFLAGS_BOTH veya AUTPRXFLAG.
+*dwFlags*<br/>
+Kayıt defterine girilecek iş parçacığı modelini belirtir. Olası değerler şunlardır THREADFLAGS_APARTMENT, THREADFLAGS_BOTH veya AUTPRXFLAG.
 
 *bRegister*<br/>
-Nesne kayıtlı olup olmadığını gösterir.
+Nesnenin kaydedilip edilmeyeceğini belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT değerini.
+Standart bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsa *bRegister* doğru ise, bu yöntem, sistem kayıt defterinde nesnenin standart sınıf kayıt girer.
+*BRegister* true ise, bu yöntem nesnenin standart sınıf kaydını sistem kayıt defterine girer.
 
-Varsa *bRegister* yanlış, nesnenin kaydını kaldırır.
+*BRegister* yanlış ise, nesnenin kaydını kaldırır.
 
-Değerine bağlı olarak *bRegister*, `UpdateRegistryClass` ya da çağırır [RegisterClassHelper](#registerclasshelper) veya [UnregisterClassHelper](#unregisterclasshelper).
+*BRegister*değerine bağlı olarak, `UpdateRegistryClass` [RegisterClassHelper](#registerclasshelper) ya da [UnregisterClassHelper](#unregisterclasshelper)' ı çağırır.
 
-Belirterek [DECLARE_REGISTRY](registry-macros.md#declare_registry) makro `UpdateRegistryClass` nesne haritanızı işlendiğinde otomatik olarak çağrılır.
+[DECLARE_REGISTRY](registry-macros.md#declare_registry) makrosunu belirterek, `UpdateRegistryClass` nesne haritanız işlendiğinde otomatik olarak çağrılacaktır.
 
-##  <a name="updateregistryfromresourced"></a>  CComModule::UpdateRegistryFromResourceD
+##  <a name="updateregistryfromresourced"></a>CComModule:: UpdateRegistryFromResourceD
 
-ATL 7. 0'den itibaren `CComModule` artık kullanılmıyor: bkz [ATL modül sınıfları](../../atl/atl-module-classes.md) daha fazla ayrıntı için.
+ATL 7,0 `CComModule` itibariyle artık kullanılmıyor: daha fazla ayrıntı için bkz. [ATL modül sınıfları](../../atl/atl-module-classes.md) .
 
 ```
 virtual HRESULT UpdateRegistryFromResourceD(
@@ -612,40 +612,40 @@ virtual HRESULT UpdateRegistryFromResourceD(
 ### <a name="parameters"></a>Parametreler
 
 *lpszRes*<br/>
-[in] Bir kaynak adı.
+'ndaki Bir kaynak adı.
 
-*nResID*<br/>
-[in] Bir kaynak kimliği
+*Nresd*<br/>
+'ndaki Kaynak KIMLIĞI.
 
 *bRegister*<br/>
-[in] Nesne kayıtlı olup olmadığını gösterir.
+'ndaki Nesnenin kaydedilip edilmeyeceğini belirtir.
 
 *pMapEntries*<br/>
-[in] Betiğin değiştirilebilir parametreler ile ilişkili değerleri depolamayı değiştirme eşlemesi için bir işaretçi. ATL otomatik olarak kullanan `%MODULE%`. Ek değiştirilebilir parametreler kullanmak için açıklamalar Ayrıntılar için bkz. Aksi takdirde, NULL varsayılan değeri kullanın.
+'ndaki Değiştirme eşlemesi için, betikle değiştirilebilen parametrelerle ilişkili değerleri depolayan bir işaretçi. ATL otomatik olarak `%MODULE%`kullanır. Ek değiştirilebilen parametreleri kullanmak için Ayrıntılar için açıklamalara bakın. Aksi takdirde, NULL varsayılan değerini kullanın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT değerini.
+Standart bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tarafından belirtilen kaynak yer alan komut dosyasını çalıştırır *lpszRes* veya *nResID*.
+*LpszRes* veya *nresd*tarafından belirtilen kaynakta bulunan betiği çalıştırır.
 
-Varsa *bRegister* doğru ise, bu yöntem nesnenin sistem kayıt defterine kaydeder; Aksi takdirde, nesnenin kaydını siler.
+*BRegister* true ise, bu yöntem nesneyi sistem kayıt defterine kaydeder; Aksi takdirde, nesnesinin kaydını siler.
 
-Belirterek [DECLARE_REGISTRY_RESOURCE](registry-macros.md#declare_registry_resource) veya [DECLARE_REGISTRY_RESOURCEID](registry-macros.md#declare_registry_resourceid) makro `UpdateRegistryFromResourceD` nesne haritanızı işlendiğinde otomatik olarak çağrılır.
-
-> [!NOTE]
->  Çalışma zamanında değiştirme değeri yerine koymak istediğiniz DECLARE_REGISTRY_RESOURCE veya DECLARE_REGISTRY_RESOURCEID makrosu belirtmeyin. Bunun yerine, bir dizi oluşturma `_ATL_REGMAP_ENTRIES` yapıları, burada her giriş içeren bir değişken yer tutucu eşleştirilmiş bir değerle çalışma zamanında yer tutucusunu değiştirin. Ardından çağırın `UpdateRegistryFromResourceD`, dizi geçirmek için *pMapEntries* parametresi. Bu değiştirme değeri ekler `_ATL_REGMAP_ENTRIES` yapılarını şirketinin değiştirme eşlemesi.
+[DECLARE_REGISTRY_RESOURCE](registry-macros.md#declare_registry_resource) veya [DECLARE_REGISTRY_RESOURCEID](registry-macros.md#declare_registry_resourceid) makrosunu belirterek, `UpdateRegistryFromResourceD` nesne haritanız işlendiğinde otomatik olarak çağrılacaktır.
 
 > [!NOTE]
->  ATL kayıt defteri bileşeni (Kaydedici) statik olarak bağlamak için bkz [UpdateRegistryFromResourceS](#updateregistryfromresources).
+>  Çalışma zamanında değiştirme değerlerini yerine koymak için DECLARE_REGISTRY_RESOURCE veya DECLARE_REGISTRY_RESOURCEID makrosunu belirtmeyin. Bunun yerine, her girdinin çalışma `_ATL_REGMAP_ENTRIES` zamanında yer tutucuyu değiştirecek bir değerle eşleştirilmiş bir değişken yer tutucusu içerdiği bir yapı dizisi oluşturun. Sonra, `UpdateRegistryFromResourceD` *pMapEntries* parametresi için diziyi geçirerek çağırın. Bu, `_ATL_REGMAP_ENTRIES` yapılardaki tüm değiştirme değerlerini kayıt sahibinin değiştirme eşlemesine ekler.
 
-Değiştirilebilir parametreler ve betik oluşturma hakkında daha fazla bilgi için bkz [ATL kayıt defteri bileşeni (Kaydedici)](../../atl/atl-registry-component-registrar.md).
+> [!NOTE]
+>  ATL kayıt defteri bileşeni (kaydedici) statik olarak bağlamak için bkz. [UpdateRegistryFromResourceS](#updateregistryfromresources).
 
-##  <a name="updateregistryfromresources"></a>  CComModule::UpdateRegistryFromResourceS
+Değiştirilebilir parametreler ve betik oluşturma hakkında daha fazla bilgi için, [atl kayıt defteri bileşeni (kaydedici)](../../atl/atl-registry-component-registrar.md)makalesine bakın.
 
-ATL 7. 0'den itibaren `CComModule` artık kullanılmıyor: bkz [ATL modül sınıfları](../../atl/atl-module-classes.md) daha fazla ayrıntı için.
+##  <a name="updateregistryfromresources"></a>CComModule:: UpdateRegistryFromResourceS
+
+ATL 7,0 `CComModule` itibariyle artık kullanılmıyor: daha fazla ayrıntı için bkz. [ATL modül sınıfları](../../atl/atl-module-classes.md) .
 
 ```
 virtual HRESULT UpdateRegistryFromResourceS(
@@ -662,32 +662,32 @@ virtual HRESULT UpdateRegistryFromResourceS(
 ### <a name="parameters"></a>Parametreler
 
 *lpszRes*<br/>
-[in] Bir kaynak adı.
+'ndaki Bir kaynak adı.
 
-*nResID*<br/>
-[in] Bir kaynak kimliği
+*Nresd*<br/>
+'ndaki Kaynak KIMLIĞI.
 
 *bRegister*<br/>
-[in] Kaynak betiği kayıtlı olup olmadığını gösterir.
+'ndaki Kaynak betiğin kaydedilip edilmeyeceğini belirtir.
 
 *pMapEntries*<br/>
-[in] Betiğin değiştirilebilir parametreler ile ilişkili değerleri depolamayı değiştirme eşlemesi için bir işaretçi. ATL otomatik olarak kullanan `%MODULE%`. Ek değiştirilebilir parametreler kullanmak için açıklamalar Ayrıntılar için bkz. Aksi takdirde, NULL varsayılan değeri kullanın.
+'ndaki Değiştirme eşlemesi için, betikle değiştirilebilen parametrelerle ilişkili değerleri depolayan bir işaretçi. ATL otomatik olarak `%MODULE%`kullanır. Ek değiştirilebilen parametreleri kullanmak için Ayrıntılar için açıklamalara bakın. Aksi takdirde, NULL varsayılan değerini kullanın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT değerini.
+Standart bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Benzer şekilde [UpdateRegistryFromResourceD](#updateregistryfromresourced) dışında `UpdateRegistryFromResourceS` ATL kayıt defteri bileşeni (Kaydedici) statik bir bağlantı oluşturur.
+UpdateRegistryFromResourceD`UpdateRegistryFromResourceS` benzeri [](#updateregistryfromresourced) , atl kayıt defteri bileşeni (kaydedici) için statik bir bağlantı oluşturur.
 
-`UpdateRegistryFromResourceS` Nesne haritanızı işlendiğinde, eklediğiniz sağlanan otomatik olarak çağrılacak `#define _ATL_STATIC_REGISTRY` , Stdafx.H'ye.
+`UpdateRegistryFromResourceS`, nesne eşlemeniz işlendiğinde, stbafx. h 'nize eklediğiniz `#define _ATL_STATIC_REGISTRY` zaman otomatik olarak çağrılır.
 
 > [!NOTE]
->  Çalışma zamanında değiştirme değeri yerine koymak istediğiniz belirtmeyin [DECLARE_REGISTRY_RESOURCE](registry-macros.md#declare_registry_resource) veya [DECLARE_REGISTRY_RESOURCEID](registry-macros.md#declare_registry_resourceid) makrosu. Bunun yerine, bir dizi oluşturma `_ATL_REGMAP_ENTRIES` yapıları, burada her giriş içeren bir değişken yer tutucu eşleştirilmiş bir değerle çalışma zamanında yer tutucusunu değiştirin. Ardından çağırın `UpdateRegistryFromResourceS`, dizi geçirmek için *pMapEntries* parametresi. Bu değiştirme değeri ekler `_ATL_REGMAP_ENTRIES` yapılarını şirketinin değiştirme eşlemesi.
+>  Çalışma zamanında değiştirme değerlerini yerine koymak için [DECLARE_REGISTRY_RESOURCE](registry-macros.md#declare_registry_resource) veya [DECLARE_REGISTRY_RESOURCEID](registry-macros.md#declare_registry_resourceid) makrosunu belirtmeyin. Bunun yerine, her girdinin çalışma `_ATL_REGMAP_ENTRIES` zamanında yer tutucuyu değiştirecek bir değerle eşleştirilmiş bir değişken yer tutucusu içerdiği bir yapı dizisi oluşturun. Sonra, `UpdateRegistryFromResourceS` *pMapEntries* parametresi için diziyi geçirerek çağırın. Bu, `_ATL_REGMAP_ENTRIES` yapılardaki tüm değiştirme değerlerini kayıt sahibinin değiştirme eşlemesine ekler.
 
-Değiştirilebilir parametreler ve betik oluşturma hakkında daha fazla bilgi için bkz [ATL kayıt defteri bileşeni (Kaydedici)](../../atl/atl-registry-component-registrar.md).
+Değiştirilebilir parametreler ve betik oluşturma hakkında daha fazla bilgi için, [atl kayıt defteri bileşeni (kaydedici)](../../atl/atl-registry-component-registrar.md)makalesine bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)
+[Sınıfa genel bakış](../../atl/atl-class-overview.md)

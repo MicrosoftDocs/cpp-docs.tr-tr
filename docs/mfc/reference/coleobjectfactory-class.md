@@ -1,5 +1,5 @@
 ---
-title: COleObjectFactory sınıfı
+title: Colet ObjectFactory sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - COleObjectFactory
@@ -36,16 +36,16 @@ helpviewer_keywords:
 - COleObjectFactory [MFC], VerifyLicenseKey
 - COleObjectFactory [MFC], VerifyUserLicense
 ms.assetid: ab179c1e-4af2-44aa-a576-37c48149b427
-ms.openlocfilehash: 25dce92f49ba9de08fcf33d54db8e97d520f5ea4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 22805550d13ecb400b151495363e5eda2dfb3b76
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62224396"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69503738"
 ---
-# <a name="coleobjectfactory-class"></a>COleObjectFactory sınıfı
+# <a name="coleobjectfactory-class"></a>Colet ObjectFactory sınıfı
 
-Sınıf sunucuları, Otomasyon nesneleri ve belgeler gibi OLE nesnelerini oluşturan üretecini uygular.
+Sunucular, Otomasyon nesneleri ve belgeler gibi OLE nesneleri oluşturan OLE sınıfı fabrikasını uygular.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -59,45 +59,45 @@ class COleObjectFactory : public CCmdTarget
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[COleObjectFactory::COleObjectFactory](#coleobjectfactory)|Oluşturur bir `COleObjectFactory` nesne.|
+|[Colet ObjectFactory:: Copaobjectfactory](#coleobjectfactory)|Bir `COleObjectFactory` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[COleObjectFactory::GetClassID](#getclassid)|OLE döndürür sınıfı oluşturur bu üretecin nesne kimliği.|
-|[COleObjectFactory::IsLicenseValid](#islicensevalid)|Denetimin Lisans geçerli olup olmadığını belirler.|
-|[COleObjectFactory::IsRegistered](#isregistered)|Nesne üreteci OLE sistem DLL'lerini kayıtlı olup olmadığını gösterir.|
-|[COleObjectFactory::Register](#register)|Bu nesne üreteci OLE sistem DLL'lerini kaydeder.|
-|[COleObjectFactory::RegisterAll](#registerall)|Uygulamanın nesne fabrikaları tüm OLE sistem DLL'lerini kaydeder.|
-|[COleObjectFactory::Revoke](#revoke)|OLE sistem DLL'lerini ile bu nesne fabrikasının kaydı iptal eder.|
-|[COleObjectFactory::RevokeAll](#revokeall)|OLE sistem DLL'lerini uygulamanın nesne fabrikaları kayıtlarla iptal eder.|
-|[COleObjectFactory::UnregisterAll](#unregisterall)|Tüm uygulama nesnesi fabrikaları kaydını siler.|
-|[COleObjectFactory::UpdateRegistry](#updateregistry)|Bu nesne üreteci OLE sistem kayıt defteri ile kaydeder.|
-|[COleObjectFactory::UpdateRegistryAll](#updateregistryall)|Uygulamanın nesne fabrikaları tüm OLE sistem kayıt defteri ile kaydeder.|
+|[Colet ObjectFactory:: GetClassID](#getclassid)|Bu fabrika tarafından oluşturulan nesnelerin OLE sınıf KIMLIĞINI döndürür.|
+|[Colet ObjectFactory:: IsLicenseValid](#islicensevalid)|Denetimin lisansının geçerli olup olmadığını belirler.|
+|[Colet ObjectFactory:: IsRegistered](#isregistered)|Nesne fabrikasının OLE sistem dll 'Lerine kaydedilip kaydedilmediğini belirtir.|
+|[Colet ObjectFactory:: Register](#register)|Bu nesne fabrikasını OLE sistem dll 'Leriyle kaydeder.|
+|[Colet ObjectFactory:: RegisterAll](#registerall)|Tüm uygulamanın nesne fabrikalarını OLE sistem dll 'Leriyle kaydeder.|
+|[Colet ObjectFactory:: Revoke](#revoke)|Bu nesne fabrikasının kaydını OLE sistem dll 'Leriyle iptal eder.|
+|[Cokerobjectfactory:: Iptal edildi](#revokeall)|OLE sistem dll 'Leriyle bir uygulamanın nesne fabrikaları kayıtlarını iptal eder.|
+|[Colet ObjectFactory:: UnregisterAll](#unregisterall)|Uygulamanın nesne fabrikalarının tümünün kaydını siler.|
+|[Colet ObjectFactory:: UpdateRegistry](#updateregistry)|Bu nesne fabrikasını OLE sistem kayıt defteriyle kaydeder.|
+|[Colet ObjectFactory:: öğenize kaydedilecektir](#updateregistryall)|Uygulamanın tüm nesne fabrikalarını OLE sistem kayıt defteriyle kaydeder.|
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[COleObjectFactory::GetLicenseKey](#getlicensekey)|Benzersiz bir anahtar denetimin DLL'den ister.|
-|[COleObjectFactory::OnCreateObject](#oncreateobject)|Bu fabrikasının türünde yeni bir nesne oluşturmak için framework tarafından çağırılır.|
-|[COleObjectFactory::VerifyLicenseKey](#verifylicensekey)|Katıştırılmış denetime anahtar kapsayıcısında katıştırılmış anahtar eşleştiğini doğrular.|
-|[COleObjectFactory::VerifyUserLicense](#verifyuserlicense)|Denetim tasarım zamanı kullanım için lisanslanmıştır doğrular.|
+|[Colet ObjectFactory:: GetLicenseKey](#getlicensekey)|Denetimin DLL 'sinden benzersiz bir anahtar ister.|
+|[Colet ObjectFactory:: OnCreateObject](#oncreateobject)|Bu fabrika türünün yeni bir nesnesini oluşturmak için Framework tarafından çağırılır.|
+|[Colet ObjectFactory:: VerifyLicenseKey](#verifylicensekey)|Denetimde gömülü anahtarın, kapsayıcıda gömülü anahtarla eşleştiğini doğrular.|
+|[Colet ObjectFactory:: VerifyUserLicense](#verifyuserlicense)|Denetimin tasarım zamanı kullanımı için lisanslandığını doğrular.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`COleObjectFactory` Sınıfın üye işlevleri, aşağıdaki işlevleri gerçekleştirmek için vardır:
+`COleObjectFactory` Sınıfında aşağıdaki işlevleri gerçekleştirmek için üye işlevleri vardır:
 
-- Nesneleri kaydını yönetme.
+- Nesnelerin kaydını yönetme.
 
-- OLE nesneleri çalıştırıyorsanız ve iletileri almaya hazır bildirir çalışma zamanı kayıt yanı sıra OLE sistemin yazmaç güncelleştiriliyor.
+- OLE sistem yazmacın yanı sıra OLE 'nin nesnelerin çalıştığını ve iletileri almaya hazırlandığını bildiren çalışma zamanı kaydını güncelleştirme.
 
-- Tasarım zamanında lisanslı geliştiriciler ve lisanslı uygulamalar çalışma zamanında denetim kullanımını sınırlayarak lisans zorlama.
+- Denetim kullanımını, tasarım zamanında lisanslanmış geliştiriciler ve çalışma zamanında lisanslanmış uygulamalar ile sınırlayarak lisanslamayı zorunlu tutma.
 
-- Denetim nesnesi fabrikaları OLE sistem kayıt defteri ile kaydediliyor.
+- Denetim nesnesi fabrikalarını OLE sistem kayıt defteriyle kaydetme.
 
-Nesne oluşturma hakkında daha fazla bilgi için makalelere göz atın [veri nesneleri ve veri kaynakları (OLE)](../../mfc/data-objects-and-data-sources-ole.md) ve [veri nesneleri ve veri kaynakları: Oluşturma ve yok etme](../../mfc/data-objects-and-data-sources-creation-and-destruction.md). Kayıt hakkında daha fazla bilgi için bkz [kayıt](../../mfc/registration.md).
+Nesne oluşturma hakkında daha fazla bilgi için bkz. Makaleler [veri nesneleri ve veri kaynakları (OLE)](../../mfc/data-objects-and-data-sources-ole.md) ve [veri nesneleri ve veri kaynakları: Oluşturma ve yok](../../mfc/data-objects-and-data-sources-creation-and-destruction.md)etme. Kayıt hakkında daha fazla bilgi için bkz. Makale [kaydı](../../mfc/registration.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -109,11 +109,11 @@ Nesne oluşturma hakkında daha fazla bilgi için makalelere göz atın [veri ne
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxdisp.h
+**Üstbilgi:** AfxDisp. h
 
-##  <a name="coleobjectfactory"></a>  COleObjectFactory::COleObjectFactory
+##  <a name="coleobjectfactory"></a>Colet ObjectFactory:: Copaobjectfactory
 
-Oluşturur bir `COleObjectFactory` nesnesi, bir kaydı nesne üreteci başlatır ve fabrikaları listesine ekler.
+Bir `COleObjectFactory` nesne oluşturur, bunu, kaydı silinen nesne fabrikası olarak başlatır ve fabrika listesine ekler.
 
 ```
 COleObjectFactory(
@@ -132,40 +132,40 @@ COleObjectFactory(
 
 ### <a name="parameters"></a>Parametreler
 
-*CLSID*<br/>
-OLE sınıf kimliği bu nesne üreteci başvuruyu temsil eder.
+*in*<br/>
+Bu nesne fabrikası temsil eden OLE sınıf KIMLIĞINE başvuru.
 
 *pRuntimeClass*<br/>
-Bu fabrika oluşturabilirsiniz C++ nesnelerin çalışma zamanı sınıf işaretçisi.
+Bu fabrikaya ait oluşturabileceğiniz C++ nesnelerin çalışma zamanı sınıfına yönelik işaretçi.
 
-*Bmultiınstance*<br/>
-Tek bir örnek uygulamanın birden çok örneklemesini destekleyip desteklemediğini gösterir. TRUE ise bir nesne oluşturmak için her istek için uygulamanın birden fazla örneği başlatılabilir.
+*Oluşturucusuna bmultiınstance*<br/>
+Uygulamanın tek bir örneğinin birden çok örneklemesini destekleyip desteklemediğini gösterir. TRUE ise, her bir nesne oluşturma isteği için uygulamanın birden çok örneği başlatılır.
 
 *nFlags*<br/>
-Bir veya daha fazla aşağıdaki bayraklar içerir:
+Aşağıdaki bayraklardan birini veya daha fazlasını içerir:
 
-- `afxRegDefault` ThreadingModel için iş parçacığı modeli ayarlar Grup =.
+- `afxRegDefault`İş parçacığı modelini ThreadingModel = Apartment olarak ayarlar.
 
-- `afxRegInsertable` Denetimin görünür izin **Nesne Ekle** OLE nesneleri için iletişim kutusu.
+- `afxRegInsertable`OLE nesneleri için **nesne Ekle** iletişim kutusunda denetimin görünmesine izin verir.
 
-- `afxRegApartmentThreading` İş parçacığı modeli ThreadingModel kayıt defterindeki ayarlar Grup =.
+- `afxRegApartmentThreading`Kayıt defterindeki iş parçacığı modelini ThreadingModel = Apartment olarak ayarlar.
 
-- `afxRegFreeThreading` İş parçacığı modeli ThreadingModel kayıt defterindeki ayarlar ücretsiz =.
+- `afxRegFreeThreading`Kayıt defterindeki iş parçacığı modelini ThreadingModel = ücretsiz olarak ayarlar.
 
-   İki bayrak birleştirebilirsiniz `afxRegApartmentThreading` ve `afxRegFreeThreading` ThreadingModel ayarlamak için her ikisi =. Bkz: [Inprocserver32](/windows/desktop/com/inprocserver32) model kaydı iş parçacığı oluşturma hakkında daha fazla bilgi için Windows SDK.
+   İki bayrağı `afxRegApartmentThreading` birleştirebilir ve `afxRegFreeThreading` ThreadingModel = both olarak ayarlayabilirsiniz. İş parçacığı modeli kaydı hakkında daha fazla bilgi için Windows SDK [ınprocserver32](/windows/win32/com/inprocserver32) bakın.
 
 *lpszProgID*<br/>
-"Microsoft Excel" gibi bir sözlü program tanımlayıcı içeren bir dize işaretçisi
+"Microsoft Excel" gibi bir Vere program tanımlayıcısı içeren bir dizeye yönelik işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Nesne kullanmak için ancak kaydetmelisiniz.
+Ancak, nesnesini kullanmak için kaydetmeniz gerekir.
 
-Daha fazla bilgi için [CLSID anahtar](/windows/desktop/com/clsid-key-hklm) Windows SDK.
+Daha fazla bilgi için Windows SDK [CLSID anahtarı](/windows/win32/com/clsid-key-hklm) bölümüne bakın.
 
-##  <a name="getclassid"></a>  COleObjectFactory::GetClassID
+##  <a name="getclassid"></a>Colet ObjectFactory:: GetClassID
 
-Bu üretecini temsil eder OLE sınıf kimliği için bir başvuru döndürür.
+Bu fabrika 'nin gösterdiği OLE sınıf KIMLIĞINE bir başvuru döndürür.
 
 ```
 REFCLSID GetClassID() const;
@@ -173,15 +173,15 @@ REFCLSID GetClassID() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-OLE sınıf kimliği bu Fabrika başvuruyu temsil eder.
+Bu fabrika 'nin gösterdiği OLE sınıf KIMLIĞINE başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için [CLSID anahtar](/windows/desktop/com/clsid-key-hklm) Windows SDK.
+Daha fazla bilgi için Windows SDK [CLSID anahtarı](/windows/win32/com/clsid-key-hklm) bölümüne bakın.
 
-##  <a name="getlicensekey"></a>  COleObjectFactory::GetLicenseKey
+##  <a name="getlicensekey"></a>Colet ObjectFactory:: GetLicenseKey
 
-Denetimin DLL'den benzersiz lisans anahtarı ister ve onu işaret ettiği BSTR depolar *pbstrKey*.
+Denetimin DLL 'sinden benzersiz bir lisans anahtarı ister ve bunu *Pbstrkey*tarafından Işaret edilen BSTR 'de depolar.
 
 ```
 virtual BOOL GetLicenseKey(
@@ -191,23 +191,23 @@ virtual BOOL GetLicenseKey(
 
 ### <a name="parameters"></a>Parametreler
 
-*dwReserved*<br/>
+*Dwayrýlmýþ*<br/>
 Daha sonraki kullanımlar için ayrılmıştır.
 
 *pbstrKey*<br/>
-Lisans anahtarı depolayacak BSTR işaretçisi.
+Lisans anahtarını depolayacak bir BSTR işaretçisine işaret eder.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Lisans anahtarı dizesi boş değilse sıfır; Aksi durumda 0.
+Lisans anahtarı dizesi NULL değilse sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev varsayılan uygulamasını 0 döndürür ve hiçbir şey BSTR içinde depolar. MFC ActiveX ControlWizard projenizi oluşturmak için kullanıyorsanız, denetimin lisans anahtarı alır. bir geçersiz kılma ControlWizard sağlar.
+Bu işlevin varsayılan uygulanması 0 döndürür ve BSTR 'de hiçbir şey depolar. Projenizi oluşturmak için MFC ActiveX ControlWizard kullanırsanız, ControlWizard denetimin lisans anahtarını alan bir geçersiz kılma sağlar.
 
-##  <a name="islicensevalid"></a>  COleObjectFactory::IsLicenseValid
+##  <a name="islicensevalid"></a>Colet ObjectFactory:: IsLicenseValid
 
-Denetimin Lisans geçerli olup olmadığını belirler.
+Denetimin lisansının geçerli olup olmadığını belirler.
 
 ```
 BOOL IsLicenseValid();
@@ -215,11 +215,11 @@ BOOL IsLicenseValid();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-TRUE ise başarılı; Aksi durumda false.
+Başarılı olursa doğru; Aksi halde yanlış.
 
-##  <a name="isregistered"></a>  COleObjectFactory::IsRegistered
+##  <a name="isregistered"></a>Colet ObjectFactory:: IsRegistered
 
-OLE sistem DLL'lerini Fabrika kayıtlıysa, sıfır olmayan bir değer döndürür.
+Fabrika, OLE sistem dll 'Leriyle kayıtlıysa sıfır dışında bir değer döndürür.
 
 ```
 virtual BOOL IsRegistered() const;
@@ -227,11 +227,11 @@ virtual BOOL IsRegistered() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Fabrika kayıtlı olursa sıfır dışı; Aksi durumda 0.
+Fabrika kayıtlıysa sıfır dışı; Aksi takdirde 0.
 
-##  <a name="oncreateobject"></a>  COleObjectFactory::OnCreateObject
+##  <a name="oncreateobject"></a>Colet ObjectFactory:: OnCreateObject
 
-Yeni bir nesne oluşturmak için framework tarafından çağırılır.
+Yeni bir nesne oluşturmak için Framework tarafından çağırılır.
 
 ```
 virtual CCmdTarget* OnCreateObject();
@@ -239,15 +239,15 @@ virtual CCmdTarget* OnCreateObject();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Oluşturulan nesneye bir işaretçi. Başarısız olursa, yetersiz bellek özel durum.
+Oluşturulan nesneye yönelik bir işaretçi. Başarısız olursa bir bellek özel durumu oluşturabilir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Başka bir nesne oluşturmak için bu işlevi geçersiz kılma [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) oluşturucuya geçirilen.
+Oluşturucuya geçirilen [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) dışında bir nesne oluşturmak için bu işlevi geçersiz kılın.
 
-##  <a name="register"></a>  COleObjectFactory::Register
+##  <a name="register"></a>Colet ObjectFactory:: Register
 
-Bu nesne üreteci OLE sistem DLL'lerini kaydeder.
+Bu nesne fabrikasını OLE sistem dll 'Leriyle kaydeder.
 
 ```
 virtual BOOL Register();
@@ -255,15 +255,15 @@ virtual BOOL Register();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Fabrika başarıyla kaydettirildi olursa sıfır dışı; Aksi durumda 0.
+Fabrika başarıyla kaydedilmişse sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlevin genellikle çağıran [CWinApp::InitInstance](../../mfc/reference/cwinapp-class.md#initinstance) uygulamanın ne zaman başlatılır.
+Bu işlev genellikle, uygulama başlatıldığında [CWinApp:: InitInstance](../../mfc/reference/cwinapp-class.md#initinstance) tarafından çağırılır.
 
-##  <a name="registerall"></a>  COleObjectFactory::RegisterAll
+##  <a name="registerall"></a>Colet ObjectFactory:: RegisterAll
 
-Uygulamanın nesne fabrikaları tüm OLE sistem DLL'lerini kaydeder.
+Uygulamanın tüm nesne fabrikalarını OLE sistem dll 'Leriyle kaydeder.
 
 ```
 static BOOL PASCAL RegisterAll();
@@ -271,15 +271,15 @@ static BOOL PASCAL RegisterAll();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Fabrikalar başarıyla kaydoldunuz olursa sıfır dışı; Aksi durumda 0.
+Fabrikalar başarıyla kaydedilmişse sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlevin genellikle çağıran [CWinApp::InitInstance](../../mfc/reference/cwinapp-class.md#initinstance) uygulamanın ne zaman başlatılır.
+Bu işlev genellikle, uygulama başlatıldığında [CWinApp:: InitInstance](../../mfc/reference/cwinapp-class.md#initinstance) tarafından çağırılır.
 
-##  <a name="revoke"></a>  COleObjectFactory::Revoke
+##  <a name="revoke"></a>Colet ObjectFactory:: Revoke
 
-OLE sistem DLL'lerini ile bu nesne fabrikasının kaydı iptal eder.
+Bu nesne fabrikasının kaydını OLE sistem dll 'Leriyle iptal eder.
 
 ```
 void Revoke();
@@ -287,11 +287,11 @@ void Revoke();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Uygulama sonlandırılmadan önce framework otomatik olarak bu işlevi çağırır. Gerekirse, geçersiz kılma çağrısından [CWinApp::ExitInstance](../../mfc/reference/cwinapp-class.md#exitinstance).
+Çerçeve, uygulama sonlandırılmadan önce bu işlevi otomatik olarak çağırır. Gerekirse, bunu bir [CWinApp:: ExitInstance](../../mfc/reference/cwinapp-class.md#exitinstance)geçersiz kıldığından çağırın.
 
-##  <a name="revokeall"></a>  COleObjectFactory::RevokeAll
+##  <a name="revokeall"></a>Cokerobjectfactory:: Iptal edildi
 
-Tüm OLE sistem DLL'lerini uygulamanın nesne fabrikaları kayıtlarla iptal eder.
+OLE sistem dll 'Leri ile tüm uygulamanın nesne fabrikası kayıtlarını iptal eder.
 
 ```
 static void PASCAL RevokeAll();
@@ -299,11 +299,11 @@ static void PASCAL RevokeAll();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Uygulama sonlandırılmadan önce framework otomatik olarak bu işlevi çağırır. Gerekirse, geçersiz kılma çağrısından [CWinApp::ExitInstance](../../mfc/reference/cwinapp-class.md#exitinstance).
+Çerçeve, uygulama sonlandırılmadan önce bu işlevi otomatik olarak çağırır. Gerekirse, bunu bir [CWinApp:: ExitInstance](../../mfc/reference/cwinapp-class.md#exitinstance)geçersiz kıldığından çağırın.
 
-##  <a name="unregisterall"></a>  COleObjectFactory::UnregisterAll
+##  <a name="unregisterall"></a>Colet ObjectFactory:: UnregisterAll
 
-Tüm uygulama nesnesi fabrikaları kaydını siler.
+Uygulamanın nesne fabrikalarının tümünün kaydını siler.
 
 ```
 static BOOL PASCAL UnregisterAll();
@@ -311,11 +311,11 @@ static BOOL PASCAL UnregisterAll();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa TRUE; Aksi durumda FALSE.
+Başarılı olursa doğru; Aksi halde yanlış.
 
-##  <a name="updateregistry"></a>  COleObjectFactory::UpdateRegistry
+##  <a name="updateregistry"></a>Colet ObjectFactory:: UpdateRegistry
 
-Uygulamanın nesne fabrikaları tüm OLE sistem kayıt defteri ile kaydeder.
+Uygulamanın tüm nesne fabrikalarını OLE sistem kayıt defteriyle kaydeder.
 
 ```
 void UpdateRegistry(LPCTSTR lpszProgID = NULL);
@@ -325,24 +325,24 @@ virtual BOOL UpdateRegistry(BOOL bRegister);
 ### <a name="parameters"></a>Parametreler
 
 *lpszProgID*<br/>
-"Excel.Document.5." gibi bir kullanıcı tarafından okunabilen program tanımlayıcısını içeren bir dize işaretçisi
+"Excel. Document. 5" gibi, insan tarafından okunabilen program tanımlayıcısını içeren bir dizeye yönelik işaretçi.
 
 *bRegister*<br/>
-Denetim sınıfın nesne üreteci kaydedilecek olup olmadığını belirler.
+Denetim sınıfının nesne fabrikasının kaydedilip edilmeyeceğini belirler.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev için iki biçim kısa tartışmalar izleyin:
+Bu işlevin iki formu için kısa tartışmalar şunları izler:
 
-- **UpdateRegistry (** `lpszProgID` **)** OLE sistem kayıt defteri ile bu nesne üreteci kaydeder. Bu işlevin genellikle çağıran [CWinApp::InitInstance](../../mfc/reference/cwinapp-class.md#initinstance) uygulamanın ne zaman başlatılır.
+- **UpdateRegistry (** `lpszProgID` **)** , bu nesne fabrikasını OLE sistem kayıt defteriyle kaydeder. Bu işlev genellikle, uygulama başlatıldığında [CWinApp:: InitInstance](../../mfc/reference/cwinapp-class.md#initinstance) tarafından çağırılır.
 
-- **UpdateRegistry (** `bRegister` **)** bu işlev geçersiz kılınabilir şeklidir. Varsa *bRegister* true, denetim sınıf sistem kayıt defteri ile bu işlevi kaydeder. Aksi takdirde, sınıf kaydını siler.
+- **UpdateRegistry (** `bRegister` **)** işlevin bu biçimi geçersiz kılınabilir. *BRegister* true ise, bu işlev denetim sınıfını sistem kayıt defteriyle kaydeder. Aksi takdirde, sınıfının kaydını siler.
 
-   MFC ActiveX ControlWizard projenizi oluşturmak için kullanıyorsanız, bu saf sanal işlevi geçersiz kılma ControlWizard sağlar.
+   Projenizi oluşturmak için MFC ActiveX ControlWizard kullanırsanız, ControlWizard bu saf sanal işleve bir geçersiz kılma sağlar.
 
-##  <a name="updateregistryall"></a>  COleObjectFactory::UpdateRegistryAll
+##  <a name="updateregistryall"></a>Colet ObjectFactory:: öğenize kaydedilecektir
 
-Uygulamanın nesne fabrikaları tüm OLE sistem kayıt defteri ile kaydeder.
+Uygulamanın tüm nesne fabrikalarını OLE sistem kayıt defteriyle kaydeder.
 
 ```
 static BOOL PASCAL UpdateRegistryAll(BOOL bRegister = TRUE);
@@ -351,19 +351,19 @@ static BOOL PASCAL UpdateRegistryAll(BOOL bRegister = TRUE);
 ### <a name="parameters"></a>Parametreler
 
 *bRegister*<br/>
-Denetim sınıfın nesne üreteci kaydedilecek olup olmadığını belirler.
+Denetim sınıfının nesne fabrikasının kaydedilip edilmeyeceğini belirler.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Fabrikalar başarıyla güncellendi olursa sıfır dışı; Aksi durumda 0.
+Fabrikalar başarıyla güncelleştirilirse sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlevin genellikle çağıran [CWinApp::InitInstance](../../mfc/reference/cwinapp-class.md#initinstance) uygulamanın ne zaman başlatılır.
+Bu işlev genellikle, uygulama başlatıldığında [CWinApp:: InitInstance](../../mfc/reference/cwinapp-class.md#initinstance) tarafından çağırılır.
 
-##  <a name="verifylicensekey"></a>  COleObjectFactory::VerifyLicenseKey
+##  <a name="verifylicensekey"></a>Colet ObjectFactory:: VerifyLicenseKey
 
-OLE denetim kullanmak için kapsayıcı lisanslanır doğrular.
+Kapsayıcının OLE denetimini kullanmak için lisanslandığını doğrular.
 
 ```
 virtual BOOL VerifyLicenseKey(BSTR bstrKey);
@@ -372,23 +372,23 @@ virtual BOOL VerifyLicenseKey(BSTR bstrKey);
 ### <a name="parameters"></a>Parametreler
 
 *bstrKey*<br/>
-Lisans dize kapsayıcının sürümünü depolamak BSTR.
+Kapsayıcının lisans dizesinin sürümünü depolayan bir BSTR.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Çalışma zamanı lisansı geçerli ise sıfır olmayan; Aksi durumda 0.
+Çalışma zamanı lisansı geçerliyse sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan sürüm çağrıları [GetLicenseKey](#getlicensekey) denetimin bir kopyasını almak için kullanıcının lisans dize ve dize ile karşılaştırır *bstrKey*. İki dizenin eşleşirse, işlev sıfır olmayan bir değer döndürür; Aksi takdirde 0 değerini döndürür.
+Varsayılan sürüm, denetimin lisans dizesinin bir kopyasını almak için [GetLicenseKey](#getlicensekey) ' i çağırır ve bunu *bstrKey*içindeki dizeyle karşılaştırır. İki dize eşleşiyorsa, işlev sıfır dışında bir değer döndürür; Aksi takdirde 0 döndürür.
 
-Özelleştirilmiş lisans sağlamak için bu işlevi geçersiz kılabilirsiniz.
+Lisansın özelleştirilmiş doğrulanmasını sağlamak için bu işlevi geçersiz kılabilirsiniz.
 
-İşlev [VerifyUserLicense](#verifyuserlicense) tasarım zamanı lisansı doğrular.
+[VerifyUserLicense](#verifyuserlicense) işlevi tasarım zamanı lisansını doğrular.
 
-##  <a name="verifyuserlicense"></a>  COleObjectFactory::VerifyUserLicense
+##  <a name="verifyuserlicense"></a>Colet ObjectFactory:: VerifyUserLicense
 
-OLE denetimi tasarım zamanı lisansı doğrular.
+OLE denetimi için tasarım zamanı lisansını doğrular.
 
 ```
 virtual BOOL VerifyUserLicense();
@@ -396,7 +396,7 @@ virtual BOOL VerifyUserLicense();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Tasarım zamanı lisansı geçerli ise sıfır olmayan; Aksi durumda 0.
+Tasarım zamanı lisansı geçerliyse sıfır dışı; Aksi takdirde 0.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

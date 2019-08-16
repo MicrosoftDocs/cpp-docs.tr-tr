@@ -3,99 +3,99 @@ title: Windows Çalışma Zamanı C++ Şablon Kitaplığı (WRL)
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: b915afce-553b-44a7-b8dc-0ab601758eb0
-ms.openlocfilehash: 5c1a4e7df424499f400dbd70d675956deef6bc5d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ee3414968e5d619d640d8cdac981741aecb2316c
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62404604"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69500388"
 ---
 # <a name="windows-runtime-c-template-library-wrl"></a>Windows Çalışma Zamanı C++ Şablon Kitaplığı (WRL)
 
-Windows çalışma zamanı C++ Şablon kitaplığı (WRL) yazıp Windows çalışma zamanı bileşenlerini kullanmanın alt düzey bir yolunu sağlayan bir şablon kitaplığıdır.
+Windows Çalışma Zamanı C++ şablon kitaplığı (WRL), Windows çalışma zamanı bileşenleri yazmak ve kullanmak için alt düzey bir yol sağlayan bir şablon kitaplığıdır.
 
 > [!NOTE]
-> WRL tarafından değiştirilen artık C++/WinRT, standart C ++ 17 dil projeksiyon Windows Runtime API'ları için. C++/ WinRT Windows 10 SDK sürüm 1803 ileriye doğru kullanıma sunulmuştur. C++/ WinRT, üst bilgi dosyalarını tamamen uygulanan ve modern Windows API ile birinci sınıf erişim sağlayacak şekilde tasarlanmıştır.
+> WRL 'nin artık Windows Çalışma Zamanı API C++'leri için standart bir c++ 17 dil projeksiyonu olan/wınrt tarafından değiştirildi. C++/Wınrt, sürüm 1803 ' den Windows 10 SDK ' da kullanılabilir. C++/Wınrt tamamen başlık dosyalarında uygulanır ve modern Windows API 'sine ilk sınıf erişim sağlamak için tasarlanmıştır.
 >
-> İle C++/WinRT, size hem kullanabilir ve Windows çalışma zamanı API'leri kullanarak tüm standartlara uyumlu C ++ 17 derleyici yazar. C++/ WinRT, genellikle daha iyi gerçekleştirir ve Windows çalışma zamanı için diğer bir dil seçeneği değerinden daha küçük ikili dosyaları üretir. Biz C + desteklemeye devam edecektir +/ CX ve WRL, ancak yüksek yeni uygulama C + kullanmanız +/ WinRT. Daha fazla bilgi için [ C++/WinRT](https://docs.microsoft.com/windows/uwp/cpp-and-winrt-apis/index).
+> /Wınrt ile C++, standartlara uyumlu c++ 17 derleyicisini kullanarak Windows çalışma zamanı API 'leri hem tüketin hem de yazabilirsiniz. C++/Wınrt genellikle daha iyi gerçekleştirir ve Windows Çalışma Zamanı diğer dil seçeneklerinden daha küçük ikili dosyalar üretir. /CX ve WRL 'yi C++desteklemeye devam edeceğiz, ancak yeni uygulamaların/Winrtı kullanmasını C++önemle tavsiye ederiz. Daha fazla bilgi için bkz [ C++./wınrt](https://docs.microsoft.com/windows/uwp/cpp-and-winrt-apis/index).
 
 ## <a name="benefits"></a>Yararları
 
-Windows çalışma zamanı C++ Şablon Kitaplığı daha kolay uygulamanızı ve Bileşen Nesne Modeli (COM) bileşenlerini kullanmasını sağlar. Bu nesnelerin ömrünü yönetmek için başvuru sayımı ve bir işlemi başarılı veya başarısız olduğunu belirlemek için HRESULT değerleri test etme gibi temizlik teknikleri sunar. Başarıyla Windows çalışma zamanı C++ Şablon kitaplığı kullanmak için bu kuralları ve teknikleri dikkatle izlemeniz gerekir.
+Windows Çalışma Zamanı C++ şablon kitaplığı, bileşen nesne MODELI (com) bileşenlerini daha kolay bir şekilde uygulamanıza ve kullanmanıza olanak sağlar. Bu, nesnelerin ömrünü yönetmek ve bir işlemin başarılı veya başarısız olup olmadığını anlamak üzere HRESULT değerlerini test etmek için başvuru sayımı gibi temizlik tekniklerini sağlar. Windows Çalışma Zamanı C++ şablonu kitaplığını başarıyla kullanmak için bu kuralları ve teknikleri dikkatle izlemeniz gerekir.
 
-C++/CX, Windows çalışma zamanı bileşenlerini kullanmak için üst düzey, dile dayanan bir yoludur. Her iki, bir Windows çalışma zamanı C++ Şablon kitaplığı ve C++/CX temizlik görevlerini adınıza otomatik olarak gerçekleştirerek Windows çalışma zamanı için kod yazımını basitleştirir.
+C++/CX Windows çalışma zamanı bileşenleri kullanmanın yüksek düzey, dil tabanlı bir yoludur. Hem Windows Çalışma Zamanı C++ şablon kitaplığı hem C++de/CX, sizin adınıza otomatik olarak görevleri gerçekleştirerek Windows çalışma zamanı kod yazmayı basitleştirir.
 
-Windows çalışma zamanı C++ Şablon kitaplığı ve C++/CX farklı avantajları sunar. Windows çalışma zamanı C++ Şablon kitaplığı C + yerine kullanmak istemenize Bazı nedenlerle +/ CX:
+Windows Çalışma Zamanı C++ şablon kitaplığı ve C++/CX farklı avantajlar sağlar. Aşağıda, C++ C++/CX yerine Windows çalışma zamanı şablon kitaplığını kullanmak isteyebileceğiniz bazı nedenler verilmiştir:
 
-- Windows çalışma zamanı C++ Şablon kitaplığı çok az soyutlama Windows çalışma zamanı uygulama ikili arabirimi (ABI üzerinden) ekler, size temel kodu daha iyi kontrol etme becerisinin oluşturabilir veya Windows çalışma zamanı API'leri.
+- Windows Çalışma Zamanı C++ şablon kitaplığı, Windows çalışma zamanı uygulama ikili ARABIRIMINE (ABI) kısa soyutlama ekler ve bu sayede, Windows çalışma zamanı API 'leri daha iyi oluşturmak veya kullanmak için temel kodu denetlemenize olanak tanır.
 
-- C++/CX COM HRESULT değerlerini özel durumlar olarak temsil eder. COM veya özel durumlar kullanmayan bir kullanan bir kod tabanına devraldıysanız, Windows çalışma zamanı C++ Şablon kitaplığı özel durumlar kullanmak durumunda olmadığınızdan dolayı Windows çalışma zamanı ile çalışmak için daha doğal bir yol olduğunu fark edebilirsiniz.
+- C++/CX, COM HRESULT değerlerini özel durumlar olarak temsil eder. COM kullanan veya özel durum kullanmayan bir kod tabanı devraldıysanız, özel durumları kullanmak zorunda olmadığınızdan Windows Çalışma Zamanı C++ şablon kitaplığının Windows çalışma zamanı ile çalışması için daha doğal bir yol olduğunu fark edebilirsiniz.
 
    > [!NOTE]
-   > Windows çalışma zamanı C++ Şablon kitaplığı HRESULT değerleri kullanır ve özel durum oluşturmaz. Ayrıca, uygulama kodunuz bir özel durum oluşturduğunda nesnelerin düzgün şekilde yok edileceğini garanti etmeye yardımcı olmak için akıllı işaretçiler ve RAII deseni Windows çalışma zamanı C++ Şablon kitaplığı kullanır. Akıllı işaretçiler ve RAII hakkında daha fazla bilgi için bkz. [akıllı işaretçiler](../../cpp/smart-pointers-modern-cpp.md) ve [nesneleri kendi kaynakları (RAII)](../../cpp/objects-own-resources-raii.md).
+   > Windows Çalışma Zamanı C++ şablon kitaplığı HRESULT değerlerini kullanır ve özel durum oluşturmaz. Ayrıca, Windows Çalışma Zamanı C++ şablon kitaplığı, uygulama kodunuz bir özel durum oluşturduğunda nesnelerin doğru şekilde yok edilmesinin sağlanmasına yardımcı olması için akıllı işaretçiler ve rampaya da caii modelini kullanır. Akıllı işaretçiler ve Rat 'lar hakkında daha fazla bilgi için bkz. [Smart işaretçiler](../../cpp/smart-pointers-modern-cpp.md) ve [nesneler (çii)](../../cpp/objects-own-resources-raii.md).
 
-- Ürününün amaç ve tasarımında, Windows çalışma zamanı C++ Şablon kitaplığı ilham Etkin Şablon kitaplığı (ATL tarafından), COM nesneleri programlamayı kolaylaştıran şablon tabanlı C++ sınıfları kümesi olduğu. Windows çalışma zamanı C++ Şablon kitaplığı, Windows çalışma zamanı kaydırmak için standart C++ kullandığından, daha kolay bağlantı noktası ve varolan birçok COM bileşeni ATL içinde Windows çalışma zamanı için yazılan etkileşim. Zaten ATL'yi biliyorsanız, Windows çalışma zamanı C++ Şablon kitaplığı programlama daha kolay olduğunu fark edebilirsiniz.
+- Windows Çalışma Zamanı C++ şablon kitaplığının amacı ve TASARıMı, com nesnelerinin programlamasını basitleştiren bir şablon tabanlı C++ sınıflar kümesi olan ETKIN şablon kitaplığı (ATL) tarafından ilham olarak gelir. Windows Çalışma Zamanı C++ şablon kitaplığı Windows çalışma zamanı sarmak için C++ standart kullandığından, daha kolay bağlantı kurabilir ve ATL 'de WINDOWS çalışma zamanı yazılan birçok mevcut com bileşeni ile etkileşim kurabilirsiniz. Zaten ATL 'yi biliyorsanız Windows Çalışma Zamanı C++ şablon kitaplığı programlamanın daha kolay olduğunu fark edebilirsiniz.
 
 ## <a name="getting-started"></a>Başlarken
 
-Windows çalışma zamanı C++ Şablon kitaplığı ile hemen çalışmaya başlayabilirsiniz yardımcı olabilecek bazı kaynaklar aşağıda verilmiştir.
+Windows Çalışma Zamanı C++ şablon kitaplığı ile hemen çalışmaya başlamanıza yardımcı olabilecek bazı kaynaklar aşağıda verilmiştir.
 
-[Windows çalışma zamanı kitaplığı (WRL)](https://channel9.msdn.com/Events/Windows-Camp/Developing-Windows-8-Metro-style-apps-in-Cpp/The-Windows-Runtime-Library-WRL-)<br/>
-Bu kanal 9 videosunda, Windows çalışma zamanı C++ Şablon Kitaplığı'nın nasıl yardımcı olduğu hakkında yazdığınız Evrensel Windows Platformu (UWP) uygulamaları ve yazar ve Windows çalışma zamanı bileşenlerini kullanma hakkında bilgi edinin.
+[Windows Çalışma Zamanı Kitaplığı (WRL)](https://channel9.msdn.com/Events/Windows-Camp/Developing-Windows-8-Metro-style-apps-in-Cpp/The-Windows-Runtime-Library-WRL-)<br/>
+Bu Channel 9 videosunda Windows Çalışma Zamanı C++ şablon kitaplığının, evrensel WINDOWS platformu (UWP) uygulamaları yazmanıza ve Windows çalışma zamanı bileşenleri yazıp tüketmenize nasıl yardımcı olduğu hakkında daha fazla bilgi edinin.
 
-[Nasıl yapılır: Bir Windows çalışma zamanı bileşenini etkinleştirme ve kullanma](how-to-activate-and-use-a-windows-runtime-component-using-wrl.md)<br/>
-Windows çalışma zamanı C++ Şablon kitaplığı Windows çalışma zamanı başlatma, etkinleştirmek ve bir Windows çalışma zamanı bileşeni kullanmak için nasıl kullanılacağını gösterir.
+[Nasıl yapılır: Windows Çalışma Zamanı bileşenini etkinleştirme ve kullanma](how-to-activate-and-use-a-windows-runtime-component-using-wrl.md)<br/>
+Windows Çalışma Zamanı başlatmak ve Windows Çalışma Zamanı bileşenini etkinleştirmek C++ ve kullanmak için Windows çalışma zamanı şablon kitaplığının nasıl kullanılacağını gösterir.
 
-[Nasıl yapılır: Zaman uyumsuz işlemleri tamamlama](how-to-complete-asynchronous-operations-using-wrl.md)<br/>
-Windows çalışma zamanı C++ Şablon kitaplığı zaman uyumsuz işlemler başlatmak ve işlemler tamamlandığında iş gerçekleştirmek için nasıl kullanılacağını gösterir.
+[Nasıl yapılır: Zaman uyumsuz Işlemleri tamamlamayı](how-to-complete-asynchronous-operations-using-wrl.md)<br/>
+Zaman uyumsuz işlemleri başlatmak ve işlemler C++ tamamlandığında iş gerçekleştirmek için Windows çalışma zamanı şablon kitaplığının nasıl kullanılacağını gösterir.
 
-[Nasıl yapılır: Olayları işleme](how-to-handle-events-using-wrl.md)<br/>
-Windows çalışma zamanı C++ Şablon kitaplığı abone olup bir Windows çalışma zamanı nesnesi olaylarını işlemek için nasıl kullanılacağını gösterir.
+[Nasıl yapılır: Olayları işle](how-to-handle-events-using-wrl.md)<br/>
+Bir Windows Çalışma Zamanı nesnesinin olaylarına abone olmak C++ ve olayları işlemek için Windows çalışma zamanı şablon kitaplığının nasıl kullanılacağını gösterir.
 
 [İzlenecek yol: WRL ve Medya Altyapısı kullanarak UWP uygulaması oluşturma](walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation.md)<br/>
-Kullanan bir UWP uygulaması oluşturmayı öğrenin [Microsoft Media Foundation](/windows/desktop/medfound/microsoft-media-foundation-sdk).
+[Microsoft medya altyapısı](/windows/win32/medfound/microsoft-media-foundation-sdk)kullanan bir UWP uygulaması oluşturmayı öğrenin.
 
-[Nasıl yapılır: Klasik COM bileşeni oluşturma](how-to-create-a-classic-com-component-using-wrl.md)<br/>
-Temel bir COM bileşeni ve kaydetmek ve bir masaüstü uygulamasından COM bileşeni kullanmak için basit bir yol oluşturmak için Windows çalışma zamanı C++ Şablon kitaplığı kullanmayı gösterir.
+[Nasıl yapılır: Klasik bir COM bileşeni oluşturma](how-to-create-a-classic-com-component-using-wrl.md)<br/>
+Temel bir COM bileşeni oluşturmak için C++ Windows çalışma zamanı şablon kitaplığının ve bir masaüstü uygulamasından com bileşenini kaydetmek ve kullanmak için temel bir yol gösterir.
 
 [Nasıl yapılır: Doğrudan WRL Bileşenlerinin Örneğini Oluşturma](how-to-instantiate-wrl-components-directly.md)<br/>
-Nasıl kullanacağınızı öğrenin [Microsoft::wrl:: Make](make-function.md) ve [Microsoft::WRL::Details::MakeAndInitialize](makeandinitialize-function.md) kendisini tanımlayan modülden bir bileşen örneği oluşturmak için işlevleri.
+[Microsoft:: WRL:: Make](make-function.md) ve [Microsoft:: wrl::D Euçlar:: makeanınvoınitialize](makeandinitialize-function.md) işlevlerini kullanarak onu tanımlayan modülden bir bileşen örneğini oluşturmayı öğrenin.
 
 [Nasıl yapılır: Windows meta verilerinden .h dosyaları oluşturmak için winmdidl.exe ve midlrt.exe programını kullanma](use-winmdidl-and-midlrt-to-create-h-files-from-windows-metadata.md)<br/>
-.Winmd meta verisinden bir IDL dosyası oluşturarak özel Windows Runtime bileşenlerinin wrl'den kullanma işlemi gösterilmektedir.
+. Winmd meta verilerinden bir IDL dosyası oluşturarak WRL 'den özel Windows Çalışma Zamanı bileşenlerini nasıl kullanacağınızı gösterir.
 
 [İzlenecek yol: Görevleri ve XML HTTP İsteklerini Kullanarak Bağlanma](../../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md)<br/>
-Nasıl kullanılacağını gösterir [Ixmlhttprequest2](/windows/desktop/api/msxml6/nn-msxml6-ixmlhttprequest2) ve [Ixmlhttprequest2callback](/windows/desktop/api/msxml6/nn-msxml6-ixmlhttprequest2callback) bir UWP uygulamasında bir web hizmetine HTTP GET ve POST istekleri göndermek için görevleri ile birlikte arabirimleri.
+UWP uygulamasındaki bir Web hizmetine HTTP GET ve POST istekleri göndermek için [IXMLHTTPRequest2](/windows/win32/api/msxml6/nn-msxml6-ixmlhttprequest2) ve [IXMLHTTPRequest2Callback](/windows/win32/api/msxml6/nn-msxml6-ixmlhttprequest2callback) arabirimlerinin görevlerle birlikte nasıl kullanılacağını gösterir.
 
-[Bing Maps Trip Optimizer örneği](https://code.msdn.microsoft.com/Bing-Maps-trip-optimizer-c4e037f7)<br/>
-Kullanan `HttpRequest` tanımlanan sınıfı [izlenecek yol: Bağlama kullanarak görevleri ve XML HTTP isteklerini](../../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md) eksiksiz bir UWP uygulaması bağlamında.
+[Bing Haritalar seyahat Iyileştirici örneği](https://code.msdn.microsoft.com/Bing-Maps-trip-optimizer-c4e037f7)<br/>
+Yönergede tanımlanan sınıfı kullanır: `HttpRequest` [ Görevleri ve XML http isteklerini](../../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md) bir bütün UWP uygulaması bağlamında kullanarak bağlanma.
 
-[C++ örnek ile bir Windows çalışma zamanı DLL bileşeni oluşturma](https://code.msdn.microsoft.com/windowsapps/Creating-a-Windows-Runtime-6c399797)<br/>
-Bir işlemde DLL bileşeni oluşturma ve C + tüketicilerimizin Windows çalışma zamanı C++ Şablon kitaplığı kullanma işlemini gösterir +/ CX, JavaScript ve C#.
+[C++ ÖRNEKLE Windows çalışma zamanı dll bileşeni oluşturma](https://code.msdn.microsoft.com/windowsapps/Creating-a-Windows-Runtime-6c399797)<br/>
+İşlem içi DLL bileşeni oluşturmak ve C++ bunu C++/CX, JavaScript ve ile C#kullanmak için Windows çalışma zamanı şablon kitaplığının nasıl kullanılacağını gösterir.
 
-[DirectX marble maze oyun örneği](https://code.msdn.microsoft.com/windowsapps/DirectX-Marble-Maze-Game-e4806345)<br/>
-Windows çalışma zamanı C++ Şablon kitaplığı bağlamında, tam bir 3-b oyunda DirectX ve Media Foundation gibi COM bileşenlerinin kullanım ömrünü yönetmek için nasıl kullanılacağını gösterir.
+[DirectX mermer Maze oyun örneği](https://code.msdn.microsoft.com/windowsapps/DirectX-Marble-Maze-Game-e4806345)<br/>
+DirectX gibi COM bileşenlerinin ömrünü yönetmek C++ ve tam 3-b oyun bağlamında Medya Altyapısı için Windows çalışma zamanı şablon kitaplığının nasıl kullanılacağını gösterir.
 
-[Masaüstü uygulama örneğinden kutlama bildirimleri gönderme](https://code.msdn.microsoft.com/windowsdesktop/Sending-toast-notifications-71e230a2)<br/>
-Bir masaüstü uygulamasından kutlama bildirimleri ile iş için Windows çalışma zamanı C++ Şablon Kitaplığı nasıl yapılacağı açıklanır.
+[Masaüstü uygulamaları örneğinden bildirimler gönderme](https://code.msdn.microsoft.com/windowsdesktop/Sending-toast-notifications-71e230a2)<br/>
+Bir masaüstü uygulamasından bildirim bildirimleri ile C++ çalışmak için Windows çalışma zamanı şablon kitaplığının nasıl kullanılacağını gösterir.
 
-## <a name="windows-runtime-c-template-library-compared-to-atl"></a>Windows çalışma zamanı C++ Şablon kitaplığı ile ATL karşılaştırması
+## <a name="windows-runtime-c-template-library-compared-to-atl"></a>ATL C++ ile karşılaştırıldığında şablon kitaplığı Windows çalışma zamanı
 
-Küçük, hızlı COM nesneleri oluşturmak için kullanabileceğiniz Windows çalışma zamanı C++ Şablon kitaplığı Etkin Şablon kitaplığı (ATL) benzer. Windows çalışma zamanı C++ Şablon kitaplığı ve ATL Ayrıca, arabirimlerin açık kaydı modüllerdeki nesnelerin tanımı gibi kavramları paylaşın ve oluşturma nesnelerin Fabrikalar kullanılarak açık. İle çalışmakta güçlük çekmezsiniz biliyorsanız, Windows çalışma zamanı C++ Şablon kitaplığı ile rahat olabilir
+Windows Çalışma Zamanı C++ şablon kitaplığı, küçük ve hızlı com nesneleri oluşturmak Için kullanabileceğiniz etkin şablon KITAPLıĞıNA (ATL) benzer. Windows Çalışma Zamanı C++ şablon KITAPLıĞı ve ATL, modüller içindeki nesnelerin tanımı, açık arabirimlerin kaydı ve fabrika kullanarak nesne oluşturma gibi kavramları de paylaşır. ATL hakkında bilginiz varsa Windows Çalışma Zamanı C++ şablon kitaplığı ile rahat bir şekilde karşılaşabilirsiniz.
 
-Windows çalışma zamanı C++ Şablon kitaplığı UWP uygulamaları için gereken COM işlevini destekler. Bu nedenle, aşağıdakiler gibi COM özellikleri için doğrudan destek atlandığı için ATL farklıdır:
+Windows Çalışma Zamanı C++ şablon KITAPLıĞı, UWP uygulamaları IÇIN gerekli com işlevlerini destekler. Bu nedenle, ATL 'den farklıdır çünkü şu şekilde COM özellikleri için doğrudan desteği atlar:
 
-- Toplama
+- toplama
 
-- kalıp uygulamalar
+- hisse senedi uygulamaları
 
-- çift arabirimler (`IDispatch`)
+- Çift arabirimler (`IDispatch`)
 
-- Standart sabit listesi arabirimleri
+- Standart Numaralandırıcı arabirimleri
 
 - bağlantı noktaları
 
-- Etiket arabirimleri
+- yırma arabirimleri
 
 - OLE katıştırma
 
@@ -105,47 +105,47 @@ Windows çalışma zamanı C++ Şablon kitaplığı UWP uygulamaları için gere
 
 ## <a name="concepts"></a>Kavramlar
 
-Windows çalışma zamanı C++ Şablon kitaplığı, bir temel kavramlar temsil eden türler sağlar. Aşağıdaki bölümler bu türleri açıklamaktadır.
+Windows Çalışma Zamanı C++ şablon kitaplığı, birkaç temel kavramı temsil eden türler sağlar. Aşağıdaki bölümlerde bu türler açıklanır.
 
 ### <a name="comptr"></a>ComPtr
 
-[ComPtr](comptr-class.md) olduğu bir *akıllı işaretçi* şablon parametresi tarafından belirlenen arabirimi temsil eden tür. Kullanım `ComPtr` arabirimden türetilmiş bir nesnenin üyelerine erişebilen bir değişken bildirmek için. `ComPtr` otomatik olarak temel arabirim işaretçisi için bir başvuru sayısını tutar ve başvuru sayısı sıfıra gittiğinde arabirimi serbest bırakır.
+[ComPtr](comptr-class.md) , şablon parametresi tarafından belirtilen arabirimi temsil eden *akıllı bir işaretçi* türüdür. Arabiriminden `ComPtr` türetilmiş bir nesnenin üyelerine erişebilen bir değişken bildirmek için kullanın. `ComPtr`, temel alınan arabirim işaretçisi için bir başvuru sayısını otomatik olarak tutar ve başvuru sayısı sıfıra gittiğinde arabirimi serbest bırakır.
 
 ### <a name="runtimeclass"></a>RuntimeClass
 
-[RuntimeClass](runtimeclass-class.md) belirtilen arabirim kümesini devralan örneklenmiş bir sınıfı temsil eder. A `RuntimeClass` nesnesi bir birleşimini bir veya daha fazla Windows çalışma zamanı COM arabirimi ya da bir bileşene zayıf başvuru desteği sağlar.
+[RuntimeClass](runtimeclass-class.md) , belirtilen arabirimlerin kümesini devralan bir örneklenmiş sınıfı temsil eder. Bir `RuntimeClass` nesne, bir veya daha fazla Windows çalışma zamanı com arabirimi veya bir bileşene zayıf bir başvuru için destek bileşimini sağlayabilir.
 
 ### <a name="module"></a>Modül
 
-[Modül](module-class.md) ilgili nesnelerin bir koleksiyonunu temsil eder. A `Module` nesnesi, nesneleri ve diğer uygulamaların bir nesne kullanmasını sağlayan kaydı oluşturan sınıf üreteçlerini yönetir.
+[Modül](module-class.md) bir ilişkili nesneler koleksiyonunu temsil eder. Nesne `Module` , diğer uygulamaların bir nesne kullanmasına olanak sağlayan sınıf fabrikalarını, nesneleri ve kaydı oluşturan bir yönetir.
 
-### <a name="callback"></a>geri çağırma
+### <a name="callback"></a>Callback
 
-[Geri çağırma](callback-function-wrl.md) işlevi, üye işlevi bir olay işleyicisi (bir geri arama yöntemi) olan bir nesne oluşturur. Kullanım `Callback` zaman uyumsuz işlemler yazmak için işlevi.
+[Geri çağırma](callback-function-wrl.md) işlevi, üye işlevi bir olay işleyicisi (bir geri çağırma yöntemi) olan bir nesne oluşturur. Zaman uyumsuz işlemler yazmak için işlevinikullanın.`Callback`
 
 ### <a name="eventsource"></a>EventSource
 
-[EventSource](eventsource-class.md) yönetmek için kullanılan *temsilci* olay işleyicileri. Bir temsilci uygulamak ve kullanmak için Windows çalışma zamanı C++ Şablon kitaplığı kullanın `EventSource` eklemek, kaldırmak ve temsilci çağırma.
+[EventSource](eventsource-class.md) , *temsilci* olay işleyicilerini yönetmek için kullanılır. Bir temsilci C++ uygulamak için Windows çalışma zamanı Şablon kitaplığı kullanın ve temsilcileri eklemek `EventSource` , kaldırmak ve çağırmak için kullanın.
 
 ### <a name="asyncbase"></a>AsyncBase
 
-[AsyncBase](asyncbase-class.md) Windows çalışma zamanı zaman uyumsuz programlama modelini temsil eden sanal yöntemleri sağlar. Başlat, Durdur veya zaman uyumsuz bir işlemin ilerleme durumunu denetlemek için özel bir sınıf oluşturmak için bu sınıftaki üyeleri geçersiz kılar.
+[AsyncBase](asyncbase-class.md) Windows çalışma zamanı zaman uyumsuz programlama modelini temsil eden sanal yöntemler sağlar. Zaman uyumsuz bir işlemin ilerlemesini Başlatan, durduran veya denetleyen özel bir sınıf oluşturmak için bu sınıftaki üyeleri geçersiz kılın.
 
 ### <a name="ftmbase"></a>FtmBase
 
-[FtmBase](ftmbase-class.md) ücretsiz iş parçacıklı bir Sıralayıcı nesnesini temsil eder. `FtmBase` bir genel arabirim tablosu (GIT) oluşturur ve sıralama ve proxy nesnelerinin yönetimine yardım eder.
+[FtmBase](ftmbase-class.md) , serbest iş parçacıklı Sıralayıcı nesnesini temsil eder. `FtmBase`genel bir arabirim tablosu (GIT) oluşturur ve sıralama ve proxy nesnelerinin yönetilmesine yardımcı olur.
 
 ### <a name="weakref"></a>WeakRef
 
-[WeakRef](weakref-class.md) temsil eden akıllı işaretçi türünde bir *zayıf başvuru*, erişilebilir olmayabilir veya bir nesne başvuruyor. A `WeakRef` yalnızca Windows çalışma zamanı tarafından hem klasik COM tarafından değil, nesne kullanılabilir
+[WeakRef](weakref-class.md) , erişilebilir olabilecek veya erişilemeyen bir nesneye başvuran *zayıf bir başvuruyu*temsil eden bir akıllı işaretçi türüdür. Bir `WeakRef` nesne, klasik com tarafından değil yalnızca Windows çalışma zamanı tarafından kullanılabilir.
 
-A `WeakRef` nesnesi genelde, varlığı harici bir iş parçacığı ya da uygulama tarafından denetlenen bir nesne temsil eder. Örneğin, bir `WeakRef` nesnesi, bir dosya nesnesine başvurabilir. Dosya açıldığında, `WeakRef` geçerlidir ve başvurulan dosyaya erişilebilir. Ancak dosya kapatıldığında `WeakRef` geçersiz ve dosyaya erişilemiyor.
+Bir `WeakRef` nesne, genellikle varlığı bir dış iş parçacığı veya uygulama tarafından denetlenen bir nesneyi temsil eder. Örneğin, bir `WeakRef` nesnesi bir dosya nesnesine başvurabilir. Dosya açıkken, `WeakRef` geçerli olur ve başvurulan dosya erişilebilir olur. Ancak dosya kapatıldığında `WeakRef` , geçersizdir ve dosyaya erişilemez.
 
 ## <a name="related-topics"></a>İlgili Konular
 
 |||
 |-|-|
-|[Kategoriye göre başlıca API'ler](key-wrl-apis-by-category.md)|Birincil Windows çalışma zamanı C++ Şablon kitaplığı türleri, işlevlerini ve makrolarını vurgular.|
-|[Başvuru](wrl-reference.md)|Windows çalışma zamanı C++ Şablon kitaplığı için başvuru bilgileri içerir.|
-|[Hızlı Başvuru (Windows Runtime ve Visual C++)](../../cppcx/quick-reference-c-cx.md)|Kısaca açıklar C++Windows çalışma zamanı desteği /CX özellikleri.|
-|[Visual C++'ta Windows çalışma zamanı bileşenlerini kullanma](/windows/uwp/winrt-components/walkthrough-creating-a-basic-windows-runtime-component-in-cpp-and-calling-it-from-javascript-or-csharp)|Nasıl kullanılacağını gösterir C++/CX temel bir Windows çalışma zamanı bileşeni oluşturma.|
+|[Kategoriye göre anahtar API 'Leri](key-wrl-apis-by-category.md)|Birincil Windows Çalışma Zamanı C++ şablon kitaplık türlerini, işlevleri ve makroları vurgular.|
+|[Başvuru](wrl-reference.md)|Windows Çalışma Zamanı C++ şablon kitaplığı için başvuru bilgilerini içerir.|
+|[Hızlı başvuru (Windows Çalışma Zamanı ve görsel C++)](../../cppcx/quick-reference-c-cx.md)|Windows Çalışma Zamanı destekleyen C++/CX özelliklerini kısaca açıklar.|
+|[Windows Çalışma Zamanı bileşenlerini görsel olarak kullanmaC++](/windows/uwp/winrt-components/walkthrough-creating-a-basic-windows-runtime-component-in-cpp-and-calling-it-from-javascript-or-csharp)|Temel bir Windows Çalışma Zamanı bileşeni C++oluşturmak için/CX 'in nasıl kullanılacağını gösterir.|

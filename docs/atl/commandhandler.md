@@ -5,16 +5,16 @@ ms.topic: reference
 helpviewer_keywords:
 - CommandHandler function
 ms.assetid: 662bc7bf-4a10-42b3-986d-d8bae4f63551
-ms.openlocfilehash: 743be3e0bc9cc96fc6b22d0806d399ab5e160a3f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 99a95228f6036e5f391395be367cdef39ca3dc3b
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62235070"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69492464"
 ---
 # <a name="commandhandler"></a>CommandHandler
 
-`CommandHandler` işlevi, ileti eşlemesi COMMAND_HANDLER makroda'öğesinin üçüncü parametresi tarafından tanımlanır.
+`CommandHandler`, ileti Haritalarınızın COMMAND_HANDLER makrosunun üçüncü parametresi tarafından tanımlanan işlevdir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -29,27 +29,27 @@ LRESULT CommandHandler(
 #### <a name="parameters"></a>Parametreler
 
 *wNotifyCode*<br/>
-Uyarı kodu.
+Bildirim kodu.
 
 *wID*<br/>
-Menü öğesi, denetim ya da Hızlandırıcı tanımlayıcısı.
+Menü öğesinin, denetimin veya hızlandırıcının tanımlayıcısı.
 
 *hWndCtl*<br/>
-Bir pencere denetimi için bir tanıtıcı.
+Pencere denetimine yönelik bir tanıtıcı.
 
-*bHandled*<br/>
-İleti eşleme kümeleri *bHandled* önce true `CommandHandler` çağrılır. Varsa `CommandHandler` tam iletiyi işlemez ayarlamanız gerekir *bHandled* ihtiyaç daha fazla işleme belirtmek için false.
+*Bişlenmiş*<br/>
+Çağrılan ileti eşleme kümeleri çağrılmadan önce `CommandHandler` true olarak ayarlanır. İletiyi tam olarak işlemezse, iletinin daha fazla işleme ihtiyacı olduğunu göstermek için bişlenmiş olarak false olarak ayarlanmalıdır. `CommandHandler`
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-İleti işleme sonucu. başarılıysa 0.
+İleti işlemenin sonucu. başarılı olursa 0.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu ileti işleyicisi bir ileti eşlemede kullanma örneği için bkz: [COMMAND_HANDLER](reference/message-map-macros-atl.md#command_handler).
+Bu ileti işleyicisini bir ileti eşlemesinde kullanmanın bir örneği için bkz. [COMMAND_HANDLER](reference/message-map-macros-atl.md#command_handler).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Pencere Uygulama](../atl/implementing-a-window.md)<br/>
-[İleti eşlemeleri](../atl/message-maps-atl.md)<br/>
-[WM_NOTIFY](/windows/desktop/controls/wm-notify)
+[İleti haritaları](../atl/message-maps-atl.md)<br/>
+[WM_NOTIFY](/windows/win32/controls/wm-notify)

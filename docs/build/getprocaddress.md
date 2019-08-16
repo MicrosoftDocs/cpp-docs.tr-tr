@@ -8,18 +8,18 @@ helpviewer_keywords:
 - ordinal exports [C++]
 - GetProcAddress method
 ms.assetid: 48d14ae0-47ea-4c5d-96b1-2c158f1a26af
-ms.openlocfilehash: 7b480314d195f50e4867f646208f2d9c70ce9b14
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: 2d322cfe7d3bd60d8d702a226e181eb7b4ede963
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65220813"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69493246"
 ---
 # <a name="getprocaddress"></a>GetProcAddress
 
-Açıkça bir DLL'ye işlemleri [GetProcAddress](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) DLL'de dışa aktarılan bir işlevin adresini almak için. DLL işlevini çağırmak için döndürülen işlev işaretçisini kullanırsınız. **GetProcAddress** DLL modül tanıtıcısını parametreler olarak alan (tarafından döndürülen **LoadLibrary**, `AfxLoadLibrary`, veya **GetModuleHandle**) ve ya da istediğiniz işlevin adını alır çağrı veya işlevin dışa aktarma sıra sayısı.
+DLL 'de verilmiş bir işlevin adresini almak için [GetProcAddress](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) 'e AÇıKÇA bir dll çağrısına bağlama işlemi. DLL işlevini çağırmak için döndürülen işlev işaretçisini kullanırsınız. **GetProcAddress** , dll modülünün tanıtıcısını ( **LoadLibrary**, `AfxLoadLibrary`veya **GetModuleHandle**tarafından döndürülen) parametre olarak alır ve çağırmak istediğiniz işlevin adını ya da işlevin dışarı aktarma sıra sayısını alır.
 
-DLL işlevini bir işaretçiyle çağırdığınızdan emin ve derleme zamanı türü denetimi yoktur çünkü böylece etmez yığında ayrılan belleğin çağırdığınızdan ve erişim ihlaline neden işlev parametrelerinin doğru olduğundan emin olun. Tür güvenliğini sağlamaya yardımcı olacak bir yol dışarı aktarılan işlevlerin işlev prototipleri Ara ve işlev işaretçilerine ilişkin eşleşen tür tanımları oluşturmaktır. Örneğin:
+DLL işlevini bir işaretçi aracılığıyla çağırırken ve derleme zamanı tür denetimi olmadığından, yığında ayrılan belleği fazla adımla ve erişim ihlaline neden olmayacak şekilde işlevin parametrelerinin doğru olduğundan emin olun. Tür güvenliğini sağlamaya yardımcı olmanın bir yolu, içe aktarılmış işlevlerin işlev prototiptürlerine bakmak ve işlev işaretçileri için eşleşen tür tanımları 'ler oluşturmaktır. Örneğin:
 
 ```
 typedef UINT (CALLBACK* LPFNDLLFUNC1)(DWORD,UINT);
@@ -49,9 +49,9 @@ if (hDLL != NULL)
 }
 ```
 
-Belirttiğiniz çağrılırken istediğiniz işlevi nasıl **GetProcAddress** DLL nasıl oluşturulmuş bağlıdır.
+**GetProcAddress** çağrılırken istediğiniz işlevi nasıl BELIRTIRSINIZ, dll 'nin nasıl oluşturulduğuna bağlıdır.
 
-Bağlandığınız DLL modül tanımı (.def) dosyasıyla oluşturulursa ve sıra sayıları işlevlerle listelenirse yalnızca dışarı aktarma sırası edinebilirsiniz **dışarı AKTARMALARI** DLL'nin .def dosyası bölümünü. Çağırma **GetProcAddress** dışa işlev adının bir sıra DLL birçok dışa aktarılan işleve sahipse dışa aktarma sıra sayıları DLL içine Dizinler tabloyu dışarı aktarma gibi gördükleri için biraz daha hızlıdır. Bir dışarı aktarma sırası ile **GetProcAddress** işlevi DLL'nin dışarı aktarma tablosundaki işlev adlarını belirtilen adla karşılaştırarak değil doğrudan bulabilir. Ancak, çağırmalıdır **GetProcAddress** yalnızca .def dosyasında dışa aktarılan işlevlere sıra sayıları atama denetiminiz varsa dışarı aktarma sırası ile.
+Dışarı aktarma sırasını yalnızca, bağlandığınız DLL bir modül tanımı (. def) dosyası ile derlendiyse ve sıra sayıları DLL 'nin. def dosyasının **dışarı aktarmalar** bölümündeki işlevlerle listeleniyorsa elde edilebilir. İşlev adının aksine, bir dışa aktarma sırası ile **GetProcAddress** çağrısı, dışa aktarma sıraları dll 'nin dışarı aktarma tablosuna dizin olarak görev YAPTıĞıNDAN, dll 'nin dışarı aktarılmış işlevlere sahip olması biraz daha hızlıdır. Dışarı aktarma sırası ile, **GetProcAddress** , BELIRTILEN adı dll 'nin dışarı aktarma tablosundaki işlev adlarıyla karşılaştırmak yerine doğrudan işlevi bulabilir. Ancak, yalnızca. def dosyasındaki dışarı aktarılmış işlevlere sıra sayıları atama üzerinde denetim sahibi olmanız durumunda **GetProcAddress** 'i dışarı aktarma sırası ile çağırmanız gerekir.
 
 ## <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsunuz?
 
@@ -63,10 +63,10 @@ Bağlandığınız DLL modül tanımı (.def) dosyasıyla oluşturulursa ve sır
 
 - [LoadLibrary ve AfxLoadLibrary](loadlibrary-and-afxloadlibrary.md)
 
-- [FreeLibrary](/windows/desktop/api/libloaderapi/nf-libloaderapi-freelibrary)
+- [FreeLibrary](/windows/win32/api/libloaderapi/nf-libloaderapi-freelibrary)
 
 - [DEF Dosyaları Kullanarak DLL'den Dışarı Aktarma](exporting-from-a-dll-using-def-files.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual Studio'da C/C++ DLL'leri oluşturma](dlls-in-visual-cpp.md)
+[Visual Studio 'daC++ C/dll oluşturma](dlls-in-visual-cpp.md)

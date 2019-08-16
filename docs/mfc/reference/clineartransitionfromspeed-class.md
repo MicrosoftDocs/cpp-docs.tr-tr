@@ -1,5 +1,5 @@
 ---
-title: CLinearTransitionFromSpeed sınıfı
+title: Klineartionfromspeed sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CLinearTransitionFromSpeed
@@ -14,16 +14,16 @@ helpviewer_keywords:
 - CLinearTransitionFromSpeed [MFC], m_dblFinalValue
 - CLinearTransitionFromSpeed [MFC], m_dblSpeed
 ms.assetid: 8f159a1c-8893-4017-951e-09e5758aba7d
-ms.openlocfilehash: 1efa9806267958b4221ee112e56f242c7e25a8f0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 50c958a092478f4b9ec4e94f9e5e973a74c334c2
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62392511"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69505719"
 ---
-# <a name="clineartransitionfromspeed-class"></a>CLinearTransitionFromSpeed sınıfı
+# <a name="clineartransitionfromspeed-class"></a>Klineartionfromspeed sınıfı
 
-Bir doğrusal hızlı geçişi kapsüller.
+Doğrusal hızda bir geçişi kapsüller.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,24 +37,24 @@ class CLinearTransitionFromSpeed : public CBaseTransition;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CLinearTransitionFromSpeed::CLinearTransitionFromSpeed](#clineartransitionfromspeed)|Bir doğrusal hızlı geçişi nesnesi oluşturur ve hız ve son değer ile başlatır.|
+|[Klineartionfromspeed:: Klineartionfromspeed](#clineartransitionfromspeed)|Doğrusal hızda bir geçiş nesnesi oluşturur ve hızı ve nihai değer ile başlatır.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CLinearTransitionFromSpeed::Create](#create)|Kapsüllenmiş geçiş COM nesnesi oluşturmak için geçiş kitaplığı çağırır. (Geçersiz kılmaları [CBaseTransition::Create](../../mfc/reference/cbasetransition-class.md#create).)|
+|[Klineartionfromspeed:: Create](#create)|Kapsüllenmiş geçiş COM nesnesi oluşturmak için geçiş kitaplığını çağırır. ( [CBaseTransition:: Create](../../mfc/reference/cbasetransition-class.md#create)geçersiz kılar.)|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CLinearTransitionFromSpeed::m_dblFinalValue](#m_dblfinalvalue)|Geçiş sonunda animasyon değişkeninin değeri.|
-|[CLinearTransitionFromSpeed::m_dblSpeed](#m_dblspeed)|Hız değişkenin mutlak değeri.|
+|[Klineartionfromspeed:: m_dblFinalValue](#m_dblfinalvalue)|Geçişin sonundaki animasyon değişkeninin değeri.|
+|[Klineartionfromspeed:: m_dblSpeed](#m_dblspeed)|Değişkenin hız değerinin mutlak değeri.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir doğrusal hızlı geçişi sırasında belirtilen bir fiyat karşılığında animasyon değişkenin değerini değiştirir. Geçiş süresi başlangıç değeri belirtilen son değeri arasındaki farkı tarafından belirlenir. Tüm geçiş işlemleri otomatik olarak temizlenir olduğundan, bunları ayrılan önerilir işleci kullanarak yeni. NULL ise kapsüllenmiş IUIAnimationTransition COM nesnesi kadar CAnimationController::AnimateGroup tarafından oluşturulur. Üye değişkenleri tüketimi bu COM nesnesi oluşturulmasını etkisi yoktur.
+Doğrusal hız geçişi sırasında animasyon değişkeninin değeri belirtilen bir hızda değişir. Geçişin süresi, başlangıç değeri ile belirtilen son değer arasındaki fark ile belirlenir. Tüm geçişler otomatik olarak temizlendiğinden, Yeni işleç kullanılarak ayrılmaları önerilir. Encapsulated IUIAnimationTransition COM nesnesi, NULL olana kadar CAnimationController:: AnimateGroup tarafından oluşturulur. Bu COM nesnesi oluşturulduktan sonra üye değişkenlerinin değiştirilmesinin etkisi olmaz.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -62,15 +62,15 @@ Bir doğrusal hızlı geçişi sırasında belirtilen bir fiyat karşılığınd
 
 [CBaseTransition](../../mfc/reference/cbasetransition-class.md)
 
-[CLinearTransitionFromSpeed](../../mfc/reference/clineartransitionfromspeed-class.md)
+[Klineartionfromspeed](../../mfc/reference/clineartransitionfromspeed-class.md)
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxanimationcontroller.h
+**Üstbilgi:** afxanimationcontroller. h
 
-##  <a name="clineartransitionfromspeed"></a>  CLinearTransitionFromSpeed::CLinearTransitionFromSpeed
+##  <a name="clineartransitionfromspeed"></a>Klineartionfromspeed:: Klineartionfromspeed
 
-Bir doğrusal hızlı geçişi nesnesi oluşturur ve hız ve son değer ile başlatır.
+Doğrusal hızda bir geçiş nesnesi oluşturur ve hızı ve nihai değer ile başlatır.
 
 ```
 CLinearTransitionFromSpeed(
@@ -81,14 +81,14 @@ CLinearTransitionFromSpeed(
 ### <a name="parameters"></a>Parametreler
 
 *dblSpeed*<br/>
-Hız değişkenin mutlak değeri.
+Değişkenin hız değerinin mutlak değeri.
 
-*dblFinalValue*<br/>
-Geçiş sonunda animasyon değişkeninin değeri.
+*Dblfinaldeğeri*<br/>
+Geçişin sonundaki animasyon değişkeninin değeri.
 
-##  <a name="create"></a>  CLinearTransitionFromSpeed::Create
+##  <a name="create"></a>Klineartionfromspeed:: Create
 
-Kapsüllenmiş geçiş COM nesnesi oluşturmak için geçiş kitaplığı çağırır.
+Kapsüllenmiş geçiş COM nesnesi oluşturmak için geçiş kitaplığını çağırır.
 
 ```
 virtual BOOL Create(
@@ -99,23 +99,23 @@ virtual BOOL Create(
 ### <a name="parameters"></a>Parametreler
 
 *pLibrary*<br/>
-Bir işaretçi bir [IUIAnimationTransitionLibrary arabirimi](/windows/desktop/api/uianimation/nn-uianimation-iuianimationtransitionlibrary), standart geçişleri kitaplığını tanımlar.
+Standart geçişlerin kitaplığını tanımlayan [ıuıanimationgeçişli Tionlibrary arabirimine](/windows/win32/api/uianimation/nn-uianimation-iuianimationtransitionlibrary)yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçiş başarıyla oluşturulursa TRUE; Aksi durumda FALSE.
+Geçiş başarıyla oluşturulursa doğru; Aksi halde yanlış.
 
-##  <a name="m_dblfinalvalue"></a>  CLinearTransitionFromSpeed::m_dblFinalValue
+##  <a name="m_dblfinalvalue"></a>Klineartionfromspeed:: m_dblFinalValue
 
-Geçiş sonunda animasyon değişkeninin değeri.
+Geçişin sonundaki animasyon değişkeninin değeri.
 
 ```
 DOUBLE m_dblFinalValue;
 ```
 
-##  <a name="m_dblspeed"></a>  CLinearTransitionFromSpeed::m_dblSpeed
+##  <a name="m_dblspeed"></a>Klineartionfromspeed:: m_dblSpeed
 
-Hız değişkenin mutlak değeri.
+Değişkenin hız değerinin mutlak değeri.
 
 ```
 DOUBLE m_dblSpeed;

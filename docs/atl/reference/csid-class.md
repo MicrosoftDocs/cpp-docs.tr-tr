@@ -21,12 +21,12 @@ f1_keywords:
 helpviewer_keywords:
 - CSid class
 ms.assetid: be58b7ca-5958-49c3-a833-ca341aaaf753
-ms.openlocfilehash: fb496e3bd58d0fe134c37b240eb2698302c6aa64
-ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
+ms.openlocfilehash: ed19ed3cdeb77612e20d826480ab73b9361366e9
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68915696"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69496444"
 ---
 # <a name="csid-class"></a>CSID sınıfı
 
@@ -97,7 +97,7 @@ class CSid
 
 Uygulamalar `SID` yapıyı doğrudan değiştirmemelidir, bunun yerine bu sarmalayıcı sınıfında sunulan yöntemleri kullanır. Ayrıca bkz. [Atlgetownersıd](security-global-functions.md#atlgetownersid), [atlsetgroupsıd](security-global-functions.md#atlsetgroupsid), [Atlgetgroupsıd](security-global-functions.md#atlgetgroupsid)ve [atlsetownersıd](security-global-functions.md#atlsetownersid).
 
-Windows 'daki erişim denetim modeline giriş için Windows SDK [Access Control](/windows/desktop/SecAuthZ/access-control) bakın.
+Windows 'daki erişim denetim modeline giriş için Windows SDK [Access Control](/windows/win32/SecAuthZ/access-control) bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -117,7 +117,7 @@ Hesabın adına işaret eden LPCTSTR değerini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, belirtilen `SID` (güvenlik tanımlayıcısı) için bir ad bulmaya çalışır. Tüm ayrıntılar için bkz. [LookupAccountSid](/windows/desktop/api/winbase/nf-winbase-lookupaccountsida).
+Bu yöntem, belirtilen `SID` (güvenlik tanımlayıcısı) için bir ad bulmaya çalışır. Tüm ayrıntılar için bkz. [LookupAccountSid](/windows/win32/api/winbase/nf-winbase-lookupaccountsidw).
 
 İçin `SID` bir hesap adı `AccountName` bulunamazsa boş bir dize döndürür. Bir ağ zaman aşımı bu yöntemin adı bulmasını engelliyorsa bu durum oluşabilir. Aynı zamanda, oturum açma oturumunu tanımlayan bir `SID` gibi, karşılık gelen hesap adı olmayan güvenlik tanımlayıcıları için de gerçekleşir.
 
@@ -208,7 +208,7 @@ Etki alanına `LPCTSTR` işaret eden bir değer döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, belirtilen `SID` (güvenlik tanımlayıcısı) için bir ad bulmaya çalışır. Tüm ayrıntılar için bkz. [LookupAccountSid](/windows/desktop/api/winbase/nf-winbase-lookupaccountsida).
+Bu yöntem, belirtilen `SID` (güvenlik tanımlayıcısı) için bir ad bulmaya çalışır. Tüm ayrıntılar için bkz. [LookupAccountSid](/windows/win32/api/winbase/nf-winbase-lookupaccountsidw).
 
 İçin `SID` bir hesap adı bulunamazsa, `Domain` etki alanını boş bir dize olarak döndürür. Bir ağ zaman aşımı bu yöntemin adı bulmasını engelliyorsa bu durum oluşabilir. Aynı zamanda, oturum açma oturumunu tanımlayan bir `SID` gibi, karşılık gelen hesap adı olmayan güvenlik tanımlayıcıları için de gerçekleşir.
 
@@ -232,7 +232,7 @@ Başarılı olduğunda TRUE, hatada FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için bkz. [EqualPrefixSid](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-equalprefixsid) Windows SDK.
+Daha fazla bilgi için bkz. [EqualPrefixSid](/windows/win32/api/securitybaseapi/nf-securitybaseapi-equalprefixsid) Windows SDK.
 
 ##  <a name="getlength"></a>CSID:: GetLength
 
@@ -360,7 +360,7 @@ Hesap adı.
 Sistem adı. Bu dize, uzak bir bilgisayarın adı olabilir. Bu dize NULL ise, bunun yerine yerel sistem kullanılır.
 
 *PSID*<br/>
-[SID](/windows/desktop/api/winnt/ns-winnt-sid) yapısına yönelik bir işaretçi.
+[SID](/windows/win32/api/winnt/ns-winnt-sid) yapısına yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -368,7 +368,7 @@ Başarılı olduğunda TRUE, hatada FALSE döndürür. Genişletilmiş hata bilg
 
 ### <a name="remarks"></a>Açıklamalar
 
-`LoadAccount`Belirtilen ad için bir güvenlik tanımlayıcısı bulmaya çalışır. Daha fazla ayrıntı için [LookupAccountSid](/windows/desktop/api/winbase/nf-winbase-lookupaccountsida) bölümüne bakın.
+`LoadAccount`Belirtilen ad için bir güvenlik tanımlayıcısı bulmaya çalışır. Daha fazla ayrıntı için [LookupAccountSid](/windows/win32/api/winbase/nf-winbase-lookupaccountsidw) bölümüne bakın.
 
 ##  <a name="operator_eq"></a>CSID:: operator =
 
@@ -542,7 +542,7 @@ LPCTSTR Sid() const throw(...);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`SID` Yapıyı, görüntü, depolama veya iletim için uygun bir biçimde bir dize olarak döndürür. [ConvertSidToStringSid](/windows/desktop/api/sddl/nf-sddl-convertsidtostringsida)ile eşdeğerdir.
+`SID` Yapıyı, görüntü, depolama veya iletim için uygun bir biçimde bir dize olarak döndürür. [ConvertSidToStringSid](/windows/win32/api/sddl/nf-sddl-convertsidtostringsidw)ile eşdeğerdir.
 
 ##  <a name="sidnameuse"></a>CSID:: SidNameUse
 

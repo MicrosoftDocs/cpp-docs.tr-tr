@@ -22,12 +22,12 @@ helpviewer_keywords:
 - COlePropertiesDialog [MFC], m_psh
 - COlePropertiesDialog [MFC], m_vp
 ms.assetid: a54dbc89-1447-4329-bd01-00e98ec9e935
-ms.openlocfilehash: bdae64ff4a7bcfef761eaf3dd70a85a54efc28b7
-ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
+ms.openlocfilehash: b819bc430868717a2df01a086b482dfe6d56cc0f
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68916955"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69504171"
 ---
 # <a name="colepropertiesdialog-class"></a>Cotapropertiesdialog sınıfı
 
@@ -152,11 +152,11 @@ virtual INT_PTR DoModal();
 
 Başarılı olursa ıDOK veya ıDCANCEL; Aksi takdirde 0. IDOK ve ıDCANCEL, kullanıcının Tamam veya Iptal düğmesini seçip seçmediğini belirten sabitlerdir.
 
-IDCANCEL döndürülürse, bir hatanın oluşup oluşmadığını anlamak için Windows [Commıdextendebir](/windows/desktop/api/commdlg/nf-commdlg-commdlgextendederror) işlevini çağırabilirsiniz.
+IDCANCEL döndürülürse, bir hatanın oluşup oluşmadığını anlamak için Windows [Commıdextendebir](/windows/win32/api/commdlg/nf-commdlg-commdlgextendederror) işlevini çağırabilirsiniz.
 
 ##  <a name="m_gp"></a>Colet Propertiesdialog:: m_gp
 
-OLE nesne özellikleri iletişim kutusunun Genel sayfasını başlatmak için kullanılan [Oleumenrlprops](/windows/desktop/api/oledlg/ns-oledlg-tagoleuignrlpropsa)türünde bir yapı.
+OLE nesne özellikleri iletişim kutusunun Genel sayfasını başlatmak için kullanılan [Oleumenrlprops](/windows/win32/api/oledlg/ns-oledlg-oleuignrlpropsw)türünde bir yapı.
 
 ```
 OLEUIGNRLPROPS m_gp;
@@ -170,7 +170,7 @@ Bu sayfada bir katıştırma türü ve boyutu gösterilir ve kullanıcının Dö
 
 ##  <a name="m_lp"></a>Colet Propertiesdialog:: m_lp
 
-OLE nesne özellikleri iletişim kutusunun Bağlantı sayfasını başlatmak için kullanılan [Oleuilınkprops](/windows/desktop/api/oledlg/ns-oledlg-tagoleuilinkpropsa)türünde bir yapı.
+OLE nesne özellikleri iletişim kutusunun Bağlantı sayfasını başlatmak için kullanılan [Oleuilınkprops](/windows/win32/api/oledlg/ns-oledlg-oleuilinkpropsw)türünde bir yapı.
 
 ```
 OLEUILINKPROPS m_lp;
@@ -184,7 +184,7 @@ Bu sayfa, bağlantılı öğenin konumunu gösterir ve kullanıcının öğenin 
 
 ##  <a name="m_op"></a>Colet Propertiesdialog:: m_op
 
-Ortak OLE nesne özellikleri iletişim kutusunu başlatmak için kullanılan [OLEUIOBJECTPROPS](/windows/desktop/api/oledlg/ns-oledlg-tagoleuiobjectpropsa)türünde bir yapı.
+Ortak OLE nesne özellikleri iletişim kutusunu başlatmak için kullanılan [OLEUIOBJECTPROPS](/windows/win32/api/oledlg/ns-oledlg-oleuiobjectpropsw)türünde bir yapı.
 
 ```
 OLEUIOBJECTPROPS m_op;
@@ -194,11 +194,11 @@ OLEUIOBJECTPROPS m_op;
 
 Bu yapı, genel, bağlantı ve görünüm sayfalarını başlatmak için kullanılan üyeleri içerir.
 
-Daha fazla bilgi için Windows SDK OLEUıOBJECTPROPS ve [Oleuilınkprops](/windows/desktop/api/oledlg/ns-oledlg-tagoleuilinkpropsa) yapılarına bakın.
+Daha fazla bilgi için Windows SDK OLEUıOBJECTPROPS ve [Oleuilınkprops](/windows/win32/api/oledlg/ns-oledlg-oleuilinkpropsw) yapılarına bakın.
 
 ##  <a name="m_psh"></a>Colet Propertiesdialog:: m_psh
 
-Üyeleri iletişim kutusu nesnesinin özelliklerini depolayan [propsheetheader](/windows/desktop/api/prsht/ns-prsht-propsheetheadera_v2)türünde bir yapı.
+Üyeleri iletişim kutusu nesnesinin özelliklerini depolayan [propsheetheader](/windows/win32/api/prsht/ns-prsht-propsheetheadera_v2)türünde bir yapı.
 
 ```
 PROPSHEETHEADER m_psh;
@@ -214,7 +214,7 @@ Bir `COlePropertiesDialog` nesne oluşturduktan sonra, `DoModal` üye işlevini 
 
 ##  <a name="m_vp"></a>Colet Propertiesdialog:: m_vp
 
-OLE nesne özellikleri iletişim kutusunun Görünüm sayfasını başlatmak için kullanılan [Oleuıviewprops](/windows/desktop/api/oledlg/ns-oledlg-tagoleuiviewpropsa)türünde bir yapı.
+OLE nesne özellikleri iletişim kutusunun Görünüm sayfasını başlatmak için kullanılan [Oleuıviewprops](/windows/win32/api/oledlg/ns-oledlg-oleuiviewpropsw)türünde bir yapı.
 
 ```
 OLEUIVIEWPROPS m_vp;

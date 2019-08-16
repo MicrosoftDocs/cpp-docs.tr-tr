@@ -1,21 +1,21 @@
 ---
-title: (C++ COM özniteliği)
+title: dahil etC++ (com özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.include
 helpviewer_keywords:
 - include attribute
 ms.assetid: d23f8b91-fe5b-48fa-9371-8bd73af7b8e3
-ms.openlocfilehash: d9c68601bea4cecd92b371dada5fb086aeb7657f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ece88ebd7b5d9d81beb871427b58a72b2cf02022
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62409453"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69514554"
 ---
 # <a name="include-c"></a>include (C++)
 
-Oluşturulan .idl dosyasına eklenecek bir veya daha fazla üst bilgi dosyaları belirtir.
+Oluşturulan. IDL dosyasına dahil edilecek bir veya daha fazla üst bilgi dosyasını belirtir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -25,18 +25,18 @@ Oluşturulan .idl dosyasına eklenecek bir veya daha fazla üst bilgi dosyaları
 
 ### <a name="parameters"></a>Parametreler
 
-*header_fıle*<br/>
-Oluşturulan .idl dosyasına dahil istediğiniz bir dosya adı.
+*header_file*<br/>
+Oluşturulan. IDL dosyasına dahil etmek istediğiniz dosyanın adı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Dahil** C++ öznitelik neden olan bir `#include` altına yerleştirilecek deyimi `import "docobj.idl"` oluşturulan .idl dosyasındaki deyimi.
+**Include** C++ özniteliği, bir `#include` `import "docobj.idl"` deyimin oluşturulan. IDL dosyasındaki deyimin altına yerleştirilmesine neden olur.
 
-**Dahil** C++ özniteliği ile aynı işlevlere sahip [dahil](/windows/desktop/Midl/include) MIDL özniteliği.
+**Include** C++ özniteliği [Include](/windows/win32/Midl/include) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği nasıl kullanılacağını gösterir **dahil**. Bu örnekte, yalnızca dosya include.h içeren bir `#include` deyimi.
+Aşağıdaki kod, **Include**öğesinin kullanımına ilişkin bir örnek gösterir. Bu örnekte, INCLUDE. h dosyası yalnızca bir `#include` ifade içerir.
 
 ```cpp
 // cpp_attr_ref_include.cpp
@@ -51,12 +51,12 @@ Aşağıdaki kod örneği nasıl kullanılacağını gösterir **dahil**. Bu ör
 
 |||
 |-|-|
-|**İçin geçerlidir**|Her yerde|
+|**Uygulama hedefi**|Yerdeki|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|Yok.|
+|**Gerekli öznitelikler**|Yok.|
 |**Geçersiz öznitelikler**|Yok.|
 
-Daha fazla bilgi için [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
+Daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

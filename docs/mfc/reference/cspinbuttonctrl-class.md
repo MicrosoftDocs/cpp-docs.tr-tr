@@ -32,12 +32,12 @@ helpviewer_keywords:
 - CSpinButtonCtrl [MFC], SetPos
 - CSpinButtonCtrl [MFC], SetRange
 ms.assetid: 509bfd76-1c5a-4af6-973f-e133c0b87734
-ms.openlocfilehash: da247524dae77627bbf041b83bc1534a75c3b073
-ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
+ms.openlocfilehash: c167745eed45b7081e62a2c3be225a33e7ee0520
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68916696"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69502436"
 ---
 # <a name="cspinbuttonctrl-class"></a>CSpinButtonCtrl sınıfı
 
@@ -117,7 +117,7 @@ virtual BOOL Create(
 ### <a name="parameters"></a>Parametreler
 
 *dwStyle*<br/>
-Döndürme düğmesi denetiminin stilini belirtir. Denetime herhangi bir döndürme düğmesi denetim stillerinin birleşimini uygulayın. Bu stiller Windows SDK [Yukarı açılan denetim stillerinde](/windows/desktop/Controls/up-down-control-styles) açıklanmıştır.
+Döndürme düğmesi denetiminin stilini belirtir. Denetime herhangi bir döndürme düğmesi denetim stillerinin birleşimini uygulayın. Bu stiller Windows SDK [Yukarı açılan denetim stillerinde](/windows/win32/Controls/up-down-control-styles) açıklanmıştır.
 
 *Rect*<br/>
 Döndürme düğmesi denetiminin boyutunu ve konumunu belirtir. Bu bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya bir [Rect](/previous-versions/dd162897\(v=vs.85\)) yapısı olabilir
@@ -154,10 +154,10 @@ virtual BOOL CreateEx(
 ### <a name="parameters"></a>Parametreler
 
 *dwExStyle*<br/>
-Oluşturulmakta olan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows stillerinin listesi için, Windows SDK için bkz. [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) Için *dwExStyle* parametresi.
+Oluşturulmakta olan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows stillerinin listesi için, Windows SDK için bkz. [CreateWindowEx](/windows/win32/api/winuser/nf-winuser-createwindowexw) Için *dwExStyle* parametresi.
 
 *dwStyle*<br/>
-Döndürme düğmesi denetiminin stilini belirtir. Denetime herhangi bir döndürme düğmesi denetim stillerinin birleşimini uygulayın. Bu stiller Windows SDK [Yukarı açılan denetim stillerinde](/windows/desktop/Controls/up-down-control-styles) açıklanmıştır.
+Döndürme düğmesi denetiminin stilini belirtir. Denetime herhangi bir döndürme düğmesi denetim stillerinin birleşimini uygulayın. Bu stiller Windows SDK [Yukarı açılan denetim stillerinde](/windows/win32/Controls/up-down-control-styles) açıklanmıştır.
 
 *Rect*<br/>
 *PParentWnd*istemci koordinatları içinde oluşturulacak pencerenin boyutunu ve konumunu açıklayan bir [Rect](/previous-versions/dd162897\(v=vs.85\)) yapısına başvuru.
@@ -200,7 +200,7 @@ UINT GetAccel(
 Dizide *pAccel*tarafından belirtilen öğe sayısı.
 
 *pAccel*<br/>
-Hızlandırma bilgilerini alan bir [Uıdaccel](/windows/desktop/api/commctrl/ns-commctrl-udaccel) yapıları dizisine yönelik işaretçi.
+Hızlandırma bilgilerini alan bir [Uıdaccel](/windows/win32/api/commctrl/ns-commctrl-udaccel) yapıları dizisine yönelik işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -298,7 +298,7 @@ BOOL SetAccel(
 ### <a name="parameters"></a>Parametreler
 
 *nAccel*<br/>
-*PAccel*tarafından belirtilen [uıdaccel](/windows/desktop/api/commctrl/ns-commctrl-udaccel) yapılarının sayısı.
+*PAccel*tarafından belirtilen [uıdaccel](/windows/win32/api/commctrl/ns-commctrl-udaccel) yapılarının sayısı.
 
 *pAccel*<br/>
 Hızlandırma bilgilerini içeren bir UıDACCEL yapıları dizisine yönelik işaretçi. Öğeler, `nSec` üyeye göre artan sırada sıralanmalıdır.

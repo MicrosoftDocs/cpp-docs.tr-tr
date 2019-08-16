@@ -8,44 +8,44 @@ helpviewer_keywords:
 - notifications [MFC], tool tips
 - tool tips [MFC], notifications
 ms.assetid: d0370a65-21ba-4676-bcc5-8cf851bbb15c
-ms.openlocfilehash: 97db98322cd7c0d14e46f54a055bbc646c90d785
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a63154f3da539676f31709899568b6486dc6017e
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62240395"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69508527"
 ---
-# <a name="handling-ttnneedtext-notification-for-tool-tips"></a>Araç İpuçları için TTN_NEEDTEXT Bildirimini İşleme
+# <a name="handling-ttn_needtext-notification-for-tool-tips"></a>Araç İpuçları için TTN_NEEDTEXT Bildirimini İşleme
 
-Bir parçası olarak [araç ipuçlarını etkinleştirme](../mfc/enabling-tool-tips.md), ele **TTN_NEEDTEXT** sahibi pencerenin ileti eşlemesi için şu girdiyi ekleyerek, ileti:
+[Araç ipuçlarının etkinleştirilmesi](../mfc/enabling-tool-tips.md)kapsamında, sahip pencerenizin ileti eşlemesine aşağıdaki girdiyi ekleyerek **TTN_NEEDTEXT** iletisini işleyebilirsiniz:
 
 [!code-cpp[NVC_MFCControlLadenDialog#40](../mfc/codesnippet/cpp/handling-ttn-needtext-notification-for-tool-tips_1.cpp)]
 
 *memberFxn*<br/>
-Bu düğme için metin gerektiğinde çağrılacak üye işlevi.
+Bu düğme için metin gerektiğinde çağrılacak üye işlev.
 
-Bir araç ipucu kimliği her zaman olduğuna dikkat edin 0.
+Araç ipucu KIMLIĞININ her zaman 0 olduğunu unutmayın.
 
-Sınıf tanımında, işleyici işlevi şu şekilde bildirin:
+Aşağıdaki gibi, sınıf tanımında işleyici işlevinizi bildirin:
 
 [!code-cpp[NVC_MFCControlLadenDialog#53](../mfc/codesnippet/cpp/handling-ttn-needtext-notification-for-tool-tips_2.h)]
 
-Burada italik Parametreler şunlardır:
+italik parametrelerin bulunduğu yer:
 
 *id*<br/>
-Bildirim gönderilen denetim tanımlayıcısı. Kullanılmadı. Denetim Kimliği alınır **NMHDR** yapısı.
+Bildirimi gönderen denetimin tanımlayıcısı. Kullanılmadı. Denetim kimliği, **nmhdr** yapısından alınır.
 
 *pNMHDR*<br/>
-Bir işaretçi [NMTTDISPINFO](/windows/desktop/api/commctrl/ns-commctrl-tagnmttdispinfoa) yapısı. Bu yapı ayrıca ele alınan ayrıntılı olarak [TOOLTIPTEXT yapısı](../mfc/tooltiptext-structure.md).
+[Nmttdispınfo](/windows/win32/api/commctrl/ns-commctrl-nmttdispinfow) yapısına yönelik bir işaretçi. Bu yapı ayrıca [araç Ipucu yapısında](../mfc/tooltiptext-structure.md)daha da tartışılır.
 
 *pResult*<br/>
-Sonuç kodu için bir işaretçi, dönmeden önce ayarlayabilirsiniz. **TTN_NEEDTEXT** işleyicileri yok sayabilirsiniz *pResult* parametresi.
+Döndürmeden önce ayarlayabileceğiniz sonuç kodu işaretçisi. **TTN_NEEDTEXT** işleyicileri *pResult* parametresini yoksayabilir.
 
-Bir form görünümü bildirim işleyici, örneğin:
+Bir form-görünüm bildirim işleyicisine örnek olarak:
 
 [!code-cpp[NVC_MFCControlLadenDialog#54](../mfc/codesnippet/cpp/handling-ttn-needtext-notification-for-tool-tips_3.cpp)]
 
-Çağrı `EnableToolTips` (alınan bu parçasını `OnInitDialog`):
+Çağrı `EnableToolTips` (Bu parçanın alındığı yer `OnInitDialog`):
 
 [!code-cpp[NVC_MFCControlLadenDialog#55](../mfc/codesnippet/cpp/handling-ttn-needtext-notification-for-tool-tips_4.cpp)]
 

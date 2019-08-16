@@ -52,12 +52,12 @@ helpviewer_keywords:
 - CPropertySheet [MFC], SetWizardMode
 - CPropertySheet [MFC], m_psh
 ms.assetid: 8461ccff-d14f-46e0-a746-42ad642ef94e
-ms.openlocfilehash: edae0e3d4751461bc8a5eb6644f5fdc62b0a5e8a
-ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
+ms.openlocfilehash: 23d17aee2aacbc1484c0f3e181bc824546ab49a2
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68916852"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69502821"
 ---
 # <a name="cpropertysheet-class"></a>CPropertySheet sınıfı
 
@@ -107,13 +107,13 @@ class CPropertySheet : public CWnd
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CPropertySheet:: m_psh](#m_psh)|Windows [propsheetheader](/windows/desktop/api/prsht/ns-prsht-propsheetheadera_v2) yapısı. Temel özellik sayfası parametrelerine erişim sağlar.|
+|[CPropertySheet:: m_psh](#m_psh)|Windows [propsheetheader](/windows/win32/api/prsht/ns-prsht-propsheetheadera_v2) yapısı. Temel özellik sayfası parametrelerine erişim sağlar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
 Bir özellik sayfası bir `CPropertySheet` nesne ve bir veya daha fazla [CPropertyPage](../../mfc/reference/cpropertypage-class.md) nesnesinden oluşur. Framework, bir özellik sayfasını bir sekme dizini kümesi ve şu anda seçili olan sayfayı içeren bir alan olan bir pencere olarak görüntüler. Kullanıcı ilgili sekmeyi kullanarak belirli bir sayfaya gider.
 
-`CPropertySheet`Windows 98 ve Windows NT 2000 ' de tanıtılan genişletilmiş [propsheetheader](/windows/desktop/api/prsht/ns-prsht-propsheetheadera_v2) yapısına yönelik destek sağlar. Yapı, "filigran" arka plan bit eşlemi kullanımını destekleyen ek bayraklar ve Üyeler içerir.
+`CPropertySheet`Windows 98 ve Windows NT 2000 ' de tanıtılan genişletilmiş [propsheetheader](/windows/win32/api/prsht/ns-prsht-propsheetheadera_v2) yapısına yönelik destek sağlar. Yapı, "filigran" arka plan bit eşlemi kullanımını destekleyen ek bayraklar ve Üyeler içerir.
 
 Bu yeni görüntüleri Özellik sayfası nesneniz içinde otomatik olarak göstermek için, [CPropertySheet:: yapı](#construct) veya [CPropertySheet:: CPropertySheet](#cpropertysheet)çağrısında bit eşlem ve palet görüntüleri için geçerli değerleri geçirin.
 
@@ -584,7 +584,7 @@ Sekme denetimine yönelik bir işaretçi.
 
 ##  <a name="m_psh"></a>CPropertySheet:: m_psh
 
-Üyeleri [propsheetheader](/windows/desktop/api/prsht/ns-prsht-propsheetheadera_v2)özelliklerini depolayan bir yapı.
+Üyeleri [propsheetheader](/windows/win32/api/prsht/ns-prsht-propsheetheadera_v2)özelliklerini depolayan bir yapı.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -613,7 +613,7 @@ Dönüştürülecek iletişim kutusu koordinatlarını içeren bir [Rect](/previ
 
 İletişim kutusu birimleri, iletişim kutusu metni için kullanılan yazı tipindeki ortalama genişlik ve karakterlerin yüksekliğinden türetilmiş geçerli iletişim kutusu taban birimi açısından belirtilir. Bir yatay birim iletişim kutusu taban genişliği biriminin dörtte biridir ve bir dikey birim iletişim kutusu Taban yükseklik biriminin sekizde biridir.
 
-[GetDialogBaseUnits](/windows/desktop/api/winuser/nf-winuser-getdialogbaseunits) Windows işlevi, sistem yazı tipi için boyut bilgilerini döndürür, ancak kaynak tanımı dosyasında DS_SETFONT stilini kullanırsanız her bir özellik sayfası için farklı bir yazı tipi belirtebilirsiniz. Windows SDK açıklanan [MapDialogRect](/windows/desktop/api/winuser/nf-winuser-mapdialogrect) Windows işlevi, bu iletişim kutusu için uygun yazı tipini kullanır.
+[GetDialogBaseUnits](/windows/win32/api/winuser/nf-winuser-getdialogbaseunits) Windows işlevi, sistem yazı tipi için boyut bilgilerini döndürür, ancak kaynak tanımı dosyasında DS_SETFONT stilini kullanırsanız her bir özellik sayfası için farklı bir yazı tipi belirtebilirsiniz. Windows SDK açıklanan [MapDialogRect](/windows/win32/api/winuser/nf-winuser-mapdialogrect) Windows işlevi, bu iletişim kutusu için uygun yazı tipini kullanır.
 
 Üye işlevi, *loprect* 'daki iletişim kutusu birimlerinin yerini ekran birimleri (piksel) ile değiştirir, böylece dikdörtgen bir iletişim kutusu oluşturmak veya bir kutuyu kutu içinde konumlandırmak için kullanılabilir. `MapDialogRect`
 
@@ -666,9 +666,9 @@ Ndüğme Basılan düğmeyi tanımlar. Bu parametre aşağıdaki değerlerden bi
 
 ### <a name="remarks"></a>Açıklamalar
 
-PressButton iletisi Windows SDK hakkında daha fazla bilgi için bkz. [PSM_PRESSBUTTON](/windows/desktop/Controls/psm-pressbutton) .
+PressButton iletisi Windows SDK hakkında daha fazla bilgi için bkz. [PSM_PRESSBUTTON](/windows/win32/Controls/psm-pressbutton) .
 
-' A yapılan `PressButton` bir çağrı, bir özellik sayfasından çerçeveye [PSN_APPLY](/windows/desktop/Controls/psn-apply) bildirimi göndermeyecektir. Bu bildirimi göndermek için [CPropertyPage:: OnOK](../../mfc/reference/cpropertypage-class.md#onok)çağırın.
+' A yapılan `PressButton` bir çağrı, bir özellik sayfasından çerçeveye [PSN_APPLY](/windows/win32/Controls/psn-apply) bildirimi göndermeyecektir. Bu bildirimi göndermek için [CPropertyPage:: OnOK](../../mfc/reference/cpropertypage-class.md#onok)çağırın.
 
 ### <a name="example"></a>Örnek
 

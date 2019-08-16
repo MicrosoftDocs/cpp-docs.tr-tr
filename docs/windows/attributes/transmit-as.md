@@ -1,21 +1,21 @@
 ---
-title: transmit_as (C++ COM özniteliği)
+title: transmit_as (C++ com özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.transmit_as
 helpviewer_keywords:
 - transmit_as attribute
 ms.assetid: 53d0b8ab-5b06-423e-83eb-3d01a10424b2
-ms.openlocfilehash: e432d1a8f39cbc5e12f192ed7b07c29421bc403e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 939013e43f08aeda788e468c995f1736cf6b6928
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62407178"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69513917"
 ---
-# <a name="transmitas"></a>transmit_as
+# <a name="transmit_as"></a>transmit_as
 
-İstemci ve sunucu uygulamaları işlemek, sunulan bir türü iletilen türüyle ilişkilendirmek için derleyicinin sağlar.
+Derleyiciye, iletilen bir tür ile istemci ve sunucu uygulamalarının işlemekte olan bir türü ilişkilendireceğini bildirir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -30,11 +30,11 @@ ms.locfileid: "62407178"
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Transmit_as** C++ özniteliği ile aynı işlevlere sahip [transmit_as](/windows/desktop/Midl/transmit-as) MIDL özniteliği.
+**Transmit_as** C++ özniteliği, [transmit_as](/windows/win32/Midl/transmit-as) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod, bir kullanımını göstermektedir. **transmit_as** özniteliği:
+Aşağıdaki kod **transmit_as** özniteliğinin kullanımını gösterir:
 
 ```cpp
 // cpp_attr_ref_transmit_as.cpp
@@ -70,12 +70,12 @@ struct _TREE_NODE_TYPE * right;
 
 |||
 |-|-|
-|**İçin geçerlidir**|**tür tanımı**|
+|**Uygulama hedefi**|**genişletiyor**|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|Yok.|
+|**Gerekli öznitelikler**|Yok.|
 |**Geçersiz öznitelikler**|Yok.|
 
-Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
+Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

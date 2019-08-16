@@ -1,37 +1,37 @@
 ---
-title: Üstbilgi öğesi özelleştirme&#39;görünümünü
+title: Üst bilgi öğesi&#39;görünümünü özelleştirme
 ms.date: 11/04/2016
 helpviewer_keywords:
 - header controls [MFC], customization of items
 - CHeaderCtrl class [MFC], customizing the items
 - HDS_ styles
 ms.assetid: b1e1e326-ec7d-4dbd-a46f-96a3e2055618
-ms.openlocfilehash: 081260bd5c1cf6335d398a4fd773c9590dbc8030
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6ce676695d717fcc5d418fe4ed5df91b4f9bca95
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62241595"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69508711"
 ---
-# <a name="customizing-the-header-item39s-appearance"></a>Üstbilgi öğesi özelleştirme&#39;görünümünü
+# <a name="customizing-the-header-item39s-appearance"></a>Üst bilgi öğesi&#39;görünümünü özelleştirme
 
-Ayarlayarak *dwStyle* parametre bir üst bilgi denetiminin ilk oluşturduğunuzda ([CHeaderCtrl::Create](../mfc/reference/cheaderctrl-class.md#create)), görünüm tanımlayabilirsiniz ve üst bilgisi davranışını öğelerini ya da kendi üst denetim.
+İlk olarak bir üst bilgi denetimi oluştururken *dwStyle* parametresini ayarlayarak ([CHeaderCtrl:: Create](../mfc/reference/cheaderctrl-class.md#create)), üst bilgi öğelerinin veya üst bilgi denetiminin görünümünü ve davranışını tanımlayabilirsiniz.
 
-Ayarlayabileceğiniz stilleri ve bunların amacı bazıları aşağıda verilmiştir:
+Ayarlayabileceğiniz stillerin bir örneklemesini ve amaçlarını aşağıda bulabilirsiniz:
 
-- Bir basma düğmesi gibi ara bir üst öğe yapma **HDS_BUTTONS** stili.
+- Bir üst bilgi öğesinin basma gibi görünmesini sağlamak için **HDS_BUTTONS** stilini kullanın.
 
-   Microsoft Outlook içinde olduğu gibi verileri belirli bir sütuna göre sıralama gibi bir üst öğe üzerinde fare tıklamalara yanıt eylemleri gerçekleştirmek istiyorsanız bu stil kullanın.
+   Verileri belirli bir sütuna göre sıralama, Microsoft Outlook 'ta yapıldığı gibi, bir üst bilgi öğesinde fare tıklamalarına yanıt olarak uygulamak istiyorsanız bu stili kullanın.
 
-- Fare imlecini geçerken üstbilgi öğeleri "sıcak takibi" görünümü vermek için kullanın **HDS_HOTTRACK** stili.
+- Üst bilgi öğelerine fare imleci üzerinden geçtiğinde bir "sık izleme" görünümü vermek için, **HDS_HOTTRACK** stilini kullanın.
 
-   İşaretçiyi bir öğe yoksa düz üzerinden geçerken sıcak takibi görüntüler 3B anahat çubuğu.
+   Etkin izleme, işaretçinin Aksi halde düz bir çubukta bir öğe üzerinden geçtiği bir 3B ana hat görüntüler.
 
-- Üstbilgi denetimi gizlenmelidir belirtmek için kullanın **HDS_HIDDEN** stili.
+- Üst bilgi denetiminin gizlenmesi gerektiğini göstermek için **HDS_HIDDEN** stilini kullanın.
 
-   **HDS_HIDDEN** stilini gösterir üstbilgi denetimi veri kapsayıcısını ve görsel bir denetim kullanılmak üzere tasarlanmıştır. Bu stil denetimi otomatik olarak gizlemek olmayan, ancak bunun yerine, davranışını etkileyen `CHeaderCtrl::Layout`. Döndürülen değer *cy* üyesi `WINDOWPOS` yapısı, sıfır olacaktır gösteren denetimi kullanıcıya görünür olmamalıdır.
+   **HDS_HIDDEN** stili, üst bilgi denetiminin bir görsel denetim değil, veri kapsayıcısı olarak kullanılması amaçlandığını gösterir. Bu stil, denetimi otomatik olarak gizlemez, ancak bunun yerine davranışını `CHeaderCtrl::Layout`etkiler. `WINDOWPOS` Yapının *Cy* üyesinde döndürülen değer, denetimin kullanıcıya görünür olmaması gerektiğini belirten sıfır olacaktır.
 
-Bu özellikler hakkında daha fazla bilgi için bkz. [öğeleri](/windows/desktop/Controls/header-controls) Windows SDK. Üstbilgi denetimine öğe ekleme hakkında daha fazla bilgi için bkz: [üstbilgi denetimine öğe eklemeyi](../mfc/adding-items-to-the-header-control.md).
+Bu özellikler hakkında daha fazla bilgi için Windows SDK [öğeler](/windows/win32/Controls/header-controls) bölümüne bakın. Üst bilgi denetimine öğe ekleme hakkında daha fazla bilgi için bkz. [üst bilgi denetimine öğe ekleme](../mfc/adding-items-to-the-header-control.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

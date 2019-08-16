@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: Kaynaklar (C++) yönetme'
+title: 'Nasıl yapılır: Kaynakları yönetme (C++)'
 ms.date: 02/14/2019
 f1_keywords:
 - vc.resvw.resource.copying
@@ -30,97 +30,97 @@ helpviewer_keywords:
 - cursors [C++], importing and exporting
 - images [C++], exporting
 ms.assetid: 65f523e8-017f-4fc6-82d1-083c56d9131f
-ms.openlocfilehash: 28678b560387fa6b111d60a7487ed44f9244a821
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: 56cff04d64f2f0a64fc216fbd418954b4c11b0f2
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65449064"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69514744"
 ---
-# <a name="how-to-manage-resources-c"></a>Nasıl yapılır: Kaynaklar (C++) yönetme
+# <a name="how-to-manage-resources-c"></a>Nasıl yapılır: Kaynakları yönetme (C++)
 
-## <a name="copy-and-edit-resources"></a>Kopyalama ve düzenleme kaynakları
+## <a name="copy-and-edit-resources"></a>Kaynakları kopyalama ve düzenleme
 
-Kaynakları bir dosyadan başka değiştirmenizi veya kopyalama sırasında dilini veya koşulunu bir kaynağı değiştirme olmadan kopyalayabilirsiniz.
+Kaynakları değiştirmeden bir dosyadan diğerine kopyalayabilir veya bir kaynağı kopyalarken bir kaynağın dilini veya koşulunu değiştirmenize olanak sağlayabilirsiniz.
 
-Kolayca kaynakları bir var olan bir kaynak veya yürütülebilir dosyanın geçerli kaynak dosyaya kopyalayabilirsiniz. Kaynak kopyalamak için kaynakları içeren aynı anda hem dosyaları açmak ve öğeleri bir dosyadan sürükleyin veya kopyalayıp iki dosya arasında. Bu yöntem, kaynak betiği (.rc) dosyalarını ve kaynak şablonu (.rct) dosyaları ve yürütülebilir (.exe) dosyaları olarak çalışır.
+Kaynakları var olan bir kaynaktan veya yürütülebilir dosyadan geçerli kaynak dosyanıza kolayca kopyalayabilirsiniz. Kaynakları kopyalamak için, her iki dosyayı aynı anda açar ve öğeleri bir dosyadan diğerine sürükleyin veya iki Dosya arasında kopyalayıp yapıştırın. Bu yöntem, kaynak betiği (. RC) dosyaları ve kaynak şablonu (. rct) dosyaları ve yürütülebilir (. exe) dosyaları için geçerlidir.
 
 > [!NOTE]
-> Visual C++, kendi uygulamanızda kullanabileceğiniz örnek kaynak dosyalarını içerir. Daha fazla bilgi için [küçük: Ortak kaynakları](https://github.com/Microsoft/VCSamples).
+> Görsel C++ , kendi uygulamanızda kullanabileceğiniz örnek kaynak dosyalarını içerir. Daha fazla bilgi için bkz [. CLIPART: Ortak kaynaklar](https://github.com/Microsoft/VCSamples).
 
-Sürükleyin ve bırakın, kesme, kopyalayamaz veya projedeki kaynak dosyaları arasında yapıştırın (**kaynak görünümü**) ve belge pencerelerinin tek başına bir .rc dosyası açın. Bu ürünün önceki sürümlerinde yapabilirsiniz. Yalnızca projenin dışında açık olan .rc dosyası arasında sürükle ve bırak yöntemini kullanın.
+Projedeki kaynak dosyaları (**kaynak görünümü**) ve tek başına. RC dosyaları arasında sürükleyip bırakamazsınız, kopyalayamaz, kesebilir veya yapıştıramazsınız. Bunu ürünün önceki sürümlerinde yapabilirsiniz. Yalnızca proje dışında açık olan. RC dosyaları arasında sürükle ve bırak yöntemini kullanın.
 
-### <a name="to-copy-resources"></a>Kaynak kopyalamak için
+### <a name="to-copy-resources"></a>Kaynakları kopyalamak için
 
-1. Tek başına hem de kaynak dosyalarını açın. (Bkz [kaynak betik dosyalarına kullanın](how-to-create-a-resource-script-file.md#use-resource-script-files)). Örneğin, açmak *Source1.rc* ve *Source2.rc*.
+1. Her iki kaynak dosyasını tek başına açın. (Bkz. [kaynak komut dosyalarını kullanma](how-to-create-a-resource-script-file.md#use-resource-script-files)). Örneğin, *Source1. RC* ve *source2. RC*' yi açın.
 
-1. İçinde ilk .rc dosyası ya da:
+1. İlk. rc dosyasının içinde, aşağıdakilerden birini yapın:
 
-   - Sürükle ve bırak yöntemini kullanın
+   - Sürükle ve bırak yöntemini kullanma
 
-      1. Kopyalamak istediğiniz kaynağı seçin. Örneğin, *Source1.rc*seçin **IDD_DIALOG1**.
+      1. Kopyalamak istediğiniz kaynağı seçin. Örneğin, *Source1. RC*dosyasında **IDD_DIALOG1**' yi seçin.
 
-      1. Basılı **Ctrl** anahtar ve ikinci .rc dosyası için kaynak sürükleyin. Örneğin, sürükleyin **IDD_DIALOG1** gelen *Source1.rc* için *Source2.rc*.
+      1. **CTRL** tuşunu basılı tutun ve kaynağı ikinci. rc dosyasına sürükleyin. Örneğin, **IDD_DIALOG1** from *Source1. RC* ' den *source2. RC*' ye sürükleyin.
 
          > [!TIP]
-         > Basılı tutulmadan kaynak sürükleyerek **Ctrl** kopyalamak yerine kaynak anahtarı taşır.
+         > Kaynağı **CTRL** tuşunu basılı tutmaya gerek kalmadan sürüklemek, kaynağı kopyalamak yerine bir konuma taşımakta.
 
-   - Kopyala ve Yapıştır yöntemi
+   - Kopyala ve Yapıştır yöntemini kullanma
 
-      1. Kaynağa sağ sizinle kopyalamak için (örneğin, *Source1.rc*) seçip **kopyalama**.
+      1. Kopyalamak istediğiniz kaynağa (örneğin, *Source1. RC*) sağ tıklayın ve **Kopyala**' yı seçin.
 
-      1. İçine istediğiniz kaynak yapıştırın kaynak dosyaya sağ tıklayın (örneğin, *Source2.rc*) seçip **yapıştırın**.
+      1. Kaynağı yapıştırmak istediğiniz kaynak dosyasına (örneğin, *source2. RC*) sağ tıklayın ve **Yapıştır**' ı seçin.
 
 > [!NOTE]
-> Yeni dosyayı kopyaladığınızda, sembol adlarını veya var olan dosyayı değerleri ile çakışmaları önlemek için Visual C++ aktarılan kaynak sembol değeri veya sembol adını ve değerini değişebilir.
+> Var olan dosyadaki sembol adlarıyla veya değerlerle çakışmayı önlemek için, görsel C++ aktarılan kaynağın sembol değerini veya sembol adını ve değerini yeni dosyaya kopyaladığınızda değiştirebilir.
 
-Bir kaynak olarak kopyalarken, kendi dil özelliği veya koşul özelliğini veya her ikisi de değiştirebilirsiniz.
+Bir kaynağa kopyalarken, kendi dil özelliğini veya koşul özelliğini ya da her ikisini de değiştirebilirsiniz.
 
-- Tarafından kullanılan dil olan bir kaynağın dilini belirtir [FindResource](/windows/desktop/api/winbase/nf-winbase-findresourcea) , aradığınız kaynak belirlemenize yardımcı olması için. Metne ilişkili olmayan farklar her dil için kaynaklara sahip olabilir, örneğin, Japonca klavyede yalnızca işe yarayabilir Hızlandırıcıları ya da yalnızca yerelleştirilmiş Çince uygun olacağı bir bit eşlem oluşturur.
+- Bir kaynağın dili, aradığınız kaynağın tanımlanmasına yardımcı olmak için [FindResource](/windows/win32/api/winbase/nf-winbase-findresourcew) tarafından kullanılan dili belirtir. Kaynaklar, metinle ilgili olmayan her dil için, örneğin yalnızca Japonca bir klavyede veya yalnızca Çince yerelleştirilmiş derlemeler için uygun bir bit eşlemde çalışan Hızlandırıcılar için farklılık gösterebilir.
 
-- Bir kaynağı tanımlayan bir koşul altında kullanılacak bu belirli kaynak kopyası olan bir tanımlanmış sembol durumdur.
+- Bir kaynağın koşulu, kaynağın bu kopyasının kullanılacağı koşulu tanımlayan tanımlı bir simgedir.
 
-Dil ve kaynak durumu, parantez içine kaynak adından sonra gösterilir **çalışma** penceresi. Burada kaynak adlı `IDD_AboutBox` kullanıyor `Finnish` kendi dil ve bunun koşul `XX33`:
+Bir kaynağın dili ve koşulu, **çalışma alanı** penceresinde kaynağın adından sonra parantez içinde gösterilir. Burada adlı `IDD_AboutBox` `XX33`kaynak, dili olarak kullanılıyor ve durumu şu şekildedir: `Finnish`
 
 ```cpp
 IDD_AboutBox (Finnish - XX33)
 ```
 
-### <a name="to-copy-an-existing-resource-and-change-its-language-or-condition"></a>Mevcut bir kaynağı kopyalayın ve kendi dilini veya koşulunu değiştirme
+### <a name="to-copy-an-existing-resource-and-change-its-language-or-condition"></a>Var olan bir kaynağı kopyalamak ve dilini veya koşulunu değiştirmek için
 
-İçinde *.rc* dosya veya [kaynak görünümü](how-to-create-a-resource-script-file.md#create-resources) penceresinde kopyalayın ve istediğiniz kaynağa sağ **Ekle kopyalama**. Ardından aşağıdakileri ayarlayın:
+*. RC* dosyasında veya [kaynak görünümü](how-to-create-a-resource-script-file.md#create-resources) penceresinde, kopyalamak istediğiniz kaynağa sağ tıklayın ve **kopya Ekle**' yi seçin. Ardından şunları ayarlayın:
 
-- İçin **dil** liste kutusunda, bir dil seçin.
+- **Dil** liste kutusu için dili seçin.
 
-- İçinde **koşul** koşul yazın.
+- **Koşul** kutusuna koşulu yazın.
 
 ### <a name="to-edit-resources"></a>Kaynakları düzenlemek için
 
-Yönetilen kaynak (.resx) dosyaları XML dosyalarıdır. Yönetilen kaynak dosyasını projenizden eklediğinizde **Yeni Öğe Ekle** iletişim kutusu, **yönetilen kaynaklar düzenleyicisini** varsayılan olarak açılır.
+Yönetilen kaynak (. resx) dosyaları XML dosyalarıdır. Projenize bir yönetilen kaynak dosyası eklediğinizde **Yeni öğe Ekle** iletişim kutusundan, **yönetilen kaynaklar Düzenleyicisi** varsayılan olarak açılır.
 
-## <a name="import-and-export-resources"></a>İçeri ve dışarı aktarma kaynakları
+## <a name="import-and-export-resources"></a>Kaynakları içeri ve dışarı aktarma
 
-Grafik kaynakları (bit eşlemler, simgeler, işaretçiler ve araç çubukları), HTML dosyaları ve Visual C++'ta kullanmak için özel kaynaklar içeri aktarabilirsiniz. Visual Studio'dan aynı dosya türlerini dışarı aktarabilirsiniz C++ geliştirme ortamının dışında kullanılan dosyaları ayırmak için proje.
-
-> [!NOTE]
-> Dize tabloları hızlandırıcıları ve iletişim kutuları gibi kaynak türleri içeri aktarılabilir veya değil tek başına dosya türleri olduğundan dışarı.
-
-### <a name="to-import-a-resource-into-the-resource-script-file"></a>Kaynak betik dosyasına bir kaynak içeri aktarmak için
-
-1. İçinde [kaynak görünümü](how-to-create-a-resource-script-file.md#create-resources) düğümü istediğiniz bir kaynak ekleyin ve seçmek kaynak betiği (.rc) dosyasının **alma**.
-
-1. Bulun ve bit eşlem (.bmp), simge (.ico), imleç (.cur), html dosyası (.htm) veya başka bir dosyayı içeri aktarmak için dosya adını seçin.
-
-1. Seçin **Tamam** kaynak kaynak betik dosyasına eklenecek.
+Görsel C++olarak kullanmak için grafik kaynaklarını (bit eşlemler, simgeler, imleçler ve araç çubukları), HTML dosyalarını ve özel kaynakları içeri aktarabilirsiniz. Visual Studio C++ projesinden aynı dosya türlerini, geliştirme ortamının dışında kullanılabilecek dosyaları ayırmak için de aktarabilirsiniz.
 
 > [!NOTE]
-> İçeri aktarma işlemi hangi kaynak türünü olursa olsun seçtiğiniz aynı şekilde çalışır. İçeri aktarılan kaynak, kaynak türü doğru düğüme otomatik olarak eklenir.
+> Tek başına dosya türleri olmadığından Hızlandırıcılar, iletişim kutuları ve dize tabloları gibi kaynak türleri içeri aktarılamaz veya verilemez.
 
-### <a name="to-export-a-resource-for-use-outside-of-visual-c"></a>Visual C++ dışında kullanmak için bir kaynak dışarı aktarmak için
+### <a name="to-import-a-resource-into-the-resource-script-file"></a>Kaynak betik dosyasına bir kaynağı içeri aktarmak için
 
-1. İçinde [kaynak görünümü](how-to-create-a-resource-script-file.md#create-resources), seçin ve dışarı aktarmak istediğiniz kaynağa sağ **dışarı**. Geçerli dosya adı kabul edin veya yeni bir tane girin.
+1. [Kaynak görünümü](how-to-create-a-resource-script-file.md#create-resources) , kaynak eklemek istediğiniz kaynak betiği (. RC) dosyasının düğümüne sağ tıklayın ve **içeri aktar**' ı seçin.
 
-1. Dosyayı kaydedin ve seçmek için istediğiniz klasöre gidin **dışarı**.
+1. Bit eşlem (. bmp), simge (. ico), imleç (. cur), HTML dosyası (. htm) veya içe aktarılacak başka bir dosyanın dosya adını bulun ve seçin.
+
+1. Kaynağı kaynak betik dosyasına eklemek için **Tamam ' ı** seçin.
+
+> [!NOTE]
+> İçeri aktarma işlemi, seçtiğiniz kaynak türü ne olduğuna bakılmaksızın aynı şekilde işler. İçeri aktarılan kaynak, kaynak türünün doğru düğümüne otomatik olarak eklenir.
+
+### <a name="to-export-a-resource-for-use-outside-of-visual-c"></a>Bir kaynağı görsel dışında kullanmak üzere dışarı aktarmak içinC++
+
+1. [Kaynak görünümü](how-to-create-a-resource-script-file.md#create-resources), dışarı aktarmak istediğiniz kaynağa sağ tıklayın ve **dışarı aktar**' ı seçin. Geçerli dosya adını kabul edebilir veya yeni bir tane yazabilirsiniz.
+
+1. Dosyayı kaydetmek istediğiniz klasöre gidin ve **dışarı aktar**' ı seçin.
 
 ## <a name="requirements"></a>Gereksinimler
 

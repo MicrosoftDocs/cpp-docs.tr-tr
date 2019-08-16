@@ -1,21 +1,21 @@
 ---
-title: nonbrowsable (C++ COM özniteliği)
+title: gözatılabilir (C++ com özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.nonbrowsable
 helpviewer_keywords:
 - nonbrowsable attribute
 ms.assetid: e71a98e7-4b65-454a-9829-342b9f2a84be
-ms.openlocfilehash: 0a5e01c0fde49c7debb7749f5a1d148acb9cca6f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8b1849aa75e61ea5e369a277cab0b1327f48a28a
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62409128"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69514391"
 ---
 # <a name="nonbrowsable"></a>nonbrowsable
 
-Bir arabirim üyesi bir özellik tarayıcısında görüntülenmemelidir gösterir.
+Bir arabirim üyesinin bir özellik tarayıcısında görüntülenmemesi gerektiğini belirtir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -25,7 +25,7 @@ Bir arabirim üyesi bir özellik tarayıcısında görüntülenmemelidir göster
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Nonbrowsable** C++ özniteliği ile aynı işlevlere sahip [nonbrowsable](/windows/desktop/Midl/nonbrowsable) MIDL özniteliği.
+**Gözatılabilir** C++ öznitelik, [gözatılabilir](/windows/win32/Midl/nonbrowsable) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
 
 ## <a name="example"></a>Örnek
 
@@ -49,12 +49,12 @@ __interface IMyI
 
 |||
 |-|-|
-|**İçin geçerlidir**|Arabirim yöntemi|
+|**Uygulama hedefi**|Interface yöntemi|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|None|
+|**Gerekli öznitelikler**|Yok.|
 |**Geçersiz öznitelikler**|Yok.|
 
-Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
+Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

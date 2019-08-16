@@ -1,5 +1,5 @@
 ---
-title: CComObjectNoLock Class
+title: CComObjectNoLock sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CComObjectNoLock
@@ -11,16 +11,16 @@ f1_keywords:
 helpviewer_keywords:
 - CComObjectNoLock class
 ms.assetid: 288c6506-7da8-4127-8d58-7f4bd779539a
-ms.openlocfilehash: 50dc4505c1da8df9efc0c9d0028461ef49c0840e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9253c7495f4d13ed6ce609988251d8abd09592ad
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62246306"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69497030"
 ---
-# <a name="ccomobjectnolock-class"></a>CComObjectNoLock Class
+# <a name="ccomobjectnolock-class"></a>CComObjectNoLock sınıfı
 
-Bu sınıfın uyguladığı `IUnknown` toplanmayan bir nesne, ancak mu modülün kilit sayacını oluşturucuda artırma.
+Bu sınıf, `IUnknown` toplanmayan bir nesne için uygular, ancak oluşturucuda modül kilit sayısını artırmaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -31,8 +31,8 @@ class CComObjectNoLock : public Base
 
 #### <a name="parameters"></a>Parametreler
 
-*temel*<br/>
-Sınıfınız, türetilen [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md) veya [CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md)iyi herhangi diğer bir arabirim uğradıysa nesnede desteklemek istediğiniz gibi.
+*Temel*<br/>
+Sınıfınız, [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md) veya [CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md)öğesinden türetilir ve ayrıca, nesne üzerinde desteklemek istediğiniz diğer herhangi bir arabirimden.
 
 ## <a name="members"></a>Üyeler
 
@@ -41,21 +41,21 @@ Sınıfınız, türetilen [CComObjectRoot](../../atl/reference/ccomobjectroot-cl
 |Ad|Açıklama|
 |----------|-----------------|
 |[CComObjectNoLock::CComObjectNoLock](#ccomobjectnolock)|Oluşturucu.|
-|[CComObjectNoLock::~CComObjectNoLock](#dtor)|Yıkıcı.|
+|[CComObjectNoLock::~CComObjectNoLock](#dtor)|Yok edicisi.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CComObjectNoLock::AddRef](#addref)|Nesnede başvuru sayısını artırır.|
-|[CComObjectNoLock::QueryInterface](#queryinterface)|İstenen arabirim için bir işaretçi döndürür.|
-|[CComObjectNoLock::Release](#release)|Nesnede başvuru sayısını azaltır.|
+|[CComObjectNoLock::AddRef](#addref)|Nesnedeki başvuru sayısını artırır.|
+|[CComObjectNoLock::QueryInterface](#queryinterface)|İstenen arabirime bir işaretçi döndürür.|
+|[CComObjectNoLock::Release](#release)|Nesnedeki başvuru sayısını azaltır.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CComObjectNoLock` benzer [CComObject](../../atl/reference/ccomobject-class.md) uygular, [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) toplanmayan bir nesnenin; ancak, `CComObjectNoLock` artışı modülü kilit oluşturucuda sayar.
+`CComObjectNoLock`, toplanmayan bir nesne için [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) uyguladığından [CComObject](../../atl/reference/ccomobject-class.md) öğesine benzerdir; Ancak, `CComObjectNoLock` oluşturucuda modül kilit sayısını artırmaz.
 
-ATL kullanan `CComObjectNoLock` sınıf üreteçlerini için dahili olarak. Genel olarak, bu sınıf doğrudan kullanmaz.
+ATL, `CComObjectNoLock` sınıf fabrikaları için dahili olarak kullanır. Genel olarak, bu sınıfı doğrudan kullancaksınız.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -65,11 +65,11 @@ ATL kullanan `CComObjectNoLock` sınıf üreteçlerini için dahili olarak. Gene
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlcom.h
+**Üstbilgi:** atlcom. h
 
 ##  <a name="addref"></a>  CComObjectNoLock::AddRef
 
-Nesnede başvuru sayısını artırır.
+Nesnedeki başvuru sayısını artırır.
 
 ```
 STDMETHOD_(ULONG, AddRef)();
@@ -77,11 +77,11 @@ STDMETHOD_(ULONG, AddRef)();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Tanılama için kullanışlı veya test olabilir bir değer.
+Tanılama veya test için yararlı olabilecek bir değer.
 
 ##  <a name="ccomobjectnolock"></a>  CComObjectNoLock::CComObjectNoLock
 
-Oluşturucu. Farklı [CComObject](../../atl/reference/ccomobject-class.md), modülün kilit sayacını artırmaz.
+Oluşturucu. [CComObject](../../atl/reference/ccomobject-class.md)aksine, modül kilit sayısını artırmaz.
 
 ```
 CComObjectNoLock(void* = NULL);
@@ -89,12 +89,12 @@ CComObjectNoLock(void* = NULL);
 
 ### <a name="parameters"></a>Parametreler
 
-<em>Geçersiz kılma\*</em><br/>
-[in] Bu adlandırılmamış parametre kullanılmaz. Simetri diğer için mevcut `CComXXXObjectXXX` oluşturucular.
+<em>Kağıt\*</em><br/>
+'ndaki Bu adlandırılmamış parametre kullanılmıyor. Diğer `CComXXXObjectXXX` oluşturucularla birlikte simetri için de mevcuttur.
 
 ##  <a name="dtor"></a>  CComObjectNoLock::~CComObjectNoLock
 
-Yıkıcı.
+Yok edicisi.
 
 ```
 ~CComObjectNoLock();
@@ -102,7 +102,7 @@ Yıkıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ayrılan tüm kaynakları ve aramalar boşaltır [FinalRelease](ccomobjectrootex-class.md#finalrelease).
+Ayrılan tüm kaynakları serbest bırakır ve [Sonlandıryayım](ccomobjectrootex-class.md#finalrelease)çağırır.
 
 ##  <a name="queryinterface"></a>  CComObjectNoLock::QueryInterface
 
@@ -114,19 +114,19 @@ STDMETHOD(QueryInterface)(REFIID iid, void** ppvObject);
 
 ### <a name="parameters"></a>Parametreler
 
-*IID*<br/>
-[in] İstenen arabirim tanımlayıcısı.
+*'si*<br/>
+'ndaki İstenen arabirimin tanımlayıcısı.
 
 *ppvObject*<br/>
-[out] Tarafından tanımlanan bir arabirim işaretçisi için bir işaretçi *IID*. Nesne bu arabirimi desteklemiyorsa *ppvObject* NULL olarak ayarlandı.
+dışı *IID*tarafından tanımlanan arabirim işaretçisine yönelik bir işaretçi. Nesne bu arabirimi desteklemiyorsa, *ppvObject* null olarak ayarlanır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT değerini.
+Standart bir HRESULT değeri.
 
-##  <a name="release"></a>  CComObjectNoLock::Release
+##  <a name="release"></a>CComObjectNoLock:: Release
 
-Nesnede başvuru sayısını azaltır.
+Nesnedeki başvuru sayısını azaltır.
 
 ```
 STDMETHOD_(ULONG, Release)();
@@ -134,8 +134,8 @@ STDMETHOD_(ULONG, Release)();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Hata ayıklama yapılarında `Release` tanılama için kullanışlı veya test olabilecek bir değer döndürür. Hata ayıklama olmayan yapılarında `Release` her zaman 0 değerini döndürür.
+Hata ayıklama yapılarında, `Release` tanılama veya test için yararlı olabilecek bir değer döndürür. Hata ayıklama olmayan derlemelerde, `Release` her zaman 0 döndürür.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)
+[Sınıfa genel bakış](../../atl/atl-class-overview.md)

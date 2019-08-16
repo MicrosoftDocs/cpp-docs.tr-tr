@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - _com_ptr_t method [C++]
 ms.assetid: 0c00620a-28d2-4f60-ae4a-1696be36137e
-ms.openlocfilehash: 779fd1008f6763f4b5ca95938018a5129e89aa1f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5a3923ee488771e807600069855299fc240b3212
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62154883"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69498707"
 ---
-# <a name="comptrtcomptrt"></a>_com_ptr_t::_com_ptr_t
+# <a name="_com_ptr_t_com_ptr_t"></a>_com_ptr_t::_com_ptr_t
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Oluşturur bir **_com_ptr_t** nesne.
+**_Com_ptr_t** nesnesi oluşturur.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -135,32 +135,32 @@ explicit _com_ptr_t(
 
 #### <a name="parameters"></a>Parametreler
 
-*pInterface*<br/>
+*Pınterface*<br/>
 Ham arabirim işaretçisi.
 
 *fAddRef*<br/>
-TRUE ise `AddRef` kapsüllenmiş arabirim işaretçisinin başvuru sayısını artırmak için çağrılır.
+TRUE ise, `AddRef` kapsüllenmiş arabirim işaretçisinin başvuru sayısını artırmak için çağırılır.
 
-*CP*<br/>
-A **_com_ptr_t** nesne.
+*'s*<br/>
+**_Com_ptr_t** nesnesi.
 
 *p*<br/>
-Ham arabirim işaretçisi, bu akıllı işaretçi türünden farklı olan kendi türü **_com_ptr_t** nesne.
+Ham arabirim işaretçisi, türü bu **_com_ptr_t** nesnesinin akıllı işaretçi türünden farklı.
 
 *varSrc*<br/>
 A `_variant_t` nesne.
 
-*CLSID*<br/>
-`CLSID` Si.
+*in*<br/>
+Bir `CLSID` coclass 'ın.
 
 *dwClsContext*<br/>
 Yürütülebilir kodu çalıştırmak için bağlam.
 
 *lpcStr*<br/>
-Bulunduran çok baytlı bir dize bir `CLSID` (sürümünden itibaren "**{**") veya bir `ProgID`.
+`CLSID` (" **{** `ProgID`" İle başlayarak) veya ' i tutan çok baytlı bir dize.
 
 *pOuter*<br/>
-İçin dış bilinmeyen [toplama](/windows/desktop/com/aggregation).
+[Toplama](/windows/win32/com/aggregation)için bilinmeyen dış.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

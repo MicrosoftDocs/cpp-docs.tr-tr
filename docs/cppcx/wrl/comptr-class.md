@@ -51,12 +51,12 @@ helpviewer_keywords:
 - Microsoft::WRL::ComPtr::Swap method
 - Microsoft::WRL::ComPtr::~ComPtr, destructor
 ms.assetid: a6551902-6819-478a-8df7-b6f312ab1fb0
-ms.openlocfilehash: 889b722c91fd56613c5902eb4ce6439763a49bd9
-ms.sourcegitcommit: 720b74dddb1cdf4e570d55103158304ee1df81f8
+ms.openlocfilehash: 1e20a991c8f32027aeea6a17df0534aa6e1c2c43
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68606493"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69498407"
 ---
 # <a name="comptr-class"></a>ComPtr Sınıfı
 
@@ -84,7 +84,7 @@ Geçerli `ComPtr` bir arkadaş olan sınıf. (Bu parametreyi kullanan şablon ko
 
 `ComPtr<>`temel alınan arabirim işaretçisini temsil eden bir tür bildirir. Bir `ComPtr<>` değişken bildirmek için kullanın ve ardından bir arabirim üye işlevine erişmek için ok üye`->`erişim işlecini () kullanın.
 
-Akıllı işaretçiler hakkında daha fazla bilgi için MSDN Kitaplığı 'ndaki [com kodlama uygulamaları](/windows/desktop/LearnWin32/com-coding-practices) konusunun "com akıllı işaretçiler" alt bölümüne bakın.
+Akıllı işaretçiler hakkında daha fazla bilgi için MSDN Kitaplığı 'ndaki [com kodlama uygulamaları](/windows/win32/LearnWin32/com-coding-practices) konusunun "com akıllı işaretçiler" alt bölümüne bakın.
 
 ## <a name="members"></a>Üyeler
 
@@ -532,7 +532,7 @@ Başka `ComPtr` bir nesneye başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk `true` operatör *, nesne* *b*nesnesine eşitse, aksi takdirde, `false`.
+İlk operatör `true` , nesne *b*nesnesine eşitse, aksi takdirde,. `false`
 
 İkinci ve üçüncü `true` operatörler nesne *a* eşitse `nullptr`, aksi takdirde,. `false`
 
@@ -567,7 +567,7 @@ Başka `ComPtr` bir nesneye başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk `true` operatör *, nesne* *b*nesnesine eşit değilse, aksi takdirde, `false`olur.
+İlk operatör `true` , nesne *b*nesnesine eşit değilse, aksi takdirde, `false`olur.
 
 İkinci `true` ve üçüncü operatörler, nesne *a* eşit `nullptr`değilse, aksi takdirde,. `false`
 

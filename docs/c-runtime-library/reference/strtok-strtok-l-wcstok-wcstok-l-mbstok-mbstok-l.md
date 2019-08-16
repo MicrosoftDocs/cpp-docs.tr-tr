@@ -45,19 +45,19 @@ helpviewer_keywords:
 - _tcstok_l function
 - strtok_l function
 ms.assetid: 904cb734-f0d7-4d77-ba81-4791ddf461ae
-ms.openlocfilehash: 22dd01a0b2558c83ca1e25875a2ace7dd4ee15c0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 13fbc0e305f7ad183db06ec0060b2059b4964fe7
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62176193"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69500790"
 ---
-# <a name="strtok-strtokl-wcstok-wcstokl-mbstok-mbstokl"></a>strtok, _strtok_l, wcstok, _wcstok_l, _mbstok, _mbstok_l
+# <a name="strtok-_strtok_l-wcstok-_wcstok_l-_mbstok-_mbstok_l"></a>strtok, _strtok_l, wcstok, _wcstok_l, _mbstok, _mbstok_l
 
-Sonraki belirtece, geçerli yerel ayarı veya geçirilen bir belirtilen yerel ayarı kullanarak bir dize içinde bulur. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz: [strtok_s, _strtok_s_l, wcstok_s, _wcstok_s_l, _mbstok_s, _mbstok_s_l](strtok-s-strtok-s-l-wcstok-s-wcstok-s-l-mbstok-s-mbstok-s-l.md).
+Geçerli yerel ayarı veya geçirilen belirtilen yerel ayarı kullanarak bir dizedeki sonraki belirteci bulur. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz. [strtok_s, _strtok_s_l, wcstok_s, _wcstok_s_l, _mbstok_s, _mbstok_s_l](strtok-s-strtok-s-l-wcstok-s-wcstok-s-l-mbstok-s-mbstok-s-l.md).
 
 > [!IMPORTANT]
-> **_mbstok** ve **_mbstok_l** Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **_mbstok** ve **_mbstok_l** Windows çalışma zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -96,35 +96,35 @@ unsigned char *_mbstok_l(
 *strToken*<br/>
 Belirteç veya belirteçleri içeren dize.
 
-*strDelimit*<br/>
+*Strsınırlandırın*<br/>
 Sınırlayıcı karakter kümesi.
 
-*Yerel ayar*<br/>
+*ayarlar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bulunan sonraki belirteç için bir işaretçi döndürür *strToken*. İşlevler dönüş **NULL** zaman başka belirteç bulundu. Her çağrının değiştirir *strToken* sonra döndürülen belirteci oluşan ilk sınırlayıcısı için bir null karakter koyarak tarafından.
+*StrToken*'da bulunan bir sonraki belirtece bir işaretçi döndürür. Daha fazla belirteç bulunamadığında işlevler **null** döndürür. Her çağrı, döndürülen belirteçle sonra oluşan ilk sınırlayıcı için null bir karakter koyarak *strToken* 'ı değiştirir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Strtok** işlevi bulur sonraki belirteç *strToken*. Karakter kümesi *strDelimit* belirteç bulunamıyor olası ayırıcısını belirtir *strToken* geçerli çağrıda. **wcstok** ve **_mbstok** geniş karakter ve çok baytlı karakter sürümleridir **strtok**. Bağımsız değişkenler ve dönüş değeri **wcstok** geniş karakterli dizelerdir; **_mbstok** çok baytlı karakter dizeleridir. Bu üç işlev aynı şekilde davranır.
+**Strtok** Işlevi, *strToken*'daki bir sonraki belirteci bulur. *Strsınırlandıran* karakter kümesi, geçerli çağrıda *strToken* içinde bulunan belirtecin olası sınırlayıcılarını belirtir. **wcstok** ve **_mbstok** , **strtok**'nin geniş karakterli ve çok baytlı karakter sürümleridir. **Wcstok** bağımsız değişkenleri ve dönüş değeri geniş karakterli dizelerdir; **_mbstok** , çok baytlı karakter dizeleridir. Bu üç işlev, aynı şekilde davranır.
 
 > [!IMPORTANT]
-> Bu işlevler bir arabellek taşması sorunu duruma olası bir tehdit yansıtılmaz. Arabellek taşması sorunları, sistem saldırı, bir unwarranted ayrıcalık yükseltilmesi ile sonuçlanan sık kullanılan bir yöntemdir. Daha fazla bilgi için [arabellek taşmalarını](/windows/desktop/SecBP/avoiding-buffer-overruns).
+> Bu işlevler, bir arabellek taşması sorunu ile ilgili olası bir tehdit doğurur. Arabellek taşması sorunları, sistem saldırılarına karşı sık kullanılan bir yöntemdir ve bu da garanti edilmemiş ayrıcalık yükselmesine neden olur. Daha fazla bilgi için bkz. [arabellek taşmalarını önleme](/windows/win32/SecBP/avoiding-buffer-overruns).
 
-Yapılan ilk çağrıda **strtok**, işlev önde gelen sınırlayıcılar atlar ve ilk belirteci için bir işaretçi döndürür *strToken*, sonlandırıcı null karakteri ile belirteç. Daha fazla belirteçleri dışında kalan bölünebilir *strToken* bir dizi çağrıda tarafından **strtok**. Her çağrı **strtok** değiştirir *strToken* null karakterden sonra ekleyerek **belirteci** çağrı tarafından döndürülen. Sonraki belirteçten okunacak *strToken*, çağrı **strtok** ile bir **NULL** değerini *strToken* bağımsız değişken. **NULL** *strToken* bağımsız değişken nedenleri **strtok** sonraki belirtece değiştirilmiş aranacak *strToken*. *StrDelimit* bağımsız değişkeni, bir çağrısından sonraki herhangi bir değer alabilir, böylece sınırlayıcı kümesi farklılık gösterebilir.
+**Strtok**öğesine yapılan ilk çağrıda, işlev baştaki sınırlayıcıları atlar ve *strToken*'daki ilk belirtece bir işaretçi döndürür ve belirteci null karakterle sonlandırıyor. **Strtok**öğesine yapılan bir dizi çağrı Ile *strToken* 'ın geri kalanlarından daha fazla belirteç bozulabilir. Her **strtok** çağrısı, bu çağrı tarafından döndürülen belirteçten sonra bir null karakter ekleyerek *strToken* 'ı değiştirir. *StrToken*'dan bir sonraki belirteci okumak için, *strToken* bağımsız değişkeni olarak bir **null** değer ile **strtok** çağrısı yapın. **Null** *strToken* bağımsız değişkeni, **strtok** 'ın değiştirilmiş *strToken*'da bir sonraki belirteci aramasına neden olur. *Strsınırlandıran* bağımsız değişkeni, bir sonraki çağrıdan bir değer alabilir ve bu sayede sınırlayıcılar kümesi farklılık gösterebilir.
 
-Çıkış değeri ayarından etkilenir **LC_CTYPE** yerel ayarının kategori ayarına. Daha fazla bilgi için [setlocale](setlocale-wsetlocale.md).
+Çıkış değeri, yerel ayarın **LC_CTYPE** kategori ayarı ayarından etkilenir. Daha fazla bilgi için bkz. [setlocale](setlocale-wsetlocale.md).
 
-Bu işlevlerin sürümleri **_l** soneki, bu yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır. Sürümlerle **_l** sonekine, bunun yerine iletilmiş yerel ayar parametresini kullanmalarıdır. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
+**_L** sonekine sahip olmayan bu işlevlerin sürümleri, yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır. **_L** sonekine sahip sürümler, bunun yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
 > [!NOTE]
-> Her işlev, dizeyi belirteçlere ayrıştırmak için bir iş parçacığına yerel statik değişken kullanır. Bu nedenle, birden çok iş parçacığı aynı anda istenmeyen etkileri olmadan bu işlevleri çağırabilir. Ancak, tek bir iş parçacığı içinde Bu işlevlerden biri çağrısına Interleaving veri bozulması ve tutarsız sonuçlar üretmesi olasılığı yüksektir. Farklı dizeleri ayrıştırma, sonraki ayrıştırılacak başlatmadan önce bir dizeyi ayrıştırma tamamlayın. Ayrıca bir döngü içinde Bu işlevlerden biri burada başka bir işlev olarak da adlandırılır çağrılırken tehlike potansiyeli farkında olun. Bu işlevlerden birini kullanarak diğer işlev sona erer, veri bozulması tetikleyen bir araya eklemeli dizisi çağrılarının sonuçlanır.
+> Her işlev, dizeyi belirteçlere ayrıştırmak için iş parçacığı yerel statik değişkenini kullanır. Bu nedenle, birden çok iş parçacığı bu işlevleri istenmeden etkiler olmadan aynı anda çağırabilir. Bununla birlikte, tek bir iş parçacığında, bu işlevlerden birine yönelik araya ekleme çağrıları, veri bozulması ve yanlış sonuçlar üretmesi büyük ihtimalle. Farklı dizeler ayrıştırılırken, bir sonraki ayrıştırmaya başlamadan önce bir dizeyi ayrıştırmayı son yapın. Ayrıca, bu işlevlerden biri başka bir işlevin çağrıldığı bir döngüden çağrıldığında olma tehlikesi için potansiyelini göz önünde bulundurun. Diğer işlev bu işlevlerden birini kullanarak sonlanıyorsa, araya eklemeli bir çağrı dizisi oluşur ve veri bozulması tetiklenecektir.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_tcstok**|**strtok**|**_mbstok**|**wcstok**|
 |**_tcstok**|**_strtok_l**|**_mbstok_l**|**_wcstok_l**|
@@ -133,9 +133,9 @@ Bu işlevlerin sürümleri **_l** soneki, bu yerel ayara bağımlı davranış i
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**strtok**|\<String.h >|
-|**wcstok**|\<String.h > veya \<wchar.h >|
-|**_mbstok**, **_mbstok_l**|\<Mbstring.h >|
+|**strtok**|\<String. h >|
+|**wcstok**|\<String. h > veya \<wchar. h >|
+|**_mbstok**, **_mbstok_l**|\<mbstring. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -187,7 +187,7 @@ tokens
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dize düzenlemesi](../../c-runtime-library/string-manipulation-crt.md)<br/>
+[Dize düzenleme](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [locale](../../c-runtime-library/locale.md)<br/>
 [Çok Baytlı Karakter Sıralarının Yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [strcspn, wcscspn, _mbscspn, _mbscspn_l](strcspn-wcscspn-mbscspn-mbscspn-l.md)<br/>

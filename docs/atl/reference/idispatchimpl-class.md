@@ -1,5 +1,5 @@
 ---
-title: Idispatchımpl sınıfı
+title: IDispatchImpl sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - IDispatchImpl
@@ -14,19 +14,19 @@ helpviewer_keywords:
 - IDispatchImpl class
 - IDispatch class support in ATL
 ms.assetid: 8108eb36-1228-4127-a203-3ab5ba488892
-ms.openlocfilehash: bf6b416337c58f5e9b8a62dda841615412573666
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7e9cb903742cdc31c1d9bba2c4aabbb0472407c1
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62275353"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69495959"
 ---
-# <a name="idispatchimpl-class"></a>Idispatchımpl sınıfı
+# <a name="idispatchimpl-class"></a>IDispatchImpl sınıfı
 
-Bir varsayılan uygulamasını sağlar `IDispatch` çift arabirim bir parçası.
+İkili arabirimin `IDispatch` parçası için varsayılan bir uygulama sağlar.
 
 > [!IMPORTANT]
->  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.
+>  Bu sınıf ve üyeleri Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -42,23 +42,23 @@ class ATL_NO_VTABLE IDispatchImpl : public T
 
 #### <a name="parameters"></a>Parametreler
 
-*T*<br/>
-[in] Çift arabirim.
+*ŞI*<br/>
+'ndaki Çift arabirim.
 
-*piid*<br/>
-[in] Laboratuvardaki işaretçisi *T*.
+*piıd*<br/>
+'ndaki *T*IID 'sine yönelik bir işaretçi.
 
-*plibid*<br/>
-[in] Arabirimi hakkında bilgi içeren tür kitaplığının Kitaplık kimliği için bir işaretçi. Varsayılan olarak, sunucu düzeyinde tür kitaplığı geçirilir.
+*plibıd*<br/>
+'ndaki Arabirim hakkında bilgi içeren tür kitaplığının LIBıD işaretçisi. Varsayılan olarak, sunucu düzeyi tür kitaplığı geçirilir.
 
-*wMajor*<br/>
-[in] Tür kitaplığının ana sürümü. Varsayılan değer 1'dir.
+*Wana*<br/>
+'ndaki Tür kitaplığının ana sürümü. Varsayılan olarak değer 1 ' dir.
 
 *wMinor*<br/>
-[in] Tür kitaplığının bir alt sürümü. Varsayılan değer 0'dır.
+'ndaki Tür kitaplığının ikincil sürümü. Varsayılan olarak, değeri 0 ' dır.
 
 *tihclass*<br/>
-[in] İçin tür bilgilerini yönetmek için kullanılan sınıf *T*. Varsayılan değer olan `CComTypeInfoHolder`.
+'ndaki *T*için tür bilgilerini yönetmek için kullanılan sınıf. Varsayılan olarak, değeri `CComTypeInfoHolder`.
 
 ## <a name="members"></a>Üyeler
 
@@ -66,28 +66,28 @@ class ATL_NO_VTABLE IDispatchImpl : public T
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[IDispatchImpl::IDispatchImpl](#idispatchimpl)|Oluşturucu. Çağrıları `AddRef` çift arabirim için tür bilgilerini yöneten korumalı üye değişkeni üzerinde. Yıkıcı çağrıları `Release`.|
+|[IDispatchImpl:: IDispatchImpl](#idispatchimpl)|Oluşturucu. Korumalı `AddRef` üye değişkeninde çift arabirim için tür bilgilerini yöneten çağrılar. Yıkıcı çağırır `Release`.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[IDispatchImpl::GetIDsOfNames](#getidsofnames)|Bir ad kümesini karşılık gelen bir dağıtma tanımlayıcısı kümesine eşler.|
-|[IDispatchImpl::GetTypeInfo](#gettypeinfo)|Çift arabirim için tür bilgilerini alır.|
-|[IDispatchImpl::GetTypeInfoCount](#gettypeinfocount)|Çift arabirim için tür bilgilerini olup olmadığını belirler.|
-|[IDispatchImpl::Invoke](#invoke)|Çift arabirim tarafından kullanıma sunulan özellikler ve yöntemler erişim sağlar.|
+|[IDispatchImpl:: GetIDsOfNames](#getidsofnames)|Bir ad kümesini karşılık gelen bir dağıtma tanımlayıcısı kümesine eşler.|
+|[IDispatchImpl:: GetTypeInfo](#gettypeinfo)|Çift arabirim için tür bilgilerini alır.|
+|[IDispatchImpl:: GetTypeInfoCount](#gettypeinfocount)|Çift arabirim için kullanılabilir tür bilgisi olup olmadığını belirler.|
+|[IDispatchImpl:: Invoke](#invoke)|Çift arabirim tarafından kullanıma sunulan yöntemlere ve özelliklere erişim sağlar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`IDispatchImpl` bir varsayılan uygulamasını sağlar `IDispatch` parçası olan bir nesne üzerinde herhangi bir çift arabirim. Çift arabirim türetildiği `IDispatch` ve yalnızca otomasyon uyumlu türleri kullanır. Bir dispinterface gibi çift arabirim bağlama erken ve geç bağlama destekler. Ancak, bir çift arabirim vtable bağlama de destekler.
+`IDispatchImpl`bir nesne üzerinde herhangi bir çift `IDispatch` arabirimin parçası için varsayılan bir uygulama sağlar. Çift arabirim ' dan `IDispatch` türetilir ve yalnızca otomasyon ile uyumlu türleri kullanır. Bir dispınterface gibi, bir ikili arabirim erken bağlamayı ve geç bağlamayı destekler; Ancak, çift bir arabirim vtable bağlamasını da destekler.
 
-Tipik bir uygulaması aşağıdaki örnekte `IDispatchImpl`.
+Aşağıdaki örnek, öğesinin `IDispatchImpl`tipik bir uygulamasını gösterir.
 
 [!code-cpp[NVC_ATL_COM#47](../../atl/codesnippet/cpp/idispatchimpl-class_1.h)]
 
-Varsayılan olarak, `IDispatchImpl` sınıfı için tür bilgisi şuna *T* kayıt defteri. Bir kaydı arabirim uygulamak için kullanabileceğiniz `IDispatchImpl` önceden tanımlanmış sürüm numarasını kullanarak kayıt defteri erişim olmadan sınıfı. Oluşturursanız, bir `IDispatchImpl` 0xFFFF değeri olarak nesnesi *wMajor* ile 0xFFFF değeri olarak *wMinor*, `IDispatchImpl` sınıfı yerine .dll dosyasından tür kitaplığı alır kayıt defteri.
+Varsayılan olarak, `IDispatchImpl` sınıfı, kayıt defterindeki *T* için tür bilgilerini arar. Kayıtlı olmayan bir arabirim uygulamak için, önceden tanımlanmış bir `IDispatchImpl` sürüm numarası kullanarak bu sınıfı, kayıt defterine erişmeden kullanabilirsiniz. *Wana* için değer `IDispatchImpl` olarak 0xFFFF olan bir nesne oluşturursanız ve *wMinor*için değer olarak 0xFFFF yazarsanız, `IDispatchImpl` sınıf kayıt defteri yerine. dll dosyasından tür kitaplığını alır.
 
-`IDispatchImpl` statik bir üye türü içeren `CComTypeInfoHolder` , çift arabirim için tür bilgilerini yönetir. Aynı çift uygulayan birden fazla nesneniz varsa arabirimi, yalnızca bir örneğini `CComTypeInfoHolder` kullanılır.
+`IDispatchImpl`Çift arabirim için tür bilgilerini yöneten `CComTypeInfoHolder` türün statik bir üyesini içerir. Aynı çift arabirimi uygulayan birden fazla nesneniz varsa, yalnızca bir örneği `CComTypeInfoHolder` kullanılır.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -97,9 +97,9 @@ Varsayılan olarak, `IDispatchImpl` sınıfı için tür bilgisi şuna *T* kayı
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlcom.h
+**Üstbilgi:** atlcom. h
 
-##  <a name="getidsofnames"></a>  IDispatchImpl::GetIDsOfNames
+##  <a name="getidsofnames"></a>IDispatchImpl:: GetIDsOfNames
 
 Bir ad kümesini karşılık gelen bir dağıtma tanımlayıcısı kümesine eşler.
 
@@ -114,9 +114,9 @@ STDMETHOD(GetIDsOfNames)(
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [IDispatch::getıdsofnames](/windows/desktop/api/oaidl/nf-oaidl-idispatch-getidsofnames) Windows SDK içinde.
+Windows SDK için bkz. [IDispatch:: GetIDsOfNames](/windows/win32/api/oaidl/nf-oaidl-idispatch-getidsofnames) .
 
-##  <a name="gettypeinfo"></a>  IDispatchImpl::GetTypeInfo
+##  <a name="gettypeinfo"></a>IDispatchImpl:: GetTypeInfo
 
 Çift arabirim için tür bilgilerini alır.
 
@@ -129,11 +129,11 @@ STDMETHOD(GetTypeInfo)(
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [IDispatch::GetTypeInfo](/windows/desktop/api/oaidl/nf-oaidl-idispatch-gettypeinfo) Windows SDK içinde.
+Windows SDK [IDispatch:: GetTypeInfo](/windows/win32/api/oaidl/nf-oaidl-idispatch-gettypeinfo) bölümüne bakın.
 
-##  <a name="gettypeinfocount"></a>  IDispatchImpl::GetTypeInfoCount
+##  <a name="gettypeinfocount"></a>IDispatchImpl:: GetTypeInfoCount
 
-Çift arabirim için tür bilgilerini olup olmadığını belirler.
+Çift arabirim için kullanılabilir tür bilgisi olup olmadığını belirler.
 
 ```
 STDMETHOD(GetTypeInfoCount)(UINT* pctinfo);
@@ -141,19 +141,19 @@ STDMETHOD(GetTypeInfoCount)(UINT* pctinfo);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: `IDispatch::GetTypeInfoCount` Windows SDK içinde.
+Windows SDK `IDispatch::GetTypeInfoCount` bakın.
 
-##  <a name="idispatchimpl"></a>  IDispatchImpl::IDispatchImpl
+##  <a name="idispatchimpl"></a>IDispatchImpl:: IDispatchImpl
 
-Oluşturucu. Çağrıları `AddRef` çift arabirim için tür bilgilerini yöneten korumalı üye değişkeni üzerinde. Yıkıcı çağrıları `Release`.
+Oluşturucu. Korumalı `AddRef` üye değişkeninde çift arabirim için tür bilgilerini yöneten çağrılar. Yıkıcı çağırır `Release`.
 
 ```
 IDispatchImpl();
 ```
 
-##  <a name="invoke"></a>  IDispatchImpl::Invoke
+##  <a name="invoke"></a>IDispatchImpl:: Invoke
 
-Çift arabirim tarafından kullanıma sunulan özellikler ve yöntemler erişim sağlar.
+Çift arabirim tarafından kullanıma sunulan yöntemlere ve özelliklere erişim sağlar.
 
 ```
 STDMETHOD(Invoke)(
@@ -169,8 +169,8 @@ STDMETHOD(Invoke)(
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz: [IDispatch::Invoke](/windows/desktop/api/oaidl/nf-oaidl-idispatch-invoke) Windows SDK içinde.
+Windows SDK için bkz. [IDispatch:: Invoke](/windows/win32/api/oaidl/nf-oaidl-idispatch-invoke) .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)
+[Sınıfa genel bakış](../../atl/atl-class-overview.md)

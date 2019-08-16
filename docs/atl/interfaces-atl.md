@@ -6,25 +6,25 @@ helpviewer_keywords:
 - COM interfaces
 - interfaces, COM
 ms.assetid: de6c8b12-6230-4fdc-af66-a28b91d5ee55
-ms.openlocfilehash: 5416fb8a99420f0f6c84318753ee3399ccf5db2a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2373351330982623ffa602fd81bec61d0bc257b2
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62250320"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69492133"
 ---
 # <a name="interfaces-atl"></a>Arabirimler (ATL)
 
-Bir arabirim bir nesne dış dünya için işlevselliği kullanıma sunan bir yoludur. COM, bir arabirim işaretçileri nesne tarafından uygulanan işlevleri (örneğin, bir C++ vtable) bir tablodur. Tablo arabirimi temsil eder ve işaret ettiği işlevleri o arabirimin yöntemlerdir. Bir nesneyi seçer gibi çok arabirimleri kullanıma sunabilirsiniz.
+Bir arabirim, bir nesnenin işlevlerini dış dünyaya sunma yöntemidir. COM 'da arabirim, nesne tarafından uygulanan işlevlerde işaretçiler ( C++ vtable gibi) tablosudur. Tablo, arabirimi ve işaret ettiği işlevleri, bu arabirimin yöntemleri temsil eder. Bir nesne seçtiği kadar çok sayıda arabirim sunabilir.
 
-Her arabirim temel COM arabirimi dayanır [IUnknown](../atl/iunknown.md). Yöntemlerinin `IUnknown` Gezinti nesne tarafından sunulan diğer arabirimler için izin verin.
+Her arabirim, [IUnknown](../atl/iunknown.md)temel com arabirimine dayalıdır. Nesnesi tarafından kullanıma `IUnknown` sunulan diğer arabirimlere gezinmeye izin verme yöntemleri.
 
-Ayrıca, her bir arabirime benzersiz bir arabirim Kimliğini (IID) verilir. Bu benzersizlik arabirimi sürüm oluşturma desteği kolaylaştırır. Bir arabirim yeni bir sürümü yalnızca bir yeni, yeni bir IID ile arabirimidir.
+Ayrıca, her arabirime benzersiz bir arabirim KIMLIĞI (IID) verilir. Bu benzersizlik, arabirim sürümü oluşturmayı desteklemeyi kolaylaştırır. Bir arabirimin yeni sürümü yeni bir IID ile yalnızca yeni bir arabirimdir.
 
 > [!NOTE]
->  Standart COM ve OLE arabirimleri için IID'leri önceden tanımlanmıştır.
+>  Standart COM ve OLE arabirimleri için IIDS önceden tanımlanmıştır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [COM’a Giriş](../atl/introduction-to-com.md)<br/>
-[COM nesneleri ve arabirimler](/windows/desktop/com/com-objects-and-interfaces)
+[COM nesneleri ve arabirimleri](/windows/win32/com/com-objects-and-interfaces)

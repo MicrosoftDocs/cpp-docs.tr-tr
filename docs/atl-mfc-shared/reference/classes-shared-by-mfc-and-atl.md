@@ -1,38 +1,38 @@
 ---
-title: MFC ve ATL tarafından paylaşılan sınıflar
+title: MFC ve ATL tarafından Paylaşılan Sınıflar
 ms.date: 11/04/2016
 helpviewer_keywords:
 - shared classes, classes
 ms.assetid: ca8b4b6b-744d-430b-b31f-d5b2f17bf210
-ms.openlocfilehash: 5376a87aac2b82615cd48f80e0e95208b8132bf0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e3e4b35721e84e289aed586c4d010a6986dcc61c
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62235152"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69491456"
 ---
-# <a name="classes-shared-by-mfc-and-atl"></a>MFC ve ATL tarafından paylaşılan sınıflar
+# <a name="classes-shared-by-mfc-and-atl"></a>MFC ve ATL tarafından Paylaşılan Sınıflar
 
-MFC ve ATL arasında paylaşılan sınıfları aşağıdaki tabloda listelenmektedir
+Aşağıdaki tabloda, MFC ve ATL arasında paylaşılan sınıflar listelenmektedir.
 
 |örneği|Açıklama|Üst bilgi dosyası|
 |-----------|-----------------|-----------------|
-|[CFileTime](../../atl-mfc-shared/reference/cfiletime-class.md)|Bir dosya ile ilişkilendirilmiş tarih ve saat değerlerini yönetmek için yöntemler sağlar.|atltime.h|
-|[CFileTimeSpan](../../atl-mfc-shared/reference/cfiletimespan-class.md)|Göreli tarih ve saat değerleri bir dosyayla ilgili yönetmek için yöntemler sağlar.|atltime.h|
-|[CFixedStringT](../../atl-mfc-shared/reference/cfixedstringt-class.md)|Bir dize nesnesi ile bir sabit karakter arabelleği temsil eder.|cstringt.h|
-|[Cımage](../../atl-mfc-shared/reference/cimage-class.md)|Yük ve görüntüleri JPEG, BMP, GIF ve da Taşınabilir Ağ Grafikleri (PNG) biçimlerde kaydetme olanağı dahil olmak üzere Gelişmiş bit eşlem desteği sağlar.|atlimage.h|
-|[COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md)|OLE Otomasyonu nesnesi etkin kullanılan tarih veri türünü kapsüller.|atlcomtime.h|
-|[COleDateTimeSpan](../../atl-mfc-shared/reference/coledatetimespan-class.md)|Göreli bir zaman, bir zaman aralığını temsil eder.|atlcomtime.h|
-|[CPoint](../../atl-mfc-shared/reference/cpoint-class.md)|Windows için benzer bir sınıf [noktası](/windows/desktop/api/windef/ns-windef-tagpoint) yönlendirmek üzere öğe işlevleri de içeren yapı `CPoint` ve `POINT` yapıları.|atltypes.h|
-|[CRect](../../atl-mfc-shared/reference/crect-class.md)|Bir sınıf için bir Windows benzer [RECT](/windows/desktop/api/windef/ns-windef-tagrect) yönlendirmek üzere öğe işlevleri de içeren yapı `CRect` nesneleri ve Windows `RECT` yapıları.|atltypes.h|
-|[CSimpleStringT](../../atl-mfc-shared/reference/csimplestringt-class.md)|Temsil eden bir `CSimpleStringT` nesne.|atlsimpstr.h|
-|[CSize](../../atl-mfc-shared/reference/csize-class.md)|Windows için benzer bir sınıf [BOYUTU](/windows/desktop/api/windef/ns-windef-tagsize) göreli koordinat veya konum uygulayan yapısı.|atltypes.h|
-|[CStrBufT](../../atl-mfc-shared/reference/cstrbuft-class.md)|Otomatik kaynak Temizleme için sağlar `GetBuffer` ve `ReleaseBuffer` çağıran bir var olan `CStringT` nesne.|atlsimpstr.h|
-|[CStringData](../../atl-mfc-shared/reference/cstringdata-class.md)|Dizenin başlangıcının verileri temsil eder.|atlsimpstr.h|
-|[CStringT](../../atl-mfc-shared/reference/cstringt-class.md)|Temsil eden bir `CStringT` nesne.|cstringt.h (MFC bağımlı) yönelik baskılamayı kaldırma (MFC bağımsız)|
-|[CTime](../../atl-mfc-shared/reference/ctime-class.md)|Bir mutlak saatini ve tarihini temsil eder.|atltime.h|
-|[CTimeSpan](../../atl-mfc-shared/reference/ctimespan-class.md)|Bir zaman aralığı saniye sayısı olarak dahili olarak depolanan bir zaman miktarı.|atltime.h|
-|[Iatlstringmgr](../../atl-mfc-shared/reference/iatlstringmgr-class.md)|İçin bir arabirimi temsil eder bir `CStringT` bellek yöneticisi.|atlsimpstr.h|
+|[CFileTime](../../atl-mfc-shared/reference/cfiletime-class.md)|Bir dosyayla ilişkili tarih ve saat değerlerini yönetmek için yöntemler sağlar.|atltime. h|
+|[CFileTimeSpan](../../atl-mfc-shared/reference/cfiletimespan-class.md)|Bir dosyayla ilişkili göreli tarih ve saat değerlerini yönetmek için yöntemler sağlar.|atltime. h|
+|[CFixedStringT](../../atl-mfc-shared/reference/cfixedstringt-class.md)|Sabit karakter arabelleğine sahip bir dize nesnesini temsil eder.|CStringT. h|
+|[CImage](../../atl-mfc-shared/reference/cimage-class.md)|JPEG, GIF, BMP ve Taşınabilir Ağ Grafikleri (PNG) biçimlerinde görüntü yükleme ve kaydetme özelliği de dahil olmak üzere gelişmiş bit eşlem desteği sağlar.|atlımage. h|
+|[Cotadatetime](../../atl-mfc-shared/reference/coledatetime-class.md)|OLE Otomasyonu 'nda kullanılan TARIH veri türünü kapsüller.|ATLComTime. h|
+|[Cotadatetimespan](../../atl-mfc-shared/reference/coledatetimespan-class.md)|Bir zaman aralığını göreli bir zaman temsil eder.|ATLComTime. h|
+|[CPoint](../../atl-mfc-shared/reference/cpoint-class.md)|Aynı zamanda, işleme `CPoint` ve `POINT` yapılara üye işlevleri de içeren Windows [noktası](/windows/win32/api/windef/ns-windef-point) yapısına benzer bir sınıf.|atltypes. h|
+|[CRect](../../atl-mfc-shared/reference/crect-class.md)|Nesneleri ve Windows `CRect` `RECT` yapılarını işlemek için üye işlevleri de içeren bir Windows [Rect](/windows/win32/api/windef/ns-windef-rect) yapısına benzer bir sınıf.|atltypes. h|
+|[CSimpleStringT](../../atl-mfc-shared/reference/csimplestringt-class.md)|Bir `CSimpleStringT` nesneyi temsil eder.|atlsimpstr. h|
+|[CSize](../../atl-mfc-shared/reference/csize-class.md)|Göreli bir koordinat veya konum uygulayan Windows [Boyut](/windows/win32/api/windef/ns-windef-size) yapısına benzer bir sınıf.|atltypes. h|
+|[CStrBufT](../../atl-mfc-shared/reference/cstrbuft-class.md)|İçin `GetBuffer` otomatik kaynak Temizleme ve `ReleaseBuffer` var olan `CStringT` bir nesne üzerinde çağrılar sağlar.|atlsimpstr. h|
+|[CStringData](../../atl-mfc-shared/reference/cstringdata-class.md)|Bir dize nesnesinin verilerini temsil eder.|atlsimpstr. h|
+|[CStringT](../../atl-mfc-shared/reference/cstringt-class.md)|Bir `CStringT` nesneyi temsil eder.|CStringT. h (MFC 'ye bağımlı) atlstr. h (MFC bağımsız)|
+|[CTime](../../atl-mfc-shared/reference/ctime-class.md)|Mutlak bir saat ve tarihi temsil eder.|atltime. h|
+|[CTimeSpan](../../atl-mfc-shared/reference/ctimespan-class.md)|Zaman aralığında geçen saniye sayısı olarak dahili olarak depolanan bir süre.|atltime. h|
+|[IAtlStringMgr](../../atl-mfc-shared/reference/iatlstringmgr-class.md)|`CStringT` Bellek yöneticisine yönelik arabirimi temsil eder.|atlsimpstr. h|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

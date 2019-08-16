@@ -132,12 +132,12 @@ helpviewer_keywords:
 - CFileDialog [MFC], OnTypeChange
 - CFileDialog [MFC], m_ofn
 ms.assetid: fda4fd3c-08b8-4ce0-8e9d-7bab23f8c6c0
-ms.openlocfilehash: a7287b2e3011159573f44e9247e016d81d893491
-ms.sourcegitcommit: c3bf94210bdb73be80527166264d49e33784152c
+ms.openlocfilehash: c301766b64af7fc1523b39adad91d9b52a5e88f7
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68821076"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69506589"
 ---
 # <a name="cfiledialog-class"></a>CFileDialog sınıfı
 
@@ -149,7 +149,7 @@ Dosya açma veya dosya kaydetme işlemleri için kullanılan ortak iletişim kut
 class CFileDialog : public CCommonDialog
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Üyeler
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
@@ -258,11 +258,11 @@ Bir `CFileDialog` nesnesi kullanmak için, önce `CFileDialog` oluşturucuyu kul
 İletişim kutusu denetimlerini başlattıktan sonra, kullanıcının yolu ve dosya adını yazabilmesi için iletişim kutusunu göstermek üzere [CFileDialog::D oModal](#domodal) yöntemini çağırın. `DoModal`kullanıcının Tamam (IDOK) veya Iptal (ıDCANCEL) düğmesine tıkladığını döndürür. IDOK `CFileDialog`döndürürse, Kullanıcı tarafından yerleştirilecek bilgileri almak için ortak üye işlevlerinden birini kullanabilirsiniz. `DoModal`
 
 > [!NOTE]
-> Windows Vista veya sonraki sürümlerinde, [IFileDialog:: SetFileTypes](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ifiledialog-setfiletypes) için birden çok çağrı hataya neden olur. Herhangi bir `SetFileTypes` `CFileDialog` örneğine yönelik ikinci çağrı, Windows Vista veya sonraki sürümlerde E_UNEXPECTED döndürür. Bazı `CFileDialog` yöntem işlevleri çağırır `SetFileTypes`. Örneğin, aynı bir oluşturma örneği `CFileDialog::DoModal` için yapılan iki çağrı, bir `CFileDialog` onay [](diagnostic-services.md#assert)oluşturur.
+> Windows Vista veya sonraki sürümlerinde, [IFileDialog:: SetFileTypes](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ifiledialog-setfiletypes) için birden çok çağrı hataya neden olur. Herhangi bir `SetFileTypes` `CFileDialog` örneğine yönelik ikinci çağrı, Windows Vista veya sonraki sürümlerde E_UNEXPECTED döndürür. Bazı `CFileDialog` yöntem işlevleri çağırır `SetFileTypes`. Örneğin, aynı bir oluşturma örneği `CFileDialog::DoModal` için yapılan iki çağrı, bir `CFileDialog` onay [](diagnostic-services.md#assert)oluşturur.
 
 `CFileDialog`, paylaşma ihlallerinin, dosya adı doğrulamasının ve liste kutusu değişiklik bildiriminin özel işlenmesini yapmanızı sağlayan birkaç korumalı üye içerir. Varsayılan işleme otomatik olarak yapıldığından, bu korumalı Üyeler çoğu uygulamanın kullanmak zorunda olmadığı geri çağırma işlevleridir. Bu işlevlere ait ileti eşleme girdileri standart sanal işlevler olduklarından gerekli değildir.
 
-İletişim kutusunun başlatılması sırasında oluşan bir hata olup olmadığını ve hata hakkında daha fazla bilgi edinmek için Windows [Commdlextende,](/windows/desktop/api/commdlg/nf-commdlg-commdlgextendederror) işlevini kullanabilirsiniz.
+İletişim kutusunun başlatılması sırasında oluşan bir hata olup olmadığını ve hata hakkında daha fazla bilgi edinmek için Windows [Commdlextende,](/windows/win32/api/commdlg/nf-commdlg-commdlgextendederror) işlevini kullanabilirsiniz.
 
 `CFileDialog` Nesneleri yok etme işlemi otomatik olarak işlenir. [CDialog:: EndDialog](../../mfc/reference/cdialog-class.md#enddialog)çağrısı yapmanız gerekmez.
 
@@ -604,7 +604,7 @@ virtual INT_PTR DoModal();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-IDOK veya ıDCANCEL. IDCANCEL döndürülürse, bir hatanın oluşup oluşmadığını öğrenmek için Windows [Commıdextendebir](/windows/desktop/api/commdlg/nf-commdlg-commdlgextendederror) işlevini çağırın.
+IDOK veya ıDCANCEL. IDCANCEL döndürülürse, bir hatanın oluşup oluşmadığını öğrenmek için Windows [Commıdextendebir](/windows/win32/api/commdlg/nf-commdlg-commdlgextendederror) işlevini çağırın.
 
 IDOK ve ıDCANCEL, kullanıcının Tamam veya Iptal düğmesini seçip seçmediğini belirten sabitlerdir.
 
@@ -827,7 +827,7 @@ IFileDialogCustomize* GetIFileDialogCustomize();
 
 Bu işlevi yalnızca Windows Vista veya sonraki sürümlerde, *bVistaStyle* değeri true olarak ayarlanmış bir nesneyle kullanın. *BVistaStyle* yanlış olduğunda bu işlevi kullanırsanız, yayın modunda null döndürür ve hata ayıklama modunda bir onaylama oluşturur.
 
-`IFileDialogCustomize` Arabirim hakkında daha fazla bilgi için, bkz. [IFileDialogCustomize](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ifiledialogcustomize).
+`IFileDialogCustomize` Arabirim hakkında daha fazla bilgi için, bkz. [IFileDialogCustomize](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ifiledialogcustomize).
 
 ### <a name="example"></a>Örnek
 
@@ -851,7 +851,7 @@ IFileOpenDialog* GetIFileOpenDialog();
 
 Bu işlevi yalnızca Windows Vista veya sonraki sürümlerde, *bVistaStyle* değeri true olarak ayarlanmış bir nesneyle kullanın. Bu işlev **Açık** bir iletişim kutusu `CFileDialog` değilse veya *bVistaStyle* yanlış olarak ayarlandıysa null değerini döndürür. Bu son durumda, işlev yalnızca yayın modunda NULL döndürür-hata ayıklama modunda, bir onaylama işlemi oluşturur.
 
-`IFileOpenDialog` Arabirim hakkında daha fazla bilgi için, bkz. [IFileOpenDialog](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ifileopendialog).
+`IFileOpenDialog` Arabirim hakkında daha fazla bilgi için, bkz. [IFileOpenDialog](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ifileopendialog).
 
 ### <a name="example"></a>Örnek
 
@@ -875,7 +875,7 @@ IFileSaveDialog* GetIFileSaveDialog();
 
 Bu işlevi yalnızca Windows Vista veya sonraki sürümlerde, *bVistaStyle* değeri true olarak ayarlanmış bir nesneyle kullanın. Bu işlev, `CFileDialog` bir **Kaydet** iletişim kutusu değilse veya *bVistaStyle* yanlış olarak ayarlandıysa null döndürür. Bu son durumda, işlev yalnızca yayın modunda NULL döndürür-hata ayıklama modunda, bir onaylama işlemi oluşturur.
 
-`IFileSaveDialog` Arabirim hakkında daha fazla bilgi için, bkz. [IFileSaveDialog](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ifilesavedialog).
+`IFileSaveDialog` Arabirim hakkında daha fazla bilgi için, bkz. [IFileSaveDialog](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ifilesavedialog).
 
 ### <a name="example"></a>Örnek
 
@@ -1185,7 +1185,7 @@ virtual void OnFileNameChange();
 
 Kullanıcı **Aç** veya **farklı kaydet** iletişim kutusunun dosya listesinde yeni bir dosya veya klasör seçtiğinde, sistem cdn_selchange iletisini gönderir. Bu iletiye yanıt olarak herhangi bir eylem gerçekleştirmek istiyorsanız bu yöntemi geçersiz kılın.
 
-Sistem bu iletiyi yalnızca, iletişim kutusu OFN_EXPLORER bayrağı açık olarak oluşturulduysa gönderir. Bildirim hakkında daha fazla bilgi için bkz. [cdn_selchange](/windows/desktop/dlgbox/cdn-selchange). OFN_EXPLORER bayrağı hakkında daha fazla bilgi için [OpenFileName](/windows/win32/api/commdlg/ns-commdlg-openfilenamew) yapısına ve [Aç ve farklı Kaydet iletişim kutularına](/windows/desktop/dlgbox/open-and-save-as-dialog-boxes)bakın.
+Sistem bu iletiyi yalnızca, iletişim kutusu OFN_EXPLORER bayrağı açık olarak oluşturulduysa gönderir. Bildirim hakkında daha fazla bilgi için bkz. [cdn_selchange](/windows/win32/dlgbox/cdn-selchange). OFN_EXPLORER bayrağı hakkında daha fazla bilgi için [OpenFileName](/windows/win32/api/commdlg/ns-commdlg-openfilenamew) yapısına ve [Aç ve farklı Kaydet iletişim kutularına](/windows/win32/dlgbox/open-and-save-as-dialog-boxes)bakın.
 
 ##  <a name="onfilenameok"></a>CFileDialog:: OnFileNameOK
 
@@ -1217,7 +1217,7 @@ virtual void OnFolderChange();
 
 Bildirim iletisi, aç veya farklı Kaydet iletişim kutusunda yeni bir klasör açıldığında gönderilir.
 
-Bildirim yalnızca, iletişim kutusu OFN_EXPLORER stiliyle oluşturulduysa gönderilir. Bildirim hakkında daha fazla bilgi için bkz. [CDN_FOLDERCHANGE](/windows/desktop/dlgbox/cdn-folderchange). OFN_EXPLORER stili hakkında daha fazla bilgi için [OpenFileName](/windows/win32/api/commdlg/ns-commdlg-openfilenamew) yapısına ve [Aç ve farklı Kaydet iletişim kutularına](/windows/desktop/dlgbox/open-and-save-as-dialog-boxes)bakın.
+Bildirim yalnızca, iletişim kutusu OFN_EXPLORER stiliyle oluşturulduysa gönderilir. Bildirim hakkında daha fazla bilgi için bkz. [CDN_FOLDERCHANGE](/windows/win32/dlgbox/cdn-folderchange). OFN_EXPLORER stili hakkında daha fazla bilgi için [OpenFileName](/windows/win32/api/commdlg/ns-commdlg-openfilenamew) yapısına ve [Aç ve farklı Kaydet iletişim kutularına](/windows/win32/dlgbox/open-and-save-as-dialog-boxes)bakın.
 
 ##  <a name="oninitdone"></a>CFileDialog:: Onınitdone
 
@@ -1231,7 +1231,7 @@ virtual void OnInitDone();
 
 Sistem, alt iletişim kutusunun denetimleri için yer açmak üzere **Aç** veya **farklı kaydet** iletişim kutusundaki denetimleri düzenleme işlemini tamamladığında sistem bu bildirim iletisini gönderir.
 
-Sistem bunu yalnızca iletişim kutusu OFN_EXPLORER stiliyle oluşturulduysa gönderir. Bildirim hakkında daha fazla bilgi için bkz. [CDN_INITDONE](/windows/desktop/dlgbox/cdn-initdone). OFN_EXPLORER stili hakkında daha fazla bilgi için [OpenFileName](/windows/win32/api/commdlg/ns-commdlg-openfilenamew) yapısına ve [Aç ve farklı Kaydet iletişim kutularına](/windows/desktop/dlgbox/open-and-save-as-dialog-boxes)bakın.
+Sistem bunu yalnızca iletişim kutusu OFN_EXPLORER stiliyle oluşturulduysa gönderir. Bildirim hakkında daha fazla bilgi için bkz. [CDN_INITDONE](/windows/win32/dlgbox/cdn-initdone). OFN_EXPLORER stili hakkında daha fazla bilgi için [OpenFileName](/windows/win32/api/commdlg/ns-commdlg-openfilenamew) yapısına ve [Aç ve farklı Kaydet iletişim kutularına](/windows/win32/dlgbox/open-and-save-as-dialog-boxes)bakın.
 
 > [!NOTE]
 > Windows Vista veya üzeri stil dosya iletişimleri bu işlevi desteklemez. Bu işlevi Windows Vista veya sonraki bir stil dosyası iletişim kutusunda kullanma girişimi [CNotSupportedException](../../mfc/reference/cnotsupportedexception-class.md)oluşturacak.
@@ -1331,7 +1331,7 @@ virtual void OnTypeChange();
 
 Kullanıcı aç veya farklı Kaydet iletişim kutusunda dosya türleri listesinden yeni bir dosya türü seçtiğinde bildirim iletisi gönderilir.
 
-Bildirim yalnızca, iletişim kutusu OFN_EXPLORER stiliyle oluşturulduysa gönderilir. Bildirim hakkında daha fazla bilgi için bkz. [CDN_TYPECHANGE](/windows/desktop/dlgbox/cdn-typechange). OFN_EXPLORER stili hakkında daha fazla bilgi için [OpenFileName](/windows/win32/api/commdlg/ns-commdlg-openfilenamew) yapısına ve [Aç ve farklı Kaydet iletişim kutularına](/windows/desktop/dlgbox/open-and-save-as-dialog-boxes)bakın.
+Bildirim yalnızca, iletişim kutusu OFN_EXPLORER stiliyle oluşturulduysa gönderilir. Bildirim hakkında daha fazla bilgi için bkz. [CDN_TYPECHANGE](/windows/win32/dlgbox/cdn-typechange). OFN_EXPLORER stili hakkında daha fazla bilgi için [OpenFileName](/windows/win32/api/commdlg/ns-commdlg-openfilenamew) yapısına ve [Aç ve farklı Kaydet iletişim kutularına](/windows/win32/dlgbox/open-and-save-as-dialog-boxes)bakın.
 
 ##  <a name="removecontrolitem"></a>CFileDialog:: Removecontrolıdıtem
 
@@ -1594,7 +1594,7 @@ void SetTemplate(
 Sistem belirtilen şablonlardan yalnızca birini kullanacaktır. Sistem, OFN_EXPLORER stilinin varlığına ve uygulamanın üzerinde çalıştığı işletim sistemine göre hangi şablonun kullanılacağını belirler. Gezgin olmayan ve gezgin stili bir şablon belirterek, Windows NT 3,51, Windows NT 4,0 ve sonraki sürümlerini ve Windows 95 ve sonraki sürümlerini desteklemek kolaydır.
 
 > [!NOTE]
-> Windows Vista veya üzeri stil dosyası iletişim kutuları bu işlevi desteklemez. Bu işlevi bir Windows Vista veya sonraki bir stil dosyası iletişim kutusunda kullanmaya çalışılması [CNotSupportedException](../../mfc/reference/cnotsupportedexception-class.md)oluşturacak. Diğer bir seçenek de özelleştirilmiş bir iletişim kutusu kullanmaktır. Özel `CFileDialog`kullanma hakkında daha fazla bilgi için, bkz. [IFileDialogCustomize](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ifiledialogcustomize).
+> Windows Vista veya üzeri stil dosyası iletişim kutuları bu işlevi desteklemez. Bu işlevi bir Windows Vista veya sonraki bir stil dosyası iletişim kutusunda kullanmaya çalışılması [CNotSupportedException](../../mfc/reference/cnotsupportedexception-class.md)oluşturacak. Diğer bir seçenek de özelleştirilmiş bir iletişim kutusu kullanmaktır. Özel `CFileDialog`kullanma hakkında daha fazla bilgi için, bkz. [IFileDialogCustomize](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ifiledialogcustomize).
 
 ##  <a name="startvisualgroup"></a>CFileDialog:: StartVisualGroup
 
@@ -1628,7 +1628,7 @@ void UpdateOFNFromShellDialog();
 
 Windows Vista 'Dan önceki Windows sürümlerinde, [OpenFileName](/previous-versions/windows/embedded/ms911906\(v=msdn.10\)) veri yapısı üyenin durumuyla `CFileDialog`sürekli olarak eşitlenir. [M_ofn](#m_ofn) member değişkeninde yapılan tüm değişiklikler, iletişim kutusunun durumunu doğrudan etkiler. Ayrıca, iletişim kutusunun durumundaki değişiklikler m_ofn üye değişkenini hemen güncelleştirirler.
 
-Windows Vista veya sonraki sürümlerde `m_ofn` veri yapısı otomatik olarak güncellenmez. `m_ofn` Üye değişkenindeki verilerin doğruluğunu garantilemek için, verileri erişmeden önce `UpdateOFNFromShellDialog` işlevini çağırmanız gerekir. Windows, [IFileDialog:: OnFileOK](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ifiledialogevents-onfileok)işlemi sırasında bu işlevi otomatik olarak çağırır.
+Windows Vista veya sonraki sürümlerde `m_ofn` veri yapısı otomatik olarak güncellenmez. `m_ofn` Üye değişkenindeki verilerin doğruluğunu garantilemek için, verileri erişmeden önce `UpdateOFNFromShellDialog` işlevini çağırmanız gerekir. Windows, [IFileDialog:: OnFileOK](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ifiledialogevents-onfileok)işlemi sırasında bu işlevi otomatik olarak çağırır.
 
 `CFileDialog` Sınıfının Windows Vista veya sonraki sürümlerinde nasıl kullanılacağı hakkında daha fazla bilgi için bkz. [CFileDialog Class](../../mfc/reference/cfiledialog-class.md).
 

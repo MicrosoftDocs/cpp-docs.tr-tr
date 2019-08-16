@@ -24,19 +24,19 @@ helpviewer_keywords:
 - stack, recovering
 - _resetstkoflw function
 ms.assetid: 319529cd-4306-4d22-810b-2063f3ad9e14
-ms.openlocfilehash: ad8c9b470c33a4c84f46ac7758d368917e7938e0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fc8a625e767daeb964f838c91f74732c9bd337a4
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62357544"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69499491"
 ---
-# <a name="resetstkoflw"></a>_resetstkoflw
+# <a name="_resetstkoflw"></a>_resetstkoflw
 
 Yığın taşmasından kurtarır.
 
 > [!IMPORTANT]
-> Bu API, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -46,69 +46,69 @@ int _resetstkoflw( void );
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarılı olursa sıfır başarısız olursa sıfır dışı.
+İşlev başarılı olursa sıfır dışında, başarısız olursa sıfır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Resetstkoflw** koşulundan bir programın önemli özel durum hatasıyla başarısız olmak yerine devam etmesine izin vererek bir yığın taşması, işlev kurtarır. Varsa **_resetstkoflw** işlevi çağrılmazsa, önceki özel durumdan sonra koruma sayfa yok. Bir yığın olduğunu bir sonraki sefer, hiçbir özel durum vardır hiç ve uyarı vermeden işlemi sonlandırır.
+**_Resetstkoflw** işlevi bir yığın taşma koşulunu kurtarır, bu da bir programın önemli bir özel durum hatasıyla başarısız olması yerine devam etmesine izin verir. **_Resetstkoflw** işlevi çağrılmadığından, önceki özel durumdan sonra koruma sayfası yoktur. Bir sonraki sefer bir yığın taşması olduğunda, hiç özel durum yoktur ve işlem uyarı vermeden sonlandırılır.
 
-Bir uygulama bir iş parçacığında neden olursa bir **exceptıon_stack_overflow** özel durum, iş parçacığı sol kendi yığınını zarar görmüş durumda. Bu gibi diğer özel durumlar aksine, **EXCEPTION_ACCESS_VIOLATION** veya **exceptıon_ınt_dıvıde_by_zero**, burada yığının bozuk. Yığın, program ilk yüklendiğinde rasgele olarak küçük bir değere ayarlanır. Yığın ardından iş parçacığının gereklerini karşılamak için istek üzerine büyür. Bu, geçerli yığın sonunda PAGE_GUARD erişimi olan bir sayfa koyarak uygulanır. Daha fazla bilgi için [koruyucu sayfa oluşturma](/windows/desktop/Memory/creating-guard-pages).
+Bir uygulamadaki bir iş parçacığı **EXCEPTION_STACK_OVERFLOW** özel durumuna neden oluyorsa, iş parçacığı yığınını hasarlı durumda bıraktı. Bu, yığının bozuk olmadığı **EXCEPTION_ACCESS_VIOLATION** veya **EXCEPTION_INT_DIVIDE_BY_ZERO**gibi diğer özel durumlara karşı farklıdır. Program ilk yüklendiğinde yığın rasgele küçük bir değere ayarlanır. Yığın daha sonra iş parçacığının ihtiyaçlarını karşılamak için isteğe bağlı olarak artar. Bu, geçerli yığının sonunda PAGE_GUARD erişimine sahip bir sayfa yerleştirilerek uygulanır. Daha fazla bilgi için bkz. [koruma sayfaları oluşturma](/windows/win32/Memory/creating-guard-pages).
 
-Bu sayfada bir adrese işaret edecek şekilde yığın işaretçisi kodu neden olduğunda, bir özel durum oluşur ve sistem aşağıdaki üç şeyi yapar:
+Kod, yığın işaretçisinin bu sayfadaki bir adrese işaret etmesine neden olduğunda, bir özel durum oluşur ve sistem aşağıdaki üç şeyi yapar:
 
-- İş parçacığı okuyup belleğe veri yazma koruma sayfasının PAGE_GUARD korumasını kaldırır.
+- PAGE_GUARD korumasını koruma sayfasında kaldırır, böylece iş parçacığı belleğe veri okuyup yazabilir.
 
-- Yeni bir koruma ayırır. diğer bir deyişle sayfanın bir altında konumlandırılmış bir sayfa.
+- Son bir sayfanın altında bir sayfa bulunan yeni bir koruyucu sayfası ayırır.
 
-- Özel duruma neden olan yönergeyi yeniden çalıştırır.
+- Özel durumu tetikleyen yönergeyi yeniden çalıştırır.
 
-Bu şekilde, sistem otomatik olarak iş parçacığı yığın boyutunu artırabilir. Bir işlemdeki her iş parçacığının maksimum yığın boyutu vardır. Yığın boyutu derleme zamanında ayarlanır [/STACK (yığın ayırmaları)](../../build/reference/stack-stack-allocations.md), ya da [STACKSIZE](../../build/reference/stacksize.md) proje için .def dosyası deyimi.
+Bu şekilde, sistem iş parçacığı için yığının boyutunu otomatik olarak artırabilir. Bir işlemdeki her iş parçacığının en büyük yığın boyutu vardır. Yığın boyutu, [/Stack (yığın ayırmaları)](../../build/reference/stack-stack-allocations.md)veya proje için. def dosyasındaki [STACKSIZE](../../build/reference/stacksize.md) ifadesiyle derleme zamanında ayarlanır.
 
-Bu maksimum yığın boyutu aşıldığında, sistem aşağıdaki üç şeyi yapar:
+Bu en büyük yığın boyutu aşıldığında, sistem aşağıdaki üç şeyi yapar:
 
-- Koruma daha önce açıklandığı gibi sayfasının PAGE_GUARD korumasını kaldırır.
+- , Daha önce açıklandığı gibi koruma sayfasında PAGE_GUARD korumasını kaldırır.
 
-- Sonuncu altına yeni bir koruma sayfası ayırmaya çalışır. Ancak, maksimum yığın boyutu aşıldığı için bu başarısız olur.
+- Son sayfanın altında yeni bir koruyucu sayfası ayırmaya çalışır. Ancak, en büyük yığın boyutu aşıldığı için bu başarısız olur.
 
-- İş parçacığı özel durum bloğunda işleyebilmesi bir özel durum oluşturur.
+- İş parçacığının özel durum bloğunda işleyebilmesi için bir özel durum oluşturur.
 
-Bu noktada, yığında artık koruma sayfası olmadığını unutmayın. Program yığının sonuna kadar tüm büyüdükçe sonraki açışınızda büyüttüğü bir koruma sayfası, program yığının sonunun yazar ve erişim ihlaline neden oluyor.
+Bu noktada yığının artık bir Guard sayfası olmadığını unutmayın. Bir sonraki sefer, bir koruyucu sayfa olması gereken her seferinde yığın sonuna kadar bir süre büyüdükçe, program yığının sonunun ötesinde yazar ve erişim ihlaline neden olur.
 
-Çağrı **_resetstkoflw** her bir yığın taşması özel durumundan sonra kurtarma yapılır koruma sayfasını geri yüklemek için. Bu işlev ana gövdesi içinden çağrılabilen bir **__except** blok veya dış bir **__except** blok. Ancak, ne zaman kullanılmalıdır bazı kısıtlamalar vardır. **_resetstkoflw** asla çağrılmamalıdır:
+**_Resetstkoflw** çağrısını, bir yığın taşması özel durumu sonrasında kurtarma işlemi tamamlandığında koruma sayfasını geri yüklemek için çağırın. Bu işlev, bir **__except** bloğunun ana gövdesinin içinden veya bir **__except** bloğunun dışında çağrılabilir. Bununla birlikte, ne zaman kullanılması gerektiği konusunda bazı kısıtlamalar vardır. **_resetstkoflw** hiçbir şekilde çağrılmamalıdır:
 
-- Bir filtre ifadesi.
+- Filtre ifadesi.
 
 - Bir filtre işlevi.
 
-- Filtre işlevinden çağrılan işlev.
+- Bir filtre işlevinden çağrılan işlev.
 
-- A **catch** blok.
+- Bir **catch** bloğu.
 
-- A **__finally** blok.
+- Bir **__finally** bloğu.
 
-Bu noktalarda yığın henüz yeterince çözülmüş değildir.
+Bu noktalarda, yığın henüz yeterince uygun değildir.
 
-Yığın taşması özel durumları oluşturulur yapılandırılmış özel durumları değil C++ özel durumlar, bu nedenle **_resetstkoflw** yakalayamayacağından değil **catch** bloğunda bir yığın taşması yakalayamaz özel durum. Ancak, varsa [_set_se_translator](set-se-translator.md) oluşturan bir yapılandırılmış özel durum Çeviricisi uygulamak için kullanılan C++ özel durumlar (ikinci örnekteki gibi), bir yığın taşması özel durumuna neden olabilir bir C++ tarafından işlenen özel durum bir C++ catch bloğu.
+Yığın taşması özel durumları özel durumlar değil C++ , yapılandırılmış özel durumlar olarak oluşturulur. bu nedenle, bir yığın taşması özel durumunu yakalayacağından, **_resetstkoflw** sıradan bir **catch** bloğunda yararlı değildir. Ancak, C++ özel durum oluşturan yapılandırılmış bir özel durum çeviricisini uygulamak için [_set_se_translator](set-se-translator.md) kullanılırsa (ikinci örnekte olduğu gibi), bir yığın taşması özel durumu bir C++ catch bloğu tarafından C++ işlenebilen bir özel durum oluşur .
 
-Çağırmak güvenli değil **_resetstkoflw** içinde bir C++ yapılandırılmış özel durum Çevirici işleviyle atılan bir özel durumdan ulaşıldığında yakalama bloğu. Bu durumda, yığın alanı ve yığın işaretçisi catch bloğu dışında olsa bile Yıkıcılar yakalama bloğunun önündeki yıkıcı nesneler için çağrılmış kadar sıfırlanmaz. Bu işlev yığın alanı boşaltılana ve yığın işaretçisi sıfırlanana kadar çağrılmamalıdır. Bu nedenle, yalnızca catch bloğundan çıkıldıktan sonra çağrılmalıdır. Kendisi bir önceki yığın taşmasından kurtarma denemesi catch bloğu içinde oluşan bir yığın taşması program taşma yanıt vermeyi durdurmasına neden olabilir ve kurtarılabilir olmadığından, catch bloğunda olabildiğince küçük yığın alanı kullanılmalıdır catch bloğu Tetikleyicileri catch bloğu bir özel durum kendisi tarafından aynı işlenir.
+Yapılandırılmış özel durum çevirici işlevi tarafından oluşturulan bir özel durumla ulaşılan bir C++ catch bloğunda **_resetstkoflw** çağrısı yapmak güvenli değildir. Bu durumda, yığın alanı serbest bırakılmaz ve yığın işaretçisi, catch bloğundan önce geri çevrilebilir nesneler için çağrılsa bile, catch bloğunun dışına çıkana kadar sıfırlanmaz. Bu işlev, yığın alanı serbest bırakılır ve yığın işaretçisi sıfırlanana kadar çağrılmamalıdır. Bu nedenle, yalnızca catch bloğundan çıkıldıktan sonra çağrılmalıdır. Bir önceki yığın taşmasından kurtarmaya çalışan catch bloğunda oluşan bir yığın taşması kurtarılabilir olmadığından ve taşma sırasında programın yanıt vermemesine neden olabileceği için, olası çok az yığın alanı catch bloğunda kullanılmalıdır. Catch bloğunda, kendisi aynı catch bloğu tarafından işlenen bir özel durum tetikler.
 
-Bazı durumlarda burada **_resetstkoflw** içinde olduğu gibi bir doğru konumda kullanılsa bile başarısız olabilir bir **__except** blok. Yığın bırakıldıktan sonra bile, yok, hala yürütmek için yeterli yığın alanı **_resetstkoflw** yığının son sayfasına yazmadan **_resetstkoflw** son sayfasında sıfırlayamaz. yığın, 0 döndürür ve koruma sayfası olarak. Bu nedenle, bu işlevin güvenli kullanımı, yığının güvenli olduğunu varsayarak, dönüş değeri yerine denetlenmesini içermelidir.
+**_Resetstkoflw** 'ın, bir **__except** bloğu içinde olduğu gibi doğru bir konumda kullanılsa bile başarısız olduğu durumlar vardır. Yığını geri döndürmeden sonra bile, yığının son sayfasına yazmadan **_resetstkoflw** yürütmek için yeterli yığın alanı kalmadı, **_resetstkoflw** koruyucu sayfa olarak yığının son sayfasını sıfırlayamaz ve 0 döndürür. hata olduğunu gösterir. Bu nedenle, bu işlevin güvenli kullanımı, yığının kullanım açısından güvenli olduğunu varsaymak yerine dönüş değerinin denetlenmesini içermelidir.
 
-Yapılandırılmış özel durum işleme yakalamaz bir **STATUS_STACK_OVERFLOW** uygulama ile derlendiğinde bir özel durum **/CLR** (bkz  [ /CLR (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md)).
+Yapılandırılmış özel durum işleme, uygulama **/clr** ile derlendiğinde bir **STATUS_STACK_OVERFLOW** özel durumu yakalayamaz (bkz. [/clr (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md)).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_resetstkoflw**|\<malloc.h >|
+|**_resetstkoflw**|\<malloc. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
-**Kitaplıklar:** Tüm sürümleri [CRT kitaplık özellikleri](../../c-runtime-library/crt-library-features.md).
+**Kütüphaneler** [CRT kitaplığı özelliklerinin](../../c-runtime-library/crt-library-features.md)tüm sürümleri.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, önerilen kullanımını gösterir. **_resetstkoflw** işlevi.
+Aşağıdaki örnek, **_resetstkoflw** işlevinin önerilen kullanımını gösterir.
 
 ```C
 // crt_resetstkoflw.c
@@ -177,13 +177,13 @@ int main(int ac)
 }
 ```
 
-Program bağımsız değişken olmadan çıktı örneği:
+Program bağımsız değişkenleri olmayan örnek çıkış:
 
 ```Output
 loop #1
 ```
 
-Program, daha fazla yinelemeyi çalıştırmadan yanıt vermeyi durdurur.
+Program daha fazla yineleme yürütmeden yanıt vermeyi durduruyor.
 
 Program bağımsız değişkenleriyle:
 
@@ -212,7 +212,7 @@ resetting stack overflow
 
 ### <a name="description"></a>Açıklama
 
-Aşağıdaki örnek, önerilen kullanımını göstermektedir **_resetstkoflw** burada yapılandırılmış özel durumları dönüştürülür programında C++ özel durumlar.
+Aşağıdaki örnek, yapılandırılmış özel durumların C++ özel durumlara dönüştürüldüğü bir programda **_resetstkoflw** 'ın önerilen kullanımını gösterir.
 
 ### <a name="code"></a>Kod
 

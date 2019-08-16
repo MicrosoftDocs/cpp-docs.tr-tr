@@ -25,16 +25,16 @@ helpviewer_keywords:
 - processor time used
 - calculating processor time used
 ms.assetid: 3e1853dd-498f-49ba-b06a-f2315f20904e
-ms.openlocfilehash: 4b58b33b533250447cf964134de9869bddee4498
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2fabd18fb28cb5ea13dfb156ea21e8743c2afd49
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62347476"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69500283"
 ---
 # <a name="clock"></a>saat
 
-Çağırma işlemi tarafından kullanılan duvar saati zamanı hesaplar.
+Çağıran işlem tarafından kullanılan duvar saati saatini hesaplar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -44,19 +44,19 @@ clock_t clock( void );
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başında CRT başlatma işleminin bu yana geçen süreyi cinsinden ölçülen **CLOCKS_PER_SEC** birimi / saniye. Geçen süreyi kullanılamıyor veya olarak kayıtlı pozitif en uzun süreyi aştı bir **clock_t** türü, işlev değeri döndürür `(clock_t)(-1)`.
+İşlemin başlangıcında, saniye başına **CLOCKS_PER_SEC** birim cınsınden ölçülen CRT başlatmasından bu yana geçen süre. Geçen süre kullanılamıyorsa veya bir **clock_t** türü olarak kaydedilebilen en uzun pozitif süreyi aşarsa, işlev değeri `(clock_t)(-1)`döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Saat** işlevi söyler CRT başlatma işlemi başlangıcı sırasında bu yana ne kadar duvar saati süresi geçti. Bu işlev kesinlikle net CPU süresi dönüş değeri olarak belirtir. ISO C uygun değil olduğunu unutmayın. CPU süreleri elde etmek için Win32 kullanın [GetProcessTimes](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-getprocesstimes) işlevi. Tarafından döndürülen değeri, geçen süreyi saniye cinsinden belirlemek için bölme **saat** makro işleviyle **CLOCKS_PER_SEC**.
+**Clock** işlevi, işlem BAŞLANGıCı sırasında CRT başlatmadan bu yana ne kadar duvar saati saati geçtiğini söyler. Bu işlevin, dönüş değeri olarak net CPU süresini belirten ISO C 'ye kesinlikle uyumlu olmadığına unutmayın. CPU sürelerini almak için Win32 [GetProcessTimes](/windows/win32/api/processthreadsapi/nf-processthreadsapi-getprocesstimes) işlevini kullanın. Geçen süreyi saniye cinsinden öğrenmek için, **saat** işlevi tarafından döndürülen değeri Macro **CLOCKS_PER_SEC**ile bölün.
 
-Yeterli zaman göz önünde bulundurulduğunda, döndürülen değer tarafından **saat** en büyük pozitif değerini aşabilir **clock_t**. İşlem çalıştırdığınızda uzun tarafından döndürülen değer **saat** her zaman `(clock_t)(-1)`ISO C99 standardında (7.23.2.1) ve ISO C11 standart (7.27.2.1) tarafından belirtilen. Microsoft uygulayan **clock_t** olarak bir **uzun**, imzalı bir 32 bit tamsayı ve **CLOCKS_PER_SEC** makrosu, 1000 tanımlanır. Bu en fazla verir **saat** işlev dönüş değeri 2147483.647 saniye veya yaklaşık 24.8 gün. Tarafından döndürülen değer güvenmeyin **saat** bu süreyi daha uzun süre çalışan işlemler de. 64 bit kullanabilirsiniz [zaman](time-time32-time64.md) işlevi ya da Windows [QueryPerformanceCounter](https://msdn.microsoft.com/library/windows/desktop/ms644904) yıllardır geçen sürelerinin kayıt işlemi için işlevi.
+Yeterli zaman verildiğinde, **saat** tarafından döndürülen değer **clock_t**en fazla pozitif değerini aşabilir. İşlem daha uzun süre çalıştığında, ISO C99 Standard (7.23.2.1 ) ve ISO `(clock_t)(-1)`C11 standardı (7.27.2.1) tarafından belirtilen şekilde saat tarafından döndürülen değer her zaman olur. Microsoft, **clock_t** 'i **uzun**, imzalanmış 32 bitlik bir tamsayı ve **CLOCKS_PER_SEC** makrosu 1000 olarak tanımlanır. Bu, 2147483,647 saniyelik bir maksimum **saat** işlevi dönüş değeri veya yaklaşık 24,8 gün verir. Bu süreden daha uzun süredir çalışan işlemlerde **saatin** döndürdüğü değere güvenmeyin. Birkaç yıla ait işlem geçen süreleri kaydetmek için 64 bit [zaman](time-time32-time64.md) Işlevini veya Windows [QueryPerformanceCounter](/windows/win32/api/profileapi/nf-profileapi-queryperformancecounter) işlevini kullanabilirsiniz.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**clock**|\<TIME.h >|
+|**clock**|\<Time. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

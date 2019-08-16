@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 f1_keywords:
 - istream/std::operator&gt;&gt;
 ms.assetid: 7174da41-f301-4a34-b631-0ab918b188d2
-ms.openlocfilehash: c10692194c80051b10ecbe776c7d23a03860d508
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: f5da7c6805d10e919255ce301dae5618ef58e76d
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68447794"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69501922"
 ---
 # <a name="ltistreamgt-operators"></a>&lt;IStream&gt; işleçleri
 
@@ -86,7 +86,7 @@ basic_istream<Elem, Tr>& operator>>(
 
 *N* -1 ' e kadar öğeyi ayıklar ve bu öğeleri dizi Içinde _ *Str*'dan başlayarak depolar. Eğer `Istr`. [Genişlik](../standard-library/ios-base-class.md#width) sıfırdan büyük, `Istr` *N* . **Genişlik**; Aksi takdirde, bu, bildirilebilecek en büyük dizisinin `Elem` boyutudur. İşlev her zaman değeri `Elem()` , depoladığı herhangi bir ayıklanan öğeden sonra saklar. Ayıklama, dosyanın sonunda, **Eled**(0) değerine sahip bir karakter (ayıklanmayan) veya [WS](../standard-library/istream-functions.md#ws)tarafından atılacak herhangi bir öğe (ayıklanmayan) üzerinde erken bir süre sonra durduruluyor. İşlev hiçbir öğe ayıklaıyorsa, çağırır `Istr`. [SetState](../standard-library/basic-ios-class.md#setstate) (**failbit**). Herhangi bir durumda, çağırır `Istr`. **Genişlik** (0) ve *ISTR*döndürür.
 
-**Güvenlik notunun** Giriş akışından ayıklanan null ile sonlandırılmış dizenin hedef arabellek *Str*boyutunu aşmaması gerekir. Daha fazla bilgi için bkz. [arabellek taşmalarını önleme](/windows/desktop/SecBP/avoiding-buffer-overruns).
+**Güvenlik notunun** Giriş akışından ayıklanan null ile sonlandırılmış dizenin hedef arabellek *Str*boyutunu aşmaması gerekir. Daha fazla bilgi için bkz. [arabellek taşmalarını önleme](/windows/win32/SecBP/avoiding-buffer-overruns).
 
 Şablon işlevi:
 
@@ -96,7 +96,7 @@ basic_istream<Elem, Tr>& operator>>(
     basic_istream<Elem, Tr>& Istr, Elem& Ch);
 ```
 
-Mümkünse bir öğe ayıklar ve bu öğeyi *ayıklar.* Aksi takdirde, çağrısı **olur**. [SetState](../standard-library/basic-ios-class.md#setstate) ( **failbit**). Herhangi bir durumda, *ISTR*döndürür.
+Mümkünse bir öğe ayıklar ve bu öğeyi ayıklar. Aksi takdirde, çağrısı **olur**. [SetState](../standard-library/basic-ios-class.md#setstate) ( **failbit**). Herhangi bir durumda, *ISTR*döndürür.
 
 Şablon işlevi:
 

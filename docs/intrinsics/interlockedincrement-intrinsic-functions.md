@@ -1,5 +1,5 @@
 ---
-title: _Interlockedıncrement iç işlevleri
+title: _InterlockedIncrement İç İşlevleri
 ms.date: 12/17/2018
 f1_keywords:
 - _InterlockedIncrement_acq
@@ -44,18 +44,18 @@ helpviewer_keywords:
 - _InterlockedIncrement_acq intrinsic
 - InterlockedIncrement intrinsic
 ms.assetid: 37700615-f372-438b-bcef-d76e11839482
-ms.openlocfilehash: b41ce5c744bde7cd89cabed6c829cfb06da75129
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 58c71c577e3d87ca72836134a4f895f32170fe7f
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62350094"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69509349"
 ---
-# <a name="interlockedincrement-intrinsic-functions"></a>_Interlockedıncrement iç işlevleri
+# <a name="_interlockedincrement-intrinsic-functions"></a>_InterlockedIncrement İç İşlevleri
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Win32 Windows SDK'sı derleyici iç desteği [InterlockedIncrement](/windows/desktop/api/winnt/nf-winnt-interlockedincrement) işlevi.
+Win32 Windows SDK [InterlockedIncrement](/windows/win32/api/winnt/nf-winnt-interlockedincrement) işlevi için derleyicinin iç desteğini sağlayın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -101,38 +101,38 @@ __int64 _InterlockedIncrement64_nf(
 #### <a name="parameters"></a>Parametreler
 
 *lpAddend*<br/>
-[out içinde] Arttırılacak değişken işaretçisi.
+[in, out] Arttırılacak değişken işaretçisi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Dönüş değeri elde edilen artan değerdir.
+Dönüş değeri, elde edilen artılan değerdir.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İç|Mimari|Üstbilgi|
+|Alanlarla|Mimari|Üstbilgi|
 |---------------|------------------|------------|
-|`_InterlockedIncrement`, `_InterlockedIncrement16`, `_InterlockedIncrement64`|x86, ARM, x64|\<intrin.h >|
-|`_InterlockedIncrement_acq`, `_InterlockedIncrement_rel`, `_InterlockedIncrement_nf`, `_InterlockedIncrement16_acq`, `_InterlockedIncrement16_rel`, `_InterlockedIncrement16_nf`, `_InterlockedIncrement64_acq`, `_InterlockedIncrement64_rel`, `_InterlockedIncrement64_nf`|ARM|\<intrin.h >|
+|`_InterlockedIncrement`, `_InterlockedIncrement16`, `_InterlockedIncrement64`|x86, ARM, x64|\<Intrin. h >|
+|`_InterlockedIncrement_acq`, `_InterlockedIncrement_rel`, `_InterlockedIncrement_nf`, `_InterlockedIncrement16_acq`, `_InterlockedIncrement16_rel`, `_InterlockedIncrement16_nf`, `_InterlockedIncrement64_acq`, `_InterlockedIncrement64_rel`, `_InterlockedIncrement64_nf`|ARM|\<Intrin. h >|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bazı farklılıklar vardır `_InterlockedIncrement` , bunlar içeren veri türleri ve olup işlemciye özgü alma göre farklılık veya release semantikleri kullanılır.
+Üzerinde bulunan `_InterlockedIncrement` veri türlerine göre farklılık gösteren çeşitli çeşitlemeler vardır ve işlemciye özgü alma veya yayınlama semantiği kullanılıp kullanılmayacağını belirtir.
 
-Sırada `_InterlockedIncrement` işlevi 32-bit tamsayı değerleri üzerinde çalışır `_InterlockedIncrement16` 16 bit tam sayı değerler üzerinde çalışır ve `_InterlockedIncrement64` 64-bit tamsayı değerler üzerinde çalışır.
+İşlev 32 bitlik tamsayı değerlerinde çalışırken, `_InterlockedIncrement16` 16 bit tamsayı değerlerinde çalışır ve `_InterlockedIncrement64` 64 bit tamsayı değerlerinde çalışır. `_InterlockedIncrement`
 
-ARM platformlarında, yapı içleri ile kullanmak `_acq` ve `_rel` almak ve yayın semantiğini gibi kritik bir bölüm başında ve sonunda sonekleri. İç bir `_nf` ("hiçbir sınır") soneki bellek önünde bir engel davranmaz.
+ARM platformlarında, önemli bir bölümün başındaki ve `_acq` sonundaki `_rel` gibi alma ve bırakma semantiklerine ihtiyacınız varsa, iç bilgileri ve son eklerini kullanın. `_nf` ("Sınır olmayan") son eki olan iç öğe, bellek engeli olarak görev yapmaz.
 
-Değişkeni tarafından işaret edilen `lpAddend` parametresi bir 32-bit sınırında hizalanmış olmalıdır; aksi takdirde, bu işlev üzerinde çok işlemcili x86 başarısız sistemleri ve x86 olmayan sistemler. Daha fazla bilgi için [hizalama](../cpp/align-cpp.md).
+`lpAddend` Parametresi tarafından işaret edilen değişken 32 bitlik bir sınıra hizalanmalıdır; Aksi takdirde, bu işlev çok işlemcili x86 sistemlerinde ve x86 olmayan sistemlerde başarısız olur. Daha fazla bilgi için bkz. [ALIGN](../cpp/align-cpp.md).
 
-Win32 işlevi içinde bildirilen `Wdm.h` veya `Ntddk.h`.
+Win32 işlevi veya `Wdm.h` `Ntddk.h`içinde bildirilmiştir.
 
-Bu yordamlar, yalnızca iç öğe olarak kullanılabilir.
+Bu yordamlar yalnızca iç bilgiler olarak kullanılabilir.
 
 ## <a name="example"></a>Örnek
 
-Nasıl kullanılacağını gösteren bir örnek `_InterlockedIncrement`, bkz: [_ınterlockeddecrement](../intrinsics/interlockeddecrement-intrinsic-functions.md).
+Öğesinin nasıl kullanılacağına `_InterlockedIncrement`ilişkin bir örnek için bkz. [_ınterlockedazaltma](../intrinsics/interlockeddecrement-intrinsic-functions.md).
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

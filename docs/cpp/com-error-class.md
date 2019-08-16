@@ -6,71 +6,71 @@ f1_keywords:
 helpviewer_keywords:
 - _com_error class
 ms.assetid: 70dafa69-b1fb-4a5c-9249-e857e0793d42
-ms.openlocfilehash: 8ed1521cbf768e5b473281e5f9b7c6597cdc4692
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 828a1ec68fef631700d5b64e6aeeec6660acf9a8
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62155208"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69498739"
 ---
-# <a name="comerror-class"></a>_com_error Sınıfı
+# <a name="_com_error-class"></a>_com_error Sınıfı
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-A **_com_error** nesnesi, tür kitaplığından oluşturulan üstbilgi dosyalarında hata işleme sarmalayıcı işlevleri veya bir COM desteği sınıfları tarafından algılanan bir özel durum koşulunu temsil eder. **_Com_error** sınıfı Kapsüller HRESULT hata kodu ve varsa ilişkili `IErrorInfo Interface` nesne.
+**_Com_error** nesnesi, tür KITAPLıĞıNDAN veya com destek sınıflarından birinde oluşturulan üstbilgi dosyalarındaki hata işleme sarmalayıcı işlevleri tarafından algılanan bir özel durum koşulunu temsil eder. **_Com_error** sınıfı, hresult hata kodunu ve ilişkili `IErrorInfo Interface` tüm nesneleri kapsar.
 
-### <a name="construction"></a>Oluşturma
+### <a name="construction"></a>İnşaat
 
 |||
 |-|-|
-|[_com_error](../cpp/com-error-com-error.md)|Oluşturur bir **_com_error** nesne.|
+|[_com_error](../cpp/com-error-com-error.md)|Bir **_com_error** nesnesi oluşturur.|
 
 ### <a name="operators"></a>İşleçler
 
 |||
 |-|-|
-|[işleç =](../cpp/com-error-operator-equal.md)|Mevcut bir atar **_com_error** başka bir nesne.|
+|[işleç =](../cpp/com-error-operator-equal.md)|Var olan bir **_com_error** nesnesini başka bir nesneye atar.|
 
-### <a name="extractor-functions"></a>Ayıklayıcısı işlevleri
-
-|||
-|-|-|
-|[Hata:](../cpp/com-error-error.md)|Oluşturucuya geçirilen HRESULT alır.|
-|[ErrorInfo](../cpp/com-error-errorinfo.md)|Alır `IErrorInfo` oluşturucuya nesnesi geçirildi.|
-|[WCode](../cpp/com-error-wcode.md)|Kapsüllenmiş HRESULT biçimine eşlenen 16-bit hata kodunu alır.|
-
-### <a name="ierrorinfo-functions"></a>IErrorInfo işlevleri
+### <a name="extractor-functions"></a>Extractor Işlevleri
 
 |||
 |-|-|
-|[Açıklama](../cpp/com-error-description.md)|Çağrıları `IErrorInfo::GetDescription` işlevi.|
-|[HelpContext](../cpp/com-error-helpcontext.md)|Çağrıları `IErrorInfo::GetHelpContext` işlevi.|
-|[HelpFile](../cpp/com-error-helpfile.md)|Çağrıları `IErrorInfo::GetHelpFile` işlevi|
-|[Kaynak](../cpp/com-error-source.md)|Çağrıları `IErrorInfo::GetSource` işlevi.|
-|[GUID](../cpp/com-error-guid.md)|Çağrıları `IErrorInfo::GetGUID` işlevi.|
+|[Hata:](../cpp/com-error-error.md)|Oluşturucuya geçirilen HRESULT 'yi alır.|
+|[ErrorInfo](../cpp/com-error-errorinfo.md)|Oluşturucuya geçirilen `IErrorInfo` nesneyi alır.|
+|[WCode](../cpp/com-error-wcode.md)|Encapsulated HRESULT 'e eşlenmiş 16 bit hata kodunu alır.|
 
-### <a name="format-message-extractor"></a>Biçim ileti ayıklayıcısı
+### <a name="ierrorinfo-functions"></a>IErrorInfo Işlevleri
 
 |||
 |-|-|
-|[ErrorMessage](../cpp/com-error-errormessage.md)|HRESULT içinde depolanan için dize iletiyi alır **_com_error** nesne.|
+|[Açıklama](../cpp/com-error-description.md)|Çağıran `IErrorInfo::GetDescription` işlevi.|
+|[HelpContext](../cpp/com-error-helpcontext.md)|Çağıran `IErrorInfo::GetHelpContext` işlevi.|
+|[HelpFile](../cpp/com-error-helpfile.md)|Çağrılar `IErrorInfo::GetHelpFile` işlevi|
+|[Kaynak](../cpp/com-error-source.md)|Çağıran `IErrorInfo::GetSource` işlevi.|
+|[GUID](../cpp/com-error-guid.md)|Çağıran `IErrorInfo::GetGUID` işlevi.|
 
-### <a name="exepinfowcode-to-hresult-mappers"></a>HRESULT Azaltıcının için ExepInfo.wCode
+### <a name="format-message-extractor"></a>Ileti ayıklayıcısı Biçimlendir
 
 |||
 |-|-|
-|[HRESULTToWCode](../cpp/com-error-hresulttowcode.md)|16 bit için 32 bitlik HRESULT eşler `wCode`.|
-|[WCodeToHRESULT](../cpp/com-error-wcodetohresult.md)|16-bit eşler `wCode` 32 bitlik HRESULT için.|
+|[Hata](../cpp/com-error-errormessage.md)|**_Com_error** NESNESINDE depolanan HRESULT için dize iletisini alır.|
 
-**END Microsoft özgü**
+### <a name="exepinfowcode-to-hresult-mappers"></a>Exepınfo. wCode to HRESULT Mapto
+
+|||
+|-|-|
+|[HRESULTToWCode](../cpp/com-error-hresulttowcode.md)|32 bitlik HRESULT 'yi 16 bit `wCode`'e eşler.|
+|[WCodeToHRESULT](../cpp/com-error-wcodetohresult.md)|16 bit `wCode` ile 32 bit HRESULT eşler.|
+
+**SON Microsoft 'a özgü**
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<comdef.h >
+**Üst bilgi:** \<Comdef. h >
 
-`Lib:` comsuppw.lib veya comsuppwd.lib (bkz [/ZC: wchar_t (wchar_t yerel türü olduğu)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) daha fazla bilgi için)
+`Lib:`comsuppw. lib veya comsuppwd. lib (daha fazla bilgi için bkz. [/Zc: wchar_t (wchar_t yerel tür)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) )
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Derleyici COM Desteği Sınıfları](../cpp/compiler-com-support-classes.md)<br/>
-[IErrorInfo arabirimi](/windows/desktop/api/oaidl/nn-oaidl-ierrorinfo)
+[IErrorInfo arabirimi](/windows/win32/api/oaidl/nn-oaidl-ierrorinfo)

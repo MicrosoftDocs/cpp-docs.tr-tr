@@ -1,5 +1,5 @@
 ---
-title: Platform::WriteOnlyArray sınıfı
+title: 'Platform:: WriteOnlyArray sınıfı'
 ms.date: 12/30/2016
 ms.topic: reference
 f1_keywords:
@@ -12,18 +12,18 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::WriteOnlyArray Class
 ms.assetid: 92d7dd56-ec58-4b8c-88ba-9c903668b687
-ms.openlocfilehash: fb582106fe2f18e939f11180048a125c683ca2f6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5652123d4866262515f804dba790af51610eb426
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62182944"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69500514"
 ---
-# <a name="platformwriteonlyarray-class"></a>Platform::WriteOnlyArray sınıfı
+# <a name="platformwriteonlyarray-class"></a>Platform:: WriteOnlyArray sınıfı
 
-Doldur yönteminin bir dizi çağırana başarılı olduğunda giriş parametresi olarak kullanılan bir tek boyutlu dizi temsil eder.
+Çağıran yöntemin doldurması için bir dizi geçtiğinde giriş parametresi olarak kullanılan tek boyutlu bir diziyi temsil eder.
 
-Bu başvuru sınıfı, private olarak vccorlib.h bildirilir; Bu nedenle, meta verilerde yayılır değildir ve yalnızca C++'tan tüketilebilir. Bu sınıf, çağırana ayırdığı bir dizi alan bir giriş parametresi olarak kullanılmak üzere yalnızca yöneliktir. Kullanıcı kodundan atmamalıdır değil. Doğrudan bu diziye yazmak C++ yöntemi sağlar — olarak bilinen bir deseni *FillArray* deseni. Daha fazla bilgi için [dizi ve WriteOnlyArray](../cppcx/array-and-writeonlyarray-c-cx.md).
+Bu başvuru sınıfı vccorlib. h; içinde özel olarak bildirilmiştir Bu nedenle, meta verilerde yer verilmez ve yalnızca tüketilebilir olur C++. Bu sınıf yalnızca çağıranın ayırdığı bir diziyi alan giriş parametresi olarak kullanılmak üzere tasarlanmıştır. Kullanıcı kodundan oluşturulabilir değildir. Bir C++ yöntemin, *FillArray* düzeni olarak bilinen bir model olan bu diziye doğrudan yazmasını sağlar. Daha fazla bilgi için bkz. [Array ve WriteOnlyArray](../cppcx/array-and-writeonlyarray-c-cx.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -35,16 +35,16 @@ private ref class WriteOnlyArray<T, 1>
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-Bu yöntemleri dahili erişilebilirlik sahip — diğer bir deyişle, bunlar yalnızca C++ uygulama veya bileşen içinde erişilebilir.
+Bu yöntemlerin iç erişilebilirliği vardır. diğer bir deyişle, yalnızca C++ uygulama veya bileşen içinden erişilebilir.
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[WriteOnlyArray::begin](#begin)|Dizinin ilk öğeyi gösteren bir yineleyici.|
-|[WriteOnlyArray::Data](#data)|Veri arabelleği için bir işaretçi.|
-|[WriteOnlyArray::end](#end)|Dizi içindeki son öğeden bir öncekine gösteren bir yineleyici.|
-|[WriteOnlyArray::FastPass](#fastpass)|Dizi şeffaf bir şekilde sistem tarafından gerçekleştirilen bir iyileştirme FastPass mekanizması kullanıp kullanamayacağını belirtir. Bu, kodunuzda kullanma|
-|[WriteOnlyArray::Length](#length)|Dizideki öğelerin sayısını döndürür.|
-|[WriteOnlyArray::set](#set)|Belirtilen öğeyi belirtilen değere ayarlar.|
+|[WriteOnlyArray:: Begin](#begin)|Dizinin ilk öğesine işaret eden bir yineleyici.|
+|[WriteOnlyArray::D ata](#data)|Veri arabelleği işaretçisi.|
+|[WriteOnlyArray:: End](#end)|Dizideki son öğeyi geçen bir yineleyici.|
+|[WriteOnlyArray:: FastPass](#fastpass)|Dizinin, sistem tarafından saydam olarak gerçekleştirilen bir iyileştirme olan FastPass mekanizmasını kullanıp kullanamayacağını belirtir. Kodunuzda kullanmayın|
+|[WriteOnlyArray:: length](#length)|Dizideki öğe sayısını döndürür.|
+|[WriteOnlyArray:: set](#set)|Belirtilen öğeyi belirtilen değere ayarlar.|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -54,13 +54,13 @@ Bu yöntemleri dahili erişilebilirlik sahip — diğer bir deyişle, bunlar yal
 
 Derleyici seçeneği: **/ZW**
 
-**Meta veri:** Platform.winmd
+**Veriyi** Platform. winmd
 
-**Namespace:** Platform
+**Uzayına** Platform
 
-## <a name="begin"></a>  WriteOnlyArray::begin yöntemi
+## <a name="begin"></a>WriteOnlyArray:: Begin yöntemi
 
-Dizideki ilk öğe için bir işaretçi döndürür.
+Dizideki ilk öğeye bir işaretçi döndürür.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -70,15 +70,15 @@ T* begin() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dizideki ilk öğe işaretçisi.
+Dizideki ilk öğe için bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-STL algoritmaları ile bu yineleyici gibi kullanılabilir `std::sort` dizideki öğeler üzerinde çalışılacak.
+Bu Yineleyici, dizideki öğeler üzerinde çalışmak için gibi `std::sort` STL algoritmalarıyla birlikte kullanılabilir.
 
-## <a name="data"></a>  WriteOnlyArray::Data özelliği
+## <a name="data"></a>WriteOnlyArray::D ata özelliği
 
-Veri arabelleği için işaretçi.
+Veri arabelleğinin işaretçisi.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -90,11 +90,11 @@ property T* Data{
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dizinin ham bayt için bir işaretçi.
+Ham dizi baytlarına yönelik bir işaretçi.
 
-## <a name="end"></a>  WriteOnlyArray::end yöntemi
+## <a name="end"></a>WriteOnlyArray:: End yöntemi
 
-Dizi içindeki son öğeden bir öncekine bir işaretçi döndürür.
+Dizideki son öğeden sonraki bir işaretçiyi döndürür.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -104,15 +104,15 @@ T* end() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dizi içindeki son öğeden bir öncekine işaretçi yineleyici.
+Dizideki son öğeden sonraki bir işaretçi yineleyicisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-STL algoritmaları ile bu yineleyici gibi işlemleri gerçekleştirmek için kullanılabilir `std::sort` dizi öğeleri üzerinde.
+Bu Yineleyici, dizi öğelerinde gibi `std::sort` işlemleri gerçekleştirmek için STL algoritmalarıyla birlikte kullanılabilir.
 
-## <a name="fastpass"></a>  WriteOnlyArray::FastPass özelliği
+## <a name="fastpass"></a>WriteOnlyArray:: FastPass özelliği
 
-İç FastPass iyileştirme gerçekleştirip gerçekleştirmediğini belirtir. Kullanıcı kodu tarafından kullanılmak üzere tasarlanmamıştır.
+İç FastPass iyileştirmesinin gerçekleştirilip gerçekleştirilebileceğini gösterir. Kullanıcı kodu tarafından kullanılmak üzere tasarlanmamıştır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -124,9 +124,9 @@ property bool FastPass{
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dizi FastPass olup olmadığını gösteren Boole değeri.
+Dizinin FastPass olup olmadığını gösteren Boolean değeri.
 
-## <a name="get"></a>  WriteOnlyArray::get yöntemi
+## <a name="get"></a>WriteOnlyArray:: get yöntemi
 
 Belirtilen dizindeki öğeyi döndürür.
 
@@ -138,14 +138,14 @@ T& get(unsigned int indexArg) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*indexArg*<br/>
+*ındexarg*<br/>
 Kullanılacak dizin.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-## <a name="length"></a>  WriteOnlyArray::Length özelliği
+## <a name="length"></a>WriteOnlyArray:: length özelliği
 
-Arayana ayrılan dizideki öğelerin sayısını döndürür.
+Arayan tarafından ayrılan dizideki öğelerin sayısını döndürür.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -159,9 +159,9 @@ property unsigned int Length{
 
 Dizideki öğelerin sayısı
 
-## <a name="set"></a>  WriteOnlyArray::set işlevi
+## <a name="set"></a>WriteOnlyArray:: set Işlevi
 
-Dizi belirtilen dizindeki belirtilen değere ayarlar.
+Dizideki belirtilen dizinde belirtilen değeri ayarlar.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -173,21 +173,21 @@ T& set(
 
 ### <a name="parameters"></a>Parametreler
 
-*indexArg*<br/>
+*ındexarg*<br/>
 Ayarlanacak öğenin dizini.
 
-*valueArg*<br/>
-Ayarlanan değer `indexArg`.
+*değer Kazang*<br/>
+Ayarlanacak `indexArg`değer.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ayarlamanız yeterlidir öğeye bir başvuru.
+Yeni ayarlanmış olan öğeye başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-HRESULT değerini yorumlama hakkında daha fazla bilgi için bkz. [yapısı COM hata kodlarını](/windows/desktop/com/structure-of-com-error-codes).
+HRESULT değerini yorumlama hakkında daha fazla bilgi için bkz. [com hata kodlarının yapısı](/windows/win32/com/structure-of-com-error-codes).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Platform Namespace](platform-namespace-c-cx.md)<br/>
-[C++'ta Windows çalışma zamanı bileşenleri oluşturma](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)
+[Platform ad alanı](platform-namespace-c-cx.md)<br/>
+[İçinde Windows Çalışma Zamanı bileşenleri oluşturmaC++](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)

@@ -1,78 +1,78 @@
 ---
-title: 'Nasıl yapılır: Windows meta verilerinden .h dosyaları oluşturmak için winmdidl.exe ve midlrt.exe kullanın'
+title: 'Nasıl yapılır: Windows meta verilerinden .h dosyaları oluşturmak için winmdidl.exe ve midlrt.exe programını kullanma'
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 4be8ba11-c223-44ad-9256-7e1edae9a7bc
-ms.openlocfilehash: b9016f05b82e3eb04474d370bd069e8008de5278
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8288fc11fd53fdef423a57d0faefbaa7c06326aa
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62398114"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69500425"
 ---
-# <a name="how-to-use-winmdidlexe-and-midlrtexe-to-create-h-files-from-windows-metadata"></a>Nasıl yapılır: Windows meta verilerinden .h dosyaları oluşturmak için winmdidl.exe ve midlrt.exe kullanın
+# <a name="how-to-use-winmdidlexe-and-midlrtexe-to-create-h-files-from-windows-metadata"></a>Nasıl yapılır: Windows meta verilerinden .h dosyaları oluşturmak için winmdidl.exe ve midlrt.exe programını kullanma
 
-Yerel C++ kodunu ve Windows çalışma zamanı bileşenleri arasındaki etkileşim COM düzeyi Winmdidl.exe ve midlrt.exe etkinleştirin. Giriş meta verileri için bir Windows çalışma zamanı bileşeni içerir ve bir IDL dosyası çıkaran bir .winmd dosyası olarak Winmdidl.exe alır. Midlrt.exe bu IDL dosyası C++ kodu kullanabileceği üstbilgi dosyalarına dönüştürür. Her iki araç komut satırında çalıştırın.
+Winmdıdl. exe ve MIDLRT. exe yerel C++ kod ve Windows çalışma zamanı BILEŞENLERI arasında com düzeyi etkileşimini etkinleştirir. Winmdıdl. exe, bir Windows Çalışma Zamanı bileşeni için meta veriler içeren bir. winmd dosyası alır ve bir IDL dosyası verir. MIDLRT. exe, C++ bu IDL dosyasını kodun tüketebileceği üstbilgi dosyalarına dönüştürür. Her iki araç de komut satırında çalışır.
 
-İçinde iki ana senaryo bu araçları kullanabilirsiniz:
+Bu araçları iki ana senaryoda kullanabilirsiniz:
 
-- Windows çalışma zamanı Şablon kitaplığı (WRL) kullanılarak yazılan bir C++ uygulamasına özel bir Windows çalışma zamanı bileşeni kullanabilir, böylece özel IDL ve üst bilgi dosyaları oluşturma.
+- Windows Çalışma Zamanı şablon kitaplığı (WRL) kullanılarak yazılmış C++ bir uygulamanın özel bir Windows çalışma zamanı bileşeni kullanabilmesi IÇIN özel IDL ve üstbilgi dosyaları oluşturma.
 
-- Kullanıcı tanımlı olay türleri için Ara sunucu ve saplama dosyaları bir Windows çalışma zamanı bileşeni oluşturma. Daha fazla bilgi için [özel olayları ve olay erişimcileri Windows çalışma zamanı bileşenlerinde](/windows/uwp/winrt-components/custom-events-and-event-accessors-in-windows-runtime-components).
+- Windows Çalışma Zamanı bileşenindeki Kullanıcı tanımlı olay türleri için proxy ve saplama dosyaları oluşturuluyor. Daha fazla bilgi için [Windows Çalışma Zamanı bileşenlerinde özel olaylar ve olay erişimcileri](/windows/uwp/winrt-components/custom-events-and-event-accessors-in-windows-runtime-components)' ne bakın.
 
-Bu araçlar, yalnızca özel .winmd dosyalarını ayrıştırmak için gereklidir. Windows işletim sistemi bileşenlerinin .idl ve .h dosyaları zaten sizin için oluşturulur. Windows 8.1, varsayılan olarak \Program dosyaları (x86) \Windows Kits\8.1\Include\winrt içinde bulunan\\.
+Bu araçlar yalnızca Custom. winmd dosyalarını ayrıştırmak için gereklidir. Windows işletim sistemi bileşenleri için. IDL ve. h dosyaları zaten sizin için oluşturulmuştur. Varsayılan olarak Windows 8.1, \Program Files (x86) \Windows Kits\8.1\ınclude\wınrt\\dizininde bulunur.
 
-## <a name="location-of-the-tools"></a>Araçlar'ın konumu
+## <a name="location-of-the-tools"></a>Araçların konumu
 
-Varsayılan olarak [Windows 8.1, winmdidl.exe ve midlrt.exe C:\Program Files (x86) \Windows Kits\8.1 içinde bulunduğu\\. Araçların sürümleri \bin\x86\ ve \bin\x64\ klasörler de mevcuttur.
+[Windows 8.1, winmdıdl. exe ve MIDLRT. exe ' de varsayılan olarak C:\Program Files (x86) \Windows Kits\8.1\\konumunda bulunur. Araçların sürümleri, \bin\x86\ ve \bin\x64\ klasörlerinde de mevcuttur.
 
-## <a name="winmdidl-command-line-arguments"></a>Winmdidl komut satırı bağımsız değişkenleri
+## <a name="winmdidl-command-line-arguments"></a>Winmdıdl komut satırı bağımsız değişkenleri
 
 ```
 Winmdidl.exe [/nologo] [/suppressversioncheck] [/time] [/outdir:dir] [/banner:file] [/utf8] Winmdfile
 ```
 
 **/nologo**<br/>
-Konsol winmdidl telif hakkı iletisi ve sürüm numarasını görüntülenmesini önler.
+Winmdıdl telif hakkı iletisi ve sürüm numarasının konsol görüntüsünü önler.
 
 **/suppressversioncheck**<br/>
 Kullanılmadı.
 
-**/ saat**<br/>
-Toplam yürütme süresi, konsol çıkışında görüntüler.
+**/Saat**<br/>
+Konsol çıkışında toplam yürütme süresini görüntüler.
 
-**/OutDir:**<em>dizini</em><br/>
-Çıktı dizini belirtir. Yol boşluklar içeriyorsa, tırnak işaretleri kullanın. Varsayılan çıkış dizini  *\<sürücüsü >*: \Users\\*\<kullanıcıadı >* \AppData\Local\VirtualStore\Program dosyaları (x86) \Microsoft Visual Studio 12.0\\.
+**/OutDir:** <em>dir</em><br/>
+Bir çıkış dizini belirtir. Yol boşluk içeriyorsa, tırnak işaretleri kullanın. Varsayılan çıkış dizini  *\<sürücü >* : \Users\\ *\<Kullanıcı adı >* \AppData\Local\VirtualStore\Program Files (x86) \Microsoft Visual Studio 12,0\\.
 
-**/ Başlık:**<em>dosyası</em><br/>
-Varsayılan telif hakkı iletisini ve oluşturulan .idl dosyasının en üstüne winmdidl sürüm numarasına önüne eklediğinizden özel metin içeren bir dosyayı belirtir. Yol boşluklar içeriyorsa, tırnak işaretleri kullanın.
+**/Banner:** <em>Dosya</em><br/>
+Oluşturulan. IDL dosyasının en üstünde varsayılan telif hakkı iletisine ve winmdıdl sürüm numarasına eklenecek özel metin içeren bir dosyayı belirtir. Yol boşluk içeriyorsa, tırnak işaretleri kullanın.
 
 **/UTF8**<br/>
-UTF-8 biçimlendirilmesi için dosyayı neden olur.
+Dosyanın UTF-8 olarak biçimlendirilmesini sağlar.
 
-*Wınmdfıle*<br/>
-Ayrıştırılacak .winmd dosyasının adı. Yol boşluklar içeriyorsa, tırnak işaretleri kullanın.
+*WINMDFILE*<br/>
+Ayrıştırılacak. winmd dosyasının adı. Yol boşluk içeriyorsa, tırnak işaretleri kullanın.
 
-## <a name="midlrt-command-line-arguments"></a>Midlrt komut satırı bağımsız değişkenleri
+## <a name="midlrt-command-line-arguments"></a>MIDLRT komut satırı bağımsız değişkenleri
 
-Bkz: [MIDLRT ve Windows çalışma zamanı bileşenleri](/windows/desktop/Midl/midlrt-and-windows-runtime-components).
+Bkz. [MIDLRT ve Windows çalışma zamanı bileşenleri](/windows/win32/Midl/midlrt-and-windows-runtime-components).
 
 ## <a name="examples"></a>Örnekler
 
-Aşağıdaki örnek, Visual Studio x86 komut isteminde winmdidl komut gösterir. Bu, bir çıktı dizini ve oluşturulan .idl dosyasına eklemek için özel bir başlık metnini içeren bir dosyayı belirtir.
+Aşağıdaki örnekte, bir Visual Studio x86 komut isteminde bir winmdıdl komutu gösterilmektedir. Bir çıktı dizini ve oluşturulan. IDL dosyasına eklemek için özel başlık metni içeren bir dosya belirtir.
 
 `C:\Program Files (x86)\Microsoft Visual Studio 12.0>winmdidl /nologo /outdir:c:\users\giraffe\documents\ /banner:c:\users\giraffe\documents\banner.txt "C:\Users\giraffe\Documents\Visual Studio 2013\Projects\Test_for_winmdidl\Debug\Test_for_winmdidl\test_for_winmdidl.winmd"`
 
-Sonraki örnek, işlemin başarılı olduğunu gösteren winmdidl konsol görüntüden gösterir.
+Sonraki örnekte, işlemin başarılı olduğunu belirten winmdıdl 'den görüntülenen konsol gösterilmektedir.
 
-**C:\users\giraffe\documents oluşturma\\\Test_for_winmdidl.idl**
+**C:\users\giraffe\documents\\\test_for_winmdıdl.exe oluşturuluyor**
 
-Ardından, midlrt oluşturulan IDL dosyası üzerinde çalıştırılır. Dikkat **metadata_dir** .idl dosyasının adını sonra bağımsız değişken belirtildi. \WinMetadata\ yolunu gereklidir; bu Windows.winmd'i konumudur.
+Ardından, MIDLRT oluşturulan IDL dosyasında çalıştırılır. **Metadata_dir** bağımsız değişkeninin. IDL dosyasının adından sonra belirtildiğine dikkat edin. \WinMetadata\ ' nin yolu gereklidir; Windows. winmd 'nin konumudur.
 
 `C:\Program Files (x86)\Microsoft Visual Studio 12.0> midlrt "c:\users\mblome\documents\test_for_winmdidl.idl" /metadata_dir "C:\Windows\System32\WinMetadata"`
 
 ## <a name="remarks"></a>Açıklamalar
 
-Giriş dosyası ancak .idl dosya adı uzantısına sahip olduğundan winmdidl işlemi çıkış dosyasından aynı ada sahip.
+Bir winmdıdl işlemindeki çıkış dosyası, giriş dosyasıyla aynı ada sahip ancak. IDL dosya adı uzantısına sahip.
 
-WRL erişilecek bir Windows çalışma zamanı bileşeni geliştiriyorsanız winmdidl.exe ve midlrt.exe .idl ve .h dosyaları her derleme üzerinde oluşturulan derleme sonrası adımları çalıştırılacak belirtebilirsiniz. Bir örnek için bkz. [Raising Events Windows çalışma zamanı bileşenlerinde](/windows/uwp/winrt-components/raising-events-in-windows-runtime-components).
+WRL 'den erişilecek bir Windows Çalışma Zamanı bileşeni geliştiriyorsanız, her derlemede. IDL ve. h dosyalarının oluşturulması için derleme sonrası adımlar olarak çalışacak winmdıdl. exe ve MIDLRT. exe ' yi belirtebilirsiniz. Bir örnek için bkz. [Windows Çalışma Zamanı bileşenlerinde olayları yükseltme](/windows/uwp/winrt-components/raising-events-in-windows-runtime-components).

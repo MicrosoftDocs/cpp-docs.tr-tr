@@ -1,67 +1,67 @@
 ---
-title: COM + 1.0, ATL COM + 1.0 bileşeni Sihirbazı
+title: COM+ 1.0, ATL COM+ 1.0 Bileşeni Sihirbazı
 ms.date: 05/09/2019
 f1_keywords:
 - vc.codewiz.class.atl.mts.options
 ms.assetid: 2fbe259c-6be1-4d0e-9cfe-721c75c97cb1
-ms.openlocfilehash: bff7f87fbdebbff9a1823ae8718c64be4f47a2ea
-ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
+ms.openlocfilehash: 83b7beafe537f6b271b254d16505b515a41acf27
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65707448"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69496699"
 ---
-# <a name="com-10-atl-com-10-component-wizard"></a>COM + 1.0, ATL COM + 1.0 bileşeni Sihirbazı
+# <a name="com-10-atl-com-10-component-wizard"></a>COM+ 1.0, ATL COM+ 1.0 Bileşeni Sihirbazı
 
 ::: moniker range="vs-2019"
 
-Bu sihirbaz, Visual Studio 2019 bulunan ve daha yeni değil.
+Bu sihirbaz, Visual Studio 2019 ve sonrasında kullanılamaz.
 
 ::: moniker-end
 
 ::: moniker range="<=vs-2017"
 
-ATL COM + 1.0 bileşeni Sihirbazı bu sayfanın bir arabirim türüne ve ek arabirimleri desteklenecek belirtmek için kullanın.
+Arabirim türünü ve desteklenecek ek arabirimleri belirtmek için ATL COM+ 1,0 Bileşen Sihirbazı 'nın bu sayfasını kullanın.
 
-ATL projeleri ve ATL COM sınıfları hakkında daha fazla bilgi için bkz. [ATL COM Masaüstü bileşenleri](../../atl/atl-com-desktop-components.md).
+ATL projeleri ve ATL COM sınıfları hakkında daha fazla bilgi için bkz. [atl com Masaüstü bileşenleri](../../atl/atl-com-desktop-components.md).
 
 - **Arabirimi**
 
-   Nesne destekleyen arabirim türünü belirtir. Varsayılan olarak, nesne çift arabirim destekler.
+   Nesnenin desteklediği arabirimin türünü gösterir. Varsayılan olarak, nesnesi bir çift arabirimi destekler.
 
    |Seçenek|Açıklama|
    |------------|-----------------|
-   |**Çift**|Nesne çift arabirim desteklediğini belirtir (özel arabirim işlevi ve geç bağlama, vtable olan `IDispatch` yöntemleri). COM istemcilerinde ve Otomasyon denetleyicileri nesneye erişim sağlar.|
-   |**Özel**|Nesne (özel arabirim işlevleri kendi vtable sahiptir) özel bir arabirim desteklediğini belirtir. Özel arabirim özellikle işlem sınırları arasında çift arabirim, daha hızlı olabilir.<br /><br /> - **Otomasyon uyumlu** özel Otomasyon desteği ekler. Öznitelikli projeler için ayarlar **oleautomation** coclass özniteliği.|
+   |**Çift**|Nesnenin çift arabirimi desteklediğini belirtir (vtable, özel arabirim işlevlerine ve geç bağlama `IDispatch` yöntemlerine sahiptir). Hem COM istemcilerinin hem de Otomasyon denetleyicilerinin nesneye erişmesine izin verir.|
+   |**Özel**|Nesnenin özel arabirimi desteklediğini belirtir (vtable 'ın özel arabirim işlevleri vardır). Özel bir arabirim, özellikle işlem sınırları genelinde bir çift arabirimden daha hızlı olabilir.<br /><br /> - **Otomasyon uyumlu** Özel arabirime Otomasyon desteği ekler. Öznitelikli projeler için, coclass 'ta **oleautomation** özniteliğini ayarlar.|
 
 - **Kuyruğa atılabilir**
 
-   İstemcilerin zaman uyumsuz ileti kuyrukları kullanarak bu bileşeni çağırabilirsiniz gösterir. Öznitelikli bileşen makrosu özel (TLBATTR_QUEUEABLE, 0) .h dosyası (öznitelikli projeler) veya .idl dosyasına (nonattributed projeler) ekler.
+   İstemcilerin bu bileşeni ileti kuyruklarını kullanarak zaman uyumsuz olarak çağırabileceğini belirtir. Öznitelikli makro özel (TLBATTR_QUEUEABLE, 0) bileşenini. h dosyasına (öznitelikli projeler) veya. IDL dosyasına (öznitelikli projeler) ekler.
 
 - **Destek**
 
-   Hata işleme ve nesne denetimi için ek destek gösterir.
+   Hata işleme ve nesne denetimi için ek desteği gösterir.
 
    |Seçenek|Açıklama|
    |------------|-----------------|
-   |**ISupportErrorInfo**|Desteği oluşturur [ISupportErrorInfo](../../atl/reference/isupporterrorinfoimpl-class.md) istemciye hata bilgilerini nesnenin dönebilmeniz arabirim.|
-   |**IObjectControl**|Üç nesne erişiminizi sağlayan [IObjectControl](/windows/desktop/api/comsvcs/nn-comsvcs-iobjectcontrol) yöntemleri: [Etkinleştirme](/windows/desktop/api/comsvcs/nf-comsvcs-iobjectcontrol-activate), [CanBePooled](/windows/desktop/api/comsvcs/nf-comsvcs-iobjectcontrol-canbepooled), ve [devre dışı bırakma](/windows/desktop/api/comsvcs/nf-comsvcs-iobjectcontrol-deactivate).|
-   |**IObjectConstruct'ı**|Desteği oluşturur [IObjectConstruct'ı](/windows/desktop/api/comsvcs/nn-comsvcs-iobjectconstruct) geçirme parametrelerinde diğer yöntemleri veya nesneleri yönetmek için arabirim.|
+   |**Iupporterrorınfo**|, Nesnenin istemciye hata bilgilerini döndürebilmesi için [ıupporterrorınfo](../../atl/reference/isupporterrorinfoimpl-class.md) arabirimi için destek oluşturur.|
+   |**IObjectControl**|Nesnenizin üç [IObjectControl](/windows/win32/api/comsvcs/nn-comsvcs-iobjectcontrol) yöntemine erişmesini sağlar: [Etkinleştir](/windows/win32/api/comsvcs/nf-comsvcs-iobjectcontrol-activate), [canbehavuza](/windows/win32/api/comsvcs/nf-comsvcs-iobjectcontrol-canbepooled)al ve [devre dışı bırak](/windows/win32/api/comsvcs/nf-comsvcs-iobjectcontrol-deactivate).|
+   |**IObjectConstruct**|Diğer yöntemlerden veya nesnelerden parametreleri geçirmeyi yönetmek için [ıobjectyapý](/windows/win32/api/comsvcs/nn-comsvcs-iobjectconstruct) arabirimine yönelik destek oluşturur.|
 
 - **İşlem**
 
-   Nesne işlemleri desteklediğini belirtir. Dosya mtxattr.h .idl dosyasında (nonattributed projeler) içerir.
+   Nesnenin işlemleri desteklediğini gösterir. . IDL dosyasındaki (öznitelikli projeler) mtxattr. h dosyasını içerir.
 
    |Seçenek|Açıklama|
    |------------|-----------------|
-   |**Destekleniyor**|Nesne hiçbir zaman bir işlem akışını kök bileşeni özniteliği makrosu custom(TLBATTR_TRANS_SUPPORTED,0) .h dosyası (öznitelikli projeler) veya (nonattributed projeler) .idl dosyasına ekleyerek olduğunu belirtir.|
-   |**Gerekli**|Nesne olabilir veya bir işlem akışını kök bileşeni özniteliği makrosu custom(TLBATTR_TRANS_REQUIRED,0) .h dosyası (öznitelikli projeler) veya (nonattributed projeler) .idl dosyasına ekleyerek olmayabilir belirtir.|
-   |**Desteklenmiyor**|Nesne işlemleri hariç belirtir. Bileşen özniteliği makrosu custom(TLBATTR_TRANS_NOTSUPP,0) .h dosyası (öznitelikli projeler) veya .idl dosyasına (nonattributed projeler) ekler.|
-   |**Yeni gerektirir**|Nesne her zaman bir işlem akışını kök bileşeni özniteliği makrosu custom(TLBATTR_TRANS_REQNEW,0) .h dosyası (öznitelikli projeler) veya (nonattributed projeler) .idl dosyasına ekleyerek olduğunu belirtir.|
+   |**Destekleniyor**|Nesne (TLBATTR_TRANS_SUPPORTED, 0) bileşen özniteliği makrosunu. h dosyasına (öznitelikli projeler) veya. IDL dosyasına (öznitelikli projeler) ekleyerek nesnenin hiçbir şekilde bir işlem akışının köküne ait olduğunu belirtir.|
+   |**Gerekli**|Nesne. h dosyasına (öznitelikli projeler) veya. IDL dosyasına (öznitelik atanmış olmayan projeler) bileşen özniteliği makrosunu (TLBATTR_TRANS_REQUIRED, 0) ekleyerek nesnenin bir işlem akışının kökü olabileceğini veya olabileceğini belirtir.|
+   |**Desteklenmiyor**|Nesnenin işlemleri dışladığı belirtir. Bileşen özniteliği makrosu özel (TLBATTR_TRANS_NOTSUPP, 0). h dosyasına (öznitelikli projeler) veya. IDL dosyasına (öznitelikli projeler) ekler.|
+   |**Yeni gerektirir**|Nesne (TLBATTR_TRANS_REQNEW, 0) bileşen özniteliği makrosunu. h dosyasına (öznitelikli projeler) veya. IDL dosyasına (öznitelikli projeler) ekleyerek nesnenin her zaman bir işlem akışının kök olduğunu belirtir.|
 
 ::: moniker-end
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [ATL COM+ 1.0 Bileşeni Sihirbazı](../../atl/reference/atl-com-plus-1-0-component-wizard.md)<br/>
-[ATL COM + 1.0 bileşeni](../../atl/reference/adding-an-atl-com-plus-1-0-component.md)
+[ATL COM+ 1,0 bileşeni](../../atl/reference/adding-an-atl-com-plus-1-0-component.md)
