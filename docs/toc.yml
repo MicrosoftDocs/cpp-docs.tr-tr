@@ -1587,7 +1587,7 @@
     - name: 'İzlenecek yol: Windows Masaüstü uygulamaları oluşturma'
       href: windows/walkthrough-creating-windows-desktop-applications-cpp.md
     - name: Windows Masaüstü sihirbazı
-      href: windows/win32-application-wizard.md
+      href: windows/windows-desktop-wizard.md
     - name: Etkin Şablon Kütüphanesi (ATL)
       href: atl/
     - name: Microsoft Foundation Sınıfları (MFC)
@@ -1607,10 +1607,6 @@
               items:
                 - name: Tarih ve Saat verileri
                   href: atl-mfc-shared/date-and-time.md
-                - name: 'Tarih ve saat: otomasyon desteği'
-                  href: atl-mfc-shared/date-and-time-automation-support.md
-                - name: 'Tarih ve saat: veritabanı desteği'
-                  href: atl-mfc-shared/date-and-time-database-support.md
                 - name: TARİH türü
                   href: atl-mfc-shared/date-type.md
             - name: Dizeler (ATL-MFC)
@@ -2888,6 +2884,8 @@
 - name: Başvuru
   expanded: false
   items:
+    - name: C/C++ dili ve standart kitaplıkları
+      href: cpp/c-cpp-language-and-standard-libraries.md
     - name: Dil başvurusu
       expanded: false
       items:
