@@ -10,18 +10,18 @@ helpviewer_keywords:
 - based pointers
 - pointers, based
 ms.assetid: 1e5f2e96-c52e-4738-8e14-87278681205e
-ms.openlocfilehash: 771d3ee132e4cd63499fec886ef9f7cd06ec0260
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0a0435aa89e4cf744a5bc3c6dc72a715ed55f954
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62393967"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69498783"
 ---
 # <a name="based-pointers-c"></a>Tabanlı İşaretçiler (C++)
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-**__Based** anahtar sözcüğü, işaretçileri (varolan işaretçilerin gelen uzaklıkları olan işaretçiler) göre işaretçileri bildirmek olanak sağlar.
+**__Based** anahtar sözcüğü işaretçiler (varolan işaretçilerden uzaklık olan işaretçiler) temelinde işaretçiler bildirmenize olanak tanır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -32,7 +32,7 @@ type __based( base ) declarator
 
 ## <a name="remarks"></a>Açıklamalar
 
-İşaretçi adreslerine göre işaretçiler, yalnızca kuralar **__based** 32 bit veya 64 bit derlemelerde geçerli anahtar sözcüğü. Microsoft 32 bit C/C++ derleyicisi için temel alınan bir işaretçi, 32 bit işaretçi temeline göre 32 bit uzaklıktadır. Benzer bir kısıtlama, temel alınan bir işaretçinin 64 bit temelden 64 bit uzaklıkta olduğu 64 bit ortamlar için de geçerlidir.
+İşaretçi adreslerini temel alan işaretçiler, 32 bit veya 64 bit derlemelerde geçerli olan **__based** anahtar sözcüğünün tek biçimidir. Microsoft 32 bit C/C++ derleyicisi için temel alınan bir işaretçi, 32 bit işaretçi temeline göre 32 bit uzaklıktadır. Benzer bir kısıtlama, temel alınan bir işaretçinin 64 bit temelden 64 bit uzaklıkta olduğu 64 bit ortamlar için de geçerlidir.
 
 İşaretçilere göre işaretçilerin bir kullanımı da, işaretçiler içeren kalıcı tanımlayıcılara yöneliktir. İşaretçiye göre işaretçilerden oluşan bağlantılı bir liste diske kaydedilebilir ve daha sonra işaretçiler geçerli kalacak şekilde bellekte başka bir yere yeniden yüklenebilir. Örneğin:
 
@@ -46,14 +46,14 @@ struct llist_t {
 };
 ```
 
-`vpBuffer` işaretçisine, programda daha sonra ayrılan belleğin adresi atanır. Bağlantılı liste, `vpBuffer` değerine göre yeniden konumlandırılır.
+          `vpBuffer` işaretçisine, programda daha sonra ayrılan belleğin adresi atanır. Bağlantılı liste, `vpBuffer` değerine göre yeniden konumlandırılır.
 
 > [!NOTE]
->  İşaretçiler içeren kalıcı tanımlayıcılar da elde edilebilir kullanarak [bellek eşlemeli dosyalar](/windows/desktop/Memory/file-mapping).
+>  İşaretçiler içeren kalıcı tanımlayıcılar, [bellek eşlemeli dosyalar](/windows/win32/Memory/file-mapping)kullanılarak da gerçekleştirilebilir.
 
 Temel alınan işaretçinin başvurusu kaldırılırken, temel açıkça belirtilmeli veya bildirim aracılığıyla örtük olarak bilinmelidir.
 
-Önceki sürümlerle uyumluluk için **_based** eşanlamlıdır **__based** sürece derleyici seçeneği [/Za \(dil uzantılarını devre dışı bırak)](../build/reference/za-ze-disable-language-extensions.md) olduğu Belirtilen.
+Önceki sürümlerle uyumluluk için, **_based** , [/za \(devre dışı bırak uzantı](../build/reference/za-ze-disable-language-extensions.md) seçeneği belirtildiğinde **__based** için bir eş anlamlıdır.
 
 ## <a name="example"></a>Örnek
 

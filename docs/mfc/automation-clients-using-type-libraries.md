@@ -1,5 +1,5 @@
 ---
-title: 'Otomasyon istemcileri: Tür kitaplıklarını kullanma'
+title: 'Otomasyon Istemcileri: Tür kitaplıklarını kullanma'
 ms.date: 11/04/2016
 f1_keywords:
 - MkTypLib
@@ -14,49 +14,49 @@ helpviewer_keywords:
 - MkTypLib tool
 - .odl files
 ms.assetid: d405bc47-118d-4786-b371-920d035b2047
-ms.openlocfilehash: 32179f3913b52ca46f9ea7314b9957f4f4970713
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 480f8fca46b13d445f372311ed837475c71a1e9d
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62374200"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69509225"
 ---
-# <a name="automation-clients-using-type-libraries"></a>Otomasyon istemcileri: Tür kitaplıklarını kullanma
+# <a name="automation-clients-using-type-libraries"></a>Otomasyon Istemcileri: Tür kitaplıklarını kullanma
 
-Otomasyon istemcileri istemcileridir sunucularının nesneleri değiştirmek için sunucu nesneleri özellikler ve yöntemler hakkında bilgi olması gerekir. Özellikleri, veri türlerine sahip; yöntemler, genellikle dönüş değerleri ve parametreleri kabul eder. İstemci, sunucu nesne türü için statik olarak bağlamak için bunların hepsi veri türleri hakkında daha fazla bilgi gerektirir.
+İstemci sunucularının nesnelerini işlerinize yönelik olarak, Otomasyon istemcilerinin sunucu nesnelerinin özellikleri ve yöntemleriyle ilgili bilgileri olması gerekir. Özellikler veri türlerine sahiptir; yöntemler genellikle değerleri döndürür ve parametreleri kabul eder. İstemci, sunucu nesne türüne statik olarak bağlamak için bunların tümünün veri türleri hakkında bilgi gerektirir.
 
-Bu tür bilgiler, çeşitli yollarla bilinen yapılabilir. Önerilen yöntem, bir tür kitaplığı oluşturmaktır.
+Bu tür bilgileri çeşitli yollarla tanınsunulabilir. Önerilen yol, bir tür kitaplığı oluşturmaktır.
 
-Hakkında bilgi için [MkTypLib](/windows/desktop/Midl/differences-between-midl-and-mktyplib), Windows SDK'sı bakın.
+[MkTypLib](/windows/win32/Midl/differences-between-midl-and-mktyplib)hakkında daha fazla bilgi için Windows SDK bakın.
 
-Visual C++ tür kitaplığı dosyası okuma ve türetilen bir gönderme sınıf oluşturma [COleDispatchDriver](../mfc/reference/coledispatchdriver-class.md). Bu sınıfın bir nesnesi, özelliklerini ve bu sunucu nesnesinin çoğaltma işlemlerini sahiptir. Bu nesnenin özellikleri ve işlemleri uygulamanızı çağırır ve işlevsellik öğesinden devralınan `COleDispatchDriver` sırayla bunları sunucu nesnesine yönlendiren OLE sistem çağrıları yönlendirir.
+Görsel C++ , bir tür kitaplığı dosyasını okuyabilir ve [cotadispatchsürücüden](../mfc/reference/coledispatchdriver-class.md)türetilmiş bir dağıtım sınıfı oluşturabilir. Bu sınıfın bir nesnesi, sunucu nesnesinin özelliklerini ve işlemlerini çoğaltma özelliklerine sahiptir. Uygulamanız bu nesnenin özelliklerini ve işlemlerini çağırır ve devralınan `COleDispatchDriver` işlevler bu çağrıları OLE sistemine yönlendirmiş ve bu da sunucu nesnesine yönlendirmelidir.
 
-Projeyi oluşturduğunuzda Otomasyon eklemeyi seçtiyseniz visual C++, sizin için otomatik olarak bu tür kitaplığı dosyası tutar. Her yapı işleminin bir parçası olarak, .tlb dosyasının MkTypLib ile oluşturulur.
+Proje C++ oluşturulduğunda Otomasyon dahil etmek istiyorsanız görsel bu tür kitaplığı dosyasını sizin için otomatik olarak korur. Her bir derleme kapsamında,. tlb dosyası MkTypLib ile oluşturulur.
 
-### <a name="to-create-a-dispatch-class-from-a-type-library-tlb-file"></a>Bir tür kitaplığı (.tlb) dosyasından bir dağıtım sınıfı oluşturmak için
+### <a name="to-create-a-dispatch-class-from-a-type-library-tlb-file"></a>Bir tür kitaplığı (. tlb) dosyasından bir dağıtım sınıfı oluşturmak için
 
-1. Sınıf Görünümü veya Çözüm Gezgini'nde, projeye sağ tıklayıp **Ekle** ve ardından **sınıfı Ekle** kısayol menüsünde.
+1. Sınıf Görünümü veya Çözüm Gezgini, projeye sağ tıklayın ve **Ekle** ' ye tıklayın ve ardından kısayol menüsünde **Sınıf Ekle** ' ye tıklayın.
 
-1. İçinde **sınıfı Ekle** iletişim kutusunda **Visual C++/MFC** sol bölmedeki klasör. Seçin **gelen MFC sınıfı TypeLib** simgesine tıklayın ve sağ bölmede **açık**.
+1. **Sınıf Ekle** iletişim kutusunda sol bölmedeki  **C++Visual/MFC** klasörünü seçin. Sağ bölmedeki **TypeLib simgesinden MFC sınıfını** seçin ve **Aç**' a tıklayın.
 
-1. İçinde **Typelib sihirbazın sınıfı Ekle** iletişim kutusunda, bir tür kitaplığından seçin **kullanılabilir tür kitaplıklarını** aşağı açılan listesi. **Arabirimleri** seçilen tür kitaplığının kullanılabilir arabirimleri kutusu görüntüler.
-
-    > [!NOTE]
-    >  Birden fazla tür kitaplığından arabirimleri seçebilirsiniz.
-
-   Arabirimleri seçin, bunları çift tıklatın veya **Ekle** düğmesi. Bunu yaptığınızda gönderme sınıflarının adları görünür **sınıfları oluşturulan** kutusu. Sınıf adları düzenleyebileceğiniz `Class` kutusu.
-
-   **Dosya** kutusu içinde sınıf bildirilmesi dosyayı görüntüler. (Bu dosya adı da düzenleyebilirsiniz). Mevcut dosyaları ya da proje dizininin dışında bir dizinde yazılan üst bilgi ve uygulama bilgilerinin isterseniz diğer dosyalar seçmek için Gözat düğmesini de kullanabilirsiniz.
+1. **TypeLib 'Den sınıf ekleme Sihirbazı** iletişim kutusunda, **kullanılabilir tür kitaplıkları** açılan listesinden bir tür kitaplığı seçin. **Arabirimler** kutusu, seçilen tür kitaplığı için kullanılabilen arabirimleri görüntüler.
 
     > [!NOTE]
-    >  Seçilen arabirimleri için gönderme sınıfların tümü, burada belirtilen dosyanın yerleştirilir. Ayrı üst bilgilerinde bildirilmesi için arabirimleri istiyorsanız, oluşturmak istediğiniz her bir üst bilgi dosyası için bu sihirbazı çalıştırmanız gerekir.
+    >  Birden fazla tür kitaplığından arabirimler seçebilirsiniz.
+
+   Arabirimleri seçmek için, çift tıklayın veya **Ekle** düğmesine tıklayın. Bunu yaptığınızda, dağıtım sınıflarının adları **oluşturulan sınıflar** kutusunda görünür. `Class` Kutudaki sınıf adlarını düzenleyebilirsiniz.
+
+   **Dosya** kutusu, sınıfın bildirildiği dosyayı görüntüler. (Bu dosya adını da düzenleyebilirsiniz). Üstbilgi ve uygulama bilgilerinin varolan dosyalarda veya proje dizini dışında bir dizinde yazılmasını isterseniz, diğer dosyaları seçmek için de gözatın düğmesini de kullanabilirsiniz.
 
     > [!NOTE]
-    >  Bazı tür kitaplığı bilgisi dosyalarıyla depolanabilir. DLL. OCX veya. OLB dosya uzantıları.
+    >  Seçili arabirimlerin tüm dağıtım sınıfları burada belirtilen dosyaya yerleştirilecek. Arabirimlerin ayrı üstbilgilere bildirilmesini istiyorsanız, oluşturmak istediğiniz her üstbilgi dosyası için bu Sihirbazı çalıştırmanız gerekir.
 
-1. **Son**'a tıklayın.
+    > [!NOTE]
+    >  Bazı tür kitaplığı bilgileri ile dosyalarında depolanabilir. DLL,. OCX veya. OLB dosya uzantıları.
 
-   Sihirbazı'nı, ardından belirtilen sınıf ve dosya adlarını kullanarak, gönderme sınıflar için kod yazacaksınız.
+1.           **Son**'a tıklayın.
+
+   Sihirbaz daha sonra, belirtilen sınıf ve dosya adlarını kullanarak dağıtım sınıflarınızın kodunu yazar.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
