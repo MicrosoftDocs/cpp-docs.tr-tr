@@ -11,22 +11,7 @@
         - name: Genel MFC konuları
           href: general-mfc-topics.md
         - name: MFC kaynak dosyalarını kullanma
-          expanded: false
-          items:
-            - name: MFC kaynak dosyalarını kullanma
-              href: using-the-mfc-source-files.md
-            - name: Açıklamalara Bir Örnek
-              href: an-example-of-the-comments.md
-            - name: '-- Uygulama açıklaması'
-              href: decrement-implementation-comment.md
-            - name: '-- Oluşturucu açıklaması'
-              href: decrement-constructors-comment.md
-            - name: '-- Özniteliklerle ilgili açıklama'
-              href: decrement-attributes-comment.md
-            - name: '-- İşlem Açıklaması'
-              href: decrement-operations-comment.md
-            - name: '-- Geçersiz Kılınabilen Öğelerle İlgili Açıklama'
-              href: decrement-overridables-comment.md
+          href: using-the-mfc-source-files.md
         - name: MFC kitaplık sürümleri
           expanded: false
           items:
