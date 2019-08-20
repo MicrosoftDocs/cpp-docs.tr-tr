@@ -24,73 +24,73 @@ helpviewer_keywords:
 - files [C++], editable types
 - resource editing
 ms.assetid: 4d2b6fcc-07cf-4289-be87-83a60f69533c
-ms.openlocfilehash: 45db6d0139cfa3aa8a2eaa8fe6d18158cb6646ce
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b66a207766962856cc4d7181607868c2a48ebe84
+ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62387922"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69513652"
 ---
 # <a name="resource-files-c"></a>Kaynak Dosyalar (C++)
 
 > [!NOTE]
-> Bu yana .NET programlama dillerinin projelerde kaynak betik dosyalarına kullanmayın kaynaklarınızdan açmalısınız **Çözüm Gezgini**. Kullanım [Resim Düzenleyicisi](../windows/image-editor-for-icons.md) ve [ikili düzenleyiciyi](binary-editor.md) yönetilen projelerde kaynak dosyalarıyla çalışmak için.
+> .NET programlama dillerinde bulunan projeler kaynak betik dosyalarını kullanmadığından, kaynaklarınızı **Çözüm Gezgini**açmalısınız. Yönetilen projelerdeki kaynak dosyalarıyla çalışmak için [resim düzenleyicisini](../windows/image-editor-for-icons.md) ve [ikili düzenleyiciyi](binary-editor.md) kullanın.
 >
 > Düzenlemek istediğiniz yönetilen kaynaklar, bağlı kaynaklar olmalıdır. Visual Studio kaynak düzenleyicileri eklenmiş kaynakları düzenlemeyi desteklemez.
 
-Terim *kaynak dosyası* gibi çeşitli dosya türü için başvuru yapabilirsiniz:
+*Kaynak dosyası* terimi, şöyle bir dizi dosya türüne başvurabilir:
 
-- Bir programın kaynak betiği (.rc) dosyası.
+- Bir programın kaynak betiği (. RC) dosyası.
 
-- Kaynak şablonu (.rct) dosyası.
+- Kaynak şablonu (. rct) dosyası.
 
-- Mevcut tek başına bir dosya ayrı bir kaynak. Bu tür bir .rc dosyasından belirtilen bir bit eşlem, simgesi veya imleci dosyası içerir.
+- Tek başına dosya olarak bulunan tek bir kaynak. Bu tür bir. rc dosyasından başvurulan bir bit eşlem, simge veya imleç dosyası içerir.
 
-- Geliştirme ortamı tarafından oluşturulan bir üst bilgi dosyası. Bu türü içeren `Resource.h`, başvurduğu bir .rc dosyasından.
+- Geliştirme ortamı tarafından oluşturulan bir üst bilgi dosyası. Bu tür, `Resource.h`bir. rc dosyasından başvurulan, içerir.
 
-Kaynakları bulunan diğer dosya türleri gibi .exe, .dll ve .res dosyaları olarak ifade edilir *kaynakları*.
+. Exe,. dll ve. res dosyaları gibi diğer dosya türlerinde bulunan kaynaklar *kaynak*olarak adlandırılır.
 
-Çalışabileceğiniz *kaynak dosyaları* ve *kaynakları* gelen projenizin içinde. Ayrıca, geçerli projenin parçası olmayan veya Visual Studio geliştirme ortamı dışında oluşturulmuş ile çalışabilir. Örneğin, şunları yapabilirsiniz:
+Projenizin içinden *kaynak dosyaları* ve *kaynaklarla* çalışabilirsiniz. Ayrıca, geçerli projenin parçası olmayan ya da Visual Studio 'nun geliştirme ortamı dışında oluşturulmuş olanlarla çalışabilirsiniz. Örneğin, şunları yapabilirsiniz:
 
-- İç içe geçmiş ve koşullu olarak dahil edilen kaynak dosyalarıyla birlikte çalışır.
+- İç içe ve koşullu olarak içerilen kaynak dosyalarıyla çalışın.
 
-- Var olan kaynakları güncelleştirme veya Visual C++'a dönüştürebilirsiniz.
+- Mevcut kaynakları güncelleştirin veya bunları görsele C++dönüştürün.
 
-- Grafik kaynakları için veya geçerli kaynak dosyanızı dışarı veya içeri aktarın.
+- Grafik kaynaklarını, geçerli kaynak dosyanıza veya konumundan içeri veya dışarı aktarın.
 
-- Geliştirme ortamı tarafından değiştirilemez paylaşılan veya salt okunur tanımlayıcıları (simge) içerir.
+- Geliştirme ortamı tarafından değiştirilemeyen paylaşılan veya salt tanımlı tanımlayıcıları (semboller) dahil edin.
 
-- Kaynakları düzenleme gerekmez (veya düzenlenmesi olmamalıdır), çeşitli projeler arasında paylaşılan kaynaklar gibi yürütülebilir (.exe) dosya içermektedir.
+- Farklı projeler arasında paylaşılan kaynaklar gibi, düzenleme gerektirmeyen (veya düzenlenmemelidir) dosyanın yürütülebilir (. exe) dosyasına ait kaynakları ekleyin.
 
-- Geliştirme ortamı tarafından desteklenmeyen kaynak türleri içerir.
+- Geliştirme ortamı tarafından desteklenmeyen kaynak türlerini dahil et.
 
-Kaynaklar hakkında daha fazla bilgi için bkz. nasıl [oluşturacağınız kaynaklarda](../windows/how-to-create-a-resource-script-file.md), [kaynaklarını yönet](../windows/how-to-copy-resources.md), ve [kaynakları içeren derleme zamanında](../windows/how-to-include-resources-at-compile-time.md).
+Kaynaklar hakkında daha fazla bilgi için bkz. [kaynak oluşturma](../windows/how-to-create-a-resource-script-file.md), [kaynakları yönetme](../windows/how-to-copy-resources.md)ve [derleme zamanında kaynakları ekleme](../windows/how-to-include-resources-at-compile-time.md).
 
-## <a name="editable-resources"></a>Düzenlenebilir kaynakları
+## <a name="editable-resources"></a>Düzenlenebilir kaynaklar
 
-Aşağıdaki dosya türlerini içerirler kaynakları düzenlemek için açılabilir:
+Aşağıdaki dosya türleri, içerdikleri kaynakları düzenlemek için açılabilir:
 
 | Dosya adı | Açıklama |
 |---|---|
-| .rc | Kaynak betik dosyalarına |
-| .rct | Kaynak şablon dosyaları |
-| .res | Kaynak dosyaları |
+| . RC | Kaynak betik dosyaları |
+| . rct | Kaynak şablonu dosyaları |
+| . res | Kaynak dosyalar |
 | .resx | Yönetilen kaynak dosyaları |
 | .exe | Yürütülebilir dosyalar |
-| .dll | Dinamik bağlantı kitaplık dosyaları |
-| .bmp, .ico, .dib, .cur | Bit eşlem ve simge, araç ve imleç dosyaları |
+| .dll | Dinamik bağlantı kitaplığı dosyaları |
+| . bmp,. ico,. dib,. cur | Bit eşlem, simge, araç çubuğu ve imleç dosyaları |
 
-Kaynaklar düzenlenirken, Visual Studio ortamının çalışır ve aşağıdaki dosyaları etkiler:
+Kaynakları düzenlediğinizde, Visual Studio ortamı ile birlikte çalışarak aşağıdaki dosyaları etkiler:
 
 | Dosya adı | Açıklama |
 |---|---|
-| Kaynak.h | Sembol tanımlarını içeren geliştirme ortamı tarafından oluşturulan üst bilgi dosyası.<br/><br/>Bu dosya kaynak denetimine dahil. |
-| Filename.APS | Hızlı yükleme için kullanılan geçerli kaynak betik dosyasını ikili sürümü.<br /><br /> Kaynak düzenleyicileri doğrudan .rc veya resource.h dosyaları okumak yok. Kaynak Derleyicisi bunları kaynak düzenleyicileri tarafından tüketilen .aps dosyaları içine derler. Bu dosya, bir derleme adımdır ve yalnızca sembolik verileri depolar.<br/><br/>Yorum gibi sembolik olmayan bilgi işlem ile normal bir derleme olarak derleme işlemi sırasında göz ardı edilir.<br/><br/>.Aps dosya .rc dosyasıyla eşit olduğunda .rc dosyasını yeniden oluşturulur. Örneğin, size **Kaydet**, kaynak düzenleyicisini .rc dosyasının ve resource.h dosyanın üzerine yazar. Herhangi bir değişiklik kaynaklardaki .rc dosyasına eklenen kalır ancak .rc dosyasının üzerine sonra açıklamalar her zaman kaybolacak. Açıklamaları koruma hakkında daha fazla bilgi için bkz: [kaynakları içeren derleme zamanında](../windows/how-to-include-resources-at-compile-time.md).<br/><br/>Genellikle, .aps dosya kaynak denetimine eklememelisiniz. |
-| .rc | Komut dosyası için geçerli projenizdeki kaynakları içeren kaynak komut dosyası. Bu dosya, kaydettiğiniz her .aps dosyası tarafından üzerine yazılır.<br/><br/>Bu dosya kaynak denetimine dahil. |
+| Kaynak.h | Sembol tanımlarını içeren geliştirme ortamı tarafından oluşturulan üst bilgi dosyası.<br/><br/>Bu dosyayı kaynak denetimine ekleyin. |
+| Filename. APS | Hızlı yükleme için kullanılan geçerli kaynak betiği dosyasının ikili sürümü.<br /><br /> Kaynak düzenleyicileri doğrudan. RC veya Resource. h dosyalarını okuyamıyor. Kaynak derleyicisi bunları, kaynak düzenleyicileri tarafından tüketilen. APS dosyaları olarak derler. Bu dosya bir derleme adımıdır ve yalnızca sembolik verileri depolar.<br/><br/>Normal derleme sürecinde olduğu gibi, sembolik olmayan bilgiler, derleme işlemi sırasında atılır.<br/><br/>. Aps dosyası. rc dosyası ile eşitlenmemiş olduğunda. rc dosyası yeniden oluşturulur. Örneğin, **kaydettiğinizde**, kaynak Düzenleyicisi. rc dosyasının ve Resource. h dosyasının üzerine yazar. Kaynaklardaki tüm değişiklikler. rc dosyasında dahil kalır, ancak. rc dosyasının üzerine yazıldığında açıklamalar her zaman kaybedilir. Açıklamaları koruma hakkında daha fazla bilgi için bkz. [derleme zamanında kaynakları dahil etme](../windows/how-to-include-resources-at-compile-time.md).<br/><br/>Genellikle,. AP dosyalarını kaynak denetimine eklememelisiniz. |
+| . RC | Geçerli Projenizde kaynaklar için betiği içeren kaynak betik dosyası. Her kaydedişinizde, bu dosyanın üzerine. aps dosyası yazılır.<br/><br/>Bu dosyayı kaynak denetimine ekleyin. |
 
 ## <a name="manifest-resources"></a>Bildirim Kaynakları
 
-C++ Masaüstü projelerinde, bildirim, bir uygulamanın kullandığı bağımlılıkları açıklayan XML dosyaları kaynaklardır. Örneğin, Visual Studio'da bu MFC bildirim dosyası Sihirbazı tarafından oluşturulan uygulama Windows ortak Denetim dll sürümünü kullanmalıdır tanımlar:
+C++ Masaüstü projelerinde, bildirim kaynakları, uygulamanın kullandığı BAĞıMLıLıKLARı tanımlayan xml dosyalarıdır. Örneğin, Visual Studio 'da bu MFC Sihirbazı tarafından oluşturulan bildirim dosyası, uygulamanın hangi Windows ortak denetim DLL sürümlerini kullanması gerektiğini tanımlar:
 
 ```xml
 <description>Your app description here</description>
@@ -108,22 +108,22 @@ C++ Masaüstü projelerinde, bildirim, bir uygulamanın kullandığı bağımlı
 </dependency>
 ```
 
-Bir Windows XP veya Windows Vista Uygulama için bildirim kaynağı kullanmak için uygulamayı Windows ortak denetimleri en güncel sürümünü belirtmeniz gerekir. Yukarıdaki örnekte sürümünü kullanır `6.0.0.0`, destekleyen [Syslink denetimi](/windows/desktop/Controls/syslink-overview).
+Bir Windows XP veya Windows Vista uygulaması için bildirim kaynağı, uygulamanın kullanması için en güncel Windows ortak denetimleri sürümünü belirtmelidir. Yukarıdaki örnek, `6.0.0.0` [Syslink denetimini](/windows/win32/Controls/syslink-overview)destekleyen sürümü kullanır.
 
 > [!NOTE]
-> Yalnızca, modül başına bir bildirim kaynağı da olabilir.
+> Modül başına yalnızca bir bildirim kaynağına sahip olabilirsiniz.
 
-Bir bildirim kaynakta yer alan bilgileri yazın ve sürümünü görüntülemek için dosyayı bir XML Görüntüleyici veya Visual Studio metin düzenleyicisi içinde açın. Bildirim kaynağı açarsanız [kaynak görünümü](../windows/resource-view-window.md), kaynak ikili biçimde açılır.
+Bir bildirim kaynağında bulunan sürümü ve tür bilgilerini görüntülemek için, dosyayı bir XML görüntüleyicisinde veya Visual Studio metin düzenleyicisinde açın. [Kaynak görünümü](../windows/resource-view-window.md)bir bildirim kaynağı açarsanız, kaynak ikili biçimde açılır.
 
 ### <a name="to-open-a-manifest-resource"></a>Bildirim kaynağını açmak için
 
-1. Projenizi Visual Studio'da açın ve gidin **Çözüm Gezgini**.
+1. Projenizi Visual Studio 'da açın ve **Çözüm Gezgini**gidin.
 
-1. Genişletin **kaynak dosyaları** klasörü, ardından:
+1. **Kaynak dosyaları** klasörünü genişletin, ardından:
 
-   - Metin Düzenleyicisi'nde açmak için çift tıklayın *.manifest* dosya.
+   - Metin düzenleyicisinde açmak için *. manifest* dosyasına çift tıklayın.
 
-   - Başka bir düzenleyicide açık olarak sağ *.manifest* seçin ve dosya **birlikte Aç**. Düzenleyicisi kullanın ve seçmek için belirttiğiniz **açık**.
+   - Başka bir düzenleyicide açmak için *. manifest* dosyasına sağ tıklayın ve **birlikte Aç**' ı seçin. Kullanılacak düzenleyiciyi belirtin ve **Aç**' ı seçin.
 
 ## <a name="requirements"></a>Gereksinimler
 
