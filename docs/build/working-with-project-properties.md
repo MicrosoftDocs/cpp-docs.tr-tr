@@ -31,7 +31,7 @@ Uygulama adı gibi bazı özellikler, hedef platformdan bağımsız olarak tüm 
 
 Özellik sayfaları, her zaman görebileceğiniz ve gerekirse, bir özellik değerinin hangi yapılandırma ve platform için uygulanacağını görmek üzere tasarlanmıştır. Aşağıdaki çizimde, en üstteki liste kutularındaki yapılandırma ve platform bilgilerine sahip Özellik sayfaları gösterilmektedir. **Optimizasyon** özelliği burada ayarlandığında, yalnızca kırmızı oklarla gösterildiği gibi etkin yapılandırma olarak gerçekleşen Win32 Derlemeleriyle hata ayıklama için geçerli olur.
 
-![Etkin yapılandırmayı&#43; &#43; gösteren etkin yapılandırma görsel](media/visual-c---property-pages-showing-active-configuration.png " C++ özellik sayfalarını") gösteren Visual C Özellik sayfaları
+![Etkin yapılandırmayı&#43; &#43; gösteren etkin yapılandırma görsel](media/visual-c---property-pages-showing-active-configuration.png " C++ özellik sayfalarını gösteren Visual C Özellik sayfaları")
 
 Aşağıdaki çizimde aynı proje özelliği sayfası görülmektedir, ancak yapılandırma yayın olarak değiştirilmiştir. Optimizasyon özelliğinin farklı değerini aklınızda edin. Ayrıca etkin yapılandırmanın hata ayıklama olduğunu unutmayın. Burada herhangi bir yapılandırmanın özelliklerini ayarlayabilirsiniz; etkin bir tane olması gerekmez.
 
