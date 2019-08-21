@@ -1,23 +1,23 @@
 ---
 title: Bağlayıcı Araçları Uyarısı LNK4221
-ms.date: 11/04/2016
+ms.date: 08/19/2019
 f1_keywords:
 - LNK4221
 helpviewer_keywords:
 - LNK4221
 ms.assetid: 8e2eb2de-9532-4b85-908a-8c9ff5c4cccb
-ms.openlocfilehash: baea8643001c550aeb3cb35dc6fe414e4330c0c1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 299c3ef76006b347d6770d45ca317ff0eb941ffa
+ms.sourcegitcommit: 9d4ffb8e6e0d70520a1e1a77805785878d445b8a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62160386"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69630798"
 ---
 # <a name="linker-tools-warning-lnk4221"></a>Bağlayıcı Araçları Uyarısı LNK4221
 
-Bu nesne dosyası tüm önceden tanımlanmamış ortak sembolleri tanımlamaz, bu şekilde, bu kitaplığı kullanan bağlantı işlemleri tarafından kullanılmayacak
+Bu nesne dosyası önceden tanımlanmamış ortak sembolleri tanımlamaz, bu nedenle bu kitaplığı kullanan bağlantı işlemleri tarafından kullanılmayacak
 
-Aşağıdaki iki kod parçacıkları göz önünde bulundurun.
+Aşağıdaki iki kod parçacıklarını göz önünde bulundurun.
 
 ```
 // a.cpp
@@ -33,10 +33,20 @@ int function()
 }
 ```
 
-İki nesnesi dosyası oluşturun ve dosyalarını derlemek için çalıştırın **cl /c a.cpp b.cpp** bir komut isteminde. Nesne dosyası çalıştırarak bağlarsanız **bağlantı//out:test.lib a.obj b.obj lib**, LNK4221 uyarı alırsınız. Çalıştırarak nesneleri bağlarsanız **bağlantı//out:test.lib b.obj a.obj lib**, bir uyarı almaz.
+Dosyaları derlemek ve iki nesne dosyası oluşturmak için, komut isteminde **cl/c a. cpp b. cpp** komutunu çalıştırın. Nesne dosyalarını, **/lib/Out: test. lib a. obj b. obj bağlantısını**çalıştırarak BAĞLARSANıZ, LNK4221 uyarısını alırsınız. Nesneleri, **/lib/Out: test. lib b. obj a. obj**' i çalıştırarak bağlarsanız, bir uyarı almazsınız.
 
-Bağlayıcının son giren ilk çıkar (LIFO) bir biçimde çalıştığından İkinci senaryoda hiçbir uyarı verilir. İlk senaryoda b.obj a.obj önce işlenir ve eklemek için yeni sembol a.obj sahiptir. Bağlayıcı a.obj işlenecek yönlendirerek uyarı önleyebilirsiniz.
+Bağlayıcı en son ilk çıkar (LıFO) şekilde çalıştığından ikinci senaryoda uyarı verilmez. İlk senaryoda, b. obj bir. obj öncesinde işlenir ve bir. obj eklenecek yeni bir sembol içermez. Önce bir. obj öğesini işlemek için bağlayıcıyı inceleyerek, uyarıdan kaçınabilirsiniz.
 
-İki kaynak dosyaları seçeneğini belirttiğinizde, bu hatanın yaygın bir nedeni olduğundan [/Yc (önceden derlenmiş üst bilgi dosyası oluştur)](../../build/reference/yc-create-precompiled-header-file.md) belirtilen üst bilgi dosyası aynı ada sahip **önceden derlenmiş üst bilgi** alan. Varsayılan olarak, stdafx.cpp stdafx.h içerir ve yeni simgeleri eklemez olduğundan, bu sorunun sık karşılaşılan bir nedeni stdafx.h ile ilgilidir. Başka bir kaynak dosyası ile stdafx.h içeriyorsa **/Yc** ve ilişkili .obj dosyasına stdafx.obj önce işlenir, bağlayıcı LNK4221 oluşturmaz.
+::: moniker range=">=vs-2019"
 
-Tek yönlü Bu sorunu olduğu için her ön derlenmiş üstbilgi emin olmak için çözmek için onunla içeren yalnızca bir kaynak dosya var. **/Yc**. Önceden derlenmiş üst bilgiler tüm kaynak dosyalarını kullanmanız gerekir. Bu ayar değiştirme hakkında daha fazla bilgi için bkz. [/Yu (önceden derlenmiş üst bilgi dosyasını kullanma)](../../build/reference/yu-use-precompiled-header-file.md).
+Bu hatanın yaygın nedenlerinden biri, **ön derlenmiş üstbilgi** alanında aynı üstbilgi dosyası adı ile [/Yc (ön derlenmiş üstbilgi dosyası oluştur)](../../build/reference/yc-create-precompiled-header-file.md) seçeneğini belirtmektir. Varsayılan olarak, *pch. cpp* , pch. *h* ' yi içerdiğinden ve yeni semboller eklemediğinden bu sorunun yaygın bir nedeni, *pch. h* ile ilgilidir. Başka bir kaynak dosyası, **/YC** ile *pch. h* ve ilişkili. obj dosyası pch. obj öğesinden önce IŞLENDIYSE, bağlayıcı LNK4221 oluşturur.
+
+::: moniker-end
+
+::: moniker range="<=vs-2017"
+
+Bu hatanın yaygın nedenlerinden biri, **ön derlenmiş üstbilgi** alanında aynı üstbilgi dosyası adı ile [/Yc (ön derlenmiş üstbilgi dosyası oluştur)](../../build/reference/yc-create-precompiled-header-file.md) seçeneğini belirtmektir. Bu sorunun yaygın nedenlerinden biri stbafx *. h* ile ilgilidir, bu nedenle stbafx. *cpp* , *stbafx. h* öğesini içerir ve yeni semboller eklemez. Başka bir kaynak dosyası, **/YC** ile *stdadfx. h* ve ilişkili. obj dosyası stbafx. obj öğesinden önce IŞLENDIYSE, bağlayıcı LNK4221 atar.
+
+::: moniker-end
+
+Bu sorunu çözmek için bir yol, her ön derlenmiş üst bilgi için, bunu **/Yıc**ile içeren yalnızca bir kaynak dosyası olduğundan emin olmak içindir. Diğer tüm kaynak dosyaları önceden derlenmiş üst bilgiler kullanmalıdır. Bu ayarı değiştirme hakkında daha fazla bilgi için bkz. [/yu (önceden derlenmiş üst bilgi dosyasını kullan)](../../build/reference/yu-use-precompiled-header-file.md).

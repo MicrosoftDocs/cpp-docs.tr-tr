@@ -1,6 +1,6 @@
 ---
-title: Registry Macros
-ms.date: 11/04/2016
+title: Kayıt defteri makroları
+ms.date: 08/19/2019
 f1_keywords:
 - atlcom/ATL::_ATL_STATIC_REGISTRY
 - atlcom/ATL::DECLARE_LIBID
@@ -12,34 +12,34 @@ f1_keywords:
 helpviewer_keywords:
 - registry, ATL macros
 ms.assetid: 3ee041da-c63b-42a4-89cf-2a4b2a6f81ae
-ms.openlocfilehash: 8e05d6a47ea67138e8d1d456077526dd3178cc44
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c2a70c15473798ba6eb2ef35e0b7ded395708586
+ms.sourcegitcommit: 9d4ffb8e6e0d70520a1e1a77805785878d445b8a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62274648"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69630628"
 ---
-# <a name="registry-macros"></a>Registry Macros
+# <a name="registry-macros"></a>Kayıt defteri makroları
 
-Bu makrolar, kullanışlı bir tür kitaplığı ve kayıt defteri özellikleri tanımlar.
+Bu makrolar yararlı tür kitaplığı ve kayıt defteri olanakları tanımlar.
 
 |||
 |-|-|
-|[_ATL_STATIC_REGISTRY](#_atl_static_registry)|ATL bağımlılığı önlemek için nesne olması nesneniz için kayıt kodu istediğiniz gösterir DLL.|
-|[DECLARE_LIBID](#declare_libid)|ATL almak bir yol sağlar *libid* tür kitaplığının.|
-|[DECLARE_NO_REGISTRY](#declare_no_registry)|Varsayılan ATL kayıt önler.|
-|[DECLARE_REGISTRY](#declare_registry)|Girer veya giriş ana nesnenin sistem kayıt defterinde kaldırır.|
-|[DECLARE_REGISTRY_APPID_RESOURCEID](#declare_registry_appid_resourceid)|Otomatik olarak kaydetmek için gereken bilgileri belirtir *AppID*.|
-|[DECLARE_REGISTRY_RESOURCE](#declare_registry_resource)|Adlandırılmış kaynağı bulur ve içindeki kayıt betiği çalıştırır.|
-|[DECLARE_REGISTRY_RESOURCEID](#declare_registry_resourceid)|Bir kimlik numarası tarafından tanımlanan kaynağa bulur ve içindeki kayıt betiği çalıştırır.|
+|[_ATL_STATIC_REGISTRY](#_atl_static_registry)|ATL 'nin bir bağımlılığını önlemek için nesnenizin kayıt kodunun nesne içinde olmasını istediğinizi belirtir. Dosyasını.|
+|[DECLARE_LIBID](#declare_libid)|ATL 'nin tür kitaplığının *libıd* 'sini alması için bir yol sağlar.|
+|[DECLARE_NO_REGISTRY](#declare_no_registry)|Varsayılan ATL kaydını önler.|
+|[DECLARE_REGISTRY](#declare_registry)|Sistem kayıt defterindeki ana nesnenin girişini girer veya kaldırır.|
+|[DECLARE_REGISTRY_APPID_RESOURCEID](#declare_registry_appid_resourceid)|*AppID*'yi otomatik olarak kaydetmek için gereken bilgileri belirtir.|
+|[DECLARE_REGISTRY_RESOURCE](#declare_registry_resource)|Adlandırılmış kaynağı bulur ve kayıt defteri betiğini onun içinde çalıştırır.|
+|[DECLARE_REGISTRY_RESOURCEID](#declare_registry_resourceid)|KIMLIK numarası tarafından tanımlanan kaynağı bulur ve kayıt defteri betiğini bunun içinde çalıştırır.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlcom.h
+**Üstbilgi:** atlcom. h
 
-##  <a name="_atl_static_registry"></a>  _ATL_STATIC_REGISTRY
+##  <a name="_atl_static_registry"></a>_ATL_STATIC_REGISTRY
 
-ATL bağımlılığı önlemek için nesne olması nesneniz için kayıt kodu istediğiniz gösteren bir simge DLL.
+ATL üzerindeki bir bağımlılığı önlemek için nesnenizin kayıt kodunun nesnede olmasını istediğinizi belirten bir simge. Dosyasını.
 
 ```
 #define _ATL_STATIC_REGISTRY
@@ -47,13 +47,13 @@ ATL bağımlılığı önlemek için nesne olması nesneniz için kayıt kodu is
 
 ### <a name="remarks"></a>Açıklamalar
 
-ATL_STATIC_REGISTRY tanımlarken, aşağıdaki kodu kullanmanız gerekir:
+ATL_STATIC_REGISTRY tanımladığınızda, aşağıdaki kodu kullanmanız gerekir:
 
 [!code-cpp[NVC_ATL_EventHandlingSample#5](../../atl/codesnippet/cpp/registry-macros_1.cpp)]
 
-##  <a name="declare_libid"></a>  DECLARE_LIBID
+##  <a name="declare_libid"></a>DECLARE_LIBID
 
-ATL almak bir yol sağlar *libid* tür kitaplığının.
+ATL 'nin tür kitaplığının *libıd* 'sini alması için bir yol sağlar.
 
 ```
 DECLARE_LIBID( libid )
@@ -62,27 +62,27 @@ DECLARE_LIBID( libid )
 ### <a name="parameters"></a>Parametreler
 
 *Kitaplık kimliği*<br/>
-Tür kitaplığının GUID.
+Tür kitaplığının GUID 'SI.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İçinde DECLARE_LIBID kullanmak bir `CAtlModuleT`-türetilmiş sınıf.
+DECLARE_LIBID ' i türetilmiş `CAtlModuleT`bir sınıfta kullanın.
 
 ### <a name="example"></a>Örnek
 
-Sihirbazın ürettiği ATL projeleri olmayan öznitelikli Bu makroyu kullanarak, bir örnek olacaktır.
+Öznitelikle bulunmayan sihirbaz tarafından oluşturulan ATL projelerinin bu makroyu kullanma örneği olacaktır.
 
-##  <a name="declare_no_registry"></a>  DECLARE_NO_REGISTRY
+##  <a name="declare_no_registry"></a>DECLARE_NO_REGISTRY
 
-Bu makro göründüğü sınıf için herhangi bir varsayılan ATL kayıt kaçınmak istiyorsanız DECLARE_NO_REGISTRY kullanın.
+Bu makronun göründüğü sınıf için herhangi bir varsayılan ATL kaydını önlemek istiyorsanız, DECLARE_NO_REGISTRY kullanın.
 
 ```
 DECLARE_NO_REGISTRY()
 ```
 
-##  <a name="declare_registry"></a>  DECLARE_REGISTRY
+##  <a name="declare_registry"></a>DECLARE_REGISTRY
 
-Sistem kayıt defterine standart sınıf kayıt girer veya sistem kayıt defterinden kaldırır.
+Standart sınıf kaydını sistem kayıt defterine girer veya sistem kayıt defterinden kaldırır.
 
 ```
 DECLARE_REGISTRY(
@@ -96,29 +96,29 @@ DECLARE_REGISTRY(
 ### <a name="parameters"></a>Parametreler
 
 *class*<br/>
-[in] Geriye dönük uyumluluk için dahildir.
+'ndaki Geriye dönük uyumluluk için eklenmiştir.
 
-*PID*<br/>
-[in] Sürüme özgü program tanımlayıcısı bir LPCTSTR.
+*Kişisel*<br/>
+'ndaki Sürüme özgü bir program tanımlayıcısı olan bir LPCTSTR.
 
-*vpid*<br/>
-[in] Bir sürüm bağımsız program tanımlayıcısı bir LPCTSTR.
+*Address*<br/>
+'ndaki Sürümden bağımsız program tanımlayıcısı olan bir LPCTSTR.
 
-*nid*<br/>
-[in] Kayıt programı'nın açıklaması kullanmak için kaynak dizenin bir dizin UINT.
+*NID*<br/>
+'ndaki Programın açıklaması olarak kullanılacak kayıt defterindeki kaynak dizesinin bir dizini olan bir UINT.
 
-*bayrakları*<br/>
-[in] Kayıt defterinde programın iş parçacığı modeli içeren bir DWORD. Aşağıdaki değerlerden biri olmalıdır: THREADFLAGS_APARTMENT, THREADFLAGS_BOTH veya AUTPRXFLAG.
+*larına*<br/>
+'ndaki Kayıt defterinde programın iş parçacığı modelini içeren bir DWORD. Aşağıdaki değerlerden biri olmalıdır: THREADFLAGS_APARTMENT, THREADFLAGS_BOTH veya AUTPRXFLAG.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Standart kayıt CLSID, program kimliği, sürüm bağımsız program kimliği, açıklama dizesi ve iş parçacığı modeli oluşur.
+Standart kayıt CLSID, program KIMLIĞI, sürümden bağımsız program KIMLIĞI, açıklama dizesi ve iş parçacığı modelinden oluşur.
 
-Bir nesne oluşturun veya ATL ekleme sınıfı Sihirbazı'nı kullanarak denetimi, sihirbaz otomatik olarak betik tabanlı kayıt defteri destek uygular ve ekler [DECLARE_REGISTRY_RESOURCEID](#declare_registry_resourceid) dosyalarınıza makrosu. Betik tabanlı kayıt defteri destek istemiyorsanız, bu makroyu DECLARE_REGISTRY ile değiştirmeniz gerekiyor. DECLARE_REGISTRY yalnızca kayıt defterine yukarıda beş temel anahtar ekler. El ile kayıt defterine diğer anahtarlar eklemek için kod yazmanız gerekir.
+ATL sınıf ekleme Sihirbazı 'nı kullanarak bir nesne veya denetim oluşturduğunuzda, sihirbaz komut dosyası tabanlı kayıt defteri desteğini otomatik olarak uygular ve [DECLARE_REGISTRY_RESOURCEID](#declare_registry_resourceid) makrosunu dosyalarınıza ekler. Betik tabanlı kayıt defteri desteğini istemiyorsanız, bu makroyu DECLARE_REGISTRY ile değiştirmeniz gerekir. DECLARE_REGISTRY yalnızca yukarıda açıklanan beş temel anahtarı kayıt defterine ekler. Kayıt defterine diğer anahtarlar eklemek için el ile kod yazmalısınız.
 
-##  <a name="declare_registry_appid_resourceid"></a>  DECLARE_REGISTRY_APPID_RESOURCEID
+##  <a name="declare_registry_appid_resourceid"></a>DECLARE_REGISTRY_APPID_RESOURCEID
 
-Otomatik olarak kaydetmek için gereken bilgileri belirtir *AppID*.
+*AppID*'yi otomatik olarak kaydetmek için gereken bilgileri belirtir.
 
 ```
 DECLARE_REGISTRY_APPID_RESOURCEID(
@@ -128,23 +128,23 @@ DECLARE_REGISTRY_APPID_RESOURCEID(
 
 ### <a name="parameters"></a>Parametreler
 
-*resid*<br/>
-Kaynak Kimliği hakkında bilgi içeren .rgs dosyanın *AppID*.
+*RESID*<br/>
+*AppID*ile ilgili bilgileri içeren. rgs dosyasının kaynak kimliği.
 
-*Uygulama Kimliği*<br/>
-BİR GUID.
+*AppID*<br/>
+BIR GUID.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İçinde DECLARE_REGISTRY_APPID_RESOURCEID kullanmak bir `CAtlModuleT`-türetilmiş sınıf.
+DECLARE_REGISTRY_APPID_RESOURCEID ' i türetilmiş `CAtlModuleT`bir sınıfta kullanın.
 
 ### <a name="example"></a>Örnek
 
-Sınıf Ekle kod Sihirbazı ile ATL projelere eklenen sınıfları bu makroyu kullanarak, bir örnek olacaktır.
+Sınıf kodu ekleme Sihirbazı ile ATL projelerine eklenen sınıfların bu makroyu kullanma örneği olacaktır.
 
-##  <a name="declare_registry_resource"></a>  DECLARE_REGISTRY_RESOURCE
+##  <a name="declare_registry_resource"></a>DECLARE_REGISTRY_RESOURCE
 
-Kayıt defteri dosyasını içeren bir adlandırılmış kaynağı alır ve nesneler sistem kayıt defterine girin ya da sistem kayıt defterinden kaldırmak için betiği çalıştırır.
+Kayıt defteri dosyasını içeren adlandırılmış kaynağı alır ve sistem kayıt defterine nesneleri girmek ya da sistem kayıt defterinden kaldırmak için betiği çalıştırır.
 
 ```
 DECLARE_REGISTRY_RESOURCE( x )
@@ -153,23 +153,23 @@ DECLARE_REGISTRY_RESOURCE( x )
 ### <a name="parameters"></a>Parametreler
 
 *x*<br/>
-[in] Kaynağınızın tanımlayıcı dize.
+'ndaki Kaynağınızın dize tanımlayıcısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir nesne oluşturun veya ATL projesi Sihirbazı'nı kullanarak denetlemek, sihirbaz otomatik olarak betik tabanlı kayıt defteri destek uygulamak ve ekleme [DECLARE_REGISTRY_RESOURCEID](#declare_registry_resourceid) DECLARE_REGISTRY_ için benzer makrosu Dosyalarınıza kaynak.
+ATL Proje Sihirbazı 'nı kullanarak bir nesne veya denetim oluşturduğunuzda, sihirbaz komut dosyası tabanlı kayıt defteri desteğini otomatik olarak uygular ve DECLARE_REGISTRY_RESOURCE 'e benzeyen [DECLARE_REGISTRY_RESOURCEID](#declare_registry_resourceid) makrosunu dosyalarınıza ekler.
 
-Statik olarak en iyi duruma getirilmiş kayıt defteri erişimi için ATL kayıt defteri bileşeni (Kaydedici) ile bağlayabilirsiniz. Kaydedici koduna statik olarak bağlamak için stdafx.h dosyanızın aşağıdaki satırı ekleyin:
+En iyileştirilmiş kayıt defteri erişimi için ATL kayıt defteri bileşeni (kaydedici) ile statik olarak bağlantı oluşturabilirsiniz. Kayıt koduna statik olarak bağlanmak için, *pch. h* dosyanıza aşağıdaki satırı ekleyin (Visual Studio 2017 ve önceki sürümlerde*stdadfx. h* ):
 
 [!code-cpp[NVC_ATL_COM#56](../../atl/codesnippet/cpp/registry-macros_2.h)]
 
-ATL çalışma zamanında değiştirme değerlerini değiştirmek isterseniz, DECLARE_REGISTRY_RESOURCE veya DECLARE_REGISTRY_RESOURCEID makrosu belirtmeyin. Bunun yerine, bir dizi oluşturma `_ATL_REGMAP_ENTRIES` yapıları, burada her giriş içeren bir değişken yer tutucu eşleştirilmiş bir değerle çalışma zamanında yer tutucusunu değiştirin. Ardından çağırın [CAtlModule::UpdateRegistryFromResourceD](catlmodule-class.md#updateregistryfromresourced) veya [CAtlModule::UpdateRegistryFromResourceS](catlmodule-class.md#updateregistryfromresources), dizisi geçirerek. Bu tüm yeni değerler ekler `_ATL_REGMAP_ENTRIES` yapılarını şirketinin değiştirme eşlemesi.
+Çalışma zamanında ATL 'nin değiştirme değerlerini yerine koymak istiyorsanız, DECLARE_REGISTRY_RESOURCE veya DECLARE_REGISTRY_RESOURCEID makrosunu belirtmeyin. Bunun yerine, her girdinin çalışma `_ATL_REGMAP_ENTRIES` zamanında yer tutucuyu değiştirecek bir değerle eşleştirilmiş bir değişken yer tutucusu içerdiği bir yapı dizisi oluşturun. Ardından, diziyi geçirerek [CAtlModule:: UpdateRegistryFromResourceD](catlmodule-class.md#updateregistryfromresourced) veya [CAtlModule:: UpdateRegistryFromResourceS](catlmodule-class.md#updateregistryfromresources)öğesini çağırın. Bu, `_ATL_REGMAP_ENTRIES` yapılardaki değiştirme değerlerinin tümünü kayıt sahibinin eşleme haritasına ekler.
 
-Değiştirilebilir parametreler ve betik oluşturma hakkında daha fazla bilgi için bkz [ATL kayıt defteri bileşeni (Kaydedici)](../../atl/atl-registry-component-registrar.md).
+Değiştirilebilir parametreler ve betik oluşturma hakkında daha fazla bilgi için, [atl kayıt defteri bileşeni (kaydedici)](../../atl/atl-registry-component-registrar.md)makalesine bakın.
 
-##  <a name="declare_registry_resourceid"></a>  DECLARE_REGISTRY_RESOURCEID
+##  <a name="declare_registry_resourceid"></a>DECLARE_REGISTRY_RESOURCEID
 
-Aynı [DECLARE_REGISTRY_RESOURCE](#declare_registry_resource) bir dize adı yerine kaynağı tanımlamak için bir sihirbaz tarafından oluşturulan UINT kullanması hariç, aynıdır.
+[DECLARE_REGISTRY_RESOURCE](#declare_registry_resource) ile aynı, bir dize adı yerine, kaynağı tanımlamak için sihirbaz tarafından oluşturulan bir UINT kullanması hariç.
 
 ```
 DECLARE_REGISTRY_RESOURCEID( x )
@@ -178,20 +178,20 @@ DECLARE_REGISTRY_RESOURCEID( x )
 ### <a name="parameters"></a>Parametreler
 
 *x*<br/>
-[in] Sihirbazın ürettiği kaynak tanımlayıcısı.
+'ndaki Sihirbaz tarafından oluşturulan kaynağınızın tanıtıcısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir nesne veya ATL projesi Sihirbazı'nı kullanarak denetim oluşturduğunuzda, sihirbaz otomatik olarak betik tabanlı kayıt defteri destek uygulamak ve DECLARE_REGISTRY_RESOURCEID makrosu dosyalarınıza ekleyin.
+ATL Proje Sihirbazı 'nı kullanarak bir nesne veya denetim oluşturduğunuzda, sihirbaz otomatik olarak betik tabanlı kayıt defteri desteğini uygular ve DECLARE_REGISTRY_RESOURCEID makrosunu dosyalarınıza ekler.
 
-Statik olarak en iyi duruma getirilmiş kayıt defteri erişimi için ATL kayıt defteri bileşeni (Kaydedici) ile bağlayabilirsiniz. Kaydedici koduna statik olarak bağlamak için stdafx.h dosyanızın aşağıdaki satırı ekleyin:
+En iyileştirilmiş kayıt defteri erişimi için ATL kayıt defteri bileşeni (kaydedici) ile statik olarak bağlantı oluşturabilirsiniz. Kayıt koduna statik olarak bağlanmak için aşağıdaki satırı *stdadfx. h* dosyanıza (Visual Studio 2019 ve üzeri sürümlerde*pch. h* ) ekleyin:
 
 [!code-cpp[NVC_ATL_COM#56](../../atl/codesnippet/cpp/registry-macros_2.h)]
 
-ATL çalışma zamanında değiştirme değerlerini değiştirmek isterseniz, DECLARE_REGISTRY_RESOURCE veya DECLARE_REGISTRY_RESOURCEID makrosu belirtmeyin. Bunun yerine, bir dizi oluşturma `_ATL_REGMAP_ENTRIES` yapıları, burada her giriş içeren bir değişken yer tutucu eşleştirilmiş bir değerle çalışma zamanında yer tutucusunu değiştirin. Ardından çağırın [CAtlModule::UpdateRegistryFromResourceD](catlmodule-class.md#updateregistryfromresourced) veya [CAtlModule::UpdateRegistryFromResourceS](catlmodule-class.md#updateregistryfromresources), dizisi geçirerek. Bu tüm yeni değerler ekler `_ATL_REGMAP_ENTRIES` yapılarını şirketinin değiştirme eşlemesi.
+Çalışma zamanında ATL 'nin değiştirme değerlerini yerine koymak istiyorsanız, DECLARE_REGISTRY_RESOURCE veya DECLARE_REGISTRY_RESOURCEID makrosunu belirtmeyin. Bunun yerine, her girdinin çalışma `_ATL_REGMAP_ENTRIES` zamanında yer tutucuyu değiştirecek bir değerle eşleştirilmiş bir değişken yer tutucusu içerdiği bir yapı dizisi oluşturun. Ardından, diziyi geçirerek [CAtlModule:: UpdateRegistryFromResourceD](catlmodule-class.md#updateregistryfromresourced) veya [CAtlModule:: UpdateRegistryFromResourceS](catlmodule-class.md#updateregistryfromresources)öğesini çağırın. Bu, `_ATL_REGMAP_ENTRIES` yapılardaki değiştirme değerlerinin tümünü kayıt sahibinin eşleme haritasına ekler.
 
-Değiştirilebilir parametreler ve betik oluşturma hakkında daha fazla bilgi için bkz [ATL kayıt defteri bileşeni (Kaydedici)](../../atl/atl-registry-component-registrar.md).
+Değiştirilebilir parametreler ve betik oluşturma hakkında daha fazla bilgi için, [atl kayıt defteri bileşeni (kaydedici)](../../atl/atl-registry-component-registrar.md)makalesine bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Makroları](../../atl/reference/atl-macros.md)
+[Larının](../../atl/reference/atl-macros.md)

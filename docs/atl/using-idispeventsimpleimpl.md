@@ -1,37 +1,37 @@
 ---
-title: Using IDispEventSimpleImpl (ATL)
-ms.date: 11/04/2016
+title: IDispEventSimpleImpl (ATL) kullanma
+ms.date: 08/19/2019
 helpviewer_keywords:
 - IDispEventSimpleImpl class, using
 ms.assetid: 8640ad1a-4bd0-40a5-b5e4-7322685d7aab
-ms.openlocfilehash: 40edca3a99fb6e9d57d617e79d0bd37ebbfcd4ad
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8a5e64093d2687efc6c6c5e9b0ce89402d2b99a4
+ms.sourcegitcommit: 9d4ffb8e6e0d70520a1e1a77805785878d445b8a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62196722"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69630579"
 ---
-# <a name="using-idispeventsimpleimpl"></a>Using IDispEventSimpleImpl
+# <a name="using-idispeventsimpleimpl"></a>IDispEventSimpleImpl kullanma
 
-Kullanırken `IDispEventSimpleImpl` olayları işlemek için yapmanız gerekir:
+Olayları işlemek `IDispEventSimpleImpl` için kullanırken şunları yapmanız gerekir:
 
-- Öğesinden, bir sınıf türetin [Idispeventsimpleımpl](../atl/reference/idispeventsimpleimpl-class.md).
+- [IDispEventSimpleImpl](../atl/reference/idispeventsimpleimpl-class.md)'den sınıfınızı türetirsiniz.
 
-- Bir olay havuzu eşlemesi sınıfınıza ekleyin.
+- Sınıfınıza bir olay havuzu eşlemesi ekleyin.
 
-- Tanımlama [_atl_func_ınfo](../atl/reference/atl-func-info-structure.md) olayları tanımlayan yapılar.
+- Olayları açıklayan [_Atl_func_ınfo](../atl/reference/atl-func-info-structure.md) yapılarını tanımlayın.
 
-- Olay havuzu kullanarak eşleme girişleri ekleyin [SINK_ENTRY_INFO](reference/composite-control-macros.md#sink_entry_info) makrosu.
+- [SINK_ENTRY_INFO](reference/composite-control-macros.md#sink_entry_info) makrosunu kullanarak olay havuzu eşlemesine girdi ekleyin.
 
-- İşlemede ilginizi çeken yöntemleri uygulayın.
+- İşleme ilgilendiğiniz yöntemleri uygulayın.
 
-- Öneri ve olay kaynağı eşlemesindeki.
+- Olay kaynağını öner ve geri al.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnekte nasıl işleneceğini gösterir `DocumentChange` olay harekete Word tarafından **uygulama** nesne. Bu olay üzerinde bir yöntemi olarak tanımlanan `ApplicationEvents` dispinterface.
+Aşağıdaki örnekte, Word 'ün **uygulama** nesnesi tarafından tetiklenen `DocumentChange` olayın nasıl işleneceği gösterilmektedir. Bu olay, `ApplicationEvents` dispınterface üzerinde bir yöntem olarak tanımlanır.
 
-Örnek dandır [ATLEventHandling örnek](../overview/visual-cpp-samples.md).
+Örnek, [ATLEventHandling](../overview/visual-cpp-samples.md)örneğinden yapılır.
 
 ```cpp
 [ uuid(000209F7-0000-0000-C000-000000000046), hidden ]
@@ -49,21 +49,21 @@ methods:
 };
 ```
 
-Örnekte `#import` Word'ün tür kitaplığından gereken üst bilgi dosyaları oluşturmak için. Word'ün diğer sürümleri bu örneği kullanmak istiyorsanız, doğru mso dll dosyası belirtmeniz gerekir. Örneğin, Office 2000 mso9.dll ve OfficeXP mso.dll sağlar. Bu kod, stdafx.h basitleştirilir:
+Örnek, Word `#import` 'ün tür kitaplığından gerekli üst bilgi dosyalarını oluşturmak için kullanır. Bu örneği Word 'ün diğer sürümleriyle birlikte kullanmak istiyorsanız, doğru mso dll dosyasını belirtmeniz gerekir. Örneğin, Office 2000 Mso9. dll ve OfficeXP, Mso. dll dosyasını sağlar. Bu kod, *pch. h* 'Den (Visual Studio 2017 ve önceki sürümlerde*stdadfx. h* ) basitleştirilmiştir:
 
 [!code-cpp[NVC_ATL_EventHandlingSample#1](../atl/codesnippet/cpp/using-idispeventsimpleimpl_1.h)]
 
-Yalnızca tür kitaplığındaki aslında bu örnekte kullanılan Word'ün CLSID bilgilerdir `Application` nesne ve Laboratuvardaki `ApplicationEvents` arabirimi. Bu bilgiler, yalnızca derleme zamanında kullanılır.
+Yalnızca bu örnekte kullanılan tür kitaplığından alınan bilgiler, Word `Application` nesnesinin CLSID 'si ve `ApplicationEvents` arabirimin IID 'si olur. Bu bilgiler yalnızca derleme zamanında kullanılır.
 
-Aşağıdaki kod Simple.h içinde görünür. İlgili kod açıklamaları tarafından belirtilir:
+Aşağıdaki kod Simple. h içinde görüntülenir. İlgili kod açıklamalara göre belirtilmiştir:
 
 [!code-cpp[NVC_ATL_EventHandlingSample#3](../atl/codesnippet/cpp/using-idispeventsimpleimpl_2.h)]
 
-Aşağıdaki kod, Simple.cpp şöyledir:
+Aşağıdaki kod basit. cpp öğesinden yapılır:
 
 [!code-cpp[NVC_ATL_EventHandlingSample#4](../atl/codesnippet/cpp/using-idispeventsimpleimpl_3.cpp)]
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Olay İşleme](../atl/event-handling-and-atl.md)<br/>
-[ATLEventHandling örnek](../overview/visual-cpp-samples.md)
+[ATLEventHandling örneği](../overview/visual-cpp-samples.md)

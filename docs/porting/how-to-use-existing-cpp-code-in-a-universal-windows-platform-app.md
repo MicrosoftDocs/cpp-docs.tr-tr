@@ -2,12 +2,12 @@
 title: 'Nasıl yapılır: Evrensel Windows Platformu uygulamasında C++ mevcut kodu kullanma'
 ms.date: 04/08/2019
 ms.assetid: 87e5818c-3081-42f3-a30d-3dca2cf0645c
-ms.openlocfilehash: e587ae88fe8d38a22b351d87ae585efe82acf091
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 5050a9773eea55549958195efa624743f44ed031
+ms.sourcegitcommit: 9d4ffb8e6e0d70520a1e1a77805785878d445b8a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69510374"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69630433"
 ---
 # <a name="how-to-use-existing-c-code-in-a-universal-windows-platform-app"></a>Nasıl yapılır: Evrensel Windows Platformu uygulamasında C++ mevcut kodu kullanma
 
@@ -151,7 +151,7 @@ Aşağıdaki yordam, kullanarak `__declspec(dllexport)`işlevleri kullanıma sun
 
    **Çözüm Gezgini** artık projeyi bir Evrensel Windows projesi olarak tanımlıyor.
 
-5. Önceden derlenmiş üst bilgi dosyası adınızın doğru olduğundan emin olun. **Ön derlenmiş üstbilgiler** bölümünde, **ön derlenmiş üstbilgi dosyasını** pch. h iken stbafx. h olarak değiştirin. Bunu yapmazsanız, aşağıdaki hatayı görürsünüz.
+5. Önceden derlenmiş üst bilgi dosyası adınızın doğru olduğundan emin olun. **Ön derlenmiş üstbilgiler** bölümünde, **ön derlenmiş üstbilgi dosyasını** *pch. h* iken *stbafx. h*olarak değiştirin. Bunu yapmazsanız, aşağıdaki hatayı görürsünüz.
 
    > hata C2857:/Ycpch.h komut satırı seçeneğiyle belirtilen ' #include ' ifadesiyle kaynak dosyada bulunamadı
 
@@ -165,7 +165,7 @@ Aşağıdaki yordam, kullanarak `__declspec(dllexport)`işlevleri kullanıma sun
 
    **Projeler** > **çözümü**altında dll projesinin yanındaki onay kutusunu işaretleyin ve **Tamam** düğmesini seçin.
 
-8. Kitaplığın üst bilgi dosyalarını UWP uygulamanızın pch. h dosyasına ekleyin.
+8. Kitaplığın üst bilgi dosyalarını UWP uygulamanızın *pch. h* dosyasına ekleyin.
 
     ```cpp
     #include "..\MyNativeDLL\giraffe.h"
@@ -195,7 +195,7 @@ Ancak, bir UWP içindeki statik bir kitaplığı, ile `/ZW`yeniden derlemeden ku
 
 1. UWP projesinin proje özellikleri ' nde, sol bölmedeki **yapılandırma özellikleri** > **bağlayıcı** > **girişi** ' ni seçin. Sağ bölmede, **ek bağımlılıklar** özelliğindeki kitaplığa yolu ekleyin. Örneğin, projedeki çıktısını *SolutionFolder*\Debug\mynativelibrary\mynativelibrary.exe dizinine yerleştiren bir kitaplık için göreli yolu `Debug\MyNativeLibrary\MyNativeLibrary.lib`ekleyin.
 
-2. Üstbilgi dosyasını pch. h dosyanıza (varsa) veya gerektiği gibi herhangi bir. cpp dosyasına başvuracak bir Include ifadesini ekleyin ve kitaplığı kullanan kodu eklemeye başlayın.
+2. Üstbilgi dosyasını *pch. h* dosyanıza (varsa) veya gerektiği gibi herhangi bir. cpp dosyasına başvuracak bir Include ifadesini ekleyin ve kitaplığı kullanan kodu eklemeye başlayın.
 
    ```cpp
    #include "..\MyNativeLibrary\giraffe.h"
@@ -219,7 +219,7 @@ Yerel API 'Leri UWP uygulamasından bir statik kitaplıkta kullanmak istiyorsan�
 
 5. Özgün projenizden eklenecek tüm dosyaları seçin ve **Tamam**' ı seçin. Alt klasörler için gerekliyse tekrarlayın.
 
-6. Artık yinelenen bir kodunuz olabilir. Birden fazla önceden derlenmiş üst bilgi (stbafx. h ve pch. h) varsa, saklanacak bir tane seçin. Include deyimlerini gibi gerekli kodu, koruduğunuz birine kopyalayın. Ardından, diğerini silin ve proje özelliklerinde, **önceden derlenmiş üstbilgiler**altında, üstbilgi dosyasının adının doğru olduğundan emin olun.
+6. Artık yinelenen bir kodunuz olabilir. Birden fazla önceden derlenmiş üst bilgi ( *stbafx. h* ve *pch. h*) varsa, saklanacak bir tane seçin. Include deyimlerini gibi gerekli kodu, koruduğunuz birine kopyalayın. Ardından, diğerini silin ve proje özelliklerinde, **önceden derlenmiş üstbilgiler**altında, üstbilgi dosyasının adının doğru olduğundan emin olun.
 
    Önceden derlenmiş üst bilgi olarak kullanılacak dosyayı değiştirdiyseniz, ön derlenmiş üstbilgi seçeneklerinin her dosya için doğru olduğundan emin olun. Sırasıyla her bir. cpp dosyasını seçin, Özellikler penceresini açın ve istenen önceden derlenmiş üst bilgi dışında (/i) **oluşturulacak**şekilde ayarlananların tümünün **(/Yu)** olarak ayarlandığından emin olun.
 

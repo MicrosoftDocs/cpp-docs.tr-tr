@@ -9,12 +9,12 @@ helpviewer_keywords:
 - MFC Feature Pack, update existing application
 - walkthroughs [MFC], update existing application
 ms.assetid: aa6330d3-6cfc-4c79-8fcb-0282263025f7
-ms.openlocfilehash: 71abf84e4c2afd75b0da88c261c78aa04ae08309
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 8211111e3f9e6fff2377a62689e6f8b1e0e40990
+ms.sourcegitcommit: 9d4ffb8e6e0d70520a1e1a77805785878d445b8a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69512929"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69630418"
 ---
 # <a name="walkthrough-updating-the-mfc-scribble-application-part-1"></a>İzlenecek yol: MFC karalama uygulamasını güncelleştirme (Bölüm 1)
 
@@ -50,7 +50,7 @@ Bir menüyü destekleyen bir uygulamayı bir şeridi destekleyen bir uygulamaya 
 
 1. Karalama. cpp içinde, `CScribbleApp::InitInstance` [AfxOleInit](../mfc/reference/ole-initialization.md#afxoleinit)çağrısı içerdiğini doğrulayın.
 
-1. Aşağıdaki kodu stbafx. h dosyasına ekleyin.
+1. Aşağıdaki kodu, *pch. h* dosyasına (Visual Studio 2017 ve önceki sürümlerde*stdadfx. h* ) ekleyin:
 
     ```cpp
     #include <afxcontrolbars.h>

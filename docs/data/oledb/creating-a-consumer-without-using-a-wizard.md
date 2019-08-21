@@ -4,20 +4,20 @@ ms.date: 05/09/2019
 helpviewer_keywords:
 - OLE DB consumers, creating
 ms.assetid: e8241cfe-5faf-48f8-9de3-241203de020b
-ms.openlocfilehash: 421723ed561e8ed986a64024c4c5d29c9fba6110
-ms.sourcegitcommit: 00e26915924869cd7eb3c971a7d0604388abd316
+ms.openlocfilehash: 85e95afa92c8a968865d9a3031e1a309e68ae7d3
+ms.sourcegitcommit: 9d4ffb8e6e0d70520a1e1a77805785878d445b8a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65525118"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69630756"
 ---
 # <a name="creating-a-consumer-without-using-a-wizard"></a>Sihirbaz Kullanmadan bir Tüketici Oluşturma
 
-Aşağıdaki örnek, varolan bir ATL projesine OLE DB tüketici desteği ekliyoruz varsayar. OLE DB tüketici desteği, MFC Uygulama eklemek istiyorsanız, çalıştırmalısınız **MFC Uygulama Sihirbazı**, gerekli tüm destek oluşturur ve yordamları MFC uygulamasını çalıştırmak gerekli çağırır.
+Aşağıdaki örnek, varolan bir ATL projesine OLE DB tüketici desteği eklediğinizi varsayar. Bir MFC uygulamasına OLE DB tüketici desteği eklemek istiyorsanız, gerekli tüm desteği oluşturan ve uygulamayı yürütmek için gerekli MFC yordamlarını çağıran **MFC Uygulama Sihirbazı 'nı**çalıştırmanız gerekir.
 
-OLE DB tüketici desteği olmadan eklemek için **ATL OLE DB Tüketicisi Sihirbazı**:
+**ATL OLE DB Tüketici Sihirbazı 'nı**kullanmadan OLE DB tüketici desteği eklemek için:
 
-- Pch.h dosyanızda aşağıdaki ekleme `#include` ifadeleri:
+- *Pch. h* dosyanızda aşağıdaki `#include` deyimleri ekleyin:
 
     ```cpp
     #include <atlbase.h>
@@ -25,14 +25,14 @@ OLE DB tüketici desteği olmadan eklemek için **ATL OLE DB Tüketicisi Sihirba
     #include <atldbsch.h> // if you are using schema templates
     ```
 
-Program aracılığıyla, bir tüketici genellikle sırasıyla aşağıdaki işlemleri gerçekleştirir:
+Programlı olarak, bir tüketici genellikle aşağıdaki işlem dizisini gerçekleştirir:
 
-1. Yerel değişkenlere sütunları bağlayan bir kullanıcı kaydı sınıfı oluşturun. Bu örnekte, `CMyTableNameAccessor` kullanıcı kayıt sınıftır (bkz [kullanıcı kayıtlarını](../../data/oledb/user-records.md)). Bu sınıf sütun haritasında ve parametre eşlemesi içerir. Kullanıcı kayıt sınıfı, sütun eşlemesinde belirttiğiniz her bir alan için veri üyesi bildirme; her biri bu veri üyeleri için de bir durum veri üyesi ve uzunluk veri üyesi bildirin. Daha fazla bilgi için [daha fazla Erişimcilerde alan durumu veri üyeleri](../../data/oledb/field-status-data-members-in-wizard-generated-accessors.md).
+1. Sütunları yerel değişkenlere bağlayan bir kullanıcı kayıt sınıfı oluşturun. Bu örnekte, `CMyTableNameAccessor` Kullanıcı kayıt sınıfıdır (bkz. [Kullanıcı kayıtları](../../data/oledb/user-records.md)). Bu sınıf, sütun eşlemesi ve parametre eşlemesi içerir. Sütun haritanızda belirttiğiniz her alan için Kullanıcı kayıt sınıfında bir veri üyesi bildirin; Bu veri üyelerinin her biri için, bir durum veri üyesi ve bir uzunluk veri üyesi da bildirir. Daha fazla bilgi için, bkz. [sihirbaz tarafından oluşturulan Erişimcilerde alan durumu veri üyeleri](../../data/oledb/field-status-data-members-in-wizard-generated-accessors.md).
 
     > [!NOTE]
-    > Kendi tüketici yazarsanız verisi değişkenleri durum ve uzunluğu değişkenlerinin önce gelmelidir.
+    > Kendi tüketicinizi yazarsanız, veri değişkenlerinin durum ve uzunluk değişkenlerinden önce gelmesi gerekir.
 
-- Bir veri kaynağı ile bir oturumu örneği oluşturur. Ardından bir satır kümesi kullanarak örneği oluşturmak ve kullanmak için ne tür erişimci ve satır kümesi karar [CCommand](../../data/oledb/ccommand-class.md) veya [CTable](../../data/oledb/ctable-class.md):
+- Bir veri kaynağı ve oturum oluşturun. Ne tür erişimci ve satır kümesi kullanacağınızı belirleyin ve ardından [CCommand](../../data/oledb/ccommand-class.md) veya [CTable](../../data/oledb/ctable-class.md)kullanarak bir satır kümesi oluşturun:
 
     ```cpp
     CDataSource ds;
@@ -40,15 +40,15 @@ Program aracılığıyla, bir tüketici genellikle sırasıyla aşağıdaki işl
     class CMyTableName : public CCommand<CAccessor<CMyTableNameAccessor>>
     ```
 
-- Çağrı `CoInitialize` COM başlatılamadı Bu, ana kod adı verilir. Örneğin:
+- COM `CoInitialize` başlatma çağrısı. Bu, ana kodda çağırılır. Örneğin:
 
     ```cpp
     HRESULT hr = CoInitialize(NULL);
     ```
 
-- Çağrı [CDataSource::Open](../../data/oledb/cdatasource-open.md) veya türevlerini biri.
+- [CDataSource:: Open](../../data/oledb/cdatasource-open.md) veya çeşitlerinden birini çağırın.
 
-- Veri kaynağı için bir bağlantı açmak, oturumu açın ve açın ve satır başlatmak (ve ayrıca bir komutu yürütme):
+- Veri kaynağına bir bağlantı açın, oturumu açın ve satır kümesini açın ve başlatın (Ayrıca bir komut varsa, yürütün):
 
     ```cpp
     hr = ds.Open();
@@ -56,11 +56,11 @@ Program aracılığıyla, bir tüketici genellikle sırasıyla aşağıdaki işl
     hr = rs.Open();            // (Open also executes the command)
     ```
 
-- Kullanarak isteğe bağlı olarak satır kümesi özelliklerini ayarlama `CDBPropSet::AddProperty` ve parametre olarak geçirileceğini `rs.Open`. Bunun nasıl yapıldığına bir örnek için bkz `GetRowsetProperties` içinde [Tüketici Sihirbazı tarafından oluşturulan yöntemler](../../data/oledb/consumer-wizard-generated-methods.md).
+- İsteğe bağlı olarak, kullanarak `CDBPropSet::AddProperty` satır kümesi özelliklerini ayarlayın ve bunları `rs.Open`parametresi olarak geçirin. Bunun nasıl yapıldığını gösteren bir örnek için, bkz `GetRowsetProperties` . [Tüketici Sihirbazı tarafından oluşturulan Yöntemler](../../data/oledb/consumer-wizard-generated-methods.md).
 
-- Satır kümesi, verileri almak/işlemek için artık kullanabilirsiniz.
+- Artık verileri almak/işlemek için satır kümesini kullanabilirsiniz.
 
-- Uygulamanızı işiniz bittiğinde, bağlantı, oturum ve satır kümesi kapatın:
+- Uygulamanız tamamlandığında, bağlantıyı, oturumu ve satır kümesini kapatın:
 
     ```cpp
     rs.Close();
@@ -68,9 +68,9 @@ Program aracılığıyla, bir tüketici genellikle sırasıyla aşağıdaki işl
     ds.Close();
     ```
 
-   Bir komut kullanıyorsanız çağırmak isteyebilirsiniz `ReleaseCommand` sonra `Close`. Aşağıdaki kod örneğinde [CCommand::Close](../../data/oledb/ccommand-close.md) nasıl çağrılacağını gösterir `Close` ve `ReleaseCommand`.
+   Bir komut kullanıyorsanız, daha sonra `ReleaseCommand` `Close`çağırmak isteyebilirsiniz. [CCommand:: Close](../../data/oledb/ccommand-close.md) içindeki kod örneği, ve ' `Close` `ReleaseCommand`nin nasıl çağrılacağını gösterir.
 
-- Çağrı `CoUnInitialize` COM'u kapatmak için Bu, ana kod adı verilir.
+- Uninitialize `CoUnInitialize` com öğesine çağrı. Bu, ana kodda çağırılır.
 
     ```cpp
     CoUninitialize();

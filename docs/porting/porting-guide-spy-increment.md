@@ -2,12 +2,12 @@
 title: 'Taşıma Kılavuzu: Spy++'
 ms.date: 11/19/2018
 ms.assetid: e558f759-3017-48a7-95a9-b5b779d5e51d
-ms.openlocfilehash: 206698d35239f416d2f13891044aa54fe502500a
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 175f3fbba7e18f625dc3425c236162737689f068
+ms.sourcegitcommit: 9d4ffb8e6e0d70520a1e1a77805785878d445b8a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69511666"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69630455"
 ---
 # <a name="porting-guide-spy"></a>Taşıma Kılavuzu: Spy++
 
@@ -67,7 +67,7 @@ Windows XP artık Microsoft tarafından desteklenmemektedir. bu nedenle, Visual 
 
 Hatadan kurtulmak için, **Proje özellikleri** ayarını Şu anda hedeflemek istediğiniz en düşük Windows sürümüne güncelleştirerek WINVER tanımlayın. [Burada](/windows/win32/WinProg/using-the-windows-headers)çeşitli Windows sürümleri için bir değer tablosu bulun.
 
-Stbafx. h dosyası bu makro tanımlarından bazılarını içeriyordu.
+*Stbafx. h* dosyası bu makro tanımlarından bazılarını içeriyordu.
 
 ```cpp
 #define WINVER       0x0500  // these defines are set so that we get the
@@ -373,7 +373,7 @@ Makroların bu kodda olduğu gibi ağır kullanımı, kodun bakımını daha zor
 #define PARM(var, type, src)type var = (type)src
 ```
 
-Bu nedenle `lpszBuffer` , değişken aynı işlevde iki kez bildirilmiştir. Bu, kodun makroları kullanmamasına (yalnızca ikinci tür bildirimini kaldırmanız) izin vermediğinden bu durum düzeltilmek straightfoward. Olduğu gibi, makro kodunu sıradan kod olarak yeniden yazmak (sıkıcı ve olası hata durumunda olabilecek bir görev) veya uyarıyı devre dışı bırakma seçeneklerine talihsiz karar veririz.
+Bu nedenle `lpszBuffer` , değişken aynı işlevde iki kez bildirilmiştir. Bu, kodun makroları kullanmamasına (yalnızca ikinci tür bildirimini kaldırmanız) olanak tanıdığından, bu durum doğrudan düzeltilmek değildir. Olduğu gibi, makro kodunu sıradan kod olarak yeniden yazmak (sıkıcı ve olası hata durumunda olabilecek bir görev) veya uyarıyı devre dışı bırakma seçeneklerine talihsiz karar veririz.
 
 Bu durumda, uyarıyı devre dışı bırakmayı kabul ediyoruz. Bunu aşağıdaki gibi bir pragma ekleyerek yapabiliriz:
 
@@ -502,7 +502,7 @@ Bu sorun, bir değişken ilk **extern**olarak bildirildiği ve daha sonra **stat
 
 ##  <a name="porting_to_unicode"></a>11. adım. MBCS 'den Unicode 'a taşıma
 
-Windows dünyasında Unicode söylediğimizi, genellikle UTF-16 anlamına geldiğini unutmayın. Linux gibi diğer işletim sistemleri UTF-8 kullanır, ancak Windows genellikle değildir. MFC 'nin MBCS sürümü Visual Studio 2013 ve 2015 ' de kullanımdan kaldırılmıştır, ancak artık Visual Studio 2017 ' de kullanımdan kaldırılmıştır. Visual Studio 2013 veya 2015 kullanıyorsanız, bu adımı, başka bir iş yapmak veya zaman aşımı süresini uygun bir zamana kadar erteleyebilmek için, MBCS 'nin kullanım dışı olduğunu belirten, geçici olarak ortadan kaldırmak isteyebilir. Geçerli kod MBCS kullanır ve MFC 'nin ANSI/MBCS sürümünü yüklememiz gereken ile devam eder. Bunun yerine, büyük MFC kitaplığı, yükleme **ile C++**  varsayılan Visual Studio Desktop geliştirmenin bir parçası değildir, bu nedenle yükleyicideki isteğe bağlı bileşenlerden seçilmelidir. Bkz. [MFC MBCS dll eklentisi](../mfc/mfc-mbcs-dll-add-on.md). Bu yazılımı indirdikten ve Visual Studio 'yu yeniden başlattıktan sonra, MFC 'nin MBCS sürümünü derleyip bağlayabilirsiniz, ancak Visual Studio 2013 veya 2015 kullanıyorsanız MBCS ile ilgili uyarıların kurtulenmesini sağlamak için önceden tanımlanmış NO_WARN_MBCS_MFC_DEPRECATION listesine de eklemeniz gerekir proje özelliklerinin ön **işlemci** bölümünde veya stbafx. h üstbilgi dosyasının veya diğer ortak üstbilgi dosyasının başlangıcında bulunan makrolar.
+Windows dünyasında Unicode söylediğimizi, genellikle UTF-16 anlamına geldiğini unutmayın. Linux gibi diğer işletim sistemleri UTF-8 kullanır, ancak Windows genellikle değildir. MFC 'nin MBCS sürümü Visual Studio 2013 ve 2015 ' de kullanımdan kaldırılmıştır, ancak artık Visual Studio 2017 ' de kullanımdan kaldırılmıştır. Visual Studio 2013 veya 2015 kullanıyorsanız, bu adımı, başka bir iş yapmak veya zaman aşımı süresini uygun bir zamana kadar erteleyebilmek için, MBCS 'nin kullanım dışı olduğunu belirten, geçici olarak ortadan kaldırmak isteyebilir. Geçerli kod MBCS kullanır ve MFC 'nin ANSI/MBCS sürümünü yüklememiz gereken ile devam eder. Bunun yerine, büyük MFC kitaplığı, yükleme **ile C++**  varsayılan Visual Studio Desktop geliştirmenin bir parçası değildir, bu nedenle yükleyicideki isteğe bağlı bileşenlerden seçilmelidir. Bkz. [MFC MBCS dll eklentisi](../mfc/mfc-mbcs-dll-add-on.md). Bu yazılımı indirdikten ve Visual Studio 'yu yeniden başlattıktan sonra, MFC 'nin MBCS sürümünü derleyip bağlayabilirsiniz, ancak Visual Studio 2013 veya 2015 kullanıyorsanız MBCS ile ilgili uyarıların kurtulenmesini sağlamak için önceden tanımlanmış NO_WARN_MBCS_MFC_DEPRECATION listesine de eklemeniz gerekir proje özelliklerinin ön **işlemci** bölümünde veya *stbafx. h* üstbilgi dosyasının veya diğer ortak üstbilgi dosyasının başlangıcında bulunan makrolar.
 
 Artık bazı bağlayıcı hatalarıyla karşılaştık.
 

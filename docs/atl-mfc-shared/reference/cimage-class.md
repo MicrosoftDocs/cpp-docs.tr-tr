@@ -1,6 +1,6 @@
 ---
 title: CImage sınıfı
-ms.date: 02/01/2018
+ms.date: 08/19/2019
 f1_keywords:
 - CImage
 - ATLIMAGE/ATL::CImage
@@ -54,12 +54,12 @@ helpviewer_keywords:
 - CImage class
 - transparent color
 ms.assetid: 52861e3d-bf7e-481f-a240-90e88f76c490
-ms.openlocfilehash: 6c651f160fdab582b769cf1764add2cc482745bf
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 3b278f37bbcbe2ee879d9c3d2837267fe31e57e2
+ms.sourcegitcommit: 9d4ffb8e6e0d70520a1e1a77805785878d445b8a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69491324"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69630724"
 ---
 # <a name="cimage-class"></a>CImage sınıfı
 
@@ -193,9 +193,9 @@ Aracılığıyla `CImage`, bir DIB 'nin gerçek bit bitlerini erişiminiz vardı
 MFC veya ATL `CImage` 'den kullanabilirsiniz.
 
 > [!NOTE]
-> Kullanarak `CImage`bir proje oluşturduğunuzda, dahil `atlimage.h`etmeden önce tanımlamanız `CString` gerekir. Projeniz MFC olmadan atl kullanıyorsa, dahil `atlstr.h` `atlimage.h`etmeden önce dahil edin. Projeniz MFC kullanıyorsa (veya MFC desteği olan bir ATL projem ise), dahil `afxstr.h` `atlimage.h`etmeden önce dahil edin.<br/>
+> Kullanarak `CImage`bir proje oluşturduğunuzda, *atlımage. h*dahil etmeden önce tanımlamanız `CString` gerekir. Projeniz MFC olmadan ATL kullanıyorsa, *atlımage. h*dahil etmeden önce *atlstr. h* ekleyin. Projeniz MFC kullanıyorsa (veya MFC desteği olan bir ATL projem ise), *atlımage. h*eklemeden önce *afxstr. h* 'yi dahil edin.<br/>
 > <br/>
-> Benzer şekilde, eklemeden önce `atlimage.h` `atlimpl.cpp`dahil etmeniz gerekir. Bunu kolay bir şekilde gerçekleştirmek için `atlimage.h` ' e `stdafx.h`ekleyin.
+> Benzer şekilde, *atlımpl. cpp*dahil etmeden önce *atlımage. h* dahil etmeniz gerekir. Bunu kolayca başarmak için, *pch. h* 'Nize (Visual Studio 2017 ve önceki sürümlerde*stdadfx. h* ) *atlımage.* h ' yi ekleyin.
 
 ## <a name="requirements"></a>Gereksinimler
 

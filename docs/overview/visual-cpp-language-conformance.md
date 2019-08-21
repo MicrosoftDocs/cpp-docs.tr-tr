@@ -5,12 +5,12 @@ ms.technology: cpp-language
 ms.assetid: 475da6e9-0d78-4b4e-bd23-f41c406c4efe
 author: corob-msft
 ms.author: corob
-ms.openlocfilehash: 15226d41991d5a09d104d2edbfb3dbf2f7432b65
-ms.sourcegitcommit: db1ed91fa7451ade91c3fb76bc7a2b857f8a5eef
+ms.openlocfilehash: 17ed76551102653e2f05e9731834f4787198db49
+ms.sourcegitcommit: 9d4ffb8e6e0d70520a1e1a77805785878d445b8a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68980524"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69631641"
 ---
 # <a name="microsoft-c-language-conformance-table"></a>Microsoft C++ dil uygunluk tablosu
 
@@ -348,7 +348,7 @@ __VS 2019 16,1__ , Visual Studio 2019 sürüm 16,1 ' te desteklenen özellikleri
 
 <a name="note_C"></a>__C__ derleyicinin C99 Önişlemci kuralları için destek, Visual Studio 2017 içinde eksik. Bağımsız değişken olmayan makrolar desteklenir, ancak Önişlemci davranışında birçok hata vardır. Ön işlemci overhauling ve bu değişiklikleri [/Permissive-](../build/reference/permissive-standards-conformance.md) modunun kısa bir süre içinde experimentally alacak.
 
-<a name="note_D"></a>__D__ [/std: c++ 14](../build/reference/std-specify-language-standard-version.md) altında gizlenecek bir uyarı ile C4984.
+<a name="note_D"></a>__D__ [/std: c++ 14](../build/reference/std-specify-language-standard-version.md) altında gizlenecek bir uyarı ile [C4984](../error-messages/compiler-warnings/compiler-warning-c4984.md).
 
 <a name="note_E"></a> Bu, bir önceki sürümle uyumsuz olan, oluşturmaksızın desteği, `std::experimental` hata düzeltmeleri ve standart-gerekli davranıştaki değişiklikler tarafından ortaya geçen tamamen yeni bir uygulama. Şu anda dosya \<sistemi > de dahil olmak `std::filesystem` üzere, New `std::experimental::filesystem`ve Previous ve \<deneysel/FileSystem > dahil olmak üzere yalnızca eski deneysel uygulamayı sağlar. Deneysel uygulama, kitaplıkların sonraki ABı-kırılımı sürümünde KALDıRıLACAK.
 

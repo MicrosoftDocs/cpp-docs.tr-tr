@@ -1,44 +1,40 @@
 ---
-title: Windows Vista Ortak Denetimleri için Derleme Gereksinimleri
-ms.date: 11/04/2016
+title: Windows ortak denetimleri için derleme gereksinimleri
+ms.date: 08/19/2019
 helpviewer_keywords:
-- common controls (MFC), build requirements
-- common controls (MFC)
+- Common Controls (MFC), build requirements
+- Common Controls (MFC)
 ms.assetid: 025f7d55-55a2-4dcd-8f62-02424e3dcc04
-ms.openlocfilehash: 1a2e79d91a41ea178eeb6f74ec7fa7b22588b277
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9ea90f95ba8e704cba5b22c5e7338659f0c5f033
+ms.sourcegitcommit: 9d4ffb8e6e0d70520a1e1a77805785878d445b8a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62386258"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69630854"
 ---
-# <a name="build-requirements-for-windows-vista-common-controls"></a>Windows Vista Ortak Denetimleri için Derleme Gereksinimleri
+# <a name="build-requirements-for-windows-common-controls"></a>Windows ortak denetimleri için derleme gereksinimleri
 
-Microsoft Foundation Class (MFC) kitaplığı, Windows ortak denetimleri sürüm 6.1 destekler. Windows Vista ortak denetimleri dahildir ve Kitaplığı Visual Studio SDK içinde dahil edilir. Kitaplığı, mevcut sınıfları ve yeni sınıflar geliştiren yeni ve Windows Vista ortak denetimleri destekleyen yöntemleri sağlar. Uygulamanızı oluştururken, aşağıdaki bölümlerde açıklanan derleme ve Geçiş gereksinimleri karşılamalıdır.
+Microsoft Foundation Class (MFC) kitaplığı [Windows ortak denetimlerini](/windows/win32/controls/common-controls-intro)destekler. Ortak denetimler Windows 'a dahil edilmiştir ve kitaplık Visual Studio 'Ya dahildir. MFC kitaplığı, var olan sınıfları ve Windows ortak denetimlerini destekleyen ek sınıfları ve yöntemleri geliştiren yeni yöntemler sağlar. Uygulamanızı yapılandırdığınızda, aşağıdaki bölümlerde açıklanan derleme ve geçiş gereksinimlerini izlemelisiniz.
 
 ## <a name="compilation-requirements"></a>Derleme gereksinimleri
 
 ### <a name="supported-versions"></a>Desteklenen sürümler
 
-Bazı yeni sınıflar ve yöntemler yalnızca Windows Vista desteği ve daha sonra while diğer yöntemleri, önceki işletim sistemlerini de destekler. Bir Not `Requirements` her yöntemi konudaki zaman gereken en düşük işletim sistemi Windows Vista belirtir.
-
-Bilgisayarınızı Windows Vista çalışmıyor olsa bile bilgisayarınızda sürüm 6.1 MFC üstbilgi dosyalarındaki varsa, Windows Vista üzerinde çalışacak bir MFC uygulaması oluşturabilirsiniz. Ancak, Windows Vista için özellikle tasarlanmış ortak denetimleri, yalnızca bu sistemde çalışan ve önceki işletim sistemleri tarafından göz ardı edilir.
+MFC ortak denetimlerin tüm sürümlerini destekler. Windows ortak denetimler sürümleri hakkında daha fazla bilgi için bkz. [ortak denetim sürümleri](/windows/win32/controls/common-control-versions).
 
 ### <a name="supported-character-sets"></a>Desteklenen karakter kümeleri
 
-Yeni Windows ortak denetimleri, yalnızca Unicode karakter kümesi ve ANSI karakter kümesini destekler. Uygulamanızı komut satırında, aşağıdaki tanımla her ikisi de kullanın (/ D) derleyici seçenekleri Unicode temel olarak belirtmek için karakter kümesi:
+Windows ortak denetimleri, ANSI karakter kümesini değil yalnızca Unicode karakter kümesini destekler. Uygulamanızı komut satırında oluşturursanız, temel alınan karakter kümesi olarak Unicode belirtmek için aşağıdaki define (/D) derleyici seçeneklerini kullanın:
 
 ```
 /D_UNICODE /DUNICODE
 ```
 
-Visual Studio tümleşik geliştirme ortamında (IDE) uygulamanızı belirtebilmeniz **Unicode karakter kümesi** seçeneği **karakter kümesi** özelliğinde **genel**  Proje Özellikleri'nin düğümü.
-
-Çeşitli MFC yöntemler ANSI sürümü kullanımdan kaldırıldı Windows ortak denetimleri sürüm 6.1 başlatılıyor. Daha fazla bilgi için [kullanım dışı ANSI API'ları](../mfc/deprecated-ansi-apis.md).
+Uygulamanızı Visual Studio tümleşik geliştirme ortamında (IDE) oluşturursanız, proje özelliklerinin **genel** düğümündeki **karakter kümesi** özelliğinin **Unicode karakter kümesi** seçeneğini belirleyin.
 
 ## <a name="migration-requirements"></a>Geçiş gereksinimleri
 
-Windows ortak denetimleri sürüm 6.1 kullanan yeni bir MFC uygulaması oluşturmak için Visual Studio IDE kullanırsanız, IDE uygun bir bildirimi otomatik olarak bildirir. Ancak, Visual Studio'nun önceki bir sürümden varolan bir MFC uygulamasına geçirme ve yeni ortak denetimleri kullanmak istediğiniz, IDE otomatik olarak uygulamanızı yükseltmek için bildirim bilgileri sağlamaz. Bunun yerine, el ile aşağıdaki kaynak kodunda eklemeniz gerekir, **stdafx.h** dosyası:
+Windows ortak denetimleri kullanan yeni bir MFC uygulaması oluşturmak için Visual Studio IDE 'yi kullanırsanız, IDE otomatik olarak uygun bir bildirim bildirir. Ancak, mevcut bir MFC uygulamasını Visual Studio 2005 veya önceki bir sürümden geçirirseniz ve ortak denetimleri kullanmak istiyorsanız, IDE uygulamanızı yükseltmek için bildirim bilgilerini otomatik olarak sağlamaz. Bunun yerine, aşağıdaki kaynak kodu önceden derlenmiş üstbilgi dosyanıza el ile eklemeniz gerekir:
 
 ```
 #ifdef UNICODE

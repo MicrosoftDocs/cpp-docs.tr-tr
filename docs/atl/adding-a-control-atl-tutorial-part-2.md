@@ -1,120 +1,120 @@
 ---
 title: Denetim Ekleme (ATL Eğitmeni, Bölüm 2)
 ms.custom: get-started-article
-ms.date: 09/26/2018
+ms.date: 08/19/2019
 ms.assetid: c9575a75-1064-41f1-9697-7aada560c669
-ms.openlocfilehash: 53f38d63a44328bf014f04635a24989a875ddf1e
-ms.sourcegitcommit: 6cf0c67acce633b07ff31b56cebd5de3218fd733
+ms.openlocfilehash: b7952f42b24c4211a2c44ea71fd17e4f65c3421a
+ms.sourcegitcommit: 9d4ffb8e6e0d70520a1e1a77805785878d445b8a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "67344323"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69630707"
 ---
 # <a name="adding-a-control-atl-tutorial-part-2"></a>Denetim Ekleme (ATL Eğitmeni, Bölüm 2)
 
-Bu adımda, projenize bir denetim ekleyin, derleyin ve bir Web sayfası üzerinde sınarsınız.
+Bu adımda projenize bir denetim ekler, derleyebilir ve bir Web sayfasında test edersiniz.
 
 ## <a name="procedures"></a>Yordamlar
 
-### <a name="to-add-an-object-to-an-atl-project"></a>ATL projesine nesne eklemek için
+### <a name="to-add-an-object-to-an-atl-project"></a>ATL projesine bir nesne eklemek için
 
-1. İçinde **Çözüm Gezgini**, sağ `Polygon` proje.
+1. **Çözüm Gezgini**, `Polygon` projeye sağ tıklayın.
 
-1. İşaret **Ekle** kısayol menüsüne ve ardından şirket **yeni öğe** alt menüsü.
+1. Kısayol menüsünde **Ekle** ' nin üzerine gelin ve alt menüdeki **Yeni öğe** ' ye tıklayın.
 
-    **Yeni Öğe Ekle** iletişim kutusu görünür. Farlı nesne kategorileri soldaki ağaç yapısında listelenmiştir.
+    **Yeni Öğe Ekle** iletişim kutusu görünür. Farklı nesne kategorileri soldaki ağaç yapısında listelenir.
 
-1. Tıklayın **ATL** klasör.
+1. **ATL** klasörünü tıklatın.
 
-1. Sağdaki şablonlar listesinden seçin **ATL denetimi**. **Ekle**'yi tıklatın. **ATL denetimi** Sihirbazı açılır ve denetimi yapılandırabilirsiniz.
+1. Sağdaki şablonlar listesinden **ATL denetimi**' ni seçin. **Ekle**'yi tıklatın. **Atl Denetim** Sihirbazı açılır ve denetimi yapılandırabilirsiniz.
 
-1. Tür `PolyCtl` kısa bir ad ve diğer alanları otomatik olarak tamamlanacağını unutmayın. Tıklamayın **son** henüz, çünkü daha fazla bazı değişiklikler yapmanız gerekir.
+1. Kısa `PolyCtl` ad olarak yazın ve diğer alanların otomatik olarak tamamlandığını unutmayın. Daha fazla değişiklik yapmanız gerektiğinden, henüz **son** ' a tıklamayın.
 
-**ATL denetimi** sihirbazın **adları** sayfası aşağıdaki alanları içerir:
+**Atl Denetim** Sihirbazı 'nın **adlar** sayfası aşağıdaki alanları içerir:
 
 |Alan|İçindekiler|
 |-----------|--------------|
 |**Kısa ad**|Denetim için girdiğiniz ad.|
-|**Sınıfı**|Denetimi uygulamak için oluşturulan C++ sınıfı adı.|
-|**.h dosyası**|C++ sınıfının tanımını içerecek şekilde oluşturulan dosya.|
-|**.cpp dosyası**|C++ sınıfının uygulaması içerecek şekilde oluşturulan dosya.|
-|**Coclass'ı**|Bu denetim için bileşen sınıfının adı.|
-|**Arabirimi**|Denetimin özel yöntemleri ve özellikleri gerçekleştireceksiniz arabirimin adı.|
+|**Sınıfı**|Denetimi C++ uygulamak için oluşturulan sınıf adı.|
+|**. h dosyası**|C++ Sınıfının tanımını içerecek şekilde oluşturulan dosya.|
+|**. cpp dosyası**|C++ Sınıfının uygulamasını içerecek şekilde oluşturulan dosya.|
+|**CoClass**|Bu denetim için bileşen sınıfının adı.|
+|**Arabirimi**|Denetimin özel yöntemlerini ve özelliklerini uygulayamayacağı arabirimin adı.|
 |**Tür**|Denetim için bir açıklama.|
-|**ProgID**|Denetimin CLSID'sini aramak için kullanılabilecek okunabilir ad.|
+|**ProgID**|Denetimin CLSID 'sini aramak için kullanılabilecek okunabilir ad.|
 
-Birkaç ek ayar değişti, içinde bulabilirsiniz **ATL denetimi** Sihirbazı.
+**Atl Denetim** Sihirbazı 'nda birkaç ek ayar değiştirilmesi gerektiğini göreceksiniz.
 
 ### <a name="to-enable-support-for-rich-error-information-and-connection-points"></a>Zengin hata bilgileri ve bağlantı noktaları desteğini etkinleştirmek için
 
-1. Tıklayın **seçenekleri** açmak için **seçenekleri** sayfası.
+1. Seçenekler sayfasını açmak için **Seçenekler** ' e tıklayın.
 
-1. Seçin **bağlantı noktaları** onay kutusu. Bu seçenek IDL dosyasına giden bir arabirim için destek oluşturur.
+1. **Bağlantı noktaları** onay kutusunu seçin. Bu seçenek, IDL dosyasındaki bir giden arabirim için destek oluşturur.
 
-Denetimin işlevlerini genişletmek için arabirimleri de ekleyebilirsiniz.
+Ayrıca denetim işlevlerini genişletmek için arabirimler ekleyebilirsiniz.
 
-### <a name="to-extend-the-controls-functionality"></a>Denetimin işlevlerini genişletmek için
+### <a name="to-extend-the-controls-functionality"></a>Denetimin işlevselliğini genişletmek için
 
-1. Tıklayın **arabirimleri** açmak için **arabirimleri** sayfası.
+1. Arabirimler sayfasını açmak için **arabirimler** ' e tıklayın.
 
-1. Seçin `IProvideClassInfo2` tıklatıp **yukarı** taşımak için ok **desteklenen** listesi.
+1. Yukarı `IProvideClassInfo2` oku seçin ve **desteklenen** listeye taşımak için **yukarı** okuna tıklayın.
 
-1. Seçin `ISpecifyPropertyPages` tıklatıp **yukarı** taşımak için ok **desteklenen** listesi.
+1. Yukarı `ISpecifyPropertyPages` oku seçin ve **desteklenen** listeye taşımak için **yukarı** okuna tıklayın.
 
-Denetimi hale getirebilirsiniz *Insertable*, Excel veya Word gibi katıştırılmış nesneleri destekleyen uygulamalar içine gömülebilir anlamına gelir.
+Ayrıca, denetimin *eklenebilir*olmasını sağlayabilirsiniz, bu da Excel veya Word gibi katıştırılmış nesneleri destekleyen uygulamalara katıştırılır.
 
-### <a name="to-make-the-control-insertable"></a>Denetimin eklenebilir olmasını sağlamak için
+### <a name="to-make-the-control-insertable"></a>Denetimi eklenebilir hale getirmek için
 
-1. Tıklayın **Görünüm** açmak için **Görünüm** sayfası.
+1. Görünüm sayfasını açmak için **Görünüm** ' e tıklayın.
 
-1. Seçin **Insertable** onay kutusu.
+1. **Insertable** onay kutusunu seçin.
 
-Nesne tarafından görüntülenen çokgenin eklemek zorunda bir dolgu rengi düz olacaktır bir `Fill Color` stok özelliği.
+Nesne tarafından görünen Çokgen düz bir Fill rengine sahip olacaktır, bu nedenle bir `Fill Color` stok özelliği eklemeniz gerekir.
 
-### <a name="to-add-a-fill-color-stock-property-and-create-the-control"></a>Dolgu rengi stok özelliği eklemek ve denetimi oluşturmak için
+### <a name="to-add-a-fill-color-stock-property-and-create-the-control"></a>Bir doldur rengi stok özelliği eklemek ve denetimi oluşturmak için
 
-1. Tıklayın **stok özellikleri** açmak için **stok özellikleri** sayfası.
+1. Hisse senedi özellikleri sayfasını açmak için **Stok özellikleri** ' ne tıklayın.
 
-1. Altında **desteklenmiyor**, olası stok özellikleri listesinde aşağıya ilerleyin. Seçin `Fill Color` tıklatıp **yukarı** taşımak için ok **desteklenen** listesi.
+1. **Desteklenmediğinden**, olası stok özellikleri listesini aşağı kaydırın. Yukarı `Fill Color` oku seçin ve **desteklenen** listeye taşımak için **yukarı** okuna tıklayın.
 
 1. Seçin **son**.
 
-Sihirbaz denetim oluşturduğundan, birkaç kod değişiklikleri ve dosya ekleri oluşur. Aşağıdaki dosyalar oluşturulur:
+Sihirbaz denetimi oluşturduğunda, birkaç kod değişikliği ve dosya eklemeleri oluşur. Aşağıdaki dosyalar oluşturulur:
 
 |Dosya|Açıklama|
 |----------|-----------------|
-|PolyCtl.h|C++ sınıfının uygulaması çoğunu içeren `CPolyCtl`.|
-|PolyCtl.cpp|Kalan bölümlerini içerir `CPolyCtl`.|
-|PolyCtl.rgs|Denetimi kaydetmek için kullanılan kayıt betiği içeren bir metin dosyası.|
-|Polyctl.htm dosyasını|Yeni oluşturulan denetime başvuru içeren bir Web sayfası.|
+|PolyCtl. h|C++ Sınıfının`CPolyCtl`uygulamanın çoğunu içerir.|
+|PolyCtl. cpp|Öğesinin `CPolyCtl`kalan bölümlerini içerir.|
+|PolyCtl.rgs|Denetimi kaydetmek için kullanılan kayıt defteri betiğini içeren bir metin dosyası.|
+|PolyCtl. htm|Yeni oluşturulan denetime başvuru içeren bir Web sayfası.|
 
-Sihirbaz, aşağıdaki kod değişiklikleri de yapar:
+Sihirbaz ayrıca aşağıdaki kod değişikliklerini yapar:
 
-- Ekler bir `#include` ATL dahil etmek için stdafx.h ve stdafx.cpp dosyalarına deyimi denetimleri desteklemek için gerekli dosyaları.
+- Denetimleri desteklemek `#include` için gereken ATL dosyalarını dahil etmek için önceden derlenmiş üstbilgi dosyalarına bir ifade ekler.
 
-- Yeni denetimin ayrıntılarını içerecek şekilde Polygon.idl değiştirir.
+- Yeni denetimin ayrıntılarını dahil etmek için Çokgen. IDL ' i değiştirir.
 
-- Polygon.cpp nesne eşlemesine yeni denetim ekler.
+- Çokgen. cpp içindeki nesne eşlemesine yeni denetim ekler.
 
-Şimdi nasıl çalıştığını görmek için denetimi yapılandırabilirsiniz.
+Artık bu denetimi bir eylemde görmek için oluşturabilirsiniz.
 
-## <a name="building-and-testing-the-control"></a>Derleme ve denetimini test etme
+## <a name="building-and-testing-the-control"></a>Denetim oluşturma ve test etme
 
-### <a name="to-build-and-test-the-control"></a>Yapı ve denetim test etmek için
+### <a name="to-build-and-test-the-control"></a>Denetimi derlemek ve test etmek için
 
-1. Üzerinde **derleme** menüsünde tıklatın **yapı çokgeni**.
+1. **Yapı** menüsünde, **Yapı Çokgen**' e tıklayın.
 
-    Denetim yapıyı tamamlandıktan sonra polyctl.htm dosyasını sağ tıklatın **Çözüm Gezgini** seçip **tarayıcıda görüntüle**. Denetimi içeren HTML Web sayfası görüntülenir. Başlığı "ATL 8.0 test sayfası PolyCtl nesnesi için" ve PolyCtl metin denetiminizin içeren bir sayfa görmeniz gerekir.
-
-> [!NOTE]
-> Denetim görünür durumda değilse bazı tarayıcılar ayarları düzeltmeleri ActiveX denetimlerini çalıştırmak için gerekli olduğunu bilirsiniz. ActiveX denetimleri etkinleştirme hakkında tarayıcının belgelerine bakın.
+    Denetim oluşturmayı tamamladıktan sonra, **Çözüm Gezgini** Içinde PolyCtl. htm dosyasına sağ tıklayın ve **Tarayıcıda görüntüle**' yi seçin. Denetimi içeren HTML Web sayfası görüntülenir. "PolyCtl nesnesi için ATL 8,0 test sayfası" başlığına ve denetiminiz, PolyCtl metin başlıklı bir sayfa görmeniz gerekir.
 
 > [!NOTE]
-> DLL dosyası oluşturulamıyor bir hata iletisi alırsanız, bu öğreticiyi tamamlarken, PolyCtl.htm dosyasını ve ActiveX denetimi Test kapsayıcısını kapatın ve çözümü yeniden oluşturun. DLL'yi yine oluşturamazsanız, bilgisayarı yeniden başlatmanız veya Terminal Hizmetleri'ni kullanıyorsanız, oturumu kapatın.
+> Denetim görünür değilse, bazı tarayıcıların ActiveX denetimlerini çalıştırmak için ayar ayarlamaları gerektirdiğini öğrenin. ActiveX denetimlerinin nasıl etkinleştirileceği hakkında daha fazla bilgi için tarayıcıya bakın.
 
-Ardından, denetime özel bir özellik ekleyeceksiniz.
+> [!NOTE]
+> Bu öğreticiyi tamamlarken, DLL dosyasının oluşturuolamayacağını belirten bir hata iletisi alırsanız, PolyCtl. htm dosyasını ve ActiveX denetimi test kapsayıcısını kapatın ve çözümü yeniden derleyin. Hala DLL 'yi oluşturamıyoruz, bilgisayarı yeniden başlatın veya Terminal Hizmetleri kullanıyorsanız oturumu kapatın.
 
-[1. adım dön](../atl/creating-the-project-atl-tutorial-part-1.md) &#124; [açın 3. adım](../atl/adding-a-property-to-the-control-atl-tutorial-part-3.md)
+Sonra, denetime özel bir özellik ekleyeceksiniz.
+
+[1. adıma dön](../atl/creating-the-project-atl-tutorial-part-1.md) &#124; [Adım 3 ' e](../atl/adding-a-property-to-the-control-atl-tutorial-part-3.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -153,12 +153,12 @@ helpviewer_keywords:
 - C5105
 - C5106
 - C5107
-ms.openlocfilehash: 518efdd74a90198818538c1548adb2b7ff37290c
-ms.sourcegitcommit: c3bf94210bdb73be80527166264d49e33784152c
+ms.openlocfilehash: ae73d4ba503dfbbc27f91040c31beb91da3b7e54
+ms.sourcegitcommit: 9d4ffb8e6e0d70520a1e1a77805785878d445b8a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68821127"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69631544"
 ---
 # <a name="compiler-warnings-c4800-through-c5999"></a>C4800 ile C5999 Arasındaki Derleyici Uyarıları
 
@@ -266,7 +266,8 @@ Belgenin bu bölümündeki makaleler, derleyici tarafından oluşturulan uyarı 
 |Derleyici Uyarısı (düzey 1) C4973|'*symbol*': kullanım dışı olarak işaretlendi|
 |Derleyici Uyarısı (düzey 1) C4974|'*symbol*': kullanım dışı olarak işaretlendi|
 |Derleyici Uyarısı (düzey 3) C4981|Warbird: __forceinline olarak işaretlenen '*Function*' işlevi satır içine alınmadı çünkü özel durum semantiği içeriyor|
-|Derleyici Uyarısı (düzey 3) C4985|sembol adı ': önceki bildirimde öznitelikler yok.|
+|[Derleyici Uyarısı C4984](compiler-warning-c4984.md)|' if constexpr ' bir C++ 17 dil uzantısıdır|
+|Derleyici Uyarısı (düzey 3) C4985|'*symbol_name*': önceki bildirimde öznitelikler yok.|
 |[Derleyici Uyarısı C4986](compiler-warning-c4986.md)|'*declaration*': özel durum belirtimi önceki bildirimle eşleşmiyor|
 |Derleyici Uyarısı (düzey 4) C4987|standart olmayan uzantı kullanıldı: 'throw (...)'|
 |Derleyici Uyarısı (düzey 4) C4988|'*Variable*': değişken sınıf/işlev kapsamının dışında bildirilmiştir|

@@ -1,6 +1,6 @@
 ---
 title: CComModule sınıfı
-ms.date: 11/04/2016
+ms.date: 08/19/2019
 f1_keywords:
 - CComModule
 - ATLBASE/ATL::CComModule
@@ -31,12 +31,12 @@ helpviewer_keywords:
 - CComModule class
 - DLL modules [C++], ATL
 ms.assetid: f5face2c-8fd8-40e6-9ec3-54ab74701769
-ms.openlocfilehash: 53138081a6d712f775a2cc8f1e6905c45d95d34d
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 482f29bae28841ab40ca8a8f80ab7f0df42ddc8b
+ms.sourcegitcommit: 9d4ffb8e6e0d70520a1e1a77805785878d445b8a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69497116"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69630652"
 ---
 # <a name="ccommodule-class"></a>CComModule sınıfı
 
@@ -681,7 +681,7 @@ Standart bir HRESULT değeri.
 
 UpdateRegistryFromResourceD`UpdateRegistryFromResourceS` benzeri [](#updateregistryfromresourced) , atl kayıt defteri bileşeni (kaydedici) için statik bir bağlantı oluşturur.
 
-`UpdateRegistryFromResourceS`, nesne eşlemeniz işlendiğinde, stbafx. h 'nize eklediğiniz `#define _ATL_STATIC_REGISTRY` zaman otomatik olarak çağrılır.
+`UpdateRegistryFromResourceS`, nesne haritanız işlendiğinde otomatik olarak çağrılacaktır, bu, `#define _ATL_STATIC_REGISTRY` *pch. h* 'nize (Visual Studio 2017 ve önceki sürümlerde*stdadfx. h* ) eklemenizi sağlar.
 
 > [!NOTE]
 >  Çalışma zamanında değiştirme değerlerini yerine koymak için [DECLARE_REGISTRY_RESOURCE](registry-macros.md#declare_registry_resource) veya [DECLARE_REGISTRY_RESOURCEID](registry-macros.md#declare_registry_resourceid) makrosunu belirtmeyin. Bunun yerine, her girdinin çalışma `_ATL_REGMAP_ENTRIES` zamanında yer tutucuyu değiştirecek bir değerle eşleştirilmiş bir değişken yer tutucusu içerdiği bir yapı dizisi oluşturun. Sonra, `UpdateRegistryFromResourceS` *pMapEntries* parametresi için diziyi geçirerek çağırın. Bu, `_ATL_REGMAP_ENTRIES` yapılardaki tüm değiştirme değerlerini kayıt sahibinin değiştirme eşlemesine ekler.

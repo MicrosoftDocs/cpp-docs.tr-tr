@@ -1,34 +1,34 @@
 ---
 title: Önemli hata C1010
-ms.date: 11/04/2016
+ms.date: 08/19/2019
 f1_keywords:
 - C1010
 helpviewer_keywords:
 - C1010
 ms.assetid: dfd035f1-a7a2-40bc-bc92-dc4d7f456767
-ms.openlocfilehash: 204c7ef94d82513338f6635ec9eb22f26fc090a7
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: 35b0f60f7eb3be887598e7ffaf3e3eae74aefcff
+ms.sourcegitcommit: 9d4ffb8e6e0d70520a1e1a77805785878d445b8a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65448026"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69630795"
 ---
 # <a name="fatal-error-c1010"></a>Önemli hata C1010
 
-Beklenmeyen için önceden derlenmiş üst bilgi arayan sırasında dosya sonu. Eklemeyi mi unuttunuz ' #include ' kaynağınız için?
+önceden derlenmiş üst bilgi aranırken beklenmeyen dosya sonu. Kaynağınıza ' #include Name ' eklemeyi mi unuttunuz?
 
-Belirtilen bir dahil etme dosyasından [/Yu](../../build/reference/yu-use-precompiled-header-file.md) kaynak dosyasında listelenmeyen.  Bu seçenek çoğu Visual Studio varsayılan olarak etkin C++ proje türleri ve "stdafx.h" olan bu seçeneği tarafından belirtilen dosya varsayılan içerir.
+[/Yu](../../build/reference/yu-use-precompiled-header-file.md) ile belirtilen bir içerme dosyası kaynak dosyasında listelenmiyor.  Bu seçenek, çoğu Visual Studio C++ proje türlerinde varsayılan olarak etkindir ve *pch. h* (Visual Studio 2017 ve önceki sürümlerde*stdadfx. h* ), bu seçenekle belirtilen varsayılan içerme dosyasıdır.
 
-Visual Studio ortamında, bu hatayı gidermek için aşağıdaki yöntemlerden birini kullanın:
+Visual Studio ortamında, bu hatayı çözmek için aşağıdaki yöntemlerden birini kullanın:
 
-- Projenizde önceden derlenmiş üst bilgiler kullanmayın verilirse **önceden derlenmiş üst bilgi Oluştur/Kullan** özelliği için kaynak dosyalarının **kullanarak önceden derlenmiş üstbilgi**. Bu derleyici seçeneğini ayarlamak için aşağıdaki adımları izleyin:
+- Projenizde önceden derlenmiş üstbilgiler kullanmıyorsanız, kaynak dosyaların önceden derlenmiş üst **bilgi oluştur/kullan** özelliğini **önceden derlenmiş üst bilgileri kullanmadan**ayarlayın. Bu derleyici seçeneğini ayarlamak için şu adımları izleyin:
 
-   1. Çözüm Gezgini bölmesinde projenin proje adına sağ tıklayın ve ardından **özellikleri**.
+   1. Projenin Çözüm Gezgini bölmesinde, proje adına sağ tıklayın ve ardından **Özellikler**' e tıklayın.
 
-   1. Sol bölmede **C/C++** klasör.
+   1. Sol bölmede **C/C++**  klasörüne tıklayın.
 
-   1. Tıklayın **önceden derlenmiş üst bilgiler** düğümü.
+   1. **Ön derlenmiş üstbilgiler** düğümüne tıklayın.
 
-   1. Sağ bölmede **önceden derlenmiş üst bilgi Oluştur/Kullan**ve ardından **kullanarak önceden derlenmiş üstbilgi**.
+   1. Sağ bölmede, **önceden derlenmiş üst bilgi oluştur/kullan**' a tıklayın ve ardından **önceden derlenmiş üst bilgileri**kullanmayan ' e tıklayın.
 
-- İstemeden silinmiş, yeniden adlandırılmış veya üst bilgi dosyası kaldırıldı emin olun (varsayılan olarak, stdafx.h) geçerli projeden. Bu dosya ayrıca herhangi bir kod kullanarak kaynak dosyalarında önce eklenmesi gerekir **#include "stdafx.h"**. (Bu başlık dosyasının belirtilen **dosya üzerinden PCH Oluştur/Kullan** proje özelliği)
+- (Varsayılan olarak, stdadfx. h) üst bilgi dosyasını güncel projeden yanlışlıkla sildiğinizden, yeniden adlandırdığınızdan veya çıkardığınızdan emin olun. Ayrıca, bu dosyanın **"stbafx. h" #include**kullanarak kaynak dosyalarınızda diğer koddan önce bulunması gerekir. (Bu üstbilgi dosyası dosya projesi özelliği **aracılığıyla PCH oluştur/kullan** olarak belirtilir)

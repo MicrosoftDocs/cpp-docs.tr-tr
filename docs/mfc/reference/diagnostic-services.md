@@ -18,12 +18,12 @@ helpviewer_keywords:
 - diagnostics [MFC], diagnostic services
 - diagnostic functions and variables [MFC]
 ms.assetid: 8d78454f-9fae-49c2-88c9-d3fabd5393e8
-ms.openlocfilehash: 0d3b586c4c50be311ab1d978a91ba7aa41e3c9a9
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 4cf3f53d1e238218b4eb892dc92e3c823dcc1296
+ms.sourcegitcommit: 9d4ffb8e6e0d70520a1e1a77805785878d445b8a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69502300"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69630511"
 ---
 # <a name="diagnostic-services"></a>Tanı Hizmetleri
 
@@ -106,7 +106,7 @@ _AFX_SECURE_NO_WARNINGS
 Bu kod örneği, _AFX_SECURE_NO_UYARıLAR tanımlanmadığında derleyici uyarısına neden olur.
 
 ```cpp
-// define this before including any afx files in stdafx.h
+// define this before including any afx files in *pch.h* (*stdafx.h* in Visual Studio 2017 and earlier)
 #define _AFX_SECURE_NO_WARNINGS
 ```
 ```cpp

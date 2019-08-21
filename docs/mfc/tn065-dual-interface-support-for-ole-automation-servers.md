@@ -9,12 +9,12 @@ helpviewer_keywords:
 - ACDUAL sample [MFC]
 - Automation servers [MFC], dual-interface support
 ms.assetid: b5c8ed09-2f7f-483c-80fc-2a47ad896063
-ms.openlocfilehash: afcbfd643d8b931e61b0f011b66482be5b2bcc82
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 1508b5219f7bb7fd2e9c9a56c42c30bb99686804
+ms.sourcegitcommit: 9d4ffb8e6e0d70520a1e1a77805785878d445b8a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69511003"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69630386"
 ---
 # <a name="tn065-dual-interface-support-for-ole-automation-servers"></a>TN065: OLE Otomasyonu sunucuları için çift arabirim desteği
 
@@ -267,7 +267,7 @@ Bir projenin yapı ayarlarını değiştirmek için, tür kitaplığı yeniden o
 
 MkTypLib tarafından oluşturulan üstbilgi dosyasındaki **UUID** tanımlarını projenize eklemek için:
 
-1. MkTypLib tarafından oluşturulan üst bilgi dosyasını, Standart başlık dosyası olan STDADFX ' de yer alır. Olsun.
+1. MkTypLib tarafından oluşturulan üst bilgi dosyasını standart bir şekilde, *stbafx. h*başlık dosyasına ekleyin.
 
 2. Yeni bir dosya, ıNITIıDS oluşturun. CPP ve projenize ekleyin. Bu dosyada, OLE2 dahil olmak üzere MkTypLib tarafından oluşturulan üst bilgi dosyanızı ekleyin. H ve ıNITGUID. Olsun
 

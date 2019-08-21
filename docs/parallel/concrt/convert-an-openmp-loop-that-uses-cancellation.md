@@ -1,26 +1,26 @@
 ---
-title: 'Nasıl yapılır: Eşzamanlılık Çalışma zamanı kullanmak için İptali kullanan bir OpenMP döngüsünü dönüştürme'
+title: 'Nasıl yapılır: Eşzamanlılık Çalışma Zamanı kullanmak için Iptal kullanan bir OpenMP döngüsünü dönüştürme'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - converting from OpenMP to the Concurrency Runtime, cancellation
 - cancellation, converting from OpenMP to the Concurrency Runtime
 ms.assetid: 4b0b3c33-bfa9-4e96-ae08-aef245a39cbb
-ms.openlocfilehash: 618e93c18173bfe3e5f5b5f3058a8bb3d61e98ec
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: df55a58617b802f24e4caf13784ac080222b93bc
+ms.sourcegitcommit: 9d4ffb8e6e0d70520a1e1a77805785878d445b8a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62413950"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69631524"
 ---
-# <a name="how-to-convert-an-openmp-loop-that-uses-cancellation-to-use-the-concurrency-runtime"></a>Nasıl yapılır: Eşzamanlılık Çalışma zamanı kullanmak için İptali kullanan bir OpenMP döngüsünü dönüştürme
+# <a name="how-to-convert-an-openmp-loop-that-uses-cancellation-to-use-the-concurrency-runtime"></a>Nasıl yapılır: Eşzamanlılık Çalışma Zamanı kullanmak için Iptal kullanan bir OpenMP döngüsünü dönüştürme
 
-Tüm yinelemeler yürütülüp bazı paralel döngüler gerek yoktur. Örneğin, değer bulunduktan sonra bir değeri arar bir algoritma sonlandırabilirsiniz. OpenMP paralel bir döngüden mekanizması sağlamaz. Ancak, çözüm bulundu göstermek için döngü yinelemesi etkinleştirmek için bir Boole değeri ya da bayrağını kullanabilirsiniz. Eşzamanlılık Çalışma zamanı henüz başlamamış diğer görevleri iptal etmek bir görev sağlayan işlevselliği sağlar.
+Bazı paralel döngüler tüm yinelemelerin yürütülmesini gerektirmez. Örneğin, bir değer arayan bir algoritma, değer bulunduktan sonra sonlanacaktır. OpenMP, paralel bir döngüyü bölmek için bir mekanizma sağlamaz. Ancak, bir Boolean değeri veya bayrağını, çözümün bulunduğunu göstermek için bir döngü yinelemesi etkinleştirmek üzere kullanabilirsiniz. Eşzamanlılık Çalışma Zamanı, bir görevin henüz başlatılmamış diğer görevleri iptal etmesini sağlayan işlevler sağlar.
 
-Bu örnek bir OpenMP dönüştürülmesi gösterilmektedir [paralel](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md#parallel)[için](../../parallel/openmp/reference/for-openmp.md) döngü tüm yinelemeleri çalıştırmak eşzamanlılık çalışma zamanı iptal mekanizması kullanmak için gerekli değildir.
+Bu örnekte, tüm yinelemelerin Eşzamanlılık Çalışma Zamanı iptal mekanizmasını kullanmak üzere çalışması için gerekli olmayan bir OpenMP [Parallel](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md#parallel)[for](../../parallel/openmp/reference/for-openmp.md) döngüsünün nasıl dönüştürüleceği gösterilmektedir.
 
 ## <a name="example"></a>Örnek
 
-Bu örnek bir paralel sürümünü uygulamak için OpenMP hem de eşzamanlılık çalışma zamanı kullanan [std::any_of](../../standard-library/algorithm-functions.md#any_of) algoritması. Bu örnekte OpenMP sürümü, koşulun karşılanması tüm paralel döngü yinelemesi arasında koordine etmek için bir bayrak kullanır. Eşzamanlılık Çalışma zamanı sürümünü kullanan [CONCURRENCY::structured_task_group:: Cancel](reference/structured-task-group-class.md#cancel) koşul karşılandığında genel işlemi durdurmak için yöntemi.
+Bu örnek, [std:: any_of](../../standard-library/algorithm-functions.md#any_of) algoritmasının paralel bir sürümünü uygulamak Için hem OpenMP hem de eşzamanlılık çalışma zamanı kullanır. Bu örneğin OpenMP sürümü, koşulun karşılandığından tüm paralel döngü yinelemeleri arasında koordine etmek için bir bayrak kullanır. Eşzamanlılık Çalışma Zamanı kullanan sürüm, koşul karşılandığında genel işlemi durdurmak için [concurrency:: structured_task_group:: Cancel](reference/structured-task-group-class.md#cancel) yöntemini kullanır.
 
 [!code-cpp[concrt-openmp#2](../../parallel/concrt/codesnippet/cpp/convert-an-openmp-loop-that-uses-cancellation_1.cpp)]
 
@@ -33,19 +33,19 @@ Using the Concurrency Runtime...
 9114046 is in the array.
 ```
 
-OpenMP kullanan sürümünde, tüm döngü yinelemelerine yürütün, hatta bayrağı ayarlandığında. Bir görev alt görev için olsaydı, ayrıca, bayrağı da iptal iletişim kurmak için bu alt görevler tarafından kullanılabilmesini etmesi gerekir. Eşzamanlılık Çalışma zamanı içinde görev grubunu iptal edildiğinde, çalışma zamanı ağacının tümünü alt görevler de dahil olmak üzere iş iptal eder. [Concurrency::parallel_for_each](reference/concurrency-namespace-functions.md#parallel_for_each) algoritması, işi gerçekleştirmek için görevler kullanır. Bu nedenle, bir yineleme döngüsü kök görev iptal ettiğinde, hesaplama ağacının tümünü da iptal edildi. Bir iş ağacında iptal edildiğinde, çalışma zamanının yeni görevler başlamıyor. Ancak, çalışma zamanı tamamlanması zaten başlamış görevleri sağlar. Bu nedenle, durumunda, `parallel_for_each` algoritması, etkin döngü yinelemesi temiz kaynaklarını.
+, OpenMP kullanan sürümünde, işaret ayarlanmış olsa bile döngünün tüm yinelemeleri yürütülür. Ayrıca, bir görevin herhangi bir alt görevi varsa, iptal iletişim kurmak üzere bu alt görevler için de bayrağın kullanılabilir olması gerekir. Eşzamanlılık Çalışma Zamanı, bir görev grubu iptal edildiğinde, çalışma zamanı alt görevler de dahil olmak üzere tüm iş ağacını iptal eder. [Eşzamanlılık::p arallel_for_each](reference/concurrency-namespace-functions.md#parallel_for_each) algoritması, işleri gerçekleştirmek için görevleri kullanır. Bu nedenle, döngünün bir yinelemesi kök görevi iptal ettiğinde, tüm hesaplama ağacı da iptal edilir. Bir iş ağacı iptal edildiğinde, çalışma zamanı yeni görevleri başlatmaz. Ancak çalışma zamanı, zaten başlatılmış olan görevlerin çalışmasına izin verir. Bu nedenle, `parallel_for_each` algoritma söz konusu olduğunda, etkin döngü yinelemeleri kaynaklarını temizleyebilir.
 
-Bu örnekte her iki sürümünde de dizi değeri aramak için birden fazla kopyasını içeriyorsa döngü yinelemesi birden çok her aynı anda sonuç kümesi ve genel işlem iptal edebilirsiniz. Sorununuzu bir koşul karşılandığında iş, yalnızca bir görev gerçekleştiren gerektiriyorsa, bir eşitleme temel kritik bölümü gibi kullanabilirsiniz.
+Bu örneğin her iki sürümünde, dizi, arama yapılacak değerin birden fazla kopyasını içeriyorsa, birden çok döngü yinelemesi aynı anda sonucu ayarlayabilir ve genel işlemi iptal edebilir. Sorun, bir koşul karşılandığında yalnızca bir görevin iş gerçekleştirmesini gerektiriyorsa kritik bir bölüm gibi bir eşitleme temel alanı kullanabilirsiniz.
 
-Özel durum işleme kullanan PPL görevleri iptal etmek için de kullanabilirsiniz. İptal işlemleri hakkında daha fazla bilgi için bkz. [ppl'de iptal](cancellation-in-the-ppl.md).
+Ayrıca, PPL 'yi kullanan görevleri iptal etmek için özel durum işlemeyi da kullanabilirsiniz. İptal hakkında daha fazla bilgi için bkz. [PPL 'de iptal](cancellation-in-the-ppl.md).
 
-Hakkında daha fazla bilgi için `parallel_for_each` ve diğer paralel algoritmalar için bkz: [paralel algoritmalar](../../parallel/concrt/parallel-algorithms.md).
+Ve diğer paralel algoritmalar `parallel_for_each` hakkında daha fazla bilgi için bkz. [paralel algoritmalar](../../parallel/concrt/parallel-algorithms.md).
 
 ## <a name="compiling-the-code"></a>Kod Derleniyor
 
-Örnek kodu kopyalayın ve bir Visual Studio projesine yapıştırın veya adlı bir dosyaya yapıştırın `concrt-omp-parallel-any-of.cpp` ve Visual Studio komut istemi penceresinde aşağıdaki komutu çalıştırın.
+Örnek kodu kopyalayın ve bir Visual Studio projesine yapıştırın veya adlandırılmış `concrt-omp-parallel-any-of.cpp` bir dosyaya yapıştırın ve sonra bir Visual Studio komut istemi penceresinde aşağıdaki komutu çalıştırın.
 
-**cl.exe/ehsc/OpenMP concrt-omp-paralel-any-of.cpp**
+**CL. exe/EHsc/OpenMP concrt-omp-Parallel-any-of. cpp**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,44 +1,44 @@
 ---
 title: Projeleri Karışık Moddan Saf Ara Dile Dönüştürme
-ms.date: 11/04/2016
+ms.date: 08/19/2019
 helpviewer_keywords:
 - intermediate language, mixed-mode applications
 - mixed-mode applications
 - mixed-mode applications, intermediate language
 - projects [C++], converting to intermediate language
 ms.assetid: 855f9e3c-4f09-4bfe-8eab-a45f68292be9
-ms.openlocfilehash: 2f63b6860157e315d44f7c050812a7f0b97f2726
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: 05ece23e6d79fc399085099deebcde0aa4a92c64
+ms.sourcegitcommit: 9d4ffb8e6e0d70520a1e1a77805785878d445b8a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65448047"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69630842"
 ---
-# <a name="converting-projects-from-mixed-mode-to-pure-intermediate-language"></a>Projeleri karışık moddan saf Ara dile dönüştürme
+# <a name="converting-projects-from-mixed-mode-to-pure-intermediate-language"></a>Projeleri karışık moddan saf ara dile dönüştürme
 
-Tüm Visual C++ CLR projeleri için C çalışma zamanı kitaplıkları, varsayılan olarak bağlayın. Sonuç olarak, bu projeler, ortak dil çalışma zamanı (yönetilen kod için) hedefleyen kod ile yerel kod birleştirdiğinden karışık mod uygulamaları olarak sınıflandırılır. Bunlar derlenir, bunlar Ara dile (IL) olarak da bilinen Microsoft Ara dilini (MSIL) derlenir.
+Tüm Visual C++ clr projeleri varsayılan olarak C çalışma zamanı kitaplıklarına bağlanır. Sonuç olarak, bu projeler Karma modlu uygulamalar olarak sınıflandırılır çünkü yerel kodu ortak dil çalışma zamanını (yönetilen kod) hedefleyen kodla birleştirir. Derlendiklerinde, Microsoft ara dili (MSIL) olarak da bilinen ara dil (IL) olarak derlenir.
 
 > [!IMPORTANT]
-> Visual Studio 2015 kullanım dışı ve Visual Studio 2017 artık oluşturulmasını destekler **/CLR: pure** veya **/CLR: safe** CLR uygulamaları için kod. Saf veya güvenli derlemeleri ihtiyacınız varsa, uygulamanız için C# Çevir öneririz.
+> Visual Studio 2015 kullanım dışı ve Visual Studio 2017, CLR uygulamaları için artık **/clr: Pure** veya **/clr: Safe** kodu oluşturulmasını desteklememektedir. Saf veya güvenli derlemelere ihtiyacınız varsa, uygulamanızı ' ye C#çevirmenizi öneririz.
 
-Microsoft önceki bir sürümünü kullanıyorsanız, C++ destekleyen derleyici araç takımı **/CLR: pure** veya **/CLR: safe**, kodunuzu saf MSIL olarak dönüştürmek için bu yordamı kullanın:
+**/Clr: Pure** veya **/clr: Safe**' i destekleyen C++ Microsoft derleyicisi araç takımının önceki BIR sürümünü kullanıyorsanız, kodunuzu saf MSIL 'e dönüştürmek için bu yordamı kullanabilirsiniz:
 
-### <a name="to-convert-your-mixed-mode-application-into-pure-intermediate-language"></a>Karma mod uygulamanızı saf Ara dile dönüştürme
+### <a name="to-convert-your-mixed-mode-application-into-pure-intermediate-language"></a>Karma mod uygulamanızı saf ara dile dönüştürmek için
 
-1. Bağlantıları Kaldır [C çalışma zamanı kitaplıkları](../c-runtime-library/crt-library-features.md) (CRT):
+1. [C çalışma zamanı kitaplıklarının](../c-runtime-library/crt-library-features.md) (CRT) bağlantılarını kaldırma:
 
-   1. .Cpp dosyasında giriş noktasını değiştirmek, uygulamanın giriş noktasını tanımlayan `Main()`. Kullanarak `Main()` projeniz için CRT bağlanmazsa gösterir.
+   1. Uygulamanızın giriş noktasını tanımlayan. cpp dosyasında, giriş noktasını olarak `Main()`değiştirin. Kullanarak `Main()` , projenizin CRT ile bağlantı olmadığını gösterir.
 
-   2. Çözüm Gezgini'nde projenize sağ tıklayıp **özellikleri** uygulamanız için özellik sayfalarını açmak için kısayol menüsünde.
+   2. Çözüm Gezgini, projenize sağ tıklayın ve uygulamanızın özellik sayfalarını açmak için kısayol menüsünde **Özellikler** ' i seçin.
 
-   3. İçinde **Gelişmiş** proje özellik sayfası için **bağlayıcı**seçin **giriş noktası** ve enter **ana** bu alana.
+   3. **Bağlayıcının** **Gelişmiş** proje özelliği sayfasında, **giriş noktasını** seçin ve ardından bu alana **Main** yazın.
 
-   4. Konsol uygulamaları için de **sistem** proje özellik sayfası için **bağlayıcı**seçin **alt** alan ve değiştirmek için bu **konsol (/ Subsystem:Console)**.
+   4. Konsol uygulamaları için, **bağlayıcının** **sistem** projesi Özellik sayfasında **alt sistem** alanını seçin ve bunu **konsola değiştirin (/Subsystem: Console)** .
 
       > [!NOTE]
-      > Windows Forms uygulamaları için bu özelliği gerekmez **alt** ayarlanmış **Windows (/ alt sistemi: WINDOWS)** varsayılan olarak.
+      > **Alt sistem** alanı varsayılan olarak **Windows (/Subsystem: Windows)** olarak ayarlandığından, bu özelliği Windows Forms uygulamalar için ayarlamanız gerekmez.
 
-   5. Stdafx.h içinde tüm açıklama `#include` deyimleri. Konsol uygulamaları örneğin:
+   5. *Stbafx. h*içinde, tüm `#include` deyimlerini açıklama olarak inceleyin. Örneğin, konsol uygulamalarında:
 
       ```cpp
       // #include <iostream>
@@ -47,7 +47,7 @@ Microsoft önceki bir sürümünü kullanıyorsanız, C++ destekleyen derleyici 
 
        -veya-
 
-       Örneğin, Windows Forms uygulamalarında:
+       Örneğin, Windows Forms uygulamalarda:
 
       ```cpp
       // #include <stdlib.h>
@@ -56,13 +56,13 @@ Microsoft önceki bir sürümünü kullanıyorsanız, C++ destekleyen derleyici 
       // #include <tchar.h>
       ```
 
-   6. Windows Forms uygulamalarında Form1.cpp, açıklama için `#include` windows.h başvuran deyimi. Örneğin:
+   6. Windows Forms uygulamalar için, Form1. cpp içinde, Windows. h `#include` 'e başvuran ifadeyi açıklama olarak yapın. Örneğin:
 
       ```cpp
       // #include <windows.h>
       ```
 
-2. Stdafx.h için aşağıdaki kodu ekleyin:
+2. Aşağıdaki kodu *stbafx. h*öğesine ekleyin:
 
    ```cpp
    #ifndef __FLTUSED__
@@ -71,28 +71,28 @@ Microsoft önceki bir sürümünü kullanıyorsanız, C++ destekleyen derleyici 
    #endif
    ```
 
-3. Tüm yönetilmeyen türlerini kaldırın:
+3. Tüm yönetilmeyen türleri kaldır:
 
-   Uygun yerlerde yapılarının başvuruları yönetilmeyen türler yerine [sistem](/dotnet/api/system) ad alanı. Ortak yönetilen türleri aşağıdaki tabloda listelenmiştir:
+   Uygun olduğunda, yönetilmeyen türleri [sistem](/dotnet/api/system) ad alanındaki yapılar başvuruları ile değiştirin. Ortak yönetilen türler aşağıdaki tabloda listelenmiştir:
 
    |Yapı|Açıklama|
    |---------------|-----------------|
    |[Boole değeri](/dotnet/api/system.boolean)|Bir Boolean değeri temsil eder.|
-   |[Bayt](/dotnet/api/system.byte)|Bir 8 bit işaretsiz tamsayıyı temsil eder.|
+   |[Bayt](/dotnet/api/system.byte)|8 bit işaretsiz tamsayıyı temsil eder.|
    |[Char](/dotnet/api/system.char)|Bir Unicode karakteri temsil eder.|
-   |[Tarih/saat](/dotnet/api/system.datetime)|Anlık, genellikle bir tarih ve saat olarak ifade edilen zaman içinde temsil eder.|
-   |[Ondalık](/dotnet/api/system.decimal)|Ondalık sayıyı temsil eder.|
-   |[çift](/dotnet/api/system.double)|Çift duyarlıklı kayan nokta numarasını temsil eder.|
-   |[GUID](/dotnet/api/system.guid)|Bir genel benzersiz tanıtıcısı (GUID) temsil eder.|
-   |[Int16](/dotnet/api/system.int16)|Bir 16 bit işaretli tamsayıyı temsil eder.|
-   |[Int32](/dotnet/api/system.int32)|32-bit imzalı bir tamsayı temsil eder.|
-   |[Int64](/dotnet/api/system.int64)|64-bit imzalı bir tamsayı temsil eder.|
-   |[IntPtr](/dotnet/api/system.intptr)|Bir işaretçi veya bir tanıtıcı temsil etmek için kullanılan bir platforma özgü türü.|
-   |[SByte](/dotnet/api/system.byte)|Bir 8 bit işaretli tamsayıyı temsil eder.|
-   |[Tek](/dotnet/api/system.single)|Tek duyarlıklı kayan nokta numarasını temsil eder.|
+   |[Hem](/dotnet/api/system.datetime)|Genellikle günün tarih ve saati olarak ifade edilen bir anlık zamanı temsil eder.|
+   |[Kategori](/dotnet/api/system.decimal)|Ondalık sayıyı temsil eder.|
+   |[Çift](/dotnet/api/system.double)|Çift duyarlıklı kayan noktalı sayıyı temsil eder.|
+   |['İni](/dotnet/api/system.guid)|Genel benzersiz tanımlayıcıyı (GUID) temsil eder.|
+   |[Int16](/dotnet/api/system.int16)|16 bit işaretli tamsayıyı temsil eder.|
+   |[Int32](/dotnet/api/system.int32)|32 bitlik işaretli bir tamsayıyı temsil eder.|
+   |[Tutulamaz](/dotnet/api/system.int64)|64 bitlik işaretli bir tamsayıyı temsil eder.|
+   |[IntPtr](/dotnet/api/system.intptr)|Bir işaretçiyi veya tanıtıcıyı temsil etmek için kullanılan platforma özgü bir tür.|
+   |[SByte](/dotnet/api/system.byte)|8 bit işaretli tamsayıyı temsil eder.|
+   |[Sunuculu](/dotnet/api/system.single)|Tek duyarlıklı kayan noktalı sayıyı temsil eder.|
    |[TimeSpan](/dotnet/api/system.timespan)|Bir zaman aralığını temsil eder.|
-   |[UInt16](/dotnet/api/system.uint16)|Bir 16 bit işaretsiz tamsayıyı temsil eder.|
-   |[UInt32](/dotnet/api/system.uint32)|Bir 32-bit işaretsiz tamsayıyı temsil eder.|
-   |[UInt64](/dotnet/api/system.uint64)|Bir 64-bit işaretsiz tamsayıyı temsil eder.|
-   |[UIntPtr](/dotnet/api/system.uintptr)|Bir işaretçi veya bir tanıtıcı temsil etmek için kullanılan bir platforma özgü türü.|
-   |[Geçersiz kılma](/dotnet/api/system.void)|Bir değer döndürmeyen bir yöntem gösterir. diğer bir deyişle, yöntemin void dönüş türüne sahip.|
+   |[Int16](/dotnet/api/system.uint16)|16 bit işaretsiz tamsayıyı temsil eder.|
+   |[Int32](/dotnet/api/system.uint32)|32 bitlik işaretsiz bir tamsayıyı temsil eder.|
+   |[Int64](/dotnet/api/system.uint64)|64 bitlik işaretsiz bir tamsayıyı temsil eder.|
+   |[UIntPtr](/dotnet/api/system.uintptr)|Bir işaretçiyi veya tanıtıcıyı temsil etmek için kullanılan platforma özgü bir tür.|
+   |[Kağıt](/dotnet/api/system.void)|Değer döndürmeyen bir yöntemi gösterir; diğer bir deyişle, yöntemin void dönüş türü vardır.|

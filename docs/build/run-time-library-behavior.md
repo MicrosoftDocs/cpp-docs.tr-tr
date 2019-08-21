@@ -1,6 +1,6 @@
 ---
 title: Dll 'Ler ve C++ görsel çalışma zamanı kitaplığı davranışı
-ms.date: 05/06/2019
+ms.date: 08/19/2019
 f1_keywords:
 - _DllMainCRTStartup
 - CRT_INIT
@@ -15,12 +15,12 @@ helpviewer_keywords:
 - run-time [C++], DLL startup sequence
 - DLLs [C++], startup sequence
 ms.assetid: e06f24ab-6ca5-44ef-9857-aed0c6f049f2
-ms.openlocfilehash: d44f3bf7a8b06f567b1af221e17085d589e56aca
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 572a0ba70c1ba2d46d2d9fd6d8ac543a77bbbc01
+ms.sourcegitcommit: 9d4ffb8e6e0d70520a1e1a77805785878d445b8a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69492615"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69630366"
 ---
 # <a name="dlls-and-visual-c-run-time-library-behavior"></a>Dll 'Ler ve C++ görsel çalışma zamanı kitaplığı davranışı
 
@@ -125,7 +125,7 @@ MFC uzantı dll 'leri türetilmiş bir `CWinApp`nesneye sahip olmadığından (n
 Sihirbaz MFC uzantı dll 'Leri için aşağıdaki kodu sağlar. Kodda, `PROJNAME` projenizin adı için bir yer tutucudur.
 
 ```cpp
-#include "stdafx.h"
+#include "pch.h" // For Visual Studio 2017 and earlier, use "stdafx.h"
 #include <afxdllx.h>
 
 #ifdef _DEBUG
@@ -174,7 +174,7 @@ Uzantı dll 'leri, `DLL_THREAD_ATTACH` `DllMain` işlevindeki ve `DLL_THREAD_DET
 Afxdllx. h üstbilgi dosyasının, ve `AFX_EXTENSION_MODULE` `CDynLinkLibrary`için tanımı gibi MFC uzantı dll 'lerinde kullanılan yapılar için özel tanımlar içerdiğini unutmayın. Bu üstbilgi dosyasını MFC uzantı DLL 'nize dahil etmelisiniz.
 
 > [!NOTE]
->  Stbafx. h içindeki `_AFX_NO_XXX` makroların hiçbirini tanımlamanız veya tanımlamadığınız önemlidir. Bu makrolar yalnızca belirli bir hedef platformun bu özelliği destekleyip desteklemediğini denetleme amacıyla mevcuttur. Bu makroları denetlemek için programınızı yazabilirsiniz (örneğin, `#ifndef _AFX_NO_OLE_SUPPORT`), ancak programınız bu makroları asla tanımlamaz veya tanımlamaz.
+>  `_AFX_NO_XXX` *Pch. h* (Visual Studio 2017 ve önceki sürümlerde*stdadfx. h* ) içindeki hiçbir makroyu tanımlamanız veya tanımlamadığınız önemlidir. Bu makrolar yalnızca belirli bir hedef platformun bu özelliği destekleyip desteklemediğini denetleme amacıyla mevcuttur. Bu makroları denetlemek için programınızı yazabilirsiniz (örneğin, `#ifndef _AFX_NO_OLE_SUPPORT`), ancak programınız bu makroları asla tanımlamaz veya tanımlamaz.
 
 Çoklu iş parçacığını işleyen örnek bir başlatma işlevi, Windows SDK [dinamik bağlantı kitaplığında Iş parçacığı yerel depolama alanı kullanımına](/windows/win32/Dlls/using-thread-local-storage-in-a-dynamic-link-library) dahildir. Örnek adlı `LibMain`bir giriş noktası işlevi içerdiğini, ancak MFC ve C çalışma zamanı kitaplıklarıyla çalışacak şekilde bu `DllMain` işlevi adlandırmalısınız.
 

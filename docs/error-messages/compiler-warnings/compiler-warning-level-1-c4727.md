@@ -1,35 +1,55 @@
 ---
 title: Derleyici Uyarısı (düzey 1) C4727
-ms.date: 11/04/2016
+ms.date: 08/19/2019
 f1_keywords:
 - C4727
 helpviewer_keywords:
 - C4727
 ms.assetid: 991b0087-3a50-40f5-9cdb-cdc367cd472c
-ms.openlocfilehash: be1a248fc2709706e137b543344966735c19064e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1bcc029536d2602d50178d7148332b8371db3c7f
+ms.sourcegitcommit: 9d4ffb8e6e0d70520a1e1a77805785878d445b8a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62386440"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69630825"
 ---
 # <a name="compiler-warning-level-1-c4727"></a>Derleyici Uyarısı (düzey 1) C4727
 
-"Obj_file_1 ve obj_file_2 bulunan aynı zaman damgasına sahip pch_file adlı PCH.  İlk PCH kullanılıyor.
+"Pch_file adlı PCH, obj_file_1 ve obj_file_2 içinde aynı zaman damgasıyla bulundu.  İlk PCH 'yi kullanma.
 
-Birden çok derleme ile derleme yaparken C4727 gerçekleşir **/Yc**, ve derleyici olduğu aynı .pch zaman damgasına sahip tüm .obj dosyaları işaretlemek kullanabilirsiniz.
+> [!NOTE]
+> Visual Studio 2017 ve önceki sürümlerde önceden derlenmiş üst bilgi, varsayılan olarak *stbafx. h* olarak adlandırılır ve visual Studio 2019 ve sonraki sürümlerinde, varsayılan olarak *pch. h* olarak adlandırılır.
 
-Çözmek için bir kaynak dosyasını derlemek **/Yc /c** (pch oluşturur), ve diğerleri ile ayrı olarak derleme **/Yu /c** (pch kullanır), sonra bunları birbirine bağlayın.
+C4727, **/Rivc**ile birden çok derleme derlenirken ve derleyicinin tüm. obj dosyalarını aynı. pch zaman damgasıyla işaretlebileceği durumlarda oluşur.
 
-Bunu, aşağıdaki olmadı ve C4727 oluşturur:
+Çözümlemek için, **/Rivc/c** (pch oluşturur) ile bir kaynak dosya derleyin ve diğerleri **/Yu/c** (pch kullanır) ile ayrı olarak derleyin ve bunları birbirine bağlayın.
 
-**cl/CLR /GL a.cpp b.cpp c.cpp /Ycstdafx.h**
+Bu nedenle, aşağıdakileri yaptıysanız ve C4727 oluşturursa:
 
-Bunun yerine aşağıdakileri:
+::: moniker range="<=vs-2017"
 
-**cl/CLR /GL a.cpp /Ycstdafx.h /c**
+**CL/clr/GL a. cpp b. cpp c. cpp/Ycstdafx.h**
 
-**cl/CLR /GL b.cpp c.cpp /Yustdafx.h/Link a.obj**
+Bunun yerine şunları yapabilirsiniz:
+
+**CL/clr/GL a. cpp/Ycstdafx.h/c**
+
+**CL/clr/GL b. cpp c. cpp/Yustdafx.h/link a. obj**
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+**CL/clr/GL a. cpp b. cpp c. cpp/Ycpch.h**
+
+Bunun yerine şunları yapabilirsiniz:
+
+**CL/clr/GL a. cpp/Ycpch.h/c**
+
+**CL/clr/GL b. cpp c. cpp/Yupch.h/link a. obj**
+
+::: moniker-end
+
 
 Daha fazla bilgi için bkz.
 

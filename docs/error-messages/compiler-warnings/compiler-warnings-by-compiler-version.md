@@ -4,12 +4,12 @@ ms.date: 04/22/2019
 helpviewer_keywords:
 - warnings, by compiler version
 - cl.exe compiler, setting warning options
-ms.openlocfilehash: 07c2e8e9ff061e20f9a3bceaa3d12d051e975e1e
-ms.sourcegitcommit: c3bf94210bdb73be80527166264d49e33784152c
+ms.openlocfilehash: 7e0a2d9a342446acbb62ea64031e84e03855e026
+ms.sourcegitcommit: 9d4ffb8e6e0d70520a1e1a77805785878d445b8a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68821083"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69630815"
 ---
 # <a name="compiler-warnings-by-compiler-version"></a>Derleyici sürümüne göre derleyici uyarıları
 
@@ -128,6 +128,7 @@ Bu uyarılar ve sonraki sürümlerde bulunan tüm uyarılar, derleyici seçeneğ
 | C4841 | `non-standard extension used: extension` |
 | C4842 | `the result of 'offsetof' applied to a type using multiple inheritance is not guaranteed to be consistent between compiler releases` |
 | C4869 | `'nodiscard' may only be applied to classes, enumerations, and functions with non-void return type` |
+| C4984 | `'if constexpr' is a C++17 language extension` |
 | C5033 | `'*storage-class*' is no longer a supported storage class` |
 | C5034 | `use of intrinsic 'intrinsic' causes function function to be compiled as guest code` |
 | C5035 | `use of feature 'feature' causes function function to be compiled as guest code` |

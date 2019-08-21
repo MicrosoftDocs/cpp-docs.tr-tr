@@ -6,28 +6,30 @@ f1_keywords:
 helpviewer_keywords:
 - C4687
 ms.assetid: 2f28e0b1-7358-4c88-bd70-aad8f0aa004c
-ms.openlocfilehash: 1978e1a35ba5b5d59b5961a21378d8af6921d145
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 83f5c535f9cf252783110838c181c88c8b0096ee
+ms.sourcegitcommit: 9d4ffb8e6e0d70520a1e1a77805785878d445b8a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62311338"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69631604"
 ---
 # <a name="compiler-warning-c4687"></a>Derleyici Uyarısı C4687
 
-'class': kapalı bir soyut sınıf 'interface' bir arabirim uygulayamaz
+> '*Class*': kapalı bir soyut sınıf '*Interface*' arabirimini uygulayamaz
 
-Korumalı, soyut bir tür genellikle yalnızca statik üye işlevleri kullanışlıdır.
+## <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için [soyut](../../extensions/abstract-cpp-component-extensions.md)ve [korumalı](../../extensions/sealed-cpp-component-extensions.md).
+Sealed, soyut bir tür genellikle yalnızca statik üye işlevlerini tutmak için faydalıdır.
 
-C4687, varsayılan bir hata verilir. İle C4687 gizleyebilirsiniz [uyarı](../../preprocessor/warning.md) pragması. Korumalı, soyut bir tür içinde arabirim uygulamak istediğinizden eminseniz, C4687 gösterilmemesini sağlayabilirsiniz.
+Daha fazla bilgi için bkz. [soyut](../../extensions/abstract-cpp-component-extensions.md) ve [korumalı](../../extensions/sealed-cpp-component-extensions.md).
+
+C4687, varsayılan olarak bir hata olarak verilir. [Uyarı](../../preprocessor/warning.md) pragması ile C4687 ' i gizleyebilirsiniz. Korumalı, soyut bir türde bir arabirim uygulamak istediğinizden eminseniz C4687 'i gizleyebilirsiniz.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C4687 oluşturur.
+Aşağıdaki örnek C4687 oluşturur.
 
-```
+```cpp
 // C4687.cpp
 // compile with: /clr /c
 interface class A {};

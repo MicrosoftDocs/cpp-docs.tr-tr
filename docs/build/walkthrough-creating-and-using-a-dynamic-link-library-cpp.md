@@ -2,17 +2,17 @@
 title: 'İzlenecek yol: Kendi dinamik bağlantı kitaplığınızı oluşturma ve kullanma (C++)'
 description: Visual C++ Studio 'Da bir Windows dinamik bağlantı KITAPLıĞı (dll) oluşturmak için kullanın.
 ms.custom: conceptual
-ms.date: 07/17/2019
+ms.date: 08/19/2019
 helpviewer_keywords:
 - libraries [C++], DLLs
 - DLLs [C++], walkthroughs
 ms.assetid: 3ae94848-44e7-4955-bbad-7d40f493e941
-ms.openlocfilehash: 8ca89471177ba2d1fa98bfaf51b86ed15dcd6d2f
-ms.sourcegitcommit: 7f5b29e24e1be9b5985044a030977485fea0b50c
+ms.openlocfilehash: 9dffec9d7d974ceb3bf1ca4546a303fab47ee0be
+ms.sourcegitcommit: 9d4ffb8e6e0d70520a1e1a77805785878d445b8a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68299821"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69630677"
 ---
 # <a name="walkthrough-create-and-use-your-own-dynamic-link-library-c"></a>İzlenecek yol: Kendi dinamik bağlantı kitaplığınızı oluşturma ve kullanma (C++)
 
@@ -210,7 +210,7 @@ Dosyanın en üstündeki Önişlemci ifadelerine dikkat edin. Varsayılan olarak
 
    ```cpp
    // MathLibrary.cpp : Defines the exported functions for the DLL.
-   #include "stdafx.h" // use pch.h in Visual Studio 2019
+   #include "pch.h" // use stdafx.h in Visual Studio 2017 and earlier
    #include <utility>
    #include <limits.h>
    #include "MathLibrary.h"
@@ -310,7 +310,7 @@ Kendi veya üçüncü taraf DLL 'niz olsun, bir DLL 'yi kullanmak için, istemci
 
 1. Oluşturduğunuz DLL 'yi C++ kullanan bir uygulama oluşturmak için, menü çubuğunda **Dosya** > **Yeni** > **Proje**' yi seçin.
 
-1. **Yeni proje** iletişim kutusunun sol bölmesinde, **yüklü** > **C++görsel**altında **Windows Masaüstü** ' nü seçin. Orta bölmede **Windows Masaüstü Sihirbazı**' nı seçin. Proje `MathClient`için **ad düzenleme kutusunda** adı belirtin.
+1. **Yeni proje** iletişim kutusunun sol bölmesinde, **yüklü** > **C++görsel**altında **Windows Masaüstü** ' nü seçin. Orta bölmede **Windows Masaüstü Sihirbazı**' nı seçin. Proje `MathClient`için ad düzenleme kutusunda adı belirtin.
 
    ![İstemci projesini adlandırın](media/mathclient-new-project-name-153.png "İstemci projesini adlandırın")
 
@@ -324,7 +324,7 @@ Kendi veya üçüncü taraf DLL 'niz olsun, bir DLL 'yi kullanmak için, istemci
 
 1. Oluşturduğunuz DLL 'yi C++ kullanan bir uygulama oluşturmak için, menü çubuğunda **Dosya** > **Yeni** > **Proje**' yi seçin.
 
-1. **Yeni proje** iletişim kutusunun sol bölmesinde, **yüklü** > **Şablonlar** > **görseli C++** altında **Win32** öğesini seçin. Orta bölmede **Win32 konsol uygulaması**' nı seçin. Proje `MathClient`için **ad düzenleme kutusunda** adı belirtin.
+1. **Yeni proje** iletişim kutusunun sol bölmesinde, **yüklü** > **Şablonlar** > **görseli C++** altında **Win32** öğesini seçin. Orta bölmede **Win32 konsol uygulaması**' nı seçin. Proje `MathClient`için ad düzenleme kutusunda adı belirtin.
 
    ![İstemci projesini adlandırın](media/mathclient-project-name.png "İstemci projesini adlandırın")
 
@@ -450,7 +450,7 @@ Bağlayıcı, uygulamayı henüz derlemek için gereken içeri aktarma kitaplı�
 
 1. Değişikliklerinizi proje özelliklerine kaydetmek için **Tamam** düğmesini seçin.
 
-Artık istemci uygulamanızda derlemek ve çalıştırmak için gereken her şey vardır. Menü çubuğunda Build**Build Solution** **öğesini seçerek** > uygulamayı oluşturun. Visual Studio 'daki **Çıkış** penceresinde, Visual Studio sürümünüze bağlı olarak aşağıdaki örneğe benzer bir örnek bulunmalıdır:
+Artık istemci uygulamanızda derlemek ve çalıştırmak için gereken her şey vardır. Menü çubuğunda Build > **Build Solution** öğesini seçerek uygulamayı oluşturun. Visual Studio 'daki **Çıkış** penceresinde, Visual Studio sürümünüze bağlı olarak aşağıdaki örneğe benzer bir örnek bulunmalıdır:
 
 ```Output
 1>------ Build started: Project: MathClient, Configuration: Debug Win32 ------
@@ -462,7 +462,7 @@ Artık istemci uygulamanızda derlemek ve çalıştırmak için gereken her şey
 ========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
 ```
 
-Tebrikler, DLL 'inizdeki işlevleri çağıran bir uygulama oluşturdunuz. Şimdi, ne yaptığını görmek için uygulamanızı çalıştırın. Menü çubuğunda hata ayıklama**başlatma hatası olmadan Başlat**' **ı seçin.**  >  Visual Studio programın içinde çalışması için bir komut penceresi açar. Çıktının son kısmı şöyle görünmelidir:
+Tebrikler, DLL 'inizdeki işlevleri çağıran bir uygulama oluşturdunuz. Şimdi, ne yaptığını görmek için uygulamanızı çalıştırın. Menü çubuğunda hata ayıklama**başlatma hatası olmadan Başlat**' ı seçin. >  Visual Studio programın içinde çalışması için bir komut penceresi açar. Çıktının son kısmı şöyle görünmelidir:
 
 ![İstemci uygulamasını hata ayıklama olmadan Başlat](media/mathclient-run-without-debugging.png "İstemci uygulamasını hata ayıklama olmadan Başlat")
 

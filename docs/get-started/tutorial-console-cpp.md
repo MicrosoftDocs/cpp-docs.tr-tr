@@ -1,50 +1,50 @@
 ---
 title: C++ konsol uygulama projesi oluşturma
-description: Visual c++'ta bir Hello World konsol uygulaması ve bir hesap makinesi uygulaması oluşturma
+description: Visual üzerinde Merhaba Dünya konsol uygulaması ve Hesaplayıcı uygulaması oluşturmaC++
 ms.custom: mvc
-ms.date: 05/28/2019
+ms.date: 08/19/2019
 ms.topic: tutorial
 ms.devlang: cpp
 ms.assetid: 45138d70-719d-42dc-90d7-1d0ca31a2f54
-ms.openlocfilehash: 9fc5508b68c8e206e76ead08ddb8015dd5133256
-ms.sourcegitcommit: 18f535a6c4cfe58362ed56599b1a875ee71ff6aa
+ms.openlocfilehash: ff1b5295f9fefd681ea76d09349415b59ceac1f2
+ms.sourcegitcommit: 9d4ffb8e6e0d70520a1e1a77805785878d445b8a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66410764"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69631306"
 ---
 # <a name="create-a-c-console-app-project"></a>C++ konsol uygulama projesi oluşturma
 
 ::: moniker range=">=vs-2019"
 
-Her zamanki başlangıç noktası C++ programcısı için bir "Hello, world!" komut satırı üzerinde çalışan uygulama. Hangi Visual Studio'da bu makaledeki oluşturacağınız olan ve ardından bir şey daha zor şekilde geçeceğiz: hesaplayıcısı uygulaması.
+C++ Programcı için olağan başlangıç noktası "Merhaba, Dünya!" komut satırında çalışan uygulama. Bu makalede Visual Studio 'da oluşturacağınız şey, daha zorlayıcı bir işlem hesaplayıcısı: bir Hesaplayıcı uygulaması.
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-- Visual Studio ile sahip **C++ ile masaüstü geliştirme** iş yükü yüklenmiş ve çalışıyor. Henüz yüklü değilse, bkz. [Visual Studio'da C++ yükleme desteği](../build/vscpp-step-0-installation.md).
+- Bilgisayarınızda yüklü ve çalışır şekilde çalışan iş yüküyle Visual Studio ile **masaüstü geliştirme C++**  yapın. Henüz yüklenmemişse bkz. [Visual Studio 'da destek yükleme C++ ](../build/vscpp-step-0-installation.md).
 
-## <a name="create-your-app-project"></a>Uygulama projenizi oluşturun
+## <a name="create-your-app-project"></a>Uygulama projenizi oluşturma
 
-Visual Studio kullanan *projeleri* bir uygulama için kod düzenleme ve *çözümleri* projelerinizi düzenlemek için. Bir proje, tüm seçenekleri, yapılandırmaları ve uygulamalarınızı oluşturmak için kullanılan kuralları içerir. Tüm proje dosyaları ve dış dosyaları arasındaki ilişki da yönetir. Uygulamanızı oluşturmak için ilk olarak, yeni proje ve çözüm oluşturacaksınız.
+Visual Studio kullanan *projeleri* bir uygulama için kod düzenleme ve *çözümleri* projelerinizi düzenlemek için. Bir proje, tüm seçenekleri, yapılandırmaları ve uygulamalarınızı oluşturmak için kullanılan kuralları içerir. Tüm proje dosyaları ve dış dosyaları arasındaki ilişki da yönetir. Uygulamanızı oluşturmak için önce yeni bir proje ve çözüm oluşturacaksınız.
 
-1. Visual Studio yeni başlattıysanız, Visual Studio 2019 iletişim kutusunu görürsünüz. Seçin **yeni bir proje oluşturma** kullanmaya başlamak için.
+1. Visual Studio 'yu yeni başlattıysanız, Visual Studio 2019 iletişim kutusunu görürsünüz. Başlamak için **Yeni proje oluştur ' a** tıklayın.
 
-   ![Visual Studio 2019 ilk iletişim](./media/calc-vs2019-initial-dialog.png "Visual Studio 2019 ilk iletişim")
+   ![Visual Studio 2019 ilk iletişim kutusu](./media/calc-vs2019-initial-dialog.png "Visual Studio 2019 ilk iletişim kutusu")
 
-   Aksi takdirde, Visual Studio menü seçin **dosya** > **yeni** > **proje**. **Yeni bir proje oluşturma** penceresi açılır.
+   Aksi halde, Visual Studio 'daki menü çubuğundan **Dosya** > **Yeni** > **Proje**' yi seçin. **Yeni proje oluştur** penceresi açılır.
 
-1. Proje şablonları listesinde seçin **konsol uygulaması**, ardından **sonraki**.
+1. Proje şablonları listesinde **konsol uygulaması**' nı seçin ve ardından **İleri**' yi seçin.
 
-   ![Konsol uygulaması şablonu seçin](./media/calc-vs2019-choose-console-app.png "konsol uygulaması şablonu seçin")
+   ![Konsol uygulaması şablonunu seçin](./media/calc-vs2019-choose-console-app.png "Konsol uygulaması şablonunu seçin")
 
    > [!Important]
-   > Seçtiğinizden emin olun C++ sürümünü **konsol uygulaması** şablonu. Sahip **C++** , **Windows**, ve **konsol** etiket ve simgeyi "++" köşedeki.
+   > C++ **Konsol uygulaması** şablonunun sürümünü seçtiğinizden emin olun. **C++** , **Windows**ve **konsol** etiketlerine sahiptir ve simgenin köşede "+ +" vardır.
 
-1. İçinde **yeni projenizi yapılandırın** iletişim kutusunda **proje adı** düzenleme kutusu, yeni projenizi adlandırın *CalculatorTutorial*, ardından **oluştur** .
+1. **Yeni projenizi yapılandırın** iletişim kutusunda, **Proje adı** düzenleme kutusunu seçin, yeni projenizin hesaplaizi *öğreticisini*adlandırın, sonra **Oluştur**' u seçin.
 
-   ![Yeni Proje iletişim kutusu, projenizde bir yapılandırma adı](./media/calc-vs2019-name-your-project.png "yapılandırma projenizde yeni proje iletişim kutusu adı")
+   ![Yeni projenizi yapılandırma iletişim kutusunda projenizi adlandırın](./media/calc-vs2019-name-your-project.png "Yeni projenizi yapılandırma iletişim kutusunda projenizi adlandırın")
 
-   Boş bir C++ Windows konsol uygulaması oluşturulur. Konsol uygulamaları, bir Windows konsol penceresi çıkışını görüntülemek ve kullanıcı girişi kabul etmek için kullanın. Visual Studio'da bir düzenleyici penceresi açılır ve oluşturulan kodun gösterir:
+   Boş C++ bir Windows konsol uygulaması oluşturulur. Konsol uygulamaları, çıktıyı göstermek ve Kullanıcı girişini kabul etmek için bir Windows konsol penceresi kullanır. Visual Studio 'da bir düzenleyici penceresi açılır ve oluşturulan kodu gösterir:
 
     ```cpp
     // CalculatorTutorial.cpp : This file contains the 'main' function. Program execution begins and ends there.
@@ -69,29 +69,29 @@ Visual Studio kullanan *projeleri* bir uygulama için kod düzenleme ve *çözü
     //   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
     ```
 
-## <a name="verify-that-your-new-app-builds-and-runs"></a>Yeni uygulamanız derlenir ve çalışır olduğunu doğrulayın
+## <a name="verify-that-your-new-app-builds-and-runs"></a>Yeni uygulamanızın derlemediğini ve çalıştığını doğrulayın
 
-Yeni bir Windows konsol uygulaması şablonu, basit bir C++ "Hello World" uygulaması oluşturur. Bu noktada, Visual Studio nasıl oluşturur ve doğrudan IDE'den oluşturduğunuz uygulamalar çalıştıran görebilirsiniz.
+Yeni bir Windows konsol uygulaması şablonu basit C++ bir "Merhaba Dünya" uygulaması oluşturur. Bu noktada, Visual Studio 'Nun IDE 'den doğrudan oluşturduğunuz uygulamaları nasıl oluşturup yürüttüğünde daha fazla bilgi alabilirsiniz.
 
-1. Projenizi tercih **Çözümü Derle** gelen **derleme** menüsü. **Çıkış** penceresi yapı işleminin sonuçlarını gösterir.
+1. Projenizi derlemek için **derleme** menüsünden **çözüm oluştur** ' u seçin. **Çıkış** penceresi, derleme işleminin sonuçlarını gösterir.
 
-   ![Proje derleme](./media/calc-vs2019-build-your-project.png "projeyi oluşturun")
+   ![Projeyi derleme](./media/calc-vs2019-build-your-project.png "Projeyi derleme")
 
-1. Menü çubuğunda kodu çalıştırmak için tercih **hata ayıklama**, **ayıklamadan Başlat**.
+1. Kodu çalıştırmak için, menü çubuğunda **Hata Ayıkla**, **hata ayıklama olmadan Başlat**' ı seçin.
 
-   ![Proje başlangıç](./media/calc-vs2019-hello-world-console.png "projeyi Başlat")
+   ![Projeyi Başlat](./media/calc-vs2019-hello-world-console.png "Projeyi Başlat")
 
-   Bir konsol penceresi açar ve ardından uygulamanızı çalıştırır. Visual Studio'da konsol uygulaması başlattığınızda, kodunuz çalışır ve ardından baskı siparişi "Bu pencereyi kapatmak için herhangi bir tuşa basın. biçimindeki telefon numarasıdır. ." Çıktıyı görmek için bir fırsat vermek için. Tebrikler! İlk oluşturduğunuz "Hello, world!" Visual Studio'da konsol uygulaması!
+   Konsol penceresi açılır ve uygulamanızı çalıştırır. Visual Studio 'da bir konsol uygulaması başlattığınızda, kodunuzu çalıştırır ve ardından bu pencereyi kapatmak için herhangi bir tuşa basın. biçimindeki telefon numarasıdır. ." çıktıyı görmeniz için bir şans sağlamak üzere. Tebrikler! İlk "Hello, World!" dosyanızı oluşturdunuz Visual Studio 'da konsol uygulaması!
 
-1. Konsol penceresini kapatın ve Visual Studio'ya dönmek için bir tuşa basın.
+1. Konsol penceresini kapatmak ve Visual Studio 'ya dönmek için bir tuşa basın.
 
-Artık derleme ve beklediğiniz gibi kodu hala çalışır durumda olduğunu doğrulamak için her değişiklikten sonra uygulamanızı çalıştırmak için araçlar vardır. Daha sonra bu gereksinimleri karşılamıyorsa hata ayıklama göstereceğiz.
+Artık, kodun beklendiği gibi çalıştığını doğrulamak için her değişiklikten sonra uygulamanızı derleyip çalıştırmaya yönelik araçlara sahipsiniz. Daha sonra, bu değilse nasıl hata ayıklaması yapılacağını göstereceğiz.
 
-## <a name="edit-the-code"></a>Kodu düzenleme
+## <a name="edit-the-code"></a>Kodu Düzenle
 
-Artık kod hesaplayıcı uygulamaya bu şablonda dönelim.
+Şimdi bu şablondaki kodu bir Hesaplayıcı uygulamasına açalım.
 
-1. İçinde *CalculatorTutorial.cpp* dosya, bu örnekle eşleşmesi için kodu düzenleyin:
+1. *Hesaplatoröğreticisi. cpp* dosyasında, kodu şu örnekle eşleşecek şekilde düzenleyin:
 
     ```cpp
     // CalculatorTutorial.cpp : This file contains the 'main' function. Program execution begins and ends there.
@@ -120,37 +120,37 @@ Artık kod hesaplayıcı uygulamaya bu şablonda dönelim.
     //   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
     ```
 
-   > Kod anlama:
+   > Kodu anlama:
    >
-   > - `#include` Deyimleri diğer dosyalarında bulunan koduna başvuru sağlar. Bazı durumlarda, açılı ayraç içine bir dosya adı görebilirsiniz ( **\<\>** ); diğer durumlarda, tırnak işareti içine alınmış ( **""** ). Genel olarak, açılı ayraçlar diğer dosyalar için tırnak işaretleri kullanılırken, C++ Standart Kitaplığı başvururken kullanılır.
-   > - `using namespace std;` Satırı öğe bu dosyada kullanılan C++ Standart Kitaplığı'ndan beklenir derleyiciye. Bu satırı kitaplığından her anahtar sözcüğü ile öncesinde zorunda bir `std::`kapsamını belirtmek için. Örneğin, bu satırı her başvuru `cout` olarak yazılması gerekir `std::cout`. `using` Deyimi daha temiz arayın kodun eklenir.
-   > - `cout` Anahtar sözcüğü, c++ standart çıktıya yazdırmak için kullanılır. **\< \<** İşleci sağındaki bunu standart çıktıya ne olursa olsun göndermek için derleyiciye.
-   > - **Endl** anahtar sözcüğü, gibi Enter tuşuna; satır sona erer ve imleci sonraki satıra taşır. Koymak için daha iyi bir uygulamadır bir `\n` dizenin içine (tarafından bulunan "") olarak aynı şeyi yapmak için `endl` her zaman arabelleği temizler ve programın, ancak bu çok küçük bir uygulama olduğu için performansı olumsuz etkileyebilir `endl` daha iyi için bunun yerine kullanılır Okunabilirlik.
-   > - Tüm C++ deyimleri, noktalı virgül ile bitmelidir ve tüm C++ uygulamalarını içermesi gereken bir `main()` işlevi. Bu işlev, program başlangıcında çalıştırılanlar kullanılır. Tüm kod erişilebilir `main()` kullanılabilmesi için.
+   > - Deyimleri `#include` , diğer dosyalarda bulunan koda başvuru yapmanıza olanak sağlar. Bazen açılı ayraçlar ( **\<\>** ) ile çevrelenmiş bir dosya adı görebilirsiniz; diğer zamanlarda tırnak işaretleri ( **""** ) ile çevrelenmiş olur. Genel olarak, C++ standart kitaplığa başvurulurken açılı ayraçlar kullanılır, ancak teklifler diğer dosyalar için kullanılır.
+   > - Çizgi derleyiciye bu dosyada kullanılan C++ standart kitaplıktan şeyler beklendiğini söyler. `using namespace std;` Bu satır olmadan, bir kitaplıktaki her anahtar sözcüğünün, kapsamını göstermek için önünde bir `std::`ile olması gerekir. Örneğin, bu satır olmadan her başvurunun `cout` olarak `std::cout`yazılması gerekir. Kodun daha temiz görünmesini sağlamak için ifadeeklenir.`using`
+   > - Anahtar `cout` sözcüğü, içindeki C++standart çıktıya yazdırmak için kullanılır. **İşleci derleyiciye, standart çıktıya ne olduğunu bildirir. \< \<**
+   > - **Endl** anahtar sözcüğü ENTER tuşu gibidir; satırı sonlandırır ve imleci bir sonraki satıra kaydırır. Her zaman arabelleği temizleyerek ve bu çok `\n` küçük `endl` bir uygulama olduğundan, daha iyi bir uygulama olduğundan, dizenin içine (""), aynı şeyi yapmak için bir koymak daha iyi bir uygulamadır. `endl` luğunu.
+   > - All C++ deyimlerinin noktalı virgül ile bitmesi ve tüm C++ uygulamaların bir `main()` işlev içermesi gerekir. Bu işlev, programın başlangıçta çalıştığı şeydir. Kullanılabilmesi için tüm koda erişilebilir `main()` olması gerekir.
 
-1. Dosyayı kaydetmek için girin **Ctrl + S**, ya da seçin **Kaydet** IDE, araç çubuğundaki menü çubuğunun altındaki disket simgesini üst kısmındaki simgesi.
+1. Dosyayı kaydetmek için **CTRL + S**gırın veya IDE 'nin üst kısmına yakın bir şekilde **Kaydet** simgesini, menü çubuğunun altındaki araç çubuğundan disket simgesini seçin.
 
-1. Uygulamayı çalıştırmak için basın **Ctrl + F5** veya Git **hata ayıklama** menüsünü seçip **hata ayıklama olmadan Başlat**. Kod içinde belirtilen metni görüntüleyen bir konsol penceresi görünür görmeniz gerekir.
+1. Uygulamayı çalıştırmak için **CTRL + F5** tuşlarına basın veya **hata ayıklama** menüsüne gidin ve **hata ayıklama olmadan Başlat**' ı seçin. Kodda belirtilen metni görüntüleyen bir konsol penceresi görürsünüz.
 
-1. İşiniz bittiğinde, konsol penceresini kapatın.
+1. İşiniz bittiğinde konsol penceresini kapatın.
 
-## <a name="add-code-to-do-some-math"></a>Bazı matematik için kod ekleyin
+## <a name="add-code-to-do-some-math"></a>Bazı matematik işlemlerini yapmak için kod ekleme
 
-Bu, bazı matematik mantığı ekleme zamanı geldi.
+Biraz matematik mantığı ekleme zamanı.
 
 ### <a name="to-add-a-calculator-class"></a>Hesaplayıcı sınıfı eklemek için
 
-1. Git **proje** menüsünü seçip **sınıfı Ekle**. İçinde **sınıf adı** düzenleme kutusu, girin *hesaplayıcı*. **Tamam**’ı seçin. İki yeni dosyayı projenize eklenir. Tek seferde tüm değiştirilen dosyaları kaydetmek için basın **Ctrl + Shift + S**. Bir klavye kısayol bulunur **dosya** > **Tümünü Kaydet**. Toolbar düğmesi için de mevcuttur **Tümünü Kaydet**, simge yanında bulunan iki disket disk **Kaydet** düğmesi. Genel olarak, bunu yapmak için iyi bir uygulamadır **Tümünü Kaydet** sık, bu nedenle, yoksa kaçırmayın dosyalarla kaydettiğinizde.
+1. **Proje** menüsüne gidin ve **Sınıf Ekle**' yi seçin. **Sınıf adı** düzenleme kutusuna *Hesaplayıcı*yazın. **Tamam**’ı seçin. Projenize iki yeni dosya eklenir. Değiştirdiğiniz tüm dosyaları aynı anda kaydetmek için **CTRL + SHIFT + S**tuşlarına basın. Bu, **Dosya** > **kaydetme**için bir klavye kısayoludur. Ayrıca, Kaydet düğmesinin yanında bulunan iki disket simgesi olan **Tümünü Kaydet**için bir araç çubuğu düğmesi de vardır. Genel olarak, kaydetme sırasında herhangi bir dosyayı kaçırmamak için sık sık **kaydedilmesi** iyi bir uygulamadır.
 
-   ![Hesaplayıcı sınıfı oluşturmak](./media/calc-vs2019-create-calculator-class.png "hesaplayıcı sınıfı oluşturma")
+   ![Hesaplayıcı sınıfını oluşturma](./media/calc-vs2019-create-calculator-class.png "Hesaplayıcı sınıfını oluşturma")
 
-   Blueprint işi yapan bir nesne için bir sınıf gibidir. Bu durumda, bir hesap makinesi ve nasıl çalışması gereken tanımlarız. **Sınıfı Ekle** yukarıda kullanılan sihirbaz oluşturulan sınıf aynı ada sahip .h ve .cpp dosyaları. Proje dosyalarınızı tam listesini görebilirsiniz **Çözüm Gezgini** penceresi, IDE'nin kenarındaki görünür. Pencerenin görünür değilse, menü çubuğundan açabilirsiniz: seçin **görünümü** > **Çözüm Gezgini**.
+   Bir sınıf, bir şeyi yapan bir nesne için şema gibidir. Bu durumda, bir Hesaplayıcı ve nasıl çalışması gerektiğini tanımladık. Yukarıda kullandığınız **sınıf ekleme** Sihirbazı, sınıf ile aynı ada sahip. h ve. cpp dosyalarını oluşturdu. Proje dosyalarınızın tam listesini, IDE 'nin yanında görünen **Çözüm Gezgini** penceresinde görebilirsiniz. Pencere görünmüyorsa, menü çubuğundan açabilirsiniz: **Görünüm** > **Çözüm Gezgini**' yi seçin.
 
    ![Çözüm Gezgini](./media/calc-vs2019-solution-explorer.png "Çözüm Gezgini")
 
-   Artık üç sekme düzenleyicide açık olması gerekir: *CalculatorTutorial.cpp*, *Calculator.h*, ve *Calculator.cpp*. Bunlardan birini yanlışlıkla kapatırsanız, bu çift tıklayarak açabilirsiniz **Çözüm Gezgini** penceresi.
+   Düzenleyicide Şu anda üç sekme açık olmalıdır: *Hesaplayıcı Toröğreticisi. cpp*, *Hesaplayıcı. h*ve *Hesaplayıcı. cpp*. Yanlışlıkla bunlardan birini kapatırsanız, **Çözüm Gezgini** penceresinde onu çift tıklayarak yeniden açabilirsiniz.
 
-1. İçinde **Calculator.h**, kaldırma `Calculator();` ve `~Calculator();` burada gerekmez bu yana, oluşturulan satır. Ardından, dosyayı şimdi şuna benzer şekilde aşağıdaki kod satırını ekleyin:
+1. **Hesap makinesi. h**içinde, burada `Calculator();` , `~Calculator();` bunlara ihtiyacınız olmadığından, oluşturulan ve satırları kaldırın. Ardından, dosyanın şimdi şöyle görünmesi için aşağıdaki kod satırını ekleyin:
 
     ```cpp
     #pragma once
@@ -161,24 +161,24 @@ Bu, bazı matematik mantığı ekleme zamanı geldi.
     };
     ```
 
-   > Kod anlama
+   > Kodu anlama
    >
-   > - Eklediğiniz satırı olarak adlandırılan yeni bir işlev bildirir `Calculate`, hangi toplama, çıkarma, çarpma ve bölme matematik işlemlerini çalıştırmak için kullanacağız.
-   > - C++ kod içine düzenlenir *üstbilgi* (.h) dosyaları ve *kaynak* (.cpp) dosyaları. Birkaç diğer dosya uzantıları çeşitli derleyiciler tarafından desteklenir, ancak bunlar hakkında bilgi edinmek için ana olanlardır. İşlevler ve değişkenler olan normalde *bildirilen*, diğer bir deyişle, verilen bir ad ve başlık dosyaları içinde bir tür ve *uygulanan*, veya kaynak dosyalarında bir tanımını ele alalım. Başka bir dosyada tanımlanan erişim kodu için kullanabileceğiniz `#include "filename.h"`, burada 'filename.h' değişkenleri veya kullanmak istediğiniz işlevleri bildirir dosyanın adıdır.
-   > - Sildiğiniz satırlarını bildirilen bir *Oluşturucusu* ve *yok Edicisi* sınıfı. Bunun gibi basit bir sınıf, derleyici bunları sizin için oluşturur ve bu öğreticinin kapsamı dışındadır kullanımları şunlardır.
-   > - Kodunuzun ne işe yaradığını üzerinde daha sonra ihtiyacınız olan kod bulmak kolaydır bağlı olarak farklı dosyaları düzenlemek için iyi bir uygulamadır. Bu örnekte, tanımlarız `Calculator` sınıfı içeren dosyanın listesinden `main()` işlevi, ancak planlama başvurmak `Calculator` sınıfını `main()`.
+   > - Eklediğiniz satır, toplama, çıkarma, çarpma ve `Calculate`bölme için matematik işlemlerini çalıştırmak için kullanacağımız yeni bir işlev bildirir.
+   > - C++kod, *üstbilgi* (. h) dosyaları ve *kaynak* (. cpp) dosyaları halinde düzenlenir. Çeşitli derleyiciler tarafından desteklenen çeşitli dosya uzantıları şunlardır, ancak bunlar hakkında bilgi sahibi olmak için başlıca değerlerdir. İşlevler ve değişkenler normalde *tanımlanmış*, diğer bir deyişle, bir ad ve tür, başlık dosyalarında, *uygulanan*veya bir tanım verilen kaynak dosyalarında. Başka bir dosyada tanımlanan koda erişmek için, ' filename. `#include "filename.h"`h ' öğesini kullanmak istediğiniz değişkenleri veya işlevleri bildiren dosyanın adı olan ' i kullanabilirsiniz.
+   > - Sildiğiniz iki satır, sınıf için bir *Oluşturucu* ve *yıkıcı* bildirdi. Bunun gibi basit bir sınıf için derleyici bunları sizin için oluşturur ve kullanımları Bu öğreticinin kapsamı dışındadır.
+   > - Kodunuzu, ne yapacaklarına göre farklı dosyalara düzenlemek iyi bir uygulamadır. bu sayede, daha sonra ihtiyacınız olan kodu kolayca bulabilirsiniz. Bizim örneğimizde, `Calculator` sınıfı `main()` işlevi içeren dosyadan ayrı olarak tanımladık, ancak içinde `Calculator` `main()`sınıfına başvuru planlıyoruz.
 
-1. Altında görünür bir yeşil dalgalı göreceğiniz `Calculate`. Henüz tanımladığımız çünkü `Calculate` .cpp dosyası işlevi. Word'ün getirin, görüntülenen iletideki ampul (Bu durumda, bir tornavida içinde) tıklatın ve seçin **'Hesapla' tanımı içinde Calculator.cpp oluşturma**.
+1. Altında `Calculate`yeşil renkli bir çizgi görünür. Bunun nedeni, `Calculate` . cpp dosyasında işlevi tanımlamadık. Sözcüğün üzerine gelin, açılan ampule (Bu durumda, bir screwsürücü) tıklayın ve **Hesaplayıcı. cpp ' de ' Calculate ' tanımı oluştur**' u seçin.
 
-   ![Calculate tanımını oluşturma](./media/calc-vs2019-create-definition.png "Calculate tanımını oluşturun")
+   ![Hesaplama tanımı oluştur](./media/calc-vs2019-create-definition.png "Hesaplama tanımı oluştur")
 
-   Diğer dosyada yapılan kod değişikliğinin bir Özet sunan bir açılır pencere görüntülenir. Kod eklendi *Calculator.cpp*.
+   Diğer dosyada yapılan kod değişikliğinin bir özetini sunan bir açılır pencere görünür. Kod, *Hesaplayıcı. cpp*öğesine eklendi.
 
-   ![Calculate tanımıyla açılır](./media/calc-vs2019-pop-up-definition.png "tanımıyla hesapla açılır")
+   ![Hesaplama tanımıyla açılır pencere](./media/calc-vs2019-pop-up-definition.png "Hesaplama tanımıyla açılır pencere")
 
-   Şu anda yalnızca 0,0 döndürür. Değiştirelim. Tuşuna **Esc** açılan pencereyi kapatın.
+   Şu anda yalnızca 0,0 döndürüyor. Bunu değiştirelim. Açılır pencereyi kapatmak için **ESC** tuşuna basın.
 
-1. Geçiş *Calculator.cpp* düzenleyici penceresinde dosya. Kaldırma `Calculator()` ve `~Calculator()` bölümleri (.h dosyasındaki yaptığınız gibi) ve aşağıdaki kodu ekleyin `Calculate()`:
+1. Düzenleyici penceresindeki *Hesaplayıcı. cpp* dosyasına geçin. Ve bölümlerini kaldırın (. h dosyasında yaptığınız gibi) ve aşağıdaki kodu öğesine `Calculate()`ekleyin: `~Calculator()` `Calculator()`
 
     ```cpp
     #include "Calculator.h"
@@ -201,18 +201,18 @@ Bu, bazı matematik mantığı ekleme zamanı geldi.
     }
     ```
 
-   > Kod anlama
+   > Kodu anlama
    >
-   > - İşlev `Calculate` bir sayı, bir işleç ve ikinci sayı kullanır ve sayı üzerinde istenen işlemi gerçekleştirir.
-   > - Hangi işleci sağlanan ve yalnızca switch deyimi denetimleri, bu işlem için karşılık gelen durum yürütür. Varsayılan: durumda program sonu gelmez bir şekilde kabul değil, operatör kullanıcı türleri bir geri dönüş durum geçerlidir. Genel olarak, daha zarif bir şekilde geçersiz kullanıcı girişlerini işler en iyisidir ancak bu, bu öğreticinin kapsamı dışındadır.
-   > - `double` Anahtar sözcüğü destekleyen ondalık sayı türü gösterir. Bu şekilde, ondalık matematik hem tamsayı matematiğini hesaplayıcı başa çıkabilir. `Calculate` İşlevi her zaman böyle bir sayıya son döndürmek için gerekli `double` olmasının nedeni çok başlangıcında (Bu gösterir işlevin dönüş türü), kod biz 0,0 varsayılan durumda bile döndürür.
-   > - .H dosyası işlev bildirir *prototip*gerektiren parametreleri derleyici önceden bildirir ve hangi dönüş türünü bekleyebilir. İşlevin tüm uygulama ayrıntılarını .cpp dosyası vardır.
+   > - İşlevi `Calculate` bir sayı, bir işleç ve ikinci bir sayı kullanır, ardından istenen işlemi sayılar üzerinde gerçekleştirir.
+   > - Switch ifadesinde hangi işlecin sağlandığını kontrol eder ve yalnızca bu işleme karşılık gelen servis talebi yürütülür. Varsayılan: durum, kullanıcının kabul edilmeyen bir işleç yazdığında, dolayısıyla programın kesintiye uğramaması durumunda bir geri dönüş olur. Genel olarak, geçersiz kullanıcı girişini daha zarif bir şekilde işlemek en iyisidir, ancak Bu öğreticinin kapsamı dışındadır.
+   > - Anahtar `double` sözcüğü, Onlukları destekleyen bir sayı türünü gösterir. Bu şekilde, hesaplayıcı hem Decimal Math hem de Integer Math işleyebilir. `Calculate` İşlevin ,`double` kodun çok başlangıcında (Bu, işlevin dönüş türünü belirtir), bu nedenle her zaman bir sayının bu tür bir değer döndürmesi gerekir. Bu, varsayılan durumda bile 0,0 getirdiğimiz anlamına gelir.
+   > - . H dosyası, derleyicinin hangi parametrelereihtiyacı olduğunu ve bundan beklenen dönüş türünü belirten işlev prototipini bildirir. . Cpp dosyası, işlevin tüm uygulama ayrıntılarına sahiptir.
 
-Oluşturun ve tekrar bu noktada kod çalıştırmak, işlemi gerçekleştirmek için danıştıktan sonra hala çıkılacak. Ardından, değiştireceksiniz `main` bazı hesaplamalar yapmak için işlevi.
+Kodu bu noktada yeniden oluşturup çalıştırırsanız, hangi işlemin gerçekleştirileceğini soran bir çıkış devam eder. Sonra, bazı hesaplamalar yapmak için `main` işlevini değiştirirsiniz.
 
-### <a name="to-call-the-calculator-class-member-functions"></a>Hesaplayıcı sınıf üyesi işlevleri çağırmak için
+### <a name="to-call-the-calculator-class-member-functions"></a>Hesaplayıcı sınıfı üye işlevlerini çağırmak için
 
-1. Artık güncelleştirelim `main` işlevi *CalculatorTutorial.cpp*:
+1. Şimdi, `main` *hesaplatoröğreticisi. cpp*işlevini güncelleştirelim:
 
     ```cpp
     // CalculatorTutorial.cpp : This file contains the 'main' function. Program execution begins and ends there.
@@ -246,77 +246,77 @@ Oluşturun ve tekrar bu noktada kod çalıştırmak, işlemi gerçekleştirmek i
     }
     ```
 
-   > Kod anlama
+   > Kodu anlama
    >
-   > - C++ programları, her zaman başlangıcından itibaren `main()` işlevi, biz diğer kodumuz buradan, bu nedenle çağırmak için gereken bir `#include` deyimi gereklidir.
-   > - Bazı başlangıç değişkenleri `x`, `y`, `oper`, ve `result` ilk sayısı, ikinci sayı, işleci ve nihai sonucu sırasıyla depolamak için bildirilir. Bu her zaman burada yapılır olan tanımlanmamış davranışı önlemek için bazı başlangıç değerleri vermek iyi yöntemdir.
-   > - `Calculator c;` Satır bir örneğini 'c' adlı bir nesne bildirir `Calculator` sınıfı. Sınıf hesaplayıcıları nasıl çalıştığı için yalnızca bir plandır; Matematik yapan belirli hesaplayıcı nesnedir.
-   > - `while (true)` Deyimi, döngü. Döngü içinde kod tekrar tekrar olduğu sürece koşul içinde yürütmeye devam eder. `()` geçerlidir. Koşul olarak yalnızca listelenen beri `true`, bu nedenle sonsuz döngü çalıştırılır her zaman true olur. Programı kapatmak için kullanıcı el ile konsol penceresini kapatmalısınız. Aksi takdirde, program her zaman için yeni giriş bekler.
-   > - `cin` Anahtar sözcüğü, kullanıcı girişi kabul etmek için kullanılır. Bu giriş akışı, konsol penceresinde girilen metin satırı işleyebilir ve her bir değişken, kullanıcı giriş eşleşmeleri gerekli belirtime varsayılarak sırayla yeniden listelenmiş içine yerleştirmek akıllıca olur. Farklı tür giriş kabul etmek için bu satırı değiştirebilirsiniz, örneğin, ikiden fazla, ancak sayı `Calculate()` işlevi da bu durumu çözmek için güncelleştirilmesi gerekir.
-   > - `c.Calculate(x, oper, y);` Deyim aramaları `Calculate` işlevi daha önce tanımlanan ve kaynakları girilen giriş değerleri. İşlev ardından depolanan bir sayı döndürür `result`.
-   > - Son olarak, `result` hesaplama sonucu kullanıcının gördüğü şekilde konsola yazdırılır.
+   > - Programlar C++ her zaman `main()` işlevde başladığından, diğer kodumuzu buradan çağırmamız gerekir, bu nedenle bir `#include` ifade gereklidir.
+   > - Bazı ilk değişkenler `x` `y` `result` ,, ve sırasıyla ilk Number, İkinci sayı, işleç ve nihai sonucu depolayacak şekilde bildirilmiştir. `oper` Bu, burada yapılan tanımsız davranışlara engel olmak için bazı ilk değerleri vermek her zaman iyi bir uygulamadır.
+   > - Satır, `Calculator` sınıfının bir örneği olarak ' c ' adlı bir nesne bildirir. `Calculator c;` Sınıfın kendisi, hesaplayıcıların nasıl çalıştığı hakkında yalnızca bir şema olur; nesnesi, matematik yapan özel Hesaplayıcı ' dır.
+   > - `while (true)` İfade bir döngüdür. Döngü içindeki kod, `()` ' ın içindeki koşul doğru olduğu sürece yeniden yürütmeye devam eder. Koşul yalnızca olarak listelendiğinden, her zaman `true`doğru olduğundan, döngü süresiz olarak çalışır. Programı kapatmak için Kullanıcı konsol penceresini el ile kapatması gerekir. Aksi takdirde, program her zaman yeni giriş bekler.
+   > - `cin` Anahtar sözcüğü, kullanıcıdan girişi kabul etmek için kullanılır. Bu giriş akışı, konsol penceresinde girilen bir metin satırını işlemek için yeterince akıllı bir işlemdir ve Kullanıcı girişinin gerekli belirtile eşleştiğini varsayarak, listelenen değişkenlerin her birini sırayla yerleştirebilirsiniz. Bu satırı, örneğin iki sayıdan fazla farklı giriş türlerini kabul etmek için değiştirebilir, ancak `Calculate()` işlevin bunu işlemek için de güncelleştirilmeleri gerekir.
+   > - İfade, daha önce `Calculate` tanımlanan işlevi çağırır ve girilen giriş değerlerini sağlar. `c.Calculate(x, oper, y);` İşlev daha sonra ' de `result`depolanan bir sayı döndürür.
+   > - `result` Son olarak konsola yazdırılır, böylece Kullanıcı hesaplamanın sonucunu görür.
 
-### <a name="build-and-test-the-code-again"></a>Derleme ve kod yeniden test edin
+### <a name="build-and-test-the-code-again"></a>Kodu yeniden derleyin ve test edin
 
-Artık bu program yeniden her şeyin düzgün çalıştığından emin olmak için test etme vakti.
+Artık, her şeyin düzgün çalıştığından emin olmak için programı yeniden test etme zamanı.
 
-1. Tuşuna **Ctrl + F5** oluşturmak ve uygulamayı başlatmak için.
+1. Uygulamayı yeniden oluşturmak ve başlatmak için **CTRL + F5** tuşlarına basın.
 
-1. ENTER `5 + 5`basın **Enter**. Sonucu 10 olduğundan emin olun.
+1. Yazın `5 + 5`ve ENTER tuşunabasın. Sonucun 10 olduğunu doğrulayın.
 
-   ![5 + 5 sonucunu](./media/calc-vs2019-five-plus-five.png "5 + 5 sonucu")
+   ![5 + 5 sonucu](./media/calc-vs2019-five-plus-five.png "5 + 5 sonucu")
 
-## <a name="debug-the-app"></a>Uygulamasında hata ayıklama
+## <a name="debug-the-app"></a>Uygulamada hata ayıklama
 
-Kullanıcının herhangi bir şey konsol penceresine yazmak ücretsiz olduğundan, hesap makinesi beklendiği gibi bazı giriş işleme emin olalım. Biz ayrıntılı, adım adım neler incelemek için programı çalıştırmak yerine şimdi, bunun yerine, hata ayıklayın.
+Kullanıcı konsol penceresine herhangi bir şey yazmadığından ücretsiz olduğundan, hesap makinesinin bazı girişleri beklendiği gibi işlemesini sağlayın. Programı çalıştırmak yerine, bunun yerine hata ayıklaalım, bu nedenle ne yaptığını ayrıntılı olarak inceleyebileceğiniz adım adım.
 
-### <a name="to-run-the-app-in-the-debugger"></a>Hata ayıklayıcıda uygulamayı çalıştırmak için
+### <a name="to-run-the-app-in-the-debugger"></a>Uygulamayı hata ayıklayıcıda çalıştırmak için
 
-1. Bir kesme noktası ayarlamak `result = c.Calculate(x, oper, y);` satır sonra yalnızca kullanıcı girişi için istendi. Kesme noktası ayarlamak için gri dikey çubuk Düzenleyicisi penceresinin sol kenarda satır İleri'yi tıklatın. Kırmızı bir nokta belirir.
+1. Yalnızca kullanıcıdan giriş sorulduktan `result = c.Calculate(x, oper, y);` sonra, satırda bir kesme noktası ayarlayın. Kesme noktasını ayarlamak için, düzenleyici penceresinin sol kenarındaki gri dikey çubukta bulunan çizgiye tıklayın. Kırmızı bir nokta görünür.
 
    ![Bir kesme noktası ayarlamak](./media/calc-vs2019-set-breakpoint.png "bir kesme noktası ayarlayın")
 
-   Artık programın hata ayıklama, her zaman bu satırındaki yürütülmesine duraklatır. Basit durumlar için program çalışıyor üzerine kaba bir fikriniz zaten sahibiz. Her yürütme duraklatmak istemediğiniz olduğundan, kesme noktası koşullu olalım.
+   Artık programda hata ayıklaması yaptığımız zaman, bu satırdaki yürütmeyi her zaman duraklatır. Programın basit durumlar için çalışmasına yönelik kaba bir fikrimiz zaten var. Yürütmeyi her seferinde duraklatmak istemediğimiz için, kesme noktasını koşullu hale getirir.
 
-1. Kesme noktasını temsil eden kırmızı nokta sağ tıklatıp seçin **koşullar**. Koşul için düzenleme kutusuna girin `(y == 0) && (oper == '/')`. Seçin **Kapat** işiniz bittiğinde düğmesi. Koşul otomatik olarak kaydedilir.
+1. Kesme noktasını temsil eden kırmızı noktaya sağ tıklayın ve **koşullar**' ı seçin. Koşulun düzenleme kutusunda, girin `(y == 0) && (oper == '/')`. İşiniz bittiğinde **Kapat** düğmesini seçin. Koşul otomatik olarak kaydedilir.
 
-   ![Koşullu kesme noktası ayarlamak](./media/calc-vs2019-conditional-breakpoint.png "koşullu kesme noktası ayarlayın")
+   ![Koşullu kesme noktası ayarlama](./media/calc-vs2019-conditional-breakpoint.png "Koşullu kesme noktası ayarlama")
 
-   Artık 0 ile bölme özellikle yapılmaya çalışılırsa biz yürütme kesme noktasında duraklatın.
+   Artık 0 olarak bölme denendiğinde yürütme kesme noktasında yürütmeyi durakladık.
 
-1. Programda hata ayıklamak için basın **F5**, ya da seçin **yerel Windows hata ayıklayıcı** yeşil ok simgesi olan araç çubuğu düğmesi. Konsol uygulamanıza "5-0" gibi bir şey girerseniz, programın normal şekilde davranır ve çalışmaya devam eder. Ancak, yazarsanız, "10 / 0", kesme noktasında duraklatır. Herhangi bir sayıda işleci ve sayılar arasında boşluk bile koyabilirsiniz: `cin` giriş uygun şekilde ayrıştırmak akıllıca olur.
+1. Programda hata ayıklamak için **F5**'e basın veya yeşil ok simgesine sahip olan **yerel Windows hata ayıklayıcısı** araç çubuğu düğmesini seçin. Konsol uygulamanızda, "5-0" gibi bir şey girerseniz, program normal şekilde davranır ve çalışır durumda kalır. Ancak, "10/0" yazarsanız, kesme noktasında duraklatılır. Operatör ve rakamlar arasında da herhangi bir sayıda boşluk koyabilirsiniz: `cin` girişi uygun şekilde ayrıştırmaya yetecek kadar akıllı bir değer.
 
-   ![Koşullu kesme noktası konumunda duraklama](./media/calc-vs2019-debug-breakpoint.png "koşullu kesme noktasında Duraklat")
+   ![Koşullu kesme noktasında Duraklat](./media/calc-vs2019-debug-breakpoint.png "Koşullu kesme noktasında Duraklat")
 
-### <a name="useful-windows-in-the-debugger"></a>Yararlı windows hata ayıklayıcısı
+### <a name="useful-windows-in-the-debugger"></a>Hata ayıklayıcıda yararlı pencereler
 
-Kodunuzdaki hataları ayıklamanıza olduğunda, bazı yeni windows göründüğünü fark edebilirsiniz. Bu windows hata ayıklama deneyiminizi yardımcı olabilir. Bir göz atın **Otolar** penceresi. **Otolar** penceresi gösterir, değişkenlerin geçerli değerleri önce ve geçerli satıra kadar en az üç satırlarında kullanılır. Tüm bu işlevden değişkenlerin görmek için geçiş **Yereller** penceresi. Aslında bu değişkenlerin değerleri, hata ayıklama sırasında programa sahip etkisini görmek için değiştirebilirsiniz. Bu durumda, bunları tek başına bırakacağız.
+Kodunuzda hata ayıkladığınızda, bazı yeni pencerelerin göründüğünü fark edebilirsiniz. Bu pencereler hata ayıklama deneyiminize yardımcı olabilir. **Oto** penceresine göz atın. **Oto** penceresinde, geçerli satıra en az üç satır önce kullanılan değişkenlerin geçerli değerlerini gösterir. Bu işlevden tüm değişkenleri görmek için **Yereller** penceresine geçin. Bu değişkenlerin değerlerini hata ayıklama sırasında değiştirebilir ve programda neler olacağını görebilirsiniz. Bu durumda, bunları tek başına bırakacağız.
 
-   ![Yerel öğeler penceresinde](./media/calc-vs2019-debug-locals.png "yerel öğeler penceresi")
+   ![Yereller penceresi](./media/calc-vs2019-debug-locals.png "Yereller penceresi")
 
-Ayrıca kodun kendisi nerede yürütülmesi şu anda duraklatıldı geçerli değerlerini görmek için değişkenleri üzerine gelerek. İlk tıklayarak düzenleyici penceresinde odağı olduğundan emin olun.
+Ayrıca, yürütmenin Şu anda duraklatıldığı geçerli değerlerini görmek için yalnızca kodun kendisindeki değişkenlerin üzerine gelebilmeniz gerekir. Önce üzerine tıklayarak düzenleyici penceresinin odaklandığından emin olun.
 
-   ![Geçerli değişken değerlerini görüntülemek için üzerine gelindiğinde kullanılacak](./media/calc-vs2019-hover-tooltip.png "geçerli değişken değerlerini görüntülemek için üzerine gelme")
+   ![Geçerli değişken değerlerini görüntülemek Için üzerine gelin](./media/calc-vs2019-hover-tooltip.png "Geçerli değişken değerlerini görüntülemek Için üzerine gelin")
 
 ### <a name="to-continue-debugging"></a>Hata ayıklamaya devam etmek için
 
-1. Sol taraftaki sarı satırın geçerli yürütme noktasını gösterir. Geçerli satırı çağrıları `Calculate`, bu nedenle basın **F11** için **içine adımla** işlevi. Kendiniz gövdesinde bulabilirsiniz `Calculate` işlevi. Dikkatli olmanız **içine adımla**; çok fazla yaparsanız çok zaman boşa harcanmasına neden olabilir. Temel, standart kitaplık işlevleri dahil olmak üzere olduğunuz satırında kullandığınız herhangi bir kod girer.
+1. Sol taraftaki sarı çizgi, geçerli yürütme noktasını gösterir. Geçerli satırı çağırır `Calculate`, bu nedenle işlev **içine** dönmek için **F11** tuşuna basın. Kendi kendinize `Calculate` işlevin gövdesinde bulacaksınız. **Adımla**ilgili dikkatli olun; Bunu çok fazla yaparsanız, çok sayıda atık hale gelebilir. Standart Kitaplık işlevleri dahil olmak üzere, üzerinde olduğunuz satırda kullandığınız herhangi bir koda gider.
 
-1. Yürütme noktası başlangıcında olduğuna göre `Calculate` işlev, basın **F10** program yürütmesinde sonraki satıra taşımak için. **F10** olarak da bilinen **Step Over**. Kullanabileceğiniz **Step Over** ne satırın her bir parçası oluşma ayrıntılara delving olmadan gelen satırı taşımak için. Genel olarak kullanmanız gereken **Step Over** yerine **içine adımla**, başka bir yerden çağrılan kodu daha derinlemesine istemediğiniz sürece (gövdesinin ulaşmak için yaptığınız gibi `Calculate`).
+1. Yürütme noktası `Calculate` işlevin başlangıcında olduğuna göre, program yürütmesinin sonraki satırına geçmek için **F10** tuşuna basın. **F10** , **adım adım**olarak da bilinir. Satırdaki her bir bölümde gerçekleşdiklerin ayrıntılarına odaklanmadan satırdan satıra geçiş yapmak için **Step Over** ' u kullanabilirsiniz. Genel olarak, başka bir yerde Çağrılmakta olan kodu daha ayrıntılı bir şekilde incelemek istemediğiniz sürece (' ın `Calculate`gövdesine ulaştığınız gibi) daha fazla bilgi almak istiyorsanız, ' ın **içine adımla**yerine **adımını** kullanmanız gerekir.
 
-1. Kullanmaya devam **F10** için **Step Over** geri gelene kadar her bir satır `main()` işlev diğer dosyasında ve durdurmayı `cout` satır.
+1. Diğer `main()` dosyadakiişlevegeridönüpsatırüzerindeduranakadarherbirsatırdaadımadımilerleyin.`cout`
 
-   Beklenen değer program yapıyor gibi görünüyor: ilk sayı alır ve saniye böldüğünü. Üzerinde `cout` satır, üzerine `result` değişkeni veya göz atın `result` içinde **Otolar** penceresi. Değeri doğru görünmüyor, "bilgi" şimdi düzeltmek listelendiğini görürsünüz. `cout` Satır yalnızca çıkarır ne olursa olsun değer depolanan `result`, kaldığında, bir veya daha fazla satır iletecek şekilde kullanarak **F10**, konsol penceresinde görüntüler:
+   Program beklenildiği gibi görünüyor: ilk sayıyı alır ve ikinciden böler. Satırda, `result` değişkenin üzerine gelin `result` veya oto penceresinde bir göz atın. `cout` Değerin "INF" olarak listelendiğini görürsünüz ve bu, doğru görünmüyor ve bunu çözeceğiz. Satır, ' de `result`hangi değerin depolandığını gösterir. bu nedenle, F10 kullanarak ileri bir satır daha ilerlememeniz halinde konsol penceresi şunu görüntüler: `cout`
 
-   ![Sıfıra sonucunu](./media/calc-vs2019-divide-by-zero-fail.png "sıfıra sonucu")
+   ![Sıfıra bölme sonucu](./media/calc-vs2019-divide-by-zero-fail.png "Sıfıra bölme sonucu")
 
-   Bunun nedeni, sıfıra bölünme tanımsızdır program istenen işlemi için sayısal bir yanıt yok. Bu nedenle bu sonucu kullanmasıdır.
+   Bu sonuç, sıfıra bölme tanımsız olduğundan, programın istenen işleme bir sayısal yanıtı olmadığından meydana gelir.
 
-### <a name="to-fix-the-divide-by-zero-error"></a>"Sıfıra" hatayı düzeltmek için
+### <a name="to-fix-the-divide-by-zero-error"></a>"Sıfıra bölme" hatasını onarmak için
 
-Şimdi sorun bir kullanıcı anlayabilmeniz sıfıra bölme daha düzgün bir şekilde işleyin.
+Daha düzgün bir şekilde bölme yaparak, bir Kullanıcı sorunu anlayabiliyor.
 
-1. Aşağıdaki değişiklikleri yapın *CalculatorTutorial.cpp*. (Düzenlerken adlı bir hata ayıklayıcı özelliği sayesinde çalışan bir program bırakabilirsiniz **Düzenle ve devam et**):
+1. *Hesaplatoröğreticisi. cpp*' de aşağıdaki değişiklikleri yapın. ( **Düzenle ve devam et**adlı bir hata ayıklayıcı özelliği sayesinde programı düzenlediğiniz şekilde çalışır durumda bırakabilirsiniz):
 
     ```cpp
     // CalculatorTutorial.cpp : This file contains the 'main' function. Program execution begins and ends there.
@@ -357,55 +357,55 @@ Ayrıca kodun kendisi nerede yürütülmesi şu anda duraklatıldı geçerli de�
     }
     ```
 
-1. Şimdi basın **F5** sonra. Tüm kullanıcı girişi isteyebilir duraklatmak sahip oluncaya kadar program yürütme devam eder. Girin `10 / 0` yeniden. Şimdi daha yararlı bir ileti yazdırılır. Kullanıcı için daha fazla giriş sorulur ve program normalde yürütme devam eder.
+1. Şimdi **F5** tuşuna basın. Program yürütme, Kullanıcı girişi istemek için duraklamaya kadar tüm şekilde devam eder. Yeniden `10 / 0` girin. Şimdi, daha yararlı bir ileti yazdırılır. Kullanıcıdan daha fazla giriş istenir ve program normal yürütülmeye devam eder.
 
-   ![Değişikliklerden sonra nihai sonucu](./media/calc-vs2019-final-verification.png "değişikliklerden sonra nihai sonucu")
+   ![Değişikliklerden sonraki nihai sonuç](./media/calc-vs2019-final-verification.png "Değişikliklerden sonraki nihai sonuç")
 
    > [!Note]
-   > Hata ayıklama modunda çalışırken kod düzenleme, kod Eskitme riski yoktur. Hata ayıklayıcı hala eski kodunuzu çalışıyor ve henüz yaptığınız değişikliklerle güncelleştirmemiş kullandığınızda ortaya çıkar. Hata ayıklayıcı bu durumda bildiren bir iletişim kutusu açılır. Bazı durumlarda, basmanız gerekebilir **F5** yürütülen kod yenilenemedi. Yürütme noktası iç işlevi, işlev dışında adım gerektiğini olmakla birlikte bir işlev içinde bir değişiklik yaparsanız, özellikle, ardından buna güncelleştirilen kodun yeniden almak için yedekleyin. Herhangi bir nedenden dolayı çalışmaz ve bir hata iletisi görürsünüz, araç çubuğunda IDE üst kısmındaki menülerinin altında kırmızı bir kare tıklayarak hata ayıklamayı durdurmak ve ardından tekrar girerek hata ayıklamayı Başlat **F5** yeşil seçerek veya " durdurma düğmesi yanındaki oku araç çubuğunda "yürütün.
+   > Hata ayıklama modundayken kodu düzenlerken, kodun eskimiş olma riski vardır. Bu durum, hata ayıklayıcı eski kodunuzu çalıştırmakta olduğunda ve henüz değişikliklerinizi güncelleştirmemişse oluşur. Hata ayıklayıcı, bu gerçekleştiğinde sizi bilgilendirmek için bir iletişim kutusu açılır. Bazen, yürütülen kodu yenilemek için **F5** tuşuna basmanız gerekebilir. Özellikle, bir işlev içinde bir değişiklik yaparsanız, yürütme noktası bu işlevin içindeyse, işlevin dışına dönerek güncelleştirilmiş kodu almak için yeniden tekrar açmanız gerekir. Bu bir nedenden dolayı işe yaramazsa ve bir hata iletisi görürseniz, IDE 'nin en üstündeki menülerin altında bulunan araç çubuğunda kırmızı kareye tıklayarak hata ayıklamayı durdurabilirsiniz ve ardından **F5** tuşuna basarak veya s 'nin yanındaki yeşil "Oynat" okunu seçerek hata ayıklamayı yeniden başlatabilirsiniz. araç çubuğundaki üst düğmesi.
 
-   > Çalıştırma ve hata ayıklama kısayolları anlama
+   > Çalıştırma ve hata ayıklama kısayollarını anlama
    >
-   > - **F5** (veya **hata ayıklama** > **hata ayıklamayı Başlat**) bir hata ayıklama oturumu zaten etkin değil ve bir kesme noktasına isabet kadar program çalıştırılır başlatır veya program gereksinimlerini kullanıcı girişi. Kullanıcı müdahalesi gerekli değildir ve hiçbir kesme noktası isabet kullanılabilir, program sona erer ve programın çalışması tamamlandığında konsol penceresini kendisi kapatır. Bir "Merhaba Dünya" programı çalıştırmak için benzer bir şey varsa, **Ctrl + F5** veya girdiğiniz önce bir kesme noktası ayarlamak **F5** penceresi açık tutmak için.
-   > - **CTRL + F5** (veya **hata ayıklama** > **hata ayıklama olmadan Başlat**) hata ayıklama moduna geçmeden uygulamayı çalıştırır. Bu hata ayıklama değerinden biraz daha hızlıdır ve programın yürütülmesi tamamlandıktan sonra konsol penceresi açık kalır.
-   > - **F10** (olarak bilinen **Step Over**) aracılığıyla yineleme sağlar-satır satır, kod ve kod nasıl çalışır ve her adımda yürütme değişken değerleri nelerdir görselleştirin.
-   > - **F11** (olarak bilinen **içine adımla**) benzer şekilde çalışır **Step Over**yürütme satırında herhangi bir işlevler halinde adımları dışında. Örneğin, çalıştırılan satır bir işlevi çağırıyorsa tuşuna basarak **F11** işlev gövdesine işaretçiyi hareket, işlevin kod satırına geri dönmeyi önce çalıştırılan izleyebilmeniz öğesinde başladı. Tuşuna basarak **F10** adımları ve yalnızca işlev çağrısı üzerinden, sonraki satıra taşır; işlev çağrısı yine de gerçekleşir, ancak ne yaptığını göstermek için programı duraklatmak değil.
+   > - **F5** (veya > hata ayıklama**başlatma hata ayıklaması**), bir hata ayıklama oturumu başlatır ve bir kesme noktasına ulaşılana veya program kullanıcı girişine ihtiyaç duyana kadar programı çalıştırır. Kullanıcı girişi gerekmiyorsa ve isabet almak için kullanılabilir kesme noktası yoksa, program sonlanır ve program çalışmayı bitirdiğinde konsol penceresi kendisini kapatır. Çalıştırmak üzere bir "Merhaba Dünya" programı varsa, pencereyi açık tutmak için **F5** tuşuna girmeden önce **CTRL + F5** kullanın veya bir kesme noktası ayarlayın.
+   > - **CTRL + F5** (veya > hata ayıklama**olmadan Başlat**), hata ayıklama moduna geçmeden uygulamayı çalıştırır. Bu, hata ayıklamadan biraz daha hızlıdır ve program yürütmeyi tamamladıktan sonra konsol penceresi açık kalır.
+   > - **F10** ( **adım adım**olarak bilinir) kod içinde, satır içinde yinelemenize ve kodun nasıl çalıştırılacağını ve her yürütme adımında değişken değerlerinin ne olduğunu görselleştirmenizi sağlar.
+   > - **F11** ( **adım**olarak bilinir), yürütme sırasında çağrılan herhangi bir Işleve adım adım olmak üzere, **adımla**aynı şekilde çalışır. Örneğin, yürütülenmekte olan satır bir işlev çağırırsa, **F11** tuşuna basıldığında işaretçiyi işlevin gövdesine taşıdıkça işlevin kodunu, başlattığınız satıra geri gelmeden önce, çalıştırılan işlevin kodunu takip edebilirsiniz. İşlev çağrısının üzerindeki **F10** adımlara basmak ve yalnızca sonraki satıra gitme; işlev çağrısı hala gerçekleşir, ancak program ne yaptığını göstermek için duraklamaz.
 
-### <a name="close-the-app"></a>Uygulamayı kapatın
+### <a name="close-the-app"></a>Uygulamayı kapat
 
-- Hala çalışıyorsa hesaplayıcısı uygulaması için konsol penceresini kapatın.
+- Hala çalışıyorsa, hesaplayıcı uygulamasının konsol penceresini kapatın.
 
 ## <a name="the-finished-app"></a>Tamamlanmış uygulama
 
-Tebrikler! Siz hesaplayıcı uygulama kodunu ve yerleşik tamamlayıp Visual Studio'da hata ayıklaması.
+Tebrikler! Hesaplayıcı uygulamasının kodunu tamamladınız, Visual Studio 'da oluşturulup hata ayıklaması yaptınız.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-[C++ için Visual Studio hakkında daha fazla bilgi edinin](https://blogs.msdn.microsoft.com/vcblog/2017/04/21/getting-started-with-visual-studio-for-c-and-cpp-development/)
+[İçin Visual Studio hakkında daha fazla bilgi edininC++](https://blogs.msdn.microsoft.com/vcblog/2017/04/21/getting-started-with-visual-studio-for-c-and-cpp-development/)
 
 ::: moniker-end
 
 ::: moniker range="<vs-2019"
 
-Her zamanki başlangıç noktası C++ programcısı için bir "Hello, world!" komut satırı üzerinde çalışan uygulama. Hangi Visual Studio'da bu makaledeki oluşturacağınız olan ve ardından bir şey daha zor şekilde geçeceğiz: hesaplayıcısı uygulaması.
+C++ Programcı için olağan başlangıç noktası "Merhaba, Dünya!" komut satırında çalışan uygulama. Bu makalede Visual Studio 'da oluşturacağınız şey, daha zorlayıcı bir işlem hesaplayıcısı: bir Hesaplayıcı uygulaması.
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-- Visual Studio ile sahip **C++ ile masaüstü geliştirme** iş yükü yüklenmiş ve çalışıyor. Henüz yüklü değilse, bkz. [Visual Studio'da C++ yükleme desteği](../build/vscpp-step-0-installation.md).
+- Bilgisayarınızda yüklü ve çalışır şekilde çalışan iş yüküyle Visual Studio ile **masaüstü geliştirme C++**  yapın. Henüz yüklenmemişse bkz. [Visual Studio 'da destek yükleme C++ ](../build/vscpp-step-0-installation.md).
 
-## <a name="create-your-app-project"></a>Uygulama projenizi oluşturun
+## <a name="create-your-app-project"></a>Uygulama projenizi oluşturma
 
-Visual Studio kullanan *projeleri* bir uygulama için kod düzenleme ve *çözümleri* projelerinizi düzenlemek için. Bir proje, tüm seçenekleri, yapılandırmaları ve uygulamalarınızı oluşturmak için kullanılan kuralları içerir. Tüm proje dosyaları ve dış dosyaları arasındaki ilişki da yönetir. Uygulamanızı oluşturmak için ilk olarak, yeni proje ve çözüm oluşturacaksınız.
+Visual Studio kullanan *projeleri* bir uygulama için kod düzenleme ve *çözümleri* projelerinizi düzenlemek için. Bir proje, tüm seçenekleri, yapılandırmaları ve uygulamalarınızı oluşturmak için kullanılan kuralları içerir. Tüm proje dosyaları ve dış dosyaları arasındaki ilişki da yönetir. Uygulamanızı oluşturmak için önce yeni bir proje ve çözüm oluşturacaksınız.
 
-1. Visual Studio menü seçin **dosya** > **yeni** > **proje**. **Yeni proje** penceresi açılır.
+1. Visual Studio 'daki menü çubuğundan **Dosya** > **Yeni** > **Proje**' yi seçin. **Yeni proje** penceresi açılır.
 
-2. Sol Kenar çubuğunda emin **Visual C++** seçilir. Merkezinde **Windows konsol uygulaması**.
+2. Sol kenar çubuğunda **görsel C++**  ' ün seçili olduğundan emin olun. Merkezinde **Windows konsol uygulaması**' nı seçin.
 
-3. İçinde **adı** alttaki düzenleme, yeni proje adını *CalculatorTutorial*, ardından **Tamam**.
+3. Alttaki **ad** düzenleme kutusunda, yeni proje *hesaplatoronu*adlandırın, sonra **Tamam**' ı seçin.
 
-   ![Yeni Proje iletişim](./media/calculator-new-project-dialog.png "yeni proje iletişim kutusu")
+   ![Yeni proje iletişim kutusu](./media/calculator-new-project-dialog.png "Yeni proje iletişim kutusu")
 
-   Boş bir C++ Windows konsol uygulaması oluşturulur. Konsol uygulamaları, bir Windows konsol penceresi çıkışını görüntülemek ve kullanıcı girişi kabul etmek için kullanın. Visual Studio'da bir düzenleyici penceresi açılır ve oluşturulan kodun gösterir:
+   Boş C++ bir Windows konsol uygulaması oluşturulur. Konsol uygulamaları, çıktıyı göstermek ve Kullanıcı girişini kabul etmek için bir Windows konsol penceresi kullanır. Visual Studio 'da bir düzenleyici penceresi açılır ve oluşturulan kodu gösterir:
 
     ```cpp
     // CalculatorTutorial.cpp : This file contains the 'main' function. Program execution begins and ends there.
@@ -431,29 +431,29 @@ Visual Studio kullanan *projeleri* bir uygulama için kod düzenleme ve *çözü
     //   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
     ```
 
-## <a name="verify-that-your-new-app-builds-and-runs"></a>Yeni uygulamanız derlenir ve çalışır olduğunu doğrulayın
+## <a name="verify-that-your-new-app-builds-and-runs"></a>Yeni uygulamanızın derlemediğini ve çalıştığını doğrulayın
 
-Yeni bir windows konsol uygulaması şablonu, basit bir C++ "Hello World" uygulaması oluşturur. Bu noktada, Visual Studio nasıl oluşturur ve doğrudan IDE'den oluşturduğunuz uygulamalar çalıştıran görebilirsiniz.
+Yeni bir Windows konsol uygulaması şablonu basit C++ bir "Merhaba Dünya" uygulaması oluşturur. Bu noktada, Visual Studio 'Nun IDE 'den doğrudan oluşturduğunuz uygulamaları nasıl oluşturup yürüttüğünde daha fazla bilgi alabilirsiniz.
 
-1. Projenizi tercih **Çözümü Derle** gelen **derleme** menüsü. **Çıkış** penceresi yapı işleminin sonuçlarını gösterir.
+1. Projenizi derlemek için **derleme** menüsünden **çözüm oluştur** ' u seçin. **Çıkış** penceresi, derleme işleminin sonuçlarını gösterir.
 
-   ![Proje derleme](./media/calculator-initial-build-output.png "projeyi oluşturun")
+   ![Projeyi derleme](./media/calculator-initial-build-output.png "Projeyi derleme")
 
-1. Menü çubuğunda kodu çalıştırmak için tercih **hata ayıklama**, **ayıklamadan Başlat**.
+1. Kodu çalıştırmak için, menü çubuğunda **Hata Ayıkla**, **hata ayıklama olmadan Başlat**' ı seçin.
 
-   ![Proje başlangıç](./media/calculator-hello-world-console.png "projeyi Başlat")
+   ![Projeyi Başlat](./media/calculator-hello-world-console.png "Projeyi Başlat")
 
-   Bir konsol penceresi açar ve ardından uygulamanızı çalıştırır. Visual Studio'da konsol uygulaması başlattığınızda, kodunuz çalışır ve ardından baskı siparişi "devam etmek için herhangi bir tuşa basın. biçimindeki telefon numarasıdır. ." Çıktıyı görmek için bir fırsat vermek için. Tebrikler! İlk oluşturduğunuz "Hello, world!" Visual Studio'da konsol uygulaması!
+   Konsol penceresi açılır ve uygulamanızı çalıştırır. Visual Studio 'da bir konsol uygulaması başlattığınızda, kodunuzu çalıştırır ve ardından devam etmek için herhangi bir tuşa basın. biçimindeki telefon numarasıdır. ." çıktıyı görmeniz için bir şans sağlamak üzere. Tebrikler! İlk "Hello, World!" dosyanızı oluşturdunuz Visual Studio 'da konsol uygulaması!
 
-1. Konsol penceresini kapatın ve Visual Studio'ya dönmek için bir tuşa basın.
+1. Konsol penceresini kapatmak ve Visual Studio 'ya dönmek için bir tuşa basın.
 
-Artık derleme ve beklediğiniz gibi kodu hala çalışır durumda olduğunu doğrulamak için her değişiklikten sonra uygulamanızı çalıştırmak için araçlar vardır. Daha sonra bu gereksinimleri karşılamıyorsa hata ayıklama göstereceğiz.
+Artık, kodun beklendiği gibi çalıştığını doğrulamak için her değişiklikten sonra uygulamanızı derleyip çalıştırmaya yönelik araçlara sahipsiniz. Daha sonra, bu değilse nasıl hata ayıklaması yapılacağını göstereceğiz.
 
-## <a name="edit-the-code"></a>Kodu düzenleme
+## <a name="edit-the-code"></a>Kodu Düzenle
 
-Artık kod hesaplayıcı uygulamaya bu şablonda dönelim.
+Şimdi bu şablondaki kodu bir Hesaplayıcı uygulamasına açalım.
 
-1. İçinde *CalculatorTutorial.cpp* dosya, bu örnekle eşleşmesi için kodu düzenleyin:
+1. *Hesaplatoröğreticisi. cpp* dosyasında, kodu şu örnekle eşleşecek şekilde düzenleyin:
 
     ```cpp
     // CalculatorTutorial.cpp : This file contains the 'main' function. Program execution begins and ends there.
@@ -483,40 +483,40 @@ Artık kod hesaplayıcı uygulamaya bu şablonda dönelim.
     //   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
     ```
 
-   > Kod anlama:
+   > Kodu anlama:
    >
-   > - `#include` Deyimleri diğer dosyalarında bulunan koduna başvuru sağlar. Bazı durumlarda, açılı ayraç içine bir dosya adı görebilirsiniz ( **\<\>** ); diğer durumlarda, tırnak işareti içine alınmış ( **""** ). Genel olarak, açılı ayraçlar diğer dosyalar için tırnak işaretleri kullanılırken, C++ Standart Kitaplığı başvururken kullanılır.
-   > - `#include "pch.h"` (Veya Visual Studio'nun eski sürümlerinde `#include "stdafx.h"`) satırı önceden derlenmiş üst bilgi olarak bilinen bir sorun başvuruyor. Bunlar genellikle profesyonel programcılar tarafından derlemeyi sürelerini geliştirmek için kullanılır, ancak bunlar Bu öğreticinin kapsamı dışındadır.
-   > - `using namespace std;` Satırı öğe bu dosyada kullanılan C++ Standart Kitaplığı'ndan beklenir derleyiciye. Bu satırı kitaplığından her anahtar sözcüğü ile öncesinde zorunda bir `std::`kapsamını belirtmek için. Örneğin, bu satırı her başvuru `cout` olarak yazılması gerekir `std::cout`. `using` Deyimi daha temiz arayın kodun eklenir.
-   > - `cout` Anahtar sözcüğü, c++ standart çıktıya yazdırmak için kullanılır. **\< \<** İşleci sağındaki bunu standart çıktıya ne olursa olsun göndermek için derleyiciye.
-   > - **Endl** anahtar sözcüğü, gibi Enter tuşuna; satır sona erer ve imleci sonraki satıra taşır. Koymak için daha iyi bir uygulamadır bir `\n` dizenin içine (tarafından bulunan "") olarak aynı şeyi yapmak için `endl` her zaman arabelleği temizler ve programın, ancak bu çok küçük bir uygulama olduğu için performansı olumsuz etkileyebilir `endl` daha iyi için bunun yerine kullanılır Okunabilirlik.
-   > - Tüm C++ deyimleri, noktalı virgül ile bitmelidir ve tüm C++ uygulamalarını içermesi gereken bir `main()` işlevi. Bu işlev, program başlangıcında çalıştırılanlar kullanılır. Tüm kod erişilebilir `main()` kullanılabilmesi için.
+   > - Deyimleri `#include` , diğer dosyalarda bulunan koda başvuru yapmanıza olanak sağlar. Bazen açılı ayraçlar ( **\<\>** ) ile çevrelenmiş bir dosya adı görebilirsiniz; diğer zamanlarda tırnak işaretleri ( **""** ) ile çevrelenmiş olur. Genel olarak, C++ standart kitaplığa başvurulurken açılı ayraçlar kullanılır, ancak teklifler diğer dosyalar için kullanılır.
+   > - (Veya Visual Studio 2017 ve `#include "stdafx.h"`önceki sürümler) satırında önceden derlenmiş üst bilgi olarak bilinen bir şey bulunuyor. `#include "pch.h"` Bunlar genellikle profesyonel programcılar tarafından derleme sürelerini geliştirmek için kullanılır, ancak Bu öğreticinin kapsamı dışındadır.
+   > - Çizgi derleyiciye bu dosyada kullanılan C++ standart kitaplıktan şeyler beklendiğini söyler. `using namespace std;` Bu satır olmadan, bir kitaplıktaki her anahtar sözcüğünün, kapsamını göstermek için önünde bir `std::`ile olması gerekir. Örneğin, bu satır olmadan her başvurunun `cout` olarak `std::cout`yazılması gerekir. Kodun daha temiz görünmesini sağlamak için ifadeeklenir.`using`
+   > - Anahtar `cout` sözcüğü, içindeki C++standart çıktıya yazdırmak için kullanılır. **İşleci derleyiciye, standart çıktıya ne olduğunu bildirir. \< \<**
+   > - **Endl** anahtar sözcüğü ENTER tuşu gibidir; satırı sonlandırır ve imleci bir sonraki satıra kaydırır. Her zaman arabelleği temizleyerek ve bu çok `\n` küçük `endl` bir uygulama olduğundan, daha iyi bir uygulama olduğundan, dizenin içine (""), aynı şeyi yapmak için bir koymak daha iyi bir uygulamadır. `endl` luğunu.
+   > - All C++ deyimlerinin noktalı virgül ile bitmesi ve tüm C++ uygulamaların bir `main()` işlev içermesi gerekir. Bu işlev, programın başlangıçta çalıştığı şeydir. Kullanılabilmesi için tüm koda erişilebilir `main()` olması gerekir.
 
-1. Dosyayı kaydetmek için girin **Ctrl + S**, ya da seçin **Kaydet** IDE, araç çubuğundaki menü çubuğunun altındaki disket simgesini üst kısmındaki simgesi.
+1. Dosyayı kaydetmek için **CTRL + S**gırın veya IDE 'nin üst kısmına yakın bir şekilde **Kaydet** simgesini, menü çubuğunun altındaki araç çubuğundan disket simgesini seçin.
 
-1. Uygulamayı çalıştırmak için basın **Ctrl + F5** veya Git **hata ayıklama** menüsünü seçip **hata ayıklama olmadan Başlat**. Bildiren bir açılır pencere alırsanız **bu proje güncel değil**, seçtiğiniz **bu iletişim kutusunu bir daha gösterme**ve ardından **Evet** uygulamanızı oluşturmak için. Kod içinde belirtilen metni görüntüleyen bir konsol penceresi görünür görmeniz gerekir.
+1. Uygulamayı çalıştırmak için **CTRL + F5** tuşlarına basın veya **hata ayıklama** menüsüne gidin ve **hata ayıklama olmadan Başlat**' ı seçin. **Bu projenin güncel**olmadığını belirten bir açılır pencere alırsanız, **Bu iletişim kutusunu bir daha gösterme**seçeneğini belirleyip uygulamanızı derlemek için **Evet** ' i seçebilirsiniz. Kodda belirtilen metni görüntüleyen bir konsol penceresi görürsünüz.
 
-   ![Derleme ve uygulamanızı başlatın](./media/calculator-first-launch.gif "oluşturun ve uygulamanızı başlatın")
+   ![Uygulamanızı derleyin ve başlatın](./media/calculator-first-launch.gif "Uygulamanızı derleyin ve başlatın")
 
-1. İşiniz bittiğinde, konsol penceresini kapatın.
+1. İşiniz bittiğinde konsol penceresini kapatın.
 
-## <a name="add-code-to-do-some-math"></a>Bazı matematik için kod ekleyin
+## <a name="add-code-to-do-some-math"></a>Bazı matematik işlemlerini yapmak için kod ekleme
 
-Bu, bazı matematik mantığı ekleme zamanı geldi.
+Biraz matematik mantığı ekleme zamanı.
 
 ### <a name="to-add-a-calculator-class"></a>Hesaplayıcı sınıfı eklemek için
 
-1. Git **proje** menüsünü seçip **sınıfı Ekle**. İçinde **sınıf adı** düzenleme kutusu, girin *hesaplayıcı*. **Tamam**’ı seçin. İki yeni dosyayı projenize eklenir. Tek seferde tüm değiştirilen dosyaları kaydetmek için basın **Ctrl + Shift + S**. Bir klavye kısayol bulunur **dosya** > **Tümünü Kaydet**. Toolbar düğmesi için de mevcuttur **Tümünü Kaydet**, simge yanında bulunan iki disket disk **Kaydet** düğmesi. Genel olarak, bunu yapmak için iyi bir uygulamadır **Tümünü Kaydet** sık, bu nedenle, yoksa kaçırmayın dosyalarla kaydettiğinizde.
+1. **Proje** menüsüne gidin ve **Sınıf Ekle**' yi seçin. **Sınıf adı** düzenleme kutusuna *Hesaplayıcı*yazın. **Tamam**’ı seçin. Projenize iki yeni dosya eklenir. Değiştirdiğiniz tüm dosyaları aynı anda kaydetmek için **CTRL + SHIFT + S**tuşlarına basın. Bu, **Dosya** > **kaydetme**için bir klavye kısayoludur. Ayrıca, Kaydet düğmesinin yanında bulunan iki disket simgesi olan **Tümünü Kaydet**için bir araç çubuğu düğmesi de vardır. Genel olarak, kaydetme sırasında herhangi bir dosyayı kaçırmamak için sık sık **kaydedilmesi** iyi bir uygulamadır.
 
-   ![Hesaplayıcı sınıfı oluşturmak](./media/calculator-create-class.gif "hesaplayıcı sınıfı oluşturma")
+   ![Hesaplayıcı sınıfını oluşturma](./media/calculator-create-class.gif "Hesaplayıcı sınıfını oluşturma")
 
-   Blueprint işi yapan bir nesne için bir sınıf gibidir. Bu durumda, bir hesap makinesi ve nasıl çalışması gereken tanımlarız. **Sınıfı Ekle** yukarıda kullanılan sihirbaz oluşturulan sınıf aynı ada sahip .h ve .cpp dosyaları. Proje dosyalarınızı tam listesini görebilirsiniz **Çözüm Gezgini** penceresi, IDE'nin kenarındaki görünür. Pencerenin görünür değilse, menü çubuğundan açabilirsiniz: seçin **görünümü** > **Çözüm Gezgini**.
+   Bir sınıf, bir şeyi yapan bir nesne için şema gibidir. Bu durumda, bir Hesaplayıcı ve nasıl çalışması gerektiğini tanımladık. Yukarıda kullandığınız **sınıf ekleme** Sihirbazı, sınıf ile aynı ada sahip. h ve. cpp dosyalarını oluşturdu. Proje dosyalarınızın tam listesini, IDE 'nin yanında görünen **Çözüm Gezgini** penceresinde görebilirsiniz. Pencere görünmüyorsa, menü çubuğundan açabilirsiniz: **Görünüm** > **Çözüm Gezgini**' yi seçin.
 
    ![Çözüm Gezgini](./media/calculator-solution-explorer.png "Çözüm Gezgini")
 
-   Artık üç sekme düzenleyicide açık olması gerekir: *CalculatorTutorial.cpp*, *Calculator.h*, ve *Calculator.cpp*. Bunlardan birini yanlışlıkla kapatırsanız, bu çift tıklayarak açabilirsiniz **Çözüm Gezgini** penceresi.
+   Düzenleyicide Şu anda üç sekme açık olmalıdır: *Hesaplayıcı Toröğreticisi. cpp*, *Hesaplayıcı. h*ve *Hesaplayıcı. cpp*. Yanlışlıkla bunlardan birini kapatırsanız, **Çözüm Gezgini** penceresinde onu çift tıklayarak yeniden açabilirsiniz.
 
-1. İçinde **Calculator.h**, kaldırma `Calculator();` ve `~Calculator();` burada gerekmez bu yana, oluşturulan satır. Ardından, dosyayı şimdi şuna benzer şekilde aşağıdaki kod satırını ekleyin:
+1. **Hesap makinesi. h**içinde, burada `Calculator();` , `~Calculator();` bunlara ihtiyacınız olmadığından, oluşturulan ve satırları kaldırın. Ardından, dosyanın şimdi şöyle görünmesi için aşağıdaki kod satırını ekleyin:
 
     ```cpp
     #pragma once
@@ -527,20 +527,20 @@ Bu, bazı matematik mantığı ekleme zamanı geldi.
     };
     ```
 
-   > Kod anlama
+   > Kodu anlama
    >
-   > - Eklediğiniz satırı olarak adlandırılan yeni bir işlev bildirir `Calculate`, hangi toplama, çıkarma, çarpma ve bölme matematik işlemlerini çalıştırmak için kullanacağız.
-   > - C++ kod içine düzenlenir *üstbilgi* (.h) dosyaları ve *kaynak* (.cpp) dosyaları. Birkaç diğer dosya uzantıları çeşitli derleyiciler tarafından desteklenir, ancak bunlar hakkında bilgi edinmek için ana olanlardır. İşlevler ve değişkenler olan normalde *bildirilen*, diğer bir deyişle, verilen bir ad ve başlık dosyaları içinde bir tür ve *uygulanan*, veya kaynak dosyalarında bir tanımını ele alalım. Başka bir dosyada tanımlanan erişim kodu için kullanabileceğiniz `#include "filename.h"`, burada 'filename.h' değişkenleri veya kullanmak istediğiniz işlevleri bildirir dosyanın adıdır.
-   > - Sildiğiniz satırlarını bildirilen bir *Oluşturucusu* ve *yok Edicisi* sınıfı. Bunun gibi basit bir sınıf, derleyici bunları sizin için oluşturur ve bu öğreticinin kapsamı dışındadır kullanımları şunlardır.
-   > - Kodunuzun ne işe yaradığını üzerinde daha sonra ihtiyacınız olan kod bulmak kolaydır bağlı olarak farklı dosyaları düzenlemek için iyi bir uygulamadır. Bu örnekte, tanımlarız `Calculator` sınıfı içeren dosyanın listesinden `main()` işlevi, ancak planlama başvurmak `Calculator` sınıfını `main()`.
+   > - Eklediğiniz satır, toplama, çıkarma, çarpma ve `Calculate`bölme için matematik işlemlerini çalıştırmak için kullanacağımız yeni bir işlev bildirir.
+   > - C++kod, *üstbilgi* (. h) dosyaları ve *kaynak* (. cpp) dosyaları halinde düzenlenir. Çeşitli derleyiciler tarafından desteklenen çeşitli dosya uzantıları şunlardır, ancak bunlar hakkında bilgi sahibi olmak için başlıca değerlerdir. İşlevler ve değişkenler normalde *tanımlanmış*, diğer bir deyişle, bir ad ve tür, başlık dosyalarında, *uygulanan*veya bir tanım verilen kaynak dosyalarında. Başka bir dosyada tanımlanan koda erişmek için, ' filename. `#include "filename.h"`h ' öğesini kullanmak istediğiniz değişkenleri veya işlevleri bildiren dosyanın adı olan ' i kullanabilirsiniz.
+   > - Sildiğiniz iki satır, sınıf için bir *Oluşturucu* ve *yıkıcı* bildirdi. Bunun gibi basit bir sınıf için derleyici bunları sizin için oluşturur ve kullanımları Bu öğreticinin kapsamı dışındadır.
+   > - Kodunuzu, ne yapacaklarına göre farklı dosyalara düzenlemek iyi bir uygulamadır. bu sayede, daha sonra ihtiyacınız olan kodu kolayca bulabilirsiniz. Bizim örneğimizde, `Calculator` sınıfı `main()` işlevi içeren dosyadan ayrı olarak tanımladık, ancak içinde `Calculator` `main()`sınıfına başvuru planlıyoruz.
 
-1. Altında görünür bir yeşil dalgalı göreceğiniz `Calculate`. Henüz tanımladığımız çünkü `Calculate` .cpp dosyası işlevi. Word'ün gelin, açılır ampule ve seçme **'Hesapla' tanımı içinde Calculator.cpp oluşturma**. Diğer dosyada yapılan kod değişikliğinin bir Özet sunan bir açılır pencere görüntülenir. Kod eklendi *Calculator.cpp*.
+1. Altında `Calculate`yeşil renkli bir çizgi görünür. Bunun nedeni, `Calculate` . cpp dosyasında işlevi tanımlamadık. Sözcüğün üzerine gelin, açılan açık ampul ' e tıklayın ve **Hesaplayıcı. cpp ' de ' Calculate ' tanımı oluştur**' u seçin. Diğer dosyada yapılan kod değişikliğinin bir özetini sunan bir açılır pencere görünür. Kod, *Hesaplayıcı. cpp*öğesine eklendi.
 
-   ![Calculate tanımını oluşturma](./media/calculator-create-definition.gif "Calculate tanımını oluşturun")
+   ![Hesaplama tanımı oluştur](./media/calculator-create-definition.gif "Hesaplama tanımı oluştur")
 
-   Şu anda yalnızca 0,0 döndürür. Değiştirelim. Tuşuna **Esc** açılan pencereyi kapatın.
+   Şu anda yalnızca 0,0 döndürüyor. Bunu değiştirelim. Açılır pencereyi kapatmak için **ESC** tuşuna basın.
 
-1. Geçiş *Calculator.cpp* düzenleyici penceresinde dosya. Kaldırma `Calculator()` ve `~Calculator()` bölümleri (.h dosyasındaki yaptığınız gibi) ve aşağıdaki kodu ekleyin `Calculate()`:
+1. Düzenleyici penceresindeki *Hesaplayıcı. cpp* dosyasına geçin. Ve bölümlerini kaldırın (. h dosyasında yaptığınız gibi) ve aşağıdaki kodu öğesine `Calculate()`ekleyin: `~Calculator()` `Calculator()`
 
     ```cpp
     #include "pch.h"
@@ -564,18 +564,18 @@ Bu, bazı matematik mantığı ekleme zamanı geldi.
     }
     ```
 
-   > Kod anlama
+   > Kodu anlama
    >
-   > - İşlev `Calculate` bir sayı, bir işleç ve ikinci sayı kullanır ve sayı üzerinde istenen işlemi gerçekleştirir.
-   > - Hangi işleci sağlanan ve yalnızca switch deyimi denetimleri, bu işlem için karşılık gelen durum yürütür. Varsayılan: durumda program sonu gelmez bir şekilde kabul değil, operatör kullanıcı türleri bir geri dönüş durum geçerlidir. Genel olarak, daha zarif bir şekilde geçersiz kullanıcı girişlerini işler en iyisidir ancak bu, bu öğreticinin kapsamı dışındadır.
-   > - `double` Anahtar sözcüğü destekleyen ondalık sayı türü gösterir. Bu şekilde, ondalık matematik hem tamsayı matematiğini hesaplayıcı başa çıkabilir. `Calculate` İşlevi her zaman böyle bir sayıya son döndürmek için gerekli `double` olmasının nedeni çok başlangıcında (Bu gösterir işlevin dönüş türü), kod biz 0,0 varsayılan durumda bile döndürür.
-   > - .H dosyası işlev bildirir *prototip*gerektiren parametreleri derleyici önceden bildirir ve hangi dönüş türünü bekleyebilir. İşlevin tüm uygulama ayrıntılarını .cpp dosyası vardır.
+   > - İşlevi `Calculate` bir sayı, bir işleç ve ikinci bir sayı kullanır, ardından istenen işlemi sayılar üzerinde gerçekleştirir.
+   > - Switch ifadesinde hangi işlecin sağlandığını kontrol eder ve yalnızca bu işleme karşılık gelen servis talebi yürütülür. Varsayılan: durum, kullanıcının kabul edilmeyen bir işleç yazdığında, dolayısıyla programın kesintiye uğramaması durumunda bir geri dönüş olur. Genel olarak, geçersiz kullanıcı girişini daha zarif bir şekilde işlemek en iyisidir, ancak Bu öğreticinin kapsamı dışındadır.
+   > - Anahtar `double` sözcüğü, Onlukları destekleyen bir sayı türünü gösterir. Bu şekilde, hesaplayıcı hem Decimal Math hem de Integer Math işleyebilir. `Calculate` İşlevin ,`double` kodun çok başlangıcında (Bu, işlevin dönüş türünü belirtir), bu nedenle her zaman bir sayının bu tür bir değer döndürmesi gerekir. Bu, varsayılan durumda bile 0,0 getirdiğimiz anlamına gelir.
+   > - . H dosyası, derleyicinin hangi parametrelereihtiyacı olduğunu ve bundan beklenen dönüş türünü belirten işlev prototipini bildirir. . Cpp dosyası, işlevin tüm uygulama ayrıntılarına sahiptir.
 
-Oluşturun ve tekrar bu noktada kod çalıştırmak, işlemi gerçekleştirmek için danıştıktan sonra hala çıkılacak. Ardından, değiştireceksiniz `main` bazı hesaplamalar yapmak için işlevi.
+Kodu bu noktada yeniden oluşturup çalıştırırsanız, hangi işlemin gerçekleştirileceğini soran bir çıkış devam eder. Sonra, bazı hesaplamalar yapmak için `main` işlevini değiştirirsiniz.
 
-### <a name="to-call-the-calculator-class-member-functions"></a>Hesaplayıcı sınıf üyesi işlevleri çağırmak için
+### <a name="to-call-the-calculator-class-member-functions"></a>Hesaplayıcı sınıfı üye işlevlerini çağırmak için
 
-1. Artık güncelleştirelim `main` işlevi *CalculatorTutorial.cpp*:
+1. Şimdi, `main` *hesaplatoröğreticisi. cpp*işlevini güncelleştirelim:
 
     ```cpp
     // CalculatorTutorial.cpp : This file contains the 'main' function. Program execution begins and ends there.
@@ -610,83 +610,83 @@ Oluşturun ve tekrar bu noktada kod çalıştırmak, işlemi gerçekleştirmek i
     }
     ```
 
-   > Kod anlama
+   > Kodu anlama
    >
-   > - C++ programları, her zaman başlangıcından itibaren `main()` işlevi, biz diğer kodumuz buradan, bu nedenle çağırmak için gereken bir `#include` deyimi gereklidir.
-   > - Bazı başlangıç değişkenleri `x`, `y`, `oper`, ve `result` ilk sayısı, ikinci sayı, işleci ve nihai sonucu sırasıyla depolamak için bildirilir. Bu her zaman burada yapılır olan tanımlanmamış davranışı önlemek için bazı başlangıç değerleri vermek iyi yöntemdir.
-   > - `Calculator c;` Satır bir örneğini 'c' adlı bir nesne bildirir `Calculator` sınıfı. Sınıf hesaplayıcıları nasıl çalıştığı için yalnızca bir plandır; Matematik yapan belirli hesaplayıcı nesnedir.
-   > - `while (true)` Deyimi, döngü. Döngü içinde kod tekrar tekrar olduğu sürece koşul içinde yürütmeye devam eder. `()` geçerlidir. Koşul olarak yalnızca listelenen beri `true`, bu nedenle sonsuz döngü çalıştırılır her zaman true olur. Programı kapatmak için kullanıcı el ile konsol penceresini kapatmalısınız. Aksi takdirde, program her zaman için yeni giriş bekler.
-   > - `cin` Anahtar sözcüğü, kullanıcı girişi kabul etmek için kullanılır. Bu giriş akışı, konsol penceresinde girilen metin satırı işleyebilir ve her bir değişken, kullanıcı giriş eşleşmeleri gerekli belirtime varsayılarak sırayla yeniden listelenmiş içine yerleştirmek akıllıca olur. Farklı tür giriş kabul etmek için bu satırı değiştirebilirsiniz, örneğin, ikiden fazla, ancak sayı `Calculate()` işlevi da bu durumu çözmek için güncelleştirilmesi gerekir.
-   > - `c.Calculate(x, oper, y);` Deyim aramaları `Calculate` işlevi daha önce tanımlanan ve kaynakları girilen giriş değerleri. İşlev ardından depolanan bir sayı döndürür `result`.
-   > - Son olarak, `result` hesaplama sonucu kullanıcının gördüğü şekilde konsola yazdırılır.
+   > - Programlar C++ her zaman `main()` işlevde başladığından, diğer kodumuzu buradan çağırmamız gerekir, bu nedenle bir `#include` ifade gereklidir.
+   > - Bazı ilk değişkenler `x` `y` `result` ,, ve sırasıyla ilk Number, İkinci sayı, işleç ve nihai sonucu depolayacak şekilde bildirilmiştir. `oper` Bu, burada yapılan tanımsız davranışlara engel olmak için bazı ilk değerleri vermek her zaman iyi bir uygulamadır.
+   > - Satır, `Calculator` sınıfının bir örneği olarak ' c ' adlı bir nesne bildirir. `Calculator c;` Sınıfın kendisi, hesaplayıcıların nasıl çalıştığı hakkında yalnızca bir şema olur; nesnesi, matematik yapan özel Hesaplayıcı ' dır.
+   > - `while (true)` İfade bir döngüdür. Döngü içindeki kod, `()` ' ın içindeki koşul doğru olduğu sürece yeniden yürütmeye devam eder. Koşul yalnızca olarak listelendiğinden, her zaman `true`doğru olduğundan, döngü süresiz olarak çalışır. Programı kapatmak için Kullanıcı konsol penceresini el ile kapatması gerekir. Aksi takdirde, program her zaman yeni giriş bekler.
+   > - `cin` Anahtar sözcüğü, kullanıcıdan girişi kabul etmek için kullanılır. Bu giriş akışı, konsol penceresinde girilen bir metin satırını işlemek için yeterince akıllı bir işlemdir ve Kullanıcı girişinin gerekli belirtile eşleştiğini varsayarak, listelenen değişkenlerin her birini sırayla yerleştirebilirsiniz. Bu satırı, örneğin iki sayıdan fazla farklı giriş türlerini kabul etmek için değiştirebilir, ancak `Calculate()` işlevin bunu işlemek için de güncelleştirilmeleri gerekir.
+   > - İfade, daha önce `Calculate` tanımlanan işlevi çağırır ve girilen giriş değerlerini sağlar. `c.Calculate(x, oper, y);` İşlev daha sonra ' de `result`depolanan bir sayı döndürür.
+   > - `result` Son olarak konsola yazdırılır, böylece Kullanıcı hesaplamanın sonucunu görür.
 
-### <a name="build-and-test-the-code-again"></a>Derleme ve kod yeniden test edin
+### <a name="build-and-test-the-code-again"></a>Kodu yeniden derleyin ve test edin
 
-Artık bu program yeniden her şeyin düzgün çalıştığından emin olmak için test etme vakti.
+Artık, her şeyin düzgün çalıştığından emin olmak için programı yeniden test etme zamanı.
 
-1. Tuşuna **Ctrl + F5** oluşturmak ve uygulamayı başlatmak için.
+1. Uygulamayı yeniden oluşturmak ve başlatmak için **CTRL + F5** tuşlarına basın.
 
-1. ENTER `5 + 5`basın **Enter**. Sonucu 10 olduğundan emin olun.
+1. Yazın `5 + 5`ve ENTER tuşunabasın. Sonucun 10 olduğunu doğrulayın.
 
-   ![5 + 5 sonucunu](./media/calculator-five-plus-five.png "5 + 5 sonucu")
+   ![5 + 5 sonucu](./media/calculator-five-plus-five.png "5 + 5 sonucu")
 
-## <a name="debug-the-app"></a>Uygulamasında hata ayıklama
+## <a name="debug-the-app"></a>Uygulamada hata ayıklama
 
-Kullanıcının herhangi bir şey konsol penceresine yazmak ücretsiz olduğundan, hesap makinesi beklendiği gibi bazı giriş işleme emin olalım. Biz ayrıntılı, adım adım neler incelemek için programı çalıştırmak yerine şimdi, bunun yerine, hata ayıklayın.
+Kullanıcı konsol penceresine herhangi bir şey yazmadığından ücretsiz olduğundan, hesap makinesinin bazı girişleri beklendiği gibi işlemesini sağlayın. Programı çalıştırmak yerine, bunun yerine hata ayıklaalım, bu nedenle ne yaptığını ayrıntılı olarak inceleyebileceğiniz adım adım.
 
-### <a name="to-run-the-app-in-the-debugger"></a>Hata ayıklayıcıda uygulamayı çalıştırmak için
+### <a name="to-run-the-app-in-the-debugger"></a>Uygulamayı hata ayıklayıcıda çalıştırmak için
 
-1. Bir kesme noktası ayarlamak `result = c.Calculate(x, oper, y);` satır sonra yalnızca kullanıcı girişi için istendi. Kesme noktası ayarlamak için gri dikey çubuk Düzenleyicisi penceresinin sol kenarda satır İleri'yi tıklatın. Kırmızı bir nokta belirir.
+1. Yalnızca kullanıcıdan giriş sorulduktan `result = c.Calculate(x, oper, y);` sonra, satırda bir kesme noktası ayarlayın. Kesme noktasını ayarlamak için, düzenleyici penceresinin sol kenarındaki gri dikey çubukta bulunan çizgiye tıklayın. Kırmızı bir nokta görünür.
 
    ![Bir kesme noktası ayarlamak](./media/calculator-set-breakpoint.gif "bir kesme noktası ayarlayın")
 
-   Artık programın hata ayıklama, her zaman bu satırındaki yürütülmesine duraklatır. Basit durumlar için program çalışıyor üzerine kaba bir fikriniz zaten sahibiz. Her yürütme duraklatmak istemediğiniz olduğundan, kesme noktası koşullu olalım.
+   Artık programda hata ayıklaması yaptığımız zaman, bu satırdaki yürütmeyi her zaman duraklatır. Programın basit durumlar için çalışmasına yönelik kaba bir fikrimiz zaten var. Yürütmeyi her seferinde duraklatmak istemediğimiz için, kesme noktasını koşullu hale getirir.
 
-1. Kesme noktasını temsil eden kırmızı nokta sağ tıklatıp seçin **koşullar**. Koşul için düzenleme kutusuna girin `(y == 0) && (oper == '/')`. Seçin **Kapat** işiniz bittiğinde düğmesi. Koşul otomatik olarak kaydedilir.
+1. Kesme noktasını temsil eden kırmızı noktaya sağ tıklayın ve **koşullar**' ı seçin. Koşulun düzenleme kutusunda, girin `(y == 0) && (oper == '/')`. İşiniz bittiğinde **Kapat** düğmesini seçin. Koşul otomatik olarak kaydedilir.
 
-   ![Koşullu kesme noktası ayarlamak](./media/calculator-conditional-breakpoint.gif "koşullu kesme noktası ayarlayın")
+   ![Koşullu kesme noktası ayarlama](./media/calculator-conditional-breakpoint.gif "Koşullu kesme noktası ayarlama")
 
-   Artık 0 ile bölme özellikle yapılmaya çalışılırsa biz yürütme kesme noktasında duraklatın.
+   Artık 0 olarak bölme denendiğinde yürütme kesme noktasında yürütmeyi durakladık.
 
-1. Programda hata ayıklamak için basın **F5**, ya da seçin **yerel Windows hata ayıklayıcı** yeşil ok simgesi olan araç çubuğu düğmesi. Konsol uygulamanıza "5-0" gibi bir şey girerseniz, programın normal şekilde davranır ve çalışmaya devam eder. Ancak, yazarsanız, "10 / 0", kesme noktasında duraklatır. Herhangi bir sayıda işleci ve sayılar arasında boşluk koymak getirebilirsiniz; `cin` giriş uygun şekilde ayrıştırmak akıllıca olur.
+1. Programda hata ayıklamak için **F5**'e basın veya yeşil ok simgesine sahip olan **yerel Windows hata ayıklayıcısı** araç çubuğu düğmesini seçin. Konsol uygulamanızda, "5-0" gibi bir şey girerseniz, program normal şekilde davranır ve çalışır durumda kalır. Ancak, "10/0" yazarsanız, kesme noktasında duraklatılır. İşleç ve sayı arasında istediğiniz sayıda boşluk da koyabilirsiniz; `cin` girişi uygun şekilde ayrıştırmaya yetecek kadar akıllı bir değer.
 
-   ![Koşullu kesme noktası konumunda duraklama](./media/calculator-debug-conditional.gif "koşullu kesme noktasında Duraklat")
+   ![Koşullu kesme noktasında Duraklat](./media/calculator-debug-conditional.gif "Koşullu kesme noktasında Duraklat")
 
-### <a name="useful-windows-in-the-debugger"></a>Yararlı windows hata ayıklayıcısı
+### <a name="useful-windows-in-the-debugger"></a>Hata ayıklayıcıda yararlı pencereler
 
-Kodunuzdaki hataları ayıklamanıza olduğunda, bazı yeni windows göründüğünü fark edebilirsiniz. Bu windows hata ayıklama deneyiminizi yardımcı olabilir. Bir göz atın **Otolar** penceresi. **Otolar** penceresi gösterir, değişkenlerin geçerli değerleri önce ve geçerli satıra kadar en az üç satırlarında kullanılır.
+Kodunuzda hata ayıkladığınızda, bazı yeni pencerelerin göründüğünü fark edebilirsiniz. Bu pencereler hata ayıklama deneyiminize yardımcı olabilir. **Oto** penceresine göz atın. **Oto** penceresinde, geçerli satıra en az üç satır önce kullanılan değişkenlerin geçerli değerlerini gösterir.
 
-   ![Otomatik değişkenler penceresi](./media/calculator-autos.png "otomatik değişkenler penceresi")
+   ![Oto penceresi](./media/calculator-autos.png "Oto penceresi")
 
-Tüm bu işlevden değişkenlerin görmek için geçiş **Yereller** penceresi. Aslında bu değişkenlerin değerleri, hata ayıklama sırasında programa sahip etkisini görmek için değiştirebilirsiniz. Bu durumda, bunları tek başına bırakacağız.
+Bu işlevden tüm değişkenleri görmek için **Yereller** penceresine geçin. Bu değişkenlerin değerlerini hata ayıklama sırasında değiştirebilir ve programda neler olacağını görebilirsiniz. Bu durumda, bunları tek başına bırakacağız.
 
-   ![Yerel öğeler penceresinde](./media/calculator-locals.png "yerel öğeler penceresi")
+   ![Yereller penceresi](./media/calculator-locals.png "Yereller penceresi")
 
-Ayrıca kodun kendisi nerede yürütülmesi şu anda duraklatıldı geçerli değerlerini görmek için değişkenleri üzerine gelerek. İlk tıklayarak düzenleyici penceresinde odağı olduğundan emin olun.
+Ayrıca, yürütmenin Şu anda duraklatıldığı geçerli değerlerini görmek için yalnızca kodun kendisindeki değişkenlerin üzerine gelebilmeniz gerekir. Önce üzerine tıklayarak düzenleyici penceresinin odaklandığından emin olun.
 
-   ![Geçerli değişken değerlerini görüntülemek için üzerine gelindiğinde kullanılacak](./media/calculator-hover-tooltip.gif "geçerli değişken değerlerini görüntülemek için üzerine gelme")
+   ![Geçerli değişken değerlerini görüntülemek Için üzerine gelin](./media/calculator-hover-tooltip.gif "Geçerli değişken değerlerini görüntülemek Için üzerine gelin")
 
 ### <a name="to-continue-debugging"></a>Hata ayıklamaya devam etmek için
 
-1. Sol taraftaki sarı satırın geçerli yürütme noktasını gösterir. Geçerli satırı çağrıları `Calculate`, bu nedenle basın **F11** için **içine adımla** işlevi. Kendiniz gövdesinde bulabilirsiniz `Calculate` işlevi. Dikkatli olmanız **içine adımla**; çok fazla yaparsanız çok zaman boşa harcanmasına neden olabilir. Temel, standart kitaplık işlevleri dahil olmak üzere olduğunuz satırında kullandığınız herhangi bir kod girer.
+1. Sol taraftaki sarı çizgi, geçerli yürütme noktasını gösterir. Geçerli satırı çağırır `Calculate`, bu nedenle işlev **içine** dönmek için **F11** tuşuna basın. Kendi kendinize `Calculate` işlevin gövdesinde bulacaksınız. **Adımla**ilgili dikkatli olun; Bunu çok fazla yaparsanız, çok sayıda atık hale gelebilir. Standart Kitaplık işlevleri dahil olmak üzere, üzerinde olduğunuz satırda kullandığınız herhangi bir koda gider.
 
-1. Yürütme noktası başlangıcında olduğuna göre `Calculate` işlev, basın **F10** program yürütmesinde sonraki satıra taşımak için. **F10** olarak da bilinen **Step Over**. Kullanabileceğiniz **Step Over** ne satırın her bir parçası oluşma ayrıntılara delving olmadan gelen satırı taşımak için. Genel olarak kullanmanız gereken **Step Over** yerine **içine adımla**, başka bir yerden çağrılan kodu daha derinlemesine istemediğiniz sürece (gövdesinin ulaşmak için yaptığınız gibi `Calculate`).
+1. Yürütme noktası `Calculate` işlevin başlangıcında olduğuna göre, program yürütmesinin sonraki satırına geçmek için **F10** tuşuna basın. **F10** , **adım adım**olarak da bilinir. Satırdaki her bir bölümde gerçekleşdiklerin ayrıntılarına odaklanmadan satırdan satıra geçiş yapmak için **Step Over** ' u kullanabilirsiniz. Genel olarak, başka bir yerde Çağrılmakta olan kodu daha ayrıntılı bir şekilde incelemek istemediğiniz sürece (' ın `Calculate`gövdesine ulaştığınız gibi) daha fazla bilgi almak istiyorsanız, ' ın **içine adımla**yerine **adımını** kullanmanız gerekir.
 
-1. Kullanmaya devam **F10** için **Step Over** geri gelene kadar her bir satır `main()` işlev diğer dosyasında ve durdurmayı `cout` satır.
+1. Diğer `main()` dosyadakiişlevegeridönüpsatırüzerindeduranakadarherbirsatırdaadımadımilerleyin.`cout`
 
-   ![Adım dışında Calculate ve sonucunu denetle](./media/calculator-undefined-zero.gif "adım dışında Calculate ve sonucunu denetle")
+   ![Hesaplama ve denetim sonucunu adımla](./media/calculator-undefined-zero.gif "Hesaplama ve denetim sonucunu adımla")
 
-   Beklenen değer program yapıyor gibi görünüyor: ilk sayı alır ve saniye böldüğünü. Üzerinde `cout` satır, üzerine `result` değişkeni veya göz atın `result` içinde **Otolar** penceresi. Değeri doğru görünmüyor, "bilgi" şimdi düzeltmek listelendiğini görürsünüz. `cout` Satır yalnızca çıkarır ne olursa olsun değer depolanan `result`, kaldığında, bir veya daha fazla satır iletecek şekilde kullanarak **F10**, konsol penceresinde görüntüler:
+   Program beklenildiği gibi görünüyor: ilk sayıyı alır ve ikinciden böler. Satırda, `result` değişkenin üzerine gelin `result` veya oto penceresinde bir göz atın. `cout` Değerin "INF" olarak listelendiğini görürsünüz ve bu, doğru görünmüyor ve bunu çözeceğiz. Satır, ' de `result`hangi değerin depolandığını gösterir. bu nedenle, F10 kullanarak ileri bir satır daha ilerlememeniz halinde konsol penceresi şunu görüntüler: `cout`
 
-   ![Sıfıra sonucunu](./media/calculator-divide-by-zero-fail.png "sıfıra sonucu")
+   ![Sıfıra bölme sonucu](./media/calculator-divide-by-zero-fail.png "Sıfıra bölme sonucu")
 
-   Bunun nedeni, sıfıra bölünme tanımsızdır program istenen işlemi için sayısal bir yanıt yok. Bu nedenle bu sonucu kullanmasıdır.
+   Bu sonuç, sıfıra bölme tanımsız olduğundan, programın istenen işleme bir sayısal yanıtı olmadığından meydana gelir.
 
-### <a name="to-fix-the-divide-by-zero-error"></a>"Sıfıra" hatayı düzeltmek için
+### <a name="to-fix-the-divide-by-zero-error"></a>"Sıfıra bölme" hatasını onarmak için
 
-Şimdi sorun bir kullanıcı anlayabilmeniz sıfıra bölme daha düzgün bir şekilde işleyin.
+Daha düzgün bir şekilde bölme yaparak, bir Kullanıcı sorunu anlayabiliyor.
 
-1. Aşağıdaki değişiklikleri yapın *CalculatorTutorial.cpp*. (Düzenlerken adlı bir hata ayıklayıcı özelliği sayesinde çalışan bir program bırakabilirsiniz **Düzenle ve devam et**):
+1. *Hesaplatoröğreticisi. cpp*' de aşağıdaki değişiklikleri yapın. ( **Düzenle ve devam et**adlı bir hata ayıklayıcı özelliği sayesinde programı düzenlediğiniz şekilde çalışır durumda bırakabilirsiniz):
 
     ```cpp
     // CalculatorTutorial.cpp : This file contains the 'main' function. Program execution begins and ends there.
@@ -728,30 +728,30 @@ Ayrıca kodun kendisi nerede yürütülmesi şu anda duraklatıldı geçerli de�
     }
     ```
 
-1. Şimdi basın **F5** sonra. Tüm kullanıcı girişi isteyebilir duraklatmak sahip oluncaya kadar program yürütme devam eder. Girin `10 / 0` yeniden. Şimdi daha yararlı bir ileti yazdırılır. Kullanıcı için daha fazla giriş sorulur ve program normalde yürütme devam eder.
+1. Şimdi **F5** tuşuna basın. Program yürütme, Kullanıcı girişi istemek için duraklamaya kadar tüm şekilde devam eder. Yeniden `10 / 0` girin. Şimdi, daha yararlı bir ileti yazdırılır. Kullanıcıdan daha fazla giriş istenir ve program normal yürütülmeye devam eder.
 
-   ![Değişikliklerden sonra nihai sonucu](./media/calculator-final-verification.gif "değişikliklerden sonra nihai sonucu")
+   ![Değişikliklerden sonraki nihai sonuç](./media/calculator-final-verification.gif "Değişikliklerden sonraki nihai sonuç")
 
    > [!Note]
-   > Hata ayıklama modunda çalışırken kod düzenleme, kod Eskitme riski yoktur. Hata ayıklayıcı hala eski kodunuzu çalışıyor ve henüz yaptığınız değişikliklerle güncelleştirmemiş kullandığınızda ortaya çıkar. Hata ayıklayıcı bu durumda bildiren bir iletişim kutusu açılır. Bazı durumlarda, basmanız gerekebilir **F5** yürütülen kod yenilenemedi. Yürütme noktası iç işlevi, işlev dışında adım gerektiğini olmakla birlikte bir işlev içinde bir değişiklik yaparsanız, özellikle, ardından buna güncelleştirilen kodun yeniden almak için yedekleyin. Herhangi bir nedenden dolayı çalışmaz ve bir hata iletisi görürsünüz, araç çubuğunda IDE üst kısmındaki menülerinin altında kırmızı bir kare tıklayarak hata ayıklamayı durdurmak ve ardından tekrar girerek hata ayıklamayı Başlat **F5** yeşil seçerek veya " durdurma düğmesi yanındaki oku araç çubuğunda "yürütün.
+   > Hata ayıklama modundayken kodu düzenlerken, kodun eskimiş olma riski vardır. Bu durum, hata ayıklayıcı eski kodunuzu çalıştırmakta olduğunda ve henüz değişikliklerinizi güncelleştirmemişse oluşur. Hata ayıklayıcı, bu gerçekleştiğinde sizi bilgilendirmek için bir iletişim kutusu açılır. Bazen, yürütülen kodu yenilemek için **F5** tuşuna basmanız gerekebilir. Özellikle, bir işlev içinde bir değişiklik yaparsanız, yürütme noktası bu işlevin içindeyse, işlevin dışına dönerek güncelleştirilmiş kodu almak için yeniden tekrar açmanız gerekir. Bu bir nedenden dolayı işe yaramazsa ve bir hata iletisi görürseniz, IDE 'nin en üstündeki menülerin altında bulunan araç çubuğunda kırmızı kareye tıklayarak hata ayıklamayı durdurabilirsiniz ve ardından **F5** tuşuna basarak veya s 'nin yanındaki yeşil "Oynat" okunu seçerek hata ayıklamayı yeniden başlatabilirsiniz. araç çubuğundaki üst düğmesi.
    
-   > Çalıştırma ve hata ayıklama kısayolları anlama
+   > Çalıştırma ve hata ayıklama kısayollarını anlama
    >
-   > - **F5** (veya **hata ayıklama** > **hata ayıklamayı Başlat**) bir hata ayıklama oturumu zaten etkin değil ve bir kesme noktasına isabet kadar program çalıştırılır başlatır veya program gereksinimlerini kullanıcı girişi. Kullanıcı müdahalesi gerekli değildir ve hiçbir kesme noktası isabet kullanılabilir, program sona erer ve programın çalışması tamamlandığında konsol penceresini kendisi kapatır. Bir "Merhaba Dünya" programı çalıştırmak için benzer bir şey varsa, **Ctrl + F5** veya girdiğiniz önce bir kesme noktası ayarlamak **F5** penceresi açık tutmak için.
-   > - **CTRL + F5** (veya **hata ayıklama** > **hata ayıklama olmadan Başlat**) hata ayıklama moduna geçmeden uygulamayı çalıştırır. Bu hata ayıklama değerinden biraz daha hızlıdır ve programın yürütülmesi tamamlandıktan sonra konsol penceresi açık kalır.
-   > - **F10** (olarak bilinen **Step Over**) aracılığıyla yineleme sağlar-satır satır, kod ve kod nasıl çalışır ve her adımda yürütme değişken değerleri nelerdir görselleştirin.
-   > - **F11** (olarak bilinen **içine adımla**) benzer şekilde çalışır **Step Over**yürütme satırında herhangi bir işlevler halinde adımları dışında. Örneğin, çalıştırılan satır bir işlevi çağırıyorsa tuşuna basarak **F11** işlev gövdesine işaretçiyi hareket, işlevin kod satırına geri dönmeyi önce çalıştırılan izleyebilmeniz öğesinde başladı. Tuşuna basarak **F10** adımları ve yalnızca işlev çağrısı üzerinden, sonraki satıra taşır; işlev çağrısı yine de gerçekleşir, ancak ne yaptığını göstermek için programı duraklatmak değil.
+   > - **F5** (veya > hata ayıklama**başlatma hata ayıklaması**), bir hata ayıklama oturumu başlatır ve bir kesme noktasına ulaşılana veya program kullanıcı girişine ihtiyaç duyana kadar programı çalıştırır. Kullanıcı girişi gerekmiyorsa ve isabet almak için kullanılabilir kesme noktası yoksa, program sonlanır ve program çalışmayı bitirdiğinde konsol penceresi kendisini kapatır. Çalıştırmak üzere bir "Merhaba Dünya" programı varsa, pencereyi açık tutmak için **F5** tuşuna girmeden önce **CTRL + F5** kullanın veya bir kesme noktası ayarlayın.
+   > - **CTRL + F5** (veya > hata ayıklama**olmadan Başlat**), hata ayıklama moduna geçmeden uygulamayı çalıştırır. Bu, hata ayıklamadan biraz daha hızlıdır ve program yürütmeyi tamamladıktan sonra konsol penceresi açık kalır.
+   > - **F10** ( **adım adım**olarak bilinir) kod içinde, satır içinde yinelemenize ve kodun nasıl çalıştırılacağını ve her yürütme adımında değişken değerlerinin ne olduğunu görselleştirmenizi sağlar.
+   > - **F11** ( **adım**olarak bilinir), yürütme sırasında çağrılan herhangi bir Işleve adım adım olmak üzere, **adımla**aynı şekilde çalışır. Örneğin, yürütülenmekte olan satır bir işlev çağırırsa, **F11** tuşuna basıldığında işaretçiyi işlevin gövdesine taşıdıkça işlevin kodunu, başlattığınız satıra geri gelmeden önce, çalıştırılan işlevin kodunu takip edebilirsiniz. İşlev çağrısının üzerindeki **F10** adımlara basmak ve yalnızca sonraki satıra gitme; işlev çağrısı hala gerçekleşir, ancak program ne yaptığını göstermek için duraklamaz.
 
-### <a name="close-the-app"></a>Uygulamayı kapatın
+### <a name="close-the-app"></a>Uygulamayı kapat
 
-- Hala çalışıyorsa hesaplayıcısı uygulaması için konsol penceresini kapatın.
+- Hala çalışıyorsa, hesaplayıcı uygulamasının konsol penceresini kapatın.
 
 ## <a name="the-finished-app"></a>Tamamlanmış uygulama
 
-Tebrikler! Siz hesaplayıcı uygulama kodunu ve yerleşik tamamlayıp Visual Studio'da hata ayıklaması.
+Tebrikler! Hesaplayıcı uygulamasının kodunu tamamladınız, Visual Studio 'da oluşturulup hata ayıklaması yaptınız.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-[C++ için Visual Studio hakkında daha fazla bilgi edinin](https://blogs.msdn.microsoft.com/vcblog/2017/04/21/getting-started-with-visual-studio-for-c-and-cpp-development/)
+[İçin Visual Studio hakkında daha fazla bilgi edininC++](https://blogs.msdn.microsoft.com/vcblog/2017/04/21/getting-started-with-visual-studio-for-c-and-cpp-development/)
 
 ::: moniker-end
