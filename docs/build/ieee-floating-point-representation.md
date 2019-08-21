@@ -11,126 +11,126 @@ helpviewer_keywords:
 - long double
 - real*4 value
 ms.assetid: 537833e8-fe05-49fc-8169-55fd0314b195
-ms.openlocfilehash: 130a79ae6846df27ffabfd6cb6649e0a0de03e4b
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: de132dcf28747cd866229cff8972e2aed271a047
+ms.sourcegitcommit: 9d4ffb8e6e0d70520a1e1a77805785878d445b8a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65220628"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69630350"
 ---
 # <a name="ieee-floating-point-representation"></a>IEEE Kayan Noktası Temsili
 
-Microsoft C++ (MSVC) IEEE sayısal standartları ile tutarlıdır. Standart IEEE 754 kayan nokta biçimleri, donanım gerçek sayıları temsil etmek için bir yol açıklar. MSVC derleyici tarafından hedeflenen donanımda gösterilebilir bir kayan noktalı sayılar için en az beş iç biçimleri vardır, ancak derleyicinin yalnızca iki tanesi kullanır. *Tek duyarlıklı* (4-bayt) ve *çift duyarlıklı* (8 bayt) biçimleri MSVC içinde kullanılır. Tek duyarlıklı anahtar sözcüğü kullanılarak bildirilen **float**. Çift duyarlıklı anahtar sözcüğü kullanılarak bildirilen **çift**. IEEE standardı ayrıca belirtir *yarı çift duyarlıklı* (2 baytlık) ve *dört duyarlıklı* (16 baytlık) biçimleri yanı sıra bir *çift genişletilmiş duyarlık* (10 bayt) Bazı C ve C++ Derleyicileri olarak uygulayan bir biçim **uzun çift** veri türü. MSVC derleyicisi, **uzun çift** veri türü farklı bir tür kabul edilir, ancak depolama türü eşleyen **çift**. Yoktur, ancak, iç ve derleme dili desteği genişletilmiş-duyarlıklı (10 bayt) biçimi de dahil olmak üzere diğer biçimlerini kullanarak hesaplamalar için donanım tarafından desteklenen burada.
+Microsoft C++ (MSVC), IEEE sayısal standartlarla tutarlıdır. IEEE-754 standardı, kayan nokta biçimlerini, donanımda gerçek sayıları göstermenin bir yolunu açıklar. MSVC derleyicisi tarafından hedeflenen donanımda gösterilebilir olan kayan noktalı sayılar için en az beş iç biçim vardır ancak derleyici yalnızca ikisini de kullanır. *Tek duyarlıklı* (4 baytlık) ve *çift duyarlıklı* (8 baytlık) biçimler MSVC içinde kullanılır. Tek duyarlık, **float**anahtar sözcüğü kullanılarak bildirilmiştir. Çift duyarlık, **Double**anahtar sözcüğü kullanılarak bildirilmiştir. IEEE standart Ayrıca, bazı C ve C++ derleyicilerin uzun süre içinde çalıştığı, *çift genişletilmiş duyarlık* (10 baytlık) ve *dörtlü duyarlık* (16 baytlık) biçimlerini de belirtir.  **Double** veri türü. MSVC derleyicisinde, **Long Double** veri türü farklı bir tür olarak değerlendirilir, ancak depolama türü **Double**ile eşlenir. Ancak, donanım tarafından desteklenen çift genişletilmiş duyarlık (10 baytlık) biçimi de dahil olmak üzere diğer biçimleri kullanan hesaplamalar için iç ve derleme dili desteği vardır.
 
-Değerleri şu şekilde depolanır:
+Değerler aşağıdaki gibi depolanır:
 
-|Değer|Olarak depolanır|
+|Değer|Farklı depolanan|
 |-----------|---------------|
-|tek duyarlıklı|bit, 8 bitlik üs, 23 bit anlam oturum açın.|
-|çift duyarlık|bit, 11 bit üssü, 52 bit anlam oturum açın.|
-|çift genişletilmiş duyarlık|bit, üs 15-bit, 64-bit anlam oturum açın.|
+|tek duyarlıklı|imza biti, 8 bit üs, 23 bit mantisinin|
+|Çift duyarlıklı|imza biti, 11 bit üs, 52-bit mantisinin|
+|Çift genişletilmiş duyarlık|imza biti, 15 bit üs, 64 bit mantisinin|
 
-Tek duyarlık hem çift duyarlık biçimlerde adlı kesirli bölümü içinde bir varsayılan satır aralığı 1 yoktur *anlam* (ve bazen denir *Mantis*), diğer bir deyişle depolanan değil yalnızca 23 veya 52 bit depolanan olsa bile katsayılar gerçekten 24 veya 53 bit, böylece bellek. Genişletilmiş-duyarlıklı biçimi, aslında bu bit depolar.
+Tek duyarlıklı ve çift duyarlıklı biçimlerde, kesir bölümünde *mantisinin* (ve bazen *Mantis*olarak adlandırılır) olarak adlandırılan ve bu durumda katsayılar aslında 24 veya 53 olacak şekilde bilinen bir 1. yalnızca 23 veya 52 bit depolansa da BITS. Çift genişletilmiş duyarlık biçimi aslında bu biti depolar.
 
-Üsler olası değerlerine yarısını güçlü eğilimi nedeniyle. Bu, bu sapması gerçek üs almak için saklı üs gelen çıkarma anlamına gelir. Saklı üs sapması'dan küçük, negatif üssünün gerçekten olur.
+Üsler, olası değerinin yarısını altına alınır. Bu, gerçek üs değeri almak için bu farkı depolanan üsden çıkarsettiğiniz anlamına gelir. Depolanan üs, sapma değerinden küçükse, aslında negatif bir üs olur.
 
-Üsler gibi ağırlıklı:
+Üsler aşağıdaki gibi taraflı bir şekilde yapılır:
 
-|Üs|Tarafından ağırlıklı|
+|S|Taraflı|
 |--------------|---------------|
-|8-bit (tek duyarlıklı)|127|
-|11-bit (çift duyarlıklı)|1023|
-|15-bit (Genişletilmiş-duyarlıklı)|16383|
+|8 bit (tek duyarlıklı)|127|
+|11 bit (çift duyarlıklı)|1023|
+|15 bit (çift genişletilmiş duyarlık)|16383|
 
-Bu üsler katları değildir; powers iki değildirler. Diğer bir deyişle, 8 bitlik saklı üsler-127 0 en fazla 254 depolanan 127 değişebilir. ' % S'değeri 2<sup>127</sup> 10 kabaca eşdeğerdir<sup>38</sup>, tek duyarlıklı gerçek sınırını olduğu.
+Bu üsler on üstür değildir; ikisi de iki üsüslerdir. Diğer bir deyişle, 8 bit depolanan üsler-127 ile 127 arasında, 0 ile 254 arasında depolanabilir. 2<sup>127</sup> değeri kabaca, tek duyarlıklı gerçek limiti olan 10<sup>38</sup>ile eşdeğerdir.
 
-Anlam formun ikili bir kesir olarak depolanan 1.XXX.... Bu bölümü, büyüktür veya eşittir 1 ve 2'den küçük bir değere sahip. Gerçek sayıları, her zaman depolandığını unutmayın *formu normalleştirilmiş*; diğer bir deyişle, anlam sol-yüksek sıralı bitten anlam, her zaman 1'dir, kaydırılacağı uzaklık. Bu bit her zaman 1 olduğundan (depolanmayan) varsayılır tek duyarlık hem çift duyarlık biçimde. İkili (ondalık değil) noktası yalnızca önde gelen 1 sağında varsayılır.
+Mantisinin 1.XXX... biçiminin ikili bir kesri olarak depolanır. Bu kesir 1 ' den büyük veya buna eşit ve 2 ' den küçük bir değere sahip. Gerçek sayıların her zaman *normalleştirilmiş biçimde*depolandığını unutmayın; diğer bir deyişle, mantisinin, mantisinin 'ın yüksek sıra biti her zaman 1 olacak şekilde sola kaydır. Bu bit her zaman 1 olduğundan, tek duyarlıklı ve çift duyarlıklı biçimlerde (depolanmaz) varsayılır. İkili (ondalık değil) noktasının yalnızca önünde 1 ' in sağında olduğu varsayılır.
 
-Biçim sonra çeşitli boyutları şu şekildedir:
+Böylece, çeşitli boyutlar için aşağıdaki şekildedir:
 
-|Biçimi|1 bayt|2 bayt|Bayt 3|4 bayt|...|bayt n|
+|Biçimi|bayt 1|Byte 2|byte 3|bayt 4|...|bayt n|
 |------------|------------|------------|------------|------------|---------|------------|
 |tek duyarlıklı| `SXXXXXXX`|`XMMMMMMM`|`MMMMMMMM`|`MMMMMMMM`|||
-|çift duyarlık|`SXXXXXXX`|`XXXXMMMM`|`MMMMMMMM`|`MMMMMMMM`|...|`MMMMMMMM`|
-|çift genişletilmiş duyarlık|`SXXXXXXX`|`XXXXXXXX`|`1MMMMMMM`|`MMMMMMMM`|...|`MMMMMMMM`|
+|Çift duyarlıklı|`SXXXXXXX`|`XXXXMMMM`|`MMMMMMMM`|`MMMMMMMM`|...|`MMMMMMMM`|
+|Çift genişletilmiş duyarlık|`SXXXXXXX`|`XXXXXXXX`|`1MMMMMMM`|`MMMMMMMM`|...|`MMMMMMMM`|
 
-`S` İmza biti temsil `X`'s popülasyon üs bitleri ve `M`'s anlam bitleri. En soldaki bit tek duyarlık hem çift duyarlık biçimlerde kabul edilir, ancak "1" mevcut bayt çift genişletilmiş duyarlık biçimi 3 unutmayın.
+`S`işaret bitini temsil eder, bu `X`, ' nin taraflı üs bitleridir `M`ve mantisinin bitleridir. En soldaki bit tek duyarlıklı ve çift duyarlıklı biçimlerde varsayılır, ancak çift genişletilmiş duyarlık biçiminin byte 3 ' de "1" olarak mevcuttur.
 
-İkili noktasının düzgün bir şekilde geçiş yapmak için ilk üs unbias ve ardından ikili noktasının sağa taşıyın veya uygun bit sayısı kadar sola.
+İkili noktayı düzgün bir şekilde kaydırmak için, öncelikle üs değeri kaldırır ve ardından ikili noktayı sağ veya uygun bit sayısının soluna taşıyın.
 
 ## <a name="special-values"></a>Özel değerler
 
-Kayan nokta özel olarak kabul edilen bazı değerler biçimler.
+Kayan nokta biçimleri, özel olarak değerlendirilen bazı değerleri içerir.
 
-### <a name="zero"></a>Sıfır
+### <a name="zero"></a>Sıfırlama
 
-Sıfır, hangi çıkarıldığında bir tek duyarlıklı veya çift duyarlık değeri normalleştirilmiş biçiminde kolaylaştırır normalleştirilmesine olamaz. Sıfır, bir özel bir bit desenine 0 temsil eder. Ayrıca temsil etmek için - 0 işaretiyle sıfır olarak biti ayarlanmamış, ancak - 0 ve 0 her zaman eşit olarak karşılaştırın.
+Sıfır değeri normalleştirilemez, bu da tek duyarlıklı veya çift duyarlıklı bir değer olan normalleştirilmiş biçimde tablo haline gelir. Tüm sıfırlardan oluşan özel bir bit deseninin 0 olduğunu temsil eder. -0 ' ı işaret biti kümesiyle sıfır olarak temsil etmek de mümkündür, ancak-0 ve 0 her zaman eşit olarak karşılaştırılır.
 
 ### <a name="infinities"></a>Sonsuz
 
-+ ∞ ve −∞ değerleri üs tümüyle ve sıfır mantisinin tarafından temsil edilir. Pozitif ve negatif sonsuz imza biti kullanarak temsil edilebilir.
+\+ ∞ Ve − ∞ değerleri, hepsi tümünün bir üsünden ve tüm sıfırların mantisinin ile temsil edilir. Hem pozitif hem de negatif sonsuz, işaret biti kullanılarak temsil edilebilir.
 
-### <a name="subnormals"></a>Subnormals
+### <a name="subnormals"></a>Alt Normals
 
-En küçük normalleştirilmiş sayıdan küçük büyüklük numaralarını temsil etmek mümkündür. Bu sayı olarak da bilinir *subnormal* veya *denormal* sayı. Üs sıfır ve sıfır olmayan katsayıdır, anlam örtük önde gelen biti sıfır, bir kabul edilir. Duyarlık subnormal sayıların arıza olarak anlam 2f3b sayısı artar.
+En küçük normalleştirilmiş sayıdan daha küçük olan sayıları temsil etmek mümkündür. Bu sayılar *alt normal* veya *denormal* sayı olarak bilinir. Üs tümünün sıfırıncı ve mantisinin sıfır olmayan bir değer ise, mantisinin 'in örtük önünde bir bit değeri sıfır olarak değerlendirilir. Alt normal sayıların duyarlığı, mantisinin ' deki önde gelen sıfır sayısı kaldığında aşağı gider.
 
-### <a name="nan---not-a-number"></a>NaN - sayı değil
+### <a name="nan---not-a-number"></a>NaN-sayı değil
 
-0 gibi bir gerçek sayı olmayan değerleri temsil etmek mümkündür / 0, IEEE kayan nokta biçiminde. Bu tür bir değer olarak adlandırılan bir *NaN*. Tüm yorumlar ve sıfır olmayan bir anlam bir üs bir NaN temsil edilir. İki tür NaN'ler, *sessiz* NaN'ler veya QNaNs, ve *sinyal* NaN'ler veya SNaNs. Sessiz NaN'ler önde gelen bir anlam olması ve genellikle bir ifade dağıtılır. Bunlar, sonsuzluk bölme ya da sıfıra sonsuzluk çarparak sonucu gibi belirsiz bir değeri temsil eder. Kanalın NaN'ler anlam başında sıfır var. Bunlar, bir kayan nokta donanım özel durumu sinyal için geçerli olmayan işlemler için kullanılır.
+IEEE kayan nokta biçiminde 0/0 gibi gerçek sayı olmayan değerleri temsil etmek mümkündür. Bu türden bir değere *Nan*adı verilir. Bir NaN, hepsi bir üssün ve sıfır olmayan bir mantisinin temsil edilir. İki tür NaNs, *sessiz* nans, veya qnans, ve nans veya snans *sinyalleri* vardır. Sessiz NaNs, mantisinin içinde önde gelen bir ifadedir ve genellikle bir ifade aracılığıyla dağıtılır. Sonsuz bir değeri temsil eder, sonsuz ile bölme sonucu veya sonsuz değeri sıfıra çarpar. NaNs sinyalin mantisinin içinde önünde sıfır var. Bunlar, kayan nokta donanım özel durumuna işaret etmek için geçerli olmayan işlemler için kullanılır.
 
 ## <a name="examples"></a>Örnekler
 
-Aşağıda bazı örnekler tek duyarlıklı biçiminde verilmiştir:
+Aşağıda, tek duyarlıklı biçimdeki bazı örnekler verilmiştir:
 
-- Değer 2 için imza biti sıfırdır ve 128 saklı üstür veya ikili, 1000 0000 127 artı 1 olduğu. Depolanan ikili (1) katsayıdır 000 0000 0000 0000 0000 1 ve ikili örtük bir lider olan 0000, gerçek bir katsayıdır şekilde gelin.
+- 2 değeri için, işaret biti sıfırdır ve depolanan üs, 128 veya 1000 0000 ' dir. Bu, 127 ve 1 ' dir. Depolanan ikili mantisinin (1). önde gelen 1 ve ikili noktası olan 000 0000 0000 0000 0000 0000, yani gerçek mantisinin bir tane olur.
 
    |Değer|Formül|İkili gösterim|Onaltılık|
    |-|-|-|-|
    |2|1 * 2<sup>1</sup>|0100 0000 0000 0000 0000 0000 0000 0000|0x40000000|
 
-- Değer -2. İmza biti ayarlanmış olması dışında + 2 aynıdır. Bu tüm IEEE kayan nokta sayıları biçimlendirme eksi işareti için geçerlidir.
+- -2 değeri. İşaret bitinin ayarlanmış olması dışında + 2 ile aynıdır. Bu, tüm IEEE biçimli kayan noktalı sayıların negatifi için geçerlidir.
 
    |Değer|Formül|İkili gösterim|Onaltılık|
    |-|-|-|-|
    |-2|-1 * 2<sup>1</sup>|1100 0000 0000 0000 0000 0000 0000 0000|0xC0000000|
 
-- 4 değeri. Aynı anlam üs (popülasyon 129 veya 100 0000 1 ikili değerdir. tek artırır.
+- 4 değeri. Aynı mantisinin, üs, bir artar (taraflı değer 129 veya ikili içinde 100 0000 1).
 
    |Değer|Formül|İkili gösterim|Onaltılık|
    |-|-|-|-|
    |4|1 * 2<sup>2</sup>|0100 0000 1000 0000 0000 0000 0000 0000|0x40800000|
 
-- Değer 6. Aynı üs katsayıdır yarı oranında daha büyük — onun (1.) 100 0000 ... Bu ikili bir kesir olduğundan 0000 0000, kesirli basamaklar değerleri 1/2, 1/4, 1/8 ve benzeri olduğundan, 1 1/2 değerindedir.
+- 6 değeri. Aynı üs, mantisinin daha büyük; (1). 100 0000 ... 0000 0000, bu ikili bir kesir olduğundan, kesirli basamakların değerleri 1/2, 1/4, 1/8 ve benzeri olduğundan 1 1/2 ' dir.
 
    |Değer|Formül|İkili gösterim|Onaltılık|
    |-|-|-|-|
-   |6|1.5 * 2<sup>2</sup>|0100 0000 1100 0000 0000 0000 0000 0000|0x40C00000|
+   |6|1,5 * 2<sup>2</sup>|0100 0000 1100 0000 0000 0000 0000 0000|0x40C00000|
 
-- 1 değeri. Diğer iki taraflı üs olarak aynı anlam ikiden az 127 ya da ikili 011 1111 1 biridir.
-
-   |Değer|Formül|İkili gösterim|Onaltılık|
-   |-|-|-|-|
-   |1.|1 * 2<sup>0</sup>|0011 1111 1000 0000 0000 0000 0000 0000|0x3F800000|
-
-- 0,75 değeri. 126 popülasyon üstür 011 1111 0 içinde ikili ve anlam olduğunu (1.) 100 0000 ... 0000 0000 1 1/2'dir.
+- 1 değeri. İki farklı üsleri ile aynı mantisinin, taraflı üs, 127 veya ikili içindeki 011 1111 1 ' den az bir küçüktür.
 
    |Değer|Formül|İkili gösterim|Onaltılık|
    |-|-|-|-|
-   |0.75|1.5 * 2<sup>-1</sup>|0011 1111 0100 0000 0000 0000 0000 0000|0x3F400000|
+   |1\.|1 * 2<sup>0</sup>|0011 1111 1000 0000 0000 0000 0000 0000|0x3F800000|
 
-- 2.5 değeri. Anlam içinde tam olarak aynı iki dışındaki 1/4 temsil eden bir bit ayarlanır.
-
-   |Değer|Formül|İkili gösterim|Onaltılık|
-   |-|-|-|-|
-   |2,5|1.25 * 2<sup>1</sup>|0100 0000 0010 0000 0000 0000 0000 0000|0x40200000|
-
-- 1/10 ikili yinelenen bir bölümüdür. 1.6 yalnızca çekingen katsayıdır ve popülasyon üs 1.6 16 tarafından Bölünecek olduğunu söylüyor (011 1101 1 ondalık 123 olan ikili değer). 123-127 true üstür = - çarpmak istediğiniz faktörü 2 olduğu anlamına gelir 4,<sup>-4</sup> = 1/16. Saklı anlam son bit yuvarlanır Not — denemesi çıkarıldığında sayısını mümkün olduğunca doğru bir şekilde temsil eder. (Nedeni 1/10 ile 1/100 ikili gösterilebilir değil, tam olarak 1/3 tam olarak ondalık biçimde gösterilebilir olmasının nedeni benzer.)
+- 0,75 değeri. Taraflı üs değeri 126, 011 1111 0 binary ve mantisinin (1). 100 0000 ... 0000 0000, 1 1/2 ' dir.
 
    |Değer|Formül|İkili gösterim|Onaltılık|
    |-|-|-|-|
-   |0.1|1.6 * 2<sup>-4</sup>|0011 1101 1100 1100 1100 1100 1100 1101|0x3DCCCCCD|
+   |0.75|1,5 * 2<sup>-1</sup>|0011 1111 0100 0000 0000 0000 0000 0000|0x3F400000|
 
-- Sıfır sıfır olan minimum olası gösterilebilir pozitif değer, formülü kullanan özel bir durumdur.
+- 2,5 değeri. 1/4 'yi temsil eden bit, mantisinin içinde ayarlandığı sürece tamamen iki ile aynıdır.
+
+   |Değer|Formül|İkili gösterim|Onaltılık|
+   |-|-|-|-|
+   |2,5|1,25 * 2<sup>1</sup>|0100 0000 0010 0000 0000 0000 0000 0000|0x40200000|
+
+- 1/10, ikili içindeki yinelenen bir kesrin. Mantisinin yalnızca 1,6 ' dir ve taraflı üs, 1,6 ' nin 16 ' ya bölüneceğini söyler 011 1101 1 (ondalık olarak 123). Gerçek üs 123-127 =-4 ' dür, bu da çarpılacak faktörün 2<sup>-4</sup> = 1/16 olduğunu gösterir. Saklı mantisinin, en son bit içinde yuvarlandığına, gösterilemeyen bir sayıyı mümkün olduğunca doğru bir şekilde temsil etmeye çalışır. (1/10 ve 1/100 ' nin ikili dosya içinde tam olarak gösterilemeyen nedeni, 1/3 tam olarak ondalık olarak gösterilemeyen bir tablo değildir.)
+
+   |Değer|Formül|İkili gösterim|Onaltılık|
+   |-|-|-|-|
+   |0.1|1,6 * 2<sup>-4</sup>|0011 1101 1100 1100 1100 1100 1100 1101|0x3DCCCCCD|
+
+- Sıfır, en az olası gösterilemeyen pozitif değer olan formülü kullanan özel bir durumdur.
 
    |Değer|Formül|İkili gösterim|Onaltılık|
    |-|-|-|-|
