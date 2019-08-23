@@ -10,12 +10,12 @@ f1_keywords:
 - chrono/std::chrono::milliseconds
 - chrono/std::chrono::microseconds
 ms.assetid: 844de749-f306-482e-89bc-6f53c99c8324
-ms.openlocfilehash: f01b00a1469cdf82590a1bdfc742312ec96912c9
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: b3352110c2074b325ac345c05dbf899c0bdbd0ab
+ms.sourcegitcommit: ace42fa67e704d56d03c03745b0b17d2a5afeba4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68459458"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69975893"
 ---
 # <a name="ltchronogt"></a>&lt;Chrono&gt;
 
@@ -76,7 +76,14 @@ Visual Studio 2015 ' den başlayarak uygulaması `steady_clock` , steadiness ve 
 
 Aşağıdaki Typedefs 'ta kullanılan oran türleri hakkında daha fazla bilgi için bkz [ \<. Ratio >](../standard-library/ratio.md).
 
-||| ||| | `typedef duration<long long, nano> nanoseconds;`| Değer 1 nanosaniyelik `duration` olan bir tür için eş anlamlı. | | |`typedef duration<long long, micro> microseconds;` 1 mikrosaniyelik `duration` bir işaret dönemi içeren bir tür için eş anlamlı. | | |`typedef duration<long long, milli> milliseconds;` 1 milisaniyelik `duration` değer süresine sahip bir türün eş anlamlısı. | | |`typedef duration<long long> seconds;` Değer 1 saniye `duration` olan bir tür için eş anlamlı. | | |`typedef duration<int, ratio<60> > minutes;` 1 dakikalık bir `duration` işaret dönemi içeren bir tür için eş anlamlı. | | |`typedef duration<int, ratio<3600> > hours;` Değer 1 saat `duration` olan bir tür için eş anlamlı. |
+|||
+|-|-|
+|`typedef duration<long long, nano> nanoseconds;`|Değer 1 nanosaniyelik `duration` olan bir tür için eş anlamlı.|
+|`typedef duration<long long, micro> microseconds;`|1 mikrosaniyelik `duration` bir işaret dönemi içeren bir türün eş anlamlısı.|
+|`typedef duration<long long, milli> milliseconds;`|1 milisaniyelik `duration` değer süresine sahip bir türün eş anlamlısı.|
+|`typedef duration<long long> seconds;`|Değer 1 saniye `duration` olan bir tür için eş anlamlı.|
+|`typedef duration<int, ratio<60> > minutes;`|1 dakikalık bir `duration` işaret dönemi içeren bir tür için eş anlamlı.|
+|`typedef duration<int, ratio<3600> > hours;`|Değer 1 saat `duration` olan bir tür için eş anlamlı.|
 
 ### <a name="literals"></a>Sabit değerler
 

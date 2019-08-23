@@ -1,77 +1,170 @@
 ---
-title: Visual Studio'da C++ yapı sistemler için açık klasör desteği
-ms.date: 03/21/2019
+title: Visual Studio 'da derleme C++ sistemleri için klasör desteğini açma
+ms.date: 08/20/2019
 helpviewer_keywords:
 - Open Folder Projects in Visual Studio
 ms.assetid: abd1985e-3717-4338-9e80-869db5435175
-ms.openlocfilehash: 8856a5b1782c75c5a59dfdc93a8203627059ea12
-ms.sourcegitcommit: fde637f823494532314790602c2819f889706ff6
+ms.openlocfilehash: 78b1c00b07423e9d02f585c707156a1c843bea6f
+ms.sourcegitcommit: ace42fa67e704d56d03c03745b0b17d2a5afeba4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67042726"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69975994"
 ---
-# <a name="open-folder-projects-for-c"></a>C++ için Klasör projelerini açma
+# <a name="open-folder-support-for-c-build-systems-in-visual-studio"></a>Visual Studio 'da derleme C++ sistemleri için klasör desteğini açma
 
-Visual Studio 2017 ve sonraki sürümlerinde, "Klasör Aç" özelliği, bir kaynak dosya klasörü açın ve hemen desteğiyle tarama, yeniden düzenleme, hata ayıklama, IntelliSense, kod yazmaya başlayın ve benzeri sağlar. Hiçbir .sln veya .vcxproj dosyaları yüklenir; Gerekirse, özel görevleri oluşturmak ve parametreler aracılığıyla basit .json dosyaları başlatma olarak belirtebilirsiniz. Klasör Aç hakkında genel bilgi için bkz: [kod Visual Studio'da projeler veya çözümler olmadan geliştirme](/visualstudio/ide/develop-code-in-visual-studio-without-projects-or-solutions).
+::: moniker range="vs-2015"
 
-CMake bir bileşeni olarak Visual Studio IDE içinde tümleşik C++ masaüstü iş yükü. Daha fazla bilgi için [Visual Studio'daki CMake projeleri](cmake-projects-in-visual-studio.md). Diğer yapı sistemi için klasörü aç özelliğini kullanabilirsiniz. Klasör Aç, Kod Düzenleyicisi, hata ayıklayıcı ve derleme sistemi ve derleyici araç takımı Çözümleyicileri etkili bir şekilde ayırır. Zengin IntelliSense özelliklerini, kod Çözümleyicileri ve CMake Ninja, QMake (Qt projelerde), gyp, SCons, Gradle, Buck, oluşturma ve gibi neredeyse tüm derleme sistemi, Visual Studio hata ayıklayıcı ile C++ Kod Düzenleyicisi'ni kullanabilirsiniz. Hatta tek bir dosyayı veya dosyaları derleme sistemi gevşek koleksiyonu ile çalışır.
+Klasör aç özelliği Visual Studio 2017 ve üzeri sürümlerde kullanılabilir.
 
-Klasör Aç'ı kullanmak için ana menüden seçin **dosya | Açık | Klasör** veya basın **Ctrl + Shift + Alt + O**. Çözüm Gezgini, hemen klasördeki tüm dosyaları görüntüler. Düzenlemeye başlamak için herhangi bir dosyaya tıklayabilirsiniz. Arka planda, dosyaları, IntelliSense, gezinti ve yeniden düzenleme özellikleri etkinleştirmek için Visual Studio başlatılır. Düzenleme, oluşturma, taşıma veya dosyaları silmek gibi Visual Studio değişiklikleri otomatik olarak izler ve IntelliSense dizinini sürekli olarak güncelleştirir. 
+::: moniker-end
 
-## <a name="qmake-projects-that-target-the-qt-framework"></a>QMake Qt Framework'ü hedefleyen projeleri
+::: moniker range=">=vs-2017"
 
-CMake Qt projeleri derlemek için kullanabileceğiniz ya da kullanabileceğinizi [Qt Visual Studio Uzantısı](https://download.qt.io/development_releases/vsaddin/) Visual Studio 2015 veya Visual Studio 2017 için.
+Visual Studio 2017 ve sonraki sürümlerde, "klasör aç" özelliği, kaynak dosyalarının bir klasörünü açmanıza ve IntelliSense, gözatma, yeniden düzenleme, hata ayıklama, vb. desteğiyle kodlamaya hemen başlayabilmenizi sağlar. Düzenleme, oluşturma, taşıma veya dosyaları silmek gibi Visual Studio değişiklikleri otomatik olarak izler ve IntelliSense dizinini sürekli olarak güncelleştirir. . Sln veya. vcxproj dosyaları yüklü değil; gerekirse, özel görevleri belirtebilir ve basit. JSON dosyaları aracılığıyla parametreleri oluşturup başlatabilirsiniz. Bu özellik, herhangi bir üçüncü taraf derleme sistemini Visual Studio ile tümleştirmenize olanak sağlar. Açık klasör hakkında genel bilgi için bkz. [projeler veya çözümler olmadan Visual Studio 'da kod geliştirme](/visualstudio/ide/develop-code-in-visual-studio-without-projects-or-solutions).
 
-## <a name="gyp-cons-scons-buck-etc"></a>gyp, simgeler, SCons, Buck, vb.
+## <a name="cmake-and-qt"></a>CMake ve QT
 
-Visual Studio'da herhangi bir derleme sistemini kullanın ve C++ IDE ve hata ayıklayıcı avantajları hala keyfini çıkarın. Projenizin kök klasörüne açtığınızda, C++ Kod Düzenleyicisi IntelliSense ve gözatma için kaynak dosyaları dizini oluşturmak için buluşsal yöntemler kullanır. CppProperties.json dosyasını düzenleyerek, kodunuzun yapısı hakkında ipuçları sağlayabilir. Benzer şekilde, yapılandırma ve yapı programınızı launch.vs.json dosyasını düzenleyerek çağırma.
+CMake, C++ masaüstü iş yükünün bir bileşeni olarak VISUAL Studio IDE 'de tümleşiktir. CMake iş akışı, bu makalede açıklanan iş akışıyla aynı değildir. CMake kullanıyorsanız bkz. [Visual Studio 'Da CMake projeleri](cmake-projects-in-visual-studio.md). Ayrıca, CMake 'i de QT projeleri oluşturmak için kullanabilir veya Visual Studio 2015 ya da Visual Studio 2017 için [QT Visual Studio uzantısı](https://download.qt.io/development_releases/vsaddin/) ' nı kullanabilirsiniz.
 
-## <a name="configuring-open-folder-projects"></a>Klasör Aç projeleri yapılandırma
+## <a name="other-build-systems"></a>Diğer derleme sistemleri
 
-Klasör Aç projesinde üç JSON dosyalarıyla özelleştirebilirsiniz:
+Visual Studio IDE 'yi, ana menüden doğrudan desteklenmeyen bir yapı sistemi veya derleyici araç takımı ile kullanmak için **Dosya Seç | Açık |** Veya **CTRL + SHIFT + alt + O**tuşlarına basın. Kaynak kodu dosyalarınızı içeren klasöre gidin. Projeyi derlemek, IntelliSense 'i yapılandırmak ve hata ayıklama parametrelerini ayarlamak için üç JSON dosyası eklersiniz:
 
 | | |
 |-|-|
-|CppProperties.json|Gözatma için özel yapılandırma bilgilerini belirtin. Bu dosya, kök proje klasörünüzdeki gerekirse oluşturun. ('da CMake projeleri kullanılmıyor.)|
-|Tasks.vs.JSON|Özel derleme komutları ve derleyici anahtarları belirtin. Aracılığıyla erişilen **Çözüm Gezgini** bağlam menüsü öğesi **yapılandırma görevleri**.|
-|launch.vs.json|Hata ayıklayıcının komut satırı bağımsız değişkenlerini belirtin. Aracılığıyla erişilen **Çözüm Gezgini** bağlam menüsü öğesi **hata ayıklama ve başlatma ayarları**.|
+|CppProperties.json|Göz atmak için özel yapılandırma bilgilerini belirtin. Gerekirse, kök proje klasörünüzde bu dosyayı oluşturun. (CMake projelerinde kullanılmaz.)|
+|Tasks. vs. JSON|Özel derleme komutlarını belirtin. Aracılığıyla erişilen **Çözüm Gezgini** bağlam menüsü öğesi **yapılandırma görevleri**.|
+|Launch. vs. JSON|Hata ayıklayıcı için komut satırı bağımsız değişkenlerini belirtin. Aracılığıyla erişilen **Çözüm Gezgini** bağlam menüsü öğesi **hata ayıklama ve başlatma ayarları**.|
 
-### <a name="configure-intellisense-and-browsing-hints-with-cpppropertiesjson"></a>IntelliSense ve ipuçlarıyla CppProperties.json gözatma yapılandırın
+## <a name="configure-code-navigation-with-cpppropertiesjson"></a>CppProperties. JSON ile kod gezintisini yapılandırma
 
-IntelliSense ve göz atma davranışlarına kısmen bağlıdır tanımlayan etkin yapı yapılandırmasını # yolları, derleyici anahtarlarını ve diğer parametreler include. Varsayılan olarak, Visual Studio hata ayıklama ve yayın yapılandırmaları sağlar. CMake projeleri, bu amaçla CMakeSettings.json dosyasına ve CMakeLists.txt dosyaları kullanın. Klasör Aç projelerinin diğer türleri için tam kod kavrama için IntelliSense ve gözatma özellikler için sırayla özel yapılandırma oluşturmak gerekebilir. Yeni bir yapılandırmasını tanımlamak için kök klasörde CppProperties.json adlı bir dosya oluşturun. Aşağıda bir örnek verilmiştir:
+**Tanıma Git** gibi IntelliSense ve gözatma davranışlarının doğru şekilde çalışması Için, Visual Studio 'nun hangi derleyicisini kullandığınızı, sistem üstbilgilerinin nerede olduğunu ve doğrudan açtığınız klasör (çalışma alanı klasörü). Bir yapılandırma belirtmek için ana araç çubuğunda açılan listeden **yapılandırmaları Yönet** ' i seçebilirsiniz:
+
+![Yapılandırmaların yönetme açılan menüsü](media/manage-configurations-dropdown.png)
+
+Şu anda Visual Studio, tümü Microsoft C++ derleyicisi için dört varsayılan yapılandırma sunmaktadır:
+
+![Varsayılan yapılandırma](media/default-configurations.png)
+
+Örneğin, **x64-Debug**' ı seçerseniz, Visual Studio kök proje klasörünüzde *cppproperties. JSON* adlı bir dosya oluşturur ve bunu şöyle doldurur:
 
 ```json
 {
   "configurations": [
     {
-      "name": "Windows x64",
-      "includePath": [ "include" ],
-      "defines": [ "_DEBUG" ],
-      "compilerSwitches": "/std:c++17",
-      "intelliSenseMode": "windows-msvc-x64",
-      "forcedInclude": [ "pch.h" ],
-      "undefines": []
+      "inheritEnvironments": [
+        "msvc_x64"
+      ],
+      "name": "x64-Debug",
+      "includePath": [
+        "${env.INCLUDE}",
+        "${workspaceRoot}\\**"
+      ],
+      "defines": [
+        "WIN32",
+        "_DEBUG",
+        "UNICODE",
+        "_UNICODE"
+      ],
+      "intelliSenseMode": "windows-msvc-x64"
     }
   ]
 }
 ```
-Daha fazla bilgi için [CppProperties şema başvurusu](cppproperties-schema-reference.md).
 
-### <a name="define-build-tasks-with-tasksvsjson"></a>Tasks.vs.json ile derleme görevleri tanımlama
+Bu yapılandırma, Visual Studio [x64 Geliştirici komut istemi](building-on-the-command-line.md)ortam değişkenlerini devralır. Bu değişkenlerden biri, `INCLUDE` `${env.INCLUDE}` makroyu kullanarak buraya başvurabilirsiniz. Özelliği `includePath` , Visual Studio 'ya IntelliSense için gereken tüm kaynakları nerede bakacağını söyler. Bu durumda, "ıNCLUDE ortam değişkeni tarafından belirtilen tüm dizinlere ve ayrıca geçerli çalışma klasörü ağacındaki tüm dizinlere bak" diyor. `name` Özelliği, açılan menüde görünecek addır ve istediğiniz herhangi bir şey olabilir. Özelliği `defines` , koşullu derleme blokları ile karşılaştığında IntelliSense 'e ipuçları sağlar. `intelliSenseMode` Özelliği, derleyici türüne göre bazı ek ipuçları sağlar. MSVC, GCC ve Clang için çeşitli seçenekler mevcuttur.
+
+## <a name="example-configuration-for-gcc"></a>GCC için örnek yapılandırma
+
+Microsoft C++dışında bir derleyici kullanıyorsanız, *cppproperties. JSON*içinde özel bir yapılandırma ve ortam oluşturmanız gerekir. Aşağıdaki örnek, MSYS2 yüklemesinde GCC 'yi kullanmak için tek bir özel yapılandırmaya sahip olan tüm *Cppproperties. JSON* dosyasını göstermektedir:
+
+```json
+{
+  "configurations": [
+   {
+      "inheritEnvironments": [
+        "mingw_64"
+      ],
+      "name": "Mingw64",
+      "includePath": [
+        "${env.INCLUDE}",
+        "${workspaceRoot}\\**"
+      ],
+      "intelliSenseMode": "linux-gcc-x64",
+      "environments": [
+        {
+          "MINGW64_ROOT": "C:\\msys64\\mingw64",
+          "BIN_ROOT": "${env.MINGW64_ROOT}\\bin",
+          "FLAVOR": "x86_64-w64-mingw32",
+          "TOOLSET_VERSION": "8.3.0",
+          "PATH": "${env.MINGW64_ROOT}\\bin;${env.MINGW64_ROOT}\\..\\usr\\local\\bin;${env.MINGW64_ROOT}\\..\\usr\\bin;${env.MINGW64_ROOT}\\..\\bin;${env.PATH}",
+          "INCLUDE": "${env.MINGW64_ROOT}\\include\\c++\\${env.TOOLSET_VERSION};${env.MINGW64_ROOT}\\include\\c++\\${env.TOOLSET_VERSION}\\tr1;${env.MINGW64_ROOT}\\include\\c++\\${env.TOOLSET_VERSION}\\${env.FLAVOR}",
+          "environment": "mingw_64"
+        }
+      ]
+   }
+}
+```
+
+`environments` Bloğa göz önünde edin. Bu, ortam değişkenleri gibi davranan ve yalnızca *Cppproperties. JSON* dosyasında değil, diğer yapılandırma dosyaları *görev. vs. JSON* ve *Launch. vs. JSON*içinde de bulunan özellikleri tanımlar. Yapılandırma ortamı devralır ve değerini`includePath`belirtmek için özelliğinikullanır.`INCLUDE` `mingw_w64` `Mingw64` Gerektiğinde bu dizi özelliğine başka yollar ekleyebilirsiniz. '
+
+> [!WARNING]
+> Şu anda ' de `INCLUDE` `environments` belirtilen değerin `includePath` özelliğine doğru şekilde geçirilmediği bilinen bir sorun var. Tüm değişmez değer `includePath` dizisini diziye ekleyerek soruna geçici bir çözüm bulabilirsiniz.
+
+`intelliSenseMode` Özelliği gcc için uygun bir değere ayarlanır. Tüm bu özellikler hakkında daha fazla bilgi için bkz. [Cppproperties şema başvurusu](cppproperties-schema-reference.md).
+
+Her şey doğru şekilde çalıştığında, bir türün üzerine geldiğinizde GCC başlıklarından IntelliSense görürsünüz:
+
+![GCC IntelliSense](media/gcc-intellisense.png)
+
+## <a name="enable-intellisense-diagnostics"></a>IntelliSense tanılamayı etkinleştir
+
+İstediğiniz IntelliSense 'i görmüyorsanız, **Araçlar** > **Seçenekler** > **metin Düzenleyicisi** > **C/C++**  > **Gelişmiş** ' e giderek sorun gidermeye devam edebilirsiniz ve **günlük kaydını** **doğru**olarak etkinleştir ayarı. İle başlamak için **günlük kaydı düzeyini** 5 olarak ayarlamayı ve filtreleri 8 ' e **kaydetmeyi** deneyin.
+
+![Tanılama günlükleri](media/diagnostic-logging.png)
+
+Çıkış **Çıkış penceresi** gönderilir ve **çıktıyı göster ' i seçtiğinizde görünür. Görsel C++ günlüğü*. Çıktı, diğer şeyler yanında, IntelliSense 'in kullanmaya çalıştığı gerçek ekleme yollarının listesini içerir. Yollar *Cppproperties. JSON*içindeki olanlarla eşleşmiyorsa, klasörü kapatmayı ve önbelleğe alınmış gözatma verilerini içeren *. vs* alt klasörünü silmeyi deneyin.
+
+### <a name="define-build-tasks-with-tasksvsjson"></a>Görevler. vs. JSON ile derleme görevlerini tanımlama
 
 Derleme betikleri veya geçerli çalışma alanınızda doğrudan IDE'de görev olarak çalıştırarak olması dosyalarda dış diğer işlemleri otomatik hale getirebilirsiniz. Bir dosya veya klasörü sağ tıklatıp seçerek yeni bir görev yapılandırabileceğiniz **yapılandırma görevleri**.
 
-![Klasör Aç yapılandırma görevleri](media/open-folder-config-tasks.png)
+![Klasörü aç görevleri yapılandırma](media/configure-tasks.png)
 
-Oluşturur (veya açılır) **tasks.vs.json** Visual Studio kök proje klasörünüzdeki oluşturan .vs klasöründeki dosya. Bu dosyayı herhangi bir rastgele görev tanımlayın ve ondan çağırma **Çözüm Gezgini** bağlam menüsü. Aşağıdaki örnek, tek bir görevi tanımlayan bir tasks.vs.json dosyası gösterir. `taskName` bağlam menüsünde görünen adını tanımlar. `appliesTo` hangi dosyaların komutu gerçekleştirilebilir tanımlar. `command` Özelliği başvurur (Windows cmd.exe'de) konsol yolunu tanımlar COMSPEC ortam değişkenine. CppProperties.json veya CMakeSettings.json bildirilen ortam değişkenlerini de başvurabilirsiniz. `args` Özellik çağrılacak komut satırını belirtir. `${file}` Makrosu alır seçili dosyasında **Çözüm Gezgini**. Aşağıdaki örnek şu anda seçili .cpp dosyasının dosya adını görüntüler.
+Bu, Visual Studio 'Nun kök proje klasörünüzde oluşturduğu. vs klasöründeki *Tasks. vs. JSON* dosyasını oluşturur (veya açar). Bu dosyada herhangi bir rastgele görev tanımlayabilir ve ardından **Çözüm Gezgini** bağlam menüsünden çağırabilirsiniz. GCC örneğine devam etmek için aşağıdaki kod parçacığında, bir proje derlemek için *g + +. exe* ' yi çağıran tek bir görevle birlikte tamamlanmış bir *Görevler. vs. JSON* dosyası gösterilmektedir. Projenin *Hello. cpp*adlı tek bir dosya içerdiğini varsayın.
 
 ```json
 {
   "version": "0.2.1",
   "tasks": [
     {
-      "taskName": "Echo filename",
+      "taskLabel": "build hello",
+      "appliesTo": "/",
+      "type": "default",
+      "command": "g++",
+      "args": [
+        "-g",
+        "-o",
+        "hello",
+        "hello.cpp"
+      ]
+    }
+  ]
+}
+
+```
+
+JSON dosyası, **Çözüm Gezgini**en üstündeki **tüm dosyaları göster** düğmesine tıkladıysanız görebileceğiniz *. vs* alt klasörüne yerleştirilir. Bu görevi, **Çözüm Gezgini** kök düğümüne sağ tıklayıp **Merhaba Build**' i seçerek çalıştırabilirsiniz. Görev tamamlandığında **Çözüm Gezgini**yeni bir *Hello. exe* dosyası görmeniz gerekir.
+
+Birçok görev türü tanımlayabilirsiniz. Aşağıdaki örnek, tek bir görevi tanımlayan *Tasks. vs. json dosyasını* gösterir. `taskLabel`bağlam menüsünde görünen adı tanımlar. `appliesTo`komutun hangi dosyalara uygulanabilir olduğunu tanımlar. Özelliği, konsolunun yolunu tanımlayan ComSpec ortam değişkenine başvurur (Windows üzerinde*cmd. exe* ). `command` Ayrıca, CppProperties. JSON veya CMakeSettings. JSON içinde belirtilen ortam değişkenlerine de başvurabilirsiniz. `args` Özelliği çağrılacak komut satırını belirtir. `${file}` Makrosu alır seçili dosyasında **Çözüm Gezgini**. Aşağıdaki örnek, seçili olan. cpp dosyasının dosya adını görüntüler.
+
+```json
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "Echo filename",
       "appliesTo": "*.cpp",
       "type": "command",
       "command": "${env.COMSPEC}",
@@ -81,15 +174,45 @@ Oluşturur (veya açılır) **tasks.vs.json** Visual Studio kök proje klasörü
 }
 ```
 
-Tasks.vs.JSON kaydettikten sonra herhangi bir .cpp dosyası klasörüne sağ tıklayın, seçin **Yankı filename** bağlam menüsü ve dosya adı çıktı penceresinde görüntülenen bakın.
+*Tasks. vs. JSON*dosyasını kaydettikten sonra, klasördeki herhangi bir *. cpp* dosyasına sağ tıklayabilir, bağlam menüsünden **echo filename** ' i seçebilir ve çıkış penceresinde görünen dosya adına bakabilirsiniz.
 
-Daha fazla bilgi için [Tasks.vs.json şema başvurusu](tasks-vs-json-schema-reference-cpp.md).
+Daha fazla bilgi için bkz. [Tasks. vs. JSON şema başvurusu](tasks-vs-json-schema-reference-cpp.md).
 
-### <a name="configure-debugging-parameters-with-launchvsjson"></a>Launch.vs.json ile hata ayıklama parametreleri Yapılandır
+### <a name="configure-debugging-parameters-with-launchvsjson"></a>Launch. vs. JSON ile hata ayıklama parametrelerini yapılandırma
 
-Program komut satırı bağımsız değişkenleri özelleştirmek için yürütülebilir dosya çubuğunda sağ **Çözüm Gezgini** seçip **hata ayıklama ve başlatma ayarları**. Bu varolan açar **launch.vs.json** dosyası veya yoksa, seçtiğiniz program hakkında bilgileri önceden doldurulmuş yeni bir dosya oluşturur.
+Programınızın komut satırı bağımsız değişkenlerini ve hata ayıklama talimatlarını özelleştirmek için **Çözüm Gezgini** ' de çalıştırılabilir dosyaya sağ tıklayın ve **Hata Ayıkla ve başlatma ayarları**' nı seçin. Bu, var olan bir *Launch. vs. JSON* dosyasını açar veya yoksa, bir dizi minimum başlatma ayarı ile yeni bir dosya oluşturur. İlk olarak, ne tür bir hata ayıklama oturumu yapılandırmak istediğinizi tercih edersiniz. Bir MinGW-W64 projesinde hata ayıklamak için, **minggwC++ /Cygwin (GDB) için C/Launch**' ı seçtik. Bu, *gdb. exe* ' yi kullanmak için varsayılan değerler hakkında bazı eğitirüler içeren bir başlatma yapılandırması oluşturur. Bu varsayılan değerlerden `MINGW_PREFIX`biri. Değişmez değer yolunu (aşağıda gösterildiği gibi) değiştirebilir veya *cppproperties. JSON*içinde `MINGW_PREFIX` bir özellik tanımlayabilirsiniz:
 
-Ek bağımsız değişkenlerini belirtmek için bunları eklemeniz yeterlidir `args` aşağıdaki örnekte gösterildiği gibi JSON dizisi:
+```json
+{
+  "version": "0.2.1",
+  "defaults": {},
+  "configurations": [
+    {
+      "type": "cppdbg",
+      "name": "hello.exe",
+      "project": "hello.exe",
+      "cwd": "${workspaceRoot}",
+      "program": "${debugInfo.target}",
+      "MIMode": "gdb",
+      "miDebuggerPath": "c:\\msys64\\usr\\bin\\gdb.exe",
+      "externalConsole": true
+    }
+  ]
+}
+
+```
+
+Hata ayıklamayı başlatmak için, hata ayıklama açılan menüsünde yürütülebilir dosyayı seçin, ardından yeşil oka tıklayın:
+
+![Hata ayıklayıcıyı Başlat](media/launch-debugger-gdb.png)
+
+**Hata ayıklayıcıyı başlatma** iletişim kutusunu ve ardından programınızı çalıştıran bir dış konsol penceresini görmeniz gerekir.
+
+Daha fazla bilgi için bkz. [Launch. vs. JSON şema başvurusu](launch-vs-schema-reference-cpp.md).
+
+## <a name="launching-other-executables"></a>Diğer yürütülebilir dosyalar başlatılıyor
+
+Bilgisayarınızda çalıştırılabilir dosya için başlatma ayarları tanımlayabilirsiniz. Aşağıdaki örnek, *7za* 'yi başlatır ve `args` JSON dizisine ekleyerek ek bağımsız değişkenleri belirtir:
 
 ```json
 {
@@ -106,4 +229,6 @@ Ek bağımsız değişkenlerini belirtmek için bunları eklemeniz yeterlidir `a
 }
 ```
 
-Bu dosyayı kaydettiğinizde, yeni yapılandırmayı hata ayıklama hedefi açılır menüde görünür ve hata ayıklayıcıyı başlatmak için bunu seçebilirsiniz. Dilediğiniz sayıda yürütülebilir dosyalar için birçok hata ayıklama yapılandırması oluşturabilirsiniz. Basarsanız **F5** hata ayıklayıcısı artık, başlar ve zaten ayarladığınız bir kesme noktasına ulaşırsınız. Tüm alıştığınız hata ayıklayıcı pencereleri ve işlevleri artık kullanılabilir.
+Bu dosyayı kaydettiğinizde, yeni yapılandırma hata ayıklama hedefi açılır listesinde görünür ve hata ayıklayıcıyı başlatmak için bunu seçebilirsiniz. Dilediğiniz sayıda yürütülebilir dosya için dilediğiniz sayıda hata ayıklama yapılandırması oluşturabilirsiniz. Şimdi **F5** 'e basarsanız, hata ayıklayıcı daha önce ayarlamış olduğunuz herhangi bir kesme noktasına uyar ve bu noktaları vuracaktır. Tüm tanıdık hata ayıklayıcı pencereleri ve işlevleri artık kullanılabilir.
+
+::: moniker-end
