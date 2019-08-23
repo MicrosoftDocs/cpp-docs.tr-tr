@@ -23,7 +23,7 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 07/24/2019
 ms.locfileid: "68459595"
 ---
-# <a name="basicfstream-class"></a>basic_fstream Sınıfı
+# <a name="basic_fstream-class"></a>basic_fstream Sınıfı
 
 [Basic_filebuf](../standard-library/basic-filebuf-class.md)<  sınıfınınbir`Elem`akış arabelleğini kullanarak öğeleri ve ayıklamayı ve kodlanmış nesneleri, türü öğeleri olan > `Tr``Elem` nitelikleri sınıfına `Tr`göre belirlenir.
 
@@ -138,7 +138,7 @@ Varsayılan dosya açma koruması, [_fsopen, _wfsopen](../c-runtime-library/refe
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk Oluşturucu, [basic_filebuf](../standard-library/basic-filebuf-class.md) `sb` `sb`   [](../standard-library/basic-iostream-class.md)eled,tr>sınıfınınsaklınesnesiolanbasic_iostream()öğesiniçağıraraktemelsınıfıbaşlatır.\< `sb` Ayrıca, **eled**, `basic_filebuf` **tr**> çağırarak \< da başlatılır.
+İlk Oluşturucu, [basic_filebuf](../standard-library/basic-filebuf-class.md) `sb` `sb` [](../standard-library/basic-iostream-class.md)eled,tr>sınıfınınsaklınesnesiolanbasic_iostream()öğesiniçağıraraktemelsınıfıbaşlatır.\< `sb` Ayrıca, **eled**, `basic_filebuf` **tr**> çağırarak \< da başlatılır.
 
 İkinci ve üçüncü oluşturucular, temel sınıfı çağırarak `basic_iostream`( **SB**) başlatır. Ayrıca, `sb` **elee**, `basic_filebuf` **tr**> ve sonra **SB.** [Open](../standard-library/basic-filebuf-class.md#open)(_ *filename*, `_Mode`) çağırarak \< da başlatılır. İkinci işlev null bir işaretçi döndürürse, Oluşturucu [SetState](../standard-library/basic-ios-class.md#setstate)(`failbit`) öğesini çağırır.
 
