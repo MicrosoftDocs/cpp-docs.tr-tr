@@ -86,6 +86,8 @@
           href: build/cppproperties-schema-reference.md
         - name: Tasks.vs.json şema başvurusu (C++)
           href: build/tasks-vs-json-schema-reference-cpp.md
+        - name: Launch.vs.json şema başvurusu (C++)
+          href: build/launch-vs-schema-reference-cpp.md
     - name: CMake projeleri
       expanded: false
       items:
