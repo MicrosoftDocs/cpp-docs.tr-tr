@@ -49,7 +49,7 @@ Kaçış dizileri, genellikle terminallerde ve yazıcılarda satır başları ve
 
 |Çıkış Sırası|Temsil eder|
 |---------------------|----------------|
-|**\**|Bell (uyarı)|
+|**\a**|Bell (uyarı)|
 |**\b**|Geri Al tuşu|
 |**\f**|Form akışı|
 |**\n**|Yeni satır|
