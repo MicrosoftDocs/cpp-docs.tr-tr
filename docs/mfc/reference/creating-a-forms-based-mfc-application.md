@@ -1,65 +1,65 @@
 ---
 title: Form Tabanlı MFC Uygulaması Oluşturma
-ms.date: 11/04/2016
+ms.date: 08/19/2019
 f1_keywords:
 - vc.appwiz.mfcforms.project
 helpviewer_keywords:
 - applications [MFC], forms-based
 - forms-based applications [MFC]
 ms.assetid: 048d2f7d-b60d-4386-ad8e-71d49af9c05e
-ms.openlocfilehash: 6810a6c7fce91865a92d048129da29305e22abc1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 95c7f6061933245b2eb2b796e7a678e1e6b010a6
+ms.sourcegitcommit: bf1940a39029dbbd861f95480f55e5e8bd25cda0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62372341"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70108469"
 ---
 # <a name="creating-a-forms-based-mfc-application"></a>Form Tabanlı MFC Uygulaması Oluşturma
 
-Bir kullanıcının erişim ve veri değişikliği olabilir olanak tanıyan denetimler içeren bir iletişim kutusu biçimidir. Kullanıcı form seçimden seçer uygulama geliştirme isteyebilirsiniz. Yaygın olarak, form tabanlı bir uygulama tarafından tıklatın kullanıcı erişim formları sağlar **yeni** gelen **dosya** menüsü. Kullanıcılar için erişim sağlamaz bir iletişim kutusu tabanlı uygulama, bir **yeni** seçeneğini **dosya** menüsünde, form tabanlı bir uygulama da kabul edilir.
+Form, bir kullanıcının erişimine ve muhtemelen verileri değiştirmesine izin veren denetimleri içeren bir iletişim kutusudur. Kullanıcının bir form seçiminden seçtiği bir uygulama geliştirmek isteyebilirsiniz. Genellikle, form tabanlı bir uygulama, kullanıcının **Dosya** menüsünde **Yeni** ' ye tıklayarak formlara erişmesini sağlar. Kullanıcılara **Dosya** menüsündeki **Yeni** bir seçeneğe erişim izni veren iletişim kutusu tabanlı bir uygulama, form tabanlı bir uygulama olarak da değerlendirilir.
 
-Tek Belgeli Arabirim (SDI), form tabanlı uygulamanın aynı anda çalıştırmak için belirli bir formu yalnızca bir örneğini sağlar. Farklı form, yeni bir formdan seçerek form tabanlı bir SDI uygulamasından aynı anda çalıştırmak mümkündür **yeni** seçeneğini **dosya** menüsü.
+Tek belge arabirimi (SDI), form tabanlı uygulama belirli bir formun tek seferde yalnızca bir örneğinin çalışmasına izin verir. **Dosya** menüsündeki **Yeni** seçenekten yeni bir form seçerek bir SDI form tabanlı uygulamadan aynı anda farklı formlar çalıştırmak mümkündür.
 
-Bir çok Belgeli Arabirim (MDI), form tabanlı bir uygulama oluşturursanız uygulamayı formun birden çok örneğini desteklemek üzere mümkün olacaktır.
+Birden çok belge arabirimi (MDI), form tabanlı uygulama oluşturursanız, uygulama aynı formun birden çok örneğini destekleyebilir.
 
-Birden çok en üst düzey belge desteği ile bir uygulama oluşturursanız, örtük ana belge için Masaüstü olduğu ve belgenin çerçeve uygulama istemci alanının sınırlı değildir. Birden fazla belge her kendi çerçevesi, menü ve görev çubuğu simgesi ile açabilirsiniz. Seçerseniz ancak sonraki belgeleri örneklerini tek tek kapatabilirsiniz **çıkış** seçeneğini **dosya** menüsünde uygulamanın ilk örneğinin tüm örneklerini kapatır.
+Birden çok üst düzey belge desteğine sahip bir uygulama oluşturursanız, Masaüstü, belgenin örtülü üst öğesidir ve belgenin çerçevesi uygulamanın istemci alanıyla sınırlı değildir. Belgenin birden çok örneğini, her biri kendi çerçevesini, menüsünü ve görev çubuğu simgesini kullanarak açabilirsiniz. Belgelerin sonraki örneklerini tek tek kapatabilirsiniz, ancak ilk Örneğin **Dosya** menüsünden **Çıkış** seçeneğini belirlerseniz, uygulama tüm örnekleri kapatır.
 
-SDI ve MDI birden çok en üst düzey belge uygulamaları tüm forms tabanlı ve belge/görünüm mimarisini kullanan olan.
+SDI, MDI ve birden çok üst düzey belge uygulaması, tüm form tabanlıdır ve belge/görünüm mimarisini kullanır.
 
-Bir iletişim kutusu tabanlı, tanımına göre form tabanlı bir uygulamadır. Oluşturma ve erişim yöntemleri için kendi ek forms yönetmelisiniz belge/görünüm mimarisinin bir iletişim kutusu tabanlı uygulamaya kullanmaz.
+Tüm iletişim tabanlı uygulamalar, tanım temelinde Forms tabanlıdır. İletişim temelli bir uygulama belge/görünüm mimarisini kullanmaz, bu nedenle kendi ek formlarınız için oluşturma ve erişim yöntemlerini yönetmeniz gerekir.
 
-Form tabanlı uygulamalar için temel sınıf [CFormView](../../mfc/reference/cformview-class.md). Uygulamanızı veritabanı desteğine sahip ardından türetilen herhangi bir sınıf belirleyebilirsiniz `CFormView`. Öğesinden türetilen herhangi bir pencereyi biçimidir `CFormView` veya devralınan herhangi bir sınıftan `CFormView`.
+Form tabanlı uygulamalar için temel sınıf [CFormView](cformview-class.md)' dir. Uygulamanızda veritabanı desteği varsa, ' den `CFormView`türetilen tüm sınıfları da seçebilirsiniz. Form, öğesinden `CFormView`devralan herhangi bir sınıftan `CFormView` veya ondan türetilmiş herhangi bir penceredir.
 
-Gibi bir temel sınıf kullanıyor olsanız bile [CView](../../mfc/reference/cview-class.md), form tabanlı ile uygulamalarınızı daha sonra yapabilirsiniz [bir MFC sınıfı ekleme](../../mfc/reference/adding-an-mfc-class.md) türetilen `CFormView` ve denetimi **DocTemplate oluştur Kaynakları** onay kutusu [MFC Sınıf Sihirbazı](../../mfc/reference/document-template-strings-mfc-add-class-wizard.md).
+[CView](cview-class.md)gibi bir temel sınıf kullanıyor olsanız bile, [MFC sınıf Sihirbazı](document-template-strings-mfc-add-class-wizard.md)'ndaki **DocTemplate kaynakları oluştur** onay kutusunun içinden `CFormView` türetilmiş [bir MFC sınıfı ekleyerek](adding-an-mfc-class.md) ve daha sonra uygulamalarınızı Forms tabanlı hale getirebilirsiniz.
 
-Sihirbazı tamamladıktan sonra projenizi açar, ve seçtiyseniz `CFormView` (veya devralınan bir sınıf `CFormView`), temel sınıf olarak veya iletişim tabanlı bir uygulama oluşturduysanız, Visual C++ iletişim kutusu Düzenleyicisi açılır. Bu noktada, ilk formunuzu tasarlamak hazır olursunuz.
+Sihirbazla tamamladıktan sonra projeniz açılır ve temel sınıfınız olarak (veya öğesinden `CFormView` `CFormView`devralan bir sınıf) seçtiyseniz veya iletişim kutusu tabanlı bir uygulama oluşturduysanız, görsel C++ iletişim kutusu düzenleyicisini açar. Bu noktada, ilk formunuzu tasarlamaya hazırlanın.
 
-### <a name="to-begin-creating-a-forms-based-mfc-executable"></a>Bir form tabanlı MFC yürütülebilir oluşturmaya başlamak için
+### <a name="to-begin-creating-a-forms-based-mfc-executable"></a>Form tabanlı MFC çalıştırılabilir dosyası oluşturmaya başlamak için
 
-1. Bölümündeki yönergeleri izleyin [MFC uygulaması oluşturma](../../mfc/reference/creating-an-mfc-application.md).
+1. Form tabanlı MFC uygulaması için [MFC uygulaması oluşturma](creating-an-mfc-application.md) yönergelerini izleyin.
 
-1. MFC Uygulama Sihirbazı'nda [uygulama türü](../../mfc/reference/application-type-mfc-application-wizard.md) sayfasında **belge/görünüm mimarisi desteği** onay kutusu.
+1. MFC Uygulama Sihirbazı [uygulama türü](application-type-mfc-application-wizard.md) sayfasında **belge/görünüm mimari desteği** onay kutusunu seçin.
 
-1. Seçin **tek belge**, **birden çok belge**, veya **birden çok en üst düzey belge**.
+1. **Tek belge**, **birden çok belge**veya **birden çok üst düzey belge**seçin.
 
     > [!NOTE]
-    >  Bir SDI, MDI veya birden çok en üst düzey belge arabirimi uygulaması, varsayılan olarak seçerseniz, `CView` uygulamanızın Görünümü'nde için temel sınıf olarak ayarlandığından [oluşturulan sınıflar](../../mfc/reference/generated-classes-mfc-application-wizard.md) Sihirbazı sayfası. Form tabanlı bir uygulama oluşturmak için seçmelisiniz `CFormView` uygulamanın görünüm için temel sınıf olarak. Sihirbaz form tabanlı bir uygulama için yazdırma desteği sağladığını unutmayın.
+    >  Bir SDI, MDI veya birden çok üst düzey belge arabirimi uygulaması seçerseniz, varsayılan olarak, `CView` sihirbazın [oluşturulan sınıflar](generated-classes-mfc-application-wizard.md) sayfasında uygulamanızın görünümü için temel sınıf olarak ayarlanır. Form tabanlı bir uygulama oluşturmak için, uygulamanın görünümü için temel `CFormView` sınıf olarak öğesini seçmeniz gerekir. Sihirbazın form tabanlı bir uygulama için yazdırma desteği sunmadığını unutmayın.
 
-1. Diğer sihirbaz sayfalarında istediğiniz diğer proje seçeneklerini ayarlayın.
+1. Sihirbazın diğer sayfalarında istediğiniz diğer proje seçeneklerini ayarlayın.
 
-1. Tıklayın **son** çatı uygulama oluşturun.
+1. İskelet uygulamasını oluşturmak için **son** ' a tıklayın.
 
 Daha fazla bilgi için bkz.:
 
-- [Türetilmiş görünüm sınıfları](../../mfc/derived-view-classes-available-in-mfc.md)
+- [Türetilmiş Görünüm sınıfları](../derived-view-classes-available-in-mfc.md)
 
-- [Belge/görünüm mimarisinin alternatifleri](../../mfc/alternatives-to-the-document-view-architecture.md)
+- [Belge/görünüm mimarisi alternatifleri](../alternatives-to-the-document-view-architecture.md)
 
-- [Uygulama Tasarımı Seçimleri](../../mfc/application-design-choices.md)
+- [Uygulama Tasarımı Seçimleri](../application-design-choices.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC Uygulama Sihirbazı](../../mfc/reference/mfc-application-wizard.md)<br/>
-[Form görünümleri](../../mfc/form-views-mfc.md)<br/>
-[Dosya Gezgini Stilinde MFC Uygulaması Oluşturma](../../mfc/reference/creating-a-file-explorer-style-mfc-application.md)<br/>
-[Web Tarayıcısı Stilinde MFC Uygulaması Oluşturma](../../mfc/reference/creating-a-web-browser-style-mfc-application.md)
+[MFC Uygulama Sihirbazı](mfc-application-wizard.md)<br/>
+[Form görünümleri](../form-views-mfc.md)<br/>
+[Dosya Gezgini Stilinde MFC Uygulaması Oluşturma](creating-a-file-explorer-style-mfc-application.md)<br/>
+[Web Tarayıcısı Stilinde MFC Uygulaması Oluşturma](creating-a-web-browser-style-mfc-application.md)

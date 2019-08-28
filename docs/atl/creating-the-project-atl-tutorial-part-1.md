@@ -3,19 +3,16 @@ title: Proje Oluşturma (ATL Eğitmeni, Bölüm 1)
 ms.custom: get-started-article
 ms.date: 08/19/2019
 ms.assetid: f6b727d1-390a-4b27-b82f-daadcd9fc059
-ms.openlocfilehash: 9f7f62ec94d5ac6d6076763853aa19297cf310e6
-ms.sourcegitcommit: 9d4ffb8e6e0d70520a1e1a77805785878d445b8a
+ms.openlocfilehash: 5bb4c6edffd13e13a451b203feea9a03461a9318
+ms.sourcegitcommit: bf1940a39029dbbd861f95480f55e5e8bd25cda0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69630699"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70108378"
 ---
 # <a name="creating-the-project-atl-tutorial-part-1"></a>Proje Oluşturma (ATL Eğitmeni, Bölüm 1)
 
 Bu öğretici, bir çokgen görüntüleyen ActiveX nesnesi oluşturan, öznitelikli bir ATL projesinde adım adım yönergeler sunar. Nesnesi, kullanıcının çokgeni oluşturan kenar sayısını değiştirmesine izin verme ve görüntüyü yenilemek için kod içerir.
-
-> [!NOTE]
-> ATL ve MFC, Visual Studio 'nun Express sürümlerinde genellikle desteklenmez.
 
 > [!NOTE]
 > Bu öğretici, çokgen örneğiyle aynı kaynak kodu oluşturur. Kaynak kodu el ile girmekten kaçınmak isterseniz, [Çokgen örnek soyut](https://github.com/Microsoft/VCSamples/tree/master/VC2008Samples/ATL/Controls/Polygon)' ndan indirebilirsiniz. Daha sonra öğreticide çalışırken Çokgen kaynak koduna başvurabilir veya kendi projenizdeki hataları denetlemek için bunu kullanabilirsiniz.
