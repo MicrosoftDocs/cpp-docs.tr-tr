@@ -1,6 +1,6 @@
 ---
 title: CMFCDynamicLayout sınıfı
-ms.date: 11/04/2016
+ms.date: 08/29/2019
 f1_keywords:
 - CMFCDynamicLayout
 - AFXLAYOUT/CMFCDynamicLayout
@@ -15,16 +15,16 @@ f1_keywords:
 - AFXLAYOUT/CMFCDynamicLayout::LoadResource
 - AFXLAYOUT/CMFCDynamicLayout::SetMinSize
 ms.assetid: c2df2976-f049-47fc-9cf0-abe3e01948bc
-ms.openlocfilehash: 40dedbe2737a79b7531b8acd47870ce7cb788604
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f1ddf35b514d9b89f53d5f1307a6ecb7132d2854
+ms.sourcegitcommit: e10a5feea193c249ddc5a6faba48e7c6d8784e73
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62237602"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70177518"
 ---
 # <a name="cmfcdynamiclayout-class"></a>CMFCDynamicLayout sınıfı
 
-Kullanıcı yeniden boyutlandırır gibi yeniden boyutlandırılan bir pencerede denetimlerinin nasıl taşınmış ve belirtir.
+Kullanıcı pencereyi yeniden boyutlandırdığında penceredeki denetimlerin nasıl taşındığını ve yeniden boyutlandırılacağını belirtir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -38,38 +38,38 @@ class CMFCDynamicLayout : public CObject
 
 |Ad|Açıklama|
 |----------|-----------------|
-|`CMFCDynamicLayout::CMFCDynamicLayout`|Oluşturur bir `CMFCDynamicLayout` nesne.|
+|`CMFCDynamicLayout::CMFCDynamicLayout`|Bir `CMFCDynamicLayout` nesnesi oluşturur.|
 |`CMFCDynamicLayout::~CMFCDynamicLayout`|Yıkıcı.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CMFCDynamicLayout::AddItem](#additem)|Dinamik düzen yönetici tarafından denetlenen windows listesi için genellikle bir denetimi alt pencere ekler.|
-|[CMFCDynamicLayout::Adjust](#adjust)|Dinamik düzen yönetici tarafından denetlenen windows listesi için genellikle bir denetimi alt pencere ekler.|
-|[CMFCDynamicLayout::Create](#create)|Depolar ve konak penceresinin doğrular.|
-|[CMFCDynamicLayout::GetHostWnd](#gethostwnd)|Bir konak penceresine bir işaretçi döndürür.|
-|[CMFCDynamicLayout::GetMinSize](#getminsize)|Hangi düzenin aşağıda pencere boyutu ayarlanamadı döndürür.|
-|[CMFCDynamicLayout::GetWindowRect](#getwindowrect)|Geçerli istemci bölge penceresinin için dikdörtgen alır.|
-|[CMFCDynamicLayout::HasItem](#hasitem)|Dinamik düzen için bir alt denetimin eklendiyse denetler.|
-|[CMFCDynamicLayout::IsEmpty](#isempty)|Dinamik düzen eklenen herhangi bir alt öğe pencerelerini sahip olup olmadığını denetler.|
-|[CMFCDynamicLayout::LoadResource](#loadresource)|Dinamik düzen AFX_DIALOG_LAYOUT kaynağından okur ve ana pencereyi düzeni uygular.|
-|statik [CMFCDynamicLayout::MoveHorizontal](#movehorizontal)|Alır bir [MoveSettings](#movesettings_structure) değer kullanıcının kendi barındırma penceresi yeniden boyutlandırdığında ne kadar bir alt denetimin yatay olarak tanımlar.|
-|statik [CMFCDynamicLayout::MoveHorizontalAndVertical](#movehorizontalandvertical)|Alır bir [MoveSettings](#movesettings_structure) değer kullanıcının kendi barındırma penceresi yeniden boyutlandırdığında ne kadar bir alt denetimin yatay olarak tanımlar.|
-|statik [CMFCDynamicLayout::MoveNone](#movenone)|Alır bir [MoveSettings](#movesettings_structure) dikey veya yatay bir alt denetimin için hiçbir hareket gösteren bir değer.|
-|statik [CMFCDynamicLayout::MoveVertical](#movevertical)|Alır bir [MoveSettings](#movesettings_structure) değer kullanıcının kendi barındırma penceresi yeniden boyutlandırdığında ne kadar bir alt denetimin dikey olarak tanımlar.|
-|[CMFCDynamicLayout::SetMinSize](#setminsize)|Hangi düzenin aşağıda pencere boyutu ayarlanamadı ayarlar.|
-|statik [CMFCDynamicLayout::SizeHorizontal](#sizehorizontal)|Alır bir [SizeSettings](#sizesettings_structure) kullanıcı kendi barındırma penceresi yeniden boyutlandırdığında ne kadar bir alt denetimin yatay olarak yeniden boyutlandırıldığını tanımlar değeri.|
-|statik [CMFCDynamicLayout::SizeHorizontalAndVertical](#sizehorizontalandvertical)|Alır bir [SizeSettings](#sizesettings_structure) kullanıcı kendi barındırma penceresi yeniden boyutlandırdığında ne kadar bir alt denetimin yatay olarak yeniden boyutlandırıldığını tanımlar değeri.|
-|statik [CMFCDynamicLayout::SizeNone](#sizenone)|Alır bir [SizeSettings](#sizesettings_structure) bir alt denetimin boyutunu değişiklik gösteren bir değer.|
-|statik [CMFCDynamicLayout::SizeVertical](#sizevertical)|Alır bir [SizeSettings](#sizesettings_structure) kullanıcı kendi barındırma penceresi yeniden boyutlandırdığında ne kadar bir alt denetimin dikey olarak yeniden boyutlandırıldığını tanımlar değeri.|
+|[CMFCDynamicLayout:: AddItem](#additem)|Dinamik düzen yöneticisi tarafından denetlenen pencereler listesine bir alt pencere (genellikle bir denetim) ekler.|
+|[CMFCDynamicLayout:: ayarla](#adjust)|Dinamik düzen yöneticisi tarafından denetlenen pencereler listesine bir alt pencere (genellikle bir denetim) ekler.|
+|[CMFCDynamicLayout:: Create](#create)|Konak penceresini depolar ve doğrular.|
+|[CMFCDynamicLayout:: GetHostWnd](#gethostwnd)|Ana bilgisayar penceresine bir işaretçi döndürür.|
+|[CMFCDynamicLayout:: GetMinSize](#getminsize)|Düzenin ayarlandığı pencere boyutunu döndürür.|
+|[CMFCDynamicLayout:: GetWindowRect](#getwindowrect)|Pencerenin geçerli istemci alanı için dikdörtgeni alır.|
+|[CMFCDynamicLayout:: HasItem](#hasitem)|Dinamik düzene bir alt denetim eklenip eklenmediğini denetler.|
+|[CMFCDynamicLayout:: IsEmpty](#isempty)|Dinamik bir düzenin alt pencereleri eklenip eklenmediğini denetler.|
+|[CMFCDynamicLayout:: LoadResource](#loadresource)|AFX_DIALOG_LAYOUT kaynağından dinamik düzeni okur ve sonra düzeni ana bilgisayar penceresine uygular.|
+|statik [CMFCDynamicLayout:: Moveyatay](#movehorizontal)|Kullanıcı barındırma penceresini yeniden boyutlandırdığında bir alt denetimin yatay olarak ne kadar taşındığını tanımlayan bir [MoveSettings](#movesettings_structure) değeri alır.|
+|statik [CMFCDynamicLayout:: MoveHorizontalAndVertical](#movehorizontalandvertical)|Kullanıcı barındırma penceresini yeniden boyutlandırdığında bir alt denetimin yatay olarak ne kadar taşındığını tanımlayan bir [MoveSettings](#movesettings_structure) değeri alır.|
+|statik [CMFCDynamicLayout:: MoveNone](#movenone)|Alt denetim için hareket, dikey veya yatay olarak temsil eden bir [MoveSettings](#movesettings_structure) değeri alır.|
+|statik [CMFCDynamicLayout:: MoveVertical](#movevertical)|Kullanıcı barındırma penceresini yeniden boyutlandırdığında bir alt denetimin dikey olarak ne kadar taşındığını tanımlayan bir [MoveSettings](#movesettings_structure) değeri alır.|
+|[CMFCDynamicLayout:: SetMinSize](#setminsize)|Düzenin ayarlanmayan pencere boyutunu ayarlar.|
+|statik [CMFCDynamicLayout:: Sizeyatay](#sizehorizontal)|Kullanıcı barındırma penceresini yeniden boyutlandırdığında bir alt denetimin yatay olarak ne kadar yeniden boyutlandırıldığını tanımlayan bir [SizeSettings](#sizesettings_structure) değeri alır.|
+|statik [CMFCDynamicLayout:: SizeHorizontalAndVertical](#sizehorizontalandvertical)|Kullanıcı barındırma penceresini yeniden boyutlandırdığında bir alt denetimin yatay olarak ne kadar yeniden boyutlandırıldığını tanımlayan bir [SizeSettings](#sizesettings_structure) değeri alır.|
+|statik [CMFCDynamicLayout:: SizeNone](#sizenone)|Bir alt denetim için boyut değişikliğini temsil eden bir [SizeSettings](#sizesettings_structure) değeri alır.|
+|statik [CMFCDynamicLayout:: SizeVertical](#sizevertical)|Kullanıcı barındırma penceresini yeniden boyutlandırdığında bir alt denetimin dikey olarak ne kadar yeniden boyutlandırıldığını tanımlayan bir [SizeSettings](#sizesettings_structure) değeri alır.|
 
 ## <a name="nested-types"></a>İç içe Geçmiş Türler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CMFCDynamicLayout::MoveSettings yapısı](#movesettings_structure)|Dinamik düzen denetimleri için veri taşıma kapsüller.|
-|[CMFCDynamicLayout::SizeSettings yapısı](#sizesettings_structure)|Dinamik düzen denetimleri boyutu değişiklik verilerini kapsüller.|
+|[CMFCDynamicLayout:: MoveSettings yapısı](#movesettings_structure)|Dinamik bir düzende denetimlerin verilerini taşıma ' yı kapsüller.|
+|[CMFCDynamicLayout:: SizeSettings yapısı](#sizesettings_structure)|Dinamik düzendeki denetimlerin boyut değişiklik verilerini kapsüller.|
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -81,11 +81,11 @@ class CMFCDynamicLayout : public CObject
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxlayout.h
+**Üstbilgi:** afxlayout. h
 
-##  <a name="additem"></a>  CMFCDynamicLayout::AddItem
+##  <a name="additem"></a>CMFCDynamicLayout:: AddItem
 
-Dinamik düzen yönetici tarafından denetlenen windows listesi için genellikle bir denetimi alt pencere ekler.
+Dinamik düzen yöneticisi tarafından denetlenen pencereler listesine bir alt pencere (genellikle bir denetim) ekler.
 
 ```
 BOOL AddItem(
@@ -99,29 +99,29 @@ BOOL AddItem(
 
 ### <a name="parameters"></a>Parametreler
 
-*HWND*<br/>
-Eklenecek penceresine tanıtıcısı.
+*lendiği*<br/>
+Eklenecek pencerenin tutamacı.
 
-*nID*<br/>
-Eklemek için alt denetimin kimliği.
+*NID*<br/>
+Eklenecek alt denetimin KIMLIĞI.
 
 *moveSettings*<br/>
-Pencere boyutu değiştikçe denetimi nasıl taşınacağını açıklar yapısı.
+Pencere boyutu değiştiğinde denetimin nasıl taşınacağını açıklayan bir yapı.
 
 *sizeSettings*<br/>
-Denetimi pencere boyutu değiştikçe nasıl boyutlandırılıp açıklayan yapısı.
+Pencere boyutu değiştiğinde denetimin nasıl yeniden boyutlandırılacağını açıklayan bir yapı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğesi başarıyla eklenmişse TRUE; Aksi durumda FALSE.
+Öğe başarıyla eklendiyse doğru; Aksi halde yanlış.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir alt denetimin boyutunu ve konumunu değiştiğinde dinamik barındırma penceresi yeniden boyutlandırılırken.
+Bir barındırma penceresi yeniden boyutlandırılırken bir alt denetimin konumu ve boyutu dinamik olarak değiştirilir.
 
-##  <a name="adjust"></a>  CMFCDynamicLayout::Adjust
+##  <a name="adjust"></a>CMFCDynamicLayout:: ayarla
 
-Dinamik düzen yönetici tarafından denetlenen windows listesi için genellikle bir denetimi alt pencere ekler.
+Dinamik düzen yöneticisi tarafından denetlenen pencereler listesine bir alt pencere (genellikle bir denetim) ekler.
 
 ```
 void Adjust();
@@ -129,11 +129,11 @@ void Adjust();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir alt denetimin boyutunu ve konumunu değiştiğinde dinamik barındırma penceresi yeniden boyutlandırılırken.
+Bir barındırma penceresi yeniden boyutlandırılırken bir alt denetimin konumu ve boyutu dinamik olarak değiştirilir.
 
-##  <a name="create"></a>  CMFCDynamicLayout::Create
+##  <a name="create"></a>CMFCDynamicLayout:: Create
 
-Depolar ve konak penceresinin doğrular.
+Konak penceresini depolar ve doğrular.
 
 ```
 BOOL Create(CWnd* pHostWnd);
@@ -141,18 +141,18 @@ BOOL Create(CWnd* pHostWnd);
 
 ### <a name="parameters"></a>Parametreler
 
-*pHostWnd*<br/>
-Ana pencere işaretçisi.
+*Fostwnd*<br/>
+Ana bilgisayar penceresine yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Oluşturma başarılı olursa TRUE; Aksi durumda FALSE.
+Oluşturma başarılı olursa doğru; Aksi halde yanlış.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="gethostwnd"></a>  CMFCDynamicLayout::GetHostWnd
+##  <a name="gethostwnd"></a>CMFCDynamicLayout:: GetHostWnd
 
-Bir konak penceresine bir işaretçi döndürür.
+Ana bilgisayar penceresine bir işaretçi döndürür.
 
 ```
 CWnd* GetHostWnd();
@@ -160,15 +160,15 @@ CWnd* GetHostWnd();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ana pencere işaretçisi.
+Ana bilgisayar penceresine yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, bu penceresiyle ilişkili tüm alt denetim konumları yeniden hesaplanır.
+Varsayılan olarak, tüm alt denetim konumları bu pencereye göre yeniden hesaplanır.
 
-##  <a name="getminsize"></a>  CMFCDynamicLayout::GetMinSize
+##  <a name="getminsize"></a>CMFCDynamicLayout:: GetMinSize
 
-Hangi düzenin aşağıda pencere boyutu ayarlanamadı döndürür.
+Düzenin ayarlandığı pencere boyutunu döndürür.
 
 ```
 CSize GetMinSize();
@@ -176,15 +176,15 @@ CSize GetMinSize();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Pencere boyutu altında Düzen değil ayarlanır.
+Aşağıdaki düzenin ayarlandığı pencere boyutu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir alt denetimin boyutunu ve konumunu değiştiğinde dinamik barındırma penceresi yeniden boyutlandırılıyor, ancak en az boyutu altında Düzen değil ayarlanır. Kullanıcı pencereyi daha küçük bir boyuta yeniden boyutlandırabilirsiniz, ancak pencere bölümlerini ardından görünümünden gizlenen.
+Bir barındırma penceresi yeniden boyutlandırılırken bir alt denetimin konumu ve boyutu dinamik olarak değiştirilir, ancak en düşük bir boyut aşağıda ayarlanır. Kullanıcı pencereyi daha küçük bir boyutla yeniden boyutlandırabilir, ancak pencerenin parçaları görünümden gizlenir.
 
-##  <a name="getwindowrect"></a>  CMFCDynamicLayout::GetWindowRect
+##  <a name="getwindowrect"></a>CMFCDynamicLayout:: GetWindowRect
 
-Geçerli istemci bölge penceresinin için dikdörtgen alır.
+Pencerenin geçerli istemci alanı için dikdörtgeni alır.
 
 ```
 void GetHostWndRect(CRect& rect,);
@@ -193,13 +193,13 @@ void GetHostWndRect(CRect& rect,);
 ### <a name="parameters"></a>Parametreler
 
 *Rect*<br/>
-Bu parametre, işlev döndürdükten sonra Düzen alanına sınırlayıcı dikdörtgenini içerir. Out parametresi budur; giriş değeri üzerine yazılır.
+İşlev döndüğünde, bu parametre düzen alanının sınırlayıcı dikdörtgenini içerir. Bu bir out parametresidir; giriş değerinin üzerine yazılır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="hasitem"></a>  CMFCDynamicLayout::HasItem
+##  <a name="hasitem"></a>CMFCDynamicLayout:: HasItem
 
-Dinamik düzen için bir alt denetimin eklendiyse denetler.
+Dinamik düzene bir alt denetim eklenip eklenmediğini denetler.
 
 ```
 BOOL HasItem(HWND hwnd);
@@ -207,18 +207,18 @@ BOOL HasItem(HWND hwnd);
 
 ### <a name="parameters"></a>Parametreler
 
-*HWND*<br/>
-Denetimi için Pencere işleyicisi.
+*lendiği*<br/>
+Denetim için pencere tanıtıcısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu öğe düzeni varsa TRUE; Aksi durumda FALSE.
+Düzen zaten bu öğeye sahipse TRUE; Aksi halde yanlış.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="isempty"></a>  CMFCDynamicLayout::IsEmpty
+##  <a name="isempty"></a>CMFCDynamicLayout:: IsEmpty
 
-Dinamik düzen eklenen herhangi bir alt öğe pencerelerini sahip olup olmadığını denetler.
+Dinamik bir düzenin alt pencereleri eklenip eklenmediğini denetler.
 
 ```
 BOOL IsEmpty();
@@ -226,13 +226,13 @@ BOOL IsEmpty();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Düzen öğe varsa TRUE; Aksi durumda FALSE.
+Mizanpajda öğe yoksa doğru; Aksi halde yanlış.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="loadresource"></a>  CMFCDynamicLayout::LoadResource
+##  <a name="loadresource"></a>CMFCDynamicLayout:: LoadResource
 
-Dinamik düzen AFX_DIALOG_LAYOUT kaynağından okur ve ana pencereyi düzeni uygular.
+AFX_DIALOG_LAYOUT kaynağından dinamik düzeni okur ve sonra düzeni ana bilgisayar penceresine uygular.
 
 ```
 static BOOL LoadResource(CWnd* pHostWnd,
@@ -242,24 +242,24 @@ static BOOL LoadResource(CWnd* pHostWnd,
 
 ### <a name="parameters"></a>Parametreler
 
-*pHostWnd*<br/>
-Ana pencere işaretçisi.
+*Fostwnd*<br/>
+Ana bilgisayar penceresine yönelik bir işaretçi.
 
 *lpResource*<br/>
-Bir işaretçi AFX_DIALOG_LAYOUT kaynağı içeren arabellek.
+AFX_DIALOG_LAYOUT kaynağını içeren arabelleğin işaretçisi.
 
 *dwSize*<br/>
-Arabellek boyutu bayt cinsinden.
+Bayt cinsinden arabellek boyutu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kaynak yüklendi ve ana pencereyi uygulanan gerekiyorsa TRUE; Aksi durumda FALSE.
+Kaynak yüklenip ana bilgisayar penceresine uygulanırsa doğru; Aksi halde yanlış.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="movehorizontal"></a>  CMFCDynamicLayout::MoveHorizontal
+##  <a name="movehorizontal"></a>CMFCDynamicLayout:: Moveyatay
 
-Alır bir [MoveSettings](#movesettings_structure) değer kullanıcının kendi barındırma penceresi yeniden boyutlandırdığında ne kadar bir alt denetimin yatay olarak tanımlar.
+Kullanıcı barındırma penceresini yeniden boyutlandırdığında bir alt denetimin yatay olarak ne kadar taşındığını tanımlayan bir [MoveSettings](#movesettings_structure) değeri alır.
 
 ```
 static MoveSettings MoveHorizontal(int nRatio);
@@ -267,18 +267,18 @@ static MoveSettings MoveHorizontal(int nRatio);
 
 ### <a name="parameters"></a>Parametreler
 
-*nRatio*<br/>
-Yüzde olarak kullanıcı konak penceresini yeniden boyutlandırdığında ne kadar bir alt denetimin yatay olarak tanımlar.
+*Noran*<br/>
+Kullanıcı konak penceresini yeniden boyutlandırdığında bir alt denetimin yatay olarak ne kadar taşındığını yüzde olarak tanımlar.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-A [MoveSettings](#movesettings_structure) istenen kapsülleyen değeri taşımak oranı.
+İstenen taşıma oranını kapsülleyen bir [MoveSettings](#movesettings_structure) değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="movehorizontalandvertical"></a>  CMFCDynamicLayout::MoveHorizontalAndVertical
+##  <a name="movehorizontalandvertical"></a>CMFCDynamicLayout:: MoveHorizontalAndVertical
 
-Alır bir [MoveSettings](#movesettings_structure) değer kullanıcının kendi barındırma penceresi yeniden boyutlandırdığında ne kadar bir alt denetimin yatay olarak tanımlar.
+Kullanıcı barındırma penceresini yeniden boyutlandırdığında bir alt denetimin yatay olarak ne kadar taşındığını tanımlayan bir [MoveSettings](#movesettings_structure) değeri alır.
 
 ```
 static MoveSettings MoveHorizontalAndVertical(int nXRatio int nYRatio);
@@ -287,20 +287,20 @@ static MoveSettings MoveHorizontalAndVertical(int nXRatio int nYRatio);
 ### <a name="parameters"></a>Parametreler
 
 *nXRatio*<br/>
-Yüzde olarak kullanıcı konak penceresini yeniden boyutlandırdığında ne kadar bir alt denetimin yatay olarak tanımlar.
+Kullanıcı konak penceresini yeniden boyutlandırdığında bir alt denetimin yatay olarak ne kadar taşındığını yüzde olarak tanımlar.
 
 *nYRatio*<br/>
-Yüzde olarak kullanıcı konak penceresini yeniden boyutlandırdığında ne kadar bir alt denetimin dikey olarak tanımlar.
+Kullanıcı konak penceresini yeniden boyutlandırdığında bir alt denetimin dikey olarak ne kadar ilerlemediğini yüzde olarak tanımlar.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-A [MoveSettings](#movesettings_structure) istenen kapsülleyen değeri taşımak oranı.
+İstenen taşıma oranını kapsülleyen bir [MoveSettings](#movesettings_structure) değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="movenone"></a>  CMFCDynamicLayout::MoveNone
+##  <a name="movenone"></a>CMFCDynamicLayout:: MoveNone
 
-Alır bir [MoveSettings](#movesettings_structure) dikey veya yatay bir alt denetimin için hiçbir hareket gösteren bir değer.
+Alt denetim için hareket, dikey veya yatay olarak temsil eden bir [MoveSettings](#movesettings_structure) değeri alır.
 
 ```
 static MoveSettings MoveNone();
@@ -308,13 +308,13 @@ static MoveSettings MoveNone();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-A [MoveSettings](#movesettings_structure) denetim yerinde düzeltir ve böylece kullanıcı konak penceresini yeniden boyutlandırır gibi taşımaz değeri.
+Denetimi yerinde düzelten bir [MoveSettings](#movesettings_structure) değeri, Kullanıcı ana bilgisayar penceresini yeniden boyutlandırdığından hareket etmez.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="movesettings_structure"></a>  CMFCDynamicLayout::MoveSettings yapısı
+##  <a name="movesettings_structure"></a>CMFCDynamicLayout:: MoveSettings yapısı
 
-Dinamik düzen denetimleri için veri taşıma kapsüller.
+Dinamik bir düzende denetimlerin verilerini taşıma ' yı kapsüller.
 
 ```
 struct CMFCDynamicLayout::MoveSettings;
@@ -322,11 +322,11 @@ struct CMFCDynamicLayout::MoveSettings;
 
 ### <a name="remarks"></a>Açıklamalar
 
-İç içe geçmiş bir sınıf içinde budur `CMFCDynamicLayout`.
+Bu, içinde `CMFCDynamicLayout`iç içe yerleştirilmiş bir sınıftır.
 
-## <a name="cmfcdynamiclayoutmovesettingsishorizontal"></a>CMFCDynamicLayout::MoveSettings::IsHorizontal
+## <a name="cmfcdynamiclayoutmovesettingsishorizontal"></a>CMFCDynamicLayout:: MoveSettings:: ısyatay
 
-Veri taşıma sıfır olmayan bir yatay hareket belirtirse denetleyin.
+Taşıma verilerinin sıfır dışında yatay bir taşıma belirttiğinden emin olun.
 
 ```
 BOOL IsHorizontal() const
@@ -334,11 +334,11 @@ BOOL IsHorizontal() const
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-TRUE ise `MoveSettings` sıfır olmayan bir yatay hareket nesnesini belirtir.
+`MoveSettings` Nesne sıfır dışında yatay taşıma belirtiyorsa doğru.
 
-## <a name="cmfcdynamiclayoutmovesettingsisnone"></a>CMFCDynamicLayout::MoveSettings::IsNone
+## <a name="cmfcdynamiclayoutmovesettingsisnone"></a>CMFCDynamicLayout:: MoveSettings:: IsNone
 
-Veri taşıma hiçbir taşıma belirtirse denetleyin.
+Taşıma verilerinde hareket olup olmadığını kontrol edin.
 
 ```
 BOOL IsNone() const
@@ -346,11 +346,11 @@ BOOL IsNone() const
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-TRUE ise `MoveSettings` hiçbir taşıma nesnesini belirtir.
+`MoveSettings` Nesne hiçbir hareket belirtiyorsa true.
 
-## <a name="cmfcdynamiclayoutmovesettingsisvertical"></a>CMFCDynamicLayout::MoveSettings::IsVertical
+## <a name="cmfcdynamiclayoutmovesettingsisvertical"></a>CMFCDynamicLayout:: MoveSettings:: IsVertical
 
-  Veri taşıma sıfır olmayan bir dikey taşıma belirtirse denetleyin.
+Taşıma verilerinde sıfır dışında dikey bir hareket olup olmadığını kontrol edin.
 
 ```
 BOOL IsVertical() const
@@ -358,11 +358,11 @@ BOOL IsVertical() const
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-TRUE ise `MoveSettings` sıfır olmayan bir dikey taşıma nesnesini belirtir.
+`MoveSettings` Nesne sıfır olmayan dikey bir hareket belirtiyorsa doğru.
 
-##  <a name="movevertical"></a>  CMFCDynamicLayout::MoveVertical
+##  <a name="movevertical"></a>CMFCDynamicLayout:: MoveVertical
 
-Alır bir [MoveSettings](#movesettings_structure) değer kullanıcının kendi barındırma penceresi yeniden boyutlandırdığında ne kadar bir alt denetimin dikey olarak tanımlar.
+Kullanıcı barındırma penceresini yeniden boyutlandırdığında bir alt denetimin dikey olarak ne kadar taşındığını tanımlayan bir [MoveSettings](#movesettings_structure) değeri alır.
 
 ```
 static MoveSettings MoveVertical(int nRatio);
@@ -370,18 +370,18 @@ static MoveSettings MoveVertical(int nRatio);
 
 ### <a name="parameters"></a>Parametreler
 
-*nRatio*<br/>
-Yüzde olarak kullanıcı konak penceresini yeniden boyutlandırdığında ne kadar bir alt denetimin dikey olarak tanımlar.
+*Noran*<br/>
+Kullanıcı konak penceresini yeniden boyutlandırdığında bir alt denetimin dikey olarak ne kadar ilerlemediğini yüzde olarak tanımlar.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-A [MoveSettings](#movesettings_structure) istenen kapsülleyen değeri taşımak oranı.
+İstenen taşıma oranını kapsülleyen bir [MoveSettings](#movesettings_structure) değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="setminsize"></a>  CMFCDynamicLayout::SetMinSize
+##  <a name="setminsize"></a>CMFCDynamicLayout:: SetMinSize
 
-Hangi düzenin aşağıda pencere boyutu ayarlanamadı ayarlar.
+Düzenin ayarlanmayan pencere boyutunu ayarlar.
 
 ```
 void SetMinSize(const CSize& size);
@@ -389,16 +389,16 @@ void SetMinSize(const CSize& size);
 
 ### <a name="parameters"></a>Parametreler
 
-*Boyutu*<br/>
-İstenen boyut altında Düzen değil ayarlanır.
+*boyutla*<br/>
+Aşağıdaki düzenin ayarlanmayacağı istenen boyut.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir alt denetimin boyutunu ve konumunu değiştiğinde dinamik barındırma penceresi yeniden boyutlandırılıyor, ancak en az boyutu altında Düzen değil ayarlanır. Kullanıcı pencereyi daha küçük bir boyuta yeniden boyutlandırabilirsiniz, ancak pencere bölümlerini ardından görünümünden gizlenen.
+Bir barındırma penceresi yeniden boyutlandırılırken bir alt denetimin konumu ve boyutu dinamik olarak değiştirilir, ancak en düşük bir boyut aşağıda ayarlanır. Kullanıcı pencereyi daha küçük bir boyutla yeniden boyutlandırabilir, ancak pencerenin parçaları görünümden gizlenir.
 
-##  <a name="sizehorizontal"></a>  CMFCDynamicLayout::SizeHorizontal
+##  <a name="sizehorizontal"></a>CMFCDynamicLayout:: Sizeyatay
 
-Alır bir [SizeSettings](#sizesettings_structure) kullanıcı kendi barındırma penceresi yeniden boyutlandırdığında ne kadar bir alt denetimin yatay olarak yeniden boyutlandırıldığını tanımlar değeri.
+Kullanıcı barındırma penceresini yeniden boyutlandırdığında bir alt denetimin yatay olarak ne kadar yeniden boyutlandırıldığını tanımlayan bir [SizeSettings](#sizesettings_structure) değeri alır.
 
 ```
 static SizeSettings SizeHorizontal(int nRatio);
@@ -406,18 +406,18 @@ static SizeSettings SizeHorizontal(int nRatio);
 
 ### <a name="parameters"></a>Parametreler
 
-*nRatio*<br/>
-Yüzde olarak kullanıcı konak penceresini yeniden boyutlandırdığında ne kadar bir alt denetimin yatay olarak yeniden boyutlandırıldığını tanımlar.
+*Noran*<br/>
+Kullanıcı konak penceresini yeniden boyutlandırdığında bir alt denetimin yatay olarak ne kadar yeniden boyutlandırıldığını yüzde olarak tanımlar.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-A [SizeSettings](#sizesettings_structure) istenen boyutu oranı kapsülleyen bir değer.
+İstenen boyut oranını kapsülleyen bir [SizeSettings](#sizesettings_structure) değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="sizehorizontalandvertical"></a>  CMFCDynamicLayout::SizeHorizontalAndVertical
+##  <a name="sizehorizontalandvertical"></a>CMFCDynamicLayout:: SizeHorizontalAndVertical
 
-Alır bir [SizeSettings](#sizesettings_structure) kullanıcı kendi barındırma penceresi yeniden boyutlandırdığında ne kadar bir alt denetimin yatay olarak yeniden boyutlandırıldığını tanımlar değeri.
+Kullanıcı barındırma penceresini yeniden boyutlandırdığında bir alt denetimin yatay olarak ne kadar yeniden boyutlandırıldığını tanımlayan bir [SizeSettings](#sizesettings_structure) değeri alır.
 
 ```
 static SizeSettings SizeHorizontalAndVertical(int nXRatio int nYRatio);
@@ -426,20 +426,20 @@ static SizeSettings SizeHorizontalAndVertical(int nXRatio int nYRatio);
 ### <a name="parameters"></a>Parametreler
 
 *nXRatio*<br/>
-Yüzde olarak kullanıcı konak penceresini yeniden boyutlandırdığında ne kadar bir alt denetimin yatay olarak yeniden boyutlandırıldığını tanımlar.
+Kullanıcı konak penceresini yeniden boyutlandırdığında bir alt denetimin yatay olarak ne kadar yeniden boyutlandırıldığını yüzde olarak tanımlar.
 
 *nYRatio*<br/>
-Yüzde olarak kullanıcı konak penceresini yeniden boyutlandırdığında ne kadar bir alt denetimin dikey olarak yeniden boyutlandırıldığını tanımlar.
+Kullanıcı konak penceresini yeniden boyutlandırdığında bir alt denetimin dikey olarak ne kadar yeniden boyutlandırıldığını yüzde olarak tanımlar.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-A [SizeSettings](#sizesettings_structure) istenen boyutu oranı kapsülleyen bir değer.
+İstenen boyut oranını kapsülleyen bir [SizeSettings](#sizesettings_structure) değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="sizenone"></a>  CMFCDynamicLayout::SizeNone
+##  <a name="sizenone"></a>CMFCDynamicLayout:: SizeNone
 
-Alır bir [SizeSettings](#sizesettings_structure) bir alt denetimin boyutunu değişiklik gösteren bir değer.
+Bir alt denetim için boyut değişikliğini temsil eden bir [SizeSettings](#sizesettings_structure) değeri alır.
 
 ```
 static SizeSettings SizeNone();
@@ -447,13 +447,13 @@ static SizeSettings SizeNone();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-A [SizeSettings](#sizesettings_structure) denetimin belirli bir boyutta düzeltir ve böylece kullanıcı konak penceresini yeniden boyutlandırır gibi boyut değişmez değer.
+Denetimi belirli bir boyutta düzelten bir [SizeSettings](#sizesettings_structure) değeri, Kullanıcı ana bilgisayar penceresini yeniden boyutlandırdığından boyutu değiştirmez.
 
 ### <a name="remarks"></a>Açıklamalar
 
-##  <a name="sizesettings_structure"></a>  CMFCDynamicLayout::SizeSettings yapısı
+##  <a name="sizesettings_structure"></a>CMFCDynamicLayout:: SizeSettings yapısı
 
-Dinamik düzen denetimleri boyutu değişiklik verilerini kapsüller.
+Dinamik düzendeki denetimlerin boyut değişiklik verilerini kapsüller.
 
 ```
 struct CMFCDynamicLayout::SizeSettings;
@@ -461,11 +461,11 @@ struct CMFCDynamicLayout::SizeSettings;
 
 ### <a name="remarks"></a>Açıklamalar
 
-İç içe geçmiş bir sınıf içinde budur `CMFCDynamicLayout`.
+Bu, içinde `CMFCDynamicLayout`iç içe yerleştirilmiş bir sınıftır.
 
-## <a name="cmfcdynamiclayoutsizesettingsishorizontal"></a>CMFCDynamicLayout::SizeSettings::IsHorizontal
+## <a name="cmfcdynamiclayoutsizesettingsishorizontal"></a>CMFCDynamicLayout:: SizeSettings:: ısyatay
 
-Yeniden boyutlandırma verilerini bir sıfır olmayan yatay yeniden boyutlandırma belirtirse denetler.
+Yeniden boyutlandırma verilerinin sıfır dışı bir yatay yeniden boyutlandırmayı belirtir olup olmadığını denetler.
 
 ```
 BOOL IsHorizontal() const
@@ -473,11 +473,11 @@ BOOL IsHorizontal() const
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-TRUE ise `SizeSettings` nesnesini bir sıfır olmayan yatay yeniden boyutlandırma belirtir.
+`SizeSettings` Nesne sıfır dışında bir yatay yeniden boyutlandırma belirtiyorsa true.
 
-## <a name="cmfcdynamiclayoutsizesettingsisnone"></a>CMFCDynamicLayout::SizeSettings::IsNone
+## <a name="cmfcdynamiclayoutsizesettingsisnone"></a>CMFCDynamicLayout:: SizeSettings:: IsNone
 
-Yeniden boyutlandırma veri, yeniden boyutlandırma belirtirse denetler.
+Yeniden boyutlandırma verilerinin yeniden boyutlandırma olup olmadığını denetler.
 
 ```
 BOOL IsNone() const
@@ -485,11 +485,11 @@ BOOL IsNone() const
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-TRUE ise `SizeSettings` nesneyi yeniden boyutlandırma belirtir.
+`SizeSettings` Nesne yeniden boyutlandırma yoksa true.
 
-## <a name="cmfcdynamiclayoutsizesettingsisvertical"></a>CMFCDynamicLayout::SizeSettings::IsVertical
+## <a name="cmfcdynamiclayoutsizesettingsisvertical"></a>CMFCDynamicLayout:: SizeSettings:: IsVertical
 
-Yeniden boyutlandırma verilerini bir sıfır olmayan dikey yeniden boyutlandırma belirtirse denetler.
+Yeniden boyutlandırma verilerinde sıfır dışında dikey yeniden boyutlandırma olup olmadığını denetler.
 
 ```
 BOOL IsVertical() const
@@ -497,11 +497,11 @@ BOOL IsVertical() const
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-TRUE ise `SizeSettings` nesnesini bir sıfır olmayan dikey yeniden boyutlandırma belirtir.
+`SizeSettings` Nesne sıfır olmayan dikey yeniden boyutlandırma belirtiyorsa true.
 
-##  <a name="sizevertical"></a>  CMFCDynamicLayout::SizeVertical
+##  <a name="sizevertical"></a>CMFCDynamicLayout:: SizeVertical
 
-Alır bir [SizeSettings](#sizesettings_structure) kullanıcı kendi barındırma penceresi yeniden boyutlandırdığında ne kadar bir alt denetimin dikey olarak yeniden boyutlandırıldığını tanımlar değeri.
+Kullanıcı barındırma penceresini yeniden boyutlandırdığında bir alt denetimin dikey olarak ne kadar yeniden boyutlandırıldığını tanımlayan bir [SizeSettings](#sizesettings_structure) değeri alır.
 
 ```
 static SizeSettings SizeVertical(int nRatio);
@@ -509,12 +509,12 @@ static SizeSettings SizeVertical(int nRatio);
 
 ### <a name="parameters"></a>Parametreler
 
-*nRatio*<br/>
-Yüzde olarak kullanıcı konak penceresini yeniden boyutlandırdığında ne kadar bir alt denetimin dikey olarak yeniden boyutlandırıldığını tanımlar.
+*Noran*<br/>
+Kullanıcı konak penceresini yeniden boyutlandırdığında bir alt denetimin dikey olarak ne kadar yeniden boyutlandırıldığını yüzde olarak tanımlar.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-A [SizeSettings](#sizesettings_structure) istenen boyutu oranı kapsülleyen bir değer.
+İstenen boyut oranını kapsülleyen bir [SizeSettings](#sizesettings_structure) değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 

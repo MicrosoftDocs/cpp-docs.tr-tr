@@ -1,6 +1,6 @@
 ---
 title: Cotacurrency sınıfı
-ms.date: 11/04/2016
+ms.date: 08/29/2019
 f1_keywords:
 - COleCurrency
 - AFXDISP/COleCurrency
@@ -22,12 +22,12 @@ helpviewer_keywords:
 - COleCurrency [MFC], m_cur
 - COleCurrency [MFC], m_status
 ms.assetid: 3a36e345-303f-46fb-a57c-858274378a8d
-ms.openlocfilehash: 00515e6822dad000c6745063c72d0ffaf367670b
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: a23bc489fce00d9ba0be6a3aa71468b469bf54c8
+ms.sourcegitcommit: e10a5feea193c249ddc5a6faba48e7c6d8784e73
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69504261"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70177410"
 ---
 # <a name="colecurrency-class"></a>Cotacurrency sınıfı
 
@@ -101,7 +101,7 @@ Bir `COleCurrency` nesnesi oluşturur.
 ```
 COleCurrency();
 COleCurrency(CURRENCY cySrc);
-  COleCurrency(const COleCurrency& curSrc);
+COleCurrency(const COleCurrency& curSrc);
 COleCurrency(const VARIANT& varSrc);
 
 COleCurrency(

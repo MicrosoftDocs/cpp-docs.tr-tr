@@ -24,12 +24,12 @@ helpviewer_keywords:
 - CAnimateCtrl [MFC], Seek
 - CAnimateCtrl [MFC], Stop
 ms.assetid: 5e8eb1bd-96b7-47b8-8de2-6bcbb3cc299b
-ms.openlocfilehash: adf8302508b81f1ac4f6cce3e3811ea6e3743bd4
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 18adead999f26768ae669d3a829b557bf9632a29
+ms.sourcegitcommit: e10a5feea193c249ddc5a6faba48e7c6d8784e73
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69507685"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70177453"
 ---
 # <a name="canimatectrl-class"></a>CAnimateCtrl sınıfı
 
@@ -332,7 +332,7 @@ Animasyon denetiminde `ACS_TRANSPARENT` stil varsa, AVI klibi animasyon klibinde
 
 ### <a name="example"></a>Örnek
 
-  [CAnimateCtrl:: CAnimateCtrl](#canimatectrl)örneğine bakın.
+[CAnimateCtrl:: CAnimateCtrl](#canimatectrl)örneğine bakın.
 
 ##  <a name="stop"></a>CAnimateCtrl:: stop
 

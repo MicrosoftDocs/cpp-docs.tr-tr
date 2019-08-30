@@ -1,6 +1,6 @@
 ---
 title: CStdioFile sınıfı
-ms.date: 11/04/2016
+ms.date: 08/29/2019
 f1_keywords:
 - CStdioFile
 - AFX/CStdioFile
@@ -18,12 +18,12 @@ helpviewer_keywords:
 - CStdioFile [MFC], WriteString
 - CStdioFile [MFC], m_pStream
 ms.assetid: 88c2274c-4f0e-4327-882a-557ba4b3ae15
-ms.openlocfilehash: 068e59fdc19821487bc78141d10743363221518e
-ms.sourcegitcommit: 878a164fe6d550ca81ab87d8425c8d3cd52fe384
+ms.openlocfilehash: 4b667f4121d92863335befda3a7beef74f29ad1a
+ms.sourcegitcommit: e10a5feea193c249ddc5a6faba48e7c6d8784e73
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68375839"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70177484"
 ---
 # <a name="cstdiofile-class"></a>CStdioFile sınıfı
 
@@ -89,7 +89,7 @@ Bir `CStdioFile` nesnesi oluşturur ve başlatır.
 ```
 CStdioFile();
 CStdioFile(CAtlTransactionManager* pTM);
-  CStdioFile(FILE* pOpenStream);
+CStdioFile(FILE* pOpenStream);
 
 CStdioFile(
     LPCTSTR lpszFileName,
@@ -240,11 +240,11 @@ virtual ULONGLONG Seek(
 *Ngüncelleştirmelerini*<br/>
 İşaretçi taşıma modu. Aşağıdaki değerlerden biri olmalıdır:
 
-- `CFile::begin`: Dosya *işaretçisini dosyanın* başlangıcından ileri doğru bir şekilde taşıyın.
+- `CFile::begin`: Dosya işaretçisini dosyanın başlangıcından ileri doğru bir şekilde taşıyın.
 
-- `CFile::current`: Dosya *işaretçisini dosyada* bulunan geçerli konumdan taşıyın.
+- `CFile::current`: Dosya işaretçisini dosyada bulunan geçerli konumdan taşıyın.
 
-- `CFile::end`: Dosya *işaretçisini dosyanın* sonundaki bir değerle taşıyın. *LOff* 'ın mevcut dosyaya arama yapmak için negatif olması gerektiğini unutmayın; pozitif değerler dosyanın sonundan daha sonra aranacaktır.
+- `CFile::end`: Dosya işaretçisini dosyanın sonundaki bir değerle taşıyın. *LOff* 'ın mevcut dosyaya arama yapmak için negatif olması gerektiğini unutmayın; pozitif değerler dosyanın sonundan daha sonra aranacaktır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
