@@ -1,22 +1,22 @@
 ---
-title: Ön işlemci Yönergeleri
-ms.date: 06/28/2018
+title: Ön işlemci yönergeleri
+ms.date: 08/29/2019
 helpviewer_keywords:
 - directives, preprocessor
 - preprocessor, directives
 ms.assetid: e0fc4564-b6cf-4a36-bf51-6ccd7abd0a94
-ms.openlocfilehash: 9481e977f2afb3de27a74278893a217fde48044b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 86432ebf210523dd958f3258075d9e9c6d3bb4e6
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62179977"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222271"
 ---
-# <a name="preprocessor-directives"></a>Ön işlemci Yönergeleri
+# <a name="preprocessor-directives"></a>Ön işlemci yönergeleri
 
-Önişlemci yönergeleri, aşağıdaki gibi `#define` ve `#ifdef`, genellikle kaynak programların kolay değiştirilmesini ve farklı yürütme ortamlarında derlemek kolay hale getirmek için kullanılır. Kaynak dosyasındaki yönergeler önişlemciye belirli eylemleri gerçekleştirmesini söyler. Örneğin, önişlemci metin içindeki belirteçleri değiştirin, diğer dosyaların içeriklerini kaynak dosyaya ekleyin veya metnin bölümlerini kaldırarak dosyanın bir kısmının derlemesini bastır. Önişlemci satırları makro genişletmeden daha önce gerçekleştirilen ve tanınan. Bu nedenle makro önişlemci komutu gibi görünen bir şey genişletir, komut önişlemci tarafından tanınmıyor.
+`#define` Ve`#ifdef`gibi Önişlemci yönergeleri genellikle kaynak programların farklı yürütme ortamlarında kolayca değiştirilmesini ve kolayca derlenmesi için kullanılır. Kaynak dosyadaki yönergeler, önişlemcinin belirli eylemleri geçirmesine söyler. Örneğin, Önişlemci metindeki belirteçleri değiştirebilir, diğer dosyaların içeriğini kaynak dosyasına ekleyebilir veya metnin parçalarını kaldırarak dosyanın bir kısmının derlemesini engelleyebilir. Ön işlemci satırları, makro genişletmesinden önce tanınır ve yürütülür. Bu nedenle, bir makro önişlemci komutu gibi görünen bir öğe halinde genişliyorsa, ön işlemci tarafından tanınmaz.
 
-Önişlemci deyimleri kaynak dosya deyimleriyle, çıkış sıraları desteklenmez olarak aynı karakter kullanın. Önişlemci deyimlerinde kullanılan karakter kümesi yürütme karakter kümesi ile aynıdır. Önişlemci ayrıca negatif karakter değerlerini tanır.
+Önişlemci deyimleri, kaçış sıralarının desteklenmediği özel durum ile kaynak dosya deyimleriyle aynı karakter kümesini kullanır. Önişlemci deyimlerde kullanılan karakter kümesi yürütme karakter kümesiyle aynıdır. Önişlemci ayrıca negatif karakter değerlerini de tanır.
 
 Önişlemci aşağıdaki yönergeleri tanır:
 
@@ -27,12 +27,12 @@ ms.locfileid: "62179977"
 |[#else](../preprocessor/hash-if-hash-elif-hash-else-and-hash-endif-directives-c-cpp.md)|[#ifdef](../preprocessor/hash-ifdef-and-hash-ifndef-directives-c-cpp.md)|[#line](../preprocessor/hash-line-directive-c-cpp.md)|[#endif](../preprocessor/hash-if-hash-elif-hash-else-and-hash-endif-directives-c-cpp.md)|
 |[#ifndef](../preprocessor/hash-ifdef-and-hash-ifndef-directives-c-cpp.md)|[#pragma](../preprocessor/pragma-directives-and-the-pragma-keyword.md)|||
 
-Numara işareti (**#**) gerekir; yönergeyi içeren satırdaki ilk boşluk olmayan karakter olması beyaz boşluk karakterleri numara işaretleri ile yönergenin ilk harfi arasında görünür. Yönergelerden bazıları bağımsız değişkenler veya değerler içerir. Bir yönerge (dışında bir bağımsız değişken veya yönergenin bir parçası olan değer) takip eden herhangi bir metin tek satır açıklama sınırlayıcısı gelmelidir (**//**) veya açıklama sınırlayıcıları içinde yer almalıdır ( __/ \*\*/__). Önişlemci yönergelerini içeren satırların hemen bir ters eğik çizgi ile satır sonu işareti koyarak devam ettirildi (**\\**).
+Numara işareti (`#`), yönergeyi içeren satırdaki ilk boşluk olmayan karakter olmalıdır. Boşluk karakterleri, yönergenin sayı işareti ve ilk harfi arasında görünebilir. Bazı yönergeler bağımsız değişkenleri veya değerleri içerir. Bir yönergeyi takip eden herhangi bir metin (yönergenin parçası olan bir bağımsız değişken veya değer hariç) öncesinde tek satırlık açıklama sınırlayıcısı gelmelidir (`//`) veya açıklama sınırlayıcıları (`/* */`) içine alınmalıdır. Önişlemci yönergelerini içeren satırlar, satır sonu işaretleyicisinden hemen önce bir ters eğik çizgiyle (`\`) devam edebilir.
 
-Önişlemci yönergeleri kaynak dosyada her yerde görünebilir, ancak bunlar yalnızca kaynak dosyasının kalanı için geçerlidir.
+Önişlemci yönergeleri kaynak dosyanın herhangi bir yerinde görünebilir, ancak yalnızca kaynak dosyanın geri kalanı için geçerlidir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Ön İşlemci İşleçleri](../preprocessor/preprocessor-operators.md)<br/>
-[Önceden Tanımlanmış Makrolar](../preprocessor/predefined-macros.md)<br/>
-[C/C++ Ön İşlemci Başvurusu](../preprocessor/c-cpp-preprocessor-reference.md)
+[Önişlemci işleçleri](../preprocessor/preprocessor-operators.md)\
+[Önceden tanımlanmış makrolar](../preprocessor/predefined-macros.md)\
+[c/c++ Önişlemci Başvurusu](../preprocessor/c-cpp-preprocessor-reference.md)

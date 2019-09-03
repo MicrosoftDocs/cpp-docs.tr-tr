@@ -1,6 +1,6 @@
 ---
-title: runtime_checks
-ms.date: 11/04/2016
+title: runtime_checks pragması
+ms.date: 08/29/2019
 f1_keywords:
 - vc-pragma.runtime_checks
 - runtime_checks_CPP
@@ -8,58 +8,55 @@ helpviewer_keywords:
 - runtime_checks pragma
 - pragmas, runtime_checks
 ms.assetid: ae50b43f-f88d-47ad-a2db-3389e9e7df5b
-ms.openlocfilehash: 44c26fb90a2d2f9ba78ec7dba7cceed65a4b4ed7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a1c8e6cca27e157818e6ec80182f8fefa112daf1
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62179990"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70216611"
 ---
-# <a name="runtimechecks"></a>runtime_checks
-Devre dışı bırakır veya geri yükler [/RTC](../build/reference/rtc-run-time-error-checks.md) ayarları.
+# <a name="runtime_checks-pragma"></a>runtime_checks pragması
+
+[/RTC](../build/reference/rtc-run-time-error-checks.md) ayarlarını devre dışı bırakır veya geri yükler.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
-#pragma runtime_checks( "[runtime_checks]", {restore | off} )
-```
+> **#pragma runtime_checks ("** [ *runtime_checks* ] **",** { **restore** | **off** } **)**
 
 ## <a name="remarks"></a>Açıklamalar
 
-Derleyici seçeneği ile etkin değil bir çalışma zamanı denetimi etkinleştirilemiyor. Örneğin, belirtmezseniz, `/RTCs`, belirten `#pragma runtime_checks( "s", restore)` yığın çerçeve doğrulama izin vermez.
+Derleyici seçeneği tarafından etkinleştirilmeyen bir çalışma zamanı denetimini etkinleştiremezsiniz. Örneğin, komut satırında belirtmezseniz `/RTCs` `#pragma runtime_checks( "s", restore)` , öğesini belirtmek yığın çerçeve doğrulamasını etkinleştirmez.
 
-**Runtime_checks** pragma işlevin dışında görünmelidir ve pragma görüldüğünde sonra tanımlanmış konumundaki ilk işlev etkinleşir. *Geri* ve *kapalı* bağımsız değişkenleri kapatma seçenekleri belirtilen **runtime_checks** açıp kapatabilir.
+**Runtime_checks** pragma bir işlevin dışında görünmelidir ve pragma görüntülendikten sonra tanımlanan ilk işlevde etkili olur. **Geri yükleme** ve **kapatma** bağımsız değişkenleri, **runtime_checks** açık veya kapalı olarak belirtilen seçenekleri devre dışı bırakır.
 
-**Runtime_checks** sıfır veya daha fazla parametre aşağıdaki tabloda gösterilen olabilir.
+**Runtime_checks** , aşağıdaki tabloda gösterilen parametrelerden biri sıfır veya daha fazla olabilir.
 
-### <a name="parameters-of-the-runtimechecks-pragma"></a>Runtime_checks Pragması parametreleri
+### <a name="parameters-of-the-runtime_checks-pragma"></a>Runtime_checks pragma parametreleri
 
-|Parametre|Çalışma zamanı denetim türü|
+| Parametre (ler) | Çalışma zamanı denetimi türü |
 |--------------------|-----------------------------|
-|*s*|Etkinleştirir (çerçeve) doğrulama yığın.|
-|*c*|Veri kaybı ile sonuçlanır daha küçük bir veri türü için bir değer atandığında raporlar.|
-|*u*|Bir değişken tanımlanmadan kullanıldığında raporlar.|
+| **s** | Yığın (çerçeve) doğrulamasını mümkün. |
+| **c** | Bir değer, veri kaybına neden olan daha küçük bir veri türüne atandığında bildirir. |
+| **u** | Bir değişken tanımlanmadan önce kullanıldığında raporlar. |
 
-İle kullanılan aynı harflerini bunlar `/RTC` derleyici seçeneği. Örneğin:
+Bu parametreler, `/RTC` derleyici seçeneği ile aynı olanlardır. Örneğin:
 
-```
+```cpp
 #pragma runtime_checks( "sc", restore )
 ```
 
-Kullanarak **runtime_checks** pragma ile boş bir dize (**""**) özel bir formu yönergesi:
+**Runtime_checks** pragma 'ı boş dize ( **""** ) ile kullanmak, yönergenin özel bir biçimidir:
 
-- Kullanırken *kapalı* parametresi, kapalı yukarıdaki tabloda listelenen çalışma zamanı hata denetimleri kapatır.
+- **Kapalı** parametresini kullandığınızda, yukarıdaki tabloda listelenen çalışma zamanı hata denetimlerini devre dışı bırakır.
 
-- Kullanırken *geri* parametresi ile belirtilen bu çalışma zamanı hata denetimleri sıfırlar, `/RTC` derleyici seçeneği.
+- **Restore** parametresini kullandığınızda, çalışma zamanı hata denetimini, `/RTC` derleyici seçeneğini kullanarak belirttikleriniz için sıfırlar.
 
-```
+```cpp
 #pragma runtime_checks( "", off )
-.
-.
-.
+/* runtime checks are off in this region */
 #pragma runtime_checks( "", restore )
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+[Pragma yönergeleri ve __pragma anahtar sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

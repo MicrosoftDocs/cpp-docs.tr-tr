@@ -1,6 +1,6 @@
 ---
 title: __assume
-ms.date: 10/09/2018
+ms.date: 09/02/2019
 f1_keywords:
 - __assume
 - _assume
@@ -8,58 +8,58 @@ f1_keywords:
 helpviewer_keywords:
 - __assume keyword [C++]
 ms.assetid: d8565123-b132-44b1-8235-5a8c8bff85a7
-ms.openlocfilehash: 1d84e9306dcd468153f38cc0c3085b43388e1dbd
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f3f847b5268605bdc5df90a8bbc6a88c78431864
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62264328"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70216967"
 ---
-# <a name="assume"></a>__assume
+# <a name="__assume"></a>__assume
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-İyileştirici ipucu geçirir.
+İyileştiriciye bir ipucu geçirir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```C
 __assume(
    expression
 )
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
-*İfade*<br/>
-Doğru olarak değerlendirilebilmesi için kabul herhangi bir ifade.
+*ifadesini*\
+True olarak değerlendirilme kabul edilen herhangi bir ifade.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Koşul tarafından temsil edilen iyileştirici varsayar `expression` burada anahtar sözcüğü görünür ve kadar doğrudur noktasında geçerlidir `expression` (örneğin, tarafından bir değişkene atama) değiştirdi. İyileştirici tarafından geçirilen ipuçları seçmeli kullanımını `__assume` iyileştirme artırabilir.
+İyileştirici tarafından `expression` temsil edilen koşulun, anahtar sözcüğünün göründüğü ve değiştirilene kadar `expression` doğru kaldığı varsayılır (örneğin, bir değişkene atamaya göre). İyileştiriciye geçirilen ipuçlarının seçmeli kullanımı, iyileştirmeden `__assume` iyileştirebilirler.
 
-Varsa `__assume` deyimi bir çelişki (her zaman false olarak değerlendirilen bir ifade) olarak yazılır, bu her zaman değerlendirilir `__assume(0)`. Kodunuzu beklendiği gibi davranmayan, emin `expression` tanımladığınız daha önce açıklandığı gibi geçerli ve doğru olduğundan. Hakkında daha fazla bilgi için beklenen `__assume(0)` davranışı, daha sonra açıklamalara bakın.
+Deyim bir çelişki olarak yazılmışsa (her zaman yanlış olarak değerlendirilen bir ifade), her zaman olarak `__assume(0)`değerlendirilir. `__assume` Kodunuz beklenildiği gibi davranmıyorsa, daha önce açıklandığı gibi `expression` tanımladığınız ' ın geçerli ve doğru olduğundan emin olun. Beklenen `__assume(0)` davranış hakkında daha fazla bilgi için, sonraki açıklamalara bakın.
 
 > [!WARNING]
->  Bir program, geçersiz bir içermemelidir `__assume` erişilebilir bir yolda bildirimi. Geçersiz bir derleyici erişebiliyorsa `__assume` deyimi, programın öngörülemeyen ve potansiyel olarak tehlikeli olabilecek davranışını açabilir.
+>  Program, erişilebilir bir yol üzerinde geçersiz `__assume` bir ifade içermemelidir. Derleyici geçersiz `__assume` bir deyime ulaşabilirse, program öngörülemeyen ve potansiyel olarak tehlikeli davranışa neden olabilir.
 
-`__assume` bir orijinal olmayan iç. Bildirilen bir işlev olarak gerekmez ve içinde kullanılamaz bir `#pragma intrinsic` yönergesi. İyileştirici tarafından oluşturulan kodu, kod oluşturulmasına rağmen etkilenir.
+`__assume`orijinal bir iç değer değildir. İşlev olarak bildirilmesini gerektirmez ve bir `#pragma intrinsic` yönergede kullanılamaz. Kod üretilmese de, iyileştirici tarafından oluşturulan kod etkilenir.
 
-Kullanım `__assume` içinde bir [ASSERT](../c-runtime-library/reference/assert-asserte-assert-expr-macros.md) yalnızca assert kurtarılabilir olmadığında. Kullanmayın `__assume` içinde olan sonraki hata kurtarma kodu derleyici hemen hata işleme kodu En İyileştir çünkü bir onaylamadır.
+Onaylama `__assume` sırasında yalnızca [](../c-runtime-library/reference/assert-asserte-assert-expr-macros.md) onay kurtarılabilir olmadığında kullanın. Derleyici hata işleme `__assume` kodunu en uygun hale getirebileceğinden, sonraki hata kurtarma kodunuz olan bir onaylama işlemi kullanmayın.
 
-`__assume(0)` Bir özel durum bir ifadedir. Kullanım `__assume(0)` erişilemeyen kod yolu belirtmek için. Aşağıdaki örnek nasıl kullanılacağını gösterir `__assume(0)` switch deyimi varsayılan durumunun ulaşılamıyor belirtmek için. Bu en tipik kullanımını gösterir `__assume(0)`.
+`__assume(0)` İfade özel bir durumdur. Erişilemeyen `__assume(0)` bir kod yolunu göstermek için kullanın. Aşağıdaki örnek, bir switch ifadesinin varsayılan `__assume(0)` durumunun ulaşılamadığını göstermek için nasıl kullanılacağını gösterir. Bu, en yaygın kullanımını `__assume(0)`gösterir.
 
-Önceki sürümlerle uyumluluk için **_assume** eşanlamlıdır **__assume** sürece derleyici seçeneği [/Za \(dil uzantılarını devre dışı bırak)](../build/reference/za-ze-disable-language-extensions.md) olduğu Belirtilen.
+Önceki sürümlerle uyumluluk için, [_/za \(devre dışı bırak](../build/reference/za-ze-disable-language-extensions.md) derleyici seçeneği belirlenmediği takdirde bu, **__varsay** için bir eş anlamlı olduğunu **varsayalım** .
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İç|Mimari|
+|Alanlarla|Mimari|
 |---------------|------------------|
-|`__assume`|x86, ARM, x64|
+|`__assume`|x86, ARM, x64, ARM64|
 
 ## <a name="example"></a>Örnek
 
-```
+```cpp
 // compiler_intrinsics__assume.cpp
 #ifdef DEBUG
 # define ASSERT(e)    ( ((e) || assert(__FILE__, __LINE__) )
@@ -91,19 +91,19 @@ int main(int p)
 }
 ```
 
-Kullanımını `__assume(0)` iyileştirici varsayılan durumda ulaşılamıyor söyler. Örnek için tek olası girdi Programcı bilir gösterir `p` 1 veya 2 olacaktır. Başka bir değer geçtiyse `p`, program geçersiz hale gelir ve öngörülemeyen davranışlara neden olur.
+Kullanımı, ön `__assume(0)` iyileştiriciye varsayılan durum ile ulaşılamadığından söyler. Örnek, programcının yalnızca için `p` olası girişlerin 1 veya 2 olacağını bildiği gösterilmektedir. İçin `p`başka bir değer geçirilirse, program geçersiz hale gelir ve öngörülemeyen davranışlara neden olur.
 
-Sonucu olarak `__assume(0)` ifade, derleyicinin test etmek için kod oluşturmaz olmadığını `p` case deyiminde temsil edilmeyen bir değere sahip. Bunun çalışması `__assume(0)` deyimi varsayılan durumunun gövdesinde ilk deyim olmalıdır.
+`__assume(0)` İfadesinin sonucu olarak, derleyici bir Case ifadesinde temsil edilmeyen bir değere sahip olup olmadığını `p` test etmek için kod oluşturmaz. Bunun çalışması `__assume(0)` için deyimin, varsayılan durum gövdesinde ilk ifade olması gerekir.
 
-Derleyici göre kod oluşturur çünkü `__assume`, bu kod, doğru çalışmayabilir içindeki ifade `__assume` deyimi çalışma zamanında false'dur. İfade her zaman çalışma zamanında doğru olduğundan emin değilseniz, kullanabileceğiniz `assert` kod korumak için işlevi.
+Derleyici temelinde `__assume`kod oluşturduğundan, `__assume` deyim içindeki ifade çalışma zamanında yanlış ise bu kod doğru çalışmayabilir. İfadenin çalışma zamanında her zaman doğru olduğundan emin değilseniz, kodu korumak için `assert` işlevini kullanabilirsiniz.
 
-```
+```C
 #define ASSERT(e)    ( ((e) || assert(__FILE__, __LINE__)), __assume(e) )
 ```
 
-Ne yazık ki bu kullanımını `assert` derleyici, bu belgenin önceki bölümlerinde açıklanan varsayılan örneği iyileştirme gerçekleştirmesini engeller. Alternatif olarak, ayrı bir makro şu şekilde kullanabilirsiniz.
+Ne yazık ki, bu `assert` kullanım derleyicinin bu belgede daha önce açıklanan varsayılan büyük/küçük harf iyileştirmesini gerçekleştirmesini engeller. Alternatif olarak, aşağıdaki gibi ayrı bir makro kullanabilirsiniz.
 
-```
+```C
 #ifdef DEBUG
 # define NODEFAULT   ASSERT(0)
 #else
@@ -114,9 +114,9 @@ Ne yazık ki bu kullanımını `assert` derleyici, bu belgenin önceki bölümle
       NODEFAULT;
 ```
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)<br/>
+[Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)\
 [Anahtar Sözcükler](../cpp/keywords-cpp.md)

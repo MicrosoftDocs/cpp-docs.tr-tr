@@ -1,6 +1,6 @@
 ---
-title: bss_seg
-ms.date: 10/22/2018
+title: bss_seg pragması
+ms.date: 08/29/2019
 f1_keywords:
 - vc-pragma.bss_seg
 - bss_seg_CPP
@@ -8,51 +8,52 @@ helpviewer_keywords:
 - pragmas, bss_seg
 - bss_seg pragma
 ms.assetid: 755f0154-de51-4778-97d3-c9b24e445079
-ms.openlocfilehash: 489ced11bb6024fdf9818872c07ab7feebfeabf3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a343fb45b4bbe4789f38b7a1102572cf4241ec53
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62212422"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70218554"
 ---
-# <a name="bssseg"></a>bss_seg
+# <a name="bss_seg-pragma"></a>bss_seg pragması
 
-Başlatılmamış değişkenler .obj dosyasında depolandığı segmenti belirtir.
+Başlatılmamış değişkenlerin nesne (. obj) dosyasında depolandığı bölümü (segment) belirtir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
-#pragma bss_seg( [ [ { push | pop }, ] [ identifier, ] ] [ "segment-name" [, "segment-class" ] )
-```
+> **#pragma bss_seg (** ["*bölüm-adı*" [ **,** "*bölüm-sınıfı*"]] **)** \
+> **#pragma bss_seg (** { **Push** | **pop** } [ **,** *tanımlayıcı* ] [ **,** "*bölüm-adı*" [ **,** "*bölüm-sınıfı*"]] **)**
 
 ### <a name="parameters"></a>Parametreler
 
-**push**<br/>
-(İsteğe bağlı) İç derleyici yığınına bir kayıt yerleştirir. A *pu*sh * olabilir bir *tanımlayıcı* ve *segment-name*.
+**hareketle**\
+Seçim İç derleyici yığınına bir kayıt koyar. **Gönderim** bir *tanımlayıcıya* ve *bölüm adına*sahip olabilir.
 
-**POP**<br/>
-(İsteğe bağlı) Derleyici iç yığının en üstünden bir kayıt kaldırır.
+**cağımız**\
+Seçim İç derleyici yığınının en üstünden bir kaydı kaldırır. Bir **pop** bir *tanımlayıcıya* ve *bölüm adına*sahip olabilir. *Tanımlayıcıyı*kullanarak yalnızca bir **pop** komutu kullanarak birden çok kayıt ekleyebilirsiniz. *Bölüm adı* , pop SONRASıNDA etkin BSS bölüm adı olur.
 
-*tanımlayıcı*<br/>
-(İsteğe bağlı) İle kullanıldığında **anında iletme**, iç derleyici yığınındaki kayda bir ad atar. *tanımlayıcı* tek bir POP birden çok kayıt getirir **pop** komutu. İle kullanıldığında **pop**, yönergesi kadar iç yığından kayıtları POP *tanımlayıcı* ; kaldırılır *tanımlayıcı* bulunamazsa iç yığında hiçbir şey POP.
+*Tanımlayıcısını*\
+Seçim **Push**ile kullanıldığında, iç derleyici yığınındaki kayda bir ad atar. Pop ile kullanıldığında, *tanımlayıcı* kaldırılana kadar yönerge, iç yığının içinden **açılır**. İç yığında *tanımlayıcı* bulunmazsa hiçbir şey yapılmadı.
 
-*"segment-name"*<br/>
-(İsteğe bağlı) Segmentin adı. İle kullanıldığında **pop**, yığın silinir ve *segment-name* etkin segment adı haline gelir.
+*"bölüm-adı"* \
+Seçim Bir bölümün adı. **Pop**ile kullanıldığında, yığın çıkar ve *bölüm adı* etkin BSS bölüm adı olur.
 
-*"segment-class"*<br/>
-(İsteğe bağlı) 2.0. sürümden önceki C++ ile uyumluluk için dahildir. Yoksayılır.
+*"Section-Class"* \
+Seçim Yoksayıldı, ancak sürüm 2,0 ' den önceki Microsoft C++ sürümleriyle uyumluluk için eklenmiştir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-. Obj dosyaları görüntülenebilir [dumpbin](../build/reference/dumpbin-command-line.md) uygulama. Başlatılmamış veriler için .obj dosyasındaki varsayılan segment .bss ' dir. Bazı durumlarda kullanımını **bss_seg** hızlandırabilirsiniz yükleme sürelerini bir bölüme başlatılmamış veri gruplandırarak.
+Bir nesne dosyasındaki *bölüm* , bir birim olarak belleğe yüklenen adlandırılmış veri bloğudur. *Bss bölümü* başlatılmamış veri içeren bir bölümdür. Bu makalede, koşullar *segmenti* ve *bölümü* aynı anlama sahiptir.
 
-**bss_seg** hiçbir parametre olmadan için .bss kesimi sıfırlar.
+**Bss_seg** pragma yönergesi derleyiciye, tüm başlatılmamış veri öğelerini çeviri biriminden *bölüm adı*adlı bir BSS bölümüne koymasını söyler. Bazı durumlarda, **bss_seg** kullanımı, başlatılmamış verileri tek bir bölüme gruplandırarak yükleme sürelerini hızlandırabilir. Varsayılan olarak, bir nesne dosyasındaki başlatılmamış veriler için kullanılan BSS bölümü adlandırılır `.bss`. *Bölüm adı* parametresi olmayan bir `.bss` **bss_seg** pragma yönergesi, sonraki başlatılmamış veri öğelerinin BSS bölüm adını ' a sıfırlar.
 
-Kullanılarak yer ayrılmış veri **bss_seg** pragma konumuna hakkındaki tüm bilgileri korumak değil.
+**Bss_seg** pragma kullanılarak ayrılan veriler, konumuyla ilgili hiçbir bilgiyi korumaz.
 
-Başlatılmış veriler için bölümler belirtebilirsiniz ([data_seg](../preprocessor/data-seg.md)), İşlevler ([code_seg](../preprocessor/code-seg.md)) ve const değişkenleri ([const_seg](../preprocessor/const-seg.md)).
+Bölüm oluşturmak için kullanılmaması gereken adların bir listesi için, bkz. [/section](../build/reference/section-specify-section-attributes.md).
 
-Bkz: [/SECTION](../build/reference/section-specify-section-attributes.md) kullanmamanız bölüm oluştururken adları listesi.
+Başlatılmış veriler ([data_seg](../preprocessor/data-seg.md)), işlevler ([code_seg](../preprocessor/code-seg.md)) ve const değişkenleri ([const_seg](../preprocessor/const-seg.md)) için de bölümler belirtebilirsiniz.
+
+Dumpbin ' i kullanabilirsiniz [. ](../build/reference/dumpbin-command-line.md)Nesne dosyalarını görüntülemek IÇIN exe uygulaması. Desteklenen her hedef mimari için DUMPBIN sürümleri Visual Studio 'Ya dahildir.
 
 ## <a name="example"></a>Örnek
 
@@ -74,4 +75,4 @@ int main() {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+[Pragma yönergeleri ve __pragma anahtar sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

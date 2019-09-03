@@ -1,6 +1,6 @@
 ---
-title: const_seg
-ms.date: 09/17/2018
+title: const_seg pragması
+ms.date: 08/29/2019
 f1_keywords:
 - vc-pragma.const_seg
 - const_seg_CPP
@@ -8,50 +8,52 @@ helpviewer_keywords:
 - pragmas, const_seg
 - const_seg pragma
 ms.assetid: 1eb58ee2-fb0e-4a39-9621-699c8f5ef957
-ms.openlocfilehash: c58f154f5e1ab6906b45d59f454a7dc2b5c0bfbe
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 845583889eb922ba97d145eefe6bca280a83817b
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62366595"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70220440"
 ---
-# <a name="constseg"></a>const_seg
-Segmenti belirtir burada [const](../cpp/const-cpp.md) değişkenlerin .obj dosyasında depolanır.
+# <a name="const_seg-pragma"></a>const_seg pragması
+
+[Const](../cpp/const-cpp.md) değişkenlerinin nesne (. obj) dosyasında depolandığı bölümü (segmenti) belirtir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
-#pragma const_seg ( [ [ { push | pop}, ] [ identifier, ] ] [ "segment-name" [, "segment-class" ] )
-```
+> **#pragma const_seg (** ["*bölüm-adı*" [ **,** "*bölüm-sınıfı*"]] **)** \
+> **#pragma const_seg (** { **Push** | **pop** } [ **,** *tanımlayıcı* ] [ **,** "*bölüm-adı*" [ **,** "*bölüm-sınıfı*"]] **)**
 
 ### <a name="parameters"></a>Parametreler
 
-**push**<br/>
-(İsteğe bağlı) İç derleyici yığınına bir kayıt yerleştirir. A **anında iletme** olabilir bir *tanımlayıcı* ve *segment-name*.
+**hareketle**\
+Seçim İç derleyici yığınına bir kayıt koyar. **Gönderim** bir *tanımlayıcıya* ve *bölüm adına*sahip olabilir.
 
-**POP**<br/>
-(İsteğe bağlı) Derleyici iç yığının en üstünden bir kayıt kaldırır.
+**cağımız**\
+Seçim İç derleyici yığınının en üstünden bir kaydı kaldırır. Bir **pop** bir *tanımlayıcıya* ve *bölüm adına*sahip olabilir. *Tanımlayıcıyı*kullanarak yalnızca bir **pop** komutu kullanarak birden çok kayıt ekleyebilirsiniz. *Bölüm adı* , pop sonrasında etkin const bölüm adı olur.
 
-*tanımlayıcı*<br/>
-(İsteğe bağlı) İle kullanıldığında **anında iletme**, iç derleyici yığınındaki kayda bir ad atar. İle kullanıldığında **pop**, yığından kayıtları kadar iç yığının *tanımlayıcı* ; kaldırılır *tanımlayıcı* bulunamazsa iç yığında hiçbir şey kaldırılmaz.
+*Tanımlayıcısını*\
+Seçim **Push**ile kullanıldığında, iç derleyici yığınındaki kayda bir ad atar. Pop ile kullanıldığında, *tanımlayıcı* kaldırılana kadar yönerge, iç yığının içinden **açılır**. İç yığında *tanımlayıcı* bulunmazsa hiçbir şey yapılmadı.
 
-Kullanarak *tanımlayıcı* tek bir POP birden çok kayıt getirir **pop** komutu.
+"*bölüm-adı*" \
+Seçim Bir bölümün adı. **Pop**ile kullanıldığında, yığın çıkar ve *bölüm adı* etkin const bölüm adı olur.
 
-"*segment-name*"<br/>
-(İsteğe bağlı) Segmentin adı. İle kullanıldığında **pop**, yığın silinir ve *segment-name* etkin segment adı haline gelir.
-
-"*segment-class*"<br/>
-(İsteğe bağlı) 2.0. sürümden önceki C++ ile uyumluluk için dahildir. Yoksayılır.
+"*bölüm-sınıfı*" \
+Seçim Yoksayıldı, ancak sürüm 2,0 ' den önceki Microsoft C++ sürümleriyle uyumluluk için eklenmiştir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Koşulları anlamını *segment* ve *bölümü* bu konudaki birbirinin yerine kullanılabilir.
+Bir nesne dosyasındaki *bölüm* , bir birim olarak belleğe yüklenen adlandırılmış veri bloğudur. *Const bölümü* , sabit veri içeren bir bölümdür. Bu makalede, koşullar *segmenti* ve *bölümü* aynı anlama sahiptir.
 
-OBJ dosyaları görüntülenebilir [dumpbin](../build/reference/dumpbin-command-line.md) uygulama. .Obj dosyasındaki varsayılan segment `const` değişkenleri .rdata'dır. Bazı `const` skalerler gibi değişkenleri otomatik olarak satır içi kod akışı. Satır içine alınan kod .rdata'da görünmez.
+**Const_seg** pragma yönergesi, derleyiciye çeviri biriminden tüm sabit veri öğelerini *bölüm adı*adlı bir const bölümüne koymasını söyler. **Const** değişkenlerinin `.rdata`nesne dosyasındaki varsayılan bölüm. Yapı değerleri gibi bazı **const** değişkenleri, kod akışına otomatik olarak satır içine alınır. Satır içi kod içinde `.rdata`görünmez. *Bölüm adı* parametresi olmayan bir **const_seg** pragma yönergesi, sonraki **const** veri öğelerinin bölüm adını olarak `.rdata`sıfırlar.
 
-İçinde dinamik başlatma gerektiren bir nesne tanımlayan bir `const_seg` tanımsız davranışlara neden olur.
+Bir `const_seg`içinde dinamik başlatma gerektiren bir nesne tanımlarsanız, sonuç tanımsız bir davranıştır.
 
-`#pragma const_seg` Hiçbir parametre olmadan, segmenti .rdata olarak sıfırlar.
+Bölüm oluşturmak için kullanılmaması gereken adların bir listesi için, bkz. [/section](../build/reference/section-specify-section-attributes.md).
+
+Başlatılmış veriler ([data_seg](../preprocessor/data-seg.md)), başlatılmamış veriler ([bss_seg](../preprocessor/bss-seg.md)) ve işlevler ([code_seg](../preprocessor/code-seg.md)) için de bölümler belirtebilirsiniz.
+
+Dumpbin ' i kullanabilirsiniz [. ](../build/reference/dumpbin-command-line.md)Nesne dosyalarını görüntülemek IÇIN exe uygulaması. Desteklenen her hedef mimari için DUMPBIN sürümleri Visual Studio 'Ya dahildir.
 
 ## <a name="example"></a>Örnek
 
@@ -89,12 +91,6 @@ test3
 test4
 ```
 
-## <a name="comments"></a>Açıklamalar
-
-Bkz: [/SECTION](../build/reference/section-specify-section-attributes.md) kullanmamanız bölüm oluştururken adları listesi.
-
-Başlatılmış veriler için bölümler belirtebilirsiniz ([data_seg](../preprocessor/data-seg.md)), başlatılmamış veriler ([bss_seg](../preprocessor/bss-seg.md)) ve işlevleri ([code_seg](../preprocessor/code-seg.md)).
-
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+[Pragma yönergeleri ve __pragma anahtar sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

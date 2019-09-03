@@ -1,46 +1,46 @@
 ---
 title: __nop
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __nop
 helpviewer_keywords:
 - nop instruction
 - __nop intrinsic
 ms.assetid: 7a2a938b-87e0-476d-a348-03ea7635b6b9
-ms.openlocfilehash: 1e76110c1ef0c4b98c295578189eedc99d76eeb9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4561bcb84063f3707825c8ca164867d41500e2db
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62396632"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70221665"
 ---
-# <a name="nop"></a>__nop
+# <a name="__nop"></a>__nop
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-İşlem gerçekleştirmeyecek bir platforma özgü makine koduna oluşturur.
+İşlem gerçekleştirmeyen platforma özgü makine kodu oluşturur.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```C
 void __nop();
 ```
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İç|Mimari|
+|Alanlarla|Mimari|
 |---------------|------------------|
 |`__nop`|x86, ARM, x64, ARM64|
 
-**Üst bilgi dosyası** \<intrin.h >
+**Üst bilgi dosyası** \<Intrin. h >
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="remarks"></a>Açıklamalar
 
-`__nop` İşlev, eşdeğer `NOP` makine yönergesi. Belge için x86 ve x64 hakkında daha fazla bilgi için arama "Intel mimarisi yazılım geliştirici el ile 2 birim: Yönerge kümesi başvurusu"konumunda [Intel Corporation'da](https://software.intel.com/articles/intel-sdm) site.
+İşlev, `NOP` makine yönergesine eşdeğerdir. `__nop` X86 ve x64 hakkında daha fazla bilgi için belgeyi arayın, "Intel mimarisi yazılım geliştiricisi El Ile, Hacim 2: Yönerge kümesi başvurusu, " [Intel Corporation](https://software.intel.com/articles/intel-sdm) sitesinde.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)<br/>
+[Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)\
 [__noop](../intrinsics/noop.md)

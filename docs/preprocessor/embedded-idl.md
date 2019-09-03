@@ -1,38 +1,35 @@
 ---
-title: embedded_idl
-ms.date: 10/18/2018
+title: embedded_idl içeri aktarma özniteliği
+ms.date: 08/29/2019
 f1_keywords:
 - embedded_idl
 helpviewer_keywords:
 - embedded_idl attribute
 ms.assetid: f1c1c2e8-3872-4172-8795-8d1288a20452
-ms.openlocfilehash: c46924d2757d01a934c21a70f23e6556f6a10fd3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 01948b171b20ad0a3bf3e7a41047f1fe3df185b0
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62389352"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70216331"
 ---
-# <a name="embeddedidl"></a>embedded_idl
+# <a name="embedded_idl-import-attribute"></a>embedded_idl içeri aktarma özniteliği
 
-**C++ özgü**
+**C++Belirli**
 
-Tür kitaplığı .tlh dosyasına, öznitelik tarafından oluşturulan kod korunarak yazıldığını belirtir.
+Tür kitaplığının, öznitelik tarafından oluşturulan kodla korunan `.tlh` dosyaya yazılıp yazılmadığını belirtir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
-embedded_idl[("param")]
-```
+> **#import** *tür kitaplığı* **embedded_idl** [ **(** { **"emitidl"**  |  **"no_emitidl"** } **)** ]
 
 ### <a name="parameters"></a>Parametreler
 
-*param*<br/>
-İki değerden biri olabilir:
+**emitidl**\
+*Türden* içeri aktarılan tür bilgileri, öznitelikli proje IÇIN oluşturulan IDL 'de mevcut. Bu davranış varsayılandır ve için `embedded_idl`bir parametre belirtmezseniz geçerli olur.
 
-- **emitidl**: Typelib'den içeri aktarılan tür bilgilerini öznitelikli proje için üretilen IDL de mevcut olacaktır.  Bu varsayılan ve geçerli bir parametre belirtmezseniz `embedded_idl`.
-
-- **no_emitidl**: Typelib'den içeri aktarılan tür bilgilerini öznitelikli proje için üretilen IDL içinde mevcut olmaz.
+**"no_emitidl"** \
+*Türden* içeri aktarılan tür bilgileri, öznitelikli proje IÇIN oluşturulan IDL 'de yok.
 
 ## <a name="example"></a>Örnek
 
@@ -44,11 +41,9 @@ embedded_idl[("param")]
 #import "\school\bin\importlib.tlb" embedded_idl("no_emitidl")
 ```
 
-## <a name="remarks"></a>Açıklamalar
-
-**END C++ özgü**
+**SONA C++ özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)<br/>
+[#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)\
 [#import yönergesi](../preprocessor/hash-import-directive-cpp.md)

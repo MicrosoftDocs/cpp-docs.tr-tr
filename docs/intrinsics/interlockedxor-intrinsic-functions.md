@@ -1,6 +1,6 @@
 ---
-title: _Interlockedxor iç işlevleri
-ms.date: 12/17/2018
+title: _InterlockedXor iç işlevleri
+ms.date: 09/02/2019
 f1_keywords:
 - _InterlockedXor_nf
 - _InterlockedXor_np
@@ -34,22 +34,22 @@ helpviewer_keywords:
 - InterlockedXor64 intrinsic
 - _InterlockedXor intrinsic
 ms.assetid: faef1796-cb5a-4430-b1e2-9d5eaf9b4a91
-ms.openlocfilehash: c86a743df84df37ffe3234d82d79abd987a4dcda
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 22cb9edd5fa4ffd8ffae7363ab07dc48f519fff0
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62396697"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70221910"
 ---
-# <a name="interlockedxor-intrinsic-functions"></a>_Interlockedxor iç işlevleri
+# <a name="_interlockedxor-intrinsic-functions"></a>_InterlockedXor iç işlevleri
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Bir atomik bit düzeyinde özel or (XOR) işlemi birden çok iş parçacığı tarafından paylaşılan bir değişken üzerinde gerçekleştirin.
+Birden çok iş parçacığı tarafından paylaşılan bir değişkende atomik bit düzeyinde özel veya (XOR) işlemi gerçekleştirin.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```C
 long _InterlockedXor(
    long volatile * Value,
    long Mask
@@ -148,40 +148,42 @@ __int64 _InterlockedXor64_rel(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
-*Değer*<br/>
-[out içinde] Sonucu değiştirilecek ilk işlenen bir işaretçi.
+*Deeri*\
+[in, out] Sonuçla değiştirilmeleri için ilk işlenenin işaretçisi.
 
-*Maskesi*<br/>
-[in] İkinci işlenen.
+*Maskesi*\
+'ndaki İkinci işlenen.
 
-## <a name="return-value"></a>Dönüş Değeri
+## <a name="return-value"></a>Dönüş değeri
 
-Birinci işlenenin özgün değer.
+İlk işlenenin özgün değeri.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İç|Mimari|Üstbilgi|
+|Alanlarla|Mimari|Üstbilgi|
 |---------------|------------------|------------|
-|`_InterlockedXor`, `_InterlockedXor8`, `_InterlockedXor16`, `_InterlockedXor64`|x86, ARM, x64|\<intrin.h >|
-|`_InterlockedXor_acq`, `_InterlockedXor_nf`, `_InterlockedXor_rel`, `_InterlockedXor8_acq`, `_InterlockedXor8_nf`, `_InterlockedXor8_rel`, `_InterlockedXor16_acq`, `_InterlockedXor16_nf`, `_InterlockedXor16_rel`, `_InterlockedXor64_acq`, `_InterlockedXor64_nf`, `_InterlockedXor64_rel`,|ARM|\<intrin.h >|
-|`_InterlockedXor_np`, `_InterlockedXor8_np`, `_InterlockedXor16_np`, `_InterlockedXor64_np`|X64|\<intrin.h >|
-|`_InterlockedXor_HLEAcquire`, `_InterlockedXor_HLERelease`, `_InterlockedXor64_HLEAcquire`, `_InterlockedXor64_HLERelease`|x86, x64|\<immintrin.h >|
+|`_InterlockedXor`, `_InterlockedXor8`, `_InterlockedXor16`|x86, ARM, x64, ARM64|\<Intrin. h >|
+|`_InterlockedXor64`|ARM, x64, ARM64|\<Intrin. h >|
+|`_InterlockedXor_acq`, `_InterlockedXor_nf`, `_InterlockedXor_rel`, `_InterlockedXor8_acq`, `_InterlockedXor8_nf`, `_InterlockedXor8_rel`, `_InterlockedXor16_acq`, `_InterlockedXor16_nf`, `_InterlockedXor16_rel`, `_InterlockedXor64_acq`, `_InterlockedXor64_nf`, `_InterlockedXor64_rel`,|ARM, ARM64|\<Intrin. h >|
+|`_InterlockedXor_np`, `_InterlockedXor8_np`, `_InterlockedXor16_np`, `_InterlockedXor64_np`|X64|\<Intrin. h >|
+|`_InterlockedXor_HLEAcquire`, `_InterlockedXor_HLERelease`|x86, x64|\<ımintrin. h >|
+|`_InterlockedXor64_HLEAcquire`, `_InterlockedXor64_HLERelease`|X64|\<ımintrin. h >|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Her işlevin adını bağımsız bit boyutunu belirtir.
+Her işlevin adındaki sayı, bağımsız değişkenlerin bit boyutunu belirtir.
 
-ARM platformlarında, yapı içleri ile kullanmak `_acq` ve `_rel` almak ve yayın semantiğini gibi kritik bir bölüm başında ve sonunda sonekleri. ARM iç bilgileri ile bir `_nf` ("hiçbir sınır") soneki bellek önünde bir engel hareket değil.
+ARM platformlarında, önemli bir bölümün başındaki ve `_acq` sonundaki `_rel` gibi alma ve bırakma semantiklerine ihtiyacınız varsa, iç bilgileri ve son eklerini kullanın. `_nf` ("Sınır yok") son ek olan ARM iç bilgileri bellek engeli olarak davranmaz.
 
-Yapı içleri ile bir `_np` ("hiçbir hazırlık") soneki, derleyici tarafından eklenen bir olası önceden getirme işleminin engelle.
+`_np` ("Önceden getirme yok") sonekine sahip iç bilgiler, olası bir önceden getirme işleminin derleyici tarafından eklenmesini engeller.
 
-Donanım kilit eleme (HLE) yönergeleri yapı içleri ile destekleyen Intel platformlarında `_HLEAcquire` ve `_HLERelease` sonekleri kapsayacak performans donanım kilit yazma adımda ortadan kaldırarak hızlandırabilir işlemci bir ipucu verir. Bu iç HLE desteklemeyen platformları üzerinde çağrılırsa ipucu yoksayıldı.
+Donanım kilidi (HLE) yönergelerini destekleyen Intel platformlarında, `_HLEAcquire` ve `_HLERelease` son ekler, donanımda bir kilit yazma adımını ortadan kaldırarak işlemciyi hızlandıran bir ipucu içerir. Bu iç bilgiler HLE 'yı desteklemeyen platformlarda çağrılırsa, ipucu yok sayılır.
 
 ## <a name="example"></a>Örnek
 
-```
+```cpp
 // _InterLockedXor.cpp
 #include <stdio.h>
 #include <intrin.h>
@@ -202,9 +204,9 @@ int main()
 0xffff0000 0xffff00 0xff00ff00
 ```
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)<br/>
+[Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)\
 [x86 Derleyicisi ile Çakışma](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)

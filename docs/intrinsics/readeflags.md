@@ -1,48 +1,48 @@
 ---
 title: __readeflags
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __readeflags
 helpviewer_keywords:
 - __readeflags intrinsic
 ms.assetid: f9d2f4d8-c428-491f-b8de-04d0566b2b6b
-ms.openlocfilehash: 9913fb4287e673faf79b2c352bb42eda7f590fdd
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fe2365c2837b6c583810bb9fc908fe98486a2d38
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62396489"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70221233"
 ---
-# <a name="readeflags"></a>__readeflags
+# <a name="__readeflags"></a>__readeflags
 
-Program durumu ve denetim (EFLAGS) kaydını okur.
+Program durumu ve denetimi (EFLAGS) kaydını okur.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
-unsigned     int __readeflags(void);
-unsigned __int64 __readeflags(void);
+```C
+unsigned     int __readeflags(void); /* x86 */
+unsigned __int64 __readeflags(void); /* x64 */
 ```
 
-## <a name="return-value"></a>Dönüş Değeri
+## <a name="return-value"></a>Dönüş değeri
 
-EFLAGS kayıt değeri. Dönüş değeri bir 32 bit platformda uzun ve 64 bit, 32 bit olan bir 64-bit platformlarda uzun.
+EFLAGS yazmaç değeri. Dönüş değeri 32 bit platformda 32 bit uzunluğunda ve 64 bit platformda 64 bit uzunluğundadır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu yordamlar, yalnızca iç öğe olarak kullanılabilir.
+Bu yordamlar yalnızca iç bilgiler olarak kullanılabilir.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İç|Mimari|
+|Alanlarla|Mimari|
 |---------------|------------------|
 |`__readeflags`|x86, x64|
 
-**Üst bilgi dosyası** \<intrin.h >
+**Üst bilgi dosyası** \<Intrin. h >
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)<br/>
+[Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)\
 [__writeeflags](../intrinsics/writeeflags.md)

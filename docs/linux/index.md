@@ -1,17 +1,18 @@
 ---
 layout: LandingPage
-title: C++ belgeleri ile Linux geliştirme
-description: Oluşturma ve Linux'ta çalışan uygulamalarda hata ayıklayın.
-ms.openlocfilehash: ac80c6ad3b0650d7da20f18b049af0242ffa5704
-ms.sourcegitcommit: fde637f823494532314790602c2819f889706ff6
+title: C++ Belgelerle Linux geliştirme
+description: Linux üzerinde çalışan uygulamalar oluşturun ve hatalarını ayıklayın.
+ms.topic: landing-page
+ms.openlocfilehash: ee956f25914e1996acb6776d9ecbb8c9e79c689b
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67042738"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70216107"
 ---
-# <a name="linux-development-with-c-documentation"></a>C++ belgeleri ile Linux geliştirme
+# <a name="linux-development-with-c-documentation"></a>C++ Belgelerle Linux geliştirme
 
-Visual Studio 2017 ve üzeri, oluşturmak ve Linux için Linux uzak makine ya da Windows alt sistemi üzerinde çalışan uygulamalarda hata ayıklama için kullanın.
+Linux uzak makineler veya Linux için Windows alt sistemi üzerinde çalışan uygulamalar oluşturmak ve hatalarını ayıklamak için Visual Studio 2017 ve üstünü kullanın.
 
 <ul class="panelContent cardsF">
     <li>
@@ -25,8 +26,8 @@ Visual Studio 2017 ve üzeri, oluşturmak ve Linux için Linux uzak makine ya da
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Yükleme ve Linux iş yükünü yapılandırma</h3>
-                        <p>Visual Studio 2017'kurmak ve daha sonra C++ Linux uygulamalarında oluşturulacağını öğrenin.</p>
+                        <h3>Linux Iş yükünü yükleyip yapılandırma</h3>
+                        <p>' De C++Linux uygulamaları oluşturmak Için Visual Studio 2017 ve üstünü ayarlamayı öğrenin.</p>
                     </div>
                 </div>
             </div>
@@ -44,8 +45,8 @@ Visual Studio 2017 ve üzeri, oluşturmak ve Linux için Linux uzak makine ya da
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>C++Ekip blogu</h3>
-                        <p>En son ile güncel tutmak C++ Visual Studio özellikleri.</p>
+                        <h3>C++Ekip Blogu</h3>
+                        <p>Visual Studio 'daki tüm en son C++ özelliklerle güncel tutun.</p>
                     </div>
                 </div>
             </div>

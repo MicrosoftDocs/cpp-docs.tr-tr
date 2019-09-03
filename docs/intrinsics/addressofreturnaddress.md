@@ -1,6 +1,6 @@
 ---
 title: _AddressOfReturnAddress
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - _AddressOfReturnAddress_cpp
 - _AddressOfReturnAddress
@@ -8,42 +8,42 @@ helpviewer_keywords:
 - _AddressOfReturnAddress intrinsic
 - AddressOfReturnAddress intrinsic
 ms.assetid: c7e10b8c-445e-4236-a602-e2d90200f70a
-ms.openlocfilehash: 79d1e4645c60fb4231a53aaefdcf1fe0f3c876c4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d705029c30fdbc117c4c6e96923691e43e072e23
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62264809"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70221068"
 ---
-# <a name="addressofreturnaddress"></a>_AddressOfReturnAddress
+# <a name="_addressofreturnaddress"></a>_AddressOfReturnAddress
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Geçerli fonksiyonun dönüş adresi tutan bellek konumunun adresini sağlar. Bu adres, diğer bellek konumları (örneğin, işlev bağımsız) erişmek için kullanılamaz.
+Geçerli işlevin dönüş adresini tutan bellek konumunun adresini sağlar. Bu adres, diğer bellek konumlarına (örneğin, işlevin bağımsız değişkenleri) erişmek için kullanılamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```C
 void * _AddressOfReturnAddress();
 ```
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İç|Mimari|
+|Alanlarla|Mimari|
 |---------------|------------------|
-|`_AddressOfReturnAddress`|x86, x64|
+|`_AddressOfReturnAddress`|x86, x64, ARM, ARM64|
 
-**Üst bilgi dosyası** \<intrin.h >
+**Üst bilgi dosyası** \<Intrin. h >
 
 ## <a name="remarks"></a>Açıklamalar
 
-Zaman `_AddressOfReturnAddress` ile derlenmiş bir program kullanılır [/CLR](../build/reference/clr-common-language-runtime-compilation.md), işlevi içeren `_AddressOfReturnAddress` yerel bir işlev çağrısı derlenmiştir. Ne zaman olarak bir işlev derlenmiş yönetilen işlevi içeren içine çağrıları `_AddressOfReturnAddress`, `_AddressOfReturnAddress` beklendiği gibi çalışmayabilir.
+/Clr ile derlenen bir programda kullanıldığında, [](../build/reference/clr-common-language-runtime-compilation.md) `_AddressOfReturnAddress` çağrıyı içeren işlev yerel bir işlev olarak derlenir. `_AddressOfReturnAddress` `_AddressOfReturnAddress` İçeren`_AddressOfReturnAddress` işleve yönetilen çağrı olarak derlenen bir işlev beklendiği gibi davranmayabilir.
 
-Bu yordam yalnızca bir iç öğe olarak kullanılabilir.
+Bu yordam yalnızca iç öğe olarak kullanılabilir.
 
 ## <a name="example"></a>Örnek
 
-```
+```cpp
 // compiler_intrinsics_AddressOfReturnAddress.cpp
 // processor: x86, x64
 #include <stdio.h>
@@ -73,9 +73,9 @@ int main() {
 00401058
 ```
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)<br/>
+[Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)\
 [Anahtar Sözcükler](../cpp/keywords-cpp.md)

@@ -1,6 +1,6 @@
 ---
 title: __stosq
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __stosq
 helpviewer_keywords:
@@ -8,57 +8,57 @@ helpviewer_keywords:
 - stosq instruction
 - __stosq intrinsic
 ms.assetid: 3ea28297-4369-4c2d-bf0c-91fa539ce209
-ms.openlocfilehash: eacb12f7c02b82607d980281f8d4a0bc1e1d7c14
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8b347d595da4cdbf1fefb6244940e262981671e9
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62390353"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70219957"
 ---
-# <a name="stosq"></a>__stosq
+# <a name="__stosq"></a>__stosq
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Bir depolama dize yönergesi oluşturur (`rep stosq`).
+Bir depo dizesi yönergesi (`rep stosq`) oluşturur.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```C
 void __stosb(
-   unsigned __int64* Dest,
+   unsigned __int64* Destination,
    unsigned __int64 Data,
    size_t Count
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
-*Hedef*<br/>
-[out] İşlemin hedefi.
+*Hedefine*\
+dışı İşlemin hedefi.
 
-*Veri*<br/>
-[in] Depolamak için veriler.
+*Verileri*\
+'ndaki Depolanacak veriler.
 
-*Sayısı*<br/>
-[in] Yazılacak quadwords bloğunu uzunluğu.
+*Biriktirme*\
+'ndaki Yazılacak quadwords bloğunun uzunluğu.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İç|Mimari|
+|Alanlarla|Mimari|
 |---------------|------------------|
 |`__stosq`|AMD64|
 
-**Üst bilgi dosyası** \<intrin.h >
+**Üst bilgi dosyası** \<Intrin. h >
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sonuç quadword olan `Data` bloğu yazılmış `Count` içinde quadwords `Dest` dize.
+Sonuç olarak, quadword *verilerinin* , *hedef* dizede quadwords *sayısı* bir blok içine yazılır.
 
-Bu yordam yalnızca bir iç öğe olarak kullanılabilir.
+Bu yordam yalnızca iç öğe olarak kullanılabilir.
 
 ## <a name="example"></a>Örnek
 
-```
+```C
 // stosq.c
 // processor: x64
 #include <stdio.h>
@@ -76,14 +76,12 @@ int main()
 }
 ```
 
-## <a name="output"></a>Çıkış
-
-```
+```Output
 0 ffffffffffff ffffffffffff 0
 ```
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)
+[Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)

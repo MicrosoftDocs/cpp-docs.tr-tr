@@ -1,6 +1,6 @@
 ---
-title: comment (C/C++)
-ms.date: 11/04/2016
+title: açıklama pragması
+ms.date: 08/29/2019
 f1_keywords:
 - vc-pragma.comment
 - comment_CPP
@@ -10,88 +10,81 @@ helpviewer_keywords:
 - pragmas, comment
 - comment pragma
 ms.assetid: 20f099ff-6303-49b3-9c03-a94b6aa69b85
-ms.openlocfilehash: fb9bfef2ae751529b8424143cde020e78f17ec72
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3175ad5318bcc6fd9aa6233258ccec9033c89be8
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62403483"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70219100"
 ---
-# <a name="comment-cc"></a>comment (C/C++)
+# <a name="comment-pragma"></a>açıklama pragması
 
-Bir yorum kaydı, bir nesne dosyası veya yürütülebilir dosyanın yerleştirir.
+Bir nesne dosyasına veya yürütülebilir dosyaya bir yorum kaydı koyar.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
-#pragma comment( comment-type [,"commentstring"] )
-```
+> **#pragma açıklaması (** *Açıklama türü* [ **,** "*Açıklama-dizesi*"] **)**
 
 ## <a name="remarks"></a>Açıklamalar
 
-*Açıklama türü* , aşağıda açıklanan önceden tanımlanmış tanımlayıcıları, yorum kayıt türünü belirten biridir. İsteğe bağlı *commentstring* olan bazı açıklama türleri için ek bilgi sağlayan bir dize sabit değeri. Çünkü *commentstring* bir değişmez dize sabit değerleri kaçış karakterleri, katıştırılmış tırnak işaretleri ile ilgili tüm kuralları ilişkiden bir dizedir (`"`) ve birleştirme.
+*Açıklama türü* , aşağıda açıklanan, açıklama kaydı türünü belirten önceden tanımlanmış tanımlayıcılardan biridir. İsteğe bağlı *Açıklama dizesi* , bazı açıklama türleri için ek bilgi sağlayan bir dize sabit değeri. *Açıklama dizesi* bir dize sabit değeri olduğundan, dize sabit değerleri için kaçış karakterleri, gömülü tırnak işaretleri (`"`) ve birleştirme ile ilgili tüm kurallara uyar.
 
-### <a name="compiler"></a> derleyicisi
+### <a name="compiler"></a>derleyicisi
 
-Derleyicinin adını ve sürüm numarası, nesne dosyasına yerleştirir. Bu açıklama kayıt bağlayıcı tarafından göz ardı edilir. Sağlarsanız, bir *commentstring* parametresi için bu bir kayıt türü, derleyici bir uyarı oluşturur.
+Derleyicinin adını ve sürüm numarasını nesne dosyasına koyar. Bu açıklama kaydı bağlayıcı tarafından yok sayılır. Bu kayıt türü için bir *Açıklama dizesi* parametresi sağlarsanız, derleyici bir uyarı oluşturur.
 
-### <a name="exestr"></a>exestr
+### <a name="lib"></a>LIB
 
-Basamak *commentstring* nesne dosyasında. Bağlantı zamanında Bu dize, yürütülebilir dosyada yer alır. Yürütülebilir dosya yüklendiğinde dize belleğe yüklü değil; Ancak, bir programla yazdırılabilir dizeleri dosyalarında bulur bulunabilir. Bir sürüm numarası veya benzer bilgileri yürütülebilir bir dosyaya eklemek üzere bu açıklama kayıt türü bir kullanım içindir.
+Nesne dosyasına bir kitaplık arama kaydı koyar. Bu açıklama türü, bağlayıcının aramasını istediğiniz adı (ve muhtemelen yolu) içeren bir *Açıklama dize* parametresi ile birlikte kullanılmalıdır. Kitaplık adı, nesne dosyasındaki varsayılan kitaplık arama kayıtlarını izler; bağlayıcı, kitaplığın [/NODEFAULTLIB](../build/reference/nodefaultlib-ignore-libraries.md)ile belirtilmemesi için komut satırına adlandırılmış gibi, bu kitaplığı arar. Birden çok kitaplık arama kaydını aynı kaynak dosyasına yerleştirebilirsiniz; Her kayıt, nesne dosyasında, kaynak dosyada karşılaşılan sırada görüntülenir.
 
-`exestr` kullanım dışıdır ve gelecek sürümde; kaldırılacak Bağlayıcı yorum kaydı işlemez.
-
-### <a name="lib"></a>lib
-
-Bir kitaplık arama kaydı nesnesi dosyasına yerleştirir. Bu açıklama türü tarafından bulunmalıdır bir *commentstring* adı (ve muhtemelen yol), bağlayıcı arama yapmak istediğiniz kitaplığının içeren parametre. Nesne dosyası Kitaplığı arama kayıtları varsayılan kitaplık adını izler; Bağlayıcı kitaplığı ile belirtilmemiş olması koşuluyla yalnızca, komut satırında adlı gibi bu kitaplığın arar [/nodefaultlıb](../build/reference/nodefaultlib-ignore-libraries.md). Aynı kaynak dosyasında birden çok kitaplık arama kayıtları yerleştirebilirsiniz; Her bir kayıt nesne dosyası içinde kaynak dosyada karşılaşılanaa aynı sırada görünür.
-
-Varsayılan kitaplık ve eklenmiş bir kitaplık sırası önemli ise, ile derleme [/Zl](../build/reference/zl-omit-default-library-name.md) anahtar, varsayılan kitaplık adını nesne modülünde yer engeller. İkinci bir açıklama pragması, ardından, eklenmiş kitaplık sonra varsayılan kitaplık adını eklemek için de kullanılabilir. İle bu pragmaları listelenen kitaplıkları nesne modülü kaynak kodda bulunan aynı sırada görünür.
+Varsayılan kitaplık ve eklenen bir kitaplığın sıralaması önemliyse, [/zl](../build/reference/zl-omit-default-library-name.md) anahtarıyla derleme varsayılan kitaplık adının nesne modülüne yerleştirilmesini engeller. İkinci bir açıklama pragma daha sonra, eklenen kitaplıktan sonra varsayılan kitaplığın adını eklemek için kullanılabilir. Bu pragmalarla listelenen kitaplıklar, nesne modülünde, kaynak kodda bulundukları sırada görüntülenir.
 
 ### <a name="linker"></a>bağlayıcı
 
-Basamak bir [bağlayıcı seçeneği](../build/reference/linker-options.md) nesne dosyasında. Bu açıklama türü, komut satırına geçtiğini veya geliştirme ortamında belirtme yerine bir bağlayıcı seçeneği belirlemek için kullanabilirsiniz. Örneğin, belirtebilirsiniz / INCLUDE seçeneği eklenmesi bir sembol, zorlamak için:
+Nesne dosyasına bir [bağlayıcı seçeneği](../build/reference/linker-options.md) koyar. Bu açıklama türünü, komut satırına geçirmek veya geliştirme ortamında belirtmek yerine bir bağlayıcı seçeneği belirtmek için kullanabilirsiniz. Örneğin, bir simgenin eklenmesini zorlamak için/Include seçeneğini belirtebilirsiniz:
 
-```
+```C
 #pragma comment(linker, "/include:__mySymbol")
 ```
 
-Yalnızca aşağıdaki (*açıklama türü*) bağlayıcı tanımlayıcısına geçirilecek bağlayıcı seçenekleri kullanılabilir:
+Bağlayıcı tanımlayıcısına yalnızca aşağıdaki (*Açıklama türü*) bağlayıcı seçeneklerinin geçirilmesi sağlanır:
 
-- [/ DEFAULTLIB](../build/reference/defaultlib-specify-default-library.md)
+- [/DEFAULTLIB](../build/reference/defaultlib-specify-default-library.md)
 
-- [/ DIŞARI AKTARMA](../build/reference/export-exports-a-function.md)
+- [/EXPORT](../build/reference/export-exports-a-function.md)
 
-- [/ INCLUDE](../build/reference/include-force-symbol-references.md)
+- [/INCLUDE](../build/reference/include-force-symbol-references.md)
 
-- [/ MANIFESTDEPENDENCY](../build/reference/manifestdependency-specify-manifest-dependencies.md)
+- [/MANIFESTDEPENDENCY](../build/reference/manifestdependency-specify-manifest-dependencies.md)
 
-- [/ MERGE](../build/reference/merge-combine-sections.md)
+- [/MERGE](../build/reference/merge-combine-sections.md)
 
-- [/ SECTION](../build/reference/section-specify-section-attributes.md)
+- [/SECTION](../build/reference/section-specify-section-attributes.md)
 
 ### <a name="user"></a>kullanıcı
 
-Genel bir yorum, nesne dosyasına yerleştirir. *Commentstring* parametresi yorumun metni içerir. Bu açıklama kayıt bağlayıcı tarafından göz ardı edilir.
+Nesne dosyasına genel bir açıklama koyar. *Comment dize* parametresi açıklama metnini içerir. Bu açıklama kaydı bağlayıcı tarafından yok sayılır.
 
-Aşağıdaki pragma EMAPI için aranacak bağlayıcı neden olur. Bağlama sırasında LIB Kitaplığı'nı tıklatın. Bağlayıcı ilk geçerli çalışma dizininde, ardından LIB ortam değişkeninde belirtilen yolda arar.
+## <a name="examples"></a>Örnekler
 
-```
+Aşağıdaki pragma, bağlayıcının EMAPı aramasını sağlar. Bağlama sırasında LıB kitaplığı. Bağlayıcı ilk olarak geçerli çalışma dizininde ve sonra LıB ortam değişkeninde belirtilen yolda arama yapar.
+
+```C
 #pragma comment( lib, "emapi" )
 ```
 
-Aşağıdaki pragması, derleyicinin nesne dosyasında derleyicinin adını ve sürüm numarasını neden olur:
+Aşağıdaki pragma, derleyicinin ad ve sürüm numarasını nesne dosyasına yerleştirmesine neden olur:
 
-```
+```C
 #pragma comment( compiler )
 ```
 
-> [!NOTE]
-> Yorum süren bir *commentstring* parametresi, kullanabileceğiniz bir makro burada kullandığınız bir dize sabit değeri, herhangi bir yerde koşuluyla bir dize sabit değeri için makro genişler. Ayrıca, dize sabit değerleri ve dize değişmez değerleri için genişletin makroları herhangi bir birleşimini bitiştirebilirsiniz. Örneğin, aşağıdaki deyim, kabul edilebilir:
+Bir *Comment dize* parametresi alan Yorumlar için, makronun bir dize sabit değerine genişledikçe, bir dize sabit değeri kullandığınız yerde bir makro kullanabilirsiniz. Dize değişmezlerini ve dize değişmez değerlerine genişleterek makroların herhangi bir birleşimini de birleştirebilirsiniz. Örneğin, aşağıdaki ifade kabul edilebilir:
 
-```
+```C
 #pragma comment( user, "Compiled on " __DATE__ " at " __TIME__ )
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+[Pragma yönergeleri ve __pragma anahtar sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

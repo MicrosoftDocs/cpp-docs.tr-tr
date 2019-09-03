@@ -1,6 +1,6 @@
 ---
-title: _InterlockedAdd İç İşlevleri
-ms.date: 12/17/2018
+title: _InterlockedAdd iç işlevleri
+ms.date: 09/02/2019
 f1_keywords:
 - _InterlockedAdd64_acq_cpp
 - _InterlockedAdd64_acq
@@ -26,22 +26,22 @@ helpviewer_keywords:
 - _InterlockedAdd_acq intrinsic
 - _InterlockedAdd64_rel intrinsic
 ms.assetid: 3d319603-ea9c-4fdd-ae61-e52430ccc3b1
-ms.openlocfilehash: 348e936bb05796e36ae45095f25b943076cec464
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c540cfe6abd8ae6dc2933e7fb21e2a331c21ea71
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62349523"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70217731"
 ---
-# <a name="interlockedadd-intrinsic-functions"></a>_InterlockedAdd İç İşlevleri
+# <a name="_interlockedadd-intrinsic-functions"></a>_InterlockedAdd iç işlevleri
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Bu işlevler, birden fazla iş parçacığı paylaşılan değişkene erişimi olduğunda işlemi başarıyla tamamlandığından emin olmasını sağlayan bir atomik toplama gerçekleştirir.
+Bu işlevler, birden fazla iş parçacığının paylaşılan bir değişkene erişimi olduğunda işlemin başarılı bir şekilde tamamlanmasını sağlayan atomik bir ekleme yapar.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```C
 long _InterlockedAdd(
    long volatile * Addend,
    long Value
@@ -76,38 +76,38 @@ __int64 _InterlockedAdd64_rel(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
-*Formülündeki toplanan*<br/>
-[out içinde] Eklenecek tamsayı işaretçisi; toplamın sonucunu tarafından değiştirildi.
+*Doğrusal formülündeki toplanan*\
+[in, out] Eklenecek tamsayı işaretçisi; ekleme sonucuyla değiştirilmiştir.
 
-*Değer*<br/>
-[in] Eklenecek değer.
+*Deeri*\
+'ndaki Eklenecek değer.
 
-## <a name="return-value"></a>Dönüş Değeri
+## <a name="return-value"></a>Dönüş değeri
 
-Her iki işlev de toplamın sonucunu döndürür.
+Her iki işlev de eklemenin sonucunu döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İç|Mimari|
+|Alanlarla|Mimari|
 |---------------|------------------|
-|`_InterlockedAdd`|ARM|
-|`_InterlockedAdd_acq`|ARM|
-|`_InterlockedAdd_nf`|ARM|
-|`_InterlockedAdd_rel`|ARM|
-|`_InterlockedAdd64`|ARM|
-|`_InterlockedAdd64_acq`|ARM|
-|`_InterlockedAdd64_nf`|ARM|
-|`_InterlockedAdd64_rel`|ARM|
+|`_InterlockedAdd`|ARM, ARM64|
+|`_InterlockedAdd_acq`|ARM, ARM64|
+|`_InterlockedAdd_nf`|ARM, ARM64|
+|`_InterlockedAdd_rel`|ARM, ARM64|
+|`_InterlockedAdd64`|ARM, ARM64|
+|`_InterlockedAdd64_acq`|ARM, ARM64|
+|`_InterlockedAdd64_nf`|ARM, ARM64|
+|`_InterlockedAdd64_rel`|ARM, ARM64|
 
-**Üst bilgi dosyası** \<intrin.h >
+**Üst bilgi dosyası** \<Intrin. h >
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sahip bu işlevlerin sürümleri `_acq` veya `_rel` sonekleri bir birbirine kenetlenmiş ayrıca Al veya sürüm semantiği aşağıdaki gerçekleştirin. *Alma semantiği* önce herhangi bir sonraki bellek, okuma ve yazma işleminin sonucu tüm iş parçacıkları ve işlemciler görünür yapıldığını anlamına gelir. Alma kritik bölüm girerken yararlı olur. *Sürüm semantiği* zorunlu işleminin sonucu kendisini görünür hale gelir önce tüm iş parçacıkları ve işlemciler için görünür duruma tüm bellek okuyan ve yazan anlamına gelir. Yayın, bir kritik bölüm ayrılırken yararlıdır. Yapı içleri ile bir `_nf` ("hiçbir sınır") soneki, bellek önünde bir engel işlem yok.
+`_acq` Veya sonekleri olan bu işlevlerin sürümleri, bir `_rel` veya daha fazla alma ve yayınlama semantiğini elde eden bir toplama işlemi gerçekleştirir. *Alma semantiği* , işlemin sonucunun sonraki bellek okuma ve yazma işlemleri öncesinde tüm iş parçacıkları ve işlemciler için görünür hale getirilme anlamına gelir. Alma, kritik bir bölüm girerken faydalıdır. *Sürüm semantiği* , tüm bellek okuma ve yazma işlemlerinin, işlemin sonucu görünür hale gelmeden önce tüm iş parçacıkları ve işlemcilere görünür hale getirilmesidir. Yayın, kritik bir bölümden ayrıldığınızda yararlıdır. `_nf` ("Sınır olmayan") son ek olan iç bilgiler bellek engeli olarak davranmaz.
 
-Bu yordamlar, yalnızca iç öğe olarak kullanılabilir.
+Bu yordamlar yalnızca iç bilgiler olarak kullanılabilir.
 
 ## <a name="example"></a>Örnek
 
@@ -167,9 +167,9 @@ ff0000000000 + ff0000ffffffff = ffff00ffffffff
 Return value: ffff00ffffffff
 ```
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)<br/>
+[Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)\
 [x86 Derleyicisi ile Çakışma](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)

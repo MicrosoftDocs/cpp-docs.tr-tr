@@ -1,52 +1,52 @@
 ---
 title: __writedr
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __writedr
 helpviewer_keywords:
 - __writedr intrinsic
 ms.assetid: ac55c1ee-df2f-41d4-a429-6f369d2a934d
-ms.openlocfilehash: c495e8c80029680512358198ca8fb0ce6e65414d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 715ef7432d506c2758c9c3da913e9c0ebb24e13f
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62389872"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70219230"
 ---
-# <a name="writedr"></a>__writedr
+# <a name="__writedr"></a>__writedr
 
-Belirtilen değer, belirtilen hata ayıklama kaydı için yazar.
+Belirtilen değeri belirtilen hata ayıklama kaydına yazar.
 
 ## <a name="syntax"></a>Sözdizimi
 
+```C
+void __writedr(unsigned DebugRegister, unsigned DebugValue); /* x86 */
+void __writedr(unsigned DebugRegister, unsigned __int64 DebugValue); /* x64 */
 ```
-void __writedr(unsigned DebugRegister, unsigned DebugValue);
-void __writedr(unsigned DebugRegister, unsigned __int64 DebugValue);
-```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
-*DebugRegister*<br/>
-[in] Hata ayıklama tanımlayan 0 ile 7 arasında bir sayı kaydedin.
+*DebugRegister*\
+'ndaki Hata ayıklama kaydını tanımlayan 0 ile 7 arasında bir sayı.
 
-*DebugValue*<br/>
-[in] Yazma hata ayıklama için bir değer kaydedin.
+*DebugValue*\
+'ndaki Hata ayıklama kaydına yazılacak bir değer.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu iç öğeler yalnızca çekirdek modunda kullanılabilir ve yordamlar yalnızca iç öğe olarak kullanılabilir.
+Bu iç bilgiler yalnızca çekirdek modunda kullanılabilir ve yordamlar yalnızca iç bilgiler olarak kullanılabilir.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İç|Mimari|
+|Alanlarla|Mimari|
 |---------------|------------------|
 |`__writedr`|x86, x64|
 
-**Üst bilgi dosyası** \<intrin.h >
+**Üst bilgi dosyası** \<Intrin. h >
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)<br/>
+[Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)\
 [__readdr](../intrinsics/readdr.md)

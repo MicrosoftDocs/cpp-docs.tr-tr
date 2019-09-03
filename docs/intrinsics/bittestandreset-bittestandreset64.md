@@ -1,6 +1,6 @@
 ---
 title: _bittestandreset, _bittestandreset64
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - _bittestandreset64_cpp
 - _bittestandreset
@@ -11,22 +11,22 @@ helpviewer_keywords:
 - _bittestandreset intrinsic
 - _bittestandreset64 intrinsic
 ms.assetid: 8dad63bb-a051-4cd7-a793-3357537dfeaf
-ms.openlocfilehash: 53a9921b856a3bc489d1d8e1cd78a4cfa7493320
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9e0c869b926b2f9f3c04fd648f84ef33b8d16fcd
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62349153"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70216929"
 ---
-# <a name="bittestandreset-bittestandreset64"></a>_bittestandreset, _bittestandreset64
+# <a name="_bittestandreset-_bittestandreset64"></a>_bittestandreset, _bittestandreset64
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Bit inceler yönerge oluşturmak `b` adresinin `a`geçerli değerini döndürür ve 0 olarak bit sıfırlar.
+`b` Adresin`a`bitini İnceleme, geçerli değerini döndürme ve biti 0 olarak sıfırlama yönergesini oluşturun.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```C
 unsigned char _bittestandreset(
    long *a,
    long b
@@ -37,34 +37,34 @@ unsigned char _bittestandreset64(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
-*a*<br/>
-[out içinde] İncelemek için bellek işaretçisi.
+*a*\
+[in, out] İncelenecek bellek işaretçisi.
 
-*b*<br/>
-[in] Test etmek için bit konumu.
+*kenarı*\
+'ndaki Sınanacak bit konumu.
 
-## <a name="return-value"></a>Dönüş Değeri
+## <a name="return-value"></a>Dönüş değeri
 
 Belirtilen konumdaki bit.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İç|Mimari|
+|Alanlarla|Mimari|
 |---------------|------------------|
-|`_bittestandreset`|x86, ARM, x64|
-|`_bittestandreset64`|X64|
+|`_bittestandreset`|x86, ARM, x64, ARM64|
+|`_bittestandreset64`|x64, ARM64|
 
-**Üst bilgi dosyası** \<intrin.h >
+**Üst bilgi dosyası** \<Intrin. h >
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu yordam yalnızca bir iç öğe olarak kullanılabilir.
+Bu yordam yalnızca iç öğe olarak kullanılabilir.
 
 ## <a name="example"></a>Örnek
 
-```
+```cpp
 // bittestandreset.cpp
 // processor: x86, IPF, x64
 #include <stdio.h>
@@ -99,8 +99,8 @@ int main()
 The number was negative.
 ```
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)
+[Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)

@@ -1,36 +1,35 @@
 ---
-title: no_smart_pointers
-ms.date: 11/04/2016
+title: no_smart_pointers içeri aktarma özniteliği
+ms.date: 08/29/2019
 f1_keywords:
-- no_search_pointers
+- no_smart_pointers
 helpviewer_keywords:
 - no_smart_pointers attribute
 ms.assetid: d69dd71e-08a8-4446-a3d0-a062dc29cb17
-ms.openlocfilehash: ed4950b9e90ef968fcf0c42e4f0a9775c58ea7ec
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1fca3eb486ff3cfc7403c38e91855b799a698782
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62326514"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70220693"
 ---
-# <a name="nosmartpointers"></a>no_smart_pointers
-**C++ özgü**
+# <a name="no_smart_pointers-import-attribute"></a>no_smart_pointers içeri aktarma özniteliği
+
+**C++Belirli**
 
 Tür kitaplığındaki tüm arabirimler için akıllı işaretçiler oluşturulmasını engeller.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
-no_smart_pointers
-```
+> **#import** *tür kitaplığı* **no_smart_pointers**
 
 ## <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak kullandığınızda, `#import`, bir tür kitaplığındaki tüm arabirimler için akıllı işaretçi bildirimi alın. Bu akıllı işaretçileri türlerinin [_com_ptr_t sınıfı](../cpp/com-ptr-t-class.md).
+Varsayılan olarak, kullandığınızda `#import`, tür kitaplığındaki tüm arabirimler için bir akıllı işaretçi bildirimi alırsınız. Bu akıllı işaretçiler [_com_ptr_t](../cpp/com-ptr-t-class.md)türüdür.
 
-**END C++ özgü**
+**SONA C++ özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)<br/>
+[#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)\
 [#import yönergesi](../preprocessor/hash-import-directive-cpp.md)

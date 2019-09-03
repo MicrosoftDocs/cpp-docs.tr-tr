@@ -1,48 +1,48 @@
 ---
 title: __readcr4
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __readcr4
 helpviewer_keywords:
 - __readcr4 intrinsic
 ms.assetid: b841a27b-fe0d-4ee9-b76b-f91d3eb061fa
-ms.openlocfilehash: b67016846768be778881c02b395c8d6f3af1ef3f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4d43b5204d412de40284f89cfd4d74f1c1f9d86d
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62396502"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70216725"
 ---
-# <a name="readcr4"></a>__readcr4
+# <a name="__readcr4"></a>__readcr4
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-CR4 yazmacını okuyarak ve değerini döndürür.
+CR4 yazmacın okur ve değerini döndürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```C
 unsigned __int64 __readcr4(void);
 ```
 
-## <a name="return-value"></a>Dönüş Değeri
+## <a name="return-value"></a>Dönüş değeri
 
-CR4 kayıttaki değeri.
+CR4 kaydındaki değer.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İç|Mimari|
+|Alanlarla|Mimari|
 |---------------|------------------|
 |`__readcr4`|x86, x64|
 
-**Üst bilgi dosyası** \<intrin.h >
+**Üst bilgi dosyası** \<Intrin. h >
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu iç yalnızca çekirdek modunda kullanılabilir ve yordam yalnızca bir iç öğe olarak kullanılabilir.
+İç öğe yalnızca çekirdek modunda kullanılabilir ve yordam yalnızca iç öğe olarak kullanılabilir.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)
+[Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)

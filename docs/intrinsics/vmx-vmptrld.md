@@ -1,28 +1,28 @@
 ---
 title: __vmx_vmptrld
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __vmx_vmptrld
 helpviewer_keywords:
 - __vmx_vmptrld intrinsic
 - VMPTRLD instruction
 ms.assetid: 95c9ec5b-1a81-41ba-983e-327bd6a65fcb
-ms.openlocfilehash: e3d552720d454a4f22af368616b3953452c6db0e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 79b5a8b34b652ae1f011e89c793a7157c9e435ee
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62390041"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70219500"
 ---
-# <a name="vmxvmptrld"></a>__vmx_vmptrld
+# <a name="__vmx_vmptrld"></a>__vmx_vmptrld
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-İmleci belirtilen adres geçerli sanal makine denetim yapısı (Windows VMCS) yükler.
+İşaretçiyi belirtilen adresten geçerli sanal makine denetim yapısına (VMCS) yükler.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```C
 int __vmx_vmptrld(
    unsigned __int64 *VmcsPhysicalAddress
 );
@@ -30,37 +30,37 @@ int __vmx_vmptrld(
 
 ### <a name="parameters"></a>Parametreler
 
-*VmcsPhysicalAddress*<br/>
-[in] Windows VMCS işaretçinin depolandığı adresi.
+*VmcsPhysicalAddress*\
+'ndaki VMCS işaretçisinin depolandığı adres.
 
-## <a name="return-value"></a>Dönüş Değeri
+## <a name="return-value"></a>Dönüş değeri
 
-0<br/>
+0
 İşlem başarılı oldu.
 
-1.<br/>
-İşlem başarısız oldu bulunan genişletilmiş durumundaki `VM-instruction error field` , geçerli Windows VMCS.
+1
+İşlem, geçerli VNET `VM-instruction error field` 'lerin içinde kullanılabilir olan genişletilmiş durumla başarısız oldu.
 
-2<br/>
-İşlem durumu olmadan başarısız oldu.
+iki
+İşlem durum kullanılabilir olmadan başarısız oldu.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir 64 bit fiziksel adresi Windows VMCS işaretçisidir.
+VMCS işaretçisi 64 bitlik bir fiziksel adrestir.
 
-`__vmx_vmptrld` İşlev, eşdeğer `VMPTRLD` makine yönergesi. Bu işlev, bir konuk işletim sistemi ve uygulamaları ile bir konağın sanal makine İzleyici etkileşimi destekler. Daha fazla bilgi için "Intel Sanallaştırma teknik belirtimi IA-32 Intel mimari," Belge ara adresindeki sayı C97063 002 belge [Intel Corporation'da](https://software.intel.com/articles/intel-sdm) site.
+İşlev, `VMPTRLD` makine yönergesine eşdeğerdir. `__vmx_vmptrld` Bu işlev, bir konağın sanal makine izleyicisinin Konuk işletim sistemiyle ve uygulamalarına yönelik etkileşimini destekler. Daha fazla bilgi için, [Intel Corporation](https://software.intel.com/articles/intel-sdm) SITESINDE "ıa-32 Intel mimarisi Için Intel Sanallaştırma teknik belirtimi" belge numarası C97063-002 olan belgeyi arayın.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İç|Mimari|
+|Alanlarla|Mimari|
 |---------------|------------------|
 |`__vmx_vmptrld`|X64|
 
-**Üst bilgi dosyası** \<intrin.h >
+**Üst bilgi dosyası** \<Intrin. h >
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)<br/>
+[Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)\
 [__vmx_vmptrst](../intrinsics/vmx-vmptrst.md)

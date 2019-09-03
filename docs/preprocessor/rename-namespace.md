@@ -1,44 +1,42 @@
 ---
-title: rename_namespace
-ms.date: 10/18/2018
+title: rename_namespace içeri aktarma özniteliği
+ms.date: 08/29/2019
 f1_keywords:
 - rename_namespace
 helpviewer_keywords:
 - rename_namespace attribute
 ms.assetid: 45006d2b-36cd-4bec-98b9-3b8ec45299e3
-ms.openlocfilehash: 7b3917a7114ca44d092f10a7831bb35bc64e9387
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d319d7390e7c7dce070a35be44aad37c7a34e1a0
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62179769"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70216648"
 ---
-# <a name="renamenamespace"></a>rename_namespace
+# <a name="rename_namespace-import-attribute"></a>rename_namespace içeri aktarma özniteliği
 
-**C++ özgü**
+**C++Belirli**
 
-Tür kitaplığı içeriğini içeren ad uzayı yeniden adlandırır.
+Tür kitaplığının içeriğini içeren ad alanını yeniden adlandırır.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
-rename_namespace("NewName")
-```
+> **#import** *tür kitaplığı* **rename_namespace (** "*YeniAd*" **)**
 
 ### <a name="parameters"></a>Parametreler
 
-*Yeni ad*<br/>
-Yeni ad alanı adı.
+*Ad*\
+Ad alanının yeni adı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Tek bir bağımsız değişken alan *NewName*, ad alanı için yeni adı belirtir.
+**Rename_namespace** özniteliği, ad alanı için yeni adı belirten bir bağımsız değişken ( *YeniAd*) alır.
 
-Ad alanı kaldırmak için [no_namespace](../preprocessor/no-namespace.md) yerine özniteliği.
+Ad alanını kaldırmak için bunun yerine [no_namespace](../preprocessor/no-namespace.md) özniteliğini kullanın.
 
-**END C++ özgü**
+**SONA C++ özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)<br/>
+[#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)\
 [#import yönergesi](../preprocessor/hash-import-directive-cpp.md)

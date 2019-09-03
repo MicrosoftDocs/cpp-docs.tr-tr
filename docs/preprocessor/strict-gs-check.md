@@ -1,44 +1,41 @@
 ---
-title: strict_gs_check
-ms.date: 11/04/2016
+title: strict_gs_check pragması
+ms.date: 08/29/2019
 f1_keywords:
 - strict_gs_check
 - strict_gs_check_CPP
 helpviewer_keywords:
 - strict_gs_check pragma
 ms.assetid: decfec81-c916-42e0-a07f-8cc26df6a7ce
-ms.openlocfilehash: b62e1be466e65c0de6fb4eaa33ac6e99915529e6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0b66e87f2280c923d05103fccfcbbc8d32daf3fd
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62179951"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70216589"
 ---
-# <a name="strictgscheck"></a>strict_gs_check
+# <a name="strict_gs_check-pragma"></a>strict_gs_check pragması
 
 Bu pragma artırılmış güvenlik denetimi sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
-#pragma strict_gs_check([push,] on )
-#pragma strict_gs_check([push,] off )
-#pragma strict_gs_check(pop)
-```
+> **#pragma strict_gs_check (** [ **push,** ] { **on** | **off** } **)** \
+> **#pragma strict_gs_check (pop)**
 
 ## <a name="remarks"></a>Açıklamalar
 
-Yığın tabanlı arabellek taşmasının bazı kategorilerini algılamaya yardımcı olması için, derleyiciye işlev yığınına rasgele bir tanımlama bilgisi eklemesini bildirir. Varsayılan olarak, `/GS` (arabellek güvenlik denetimi) derleyici seçeneği tüm işlevler için bir tanımlama bilgisi eklenmez. Daha fazla bilgi için [/GS (arabellek güvenlik denetimi)](../build/reference/gs-buffer-security-check.md).
+Yığın tabanlı arabellek taşmasının bazı kategorilerini algılamaya yardımcı olması için, derleyiciye işlev yığınına rasgele bir tanımlama bilgisi eklemesini bildirir. Varsayılan olarak, `/GS` (arabellek güvenlik denetimi) derleyici seçeneği tüm işlevler için bir tanımlama bilgisi eklemez. Daha fazla bilgi için bkz. [/GS (arabellek güvenlik denetimi)](../build/reference/gs-buffer-security-check.md).
 
-İle derleme `/GS` (arabellek güvenlik etkinleştirmek için işaretleyin) **strict_gs_check**.
+Strict_gs_check 'i etkinleştirmek `/GS` için kullanarakderleyin.
 
-Bu pragmayı, zarar verme olasılığı bulunan verilerin gördüğü kod modüllerinde kullanın. Bu pragma çok agresiftir ve bu savunmayı gerektirmeyen işlevlere uygulanır. Ancak sonuç uygulamasının performansı üzerindeki etkisini en aza indirmek için optimize edilmiştir.
+Bu pragmayı, zarar verme olasılığı bulunan verilerin gördüğü kod modüllerinde kullanın. **strict_gs_check** , agresif bir pragma ve bu savunmaya ihtiyaç duymayan işlevlere uygulanır, ancak sonuçta elde edilen uygulamanın performansına etkisini en aza indirmek için en iyi duruma getirilmiştir.
 
-Bu pragmayı kullansanız bile, güvenli kod yazmak için çaba göstermelisiniz. Diğer bir deyişle, kodunuzu hiçbir arabellek taşması olduğundan emin olun. **strict_gs_check** uygulama kodunuzda kalan arabellek taşmalarına korunmasına.
+Bu pragmayı kullansanız bile, güvenli kod yazmak için çaba göstermelisiniz. Diğer bir deyişle, kodunuzun arabellek taşmalarına sahip olmadığından emin olun. **strict_gs_check** , uygulamanızı kodunuzda kalan arabellek taşlarından koruyabilir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kodda, bir diziyi yerel bir diziye kopyaladığımızda arabellek taşması oluşur. Bu kod ile derleme yaparken `/GS`, dizi veri türü bir işaretçi olduğu için yığına tanımlama bilgisi eklenir. Ekleme **strict_gs_check** pragması, yığın tanımlama bilgisini işlev yığınına zorlar.
+Bu örnekte, bir diziyi yerel bir diziye kopyalayadığımızda bir arabellek taşması oluşur. Bu kodu ile `/GS`derlerken, dizi veri türü bir işaretçi olduğundan yığında hiçbir tanımlama bilgisi eklenmez. **Strict_gs_check** pragma eklemek, yığın tanımlama bilgisini işlev yığınına zorlar.
 
 ```cpp
 // pragma_strict_gs_check.cpp
@@ -67,5 +64,5 @@ void ** ReverseArray(void **pData,
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)<br/>
-[/GS (Arabellek Güvenlik Denetimi)](../build/reference/gs-buffer-security-check.md)
+[Pragma yönergeleri ve __pragma anahtar sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)\
+[/GS (arabellek güvenlik denetimi)](../build/reference/gs-buffer-security-check.md)

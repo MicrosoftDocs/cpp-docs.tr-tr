@@ -1,6 +1,6 @@
 ---
 title: __movsq
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __movsq
 helpviewer_keywords:
@@ -8,57 +8,57 @@ helpviewer_keywords:
 - rep movsq instruction
 - movsq instruction
 ms.assetid: be116a6e-2176-4ca4-93b1-9ccf3e7e7835
-ms.openlocfilehash: 4e4908cd5ffc28840b5a48b735048cccb557e97c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 66de1971c48f6697fd06579fac635cce31545e92
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62263175"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70217267"
 ---
-# <a name="movsq"></a>__movsq
+# <a name="__movsq"></a>__movsq
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Taşıma yinelenen bir dize oluşturur (`rep movsq`) yönerge.
+Yinelenen bir Move String (`rep movsq`) yönergesi üretir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```C
 void __movsq(
-   unsigned char* Dest,
+   unsigned char* Destination,
    unsigned char* Source,
    size_t Count
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
-*Hedef*<br/>
-[out] İşlemin hedefi.
+*Hedefine*\
+dışı İşlemin hedefi.
 
-*Kaynak*<br/>
-[in] İşlem kaynağı.
+*Kaynaktaki*\
+'ndaki İşlemin kaynağı.
 
-*Sayısı*<br/>
-[in] Kopyalanacak quadwords sayısı.
+*Biriktirme*\
+'ndaki Kopyalanacak quadwords sayısı.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İç|Mimari|
+|Alanlarla|Mimari|
 |---------------|------------------|
 |`__movsq`|X64|
 
-**Üst bilgi dosyası** \<intrin.h >
+**Üst bilgi dosyası** \<Intrin. h >
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sonuç ilk `Count` quadwords tarafından işaret edilen `Source` kopyalanır `Dest` dize.
+Sonuç olarak, *kaynağa* göre işaret eden ilk *sayıda* quadwords *hedef* dizeye kopyalanır.
 
-Bu yordam yalnızca bir iç öğe olarak kullanılabilir.
+Bu yordam yalnızca iç öğe olarak kullanılabilir.
 
 ## <a name="example"></a>Örnek
 
-```
+```cpp
 // movsq.cpp
 // processor: x64
 #include <stdio.h>
@@ -83,8 +83,8 @@ int main()
 950 850 750 650 550 450 350 250 150 50
 ```
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)
+[Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)

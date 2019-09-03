@@ -1,6 +1,6 @@
 ---
-title: Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü
-ms.date: 11/04/2016
+title: Pragma yönergeleri ve __pragma anahtar sözcüğü
+ms.date: 08/29/2019
 f1_keywords:
 - '#pragma'
 helpviewer_keywords:
@@ -13,78 +13,77 @@ helpviewer_keywords:
 - preprocessor, pragmas
 - pragma directives (#pragma)
 ms.assetid: 9867b438-ac64-4e10-973f-c3955209873f
-ms.openlocfilehash: b6c2ff579c6fafa78cbfd0a2879a71fca2bfaa01
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2cf075e4ff8049593a1e77c5d2c1c259b224877b
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62179964"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222305"
 ---
-# <a name="pragma-directives-and-the-pragma-keyword"></a>Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü
+# <a name="pragma-directives-and-the-__pragma-keyword"></a>Pragma yönergeleri ve __pragma anahtar sözcüğü
 
-Pragma yönergeleri makine veya işletim özgü derleyici özelliklerini belirtir. **__Pragma** Microsoft derleyiciye özgü anahtar sözcüğü için kod pragma yönergelerini makro tanımları içinde size sağlar.
+Pragma yönergeleri makine veya işletim sistemine özgü derleyici özelliklerini belirtir. Microsoft derleyicisine özgü **__pragma** anahtar sözcüğü, makro tanımları içinde pragma yönergelerini kodlamanıza olanak sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
-#pragma token-string
-__pragma(token-string)
-```
+> **#pragma** *belirteç-dize*\
+> **__pragma (** *belirteç-dize* **)**
 
 ## <a name="remarks"></a>Açıklamalar
 
-Her C ve C++ uygulaması, kendi ana makinesine veya işletim sistemi benzersiz bazı özellikler destekler. Örneğin, bazı programların verilerin eklendiği bellek alanları üzerinde veya işlevlerin parametre alma belirli denetlenmesine kesin denetim yollarını denetlemesi gerekir. **#Pragma** yönergeleri her derleyiciye C ve C++ dilleri ile genel uyumluluğu muhafaza ederken, makineye ve işletim sistemine özgü özellikler sunmak için bir yol sunar.
+Her C uygulamasının, ana C++ makinesi veya işletim sistemine özgü bazı özellikleri destekler. Örneğin, bazı programlar, bellekteki verilerin konumu üzerinde tam denetim sağlamalıdır veya belirli işlevlerin parametreleri alma şeklini denetmelidir. **#Pragma** yönergeleri, her bir derleyicinin makine ve işletim sistemine özgü özellikler sunmasına, C ve C++ dillerle genel uyumluluğu sürdürmesinin bir yolunu sunar.
 
-Pragmalar makine veya işletim sistemi-tanımına göre özgüdür ve genelde her derleyici için farklıdır. Pragmalar, yeni önişlemci işlevselliğini sunmak veya derleyiciye uygulama tanımlı bilgileri sağlamak için koşullu ifadelerde kullanılabilir.
+Pragmalar, tanıma göre makine veya işletim sistemine özgüdür ve genellikle her derleyicide farklıdır. Pragmalar, yeni Önişlemci işlevselliği sağlamak ya da derleyiciye uygulama tanımlı bilgiler sağlamak için koşullu yönergeler içinde kullanılabilir.
 
-`token-string` Belirli bir derleyici yönergesi ve bağımsız değişkenler veren bir karakterler varsa dizisidir. Numara işareti (**#**) ilk boşluk olmayan karakter pragmayı içeren satırda; beyaz boşluk karakterleri numara işaretleri ile "pragma" sözcüğünü ayırabilirsiniz. Aşağıdaki **#pragma**, translator ön işleme belirteci olarak ayrıştırabilirsiniz herhangi bir metni yazın. Bağımsız değişkeni **#pragma** makro genişletmeye tabidir.
+*Token-string* , varsa belirli bir derleyici yönergesini ve bağımsız değişkenleri veren bir karakter dizisidir. Numara işareti ( **#** ), pragmayı içeren satırdaki ilk beyaz boşluk olmayan karakter olmalıdır. Boşluk karakterleri, sayı işaretini ve "pragma" sözcüğünü ayırabilirler. Aşağıdaki **#pragma**, çeviricisinin ön işleme belirteçleri olarak ayrıştırabileceği tüm metinleri yazın. **#Pragma** bağımsız değişkeni makro genişletmeye tabidir.
 
-Derleyici tanımadığı bir pragma bulursa, bir uyarı verir ve derlemeye devam eder.
+Derleyici, tanımadığı bir pragma bulduğunda bir uyarı verir ve derlemeyi sürdürür.
 
-Microsoft C and C++ Derleyicileri aşağıdaki pragmaları tanır:
+Microsoft C ve C++ derleyiciler aşağıdaki pragmaları tanır:
 
 ||||
 |-|-|-|
 |[alloc_text](../preprocessor/alloc-text.md)|[auto_inline](../preprocessor/auto-inline.md)|[bss_seg](../preprocessor/bss-seg.md)|
-|[check_stack](../preprocessor/check-stack.md)|[code_seg](../preprocessor/code-seg.md)|[Açıklama](../preprocessor/comment-c-cpp.md)|
-|[component](../preprocessor/component.md)|[uygun](../preprocessor/conform.md) <sup>1</sup>|[const_seg](../preprocessor/const-seg.md)|
+|[check_stack](../preprocessor/check-stack.md)|[code_seg](../preprocessor/code-seg.md)|[açıklamanın](../preprocessor/comment-c-cpp.md)|
+|[component](../preprocessor/component.md)|[uyumlu](../preprocessor/conform.md) <sup>1</sup>|[const_seg](../preprocessor/const-seg.md)|
 |[data_seg](../preprocessor/data-seg.md)|[deprecated](../preprocessor/deprecated-c-cpp.md)|[detect_mismatch](../preprocessor/detect-mismatch.md)|
 |[fenv_access](../preprocessor/fenv-access.md)|[float_control](../preprocessor/float-control.md)|[fp_contract](../preprocessor/fp-contract.md)|
-|[İşlevi](../preprocessor/function-c-cpp.md)|[hdrstop](../preprocessor/hdrstop.md)|[include_alias](../preprocessor/include-alias.md)|
+|[çalışmayacaktır](../preprocessor/function-c-cpp.md)|[hdrstop](../preprocessor/hdrstop.md)|[include_alias](../preprocessor/include-alias.md)|
 |[init_seg](../preprocessor/init-seg.md) <sup>1</sup>|[inline_depth](../preprocessor/inline-depth.md)|[inline_recursion](../preprocessor/inline-recursion.md)|
-|[intrinsic](../preprocessor/intrinsic.md)|[döngü](../preprocessor/loop.md) <sup>1</sup>|[make_public](../preprocessor/make-public.md)|
-|[Yönetilen](../preprocessor/managed-unmanaged.md)|[message](../preprocessor/message.md)||
-|[omp](../preprocessor/omp.md)|[once](../preprocessor/once.md)||
-|[optimize](../preprocessor/optimize.md)|[pack](../preprocessor/pack.md)|[pointers_to_members](../preprocessor/pointers-to-members.md) <sup>1</sup>|
-|[pop_macro](../preprocessor/pop-macro.md)|[push_macro](../preprocessor/push-macro.md)|[region, endregion](../preprocessor/region-endregion.md)|
-|[runtime_checks](../preprocessor/runtime-checks.md)|[section](../preprocessor/section.md)|[setlocale](../preprocessor/setlocale.md)|
-|[strict_gs_check](../preprocessor/strict-gs-check.md)|[Yönetilmeyen](../preprocessor/managed-unmanaged.md)|[vtordisp](../preprocessor/vtordisp.md) <sup>1</sup>|
-|[warning](../preprocessor/warning.md)|||
+|[intrinsic](../preprocessor/intrinsic.md)|[Loop](../preprocessor/loop.md) <sup>1</sup>|[make_public](../preprocessor/make-public.md)|
+|[lebilmesi](../preprocessor/managed-unmanaged.md)|[message](../preprocessor/message.md)|[omp](../preprocessor/omp.md)|
+|[once](../preprocessor/once.md)|[optimize](../preprocessor/optimize.md)|[pack](../preprocessor/pack.md)|
+|[pointers_to_members](../preprocessor/pointers-to-members.md) <sup>1</sup>|[pop_macro](../preprocessor/pop-macro.md)|[push_macro](../preprocessor/push-macro.md)|
+|[region, endregion](../preprocessor/region-endregion.md)|[runtime_checks](../preprocessor/runtime-checks.md)|[section](../preprocessor/section.md)|
+|[setlocale](../preprocessor/setlocale.md)|[strict_gs_check](../preprocessor/strict-gs-check.md)|[yönetilmeyen](../preprocessor/managed-unmanaged.md)|
+|[vtordisp](../preprocessor/vtordisp.md) <sup>1</sup>|[warning](../preprocessor/warning.md)||
 
-<sup>1</sup> yalnızca C++ Derleyici tarafından desteklenir.
+<sup>1</sup> yalnızca C++ derleyici tarafından desteklenir.
 
 ## <a name="pragmas-and-compiler-options"></a>Pragmalar ve derleyici seçenekleri
 
-Bazı pragmalar derleyici seçenekleriyle aynı işlevleri sağlar. Kaynak kodunda bir pragma ile karşılaşıldığında, derleyici seçeneği tarafından belirtilen davranışı geçersiz kılar. Örneğin, belirttiğiniz [/zp8](../build/reference/zp-struct-member-alignment.md), ile kodun belirli bölümleri için bu derleyici ayarını geçersiz kılabilirsiniz [paketi](../preprocessor/pack.md):
+Bazı pragmalar derleyici seçenekleriyle aynı işlevleri sağlar. Kaynak kodunda bir pragma ile karşılaşıldığında, derleyici seçeneği tarafından belirtilen davranışı geçersiz kılar. Örneğin, [/ZP8](../build/reference/zp-struct-member-alignment.md)' i belirlediyseniz, [paket](../preprocessor/pack.md)ile kodun belirli bölümleri için bu derleyici ayarını geçersiz kılabilirsiniz:
 
+```cmd
+cl /Zp8 some_file.cpp
 ```
-cl /Zp8 ...
 
-<file> - packing is 8
+```cpp
+// some_file.cpp - packing is 8
 // ...
 #pragma pack(push, 1) - packing is now 1
 // ...
-#pragma pack(pop) - packing is 8
-</file>
+#pragma pack(pop) - packing is 8 again
+// ...
 ```
 
-## <a name="the-pragma-keyword"></a>The __pragma() Keyword
+## <a name="the-__pragma-keyword"></a>__Pragma () anahtar sözcüğü
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Derleyici ayrıca destekler **__pragma** anahtar sözcüğü ile aynı işlevlere sahiptir olarak **#pragma** yönergesi, ancak bir Makro tanımında kullanılan satır içi olabilir. **#Pragma** yönergesi çünkü derleyici yönergedeki içinde sayı işareti karakterini ('#') yorumlar bir makro tanımda kullanılamaz [dize haline getirme işleci (#)](../preprocessor/stringizing-operator-hash.md).
+Derleyici Ayrıca **#pragma** yönergesiyle aynı işlevselliğe sahip **__pragma** anahtar sözcüğünü de destekler. Aradaki fark, **__pragma** anahtar sözcüğünün bir makro tanımında satır içi kullanılabilir. **#Pragma** yönergesi, bir makro tanımında kullanılamaz, çünkü derleyici yönergede işaret karakteri (' # ') sayısını dize haline getirme [işleci (#)](../preprocessor/stringizing-operator-hash.md)olarak yorumlar.
 
-Aşağıdaki kod örneğinde nasıl **__pragma** anahtar sözcüğü bir makroda kullanılabilir. Bu kod, "Derleyici COM destek örnekleri" içindeki ACDUAL örneğinde bulunan mfcdual.h başlığından alınmıştır:
+Aşağıdaki kod örneği, **__pragma** anahtar sözcüğünün bir makroda nasıl kullanılabileceğini gösterir. Bu kod, "derleyici COM desteği örnekleri" içinde ACDUAL örneğindeki mfcdual. h üst bilgisinden ayıklanalınmıştır:
 
 ```cpp
 #define CATCH_ALL_DUAL \
@@ -104,10 +103,10 @@ END_CATCH_ALL \
 return _hr; \
 ```
 
-**End Microsoft özgü**
+**Son Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C/C++ Ön İşlemci Başvurusu](../preprocessor/c-cpp-preprocessor-reference.md)<br/>
-[C Pragmaları](../c-language/c-pragmas.md)<br/>
+[C/C++ Önişlemci Başvurusu](../preprocessor/c-cpp-preprocessor-reference.md)\
+[C pragmaları](../c-language/c-pragmas.md)\
 [Anahtar Sözcükler](../cpp/keywords-cpp.md)

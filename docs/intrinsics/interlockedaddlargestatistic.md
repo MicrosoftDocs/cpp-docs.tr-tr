@@ -1,6 +1,6 @@
 ---
 title: _InterlockedAddLargeStatistic
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - _InterlockedAddLargeStatistic
 - _InterlockedAddLargeStatistic_cpp
@@ -8,57 +8,57 @@ helpviewer_keywords:
 - _InterlockedAddLargeStatistic intrinsic
 - InterlockedAddLargeStatistic intrinsic
 ms.assetid: 2802e74b-bcee-46e4-b562-894908d44409
-ms.openlocfilehash: 6f9d599a8d7668c6c8a37846275e8338002589d1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: de8c5b7dfd2462dddcb98324ebacc44c8148d85e
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62349494"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222095"
 ---
-# <a name="interlockedaddlargestatistic"></a>_InterlockedAddLargeStatistic
+# <a name="_interlockedaddlargestatistic"></a>_InterlockedAddLargeStatistic
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-İlk işleneni bir 64-bit değeri olduğu bir birbirine kenetlenmiş ek gerçekleştirir.
+İlk işlenenin 64 bitlik bir değer olduğu bir kenetlenmiş ekleme işlemi gerçekleştirir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```C
 long _InterlockedAddLargeStatistic(
    __int64 volatile * Addend,
    long Value
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
-*Formülündeki toplanan*<br/>
-[out içinde] Ekleme işlemi için ilk işlenen bir işaretçi. İşaret ettiği değer toplamın sonucunu tarafından değiştirilir.
+*Doğrusal formülündeki toplanan*\
+[in, out] Ekleme işlemine ilk işlenenin işaretçisi. İşaret edilen değer, ekleme sonucuyla değiştirilmiştir.
 
-*Değer*<br/>
-[in] İkinci işlenenin; ilk işleneni eklenecek değer.
+*Deeri*\
+'ndaki İkinci işlenen; ilk işlenene eklenecek değer.
 
-## <a name="return-value"></a>Dönüş Değeri
+## <a name="return-value"></a>Dönüş değeri
 
 İkinci işlenenin değeri.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İç|Mimari|
+|Alanlarla|Mimari|
 |---------------|------------------|
 |`_InterlockedAddLargeStatistic`|x86|
 
-**Üst bilgi dosyası** \<intrin.h >
+**Üst bilgi dosyası** \<Intrin. h >
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kilitli yönergeleri iki ayrı olarak uygulanan çünkü bu iç atomik değildir. Bu yürütme sırasında başka bir iş parçacığında içsel oluşan atomik bir 64-bit okuma okunan tutarsız bir değeri neden olabilir.
+İki ayrı kilitli yönerge olarak uygulandığından, içatomikdeğildir.`_InterlockedAddLargeStatistic` İç işleminin yürütülmesi sırasında başka bir iş parçacığında gerçekleşen atomik 64 bit okuma tutarsız bir değer okumasına neden olabilir.
 
-Bu işlev, bir okuma-yazma engel davranır. Daha fazla bilgi için [_ReadWriteBarrier](../intrinsics/readwritebarrier.md).
+`_InterlockedAddLargeStatistic`okuma/yazma engeli olarak davranır. Daha fazla bilgi için bkz. [_Readwriteengeli](../intrinsics/readwritebarrier.md).
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)<br/>
+[Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)\
 [x86 Derleyicisi ile Çakışma](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)

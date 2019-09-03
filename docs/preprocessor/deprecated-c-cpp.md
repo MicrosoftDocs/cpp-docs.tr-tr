@@ -1,6 +1,6 @@
 ---
-title: deprecated (C/C++)
-ms.date: 11/04/2016
+title: kullanım dışı pragma
+ms.date: 08/29/2019
 f1_keywords:
 - vc-pragma.deprecated
 - deprecated_CPP
@@ -8,35 +8,33 @@ helpviewer_keywords:
 - deprecated pragma
 - pragmas, deprecated
 ms.assetid: 9c046f12-7875-499a-8d5d-12f8642fed2d
-ms.openlocfilehash: 262b23e6e4813a5e22bc3f4e7c9a18efb9988a7c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2e76d1c53cb900c108e2839a9aad17b330143a5d
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62389300"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222410"
 ---
-# <a name="deprecated-cc"></a>deprecated (C/C++)
+# <a name="deprecated-pragma"></a>kullanım dışı pragma
 
-**Kullanım dışı** pragma sağlar bir işlev, tür veya başka bir tanımlayıcı artık gelecek sürümlerde desteklenebilir olduğunu belirtmek için yayın veya artık kullanılmalıdır.
+**Kullanım dışı bırakılan** pragma, bir işlevin, türün ya da başka herhangi bir tanımlayıcının daha sonra gelecek bir sürümde desteklenmeyeceğini veya artık kullanılmadığından emin olmanızı sağlar.
 
 > [!NOTE]
-> C ++ 14 hakkında bilgi için `[[deprecated]]` özniteliği ve ne zaman kullanan yönergeler vs özniteliği Microsoft declspec ya da pragması, bkz: [C++ Standart öznitelikleri](../cpp/attributes.md) özniteliği.
+> C++ 14 `[[deprecated]]` özniteliği hakkında daha fazla bilgi için, Microsoft `__declspec(deprecated)` değiştirici veya **kullanım dışı** pragma yerine bu özniteliğin ne zaman kullanılacağı üzerine yönergeler için bkz. [içindeki C++öznitelikler ](../cpp/attributes.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
-#pragma deprecated( identifier1 [,identifier2, ...] )
-```
+> **#pragma kullanım dışı (** *Identifier1* [ **,** *identifier2* ...] **)**
 
 ## <a name="remarks"></a>Açıklamalar
 
-Derleyici tarafından belirtilen tanımlayıcı karşılaştığında bir **kullanım dışı** pragması, derleyici uyarısı verdiği [C4995](../error-messages/compiler-warnings/compiler-warning-level-3-c4995.md).
+Derleyici **kullanım dışı** bir pragma tarafından belirtilen bir tanımlayıcıyla karşılaştığında, derleyici uyarısı [C4995](../error-messages/compiler-warnings/compiler-warning-level-3-c4995.md)' ı yayınlar.
 
-Makro adları kullanımdan. Makro adı tırnak işaretleri; Aksi takdirde makro genişletme içinde yer meydana gelir.
+Makro adlarını kullanımdan kaldırmayı seçebilirsiniz. Makro adını tırnak içine koyun veya makro genişletmesi oluşur.
 
-Çünkü **kullanım dışı** pragması, tüm eşleşen tanımlayıcılarına çalışır ve imzalar dikkate almaz, aşırı yüklenmiş işlevlerin belirli sürümler kullanım dışı bırakıldığında için en iyi seçenek değildir. Kapsama alınır tüm eşleşen işlev adı, bir uyarı tetikler.
+**Kullanım dışı bırakılan** pragma tüm eşleşen tanımlayıcılarda çalıştığından ve hesaba imza almaz, aşırı yüklenmiş işlevlerin belirli sürümlerini kullanımdan kaldırmaya yönelik en iyi seçenek değildir. Kapsama getirilen herhangi bir eşleşen işlev adı, uyarıyı tetikler.
 
-C ++ 14 kullanmanızı öneririz `[[deprecated]]` yerine, mümkün olduğunda, öznitelik **kullanım dışı** pragması. Microsoft'a özgü [__declspec(deprecated)](../cpp/deprecated-cpp.md) bildirim değiştirici olan ayrıca birçok durumda daha iyi bir seçenek **kullanım dışı** pragması. `[[deprecated]]` Özniteliği ve `__declspec(deprecated)` değiştiricisi belirli forms aşırı yüklenmiş işlevlerin kullanım dışı durumunun belirtmenize olanak tanır. Tanılama uyarı yalnızca belirli bir aşırı yüklenmiş işlev başvuruları öznitelik görüntülenir veya değiştiricisi geçerlidir.
+Mümkün olduğunda, **kullanım dışı** pragma yerine `[[deprecated]]` c++ 14 özniteliğini kullanmanızı öneririz. Microsoft 'a özgü [__declspec (kullanım dışı)](../cpp/deprecated-cpp.md) bildirim değiştiricisi, **kullanım dışı** pragma değerinden birçok durumda daha iyi bir seçenektir. Öznitelik `[[deprecated]]` ve`__declspec(deprecated)` değiştirici, aşırı yüklenmiş işlevlerin belirli biçimleri için kullanım dışı durumu belirtmenize izin verir. Tanılama uyarısı yalnızca öznitelik veya değiştiricinin uygulandığı belirli aşırı yüklenmiş işleve yapılan başvurular üzerinde görüntülenir.
 
 ## <a name="example"></a>Örnek
 
@@ -59,7 +57,7 @@ int main() {
 }
 ```
 
-Aşağıdaki örnek, bir sınıf kullanımdan kaldırmaya gösterilmektedir:
+Aşağıdaki örnek, bir sınıfın kullanımdan kaldırılması gösterilmektedir:
 
 ```cpp
 // pragma_directive_deprecated2.cpp
@@ -77,4 +75,4 @@ int main() {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+[Pragma yönergeleri ve __pragma anahtar sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

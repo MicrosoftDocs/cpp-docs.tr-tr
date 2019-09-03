@@ -1,6 +1,6 @@
 ---
 title: _BitScanReverse, _BitScanReverse64
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - _BitScanReverse64
 - _BitScanReverse_cpp
@@ -11,22 +11,22 @@ helpviewer_keywords:
 - _BitScanReverse intrinsic
 - BitScanReverse intrinsic
 ms.assetid: 2520a207-af8b-4aad-9ae7-831abeadf376
-ms.openlocfilehash: 3639aac38f4c7df82cbbdb23ed9038ac86ba2cc0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 848c153967e5581f08f1d499a28ab282ee2602df
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62264289"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70216951"
 ---
-# <a name="bitscanreverse-bitscanreverse64"></a>_BitScanReverse, _BitScanReverse64
+# <a name="_bitscanreverse-_bitscanreverse64"></a>_BitScanReverse, _BitScanReverse64
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-En az önemli bit (LSB'si) belirlenen bitin (1) için en anlamlı bit (MSB) maskesi verileri arayın.
+Maske verilerini, küme bit (1) için en önemli bit (MSB) ile en az önemli bit (LSB) ile arayın.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```C
 unsigned char _BitScanReverse(
    unsigned long * Index,
    unsigned long Mask
@@ -37,28 +37,28 @@ unsigned char _BitScanReverse64(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
-*Index*<br/>
-[out] Bulunan bit konumunu ilk set bit (1) ile yüklendi.
+*İndeks*\
+dışı İlk küme bitinin (1) bulunduğu bit konumuyla yüklendi.
 
-*Maskesi*<br/>
-[in] Aranacak 32 bit veya 64-bit değeri.
+*Maskesi*\
+'ndaki Aranacak 32-bit veya 64 bit değeri.
 
-## <a name="return-value"></a>Dönüş Değeri
+## <a name="return-value"></a>Dönüş değeri
 
-Gösterimiyse `Index` kümesi veya 0 biri ise hiçbir belirlenmiş bitleri bulunamadı.
+`Index` Ayarlanmışsa sıfır olmayan veya ayarlanmış bir bit bulunmazsa 0.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İç|Mimari|Üstbilgi|
+|Alanlarla|Mimari|Üstbilgi|
 |---------------|------------------|------------|
-|`_BitScanReverse`|x86, ARM, x64|\<intrin.h >|
-|`_BitScanReverse64`|ARM, x64||
+|`_BitScanReverse`|x86, ARM, x64, ARM64|\<Intrin. h >|
+|`_BitScanReverse64`|ARM64, x64|\<Intrin. h >|
 
 ## <a name="example"></a>Örnek
 
-```
+```cpp
 // BitScanReverse.cpp
 // compile with: /EHsc
 #include <iostream>
@@ -87,21 +87,17 @@ int main()
 }
 ```
 
-## <a name="input"></a>Giriş
-
-```
+```Input
 12
 ```
 
-## <a name="sample-output"></a>Örnek Çıktı
-
-```
+```Output
 Enter a positive integer as the mask:
 Mask: 12 Index: 3
 ```
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)
+[Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)

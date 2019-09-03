@@ -1,29 +1,30 @@
 ---
-title: Ön işlemci İşleçleri
-ms.date: 11/04/2016
+title: Ön işlemci işleçleri
+ms.date: 08/29/2019
 helpviewer_keywords:
 - preprocessor operators
 - operators [C++], preprocessor
 ms.assetid: 884126d1-0ce2-48b6-9e06-8a2d7c4a9656
-ms.openlocfilehash: 0b105cc2039e2aa50c11b796e5474a97d8c5c702
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1c556e4af5913ba8d0dc7efc9648e0d0004d9d7e
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62179899"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222243"
 ---
-# <a name="preprocessor-operators"></a>Ön işlemci İşleçleri
-`#define` yönergesi bağlamında, önişlemciye özgü dört işleç kullanılır (her birinin özeti için aşağıdaki listeye bakın). Dize haline getirme, karakter haline getirme ve belirteç yapıştırma işleçleri sonraki üç bölümde ele alınmıştır. Hakkında bilgi için `defined` işleci bkz [#if, #elif, #else ve #endif yönergeleri](../preprocessor/hash-if-hash-elif-hash-else-and-hash-endif-directives-c-cpp.md).
+# <a name="preprocessor-operators"></a>Ön işlemci işleçleri
+
+`#define` Yönergesinin bağlamında, Önişlemciye özgü dört işleç kullanılır. Her birinin Özeti için aşağıdaki tabloya bakın. Dize haline getirme, karakter haline getirme ve belirteç yapıştırma işleçleri sonraki üç bölümde ele alınmıştır. `defined` İşleci hakkında daha fazla bilgi için [#if, #elif, #else ve #endif](../preprocessor/hash-if-hash-elif-hash-else-and-hash-endif-directives-c-cpp.md)yönergelerine bakın.
 
 |İşleç|Eylem|
 |--------------|------------|
-|[Dizeleyen işleç (#)](../preprocessor/stringizing-operator-hash.md)|Karşılık gelen gerçek bağımsız değişkenin çift tırnak içine alınmasına neden olur|
-|[Charizing operator (#@)](../preprocessor/charizing-operator-hash-at.md)|Karşılık gelen bağımsız değişkenin tek tırnak içine alınmasına ve karakter (Microsoft'a Özel) olarak kabul edilmesine neden olur|
-|[Belirteç yapıştıran işleç (#)](../preprocessor/token-pasting-operator-hash-hash.md)|Gerçek bağımsız değişken olarak kullanılan belirteçlerin başka belirteçler oluşturacak şekilde birleştirilmesine olanak verir|
-|[Defined işleci](../preprocessor/hash-if-hash-elif-hash-else-and-hash-endif-directives-c-cpp.md)|Bazı makro yönergelerinde bileşik ifadelerin yazımını basitleştirir|
+|[Stringize işleci (#)](../preprocessor/stringizing-operator-hash.md)|Karşılık gelen gerçek bağımsız değişkenin çift tırnak içine alınmasına neden olur|
+|[Charize işleci (# @)](../preprocessor/charizing-operator-hash-at.md)|Karşılık gelen bağımsız değişkenin tek tırnak içine alınmasına ve karakter (Microsoft'a Özel) olarak kabul edilmesine neden olur|
+|[Belirteç yapıştırma işleci (# #)](../preprocessor/token-pasting-operator-hash-hash.md)|Gerçek bağımsız değişken olarak kullanılan belirteçlerin başka belirteçler oluşturacak şekilde birleştirilmesine olanak verir|
+|[tanımlı işleç](../preprocessor/hash-if-hash-elif-hash-else-and-hash-endif-directives-c-cpp.md)|Bazı makro yönergelerinde bileşik ifadelerin yazımını basitleştirir|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Ön işlemci Yönergeleri](../preprocessor/preprocessor-directives.md)<br/>
-[Önceden Tanımlanmış Makrolar](../preprocessor/predefined-macros.md)<br/>
-[C/C++ Ön İşlemci Başvurusu](../preprocessor/c-cpp-preprocessor-reference.md)
+[Önişlemci yönergeleri](../preprocessor/preprocessor-directives.md)\
+[Önceden tanımlanmış makrolar](../preprocessor/predefined-macros.md)\
+[c/c++ Önişlemci Başvurusu](../preprocessor/c-cpp-preprocessor-reference.md)

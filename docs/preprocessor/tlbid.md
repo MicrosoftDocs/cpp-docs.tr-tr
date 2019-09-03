@@ -1,38 +1,36 @@
 ---
-title: tlbid
-ms.date: 10/18/2018
+title: tldeklarasyon içeri aktarma özniteliği
+ms.date: 08/29/2019
 f1_keywords:
 - tlbid
 helpviewer_keywords:
 - tlbid attribute
 ms.assetid: 54b06785-191b-4e77-a9a5-485f2b4acb09
-ms.openlocfilehash: ae79ce9245bb1c0425c3e9b92dd27b52fa443dba
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 364fb224b0f2769cb0933e71d18ff70768189328
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62179613"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70216539"
 ---
-# <a name="tlbid"></a>tlbid
+# <a name="tlbid-import-attribute"></a>tldeklarasyon içeri aktarma özniteliği
 
-**C++ özgü**
+**C++Belirli**
 
-Birincil tür kitaplığı dışında kitaplıklarını yüklemek için sağlar.
+Birincil tür kitaplığı dışındaki kitaplıkların yüklenmesine izin verir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
-tlbid(number)
-```
+> **#import** *tür-kitaplık-dll* **tldeklarasyon (** *sayı* **)**
 
 ### <a name="parameters"></a>Parametreler
 
-*Sayı*<br/>
-Tür Kitaplığı'nda sayısını `filename`.
+*sayısından*\
+*Type-Library-DLL*içindeki tür kitaplığının numarası.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Birden çok tür kitaplıklarının tek bir DLL'nin, birincil tür kitaplığı dışında kitaplıkları kullanarak yüklemek mümkün içinde yerleşik olan, **tlbıd**.
+Birden çok tür kitaplığı tek bir DLL 'de yerleşik ise, **tldeklarasyon**kullanarak birincil tür kitaplığı dışındaki kitaplıkları yüklemek mümkündür.
 
 Örneğin:
 
@@ -46,9 +44,9 @@ eşdeğerdir:
 LoadTypeLib("MyResource.dll\\2");
 ```
 
-**END C++ özgü**
+**SONA C++ özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)<br/>
+[#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)\
 [#import yönergesi](../preprocessor/hash-import-directive-cpp.md)

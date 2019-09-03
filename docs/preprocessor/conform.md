@@ -1,6 +1,6 @@
 ---
-title: conform
-ms.date: 11/04/2016
+title: conform pragması
+ms.date: 08/29/2019
 f1_keywords:
 - conform_CPP
 - vc-pragma.conform
@@ -9,41 +9,42 @@ helpviewer_keywords:
 - forScope conform pragma
 - pragmas, conform
 ms.assetid: 71b3e174-c53c-4bfc-adf3-af39b1554191
-ms.openlocfilehash: 35c3b06106779a9056f682ff76c6ed4b4ab1ab41
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 816ff85bb19f549c6ea072073bd89fcd503545f2
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62366765"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70220506"
 ---
-# <a name="conform"></a>conform
-**C++ özgü**
+# <a name="conform-pragma"></a>conform pragması
 
-Çalışma zamanı davranışını belirtir [/ZC: forscope](../build/reference/zc-forscope-force-conformance-in-for-loop-scope.md) derleyici seçeneği.
+**C++Belirli**
+
+[/Zc: forScope](../build/reference/zc-forscope-force-conformance-in-for-loop-scope.md) derleyici seçeneğinin çalışma zamanı davranışını belirtir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **#pragma conform(** *name* [**, show** ] [**,** { **on** | **off** } ] [ [**,** { **push** | **pop** } ] [**,** *identifier* ] ] **)**
+> **#pragma uyumlu (** *ad* [ **, show** ] [ **,** { **on** | **off** }] [[ **,** { **Push** | **pop** }] [ **,** *tanımlayıcı* [ **,** { **on** **kapalı}** ]  |  ] ] **)**
 
 ### <a name="parameters"></a>Parametreler
 
-*Adı*<br/>
-Değiştirilecek derleyici seçeneğinin adı belirtir. Yalnızca geçerli *adı* olduğu `forScope`.
+*ada*\
+Değiştirilecek derleyici seçeneğinin adını belirtir. Geçerli tek *ad* `forScope`.
 
-**Show**<br/>
-(İsteğe bağlı) Geçerli ayarını neden *adı* (true veya false) derleme sırasında bir uyarı iletisi yoluyla görüntülenecek. Örneğin: `#pragma conform(forScope, show)`
+**göster**\
+Seçim Geçerli *adın* (true veya false) derleme sırasında bir uyarı mesajı aracılığıyla görüntülenmesine neden olur. Örneğin: `#pragma conform(forScope, show)`.
 
-**üzerinde**, **kapalı**<br/>
-(İsteğe bağlı) Ayarı *adı* için **üzerinde** sağlayan [/ZC: forscope](../build/reference/zc-forscope-force-conformance-in-for-loop-scope.md) derleyici seçeneği. Varsayılan değer **kapalı**.
+**Açık**, **kapalı**\
+Seçim *Name* ayarının **on** olarak ayarlanması [/Zc: forScope](../build/reference/zc-forscope-force-conformance-in-for-loop-scope.md) derleyici seçeneğini sağlar. Varsayılan değer **kapalıdır**.
 
-**push**<br/>
-(İsteğe bağlı) Geçerli değerini gönderim *adı* iç derleyici yığınına sürükleyin. Belirtirseniz *tanımlayıcı*, belirtebileceğiniz **üzerinde** veya **kapalı** değerini *adı* da yığına itilecek. Örneğin: `#pragma conform(forScope, push, myname, on)`
+**hareketle**\
+Seçim *Adın* geçerli değerini iç derleyici yığınına iter. *Tanımlayıcıyı*belirtirseniz, bir *adın* yığına itilmesi için **Açık** veya **kapalı** değerini belirtebilirsiniz. Örneğin: `#pragma conform(forScope, push, myname, on)`.
 
-**POP**<br/>
-(İsteğe bağlı) Ayarlar *adı* değere iç derleyici yığınındaki ve ardından POP yığının üstünde. Tanımlayıcı belirtilirse **pop**, geri kayıtla buluncaya yığın POP *tanımlayıcısı*, hangi ayrıca POP; için geçerli değer *adı* içinde Yığında sonraki kaydı için yeni değer olur *adı*. Belirtirseniz **pop** ile bir *tanımlayıcı* olmayan yığında kaydındaki **pop** göz ardı edilir.
+**cağımız**\
+Seçim *Ad* değerini, iç derleyici yığınının en üstünde bulunan değere ayarlar ve sonra yığını açılır. Tanımlayıcı, **pop**ile belirtilirse, *tanımlayıcı*içeren kayıt bulunana kadar yığın geri alınır; bu da silinecek. yığındaki bir sonraki kayıttaki *ad* için geçerli değer, *ad*için yeni bir değer haline gelir. Yığın üzerinde bir kayıtta olmayan bir *tanımlayıcı* içeren **pop** belirtirseniz, **pop** yok sayılır.
 
-*tanımlayıcı*<br/>
-(İsteğe bağlı) İle dahil edilebilir bir **anında iletme** veya **pop** komutu. Varsa *tanımlayıcı* kullanılır, sonra bir **üzerinde** veya **kapalı** tanımlayıcısı de kullanılabilir.
+*Tanımlayıcısını*\
+Seçim **Push** veya **pop** komutuna eklenebilir. *Tanımlayıcı* kullanılıyorsa, bir **Açık** veya **kapalı** belirticisi de kullanılabilir.
 
 ## <a name="example"></a>Örnek
 
@@ -65,4 +66,4 @@ int main() {}
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+[Pragma yönergeleri ve __pragma anahtar sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

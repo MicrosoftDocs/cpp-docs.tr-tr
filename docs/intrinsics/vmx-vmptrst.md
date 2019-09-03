@@ -1,28 +1,28 @@
 ---
 title: __vmx_vmptrst
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __vmx_vmptrst
 helpviewer_keywords:
 - __vmx_vmptrst intrinsic
 - VMPTRST instruction
 ms.assetid: 8dc66e47-03a0-41b0-8e25-c1485f42817a
-ms.openlocfilehash: 5ef02dd4401e0c10a84be008d7cb25841e0359cd
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e559746be9e2a3fe5e81afa4d290265394db3e36
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62390002"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70219491"
 ---
-# <a name="vmxvmptrst"></a>__vmx_vmptrst
+# <a name="__vmx_vmptrst"></a>__vmx_vmptrst
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Belirtilen adresteki geçerli sanal makine denetim yapısı (Windows VMCS) işaretçi depolar.
+İşaretçiyi belirtilen adresteki geçerli sanal makine denetim yapısına (VMCS) depolar.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```C
 void __vmx_vmptrst(
    unsigned __int64 *VmcsPhysicalAddress
 );
@@ -30,26 +30,26 @@ void __vmx_vmptrst(
 
 ### <a name="parameters"></a>Parametreler
 
-*VmcsPhysicalAddress*<br/>
-[in] Geçerli Windows VMCS işaretçinin depolandığı adresi.
+*VmcsPhysicalAddress*\
+'ndaki Geçerli VMCS işaretçisinin depolandığı adres.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir 64 bit fiziksel adresi Windows VMCS işaretçisidir.
+VMCS işaretçisi 64 bitlik bir fiziksel adrestir.
 
-`__vmx_vmptrst` İşlev, eşdeğer `VMPTRST` makine yönergesi. Bu işlev, bir konuk işletim sistemi ve uygulamaları ile bir konağın sanal makine İzleyici etkileşimi destekler. Daha fazla bilgi için "Intel Sanallaştırma teknik belirtimi IA-32 Intel mimari," Belge ara adresindeki sayı C97063 002 belge [Intel Corporation'da](https://software.intel.com/articles/intel-sdm) site.
+İşlev, `VMPTRST` makine yönergesine eşdeğerdir. `__vmx_vmptrst` Bu işlev, bir konağın sanal makine izleyicisinin Konuk işletim sistemiyle ve uygulamalarına yönelik etkileşimini destekler. Daha fazla bilgi için, [Intel Corporation](https://software.intel.com/articles/intel-sdm) SITESINDE "ıa-32 Intel mimarisi Için Intel Sanallaştırma teknik belirtimi" belge numarası C97063-002 olan belgeyi arayın.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İç|Mimari|
+|Alanlarla|Mimari|
 |---------------|------------------|
 |`__vmx_vmptrst`|x86, x64|
 
-**Üst bilgi dosyası** \<intrin.h >
+**Üst bilgi dosyası** \<Intrin. h >
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)<br/>
+[Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)\
 [__vmx_vmptrld](../intrinsics/vmx-vmptrld.md)

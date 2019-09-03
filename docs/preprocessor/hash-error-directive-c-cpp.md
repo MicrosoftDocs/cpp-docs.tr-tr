@@ -1,6 +1,6 @@
 ---
-title: '#hata yönergesi (C/C++)'
-ms.date: 11/04/2016
+title: '##error yönergesi (C/C++)'
+ms.date: 08/29/2019
 f1_keywords:
 - '#error'
 helpviewer_keywords:
@@ -8,27 +8,26 @@ helpviewer_keywords:
 - preprocessor, directives
 - error directive (#error directive)
 ms.assetid: d550a802-ff19-4347-9597-688935d23b2b
-ms.openlocfilehash: dc229a8eae6938cba32787ecbec6a5aa6a17ab47
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bfb5c18f20319e6e6d345f28d3e1850714334b71
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62383993"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70216115"
 ---
-# <a name="error-directive-cc"></a>#error Yönergesi (C/C++)
-**#Error** yönergesi, bir kullanıcı tarafından belirtilen hata iletisini derleme zamanında yayar ve derlemeyi sona erdirir.
+# <a name="error-directive-cc"></a>#error yönergesi (C/C++)
+
+**#Error** yönergesi, derleme zamanında Kullanıcı tarafından belirtilen bir hata iletisini yayar ve sonra derlemeyi sonlandırır.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
-#errortoken-string
-```
+> **#error** *belirteç-dize*
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu yönergenin yaydığı hata iletisi içerir *belirteç dizesinde* parametresi. *Belirteç dizesinde* parametresi makro genişletme uygulanmaz değil. Bu yönerge, programdaki tutarsızlıkları ya da bir kısıtlamanın ihlalini geliştiriciye bildirmek için ön işleme sırasında en çok yararlı yönergedir. Aşağıdaki örnek, ön işleme sırasında hatanın işleyişini gösterir:
+Bu yönergenin yaydığı hata iletisinde, *token-string* parametresi bulunur. *Belirteç dize* parametresi makro genişletmeye tabi değildir. Bu yönerge, bir program tutarsızlığına veya bir kısıtlamanın ihlaline neden olan ön işleme sırasında en yararlı seçenektir. Aşağıdaki örnek, ön işleme sırasında hatanın işleyişini gösterir:
 
-```
+```cpp
 #if !defined(__cplusplus)
 #error C++ compiler required.
 #endif
@@ -36,4 +35,4 @@ Bu yönergenin yaydığı hata iletisi içerir *belirteç dizesinde* parametresi
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Ön işlemci Yönergeleri](../preprocessor/preprocessor-directives.md)
+[Önişlemci yönergeleri](../preprocessor/preprocessor-directives.md)

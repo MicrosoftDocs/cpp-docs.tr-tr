@@ -1,6 +1,6 @@
 ---
 title: __rdtsc
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __rdtsc
 helpviewer_keywords:
@@ -8,46 +8,46 @@ helpviewer_keywords:
 - rdtsc instruction
 - Read Time Stamp Counter instruction
 ms.assetid: e31d0e51-c9bb-42ca-bbe9-a81ffe662387
-ms.openlocfilehash: 6f30be3340ae1be237bb2f8a008a8cb60c7351f0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 837b68ca6ac63587cd43a7e8828777221c677e3c
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62396580"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70217142"
 ---
-# <a name="rdtsc"></a>__rdtsc
+# <a name="__rdtsc"></a>__rdtsc
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Oluşturur `rdtsc` form veya yönerge işlemcisi zaman damgasını döndürür. İşlemci zaman damgası, son sıfırlamadan sonraki saat döngüsü sayısını kaydeder.
+İşlemci zaman damgasını döndüren yönergeyiüretir.`rdtsc` İşlemci zaman damgası, son sıfırlamadan bu yana geçen saat döngüsü sayısını kaydeder.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```C
 unsigned __int64 __rdtsc();
 ```
 
-## <a name="return-value"></a>Dönüş Değeri
+## <a name="return-value"></a>Dönüş değeri
 
-İşaret sayısını temsil eden bir 64-bit işaretsiz tamsayı.
+Bir değer sayısını temsil eden 64 bitlik işaretsiz tamsayı.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İç|Mimari|
+|Alanlarla|Mimari|
 |---------------|------------------|
 |`__rdtsc`|x86, x64|
 
-**Üst bilgi dosyası** \<intrin.h >
+**Üst bilgi dosyası** \<Intrin. h >
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu yordam yalnızca bir iç öğe kullanılabilir.
+Bu yordam yalnızca bir iç öğe olarak kullanılabilir.
 
-Bu nesil donanım TSC değerin yorumu, x64 önceki sürümlerinde farklılık gösterir. Daha fazla bilgi için donanım kılavuzlarına bakın.
+Daha sonraki nesil donanımlar içindeki TSC değerinin yorumu, önceki x64 sürümlerindeki sürümünden farklıdır. Daha fazla bilgi için bkz. donanım el kitabı.
 
 ## <a name="example"></a>Örnek
 
-```
+```cpp
 // rdtsc.cpp
 // processor: x86, x64
 #include <stdio.h>
@@ -67,8 +67,8 @@ int main()
 3363423610155519 ticks
 ```
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)
+[Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)

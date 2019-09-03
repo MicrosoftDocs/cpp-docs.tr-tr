@@ -1,42 +1,40 @@
 ---
-title: high_method_prefix
-ms.date: 10/18/2018
+title: high_method_prefix içeri aktarma özniteliği
+ms.date: 08/29/2019
 f1_keywords:
 - high_method_prefix
 helpviewer_keywords:
 - high_method_prefix attribute
 ms.assetid: cacebf09-12f5-4919-ad40-939e206e340c
-ms.openlocfilehash: 1575b2e3fee461ee0e3987aaf1e770d0611e31ec
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 357ac528a921a9f864f0f7e30252281a4d10e33c
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62383762"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70219013"
 ---
-# <a name="highmethodprefix"></a>high_method_prefix
+# <a name="high_method_prefix-import-attribute"></a>high_method_prefix içeri aktarma özniteliği
 
-**C++ özgü**
+**C++Belirli**
 
-Üst düzey özelliklere ve yöntemlere adlandırma olarak kullanılacak bir ön ekini belirtir.
+Üst düzey özellikleri ve yöntemleri adlandırırken kullanılacak ön eki belirtir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
-high_method_prefix("Prefix")
-```
+> **#import** *tür kitaplığı* **high_method_prefix (** "*ön ek*" **)**
 
 ### <a name="parameters"></a>Parametreler
 
-*Ön eki*<br/>
-Kullanılacak önek.
+*Koy*\
+Kullanılacak ön ek.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, üst düzey hata işleme özelliklerine ve yöntemlerine bir ön eki adlı üye işlevleri tarafından sunulur. Tür kitaplığından adlarıdır.
+Varsayılan olarak, üst düzey hata işleme özellikleri ve yöntemleri, ön ek olmadan adlandırılan üye işlevleri tarafından gösterilir. Adlar tür kitaplığından.
 
-**END C++ özgü**
+**SONA C++ özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)<br/>
+[#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)\
 [#import yönergesi](../preprocessor/hash-import-directive-cpp.md)

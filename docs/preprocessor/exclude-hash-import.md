@@ -1,45 +1,43 @@
 ---
-title: exclude (#import)
-ms.date: 10/18/2018
+title: İçeri aktarma özniteliğini Dışla
+ms.date: 08/29/2019
 f1_keywords:
 - exclude
 helpviewer_keywords:
 - exclude attribute
 ms.assetid: 0883248a-d4bf-420e-9848-807b28fa976e
-ms.openlocfilehash: d6a320089d5954b2cf1d0d96ae1f37656f2ddd58
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6a3625ee0dd44f3e2731e1240fea5f3dd4ed109e
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62389326"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70218724"
 ---
-# <a name="exclude-import"></a>hariç tutmak (\#içeri aktarma)
+# <a name="exclude-import-attribute"></a>İçeri aktarma özniteliğini Dışla
 
-**C++ özgü**
+**C++Belirli**
 
 Öğeleri, oluşturulan tür kitaplığı üstbilgi dosyalarından çıkarır.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
-exclude("Name1"[, "Name2",...])
-```
+> **#import** *tür kitaplığı* **exclude (** "*name1*" [ **,** "*AD2*"...] **)**
 
 ### <a name="parameters"></a>Parametreler
 
-*Name1*<br/>
+*Name1*\
 Çıkarılacak ilk öğe.
 
-*Name2*<br/>
-Çıkarılacak ikinci öğe (gerekirse).
+*Name2*\
+Seçim Gerekirse dışarıda bırakılacak ikinci ve sonraki öğeler.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Tür kitaplıkları, sistem üstbilgileri veya diğer tür kitaplıklarında tanımlanan öğelerin tanımlarını içerebilir. Bu öznitelik, her biri çıkarılacak üst düzey tür kitaplığı öğesi olan herhangi bir sayıda bağımsız değişken alabilir.
+Tür kitaplıkları, sistem üstbilgileri veya diğer tür kitaplıklarında tanımlanan öğelerin tanımlarını içerebilir. Bu öznitelik, her biri dışlanacak en üst düzey bir tür kitaplığı öğesi olan herhangi bir sayıda bağımsız değişken alabilir.
 
-**END C++ özgü**
+**SONA C++ özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)<br/>
+[#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)\
 [#import yönergesi](../preprocessor/hash-import-directive-cpp.md)

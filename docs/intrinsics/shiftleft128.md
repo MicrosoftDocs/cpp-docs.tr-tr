@@ -1,27 +1,27 @@
 ---
 title: __shiftleft128
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __shiftleft128
 helpviewer_keywords:
 - __shiftleft128 intrinsic
 ms.assetid: 557b846a-8fb0-469d-91ac-1b1fad80dc2a
-ms.openlocfilehash: 5fcb797694c7a45dc4f2113f3d2ed4a2f578c894
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5da9ac81cedbdd24e10eb438892f88510c32ca24
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62390418"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70218009"
 ---
-# <a name="shiftleft128"></a>__shiftleft128
+# <a name="__shiftleft128"></a>__shiftleft128
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-İki 64-bit miktarlar olarak temsil edilen bir 128-bit miktarı kaydırır `LowPart` ve `HighPart`, sol tarafından belirtilen bit sayısı `Shift` ve yüksek 64 bit sonuç döndürür.
+2 64-bit miktarlar `LowPart` olarak temsil edilen 128 bitlik miktarı ve `HighPart`tarafından `Shift` belirtilen bir dizi bit ile sola kaydırır ve sonucun yüksek 64 bitlerini döndürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```C
 unsigned __int64 __shiftleft128(
    unsigned __int64 LowPart,
    unsigned __int64 HighPart,
@@ -29,36 +29,36 @@ unsigned __int64 __shiftleft128(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
-*Alt kısım*<br/>
-[in] Kaydırmak için 128 bit miktarı düşük 64 bit.
+*LowPart*\
+'ndaki SHIFT için 128 bit miktarın düşük 64 biti.
 
-*HighPart*<br/>
-[in] Yüksek 64 bit kaydırmak için 128 bit miktarı.
+*HighPart*\
+'ndaki SHIFT için 128 bit miktarın yüksek 64 biti.
 
-*Kaydırma*<br/>
-[in] Kaydırılacak bit sayısı.
+*Karakter*\
+'ndaki Kaydırılacak bit sayısı.
 
-## <a name="return-value"></a>Dönüş Değeri
+## <a name="return-value"></a>Dönüş değeri
 
-Sonuç yüksek 64 bit.
+Sonucun yüksek 64 bitleri.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İç|Mimari|
+|Alanlarla|Mimari|
 |---------------|------------------|
 |`__shiftleft128`|X64|
 
-**Üst bilgi dosyası** \<intrin.h >
+**Üst bilgi dosyası** \<Intrin. h >
 
 ## <a name="remarks"></a>Açıklamalar
 
-`Shift` Değerdir her zaman 64 bu nedenle, örneğin, çağırırsanız `__shiftleft128(1, 0, 64)`, işlev düşük bölümü kayar `0` BITS yüksek bir parçası olarak döndürmek ve sola `0` ve `1` aksi beklenebilir gibi.
+*SHIFT* değeri her zaman modül 64 ' dir; örneğin `__shiftleft128(1, 0, 64)`, çağırdığınızda, işlev düşük parçalı `0` bitleri sola kayacaktır ve bunun yerine `0` `1` yüksek bir kısmını döndürür, aksi takdirde beklenmeyebilir.
 
 ## <a name="example"></a>Örnek
 
-```
+```C
 // shiftleft128.c
 // processor: IPF, x64
 #include <stdio.h>
@@ -94,9 +94,9 @@ int main()
 0x100000000000000001 >> 1 = 0x080000000000000000
 ```
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[__shiftright128](../intrinsics/shiftright128.md)<br/>
-[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)
+[__kaydırıcı Tri, 128](../intrinsics/shiftright128.md)\
+[Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)

@@ -1,45 +1,43 @@
 ---
 title: raw_method_prefix
-ms.date: 03/27/2019
+ms.date: 08/29/2019
 f1_keywords:
 - raw_method_prefix
 helpviewer_keywords:
 - raw_method_prefix attribute
 ms.assetid: 71490313-af78-4bb2-b28a-eee67950d30b
-ms.openlocfilehash: 963e04752dcb797343550d9b89f778bfe0e8a593
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b1bc536507716e5c117718ec825bf7fe76c84b61
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62179873"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70216151"
 ---
-# <a name="rawmethodprefix"></a>raw_method_prefix
+# <a name="raw_method_prefix"></a>raw_method_prefix
 
-**C++ özgü**
+**C++Belirli**
 
-Ad çakışmalarını önlemek için farklı bir ön ekini belirtir.
+Ad çakışmalarını önlemek için farklı bir ön ek belirtir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
-raw_method_prefix("Prefix")
-```
+> **#import** *tür kitaplığı* **raw_method_prefix (** "*ön ek*" **)**
 
 ### <a name="parameters"></a>Parametreler
 
-*Ön eki*<br/>
-Kullanılacak önek.
+*Koy*\
+Kullanılacak ön ek.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Varsayılan öneki ile adlandırılan üye işlevleri tarafından düşük düzeydeki özellikleri ve yöntemleri sunulur **raw_** üst düzey hata işleme üye işlevleri ile ad çakışmalarını önlemek için.
+Alt düzey özellikler ve Yöntemler, üst düzey hata işleme üye işlevleri ile ad çakışmalarını önlemek için varsayılan bir **raw_** öneki kullanılarak adlandırılan üye işlevleri tarafından gösterilir.
 
 > [!NOTE]
-> Etkilerini **raw_method_prefix** özniteliği varlığını tarafından değiştirilmeyecek [raw_interfaces_only](raw-interfaces-only.md) özniteliği. **Raw_method_prefix** her zaman önceliklidir `raw_interfaces_only` belirtilirken bir önek. Her iki öznitelik aynı kullanılıyorsa `#import` ifade, sonra tarafından belirtilen önek **raw_method_prefix** özniteliği kullanılır.
+> **Raw_method_prefix** özniteliğinin etkileri [raw_interfaces_only](raw-interfaces-only.md) özniteliğinin varlığı tarafından değiştirilmez. **Raw_method_prefix** her zaman bir ön ek `raw_interfaces_only` belirtmekten önceliklidir. Her iki öznitelik de aynı `#import` bildirimde kullanılıyorsa, **raw_method_prefix** özniteliği tarafından belirtilen önek kullanılır.
 
-**END C++ özgü**
+**SONA C++ özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)<br/>
+[#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)\
 [#import yönergesi](../preprocessor/hash-import-directive-cpp.md)

@@ -1,52 +1,52 @@
 ---
 title: __ud2
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __ud2
 helpviewer_keywords:
 - UD2 instruction
 - __ud2 intrinsic
 ms.assetid: 0831cd5a-8b65-402e-bb57-11e1d5d7ffd2
-ms.openlocfilehash: a36ab5c25ac9138b2a4d6810cc2a339e534f1695
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b5aa20804099af4d75dcc62a5e62ccc0d4a09566
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62390184"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70219763"
 ---
-# <a name="ud2"></a>__ud2
+# <a name="__ud2"></a>__ud2
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Tanımlanmayan bir yönerge oluşturur.
+Tanımsız bir yönerge üretir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```C
 void __ud2();
 ```
 
 ## <a name="remarks"></a>Açıklamalar
 
-İşlemci, tanımlanmayan bir yönerge yürütmeyi bir geçersiz işlem kodu özel durum başlatır.
+Tanımlanmamış bir yönerge çalıştırırsanız, işlemci geçersiz bir Opcode özel durumu oluşturur.
 
-`__ud2` İşlev, eşdeğer `UD2` makine yönerge ve yalnızca çekirdek modunda kullanılabilir. Belge için daha fazla bilgi için arama "Intel mimarisi yazılım geliştirici el ile 2 birim: Yönerge kümesi başvurusu"konumunda [Intel Corporation'da](https://software.intel.com/articles/intel-sdm) site.
+`__ud2` İşlevi `UD2` makine yönergesine eşdeğerdir ve yalnızca çekirdek modunda kullanılabilir. Daha fazla bilgi için belgeyi arayın, "Intel mimarisi yazılım geliştiricisi El Ile, birim 2: Yönerge kümesi başvurusu, " [Intel Corporation](https://software.intel.com/articles/intel-sdm) sitesinde.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İç|Mimari|
+|Alanlarla|Mimari|
 |---------------|------------------|
 |`__ud2`|x86, x64|
 
-**Üst bilgi dosyası** \<intrin.h >
+**Üst bilgi dosyası** \<Intrin. h >
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, özel durum harekete tanımlanmayan bir yönerge yürütür. Özel durum işleyicisi, sıfırdan bir dönüş kodu sonra değişir.
+Aşağıdaki örnek, bir özel durum harekete geçiren tanımsız bir yönerge yürütür. Ardından, özel durum işleyicisi, dönüş kodunu sıfırdan bir olarak değiştirir.
 
-```
+```cpp
 // __ud2_intrinsic.cpp
 #include <stdio.h>
 #include <intrin.h>
@@ -84,4 +84,4 @@ After __ud2().  Return code = 1.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)
+[Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)

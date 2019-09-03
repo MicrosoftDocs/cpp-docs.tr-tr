@@ -1,6 +1,6 @@
 ---
-title: fenv_access
-ms.date: 03/12/2018
+title: fenv_access pragması
+ms.date: 08/29/2019
 f1_keywords:
 - vc-pragma.fenv_access
 - fenv_access_CPP
@@ -8,33 +8,34 @@ helpviewer_keywords:
 - pragmas, fenv_access
 - fenv_access pragma
 ms.assetid: 2ccea292-0ae4-42ce-9c67-cc189299857b
-ms.openlocfilehash: 507e78dd9f9571cc9ce44d7fd91e78b1c955ba73
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c8e66881bde12df28bf24e18230471cb4caca792
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62389261"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70218598"
 ---
-# <a name="fenvaccess"></a>fenv_access
-Devre dışı bırakır (**üzerinde**) ya da etkinleştirir (**kapalı**) kayan nokta ortam değişebilir iyileştirmeleri, testleri ve modu değişiklikleri bayrak.
+# <a name="fenv_access-pragma"></a>fenv_access pragması
+
+Kayan nokta ortam bayrağı testlerini ve moddeğişikliklerini değiştirecek (**Açık**) veya mümkün olan iyileştirmeleri devre dışı bırakır.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **#pragma fenv_access (** { **üzerinde** | **kapalı** } **)**
+> **#pragma fenv_access (** { **on** | **off** } **)**
 
 ## <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, **fenv_access** olduğu **kapalı**. Derleyici, kabul edilebilir değilse kodunuzu erişemeyebilir veya kayan nokta ortamını işleyin ve ardından birçok kayan nokta kodu en iyi duruma getirme gerçekleştirebilirsiniz. Ayarlama **fenv_access** için **üzerinde** derleyici kodunuzu kayan nokta ortamın durumu bayrakları, özel durumlar, test etmek için ya da Denetim modu bayrakları ayarlamanızı erişimi olduğunu bildirmek için. Böylece kodunuzu kayan nokta ortam tutarlı bir şekilde erişebilir, derleyici bu iyileştirmeler devre dışı bırakır.
+Varsayılan olarak, **fenv_access** **kapalıdır**. Derleyici, kodunuzun kayan nokta ortamına erişeceğini veya onu işlemez olduğunu varsayabilir ve birçok kayan nokta kodu iyileştirmesi gerçekleştirebilir. Derleyiciye kodunuzun kayan nokta ortamına eriştiğini, test durum bayraklarını, özel durumları veya Denetim modu bayraklarını ayarlamak için **fenv_access** olarak **Açık** olarak ayarlayın. Derleyici bu iyileştirmeleri devre dışı bırakarak kodunuzun kayan nokta ortamına tutarlı bir şekilde erişmesini sağlayabilir.
 
-Kayan nokta davranışı hakkında daha fazla bilgi için bkz. [FP (Floating-Point davranışını belirtin)](../build/reference/fp-specify-floating-point-behavior.md).
+Kayan nokta davranışı hakkında daha fazla bilgi için bkz. [/FP (kayan nokta davranışını belirt)](../build/reference/fp-specify-floating-point-behavior.md).
 
-Tabi olan en iyi duruma getirme türlerini **fenv_access** şunlardır:
+**Fenv_access** 'e tabi olan iyileştirme türleri şunlardır:
 
-- Genel Genel alt ifade ortadan kaldırma
+- Küresel genel alt ifade eleme
 
-- Kod Ara
+- Kod hareketi
 
-- Sabit bir Katlama
+- Sabit katlama
 
 Diğer kayan nokta pragmaları şunlardır:
 
@@ -44,11 +45,11 @@ Diğer kayan nokta pragmaları şunlardır:
 
 ## <a name="examples"></a>Örnekler
 
-Bu örnekte ayarlar **fenv_access** için **üzerinde** 24 bit duyarlık kayan nokta denetim kaydı ayarlamak için:
+Bu örnek, 24 bit duyarlık için kayan nokta denetim kaydını ayarlamak üzere **fenv_access** öğesini **on** olarak ayarlar:
 
 ```cpp
 // pragma_directive_fenv_access_x86.cpp
-// compile with: /O2
+// compile with: /O2 /arch:IA32
 // processor: x86
 #include <stdio.h>
 #include <float.h>
@@ -71,14 +72,14 @@ int main() {
 ```
 
 ```Output
-out=9.999999776482582e-003
+out=9.999999776482582e-03
 ```
 
-Çıkarırsanız `#pragma fenv_access (on)` önceki örnekten derleyici denetim modunu kullanmaz derleme zamanı değerlendirmesi, çünkü çıkış farklı olduğunu unutmayın.
+Önceki örnekten yorum `#pragma fenv_access (on)` yaptıysanız, derleyici, Denetim modunu kullanmayan derleme zamanı değerlendirmesi yaptığından, çıktının farklı olduğunu unutmayın.
 
 ```cpp
 // pragma_directive_fenv_access_2.cpp
-// compile with: /O2
+// compile with: /O2 /arch:IA32
 #include <stdio.h>
 #include <float.h>
 
@@ -98,9 +99,9 @@ int main() {
 ```
 
 ```Output
-out=1.000000000000000e-002
+out=1.000000000000000e-02
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+[Pragma yönergeleri ve __pragma anahtar sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

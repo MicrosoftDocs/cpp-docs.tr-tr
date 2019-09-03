@@ -1,55 +1,54 @@
 ---
 title: __svm_vmload
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __svm_vmload
 helpviewer_keywords:
 - __svm_vmload intrinsic
 - VMLOAD instruction
 ms.assetid: b46a5592-db76-4ffc-8694-2f3494e28bed
-ms.openlocfilehash: 282f1c005c7eb59b2c590c70b38233c88c664e07
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: da6ca9786b9c7e5041b9a8ca908d567b16176436
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62390236"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70219815"
 ---
-# <a name="svmvmload"></a>__svm_vmload
+# <a name="__svm_vmload"></a>__svm_vmload
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-İşlemci durumu kümesini, belirtilen sanal makine denetim bloğu (VMCB) yükler.
+Belirtilen sanal makine denetim bloğundan (VMCB) işlemci durumunun bir alt kümesini yükler.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```C
 void __svm_vmload(
    size_t VmcbPhysicalAddress
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
-|Parametre|Açıklama|
-|---------------|-----------------|
-|*VmcbPhysicalAddress*|[in] VMCB fiziksel adresi.|
+*VmcbPhysicalAddress*\
+'ndaki VMCB 'nin fiziksel adresi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-`__svm_vmload` İşlev, eşdeğer `VMLOAD` makine yönergesi. Bu işlev, bir konuk işletim sistemi ve uygulamaları ile bir konağın sanal makine İzleyici etkileşimi destekler. Belge için daha fazla bilgi için arama "AMD64 mimarisi Programcı el ile birim 2: Sistem programlama,"belge numarasını 24593, düzeltme 3.11, adresindeki [AMD corporation](https://developer.amd.com/resources/developer-guides-manuals/) site.
+İşlev, `VMLOAD` makine yönergesine eşdeğerdir. `__svm_vmload` Bu işlev, bir konağın sanal makine izleyicisinin Konuk işletim sistemiyle ve uygulamalarına yönelik etkileşimini destekler. Daha fazla bilgi için "AMD64 mimari programcı 'nin El Ile birim 2 ' yi arayın. Sistem programlama, "belge numarası 24593, düzeltme 3,11, [AMD Corporation](https://developer.amd.com/resources/developer-guides-manuals/) sitesinde.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İç|Mimari|
+|Alanlarla|Mimari|
 |---------------|------------------|
 |`__svm_vmload`|x86, x64|
 
-**Üst bilgi dosyası** \<intrin.h >
+**Üst bilgi dosyası** \<Intrin. h >
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)<br/>
-[__svm_vmrun](../intrinsics/svm-vmrun.md)<br/>
+[Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)\
+[__svm_vmrun](../intrinsics/svm-vmrun.md)\
 [__svm_vmsave](../intrinsics/svm-vmsave.md)

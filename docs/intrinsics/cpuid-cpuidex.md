@@ -1,6 +1,6 @@
 ---
 title: __cpuid, __cpuidex
-ms.date: 03/22/2018
+ms.date: 09/02/2019
 f1_keywords:
 - __cpuid_cpp
 - __cpuid
@@ -9,22 +9,22 @@ helpviewer_keywords:
 - cpuid instruction
 - cpuid intrinsic
 ms.assetid: f8c344d3-91bf-405f-8622-cb0e337a6bdc
-ms.openlocfilehash: c66a3fe7b923b214c4cf2bd84fc03f535d5f4973
-ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
+ms.openlocfilehash: ab814527c8019dd7d6b1e1eb620af0273f270e06
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66449991"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70216836"
 ---
-# <a name="cpuid-cpuidex"></a>__cpuid, __cpuidex
+# <a name="__cpuid-__cpuidex"></a>__cpuid, __cpuidex
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Oluşturur `cpuid` x86 ve x64 kullanılabilir yönergesi. Bu yönerge, desteklenen özellikler hakkında bilgi için işlemci ve CPU türünü sorgular.
+X86 ve x64 üzerinde kullanılabilen yönergeyiüretir.`cpuid` Bu yönerge, desteklenen özellikler ve CPU türü hakkında bilgi için işlemciyi sorgular.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```cpp
+```C
 void __cpuid(
    int cpuInfo[4],
    int function_id
@@ -39,43 +39,43 @@ void __cpuidex(
 
 ### <a name="parameters"></a>Parametreler
 
-[out] *cpuInfo*<br/>
-CPU desteklenen özellikler hakkında EAX, EBX, ECX ve EDX döndürülen bilgileri içeren bir dört tamsayı dizisi.
+*Cpuınfo*\
+dışı EAX, EBX, ECX ve EDX ' te döndürülen ve CPU 'nun desteklenen özellikleriyle ilgili bilgileri içeren dört tamsayının dizisi.
 
-[in] *function_id*<br/>
-Bilgi almak için EAX geçirilen belirten bir kod.
+*function_id*\
+'ndaki Alınacak bilgileri belirten ve EAX 'e geçirilen bir kod.
 
-[in] *subfunction_id*<br/>
-ECX içine geçirilen almak üzere bilgi belirten ek bir kod.
+*subfunction_id*\
+'ndaki ECX içinde alınacak bilgileri belirten ek bir kod.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İç|Mimari|
+|Alanlarla|Mimari|
 |---------------|------------------|
 |`__cpuid`|x86, x64|
 |`__cpuidex`|x86, x64|
 
-**Üst bilgi dosyası** \<intrin.h >
+**Üst bilgi dosyası** \<Intrin. h >
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu iç tarafından döndürülen CPU bilgilerini ve desteklenen özellikleri depolar `cpuid` yönergesinde *cpuInfo*, dolu dört 32-bit tamsayı dizisi EAX, EBX, ECX ve EDX değerleriyle (yani kaydeder Sipariş). Döndürülen bilgileri olarak geçirilen değere bağlı olarak farklı bir anlama sahip *function_id* parametresi. Bilgiler çeşitli değerleri ile döndürülen *function_id* işlemci bağlıdır.
+Bu iç öğe, `cpuid` *cpuınfo*'daki yönerge tarafından döndürülen desteklenen özellikleri ve CPU bilgilerini, EAX, EBX, ecx ve EDX yazmaçlarının (bu sırayla) değerleriyle doldurulmuş 4 32 bitlik tamsayılar dizisi olarak depolar. Döndürülen bilgilerin *function_id* parametresi olarak geçirilen değere bağlı olarak farklı bir anlamı vardır. Çeşitli *function_id* değerleriyle döndürülen bilgiler, işlemciye bağımlıdır.
 
-`__cpuid` İç çağırmadan önce ECX kayıt temizler `cpuid` yönergesi. `__cpuidex` İç ECX kasaya değerini ayarlar *subfunction_id* ürettiği önce `cpuid` yönergesi. Bu, işlemci hakkında ek bilgi toplamanızı sağlar.
+İç öğe, `cpuid` yönergeyi çağırmadan önce ecx kaydını temizler. `__cpuid` İç öğe, `cpuid` yönergeyi oluşturmadan önce ecx yazmacın değerini *subfunction_id* olarak ayarlar. `__cpuidex` İşlemci hakkında ek bilgi toplamanıza olanak sağlar.
 
-Belirli parametreleri ve Intel işlemci üzerinde bu iç tarafından döndürülen değerler hakkında daha fazla bilgi için belgelere bakın `cpuid` yönergesinde [Intel 64 ve IA-32 mimarileri yazılım geliştiriciler el ile 2. birim: Yönerge kümesi başvurusu](https://go.microsoft.com/fwlink/p/?LinkID=510021) ve [Intel mimarisi yönerge kümesi programlama başvurusu uzantıları](https://go.microsoft.com/fwlink/p/?LinkID=506627). Intel belgeleri kullanım koşulları "yaprak" ve "subleaf" *function_id* ve *subfunction_id* EAX ve ECX geçirilen parametreler.
+Kullanılacak belirli parametreler ve bu iç yapı tarafından Intel işlemcilerde döndürülen değerler hakkında daha fazla bilgi için, `cpuid` [Intel 64 ve IA-32 mimarileri yazılım geliştiricilerinin el ile sağladığı yönergeyle ilgili belgelere bakın 2. birim: Yönerge kümesi başvurusu](https://go.microsoft.com/fwlink/p/?LinkID=510021) ve [Intel mimari yönerge kümesi uzantıları programlama başvurusu](https://go.microsoft.com/fwlink/p/?LinkID=506627). Intel belgeleri, EAX ve ECX içinde geçirilen *function_id* ve *subfunction_id* parametreleri için "yaprak" ve "alt yaprak" terimlerini kullanır.
 
-Belirli parametreleri ve AMD işlemciler üzerinde bu iç tarafından döndürülen değerler hakkında daha fazla bilgi için belgelere bakın `cpuid` yönerge AMD64 mimarisi Programcı el ile birim 3'te: Genel amaçlı ve sistem yönergeleri ve belirli bir işlemci aileleri için düzeltme Kılavuzlar. Bu belgelere ve diğer bilgilere bağlantılar için bkz: AMD [Geliştirici kılavuzlar, Kılavuzlar ve ISA belgeleri](https://go.microsoft.com/fwlink/p/?LinkId=510023) sayfası. İçin AMD belgeleri kullanan işlevi koşulları "number" ve "yürütülemiyor number" *function_id* ve *subfunction_id* EAX ve ECX geçirilen parametreler.
+Kullanılacak belirli parametreler ve AMD işlemcilerde bu yapı birimleri tarafından döndürülen değerler hakkında daha fazla bilgi için AMD64 mimari programcı 'nin el ile birim 3 `cpuid` ' teki yönergeyle ilgili belgelere bakın: Genel amaçlı ve sistem yönergeleri ve belirli işlemci aileleri için düzeltme kılavuzlarında. Bu belgelerin ve diğer bilgilerin bağlantıları için bkz. AMD [geliştirici kılavuzları, el kitabı &AMP; ISA belgeleri](https://go.microsoft.com/fwlink/p/?LinkId=510023) sayfası. AMD belgeleri, EAX ve ECX içinde geçirilen *function_id* ve *subfunction_id* parametreleri için "işlev numarası" ve "alt işlev numarası" terimlerini kullanır.
 
-Zaman *function_id* bağımsız değişken: 0, *cpuInfo*[0] döndürür en yüksek kullanılabilir genişletilmiş *function_id* işlemcisi tarafından desteklenen bir değer. İşlemci üreticisi kodlandığını *cpuInfo*[1], *cpuInfo*[2] ve *cpuInfo*[3].
+*Function_id* bağımsız değişkeni 0 olduğunda, *cpuınfo*[0], işlemcinin desteklediği en yüksek kullanılabilir genişletilmesiz *function_id* değerini döndürür. İşlemci üreticisi, *Cpuınfo*[1], *cpuınfo*[2] ve *cpuınfo*[3] içinde kodlandı.
 
-Destek uzantılarına ve CPU özelliklerine belirli yönerge kümesi için kodlanmış *cpuInfo* için daha yüksek döndürülen sonuç *function_id* değerleri. Daha fazla bilgi için yukarıda bağlantı kılavuzları ve aşağıdaki kod örneği bakın.
+Belirli yönerge kümesi uzantıları ve CPU özellikleri için destek, daha yüksek *function_id* değerleri Için döndürülen *cpuınfo* sonuçlarında kodlanır. Daha fazla bilgi için, yukarıda bağlanan kılavuzlara ve aşağıdaki örnek koda bakın.
 
-Bazı işlemcileri genişletilmiş işlevi CPUID bilgisi destekler. Destekleniyorsa, *function_id* 0x80000000 değerleri bilgi döndürmek için kullanılabilir. İzin verilen maksimum anlamlı değer belirlemek için ayarlanmış *function_id* 0x80000000 için. En büyük değerini *function_id* genişletilmiş işlevlerin yazılacağı için desteklenen *cpuInfo*[0].
+Bazı işlemciler genişletilmiş Işlev CPUıD bilgilerini destekler. Destekleniyorsa, 0x80000000 içindeki *function_id* değerleri, bilgi döndürmek için kullanılabilir. İzin verilen en büyük anlamlı değeri öğrenmek için *function_id* öğesini 0x80000000 olarak ayarlayın. Genişletilmiş işlevler için desteklenen *function_id* en büyük değeri, *cpuınfo*[0] ' ya yazılacak.
 
 ## <a name="example"></a>Örnek
 
-Bu örnek, bazı bilgiler aracılığıyla gösterir `__cpuid` ve `__cpuidex` iç. Uygulama geçerli işlemcisi tarafından desteklenen yönerge kümesi uzantıları listeler. Çıktı, belirli bir işlemci için bir olası sonucu gösterir.
+Bu örnekte, `__cpuid` ve `__cpuidex` iç bilgileri aracılığıyla kullanılabilen bazı bilgiler gösterilmektedir. Uygulama, geçerli işlemci tarafından desteklenen yönerge kümesi uzantılarını listeler. Çıktı, belirli bir işlemci için olası bir sonucu gösterir.
 
 ```cpp
 // InstructionSet.cpp
@@ -396,8 +396,8 @@ XOP not supported
 XSAVE supported
 ```
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)
+[Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)

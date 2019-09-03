@@ -1,48 +1,48 @@
 ---
 title: __readcr8
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __readcr8
 helpviewer_keywords:
 - __readcr8 intrinsic
 ms.assetid: fce16953-87ff-4fbe-8081-7962b97ae46c
-ms.openlocfilehash: d4c0b22d38d725566062d2da98839579c22d571c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 525775fde4cb96cecfcabef878780d5a2aa6743a
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62396463"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70221236"
 ---
-# <a name="readcr8"></a>__readcr8
+# <a name="__readcr8"></a>__readcr8
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-CR8 yazmacını okuyarak ve değerini döndürür.
+CR8 yazmacın okur ve değerini döndürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```C
 unsigned __int64 __readcr8(void);
 ```
 
-## <a name="return-value"></a>Dönüş Değeri
+## <a name="return-value"></a>Dönüş değeri
 
-CR8 kayıttaki değeri.
+CR8 kaydındaki değer.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İç|Mimari|
+|Alanlarla|Mimari|
 |---------------|------------------|
 |`__readcr8`|X64|
 
-**Üst bilgi dosyası** \<intrin.h >
+**Üst bilgi dosyası** \<Intrin. h >
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu iç yalnızca çekirdek modunda kullanılabilir ve yordam yalnızca bir iç öğe olarak kullanılabilir.
+İç öğe yalnızca çekirdek modunda kullanılabilir ve yordam yalnızca iç öğe olarak kullanılabilir.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)
+[Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)

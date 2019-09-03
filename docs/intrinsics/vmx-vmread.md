@@ -1,64 +1,65 @@
 ---
 title: __vmx_vmread
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __vmx_vmread
 helpviewer_keywords:
 - VMREAD instruction
 - __vmx_vmread intrinsic
 ms.assetid: 08bdd7a0-6435-4ea6-b9a0-f592d870e5aa
-ms.openlocfilehash: 5c7b72ba3bf1bd60324704b774bcedaf5612240f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 409835ac29d6f2e839de62291cc5b142166a465c
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62390054"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70219438"
 ---
-# <a name="vmxvmread"></a>__vmx_vmread
+# <a name="__vmx_vmread"></a>__vmx_vmread
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Belirtilen alan geçerli sanal makine denetim yapısından (Windows VMCS) okur ve belirtilen konuma yerleştirir.
+Geçerli sanal makine denetim yapısından (VMCS) belirtilen bir alanı okur ve belirtilen konuma koyar.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```C
 unsigned char __vmx_vmread(
    size_t Field,
    size_t *FieldValue
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
-|Parametre|Açıklama|
-|---------------|-----------------|
-|*Alan*|[in] Okunacak Windows VMCS alan.|
-|*FieldValue*|[in] Bir işaretçi değeri depolamak için konum için okuma tarafından belirtilen Windows VMCS alanından `Field` parametresi.|
+*Alanla*\
+'ndaki Okunacak VMCS alanı.
 
-## <a name="return-value"></a>Dönüş Değeri
+*Alandeğeri*\
+'ndaki `Field` Parametresi tarafından belirtilen VMCS alanından okunan değerin depolandığı konuma yönelik bir işaretçi.
+
+## <a name="return-value"></a>Dönüş değeri
 
 |Değer|Açıklama|
 |-----------|-------------|
 |0|İşlem başarılı oldu.|
-|1.|İşlem başarısız oldu bulunan genişletilmiş durumundaki `VM-instruction error field` , geçerli Windows VMCS.|
-|2|İşlem durumu olmadan başarısız oldu.|
+|1\.|İşlem, geçerli VNET `VM-instruction error field` 'lerin içinde kullanılabilir olan genişletilmiş durumla başarısız oldu.|
+|2|İşlem durum kullanılabilir olmadan başarısız oldu.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`__vmx_vmread` İşlev, eşdeğer `VMREAD` makine yönergesi. Değerini `Field` Intel belgelerinde açıklanan bir kodlanmış alan dizini parametredir. Daha fazla bilgi için "Intel Sanallaştırma teknik belirtimi IA-32 Intel mimari," Belge ara adresindeki sayı C97063 002 belge [Intel Corporation'da](https://software.intel.com/articles/intel-sdm) site ve ardından bu belgenin ek C başvurun .
+İşlev, `VMREAD` makine yönergesine eşdeğerdir. `__vmx_vmread` `Field` Parametresinin değeri, Intel belgelerinde açıklanan, kodlanmış bir alan dizinidir. Daha fazla bilgi için, [Intel Corporation](https://software.intel.com/articles/intel-sdm) SITESINDE "ıa-32 Intel mimarisi Için Intel Sanallaştırma teknik belirtimi" başlıklı Ek C 'yi arayın.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İç|Mimari|
+|Alanlarla|Mimari|
 |---------------|------------------|
 |`__vmx_vmread`|X64|
 
-**Üst bilgi dosyası** \<intrin.h >
+**Üst bilgi dosyası** \<Intrin. h >
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)<br/>
+[Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)\
 [__vmx_vmwrite](../intrinsics/vmx-vmwrite.md)

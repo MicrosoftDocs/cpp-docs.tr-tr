@@ -1,64 +1,68 @@
 ---
 title: __vmx_vmwrite
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __vmx_vmwrite
 helpviewer_keywords:
 - __vmx_vmwrite intrinsic
 - VMWRITE instruction
 ms.assetid: 88139792-fd3f-4210-97ca-9d84f43a0252
-ms.openlocfilehash: e52b1f181f00ce013a111d1a5a62abeff544e20a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: cdc5590858f160db24bf75ef11c8f20b204a3152
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62389989"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70219397"
 ---
-# <a name="vmxvmwrite"></a>__vmx_vmwrite
+# <a name="__vmx_vmwrite"></a>__vmx_vmwrite
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Belirtilen değer geçerli bir sanal makine denetim yapısı (Windows VMCS) belirtilen alan yazar.
+Belirtilen değeri geçerli sanal makine denetim yapısında (VMCS) belirtilen alana yazar.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```C
 unsigned char __vmx_vmwrite(
    size_t Field,
    size_t FieldValue
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
-|Parametre|Açıklama|
-|---------------|-----------------|
-|*Alan*|[in] Yazmak için Windows VMCS alan.|
-|*FieldValue*|[in] Windows VMCS alanına yazılacak değer.|
+*Alanla*\
+'ndaki Yazılacak VMCS alanı.
 
-## <a name="return-value"></a>Dönüş Değeri
+*Alandeğeri*\
+'ndaki VMCS alanına yazılacak değer.
 
-İşlem başarılı 0.
+## <a name="return-value"></a>Dönüş değeri
 
-1 işlem başarısız oldu bulunan genişletilmiş durumundaki `VM-instruction error field` , geçerli Windows VMCS.
+0
+İşlem başarılı oldu.
 
-2 işlem durumu olmadan başarısız oldu.
+1
+İşlem, geçerli VNET `VM-instruction error field` 'lerin içinde kullanılabilir olan genişletilmiş durumla başarısız oldu.
+
+iki
+İşlem durum kullanılabilir olmadan başarısız oldu.
 
 ## <a name="remarks"></a>Açıklamalar
 
-`__vmx_vmwrite` İşlev, eşdeğer `VMWRITE` makine yönergesi. Değerini `Field` Intel belgelerinde açıklanan bir kodlanmış alan dizini parametredir. Daha fazla bilgi için "Intel Sanallaştırma teknik belirtimi IA-32 Intel mimari," Belge ara adresindeki sayı C97063 002 belge [Intel Corporation'da](https://software.intel.com/articles/intel-sdm) site ve ardından, söz konusu ek C başvurun Belge.
+İşlev, `VMWRITE` makine yönergesine eşdeğerdir. `__vmx_vmwrite` `Field` Parametresinin değeri, Intel belgelerinde açıklanan, kodlanmış bir alan dizinidir. Daha fazla bilgi için, [Intel Corporation](https://software.intel.com/articles/intel-sdm) SITESINDE "ıa-32 Intel mimarisi Için Intel Sanallaştırma teknik belirtimi" başlıklı Ek C 'yi arayın.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İç|Mimari|
+|Alanlarla|Mimari|
 |---------------|------------------|
 |`__vmx_vmwrite`|X64|
 
-**Üst bilgi dosyası** \<intrin.h >
+**Üst bilgi dosyası** \<Intrin. h >
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)<br/>
+[Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)\
 [__vmx_vmread](../intrinsics/vmx-vmread.md)

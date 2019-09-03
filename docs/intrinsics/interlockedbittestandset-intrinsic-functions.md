@@ -1,10 +1,13 @@
 ---
-title: _interlockedbittestandset iç işlevleri
-ms.date: 12/17/2018
+title: _ınterlockedbittestandset iç işlevleri
+ms.date: 09/02/2019
 f1_keywords:
 - _interlockedbittestandset_cpp
 - _interlockedbittestandset_HLEAcquire
 - _interlockedbittestandset64
+- _interlockedbittestandset64_acq
+- _interlockedbittestandset64_nf
+- _interlockedbittestandset64_rel
 - _interlockedbittestandset
 - _interlockedbittestandset_rel
 - _interlockedbittestandset64_HLEAcquire
@@ -18,22 +21,22 @@ helpviewer_keywords:
 - _interlockedbittestandset64 intrinsic
 - lock_bts instruction
 ms.assetid: b1b7e334-53ea-48cf-ba60-5fa3ef51a1fc
-ms.openlocfilehash: 3da533b3cf2ab8f396e4ba284cc0bf921a5c80b5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9679abf674b5ef366818e73504c3c8c80c5d8ed7
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62396800"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70217753"
 ---
-# <a name="interlockedbittestandset-intrinsic-functions"></a>_interlockedbittestandset iç işlevleri
+# <a name="_interlockedbittestandset-intrinsic-functions"></a>_ınterlockedbittestandset iç işlevleri
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Bit arabirimini inceleyen bir yönerge oluşturur `b` adresinin `a` ve 1 olarak ayarlamadan önce geçerli değeri döndürür.
+`b` Adresin`a` bitini incelemek için bir yönerge oluşturun ve 1 olarak ayarlamadan önce geçerli değerini döndürün.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```C
 unsigned char _interlockedbittestandset(
    long *a,
    long b
@@ -62,6 +65,18 @@ unsigned char _interlockedbittestandset64(
    __int64 *a,
    __int64 b
 );
+unsigned char _interlockedbittestandset64_acq(
+   __int64 *a,
+   __int64 b
+);
+unsigned char _interlockedbittestandset64_nf(
+   __int64 *a,
+   __int64 b
+);
+unsigned char _interlockedbittestandset64_rel(
+   __int64 *a,
+   __int64 b
+);
 unsigned char _interlockedbittestandset64_HLEAcquire(
    __int64 *a,
    __int64 b
@@ -72,41 +87,42 @@ unsigned char _interlockedbittestandset64_HLERelease(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
-*a*<br/>
-[in] İncelemek için bellek işaretçisi.
+*a*\
+'ndaki İncelenecek bellek işaretçisi.
 
-*b*<br/>
-[in] Test etmek için bit konumu.
+*kenarı*\
+'ndaki Sınanacak bit konumu.
 
-## <a name="return-value"></a>Dönüş Değeri
+## <a name="return-value"></a>Dönüş değeri
 
-Konumunda bit değeri `b` önce ayarlanır.
+Ayarlanmadan önceki konumdaki `b` bit değeri.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İç|Mimari|Üstbilgi|
+|Alanlarla|Mimari|Üstbilgi|
 |---------------|------------------|------------|
-|`_interlockedbittestandset`|x86, ARM, x64|\<intrin.h >|
-|`_interlockedbittestandset_acq`, `_interlockedbittestandset_nf`, `_interlockedbittestandset_rel`|ARM|\<intrin.h >|
-|`_interlockedbittestandset_HLEAcquire`, `_interlockedbittestandset_HLERelease`|x86, x64|\<immintrin.h >|
-|`_interlockedbittestandset64`|X64|\<intrin.h >|
-|`_interlockedbittestandset64_HLEAcquire`, `_interlockedbittestandset64_HLERelease`|X64|\<immintrin.h >|
+|`_interlockedbittestandset`|x86, ARM, x64, ARM64|\<Intrin. h >|
+|`_interlockedbittestandset_acq`, `_interlockedbittestandset_nf`, `_interlockedbittestandset_rel`|ARM, ARM64|\<Intrin. h >|
+|`_interlockedbittestandset64_acq`, `_interlockedbittestandset64_nf`, `_interlockedbittestandset64_rel`|ARM64|\<Intrin. h >|
+|`_interlockedbittestandset_HLEAcquire`, `_interlockedbittestandset_HLERelease`|x86, x64|\<ımintrin. h >|
+|`_interlockedbittestandset64`|x64, ARM64|\<Intrin. h >|
+|`_interlockedbittestandset64_HLEAcquire`, `_interlockedbittestandset64_HLERelease`|X64|\<ımintrin. h >|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu iç x86 ve x64 işlemci üzerinde kullanan `lock bts` yönerge okuyup belirtilen bit 1 olarak ayarlayın. Atomik bir işlemdir.
+X86 ve x64 işlemcilerde bu iç bilgiler, belirtilen biti `lock bts` okumak ve 1 olarak ayarlamak için yönergesini kullanır. İşlem atomik.
 
-ARM işlemci üzerinde yapı içleri ile kullanan `_acq` ve `_rel` sonekleri edinme ve sürüm semantiği gibi kritik bir bölüm başında ve sonunda. ARM iç bilgileri ile bir `_nf` ("hiçbir sınır") soneki bellek önünde bir engel hareket değil.
+ARM ve ARM64 işlemcilerde, önemli bir bölümün başındaki ve `_acq` sonundaki `_rel` gibi alma ve bırakma semantiğinin ve son eklerini kullanın. `_nf` ("Sınır yok") son ek olan ARM iç bilgileri bellek engeli olarak davranmaz.
 
-Donanım kilit eleme (HLE) yönergeleri yapı içleri ile destekleyen Intel işlemci üzerinde `_HLEAcquire` ve `_HLERelease` sonekleri kapsayacak performans donanım kilit yazma adımda ortadan kaldırarak hızlandırabilir işlemci bir ipucu verir. Bu iç HLE desteklemeyen işlemciler üzerinde çağrılırsa ipucu yoksayıldı.
+Donanım kilidi (HLE) talimatlarını destekleyen Intel işlemcilerde, `_HLEAcquire` ve `_HLERelease` son ekler, donanımda bir kilit yazma adımını ortadan kaldırarak işlemciyi hızlandıran bir ipucu içerir. Bu iç bilgiler HLE 'yı desteklemeyen işlemcilerde çağrılırsa, ipucu yok sayılır.
 
-Bu yordamlar, yalnızca iç öğe olarak kullanılabilir.
+Bu yordamlar yalnızca iç bilgiler olarak kullanılabilir.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)<br/>
+[Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)\
 [x86 Derleyicisi ile Çakışma](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)

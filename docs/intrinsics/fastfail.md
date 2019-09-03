@@ -1,68 +1,68 @@
 ---
 title: __fastfail
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 ms.assetid: 9cd32639-e395-4c75-9f3a-ac3ba7f49921
-ms.openlocfilehash: a9f75cbf3c572401ef26fb16ced221eb24d35534
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 34198409c6a57eb494bfe819b367b71405a84e64
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62263886"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222190"
 ---
-# <a name="fastfail"></a>__fastfail
+# <a name="__fastfail"></a>__fastfail
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Çağırma işlemi en az yük ile hemen sonlanır.
+, Çağırma işlemini hemen en düşük yükle sonlandırır.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```C
 void __fastfail(unsigned int code);
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
-*Kod*<br/>
-[in] A `FAST_FAIL_<description>` winnt.h veya işlem sonlandırma nedenini gösteren wdm.h sembolik sabiti.
+*kodudur*\
+'ndaki Winnt `FAST_FAIL_<description>` . h veya WDM. h 'den, işlem sonlandırmasının nedenini gösteren bir sembolik sabit.
 
-## <a name="return-value"></a>Dönüş Değeri
+## <a name="return-value"></a>Dönüş değeri
 
-`__fastfail` İç sonuç döndürmez.
+`__fastfail` İç değer döndürmez.
 
 ## <a name="remarks"></a>Açıklamalar
 
-`__fastfail` İç bir mekanizma sağlar bir *hızlı başarısız* isteği — istek anında işlem sonlandırma için olası bozuk bir işlem için bir yol. Program durumunu ve kurtarma ötesinde yığın bozulmuş olabilir, kritik hatalara tesis normal özel durum işleme tarafından işlenemez. Kullanım `__fastfail` minimum ek yük kullanarak işlemi sonlandırılamıyor.
+İç `__fastfail` işlem, *hızlı bir başarısızlık* isteğine yönelik bir mekanizma sağlar. Bu işlem, acil bir işlem sonlandırma istemek için bozulmuş olabilecek bir işlemin yoludur. Bozuk program durumu ve kurtarma ötesinde yığın olabilecek kritik hata, normal özel durum işleme olanağı tarafından işlenemiyor. En `__fastfail` az ek yük kullanarak işlemi sonlandırmak için kullanın.
 
-Dahili olarak `__fastfail` mimariye özgü çeşitli mekanizmalar kullanılarak uygulanır:
+Dahili olarak `__fastfail` , çeşitli mimariye özgü mekanizmalar kullanılarak uygulanır:
 
-|Mimari|Yönerge|Kod bağımsız değişken konumu|
+|Mimari|Yönergenin|Kod bağımsız değişkeninin konumu|
 |------------------|-----------------|-------------------------------|
-|x86|int 0x29|ecx|
-|X64|int 0x29|rcx|
-|ARM|0xDEFB opcode|r0|
-|ARM64|Opcode 0xF003|x0|
+|x86|Int 0x29|`ecx`|
+|X64|Int 0x29|`rcx`|
+|ARM|Opcode 0xDEFB|`r0`|
+|ARM64|Opcode 0xF003|`x0`|
 
-Hızlı başarısız istek bağımsızdır ve bu normalde yalnızca iki yönergeleri yürütmek için gerektirir. Hızlı başarısız istek yürütüldü sonra çekirdek, daha sonra uygun tedbiri alır. Kullanıcı modu kodunda var. yönerge işaretçisini ötesinde bellek bağımlılık hızlı başarısız olayı oluşturulduğunda Ciddi Bellek Bozulması olsa bile bu ve güvenilirliği en üst düzeye çıkarır.
+Hızlı bir başarısızlık isteği kendi içindedir ve genellikle yalnızca iki yönergelerin yürütülmesi gerekir. Hızlı bir başarısızlık isteği yürütüldükten sonra çekirdek, uygun eylemi gerçekleştirir. Kullanıcı modu kodunda, hızlı hata olayı ortaya çıktığında yönerge işaretçisinin ötesinde hiçbir bellek bağımlılığı yoktur. Ciddi bellek bozulması durumunda bile güvenilirliğini en üst düzeye çıkarır.
 
-`code` Bağımsız değişken — birini `FAST_FAIL_<description>` winnt.h veya hata durumu türünü wdm.h—describes sembolik sabit değerler ve ortama özgü bir şekilde hata raporları eklenmiştir.
+Winnt. h veya WDM. `FAST_FAIL_<description>` h ' deki sembolik sabitlerden biri olan bağımsızdeğişkeni,hatakoşulununtürünüaçıklar.`code` Hata raporlarına ortama özgü bir biçimde dahil değildir.
 
-Kullanıcı modu hızlı başarısız istekleri, ikinci bir şans edilemeyecek özel durum 0xC0000409 özel durum kodu ile en az bir özel durum parametresi olarak görünür. İlk özel durum parametresi `code` değeri. Windows hata bildirimi (WER) ve işlem bozuk ve en az işlem içi Eylemler hatası için yanıt alınıp hata ayıklama altyapısı bu özel durum kodu gösterir. Çekirdek modu hızlı başarısız istekleri, bir özel hata denetimi kod kullanarak uygulanır `KERNEL_SECURITY_CHECK_FAILURE` (0x139). Program, bozuk bir durumda olması beklenir çünkü her iki durumda da, hiçbir özel durum işleyicileri çağrılır. Bir hata ayıklayıcı varsa, sona ermeden önce program durumunu inceleyebilir fırsatı verilir.
+Kullanıcı modu hızlı başarısız istekler, 0xC0000409 özel durum kodu ve en az bir özel durum parametresi ile ikinci bir şans sürekliliği olmayan özel durum olarak görünür. İlk istisna parametresi `code` değeridir. Bu özel durum kodu, işlemin bozuk olduğu Windows Hata Bildirimi (WER) ve hata ayıklama altyapısına ve hataya yanıt olarak en düşük işlem içi eylemlerin alınması gerektiğini gösterir. Çekirdek modu hızlı başarısızlık istekleri, `KERNEL_SECURITY_CHECK_FAILURE` adanmış bir hata denetimi kodu (0x139) kullanılarak uygulanır. Her iki durumda da, programın bozulmuş durumda olması beklendiğinden hiçbir özel durum işleyicisi çağrılmaz. Bir hata ayıklayıcı varsa, işten çıkarılmadan önce programın durumunu inceleme fırsatı verilir.
 
-Windows 8'de yerel hızlı başarısız mekanizması desteği başladı. Erişim ihlali veya olarak hızlı başarısız yönerge yerel olarak desteklemeyen Windows işletim sistemleri hızlı başarısız istek genellikle işlemek bir `UNEXPECTED_KERNEL_MODE_TRAP` hata denetimi. Bu gibi durumlarda sonlandırılmış yine de, ancak bu şart değildir hızlı bir şekilde programdır.
+Windows 8 ' de yerel hızlı hata mekanizması desteği başlatıldı. Hızlı başarısızlık yönergesini yerel olarak desteklemeyen Windows işletim sistemleri, genellikle bir erişim ihlali veya bir `UNEXPECTED_KERNEL_MODE_TRAP` hata denetimi olarak hızlı bir başarısızlık isteğini kabul eder. Bu gibi durumlarda, program hala sona erer, ancak hızlı şekilde gerekli değildir.
 
-`__fastfail` yalnızca bir iç öğe olarak kullanılabilir.
+`__fastfail`yalnızca iç öğe olarak kullanılabilir.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İç|Mimari|
+|Alanlarla|Mimari|
 |---------------|------------------|
 |`__fastfail`|x86, x64, ARM, ARM64|
 
-**Üst bilgi dosyası** \<intrin.h >
+**Üst bilgi dosyası** \<Intrin. h >
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)
+[Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)

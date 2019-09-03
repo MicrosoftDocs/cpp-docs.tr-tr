@@ -1,6 +1,6 @@
 ---
-title: _InterlockedCompareExchangePointer İç İşlevleri
-ms.date: 11/04/2016
+title: _Interlockedcompareexchangepointer iç işlevleri
+ms.date: 09/02/2019
 f1_keywords:
 - _InterlockedCompareExchangePointer_HLERelease
 - _InterlockedCompareExchangePointer_rel
@@ -24,14 +24,14 @@ helpviewer_keywords:
 - _InterlockedCompareExchangePointer_nf intrinsic
 - _InterlockedCompareExchangePointer_np intrinsic
 ms.assetid: 97fde59d-2bf9-42aa-a0fe-a5b6befdd44b
-ms.openlocfilehash: 7b8ba4fe6224292d0160f859aeb630fc17c2d992
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: c0a0083c19df51d2d2eccb7a7bbf6521303c1f85
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69509431"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222041"
 ---
-# <a name="_interlockedcompareexchangepointer-intrinsic-functions"></a>_InterlockedCompareExchangePointer İç İşlevleri
+# <a name="_interlockedcompareexchangepointer-intrinsic-functions"></a>_Interlockedcompareexchangepointer iç işlevleri
 
 **Microsoft 'a özgü**
 
@@ -39,7 +39,7 @@ Ve adresi eşitse adresi `Destination` `Exchange` adresini`Destination` depolaya
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```C
 void * _InterlockedCompareExchangePointer (
    void * volatile * Destination,
    void * Exchange,
@@ -77,18 +77,18 @@ long _InterlockedCompareExchangePointer_rel (
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
-*Hedefine*<br/>
+*Hedefine*\
 [in, out] Hedef değer işaretçisinin işaretçisi. İşaret yok sayılır.
 
-*Exchange*<br/>
+*Değişimi*\
 'ndaki Exchange işaretçisi. İşaret yok sayılır.
 
-*Karşılaştırılanı desteklemiyor*<br/>
+*Karşılaştırılanı desteklemiyor*\
 'ndaki Hedefle Karşılaştırılacak işaretçi. İşaret yok sayılır.
 
-## <a name="return-value"></a>Dönüş Değeri
+## <a name="return-value"></a>Dönüş değeri
 
 Dönüş değeri, hedefin ilk değeridir.
 
@@ -96,8 +96,8 @@ Dönüş değeri, hedefin ilk değeridir.
 
 |Alanlarla|Mimari|Üstbilgi|
 |---------------|------------------|------------|
-|`_InterlockedCompareExchangePointer`|x86, ARM, x64|\<Intrin. h >|
-|`_InterlockedCompareExchangePointer_acq`, `_InterlockedCompareExchangePointer_nf`, `_InterlockedCompareExchangePointer_rel`|ARM|\<iiıntrin. h >|
+|`_InterlockedCompareExchangePointer`|x86, ARM, x64, ARM64|\<Intrin. h >|
+|`_InterlockedCompareExchangePointer_acq`, `_InterlockedCompareExchangePointer_nf`, `_InterlockedCompareExchangePointer_rel`|ARM, ARM64|\<iiıntrin. h >|
 |`_InterlockedCompareExchangePointer_HLEAcquire`, `_InterlockedCompareExchangePointer_HLERelease`|x86, x64|\<ımintrin. h >|
 
 ## <a name="remarks"></a>Açıklamalar
@@ -108,7 +108,7 @@ Dönüş değeri, hedefin ilk değeridir.
 
 Öğesinin nasıl kullanılacağına `_InterlockedCompareExchangePointer`ilişkin bir örnek için bkz. [_ınterlockedazaltma](../intrinsics/interlockeddecrement-intrinsic-functions.md).
 
-ARM platformlarında, önemli bir bölümün başındaki ve `_acq` sonundaki `_rel` gibi alma ve bırakma semantiklerine ihtiyacınız varsa, iç bilgileri ve son eklerini kullanın. `_nf` ("Çit olmayan") son eki olan ARM iç öğeleri bellek engeli olarak davranmaz.
+ARM platformlarında, önemli bir bölümün başındaki ve `_acq` sonundaki `_rel` gibi alma ve bırakma semantiklerine ihtiyacınız varsa, iç bilgileri ve son eklerini kullanın. `_nf` ("Sınır olmayan") son ek olan ARM iç öğeleri bellek engeli olarak davranmaz.
 
 `_np` ("Önceden getirme yok") sonekine sahip iç bilgiler, olası bir önceden getirme işleminin derleyici tarafından eklenmesini engeller.
 
@@ -120,5 +120,5 @@ Bu yordamlar yalnızca iç bilgiler olarak kullanılabilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)<br/>
+[Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)\
 [Anahtar Sözcükler](../cpp/keywords-cpp.md)

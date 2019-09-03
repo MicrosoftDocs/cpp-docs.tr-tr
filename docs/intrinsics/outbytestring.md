@@ -1,6 +1,6 @@
 ---
 title: __outbytestring
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __outbytestring
 helpviewer_keywords:
@@ -8,22 +8,22 @@ helpviewer_keywords:
 - __outbytestring intrinsic
 - outsb instruction
 ms.assetid: c9150661-9c18-427f-bae8-710bba6ed78c
-ms.openlocfilehash: 41064dda6a1a0b9ad4c15f98c3f3081f08ef8db6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 31caf17db5d56efccd6b30200994b1080356b4c1
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62396619"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70217177"
 ---
-# <a name="outbytestring"></a>__outbytestring
+# <a name="__outbytestring"></a>__outbytestring
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Oluşturur `rep outsb` gönderen ilk yönerge `Count` verileri baytlık tarafından işaret edilen `Buffer` tarafından belirtilen bağlantı noktasına `Port`.
+`Count` `Port` `rep outsb` Tarafından işaretedilenilkbaytsayısınıtarafındanbelirtilenbağlantınoktasınagönderenyönergeyiüretir.`Buffer`
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```C
 void __outbytestring(
    unsigned short Port,
    unsigned char* Buffer,
@@ -31,31 +31,31 @@ void __outbytestring(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
-*Bağlantı noktası*<br/>
-[in] Veri göndermek için bağlantı noktası.
+*Bağ*\
+'ndaki Verilerin gönderileceği bağlantı noktası.
 
-*Arabellek*<br/>
-[in] Belirtilen bağlantı noktasına gönderilecek veri.
+*Arabelleğin*\
+'ndaki Belirtilen bağlantı noktasını göndermek için veriler.
 
-*Sayısı*<br/>
-[in] Veri gönderilecek bayt sayısı.
+*Biriktirme*\
+'ndaki Gönderilecek verilerin bayt sayısı.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İç|Mimari|
+|Alanlarla|Mimari|
 |---------------|------------------|
 |`__outbytestring`|x86, x64|
 
-**Üst bilgi dosyası** \<intrin.h >
+**Üst bilgi dosyası** \<Intrin. h >
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu yordam yalnızca bir iç öğe olarak kullanılabilir.
+Bu yordam yalnızca iç öğe olarak kullanılabilir.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)
+[Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)

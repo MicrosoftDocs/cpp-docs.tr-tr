@@ -1,6 +1,6 @@
 ---
-title: optimize
-ms.date: 11/04/2016
+title: optimize pragması
+ms.date: 08/29/2019
 f1_keywords:
 - vc-pragma.optimize
 - optimize_CPP
@@ -8,57 +8,53 @@ helpviewer_keywords:
 - pragmas, optimize
 - optimize pragma
 ms.assetid: cb13c1cc-186a-45bc-bee7-95a8de7381cc
-ms.openlocfilehash: 9f5240fc59f59a71ddb3d18b67fadf3463a0d1ea
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6d7b99b7a72c133d56a209cf42fa9ef670a4a7f9
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62328178"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70220509"
 ---
-# <a name="optimize"></a>optimize
+# <a name="optimize-pragma"></a>optimize pragması
 
-İşlev tarafından işlevi olarak gerçekleştirilecek iyileştirmeleri belirtir.
+İşlev işlevi temelinde iyileştirmeleri belirtir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
-#pragma optimize( "[optimization-list]", {on | off} )
-```
+> **#pragma optimize et ("** [ *optimizasyon-List* ] **",** { **on** | **off** } **)**
 
 ## <a name="remarks"></a>Açıklamalar
 
-**En iyi duruma getirme** pragma işlevin dışında görünmelidir ve pragma görüldüğünde sonra tanımlanmış konumundaki ilk işlev etkinleşir. *Üzerinde* ve *kapalı* bağımsız değişkenleri kapatma seçenekleri belirtilen *iyileştirme listesi* açıp kapatabilir.
+**Optimize** pragma bir işlevin dışında görünmelidir. Pragma görüntülendikten sonra tanımlanan ilk işlevde devreye girer. **Açık** ve **kapalı** bağımsız değişkenler, *iyileştirme listesinde* belirtilen seçenekleri açıp kapatır.
 
-*İyileştirme listesi* sıfır veya daha fazla parametre aşağıdaki tabloda gösterilen olabilir.
+*En iyi duruma getirme listesi* , aşağıdaki tabloda gösterilen parametrelerden sıfır veya daha fazla olabilir.
 
-### <a name="parameters-of-the-optimize-pragma"></a>Optimize Pragması parametreleri
+### <a name="parameters-of-the-optimize-pragma"></a>Optimize pragma parametreleri
 
-|Parametre|İyileştirme türü|
+| Parametre (ler) | İyileştirme türü |
 |--------------------|--------------------------|
-|*g*|Genel iyileştirmeler sağlar.|
-|*s* veya *t*|Makine kodu kısa veya hızlı dizisi belirtin.|
-|*Y*|Programın yığınında çerçeve işaretçileri oluşturur.|
+| **g** | Genel iyileştirmeleri etkinleştirin. |
+| **s** veya **t** | Makine kodunun kısa veya hızlı dizilerini belirtin. |
+| **Iz** | Program yığınında çerçeve işaretçileri oluşturun. |
 
-İle kullanılan aynı harflerini bunlar [/O](../build/reference/o-options-optimize-code.md) derleyici seçenekleri. Örneğin, aşağıdaki pragma değerine eşdeğer olan `/Os` derleyici seçeneği:
+Bu parametreler, [/o](../build/reference/o-options-optimize-code.md) derleyici seçenekleriyle kullanılan harflerdir. Örneğin, aşağıdaki pragma `/Os` derleyici seçeneğine eşdeğerdir:
 
+```cpp
+#pragma optimize( "s", on )
 ```
-#pragma optimize( "ts", on )
-```
 
-Kullanarak **en iyi duruma getirme** pragma ile boş bir dize (**""**) özel bir formu yönergesi:
+**OPTIMIZE** pragma 'ı boş dize ( **""** ) ile kullanmak, yönergenin özel bir biçimidir:
 
-Kullanırken *kapalı* parametresi iyileştirmeleri etkinleştirir *g*, *s*, *t*, ve *y*, kapalı.
+**Kapalı** parametresini kullandığınızda, tüm iyileştirmeleri, **g**, **s**, **t**ve **y**işlemlerini kapatır.
 
-Kullanırken *üzerinde* parametresi ile belirtilen bu iyileştirmeler sıfırlar, [/O](../build/reference/o-options-optimize-code.md) derleyici seçeneği.
+**On** parametresini kullandığınızda, en iyileştirmeleri [/o](../build/reference/o-options-optimize-code.md) derleyici seçeneğini kullanarak belirttikleriniz için sıfırlar.
 
-```
+```cpp
 #pragma optimize( "", off )
-.
-.
-.
+/* unoptimized code section */
 #pragma optimize( "", on )
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+[Pragma yönergeleri ve __pragma anahtar sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

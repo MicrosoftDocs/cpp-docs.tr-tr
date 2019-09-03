@@ -1,59 +1,59 @@
 ---
 title: _mm_cvttss_si64x
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - _mm_cvttss_si64x
 helpviewer_keywords:
 - _mm_cvttss_si64x intrinsic
 - cvttss2si instruction
 ms.assetid: f9a3fd07-5bd8-4758-8744-6315c082cf87
-ms.openlocfilehash: cfdea6ded622cbcbe42bd555edb3029fabad7823
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 69016a4e23b020b2c4c79c6b97a5a76f2b2dc028
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62396658"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70217422"
 ---
-# <a name="mmcvttsssi64x"></a>_mm_cvttss_si64x
+# <a name="_mm_cvttss_si64x"></a>_mm_cvttss_si64x
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Genişletilmiş x64 yayan kesilmesi tek duyarlıklı Floating-Point numarası 64-Bit tamsayıya dönüştürme sürümünü (`cvttss2si`) yönerge.
+Convert 'in x64 genişletilmiş sürümünü kesme tek duyarlıklı kayan noktalı sayı () ile 64 bit tamsayı (`cvttss2si`) yönergesiyle yayar.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```C
 __int64 _mm_cvttss_si64x(
    __m128 value
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
-*value*<br/>
-[in] Bir `__m128` tek duyarlıklı kayan nokta değerleri içeren yapısı.
+*deeri*\
+'ndaki Tek `__m128` duyarlıklı kayan nokta değerleri içeren bir yapı.
 
-## <a name="return-value"></a>Dönüş Değeri
+## <a name="return-value"></a>Dönüş değeri
 
-Dönüştürme ilk kayan nokta değeri bir 64-bit tamsayı sonucu.
+İlk kayan nokta değerinin 64 bitlik bir tamsayıya dönüştürülmesinin sonucu.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İç|Mimari|
+|Alanlarla|Mimari|
 |---------------|------------------|
 |`_mm_cvttss_si64x`|X64|
 
-**Üst bilgi dosyası** \<intrin.h >
+**Üst bilgi dosyası** \<Intrin. h >
 
 ## <a name="remarks"></a>Açıklamalar
 
-İç farklıdır `_mm_cvtss_si64x` içeren filtresinin dönüştürmeler sıfıra yakınsayarak yalnızca kesilir. Çünkü `__m128` yapısını temsil eden bir XMM kaydı, oluşturulan yönerge verileri bir XMM yazmacından sistem belleğine taşır.
+İç `_mm_cvtss_si64x` öğe yalnızca bu geçersiz dönüştürmelerde sıfıra doğru kesilir. `__m128` Yapı bir XMM kaydını temsil ettiğinden, oluşturulan yönerge verileri bir XMM kaydındaki sistem belleğine taşıdır.
 
-Bu yordam yalnızca bir iç öğe olarak kullanılabilir.
+Bu yordam yalnızca iç öğe olarak kullanılabilir.
 
 ## <a name="example"></a>Örnek
 
-```
+```cpp
 // _mm_cvttss_si64x.cpp
 // processor: x64
 #include <intrin.h>
@@ -85,9 +85,9 @@ int main()
 101
 ```
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[__m128](../cpp/m128.md)<br/>
-[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)
+[__m128](../cpp/m128.md)\
+[Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)

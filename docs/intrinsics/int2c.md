@@ -1,6 +1,6 @@
 ---
 title: __int2c
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __int2c
 - __int2c_cpp
@@ -9,35 +9,35 @@ helpviewer_keywords:
 - int 2c instruction
 - __int2c intrinsic
 ms.assetid: aa20ff30-adef-42bb-8577-8010f3122f8e
-ms.openlocfilehash: 36ef8acd3d71c08a356d4210f16205828f691fa5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d8c94ae78a121157a6347548356631b04e8733d5
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62348899"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222105"
 ---
-# <a name="int2c"></a>__int2c
+# <a name="__int2c"></a>__int2c
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Oluşturur `int 2c` tetikleyen bir yönerge, `2c` kesme.
+Kesmeyi tetikleyen yönergeyi üretir. `int 2c` `2c`
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```C
 void __int2c(void);
 ```
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İç|Mimari|
+|Alanlarla|Mimari|
 |---------------|------------------|
 |`__int2c`|x86, x64|
 
-**Üst bilgi dosyası** \<intrin.h >
+**Üst bilgi dosyası** \<Intrin. h >
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)
+[Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)

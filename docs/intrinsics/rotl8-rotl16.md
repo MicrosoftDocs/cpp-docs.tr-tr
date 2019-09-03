@@ -1,6 +1,6 @@
 ---
 title: _rotl8, _rotl16
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - _rotl8
 - _rotl16
@@ -8,22 +8,22 @@ helpviewer_keywords:
 - _rotl8 intrinsic
 - _rotl16 intrinsic
 ms.assetid: 8c519ab6-aef9-4f07-a387-daee8408368f
-ms.openlocfilehash: 8c87c7a5fa1c2bee475b0e4508b5c1571dc449de
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5dffde2d3f830b6ec4ad43865648c27b1defb593
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62390483"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70218033"
 ---
-# <a name="rotl8-rotl16"></a>_rotl8, _rotl16
+# <a name="_rotl8-_rotl16"></a>_rotl8, _rotl16
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Giriş değerleri bit konumları belirtilen sayıda (MSB) en önemli bite Sola Döndür.
+Giriş değerlerini, belirtilen sayıda bit konumuyla en önemli bit (MSB) ile sola döndürün.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```C
 unsigned char _rotl8(
    unsigned char value,
    unsigned char shift
@@ -34,34 +34,34 @@ unsigned short _rotl16(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
-*value*<br/>
-[in] Döndürülecek değer.
+*deeri*\
+'ndaki Döndürülecek değer.
 
-*Kaydırma*<br/>
-[in] Döndürmek için bit sayısı.
+*karakter*\
+'ndaki Döndürülecek bit sayısı.
 
-## <a name="return-value"></a>Dönüş Değeri
+## <a name="return-value"></a>Dönüş değeri
 
 Döndürülen değer.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İç|Mimari|
+|Alanlarla|Mimari|
 |---------------|------------------|
-|`_rotl8`|x86, ARM, x64|
-|`_rotl16`|x86, ARM, x64|
+|`_rotl8`|x86, ARM, x64, ARM64|
+|`_rotl16`|x86, ARM, x64, ARM64|
 
-**Üst bilgi dosyası** \<intrin.h >
+**Üst bilgi dosyası** \<Intrin. h >
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sola kaydırma işleminin aksine, sol döndürme yürütülürken, yüksek sona kalan yüksek sıra bitleri en az önemli bit konumlarına taşınır.
+Sol SHIFT işleminin aksine, sol bir döndürme yürütürken, yüksek uçta kalan yüksek sıralı bitler en az önemli bit konumlarına taşınır.
 
 ## <a name="example"></a>Örnek
 
-```
+```cpp
 // rotl.cpp
 #include <stdio.h>
 #include <intrin.h>
@@ -98,9 +98,9 @@ Rotating 0x41 left by 7 bits gives 0xa0
 Rotating unsigned short 0x12 left by 10 bits gives 0x4800
 ```
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[_rotr8, _rotr16](../intrinsics/rotr8-rotr16.md)<br/>
-[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)
+[_rotr8, _rotr16](../intrinsics/rotr8-rotr16.md)\
+[Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)

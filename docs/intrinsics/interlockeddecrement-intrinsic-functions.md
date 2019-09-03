@@ -1,6 +1,6 @@
 ---
-title: _InterlockedDecrement İç İşlevleri
-ms.date: 12/17/2018
+title: _Interlockedazaltma iç işlevleri
+ms.date: 09/02/2019
 f1_keywords:
 - _InterlockedDecrement16_rel_cpp
 - _InterlockedDecrement16_acq_cpp
@@ -44,14 +44,14 @@ helpviewer_keywords:
 - _InterlockedDecrement64_nf intrinsic
 - InterlockedDecrement_rel intrinsic
 ms.assetid: 5268fce3-86b5-4b2b-b96c-2e531a3fb9b5
-ms.openlocfilehash: 43bf7a9b788c176490ec3fe08e370708eaf000ce
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: f7d46cc90c9925a49948da488c2ed7ede7bdee8f
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69509412"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70217683"
 ---
-# <a name="_interlockeddecrement-intrinsic-functions"></a>_InterlockedDecrement İç İşlevleri
+# <a name="_interlockeddecrement-intrinsic-functions"></a>_Interlockedazaltma iç işlevleri
 
 **Microsoft 'a özgü**
 
@@ -59,7 +59,7 @@ Win32 Windows SDK [ınterlockedazaltma](/windows/win32/api/winnt/nf-winnt-interl
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```C
 long _InterlockedDecrement(
    long * lpAddend
 );
@@ -98,12 +98,12 @@ __int64 _InterlockedDecrement64_nf(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
-*lpAddend*<br/>
+*lpAddend*\
 [in, out] Azaltılangirecek değişkene yönelik işaretçi.
 
-## <a name="return-value"></a>Dönüş Değeri
+## <a name="return-value"></a>Dönüş değeri
 
 Dönüş değeri, ortaya çıkan, azaltma değeridir.
 
@@ -111,8 +111,9 @@ Dönüş değeri, ortaya çıkan, azaltma değeridir.
 
 |Alanlarla|Mimari|
 |---------------|------------------|
-|`_InterlockedDecrement`, `_InterlockedDecrement16`, `_InterlockedDecrement64`|x86, ARM, x64|
-|`_InterlockedDecrement_acq`, `_InterlockedDecrement_rel`, `_InterlockedDecrement_nf`, `_InterlockedDecrement16_acq`, `_InterlockedDecrement16_rel`, `_InterlockedDecrement16_nf`, `_InterlockedDecrement64_acq`, `_InterlockedDecrement64_rel`, `_InterlockedDecrement64_nf`,|ARM|
+|`_InterlockedDecrement`, `_InterlockedDecrement16`|x86, ARM, x64, ARM64|
+|`_InterlockedDecrement64`|ARM, x64, ARM64|
+|`_InterlockedDecrement_acq`, `_InterlockedDecrement_rel`, `_InterlockedDecrement_nf`, `_InterlockedDecrement16_acq`, `_InterlockedDecrement16_rel`, `_InterlockedDecrement16_nf`, `_InterlockedDecrement64_acq`, `_InterlockedDecrement64_rel`, `_InterlockedDecrement64_nf`,|ARM, ARM64|
 
 **Üst bilgi dosyası** \<Intrin. h >
 
@@ -122,7 +123,7 @@ Dönüş değeri, ortaya çıkan, azaltma değeridir.
 
 İşlev 32 bitlik tamsayı değerlerinde çalışırken, `_InterlockedDecrement16` 16 bit tamsayı değerlerinde çalışır ve `_InterlockedDecrement64` 64 bit tamsayı değerlerinde çalışır. `_InterlockedDecrement`
 
-ARM platformlarında, önemli bir bölümün başındaki ve `_acq` sonundaki `_rel` gibi alma ve bırakma semantiklerine ihtiyacınız varsa, iç bilgileri ve son eklerini kullanın. `_nf` ("Sınır yok") sonekine sahip iç bilgiler bellek engeli olarak davranmaz.
+ARM platformlarında, önemli bir bölümün başındaki ve `_acq` sonundaki `_rel` gibi alma ve bırakma semantiklerine ihtiyacınız varsa, iç bilgileri ve son eklerini kullanın. `_nf` ("Sınır olmayan") son ek olan iç bilgiler bellek engeli olarak davranmaz.
 
 `lpAddend` Parametresi tarafından işaret edilen değişken 32 bitlik bir sınıra hizalanmalıdır; Aksi takdirde, bu işlev çok işlemcili x86 sistemlerinde ve x86 olmayan sistemlerde başarısız olur. Daha fazla bilgi için bkz. [ALIGN](../cpp/align-cpp.md).
 
@@ -198,6 +199,6 @@ void __cdecl SimpleThread(void* pParam) {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)<br/>
-[Anahtar Sözcükler](../cpp/keywords-cpp.md)<br/>
+[Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)\
+[Lerimi](../cpp/keywords-cpp.md)\
 [x86 Derleyicisi ile Çakışma](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)

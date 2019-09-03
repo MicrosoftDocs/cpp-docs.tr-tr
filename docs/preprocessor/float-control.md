@@ -1,6 +1,6 @@
 ---
-title: float_control
-ms.date: 11/04/2016
+title: float_control pragması
+ms.date: 08/29/2019
 f1_keywords:
 - vc-pragma.float_control
 - float_control_CPP
@@ -8,39 +8,41 @@ helpviewer_keywords:
 - float_control pragma
 - pragmas, float_control
 ms.assetid: 4f4ba5cf-3707-413e-927d-5ecdbc0a9a43
-ms.openlocfilehash: 8a7829252cebb726363c67c990a94d08b0d6467a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: aa8cdc07953405175c1753791ab53214d73ba516
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62389222"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70218573"
 ---
-# <a name="floatcontrol"></a>float_control
+# <a name="float_control-pragma"></a>float_control pragması
 
 Bir işlev için kayan nokta davranışını belirtir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **#pragma float_control** [ **(** [ *value* **,** *setting* [ **, push** ] ] | [ **push** | **pop** ] **)** ]
+> **#pragma float_control**\
+> **#pragma float_control (** { **kesin** | **kesin** | **hariç** } **,** { **on** | **off** } [ **, push** ] **)** \
+> **#pragma float_control (** { **Push** | **pop** } **)**
 
 ## <a name="options"></a>Seçenekler
 
-*değer*, *ayarı* [, **anında iletme**]<br/>
-Kayan nokta davranışını belirtir. *değer* olabilir **kesin**, **katı**, veya **dışında**. Daha fazla bilgi için [FP (Floating-Point davranışını belirtin)](../build/reference/fp-specify-floating-point-behavior.md). *Ayarı* olabilir **üzerinde** veya **kapalı**.
+**kesin**katı, kapalıveGönderdışında |  |  | \
+**Kesin**, **katı**veya **hariç**olabilen kayan nokta davranışını belirtir. Daha fazla bilgi için bkz. [/FP (kayan nokta davranışını belirt)](../build/reference/fp-specify-floating-point-behavior.md). Ayar **Açık** ya da **kapalı**olabilir.
 
-Varsa *değer* olduğu **katı**, her ikisi de ayarlarını **katı** ve **dışında** tarafından belirtilen *ayarı* . **dışında** yalnızca ayarlanabilir **üzerinde** olduğunda **kesin** veya **katı** ayrıca kümesine **üzerinde**.
+**Katı**olduğunda hem **kesin** hem de **hariç** ayarları, **Açık** veya **kapalı** ayarıyla belirtilir. **except** , yalnızca **kesin** veya **kesin** olduğunda **Açık** olarak ayarlanabilir.
 
-İsteğe bağlı **anında iletme** belirteci eklenir, geçerli ayarını *değer* iç derleyici yığınına gönderilir.
+İsteğe bağlı **gönderim** belirteci eklenirse, **float_control** için geçerli ayar iç derleyici yığınına gönderilir.
 
-**push**<br/>
-Geçerli anında iletme **float_control** açın iç derleyici yığınındaki ayarlama
+**hareketle**\
+Geçerli **float_control** ayarını iç derleyici yığınına gönder
 
-**POP**<br/>
-Kaldırır **float_control** derleyici iç yığının en üstünden ayarlama ve ilgili yeni **float_control** ayarı.
+**cağımız**\
+**Float_control** ayarını iç derleyici yığınının üst öğesinden kaldırır ve yeni **float_control** ayarını yapar.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kullanamazsınız **float_control** kapatmayı **kesin** kapalı olduğunda **dışında** açıktır. Benzer şekilde, **kesin** kapalı olduğunda açılamaz [fenv_access](../preprocessor/fenv-access.md) açıktır. Kullanarak hızlı bir modele katı modelden Git **float_control** pragması, aşağıdaki kodu kullanın:
+**Float_control** **hariç** olmak üzere **kesin** kapatma özelliğini kullanamazsınız. Benzer şekilde, [fenv_access](../preprocessor/fenv-access.md) açık olduğunda **kesin** bir şekilde kapatılamaz. **Float_control** pragmasını kullanarak katı modelden hızlı bir modele gitmek için aşağıdaki kodu kullanın:
 
 ```cpp
 #pragma float_control(except, off)
@@ -48,7 +50,7 @@ Kullanamazsınız **float_control** kapatmayı **kesin** kapalı olduğunda **d�
 #pragma float_control(precise, off)
 ```
 
-Katı bir modeli hızlı modelden gitmek **float_control** pragması, aşağıdaki kodu kullanın:
+Hızlı modelden **float_control** pragma ile katı bir modele gitmek için aşağıdaki kodu kullanın:
 
 ```cpp
 #pragma float_control(precise, on)
@@ -56,7 +58,7 @@ Katı bir modeli hızlı modelden gitmek **float_control** pragması, aşağıda
 #pragma float_control(except, on)
 ```
 
-Hiçbir seçenek belirtilmezse, **float_control** hiçbir etkisi olmaz.
+Hiçbir seçenek belirtilmemişse, **float_control** etkisizdir.
 
 Diğer kayan nokta pragmaları şunlardır:
 
@@ -66,7 +68,7 @@ Diğer kayan nokta pragmaları şunlardır:
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, pragması kullanılarak taşma kayan nokta özel durumu yakalamak gösterilmektedir **float_control**.
+Aşağıdaki örnek, pragma **float_control**kullanarak taşan kayan nokta özel durumunun nasıl yakalanarak gösterir.
 
 ```cpp
 // pragma_directive_float_control.cpp
@@ -108,4 +110,4 @@ Pass
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+[Pragma yönergeleri ve __pragma anahtar sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

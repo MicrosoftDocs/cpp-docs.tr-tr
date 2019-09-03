@@ -1,29 +1,29 @@
 ---
-title: Dil Bilgisi Özeti Tanımları
-ms.date: 11/04/2016
+title: Dil bilgisi özeti tanımları
+ms.date: 08/29/2019
 helpviewer_keywords:
 - preprocessor, definitions
 - preprocessor
 ms.assetid: cc752dc8-6f4e-4347-a556-e0d9ef4c46bd
-ms.openlocfilehash: 6e8671ba0d68b13f68db0f2b08dab4fe98f917e7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 93cf6ffc5daf53a106c9f15a2289e2b52739d72f
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62389287"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222417"
 ---
-# <a name="definitions-for-the-grammar-summary"></a>Dil Bilgisi Özeti Tanımları
+# <a name="definitions-for-the-grammar-summary"></a>Dil bilgisi özeti tanımları
 
-Terminaller bir söz dizimi tanımı noktalarıdır. Herhangi bir çözüm mümkündür. Terminaller ayrılmış sözcükler ve kullanıcı tanımlı tanımlayıcıları kümesi içerir.
+Terminal, bir sözdizimi tanımındaki uç noktalardır. Başka bir çözüm mümkün değildir. Terminal, ayrılmış sözcükler ve Kullanıcı tanımlı tanımlayıcılar kümesini içerir.
 
-Terminal dışı söz diziminde tutuculardır. Çoğu Bu sözdizimi özeti başka bir yerde tanımlanır. Tanımları özyinelemeli olabilir. Aşağıdaki Terminal olmayanları tanımlanan [sözcük kuralları](../cpp/lexical-conventions.md) bölümünü *C++ dil başvurusu*:
+Terminal dışı, söz dizimi içindeki yer tutuculardır. Çoğu, bu söz dizimi özetinde başka bir yerde tanımlanır. Tanımlar özyinelemeli olabilir. Aşağıdaki Terminaller,  *C++ dil başvurusunun* [sözlü kuralları](../cpp/lexical-conventions.md) bölümünde tanımlanmıştır:
 
-`constant`, *constant-expression*, *identifier*, *keyword*, `operator`, `punctuator`
+*sabit*, *sabit ifade*, *tanımlayıcı*, *anahtar sözcük*, *işleç*, *noktalama*
 
-İsteğe bağlı bir bileşen belirtilen tarafından da simgeli <sub>iyileştirilmiş</sub>. Örneğin, aşağıdaki küme ayraçları içine alınmış bir isteğe bağlı ifade gösterir:
+İsteğe bağlı bir bileşen, alt indisli <sub>opt</sub>tarafından gösterilir. Örneğin, aşağıdaki, küme ayraçları içine alınmış bir isteğe bağlı ifadeyi gösterir:
 
-**{** *ifade*<sub>iyileştirilmiş</sub> **}**
+**{** *Expression*<sub>opt</sub> **}**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dilbilgisi Özeti (C/C++)](../preprocessor/grammar-summary-c-cpp.md)
+[Dilbilgisi özeti (C/C++)](../preprocessor/grammar-summary-c-cpp.md)

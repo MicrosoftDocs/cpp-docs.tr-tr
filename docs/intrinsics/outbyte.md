@@ -1,56 +1,56 @@
 ---
 title: __outbyte
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __outbyte
 helpviewer_keywords:
 - out instruction
 - __outbyte intrinsic
 ms.assetid: c4cd1a34-8a02-4e37-993d-3201bc17901a
-ms.openlocfilehash: 234892369572a2ee315687f5d70533a0c8cf4b59
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 18792010c45ffb648e9555ccb73f8614c3e3e6ea
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62262976"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70217202"
 ---
-# <a name="outbyte"></a>__outbyte
+# <a name="__outbyte"></a>__outbyte
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Oluşturur `out` 1 tarafından belirtilen bayt gönderen yönerge `Data` çıkış tarafından belirtilen g/ç bağlantı noktasına `Port`.
+`out` Tarafından `Data` belirtilen g/ç bağlantı noktasının belirttiği 1 baytı gönderen yönergeyi üretir. `Port`
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```C
 void __outbyte(
    unsigned short Port,
    unsigned char Data
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
-*Bağlantı noktası*<br/>
-[in] Veri göndermek için bağlantı noktası.
+*Bağ*\
+'ndaki Verilerin gönderileceği bağlantı noktası.
 
-*Veri*<br/>
-[in] Belirtilen bağlantı noktasına gönderilecek bayt.
+*Verileri*\
+'ndaki Belirtilen bağlantı noktasını göndermek için kullanılacak bayt.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İç|Mimari|
+|Alanlarla|Mimari|
 |---------------|------------------|
 |`__outbyte`|x86, x64|
 
-**Üst bilgi dosyası** \<intrin.h >
+**Üst bilgi dosyası** \<Intrin. h >
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu yordam yalnızca bir iç öğe olarak kullanılabilir.
+Bu yordam yalnızca iç öğe olarak kullanılabilir.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)
+[Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)

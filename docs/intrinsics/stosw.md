@@ -1,6 +1,6 @@
 ---
 title: __stosw
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __stosw
 helpviewer_keywords:
@@ -8,57 +8,57 @@ helpviewer_keywords:
 - __stosw intrinsic
 - rep stosw instruction
 ms.assetid: 7620fd1d-dba5-40e3-8e07-01aa68895133
-ms.openlocfilehash: c203973a79c2c3b1094ad8a5351db0999a56bf19
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5fd29bbf1aebba115670fc1bc35e0d8cbe29c7ad
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62390301"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70219934"
 ---
-# <a name="stosw"></a>__stosw
+# <a name="__stosw"></a>__stosw
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Bir depolama dize yönergesi oluşturur (`rep stosw`).
+Bir depo dizesi yönergesi (`rep stosw`) oluşturur.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```C
 void __stosw(
-   unsigned short* Dest,
+   unsigned short* Destination,
    unsigned short Data,
    size_t Count
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
-*Hedef*<br/>
-[out] İşlemin hedefi.
+*Hedefine*\
+dışı İşlemin hedefi.
 
-*Veri*<br/>
-[in] Depolamak için veriler.
+*Verileri*\
+'ndaki Depolanacak veriler.
 
-*Sayısı*<br/>
-[in] Yazılacak sözcük Blok uzunluğu.
+*Biriktirme*\
+'ndaki Yazılacak sözcüklerin bloğunun uzunluğu.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İç|Mimari|
+|Alanlarla|Mimari|
 |---------------|------------------|
 |`__stosw`|x86, x64|
 
-**Üst bilgi dosyası** \<intrin.h >
+**Üst bilgi dosyası** \<Intrin. h >
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sonuç, sözcüktür `Data` bloğu yazılmış `Count` içinde sözcükleri `Dest` dize.
+Sonuç olarak, Word *verilerinin* *hedef* dizedeki bir *sayı* kelime bloğu içine yazılır.
 
-Bu yordam yalnızca bir iç öğe olarak kullanılabilir.
+Bu yordam yalnızca iç öğe olarak kullanılabilir.
 
 ## <a name="example"></a>Örnek
 
-```
+```C
 // stosw.c
 // processor: x86, x64
 #include <stdio.h>
@@ -80,8 +80,8 @@ int main()
 0 128 128 0
 ```
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)
+[Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)

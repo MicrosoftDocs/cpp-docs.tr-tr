@@ -1,55 +1,54 @@
 ---
 title: __svm_vmsave
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __svm_vmsave
 helpviewer_keywords:
 - VMSAVE instruction
 - __svm_vmsave intrinsic
 ms.assetid: 617a60bd-8514-4ba1-8066-bcf4dd481030
-ms.openlocfilehash: d683a13f636db9683b4a7c8d075ad6c3c88c2aed
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f91efa7116a8a8e9ebe27c7e5e4e64c4f1533e9d
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62390197"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70219787"
 ---
-# <a name="svmvmsave"></a>__svm_vmsave
+# <a name="__svm_vmsave"></a>__svm_vmsave
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-İşlemci durumu kümesini, belirtilen sanal makine denetim bloğu (VMCB) depolar.
+Belirtilen sanal makine denetim bloğunda (VMCB) işlemci durumunun bir alt kümesini depolar.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```C
 void __svm_vmsave(
    size_t VmcbPhysicalAddress
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
-|Parametre|Açıklama|
-|---------------|-----------------|
-|*VmcbPhysicalAddress*|[in] VMCB fiziksel adresi.|
+*VmcbPhysicalAddress*\
+'ndaki VMCB 'nin fiziksel adresi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-`__svm_vmsave` İşlev, eşdeğer `VMSAVE` makine yönergesi. Bu işlev, bir konuk işletim sistemi ve uygulamaları ile bir konağın sanal makine İzleyici etkileşimi destekler. Belge için daha fazla bilgi için arama "AMD64 mimarisi Programcı el ile birim 2: Belge numarasını 24593, düzeltme 3.11 ya da daha sonra sistem programlama," [AMD Corporation](https://developer.amd.com/resources/developer-guides-manuals/) site.
+İşlev, `VMSAVE` makine yönergesine eşdeğerdir. `__svm_vmsave` Bu işlev, bir konağın sanal makine izleyicisinin Konuk işletim sistemiyle ve uygulamalarına yönelik etkileşimini destekler. Daha fazla bilgi için "AMD64 mimari programcı 'nin El Ile birim 2 ' yi arayın. Sistem programlama, "belge numarası 24593, düzeltme 3,11 veya üzeri, [AMD Corporation](https://developer.amd.com/resources/developer-guides-manuals/) sitesi.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İç|Mimari|
+|Alanlarla|Mimari|
 |---------------|------------------|
 |`__svm_vmsave`|x86, x64|
 
-**Üst bilgi dosyası** \<intrin.h >
+**Üst bilgi dosyası** \<Intrin. h >
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)<br/>
-[__svm_vmrun](../intrinsics/svm-vmrun.md)<br/>
+[Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)\
+[__svm_vmrun](../intrinsics/svm-vmrun.md)\
 [__svm_vmload](../intrinsics/svm-vmload.md)

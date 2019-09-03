@@ -1,6 +1,6 @@
 ---
 title: __ll_lshift
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __ll_lshift_cpp
 - __ll_lshift
@@ -8,57 +8,57 @@ helpviewer_keywords:
 - ll_lshift intrinsic
 - __ll_lshift intrinsic
 ms.assetid: fe98f733-426d-44b3-8f24-5d0d6d44bd94
-ms.openlocfilehash: 5a91ce5db46b19be570f8d48a584a2caeabcc163
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 158ecbf39320d70b51f1f498a0b689ba58fec363
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62263392"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70221816"
 ---
-# <a name="lllshift"></a>__ll_lshift
+# <a name="__ll_lshift"></a>__ll_lshift
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Sağlanan 64-bit değeri belirtilen bit sayısı kadar sola kaydırır.
+Sağlanan 64 bitlik değeri belirtilen bit sayısı ile sola kaydırır.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```C
 unsigned __int64 __ll_lshift(
    unsigned __int64 Mask,
    int nBit
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
-*Maskesi*<br/>
-[in] Sola kaydırılacak 64-bit tamsayı değeri.
+*Maskesi*\
+'ndaki Sola kayılacak 64 bitlik tamsayı değeri.
 
-*nBit*<br/>
-[in] Kaydırılacak bit sayısı.
+*nBit*\
+'ndaki Kaydırılacak bit sayısı.
 
-## <a name="return-value"></a>Dönüş Değeri
+## <a name="return-value"></a>Dönüş değeri
 
-Maskesi tarafından sola kaydırılacak `nBit` bitleri.
+Maske, bitler tarafından `nBit` sola kaydırır.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İç|Mimari|
+|Alanlarla|Mimari|
 |---------------|------------------|
 |`__ll_lshift`|x86, x64|
 
-**Üst bilgi dosyası** \<intrin.h >
+**Üst bilgi dosyası** \<Intrin. h >
 
 ## <a name="remarks"></a>Açıklamalar
 
-64 bit mimari kullanarak programınızı derlerseniz ve `nBit` 63 büyük kaydırılacak bit sayıdır `nBit` 64 modül. 32 bit mimari kullanarak programınızı derlerseniz ve `nBit` 31'den büyük kaydırılacak bit sayıdır `nBit` 32 modül.
+Programınızı 64 bitlik mimari için derlerseniz ve `nBit` 63 ' den büyükse, kaydırma yapılacak bit sayısı mod 64 ' dir. `nBit` Programınızı 32 bitlik mimari için derlerseniz ve `nBit` 31 ' den büyükse, kaydırma yapılacak bit sayısı mod 32 ' dir. `nBit`
 
-`ll` Adlarında bunun üzerinde bir işlem olduğunu gösteren `long long` (`__int64`).
+Ad `ll` içinde, (`__int64`) üzerinde `long long` bir işlem olduğunu gösterir.
 
 ## <a name="example"></a>Örnek
 
-```
+```cpp
 // ll_lshift.cpp
 // compile with: /EHsc
 // processor: x86, x64
@@ -79,16 +79,17 @@ int main()
 
 ## <a name="output"></a>Çıkış
 
-```
+```Output
 10000
 ```
 
-**Not** sola kaydırma işleminin işaretsiz sürümü yoktur. Bunun nedeni, `__ll_lshift` işaretsiz bir giriş parametresi zaten kullanıyor. Sağa kaydırma yoktur hiçbir oturum bağımlılığı sola kaydırma için en az önemli bit sonuçta her zaman kaydırılacağı uzaklık değeri ne olursa olsun işaretini sıfır olarak ayarlanmış olduğundan.
+> [!NOTE]
+> Sol kaydırma işleminin imzasız sürümü yok. Bunun nedeni `__ll_lshift` zaten işaretsiz bir giriş parametresi kullanıyor olması. Sağ SHIFT 'in aksine, sol SHIFT 'e ait imza bağımlılığı yoktur, çünkü sonuçdaki en az önemli bir bit, kaydırılan değerin işaretinden bağımsız olarak her zaman sıfır olarak ayarlanmıştır.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[__ll_rshift](../intrinsics/ll-rshift.md)<br/>
-[__ull_rshift](../intrinsics/ull-rshift.md)<br/>
-[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)
+[__ll_rshıft](../intrinsics/ll-rshift.md)\
+[__ull_rshıft](../intrinsics/ull-rshift.md)\
+[Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)

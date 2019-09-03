@@ -1,6 +1,6 @@
 ---
 title: __incgsbyte, __incgsword, __incgsdword, __incgsqword
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __incgsdword
 - __incgsqword_cpp
@@ -16,22 +16,22 @@ helpviewer_keywords:
 - __incgsqword intrinsic
 - __incgsdword intrinsic
 ms.assetid: 06bfdf4f-7643-4fe0-8455-60ce3068073e
-ms.openlocfilehash: 3b96fbdb343fa40b6615ac7f91f83099a294624c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8b4e88b4ccd2cf1d2a3130e3a535de1c9a434320
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62264029"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70217801"
 ---
-# <a name="incgsbyte-incgsword-incgsdword-incgsqword"></a>__incgsbyte, __incgsword, __incgsdword, __incgsqword
+# <a name="__incgsbyte-__incgsword-__incgsdword-__incgsqword"></a>__incgsbyte, __incgsword, __incgsdword, __incgsqword
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Bir değere başlangıcına göre bir uzaklık tarafından belirtilen bellek konumunda ekleme `GS` kesimi.
+`GS` Segmentin başına göreli bir uzaklıktan belirtilen bir bellek konumundaki değere bir değer ekleyin.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```C
 void __incgsbyte(
    unsigned long Offset
 );
@@ -46,29 +46,31 @@ void __incgsqword(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
-*uzaklık*<br/>
-[in] Başından uzaklık `GS`.
+*Konumu*\
+'ndaki Öğesinin başından itibaren olan `GS`fark.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İç|Mimari|
+|Alanlarla|Mimari|
 |---------------|------------------|
 |`__incgsbyte`|X64|
 |`__incgsword`|X64|
 |`__incgsdword`|X64|
 |`__incgsqword`|X64|
 
+**Üst bilgi dosyası** \<Intrin. h >
+
 ## <a name="remarks"></a>Açıklamalar
 
-Bu yordamlar yalnızca bir iç öğe olarak kullanılabilir.
+Bu yordamlar yalnızca iç öğe olarak kullanılabilir.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[__addgsbyte, \__addgsword, \__addgsdword, \__addgsqword](../intrinsics/addgsbyte-addgsword-addgsdword-addgsqword.md)<br/>
-[__readgsbyte, \__readgsdword, \__readgsqword, \__readgsword](../intrinsics/readgsbyte-readgsdword-readgsqword-readgsword.md)<br/>
-[__writegsbyte, \__writegsdword, \__writegsqword, \__writegsword](../intrinsics/writegsbyte-writegsdword-writegsqword-writegsword.md)<br/>
-[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)
+[\__addgsbyte, \__addgsword, \__addgsdword, \__addgsqword](../intrinsics/addgsbyte-addgsword-addgsdword-addgsqword.md)\
+[\__readgsbyte, \__readgsdword, \__readgsqword, \__readgsword](../intrinsics/readgsbyte-readgsdword-readgsqword-readgsword.md)\
+[\__writegsbyte, \__writegsdword, \__writegsqword, \__writegsword](../intrinsics/writegsbyte-writegsdword-writegsqword-writegsword.md)\
+[Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)

@@ -1,42 +1,43 @@
 ---
 title: Ön işlemci
-ms.date: 11/04/2016
+ms.date: 08/29/2019
 helpviewer_keywords:
 - preprocessor
 ms.assetid: e120eda3-b413-49f1-a07c-e9fb128cf500
-ms.openlocfilehash: b1443d88fdba470cb8ed5058c9a9012bfbdc5bc7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 883504810f1b659e28764a75ebc7cfda325920a5
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62179860"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222239"
 ---
 # <a name="preprocessor"></a>Ön işlemci
-Önişlemci bir kaynak dosyasının metin çevirisi ilk aşamasının bir parçası yöneten bir metin işleyicisidir. Önişlemci kaynak metin ayrıştırılamadığından, ancak, bu belirteçleri makrosu çağrıları bulmak amacıyla halinde bölmek. Derleyici, normalde, ilk seferde önişlemci çağırır olsa da, önişlemci ayrıca ayrı olarak olmadan derleme metin işlemek için çağrılabilir.
 
-Önişlemci ilgili başvuru malzemeleridir aşağıdaki bölümleri içerir:
+Önişlemci, bir kaynak dosyanın metnini, çeviri ilk aşamasının bir parçası olarak işleyen bir metin işlemcisidir. Ön işlemci, kaynak metni ayrıştırmaz, ancak makro çağrılarını bulmak için belirteçlerin ölçeğini keser. Derleyici ilk geçişinde önişlemcisi olağan şekilde çağırır ancak, Önişlemci, metni derlenmeden işlemek için ayrı olarak da çağrılabilir.
+
+Ön işlemci üzerindeki başvuru malzemeleri aşağıdaki bölümleri içerir:
 
 - [Önişlemci yönergeleri](../preprocessor/preprocessor-directives.md)
 
-- [Ön İşlemci işleçleri](../preprocessor/preprocessor-operators.md)
+- [Önişlemci işleçleri](../preprocessor/preprocessor-operators.md)
 
 - [Önceden tanımlanmış makrolar](../preprocessor/predefined-macros.md)
 
 - [Pragmalar](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Kullanarak ön işleme sonra kaynak kodunuzda bir listesini alabilirsiniz [/E](../build/reference/e-preprocess-to-stdout.md) veya [/EP](../build/reference/ep-preprocess-to-stdout-without-hash-line-directives.md) derleyici seçeneği. İki seçenek de, önişlemci çağırın ve çoğu durumda, konsolu olan standart çıktı cihazına oluşturulan metin çıktısı. /E içerdiğini fark iki seçenek arasındaki `#line` yönergeleri ve /EP out bu yönergeler kaldırır.
+[/E](../build/reference/e-preprocess-to-stdout.md) veya [/EP](../build/reference/ep-preprocess-to-stdout-without-hash-line-directives.md) derleyici seçeneğini kullanarak, ön işlemden sonra kaynak kodunuzun bir listesini elde edebilirsiniz. Her iki seçenek de Önişlemci 'yi çağırır ve sonuçta elde edilen metni standart çıkış cihazına gönderir, bu da çoğu durumda konsoldur. İki seçenek `/E` arasındaki fark, yönergeleri de içerir `#line` ve `/EP` bu yönergeleri kaldırır.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
-##  <a name="_predir_special_terminology"></a> Özel terimleri
+##  <a name="_predir_special_terminology"></a>Özel terminoloji
 
-Önişlemci belgelerde, "değişken" terimi bir işleve geçirilen varlık anlamına gelir. Bazı durumlarda, "gerçek" veya "işlev çağrısında belirtilen bağımsız değişken ifadesi ve işlev tanımında sırasıyla belirtilen bağımsız değişken bildirimi açıklayan resmi," değiştirilir.
+Önişlemci belgelerinde, "bağımsız değişken" terimi bir işleve geçirilen varlığa başvurur. Bazı durumlarda, işlev çağrısında belirtilen bağımsız değişken ifadesini ve sırasıyla işlev tanımında belirtilen bağımsız değişken bildirimini açıklayan "gerçek" veya "biçimsel" tarafından değiştirilir.
 
-"Değişken" terimi, bir basit C türü veri nesnesine ifade eder. "Nesne" C++ nesnelerinin hem değişkenleri gösterir. Bu kapsamlı bir terimdir.
+"Değişken" terimi basit bir C-Type veri nesnesine başvurur. "Object" terimi hem nesneleri hem de C++ değişkenleri ifade eder; Bu, kapsamlı bir terimdir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C/C++ Ön İşlemci Başvurusu](../preprocessor/c-cpp-preprocessor-reference.md)<br/>
-[Çeviri Aşamaları](../preprocessor/phases-of-translation.md)
+[C/C++ Önişlemci Başvurusu](../preprocessor/c-cpp-preprocessor-reference.md)\
+[Çeviri aşamaları](../preprocessor/phases-of-translation.md)

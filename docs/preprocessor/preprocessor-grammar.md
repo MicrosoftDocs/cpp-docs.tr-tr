@@ -1,91 +1,91 @@
 ---
-title: Ön işlemci Dil Bilgisi
-ms.date: 09/04/2018
+title: Ön işlemci dil bilgisi
+ms.date: 08/29/2019
 helpviewer_keywords:
 - preprocessor
 - grammar, preprocessor
 - preprocessor, grammar
 ms.assetid: 6cd33fad-0b08-4592-9be8-7359c43e24e9
-ms.openlocfilehash: 6177cf5fddba549e410842ef3f270edcc13d4782
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f0916e3cc9bbdb398db693286dacc4517df03557
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62179886"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222264"
 ---
-# <a name="preprocessor-grammar"></a>Ön işlemci Dil Bilgisi
+# <a name="preprocessor-grammar"></a>Ön işlemci dil bilgisi
 
-*Satır içi denetim*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; **#define** *tanımlayıcı* *belirteç dizesinde*<sub>iyileştirilmiş</sub><br/>
-&nbsp;&nbsp;&nbsp;&nbsp; **#define** <em>identifier</em> **(** *identifier*<sub>opt</sub> **,** ... **,** *identifier*<sub>opt</sub> **)** *token-string*<sub>opt</sub><br/>
-&nbsp;&nbsp;&nbsp;&nbsp; **#include** **"** *path-spec* **"**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; **#include** **\<** *path-spec* **>**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; **#line** *basamak dizisi* **"** *filename* **"** <sub>iyileştirilmiş</sub><br/>
-&nbsp;&nbsp;&nbsp;&nbsp; **#undef** *tanımlayıcısı*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; **#error** *belirteci dizesi*<br/>
+*denetim satırı*: \
+&nbsp;&nbsp;&nbsp;&nbsp; **#define** *tanımlayıcı* *belirteç-dize* <sub>opt</sub>\
+&nbsp;&nbsp;&nbsp;&nbsp; **#define** *tanımlayıcı* **(** &#x2800;tanımlayıcı&#x200B;<sub>opt</sub> **,** ... **,** *tanımlayıcı* &#x200B; <sub></sub>opt&#x2800; **)** *belirteci-dize*<sub>katılımı</sub>\
+&nbsp;&nbsp;&nbsp;&nbsp; **#include** **"** _yol-spec_ **"** \
+&nbsp;&nbsp;&nbsp;&nbsp; **#include** _yol-spec_ **\<** **>** \
+&nbsp;&nbsp;&nbsp;&nbsp; **#line** *basamak sırası* **"** _dosya adı_ **"** &#x200B; <sub>opt</sub>  \
+&nbsp;&nbsp;&nbsp;&nbsp; **#undef** *tanımlayıcı*\
+&nbsp;&nbsp;&nbsp;&nbsp; **#error** *belirteç-dize*\
 &nbsp;&nbsp;&nbsp;&nbsp; **#pragma** *token-string*
 
-*Sabit ifade*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**tanımlanan (** *tanımlayıcı* **)**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**tanımlanan** *tanımlayıcısı*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;herhangi bir sabit ifade
+*sabit ifadesi*: \
+&nbsp;&nbsp;&nbsp;&nbsp;**tanımlı (** &#x2800;*tanımlayıcı*&#x2800; **)** \
+&nbsp;&nbsp;&nbsp;&nbsp;**tanımlı** *tanımlayıcı*\
+&nbsp;&nbsp;&nbsp;&nbsp;diğer herhangi bir sabit ifade
 
-*Koşullu* :<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Eğer bölümü* *elif-parts*<sub>iyileştirilmiş</sub> *else bölümünü*<sub>iyileştirilmiş</sub> *endif satır*
+*koşullu*: \
+&nbsp;&nbsp;&nbsp;&nbsp;*IF-Part* *Elif-parçalar* <sub>opt</sub> *Else-bölüm* <sub>opt</sub> *endif-çizgi*
 
-*Eğer bölümü* :<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Eğer satır içi* *metin*
+*IF-Part*: \
+&nbsp;&nbsp;&nbsp;&nbsp;*IF-Line* *metin*
 
-*Eğer satır içi* :<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; **#if** *sabit-ifade*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; **#ifdef** *tanımlayıcısı*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; **#ifndef** *tanımlayıcısı*
+*IF-Line*: \
+&nbsp;&nbsp;&nbsp;&nbsp; **#if** *sabit ifadesi*\
+&nbsp;&nbsp;&nbsp;&nbsp; **#ifdef** *tanımlayıcı*\
+&nbsp;&nbsp;&nbsp;&nbsp; **#ifndef** *tanımlayıcı*
 
-*elif-parts* :<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*elif-satırı* *metin*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*elif-parts* *elif-satırı* *metin*
+*Elif-parçalar*: \
+&nbsp;&nbsp;&nbsp;&nbsp;*Elif-Line* *metin*\
+&nbsp;&nbsp;&nbsp;&nbsp;*Elif-parçalar* *Elif-Line* *metin*
 
-*elif-satırı* :<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; **#elif** *constant-expression*
+*Elif-satır*: \
+&nbsp;&nbsp;&nbsp;&nbsp; **#elif** *sabit ifadesi*
 
-*else bölümünü* :<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*başka satır* *metin*
+*Else-bölüm*: \
+&nbsp;&nbsp;&nbsp;&nbsp;*Else-Line* *metin*
 
-*başka satır* :<br/>
+*Else-Line*: \
 &nbsp;&nbsp;&nbsp;&nbsp; **#else**
 
-*Satır içi endif* :<br/>
+*endif-satır*: \
 &nbsp;&nbsp;&nbsp;&nbsp; **#endif**
 
-*basamak dizisi* :<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*basamak*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*basamak dizisi* *basamak*
+*basamak sırası*: \
+&nbsp;&nbsp;&nbsp;&nbsp;*Gurmukhi*\
+&nbsp;&nbsp;&nbsp;&nbsp;*basamak sırası* *basamak*
 
-*basamak* : biri<br/>
+*basamak*: bunlardan biri \
 &nbsp;&nbsp;&nbsp;&nbsp;**0 1 2 3 4 5 6 7 8 9**
 
-*belirteç dizesinde* :<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;Dize belirteçleri
+*belirteç-dize*: \
+&nbsp;&nbsp;&nbsp;&nbsp;Belirteçlerin dizesi
 
-*belirteç* :<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Anahtar sözcüğü*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*tanımlayıcı*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Sabit*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*İşleci*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Noktalama işaretçisi*
+*belirteç*: \
+&nbsp;&nbsp;&nbsp;&nbsp;*sözcükle*\
+&nbsp;&nbsp;&nbsp;&nbsp;*Tanımlayıcısını*\
+&nbsp;&nbsp;&nbsp;&nbsp;*sabit*\
+&nbsp;&nbsp;&nbsp;&nbsp;*işlecinde*\
+&nbsp;&nbsp;&nbsp;&nbsp;*noktalama işareti*
 
-*filename* :<br/>
+*dosya adı*: \
 &nbsp;&nbsp;&nbsp;&nbsp;Geçerli işletim sistemi dosya adı
 
-*PATH-spec* :<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;Geçerli dosya yolu
+*yol-spec*: \
+&nbsp;&nbsp;&nbsp;&nbsp;Yasal dosya yolu
 
-*metin* :<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;Metin dizisi
+*metin*: \
+&nbsp;&nbsp;&nbsp;&nbsp;Herhangi bir metin dizisi
 
 > [!NOTE]
-> İçinde aşağıdaki Terminal olmayanları Genişletilmiş [sözcük kuralları](../cpp/lexical-conventions.md) bölümünü *C++ dil başvurusu*: *sabit*, *sabit-ifade* , *tanımlayıcı*, *anahtar sözcüğü*, *işleci*, ve *noktalama işaretçisi*.
+> Aşağıdaki Terminaller,  *C++ dil başvurusunun* [sözlü kuralları](../cpp/lexical-conventions.md) bölümünde genişletilir: *sabit*, *sabit-ifade*, *tanımlayıcı*, *anahtar sözcük*, *işleç*ve  *noktalama*.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dilbilgisi Özeti (C/C++)](../preprocessor/grammar-summary-c-cpp.md)
+[Dilbilgisi özeti (C/C++)](../preprocessor/grammar-summary-c-cpp.md)

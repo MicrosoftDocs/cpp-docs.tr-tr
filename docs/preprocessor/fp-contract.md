@@ -1,6 +1,6 @@
 ---
-title: fp_contract
-ms.date: 03/12/2018
+title: fp_contract pragması
+ms.date: 08/29/2019
 f1_keywords:
 - vc-pragma.fp_contract
 - fp_contract_CPP
@@ -8,26 +8,26 @@ helpviewer_keywords:
 - pragmas, fp_contract
 - fp_contract pragma
 ms.assetid: 15b97338-6680-4287-ba2a-2dccc5b2ccf5
-ms.openlocfilehash: 14c3ac60d4fc0f45fcf0ece6c3f73153e5de4271
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 833d8e7f4b8c9da18901610e52afed619468c5c3
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62409921"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70218568"
 ---
-# <a name="fpcontract"></a>fp_contract
+# <a name="fp_contract-pragma"></a>fp_contract pragması
 
-Kayan nokta kısaltmanın gerçekleşmeden olup olmadığını belirler. Kayan nokta kısaltmanın iki ayrı kayan nokta işlemleri tek bir yönerge halinde birleştiren FMA (Fused-Çarp-Ekle) gibi bir yönergedir. Bu yönergelerin kullanımını, her işlemden sonra yuvarlama yerine işlemci yalnızca bir kez hem işlemlerinden sonra yuvarlak çünkü kayan nokta duyarlığını etkileyebilir.
+Kayan nokta dalgalanıp gerçekleşmeyeceğini belirler. Kayan nokta karşıtı, iki ayrı kayan nokta işlemini tek bir yönergede birleştiren FMA (Fkullandınız-çarp-Add) gibi bir yönergedir. Bu yönergelerin kullanılması kayan nokta duyarlığını etkileyebilir, çünkü her işlemden sonra yuvarlama yerine, işlemci her iki işlemden sonra yalnızca bir kez yer alabilir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **#pragma fp_contract (** { **üzerinde** | **kapalı** } **)**
+> **#pragma fp_contract (** { **on** | **off** } **)**
 
 ## <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, **fp_contract** olduğu **üzerinde**. Bu, derleyicinin kayan nokta kısaltmanın yönergeleri mümkün olan yerlerde kullanın bildirir. Ayarlama **fp_contract** için **kapalı** tek kayan nokta yönergeleri korumak için.
+Varsayılan olarak, **fp_contract** 'dir. Bu, derleyiciye mümkün olan yerlerde kayan nokta karşıtı yönergeler kullanmasını söyler. Tek kayan nokta talimatlarını korumak için **fp_contract** ayarlayın.
 
-Kayan nokta davranışı hakkında daha fazla bilgi için bkz. [FP (Floating-Point davranışını belirtin)](../build/reference/fp-specify-floating-point-behavior.md).
+Kayan nokta davranışı hakkında daha fazla bilgi için bkz. [/FP (kayan nokta davranışını belirt)](../build/reference/fp-specify-floating-point-behavior.md).
 
 Diğer kayan nokta pragmaları şunlardır:
 
@@ -37,7 +37,7 @@ Diğer kayan nokta pragmaları şunlardır:
 
 ## <a name="example"></a>Örnek
 
-Hedef işlemci üzerinde mevcut olsa bile bu örnekten oluşturulan kod çarpım-Çarp-Ekle bir yönerge kullanmaz. Çıkarırsanız `#pragma fp_contract (off)`, varsa, oluşturulan kod çarpım-Çarp-Ekle bir yönerge kullanabilir.
+Bu örnekten oluşturulan kod, hedef işlemcide kullanılabilir olduğunda bile, Fuse-çarp-Add yönergesini kullanmaz. Dışarı `#pragma fp_contract (off)`yorum yaptıysanız oluşturulan kod, varsa, bir Fuse-çarp-Add yönergesi kullanabilir.
 
 ```cpp
 // pragma_directive_fp_contract.cpp
@@ -77,4 +77,4 @@ out = 4.587525000000000e+03
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+[Pragma yönergeleri ve __pragma anahtar sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

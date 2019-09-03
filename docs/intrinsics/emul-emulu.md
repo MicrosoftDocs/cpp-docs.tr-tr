@@ -1,6 +1,6 @@
 ---
 title: __emul, __emulu
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __emulu_cpp
 - __emul
@@ -10,22 +10,22 @@ helpviewer_keywords:
 - __emul intrinsic
 - __emulu intrinsic
 ms.assetid: 79545236-cca2-40b8-a4e1-8abce9b26311
-ms.openlocfilehash: 8657c0fb034ac6bbcfbebb946e059ad08d9e7046
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 16b2b38f6f44b99c9f5b9370ba586342a860684e
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62264055"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70216748"
 ---
-# <a name="emul-emulu"></a>__emul, __emulu
+# <a name="__emul-__emulu"></a>__emul, __emulu
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Bir 32 bit tamsayı basılı tutabilirsiniz overflow multiplications gerçekleştirir.
+32 bit tamsayının tutabileceğinden taşan çoğullications gerçekleştirir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```C
 __int64 __emul(
    int a,
    int b
@@ -36,36 +36,36 @@ unsigned __int64 __emulu(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
-*a*<br/>
-[in] Çarpma işleminin ilk tamsayı işlenen.
+*a*\
+'ndaki Çarpma 'nın ilk tamsayı işleneni.
 
-*b*<br/>
-[in] Çarpma işleminin tamsayı ikinci işlenen.
+*kenarı*\
+'ndaki Çarpma 'nın ikinci tamsayı işleneni.
 
-## <a name="return-value"></a>Dönüş Değeri
+## <a name="return-value"></a>Dönüş değeri
 
-Çarpma işleminin sonucu.
+Çarpma sonucu.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İç|Mimari|
+|Alanlarla|Mimari|
 |---------------|------------------|
 |`__emul`|x86, x64|
 |`__emulu`|x86, x64|
 
-**Üst bilgi dosyası** \<intrin.h >
+**Üst bilgi dosyası** \<Intrin. h >
 
 ## <a name="remarks"></a>Açıklamalar
 
-`__emul` iki 32-bit imzalı değerlerini alır ve 64-bit imzalı bir tamsayı değeri olarak çarpma işleminin sonucunu döndürür.
+`__emul`2 32 bitlik imzalı değerler alır ve çarpma 'nın sonucunu 64 bit işaretli tamsayı değeri olarak döndürür.
 
-`__emulu` iki 32-bit işaretsiz tamsayı değerleri alır ve 64-bit işaretsiz tamsayı değeri olarak çarpma işleminin sonucunu döndürür.
+`__emulu`2 32 bitlik işaretsiz tamsayı değerleri alır ve çarpma 'nın sonucunu 64 bit işaretsiz bir tamsayı değeri olarak döndürür.
 
 ## <a name="example"></a>Örnek
 
-```
+```cpp
 // emul.cpp
 // compile with: /EHsc
 // processor: x86, x64
@@ -97,13 +97,13 @@ int main()
 
 ## <a name="output"></a>Çıkış
 
-```
+```Output
 -268435456 * 2 = -536870912
 4294967295 * 251658240 = 1080863910317260800
 ```
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)
+[Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)

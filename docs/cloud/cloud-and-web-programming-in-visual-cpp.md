@@ -2,12 +2,13 @@
 title: Visual C++'da Bulut ve Web Programlama
 ms.date: 05/14/2019
 ms.assetid: b63611f1-9723-44d0-ba7f-c3ebef341313
-ms.openlocfilehash: 3f4786d8b17aed2d7faeddf1e2c32a825fd8d0e5
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.topic: landing-page
+ms.openlocfilehash: cf638bb42985fd22f7befea02c1c893387ce98c8
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69498864"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70218512"
 ---
 # <a name="cloud-and-web-programming-in-visual-c"></a>Visual C++'da Bulut ve Web Programlama
 

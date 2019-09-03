@@ -1,36 +1,35 @@
 ---
-title: no_dual_interfaces
-ms.date: 11/04/2016
+title: no_dual_interfaces içeri aktarma özniteliği
+ms.date: 08/29/2019
 f1_keywords:
 - no_dual_interfaces
 helpviewer_keywords:
 - no_dual_interfaces attribute
 ms.assetid: 9acd5d9d-4a49-4cdc-9470-73a2c23cf512
-ms.openlocfilehash: ae75bc2e974f374768f1a9e5a0e1ced61e9904b0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6270888f0d31e4fbe18fb3364995be8c73426b83
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62409830"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70220756"
 ---
-# <a name="nodualinterfaces"></a>no_dual_interfaces
-**C++ özgü**
+# <a name="no_dual_interfaces-import-attribute"></a>no_dual_interfaces içeri aktarma özniteliği
 
-Değişiklikleri derleyici yolu çift arabirim yöntemleri için sarmalayıcı işlevleri oluşturur.
+**C++Belirli**
+
+Derleyicinin çift arabirim yöntemleri için sarmalayıcı işlevleri üretme şeklini değiştirir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
-no_dual_interfaces
-```
+> **#import** *tür kitaplığı* **no_dual_interfaces**
 
 ## <a name="remarks"></a>Açıklamalar
 
-Normalde, sarmalayıcı yöntemin sanal işlev tablosu aracılığıyla arabirimi çağırır. İle **no_dual_interfaces**, bunun yerine sarmalayıcıyı çağıran `IDispatch::Invoke` yöntemini çağırmak için.
+Normalde sarmalayıcı, arabirimi için sanal işlev tablosu aracılığıyla yöntemini çağırır. **No_dual_interfaces**ile sarmalayıcı, yöntemi çağırmak için `IDispatch::Invoke` çağırır.
 
-**END C++ özgü**
+**SONA C++ özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)<br/>
+[#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)\
 [#import yönergesi](../preprocessor/hash-import-directive-cpp.md)

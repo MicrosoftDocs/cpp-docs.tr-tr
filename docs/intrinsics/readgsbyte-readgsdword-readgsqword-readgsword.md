@@ -1,6 +1,6 @@
 ---
 title: __readgsbyte, __readgsdword, __readgsqword, __readgsword
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __readgsbyte
 - __readgsdword
@@ -12,22 +12,22 @@ helpviewer_keywords:
 - __readgsqword intrinsic
 - __readgsbyte intrinsic
 ms.assetid: f822632d-854c-4558-a71b-cdfc3eea2236
-ms.openlocfilehash: a677b96975e0d2adcc7e548992a12bd597bea6a3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 278f1de33a7e01c5893217ddd8aaa22e68cf0c94
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62396476"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222355"
 ---
-# <a name="readgsbyte-readgsdword-readgsqword-readgsword"></a>__readgsbyte, __readgsdword, __readgsqword, __readgsword
+# <a name="__readgsbyte-__readgsdword-__readgsqword-__readgsword"></a>__readgsbyte, __readgsdword, __readgsqword, __readgsword
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Bellek GS kesim başlangıcına göre bir uzaklık tarafından belirtilen bir konumdan okunamıyor.
+GS segmentinin başlangıcına göre bir uzaklıktan belirtilen konumdan belleği okuyun.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```C
 unsigned char __readgsbyte(
    unsigned long Offset
 );
@@ -42,33 +42,33 @@ unsigned __int64 __readgsqword(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
-*uzaklık*<br/>
-[in] Başından uzaklık `GS` okuma için.
+*Konumu*\
+'ndaki Öğesinden okunacak kadar olan `GS` Aralık.
 
-## <a name="return-value"></a>Dönüş Değeri
+## <a name="return-value"></a>Dönüş değeri
 
-Bayt, word, çift sözcük veya (çağrılan işlev adı tarafından belirtildiği şekilde) quadword bellek içeriğini konumda `GS:[Offset]`.
+Konumun `GS:[Offset]`bayt, sözcük, çift sözcük veya quadword (çağrılan işlevin adıyla gösterildiği gibi) bellek içeriği.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İç|Mimari|
+|Alanlarla|Mimari|
 |---------------|------------------|
 |`__readgsbyte`|X64|
 |`__readgsdword`|X64|
 |`__readgsqword`|X64|
 |`__readgsword`|X64|
 
-**Üst bilgi dosyası** \<intrin.h >
+**Üst bilgi dosyası** \<Intrin. h >
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu yordamlar yalnızca bir iç öğe olarak kullanılabilir.
+Bu yordamlar yalnızca iç öğe olarak kullanılabilir.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[__writegsbyte, \__writegsdword, \__writegsqword, \__writegsword](../intrinsics/writegsbyte-writegsdword-writegsqword-writegsword.md)<br/>
-[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)
+[__writegsbyte, \__writegsdword, \__writegsqword, \__writegsword](../intrinsics/writegsbyte-writegsdword-writegsqword-writegsword.md)\
+[Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)

@@ -1,30 +1,58 @@
 ---
-title: _InterlockedCompareExchange128
-ms.date: 11/04/2016
+title: _InterlockedCompareExchange128 iç işlevleri
+ms.date: 09/02/2019
 f1_keywords:
 - _InterlockedCompareExchange128_cpp
 - _InterlockedCompareExchange128
+- _InterlockedCompareExchange128_acq
+- _InterlockedCompareExchange128_nf
+- _InterlockedCompareExchange128_np
+- _InterlockedCompareExchange128_rel
 helpviewer_keywords:
 - cmpxchg16b instruction
 - _InterlockedCompareExchange128 intrinsic
 ms.assetid: f05918fc-716a-4f6d-b746-1456d6b96c56
-ms.openlocfilehash: 9330b1405ca247364cd04d3ab399f66e4f332273
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 525b0fd77323789eed05c47c944794ff389bfac5
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62348776"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70217694"
 ---
-# <a name="interlockedcompareexchange128"></a>_InterlockedCompareExchange128
+# <a name="_interlockedcompareexchange128-intrinsic-functions"></a>_InterlockedCompareExchange128 iç işlevleri
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-128-bit birbirine kenetlenmiş karşılaştırma ve değişim gerçekleştirir.
+128 bit bir karşılıklı kilitli karşılaştırma ve değişim gerçekleştirir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```C
 unsigned char _InterlockedCompareExchange128(
+   __int64 volatile * Destination,
+   __int64 ExchangeHigh,
+   __int64 ExchangeLow,
+   __int64 * ComparandResult
+);
+unsigned char _InterlockedCompareExchange128_acq(
+   __int64 volatile * Destination,
+   __int64 ExchangeHigh,
+   __int64 ExchangeLow,
+   __int64 * ComparandResult
+);
+unsigned char _InterlockedCompareExchange128_nf(
+   __int64 volatile * Destination,
+   __int64 ExchangeHigh,
+   __int64 ExchangeLow,
+   __int64 * ComparandResult
+);
+unsigned char _InterlockedCompareExchange128_np(
+   __int64 volatile * Destination,
+   __int64 ExchangeHigh,
+   __int64 ExchangeLow,
+   __int64 * ComparandResult
+);
+unsigned char _InterlockedCompareExchange128_rel(
    __int64 volatile * Destination,
    __int64 ExchangeHigh,
    __int64 ExchangeLow,
@@ -32,52 +60,58 @@ unsigned char _InterlockedCompareExchange128(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
-*Hedef*<br/>
-[out içinde] İki 64-bit tamsayı dizisi hedef işaretçisine 128-bit alanı olarak kabul edilir. Hedef veri 16 baytlık genel koruma hatası kaçınmak için hizalı olmalıdır.
+*Hedefine*\
+[in, out] 128 bit alan olarak kabul edilen 2 64 bitlik tamsayılar dizisi olan hedefe yönelik işaretçi. Genel koruma hatasının oluşmaması için hedef veriler 16 baytlık hizalı olmalıdır.
 
-*ExchangeHigh*<br/>
-[in] Hedef yüksek bölümüyle değiştirilen 64-bit bir tamsayı.
+*ExchangeHigh*\
+'ndaki Hedefin yüksek bölümüyle değiş tokuş edilen 64 bitlik bir tamsayı.
 
-*ExchangeLow*<br/>
-[in] Hedef düşük bölümüyle değiştirilen 64-bit bir tamsayı.
+*ExchangeLow*\
+'ndaki Hedefin düşük bölümüyle değiş tokuş edilen 64 bitlik bir tamsayı.
 
-*ComparandResult*<br/>
-[out içinde] İşaretçi (128-bit alanı olarak kabul) iki 64-bit tamsayı dizisi hedef karşılaştırmak için.  Çıkışta, bu hedef özgün değeri ile yazılır.
+*ComparandResult*\
+[in, out] Hedefle karşılaştırmak için 2 64 bitlik tamsayılar dizisi işaretçisi (128 bit alan olarak kabul edilir).  Çıkışta, hedefin orijinal değeri ile bu dizinin üzerine yazılır.
 
-## <a name="return-value"></a>Dönüş Değeri
+## <a name="return-value"></a>Dönüş değeri
 
-128-bit karşılaştırılan hedef özgün değeri eşitse 1. `ExchangeHigh` ve `ExchangeLow` 128-bit hedef üzerine yazın.
+128 bit karşılaştırıya ve hedefin orijinal değerine eşitse 1. `ExchangeHigh`ve `ExchangeLow` 128 bitlik hedefin üzerine yazın.
 
-0 karşılaştırılan hedef özgün değerine eşit değil. Hedef değer değiştirilmez ve hedef değeri ile karşılaştırılan değerinin üzerine yazılır.
+karşılaştırılan, hedefin orijinal değerine eşit değilse 0. Hedefin değeri değiştirilmez ve karşılaştırın değeri hedef değeri ile üzerine yazılır.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İç|Mimari|
+|Alanlarla|Mimari|
 |---------------|------------------|
-|`_InterlockedCompareExchange128`|X64|
+|`_InterlockedCompareExchange128`|x64, ARM64|
+|`_InterlockedCompareExchange128_acq`, `_InterlockedCompareExchange128_nf`, `_InterlockedCompareExchange128_rel`|ARM64|
+|`_InterlockedCompareExchange128_np`|X64|
 
-**Üst bilgi dosyası** \<intrin.h >
+**Üst bilgi dosyası** \<Intrin. h >
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu iç oluşturur `cmpxchg16b` yönergesi (ile `lock` önek) 128 bit kilitli karşılaştırma ve değişim gerçekleştirilecek. Bu yönerge erken AMD 64 bit donanım sürümlerini desteklemez. İçin donanım desteği olup olmadığını denetlemek için `cmpxchg16b` yönerge, çağrı `__cpuid` ile iç `InfoType=0x00000001 (standard function 1)`. Bit 13 `CPUInfo[2]` (ECX) ise 1 yönerge olarak desteklenir.
+İç `_InterlockedCompareExchange128` , 128 bitlik `cmpxchg16b` bir kilitli karşılaştırma ve `lock` değişim gerçekleştirmek için yönergeyi (önekiyle birlikte) oluşturur. AMD 64 bit donanımlarının erken sürümleri bu yönergeyi desteklemez. `cmpxchg16b` Yönergeyle ilgili donanım desteğini denetlemek için, ile `__cpuid` `InfoType=0x00000001 (standard function 1)`iç öğesini çağırın. Yönerge destekleniyorsa, `CPUInfo[2]` bit 13/(ecx) 1 ' dir.
 
 > [!NOTE]
->  Değerini `ComparandResult` her zaman üzerine yazılır. Sonra `lock` yönergesi, bu iç hemen başlangıç değeri oluşan kopyalar `Destination` için `ComparandResult`. Bu nedenle, `ComparandResult` ve `Destination` beklenmeyen davranışları önlemek için ayrı bellek konumları işaret etmelidir.
+> Değerinin `ComparandResult` her zaman üzerine yazılır. Yönergeden sonra bu iç, ' ın `Destination` başlangıç değerini hemen olarak `ComparandResult`kopyalar. `lock` Bu nedenle, `ComparandResult` `Destination` beklenmeyen davranışları önlemek için ayrı bellek konumlarına işaret etmelidir.
 
-Kullanabilirsiniz, ancak `_InterlockedCompareExchange128` alt düzey bir iş parçacığı eşitleme için daha küçük bir eşitleme işlevi kullanırsanız üzerinde 128 bit eşitleme gerekmez (gibi diğer `_InterlockedCompareExchange` yapı içleri) bunun yerine. Kullanım `_InterlockedCompareExchange128` bellekte 128-bit bir değer atomik erişmek istiyorsanız.
+Alt düzey iş parçacığı `_InterlockedCompareExchange128` eşitlemesi için kullanabilirsiniz, ancak bunun yerine daha küçük eşitleme işlevleri (diğer `_InterlockedCompareExchange` iç bilgiler gibi) kullanacaksanız, 128 bit üzerinden eşitleme yapmanız gerekmez. Bellekte `_InterlockedCompareExchange128` 128 bitlik bir değere atomik erişim istiyorsanız kullanın.
 
-Kullanan kodu bu iç desteği olmayan donanım üzerinde çalıştırdığınız varsa `cmpxchg16b` yönergesi, sonuçların tahmin edilemeyeceğine.
+`cmpxchg16b` Yönergeyi desteklemeyen bir donanım kullanan kodu çalıştırırsanız, sonuçlar tahmin edilemez olur.
 
-Bu yordam yalnızca bir iç öğe kullanılabilir.
+ARM platformlarında, önemli bir bölümün başındaki ve `_acq` sonundaki `_rel` gibi alma ve bırakma semantiği için iç bilgileri ve sonekleri kullanın. `_nf` ("Sınır yok") son ek olan ARM iç bilgileri bellek engeli olarak davranmaz.
+
+`_np` ("Önceden getirme yok") sonekine sahip iç bilgiler, olası bir önceden getirme işleminin derleyici tarafından eklenmesini engeller.
+
+Bu yordam yalnızca bir iç öğe olarak kullanılabilir.
 
 ## <a name="example"></a>Örnek
 
-Bu örnekte `_InterlockedCompareExchange128` , yüksek ve düşük sözcükleri toplamıyla iki 64-bit tamsayı dizisi üst sınırı değiştirin ve alt sözcük artırın. Erişim izni BigInt.Int dizi atomik olması, ancak bu örnek, tek bir iş parçacığı kullanır ve kolaylık olması için kilitleme yok sayar.
+Bu örnek, `_InterlockedCompareExchange128` 2 64 bitlik tamsayıların bir dizisinin yüksek sözcüğünü yüksek ve düşük sözcüklerin toplamına ve düşük kelimeyi artırmak için kullanır. `BigInt.Int` Diziye erişim atomik bir örnektir, ancak bu örnek tek bir iş parçacığı kullanır ve basitlik için kilitlemeyi yoksayar.
 
-```
+```cpp
 // cmpxchg16b.c
 // processor: x64
 // compile with: /EHsc /O2
@@ -123,12 +157,11 @@ int main(void)
 BigInt.Int[1] = 34, BigInt.Int[0] = 12
 ```
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
-Telif Hakkı 2007 Gelişmiş Micro cihazlar, Inc. Tüm hakları saklıdır. Gelişmiş Micro cihazlar, Inc. izniyle üretilemez
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)<br/>
-[_InterlockedCompareExchange İç İşlevleri](../intrinsics/interlockedcompareexchange-intrinsic-functions.md)<br/>
+[Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)\
+[_InterlockedCompareExchange iç işlevleri](../intrinsics/interlockedcompareexchange-intrinsic-functions.md)\
 [x86 Derleyicisi ile Çakışma](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)

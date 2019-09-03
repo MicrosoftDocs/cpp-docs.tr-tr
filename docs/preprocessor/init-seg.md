@@ -1,6 +1,6 @@
 ---
-title: init_seg
-ms.date: 11/04/2016
+title: init_seg pragması
+ms.date: 08/29/2019
 f1_keywords:
 - vc-pragma.init_seg
 - init_seg_CPP
@@ -9,69 +9,69 @@ helpviewer_keywords:
 - init_seg pragma
 - data segment initializing [C++]
 ms.assetid: 40a5898a-5c85-4aa9-8d73-3d967eb13610
-ms.openlocfilehash: 801496739fd9bd2b8a14e699ca4da9fe79f3a28d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5e57ea0eedfc1df6e196391c5edd3acfbad0a7c7
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62383717"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70221011"
 ---
-# <a name="initseg"></a>init_seg
+# <a name="init_seg-pragma"></a>init_seg pragması
 
-**C++ özgü**
+**C++Belirli**
 
-Başlangıç kodu yürütülür sırası etkiler anahtar sözcük veya kod bölümüne belirtir.
+Başlangıç kodunun yürütüldüğü sırayı etkileyen bir anahtar sözcük veya kod bölümü belirtir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
-#pragma init_seg({ compiler | lib | user | "section-name" [, func-name]} )
-```
+> **#pragma init_seg (** { **derleyici** | **kitaplığı** | **kullanıcısı** | "*bölüm-adı*" [ **,** *Func-Name* ]} **)**
 
 ## <a name="remarks"></a>Açıklamalar
 
-Koşulları anlamını *segment* ve *bölümü* bu konudaki birbirinin yerine kullanılabilir.
+Koşullar *segmenti* ve *bölümü* Bu makalede aynı anlama sahiptir.
 
-Genel statik nesnelerin başlatılması kodu yürüten içerebildiğinden, nesnelerin oluşturulması olduğunda tanımlayan bir anahtar belirtmeniz gerekir. Kullanmak özellikle önemlidir **init_seg** pragma dinamik bağlantı kitaplıklarında (DLL'ler) veya başlatma gerektiren bir kitaplık.
+Genel statik nesneleri başlatmak için kod bazen gerekli olduğundan, nesneleri ne zaman oluþturabileceğinize belirtmeniz gerekir. Özellikle, dinamik bağlantı kitaplıkları (dll 'Ler) veya başlatma gerektiren kitaplıklarda **init_seg** pragma kullanılması önemlidir.
 
-Seçenekleri **init_seg** Pragma:
+**İnit_seg** pragmaya yönelik seçenekler şunlardır:
 
-*Derleyici*<br/>
-Microsoft C çalışma zamanı kitaplığı başlatma için ayrılmış. Bu gruptaki nesnelere önce oluşturulur.
+**Derleyici**\
+Microsoft C çalışma zamanı kitaplığı başlatması için ayrılmıştır. Bu gruptaki nesneler önce oluşturulur.
 
-*lib*<br/>
-Sınıf kitaplığı üçüncü taraf satıcıların başlatmalar için kullanılabilir. Bu gruptaki nesnelere olarak işaretlenenler sonra özniteliklerden *derleyici* ancak diğerleri önce.
+**LIB**\
+Üçüncü taraf sınıf kitaplığı satıcılarının başlatmaları için kullanılabilir. Bu gruptaki nesneler, **derleyici**olarak işaretlenenler, ancak diğerlerinden önce oluşturulur.
 
-*Kullanıcı*<br/>
-Herhangi bir kullanıcı için kullanılabilir. Bu gruptaki nesnelere son oluşturulur.
+**kullanıcısını**\
+Herhangi bir kullanıcı tarafından kullanılabilir. Bu gruptaki nesneler son olarak oluşturulur.
 
-*Bölüm adı* başlatma bölümünün açık belirtilmesine izin verir. Kullanıcı tanımlı nesneler *bölüm adı* örtük olarak oluşturulan değildir; ancak, adresleri tarafından adlandırılmış bölüm yerleştirilir *bölüm adı*.
+*Bölüm-adı*\
+Başlatma bölümünün açık belirtimine izin verir. Kullanıcı tarafından belirtilen *bölüm adı* içindeki nesneler örtülü olarak oluşturulmamış. Ancak, adresleri *bölüm adı*tarafından adlandırılan bölümüne yerleştirilir.
 
-Bölüm adı size bu modülde pragmadan sonraki bildirilen genel nesneler oluşturmak yardımcı işlev işaretçileri içerir.
+Verdiğiniz *bölüm adı* , bu modüldeki pragma öğesinden sonra belirtilen genel nesneleri oluşturacak yardımcı işlevlere işaretçiler içerir.
 
-Kullanmamanız bölüm oluştururken adlarının bir listesi için bkz. [/SECTION](../build/reference/section-specify-section-attributes.md).
+Bölüm oluştururken kullanmamanız gerekadların bir listesi için, bkz. [/section](../build/reference/section-specify-section-attributes.md).
 
-*işlev adı* yerine çağrılacak bir işlevi belirtir `atexit` zaman programdan çıkılır. Bu yardımcı işlevi de çağırır [atexit](../c-runtime-library/reference/atexit.md) yok Edicisi genel nesne işaretçisi ile. Bir işlev tanımlayıcı formun pragması yerleştirebilirsiniz belirtirseniz,
+*Func-adı*\
+Program çıktığında yerine çağrılacak `atexit` işlevi belirtir. Bu yardımcı işlev Ayrıca, genel nesne için yok edicinin işaretçisi ile birlikte [atexit](../c-runtime-library/reference/atexit.md) 'i çağırır. Formun pragma öğesinde bir işlev tanımlayıcısı belirtirseniz,
 
 ```cpp
 int __cdecl myexit (void (__cdecl *pf)(void))
 ```
 
-C çalışma zamanı kitaplığının yerine, işlev çağrılmaz sonra `atexit`. Bu nesneler yok etmek hazır olduğunuzda çağrılması gereken Yıkıcılar listesini oluşturmanıza olanak sağlar.
+ardından işleviniz C çalışma zamanı kitaplığı `atexit`'nın yerine çağırılır. Nesneleri yok etmeye hazırsanız çağrılacak yıkıcılarının bir listesini oluşturmanızı sağlar.
 
-(Örneğin, bir DLL) başlatma erteleneceği gerekiyorsa bölüm adı açıkça belirtmek tercih edebilirsiniz. Ardından, her bir statik nesne için oluşturucular çağırmanız gerekir.
+Başlatma işlemini erteetmeniz gerekiyorsa (örneğin, bir DLL 'de), Bölüm adını açık olarak belirtmeyi tercih edebilirsiniz. Kodunuzun ardından her statik nesne için oluşturucuları çağırması gerekir.
 
-İçin olan tanımlayıcıyla etrafında vardır `atexit` değiştirme.
+`atexit` Değiştirme için tanımlayıcı etrafında hiç teklif yok.
 
-Nesnelerinizi hala bir XXX_seg pragmaları tarafından tanımlanan bölümlerde yer alır.
+Nesneleriniz, diğer `XXX_seg` pragmalar tarafından tanımlanan bölümlere yerleştirilmeye devam edecektir.
 
-Modülde tanımlanmış nesneler, C çalışma zamanı tarafından otomatik olarak başlatılmayacak. Bu kendiniz yapmak gerekir.
+Modülde belirtilen nesneler C çalışma zamanı tarafından otomatik olarak başlatılmaz. Kodunuzun başlatmayı yapması gerekmez.
 
-Varsayılan olarak, `init_seg` bölümleri salt okunur. Bölüm adı ise. CRT, derleyici sessiz bir şekilde değiştirir öznitelik salt okunur işaretlenmiş olsa bile yazma.
+Varsayılan olarak, `init_seg` bölümler salt okunurdur. Bölüm adı ise `.CRT`, derleyici, okuma, yazma olarak işaretlenmiş olsa bile özniteliği sessizce salt yazılır olarak değiştirir.
 
-Belirtemezsiniz **init_seg** bir çeviri birimi içinde birden fazla.
+Bir çeviri biriminde **init_seg** birden çok kez belirtemezsiniz.
 
-Nesneniz, kod içinde açıkça tanımlanmış bir oluşturucu bir kullanıcı tanımlı oluşturucusu yok olsa bile derleyici birini (örneğin v-table işaretçileri bağlamak) oluşturabilir. Bu nedenle, kodunuz, derleyici tarafından oluşturulan oluşturucuyu çağırmak olacaktır.
+Nesneniz, kodda açıkça tanımlanmış bir Kullanıcı tanımlı oluşturucuya sahip olmasa da, derleyici sizin için bir tane oluşturabilir. Örneğin, sanal tablo işaretçilerini bağlamak için bir tane oluşturabilir. Gerektiğinde, kodunuz derleyici tarafından oluşturulan oluşturucuyu çağırır.
 
 ## <a name="example"></a>Örnek
 
@@ -156,4 +156,4 @@ A()
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+[Pragma yönergeleri ve __pragma anahtar sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

@@ -1,6 +1,6 @@
 ---
 title: __lidt
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __lidt
 - __lidt_cpp
@@ -8,46 +8,46 @@ helpviewer_keywords:
 - LIDT instruction
 - __lidt intrinsic
 ms.assetid: 8298d25d-a19e-4900-828d-6b3b09841882
-ms.openlocfilehash: 757309603af48820a17668cfe272bbeaad9239b3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 24778b761ada56830b155a2fc65e90f54ba729ed
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62263691"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70217513"
 ---
-# <a name="lidt"></a>__lidt
+# <a name="__lidt"></a>__lidt
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Değer belirtilen bellek konumunda bulunan kesme tanımlayıcısı tablosu kaydı (IDTR) yükler.
+Kesme tanımlayıcısı tablo kaydını (ıDTR) belirtilen bellek konumundaki değerle yükler.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```C
 void __lidt(void * Source);
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*Kaynak*|[in] İşaretçi değeri için IDTR kopyalanacak.|
+|*Kaynak*|'ndaki IDTR 'a kopyalanacak değere yönelik işaretçi.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İç|Mimari|
+|Alanlarla|Mimari|
 |---------------|------------------|
 |`__lidt`|x86, x64|
 
-**Üst bilgi dosyası** \<intrin.h >
+**Üst bilgi dosyası** \<Intrin. h >
 
 ## <a name="remarks"></a>Açıklamalar
 
-`__lidt` İşlev, eşdeğer `LIDT` makine yönerge ve yalnızca çekirdek modunda kullanılabilir. Belge için daha fazla bilgi için arama "Intel mimarisi yazılım geliştirici el ile 2 birim: Yönerge kümesi başvurusu"konumunda [Intel Corporation'da](https://software.intel.com/articles/intel-sdm) site.
+`__lidt` İşlevi `LIDT` makine yönergesine eşdeğerdir ve yalnızca çekirdek modunda kullanılabilir. Daha fazla bilgi için belgeyi arayın, "Intel mimarisi yazılım geliştiricisi El Ile, birim 2: Yönerge kümesi başvurusu, " [Intel Corporation](https://software.intel.com/articles/intel-sdm) sitesinde.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)<br/>
+[Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)\
 [__sidt](../intrinsics/sidt.md)

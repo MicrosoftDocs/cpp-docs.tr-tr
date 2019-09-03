@@ -1,52 +1,52 @@
 ---
-title: Derleyici İç Bilgileri
-ms.date: 11/04/2016
+title: Derleyici iç bilgileri
+ms.date: 09/02/2019
 helpviewer_keywords:
 - intrinsics, compiler
 - compiler intrinsics
 - cl.exe compiler, performance
 - cl.exe compiler, intrinsics
 ms.assetid: 48bb9929-7d78-4fd8-a092-ae3c9f971858
-ms.openlocfilehash: 9a014e870d731d7e7d443c3bfefd66884aa50d5d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8c101de6d74a4f2d3073bd220a29f2a0328d2959
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62349114"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70216875"
 ---
-# <a name="compiler-intrinsics"></a>Derleyici İç Bilgileri
+# <a name="compiler-intrinsics"></a>Derleyici iç bilgileri
 
-Çoğu işlev kitaplıklarda yer alır, ancak bazı işlevler yerleşik olarak bulunan (diğer bir deyişle, iç) derleyici. Bunlar, iç işlevler veya iç öğeler olarak adlandırılır.
+Çoğu işlev kitaplıklarda bulunur, ancak bazı işlevler derleyiciye (yani, iç) derlenmelidir. Bunlar iç işlevler veya iç bilgiler olarak adlandırılır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir işlev iç öğeyse, söz konusu işlevin kodu bir işlev çağrısının yükünden ve bu işlev için derleyicisindeki üst düzeyde verimli olan makine yönergelerine izin genelde satır içine eklenir, ' dir. Bazı iyileştirmeler kullanılabilir hale şekilde iyileştirici kaç adet iç öğenin davranış, yerleşik bir bilgiye sahip olduğundan bir iç öğe genellikle eşdeğer satır içi derlemeden daha hızlıdır kullanılamayan satır içi derlemenin kullanılması sırasında. Ayrıca iyileştirici yapı içini farklı şekilde genişletebilir, arabellekleri farklı hizalayabilir veya çağrının bağımsız değişkenler ve bağlam bağlı olarak diğer ayarlamaları yapın.
+Bir işlev içsel ise, bu işlevin kodu genellikle satır içi olarak eklenir, bir işlev çağrısının ek yükünü ortadan kaldırır ve bu işlev için yüksek düzeyde verimli makine yönergelerine izin verir. En iyi duruma getirme, en çok sayıda iç yapı ile ilgili yerleşik bir bilgiye sahip olduğundan ve satır içi derleme kullanıldığında kullanılamayan bazı iyileştirmeler kullanılabilir olduğundan, bir iç öğe genellikle denk satır içi derlemeden daha hızlıdır. Ayrıca, iyileştirici iç farklı şekilde genişleyebilir, arabellekleri farklı hizalayabilir veya çağrının bağlamına ve bağımsız değişkenlerine bağlı olarak diğer ayarlamaları yapabilirsiniz.
 
-Visual C++'da kullanılabilen yapı içleri bazı hedef mimariler için kullanılabilir bazı iç öğeler kullanılabilir değil ve kodun diğer derleyicilerle derlenmesi durumunda kullanılamayabilir çünkü kullanımı, kodun taşınabilirliğini etkiler. Tüm mimariler için. Ancak, yapı içleri genelde satır içi derlemeden daha fazla taşınabilir değildir. Satır içi derlemenin desteklenmediği 64-bit mimarilerde iç yapılar gereklidir.
+Kod diğer derleyiciler ile derlenirse ve bazı hedef mimarilerde kullanılabilecek bazı iç bilgiler olmadığından C++ , iç işlem kullanımı kod taşınabilirliği etkiler. Tüm mimarilerde kullanılabilir. Ancak, iç bilgiler genellikle satır içi derlemeden daha taşınabilir. Satır içi derlemenin desteklenmediği 64 bitlik mimarilerde iç bilgiler gereklidir.
 
-Bazı iç öğeler gibi `__assume` ve `__ReadWriteBarrier`, iyileştiricinin davranışını etkileyen derleyiciye bilgi sağlar.
+`__assume` Ve gibi bazı iç öğeler derleyiciye `__ReadWriteBarrier`bilgi sağlar ve bu da iyileştiricinin davranışını etkiler.
 
-Bazı iç öğeler yalnızca iç öğe olarak kullanılabilir ve bazıları hem işlev ve iç uygulamalarda kullanılabilir. Tüm iç özellikleri etkinleştirme istediğiniz veya derleyicinin yalnızca belirli işlevleri etkinleştirme istediğinize bağlı olarak iki yoldan biriyle iç öğe uygulaması kullanmasını söyleyebilirsiniz. İlk yol kullanmaktır `#pragma intrinsic(` *iç işlevi-adı-liste*`)`. Pragma, tek bir iç yapıyı veya virgüllerle ayrılmış birden çok iç yapıyı belirtmek için kullanılabilir. İkinci kullanmaktır [(iç işlevler Oluştur) /Oi](../build/reference/oi-generate-intrinsic-functions.md) derleyici seçeneği, belirli bir platformda tüm yapı içleri kullanılabilir hale getirir. Altında **/Oi**, kullanın `#pragma function(` *iç işlevi-adı-liste* `)` bir işlev çağrısı bir iç öğe yerine kullanılacak zorlamak için. Belirli bir iç belgelerine, notlar, yordam yalnızca bir iç öğe olarak kullanılabilir ve ardından olup olmamasına bakılmaksızın iç öğe uygulaması kullanılır **/Oi** veya `#pragma intrinsic` belirtilir. Tüm durumlarda **/Oi** veya `#pragma intrinsic` sağlar, ancak zorlamaz iyileştirici kullanmak üzere. İyileştirici hala işlevi çağırabilir.
+Bazı iç bilgiler yalnızca iç bilgiler olarak kullanılabilir ve bazıları hem işlev hem de iç uygulamalarda kullanılabilir. Yalnızca belirli işlevleri etkinleştirmek mi yoksa tüm iç bilgileri etkinleştirmek mi istediğinize bağlı olarak derleyicinin iç uygulamayı iki şekilde kullanmasını bildirebilirsiniz. İlk yöntem, `#pragma intrinsic(` *iç işlev ad listesini*`)`kullanmaktır. Pragma, virgülle ayrılmış tek bir iç veya birden çok iç yapı belirtmek için kullanılabilir. İkincisi, belirli bir platformdaki tüm iç bilgileri kullanılabilir hale getiren [/Oi (iç Işlevler üret)](../build/reference/oi-generate-intrinsic-functions.md) derleyici seçeneğini kullanmaktır. **/Oi**altında, bir `#pragma function(`işlev çağrısının bir iç yerine kullanılmasına zorlamak için *iç işlev adı-liste* `)` kullanın. Belirli bir iç belge için olan belgeler, yordamın yalnızca bir iç öğe olarak kullanılabileceğini fark etdiğine göre, iç uygulama, **/Oi** veya `#pragma intrinsic` belirtilen olduklarına bakılmaksızın kullanılır. Her durumda, **/Oi** veya `#pragma intrinsic` izin verir, ancak en iyi duruma getirmeyi zorunlu hale getirmez. İyileştirici hala işlevi çağırabilir.
 
-Bazı standart C/C++ Kitaplığı işlevleri bazı mimarilerde iç uygulamalar kullanılabilir. Bir CRT işlevini çağırırken, iç öğe uygulaması kullanılır **/Oi** komut satırında belirtilir.
+Bazı standart C/C++ kitaplık işlevleri bazı mimarilerde iç uygulamalarda kullanılabilir. CRT işlevini çağırırken, komut satırında **/Oi** belirtilmişse iç uygulama kullanılır.
 
-Bir üstbilgi dosyası \<intrin.h >, olan ortak işlevlere yönelik prototipleri bildiren kullanılabilir. Üreticiye özgü yapı içleri kullanılabilir \<immintrin.h > ve \<ammintrin.h > üst bilgi dosyaları. Ayrıca, belirli Windows üstbilgileri derleyici içine eşleyen işlevleri bildirir.
+Bir üst bilgi dosyası \<olan Intrin. h >, ortak iç işlevler için prototipler bildiren kullanılabilir. Üreticiye özgü iç bilgiler, \<ımmintrin. h > ve \<ammintrin. h > üst bilgi dosyalarında mevcuttur. Ayrıca, bazı Windows üstbilgileri bir derleyici iç üzerine eşlenen işlevleri bildirir.
 
-Aşağıdaki bölümlerde, çeşitli mimarilerde bulunan tüm yapı içleri listelenir. Yapı içlerini belirli hedef işlemci üzerinde nasıl çalıştığı hakkında daha fazla bilgi için üretici firmanın referans belgelerine bakın.
+Aşağıdaki bölümlerde, çeşitli mimarilerde bulunan tüm iç bilgiler listelenmektedir. İç bilgilerin belirli bir hedef işlemcide nasıl çalıştığı hakkında daha fazla bilgi için, üreticinin başvuru belgelerine bakın.
 
-- [ARM İç Bilgileri](../intrinsics/arm-intrinsics.md)
+- [ARM iç bilgileri](../intrinsics/arm-intrinsics.md)
 
-- [x86 İç Bilgi Listesi](../intrinsics/x86-intrinsics-list.md)
+- [x86 iç bilgi listesi](../intrinsics/x86-intrinsics-list.md)
 
 - [x64 (amd64) İç Bilgi Listesi](../intrinsics/x64-amd64-intrinsics-list.md)
 
-- [Tüm Mimarilerde Kullanılabilen İç Bilgiler](../intrinsics/intrinsics-available-on-all-architectures.md)
+- [Tüm mimarilerde kullanılabilir iç bilgiler](../intrinsics/intrinsics-available-on-all-architectures.md)
 
-- [İç İşlevlerin Alfabetik Listesi](../intrinsics/alphabetical-listing-of-intrinsic-functions.md)
+- [İç işlevlerin alfabetik listesi](../intrinsics/alphabetical-listing-of-intrinsic-functions.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[ARM Assembler Başvurusu](../assembler/arm/arm-assembler-reference.md)<br/>
-[Microsoft Macro Assembler Başvurusu](../assembler/masm/microsoft-macro-assembler-reference.md)<br/>
+[ARM Assembler başvurusu](../assembler/arm/arm-assembler-reference.md)<br/>
+[Microsoft Macro Assembler başvurusu](../assembler/masm/microsoft-macro-assembler-reference.md)<br/>
 [Anahtar Sözcükler](../cpp/keywords-cpp.md)<br/>
-[C Çalışma Zamanı Kitaplığı Başvurusu](../c-runtime-library/c-run-time-library-reference.md)
+[C çalışma zamanı kitaplığı başvurusu](../c-runtime-library/c-run-time-library-reference.md)

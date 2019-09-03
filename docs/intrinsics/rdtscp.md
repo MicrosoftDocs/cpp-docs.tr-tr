@@ -1,6 +1,6 @@
 ---
 title: __rdtscp
-ms.date: 07/11/2019
+ms.date: 09/02/2019
 f1_keywords:
 - __rdtscp
 helpviewer_keywords:
@@ -8,51 +8,51 @@ helpviewer_keywords:
 - __rdtscp intrinsic
 - rdtscp instruction
 ms.assetid: f17d9a9c-88bb-44e0-b69d-d516bc1c93ee
-ms.openlocfilehash: b8a31c6d19cd171cbe909c75a27c2389866bd578
-ms.sourcegitcommit: 0e3da5cea44437c132b5c2ea522bd229ea000a10
+ms.openlocfilehash: 4dcabd6ed0f7fb3f422927815cbdc91f2b4b9d43
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "67861104"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70221315"
 ---
-# <a name="rdtscp"></a>__rdtscp
+# <a name="__rdtscp"></a>__rdtscp
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Oluşturur `rdtscp` yönergesi, Yazar `TSC_AUX[31:0`] bellek ve 64-bit zaman damgası sayacı döndürür (`TSC)` sonucu.
+, Bellek için `TSC_AUX[31:0``TSC)` yönerge, yazma] oluşturur ve 64 bitlik zaman damgası sayacını (sonuç) döndürür. `rdtscp`
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```C
 unsigned __int64 __rdtscp(
-   unsigned int * Aux
+   unsigned int * AUX
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
-*Yedek*<br/>
-[out] İşaretçi makineye özgü kaydının içeriğini içeren bir konuma `TSC_AUX[31:0]`.
+*AUX*\
+dışı Makineye özel kaydın `TSC_AUX[31:0]`içeriğini içerecek konuma yönelik işaretçi.
 
-## <a name="return-value"></a>Dönüş Değeri
+## <a name="return-value"></a>Dönüş değeri
 
-Bir 64-bit işaretsiz tamsayı onay sayısı.
+64 bitlik işaretsiz tamsayı işaret sayısı.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İç|Mimari|
+|Alanlarla|Mimari|
 |---------------|------------------|
 |`__rdtscp`|x86, x64|
 
-**Üst bilgi dosyası** \<intrin.h >
+**Üst bilgi dosyası** \<Intrin. h >
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu iç oluşturur `rdtscp` yönergesi. Bu yönerge için donanım desteği belirlemek için çağrı `__cpuid` ile iç `InfoType=0x80000001` ve bit 27 `CPUInfo[3] (EDX)`. Bu bit Aksi takdirde yönerge destekleniyorsa 1 ve 0 olur.  Kullanan kodu bu iç desteği olmayan donanım üzerinde çalıştırdığınız varsa `rdtscp` yönergesi, sonuçların tahmin edilemeyeceğine.
+İç öğe, `rdtscp` yönergeyi oluşturur. `__rdtscp` Bu yönergeyle ilgili donanım desteğini öğrenmek için, `__cpuid` `InfoType=0x80000001` iç öğesini çağırın `CPUInfo[3] (EDX)`ve bit 27 ' yi denetleyin. Yönerge destekleniyorsa bu bit 1, değilse 0 ' dır.  `rdtscp` Yönergeyi desteklemeyen bir donanım kullanan kodu çalıştırırsanız, sonuçlar tahmin edilemez olur.
 
-Bu yönerge, tüm önceki yönergeleri yürüttünüz ve tüm önceki yüklemelerinin genel olarak görülebilir kadar bekler. Ancak, bu serileştirmek bir yönerge değil. Daha fazla bilgi için Intel ve AMD kılavuzlarına bakın.
+Bu yönerge, tüm önceki yönergelerin yürütülene ve önceki tüm yüklemeler küresel olarak görünür hale gelene kadar bekler. Ancak, bir serileştirme yönergesi değildir. Daha fazla bilgi için bkz. Intel ve AMD el kitapları.
 
-Değer anlamını `TSC_AUX[31:0]` işletim sistemine bağlıdır.
+İçindeki `TSC_AUX[31:0]` değerin anlamı işletim sistemine bağlıdır.
 
 ## <a name="example"></a>Örnek
 
@@ -74,10 +74,9 @@ int main()
 TSC_AUX was 0
 ```
 
-**END Microsoft özgü**
-
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[__rdtsc](../intrinsics/rdtsc.md)<br/>
-[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)
+[__rdtsc](../intrinsics/rdtsc.md)\
+[Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)

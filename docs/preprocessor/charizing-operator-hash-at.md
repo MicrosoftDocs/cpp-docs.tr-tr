@@ -1,6 +1,6 @@
 ---
-title: Karakterleştirme İşleci (#@)
-ms.date: 11/04/2016
+title: Karakterleştirme işleci (#@)
+ms.date: 08/29/2019
 f1_keywords:
 - '#@'
 helpviewer_keywords:
@@ -8,38 +8,39 @@ helpviewer_keywords:
 - charizing operator
 - '#@ preprocessor operator'
 ms.assetid: dee03314-d27c-4063-965c-64756efbef22
-ms.openlocfilehash: c9acc9b9872e096cd441b950632c341e975fecb8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: cb2a4e07287edf5ed2d0850ec7d870c8ef307879
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62403535"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70218537"
 ---
-# <a name="charizing-operator-"></a>Karakterleştirme İşleci (#@)
-**Microsoft'a özgü**
+# <a name="charizing-operator-"></a>Karakterleştirme işleci (#@)
 
-Karakter haline getirme işleci yalnızca makrolar bağımsız değişkenlerle kullanılabilir. Varsa `#@` biçimsel parametre önündeki Makro tanımında gerçek bağımsız değişkeni tek tırnak işareti içine alınmış ve makro genişletildiğinde bir karakter olarak kabul edilir. Örneğin:
+**Microsoft 'a özgü**
 
-```
+Charize işleci yalnızca makro bağımsız değişkenleriyle kullanılabilir. Makro `#@` tanımındaki bir biçimsel parametreden önce geliyorsa, gerçek bağımsız değişken tek tırnak işaretleri içine alınır ve makro genişletildiğinde bir karakter olarak kabul edilir. Örneğin:
+
+```cpp
 #define makechar(x)  #@x
 ```
 
-deyim neden olur
+ifadeye neden olur
 
-```
+```cpp
 a = makechar(b);
 ```
 
-değerine genişletilmesi
+genişletilecek
 
-```
+```cpp
 a = 'b';
 ```
 
-Tek tırnak karakteri karakter haline getirme işleci ile kullanılamaz.
+Tek tırnak karakteri (`'`), charize işleci ile birlikte kullanılamaz.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Ön İşlemci İşleçleri](../preprocessor/preprocessor-operators.md)
+[Önişlemci işleçleri](../preprocessor/preprocessor-operators.md)

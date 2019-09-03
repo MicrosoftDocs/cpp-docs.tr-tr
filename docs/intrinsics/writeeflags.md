@@ -1,50 +1,49 @@
 ---
 title: __writeeflags
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __writeeflags
 helpviewer_keywords:
 - __writeeflags intrinsics
 ms.assetid: a62a522c-d7fa-4f10-a620-a3b32bdf3f17
-ms.openlocfilehash: 6679a3b16def3ed413c5cec2a4bb7d5fe5d732c8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e43789d2fbed1bdc52665531c61c6c932a27f5ab
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62389924"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70219152"
 ---
-# <a name="writeeflags"></a>__writeeflags
+# <a name="__writeeflags"></a>__writeeflags
 
-Belirtilen değer programın Yazar durumu ve denetim (EFLAGS) kaydedin.
+Belirtilen değeri program durumu ve denetim (EFLAGS) kaydına yazar.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
-void __writeeflags(unsigned Value);
-void __writeeflags(unsigned __int64 Value);
+```C
+void __writeeflags(unsigned Value); /* x86 */
+void __writeeflags(unsigned __int64 Value); /* x64 */
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
-|Parametre|Açıklama|
-|---------------|-----------------|
-|*Değer*|[in] EFLAGS kasaya yazılacak değer. `Value` Parametresi 32 bit bir 32-bit platformu için uzun ve 64 bit, 64-bit platformu için uzun.|
+*Deeri*\
+'ndaki EFLAGS kaydına yazılacak değer. `Value` Parametresi, 32 bit platformun 32 bit uzunluğunda ve 64 bit platform için 64 bit uzunluğunda olur.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu yordamlar, yalnızca iç öğe olarak kullanılabilir.
+Bu yordamlar yalnızca iç bilgiler olarak kullanılabilir.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İç|Mimari|
+|Alanlarla|Mimari|
 |---------------|------------------|
 |`__writeeflags`|x86, x64|
 
-**Üst bilgi dosyası** \<intrin.h >
+**Üst bilgi dosyası** \<Intrin. h >
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)<br/>
+[Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)\
 [__readeflags](../intrinsics/readeflags.md)

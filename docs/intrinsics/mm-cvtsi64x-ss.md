@@ -1,63 +1,63 @@
 ---
 title: _mm_cvtsi64x_ss
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - _mm_cvtsi64x_ss
 helpviewer_keywords:
 - cvtsi2ss instruction
 - _mm_cvtsi64x_ss intrinsic
 ms.assetid: 01e5d321-c18a-46fd-a6f6-324364514e1f
-ms.openlocfilehash: 3ba9dc56cbb027e8cf9f31d293b3f96908aff5e4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0e9bacc56f212e804467d1c6e0159a1749235976
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62264419"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70217459"
 ---
-# <a name="mmcvtsi64xss"></a>_mm_cvtsi64x_ss
+# <a name="_mm_cvtsi64x_ss"></a>_mm_cvtsi64x_ss
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Genişletilmiş x64 oluşturur sürüm skaler tek duyarlık Floating-Point değerine dönüştürme 64-Bit tamsayı (`cvtsi2ss`) yönerge.
+Convert 64 bit tamsayının x64 genişletilmiş sürümünü skaler tek duyarlıklı kayan noktalı değer (`cvtsi2ss`) yönergesine üretir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```C
 __m128 _mm_cvtsi64x_ss(
    __m128 a,
    __int64 b
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
-*a*<br/>
-[in] Bir `__m128` dört tek duyarlıklı kayan nokta değerleri içeren yapısı.
+*a*\
+'ndaki Dört `__m128` tek duyarlıklı kayan nokta değeri içeren bir yapı.
 
-*b*<br/>
-[in] Bir kayan nokta değerine dönüştürülmesi 64-bit tamsayı.
+*kenarı*\
+'ndaki Kayan noktalı değere dönüştürülecek 64 bitlik bir tamsayı.
 
-## <a name="return-value"></a>Dönüş Değeri
+## <a name="return-value"></a>Dönüş değeri
 
-Bir `__m128` yapısı ilk kayan nokta değeri olan dönüştürme işleminin sonucu. Diğer üç değerden gelen değişmeden kopyalanır `a`.
+İlk `__m128` kayan nokta değeri, dönüştürmenin sonucu olan bir yapı. Diğer üç değer *bir*' dan değiştirilmeden kopyalanır.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İç|Mimari|
+|Alanlarla|Mimari|
 |---------------|------------------|
 |`_mm_cvtsi64x_ss`|X64|
 
-**Üst bilgi dosyası** \<intrin.h >
+**Üst bilgi dosyası** \<Intrin. h >
 
 ## <a name="remarks"></a>Açıklamalar
 
-`__m128` Yapısını temsil eden bir XMM kaydı, bu nedenle bu iç değer verir `b` bir XMM taşınacak sistem belleğinden kaydedin.
+Yapı bir XMM kaydını temsil ettiğinden, iç değer b değerinin sistem belleğinden bir XMM kaydına taşınmasına izin verir. `__m128`
 
-Bu yordam yalnızca bir iç öğe olarak kullanılabilir.
+Bu yordam yalnızca iç öğe olarak kullanılabilir.
 
 ## <a name="example"></a>Örnek
 
-```
+```cpp
 // _mm_cvtsi64x_ss.cpp
 // processor: x64
 
@@ -87,9 +87,9 @@ int main()
 54.000000 0.000000 0.000000 0.000000
 ```
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[__m128](../cpp/m128.md)<br/>
-[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)
+[__m128](../cpp/m128.md)\
+[Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)

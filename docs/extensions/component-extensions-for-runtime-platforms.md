@@ -1,7 +1,7 @@
 ---
-title: .NET ve UWP için bileşen uzantıları
+title: .NET ve UWP için Bileşen Uzantıları
 ms.date: 10/12/2018
-ms.topic: reference
+ms.topic: landing-page
 helpviewer_keywords:
 - what's new [C++], keywords
 - what's new [C++], language features
@@ -9,126 +9,126 @@ helpviewer_keywords:
 - keywords [C++]
 - Managed Extensions for C++, replacement syntax
 ms.assetid: 1e400ee6-3ac9-4910-a608-9d3d5993e423
-ms.openlocfilehash: cf123e54c633539c8e5bf8204344c842a21183ef
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 76cbb20d108745984490e67b53db39f58e34d327
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64345260"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222228"
 ---
-# <a name="component-extensions-for-net-and-uwp"></a>.NET ve UWP için bileşen uzantıları
+# <a name="component-extensions-for-net-and-uwp"></a>.NET ve UWP için Bileşen Uzantıları
 
-C++ Standart diline standart olmayan uzantı sağlamak derleyici satıcılarının izin verir. Microsoft .NET Framework veya evrensel Windows Platformu (UWP) çalışan yerel C++ kodu için kod bağlanmanıza yardımcı olması için uzantılar sağlar. .NET uzantıları adlı C++/yönetilen yürütme ortamı, ortak dil çalışma zamanı (CLR) olarak adlandırılır. NET'te yürütür CLI ve üretim kodu. UWP uzantıları adlı C++/CX ve yerel makine kodu üretir.
+Standart C++ , derleyici satıcılarının dile standart olmayan uzantılar sağlamasına izin verir. Microsoft, .NET Framework veya Evrensel Windows Platformu (UWP) C++ üzerinde çalışan koda yerel kod bağlamanıza yardımcı olacak uzantılar sağlar. .NET uzantıları/CLI olarak adlandırılır C++ve .NET yönetilen yürütme ortamında çalıştırılan ve ortak dil çalışma zamanı (CLR) olarak adlandırılan kodu üretir. UWP uzantılarına/CX adı verilir C++ve yerel makine kodu üretir.
 
 > [!NOTE]
-> Yeni uygulamalar için kullanılması önerilir C++/WinRT yerine C++/CX. C++/ WinRT bir yeni, standart C ++ 17 dil projeksiyon için Windows çalışma zamanı API ' dir. Biz C + desteklemeye devam edecektir +/ CX ve WRL, ancak yüksek yeni uygulama C + kullanmanız +/ WinRT. Daha fazla bilgi için [ C++/WinRT](/windows/uwp/cpp-and-winrt-apis/index).
+> Yeni uygulamalar için C++ C++/Cxyerine/Wınrt kullanmanızı öneririz. C++/Wınrt, Windows Çalışma Zamanı API 'Leri için yeni, standart bir C++ 17 dil projeksiyonu. /CX ve WRL 'yi C++desteklemeye devam edeceğiz, ancak yeni uygulamaların/Winrtı kullanmasını C++önemle tavsiye ederiz. Daha fazla bilgi için bkz [ C++./wınrt](/windows/uwp/cpp-and-winrt-apis/index).
 
-### <a name="two-runtimes-one-set-of-extensions"></a>İki çalışma zamanları, bir uzantı kümesi
+### <a name="two-runtimes-one-set-of-extensions"></a>İki çalışma zamanı, bir dizi uzantı
 
-C++/ CLI genişletir ISO/ANSI C++ standart ve Ecma altında tanımlanan C++CLI standart. Daha fazla bilgi için [.NET programlama C++/CLI (görsel C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md).
+C++/CLı, ISO/ANSI C++ standardını genişletir ve ECMA C++/CLI standart altında tanımlanmıştır. Daha fazla bilgi için bkz. [/CLI ( C++görsel C++) ile .NET programlama](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md).
 
-C++/CX uzantıları olan bir alt kümesini C++/CLI. Uzantı sözdizimini çoğu durumda aynı olsa da olup belirttiğiniz üzerinde oluşturulan kodu bağlıdır `/ZW` hedef UWP, derleyici seçeneği veya `/clr` hedeflenecek .NET seçeneği. Bir proje oluşturmak için Visual Studio kullandığınızda bu anahtarları otomatik olarak ayarlanır.
+/CX C++uzantıları,/cli'in C++bir alt kümesidir. Uzantı söz dizimi çoğu durumda özdeş olsa da, oluşturulan kod, UWP 'yi hedeflemek için `/ZW` derleyici seçeneğini belirtmenize `/clr` veya .net 'i hedeflemek için kullanabileceğiniz bir seçeneğe bağlıdır. Bu anahtarlar, bir proje oluşturmak için Visual Studio kullandığınızda otomatik olarak ayarlanır.
 
 ## <a name="data-type-keywords"></a>Veri türü anahtar sözcükleri
 
-Dil uzantıları dahil *toplama anahtar sözcükleri*, boşluk tarafından ayrılmış iki belirteçlerin oluşur. Birlikte kullanıldıklarında belirteçleri ayrı olarak kullanıldığında bir anlamı ve başka bir anlama sahip olabilir. Örneğin, "başvuru" normal bir tanımlayıcı olup ve "class" yerel bir sınıfı bildirir bir anahtar sözcüktür. Ancak, bu sözcükler birleştirilir forma **başvuru sınıfı**, sonuçta elde edilen toplam anahtar sözcüğü olarak bilinen bir varlık bildirir bir *çalışma zamanı sınıf*.
+Dil uzantıları, boşluk ile ayrılmış iki belirteçden oluşan *toplama anahtar sözcüklerini*içerir. Belirteçlerin ayrı olarak kullanıldıkları bir anlamı olabilir ve birlikte kullanıldıkları bir anlamı vardır. Örneğin, "ref" sözcüğü sıradan bir tanımlayıcıdır ve "Class" sözcüğü, yerel bir sınıfı bildiren bir anahtar sözcüktür. Ancak, bu sözcükler form **başvuru sınıfında**birleştirildiğinde, elde edilen toplama anahtar sözcüğü, *çalışma zamanı sınıfı*olarak bilinen bir varlık bildirir.
 
-Uzantıları de *bağlama duyarlı* anahtar sözcükleri. Bir anahtar sözcüğü, bağlama duyarlı olarak ve o ifadedeki yerleşimi içeren ifade türünü bağlı olarak kabul edilir. Örneğin, bir tanımlayıcı "özelliği" belirteci olabilir ya da ortak sınıf üyesine özel bir tür bildirebilirsiniz.
+Uzantılar ayrıca *bağlama duyarlı* anahtar sözcükler içerir. Anahtar sözcüğü, kendisini içeren deyimin türüne ve bu deyimdeki yerleşimine göre bağlama duyarlı olarak değerlendirilir. Örneğin, belirteç "özelliği" bir tanımlayıcı olabilir veya özel bir ortak sınıf üyesi türü bildirebilir.
 
-Aşağıdaki tabloda, C++ dil uzantısı anahtar sözcükleri listeler.
+Aşağıdaki tabloda C++ dil uzantısında anahtar sözcükler listelenmektedir.
 
 |Anahtar sözcüğü|Bağlama duyarlı|Amaç|Başvuru|
 |-------------|-----------------------|-------------|---------------|
-|**başvuru sınıfı**<br /><br /> **ref struct**|Hayır|Bir sınıfı bildirir.|[Sınıflar ve Yapılar](classes-and-structs-cpp-component-extensions.md)|
-|**Değer sınıfı**<br /><br /> **değer yapısı**|Hayır|Değer sınıfı bildirir.|[Sınıflar ve Yapılar](classes-and-structs-cpp-component-extensions.md)|
-|**arabirim sınıfı**<br /><br /> **Arabirim yapı birimi**|Hayır|Bir arabirim bildirir.|[arabirim sınıfı](interface-class-cpp-component-extensions.md)|
-|**sabit listesi sınıfı**<br /><br /> **Numaralandırma yapı birimi**|Hayır|Bir sabit listesi bildirir.|[sabit listesi sınıfı](enum-class-cpp-component-extensions.md)|
-|**property**|Evet|Bir özelliği bildirir.|[property](property-cpp-component-extensions.md)|
+|**başvuru sınıfı**<br /><br /> **ref yapısı**|Hayır|Bir sınıf bildirir.|[Sınıflar ve Yapılar](classes-and-structs-cpp-component-extensions.md)|
+|**değer sınıfı**<br /><br /> **value yapısı**|Hayır|Değer sınıfını bildirir.|[Sınıflar ve Yapılar](classes-and-structs-cpp-component-extensions.md)|
+|**arabirim sınıfı**<br /><br /> **arabirim yapısı**|Hayır|Bir arabirim bildirir.|[arabirim sınıfı](interface-class-cpp-component-extensions.md)|
+|**sabit listesi sınıfı**<br /><br /> **Enum yapısı**|Hayır|Bir sabit listesi bildirir.|[sabit listesi sınıfı](enum-class-cpp-component-extensions.md)|
+|**property**|Evet|Bir özellik bildirir.|[property](property-cpp-component-extensions.md)|
 |**delegate**|Evet|Bir temsilci bildirir.|[delegate (C++/CLI ve C++/CX)](delegate-cpp-component-extensions.md)|
 |**event**|Evet|Bir olayı bildirir.|[event](event-cpp-component-extensions.md)|
 
 ## <a name="override-specifiers"></a>Geçersiz Kılma Tanımlayıcıları
 
-Geçersiz kılma davranışını türetme nitelemek için aşağıdaki anahtar sözcükler kullanabilirsiniz. Ancak **yeni** anahtar sözcüğü C++'ın bir uzantısı değil, çünkü başka bir bağlamda kullanılabilir burada listelenir. Bazı tanımlayıcıları da yerel programlama için geçerlidir. Daha fazla bilgi için [nasıl yapılır: Yerel derlemelerde geçersiz kılma tanımlayıcılarını bildirme (C++/CLI)](../dotnet/how-to-declare-override-specifiers-in-native-compilations-cpp-cli.md).
+Türetme için geçersiz kılma davranışını nitelemek için aşağıdaki anahtar sözcükleri kullanabilirsiniz. **Yeni** anahtar sözcüğü bir uzantısı olmasa da C++, ek bir bağlamda kullanılabilmesi için burada listelenir. Bazı tanımlayıcılar yerel programlama için de geçerlidir. Daha fazla bilgi için [nasıl yapılır: Yerel derlemelerde (C++/CLI)](../dotnet/how-to-declare-override-specifiers-in-native-compilations-cpp-cli.md)geçersiz kılma belirticileri bildirin.
 
 |Anahtar sözcüğü|Bağlama duyarlı|Amaç|Başvuru|
 |-------------|-----------------------|-------------|---------------|
-|**abstract**|Evet|İşlevler veya sınıflar abstract olduğunu gösterir.|[abstract](abstract-cpp-component-extensions.md)|
-|**new**|Hayır|Bir işlevi geçersiz kılma bir temel sınıf sürümü olmadığını gösterir.|[yeni (vtable'de yeni yuva)](new-new-slot-in-vtable-cpp-component-extensions.md)|
-|**override**|Evet|Bir yöntemi geçersiz kılma bir temel sınıf sürümü olması gerektiğini gösterir.|[override](override-cpp-component-extensions.md)|
-|**sealed**|Evet|Sınıflar temel sınıf olarak kullanılmasını engeller.|[sealed](sealed-cpp-component-extensions.md)|
+|**abstract**|Evet|İşlevlerin veya sınıfların soyut olduğunu gösterir.|[abstract](abstract-cpp-component-extensions.md)|
+|**new**|Hayır|Bir işlevin temel sınıf sürümünün geçersiz kılınmadığını gösterir.|[yeni (vtable'de yeni yuva)](new-new-slot-in-vtable-cpp-component-extensions.md)|
+|**override**|Evet|Bir yöntemin temel sınıf sürümünün geçersiz kılınması olması gerektiğini belirtir.|[override](override-cpp-component-extensions.md)|
+|**sealed**|Evet|Sınıfların temel sınıf olarak kullanılmasını önler.|[sealed](sealed-cpp-component-extensions.md)|
 
 ## <a name="keywords-for-generics"></a>Genel türler için anahtar sözcükler
 
-Aşağıdaki anahtar sözcükler, genel türleri desteklemek için eklendi. Daha fazla bilgi için [genel türler](generics-cpp-component-extensions.md).
+Aşağıdaki anahtar sözcükler genel türleri desteklemek için eklenmiştir. Daha fazla bilgi için bkz. [Genel türler](generics-cpp-component-extensions.md).
 
 |Anahtar sözcüğü|Bağlama duyarlı|Amaç|
 |-------------|-----------------------|-------------|
-|**Genel**|Hayır|Genel bir tür bildirir.|
-|**Burada**|Evet|Bir genel tür parametresine uygulanan kısıtlamaları belirtir.|
+|**yorlar**|Hayır|Genel bir tür bildirir.|
+|**olmadığı**|Evet|Genel tür parametresine uygulanan kısıtlamaları belirtir.|
 
-## <a name="miscellaneous-keywords"></a>Çeşitli anahtar sözcükleri
+## <a name="miscellaneous-keywords"></a>Çeşitli anahtar sözcükler
 
-Aşağıdaki anahtar sözcükler için C++ uzantısı eklenip eklenmediğini.
+C++ Uzantılara aşağıdaki anahtar sözcükler eklenmiştir.
 
 |Anahtar sözcüğü|Bağlama duyarlı|Amaç|Başvuru|
 |-------------|-----------------------|-------------|---------------|
-|**finally**|Evet|Varsayılan özel durum handlings davranış gösterir.|[Özel Durum İşleme](exception-handling-cpp-component-extensions.md)|
-|**for each, in**|Hayır|Bir koleksiyonun öğeleri sıralar.|[for each, in](../dotnet/for-each-in.md)|
-|**gcnew**|Hayır|Atık olarak toplanmış yığındaki türler ayırır. Kullanım yerine **yeni** ve **Sil**.|[yeni başvuru, gcnew](ref-new-gcnew-cpp-component-extensions.md)|
-|**Yeni başvuru**|Evet|Bir Windows çalışma zamanı türü ayırır. Kullanım yerine **yeni** ve **Sil**.|[yeni başvuru, gcnew](ref-new-gcnew-cpp-component-extensions.md)|
-|**initonly**|Evet|Bir üyesi yalnızca bildirimi veya statik oluşturucuda başlatılabilir olduğunu gösterir.|[initonly (C++/CLI)](../dotnet/initonly-cpp-cli.md)|
-|**değişmez değer**|Evet|Sabit bir değişken oluşturur.|[değişmez değer](literal-cpp-component-extensions.md)|
-|**nullptr**|Hayır|Tanıtıcı veya işaretçi bir nesne göstermiyor gösterir.|[nullptr](nullptr-cpp-component-extensions.md)|
+|**finally**|Evet|Varsayılan özel durum handller davranışını gösterir.|[Özel Durum İşleme](exception-handling-cpp-component-extensions.md)|
+|**for each, in**|Hayır|Bir koleksiyonun öğelerini numaralandırır.|[for each, in](../dotnet/for-each-in.md)|
+|**gcnew**|Hayır|Atık toplanan yığında türleri ayırır. **New** ve **Delete**yerine kullanın.|[yeni başvuru, gcnew](ref-new-gcnew-cpp-component-extensions.md)|
+|**Yeni başvuru**|Evet|Windows Çalışma Zamanı türünü ayırır. **New** ve **Delete**yerine kullanın.|[yeni başvuru, gcnew](ref-new-gcnew-cpp-component-extensions.md)|
+|**initonly**|Evet|Üyenin yalnızca bildirimde veya statik oluşturucuda başlatılabileceğini belirtir.|[initonly (C++/CLI)](../dotnet/initonly-cpp-cli.md)|
+|**değişmez değer**|Evet|Değişmez değer değişkeni oluşturur.|[değişmez değer](literal-cpp-component-extensions.md)|
+|**nullptr**|Hayır|Bir tanıtıcı veya işaretçinin bir nesneyi işaret içermediğini belirtir.|[nullptr](nullptr-cpp-component-extensions.md)|
 
 ## <a name="template-constructs"></a>Şablon yapıları
 
-Aşağıdaki dil yapıları olarak anahtar sözcükler yerine şablon olarak uygulanır. Belirtirseniz `/ZW` derleyici seçeneği, bunlar tanımlanır `lang` ad alanı. Belirtirseniz `/clr` derleyici seçeneği, bunlar tanımlanır `cli` ad alanı.
+Aşağıdaki dil yapıları, anahtar sözcükler yerine şablon olarak uygulanır. `/ZW` Derleyici seçeneğini belirtirseniz, bunlar `lang` ad alanında tanımlanır. `/clr` Derleyici seçeneğini belirtirseniz, bunlar `cli` ad alanında tanımlanır.
 
 |Anahtar sözcüğü|Amaç|Başvuru|
 |-------------|-------------|---------------|
-|**Dizi**|Bir diziyi bildirir.|[Diziler](arrays-cpp-component-extensions.md)|
-|**interior_ptr**|(Yalnızca CLR) Bir başvuru türü verilerinde işaret eder.|[interior_ptr (C++/CLI)](interior-ptr-cpp-cli.md)|
-|**pin_ptr**|(Yalnızca CLR) Çöp toplama sistemin geçici olarak engellemek için CLR başvuru türleri işaret eder.|[pin_ptr (C++/CLI)](pin-ptr-cpp-cli.md)|
-|**safe_cast**|Belirler ve bir çalışma zamanı türü için en iyi atama yöntemini yürütür.|[safe_cast](safe-cast-cpp-component-extensions.md)|
-|**typeid**|(Yalnızca CLR) Alır bir <xref:System.Type?displayProperty=fullName> belirtilen türün veya nesneyi tanımlayan nesne.|[typeid](typeid-cpp-component-extensions.md)|
+|**array**|Bir dizi bildirir.|[Diziler](arrays-cpp-component-extensions.md)|
+|**interior_ptr**|(Yalnızca CLR) Başvuru türündeki verileri gösterir.|[interior_ptr (C++/CLI)](interior-ptr-cpp-cli.md)|
+|**pin_ptr**|(Yalnızca CLR) Çöp toplama sisteminin geçici olarak görüntülenmesini sağlamak için CLR başvuru türlerini işaret eder.|[pin_ptr (C++/CLI)](pin-ptr-cpp-cli.md)|
+|**safe_cast**|Çalışma zamanı türü için en iyi atama yöntemini belirler ve yürütür.|[safe_cast](safe-cast-cpp-component-extensions.md)|
+|**typeid**|(Yalnızca CLR) Verilen türü <xref:System.Type?displayProperty=fullName> veya nesneyi açıklayan bir nesne alır.|[typeid](typeid-cpp-component-extensions.md)|
 
 ## <a name="declarators"></a>Bildirimciler
 
-Aşağıdaki tür bildirimcileri ömrü ve ayrılmış nesne silme işlemlerini otomatik olarak yönetmek için çalışma zamanı isteyin.
+Aşağıdaki tür Bildirimciler, çalışma zamanına ayrılan nesnelerin ömrünü ve silinmesini otomatik olarak yönetmesini ister.
 
 |İşleç|Amaç|Başvuru|
 |--------------|-------------|---------------|
-|`^`|Bir nesne için bir tanıtıcı bildirir; diğer bir deyişle, artık kullanılabilir olduğunda otomatik olarak silinen bir Windows çalışma zamanı veya CLR nesnesine bir işaretçi.|[İşlenecek Nesne İşleci (^)](handle-to-object-operator-hat-cpp-component-extensions.md)|
-|`%`|İzleme başvurusu bildirir; diğer bir deyişle, artık kullanılabilir olduğunda otomatik olarak silinen bir Windows çalışma zamanı veya CLR nesnesine bir başvuru.|[İzleme Başvurusu İşleci](tracking-reference-operator-cpp-component-extensions.md)|
+|`^`|Bir nesneye yönelik bir tanıtıcı bildirir; diğer bir deyişle, artık kullanılabilir olmadığında otomatik olarak silinen Windows Çalışma Zamanı veya CLR nesnesine yönelik bir işaretçidir.|[İşlenecek Nesne İşleci (^)](handle-to-object-operator-hat-cpp-component-extensions.md)|
+|`%`|Bir izleme başvurusu bildirir; diğer bir deyişle, artık kullanılabilir olmadığında otomatik olarak silinen Windows Çalışma Zamanı veya CLR nesnesine bir başvurudur.|[İzleme Başvurusu İşleci](tracking-reference-operator-cpp-component-extensions.md)|
 
-## <a name="additional-constructs-and-related-topics"></a>Ek yapıları ve ilgili konular
+## <a name="additional-constructs-and-related-topics"></a>Ek yapılar ve Ilgili konular
 
-Bu bölümde ek programlama yapıları ve CLR ile ilgili konuları listeler.
+Bu bölümde, ek programlama yapıları ve CLR ile ilgili konular listelenmektedir.
 
 |Konu|Açıklama|
 |-----------|-----------------|
-|[__tanımlayıcı (C++/CLI)](identifier-cpp-cli.md)|(Windows çalışma zamanı ve CLR) Tanımlayıcı olarak anahtar sözcük kullanımını etkinleştirir.|
-|[Değişken Bağımsız Değişken Listeleri (...) (C++/CLI)](variable-argument-lists-dot-dot-dot-cpp-cli.md)|(Windows çalışma zamanı ve CLR) Değişken sayıda bağımsız değişken için bir işlev sağlar.|
-|[C++ Yerel Türlerinin .NET Framework Eşdeğerleri (C++/CLI)](../dotnet/dotnet-framework-equivalents-to-cpp-native-types-cpp-cli.md)|C++ tamsayı türleri yerine kullanılan CLR türlerini listeler.|
-|[AppDomain](../cpp/appdomain.md) **__declspec** değiştiricisi|**__declspec** statik ve genel değişkenleri uygulama etki alanı mevcut taahhütlerin değiştiricisi.|
-|[/ CLR ile C türü atamalar (C++/CLI)](c-style-casts-with-clr-cpp-cli.md)|C türü atamalar yorumlanma şeklini tanımlar.|
-|[__clrcall](../cpp/clrcall.md) çağırma kuralı|CLR uyumlu çağırma kuralını belirtir.|
+|[__tanımlayıcı (C++/CLI)](identifier-cpp-cli.md)|(Windows Çalışma Zamanı ve CLR) Anahtar sözcüklerin tanımlayıcı olarak kullanılmasına izin vermez.|
+|[Değişken Bağımsız Değişken Listeleri (...) (C++/CLI)](variable-argument-lists-dot-dot-dot-cpp-cli.md)|(Windows Çalışma Zamanı ve CLR) Bir işlevin değişken sayıda bağımsız değişken almasını sağlar.|
+|[C++ Yerel Türlerinin .NET Framework Eşdeğerleri (C++/CLI)](../dotnet/dotnet-framework-equivalents-to-cpp-native-types-cpp-cli.md)|C++ İntegral türlerinin yerıne kullanılan CLR türlerini listeler.|
+|[AppDomain](../cpp/appdomain.md) **__declspec** değiştiricisi|statik ve genel değişkenlerin AppDomain başına mevcut olduğunu gösteren **__declspec** değiştiricisi.|
+|[/Clr (C++/CLI) Ile C stili atamalar](c-style-casts-with-clr-cpp-cli.md)|C stili, nasıl yorumlandığını açıklar.|
+|[__clrcall](../cpp/clrcall.md) çağrı kuralı|CLR uyumlu çağırma kuralını gösterir.|
 |`__cplusplus_cli`|[Önceden Tanımlanmış Makrolar](../preprocessor/predefined-macros.md)|
-|[Özel Öznitelikler](user-defined-attributes-cpp-component-extensions.md)|Kendi CLR öznitelikleri tanımlanacağını açıklar.|
-|[Özel Durum İşleme](exception-handling-cpp-component-extensions.md)|Özel durum işleme genel bir bakış sağlar.|
-|[Açık Geçersiz Kılmalar](explicit-overrides-cpp-component-extensions.md)|Üye işlevleri rastgele üyeleri nasıl kılabilirsiniz gösterir.|
-|[Arkadaş Derlemeler (C++)](../dotnet/friend-assemblies-cpp.md)|İstemci bütünleştirilmiş kod derleme bileşeninin tüm türlerin nasıl erişebileceğinizi açıklanır.|
-|[Kutulama](boxing-cpp-component-extensions.md)|Değerleri Kutulu türlerden oluşur koşullar gösterir.|
-|[Tür Özellikleri için Derleyici Desteği](compiler-support-for-type-traits-cpp-component-extensions.md)|Derleme zamanında tür özelliklerini nasıl ele alınmaktadır.|
-|[yönetilen, yönetilmeyen](../preprocessor/managed-unmanaged.md) pragmaları|Yönetilen ve yönetilmeyen işlevleri gösterir aynı modülünde birlikte bulunabilir.|
-|[işlem](../cpp/process.md) **__declspec** değiştiricisi|**__declspec** statik ve genel değişkenler her işlem mevcut taahhütlerin değiştiricisi.|
-|[Yansıma (C++/CLI)](../dotnet/reflection-cpp-cli.md)|Çalışma zamanı türü bilgileri CLR sürümünü gösterir.|
-|[Dize](string-cpp-component-extensions.md)|Dize sabit değerleri için derleyici dönüştürülmesi açıklanmaktadır <xref:System.String>.|
-|[Tür İletme (C++/CLI)](type-forwarding-cpp-cli.md)|İstemci kodunun derlenmesi gerekmez. böylece başka bir derleme için bir Kargo derlemedeki bir türe hareketini sağlar.|
-|[Kullanıcı Tanımlı Öznitelikler](user-defined-attributes-cpp-component-extensions.md)|Kullanıcı tanımlı öznitelikler gösterir.|
-|[#using yönergesi](../preprocessor/hash-using-directive-cpp.md)|Dış derlemeler içeri aktarır.|
-|[XML Belgeleri](../build/reference/xml-documentation-visual-cpp.md)|Kullanarak XML-tabanlı kod belgelerinde açıklanır  [ /doc (işlem belgeleri açıklamaları) (C/C++)](../build/reference/doc-process-documentation-comments-c-cpp.md)|
+|[Özel Öznitelikler](user-defined-attributes-cpp-component-extensions.md)|Kendi CLR öznitelerinizi nasıl tanımlayacağınızı açıklar.|
+|[Özel Durum İşleme](exception-handling-cpp-component-extensions.md)|Özel durum işlemeye genel bir bakış sağlar.|
+|[Açık Geçersiz Kılmalar](explicit-overrides-cpp-component-extensions.md)|Üye işlevlerin rastgele üyeleri nasıl geçersiz kılabileceğinizi gösterir.|
+|[Arkadaş Derlemeler (C++)](../dotnet/friend-assemblies-cpp.md)|Bir istemci derlemesinin bir derleme bileşenindeki tüm türlere nasıl erişebileceğinizi açıklar.|
+|[Kutulama](boxing-cpp-component-extensions.md)|Değer türlerinin kutulanmış olduğu koşulları gösterir.|
+|[Tür Özellikleri için Derleyici Desteği](compiler-support-for-type-traits-cpp-component-extensions.md)|Derleme zamanında türlerin özelliklerinin nasıl algılanacağını açıklar.|
+|[yönetilen, yönetilmeyen](../preprocessor/managed-unmanaged.md) pragmalar|Yönetilen ve yönetilmeyen işlevlerin aynı modülde nasıl ortak bulunabildiğini gösterir.|
+|[işlem](../cpp/process.md) **__declspec** değiştiricisi|statik ve genel değişkenlerin işlem başına mevcut olduğunu gösteren **__declspec** değiştiricisi.|
+|[Yansıma (C++/CLI)](../dotnet/reflection-cpp-cli.md)|Çalışma zamanı tür bilgilerinin CLR sürümünü gösterir.|
+|[Dize](string-cpp-component-extensions.md)|Dize sabit <xref:System.String>değerlerinin derleyicinin dönüştürülmesini açıklar.|
+|[Tür İletme (C++/CLI)](type-forwarding-cpp-cli.md)|İstemci kodunun yeniden derlenmesi zorunda olmaması için, bir sevkiyat derlemesinde bir türün başka bir derlemeye taşınmasını sağlar.|
+|[Kullanıcı Tanımlı Öznitelikler](user-defined-attributes-cpp-component-extensions.md)|Kullanıcı tanımlı öznitelikleri gösterir.|
+|[#using yönergesi](../preprocessor/hash-using-directive-cpp.md)|Dış derlemeleri içeri aktarır.|
+|[XML Belgeleri](../build/reference/xml-documentation-visual-cpp.md)|[/Doc (Işlem belgeleri açıklamaları)C++](../build/reference/doc-process-documentation-comments-c-cpp.md) kullanılarak XML tabanlı kod belgelerini açıklar (C/)|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

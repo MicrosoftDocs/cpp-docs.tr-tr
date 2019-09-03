@@ -1,60 +1,60 @@
 ---
 title: __vmx_on
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __vmx_on
 helpviewer_keywords:
 - VMXON instruction
 - __vmx_on intrinsic
 ms.assetid: 16804991-6a75-4adf-8ec2-bc95acfa4801
-ms.openlocfilehash: de903eeeb29e3c194a36ccb4cb038ba89b8ea82f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b6041711d9b6806362b856475151f2c4f63750cb
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62390145"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70219580"
 ---
-# <a name="vmxon"></a>__vmx_on
+# <a name="__vmx_on"></a>__vmx_on
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Sanal makine Uzantıları (VMX) işlemci işlemindeki etkinleştirir.
+İşlemcisinde sanal makine uzantıları (VMX) işlemini etkinleştirir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```C
 unsigned char __vmx_on(
    unsigned __int64 *VmsSupportPhysicalAddress
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
-*VmsSupportPhysicalAddress*<br/>
-[in] Bir sanal makine denetim yapısı (Windows VMCS) işaret eden bir 64 bit fiziksel adresi için bir işaretçi.
+*VmsSupportPhysicalAddress*\
+'ndaki Bir sanal makine denetim yapısına (VMCS) işaret eden 64 bitlik bir fiziksel adrese yönelik bir işaretçi.
 
-## <a name="return-value"></a>Dönüş Değeri
+## <a name="return-value"></a>Dönüş değeri
 
 |Değer|Açıklama|
 |-----------|-------------|
 |0|İşlem başarılı oldu.|
-|1.|İşlem başarısız oldu bulunan genişletilmiş durumundaki `VM-instruction error field` , geçerli Windows VMCS.|
-|2|İşlem durumu olmadan başarısız oldu.|
+|1\.|İşlem, geçerli VNET `VM-instruction error field` 'lerin içinde kullanılabilir olan genişletilmiş durumla başarısız oldu.|
+|2|İşlem durum kullanılabilir olmadan başarısız oldu.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`__vmx_on` İşlevi karşılık gelen `VMXON` makine yönergesi. Bu işlev, bir konuk işletim sistemi ve uygulamaları ile bir konağın sanal makine İzleyici etkileşimi destekler. Daha fazla bilgi için "Intel Sanallaştırma teknik belirtimi IA-32 Intel mimari," Belge ara adresindeki sayı C97063 002 belge [Intel Corporation'da](https://software.intel.com/articles/intel-sdm) site.
+`__vmx_on` İşlev ,`VMXON` makine yönergesine karşılık gelir. Bu işlev, bir konağın sanal makine izleyicisinin Konuk işletim sistemiyle ve uygulamalarına yönelik etkileşimini destekler. Daha fazla bilgi için, [Intel Corporation](https://software.intel.com/articles/intel-sdm) SITESINDE "ıa-32 Intel mimarisi Için Intel Sanallaştırma teknik belirtimi" belge numarası C97063-002 olan belgeyi arayın.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İç|Mimari|
+|Alanlarla|Mimari|
 |---------------|------------------|
 |`__vmx_on`|X64|
 
-**Üst bilgi dosyası** \<intrin.h >
+**Üst bilgi dosyası** \<Intrin. h >
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)
+[Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)

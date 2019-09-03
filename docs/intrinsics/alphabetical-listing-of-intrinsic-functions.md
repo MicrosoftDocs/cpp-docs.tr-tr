@@ -6,16 +6,16 @@ helpviewer_keywords:
 - intrinsics, alphabetical list
 - intrinsics
 ms.assetid: 178f88a2-7e8e-43ac-b55e-ef3298bef895
-ms.openlocfilehash: 67206e63d163b489c5087e6bc6759cde30a3d6c4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ff6957436ecfb86ae44388e55488981f528f2c73
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62264321"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70220086"
 ---
 # <a name="alphabetical-listing-of-intrinsic-functions"></a>İç işlevlerin alfabetik listesi
 
-Aşağıdaki bölümlerde, Microsoft'a özgü iç işlevleri kullanılabilir bazı veya tüm mimarilerde açıklanmaktadır. İşlemci üreticisi, üstbilgi dosyalarına veya kendi Web sitelerinde tarafından desteklenen diğer yapı içleri belgelenmiştir. Bkz: [ARM iç bilgileri](../intrinsics/arm-intrinsics.md), [x86 yapı içleri](../intrinsics/x86-intrinsics-list.md), ve [x64 yapı içleri](../intrinsics/x64-amd64-intrinsics-list.md) bölümleri üretici belgelerine bağlantılar için. Bunlar için uygulanan iç C çalışma zamanı kitaplığı (CRT) işlevleri aşağıda belirtilmiştir değil; Bu işlevler bölümünde belgelendirilen [C çalışma zamanı kitaplığı başvurusu](../c-runtime-library/c-run-time-library-reference.md).
+Aşağıdaki bölümlerde, bazı veya tüm mimarilerde sunulan Microsoft 'a özgü iç işlevler açıklanır. Desteklenen diğer iç bilgiler, bu, üst bilgi dosyalarında veya Web sitelerinde bulunan işlemci üreticilerine göre belgelenmiştir. Üretici belgelerinin bağlantıları için [ARM iç](../intrinsics/arm-intrinsics.md)bilgileri, [x86 iç](../intrinsics/x86-intrinsics-list.md)bilgileri ve [x64 iç](../intrinsics/x64-amd64-intrinsics-list.md) bilgileri bölümlerine bakın. C çalışma zamanı kitaplığı (CRT) onlar için uygulanan iç işlevleri burada açıklanmamıştır; Bu işlevler, [C çalışma zamanı kitaplığı başvurusunda](../c-runtime-library/c-run-time-library-reference.md)belgelenmiştir.
 
 [__addfsbyte, \__addfsword, \__addfsdword](../intrinsics/addfsbyte-addfsword-addfsdword.md)
 
@@ -37,7 +37,7 @@ Aşağıdaki bölümlerde, Microsoft'a özgü iç işlevleri kullanılabilir baz
 
 [_bittestandset, _bittestandset64](../intrinsics/bittestandset-bittestandset64.md)
 
-[__cpuid, \__cpuidex](../intrinsics/cpuid-cpuidex.md)
+[__cpuıd, \__cpuıdex](../intrinsics/cpuid-cpuidex.md)
 
 [__debugbreak](../intrinsics/debugbreak.md)
 
@@ -69,35 +69,35 @@ Aşağıdaki bölümlerde, Microsoft'a özgü iç işlevleri kullanılabilir baz
 
 [__int2c](../intrinsics/int2c.md)
 
-[_InterlockedAdd İç İşlevleri](../intrinsics/interlockedadd-intrinsic-functions.md)
+[_InterlockedAdd iç işlevleri](../intrinsics/interlockedadd-intrinsic-functions.md)
 
 [_InterlockedAddLargeStatistic](../intrinsics/interlockedaddlargestatistic.md)
 
-[_InterlockedAnd İç İşlevleri](../intrinsics/interlockedand-intrinsic-functions.md)
+[_InterlockedAnd iç işlevleri](../intrinsics/interlockedand-intrinsic-functions.md)
 
-[_interlockedbittestandreset İç İşlevleri](../intrinsics/interlockedbittestandreset-intrinsic-functions.md)
+[_ınterlockedbittestandreset iç işlevleri](../intrinsics/interlockedbittestandreset-intrinsic-functions.md)
 
-[_interlockedbittestandset İç İşlevleri](../intrinsics/interlockedbittestandset-intrinsic-functions.md)
+[_ınterlockedbittestandset iç işlevleri](../intrinsics/interlockedbittestandset-intrinsic-functions.md)
 
-[_InterlockedCompareExchange İç İşlevleri](../intrinsics/interlockedcompareexchange-intrinsic-functions.md)
+[_InterlockedCompareExchange iç işlevleri](../intrinsics/interlockedcompareexchange-intrinsic-functions.md)
 
 [_InterlockedCompareExchange128](../intrinsics/interlockedcompareexchange128.md)
 
-[_InterlockedCompareExchangePointer İç İşlevleri](../intrinsics/interlockedcompareexchangepointer-intrinsic-functions.md)
+[_Interlockedcompareexchangepointer iç işlevleri](../intrinsics/interlockedcompareexchangepointer-intrinsic-functions.md)
 
-[_InterlockedDecrement İç İşlevleri](../intrinsics/interlockeddecrement-intrinsic-functions.md)
+[_Interlockedazaltma iç işlevleri](../intrinsics/interlockeddecrement-intrinsic-functions.md)
 
-[_InterlockedExchange İç İşlevleri](../intrinsics/interlockedexchange-intrinsic-functions.md)
+[_InterlockedExchange iç işlevleri](../intrinsics/interlockedexchange-intrinsic-functions.md)
 
-[_InterlockedExchangeAdd İç İşlevleri](../intrinsics/interlockedexchangeadd-intrinsic-functions.md)
+[_InterlockedExchangeAdd iç işlevleri](../intrinsics/interlockedexchangeadd-intrinsic-functions.md)
 
-[_InterlockedExchangePointer İç İşlevleri](../intrinsics/interlockedexchangepointer-intrinsic-functions.md)
+[_InterlockedExchangePointer iç işlevleri](../intrinsics/interlockedexchangepointer-intrinsic-functions.md)
 
-[_InterlockedIncrement İç İşlevleri](../intrinsics/interlockedincrement-intrinsic-functions.md)
+[_InterlockedIncrement iç işlevleri](../intrinsics/interlockedincrement-intrinsic-functions.md)
 
-[_InterlockedOr İç İşlevleri](../intrinsics/interlockedor-intrinsic-functions.md)
+[_InterlockedOr iç işlevleri](../intrinsics/interlockedor-intrinsic-functions.md)
 
-[_InterlockedXor İç İşlevleri](../intrinsics/interlockedxor-intrinsic-functions.md)
+[_InterlockedXor iç işlevleri](../intrinsics/interlockedxor-intrinsic-functions.md)
 
 [__invlpg](../intrinsics/invlpg.md)
 
@@ -111,7 +111,7 @@ Aşağıdaki bölümlerde, Microsoft'a özgü iç işlevleri kullanılabilir baz
 
 [__ll_rshift](../intrinsics/ll-rshift.md)
 
-[__lzcnt16, \__lzcnt, \__lzcnt64](../intrinsics/lzcnt16-lzcnt-lzcnt64.md)
+[__lzcnt16, \__lzsayisi, \__lzcnt64](../intrinsics/lzcnt16-lzcnt-lzcnt64.md)
 
 [_mm_cvtsi64x_ss](../intrinsics/mm-cvtsi64x-ss.md)
 
@@ -157,7 +157,7 @@ Aşağıdaki bölümlerde, Microsoft'a özgü iç işlevleri kullanılabilir baz
 
 [__outwordstring](../intrinsics/outwordstring.md)
 
-[__popcnt16, \__popcnt, \__popcnt64](../intrinsics/popcnt16-popcnt-popcnt64.md)
+[__popcnt16, \__popsayisi, \__popcnt64](../intrinsics/popcnt16-popcnt-popcnt64.md)
 
 [__rdtsc](../intrinsics/rdtsc.md)
 
@@ -275,4 +275,4 @@ Aşağıdaki bölümlerde, Microsoft'a özgü iç işlevleri kullanılabilir baz
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)
+[Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)

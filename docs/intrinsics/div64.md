@@ -1,20 +1,20 @@
 ---
 title: _div64
-ms.date: 04/17/2019
+ms.date: 09/02/2019
 f1_keywords:
 - _div64
 helpviewer_keywords:
 - _div64 intrinsic
-ms.openlocfilehash: a221cc7cf0655a41873c6777aecd8a9b27131b74
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1d05c5d6e25540a5de1b2f8231697c9a738759ce
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62264120"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70216768"
 ---
-# <a name="div64"></a>_div64
+# <a name="_div64"></a>_div64
 
-`_div64` İç bir 64-bit tamsayı 32-bit tamsayı ile böler. Sayının dönüş değerine ve iç işaretçi parametresi üzerinden kalanı döndürür. `_div64` olan **Microsoft'a özgü**.
+İç `_div64` , 64 bitlik bir tamsayıyı 32 bitlik bir tamsayıya böler. Dönüş değeri bölümü, iç, bir işaretçi parametresi ile geri kalanı döndürür. `_div64`, **Microsoft 'a özgüdür**.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -28,30 +28,30 @@ int _div64(
 
 ### <a name="parameters"></a>Parametreler
 
-*Bölünen* \
-[in] Bölmek için 64-bit tamsayı.
+*eni* \
+'ndaki Bölünecek 64 bitlik tamsayı.
 
-*bölen* \
-[in] Bölen 32-bit tamsayı.
+*Lene* \
+'ndaki Bölünecek 32 bitlik tamsayı.
 
-*Kalan* \
-[out] Kalan 32-bit tamsayı bitleri.
+*geri kalanında* \
+dışı Kalanın 32 bitlik tamsayı bitleri.
 
 ## <a name="return-value"></a>Dönüş değeri
 
-Sayının 32 bit.
+Bölüm 32 bitleri.
 
 ## <a name="remarks"></a>Açıklamalar
 
-`_div64` İç böler *bölünen* tarafından *bölen*. İşaret ettiği 32-bit tamsayı içinde kalan depolar *kalan*ve 32 bit sayının döndürür.
+İç bölünen Bölüneni *bölendir*. `_div64` Kalanı, kalanı tarafından işaret edilen 32 bitlik tamsayıyla depolar ve bölümün32 bitlerini döndürür.
 
-`_div64` İç Visual Studio 2019 için RTM'de mevcut başlatılıyor.
+İç `_div64` , Visual Studio 2019 RTM 'den başlayarak kullanılabilir.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İç|Mimari|Üstbilgi|
+|Alanlarla|Mimari|Üstbilgi|
 |---------------|------------------|------------|
-|`_div64`|x86, x64|\<immintrin.h >|
+|`_div64`|x86, x64|\<ımintrin. h >|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

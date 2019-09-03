@@ -1,36 +1,35 @@
 ---
-title: raw_dispinterfaces
-ms.date: 11/04/2016
+title: raw_dispinterfaces içeri aktarma özniteliği
+ms.date: 08/29/2019
 f1_keywords:
 - raw_dispinterfaces
 helpviewer_keywords:
 - raw_dispinterfaces attribute
 ms.assetid: f762864d-29bf-445b-825a-ba7b29a95409
-ms.openlocfilehash: ef8ed3992c77df0f1d551e923ddc90c2d1bb9b0b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 73c58b72b27de8dcf96e8ab9464d0fb6bce12b66
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62179847"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70216218"
 ---
-# <a name="rawdispinterfaces"></a>raw_dispinterfaces
-**C++ özgü**
+# <a name="raw_dispinterfaces-import-attribute"></a>raw_dispinterfaces içeri aktarma özniteliği
 
-Dispinterface yöntemleri ve arama özellikleri için alt düzey sarmalayıcı işlevleri oluşturmak üzere derleyiciye `IDispatch::Invoke` ve HRESULT hata kodunu döndürür.
+**C++Belirli**
+
+Derleyiciye, dispınterface yöntemleri için alt düzey sarmalayıcı işlevleri oluşturmasını ve hresult hata kodunu çağıran `IDispatch::Invoke` ve döndüren özellikler için söyler.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
-raw_dispinterfaces
-```
+> **#import** *tür kitaplığı* **raw_dispinterfaces**
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu öznitelik değil ise, belirtilen, yalnızca üst düzey, C++ özel durumlarını başarısız olması durumunda throw sarmalayıcıları oluşturulur.
+Bu öznitelik belirtilmemişse, hata durumunda C++ özel durumlar oluşturan yalnızca üst düzey sarmalayıcılar oluşturulur.
 
-**END C++ özgü**
+**SONA C++ özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)<br/>
+[#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)\
 [#import yönergesi](../preprocessor/hash-import-directive-cpp.md)

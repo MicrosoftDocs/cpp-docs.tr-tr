@@ -1,6 +1,6 @@
 ---
 title: __inwordstring
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __inwordstring
 - __inwordstring_cpp
@@ -8,22 +8,22 @@ helpviewer_keywords:
 - __inwordstring intrinsic
 - rep insw instruction
 ms.assetid: 6de37939-017a-4740-9e3d-7de78a30daba
-ms.openlocfilehash: 52c36754e1eea56b84eeb494e82e37a5b043246e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a6f67e15bc5eef9fbe9cc8d12e95afcdf869e3b1
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62263457"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70221884"
 ---
-# <a name="inwordstring"></a>__inwordstring
+# <a name="__inwordstring"></a>__inwordstring
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Belirtilen bağlantı noktası kullanarak verileri okuyan `rep insw` yönergesi.
+`rep insw` Yönergeleri kullanarak belirtilen bağlantı noktasından verileri okur.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```C
 void __inwordstring(
    unsigned short Port,
    unsigned short* Buffer,
@@ -31,31 +31,31 @@ void __inwordstring(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
-*Bağlantı noktası*<br/>
-[in] Okunacak bağlantı noktası.
+*Bağ*\
+'ndaki Okunacak bağlantı noktası.
 
-*Arabellek*<br/>
-[out] Bağlantı noktasından okunan veriler burada yazılır.
+*Arabelleğin*\
+dışı Bağlantı noktasından okunan veriler buraya yazılır.
 
-*Sayısı*<br/>
-[in] Veri okumak için sözcük sayısı.
+*Biriktirme*\
+'ndaki Okunacak veri sözcüklerinin sayısı.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İç|Mimari|
+|Alanlarla|Mimari|
 |---------------|------------------|
 |`__inwordstring`|x86, x64|
 
-**Üst bilgi dosyası** \<intrin.h >
+**Üst bilgi dosyası** \<Intrin. h >
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu yordam yalnızca bir iç öğe olarak kullanılabilir.
+Bu yordam yalnızca iç öğe olarak kullanılabilir.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)
+[Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)

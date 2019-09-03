@@ -1,6 +1,6 @@
 ---
 title: __stosb
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __stosb
 helpviewer_keywords:
@@ -8,53 +8,53 @@ helpviewer_keywords:
 - __stosb intrinsic
 - stosb instruction
 ms.assetid: 634589ed-2da3-439b-a381-a214d89bf10c
-ms.openlocfilehash: 679f1a892a6ee5b458a05d1577ecf766bed385dd
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: edf74da4c8b5aa97e542d89f55b3ed8411db9bac
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62390288"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70221220"
 ---
-# <a name="stosb"></a>__stosb
+# <a name="__stosb"></a>__stosb
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Bir depolama dize yönergesi oluşturur (`rep stosb`).
+Bir depo dizesi yönergesi (`rep stosb`) oluşturur.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```C
 void __stosb(
-   unsigned char* Dest,
+   unsigned char* Destination,
    unsigned char Data,
    size_t Count
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
-*Hedef*<br/>
-[out] İşlemin hedefi.
+*Hedefine*\
+dışı İşlemin hedefi.
 
-*Veri*<br/>
-[in] Depolamak için veriler.
+*Verileri*\
+'ndaki Depolanacak veriler.
 
-*Sayısı*<br/>
-[in] Yazılacak bayt Blok uzunluğu.
+*Biriktirme*\
+'ndaki Yazılacak bayt bloğunun uzunluğu.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İç|Mimari|
+|Alanlarla|Mimari|
 |---------------|------------------|
 |`__stosb`|x86, x64|
 
-**Üst bilgi dosyası** \<intrin.h >
+**Üst bilgi dosyası** \<Intrin. h >
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sonuç karakter olan `Data` bloğu yazılmış `Count` bayt cinsinden `Dest` dize.
+Sonuç, karakter *verilerinin* , *hedef* dizedeki bir *Count* bytes bloğuna yazıldığı bir sonucudur.
 
-Bu yordam yalnızca bir iç öğe olarak kullanılabilir.
+Bu yordam yalnızca iç öğe olarak kullanılabilir.
 
 ## <a name="example"></a>Örnek
 
@@ -83,8 +83,8 @@ int main()
 *@@@@@@**************************
 ```
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)
+[Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)

@@ -1,6 +1,6 @@
 ---
 title: _bittestandcomplement, _bittestandcomplement64
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - _bittestandcomplement64
 - _bittestandcomplement64_cpp
@@ -11,22 +11,22 @@ helpviewer_keywords:
 - _bittestandcomplement intrinsic
 - _bittestandcomplement64 intrinsic
 ms.assetid: 53fa12dd-835e-4e5d-baec-a431c8678806
-ms.openlocfilehash: 4c0fc11ca890c64da3ff41c8679a17a733c81d4c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b1dcfe86aad18c8261029c9111681e1882bc96f5
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62264244"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222208"
 ---
-# <a name="bittestandcomplement-bittestandcomplement64"></a>_bittestandcomplement, _bittestandcomplement64
+# <a name="_bittestandcomplement-_bittestandcomplement64"></a>_bittestandcomplement, _bittestandcomplement64
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Bit arabirimini inceleyen bir yönerge oluşturur `b` adresinin `a`geçerli değerini döndürür ve Tamamlayıcı için bit ayarlar.
+`b` Adresin`a`bitini incelediği bir yönerge oluşturun, geçerli değerini döndürür ve bitini kendi tamamlayıcısı olarak ayarlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```C
 unsigned char _bittestandcomplement(
    long *a,
    long b
@@ -37,34 +37,34 @@ unsigned char _bittestandcomplement64(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
-*a*<br/>
-[out içinde] İncelemek için bellek işaretçisi.
+*a*\
+[in, out] İncelenecek bellek işaretçisi.
 
-*b*<br/>
-[in] Test etmek için bit konumu.
+*kenarı*\
+'ndaki Sınanacak bit konumu.
 
-## <a name="return-value"></a>Dönüş Değeri
+## <a name="return-value"></a>Dönüş değeri
 
 Belirtilen konumdaki bit.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İç|Mimari|
+|Alanlarla|Mimari|
 |---------------|------------------|
-|`_bittestandcomplement`|x86, ARM, x64|
-|`_bittestandcomplement64`|X64|
+|`_bittestandcomplement`|x86, ARM, x64, ARM64|
+|`_bittestandcomplement64`|x64, ARM64|
 
-**Üst bilgi dosyası** \<intrin.h >
+**Üst bilgi dosyası** \<Intrin. h >
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu yordam yalnızca bir iç öğe olarak kullanılabilir.
+Bu yordam yalnızca iç öğe olarak kullanılabilir.
 
 ## <a name="example"></a>Örnek
 
-```
+```cpp
 // bittestandcomplement.cpp
 // processor: x86, IPF, x64
 #include <stdio.h>
@@ -92,9 +92,7 @@ int main()
 }
 ```
 
-## <a name="sample-output"></a>Örnek Çıktı
-
-```
+```Output
 Initial value: 1
 Testing bit 1
 Value changed to 3, Result: 0
@@ -102,8 +100,8 @@ Testing bit 0
 Value changed to 0, Result: 1
 ```
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)
+[Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)

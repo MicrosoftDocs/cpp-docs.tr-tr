@@ -1,6 +1,6 @@
 ---
-title: region, endregion
-ms.date: 10/18/2018
+title: region, endregion pragması
+ms.date: 08/29/2019
 f1_keywords:
 - vc-pragma.endregion
 - endregion_CPP
@@ -12,37 +12,35 @@ helpviewer_keywords:
 - endregion pragma
 - region pragma
 ms.assetid: c697f807-622f-4796-851b-68a42bbecd84
-ms.openlocfilehash: c73a90aa2be83d643b74dde4645081e89da3ff73
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4a01e04582ac81d678aa0702945c62ee974a4428
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62179756"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222380"
 ---
-# <a name="region-endregion"></a>region, endregion
+# <a name="region-endregion-pragmas"></a>region, endregion pragması
 
-`#pragma region` Genişlet veya daralt kullanarak bir kod bloğunu belirtmenizi sağlar [anahat oluşturma özelliği](/visualstudio/ide/outlining) Visual Studio Kod Düzenleyicisi'nin.
+`#pragma region`Visual Studio Code düzenleyicisinin ana [hat özelliğini](/visualstudio/ide/outlining) kullanırken genişletebileceğiniz veya daraltabileceğiniz bir kod bloğu belirtmenize olanak tanır.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
-#pragma region name
-#pragma endregion comment
-```
+> **#pragma bölgesi** *ad*\
+> **#pragma endregion** *Açıklama*
 
 ### <a name="parameters"></a>Parametreler
 
-*Açıklama*<br/>
-(İsteğe bağlı) Kod Düzenleyicisi'nde görüntüleyen bir açıklama.
+*açıklamanın*\
+Seçim Kod düzenleyicisinde görüntülenecek bir açıklama.
 
-*Adı*<br/>
-(İsteğe bağlı) Bölge adı.  Bu ad, Kod Düzenleyicisi'nde görüntülenir.
+*ada*\
+Seçim Bölgenin adı. Bu ad, kod düzenleyicisinde görüntülenir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-`#pragma endregion` sonunu işaretleyen bir `#pragma region` blok.
+`#pragma endregion`bir `#pragma region` bloğun sonunu işaretler.
 
-A `#region` blok sonlandırıldı, ile `#pragma endregion`.
+Bir `#region` bloğun bir `#pragma endregion` yönerge tarafından sonlandırılması gerekir.
 
 ## <a name="example"></a>Örnek
 
@@ -59,4 +57,4 @@ int main() {}
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+[Pragma yönergeleri ve __pragma anahtar sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

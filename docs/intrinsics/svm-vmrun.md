@@ -1,57 +1,56 @@
 ---
 title: __svm_vmrun
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __svm_vmrun
 helpviewer_keywords:
 - __svm_vmrun intrinsic
 - VMRUN instruction
 ms.assetid: ae98a781-fc17-47b2-b40f-86fcebf1867b
-ms.openlocfilehash: 40e53b2ebd54fc109b47f3067e5f89ce50b327de
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f23df894cc8ad1c270c4c0acbc97cab727e47d93
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62390210"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70219828"
 ---
-# <a name="svmvmrun"></a>__svm_vmrun
+# <a name="__svm_vmrun"></a>__svm_vmrun
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Belirtilen sanal makine denetim bloğu (VMCB) karşılık gelen sanal makine Konuk kod yürütmeyi başlatır.
+Belirtilen sanal makine denetim bloğuna (VMCB) karşılık gelen sanal makine konuk kodunun yürütülmesini başlatır.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```C
 void __svm_vmrun(
    size_t VmcbPhysicalAddress
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
-|Parametre|Açıklama|
-|---------------|-----------------|
-|*VmcbPhysicalAddress*|[in] VMCB fiziksel adresi.|
+*VmcbPhysicalAddress*\
+'ndaki VMCB 'nin fiziksel adresi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-`__svm_vmrun` İşlevi sanal makine Konuk kodu yürütmeye başlamak için VMCB içinde en az miktarda bilgi kullanır. Kullanım [__svm_vmsave](../intrinsics/svm-vmsave.md) veya [__svm_vmload](../intrinsics/svm-vmload.md) karmaşık kesmeyi işlemek için veya başka bir konuk geçiş yapmak için daha fazla bilgi gerekiyorsa işlev.
+`__svm_vmrun` İşlevi, sanal makine konuk kodunu yürütmeye başlamak için VMCB içindeki en az miktarda bilgi kullanır. Karmaşık bir kesmeyi işlemek için daha fazla bilgiye ihtiyacınız varsa veya başka bir konuğa geçiş yapmak için [__svm_vmsave](../intrinsics/svm-vmsave.md) veya [__svm_vmload](../intrinsics/svm-vmload.md) işlevini kullanın.
 
-`__svm_vmrun` İşlev, eşdeğer `VMRUN` makine yönergesi. Bu işlev, bir konuk işletim sistemi ve uygulamaları ile bir konağın sanal makine İzleyici etkileşimi destekler. Belge için daha fazla bilgi için arama "AMD64 mimarisi Programcı el ile birim 2: Belge numarasını 24593, düzeltme 3.11 ya da daha sonra sistem programlama," [AMD corporation](https://developer.amd.com/resources/developer-guides-manuals/) site.
+İşlev, `VMRUN` makine yönergesine eşdeğerdir. `__svm_vmrun` Bu işlev, bir konağın sanal makine izleyicisinin Konuk işletim sistemiyle ve uygulamalarına yönelik etkileşimini destekler. Daha fazla bilgi için "AMD64 mimari programcı 'nin El Ile birim 2 ' yi arayın. Sistem programlama, "belge numarası 24593, düzeltme 3,11 veya üzeri, [AMD Corporation](https://developer.amd.com/resources/developer-guides-manuals/) sitesi.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İç|Mimari|
+|Alanlarla|Mimari|
 |---------------|------------------|
 |`__svm_vmrun`|x86, x64|
 
-**Üst bilgi dosyası** \<intrin.h >
+**Üst bilgi dosyası** \<Intrin. h >
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)<br/>
-[__svm_vmsave](../intrinsics/svm-vmsave.md)<br/>
+[Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)\
+[__svm_vmsave](../intrinsics/svm-vmsave.md)\
 [__svm_vmload](../intrinsics/svm-vmload.md)

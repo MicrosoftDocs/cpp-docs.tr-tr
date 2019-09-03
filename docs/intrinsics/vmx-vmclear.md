@@ -1,65 +1,64 @@
 ---
 title: __vmx_vmclear
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __vmx_vmclear
 helpviewer_keywords:
 - VMCLEAR instruction
 - __vmx_vmclear intrinsic
 ms.assetid: e3eb98e4-50fc-4c93-9bac-340fd1f0a466
-ms.openlocfilehash: 17e3e5c91a58894b25fc6b2a72f7d0056fa88119
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3b5807402cf0a9d8a9ef1ded1d112d22a801633e
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62390067"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70219533"
 ---
-# <a name="vmxvmclear"></a>__vmx_vmclear
+# <a name="__vmx_vmclear"></a>__vmx_vmclear
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Belirtilen sanal makine denetim yapısı (Windows VMCS) başlatır ve başlatma durumuna ayarlar `Clear`.
+Belirtilen sanal makine denetim yapısını (VMCS) başlatır ve başlatma durumunu olarak `Clear`ayarlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```C
 unsigned char __vmx_vmclear(
    unsigned __int64 *VmcsPhysicalAddress
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
-|Parametre|Açıklama|
-|---------------|-----------------|
-|*VmcsPhysicalAddress*|[in] Temizlenecek Windows VMCS fiziksel adresini içeren bir 64-bit bellek konumu için bir işaretçi.|
+*VmcsPhysicalAddress*\
+'ndaki Temizlenecek VMCS 'lerin fiziksel adresini içeren 64 bitlik bir bellek konumu işaretçisi.
 
-## <a name="return-value"></a>Dönüş Değeri
+## <a name="return-value"></a>Dönüş değeri
 
 |Değer|Açıklama|
 |-----------|-------------|
 |0|İşlem başarılı oldu.|
-|1.|İşlem başarısız oldu bulunan genişletilmiş durumundaki `VM-instruction error field` , geçerli Windows VMCS.|
-|2|İşlem durumu olmadan başarısız oldu.|
+|1\.|İşlem, geçerli VNET `VM-instruction error field` 'lerin içinde kullanılabilir olan genişletilmiş durumla başarısız oldu.|
+|2|İşlem durum kullanılabilir olmadan başarısız oldu.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir uygulama kullanarak bir VM girin işlemi gerçekleştirebilir [__vmx_vmlaunch](../intrinsics/vmx-vmlaunch.md) veya [__vmx_vmresume](../intrinsics/vmx-vmresume.md) işlevi. [__Vmx_vmlaunch](../intrinsics/vmx-vmlaunch.md) işlevi, başlatma durumu yalnızca bir Windows VMCS ile kullanılabilir `Clear`ve [__vmx_vmresume](../intrinsics/vmx-vmresume.md) işlevi, başlatma durumu yalnızca bir Windows VMCS ile kullanılabilir `Launched`. Sonuç olarak, kullanmanız [__vmx_vmclear](../intrinsics/vmx-vmclear.md) işlevi için bir Windows VMCS başlatma durumunu ayarlamak için `Clear`. Kullanım [__vmx_vmlaunch](../intrinsics/vmx-vmlaunch.md) ilk VM girin işlemi için işlevi ve [__vmx_vmresume](../intrinsics/vmx-vmresume.md) VM girin sonraki işlemleri için işlevi.
+Bir uygulama, [__vmx_vmlaunch](../intrinsics/vmx-vmlaunch.md) ya da [__vmx_vmözgeçmişi](../intrinsics/vmx-vmresume.md) işlevini kullanarak bir VM-ENTER işlemi gerçekleştirebilir. [__Vmx_vmlaunch](../intrinsics/vmx-vmlaunch.md) işlevi yalnızca başlatma durumu `Clear`olan bir VMCS ile kullanılabilir ve [__vmx_vmözgeçmişi](../intrinsics/vmx-vmresume.md) işlevi yalnızca başlatma durumu olan bir `Launched`VMCS ile kullanılabilir. Sonuç olarak, bir VMCS 'nin başlatma durumunu olarak `Clear`ayarlamak için [__vmx_vmctemizle](../intrinsics/vmx-vmclear.md) işlevini kullanın. İlk VM-ENTER işlemi için [__vmx_vmlaunch](../intrinsics/vmx-vmlaunch.md) işlevini ve sonraki VM-ENTER işlemleri için [__vmx_vmözgeçmişi](../intrinsics/vmx-vmresume.md) işlevini kullanın.
 
-`__vmx_vmclear` İşlev, eşdeğer `VMCLEAR` makine yönergesi. Bu işlev, bir konuk işletim sistemi ve uygulamaları ile bir konağın sanal makine İzleyici etkileşimi destekler. Daha fazla bilgi için "Intel Sanallaştırma teknik belirtimi IA-32 Intel mimari," Belge ara adresindeki sayı C97063 002 belge [Intel Corporation'da](https://software.intel.com/articles/intel-sdm) site.
+İşlev, `VMCLEAR` makine yönergesine eşdeğerdir. `__vmx_vmclear` Bu işlev, bir konağın sanal makine izleyicisinin Konuk işletim sistemiyle ve uygulamalarına yönelik etkileşimini destekler. Daha fazla bilgi için, [Intel Corporation](https://software.intel.com/articles/intel-sdm) SITESINDE "ıa-32 Intel mimarisi Için Intel Sanallaştırma teknik belirtimi" belge numarası C97063-002 olan belgeyi arayın.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İç|Mimari|
+|Alanlarla|Mimari|
 |---------------|------------------|
 |`__vmx_vmclear`|X64|
 
-**Üst bilgi dosyası** \<intrin.h >
+**Üst bilgi dosyası** \<Intrin. h >
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)<br/>
-[__vmx_vmlaunch](../intrinsics/vmx-vmlaunch.md)<br/>
+[Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)\
+[__vmx_vmlaunch](../intrinsics/vmx-vmlaunch.md)\
 [__vmx_vmresume](../intrinsics/vmx-vmresume.md)

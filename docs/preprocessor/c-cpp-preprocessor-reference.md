@@ -1,44 +1,45 @@
 ---
-title: C/C++ Ön işlemci Başvurusu
-ms.date: 11/04/2016
+title: C/C++ ön işlemci başvurusu
+ms.date: 08/29/2019
 helpviewer_keywords:
 - preprocessor
 - preprocessor, reference overview
 ms.assetid: e4a52843-7016-4f6d-8b40-cb1ace18f805
-ms.openlocfilehash: 9eb94b105af976d1e1f49e212e0117c43c430683
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: 79031cd16390f9a77b1b12e54bf23502f6e535f0
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65220395"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70218766"
 ---
-# <a name="cc-preprocessor-reference"></a>C/C++ Ön işlemci Başvurusu
-*C/C++ önişlemci başvurusu* önişlemciyi Microsoft C/C++ içinde uygulandığı şekilde açıklar. Önişlemci, derleyiciye geçirilen önce C ve C++ dosyaları üzerinde Ön işlemleri gerçekleştirir. Önişlemci koşullu olarak kod derlemek, dosyaları eklemek, derleme zamanı hatası iletileri belirtmek ve kodun bölümleri için makineye özgü kurallar uygulamak için kullanabilirsiniz.
+# <a name="cc-preprocessor-reference"></a>C/C++ ön işlemci başvurusu
 
-## <a name="in-this-section"></a>Bu Bölümde
+*C/C++ Önişlemci Başvurusu* , Microsoft C/C++' de uygulandığı için Önişlemci 'yi açıklar. Önişlemci, derleyicisine geçirilmeden önce C ve C++ dosyalar üzerinde ön işlemler gerçekleştirir. Kodu koşullu olarak derlemek, dosya eklemek, derleme zamanı hata iletileri belirtmek ve kod bölümlerine makineye özel kurallar uygulamak için Önişlemci 'yi kullanabilirsiniz.
 
-[Ön işlemci Yönergeleri](../preprocessor/preprocessor-directives.md)<br/>
-Yönergeleri kaynak programların kolay değiştirilmesini ve farklı yürütme ortamlarında derlemek kolay hale getirmek için genellikle kullanılan açıklar.
+## <a name="in-this-section"></a>Bu bölümde
 
-[Ön İşlemci İşleçleri](../preprocessor/preprocessor-operators.md)<br/>
-Bağlamında kullanılan dört önişlemciye özgü işleci açıklar `#define` yönergesi.
+[Önişlemci yönergeleri](../preprocessor/preprocessor-directives.md)\
+Genellikle kaynak programların farklı yürütme ortamlarında kolayca değiştirilmesini ve kolayca derlenmesi için kullanılan yönergeleri açıklar.
 
-[Önceden Tanımlanmış Makrolar](../preprocessor/predefined-macros.md)<br/>
-ANSI ve Microsoft C++ tarafından belirlenen önceden tanımlı makroları anlatır.
+[Önişlemci işleçleri](../preprocessor/preprocessor-operators.md)\
+`#define` Yönergesi bağlamında kullanılan, Önişlemciye özgü dört işleci açıklar.
 
-[Pragmalar](../preprocessor/pragma-directives-and-the-pragma-keyword.md)<br/>
-C ve C++ dilleri ile genel uyumluluğu muhafaza ederken, makineye ve işletim sistemine özgü özellikler sunmak her derleyiciye bir yol sunan pragmaları açıklar.
+[Önceden tanımlanmış makrolar](../preprocessor/predefined-macros.md)\
+ANSI ve Microsoft C++tarafından belirtilen önceden tanımlanmış makroları açıklar.
 
-## <a name="related-sections"></a>İlgili Bölümler
+[Pragmaları](../preprocessor/pragma-directives-and-the-pragma-keyword.md)\
+Her derleyicinin, C ve C++ dillerle genel uyumluluğu korurken makine ve işletim sistemine özgü özellikler sunmasına olanak tanıyan pragmalar açıklanmaktadır.
 
-[C++ Dil Başvurusu](../cpp/cpp-language-reference.md)<br/>
-C++ dilinin Microsoft uygulaması için başvuru materyalleri sağlar.
+## <a name="related-sections"></a>İlgili bölümler
 
-[C Dil Başvurusu](../c-language/c-language-reference.md)<br/>
-C dilinin Microsoft uygulaması için başvuru materyalleri sağlar.
+[C++dil başvurusu](../cpp/cpp-language-reference.md)\
+C++ Dilin Microsoft uygulamasına yönelik başvuru malzemeleri sağlar.
 
-[C/C++ programı oluşturma](../build/reference/c-cpp-building-reference.md)<br/>
-Derleyici ve bağlayıcı seçeneklerini açıklayan konulara bağlantılar sağlar.
+[C dil başvurusu](../c-language/c-language-reference.md)\
+C dilinin Microsoft uygulamasına yönelik başvuru malzemeleri sağlar.
 
-[Visual Studio Projeleri - C++](../build/creating-and-managing-visual-cpp-projects.md)<br/>
-Proje sisteminin C++ projeniz için dosyaları bulmak üzere arama yapacağı dizinleri belirlemenize imkan sağlayan Visual Studio kullanıcı arabiriminde açıklar.
+[C/C++ derleme başvurusu](../build/reference/c-cpp-building-reference.md)\
+Derleyici ve bağlayıcı seçeneklerini tartışan konuların bağlantılarını sağlar.
+
+[Visual Studio projeleri-C++](../build/creating-and-managing-visual-cpp-projects.md)\
+Visual Studio 'da, proje sisteminin C++ projenize ait dosyaları bulmak için arayacağını belirtmenize olanak tanıyan Kullanıcı arabirimini açıklar.

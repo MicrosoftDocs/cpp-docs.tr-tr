@@ -1,6 +1,6 @@
 ---
 title: __popcnt16, __popcnt, __popcnt64
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __popcnt64
 - __popcnt
@@ -11,22 +11,22 @@ helpviewer_keywords:
 - __popcnt64
 - __popcnt
 ms.assetid: e525b236-adc8-42df-9b9b-8b7d8c245d3b
-ms.openlocfilehash: d6cc9a0ce784ab79f5e4225675a082fc55bd53e7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3e5ae7f897500775671f8bd2563028874579a627
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62263223"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70221363"
 ---
-# <a name="popcnt16-popcnt-popcnt64"></a>__popcnt16, __popcnt, __popcnt64
+# <a name="__popcnt16-__popcnt-__popcnt64"></a>__popcnt16, __popcnt, __popcnt64
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Bir sayar BITS (nüfus sayımı) bir 16, 32 veya 64-bit işaretsiz tamsayı.
+Bir 16, 32 `1` -veya 64 bit işaretsiz tamsayının bit sayısını (popülasyon sayısı) sayar.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```C
 unsigned short __popcnt16(
    unsigned short value
 );
@@ -38,34 +38,34 @@ unsigned __int64 __popcnt64(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
-*value*<br/>
-[in] 16, 32 veya 64-bit işaretsiz tamsayı nüfus sayımı istiyoruz.
+*deeri*\
+'ndaki Popülasyon sayısını istediğimiz için 16, 32-veya 64 bitlik işaretsiz tamsayı.
 
-## <a name="return-value"></a>Dönüş Değeri
+## <a name="return-value"></a>Dönüş değeri
 
-Bir bit sayısı `value` parametresi.
+`1` *Değer* parametresindeki bit sayısı.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İç|Mimari|
+|Alanlarla|Mimari|
 |---------------|------------------|
-|`__popcnt16`|Gelişmiş Bit işleme|
-|`__popcnt`|Gelişmiş Bit işleme|
-|`__popcnt64`|64 bit modunda Gelişmiş Bit işleme.|
+|`__popcnt16`|Gelişmiş bit Işleme|
+|`__popcnt`|Gelişmiş bit Işleme|
+|`__popcnt64`|64 bit modunda gelişmiş bit Işleme.|
 
-**Üst bilgi dosyası** \<intrin.h >
+**Üst bilgi dosyası** \<Intrin. h >
 
 ## <a name="remarks"></a>Açıklamalar
 
-Her biri bu iç oluşturur `popcnt` yönergesi. 32 bit modunda 64 bit Hayır 64-bit genel amaçlı yazmaç yok, bu nedenle vardır `popcnt`.
+Her bir iç yapı, `popcnt` yönergeyi oluşturur. 32 bit modunda, 64 bit genel amaçlı kayıt yoktur, bu nedenle 64-bit `popcnt` desteklenmez.
 
-İçin donanım desteği belirlemek için `popcnt` yönerge, çağrı `__cpuid` ile iç `InfoType=0x00000001` ve 23 bit `CPUInfo[2] (ECX)`. Bu bit Aksi takdirde yönerge destekleniyorsa 1 ve 0 olur. Kullanan kodu bu iç desteği olmayan donanım üzerinde çalıştırdığınız varsa `popcnt` yönergesi, sonuçların tahmin edilemeyeceğine.
+`popcnt` Yönergeyle ilgili donanım desteğini öğrenmek için, ile `__cpuid` `InfoType=0x00000001` iç öğesini çağırın ve bit 23 `CPUInfo[2] (ECX)`' ü denetleyin. Yönerge destekleniyorsa bu bit 1, değilse 0 ' dır. Bu iç bilgileri, `popcnt` yönergeyi desteklemeyen donanımda kullanan kodu çalıştırırsanız, sonuçlar tahmin edilemez olur.
 
 ## <a name="example"></a>Örnek
 
-```
+```cpp
 #include <iostream>
 #include <intrin.h>
 using namespace std;
@@ -99,10 +99,10 @@ __popcnt(0xffff) = 16
 __popcnt(0xffffffff) = 32
 ```
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
-Telif Hakkı 2007 Gelişmiş Micro cihazlar, Inc. Tüm hakları saklıdır. Gelişmiş Micro cihazlar, Inc. izniyle üretilemez
+Bölüm Telif hakkı 2007 Advanced Micro Devices, Inc. Tüm hakları saklıdır. Gelişmiş mikro cihazlar, Inc. izniyle yeniden üretilme.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)
+[Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)

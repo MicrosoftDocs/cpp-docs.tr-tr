@@ -9,24 +9,25 @@ helpviewer_keywords:
 - deploying applications [C++], about deploying applications
 - distributing applications [C++]
 ms.assetid: 37f1691e-d67c-41e4-926e-528a237a9bac
-ms.openlocfilehash: 46ced4ac5f7952a9b7f66418ea037e053b16e9be
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.topic: landing-page
+ms.openlocfilehash: d9500d14fdc70afd2f1d3f67420bb96347b6d71c
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62346125"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70215959"
 ---
 # <a name="deploying-native-desktop-applications-visual-c"></a>Yerel Masaüstü Uygulamaları Dağıtma (Visual C++)
 
-Dağıtım olarak diğer bilgisayarlara yüklenmesi bir tamamlanmış uygulamanın veya bileşenin dağıttığınız işlemidir. Bir geliştiricinin bilgisayarında uygulama oluşturulduğunda dağıtımı planlama başlatır. Uygulama yüklü ve bir kullanıcının bilgisayarında çalıştırmaya hazır olduğunda dağıtım sona erer.
+Dağıtım, başka bilgisayarlara yüklenmek üzere tamamlanmış bir uygulamayı veya bileşeni dağıttığınız bir işlemdir. Dağıtım planlama, bir uygulamanın geliştirici bilgisayarında oluşturulması durumunda başlatılır. Dağıtım, uygulama yüklendiğinde ve kullanıcının bilgisayarında çalışmaya hazırsa sona erer.
 
-Visual Studio, Windows uygulamalarını dağıtmak için farklı teknolojiler sağlar. Bunlar, ClickOnce dağıtımı ve Windows Installer dağıtımı içerir.
+Visual Studio, Windows uygulamalarını dağıtmak için farklı teknolojiler sağlar. Bunlara ClickOnce dağıtımı ve Windows Installer dağıtımı dahildir.
 
-- Ortak dil çalışma zamanı (CLR) hedefleyen C++ uygulamaları dağıtmak için ClickOnce kullanılabilir — karışık, saf ve doğrulanabilen derlemeler. Bir yönetilen uygulamayı dağıtmak için Windows Installer kullanmanız mümkün olmakla birlikte, ClickOnce bildirim imzalama gibi .NET Framework güvenlik özelliklerinden aldığından kullanmanızı öneririz. ClickOnce yerel C++ uygulamalarının dağıtımını desteklemez. Daha fazla bilgi için [Visual C++ uygulamaları için ClickOnce dağıtımı](clickonce-deployment-for-visual-cpp-applications.md).
+- ClickOnce, ortak dil çalışma zamanı C++ (CLR) (karışık, saf ve Doğrulanabilen Derlemeler) hedefleyen uygulamaları dağıtmak için kullanılabilir. Yönetilen bir uygulama dağıtmak için Windows Installer kullanabilseniz de, bildirim imzalama gibi .NET Framework güvenlik özelliklerinden yararlandığından ClickOnce kullanmanızı öneririz. ClickOnce yerel C++ uygulamaların dağıtımını desteklemez. Daha fazla bilgi için bkz. [Visual C++ uygulamaları için ClickOnce dağıtımı](clickonce-deployment-for-visual-cpp-applications.md).
 
-- Windows Yükleyici teknolojisi CLR'yi hedefleyen yerel C++ uygulamalarında veya C++ uygulamaları dağıtmak için kullanılabilir.
+- Windows Installer teknolojisi, CLR 'yi hedefleyen yerel C++ uygulamaları veya C++ uygulamaları dağıtmak için kullanılabilir.
 
-Belgelerin bu bölümdeki makaleleri Visual C++ uygulamasını yerel bir yükleme paketi ve önerilen yöntemleri için içermelidir hangi dosyaların bir desteklenen hedef platformu sağlayan herhangi bir bilgisayarda çalıştığından emin olmak nasıl ele almaktadır uygulamanızın bağımlı bileşenleri yeniden dağıtabilirsiniz.
+Belgenin bu bölümündeki makaleler, yerel bir görsel C++ uygulamanın desteklenen bir hedef platform sağlayan herhangi bir bilgisayarda çalıştığını, bir yükleme paketine hangi dosyaları dahil edileceğini ve bunun önerilen yollarla nasıl emin olduğunu tartışır. uygulamanızın bağımlı olduğu bileşenleri yeniden dağıtın.
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
@@ -40,7 +41,7 @@ Belgelerin bu bölümdeki makaleleri Visual C++ uygulamasını yerel bir yüklem
 
 - [Dağıtım Yöntemi Seçme](choosing-a-deployment-method.md)
 
-- [Evrensel CRT dağıtım](universal-crt-deployment.md).
+- [Evrensel CRT dağıtımı](universal-crt-deployment.md).
 
 - [Visual C++ Dosyalarını Yeniden Dağıtma](redistributing-visual-cpp-files.md)
 
@@ -50,7 +51,7 @@ Belgelerin bu bölümdeki makaleleri Visual C++ uygulamasını yerel bir yüklem
 
 - [Visual C++ Uygulamaları için ClickOnce Dağıtımı](clickonce-deployment-for-visual-cpp-applications.md)
 
-- [Önceki çalışma zamanı sürümünde C++/CLR uygulaması çalıştırma](running-a-cpp-clr-application-on-a-previous-runtime-version.md)
+- [Önceki çalışma C++ zamanı sürümünde/CLR uygulaması çalıştırma](running-a-cpp-clr-application-on-a-previous-runtime-version.md)
 
 ## <a name="related-sections"></a>İlgili Bölümler
 

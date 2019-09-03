@@ -1,63 +1,63 @@
 ---
 title: _mm_stream_sd
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - _mm_stream_sd
 helpviewer_keywords:
 - _mm_stream_sd intrinsic
 - movntsd instruction
 ms.assetid: 2b4bea5e-e64e-45fa-9afc-88a2e4b82cfc
-ms.openlocfilehash: 3555b71e15d6f9c618a83f573d6da3cda9e7b705
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7f0c6457cc0806a0f1764300cffa1c9878b8a600
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62263249"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70217366"
 ---
-# <a name="mmstreamsd"></a>_mm_stream_sd
+# <a name="_mm_stream_sd"></a>_mm_stream_sd
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-64-bit veri önbelleklerinin kirletmesini olmadan bir bellek konumuna yazar.
+Önbellekleri kirletmeksizin 64 bitlik verileri bir bellek konumuna yazar.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```C
 void _mm_stream_sd(
    double * Dest,
    __m128d Source
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
-*Hedef*<br/>
-[out] Kaynak verilerin yazılacağı konum için bir işaretçi.
+*HD*\
+dışı Kaynak verilerin yazılacağı konuma yönelik bir işaretçi.
 
-*Kaynak*<br/>
-[in] 128-bit değeri içeren bir `double` 64 bit kendi alt yazılacak değer...
+*Kaynaktaki*\
+'ndaki Alt 64 bitine yazılacak `double` değeri içeren 128 bitlik bir değer.
 
-## <a name="return-value"></a>Dönüş Değeri
+## <a name="return-value"></a>Dönüş değeri
 
 Yok.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İç|Mimari|
+|Alanlarla|Mimari|
 |---------------|------------------|
 |`_mm_stream_sd`|SSE4a|
 
-**Üst bilgi dosyası** \<intrin.h >
+**Üst bilgi dosyası** \<Intrin. h >
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu iç oluşturur `movntsd` yönergesi. Bu yönerge için donanım desteği belirlemek için çağrı `__cpuid` ile iç `InfoType=0x80000001` ve 6 bit `CPUInfo[2] (ECX)`. Aksi takdirde bu yönerge ve 0 donanım destekliyorsa, bu bit 1'dir.
+İç öğe, `movntsd` yönergeyi oluşturur. Bu yönergeyle ilgili donanım desteğini öğrenmek için, ile `__cpuid` `InfoType=0x80000001` iç öğesini çağırın `CPUInfo[2] (ECX)`ve bit 6 ' yı denetleyin. Bu bit, donanım bu yönergeyi destekliyorsa 1, aksi takdirde 0 ' dır.
 
-Kullanan kodu çalıştırırsanız `_mm_stream_sd` desteği olmayan donanımda iç `movntsd` yönergesi, sonuçların tahmin edilemeyeceğine.
+Yönergeyi desteklemeyen bir donanım kullanan `_mm_stream_sd` kodu çalıştırırsanız, sonuçlar tahmin edilemez olur. `movntsd`
 
 ## <a name="example"></a>Örnek
 
-```
+```cpp
 // Compile this sample with: /EHsc
 #include <iostream>
 #include <intrin.h>
@@ -81,13 +81,13 @@ int main()
 d[0] = -1, d[1] = 1
 ```
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
-Telif Hakkı 2007 Gelişmiş Micro cihazlar, Inc. Tüm hakları saklıdır. Gelişmiş Micro cihazlar, Inc. izniyle üretilemez
+Bölüm Telif hakkı 2007 Advanced Micro Devices, Inc. Tüm hakları saklıdır. Gelişmiş mikro cihazlar, Inc. izniyle yeniden üretilme.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[_mm_stream_ss](../intrinsics/mm-stream-ss.md)<br/>
-[_mm_store_sd](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_store_sd)<br/>
-[_mm_sfence](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_sfence)<br/>
-[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)
+[_mm_stream_ss](../intrinsics/mm-stream-ss.md)\
+[_mm_store_sd](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_store_sd)\
+[_mm_sçit](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_sfence)\
+[Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)

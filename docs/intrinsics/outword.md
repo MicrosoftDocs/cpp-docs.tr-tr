@@ -1,56 +1,56 @@
 ---
 title: __outword
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __outword
 helpviewer_keywords:
 - __outword intrinsic
 - out instruction
 ms.assetid: 995f8834-0f50-4b4f-a7a2-af0e7c371cda
-ms.openlocfilehash: 067f438d2135f4d61245606ab25af5a6f1ec9568
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 766f6adff5ea0212f48ff8727024ac7a5729c944
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62262963"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70221398"
 ---
-# <a name="outword"></a>__outword
+# <a name="__outword"></a>__outword
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Oluşturur `out` sağlayan sözcüğü gönderir yönergesinin `Data` çıkış tarafından belirtilen g/ç bağlantı noktasına `Port`.
+Word verilerini *bağlantı noktası*tarafından belirtilen g/ ç bağlantı noktasına Gönderen yönergeyioluşturur.`out`
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```C
 void __outword(
    unsigned short Port,
    unsigned short Data
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
-*Bağlantı noktası*<br/>
-[in] Veri göndermek için bağlantı noktası.
+*Bağ*\
+'ndaki Verilerin gönderileceği bağlantı noktası.
 
-*Veri*<br/>
-[in] Gönderilecek veri.
+*Verileri*\
+'ndaki Gönderilecek veriler.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İç|Mimari|
+|Alanlarla|Mimari|
 |---------------|------------------|
 |`__outword`|x86, x64|
 
-**Üst bilgi dosyası** \<intrin.h >
+**Üst bilgi dosyası** \<Intrin. h >
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu yordam yalnızca bir iç öğe olarak kullanılabilir.
+Bu yordam yalnızca iç öğe olarak kullanılabilir.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)
+[Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)

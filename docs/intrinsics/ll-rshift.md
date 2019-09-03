@@ -1,6 +1,6 @@
 ---
 title: __ll_rshift
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __ll_rshift_cpp
 - __ll_rshift
@@ -8,55 +8,55 @@ helpviewer_keywords:
 - __ll_rshift intrinsic
 - ll_rshift intrinsic
 ms.assetid: ef13b732-d122-44a0-add9-f5544a2c4ab2
-ms.openlocfilehash: e39f8fe797467569077dd24baf49670607915107
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ad17991d84acb7e531baf9435610ebd566197a22
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62263366"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70217493"
 ---
-# <a name="llrshift"></a>__ll_rshift
+# <a name="__ll_rshift"></a>__ll_rshift
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-İkinci parametre tarafından belirtilen bit sayısı sağa ilk parametre tarafından belirtilen 64-bit bir değer kaydırılır.
+İlk parametre tarafından belirtilen 64 bitlik bir değeri, ikinci parametre tarafından belirtilen bir bit sayısıyla sağa kaydırır.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```C
 __int64 __ll_rshift(
    __int64 Mask,
    int nBit
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
-*Maskesi*<br/>
-[in] Sağa kaydırmak için 64-bit tamsayı değeri.
+*Maskesi*\
+'ndaki Sağa kayılacak 64 bitlik tamsayı değeri.
 
-*nBit*<br/>
-[in] 64 x64 modül ve 32 x86 modül kaydırılacak bit sayısı.
+*nBit*\
+'ndaki Bit sayısı, x64 üzerindeki mod 64 ve x86 üzerinde mod 32.
 
-## <a name="return-value"></a>Dönüş Değeri
+## <a name="return-value"></a>Dönüş değeri
 
-Maske kaydırılacak tarafından `nBit` bitleri.
+Bitler tarafından `nBit` kaydırılan maske.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İç|Mimari|
+|Alanlarla|Mimari|
 |---------------|------------------|
 |`__ll_rshift`|x86, x64|
 
-**Üst bilgi dosyası** \<intrin.h >
+**Üst bilgi dosyası** \<Intrin. h >
 
 ## <a name="remarks"></a>Açıklamalar
 
-İkinci parametre numarası kaydırılacak bit sayısını belirlemek için 64 (32 x86) modül alınır (32) x86 x64 64'ten büyükse. `ll` Ön eki bu üzerinde bir işlem olduğunu gösterir `long long`, başka bir adı `__int64`, 64-bit imzalı tamsayı türü.
+İkinci parametre x64 üzerinde 64 ' den büyükse (x86 üzerinde 32), kaydırma yapılacak bit sayısını öğrenmek için bu sayı modül 64 (x86 üzerinde 32) alınır. Ön ek, 64 bitlik işaretli integral türü için `long long` `__int64`bir işlem, başka bir ad olduğunu gösterir. `ll`
 
 ## <a name="example"></a>Örnek
 
-```
+```cpp
 // ll_rshift.cpp
 // compile with: /EHsc
 // processor: x86, x64
@@ -80,19 +80,20 @@ int main()
 
 ## <a name="output"></a>Çıkış
 
-```
+```Output
 ffffffffffffff00
 - 100
 fffffffffffffff0
 - 10
 ```
 
-**Not** varsa `_ull_rshift` olmuştur istenen sonuç negatif bir değer söz konusu olduğunda alındıktan değil şekilde kullanılan, Tamamlama sağa kaydırılacak değerin sıfır olacaktı.
+> [!NOTE]
+> `_ull_rshift` Kullanıldıysa, sağa kaydırılan değerin MSB değeri sıfır olur, bu nedenle istenen sonuç negatif bir değer söz konusu olduğunda elde edilmez.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)<br/>
-[__ll_lshift](../intrinsics/ll-lshift.md)<br/>
+[Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)\
+[__ll_lshift](../intrinsics/ll-lshift.md)\
 [__ull_rshift](../intrinsics/ull-rshift.md)

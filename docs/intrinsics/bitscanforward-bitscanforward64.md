@@ -1,6 +1,6 @@
 ---
 title: _BitScanForward, _BitScanForward64
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - _BitScanForward
 - _BitScanForward_cpp
@@ -11,22 +11,22 @@ helpviewer_keywords:
 - bsf instruction
 - BitScanForward intrinsic
 ms.assetid: 405e60fb-0815-42a7-9b02-6fc035122203
-ms.openlocfilehash: 8b09aeee485611ddd20d51b4c1e36ec98c03c26e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 91f43d19259419b78d1910a00a154d2d4f0adfc7
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62264224"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222222"
 ---
-# <a name="bitscanforward-bitscanforward64"></a>_BitScanForward, _BitScanForward64
+# <a name="_bitscanforward-_bitscanforward64"></a>_BitScanForward, _BitScanForward64
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Belirlenen bitin (1) için en önemli bite (MSB) (LSB'si) en az önemli bit maskesi verileri arayın.
+Maske verilerinde en az önemli bit (LSB) ile küme bit (1) için en önemli bit (MSB) arasında arama yapın.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```C
 unsigned char _BitScanForward(
    unsigned long * Index,
    unsigned long Mask
@@ -37,34 +37,34 @@ unsigned char _BitScanForward64(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
-*Index*<br/>
-[out] Bulunan bit konumunu ilk set bit (1) ile yüklendi.
+*İndeks*\
+dışı İlk küme bitinin (1) bulunduğu bit konumuyla yüklendi.
 
-*Maskesi*<br/>
-[in] Aranacak 32 bit veya 64-bit değeri.
+*Maskesi*\
+'ndaki Aranacak 32-bit veya 64 bit değeri.
 
-## <a name="return-value"></a>Dönüş Değeri
+## <a name="return-value"></a>Dönüş değeri
 
-Maske sıfırsa 0; sıfır olmayan Aksi takdirde.
+maske sıfırsa 0; sıfır dışında tersi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bit kümesinin bulunursa bit bulunan ilk belirlenen bitin konumunu ilk parametre olarak döndürülür. Bit kümesinin bulunması durumunda 0 döndürülür; Aksi takdirde, 1 döndürülür.
+Bir küme bit bulunursa, bulunan ilk küme bitinin bit konumu ilk parametrede döndürülür. Ayarlanmış bir bit bulunamazsa 0 döndürülür; Aksi takdirde, 1 döndürülür.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İç|Mimari|
+|Alanlarla|Mimari|
 |---------------|------------------|
-|`_BitScanForward`|x86, ARM, x64|
-|`_BitScanForward64`|ARM, x64|
+|`_BitScanForward`|x86, ARM, x64, ARM64|
+|`_BitScanForward64`|ARM64, x64|
 
-**Üst bilgi dosyası** \<intrin.h >
+**Üst bilgi dosyası** \<Intrin. h >
 
 ## <a name="example"></a>Örnek
 
-```
+```cpp
 // BitScanForward.cpp
 // compile with: /EHsc
 #include <iostream>
@@ -93,21 +93,17 @@ int main()
 }
 ```
 
-## <a name="input"></a>Giriş
-
-```
+```Input
 12
 ```
 
-## <a name="sample-output"></a>Örnek Çıktı
-
-```
+```Output
 Enter a positive integer as the mask:
 Mask: 12 Index: 2
 ```
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)
+[Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)

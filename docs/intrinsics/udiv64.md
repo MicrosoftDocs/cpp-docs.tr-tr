@@ -1,20 +1,20 @@
 ---
 title: _udiv64
-ms.date: 04/17/2019
+ms.date: 09/02/2019
 f1_keywords:
 - _udiv64
 helpviewer_keywords:
 - _udiv64 intrinsic
-ms.openlocfilehash: 73a29b180eeda49a9a25e9e568d25c7563234fad
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6dabbc94260ef578eb1a58a1b289b4a4654decdd
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62390158"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70219687"
 ---
-# <a name="udiv64"></a>_udiv64
+# <a name="_udiv64"></a>_udiv64
 
-`_udiv64` İç bir 64-bit işaretsiz tamsayıyı 32-bit işaretsiz tamsayı ile böler. Sayının dönüş değerine ve iç işaretçi parametresi üzerinden kalanı döndürür. `_udiv64` olan **Microsoft'a özgü**.
+İç `_udiv64` , 64 bitlik işaretsiz bir tamsayıyı 32 bit işaretsiz bir tamsayı ile böler. Dönüş değeri bölümü, iç, bir işaretçi parametresi ile geri kalanı döndürür. `_udiv64`, **Microsoft 'a özgüdür**.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -28,30 +28,30 @@ unsigned int _udiv64(
 
 ### <a name="parameters"></a>Parametreler
 
-*Bölünen*<br/>
-[in] Bölmek için 64-bit işaretsiz tamsayı.
+*eni*\
+'ndaki Bölünecek 64 bitlik işaretsiz tamsayı.
 
-*bölen*<br/>
-[in] Bölen 32-bit işaretsiz tamsayı.
+*Lene*\
+'ndaki Bölünecek 32 bitlik işaretsiz tamsayı.
 
-*Kalan*<br/>
-[out] Geri kalan 32-bit işaretsiz tamsayı.
+*geri kalanında*\
+dışı 32 bitlik işaretsiz tamsayı kalanı.
 
 ## <a name="return-value"></a>Dönüş değeri
 
-Sayının 32 bit.
+Bölüm 32 bitleri.
 
 ## <a name="remarks"></a>Açıklamalar
 
-`_udiv64` İç böler *bölünen* tarafından *bölen*. İşaret ettiği 32-bit işaretsiz tamsayı içinde kalan depolar *kalan*ve 32 bit sayının döndürür.
+İç bölünen Bölüneni *bölendir*. `_udiv64` Kalanı, kalanı tarafından işaret edilen 32 bitlik işaretsiz tamsayıya depolar ve bölümün 32bitlerini döndürür.
 
-`_udiv64` İç Visual Studio 2019 için RTM'de mevcut başlatılıyor.
+İç `_udiv64` , Visual Studio 2019 RTM 'den başlayarak kullanılabilir.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İç|Mimari|Üstbilgi|
+|Alanlarla|Mimari|Üstbilgi|
 |---------------|------------------|------------|
-|`_udiv64`|x86, x64|\<immintrin.h >|
+|`_udiv64`|x86, x64|\<ımintrin. h >|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

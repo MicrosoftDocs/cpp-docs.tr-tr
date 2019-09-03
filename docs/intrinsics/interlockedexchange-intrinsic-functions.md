@@ -1,6 +1,6 @@
 ---
-title: _InterlockedExchange İç İşlevleri
-ms.date: 12/17/2018
+title: _InterlockedExchange iç işlevleri
+ms.date: 09/02/2019
 f1_keywords:
 - _InterlockedExchange_rel
 - _InterlockedExchange8_nf
@@ -44,14 +44,14 @@ helpviewer_keywords:
 - _InterlockedExchange intrinsic
 - _InterlockedExchange8_nf
 ms.assetid: be2f232a-6301-462a-a92b-fcdeb8b0f209
-ms.openlocfilehash: c96ce57854bfb3eea0e1b8bc6283984c7fce50f9
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 53c3545be5e74d802fe63f8e7c03d2a7a2b26110
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69509392"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222000"
 ---
-# <a name="_interlockedexchange-intrinsic-functions"></a>_InterlockedExchange İç İşlevleri
+# <a name="_interlockedexchange-intrinsic-functions"></a>_InterlockedExchange iç işlevleri
 
 **Microsoft 'a özgü**
 
@@ -59,7 +59,7 @@ Belirtilen değeri ayarlamak için atomik bir yönerge oluşturur.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```C
 long _InterlockedExchange(
    long volatile * Target,
    long Value
@@ -142,15 +142,15 @@ __int64 _InterlockedExchange64_rel(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
-*Hedef*<br/>
+*Hedef*\
 [in, out] Değiş tokuş edilecek değere yönelik işaretçi. İşlevi bu değişkeni olarak `Value` ayarlar ve önceki değerini döndürür.
 
-*Değer*<br/>
+*Deeri*\
 'ndaki Tarafından `Target`işaret edilen değer ile değiştirilecek değer.
 
-## <a name="return-value"></a>Dönüş Değeri
+## <a name="return-value"></a>Dönüş değeri
 
 Tarafından `Target`işaret edilen ilk değeri döndürür.
 
@@ -158,9 +158,11 @@ Tarafından `Target`işaret edilen ilk değeri döndürür.
 
 |Alanlarla|Mimari|Üstbilgi|
 |---------------|------------------|------------|
-|`_InterlockedExchange`, `_InterlockedExchange8`, `_InterlockedExchange16`, `_InterlockedExchange64`|x86, ARM, x64|\<Intrin. h >|
-|`_InterlockedExchange_acq`, `_InterlockedExchange_nf`, `_InterlockedExchange_rel`, `_InterlockedExchange8_acq`, `_InterlockedExchange8_nf`, `_InterlockedExchange8_rel`, `_InterlockedExchange16_acq`, `_InterlockedExchange16_nf`, `_InterlockedExchange16_rel`, `_InterlockedExchange64_acq`, `_InterlockedExchange64_nf`, `_InterlockedExchange64_rel`,|ARM|\<Intrin. h >|
-|`_InterlockedExchange_HLEAcquire`, `_InterlockedExchange_HLERelease`, `_InterlockedExchange64_HLEAcquire`, `_InterlockedExchange64_HLERelease`|x86, x64|\<ımintrin. h >|
+|`_InterlockedExchange`, `_InterlockedExchange8`, `_InterlockedExchange16`|x86, ARM, x64, ARM64|\<Intrin. h >|
+|`_InterlockedExchange64`|ARM, x64, ARM64|\<Intrin. h >|
+|`_InterlockedExchange_acq`, `_InterlockedExchange_nf`, `_InterlockedExchange_rel`, `_InterlockedExchange8_acq`, `_InterlockedExchange8_nf`, `_InterlockedExchange8_rel`, `_InterlockedExchange16_acq`, `_InterlockedExchange16_nf`, `_InterlockedExchange16_rel`, `_InterlockedExchange64_acq`, `_InterlockedExchange64_nf`, `_InterlockedExchange64_rel`,|ARM, ARM64|\<Intrin. h >|
+|`_InterlockedExchange_HLEAcquire`, `_InterlockedExchange_HLERelease`|x86, x64|\<ımintrin. h >|
+|`_InterlockedExchange64_HLEAcquire`, `_InterlockedExchange64_HLERelease`|X64|\<ımintrin. h >|
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -170,7 +172,7 @@ Tarafından `Target`işaret edilen ilk değeri döndürür.
 
 İşlev 32 bitlik tamsayı değerlerinde çalışırken, `_InterlockedExchange8` 8 bit tamsayı değerleri üzerinde çalışır, `_InterlockedExchange16` 16 bit tam sayı değerlerinde çalışır ve `_InterlockedExchange64` 64 bit tamsayı değerlerinde çalışır. `_InterlockedExchange`
 
-ARM platformlarında, önemli bir bölümün başındaki ve `_acq` sonundaki `_rel` gibi alma ve bırakma semantiği için iç bilgileri ve sonekleri kullanın. `_nf` ("Sınır yok") sonekine sahip iç bilgiler bellek engeli olarak davranmaz.
+ARM platformlarında, önemli bir bölümün başındaki ve `_acq` sonundaki `_rel` gibi alma ve bırakma semantiği için iç bilgileri ve sonekleri kullanın. `_nf` ("Sınır olmayan") son ek olan iç bilgiler bellek engeli olarak davranmaz.
 
 Donanım kilidi (HLE) yönergelerini destekleyen Intel platformlarında, `_HLEAcquire` ve `_HLERelease` son ekler, donanımda bir kilit yazma adımını ortadan kaldırarak işlemciyi hızlandıran bir ipucu içerir. Bu iç bilgiler HLE 'yı desteklemeyen platformlarda çağrılırsa, ipucu yok sayılır.
 
@@ -184,6 +186,6 @@ Bu yordamlar yalnızca iç bilgiler olarak kullanılabilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)<br/>
-[Anahtar Sözcükler](../cpp/keywords-cpp.md)<br/>
+[Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)\
+[Lerimi](../cpp/keywords-cpp.md)\
 [x86 Derleyicisi ile Çakışma](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)

@@ -1,6 +1,6 @@
 ---
 title: __addgsbyte, __addgsword, __addgsdword, __addgsqword
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __addgsdword
 - __addgsqword
@@ -16,22 +16,22 @@ helpviewer_keywords:
 - __addgsdword intrinsic
 - __addgsbyte intrinsic
 ms.assetid: 4fa03e69-d849-49ed-ba37-1d3aa23c2a21
-ms.openlocfilehash: 61fff704e600296443964ab62a0b58799c87b51b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5dddd8b4a887dc0e01107f8c1036a399b4e52d2e
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62264432"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70221087"
 ---
-# <a name="addgsbyte-addgsword-addgsdword-addgsqword"></a>__addgsbyte, __addgsword, __addgsdword, __addgsqword
+# <a name="__addgsbyte-__addgsword-__addgsdword-__addgsqword"></a>__addgsbyte, __addgsword, __addgsdword, __addgsqword
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Başlangıcına göre bir uzaklık tarafından belirtilen bellek konumuna bir değer ekleyin `GS` kesimi.
+`GS` Segmentin başına göreli bir uzaklıktan belirtilen bellek konumuna bir değer ekleyin.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```C
 void __addgsbyte(
    unsigned long Offset,
    unsigned char Data
@@ -50,32 +50,34 @@ void __addgsqword(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
-*uzaklık*<br/>
-[in] Başından uzaklık `GS`.
+*Konumu*\
+'ndaki Öğesinin başından itibaren olan `GS`fark.
 
-*Veri*<br/>
-[in] Bellek konumuna eklenecek değer.
+*Verileri*\
+'ndaki Bellek konumuna eklenecek değer.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İç|Mimari|
+|Alanlarla|Mimari|
 |---------------|------------------|
 |`__addgsbyte`|X64|
 |`__addgsword`|X64|
 |`__addgsdword`|X64|
 |`__addgsqword`|X64|
 
+**Üst bilgi dosyası** \<Intrin. h >
+
 ## <a name="remarks"></a>Açıklamalar
 
-Bu yordamlar yalnızca bir iç öğe olarak kullanılabilir.
+Bu yordamlar yalnızca iç öğe olarak kullanılabilir.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[__incgsbyte, \__incgsword, \__incgsdword, \__incgsqword](../intrinsics/incgsbyte-incgsword-incgsdword-incgsqword.md)<br/>
-[__readgsbyte, \__readgsdword, \__readgsqword, \__readgsword](../intrinsics/readgsbyte-readgsdword-readgsqword-readgsword.md)<br/>
-[__writegsbyte, \__writegsdword, \__writegsqword, \__writegsword](../intrinsics/writegsbyte-writegsdword-writegsqword-writegsword.md)<br/>
-[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)
+[__incgsbyte, \__incgsword, \__incgsdword, \__incgsqword](../intrinsics/incgsbyte-incgsword-incgsdword-incgsqword.md)\
+[__readgsbyte, \__readgsdword, \__readgsqword, \__readgsword](../intrinsics/readgsbyte-readgsdword-readgsqword-readgsword.md)\
+[__writegsbyte, \__writegsdword, \__writegsqword, \__writegsword](../intrinsics/writegsbyte-writegsdword-writegsqword-writegsword.md)\
+[Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)

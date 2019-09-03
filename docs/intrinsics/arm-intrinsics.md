@@ -1,6 +1,6 @@
 ---
-title: ARM İç Bilgileri
-ms.date: 11/04/2016
+title: ARM iç bilgileri
+ms.date: 09/02/2019
 f1_keywords:
 - arm_neon/vsetq_lane_p8
 - armintr/_arm_uxtb
@@ -1931,70 +1931,70 @@ helpviewer_keywords:
 - cl.exe compiler, intrinsics
 - intrinsics, ARM
 ms.assetid: d3d7dadd-7bd5-4508-8bff-371a66913e20
-ms.openlocfilehash: 0f63112f04da317371c15e1fd6ba22fc7e2bd6e1
-ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
+ms.openlocfilehash: d2621c53896feec5965b7414f1fb022b4537977d
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66450778"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70216095"
 ---
 # <a name="arm-intrinsics"></a>ARM İç Bilgileri
 
-Microsoft C++ derleyici (MSVC) aşağıdaki yapı içlerini kullanıma sunar ARM mimarisine. ARM hakkında daha fazla bilgi için bkz: [ARM mimarisi başvuru kılavuzlarına](https://go.microsoft.com/fwlink/p/?LinkId=522049) ve [ARM Assembler araçları Kılavuzu](https://go.microsoft.com/fwlink/p/?LinkId=246102) ARM Bilgi Merkezi Web sitesinde.
+Microsoft C++ DERLEYICISI (MSVC), aşağıdaki Iç bilgileri ARM mimarisinde kullanılabilir hale getirir. ARM hakkında daha fazla bilgi için ARM Bilgi Merkezi Web sitesinde [ARM mimari başvuru kılavuzları](https://go.microsoft.com/fwlink/p/?LinkId=522049) ve [ARM Assembler araçları Kılavuzu](https://go.microsoft.com/fwlink/p/?LinkId=246102) ' na bakın.
 
-##  <a name="top"></a> NEON
+##  <a name="top"></a>NEON
 
-ARM NEON vektör yönerge kümesi uzantıları x86 ve x64 mimari işlemcileri için ortak olan MMX ve SSE vektör yönerge kümesi de benzer tek yönerge birden çok veri (SIMD) özellikleri sağlar.
+ARM için NEON vektör yönerge kümesi uzantıları, x86 ve x64 mimari işlemciler için ortak olan MMX ve SSE vektör yönerge kümelerinde yer alan Tek Yönerge Birden Çok Veri (SıMD) özellikleri sağlar.
 
-NEON yapı içleri desteklenir, üstbilgi dosyasında koşuluyla `arm_neon.h`. NEON yapı içleri MSVC desteği, ek G belgelenen ARM derleyicisi, benzer [ARM derleyici araç zinciri, sürüm 4.1 derleyici başvurusu](https://go.microsoft.com/fwlink/p/?LinkId=251083) ARM Bilgi Merkezi Web sitesinde.
+NEON iç bilgiler, üstbilgi dosyasında `arm_neon.h`sağlandığı gibi desteklenir. NEON iç MSVC desteği, ARM derleyicisi araç zincirinin ek G ' de, ARM Bilgi Merkezi Web sitesinde [sürüm 4,1 derleyici başvurusu](https://go.microsoft.com/fwlink/p/?LinkId=251083) ' nda belgelenen ARM derleyicisine benzer.
 
-MSVC eklediği MSVC ve ARM derleyicisi arasındaki birincil fark olduğu `_ex` türevleri `vldX` ve `vstX` vektör yük ve yönergeleri depolayın. `_ex` Çeşitleri ele işaretçi bağımsız değişkeni ancak kendi olmayan aksi özdeş olan hizalamasını belirten ek bir parametre`_ex` ortaklarınıza.
+MSVC ve ARM derleyicisi arasındaki birincil fark, MSVC `_ex` `vldX` 'ın ve `vstX` vektör yükleme ve mağaza yönergelerinin çeşitlerini eklemesine sahiptir. Çeşitler, işaretçi bağımsız değişkeninin hizalamasını belirten ek bir parametre alır, aksi takdirde`_ex` karşılık gelen karşılıklarına benzer. `_ex`
 
-##  <a name="A"></a> ARM özel iç bilgi listesi
+##  <a name="A"></a>ARM 'e özgü Iç öğe listesi
 
-|İşlev adı|Yönerge|İşlev prototipi|
+|İşlev adı|Yönergenin|İşlev prototipi|
 |-------------------|-----------------|------------------------|
-|_arm_smlal|SMLAL|__int64 _arm_smlal (\__int64 _RdHiLo, _Rn int, int _Rm)|
-|_arm_umlal|UMLAL|imzalanmamış __int64 _arm_umlal (işaretsiz \__int64 _RdHiLo, _Rn işaretsiz int, işaretsiz int _Rm)|
+|_arm_smlal|SMLAL|__int64 _arm_smlal (\__int64 _rdhılo, int _Rn, int _rm)|
+|_arm_umlal|UMLAL|işaretsiz __int64 _arm_umlal (işaretsiz \__int64 _rdhılo, işaretsiz int _Rn, işaretsiz int _rm)|
 |_arm_clz|CLZ|işaretsiz int _arm_clz (işaretsiz int _Rm)|
-|_arm_qadd|QADD|int _arm_qadd (_Rm int, int _Rn)|
-|_arm_qdadd|QDADD|int _arm_qdadd(int _Rm, int _Rn)|
-|_arm_qdsub|QDSUB|int _arm_qdsub (_Rm int, int _Rn)|
-|_arm_qsub|QSUB|int _arm_qsub (_Rm int, int _Rn)|
-|_arm_smlabb|SMLABB|int _arm_smlabb (int _Rn, _Rm int, int _Ra)|
-|_arm_smlabt|SMLABT|int _arm_smlabt (int _Rn, _Rm int, int _Ra)|
-|_arm_smlatb|SMLATB|int _arm_smlatb (int _Rn, _Rm int, int _Ra)|
-|_arm_smlatt|SMLATT|int _arm_smlatt (int _Rn, _Rm int, int _Ra)|
-|_arm_smlalbb|SMLALBB|__int64 _arm_smlalbb (\__int64 _RdHiLo, _Rn int, int _Rm)|
-|_arm_smlalbt|SMLALBT|__int64 _arm_smlalbt (\__int64 _RdHiLo, _Rn int, int _Rm)|
-|_arm_smlaltb|SMLALTB|__int64 _arm_smlaltb (\__int64 _RdHiLo, _Rn int, int _Rm)|
-|_arm_smlaltt|SMLALTT|__int64 _arm_smlaltt (\__int64 _RdHiLo, _Rn int, int _Rm)|
-|_arm_smlawb|SMLAWB|int _arm_smlawb (int _Rn, _Rm int, int _Ra)|
-|_arm_smlawt|SMLAWT|int _arm_smlawt (int _Rn, _Rm int, int _Ra)|
-|_arm_smulbb|SMULBB|int _arm_smulbb (_Rn int, int _Rm)|
-|_arm_smulbt|SMULBT|int _arm_smulbt (_Rn int, int _Rm)|
-|_arm_smultb|SMULTB|int _arm_smultb (_Rn int, int _Rm)|
-|_arm_smultt|SMULTT|int _arm_smultt (_Rn int, int _Rm)|
-|_arm_smulwb|SMULWB|int _arm_smulwb (_Rn int, int _Rm)|
-|_arm_smulwt|SMULWT|int _arm_smulwt (_Rn int, int _Rm)|
-|_arm_sadd16|SADD16|int _arm_sadd16 (_Rn int, int _Rm)|
-|_arm_sadd8|SADD8|int _arm_sadd8 (_Rn int, int _Rm)|
-|_arm_sasx|SASX|int _arm_sasx (_Rn int, int _Rm)|
-|_arm_ssax|SSAX|int _arm_ssax (_Rn int, int _Rm)|
-|_arm_ssub16|SSUB16|int _arm_ssub16 (_Rn int, int _Rm)|
-|_arm_ssub8|SSUB8|int _arm_ssub8 (_Rn int, int _Rm)|
-|_arm_shadd16|SHADD16|int _arm_shadd16 (_Rn int, int _Rm)|
-|_arm_shadd8|SHADD8|int _arm_shadd8 (_Rn int, int _Rm)|
-|_arm_shasx|SHASX|int _arm_shasx (_Rn int, int _Rm)|
-|_arm_shsax|SHSAX|int _arm_shsax (_Rn int, int _Rm)|
-|_arm_shsub16|SHSUB16|int _arm_shsub16 (_Rn int, int _Rm)|
-|_arm_shsub8|SHSUB8|int _arm_shsub8 (_Rn int, int _Rm)|
-|_arm_qadd16|QADD16|int _arm_qadd16 (_Rn int, int _Rm)|
-|_arm_qadd8|QADD8|int _arm_qadd8 (_Rn int, int _Rm)|
-|_arm_qasx|QASX|int _arm_qasx (_Rn int, int _Rm)|
-|_arm_qsax|QSAX|int _arm_qsax (_Rn int, int _Rm)|
-|_arm_qsub16|QSUB16|int _arm_qsub16 (_Rn int, int _Rm)|
-|_arm_qsub8|QSUB8|int _arm_qsub8 (_Rn int, int _Rm)|
+|_arm_qadd|QADD|int _arm_qadd (int _Rm, int _Rn)|
+|_arm_qdadd|QBADD|int _arm_qdadd (int _Rm, int _Rn)|
+|_arm_qdsub|QDSUB|int _arm_qdsub (int _Rm, int _Rn)|
+|_arm_qsub|QSUB|int _arm_qsub (int _Rm, int _Rn)|
+|_arm_smlabb|SMLABB|int _arm_smlabb (int _Rn, int _Rm, int _Ra)|
+|_arm_smlabt|SMLABT|int _arm_smlabt (int _Rn, int _Rm, int _Ra)|
+|_arm_smlatb|SMLATB|int _arm_smlatb (int _Rn, int _Rm, int _Ra)|
+|_arm_smlatt|SMLATT|int _arm_smlatt (int _Rn, int _Rm, int _Ra)|
+|_arm_smlalbb|SMLALBB|__int64 _arm_smlalbb (\__int64 _rdhılo, int _Rn, int _rm)|
+|_arm_smlalbt|SMLALBT|__int64 _arm_smlalbt (\__int64 _rdhılo, int _Rn, int _rm)|
+|_arm_smlaltb|SMLALTB|__int64 _arm_smlaltb (\__int64 _rdhılo, int _Rn, int _rm)|
+|_arm_smlaltt|SMLALTT|__int64 _arm_smlaltt (\__int64 _rdhılo, int _Rn, int _rm)|
+|_arm_smlawb|SMLAWB|int _arm_smlawb (int _Rn, int _Rm, int _Ra)|
+|_arm_smlawt|SMLAWT|int _arm_smlawt (int _Rn, int _Rm, int _Ra)|
+|_arm_smulbb|SMULBB|int _arm_smulbb (int _Rn, int _Rm)|
+|_arm_smulbt|SMULBT|int _arm_smulbt (int _Rn, int _Rm)|
+|_arm_smultb|SMULTB|int _arm_smultb (int _Rn, int _Rm)|
+|_arm_smultt|SMULTT|int _arm_smultt (int _Rn, int _Rm)|
+|_arm_smulwb|SMULWB|int _arm_smulwb (int _Rn, int _Rm)|
+|_arm_smulwt|SMULWT|int _arm_smulwt (int _Rn, int _Rm)|
+|_arm_sadd16|SADD16|int _arm_sadd16 (int _Rn, int _Rm)|
+|_arm_sadd8|SADD8|int _arm_sadd8 (int _Rn, int _Rm)|
+|_arm_sasx|SASX|int _arm_sasx (int _Rn, int _Rm)|
+|_arm_ssax|SSAX|int _arm_ssax (int _Rn, int _Rm)|
+|_arm_ssub16|SSUB16|int _arm_ssub16 (int _Rn, int _Rm)|
+|_arm_ssub8|SSUB8|int _arm_ssub8 (int _Rn, int _Rm)|
+|_arm_shadd16|SHADD16|int _arm_shadd16 (int _Rn, int _Rm)|
+|_arm_shadd8|SHADD8|int _arm_shadd8 (int _Rn, int _Rm)|
+|_arm_shasx|SHASX|int _arm_shasx (int _Rn, int _Rm)|
+|_arm_shsax|SHSAX|int _arm_shsax (int _Rn, int _Rm)|
+|_arm_shsub16|SHSUB16|int _arm_shsub16 (int _Rn, int _Rm)|
+|_arm_shsub8|SHSUB8|int _arm_shsub8 (int _Rn, int _Rm)|
+|_arm_qadd16|QADD16|int _arm_qadd16 (int _Rn, int _Rm)|
+|_arm_qadd8|QADD8|int _arm_qadd8 (int _Rn, int _Rm)|
+|_arm_qasx|QASX|int _arm_qasx (int _Rn, int _Rm)|
+|_arm_qsax|QSAX|int _arm_qsax (int _Rn, int _Rm)|
+|_arm_qsub16|QSUB16|int _arm_qsub16 (int _Rn, int _Rm)|
+|_arm_qsub8|QSUB8|int _arm_qsub8 (int _Rn, int _Rm)|
 |_arm_uadd16|UADD16|işaretsiz int _arm_uadd16 (işaretsiz int _Rn, işaretsiz int _Rm)|
 |_arm_uadd8|UADD8|işaretsiz int _arm_uadd8 (işaretsiz int _Rn, işaretsiz int _Rm)|
 |_arm_uasx|UASX|işaretsiz int _arm_uasx (işaretsiz int _Rn, işaretsiz int _Rm)|
@@ -2009,180 +2009,180 @@ MSVC eklediği MSVC ve ARM derleyicisi arasındaki birincil fark olduğu `_ex` t
 |_arm_uhsub8|UHSUB8|işaretsiz int _arm_uhsub8 (işaretsiz int _Rn, işaretsiz int _Rm)|
 |_arm_uqadd16|UQADD16|işaretsiz int _arm_uqadd16 (işaretsiz int _Rn, işaretsiz int _Rm)|
 |_arm_uqadd8|UQADD8|işaretsiz int _arm_uqadd8 (işaretsiz int _Rn, işaretsiz int _Rm)|
-|_arm_uqasx|UQASX|işaretsiz int _arm_uqasx (işaretsiz int _Rn, işaretsiz int _Rm)|
+|_arm_uqasx|UIQASX|işaretsiz int _arm_uqasx (işaretsiz int _Rn, işaretsiz int _Rm)|
 |_arm_uqsax|UQSAX|işaretsiz int _arm_uqsax (işaretsiz int _Rn, işaretsiz int _Rm)|
 |_arm_uqsub16|UQSUB16|işaretsiz int _arm_uqsub16 (işaretsiz int _Rn, işaretsiz int _Rm)|
 |_arm_uqsub8|UQSUB8|işaretsiz int _arm_uqsub8 (işaretsiz int _Rn, işaretsiz int _Rm)|
-|_arm_sxtab|SXTAB|int _arm_sxtab (_Rn int, int _Rm, işaretsiz int _Rotation)|
-|_arm_sxtab16|SXTAB16|int _arm_sxtab16 (_Rn int, int _Rm işaretsiz int _Rotation)|
-|_arm_sxtah|SXTAH|int _arm_sxtah (_Rn int, int _Rm, işaretsiz int _Rotation)|
-|_arm_uxtab|UXTAB|işaretsiz int _arm_uxtab (işaretsiz int _Rn, _Rm işaretsiz int, işaretsiz int _Rotation)|
-|_arm_uxtab16|UXTAB16|işaretsiz int _arm_uxta16b (işaretsiz int _Rn _Rm işaretsiz int, işaretsiz int _Rotation)|
-|_arm_uxtah|UXTAH|işaretsiz int _arm_uxtah (işaretsiz int _Rn, _Rm işaretsiz int, işaretsiz int _Rotation)|
+|_arm_sxtab|SXTAB|int _arm_sxtab (int _Rn, int _Rm, işaretsiz int _Rotation)|
+|_arm_sxtab16|SXTAB16|int _arm_sxtab16 (int _Rn, int _Rm, işaretsiz int _Rotation)|
+|_arm_sxtah|SXTAH|int _arm_sxtah (int _Rn, int _Rm, işaretsiz int _Rotation)|
+|_arm_uxtab|UXTAB SEKMESİ|işaretsiz int _arm_uxtab (işaretsiz int _Rn, işaretsiz int _Rm, işaretsiz int _Rotation)|
+|_arm_uxtab16|UXTAB16|işaretsiz int _arm_uxta16b (işaretsiz int _Rn, işaretsiz int _Rm, işaretsiz int _Rotation)|
+|_arm_uxtah|UXTAH|işaretsiz int _arm_uxtah (işaretsiz int _Rn, işaretsiz int _Rm, işaretsiz int _Rotation)|
 |_arm_sxtb|SXTB|int _arm_sxtb (int _Rn, işaretsiz int _Rotation)|
-|_arm_sxtb16|SXTB16|int _arm_sxtb16 (_Rn int, işaretsiz int _Rotation)|
+|_arm_sxtb16|SXTB16|int _arm_sxtb16 (int _Rn, işaretsiz int _Rotation)|
 |_arm_sxth|SXTH|int _arm_sxth (int _Rn, işaretsiz int _Rotation)|
 |_arm_uxtb|UXTB|işaretsiz int _arm_uxtb (işaretsiz int _Rn, işaretsiz int _Rotation)|
 |_arm_uxtb16|UXTB16|işaretsiz int _arm_uxtb16 (işaretsiz int _Rn, işaretsiz int _Rotation)|
 |_arm_uxth|UXTH|işaretsiz int _arm_uxth (işaretsiz int _Rn, işaretsiz int _Rotation)|
-|_arm_pkhbt|PKHBT|int _arm_pkhbt (_Rn int, int _Rm, işaretsiz int _Lsl_imm)|
-|_arm_pkhtb|PKHTB|int _arm_pkhtb (_Rn int, int _Rm, işaretsiz int _Asr_imm)|
+|_arm_pkhbt|PKHBT|int _arm_pkhbt (int _Rn, int _Rm, işaretsiz int _Lsl_ımd)|
+|_arm_pkhtb|PKHTB|int _arm_pkhtb (int _Rn, int _Rm, işaretsiz int _Asr_ımd)|
 |_arm_usad8|USAD8|işaretsiz int _arm_usad8 (işaretsiz int _Rn, işaretsiz int _Rm)|
-|_arm_usada8|USADA8|işaretsiz int _arm_usada8 (işaretsiz int _Rn _Rm işaretsiz int, işaretsiz int _Ra)|
-|_arm_ssat|SSAT|int _arm_ssat (işaretsiz int _Sat_imm, _int _Rn, _ARMINTR_SHIFT_T _Shift_type, işaretsiz int _Shift_imm)|
-|_arm_usat|USAT|int _arm_usat (işaretsiz int _Sat_imm, _int _Rn, _ARMINTR_SHIFT_T _Shift_type, işaretsiz int _Shift_imm)|
-|_arm_ssat16|SSAT16|int _arm_ssat16 (işaretsiz int _Sat_imm, _int _Rn)|
-|_arm_usat16|USAT16|int _arm_usat16 (işaretsiz int _Sat_imm, _int _Rn)|
-|_arm_rev|REV|işaretsiz int _arm_rev (işaretsiz int _Rm)|
+|_arm_usada8|USADA8|işaretsiz int _arm_usada8 (işaretsiz int _Rn, işaretsiz int _Rm, işaretsiz int _Ra)|
+|_arm_ssat|SSAT|int _arm_ssat (işaretsiz int _Sat_ımd, _İNT _Rn, _ARMINTR_SHIFT_T _Shift_type, işaretsiz int _Shift_imm)|
+|_arm_usat|USAT|int _arm_usat (işaretsiz int _Sat_ımd, _İNT _Rn, _ARMINTR_SHIFT_T _Shift_type, işaretsiz int _Shift_imm)|
+|_arm_ssat16|SSAT16|int _arm_ssat16 (işaretsiz int _Sat_ımd, _İNT _Rn)|
+|_arm_usat16|USAT16|int _arm_usat16 (işaretsiz int _Sat_ımd, _İNT _Rn)|
+|_arm_rev|DÜZENLEME|işaretsiz int _arm_rev (işaretsiz int _Rm)|
 |_arm_rev16|REV16|işaretsiz int _arm_rev16 (işaretsiz int _Rm)|
 |_arm_revsh|REVSH|işaretsiz int _arm_revsh (işaretsiz int _Rm)|
-|_arm_smlad|SMLAD|int _arm_smlad (int _Rn, _Rm int, int _Ra)|
-|_arm_smladx|SMLADX|int _arm_smladx (int _Rn, _Rm int, int _Ra)|
-|_arm_smlsd|SMLSD|int _arm_smlsd (int _Rn, _Rm int, int _Ra)|
-|_arm_smlsdx|SMLSDX|int _arm_smlsdx (int _Rn, _Rm int, int _Ra)|
-|_arm_smmla|SMMLA|int _arm_smmla (int _Rn, _Rm int, int _Ra)|
-|_arm_smmlar|SMMLAR|int _arm_smmlar (int _Rn, _Rm int, int _Ra)|
-|_arm_smmls|SMMLS|int _arm_smmls (int _Rn, _Rm int, int _Ra)|
-|_arm_smmlsr|SMMLSR|int _arm_smmlsr (int _Rn, _Rm int, int _Ra)|
-|_arm_smmul|SMMUL|int _arm_smmul (_Rn int, int _Rm)|
-|_arm_smmulr|SMMULR|int _arm_smmulr (_Rn int, int _Rm)|
-|_arm_smlald|SMLALD|__int64 _arm_smlald (\__int64 _RdHiLo, _Rn int, int _Rm)|
-|_arm_smlaldx|SMLALDX|__int64 _arm_smlaldx (\__int64 _RdHiLo, _Rn int, int _Rm)|
-|_arm_smlsld|SMLSLD|__int64 _arm_smlsld (\__int64 _RdHiLo, _Rn int, int _Rm)|
-|_arm_smlsldx|SMLSLDX|__int64 _arm_smlsldx (\__int64 _RdHiLo, _Rn int, int _Rm)|
-|_arm_smuad|SMUAD|int _arm_smuad (_Rn int, int _Rm)|
-|_arm_smuadx|SMUADX|int _arm_muadxs (_Rn int, int _Rm)|
-|_arm_smusd|SMUSD|int _arm_smusd (_Rn int, int _Rm)|
-|_arm_smusdx|SMUSDX|int _arm_smusdx (_Rn int, int _Rm)|
-|_arm_smull|SMULL|__int64 _arm_smull (_Rn int, int _Rm)|
-|_arm_umull|UMULL|imzalanmamış __int64 _arm_umull (işaretsiz int _Rn, işaretsiz int _Rm)|
-|_arm_umaal|UMAAL|imzalanmamış __int64 _arm_umaal (işaretsiz int _RdLo, _RdHi işaretsiz int, işaretsiz int _Rn, işaretsiz int _Rm)|
-|_arm_bfc|BFC|işaretsiz int _arm_bfc (işaretsiz int _Rd, _Lsb işaretsiz int, işaretsiz int _Width)|
-|_arm_bfi|BFI|işaretsiz int _arm_bfi (işaretsiz int _Rd, _Rn işaretsiz int, işaretsiz int _Lsb, işaretsiz int _Width)|
+|_arm_smlad|SMLAD|int _arm_smlad (int _Rn, int _Rm, int _Ra)|
+|_arm_smladx|SMLADX|int _arm_smladx (int _Rn, int _Rm, int _Ra)|
+|_arm_smlsd|SMLSD|int _arm_smlsd (int _Rn, int _Rm, int _Ra)|
+|_arm_smlsdx|SMLSDX|int _arm_smlsdx (int _Rn, int _Rm, int _Ra)|
+|_arm_smmla|SMMLA|int _arm_smmla (int _Rn, int _Rm, int _Ra)|
+|_arm_smmlar|SMMLAR|int _arm_smmlar (int _Rn, int _Rm, int _Ra)|
+|_arm_smmls|SMMLS|int _arm_smmls (int _Rn, int _Rm, int _Ra)|
+|_arm_smmlsr|SMMLSR|int _arm_smmlsr (int _Rn, int _Rm, int _Ra)|
+|_arm_smmul|SMMUL|int _arm_smmul (int _Rn, int _Rm)|
+|_arm_smmulr|SMMULR|int _arm_smmulr (int _Rn, int _Rm)|
+|_arm_smlald|SMLALD|__int64 _arm_smlald (\__int64 _rdhılo, int _Rn, int _rm)|
+|_arm_smlaldx|SMLALDX|__int64 _arm_smlaldx (\__int64 _rdhılo, int _Rn, int _rm)|
+|_arm_smlsld|SMLSLD|__int64 _arm_smlsld (\__int64 _rdhılo, int _Rn, int _rm)|
+|_arm_smlsldx|SMLSLDX|__int64 _arm_smlsldx (\__int64 _rdhılo, int _Rn, int _rm)|
+|_arm_smuad|SMUAD|int _arm_smuad (int _Rn, int _Rm)|
+|_arm_smuadx|SMUADX|int _arm_muadxs (int _Rn, int _Rm)|
+|_arm_smusd|SMUSD|int _arm_smusd (int _Rn, int _Rm)|
+|_arm_smusdx|SMUSDX|int _arm_smusdx (int _Rn, int _Rm)|
+|_arm_smull|SMULL|__int64 _arm_smull (int _Rn, int _Rm)|
+|_arm_umull|UMULL|işaretsiz __int64 _arm_umull (işaretsiz int _Rn, işaretsiz int _Rm)|
+|_arm_umaal|UMAAL|işaretsiz __int64 _arm_umaal (işaretsiz int _RdLo, işaretsiz int _RdHi, işaretsiz int _Rn, işaretsiz int _Rm)|
+|_arm_bfc|BFC|işaretsiz int _arm_bfc (işaretsiz int _Rd, işaretsiz int _Lsb, işaretsiz int _Width)|
+|_arm_bfi|BFI|işaretsiz int _arm_bfi (işaretsiz int _Rd, işaretsiz int _Rn, işaretsiz int _Lsb, işaretsiz int _Width)|
 |_arm_rbit|RBIT|işaretsiz int _arm_rbit (işaretsiz int _Rm)|
-|_arm_sbfx|SBFX|int _arm_sbfx (int _Rn, _Lsb işaretsiz int, işaretsiz int _Width)|
-|_arm_ubfx|UBFX|işaretsiz int _arm_ubfx (işaretsiz int _Rn, _Lsb işaretsiz int, işaretsiz int _Width)|
-|_arm_sdiv|SDIV|int _arm_sdiv (_Rn int, int _Rm)|
+|_arm_sbfx|SBFX|int _arm_sbfx (int _Rn, işaretsiz int _Lsb, işaretsiz int _Width)|
+|_arm_ubfx|UBFX|işaretsiz int _arm_ubfx (işaretsiz int _Rn, işaretsiz int _Lsb, işaretsiz int _Width)|
+|_arm_sdiv|SDIV|int _arm_sdiv (int _Rn, int _Rm)|
 |_arm_udiv|UDIV|işaretsiz int _arm_udiv (işaretsiz int _Rn, işaretsiz int _Rm)|
-|__cps|CPS|void __cps (işaretsiz int _Ops, _Flags işaretsiz int, işaretsiz int _modu)|
-|__dmb|DMB|void __dmb (işaretsiz int `_Type`)<br /><br /> Bellek engeli işlemi yönerge akışa ekler. Parametre `_Type` engel zorlar kısıtlama türünü belirtir.<br /><br /> Zorunlu tutulabilir kısıtlamaları türleri hakkında daha fazla bilgi için bkz. [bellek engel kısıtlamaları](#BarrierRestrictions).|
-|__dsb|DSB|void __dsb (işaretsiz int _türü)<br /><br /> Bellek engeli işlemi yönerge akışa ekler. Parametre `_Type` engel zorlar kısıtlama türünü belirtir.<br /><br /> Zorunlu tutulabilir kısıtlamaları türleri hakkında daha fazla bilgi için bkz. [bellek engel kısıtlamaları](#BarrierRestrictions).|
-|__isb|ISB|void __isb (işaretsiz int _türü)<br /><br /> Bellek engeli işlemi yönerge akışa ekler. Parametre `_Type` engel zorlar kısıtlama türünü belirtir.<br /><br /> Zorunlu tutulabilir kısıtlamaları türleri hakkında daha fazla bilgi için bkz. [bellek engel kısıtlamaları](#BarrierRestrictions).|
-|__emit||void __emit (işaretsiz \__int32 opcode)<br /><br /> Belirtilen bir yönerge çıktı derleyici tarafından yönergelerin akışını ekler.<br /><br /> Değerini `opcode` derleme zamanında bilinen bir sabit ifade olmalıdır. Yönerge sözcük 16 bit ve en önemli 16 bitlik boyutudur `opcode` göz ardı edilir.<br /><br /> İçeriğini yorumlama girişimi derleyici yapar `opcode` ve eklenen yönerge yürütülmeden önce bir CPU veya bellek durumu garanti etmez.<br /><br /> Derleyici, eklenen yönerge yürütüldükten sonra CPU ve bellek durumları değiştirilmemiş olduğunu varsayar. Bu nedenle, durum değiştirme yönergeleri, derleyici tarafından oluşturulan normal kod üzerinde bir verebilirliğinde etkisi olabilir.<br /><br /> Bu nedenle, kullanın `emit` yalnızca derleyicinin normalde yürütme bir CPU durumunu etkileyen yönergeleri eklemek için — örneğin, eşişlemcisi durumu — veya kullanılarak bildirilen işlevler uygulamak için `declspec(naked)`.|
+|__cps|CPS|void __cps (işaretsiz int _Ops, işaretsiz int _Flags, işaretsiz int _Mode)|
+|__dmb|DMB|void __dmb (işaretsiz int `_Type`)<br /><br /> Yönerge akışına bir bellek engeli işlemi ekler. Parametresi `_Type` , engelin zorladığı kısıtlama türünü belirtir.<br /><br /> Zorlanacak kısıtlama türleri hakkında daha fazla bilgi için bkz. [bellek engeli kısıtlamaları](#BarrierRestrictions).|
+|__dsb|DSB|void __dsb (işaretsiz int _Type)<br /><br /> Yönerge akışına bir bellek engeli işlemi ekler. Parametresi `_Type` , engelin zorladığı kısıtlama türünü belirtir.<br /><br /> Zorlanacak kısıtlama türleri hakkında daha fazla bilgi için bkz. [bellek engeli kısıtlamaları](#BarrierRestrictions).|
+|__isb|ISB|void __isb (işaretsiz int _Type)<br /><br /> Yönerge akışına bir bellek engeli işlemi ekler. Parametresi `_Type` , engelin zorladığı kısıtlama türünü belirtir.<br /><br /> Zorlanacak kısıtlama türleri hakkında daha fazla bilgi için bkz. [bellek engeli kısıtlamaları](#BarrierRestrictions).|
+|__yayma||void __yayma (işaretsiz \__int32 opcode)<br /><br /> Derleyicinin çıktısı olan yönergelerin akışına belirtilen yönergeyi ekler.<br /><br /> Değeri, derleme `opcode` zamanında bilinen bir sabit ifade olmalıdır. Bir yönerge sözcüğünün boyutu 16 bittir ve en önemli 16 bit `opcode` yok sayılır.<br /><br /> Derleyici, içeriğini `opcode` yorumlama girişiminde bulunmaz ve ekleme yönergesi yürütülmeden önce bir CPU veya bellek durumu garantisi vermez.<br /><br /> Derleyici, eklenen yönerge yürütüldükten sonra CPU ve bellek durumlarının değiştirilmemiş olduğunu varsayar. Bu nedenle, değişiklik durumu yapan yönergelerin, derleyici tarafından oluşturulan normal kod üzerinde olumsuz bir etkisi olabilir.<br /><br /> Bu nedenle, yalnızca derleyicinin `emit` normalde işlemediği (örneğin, Eşişlemcisi durumu) veya kullanılarak `declspec(naked)`belirtilen işlevleri uygulayan bir CPU durumunu etkileyen yönergeler eklemek için kullanın.|
 |__hvc|HVC|işaretsiz int __hvc (işaretsiz int,...)|
-|__iso_volatile_load16||__int16 \__iso_volatile_load16 (const volatile \__int16 \*)<br /><br /> Daha fazla bilgi için [__iso_volatile_load depolama instrinsics](#IsoVolatileLoadStore).|
-|__iso_volatile_load32||__int32 \__iso_volatile_load32 (const volatile \__int32 \*)<br /><br /> Daha fazla bilgi için [__iso_volatile_load depolama instrinsics](#IsoVolatileLoadStore).|
-|__iso_volatile_load64||__int64 \__iso_volatile_load64 (const volatile \__int64 \*)<br /><br /> Daha fazla bilgi için [__iso_volatile_load depolama instrinsics](#IsoVolatileLoadStore).|
-|__iso_volatile_load8||__int8 \__iso_volatile_load8 (const volatile \__int8 \*)<br /><br /> Daha fazla bilgi için [__iso_volatile_load depolama instrinsics](#IsoVolatileLoadStore).|
-|__iso_volatile_store16||void __iso_volatile_store16 (geçici \__int16 \*, \__int16)<br /><br /> Daha fazla bilgi için [__iso_volatile_load depolama instrinsics](#IsoVolatileLoadStore).|
-|__iso_volatile_store32||void __iso_volatile_store32 (geçici \__int32 \*, \__int32)<br /><br /> Daha fazla bilgi için [__iso_volatile_load depolama instrinsics](#IsoVolatileLoadStore).|
-|__iso_volatile_store64||void __iso_volatile_store64 (geçici \__int64 \*, \__int64)<br /><br /> Daha fazla bilgi için [__iso_volatile_load depolama instrinsics](#IsoVolatileLoadStore).|
-|__iso_volatile_store8||void __iso_volatile_store8 (geçici \__int8 \*, \__int8)<br /><br /> Daha fazla bilgi için [__iso_volatile_load depolama instrinsics](#IsoVolatileLoadStore).|
+|__ıso_volatile_load16||__int16 \__ıso_volatile_load16 (const volatile \__int16 \*)<br /><br /> Daha fazla bilgi için bkz. [__ıso_volatile_load/Store iç](#IsoVolatileLoadStore)bilgileri.|
+|__ıso_volatile_load32||__int32 \__iz_volatile_load32 (const volatile \__int32 \*)<br /><br /> Daha fazla bilgi için bkz. [__ıso_volatile_load/Store iç](#IsoVolatileLoadStore)bilgileri.|
+|__ıso_volatile_load64||__int64 \__ıso_volatile_load64 (const volatile \__int64 \*)<br /><br /> Daha fazla bilgi için bkz. [__ıso_volatile_load/Store iç](#IsoVolatileLoadStore)bilgileri.|
+|__ıso_volatile_load8||__int8 \__iz_volatile_load8 (const volatile \__int8 \*)<br /><br /> Daha fazla bilgi için bkz. [__ıso_volatile_load/Store iç](#IsoVolatileLoadStore)bilgileri.|
+|__ıso_volatile_store16||void __ıso_volatile_store16 (volatile \__int16 \*, \__int16)<br /><br /> Daha fazla bilgi için bkz. [__ıso_volatile_load/Store iç](#IsoVolatileLoadStore)bilgileri.|
+|__ıso_volatile_store32||void __ıso_volatile_store32 (volatile \__int32 \*, \__int32)<br /><br /> Daha fazla bilgi için bkz. [__ıso_volatile_load/Store iç](#IsoVolatileLoadStore)bilgileri.|
+|__ıso_volatile_store64||void __ıso_volatile_store64 (volatile \__int64 \*, \__int64)<br /><br /> Daha fazla bilgi için bkz. [__ıso_volatile_load/Store iç](#IsoVolatileLoadStore)bilgileri.|
+|__ıso_volatile_store8||void __ıso_volatile_store8 (volatile \__int8 \*, \__int8)<br /><br /> Daha fazla bilgi için bkz. [__ıso_volatile_load/Store iç](#IsoVolatileLoadStore)bilgileri.|
 |__ldrexd|LDREXD|__int64 \__ldrexd (const volatile \__int64 \*)|
-|__prefetch|PLD|void __cdecl \__prefetch (const void \*)<br /><br /> Sağlar bir `PLD` bellek, bellek veya belirtilen yakın sisteme ipucu adresi erişilebilir olan en kısa sürede. Bazı sistemler, çalışma zamanı performansını artırmak bu bellek erişim deseni için en iyi duruma getirmeyi tercih edebilirsiniz. Ancak, C++ dil açısından, işlev gözlemlenebilir etkiye sahip değildir ve hiçbir şey hiç yapabilirsiniz.|
-|__rdpmccntr64||imzalanmamış __int64 \__rdpmccntr64(void)|
-|__sev|SEV|void __sev(void)|
-|__static_assert||void __static_assert (int, const char \*)|
-|__swi|SVC|işaretsiz int __swi (işaretsiz int,...)|
-|__trap|BKPT|int __trap (int,...)|
-|__wfe|WFE|void __wfe(void)|
-|__wfi|WFI|void __wfi(void)|
-|_AddSatInt|QADD|int _AddSatInt (int, int)|
-|_CopyDoubleFromInt64||çift _CopyDoubleFromInt64 (\__int64)|
-|_CopyFloatFromInt32||_CopyFloatFromInt32 float (\__int32)|
-|_CopyInt32FromFloat||__int32 _CopyInt32FromFloat(float)|
-|_CopyInt64FromDouble||__int64 _CopyInt64FromDouble(double)|
-|_CountLeadingOnes||işaretsiz int _CountLeadingOnes(unsigned long)|
+|__önceden getirme|PLD 'LAR|void __cdecl \__önceden getirme (const \*void)<br /><br /> Sisteme, `PLD` belirtilen adrese veya hatta yakın olan belleğin yakında erişilebilir olduğunu belirten bir bellek ipucu sağlar. Bazı sistemler, çalışma zamanı performansını artırmak için bu bellek erişim deseninin iyileştirgetirilmesini tercih edebilir. Ancak, görünümün C++ dil noktasındaki işlevin herhangi bir observable etkisi yoktur ve hiçbir şey yapmayabilir.|
+|__rdpmccntr64||işaretsiz __int64 \__rdpmccntr64 (void)|
+|__sev|ÖNEM DERECESI|void __sev (void)|
+|__static_onaylama||void __static_onaylama (int, const char \*)|
+|__swı|'SI|işaretsiz int __swı (işaretsiz int,...)|
+|__TraP|BKPT|int __TraP (int,...)|
+|__wfe|WFE|void __wfe (void)|
+|__wfi|WFI|void __wfi (void)|
+|_AddSatInt|QADD|int _Addsatınt (int, int)|
+|_CopyDoubleFromInt64||Double _copyklefromint64 (\__int64)|
+|_CopyFloatFromInt32||float _copyfloatfromint32 (\__int32)|
+|_CopyInt32FromFloat||__int32 _CopyInt32FromFloat (float)|
+|_CopyInt64FromDouble||__int64 _CopyInt64FromDouble (çift)|
+|_Sayaçındıklardan||işaretsiz int _Countleadingler (imzasız Long)|
 |_CountLeadingOnes64||işaretsiz int _CountLeadingOnes64 (işaretsiz \__int64)|
-|_CountLeadingSigns||işaretsiz int _CountLeadingSigns(long)|
-|_CountLeadingSigns64||işaretsiz int _CountLeadingSigns64 (\__int64)|
-|_CountLeadingZeros||işaretsiz int _CountLeadingZeros(unsigned long)|
-|_CountLeadingZeros64||işaretsiz int _CountLeadingZeros64 (işaretsiz \__int64)|
-|_CountOneBits||işaretsiz int _CountOneBits(unsigned long)|
-|_CountOneBits64||işaretsiz int _CountOneBits64 (işaretsiz \__int64)|
-|_DAddSatInt|QDADD|int _DAddSatInt (int, int)|
-|_DSubSatInt|QDSUB|int _DSubSatInt (int, int)|
-|_isunordered||int _isunordered (double, çift)|
+|_CountLeadingSigns||işaretsiz int _Countleadingişaretlerine (uzun)|
+|_CountLeadingSigns64||işaretsiz int _countleadingsigns64 (\__int64)|
+|_CountLeadingZeros||işaretsiz int _Countleadingsıfırlardan (işaretsiz Long)|
+|_CountLeadingZeros64||işaretsiz int _countleadingzeros64 (işaretsiz \__int64)|
+|_CountOneBits||işaretsiz int _CountOneBits (işaretsiz Long)|
+|_CountOneBits64||işaretsiz int _countonebits64 (işaretsiz \__int64)|
+|_DAddSatInt|QBADD|int _Dadddsatınt (int, int)|
+|_DSubSatInt|QDSUB|int _Dsubsatınt (int, int)|
+|_ısýralanmamýþ||int _ısýralanmamýþ (Double, Double)|
 |_isunorderedf||int _isunorderedf (float, float)|
-|_MoveFromCoprocessor|MRC|işaretsiz int _MoveFromCoprocessor (işaretsiz int, işaretsiz int, işaretsiz int, işaretsiz int, işaretsiz int)<br /><br /> Veri işlemcisi veri aktarımı yönergeleri kullanarak bir ARM eşişlemcisi okur. Daha fazla bilgi için [_MoveFromCoprocessor, _MoveFromCoprocessor2](#MoveFromCo).|
-|_MoveFromCoprocessor2|MRC2|işaretsiz int _MoveFromCoprocessor2 (işaretsiz int, işaretsiz int, işaretsiz int, işaretsiz int, işaretsiz int)<br /><br /> Veri işlemcisi veri aktarımı yönergeleri kullanarak bir ARM eşişlemcisi okur. Daha fazla bilgi için [_MoveFromCoprocessor, _MoveFromCoprocessor2](#MoveFromCo).|
-|_MoveFromCoprocessor64|MRRC|imzalanmamış __int64 _MoveFromCoprocessor64 (işaretsiz int, işaretsiz int, işaretsiz int)<br /><br /> Veri işlemcisi veri aktarımı yönergeleri kullanarak bir ARM eşişlemcisi okur. Daha fazla bilgi için [_MoveFromCoprocessor64](#MoveFromCo64).|
-|_MoveToCoprocessor|MCR|void _MoveToCoprocessor (işaretsiz int, işaretsiz int, işaretsiz int, işaretsiz int, işaretsiz int, işaretsiz int)<br /><br /> Veri işlemcisi veri aktarımı yönergeleri kullanarak bir ARM eşişlemcisi okur. Daha fazla bilgi için [_MoveToCoprocessor, _MoveToCoprocessor2](#MoveToCo).|
-|_MoveToCoprocessor2|MCR2|void _MoveToCoprocessor2 (işaretsiz int, işaretsiz int, işaretsiz int, işaretsiz int, işaretsiz int, işaretsiz int)<br /><br /> Veri işlemcisi veri aktarımı yönergeleri kullanarak bir ARM eşişlemcisi okur. Daha fazla bilgi için [_MoveToCoprocessor, _MoveToCoprocessor2](#MoveToCo).|
-|_MoveToCoprocessor64|MCRR|void _MoveToCoprocessor64 (işaretsiz \__int64, işaretsiz int, işaretsiz int, işaretsiz int)<br /><br /> Veri işlemcisi veri aktarımı yönergeleri kullanarak bir ARM eşişlemcisi okur. Daha fazla bilgi için [_MoveToCoprocessor64](#MoveToCo64).|
-|_MulHigh||_MulHigh uzun (uzun, uzun)|
-|_MulUnsignedHigh||işaretsiz uzun _MulUnsignedHigh (işaretsiz uzun, işaretsiz uzun)|
+|_MoveFromCoprocessor|MRC|işaretsiz int _MoveFromCoprocessor (işaretsiz int, işaretsiz int, işaretsiz int, işaretsiz int, işaretsiz int)<br /><br /> Eşişlemcisi veri aktarımı yönergelerini kullanarak bir ARM ortak işlemcisinden verileri okur. Daha fazla bilgi için bkz. [_Movefromcoprocessor, _MoveFromCoprocessor2](#MoveFromCo).|
+|_MoveFromCoprocessor2|MRC2|işaretsiz int _MoveFromCoprocessor2 (işaretsiz int, işaretsiz int, işaretsiz int, işaretsiz int, işaretsiz int)<br /><br /> Eşişlemcisi veri aktarımı yönergelerini kullanarak bir ARM ortak işlemcisinden verileri okur. Daha fazla bilgi için bkz. [_Movefromcoprocessor, _MoveFromCoprocessor2](#MoveFromCo).|
+|_MoveFromCoprocessor64|MRRC|işaretsiz __int64 _MoveFromCoprocessor64 (işaretsiz int, işaretsiz int, işaretsiz int)<br /><br /> Eşişlemcisi veri aktarımı yönergelerini kullanarak bir ARM ortak işlemcisinden verileri okur. Daha fazla bilgi için bkz. [_Movefromcoprocessor64](#MoveFromCo64).|
+|_MoveToCoprocessor|MCR|void _MoveToCoprocessor (işaretsiz int, işaretsiz int, işaretsiz int, işaretsiz int, işaretsiz int, işaretsiz int)<br /><br /> Eşişlemcisi veri aktarımı yönergelerini kullanarak bir ARM ortak işlemcisinden verileri okur. Daha fazla bilgi için bkz. [_Movetocoprocessor, _MoveToCoprocessor2](#MoveToCo).|
+|_MoveToCoprocessor2|MCR2|void _MoveToCoprocessor2 (işaretsiz int, imzasız int, işaretsiz int, işaretsiz int, işaretsiz int, işaretsiz int)<br /><br /> Eşişlemcisi veri aktarımı yönergelerini kullanarak bir ARM ortak işlemcisinden verileri okur. Daha fazla bilgi için bkz. [_Movetocoprocessor, _MoveToCoprocessor2](#MoveToCo).|
+|_MoveToCoprocessor64|MCRR|void _movetocoprocessor64 (işaretsiz \__int64, işaretsiz int, işaretsiz int, işaretsiz int)<br /><br /> Eşişlemcisi veri aktarımı yönergelerini kullanarak bir ARM ortak işlemcisinden verileri okur. Daha fazla bilgi için bkz. [_Movetocoprocessor64](#MoveToCo64).|
+|_Çoklu yüksek||uzun _Çoklu yüksek (uzun, uzun)|
+|_MulUnsignedHigh||imzasız Long _MulUnsignedHigh (işaretsiz Long, işaretsiz Long)|
 |_ReadBankedReg|MRS|int _ReadBankedReg (int _Reg)|
-|_ReadStatusReg|MRS|int _ReadStatusReg(int)|
-|_SubSatInt|QSUB|int _SubSatInt (int, int)|
-|_WriteBankedReg|MSR|void _WriteBankedReg (_Değeri int, int _Reg)|
-|_WriteStatusReg|MSR|void _WriteStatusReg (int, int, int)|
+|_ReadStatusReg|MRS|int _ReadStatusReg (int)|
+|_SubSatInt|QSUB|int _Subsatınt (int, int)|
+|_WriteBankedReg|MRS|void _WriteBankedReg (int _Value, int _Reg)|
+|_WriteStatusReg|MRS|void _WriteStatusReg (int, int, int)|
 
-[[NEON](#top)]
+[[En üste dön](#top)]
 
-###  <a name="BarrierRestrictions"></a> Bellek engel kısıtlamaları
+###  <a name="BarrierRestrictions"></a>Bellek engeli kısıtlamaları
 
-İç işlevleri `__dmb` (veri bellek engel) `__dsb` (veri eşitleme engel) ve `__isb` (eşitleme barrier yönergesi) kullanmak aşağıdaki bellek engel kısıtlama koşullarını belirtmek için değerleri önceden tanımlanmış etki alanı ve tür erişim paylaşım, işlem tarafından etkilenir.
+İç işlevler `__dmb` (veri belleği engeli), `__dsb` (veri eşitleme engeli) ve `__isb` (yönerge eşitleme engeli), bellek engeli kısıtlamasını şart olarak belirtmek için aşağıdaki önceden tanımlanmış değerleri kullanır paylaşım etki alanı ve işlemden etkilenen erişimin türü.
 
 |Kısıtlama değeri|Açıklama|
 |-----------------------|-----------------|
-|_ARM_BARRIER_SY|Tam, okuma ve yazma işlemleri.|
-|_ARM_BARRIER_ST|Tam sistem, yalnızca yazar.|
-|_ARM_BARRIER_ISH|İç paylaşılabilir, okuma ve yazma işlemleri.|
-|_ARM_BARRIER_ISHST|İç paylaşılabilir, yazma işlemleri yalnızca.|
-|_ARM_BARRIER_NSH|Olmayan paylaşılabilir, okur ve yazar.|
-|_ARM_BARRIER_NSHST|Yalnızca olmayan paylaşılabilir, yazar.|
+|_ARM_BARRIER_SY|Tam sistem, okuma ve yazma işlemleri.|
+|_ARM_BARRIER_ST|Tam sistem, yalnızca yazma.|
+|_ARM_BARRIER_ISH|Dahili paylaşılabilir, okuma ve yazma işlemleri.|
+|_ARM_BARRIER_ISHST|Yalnızca iç paylaşılabilir, yalnızca yazar.|
+|_ARM_BARRIER_NSH|Paylaşılabilir olmayan, okuma ve yazma işlemleri.|
+|_ARM_BARRIER_NSHST|Yalnızca paylaşılabilir olmayan, yazma işlemleri.|
 |_ARM_BARRIER_OSH|Dış paylaşılabilir, okuma ve yazma işlemleri.|
-|_ARM_BARRIER_OSHST|Dış paylaşılabilir, yazma işlemleri yalnızca.|
+|_ARM_BARRIER_OSHST|Yalnızca dış paylaşılabilir, yalnızca yazar.|
 
-İçin `__isb` iç, şu anda geçerli olan tek kısıtlama _ARM_BARRIER_SY; bir mimari tarafından diğer tüm değerler ayrılmıştır.
+`__isb` İç öğe için şu anda geçerli olan tek kısıtlama _ARM_BARRIER_SY; diğer tüm değerler mimari tarafından ayrılır.
 
-###  <a name="IsoVolatileLoadStore"></a> Depolama __iso_volatile_load instrinsics
+###  <a name="IsoVolatileLoadStore"></a>__ıso_volatile_load/Store iç bilgileri
 
-Bu iç işlevleri, açıkça yükler ve derleyici iyileştirmeleri tabi olmayan mağazalar gerçekleştirin.
+Bu iç işlevler, derleyici iyileştirmelerine tabi olmayan yükleri ve depoları açıkça gerçekleştirir.
 
-```
-__int16 __iso_volatile_load16(const volatile __int16 * Location)
-__int32 __iso_volatile_load32(const volatile __int32 * Location)
-__int64 __iso_volatile_load64(const volatile __int64 * Location)
-__int8 __iso_volatile_load8(const volatile __int8 * Location)
+```C
+__int16 __iso_volatile_load16(const volatile __int16 * Location);
+__int32 __iso_volatile_load32(const volatile __int32 * Location);
+__int64 __iso_volatile_load64(const volatile __int64 * Location);
+__int8 __iso_volatile_load8(const volatile __int8 * Location);
 
-void __iso_volatile_store16(volatile __int16 * Location, __int16 Value)
-void __iso_volatile_store32(volatile __int32 * Location, __int32 Value)
-void __iso_volatile_store64(volatile __int64 * Location, __int64 Value)
-void __iso_volatile_store8(volatile __int8 * Location, __int8 Value)
+void __iso_volatile_store16(volatile __int16 * Location, __int16 Value);
+void __iso_volatile_store32(volatile __int32 * Location, __int32 Value);
+void __iso_volatile_store64(volatile __int64 * Location, __int64 Value);
+void __iso_volatile_store8(volatile __int8 * Location, __int8 Value);
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-*Konum*<br/>
-Bir bellek konumunu okuma veya yazma adresi.
+*Konumuna*\
+Okunacak veya yazılacak bellek konumunun adresi.
 
-*Değer*<br/>
-(Yalnızca depolama ön tanımlı) belirtilen bellek konumuna yazılacak değer.
+*Deeri*\
+Belirtilen bellek konumuna yazılacak değer (yalnızca mağaza iç bilgileri).
 
-#### <a name="return-value-load-intrinsics-only"></a>Dönüş değeri (yalnızca yük iç)
+#### <a name="return-value-load-intrinsics-only"></a>Dönüş değeri (yalnızca yük iç bilgileri)
 
-Değeri tarafından belirtilen bellek konumuna `Location`.
+Tarafından `Location`belirtilen bellek konumunun değeri.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Kullanabileceğiniz `__iso_volatile_load8/16/32/64` ve `__iso_volatile_store8/16/32/64` iç derleyici iyileştirmelerini tabi olmayan bellek erişimi açıkça gerçekleştirilecek. Derleyici, synthetize, kaldıramıyor veya bu işlemlerin göreli sırasını değiştirme, ancak örtük donanım belleği engelleri oluşturmaz. Bu nedenle, donanım gözlemlenebilir bellek erişimlerinin birden çok iş parçacığı arasında yeniden yine de. Bu iç daha kesin altında derlenmiş olarak aşağıdaki ifadeleri için eşdeğer **/volatile:iso**.
+Derleyici iyileştirmelerine tabi `__iso_volatile_load8/16/32/64` olmayan `__iso_volatile_store8/16/32/64` bellek erişimlerini açık bir şekilde gerçekleştirmek için ve iç bilgileri kullanabilirsiniz. Derleyici, bu işlemlerin göreli sırasını kaldıramaz, eşitlemekze veya değiştiremez, ancak örtülü donanım belleği engelleri oluşturmaz. Bu nedenle, donanım, birden çok iş parçacığında observable bellek erişimlerini yine de yeniden sıralayabilir. Daha kesin olarak, bu iç bilgiler, **/volatile: ISO**altında derlenmiş şekilde aşağıdaki ifadelerle eşdeğerdir.
 
 ```cpp
 int a = __iso_volatile_load32(p);    // equivalent to: int a = *(const volatile __int32*)p;
 __iso_volatile_store32(p, a);        // equivalent to: *(volatile __int32*)p = a;
 ```
 
-Yapı içlerini geçici değişkenleri uyum sağlayacak şekilde volatile işaretçileri ele dikkat edin. Ancak, gereksinim veya volatile işaretçileri bağımsız değişkenler olarak kullanmak için bir öneri yoktur; bir normal, geçici olmayan tür kullanılırsa, bu işlemlerin semantiği tam olarak aynıdır.
+İç yapıın geçici değişkenleri karşılamak için geçici işaretçiler içerdiğine dikkat edin. Ancak, geçici işaretçileri bağımsız değişken olarak kullanma gereksinimi veya önerisi yoktur. Normal, geçici olmayan bir tür kullanılırsa, bu işlemlerin semantiği tamamen aynıdır.
 
-Hakkında daha fazla bilgi için **/volatile:iso** komut satırı bağımsız değişkeni bkz [/volatile (volatile anahtar sözcük yorumu)](../build/reference/volatile-volatile-keyword-interpretation.md).
+**/Volatile: ISO** komut satırı bağımsız değişkeni hakkında daha fazla bilgi için bkz. [/volatile (volatile anahtar sözcük yorumu)](../build/reference/volatile-volatile-keyword-interpretation.md).
 
 ###  <a name="MoveFromCo"></a> _MoveFromCoprocessor, _MoveFromCoprocessor2
 
-Bu iç işlevleri, eşişlemcisi veri aktarımı yönergeleri kullanarak, ARM coprocessors verileri okuyamadı.
+Bu iç işlevler, Eşişlemcisi veri aktarımı yönergelerini kullanarak ARM ortak işlemcilerinde verileri okur.
 
-```
+```C
 int _MoveFromCoprocessor(
       unsigned int coproc,
       unsigned int opcode1,
@@ -2202,36 +2202,36 @@ int _MoveFromCoprocessor2(
 
 #### <a name="parameters"></a>Parametreler
 
-*coproc*<br/>
-0-15 aralığında eşişlemcisi sayı.
+*coproc*\
+0 ile 15 aralığında Coprocessor numarası.
 
-*opcode1*<br/>
-0 ile 7 aralıktaki eşişlemcisi özgü opcode
+*opcode1*\
+0 ile 7 aralığındaki ortak işlemciye özel Opcode
 
-*CRN*<br/>
-Eşişlemcisi yönergenin ilk işleneni belirten sayı, 0-15 aralığındaki kaydedin.
+*CRN*\
+Coprocessor kayıt numarası, yönergedeki ilk işleneni belirten 0 ile 15 aralığındadır.
 
-*CRM*<br/>
-Eşişlemcisi belirten bir ek kaynak veya hedef işlenen numarası 0 ila 15 aralığındaki kaydedin.
+*CRM*\
+Coprocessor kayıt numarası, ek bir kaynak veya hedef işleneni belirten 0 ile 15 aralığındadır.
 
-*opcode2*<br/>
-' % S'aralığı 0 ile 7 ek eşişlemcisi özgü opcode.
+*opcode2*\
+0 ile 7 aralığında ek ve işlemciye özel Opcode.
 
-#### <a name="return-value"></a>Dönüş Değeri
+#### <a name="return-value"></a>Dönüş değeri
 
-Eşişlemcisi okunan değer.
+Ortak işlemciden okunan değer.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Bu iç beş tüm parametrelerinin değerlerini, derleme zamanında bilinen sabit ifadeler olması gerekir.
+İç öğesinin beş parametrenin tüm değerleri, derleme zamanında bilinen sabit deyimler olmalıdır.
 
-`_MoveFromCoprocessor` MRC yönerge kullanır. `_MoveFromCoprocessor2` MRC2 kullanır. Parametreler doğrudan yönerge Word'e kodlanmış bit alanları karşılık gelir. Parametreleri yorumunu eşişlemcisi bağlıdır. Daha fazla bilgi için el ile ilgili işlemcisi için bkz.
+`_MoveFromCoprocessor`MRC yönergesini kullanır; `_MoveFromCoprocessor2` MRC2 kullanır. Parametreler, doğrudan yönerge sözcüğüne kodlanmış bit alanları öğesine karşılık gelir. Parametrelerin yorumu, Coprocessor 'a bağımlıdır. Daha fazla bilgi için bkz. sorudaki Eşişlemcisi için el ile.
 
 ###  <a name="MoveFromCo64"></a> _MoveFromCoprocessor64
 
-Veri işlemcisi veri aktarımı yönergeleri kullanarak ARM coprocessors okur.
+Eşişlemcisi veri aktarımı yönergelerini kullanarak ARM ortak işlemcilerinde verileri okur.
 
-```
+```C
 unsigned __int64 _MoveFromCoprocessor64(
       unsigned int coproc,
       unsigned int opcode1,
@@ -2241,30 +2241,30 @@ unsigned __int64 _MoveFromCoprocessor64(
 
 #### <a name="parameters"></a>Parametreler
 
-*coproc*<br/>
-0-15 aralığında eşişlemcisi sayı.
+*coproc*\
+0 ile 15 aralığında Coprocessor numarası.
 
-*opcode1*<br/>
-0 ile 15 aralığındaki eşişlemcisi özgü opcode.
+*opcode1*\
+0 ile 15 aralığında ortak işlemciye özel Opcode.
 
-*CRM*<br/>
-Eşişlemcisi belirten bir ek kaynak veya hedef işlenen numarası 0 ila 15 aralığındaki kaydedin.
+*CRM*\
+Coprocessor kayıt numarası, ek bir kaynak veya hedef işleneni belirten 0 ile 15 aralığındadır.
 
-**Değeri döndürür**
+**Değer döndürür**
 
-Eşişlemcisi okunan değer.
+Ortak işlemciden okunan değer.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Bu iç üç tüm parametrelerinin değerlerini, derleme zamanında bilinen sabit ifadeler olması gerekir.
+İç öğesinin üç parametrenin tüm değerleri, derleme zamanında bilinen sabit deyimler olmalıdır.
 
-`_MoveFromCoprocessor64` MRRC yönerge kullanır. Parametreler doğrudan yönerge Word'e kodlanmış bit alanları karşılık gelir. Parametreleri yorumunu eşişlemcisi bağlıdır. Daha fazla bilgi için el ile ilgili işlemcisi için bkz.
+`_MoveFromCoprocessor64`MRRC yönergesini kullanır. Parametreler, doğrudan yönerge sözcüğüne kodlanmış bit alanları öğesine karşılık gelir. Parametrelerin yorumu, Coprocessor 'a bağımlıdır. Daha fazla bilgi için bkz. sorudaki Eşişlemcisi için el ile.
 
-###  <a name="MoveToCo"></a> _MoveToCoprocessor, _MoveToCoprocessor2
+###  <a name="MoveToCo"></a>_MoveToCoprocessor, _MoveToCoprocessor2
 
-Bu iç işlevler, veri için ARM coprocessors eşişlemcisi veri aktarımı yönergeleri kullanarak yazın.
+Bu iç işlevler, Eşişlemcisi veri aktarımı yönergelerini kullanarak ARM birlikte işlemcilere veri yazar.
 
-```
+```C
 void _MoveToCoprocessor(
       unsigned int value,
       unsigned int coproc,
@@ -2286,37 +2286,37 @@ void _MoveToCoprocessor2(
 
 #### <a name="parameters"></a>Parametreler
 
-*value*<br/>
-İşlemcisi için yazılacak değer.
+*deeri*\
+Coprocessor 'a yazılacak değer.
 
-*coproc*<br/>
-0-15 aralığında eşişlemcisi sayı.
+*coproc*\
+0 ile 15 aralığında Coprocessor numarası.
 
-*opcode1*<br/>
-0 ile 7 aralıktaki eşişlemcisi özgü opcode.
+*opcode1*\
+0 ile 7 aralığında Coprocessor 'a özgü Opcode.
 
-*CRN*<br/>
-Eşişlemcisi yönergenin ilk işleneni belirten sayı, 0-15 aralığındaki kaydedin.
+*CRN*\
+Coprocessor kayıt numarası, yönergedeki ilk işleneni belirten 0 ile 15 aralığındadır.
 
-*CRM*<br/>
-Eşişlemcisi belirten bir ek kaynak veya hedef işlenen numarası 0 ila 15 aralığındaki kaydedin.
+*CRM*\
+Coprocessor kayıt numarası, ek bir kaynak veya hedef işleneni belirten 0 ile 15 aralığındadır.
 
-*opcode2*<br/>
-' % S'aralığı 0 ile 7 ek eşişlemcisi özgü opcode.
+*opcode2*\
+0 ile 7 aralığında ek ve işlemciye özel Opcode.
 
-#### <a name="return-value"></a>Dönüş Değeri
+#### <a name="return-value"></a>Dönüş değeri
 
 Yok.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Değerlerini `coproc`, `opcode1`, `crn`, `crm`, ve `opcode2` bu iç parametrelerinin, derleme zamanında bilinen sabit ifadeler olmalıdır.
+`coproc`İç öğesinin `opcode1` ,`crm`,, ve`opcode2` parametrelerinin değerleri, derleme zamanında bilinen sabit deyimler olmalıdır. `crn`
 
-`_MoveToCoprocessor` MCR yönerge kullanır. `_MoveToCoprocessor2` MCR2 kullanır. Parametreler doğrudan yönerge Word'e kodlanmış bit alanları karşılık gelir. Parametreleri yorumunu eşişlemcisi bağlıdır. Daha fazla bilgi için el ile ilgili işlemcisi için bkz.
+`_MoveToCoprocessor`MCR yönergesini kullanır; `_MoveToCoprocessor2` MCR2 kullanır. Parametreler, doğrudan yönerge sözcüğüne kodlanmış bit alanları öğesine karşılık gelir. Parametrelerin yorumu, Coprocessor 'a bağımlıdır. Daha fazla bilgi için bkz. sorudaki Eşişlemcisi için el ile.
 
-###  <a name="MoveToCo64"></a> _MoveToCoprocessor64
+###  <a name="MoveToCo64"></a>_MoveToCoprocessor64
 
-Bu iç işlevler, veri için ARM coprocessors eşişlemcisi veri aktarımı yönergeleri kullanarak yazın.
+Bu iç işlevler, Eşişlemcisi veri aktarımı yönergelerini kullanarak ARM birlikte işlemcilere veri yazar.
 
 ```
 void _MoveFromCoprocessor64(
@@ -2329,254 +2329,254 @@ void _MoveFromCoprocessor64(
 
 #### <a name="parameters"></a>Parametreler
 
-*coproc*<br/>
-0-15 aralığında eşişlemcisi sayı.
+*coproc*\
+0 ile 15 aralığında Coprocessor numarası.
 
-*opcode1*<br/>
-0 ile 15 aralığındaki eşişlemcisi özgü opcode.
+*opcode1*\
+0 ile 15 aralığında ortak işlemciye özel Opcode.
 
-*CRM*<br/>
-Eşişlemcisi belirten bir ek kaynak veya hedef işlenen numarası 0 ila 15 aralığındaki kaydedin.
+*CRM*\
+Coprocessor kayıt numarası, ek bir kaynak veya hedef işleneni belirten 0 ile 15 aralığındadır.
 
-#### <a name="return-value"></a>Dönüş Değeri
+#### <a name="return-value"></a>Dönüş değeri
 
 Yok.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Değerlerini `coproc`, `opcode1`, ve `crm` bu iç parametrelerinin, derleme zamanında bilinen sabit ifadeler olmalıdır.
+İç öğesinin `coproc`, `opcode1`ve `crm` parametrelerinin değerleri, derleme zamanında bilinen sabit deyimler olmalıdır.
 
-`_MoveFromCoprocessor64` MCRR yönerge kullanır. Parametreler doğrudan yönerge Word'e kodlanmış bit alanları karşılık gelir. Parametreleri yorumunu eşişlemcisi bağlıdır. Daha fazla bilgi için el ile ilgili işlemcisi için bkz.
+`_MoveFromCoprocessor64`MCRR yönergesini kullanır. Parametreler, doğrudan yönerge sözcüğüne kodlanmış bit alanları öğesine karşılık gelir. Parametrelerin yorumu, Coprocessor 'a bağımlıdır. Daha fazla bilgi için bkz. sorudaki Eşişlemcisi için el ile.
 
-##  <a name="I"></a> ARM iç bilgileri diğer mimarilere desteği
+##  <a name="I"></a>Diğer mimarilerde Iç bilgiler için ARM desteği
 
-Aşağıdaki tabloda, ARM platformlarında desteklenen diğer mimarilere yapı içlerini listeler. ARM üzerinde bir iç öğe davranışını davranışını diğer donanım mimarilerde burada farklıdır, ek ayrıntılar belirtilmiştir.
+Aşağıdaki tabloda, ARM platformlarında desteklenen diğer mimarilerin iç bilgileri listelenmektedir. ARM üzerindeki bir iç davranışın diğer donanım mimarilerinin davranışından farklı olduğu durumlarda, ek ayrıntılar belirtilmiştir.
 
 |İşlev adı|İşlev prototipi|
 |-------------------|------------------------|
-|__assume|void __assume(int)|
+|__assume|void __varsay (int)|
 |__code_seg|void __code_seg (const char \*)|
-|__debugbreak|void __cdecl \__debugbreak(void)|
-|__fastfail|__declspec(noreturn) void \__fastfail (işaretsiz int)|
-|__nop|__nop(void) void **Not:**  Hedef mimari uygulanmışsa ARM platformlarında, bu işlev NOP yönerge oluşturur; Aksi takdirde, program veya CPU durumu değiştirmez, alternatif bir yönerge oluşturulur; Örneğin, `MOV r8, r8`. Bu işlevsel olarak eşdeğerdir \__nop için diğer donanım mimarilerde iç. Program veya CPU durumu üzerinde hiçbir etkisi bir yönerge bir iyileştirme olarak hedef mimari tarafından göz ardı nedeniyle yönerge CPU çevrimleri mutlaka tüketmez. Bu nedenle, kullanmayın \__nop CPU nasıl davranacağını hakkında olmadıkça bir kod dizisi yürütme süresini yönetmek için iç. Bunun yerine kullanabileceğiniz \__nop belirli 32-bit sınır adresine sonraki yönergeyi hizalamak için iç.|
-|__yield|__yield(void) void **Not:**  ARM platformlarında, bu işlevi iş parçacığının yürütülmesini geçici olarak askıya bir görev çalıştığını gösteren YIELD talimat oluşturur — Örneğin, bir spinlock — program olumsuz etkilemeden. Bu, aksi takdirde boşa gidecektir yürütme döngüsü sırasında diğer görevleri yürütmek CPU sağlar.|
-|_AddressOfReturnAddress|void \* _AddressOfReturnAddress(void)|
-|_BitScanForward|İmzasız char _BitScanForward (işaretsiz uzun \* _ındex, işaretsiz uzun _maskesi)|
-|_BitScanReverse|İmzasız char _BitScanReverse (işaretsiz uzun \* _ındex, işaretsiz uzun _maskesi)|
-|_bittest|İmzasız char _bittest (uzun const \*, uzun)|
-|_bittestandcomplement|İmzasız char _bittestandcomplement (uzun \*, uzun)|
-|_bittestandreset|İmzasız char _bittestandreset (uzun \*, uzun)|
-|_bittestandset|İmzasız char _bittestandset (uzun \*, uzun)|
-|_byteswap_uint64|unsigned __int64 \__cdecl _byteswap_uint64(unsigned \__int64)|
-|_byteswap_ulong|işaretsiz uzun __cdecl _byteswap_ulong(unsigned long)|
-|_byteswap_ushort|unsigned short __cdecl _byteswap_ushort(unsigned short)|
-|_disable|__cdecl _disable(void) void **Not:**  ARM platformlarında, bu işlev CPSID yönerge oluşturur; yalnızca bir iç öğe olarak kullanılabilir.|
-|_enable|__cdecl _enable(void) void **Not:**  ARM platformlarında, bu işlev CPSIE yönerge oluşturur; yalnızca bir iç öğe olarak kullanılabilir.|
-|_lrotl|işaretsiz uzun __cdecl _lrotl (işaretsiz uzun tamsayı)|
-|_lrotr|işaretsiz uzun __cdecl _lrotr (işaretsiz uzun tamsayı)|
-|_ReadBarrier|void _ReadBarrier(void)|
-|_ReadWriteBarrier|void _ReadWriteBarrier(void)|
-|_ReturnAddress|void \* _ReturnAddress(void)|
-|_rotl|işaretsiz int __cdecl _rotl (_Değeri işaretsiz int, int _Shift)|
-|_rotl16|işaretsiz kısa _rotl16 (işaretsiz kısa _Değeri, imzasız char _Shift)|
-|_rotl64|imzalanmamış __int64 \__cdecl _rotl64 (işaretsiz \__int64 _Değeri, int _Shift)|
-|_rotl8|İmzasız char _rotl8 (unsigned char _Değeri, imzasız char _Shift)|
-|_rotr|işaretsiz int __cdecl _rotr (_Değeri işaretsiz int, int _Shift)|
-|_rotr16|işaretsiz kısa _rotr16 (işaretsiz kısa _Değeri, imzasız char _Shift)|
-|_rotr64|imzalanmamış __int64 \__cdecl _rotr64 (işaretsiz \__int64 _Değeri, int _Shift)|
-|_rotr8|İmzasız char _rotr8 (unsigned char _Değeri, imzasız char _Shift)|
-|_setjmpex|int __cdecl _setjmpex(jmp_buf)|
-|_WriteBarrier|void _WriteBarrier(void)|
+|__debugbreak|void __cdecl \__debugbreak (void)|
+|__fastfail|__declspec (noreturn) void \__fastfail (işaretsiz int)|
+|__nop|void __nop (void) **Not:**  ARM platformlarında, bu işlev hedef mimaride uygulanmışsa bir NOP yönergesi oluşturur; Aksi takdirde, programın veya CPU 'nun durumunu değiştirmemiş alternatif bir yönerge oluşturulur — Örneğin, `MOV r8, r8`. Bu, \_diğer donanım mimarilerine yönelik olarak _nop iç ile eşdeğerdir. Programın durumu üzerinde hiçbir etkisi olmayan bir yönerge, hedef mimari tarafından iyileştirme olarak yoksayılabilir olabileceğinden, yönerge CPU döngülerini tüketmez. Bu nedenle, CPU 'nun nasıl \_davrandığına ilişkin bazı durumlar dışında, bir kod sırasının yürütme süresini işlemek için _nop iç öğesini kullanmayın. Bunun yerine, bir sonraki yönergeyi \_belirli bir 32 bit sınır adresine hizalamak için _nop iç öğesini kullanabilirsiniz.|
+|__yield|void __yield (void) **Note:**  ARM platformlarında, bu işlev, iş parçacığının yürütmeden geçici olarak askıya alınmış bir görevi (örneğin, bir SpinLock —, programı olumsuz etkilemeden) yaptığını gösteren YIELD yönergesini üretir. Daha önce harcanabilecek yürütme döngüleri sırasında CPU 'nun diğer görevleri yürütmesine olanak sağlar.|
+|_AddressOfReturnAddress|void \* _AddressOfReturnAddress (void)|
+|_BitScanForward|işaretsiz karakter _bitscanforward (imzasız Long \* _Index, imzasız Long _Mask)|
+|_BitScanReverse|işaretsiz char _BitScanReverse (imzasız Long \* _index, imzasız Long _Mask)|
+|_bittest|işaretsiz karakter _bittest (uzun const \*, Long)|
+|_bittestandcomplement|işaretsiz karakter _bittestandtamamlayıcı (uzun \*, uzun)|
+|_bittestandreset|işaretsiz karakter _bittestandsıfırlanması (uzun \*, uzun)|
+|_bittestandset|işaretsiz karakter _bittestandset (Long \*, Long)|
+|_byteswap_uint64|işaretsiz __int64 \__cdecl _byteswap_uint64 (işaretsiz \__int64)|
+|_byteswap_ulong|imzasız uzun __cdecl _byteswap_ulong (işaretsiz Long)|
+|_byteswap_ushort|işaretsiz kısa __cdecl _byteswap_ushort (işaretsiz kısa)|
+|_disable|void __cdecl _Disable (void) **Note:**  ARM platformlarında, bu işlev CPSıD yönergesini oluşturur; yalnızca iç öğe olarak kullanılabilir.|
+|_enable|void __cdecl etkinleştir (void) **Note:**  ARM platformlarında, bu işlev CPSıE yönergesini oluşturur; yalnızca iç öğe olarak kullanılabilir.|
+|_lrotl|imzasız Long __cdecl _lrotl (işaretsiz Long, int)|
+|_lrotr|imzasız Long __cdecl _lrotr (işaretsiz Long, int)|
+|_ReadBarrier|void _Readengelini (void)|
+|_ReadWriteBarrier|void _Readwriteengelini (void)|
+|_ReturnAddress|void \* _ReturnAddress (void)|
+|_rotl|işaretsiz int __cdecl _rotl (işaretsiz int _Value, int _Shift)|
+|_rotl16|işaretsiz kısa _rotl16 (işaretsiz Short _Değeri, işaretsiz karakter _Shift)|
+|_rotl64|imzasız __int64 \__cdecl _rotl64 (işaretsiz \__int64 _Value, int _Shift)|
+|_rotl8|işaretsiz karakter _rotl8 (işaretsiz char _Değeri, işaretsiz karakter _Shift)|
+|_rotr|işaretsiz int __cdecl _rotr (işaretsiz int _Value, int _Shift)|
+|_rotr16|işaretsiz kısa _rotr16 (işaretsiz Short _Değeri, işaretsiz char _Shift)|
+|_rotr64|işaretsiz __int64 \__cdecl _rotr64 (işaretsiz \__int64 _Value, int _Shift)|
+|_rotr8|işaretsiz karakter _rotr8 (işaretsiz char _Değeri, işaretsiz karakter _Shift)|
+|_setjmpex|int __cdecl _setjmpex (jmp_buf)|
+|_WriteBarrier|void _Writeengelini (void)|
 
-[[NEON](#top)]
+[[En üste dön](#top)]
 
-## <a name="interlocked-intrinsics"></a>Birbirine kenetlenmiş iç bilgileri
+## <a name="interlocked-intrinsics"></a>Kenetlenmiş içgörüleri
 
-Birbirine kenetlenmiş yapı içleri atomik okuma-değiştirme-yazma işlemleri gerçekleştirmek için kullanılan değerler kümesidir. Bunlardan bazıları, tüm platformlar için ortak olan. Bunlar ayrı olarak burada bunları çok sayıda vardır, ancak bunların tanımlarının çoğunlukla boş olduğu için bunları hakkında genel koşulları düşünme daha kolaydır listelenir. Adları, tam davranışları türetmek için kullanılabilir.
+Birbirine kenetlenmiş iç ağlar, atomik okuma-değiştirme-yazma işlemleri gerçekleştirmek için kullanılan bir dizi iç kümesidir. Bazıları tüm platformlarda ortaktır. Bunlar, çok sayıda bu nedenle ayrı olarak listelenirler, ancak tanımları çoğunlukla yedekli olduğundan, bunları genel koşullarda düşünmek daha kolay olur. Adları tam davranışları türetmek için kullanılabilir.
 
-Aşağıdaki tabloda, olmayan-birbirine geçmiş bittest ön tanımlı ARM desteği özetler. Tablodaki her hücre satırın en soldaki hücrede işlem adı ve en üstteki hücrenin sütununun türü adını ekleyerek türetilmiş bir adına karşılık gelen `_Interlocked`. Örneğin, hücrenin kesiştiği noktada `Xor` satır ve **8** karşılık gelen sütun `_InterlockedXor8` ve tam olarak desteklenir. Desteklenen işlevlerin çoğunu sunan bu isteğe bağlı sonekleri: `_acq`, `_rel`, ve `_nf`. `_acq` Soneki belirtir bir "Al" anlam ve `_rel` soneki bir "Sürüm" anlam belirtir. `_nf` Veya "sınır yok" soneki ARM için benzersiz olan ve sonraki bölümde ele alınmıştır.
+Aşağıdaki tabloda, bitmeyen test ile kilitlenmiş iç içgörüleri için ARM desteği özetlenmektedir. Tablodaki her bir hücre, satırın en sol hücresindeki işlem adı ve sütunun `_Interlocked`en üstteki hücresinde bulunan tür adı eklenerek türetilmiş bir ada karşılık gelir. Örneğin, `Xor` satır `8` ve sütunun kesişimindeki hücre öğesine `_InterlockedXor8` karşılık gelir ve tam olarak desteklenir. Desteklenen işlevlerin çoğu bu isteğe bağlı sonekleri sunar: `_acq`, `_rel`, ve `_nf`. Sonek bir "alma" anlam olduğunu `_rel` ve sonekin bir "yayın" anlam olduğunu gösterir. `_acq` `_nf` Veya "sınır yok" soneki ARM için benzersizdir ve sonraki bölümde ele alınmıştır.
 
 ||8|16|32|64|P|
 |-|-------|--------|--------|--------|-------|
-|Ekle|None|Yok.|Tam|Tam|Yok.|
-|And|Tam|Tam|Tam|Tam|None|
+|Ekle|Yok.|Yok.|Tam|Tam|Yok.|
+|And|Tam|Tam|Tam|Tam|Yok.|
 |CompareExchange|Tam|Tam|Tam|Tam|Tam|
 |Azaltma|Yok.|Tam|Tam|Tam|Yok.|
 |Exchange|Kısmi|Kısmi|Kısmi|Kısmi|Kısmi|
 |ExchangeAdd|Tam|Tam|Tam|Tam|Yok.|
-|Artırma|Yok.|Tam|Tam|Tam|Yok.|
-|Or|Tam|Tam|Tam|Tam|None|
-|Xor|Tam|Tam|Tam|Tam|Yok.|
+|Ilamadı|Yok.|Tam|Tam|Tam|Yok.|
+|Or|Tam|Tam|Tam|Tam|Yok.|
+|XOR|Tam|Tam|Tam|Tam|Yok.|
 
-Anahtar:
+Anahtar
 
-- **Tam**: düz, destekler `_acq`, `_rel`, ve `_nf` forms.
+- **Full**: düz, `_acq`, `_rel`, ve `_nf` formları destekler.
 
-- **Kısmi**: düz, destekler `_acq`, ve `_nf` forms.
+- **Kısmi**: düz, `_acq`, ve `_nf` formları destekler.
 
 - **Hiçbiri**: Desteklenmez
 
-###  <a name="nf_suffix"></a> Sonek _nf (sınır yok)
+###  <a name="nf_suffix"></a>_nf (çit yok) soneki
 
-`_nf` Veya işlemi bellek engeli olarak herhangi bir türden davranmaz "hiçbir sınır" soneki belirtir. Bu diğer üç forms aksine, (düz, `_acq`, ve `_rel`), tüm kadar her çeşit engel davranır. Olası kullanım şekillerinden `_nf` forms olan güncelleştirilen birden çok iş parçacığı tarafından aynı anda ancak değeri birden çok iş parçacığı yürütme sırasında Aksi halde kullanılmaz istatistiği sayacı korumak için.
+Veya "sınır yok" soneki, işlemin her türlü bellek engeli olarak davranmadığını, diğer üç formun (düz, `_acq`, ve `_rel`) aksine, hepsi bir tür engel olarak davrandığını gösterir. `_nf` `_nf` Formların olası kullanımı, aynı anda birden çok iş parçacığı tarafından güncellenen bir istatistik sayacı sürdürmek, ancak birden çok iş parçacığı yürütülürken değeri başka bir şekilde kullanılmadığında.
 
-### <a name="list-of-interlocked-intrinsics"></a>Birbirine kenetlenmiş iç bilgi listesi
+### <a name="list-of-interlocked-intrinsics"></a>Kenetlenmiş içgörüleri listesi
 
 |İşlev adı|İşlev prototipi|
 |-------------------|------------------------|
-|_Interlockedadd|uzun _ınterlockedadd (uzun _volatile \*, uzun)|
-|_InterlockedAdd64|__int64 _ınterlockedadd64 (\__int64 geçici \*, \__int64)|
-|_InterlockedAdd64_acq|__int64 _ınterlockedadd64_acq (\__int64 geçici \*, \__int64)|
-|_Interlockedadd64_nf|__int64 _ınterlockedadd64_nf (\__int64 geçici \*, \__int64)|
-|_InterlockedAdd64_rel|__int64 _ınterlockedadd64_rel (\__int64 geçici \*, \__int64)|
-|_InterlockedAdd_acq|uzun _ınterlockedadd_acq (uzun geçici \*, uzun)|
-|_InterlockedAdd_nf|uzun _ınterlockedadd_nf (uzun geçici \*, uzun)|
-|_InterlockedAdd_rel|uzun _ınterlockedadd_nf (uzun geçici \*, uzun)|
-|_InterlockedAnd|uzun _ınterlockedand (uzun geçici \*, uzun)|
-|_InterlockedAnd16|kısa _InterlockedAnd16 (kısa geçici \*, kısa)|
-|_InterlockedAnd16_acq|kısa _InterlockedAnd16_acq (kısa geçici \*, kısa)|
-|_InterlockedAnd16_nf|kısa _InterlockedAnd16_nf (kısa geçici \*, kısa)|
-|_InterlockedAnd16_rel|kısa _InterlockedAnd16_rel (kısa geçici \*, kısa)|
-|_InterlockedAnd64|__int64 _InterlockedAnd64 (\__int64 geçici \*, \__int64)|
-|_InterlockedAnd64_acq|__int64 _InterlockedAnd64_acq (\__int64 geçici \*, \__int64)|
-|_InterlockedAnd64_nf|__int64 _InterlockedAnd64_nf (\__int64 geçici \*, \__int64)|
-|_InterlockedAnd64_rel|__int64 _InterlockedAnd64_rel (\__int64 geçici \*, \__int64)|
-|_InterlockedAnd8|_InterlockedAnd8 char (char geçici \*, char)|
-|_InterlockedAnd8_acq|_InterlockedAnd8_acq char (char geçici \*, char)|
-|_InterlockedAnd8_nf|_InterlockedAnd8_nf char (char geçici \*, char)|
-|_InterlockedAnd8_rel|_InterlockedAnd8_rel char (char geçici \*, char)|
-|_InterlockedAnd_acq|uzun _InterlockedAnd_acq (uzun geçici \*, uzun)|
-|_InterlockedAnd_nf|uzun _InterlockedAnd_nf (uzun geçici \*, uzun)|
-|_InterlockedAnd_rel|uzun _InterlockedAnd_rel (uzun geçici \*, uzun)|
-|_InterlockedCompareExchange|uzun __cdecl _ınterlockedcompareexchange (uzun geçici \*uzun, uzun)|
-|_InterlockedCompareExchange16|kısa _InterlockedCompareExchange16 (kısa geçici \*kısa, kısa)|
-|_InterlockedCompareExchange16_acq|kısa _InterlockedCompareExchange16_acq (kısa geçici \*kısa, kısa)|
-|_InterlockedCompareExchange16_nf|kısa _InterlockedCompareExchange16_nf (kısa geçici \*kısa, kısa)|
-|_InterlockedCompareExchange16_rel|kısa _InterlockedCompareExchange16_rel (kısa geçici \*kısa, kısa)|
-|_InterlockedCompareExchange64|__int64 _InterlockedCompareExchange64 (\__int64 geçici \*, \__int64, \__int64)|
-|_InterlockedCompareExchange64_acq|__int64 _InterlockedCompareExchange64_acq (\__int64 geçici \*, \__int64, \__int64)|
-|_InterlockedCompareExchange64_nf|__int64 _InterlockedCompareExchange64_nf (\__int64 geçici \*, \__int64, \__int64)|
-|_InterlockedCompareExchange64_rel|__int64 _InterlockedCompareExchange64_rel (\__int64 geçici \*, \__int64, \__int64)|
-|_InterlockedCompareExchange8|_InterlockedCompareExchange8 char (char geçici \*, karakter, karakter)|
-|_InterlockedCompareExchange8_acq|_InterlockedCompareExchange8_acq char (char geçici \*, karakter, karakter)|
-|_InterlockedCompareExchange8_nf|_InterlockedCompareExchange8_nf char (char geçici \*, karakter, karakter)|
-|_InterlockedCompareExchange8_rel|_InterlockedCompareExchange8_rel char (char geçici \*, karakter, karakter)|
-|_InterlockedCompareExchangePointer|void \* _ınterlockedcompareexchangepointer (void \* geçici \*, void \*, void \*)|
-|_InterlockedCompareExchangePointer_acq|void \* _InterlockedCompareExchangePointer_acq (void \* geçici \*, void \*, void \*)|
-|_InterlockedCompareExchangePointer_nf|void \* _InterlockedCompareExchangePointer_nf (void \* geçici \*, void \*, void \*)|
-|_InterlockedCompareExchangePointer_rel|void \* _InterlockedCompareExchangePointer_rel (void \* geçici \*, void \*, void \*)|
-|_InterlockedCompareExchange_acq|uzun _InterlockedCompareExchange_acq (uzun geçici \*uzun, uzun)|
-|_InterlockedCompareExchange_nf|uzun _InterlockedCompareExchange_nf (uzun geçici \*uzun, uzun)|
-|_InterlockedCompareExchange_rel|uzun _InterlockedCompareExchange_rel (uzun geçici \*uzun, uzun)|
-|_InterlockedDecrement|uzun __cdecl _ınterlockeddecrement (uzun geçici \*)|
-|_InterlockedDecrement16|kısa _InterlockedDecrement16 (kısa geçici \*)|
-|_InterlockedDecrement16_acq|kısa _InterlockedDecrement16_acq (kısa geçici \*)|
-|_InterlockedDecrement16_nf|kısa _InterlockedDecrement16_nf (kısa geçici \*)|
-|_InterlockedDecrement16_rel|kısa _InterlockedDecrement16_rel (kısa geçici \*)|
-|_InterlockedDecrement64|__int64 _InterlockedDecrement64 (\__int64 geçici \*)|
-|_InterlockedDecrement64_acq|__int64 _InterlockedDecrement64_acq (\__int64 geçici \*)|
-|_InterlockedDecrement64_nf|__int64 _InterlockedDecrement64_nf (\__int64 geçici \*)|
-|_InterlockedDecrement64_rel|__int64 _InterlockedDecrement64_rel (\__int64 geçici \*)|
-|_InterlockedDecrement_acq|uzun _InterlockedDecrement_acq (uzun geçici \*)|
-|_InterlockedDecrement_nf|uzun _InterlockedDecrement_nf (uzun geçici \*)|
-|_InterlockedDecrement_rel|uzun _InterlockedDecrement_rel (uzun geçici \*)|
-|_InterlockedExchange|uzun __cdecl _ınterlockedexchange (uzun geçici \* _hedef, uzun)|
-|_InterlockedExchange16|kısa _InterlockedExchange16 (kısa geçici \* _hedef kısa)|
-|_InterlockedExchange16_acq|kısa _InterlockedExchange16_acq (kısa geçici \* _hedef kısa)|
-|_InterlockedExchange16_nf|kısa _InterlockedExchange16_nf (kısa geçici \* _hedef kısa)|
+|_InterlockedAdd|Long _InterlockedAdd (Long _volatile \*, Long)|
+|_InterlockedAdd64|__int64 _InterlockedAdd64 (\__int64 volatile \*, \__int64)|
+|_InterlockedAdd64_acq|__int64 _InterlockedAdd64_acq (\__int64 volatile \*, \__int64)|
+|_InterlockedAdd64_nf|__int64 _InterlockedAdd64_nf (\__int64 volatile \*, \__int64)|
+|_InterlockedAdd64_rel|__int64 _InterlockedAdd64_rel (\__int64 volatile \*, \__int64)|
+|_InterlockedAdd_acq|Long _InterlockedAdd_acq (uzun geçici \*, uzun)|
+|_InterlockedAdd_nf|Long _InterlockedAdd_nf (uzun geçici \*, uzun)|
+|_InterlockedAdd_rel|Long _InterlockedAdd_rel (uzun geçici \*, uzun)|
+|_InterlockedAnd|Long _InterlockedAnd (uzun geçici \*, uzun)|
+|_InterlockedAnd16|Short _InterlockedAnd16 (kısa geçici \*, kısa)|
+|_InterlockedAnd16_acq|Short _InterlockedAnd16_acq (kısa geçici \*, kısa)|
+|_InterlockedAnd16_nf|Short _InterlockedAnd16_nf (kısa geçici \*, kısa)|
+|_InterlockedAnd16_rel|Short _InterlockedAnd16_rel (kısa geçici \*, kısa)|
+|_InterlockedAnd64|__int64 _InterlockedAnd64 (\__int64 volatile \*, \__int64)|
+|_InterlockedAnd64_acq|__int64 _InterlockedAnd64_acq (\__int64 volatile \*, \__int64)|
+|_InterlockedAnd64_nf|__int64 _InterlockedAnd64_nf (\__int64 volatile \*, \__int64)|
+|_InterlockedAnd64_rel|__int64 _InterlockedAnd64_rel (\__int64 volatile \*, \__int64)|
+|_InterlockedAnd8|Char _InterlockedAnd8 (Char volatile \*, Char)|
+|_InterlockedAnd8_acq|Char _InterlockedAnd8_acq (Char volatile \*, Char)|
+|_InterlockedAnd8_nf|Char _InterlockedAnd8_nf (Char volatile \*, Char)|
+|_InterlockedAnd8_rel|Char _InterlockedAnd8_rel (Char volatile \*, Char)|
+|_InterlockedAnd_acq|Long _InterlockedAnd_acq (uzun geçici \*, uzun)|
+|_InterlockedAnd_nf|Long _InterlockedAnd_nf (uzun geçici \*, uzun)|
+|_InterlockedAnd_rel|Long _InterlockedAnd_rel (uzun geçici \*, uzun)|
+|_InterlockedCompareExchange|uzun __cdecl _InterlockedCompareExchange (uzun geçici \*, uzun, uzun)|
+|_InterlockedCompareExchange16|Short _InterlockedCompareExchange16 (kısa geçici \*, kısa, kısa)|
+|_InterlockedCompareExchange16_acq|Short _ınterlockedcompareexchange16_acq (kısa geçici \*, kısa, kısa)|
+|_InterlockedCompareExchange16_nf|Short _ınterlockedcompareexchange16_nf (kısa geçici \*, kısa, kısa)|
+|_InterlockedCompareExchange16_rel|Short _ınterlockedcompareexchange16_rel (kısa geçici \*, kısa, kısa)|
+|_InterlockedCompareExchange64|__int64 _ınterlockedcompareexchange64 (\__int64 volatile \*, \__int64, \__int64)|
+|_InterlockedCompareExchange64_acq|__int64 _ınterlockedcompareexchange64_acq (\__int64 volatile \*, \__int64, \__int64)|
+|_InterlockedCompareExchange64_nf|__int64 _ınterlockedcompareexchange64_nf (\__int64 volatile \*, \__int64, \__int64)|
+|_InterlockedCompareExchange64_rel|__int64 _ınterlockedcompareexchange64_rel (\__int64 volatile \*, \__int64, \__int64)|
+|_InterlockedCompareExchange8|Char _ınterlockedcompareexchange8 (Char volatile \*, Char, Char)|
+|_InterlockedCompareExchange8_acq|Char _InterlockedCompareExchange8_acq (Char volatile \*, Char, Char)|
+|_InterlockedCompareExchange8_nf|Char _InterlockedCompareExchange8_nf (Char volatile \*, Char, Char)|
+|_InterlockedCompareExchange8_rel|Char _InterlockedCompareExchange8_rel (Char volatile \*, Char, Char)|
+|_InterlockedCompareExchangePointer|void \* _ınterlockedcompareexchangepointer (void \* volatile \*, void \*, void \*)|
+|_InterlockedCompareExchangePointer_acq|void \* _ınterlockedcompareexchangepointer_acq (void \* volatile \*, void \*, void \*)|
+|_InterlockedCompareExchangePointer_nf|void \* _ınterlockedcompareexchangepointer_nf (void \* volatile \*, void \*, void \*)|
+|_InterlockedCompareExchangePointer_rel|void \* _ınterlockedcompareexchangepointer_rel (void \* volatile \*, void \*, void \*)|
+|_InterlockedCompareExchange_acq|Long _ınterlockedcompareexchange_acq (uzun geçici \*, uzun, uzun)|
+|_InterlockedCompareExchange_nf|Long _ınterlockedcompareexchange_nf (uzun geçici \*, uzun, uzun)|
+|_InterlockedCompareExchange_rel|Long _ınterlockedcompareexchange_rel (uzun geçici \*, uzun, uzun)|
+|_InterlockedDecrement|uzun __cdecl _ınterlockedazaltma (uzun geçici \*)|
+|_InterlockedDecrement16|Short _ınterlockedes16 (kısa geçici \*)|
+|_Interlockedazaltır Ment16_acq|Short _ınterlockedazaltır Ment16_acq (kısa geçici \*)|
+|_Interlockedazaltır Ment16_nf|Short _ınterlockedazaltır Ment16_nf (kısa geçici \*)|
+|_InterlockedDecrement16_rel|Short _ınterlockedazaltır Ment16_rel (kısa geçici \*)|
+|_InterlockedDecrement64|__int64 _ınterlockedes64 (\__int64 geçici \*)|
+|_InterlockedDecrement64_acq|__int64 _ınterlockedes64_acq (\__int64 geçici \*)|
+|_Interlockedes64_nf|__int64 _ınterlockedes64_nf (\__int64 geçici \*)|
+|_Interlockedes64_rel|__int64 _ınterlockedes64_rel (\__int64 geçici \*)|
+|_InterlockedDecrement_acq|uzun _ınterlockedazaltır Ment_acq (uzun geçici \*)|
+|_InterlockedDecrement_nf|Long _ınterlockedazaltır Ment_nf (uzun geçici \*)|
+|_InterlockedDecrement_rel|Long _ınterlockedazaltır Ment_rel (uzun geçici \*)|
+|_InterlockedExchange|uzun __cdecl _InterlockedExchange (uzun geçici \* _hedef, uzun)|
+|_InterlockedExchange16|Short _InterlockedExchange16 (kısa geçici \* _hedef, kısa)|
+|_InterlockedExchange16_acq|Short _InterlockedExchange16_acq (kısa geçici \* _hedef, kısa)|
+|_InterlockedExchange16_nf|Short _InterlockedExchange16_nf (kısa geçici \* _hedef, kısa)|
 |_InterlockedExchange64|__int64 _InterlockedExchange64 (\__int64 geçici \* _hedef, \__int64)|
 |_InterlockedExchange64_acq|__int64 _InterlockedExchange64_acq (\__int64 geçici \* _hedef, \__int64)|
 |_InterlockedExchange64_nf|__int64 _InterlockedExchange64_nf (\__int64 geçici \* _hedef, \__int64)|
-|_InterlockedExchange8|_InterlockedExchange8 char (char geçici \* _hedef, char)|
-|_InterlockedExchange8_acq|_InterlockedExchange8_acq char (char geçici \* _hedef, char)|
-|_InterlockedExchange8_nf|_InterlockedExchange8_nf char (char geçici \* _hedef, char)|
-|_InterlockedExchangeAdd|uzun __cdecl _ınterlockedexchangeadd (uzun geçici \*, uzun)|
-|_InterlockedExchangeAdd16|kısa _ınterlockedexchangeadd16 (kısa geçici \*, kısa)|
-|_InterlockedExchangeAdd16_acq|kısa _ınterlockedexchangeadd16_acq (kısa geçici \*, kısa)|
-|_InterlockedExchangeAdd16_nf|kısa _ınterlockedexchangeadd16_nf (kısa geçici \*, kısa)|
-|_InterlockedExchangeAdd16_rel|kısa _ınterlockedexchangeadd16_rel (kısa geçici \*, kısa)|
-|_InterlockedExchangeAdd64|__int64 _ınterlockedexchangeadd64 (\__int64 geçici \*, \__int64)|
-|_InterlockedExchangeAdd64_acq|__int64 _ınterlockedexchangeadd64_acq (\__int64 geçici \*, \__int64)|
-|_Interlockedexchangeadd64_nf|__int64 _ınterlockedexchangeadd64_nf (\__int64 geçici \*, \__int64)|
-|_InterlockedExchangeAdd64_rel|__int64 _ınterlockedexchangeadd64_rel (\__int64 geçici \*, \__int64)|
-|_InterlockedExchangeAdd8|_ınterlockedexchangeadd8 char (char geçici \*, char)|
-|_InterlockedExchangeAdd8_acq|_ınterlockedexchangeadd8_acq char (char geçici \*, char)|
-|_InterlockedExchangeAdd8_nf|_ınterlockedexchangeadd8_nf char (char geçici \*, char)|
-|_InterlockedExchangeAdd8_rel|_ınterlockedexchangeadd8_rel char (char geçici \*, char)|
-|_InterlockedExchangeAdd_acq|uzun _ınterlockedexchangeadd_acq (uzun geçici \*, uzun)|
-|_InterlockedExchangeAdd_nf|uzun _ınterlockedexchangeadd_nf (uzun geçici \*, uzun)|
-|_InterlockedExchangeAdd_rel|uzun _ınterlockedexchangeadd_rel (uzun geçici \*, uzun)|
-|_InterlockedExchangePointer|void \* _ınterlockedexchangepointer (void \* geçici \* _hedef, void \*)|
-|_InterlockedExchangePointer_acq|void \* _InterlockedExchangePointer_acq (void \* geçici \* _hedef, void \*)|
-|_InterlockedExchangePointer_nf|void \* _InterlockedExchangePointer_nf (void \* geçici \* _hedef, void \*)|
-|_InterlockedExchange_acq|uzun _InterlockedExchange_acq (uzun geçici \* _hedef, uzun)|
-|_InterlockedExchange_nf|uzun _InterlockedExchange_nf (uzun geçici \* _hedef, uzun)|
-|_InterlockedIncrement|uzun __cdecl _ınterlockedıncrement (uzun geçici \*)|
-|_InterlockedIncrement16|kısa _InterlockedIncrement16 (kısa geçici \*)|
-|_InterlockedIncrement16_acq|kısa _InterlockedIncrement16_acq (kısa geçici \*)|
-|_InterlockedIncrement16_nf|kısa _InterlockedIncrement16_nf (kısa geçici \*)|
-|_InterlockedIncrement16_rel|kısa _InterlockedIncrement16_rel (kısa geçici \*)|
+|_InterlockedExchange8|Char _InterlockedExchange8 (Char volatile \* _Target, Char)|
+|_InterlockedExchange8_acq|Char _InterlockedExchange8_acq (Char volatile \* _Target, Char)|
+|_InterlockedExchange8_nf|Char _InterlockedExchange8_nf (Char volatile \* _Target, Char)|
+|_InterlockedExchangeAdd|uzun __cdecl _InterlockedExchangeAdd (uzun geçici \*, uzun)|
+|_InterlockedExchangeAdd16|Short _InterlockedExchangeAdd16 (kısa geçici \*, kısa)|
+|_InterlockedExchangeAdd16_acq|Short _InterlockedExchangeAdd16_acq (kısa geçici \*, kısa)|
+|_InterlockedExchangeAdd16_nf|Short _InterlockedExchangeAdd16_nf (kısa geçici \*, kısa)|
+|_InterlockedExchangeAdd16_rel|Short _InterlockedExchangeAdd16_rel (kısa geçici \*, kısa)|
+|_InterlockedExchangeAdd64|__int64 _InterlockedExchangeAdd64 (\__int64 volatile \*, \__int64)|
+|_InterlockedExchangeAdd64_acq|__int64 _InterlockedExchangeAdd64_acq (\__int64 volatile \*, \__int64)|
+|_InterlockedExchangeAdd64_nf|__int64 _InterlockedExchangeAdd64_nf (\__int64 volatile \*, \__int64)|
+|_InterlockedExchangeAdd64_rel|__int64 _InterlockedExchangeAdd64_rel (\__int64 volatile \*, \__int64)|
+|_InterlockedExchangeAdd8|Char _InterlockedExchangeAdd8 (Char volatile \*, Char)|
+|_InterlockedExchangeAdd8_acq|Char _InterlockedExchangeAdd8_acq (Char volatile \*, Char)|
+|_InterlockedExchangeAdd8_nf|Char _InterlockedExchangeAdd8_nf (Char volatile \*, Char)|
+|_InterlockedExchangeAdd8_rel|Char _InterlockedExchangeAdd8_rel (Char volatile \*, Char)|
+|_InterlockedExchangeAdd_acq|Long _InterlockedExchangeAdd_acq (uzun geçici \*, uzun)|
+|_InterlockedExchangeAdd_nf|Long _InterlockedExchangeAdd_nf (uzun geçici \*, uzun)|
+|_InterlockedExchangeAdd_rel|Long _InterlockedExchangeAdd_rel (uzun geçici \*, uzun)|
+|_InterlockedExchangePointer|void \* _InterlockedExchangePointer (void \* geçici \* _Target, void \*)|
+|_InterlockedExchangePointer_acq|void \* _InterlockedExchangePointer_acq (void \* geçici \* _Target, void \*)|
+|_InterlockedExchangePointer_nf|void \* _InterlockedExchangePointer_nf (void \* geçici \* _Target, void \*)|
+|_InterlockedExchange_acq|Long _InterlockedExchange_acq (uzun geçici \* _hedef, uzun)|
+|_InterlockedExchange_nf|Long _InterlockedExchange_nf (uzun geçici \* _hedef, uzun)|
+|_InterlockedIncrement|uzun __cdecl _InterlockedIncrement (uzun geçici \*)|
+|_InterlockedIncrement16|Short _InterlockedIncrement16 (kısa geçici \*)|
+|_Interlockedıncrement16_acq|Short _ınterlockedıncrement16_acq (kısa geçici \*)|
+|_Interlockedıncrement16_nf|Short _ınterlockedıncrement16_nf (kısa geçici \*)|
+|_Interlockedıncrement16_rel|Short _ınterlockedıncrement16_rel (kısa geçici \*)|
 |_InterlockedIncrement64|__int64 _InterlockedIncrement64 (\__int64 geçici \*)|
-|_InterlockedIncrement64_acq|__int64 _InterlockedIncrement64_acq (\__int64 geçici \*)|
-|_InterlockedIncrement64_nf|__int64 _InterlockedIncrement64_nf (\__int64 geçici \*)|
-|_InterlockedIncrement64_rel|__int64 _InterlockedIncrement64_rel (\__int64 geçici \*)|
-|_InterlockedIncrement_acq|uzun _InterlockedIncrement_acq (uzun geçici \*)|
-|_InterlockedIncrement_nf|uzun _InterlockedIncrement_nf (uzun geçici \*)|
-|_InterlockedIncrement_rel|uzun _InterlockedIncrement_rel (uzun geçici \*)|
-|_InterlockedOr|uzun _ınterlockedor (uzun geçici \*, uzun)|
-|_InterlockedOr16|kısa _InterlockedOr16 (kısa geçici \*, kısa)|
-|_InterlockedOr16_acq|kısa _InterlockedOr16_acq (kısa geçici \*, kısa)|
-|_InterlockedOr16_nf|kısa _InterlockedOr16_nf (kısa geçici \*, kısa)|
-|_InterlockedOr16_rel|kısa _InterlockedOr16_rel (kısa geçici \*, kısa)|
-|_InterlockedOr64|__int64 _InterlockedOr64(\__int64 volatile \*, \__int64)|
-|_InterlockedOr64_acq|__int64 _InterlockedOr64_acq (\__int64 geçici \*, \__int64)|
-|_InterlockedOr64_nf|__int64 _InterlockedOr64_nf (\__int64 geçici \*, \__int64)|
-|_InterlockedOr64_rel|__int64 _InterlockedOr64_rel (\__int64 geçici \*, \__int64)|
-|_InterlockedOr8|_InterlockedOr8 char (char geçici \*, char)|
-|_InterlockedOr8_acq|_InterlockedOr8_acq char (char geçici \*, char)|
-|_InterlockedOr8_nf|_InterlockedOr8_nf char (char geçici \*, char)|
-|_InterlockedOr8_rel|_InterlockedOr8_rel char (char geçici \*, char)|
-|_InterlockedOr_acq|uzun _InterlockedOr_acq (uzun geçici \*, uzun)|
-|_InterlockedOr_nf|uzun _InterlockedOr_nf (uzun geçici \*, uzun)|
-|_InterlockedOr_rel|uzun _InterlockedOr_rel (uzun geçici \*, uzun)|
-|_InterlockedXor|uzun _ınterlockedxor (uzun geçici \*, uzun)|
-|_InterlockedXor16|kısa _InterlockedXor16 (kısa geçici \*, kısa)|
-|_InterlockedXor16_acq|kısa _InterlockedXor16_acq (kısa geçici \*, kısa)|
-|_InterlockedXor16_nf|kısa _InterlockedXor16_nf (kısa geçici \*, kısa)|
-|_InterlockedXor16_rel|kısa _InterlockedXor16_rel (kısa geçici \*, kısa)|
-|_InterlockedXor64|__int64 _InterlockedXor64 (\__int64 geçici \*, \__int64)|
-|_InterlockedXor64_acq|__int64 _InterlockedXor64_acq (\__int64 geçici \*, \__int64)|
-|_InterlockedXor64_nf|__int64 _InterlockedXor64_nf (\__int64 geçici \*, \__int64)|
-|_InterlockedXor64_rel|__int64 _InterlockedXor64_rel (\__int64 geçici \*, \__int64)|
-|_InterlockedXor8|_InterlockedXor8 char (char geçici \*, char)|
-|_InterlockedXor8_acq|_InterlockedXor8_acq char (char geçici \*, char)|
-|_InterlockedXor8_nf|_InterlockedXor8_nf char (char geçici \*, char)|
-|_InterlockedXor8_rel|_InterlockedXor8_rel char (char geçici \*, char)|
-|_InterlockedXor_acq|uzun _InterlockedXor_acq (uzun geçici \*, uzun)|
-|_InterlockedXor_nf|uzun _InterlockedXor_nf (uzun geçici \*, uzun)|
-|_InterlockedXor_rel|uzun _InterlockedXor_rel (uzun geçici \*, uzun)|
+|_Interlockedıncrement64_acq|__int64 _ınterlockedıncrement64_acq (\__int64 geçici \*)|
+|_Interlockedıncrement64_nf|__int64 _ınterlockedıncrement64_nf (\__int64 geçici \*)|
+|_Interlockedıncrement64_rel|__int64 _ınterlockedıncrement64_rel (\__int64 geçici \*)|
+|_Interlockedıncrement_acq|Long _ınterlockedıncrement_acq (uzun geçici \*)|
+|_Interlockedıncrement_nf|Long _ınterlockedıncrement_nf (uzun geçici \*)|
+|_Interlockedıncrement_rel|Long _ınterlockedıncrement_rel (uzun geçici \*)|
+|_InterlockedOr|Long _InterlockedOr (uzun geçici \*, uzun)|
+|_InterlockedOr16|Short _InterlockedOr16 (kısa geçici \*, kısa)|
+|_Interlockedor16_acq|Short _ınterlockedor16_acq (kısa geçici \*, kısa)|
+|_Interlockedor16_nf|Short _ınterlockedor16_nf (kısa geçici \*, kısa)|
+|_Interlockedor16_rel|Short _ınterlockedor16_rel (kısa geçici \*, kısa)|
+|_InterlockedOr64|__int64 _InterlockedOr64 (\__int64 volatile \*, \__int64)|
+|_Interlockedor64_acq|__int64 _ınterlockedor64_acq (\__int64 volatile \*, \__int64)|
+|_Interlockedor64_nf|__int64 _ınterlockedor64_nf (\__int64 volatile \*, \__int64)|
+|_Interlockedor64_rel|__int64 _ınterlockedor64_rel (\__int64 volatile \*, \__int64)|
+|_InterlockedOr8|Char _ınterlockedor8 (Char volatile \*, Char)|
+|_InterlockedOr8_acq|Char _InterlockedOr8_acq (Char volatile \*, Char)|
+|_InterlockedOr8_nf|Char _InterlockedOr8_nf (Char volatile \*, Char)|
+|_InterlockedOr8_rel|Char _InterlockedOr8_rel (Char volatile \*, Char)|
+|_Interlockedor_acq|Long _ınterlockedor_acq (uzun geçici \*, uzun)|
+|_InterlockedOr_nf|Long _ınterlockedor_nf (uzun geçici \*, uzun)|
+|_InterlockedOr_rel|Long _ınterlockedor_rel (uzun geçici \*, uzun)|
+|_InterlockedXor|Long _InterlockedXor (uzun geçici \*, uzun)|
+|_InterlockedXor16|Short _InterlockedXor16 (kısa geçici \*, kısa)|
+|_InterlockedXor16_acq|Short _InterlockedXor16_acq (kısa geçici \*, kısa)|
+|_InterlockedXor16_nf|Short _InterlockedXor16_nf (kısa geçici \*, kısa)|
+|_InterlockedXor16_rel|Short _InterlockedXor16_rel (kısa geçici \*, kısa)|
+|_InterlockedXor64|__int64 _InterlockedXor64 (\__int64 volatile \*, \__int64)|
+|_InterlockedXor64_acq|__int64 _InterlockedXor64_acq (\__int64 volatile \*, \__int64)|
+|_InterlockedXor64_nf|__int64 _InterlockedXor64_nf (\__int64 volatile \*, \__int64)|
+|_InterlockedXor64_rel|__int64 _InterlockedXor64_rel (\__int64 volatile \*, \__int64)|
+|_InterlockedXor8|Char _InterlockedXor8 (Char volatile \*, Char)|
+|_InterlockedXor8_acq|Char _InterlockedXor8_acq (Char volatile \*, Char)|
+|_InterlockedXor8_nf|Char _InterlockedXor8_nf (Char volatile \*, Char)|
+|_InterlockedXor8_rel|Char _InterlockedXor8_rel (Char volatile \*, Char)|
+|_InterlockedXor_acq|Long _InterlockedXor_acq (uzun geçici \*, uzun)|
+|_InterlockedXor_nf|Long _InterlockedXor_nf (uzun geçici \*, uzun)|
+|_InterlockedXor_rel|Long _InterlockedXor_rel (uzun geçici \*, uzun)|
 
-[[NEON](#top)]
+[[En üste dön](#top)]
 
-### <a name="interlockedbittest-intrinsics"></a>_interlockedbittest Intrinsics
+### <a name="_interlockedbittest-intrinsics"></a>_ınterlockedbittest iç bilgileri
 
-Düz bir birbirine kenetlenmiş bittest yapı içlerini tüm platformlar için ortak olan. ARM ekler `_acq`, `_rel`, ve `_nf` yalnızca bir işlemin engel semantiği açıklandığı şekilde değiştirmeniz çeşitleri [_nf (sınır yok) soneki](#nf_suffix) bu makalenin üst kısmındaki.
+Düz olarak kilitlenen bit testi iç bilgileri tüm platformlarda ortaktır. ARM, `_acq`bu `_rel`makalenin önceki `_nf` kısımlarında bulunan [_nf (sınır yok) soneki](#nf_suffix) bölümünde açıklandığı gibi bir işlemin bariyer semantiğini değiştiren, ve türevlerini ekler.
 
 |İşlev adı|İşlev prototipi|
 |-------------------|------------------------|
-|_interlockedbittestandreset|İmzasız char _interlockedbittestandreset (uzun geçici \*, uzun)|
-|_interlockedbittestandreset_acq|İmzasız char _interlockedbittestandreset_acq (uzun geçici \*, uzun)|
-|_interlockedbittestandreset_nf|İmzasız char _interlockedbittestandreset_nf (uzun geçici \*, uzun)|
-|_interlockedbittestandreset_rel|İmzasız char _interlockedbittestandreset_rel (uzun geçici \*, uzun)|
-|_interlockedbittestandset|İmzasız char _interlockedbittestandset (uzun geçici \*, uzun)|
-|_interlockedbittestandset_acq|İmzasız char _interlockedbittestandset_acq (uzun geçici \*, uzun)|
-|_interlockedbittestandset_nf|İmzasız char _interlockedbittestandset_nf (uzun geçici \*, uzun)|
-|_interlockedbittestandset_rel|İmzasız char _interlockedbittestandset_rel (uzun geçici \*, uzun)|
+|_interlockedbittestandreset|işaretsiz char _ınterlockedbittestandreset (uzun geçici \*, uzun)|
+|_interlockedbittestandreset_acq|işaretsiz char _ınterlockedbittestandreset_acq (uzun geçici \*, uzun)|
+|_interlockedbittestandreset_nf|işaretsiz char _ınterlockedbittestandreset_nf (uzun geçici \*, uzun)|
+|_interlockedbittestandreset_rel|işaretsiz char _ınterlockedbittestandreset_rel (uzun geçici \*, uzun)|
+|_interlockedbittestandset|işaretsiz char _ınterlockedbittestandset (uzun geçici \*, uzun)|
+|_interlockedbittestandset_acq|işaretsiz char _interlockedbittestandset_acq (uzun geçici \*, uzun)|
+|_interlockedbittestandset_nf|işaretsiz char _interlockedbittestandset_nf (uzun geçici \*, uzun)|
+|_interlockedbittestandset_rel|işaretsiz char _interlockedbittestandset_rel (uzun geçici \*, uzun)|
 
-[[NEON](#top)]
+[[En üste dön](#top)]
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)<br/>
-[ARM Assembler Başvurusu](../assembler/arm/arm-assembler-reference.md)<br/>
-[C++ Dil Başvurusu](../cpp/cpp-language-reference.md)
+[Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)\
+[ARM Assembler başvurusu](../assembler/arm/arm-assembler-reference.md)\
+[C++dil başvurusu](../cpp/cpp-language-reference.md)

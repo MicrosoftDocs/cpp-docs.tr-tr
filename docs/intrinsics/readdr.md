@@ -1,53 +1,53 @@
 ---
 title: __readdr
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __readdr
 helpviewer_keywords:
 - __readdr intrinsic
 ms.assetid: 061b05da-c85e-4052-b392-106f14bb84f1
-ms.openlocfilehash: 9d265fe75abaa7ad3cfd508613766cc3b600ee14
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 646330ca92af08903485fd4583eb2c217fe3e023
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62263289"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70216678"
 ---
-# <a name="readdr"></a>__readdr
+# <a name="__readdr"></a>__readdr
 
-Belirtilen hata ayıklama kaydı değerini okur.
+Belirtilen hata ayıklama kaydının değerini okur.
 
 ## <a name="syntax"></a>Sözdizimi
 
+```C
+unsigned         __readdr(unsigned int DebugRegister); /* x86 */
+unsigned __int64 __readdr(unsigned int DebugRegister); /* x64 */
 ```
-unsigned         __readdr(unsigned int DebugRegister);
-unsigned __int64 __readdr(unsigned int DebugRegister);
-```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
-*DebugRegister*<br/>
-[in] Hata ayıklama tanımlayan 0 ile 7 arasında bir sabit kaydedin.
+*DebugRegister*\
+'ndaki Hata ayıklama kaydını tanımlayan 0 ile 7 arasında bir sabit.
 
-## <a name="return-value"></a>Dönüş Değeri
+## <a name="return-value"></a>Dönüş değeri
 
-Belirtilen hata ayıklama kayıt değeri.
+Belirtilen hata ayıklama kaydının değeri.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu iç öğeler yalnızca çekirdek modunda kullanılabilir ve yordamlar yalnızca iç öğe olarak kullanılabilir.
+Bu iç bilgiler yalnızca çekirdek modunda kullanılabilir ve yordamlar yalnızca iç bilgiler olarak kullanılabilir.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İç|Mimari|
+|Alanlarla|Mimari|
 |---------------|------------------|
 |`__readdr`|x86, x64|
 
-**Üst bilgi dosyası** \<intrin.h >
+**Üst bilgi dosyası** \<Intrin. h >
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)<br/>
+[Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)\
 [__readeflags](../intrinsics/readeflags.md)

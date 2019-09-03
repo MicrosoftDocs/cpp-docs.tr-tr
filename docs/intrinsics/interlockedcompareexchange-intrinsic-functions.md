@@ -1,6 +1,6 @@
 ---
-title: _InterlockedCompareExchange İç İşlevleri
-ms.date: 12/17/2018
+title: _InterlockedCompareExchange iç işlevleri
+ms.date: 09/02/2019
 f1_keywords:
 - _InterlockedCompareExchange_HLERelease
 - _InterlockedCompareExchange8_nf
@@ -48,14 +48,14 @@ helpviewer_keywords:
 - InterlockedCompareExchange64_rel intrinsic
 - _InterlockedCompareExchange64_rel intrinsic
 ms.assetid: c3ad79c0-a523-4930-a3a4-69a65d7d5c81
-ms.openlocfilehash: baa3131a7ca533af30e9ed73cd2698c06011488e
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 26dff1c902fff495d5efe45d8da10b1c5da72878
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69509450"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222044"
 ---
-# <a name="_interlockedcompareexchange-intrinsic-functions"></a>_InterlockedCompareExchange İç İşlevleri
+# <a name="_interlockedcompareexchange-intrinsic-functions"></a>_InterlockedCompareExchange iç işlevleri
 
 **Microsoft 'a özgü**
 
@@ -63,7 +63,7 @@ Birbirine kilitli bir karşılaştırma ve değişim yapar.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```C
 long _InterlockedCompareExchange(
    long volatile * Destination,
    long Exchange,
@@ -176,18 +176,18 @@ __int64 _InterlockedCompareExchange64_rel(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
-*Hedefine*<br/>
+*Hedefine*\
 [in, out] Hedef değere yönelik işaretçi. İşaret yok sayılır.
 
-*Exchange*<br/>
+*Değişimi*\
 'ndaki Değişim değeri. İşaret yok sayılır.
 
-*Karşılaştırılanı desteklemiyor*<br/>
+*Karşılaştırılanı desteklemiyor*\
 'ndaki Hedefle karşılaştırılacak değer. İşaret yok sayılır.
 
-## <a name="return-value"></a>Dönüş Değeri
+## <a name="return-value"></a>Dönüş değeri
 
 Dönüş değeri, `Destination` işaretçinin ilk değeridir.
 
@@ -195,8 +195,8 @@ Dönüş değeri, `Destination` işaretçinin ilk değeridir.
 
 |Alanlarla|Mimari|Üstbilgi|
 |---------------|------------------|------------|
-|`_InterlockedCompareExchange`, `_InterlockedCompareExchange8`, `_InterlockedCompareExchange16`, `_InterlockedCompareExchange64`|x86, ARM, x64|\<Intrin. h >|
-|`_InterlockedCompareExchange_acq`, `_InterlockedCompareExchange_rel`, `_InterlockedCompareExchange8_acq`, `_InterlockedCompareExchange8_nf`, `_InterlockedCompareExchange8_rel`,`_InterlockedCompareExchange16_acq`, `_InterlockedCompareExchange16_nf`, `_InterlockedCompareExchange16_rel`, `_InterlockedCompareExchange64_acq`, `_InterlockedCompareExchange64_nf`, `_InterlockedCompareExchange64_rel`,|ARM|\<Intrin. h >|
+|`_InterlockedCompareExchange`, `_InterlockedCompareExchange8`, `_InterlockedCompareExchange16`, `_InterlockedCompareExchange64`|x86, ARM, x64, ARM64|\<Intrin. h >|
+|`_InterlockedCompareExchange_acq`, `_InterlockedCompareExchange_rel`, `_InterlockedCompareExchange8_acq`, `_InterlockedCompareExchange8_nf`, `_InterlockedCompareExchange8_rel`,`_InterlockedCompareExchange16_acq`, `_InterlockedCompareExchange16_nf`, `_InterlockedCompareExchange16_rel`, `_InterlockedCompareExchange64_acq`, `_InterlockedCompareExchange64_nf`, `_InterlockedCompareExchange64_rel`,|ARM, ARM64|\<Intrin. h >|
 |`_InterlockedCompareExchange_np`, `_InterlockedCompareExchange16_np`, `_InterlockedCompareExchange64_np`|X64|\<Intrin. h >|
 |`_InterlockedCompareExchange_HLEAcquire`, `_InterlockedCompareExchange_HLERelease`, `_InterlockedCompareExchange64_HLEAcquire`, `_InterlockedCompareExchange64_HLERelease`|x86, x64|\<ımintrin. h >|
 
@@ -296,7 +296,6 @@ namespace MyInterlockedIntrinsicLock
 }
 
 // ------------------------------------------------------------------
-
 // Data shared by threads
 
 queue<int> SharedQueue;
@@ -435,8 +434,8 @@ int main(
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[_InterlockedCompareExchange128](../intrinsics/interlockedcompareexchange128.md)<br/>
-[_InterlockedCompareExchangePointer İç İşlevleri](../intrinsics/interlockedcompareexchangepointer-intrinsic-functions.md)<br/>
-[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)<br/>
-[Anahtar Sözcükler](../cpp/keywords-cpp.md)<br/>
+[_InterlockedCompareExchange128](../intrinsics/interlockedcompareexchange128.md)\
+[_Interlockedcompareexchangepointer iç işlevleri](../intrinsics/interlockedcompareexchangepointer-intrinsic-functions.md)\
+[Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)\
+[Lerimi](../cpp/keywords-cpp.md)\
 [x86 Derleyicisi ile Çakışma](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)

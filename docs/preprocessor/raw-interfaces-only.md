@@ -1,38 +1,37 @@
 ---
-title: raw_interfaces_only
-ms.date: 11/04/2016
+title: raw_interfaces_only içeri aktarma özniteliği
+ms.date: 08/29/2019
 f1_keywords:
 - raw_interfaces_only
 helpviewer_keywords:
 - raw_interfaces_only attribute
 ms.assetid: 87056c6d-3f34-4248-af58-f5775a35bfb7
-ms.openlocfilehash: 48133b85ccb5ddb8de8e6cb614d41cde22dac66b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4b79aa4dbafa204d84f4d6ed7ec78fdec1b81fa7
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62179795"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70216213"
 ---
-# <a name="rawinterfacesonly"></a>raw_interfaces_only
-**C++ özgü**
+# <a name="raw_interfaces_only-import-attribute"></a>raw_interfaces_only içeri aktarma özniteliği
 
-Hata işleme sarmalayıcı işlevleri oluşturulmasını engeller ve [özelliği](../cpp/property-cpp.md) bu sarmalayıcı işlevleri bildirimleri.
+**C++Belirli**
+
+Hata işleme sarmalayıcı işlevlerinin ve bu sarmalayıcı işlevlerini kullanan [özellik](../cpp/property-cpp.md) bildirimlerinin oluşturulmasını engeller.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
-raw_interfaces_only
-```
+> **#import** *tür kitaplığı* **raw_interfaces_only**
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Raw_interfaces_only** özniteliği de kaldırılacak özelliği olmayan işlevler adlandırmada kullanılan varsayılan ön ek neden olur. Normalde, ön ekidir **raw_**. Bu öznitelik belirtilmezse, işlev doğrudan tür kitaplığından adlarıdır.
+**Raw_interfaces_only** özniteliği Ayrıca Özellik dışı işlevlerin kaldırılmasına izin vermek için kullanılan varsayılan öneki de sağlar. Genellikle, ön ek olur `raw_`. Bu öznitelik belirtilmişse, işlev adları doğrudan tür kitaplığından alınır.
 
-Bu öznitelik yalnızca alt düzey tür kitaplığı içeriğini kullanıma sunmanıza olanak sağlar.
+Bu öznitelik, yalnızca tür kitaplığının alt düzey içeriğini sergileme olanağı sağlar.
 
-**END C++ özgü**
+**SONA C++ özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)<br/>
+[#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)\
 [#import yönergesi](../preprocessor/hash-import-directive-cpp.md)

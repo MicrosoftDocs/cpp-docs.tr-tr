@@ -1,6 +1,6 @@
 ---
-title: bileşenleri
-ms.date: 04/08/2019
+title: bileşen pragması
+ms.date: 08/29/2019
 f1_keywords:
 - vc-pragma.component
 - component_CPP
@@ -8,22 +8,22 @@ helpviewer_keywords:
 - component pragma
 - pragmas, component
 ms.assetid: 7b66355e-3201-4c14-8190-f4a2a81a604a
-ms.openlocfilehash: 4870860650a39d27639ad18100ba37ba14aa15c0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 578c590bdb4223f173e0249c18d0eea4e78a18db
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62366920"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70220471"
 ---
-# <a name="component"></a>bileşenleri
+# <a name="component-pragma"></a>bileşen pragması
 
-Gözatma bilgilerinin ya da kaynak dosyalarından bağımlılık bilgilerinin toplanmasını denetler.
+Kaynak dosyalardan gelen tarayıcı bilgileri veya bağımlılık bilgileri koleksiyonunu denetler.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **#pragma component( browser,** { **on** | **off** }[**,** **references** [**,** *name* ]] **)** \
-> **#pragma bileşeni (minrebuild,** | **devre dışı)** \
-> **#pragma bileşeni (mintypeinfo,** | **devre dışı)**
+> **#pragma bileşeni (tarayıcı,** { **on** | **off** } [ **,** **Başvurular** [ **,** *Name* ]] **)**  \
+> **#pragma bileşeni (mini yeniden oluşturma,** { **on** | **off** } **)**  \
+> **#pragma bileşeni (mintypeınfo,** { **on** | **off** } **)**
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -40,9 +40,9 @@ Açık veya kapalı'yı kullanmak pragmadan ileri doğru gözatma bilgilerinin t
 Derleyicinin gözatma bilgilerini toplamasını durdurur.
 
 > [!NOTE]
-> Bu pragma ile gözatma bilgilerini toplama işlemini etkinleştirmek için [gözatma bilgilerinin ilk etkinleştirilmelidir](../build/reference/building-browse-information-files-overview.md).
+> Bu pragma ile ilgili tarama bilgilerinin toplanmasını etkinleştirmek için, [önce tarama bilgilerinin etkinleştirilmesi gerekir](../build/reference/building-browse-information-files-overview.md).
 
-`references` Seçeneği ile veya olmadan kullanılabilir *adı* bağımsız değişken. Kullanarak `references` olmadan *adı* başvuruları toplama açar veya kapatır (diğer gözatma bilgileri toplanmaya devam ancak devam eder). Örneğin:
+**References** seçeneği *ad* bağımsız değişkeniyle birlikte veya olmadan kullanılabilir. *Ad* olmadan **başvuruların** kullanılması başvuruların toplanmasına açık veya kapalı olur (diğer tarama bilgileri toplanmaya devam eder, ancak). Örneğin:
 
 ```cpp
 #pragma component(browser, off, references)
@@ -50,40 +50,40 @@ Derleyicinin gözatma bilgilerini toplamasını durdurur.
 
 Derleyicinin başvuru bilgilerini toplama işlemini durdurur.
 
-Kullanarak `references` ile *adı* ve `off` başvurularının *adı* gözatma bilgileri penceresinde görünmesini. İlgilenmediğiniz adları ve türleri gözardı etmek ve gözatma bilgisi dosyalarının boyutunu küçültmek için bu sözdizimini kullanın. Örneğin:
+*Name* ve **off** ile **başvuruların** kullanılması, tarama bilgileri penceresinde görünen *ad* başvurularını önler. İlgilenmediğiniz adları ve türleri gözardı etmek ve gözatma bilgisi dosyalarının boyutunu küçültmek için bu sözdizimini kullanın. Örneğin:
 
 ```cpp
 #pragma component(browser, off, references, DWORD)
 ```
 
-o noktadan ilerideki DWORD başvurularını yoksayar. DWORD yapılan başvuruların yeniden kullanarak toplama kapatabilirsiniz `on`:
+Bu noktadan sonra gelen DWORD başvurularını yoksayar. **Üzerinde**kullanarak DWORD başvurularını toplamayı yeniden açabilirsiniz:
 
 ```cpp
 #pragma component(browser, on, references, DWORD)
 ```
 
-Başvurularını toplamaya devam etmek için tek yol budur *adı*; birinde açıkça etkinleştirmelisiniz *adı* , devre dışı bırakmış.
+Bu, *ad*ile başvuruları toplamayı sürdürmenin tek yoludur; kapattığınız bir *adı* açık olarak açmanız gerekir.
 
-Önişlemci önlemek için *adı* (NULL 0'a genişletmek gibi), tırnak içine alın:
+Önişlemci 'nin *adı* genişletmesinin (null değeri 0 ' a genişletme gibi) engellemek için, tırnak içine alın:
 
 ```cpp
 #pragma component(browser, off, references, "NULL")
 ```
 
-### <a name="minimal-rebuild"></a>En Az Yeniden Derleme
+### <a name="minimal-rebuild"></a>En az yeniden derleme
 
-Kullanım dışı [/GM derlemeyi (etkinleştirme en az yeniden derlemeyi)](../build/reference/gm-enable-minimal-rebuild.md) özellik gerektirir oluşturmak ve depolamak için derleyicinin C++ sınıf bağımlılık bilgileri oluşturup disk alanı alır. Disk alanından kazanmak için kullanabileceğiniz `#pragma component( minrebuild, off )` gerekmediği bağımlılık bilgileri, örneğin, değişmeyen üstbilgi dosyalarında toplanacak. INSERT `#pragma component(minrebuild, on)` bağımlılık toplama etkinleştirmek için değişmeyen sınıflardan sonra.
+Kullanım dışı bırakılan [/GD (en az yeniden derlemeyi etkinleştir)](../build/reference/gm-enable-minimal-rebuild.md) özelliği, derleyicinin, disk C++ alanı alan sınıf bağımlılığı bilgilerini oluşturmasını ve depolamasını gerektirir. Disk alanından tasarruf etmek için, örneğin değişiklik `#pragma component( minrebuild, off )` olmayan başlık dosyalarında bağımlılık bilgilerini toplamanız gerektiğinde ' yi kullanabilirsiniz. Bağımlılık `#pragma component( minrebuild, on )` toplamayı yeniden açmak için sınıfların değiştirilmesini kaldırdıktan sonra Ekle.
 
-### <a name="reduce-type-information"></a>Tür Bilgilerini Azaltma
+### <a name="reduce-type-information"></a>Tür bilgilerini azaltma
 
-`mintypeinfo` Seçeneği, belirtilen bölge için hata ayıklama bilgilerini azaltır. Bu bilgilerin hacmi epey büyüktür; .pdb ve .obj dosyalarını etkiler. mintypeinfo bölgesindeki sınıflarda ve yapılarda hata ayıklaması yapamazsınız. mintypeinfo seçeneğini kullanmak aşağıdaki uyarıyı önlemeye yardımcı olabilir:
+`mintypeinfo` Seçeneği belirtilen bölge için hata ayıklama bilgilerini azaltır. Bu bilgilerin hacmi epey büyüktür; .pdb ve .obj dosyalarını etkiler. mintypeinfo bölgesindeki sınıflarda ve yapılarda hata ayıklaması yapamazsınız. mintypeinfo seçeneğini kullanmak aşağıdaki uyarıyı önlemeye yardımcı olabilir:
 
 ```cmd
 LINK : warning LNK4018: too many type indexes in PDB "filename", discarding subsequent type information
 ```
 
-Daha fazla bilgi için [/GM derlemeyi (etkinleştirme en az yeniden derlemeyi)](../build/reference/gm-enable-minimal-rebuild.md) derleyici seçeneği.
+Daha fazla bilgi için bkz. [/GD (en az yeniden derlemeyi etkinleştir)](../build/reference/gm-enable-minimal-rebuild.md) derleyici seçeneği.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+[Pragma yönergeleri ve __pragma anahtar sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

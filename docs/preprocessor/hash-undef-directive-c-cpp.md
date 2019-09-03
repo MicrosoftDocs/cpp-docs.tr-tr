@@ -1,6 +1,6 @@
 ---
-title: '#undef yönergesi (C/C++)'
-ms.date: 11/04/2016
+title: '##undef yönergesi (C/C++)'
+ms.date: 08/29/2019
 f1_keywords:
 - '#undef'
 helpviewer_keywords:
@@ -8,34 +8,32 @@ helpviewer_keywords:
 - undef directive (#undef)
 - preprocessor, directives
 ms.assetid: 88900e0e-2c19-4a63-b681-f3d3133c24ca
-ms.openlocfilehash: 4f4f5ce244be6d7f4e13d7a2abc5d21232c08d9d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1a69bc568579e7da7c7e3816cb67c8153b8f1a27
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62409856"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70220209"
 ---
-# <a name="undef-directive-cc"></a>#undef Yönergesi (C/C++)
+# <a name="undef-directive-cc"></a>#undef yönergesi (C/C++)
+
 Daha önce `#define` ile oluşturulmuş bir adı kaldırır (tanımsız hale getirir).
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
-#undef
-identifier
-```
+> **#undef** *tanımlayıcı*
 
 ## <a name="remarks"></a>Açıklamalar
 
-**#Undef** yönergesi, geçerli tanımı kaldırır *tanımlayıcı*. Sonuç olarak, sonraki tekrarı *tanımlayıcı* önişlemci tarafından göz ardı edilir. Makro tanımı kullanarak kaldırmak için **#undef**, yalnızca makronun vermek *tanımlayıcı* ; parametre listesi vermeyin.
+**#Undef** yönergesi *tanımlayıcının*geçerli tanımını kaldırır. Sonuç olarak, *tanımlayıcının* sonraki oluşumları ön işlemci tarafından yok sayılır. **#Undef**kullanarak makro tanımını kaldırmak için, bir parametre listesi değil yalnızca makro *tanımlayıcısına*izin verin.
 
-Ayrıca uygulayabilirsiniz **#undef** yönerge için önce bir tanımı olan bir tanımlayıcı. Bu tanımlayıcının tanımsız hale gelmesini sağlar. İçinde Makro değişikliği gerçekleştirilmez **#undef** deyimleri.
+**#Undef** yönergesini, önceki tanımına sahip olmayan bir tanımlayıcıya de uygulayabilirsiniz. Bu tanımlayıcının tanımsız hale gelmesini sağlar. Makro değiştirme **#undef** deyimleri içinde gerçekleştirilmez.
 
-**#Undef** yönergesi ile eşleştirilir genellikle bir `#define` yönergesi bir tanımlayıcının özel anlama sahip bir kaynak programda bir bölge oluşturmak için. Örneğin, kaynak programın belirli bir işlevi, programın geri kalanını etkilemeyen ortama özgü değerler tanımlamak için bildirim sabitleri kullanabilir. **#Undef** yönergesi ile de çalışır `#if` yönergesi kaynak programın koşullu derlemesini denetlemek için. Bkz: [#if, #elif, #else ve #endif yönergeleri](../preprocessor/hash-if-hash-elif-hash-else-and-hash-endif-directives-c-cpp.md) daha fazla bilgi için.
+**#Undef** yönergesi, genellikle bir tanımlayıcının özel bir `#define` anlamı olan kaynak programda bir bölge oluşturmak için bir yönergeyle eşleştirilir. Örneğin, kaynak programın belirli bir işlevi, programın geri kalanını etkilemeyen ortama özgü değerler tanımlamak için bildirim sabitleri kullanabilir. **#Undef** yönergesi, kaynak programın koşullu derlemesini `#if` denetlemek için direktifle de birlikte kullanılabilir. Daha fazla bilgi için [#if, #elif, #else ve #endif](../preprocessor/hash-if-hash-elif-hash-else-and-hash-endif-directives-c-cpp.md)yönergelerine bakın.
 
-Aşağıdaki örnekte, **#undef** yönergesi sembolik bir sabitin ve bir makronun tanımlarını kaldırır. Yalnızca makronun tanımlayıcısının belirtildiğine dikkat edin.
+Aşağıdaki örnekte, **#undef** yönergesi sembolik bir sabit ve Makro tanımlarını kaldırır. Yalnızca makronun tanımlayıcısının belirtildiğine dikkat edin.
 
-```
+```C
 #define WIDTH 80
 #define ADD( X, Y ) ((X) + (Y))
 .
@@ -45,12 +43,12 @@ Aşağıdaki örnekte, **#undef** yönergesi sembolik bir sabitin ve bir makronu
 #undef ADD
 ```
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Makrolar kullanılarak komut satırından tanımsız olabilir `/U` kaldırılacak makro adlarını ardından seçeneği. Bu komutu çalıştırmanın etkisi dizisi ile eşdeğerdir `#undef` *makro adı* dosyasının başında deyimleri.
+Makrolar, `/U` seçeneğini kullanarak komut satırından ve ardından tanımsız olacak makro adları tarafından tanımsız olabilir. Bu komutu verme etkisi, dosyanın başındaki `#undef` *makro adı* deyimlerinin dizisine eşdeğerdir.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Ön işlemci Yönergeleri](../preprocessor/preprocessor-directives.md)
+[Önişlemci yönergeleri](../preprocessor/preprocessor-directives.md)

@@ -1,60 +1,60 @@
 ---
 title: __mulh
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __mulh
 helpviewer_keywords:
 - __mulh intrinsic
 ms.assetid: cd2ab093-9ef6-404d-ac34-0bee033882f3
-ms.openlocfilehash: 122d7ff28a01c0b95c16c6a0f4cd20e883744d2e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c3a421cdda1c62620d4c933436fd0b5bab589c0e
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62263080"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70221685"
 ---
-# <a name="mulh"></a>__mulh
+# <a name="__mulh"></a>__mulh
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Yüksek 64 bit ürünün iki 64-bit imzalı tamsayı döndürür.
+2 64 bit işaretli tamsayılar ürününün yüksek 64 bitini döndürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```C
 __int64 __mulh(
    __int64 a,
    __int64 b
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
-*a*<br/>
-[in] Çarpılacak ilk sayı.
+*a*\
+'ndaki Çarpılacak ilk sayı.
 
-*b*<br/>
-[in] Çarpılacak ikinci sayı.
+*kenarı*\
+'ndaki Çarpılacak ikinci sayı.
 
-## <a name="return-value"></a>Dönüş Değeri
+## <a name="return-value"></a>Dönüş değeri
 
-Çarpma 128-bit sonucunu yüksek 64 bit.
+Çarpma 'nın 128 bit sonucunun yüksek 64 bitleri.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İç|Mimari|
+|Alanlarla|Mimari|
 |---------------|------------------|
 |`__mulh`|X64|
 
-**Üst bilgi dosyası** \<intrin.h >
+**Üst bilgi dosyası** \<Intrin. h >
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu yordam yalnızca bir iç öğe olarak kullanılabilir.
+Bu yordam yalnızca iç öğe olarak kullanılabilir.
 
 ## <a name="example"></a>Örnek
 
-```
+```cpp
 // mulh.cpp
 // processor: x64
 #include <stdio.h>
@@ -79,8 +79,8 @@ int main()
 0xfffffffffffffff * 0xf0000000 = 0xeffffffffffffff10000000
 ```
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)
+[Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)

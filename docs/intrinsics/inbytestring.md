@@ -1,6 +1,6 @@
 ---
 title: __inbytestring
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __inbytestring
 - __inbytestring_cpp
@@ -8,22 +8,22 @@ helpviewer_keywords:
 - rep insb instruction
 - __inbytestring intrinsic
 ms.assetid: fe549556-e7a3-4af3-8ebf-8a7dc3cb233b
-ms.openlocfilehash: e515c6452d18ca022707fa2f9e36e2045523ccd5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: cb6e811c809c6069c47415e87804641f30a3897b
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62348958"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70217803"
 ---
-# <a name="inbytestring"></a>__inbytestring
+# <a name="__inbytestring"></a>__inbytestring
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Belirtilen bağlantı noktası kullanarak verileri okuyan `rep insb` yönergesi.
+`rep insb` Yönergeleri kullanarak belirtilen bağlantı noktasından verileri okur.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```C
 void __inbytestring(
    unsigned short Port,
    unsigned char* Buffer,
@@ -31,31 +31,31 @@ void __inbytestring(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
-*Bağlantı noktası*<br/>
-[in] Okunacak bağlantı noktası.
+*Bağ*\
+'ndaki Okunacak bağlantı noktası.
 
-*Arabellek*<br/>
-[out] Bağlantı noktasından okunan veriler burada yazılır.
+*Arabelleğin*\
+dışı Bağlantı noktasından okunan veriler buraya yazılır.
 
-*Sayısı*<br/>
-[in] Okunacak veri bayt sayısı.
+*Biriktirme*\
+'ndaki Okunan veri bayt sayısı.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İç|Mimari|
+|Alanlarla|Mimari|
 |---------------|------------------|
 |`__inbytestring`|x86, x64|
 
-**Üst bilgi dosyası** \<intrin.h >
+**Üst bilgi dosyası** \<Intrin. h >
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu yordam yalnızca bir iç öğe olarak kullanılabilir.
+Bu yordam yalnızca iç öğe olarak kullanılabilir.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)
+[Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)

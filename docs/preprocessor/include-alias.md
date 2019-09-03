@@ -1,6 +1,6 @@
 ---
-title: include_alias
-ms.date: 12/16/2018
+title: include_alias pragması
+ms.date: 08/29/2019
 f1_keywords:
 - vc-pragma.include_alias
 - include_alias_CPP
@@ -8,25 +8,26 @@ helpviewer_keywords:
 - pragmas, include_alias
 - include_alias pragma
 ms.assetid: 3256d589-12b3-4af0-a586-199e96eabacc
-ms.openlocfilehash: 187fa94f7c2a5457df655081b87a7f49d38adfa2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: aa3714186e8f95d4044ba5a3b2bc2d5fcfb1fc9c
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62384048"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70218895"
 ---
-# <a name="includealias"></a>include_alias
+# <a name="include_alias-pragma"></a>include_alias pragması
 
-Belirtir *alias_filename* bulunur bir `#include` derleyici yönergesi değiştirir *actual_filename* kullanışlılığını.
+*Alias_filename* bir `#include` yönergede bulunduğunda derleyicinin yerine *actual_filename* koyar.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> #<a name="pragma-includealiasaliasfilename-actualfilename"></a>include_alias pragması ("*alias_filename*","*actual_filename*")
-> #<a name="pragma-includealiasaliasfilename-actualfilename"></a>include_alias pragması (\<*alias_filename*>, \< *actual_filename*>)
+<!-- localization note - it's important to have the italic and bold characters immediately adjacent here. -->
+> **#pragma include_alias (** "*alias_filename*" **,** "*actual_filename*" **)** \
+> **#pragma include_alias (** \< *alias_filename*>  **,** *actual_filename*) \<> 
 
 ## <a name="remarks"></a>Açıklamalar
 
-**İnclude_alias** pragma yönergesi, farklı adlar veya yolları kaynak kodları tarafından dahil edilen dosya adları için olan dosyalar yerine olanak sağlar. Örneğin, bazı dosya sistemleri 8.3 FAT dosya sistemi sınırından daha uzun üstbilgi dosya izin verir. Derleyici, uzun üstbilgi dosya adlarının ilk sekiz karakteri benzersiz olmayabileceği için uzun adları 8.3'e kesemez. Her derleyici karşılaştığında *alias_filename* dizesiyle *actual_filename*ve üstbilgi dosyasını arar *actual_filename* yerine. Bu pragma ilgili `#include` yönergelerinden önce görünmelidir. Örneğin:
+**İnclude_alias** pragma yönergesi, kaynak dosyaları tarafından dahil edilen dosya adları için farklı adlara veya yollara sahip dosyaları değiştirmenize izin verir. Örneğin, bazı dosya sistemleri 8,3 FAT dosya sistemi sınırından daha uzun üstbilgi dosya adlarına izin verir. Daha uzun üstbilgi dosya adlarının ilk sekiz karakteri benzersiz olabileceğinden, derleyici artık daha uzun adları 8,3 ' a kesemez. Derleyici bir `#include` yönergede *alias_filename* dizesini her gördüğünde, bunun yerine *actual_filename* adını koyar. Ardından *actual_filename* üst bilgi dosyasını yükler. Bu pragma ilgili `#include` yönergelerinden önce görünmelidir. Örneğin:
 
 ```cpp
 // First eight characters of these two files not unique.
@@ -40,7 +41,7 @@ Belirtir *alias_filename* bulunur bir `#include` derleyici yönergesi değiştir
 #include "GraphicsMenu.h"
 ```
 
-Aranan diğer ad belirtimle büyük/küçük harf kullanımı, yazım ve çift tırnak işareti veya açılı ayraç bakımından tamamen eşleşmelidir. **İnclude_alias** pragma eşleşen dosya adları üzerinde basit dize gerçekleştirir; başka bir dosya adı doğrulama gerçekleştirilir. Örneğin, aşağıdaki yönergeler göz önünde bulundurulduğunda,
+Arama yapılacak diğer ad, belirtile tam olarak eşleşmelidir. Büyük küçük harf, yazım ve çift tırnak işareti ya da açılı ayraç kullanımı tüm eşleşmelidir. **İnclude_alias** pragma, dosya adlarında basit dize eşleştirmesi yapar. Başka bir dosya adı doğrulaması yapılmaz. Örneğin, aşağıdaki yönergeler göz önünde bulundurulduğunda,
 
 ```cpp
 #pragma include_alias("mymath.h", "math.h")
@@ -48,7 +49,7 @@ Aranan diğer ad belirtimle büyük/küçük harf kullanımı, yazım ve çift t
 #include "sys/mymath.h"
 ```
 
-üstbilgi dosya dizeleri tam olarak eşleşmediğinden hiçbir diğer ad (değiştirme) oluşturma işlemi gerçekleştirilmez. Ayrıca, bağımsız değişkenleri olarak kullanılan üstbilgi dosya `/Yu` ve `/Yc` derleyici seçenekleri veya `hdrstop` pragması değiştirilmez. Örneğin, kaynak dosyanız aşağıdaki yönergeyi içeriyorsa,
+üst bilgi dosyası dizeleri tam olarak eşleşmediğinden diğer ad değiştirme yapılmaz. Ayrıca, `/Yu` ve `/Yc`derleyiciseçeneklerinde bağımsız değişken olarak kullanılan üst bilgi dosya adları veya pragma,yerinekullanılmaz.`hdrstop` Örneğin, kaynak dosyanız aşağıdaki yönergeyi içeriyorsa,
 
 ```cpp
 #include <AppleSystemHeaderStop.h>
@@ -56,9 +57,9 @@ Aranan diğer ad belirtimle büyük/küçük harf kullanımı, yazım ve çift t
 
 ilgili derleyici seçeneği şöyle olmalıdır:
 
-> /YcAppleSystemHeaderStop.h
+> **/Ycapptasystemheaderstop.h**
 
-Kullanabileceğiniz **include_alias** diğerine üstbilgi dosya adını eşleştirmek için pragması. Örneğin:
+Herhangi bir üst bilgi dosya adını başka bir şekilde eşlemek için **include_alias** pragma öğesini kullanabilirsiniz. Örneğin:
 
 ```cpp
 #pragma include_alias( "api.h", "c:\version1.0\api.h" )
@@ -67,7 +68,7 @@ Kullanabileceğiniz **include_alias** diğerine üstbilgi dosya adını eşleşt
 #include <stdio.h>
 ```
 
-Çift tırnak işaretlerinin içine alınmış dosya adlarını, açılı ayraçlar içine alınmış dosya adlarıyla karıştırmayın. Örneğin, yukarıdaki iki verilen `#pragma include_alias` yönergeleri, derleyici aşağıdaki hiçbir değişim gerçekleştirir `#include` yönergeleri:
+Açılı ayraçlar içine alınmış dosya adlarıyla çift tırnak işareti içine alınmış dosya adlarını karıştırmayın. Örneğin, yukarıdaki iki `#pragma include_alias` yönergeler verildiğinde, derleyici aşağıdaki `#include` yönergelerden herhangi bir değiştirme yapmaz:
 
 ```cpp
 #include <api.h>
@@ -80,20 +81,20 @@ Ayrıca, aşağıdaki yönerge bir hata oluşturur:
 #pragma include_alias(<header.h>, "header.h")  // Error
 ```
 
-Dosya adında hata iletilerinde veya önceden tanımlanmış değer olarak bildirilen Not `__FILE__` makro gerçekleştirildikten sonra dosyanın adı olan. Örneğin, aşağıdaki yönergelerden sonra çıktıyı görürsünüz:
+Hata iletilerinde bildirilen dosya adı veya önceden tanımlanmış `__FILE__` makronun değeri olarak, değiştirme yapıldıktan sonra dosyanın adı. Örneğin, aşağıdaki yönergelerden sonra çıktıyı inceleyin:
 
 ```cpp
 #pragma include_alias( "VERYLONGFILENAME.H", "myfile.h" )
 #include "VERYLONGFILENAME.H"
 ```
 
-VERYLONGFILENAME bir hata oluştu. H aşağıdaki hata iletisini oluşturur:
+VERYLONGFILENAME içinde bir hata *. H* aşağıdaki hata iletisini üretir:
 
 ```Output
 myfile.h(15) : error C2059 : syntax error
 ```
 
-Ayrıca geçişliliğin desteklenmediğini unutmayın. Aşağıdaki yönergeler göz önünde bulundurulduğunda,
+Ayrıca, geçişlilik desteklenmediğini unutmayın. Aşağıdaki yönergeler göz önünde bulundurulduğunda,
 
 ```cpp
 #pragma include_alias( "one.h", "two.h" )
@@ -101,8 +102,8 @@ Ayrıca geçişliliğin desteklenmediğini unutmayın. Aşağıdaki yönergeler 
 #include "one.h"
 ```
 
-Derleyici dosya three.h yerine için two.h arar.
+Derleyici, *üç. h*yerine *iki. h* dosyasını arar.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+[Pragma yönergeleri ve __pragma anahtar sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

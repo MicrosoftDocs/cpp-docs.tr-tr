@@ -1,6 +1,6 @@
 ---
-title: function (C/C++)
-ms.date: 11/04/2016
+title: işlev pragması
+ms.date: 08/29/2019
 f1_keywords:
 - function_CPP
 - vc-pragma.function
@@ -8,27 +8,26 @@ helpviewer_keywords:
 - function pragma
 - pragmas, function
 ms.assetid: cbd1bd60-fabf-4b5a-9c3d-2d9f4b871365
-ms.openlocfilehash: c57ff2053b3c1fd52474c7eb0dd598641632f789
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f99f3c878789a6c47fdb0d48e0a8690d65fa8062
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62409934"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70220132"
 ---
-# <a name="function-cc"></a>function (C/C++)
-Pragmanın bağımsız değişken listesinde belirtilen işlevlere çağrıları oluşturulacağını belirtir.
+# <a name="function-pragma"></a>işlev pragması
+
+Derleyiciye, pragmanın bağımsız değişken listesinde belirtilen işlevlere çağrı oluşturmasını söyler.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
-#pragma function( function1 [, function2, ...] )
-```
+> **#pragma işlevi (** *işlev1* [ **,** *function2* ...] **)**
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kullanırsanız `intrinsic` pragması (veya /Oi) derleyici iç işlevleri (işlev çağrıları olarak değil, satır içi kod olarak iç işlevleri oluşturulur) bildirmek için kullanabileceğiniz **işlevi** açıkça pragma bir işlev çağrısı. Bir kez bir işlev pragma görüldüğünde, belirtilen bir iç işlevi içeren ilk fonksiyon tanımında etkili olur. Kaynak dosyanın sonuna veya görünümünü etkisi devam bir `intrinsic` aynı iç işlevi belirten pragması. **İşlevi** pragması, yalnızca bir işlev dışında kullanılabilir — genel düzeyde.
+İç işlevler normalde satır içi kod olarak oluşturulur, işlev çağrıları olarak değildir. Derleyiciye iç işlevler oluşturmasını söylemek için [iç pragma](intrinsic.md) veya [/Oi](../build/reference/oi-generate-intrinsic-functions.md) derleyici seçeneğini kullanırsanız, işlev çağrısını açıkça zorlamak için pragma **işlevini** kullanabilirsiniz. Bir **işlev** pragması görüldüğünde, belirtilen bir iç işlevi içeren ilk işlev tanımında geçerli olur. Efekt kaynak dosyanın sonuna veya aynı iç işlevi belirten bir `intrinsic` pragma görünümüne devam eder. Yalnızca pragma **işlevini** bir işlevin dışında, genel düzeyde kullanabilirsiniz.
 
-İç biçimlere sahip işlevlerin bir listesi için bkz. [#pragma iç](../preprocessor/intrinsic.md).
+İç formlara sahip işlevlerin listesi için bkz. [iç pragma](intrinsic.md).
 
 ## <a name="example"></a>Örnek
 
@@ -84,4 +83,4 @@ str is '!!!!!!!!!!!!!!!'
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+[Pragma yönergeleri ve __pragma anahtar sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

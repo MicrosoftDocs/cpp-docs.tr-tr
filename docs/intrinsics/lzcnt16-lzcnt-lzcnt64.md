@@ -1,6 +1,6 @@
 ---
 title: __lzcnt16, __lzcnt, __lzcnt64
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __lzcnt64
 - __lzcnt16
@@ -14,22 +14,22 @@ helpviewer_keywords:
 - lzcnt64 intrinsic
 - __lzcnt64 intrinsic
 ms.assetid: 412113e7-052e-46e5-8bfa-d5ad72abc10e
-ms.openlocfilehash: 333d9f2b23fb90388af8395945256956c9222ab9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fcd801717974a230fbd19cc7802d8f6a011774f7
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62263379"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70221808"
 ---
-# <a name="lzcnt16-lzcnt-lzcnt64"></a>__lzcnt16, __lzcnt, __lzcnt64
+# <a name="__lzcnt16-__lzcnt-__lzcnt64"></a>__lzcnt16, __lzcnt, __lzcnt64
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Sayıları, bir 16, 32 veya 64-bit tamsayı içinde satır sayısını sıfırlar.
+16, 32-veya 64 bit tamsayıların önünde sıfır sayısını sayar.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```C
 unsigned short __lzcnt16(
    unsigned short value
 );
@@ -41,36 +41,36 @@ unsigned __int64 __lzcnt64(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
-*value*<br/>
-[in] 16, 32 veya 64-bit işaretsiz tamsayı sıfırları için taramak üzere.
+*deeri*\
+'ndaki Baştaki sıfırları taramak için 16, 32-veya 64 bitlik işaretsiz tamsayı.
 
-## <a name="return-value"></a>Dönüş Değeri
+## <a name="return-value"></a>Dönüş değeri
 
-Önde gelen sıfır bit sayısını `value` parametresi. Varsa `value` sıfırsa, boyutu (16, 32 veya 64) giriş işlenenin dönüş değeridir. En önemli biti `value` biri, döndürülen değer sıfırdır.
+`value` Parametresindeki baştaki sıfır bit sayısı. `value` Sıfırsa, dönüş değeri giriş işleneninin boyutudur (16, 32 veya 64). En önemli bit `value` bir ise, dönüş değeri sıfırdır.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İç|Mimari|
+|Alanlarla|Mimari|
 |---------------|------------------|
-|`__lzcnt16`|AMD: Gelişmiş Bit işleme (ABM)<br /><br /> Intel: Haswell|
-|`__lzcnt`|AMD: Gelişmiş Bit işleme (ABM)<br /><br /> Intel: Haswell|
-|`__lzcnt64`|AMD: Gelişmiş Bit işleme (ABM) 64 bit modunda.<br /><br /> Intel: Haswell|
+|`__lzcnt16`|AMD Gelişmiş bit Işleme (ABD)<br /><br /> Intel Haswell|
+|`__lzcnt`|AMD Gelişmiş bit Işleme (ABD)<br /><br /> Intel Haswell|
+|`__lzcnt64`|AMD 64 bit modunda gelişmiş bit Işleme (ABD).<br /><br /> Intel Haswell|
 
-**Üst bilgi dosyası** \<intrin.h >
+**Üst bilgi dosyası** \<Intrin. h >
 
 ## <a name="remarks"></a>Açıklamalar
 
-Her biri bu iç oluşturur `lzcnt` yönergesi.  Değer boyutu, `lzcnt` yönerge boyutu bağımsız olarak aynı döndürür.  32 bit modunda 64 bit Hayır 64-bit genel amaçlı yazmaç yok, bu nedenle vardır `lzcnt`.
+Her bir iç yapı, `lzcnt` yönergeyi oluşturur.  `lzcnt` Yönergenin döndürdüğü değerin boyutu bağımsız değişkeninin boyutuyla aynıdır.  32 bit modunda, 64 bit genel amaçlı kayıt yoktur, bu nedenle 64-bit `lzcnt` desteklenmez.
 
-İçin donanım desteği belirlemek için `lzcnt` yönerge çağrı `__cpuid` ile iç `InfoType=0x80000001` ve geçmiş 5 `CPUInfo[2] (ECX)`. Bu bit aksi yönerge destekleniyorsa 1 ve 0 olacaktır. Kullanan kodu bu iç desteği olmayan donanım üzerinde çalıştırdığınız varsa `lzcnt` yönergesi, sonuçların tahmin edilemeyeceğine.
+`lzcnt` Yönergeyle ilgili donanım desteğini öğrenmek için, ile `__cpuid` `InfoType=0x80000001` iç öğesini çağırın ve bit 5 `CPUInfo[2] (ECX)`' i denetleyin. Yönerge destekleniyorsa bu bit 1 olur, aksi takdirde 0 olur. `lzcnt` Yönergeyi desteklemeyen bir donanım kullanan kodu çalıştırırsanız, sonuçlar tahmin edilemez olur.
 
-Desteklemeyen bir Intel işlemci üzerinde `lzcnt` yönerge olarak yürütülür yönerge bayt kodlama `bsr` (tarama ters bit). Kod taşınabilirliği önemliyse kullanımını göz önünde bulundurun `_BitScanReverse` iç yerine. Daha fazla bilgi için [_BitScanReverse, _BitScanReverse64](../intrinsics/bitscanreverse-bitscanreverse64.md).
+`lzcnt` Yönergesini desteklemeyen Intel işlemcilerde, yönerge bayt kodlaması (bit taraması tersine) olarak `bsr` yürütülür. Kod taşınabilirliği sorun oluşturacaksa, bunun yerine `_BitScanReverse` iç kullanımı göz önünde bulundurun. Daha fazla bilgi için bkz. [_Bitscanreverse, _Bitscansmar64](../intrinsics/bitscanreverse-bitscanreverse64.md).
 
 ## <a name="example"></a>Örnek
 
-```
+```cpp
 // Compile this test with: /EHsc
 #include <iostream>
 #include <intrin.h>
@@ -105,10 +105,10 @@ __lzcnt(0xffff) = 16
 __lzcnt(0xffffffff) = 0
 ```
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
-Bu içerik bölümlerini Micro cihazlar, Inc. Gelişmiş telif hakkı 2007 olan Tüm hakları saklıdır. Gelişmiş Micro cihazlar, Inc. izniyle üretilemez
+Bu içeriğin kısımları Advanced Micro Devices, Inc tarafından telif hakkı 2007 ' dir. Tüm hakları saklıdır. Gelişmiş mikro cihazlar, Inc. izniyle yeniden üretilme.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)
+[Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)

@@ -1,38 +1,37 @@
 ---
-title: no_implementation
-ms.date: 11/04/2016
+title: no_implementation içeri aktarma özniteliği
+ms.date: 08/29/2019
 f1_keywords:
 - no_implementation
 helpviewer_keywords:
 - no_implementation attribute
 ms.assetid: bdc67785-e131-409c-87bc-f4d2f4abb07b
-ms.openlocfilehash: 26527ca69c66c73f5d41084dc42df5faa34481d3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8f0a7454fdbedc1959b665ccb2a23748d21c342d
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62409817"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70220774"
 ---
-# <a name="noimplementation"></a>no_implementation
-**C++ özgü**
+# <a name="no_implementation-import-attribute"></a>no_implementation içeri aktarma özniteliği
 
-Kapsayıcı üye işlevleri uygulamalarını içeren .tli başlık oluşturulmasını bastırır.
+**C++Belirli**
+
+Sarmalayıcı üye işlevlerinin uygulamalarını içeren `.tli` üst bilginin oluşturulmasını engeller.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
-no_implementation
-```
+> **#import** *tür kitaplığı* **no_implementation**
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu öznitelik belirtilmezse, .tlh üstbilgiyle türü kitaplık öğelerini göstermek için bildirimleri olmadan oluşturulan bir `#include` deyimini .tli üstbilgi dosyasını dahil edin.
+Bu öznitelik belirtilmişse `.tlh` , tür kitaplığı öğelerini kullanıma sunma bildirimiyle birlikte üst bilgi, `.tli` başlık dosyasını dahil etmek için bir `#include` bildirim olmadan oluşturulur.
 
-Bu öznitelik ile birlikte kullanılan [implementation_only](../preprocessor/implementation-only.md).
+Bu öznitelik, [implementation_only](../preprocessor/implementation-only.md)ile birlikte kullanılır.
 
-**END C++ özgü**
+**SONA C++ özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)<br/>
+[#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)\
 [#import yönergesi](../preprocessor/hash-import-directive-cpp.md)

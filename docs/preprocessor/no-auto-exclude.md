@@ -1,36 +1,35 @@
 ---
-title: no_auto_exclude
-ms.date: 11/04/2016
+title: no_auto_exclude içeri aktarma özniteliği
+ms.date: 08/29/2019
 f1_keywords:
 - no_auto_exclude
 helpviewer_keywords:
 - no_auto_exclude attribute
 ms.assetid: 3241ef9c-758a-4e86-bdc5-37da6072430f
-ms.openlocfilehash: 06bde7535bd181057750ab9dd4c3999321b4990c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 530c2b2adf24e964cb0a512371f4430a61bf8b11
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62371704"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70216084"
 ---
-# <a name="noautoexclude"></a>no_auto_exclude
-**C++ özgü**
+# <a name="no_auto_exclude-import-attribute"></a>no_auto_exclude içeri aktarma özniteliği
 
-Otomatik dışlama devre dışı bırakır.
+**C++Belirli**
+
+Otomatik dışlamayı devre dışı bırakır.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
-no_auto_exclude
-```
+> **#import** *tür kitaplığı* **no_auto_exclude**
 
 ## <a name="remarks"></a>Açıklamalar
 
-Tür kitaplıkları, sistem üstbilgileri veya diğer tür kitaplıklarında tanımlanan öğelerin tanımlarını içerebilir. `#import` otomatik olarak gibi öğeler hariç tutarak birden çok tanım hatalarını önlemek çalışır. Bu yapıldığında, [Derleyici Uyarısı (Düzey 3) C4192](../error-messages/compiler-warnings/compiler-warning-level-3-c4192.md) çıkarılacak her öğe için verilir. Bu özniteliği kullanarak bu otomatik dışlama devre dışı bırakabilirsiniz.
+Tür kitaplıkları, sistem üstbilgileri veya diğer tür kitaplıklarında tanımlanan öğelerin tanımlarını içerebilir. `#import`Bu tür öğeleri otomatik olarak dışlayarak birden çok tanım hatasını önlemenize çalışır. Bu, [Derleyici Uyarısı (düzey 3) C4192](../error-messages/compiler-warnings/compiler-warning-level-3-c4192.md) 'in hariç tutulacak her öğe için verilmesine neden olur. Bu özniteliği kullanarak otomatik dışlamayı devre dışı bırakabilirsiniz.
 
-**END C++ özgü**
+**SONA C++ özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)<br/>
+[#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)\
 [#import yönergesi](../preprocessor/hash-import-directive-cpp.md)

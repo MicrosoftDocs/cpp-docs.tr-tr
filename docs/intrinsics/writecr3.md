@@ -1,51 +1,51 @@
 ---
 title: __writecr3
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - _writecr3
 helpviewer_keywords:
 - _writecr3 intrinsic
 ms.assetid: 959d49fa-69d5-47cf-88d2-7688367fe38f
-ms.openlocfilehash: 88467e4fb39abc9526e47a73f998d630470111a9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f2472a21fe42f10dbf0918480ef02f7e48109747
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62389937"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70219283"
 ---
-# <a name="writecr3"></a>__writecr3
+# <a name="__writecr3"></a>__writecr3
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Değeri Yazar `Data` CR3 kaydı.
+Değeri `Data` CR3 kaydına yazar.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```C
 void writecr3(
    unsigned __int64 Data
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
-*Veri*<br/>
-[in] CR3 kasaya yazılacak değer.
+*Verileri*\
+'ndaki CR3 kaydına yazılacak değer.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İç|Mimari|
+|Alanlarla|Mimari|
 |---------------|------------------|
 |`__writecr3`|x86, x64|
 
-**Üst bilgi dosyası** \<intrin.h >
+**Üst bilgi dosyası** \<Intrin. h >
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu iç yalnızca çekirdek modunda kullanılabilir ve yordam yalnızca bir iç öğe olarak kullanılabilir.
+Bu iç öğe yalnızca çekirdek modunda kullanılabilir ve yordam yalnızca iç öğe olarak kullanılabilir.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)
+[Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)

@@ -1,27 +1,27 @@
 ---
 title: _umul128
-ms.date: 11/04/2016
+ms.date: 09/02/2019
 f1_keywords:
 - __umul128
 helpviewer_keywords:
 - __umul128 intrinsic
 ms.assetid: 13684df3-3ac7-467c-b258-a0e93bc490b5
-ms.openlocfilehash: afca1e62127ac2dbcfc407982dbe191d379b4acb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 205f0f7f9046ede624bb09e18d8ede32fadbc3de
+ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62390106"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70219699"
 ---
-# <a name="umul128"></a>_umul128
+# <a name="_umul128"></a>_umul128
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-İlk iki bağımsız değişken olarak geçirilen iki 64-bit işaretsiz tam sayı ile çarpar ve ürünün yüksek 64 bit işaret ettiği 64-bit işaretsiz tamsayı koyar `HighProduct` ve ürünün düşük 64 bit döndürür.
+İlk iki bağımsız değişken olarak geçirilen 2 64 bitlik işaretsiz tamsayıları çarpar ve ürünün yüksek 64 bitini tarafından `HighProduct` işaret edilen 64-bit işaretsiz tamsayıya koyar ve ürünün düşük 64 bitlerini döndürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```C
 unsigned __int64 _umul128(
    unsigned __int64 Multiplier,
    unsigned __int64 Multiplicand,
@@ -29,30 +29,30 @@ unsigned __int64 _umul128(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
-*Çarpanı*<br/>
-[in] Çarpılacak ilk 64-bit tamsayı.
+*Çarpanını*\
+'ndaki Çarpılacak ilk 64 bitlik tamsayı.
 
-*Çarpan*<br/>
-[in] Çarpılacak ikinci 64-bit tamsayı.
+*Çoğullıve*\
+'ndaki Çarpılacak ikinci 64 bitlik tamsayı.
 
-*HighProduct*<br/>
-[out] Ürünün yüksek 64 bit.
+*HighProduct*\
+dışı Ürünün yüksek 64 bitleri.
 
-## <a name="return-value"></a>Dönüş Değeri
+## <a name="return-value"></a>Dönüş değeri
 
-Ürünün düşük 64 bit.
+Ürünün düşük 64 biti.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İç|Mimari|Üstbilgi|
+|Alanlarla|Mimari|Üstbilgi|
 |---------------|------------------|------------|
-|`_umul128`|X64|\<intrin.h >|
+|`_umul128`|X64|\<Intrin. h >|
 
 ## <a name="example"></a>Örnek
 
-```
+```C
 // umul128.c
 // processor: x64
 
@@ -77,8 +77,8 @@ int main()
 0xfffffffffffffff * 0xf0000000 = 0xeffffffffffffff10000000
 ```
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)
+[Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)
