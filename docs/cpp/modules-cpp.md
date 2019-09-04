@@ -1,26 +1,26 @@
 ---
-title: İçindeki modüllere genel bakışC++
+title: C++ içindeki modüllere genel bakış
 ms.date: 07/23/2019
 helpviewer_keywords:
 - modules [C++]
 - modules [C++], overview
 description: C++ 20 ' deki modüller üst bilgi dosyalarına modern bir alternatif sağlar.
-ms.openlocfilehash: 84683d9c4b0e1a514b17883b89c58488b9879edb
-ms.sourcegitcommit: 7b039b5f32f6c59be6c6bb1cffafd69c3bfadd35
+ms.openlocfilehash: 17495aa3e295b26fcfa5c489ff6793bb75d13d68
+ms.sourcegitcommit: fd0f8839da5c6a3663798a47c6b0bb6e63b518bd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68537772"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70273680"
 ---
-# <a name="overview-of-modules-in-c"></a>İçindeki modüllere genel bakışC++
+# <a name="overview-of-modules-in-c"></a>C++ içindeki modüllere genel bakış
 
-C++ 20, kitaplıkları ve programları çözüme yönelik modern bir çözüm olan C++ modülleri tanıtır. Modül, içeri aktarılan [çeviri birimlerinden](https://wikipedia.org/wiki/Translation_unit_(programming)) bağımsız olarak derlenen bir kaynak kod dosyaları kümesidir. Modüller, üst bilgi dosyaları kullanımıyla ilişkili birçok sorunu ortadan kaldırır veya büyük ölçüde azaltır, ayrıca derleme sürelerini de azaltabilir. Bir modülde belirtilen makrolar, Önişlemci yönergeleri ve dışa aktarılmamış adlar görünür değildir ve bu nedenle modülü içeri aktaran çeviri biriminin derlenmesi üzerinde hiçbir etkisi yoktur. Herhangi bir sırada, makro yeniden tanımlarına yönelik bir sorun olmadan modülleri içeri aktarabilirsiniz. İçeri aktarma çeviri birimindeki bildirimler, içeri aktarılan modülde aşırı yükleme çözümüne veya ad aramasına katılmaz. Bir modül bir kez derlendikten sonra sonuçlar, tüm aktarılmış türleri, işlevleri ve şablonları açıklayan bir ikili dosyada depolanır. Bu dosya bir üstbilgi dosyasından çok daha hızlı işlenebilir ve derleyici bir projeye içeri aktarılırken her yerde derleyici tarafından yeniden kullanılabilir.
+C++ 20,kitaplıkları ve programları çözüme yönelik modern bir çözüm olan C++ modülleri tanıtır. Modül, içeri aktarılan [çeviri birimlerinden](https://wikipedia.org/wiki/Translation_unit_(programming)) bağımsız olarak derlenen bir kaynak kod dosyaları kümesidir. Modüller, üst bilgi dosyaları kullanımıyla ilişkili birçok sorunu ortadan kaldırır veya büyük ölçüde azaltır, ayrıca derleme sürelerini de azaltabilir. Bir modülde belirtilen makrolar, Önişlemci yönergeleri ve dışa aktarılmamış adlar görünür değildir ve bu nedenle modülü içeri aktaran çeviri biriminin derlenmesi üzerinde hiçbir etkisi yoktur. Herhangi bir sırada, makro yeniden tanımlarına yönelik bir sorun olmadan modülleri içeri aktarabilirsiniz. İçeri aktarma çeviri birimindeki bildirimler, içeri aktarılan modülde aşırı yükleme çözümüne veya ad aramasına katılmaz. Bir modül bir kez derlendikten sonra sonuçlar, tüm aktarılmış türleri, işlevleri ve şablonları açıklayan bir ikili dosyada depolanır. Bu dosya bir üstbilgi dosyasından çok daha hızlı işlenebilir ve derleyici bir projeye içeri aktarılırken her yerde derleyici tarafından yeniden kullanılabilir.
 
 Modüller, üst bilgi dosyaları ile yan yana kullanılabilir. C++ Kaynak dosya, modülleri içeri aktarabilir ve ayrıca üstbilgi dosyalarını #include. Bazı durumlarda, bir üst bilgi dosyası Önişlemci tarafından metin içeriğini eklemek #included yerine bir modül olarak içeri aktarılabilir. Yeni projelerin, üst bilgi dosyaları yerine modüller kullanmasını mümkün olduğunca çok tercih ederiz. Etkin geliştirme kapsamındaki daha büyük mevcut projeler için, derleme saatlerinde anlamlı bir azaltma elde edilip edilmeyeceğini görmek üzere eski üst bilgileri modüllere dönüştürmeyi öneririz.
 
 ## <a name="enable-modules-in-the-microsoft-c-compiler"></a>Microsoft C++ derleyicisinde modülleri etkinleştirme
 
-Visual Studio 2019 sürüm 16,2 itibariyle, modüller Microsoft C++ derleyicisinde tam olarak uygulanmamıştır. Modüller özelliğini kullanarak tek bölümlü modüller oluşturabilir ve Microsoft tarafından sunulan standart kitaplık modüllerini içeri aktarabilirsiniz. Modül desteğini etkinleştirmek için ve `/experimental:modules` `/std:c++latest`ile derleyin. Visual Studio projesinde **Çözüm Gezgini** ' de proje düğümüne sağ tıklayın ve **Özellikler**' i seçin. **Yapılandırma** açılan öğesini **tüm yapılandırmalar**olarak ayarlayın, ardından **yapılandırma özellikleri** >  > **C/C++** **dil** > **Etkinleştir C++ modüller ' i seçin ( deneysel)** .
+Visual Studio 2019 sürüm 16,2 itibariyle, modüller Microsoft C++ derleyicisinde tam olarak uygulanmamıştır. Modüller özelliğini kullanarak tek bölümlü modüller oluşturabilir ve Microsoft tarafından sunulan standart kitaplık modüllerini içeri aktarabilirsiniz. Modüller desteğini etkinleştirmek için [/deneysel: Module](../build/reference/experimental-module.md) ve [/std: c + + en son](../build/reference/std-specify-language-standard-version.md)ile derleyin. Visual Studio projesinde **Çözüm Gezgini** ' de proje düğümüne sağ tıklayın ve **Özellikler**' i seçin. **Yapılandırma** açılan öğesini **tüm yapılandırmalar**olarak ayarlayın, ardından **yapılandırma özellikleri** >  > **C/C++** **dil** > **Etkinleştir C++ modüller ' i seçin ( deneysel)** .
 
 Bir modül ve onu tüketen kod aynı derleyici seçenekleriyle derlenmelidir.
 

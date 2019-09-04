@@ -1,6 +1,6 @@
 ---
 title: CAsyncSocket sınıfı
-ms.date: 11/04/2016
+ms.date: 09/03/2019
 f1_keywords:
 - CAsyncSocket
 - AFXSOCK/CAsyncSocket
@@ -74,12 +74,12 @@ helpviewer_keywords:
 - CAsyncSocket [MFC], OnSend
 - CAsyncSocket [MFC], m_hSocket
 ms.assetid: cca4d5a1-aa0f-48bd-843e-ef0e2d7fc00b
-ms.openlocfilehash: ef938796faf8e9b9272a519ed1e51037edc90425
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 4e14052d400268a8852298113ba9b51fda713dc8
+ms.sourcegitcommit: fd0f8839da5c6a3663798a47c6b0bb6e63b518bd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69507522"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70273798"
 ---
 # <a name="casyncsocket-class"></a>CAsyncSocket sınıfı
 
@@ -337,7 +337,7 @@ Bayt cinsinden *lpSockAddr* içindeki adresin uzunluğu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarılı olursa sıfır dışı; Aksi takdirde 0 ve belirli bir hata kodu, [GetLastError](#getlasterror)çağırarak alınabilir. Bu üye işlevi için aşağıdaki hatalar geçerlidir:
+İşlev başarılı olursa sıfır dışı; Aksi takdirde 0 ve belirli bir hata kodu, [GetLastError](#getlasterror)çağırarak alınabilir. Aşağıdaki listede, döndürülebilecek hatalardan bazıları yer almaktadır. Tüm liste için bkz. [Windows Sockets hata kodları](/windows/win32/winsock/windows-sockets-error-codes-2).
 
 - WSANOTıNITIAL, bu API kullanılmadan önce başarılı bir [AfxSocketInit](../../mfc/reference/application-information-and-management.md#afxsocketinit) gerçekleşmelidir.
 
@@ -874,7 +874,7 @@ Yuvada gerçekleştirilecek komut.
 
 Bu yordam herhangi bir durumda herhangi bir yuvada kullanılabilir. Protokol ve iletişim alt sisteminden bağımsız olarak, soket ile ilişkili işletim parametrelerini almak veya almak için kullanılır. Aşağıdaki komutlar desteklenir:
 
-- FIONBIO yuva üzerinde engelleyici olmayan modu etkinleştirir veya devre dışı bırakır. *LpArgument* parametresi, blok olmayan mod `DWORD`etkinleştirilse sıfır olmayan bir değer ve devre dışı bırakılabileceği sıfır olduğunda işaret eder. Bir yuvada verildiyse, yeniden engelleme moduna geçmek `IOCtl` için herhangi bir deneme WSAEINVAL ile başarısız olur. `AsyncSelect` Yuvayı engelleme moduna geri ayarlamak ve WSAEINVAL hatasını engellemek için, bir uygulamanın ilk önce devre dışı bırakılması `AsyncSelect` `IOCtl` `AsyncSelect` gerekir ve sonra bir uygulama, 0 ' a eşit ve ardından çağırır.
+- FIONBIO yuva üzerinde engelleyici olmayan modu etkinleştirir veya devre dışı bırakır. *LpArgument* parametresi, blok olmayan mod `DWORD`etkinleştirilse sıfır olmayan bir değer ve devre dışı bırakılabileceği sıfır olduğunda işaret eder. Bir yuvada verildiyse, yeniden engelleme moduna geçmek `IOCtl` için herhangi bir deneme WSAEINVAL ile başarısız olur. `AsyncSelect` Yuvayı engelleme moduna geri ayarlamak ve WSAEINVAL hatasını engellemek için, bir uygulamanın ilk önce devre `AsyncSelect` dışı bırakılması `AsyncSelect` gerekir ve sonra bir uygulama, 0 ' a *eşit ve ardından* çağırır `IOCtl`.
 
 - Fionread, bu yuvadan bir `Receive` çağrıyla okunabilecek en fazla bayt sayısını tespit edebilir. *LpArgument* parametresi, sonucu `IOCtl` depolayan bir `DWORD` içinde işaret eder. Bu yuva sock_stream türünde ise, fionread tek tek `Receive`içinde okunabilecek toplam veri miktarını döndürür; bu, normalde yuvada sıraya alınan toplam veri miktarıyla aynıdır. Bu yuva SOCK_DGRAM türünde ise FIONREAD, yuvada sıraya alınan ilk veri biriminin boyutunu döndürür.
 
@@ -1397,7 +1397,7 @@ virtual int Send(
 Aktarılacak verileri içeren bir arabellek.
 
 *nBufLen*<br/>
-Bayt cinsinden verilerin Lpbytes cinsinden uzunluğu.
+Bayt cinsinden verilerin *lpbytes* cinsinden uzunluğu.
 
 *nFlags*<br/>
 Çağrının yapılma yöntemini belirtir. Bu işlevin semantiği, yuva seçenekleri ve *nFlags* parametresi tarafından belirlenir. İkincisi, C++ **veya** işleciyle aşağıdaki değerlerden herhangi birini birleştirerek oluşturulur:
@@ -1480,7 +1480,7 @@ int SendTo(
 Aktarılacak verileri içeren bir arabellek.
 
 *nBufLen*<br/>
-Bayt cinsinden verilerin Lpbytes cinsinden uzunluğu.
+Bayt cinsinden verilerin *lpbytes* cinsinden uzunluğu.
 
 *nHostPort*<br/>
 Yuva uygulamasını tanımlayan bağlantı noktası.
@@ -1576,7 +1576,7 @@ int SendToEx(
 Aktarılacak verileri içeren bir arabellek.
 
 *nBufLen*<br/>
-Bayt cinsinden verilerin Lpbytes cinsinden uzunluğu.
+Bayt cinsinden verilerin *lpbytes* cinsinden uzunluğu.
 
 *nHostPort*<br/>
 Yuva uygulamasını tanımlayan bağlantı noktası.

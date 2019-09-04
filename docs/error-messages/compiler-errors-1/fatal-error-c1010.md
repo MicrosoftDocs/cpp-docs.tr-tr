@@ -1,34 +1,52 @@
 ---
 title: Önemli hata C1010
-ms.date: 08/19/2019
+ms.date: 09/03/2019
 f1_keywords:
 - C1010
 helpviewer_keywords:
 - C1010
 ms.assetid: dfd035f1-a7a2-40bc-bc92-dc4d7f456767
-ms.openlocfilehash: 35b0f60f7eb3be887598e7ffaf3e3eae74aefcff
-ms.sourcegitcommit: 9d4ffb8e6e0d70520a1e1a77805785878d445b8a
+ms.openlocfilehash: 0315af63e9fdbbb0b136a85a23cb28936dee6836
+ms.sourcegitcommit: fd0f8839da5c6a3663798a47c6b0bb6e63b518bd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69630795"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70273559"
 ---
 # <a name="fatal-error-c1010"></a>Önemli hata C1010
 
-önceden derlenmiş üst bilgi aranırken beklenmeyen dosya sonu. Kaynağınıza ' #include Name ' eklemeyi mi unuttunuz?
+> önceden derlenmiş üst bilgi aranırken beklenmeyen dosya sonu. Kaynağınıza ' #include *Name*' eklemeyi mi unuttunuz?
 
-[/Yu](../../build/reference/yu-use-precompiled-header-file.md) ile belirtilen bir içerme dosyası kaynak dosyasında listelenmiyor.  Bu seçenek, çoğu Visual Studio C++ proje türlerinde varsayılan olarak etkindir ve *pch. h* (Visual Studio 2017 ve önceki sürümlerde*stdadfx. h* ), bu seçenekle belirtilen varsayılan içerme dosyasıdır.
+## <a name="remarks"></a>Açıklamalar
+
+[/Yu](../../build/reference/yu-use-precompiled-header-file.md) tarafından belirtilen bir içerme dosyası kaynak dosyada listelenmez. Birçok Visual Studio C++ proje türünde bu seçenek varsayılan olarak etkindir. Bu seçenekle belirtilen varsayılan içerme dosyası, Visual Studio 2017 ve önceki sürümlerde *pch. h*veya *stdadfx. h* ' dir.
 
 Visual Studio ortamında, bu hatayı çözmek için aşağıdaki yöntemlerden birini kullanın:
 
-- Projenizde önceden derlenmiş üstbilgiler kullanmıyorsanız, kaynak dosyaların önceden derlenmiş üst **bilgi oluştur/kullan** özelliğini **önceden derlenmiş üst bilgileri kullanmadan**ayarlayın. Bu derleyici seçeneğini ayarlamak için şu adımları izleyin:
+- Yanlışlıkla, *pch. h* üstbilgi dosyasını veya *pch. cpp* kaynak dosyasını geçerli projeden sildiğinizden, yeniden adlandırmadığınızdan veya kaldırdığınızdan emin olun. (Eski projelerde bu dosyalar *stbafx. h* ve *stdadfx. cpp*olarak adlandırılabilir.)
 
-   1. Projenin Çözüm Gezgini bölmesinde, proje adına sağ tıklayın ve ardından **Özellikler**' e tıklayın.
+- Kaynak dosyalarınızda diğer kod veya Önişlemci yönergelerinden önce *pch. h* veya *stdadfx. h* üstbilgi dosyasının eklendiğinden emin olun. (Visual Studio 'da Bu üstbilgi dosyası, **ön derlenmiş üstbilgi dosyası** proje özelliği tarafından belirtilir.)
 
-   1. Sol bölmede **C/C++**  klasörüne tıklayın.
+- Ön derlenmiş üstbilgi kullanımını devre dışı bırakabilirsiniz. Önceden derlenmiş üstbilgileri kapatırsanız, derleme performansını ciddi bir şekilde etkileyebilir.
 
-   1. **Ön derlenmiş üstbilgiler** düğümüne tıklayın.
+### <a name="to-turn-off-precompiled-headers"></a>Önceden derlenmiş üstbilgileri devre dışı bırakmak için
 
-   1. Sağ bölmede, **önceden derlenmiş üst bilgi oluştur/kullan**' a tıklayın ve ardından **önceden derlenmiş üst bilgileri**kullanmayan ' e tıklayın.
+Bir projede önceden derlenmiş üst bilgi kullanımını devre dışı bırakmak için şu adımları izleyin:
 
-- (Varsayılan olarak, stdadfx. h) üst bilgi dosyasını güncel projeden yanlışlıkla sildiğinizden, yeniden adlandırdığınızdan veya çıkardığınızdan emin olun. Ayrıca, bu dosyanın **"stbafx. h" #include**kullanarak kaynak dosyalarınızda diğer koddan önce bulunması gerekir. (Bu üstbilgi dosyası dosya projesi özelliği **aracılığıyla PCH oluştur/kullan** olarak belirtilir)
+1. **Çözüm Gezgini** penceresinde, proje adına sağ tıklayın ve ardından **Özellikler** ' i seçerek Proje **Özellik sayfaları** iletişim kutusunu açın.
+
+1. **Yapılandırma** açılır penceresinde **tüm yapılandırmalar**' ı seçin.
+
+1. **Yapılandırma özellikleri** > **C/C++** ön > **derlenmiş üstbilgiler** özellik sayfasını seçin.
+
+1. Özellik listesinde, **önceden derlenmiş üst bilgi** özelliği için açılan listeyi seçin ve ardından **önceden derlenmiş üst bilgileri kullanmayın**' ı seçin. Değişikliklerinizi kaydetmek için **Tamam ' ı** seçin.
+
+1. **Çözüm Gezgini** penceresinde, projenizdeki *pch. cpp* kaynak dosyasına sağ tıklayın. (Eski projelerde, dosya *stbafx. cpp*olarak adlandırılmış olabilir.) Derlemeden kaldırmak için **projeden hariç tut** ' ı seçin.
+
+1. Oluşturduğunuz her yapılandırma için **Yapı** > **Temizleme çözümü** menü komutunu kullanın, ara derleme dizinlerinizde *Project_Name. pch* dosyalarını silebilirsiniz.
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Ön derlenmiş üstbilgi dosyaları](../../build/creating-precompiled-header-files.md)\
+[/Yıc (ön derlenmiş üstbilgi dosyası oluştur)](../../build/reference/yc-create-precompiled-header-file.md)\
+[/Yu (önceden derlenmiş üst bilgi dosyasını kullan)](../../build/reference/yu-use-precompiled-header-file.md)

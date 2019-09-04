@@ -143,12 +143,12 @@ helpviewer_keywords:
 - _WINRT_DLL macro
 - __func__ identifier
 ms.assetid: 1cc5f70a-a225-469c-aed0-fe766238e23f
-ms.openlocfilehash: ab478cd8ac51b5cb88cec38f80541df8a7be2789
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 15b70b0292f671d99b320c8d23598e68b47adb0d
+ms.sourcegitcommit: fd0f8839da5c6a3663798a47c6b0bb6e63b518bd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70222288"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70273814"
 ---
 # <a name="predefined-macros"></a>Önceden tanımlanmış makrolar
 
@@ -160,7 +160,7 @@ MSVC, ANSI/ISO C99 Standard ve ISO C++ 14 ve C++ 17 standartları için gereken 
 
 Derleyici ISO C99 ve ISO C++ 11 tarafından belirtilen önceden tanımlanmış tanımlayıcıyı destekler.
 
-- **&#95; Func &#95; &#95;** İşlevin yerel **statik sabit** dizisi olarak, kapsayan işlevin nitelenmemiş ve donatımış adı.
+- **&#95; Func &#95; &#95;** İşlevin yerel **statik sabit** dizisi **olarak, kapsayan**işlevin nitelenmemiş ve donatımış adı.
 
     ```cpp
     void example(){
@@ -330,13 +330,13 @@ MSVC bu önceden tanımlanmış ek makroları destekler.
 
 - **M&#95;Cee&#95;güvenli &#95;** Visual Studio 2015 ' de kullanım dışı bırakıldı. [/Clr: Safe](../build/reference/clr-common-language-runtime-compilation.md) derleyici seçeneği ayarlandıysa, 001 olarak tanımlanır. Aksi takdirde, tanımsız.
 
-- **&#95;&#95;/FP: except veya/FP: Strict derleyici seçeneği ayarlandıysa, 1 olarak&#95;** tanımlanır. [](../build/reference/fp-specify-floating-point-behavior.md) [](../build/reference/fp-specify-floating-point-behavior.md) Aksi takdirde, tanımsız.
+- **&#95;&#95;/FP: except veya/FP: Strict derleyici seçeneği ayarlandıysa, 1 olarak&#95;tanımlanır.** [](../build/reference/fp-specify-floating-point-behavior.md) [](../build/reference/fp-specify-floating-point-behavior.md) Aksi takdirde, tanımsız.
 
 - **&#95;/FP&#95;: Fast derleyici seçeneği ayarlandıysa, 1 olarak hızlı bir şekilde tanımlanır.&#95;** [](../build/reference/fp-specify-floating-point-behavior.md) Aksi takdirde, tanımsız.
 
 - **&#95;&#95;&#95;** [/FP: kesin](../build/reference/fp-specify-floating-point-behavior.md) derleyici seçeneği ayarlandıysa, 5 FP kesin olarak 1 olarak tanımlanır. Aksi takdirde, tanımsız.
 
-- **&#95;5&#95;FP: Strict derleyici seçeneği ayarlandıysa, 1 olarak&#95;** tanımlanır. [](../build/reference/fp-specify-floating-point-behavior.md) Aksi takdirde, tanımsız.
+- **&#95;5&#95;FP: Strict derleyici seçeneği ayarlandıysa, 1 olarak&#95;tanımlanır.** [](../build/reference/fp-specify-floating-point-behavior.md) Aksi takdirde, tanımsız.
 
 - **&#95;A&#95;IX86** X86 işlemcileri hedefleyen derlemeler için 600 tamsayı sabit değeri olarak tanımlanır. Bu makro x64 veya ARM derleme hedefleri için tanımlı değil.
 
@@ -402,6 +402,16 @@ MSVC bu önceden tanımlanmış ek makroları destekler.
 - **&#95;Derleyicinin&#95;** hedeflediği C++ dil standardını belirten BIR tamsayı sabiti olarak tanımlanan MSVC lang. Yalnızca olarak C++derlenen kodda ayarlanır. Makro varsayılan olarak 201402L tamsayı sabit değeridir veya [/std: c++ 14](../build/reference/std-specify-language-standard-version.md) derleyici seçeneği belirtildiğinde. [/Std: c++ 17](../build/reference/std-specify-language-standard-version.md) derleyici seçeneği belirtilmişse, makro 201703L olarak ayarlanır. [/Std: c + + latest](../build/reference/std-specify-language-standard-version.md) seçeneği belirtildiğinde, daha yüksek, belirtilmeyen bir değere ayarlanır. Aksi takdirde, makro tanımsız olur. **&#95;MSVC&#95;lang** makrosu ve [/std (dil standardı sürümü belirt)](../build/reference/std-specify-language-standard-version.md) derleyici seçenekleri Visual Studio 2015 güncelleştirme 3 ' ten başlayarak kullanılabilir.
 
 - **&#95;&#95;MSVC&#95;çalışma&#95;zamanı denetimleri** , [/RTC](../build/reference/rtc-run-time-error-checks.md) derleyici seçeneklerinden biri ayarlandığında 1 olarak tanımlanır. Aksi takdirde, tanımsız.
+
+- **&#95;Önişlemci&#95;** uyumluluk modu [/deneysel: ÖNIŞLEMCI](../build/reference/rtc-run-time-error-checks.md) derleyici seçeneği ayarlandığında MSVC geleneksel olarak 0 olarak tanımlanır. Geleneksel Önişlemci 'nin kullanımda olduğunu belirtmek için varsayılan olarak 1 veya [/deneysel: Önişlemci-](../build/reference/rtc-run-time-error-checks.md) derleyici seçeneği ayarlandığında tanımlanmıştır. **&#95;MSVC&#95;geleneksel** makrosu ve [/deneysel: Önişlemci (Önişlemci uyumluluk modunu etkinleştir)](../build/reference/experimental-preprocessor.md) derleyici seçeneği Visual Studio 2017 sürüm 15,8 ' den başlayarak kullanılabilir.
+
+   ```cpp
+   #if defined(_MSVC_TRADITIONAL) && _MSVC_TRADITIONAL
+   // Logic using the traditional preprocessor
+   #else
+   // Logic using cross-platform compatible preprocessor
+   #endif
+   ```
 
 - **&#95;MT** [/Md veya/MDd](../build/reference/md-mt-ld-use-run-time-library.md) (çok Iş parçacıklı DLL) veya [/MT ya da/MTD](../build/reference/md-mt-ld-use-run-time-library.md) (çok iş parçacıklı) belirtildiğinde 1 olarak tanımlanır. Aksi takdirde, tanımsız.
 

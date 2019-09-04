@@ -1,5 +1,5 @@
 ---
-title: Modül, içeri aktarma, dışarı aktarma
+title: modül, içeri aktarma, dışarı aktarma
 ms.date: 07/15/2019
 f1_keywords:
 - module_cpp
@@ -10,16 +10,16 @@ helpviewer_keywords:
 - modules [C++], import
 - modules [C++], export
 description: Belirtilen modülde tanımlanan türlere ve işlevlere erişmek için import ifadesini kullanın.
-ms.openlocfilehash: fbb9c45ec816c859edb4df38ad67dc7778247e87
-ms.sourcegitcommit: 7b039b5f32f6c59be6c6bb1cffafd69c3bfadd35
+ms.openlocfilehash: ee1d50a76a3304359c0771aa0174968439f5faa4
+ms.sourcegitcommit: fd0f8839da5c6a3663798a47c6b0bb6e63b518bd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68537766"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70273619"
 ---
-# <a name="module-import-export"></a>Modül, içeri aktarma, dışarı aktarma
+# <a name="module-import-export"></a>modül, içeri aktarma, dışarı aktarma
 
-**Modül**, **içeri aktar**ve **dışarı aktar** anahtar sözcükleri `/experimental:modules` c++ 20 ' de mevcuttur ve ile `/std:c++latest`birlikte derleyici anahtarını gerektirir. Daha fazla bilgi için bkz. [içindeki C++modüllere genel bakış ](modules-cpp.md).
+**Modül**, **içeri aktar**ve **dışarı aktar** anahtar sözcükleri c++ 20 ' de kullanılabilir ve [/std: C + + latest](../build/reference/std-specify-language-standard-version.md)ile birlikte [/deneysel: Module](../build/reference/experimental-module.md) derleyici anahtarını gerektirir. Daha fazla bilgi için bkz. [içindeki C++modüllere genel bakış ](modules-cpp.md).
 
 ## <a name="module"></a>modül
 
@@ -87,4 +87,5 @@ class Baz
 ```
 
 ## <a name="see-also"></a>Ayrıca Bkz.
+
 [İçindeki modüllere genel bakışC++](modules-cpp.md)

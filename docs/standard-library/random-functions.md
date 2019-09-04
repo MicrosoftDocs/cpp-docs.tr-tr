@@ -1,26 +1,23 @@
 ---
-title: '&lt;rastgele&gt; işlevleri'
-ms.date: 11/04/2016
+title: '&lt;Rastgele&gt; işlevler'
+ms.date: 09/04/2019
 f1_keywords:
 - random/std::generate_canonical
 ms.assetid: 2ac9ec59-619b-4b85-a425-f729277c1bc8
 helpviewer_keywords:
 - std::generate_canonical
-ms.openlocfilehash: 87b640d4f3aa3fbfa23ad5603d84102301e71ea4
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 3d94f607fc6b7bdf22d7f573f590b451dbaa718d
+ms.sourcegitcommit: fd0f8839da5c6a3663798a47c6b0bb6e63b518bd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68240382"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70273832"
 ---
-# <a name="ltrandomgt-functions"></a>&lt;rastgele&gt; işlevleri
+# <a name="ltrandomgt-functions"></a>&lt;Rastgele&gt; işlevler
 
-## <a name="generate_canonical"></a> generate_canonical
+## <a name="generate_canonical"></a>generate_canonical
 
-Rastgele bir diziden bir kayan nokta değeri döndürür.
-
-> [!NOTE]
-> ISO C++ standart, bu işlev aralığında değerlerini döndürmesi gereken durumları [ `0`, `1`). Visual Studio henüz Bu kısıtlamayla uyumlu değil. Bu aralıkta değerler oluşturmak için geçici bir çözüm olarak, [uniform_real_distribution](../standard-library/uniform-real-distribution-class.md).
+Rastgele bir dizideki kayan nokta değeri döndürür.
 
 ```cpp
 template <class RealType, size_t Bits, class Generator>
@@ -30,14 +27,17 @@ RealType generate_canonical(Generator& Gen);
 ### <a name="parameters"></a>Parametreler
 
 *RealType*\
-Kayan nokta integral türü. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
+Kayan nokta integral türü. Olası türler için bkz [ \<. Random >](../standard-library/random.md).
 
-*BITS*\
-Rasgele sayı üreteci.
+*Bitlik*\
+Kullanılacak rasgelelik bit sayısı.
 
-*Genel*\
-Rasgele sayı üreteci.
+*Generator*\
+Rastgele bir sayı Oluşturucu sınıfı.
+
+*Alanına*\
+Tür *oluşturucusunun*rastgele sayı oluşturucusunun bir örneğine başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablonu işlev çağrıları `operator()` , *Gen* sürekli ve döndürülen değerlerin bir kayan nokta değerine paketleri `x` türü *RealType* belirtilen sayı topladı kadar içinde Mantis bit `x`. Belirtilen sayı olan daha küçük olan *BITS* (olması gereken sıfır olmayan) ve tam Mantis bit sayısı *RealType*. İlk çağrı, en düşük sıralı BITS sağlar. İşlev döndürür `x`.
+Şablon işlevi `operator()` *, arka arkaya* ve döndürülen değerleri, içinde `x` `x`belirtilen sayıda mantis bitleri toplanana kadar *RealType* türünde bir kayan nokta değerine paketler. Belirtilen sayı, *bitlerin* (sıfırdan farklı olması gerekir) ve *RealType*içindeki Mantis bitlerinin tam sayısı kadar küçüktür. İlk çağrı en düşük sıralı bitleri sağlar. İşlev döndürür `x`.
