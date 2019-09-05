@@ -58,6 +58,8 @@
               href: build/project-property-inheritance.md
             - name: Proje dosyasını değiştirmeden özellikleri ve hedefleri değiştirme
               href: build/modify-project-properties-without-changing-project-file.md
+        - name: Visual Studio projelerinde Clang/LLVM (MSBuild)
+          href: build/clang-support-msbuild.md
         - name: Derleme zamanında kitaplıklara ve bileşenlere başvurma
           href: build/adding-references-in-visual-cpp-projects.md
         - name: Proje çıkış dosyalarını düzenleme
@@ -4729,10 +4731,10 @@
                       href: preprocessor/hash-ifdef-and-hash-ifndef-directives-c-cpp.md
                     - name: '##import yönergesi (C++)'
                       href: preprocessor/hash-import-directive-cpp.md
-                    - name: '##import öznitelikleri (C++)'
+                    - name: '#import öznitelikleri (C++)'
                       expanded: false
                       items:
-                        - name: '##import öznitelikleri (C++)'
+                        - name: '#import öznitelikleri (C++)'
                           href: preprocessor/hash-import-attributes-cpp.md
                         - name: auto_rename
                           href: preprocessor/auto-rename.md
@@ -4794,7 +4796,7 @@
                       href: preprocessor/null-directive.md
                     - name: '##undef yönergesi (C/C++)'
                       href: preprocessor/hash-undef-directive-c-cpp.md
-                    - name: '##using yönergesi (C++)'
+                    - name: '#using yönergesi (C++/CLI)'
                       href: preprocessor/hash-using-directive-cpp.md
                 - name: Ön işlemci işleçleri
                   expanded: false
@@ -4829,10 +4831,10 @@
                   href: preprocessor/conventions.md
                 - name: Ön işlemci dil bilgisi
                   href: preprocessor/preprocessor-grammar.md
-            - name: Pragma yönergeleri ve __Pragma anahtar sözcüğü
+            - name: Pragma yönergeleri ve __pragma anahtar sözcüğü
               expanded: false
               items:
-                - name: Pragma yönergeleri ve __Pragma anahtar sözcüğü
+                - name: Pragma yönergeleri ve __pragma anahtar sözcüğü
                   href: preprocessor/pragma-directives-and-the-pragma-keyword.md
                 - name: alloc_text pragması
                   href: preprocessor/alloc-text.md
