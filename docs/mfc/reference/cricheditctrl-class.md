@@ -152,12 +152,12 @@ helpviewer_keywords:
 - CRichEditCtrl [MFC], StreamOut
 - CRichEditCtrl [MFC], Undo
 ms.assetid: 2be52788-822c-4c27-aafd-2471231e74eb
-ms.openlocfilehash: fc2b4c08b5a999f0369199e0dd65a09a7cdf8dff
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: b3c02c8c2754ce7edb40cff5e44efb74a16353fc
+ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69503157"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70741537"
 ---
 # <a name="cricheditctrl-class"></a>CRichEditCtrl sınıfı
 
@@ -973,7 +973,7 @@ void GetRect(LPRECT lpRect) const;
 ### <a name="parameters"></a>Parametreler
 
 *lpRect*<br/>
-[](../../atl-mfc-shared/reference/crect-class.md) Bu nesnenin`CRichEditCtrl` biçimlendirme dikdörtgenini almak için bir [Rect](/windows/win32/api/windef/ns-windef-rect) veya işaretçi işaretçisi.
+[](../../atl-mfc-shared/reference/crect-class.md) Bu`CRichEditCtrl` nesnenin biçimlendirme dikdörtgenini almak için bir [Rect](/windows/win32/api/windef/ns-windef-rect) veya işaretçi işaretçisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1051,7 +1051,7 @@ DWORD GetSelectionCharFormat(CHARFORMAT& cf) const;  DWORD GetSelectionCharForma
 ### <a name="parameters"></a>Parametreler
 
 *CF*<br/>
-İlk sürümde, geçerli seçimin karakter biçimlendirme özniteliklerini almak için bir [Charformat](/windows/win32/api/richedit/ns-richedit-_charformat) yapısına yönelik bir işaretçi.
+İlk sürümde, geçerli seçimin karakter biçimlendirme özniteliklerini almak için bir [Charformat](/windows/win32/api/richedit/ns-richedit-charformata) yapısına yönelik bir işaretçi.
 
 İkinci sürümde, geçerli seçimin karakter biçimlendirme özniteliklerini almak [](/windows/win32/api/richedit/ns-richedit-charformat2w) üzere `CHARFORMAT` yapıya yönelik zengin bir düzenleme 2,0 uzantısı olan CHARFORMAT2 yapısına yönelik bir işaretçi.
 
@@ -1618,7 +1618,7 @@ BOOL SetDefaultCharFormat(CHARFORMAT2& cf);
 ### <a name="parameters"></a>Parametreler
 
 *CF*<br/>
-İlk sürümde, yeni varsayılan karakter biçimlendirme özniteliklerini içeren bir [Charformat](/windows/win32/api/richedit/ns-richedit-_charformat) yapısına yönelik bir işaretçi.
+İlk sürümde, yeni varsayılan karakter biçimlendirme özniteliklerini içeren bir [Charformat](/windows/win32/api/richedit/ns-richedit-charformata) yapısına yönelik bir işaretçi.
 
 İkinci sürümde, varsayılan karakter biçimlendirme özniteliklerini içeren, [](/windows/win32/api/richedit/ns-richedit-charformat2w) `CHARFORMAT` yapıya yönelik zengin bir düzenleme 2,0 uzantısı olan CHARFORMAT2 yapısına yönelik bir işaretçi.
 
@@ -1855,7 +1855,7 @@ void SetRect(LPCRECT lpRect);
 ### <a name="parameters"></a>Parametreler
 
 *lpRect*<br/>
-[](../../atl-mfc-shared/reference/crect-class.md) Biçimlendirme dikdörtgeninin yeni sınırlarını gösteren bir [Rect](/windows/win32/api/windef/ns-windef-rect) veya işaretçi.
+Biçimlendirme dikdörtgeninin yeni sınırlarını gösteren bir [Rect](/windows/win32/api/windef/ns-windef-rect) [veya işaretçi](../../atl-mfc-shared/reference/crect-class.md) .
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1920,7 +1920,7 @@ BOOL SetSelectionCharFormat(CHARFORMAT2& cf);
 ### <a name="parameters"></a>Parametreler
 
 *CF*<br/>
-İlk sürümde, geçerli seçim için yeni karakter biçimlendirme özniteliklerini içeren bir [Charformat](/windows/win32/api/richedit/ns-richedit-_charformat) yapısına yönelik bir işaretçi.
+İlk sürümde, geçerli seçim için yeni karakter biçimlendirme özniteliklerini içeren bir [Charformat](/windows/win32/api/richedit/ns-richedit-charformata) yapısına yönelik bir işaretçi.
 
 İkinci sürümde, geçerli seçim için yeni karakter biçimlendirme [](/windows/win32/api/richedit/ns-richedit-charformat2w) özniteliklerini içeren, `CHARFORMAT` yapıya yönelik zengin bir düzenleme 2,0 uzantısı olan CHARFORMAT2 yapısına yönelik bir işaretçi.
 
@@ -2033,7 +2033,7 @@ BOOL SetWordCharFormat(CHARFORMAT2& cf);
 ### <a name="parameters"></a>Parametreler
 
 *CF*<br/>
-İlk sürümde, şu anda seçili olan sözcüğün yeni karakter biçimlendirme özniteliklerini içeren bir [Charformat](/windows/win32/api/richedit/ns-richedit-_charformat) yapısına yönelik bir işaretçi.
+İlk sürümde, şu anda seçili olan sözcüğün yeni karakter biçimlendirme özniteliklerini içeren bir [Charformat](/windows/win32/api/richedit/ns-richedit-charformata) yapısına yönelik bir işaretçi.
 
 İkinci sürümde, şu anda seçili olan sözcüğe yönelik [](/windows/win32/api/richedit/ns-richedit-charformat2w) yeni karakter biçimlendirme özniteliklerini içeren, `CHARFORMAT` yapıya yönelik zengin bir düzenleme 2,0 uzantısı olan CHARFORMAT2 yapısına yönelik bir işaretçi.
 

@@ -100,12 +100,12 @@ helpviewer_keywords:
 - CRichEditView [MFC], m_nBulletIndent
 - CRichEditView [MFC], m_nWordWrap
 ms.assetid: bd576b10-4cc0-4050-8f76-e1a0548411e4
-ms.openlocfilehash: c8eba16779b837b33912006a2ff3b7cdfa73f1e6
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: b32578cc3c9ad4f7a89b8ee76449259c0fa0b43b
+ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69502639"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70741519"
 ---
 # <a name="cricheditview-class"></a>CRichEditView sınıfı
 
@@ -413,7 +413,7 @@ Dönüş değeri başarıyı gösteriyorsa, `IRichEditOleCallback::GetClipboardD
 
 Bu gelişmiş bir geçersiz kılınabilir.
 
-Daha fazla bilgi için, bkz. [IRichEditOle:: GetClipboardData](/windows/win32/api/richole/nf-richole-iricheditole-getclipboarddata), [IRichEditOleCallback:: getclipboarddata](/windows/win32/api/richole/nf-richole-iricheditolecallback-getclipboarddata)ve Windows SDK [charrange](/windows/win32/api/richedit/ns-richedit-charrange) ve Windows SDK. [](/windows/win32/api/objidl/nn-objidl-idataobject)
+Daha fazla bilgi için [, bkz.](/windows/win32/api/objidl/nn-objidl-idataobject) [IRichEditOle:: GetClipboardData](/windows/win32/api/richole/nf-richole-iricheditole-getclipboarddata), [IRichEditOleCallback:: GetClipboardData](/windows/win32/api/richole/nf-richole-iricheditolecallback-getclipboarddata)ve Windows SDK [charrange](/windows/win32/api/richedit/ns-richedit-charrange) ve Windows SDK.
 
 ##  <a name="getcontextmenu"></a>CRichEditView:: GetContextMenu
 
@@ -763,7 +763,7 @@ Geçiş için istenen karakter biçimlendirme etkileri listesi.
 
 Bu işleve yapılan her çağrı, geçerli seçim için belirtilen biçimlendirme efektlerini değiştirir.
 
-*DwMask* ve *dwEffect* parametreleri ve olası değerleri hakkında daha fazla bilgi için Windows SDK [Charformat](/windows/win32/api/richedit/ns-richedit-_charformat) 'ın ilgili veri üyelerine bakın.
+*DwMask* ve *dwEffect* parametreleri ve olası değerleri hakkında daha fazla bilgi için Windows SDK [Charformat](/windows/win32/api/richedit/ns-richedit-charformata) 'ın ilgili veri üyelerine bakın.
 
 ### <a name="example"></a>Örnek
 
@@ -997,7 +997,7 @@ Karakter biçimlendirme efektini gösterir.
 
 Maske *dwMask* , denetlenecek karakter biçimlendirme özniteliklerini belirtir. Flags *dwEffect* , ayarlanacak/Clear karakter biçimlendirme özniteliklerini listeler.
 
-*DwMask* ve *dwEffect* parametreleri ve olası değerleri hakkında daha fazla bilgi için Windows SDK [Charformat](/windows/win32/api/richedit/ns-richedit-_charformat) 'ın ilgili veri üyelerine bakın.
+*DwMask* ve *dwEffect* parametreleri ve olası değerleri hakkında daha fazla bilgi için Windows SDK [Charformat](/windows/win32/api/richedit/ns-richedit-charformata) 'ın ilgili veri üyelerine bakın.
 
 ### <a name="example"></a>Örnek
 
@@ -1143,7 +1143,7 @@ Yapıştırma işleminin devam edip edemeyeceğini gösterir.
 
 Türetilmiş belge sınıfınıza ait farklı COM öğeleri organizasyonunu işlemek için bu işlevi geçersiz kılın. Bu gelişmiş bir geçersiz kılınabilir.
 
-HRESULT ve `IDataObject`hakkında daha fazla bilgi için, Windows SDK sırasıyla [com hata kodlarının](/windows/win32/com/structure-of-com-error-codes) ve [](/windows/win32/api/objidl/nn-objidl-idataobject)IDataObject 'nin yapısına bakın.
+HRESULT ve `IDataObject`hakkında daha fazla bilgi [için, Windows SDK](/windows/win32/api/objidl/nn-objidl-idataobject)sırasıyla [com hata kodlarının ve IDataObject 'nin yapısına](/windows/win32/com/structure-of-com-error-codes) bakın.
 
 ### <a name="example"></a>Örnek
 

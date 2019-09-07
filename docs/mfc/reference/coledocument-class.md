@@ -52,12 +52,12 @@ helpviewer_keywords:
 - COleDocument [MFC], OnUpdatePasteLinkMenu
 - COleDocument [MFC], OnUpdatePasteMenu
 ms.assetid: dc2ecb99-03e1-44c7-bb69-48056dd1b672
-ms.openlocfilehash: 666ca54f55c5bb0dd4070a4984500dc19dc9d372
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: b92c796fdaa972966dcbfa85b1e34f267b6c629c
+ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69504034"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70741603"
 ---
 # <a name="coledocument-class"></a>Cotadocument sınıfı
 
@@ -177,9 +177,9 @@ Yeni yazdırma hedefi `PRINTDLG` aygıtı hakkında bilgi içeren bir veri yapı
 
 Bu işlev, yazdırma hedefi cihazını tüm öğeler için güncelleştirir, ancak bu öğelerin sunu önbelleğini yenilemez. Bir öğenin sunu önbelleğini güncelleştirmek için [Cotaclientidıtem:: UpdateLink](../../mfc/reference/coleclientitem-class.md#updatelink)komutunu çağırın.
 
-Bu işlevin bağımsız değişkenleri, OLE tarafından hedef cihazı tanımlamak için kullanılan bilgileri içerir. [PrintDlg](/windows/win32/api/commdlg/ns-commdlg-pdw) yapısı, Windows 'un ortak Yazdır iletişim kutusunu başlatmak için kullandığı bilgileri içerir. Kullanıcı iletişim kutusunu kapattıktan sonra, Windows kullanıcının bu yapıda seçimleriyle ilgili bilgileri döndürür. [CPrintDialog](../../mfc/reference/cprintdialog-class.md) nesnesinin `PRINTDLG` üyesi bir yapıdır. `m_pd`
+Bu işlevin bağımsız değişkenleri, OLE tarafından hedef cihazı tanımlamak için kullanılan bilgileri içerir. [PrintDlg](/windows/win32/api/commdlg/ns-commdlg-printdlga) yapısı, Windows 'un ortak Yazdır iletişim kutusunu başlatmak için kullandığı bilgileri içerir. Kullanıcı iletişim kutusunu kapattıktan sonra, Windows kullanıcının bu yapıda seçimleriyle ilgili bilgileri döndürür. [CPrintDialog](../../mfc/reference/cprintdialog-class.md) nesnesinin `PRINTDLG` üyesi bir yapıdır. `m_pd`
 
-Daha fazla bilgi için Windows SDK [PrintDlg](/windows/win32/api/commdlg/ns-commdlg-pdw) yapısına bakın.
+Daha fazla bilgi için Windows SDK [PrintDlg](/windows/win32/api/commdlg/ns-commdlg-printdlga) yapısına bakın.
 
 Daha fazla bilgi için Windows SDK [Dvtargetdevice](/windows/win32/api/objidl/ns-objidl-dvtargetdevice) yapısına bakın.
 
@@ -464,7 +464,7 @@ Belgedeki ilk OLE öğesiyle başlayarak, her öğeye `OnUpdateEditLinksMenu` er
 
 ##  <a name="onupdateobjectverbmenu"></a>Cotadocument:: OnUpdateObjectVerbMenu
 
-Düzenleme menüsünde *ObjectName* komutunu ve ObjectName komutundan erişilen fiil alt menüsünü güncelleştirmek için Framework tarafından çağırılır; burada *NesneAdı* , belgeye katıştırılmış OLE nesnesinin adıdır.
+Düzenleme menüsünde *ObjectName* *komutunu ve ObjectName komutundan erişilen* fiil alt menüsünü güncelleştirmek için Framework tarafından çağırılır; burada *NesneAdı* , belgeye katıştırılmış OLE nesnesinin adıdır.
 
 ```
 afx_msg void OnUpdateObjectVerbMenu(CCmdUI* pCmdUI);

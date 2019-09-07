@@ -156,12 +156,12 @@ helpviewer_keywords:
 - CMDIFrameWndEx [MFC], m_bCanCovertControlBarToMDIChild
 - CMDIFrameWndEx [MFC], m_bDisableSetRedraw
 ms.assetid: dbcafcb3-9a7a-4f11-9dfe-ba57565c81d0
-ms.openlocfilehash: 7973cf89eaa2090a8f1548f38a728f1100d5cbec
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 42e630c1280eb366f9007511ac5d74ac19455a56
+ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69505531"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70741593"
 ---
 # <a name="cmdiframewndex-class"></a>CMDIFrameWndEx sınıfı
 
@@ -533,7 +533,7 @@ BOOL DockPaneLeftOf(
 
 ### <a name="remarks"></a>Açıklamalar
 
-Birden çok bölme nesnesini önceden tanımlanmış bir sırada yerleştirmek için bu yöntemi çağırın. Bu yöntem, *pLeftOf*tarafından belirtilen bölmenin sol tarafında bulunan BBAR tarafından belirtilen bölmeyi sağlar.
+Birden çok bölme nesnesini önceden tanımlanmış bir sırada yerleştirmek için bu yöntemi çağırın. Bu yöntem, *pLeftOf*tarafından belirtilen bölmenin sol tarafında bulunan *BBAR* tarafından belirtilen bölmeyi sağlar.
 
 ### <a name="example"></a>Örnek
 
@@ -1502,7 +1502,7 @@ virtual BOOL OnMenuButtonToolHitTest(
 'ndaki Araç çubuğu düğmesi.
 
 *PTI*<br/>
-dışı [TOOLINFO](/windows/win32/api/commctrl/ns-commctrl-toolinfow) yapısına yönelik işaretçi.
+dışı [TOOLINFO](/windows/win32/api/commctrl/ns-commctrl-tttoolinfoa) yapısına yönelik işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

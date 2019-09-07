@@ -334,12 +334,12 @@ helpviewer_keywords:
 - COleControl [MFC], IsInvokeAllowed
 - COleControl [MFC], SetInitialDataFormats
 ms.assetid: 53e95299-38e8-447b-9c5f-a381d27f5123
-ms.openlocfilehash: 14a195b22c2b26ee0180c68741fab623623fc36e
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 97c605426ed0ac869714f0f83d4957f7f6ce7d87
+ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69504747"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70741391"
 ---
 # <a name="colecontrol-class"></a>Coelcontrol sınıfı
 
@@ -1576,7 +1576,7 @@ CWnd* GetCapture();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Denetim etkinleştirilir ve penceresiz ise, denetimde Şu anda fare yakalama varsa (denetimin kapsayıcısı tarafından belirlendiği şekilde) veya yakalama yoksa null değeri döndürür.
+Denetim etkinleştirilir ve penceresiz ise, denetimde Şu anda fare yakalama varsa (denetimin kapsayıcısı tarafından belirlendiği şekilde) veya yakalama yoksa NULL **değeri döndürür.**
 
 Aksi takdirde, fare `CWnd` yakalama (ile `CWnd::GetCapture`aynı) nesnesini döndürür.
 
@@ -1786,7 +1786,7 @@ CWnd* GetFocus();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Denetim etkinleştirilir ve penceresiz ise, denetimde Şu anda klavye odağı varsa (denetimin kapsayıcısı tarafından belirlendiği şekilde) veya odağa sahip değilse null değeri döndürür.
+Denetim etkinleştirilir ve penceresiz ise, denetimde Şu anda klavye odağı varsa (denetimin kapsayıcısı tarafından belirlendiği şekilde) veya odağa sahip değilse NULL **değeri döndürür.**
 
 Aksi takdirde, odağa `CWnd` sahip olan nesneyi döndürür (ile `CWnd::GetFocus`aynı).
 
@@ -3178,7 +3178,7 @@ virtual BOOL OnRenderData(
 Bilgilerin istendiği biçimi belirten [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapısına işaret eder.
 
 *Lpstgorta*<br/>
-Verilerin döndürüleceği bir [Stgorta](/windows/win32/api/objidl/ns-objidl-stgmedium) yapısına işaret eder.
+Verilerin döndürüleceği bir [Stgorta](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1) yapısına işaret eder.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -3301,7 +3301,7 @@ virtual BOOL OnSetData(
 Verilerin biçimini belirten bir [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapısına yönelik işaretçi.
 
 *Lpstgorta*<br/>
-Verilerin bulunduğu bir [Stgorta](/windows/win32/api/objidl/ns-objidl-stgmedium) yapısına yönelik işaretçi.
+Verilerin bulunduğu bir [Stgorta](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1) yapısına yönelik işaretçi.
 
 *bRelease*<br/>
 Denetim, depolama ortamını serbest bırakırsanız doğru; Denetim, depolama ortamını serbest olanmamışsa FALSE.

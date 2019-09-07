@@ -28,12 +28,12 @@ f1_keywords:
 helpviewer_keywords:
 - CComSafeArray class
 ms.assetid: ee349aef-33db-4c85-bd08-5d86a3c9d53a
-ms.openlocfilehash: 36750990dc62d5b24cf1107ac8a2724df787a47d
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 79b1dc844f53f739dc48eb6177e57810ff0c8412
+ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69496988"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70739585"
 ---
 # <a name="ccomsafearray-class"></a>CComSafeArray sınıfı
 
@@ -100,7 +100,7 @@ Dizide depolanacak veri türü.
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CComSafeArray`[SAFEARRAY veri türü](/windows/win32/api/oaidl/ns-oaidl-tagsafearray) sınıfı için bir sarmalayıcı sağlar ve bu, değişken olarak desteklenen türlerin neredeyse her birinde tek ve çok boyutlu diziler oluşturup yönetmeniz basit bir işlemdir.
+`CComSafeArray`[SAFEARRAY veri türü](/windows/win32/api/oaidl/ns-oaidl-safearray) sınıfı için bir sarmalayıcı sağlar ve bu, değişken olarak desteklenen türlerin neredeyse her birinde tek ve çok boyutlu diziler oluşturup yönetmeniz basit bir işlemdir.
 
 `CComSafeArray`süreçler arasında dizileri geçirmeyi basitleştirir ve ayrıca, dizi dizini değerlerini üst ve alt sınırlara göre denetleyerek ek güvenlik sağlar.
 
@@ -662,7 +662,7 @@ BSTR veya VARIANT türündeki öğeler bir diziye eklendiğinde *bCopy* bayrağ�
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[SAFEARRAY veri türü](/windows/win32/api/oaidl/ns-oaidl-tagsafearray)<br/>
+[SAFEARRAY veri türü](/windows/win32/api/oaidl/ns-oaidl-safearray)<br/>
 [CComSafeArray:: Create](#create)<br/>
 [CComSafeArray::D estroy](#destroy)<br/>
 [Sınıfa genel bakış](../../atl/atl-class-overview.md)

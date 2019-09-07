@@ -72,12 +72,12 @@ helpviewer_keywords:
 - CToolTipCtrl [MFC], Update
 - CToolTipCtrl [MFC], UpdateTipText
 ms.assetid: 8973f70c-b73a-46c7-908d-758f364b9a97
-ms.openlocfilehash: 046c8a3f99e8b505ee6a6e8b534318263090e07d
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: bf32671eb3535de1bf072e24bc642145e87c84ee
+ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69502261"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70741412"
 ---
 # <a name="ctooltipctrl-class"></a>CToolTipCtrl sınıfı
 
@@ -216,7 +216,7 @@ Aracın sınırlayıcı dikdörtgeninin koordinatlarını içeren bir [Rect](/pr
 Aracın KIMLIĞI.
 
 *lpszText*<br/>
-Araç için metin işaretçisi. Bu parametre LPSTR_TEXTCALLBACK değerini içeriyorsa TTN_NEEDTEXT bildirim iletileri, pencerenin üst öğesine işaret ettiği pencerenin üst öğesine gider.
+Araç için metin işaretçisi. Bu parametre LPSTR_TEXTCALLBACK değerini içeriyorsa TTN_NEEDTEXT bildirim iletileri, pencerenin üst *öğesine işaret ettiği* pencerenin üst öğesine gider.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -377,7 +377,7 @@ CSize GetBubbleSize(LPTOOLINFO lpToolInfo) const;
 ### <a name="parameters"></a>Parametreler
 
 *lpToolInfo*<br/>
-Araç ipucunun [TOOLINFO](/windows/win32/api/commctrl/ns-commctrl-toolinfow) yapısına yönelik bir işaretçi.
+Araç ipucunun [TOOLINFO](/windows/win32/api/commctrl/ns-commctrl-tttoolinfoa) yapısına yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -399,7 +399,7 @@ BOOL GetCurrentTool(LPTOOLINFO lpToolInfo) const;
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*lpToolInfo*|dışı Geçerli araç ipucu penceresi hakkında bilgi alan [TOOLINFO](/windows/win32/api/commctrl/ns-commctrl-toolinfow) yapısına yönelik işaretçi.|
+|*lpToolInfo*|dışı Geçerli araç ipucu penceresi hakkında bilgi alan [TOOLINFO](/windows/win32/api/commctrl/ns-commctrl-tttoolinfoa) yapısına yönelik işaretçi.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -598,7 +598,7 @@ Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-[TOOLINFO](/windows/win32/api/commctrl/ns-commctrl-toolinfow) yapısının `uId` ve CToolInfo tarafından başvurulan üyeleri, aracı belirler `hwnd` . Bu araç, bir önceki çağrısıyla `AddTool`ilgili araç ipucu denetimiyle kaydedilmişse `TOOLINFO` , yapı araçla ilgili bilgilerle doldurulur.
+[TOOLINFO](/windows/win32/api/commctrl/ns-commctrl-tttoolinfoa) yapısının `uId` ve CToolInfo tarafından başvurulan üyeleri, aracı belirler `hwnd` . Bu araç, bir önceki çağrısıyla `AddTool`ilgili araç ipucu denetimiyle kaydedilmişse `TOOLINFO` , yapı araçla ilgili bilgilerle doldurulur.
 
 ##  <a name="hittest"></a>CToolTipCtrl:: HitTest
 
@@ -620,7 +620,7 @@ Aracı içeren pencerenin işaretçisi.
 Sınanacak noktanın koordinatlarını `CPoint` içeren bir nesne işaretçisi.
 
 *lpToolInfo*<br/>
-Araç hakkında bilgi içeren [TOOLINFO](/windows/win32/api/commctrl/ns-commctrl-toolinfow) yapısına yönelik işaretçi.
+Araç hakkında bilgi içeren [TOOLINFO](/windows/win32/api/commctrl/ns-commctrl-tttoolinfoa) yapısına yönelik işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -845,7 +845,7 @@ void SetToolInfo(LPTOOLINFO lpToolInfo);
 ### <a name="parameters"></a>Parametreler
 
 *lpToolInfo*<br/>
-Ayarlanacak bilgileri belirten [TOOLINFO](/windows/win32/api/commctrl/ns-commctrl-toolinfow) yapısına yönelik bir işaretçi.
+Ayarlanacak bilgileri belirten [TOOLINFO](/windows/win32/api/commctrl/ns-commctrl-tttoolinfoa) yapısına yönelik bir işaretçi.
 
 ##  <a name="settoolrect"></a>CToolTipCtrl:: SetToolRect
 

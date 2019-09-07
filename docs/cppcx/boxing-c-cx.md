@@ -2,30 +2,30 @@
 title: Kutulama (C++/CX)
 ms.date: 12/30/2016
 ms.assetid: edfb12fa-2a9b-42f6-bdac-d4d76cb8274e
-ms.openlocfilehash: 3c281229b509ef72d37400b2088a6663be1afe42
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 90c5af31efc6523683227dbf54c85390bc98510a
+ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62257971"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70740674"
 ---
 # <a name="boxing-ccx"></a>Kutulama (C++/CX)
 
-*Kutulama* bir değer türü değişkeni gibi sarmalama [Windows::Foundation::DateTime](/uwp/api/windows.foundation.datetime)— ya da temel bir skalar türü gibi `int`— değişken alan bir yönteme geçildiğinde bir başvuru sınıfındaki [ Platform::Object ^](../cppcx/platform-object-class.md) giriş türü olarak.
+*Kutulama* , değişken türü olarak [Platform:: Object ^](../cppcx/platform-object-class.md) ' i alan bir yönteme geçirildiğinde, [Windows:: Foundation::D atetime](/uwp/api/windows.foundation.datetime)gibi bir değer türü değişkeni veya bir temel skaler `int`tür (bir başvuru sınıfında) sarmalandır .
 
-## <a name="passing-a-value-type-to-an-object-parameter"></a>Bir değer türü bir nesneye geçirme ^ parametre
+## <a name="passing-a-value-type-to-an-object-parameter"></a>Bir nesne ^ parametresine değer türü geçirme
 
-Bir değişken türü için bir yöntem parametresi geçirmek için açıkça kutusunda zorunda değilsiniz [Platform::Object ^](../cppcx/platform-object-class.md), daha önce Kutulu değerleri aldığınızda açıkça yeniden orijinal türüne sahip.
+[Platform:: Object ^](../cppcx/platform-object-class.md)türünde bir yöntem parametresine iletmek için bir değişkeni açıkça kutulanabilir olsanız da, daha önce paketlenmiş değerleri alırken özgün türe açıkça geri dönüştürme yapmanız gerekir.
 
 [!code-cpp[cx_boxing#01](../cppcx/codesnippet/CPP/cx_boxing/class1.cpp#01)]
 
-### <a name="using-platformiboxt-to-support-nullable-value-types"></a>Platform::ıbox kullanarak\<T > boş değer atanabilen değer türleri desteklemek için
+### <a name="using-platformiboxt-to-support-nullable-value-types"></a>Nullable değer türlerini desteklemek için Platform\<:: ibox T > kullanma
 
-C# ve Visual Basic'te boş değer atanabilen değer türleri kavramını destekler. İçinde C++/kullanabileceğiniz CX, `Platform::IBox<T>` null yapılabilir değer türü parametrelerini destekleyen genel yöntemleri açığa türü. Aşağıdaki örnekte gösterildiği bir C++null döndürdüğü /CX genel yöntem bir C# çağıran bağımsız değişkenlerden biri null geçirir.
+C#ve Visual Basic Nullable değer türleri kavramını destekler. /CX C++içinde, null yapılabilir değer türü `Platform::IBox<T>` parametrelerini destekleyen ortak yöntemleri açığa çıkarmak için türünü kullanabilirsiniz. Aşağıdaki örnek, bir C++ C# çağıran bağımsız değişkenlerden biri için null geçirdiğinde null döndüren bir/CX ortak yöntemi gösterir.
 
 [!code-cpp[cx_boxing#02](../cppcx/codesnippet/CPP/cx_boxing/class1.h#02)]
 
-C# XAML istemcisinde, onu şöyle raporlarını kullanabilirsiniz:
+C# Xaml istemcisinde şu şekilde kullanabilirsiniz:
 
 ```
 
@@ -40,5 +40,5 @@ C# XAML istemcisinde, onu şöyle raporlarını kullanabilirsiniz:
 
 [Tür Sistemi (C++/CX)](../cppcx/type-system-c-cx.md)<br/>
 [Atama (C++/CX)](../cppcx/casting-c-cx.md)<br/>
-[Visual C++ Dil Başvurusu](../cppcx/visual-c-language-reference-c-cx.md)<br/>
+[C++/CX Dil Başvurusu](../cppcx/visual-c-language-reference-c-cx.md)<br/>
 [Ad Alanları Başvurusu](../cppcx/namespaces-reference-c-cx.md)

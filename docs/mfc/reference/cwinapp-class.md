@@ -192,12 +192,12 @@ helpviewer_keywords:
 - CWinApp [MFC], m_nAutosaveInterval
 - CWinApp [MFC], m_pDataRecoveryHandler
 ms.assetid: e426a3cd-0d15-40d6-bd55-beaa5feb2343
-ms.openlocfilehash: 732bdf980240b1f496c1aca56c8a89b6a7f52d27
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: c35cc01b352285402885587f6d0b91e2c2bdd4ae
+ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69502177"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70741245"
 ---
 # <a name="cwinapp-class"></a>CWinApp sınıfı
 
@@ -850,7 +850,7 @@ BOOL GetPrinterDeviceDefaults(struct tagPDA* pPrintDlg);
 ### <a name="parameters"></a>Parametreler
 
 *pPrintDlg*<br/>
-[PrintDlg](/windows/win32/api/commdlg/ns-commdlg-pdw) yapısına yönelik bir işaretçi.
+[PrintDlg](/windows/win32/api/commdlg/ns-commdlg-printdlga) yapısına yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1793,7 +1793,7 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 ### <a name="parameters"></a>Parametreler
 
 *pMsg*<br/>
-İşlenecek iletiyi içeren bir [msg](/windows/win32/api/winuser/ns-winuser-tagmsg) yapısına yönelik işaretçi.
+İşlenecek iletiyi içeren bir [msg](/windows/win32/api/winuser/ns-winuser-msg) yapısına yönelik işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

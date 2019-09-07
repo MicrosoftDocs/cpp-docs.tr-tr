@@ -30,12 +30,12 @@ helpviewer_keywords:
 - cursors [C++], importing and exporting
 - images [C++], exporting
 ms.assetid: 65f523e8-017f-4fc6-82d1-083c56d9131f
-ms.openlocfilehash: 56cff04d64f2f0a64fc216fbd418954b4c11b0f2
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 718de310bc4fb0cb0072065bc4e7b7adadb182aa
+ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69514744"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70740658"
 ---
 # <a name="how-to-manage-resources-c"></a>Nasıl yapılır: Kaynakları yönetme (C++)
 
@@ -76,7 +76,7 @@ Projedeki kaynak dosyaları (**kaynak görünümü**) ve tek başına. RC dosyal
 
 Bir kaynağa kopyalarken, kendi dil özelliğini veya koşul özelliğini ya da her ikisini de değiştirebilirsiniz.
 
-- Bir kaynağın dili, aradığınız kaynağın tanımlanmasına yardımcı olmak için [FindResource](/windows/win32/api/winbase/nf-winbase-findresourcew) tarafından kullanılan dili belirtir. Kaynaklar, metinle ilgili olmayan her dil için, örneğin yalnızca Japonca bir klavyede veya yalnızca Çince yerelleştirilmiş derlemeler için uygun bir bit eşlemde çalışan Hızlandırıcılar için farklılık gösterebilir.
+- Bir kaynağın dili, aradığınız kaynağın tanımlanmasına yardımcı olmak için [FindResource](/windows/win32/api/winbase/nf-winbase-findresourcea) tarafından kullanılan dili belirtir. Kaynaklar, metinle ilgili olmayan her dil için, örneğin yalnızca Japonca bir klavyede veya yalnızca Çince yerelleştirilmiş derlemeler için uygun bir bit eşlemde çalışan Hızlandırıcılar için farklılık gösterebilir.
 
 - Bir kaynağın koşulu, kaynağın bu kopyasının kullanılacağı koşulu tanımlayan tanımlı bir simgedir.
 

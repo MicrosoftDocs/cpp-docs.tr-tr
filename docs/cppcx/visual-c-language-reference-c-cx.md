@@ -1,15 +1,15 @@
 ---
-title: Görsel C++ dil başvurusu (C++/CX)
+title: C++/CX dil başvurusu
 ms.date: 09/15/2017
 ms.assetid: 3f6abf92-4e5e-4ed8-8e11-f9252380d30a
-ms.openlocfilehash: 0b2d344f9889d5669164cd917ba569b5f35d83a5
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: ed8e2374daf862e99517fb113e869504b7c7aabc
+ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69498420"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70740862"
 ---
-# <a name="visual-c-language-reference-ccx"></a>Görsel C++ dil başvurusu (C++/CX)
+# <a name="ccx-language-reference"></a>C++/CX dil başvurusu
 
 C++/CX, modern C++bir şekilde olabildiğince yakın bir C++ şekilde Windows Uygulamaları ve Windows çalışma zamanı bileşenleri oluşturulmasını etkinleştiren dile yönelik bir dizi uzantıdır. Visual C++ C#, Visual Basic ve JavaScript ve Windows çalışma zamanı destekleyen diğer dillerde kolayca etkileşim kuran yerel koda Windows Uygulamaları ve bileşenleri yazmak için/CX kullanın. Ham COM arabirimlerine veya olağanüstü olmayan koda doğrudan erişim gerektiren bu nadir durumlarda [Windows çalışma zamanı C++ şablon kitaplığı (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md)kullanabilirsiniz.
 
@@ -38,4 +38,4 @@ C++/CX, modern C++bir şekilde olabildiğince yakın bir C++ şekilde Windows Uy
 |[Ad Alanları Başvurusu](../cppcx/namespaces-reference-c-cx.md)|Varsayılan ad alanı, Platform ad alanı, Platform:: Collections ve ilgili ad alanları için başvuru belgeleri.|
 |[Evrensel Windows Platformu uygulamalarında desteklenmeyen CRT işlevleri](../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)|Windows Çalışma Zamanı uygulamalarda kullanılmak üzere kullanılamayan CRT işlevlerini listeler.|
 |[Windows 10 uygulamaları ile çalışmaya başlama](/windows/uwp/get-started/)|Windows 10 uygulamaları ve daha fazla bilgi için bağlantılar hakkında üst düzey rehberlik sağlar.|
-|[C++/CX bölüm 0/ \[n\]: Giriş](https://blogs.msdn.microsoft.com/vcblog/2012/08/29/ccx-part-0-of-n-an-introduction/)<br /><br />[C++/CX Bölüm 1/ \[n\]: Basit bir sınıf](https://blogs.msdn.microsoft.com/vcblog/2012/09/05/ccx-part-1-of-n-a-simple-class/)<br /><br />[C++/CX Bölüm 2/ \[n\]: Bu tür bir HATS](https://blogs.msdn.microsoft.com/vcblog/2012/09/17/ccx-part-2-of-n-types-that-wear-hats/)<br /><br />[C++/CX Bölüm 3/ \[n\]: Yapım aşamasında](https://blogs.msdn.microsoft.com/vcblog/2012/10/05/ccx-part-3-of-n-under-construction/)<br /><br />[C++/CX Bölüm 4/ \[n\]: Statik üye Işlevleri](https://blogs.msdn.microsoft.com/vcblog/2012/10/19/ccx-part-4-of-n-static-member-functions/)|/Cxüzerinde C++ C++bir giriş görsel blog serisi.|
+|[C++/CX bölüm 0/ \[n\]: Giriş](https://blogs.msdn.microsoft.com/vcblog/2012/08/29/ccx-part-0-of-n-an-introduction/)<br /><br />[C++/CX Bölüm 1/ \[n\]: Basit bir sınıf](https://blogs.msdn.microsoft.com/vcblog/2012/09/05/ccx-part-1-of-n-a-simple-class/)<br /><br />[C++/CX Bölüm 2/ \[n\]: Bu tür bir HATS](https://blogs.msdn.microsoft.com/vcblog/2012/09/17/ccx-part-2-of-n-types-that-wear-hats/)<br /><br />[C++/CX Bölüm 3/ \[n\]: Yapım aşamasında](https://blogs.msdn.microsoft.com/vcblog/2012/10/05/ccx-part-3-of-n-under-construction/)<br /><br />[C++/CX Bölüm 4/ \[n\]: Statik üye Işlevleri](https://blogs.msdn.microsoft.com/vcblog/2012/10/19/ccx-part-4-of-n-static-member-functions/)|/Cxüzerinde C++bir tanıtıcı blog serisi.|

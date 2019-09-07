@@ -28,12 +28,12 @@ helpviewer_keywords:
 - COleDataObject [MFC], IsDataAvailable
 - COleDataObject [MFC], Release
 ms.assetid: d1cc84be-2e1c-4bb3-a8a0-565eb08aaa34
-ms.openlocfilehash: c25fd7e91c59d7bea06325fbb27471d8f90f589d
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: e706489a84ad564949e2c2d3d193173fc19b9828
+ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69504242"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70741637"
 ---
 # <a name="coledataobject-class"></a>Cotadataobject sınıfı
 
@@ -76,7 +76,7 @@ Bu tür veri aktarımları bir kaynak ve hedef içerir. Veri kaynağı [Cotadata
 
 Bu sınıf, verilerin belirtilen biçimde bulunup bulunmadığını belirlemenizi sağlar. Ayrıca kullanılabilir veri biçimlerini numaralandırabilirsiniz veya belirli bir biçimin kullanılabilir olup olmadığını kontrol edip verileri tercih edilen biçimde alın. Nesne alımı, [CFile](../../mfc/reference/cfile-class.md), bir HGLOBAL veya bir `STGMEDIUM` yapının kullanımı dahil olmak üzere birkaç farklı şekilde gerçekleştirilebilir.
 
-Daha fazla bilgi için Windows SDK [Stgorta](/windows/win32/api/objidl/ns-objidl-stgmedium) yapısına bakın.
+Daha fazla bilgi için Windows SDK [Stgorta](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1) yapısına bakın.
 
 Uygulamanızdaki veri nesnelerini kullanma hakkında daha fazla bilgi için bkz. [veri nesneleri ve veri kaynakları (OLE)](../../mfc/data-objects-and-data-sources-ole.md).
 
@@ -125,7 +125,7 @@ Başarılı olursa sıfır dışı; Aksi takdirde 0.
 ### <a name="remarks"></a>Açıklamalar
 
 > [!NOTE]
->  Bu işlevi çağırmak, bu veri nesnesi serbest bırakılana kadar panoyu kilitler. Veri nesnesi, `COleDataObject`için yıkıcısında serbest bırakılır. Daha fazla bilgi için bkz. [Wınpboard](/windows/win32/api/winuser/nf-winuser-openclipboard) ve [CloseClipboard](/windows/win32/api/winuser/nf-winuser-closeclipboard) 'ta Win32 belgeleyin.
+>  Bu işlevi çağırmak, bu veri nesnesi serbest bırakılana kadar panoyu kilitler. Veri nesnesi, `COleDataObject`için yıkıcısında serbest bırakılır. Daha fazla bilgi için bkz. Wınpboard ve [CloseClipboard](/windows/win32/api/winuser/nf-winuser-closeclipboard) 'ta Win32 [belgeleyin](/windows/win32/api/winuser/nf-winuser-openclipboard) .
 
 ##  <a name="beginenumformats"></a>Colet:: BeginEnumFormats
 
@@ -189,7 +189,7 @@ BOOL GetData(
 Verilerin döndürüleceği biçim. Bu parametre, önceden tanımlanmış Pano biçimlerinden biri veya yerel Windows [RegisterClipboardFormat](/windows/win32/api/winuser/nf-winuser-registerclipboardformatw) işlevi tarafından döndürülen değerden biri olabilir.
 
 *Lpstgorta*<br/>
-Veri alacak bir [Stgorta](/windows/win32/api/objidl/ns-objidl-stgmedium) yapısına işaret eder.
+Veri alacak bir [Stgorta](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1) yapısına işaret eder.
 
 *lpFormatEtc*<br/>
 Verilerin döndürüleceği biçimi açıklayan bir [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapısına işaret eder. *CfFormat*tarafından belirtilen Pano biçiminin ötesinde ek biçim bilgilerini belirtmek istiyorsanız bu parametre için bir değer girin. NULL ise, `FORMATETC` yapıdaki diğer alanlar için varsayılan değerler kullanılır.
@@ -200,7 +200,7 @@ Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için Windows SDK bkz. [IDataObject:: GetData](/windows/win32/api/objidl/nf-objidl-idataobject-getdata), [Stgmedium](/windows/win32/api/objidl/ns-objidl-stgmedium)ve [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) .
+Daha fazla bilgi için Windows SDK bkz. [IDataObject:: GetData](/windows/win32/api/objidl/nf-objidl-idataobject-getdata), [Stgmedium](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1)ve [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) .
 
 Daha fazla bilgi için Windows SDK [RegisterClipboardFormat](/windows/win32/api/winuser/nf-winuser-registerclipboardformatw) bölümüne bakın.
 
@@ -334,7 +334,7 @@ void Release();
 
 ### <a name="remarks"></a>Açıklamalar
 
-, Çağırarak veyaaçıkça`AttachClipboard` veya `COleDataObject` çerçevesi tarafından ile ilişkilendirilmiştir. `Attach` `IDataObject` ' `Attach` Nin *bAutoRelease* parametresi false `IDataObject` ise, nesne yayınlanmaz. Bu durumda, çağıranın `IDataObject` [IUnknown:: Release](/windows/win32/api/unknwn/nf-unknwn-iunknown-release)öğesini çağırarak yayınmasından sorumludur.
+, Çağırarak veyaaçıkça`AttachClipboard` veya `COleDataObject` çerçevesi tarafından ile ilişkilendirilmiştir. `Attach` `IDataObject` ' `Attach` Nin *bAutoRelease* parametresi false `IDataObject` ise, nesne yayınlanmaz. Bu durumda, çağıranın `IDataObject` [IUnknown:: Release öğesini çağırarak yayınmasından](/windows/win32/api/unknwn/nf-unknwn-iunknown-release)sorumludur.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

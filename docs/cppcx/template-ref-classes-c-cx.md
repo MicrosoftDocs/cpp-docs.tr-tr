@@ -2,25 +2,25 @@
 title: Şablon başvuru sınıfları (C++/CX)
 ms.date: 01/22/2017
 ms.assetid: a24d5f45-8dbb-4540-958f-c76c90d8ed93
-ms.openlocfilehash: 4398cc2c545a57277289a6aa41fc4664d9734eed
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3e9c233b5227b4ad86eb632db740001bc2a3a8bd
+ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62396043"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70740848"
 ---
 # <a name="template-ref-classes-ccx"></a>Şablon başvuru sınıfları (C++/CX)
 
-C++ şablonları meta verileri yayımlanmaz ve bu nedenle, ortak veya korumalı erişilebilirlik programınızda sahip olamaz. Doğal olarak, standart C++ şablonları dahili olarak programınızda kullanabilirsiniz. Ayrıca, özel bir başvuru sınıfı bir şablon olarak tanımlayabilir ve bir açıkça özelleşmiş şablon başvuru sınıfının ortak başvuru sınıfı özel üye olarak bildirebilirsiniz.
+C++Şablonlar meta verilerde yayımlanmaz ve bu nedenle programınızda ortak veya korumalı erişilebilirliği olamaz. Elbette, programda dahili olarak standart C++ şablonları kullanabilirsiniz. Ayrıca, özel bir başvuru sınıfını şablon olarak tanımlayabilir ve açık bir özel şablon başvuru sınıfını ortak bir başvuru sınıfında özel üye olarak bildirebilirsiniz.
 
 ## <a name="authoring-ref-class-templates"></a>Başvuru sınıfı şablonları yazma
 
-Aşağıdaki örnek bir özel başvuru sınıfı bir şablon olarak bildirmeyi ve standart C++ şablonunu bildirmek ve nasıl bunları hem ortak başvuru sınıfı üye olarak bildirmek nasıl gösterir. Unutmayın standart C++ şablonu özelleştirilmiş bir Windows çalışma zamanı tür, bu durumda Platform::String bir ^.
+Aşağıdaki örnek, bir özel başvuru sınıfının bir şablon olarak nasıl bildirilemeyeceğini ve ayrıca standart C++ bir şablon bildirmek ve bunları ortak bir başvuru sınıfında üye olarak bildirmek için gösterir. Standart C++ şablonun, bu örnekte Platform:: String ^ olan bir Windows çalışma zamanı türü tarafından özelleştirilebilir olduğunu unutmayın.
 
 [!code-cpp[cx_templates#01](../cppcx/codesnippet/CPP/templatedemo/class1.h#01)]
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Tür Sistemi (C++/CX)](../cppcx/type-system-c-cx.md)<br/>
-[Visual C++ Dil Başvurusu](../cppcx/visual-c-language-reference-c-cx.md)<br/>
+[C++/CX Dil Başvurusu](../cppcx/visual-c-language-reference-c-cx.md)<br/>
 [Ad Alanları Başvurusu](../cppcx/namespaces-reference-c-cx.md)

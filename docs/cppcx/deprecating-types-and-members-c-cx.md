@@ -1,24 +1,24 @@
 ---
-title: Türleri ve üyeleri geçersiz kılma (C++/CX)
+title: Türleri ve üyeleri kullanımdan kaldırma (C++/CX)
 ms.date: 12/30/2016
 ms.assetid: b20b01c1-a439-4ff0-8cf3-d7280c492813
-ms.openlocfilehash: 7f488dfa522c0b48c75150d40584b0946baae806
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6cd880af7e206b4c7338e53615594ec2c65c59fc
+ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62301506"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70740495"
 ---
-# <a name="deprecating-types-and-members-ccx"></a>Türleri ve üyeleri geçersiz kılma (C++/CX)
+# <a name="deprecating-types-and-members-ccx"></a>Türleri ve üyeleri kullanımdan kaldırma (C++/CX)
 
-İçinde C++/CX, Windows çalışma zamanı türleri ve üyeleri kullanımdan kaldırma için üreticilerin ve tüketicilerin kullanarak [kullanım dışı](/uwp/api/windows.foundation.metadata.deprecatedattribute) özniteliği desteklenir. Bu öznitelik uygulanmış bir API tükettiğiniz, API kullanım dışıdır ve kullanmak için alternatif bir API de önerir gösteren bir derleme zamanı uyarı iletisi alırsınız. Kendi genel türleri ve yöntemleri bu özniteliğini uygulayın ve kendi özel ileti sağlayın.
+/CX C++'de, [kullanım dışı bırakılmış](/uwp/api/windows.foundation.metadata.deprecatedattribute) özniteliği kullanarak üreticileri ve tüketiciler için Windows çalışma zamanı türlerini ve üyelerini kullanımdan kaldırma desteklenir. Bu özniteliğin uygulandığı bir API kullanıyorsanız, API 'nin kullanım dışı olduğunu ve ayrıca kullanılacak alternatif bir API 'yi öneren bir derleme zamanı uyarı iletisi alırsınız. Kendi ortak türleriniz ve yöntemlerinde bu özniteliği uygulayabilir ve kendi özel iletinizi sağlayabilirsiniz.
 
 > [!CAUTION]
-> [Kullanım dışı](/uwp/api/windows.foundation.metadata.deprecatedattribute) özniteliği, yalnızca Windows çalışma zamanı türleri ile kullanmak içindir. Standart C++ sınıfları ve üyeleri, kullanmanızı [__declspec(deprecated)](../cpp/deprecated-cpp.md).
+> [Kullanım dışı bırakılan](/uwp/api/windows.foundation.metadata.deprecatedattribute) öznitelik yalnızca Windows çalışma zamanı türleriyle kullanım içindir. Standart C++ sınıflar ve Üyeler için [__declspec (kullanım dışı)](../cpp/deprecated-cpp.md)kullanın.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, genel Apı'lerinizi kullanımdan kaldırmaya gösterilmektedir; Örneğin, bir Windows çalışma zamanı bileşeni içinde. İkinci parametresinin türü [Windows: Foundation:: Metadata::DeprecationType](/uwp/api/windows.foundation.metadata.deprecationtype) API olup olmadığını belirtir. kaldırılan veya kullanım dışı. Değer desteklenir. şu anda yalnızca DeprecationType::Deprecated. Üçüncü parametre özniteliğinde belirtir [Windows::Foundation::Metadata::Platform](/uwp/api/windows.foundation.metadata.platformattribute) öznitelik uygulandığı için.
+Aşağıdaki örnekte, kendi ortak API 'lerinizi kullanımdan kaldırma (örneğin, bir Windows Çalışma Zamanı bileşeninde) gösterilmektedir. [Windows: Foundation:: Metadata::D eprecationType](/uwp/api/windows.foundation.metadata.deprecationtype) türünde ikinci parametre, API 'nin kullanım dışı bırakılıp kaldırılmadığını belirtir. Şu anda yalnızca kullanım dışı Cationtype::D epreta değeri desteklenir. Öznitelikteki üçüncü parametre, özniteliğin uygulandığı [Windows:: Foundation:: Metadata::P latform](/uwp/api/windows.foundation.metadata.platformattribute) öğesini belirtir.
 
 ```
 
@@ -35,27 +35,27 @@ public:
 };
 ```
 
-## <a name="supported-targets"></a>Desteklenen hedefleri
+## <a name="supported-targets"></a>Desteklenen hedefler
 
-Aşağıdaki tablo, kullanım dışı özniteliğin uygulanabileceği yapıları listeler:
+Aşağıdaki tabloda, kullanım dışı bırakılan özniteliğin uygulanabileceğini listeleyen yapılar listelenmektedir:
 
 | |
 |-|
 |XAML denetimi|
 |temsilci|
 |olay|
-|Enum alan|
+|sabit listesi alanı|
 |enum|
-|struct |
+|struct|
 |yöntemi|
 |sınıf|
 |arabirim|
 |özellik|
-|Yapı alanı|
-|Parametreli Oluşturucusu|
+|struct alanı|
+|Parametreli Oluşturucu|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Tür Sistemi](../cppcx/type-system-c-cx.md)<br/>
-[Visual C++ Dil Başvurusu](../cppcx/visual-c-language-reference-c-cx.md)<br/>
+[C++/CX Dil Başvurusu](../cppcx/visual-c-language-reference-c-cx.md)<br/>
 [Ad Alanları Başvurusu](../cppcx/namespaces-reference-c-cx.md)

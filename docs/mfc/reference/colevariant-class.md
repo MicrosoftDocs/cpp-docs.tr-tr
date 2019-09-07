@@ -20,12 +20,12 @@ helpviewer_keywords:
 - COleVariant [MFC], GetByteArrayFromVariantArray
 - COleVariant [MFC], SetString
 ms.assetid: e1b5cd4a-b066-4b9b-b48b-6215ed52d998
-ms.openlocfilehash: 0676f4896401ab777570666236c4639ad94c3a05
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 49cd4a8d3db436d5e3c4d29efbb4d80b4741a270
+ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69503045"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70739784"
 ---
 # <a name="colevariant-class"></a>Cotavariant sınıfı
 
@@ -68,16 +68,16 @@ class COleVariant : public tagVARIANT
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu veri türü OLE Otomasyonunda kullanılır. Özellikle, [Dispparams](/windows/win32/api/oaidl/ns-oaidl-tagdispparams) yapısı bir varyant yapıları dizisine yönelik bir işaretçi içerir. Bir `DISPPARAMS` yapı, parametreleri [IDispatch:: Invoke](/windows/win32/api/oaidl/nf-oaidl-idispatch-invoke)öğesine geçirmek için kullanılır.
+Bu veri türü OLE Otomasyonunda kullanılır. Özellikle, [Dispparams](/windows/win32/api/oaidl/ns-oaidl-dispparams) yapısı bir varyant yapıları dizisine yönelik bir işaretçi içerir. Bir `DISPPARAMS` yapı, parametreleri [IDispatch:: Invoke](/windows/win32/api/oaidl/nf-oaidl-idispatch-invoke)öğesine geçirmek için kullanılır.
 
 > [!NOTE]
 > Bu sınıf `VARIANT` yapıdan türetilir. Bu, bir `VARIANT` ' a çağrı `COleVariant` yapan bir parametreye geçirebilmeniz ve `VARIANT` yapının veri üyelerinin erişilebilir veri üyeleri `COleVariant`olması anlamına gelir.
 
 İki ilgili MFC sınıfı [copacurrency](../../mfc/reference/colecurrency-class.md) ve [copadatetime](../../atl-mfc-shared/reference/coledatetime-class.md) , değişken veri türü para birimini ( `VT_CY`) ve tarihini ( `VT_DATE`) kapsüllemeli. Sınıf, DAO sınıflarında yaygın olarak kullanılır; bu sınıfın tipik kullanımı için, örneğin [CDaoQueryDef](../../mfc/reference/cdaoquerydef-class.md) ve [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md)gibi bu sınıflara bakın. `COleVariant`
 
-Daha fazla bilgi için, Windows SDK [değişken](/windows/win32/api/oaidl/ns-oaidl-variant), [para birimi](/windows/win32/api/wtypes/ns-wtypes-cy), [Dispparams](/windows/win32/api/oaidl/ns-oaidl-tagdispparams)ve [IDispatch:: Invoke](/windows/win32/api/oaidl/nf-oaidl-idispatch-invoke) girdileri bölümüne bakın.
+Daha fazla bilgi için, Windows SDK [değişken](/windows/win32/api/oaidl/ns-oaidl-variant), [para birimi](/windows/win32/api/wtypes/ns-wtypes-cy~r1), [Dispparams](/windows/win32/api/oaidl/ns-oaidl-dispparams)ve [IDispatch:: Invoke](/windows/win32/api/oaidl/nf-oaidl-idispatch-invoke) girdileri bölümüne bakın.
 
-`COleVariant` Sınıfı ve OLE Otomasyonunda kullanımı hakkında daha fazla bilgi için, makale otomasyonunda "OLE Otomasyonunda parametreleri geçirme" konusuna bakın [](../../mfc/automation.md).
+`COleVariant` Sınıfı ve OLE Otomasyonunda kullanımı hakkında daha fazla bilgi için, makale [otomasyonunda](../../mfc/automation.md)"OLE Otomasyonunda parametreleri geçirme" konusuna bakın.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 

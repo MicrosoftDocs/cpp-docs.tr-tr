@@ -74,12 +74,12 @@ helpviewer_keywords:
 - COleServerItem [MFC], OnShow
 - COleServerItem [MFC], m_sizeExtent
 ms.assetid: 80256df6-3888-4256-944b-787d4b2e6b0d
-ms.openlocfilehash: e369cfcbf94a1e5abc59d6f66aa71599efb11765
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: dcae304e8571ecb5743002638ea23f13c3e21517
+ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69503747"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70741341"
 ---
 # <a name="coleserveritem-class"></a>Cotaserverıtem sınıfı
 
@@ -346,7 +346,7 @@ void GetEmbedSourceData(LPSTGMEDIUM lpStgMedium);
 ### <a name="parameters"></a>Parametreler
 
 *Lpstgorta*<br/>
-OLE öğesi için CF_EMBEDSOURCE verilerini alacak olan [Stgorta](/windows/win32/api/objidl/ns-objidl-stgmedium) yapısına yönelik işaretçi.
+OLE öğesi için CF_EMBEDSOURCE verilerini alacak olan [Stgorta](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1) yapısına yönelik işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -354,7 +354,7 @@ Bu biçim öğenin yerel verilerini içerir. Bu işlevin düzgün çalışması 
 
 Sonuç daha sonra [Cotadatasource:: CacheData](../../mfc/reference/coledatasource-class.md#cachedata)kullanılarak bir veri kaynağına eklenebilir. Bu işlev [Coelserverıtem:: OnGetClipboardData](#ongetclipboarddata)tarafından otomatik olarak çağrılır.
 
-Daha fazla bilgi için Windows SDK bkz. [Stgmedium](/windows/win32/api/objidl/ns-objidl-stgmedium) .
+Daha fazla bilgi için Windows SDK bkz. [Stgmedium](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1) .
 
 ##  <a name="getitemname"></a>Cotaserverıtem:: GetItemName
 
@@ -383,7 +383,7 @@ BOOL GetLinkSourceData(LPSTGMEDIUM lpStgMedium);
 ### <a name="parameters"></a>Parametreler
 
 *Lpstgorta*<br/>
-OLE öğesi için CF_LINKSOURCE verilerini alacak olan [Stgorta](/windows/win32/api/objidl/ns-objidl-stgmedium) yapısına yönelik işaretçi.
+OLE öğesi için CF_LINKSOURCE verilerini alacak olan [Stgorta](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1) yapısına yönelik işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -395,7 +395,7 @@ Bu biçim, OLE öğesinin türünü ve OLE öğesini içeren belgeyi bulmak içi
 
 Sonuç daha sonra [Cotadatasource:: CacheData](../../mfc/reference/coledatasource-class.md#cachedata)ile bir veri kaynağına eklenebilir. Bu işlev [OnGetClipboardData](#ongetclipboarddata)tarafından otomatik olarak çağrılır.
 
-Daha fazla bilgi için Windows SDK bkz. [Stgmedium](/windows/win32/api/objidl/ns-objidl-stgmedium) .
+Daha fazla bilgi için Windows SDK bkz. [Stgmedium](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1) .
 
 ##  <a name="getobjectdescriptordata"></a>Cotaserverıtem:: GetObjectDescriptorData
 
@@ -417,13 +417,13 @@ OLE öğesinin sol üst köşesinden fare tıklamasını kaydır. NULL olabilir.
 OLE öğesinin boyutu. NULL olabilir.
 
 *Lpstgorta*<br/>
-OLE öğesi için CF_OBJECTDESCRIPTOR verilerini alacak olan [Stgorta](/windows/win32/api/objidl/ns-objidl-stgmedium) yapısına yönelik işaretçi.
+OLE öğesi için CF_OBJECTDESCRIPTOR verilerini alacak olan [Stgorta](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1) yapısına yönelik işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Bilgiler, `STGMEDIUM` *lpStgMedium*tarafından işaret edilen yapıya kopyalanır. Bu biçim Özel Yapıştır iletişim kutusu için gereken bilgileri içerir.
 
-Daha fazla bilgi için Windows SDK bkz. [Stgmedium](/windows/win32/api/objidl/ns-objidl-stgmedium) .
+Daha fazla bilgi için Windows SDK bkz. [Stgmedium](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1) .
 
 ##  <a name="isconnected"></a>Cotaserverıtem:: IsConnected
 
@@ -521,7 +521,7 @@ Yürütülecek fiili belirtir. Aşağıdakilerden biri olabilir:
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kapsayıcı uygulama Microsoft Foundation Class Kitaplığı yazılmışsa, bu işlev, karşılık gelen `COleClientItem` nesnenin [cotaclientidıtem:: Activate](../../mfc/reference/coleclientitem-class.md#activate) üye işlevi çağrıldığında çağrılır. Varsayılan uygulama, birincil fiil veya OLEIVERB_SHOW belirtilmişse [OnShow](#onshow) üye işlevini çağırır, ikincil FIIL veya OLEIVERB_OPEN [](#onopen) belirtilmişse ve OLEIVERB_HIDE belirtilmişse [OnHide](#onhide) . *Iverb* , yukarıda `OnShow` listelenen fiillerden biri değilse, varsayılan uygulama çağırır.
+Kapsayıcı uygulama Microsoft Foundation Class Kitaplığı yazılmışsa, bu işlev, karşılık gelen `COleClientItem` nesnenin [cotaclientidıtem:: Activate](../../mfc/reference/coleclientitem-class.md#activate) üye işlevi çağrıldığında çağrılır. Varsayılan uygulama, birincil fiil veya OLEIVERB_SHOW belirtilmişse [OnShow](#onshow) üye işlevini çağırır, ikincil FIIL veya OLEIVERB_OPEN [belirtilmişse ve](#onopen) OLEIVERB_HIDE belirtilmişse [OnHide](#onhide) . *Iverb* , yukarıda `OnShow` listelenen fiillerden biri değilse, varsayılan uygulama çağırır.
 
 Birincil fiiliniz öğeyi göstermezse bu işlevi geçersiz kılın. Örneğin, öğe bir ses kaydı ise ve birincil fiili yürütülme ise, öğeyi yürütmek için sunucu uygulamasını göstermek zorunda değilsiniz.
 
@@ -745,7 +745,7 @@ virtual BOOL OnRenderData(
 Bilgilerin istendiği biçimi belirten [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapısına işaret eder.
 
 *Lpstgorta*<br/>
-Verilerin döndürüleceği bir [Stgorta](/windows/win32/api/objidl/ns-objidl-stgmedium) yapısına işaret eder.
+Verilerin döndürüleceği bir [Stgorta](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1) yapısına işaret eder.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -759,7 +759,7 @@ Belirtilen biçim, Gecikmeli işleme için `COleDataSource` [DelayRenderData](..
 
 Bu gelişmiş bir geçersiz kılınabilir. Verilerinizi istenen biçimde ve ortamda sağlamak için bu işlevi geçersiz kılın. Verilerinize bağlı olarak, bunun yerine bu işlevin diğer sürümlerinden birini geçersiz kılmak isteyebilirsiniz. Verileriniz küçük ve boyut olarak düzeltildiğinde, geçersiz kılın `OnRenderGlobalData`. Verileriniz bir dosya içinde veya değişken boyutunda ise, geçersiz kılın `OnRenderFileData`.
 
-Daha fazla bilgi için, bkz. Windows SDK [IDataObject:: GetData](/windows/win32/api/objidl/nf-objidl-idataobject-getdata), [stgmedium](/windows/win32/api/objidl/ns-objidl-stgmedium), [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc)ve [TYMED](/windows/win32/api/objidl/ne-objidl-tymed) .
+Daha fazla bilgi için, bkz. Windows SDK [IDataObject:: GetData](/windows/win32/api/objidl/nf-objidl-idataobject-getdata), [stgmedium](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1), [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc)ve [TYMED](/windows/win32/api/objidl/ne-objidl-tymed) .
 
 ##  <a name="onrenderfiledata"></a>Cotaserverıtem:: OnRenderFileData
 
@@ -863,7 +863,7 @@ virtual BOOL OnSetData(
 Verilerin biçimini belirten bir [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapısına yönelik işaretçi.
 
 *Lpstgorta*<br/>
-Verilerin bulunduğu bir [Stgorta](/windows/win32/api/objidl/ns-objidl-stgmedium) yapısına yönelik işaretçi.
+Verilerin bulunduğu bir [Stgorta](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1) yapısına yönelik işaretçi.
 
 *bRelease*<br/>
 İşlev çağrısını tamamladıktan sonra kimin depolama ortamının sahipliğini olduğunu gösterir. Çağıran, depolama ortamı adına ayrılan kaynakları serbest bırakmaktan sorumlu kişiye karar veriyor. Çağıran bunu *bRelease*'i ayarlayarak yapar. *BRelease* sıfır değilse, sunucu öğesi sahipliğini alır ve onu kullanmayı bitirdiğinde ortamı serbest bırakır. *BRelease* 0 olduğunda, çağıran sahipliği korur ve sunucu öğesi depolama ortamını yalnızca çağrının süresi boyunca kullanabilir.
@@ -878,7 +878,7 @@ Sunucu öğesi, başarıyla edinene kadar verilerin sahipliğini almaz. Diğer b
 
 Varsayılan uygulama hiçbir şey yapmaz. OLE öğesinin verilerini belirtilen verilerle değiştirmek için bu işlevi geçersiz kılın. Bu gelişmiş bir geçersiz kılınabilir.
 
-Daha fazla bilgi için Windows SDK bkz. [Stgmedium](/windows/win32/api/objidl/ns-objidl-stgmedium), [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc)ve [ReleaseStgMedium](/windows/win32/api/ole2/nf-ole2-releasestgmedium) .
+Daha fazla bilgi için Windows SDK bkz. [Stgmedium](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1), [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc)ve [ReleaseStgMedium](/windows/win32/api/ole2/nf-ole2-releasestgmedium) .
 
 ##  <a name="onsetextent"></a>Cotaserverıtem:: OnSetExtent
 

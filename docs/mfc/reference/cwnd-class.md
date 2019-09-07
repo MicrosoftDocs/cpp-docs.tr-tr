@@ -818,12 +818,12 @@ helpviewer_keywords:
 - CWnd [MFC], WindowProc
 - CWnd [MFC], m_hWnd
 ms.assetid: 49a832ee-bc34-4126-88b3-bc1d9974f6c4
-ms.openlocfilehash: 5e7a0b0d7f5c41c60fc10784518c4c075c13f778
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: bbd1f60c3628d5fcd103e220362004ec34ab2c41
+ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69502137"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70740989"
 ---
 # <a name="cwnd-class"></a>CWnd sınıfı
 
@@ -1275,7 +1275,7 @@ class CWnd : public CCmdTarget
 
 Bir `CWnd` nesne bir Windows penceresinden farklıdır, ancak ikisi de sıkı bir şekilde bağlantılıdır. `CWnd` Oluşturucu `CWnd` ve yıkıcı tarafından bir nesne oluşturulur veya yok edilir. Diğer yandan Windows penceresi, bir `Create` üye işlevi tarafından oluşturulan ve `CWnd` sanal yok edicinin yok edileceği Windows 'a dahili bir veri yapısıdır. [Destroyıwindow](#destroywindow) işlevi, nesneyi yok etmeden Windows penceresini yok eder.
 
-Sınıfı ve ileti eşleme mekanizması `WndProc` işlevi gizler. `CWnd` Gelen Windows bildirim iletileri ileti eşleme üzerinden doğru `CWnd` ileti üyesi işlevlerine otomatik olarak yönlendirilir. Türetilmiş sınıflarınızda üyenin belirli bir iletisini işlemek için bir **üzerinde**<em>ileti</em> üye işlevini geçersiz kılabilirsiniz.
+Sınıfı ve ileti eşleme mekanizması `WndProc` işlevi gizler. `CWnd` Gelen Windows bildirim `CWnd` **iletileri ileti eşleme üzerinden doğru ileti**<em>üyesi işlevlerine</em> otomatik olarak yönlendirilir. Türetilmiş sınıflarınızda üyenin belirli bir iletisini işlemek için bir **üzerinde**<em>ileti</em> üye işlevini geçersiz kılabilirsiniz.
 
 Sınıfı `CWnd` , uygulamanız için bir Windows alt penceresi oluşturmanıza da imkan tanır. Öğesinden `CWnd`bir sınıf türetirsiniz, sonra uygulamanıza özgü verileri depolamak için türetilmiş sınıfa üye değişkenleri ekleyin. İletileri pencereye yönlendirdiğinde ne olacağını belirtmek için ileti işleyicisi üye işlevlerini ve türetilmiş sınıfta bir ileti eşlemesi uygulayın.
 
@@ -2587,7 +2587,7 @@ Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Liste kutusunun,, bir sürücü harfi, dosya veya dizin [](#dlgdirlistcombobox) adı olduğunu ve bu seçim olduğunu varsayar.
+Liste [kutusunun,,](#dlgdirlistcombobox) bir sürücü harfi, dosya veya dizin adı olduğunu ve bu seçim olduğunu varsayar.
 
 `DlgDirSelectComboBox` Üye işlevi, seçimi belirtilen arabelleğe kopyalar. Seçim yoksa, arabelleğin içeriği değiştirilmez.
 
@@ -2864,12 +2864,12 @@ Araç ipuçları etkinse doğru; Aksi halde yanlış.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Window için [TOOLINFO](/windows/win32/api/commctrl/ns-commctrl-toolinfow) struct veya yapılar sağlamak üzere [OnToolHitTest](#ontoolhittest) 'i geçersiz kılın.
+Window için [TOOLINFO](/windows/win32/api/commctrl/ns-commctrl-tttoolinfoa) struct veya yapılar sağlamak üzere [OnToolHitTest](#ontoolhittest) 'i geçersiz kılın.
 
 > [!NOTE]
 > [CToolBar](../../mfc/reference/ctoolbar-class.md)gibi bazı pencereler, [OnToolHitTest](#ontoolhittest)'in yerleşik bir uygulamasını sağlar.
 
-Bu yapı hakkında daha fazla bilgi için Windows SDK [TOOLINFO](/windows/win32/api/commctrl/ns-commctrl-toolinfow) bölümüne bakın.
+Bu yapı hakkında daha fazla bilgi için Windows SDK [TOOLINFO](/windows/win32/api/commctrl/ns-commctrl-tttoolinfoa) bölümüne bakın.
 
 Yalnızca çağırma `EnableToolTips` , üst pencere öğesinden `CFrameWnd`türetilmediği takdirde alt Denetimleriniz için araç ipuçlarını göstermek için yeterli değildir. Bunun nedeni `CFrameWnd` , TTN_NEEDTEXT bildirimi için varsayılan bir işleyici sağlar. Ana pencereniz öğesinden `CFrameWnd`türetilmediği, diğer bir deyişle, bir iletişim kutusu veya form görünümüdür, TTN_NEEDTEXT araç ipucu bildirimi için bir işleyici sağlamadığınız takdirde alt Denetimleriniz için araç ipuçları doğru görüntülenmez. [Araç ipuçlarına](../../mfc/tool-tips-in-windows-not-derived-from-cframewnd.md)bakın.
 
@@ -3106,7 +3106,7 @@ BOOL FlashWindow(BOOL bInvert);
 ### <a name="parameters"></a>Parametreler
 
 *bInvert*<br/>
-`CWnd` Öğesinin flamı yoksa özgün durumuna döndürülüp döndürülmeyeceğini belirtir. , `CWnd` *BinVert* true ise, bir durumdan diğerine düztür. *BinVert* yanlış ise, pencere orijinal durumuna döndürülür (etkin veya devre dışı).
+`CWnd` Öğesinin flamı yoksa özgün durumuna döndürülüp döndürülmeyeceğini belirtir. , `CWnd` BinVert true ise, bir durumdan diğerine *düztür* . *BinVert* yanlış ise, pencere orijinal durumuna döndürülür (etkin veya devre dışı).
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -3772,7 +3772,7 @@ Tarafından `GetControlUnknown` döndürülen arabirim işaretçisine başvuru s
 
 ##  <a name="getcurrentmessage"></a>CWnd:: GetCurrentMessage
 
-Bu pencerenin Şu anda işlediği iletiye bir işaretçi döndürür. Yalnızca bir<em>ileti</em> iletisinde ileti işleyici üye işlevinde çağrılmalıdır.
+Bu pencerenin Şu anda işlediği iletiye bir işaretçi döndürür. Yalnızca **bir**<em>ileti</em> iletisinde ileti işleyici üye işlevinde çağrılmalıdır.
 
 ```
 static const MSG* PASCAL GetCurrentMessage();
@@ -4748,7 +4748,7 @@ Döndürülen işaretçi geçici olabilir ve daha sonra kullanılmak üzere depo
 
 Denetim menüsünün kendi kopyasını yapmak `GetSystemMenu` için kullanılmayan herhangi bir pencere, standart denetim menüsünü alır.
 
-`GetSystemMenu` Üye işlevi tarafından döndürülen işaretçi, [CMenu:: AppendMenu](../../mfc/reference/cmenu-class.md#appendmenu), [CMenu:: InsertMenu](../../mfc/reference/cmenu-class.md#insertmenu)veya [CMenu:](../../mfc/reference/cmenu-class.md#modifymenu) : ModifyMenu işlevleriyle birlikte, denetim menüsünü değiştirmek için kullanılabilir.
+`GetSystemMenu` Üye işlevi tarafından döndürülen işaretçi, [CMenu:: AppendMenu](../../mfc/reference/cmenu-class.md#appendmenu), [CMenu:: InsertMenu](../../mfc/reference/cmenu-class.md#insertmenu)veya [CMenu:: ModifyMenu](../../mfc/reference/cmenu-class.md#modifymenu) işlevleriyle birlikte, denetim menüsünü değiştirmek için kullanılabilir.
 
 Denetim menüsü başlangıçta SC_CLOSE, SC_MOVE ve SC_SIZE gibi çeşitli KIMLIK değerleriyle tanımlanan öğeleri içerir. Denetim menüsündeki öğeler [WM_SYSCOMMAND](#onsyscommand) iletileri oluşturur. Önceden tanımlanmış tüm Denetim menüsü öğelerinin KIMLIK numaraları 0xF000 ' dan büyük. Bir uygulama denetim menüsüne öğe eklerse, F000 değerinden küçük bir KIMLIK numarası kullanmalıdır.
 
@@ -5967,7 +5967,7 @@ afx_msg void OnAppCommand(
 |---------------|-----------------|
 |*pWnd*|'ndaki Kullanıcının komut düğmesine `CWnd` tıkladığı veya komut tuşuna bastığı pencereyi temsil eden bir nesne işaretçisi. Bu pencere, iletiyi alan pencerenin bir alt penceresi olabilir.|
 |*nCmd*|'ndaki Uygulama komutunu gösterir. Olası değerler listesi için, [WM_APPCOMMAND](/windows/win32/inputdev/wm-appcommand)' nin *lParam* parametresinin *cmd* bölümü altındaki komutlara bakın.|
-|*Ncihaz*|'ndaki Giriş olayını oluşturan giriş aygıtı. Olası değerler listesi için, [WM_APPCOMMAND](/windows/win32/inputdev/wm-appcommand)parametresinin *Udevice* bölümü altındaki cihazlara bakın.|
+|*Ncihaz*|'ndaki Giriş olayını oluşturan giriş aygıtı. Olası değerler listesi *için,* [WM_APPCOMMAND](/windows/win32/inputdev/wm-appcommand)parametresinin *Udevice* bölümü altındaki cihazlara bakın.|
 |*nAnahtar*|'ndaki CTRL tuşu veya sol fare düğmesi gibi, etkin olan tüm sanal anahtarları gösterir. Olası değerler listesi için, [WM_APPCOMMAND](/windows/win32/inputdev/wm-appcommand)' nin *lParam* parametresinin *dwKeys* bölümünün altındaki anahtarlara bakın. Daha fazla bilgi için [fare girişi hakkında](/windows/win32/inputdev/about-mouse-input)bölümündeki "ileti parametreleri" alt başlığına bakın.|
 
 ### <a name="remarks"></a>Açıklamalar
@@ -8169,7 +8169,7 @@ Windows varsayılan işleme devam etmesi gerekiyorsa sıfır dışı; başlık �
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan uygulama, aşağı doğru ise başlık çubuğunu ve başlık çubuğu metnini etkin renkleriyle, *BACTIVE* false ise etkin olmayan renklerde çizer.
+Varsayılan uygulama, aşağı *doğru ise başlık* çubuğunu ve başlık çubuğu metnini etkin renkleriyle, *bActive* false ise etkin olmayan renklerde çizer.
 
 > [!NOTE]
 > Bu üye işlevi, uygulamanızın bir Windows iletisini işlemesini sağlamak için çerçevesi tarafından çağırılır. İşlevinizin geçirildiği parametreler, ileti alındığında Framework tarafından alınan parametreleri yansıtır. Bu işlevin temel sınıf uygulamasını çağırırsanız, bu uygulama, işleve sağladığınız parametrelere göre değil, başlangıçta iletiyle geçilen parametreleri kullanacaktır.
@@ -9858,7 +9858,7 @@ virtual INT_PTR OnToolHitTest(
 İmlecin x ve y koordinatını belirtir. Bu koordinatlar, pencerenin sol üst köşesine göre her zaman görelidir
 
 *PTI*<br/>
-[TOOLINFO](/windows/win32/api/commctrl/ns-commctrl-toolinfow) yapısına yönelik bir işaretçi. Aşağıdaki yapı değerleri varsayılan olarak ayarlanır:
+[TOOLINFO](/windows/win32/api/commctrl/ns-commctrl-tttoolinfoa) yapısına yönelik bir işaretçi. Aşağıdaki yapı değerleri varsayılan olarak ayarlanır:
 
 -  =  bir pencereye HWND`m_hWnd` tutamacı
 
@@ -9880,7 +9880,7 @@ Araç ipucunun ilişkilendirildiği alan bir düğme değilse, `OnToolHitTest` y
 
 Varsayılan `OnToolHitTest` tarafından sağlanan farklı bilgileri sağlamak için geçersiz kılın.
 
-Yapı hakkında daha fazla bilgi için, Windows SDK [TOOLINFO](/windows/win32/api/commctrl/ns-commctrl-toolinfow)bölümüne bakın.
+Yapı hakkında daha fazla bilgi için, Windows SDK [TOOLINFO](/windows/win32/api/commctrl/ns-commctrl-tttoolinfoa)bölümüne bakın.
 
 ##  <a name="ontouchinput"></a>CWnd:: OnTouchInput
 
@@ -11753,7 +11753,7 @@ Zaman aşımı değerini veya aralığı milisaniye olarak belirtir.
 
 Bir Aralık değeri belirtilir ve zaman aralığı her geçtiğinde sistem, yükleme uygulamasının yükleme ileti kuyruğuna bir WM_TIMER iletisi gönderir veya iletiyi uygulama tanımlı `TimerProc` geri çağırma işlevine geçirir.
 
-Lpıbu *Zamanlayıcı* geri çağırma işlevinin adlandırılması `TimerProc`gerekmez, ancak statik olarak bildirilmelidir ve aşağıdaki gibi tanımlanmalıdır.
+*Lpıbu Zamanlayıcı* geri çağırma işlevinin adlandırılması `TimerProc`gerekmez, ancak statik olarak bildirilmelidir ve aşağıdaki gibi tanımlanmalıdır.
 
 ```
 void CALLBACK TimerProc(

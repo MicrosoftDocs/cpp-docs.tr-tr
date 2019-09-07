@@ -98,12 +98,12 @@ helpviewer_keywords:
 - CReBarCtrl [MFC], ShowBand
 - CReBarCtrl [MFC], SizeToRect
 ms.assetid: 154570d7-e48c-425d-8c7e-c64542bcb4cc
-ms.openlocfilehash: 9a8c989988801bc7af993fbc69717ac7cff07dcf
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 14befb819a30238abb5780b1bdcc6d74402e8976
+ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69502733"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70741184"
 ---
 # <a name="crebarctrl-class"></a>CReBarCtrl sınıfı
 
@@ -670,7 +670,7 @@ int HitTest(RBHITTESTINFO* prbht);
 ### <a name="parameters"></a>Parametreler
 
 *prbht*<br/>
-[Rbhittestınfo](/windows/win32/api/commctrl/ns-commctrl-_rb_hittestinfo) yapısına yönelik bir işaretçi. İletiyi göndermeden önce, `pt` bu yapının üyesi, istemci koordinatları ' nde test edilecek noktaya başlatılmalıdır.
+[Rbhittestınfo](/windows/win32/api/commctrl/ns-commctrl-rbhittestinfo) yapısına yönelik bir işaretçi. İletiyi göndermeden önce, `pt` bu yapının üyesi, istemci koordinatları ' nde test edilecek noktaya başlatılmalıdır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

@@ -22,12 +22,12 @@ helpviewer_keywords:
 - COleCurrency [MFC], m_cur
 - COleCurrency [MFC], m_status
 ms.assetid: 3a36e345-303f-46fb-a57c-858274378a8d
-ms.openlocfilehash: a23bc489fce00d9ba0be6a3aa71468b469bf54c8
-ms.sourcegitcommit: e10a5feea193c249ddc5a6faba48e7c6d8784e73
+ms.openlocfilehash: fc7c64ada1100b0fc0a51670de3e8ec04b141b04
+ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70177410"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70741643"
 ---
 # <a name="colecurrency-class"></a>Cotacurrency sınıfı
 
@@ -128,7 +128,7 @@ Bu oluşturucuların hepsi, belirtilen değere `COleCurrency` başlatılan yeni 
 
 - Cotacurrency (), 0 `COleCurrency` (sıfır) olarak başlatılan bir nesne oluşturur.
 
-- Copacurrency (`cySrc`), bir `COleCurrency` [para birimi](/windows/win32/api/wtypes/ns-wtypes-cy) değerinden bir nesne oluşturur.
+- Copacurrency (`cySrc`), bir `COleCurrency` [para birimi](/windows/win32/api/wtypes/ns-wtypes-cy~r1) değerinden bir nesne oluşturur.
 
 - Copacurrency (`curSrc`) varolan `COleCurrency` bir `COleCurrency` nesneden bir nesne oluşturur. Yeni nesne, kaynak nesneyle aynı duruma sahip.
 
@@ -136,7 +136,7 @@ Bu oluşturucuların hepsi, belirtilen değere `COleCurrency` başlatılan yeni 
 
 - `COleCurrency(`belirtilen sayısal`, `bileşenlerden`) Constructs a `nunits nFractionalUnits cotacurrency ' nesnesi. Kesir bölümünün mutlak değeri 10.000 ' den büyükse, birimlere uygun ayarlama yapılır. Birimler ve kesir bölümünün imzalanmış uzun değerlerle belirtilir.
 
-Daha fazla bilgi için Windows SDK [para birimine](/windows/win32/api/wtypes/ns-wtypes-cy) ve [Varyant](/windows/win32/api/oaidl/ns-oaidl-variant) girişlerine bakın.
+Daha fazla bilgi için Windows SDK [para birimine](/windows/win32/api/wtypes/ns-wtypes-cy~r1) ve [Varyant](/windows/win32/api/oaidl/ns-oaidl-variant) girişlerine bakın.
 
 ### <a name="example"></a>Örnek
 
@@ -236,14 +236,14 @@ Durumu geçersiz olarak ayarlayaetkileyebilecek işlemler hakkında daha fazla b
 
 ##  <a name="m_cur"></a>Colet para birimi:: m_cur
 
-Bu`COleCurrency` nesne için temeldeki [para birimi](/windows/win32/api/wtypes/ns-wtypes-cy) yapısı.
+Bu`COleCurrency` nesne için temeldeki [para birimi](/windows/win32/api/wtypes/ns-wtypes-cy~r1) yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
 > [!CAUTION]
 >  Bu işlevin döndürdüğü işaretçinin eriştiği `CURRENCY` yapıda değeri değiştirmek, bu `COleCurrency` nesnenin değerini değiştirecek. Bu `COleCurrency` nesnenin durumunu değiştirmez.
 
-Daha fazla bilgi için Windows SDK [para birimi](/windows/win32/api/wtypes/ns-wtypes-cy) girdisine bakın.
+Daha fazla bilgi için Windows SDK [para birimi](/windows/win32/api/wtypes/ns-wtypes-cy~r1) girdisine bakın.
 
 ##  <a name="m_status"></a>Colet para birimi:: m_status
 
@@ -314,7 +314,7 @@ Her işlecin kısa bir açıklaması aşağıdadır:
 
 - **operator = (** *varSrc* **)** Değer (veya [COleVariant](../../mfc/reference/colevariant-class.md) nesnesi) bir para birimine ( `VT_CY`) dönüştürme `COleCurrency` başarılı olursa, dönüştürülen değer bu nesneye kopyalanır ve durumu geçerli olarak ayarlanır. `VARIANT` Dönüştürme başarılı olmazsa, `COleCurrency` nesnenin değeri 0 olarak ve durumu geçersiz olarak ayarlanır.
 
-Daha fazla bilgi için Windows SDK [para birimine](/windows/win32/api/wtypes/ns-wtypes-cy) ve [Varyant](/windows/win32/api/oaidl/ns-oaidl-variant) girişlerine bakın.
+Daha fazla bilgi için Windows SDK [para birimine](/windows/win32/api/wtypes/ns-wtypes-cy~r1) ve [Varyant](/windows/win32/api/oaidl/ns-oaidl-variant) girişlerine bakın.
 
 ### <a name="example"></a>Örnek
 

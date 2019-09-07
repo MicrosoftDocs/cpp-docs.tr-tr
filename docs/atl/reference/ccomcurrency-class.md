@@ -15,12 +15,12 @@ f1_keywords:
 helpviewer_keywords:
 - CComCurrency class
 ms.assetid: a1c3d10a-bba6-40cc-8bcf-aed9023c8a9e
-ms.openlocfilehash: 11463b7113876abdf0743b9f8c7df373fadd99ef
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: d6eb67e04ebb2b9084874a586eafc744df2d3f40
+ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69497289"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70739778"
 ---
 # <a name="ccomcurrency-class"></a>CComCurrency sınıfı
 
@@ -642,5 +642,5 @@ Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [COleCurrency Sınıfı](../../mfc/reference/colecurrency-class.md)<br/>
-[BIRIMINDEKI](/windows/win32/api/wtypes/ns-wtypes-cy)<br/>
+[BIRIMINDEKI](/windows/win32/api/wtypes/ns-wtypes-cy~r1)<br/>
 [Sınıfa genel bakış](../../atl/atl-class-overview.md)

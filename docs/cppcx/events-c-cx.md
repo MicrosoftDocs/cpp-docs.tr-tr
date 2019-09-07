@@ -2,65 +2,65 @@
 title: Olaylar (C++/CX)
 ms.date: 07/15/2019
 ms.assetid: 31c8e08a-00ad-40f9-8f7e-124864aaad58
-ms.openlocfilehash: d0a3ab01628487dcca081eb300470cbd1bf3bb83
-ms.sourcegitcommit: fd466f2e14ad001f52f3dbe54f46d77be10f2d7b
+ms.openlocfilehash: aab37353b1ea8d9f81a8e9a9ae489a4dd3542cc0
+ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67894452"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70740521"
 ---
 # <a name="events-ccx"></a>Olaylar (C++/CX)
 
-Bir Windows türü bildirebilirsiniz (Yayımlama) çalışma zamanı olayları ve istemci kodu aynı bileşenin veya diğer bileşenleri abone olabilir, bu olaylarla adlı yöntemler ilişkilendirerek *olay işleyicileri* olaylı. Birden çok olay işleyicileri, tek bir olay ile ilişkili olabilir. Yayımlama nesne olayı oluşturan, tüm olay işleyicileri çağrılmasına neden olur. Bu şekilde, yayımcı olayını ne olursa olsun bir özel eylem uygundur abone sınıfı gerçekleştirebilirsiniz. Bir olay olaya abone için tüm olay işleyicilerine sahip olması imza belirten bir temsilci türü vardır.
+Bir Windows Çalışma Zamanı türü, olayları bildirebilir (yani, yayımlayabilir) ve aynı bileşendeki veya diğer bileşenlerde bulunan istemci kodu, olay *işleyicileri* adlı yöntemleri olayla ilişkilendirerek, bu olaylara abone olabilir. Birden çok olay işleyicisi tek bir olayla ilişkilendirilebilir. Yayımlama nesnesi olayı harekete geçirirse, tüm olay işleyicilerinin çağrılmasına neden olur. Bu şekilde, abone olan bir sınıf, yayımcı olayı harekete geçirirse uygun olan herhangi bir özel eylemi gerçekleştirebilir. Bir olay, tüm olay işleyicilerinin olaya abone olmak için sahip olması gereken imzayı belirten bir temsilci türü içerir.
 
-## <a name="consuming-events-in-windows-components"></a>Windows bileşenleri olayları kullanma
+## <a name="consuming-events-in-windows-components"></a>Windows bileşenlerinde olayları kullanma
 
-Windows çalışma zamanı'ndaki birçok bileşen olayları gösterir. Örneğin, bir LightSensor nesnesi algılayıcı yeni parlaklığı değeri bildirdiğinde bir ReadingChanged olayı tetikler. Programınızda LightSensor nesne kullandığınızda ReadingChanged olay harekete çağrılacak bir yöntem tanımlayabilirsiniz. Yöntem ne olursa olsun yapmak istediğiniz yapabilirler. imzası çağrılan temsilcisinin imzasıyla eşleşmelidir tek gereksinim olmasıdır. Bir temsilci olay işleyicisi oluşturun ve bir olaya abone hakkında daha fazla bilgi için bkz. [Temsilciler](../cppcx/delegates-c-cx.md).
+Windows Çalışma Zamanı birçok bileşeni olayları kullanıma sunar. Örneğin, algılayıcı yeni bir sütun değeri bildirdiğinde bir açık algılayıcı nesnesi ReadingChanged olayını tetikluyor. Programınızda bir Lightalgılayıcı nesnesi kullandığınızda, ReadingChanged olayı tetiklendiğinde çağrılacak yöntemi tanımlayabilirsiniz. Yöntemi, yapmak istediğiniz her şeyi yapabilir; Tek gereksinim, imzası çağrılan temsilcinin imzasıyla aynı olmalıdır. Bir temsilci olay işleyicisi oluşturma ve bir olaya abone olma hakkında daha fazla bilgi için bkz. [Temsilciler](../cppcx/delegates-c-cx.md).
 
 ## <a name="creating-custom-events"></a>Özel olaylar oluşturma
 
 ### <a name="declaration"></a>Bildirim
 
-Başvuru sınıfı veya arabirim, bir olay bildirebilir ve genel, iç (ortak/özel) sahip olabilir, genel korumalı, korumalı, özel korumalı veya özel erişilebilirlik. Dahili olarak bir olay bildirdiğinizde, derleyici iki erişimci yöntemlerini gösteren bir nesne oluşturur: ekleyip kaldırabilirsiniz. Olay nesnesiyle abone nesneleri olay işleyicilerini kaydedin, bunları bir koleksiyonda depolar. Olay tetiklendiğinde olay nesnesi, listedeki tüm işleyiciler sırayla çağırır. Önemsiz bir olay — ister aşağıdaki örnekte bir tane — de örtülü olarak bir örtük yedekleme deposu sahip `add` ve `remove` erişimci metotlarını. Kendi erişimcileri özel belirttiğiniz yolla belirtebilirsiniz `get` ve `set` özellikte erişimcileri.  Uygulayan sınıfa önemsiz bir olay Olay abonesi listesinde el ile geçiş yapamazsınız.
+Bir başvuru sınıfında veya arabirimde bir olay bildirebilirsiniz ve ortak, iç (ortak/özel), genel korumalı, korunan, özel korumalı veya özel erişilebilirlik olabilir. Bir olayı bildirdiğinizde, derleyici dahili olarak iki erişimci yöntemi sunan bir nesne oluşturur: Ekle ve Kaldır. Abone nesneleri olay işleyicilerini kaydederken, olay nesnesi bunları bir koleksiyonda depolar. Bir olay harekete geçirildiğinde, olay nesnesi kendi listesindeki tüm işleyicileri sırayla çağırır. Aşağıdaki örnekte olduğu gibi önemsiz bir olay da örtük bir yedekleme deposuna ve örtük `add` ve `remove` erişimci yöntemlerine sahiptir. Ayrıca, bir özellik üzerinde özel `get` ve `set` erişimciler belirtebileceğiniz şekilde kendi erişimcinizi de belirtebilirsiniz.  Uygulama sınıfı, önemsiz bir olayda olay abone listesinde el ile geçiş yapılamaz.
 
-Aşağıdaki örnek, bildirme ve bir olay harekete gösterilmektedir. Olay bir temsilci türüne sahip ve kullanılarak bildirilen bildirimi "^" simgesi.
+Aşağıdaki örnek, bir olayın nasıl bildirilemeyeceğini ve tetikleneceği gösterilmektedir. Olayın bir temsilci türü olduğuna ve "^" simgesi kullanılarak bildirildiğine dikkat edin.
 
 [!code-cpp[cx_events#01](../cppcx/codesnippet/CPP/cx_events/class1.h#01)]
 
 ### <a name="usage"></a>Kullanım
 
-Aşağıdaki örnek, bir abone sınıfını nasıl kullandığını gösterir. `+=` işleci olaya abone olur ve bir olay işleyicisi, olay başlatıldığında çağrılacak sağlar. Sağlanan işlev Yayımcı tarafında içinde tanımlanan metot temsilcisinin imzası eşleştiğine dikkat edin `EventTest` ad alanı.
+Aşağıdaki örnek, bir abone sınıfının olaya abone olmak için `+=` işlecini nasıl kullandığını gösterir ve olay tetiklendiğinde çağrılacak olay işleyicisini sağlar. Belirtilen işlevin, `EventTest` ad alanındaki Yayımcı tarafında tanımlanan temsilcinin imzasıyla eşleştiğinden emin olun.
 
 [!code-cpp[cx_events#02](../cppcx/codesnippet/CPP/eventsupportinvs/eventclientclass.h#02)]
 
 > [!WARNING]
-> Genel olarak, döngüsel başvuru kaçınmak için dikkatli almadıkları sürece, bir lambda yerine adlandırılmış bir işlev için bir olay işleyicisi kullanmak en iyisidir. Bir lambda güçlü başvuruya göre yakalayan ve döngüsel bir başvuru oluşturur ancak bir adlandırılmış işlev "Bu" işaretçiyi zayıf başvuru tarafından yakalar. Daha fazla bilgi için [zayıf başvurular ve döngüleri kesme (C++/CX)](../cppcx/weak-references-and-breaking-cycles-c-cx.md).
+> Genel olarak, döngüsel başvuruların oluşmaması için harika bir işlem yapmadığınız müddetçe, bir olay işleyicisi olarak bir lambda yerine adlandırılmış bir işlevin kullanılması daha iyidir. Adlandırılmış bir işlev, zayıf başvuruya göre "This" işaretçisini yakalar, ancak bir lambda bunu güçlü başvuruya göre yakalar ve döngüsel bir başvuru oluşturur. Daha fazla bilgi için bkz. [zayıf başvurular ve ayırma döngüleriC++(/CX)](../cppcx/weak-references-and-breaking-cycles-c-cx.md).
 
-### <a name="custom-add-and-remove-methods"></a>Özel yöntemler ekleyip
+### <a name="custom-add-and-remove-methods"></a>Özel ekleme ve kaldırma yöntemleri
 
-Dahili olarak, bir olay Ekle yöntemi, bir kaldırma yöntemi ve bir raise yöntemi vardır. İstemci kodu bir olaya abone olduğunda Ekle yöntemi çağrılır ve iletilen temsilci olay çağırma listesine eklenir. Yayımlama sınıfı olayı çağırır, raise() yöntemin çağrılması neden olur ve listedeki her bir temsilciye sırayla çağrılır. Abone kendisini çağrılacak olayın Kaldır yöntemi neden temsilci listeden kaldırabilirsiniz. Derleyici, kodunuzda tanımlamazsanız varsayılan sürümleri bu yöntemlerin sağlar; Bu Önemsiz olaylar olarak bilinir. Çoğu durumda, önemsiz bir olay gereken şey.
+Dahili olarak, bir olayda Add yöntemi, Remove yöntemi ve bir Raise yöntemi vardır. İstemci kodu bir olaya abone olduğunda, Add yöntemi çağrılır ve geçirilen temsilci olayın çağırma listesine eklenir. Yayımlama sınıfı olayını çağırır, Raise () yönteminin çağrılmasına ve listedeki her temsilcinin sırayla çağrılmasına neden olur. Abone, olayın kaldırma yönteminin çağrılmasına neden olan temsilci listesinden kendisini kaldırabilir. Derleyici kodunuzda tanımlamadıysanız bu yöntemlerin varsayılan sürümlerini sağlar; Bunlar önemsiz olaylar olarak bilinir. Çoğu durumda, gereken tek şey basit bir olaydır.
 
-Özel belirtebilirsiniz eklemek, kaldırmak ve yanıt eklenmesi veya kaldırılmasını aboneleri için özel mantığı gerçekleştirmeniz gerekiyorsa, bir olay için yöntemleri Yükselt. Örneğin, pahalı bir nesne varsa, bir istemci, aslında olaya abone olur kadar olay raporlama için gerekli yalnızca, gevşek nesne oluşturma ertele.
+Aboneler ekleme veya kaldırmaya yanıt olarak özel mantık gerçekleştirmeniz gerekiyorsa, bir olay için özel Ekle, kaldır ve Yükselt yöntemlerini belirtebilirsiniz. Örneğin, yalnızca olay raporlama için gerekli olan pahalı bir nesneniz varsa, bir istemci olaya gerçekten abone olana kadar nesnenin oluşturulmasını erteleyebilirsiniz.
 
-Sonraki örnek, özel ekleme işlemi açıklanır eklemek, kaldırmak ve raise yöntemlerinin bir olay için:
+Sonraki örnek, bir olaya özel ekleme, kaldırma ve oluşturma yöntemlerinin nasıl ekleneceğini gösterir:
 
 [!code-cpp[cx_events#03](../cppcx/codesnippet/CPP/cx_events/class1.h#03)]
 
-## <a name="removing-an-event-handler-from-the-subscriber-side"></a>Bir olay işleyicisi Abone tarafında kaldırılıyor
+## <a name="removing-an-event-handler-from-the-subscriber-side"></a>Abone tarafında bir olay işleyicisini kaldırma
 
-Bazı nadir durumlarda, daha önce abone olan bir olay için bir olay işleyicisi kaldırmak isteyebilirsiniz. Örneğin, başka bir olay işleyicisi ile değiştirmek isteyebilirsiniz veya tarafından tutulan bazı kaynaklar silmek isteyebilirsiniz. İşleyiciyi kaldırmak için öğesinden döndürülen EventRegistrationToken depolamak `+=` işlemi. Ardından `-=` belirteç işlecinin bir olay işleyicisi kaldırmak için.  Ancak, hatta kaldırıldıktan sonra özgün işleyici hala çağırılabilir. Bu nedenle, bir olay işleyicisi kaldırmak istiyorsanız, bir üye bayrağı oluşturmak ve olay kaldırılır ve ardından olay işleyicisi, bayrağı denetle ve hemen ayarlanmış olup olmadığını döndürür ayarlayın. Sonraki örnek, temel düzeni gösterir.
+Nadir durumlarda, daha önce abone olduğunuz bir olay için bir olay işleyicisini kaldırmak isteyebilirsiniz. Örneğin, başka bir olay işleyicisiyle değiştirmek isteyebilirsiniz veya onu tarafından tutulan bazı kaynakları silmek isteyebilirsiniz. Bir işleyiciyi kaldırmak için, `+=` işlemden döndürülen EventRegistrationToken 'ı depolamanız gerekir. Daha sonra bir olay işleyicisini `-=` kaldırmak için belirteçte işlecini kullanabilirsiniz.  Ancak, özgün işleyici kaldırıldıktan sonra bile hala çağrılabilir. Bu nedenle, bir olay işleyicisini kaldırmak istiyorsanız, bir üye bayrağı oluşturun ve olay kaldırılırsa onu ayarlayın ve ardından olay işleyicisinde bayrağı denetleyin ve ayarlandıysa hemen geri döndürün. Sonraki örnekte temel desenler gösterilmektedir.
 
 [!code-cpp[cx_events#04](../cppcx/codesnippet/CPP/eventsupportinvs/eventclientclass.h#04)]
 
 ### <a name="remarks"></a>Açıklamalar
 
-Birden çok işleyicisi aynı olay ile ilişkili olabilir. Olay kaynağı, aynı iş parçacığındaki tüm olay işleyicilerindeki içine sıralı olarak çağırır. Bir olay alıcısının olay işleyicisi yöntemi içinde engelliyorsa, bu olay için diğer olay işleyicileri çağırma gelen olay kaynağı engeller.
+Birden çok işleyici aynı olayla ilişkili olabilir. Olay kaynağı, aynı iş parçacığından tüm olay işleyicileriyle ardışık olarak çağrı yapılır. Bir olay alıcısı olay işleyicisi yöntemi içinde engelliyorsa, olay kaynağının bu olay için diğer olay işleyicilerini yürütmesini engeller.
 
-Olay alıcıları olay işleyicileri, olay kaynağı çağırır sırasını garanti edilmez ve çağrıdan diğerine farklılık gösterebilir.
+Olay kaynağının olay sıralarından olay işleyicilerini çağırdıkları sıra garanti edilmez ve çağrı çağrısından farklı olabilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Tür Sistemi](../cppcx/type-system-c-cx.md)<br/>
 [Temsilciler](../cppcx/delegates-c-cx.md)<br/>
-[Visual C++ Dil Başvurusu](../cppcx/visual-c-language-reference-c-cx.md)<br/>
+[C++/CX Dil Başvurusu](../cppcx/visual-c-language-reference-c-cx.md)<br/>
 [Ad Alanları Başvurusu](../cppcx/namespaces-reference-c-cx.md)

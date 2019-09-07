@@ -6,18 +6,18 @@ helpviewer_keywords:
 - rich edit controls [MFC], character formatting in
 - CRichEditCtrl class [MFC], character formatting in
 ms.assetid: c80f4305-75ad-45f9-8d17-d83d0fe79be5
-ms.openlocfilehash: 4ac996c1cb018a29137e37d9603016dc1c151c58
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 3ff9be0909a36179802e5f210e728c2bf57b1f02
+ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69508983"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70739510"
 ---
 # <a name="character-formatting-in-rich-edit-controls"></a>Zengin Düzenleme Denetimlerinde Karakter Biçimlendirme
 
 Zengin düzenleme denetiminin ([CRichEditCtrl](../mfc/reference/cricheditctrl-class.md)) üye işlevlerini karakterleri biçimlendirmek ve biçimlendirme bilgilerini almak için kullanabilirsiniz. Karakterler için yazı tipi, boyut, renk ve kalın, italik ve korumalı gibi etkileri belirtebilirsiniz.
 
-[SetSelectionCharFormat](../mfc/reference/cricheditctrl-class.md#setselectioncharformat) ve [SetWordCharFormat](../mfc/reference/cricheditctrl-class.md#setwordcharformat) üye işlevlerini kullanarak karakter biçimlendirmesi uygulayabilirsiniz. Seçili metin için geçerli karakter biçimlendirmesini öğrenmek için [GetSelectionCharFormat](../mfc/reference/cricheditctrl-class.md#getselectioncharformat) üye işlevini kullanın. [Charformat](/windows/win32/api/richedit/ns-richedit-_charformat) yapısı, bu üye işlevlerle karakter özniteliklerini belirtmek için kullanılır. **Charformat** 'ın önemli üyelerinden biri **dwMask**. `SetSelectionCharFormat` Ve`SetWordCharFormat`' de **dwMask** , bu işlev çağrısı tarafından ayarlanacak karakter özniteliklerinin belirtir. `GetSelectionCharFormat`seçimdeki ilk karakterin özniteliklerini raporlar; **dwMask** seçim boyunca tutarlı olan öznitelikleri belirtir.
+[SetSelectionCharFormat](../mfc/reference/cricheditctrl-class.md#setselectioncharformat) ve [SetWordCharFormat](../mfc/reference/cricheditctrl-class.md#setwordcharformat) üye işlevlerini kullanarak karakter biçimlendirmesi uygulayabilirsiniz. Seçili metin için geçerli karakter biçimlendirmesini öğrenmek için [GetSelectionCharFormat](../mfc/reference/cricheditctrl-class.md#getselectioncharformat) üye işlevini kullanın. [Charformat](/windows/win32/api/richedit/ns-richedit-charformata) yapısı, bu üye işlevlerle karakter özniteliklerini belirtmek için kullanılır. **Charformat** 'ın önemli üyelerinden biri **dwMask**. `SetSelectionCharFormat` Ve`SetWordCharFormat`' de **dwMask** , bu işlev çağrısı tarafından ayarlanacak karakter özniteliklerinin belirtir. `GetSelectionCharFormat`seçimdeki ilk karakterin özniteliklerini raporlar; **dwMask** seçim boyunca tutarlı olan öznitelikleri belirtir.
 
 Ayrıca, daha sonraki ekli karakterlere uygulanan biçimlendirme olan "varsayılan karakter biçimlendirmesini" alabilir ve ayarlayabilirsiniz. Örneğin, bir uygulama varsayılan karakter biçimlendirmesini kalın olarak ayarlarsa ve Kullanıcı bir karakter yazdığında, bu karakter kalın olur. Varsayılan karakter biçimlendirmesini almak ve ayarlamak için [GetDefaultCharFormat](../mfc/reference/cricheditctrl-class.md#getdefaultcharformat) ve [SetDefaultCharFormat](../mfc/reference/cricheditctrl-class.md#setdefaultcharformat) üye işlevlerini kullanın.
 

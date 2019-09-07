@@ -2,41 +2,41 @@
 title: Özellikler (C++/CX)
 ms.date: 01/22/2017
 ms.assetid: 64c7bc56-3191-4cd5-bdf4-476d07d285d5
-ms.openlocfilehash: 8303952beefbbac13db14e148c6441c29a46b3d0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fdff2bf5abd3177eda962b7cc55ace1078522f32
+ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62375229"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70741103"
 ---
 # <a name="properties-ccx"></a>Özellikler (C++/CX)
 
-Windows çalışma zamanı türleri genel veriler özellik olarak kullanıma sunar. İstemci kodu özellik genel datamember gibi erişir. Dahili olarak, özellik get erişimcisi yöntemi, bir set erişeni yöntemi veya her ikisini de içeren bir blok olarak uygulanır. Erişimci yöntemlerini kullanarak önce ek eylemler gerçekleştirebilirsiniz veya değer aldıktan sonra Örneğin, bir olay harekete veya doğrulama denetimleri gerçekleştirin.
+Windows Çalışma Zamanı türler, genel verileri özellikler olarak kullanıma sunar. İstemci kodu, özelliğe ortak bir DataMember gibi erişir. Dahili olarak, özelliği get erişimcisi yöntemi, bir set erişimcisi yöntemi veya her ikisini de içeren bir blok olarak uygulanır. Erişimci yöntemlerini kullanarak, değeri almadan önce veya sonra ek eylemler gerçekleştirebilirsiniz, örneğin, bir olayı tetikleyerek veya doğrulama denetimleri gerçekleştirebilirsiniz.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir özelliğin değerini özel bir değişkende yer alan — olarak bilinen *yedekleme deposu*— özelliği olarak aynı türü. Bir özellik, yedekleme deposu için bir değer atayan bir set erişimcisi hem yedekleme deposu değerini alır. bir alma erişimcisi içerebilir. Özelliği, her iki erişimcisi sağlıyorsa, yalnızca bir set erişimcisine ve okuma/yazma (değiştirilebilir) sağlıyorsa yalnızca bir alma erişimcisi, salt yazılır sağlıyorsa salt okunur.
+Bir özelliğin değeri, özellik ile aynı türde olan bir özel değişkende (örneğin, *yedekleme deposu*olarak bilinir) bulunur. Bir özellik, yedekleme deposuna bir değer atayan bir set erişimcisi ve yedekleme deposunun değerini alan bir get erişimcisi içerebilir. Özelliği yalnızca bir get erişimcisi sağlıyorsa, salt yazılır, yalnızca bir küme erişimcisi sağlıyorsa, salt yazılır ve her iki erişimci de sağlıyorsa okuma/yazma (değiştirilebilir) olur.
 
-A *Önemsiz* için derleyicinin otomatik olarak uygulayan erişimciler ve yedekleme deposu bir okuma/yazma özelliği bir özelliktir. Derleyicinin uygulamasına erişiminiz yok. Ancak, özel bir özelliği bildirme ve yedekleme deposu ve erişimcileri açıkça bildirin. Erişimci içinde set erişimcisine girişi doğrulama, özellik değeri arasında bir değer hesaplamak, bir veritabanına erişme veya özelliği değiştiğinde bir olay tetikleme gibi gerektiren herhangi bir mantık gerçekleştirebilirsiniz.
+*Önemsiz* özellik, derleyicinin erişimcileri ve yedekleme deposunu otomatik olarak uyguladığı bir okuma/yazma özelliğidir. Derleyicinin uygulamasına erişiminiz yok. Ancak, özel bir özellik bildirebilir ve kendi erişimcilerini ve yedekleme deposunu açıkça bildirebilirsiniz. Bir erişimci içinde, küme erişimcisine girişi doğrulamak, özellik değerindeki bir değeri hesaplamak, bir veritabanına erişmek veya özellik değiştiğinde bir olayı tetiketmek gibi, ihtiyacınız olan herhangi bir mantığı gerçekleştirebilirsiniz.
 
-C + olduğunda +/ CX başvuru sınıfı örneği, kendi bellek sıfır-kendi Oluşturucusu çağırılmadan önce; başlatılır Bu nedenle tüm özellikler varsayılan değer sıfır ya da bildirim noktasında nullptr olarak atanır.
+Bir C++/CX başvuru sınıfı örneği oluşturulduğunda, Oluşturucusu çağrılmadan önce belleği sıfır olarak başlatılır; Bu nedenle, tüm özelliklere bildirim noktasında varsayılan sıfır veya nullptr değeri atanır.
 
 ### <a name="examples"></a>Örnekler
 
-Aşağıdaki kod örneği, bildirme ve bir özelliğe erişmek gösterilmektedir. İlk özellik `Name`, olarak da bilinen bir *Önemsiz* özelliği derleyici otomatik olarak oluşturduğundan bir `set` erişimci `get` erişimcisi ve bir yedekleme deposu.
+Aşağıdaki kod örneği, bir özelliğin nasıl bildirilemeyeceğini ve erişebileceğini gösterir. Derleyici otomatik olarak bir `Name` `set` erişimci, `get` erişimci ve bir yedekleme deposu oluşturduğundan, ilk özelliği *Önemsiz* özellik olarak bilinir.
 
-İkinci özelliği `Doctor`, belirttiği için bir salt okunur özelliği olan bir *özelliği bloğu* açıkça bildiren yalnızca bir `get` erişimcisi. Özelliği bloğu bildirildiği için bir yedekleme deposu açıkça bildirmeniz gerekir; diğer bir deyişle, özel dize ^ değişken `doctor_`. Genellikle, salt okunur bir özellik, yalnızca yedekleme deposu değerini döndürür. Sınıfın kendisi yalnızca yedekleme deposu değerini genellikle oluşturucuda ayarlayabilirsiniz.
+İkinci özelliği `Doctor`, yalnızca bir `get` erişimciyi bildiren bir *özellik bloğunu* belirttiğinden, salt okunurdur. Özellik bloğu bildirildiği için, açıkça bir yedekleme deposu bildirmeniz gerekir; Yani, özel dize ^ Variable, `doctor_`. Genellikle, salt okunurdur bir özellik yalnızca yedekleme deposunun değerini döndürür. Yalnızca sınıfın kendisi, genellikle oluşturucuda, yedekleme deposunun değerini ayarlayabilir.
 
-Üçüncü özellik `Quantity`, her ikisi de bildiren bir özelliği bloğu bildirdiğinden bir okuma-yazma özelliği olan bir `set` erişimci ve `get` erişimcisi.
+Üçüncü özelliği `Quantity`, `set` hem erişimci `get` hem de erişimci bildiren bir özellik bloğu bildirdiğinden bir okuma-yazma özelliğidir.
 
-`set` Erişimci atanan değer üzerinde bir kullanıcı tarafından tanımlanan geçerlilik test gerçekleştirir. Ve C#, adın buraya aksine *değer* parametresi için yalnızca tanımlayıcı `set` erişimci; bir anahtar değil. Varsa *değer* sıfırdan büyük değilse Platform::ınvalidargumentexception harekete geçirilir. Aksi takdirde, yedekleme depolama, `quantity_`, atanan değeriyle güncelleştirilir.
+`set` Erişimci atanan değer üzerinde Kullanıcı tanımlı bir geçerlilik testi gerçekleştirir. Ve aksine C#, ad *değeri* `set` erişimcinin parametresinin yalnızca tanıtıcısıdır; bir anahtar sözcük değildir. *Değer* sıfırdan büyük değilse Platform:: InvalidArgumentException atılır. Aksi halde, yedekleme deposu `quantity_`, atanan değerle güncelleştirilir.
 
-Üye listesinde bir özelliği başlatılamıyor unutmayın. Elbette, yedekleme deposu değişkenlerini bir üye listesinde başlatabilirsiniz.
+Bir özelliğin üye listesinde başlatılamaz olduğunu unutmayın. Bir üye listesinde mağaza değişkenlerini yedeklemeye yönelik bir kurs başlatabilirsiniz.
 
 [!code-cpp[cx_properties#01](../cppcx/codesnippet/CPP/cx_properties/class1.h#01)]
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Tür Sistemi](../cppcx/type-system-c-cx.md)<br/>
-[Visual C++ Dil Başvurusu](../cppcx/visual-c-language-reference-c-cx.md)<br/>
+[C++/CX Dil Başvurusu](../cppcx/visual-c-language-reference-c-cx.md)<br/>
 [Ad Alanları Başvurusu](../cppcx/namespaces-reference-c-cx.md)

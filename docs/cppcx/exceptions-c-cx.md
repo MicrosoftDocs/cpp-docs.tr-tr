@@ -1,77 +1,77 @@
 ---
-title: Özel durumlar (C++/CX)
+title: Özel durumlarC++(/CX)
 ms.date: 07/02/2019
 ms.assetid: 6cbdc1f1-e4d7-4707-a670-86365146432f
-ms.openlocfilehash: 93a3c096c79140787a46dcbd0ae6ec7edc0bf2e4
-ms.sourcegitcommit: 9b904e490b1e262293a602bd1291a8f3045e755b
+ms.openlocfilehash: ade406dc5db6022978f83715555c425caef4375b
+ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67552175"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70740170"
 ---
-# <a name="exceptions-ccx"></a>Özel durumlar (C++/CX)
+# <a name="exceptions-ccx"></a>Özel durumlarC++(/CX)
 
-Hata işleme C++/CX özel durumlarını temel alır. En temel düzeyde, Windows çalışma zamanı bileşenleri HRESULT değerleri olarak hataları bildirin. İçinde C++/CX, bu değerleri HRESULT değerini ve program aracılığıyla erişebileceğiniz bir dize açıklamasını içeren türü kesin belirlenmiş özel durumlar dönüştürülür.  Özel durumlar olarak gerçekleştirilen bir `ref class` türetilen `Platform::Exception`.  `Platform` Ad alanını tanımlayan farklı bir özel durum sınıfları en yaygın HRESULT değerleri için; aracılığıyla bildirilen diğer tüm değerler `Platform::COMException` sınıfı. Tüm özel durum sınıfları sahip bir [Exception::HResult](platform-exception-class.md#hresult) özgün HRESULT almak için kullanabileceğiniz bir alan. Ayrıca, kullanıcı kodu C++ dışında bir dilde yazılmış kod kaynağı olsa bile, özel durumun, özgün kaynak pinpoint yardımcı olmak üzere hata ayıklayıcı için çağrı yığını bilgileri inceleyebilirsiniz.
+/CX 'de C++hata işleme özel durumları temel alır. En temel düzeyde, Windows Çalışma Zamanı bileşenleri hataları HRESULT değeri olarak bildirir. /CX C++içinde bu değerler, bir HRESULT değeri ve programlı olarak erişebileceğiniz bir dize açıklaması içeren, kesin tür belirtilmiş özel durumlara dönüştürülür.  Özel durumlar, öğesinden `ref class` `Platform::Exception`türetilen olarak uygulanır.  Ad alanı, en yaygın HRESULT değerleri için farklı özel durum sınıflarını tanımlar; diğer tüm değerler `Platform::COMException` sınıfı aracılığıyla raporlanır. `Platform` Tüm özel durum sınıflarının, özgün HRESULT 'yi almak için kullanabileceğiniz bir [özel durum:: HRESULT](platform-exception-class.md#hresult) alanı vardır. Ayrıca, hata ayıklayıcıda Kullanıcı kodu için çağrı yığını bilgilerini, dışında bir dilde yazılmış koddan kaynaklansa bile, özel durumun özgün kaynağını belirlemenize yardımcı olabilecek şekilde inceleyebilirsiniz C++.
 
 ## <a name="exceptions"></a>Özel Durumlar
 
-C++ programınızda, throw ve catch bir Windows çalışma zamanı işleminden gelen bir özel durum, türetilen bir özel durum `std::exception`, veya kullanıcı tanımlı bir tür. JavaScript'te kendi özel durumu yakalar kodu yazıldığında yalnızca, uygulama ikili arabiriminde (ABI) sınırı, örneğin, geçtiğinde bir Windows çalışma zamanı özel durum oluşturması gerekir. Bir olmayan - Windows çalışma zamanı zaman C++ özel durum ABI sınırına ulaştığında, özel durum çevrilir bir `Platform::FailureException` özel durum E_FAIL HRESULT temsil eder. ABI hakkında daha fazla bilgi için bkz: [C++'ta Windows çalışma zamanı bileşenleri oluşturma](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp).
+C++ Programınızda, bir Windows çalışma zamanı işleminden gelen bir özel durumu, öğesinden `std::exception`türetilmiş bir özel durumu veya Kullanıcı tanımlı bir türü oluşturabilir ve yakalayabilirsiniz. Yalnızca bir Windows Çalışma Zamanı özel durum oluşturmanız gerekir, örneğin özel durumunuzu yakalayan kodun JavaScript 'te yazıldığı durumlar gibi,. Windows çalışma zamanı C++ olmayan bir özel durum ABI sınırına ulaştığında, özel durum, E_FAIL hresult temsil eden bir `Platform::FailureException` özel duruma çevrilir. ABı hakkında daha fazla bilgi için bkz. [içinde C++Windows çalışma zamanı bileşenleri oluşturma ](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp).
 
-Bildirebilirsiniz bir [Platform::Exception](platform-exception-class.md) HRESULT parametresine veya bir HRESULT parametresine iki Oluşturucu birini kullanarak ve bir [Platform::String](platform-string-class.md)^ arasında geçirilen parametre ABI, işleme herhangi bir Windows çalışma zamanı uygulamaya. Ya da iki birini kullanarak bir özel durum bildirebilirsiniz [Exception::CreateException yöntemi](platform-exception-class.md#createexception) HRESULT parametresine veya bir HRESULT parametresi alan aşırı yüklemeler ve `Platform::String^` parametresi.
+Bir HRESULT parametresi veya bir HRESULT parametresi alan iki oluşturucudan birini kullanarak bir [Platform:: Exception](platform-exception-class.md) , ABI üzerinden onu işleyen herhangi bir Windows çalışma zamanı uygulamasına geçirilebilen bir [Platform:: String](platform-string-class.md)^ parametresi de bildirebilirsiniz. Ya da iki özel durumdan birini kullanarak bir özel durum bildirebilirsiniz [::](platform-exception-class.md#createexception) bir HRESULT parametresi veya bir HRESULT parametresi veya bir HRESULT parametresi `Platform::String^` ya da bir parametre alan CreateException yöntemi aşırı yüklemeleri.
 
 ## <a name="standard-exceptions"></a>Standart özel durumlar
 
-C++/CX tipik HRESULT hataları temsil eden standart özel durumlar, bir kümesini destekler. Her standart özel durum türetildiği [Platform::COMException](platform-comexception-class.md), hangi sırayla türetilir `Platform::Exception`. ABI sınırının ötesinde bir özel durum olduğunda, standart özel durumlardan birini throw gerekir.
+C++/CX tipik HRESULT hatalarını temsil eden bir dizi standart özel durumu destekler. Her bir standart özel durum [Platform:: COMException](platform-comexception-class.md)sınıfından türetilir ve bu, sırasıyla `Platform::Exception`türetilir. ABı sınırında bir özel durum oluşturduğunuzda, standart özel durumlardan birini oluşturmanız gerekir.
 
-Kendi özel durum türünden türetilemez `Platform::Exception`. Özel bir durum için oluşturmak için kullanıcı tanımlı bir HRESULT kullanan bir `COMException` nesne.
+Kendi özel durum türünden `Platform::Exception`bir türetebilirsiniz. Özel bir özel durum oluşturmak için Kullanıcı tanımlı HRESULT kullanarak bir `COMException` nesne oluşturun.
 
-Aşağıdaki tablo standart özel durumlar listelenir.
+Aşağıdaki tabloda standart özel durumlar listelenmektedir.
 
 |Ad|Temel alınan HRESULT|Açıklama|
 |----------|------------------------|-----------------|
-|COMException|*Kullanıcı tanımlı hresult*|Tanınmayan HRESULT bir COM yöntem çağrısından döndürülen zaman oluşturulur.|
-|AccessDeniedException|E\_ERİŞİM ENGELLENDİ|Bir kaynağa veya özellik erişimi reddedilirse oluşturulur.|
-|ChangedStateException|E\_DEĞİŞTİRİLEN\_DURUMU|Dolayısıyla yöntemin sonuçları geçersiz kılmalarını üst koleksiyon değiştikten sonra bir koleksiyon yineleyici veya koleksiyon görünümü yöntemler çağrıldığında oluşturulur.|
-|ClassNotRegisteredException|REGDB\_E\_CLASSNOTREG|Bir COM sınıfı kaydedilmemiş olduğu zaman oluşturulur.|
-|DisconnectedException|RPC\_E\_BAĞLANTI KESİLDİ|Bir nesnenin, istemcileriyle bağlantısı kesildiğinde oluşturulur.|
-|FailureException|E\_BAŞARISIZ|Bir işlemi başarısız olduğunda oluşturulur.|
-|InvalidArgumentException|E\_INVALIDARG|Bir yöntem için sağlanan bağımsız değişkenlerden biri geçerli olmadığında oluşturulur.|
-|InvalidCastException|E\_NOINTERFACE|Bir tür başka bir türe dönüştüremezsiniz zaman oluşturulur.|
-|NotImplementedException|E\_NOTIMPL|Bir arabirim yöntemi, bir sınıf üzerinde uygulanmadı durum.|
-|NullReferenceException|E\_POINTER|Bir null Nesne başvurusu XML'deki başvuru girişimi olduğunda oluşturulur.|
-|ObjectDisposedException|RO\_E\_KAPALI|Silinen bir nesne üzerinde bir işlem gerçekleştirildiğinde oluşturulur.|
-|OperationCanceledException|E\_DURDUR|Bir işlem iptal edildiğinde oluşturulur.|
-|OutOfBoundsException|E\_SINIRLARI|Bir işlem, geçerli aralığın dışında veri erişim girişiminde bulunduğunda oluşturulur.|
-|OutOfMemoryException|E\_OUTOFMEMORY|İşlemi tamamlamak için bellek yetersiz olduğunda oluşturulur.|
-|WrongThreadException|RPC\_E\_YANLIŞ\_İŞ PARÇACIĞI|Bir iş parçacığı için iş parçacığının grubunu ait olmayan bir proxy nesnesi için bir arabirim işaretçisi aracılığıyla çağırdığında oluşturulur.|
+|COMException|*Kullanıcı tanımlı HRESULT*|Bir COM yöntem çağrısından tanınmayan HRESULT döndürüldüğünde oluşturulur.|
+|AccessDeniedException Oluşturucusu|E\_ACCESSREDDEDİLDİ|Bir kaynak veya özelliğe erişim reddedildiğinde oluşturulur.|
+|Changedstateexception Oluşturucusu|E\_DEĞİŞTİ\_DURUMU|Üst koleksiyon değiştirildikten sonra bir koleksiyon yineleyicisinin veya koleksiyon görünümünün yöntemleri çağrıldığında, bu nedenle yöntemin sonuçları geçersiz kılınırken oluşturulur.|
+|Classnotregisteredexception Oluşturucusu|REGDB\_E\_CLASSNOTREG|Bir COM sınıfı kaydedilmemişse oluşturulur.|
+|Disconnectedexception Oluşturucusu|RPC\_E\_BAĞLANTISI KESİLDİ|Bir nesnenin istemcileriyle bağlantısı kesildiğinde oluşturulur.|
+|FailureException Oluşturucusu|E\_BAŞARISIZ|Bir işlem başarısız olduğunda oluşturulur.|
+|InvalidArgumentException Oluşturucusu|E\_İNVALİDARG|Bir yönteme verilen bağımsız değişkenlerden biri geçerli değilse oluşturulur.|
+|InvalidCastException|E\_NOINTERFACE|Bir tür başka bir türe yayınlanatılamayacağını ortaya atılır.|
+|NotImplementedException|E\_NOTİMPL|Bir arabirim yöntemi bir sınıfa uygulanmadıysa oluşturulur.|
+|Durumu|E\_İŞARETÇİSİ|Bir null nesne başvurusunu serbest bırakma girişimi olduğunda oluşturulur.|
+|ObjectDisposedException|\_E\_KAPALI RO|Atılmış bir nesne üzerinde bir işlem gerçekleştirildiğinde oluşturulur.|
+|OperationCanceledException|E\_-DURDUR|Bir işlem iptal edildiğinde oluşturulur.|
+|Outofboundsexception Oluşturucusu|E\_SINIRLARI|Bir işlem geçerli Aralık dışında veriye erişmeye çalıştığında oluşturulur.|
+|OutOfMemoryException|E\_OUTOFMEMORY|İşlemi gerçekleştirmek için yeterli bellek kalmadığında oluşturulur.|
+|Wrongthreadexception Oluşturucusu|RPC\_E\_YANLIŞ\_İŞ PARÇACIĞI|Bir iş parçacığı, iş parçacığının grubuna ait olmayan bir ara sunucu nesnesi için olan bir arabirim işaretçisi aracılığıyla çağırdığında oluşturulur.|
 
-## <a name="hresult-and-message-properties"></a>HResult ve ileti özellikleri
+## <a name="hresult-and-message-properties"></a>HResult ve Ileti özellikleri
 
-Tüm özel durumlara sahip bir [HResult](platform-comexception-class.md#hresult) özelliği ve [ileti](platform-comexception-class.md#message) özelliği. [Exception::HResult](platform-exception-class.md#hresult) özelliği özel durumun sayısal HRESULT değerini temel alır. [Exception::Message](platform-exception-class.md#message) özelliği özel durumu açıklayan sistem tarafından sağlanan bir dize alır. Windows 8 ' deki iletiyi yalnızca hata ayıklayıcıda kullanılabilir ve salt okunur. Bu özel durumu yeniden olduğunda bunu değiştirilemez olduğunu anlamına gelir. Windows 8.1 ileti dizesi program yoluyla erişmeye ve özel durumu yeniden yeni bir ileti sağlayın. Çağrı yığını bilgi de zaman uyumsuz yöntem çağrıları için çağrı yığınını da dahil olmak üzere hata ayıklayıcı, kullanıma sunulmuştur.
+Tüm özel durumların bir [HRESULT](platform-comexception-class.md#hresult) özelliği ve bir [ileti](platform-comexception-class.md#message) özelliği vardır. [Özel durum:: HRESULT](platform-exception-class.md#hresult) özelliği, özel durumun temel ALıNAN sayısal HRESULT değerini alır. [Exception:: Message](platform-exception-class.md#message) özelliği, özel durumu tanımlayan sistem tarafından sağlanan dizeyi alır. Windows 8 ' de ileti yalnızca hata ayıklayıcıda kullanılabilir ve salt okunurdur. Bu, özel durumu yeniden oluştururken değiştiremeyeceğiniz anlamına gelir. Windows 8.1 ' de, ileti dizesine programlı bir şekilde erişebilir ve özel durumu yeniden oluşturursanız yeni bir ileti sağlayabilirsiniz. Zaman uyumsuz yöntem çağrıları için çağrı yığınları dahil olmak üzere, hata ayıklayıcıda daha iyi çağrı yığını bilgileri de mevcuttur.
 
 ### <a name="examples"></a>Örnekler
 
-Bu örnek, zaman uyumlu işlemler için bir Windows çalışma zamanı özel durum gösterilmektedir:
+Bu örnek, zaman uyumlu işlemler için Windows Çalışma Zamanı özel durumunun nasıl oluşturulacağını gösterir:
 
 [!code-cpp[cx_exceptions#01](codesnippet/CPP/exceptiontest/class1.cpp#01)]
 
-Sonraki örnek, özel durum yakalamak gösterilmektedir.
+Sonraki örnekte özel durumun nasıl yakalandığınız gösterilmektedir.
 
 [!code-cpp[cx_exceptions#02](codesnippet/CPP/exceptiontest/class1.cpp#02)]
 
-Zaman uyumsuz bir işlemi sırasında oluşturulan özel durumları yakalamak için görev sınıfı kullanın ve bir hata işleme devamlılık ekleyin. Hata işleme devamlılık, kodunuzdaki tüm olası özel durumları tek bir noktada işleyebilmeniz geri çağırma iş parçacığı için diğer iş parçacıkları üzerinde oluşturulan özel durumları sürekliliğe devreder. Daha fazla bilgi için [C++ zaman uyumsuz programlama](/windows/uwp/threading-async/asynchronous-programming-in-cpp-universal-windows-platform-apps).
+Zaman uyumsuz bir işlem sırasında oluşturulan özel durumları yakalamak için, görev sınıfını kullanın ve hata işleme Devamı ekleyin. Hata işleme devamı, diğer iş parçacıklarında oluşturulan özel durumları çağıran iş parçacığına geri gönderir, böylece kodunuzda yalnızca bir noktada tüm olası özel durumları işleyebilmenizi sağlayabilirsiniz. Daha fazla bilgi için bkz. [zaman uyumsuz C++programlama ](/windows/uwp/threading-async/asynchronous-programming-in-cpp-universal-windows-platform-apps).
 
-## <a name="unhandlederrordetected-event"></a>UnhandledErrorDetected olay
+## <a name="unhandlederrordetected-event"></a>Unhandlederroralgılanan olay
 
-Windows 8.1 abone olabileceğiniz [Windows::ApplicationModel::Core::CoreApplication::UnhandledErrorDetected](/uwp/api/windows.applicationmodel.core.icoreapplicationunhandlederror.unhandlederrordetected) hakkında işleminin çökmesine işlenmemiş hataları erişim sağlayan statik olay. Hata nereden geldiğini bağımsız olarak, bu işleyici olarak ulaştığında bir [Windows::ApplicationModel::Core::UnhandledError](/uwp/api/windows.applicationmodel.core.unhandlederror) oturum event args geçirilen nesne. Çağırdığınızda `Propagate` nesnesinde oluşturur ve oluşturur bir `Platform::*Exception` hata koduna karşılık gelen türü. Catch bloğu içinde kullanıcı durumunu gerekirse kaydedebilir ve sonra ya da çağırarak ciddiyeti işlemin sonlandırılmasına izin `throw`, veya program bilinen bir duruma geri dönmek için bir şey. Aşağıdaki örnek, temel düzeni gösterir:
+Windows 8.1, [Windows:: ApplicationModel:: Core:: CoreApplication:: Unhandlederroralgılanan](/uwp/api/windows.applicationmodel.core.icoreapplicationunhandlederror.unhandlederrordetected) statik olaya abone olabilir ve bu işlem, işlemi çıkarmak üzere işlenmemiş hatalara erişim sağlar. Hatanın kaynaklandığı durumlar ne olursa olsun, bu işleyiciye olay bağımsız değişkenleri ile geçirilen bir [Windows:: ApplicationModel:: Core:: Unhandlebir](/uwp/api/windows.applicationmodel.core.unhandlederror) Object nesnesi olarak ulaşır. Nesnesi üzerinde çağırdığınızda `Propagate` , hata koduna karşılık gelen türden bir `Platform::*Exception` oluşturur ve atar. Catch blokları ' nda, gerekirse Kullanıcı durumunu kaydedebilir ve sonra işlemi çağırarak `throw`işlemin sonlandırılmasına izin verebilir ya da programı bilinen bir duruma geri almak için bir şey yapabilirsiniz. Aşağıdaki örnekte temel desenler gösterilmektedir:
 
-App.xaml.h içinde:
+App. xaml. h içinde:
 
 ```cpp
 void OnUnhandledException(Platform::Object^ sender, Windows::ApplicationModel::Core::UnhandledErrorDetectedEventArgs^ e);
 ```
 
-App.xaml.cpp içinde:
+App. xaml. cpp içinde:
 
 ```cpp
 // Subscribe to the event, for example in the app class constructor:
@@ -99,9 +99,9 @@ void App::OnUnhandledException(Platform::Object^ sender, Windows::ApplicationMod
 
 ### <a name="remarks"></a>Açıklamalar
 
-C++/CX kullanmayan `finally` yan tümcesi.
+C++/CX `finally` yan tümcesini kullanmaz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual C++ Dil Başvurusu](visual-c-language-reference-c-cx.md)<br/>
+[C++/CX Dil Başvurusu](visual-c-language-reference-c-cx.md)<br/>
 [Ad Alanları Başvurusu](namespaces-reference-c-cx.md)

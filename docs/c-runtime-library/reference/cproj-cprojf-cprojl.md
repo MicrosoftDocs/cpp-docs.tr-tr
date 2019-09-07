@@ -31,15 +31,15 @@ helpviewer_keywords:
 - cprojl function
 ms.assetid: 32b49623-13bf-4cae-802e-7912d75030fe
 ms.openlocfilehash: f1054172a7b5afde134ce9fa735a7eeda3bddafb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50445675"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70739845"
 ---
 # <a name="cproj-cprojf-cprojl"></a>cproj, cprojf, cprojl
 
-Haritanın Reimann küre üzerinde karmaşık bir sayıyı alır.
+Reimann Sphere üzerinde karmaşık bir sayının projeksiyonunu alır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -64,28 +64,28 @@ _Lcomplex cprojl(
 ### <a name="parameters"></a>Parametreler
 
 *z*<br/>
-Karmaşık bir sayıyı.
+Karmaşık bir sayı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Haritanın *z* Reimann küre üzerinde.
+Reimann Sphere üzerinde *z* 'nin projeksiyonu.
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, aşırı yüklemesini çağırabilirsiniz **cproj** alan ve getiren **_Fcomplex** ve **_Lcomplex** değerleri. C programında **cproj** her zaman alan ve döndüren bir **_Dcomplex** değeri.
+Aşırı C++ yüklemeye izin verdiğinden, **_Fcomplex** ve **_lcomplex** değerlerini alıp döndüren **cproj** aşırı yüklerini çağırabilirsiniz. C programında, **cproj** her zaman **_dcomplex** değeri alır ve döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|C üstbilgisi|C++ üst bilgisi|
+|Yordam|C üstbilgisi|C++üst bilgi|
 |-------------|--------------|------------------|
-|**cproj**, **cprojf**, **cprojl**|\<Complex.h >|\<ccomplex >|
+|**cproj**, **cprojf**, **cprojl**|\<karmaşık. h >|\<ccomplex >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Alfabetik İşlev Başvurusu](crt-alphabetical-function-reference.md)<br/>
-[Norm, normf, norml](norm-normf-norml1.md)<br/>
+[norm, normf, norml](norm-normf-norml1.md)<br/>
 [creal, crealf, creall](creal-crealf-creall.md)<br/>
 [conj, conjf, conjl](conj-conjf-conjl.md)<br/>
 [cimag, cimagf, cimagl](cimag-cimagf-cimagl.md)<br/>

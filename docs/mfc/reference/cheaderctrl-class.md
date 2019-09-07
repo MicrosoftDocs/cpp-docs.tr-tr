@@ -64,12 +64,12 @@ helpviewer_keywords:
 - CHeaderCtrl [MFC], SetItem
 - CHeaderCtrl [MFC], SetOrderArray
 ms.assetid: b847ac90-5fae-4a87-88e0-ca45f77b8b3b
-ms.openlocfilehash: 407ba2747ed4d6e56e56fe4ccb2ccb828240a732
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 62915da703e1c938e65643ab389999b83c72d459
+ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69506715"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70741525"
 ---
 # <a name="cheaderctrl-class"></a>CHeaderCtrl sınıfı
 
@@ -502,7 +502,7 @@ BOOL GetItem(
 Alınacak öğenin sıfır tabanlı dizinini belirtir.
 
 *Pheaderıtem*<br/>
-Yeni öğeyi alan [HDITEM](/windows/win32/api/commctrl/ns-commctrl-_hd_itemw) yapısına yönelik işaretçi. Bu yapı `InsertItem` ve `SetItem` üye işlevleriyle birlikte kullanılır. `mask` Öğesinde ayarlanan tüm bayraklar, karşılık gelen öğelerdeki değerlerin geri dönüş sonrasında doğru doldurulduğundan emin olun. `mask` Öğe sıfır olarak ayarlandıysa, diğer yapı öğelerindeki değerler anlamsız olur.
+Yeni öğeyi alan [HDITEM](/windows/win32/api/commctrl/ns-commctrl-hditemw) yapısına yönelik işaretçi. Bu yapı `InsertItem` ve `SetItem` üye işlevleriyle birlikte kullanılır. `mask` Öğesinde ayarlanan tüm bayraklar, karşılık gelen öğelerdeki değerlerin geri dönüş sonrasında doğru doldurulduğundan emin olun. `mask` Öğe sıfır olarak ayarlandıysa, diğer yapı öğelerindeki değerler anlamsız olur.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -542,7 +542,7 @@ BOOL GetItemDropDownRect(
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*IItem*|'ndaki Stili HDF_SPLITBUTTON olan üst bilgi öğesinin sıfır tabanlı dizini. Daha fazla bilgi için bkz `fmt` . [HDITEM](/windows/win32/api/commctrl/ns-commctrl-_hd_itemw) yapısı üyesi.|
+|*IItem*|'ndaki Stili HDF_SPLITBUTTON olan üst bilgi öğesinin sıfır tabanlı dizini. Daha fazla bilgi için bkz `fmt` . [HDITEM](/windows/win32/api/commctrl/ns-commctrl-hditemw) yapısı üyesi.|
 |*lpRect*|dışı Sınırlayıcı dikdörtgen bilgilerini almak için bir [Rect](/previous-versions/dd162897\(v=vs.85\)) yapısına yönelik işaretçi.|
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -669,7 +669,7 @@ int HitTest(LPHDHITTESTINFO* phdhti);
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*phdhtı*|[in, out] Testin sonuçlarını test etmek ve almak için noktayı belirten bir [Hdhittestınfo](/windows/win32/api/commctrl/ns-commctrl-_hd_hittestinfo) yapısına yönelik işaretçi.|
+|*phdhtı*|[in, out] Testin sonuçlarını test etmek ve almak için noktayı belirten bir [Hdhittestınfo](/windows/win32/api/commctrl/ns-commctrl-hdhittestinfo) yapısına yönelik işaretçi.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -707,7 +707,7 @@ int InsertItem(
 Eklenecek öğenin sıfır tabanlı dizini. Değer sıfırsa, öğe üst bilgi denetiminin başına eklenir. Değer en büyük değerden büyükse, öğe üst bilgi denetiminin sonuna eklenir.
 
 *phdi*<br/>
-Eklenecek öğe hakkında bilgi içeren bir [HDITEM](/windows/win32/api/commctrl/ns-commctrl-_hd_itemw) yapısına yönelik işaretçi.
+Eklenecek öğe hakkında bilgi içeren bir [HDITEM](/windows/win32/api/commctrl/ns-commctrl-hditemw) yapısına yönelik işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -728,7 +728,7 @@ BOOL Layout(HDLAYOUT* pHeaderLayout);
 ### <a name="parameters"></a>Parametreler
 
 *pHeaderLayout*<br/>
-Bir üst bilgi denetiminin boyutunu ve konumunu ayarlamak için kullanılan bilgileri içeren bir [hdlayout](/windows/win32/api/commctrl/ns-commctrl-_hd_layout) yapısına yönelik işaretçi.
+Bir üst bilgi denetiminin boyutunu ve konumunu ayarlamak için kullanılan bilgileri içeren bir [hdlayout](/windows/win32/api/commctrl/ns-commctrl-hdlayout) yapısına yönelik işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -917,7 +917,7 @@ BOOL SetItem(
 Değiştirilecek öğenin sıfır tabanlı dizini.
 
 *Pheaderıtem*<br/>
-Yeni öğe hakkında bilgi içeren bir [HDITEM](/windows/win32/api/commctrl/ns-commctrl-_hd_itemw) yapısına yönelik işaretçi.
+Yeni öğe hakkında bilgi içeren bir [HDITEM](/windows/win32/api/commctrl/ns-commctrl-hditemw) yapısına yönelik işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

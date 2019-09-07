@@ -1,22 +1,22 @@
 ---
-title: Değer sınıfları ve yapıları (C++/CX)
+title: Değer sınıfları ve yapılar (C++/CX)
 ms.date: 12/30/2016
 helpviewer_keywords:
 - value struct
 - value class
 ms.assetid: 262a0992-9721-4c02-8297-efc07d90e5a4
-ms.openlocfilehash: 5b9b50ba7200439e9ce648c53d52ce37226f61d3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3340c5e387dc58ddcb5348cdc041a58840463995
+ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62384991"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70740940"
 ---
-# <a name="value-classes-and-structs-ccx"></a>Değer sınıfları ve yapıları (C++/CX)
+# <a name="value-classes-and-structs-ccx"></a>Değer sınıfları ve yapılar (C++/CX)
 
-A *değeri yapı* veya *değer sınıfının* olduğu bir Windows çalışma zamanı ile uyumlu POD ("düz eski veri yapısı"). Sabit bir boyutu vardır ve yalnızca alanlardan oluşur; başvuru sınıfı, bu özelliğe sahip değil.
+*Değer yapısı* veya *değer sınıfı* , Windows çalışma zamanı uyumlu bir pod ("düz eski veri yapısı"). Sabit boyuta sahiptir ve yalnızca alanlardan oluşur; bir başvuru sınıfının aksine, özelliği yoktur.
 
-Aşağıdaki örnekler, bildirmek ve değer yapıları başlatmak gösterilmektedir.
+Aşağıdaki örneklerde değer yapıların nasıl bildirilemeyeceğini ve başlatılacağını gösterilmektedir.
 
 ```
 
@@ -48,51 +48,51 @@ Aşağıdaki örnekler, bildirmek ve değer yapıları başlatmak gösterilmekte
     ts3.str = "Another way to init a value struct.";
 ```
 
-Başka bir değişkene bir değer türü bir değişkene atandığında, her iki değişkenin kendi veri kopyasını sahip olacak şekilde değeri kopyalanır. A *değeri yapı* , yalnızca genel veri alanları içerir ve kullanılarak bildirilen bir sabit boyutlu yapısıdır `value struct` anahtar sözcüğü.
+Değer türünde bir değişken başka bir değişkene atandığında, bu değer kopyalanır, böylece iki değişkenin her biri kendi verilerinin kopyasına sahip olur. *Değer yapısı* , yalnızca ortak veri alanları içeren ve `value struct` anahtar sözcüğü kullanılarak bildirildiği sabit boyutlu bir yapıdır.
 
-A *değer sınıfının* olduğu gibi bir `value struct` dışında kendi alanlarına ortak erişilebilirlik açıkça verilmelidir. Kullanılarak bildirilen `value class` anahtar sözcüğü.
+*Değer sınıfı* , `value struct` alanları açıkça ortak erişilebilirlik olarak verilmelidir. `value class` Anahtar sözcüğü kullanılarak bildirilmiştir.
 
-Değer yapısı veya değer sınıfı yalnızca temel sayısal türler, enum sınıfları, alanlar içerebilir `Platform::String^`, veya [Platform::ıbox \<T > ^](../cppcx/platform-ibox-interface.md) Burada T, bir sayısal tür veya numaralandırmaya sınıfı veya değer sınıfı veya yapı birimi. Bir `IBox<T>^` alan değerine sahip `nullptr`— nasıl kavramı C++'ı uygulayan budur *boş değer atanabilen değer türleri*.
+Değer yapısı veya değer sınıfı, alan olarak yalnızca temel sayısal türler, Enum sınıfları, `Platform::String^`veya [Platform:: Ibox \<T >](../cppcx/platform-ibox-interface.md) içerebilir; burada T, bir sayısal tür veya enum sınıfı ya da değer sınıfı ya da struct. Bir `IBox<T>^` C++ alanın `nullptr`değeri olabilir — bu, *Nullable değer türleri*kavramını uygular.
 
-Bir değer sınıfı veya içeren değeri yapı bir `Platform::String^` veya `IBox<T>^` tür üyesi olmadığından `memcpy`-kullanabilirsiniz.
+Üye olarak bir `Platform::String^` veya `IBox<T>^` türü içeren bir değer sınıfı veya değer yapısı mümkün değildir `memcpy`.
 
-Çünkü tüm üyelerinin bir `value class` veya `value struct` ortak olan ve bu meta verilere yayılır, standart C++ türler üyeleri olarak izin verilmez. Bu içerebilir ref sınıflarından farklıdır `private` veya `internal` standart C++ türleri...
+Tüm üyeleri bir `value class` veya `value struct` ortak olduğundan ve meta veriye yayıldığından, standart C++ türlere üye olarak izin verilmez. Bu, ya `private` `internal` da standart C++ türler içerebilen başvuru sınıflarından farklıdır.
 
-Aşağıdaki kod parçası bildirir `Coordinates` ve `City` türleri olarak değer yapılar. Bildirim, bir `City` veri üyeleri olan bir `GeoCoordinates` türü. A `value struct` diğer değeri Yapı üyeleri olarak içerebilir.
+Aşağıdaki kod parçası, `Coordinates` ve `City` türlerini değer yapıları olarak bildirir. `City` Veri üyelerinden birinin bir `GeoCoordinates` tür olduğuna dikkat edin. `value struct` , Diğer değer yapılarını üye olarak içerebilir.
 
 [!code-cpp[cx_classes#07](../cppcx/codesnippet/CPP/classesstructs/class1.h#07)]
 
-## <a name="parameter-passing-for-value-types"></a>Parametre için değer türleri geçirme
+## <a name="parameter-passing-for-value-types"></a>Değer türleri için parametre geçirme
 
-Tür bir işlev veya yöntem parametresi bir değer varsa, normalde değere göre geçirilir. Büyük nesneler için bu performans sorunu neden olabilir. Görsel Studio2013 ve önceki sürümlerinde, değer türleri içinde C++/CX her zaman değeri geçirildi. Visual Studio 2015 ve sonraki sürümlerinde, değer türleri, başvuru veya değer geçirebilirsiniz.
+Bir işlev veya yöntem parametresi olarak bir değer türüne sahipseniz, normalde değere göre geçirilir. Daha büyük nesneler için bu bir performans sorununa neden olabilir. Visual Studio2013 ve önceki sürümlerde,/CX içindeki C++değer türleri her zaman değere göre geçirilir. Visual Studio 2015 ve üzeri sürümlerde, değer türlerini başvuruya veya değere göre geçirebilirsiniz.
 
-Bir değer türü değere göre geçen bir parametre bildirmek için aşağıdaki gibi bir kod kullanın:
+Değer türü değere göre geçen bir parametre bildirmek için, aşağıdaki gibi bir kod kullanın:
 
 ```
 void Method1(MyValueType obj);
 ```
 
-Bir değer türü başvuruya göre geçiren bir parametre bildirmek için başvuru simgesini kullanın. (&) aşağıdaki gibi:
+Başvuruya göre bir değer türü geçiren bir parametre bildirmek için, başvuru sembolünü (&) aşağıdaki gibi kullanın:
 
 ```
 void Method2(MyValueType& obj);
 ```
 
-Türü içinde Method2 MyValueType bir başvurudur ve standard C++ içinde bir başvuru türü aynı şekilde çalışır.
+Method2 içindeki tür MyValueType öğesine başvurudur ve standart C++olarak bir başvuru türüyle aynı şekilde çalışıyor.
 
-C# gibi başka bir dilden Method1 çağırdığınızda kullanın gerekmez `ref` veya `out` anahtar sözcüğü. Method2 çağırdığınızda kullanabilirsiniz `ref` anahtar sözcüğü.
+Gibi C#başka bir dilden Method1 çağırdığınızda, `ref` veya `out` anahtar sözcüğünü kullanmanız gerekmez. Method2 öğesini çağırdığınızda `ref` anahtar sözcüğünü kullanın.
 
 ```
 Method2(ref obj);
 ```
 
-Başvuruya göre bir değer türü geçirmek için bir işaretçi simge (*) de kullanabilirsiniz. Çağıranlar diğer dillerdeki göre davranışı aynıdır (çağıranlar, C# kullanımı `ref` anahtar sözcüğü), ancak yönteminde değer türü işaretçisi türdür.
+Bir değer türünü başvuruya göre geçirmek için bir işaretçi simgesi (*) de kullanabilirsiniz. Diğer dillerdeki çağıranlara yönelik davranış aynı ( C# `ref` anahtar sözcüğü kullanır), ancak yönteminde tür, değer türüne yönelik bir işaretçidir.
 
-## <a name="nullable-value-types"></a>Boş değer atanabilen değer türleri
+## <a name="nullable-value-types"></a>Null yapılabilir değer türleri
 
-Daha önce bahsedildiği gibi bir değer sınıfı veya değer yapı türünde bir alan olabilir [Platform::ıbox\<T > ^](../cppcx/platform-ibox-interface.md)— Örneğin, `IBox<int>^`. Böyle bir alan için geçerli olan herhangi bir sayısal değer olabilir `int` türünü veya değerini olabilir `nullptr`. Parametresi olarak isteğe bağlı olarak bildirilen bir yöntemi için bağımsız değişken olarak boş değer atanabilir bir alan geçirebilir veya başka bir yerde bir değer türü olmayan bir değer olması gerekiyor.
+Daha önce belirtildiği gibi, bir değer sınıfı veya değer yapısı, [Platform:: ibox\<T > ^](../cppcx/platform-ibox-interface.md)türünde bir alana sahip olabilir (örneğin, `IBox<int>^`). Böyle bir alan, `int` türü için geçerli olan herhangi bir sayısal değere sahip olabilir veya `nullptr`değeri olabilir. Parametre isteğe bağlı olarak bildirildiği bir yönteme veya bir değer türünün bir değere sahip olması gerekmediği başka herhangi bir yerde bağımsız değişken olarak null olabilen bir alan geçirebilirsiniz.
 
-Aşağıdaki örnek, boş değer atanabilir bir alana sahip bir yapı başlatmaya gösterilmektedir.
+Aşağıdaki örnek, null olabilen bir alanı olan bir yapının nasıl başlatılacağını göstermektedir.
 
 ```
 public value struct Student
@@ -129,7 +129,7 @@ bool MainPage::IsCurrentlyEnrolled(Student s)
 }
 ```
 
-Değer yapısı burada gösterildiği gibi aynı şekilde, null yapılabilir duruma:
+Değer yapısının kendisi, burada gösterildiği gibi aynı şekilde null yapılabilir hale getirilebilir:
 
 ```
 
@@ -150,6 +150,6 @@ public:
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Tür Sistemi (C++/CX)](../cppcx/type-system-c-cx.md)<br/>
-[Visual C++ Dil Başvurusu](../cppcx/visual-c-language-reference-c-cx.md)<br/>
+[C++/CX Dil Başvurusu](../cppcx/visual-c-language-reference-c-cx.md)<br/>
 [Ad Alanları Başvurusu](../cppcx/namespaces-reference-c-cx.md)<br/>
 [Başvuru Sınıfları ve Yapıları (C++/CX)](../cppcx/ref-classes-and-structs-c-cx.md)

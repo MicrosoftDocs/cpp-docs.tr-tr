@@ -12,12 +12,12 @@ helpviewer_keywords:
 - COleIPFrameWnd [MFC], OnCreateControlBars
 - COleIPFrameWnd [MFC], RepositionFrame
 ms.assetid: 24abb2cb-826c-4dda-a287-d8a8900a5763
-ms.openlocfilehash: 483998529b83d9b28c6ab1b219c4f5288dbd8ec7
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 8eab2ddfc778900b53d77105f1d8215a2c095e9f
+ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69503827"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70741568"
 ---
 # <a name="coleipframewnd-class"></a>Cotaipframewnd sınıfı
 
@@ -76,7 +76,7 @@ COleIPFrameWnd();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için Windows SDK için bkz. [OLEINPLACEFRAMEINFO](/windows/win32/api/oleidl/ns-oleidl-oifi) .
+Daha fazla bilgi için Windows SDK için bkz. [OLEINPLACEFRAMEINFO](/windows/win32/api/oleidl/ns-oleidl-oleinplaceframeinfo) .
 
 ##  <a name="oncreatecontrolbars"></a>Cotaipframewnd:: Oncreatecontrolçubuklar
 

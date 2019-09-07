@@ -16,12 +16,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlFileMappingBase class
 ms.assetid: be555723-2790-4f57-a8fb-be4d68460775
-ms.openlocfilehash: 3d9627c7a19cccc0cd3aec46d71b23c8a84711bf
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: a20a8f6c00f9404aa819b87a6a69ad2c08fb4561
+ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69497777"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70739556"
 ---
 # <a name="catlfilemappingbase-class"></a>CAtlFileMappingBase sınıfı
 
@@ -190,7 +190,7 @@ Eşleme boyutu. 0 ise, dosya eşleme nesnesinin en büyük boyutu *hfile* taraf�
 Eşlemenin başlayacağı dosya konumu. Fark değeri, sistemin bellek ayırma ayrıntı düzeyinin katı olmalıdır.
 
 *dwMappingProtection*<br/>
-Dosya eşlendiğinde dosya görünümü için istenen koruma. Windows SDK bkz. [CreateFileMapping](/windows/win32/api/winbase/nf-winbase-createfilemappingw) Içinde *flprotect* .
+Dosya eşlendiğinde dosya görünümü için istenen koruma. Windows SDK bkz. [CreateFileMapping](/windows/win32/api/winbase/nf-winbase-createfilemappinga) Içinde *flprotect* .
 
 *dwViewDesiredAccess*<br/>
 Dosya görünümüne erişimin türünü ve bu nedenle dosya tarafından eşlenen sayfaların korumasını belirtir. Windows SDK [MapViewOfFileEx](/windows/win32/api/memoryapi/nf-memoryapi-mapviewoffileex) Içindeki *dwDesiredAccess* öğesine bakın.
@@ -201,7 +201,7 @@ Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir dosya eşleme nesnesi oluşturulduktan sonra dosyanın boyutu dosya eşleme nesnesinin boyutunu aşmamalıdır; varsa, dosyanın içeriğinin hepsi paylaşım için kullanılabilir olmayacaktır. Daha fazla ayrıntı için Windows SDK [CreateFileMapping](/windows/win32/api/winbase/nf-winbase-createfilemappingw) ve [MapViewOfFileEx](/windows/win32/api/memoryapi/nf-memoryapi-mapviewoffileex) bölümüne bakın.
+Bir dosya eşleme nesnesi oluşturulduktan sonra dosyanın boyutu dosya eşleme nesnesinin boyutunu aşmamalıdır; varsa, dosyanın içeriğinin hepsi paylaşım için kullanılabilir olmayacaktır. Daha fazla ayrıntı için Windows SDK [CreateFileMapping](/windows/win32/api/winbase/nf-winbase-createfilemappinga) ve [MapViewOfFileEx](/windows/win32/api/memoryapi/nf-memoryapi-mapviewoffileex) bölümüne bakın.
 
 ### <a name="example"></a>Örnek
 
@@ -233,7 +233,7 @@ Eşleme nesnesinin adı.
 Eşleme nesnesi zaten mevcutsa, TRUE olarak ayarlanmış bir BOOL değeri gösterir.
 
 *lpsa*<br/>
-Döndürülen Tanıtıcının alt süreçler `SECURITY_ATTRIBUTES` tarafından devralınıp alınmayacağını belirleyen bir yapıya yönelik işaretçi. Windows SDK [CreateFileMapping](/windows/win32/api/winbase/nf-winbase-createfilemappingw) Içindeki *lpattributes* bölümüne bakın.
+Döndürülen Tanıtıcının alt süreçler `SECURITY_ATTRIBUTES` tarafından devralınıp alınmayacağını belirleyen bir yapıya yönelik işaretçi. Windows SDK [CreateFileMapping](/windows/win32/api/winbase/nf-winbase-createfilemappinga) Içindeki *lpattributes* bölümüne bakın.
 
 *dwMappingProtection*<br/>
 Dosya eşlendiğinde dosya görünümü için istenen koruma. Windows SDK 'da *flprotect* `CreateFileMapping` bölümüne bakın.
@@ -247,7 +247,7 @@ Başarı durumunda S_OK veya hata durumunda HRESULT hatası döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`MapShareMem`[CreateFileMapping](/windows/win32/api/winbase/nf-winbase-createfilemappingw)tarafından oluşturulan mevcut bir dosya eşleme nesnesinin süreçler arasında paylaşılmasını sağlar.
+`MapShareMem`[CreateFileMapping](/windows/win32/api/winbase/nf-winbase-createfilemappinga)tarafından oluşturulan mevcut bir dosya eşleme nesnesinin süreçler arasında paylaşılmasını sağlar.
 
 ##  <a name="openmapping"></a>CAtlFileMappingBase:: OpenMapping
 

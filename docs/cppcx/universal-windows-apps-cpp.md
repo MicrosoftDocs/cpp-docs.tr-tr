@@ -3,12 +3,12 @@ title: Evrensel Windows Uygulamaları (C++)
 ms.date: 03/30/2018
 ms.assetid: 357121cc-d390-4bae-b34a-39614861a9f4
 ms.topic: landing-page
-ms.openlocfilehash: 6c2bf7e44e3f1cb2c73ccaaed4363e34cbd7f0c9
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 68952e93e4f91ac3653a9991802ad42854d9d25a
+ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70218371"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70741026"
 ---
 # <a name="universal-windows-apps-c"></a>Evrensel Windows Uygulamaları (C++)
 
@@ -24,7 +24,7 @@ Mevcut masaüstü uygulamanızı Microsoft Store aracılığıyla dağıtım iç
 
 |||
 |-|-|
-|[Görsel C++ dil başvurusu (C++/CX)](visual-c-language-reference-c-cx.md)|Windows Çalışma Zamanı API 'lerin kullanımını kolaylaştıran C++ ve özel durumlara dayalı hata işlemeyi etkinleştiren uzantıların kümesini açıklar.|
+|[C++/CX dil başvurusu](visual-c-language-reference-c-cx.md)|Windows Çalışma Zamanı API 'lerin kullanımını kolaylaştıran C++ ve özel durumlara dayalı hata işlemeyi etkinleştiren uzantıların kümesini açıklar.|
 |[Uygulama ve Kitaplık Oluşturma (C++/CX)](building-apps-and-libraries-c-cx.md)|Bir C++/CX uygulamasından veya bileşeninden erişilebilen dll 'lerin ve statik kitaplıkların nasıl oluşturulacağını açıklar.|
 |[Öğretici: /CX 'de C++UWP "Merhaba, Dünya" uygulaması oluşturma](/windows/uwp/get-started/create-a-basic-windows-10-app-in-cpp)|/Cx'de C++UWP uygulama geliştirmenin temel kavramlarını tanıtan bir anlatım. |
 |[/CX 'de C++Windows çalışma zamanı bileşenleri oluşturma](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)|Diğer UWP uygulamalarının ve bileşenlerinin tüketebileceği dll 'Lerin nasıl oluşturulacağını açıklar.|

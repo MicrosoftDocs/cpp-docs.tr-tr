@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - applications [MFC], managing
 ms.assetid: b72f4154-24db-4e75-bca3-6873e2459c15
-ms.openlocfilehash: 934e89d928104c33f0c2038f136b5ad0ca48cbd4
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 52e6dbaa07fa8343a07533f071d538d9f76b0f61
+ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69507779"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70741163"
 ---
 # <a name="application-information-and-management"></a>Uygulama bilgileri ve yönetimi
 
@@ -178,7 +178,7 @@ HINSTANCE AFXAPI AfxFindResourceHandle( LPCTSTR lpszName,  LPCTSTR lpszType );
 *lpszName*<br/>
 Kaynak KIMLIĞINI içeren bir dize işaretçisi.
 *lpszType*<br/>
-Kaynak türüne yönelik bir işaretçi. Kaynak türlerinin listesi için bkz. Windows SDK [FindResource](/windows/win32/api/winbase/nf-winbase-findresourcew) .
+Kaynak türüne yönelik bir işaretçi. Kaynak türlerinin listesi için bkz. Windows SDK [FindResource](/windows/win32/api/winbase/nf-winbase-findresourcea) .
 
 ### <a name="return-value"></a>Dönüş Değeri
 

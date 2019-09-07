@@ -164,12 +164,12 @@ helpviewer_keywords:
 - COleClientItem [MFC], OnScrollBy
 - COleClientItem [MFC], OnShowItem
 ms.assetid: 7f571b7c-2758-4839-847a-0cf1ef643128
-ms.openlocfilehash: 4a4492e168d36b114811192c8a5c341a62c156ad
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 9f97f117f0fd8570855079aca7bdfd7a63118bc5
+ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69504375"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70740876"
 ---
 # <a name="coleclientitem-class"></a>Colet Clienentidıtem sınıfı
 
@@ -1088,7 +1088,7 @@ BOOL Draw(
 OLE öğesini çizmek için kullanılan bir [CDC](../../mfc/reference/cdc-class.md) nesnesine yönelik işaretçi.
 
 *Lpsınır*<br/>
-OLE öğesinin çizileceği sınırlayıcı dikdörtgeni tanımlayan `RECT` bir ekip nesnesine veya yapısına yönelik işaretçi (cihaz bağlamı tarafından belirlenen mantıksal birimlerde). [](../../atl-mfc-shared/reference/crect-class.md)
+OLE öğesinin çizileceği sınırlayıcı dikdörtgeni [tanımlayan bir ekip](../../atl-mfc-shared/reference/crect-class.md) nesnesine veya `RECT` yapısına yönelik işaretçi (cihaz bağlamı tarafından belirlenen mantıksal birimlerde).
 
 *nDrawAspect*<br/>
 OLE öğesinin, yani nasıl görüntüleneceğini belirtir. *NDrawAspect* -1 Ise, [SetDrawAspect](#setdrawaspect) kullanılarak ayarlanan en son değer kullanılır. Bu bayrak için olası değerler hakkında daha fazla bilgi için bkz. [SetDrawAspect](#setdrawaspect).
@@ -1748,7 +1748,7 @@ Ana çerçeve penceresi işaretçisi işaretçisi.
 Belge çerçevesi penceresi işaretçisi işaretçisi.
 
 *lpFrameInfo*<br/>
-Çerçeve penceresi bilgilerini alacak bir [OLEINPLACEFRAMEINFO](/windows/win32/api/oleidl/ns-oleidl-oifi) yapısına yönelik işaretçi.
+Çerçeve penceresi bilgilerini alacak bir [OLEINPLACEFRAMEINFO](/windows/win32/api/oleidl/ns-oleidl-oleinplaceframeinfo) yapısına yönelik işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1762,7 +1762,7 @@ Kapsayıcı bir MDI uygulamasıse, varsayılan uygulama *Ppana* 'Daki [Cmdiframe
 
 Bu işlevi yalnızca varsayılan uygulama uygulamanıza uygun değilse geçersiz kılın; Örneğin, uygulamanız SDI veya MDI 'dan farklı bir kullanıcı arabirimi paradigmasını içeriyorsa. Bu gelişmiş bir geçersiz kılınabilir.
 
-Daha fazla bilgi için, bkz. Windows SDK [IOleInPlaceSite:: GetWindowContext](/windows/win32/api/oleidl/nf-oleidl-ioleinplacesite-getwindowcontext) ve [OLEINPLACEFRAMEINFO](/windows/win32/api/oleidl/ns-oleidl-oifi) yapısı.
+Daha fazla bilgi için, bkz. Windows SDK [IOleInPlaceSite:: GetWindowContext](/windows/win32/api/oleidl/nf-oleidl-ioleinplacesite-getwindowcontext) ve [OLEINPLACEFRAMEINFO](/windows/win32/api/oleidl/ns-oleidl-oleinplaceframeinfo) yapısı.
 
 ##  <a name="oninsertmenus"></a>Colet Clientıtem:: OnInsertMenus
 
@@ -2008,7 +2008,7 @@ DVASPECT numaralandırmasından bir değer. Bu parametre aşağıdaki değerlerd
 
 ### <a name="remarks"></a>Açıklamalar
 
-En boy, bu işlevin *nDrawAspect* bağımsız [](#draw) değişkeni için varsayılan değer kullanıldığında öğenin nasıl işleneceğini belirtir.
+En boy, bu işlevin *nDrawAspect* bağımsız değişkeni için varsayılan [değer kullanıldığında öğenin](#draw) nasıl işleneceğini belirtir.
 
 Bu işlev, Kullanıcı tarafından talep edildiğinde IIC görüntüleme açısını etkinleştirmek için değişiklik simgesi (ve doğrudan değiştirme simgesi iletişim kutusu ' nu çağıran diğer iletişim kutuları) tarafından otomatik olarak çağrılır.
 
@@ -2151,7 +2151,7 @@ BOOL SetPrintDevice(const PRINTDLG* ppd);
 Yeni yazdırma hedefi aygıtı hakkında bilgi içeren bir [Dvtargetdevice](/windows/win32/api/objidl/ns-objidl-dvtargetdevice) veri yapısına yönelik işaretçi. NULL olabilir.
 
 *PDF*<br/>
-Yeni yazdırma hedefi aygıtı hakkında bilgi içeren [PrintDlg](/windows/win32/api/commdlg/ns-commdlg-pdw) veri yapısına yönelik işaretçi. NULL olabilir.
+Yeni yazdırma hedefi aygıtı hakkında bilgi içeren [PrintDlg](/windows/win32/api/commdlg/ns-commdlg-printdlga) veri yapısına yönelik işaretçi. NULL olabilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -2163,7 +2163,7 @@ Bu işlev, öğe için yazdırma hedefi cihazını güncelleştirir, ancak sunu 
 
 Bu işlevin bağımsız değişkenleri, OLE sisteminin hedef cihazı tanımlamak için kullandığı bilgileri içerir. Yapı `PRINTDLG` , Windows 'un ortak Yazdır iletişim kutusunu başlatmak için kullandığı bilgileri içerir. Kullanıcı iletişim kutusunu kapattıktan sonra, Windows kullanıcının bu yapıda seçimleriyle ilgili bilgileri döndürür. [CPrintDialog](../../mfc/reference/cprintdialog-class.md) nesnesinin `PRINTDLG` üyesi bir yapıdır. `m_pd`
 
-Bu yapı hakkında daha fazla bilgi için Windows SDK [PrintDlg](/windows/win32/api/commdlg/ns-commdlg-pdw) bölümüne bakın.
+Bu yapı hakkında daha fazla bilgi için Windows SDK [PrintDlg](/windows/win32/api/commdlg/ns-commdlg-printdlga) bölümüne bakın.
 
 Daha fazla bilgi için Windows SDK [Dvtargetdevice](/windows/win32/api/objidl/ns-objidl-dvtargetdevice) bölümüne bakın.
 

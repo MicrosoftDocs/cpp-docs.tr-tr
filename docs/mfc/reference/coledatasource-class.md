@@ -36,12 +36,12 @@ helpviewer_keywords:
 - COleDataSource [MFC], OnSetData
 - COleDataSource [MFC], SetClipboard
 ms.assetid: 02c8ee7d-8e10-4463-8613-bb2a0305ca69
-ms.openlocfilehash: 5e6b49edfedc8e7311e9ecc21ca065ad99c15c62
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 062234b9bc3c538e8cd5fcade002a2892eea259f
+ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69504123"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70741613"
 ---
 # <a name="coledatasource-class"></a>Cotadatasource sınıfı
 
@@ -117,7 +117,7 @@ void CacheData(
 Verilerin sunulacağı Pano biçimi. Bu parametre, önceden tanımlanmış Pano biçimlerinden biri veya yerel Windows [RegisterClipboardFormat](/windows/win32/api/winuser/nf-winuser-registerclipboardformatw) işlevi tarafından döndürülen değerden biri olabilir.
 
 *Lpstgorta*<br/>
-Verileri belirtilen biçimde içeren bir [Stgorta](/windows/win32/api/objidl/ns-objidl-stgmedium) yapısına işaret eder.
+Verileri belirtilen biçimde içeren bir [Stgorta](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1) yapısına işaret eder.
 
 *lpFormatEtc*<br/>
 Verilerin sunulacağı biçimi açıklayan bir [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapısına işaret eder. *CfFormat*tarafından belirtilen Pano biçiminin ötesinde ek biçim bilgilerini belirtmek istiyorsanız bu parametre için bir değer girin. NULL ise, `FORMATETC` yapıdaki diğer alanlar için varsayılan değerler kullanılır.
@@ -126,13 +126,13 @@ Verilerin sunulacağı biçimi açıklayan bir [FORMATETC](/windows/win32/api/ob
 
 Bu işlev, anında işleme kullanarak bunu sağladığından verileri sağlamalısınız. Veriler, gerekli olana kadar önbelleğe alınır.
 
-Verileri bir [Stgmedium](/windows/win32/api/objidl/ns-objidl-stgmedium) yapısı kullanarak sağlayın. Ayrıca, Aradığınız veri miktarı `CacheGlobalData` bir HGLOBAL kullanılarak etkin bir şekilde aktarılmayacak kadar küçükse, üye işlevini de kullanabilirsiniz.
+Verileri bir [Stgmedium](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1) yapısı kullanarak sağlayın. Ayrıca, Aradığınız veri miktarı `CacheGlobalData` bir HGLOBAL kullanılarak etkin bir şekilde aktarılmayacak kadar küçükse, üye işlevini de kullanabilirsiniz.
 
 `ptd` `CacheData` Üyesine`lpFormatEtc` yapılan çağrının ve *lpStgMedium* içeriğinin, çağıran tarafından değil, veri nesnesine ait olması gerekir.
 
 Gecikmeli işleme kullanmak için [DelayRenderData](#delayrenderdata) veya [DelayRenderFileData](#delayrenderfiledata) üye işlevini çağırın. MFC tarafından işlenmiş şekilde gecikmeli işleme hakkında daha fazla bilgi için, veri nesneleri [ve veri kaynakları makalesine bakın: Düzenleme](../../mfc/data-objects-and-data-sources-manipulation.md).
 
-Daha fazla bilgi için Windows SDK bkz. [Stgmedium](/windows/win32/api/objidl/ns-objidl-stgmedium) ve [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapıları.
+Daha fazla bilgi için Windows SDK bkz. [Stgmedium](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1) ve [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapıları.
 
 Daha fazla bilgi için Windows SDK [RegisterClipboardFormat](/windows/win32/api/winuser/nf-winuser-registerclipboardformatw) bölümüne bakın.
 
@@ -366,7 +366,7 @@ virtual BOOL OnRenderData(
 Bilgilerin istendiği biçimi belirten [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapısına işaret eder.
 
 *Lpstgorta*<br/>
-Verilerin döndürüleceği bir [Stgorta](/windows/win32/api/objidl/ns-objidl-stgmedium) yapısına işaret eder.
+Verilerin döndürüleceği bir [Stgorta](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1) yapısına işaret eder.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -380,7 +380,7 @@ Belirtilen biçim, Gecikmeli işleme için `COleDataSource` [DelayRenderData](#d
 
 Bu gelişmiş bir geçersiz kılınabilir. Verilerinizi istenen biçimde ve ortamda sağlamak için bu işlevi geçersiz kılın. Verilerinize bağlı olarak, bunun yerine bu işlevin diğer sürümlerinden birini geçersiz kılmak isteyebilirsiniz. Verileriniz küçük ve boyut olarak düzeltildiğinde, geçersiz kılın `OnRenderGlobalData`. Verileriniz bir dosya içinde veya değişken boyutunda ise, geçersiz kılın `OnRenderFileData`.
 
-Daha fazla bilgi için bkz. [Stgmedium](/windows/win32/api/objidl/ns-objidl-stgmedium) ve [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapıları, [tymed](/windows/win32/api/objidl/ne-objidl-tymed) numaralandırma türü ve Windows SDK. [](/windows/win32/api/objidl/nf-objidl-idataobject-getdata)
+Daha fazla bilgi için bkz. [Stgmedium](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1) ve [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapıları, [tymed](/windows/win32/api/objidl/ne-objidl-tymed) numaralandırma [türü ve Windows SDK](/windows/win32/api/objidl/nf-objidl-idataobject-getdata) .
 
 ##  <a name="onrenderfiledata"></a>Cotadatasource:: OnRenderFileData
 
@@ -461,7 +461,7 @@ virtual BOOL OnSetData(
 Verilerin değiştirildiği biçimi belirten [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapısına işaret eder.
 
 *Lpstgorta*<br/>
-`COleDataSource` Nesnenin geçerli içeriğinin yerini alacak olan verileri içeren [stgorta](/windows/win32/api/objidl/ns-objidl-stgmedium) yapısına işaret eder.
+`COleDataSource` Nesnenin geçerli içeriğinin yerini alacak olan verileri içeren [stgorta](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1) yapısına işaret eder.
 
 *bRelease*<br/>
 İşlev çağrısını tamamladıktan sonra kimin depolama ortamının sahipliğini olduğunu gösterir. Çağıran, depolama ortamı adına ayrılan kaynakları serbest bırakmaktan sorumlu kişiye karar veriyor. Çağıran bunu *bRelease*'i ayarlayarak yapar. *BRelease* sıfırdan farklı ise, veri kaynağı sahiplik alır ve onu kullanmayı bitirdiğinde ortamı serbest bırakır. *BRelease* 0 olduğunda, çağıran sahipliği korur ve veri kaynağı depolama ortamını yalnızca çağrının süresi boyunca kullanabilir.
@@ -476,7 +476,7 @@ Veri kaynağı, verileri başarıyla edinene kadar verilerin sahipliğini almaz.
 
 Varsayılan uygulama hiçbir şey yapmaz. Belirtilen biçimdeki verileri değiştirmek için bu işlevi geçersiz kılın. Bu gelişmiş bir geçersiz kılınabilir.
 
-Daha fazla bilgi için Windows SDK [Stgmedium](/windows/win32/api/objidl/ns-objidl-stgmedium) ve [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapıları ve [ReleaseStgMedium](/windows/win32/api/ole2/nf-ole2-releasestgmedium) ve [IDataObject:: GetData](/windows/win32/api/objidl/nf-objidl-idataobject-getdata) işlevlerine bakın.
+Daha fazla bilgi için Windows SDK [Stgmedium](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1) ve [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapıları ve [ReleaseStgMedium](/windows/win32/api/ole2/nf-ole2-releasestgmedium) ve [IDataObject:: GetData](/windows/win32/api/objidl/nf-objidl-idataobject-getdata) işlevlerine bakın.
 
 ##  <a name="setclipboard"></a>Cotadatasource:: SetClipboard
 

@@ -7,19 +7,19 @@ helpviewer_keywords:
 - C4673
 ms.assetid: 95626ec6-f05b-43c7-8b9a-a60a6f98dd30
 ms.openlocfilehash: ceaa5cd647dfb527713613b9ce3b5cd81a780fd7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50657736"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70741385"
 ---
 # <a name="compiler-warning-level-4-c4673"></a>Derleyici Uyarısı (düzey 4) C4673
 
-Aşağıdaki türleri 'identifier' atma catch sitede değerlendirilmeyecek
+' tanımlayıcı ' üretiliyor aşağıdaki türler, catch sitesinde değerlendirilmeyecek
 
-İçinde bir throw nesnesi işlenemiyor **catch** blok. İşlenen her tür bu uyarı içeren satırı takip hata çıktısında listelenir. Her nezpracovaný typ kendi uyarı var. Daha fazla bilgi için belirli her türü için uyarıyı okuyun.
+Bir throw nesnesi **catch** bloğunda işlenemiyor. İşlenmeyen her tür, bu uyarıyı içeren satırın hemen ardından hata çıktısında listelenir. İşlenmemiş her tür kendi uyarısına sahiptir. Daha fazla bilgi için her belirli tür için uyarıyı okuyun.
 
-Aşağıdaki örnek, C4673 oluşturur:
+Aşağıdaki örnek C4673 oluşturur:
 
 ```
 // C4673.cpp

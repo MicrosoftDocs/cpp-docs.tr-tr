@@ -22,15 +22,15 @@ helpviewer_keywords:
 - btowc function
 ms.assetid: 99a46e02-6f86-4569-af79-5feca012add8
 ms.openlocfilehash: 399f56fe133a9f67ed457b435ae6c0496e1ecaa5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50514688"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70740011"
 ---
 # <a name="btowc"></a>btowc
 
-Geçerli bir tek baytlı karakter ilk shift durumunda bir tamsayı temsil edip etmediğini belirler.
+Bir tamsayının ilk kaydırma durumunda geçerli bir tek baytlık karakteri temsil edip etmediğini belirleme.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -42,18 +42,18 @@ wint_t btowc(
 
 ### <a name="parameters"></a>Parametreler
 
-*Karakter*<br/>
-Test edilecek tamsayı.
+*inde*<br/>
+Sınanacak tamsayı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Geçerli bir tek baytlı karakter ilk shift durumunda tamsayıyı temsil ediyorsa karakterinin geniş karakter gösterimi döndürür. Tamsayı EOF veya geçerli bir tek baytlı karakter ilk shift durumunda değil WEOF döndürür. Bu işlevin çıktısı geçerli tarafından etkilenir **LC_TYPE** yerel ayar.
+Tamsayı, ilk kaydırma durumunda geçerli bir tek baytlık karakteri temsil ediyorsa karakterin geniş karakter gösterimini döndürür. Tamsayı EOF veya ilk kaydırma durumunda geçerli tek baytlık bir karakter değilse, WEOF döndürür. Bu işlevin çıktısı geçerli **LC_TYPE** yerel ayarından etkilenir.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**btowc**|\<stdio.h > veya \<wchar.h >|
+|**btowc**|\<stdio. h > veya \<wchar. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

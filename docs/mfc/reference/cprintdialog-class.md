@@ -40,12 +40,12 @@ helpviewer_keywords:
 - CPrintDialog [MFC], PrintSelection
 - CPrintDialog [MFC], m_pd
 ms.assetid: 5bdb2424-adf8-433d-a97c-df11a83bc4e4
-ms.openlocfilehash: 1f4a4dbec9a1c79ac1e0cec925156ae7db4c293e
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: ccc673d665d6d5beb92f398b21e6ffd313a58fc9
+ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69502896"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70741356"
 ---
 # <a name="cprintdialog-class"></a>CPrintDialog sınıfı
 
@@ -104,7 +104,7 @@ Uygulamanız için yazdırma sürecinin birçok yönlerini işlemek üzere çer�
 
 Uygulamanızın, Framework 'ün katılımı olmadan yazdırmayı işlemesini istiyorsanız, "olduğu gibi" `CPrintDialog` sınıfını, sağlanmış Oluşturucu ile kullanabilir veya kendi iletişim `CPrintDialog` sınıfınızı kendi iletişim sınıfınızı türetebilir ve gereksinimlerinize uyacak şekilde bir Oluşturucu yazabilirsiniz. Her iki durumda da, bu iletişim kutuları sınıfından `CCommonDialog`TÜRETILDIKLERINDEN standart MFC iletişim kutuları gibi davranır.
 
-Bir `CPrintDialog` nesnesi kullanmak için, önce `CPrintDialog` oluşturucuyu kullanarak nesnesini oluşturun. İletişim kutusu oluşturulduktan sonra, iletişim kutusu denetimlerinin değerlerini başlatmak için [m_pd](#m_pd) yapısındaki herhangi bir değeri ayarlayabilir veya değiştirebilirsiniz. Yapı PrintDlg türündedir. [](/windows/win32/api/commdlg/ns-commdlg-pdw) `m_pd` Bu yapı hakkında daha fazla bilgi için Windows SDK bakın.
+Bir `CPrintDialog` nesnesi kullanmak için, önce `CPrintDialog` oluşturucuyu kullanarak nesnesini oluşturun. İletişim kutusu oluşturulduktan sonra, iletişim kutusu denetimlerinin değerlerini başlatmak için [m_pd](#m_pd) yapısındaki herhangi bir değeri ayarlayabilir veya değiştirebilirsiniz. Yapı PrintDlg türündedir. [](/windows/win32/api/commdlg/ns-commdlg-printdlga) `m_pd` Bu yapı hakkında daha fazla bilgi için Windows SDK bakın.
 
 `m_pd` `GlobalFree` Ve üyeleri`hDevNames` için kendi tanıtıcılarınızı sağlamadıysanız, iletişim kutusuyla işiniz bittiğinde bu tutamaçlar için Windows işlevini çağırdığınızdan `hDevMode` emin olun. Çerçevesinin tarafından `CWinApp::OnFilePrintSetup`sunulan yazdırma Kurulumu uygulamasını kullanırken, bu tutamaçları serbest bırakmak zorunda değilsiniz. İşleyiciler tarafından `CWinApp` korunur ve yıkıcısında `CWinApp`serbest bırakılır. Yalnızca tek başına kullanılırken `CPrintDialog` Bu tutamaçları serbest bırakmak gereklidir.
 
@@ -159,7 +159,7 @@ CPrintDialog(
 Standart Windows yazdırma iletişim kutusu veya yazdırma ayarı iletişim kutusunun görüntülenip görüntülenmeyeceğini belirtir. Standart Windows yazdırma Kurulumu iletişim kutusunu göstermek için bu parametreyi TRUE olarak ayarlayın. Windows Yazdır iletişim kutusunu göstermek için bu değeri FALSE olarak ayarlayın. *BPrintSetupOnly* false Ise, Yazdır iletişim kutusunda bir yazdırma ayarı seçeneği düğmesi hala görüntülenir.
 
 *dwFlags*<br/>
-Bit düzeyinde OR işleci kullanılarak birleştirilen iletişim kutusunun ayarlarını özelleştirmek için kullanabileceğiniz bir veya daha fazla bayrak. Örneğin, PD_ALLPAGES bayrağı varsayılan yazdırma aralığını belgenin tüm sayfalarına ayarlar. Bu bayraklar hakkında daha fazla bilgi için Windows SDK [PrintDlg](/windows/win32/api/commdlg/ns-commdlg-pdw) yapısına bakın.
+Bit düzeyinde OR işleci kullanılarak birleştirilen iletişim kutusunun ayarlarını özelleştirmek için kullanabileceğiniz bir veya daha fazla bayrak. Örneğin, PD_ALLPAGES bayrağı varsayılan yazdırma aralığını belgenin tüm sayfalarına ayarlar. Bu bayraklar hakkında daha fazla bilgi için Windows SDK [PrintDlg](/windows/win32/api/commdlg/ns-commdlg-printdlga) yapısına bakın.
 
 *pParentWnd*<br/>
 İletişim kutusunun üst veya sahip penceresine yönelik bir işaretçi.
@@ -418,7 +418,7 @@ PRINTDLG& m_pd;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir `CPrintDialog` nesne oluşturduktan sonra, [DoModal](#domodal) üye `m_pd` işlevini çağırmadan önce iletişim kutusunun çeşitli yönlerini ayarlamak için kullanabilirsiniz. `m_pd` Yapı hakkında daha fazla bilgi için Windows SDK [PrintDlg](/windows/win32/api/commdlg/ns-commdlg-pdw) bölümüne bakın.
+Bir `CPrintDialog` nesne oluşturduktan sonra, [DoModal](#domodal) üye `m_pd` işlevini çağırmadan önce iletişim kutusunun çeşitli yönlerini ayarlamak için kullanabilirsiniz. `m_pd` Yapı hakkında daha fazla bilgi için Windows SDK [PrintDlg](/windows/win32/api/commdlg/ns-commdlg-printdlga) bölümüne bakın.
 
 `m_pd` Veri üyesini doğrudan değiştirirseniz, varsayılan davranışı geçersiz kılarsınız.
 

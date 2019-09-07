@@ -20,12 +20,12 @@ helpviewer_keywords:
 - IDataObjectImpl class
 - IDataObject, ATL implementation
 ms.assetid: b680f0f7-7795-40a1-a0f6-f48768201c89
-ms.openlocfilehash: 8e3369edd0731ede0892a405ef3de4e7b4cfdef1
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 80b5dfacd5f0c8b0deb8455a59d3f71b73a35ba0
+ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69495938"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70739564"
 ---
 # <a name="idataobjectimpl-class"></a>IDataObjectImpl sınıfı
 
@@ -65,7 +65,7 @@ Sınıfınız, öğesinden `IDataObjectImpl`türetilir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-[IDataObject](/windows/win32/api/objidl/nn-objidl-idataobject) arabirimi Tekdüzen veri aktarımı desteklemek için yöntemler sağlar. `IDataObject`verileri almak ve depolamak için [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) ve [stgmedium](/windows/win32/api/objidl/ns-objidl-stgmedium) standart biçim yapılarını kullanır.
+[IDataObject](/windows/win32/api/objidl/nn-objidl-idataobject) arabirimi Tekdüzen veri aktarımı desteklemek için yöntemler sağlar. `IDataObject`verileri almak ve depolamak için [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) ve [stgmedium](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1) standart biçim yapılarını kullanır.
 
 `IDataObject`Ayrıca, veri değişikliği bildirimlerini işlemek üzere öneri havuzları bağlantılarını yönetir. İstemcinin veri nesnesinden veri değişikliği bildirimleri alabilmesi için, istemci, bir öneri havuzu adlı bir nesneye [ıvısesink](/windows/win32/api/objidl/nn-objidl-iadvisesink) arabirimini gerçekleştirmelidir. İstemci daha sonra çağırdığında `IDataObject::DAdvise`, veri nesnesi ve öneri havuzu arasında bir bağlantı oluşturulur.
 
@@ -105,7 +105,7 @@ Windows SDK için bkz. IDataObject [::D Advise](/windows/win32/api/objidl/nf-obj
 
 ##  <a name="dunadvise"></a>IDataObjectImpl::D Unadvise
 
-Daha önce Dadtıon aracılığıyla kurulan [](#dadvise)bir bağlantıyı sonlandırır.
+Daha önce [dadtıon](#dadvise)aracılığıyla kurulan bir bağlantıyı sonlandırır.
 
 ```
 HRESULT DUnadvise(DWORD dwConnection);

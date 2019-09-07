@@ -46,12 +46,12 @@ helpviewer_keywords:
 - CRgn [MFC], RectInRegion
 - CRgn [MFC], SetRectRgn
 ms.assetid: d904da84-76aa-481e-8780-b09485f49e64
-ms.openlocfilehash: 34dcc618f603302c5598e42588ffad78d61ee222
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 97266ac9e4f1885149ce521f554ad2f22daee6e0
+ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69502706"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70741496"
 ---
 # <a name="crgn-class"></a>CRgn sınıfı
 
@@ -78,7 +78,7 @@ class CRgn : public CGdiObject
 |[CRgn:: CombineRgn](#combinergn)|Bir `CRgn` nesneyi belirtilen `CRgn` iki nesnenin birleşimi ile eşdeğer olacak şekilde ayarlar.|
 |[CRgn:: CopyRgn](#copyrgn)|Bir `CRgn` nesneyi belirtilen `CRgn` nesnenin kopyası olacak şekilde ayarlar.|
 |[CRgn:: CreateEllipticRgn](#createellipticrgn)|Elips bölge `CRgn` içeren bir nesnesi başlatır.|
-|[CRgn:: CreateEllipticRgnIndirect](#createellipticrgnindirect)|Bir Rect `CRgn` yapısı tarafından tanımlanan elips bölge ile bir nesne [](/windows/win32/api/windef/ns-windef-tagrect) başlatır.|
+|[CRgn:: CreateEllipticRgnIndirect](#createellipticrgnindirect)|Bir Rect `CRgn` yapısı tarafından tanımlanan elips bölge ile bir nesne [](/windows/win32/api/windef/ns-windef-rect) başlatır.|
 |[CRgn:: CreateFromData](#createfromdata)|Verilen bölge ve dönüşüm verilerinden bir bölge oluşturur.|
 |[CRgn:: CreateFromPath](#createfrompath)|Verilen cihaz bağlamına seçili olan yoldan bir bölge oluşturur.|
 |[CRgn:: CreatePolygonRgn](#createpolygonrgn)|`CRgn` Bir nesneyi Çokgen bölge ile başlatır. Sistem, gerekirse, en son köşenin ilk köşesini bir çizgi çizerek otomatik olarak çokgeni kapatır.|

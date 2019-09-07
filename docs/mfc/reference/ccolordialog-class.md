@@ -20,12 +20,12 @@ helpviewer_keywords:
 - CColorDialog [MFC], OnColorOK
 - CColorDialog [MFC], m_cc
 ms.assetid: d013dc25-9290-4b5d-a97e-95ad7208e13b
-ms.openlocfilehash: 3031b1e5870dd7f59af7adf48a6a77aaccdf53fc
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: f5c235008b72996424e01ee912ca78ecffab450a
+ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69507208"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70741583"
 ---
 # <a name="ccolordialog-class"></a>CColorDialog sınıfı
 
@@ -72,7 +72,7 @@ Bir `CColorDialog` nesne, görüntüleme sistemi için tanımlanan renklerin lis
 
 Bir `CColorDialog` nesne oluşturmak için, belirtilen oluşturucuyu kullanın veya yeni bir sınıf türetebilir ve kendi özel oluşturucuyu kullanın.
 
-İletişim kutusu oluşturulduktan sonra, iletişim kutusu denetimlerinin değerlerini başlatmak için [m_cc](#m_cc) yapısındaki herhangi bir değeri ayarlayabilir veya değiştirebilirsiniz. *M_cc* yapısı [choosecolor](/windows/win32/api/commdlg/ns-commdlg-choosecolorw)türündedir.
+İletişim kutusu oluşturulduktan sonra, iletişim kutusu denetimlerinin değerlerini başlatmak için [m_cc](#m_cc) yapısındaki herhangi bir değeri ayarlayabilir veya değiştirebilirsiniz. *M_cc* yapısı [choosecolor](/windows/win32/api/commdlg/ns-commdlg-choosecolora~r1)türündedir.
 
 İletişim kutusunun denetimlerini başlattıktan sonra, iletişim kutusunu göstermek ve `DoModal` kullanıcının bir renk seçmesine izin vermek için üye işlevini çağırın. `DoModal`kullanıcının iletişim kutusunun Tamam (IDOK) veya Cancel (ıDCANCEL) düğmesi seçimini döndürür.
 
@@ -126,7 +126,7 @@ CColorDialog(
 Varsayılan renk seçimi. Değer belirtilmemişse, varsayılan RGB 'dir (0, 0, 0) (siyah).
 
 *dwFlags*<br/>
-İletişim kutusunun işlevini ve görünümünü özelleştiren bir bayrak kümesi. Daha fazla bilgi için Windows SDK [choosecolor](/windows/win32/api/commdlg/ns-commdlg-choosecolorw) yapısına bakın.
+İletişim kutusunun işlevini ve görünümünü özelleştiren bir bayrak kümesi. Daha fazla bilgi için Windows SDK [choosecolor](/windows/win32/api/commdlg/ns-commdlg-choosecolora~r1) yapısına bakın.
 
 *pParentWnd*<br/>
 İletişim kutusunun üst veya sahip penceresine yönelik bir işaretçi.
@@ -199,7 +199,7 @@ Döndürülen dizideki her 16 RGB değeri, RGB (255255255) (beyaz) olarak başla
 
 ##  <a name="m_cc"></a>CColorDialog:: m_cc
 
-Üyeleri iletişim kutusunun özelliklerini ve değerlerini depolayan [choosecolor](/windows/win32/api/commdlg/ns-commdlg-choosecolorw)türünde bir yapı.
+Üyeleri iletişim kutusunun özelliklerini ve değerlerini depolayan [choosecolor](/windows/win32/api/commdlg/ns-commdlg-choosecolora~r1)türünde bir yapı.
 
 ```
 CHOOSECOLOR m_cc;

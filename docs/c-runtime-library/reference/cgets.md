@@ -21,15 +21,15 @@ helpviewer_keywords:
 - cgets function
 ms.assetid: 54faf257-5ed6-4301-be19-66d953e901fa
 ms.openlocfilehash: 22af15eca963f9c136cf41bf9737ef94aae187ef
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50486040"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70739863"
 ---
 # <a name="cgets"></a>cgets
 
-Bu POSIX işlevi kullanım dışı bırakılmıştır. ISO C++ uyumlu [_cgets](../../c-runtime-library/cgets-cgetws.md) veya Gelişmiş güvenlikli [_cgets_s](cgets-s-cgetws-s.md) yerine.
+Bu POSIX işlevi kullanım dışıdır. Bunun yerine ISO C++ uyumlu [_cal](../../c-runtime-library/cgets-cgetws.md) veya Security-Enhanced [_cgets_s](cgets-s-cgetws-s.md) kullanın.
 
 > [!IMPORTANT]
-> Bu API, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).

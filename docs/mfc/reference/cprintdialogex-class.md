@@ -38,12 +38,12 @@ helpviewer_keywords:
 - CPrintDialogEx [MFC], PrintSelection
 - CPrintDialogEx [MFC], m_pdex
 ms.assetid: 1d506703-ee1c-44cc-b4ce-4e778fec26b8
-ms.openlocfilehash: 2334fb0a420e14aa4fa8b8b570671fb9a611de32
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 76c3968b20a66e9653fd769339e23ede2a756bbd
+ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69502878"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70741338"
 ---
 # <a name="cprintdialogex-class"></a>CPrintDialogEx sınıfı
 
@@ -94,7 +94,7 @@ Uygulamanız için yazdırma sürecinin birçok yönlerini işlemek üzere çer�
 
 Uygulamanızın, Framework 'ün katılımı olmadan yazdırmayı işlemesini istiyorsanız, "olduğu gibi" `CPrintDialogEx` sınıfını, sağlanmış Oluşturucu ile kullanabilir veya kendi iletişim `CPrintDialogEx` sınıfınızı kendi iletişim sınıfınızı türetebilir ve gereksinimlerinize uyacak şekilde bir Oluşturucu yazabilirsiniz. Her iki durumda da, bu iletişim kutuları sınıfından `CCommonDialog`TÜRETILDIKLERINDEN standart MFC iletişim kutuları gibi davranır.
 
-Bir `CPrintDialogEx` nesnesi kullanmak için, önce `CPrintDialogEx` oluşturucuyu kullanarak nesnesini oluşturun. İletişim kutusu oluşturulduktan sonra, iletişim kutusu denetimlerinin değerlerini başlatmak için [m_pdex](#m_pdex) yapısındaki herhangi bir değeri ayarlayabilir veya değiştirebilirsiniz. Yapı PRINTDLGEX türündedir. [](/windows/win32/api/commdlg/ns-commdlg-pdexw) `m_pdex` Bu yapı hakkında daha fazla bilgi için Windows SDK bakın.
+Bir `CPrintDialogEx` nesnesi kullanmak için, önce `CPrintDialogEx` oluşturucuyu kullanarak nesnesini oluşturun. İletişim kutusu oluşturulduktan sonra, iletişim kutusu denetimlerinin değerlerini başlatmak için [m_pdex](#m_pdex) yapısındaki herhangi bir değeri ayarlayabilir veya değiştirebilirsiniz. Yapı PRINTDLGEX türündedir. [](/windows/win32/api/commdlg/ns-commdlg-printdlgexw) `m_pdex` Bu yapı hakkında daha fazla bilgi için Windows SDK bakın.
 
 `m_pdex` `GlobalFree` Ve üyeleri`hDevNames` için kendi tanıtıcılarınızı sağlamadıysanız, iletişim kutusuyla işiniz bittiğinde bu tutamaçlar için Windows işlevini çağırdığınızdan `hDevMode` emin olun.
 
@@ -143,7 +143,7 @@ CPrintDialogEx(
 ### <a name="parameters"></a>Parametreler
 
 *dwFlags*<br/>
-Bit düzeyinde OR işleci kullanılarak birleştirilen iletişim kutusunun ayarlarını özelleştirmek için kullanabileceğiniz bir veya daha fazla bayrak. Örneğin, PD_ALLPAGES bayrağı varsayılan yazdırma aralığını belgenin tüm sayfalarına ayarlar. Bu bayraklar hakkında daha fazla bilgi için Windows SDK [PRINTDLGEX](/windows/win32/api/commdlg/ns-commdlg-pdexw) yapısına bakın.
+Bit düzeyinde OR işleci kullanılarak birleştirilen iletişim kutusunun ayarlarını özelleştirmek için kullanabileceğiniz bir veya daha fazla bayrak. Örneğin, PD_ALLPAGES bayrağı varsayılan yazdırma aralığını belgenin tüm sayfalarına ayarlar. Bu bayraklar hakkında daha fazla bilgi için Windows SDK [PRINTDLGEX](/windows/win32/api/commdlg/ns-commdlg-printdlgexw) yapısına bakın.
 
 *pParentWnd*<br/>
 İletişim kutusunun üst veya sahip penceresine yönelik bir işaretçi.
@@ -304,7 +304,7 @@ PRINTDLGEX m_pdex;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir `CPrintDialogEx` nesne oluşturduktan sonra, [DoModal](#domodal) üye `m_pdex` işlevini çağırmadan önce iletişim kutusunun çeşitli yönlerini ayarlamak için kullanabilirsiniz. `m_pdex` Yapı hakkında daha fazla bilgi için Windows SDK [PRINTDLGEX](/windows/win32/api/commdlg/ns-commdlg-pdexw) bakın.
+Bir `CPrintDialogEx` nesne oluşturduktan sonra, [DoModal](#domodal) üye `m_pdex` işlevini çağırmadan önce iletişim kutusunun çeşitli yönlerini ayarlamak için kullanabilirsiniz. `m_pdex` Yapı hakkında daha fazla bilgi için Windows SDK [PRINTDLGEX](/windows/win32/api/commdlg/ns-commdlg-printdlgexw) bakın.
 
 `m_pdex` Veri üyesini doğrudan değiştirirseniz, varsayılan davranışı geçersiz kılarsınız.
 
@@ -358,7 +358,7 @@ Yalnızca belgedeki bir sayfa aralığının yazdırılması gerekiyorsa TRUE; A
 
 ### <a name="remarks"></a>Açıklamalar
 
-Belirtilen sayfa aralıkları [m_pdex](#m_pdex) ' dan `nPageRanges`belirlenebilir (Windows SDK, `nMaxPageRanges`, ve `lpPageRanges` [PRINTDLGEX](/windows/win32/api/commdlg/ns-commdlg-pdexw) yapısında bkz.).
+Belirtilen sayfa aralıkları [m_pdex](#m_pdex) ' dan `nPageRanges`belirlenebilir (Windows SDK, `nMaxPageRanges`, ve `lpPageRanges` [PRINTDLGEX](/windows/win32/api/commdlg/ns-commdlg-printdlgexw) yapısında bkz.).
 
 ##  <a name="printselection"></a>CPrintDialogEx::P rintSelection
 

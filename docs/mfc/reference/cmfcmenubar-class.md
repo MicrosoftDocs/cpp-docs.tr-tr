@@ -106,12 +106,12 @@ helpviewer_keywords:
 - CMFCMenuBar [MFC], SetRecentlyUsedMenus
 - CMFCMenuBar [MFC], SetShowAllCommands
 ms.assetid: 8a3ce4c7-b012-4dc0-b4f8-53c10b4b86b8
-ms.openlocfilehash: 61a5f83e31b4793ca6467287c99f3b9708659402
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 278feca6b64915d0cf789e8f68af3c3fdf9b3129
+ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69505238"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70739469"
 ---
 # <a name="cmfcmenubar-class"></a>CMFCMenuBar sınıfı
 
@@ -1037,7 +1037,7 @@ static BOOL SetMenuFont(
 ### <a name="parameters"></a>Parametreler
 
 *lpLogFont*<br/>
-'ndaki Ayarlanacak yazı tipini tanımlayan [LOGFONT](/windows/win32/api/dimm/ns-dimm-__midl___midl_itf_dimm_0000_0000_0003) yapısına yönelik bir işaretçi.
+'ndaki Ayarlanacak yazı tipini tanımlayan [LOGFONT](/windows/win32/api/dimm/ns-dimm-logfonta) yapısına yönelik bir işaretçi.
 
 *bHorz*<br/>
 'ndaki *LpLogFont* parametresinin dikey yazı tipi için KULLANıLMASıNı istiyorsanız true, bunun yatay yazı tipi için KULLANıLMASıNı istiyorsanız false.

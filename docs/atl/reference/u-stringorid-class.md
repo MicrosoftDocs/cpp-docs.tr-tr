@@ -9,12 +9,12 @@ helpviewer_keywords:
 - _U_STRINGorID class
 - U_STRINGorID class
 ms.assetid: 443cdc00-d265-4b27-8ef3-2feb95f3e5e3
-ms.openlocfilehash: 57363dbe2a1e7166b8da401900c3a7f913e63a9d
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: c57d983e9680ce6d2cab375e427b80f4d3b6c2d6
+ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69495108"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70739575"
 ---
 # <a name="_u_stringorid-class"></a>_U_STRINGorID sınıfı
 
@@ -45,7 +45,7 @@ class _U_STRINGorID
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu sınıf, bir kaynağın adı ya da KIMLIĞI olabilen bir LPCTSTR bağımsız değişkenini kabul eden [FindResource](/windows/win32/api/winbase/nf-winbase-findresourcew), [LoadIcon](/windows/win32/api/winuser/nf-winuser-loadiconw)ve [LoadMenu](/windows/win32/api/winuser/nf-winuser-loadmenuw) işlevleri gibi Windows kaynak yönetimi API 'sine sarmalayıcıları uygulamak için tasarlanmıştır.
+Bu sınıf, bir kaynağın adı ya da KIMLIĞI olabilen bir LPCTSTR bağımsız değişkenini kabul eden [FindResource](/windows/win32/api/winbase/nf-winbase-findresourcea), [LoadIcon](/windows/win32/api/winuser/nf-winuser-loadiconw)ve [LoadMenu](/windows/win32/api/winuser/nf-winuser-loadmenuw) işlevleri gibi Windows kaynak yönetimi API 'sine sarmalayıcıları uygulamak için tasarlanmıştır.
 
 Sınıf iki Oluşturucu aşırı yüklemesini tanımlar: One bir LPCTSTR bağımsız değişkenini kabul eder ve diğeri bir UINT bağımsız değişkenini kabul eder. UINT bağımsız değişkeni, MAKEINTRESOURCE makrosunu ve [m_lpstr](#_u_stringorid__m_lpstr)sınıfının tek veri üyesinde saklanan sonucu kullanan Windows kaynak yönetimi işlevleri ile uyumlu bir kaynak türüne dönüştürülür. LPCTSTR oluşturucusunun bağımsız değişkeni dönüştürme olmadan doğrudan saklanır.
 

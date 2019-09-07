@@ -6,12 +6,12 @@ helpviewer_keywords:
 - CHeaderCtrl class [MFC], adding items
 - header controls [MFC], adding items to
 ms.assetid: 2e9a28b1-7302-4a93-8037-c5a4183e589a
-ms.openlocfilehash: d9a35123ddbe77b8e5e1779651fc4cde233863ae
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 9b1cfd6f94d6412eef7b2bb9820f712e2a335454
+ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69509310"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70741179"
 ---
 # <a name="adding-items-to-the-header-control"></a>Üstbilgi Denetimine Öğe Ekleme
 
@@ -19,7 +19,7 @@ ms.locfileid: "69509310"
 
 ### <a name="to-add-a-header-item"></a>Üst bilgi öğesi eklemek için
 
-1. [HD_ITEM](/windows/win32/api/commctrl/ns-commctrl-_hd_itemw) yapısını hazırlayın.
+1. [HD_ITEM](/windows/win32/api/commctrl/ns-commctrl-hditemw) yapısını hazırlayın.
 
 1. Yapıyı geçirerek [CHeaderCtrl:: InsertItem](../mfc/reference/cheaderctrl-class.md#insertitem)' ı çağırın.
 
