@@ -1,16 +1,16 @@
 ---
 title: /Qspectre
-ms.date: 10/12/2018
+ms.date: 09/06/2019
 f1_keywords:
 - VC.Project.VCCLCompilerTool.SpectreMitigation
 helpviewer_keywords:
 - /Qspectre
-ms.openlocfilehash: 2b784e464f98ae6a1f9285f799d903ae689bf6d5
-ms.sourcegitcommit: 0867d648e0955ebad7260b5fbebfd6cd4d58f3c7
+ms.openlocfilehash: e8d03075a980a9b9c345ce351413e39a3c3444cb
+ms.sourcegitcommit: 7babce70714242cf498ca811eec3695fad3abd03
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68341000"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70808831"
 ---
 # <a name="qspectre"></a>/Qspectre
 
@@ -31,6 +31,9 @@ Belirli Spectre varyant 1 güvenlik açıklarına karşı hafifletmek için derl
 Microsoft Visual C++ kitaplıkları, Spectre azaltma ile sürümlerde de mevcuttur. Visual Studio 2017 ve üzeri için Spectre-hafiftılan kitaplıklar Visual Studio Yükleyicisi indirilebilir. Bunlar, **derleyiciler, derleme araçları ve çalışma zamanları**altındaki **tek bileşenler** sekmesinde bulunur ve adında "Spectre için libs" bulunur. Hem DLL hem de hafifletme özellikli olan statik çalışma zamanı kitaplıkları görsel C++ çalışma zamanlarının bir alt kümesi için kullanılabilir: VC + + başlangıç kodu, vcruntime140, msvcp140, concrt140 ve vcamp140. Dll 'Ler yalnızca uygulama yerel dağıtımı için desteklenir. Visual C++ 2017 ve üzeri çalışma zamanı kitaplıklarının yeniden dağıtılabilir içeriği değiştirilmedi.
 
 MFC ve ATL için Spectre-hafifme kitaplıklarını da yükleyebilirsiniz. Bunlar **, SDK 'lar, kitaplıklar ve çerçeveler**altındaki **ayrı bileşenler** sekmesinde bulunur.
+
+> [!NOTE]
+> Evrensel Windows (UWP) uygulamaları veya bileşenleri için Spectre ile hafiflemesiz kitaplıkların bir sürümü yoktur. Bu tür kitaplıkların uygulama yerel dağıtımı mümkün değildir.
 
 ### <a name="applicability"></a>Uygulanabilirlik
 
@@ -68,11 +71,25 @@ Daha fazla bilgi için bkz. resmi [Microsoft Güvenlik Danışmanlığı ADV1800
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
+::: moniker range="vs-2019"
+
 1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual C++ Studio 'da derleyici ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. **Yapılandırma özellikleri** > **CC++/** komut > **satırı** Özellik sayfası ' nı seçin.
+1. **Yapılandırma özellikleri** > **CC++ /** kod> **oluşturma** özellik sayfasını seçin.
+
+1. **Spectre hafifletme** özelliği için yeni bir değer seçin. Değişikliği uygulamak için **Tamam ' ı** seçin.
+
+::: moniker-end
+
+::: moniker range="<=vs-2017"
+
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual C++ Studio 'da derleyici ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
+
+1. **Yapılandırma özellikleri** > **CC++ /** komut> **satırı** Özellik sayfası ' nı seçin.
 
 1. **Ek seçenekler** kutusuna **/Qspectre** derleyici seçeneğini girin. Değişikliği uygulamak için **Tamam ' ı** seçin.
+
+::: moniker-end
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
