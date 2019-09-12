@@ -50,7 +50,7 @@ Aşağıdaki tabloda bir Visual Studio projesindeki ortak dosyalar gösterilmekt
 |Dosya Uzantısı|Tür|İçindekiler|
 |--------------------|----------|--------------|
 |.asmx|Source|Dağıtım dosyası.|
-|\|Source|Active Server sayfa dosyası.|
+|.asp|Source|Active Server sayfa dosyası.|
 |. ATP|Project|Uygulama şablonu proje dosyası.|
 |. bmp,. dib,. gif,. jpg,. jpe,. png|Kaynak|Genel resim dosyaları.|
 |. bsc|Derlen|Tarayıcı kodu dosyası.|
