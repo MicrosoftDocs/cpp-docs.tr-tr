@@ -6,10 +6,10 @@ helpviewer_keywords:
 - cl.exe compiler, setting options
 ms.assetid: 69809cfb-a38a-4035-b154-283a61938df8
 ms.openlocfilehash: a8b203c94d4a5af28837627fda1b8e1631dfb0c0
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.sourcegitcommit: 7babce70714242cf498ca811eec3695fad3abd03
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
+ms.lasthandoff: 09/11/2019
 ms.locfileid: "70220491"
 ---
 # <a name="compiler-warnings-that-are-off-by-default"></a>Varsayılan olarak kapalı olan derleyici uyarıları
@@ -70,7 +70,7 @@ Aşağıdaki uyarılar, Visual Studio 2015 ve sonraki sürümlerinde varsayılan
 |[C4437](../error-messages/compiler-warnings/compiler-warning-level-4-c4437.md) (düzey 4)|'*Class1*' sanal temelinde '*Class2*' öğesine dynamic_cast bazı bağlamlarda başarısız olabilir|
 |C4444 (düzey 3)|en üst düzey '__unaligned' bu bağlamda uygulanmadı|
 |[C4464](../error-messages/compiler-warnings/c4464.md) (düzey 4)|göreli ekleme yolu '.. ' içeriyor|
-|[C4471](../error-messages/compiler-warnings/compiler-warning-level-4-c4471.md) (düzey 4)|kapsamlı olmayan numaralandırmanın ileri bir bildirimi temel alınan bir türe (int varsayıldı) sahip olmalıdır <sup></sup>|
+|[C4471](../error-messages/compiler-warnings/compiler-warning-level-4-c4471.md) (düzey 4)|kapsamlı olmayan numaralandırmanın ileri bir bildirimi temel alınan bir türe (int <sup>varsayıldı) sahip</sup> olmalıdır|
 |C4472 (düzey 1)|'*Identifier*' yerel bir sabit listesi: yönetilen bir Enum bildirmek için bir erişim belirticisi (Private/public) ekleme|
 |[C4514](../error-messages/compiler-warnings/compiler-warning-level-4-c4514.md) (düzey 4)|'*Function*': başvurulmayan satır içi işlev kaldırıldı|
 |[C4536](../error-messages/compiler-warnings/compiler-warning-level-4-c4536.md) (düzey 4)|' tür adı ': tür adı '*limit*' karakter olan meta veri sınırını aşıyor|
@@ -119,7 +119,7 @@ Aşağıdaki uyarılar, Visual Studio 2015 ve sonraki sürümlerinde varsayılan
 |[C4820](../error-messages/compiler-warnings/compiler-warning-level-4-c4820.md) (düzey 4)|'*MEMBER_NAME*' oluşturulduktan sonra '*bayt*' bayt doldurma eklendi|
 | [C4822](../error-messages/compiler-warnings/compiler-warning-level-1-c4822.md) (düzey 1) | '*üye*': Yerel sınıf üyesi işlevin gövdesi yok |
 |C4826 (düzey 2)|'*Type1*' değerinden '*type2*' öğesine dönüştürme, işaret genişletilmiş. Bu, beklenmeyen çalışma zamanı davranışına neden olabilir.|
-|C4837 (düzey 4)|trigraf algılandı: '?? ' karakter ' tarafından değiştirilmiş *karakter*|
+|C4837 (düzey 4)|trigraf algılandı: '?? '*karakter '* tarafından değiştirilmiş *karakter*|
 |C4841 (düzey 4)|Standart olmayan uzantı kullanıldı: OffsetOf içinde kullanılan bileşik üye göstergesi|
 |C4842 (düzey 4)|birden fazla devralma kullanılarak bir türe uygulanan ' OffsetOf ' sonucunun, derleyici yayınları arasında tutarlı olması garanti edilmez|
 |[C4868](../error-messages/compiler-warnings/compiler-warning-c4868.md) (düzey 4)|'_File_(*Line_Number*) ' derleyicisi, örgü başlatma listesinde soldan sağa değerlendirme sırasını zorlamaz|

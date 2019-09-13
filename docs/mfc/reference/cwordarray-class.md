@@ -1,6 +1,6 @@
 ---
 title: CWordArray sınıfı
-ms.date: 11/04/2016
+ms.date: 09/07/2019
 f1_keywords:
 - CWordArray
 - AFXCOLL/CWordArray
@@ -42,16 +42,16 @@ helpviewer_keywords:
 - CObArray [MFC], SetAtGrow
 - CObArray [MFC], SetSize
 ms.assetid: 2ba2c194-2c6c-40ff-9db4-e9dbe57e1f57
-ms.openlocfilehash: 945a77436f41f4981392e583c831723e667f867c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c136bbb14e0d7cffc604813731b6f87ba18063cf
+ms.sourcegitcommit: 3caf5261b3ea80d9cf14038c116ba981d655cd13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62323615"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70907907"
 ---
 # <a name="cwordarray-class"></a>CWordArray sınıfı
 
-16 bit sözcük dizilerini destekler.
+16-bit sözcüklerdeki dizileri destekler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -61,11 +61,11 @@ class CWordArray : public CObject
 
 ## <a name="members"></a>Üyeler
 
-Üye işlevlerinin `CWordArray` sınıfın üye işlevleri için benzer [CObArray](../../mfc/reference/cobarray-class.md). Bu benzerlik nedeniyle kullanabileceğiniz `CObArray` başvuru belgeleri üye işlev özellikleri için. Gördüğünüz yerde bir [CObject](../../mfc/reference/cobject-class.md) işaretçi bir işlev parametre veya dönüş değeri olarak alternatif bir sözcük.
+Öğesinin `CWordArray` üye işlevleri [CObArray](../../mfc/reference/cobarray-class.md)sınıfının üye işlevlerine benzerdir. Bu benzerlik nedeniyle, üye işlevi özellikleri için `CObArray` başvuru belgelerini kullanabilirsiniz. Bir [CObject](../../mfc/reference/cobject-class.md) işaretçisini işlev parametresi veya dönüş değeri olarak gördüğünüz her yerde, bir kelime yerine koyun.
 
 `CObject* CObArray::GetAt( int <nIndex> ) const;`
 
-Örneğin, için çevirir
+Örneğin, öğesine çevirir
 
 `WORD CWordArray::GetAt( int <nIndex> ) const;`
 
@@ -73,46 +73,46 @@ class CWordArray : public CObject
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CObArray::CObArray](../../mfc/reference/cobarray-class.md#cobarray)|Boş bir dizi oluşturur.|
+|[CObArray:: CObArray](../../mfc/reference/cobarray-class.md#cobarray)|Boş bir dizi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CObArray::Add](../../mfc/reference/cobarray-class.md#add)|Dizinin sonuna bir öğe ekler; dizi gerekirse büyür.|
-|[CObArray::Append](../../mfc/reference/cobarray-class.md#append)|Diziyi başka diziye ekler; dizi gerekirse büyür.|
-|[CObArray::Copy](../../mfc/reference/cobarray-class.md#copy)|Diziyi başka diziye kopyalar; dizi gerekirse büyür.|
-|[CObArray::ElementAt](../../mfc/reference/cobarray-class.md#elementat)|Dizi içinde öğe işaretçisi için geçici bir başvuru döndürür.|
-|[CObArray::FreeExtra](../../mfc/reference/cobarray-class.md#freeextra)|Geçerli üst sınır yukarıdaki tüm kullanılmayan belleği serbest bırakır.|
-|[CObArray::GetAt](../../mfc/reference/cobarray-class.md#getat)|Belirtilen dizindeki değeri döndürür.|
-|[CObArray::GetCount](../../mfc/reference/cobarray-class.md#getcount)|Bu dizinin içinde öğe sayısını alır.|
-|[CObArray::GetData](../../mfc/reference/cobarray-class.md#getdata)|Dizide öğelere erişim sağlar. NULL olabilir.|
-|[CObArray::GetSize](../../mfc/reference/cobarray-class.md#getsize)|Bu dizinin içinde öğe sayısını alır.|
-|[CObArray::GetUpperBound](../../mfc/reference/cobarray-class.md#getupperbound)|En büyük geçerli dizinini döndürür.|
-|[CObArray::InsertAt](../../mfc/reference/cobarray-class.md#insertat)|Belirtilen dizindeki öğenin (veya başka bir dizideki tüm öğeler) ekler.|
-|[CObArray::IsEmpty](../../mfc/reference/cobarray-class.md#isempty)|Dizi boş olup olmadığını belirler.|
-|[CObArray::RemoveAll](../../mfc/reference/cobarray-class.md#removeall)|Bu dizisinden tüm öğeleri kaldırır.|
-|[CObArray::RemoveAt](../../mfc/reference/cobarray-class.md#removeat)|Belirli bir dizindeki öğeyi kaldırır.|
-|[CObArray::SetAt](../../mfc/reference/cobarray-class.md#setat)|Belirtilen dizin için değeri ayarlar; dizi büyümesine izin verilmiyor.|
-|[CObArray::SetAtGrow](../../mfc/reference/cobarray-class.md#setatgrow)|Belirtilen dizin için değeri ayarlar; dizi gerekirse büyür.|
-|[CObArray::SetSize](../../mfc/reference/cobarray-class.md#setsize)|Bu dizinin içinde yer alması için öğe sayısını ayarlar.|
+|[CObArray:: Add](../../mfc/reference/cobarray-class.md#add)|Dizinin sonuna bir öğesi ekler; gerekirse diziyi büyür.|
+|[CObArray:: Append](../../mfc/reference/cobarray-class.md#append)|Diziye başka bir dizi ekler; gerekirse diziyi büyür.|
+|[CObArray:: Copy](../../mfc/reference/cobarray-class.md#copy)|Başka bir diziyi diziye kopyalar; gerekirse diziyi büyür.|
+|[CObArray:: ElementAt](../../mfc/reference/cobarray-class.md#elementat)|Dizi içindeki öğe işaretçisine geçici bir başvuru döndürür.|
+|[CObArray:: FreeExtra](../../mfc/reference/cobarray-class.md#freeextra)|Geçerli üst sınırın üzerinde kullanılmayan tüm belleği serbest bırakır.|
+|[CObArray:: GetAt](../../mfc/reference/cobarray-class.md#getat)|Verilen dizindeki değeri döndürür.|
+|[CObArray:: GetCount](../../mfc/reference/cobarray-class.md#getcount)|Bu dizideki öğelerin sayısını alır.|
+|[CObArray:: GetData](../../mfc/reference/cobarray-class.md#getdata)|Dizideki öğelere erişime izin verir. NULL olabilir.|
+|[CObArray:: GetSize](../../mfc/reference/cobarray-class.md#getsize)|Bu dizideki öğelerin sayısını alır.|
+|[CObArray:: Getüstsınırı](../../mfc/reference/cobarray-class.md#getupperbound)|En büyük geçerli dizini döndürür.|
+|[CObArray:: InsertAt](../../mfc/reference/cobarray-class.md#insertat)|Belirtilen dizine bir öğe (veya başka bir dizide bulunan tüm öğeleri) ekler.|
+|[CObArray:: IsEmpty](../../mfc/reference/cobarray-class.md#isempty)|Dizinin boş olup olmadığını belirler.|
+|[CObArray:: RemoveAll](../../mfc/reference/cobarray-class.md#removeall)|Bu dizideki tüm öğeleri kaldırır.|
+|[CObArray:: RemoveAt](../../mfc/reference/cobarray-class.md#removeat)|Belirli bir dizindeki bir öğeyi kaldırır.|
+|[CObArray:: SetAt](../../mfc/reference/cobarray-class.md#setat)|Belirli bir dizin için değeri ayarlar; dizinin büyümesine izin verilmiyor.|
+|[CObArray:: SetAtGrow](../../mfc/reference/cobarray-class.md#setatgrow)|Belirli bir dizin için değeri ayarlar; gerekirse diziyi büyür.|
+|[CObArray:: SetSize](../../mfc/reference/cobarray-class.md#setsize)|Bu dizide yer alan öğelerin sayısını ayarlar.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CObArray::operator&#91;&#93;](../../mfc/reference/cobarray-class.md#operator_at)|Belirtilen dizindeki öğeyi alır veya ayarlar.|
+|[CObArray:: işleci&#91;&#93;](../../mfc/reference/cobarray-class.md#operator_at)|Belirtilen dizindeki öğeyi ayarlar veya alır.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CWordArray` içerir [ımplement_serıal](run-time-object-model-services.md#implement_serial) seri hale getirme ve alt öğeleri dökme desteklemek için makrosu. Sözcük dizisi veya aşırı yüklenmiş bir ekleme operatörü ile birlikte bir arşiv depolanıyorsa [CObject::Serialize](../../mfc/reference/cobject-class.md#serialize) üye işlevi, her öğe olan, sırayla, serileştirilmiş.
+`CWordArray`öğelerinin serileştirilmesi ve dökümünü desteklemek için [IMPLEMENT_SERIAL](run-time-object-model-services.md#implement_serial) makrosunu ekler. Bir sözcük dizisi, aşırı yüklenmiş bir ekleme işleci veya [CObject:: Serialize](../../mfc/reference/cobject-class.md#serialize) üye işlevi ile bir arşive depolanıyorsa, her öğe sırasıyla serileştirilmiş olur.
 
 > [!NOTE]
->  Bir dizi kullanmadan önce kullanmayı `SetSize` boyutuna kurmak ve kendisi için bellek ayrılamadı. Kullanmıyorsanız, `SetSize`, diziniz için öğeleri ekleme, oluyor, sık sık yeniden ve kopyalanır. Sık sık yeniden ayırma ve kopyalama verimsiz ve bellek parçası.
+>  Bir dizi kullanmadan önce, boyutunu `SetSize` belirlemek ve için bellek ayırmak üzere kullanın. Kullanmıyorsanız `SetSize`, diziye öğe eklemek, bu öğenin sık olarak yeniden tahsis edilmesine ve kopyalanmasına neden olur. Sık yeniden ayırma ve kopyalama verimsiz ve bellek parçalara ayırma yapılabilir.
 
-Bir dizideki tek tek öğelerin dökümü gerekiyorsa, 1 veya daha büyük derinliği döküm bağlam ayarlamanız gerekir.
+Dizideki ayrı öğelerin bir dökümünden birine ihtiyacınız varsa, döküm bağlamının derinliğini 1 veya daha büyük olarak ayarlamanız gerekir.
 
-Kullanma hakkında daha fazla bilgi için `CWordArray`, makaleye göz atın [koleksiyonları](../../mfc/collections.md).
+Kullanma `CWordArray`hakkında daha fazla bilgi için bkz. Makale [koleksiyonları](../../mfc/collections.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -122,11 +122,11 @@ Kullanma hakkında daha fazla bilgi için `CWordArray`, makaleye göz atın [kol
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxcoll.h
+**Üstbilgi:** afxcoll. h
 
-##  <a name="icommandsource_interface"></a>  ICommandSource arabirimi
+##  <a name="icommandsource_interface"></a>ICommandSource arabirimi
 
-Bir kullanıcı denetimine komut kaynak nesneden gönderilen komutları yönetir.
+Bir komut kaynak nesnesinden kullanıcı denetimine gönderilen komutları yönetir.
 
 ```
 interface class ICommandSource
@@ -134,15 +134,15 @@ interface class ICommandSource
 
 ### <a name="remarks"></a>Açıklamalar
 
-MFC görünümü, bir kullanıcı denetiminde barındırdığınızda [CWinFormsView sınıfı](../../mfc/reference/cwinformsview-class.md) yollar komutları ve güncelleştirme komut UI iletilerini MFC komutlarını (örneğin, çerçeve menüsü ögeleri ve araç çubuğu düğmeleri) işlemelerine izin vermek için kullanıcı denetimi için. Uygulayarak, kullanıcı denetimine bir başvuru size `ICommandSource` nesne.
+Bir MFC görünümünde bir Kullanıcı Denetimi barındırdığınızda, [CWinFormsView sınıfı](../../mfc/reference/cwinformsview-class.md) komutları YÖNLENDIRIR ve MFC komutlarını (örneğin, çerçeve menü öğeleri ve araç çubuğu düğmeleri) işlemesini sağlamak IÇIN komut UI iletilerini Kullanıcı denetimine güncelleştirir. Uygulayarak, Kullanıcı denetimine `ICommandSource` nesnesine bir başvuru verirsiniz.
 
-Bkz: [nasıl yapılır: Komut yönlendirme Windows Forms denetimine ekleme](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md) nasıl kullanılacağına ilişkin bir örnek `ICommandTarget`.
+Bkz [. nasıl yapılır: Öğesinin nasıl kullanılacağına `ICommandTarget`ilişkin bir örnek için](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md) Windows Forms denetimine komut yönlendirmesi ekleyin.
 
-Windows Forms kullanma hakkında daha fazla bilgi için bkz. [MFC içinde Windows formu kullanıcı denetimi kullanma](../../dotnet/using-a-windows-form-user-control-in-mfc.md).
+Windows Forms kullanma hakkında daha fazla bilgi için bkz. [MFC 'de Windows formu Kullanıcı denetimi kullanma](../../dotnet/using-a-windows-form-user-control-in-mfc.md).
 
-##  <a name="addcommandhandler"></a>  ICommandSource::AddCommandHandler
+##  <a name="addcommandhandler"></a>ICommandSource:: AddCommandHandler
 
-Bir komut işleyici, bir komut kaynak nesnesine ekler.
+Komut kaynak nesnesine bir komut işleyicisi ekler.
 
 ```
 void AddCommandHandler(
@@ -153,20 +153,20 @@ void AddCommandHandler(
 ### <a name="parameters"></a>Parametreler
 
 *cmdID*<br/>
-Komut kimliği.
+Komut KIMLIĞI.
 
 *cmdHandler*<br/>
-Komut işleyicisi yöntemi için bir tanıtıcı.
+Komut işleyici yöntemine yönelik bir tanıtıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem komut işleyici ekler *cmdHandler* komut kaynak nesnesine ve işleyiciye eşler *cmdID*.
+Bu yöntem komut işleyicisi *cmdHandler* komutunu komut kaynak nesnesine ekler ve Işleyiciyi *cmdID*'e eşler.
 
-Bkz: [nasıl yapılır: Komut yönlendirme Windows Forms denetimine ekleme](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md) nasıl kullanılacağına ilişkin bir örnek `AddCommandHandler`.
+Bkz [. nasıl yapılır: Öğesinin nasıl kullanılacağına `AddCommandHandler`ilişkin bir örnek için](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md) Windows Forms denetimine komut yönlendirmesi ekleyin.
 
-##  <a name="addcommandrangehandler"></a>  ICommandSource::AddCommandRangeHandler
+##  <a name="addcommandrangehandler"></a>ICommandSource:: AddCommandRangeHandler
 
-Komut işleyicileri grubu, bir komut kaynak nesnesine ekler.
+Komut kaynak nesnesine bir komut işleyicileri grubu ekler.
 
 ```
 void AddCommandRangeHandler(
@@ -178,21 +178,21 @@ void AddCommandRangeHandler(
 ### <a name="parameters"></a>Parametreler
 
 *cmdIDMin*<br/>
-Komut Kimliği aralığın başlangıç dizini.
+Komut KIMLIĞI aralığının başlangıç dizini.
 
 *cmdIDMax*<br/>
-Komut Kimliği aralığı bitiş dizini.
+Komut KIMLIĞI aralığının bitiş dizini.
 
 *cmdHandler*<br/>
-Komutlar eşlenmiş ileti işleyicisi yöntemi için bir tanıtıcı.
+Komutların eşlendiği ileti işleyicisi yöntemine yönelik bir tanıtıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, bir tek ileti işleyici komut kimlikleri bir aralıkta eşler ve komut kaynak nesnesine ekler. Bu, bir yöntemle ilgili düğmesi grubu işlemek için kullanılır.
+Bu yöntem, bitişik bir komut kimliği aralığını tek bir ileti işleyicisine eşleştirir ve komut kaynak nesnesine ekler. Bu, bir ilişkili düğme grubunu tek bir yöntemle işlemek için kullanılır.
 
-##  <a name="addcommandrangeuihandler"></a>  ICommandSource::AddCommandRangeUIHandler
+##  <a name="addcommandrangeuihandler"></a>ICommandSource:: Addcommandrangeuıhandler
 
-Bir grup kullanıcı arabirimi komut ileti işleyicileri, bir komut kaynak nesnesine ekler.
+Komut kaynak nesnesine bir kullanıcı arabirimi komut ileti işleyicileri grubu ekler.
 
 ```
 void AddCommandRangeUIHandler(
@@ -204,21 +204,21 @@ void AddCommandRangeUIHandler(
 ### <a name="parameters"></a>Parametreler
 
 *cmdIDMin*<br/>
-Komut Kimliği aralığın başlangıç dizini.
+Komut KIMLIĞI aralığının başlangıç dizini.
 
 *cmdIDMax*<br/>
-Komut Kimliği aralığı bitiş dizini.
+Komut KIMLIĞI aralığının bitiş dizini.
 
 *cmdHandler*<br/>
-Komutlar eşlenmiş ileti işleyicisi yöntemi için bir tanıtıcı.
+Komutların eşlendiği ileti işleyicisi yöntemine yönelik bir tanıtıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, bir tek bir kullanıcı arabirimi komut ileti işleyicisi komut kimlikleri bir aralıkta eşler ve komut kaynak nesnesine ekler. Bu, bir yöntemle ilgili düğmesi grubu işlemek için kullanılır.
+Bu yöntem, bitişik bir komut kimliği aralığını tek bir kullanıcı arabirimi komut iletisi işleyicisine eşleştirir ve komut kaynak nesnesine ekler. Bu, bir ilişkili düğme grubunu tek bir yöntemle işlemek için kullanılır.
 
-##  <a name="addcommanduihandler"></a>  ICommandSource::AddCommandUIHandler
+##  <a name="addcommanduihandler"></a>ICommandSource:: AddCommandUIHandler
 
-Bir kullanıcı arabirimi komut ileti işleyicisi komut kaynak nesnesine ekler.
+Komut kaynak nesnesine bir kullanıcı arabirimi komut iletisi işleyicisi ekler.
 
 ```
 void AddCommandUIHandler(
@@ -229,18 +229,18 @@ void AddCommandUIHandler(
 ### <a name="parameters"></a>Parametreler
 
 *cmdID*<br/>
-Komut kimliği.
+Komut KIMLIĞI.
 
 *cmdUIHandler*<br/>
-Kullanıcı arabirimi komut ileti işleyicisi yöntemi için bir tanıtıcı.
+Kullanıcı arabirimi komut iletisi işleyicisi yöntemi için bir tanıtıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem kullanıcı arabirimi komut ileti işleyicisi ekler *cmdHandler* komut kaynak nesnesine ve işleyiciye eşler *cmdID*.
+Bu yöntem, komut kaynak nesnesine kullanıcı arabirimi komut iletisi işleyicisi *cmdHandler* ' i ekler ve Işleyiciyi *cmdID*'e eşler.
 
-##  <a name="postcommand"></a>  ICommandSource::PostCommand
+##  <a name="postcommand"></a>ICommandText::P Ostsource:
 
-İşlenmesi için beklemenize gerek kalmadan bir ileti gönderir.
+İşlenmek üzere beklemeden bir ileti gönderir.
 
 ```
 void PostCommand(unsigned int command);
@@ -248,16 +248,16 @@ void PostCommand(unsigned int command);
 
 ### <a name="parameters"></a>Parametreler
 
-*Komutu*<br/>
-Yayımlanacak ileti komut kimliği.
+*komutundaki*<br/>
+Nakledilecek iletinin komut KIMLIĞI.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem tarafından belirtilen kimliği eşlenen bir ileti zaman uyumsuz olarak gönderir. *komut*. Çağrı [CWnd::PostMessage](../../mfc/reference/cwnd-class.md#postmessage) karşılık gelen penceresi iletiyi işlemek beklemenize gerek kalmadan pencere ileti kuyruğu ve sonra geri ileti yerleştirmek için.
+Bu yöntem, *komut*tarafından belirtilen kimliğe eşlenen iletiyi zaman uyumsuz olarak gönderir. İletiyi pencerenin ileti kuyruğuna yerleştirmek için [CWnd::P ostMessage](../../mfc/reference/cwnd-class.md#postmessage) çağırır ve sonra karşılık gelen pencerenin iletiyi işlemesini beklemeden geri döndürür.
 
-##  <a name="removecommandhandler"></a>  ICommandSource::RemoveCommandHandler
+##  <a name="removecommandhandler"></a>ICommandSource:: RemoveCommandHandler
 
-Bir komut işleyici, bir komut kaynak nesneden kaldırır.
+Komut işleyicisini bir komut kaynak nesnesinden kaldırır.
 
 ```
 void RemoveCommandHandler(unsigned int cmdID);
@@ -266,15 +266,15 @@ void RemoveCommandHandler(unsigned int cmdID);
 ### <a name="parameters"></a>Parametreler
 
 *cmdID*<br/>
-Komut kimliği.
+Komut KIMLIĞI.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem eşlenmiş komut işleyici kaldırır *cmdID* komut kaynak nesnesi.
+Bu yöntem, *cmdID* ile eşlenen komut işleyicisini komut kaynak nesnesinden kaldırır.
 
-##  <a name="removecommandrangehandler"></a>  ICommandSource::RemoveCommandRangeHandler
+##  <a name="removecommandrangehandler"></a>ICommandSource:: RemoveCommandRangeHandler
 
-Bir grup komut işleyicileri komut kaynak nesnesinden kaldırır.
+Bir komut işleyici grubunu bir komut kaynak nesnesinden kaldırır.
 
 ```
 void RemoveCommandRangeUIHandler(
@@ -285,18 +285,18 @@ void RemoveCommandRangeUIHandler(
 ### <a name="parameters"></a>Parametreler
 
 *cmdIDMin*<br/>
-Komut Kimliği aralığın başlangıç dizini.
+Komut KIMLIĞI aralığının başlangıç dizini.
 
 *cmdIDMax*<br/>
-Komut Kimliği aralığı bitiş dizini.
+Komut KIMLIĞI aralığının bitiş dizini.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem bir grup tarafından belirtilen komut kimlikleri eşlenen ileti işleyicilerini kaldırır *cmdIDMin* ve *cmdIDMax*, komut kaynak nesnesi.
+Bu yöntem, komut kaynak nesnesinden *cmdIDMin* ve *Cmdidmax*tarafından belirtilen komut kimlikleriyle eşlenmiş bir ileti işleyicileri grubunu kaldırır.
 
-##  <a name="removecommandrangeuihandler"></a>  ICommandSource::RemoveCommandRangeUIHandler
+##  <a name="removecommandrangeuihandler"></a>ICommandSource:: Removecommandrangeuıhandler
 
-Bir grup kullanıcı arabirimi komut ileti işleyicileri komut kaynak nesnesinden kaldırır.
+Bir komut kaynak nesnesinden bir kullanıcı arabirimi komut ileti işleyicileri grubunu kaldırır.
 
 ```
 void RemoveCommandRangeUIHandler(
@@ -307,18 +307,18 @@ void RemoveCommandRangeUIHandler(
 ### <a name="parameters"></a>Parametreler
 
 *cmdIDMin*<br/>
-Komut Kimliği aralığın başlangıç dizini.
+Komut KIMLIĞI aralığının başlangıç dizini.
 
 *cmdIDMax*<br/>
-Komut Kimliği aralığı bitiş dizini.
+Komut KIMLIĞI aralığının bitiş dizini.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem bir grup tarafından belirtilen komut kimlikleri eşlenen kullanıcı arabirimi komut ileti işleyicilerini kaldırır *cmdIDMin* ve *cmdIDMax*, komut kaynak nesnesi.
+Bu yöntem, komut kaynak nesnesinden *cmdIDMin* ve *Cmdidmax*tarafından belirtilen komut kimlikleriyle eşlenmiş bir kullanıcı arabirimi komut ileti işleyicileri grubunu kaldırır.
 
-##  <a name="removecommanduihandler"></a>  ICommandSource::RemoveCommandUIHandler
+##  <a name="removecommanduihandler"></a>ICommandSource:: RemoveCommandUIHandler
 
-Bir kullanıcı arabirimi komut ileti işleyicisi komut kaynak nesnesinden kaldırır.
+Bir komut kaynak nesnesinden bir kullanıcı arabirimi komut iletisi işleyicisini kaldırır.
 
 ```
 void RemoveCommandUIHandler(unsigned int cmdID);
@@ -327,15 +327,15 @@ void RemoveCommandUIHandler(unsigned int cmdID);
 ### <a name="parameters"></a>Parametreler
 
 *cmdID*<br/>
-Komut kimliği.
+Komut KIMLIĞI.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem eşlenen kullanıcı arabirimi komut ileti işleyicisini kaldırır *cmdID* komut kaynak nesnesi.
+Bu yöntem, komut kaynak nesnesinden *cmdID* ile eşlenen kullanıcı arabirimi komut iletisi işleyicisini kaldırır.
 
-##  <a name="sendcommand"></a>  ICommandSource::SendCommand
+##  <a name="sendcommand"></a>ICommandSource:: SendCommand
 
-Bir ileti gönderir ve döndürmeden önce işlenecek bekler.
+Bir ileti gönderir ve döndürmeden önce işlenmesini bekler.
 
 ```
 void SendCommand(unsigned int command);
@@ -343,16 +343,16 @@ void SendCommand(unsigned int command);
 
 ### <a name="parameters"></a>Parametreler
 
-*Komutu*<br/>
-Gönderilecek iletinin komut kimliği.
+*komutundaki*<br/>
+Gönderilecek iletinin komut KIMLIĞI.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, zaman uyumlu olarak tarafından belirtilen kimliği eşlenen bir ileti gönderir *komut*. Çağrı [CWnd::SendMessage](../../mfc/reference/cwnd-class.md#sendmessage) Bu pencere yordamını döndürmeden önce iletiyi işleyene kadar pencere ileti kuyruğu ve bekler ileti yerleştirmek için.
+Bu yöntem, *komut*tarafından belirtilen kimliğe eşlenen iletiyi eşzamanlı olarak gönderir. İletiyi pencerenin ileti kuyruğuna yerleştirmek için [CWnd:: SendMessage](../../mfc/reference/cwnd-class.md#sendmessage) çağırır ve bu pencere yordamı döndürmeden önce iletiyi işleyene kadar bekler.
 
-##  <a name="icommandtarget_interface"></a>  ICommandTarget arabirimi
+##  <a name="icommandtarget_interface"></a>ICommandTarget arabirimi
 
-Bir kullanıcı denetimi komutları komut kaynak nesneden almak için bir arabirim sağlar.
+Komut kaynak nesnesinden komutları almak için arabirimi olan bir kullanıcı denetimi sağlar.
 
 ```
 interface class ICommandTarget
@@ -360,15 +360,15 @@ interface class ICommandTarget
 
 ### <a name="remarks"></a>Açıklamalar
 
-MFC görünümü, bir kullanıcı denetiminde barındırdığınızda [CWinFormsView](../../mfc/reference/cwinformsview-class.md) yollar komutları ve güncelleştirme komut UI iletilerini MFC komutlarını (örneğin, çerçeve menüsü ögeleri ve araç çubuğu düğmeleri) işlemelerine izin vermek için kullanıcı denetimi için. Uygulayarak `ICommandTarget`, kullanıcı denetimi nesnesine bir başvuru sağlar.
+Bir MFC görünümünde Kullanıcı denetimini barındırdığınızda, [CWinFormsView](../../mfc/reference/cwinformsview-class.md) ve MFC komutlarının (örneğin, çerçeve menü öğeleri ve araç çubuğu düğmeleri) işlemesini sağlamak IÇIN komut UI iletilerini Kullanıcı denetimine yönlendirir. Uygulayarak `ICommandTarget`, Kullanıcı denetimine nesnesine bir başvuru verirsiniz.
 
-Bkz: [nasıl yapılır: Komut yönlendirme Windows Forms denetimine ekleme](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md) nasıl kullanılacağına ilişkin bir örnek `ICommandTarget`.
+Bkz [. nasıl yapılır: Öğesinin nasıl kullanılacağına `ICommandTarget`ilişkin bir örnek için](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md) Windows Forms denetimine komut yönlendirmesi ekleyin.
 
-Windows Forms kullanma hakkında daha fazla bilgi için bkz. [MFC içinde Windows formu kullanıcı denetimi kullanma](../../dotnet/using-a-windows-form-user-control-in-mfc.md).
+Windows Forms kullanma hakkında daha fazla bilgi için bkz. [MFC 'de Windows formu Kullanıcı denetimi kullanma](../../dotnet/using-a-windows-form-user-control-in-mfc.md).
 
-##  <a name="initialize"></a>  ICommandTarget::Initialize'ı
+##  <a name="initialize"></a>ICommandTarget:: Initialize
 
-Komut hedef nesnesi başlatır.
+Komut hedef nesnesini başlatır.
 
 ```
 void Initialize(ICommandSource^ cmdSource);
@@ -381,13 +381,13 @@ Komut kaynak nesnesine yönelik bir tanıtıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-MFC görünümü, bir kullanıcı denetiminde barındırdığınızda [CWinFormsView](../../mfc/reference/cwinformsview-class.md) yollar komutları ve güncelleştirme komut UI iletilerini MFC komutlarını işlemelerine izin vermek için kullanıcı denetimi için.
+Bir MFC görünümünde bir Kullanıcı Denetimi barındırdığınızda, [CWinFormsView](../../mfc/reference/cwinformsview-class.md) komutunu YÖNLENDIRIR ve MFC komutlarının işlemesini sağlamak IÇIN komut UI iletilerini Kullanıcı denetimine güncelleştirir.
 
-Bu yöntem, komut hedef nesnesini başlatır ve belirtilen komut kaynak nesnesi ile ilişkilendirir *cmdSource*. Kullanıcı denetimi sınıf uygulamasında çağrılmalıdır. Başlatma sırasında komut işleyicileri komut kaynak nesnesi ile çağırarak kayıt [ICommandSource::AddCommandHandler](../../mfc/reference/icommandsource-interface.md) içinde `Initialize` uygulaması. Bkz: [nasıl yapılır: Komut yönlendirme Windows Forms denetimine ekleme](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md) nasıl kullanılacağına ilişkin bir örnek `Initialize` Bunu yapmak için.
+Bu yöntem, komut hedef nesnesini başlatır ve belirtilen komut kaynağı nesnesi *cmdSource*ile ilişkilendirir. Kullanıcı denetim sınıfı uygulamasında çağrılmalıdır. Başlatma sırasında, `Initialize` uygulamadaki [ıomtionsource:: AddCommandHandler](../../mfc/reference/icommandsource-interface.md) öğesini çağırarak komut işleyicilerini komut kaynak nesnesiyle kaydetmeniz gerekir. Bkz [. nasıl yapılır: Bunu yapmak için kullanılacak](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md) `Initialize` bir örnek için Windows Forms denetimine komut yönlendirmesi ekleyin.
 
-##  <a name="icommandui_interface"></a>  Icommanduı arabirimi
+##  <a name="icommandui_interface"></a>Iommanduı arabirimi
 
-Kullanıcı arabirimi komutları yönetir.
+Kullanıcı arabirimi komutlarını yönetir.
 
 ```
 interface class ICommandUI
@@ -395,19 +395,19 @@ interface class ICommandUI
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu arabirim, yöntemleri ve kullanıcı arabirimi komutlarını Yönet özellikleri sağlar. `ICommandUI` benzer [Ccmduı sınıfı](../../mfc/reference/ccmdui-class.md)dışında `ICommandUI` .NET bileşenleri ile birlikte çalışmak MFC uygulamaları için kullanılır.
+Bu arabirim, Kullanıcı arabirimi komutlarını yöneten Yöntemler ve özellikler sağlar. `ICommandUI`, [CCmdUI sınıfına](../../mfc/reference/ccmdui-class.md)benzerdir, ancak `ICommandUI` .NET bileşenleriyle birlikte çalışan MFC uygulamaları için kullanılır.
 
-`ICommandUI` içinde kullanılan bir `ON_UPDATE_COMMAND_UI` işleyici türetilmiş sınıf içinde. Bir uygulamanın kullanıcı (seçer veya tıklama) etkinleştirirken her bir menü öğesi bir menü etkin olarak görüntülenen veya devre dışı. Her menü komut hedefinin uygulayarak bu bilgileri sağlar. bir `ON_UPDATE_COMMAND_UI` işleyici. Her komut kullanıcı arabirimi nesnelerinin uygulamanızdaki bir ileti eşleme girişi ve işlev prototipi her işleyicisi oluşturmak için Özellikler penceresini kullanın.
+`ICommandUI`, türetilmiş bir sınıftaki `ON_UPDATE_COMMAND_UI` bir işleyici içinde kullanılır. Bir uygulamanın kullanıcısı bir menüyü etkinleştirir (seçer veya tıklatır), her menü öğesi etkin veya devre dışı olarak görüntülenir. Her menü komutunun hedefi, bir `ON_UPDATE_COMMAND_UI` işleyici uygulayarak bu bilgileri sağlar. Uygulamanızdaki her bir komut Kullanıcı arabirimi nesnesi için, her işleyici için bir ileti eşleme girişi ve işlev prototipi oluşturmak üzere [sınıf Sihirbazı](mfc-class-wizard.md) 'Nı veya **özellikler** penceresini ( **sınıf görünümü**) kullanın.
 
-Daha fazla bilgi için nasıl `ICommandUI` arabirimi komut yönlendirme olarak kullanılır, bkz [nasıl yapılır: Ekle komutu yönlendirme için bir Windows Forms denetimi](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md).
+`ICommandUI` Arabirimin komut yönlendirmesinde nasıl kullanıldığı hakkında daha fazla bilgi için bkz [. nasıl yapılır: Windows Forms denetimine](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md)komut yönlendirmesi ekleyin.
 
-Windows Forms kullanma hakkında daha fazla bilgi için bkz. [MFC içinde Windows formu kullanıcı denetimi kullanma](../../dotnet/using-a-windows-form-user-control-in-mfc.md).
+Windows Forms kullanma hakkında daha fazla bilgi için bkz. [MFC 'de Windows formu Kullanıcı denetimi kullanma](../../dotnet/using-a-windows-form-user-control-in-mfc.md).
 
-Kullanıcı arabirimi komutları MFC'de nasıl yönetildiği hakkında daha fazla bilgi için bkz. [Ccmduı sınıfı](../../mfc/reference/ccmdui-class.md).
+Kullanıcı arabirimi komutlarının MFC 'de nasıl yönetildiği hakkında daha fazla bilgi için bkz. [CCmdUI sınıfı](../../mfc/reference/ccmdui-class.md).
 
-##  <a name="check"></a>  ICommandUI::Check
+##  <a name="check"></a>ICommandUI:: Check
 
-Bu komut için kullanıcı arabirimi öğesi için uygun onay durumunu ayarlar.
+Bu komut için Kullanıcı arabirimi öğesini uygun denetim durumuna ayarlar.
 
 ```
 property UICheckState Check;
@@ -415,17 +415,17 @@ property UICheckState Check;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu özellik, bu komut için kullanıcı arabirimi öğesi uygun onay durumuna ayarlar. Ayarlama `Check` aşağıdaki değerleri için:
+Bu özellik, bu komut için Kullanıcı arabirimi öğesini uygun denetim durumuna ayarlar. Aşağıdaki `Check` değerlere ayarlayın:
 
 |Terim|Tanım|
 |----------|----------------|
-|0|Seçeneğinin işaretini kaldırın|
-|1.|Onay|
-|2|Belirsiz ayarlayın|
+|0|Kutunun|
+|1\.|Onay|
+|2|Belirsiz ayarla|
 
-##  <a name="continuerouting"></a>  ICommandUI::ContinueRouting
+##  <a name="continuerouting"></a>Iommanduı:: Devamsallama
 
-Aşağı zinciri işleyicileri geçerli ileti yönlendirme devam etmek için komut yönlendirme mekanizması söyler.
+Komut yönlendirme mekanizmasına, geçerli iletiyi işleyiciler zincirinin altına yönlendirmeye devam etmeyi söyler.
 
 ```
 void ContinueRouting();
@@ -433,11 +433,11 @@ void ContinueRouting();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu ile birlikte kullanılması gereken bir Gelişmiş bir üye işlevidir bir [ON_COMMAND_EX](message-map-macros-mfc.md#on_command_ex) işleyici false değerini döndürür. Daha fazla bilgi için bkz. Teknik Not [TN006: İleti eşlemeleri](../../mfc/tn006-message-maps.md).
+Bu, FALSE döndüren bir [ON_COMMAND_EX](message-map-macros-mfc.md#on_command_ex) işleyicisiyle birlikte kullanılması gereken gelişmiş bir üye işlevdir. Daha fazla bilgi için bkz. Teknik [notTN006: İleti haritaları](../../mfc/tn006-message-maps.md).
 
-##  <a name="enabled"></a>  ICommandUI::Enabled
+##  <a name="enabled"></a>Iommanduı:: etkin
 
-Sağlar veya bu komut için kullanıcı arabirimi öğesi devre dışı bırakır.
+Bu komut için Kullanıcı arabirimi öğesini etkinleştirilir veya devre dışı bırakır.
 
 ```
 property bool Enabled;
@@ -445,11 +445,11 @@ property bool Enabled;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu özelliği etkinleştirir veya bu komut için kullanıcı arabirimi öğesi devre dışı bırakır. Ayarlama `Enabled` öğeyi devre dışı bırakmak için FALSE etkinleştirmek için true.
+Bu özellik, bu komut için Kullanıcı arabirimi öğesini etkinleştirilir veya devre dışı bırakır. Öğeyi `Enabled` etkinleştirmek için true, devre dışı bırakmak için false olarak ayarlayın.
 
-##  <a name="id"></a>  ICommandUI::ID
+##  <a name="id"></a>Iommanduı:: ID
 
-Tarafından temsil edilen kullanıcı arabirimi nesnesi Kimliğini alır `ICommandUI` nesne.
+`ICommandUI` Nesnesi tarafından temsil edilen kullanıcı arabirimi nesnesinin kimliğini alır.
 
 ```
 property unsigned int ID;
@@ -457,11 +457,11 @@ property unsigned int ID;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu özellik ' % s'kimliği (tanıtıcısı) menü öğesinin araç çubuğu düğmesini alır veya diğer kullanıcı arabirimi nesnesi temsil ettiği `ICommandUI` nesne.
+Bu özellik, `ICommandUI` nesne tarafından temsil edilen menü öğesi, araç çubuğu düğmesi veya diğer kullanıcı arabirimi nesnesinin kimliğini (bir tanıtıcı) alır.
 
-##  <a name="index"></a>  ICommandUI::Index
+##  <a name="index"></a>Iommanduı:: Index
 
-Tarafından temsil edilen kullanıcı arabirimi nesnesi indisini alır `ICommandUI` nesne.
+`ICommandUI` Nesnesi tarafından temsil edilen kullanıcı arabirimi nesnesinin dizinini alır.
 
 ```
 property unsigned int Index;
@@ -469,11 +469,11 @@ property unsigned int Index;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu özellik ' % s'dizini (bir tanıtıcı) menü öğesinin araç çubuğu düğmesini alır veya diğer kullanıcı arabirimi nesnesi temsil ettiği `ICommandUI` nesne.
+Bu özellik, `ICommandUI` nesne tarafından temsil edilen menü öğesi, araç çubuğu düğmesi veya diğer kullanıcı arabirimi nesnesinin dizinini (bir tanıtıcı) alır.
 
-##  <a name="radio"></a>  ICommandUI::Radio
+##  <a name="radio"></a>Iommanduı:: Radio
 
-Bu komut için kullanıcı arabirimi öğesi için uygun onay durumunu ayarlar.
+Bu komut için Kullanıcı arabirimi öğesini uygun denetim durumuna ayarlar.
 
 ```
 property bool Radio;
@@ -481,11 +481,11 @@ property bool Radio;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu özellik, bu komut için kullanıcı arabirimi öğesi uygun onay durumuna ayarlar. Ayarlama `Radio` öğesi; Aksi takdirde FALSE etkinleştirmek için true.
+Bu özellik, bu komut için Kullanıcı arabirimi öğesini uygun denetim durumuna ayarlar. Öğeyi `Radio` etkinleştirmek için true olarak ayarlayın; Aksi takdirde false.
 
-##  <a name="text"></a>  ICommandUI::Text
+##  <a name="text"></a>ICommandUI:: metin
 
-Bu komut için kullanıcı arabirimi öğesinin metin ayarlar.
+Bu komut için Kullanıcı arabirimi öğesinin metnini ayarlar.
 
 ```
 property String^ Text;
@@ -493,11 +493,11 @@ property String^ Text;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu özellik, bu komut için kullanıcı arabirimi öğesinin metin ayarlar. Ayarlama `Text` bir metin dizesi işlemek için.
+Bu özellik, bu komut için Kullanıcı arabirimi öğesinin metnini ayarlar. Bir `Text` metin dizesi tanıtıcısına ayarlayın.
 
-##  <a name="iview_interface"></a>  IView arabirimi
+##  <a name="iview_interface"></a>IView arabirimi
 
-Çeşitli yöntemler uygular, [CWinFormsView](../../mfc/reference/cwinformsview-class.md) yönetilen bir denetim için görünüm bildirimlerini göndermek için kullanır.
+, Yönetilen bir denetime görüntüleme bildirimleri göndermek için [CWinFormsView](../../mfc/reference/cwinformsview-class.md) tarafından kullanılan çeşitli yöntemler uygular.
 
 ```
 interface class IView
@@ -505,15 +505,15 @@ interface class IView
 
 ### <a name="remarks"></a>Açıklamalar
 
-`IView` çeşitli yöntemler uygular, `CWinFormsView` barındırılan ve yönetilen bir denetime genel görünümü bildirimleri iletecek şekilde kullanır. Bunlar [OnInitialUpdate](../../mfc/reference/iview-interface.md), [OnUpdate](../../mfc/reference/iview-interface.md) ve [OnActivateView](../../mfc/reference/iview-interface.md).
+`IView`ortak görünüm bildirimlerini barındırılan `CWinFormsView` yönetilen bir denetime iletmek için kullanan çeşitli yöntemler uygular. Bunlar [OnInitialUpdate](../../mfc/reference/iview-interface.md), [OnUpdate](../../mfc/reference/iview-interface.md) ve [OnActivateView](../../mfc/reference/iview-interface.md)' dir.
 
-`IView` benzer [CView](../../mfc/reference/cview-class.md), ancak yalnızca yönetilen görünümleri ve denetimleri ile kullanılır.
+`IView`, [CView](../../mfc/reference/cview-class.md)öğesine benzerdir, ancak yalnızca yönetilen görünümler ve denetimler ile kullanılır.
 
-Windows Forms kullanma hakkında daha fazla bilgi için bkz. [MFC içinde Windows formu kullanıcı denetimi kullanma](../../dotnet/using-a-windows-form-user-control-in-mfc.md).
+Windows Forms kullanma hakkında daha fazla bilgi için bkz. [MFC 'de Windows formu Kullanıcı denetimi kullanma](../../dotnet/using-a-windows-form-user-control-in-mfc.md).
 
-##  <a name="onactivateview"></a>  IView::OnActivateView
+##  <a name="onactivateview"></a>IView:: OnActivateView
 
-Bir görünümü etkinleştirmek veya MFC tarafından çağrılır.
+Bir görünüm etkinleştirildiğinde veya devre dışı bırakıldığında MFC tarafından çağırılır.
 
 ```
 void OnActivateView(bool activate);
@@ -521,20 +521,20 @@ void OnActivateView(bool activate);
 
 ### <a name="parameters"></a>Parametreler
 
-*Etkinleştirme*<br/>
-Görünüm belirtir etkin veya devre dışı.
+*etkinleştir*<br/>
+Görünümün etkinleştirildiğini veya devre dışı bırakıldığını gösterir.
 
-##  <a name="oninitialupdate"></a>  IView::OnInitialUpdate
+##  <a name="oninitialupdate"></a>IView:: OnInitialUpdate
 
-Görünüm ilk belgeye eklendikten sonra ancak görünüm başlangıçta görüntülenmeden önce framework tarafından çağırılır.
+Görünüm belgeye ilk iliştirildikten sonra, ancak görünüm ilk görüntülenmeden önce Framework tarafından çağırılır.
 
 ```
 void OnInitialUpdate();
 ```
 
-##  <a name="onupdate"></a>  IView::OnUpdate
+##  <a name="onupdate"></a>IView:: OnUpdate
 
-MFC tarafından görünümün belge değiştirildikten sonra çağırılır.
+Görünümün belgesi değiştirildikten sonra MFC tarafından çağırılır.
 
 ```
 void OnUpdate();
@@ -542,10 +542,10 @@ void OnUpdate();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev görünümünü değişiklikleri yansıtacak şekilde güncelleştirilecek görünümü sağlar.
+Bu işlev, görünümün değişiklikleri yansıtacak şekilde görünümünü güncelleştirmesine izin verir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC örnek Topla](../../overview/visual-cpp-samples.md)<br/>
+[MFC örnek toplama](../../overview/visual-cpp-samples.md)<br/>
 [CObject Sınıfı](../../mfc/reference/cobject-class.md)<br/>
 [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)

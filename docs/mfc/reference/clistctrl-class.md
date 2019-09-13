@@ -264,12 +264,12 @@ helpviewer_keywords:
 - CListCtrl [MFC], SubItemHitTest
 - CListCtrl [MFC], Update
 ms.assetid: fe08a1ca-4b05-4ff7-a12a-ee4c765a2197
-ms.openlocfilehash: bd511cf574d0f710134de4768ac27a8be1248e95
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: c8f1b8a9ed0ca8437ba40e77b47448d1bb209d20
+ms.sourcegitcommit: effb516760c0f956c6308eeded48851accc96b92
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69505625"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70927925"
 ---
 # <a name="clistctrl-class"></a>CListCtrl sınıfı
 
@@ -930,7 +930,7 @@ int FindItem(
 Aranacak öğe hakkında bilgi içeren [Lvfinınfo](/windows/win32/api/commctrl/ns-commctrl-lvfindinfow) yapısına yönelik bir işaretçi.
 
 *nBaşlangıç*<br/>
-Aramanın başlatılacağı öğenin dizini veya baştan başlamak için-1. NStart,-1 ' e eşit değilse, *nStart* konumundaki öğe aramanın dışında tutulur.
+Aramanın başlatılacağı öğenin dizini veya baştan başlamak için-1. NStart *,* -1 ' e eşit değilse, *nStart* konumundaki öğe aramanın dışında tutulur.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1003,7 +1003,7 @@ Bu yöntem, Windows SDK açıklandığı gibi Win32 makrosunun [ListView_GetBkIm
         if (m_myListCtrl.GetBkImage(&bki) && (bki.ulFlags == LVBKIF_SOURCE_NONE))
         {
             m_myListCtrl.SetBkImage(
-                _T("http://www.microsoft.com/library/images/gifs/homepage/microsoft.gif"),
+                _T("https://www.microsoft.com/library/images/gifs/homepage/microsoft.gif"),
                 TRUE);
         }
 ```
@@ -2556,7 +2556,7 @@ void GetWorkAreas(
 *PRect* dizisinde `RECT` içerilen yapıların sayısı.
 
 *pRect*<br/>
-Liste görünümü denetiminin çalışma alanını alan `RECT` bir yapı dizisine [](../../atl-mfc-shared/reference/crect-class.md) (veya ekip nesneleri) yönelik bir işaretçi. Bu yapılardaki değerler istemci koordinatlarıdır.
+Liste görünümü denetiminin çalışma alanını alan `RECT` bir yapı dizisine [(veya ekip](../../atl-mfc-shared/reference/crect-class.md) nesneleri) yönelik bir işaretçi. Bu yapılardaki değerler istemci koordinatlarıdır.
 
 ### <a name="remarks"></a>Açıklamalar
 

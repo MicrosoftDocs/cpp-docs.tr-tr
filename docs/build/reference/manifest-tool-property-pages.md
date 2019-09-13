@@ -1,6 +1,6 @@
 ---
 title: Bildirim Aracı Özellik Sayfaları
-ms.date: 7/24/2019
+ms.date: 07/24/2019
 ms.topic: article
 f1_keywords:
 - VC.Project.VCManifestTool.SuppressStartupBanner
@@ -24,12 +24,12 @@ f1_keywords:
 - VC.Project.VCManifestTool.UpdateFileHashesSearchPath
 - vc.project.AdditionalOptionsPage
 ms.assetid: f33499c4-7733-42d9-80e3-8a5018786965
-ms.openlocfilehash: c8413a28024361db82ca74858453202393987e60
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: d9b074667614da8d83fae7b00b49bf63c9390b69
+ms.sourcegitcommit: effb516760c0f956c6308eeded48851accc96b92
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69492697"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70927687"
 ---
 # <a name="manifest-tool-property-pages"></a>Bildirim Aracı Özellik Sayfaları
 
@@ -95,7 +95,7 @@ Yönetilen bir derlemeden bir bildirim oluşturur. (-managedassemblyname: [dosya
 
 ###  <a name="dpi-awareness"></a>DPı tanıma
 
-Uygulamanın DPı duyarlı olup olmadığını belirtir. Varsayılan olarak, bu ayar MFC projeleri için **Evet** ' tir , aksi takdırde yalnızca MFC projeleri DPI tanıma göre oluşturulmuştur. Farklı DPı ayarlarını işleyecek kod eklerseniz, ayarı **Evet** olarak geçersiz kılabilirsiniz. Uygulamanız, değilse, bir belirsiz veya küçük görünebilir.
+Uygulamanın DPı duyarlı olup olmadığını belirtir. Varsayılan olarak, bu ayar MFC projeleri için **Evet** **' tir, aksı takdirde** yalnızca MFC projeleri DPI tanıma göre oluşturulmuştur. Farklı DPı ayarlarını işleyecek kod eklerseniz, ayarı **Evet** olarak geçersiz kılabilirsiniz. Uygulamanız, değilse, bir belirsiz veya küçük görünebilir.
 
 **Yapabileceği**
 

@@ -1,6 +1,6 @@
 ---
 title: /Tc, /Tp, /TC, /TP (Kaynak Dosya Türünü Belirtin)
-ms.date: 1/11/2018
+ms.date: 01/11/2018
 f1_keywords:
 - VC.Project.VCCLWCECompilerTool.CompileAs
 - VC.Project.VCCLCompilerTool.CompileAs
@@ -14,44 +14,44 @@ helpviewer_keywords:
 - Tc compiler option [C++]
 - /Tp compiler option [C++]
 - -Tp compiler option [C++]
-ms.openlocfilehash: f7ee51c858c9f90440cf0c2b21799ef7473cf6da
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c93da6d2498d46e4b7bf3ad37dde852bb6bc82a1
+ms.sourcegitcommit: effb516760c0f956c6308eeded48851accc96b92
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62317451"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70927625"
 ---
 # <a name="tc-tp-tc-tp-specify-source-file-type"></a>/Tc, /Tp, /TC, /TP (Kaynak Dosya Türünü Belirtin)
 
-**/Tc** seçeneği belirtir, dosya adı bağımsız değişkeni bir C kaynak dosyası olduğunu bile .c uzantısı yok. **/Tp** seçeneği belirtir, dosya adı bağımsız değişkeni bir C++ kaynak dosyası olduğunu .cpp veya .cxx uzantısını almasa bile. Seçeneğini ve dosya adı arasında boşluk isteğe bağlıdır. Her seçenek bir dosya belirtir; Ek dosyaları belirtmek için seçeneği yineleyin.
+**/TC** seçeneği,. c uzantısı olmasa bile, filename bağımsız değişkeninin bir C kaynak dosyası olduğunu belirtir. **/TP** seçeneği,. cpp veya. CXX uzantısı olmasa C++ bile, dosya adı bağımsız değişkeninin bir kaynak dosya olduğunu belirtir. Seçenek ve dosya adı arasındaki bir boşluk isteğe bağlıdır. Her seçenek bir dosya belirtir; ek dosyalar belirtmek için seçeneğini tekrarlayın.
 
-**/TC** ve **/TP** genel çeşitleri olan **/Tc** ve **/Tp**. Derleyicinin komut satırında C kaynak dosyalarında adlı tüm dosyaları belirtin (**/TC**) veya C++ kaynak dosyaları (**/TP**), komut satırı seçeneği ile ilgili olarak konumuna bakılmaksızın. Bu genel seçenekler yoluyla tek bir dosya çubuğunda geçersiz kılınabilir **/Tc** veya **/Tp**.
+**/TC** ve **/TP** , **/TC** ve **/TP**'ın küresel varyantlardır. Bu, komut satırındaki adlı tüm dosyaları, seçeneğe bağlı olarak komut satırındaki konum olmadan C kaynak dosyaları ( **/TC**) veya C++ kaynak dosyaları ( **/TP**) olarak kabul etmek üzere derleyiciye belirtirler. Bu genel seçenekler, **/TC** veya **/TP**aracılığıyla tek bir dosyada geçersiz kılınabilir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **/TC** _filename_
->  **/Tp** _filename_
->  **/TC** 
->  **/TP**
+> **/TC** _dosya adı_ **/TP dosya** _adı_ **/TC** /TP
+>  
+> 
+> 
 
 ## <a name="arguments"></a>Arguments
 
-*Dosya adı*<br/>
+*kısaltın*<br/>
 Bir C veya C++ kaynak dosyası.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, **CL** .c uzantılı dosyaları C kaynak dosyalarında olduğu ve dosyalar .cpp veya .cxx uzantısını ile C++ kaynak dosyaları varsayar.
+Varsayılan olarak, **CL** . c uzantılı dosyaların c kaynak dosya olduğunu ve. cpp veya. cxx uzantılı dosyaları C++ kaynak dosya olduğunu varsayar.
 
-Zaman ya da **TC** veya **Tc** seçeneği belirtildiğinde, tüm belirtimi [/ZC: wchar_t (wchar_t yerel türü olduğu)](zc-wchar-t-wchar-t-is-native-type.md) seçeneği yoksayılır.
+**TC** veya **TC** seçeneği belirtildiğinde, [/Zc: wchar_t (wchar_t yerel tür)](zc-wchar-t-wchar-t-is-native-type.md) seçeneğinin herhangi bir belirtimi yok sayılır.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual C++ Studio 'da derleyici ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Seçin **yapılandırma özellikleri** > **C/C++** > **Gelişmiş** özellik sayfası.
+1. **Yapılandırma özellikleri** > **C/C++** Gelişmiş > özellik sayfasını seçin.
 
-1. Değiştirme **derleme olarak** özelliği. Seçin **Tamam** veya **Uygula** yaptığınız değişiklikleri uygulamak için.
+1. **Derle** özelliğini değiştirin. Değişikliklerinizi uygulamak için **Tamam ' ı** veya **Uygula** ' yı seçin.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
@@ -59,13 +59,13 @@ Zaman ya da **TC** veya **Tc** seçeneği belirtildiğinde, tüm belirtimi [/ZC:
 
 ## <a name="examples"></a>Örnekler
 
-Bu CL komut satırı MAIN.c TEST.prg ve COLLATE.prg C kaynak dosyalarının tümünü olduğunu belirtir. CL PRINT.prg tanımaz.
+Bu CL komut satırı MAIN. c, TEST. prg ve Harmanla. prg 'nin tüm C kaynak dosyaları olduğunu belirtir. CL, PRINT. prg öğesini tanımaz.
 
-> CL ANA. C /TcTEST.PRG /TcCOLLATE.PRG yazdır. PRG
+> CL MAIN. C/Tctest,PRG/Tccollate,PRG PRINT. PRG
 
-C++ dosyaları olarak TEST1.c, TEST2.cxx TEST3.huh ve TEST4.o derlenir ve TEST5.z C dosyası olarak derlenmiş olan bu CL komut satırı belirtir.
+Bu CL komut satırı, TEST1. c, TEST2. cxx, TEST3. huh ve TEST4. o 'un dosya olarak C++ DERLENDIĞINI ve test5. z 'nin c dosyası olarak derlendiğini belirtir.
 
-> CL TEST1.C TEST2.CXX TEST3.HUH TEST4.O /Tc TEST5.Z /TP
+> CL TEST1. C TEST2. CXX TEST3. KUH TEST4. O/TC TEST5. Z/TP
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

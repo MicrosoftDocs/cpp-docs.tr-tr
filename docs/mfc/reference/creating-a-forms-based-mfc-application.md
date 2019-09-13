@@ -1,18 +1,18 @@
 ---
 title: Form Tabanlı MFC Uygulaması Oluşturma
-ms.date: 08/19/2019
+ms.date: 09/09/2019
 f1_keywords:
 - vc.appwiz.mfcforms.project
 helpviewer_keywords:
 - applications [MFC], forms-based
 - forms-based applications [MFC]
 ms.assetid: 048d2f7d-b60d-4386-ad8e-71d49af9c05e
-ms.openlocfilehash: 95c7f6061933245b2eb2b796e7a678e1e6b010a6
-ms.sourcegitcommit: bf1940a39029dbbd861f95480f55e5e8bd25cda0
+ms.openlocfilehash: 1dbbc5c29f85ced846cb3e07a02a5d6a55c94b20
+ms.sourcegitcommit: 3caf5261b3ea80d9cf14038c116ba981d655cd13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70108469"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70908052"
 ---
 # <a name="creating-a-forms-based-mfc-application"></a>Form Tabanlı MFC Uygulaması Oluşturma
 
@@ -30,7 +30,7 @@ Tüm iletişim tabanlı uygulamalar, tanım temelinde Forms tabanlıdır. İleti
 
 Form tabanlı uygulamalar için temel sınıf [CFormView](cformview-class.md)' dir. Uygulamanızda veritabanı desteği varsa, ' den `CFormView`türetilen tüm sınıfları da seçebilirsiniz. Form, öğesinden `CFormView`devralan herhangi bir sınıftan `CFormView` veya ondan türetilmiş herhangi bir penceredir.
 
-[CView](cview-class.md)gibi bir temel sınıf kullanıyor olsanız bile, [MFC sınıf Sihirbazı](document-template-strings-mfc-add-class-wizard.md)'ndaki **DocTemplate kaynakları oluştur** onay kutusunun içinden `CFormView` türetilmiş [bir MFC sınıfı ekleyerek](adding-an-mfc-class.md) ve daha sonra uygulamalarınızı Forms tabanlı hale getirebilirsiniz.
+[CView](cview-class.md)gibi bir temel sınıf kullansanız bile, daha sonra uygulamalarınızdan TÜRETILMIŞ `CFormView` [bir MFC sınıfı ekleyerek](adding-an-mfc-class.md) uygulamalarınızı Forms tabanlı hale getirebilirsiniz.
 
 Sihirbazla tamamladıktan sonra projeniz açılır ve temel sınıfınız olarak (veya öğesinden `CFormView` `CFormView`devralan bir sınıf) seçtiyseniz veya iletişim kutusu tabanlı bir uygulama oluşturduysanız, görsel C++ iletişim kutusu düzenleyicisini açar. Bu noktada, ilk formunuzu tasarlamaya hazırlanın.
 

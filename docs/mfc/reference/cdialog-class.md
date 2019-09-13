@@ -1,6 +1,6 @@
 ---
 title: CDialog sınıfı
-ms.date: 11/04/2016
+ms.date: 09/07/2019
 f1_keywords:
 - CDialog
 - AFXWIN/CDialog
@@ -40,12 +40,12 @@ helpviewer_keywords:
 - CDialog [MFC], OnCancel
 - CDialog [MFC], OnOK
 ms.assetid: ca64b77e-2cd2-47e3-8eff-c2645ad578f9
-ms.openlocfilehash: d9969b7dd41dc7a67e21bb2735b1d716bd988d07
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: b07190c70fb11950b25aff45fb10e850c0e81b24
+ms.sourcegitcommit: 3caf5261b3ea80d9cf14038c116ba981d655cd13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69506883"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70907614"
 ---
 # <a name="cdialog-class"></a>CDialog sınıfı
 
@@ -97,7 +97,7 @@ class CDialog : public CWnd
 
 Bir `CDialog` nesne, iletişim kutusu şablonunun `CDialog`ve türetilmiş sınıfın bir birleşimidir. İletişim kutusu şablonunu oluşturmak ve bir kaynakta depolamak için iletişim düzenleyicisini kullanın, ardından ' den `CDialog`türetilmiş bir sınıf oluşturmak için sınıf ekleme Sihirbazı ' nı kullanın.
 
-Diğer herhangi bir pencere gibi bir iletişim kutusu, Windows 'dan iletileri alır. İletişim kutusunda özellikle iletişim kutusunun denetimlerinden gelen bildirim iletilerini, kullanıcının iletişim kutusuyla etkileşime girdiği bu yana işlemek istiyorsunuz. İşlemek istediğiniz iletileri seçmek için Özellikler penceresi kullanın ve uygun ileti eşleme girişlerini ve ileti işleyici üye işlevlerini sizin için sınıfa ekler. Yalnızca işleyici üye işlevlerinde uygulamaya özel kod yazmanız gerekir.
+Diğer herhangi bir pencere gibi bir iletişim kutusu, Windows 'dan iletileri alır. İletişim kutusunda özellikle iletişim kutusunun denetimlerinden gelen bildirim iletilerini, kullanıcının iletişim kutusuyla etkileşime girdiği bu yana işlemek istiyorsunuz. İşlemek istediğiniz iletileri seçmek için [sınıf Sihirbazı](mfc-class-wizard.md) 'nı kullanın ve uygun ileti eşleme girdilerini ve ileti işleyici üye işlevlerini sizin için sınıfa ekler. Yalnızca işleyici üye işlevlerinde uygulamaya özel kod yazmanız gerekir.
 
 İsterseniz ileti eşleme girişlerini ve üye işlevlerini her zaman el ile yazabilirsiniz.
 
@@ -439,7 +439,7 @@ virtual void OnCancel();
 
 Bir Kullanıcı, iletişim kutusunu **Iptal et** veya ESC tuşuna basarak bir Kullanıcı iletişim kutusu kapattığında, eylemler gerçekleştirmek için bu yöntemi geçersiz kılın (eski verileri geri yükleme gibi). Varsayılan olarak, [EndDialog](#enddialog) çağırarak kalıcı iletişim kutusu kapanır ve [DOMODAL](#domodal) , IDCANCEL döndürecek şekilde olur.
 
-Kalıcı olmayan bir iletişim kutusunda **iptal** düğmesini uygularsanız, `OnCancel` yöntemini geçersiz kılmanız ve içindeki destroonwindow 'u çağırmanız [](../../mfc/reference/cwnd-class.md#destroywindow) gerekir. , İletişim kutusunun görünmez olmasına rağmen yok etmez, çağrı `EndDialog`yaptığı için temel sınıf yöntemini çağırmayın.
+Kalıcı olmayan bir iletişim kutusunda **iptal** düğmesini uygularsanız, `OnCancel` yöntemini geçersiz kılmanız ve içindeki [destroonwindow](../../mfc/reference/cwnd-class.md#destroywindow) 'u çağırmanız gerekir. , İletişim kutusunun görünmez olmasına rağmen yok etmez, çağrı `EndDialog`yaptığı için temel sınıf yöntemini çağırmayın.
 
 > [!NOTE]
 >  Windows XP altında derlenmiş bir programda bir `CFileDialog` nesne kullandığınızda bu yöntemi geçersiz kılamazsınız. Hakkında `CFileDialog`daha fazla bilgi için bkz. [CFileDialog Class](../../mfc/reference/cfiledialog-class.md).
@@ -487,7 +487,7 @@ virtual void OnOK();
 
 **Tamam** düğmesi etkinleştirildiğinde eylemleri gerçekleştirmek için bu yöntemi geçersiz kılın. İletişim kutusu otomatik veri doğrulama ve değişim içeriyorsa, bu yöntemin varsayılan uygulaması iletişim kutusu verilerini doğrular ve uygulamanızda uygun değişkenleri günceller.
 
-Kalıcı olmayan bir iletişim kutusunda **Tamam** düğmesini uygularsanız, `OnOK` yöntemi geçersiz kılmalı ve içinde destroonwindow çağrısı [](../../mfc/reference/cwnd-class.md#destroywindow) yapmanız gerekir. İletişim kutusunu görünmez ancak yok etmez, [EndDialog](#enddialog) 'u çağırdığı için taban sınıfı yöntemini çağırmayın.
+Kalıcı olmayan bir iletişim kutusunda **Tamam** düğmesini uygularsanız, `OnOK` yöntemi geçersiz kılmalı ve içinde [destroonwindow](../../mfc/reference/cwnd-class.md#destroywindow) çağrısı yapmanız gerekir. İletişim kutusunu görünmez ancak yok etmez, [EndDialog](#enddialog) 'u çağırdığı için taban sınıfı yöntemini çağırmayın.
 
 > [!NOTE]
 >  Windows XP altında derlenmiş bir programda bir `CFileDialog` nesne kullandığınızda bu yöntemi geçersiz kılamazsınız. Hakkında `CFileDialog`daha fazla bilgi için bkz. [CFileDialog Class](../../mfc/reference/cfiledialog-class.md).

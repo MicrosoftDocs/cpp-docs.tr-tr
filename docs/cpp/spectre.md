@@ -1,6 +1,6 @@
 ---
 title: spectre
-ms.date: 1/23/2018
+ms.date: 01/23/2018
 f1_keywords:
 - spectre_cpp
 - spectre
@@ -8,35 +8,35 @@ f1_keywords:
 helpviewer_keywords:
 - __declspec keyword (C++), spectre
 - spectre __declspec keyword
-ms.openlocfilehash: 2377a3c23be1e27bfe4f2df23eb00823635fa05d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 40eee25dec867ae3fce7a6b2d4715f0be81bfe76
+ms.sourcegitcommit: effb516760c0f956c6308eeded48851accc96b92
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62267264"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70926361"
 ---
 # <a name="spectre"></a>spectre
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Spectre değişkeni 1 kurgusal yürütmeyi barrier yönergelerini bir işlev için değil derleyiciye bildirir.
+Derleyiciye bir işlev için Spectre VARIANT 1 kurgusal yürütme engeli ekleme yönergeleri eklememe konusunda bilgi söyler.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **__declspec (spectre(nomitigation))**
+> **__declspec (Spectre (noazaltma))**
 
 ## <a name="remarks"></a>Açıklamalar
 
-[/Qspectre](../build/reference/qspectre.md) derleyici seçeneği, derleyiciye analiz burada gösterir Spectre değişkeni 1 güvenlik açığı var olduğundan kurgusal yürütmeyi barrier yönergelerini neden olur. Yayılan özel yönergeler işlemci üzerinde bağlıdır. Bu yönergeleri kod boyutu veya performans üzerinde en az bir etkiye sahip olmalıdır ancak burada kodunuzu açığından etkilenmez ve en yüksek performans gerektiren durumlar olabilir.
+[/Qspectre](../build/reference/qspectre.md) derleyici seçeneği derleyicinin kurgusal yürütme engeli ekleme yönergeleri eklemesine neden olur. Bunlar, çözümlemenin bir Spectre varyant 1 güvenlik açığının bulunduğunu gösterdiği yerde eklenirler. Oluşturulan belirli yönergeler, işlemciye göre değişir. Bu yönergelerin kod boyutu veya performans üzerinde en az etkisi olması gerekir, ancak kodunuzun güvenlik açığından etkilenmemesi ve en yüksek performans gerektiren durumlar olabilir.
 
-Uzman analiz, bir işlev bir Spectre değişkeni 1 sınırları onay atlama hatası güvenli olduğuna karar. Bu durumda, uygulayarak bir işlev içinde azaltma kod oluşturulmasını gözardı edebileceğini `__declspec(spectre(nomitigation))` işlev bildirimi için.
+Uzman Analizi bir işlevin Spectre VARIANT 1 sınırları tarafından güvenli olduğunu belirleyebilir ve atlama hatasını kontrol edebilir. Bu durumda, işlev bildirimine uygulayarak `__declspec(spectre(nomitigation))` bir işlev içinde azaltma kodu oluşturmayı gizleyebilirsiniz.
 
 > [!CAUTION]
-> **/Qspectre** kurgusal yürütmeyi barrier yönergelerini önemli bir güvenlik koruması sağlar ve ardı edilebilir bir performans sahip. Bu nedenle, işlev performansının kritik bir önem arz ettiği ve işlevin güvenli olduğunun bilindiği nadir durumlar haricinde bunları engellememenizi öneririz.
+> **/Qspectre** speculatıcı yürütme engeli, önemli güvenlik koruması sağlar ve performans üzerinde göz ardı edilebilir bir etkileri vardır. Bu nedenle, işlev performansının kritik bir önem arz ettiği ve işlevin güvenli olduğunun bilindiği nadir durumlar haricinde bunları engellememenizi öneririz.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod nasıl kullanılacağını gösterir `__declspec(spectre(nomitigation))`.
+Aşağıdaki kod, nasıl `__declspec(spectre(nomitigation))`kullanılacağını göstermektedir.
 
 ```cpp
 // compile with: /c /Qspectre
@@ -53,7 +53,7 @@ int main() {
 }
 ```
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,6 +1,6 @@
 ---
 title: C++Özellik sayfalarında hata ayıklama
-ms.date: 7/24/2019
+ms.date: 07/24/2019
 ms.topic: article
 ms.assetid: 78115a6b-3799-4515-814e-8566b5bdc55d
 f1_keywords:
@@ -35,12 +35,12 @@ f1_keywords:
 - VC.Project.IVCWebSvcDebugPageObject.HttpUrl
 - VC.Project.IVCWebSvcDebugPageObject.DebuggerType
 - VC.Project.IVCWebSvcDebugPageObject.SQLDebugging
-ms.openlocfilehash: a63ac181b4ef281d6d78d951a46bba85103ba636
-ms.sourcegitcommit: 7b039b5f32f6c59be6c6bb1cffafd69c3bfadd35
+ms.openlocfilehash: 5f7a7bc0e2c696365daa38696fde6f1a480644b4
+ms.sourcegitcommit: effb516760c0f956c6308eeded48851accc96b92
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68537769"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70927730"
 ---
 # <a name="c-debugging-property-pages"></a>C++Özellik sayfalarında hata ayıklama
 
@@ -132,7 +132,7 @@ Bağlantı türünü belirtir.
 
 **Yapabileceği**
 
-- Windows kimlik doğrulaması ile uzaktan **Windows kimlik doğrulaması ile** [Uzaktan.](/windows-server/security/windows-authentication/windows-authentication-overview)
+- Windows [kimlik doğrulaması ile](/windows-server/security/windows-authentication/windows-authentication-overview)uzaktan **Windows kimlik doğrulaması ile** uzaktan.
 - Kimlik doğrulaması olmadan uzak uzaktan **kimlik doğrulaması yok** .
 
 ### <a name="debugger-type"></a>Hata ayıklayıcı türü

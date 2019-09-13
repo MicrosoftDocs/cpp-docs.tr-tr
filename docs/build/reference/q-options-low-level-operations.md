@@ -1,38 +1,38 @@
 ---
 title: /Q Seçenekler (Düşük Düzey İşlemler)
-ms.date: 1/23/2018
+ms.date: 01/23/2018
 f1_keywords:
 - /q
 helpviewer_keywords:
 - Q compiler option [C++]
 - -Q compiler option [C++]
 - /Q compiler option [C++]
-ms.openlocfilehash: 5bbb63b4f437f8aefd5c84c1c1c4bd20bdb965cb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6348226aa38d1f2eefdf9e19e27c4c87bd2f0812
+ms.sourcegitcommit: effb516760c0f956c6308eeded48851accc96b92
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62319401"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70927666"
 ---
 # <a name="q-options-low-level-operations"></a>/Q Seçenekler (Düşük Düzey İşlemler)
 
-Kullanabileceğiniz **/Q** aşağıdaki alt düzey derleme işlemlerini gerçekleştirmek için derleyici seçenekleri:
+Aşağıdaki alt düzey derleyici işlemlerini gerçekleştirmek için **/q** derleyici seçeneklerini kullanabilirsiniz:
 
-- [/ Qfast_transcendentals (hızlı Soyutları zorla)](qfast-transcendentals-force-fast-transcendentals.md): Hızlı transcendentals üretir.
+- [/Qfast_tranaldentals (hızlı](qfast-transcendentals-force-fast-transcendentals.md)bir şekilde geçiş zorla): Hızlı bir şekilde daha fazla işlem oluşturur.
 
-- [/ Qıfist (_ftol gösterme)](qifist-suppress-ftol.md): Bastırır `_ftol` gerekli (yalnızca x86) olduğunda bir kayan nokta türünden bir tamsayı türüne dönüştürme.
+- [/Qifist (_ftol bastır)](qifist-suppress-ftol.md): Bir `_ftol` kayan nokta türünden bir tamsayı türüne dönüştürme yapılması gerektiğinde (yalnızca x86) bastırır.
 
-- [/ Qimprecise_fwaits (Try blokları içindeki fwaits'i Kaldır)](qimprecise-fwaits-remove-fwaits-inside-try-blocks.md): Kaldırır `fwait` içindeki komutları `try` engeller.
+- [/Qımprecı_fwait (TRY blokları içinde fwait 'Yi Kaldır)](qimprecise-fwaits-remove-fwaits-inside-try-blocks.md): Bloklar `fwait` içindeki`try` komutları kaldırır.
 
-- [/ Qpar (otomatik paralel hale getirici)](qpar-auto-parallelizer.md): Otomatik paralelleştirilmesini ile işaretlenmiş etkinleştirir [#pragma loop()](../../preprocessor/loop.md) yönergesi.
+- [/Qpar (otomatik paralelleştirme)](qpar-auto-parallelizer.md): [#Pragma loop ()](../../preprocessor/loop.md) yönergesiyle işaretlenen döngülerin otomatik paralelleştirilmesini mümkün hale getirme.
 
-- [/ Qpar (otomatik paralel hale getirici düzeyi raporlama) raporu](qpar-report-auto-parallelizer-reporting-level.md): Otomatik paralelleştirme için raporlama seviyelerini etkinleştirir.
+- [/Qpar-report (otomatik paralel hale getirici raporlama düzeyi)](qpar-report-auto-parallelizer-reporting-level.md): Otomatik paralelleştirme için raporlama düzeylerini mümkün hale getirme.
 
-- [/ Qsafe_fp_loads](qsafe-fp-loads.md): Kayan nokta kaydı yükler ve bellek ile MMX kayıtları arasında taşıma iyileştirmeleri bastırır.
+- [/Qsafe_fp_yükleri](qsafe-fp-loads.md): Kayan nokta kayıt yükleri ve bellek ile MMX kayıtları arasında taşınan iyileştirmeleri gizler.
 
-- [/ Qspectre](qspectre.md): Belirli Spectre güvenlik açıklarını gidermek için yönergeler oluşturur.
+- [/Qspectre](qspectre.md): Bazı Spectre güvenlik açıklarını hafifletmek için yönergeler üretir.
 
-- [/ Qvec-(otomatik vektör hale getirici report raporlama düzeyi)](qvec-report-auto-vectorizer-reporting-level.md): Otomatik vektörleştirme için raporlama seviyelerini etkinleştirir.
+- [/Qvec-report (otomatik Vektörleştirici raporlama düzeyi)](qvec-report-auto-vectorizer-reporting-level.md): Otomatik vektörleştirme için raporlama düzeylerine izin vermez.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,6 +1,6 @@
 ---
 title: fflush
-ms.date: 11/04/2016
+ms.date: 09/11/2019
 apiname:
 - fflush
 apilocation:
@@ -23,16 +23,16 @@ helpviewer_keywords:
 - flushing
 - fflush function
 ms.assetid: 8bbc753f-dc74-4e77-b563-74da2835e92b
-ms.openlocfilehash: d03d20ee5024915d0ca4c5a21db4159e8c4f876a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: 73ef97306f573fba89ba3cdb8000de9db4d10bac
+ms.sourcegitcommit: effb516760c0f956c6308eeded48851accc96b92
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62333988"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70927429"
 ---
 # <a name="fflush"></a>fflush
 
-Bir akışa aktarır.
+Bir akışı temizler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -44,33 +44,33 @@ int fflush(
 
 ### <a name="parameters"></a>Parametreler
 
-*Stream*<br/>
-İşaretçi **dosya** yapısı.
+*ka*<br/>
+**Dosya** yapısına yönelik işaretçi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**fflush** arabellek başarıyla temizlendi 0 döndürür. 0 değeri, belirtilen Akış Arabellek olan veya yalnızca okumak için açık olan durumlarda da döndürülür. Dönüş değeri **EOF** bir hata olduğunu gösterir.
+ara bellek başarıyla temizleniyorsa **fflush** 0 döndürür. 0 değeri, belirtilen akışın arabelleği olmadığı veya yalnızca okuma için açık olduğu durumlarda da döndürülür. **EOF** dönüş değeri bir hatayı gösterir.
 
 > [!NOTE]
-> Varsa **fflush** döndürür **EOF**, veriler kaybolmuş olabilir bir yazma hatası nedeniyle. Bir kritik hata işleyicisini ayarlarken, arabelleğe alma ile devre dışı bırakmak güvenli **setvbuf** işlevi veya alt düzey g/ç yordamları kullanmanız **_aç**, **_close**, ve **_write** akış g/ç işlevleri yerine.
+> **Fflush** **EOF**döndürürse, veriler bir yazma hatası nedeniyle kaybolmuş olabilir. Kritik bir hata işleyicisi ayarlarken, **setvarabelleğe** işlevi ile arabelleğe almayı kapatmak veya akış g/ç işlevleri yerine **_Aç**, **_close**ve **_write** gibi alt düzey g/ç yordamlarını kullanmak en güvenli hale gelir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Fflush** işlevi stream aktarır *stream*. Akış açtıysanız yazma modu veya güncelleştirme modunda açılmış ve yazma son işlemin, temel alınan dosya veya cihaza akış arabelleğinin içeriğini yazılır ve arabellek atılır. Akış Okuma modunda açıldıysa veya Akış Arabellek, çağrı varsa **fflush** etkiye sahip değildir ve herhangi bir arabellek korunur. Bir çağrı **fflush** her çağrıda etkisini verilerek **ungetc** akış için. Stream ve çağrının ardından açık kalır.
+**Fflush** işlevi akış *akışını*temizler. Akış yazma modunda açılırsa veya güncelleştirme modunda açıldıysa ve son işlem bir yazarsa, akış arabelleğinin içeriği temel alınan dosyaya veya cihaza yazılır ve arabellek atılır. Akış okuma modunda açılırsa veya akışın arabelleği yoksa, **fflush** çağrısının hiçbir etkisi olmaz ve herhangi bir arabellek tutulur. **Fflush** çağrısı, akış için **ungetc** öğesine yapılan önceki çağrının etkisini geçersiz kılar. Bu akış, çağrıdan sonra açık kalır.
 
-Varsa *stream* olduğu **NULL**, davranışı bir çağrı ile aynıdır **fflush** açık her akış hakkındaki. Tüm akışları yazma modunda açılmış ve son işlemi yazma olduğu tüm akışları güncelleştirme modunda açıldığında temizlenir. Çağrı diğer akışlar üzerinde etkisi yoktur.
+*Stream* **null**ise, her açık akışta bir **fflush** çağrısıyla aynı davranış vardır. Yazma modunda açılan tüm akışlar ve son işlemin bir yazma işlemi olduğu güncelleştirme modunda açılan tüm akışlar. Çağrının diğer akışlar üzerinde hiçbir etkisi yoktur.
 
-Arabellekler verileri otomatik olarak diske yazmak için en iyi zamanı belirler işletim sistemi tarafından normalde korunur: Arabellek dolduğunda, bir akış kapatıldığında veya ne zaman bir program akışı kapatmadan sona erer. Çalışma zamanı kitaplığının işleme disk özellik kritik verileri doğrudan disk yerine işletim sistemi arabelleklerini yazıldığından emin olanak sağlar. Varolan bir program yeniden yazma olmadan programın nesne dosyaları COMMODE.OBJ ile bağlayarak bu özelliği etkinleştirebilirsiniz. Oluşturulan yürütülebilir dosya olarak çağrılar **_flushall** arabelleklerin içeriğini diske yazma. Yalnızca **_flushall** ve **fflush** COMMODE.OBJ tarafından etkilenir.
+Arabellekler normalde işletim sistemi tarafından korunur. Bu, verilerin diske otomatik olarak yazılması için en iyi zamanı belirler: bir arabellek dolduğunda, bir akış kapatıldığında veya bir program normal olarak akışı kapatmadan sonlandırıldığında. Çalışma zamanı kitaplığının diske kaydet özelliği, kritik verilerin işletim sistemi arabellekleri yerine doğrudan diske yazılmasını sağlamanıza olanak tanır. Mevcut bir programı yeniden yazmadan, programın nesne dosyalarını COMMODE. OBJ ile bağlayarak bu özelliği etkinleştirebilirsiniz. Elde edilen yürütülebilir dosyada, **_flushall** çağrılarına tüm arabelleklerin içeriğini diske yazar. Yalnızca **_flushall** ve **FFLUSH** , Commode. obj tarafından etkilendi.
 
-Yürütme disk özellik denetleme hakkında daha fazla bilgi için bkz [Stream g/ç](../../c-runtime-library/stream-i-o.md), [fopen](fopen-wfopen.md), ve [_fdopen](fdopen-wfdopen.md).
+Diske işleme özelliğini denetleme hakkında daha fazla bilgi için bkz. [Stream g/ç](../../c-runtime-library/stream-i-o.md), [fopen](fopen-wfopen.md)ve [_fdopen](fdopen-wfdopen.md).
 
-Bu işlev, çağıran iş parçacığının kilitler ve bu nedenle iş parçacığı açısından güvenlidir. Kilitleme yapılmayan bir sürüm için bkz. **_fflush_nolock**.
+Bu işlev, çağıran iş parçacığını kilitler ve bu nedenle iş parçacığı güvenlidir. Kilitleme dışı bir sürüm için bkz. **_fflush_nolock**.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**fflush**|\<stdio.h >|
+|**fflush**|\<stdio. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -78,49 +78,55 @@ Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibil
 
 ```C
 // crt_fflush.c
+// Compile with: cl /W4 crt_fflush.c
+// This sample gets a number from the user, then writes it to a file.
+// It ensures the write isn't lost on crash by calling fflush.
 #include <stdio.h>
-#include <conio.h>
 
-int main( void )
+int * crash_the_program = 0;
+
+int main(void)
 {
-   int integer;
-   char string[81];
+    FILE * my_file;
+    errno_t err = fopen_s(&my_file, "myfile.txt", "w");
+    if (my_file && !err)
+    {
+        printf("Write a number: ");
 
-   // Read each word as a string.
-   printf( "Enter a sentence of four words with scanf: " );
-   for( integer = 0; integer < 4; integer++ )
-   {
-      scanf_s( "%s", string, sizeof(string) );
-      printf( "%s\n", string );
-   }
+        int my_number = 0;
+        scanf_s("%d", &my_number);
 
-   // You must flush the input buffer before using gets.
-   // fflush on input stream is an extension to the C standard
-   fflush( stdin );
-   printf( "Enter the same sentence with gets: " );
-   gets_s( string, sizeof(string) );
-   printf( "%s\n", string );
+        fprintf(my_file, "User selected %d\n", my_number);
+
+        // Write data to a file immediately instead of buffering.
+        fflush(my_file);
+    
+        if (my_number == 5)
+        {
+            // Without using fflush, no data was written to the file 
+            // prior to the crash, so the data is lost.
+            *crash_the_program = 5;
+        }
+
+        // Normally, fflush is not needed as closing the file will write the buffer.
+        // Note that files are automatically closed and flushed during normal termination.
+        fclose(my_file);
+    }
+    return 0;
 }
 ```
 
 ```Input
-This is a test
-This is a test
+5
 ```
 
-```Output
-Enter a sentence of four words with scanf: This is a test
-This
-is
-a
-test
-Enter the same sentence with gets: This is a test
-This is a test
+```myfile.txt
+User selected 5
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Stream g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [fclose, _fcloseall](fclose-fcloseall.md)<br/>
 [_flushall](flushall.md)<br/>
 [setvbuf](setvbuf.md)<br/>

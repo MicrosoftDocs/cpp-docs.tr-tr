@@ -194,12 +194,12 @@ helpviewer_keywords:
 - CHtmlView [MFC], SetWidth
 - CHtmlView [MFC], Stop
 ms.assetid: 904976af-73de-4aba-84ac-cfae8e2be09a
-ms.openlocfilehash: 2d00a7216778f4a9a40b9d503bce7d26982669e0
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 9643379136398de7ce4d98aaa9ab5f22fa488c0e
+ms.sourcegitcommit: effb516760c0f956c6308eeded48851accc96b92
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69506066"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70927932"
 ---
 # <a name="chtmlview-class"></a>CHtmlView sınıfı
 
@@ -1194,7 +1194,7 @@ URL, UNC dosya adı veya bir PIDL (bir öğe tanımlayıcı listesine yönelik b
 
 Her kare bu olayı tetiketmez, ancak [ondownloadbegın](#ondownloadbegin) olayını harekete geçirdiğinde her çerçeve ilgili `OnDocumentComplete` bir olayı harekete geçirilir.
 
-*LpszURL* tarafından gösterilen URL, TARAYıCıNıN gidilecek URL 'den farklı olabilir, çünkü bu URL Kurallı ve nitelenmiş URL 'dir. Örneğin, bir uygulama [Gidilecek](#navigate) veya [Navigate2](#navigate2)çağrısında "www.Microsoft.com" URL 'sini belirtiyorsa, tarafından `OnNavigateComplete2` geçirilen URL "<http://www.microsoft.com/>" olacaktır. Ayrıca, sunucu tarayıcıyı farklı bir URL 'ye yeniden yönlendirirse, yeniden yönlendirilen URL buraya yansıtılacaktır.
+*LpszURL* tarafından gösterilen URL, TARAYıCıNıN gidilecek URL 'den farklı olabilir, çünkü bu URL Kurallı ve nitelenmiş URL 'dir. Örneğin, bir uygulama [gezinmek](#navigate) veya [Navigate2](#navigate2)çağrısında bir `OnNavigateComplete2` URL `"www.microsoft.com"` belirtiyorsa, tarafından geçilen URL olur `"<https://www.microsoft.com/>"`. Ayrıca, sunucu tarayıcıyı farklı bir URL 'ye yeniden yönlendirirse, yeniden yönlendirilen URL buraya yansıtılacaktır.
 
 ##  <a name="ondocwindowactivate"></a>CHtmlView:: OnDocWindowActivate
 
@@ -1458,7 +1458,7 @@ virtual void OnNavigateComplete2(LPCTSTR strURL);
 
 URL parametresi, bir kabuk ad alanı varlığında URL gösterimi olmayan bir IDL olabilir.
 
-*StrURL* 'de bulunan URL 'nin, kurallı ve nitelenmiş URL olduğu için gözatıcının gidilecek URL 'den farklı olabileceğini unutmayın. Örneğin, bir uygulama [Gidilecek](#navigate) veya [Navigate2](#navigate2)çağrısında "www.Microsoft.com" URL 'sini belirtiyorsa, tarafından `OnNavigateComplete2` geçirilen URL "<http://www.microsoft.com/>" olacaktır. Ayrıca, sunucu tarayıcıyı farklı bir URL 'ye yeniden yönlendirirse, yeniden yönlendirilen URL buraya yansıtılacaktır.
+*StrURL* 'de bulunan URL 'nin, kurallı ve nitelenmiş URL olduğu için gözatıcının gidilecek URL 'den farklı olabileceğini unutmayın. Örneğin, bir uygulama [gezinmek](#navigate) veya [Navigate2](#navigate2)çağrısında bir `OnNavigateComplete2` URL `"www.microsoft.com"` belirtiyorsa, tarafından geçilen URL olur `"<https://www.microsoft.com/>"`. Ayrıca, sunucu tarayıcıyı farklı bir URL 'ye yeniden yönlendirirse, yeniden yönlendirilen URL buraya yansıtılacaktır.
 
 ##  <a name="onnavigateerror"></a>CHtmlView:: OnNavigateError
 

@@ -1,6 +1,6 @@
 ---
 title: Unicode desteği
-ms.date: 1/09/2018
+ms.date: 01/09/2018
 helpviewer_keywords:
 - globalization [C++], character sets
 - portable data types [MFC]
@@ -9,50 +9,50 @@ helpviewer_keywords:
 - character sets [C++], Unicode
 - localization [C++], character sets
 - Unicode [C++], installing support
-ms.openlocfilehash: fea49bff2a4563b8617e19636e27afbae1c55811
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c30cb1fbfb1930b5e4b026e58c478f0099e8ecdf
+ms.sourcegitcommit: effb516760c0f956c6308eeded48851accc96b92
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62410557"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70929914"
 ---
 # <a name="support-for-unicode"></a>Unicode desteği
 
-Unicode temsil edilemeyen yalnızca bir bayt (diğer bir deyişle, bunların çoğu) dahil olmak üzere, tüm karakter kümeleri destekleyen bir özelliğidir. Uluslararası pazar için programlama yapıyorsanız ya da Unicode kullanmanızı öneririz veya [çok baytlı karakter kümesi](../text/support-for-multibyte-character-sets-mbcss.md) (MBCS) veya şekilde değiştirerek bir anahtar ya da derleme programınızı kodlayın.
+Unicode, tek bir bayt içinde temsil edileyenler dahil olmak üzere tüm karakter kümelerini desteklemeye yönelik bir belirtimdir.  Uluslararası bir pazar için programlama yapıyorsanız, Unicode veya [çok baytlı karakter kümesi](../text/support-for-multibyte-character-sets-mbcss.md) (MBCS) kullanmanızı öneririz. Ya da programınızı bir anahtarı değiştirerek derlemenize olanak sağlayacak şekilde kodlayabilirsiniz.
 
-Bir geniş karakter 2 baytlık çok dilli karakter kodudur. On binlerce teknik simgeleri ve yayımlama özel karakterler dahil olmak üzere dünya çapında, modern işlem alanında kullanılan neredeyse tüm karakterleri içeren karakter olarak tek bir geniş Unicode belirtimine göre gösterilebileceği kodlanmış karakter tarafından UTF-16 kullanılarak. Yalnızca bir geniş karakter olarak temsil edilemeyen karakterler Unicode vekil çifti özelliğini kullanarak bir Unicode çift gösterilebilir. Yaygın olarak kullanılan neredeyse her karakter UTF-16 tek 16 bit geniş karakter olarak temsil edilir çünkü geniş karakterlerin kullanılması uluslararası karakter kümeleriyle programlamayı basitleştirir. Windows için yerel karakter biçimi UTF-16LE (endian için) kullanılarak kodlanmış geniş karakterler var.
+Geniş bir karakter 2 baytlık çok dilli karakter kodudur. Tüm dünyada modern bilgi işlem için kullanılan neredeyse tüm karakterlerden oluşan on binlerce karakter, teknik semboller ve özel yayımlama karakterleri de dahil olmak üzere, Unicode belirtimine göre kodlanmış tek bir geniş karakter olarak temsil edilebilir UTF-16 kullanımı. Yalnızca bir geniş karakter içinde gösterilemeyen karakterler Unicode vekil çifti özelliği kullanılarak Unicode çiftinde gösterilebilir. Yaygın olarak kullanılan her karakter tek bir 16 bit geniş karakterde UTF-16 olarak temsil edildiğinden, geniş karakterlerin kullanılması uluslararası karakter kümeleriyle programlamayı basitleştirir. UTF-16LE (little-endian için) kullanılarak kodlanan geniş karakterler Windows için yerel karakter biçimidir.
 
-Geniş karakterli dize olarak temsil edilen bir `wchar_t[]` dizisi ve tarafından işaret edilen bir `wchar_t*` işaretçi. Herhangi bir ASCII karakterini bir geniş karakter ' % s'Harf L karakter koyarak temsil edilebilir. Örneğin, sonlandırıcı geniş (16-bit) NULL karakteri '\0' L değeridir. Benzer şekilde, herhangi bir ASCII dize sabit değeri geniş karakterli dize sabit değeri olarak ' % s'Harf L ASCII değişmez değeri (L "Merhaba") için koyarak temsil edilebilir.
+Geniş karakterli bir dize, `wchar_t[]` dizi olarak temsil edilir ve bir `wchar_t*` işaretçi tarafından işaret edilir. Herhangi bir ASCII karakteri, z harfine harfe önek eklenerek geniş bir karakter olarak gösterilebilir. Örneğin, L ' \ 0 ', Sonlandırıcı geniş (16 bit) NULL karakterdir. Benzer şekilde, herhangi bir ASCII dize değişmez değeri, L harfinin ASCII değişmez değerine (L "Hello") eklenerek geniş karakterli bir dize sabit değeri olarak temsil edilebilir.
 
-Genellikle, geniş karakterler, çok baytlı karakter bellekte daha fazla alan alır ancak işlemine daha hızlıdır. Ayrıca, yalnızca bir yerel ayar bir çok baytlı kodlama anında temsil edilebilir, dünyanın tüm karakter kümeleri ise aynı anda Unicode gösterimi tarafından temsil edilir.
+Genellikle, geniş karakterler çok baytlı karakterlerden çok daha fazla alan kaplar, ancak işlemek daha hızlıdır. Ayrıca, çok baytlı kodlamada yalnızca bir yerel ayar gösterilebilir, ancak dünyanın tüm karakter kümeleri aynı anda Unicode temsili tarafından temsil edilir.
 
-MFC çerçevesi boyunca Unicode olarak etkin olan ve MFC Unicode taşınabilir makroları kullanarak aşağıdaki tabloda gösterildiği gibi etkinleştirmesini gerçekleştirir.
+MFC çerçevesi genelinde Unicode özellikli etkindir ve MFC, aşağıdaki tabloda gösterildiği gibi taşınabilir makroları kullanarak Unicode 'U etkinleştirir.
 
-## <a name="portable-data-types-in-mfc"></a>MFC içinde taşınabilir veri türleri
+## <a name="portable-data-types-in-mfc"></a>MFC 'de taşınabilir veri türleri
 
-|Taşınabilir olmayan veri türü|Bu makro tarafından değiştirildi|
+|Taşınabilir olmayan veri türü|Bu makro ile değiştirilmiştir|
 |-----------------------------|----------------------------|
 |`char`, `wchar_t`|`_TCHAR`|
-|`char*`, `LPSTR` (Win32 veri türü) `LPWSTR`|`LPTSTR`|
-|`const char*`, `LPCSTR` (Win32 veri türü) `LPCWSTR`|`LPCTSTR`|
+|`char*`, `LPSTR` (Win32 veri türü),`LPWSTR`|`LPTSTR`|
+|`const char*`, `LPCSTR` (Win32 veri türü),`LPCWSTR`|`LPCTSTR`|
 
-Sınıf `CString` kullanır `_TCHAR` olarak oluşturucularını ve taşıma oluşturucuları ve işleçleri için kolay dönüştürmeler sağlar. Unicode dize işlemlerinin çoğu, temel işlem birimi bir 16-bit karakteri yerine bir 8 bit bayt olması dışında Windows ANSI karakter kümesi işlemek için kullanılan aynı mantığı kullanarak yazılabilir. Çok baytlı karakter kümeleri ile çalışma, aksine, gerekmez (ve kullanmalısınız değil) iki ayrı bayt değilmiş gibi bir Unicode karakter değerlendir. Ancak, bir geniş karakter yedek çifti tarafından temsil edilen tek bir karakter olasılığını ile uğraşmak zorunda. Genel olarak, bir dizenin uzunluğunu karakter sayısını ile aynıdır, dar veya geniş içerdiğinden emin olup olmadığını varsayar kod yazma.
+Sınıfı `CString` , `_TCHAR` temeli olarak kullanılır ve kolay dönüştürmeler için oluşturucular ve işleçler sağlar. Unicode için dize işlemlerinin çoğu, Windows ANSI karakter kümesini işlemek için kullanılan mantığla kullanılarak yazılabilir, ancak temel işlem birimi 8 bitlik bir bayt yerine 16 bitlik bir karakter olabilir. Çok baytlı karakter kümeleriyle çalışmaktan farklı olarak, bir Unicode karakteri iki farklı bayt gibi kabul etmeniz gerekmez (ve kullanmamalısınız). Bununla birlikte, tek bir karakterin bir vekil çift karakter çifti tarafından temsil edildiği olasılığa karşı uğraşmanız gerekir. Genel olarak, bir dizenin uzunluğunu, dar veya geniş olan karakterlerin sayısı ile aynı olduğunu varsayan bir kod yazın.
 
 ## <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsunuz?
 
-- [MFC Unicode ve çok baytlı karakter kümesi (MBCS) desteği](../atl-mfc-shared/unicode-and-multibyte-character-set-mbcs-support.md)
+- [MFC Unicode ve çok baytlı karakter kümesi (MBCS) desteğini kullanın](../atl-mfc-shared/unicode-and-multibyte-character-set-mbcs-support.md)
 
-- [Kendi programımı içinde Unicode etkinleştir](../text/international-enabling.md)
+- [Programmda Unicode 'U etkinleştir](../text/international-enabling.md)
 
-- [Kendi programımı içinde Unicode ve MBCS etkinleştir](../text/internationalization-strategies.md)
+- [Programmda hem Unicode hem de MBCS 'yi etkinleştir](../text/internationalization-strategies.md)
 
-- [Uluslararası hale getirilmiş bir program oluşturmak için Unicode kullan](../text/unicode-programming-summary.md)
+- [Uluslararası bir program oluşturmak için Unicode kullanın](../text/unicode-programming-summary.md)
 
-- [Unicode avantajlarını öğrenin](../text/benefits-of-character-set-portability.md)
+- [Unicode 'un avantajlarını öğrenin](../text/benefits-of-character-set-portability.md)
 
-- [Kendi programımı için geniş karakter bağımsız değişkenlerini iletebilirsiniz wmain kullanın](../text/support-for-using-wmain.md)
+- [Çok karakterli bağımsız değişkenleri programımı ile geçirebilmem için wmain kullanın](../text/support-for-using-wmain.md)
 
-- [Unicode Programlama Özeti bakın](../text/unicode-programming-summary.md)
+- [Bkz. Unicode Programlama Özeti](../text/unicode-programming-summary.md)
 
 - [Bayt genişlikli taşınabilirlik için genel metin eşlemeleri hakkında bilgi edinin](../text/generic-text-mappings-in-tchar-h.md)
 

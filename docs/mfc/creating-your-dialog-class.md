@@ -1,6 +1,6 @@
 ---
 title: İletişim Sınıfınızı Oluşturma
-ms.date: 11/04/2016
+ms.date: 09/06/2019
 helpviewer_keywords:
 - dialog boxes [MFC], creating
 - MFC dialog boxes [MFC], creating
@@ -8,30 +8,30 @@ helpviewer_keywords:
 - dialog classes [MFC], Add Class Wizard
 - dialog classes [MFC], creating
 ms.assetid: d5321741-da41-47a8-bb1c-6a0e8b28c4c1
-ms.openlocfilehash: bacedc49fcdabdd5dc7fb0f392a66afd3baadd06
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 424d18196063456245e2a4841b42e6e447bded17
+ms.sourcegitcommit: 3caf5261b3ea80d9cf14038c116ba981d655cd13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62241771"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70907322"
 ---
 # <a name="creating-your-dialog-class"></a>İletişim Sınıfınızı Oluşturma
 
-Programınızda her iletişim kutusu için iletişim kutusu kaynağı ile çalışmak için yeni bir iletişim kutusu sınıfı oluşturma.
+Programınızdaki her iletişim kutusu için, iletişim kaynağı ile çalışmak üzere yeni bir iletişim kutusu sınıfı oluşturun.
 
-[Sınıf ekleme](../ide/adding-a-class-visual-cpp.md) yeni iletişim kutusu sınıfı oluşturma açıklanır. Sınıf Ekleme Sihirbazı'nı bir iletişim kutusu sınıfı oluşturduğunuzda, aşağıdaki öğeleri yazar. H ve. Belirttiğiniz CPP dosyaları:
+[Sınıf ekleme](../ide/adding-a-class-visual-cpp.md) , yeni bir iletişim kutusu sınıfının nasıl oluşturulacağını açıklar. [Sınıf sihirbazıyla](reference/mfc-class-wizard.md)bir iletişim kutusu sınıfı oluşturduğunuzda, belirttiğiniz. h ve. cpp dosyalarına aşağıdaki öğeleri Yazar:
 
-İçinde. H dosyası:
+. H dosyasında:
 
-- İletişim kutusu sınıfı için sınıf bildirimi. Sınıf türetilir [CDialog](../mfc/reference/cdialog-class.md).
+- İletişim kutusu sınıfı için bir sınıf bildirimi. Sınıf [CDialog](../mfc/reference/cdialog-class.md)'tan türetilir.
 
-İçinde. CPP dosyasına:
+. Cpp dosyasında:
 
-- Sınıfı için ileti eşlemesi.
+- Sınıf için bir ileti eşlemi.
 
-- İletişim kutusu için standart bir oluşturucu.
+- İletişim kutusu için standart Oluşturucu.
 
-- Geçersiz kılma [DoDataExchange](../mfc/reference/cwnd-class.md#dodataexchange) üye işlevi. Bu işlev düzenleyin. Daha sonra açıklandığı iletişim kutusu veri değişimi ve doğrulaması özellikleri için kullanılan [iletişim kutusu veri değişimi ve doğrulaması](../mfc/dialog-data-exchange-and-validation.md).
+- [DoDataExchange](../mfc/reference/cwnd-class.md#dodataexchange) üye işlevinin bir geçersiz kılması. Bu işlevi düzenleyin. İletişim kutusu [veri değişimi ve doğrulaması](../mfc/dialog-data-exchange-and-validation.md)konusunda daha sonra açıklandığı gibi iletişim kutusu veri değişimi ve doğrulama özellikleri için kullanılır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

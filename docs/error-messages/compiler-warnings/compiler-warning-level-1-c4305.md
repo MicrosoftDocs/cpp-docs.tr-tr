@@ -1,28 +1,28 @@
 ---
 title: Derleyici Uyarısı (düzey 1) C4305
-ms.date: 1/17/2018
+ms.date: 01/17/2018
 f1_keywords:
 - C4305
 helpviewer_keywords:
 - C4305
-ms.openlocfilehash: 3f9116b0e7bdd9ee13c42b48f44da4b090f41ccd
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: dc718e5f7ebe9478ed1bf2a7323db940935cb1d6
+ms.sourcegitcommit: effb516760c0f956c6308eeded48851accc96b92
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62327476"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70926119"
 ---
 # <a name="compiler-warning-level-1-c4305"></a>Derleyici Uyarısı (düzey 1) C4305
 
-> '*bağlam*': kesildi '*type1*'to'*type2*'
+> '*Context*': '*Type1*' öğesinden '*type2*' öğesine kesildi
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu uyarı, bilgi kaybına kaynaklanan bir küçük türüne bir başlatma veya bir oluşturucu bağımsız değişkeni olarak bir değere dönüştürüldüğünde görüntülenir.
+Bu uyarı, bir değer bir başlatma içinde daha küçük bir türe dönüştürüldüğünde veya Oluşturucu bağımsız değişkeni olarak bilgi kaybına neden olduğunda verilir.
 
 ## <a name="example"></a>Örnek
 
-Bu örnek gösterir iki yolu bu uyarı görebilirsiniz:
+Bu örnek, bu uyarıyı görmenizin iki yolunu göstermektedir:
 
 ```cpp
 // C4305.cpp
@@ -41,4 +41,4 @@ int main()
 }
 ```
 
-Bu sorunu gidermek için doğru türde bir değer kullanarak başlatmak veya doğru tür açık bir tür dönüştürme kullanın. Örneğin, bir **float** değişmez değer yerine 2.71828f gibi bir **çift** (varsayılan kayan noktalı sabit değerleri türü) başlatmak için bir **float** değişkeni veya geçirmek için bir alan oluşturucu bir **float** bağımsız değişken.
+Bu sorunu düzeltmek için doğru türdeki bir değeri kullanarak başlatın veya doğru türe açık bir tür dönüştürme kullanın. Örneğin, bir **float** değişkeni başlatmak için ya da **float bağımsız değişkeni alan bir oluşturucuya** geçiş yapmak için **Double** (kayan nokta değişmez değerleri için varsayılan tür) yerine 2.71828 f gibi bir **float** sabit değeri kullanın.

@@ -8,26 +8,26 @@ helpviewer_keywords:
 - notifications [MFC], for CMonthCalCtrl
 - notifications [MFC], month calendar control
 ms.assetid: 607c3e90-0756-493b-9503-ce835a50c7ab
-ms.openlocfilehash: fc0bb475a95450c281c92b500083c9502df50931
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 452d24bf1ffd157366f357a510e8c8cfaad28d91
+ms.sourcegitcommit: 3caf5261b3ea80d9cf14038c116ba981d655cd13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64346140"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70908075"
 ---
 # <a name="processing-notification-messages-in-month-calendar-controls"></a>Aylık Takvim Denetimlerinde Bildirim İletilerini İşleme
 
-Kullanıcı denetimi (tarihleri seçme ve/veya farklı bir ayın görüntüleme), aylık takvim denetiminin ile etkileşime geçtiğimiz sırada (`CMonthCalCtrl`) üst pencereye bildirim iletilerini gönderen genellikle bir görünüm veya iletişim nesnesi. Yanıt bir şey yapmak istiyorsanız, bu iletileri işler. Örneğin, kullanıcı görüntülemek için yeni bir ayın seçtiğinde vurgulanmış tarih kümesini sağlayabilir.
+Kullanıcılar aylık takvim denetimiyle etkileşime geçerek (tarihleri seçip/veya farklı bir ay görüntülerken) denetim (`CMonthCalCtrl`), bildirim iletilerini üst penceresine (genellikle bir görünüm veya iletişim nesnesi) gönderir. Yanıtta bir şey yapmak istiyorsanız bu iletileri işleyin. Örneğin, kullanıcı görüntülemek için yeni bir ay seçtiğinde vurgulamamalıdır bir tarih kümesi sağlayabilirsiniz.
 
-Üst sınıf uygulamak istediğiniz bu iletileri için bildirim işleyicileri eklemek için Özellikler penceresini kullanın.
+Uygulamak istediğiniz iletilerin üst sınıfına bildirim işleyicileri eklemek için [sınıf Sihirbazı](reference/mfc-class-wizard.md) ' nı kullanın.
 
-Aşağıdaki listede, ay takvimi tarafından gönderilen çeşitli bildirimler açıklanmaktadır.
+Aşağıdaki listede, aylık Takvim denetimi tarafından gönderilen çeşitli bildirimler açıklanmaktadır.
 
-- MCN_GETDAYSTATE istekleri bilgiler hakkında gün kalın yazı tipinde görüntülenmelidir. Bu bildirim işleme hakkında daha fazla bilgi için bkz: [aylık takvim denetiminin gün durumunu ayarlama](../mfc/setting-the-day-state-of-a-month-calendar-control.md).
+- MCN_GETDAYSTATE, hangi günlerin kalın olarak gösterilmesi gerektiği hakkında bilgi Ister. Bu bildirimi işleme hakkında daha fazla bilgi için, bkz. [bir aylık takvim denetiminin gün durumunu ayarlama](../mfc/setting-the-day-state-of-a-month-calendar-control.md).
 
-- Seçilen tarih veya tarih aralığını değiştirilmiş üst Notifies MCN_SELCHANGE.
+- MCN_SELCHANGE, seçili tarih veya tarih aralığının değiştiğini üst öğeye bildirir.
 
-- MCN_SELECT Notifies açık tarih seçimi yapılan üst.
+- MCN_SELECT, üst öğeye açık bir tarih seçimi yapıldığını bildirir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

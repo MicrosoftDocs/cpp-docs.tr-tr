@@ -1,39 +1,39 @@
 ---
 title: Döndür Düğmesi Stilleri
-ms.date: 11/04/2016
+ms.date: 09/09/2019
 helpviewer_keywords:
 - styles [MFC], CSpinButtonCtrl
 - CSpinButtonCtrl class [MFC], styles
 - styles [MFC], spin button control
 - spin button control, styles
 ms.assetid: fb4a7f6f-9182-47be-bccf-0728fdc5332f
-ms.openlocfilehash: d955ba1d76ee4d5648613ddaf6c5f6a652f3d3af
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1aae4b7e4c63929ebe03c97d50f05754bc13ec26
+ms.sourcegitcommit: 3caf5261b3ea80d9cf14038c116ba981d655cd13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62307178"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70907852"
 ---
 # <a name="spin-button-styles"></a>Döndür Düğmesi Stilleri
 
-Birçok değer değiştirme düğmesi için ayarları ([CSpinButtonCtrl](../mfc/reference/cspinbuttonctrl-class.md)) stilleri tarafından denetlenir. Aşağıdaki stilleri kullanarak ayarlayabilirsiniz **özellikleri** iletişim kutusu Düzenleyicisi penceresinde.
+Bir döndürme düğmesine ([CSpinButtonCtrl](../mfc/reference/cspinbuttonctrl-class.md)) ilişkin ayarların birçoğu, stillerle denetlenir. [Sınıf Sihirbazı](reference/mfc-class-wizard.md)'nı kullanarak aşağıdaki stilleri ayarlayabilirsiniz.
 
-- **Yönlendirme** dikey veya yatay. Ok düğmelerini yönünü denetler. UDS_HORZ stil ile ilişkili.
+- **Yön** Dikey ya da yatay. Ok düğmelerinin yönünü denetler. UDS_HORZ stiliyle ilişkili.
 
-- **Hizalama** eklenmemiş, sola veya sağa biri. Değer değiştirme düğmesi konumunu denetler. Sol ve sağda değer değiştirme düğmesi yanındaki buddy penceresindeki getirin. Buddy penceresinin genişliğini değer değiştirme düğmesi uyum sağlayacak şekilde azalır. UDS_ALIGNLEFT ve UDS_ALIGNRIGHT stilleri ile ilişkili.
+- **Hizalama** Eklenmemiş, sol veya sağdan biri. Döndürme düğmesinin konumunu denetler. Sol ve sağ, arkadaş penceresinin yanındaki döndürme düğmesini konumlandırır. Arkadaş penceresinin genişliği, döndürme düğmesine uyacak şekilde azaltılır. UDS_ALIGNLEFT ve UDS_ALIGNRIGHT stilleriyle ilişkili.
 
-- **Otomatik Buddy** otomatik buddy penceresindeki Değer değiştirme düğmesi için olarak Z düzeninde önceki pencereyi seçer. Bir iletişim şablonunda sekme sırasının değer değiştirme düğmesi önündeki denetim budur. UDS_AUTOBUDDY stil ile ilişkili.
+- **Otomatik arkadaş** , Döndürme düğmesine otomatik olarak Z düzeninde bir önceki pencereyi arkadaş penceresinde seçer. İletişim kutusu şablonunda, bu, sekme düzeninde döndürme düğmesinden önce gelen denetimdir. UDS_AUTOBUDDY stiliyle ilişkili.
 
-- **Arkadaş tamsayı ayarlamak** artırmak ve geçerli konumu değiştikçe buddy penceresinin başlık azaltma döndürme denetimi neden olur. UDS_SETBUDDYINT stil ile ilişkili.
+- **Arkadaş tamsayı ayarla** Geçerli konum değiştiği için, döndürme denetiminin arkadaş penceresinin başlığını artırmasına ve azaltmasına neden olur. UDS_SETBUDDYINT stiliyle ilişkili.
 
-- **Binler** binlik eklemez buddy penceresinin başlık değerindeki ayırıcı. UDS_NOTHOUSANDS stil ile ilişkili.
+- **Binlik yok** Arkadaş penceresinin açıklamalı alt yazısının değerinde binlik ayırıcısını eklemez. UDS_NOTHOUSANDS stiliyle ilişkili.
 
     > [!NOTE]
-    >  Arkadaş denetiminden tamsayı değerini almak için iletişim kutusu veri değişimi (DDX) kullanmak istiyorsanız bu stilini ayarlayın. `DDX_Text` Katıştırılmış binlik basamak ayırıcıları kabul etmiyor.
+    >  Arkadaş denetiminden tamsayı değerini almak için iletişim kutusu veri değişimi 'ni (DDX) kullanmak istiyorsanız bu stili ayarlayın. `DDX_Text`gömülü binlik ayırıcıları kabul etmez.
 
-- **Kaydırma** "değer artırılması veya azaltılması denetim aralığının dışında olduğundan sarmalamak için" konumun neden olur. UDS_WRAP stil ile ilişkili.
+- **Sarın** Değer, denetimin aralığının ötesinde artılarak veya azaltılacağından, konumun "Wrap" olmasına neden olur. UDS_WRAP stiliyle ilişkili.
 
-- **Ok tuşları** artırın veya konumu yukarı ok ve aşağı ok tuşlarına basıldığında azaltma değer değiştirme düğmesi neden olur. UDS_ARROWKEYS stil ile ilişkili.
+- **Ok tuşları** , Yukarı ok ve aşağı ok tuşlarına basıldığında döndürme düğmesinin konumu artırmasına veya azaltmasına neden olur. UDS_ARROWKEYS stiliyle ilişkili.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

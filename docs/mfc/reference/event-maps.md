@@ -1,15 +1,15 @@
 ---
 title: Olay Eşlemeleri
-ms.date: 06/20/2018
+ms.date: 09/07/2019
 helpviewer_keywords:
 - event maps [MFC]
 ms.assetid: 1ed53aee-bc53-43cd-834a-6fb935c0d29b
-ms.openlocfilehash: ef730574b26a4c3619df886b72770ce7e035a40e
-ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
+ms.openlocfilehash: 34741dc05efe77c0932343739540370f54db6008
+ms.sourcegitcommit: 3caf5261b3ea80d9cf14038c116ba981d655cd13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68916462"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70907903"
 ---
 # <a name="event-maps"></a>Olay Eşlemeleri
 
@@ -21,7 +21,7 @@ Microsoft Foundation Class Kitaplığı, olayları tetikiçin iyileştirilmiş b
 
 `EVENT_STOCK_CLICK` Makro, denetimin fare tıklaması her algıladığında bir stok tıklama olayını tetikleyeceği anlamına gelir. Diğer stok olaylarının daha ayrıntılı bir listesi için bkz [. ActiveX denetimleri: Olaylar](../../mfc/mfc-activex-controls-events.md). Makrolar özel olayları göstermek için de kullanılabilir.
 
-Olay eşleme makroları önemli olsa da, genellikle bunları doğrudan eklemeyin. Bunun nedeni, olay tetikleme işlevlerini olaylar ile ilişkilendirmek için kullandığınızda Özellikler penceresi kaynak dosyalarınızda otomatik olarak olay eşleme girişleri oluşturmasıdır. Herhangi bir olay eşleme girişi düzenlemek veya eklemek istediğiniz zaman, Özellikler penceresi kullanabilirsiniz.
+Olay eşleme makroları önemli olsa da, genellikle bunları doğrudan eklemeyin. Bunun nedeni, **Özellikler** penceresinin ( **sınıf görünümü**) olay tetikleme işlevlerini olaylar ile ilişkilendirmek için kullandığınızda kaynak dosyalarınızda otomatik olarak olay eşleme girişleri oluşturmasıdır. Herhangi bir olay eşleme girişi düzenlemek veya eklemek istediğiniz zaman, **Özellikler** penceresini kullanabilirsiniz.
 
 MFC, olay eşlemelerini desteklemek için aşağıdaki makroları sağlar:
 
@@ -81,7 +81,7 @@ BEGIN_EVENT_MAP(theClass,  baseClass)
 Olay haritasını bu olan denetim sınıfının adını belirtir.
 
 *baseClass*<br/>
-Sınıfın temel sınıfının adını belirtir.
+Sınıfın temel sınıfının adını *belirtir.*
 
 ### <a name="remarks"></a>Açıklamalar
 

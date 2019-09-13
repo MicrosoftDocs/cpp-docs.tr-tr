@@ -14,18 +14,18 @@ helpviewer_keywords:
 - DTN_FORMAT notification [MFC]
 - DateTimePicker control [MFC]
 ms.assetid: ffbe29ab-ff80-4609-89f7-260b404439c4
-ms.openlocfilehash: fead5643299aee4beace55abde0b6a6c801a324f
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 500c31d494c53f34febb0f22c82f13b08a1d33cd
+ms.sourcegitcommit: 3caf5261b3ea80d9cf14038c116ba981d655cd13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69507886"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70908112"
 ---
 # <a name="processing-notification-messages-in-date-and-time-picker-controls"></a>Tarih ve Saat Seçici Denetimlerinde Bildirim İletilerini İşleme
 
 Kullanıcılar tarih ve saat seçici denetimiyle etkileşecek şekilde, denetim (),`CDateTimeCtrl`ana penceresine (genellikle bir görünüm veya iletişim nesnesi) bildirim iletileri gönderir. Yanıtta bir şey yapmak istiyorsanız bu iletileri işleyin. Örneğin, Kullanıcı katıştırılmış ay Takvim denetimini göstermek için tarih ve saat seçicisini açtığında, DTN_DROPDOWN bildirimi gönderilir.
 
-Uygulamak istediğiniz iletilerin üst sınıfına bildirim işleyicileri eklemek için Özellikler penceresi kullanın.
+Uygulamak istediğiniz iletilerin üst sınıfına bildirim işleyicileri eklemek için [sınıf Sihirbazı](reference/mfc-class-wizard.md) ' nı kullanın.
 
 Aşağıdaki listede tarih ve saat seçici denetimi tarafından gönderilen çeşitli bildirimler açıklanmaktadır.
 

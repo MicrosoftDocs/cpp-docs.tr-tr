@@ -11,67 +11,67 @@ helpviewer_keywords:
 - panes, status bar
 - status bars [MFC], updating
 ms.assetid: 4984a3f4-9905-4d8c-a927-dca19781053b
-ms.openlocfilehash: baf5013e34f262dd3bfed82941697ab9ca21e637
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 20cd519f15fa9b218bca3dd1348659cfd0d5e473
+ms.sourcegitcommit: 3caf5261b3ea80d9cf14038c116ba981d655cd13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62180791"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70907633"
 ---
 # <a name="updating-the-text-of-a-status-bar-pane"></a>Durum Çubuğu Bölmesinin Metnini Güncelleştirme
 
-Bu makalede, bir MFC durum çubuğu bölmesinde görüntülenen metni değiştirme açıklanmaktadır. Durum çubuğu — sınıfın bir pencere nesnesi [CStatusBar](../mfc/reference/cstatusbar-class.md) — çeşitli "bölmeleri." içerir Her bölmede bir dikdörtgen bilgilerini görüntülemek için kullanabileceğiniz bir durum çubuğu alanıdır. Örneğin, birçok uygulama en sağdaki bölmelerinde CAPS LOCK NUM LOCK ve diğer anahtarlar durumunu görüntüler. Uygulamalar ayrıca genellikle en soldaki bölmesi (0), bilgilendirici metin "ileti bölmesi." olarak da adlandırılır gösterir Örneğin, varsayılan MFC durum çubuğu ileti bölmesinde seçili menü öğesi veya araç çubuğu düğmesini açıklayan bir dize görüntülemek için kullanır. Aşağıdaki şekilde [durum çubukları](../mfc/status-bar-implementation-in-mfc.md) MFC Uygulama Sihirbazı tarafından oluşturulan bir uygulamadan bir durum çubuğu gösterir.
+Bu makalede, bir MFC durum çubuğu bölmesinde görünen metnin nasıl değiştirileceği açıklanır. Bir durum çubuğu — [CStatusBar](../mfc/reference/cstatusbar-class.md) sınıfının bir pencere nesnesi — birkaç "bölme" içerir. Her bölme, durum çubuğunun bilgileri göstermek için kullanabileceğiniz dikdörtgen bir alandır. Örneğin, birçok uygulama, en sağdaki bölmelerde Caps Lock, NUM LOCK ve diğer anahtarların durumunu görüntüler. Uygulamalar genellikle, "ileti bölmesi" olarak da adlandırılan en sol bölmede (bölme 0) bilgilendirici metin görüntüler. Örneğin, varsayılan MFC durum çubuğu şu anda seçili olan menü öğesini veya araç çubuğu düğmesini açıklayan bir dizeyi göstermek için ileti bölmesini kullanır. [Durum çubuklarındaki](../mfc/status-bar-implementation-in-mfc.md) şekil, uygulama Sihirbazı tarafından oluşturulan MFC uygulamasından bir durum çubuğu gösterir.
 
-Varsayılan olarak, MFC olmayan etkinleştirmez bir `CStatusBar` bölmesinde bölmesi oluşturur. Bir bölme etkinleştirmek için durum çubuğundaki her bölme için on_update_command_uı makrosu kullanın ve bölmeleri güncelleştirmeniz gerekir. Çünkü bölmeler WM_COMMAND iletileri gönderme (bunlar, araç çubuğu düğmeleri gibi değil), el ile kod yazmanız gerekir.
+Varsayılan olarak, MFC bölmesi oluşturduğunda bir `CStatusBar` bölmeyi etkinleştirmez. Bir bölmeyi etkinleştirmek için, durum çubuğundaki her bölme için ON_UPDATE_COMMAND_UI makrosunu kullanmanız ve bölmeleri güncelleştirmeniz gerekir. Bölmeler WM_COMMAND iletileri göndermediğinden (araç çubuğu düğmeleri gibi), kodu el ile yazmanız gerekir.
 
-Örneğin, bir bölme olduğunu varsayalım `ID_INDICATOR_PAGE` komut tanımlayıcısını ve bu belgede geçerli sayfa numarası içeriyor. Aşağıdaki yordam, yeni bir bölme durum çubuğunda oluşturmayı açıklar.
+Örneğin, bir bölmenin `ID_INDICATOR_PAGE` komut tanımlayıcısı olarak olduğunu ve bir belgedeki geçerli sayfa numarasını içerdiğini varsayalım. Aşağıdaki yordamda durum çubuğunda yeni bir bölmenin nasıl oluşturulacağı açıklanmaktadır.
 
-### <a name="to-make-a-new-pane"></a>Yeni bir bölme yapma
+### <a name="to-make-a-new-pane"></a>Yeni bir bölme oluşturmak için
 
-1. Bölmedeki komut kimliği tanımlayın
+1. Bölmenin komut KIMLIĞINI tanımlayın.
 
-   Üzerinde **görünümü** menüsünü tıklatın **kaynak görünümü**. Proje kaynağını sağ tıklatıp **kaynak sembolleri**. Kaynak sembolleri iletişim kutusuna tıklayın `New`. Bir komut Kimliğini yazın: Örneğin, `ID_INDICATOR_PAGE`. Kimliği için bir değer belirtin veya kaynak sembolleri iletişim kutusu tarafından önerilen değeri kabul edin. Örneğin, `ID_INDICATOR_PAGE`, varsayılan değeri kabul edin. Kaynak sembolleri iletişim kutusunu kapatın.
+   **Görünüm** menüsünde **kaynak görünümü**' a tıklayın. Proje kaynağına sağ tıklayın ve **kaynak sembolleri**' ne tıklayın. Kaynak sembolleri iletişim kutusunda, öğesine tıklayın `New`. Bir komut KIMLIĞI adı yazın: Örneğin, `ID_INDICATOR_PAGE`. KIMLIK için bir değer belirtin veya kaynak sembolleri iletişim kutusu tarafından önerilen değeri kabul edin. Örneğin, için `ID_INDICATOR_PAGE`varsayılan değeri kabul edin. Kaynak sembolleri iletişim kutusunu kapatın.
 
-1. Bölmede görüntülemek için bir varsayılan dizesini tanımlar.
+1. Bölmede görüntülenecek bir varsayılan dize tanımlayın.
 
-   Açık kaynak görünümü ile çift **dize tablosu** penceresinde uygulamanız için kaynak türlerini listeler. İle **dize tablosu** açık bir düzenleyici seçin **yeni dize** gelen **Ekle** menüsü. Dize özellikleri penceresinde, bölmedeki komut kimliği (örneğin, `ID_INDICATOR_PAGE`) ve "Page" gibi varsayılan bir dize değeri yazın. Dize Düzenleyicisi'ni kapatın. (Bir derleyici hatası kaçınmak için bir varsayılan dizesine ihtiyacınız vardır.)
+   Kaynak Görünümü açıkken, uygulamanız için kaynak türlerini listeleyen pencerede **dize tablosuna** çift tıklayın. **Dize tablosu** Düzenleyicisi açıkken, **Ekle** menüsünden **Yeni dize** ' yi seçin. Bölmesin komut kimliğini (örneğin, `ID_INDICATOR_PAGE`) seçin ve "sayfa" gibi bir varsayılan dize değeri yazın. Dize düzenleyicisini kapatın. (Derleyici hatasından kaçınmak için varsayılan bir dizeye ihtiyacınız vardır.)
 
-1. Bölmesine eklemek *göstergeleri* dizisi.
+1. Bölmeyi *göstergeler* dizisine ekleyin.
 
-   Dosya MAINFRM. CPP, bulun *göstergeleri* dizisi. Bu dizinin tüm sırayla soldan sağa doğru durum çubuğunun göstergeleri için komut kimlikleri listeler. Dizideki uygun noktada için burada gösterildiği gibi bölmedeki komut kimliği girin `ID_INDICATOR_PAGE`:
+   Dosya MAINFRM ' de. CPP, *göstergeler* dizisini bulun. Bu dizi, soldan sağa sırayla tüm durum çubuğu göstergelerinin komut kimliklerini listeler. Dizideki uygun noktada, `ID_INDICATOR_PAGE`aşağıdaki gibi, bölmesinin komut kimliğini aşağıda gösterildiği gibi girin:
 
    [!code-cpp[NVC_MFCDocView#10](../mfc/codesnippet/cpp/updating-the-text-of-a-status-bar-pane_1.cpp)]
 
-Metni bir bölmede görüntülemek için önerilen yöntem çağırmaktır `SetText` sınıfının üye işlevinde `CCmdUI` bölmesi için bir güncelleştirme işleyici işlevi içinde. Örneğin, bir tamsayı değişkeni ayarlamak isteyebilirsiniz *m_nPage* kullanın ve geçerli sayfa numarası içeren `SetText` bölmedeki metni bir dize, sayı sürümüne ayarlamak için.
+Bir bölmede metin görüntülemenin önerilen yolu, bölmesi için bir Update Handler işlevinde `SetText` sınıfının `CCmdUI` üye işlevini çağırmanız olur. Örneğin, geçerli sayfa numarasını içeren *m_nPage* tamsayı değişkenini ayarlamak ve bölmenin metnini bu sayının dize sürümüne ayarlamak için kullanmak `SetText` isteyebilirsiniz.
 
 > [!NOTE]
->  `SetText` Yaklaşım önerilir. Çağırarak biraz daha düşük bir düzeyde bu görevi gerçekleştirmek mümkündür `CStatusBar` üye işlevi `SetPaneText`. Buna rağmen yine de bir güncelleştirme işleyici gerekir. Bu tür için bir işleyici bölmesinde, MFC otomatik olarak bölmesinde içeriği silmeyi devre dışı bırakır.
+>  `SetText` Yaklaşım önerilir. `CStatusBar` Üye işlevini`SetPaneText`çağırarak bu görevi biraz daha düşük bir düzeyde gerçekleştirmek mümkündür. Bu nedenle, yine de bir güncelleştirme işleyicisine ihtiyacınız vardır. Pano için böyle bir işleyici olmadan, MFC otomatik olarak bölmesini devre dışı bırakır ve içeriğini siliyor.
 
-Aşağıdaki yordam bir bölmede metni görüntülemek için bir güncelleştirme işleyici işlevi kullanmayı gösterir.
+Aşağıdaki yordamda, bir bölmede metin göstermek için bir güncelleştirme işleyici işlevinin nasıl kullanılacağı gösterilmektedir.
 
-#### <a name="to-make-a-pane-display-text"></a>Metni görüntülemek için bir bölme yapma
+#### <a name="to-make-a-pane-display-text"></a>Bir bölmeyi görüntüleme metni
 
 1. Komut için bir komut güncelleştirme işleyicisi ekleyin.
 
-   İşleyici için bir prototip için burada gösterildiği gibi el ile eklemeniz `ID_INDICATOR_PAGE` (içinde MAINFRM. H):
+   İçin `ID_INDICATOR_PAGE` burada gösterildiği gibi, işleyici için el ile bir prototip ekleyin (MainFrm içinde). H):
 
    [!code-cpp[NVC_MFCDocView#11](../mfc/codesnippet/cpp/updating-the-text-of-a-status-bar-pane_2.h)]
 
-1. Uygun. CPP işleyicinin tanımı için burada gösterildiği gibi ekleyin `ID_INDICATOR_PAGE` (içinde MAINFRM. CPP):
+1. Uygun. CPP dosyası için `ID_INDICATOR_PAGE` burada gösterildiği gibi işleyicinin tanımını ekleyin (MainFrm içinde). CPP):
 
    [!code-cpp[NVC_MFCDocView#12](../mfc/codesnippet/cpp/updating-the-text-of-a-status-bar-pane_3.cpp)]
 
-   Bu işleyicinin son üç satır metni görüntüler kodu var.
+   Bu işleyicinin son üç satırı, metninizi görüntüleyen koddur.
 
-1. On_update_command_uı makrosu, için aşağıda gösterildiği gibi uygun ileti eşlemede ekleme `ID_INDICATOR_PAGE` (içinde MAINFRM. CPP):
+1. Uygun ileti eşlemesinde, burada `ID_INDICATOR_PAGE` gösterildiği gibi ON_UPDATE_COMMAND_UI makrosunu (MainFrm içinde) ekleyin. CPP):
 
    [!code-cpp[NVC_MFCDocView#13](../mfc/codesnippet/cpp/updating-the-text-of-a-status-bar-pane_4.cpp)]
 
-Değerini tanımladıktan sonra *m_nPage* üye değişkeni (sınıf `CMainFrame`), bu teknik, sayfa numarası, uygulamanın diğer göstergeleri güncelleştirmeleri aynı şekilde boşta işleme sırasında bölmesinde görüntülenecek neden olur. Varsa *m_nPage* değişiklikler, sonraki boşta döngü sırasında görüntü değişiklikleri.
+*M_nPage* member değişkeninin (Of Class `CMainFrame`) değerini tanımladıktan sonra, bu yöntem, boş işlem sırasında uygulamanın diğer göstergeleri güncelleştirmesiyle aynı şekilde, sayfa numarasının panelde görünmesine neden olur. *M_nPage* değişirse, ekran bir sonraki boşta döngüsü sırasında değişir.
 
-### <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz
+### <a name="what-do-you-want-to-know-more-about"></a>Hakkında daha fazla bilgi edinmek istiyorsunuz
 
-- [(Program koşullar değiştikçe araç çubuğu düğmeleri ve menü öğeleri güncelleştirmek nasıl) kullanıcı arabirimi nesnelerini güncelleştirme](../mfc/how-to-update-user-interface-objects.md)
+- [Kullanıcı arabirimi nesnelerini güncelleştirme (araç çubuğu düğmelerini ve menü öğelerini program koşulları değişikliği olarak güncelleştirme)](../mfc/how-to-update-user-interface-objects.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

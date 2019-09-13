@@ -1,6 +1,6 @@
 ---
 title: Uygulama Tasarımı Seçimleri
-ms.date: 11/04/2016
+ms.date: 09/12/2019
 helpviewer_keywords:
 - design
 - application design [MFC], design goals
@@ -11,80 +11,80 @@ helpviewer_keywords:
 - server applications [MFC], vs. client applications on Internet
 - client applications [MFC], vs. server applications on Internet
 ms.assetid: 9b96172c-b4d4-4c69-bfb2-226ce0de6d08
-ms.openlocfilehash: cdb294e4ab808a7e4cbcec457f6e744eff9f12cb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b205599ed3bf33e84516120b1855482797b86c9b
+ms.sourcegitcommit: effb516760c0f956c6308eeded48851accc96b92
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62394669"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70924909"
 ---
 # <a name="application-design-choices"></a>Uygulama Tasarımı Seçimleri
 
-Bu makalede bazı İnternet'e programlama yaparken dikkate alınması gereken tasarım konularını açıklar.
+Bu makalede, Internet için programlama yaparken göz önünde bulundurmanız gereken bazı tasarım sorunları ele alınmaktadır.
 
-Bu makalede ele alınan konular:
+Bu makalede ele alınan konular şunları içerir:
 
-- [İntranet ve Internet](#_core_intranet_versus_internet)
+- [Intranet ve Internet karşılaştırması](#_core_intranet_versus_internet)
 
 - [İstemci veya sunucu uygulaması](#_core_client_or_server_application)
 
-- [](#_core_the_web_page)
+- [Web sayfası](#_core_the_web_page)
 
 - [Tarayıcı veya tek başına uygulama](#_core_browser_or_standalone)
 
-- [Internet üzerindeki COM](#_core_com_on_the_internet)
+- [Internet üzerinde COM](#_core_com_on_the_internet)
 
-- [İstemci verilerini Hizmetleri indirin](#_core_client_data_download_services)
+- [İstemci verileri Indirme Hizmetleri](#_core_client_data_download_services)
 
-Programınız şimdi yazma başlatmak için bkz: hazırsanız [MFC uygulamaları yazma](../mfc/writing-mfc-applications.md).
+Programınızı yazmaya hemen başlamaya hazırsanız bkz. [MFC uygulamaları yazma](../mfc/writing-mfc-applications.md).
 
-##  <a name="_core_intranet_versus_internet"></a> İntranet ve Internet
+##  <a name="_core_intranet_versus_internet"></a>Intranet ve Internet karşılaştırması
 
-Birçok uygulama, Internet'te çalışmasına ve tarayıcı ve Internet erişimi olan herkes erişebilir. İşletmelerin de TCP/IP protokolleriyle şirket çapında ağlara ve Web tarayıcıları intranet uyguluyor. İntranet bir kolayca yükseltilebilir, merkezi kaynak şirket çapında bilgi sunar. Bunlar, yazılımı yükseltmek için teslim ve anketler tablo haline getirme, müşteri desteği ve bilgi teslimi için kullanılabilir. Aşağıdaki tabloda, intranet ve Internet özellikleri karşılaştırılır.
+Birçok uygulama Internet üzerinde çalışır ve tarayıcı ve Internet erişimi olan herkes tarafından erişilebilir. İşletmeler, TCP/IP protokolleri ve Web tarayıcıları kullanan şirket genelinde ağlar olan intranetleri de uygular. İntranetlerde şirket genelinde bilgiler için kolayca yükseltilebilir, merkezi bir kaynak sunulur. Bunlar, yazılım yükseltme, anketler için, müşteri desteği ve bilgi teslimi için kullanılabilirler. Aşağıdaki tabloda Internet ve intranet özelliklerinin özellikleri karşılaştırılmaktadır.
 
-|Internet|İntranet|
+|Internet|İntranetindeki|
 |--------------|--------------|
 |Düşük bant genişliği|Yüksek bant genişliği|
-|Düşük güvenlik verileri ve sistemleri|Veri ve sistemlere denetimli erişim|
-|İçerik en az denetim|Yüksek denetim içeriği|
+|Verilerin ve sistemlerin azaltılmış güvenliği|Verilere ve sistemlere denetimli erişim|
+|En az içerik denetimi|İçeriğin yüksek denetimi|
 
-##  <a name="_core_client_or_server_application"></a> İstemci veya sunucu uygulaması
+##  <a name="_core_client_or_server_application"></a>İstemci veya sunucu uygulaması
 
-Uygulamanız, istemci bilgisayarda veya sunucusu bilgisayarında çalıştırabilirsiniz. Uygulamanız da bir sunucu üzerinde depolanabilir ve ardından Internet üzerinden indirilen ve bir istemci bilgisayarda çalışması. MFC WinINet sınıfları, dosyaları indirmek için istemci uygulamaları için kullanılır. MFC ve zaman uyumsuz ad sınıfları dosyalarını indirmek ve özellikleri denetlemek için kullanılır. ActiveX denetimleri ve etkin belgeler için sınıflar, bir istemcide çalışmasına sunucusundan indirilen uygulamalar ve istemci uygulamaları için kullanılır.
+Uygulamanız bir istemci bilgisayarda veya bir sunucu bilgisayarda çalışabilir. Uygulamanız Ayrıca bir sunucuda depolanabilir ve sonra Internet üzerinden indirilip istemci bilgisayarında çalıştırılabilir. MFC WinInet sınıfları, istemci uygulamalarının dosya indirmesini sağlamak için kullanılır. MFC ve zaman uyumsuz bilinen ad sınıfları dosyaları ve denetim özelliklerini indirmek için kullanılır. ActiveX denetimleri ve etkin belgeler için sınıflar, istemci uygulamaları ve sunucudan çalıştırılmak üzere sunucudan indirilen uygulamalar için kullanılır.
 
-##  <a name="_core_the_web_page"></a> Web sayfası: HTML, etkin belgeler ActiveX denetimleri
+##  <a name="_core_the_web_page"></a>Web sayfası: HTML, etkin belgeler, ActiveX denetimleri
 
-Microsoft, bir Web sayfasında içerik sağlayan çeşitli yollar sunar. Web sayfaları, standart HTML veya HTML kullanabileceğiniz uzantılar, ActiveX denetimleri gibi dinamik içerik sağlamak, nesne etiketi gibi.
+Microsoft, bir Web sayfasında içerik sağlamanın çeşitli yollarını sunmaktadır. Web sayfaları, ActiveX denetimleri gibi dinamik içerik sağlamak için standart HTML veya nesne etiketi gibi HTML uzantıları kullanabilir.
 
-Genellikle, Web tarayıcıları HTML sayfalarını görüntüler. Etkin belgeler, COM özellikli bir tarayıcı basit ve tıklama arabiriminde uygulamanızın verilerini de görüntüleyebilirsiniz. Etkin belge sunucunuz, tüm istemci alanında kendi menüleri ve araç çubuklarını belge, tam çerçeve görüntüleyebilirsiniz.
+Web tarayıcıları genellikle HTML sayfalarını görüntüler. Etkin belgeler ayrıca, bir COM etkin tarayıcının basit nokta ve tıklama arabiriminde uygulamanızın verilerini de görüntüleyebilir. Etkin belge sunucunuz, kendi menü ve araç çubuklarıyla birlikte tüm istemci alanında Belgenizin tamamını görüntüleyebilir.
 
-ActiveX denetimleri, yazma, sunucudan zaman uyumsuz olarak ve bir Web sayfasında görüntülenir. VBScript gibi bir komut dosyası dili bilgi server için göndermeden önce istemci tarafı doğrulama gerçekleştirmek için kullanabilirsiniz.
+Yazdığınız ActiveX denetimleri sunucudan zaman uyumsuz olarak indirilebilir ve bir Web sayfasında görüntülenebilir. Sunucuya bilgi göndermeden önce, istemci tarafı doğrulaması gerçekleştirmek için VBScript gibi bir betik dili kullanabilirsiniz.
 
-##  <a name="_core_browser_or_standalone"></a> Tarayıcı veya tek başına uygulama
+##  <a name="_core_browser_or_standalone"></a>Tarayıcı veya tek başına uygulama
 
-Bir HTML sayfası ve bir tarayıcıda görüntülenen etkin belge sunucuları katıştırılmış ActiveX denetimlerini yazabilirsiniz. Bir Web sunucusunda ISAPI uygulamanızı çalıştırmak için bir istek göndermek için bir düğme içeren HTML sayfaları yazabilirsiniz. Dosyaları indirmek ve bir tarayıcı uygulaması kullanmadan, kullanıcıya bilgileri görüntülemek için Internet protokolleri kullanan tek başına bir uygulama yazabilirsiniz.
+Bir tarayıcıda görüntülenen bir HTML sayfasına ve etkin belge sunucularına katıştırılmış ActiveX denetimleri yazabilirsiniz. Bir Web sunucusunda ISAPI uygulamanızı çalıştırmak için bir istek göndermek üzere bir düğme içeren HTML sayfaları yazabilirsiniz. Bir tarayıcı uygulaması kullanmadan, dosyaları indirmek ve bilgileri kullanıcıya göstermek için Internet protokolleri kullanan tek başına bir uygulama yazabilirsiniz.
 
-##  <a name="_core_com_on_the_internet"></a> Internet üzerindeki COM
+##  <a name="_core_com_on_the_internet"></a>Internet üzerinde COM
 
-ActiveX denetimleri, etkin belgeler ve zaman uyumsuz adlar COM (Bileşen Nesne modeli) teknolojilerini kullanın.
+ActiveX denetimleri, etkin belgeler ve zaman uyumsuz bilinen adlar tüm COM (bileşen nesne modeli) teknolojilerini kullanır.
 
-ActiveX denetimleri, Internet sitelerine belgeler ve sayfalar için dinamik içerik sağlar. COM ile ActiveX denetimlerini ve tam çerçeve belgeleri etkin belgeler kullanarak oluşturabilirsiniz.
+ActiveX denetimleri, Internet sitelerindeki belgelere ve sayfalarına dinamik içerik sağlar. COM ile, etkin belgeleri kullanarak ActiveX denetimleri ve tam çerçeve belgeleri oluşturabilirsiniz.
 
-Zaman uyumsuz adlar bir artımlı iyi bir Internet ortamda gerçekleştirmek bir denetim sağlamak için özellikler sağlamak veya verileri indirmek aşamalı anlamına gelir. Denetimleri de iyi Ayrıca kendi verilerini zaman uyumsuz olarak aynı anda alınıyor diğer denetimleri ile çalışması gerekir.
+Zaman uyumsuz bilinen adlar, verileri indirmek için artımlı veya aşamalı bir yol da dahil olmak üzere bir denetimin Internet ortamında iyi bir şekilde gerçekleştirmesini sağlayan özellikler sunar. Denetimler ayrıca aynı anda verilerini zaman uyumsuz olarak almak için aynı zamanda diğer denetimlerle de çalışır.
 
-##  <a name="_core_client_data_download_services"></a> İstemci verilerini Hizmetleri indirin
+##  <a name="_core_client_data_download_services"></a>İstemci verileri Indirme Hizmetleri
 
-İki veri aktarmak için istemci yardımcı olacak API'leri WinINet ve zaman uyumsuz adlar kümeleridir. Büyük .gif ve .avi dosyaları ve ActiveX denetimlerini, HTML sayfasında varsa, zaman uyumsuz adlar kullanarak veya zaman uyumsuz olarak WinINet kullanarak zaman uyumsuz olarak indirerek kullanıcıya uygulamanın yanıt verme hızını artırabilirsiniz.
+İstemcinizdeki verileri aktarmaya yardımcı olacak iki API kümesi, Winınet ve zaman uyumsuz olan addır. HTML sayfanızda büyük. gif ve. avi dosyalarınız ve ActiveX denetimleri varsa, zaman uyumsuz adlar kullanarak veya WinInet zaman uyumsuz olarak indirerek kullanıcıya yanıt verme hızını artırabilirsiniz.
 
-Internet üzerindeki genel bir görev veri aktarıyor. Etkin teknoloji (örneğin, bir ActiveX denetimini varsa) zaten kullanıyorsanız, bunu indirilirken veri aşamalı olarak işlemek için zaman uyumsuz adlar kullanabilirsiniz. WinINet HTTP, FTP ve gopher gibi common Internet protokolleri kullanarak veri aktarmak için kullanabilirsiniz. Her iki yöntem de Protokolü bağımsızlığı ve WinSock ve TCP/IP'yi kullanarak bir soyut katman sağlar. Kullanmaya devam edebilirsiniz [WinSock](../mfc/windows-sockets-in-mfc.md) doğrudan.
+Internet üzerindeki ortak bir görev veri aktarıyordu. Zaten etkin teknolojiyi kullanıyorsanız (örneğin, bir ActiveX denetiminiz varsa), indirme sırasında verileri aşamalı olarak işlemek için zaman uyumsuz bilinen adlar kullanabilirsiniz. HTTP, FTP ve gopher gibi ortak Internet protokollerini kullanarak verileri aktarmak için WinInet kullanabilirsiniz. Her iki yöntem de protokol bağımsızlık sağlar ve WinSock ve TCP/IP kullanarak soyut bir katman sağlar. Hala [Winsock](../mfc/windows-sockets-in-mfc.md) 'ı doğrudan kullanabilirsiniz.
 
-Aşağıdaki tabloda Internet üzerinden veri aktarımı için MFC kullanarak çeşitli yollarını özetler.
+Aşağıdaki tabloda, verileri Internet üzerinden aktarmak için MFC kullanmanın çeşitli yolları özetlenmektedir.
 
-|Bu protokol kullanın|Bu koşullar altında|Bu sınıflar kullanma|
+|Bu protokolü kullan|Bu koşullar altında|Bu sınıfları kullanma|
 |-----------------------|----------------------------|-------------------------|
-|[Internet karşıdan kullanarak zaman uyumsuz adlar](../mfc/asynchronous-monikers-on-the-internet.md)|COM, ActiveX denetimlerini kullanarak zaman uyumsuz aktarımı için ve herhangi bir Internet Protokolü.|[CAsyncMonikerFile](../mfc/reference/casyncmonikerfile-class.md), [CDataPathProperty](../mfc/reference/cdatapathproperty-class.md)|
-|[WinINet](../mfc/win32-internet-extensions-wininet.md)|HTTP, FTP ve gopher Internet protokolleri için. Veriler zaman uyumlu veya zaman uyumsuz olarak aktarılabilen ve bir sistem genelinde önbellekte depolanır.|[Cınternetsession](../mfc/reference/cinternetsession-class.md), [CFtpFileFind](../mfc/reference/cftpfilefind-class.md), [CGopherFileFind](../mfc/reference/cgopherfilefind-class.md)ve çok daha fazlası.|
-|[WinSock](../mfc/windows-sockets-in-mfc.md)|En yüksek verimlilik ve denetim için. Yuva ve TCP/IP protokolleri düzeyde bilinmesini gerektirir.|[CSocket](../mfc/reference/csocket-class.md), [Casyncsocket'ini](../mfc/reference/casyncsocket-class.md)|
+|[Zaman uyumsuz adlar kullanarak Internet Indirme](../mfc/asynchronous-monikers-on-the-internet.md)|COM, ActiveX denetimleri ve herhangi bir Internet Protokolü kullanılarak zaman uyumsuz aktarım için.|[CAsyncMonikerFile](../mfc/reference/casyncmonikerfile-class.md), [CDataPathProperty](../mfc/reference/cdatapathproperty-class.md)|
+|[Dosyasında](../mfc/win32-internet-extensions-wininet.md)|HTTP, FTP ve gopher için Internet protokolleri için. Veriler zaman uyumlu veya zaman uyumsuz olarak aktarılabilir ve sistem genelinde bir önbellekte depolanabilir.|[CInternetSession](../mfc/reference/cinternetsession-class.md), [CFtpFileFind](../mfc/reference/cftpfilefind-class.md), [CGopherFileFind](../mfc/reference/cgopherfilefind-class.md)ve çok daha fazlası.|
+|[WinSock](../mfc/windows-sockets-in-mfc.md)|En yüksek verimlilik ve denetim. Yuvalar ve TCP/IP protokollerinin anlaşılmasına gerek duyar.|[CSocket](../mfc/reference/csocket-class.md), [CAsyncSocket](../mfc/reference/casyncsocket-class.md)|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

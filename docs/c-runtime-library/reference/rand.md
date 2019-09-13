@@ -1,6 +1,6 @@
 ---
 title: rand
-ms.date: 1/02/2018
+ms.date: 01/02/2018
 apiname:
 - rand
 apilocation:
@@ -26,16 +26,16 @@ helpviewer_keywords:
 - rand function
 - pseudorandom numbers
 - numbers, generating pseudorandom
-ms.openlocfilehash: 868c6239ac1b86dfc9ac72cc8cc83d1ba3002b4a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: 407640c5f00ae54c43450abcbbe8c2e3ba0fcf95
+ms.sourcegitcommit: effb516760c0f956c6308eeded48851accc96b92
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62357778"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70927521"
 ---
 # <a name="rand"></a>rand
 
-İyi bilinen ve tam olarak yeniden üretilebilen algoritmasını kullanarak rastgele bir sayı oluşturur. Bu işlevin daha programlı olarak güvenli bir sürümü kullanılabilir; bkz: [rand_s](rand-s.md). Oluşturulmuş sayılara **rand** şifreleme bakımından güvenli değildir. Daha fazla şifreleme yoluyla güvenli rasgele sayı üretimi için kullanmak [rand_s](rand-s.md) veya içinde bildirilen işlevlerin C++ standart kitaplıkta [ \<rastgele >](../../standard-library/random.md).
+İyi bilinen ve tamamen tekrarlanabilir bir algoritma kullanarak bir pseudportaıdom numarası üretir. Bu işlevin daha programlı olarak güvenli bir sürümü kullanılabilir; bkz. [rand_s](rand-s.md). **S_SAYI_ÜRET** tarafından oluşturulan sayılar şifreli olarak güvenli değildir. Daha fazla şifreli rastgele sayı üretimi için, [rand_s](rand-s.md) veya C++ [ \<](../../standard-library/random.md)standart kitaplıkta belirtilen işlevleri rastgele > kullanın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -45,19 +45,19 @@ int rand( void );
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**rand** yukarıda açıklandığı bir sözde rastgele sayı döndürür. Döndürülen hata yok.
+**S_SAYI_ÜRET** , yukarıda açıklandığı gibi pseudportaıdom numarasını döndürür. Hata döndürme yok.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Rand** işlevi için 0 aralığındaki bir sözde rastgele tamsayı döndürür **RAND_MAX** (32767). Kullanım [srand](srand.md) işlevini çağırmadan önce sözde rastgele sayı üretici temel **rand**.
+**S_SAYI_ÜRET** işlevi, 0 ile **RAND_MAX** (32767) aralığında bir pseudportaıdom tamsayı döndürür. **S_SAYI_ÜRET**çağrılmadan önce pseudportadom-Number üreticisini temel almak için [srand](srand.md) işlevini kullanın.
 
-**Rand** işlevi iyi bilinen bir sıra üretir ve bir şifreleme işlevi olarak kullanılmaya uygun değil. Daha fazla şifreleme yoluyla güvenli rasgele sayı üretimi için kullanmak [rand_s](rand-s.md) veya içinde bildirilen işlevlerin C++ standart kitaplıkta [ \<rastgele >](../../standard-library/random.md). Sorun nedir hakkında bilgi için **rand** ve nasıl \<rastgele > Bu videoyu başlıklı bkz bu eksiklikleri adresleri [rand kabul zararlı](https://channel9.msdn.com/Events/GoingNative/2013/rand-Considered-Harmful).
+**S_SAYI_ÜRET** işlevi iyi bilinen bir dizi oluşturur ve şifreleme işlevi olarak kullanım için uygun değildir. Daha fazla şifreli rastgele sayı üretimi için, [rand_s](rand-s.md) veya C++ [ \<](../../standard-library/random.md)standart kitaplıkta belirtilen işlevleri rastgele > kullanın. **S_SAYI_ÜRET** ile ilgili nelerin yanlış olduğu ve rastgele > Bu \<eksiklikleri nasıl ele aldığı hakkında bilgi için bkz. [S_SAYI_ÜRET 'in zararlı olduğu kabul edilen](https://channel9.msdn.com/Events/GoingNative/2013/rand-Considered-Harmful)bu video.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**rand**|\<stdlib.h >|
+|**rand**|\<Stdlib. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

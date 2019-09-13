@@ -5,12 +5,12 @@ description: Visual C++ Studio 'da Microsoft, c++ 20 dil standardı ile tam uygu
 ms.technology: cpp-language
 author: mikeblome
 ms.author: mblome
-ms.openlocfilehash: aeaaab704706bee575e3ae44726522cd04c17433
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 8eae104d21de271f11c727262939121c20050092
+ms.sourcegitcommit: effb516760c0f956c6308eeded48851accc96b92
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70222308"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70927944"
 ---
 # <a name="c-conformance-improvements-in-visual-studio"></a>Visual Studio 2017’deki C++ uyumluluk geliştirmeleri
 
@@ -268,7 +268,7 @@ int main() {
 
 ### <a name="binary-expressions-with-different-enum-types"></a>Farklı enum türlerine sahip ikili ifadeler
 
-Tek bir numaralandırma türü olan ve diğeri farklı bir numaralandırma türü olan ve diğer bir kayan nokta türünde olan işlenenler üzerinde her zamanki aritmetik dönüştürmeleri uygulama özelliği C++ 20 ' de ([P1120R0](http://wg21.link/p1120r0)) kullanım dışıdır. Visual Studio 2019 sürüm 16,2 ve sonraki sürümlerde, [/std: c + + latest](../build/reference/std-specify-language-standard-version.md) derleyici seçeneği etkin olduğunda aşağıdaki kod bir düzey 4 uyarısı üretir:
+Tek bir numaralandırma türü olan ve diğeri farklı bir numaralandırma türü olan ve diğer bir kayan nokta türünde olan işlenenler üzerinde her zamanki aritmetik dönüştürmeleri uygulama özelliği C++ 20 ' de ([P1120R0](https://wg21.link/p1120r0)) kullanım dışıdır. Visual Studio 2019 sürüm 16,2 ve sonraki sürümlerde, [/std: c + + latest](../build/reference/std-specify-language-standard-version.md) derleyici seçeneği etkin olduğunda aşağıdaki kod bir düzey 4 uyarısı üretir:
 
 ```cpp
 enum E1 { a };
@@ -290,7 +290,7 @@ int main() {
 
 ### <a name="binary-expressions-with-enumeration-and-floating-point-types"></a>Numaralandırma ve kayan nokta türleri ile ikili ifadeler
 
-Tek bir numaralandırma türü olan ve diğeri farklı bir numaralandırma türü olan ve diğer bir kayan nokta türünde olan işlenenler üzerinde her zamanki aritmetik dönüştürmeleri uygulama özelliği C++ 20 ' de ([P1120R0](http://wg21.link/p1120r0)) kullanım dışıdır. Diğer bir deyişle, bir numaralandırma ve kayan nokta türü arasındaki ikili bir işlemin kullanılması artık [/std: c + + en son](../build/reference/std-specify-language-standard-version.md) derleyici seçeneği etkin olduğunda bir uyarıdır:
+Tek bir numaralandırma türü olan ve diğeri farklı bir numaralandırma türü olan ve diğer bir kayan nokta türünde olan işlenenler üzerinde her zamanki aritmetik dönüştürmeleri uygulama özelliği C++ 20 ' de ([P1120R0](https://wg21.link/p1120r0)) kullanım dışıdır. Diğer bir deyişle, bir numaralandırma ve kayan nokta türü arasındaki ikili bir işlemin kullanılması artık [/std: c + + en son](../build/reference/std-specify-language-standard-version.md) derleyici seçeneği etkin olduğunda bir uyarıdır:
 
 ```cpp
 enum E1 { a };
@@ -310,7 +310,7 @@ int main() {
 
 ### <a name="equality-and-relational-comparisons-of-arrays"></a>Dizilerin eşitlik ve ilişkisel karşılaştırmaları
 
-Dizi türünün iki işleneni arasındaki eşitlik ve ilişkisel karşılaştırmalar, C++ 20 ' de ([P1120R0](http://wg21.link/p1120r0)) kullanım dışıdır. Diğer bir deyişle, iki dizi arasındaki karşılaştırma işlemi (derecelendirmeden ve ölçüde benzerlikleri ne olursa olsun) artık bir uyarıdır. Visual Studio 2019 sürüm 16,2 ' den başlayarak, aşağıdaki kod *C5056: operator ' = = ':* [/std: c + + latest](../build/reference/std-specify-language-standard-version.md) derleyici seçeneği etkin olduğunda dizi türleri için kullanım dışı bırakıldı:
+Dizi türünün iki işleneni arasındaki eşitlik ve ilişkisel karşılaştırmalar, C++ 20 ' de ([P1120R0](https://wg21.link/p1120r0)) kullanım dışıdır. Diğer bir deyişle, iki dizi arasındaki karşılaştırma işlemi (derecelendirmeden ve ölçüde benzerlikleri ne olursa olsun) artık bir uyarıdır. Visual Studio 2019 sürüm 16,2 ' den başlayarak, aşağıdaki kod *C5056: operator ' = = ':* [/std: c + + latest](../build/reference/std-specify-language-standard-version.md) derleyici seçeneği etkin olduğunda dizi türleri için kullanım dışı bırakıldı:
 
 ```cpp
 int main() {
@@ -736,7 +736,7 @@ Toplama, Kullanıcı tarafından sağlanmayan bir Oluşturucu olmayan, özel vey
 
 ### <a name="c14-extended-constexpr"></a>C++ 14: Genişletildiğinde`constexpr`
 
-Olarak `constexpr` belirtilen ifadeler, bazı bildirim türlerini, if ve Switch deyimlerini, Loop deyimlerini ve yaşam sürelerini constexpr ifade değerlendirmesi içinde başlayan nesneler, döngü deyimleri ve mutasyonları içermesine izin verilir. Ayrıca, statik `constexpr` olmayan bir üye işlevin örtük `const`bir şekilde olması gerekmez. Daha fazla bilgi için bkz. [constexpr işlevleri üzerinde kısıtlamaları](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3652.html)gevşme.
+Olarak `constexpr` belirtilen ifadeler, bazı bildirim türlerini, if ve Switch deyimlerini, Loop deyimlerini ve yaşam sürelerini constexpr ifade değerlendirmesi içinde başlayan nesneler, döngü deyimleri ve mutasyonları içermesine izin verilir. Ayrıca, statik `constexpr` olmayan bir üye işlevin örtük `const`bir şekilde olması gerekmez. Daha fazla bilgi için bkz. [constexpr işlevleri üzerinde kısıtlamaları gevşme](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3652.html).
 
 ### <a name="c17-terse-static_assert"></a>C++ 17: Terse`static_assert`
 
@@ -1573,7 +1573,7 @@ constexpr auto off = offsetof(A, arr[2]);
 
 ### <a name="using-offsetof-with-static-data-member-or-member-function"></a>Statik `offsetof` veri üyesi veya üye işlevi ile kullanma
 
-Visual Studio 2017 sürüm 15,3 ' de bir `offsetof(T, m)` statik veri üyesine veya üye işleve başvuran bir hata ile sonuçlanır. Aşağıdaki kod, "Error C4597: tanımsız davranış: ' example '" ve "Error C4597: tanımsız davranış: ' Sample ' ' örneğine uygulanmış olan ' örnek ' üye işlevine yönelik OffsetOf uygulandı:
+Visual Studio 2017 sürüm 15,3 ' de bir `offsetof(T, m)` statik veri üyesine veya üye *işleve başvuran bir* hata ile sonuçlanır. Aşağıdaki kod, "Error C4597: tanımsız davranış: ' example '" ve "Error C4597: tanımsız davranış: ' Sample ' ' örneğine uygulanmış olan ' örnek ' üye işlevine yönelik OffsetOf uygulandı:
 
 ```cpp
 #include <cstddef>
@@ -1603,7 +1603,7 @@ Uyarıyı onarmak için, önce şunu `extern "C"` yerleştirin:
 extern "C" __declspec(noinline) HRESULT __stdcall
 ```
 
-Bu uyarı, varsayılan olarak 15,3 ' de, ancak varsayılan olarak 15,5 ' de kapalıdır ve yalnızca/duvar/WXile derlenen kodu etkiler.
+Bu uyarı, varsayılan olarak 15,3 ' de, ancak varsayılan olarak 15,5 ' de kapalıdır ve yalnızca **/duvar/WX**ile derlenen kodu etkiler.
 
 ### <a name="decltype-and-calls-to-deleted-destructors"></a>`decltype`ve silinen yıkıcıları için çağrılar
 

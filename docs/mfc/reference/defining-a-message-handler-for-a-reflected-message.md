@@ -1,59 +1,55 @@
 ---
 title: Yansımış Bir İleti İçin İleti İşleyicisi Tanımlama
-ms.date: 11/04/2016
+ms.date: 09/07/2019
 f1_keywords:
 - vc.codewiz.defining.msg.msghandler
 helpviewer_keywords:
 - messages [MFC], reflected
 - message handling [MFC], reflected messages
 ms.assetid: 5a403528-58c5-46e7-90d5-4a77f0ab9b9c
-ms.openlocfilehash: 970dd7072cb8391d76d39536e442d5aab8e0f61d
-ms.sourcegitcommit: 65ed563a8a1d4d90f872a2a6edcb086f84ec9f77
+ms.openlocfilehash: 1e38c63464cacf445688a1d431a65af21eac86f4
+ms.sourcegitcommit: 3caf5261b3ea80d9cf14038c116ba981d655cd13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66741600"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70907937"
 ---
 # <a name="defining-a-message-handler-for-a-reflected-message"></a>Yansımış Bir İleti İçin İleti İşleyicisi Tanımlama
 
-Yeni bir MFC denetim sınıf oluşturduktan sonra bunun için ileti işleyicileri tanımlayabilirsiniz. Yansımış bir ileti işleyicileri, ileti üst öğe tarafından alındığında önce kendi iletileri işlemek denetim sınıfınıza izin verir. MFC kullanabileceğiniz [CWnd::SendMessage](../../mfc/reference/cwnd-class.md#sendmessage) üst penceresine, denetiminden ileti göndermek için işlevi.
+Yeni bir MFC denetim sınıfı oluşturduktan sonra, bunun için ileti işleyicileri tanımlayabilirsiniz. Yansıtılan ileti işleyicileri, ileti üst öğe tarafından alınmadan önce denetim sınıfınızın kendi iletilerini işlemesini sağlar. Denetiminden bir ana pencereye ileti göndermek için MFC [CWnd:: SendMessage](../../mfc/reference/cwnd-class.md#sendmessage) işlevini kullanabilirsiniz.
 
-(Bunu sahip çizilmiş) yapmak için ana penceresinde güvenmek yerine yapabilirsiniz, örneğin, bu işlevin kendisi yeniden çizer bir liste kutusu oluşturun. Yansımış iletiler hakkında daha fazla bilgi için bkz. [yansımış iletileri işleme](../../mfc/handling-reflected-messages.md).
+Bu işlevle, örneğin, ana pencereye güvenmek yerine kendisini yeniden çizen bir liste kutusu oluşturabilirsiniz (sahip çizildi). Yansıtılan iletiler hakkında daha fazla bilgi için bkz. [yansıtılan Iletileri işleme](../../mfc/handling-reflected-messages.md).
 
-Oluşturmak için bir [ActiveX denetimi](../../mfc/activex-controls-on-the-internet.md) aynı işlevselliğe sahip ActiveX denetimi projesi oluşturmanız gerekir.
+Aynı işlevselliğe sahip bir [ActiveX denetimi](../../mfc/activex-controls-on-the-internet.md) oluşturmak Için, ActiveX denetimi için bir proje oluşturmanız gerekir.
 
 > [!NOTE]
->  Yansımış bir ileti ekleyemezsiniz (OCM_*ileti*) için bir ActiveX denetimi Özellikler penceresini kullanarak aşağıda açıklandığı gibi. Bu iletiler el ile eklemeniz gerekir.
+>  Aşağıda açıklandığı gibi, sınıf Sihirbazı 'nı kullanarak bir ActiveX denetimi için yansıtılan bir ileti (OCM_*iletisi*) ekleyemezsiniz. Bu iletileri el ile eklemeniz gerekir.
 
-### <a name="to-define-a-message-handler-for-a-reflected-message-from-the-properties-window"></a>Özellikler penceresinde yansımış bir ileti için ileti işleyicisi tanımlama
+### <a name="to-define-a-message-handler-for-a-reflected-message-from-the-class-wizard"></a>Sınıf sihirbazından yansıtılan bir ileti için ileti işleyicisi tanımlama
 
-1. Bir liste gibi bir denetimin, bir çubuk barınağı denetimi, bir araç veya bir ağaç denetimi MFC projenize ekleyin.
+1. MFC projenize liste, Rebar denetim, araç çubuğu veya ağaç denetimi gibi bir denetim ekleyin.
 
-1. Sınıf Görünümü'nde denetim sınıfınıza adına tıklayın.
+1. Sınıf Görünümü, denetim sınıfınızın adına tıklayın.
 
-1. İçinde [Özellikler penceresi](/visualstudio/ide/reference/properties-window), denetim sınıf adı görünür **sınıf adı** listesi.
+1. [Sınıf sihirbazında](mfc-class-wizard.md), denetim sınıfı adı **sınıf adı** listesinde görünür.
 
-1. Tıklayın **iletileri** düğme denetimine eklemek kullanılabilir Windows iletileri görüntülemek için.
+1. Denetime eklenecek Windows iletilerini göstermek için **iletiler** sekmesine tıklayın.
 
-1. Özellikler penceresinde başlık görene kadar ileti listesini aşağı kaydırın **Reflected**. Alternatif olarak, tıklayın **kategorileri** düğmesine tıklayın ve görmek için görüntüyü Daralt **Reflected** başlığı.
+1. İşleyicisini tanımlamak istediğiniz yansıtılan iletiyi seçin. Yansıtılan iletiler eşittir işareti (=) ile işaretlenir.
 
-1. Yansıtılan bir işleyici tanımlamak istediğiniz iletiyi seçin. Yansımış iletiler bir eşittir işareti (=) ile işaretlenir.
+1. İşleyicinin önerilen adını Add > \<*HandlerName*olarak göstermek için sınıf Sihirbazı ' nın sağ sütunundaki hücreye tıklayın. (Örneğin, **= WM_CTLCOLOR** ileti işleyicisi Add > \<**CTLCOLOR**) önerir.
 
-1. İşleyici önerilen adını görüntülemek için Özellikler penceresindeki sağ sütunda bir hücreyi tıklatın \<Ekle >*HandlerName*. (Örneğin, **WM_CTLCOLOR =** ileti işleyicisi önerir \<Ekle >**CtlColor**).
+1. Kabul etmek için önerilen ada tıklayın. İşleyici projenize eklenir.
 
-1. Kabul etmek için önerilen adına tıklayın. İşleyici, projenize eklenir.
-
-   Eklediğiniz ileti işleyici adlarının yansımış iletiler penceresinin sağ sütunda görüntülenir.
-
-9. Düzenleme ya da bir ileti işleyicisi silmek için 4-7 arası adımları yineleyin. Düzenleyin veya silin uygun göreve tıklayın işleyici adını içeren hücreye tıklayın.
+1. Bir ileti işleyicisini düzenlemek veya silmek için 4 ile 7 arasındaki adımları yineleyin. Düzenlemek veya silmek için işleyici adını içeren hücreye tıklayın ve uygun görevi tıklatın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [İletileri İşlevlere Eşleme](../../mfc/reference/mapping-messages-to-functions.md)<br/>
 [Kod Sihirbazlarıyla İşlevsellik Ekleme](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>
 [Sınıf ekleme](../../ide/adding-a-class-visual-cpp.md)<br/>
-[Üye işlevi ekleme](../../ide/adding-a-member-function-visual-cpp.md)<br/>
+[Üye Işlevi ekleme](../../ide/adding-a-member-function-visual-cpp.md)<br/>
 [Üye değişkeni ekleme](../../ide/adding-a-member-variable-visual-cpp.md)<br/>
-[Bir sanal işlevi geçersiz kılma](../../ide/overriding-a-virtual-function-visual-cpp.md)<br/>
-[MFC ileti işleyicisi](../../mfc/reference/adding-an-mfc-message-handler.md)<br/>
+[Sanal Işlevi geçersiz kılma](../../ide/overriding-a-virtual-function-visual-cpp.md)<br/>
+[MFC Ileti Işleyicisi](../../mfc/reference/adding-an-mfc-message-handler.md)<br/>
 [Sınıf yapısında gezinme](../../ide/navigate-code-cpp.md)

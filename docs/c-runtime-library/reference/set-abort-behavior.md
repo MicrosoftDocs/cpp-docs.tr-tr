@@ -1,6 +1,6 @@
 ---
 title: _set_abort_behavior
-ms.date: 1/02/2018
+ms.date: 01/02/2018
 apiname:
 - _set_abort_behavior
 apilocation:
@@ -23,19 +23,19 @@ helpviewer_keywords:
 - aborting programs
 - _set_abort_behavior function
 - set_abort_behavior function
-ms.openlocfilehash: 8b36a771a3694c6d01573d619990743c7ddc0f3e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: b72a485287684fc85f1e232e89774e07a5e3f42b
+ms.sourcegitcommit: effb516760c0f956c6308eeded48851accc96b92
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62356699"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70927485"
 ---
-# <a name="setabortbehavior"></a>_set_abort_behavior
+# <a name="_set_abort_behavior"></a>_set_abort_behavior
 
-Bir program anormal olarak sonlandırıldığında gerçekleştirilecek eylemi belirtir.
+Bir program anormal olarak sonlandırıldığı zaman gerçekleştirilecek eylemi belirtir.
 
 > [!NOTE]
-> Kullanmayın [iptal](abort.md) test veya hata ayıklama senaryoları dışında bir Microsoft Store uygulamasını kapatmak için işlevi. Bir Store uygulamasını kapatmak için programlama veya UI yollarına göre izin verilmez [Microsoft Store ilkeleri](/legal/windows/agreements/store-policies). Daha fazla bilgi için [UWP uygulama yaşam döngüsü](/windows/uwp/launch-resume/app-lifecycle).
+> Test veya hata ayıklama senaryoları dışında Microsoft Store uygulamasını kapatmak için [Abort](abort.md) işlevini kullanmayın. Bir mağaza uygulamasını kapatmak için programlı veya Kullanıcı arabirimi yollarına [Microsoft Store ilkelerine](/legal/windows/agreements/store-policies)göre izin verilmez. Daha fazla bilgi için bkz. [UWP uygulama yaşam döngüsü](/windows/uwp/launch-resume/app-lifecycle).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -48,11 +48,11 @@ unsigned int _set_abort_behavior(
 
 ### <a name="parameters"></a>Parametreler
 
-*bayrakları*<br/>
-Yeni değeri [iptal](abort.md) bayrakları.
+*larına*<br/>
+[Durdurma](abort.md) bayraklarının yeni değeri.
 
-*mask*<br/>
-İçin maske [iptal](abort.md) ayarlamak için bit bayrakları.
+*maskesi*<br/>
+Ayarlanacak [durdurma](abort.md) bayrakları bitlerinin maskesi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
@@ -60,13 +60,13 @@ Bayrakların eski değeri.
 
 ## <a name="remarks"></a>Açıklamalar
 
-İki [iptal](abort.md) bayraklar: **_WRITE_ABORT_MSG** ve **_CALL_REPORTFAULT**. **_WRITE_ABORT_MSG** bir program anormal olarak sonlandırıldığında yardımcı bir metin iletisinin yazdırılıp yazdırılmayacağını belirler. İletiyi bildiren uygulama çağırdı [iptal](abort.md) işlevi. İletiyi yazdırmak için varsayılan davranıştır. **_CALL_REPORTFAULT**, ayarla, Watson kilitlenme dökümünün oluşturulduğunu ve raporlandığını belirtir [iptal](abort.md) çağrılır. Varsayılan olarak kilitlenme bilgi dökümü raporlaması DEBUG olmayan yapılarda etkinleştirilir.
+İki [iptal](abort.md) bayrağı vardır: **_WRITE_ABORT_MSG** ve **_call_reportfault**. **_WRITE_ABORT_MSG** , bir program anormal olarak sonlandırıldığı zaman bir faydalı metin mesajının yazdırılıp yazdırılmadığını belirler. İleti, uygulamanın [Abort](abort.md) işlevini çağırdığını belirtir. Varsayılan davranış, iletiyi yazdırdır. **_Call_reportfault**, ayarlanırsa, [Iptal](abort.md) çağrıldığında bir Watson kilitlenme dökümünün oluşturulup bildirildiğini belirtir. Varsayılan olarak, kilitlenme bilgi döküm raporlaması hata ayıklama olmayan derlemelerde etkindir.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_set_abort_behavior**|\<stdlib.h >|
+|**_set_abort_behavior**|\<Stdlib. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

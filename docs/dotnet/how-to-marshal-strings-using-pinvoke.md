@@ -1,31 +1,35 @@
 ---
-title: 'Nasıl yapılır: PInvoke kullanarak dizeleri sıralama hazırlama'
+title: 'Nasıl yapılır: PInvoke kullanarak dizeleri sıralama'
 ms.custom: get-started-article
-ms.date: 11/04/2016
+ms.date: 09/09/2016
 helpviewer_keywords:
 - interop [C++], strings
 - marshaling [C++], strings
 - data marshaling [C++], strings
 - platform invoke [C++], strings
 ms.assetid: bcc75733-7337-4d9b-b1e9-b95a98256088
-ms.openlocfilehash: f316e33f1711ea0053fb68c0af7e89f90b793e05
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d3b39a4ce40de2a26ffba4f52ab1e39c94767089
+ms.sourcegitcommit: 3caf5261b3ea80d9cf14038c116ba981d655cd13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62404409"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70907560"
 ---
-# <a name="how-to-marshal-strings-using-pinvoke"></a>Nasıl yapılır: PInvoke kullanarak dizeleri sıralama hazırlama
+# <a name="how-to-marshal-strings-using-pinvoke"></a>Nasıl yapılır: PInvoke kullanarak dizeleri sıralama
 
-Bu konuda, C stili dizeler, CLR dizesi kullanılarak çağrılabilir kabul nasıl yerel işlevleri açıklanmaktadır. .NET Framework Platform çağırma desteğini kullanarak System::String yazın. Visual C++ programcıları (uygun olduğunda) C++ birlikte çalışabilirlik özellikleri kullanmaları önerilir, çünkü çok az derleme zamanı hata raporlama, tür açısından güvenli değildir ve uygulamak can sıkıcı olabilir, P/Invoke sağlar. Yönetilmeyen API'ın bir DLL olarak paketlenmesi ve kaynak kodu yok, P/Invoke tek seçenektir, ancak Aksi takdirde bkz [C++ Çalışabilirliği kullanma (örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md).
+Bu konu, .NET Framework platform çağırma desteği kullanılarak System:: String CLR dize türü kullanılarak C stili dizeleri kabul eden yerel işlevlerin nasıl çağrılacağını açıklar. Visual C++ programcýlarının (mümkün olduğunda) C++ , P/Invoke çok az derleme zamanı hata raporlama sağladığından, tür kullanımı güvenli olmadığından ve uygulanması sıkıcı olabileceğinden, birlikte çalışma özelliklerinin kullanılması önerilir. Yönetilmeyen API bir DLL olarak paketleniyorsa ve kaynak kodu kullanılabilir değilse, P/Invoke tek seçenektir, ancak başka bir şekilde [birlikte çalışabilirlik (örtük PInvoke) kullanma C++ ](../dotnet/using-cpp-interop-implicit-pinvoke.md)konusuna bakın.
 
-Yönetilen ve yönetilmeyen dizeleri farklı düzenlenir bellekte, bu nedenle dizelerden yönetilmeyen işlevlerle yönetilen gerektirir <xref:System.Runtime.InteropServices.MarshalAsAttribute> string veri hazırlama için gerekli dönüştürme mekanizmaları eklemek için derleyicisinin özniteliği düzgün ve güvenli bir şekilde.
+Yönetilen ve yönetilmeyen dizeler bellekte farklı şekilde düzenlenir, böylece yönetilen dizelerin yönetilmeyen işlevlere <xref:System.Runtime.InteropServices.MarshalAsAttribute> geçirilmesi, derleyicinin dize verilerini hazırlama için gereken dönüştürme mekanizmalarını eklemesini ister doğru ve güvenli.
 
-Yalnızca iç veri türlerini kullanan işlevler gibi ile <xref:System.Runtime.InteropServices.DllImportAttribute> yönetilen giriş noktaları C stili dizeler, işleyici olarak alıp bu giriş noktaları tanımlamak yerine dizgiler için yerel işlevler halinde, ancak--bildirmek için kullanılan <xref:System.String> türü Bunun yerine kullanılabilir. Bu, derleyicinin gerekli dönüştürme uygulayan kod eklemesini ister. Her işlev bağımsız değişkeni bir dize alır, yönetilmeyen bir işlevde <xref:System.Runtime.InteropServices.MarshalAsAttribute> öznitelik dize nesnesine yerel işlev C stili dize olarak sıralanması gerektiğini belirtmek için kullanılması gerekir.
+Yalnızca iç veri türleri kullanan işlevlerde olduğu gibi, <xref:System.Runtime.InteropServices.DllImportAttribute> yerel işlevlere yönetilen giriş noktalarını bildirmek için kullanılır, ancak--dizeleri iletmek için, bu giriş noktalarını C stili dizeler yerine tanımlamak yerine, <xref:System.String> türü için bir tanıtıcı Bunun yerine kullanılabilir. Bu, derleyicinin gerekli dönüştürmeyi gerçekleştiren kodu eklemesini ister. Bir dize alan yönetilmeyen bir işlevde her bir işlev bağımsız değişkeni için, <xref:System.Runtime.InteropServices.MarshalAsAttribute> dize nesnesinin yerel işleve C stili dize olarak sıralanması gerektiğini göstermek için özniteliği kullanılmalıdır.
+
+Sıralayıcı, yönetilmeyen işleve, yönetilen dizeyi sabitledi ve yönetilmeyen bir dizeye geçirilen yerel olarak ayrılmış bir dizeye kopyalayan bir gizli sarmalayıcı yordamının çağrısını sarmalanmış olarak sarmalar. Yönetilmeyen işlev döndürüldüğünde, sarmalayıcı kaynağı siler veya yığından ise sarmalayıcı kapsam dışına geçtiğinde geri kazanılır. Yönetilmeyen işlev bu bellekten sorumlu değildir. Yönetilmeyen kod yalnızca kendi CRT tarafından ayarlanan yığındaki belleği oluşturur ve siler, bu nedenle hazırlayıcısı ile farklı bir CRT sürümü kullanılarak hiçbir sorun yoktur.
+
+Yönetilmeyen işleviniz, dönüş değeri veya out parametresi olarak bir dize döndürürse, Sıralayıcı onu yeni bir yönetilen dizeye kopyalar ve ardından belleği serbest bırakır. Daha fazla bilgi için bkz. [varsayılan sıralama davranışı](/dotnet/framework/interop/default-marshaling-behavior) ve [Platform çağırma ile verileri sıralama](/dotnet/framework/interop/marshaling-data-with-platform-invoke).
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod, bir yönetilmeyen ve yönetilen bir modül oluşur. Yönetilmeyen bir ANSI C stili dize şeklinde char * kabul eden TakesAString adında bir işlevi tanımlayan bir DLL modülüdür. Yönetilen modül TakesAString işlevini alır, ancak bir karakter yerine yönetilen System.String olarak tanımlayan bir komut satırı uygulamasıdır\*. <xref:System.Runtime.InteropServices.MarshalAsAttribute> Özniteliğini, yönetilen dize TakesAString çağrıldığında nasıl sıralanması gerektiğini belirtmek için kullanılır.
+Aşağıdaki kod, yönetilmeyen ve yönetilen bir modülden oluşur. Yönetilmeyen modül, bir char * biçiminde C stili bir ANSI dizeyi kabul eden TakesAString adlı bir işlevi tanımlayan bir DLL 'dir. Yönetilen modül, TakesAString işlevini içeri aktaran, ancak bunu bir Char\*yerine yönetilen System. String olarak tanımlayan bir komut satırı uygulamasıdır. <xref:System.Runtime.InteropServices.MarshalAsAttribute> Özniteliği, TakesAString çağrıldığında yönetilen dizenin nasıl sıralanması gerektiğini belirtmek için kullanılır.
 
 ```
 // TraditionalDll2.cpp
@@ -73,9 +77,9 @@ int main() {
 }
 ```
 
-Bu teknik, yönetilmeyen yığındaki dizenin yönetilen kopyalama dizeye yerel işlev tarafından yapılan değişiklikler yansıtılmaz şekilde oluşturulması için dizenin bir kopyasını neden olur.
+Bu teknik, dizenin bir kopyasının yönetilmeyen yığında oluşturulmasına neden olur, bu nedenle dizedeki yerel işlev tarafından yapılan değişiklikler, dizenin yönetilen kopyasına yansıtılmayacaktır.
 
-Geleneksel aracılığıyla yönetilen koda hiçbir kısmı DLL kullanıma sunulduğunu unutmayın #include yönergesi. Aslında, ile içeri aktarılan işlevlere sahip sorunlar için DLL yalnızca çalışma zamanında erişilir `DllImport` derleme zamanında algılanmaz.
+Geleneksel #include yönergesi aracılığıyla, DLL 'nin hiçbir kısmının yönetilen koda sunulmadığını unutmayın. Aslında, dll 'ye yalnızca çalışma zamanında erişilir. bu nedenle, ile `DllImport` içeri aktarılan işlevlerle ilgili sorunlar derleme zamanında algılanmaz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -5,32 +5,32 @@ helpviewer_keywords:
 - extended combo boxes [MFC], notifications
 - notifications [MFC], extended combo box controls
 ms.assetid: 4e442758-d054-4746-bb1a-6ff84accb127
-ms.openlocfilehash: 1890267f26ef43fd1dbf8fdea28f02e3d882d475
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 044cef644f746f7cb70944805882bd8e2f2806b4
+ms.sourcegitcommit: 3caf5261b3ea80d9cf14038c116ba981d655cd13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62378199"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70908105"
 ---
 # <a name="processing-notification-messages-in-extended-combo-box-controls"></a>Genişletilmiş Birleşik Giriş Kutusu Denetimlerinde Bildirim İletilerini İşleme
 
-Genişletilmiş Birleşik giriş kutusu, denetimi kullanıcıların etkileşimli olarak (`CComboBoxEx`) üst pencereye bildirim iletilerini gönderen genellikle bir görünüm veya iletişim nesnesi. Yanıt bir şey yapmak istiyorsanız, bu iletileri işler. Örneğin, kullanıcı açılır listede etkinleştirir veya denetimin düzenleme kutusuna tıkladığında CBEN_BEGINEDIT bildirim gönderilir.
+Kullanıcılar Genişletilmiş Birleşik giriş kutusuyla etkileşim kurarken, denetim (),`CComboBoxEx`ana penceresine (genellikle bir görünüm veya iletişim nesnesi) bildirim iletileri gönderir. Yanıtta bir şey yapmak istiyorsanız bu iletileri işleyin. Örneğin, Kullanıcı açılır listeyi etkinleştirdiğinde veya denetimin düzenleme kutusunda tıkladığı zaman, CBEN_BEGINEDIT bildirimi gönderilir.
 
-Üst sınıf uygulamak istediğiniz bu iletileri için bildirim işleyicileri eklemek için Özellikler penceresini kullanın.
+Uygulamak istediğiniz iletilerin üst sınıfına bildirim işleyicileri eklemek için [sınıf Sihirbazı](reference/mfc-class-wizard.md) ' nı kullanın.
 
-Genişletilmiş Birleşik giriş kutusu denetimi tarafından gönderilen çeşitli bildirimler aşağıdaki listede açıklanmaktadır.
+Aşağıdaki listede, Genişletilmiş Birleşik giriş kutusu denetimi tarafından gönderilen çeşitli bildirimler açıklanmaktadır.
 
-- Kullanıcının açılan listesini etkinleştirir veya denetimin düzenleme kutusuna tıkladığında CBEN_BEGINEDIT gönderilir.
+- CBEN_BEGINEDIT, Kullanıcı açılır listeyi etkinleştirdiğinde veya denetimin düzenleme kutusunda tıkladığı zaman gönderilir.
 
-- Bir öğe silindiğinde CBEN_DELETEITEM gönderilir.
+- Bir öğe silindiğinde, CBEN_DELETEITEM gönderilir.
 
-- Kullanıcı denetimi düzenleme bölümünde görüntülenen öğe görüntüsü sürükleyerek başladığında CBEN_DRAGBEGIN gönderilir.
+- CBEN_DRAGBEGIN, Kullanıcı denetimin düzenleme bölümünde görüntülenmekte olan öğenin görüntüsünü sürüklemeye başladığında gönderilir.
 
-- Kullanıcı düzenleme kutusu içine bir işlemini sonlandırdığını veya bir öğe denetimin aşağı açılan listeden seçtiği CBEN_ENDEDIT gönderilir.
+- CBEN_ENDEDIT, Kullanıcı düzenleme kutusu içinde bir işlemi sonlandırmışsa veya denetimin açılan listesinden bir öğe seçtikten sonra gönderilir.
 
-- Bir geri çağırma öğesi hakkında bilgi görüntüler alınacak gönderilen CBEN_GETDISPINFO.
+- Geri çağırma öğesiyle ilgili görüntü bilgilerini almak için CBEN_GETDISPINFO gönderildi.
 
-- CBEN_INSERTITEM denetiminde yeni bir öğe eklendiğinde gönderilen.
+- CBEN_INSERTITEM, denetime yeni bir öğe yerleştirildiğinde gönderilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

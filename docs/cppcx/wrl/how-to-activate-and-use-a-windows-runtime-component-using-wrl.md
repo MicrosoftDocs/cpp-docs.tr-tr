@@ -3,12 +3,12 @@ title: 'Nasıl yapılır: WRL kullanarak Windows Çalışma Zamanı bileşenini 
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 54828f02-6af3-45d1-b965-d0104442f8d5
-ms.openlocfilehash: 9e15886e9045f15adb929678ba45023ce80fb084
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 59a031968933ab151dc97a8089aff629026f5ea5
+ms.sourcegitcommit: effb516760c0f956c6308eeded48851accc96b92
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69498403"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70926071"
 ---
 # <a name="how-to-activate-and-use-a-windows-runtime-component-using-wrl"></a>Nasıl yapılır: WRL kullanarak Windows Çalışma Zamanı bileşenini etkinleştirme ve kullanma
 
@@ -48,7 +48,7 @@ Aşağıdaki adımlar, bir Windows çalışma zamanı `Windows::Foundation::IUri
 
    Windows Çalışma Zamanı, türleri tanımlamak için tam nitelikli adlar kullanır. `RuntimeClass_Windows_Foundation_Uri` Parametresi, Windows çalışma zamanı tarafından sunulan ve gerekli çalışma zamanı sınıf adını içeren bir dizedir.
 
-4. URI`"http://www.microsoft.com"`'yi temsil eden bir [Microsoft:: WRL:: Wrapper:: HString](hstring-class.md) değişkenini başlatın.
+4. URI`"https://www.microsoft.com"`'yi temsil eden bir [Microsoft:: WRL:: Wrapper:: HString](hstring-class.md) değişkenini başlatın.
 
    [!code-cpp[wrl-consume-component#6](../codesnippet/CPP/how-to-activate-and-use-a-windows-runtime-component-using-wrl_4.cpp)]
 

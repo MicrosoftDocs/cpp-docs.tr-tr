@@ -1,27 +1,27 @@
 ---
 title: Derleyici Uyarısı (düzey 1) C4319
-ms.date: 1/18/2018
+ms.date: 01/18/2018
 f1_keywords:
 - C4319
 helpviewer_keywords:
 - C4319
 ms.assetid: 1fac8048-9bd6-4552-a21c-192c67772bb9
-ms.openlocfilehash: 20b268bacd6e7e259e9b4fa1c9e98fa6fd353718
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2d5ae8fcf5a527031c3a974b227f713675f31ffa
+ms.sourcegitcommit: effb516760c0f956c6308eeded48851accc96b92
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62385478"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70926109"
 ---
 # <a name="compiler-warning-level-1-c4319"></a>Derleyici Uyarısı (düzey 1) C4319
 
-> ' ~': sıfır genişletme '*type1*'to'*type2*' daha büyük boyutlu
+> ' ~ ': '*Type1*' değerini daha büyük boyuttaki '*type2*' öğesine genişletme
 
-Sonucu **~** (bit düzeyinde tamamlayıcı) işleci, işaretsiz ve ardından sıfır genişletilmiş daha büyük bir türe dönüştürüldüğünde.
+**~** (Bit düzeyinde tamamlama) işlecinin sonucu işaretsiz olur ve daha büyük bir türe dönüştürüldüğünde sıfır genişletilir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnekte, `~(a - 1)` 32 bitlik bir işaretsiz uzun ifade olarak değerlendirilir ve sonra da sıfır uzantısı tarafından 64 bit dönüştürülür. Bu işlem beklenmeyen sonuçlara neden olabilir.
+Aşağıdaki örnekte, `~(a - 1)` 32 bitlik bir işaretsiz Long ifadesi olarak değerlendirilir ve ardından sıfır uzantısına göre 64 bite dönüştürülür. Bu beklenmeyen işlem sonuçlarına yol açabilir.
 
 ```cpp
 // C4319.cpp

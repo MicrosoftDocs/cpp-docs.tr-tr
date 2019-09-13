@@ -1,14 +1,14 @@
 ---
 title: Bağlayıcı Özellik Sayfaları
-ms.date: 7/24/2019
+ms.date: 07/24/2019
 ms.topic: article
 ms.assetid: 7e7671e5-a35a-4e67-9bdb-661d75c4d11e
-ms.openlocfilehash: 17880d50ae012b640cb83f3766883ab2b1bcbe73
-ms.sourcegitcommit: 7b039b5f32f6c59be6c6bb1cffafd69c3bfadd35
+ms.openlocfilehash: 55fcefd826ec6ecb153adad495e21ce97aa432f1
+ms.sourcegitcommit: effb516760c0f956c6308eeded48851accc96b92
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68537592"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70927711"
 ---
 # <a name="linker-property-pages"></a>Bağlayıcı Özellik Sayfaları
 
@@ -40,7 +40,7 @@ Bağlayıcı Ilerleme Iletilerini yazdırır
 
 ### <a name="enable-incremental-linking"></a>Artımlı bağlamayı etkinleştir
 
-Artımlı bağlamayı mümkün. ([](incremental-link-incrementally.md)/INCREINCRE/INCREINCRE: NO)
+Artımlı bağlamayı mümkün. ([/INCREINCRE/INCREINCRE:](incremental-link-incrementally.md)NO)
 
 ### <a name="suppress-startup-banner"></a>Başlangıç başlığını gösterme
 
@@ -48,7 +48,7 @@ Artımlı bağlamayı mümkün. ([](incremental-link-incrementally.md)/INCREINCR
 
 ### <a name="ignore-import-library"></a>Içeri aktarma kitaplığını yoksay
 
-Bu özellik, bağlayıcının bu derlemeden oluşturulan herhangi bir. lib çıkışını herhangi bir bağımlı projeye bağmayacağını söyler. Bu, proje sisteminin oluşturulduğunda. lib dosyası üretmeyen. dll dosyalarını işlemesini sağlar. Bir proje DLL üreten başka bir projeye bağımlıysa, proje sistemi otomatik olarak bu alt proje tarafından oluşturulan. lib dosyasını bağlar. Bu, COM DLL 'Leri veya yalnızca kaynak dll 'Leri üreten projeler tarafından gerekmeyebilir. Bu dll 'Lerde anlamlı dışarı aktarmalar yok. Bir DLL 'nin dışarı aktarma işlemi yoksa, bağlayıcı bir. lib dosyası oluşturmaz. Diskte dışa aktarma. lib dosyası yoksa ve proje sistemi bağlayıcıya bu (eksik) DLL ile bağlantı vermesini söyler, bağlantı başarısız olur. Bu sorunu çözmek için **Içeri aktarma kitaplığını yoksay** özelliğini kullanın. **Evet**olarak ayarlandığında, proje sistemi bu. lib dosyasının varlığını veya yokluğunu yoksayar ve bu projeye bağımlı olan projenin varolmayan. lib dosyasıyla bağlantı kurma izni vermesine neden olur.
+Bu özellik, bağlayıcının bu derlemeden oluşturulan herhangi bir. lib çıkışını herhangi bir bağımlı projeye bağmayacağını söyler. Proje sisteminin, inşa edildiğinde. lib dosyası üretmeyen. dll dosyalarını işlemesini sağlar. Bir proje DLL üreten başka bir projeye bağımlıysa, proje sistemi otomatik olarak bu alt proje tarafından oluşturulan. lib dosyasını bağlar. Bu dll 'Ler anlamlı dışarı aktarmalar olmadığından, bu özellik COM DLL 'Leri veya yalnızca kaynak dll 'Leri üreten projelerde gereksiz olabilir. Bir DLL 'nin dışarı aktarmaları yoksa, bağlayıcı bir. lib dosyası oluşturmaz. Export. lib dosyası yoksa ve proje sistemi bağlayıcıya eksik DLL ile bağlantı oluşturmasını söyler, bağlantı başarısız olur. Bu sorunu çözmek için **Içeri aktarma kitaplığını yoksay** özelliğini kullanın. **Evet**olarak ayarlandığında, proje sistemi. lib dosyasının varlığını veya yokluğunu yok sayar ve bu projeye bağımlı tüm projenin varolmayan. lib dosyasıyla bağlantı kurma izni vermesine neden olur.
 
 Bu özelliğe programlı bir şekilde erişmek için <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.IgnoreImportLibrary%2A>bkz.
 
@@ -60,7 +60,7 @@ Bu özelliğe programlı bir şekilde erişmek için <xref:Microsoft.VisualStudi
 
 ### <a name="per-user-redirection"></a>Kullanıcı başına yeniden yönlendirme
 
-Visual Studio 'da kayıt genellikle HKEY_CLASSES_ROOT (HKCR) içinde yapılır. Windows Vista ve sonraki işletim sistemleriyle, HKCR 'ye erişmek için Visual Studio 'Yu Yükseltilmiş modda çalıştırmalısınız. Geliştiriciler her zaman Yükseltilmiş modda çalıştırmak istemiyor, ancak yine de kayıt ile çalışmak zorunda değildir. Kullanıcı başına yeniden yönlendirme, bu modda çalıştırmak zorunda kalmadan kaydetmenize izin verir.
+Visual Studio 'da kayıt genellikle HKEY_CLASSES_ROOT (HKCR) içinde yapılır. Windows Vista ve sonraki işletim sistemleriyle, HKCR 'ye erişmek için Visual Studio 'Yu Yükseltilmiş modda çalıştırmalısınız. Geliştiriciler her zaman Yükseltilmiş modda çalıştırmak istemiyor, ancak yine de kayıt ile çalışmak zorunda değildir. Kullanıcı başına yeniden yönlendirme, yükseltilmiş modda çalıştırmak zorunda kalmadan kaydetmenize izin verir.
 
 Kullanıcı başına yeniden yönlendirme, HKCR 'ye yapılan yazmaları HKEY\_Current\_kullanıcısına (HKCU) yeniden yönlendirilecek şekilde zorlar. Kullanıcı başına yeniden yönlendirme kapatılmışsa, program HKCR 'ye yazmaya çalıştığında [proje derleme hatası PRJ0050](../../error-messages/tool-errors/project-build-error-prj0050.md) neden olabilir.
 
@@ -70,13 +70,13 @@ Kullanıcının ortam kitaplık yolunu geçersiz kılmasına izin verir. ([/LIBP
 
 ### <a name="link-library-dependencies"></a>Bağlantı kitaplığı bağımlılıkları
 
-Bağımlı projeler tarafından üretilen. lib dosyalarının bağlantısının yapılıp yapılmayacağını belirtir. Genellikle,. lib dosyalarında bağlamak istersiniz, ancak bu durum belirli dll 'Ler için bu olmayabilir.
+Bağımlı projeler tarafından üretilen. lib dosyalarının bağlantısının yapılıp yapılmayacağını belirtir. Genellikle,. lib dosyalarında bağlamak istersiniz, ancak belirli dll 'Ler için bu durum olmayabilir.
 
-Ayrıca, dosya adı ve göreli yol (örneğin, ") sağlayarak bir. obj dosyası da belirtebilirsiniz. \\. \Mylibproject\myobjfile.exe ". . Obj dosyasının kaynak kodu önceden derlenmiş bir üst bilgi #includes (örneğin, pch. h), pch. obj dosyası MyObjFile. obj ile aynı klasörde bulunur ve ayrıca pch. obj ' i ek bir bağımlılık olarak eklemeniz gerekir.
+Ayrıca, dosya adı ve göreli yol (örneğin, ") sağlayarak bir. obj dosyası da belirtebilirsiniz. \\. \Mylibproject\myobjfile.exe ". . Obj dosyasının kaynak kodu önceden derlenmiş bir üst bilgi #includes (örneğin, pch. h), pch. obj dosyası MyObjFile. obj ile aynı klasörde bulunur. Ayrıca, pch. obj ' i ek bir bağımlılık olarak eklemeniz gerekir.
 
 ### <a name="use-library-dependency-inputs"></a>Kitaplık Bağımlılığı Girişlerini Kullan
 
-Proje bağımlılıklarının kitaplık çıkışları bağlanırken, kitaplık dosyasının kendisi yerine kütüphaneian aracının girişlerinin kullanılıp kullanılmayacağını belirtir. Büyük bir projede, bağımlı bir proje. lib dosyası üretdiğinde, artımlı bağlama devre dışıdır. . Lib dosyaları üreten çok sayıda bağımlı proje varsa, uygulamayı oluşturmak uzun sürebilir. Bu özellik **Evet**olarak ayarlandığında, proje sistemi bağımlı projeler tarafından üretilen. LIBS için. obj dosyalarında bağlantı kurarak artımlı bağlamayı etkinleştirir.
+Proje bağımlılıklarının kitaplık çıkışları arasında bağlantı sırasında, kitaplık dosyasının kendisi yerine kütüphaneian aracında girişlerin kullanılıp kullanılmayacağını belirtir. Büyük bir projede, bağımlı bir proje. lib dosyası üretdiğinde, artımlı bağlama devre dışıdır. . Lib dosyaları üreten çok sayıda bağımlı proje varsa, uygulamayı oluşturmak uzun sürebilir. Bu özellik **Evet**olarak ayarlandığında, proje sistemi bağımlı projeler tarafından üretilen. LIBS için. obj dosyalarında, artımlı bağlamayı etkinleştirerek bağlantı sağlar.
 
 **Genel** bağlayıcı özellik sayfasına erişme hakkında daha fazla bilgi için bkz. [Visual Studio C++ 'Da derleyici ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
@@ -84,7 +84,7 @@ Proje bağımlılıklarının kitaplık çıkışları bağlanırken, kitaplık 
 
 Bağlayıcının bağlantının yüzdesinin tamamlandığını gösteren bir ilerleme göstergesi görüntüleyip görüntülemeyeceği meyeceğini belirtir. Varsayılan değer bu durum bilgilerini göstermemelidir. ([/LTCG](ltcg-link-time-code-generation.md): DURUM | LTCG: NOSTATUS)
 
-### <a name="prevent-dll-binding"></a>Dll bağlamasını engelle
+### <a name="prevent-dll-binding"></a>DLL bağlamasını engelle
 
 [/Allowbind](allowbind-prevent-dll-binding.md): No, dll 'nin üst bilgisinde, görüntünün bağlı olmasına izin verilmediğini belirten bir bit belirler. Dijital olarak imzalanmışsa DLL 'nin bağlanmasını istemeyebilirsiniz (bağlama imzayı geçersiz kılar).
 
@@ -94,12 +94,12 @@ Bağlayıcının bağlantının yüzdesinin tamamlandığını gösteren bir ile
 
 ### <a name="force-file-output"></a>Dosya çıkışını zorla
 
-[/Force](force-force-file-output.md) seçeneği bağlayıcıya bir. exe dosyası ya da bir sembol başvuruluyorsa ya da tanımlanmasa bile bir. exe dosyası veya dll oluşturmasını söyler. Geçersiz. exe dosyası oluşturabilir.
+[/Force](force-force-file-output.md) seçeneği bağlayıcıya bir. exe dosyası veya dll oluşturulmasını söyler, ancak tanımlanmamış ya da tanımlanmış çarpma olur. Geçersiz. exe dosyası oluşturabilir.
 
 **Yapabileceği**
 
 - **Enabled** -/Force bağımsız değişken olmadan hem birden çok hem de çözülmemiş anlamına gelir.
-- **Yalnızca tanımlanmış sembolü çarpın** -bir çıkış dosyası oluşturmak için/Force: MULTIPLE, bağlantının bir sembol için birden fazla tanım bulup bulmayacağını belirtir.
+- **Yalnızca tanımlanmış sembolü çarpın** -bağlantı, bir sembol için birden fazla tanım bulsa bile, çıkış dosyası oluşturmak için/Force: MULTIPLE kullanın.
 - **Yalnızca tanımsız sembol** -bağlantının tanımsız bir sembol bulmadığını bir çıkış dosyası oluşturmak için/Force: çözümlenmemiş kullanın. /FORCE: giriş noktası simgesi çözülmedi ise ÇÖZÜMLENMEMIŞ yok sayılır.
 
 ### <a name="create-hot-patchable-image"></a>Etkin bir Patchımage oluştur
@@ -129,7 +129,7 @@ Bağlantı komut satırına eklenecek ek öğeleri belirtir, örneğin *Kernel32
 
 ### <a name="ignore-specific-default-libraries"></a>Belirli varsayılan kitaplıkları Yoksay
 
-Yoksayılacak bir veya daha fazla varsayılan kitaplık adını belirtir; birden çok kitaplığı noktalı virgülle ayırın. (/NODEFAULTLıB: [ad, ad,...])
+Yoksayılacak bir veya daha fazla varsayılan kitaplık adını belirtir. Birden çok kitaplığı noktalı virgülle ayırın. (/NODEFAULTLıB: [ad, ad,...])
 
 ### <a name="module-definition-file"></a>Modül tanım dosyası
 
@@ -276,11 +276,11 @@ Fiziksel bellekte toplam yığın ayırma boyutunu belirtir. Varsayılan değer 
 
 ### <a name="swap-run-from-cd"></a>CD 'Den takas Çalıştır
 
-[/SWAPRUN](swaprun-load-linker-output-to-swap-file.md) seçeneği işletim sistemine ilk olarak bağlayıcı çıkışını bir takas dosyasına kopyalamasını söyler ve sonra görüntüyü oradan çalıştırır. Bu bir Windows NT 4,0 (ve üzeri) özelliğidir. **CD** belirtildiğinde, işletim sistemi çıkarılabilir bir diskteki görüntüyü bir sayfa dosyasına kopyalar ve ardından yükler.
+[/SWAPRUN](swaprun-load-linker-output-to-swap-file.md) seçeneği işletim sistemine ilk olarak bağlayıcı çıkışını bir takas dosyasına kopyalamasını söyler ve sonra görüntüyü oradan çalıştırır. Bu seçenek bir Windows NT 4,0 (ve üzeri) özelliğidir. **CD** belirtildiğinde, işletim sistemi çıkarılabilir bir diskteki görüntüyü bir sayfa dosyasına kopyalar ve ardından yükler.
 
 ### <a name="swap-run-from-network"></a>Ağdan takas çalıştırması
 
-[/SWAPRUN](swaprun-load-linker-output-to-swap-file.md) seçeneği işletim sistemine ilk olarak bağlayıcı çıkışını bir takas dosyasına kopyalamasını söyler ve sonra görüntüyü oradan çalıştırır. Bu bir Windows NT 4,0 (ve üzeri) özelliğidir. **Net** belirtilirse, işletim sistemi ilk olarak ağdan ikili görüntüyü bir takas dosyasına kopyalar ve buradan yükler. Bu seçenek, ağ üzerinden uygulama çalıştırmak için yararlıdır.
+[/SWAPRUN](swaprun-load-linker-output-to-swap-file.md) seçeneği işletim sistemine ilk olarak bağlayıcı çıkışını bir takas dosyasına kopyalamasını söyler ve sonra görüntüyü oradan çalıştırır. Bu seçenek bir Windows NT 4,0 (ve üzeri) özelliğidir. **Net** belirtilirse, işletim sistemi ilk olarak ağdan ikili görüntüyü bir takas dosyasına kopyalar ve buradan yükler. Bu seçenek, ağ üzerinden uygulama çalıştırmak için yararlıdır.
 
 ### <a name="driver"></a>Sürücü
 
@@ -297,11 +297,11 @@ Windows NT Çekirdek modu sürücüsü oluşturmak için [/Driver](driver-window
 
 ### <a name="references"></a>Referanslar
 
-[/Opt](opt-optimizations.md): ref hiçbir şekilde başvurulmayan işlevleri ve/veya verileri ortadan kaldırır;/OPT: NOREF hiçbir şekilde başvurulmayan işlevleri ve/veya verileri tutar. 
+[/Opt](opt-optimizations.md): ref hiçbir şekilde başvurulmayan işlevleri ve/veya verileri ortadan kaldırır; ancak hiçbir şekilde başvurulmayan işlevleri ve/veya verileri tutar.
 
 ### <a name="enable-comdat-folding"></a>COMDAT Katlamasını Etkinleştir
 
-Aynı COMDAT katlamayı\[gerçekleştirmek için [/opt](opt-optimizations.md): ICF = yineleme] kullanın. 
+Aynı COMDAT katlamayı\[gerçekleştirmek için [/opt](opt-optimizations.md): ICF = yineleme] kullanın.
 
 ### <a name="function-order"></a>İşlev sırası
 

@@ -1,18 +1,18 @@
 ---
 title: MFC Kavramları
-ms.date: 1/09/2018
+ms.date: 01/09/2018
 f1_keywords:
 - Concepts
-ms.openlocfilehash: 8d021350125acda52bb4ecf3919282cb7bbe52b1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5617051dc700bb1dd594a13627c9e3d01ef9caa9
+ms.sourcegitcommit: effb516760c0f956c6308eeded48851accc96b92
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62239031"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70927913"
 ---
 # <a name="mfc-concepts"></a>MFC Kavramları
 
-Bu bölüm size yardımcı olacak kavramsal ve görev tabanlı konular sunar Microsoft Foundation Class (MFC) Library kullanarak programlama.
+Bu bölümde, Microsoft Foundation Class (MFC) kitaplığı 'nı kullanarak programlama yapmanıza yardımcı olacak kavramsal ve görev tabanlı konular sunulmaktadır.
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
@@ -20,51 +20,51 @@ Bu bölüm size yardımcı olacak kavramsal ve görev tabanlı konular sunar Mic
 MFC kitaplığının teknik ayrıntılarını açıklar.
 
 [CObject Kullanma](../mfc/using-cobject.md)<br/>
-Kullanımına ilişkin bağlantılar sağlar `CObject`, MFC'deki çoğu sınıf için taban sınıf.
+MFC 'deki çoğu sınıf `CObject`için temel sınıf olan öğesini kullanarak bağlantı sağlar.
 
 [Koleksiyonlar](../mfc/collections.md)<br/>
-Oluşturulan ve C++ şablonlarından oluşturulan olmayan koleksiyon sınıflarını açıklar.
+Uygulamasından oluşturulan ve C++ şablonlardan oluşturulmamış koleksiyon sınıflarını açıklar.
 
 [Tarih ve Saat](../atl-mfc-shared/date-and-time.md)<br/>
-MFC ile tarih ve saat kullanımını açıklayan konulara bağlantılar sağlar.
+MFC ile tarih ve saat kullanarak tartışan konuların bağlantılarını sağlar.
 
 [Dosyalar](../mfc/files-in-mfc.md)<br/>
-Anlatılmaktadır `CFile` ve nasıl işleneceğini MFC'deki dosyalar.
+Ve `CFile` MFC 'de dosyaların nasıl işleneceğini açıklar.
 
-[Bellek Yönetimi (MFC)](../mfc/memory-management.md)<br/>
-Bellek yönetimiyle ilgili genel amaçlı hizmetlerinden yararlanan açıklar.
+[Bellek yönetimi (MFC)](../mfc/memory-management.md)<br/>
+Bellek yönetimiyle ilgili genel amaçlı hizmetlerden nasıl yararlanılacağını açıklar.
 
 [İleti İşleme ve Eşleme](../mfc/message-handling-and-mapping.md)<br/>
-İletiler ve komutlar MFC çerçevesinde nasıl işlendiğini ve bunların işleyici işlevlerine bağlanma açıklanır.
+İleti ve komutların MFC çerçevesi tarafından nasıl işlendiğini ve bunların işleyici işlevlerine nasıl bağlanacağını açıklar.
 
 [Serileştirme](../mfc/serialization-in-mfc.md)<br/>
-Nesneler arasında devam etmesine izin vermek üzere sağlanan serileştirme mekanizmalarını programınızın çalıştırmaları açıklar.
+Nesneleri programınızın çalıştırmaları arasında kalıcı hale getirmek için sunulan serileştirme mekanizmasını açıklar.
 
 ## <a name="related-sections"></a>İlgili Bölümler
 
-[Özel durum işleme (MFC)](../mfc/exception-handling-in-mfc.md)<br/>
-MFC'de özel durum işleme mekanizmalarını açıklar.
+[Özel durum Işleme (MFC)](../mfc/exception-handling-in-mfc.md)<br/>
+MFC 'de kullanılabilen özel durum işleme mekanizmalarını açıklar.
 
 [MFC Internet Programlama Temelleri](../mfc/mfc-internet-programming-basics.md)<br/>
-Internet programlamayı destekleyen MFC sınıflarını anlatır.
+Internet programlamayı destekleyen MFC sınıflarını açıklar.
 
 [MFC Internet Programlama Görevleri](../mfc/mfc-internet-programming-tasks.md)<br/>
-Internet desteğini uygulamalarınızı nasıl ekleyeceğinizi açıklar.
+Uygulamalarınıza Internet desteğinin nasıl ekleneceğini açıklar.
 
 [Unicode ve Çok Baytlı Karakter Kümesi (MBCS) Desteği](../atl-mfc-shared/unicode-and-multibyte-character-set-mbcs-support.md)<br/>
-MFC ve ATL desteği Unicode ve çok baytlı karakter kümesi için nasıl kullanılacağını açıklar.
+Unicode ve çok baytlı karakter kümeleri için MFC ve ATL desteğinin nasıl kullanılacağını açıklar.
 
 [MFC COM](../mfc/mfc-com.md)<br/>
-Etkin Şablon kitaplığı (ATL), çoğu tasarlanmış olmasına rağmen COM'u desteklemek üzere tasarlanmıştır, MFC kümesini anlatır COM programlama için.
+Etkin Şablon kitaplığı (ATL) çoğunluğu COM programlama için tasarlanırken, COM 'u desteklemek için tasarlanan MFC 'nin bir alt kümesini açıklar.
 
 [C++ ve MCF ile Çoklu İş Parçacığı Kullanımı](../parallel/multithreading-with-cpp-and-mfc.md)<br/>
-İşlemler ve iş parçacıklarının ne olduğunu açıklar ve MFC yaklaşımını açıklar çoklu.
+İşlemlerin ve iş parçacıklarının ne olduğunu ve çoklu iş parçacığı için MFC yaklaşımını açıklar.
 
 [MFC'de Windows Yuvaları](../mfc/windows-sockets.md)<br/>
-Windows Sockets MFC uygulamasını kapsar.
+Windows Sockets MFC uygulamasını ele alır.
 
 [MFC başvurusu](../mfc/mfc-desktop-applications.md)<br/>
-Windows API için yazılan uygulamanın çerçevesi olan bir uygulama çerçevesinin sınıf kümesi olan MFC Kitaplığı için başvuru materyalleri sağlar.
+Windows API 'si için yazılmış bir uygulamanın çerçevesi olan bir uygulama çerçevesini oluşturan bir sınıf kümesi olan MFC kitaplığı için başvuru malzemeleri sağlar.
 
 [MFC örnekleri](../overview/visual-cpp-samples.md)<br/>
-MFC'nin Masaüstü uygulamaları, DLL'leri, veritabanı uygulamaları, denetimler, Web uygulamaları ve daha fazla nasıl kullanılacağını gösteren örneklere bağlantılar sağlar.
+MFC 'nin masaüstü uygulamalarında, dll 'Lerde, veritabanı uygulamalarında, denetimlerde, Web uygulamalarında ve daha birçok konuda nasıl kullanılacağını gösteren örneklere bağlantılar sağlar.

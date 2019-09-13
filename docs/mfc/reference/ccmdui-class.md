@@ -1,6 +1,6 @@
 ---
-title: Ccmduı sınıfı
-ms.date: 11/04/2016
+title: CCmdUI sınıfı
+ms.date: 09/06/2019
 f1_keywords:
 - CCmdUI
 - AFXWIN/CCmdUI
@@ -26,16 +26,16 @@ helpviewer_keywords:
 - CCmdUI [MFC], m_pOther
 - CCmdUI [MFC], m_pSubMenu
 ms.assetid: 04eaaaf5-f510-48ab-b425-94665ba24766
-ms.openlocfilehash: c1d44638779f9b5caf052106ac172110d309b69f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 42aec2937cd81ebbb50482321b8deae001723d3a
+ms.sourcegitcommit: 3caf5261b3ea80d9cf14038c116ba981d655cd13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62206391"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70907835"
 ---
-# <a name="ccmdui-class"></a>Ccmduı sınıfı
+# <a name="ccmdui-class"></a>CCmdUI sınıfı
 
-Yalnızca kullanılan bir `ON_UPDATE_COMMAND_UI` işleyicisinde bir `CCmdTarget`-türetilmiş sınıf.
+Yalnızca türetilmiş sınıftaki bir `ON_UPDATE_COMMAND_UI` işleyici `CCmdTarget`içinde kullanılır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -49,43 +49,43 @@ class CCmdUI
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CCmdUI::ContinueRouting](#continuerouting)|Aşağı zinciri işleyicileri geçerli ileti yönlendirme devam etmek için komut yönlendirme mekanizması söyler.|
-|[CCmdUI::Enable](#enable)|Sağlar veya bu komut için kullanıcı arabirimi öğesi devre dışı bırakır.|
-|[CCmdUI::SetCheck](#setcheck)|Bu komut için kullanıcı arabirimi öğesi onay durumunu ayarlar.|
-|[CCmdUI::SetRadio](#setradio)|Gibi `SetCheck` üye işlevi, ancak radyo grupları üzerinde çalışır.|
-|[CCmdUI::SetText](#settext)|Bu komut için kullanıcı arabirimi öğesi için metin ayarlar.|
+|[CCmdUI:: Devamsallama](#continuerouting)|Komut yönlendirme mekanizmasına, geçerli iletiyi işleyiciler zincirinin altına yönlendirmeye devam etmeyi söyler.|
+|[CCmdUI:: Enable](#enable)|Bu komut için Kullanıcı arabirimi öğesini etkinleştirilir veya devre dışı bırakır.|
+|[CCmdUI:: SetCheck](#setcheck)|Bu komut için Kullanıcı arabirimi öğesinin denetim durumunu ayarlar.|
+|[CCmdUI:: SetRadio](#setradio)|`SetCheck` Üye işlevi gibi, ancak radyo grupları üzerinde çalışır.|
+|[CCmdUI:: SetText](#settext)|Bu komut için Kullanıcı arabirimi öğesi metnini ayarlar.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CCmdUI::m_nID](#m_nid)|Kullanıcı arabirimi nesnesinin kimliği.|
-|[CCmdUI::m_nIndex](#m_nindex)|Kullanıcı arabirimi nesnesi dizini.|
-|[CCmdUI::m_pMenu](#m_pmenu)|Tarafından temsil edilen menü işaret `CCmdUI` nesne.|
-|[CCmdUI::m_pOther](#m_pother)|Bildirim gönderilen pencere nesnesi işaret eder.|
-|[CCmdUI::m_pSubMenu](#m_psubmenu)|Tarafından temsil edilen Kapsanan alt menüsünü işaret `CCmdUI` nesne.|
+|[CCmdUI:: m_nID](#m_nid)|Kullanıcı arabirimi nesnesinin KIMLIĞI.|
+|[CCmdUI:: m_nIndex](#m_nindex)|Kullanıcı arabirimi nesnesinin dizini.|
+|[CCmdUI:: m_pMenu](#m_pmenu)|`CCmdUI` Nesnenin temsil ettiği menüyü işaret eder.|
+|[CCmdUI:: m_pOther](#m_pother)|Bildirimi gönderen pencere nesnesine işaret eder.|
+|[CCmdUI:: m_pSubMenu](#m_psubmenu)|`CCmdUI` Nesnenin temsil ettiği içerilen alt menüye işaret eder.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CCmdUI` bir temel sınıfa sahip değil.
+`CCmdUI`taban sınıfına sahip değildir.
 
-Olduğunda, uygulamanızın bir kullanıcı, her, etkin olarak görüntülenmesi gerekip gerekmediğini öğrenmek için menü öğesi gereksinimlerini veya devre dışı bir menüyü çeker. Menü komut hedefinin on_update_command_uı işleyici uygulayarak bu bilgileri sağlar. Her komut kullanıcı arabirimi nesneleri, uygulamanızdaki bir ileti eşleme girişi ve işlev prototipi her işleyicisi oluşturmak için Özellikler penceresini kullanın.
+Uygulamanızın bir kullanıcısı bir menü aldığında, her menü öğesinin etkin veya devre dışı olarak görüntülenmesi gerekip gerekmediğini bilmeleri gerekir. Bir menü komutunun hedefi, bir ON_UPDATE_COMMAND_UI işleyicisi uygulayarak bu bilgileri sağlar. Uygulamanızdaki her bir komut Kullanıcı arabirimi nesnesi için, her işleyici için bir ileti eşleme girişi ve işlev prototipi oluşturmak üzere [sınıf Sihirbazı](mfc-class-wizard.md) 'Nı veya **özellikler** penceresini ( **sınıf görünümü**) kullanın.
 
-Menüyü çekildiğinde framework arar ve her on_update_command_uı işleyici çağırır, her bir işleyici çağırır `CCmdUI` üye işlevleri gibi `Enable` ve `Check`, ve framework uygun şekilde her bir menü öğesi görüntüler.
+Menü çekileklendiğinde, çerçeve her bir ON_UPDATE_COMMAND_UI işleyicisini arar ve çağırır, her işleyici `CCmdUI` `Enable` ve `Check`gibi üye işlevlerini çağırır ve ardından, her bir menü öğesini uygun şekilde görüntüler.
 
-Bir menü öğesi bir denetim çubuğu düğme ya da diğer komut kullanıcı arabirimi nesnesi içindeki kod değişikliği yapmadan değiştirilebilir `ON_UPDATE_COMMAND_UI` işleyici.
+Bir menü öğesi, `ON_UPDATE_COMMAND_UI` işleyici içindeki kodu değiştirmeden bir denetim çubuğu düğmesi veya diğer komut Kullanıcı arabirimi nesnesi ile değiştirilebilir.
 
-Aşağıdaki tabloda özetlenmiştir etkisi `CCmdUI`kullanıcının olmayan üye işlevleri çeşitli komutu kullanıcı arabirimi öğeleri.
+Aşağıdaki tabloda, efektin `CCmdUI`üye işlevlerinin çeşitli komut Kullanıcı Arabirimi öğelerine sahip olduğu özetlenmektedir.
 
 |Kullanıcı arabirimi öğesi|Etkinleştir|SetCheck|SetRadio|SetText|
 |--------------------------|------------|--------------|--------------|-------------|
-|Menü öğesi|Etkinleştirir veya devre dışı bırakır|Denetler veya temizler|Bir nokta kullanarak denetler|Metin ayarlar öğesi|
-|Araç çubuğu düğmesi|Etkinleştirir veya devre dışı bırakır|Seçer, seçili olanları kaldırdığında, veya belirsiz|Aynı `SetCheck`|(Uygulanamaz)|
-|Durum çubuğu bölmesi|Görünür veya gizli metni|Ayarlar açılır ya da normal kenarlık|Aynı `SetCheck`|Ayarlar bölmesinde metin|
-|Normal bir düğme `CDialogBar`|Etkinleştirir veya devre dışı bırakır|Denetler veya onay kutusunu temizler|Aynı `SetCheck`|Metin Ayarlar düğmesi|
-|Normal denetiminde `CDialogBar`|Etkinleştirir veya devre dışı bırakır|(Uygulanamaz)|(Uygulanamaz)|Pencere metni ayarlar|
+|Menü öğesi|Etkinleştirilir veya devre dışı bırakır|Denetimleri veya denetimleri geri al|Nokta kullanarak denetim|Öğe metnini ayarlar|
+|Araç çubuğu düğmesi|Etkinleştirilir veya devre dışı bırakır|Seçer, seçimi kaldır veya belirsiz|Aynı`SetCheck`|(Uygulanamaz)|
+|Durum çubuğu bölmesi|Metnin görünür veya görünmez olmasını sağlar|Açılır veya normal kenarlığı ayarlar|Aynı`SetCheck`|Bölme metnini ayarlar|
+|İçindeki normal düğme`CDialogBar`|Etkinleştirilir veya devre dışı bırakır|Denetimler veya denetimleri kaldır onay kutusu|Aynı`SetCheck`|Düğme metnini ayarlar|
+|İçindeki normal denetim`CDialogBar`|Etkinleştirilir veya devre dışı bırakır|(Uygulanamaz)|(Uygulanamaz)|Pencere metnini ayarlar|
 
-Bu sınıf kullanımı hakkında daha fazla bilgi için bkz. [kullanıcı arabirimi nesnelerini güncelleştirme](../../mfc/how-to-update-user-interface-objects.md).
+Bu sınıfın kullanımı hakkında daha fazla bilgi için bkz. [Kullanıcı arabirimi nesnelerini güncelleştirme](../../mfc/how-to-update-user-interface-objects.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -93,11 +93,11 @@ Bu sınıf kullanımı hakkında daha fazla bilgi için bkz. [kullanıcı arabir
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxwin.h
+**Üstbilgi:** Afxwin. h
 
-##  <a name="continuerouting"></a>  CCmdUI::ContinueRouting
+##  <a name="continuerouting"></a>CCmdUI:: Devamsallama
 
-Aşağı zinciri işleyicileri geçerli ileti yönlendirme devam etmek için komut yönlendirme mekanizması bildirmek için bu üye işlevini çağırın.
+Komut yönlendirme mekanizmasına, geçerli iletiyi işleyici zincirinde aşağı yönlendirmeye devam etmek için bu üye işlevi çağırın.
 
 ```
 void ContinueRouting();
@@ -105,11 +105,11 @@ void ContinueRouting();
 
 ### <a name="remarks"></a>Açıklamalar
 
-FALSE döndüren bir ON_COMMAND_EX işleyicisi ile birlikte kullanılması gereken bir Gelişmiş üye işlev budur. Daha fazla bilgi için [Teknik Not 6](../../mfc/tn006-message-maps.md).
+Bu, FALSE döndüren bir ON_COMMAND_EX işleyicisiyle birlikte kullanılması gereken gelişmiş bir üye işlevdir. Daha fazla bilgi için bkz. [teknik notta 6](../../mfc/tn006-message-maps.md).
 
-##  <a name="enable"></a>  CCmdUI::Enable
+##  <a name="enable"></a>CCmdUI:: Enable
 
-Etkinleştirme veya devre dışı kullanıcı arabirimi öğesi bu komut için bu üye işlevini çağırın.
+Bu komut için Kullanıcı arabirimi öğesini etkinleştirmek veya devre dışı bırakmak için bu üye işlevini çağırın.
 
 ```
 virtual void Enable(BOOL bOn = TRUE);
@@ -117,8 +117,8 @@ virtual void Enable(BOOL bOn = TRUE);
 
 ### <a name="parameters"></a>Parametreler
 
-*İyi*<br/>
-Öğeyi devre dışı bırakmak için FALSE etkinleştirmek için TRUE.
+*Um*<br/>
+Öğeyi etkinleştirmek için TRUE, devre dışı bırakmak için FALSE.
 
 ### <a name="example"></a>Örnek
 
@@ -126,25 +126,25 @@ virtual void Enable(BOOL bOn = TRUE);
 
 [!code-cpp[NVC_MFCDocView#47](../../mfc/codesnippet/cpp/ccmdui-class_2.cpp)]
 
-##  <a name="m_nid"></a>  CCmdUI::m_nID
+##  <a name="m_nid"></a>CCmdUI:: m_nID
 
-Menü öğesi, araç çubuğu düğmesini veya diğer kullanıcı arabirimi nesnesi tarafından temsil edilen kimliği `CCmdUI` nesne.
+`CCmdUI` Nesne tarafından temsil edilen menü öğesi, araç çubuğu düğmesi veya diğer kullanıcı arabirimi nesnesi kimliği.
 
 ```
 UINT m_nID;
 ```
 
-##  <a name="m_nindex"></a>  CCmdUI::m_nIndex
+##  <a name="m_nindex"></a>CCmdUI:: m_nIndex
 
-Menü öğesi, araç çubuğu düğmesini veya diğer kullanıcı arabirimi nesnesi tarafından temsil edilen dizinini `CCmdUI` nesne.
+Menü öğesi, araç çubuğu düğmesi veya `CCmdUI` nesne tarafından temsil edilen diğer kullanıcı arabirimi nesnesi dizini.
 
 ```
 UINT m_nIndex;
 ```
 
-##  <a name="m_pmenu"></a>  CCmdUI::m_pMenu
+##  <a name="m_pmenu"></a>CCmdUI:: m_pMenu
 
-İşaretçi (biri `CMenu` türü) tarafından temsil edilen menüsüne `CCmdUI` nesne.
+Nesne tarafından temsil `CMenu` edilen menüye işaretçi (türü). `CCmdUI`
 
 ```
 CMenu* m_pMenu;
@@ -152,11 +152,11 @@ CMenu* m_pMenu;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir menü değilse null değerini DÖNDÜRÜR.
+Öğe bir menü değilse NULL.
 
-##  <a name="m_psubmenu"></a>  CCmdUI::m_pSubMenu
+##  <a name="m_psubmenu"></a>CCmdUI:: m_pSubMenu
 
-İşaretçi (biri `CMenu` türü) Kapsanan alt menüsü tarafından temsil edilen `CCmdUI` nesne.
+`CCmdUI` Nesnenin temsil ettiği `CMenu` içerilen alt menüye işaretçi (türü).
 
 ```
 CMenu* m_pSubMenu;
@@ -164,11 +164,11 @@ CMenu* m_pSubMenu;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir menü değilse null değerini DÖNDÜRÜR. Alt menü bir açılır pencere ise *m_nID* ilk açılan menü öğesi Kimliğini içerir. Daha fazla bilgi için [Teknik Not 21](../../mfc/tn021-command-and-message-routing.md).
+Öğe bir menü değilse NULL. Alt menü bir açılır pencere ise, *m_nID* açılır menüdeki Ilk öğenin kimliğini içerir. Daha fazla bilgi için bkz. [teknik notta 21](../../mfc/tn021-command-and-message-routing.md).
 
-##  <a name="m_pother"></a>  CCmdUI::m_pOther
+##  <a name="m_pother"></a>CCmdUI:: m_pOther
 
-İşaretçi (tür `CWnd`), bir aracı veya durum çubuğu gibi pencere nesnesi için bildirim gönderilir.
+Bildirimi gönderen bir araç `CWnd`veya durum çubuğu gibi pencere nesnesine işaretçi (türü).
 
 ```
 CWnd* m_pOther;
@@ -176,11 +176,11 @@ CWnd* m_pOther;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Öğe bir menü veya olmayan bir yoksa NULL `CWnd` nesne.
+Öğe bir menü veya `CWnd` nesne olmayan bir menü ise null.
 
-##  <a name="setcheck"></a>  CCmdUI::SetCheck
+##  <a name="setcheck"></a>CCmdUI:: SetCheck
 
-Bu komut için kullanıcı arabirimi öğesi için uygun denetim durumu ayarlamak için bu üye işlevini çağırın.
+Bu komut için Kullanıcı arabirimi öğesini uygun denetim durumuna ayarlamak için bu üye işlevi çağırın.
 
 ```
 virtual void SetCheck(int nCheck = 1);
@@ -188,16 +188,16 @@ virtual void SetCheck(int nCheck = 1);
 
 ### <a name="parameters"></a>Parametreler
 
-*Nbakım*<br/>
-Ayarlanacak denetim durumu belirtir. 0, temizler, 1 denetler; ve 2 değilse, belirsiz ayarlar.
+*Nhatayla*<br/>
+Ayarlanacak denetim durumunu belirtir. 0 ise, denetimleri kaldırır; 1 ise, denetimler; 2 ise, belirsiz olarak ayarlanır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, menü öğeleri ve araç çubuğu düğmeleri için çalışır. Belirlenmemiş duruma yalnızca araç çubuğu düğmeleri için geçerlidir.
+Bu üye işlevi, menü öğeleri ve araç çubuğu düğmeleri için çalışır. Belirsiz durum yalnızca araç çubuğu düğmeleri için geçerlidir.
 
-##  <a name="setradio"></a>  CCmdUI::SetRadio
+##  <a name="setradio"></a>CCmdUI:: SetRadio
 
-Bu komut için kullanıcı arabirimi öğesi için uygun denetim durumu ayarlamak için bu üye işlevini çağırın.
+Bu komut için Kullanıcı arabirimi öğesini uygun denetim durumuna ayarlamak için bu üye işlevi çağırın.
 
 ```
 virtual void SetRadio(BOOL bOn = TRUE);
@@ -205,16 +205,16 @@ virtual void SetRadio(BOOL bOn = TRUE);
 
 ### <a name="parameters"></a>Parametreler
 
-*İyi*<br/>
-Öğesini etkinleştirmek için TRUE; Aksi durumda FALSE.
+*Um*<br/>
+Öğeyi etkinleştirmek için TRUE; Aksi halde yanlış.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi gibi çalışan `SetCheck`dışında radyo grubunun bir parçası görev yapan kullanıcı arabirimi öğeleri üzerinde çalışır. Gruptaki diğer öğeler kaldırılırsa, öğeleri Grup radyo davranışı korumak sürece otomatik değildir.
+Bu üye işlevi gibi `SetCheck`çalışır, ancak radyo grubunun bir parçası olarak davranan Kullanıcı arabirimi öğelerinde çalışır. Öğelerin kendisi radyo grubu davranışını korumadığı takdirde gruptaki diğer öğelerin işaretlenmesi otomatik değildir.
 
-##  <a name="settext"></a>  CCmdUI::SetText
+##  <a name="settext"></a>CCmdUI:: SetText
 
-Bu komut için kullanıcı arabirimi öğesinin metnini ayarlamak için bu üye işlevini çağırın.
+Bu komut için Kullanıcı arabirimi öğesinin metnini ayarlamak için bu üye işlevini çağırın.
 
 ```
 virtual void SetText(LPCTSTR lpszText);
@@ -223,7 +223,7 @@ virtual void SetText(LPCTSTR lpszText);
 ### <a name="parameters"></a>Parametreler
 
 *lpszText*<br/>
-Bir metin dizesi için bir işaretçi.
+Bir metin dizesinin işaretçisi.
 
 ### <a name="example"></a>Örnek
 

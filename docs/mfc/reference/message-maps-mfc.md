@@ -1,66 +1,66 @@
 ---
 title: İleti Eşlemeleri (MFC)
-ms.date: 11/04/2016
+ms.date: 09/07/2019
 helpviewer_keywords:
 - message maps [MFC], MFC
 - Windows messages [MFC], message maps
 - messages [MFC], Windows
 - MFC, messages
 ms.assetid: 3f9855e4-9d7d-4b64-8f3f-a19ea3cf79ba
-ms.openlocfilehash: 14c08a008456160fe817f066e5b22b06b9f9fa14
-ms.sourcegitcommit: 934cb53fa4cb59fea611bfeb9db110d8d6f7d165
+ms.openlocfilehash: 4305d9b1db297eebcb189d2fad98b8c634ed1133
+ms.sourcegitcommit: 3caf5261b3ea80d9cf14038c116ba981d655cd13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65611824"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70908035"
 ---
 # <a name="message-maps-mfc"></a>İleti Eşlemeleri (MFC)
 
-Başvurusunun bu bölümü listeler [ileti eşleme makroları](../../mfc/reference/message-map-macros-mfc.md) ve tüm [CWnd](../../mfc/reference/cwnd-class.md) ileti eşlemesi girişleri birlikte karşılık gelen üye işlev prototipleri:
+Başvurunun bu bölümünde, ilgili üye işlev prototipleriyle birlikte tüm [ileti eşleme makroları](../../mfc/reference/message-map-macros-mfc.md) ve tüm [CWnd](../../mfc/reference/cwnd-class.md) ileti eşleme girdileri listelenir:
 
 |Kategori|Açıklama|
 |--------------|-----------------|
-|Açık\_komut ileti işleyicisi|İşleme `WM_COMMAND` kullanıcı menüsü seçeneklerini veya menü erişim anahtarları tarafından oluşturulan iletileri.|
-|[Alt Pencere Bildirim İletisi İşleyicileri](../../mfc/reference/child-window-notification-message-handlers.md)|Alt öğe pencerelerini gelen bildirim iletileri işler.|
-|[WM_ ileti işleyicileri](../../mfc/reference/handlers-for-wm-messages.md)|Tanıtıcı `WM_` gibi iletileri `WM_PAINT`.|
-|[Kullanıcı tanımlı ileti işleyicileri](../../mfc/reference/user-defined-handlers.md)|Kullanıcı tanımlı iletileri işler.|
+|\_Komut iletisi işleyicisinde|Kullanıcı `WM_COMMAND` menü seçimleri veya menü erişim tuşları tarafından oluşturulan iletileri işler.|
+|[Alt Pencere Bildirim İletisi İşleyicileri](../../mfc/reference/child-window-notification-message-handlers.md)|Alt pencerelerin bildirim iletilerini işleyin.|
+|[WM_ Ileti Işleyicileri](../../mfc/reference/handlers-for-wm-messages.md)|Gibi `WM_` iletileri`WM_PAINT`işleyin.|
+|[Kullanıcı tanımlı Ileti Işleyicileri](../../mfc/reference/user-defined-handlers.md)|Kullanıcı tanımlı iletileri işleyin.|
 
-(Bu başvuruda kullanılan kuralları ve terminolojisi açıklaması için bkz. [ileti eşleme çapraz başvurusunu kullanma](../../mfc/reference/how-to-use-the-message-map-cross-reference.md).)
+(Bu başvuruda kullanılan terminoloji ve kurallara ilişkin bir açıklama için bkz. [Ileti Haritası çapraz başvurusunu kullanma](../../mfc/reference/how-to-use-the-message-map-cross-reference.md).)
 
-Windows, bir iletiye yönelik işletim sistemi olduğundan, Windows ortamınıza programming büyük bir kısmı ileti işleme içerir. Her oluştuğunda bir tuş vuruşu veya fare gibi bir olay'ı tıklatın, sonra olay işlemesi gerekir uygulama bir mesajı gönderilir.
+Windows, ileti yönelimli bir işletim sistemi olduğundan, Windows ortamı için programlama için büyük bir bölüm ileti işlemeyi içerir. Bir tuş vuruşu veya fare tıklaması gibi bir olay gerçekleştiğinde, uygulamaya bir ileti gönderilir ve bu daha sonra olayı ele almalıdır.
 
-Microsoft Foundation Class Kitaplığı, ileti tabanlı programlama için en iyi duruma getirilmiş bir programlama modeli sunar. Bu modelde, "haritalar message" hangi işlevleri çeşitli iletiler için belirli bir sınıfın işleyeceğini belirtmek için kullanılır. İleti eşlemeleri hangi işlevleri tarafından hangi iletilerin işleneceğini belirten bir veya daha fazla makrolar içerir. Örneğin, bir ileti eşleme içeren bir `ON_COMMAND` makrosu şöyle görünebilir:
+Microsoft Foundation Class Kitaplığı ileti tabanlı programlama için iyileştirilmiş bir programlama modeli sunar. Bu modelde, "ileti haritaları", belirli bir sınıf için çeşitli iletileri işleyeceği işlevleri belirlemek için kullanılır. İleti haritaları, hangi iletilerin hangi işlevleri tarafından işleneceğini belirten bir veya daha fazla makro içerir. Örneğin, bir `ON_COMMAND` makro içeren bir ileti haritası şuna benzeyebilir:
 
 [!code-cpp[NVC_MFCMessageMaps#16](../../mfc/reference/codesnippet/cpp/message-maps-mfc_1.cpp)]
 
-`ON_COMMAND` Makrosu, menüler, düğmeler ve kısayol tuşları tarafından oluşturulan komut iletileri işlemek için kullanılır. [Makrolar](../../mfc/reference/message-map-macros-mfc.md) aşağıdaki eşlemek kullanılabilir:
+`ON_COMMAND` Makro, menüler, düğmeler ve hızlandırıcı tuşları tarafından oluşturulan komut iletilerini işlemek için kullanılır. [Makrolar](../../mfc/reference/message-map-macros-mfc.md) şu eşleme için kullanılabilir:
 
-## <a name="windows-messages"></a>Windows iletileri
+## <a name="windows-messages"></a>Windows Iletileri
 
 - Denetim bildirimleri
 
 - Kullanıcı tanımlı iletiler
 
-## <a name="command-messages"></a>Komut iletileri
+## <a name="command-messages"></a>Komut Iletileri
 
-- Kayıtlı kullanıcı tanımlı iletiler
+- Kayıtlı Kullanıcı tanımlı iletiler
 
-- Kullanıcı arabirimini güncelleştirme iletileri
+- Kullanıcı arabirimi güncelleştirme iletileri
 
-## <a name="ranges-of-messages"></a>İleti aralıkları
+## <a name="ranges-of-messages"></a>Ileti aralıkları
 
 - Komutlar
 
-- Güncelleştirme işleyici iletileri
+- İşleyici iletilerini Güncelleştir
 
 - Denetim bildirimleri
 
-İleti eşleme makroları önemli olsa da, genellikle doğrudan kullanmanız gerekmez. İleti işleme işlevleri iletileri ile ilişkilendirilecek kullandığınızda Özellikler penceresi, kaynak dosyalarında ileti eşlemesi girişleri otomatik olarak oluşturur. olmasıdır. Düzenlemek veya bir ileti eşleme girdisi eklemek için istediğiniz zaman, Özellikler penceresini kullanabilirsiniz.
+İleti eşleme makroları önemli olsa da, genellikle bunları doğrudan kullanmanız gerekmez. Bunun nedeni, [sınıf sihirbazının](mfc-class-wizard.md) ileti işleme işlevlerini iletilerle ilişkilendirmek için kullandığınızda, kaynak dosyalarınızda otomatik olarak ileti eşleme girdileri oluşturmasıdır. Herhangi bir ileti eşleme girişi düzenlemek veya eklemek istediğiniz zaman, sınıf sihirbazını kullanabilirsiniz.
 
 > [!NOTE]
->  Özellikler penceresinde ileti eşleme aralıkları desteklemez. Bu ileti eşlemesi girişleri kendiniz yazmalısınız.
+>  Sınıf Sihirbazı ileti eşleme aralıklarını desteklemez. Bu ileti eşleme girdilerini kendiniz yazmanız gerekir.
 
-Microsoft Foundation Class Kitaplığı, ileti eşlemeleri ancak önemli bir parçasıdır. Yaptıkları anlamanız gerekir ve belgeleri için sağlanır.
+Ancak, ileti haritaları Microsoft Foundation Class Kitaplığı önemli bir bölümüdür. Ne yaptığını ve bunlar için belge sağlandığını anlamalısınız.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

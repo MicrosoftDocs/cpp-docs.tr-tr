@@ -1,23 +1,23 @@
 ---
 title: İletişim Kutunuzda Windows İletilerini İşleme
-ms.date: 11/04/2016
+ms.date: 09/05/2019
 helpviewer_keywords:
 - MFC dialog boxes [MFC], Windows messages
 - Windows messages [MFC], handling
 - message handling [MFC], in dialog boxes
 ms.assetid: 4af0c9cb-09da-4b15-97df-a1cfb89def79
-ms.openlocfilehash: 6c32f9781913a571464f4627e89d0e9a118ad28e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5aff70010f3a84dceb88d22ee5e109cbf37abb5b
+ms.sourcegitcommit: 3caf5261b3ea80d9cf14038c116ba981d655cd13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62240773"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70907700"
 ---
 # <a name="handling-windows-messages-in-your-dialog-box"></a>İletişim Kutunuzda Windows İletilerini İşleme
 
-İletişim kutuları windows olduğundan, uygun bir işleyici işlevleri sağlarsanız Windows iletileri işleyebilir. İletişim sınıfınızı sınıf Ekleme Sihirbazı'nı oluşturduğunuzda, sihirbaz sınıfına bir boş ileti eşlemesi ekler. Windows iletileri ya da komutları işlemek için kendi sınıfınızı istediğiniz eşlemek için Özellikler penceresini kullanın.
+İletişim kutuları Windows, uygun işleyici işlevlerini sağlarsanız Windows iletilerini işleyebilir. [Sınıf Sihirbazı](reference/mfc-class-wizard.md)ile iletişim kutusu sınıfınızı oluşturduğunuzda, sihirbaz sınıfa boş bir ileti eşlemesi ekler. Sınıfınızın işlemesini istediğiniz herhangi bir Windows iletisini veya komutunu eşlemek için Sihirbazı kullanın.
 
-Bkz: [bilgisayarınızı iletişim kutusu sınıfı Windows iletilerini eşleme](../mfc/mapping-windows-messages-to-your-class.md) daha fazla bilgi için.
+Daha fazla bilgi için bkz. [Iletişim kutusu sınıfınıza Windows Iletilerini eşleme](../mfc/mapping-windows-messages-to-your-class.md) .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

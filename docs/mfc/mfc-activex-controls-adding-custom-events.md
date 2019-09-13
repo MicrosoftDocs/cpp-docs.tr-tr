@@ -15,121 +15,119 @@ helpviewer_keywords:
 - custom events [MFC]
 - FireEvent method, adding custom events
 ms.assetid: c584d053-1e34-47aa-958e-37d3e9b85892
-ms.openlocfilehash: 48c5ddbc8a3bcf6f74c251820e83cdebcef05bc9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d22eb6016635c509d6b8bb2068f00125d0227ca2
+ms.sourcegitcommit: 3caf5261b3ea80d9cf14038c116ba981d655cd13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62400740"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70907319"
 ---
 # <a name="mfc-activex-controls-adding-custom-events"></a>MFC ActiveX denetimleri: Özel olaylar ekleme
 
-Özel olaylar, bunlar otomatik olarak bir sınıf tarafından tetiklenen değil, stok olaylardan farklı `COleControl`. Özel olay, olay olarak denetim geliştiricisi tarafından belirlenen belirli bir eylem, tanır. Özel olaylar için olay eşleme girişleri EVENT_CUSTOM makrosu tarafından temsil edilir. Aşağıdaki bölümde, ActiveX Denetim Sihirbazı'nı kullanarak oluşturulan bir ActiveX denetimi projesi için özel bir olay uygular.
+Özel olaylar, otomatik olarak sınıf `COleControl`tarafından tetiklendikleri için stok olaylarından farklıdır. Özel bir olay, denetim geliştiricisi tarafından bir olay olarak belirlenen belirli bir eylemi algılar. Özel olaylara yönelik olay eşlemesi girdileri EVENT_CUSTOM makrosu tarafından temsil edilir. Aşağıdaki bölüm, ActiveX Denetim Sihirbazı kullanılarak oluşturulan bir ActiveX denetim projesi için özel bir olay uygular.
 
-##  <a name="_core_adding_a_custom_event_with_classwizard"></a> Özel bir olay ile ekleme olay Ekleme Sihirbazı
+##  <a name="_core_adding_a_custom_event_with_classwizard"></a>Olay Ekleme Sihirbazı ile özel olay ekleme
 
-Aşağıdaki yordam, belirli özel olay, Clickın ekler. Özel diğer olay eklemek için bu yordamı kullanabilirsiniz. Özel olay adınız ve parametreleri için parametreler ve Clickın olayı adını değiştirin.
+Aşağıdaki yordam belirli bir özel olay ekler ve sonra da. Diğer özel olayları eklemek için bu yordamı kullanabilirsiniz. Özel olay adınızı ve parametrelerini, Click olay adı ve parametreleri için değiştirin.
 
-#### <a name="to-add-the-clickin-custom-event-using-the-add-event-wizard"></a>Olay Ekleme Sihirbazı'nı kullanarak Clickın özel olay eklemek için
+#### <a name="to-add-the-clickin-custom-event-using-the-add-event-wizard"></a>Olay Ekleme Sihirbazı 'Nı kullanarak Click özel olayını eklemek için
 
-1. Denetiminizin proje yükleyin.
+1. Denetiminizin projesini yükleyin.
 
-1. Sınıf Görünümü'nde sağ tıklayın, ActiveX denetim sınıfı kısayol menüsünü açın.
+1. **Sınıf görünümü**menüsünde, ActiveX denetim sınıfınızı sağ tıklayıp kısayol menüsünü açın.
 
-1. Kısayol menüsünden tıklayın **Ekle** ve ardından **olay Ekle**.
+1. Kısayol menüsünde, **Ekle** ' ye ve ardından **olay Ekle**' ye tıklayın.
 
-   Bu olay Ekleme Sihirbazı'nı açar.
+   Bu, olay Ekleme Sihirbazı ' nı açar.
 
-1. İçinde **olay adı** kutusuna, ilk var olan herhangi bir olay seçin ve ardından tıklayarak **özel** radyo düğmesini ve ardından yazın *Clickın*.
+1. **Olay adı** kutusunda, önce var olan herhangi bir olayı seçin, sonra **özel** radyo düğmesine tıklayın ve ardından ENTER tuşuna basın *.*
 
-1. İçinde **iç adı** olay tetikleyicisinin tetikleme işlevin adını yazın. Bu örnekte, olay Ekleme Sihirbazı tarafından sağlanan varsayılan değeri kullanın (`FireClickIn`).
+1. **İç ad** kutusunda, etkinliğin tetikleme işlevinin adını yazın. Bu örnek için, olay Ekleme Sihirbazı (`FireClickIn`) tarafından sunulan varsayılan değeri kullanın.
 
-1. Adlı bir parametreyi ekleyin *xCoord* (tür *OLE_XPOS_PIXELS*) kullanarak **parametre adı** ve **parametre türü** kontrol eder.
+1. **Parametre adı** ve **parametre türü** denetimlerini kullanarak *Xcozı* (Type *OLE_XPOS_PIXELS*) adlı bir parametre ekleyin.
 
-1. Adlı ikinci bir parametre ekleyin *yCoord* (tür *OLE_YPOS_PIXELS*).
+1. İkinci bir parametre *ekleyin (tür* *OLE_YPOS_PIXELS*).
 
-1. Tıklayın **son** olay oluşturamadı.
+1. Olayı oluşturmak için **son** ' a tıklayın.
 
-##  <a name="_core_classwizard_changes_for_custom_events"></a> Etkinlik Sihirbazı değişiklikleri için özel olaylar ekleme
+##  <a name="_core_classwizard_changes_for_custom_events"></a>Özel olaylar için olay Sihirbazı değişiklikleri ekleme
 
-Özel olay eklediğinizde, olay Ekleme Sihirbazı'nı denetim sınıfına değişiklik yapar. H. CPP ve. IDL dosyaları. Aşağıdaki kod örnekleri için Clickın olayı özgüdür.
+Özel bir olay eklediğinizde, olay Ekleme Sihirbazı denetim sınıfında değişiklikler yapar. H,. CPP ve. IDL dosyaları. Aşağıdaki kod örnekleri, Click olayına özeldir.
 
-Aşağıdaki satırları için üst bilgi eklenir (. H) denetim sınıfınızın dosyası:
+Üst bilgiye aşağıdaki satırlar eklenir (. H) denetim sınıfınızın dosyası:
 
 [!code-cpp[NVC_MFC_AxUI#7](../mfc/codesnippet/cpp/mfc-activex-controls-adding-custom-events_1.h)]
 
-Bu kod çağrılan bir satır içi işlev bildirir `FireClickIn` çağrılarının [COleControl::FireEvent](../mfc/reference/colecontrol-class.md#fireevent) Clickın olayı ve parametreleri ile olay Ekleme Sihirbazı'nı kullanarak tanımlanmış.
+Bu kod, olay Ekleme Sihirbazı 'nı `FireClickIn` kullanarak tanımladığınız Click olayı ve parametreleri ile [cotacontrol:: FireEvent](../mfc/reference/colecontrol-class.md#fireevent) çağıran adlı bir satır içi işlev bildirir.
 
-Ayrıca, olay eşlemesi uygulamasında bulunan denetim için aşağıdaki satırı eklenir (. Denetim sınıfınızın CPP) dosyası:
+Ayrıca, uygulamada bulunan denetim için olay haritasına aşağıdaki satır eklenir (. CPP) denetim sınıfınızın dosyası:
 
 [!code-cpp[NVC_MFC_AxUI#8](../mfc/codesnippet/cpp/mfc-activex-controls-adding-custom-events_2.cpp)]
 
-Bu kod Clickın olayı satır içi işleve eşlenir `FireClickIn`, tanımlanan olay Ekleme Sihirbazı'nı kullanarak parametre geçirme.
+Bu kod, olay Ekle Sihirbazı ' nı kullanarak tanımladığınız parametreleri `FireClickIn`geçirerek, olayı satır içi işlev ile eşler.
 
-Son olarak, aşağıdaki satırı, denetimin eklenir. IDL dosyası:
+Son olarak, aşağıdaki satır denetiminizin öğesine eklenir. IDL dosyası:
 
 [!code-cpp[NVC_MFC_AxUI#9](../mfc/codesnippet/cpp/mfc-activex-controls-adding-custom-events_3.idl)]
 
-Bu satırı Clickın olayı olay Ekleme Sihirbazı'nı olay listesindeki olayın konumdan gerçekleştirilen belirli bir kimlik numarası atar. Giriş olayı olay tahmin için bir kapsayıcı sağlar. Örneğin, bu olay harekete yürütülecek işleyici kodu sağlayabilir.
+Bu satır, olay Ekle Sihirbazı olay listesi ' nde olayın konumundan alınan belirli bir KIMLIK numarası olan Click olayını atar. Olay listesindeki giriş, bir kapsayıcının olayı tahmin etmesine izin verir. Örneğin, olay harekete geçirildiğinde yürütülecek işleyici kodu sağlayabilir.
 
-##  <a name="_core_calling_fireclickin"></a> Fireclickın çağırma
+##  <a name="_core_calling_fireclickin"></a>Firei 'yi çağırma
 
-Olay Ekleme Sihirbazı'nı kullanarak Clickın özel olay ekledik, bu olay başlatılmasına izin olduğunda, karar vermeniz gerekir. Çağrı yaparak bunu `FireClickIn` uygun eylemi olduğunda gerçekleşir. Bu tartışma için denetimi kullanan `InCircle` işlev içinde kullanıcı elips veya döngüsel bir bölgenin içinde tıkladığında Clickın olayı ateşlenmesine WM_LBUTTONDOWN ileti işleyicisi. Aşağıdaki yordam, WM_LBUTTONDOWN işleyici ekler.
+Olay Ekleme Sihirbazı 'nı kullanarak ister özel olayını ekletireceğinize göre, bu olayın ne zaman tetiklendiğine karar vermelisiniz. Bunu, uygun eylem gerçekleştiğinde `FireClickIn` çağırarak yapabilirsiniz. Bu tartışma için denetim, bir Kullanıcı dairesel `InCircle` veya eliptik bir `WM_LBUTTONDOWN` bölgenin içini tıklattığında, bu olayı bir ileti işleyicisi içinde kullanır. Aşağıdaki yordam `WM_LBUTTONDOWN` işleyiciyi ekler.
 
-#### <a name="to-add-a-message-handler-with-the-add-event-wizard"></a>Olay Ekleme Sihirbazı'nı bir ileti işleyicisi eklemek için
+#### <a name="to-add-a-message-handler-with-the-add-event-wizard"></a>Olay Ekleme Sihirbazı ile bir ileti işleyicisi eklemek için
 
-1. Denetiminizin proje yükleyin.
+1. Denetiminizin projesini yükleyin.
 
-1. Sınıf Görünümü'nde, ActiveX denetim sınıfı seçin.
+1. **Sınıf görünümü**' de, ActiveX denetim sınıfınızı seçin.
 
-1. Özellikler penceresinde tıklayın **iletileri** düğmesi.
+1. **Özellikler** penceresinde, ActiveX denetimi tarafından işlenebilen iletilerin bir listesini görürsünüz. Kalın olarak gösterilen herhangi bir ileti zaten kendisine atanmış bir işleyici işlevi içerir.
 
-   Özellikler penceresinde, bir ActiveX denetimi tarafından işlenebilen iletilerinin listesini görüntüler. Herhangi bir ileti kalın yazılarak gösterilmiştir zaten kendisine atanmış bir işleyici işlevi vardır.
+1. İşlemek istediğiniz iletiyi seçin. Bu örnek için, öğesini `WM_LBUTTONDOWN`seçin.
 
-1. Özellikler penceresinde, kullanmak istediğiniz iletiyi seçin. Bu örnekte, WM_LBUTTONDOWN seçin.
+1. Sağdaki aşağı açılan liste kutusundan  **\<> Ekle**' yi seçin.
 
-1. Sağdaki aşağı açılan liste kutusundan seçin  **\<Ekle > OnLButtonDown**.
+1. Uygulamadaki ileti işleyici koduna geçmek için **sınıf görünümü** yeni işleyici işlevine çift tıklayın (. CPP) dosyası.
 
-1. Yeni işleyici işlevi uygulamasında ileti işleyicinizin kodunu atlamak için Sınıf Görünümü'nde çift tıklayın (. ActiveX denetiminizin CPP) dosyası.
-
-Aşağıdaki kod örneği çağrıları `InCircle` denetim pencereye farenin sol düğmesine tıklandığında her zaman çalışması. Bu örnek WM_LBUTTONDOWN işleyici işlevi içinde bulunabilir `OnLButtonDown`, [Dai örnek](../overview/visual-cpp-samples.md) soyut.
+Aşağıdaki kod örneği, sol fare `InCircle` düğmesine denetim penceresi içinde tıklandığı her seferinde işlevini çağırır. Bu örnek, [Circ örnek](../overview/visual-cpp-samples.md) soyut `WM_LBUTTONDOWN` öğesinde, işleyici `OnLButtonDown`işlevinde bulunabilir.
 
 [!code-cpp[NVC_MFC_AxUI#10](../mfc/codesnippet/cpp/mfc-activex-controls-adding-custom-events_4.cpp)]
 
 > [!NOTE]
->  Olay Ekleme Sihirbazı'nı ileti işleyicileri farenin düğme eylemleri oluşturduğunda, temel sınıfın aynı ileti işleyicisi çağrısı otomatik olarak eklenir. Bu çağrı kaldırmayın. Denetiminiz fare stok iletilerini kullanıyorsa, temel sınıfta ileti işleyicileri fare yakalamayı doğru şekilde işlediğinden emin olmak için çağrılmalıdır.
+>  Olay Ekleme Sihirbazı fare düğmesi eylemleri için ileti işleyicileri oluşturduğunda, temel sınıfın aynı ileti işleyicisine yönelik bir çağrı otomatik olarak eklenir. Bu çağrıyı kaldırmayın. Denetiminiz, hisse senedi fare mesajlarının herhangi birini kullanıyorsa, fare yakalamanın düzgün şekilde işlendiğinden emin olmak için temel sınıftaki ileti işleyicileri çağrılmalıdır.
 
-Aşağıdaki örnekte, yalnızca tıklayarak denetiminde elips veya döngüsel bir bölge içinde oluştuğunda olay tetiklenir. Bu davranışı elde etmek için yerleştirebilirsiniz `InCircle` işlevi denetiminizin uygulamasında (. CPP) dosyası:
+Aşağıdaki örnekte, olay yalnızca tıklama denetimin içindeki bir dairesel veya eliptik bölge içinde gerçekleştiğinde ateşlenir. Bu davranışı başarmak için, `InCircle` işlevini denetimin uygulamasına yerleştirebilirsiniz (. CPP) dosyası:
 
 [!code-cpp[NVC_MFC_AxUI#11](../mfc/codesnippet/cpp/mfc-activex-controls-adding-custom-events_5.cpp)]
 
-Ayrıca aşağıdaki bildirimi eklemeniz gerekir `InCircle` denetiminizin başlığına işlevi (. H) dosyası:
+Ayrıca, `InCircle` denetimin üstbilgisine () işlevin aşağıdaki bildirimini eklemeniz gerekir (. H) dosyası:
 
 [!code-cpp[NVC_MFC_AxUI#12](../mfc/codesnippet/cpp/mfc-activex-controls-adding-custom-events_6.h)]
 
-##  <a name="_core_custom_events_with_stock_names"></a> Stok adları ile özel olaylar
+##  <a name="_core_custom_events_with_stock_names"></a>Hisse senedi adlarıyla özel olaylar
 
-Ancak, hem de aynı denetimi uygulayamazsınız stok olaylar, aynı ada sahip özel olaylar oluşturabilirsiniz. Örneğin, stok olayı tıklatın normalde tetiklendiğinde başlatılmıyor Click adlı özel bir olay oluşturmak isteyebilirsiniz. Açmadığınızda işlevini çağırarak herhangi bir zamanda ardından Click olayını harekete.
+Hisse senedi olaylarıyla aynı ada sahip özel olaylar oluşturabilirsiniz, ancak her ikisini de aynı denetimde uygulayamamalıdır. Örneğin, bir özel olay oluşturmak isteyebilirsiniz. Bu, stok olayı tıklaması normalde başlatıldığında harekete geçmeyecektir. Ardından, tetikleme işlevini çağırarak istediğiniz zaman Click olayını tetikleyerek yapabilirsiniz.
 
-Aşağıdaki yordamda özel bir tıklama ekler olay.
+Aşağıdaki yordam özel bir tıklama olayı ekler.
 
-#### <a name="to-add-a-custom-event-that-uses-a-stock-event-name"></a>Stok olayı adı kullanan özel bir olay eklemek için
+#### <a name="to-add-a-custom-event-that-uses-a-stock-event-name"></a>Hisse senedi olay adı kullanan özel bir olay eklemek için
 
-1. Denetiminizin proje yükleyin.
+1. Denetiminizin projesini yükleyin.
 
-1. Sınıf Görünümü'nde sağ tıklayın, ActiveX denetim sınıfı kısayol menüsünü açın.
+1. **Sınıf görünümü**menüsünde, ActiveX denetim sınıfınızı sağ tıklayıp kısayol menüsünü açın.
 
-1. Kısayol menüsünden tıklayın **Ekle** ve ardından **olay Ekle**.
+1. Kısayol menüsünde, **Ekle** ' ye ve ardından **olay Ekle**' ye tıklayın.
 
-   Bu olay Ekleme Sihirbazı'nı açar.
+   Bu, olay Ekleme Sihirbazı ' nı açar.
 
-1. İçinde **olay adı** aşağı açılan listesinde, bir stok olayı adını seçin. Bu örnekte, seçin **tıklayın**.
+1. **Olay adı** açılır listesinde bir stok olay adı seçin. Bu örnek için **tıklama ' yi**seçin.
 
-1. İçin **olay türü**seçin **özel**.
+1. **Olay türü**için **özel**' i seçin.
 
-1. Tıklayın **son** olay oluşturamadı.
+1. Olayı oluşturmak için **son** ' a tıklayın.
 
-1. Çağrı `FireClick` uygun yerlerde kodunuzu.
+1. Kodunuzda `FireClick` uygun yerlere çağrı yapın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

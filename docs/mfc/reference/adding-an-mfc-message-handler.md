@@ -1,33 +1,33 @@
 ---
 title: MFC İleti İşleyicisi Ekleme
-ms.date: 11/04/2016
+ms.date: 09/06/2019
 f1_keywords:
 - vc.codewiz.adding.mfc.msghandler
 helpviewer_keywords:
 - message handling [MFC], adding handlers
 ms.assetid: 4251cfce-76ca-443d-bd2f-6303afa6d942
-ms.openlocfilehash: 90d7f843c91956b679fe794c68adab12d85122b7
-ms.sourcegitcommit: 65ed563a8a1d4d90f872a2a6edcb086f84ec9f77
+ms.openlocfilehash: cf46c4f388c4607dbb8fb0e7f439603e5964ea03
+ms.sourcegitcommit: 3caf5261b3ea80d9cf14038c116ba981d655cd13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66741742"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70907666"
 ---
 # <a name="adding-an-mfc-message-handler"></a>MFC İleti İşleyicisi Ekleme
 
-Yapabilecekleriniz [ileti işleyicisi eklemek için Özellikler penceresini kullanın](../../mfc/reference/mapping-messages-to-functions.md) (Windows iletilerini işleme bir üye işlevi) bir sınıf ve harita Windows iletilerini-ileti işleyicisi. Ayrıca ekleyebilirsiniz [herhangi bir iletişim kutusu denetimi için bir olay işleyicisi](../../windows/adding-event-handlers-for-dialog-box-controls.md).
+Bir sınıfa bir ileti işleyicisi (Windows iletilerini işleyen bir üye işlevi) eklemek ve Windows iletilerini ileti işleyicisine eşlemek için sınıf **görünümü** ' nde [sınıf Sihirbazı](mfc-class-wizard.md) ' nı veya **Özellikler** penceresini kullanabilirsiniz. [Herhangi bir iletişim kutusu denetimi için de bir olay işleyicisi](../../windows/adding-event-handlers-for-dialog-box-controls.md)ekleyebilirsiniz. 
 
-İleti ve olay işleme işlevleri tanımlamak için Özellikler penceresini kullanarak, otomatik olarak ileti gönderme tabloyu (veya ileti eşlemesi) güncelleştirebilir ve sınıfı, üst bilgi dosyası.
+İleti **sihirbazını** veya **Özellikler** penceresini kullanarak ( **sınıf görünümü**) ileti ve olay işleme işlevlerini tanımlamak için ileti gönderme tablosunu (veya ileti haritasını) ve sınıf üst bilgi dosyanızı otomatik olarak güncelleştirebilirsiniz.
 
 > [!NOTE]
->  Özellikler penceresini kullanarak bir ATL sınıfı için ileti işleyicisi ekleyebilirsiniz; Ancak, bazı sonuçlar farklılık gösterebilir. Daha fazla bilgi için ATL konusuna [ATL ileti işleyicisi ekleme](../../atl/adding-an-atl-message-handler.md).
+>  Sınıf Sihirbazı 'nı kullanarak ATL sınıfına bir ileti işleyicisi ekleyebilirsiniz; Ancak bazı sonuçlar farklılık gösterebilir. Daha fazla bilgi için, [ATL Ileti Işleyicisi ekleme](../../atl/adding-an-atl-message-handler.md)ATL konusuna bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Kod Sihirbazlarıyla İşlevsellik Ekleme](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>
 [Sınıf ekleme](../../ide/adding-a-class-visual-cpp.md)<br/>
-[Üye işlevi ekleme](../../ide/adding-a-member-function-visual-cpp.md)<br/>
+[Üye Işlevi ekleme](../../ide/adding-a-member-function-visual-cpp.md)<br/>
 [Üye değişkeni ekleme](../../ide/adding-a-member-variable-visual-cpp.md)<br/>
-[Bir sanal işlevi geçersiz kılma](../../ide/overriding-a-virtual-function-visual-cpp.md)<br/>
+[Sanal Işlevi geçersiz kılma](../../ide/overriding-a-virtual-function-visual-cpp.md)<br/>
 [Sınıf yapısında gezinme](../../ide/navigate-code-cpp.md)<br/>
 [İletişim Kutusu Düzenleyicisi](../../windows/dialog-editor.md)

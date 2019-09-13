@@ -1,56 +1,56 @@
 ---
-title: 'Nasıl yapılır: Hızlı Erişim Araç çubuğunu özelleştirme'
-ms.date: 11/19/2018
+title: 'Nasıl yapılır: Hızlı erişim araç çubuğunu özelleştirme'
+ms.date: 09/07/2019
 helpviewer_keywords:
 - quick access toolbar [MFC], customization
 ms.assetid: 2554099b-0c89-4605-9249-31bf9cbcefe0
-ms.openlocfilehash: c53e405eafe310c0bfc03a916ab85181ae67a34b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8b2eb6f7c80c77f69e2bbb65b7bb31a385014c8c
+ms.sourcegitcommit: 3caf5261b3ea80d9cf14038c116ba981d655cd13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62396432"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70907774"
 ---
-# <a name="how-to-customize-the-quick-access-toolbar"></a>Nasıl yapılır: Hızlı Erişim Araç çubuğunu özelleştirme
+# <a name="how-to-customize-the-quick-access-toolbar"></a>Nasıl yapılır: Hızlı erişim araç çubuğunu özelleştirme
 
-Hızlı Erişim Araç çubuğu (QAT) ya da uygulama düğmesinin yanındaki veya kategori sekmeleri altında görüntülenen komutları kümesini içeren özelleştirilebilir bir araç çubuğudur. Aşağıdaki çizim, tipik bir hızlı erişim araç çubuğu gösterir.
+Hızlı erişim araç çubuğu (QAT), uygulama düğmesinin yanında veya kategori sekmelerinde görüntülenen bir komutlar kümesi içeren özelleştirilebilir bir araç çubuğudur. Aşağıdaki çizimde tipik bir hızlı erişim araç çubuğu gösterilmektedir.
 
-![MFC Şerit hızlı erişim araç çubuğu](../mfc/media/quick_access_toolbar.png "MFC Şerit hızlı erişim araç çubuğu")
+![MFC Şeridi hızlı erişim araç çubuğu](../mfc/media/quick_access_toolbar.png "MFC Şeridi hızlı erişim araç çubuğu")
 
-Hızlı Erişim Araç çubuğu özelleştirmek için açılır **özellikleri** penceresinde, alt komutları değiştirebilir ve ardından Şerit denetiminin önizlemesini.
+Hızlı erişim araç çubuğunu özelleştirmek için, **Özellikler** penceresinde açın, komutlarını değiştirin ve ardından şerit denetimini önizleyin.
 
-### <a name="to-open-the-quick-access-toolbar-in-the-properties-window"></a>Özellikler penceresinde hızlı erişim araç çubuğunu açmak için
+### <a name="to-open-the-quick-access-toolbar-in-the-properties-window"></a>Özellikler penceresi hızlı erişim araç çubuğunu açmak için
 
-1. Visual Studio'da üzerinde **görünümü** menüsünde tıklatın **kaynak görünümü**.
+1. Visual Studio 'da, **Görünüm** menüsünde **kaynak görünümü**' a tıklayın.
 
-1. İçinde **kaynak görünümü**, tasarım yüzeyinde görüntülemek için Şerit kaynağını çift tıklayın.
+1. **Kaynak görünümü**, şerit kaynağına çift tıklayarak tasarım yüzeyinde görüntüleyin.
 
-1. Tasarım yüzeyinde, hızlı erişim araç çubuğu menüsü sağ tıklayın ve ardından **özellikleri**.
+1. Tasarım yüzeyinde, hızlı erişim araç çubuğu menüsüne sağ tıklayıp **Özellikler**' e tıklayın.
 
-## <a name="quick-access-toolbar-properties"></a>Hızlı Erişim Araç çubuğu özellikleri
+## <a name="quick-access-toolbar-properties"></a>Hızlı erişim araç çubuğu özellikleri
 
-Aşağıdaki tabloda, hızlı erişim araç özelliklerini tanımlar.
+Aşağıdaki tablo, hızlı erişim araç çubuğunun özelliklerini tanımlar.
 
 |Özellik|Tanım|
 |--------------|----------------|
-|QAT konumu|Uygulama başladığında hızlı erişim araç çubuğu konumunu belirtir. Konumu olabilir **yukarıda** veya **aşağıda** Şerit denetimi.|
-|QAT öğeleri|Hızlı Erişim Araç çubuğu için mevcut olan komutları belirtir.|
+|QAT konumu|Uygulama başladığında hızlı erişim araç çubuğunun konumunu belirtir. Konum, şerit denetiminin **üzerinde** ya da **altında** olabilir.|
+|QAT öğeleri|Hızlı erişim araç çubuğu için kullanılabilen komutları belirtir.|
 
-#### <a name="to-add-or-remove-commands-on-the-quick-access-toolbar"></a>Ekleme veya hızlı erişim araç çubuğundaki komutları kaldırma
+#### <a name="to-add-or-remove-commands-on-the-quick-access-toolbar"></a>Hızlı erişim araç çubuğuna komut eklemek veya kaldırmak için
 
-1. İçinde **özellikleri** penceresinde tıklayın **QAT öğeleri**ve ardından üç nokta düğmesine **(...)** .
+1. **Özellikler** penceresinde **qat öğeleri**' ne ve ardından üç nokta düğmesini **(...)** tıklayın.
 
-1. İçinde **QAT öğe Düzenleyicisi** iletişim kutusunda **Ekle** ve **Kaldır** hızlı erişim araç çubuğu üzerinde komutların listesini değiştirmek için düğmeler.
+1. **Qat öğeleri Düzenleyicisi** iletişim kutusunda, hızlı erişim araç çubuğundaki komutların listesini değiştirmek için **Ekle** ve **Kaldır** düğmelerini kullanın.
 
-1. Bir komut hem hızlı erişim araç çubuğu ve hızlı erişim araç çubuğu menüsünde görünmesini istiyorsanız, komut yanındaki kutuyu seçin. Komutun yalnızca menüde görünmesini istiyorsanız, kutunun işaretini kaldırın.
+1. Bir komutun hem hızlı erişim araç çubuğunda hem de hızlı erişim araç çubuğu menüsünde görünmesini istiyorsanız komutun yanındaki kutuyu seçin. Komutun yalnızca menüde görünmesini istiyorsanız, kutuyu temizleyin.
 
-## <a name="previewing-the-ribbon"></a>Önizleme şeridi
+## <a name="previewing-the-ribbon"></a>Şeridin önizlemesi
 
-Hızlı Erişim Araç çubuğu komutlarını tasarım yüzeyinde görünmez. Bunları görüntülemek için şeridi önizlemenizi veya uygulamayı çalıştırın.
+Hızlı erişim araç çubuğu komutları tasarım yüzeyinde görünmez. Bunları görüntülemek için, Şeriti önizlemeniz veya uygulamayı çalıştırmanız gerekir.
 
-#### <a name="to-preview-the-ribbon-control"></a>Şerit denetiminin önizlemesini görüntülemek için
+#### <a name="to-preview-the-ribbon-control"></a>Şerit denetimini önizlemek için
 
-- Üzerinde **Şerit Düzenleyici araç çubuğu**, tıklayın **şeridi Sına**.
+- **Şerit Düzenleyicisi araç çubuğunda**, **test şeridi**' ne tıklayın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

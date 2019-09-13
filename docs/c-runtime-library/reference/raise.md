@@ -1,6 +1,6 @@
 ---
 title: tetikle
-ms.date: 1/02/2018
+ms.date: 01/02/2018
 apiname:
 - raise
 apilocation:
@@ -23,19 +23,19 @@ helpviewer_keywords:
 - raise function
 - signals
 - programs [C++], sending signals to executing programs
-ms.openlocfilehash: 68d1cc653b955e607648e4d30562d2b77e3520e2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: 1354c76207d6cd59249f6c06df88ae23fe69b1e0
+ms.sourcegitcommit: effb516760c0f956c6308eeded48851accc96b92
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62358066"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70927425"
 ---
 # <a name="raise"></a>tetikle
 
-Çalışan programa bir sinyal gönderir.
+Yürütülen programa bir sinyal gönderir.
 
 > [!NOTE]
-> Bu yöntem, test veya hata ayıklama senaryoları dışında bir Microsoft Store uygulamasını kapatmak için kullanmayın. Bir Store uygulamasını kapatmak için programlama veya UI yollarına göre izin verilmez [Microsoft Store ilkeleri](/legal/windows/agreements/store-policies). Daha fazla bilgi için [UWP uygulama yaşam döngüsü](/windows/uwp/launch-resume/app-lifecycle).
+> Test veya hata ayıklama senaryoları dışında Microsoft Store uygulamasını kapatmak için bu yöntemi kullanmayın. Bir mağaza uygulamasını kapatmak için programlı veya Kullanıcı arabirimi yollarına [Microsoft Store ilkelerine](/legal/windows/agreements/store-policies)göre izin verilmez. Daha fazla bilgi için bkz. [UWP uygulama yaşam döngüsü](/windows/uwp/launch-resume/app-lifecycle).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -47,33 +47,33 @@ int raise(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sig*<br/>
-Oluşturulacak sinyal.
+*za*<br/>
+Ortaya çıkan sinyal.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, **yükseltmek** 0 döndürür. Aksi takdirde, sıfır olmayan bir değer döndürür.
+Başarılı olursa, **Raise** 0 döndürür. Aksi takdirde, sıfır dışında bir değer döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Yükseltmek** işlev gönderir *sig* yürüten programa. Önceki bir çağrı, **sinyal** için bir sinyal işleme işlevi yüklediği *sig*, **yükseltmek** bu işlevi yürütür. Herhangi işleyici işlevi yüklenmemişse, sinyal değeri ile ilişkilendirmiş varsayılan eylem *sig* , şekilde alınır.
+**Raise** işlevi, çalıştırılan programa *SIG* gönderir. Önceki bir **sinyal** çağrısı *SIG*için bir sinyal işleme işlevi yüklemiştir **, bu** işlevi yürütür. Hiçbir işleyici işlevi yüklenmemişse, *SIG* sinyal değeri ile ilişkili varsayılan eylem aşağıdaki şekilde alınır.
 
-|Sinyal|Açıklama|Varsayılan|
+|sinyalinin|Açıklama|Varsayılan|
 |------------|-------------|-------------|
 |**SIGABRT**|Olağan dışı sonlandırma|Çağıran programı çıkış kodu 3 ile sonlandırır|
-|**SIGFPE**|Kayan nokta hatası|Çağırma programını sonlandırır|
-|**SIGILL**|Geçersiz yönerge|Çağırma programını sonlandırır|
-|**SIGINT**|CTRL + C kesme|Çağırma programını sonlandırır|
-|**SIGSEGV**|Geçersiz depo erişimi|Çağırma programını sonlandırır|
-|**SIGTERM**|Programa gönderilen sonlandırma isteği|Sinyali yok sayıyor|
+|**SIGFPE**|Kayan nokta hatası|Çağıran programı sonlandırır|
+|**SIGILL**|Geçersiz yönerge|Çağıran programı sonlandırır|
+|**SIGINT**|CTRL + C kesme|Çağıran programı sonlandırır|
+|**SIGSEGV**|Geçersiz depolama erişimi|Çağıran programı sonlandırır|
+|**SIGTERM**|Programa sonlandırma isteği gönderildi|Sinyali yoksayar|
 
-Bağımsız değişken yukarıda belirtildiği gibi geçerli bir sinyal değilse, geçersiz parametre işleyicisi açıklandığı gibi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). İşlenmezse, işlev ayarlar **errno** için **EINVAL** ve sıfır olmayan bir değer döndürür.
+Bağımsız değişken yukarıda belirtilen geçerli bir sinyal değilse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. İşlenmezse, işlev **errno** 'ya **EINVAL** olarak ayarlar ve sıfır dışında bir değer döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**raise**|\<Signal.h >|
+|**raise**|\<sinyal. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

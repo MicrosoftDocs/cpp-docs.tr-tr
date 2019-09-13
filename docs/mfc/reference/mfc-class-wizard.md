@@ -1,108 +1,111 @@
 ---
 title: MFC Sınıf Sihirbazı
-ms.date: 11/04/2016
+ms.date: 09/06/2019
 f1_keywords:
 - vc.wizards.classwizard
 helpviewer_keywords:
-- wizards (MFC)
 - MFC Class Wizard
 ms.assetid: 8b0dd867-5d07-4214-99be-2a1c1995e6d9
-ms.openlocfilehash: 59f0b39afe467267d61d7b851e654cc8bddc7b36
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: be829156d8fea8188a217b2c0a189ac5d6057a7e
+ms.sourcegitcommit: 3caf5261b3ea80d9cf14038c116ba981d655cd13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62412734"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70907994"
 ---
 # <a name="mfc-class-wizard"></a>MFC Sınıf Sihirbazı
 
-Projeniz içerisindeki sınıflar iletileri ve ileti işleyicileri eklemenizi sağlar. Ayrıca, diğer sihirbazları başlatmak veya projenize bir sınıf ekleyin.
+Yeni MFC sınıfları oluşturmak veya projenizdeki mevcut sınıflara ileti ve ileti işleyicileri eklemek için **sınıf Sihirbazı** 'nı kullanın.
 
-Açmak için **MFC Sınıf Sihirbazı**, **proje** menüsünü tıklatın **sınıf Sihirbazı**. Bir klavye kısayolu sihirbazını açmak için CTRL + SHIFT + X yazın.
+**Sınıf Sihirbazı**'nı açmak için üç yol vardır:
+
+- **Proje** menüsünde **sınıf Sihirbazı**' nı seçin.
+- **CTRL** > SHIFTX > yazın.
+- **Sınıf görünümü**' de, bir sınıfa veya proje düğümüne sağ tıklayın ve **sınıf Sihirbazı**' nı seçin.
+
+![Sınıf Sihirbazı](media/class-wizard.png "MFC sınıf Sihirbazı")
 
 ## <a name="uielement-list"></a>UIElement Listesi
 
 - **Project**
 
-   Çözümünüzde bir proje adı.
+   Çözümünüzdeki projenin adı.
 
-   Aşağı açılan liste kutusundan çözümünüzdeki diğer projelere seçebilirsiniz.
+   Çözümünüzde açılan liste kutusundan diğer projeleri seçebilirsiniz.
 
 - **Sınıf adı**
 
-   Projenizdeki bir sınıf adı.
+   Projenizdeki bir sınıfın adı.
 
-   Bir sınıfta seçtiğinizde **sınıf adı** listesinde, veri sınıfından doldurur denetimlerinde **MFC Sınıf Sihirbazı**. Bir denetimin değerini değiştirdiğinizde, seçilen bir sınıf içinde veri etkilenir.
+   **Sınıf adı** listesinde bir sınıf seçtiğinizde, sınıftaki veriler, **MFC sınıf Sihirbazı**'ndaki denetimleri doldurur. Bir denetimin değerini değiştirdiğinizde, seçili sınıftaki veriler etkilenir.
 
-- **Sınıf ekleme**
+- **Sınıf Ekle**
 
-   Çeşitli kaynaklardan birinden bir sınıfa eklemenizi sağlar.
-
-   Yaptığınız seçime bağlı olarak **MFC sınıf Ekleme Sihirbazı**, **Typelib sihirbazın sınıfı Ekle**, **ekleme sınıfı gelen ActiveX Denetim Sihirbazı**, veya **MFC ODBC Tüketici Sihirbazı** başlatılır.
+   MFC projenize yeni bir sınıf eklemenizi sağlar.
 
 - **Temel sınıf**
 
-   Görüntülenen sınıfın temel sınıf **sınıf adı**.
+   **Sınıf adında**görüntülenen sınıfın temel sınıfı.
 
 - **Sınıf bildirimi**
 
-   Sınıfta **sınıf adı** sınıfı bildirilir.
+   **Sınıf adı** sınıfının bildirildiği sınıf.
 
-   **Sınıf bildiriminin** kutusu yalnızca adlarında adı farklıysa görüntülenir **sınıf uygulamasını**.
+   **Sınıf bildirim** kutusu yalnızca içindeki ad, **sınıf uygulamasındaki**addan farklıysa görüntülenir.
 
 - **Kaynak**
 
-   Kaynak Kimliği **sınıf adı**, varsa. Aksi takdirde, **kaynak** kutusu boştur.
+   Varsa, **sınıf adındaki**kaynağın kimliği. Aksi takdirde, **kaynak** kutusu boştur.
 
 - **Sınıf uygulama**
 
-   Sınıfta uygulamasını içeren dosyanın adını **sınıf adı**.
+   Sınıf **adındaki**sınıfın uygulamasını içeren dosyanın adı.
 
-   Oka tıklanarak farklı uygulama dosyasını seçebilirsiniz. Aşağıdaki tablo, kullanılabilen seçenekleri listeler.
+   Oka tıklayarak farklı bir uygulama dosyası seçebilirsiniz. Aşağıdaki tabloda kullanılabilir seçenekler listelenmektedir.
 
    |Seçenek|Açıklama|
    |------------|-----------------|
-   |**Dosya Aç**|Sınıf Sihirbazı çıkar ve geçerli sınıf uygulaması dosya açılır.|
-   |**İçeren klasörü aç**|Geçerli sınıf uygulama dosyasını içeren klasörü açar.|
-   |**Tam yolu Panoya Kopyala**|Geçerli uygulama dosyasının yolunu Panoya kopyalar.|
+   |**Dosya Aç**|Sınıf sihirbazından çıkar ve geçerli sınıf uygulama dosyasını açar.|
+   |**Içeren klasörü aç**|Geçerli sınıf uygulama dosyasını içeren klasörü açar.|
+   |**Tam yolu panoya kopyala**|Geçerli uygulama dosyasının yolunu panoya kopyalar.|
 
-- **Komutları**
+- **Komut**
 
-   Eklemek, silmek, düzenlemek veya bir komut ve kendi ileti işleyicisi için arama sağlar.
+   Bir komutu ve ileti işleyicisini eklemenizi, silmenizi, düzenlemenizi veya aramanızı sağlar.
 
-   Bir işleyici eklemek için tıklatın **işleyici Ekle**, veya bir öğeye çift **nesne kimlikleri** listesi veya **iletileri** listesi. Sonuçta elde edilen işlev adı, Kimliğini ve ileti görüntülenen **üye işlevleri** listesi.
+   Bir işleyici eklemek için **Işleyici Ekle**' ye tıklayın veya **nesne kimlikleri** listesi veya **iletiler** listesindeki bir öğeye çift tıklayın. Sonuç işlevi adı, KIMLIĞI ve iletisi, **üye işlevleri** listesinde görüntülenir.
 
-   Bir işleyici silmek için bir öğe seçin **üye işlevleri** listeleyin ve ardından **Sil işleyici**.
+   Bir işleyiciyi silmek için **üye işlevleri** listesinden bir öğe seçin ve ardından **işleyiciyi Sil**' e tıklayın.
 
-   Bir işleyici değiştirmek için karşılık gelen öğe ile çift **üye işlevleri** listesi. Veya, liste kutusunda bir öğe seçin ve ardından **kodunu Düzenle**.
+   Bir işleyiciyi değiştirmek için **üye işlevleri** listesinde karşılık gelen öğeye çift tıklayın. Veya liste kutusunda bir öğe seçin ve ardından **kodu Düzenle**' ye tıklayın.
 
 - **İletiler**
 
-   Ekleme, silme, düzenleme veya bir ileti ve kendi ileti işleyicisi için arama sağlar.
+   İleti ve ileti işleyicisini eklemenizi, silmenizi, düzenlemenizi veya aramanızı sağlar.
 
-   Bir işleyici eklemek için tıklatın **işleyici Ekle**, veya bir öğeye çift **iletileri** listesi.
+   Bir işleyici eklemek için **Işleyici Ekle**' ye tıklayın veya **iletiler** listesindeki bir öğeye çift tıklayın.
 
-   Özel bir ileti eklemek için tıklatın **özel ileti Ekle** veya Enter tuşuna basın ve ardından değerleri belirtin **özel ileti Ekle** iletişim kutusu. Bu iletişim kutusunda de seçebilirsiniz **kayıtlı ileti** boyunca işletim sistemi benzersiz olması garanti bir pencere iletisini işlemek için.
+   Özel bir ileti eklemek için **özel Ileti Ekle** ' ye tıklayın veya ENTER tuşuna basın ve ardından **özel ileti Ekle** iletişim kutusunda değerleri belirtin. Bu iletişim kutusunda, işletim sistemi genelinde benzersiz olması garanti edilen bir pencere iletisini işlemek için **kayıtlı ileti** ' i de seçebilirsiniz.
 
 - **Sanal İşlevler**
 
-   Ekleme, silme, düzenleme veya sanal bir işlev veya geçersiz kılınan bir sanal işlev arayın sağlar.
+   Sanal bir işlev veya geçersiz kılınan bir sanal işlev eklemenize, silmenize, düzenlemenize veya aramanıza olanak tanır.
 
 - **Üye değişkenleri**
 
-   Ekleme, silme, düzenleme veya bir üye değişkeni için arama sağlar.
+   Bir üye değişkeni eklemenizi, silmenizi, düzenlemenizi veya aramanızı sağlar.
 
 - **Yöntemler**
 
-   Ekleme, silme, veya aramak için bir yöntem ve tanımı veya bir yöntem bildirimi de Git sağlar.
+   Bir Yöntemi eklemenize, silmenize veya aramanıza izin verir ve ayrıca bir metodun tanımına veya bildirimine gidebilirsiniz.
 
-   Bir yöntem eklemek için tıklatın **Ekle yöntemi**ve değerleri belirtin **Ekle yöntemi** iletişim kutusu.
+   Bir yöntem eklemek **için yöntem Ekle ' ye tıklayın ve**ardından **Yöntem Ekle** iletişim kutusunda değerleri belirtin.
 
-   Bir yöntemi silmek için bir öğe seçin **yöntemleri** listeleyin ve ardından **Delete yöntemini**.
+   Bir yöntemi silmek için, **Yöntemler** listesinden bir öğe seçin ve ardından **yöntemi Sil**' e tıklayın.
 
-   Bir bildirimi görüntülemek için bir öğe seçin **yöntemleri** listeleyin ve ardından **bildirimine gidin.**
+   Bir bildirimi göstermek için, **Yöntemler** listesinden bir öğe seçin ve ardından **bildirime git ' e tıklayın.**
 
-   Bir tanımı görüntülemek için bir öğeye çift **yöntemleri** listesi. Veya, bir öğe seçin **yöntemleri** listeleyin ve ardından **Tanıma Git** düğmesi.
+   Bir tanımı göstermek için, **Yöntemler** listesindeki bir öğeye çift tıklayın. İsterseniz, **Yöntemler** listesinden bir öğe seçin ve ardından **Tanıma Git** düğmesine tıklayın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

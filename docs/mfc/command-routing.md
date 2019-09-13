@@ -1,6 +1,6 @@
 ---
 title: Komut Yönlendirme
-ms.date: 11/04/2016
+ms.date: 09/06/2019
 helpviewer_keywords:
 - MFC, command routing
 - command handling [MFC], routing commands
@@ -8,40 +8,40 @@ helpviewer_keywords:
 - handlers, command [MFC]
 - command routing
 ms.assetid: 9393a956-bdd4-47c5-9013-dbd680433f93
-ms.openlocfilehash: ae9741a66e944b60dc38c1366353e43977e1ee7a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8d1e1e59c56439c01655a1416df645ccc6922411
+ms.sourcegitcommit: 3caf5261b3ea80d9cf14038c116ba981d655cd13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62165161"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70907627"
 ---
 # <a name="command-routing"></a>Komut Yönlendirme
 
-İleti eşleme bağlantıları komutları ve Özellikler penceresini kullanın görev bunların işleyici işlevlerine arasında yapmaya komutları ile çalışırken sizin sorumluluğunuzdadır sınırlıdır. Ayrıca, çoğu komut işleyicisi yazmanız gerekir.
+Komutlarla çalışma sorumluluğu,, [MFC sınıf Sihirbazı 'nı](reference/mfc-class-wizard.md)kullandığınız bir görev olan komutlar ve kendi işleyici işlevleri arasında ileti eşleme bağlantıları yapmaya sınırlandırılmıştır. Ayrıca komut işleyicileri için kod yazmanız gerekir.
 
-Windows iletileri, genellikle ana çerçeve penceresine gönderilir, ancak komut iletilerini sonra diğer nesnelere yönlendirilir. Framework biri de komut için bir işleyici sahip olması bekleniyor standart bir dizi komut hedefi nesnelerin komutları yönlendirir. Her komut hedefi nesnesi gelen ileti başa durumunda görmek için ileti eşlemesi denetler.
+Windows iletileri genellikle ana çerçeve penceresine gönderilir, ancak komut iletileri daha sonra diğer nesnelere yönlendirilir. Çerçeve komutları komut hedefi nesnelerinin standart dizisi aracılığıyla yönlendirir, bunlardan biri komut için bir işleyiciye sahip olması beklenir. Her komut hedefi nesnesi, gelen iletiyi işleyebileceğini görmek için ileti haritasını denetler.
 
-Farklı komut hedefi sınıfları, farklı zamanlarda, kendi ileti eşlemeleri denetleyin. Genellikle, bir sınıf, diğer bazı nesnelere bunları komutunun ilk şans verin komutu yönlendirir. Bu nesneler hiçbiri komutu işliyorsa, özgün sınıf kendi ileti eşlemesi denetler. Bir işleyici bilmiyorsanız, ardından, bu komut için henüz daha fazla komut hedefleri yol. Tablo [standart komut yönlendirme](#_core_standard_command_route) aşağıda sınıfların her birini nasıl bu dizisi yapıları gösterir. İçinde komut hedefi bir komut yolları genel sırası şöyledir:
+Farklı komut hedefi sınıfları, kendi ileti haritalarını farklı zamanlarda denetler. Genellikle, bir sınıf komutu, komuta ilk şans vermek için belirli diğer nesnelere yönlendirir. Bu nesnelerden hiçbiri komutu işleiyorsa, özgün sınıf kendi ileti haritasını denetler. Ardından, işleyicinin kendisi sağlayamadıysa, komutu henüz daha fazla komut hedeflerine yönlendirebilir. Aşağıdaki tablo [standart komut yolu](#_core_standard_command_route) , sınıfların her birinin bu sırayı nasıl yapısını gösterir. Komut hedefinin bir komutun yönlendirme genel sırası:
 
-1. Şu anda etkin alt komut hedef nesnesi için.
+1. Şu anda etkin olan alt komut, hedef nesne.
 
-1. Kendisi için.
+1. .
 
-1. Diğer komut hedefleri için.
+1. Diğer komut hedeflerine.
 
-Yönlendirme maliyeti, pahalı bir komutuna yanıt olarak işleyicinizi yaptığı için yönlendirme Bu mekanizma ile karşılaştırıldığında ne düşüktür. Aklınızda yalnızca kullanıcı bir kullanıcı arabirimi nesnesi ile etkileşim kurduğunda framework komutları oluşturur size aittir.
+Bu yönlendirme mekanizması, işleyicinizin bir komuta yanıt olarak ne kadar pahalı olduğuna kıyasla, yönlendirmenin maliyeti düşüktür. Framework 'ün yalnızca Kullanıcı bir kullanıcı arabirimi nesnesiyle etkileşime geçtiğinde komutlar ürettiğini göz önünde bulundurun.
 
-### <a name="_core_standard_command_route"></a> Standart komut yönlendirme
+### <a name="_core_standard_command_route"></a>Standart komut yolu
 
-|Bu türde bir nesne bir komutunu aldığında. biçimindeki telefon numarasıdır. biçimindeki telefon numarasıdır.|Kendisi ve diğer komut hedef nesnesi bu sırayla komutunu işlemek için bir fırsat sunar:|
+|Bu türden bir nesne bir komut aldığında. biçimindeki telefon numarasıdır. biçimindeki telefon numarasıdır.|Kendisine ve diğer komut hedefi nesnelerine bu sırada komutu işleme şansı verir:|
 |----------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
-|MDI çerçeve penceresinin (`CMDIFrameWnd`)|1.  Etkin `CMDIChildWnd`<br />2.  Bu çerçeve penceresi<br />3.  Uygulama (`CWinApp` nesne)|
-|Belge çerçeve penceresi (`CFrameWnd`, `CMDIChildWnd`)|1.  Etkin görünüm<br />2.  Bu çerçeve penceresi<br />3.  Uygulama (`CWinApp` nesne)|
-|Görüntüle|1.  Bu görünüm<br />2.  Görünüme iliştirilmiş belgeye|
-|Belge|1.  Bu belge<br />2.  Belgeye ekli belge şablonu|
-|İletişim kutusu|1.  Bu iletişim kutusu<br />2.  İletişim kutusuna sahip penceresi<br />3.  Uygulama (`CWinApp` nesne)|
+|MDI çerçevesi penceresi (`CMDIFrameWnd`)|1.  Bkz`CMDIChildWnd`<br />2.  Bu çerçeve penceresi<br />3.  Uygulama (`CWinApp` nesne)|
+|Belge çerçevesi penceresi (`CFrameWnd`, `CMDIChildWnd`)|1.  Etkin görünüm<br />2.  Bu çerçeve penceresi<br />3.  Uygulama (`CWinApp` nesne)|
+|Görüntüle|1.  Bu görünüm<br />2.  Görünüme eklenen belge|
+|Belge|1.  Bu belge<br />2.  Belgeye iliştirilmiş belge şablonu|
+|İletişim kutusu|1.  Bu iletişim kutusu<br />2.  İletişim kutusunun sahibi olan pencere<br />3.  Uygulama (`CWinApp` nesne)|
 
-Önceki tablonun ikinci sütunda numaralı girişleri bahsetmek burada ilk sütununda karşılık gelen öğe bir belge gibi diğer nesneler bakın. Örneğin, ikinci sütun, görünüm, belge için bir komut iletir okurken, daha fazla yönlendirme izlemek için ilk sütunda "Belge" girdisine bakın.
+Yukarıdaki tablonun ikinci sütununda numaralandırılmış girişlerin bir belge gibi diğer nesnelerden bahsetme yeri, ilk sütunda karşılık gelen öğeye bakın. Örneğin, görünümün bir komutu belgeye iletme ikinci sütununda okuduğunuzda, yönlendirmeyi daha fazla izlemek için ilk sütundaki "belge" girdisine bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

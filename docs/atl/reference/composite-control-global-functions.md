@@ -18,12 +18,12 @@ f1_keywords:
 helpviewer_keywords:
 - composite controls, global functions
 ms.assetid: 536884cd-e863-4c7a-ab0a-604dc60a0bbe
-ms.openlocfilehash: 58c7fed2d6e95967101e98589a13c114fe2e9a8a
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 525fc01247053a1e2bc993398978cb332262a1a5
+ms.sourcegitcommit: effb516760c0f956c6308eeded48851accc96b92
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69496647"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70927778"
 ---
 # <a name="composite-control-global-functions"></a>Bileşik denetim genel Işlevleri
 
@@ -156,18 +156,18 @@ ATLAPI AtlAxCreateControl(
 *lpszName*<br/>
 Denetime geçirilecek dizeye yönelik bir işaretçi. Aşağıdaki yollarla biçimlendirilmelidir:
 
-- "MSCAL" gibi bir ProgID. Takvim. 7 "
+- Gibi bir ProgID`"MSCAL.Calendar.7"`
 
-- "{8E27C92B-1264-101C-8A2F-040224009C02}" gibi bir CLSID
+- Gibi bir CLSID`"{8E27C92B-1264-101C-8A2F-040224009C02}"`
 
-- Gibi bir URL "<http://www.microsoft.com>"
+- Gibi bir URL`"<https://www.microsoft.com>"`
 
-- "File://\\\belgelerim\mydoc.doc" gibi etkin bir belgeye başvuru
+- Gibi etkin bir belgeye başvuru`"file://\\\Documents\MyDoc.doc"`
 
-- HTML 'nin bir parçası olan\<"MSHTML: HTML >\<body >, bir metin\</body >\</HTML >"
+- Şöyle bir HTML parçası`"MSHTML:\<HTML>\<BODY>This is a line of text\</BODY>\</HTML>"`
 
    > [!NOTE]
-   > "MSHTML:", bir MSHTML akışı olarak belirlenmiş olacak şekilde HTML parçasının önüne gelmelidir.
+   > `"MSHTML:"`bir MSHTML akışı olarak belirlenmiş olması için HTML parçasının önüne gelmelidir.
 
 *lendiği*<br/>
 'ndaki Denetimin iliştirilecektir pencerenin tutamacı.
@@ -208,18 +208,18 @@ ATLAPI AtlAxCreateControlEx(
 *lpszName*<br/>
 Denetime geçirilecek dizeye yönelik bir işaretçi. Aşağıdaki yollarla biçimlendirilmelidir:
 
-- "MSCAL" gibi bir ProgID. Takvim. 7 "
+- Gibi bir ProgID`"MSCAL.Calendar.7"`
 
-- "{8E27C92B-1264-101C-8A2F-040224009C02}" gibi bir CLSID
+- Gibi bir CLSID`"{8E27C92B-1264-101C-8A2F-040224009C02}"`
 
-- Gibi bir URL "<http://www.microsoft.com>"
+- Gibi bir URL`"<https://www.microsoft.com>"`
 
-- "File://\\\belgelerim\mydoc.doc" gibi etkin bir belgeye başvuru
+- Gibi etkin bir belgeye başvuru`"file://\\\Documents\MyDoc.doc"`
 
-- HTML 'nin bir parçası olan\<"MSHTML: HTML >\<body >, bir metin\</body >\</HTML >"
+- Şöyle bir HTML parçası`"MSHTML:\<HTML>\<BODY>This is a line of text\</BODY>\</HTML>"`
 
    > [!NOTE]
-   > "MSHTML:", bir MSHTML akışı olarak belirlenmiş olacak şekilde HTML parçasının önüne gelmelidir.
+   > `"MSHTML:"`bir MSHTML akışı olarak belirlenmiş olması için HTML parçasının önüne gelmelidir.
 
 *lendiği*<br/>
 'ndaki Denetimin iliştirilecektir pencerenin tutamacı.
@@ -267,18 +267,18 @@ ATLAPI AtlAxCreateControlLic(
 *lpszName*<br/>
 Denetime geçirilecek dizeye yönelik bir işaretçi. Aşağıdaki yollarla biçimlendirilmelidir:
 
-- "MSCAL" gibi bir ProgID. Takvim. 7 "
+- Gibi bir ProgID`"MSCAL.Calendar.7"`
 
-- "{8E27C92B-1264-101C-8A2F-040224009C02}" gibi bir CLSID
+- Gibi bir CLSID`"{8E27C92B-1264-101C-8A2F-040224009C02}"`
 
-- Gibi bir URL "<http://www.microsoft.com>"
+- Gibi bir URL`"<https://www.microsoft.com>"`
 
-- "File://\\\belgelerim\mydoc.doc" gibi etkin bir belgeye başvuru
+- Gibi etkin bir belgeye başvuru`"file://\\\Documents\MyDoc.doc"`
 
-- HTML 'nin bir parçası olan\<"MSHTML: HTML >\<body >, bir metin\</body >\</HTML >"
+- Şöyle bir HTML parçası`"MSHTML:\<HTML>\<BODY>This is a line of text\</BODY>\</HTML>"`
 
    > [!NOTE]
-   > "MSHTML:", bir MSHTML akışı olarak belirlenmiş olacak şekilde HTML parçasının önüne gelmelidir.
+   > `"MSHTML:"`bir MSHTML akışı olarak belirlenmiş olması için HTML parçasının önüne gelmelidir.
 
 *lendiği*<br/>
 Denetimin iliştirilecektir pencerenin tutamacı.
@@ -321,18 +321,18 @@ ATLAPI AtlAxCreateControlLicEx(
 *lpszName*<br/>
 Denetime geçirilecek dizeye yönelik bir işaretçi. Aşağıdaki yollarla biçimlendirilmelidir:
 
-- "MSCAL" gibi bir ProgID. Takvim. 7 "
+- Gibi bir ProgID`"MSCAL.Calendar.7"`
 
-- "{8E27C92B-1264-101C-8A2F-040224009C02}" gibi bir CLSID
+- Gibi bir CLSID`"{8E27C92B-1264-101C-8A2F-040224009C02}"`
 
-- Gibi bir URL "<http://www.microsoft.com>"
+- Gibi bir URL`"<https://www.microsoft.com>"`
 
-- "File://\\\belgelerim\mydoc.doc" gibi etkin bir belgeye başvuru
+- Gibi etkin bir belgeye başvuru`"file://\\\Documents\MyDoc.doc"`
 
-- HTML 'nin bir parçası olan\<"MSHTML: HTML >\<body >, bir metin\</body >\</HTML >"
+- Şöyle bir HTML parçası`"MSHTML:\<HTML>\<BODY>This is a line of text\</BODY>\</HTML>"`
 
    > [!NOTE]
-   > "MSHTML:", bir MSHTML akışı olarak belirlenmiş olacak şekilde HTML parçasının önüne gelmelidir.
+   > `"MSHTML:"`bir MSHTML akışı olarak belirlenmiş olması için HTML parçasının önüne gelmelidir.
 
 *lendiği*<br/>
 Denetimin iliştirilecektir pencerenin tutamacı.
@@ -537,7 +537,7 @@ Standart bir HRESULT değeri.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, tam temel noktalara `CEasySink` `IDispEventImpl` geçirebilmeniz için kullanabileceğiniz şablon bağımsız değişkenlerinin sayısını azaltan bir olay havuzu sınıfını nasıl tanımlayacağınızı gösterir. `EasyAdvise`ve `EasyUnadvise` dispeventadmeni veya [DispEventUnadvise](idispeventsimpleimpl-class.md#dispeventunadvise)çağrılmadan önce [IDispEventImpl](../../atl/reference/idispeventimpl-class.md) üyelerini başlatmak için kullanın. [](idispeventsimpleimpl-class.md#dispeventadvise) `AtlGetObjectSourceInterface`
+Aşağıdaki örnek, tam temel noktalara `CEasySink` `IDispEventImpl` geçirebilmeniz için kullanabileceğiniz şablon bağımsız değişkenlerinin sayısını azaltan bir olay havuzu sınıfını nasıl tanımlayacağınızı gösterir. `EasyAdvise`ve `EasyUnadvise` [dispeventadmeni](idispeventsimpleimpl-class.md#dispeventadvise) veya [DispEventUnadvise](idispeventsimpleimpl-class.md#dispeventunadvise)çağrılmadan önce [IDispEventImpl](../../atl/reference/idispeventimpl-class.md) üyelerini başlatmak için kullanın `AtlGetObjectSourceInterface` .
 
 [!code-cpp[NVC_ATL_Windowing#93](../../atl/codesnippet/cpp/composite-control-global-functions_1.h)]
 

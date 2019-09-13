@@ -1,89 +1,77 @@
 ---
 title: MFC Sınıf Ekleme Sihirbazı
-ms.date: 11/04/2016
+ms.date: 09/06/2019
 f1_keywords:
 - vc.codewiz.class.mfc.simple.overview
 helpviewer_keywords:
 - MFC Add Class Wizard
 - wizards [MFC]
 ms.assetid: ad3b0989-d307-43b2-9417-3f9a78889024
-ms.openlocfilehash: fa9b947ae6fc0e48aaecde61e35a5f4152c85f27
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2c82e084de2123c579299ca6490bdfcfdac5d255
+ms.sourcegitcommit: 3caf5261b3ea80d9cf14038c116ba981d655cd13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62412741"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70908024"
 ---
 # <a name="mfc-add-class-wizard"></a>MFC Sınıf Ekleme Sihirbazı
 
-Varolan bir MFC projesine bir sınıf eklemek için bu kod Sihirbazı'nı kullanın ya da MFC destekleyen bir ATL projesine bir sınıf ekleyin. Ayrıca, MFC desteğine sahip Win32 projeleri için MFC sınıfları ekleyebilirsiniz. Projeyi oluştururken belirttiğiniz özellikleri bu iletişim kutusunda seçenekleri belirleme.
+Varolan bir MFC projesine bir sınıf eklemek veya bir ATL projesine MFC 'yi destekleyen bir sınıf eklemek için bu kod Sihirbazı 'nı kullanın. MFC desteği olan Win32 projelerine MFC sınıfları da ekleyebilirsiniz. Projenizi oluştururken belirttiğiniz özellikler, bu iletişim kutusunda kullanılabilen seçenekleri belirlenir. Sihirbaza erişmek için sınıf **ekleme** [Sihirbazı](mfc-class-wizard.md)' na tıklayın.
+
+![MFC sınıfı ekleme Sihirbazı](media/add-mfc-class-wizard.png "MFC sınıfı ekleme Sihirbazı")
 
 ## <a name="names"></a>Adlar
 
-Bu sayfada, sınıf adı, temel sınıf ve yeni bir sınıf için dosya adlarını belirtin.
+Bu sayfada, sınıf adını, Taban sınıfını ve yeni sınıf için dosya adlarını belirtin.
 
 - **Sınıf adı**
 
-  Yeni bir sınıf adını belirtir ve varsayılan olarak kimlikleri ve bu sayfadaki dosya adlarını sağlar. C++ sınıfları genellikle "C" ile başlar örneğin, "CMyClass" "MyClass.h" olur vb.
+  Yeni sınıfın adını belirtir ve bu sayfadaki kimlik ve dosya adları için varsayılan temeli sağlar. C++sınıflar genellikle "C" ile başlar, örneğin "CMyClass", "MyClass. h" olur ve bu şekilde devam eder.
 
 - **Temel sınıf**
 
-  Yeni bir sınıf temel sınıfın adını belirtir. Varsayılan olarak, temel bir sınıftır [CWnd](../../mfc/reference/cwnd-class.md). Seçtiğiniz temel sınıfı, bu sayfadaki diğer kutuları etkin olup olmadığını belirler.
+  Yeni sınıf için temel sınıfın adını belirtir. Varsayılan olarak, temel sınıf [CWnd](../../mfc/reference/cwnd-class.md)' dir. Seçtiğiniz temel sınıf, bu sayfadaki diğer kutuların etkin olup olmadığını belirler.
 
-  Temel sınıf sınıfında iletişim kimliği veya bir kaynak kimliği olup olmadığını belirleyen ayarladığınız sınıf türü Genel tür sınıfı aşağıdaki gibidir:
+  Temel sınıf olarak ayarladığınız sınıfın türü, sınıfın bir iletişim kutusu KIMLIĞI mi yoksa kaynak KIMLIĞI mi olduğunu belirler. Genel sınıf türleri şunlardır:
 
-  - Sınıflar gibi [CButton](../../mfc/reference/cbutton-class.md), [CWnd](../../mfc/reference/cwnd-class.md), veya [CDocument](../../mfc/reference/cdocument-class.md), bir iletişim kutusu gerektirmeyen kimliği veya kaynak kimliği. Bu sınıfların bir iletişim kutusu veya kaynak kimliği kullanmayın Temel sınıfınız için bu sınıflardan birine seçerseniz **iletişim kimliği** kutusu ve **DHTML kaynak kimliği** kutusu soluk görünür.
+  - Bir iletişim kutusu KIMLIĞI veya kaynak KIMLIĞI gerektirmeyen [CButton](../../mfc/reference/cbutton-class.md), [CWnd](../../mfc/reference/cwnd-class.md)veya [CDocument](../../mfc/reference/cdocument-class.md)gibi sınıflar. Bu sınıflar bir iletişim kutusu veya kaynak KIMLIĞI kullanmaz. Taban sınıfınız için bu sınıflardan birini seçerseniz, **iletişim kutusu kimliği** ve **DHTML kaynak kimliği** kutusu soluk kalır.
 
-  - Sınıflar gibi [CDialog](../../mfc/reference/cdialog-class.md), [CFormView](../../mfc/reference/cformview-class.md), veya [CPropertyPage](../../mfc/reference/cpropertypage-class.md), bir iletişim ID gerektir
+  - Bir iletişim KIMLIĞI gerektiren [CDialog](../../mfc/reference/cdialog-class.md), [CFormView](../../mfc/reference/cformview-class.md)veya [CPropertyPage](../../mfc/reference/cpropertypage-class.md)gibi sınıflar.
 
-  - Sınıf [CDHtmlDialog](../../mfc/reference/cdhtmldialog-class.md), bir iletişim kutusu IDSİ DHTML kaynak kimliği ve bir HTML dosya adı gerektirir.
+  - Bir iletişim kutusu KIMLIĞI, bir DHTML kaynak KIMLIĞI ve bir HTML dosya adı gerektiren [CDHtmlDialog](../../mfc/reference/cdhtmldialog-class.md)sınıfı.
 
-  Bir iletişim kutusu IDSİ gerektiren sınıflar için bunu kullanmak için daha verimli bulabilirsiniz [Kaynak Düzenleyicisi](../../windows/resource-editors.md) Kimliğini, iletişim kaynağını oluşturma atama [Özellikler penceresi](/visualstudio/ide/reference/properties-window)ve ardından ilişkili bir sınıf oluşturun Bu kaynak kimliği ile Bkz: [yeni iletişim kutusu oluşturma](../../windows/creating-a-new-dialog-box.md) standart bir Windows iletişim kutusu oluşturma hakkında daha fazla bilgi.
+  İletişim kutusu KIMLIĞI gerektiren sınıflar için, [kaynak Düzenleyicisi](../../windows/resource-editors.md) 'ni kullanarak iletişim kaynağı oluşturma, kimliğini [sınıf Sihirbazı](mfc-class-wizard.md)'nda atama ve ardından bu kaynak kimliğiyle ilişkili bir sınıf oluşturma daha verimli bulabilirsiniz. Standart bir Windows iletişim kutusu oluşturma hakkında daha fazla bilgi için bkz. [Yeni Iletişim kutusu oluşturma](../../windows/creating-a-new-dialog-box.md) .
 
   > [!NOTE]
-  > Bir iletişim kutusu kaynağı ilk oluşturun ve kendi yeni sınıfından türetilen `CDHtmlDialog`, standart Windows Sil **Tamam** ve **iptal** varsayılan iletişim kutusunda görünen düğme. Standart bir Windows iletişim kutusu içeren kendi DHTML formun barındıran **Tamam** ve **iptal** düğmeleri.
+  > Önce bir iletişim kutusu kaynağı oluşturup yeni sınıfını öğesinden `CDHtmlDialog`türetirsiniz, varsayılan iletişim kutusunda görüntülenen standart Windows **Tamam** ve **iptal** düğmelerini silin. Standart Windows iletişim kutusu, kendi **Tamam** ve **Iptal** düğmelerini içeren DHTML formunu barındırır.
 
-  İletişim kutusu, hem Windows denetimleri ve DHTML denetimleri içerebilir ancak önerilmez.
+  İletişim kutusu hem Windows denetimleri hem de DHTML denetimleri içerdiğinde, önerilmez.
 
-- **İletişim kutusu kimliği**
+- **İletişim kutusu KIMLIĞI**
 
-  Seçtiyseniz, iletişim Kimliğini belirtir `CDialog`, `CFormView`, `CPropertyPage`, veya `CDHtmlDialog` olarak **temel sınıfı**.
+  `CDialog`,, Veya `CPropertyPage` `CFormView` öğesini`CDHtmlDialog` **temel sınıf**olarak seçtiyseniz, iletişim kutusunun kimliğini belirtir.
 
-- **.h dosyası**
+- **. h dosyası**
 
-  Yeni nesne sınıfı için üst bilgi dosyası adını ayarlar. Varsayılan olarak, bu ad, sağladığınız adın dayanır **sınıf adı**. Dosya adı, tercih ettiğiniz bir konuma kaydedin veya mevcut bir dosyaya sınıf bildirimi eklemek için üç nokta düğmesine tıklayın. Var olan bir dosya seçerseniz, sihirbaz, seçili konuma dek tıklatın kaydedilmeyecektir **son** Sihirbazı'nda.
+  Yeni nesnenin sınıfının başlık dosyasının adını ayarlar. Bu ad, varsayılan olarak, **sınıf adı**' nda sağladığınız adı temel alır. Dosya adını istediğiniz konuma kaydetmek veya sınıf bildirimini mevcut bir dosyaya eklemek için üç nokta düğmesini tıklatın. Var olan bir dosyayı seçerseniz, sihirbazda **son** ' a tıklaana kadar sihirbaz onu seçilen konuma kaydetmez.
 
-  Sihirbazın bir dosyanın üzerine yazmaz. ' A tıkladığınızda, var olan bir dosya adı seçerseniz **son**, Sihirbazı sınıf bildirimi dosya içeriğini eklenmeyeceğini göstermek isteyip istemediğinizi sorar. Tıklayın **Evet** ; dosya eklemek için tıklatın **Hayır** sihirbaza dönmek ve başka bir dosya adı belirtin.
+  Sihirbaz bir dosyanın üzerine yazmaz. Mevcut bir dosyanın adını seçerseniz, **son**' a tıkladığınızda, sihirbaz sınıf bildiriminin dosya içeriğine eklenip eklenmeyeceğini belirtmek isteyip istemediğinizi sorar. Dosyayı eklemek için **Evet** ' e tıklayın; sihirbaza dönmek için **Hayır** ' a tıklayın ve başka bir dosya adı belirtin.
 
-- **.cpp dosyası**
+- **. cpp dosyası**
 
-  Yeni nesne sınıfı için uygulama dosyasının adını ayarlar. Varsayılan olarak, bu ad, sağladığınız adın dayanır **sınıf adı**. Dosya adı, tercih ettiğiniz bir konuma kaydetmek için üç nokta düğmesine tıklayın. ' A kadar dosyasını seçili konuma kaydedilmez **son** Sihirbazı'nda.
+  Yeni nesnenin sınıfının uygulama dosyasının adını ayarlar. Bu ad, varsayılan olarak, **sınıf adı**' nda sağladığınız adı temel alır. Dosya adını istediğiniz konuma kaydetmek için üç nokta düğmesine tıklayın. Bu dosya, sihirbazda **son** ' a tıklaana kadar seçili konuma kaydedilmez.
 
-  Sihirbazın bir dosyanın üzerine yazmaz. ' A tıkladığınızda, var olan bir dosya adı seçerseniz **son**, Sihirbazı sınıf uygulaması dosya içeriğini eklenmeyeceğini göstermek isteyip istemediğinizi sorar. Tıklayın **Evet** ; dosya eklemek için tıklatın **Hayır** sihirbaza dönmek ve başka bir dosya adı belirtin.
+  Sihirbaz bir dosyanın üzerine yazmaz. Mevcut bir dosyanın adını seçerseniz, **son**' a tıkladığınızda sihirbaz, sınıf uygulamasının dosyanın içeriğine eklenip eklenmeyeceğini belirtmek isteyip istemediğinizi sorar. Dosyayı eklemek için **Evet** ' e tıklayın; sihirbaza dönmek için **Hayır** ' a tıklayın ve başka bir dosya adı belirtin.
 
 - **Etkin Erişilebilirlik**
 
-  Çağırarak etkin erişilebilirlik için MFC'nin desteğini etkinleştirir [EnableActiveAccessibility](../../mfc/reference/cwnd-class.md#enableactiveaccessibility) oluşturucuda. Türetilmiş sınıflar için bu seçenek kullanılabilir [CWnd](../../mfc/reference/cwnd-class.md).
-
-- **DHTML kaynak kimliği**
-
-  Türetilen sınıflar için geçerlidir `CDHtmlDialog` yalnızca. DHTML iletişim kutusu kaynak Kimliğini belirtir. Kaynak Kimliği, projenin .rc dosyasında, HTML iletişim kutusu dosya adının yanı sıra HTML bölümünde görünür. Bu kimlik tarafından tanımlanan DHTML kaynak tarafından tanımlanan iletişim kutusu tarafından barındırılan **iletişim kimliği**.
-
-- **. HTM dosyası**
-
-  Türetilen sınıflar için geçerlidir `CDHtmlDialog` yalnızca. DHTML iletişim kutusu için HTML dosya adını ayarlar. Varsayılan olarak, bu dosya adı, sınıf adını temel alır. DHTML iletişim kutusu kaynak kimliği ile birlikte projenin .rc dosyasının HTML bölümünde dosya adı görüntülenir.
+  Oluşturucuda [EnableActiveAccessibility](../../mfc/reference/cwnd-class.md#enableactiveaccessibility) ÇAĞıRARAK, MFC 'Nin Etkin Erişilebilirlik desteğini sunar. Bu seçenek, [CWnd](../../mfc/reference/cwnd-class.md)'den türetilmiş sınıflar için kullanılabilir.
 
 - **Otomatikleştirme**
 
-  Destek için sınıf düzeyinde ayarlar [Otomasyon](../../mfc/automation.md). Sınıf düzeyinde Otomasyonu, Otomasyon destekleyen tüm sınıflar için kullanılabilir. Otomasyon için destek ile oluşturulan projeleri için de kullanılabilir. Diğer bir deyişle, ya da bir MFC projesini [ATL destekler](../../atl/reference/mfc-support-in-atl-projects.md), veya kendisi için seçtiğiniz bir MFC projesine **Otomasyon** onay kutusuna [Gelişmiş Özellikler](../../mfc/reference/advanced-features-mfc-application-wizard.md) MFC sayfası Uygulama Sihirbazı.
+  [Otomasyon](../../mfc/automation.md)için destek sınıfı düzeyini ayarlar. Sınıf düzeyinde Otomasyon, otomasyonu destekleyen tüm sınıflar için kullanılabilir. Otomasyon desteğiyle oluşturulmuş projeler için de kullanılabilir. Diğer bir deyişle, [ATL destekleyen](../../atl/reference/mfc-support-in-atl-projects.md)bir MFC projesi ya da MFC Uygulama sihirbazının [Gelişmiş Özellikler](../../mfc/reference/advanced-features-mfc-application-wizard.md) sayfasında **Otomasyon** onay kutusunu seçtiğiniz bir MFC projesi.
 
-  |Seçenek|Açıklama|
-  |------------|-----------------|
-  |**Yok.**|Sınıf Otomasyonu destek sahip olduğunu gösterir.|
-  |**Otomatikleştirme**|Sınıf Otomasyonu desteklediğini belirtir. Bu seçeneği belirlerseniz, yeni oluşturulan sınıf, programlanabilir bir otomasyon istemci uygulamaları, Microsoft Visual Basic ve Microsoft Excel gibi nesnesiyle olarak kullanılabilir. Bu seçenek, bu tablodan sonra listelenen temel sınıflar için kullanılabilir değildir.|
-  |**Tarafından türü kimliği**|Diğer uygulamaları otomasyonu kullanarak bu sınıfın nesneleri oluşturma sınıf ve proje desteklediğini gösterir. Bu seçenek belirtilmişse, Otomasyon istemcileri doğrudan bir Automation nesnesi oluşturabilirsiniz. Tür kimliği metin kutusunda, istemci uygulaması tarafından oluşturulacak nesne belirtmek için kullanılır; Bu sistem çapında ve benzersiz olmalıdır. Bu seçenek, bu tablodan sonra listelenen temel sınıflar için kullanılabilir değildir.|
-
-  Aşağıdaki temel sınıflar için Otomasyon desteği yoktur:
+   Aşağıdaki temel sınıflar için Otomasyon desteği kullanılamaz:
 
   - `CAsyncMonitorFile`
 
@@ -106,16 +94,6 @@ Bu sayfada, sınıf adı, temel sınıf ve yeni bir sınıf için dosya adların
   - `CObject`
 
   - `CSocket`
-
-- **Tür kimliği**
-
-  Sınıf türü kimliği ayarlar. **Türü kimliği** kutusunda proje adı ve yeni sınıf adı şu şekilde birleştirir: *MFCProj.MFCClass*. Bu kimliği yalnızca seçtiyseniz, takımdaki herhangi biri **Otomasyon** seçeneği **tür Kimliğine göre Creatable**.
-
-- **DocTemplate kaynaklar oluştur**
-
-  Uygulamanın oluşturduğu belgeler belge şablonu kaynaklara sahip olduğunu gösterir. Bu onay kutusu etkinleştirmek için proje MFC belge/görünüm mimarisinin desteklemesi gerekir ve bu sınıfın temel sınıfına olmalıdır [CFormView](../../mfc/reference/cformview-class.md).
-
-  Bkz: [belge şablonları ve belge/görünüm oluşturma işlemi](../../mfc/document-templates-and-the-document-view-creation-process.md) daha fazla bilgi için.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

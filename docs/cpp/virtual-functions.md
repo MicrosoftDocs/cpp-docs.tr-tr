@@ -1,25 +1,25 @@
 ---
 title: Sanal İşlevler
-ms.date: 11/04/2016
+ms.date: 09/10/2019
 helpviewer_keywords:
 - functions [C++], virtual functions
 - derived classes [C++], virtual functions
 - virtual functions
 ms.assetid: b3e1ed88-2a90-4af8-960a-16f47deb3452
-ms.openlocfilehash: 07dfd8a602dca93c89a078b2eb69e04cf9d4a7a9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7c482107b5ad1546c64e0b70ef1714cff8a668ab
+ms.sourcegitcommit: effb516760c0f956c6308eeded48851accc96b92
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62393850"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70926098"
 ---
 # <a name="virtual-functions"></a>Sanal İşlevler
 
-Bir sanal işlev türetilmiş sınıflarda tanımlanmasını beklediğiniz bir üye işlevidir. Bir türetilmiş sınıf nesnesine bir işaretçi veya başvuru temel sınıfına kullanarak başvurduğunuzda, bu nesne için bir sanal işlev çağrısı ve işlevin türetilmiş sınıfın sürümünü yürütün.
+Sanal işlev, türetilmiş sınıflarda yeniden tanımlanmasını düşündüğünüz bir üye işlevdir. Türetilmiş bir sınıf nesnesine bir işaretçi veya temel sınıfa yönelik bir başvuru kullanarak başvurduğunuzda, bu nesne için bir sanal işlev çağırabilir ve işlevin türetilmiş sınıfının sürümünü çalıştırabilirsiniz.
 
-Sanal işlevler işlev çağrısını yapmak için kullanılan ifade bağımsız olarak bir nesne için doğru işlevi çağrılır emin olun.
+Sanal işlevler, işlev çağrısını yapmak için kullanılan ifadeye bakılmaksızın bir nesne için doğru işlevin çağrıldığından emin olur.
 
-Bir temel sınıf olarak bildirilen bir işlevi içerdiğini varsayın [sanal](../cpp/virtual-cpp.md) ve aynı işlevi türetilmiş bir sınıf tanımlar. Bir işaretçi veya başvuru temel sınıfına kullanarak çağrılırsa bile işlevi türetilmiş sınıftan türetilen sınıfın nesneleri için çağrılır. Aşağıdaki örnek uygulaması sağlayan bir temel sınıf gösterir `PrintBalance` işlevi ve iki türetilmiş sınıflar
+Bir temel sınıfın [sanal](../cpp/virtual-cpp.md) olarak bildirildiği bir işlev içerdiğini ve türetilmiş bir sınıfın aynı işlevi tanımladığını varsayalım. Türetilmiş sınıftan işlev, bir işaretçi veya temel sınıfa başvuru kullanılarak çağrılsa bile türetilmiş sınıfın nesneleri için çağrılır. Aşağıdaki örnekte, `PrintBalance` işlevinin ve iki türetilmiş sınıfın bir uygulamasını sağlayan bir temel sınıf gösterilmektedir
 
 ```cpp
 // deriv_VirtualFunctions.cpp
@@ -30,6 +30,7 @@ using namespace std;
 class Account {
 public:
    Account( double d ) { _balance = d; }
+   virtual ~Account() {}
    virtual double GetBalance() { return _balance; }
    virtual void PrintBalance() { cerr << "Error. Balance not available for base type." << endl; }
 private:
@@ -50,32 +51,32 @@ public:
 
 int main() {
    // Create objects of type CheckingAccount and SavingsAccount.
-   CheckingAccount *pChecking = new CheckingAccount( 100.00 ) ;
-   SavingsAccount  *pSavings  = new SavingsAccount( 1000.00 );
+   CheckingAccount checking( 100.00 );
+   SavingsAccount  savings( 1000.00 );
 
    // Call PrintBalance using a pointer to Account.
-   Account *pAccount = pChecking;
+   Account *pAccount = &checking;
    pAccount->PrintBalance();
 
    // Call PrintBalance using a pointer to Account.
-   pAccount = pSavings;
+   pAccount = &savings;
    pAccount->PrintBalance();
 }
 ```
 
-Önceki kodda, çağrıları `PrintBalance` nesnesinin aynı `pAccount` işaret eder. Çünkü `PrintBalance` sanal, her nesne adı için tanımlanan işlev sürümü. `PrintBalance` İşlevi türetilmiş sınıflarda `CheckingAccount` ve `SavingsAccount` "taban sınıf işlevinde geçersiz kılmayı" `Account`.
+Önceki kodda, öğesine yapılan çağrılar `PrintBalance` , nesne `pAccount` işaret noktaları hariç, ile aynıdır. Sanal `PrintBalance` olduğundan, her bir nesne için tanımlanan işlevin sürümü çağrılır. Türetilmiş sınıflardaki `CheckingAccount` `SavingsAccount` işlev ve temel sınıftaki `Account`işlevi "geçersiz kıl". `PrintBalance`
 
-Geçersiz kılma uygulaması sağlamaz bir sınıf olarak tanımlanıp tanımlanmadığını `PrintBalance` işlevi, varsayılan uygulama temel sınıftan `Account` kullanılır.
+Bir sınıf, `PrintBalance` işlevin geçersiz kılan bir uygulamasını sağlamayan bildirilirse, temel sınıftan `Account` varsayılan uygulama kullanılır.
 
-Yalnızca kendi türünün aynı olduğu durumlarda işlevleri türetilmiş sınıflarda temel sınıflardaki sanal işlevleri geçersiz kılar. Türetilen bir sınıfta bir işlev bir sanal işlev dönüş türü yalnızca temel sınıfındaki farklı olamaz; bağımsız değişken listesi de farklı olmalıdır.
+Türetilmiş sınıflardaki işlevler, yalnızca türleri aynı olduğunda, taban sınıflardaki sanal işlevleri geçersiz kılar. Türetilmiş sınıftaki bir işlev, yalnızca dönüş türündeki bir taban sınıftaki sanal işlevden farklı olamaz; bağımsız değişken listesi de farklı olmalıdır.
 
-İşaretçiler veya başvurular kullanarak bir işlev çağrılırken, aşağıdaki kurallar geçerlidir:
+Bir işlevi işaretçiler veya başvurular kullanarak çağırırken aşağıdaki kurallar geçerlidir:
 
-- Bir sanal işlev çağrısı için çağırıldığı nesnenin temel türüne göre çözümlenir.
+- Bir sanal işleve yapılan çağrı, çağrıldığı nesnenin temel türüne göre çözümlenir.
 
-- Sanal olmayan bir işlev çağrısı, işaretçi veya başvuru türüne göre çözümlenir.
+- Sanal olmayan bir işleve yapılan çağrı, işaretçi veya başvuru türüne göre çözümlenir.
 
-Aşağıdaki örnekte nasıl sanal ve sanal olmayan işlevleri işaretçileri çağrıldığında davranır:
+Aşağıdaki örnek, işaretçilerle çağrıldığında sanal ve sanal olmayan işlevlerin nasıl davranacağını gösterir:
 
 ```cpp
 // deriv_VirtualFunctions2.cpp
@@ -130,8 +131,6 @@ int main() {
 }
 ```
 
-### <a name="output"></a>Çıkış
-
 ```Output
 Derived::NameOf
 Invoked by Base
@@ -139,15 +138,15 @@ Derived::NameOf
 Invoked by Derived
 ```
 
-Olup olmamasına bakılmaksızın unutmayın `NameOf` işaretçi üzerinden işlevin çağrıldığı `Base` veya işaretçi `Derived`, işlevi için çağrı `Derived`. İşlevi için çağrı `Derived` çünkü `NameOf` sanal bir işlev ve her ikisi de `pBase` ve `pDerived` türündeki bir nesneye işaret `Derived`.
+`NameOf` `Derived` İşlevin`Derived`işaretçisi veya işaretçisi aracılığıyla çağrılıp çağrılmasından bağımsız olarak, işlevini çağırır. `Base` `Derived` İçin işlevini çağırır çünkü `NameOf` bir sanal `pBase` `Derived`işlevdir ve her ikisi de türünde bir nesneye işaretedilir.`pDerived`
 
-Sanal işlevler yalnızca sınıf türü nesneler için çağrılmadığından, genel veya statik işlevler olarak bildiremezsiniz **sanal**.
+Sanal işlevler yalnızca sınıf türündeki nesneler için çağrıldığından, genel veya statik işlevleri **sanal**olarak bildiremezsiniz.
 
-**Sanal** anahtar sözcüğü kullanılabilir olduğunda, türetilen bir sınıfta geçersiz kılma bildirme çalışır ancak gerekli değildir; sanal işlevleri geçersiz kılmalarına sanal her zaman.
+**Sanal** anahtar sözcük, türetilmiş bir sınıfta geçersiz kılma işlevleri bildirirken kullanılabilir, ancak bu gerekli değildir; sanal işlevlerin geçersiz kılmaları her zaman sanal.
 
-Bir temel sınıf sanal işlevler kullanılarak bildirilirler sürece tanımlanmalıdır *saf tanımlayıcı*. (Saf sanal işlevler hakkında daha fazla bilgi için bkz: [soyut sınıflar](../cpp/abstract-classes-cpp.md).)
+Bir temel sınıftaki sanal işlevler, *saf belirtici*kullanılarak bildirilemediği müddetçe tanımlanmalıdır. (Saf sanal işlevler hakkında daha fazla bilgi için bkz. [soyut sınıflar](../cpp/abstract-classes-cpp.md).)
 
-Sanal işlev çağrısı mekanizması, kapsam çözümleme işleci kullanarak işlevi adı açıkça uygun tarafından gizlenebilir (`::`). Önceki örnekte ilgili göz önünde bulundurun `Account` sınıfı. Çağrılacak `PrintBalance` taban sınıfında, aşağıdaki gibi bir kod kullanın:
+Sanal işlev çağrı mekanizması, kapsam çözümleme işleci (`::`) kullanılarak işlev adını açıkça niteleyerek gizlenebilir. `Account` Sınıfını içeren önceki örneği göz önünde bulundurun. Taban sınıfında `PrintBalance` çağırmak için, aşağıdaki gibi bir kod kullanın:
 
 ```cpp
 CheckingAccount *pChecking = new CheckingAccount( 100.00 );
@@ -159,4 +158,4 @@ Account *pAccount = pChecking;  // Call Account::PrintBalance
 pAccount->Account::PrintBalance();   //  Explicit qualification.
 ```
 
-Her iki çağrıları `PrintBalance` önceki örnekte, sanal işlev çağrısı mekanizması gösterme.
+Yukarıdaki örnekte ' `PrintBalance` de yapılan çağrılar, sanal işlev çağırma mekanizmasını bastırır.

@@ -1,14 +1,14 @@
 ---
 title: C/C++ proje özellikleri (Visual Studio)
-ms.date: 7/18/2019
+ms.date: 07/18/2019
 ms.topic: article
 ms.assetid: 16375038-4917-4bd0-9a2a-26343c1708b7
-ms.openlocfilehash: 91edf30ef0e5f38088727c0280d2edf07cdebfa5
-ms.sourcegitcommit: 7b039b5f32f6c59be6c6bb1cffafd69c3bfadd35
+ms.openlocfilehash: 2f7fe025eb69fc1977713c638eef0742074bd9fb
+ms.sourcegitcommit: effb516760c0f956c6308eeded48851accc96b92
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68537573"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70927742"
 ---
 # <a name="cc-property-pages"></a>C/C++ Özellik sayfaları
 
@@ -314,7 +314,7 @@ Dil uzantılarını bastırır veya izin vermez. [/Za](za-ze-disable-language-ex
 
 Uygunluk modunu etkinleştirilir veya gizler. [/Permissive-](permissive-standards-conformance.md)ayarlar.
 
-### <a name="treat-wchart-as-built-in-type"></a>WChar_t 'yi yerleşik tür olarak değerlendir
+### <a name="treat-wchar_t-as-built-in-type"></a>WChar_t 'yi yerleşik tür olarak değerlendir
 
 Belirtildiğinde, wchar_t türü __wchar_t ile eşlenen yerel bir tür olur ve bu, __int16 ile aynı şekilde eşlenir. [/Zc: wchar_t](zc-wchar-t-wchar-t-is-native-type.md) varsayılan olarak açık.
 

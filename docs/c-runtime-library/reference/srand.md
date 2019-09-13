@@ -1,6 +1,6 @@
 ---
 title: srand
-ms.date: 1/02/2018
+ms.date: 01/02/2018
 apiname:
 - srand
 apilocation:
@@ -29,16 +29,16 @@ helpviewer_keywords:
 - pseudorandom numbers
 - starting points, setting random
 - starting points
-ms.openlocfilehash: 6545d4eba6c17fd55bb2b8cf23fb0319d1c96bee
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
-ms.translationtype: MT
+ms.openlocfilehash: d74ae4cbec5a76df48bb2b56acab7329e6cf8aa5
+ms.sourcegitcommit: effb516760c0f956c6308eeded48851accc96b92
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62354892"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70927413"
 ---
 # <a name="srand"></a>srand
 
-Tarafından kullanılan sözde rastgele sayı üretici için başlangıç çekirdek değerini ayarlar **rand** işlevi.
+**S_SAYI_ÜRET** işlevi tarafından kullanılan pseudportadom sayı oluşturucusunun başlangıç çekirdek değerini ayarlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -50,24 +50,24 @@ void srand(
 
 ### <a name="parameters"></a>Parametreler
 
-*Çekirdek*<br/>
+*çekirdek*<br/>
 Sözde rastgele sayı üretimi için çekirdek
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Srand** işlevi, geçerli iş parçacığında bir sözde rastgele tamsayı dizisi oluşturmak için başlangıç noktasını ayarlar. Aynı sonuç dizisini oluşturmak için oluşturucu yeniden başlatmak için çağrı **srand** işlevini ve aynı *çekirdek* yeniden bağımsız değişken. İçin herhangi bir değer *çekirdek* Oluşturucu sözde rastgele dizi içinde farklı bir başlangıç noktası olarak ayarlar. **rand** oluşturulan sözde rastgele sayıları alır. Çağırma **rand** yapılan tüm çağrıların önce **srand** arama aynı dizi oluşturur **srand** ile *çekirdek* 1 olarak geçmesiyle.
+**Srand** işlevi, geçerli iş parçacığında bir dizi pseudportadom tamsayısı oluşturmak için başlangıç noktasını ayarlar. Aynı sonuç dizisini oluşturmak üzere oluşturucuyu yeniden başlatmak için, **srand** işlevini çağırın ve aynı *çekirdek* bağımsız değişkenini tekrar kullanın. *Çekirdek* için diğer herhangi bir değer, oluşturucuyu pseudportaıdom dizisindeki farklı bir başlangıç noktasına ayarlar. **S_SAYI_ÜRET** , oluşturulan pseudportaıdom numaralarını alır. Hiçbir **srcall** 'tan önce **S_SAYI_ÜRET** çağrısı yapın ve *çekirdek* ile, 1 olarak **geçirilmiş ile aynı** diziyi oluşturur.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**srand**|\<stdlib.h >|
+|**srand**|\<Stdlib. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
-Örneğin bakın [rand](rand.md).
+[S_SAYI_ÜRET](rand.md)için örneğe bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

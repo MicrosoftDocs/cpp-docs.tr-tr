@@ -9,22 +9,22 @@ helpviewer_keywords:
 - handlers [MFC], command
 - handlers [MFC], message
 ms.assetid: 51bc4e76-dbe3-4cc2-b026-3199d56b2fa9
-ms.openlocfilehash: 0d3ed6239b638a0e161cd7e3580f4fe6e1b4a7e7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 25805187f88c5423ea41cd7cbe346e44e7d7d36a
+ms.sourcegitcommit: 3caf5261b3ea80d9cf14038c116ba981d655cd13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62383769"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70907455"
 ---
 # <a name="message-handlers"></a>İleti İşleyicileri
 
-MFC'de, ayrılmış bir *işleyici* işlevi her ayrı ileti işler. İleti işleyicisi, bir sınıfın üye işlevleri işlevlerdir. Bu belgede koşulları kullanılır *ileti işleyicisi üye işlevi*, *ileti işleyicisi işlevi*, *ileti işleyicisi*, ve *işleyici*birbirinin yerine. İleti işleyicileri bazı tür "komut işleyicileri" olarak da adlandırılır
+MFC 'de, ayrılmış bir *işleyici* işlevi her ayrı iletiyi işler. İleti işleyici işlevleri bir sınıfın üye işlevleridir. Bu belgelerde *ileti işleyici üye işlevi*, *ileti işleyici işlevi*, *ileti işleyicisi*ve *işleyicinin* birbirlerinin yerine kullanıldığı terimler kullanılmaktadır. Bazı ileti işleyicileri türleri "komut işleyicileri" olarak da adlandırılır.
 
-İleti işleyicileri hesapları iş büyük bir kısmı için bir framework uygulaması yazma yazma. Bu makalede ailesi, ileti işleme mekanizması nasıl çalıştığını açıklar.
+Çerçeve uygulaması yazarken çalışmanızın büyük bir oranı için ileti işleyicileri hesapları yazma. Bu makale ailesinde ileti işleme mekanizmasının nasıl çalıştığı açıklanmaktadır.
 
-Bunu bir ileti işleyicisini yaptığı bu iletiye yanıt olarak yapılan istediğiniz yapar. Sınıf Özellikler penceresini kullanarak işleyicileri oluşturabilir ve ardından kaynak kod Düzenleyicisi'ni kullanarak işleyicinin kodunu doldurun.
+İleti için işleyici, bu iletiye yanıt vermek istediğiniz her şeyi yapar. , Sınıfının [sınıf sihirbazını](reference/mfc-class-wizard.md) kullanarak işleyicileri oluşturabilir ve ardından kaynak kodu düzenleyicisini kullanarak işleyicinin kodunu doldurabilirsiniz.
 
-Microsoft Visual C++ ve MFC akreditasyonlu tümünün İşleyicileriniz yazmak için kullanabilirsiniz. Tüm sınıflar listesi için bkz. [sınıf kitaplığına genel bakış](../mfc/class-library-overview.md) içinde *MFC başvurusu*.
+İşleyicilerinizi yazmak için Microsoft Visual C++ ve MFC 'nin tüm özelliklerini kullanabilirsiniz. Tüm sınıfların bir listesi için bkz. *MFC başvurusunda* [sınıf kitaplığına genel bakış](../mfc/class-library-overview.md) .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -7,49 +7,49 @@ helpviewer_keywords:
 - dispatch maps [MFC], Automation servers
 - servers, Automation
 ms.assetid: 523fd155-51ce-4f91-b986-b74bdbdd7d92
-ms.openlocfilehash: 39e870db2f5476a630a8ed3bc68944dbb164d469
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 510acfa032ca4303962164a19130ecd1971060fc
+ms.sourcegitcommit: 3caf5261b3ea80d9cf14038c116ba981d655cd13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62374174"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70907959"
 ---
 # <a name="automation-servers"></a>Otomasyon Sunucuları
 
-Otomasyon, uygulamanız nesneleri başka bir uygulamaya uygulanan değiştirmek ya da bunlar işlenebilir nesneleri kullanıma sunmak için mümkün kılar. Otomasyon sunucusu programlanabilir nesneler (Otomasyon nesneleri olarak adlandırılır) diğer uygulamalara kullanıma sunan bir uygulamasıdır (adlı [Otomasyon istemcileri](../mfc/automation-clients.md)). Otomasyon sunucuları bazen Otomasyon bileşenleri olarak adlandırılır.
+Otomasyon, uygulamanızın başka bir uygulamada uygulanan nesneleri işlemesini veya işlenebilmeleri için nesneleri kullanıma sunmasını mümkün kılar. Otomasyon sunucusu, programlanabilir nesneleri (Otomasyon nesneleri olarak adlandırılır) diğer uygulamalara ( [Otomasyon istemcileri](../mfc/automation-clients.md)olarak adlandırılır) sunan bir uygulamadır. Otomasyon sunucuları bazen Otomasyon bileşenleri olarak adlandırılır.
 
-Otomasyon nesnelerini kullanıma sunma nesneleri doğrudan erişerek bazı yordamları otomatikleştirmek için istemcileri etkinleştirir ve işlevsellik sunucu kullanılabilir hale getirir. Uygulamaların diğer uygulamalar için kullanışlı olan işlevler sağladığınızda, bu şekilde nesnelerini kullanıma sunma yararlıdır. Örneğin, bir sözcük işlemcisi diğer programları kullanabilmesi yazım denetimi işlevselliğini doğurabilir. Nesneleri riskini böylece diğer uygulamaların hazır işlevini kullanarak kendi uygulamalarını işlevselliğini geliştirmek için satıcıları sağlar.
+Otomasyon nesnelerinin ortaya çıkarılması, istemcilerin, sunucunun kullanılabilir hale getirdiği nesnelere ve işlevlere doğrudan erişerek belirli yordamları otomatikleştirmesini sağlar. Bu şekilde nesneleri göstermek, uygulamalar diğer uygulamalar için yararlı olan işlevler sağladığınızda yararlı olur. Örneğin, bir sözcük işlemcisi, diğer programların kullanabilmesi için yazım denetimi işlevini kullanıma sunmayabilir. Nesnelerin açığa çıkması, satıcıların diğer uygulamaların kullanıma açık işlevlerini kullanarak uygulamalarının işlevselliğini geliştirmesine olanak sağlar.
 
-Bu Otomasyon nesneleri özellikler ve yöntemler, dış arayüze sahip. Otomasyon nesnesi özniteliklerini adlandırılmış bir özellikler. Bir C++ sınıf veri üyeleri gibi özelliklerdir. Otomasyon nesneler üzerinde çalışan işlevler yöntemlerdir. Bir C++ sınıfı gibi genel üye işlevlerinin yöntemlerdir.
+Bu Otomasyon nesnelerinin dış arabirimi olarak özellikleri ve yöntemleri vardır. Özellikler, Otomasyon nesnesinin öznitelikleri olarak adlandırılır. Özellikler, bir C++ sınıfın veri üyeleri gibidir. Yöntemler Otomasyon nesnelerinde çalışan işlevlerdir. Yöntemler bir C++ sınıfın ortak üye işlevleri gibidir.
 
 > [!NOTE]
->  Özellikleri gibi C++ veri üyelerini olsa da, bunlar doğrudan erişilebilir değildir. Saydam erişim sağlamak için Otomasyon nesnesi ile bir çift get/set üye işlevleri iç bir değişkende bunlara erişmek için ayarlayın.
+>  Özellikler veri üyeleri gibi C++ olsa da, bunlar doğrudan erişilebilir değildir. Şeffaf erişim sağlamak için, Otomasyon nesnesinde, bunlara erişmek üzere Get/Set üye işlevlerinin bulunduğu bir iç değişken ayarlayın.
 
-Ortak, iyi tanımlanmış bir arabirim aracılığıyla uygulamanın işlevselliği kullanıma sunma Otomasyon, bir tek genel programlama dilinde yerine Microsoft Visual Basic gibi çeşitli ve uygulamaya özgü makrosu uygulamalar oluşturmanıza olanak sağlar Diller.
+Otomasyon, yaygın, iyi tanımlanmış bir arabirim aracılığıyla uygulama işlevselliği sunarak, uygulamaları farklı, uygulamaya özgü makrolar yerine Microsoft Visual Basic gibi tek bir genel programlama dilinde oluşturmayı mümkün kılar Diller.
 
-##  <a name="_core_support_for_automation_servers"></a> Otomasyon sunucuları için destek
+##  <a name="_core_support_for_automation_servers"></a>Otomasyon sunucuları için destek
 
-Visual C++ ve MFC çerçevesi otomasyon sunucuları için kapsamlı destek sağlar. Otomasyon sunucusu, uygulamanızın işlevselliğini çalışmalarınızı odaklanmanız yaparken yükü çoğunu işleyin.
+Görsel C++ ve MFC çerçevesi, otomasyon sunucuları için kapsamlı destek sağlar. Otomasyon sunucusu oluşturma konusunda ek yükün çoğunu idare eder; böylece çabalarınızı uygulamanızın işlevlerine odaklanırsınız.
 
-Otomasyonu desteklemek için framework'ün asıl dağıtım eşlemesi, bildirimler ve yöntemler ve özellikler için OLE açmanız gerekiyordu çağrıları genişletir makroları birtakım mekanizmadır. Tipik dağıtım eşlemesi şöyle görünür:
+Framework 'ün destekleme için temel mekanizması, OLE için yöntemler ve özellikler sunmak için gereken bildirimlere ve çağrılara genişleyen bir makro kümesi olan dağıtım haritasıdır. Tipik bir dağıtım eşlemesi şöyle görünür:
 
 [!code-cpp[NVC_MFCAutomation#1](../mfc/codesnippet/cpp/automation-servers_1.cpp)]
 
-Sınıf Görünümü ve Özellikler penceresinde eşlemeleri dağıtma sürdürmeye yardımcı olmak. Karşılık gelen bir sınıfa bir yeni yöntem veya özellik eklediğinizde Visual C++ ekler `DISP_FUNCTION` veya `DISP_PROPERTY` makrosu gösteren sınıf adı, iç ve dış adları yöntemi veya özelliği ve veri türlerinin parametrelere sahip.
+[Sınıf Sihirbazı](reference/mfc-class-wizard.md) ve dağıtım haritalarını korumaya yardımcı sınıf görünümü. Bir sınıfa yeni bir yöntem veya özellik eklediğinizde, Visual Studio, sınıf adını, dış ve `DISP_FUNCTION` iç `DISP_PROPERTY` adları ve veri türlerini belirten parametrelere sahip karşılık gelen veya makroyu ekler.
 
-**Sınıfı Ekle** iletişim kutusu da basitleştirir ve Otomasyon sınıfları bildirimi özellikleri ve operations management. Sınıf Ekle iletişim kutusu, projenize bir sınıf eklemek için kullandığınızda, taban sınıfı belirtin. Otomasyon temel sınıfı izin veriyorsa, Sınıf Ekle iletişim kutusu denetimleri Otomasyon, yeni bir sınıf desteklemesi gerekip gerekmediğini "oluşturulabilir OLE (diğer bir deyişle, mi sınıfın nesneleri bir COM istemciden istek üzerine oluşturulabilir)" olup olmadığını belirtmek için kullandığınız görüntüler. ve kullanmak COM istemcisi için dış adı.
+**Sınıf Ekle** iletişim kutusu ayrıca Otomasyon sınıflarının bildirimini ve özelliklerinin ve işlemlerinin yönetimini basitleştirir. Projenize bir sınıf eklemek için sınıf Ekle iletişim kutusunu kullandığınızda, onun temel sınıfını belirtirsiniz. Temel sınıf otomasyona izin veriyorsa, sınıf Ekle iletişim kutusu, yeni sınıfın Otomasyonu desteklemesi gerekip gerekmediğini, "OLE creatable" olup olmadığını belirtmek için kullandığınız denetimleri görüntüler (yani, sınıfın nesnelerinin bir COM istemcisinden gelen bir istek üzerinde oluşturulup oluşturuamayacağını belirtir) ve kullanılacak COM istemcisinin dış adı.
 
-**Sınıfı Ekle** iletişim kutusu, bir sınıf bildiriminin ardından oluşturur, OLE, özellikler için uygun makroları dahil olmak üzere belirtildi. Ayrıca, sınıfın üye işlevleri uygulaması için çatı kodu ekler.
+**Sınıf Ekle** iletişim kutusu daha sonra belirttiğiniz OLE özelliklerine yönelik uygun makroları içeren bir sınıf bildirimi oluşturur. Ayrıca, sınıfınızın üye işlevlerinin uygulanması için iskelet kodunu ekler.
 
-MFC Uygulama Sihirbazı, baştan sonra, Otomasyon sunucu uygulaması alınırken yer alan adımların basitleştirir. Seçerseniz **Otomasyon** onay kutusundan **Gelişmiş Özellikler** sayfasında, MFC Uygulama Sihirbazı, uygulamanızın ekler `InitInstance` işlev çağrıları, Otomasyon kaydetmek için gerekli Nesne ve Otomasyon sunucusu çalıştırın.
+MFC Uygulama Sihirbazı, Otomasyon sunucusu uygulamanızı arka planda alma ile ilgili adımları basitleştirir. **Gelişmiş Özellikler** sayfasında `InitInstance` **Otomasyon** onay kutusunu seçerseniz, MFC Uygulama Sihirbazı uygulamanızın işlevine Otomasyon nesnelerinizi kaydetmek için gereken çağrıları ekler ve uygulamanızı bir Otomasyon sunucusu.
 
-### <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsunuz
+### <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsunuz?
 
 - [Otomasyon istemcileri hakkında bilgi edinin](../mfc/automation-clients.md)
 
 - [CCmdTarget sınıfı hakkında daha fazla bilgi edinin](../mfc/reference/ccmdtarget-class.md)
 
-- [COleDispatchDriver sınıfı hakkında daha fazla bilgi edinin](../mfc/reference/coledispatchdriver-class.md)
+- [Sınıf Cotadispatchdriver hakkında daha fazla bilgi edinin](../mfc/reference/coledispatchdriver-class.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

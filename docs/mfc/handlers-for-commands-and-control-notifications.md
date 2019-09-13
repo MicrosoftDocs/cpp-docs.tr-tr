@@ -10,30 +10,30 @@ helpviewer_keywords:
 - notifications [MFC], handlers for control
 - handlers [MFC], command
 ms.assetid: 20f57f4a-f577-4c09-80a2-43faf32a1c2e
-ms.openlocfilehash: 6c92660c67fa91c27bb094111cebfef57904cdc7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 43b6a517b680a5f6ff092337fbf3d90dd0115dd7
+ms.sourcegitcommit: 3caf5261b3ea80d9cf14038c116ba981d655cd13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62359000"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70907980"
 ---
 # <a name="handlers-for-commands-and-control-notifications"></a>Komutlar ve Denetim Bildirimleri için İşleyiciler
 
-Komutları veya denetim bildirimi iletileri için hiçbir varsayılan işleyicileri vardır. Bu nedenle, bu iletileri kategoriler için İşleyicileriniz adlandırma, yalnızca kural tarafından bağlıdır. Komut veya denetim bildirimi için bir işleyici eşlemesini özellikleri windows komut kimliği veya denetim bildirimi koduna göre adları önerir. Önerilen adını kabul edin veya değiştirin.
+Komutlar veya denetim bildirim iletileri için varsayılan işleyici yok. Bu nedenle, yalnızca işleyicileri bu ileti kategorileriyle adlandırma kuralına göre bağladınız. Komut veya denetim bildirimini bir işleyiciye eşlediğinizde, [sınıf Sihirbazı](reference/mfc-class-wizard.md) komut kimliğine veya denetim bildirim koduna göre bir ad önerir. Önerilen adı kabul edebilir, değiştirebilir veya değiştirebilirsiniz.
 
-Her iki kategoriye işleyicileri için kullanıcı arabirimi nesnesi temsil ettikleri ad kuralı önerir. Bu nedenle Düzen menüsünde Cut komutu için bir işleyici adlandırılmış olabilir
+Kural, işleyicileri temsil ettikleri Kullanıcı arabirimi nesnesi için her iki kategoride de ad atamanızı önerir. Bu nedenle, düzenleme menüsünde Kes komutu için bir işleyici adlandırılmış olabilir
 
 [!code-cpp[NVC_MFCMessageHandling#4](../mfc/codesnippet/cpp/handlers-for-commands-and-control-notifications_1.h)]
 
-Cut komutu uygulamalarında yaygın olarak bu nedenle uygulandığından framework kesme komutu için komut Kimliğini önceden belirler **ıd_edıt_cut**. Tüm önceden tanımlanmış komut kimlikleri listesi için ' % s'dosyasına AFXRES bakın. H Daha fazla bilgi için [standart komutlar](../mfc/standard-commands.md).
+Kesme komutu uygulamalarda yaygın olarak uygulandığından, çerçeve **ID_EDIT_CUT**olarak kes komutu IÇIN komut kimliğini önceden tanımlar. Önceden tanımlanmış tüm komut kimliklerinin listesi için bkz. AFXRES dosyası. Olsun. Daha fazla bilgi için bkz. [standart komutlar](../mfc/standard-commands.md).
 
-Ayrıca, kural için bir işleyici önerir **BN_CLICKED** "Düğmem" etiketli bir düğme bildirim iletisinden adlandırılmış
+Ayrıca, kural "My Button" etiketli bir düğmeden **BN_CLICKED** bildirim iletisi için bir işleyici önerir
 
 [!code-cpp[NVC_MFCMessageHandling#5](../mfc/codesnippet/cpp/handlers-for-commands-and-control-notifications_2.h)]
 
-Bu komut kimliği atayabilirsiniz **IDC_MY_BUTTON** uygulamaya özel kullanıcı arabirimi nesneye eşdeğer olduğundan.
+Uygulamaya özgü bir kullanıcı arabirimi nesnesine eşdeğer olduğundan, bu komutu bir ID **IDC_MY_BUTTON** atayabilirsiniz.
 
-Her iki türdeki iletileri bağımsız değişken almaz ve herhangi bir değer döndürür.
+Her iki ileti kategorisi bağımsız değişken almaz ve değer döndürmez.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

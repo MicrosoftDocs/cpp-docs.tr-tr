@@ -1,42 +1,42 @@
 ---
 title: /DISASM
-ms.date: 1/17/2018
+ms.date: 01/17/2018
 f1_keywords:
 - /disasm
 helpviewer_keywords:
 - -DISASM dumpbin option
 - DISASM dumpbin option
 - /DISASM dumpbin option
-ms.openlocfilehash: 10e8187e896b3922438a8cf2dafa0aec4c91f904
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fb394b2266470e77c50ce5398aea961c37ac34fb
+ms.sourcegitcommit: effb516760c0f956c6308eeded48851accc96b92
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62272067"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70927716"
 ---
 # <a name="disasm"></a>/DISASM
 
-Ayrıştırılmış kod bölümlerinin DUMPBIN çıktıda yazdırın.
+Kod bölümlerinin ayrıştırılmış derlemesini DUMPBIN çıktısında yazdırın.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **/ DISASM**{**:**\[**BAYT**|**NOBYTES**]}
+> **/DİSASM** { **:** \[**BAYT**NOBYTES]}|
 
 ### <a name="arguments"></a>Arguments
 
-**BAYT**<br/>
-Bağımsız değişkenler, yorumlanan bir işlem yönergesi bayt ayrıştırılmış kodu çıktıyı içerir. Varsayılan seçenek budur.
+**SAYACININ**<br/>
+Açıklama baytlarını, yorumlanan işlem kodları ve bağımsız değişkenlerle birlikte, ayırt derleme çıktısında içerir. Bu varsayılan seçenektir.
 
-**NOBYTES**<br/>
-Yönerge bayt ayrıştırılmış kodu çıktısında içermez.
+**YANIT SAYISI**<br/>
+, Deassembly çıktısına yönerge baytlarını içermez.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**/DISASM** seçeneği dosyasında Ayrıştırılmış kod bölümlerinin görüntüler. Dosyasında mevcut değilse hata ayıklama sembolleri kullanır.
+**/Disasm** seçeneği, dosyadaki kod bölümlerinin ayrıştırılmış derlemesini görüntüler. Dosyada varsa hata ayıklama sembolleri kullanır.
 
-**/ DISASM** yalnızca yerel, yönetilen, görüntüleri üzerinde kullanılmalıdır. Yönetilen kod için eşdeğer bir araçtır [ILDASM](/dotnet/framework/tools/ildasm-exe-il-disassembler).
+**/Disasm** yalnızca yerel, yönetilmeyen ve görüntülerde kullanılmalıdır. Yönetilen kod için eşdeğer araç [ıldadsm](/dotnet/framework/tools/ildasm-exe-il-disassembler)' dir.
 
-Yalnızca [OPTIONAL](headers.md) DUMPBIN seçeneği tarafından üretilen dosyalar kullanıma [/GL (bütün program iyileştirmesi)](gl-whole-program-optimization.md) derleyici seçeneği.
+Yalnızca [/Headers](headers.md) dumpbin seçeneği [/GL (tüm program iyileştirmesi)](gl-whole-program-optimization.md) derleyici seçeneği tarafından oluşturulan dosyalarda kullanılabilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
