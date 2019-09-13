@@ -1535,7 +1535,7 @@
           href: ide/refactoring/implement-pure-virtuals.md
         - name: Move işlevinin tanımı
           href: ide/refactoring/move-definition-location.md
-        - name: Yeniden Adlandır
+        - name: Rename
           href: ide/refactoring/rename.md
     - name: C++ masaüstü geliştirmesi için Visual Studio IDE kullanma
       expanded: false
@@ -1700,7 +1700,7 @@
               href: atl-mfc-shared/reference/csimplestringt-class.md
             - name: CTime sınıfı
               href: atl-mfc-shared/reference/ctime-class.md
-    - name: Metin ve dizeler
+    - name: Metin ve Dizeler
       expanded: false
       items:
         - name: MSVC’de metin ve dizeler
@@ -1956,7 +1956,7 @@
               href: cppcx/enums-c-cx.md
             - name: Temsilciler
               href: cppcx/delegates-c-cx.md
-            - name: Özel durumlar
+            - name: Özel Durumlar
               href: cppcx/exceptions-c-cx.md
             - name: Olaylar
               href: cppcx/events-c-cx.md
@@ -3409,7 +3409,7 @@
                   items:
                     - name: İşlev çağrıları
                       href: c-language/function-calls.md
-                    - name: Bağımsız Değişkenler
+                    - name: Arguments
                       href: c-language/arguments.md
                     - name: Değişken sayıda bağımsız değişkenli çağrılar
                       href: c-language/calls-with-a-variable-number-of-arguments.md
@@ -3459,7 +3459,7 @@
               items:
                 - name: Uygulama tanımlı davranış
                   href: c-language/implementation-defined-behavior.md
-                - name: 'Çeviri: Tanılama'
+                - name: 'Çeviri: Tanılamalar'
                   href: c-language/translation-diagnostics.md
                 - name: Ortam
                   expanded: false
@@ -3712,7 +3712,7 @@
                   href: cpp/character-sets.md
                 - name: Belirteçler
                   href: cpp/tokens-cpp.md
-                - name: Yorumlar
+                - name: Açıklamalar
                   href: cpp/comments-cpp.md
                 - name: Tanımlayıcılar
                   href: cpp/identifiers-cpp.md
@@ -4233,10 +4233,10 @@
                   href: cpp/indirection-on-array-types.md
                 - name: C++ dizilerini sıralama
                   href: cpp/ordering-of-cpp-arrays.md
-            - name: Başvurular
+            - name: Referanslar
               expanded: false
               items:
-                - name: Başvurular
+                - name: Referanslar
                   href: cpp/references-cpp.md
                 - name: 'Lvalue başvuru bildirimcisi: &'
                   href: cpp/lvalue-reference-declarator-amp.md
@@ -4497,7 +4497,7 @@
                       href: cpp/nothrow-cpp.md
                     - name: novtable
                       href: cpp/novtable.md
-                    - name: işlem
+                    - name: process
                       href: cpp/process.md
                     - name: özellik
                       href: cpp/property-cpp.md
@@ -5598,7 +5598,7 @@
                   href: assembler/masm/textequ.md
                 - name: .TFCOND
                   href: assembler/masm/dot-tfcond.md
-                - name: BAŞLIK
+                - name: TITLE
                   href: assembler/masm/title.md
                 - name: TYPEDEF (MASM)
                   href: assembler/masm/typedef-masm.md
@@ -6225,7 +6225,7 @@
                   href: windows/attributes/helpstringdll.md
                 - name: gizli
                   href: windows/attributes/hidden.md
-                - name: id
+                - name: kimlik
                   href: windows/attributes/id.md
                 - name: idl_module
                   href: windows/attributes/idl-module.md
@@ -6277,7 +6277,7 @@
                   href: windows/attributes/noncreatable.md
                 - name: nonextensible
                   href: windows/attributes/nonextensible.md
-                - name: object
+                - name: nesne
                   href: windows/attributes/object-cpp.md
                 - name: odl
                   href: windows/attributes/odl.md
@@ -6325,7 +6325,7 @@
                   href: windows/attributes/satype.md
                 - name: size_is
                   href: windows/attributes/size-is.md
-                - name: source
+                - name: kaynak
                   href: windows/attributes/source-cpp.md
                 - name: dize
                   href: windows/attributes/string-cpp.md
@@ -6353,7 +6353,7 @@
                   href: windows/attributes/v1-enum.md
                 - name: vararg
                   href: windows/attributes/vararg.md
-                - name: version
+                - name: sürüm
                   href: windows/attributes/version-cpp.md
                 - name: vi_progid
                   href: windows/attributes/vi-progid.md
@@ -6395,8 +6395,6 @@
                   expanded: false
                   items:
                     - name: Dosyalar ve akışlar
-                      href: c-runtime-library/files-and-streams.md
-                    - name: Metin ve ikili akışlar
                       href: c-runtime-library/text-and-binary-streams.md
                     - name: Bayt ve geniş akışlar
                       href: c-runtime-library/byte-and-wide-streams.md
@@ -6876,7 +6874,7 @@
                   href: c-runtime-library/reference/alloca.md
                 - name: _amsg_exit
                   href: c-runtime-library/reference/amsg-exit.md
-                - name: reservedStorageGb
+                - name: and
                   href: c-runtime-library/reference/and.md
                 - name: and_eq
                   href: c-runtime-library/reference/and-eq.md
@@ -7768,7 +7766,7 @@
                   href: c-runtime-library/reference/offsetof-macro.md
                 - name: '_onexit, _onexit_m'
                   href: c-runtime-library/reference/onexit-onexit-m.md
-                - name: açık
+                - name: open
                   href: c-runtime-library/reference/open.md
                 - name: '_open, _wopen'
                   href: c-runtime-library/reference/open-wopen.md
@@ -7776,7 +7774,7 @@
                   href: c-runtime-library/reference/open-osfhandle.md
                 - name: or_eq
                   href: c-runtime-library/reference/or-eq.md
-                - name: or
+                - name: veya
                   href: c-runtime-library/reference/or.md
                 - name: _pclose
                   href: c-runtime-library/reference/pclose.md
@@ -10510,7 +10508,7 @@
                       href: parallel/openmp/reference/openmp-library-reference.md
                     - name: Yönergeler
                       href: parallel/openmp/reference/openmp-directives.md
-                    - name: Yan tümceler
+                    - name: Tümceler
                       href: parallel/openmp/reference/openmp-clauses.md
                     - name: İşlevler
                       href: parallel/openmp/reference/openmp-functions.md
