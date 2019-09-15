@@ -1,9 +1,9 @@
 ---
 title: lseek
 ms.date: 11/04/2016
-apiname:
+api_name:
 - lseek
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -14,19 +14,22 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - lseek
 helpviewer_keywords:
 - lseek function
 ms.assetid: 137d7741-5c2e-443e-811a-6a01417fcae7
-ms.openlocfilehash: 8559b7bfaf07302aa76b86dda0a126ebbee8a700
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d817deb996439e722dfd2890b24bf3c82a64e93b
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62285649"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70952954"
 ---
 # <a name="lseek"></a>lseek
 
-Bu POSIX işlevi kullanım dışı bırakılmıştır. ISO kullanın C++ uyumluluğunu [_lseek](lseek-lseeki64.md) yerine.
+Bu POSIX işlevi kullanım dışıdır. Bunun yerine ISO C++ uyumlu [_lseek](lseek-lseeki64.md) kullanın.

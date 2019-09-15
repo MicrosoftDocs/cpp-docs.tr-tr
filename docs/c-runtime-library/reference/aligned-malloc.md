@@ -1,9 +1,9 @@
 ---
 title: _aligned_malloc
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _aligned_malloc
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-heap-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _aligned_malloc
 - alligned_malloc
@@ -23,16 +26,16 @@ helpviewer_keywords:
 - aligned_malloc function
 - _aligned_malloc function
 ms.assetid: fb788d40-ee94-4039-aa4d-97d73dab1ca0
-ms.openlocfilehash: c89dff7d2159855037fee565f2148a8edb89f07d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b4a2b35e5344757a1269ccb781a0524383a4f792
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62341827"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70943867"
 ---
-# <a name="alignedmalloc"></a>_aligned_malloc
+# <a name="_aligned_malloc"></a>_aligned_malloc
 
-Belirtilen hizalama sınırındaki belleği ayırır.
+Belirtilen hizalama sınırında belleği ayırır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -45,29 +48,29 @@ void * _aligned_malloc(
 
 ### <a name="parameters"></a>Parametreler
 
-*Boyutu*<br/>
+*boyutla*<br/>
 İstenen bellek ayırmasının boyutu.
 
-*Hizalama*<br/>
-Hizalama değeri 2'in tam sayı üssü olması gerekir.
+*hizalar*<br/>
+2 ' nin tam sayı üssü olması gereken hizalama değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Ayrılan bellek bloğuna işaretçi veya işlem başarısız olursa NULL. İşaretçi katı *hizalama*.
+İşlem başarısız olursa, ayrılan veya NULL olan bellek bloğunun işaretçisi. İşaretçi *hizalamanın*bir katı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_aligned_malloc** dayanır [malloc](malloc.md).
+**_aligned_malloc** , [malloc](malloc.md)'yi temel alır.
 
-**_aligned_malloc** işaretlenmiş `__declspec(noalias)` ve `__declspec(restrict)`, işlevin genel değişkenleri sağlanır ve diğer ad verilmediğini göstermeyecektir işaretçi döndüren anlamına gelir. Daha fazla bilgi için [noalias](../../cpp/noalias.md) ve [kısıtlama](../../cpp/restrict.md).
+**_aligned_malloc** işaretlenir `__declspec(noalias)` ve `__declspec(restrict)`işlevin genel değişkenleri değiştirmeyeceği ve döndürülen işaretçinin diğer adı olmadığı anlamına gelir. Daha fazla bilgi için bkz. [noalias](../../cpp/noalias.md) ve [Restrict](../../cpp/restrict.md).
 
-Bu işlev ayarlar `errno` için `ENOMEM` bellek ayırma başarısız olursa veya istenen boyutu büyüktür `_HEAP_MAXREQ`. Hakkında daha fazla bilgi için `errno`, bkz: [errno _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md). Ayrıca, **_aligned_malloc** kendi parametrelerini doğrular. Varsa *hizalama* 2'in kuvveti değil veya *boyutu* sıfırsa bu işlev içinde açıklanan şekilde geçersiz parametre işleyicisi çağırır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Devam etmek için bu işlev dönüşleri NULL ve kümeleri yürütülmesine izin veriliyorsa `errno` için `EINVAL`.
+Bu işlev, `errno` bellek `ENOMEM` ayırma başarısız olursa veya istenen boyut şundan `_HEAP_MAXREQ`büyükse olarak ayarlanır. Hakkında `errno`daha fazla bilgi için bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md). Ayrıca, **_aligned_malloc** parametrelerini doğrular. *Hizalama* 2 ' nin üssü veya *boyutu* sıfır değilse, bu işlev [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev null döndürür ve öğesini olarak `errno` `EINVAL`ayarlar.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_aligned_malloc**|\<malloc.h >|
+|**_aligned_malloc**|\<malloc. h >|
 
 ## <a name="example"></a>Örnek
 

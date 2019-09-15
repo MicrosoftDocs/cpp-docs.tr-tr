@@ -1,10 +1,10 @@
 ---
 title: _tell, _telli64
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _telli64
 - _tell
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - tell
 - telli64
@@ -30,16 +33,16 @@ helpviewer_keywords:
 - telli64 function
 - _telli64 function
 ms.assetid: 1500e8f9-8fec-4253-9eec-ec66125dfc9b
-ms.openlocfilehash: 628f37d3b8a39a75fb2329a1b2805426f15e821f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 54f672a1b230103d6f9ae1c45d2c9e487764939e
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62258578"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70946267"
 ---
-# <a name="tell-telli64"></a>_tell, _telli64
+# <a name="_tell-_telli64"></a>_tell, _telli64
 
-Dosya işaretçisi konumunu alır.
+Dosya işaretçisinin konumunu alır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -54,26 +57,26 @@ __int64 _telli64(
 
 ### <a name="parameters"></a>Parametreler
 
-*Tanıtıcı*<br/>
-Dosya dosya açmak için başvuran tanımlayıcısı.
+*tutamaçlardan*<br/>
+Dosya tanımlayıcısı açık dosyaya başvuruyor.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Dosya işaretçisini geçerli konumu. Cihazlarda arama özelliğine sahip olmayan, dönüş değeri tanımsızdır.
+Dosya işaretçisinin geçerli konumu. Arama yeteneğine sahip olmayan cihazlarda, dönüş değeri tanımsızdır.
 
--1 L dönüş değeri bir hata gösterir. Varsa *işlemek* bir geçersiz dosya tanımlayıcısı açıklandığı gibi geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütme devam etmesine izin verilirse bu işlevler kümesi **errno** için **EBADF** ve -1 L döndürür.
+-1L dönüş değeri bir hatayı gösterir. *Tanıtıcı* geçersiz bir dosya tanımlayıcısıdır, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **errno** ' ı **EBADF** ve Return-1L olarak ayarlar.
 
-Bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) bu ve diğer hakkında daha fazla bilgi için dönüş kodları.
+Bu ve diğer dönüş kodları hakkında daha fazla bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) .
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Tell** işlevi alır (varsa) dosya işaretçisini geçerli konumu ile ilişkili *işlemek* bağımsız değişken. Konum, dosyanın başından itibaren bayt sayısı olarak ifade edilir. İçin **_telli64** işlevi, bu değer, bir 64-bit tamsayı olarak ifade edilir.
+**_Söyleyin** işlevi, *tanıtıcı* bağımsız değişkeniyle ilişkili dosya işaretçisinin (varsa) geçerli konumunu alır. Konum, dosyanın başından itibaren bayt sayısı olarak ifade edilir. **_Telli64** işlevi için, bu değer 64 bitlik bir tamsayı olarak ifade edilir.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_tell**, **_telli64**|\<io.h >|
+|**_söyle**, **_telli64**|\<GÇ. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -110,7 +113,7 @@ int main( void )
 }
 ```
 
-### <a name="input-crttelltxt"></a>Giriş: crt_tell.txt
+### <a name="input-crt_telltxt"></a>Giriş: crt_tell. txt
 
 ```Input
 Line one.
@@ -125,6 +128,6 @@ Current file position is: 20
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Düşük düzey g/ç](../../c-runtime-library/low-level-i-o.md)<br/>
+[Alt düzey g/ç](../../c-runtime-library/low-level-i-o.md)<br/>
 [ftell, _ftelli64](ftell-ftelli64.md)<br/>
 [_lseek, _lseeki64](lseek-lseeki64.md)<br/>

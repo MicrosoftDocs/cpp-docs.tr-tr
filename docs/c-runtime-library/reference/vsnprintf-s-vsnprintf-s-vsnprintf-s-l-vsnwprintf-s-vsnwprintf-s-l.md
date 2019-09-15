@@ -1,13 +1,13 @@
 ---
 title: vsnprintf_s, _vsnprintf_s, _vsnprintf_s_l, _vsnwprintf_s, _vsnwprintf_s_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _vsnwprintf_s
 - _vsnwprintf_s_l
 - _vsnprintf_s
 - vsnprintf_s
 - _vsnprintf_s_l
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -20,7 +20,10 @@ apilocation:
 - ntdll.dll
 - ucrtbase.dll
 - ntoskrnl.exe
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _vsnprintf_s
 - _vsntprintf_s
@@ -40,12 +43,12 @@ helpviewer_keywords:
 - _vsnwprintf_s function
 - formatted text [C++]
 ms.assetid: 147ccfce-58c7-4681-a726-ef54ac1c604e
-ms.openlocfilehash: 50e38e3177462f17436727cf26d1e7dade9cb882
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 8c41a09ce35819403b2361dcf5ad53eb93b7a615
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69499093"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70945284"
 ---
 # <a name="vsnprintf_s-_vsnprintf_s-_vsnprintf_s_l-_vsnwprintf_s-_vsnwprintf_s_l"></a>vsnprintf_s, _vsnprintf_s, _vsnprintf_s_l, _vsnwprintf_s, _vsnwprintf_s_l
 
@@ -133,13 +136,13 @@ Daha fazla bilgi için bkz. [Biçim belirtimleri](../../c-runtime-library/format
 
 **vsnprintf_s**, **_vsnprintf_s** ve **_vsnwprintf_s** , yazılan karakterlerin sayısını, Sonlandırıcı null değerini veya bir çıkış hatası oluşursa negatif bir değeri döndürür. **vsnprintf_s** , **_vsnprintf_s**ile aynıdır. **vsnprintf_s** , ANSI standardına uyum sağlamak için eklenmiştir. **_vnsprintf** geriye dönük uyumluluk için tutulur.
 
-Verileri depolamak için gereken depolama alanı ve bir Sonlandırıcı null değeri *sizeOfBuffer*değerini aşarsa, [](../../c-runtime-library/parameter-validation.md) *Count* [_TRUNCATE](../../c-runtime-library/truncate.md)olmadığı sürece, bu durumda *arabelleğe* sığacak şekilde dize yazılır ve-1 döndürülür. Yürütme geçersiz parametre işleyiciden sonra devam ediyorsa, bu işlevler *arabelleği* boş bir dizeye ayarlar, **errno** , **ERANGE**ayarla ve-1 döndürür.
+Verileri depolamak için gereken depolama alanı ve bir Sonlandırıcı null değeri *sizeOfBuffer*değerini aşarsa, *Count* [_TRUNCATE](../../c-runtime-library/truncate.md)olmadığı [sürece, bu](../../c-runtime-library/parameter-validation.md)durumda *arabelleğe* sığacak şekilde dize yazılır ve-1 döndürülür. Yürütme geçersiz parametre işleyiciden sonra devam ediyorsa, bu işlevler *arabelleği* boş bir dizeye ayarlar, **errno** , **ERANGE**ayarla ve-1 döndürür.
 
 *Arabellek* veya *Biçim* **null** işaretçisiyse veya *sayı* sıfırdan küçükse veya eşitse, geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **errno** olarak **EINVAL** ve-1 döndürür.
 
 ### <a name="error-conditions"></a>Hata koşulları
 
-|**Koşul**|Döndürülmesini|**errno**|
+|**Koşul**|döndürülmesini|**errno**|
 |-----------------|------------|-------------|
 |*arabellek* **null**|-1|**EINVAL**|
 |*Biçim* **null**|-1|**EINVAL**|

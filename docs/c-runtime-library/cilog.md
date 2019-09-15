@@ -1,9 +1,9 @@
 ---
 title: _CIlog
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _CIlog
-apilocation:
+api_location:
 - msvcr90.dll
 - msvcr120.dll
 - msvcr80.dll
@@ -12,7 +12,10 @@ apilocation:
 - msvcr100.dll
 - msvcrt.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _CIlog
 - CIlog
@@ -20,16 +23,16 @@ helpviewer_keywords:
 - _CIlog intrinsic
 - CIlog intrinsic
 ms.assetid: 23503854-ddaa-4fe0-a4a3-7fbb3a43bdec
-ms.openlocfilehash: 29b35e5807ca3bd1fbb994118314952a9a1760c4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: edc096680522da50910eb42a95a481b83be8791d
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62290098"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70944804"
 ---
-# <a name="cilog"></a>_CIlog
+# <a name="_cilog"></a>_CIlog
 
-Yığındaki en üst değer doğal logaritmasını hesaplar.
+Yığındaki en üstteki değerin doğal logaritmasını hesaplar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -39,9 +42,9 @@ void __cdecl _CIlog();
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu sürümü `log` derleyici anlayan özelleştirilmiş bir çağırma kuralı işlevi vardır. Kopya oluşturulmasını önlediği için yürütmeyi hızlandırır ve YAZMAÇ ayırma ile yardımcı olur.
+`log` İşlevin bu sürümünde derleyicinin anladığı özelleştirilmiş bir çağırma kuralı vardır. Kopyaların oluşturulmasını ve YAZMAÇ ayrılmasına yardımcı olmasını önlediği için yürütmeyi hızlandırır.
 
-Sonuç değerini yığın üstüne itilir.
+Elde edilen değer yığının en üstüne gönderilir.
 
 ## <a name="requirements"></a>Gereksinimler
 

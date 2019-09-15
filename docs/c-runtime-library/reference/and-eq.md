@@ -1,7 +1,7 @@
 ---
 title: and_eq
 ms.date: 11/04/2016
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -12,7 +12,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - and_eq
 - std.and_eq
@@ -20,16 +23,16 @@ f1_keywords:
 helpviewer_keywords:
 - and_eq macro
 ms.assetid: 11091772-e359-4c2b-95c6-00841ac04354
-ms.openlocfilehash: 4dbce5115c656137f845e31b4793f43b5531afc2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: cf54087459f4d2af054b0409c4cfcfcb05572db1
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62341983"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70943683"
 ---
-# <a name="andeq"></a>and_eq
+# <a name="and_eq"></a>and_eq
 
-Alternatif & = işleci.
+& = İşlecine bir alternatifi.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -69,4 +72,4 @@ int main( )
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<iso646.h >
+**Üst bilgi:** \<iso646. h >

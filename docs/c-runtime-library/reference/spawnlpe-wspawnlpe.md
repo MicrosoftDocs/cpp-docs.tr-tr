@@ -1,10 +1,10 @@
 ---
 title: _spawnlpe, _wspawnlpe
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _spawnlpe
 - _wspawnlpe
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-process-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - spawnlpe
 - _wspawnlpe
@@ -31,19 +34,19 @@ helpviewer_keywords:
 - processes, executing new
 - process creation
 ms.assetid: e171ebfa-70e7-4c44-8331-2a291fc17bd6
-ms.openlocfilehash: fa390c039a3d663cb79cb311667e568a6a053131
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fe82d52418683d414ffbdd0f4fb0efd9bfd709cb
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62355165"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70947656"
 ---
-# <a name="spawnlpe-wspawnlpe"></a>_spawnlpe, _wspawnlpe
+# <a name="_spawnlpe-_wspawnlpe"></a>_spawnlpe, _wspawnlpe
 
-Oluşturur ve yeni bir işlem yürütür.
+Yeni bir işlem oluşturur ve yürütür.
 
 > [!IMPORTANT]
-> Bu API, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -70,50 +73,50 @@ intptr_t _wspawnlpe(
 
 ### <a name="parameters"></a>Parametreler
 
-*Modu*<br/>
+*modundaysa*<br/>
 Çağırma işlemi için yürütme modu.
 
-*■ CmdName*<br/>
+*cmdname*<br/>
 Yürütülecek dosyanın yolu.
 
-*arg0*, *arg1*, ... *argn*<br/>
-Bağımsız değişkenlere işaretçi listesi. *Arg0* bağımsız değişkeni, genellikle bir işaretçiye *■ cmdname*. Bağımsız değişkenler *arg1* aracılığıyla *argn* yeni bağımsız değişken listesini oluşturan karakter dizelerine. Aşağıdaki *argn*, olmalıdır bir **NULL** bağımsız değişken listesinin sonunu işaretlemek için işaretçi.
+*arg0*, *arg1*,... *argN*<br/>
+Bağımsız değişkenlere işaretçiler listesi. *Arg0* bağımsız değişkeni genellikle bir *cmdname*işaretçisi olur. *ArgN* aracılığıyla *arg1* bağımsız değişkenleri, yeni bağımsız değişken listesini oluşturan karakter dizelerine yönelik işaretçilerdir. Aşağıdaki *argN*, bağımsız değişken listesinin sonunu Işaretlemek için **null** bir işaretçi olmalıdır.
 
 *envp*<br/>
-Ortam ayarlarına bir işaretçiler dizisi.
+Ortam ayarlarına işaretçiler dizisi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Dönüş değeri eş zamanlı **_spawnlpe** veya **_wspawnlpe** (**_p_waıt** için belirtilen *modu*) yeni çıkış durumudur işlem. Dönüş değeri eş zamanlı olmayan **_spawnlpe** veya **_wspawnlpe** (**_p_nowaıt** veya **_p_nowaıto** için belirtilen  *modu*) süreci işler. İşlem normal şekilde sonlandırıldıysa Çıkış durumu 0'dır. Üretilmiş işlem sıfır olmayan bir bağımsız değişken özellikle çağrılacak kullanıyorsa, çıkış durumunu sıfır olmayan bir değer ayarlayabilirsiniz **çıkmak** yordamı. Yeni işlem açık bir şekilde pozitif Çıkış durumu ayarlamadıysanız, bir pozitif Çıkış durumu bir durdurma veya kesme kaynaklanan anormal çıkışı gösterir. Dönüş değeri-1 (yeni işlem başlatılmamış) bir hata gösterir. Bu durumda, **errno** aşağıdaki değerlerden birine ayarlayın.
+Zaman uyumlu **_Bir nlpe** veya **_wspawnlpe** 'den ( *Mode*için belirtilen **_P_WAIT** ) dönüş değeri, yeni işlemin çıkış durumudur. Bir zaman uyumsuz **_Bir nlpe** veya **_wspawnlpe** ( *Mode*için belirtilen **_P_NOWAIT** veya **_P_NOWAITO** ) için dönüş değeri işlem tanıtıcıdır. İşlem normal şekilde sonlandırılırsa çıkış durumu 0 ' dır. Oluşturulan işlem özellikle **Çıkış** yordamını çağırmak için sıfır dışında bir bağımsız değişken kullanıyorsa çıkış durumunu sıfır dışında bir değere ayarlayabilirsiniz. Yeni işlem açıkça pozitif bir çıkış durumu ayarlanmamışsa, bir pozitif çıkış durumu, bir iptal veya kesme nedeniyle oluşan olağan dışı bir çıkış olduğunu gösterir. -1 ' in dönüş değeri bir hatayı gösterir (yeni işlem başlatılmaz). Bu durumda, **errno** aşağıdaki değerlerden birine ayarlanır.
 
 |||
 |-|-|
 | **E2BIG** | Bağımsız değişken listesi 1024 baytı aşıyor. |
-| **EINVAL** | *modu* bağımsız değişkeni geçersiz. |
+| **EINVAL** | *Mode* bağımsız değişkeni geçersiz. |
 | **ENOENT** | Dosya veya yol bulunamadı. |
 | **ENOEXEC** | Belirtilen dosya yürütülebilir değil veya geçersiz yürütülebilir dosya biçimine sahip. |
-| **ENOMEM** | Yeni işlemi yürütmek yeterli bellek yok. |
+| **ENOMEM** | Yeni işlemi yürütmek için yeterli kullanılabilir bellek yok. |
 
-Bunlar ve diğer dönüş kodları hakkında daha fazla bilgi için bkz: [errno _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Bu ve diğer dönüş kodları hakkında daha fazla bilgi için bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevlerin her biri oluşturur ve yeni bir işlem yürütür, her komut satırı bağımsız değişkenini ayrı bir parametre olarak geçirir ve ortam ayarlarına bir işaretçiler dizisi geçirir. Bu işlevleri **yolu** yürütülecek dosyayı bulmak için ortam değişkeni.
+Bu işlevlerin her biri yeni bir işlem oluşturur ve yürütür, her komut satırı bağımsız değişkenini ayrı bir parametre olarak geçirir ve ortam ayarlarına bir işaretçiler dizisi geçirir. Bu işlevler, yürütülecek dosyayı bulmak için **Path** ortam değişkenini kullanır.
 
-Bu işlevler kendi parametrelerini doğrular. Ya da *■ cmdname* veya *arg0* boş bir dize ya da açıklandığı şekilde bir null işaretçiyse, geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütme devam etmesine izin verilirse bu işlevler kümesi **errno** için **EINVAL**ve -1 döndürür. Yeni bir işlem üretilmedi.
+Bu işlevler, parametrelerini doğrular. Herhangi bir *cmdname* veya *arg0* boş bir dize veya null Işaretçisiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **errno** ' ı **EINVAL**olarak ayarlar ve-1 döndürür. Yeni işlem oluşturulmadı.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_spawnlpe**|\<Process.h >|
-|**_wspawnlpe**|\<stdio.h > veya \<wchar.h >|
+|**_Bir nlpe**|\<Process. h >|
+|**_wspawnlpe**|\<stdio. h > veya \<wchar. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
-Örnekte bakın [_spawn, _wspawn işlevleri](../../c-runtime-library/spawn-wspawn-functions.md).
+[_Üretilemedi, _wspiyı işlevlerinde](../../c-runtime-library/spawn-wspawn-functions.md)örneğe bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

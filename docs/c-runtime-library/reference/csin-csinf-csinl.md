@@ -1,11 +1,11 @@
 ---
 title: csin, csinf, csinl
 ms.date: 11/04/2016
-apiname:
+api_name:
 - csin
 - csinf
 - csinl
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - csin
 - csinf
@@ -30,12 +33,12 @@ helpviewer_keywords:
 - csinf function
 - csinl function
 ms.assetid: 3ed475e8-9aae-42ba-a25c-7ae656a0fd4d
-ms.openlocfilehash: 66483c9121750c3333850d6244704b89b8893cad
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c0e0c57596ac36dbe3c0b72f79177b8df7b15af0
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62288855"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70941963"
 ---
 # <a name="csin-csinf-csinl"></a>csin, csinf, csinl
 
@@ -64,21 +67,21 @@ _Lcomplex csinl(
 ### <a name="parameters"></a>Parametreler
 
 *z*<br/>
-Radyan cinsinden açı temsil eden bir karmaşık sayı.
+Radyan cinsinden bir açıyı temsil eden karmaşık bir sayı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Sinüsünü *z*, radyan cinsinden açı.
+*Z*'nin radyan cinsinden sinüsü.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Çünkü C++ aşırı yüklemesi, sağlayan yüklerini çağırabilirsiniz **csin** alan ve getiren **_Fcomplex** ve **_Lcomplex** değerleri. C programında **csin** her zaman alan ve döndüren bir **_Dcomplex** değeri.
+Aşırı C++ yüklemeye izin verdiğinden, **_Fcomplex** ve **_lcomplex** değerlerini alıp döndüren **csın** aşırı yüklerini çağırabilirsiniz. C programında, **CSV** her zaman bir **_dcomplex** değeri alır ve döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|C üstbilgisi|C++ üst bilgisi|
+|Yordam|C üstbilgisi|C++üst bilgi|
 |-------------|--------------|------------------|
-|**csin**,               **csinf**, **csinl**|\<Complex.h >|\<ccomplex >|
+|**csin**, **csinf**, **csinl**|\<karmaşık. h >|\<ccomplex >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

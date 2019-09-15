@@ -1,12 +1,12 @@
 ---
 title: _cprintf, _cprintf_l, _cwprintf, _cwprintf_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _cwprintf_l
 - _cprintf_l
 - _cwprintf
 - _cprintf
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _cwprintf
 - cwprintf
@@ -45,19 +48,19 @@ helpviewer_keywords:
 - cwprintf_l function
 - _cprintf function
 ms.assetid: 67ffefd4-45b3-4be0-9833-d8d26ac7c4e2
-ms.openlocfilehash: ce1913012ee37b19e15602daaa4eea042a69a3de
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: aa0dfe22312f5a4736a6bc1b7a52e90dfa425a14
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62335340"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70942657"
 ---
-# <a name="cprintf-cprintfl-cwprintf-cwprintfl"></a>_cprintf, _cprintf_l, _cwprintf, _cwprintf_l
+# <a name="_cprintf-_cprintf_l-_cwprintf-_cwprintf_l"></a>_cprintf, _cprintf_l, _cwprintf, _cwprintf_l
 
-Biçimlendirir ve konsola yazdırır. Daha güvenli sürümleri mevcuttur; bkz: [_cprintf_s, _cprintf_s_l, _cwprintf_s, _cwprintf_s_l](cprintf-s-cprintf-s-l-cwprintf-s-cwprintf-s-l.md).
+Konsola biçimlendirir ve yazdırır. Daha güvenli sürümler kullanılabilir; bkz. [_cprintf_s, _cprintf_s_l, _cwprintf_s, _cwprintf_s_l](cprintf-s-cprintf-s-l-cwprintf-s-cwprintf-s-l.md).
 
 > [!IMPORTANT]
-> Bu API, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -80,31 +83,31 @@ int _cwprintf_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*Biçim*<br/>
+*format*<br/>
 Biçim denetimi dizesi.
 
 *argument_list*<br/>
 Biçim dizesi için isteğe bağlı parametreler.
 
-*Yerel ayar*<br/>
+*ayarlar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Yazdırılan karakter sayısı.
+Yazdırılan karakterlerin sayısı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevler biçimlendirmek ve bir dizi karakter ve değerlerini doğrudan konsola yazdırma kullanarak **_putch** işlevi (**_putwch** için **_cwprintf**) karakterleri çıkarmak için . Her bağımsız değişkende *argument_list* (varsa) dönüştürülür ve karşılık gelen kapsamındaki biçim belirtimine göre çıkışı *biçimi*. *Biçimi* bağımsız değişken kullanan [biçim belirtim Sözdizimi printf ve wprintf işlevleri için](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md). Farklı **fprintf**, **printf**, ve **sprintf** işlevlerinin **_cprintf** ya da **_cwprintf**satır besleme karakterlerini satır başı satır besleme (CR-LF) birleşimlerine çevirir çıkış.
+Bu işlevler, bir dizi karakter ve değeri doğrudan konsola, **_putch** işlevini ( **_putwch** for **_cwprintf**), çıkış karakterlerine göre biçimlendirir ve yazdırır. *Argument_list* (varsa) içindeki her bağımsız değişken, karşılık *gelen biçim belirtimine*göre dönüştürülür ve çıktı. *Biçim* bağımsız değişkeni, [printf ve wprintf işlevleri için biçim belirtimi sözdizimini](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)kullanır. **Fprintf**, **printf**ve **sprintf** işlevlerinin aksine, çıkış sırasında **_cprintf** veya **_cwprintf** , satır besleme karakterlerini satır başı satır besleme (CR-LF) birleşimlerine dönüştürür.
 
-Önemli bir ayrımdır olan **_cwprintf** Windows içinde kullanıldığı zaman Unicode karakterleri görüntüler. Farklı **_cprintf**, **_cwprintf** geçerli konsol yerel ayarlarını kullanır.
+Önemli bir ayrım, **_cwprintf** , Windows 'Da kullanıldığında Unicode karakterler görüntülüyor. **_Cprintf**'den farklı olarak, **_cwprintf** geçerli konsol yerel ayarlarını kullanır.
 
-Sahip bu işlevlerin sürümleri **_l** sonekine, geçerli yerel ayarı yerine iletilen yerel ayar parametresini kullanmalarıdır.
+**_L** sonekine sahip bu işlevlerin sürümleri, geçerli yerel ayar yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır.
 
-**_cprintf** doğrular *biçimi* parametresi. Varsa *biçimi* null bir işaretçiyse, işlev içinde açıklanan şekilde geçersiz parametre işleyicisi çağırır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Devam etmek için işlev -1 döndürür ve kümeleri yürütülmesine izin veriliyorsa **errno** için **EINVAL**.
+**_cprintf** *Biçim* parametresini doğrular. *Biçim* null işaretçisiyse, Işlev [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa işlev-1 döndürür ve **errno** öğesini **EINVAL**olarak ayarlar.
 
 > [!IMPORTANT]
-> Emin *biçimi* kullanıcı tanımlı bir dize değil.
+> *Biçimin* Kullanıcı tanımlı bir dize olmadığından emin olun.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -117,8 +120,8 @@ Sahip bu işlevlerin sürümleri **_l** sonekine, geçerli yerel ayarı yerine i
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_cprintf**, **_cprintf_l**|\<conio.h >|
-|**_cwprintf**, **_cwprintf_l**|\<conio.h >|
+|**_cprintf**, **_cprintf_l**|\<conio. h >|
+|**_cwprintf**, **_cwprintf_l**|\<conio. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

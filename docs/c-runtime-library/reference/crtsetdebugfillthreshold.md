@@ -1,9 +1,9 @@
 ---
 title: _CrtSetDebugFillThreshold
 ms.date: 03/21/2018
-apiname:
+api_name:
 - _CrtSetDebugFillThreshold
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -14,7 +14,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _CrtSetDebugFillThreshold
 - CrtSetDebugFillThreshold
@@ -25,16 +28,16 @@ helpviewer_keywords:
 - buffer-filling behavior
 - 0xFD
 ms.assetid: 6cb360e8-56ae-4248-b17f-e28aee3e0ed7
-ms.openlocfilehash: ebe958ddc1c9a5c372f4ae68336e0dea3144e8b4
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: fe7d998a44502709edde33d22c1b1e88cf5ecbee
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64342965"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70942291"
 ---
-# <a name="crtsetdebugfillthreshold"></a>_CrtSetDebugFillThreshold
+# <a name="_crtsetdebugfillthreshold"></a>_CrtSetDebugFillThreshold
 
-Alır ya da hata ayıklama işlevlerde arabellek doldurma davranışı denetleme eşiği değiştirir.
+Hata ayıklama işlevlerinde arabellek doldurma davranışını denetleyen eşiği alır veya değiştirir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -45,7 +48,7 @@ size_t _CrtSetDebugFillThreshold( size_t newThreshold );
 ### <a name="parameters"></a>Parametreler
 
 *newThreshold*<br/>
-Yeni eşik boyutunu bayt cinsinden.
+Bayt cinsinden yeni eşik boyutu.
 
 ## <a name="return-value"></a>Dönüş değeri
 
@@ -53,11 +56,11 @@ Yeni eşik boyutunu bayt cinsinden.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bazı gelişmiş güvenlik CRT işlevleri hata ayıklama sürümleri ile özel bir karakter onlara geçirilen arabellek doldurun (0xFE). Bu, burada boyutu yanlış işleve geçirildi çalışmaları bulmak için yardımcı olur. Ne yazık ki, performans da azaltır. Performansı artırmak için kullanmak **_CrtSetDebugFillThreshold** arabellek doldurma büyük arabellekler için devre dışı bırakmak için *newThreshold* eşiği. A *newThreshold* değeri 0'ın devre dışı bırakır, tüm arabellekler için.
+Bazı güvenlik Gelişmiş CRT işlevlerinin hata ayıklama sürümleri, kendisine geçirilen arabelleği özel bir karakterle (0xFE) doldurur. Bu, işleve yanlış boyutun geçirildiği durumları bulmaya yardımcı olur. Ne yazık ki performansı düşürür. Performansı artırmak için, *Newthreshold* eşiğinden daha büyük arabellekler için arabelleği doldurmayı devre dışı bırakmak üzere **_Crtsetdebugfillthreshold** komutunu kullanın. 0 ' ın bir *Newthreshold* değeri, tüm arabellekler için devre dışı bırakır.
 
-Varsayılan Eşik **SIZE_T_MAX**.
+Varsayılan eşik **SIZE_T_MAX**' dir.
 
-Etkilenen işlevlerin bir listesi aşağıda verilmiştir.
+Etkilenen işlevlerin listesi aşağıda verilmiştir.
 
 - [_ecvt_s](ecvt-s.md)
 
@@ -99,13 +102,13 @@ Etkilenen işlevlerin bir listesi aşağıda verilmiştir.
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_CrtSetDebugFillThreshold**|\<crtdbg.h >|
+|**_CrtSetDebugFillThreshold**|\<Crtdbg. h >|
 
-Bu işlev, Microsoft'a özgü kullanılır. Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Bu işlev, Microsoft 'a özgüdür. Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 
-Hata ayıklama sürümleri [C çalışma zamanı kitaplıkları](../../c-runtime-library/crt-library-features.md) yalnızca.
+Yalnızca [C çalışma zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md) hata ayıklama sürümleri.
 
 ## <a name="example"></a>Örnek
 

@@ -1,10 +1,10 @@
 ---
 title: memchr, wmemchr
 ms.date: 03/31/2019
-apiname:
+api_name:
 - wmemchr
 - memchr
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - ntoskrnl.exe
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - memchr
 - wmemchr
@@ -24,16 +27,16 @@ helpviewer_keywords:
 - memchr function
 - wmemchr function
 ms.assetid: 5a348581-28f1-4256-8434-687245f7fc9f
-ms.openlocfilehash: 00a1f0d12047cc388b56074a657ffd739e986827
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c951716d623d900f975e9d6f8a1c762a155b1a7a
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62285267"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70951940"
 ---
 # <a name="memchr-wmemchr"></a>memchr, wmemchr
 
-Karakter, bir arabellek bulun.
+Bir arabellekteki karakterleri bulur.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -72,37 +75,37 @@ const wchar_t *wmemchr(
 
 ### <a name="parameters"></a>Parametreler
 
-*Arabellek*<br/>
-Arabellek için işaretçi.
+*arabelleğin*<br/>
+Arabellek işaretçisi.
 
 *c*<br/>
 Aranacak karakter.
 
-*Sayısı*<br/>
+*biriktirme*<br/>
 Denetlenecek karakter sayısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, bir işaretçi ilk konumunu döndürür *c* içinde *arabellek*. Aksi takdirde NULL döndürür.
+Başarılı olursa, *arabellekteki* *c* 'nin ilk konumuna bir işaretçi döndürür. Aksi takdirde, NULL döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-`memchr` ve `wmemchr` ilk oluşumunu arayın *c* ilk *sayısı* karakterlerinden *arabellek*. Bulduğunda durdurulmadan *c* veya ne zaman kullanıma ilk *sayısı* karakter.
+`memchr`ve `wmemchr` *arabelleğin*ilk *sayı* karakterdeki ilk *c* oluşumunu arayın. *C* bulduğunda veya ilk *sayı* karakterini denetlediyseniz, bu yanıt vermez.
 
-C'de bu işlevler alır bir **const** ilk bağımsız değişken için bir işaretçi. C++'da, iki aşırı yüklemesi kullanılabilir. Bir işaretçi alan aşırı yükleme **const** bir işaretçi döndürür **const**; olmayan bir işaretçiye alan sürüm**const** olmayan bir işaretçi döndürür**const** . Makro \_CRT\_CONST\_doğru\_aşırı yüklemeler, hem de tanımlanır **const** ve olmayan-**const** bu işlevlerin sürümleri mevcuttur. Olmayan gerektiriyorsa**const** davranışı için her iki C++ aşırı C++ ' ta tanımlamak sembol \_CONST\_DÖNDÜRÜR.
+C 'de, bu işlevler ilk bağımsız değişken için bir **const** işaretçisi alır. ' C++De, iki aşırı yükleme mevcuttur. **Const** işaretçisine alan aşırı yükleme **const**için bir işaretçi döndürür; **const** olmayan bir işaretçi alan sürüm,**const**olmayan bir işaretçi döndürür. Bu işlevlerin \_hem\_ **const** hem\_de**const** olmayan sürümleri kullanılabilir değilse, makro CRT const\_doğru aşırı yüklemeleri tanımlanmıştır. C++ İçindeki C++her iki aşırı yük \_için**const** olmayan davranışlara ihtiyacınız varsa const\_Return sembolünü tanımlayın.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|`memchr`|\<Memory.h > veya \<string.h >|
-|`wmemchr`|\<wchar.h >|
+|`memchr`|\<Memory. h > veya \<String. h >|
+|`wmemchr`|\<wchar. h >|
 
 Uyumluluk hakkında daha fazla bilgi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 
-Tüm sürümleri [C çalışma zamanı kitaplıkları](../../c-runtime-library/crt-library-features.md).
+[C çalışma zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md)tüm sürümleri.
 
 ## <a name="example"></a>Örnek
 

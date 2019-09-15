@@ -1,10 +1,10 @@
 ---
 title: _CrtSetReportHook2, _CrtSetReportHookW2
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _CrtSetReportHook2
 - _CrtSetReportHookW2
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - CrtSetReportHookW2
 - CrtSetReportHook2
@@ -27,16 +30,16 @@ helpviewer_keywords:
 - _CrtSetReportHookW2 function
 - CrtSetReportHookW2 function
 ms.assetid: 12e5f68d-c8a7-4b1a-9a75-72ba4a8592d0
-ms.openlocfilehash: 1e850d3e83ed7b7c77873400deac073084708b78
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 37ec0cea3fb558a5926e6f9c707e0e5033a17222
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62335330"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70942213"
 ---
-# <a name="crtsetreporthook2-crtsetreporthookw2"></a>_CrtSetReportHook2, _CrtSetReportHookW2
+# <a name="_crtsetreporthook2-_crtsetreporthookw2"></a>_CrtSetReportHook2, _CrtSetReportHookW2
 
-Yükler veya bir istemci tanımlı raporlama işlevi C çalışma zamanı hata ayıklama raporlama işlemine (yalnızca hata ayıklama sürümü) takma tarafından kaldırır.
+, C çalışma zamanı hata ayıklama raporlama işlemine (yalnızca hata ayıklama sürümü) bağlanarak, istemci tanımlı bir raporlama işlevini kurar veya kaldırır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -53,53 +56,53 @@ int _CrtSetReportHookW2(
 
 ### <a name="parameters"></a>Parametreler
 
-*Modu*<br/>
-Gerçekleştirilecek eylemi: **_CRT_RPTHOOK_INSTALL** veya **_CRT_RPTHOOK_REMOVE**.
+*modundaysa*<br/>
+Gerçekleştirilecek eylem: **_CRT_RPTHOOK_INSTALL** veya **_CRT_RPTHOOK_REMOVE**.
 
 *pfnNewHook*<br/>
-Kanca yüklemek veya bu işlevi dar karakter veya geniş karakter sürümünü kaldırmak için rapor.
+Bu işlevin dar karakter veya geniş karakter sürümünde yüklenmek veya kaldırmak için rapor kancası.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-bir hatayla karşılaşıldı, -1 ile **EINVAL** veya **ENOMEM** Ayarla; Aksi takdirde başvuru sayımını döndürür *pfnNewHook* çağrısından sonra.
+-1 **EINVAL** veya **ENOMEM** kümesi ile bir hata ile karşılaşılırsa; Aksi takdirde, çağrıdan sonra *pnewhook* başvuru sayısını döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_CrtSetReportHook2** ve **_CrtSetReportHookW2** kanca ya da bir işlev tutulabilir ancak izin [_CrtSetReportHook](crtsetreporthook.md) yalnızca bir işlev kanca olanak tanır.
+**_CrtSetReportHook2** ve **_Crtsetreporthookw2** bir işlevi ayıklamanıza veya geri yüklemenize ımkan sağlarken, [_Crtsetreporthook](crtsetreporthook.md) yalnızca bir işlevi barındırmanıza izin verir.
 
-**_CrtSetReportHook2** veya **_CrtSetReportHookW2** yerine kullanılması gereken **_CrtSetReportHook** DLL'de kanca çağrı yapılır zaman ve ne zaman birden çok DLL'leri yüklenebilir ve kendi ayarlama kanca işlevleri. Böyle bir durumda, DLL'leri farklı bir sırada bunlar yüklenmiş ve yüklenmemiş bir DLL işaret eden kanca işlevini bırakılabilir kaldırılıp. Kanca işlevlerini Raporlama ile eklendiyse, herhangi bir hata ayıklama çıktı işlem çökmesi **_CrtSetReportHook**.
+**_CrtSetReportHook2** veya **_Crtsetreporthookw2** yerine, bir dll 'de kanca çağrısı yapıldığında ve birden çok dll yüklenip kendi kanca Işlevlerini ayarlarken **_Crtsetreporthook** yerine kullanılmalıdır. Böyle bir durumda, dll 'Ler yüklenenden farklı bir sırayla kaldırılabilir ve kanca işlevi, yüklenmeyen bir DLL 'ye işaret ediyor olabilir. Kanca işlevleri **_Crtsetreporthook**ile eklendiyse, herhangi bir hata ayıklama çıkışı işlemi çöker.
 
-Herhangi bir bağlama ile eklenen işlevler **_CrtSetReportHook** işlevleri ile eklenen hiçbir kanca varsa adlı **_CrtSetReportHook2** veya **_CrtSetReportHookW2** veya tüm bağlama ile eklenen işlevler **_CrtSetReportHook2** ve **_CrtSetReportHookW2** dönüş **FALSE**.
+_Crtsetreporthook2 veya **_Crtsetreporthookw2** ile eklenen kanca işlevleri yoksa ve **_CrtSetReportHook2** ve _ Ile tüm kanca Işlevleri eklendiyse, **_CrtSetReportHook** ile eklenen tüm kanca işlevleri çağrılır  **CrtSetReportHookW2** geri dönüş **false**.
 
-Bu işlev geniş karakter sürümü kullanılabilir. Kanca işlevlerini (geniş veya dar karakter) türü, bu işlev için kullanılan sürümle aynı olmalıdır, bir dize alır. Bu işlev geniş karakter sürümü ile kullanılan rapor kancaları için aşağıdaki işlev prototipi kullanın:
+Bu işlevin geniş karakterli sürümü kullanılabilir. Rapor kancası işlevleri, türü (geniş veya dar karakterler) kullanılan bu işlevin sürümüyle eşleşmesi gereken bir dize alır. Bu işlevin geniş karakterli sürümüyle kullanılan rapor kancaları için aşağıdaki işlev prototipini kullanın:
 
 ```C
 int YourReportHook( int reportType, wchar_t *message, int *returnValue );
 ```
 
-Aşağıdaki prototip, dar karakter rapor kancaları kullanın:
+Dar karakterli rapor kancaları için aşağıdaki prototipi kullanın:
 
 ```C
 int YourReportHook( int reportType, char *message, int *returnValue );
 ```
 
-Bu işlevler kendi parametrelerini doğrular. Varsa *modu* veya **pfnNewNook** olduğundan geçersizse, bu işlevler geçersiz parametre işleyicisini açıklandığı gibi çağırır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütme devam etmesine izin verilirse bu işlevler kümesi **errno** için **EINVAL** ve -1 döndürür.
+Bu işlevler, parametrelerini doğrular. *Mode* veya **pfnNewNook** geçersiz Ise, bu işlevler [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **errno** olarak **EINVAL** ve-1 döndürür.
 
 > [!NOTE]
-> Uygulamanız ile derlenmişse **/CLR** ve uygulama çıkıldıktan sonra Raporlama işlevi ana çağrılır, herhangi bir CRT işlevleri Raporlama işlevini çağırırsa CLR bir özel durum oluşturur.
+> Uygulamanız **/clr** ile derlenirse ve raporlama işlevi uygulama Main 'den çıktıktan sonra çağrılırsa, raporlama işlevi HERHANGI bir CRT IŞLEVINI çağırırsa clr bir özel durum oluşturur.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|İsteğe bağlı başlık|
 |-------------|---------------------|---------------------|
-|**_CrtSetReportHook2**|\<crtdbg.h >|\<errno.h >|
-|**_CrtSetReportHookW2**|\<crtdbg.h >|\<errno.h >|
+|**_CrtSetReportHook2**|\<Crtdbg. h >|\<errno. h >|
+|**_CrtSetReportHookW2**|\<Crtdbg. h >|\<errno. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 
-Hata ayıklama sürümleri [C çalışma zamanı kitaplıkları](../../c-runtime-library/crt-library-features.md) yalnızca.
+Yalnızca [C çalışma zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md) sürümlerini ayıklayın.
 
 ## <a name="example"></a>Örnek
 

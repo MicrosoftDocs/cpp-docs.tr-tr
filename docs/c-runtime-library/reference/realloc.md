@@ -1,9 +1,9 @@
 ---
 title: realloc
 ms.date: 11/04/2016
-apiname:
+api_name:
 - realloc
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-heap-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _brealloc
 - _nrealloc
@@ -32,16 +35,16 @@ helpviewer_keywords:
 - _frealloc function
 - reallocate memory blocks
 ms.assetid: 2b2239de-810b-4b11-9438-32ab0a244185
-ms.openlocfilehash: 0d61746365a8ded8d68072b1f398a18ba6ce7605
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6197b7bca3ec9f416696e1ded8ea5ca813392616
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62357674"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70949493"
 ---
 # <a name="realloc"></a>realloc
 
-Bellek bloklarını yeniden ayırma.
+Bellek bloklarını yeniden tahsis edin.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -55,46 +58,46 @@ void *realloc(
 ### <a name="parameters"></a>Parametreler
 
 *memblock*<br/>
-Daha önce ayrılmış bellek bloğuna işaretçi.
+Önceden ayrılmış bellek bloğuna yönelik işaretçi.
 
-*Boyutu*<br/>
-Yeni boyutu bayt cinsinden.
+*boyutla*<br/>
+Bayt cinsinden yeni boyut.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**realloc** döndürür bir **void** yeniden (ve muhtemelen taşınan) bellek bloğuna işaretçi.
+**realloc** , yeniden ayrılan (ve muhtemelen taşınan) bellek bloğuna **void** bir işaretçi döndürür.
 
-Blok için verilen boyuta genişletmek için yeterli kullanılabilir bellek yoksa, özgün blok sol değiştirilmez, ve **NULL** döndürülür.
+Bloğu verilen boyuta genişletmek için yeterli kullanılabilir bellek yoksa, özgün blok değiştirilmeden bırakılır ve **null** döndürülür.
 
-Varsa *boyutu* sıfır sonra tarafından işaret edilen blok *memblock* serbest bırakılır; dönüş değeri **NULL**, ve *memblock* işaret sola bir Serbest bırakılan bloğu.
+*Boyut* sıfırsa, *memblock* tarafından işaret edilen blok serbest bırakılır; dönüş değeri **null**ve *memblock* serbest bırakılmış bir blok üzerine gelindiğinde bırakılır.
 
-Dönüş değeri, nesnenin herhangi bir türde bir depolama için uygun şekilde hizalanması garanti bir depolama alanına işaret eder. Dışında bir türe işaretçi almaya **void**, bir tür ataması dönüş değerini kullanın.
+Dönüş değeri, herhangi bir nesne türünün depolanması için uygun şekilde hizalı olarak garantili bir depolama alanına işaret eder. **Void**dışında bir türe işaretçi almak için, dönüş değerinde bir tür dönüştürme kullanın.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Realloc** işlev ayrılan bellek blok boyutu değiştirir. *Memblock* bağımsız değişken bellek bloğu başlangıcına işaret eder. Varsa *memblock* olduğu **NULL**, **realloc** aynı şekilde davranır **malloc** ve yeni bir bloğu ayırır *boyutu*bayt. Varsa *memblock* değil **NULL**, önceki bir çağrı tarafından döndürülen bir işaretçi olmalıdır **calloc**, **malloc**, veya **realloc** .
+**Realloc** işlevi, ayrılmış bir bellek bloğunun boyutunu değiştirir. *Memblock* bağımsız değişkeni bellek bloğunun başlangıcına işaret eder. *Memblock* **null**ise **realloc** , **malloc** ile aynı şekilde davranır ve yeni bir *Boyut* bayt bloğu ayırır. *Memblock* **null**değilse, bir önceki **calloc**, **malloc**veya **realloc**çağrısıyla döndürülen bir işaretçi olmalıdır.
 
-*Boyutu* bağımsız değişkeni yeni blok boyutunu bayt cinsinden verir. Yeni bir blok farklı bir konumdan olsa da içeriği bloğunun kadar kısa yeni ve eski boyutlarının değiştirilmez. Yeni bir blok içinde yeni bir bellek konumuna olabileceğinden, işaretçi tarafından döndürülen **realloc** geçtiğini işaretçisi olması garanti edilmez *memblock* bağımsız değişken. **realloc** mu sıfır değil yeni ayrılan bellek arabelleği büyüme söz konusu olduğunda.
+*Boyut* bağımsız değişkeni, blok için bayt cinsinden yeni boyut verir. Yeni blok farklı bir konumda olabilse de bloğunun içeriği yeni ve eski boyutların daha kısa bir yere kadar değişmez. Yeni blok yeni bir bellek konumunda olabileceğinden, **realloc** tarafından döndürülen işaretçinin *memblock* bağımsız değişkeniyle geçen işaretçi olması garanti edilmez. **realloc** , arabellek büyümesi durumunda yeni ayrılan belleği sıfırlamaz.
 
-**realloc** ayarlar **errno** için **ENOMEM** bellek ayırma başarısız olursa veya bellek miktarını aşıyor istenirse **_HEAP_MAXREQ**. Bu ve diğer hata kodları hakkında daha fazla bilgi için bkz: [errno _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+bellek ayırma **başarısız olursa veya** istenen bellek miktarı **_Heap_maxreq**değerini aşarsa **realloc** , **errno** olarak ayarlar. Bu ve diğer hata kodları hakkında bilgi için bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-**realloc** çağrıları **malloc** kullanmak için C++ [_set_new_mode](set-new-mode.md) yeni işleyici modu ayarlamak için işlevi. Yeni işleyici modunu gösterir mi, hata durumunda, **malloc** tarafından belirlenen yeni işleyici rutinini çağırmaktır [_set_new_handler](set-new-handler.md). Varsayılan olarak, **malloc** bellek dağıtma hatasında yeni işleyici rutinini çağırmaz. Bu varsayılan davranışı geçersiz kılabilirsiniz böylece, **realloc** bellek ayırmak başarısız **malloc** aynı yeni işleyici rutinini çağırır biçimi **yeni** işleci yok aynı nedenden dolayı başarısız olduğunda. Varsayılan geçersiz kılmak için çağırın
+**realloc** , C++ yeni işleyici modunu ayarlamak için [_set_new_mode](set-new-mode.md) işlevini kullanmak üzere malloc çağırır. Yeni işleyici modu, hata durumunda **malloc** 'in, [_set_new_handler](set-new-handler.md)tarafından ayarlanan yeni işleyici yordamını çağırıp çağırmayacağını gösterir. Varsayılan olarak, **malloc** bellek ayırma hatası üzerine yeni işleyici yordamını çağırmaz. Bu varsayılan davranışı geçersiz kılabilirsiniz, böylelikle **realloc** bellek ayıramadığında, **malloc** yeni işleyici yordamını aynı nedenden dolayı başarısız olduğunda **Yeni** işlecin yaptığı şekilde çağırır. Varsayılanı geçersiz kılmak için şunu çağırın
 
 ```C
 _set_new_mode(1);
 ```
 
-olanları erkenden program veya NEWMODE ile bağlantı. OBJ (bkz [bağlantı seçenekleri](../../c-runtime-library/link-options.md)).
+daha erken bir programda veya NEWMODE ile bağlantılandırın. OBJ (bkz. [bağlantı seçenekleri](../../c-runtime-library/link-options.md)).
 
-Uygulamayı hata ayıklama sürümü C çalışma zamanı kitaplıkları ile ilişkilendirildiğinde **realloc** çözümler [_realloc_dbg](realloc-dbg.md). Yığının hata ayıklama işlemi sırasında nasıl yönetildiği hakkında daha fazla bilgi için bkz. [CRT hata ayıklama yığın](/visualstudio/debugger/crt-debug-heap-details).
+Uygulama, C çalışma zamanı kitaplıklarının hata ayıklama sürümüyle bağlandığında, **realloc** [_realloc_dbg](realloc-dbg.md)olarak çözümlenir. Hata ayıklama işlemi sırasında yığının nasıl yönetildiği hakkında daha fazla bilgi için bkz. [CRT hata ayıklama yığını](/visualstudio/debugger/crt-debug-heap-details).
 
-**realloc** işaretlenmiş `__declspec(noalias)` ve `__declspec(restrict)`, işlevin genel değişkenleri garanti edilir ve döndürülen işaretçiye diğer adı değil. Daha fazla bilgi için [noalias](../../cpp/noalias.md) ve [kısıtlama](../../cpp/restrict.md).
+**realloc** , ve `__declspec(noalias)` işlevinin `__declspec(restrict)`genel değişkenleri değiştirmeyeceği garantisi olduğunu ve döndürülen işaretçinin diğer ad olmadığından emin olduğunu belirtir ve olarak işaretlenir. Daha fazla bilgi için bkz. [noalias](../../cpp/noalias.md) ve [Restrict](../../cpp/restrict.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**realloc**|\<stdlib.h > ve \<malloc.h >|
+|**realloc**|\<Stdlib. h > ve \<malloc. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

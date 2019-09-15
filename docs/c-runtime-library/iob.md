@@ -1,11 +1,14 @@
 ---
 title: _iob
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _iob
-apilocation:
+api_location:
 - msvcrt.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _iob
 - iob
@@ -13,16 +16,16 @@ helpviewer_keywords:
 - _iob global variable
 - iob global variable
 ms.assetid: 008ed376-8078-4bbd-bc6c-0677c63d0ff1
-ms.openlocfilehash: 4e0b859e87f272871c99cbd208a2e3090a860c87
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e33ad12035dc6aadace35581c7555ab85cc0445a
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62343179"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70944295"
 ---
-# <a name="iob"></a>_iob
+# <a name="_iob"></a>_iob
 
-Stdio denetim yapıları dizisi.
+Stdio denetim yapılarından oluşan dizi.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -32,7 +35,7 @@ FILE _iob[_IOB_ENTRIES];
 
 ## <a name="remarks"></a>Açıklamalar
 
-`IOB_ENTRIES` 20 stdio.h'olarak tanımlanır.
+`IOB_ENTRIES`, stdio. h içinde 20 olarak tanımlanır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

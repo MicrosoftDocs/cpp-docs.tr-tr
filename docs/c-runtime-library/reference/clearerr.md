@@ -1,9 +1,9 @@
 ---
 title: clearerr
 ms.date: 11/04/2016
-apiname:
+api_name:
 - clearerr
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - clearerr
 helpviewer_keywords:
@@ -23,16 +26,16 @@ helpviewer_keywords:
 - resetting stream error indicator
 - clearerr function
 ms.assetid: a9711cd4-3335-43d4-a018-87bbac5b3bac
-ms.openlocfilehash: c282a577bb7496f899f18abeac857c08388d12f6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9fd2f7e7dfcf272e806a887b356418b7555913f5
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62340567"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70942940"
 ---
 # <a name="clearerr"></a>clearerr
 
-Bir akış için hata göstergesi sıfırlar. Bu işlevin daha güvenli bir sürümü kullanılabilir; bkz: [clearerr_s](clearerr-s.md).
+Bir akışın Hata göstergesini sıfırlar. Bu işlevin daha güvenli bir sürümü kullanılabilir; bkz. [clearerr_s](clearerr-s.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -44,22 +47,22 @@ void clearerr(
 
 ### <a name="parameters"></a>Parametreler
 
-*Stream*<br/>
-İşaretçi **dosya** yapısı.
+*ka*<br/>
+**Dosya** yapısına yönelik işaretçi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Clearerr** işlevi için dosya sonu göstergesi ve hata göstergesi sıfırlar *stream*. Hata göstergeleri otomatik olarak temizlenmez; Belirtilen bir akış için hata göstergesi ayarlandıktan sonra kadar bir hata değeri döndürmek bu işlemler devam **clearerr**, [fseek](fseek-fseeki64.md), **fsetpos**, veya [rewind](rewind.md) çağrılır.
+**Clearerr** işlevi, *akış*için hata göstergesini ve dosya sonu göstergesini sıfırlar. Hata göstergeleri otomatik olarak temizlenmez; Belirtilen bir akış için hata göstergesi ayarlandığında, bu akıştaki işlemler **clearerr**, [fseek](fseek-fseeki64.md), **fsetpos**veya [geri sarma](rewind.md) çağrılana kadar bir hata değeri döndürmeye devam eder.
 
-Varsa *stream* olduğu **NULL**, açıklanan şekilde geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütme devam etmesine izin verilirse, bu işlev ayarlar **errno** için **EINVAL** ve döndürür. Daha fazla bilgi için **errno** ve hata kodları [errno sabitleri](../../c-runtime-library/errno-constants.md).
+*Stream* **null**ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev **errno** ' ı **EINVAL** ve döndürür. **Errno** ve hata kodları hakkında daha fazla bilgi için bkz. [errno sabitleri](../../c-runtime-library/errno-constants.md).
 
-Bu işlevin daha güvenli bir sürümü kullanılabilir; bkz: [clearerr_s](clearerr-s.md).
+Bu işlevin daha güvenli bir sürümü kullanılabilir; bkz. [clearerr_s](clearerr-s.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**clearerr**|\<stdio.h >|
+|**clearerr**|\<stdio. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -114,7 +117,7 @@ No read error
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Hata İşleme](../../c-runtime-library/error-handling-crt.md)<br/>
-[Stream g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [_eof](eof.md)<br/>
 [feof](feof.md)<br/>
 [ferror](ferror.md)<br/>

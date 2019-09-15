@@ -1,11 +1,11 @@
 ---
 title: nearbyint, nearbyintf, nearbyintl
 ms.date: 04/05/2018
-apiname:
+api_name:
 - nearbyint
 - nearbyintf
 - nearbyintl
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - nearbyint
 - nearbyintf
@@ -30,16 +33,16 @@ helpviewer_keywords:
 - nearbyintf function
 - nearbyintl function
 ms.assetid: dd39cb68-96b0-434b-820f-6ff2ea65584f
-ms.openlocfilehash: 827286c840c6564c8c3f8b351197b0201509d241
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: cd0a7d00c5019dd1e483d555df6db8d9770e61c1
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62156206"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70951401"
 ---
 # <a name="nearbyint-nearbyintf-nearbyintl"></a>nearbyint, nearbyintf, nearbyintl
 
-Belirtilen kayan nokta değeri bir tamsayıya yuvarlar ve bu değer bir kayan nokta biçiminde döndürür.
+Belirtilen kayan nokta değerini bir tamsayıya yuvarlar ve bu değeri kayan noktalı bir biçimde döndürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -61,29 +64,29 @@ Yuvarlanacak değer.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa döndürür *x*, geçerli yuvarlama biçimi tarafından raporlandığı şekilde kullanarak en yakın tamsayıya yuvarlanır [fegetround](fegetround-fesetround2.md). Aksi halde, işlev aşağıdaki değerlerden birini döndürebilir:
+Başarılı olursa, [fegetround](fegetround-fesetround2.md)tarafından bildirilen geçerli yuvarlama biçimini kullanarak *x*döndürür ve en yakın tamsayıya yuvarlanır. Aksi takdirde, işlev aşağıdaki değerlerden birini döndürebilir:
 
-|Sorun|döndürülecek|
+|Sorun|döndürülmesini|
 |-----------|------------|
-|*x* ±INFINITY =|±INFINITY, değiştirilmemiş|
-|*x* = ±0|±0, değiştirilmemiş|
-|*x* NaN =|NaN|
+|*x* = ± Infinity|± INFINITY, değiştirilmemiş|
+|*x* = ±0|± 0, değiştirilmemiş|
+|*x* = Nan|NaN|
 
-Hataları aracılığıyla bildirilmez [_matherr](matherr.md); özellikle, bu işlev herhangi raporlamaz **FE_INEXACT** özel durumlar.
+Hatalar [_matherr](matherr.md); aracılığıyla bildirilmedi Özellikle, bu işlev **FE_INEXACT** özel durumlarını raporlamaz.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlev arasındaki birincil fark ve [azdır](rint-rintf-rintl.md) olduğundan bu işlevi kesin olmayan kayan nokta özel durum oluşturmaz.
+Bu işlev ve [rint](rint-rintf-rintl.md) arasındaki birincil fark, bu işlevin kayan nokta özel durumunu yükseltmediğinden emin değildir.
 
-En fazla kayan nokta değerlerini tam tam sayılar olduğundan, bu işlev hiçbir zaman kendisi tarafından overflow; Bunun yerine, çıkış işlevi sürümüne bağlı olarak kullanmanız gereken dönüş değeri taşması.
+En büyük kayan nokta değerleri tam tamsayılar olduğundan, bu işlev kendi kendine hiçbir şekilde taşmayacaktır; Bunun yerine, çıktı, kullandığınız işlevin sürümüne bağlı olarak dönüş değerini taşrabilir.
 
-C++ sağlar aşırı yüklemesi, aşırı yüklemesini çağırabilirsiniz **nearbyint** alan ve getiren **float** veya **uzun** **çift** parametreleri. C programında **nearbyint** her zaman iki çift değer alır ve bir çift değer döndürür.
+C++aşırı yüklemeye izin verir, bu sayede **float** veya **Long** **Double** parametreleri alan ve **döndüren bir daha** fazla. C **programında, her** zaman iki çift değer alır ve bir Double değeri döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İşlev|C üstbilgisi|C++ üst bilgisi|
+|İşlev|C üstbilgisi|C++üst bilgi|
 |--------------|--------------|------------------|
-|**nearbyint**, **nearbyintf**, **nearbyintl**|\<Math.h >|\<cmath > veya \<math.h >|
+|bir **tamsayı**, bir tam açıklama, bir **intf**, **yaklaştığında**|\<Math. h >|\<cmath > veya \<Math. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

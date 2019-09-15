@@ -1,11 +1,11 @@
 ---
 title: acosh, acoshf, acoshl
 ms.date: 04/05/2018
-apiname:
+api_name:
 - acoshf
 - acosh
 - acoshl
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - acosh
 - acoshf
@@ -30,16 +33,16 @@ helpviewer_keywords:
 - acosh function
 - acoshl function
 ms.assetid: 6985c4d7-9e2a-44ce-9a9b-5a43015f15f7
-ms.openlocfilehash: e61b9ed4222898e3f2340a5e54f6983fb0411c72
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b547bc0db23f446672c8838419aeb9b0f32c16c3
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62341697"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70944072"
 ---
 # <a name="acosh-acoshf-acoshl"></a>acosh, acoshf, acoshl
 
-Ters hiperbolik kosinüsünü hesaplar.
+Ters hiperbolik kosinüsü hesaplar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -61,22 +64,22 @@ Kayan nokta değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**Acosh** işlevler (Ark hiperbolik kosinüsü) ters hiperbolik kosinüsünü döndürür *x*. Bu işlevler, etki alanı üzerinde geçerli *x* ≥ 1. Varsa *x* 1'den daha az, `errno` ayarlanır `EDOM` ve sessiz bir NaN sonucudur. Varsa *x* sessiz NaN, belirsiz veya sonsuz, aynı değeri döndürülür.
+**ACOSH** işlevleri, *x*'in ters hyberbolik kosinüsünü (Ark hiperbolik kosinüs) döndürür. Bu işlevler, *x* ≥ 1 etki alanı üzerinde geçerlidir. *X* 1 ' den küçükse, `errno` olarak `EDOM` ayarlanır ve sonuç bir sessiz NaN olur. *X* sessiz bir NaN, sonsuz veya sonsuz ise, aynı değer döndürülür.
 
-|Giriş|SEH özel durumu|`_matherr` özel durum|
+|Giriş|SEH özel durumu|`_matherr`Duruma|
 |-----------|-------------------|--------------------------|
-|± QNAN, UL INF|yok|yok|
+|± QNAN, IND, INF|yok|yok|
 |*x* < 1|yok|yok|
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ kullandığınızda, aşırı yüklemesini çağırabilirsiniz **acosh** alan ve getiren **float** veya **uzun** **çift** değerleri. C programında **acosh** her zaman alan ve döndüren **çift**.
+Kullandığınızda C++, **float** veya **Long** **Double** değerlerini alıp döndüren **ACOSH** aşırı yüklerini çağırabilirsiniz. C programında, **ACOSH** her zaman **Double**değerini alır ve döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İşlev|C üstbilgisi|C++ üst bilgisi|
+|İşlev|C üstbilgisi|C++üst bilgi|
 |--------------|--------------|------------------|
-|**acosh**, **acoshf**, **acoshl**|\<Math.h >|\<cmath >|
+|**ACOSH**, **acoshf**, **acoshl**|\<Math. h >|\<cmath >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

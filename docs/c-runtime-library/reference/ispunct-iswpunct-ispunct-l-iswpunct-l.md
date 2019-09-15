@@ -1,12 +1,12 @@
 ---
 title: ispunct, iswpunct, _ispunct_l, _iswpunct_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - ispunct
 - _iswpunct_l
 - iswpunct
 - _ispunct_l
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -18,7 +18,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-string-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - iswpunct
 - _istpunct
@@ -33,16 +36,16 @@ helpviewer_keywords:
 - _iswpunct_l function
 - iswpunct_l function
 ms.assetid: 94403240-85c8-40a4-9c2b-e3e95c729c76
-ms.openlocfilehash: 209f94bb8f9d3338f62b719d4d4b94b152ed5ab7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 54c51c612cf3b491b49d7e141df34ed5b4415520
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62286541"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70953696"
 ---
-# <a name="ispunct-iswpunct-ispunctl-iswpunctl"></a>ispunct, iswpunct, _ispunct_l, _iswpunct_l
+# <a name="ispunct-iswpunct-_ispunct_l-_iswpunct_l"></a>ispunct, iswpunct, _ispunct_l, _iswpunct_l
 
-Bir tamsayı Noktalama karakterini temsil edip etmediğini belirler.
+Bir tamsayının bir noktalama karakterini temsil edip etmediğini belirler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -66,22 +69,22 @@ int _iswpunct_l(
 ### <a name="parameters"></a>Parametreler
 
 *c*<br/>
-Test edilecek tamsayı.
+Sınanacak tamsayı.
 
-*Yerel ayar*<br/>
+*ayarlar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Yordamların her biri bu döndürür sıfır olmayan *c* bir noktalama karakteri belirli bir gösterimidir. **ispunct** bir boşluk karakteri veya bir karakter değil herhangi bir yazdırılabilir karakter için sıfır olmayan bir değer döndürür **isalnum** sıfır değil. **iswpunct** ne boşluk geniş karakteri, ne de geniş bir karakter yazdırılabilir geniş karakter için sıfır olmayan bir değer döndürür **iswalnum** sıfır değil. Bu yordamların her biri 0 döndürür *c* test koşulu karşılamayan.
+Bu yordamların her biri, *c* bir noktalama karakterinin belirli bir gösterimiyse sıfır olmayan bir değer döndürür. **ispunct** , boşluk karakteri olmayan yazdırılabilir bir karakter veya **ısalnum** 'ın sıfır dışında olduğu bir karakter için sıfır dışında bir değer döndürür. **ıwpunct** , boşluk geniş karakteri veya **ıswalnum** 'ın sıfır dışında olduğu geniş bir karakter olmayan herhangi bir yazdırılabilir geniş karakter için sıfır dışında bir değer döndürür. Bu yordamların her biri, *c* , test koşulunu karşılamadığı takdirde 0 döndürür.
 
-İçin test durumunun sonucu **ispunct** işlevi bağlıdır **LC_CTYPE** yerel ayarının kategori ayarına; bkz: [setlocale, _wsetlocale](setlocale-wsetlocale.md) daha fazla bilgi için. Sahip olmayan bu işlevlerin sürümleri **_l** soneki geçerli yerel ayarı için herhangi bir yerel ayara bağımlı davranış; sahip sürümler **_l** sonekine kullanmaları dışında Bunun yerine iletilen yerel ayar. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
+**İspunct** işlevinin test koşulunun sonucu, yerel ayarın **LC_CTYPE** kategori ayarına bağlıdır; daha fazla bilgi için bkz. [setlocale, _wsetlocale](setlocale-wsetlocale.md) . **_L** sonekine sahip olmayan bu işlevlerin sürümleri, yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır; **_l** sonekine sahip olan sürümler, bunun yerine geçirilen yerel ayarı kullanmaları dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
-Davranışını **ispunct** ve **_ispunct_l** tanımsızdır *c* EOF değilse veya 0-0xFF aralığındaysa aralığında. Bir hata ayıklama CRT Kitaplığı kullanıldığında ve *c* değil, bu değerleri işlevleri raise onaylama biridir.
+**Ipunct** ve **_ispunct_l** 'nin DAVRANıŞı, *c* 'nin EOF veya 0 ile 0xFF (dahil) aralığında sıfır olmaması durumunda tanımsızdır. Bir hata ayıklama CRT kitaplığı kullanıldığında ve *c* bu değerlerden biri değilse, işlevler bir onaylama işlemi yükseltir.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_** **istpunct**|**ispunct**|[_ismbcpunct](ismbcgraph-functions.md)|**iswpunct**|
 
@@ -89,10 +92,10 @@ Davranışını **ispunct** ve **_ispunct_l** tanımsızdır *c* EOF değilse ve
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**ispunct**|\<CType.h >|
-|**iswpunct**|\<CType.h > veya \<wchar.h >|
-|**_ispunct_l**|\<CType.h >|
-|**_iswpunct_l**|\<CType.h > veya \<wchar.h >|
+|**ispunct**|\<CType. h >|
+|**iswpunct**|\<CType. h > veya \<wchar. h >|
+|**_ispunct_l**|\<CType. h >|
+|**_iswpunct_l**|\<CType. h > veya \<wchar. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

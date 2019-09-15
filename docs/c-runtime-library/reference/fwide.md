@@ -1,9 +1,9 @@
 ---
 title: fwide
 ms.date: 11/04/2016
-apiname:
+api_name:
 - fwide
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -14,22 +14,25 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - fwide
 helpviewer_keywords:
 - fwide function
 ms.assetid: a4641f5b-d74f-4946-95d5-53a64610d28d
-ms.openlocfilehash: d992ebc527744beeb4ef14175e3f10646a77a064
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2e986ba5ab28072f4933e555eea32a5893c8df56
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62287622"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70956215"
 ---
 # <a name="fwide"></a>fwide
 
-Uygulanmayan.
+Meyen.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -42,24 +45,24 @@ int fwide(
 
 ### <a name="parameters"></a>Parametreler
 
-*Stream*<br/>
-İşaretçi **dosya** yapısı (yoksayıldı).
+*ka*<br/>
+**Dosya** yapısına yönelik işaretçi (yoksayıldı).
 
-*Modu*<br/>
-Yeni akış genişliğini: geniş karakter, bayt, negatif pozitif değiştirmeden bırakmak için sıfır. (Bu değer yoksayılır.)
+*modundaysa*<br/>
+Akışın yeni genişliği: geniş karakter pozitif, bayt için negatif, değiştirilmeden bırakmak için sıfır. (Bu değer yok sayılır.)
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu işlev şu anda yalnızca döndürür *modu*.
+Bu işlev şu anda yalnızca *modunu*döndürüyor.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlev geçerli sürümü standardı ile uyumlu değildir.
+Bu işlevin geçerli sürümü, standarda uymuyor.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**fwide**|\<wchar.h >|
+|**fwide**|\<wchar. h >|
 
-Daha fazla bilgi için [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla bilgi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).

@@ -1,7 +1,7 @@
 ---
 title: vsnprintf, _vsnprintf, _vsnprintf_l, _vsnwprintf, _vsnwprintf_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _vsnprintf
 - _vsnprintf_l
 - _vsnwprintf
@@ -12,7 +12,7 @@ apiname:
 - _vsnwprintf;
 - _vsnprintf_l;
 - _vsnwprintf_l;
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -24,7 +24,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ntoskrnl.exe
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _vsnprintf
 - _vsnwprintf
@@ -52,12 +55,12 @@ helpviewer_keywords:
 - formatted text [C++]
 - vsnwprintf function
 ms.assetid: a97f92df-c2f8-4ea0-9269-76920d2d566a
-ms.openlocfilehash: 2e665562f3dd8ee0be70b4e50068955a91233c60
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 721ea80272f7a76e959528ec4114d69bd0e80507
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69499072"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70945309"
 ---
 # <a name="vsnprintf-_vsnprintf-_vsnprintf_l-_vsnwprintf-_vsnwprintf_l"></a>vsnprintf, _vsnprintf, _vsnprintf_l, _vsnwprintf, _vsnwprintf_l
 
@@ -160,7 +163,7 @@ Daha fazla bilgi için bkz. [Biçim belirtimleri](../../c-runtime-library/format
 
 **Vsnprintf** işlevi, sonlandıran null karakteri saymayan yazılan karakter sayısını döndürür. *Count* tarafından belirtilen arabellek boyutu, *Format* ve *argptr*tarafından belirtilen çıktıyı içermesi için yeterince büyük değilse, **vsnprintf** dönüş değeri, null sayılmayan yazılacak karakter sayısıdır *sayı* yeterince büyükse karakter. Dönüş değeri *sayı* -1 ' den büyükse, çıkış fazlalıkları kesilir. -1 ' in dönüş değeri bir kodlama hatası oluştuğunu gösterir.
 
-Hem **_vsnprintf** hem de **_vsnwprintf** işlevleri, yazılacak karakter sayısı sayı değerinden küçükse veya bu değere eşitse yazılan karakter sayısını döndürür; yazılacak karakter sayısı sayı değerinden büyükse, bu işlevler çıktınınkesilmediğini belirten-1 döndürür.
+Hem **_vsnprintf** hem de **_vsnwprintf** işlevleri, yazılacak karakter *sayısı sayı değerinden*küçükse veya bu değere eşitse yazılan karakter sayısını döndürür; yazılacak karakter *sayısı sayı değerinden büyükse, bu*işlevler çıktının kesilmediğini belirten-1 döndürür.
 
 Tüm bu işlevler tarafından döndürülen değer, yazılmış veya olmayan bir Sonlandırıcı null değeri içermez. *Count* değeri sıfır olduğunda döndürülen değer, işlevin yazacağı karakter sayısı, hiçbir Sonlandırıcı null dahil edilmez. Bu sonucu, dize için yeterli arabellek alanı ve onun Sonlandırıcı null ayırmak için kullanabilir ve sonra, arabelleği dolduracak şekilde işlevi yeniden çağırabilir.
 
@@ -168,7 +171,7 @@ Tüm bu işlevler tarafından döndürülen değer, yazılmış veya olmayan bir
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevlerin her biri bağımsız değişken listesi için bir işaretçi alır, ardından verileri biçimlendirir ve *arabelleğe*göre işaret eden belleğe *sayı* karakteri yazar. **Vsnprintf** işlevi, çıktıyı kesen bile her zaman bir null Sonlandırıcı yazar. **_Vsnprintf** ve **_vsnwprintf**kullanılırken, yalnızca sonda yer varsa (yani yazılacak karakter sayısı sayıdan küçükse), arabellek null olarak sonlandırılır.
+Bu işlevlerin her biri bağımsız değişken listesi için bir işaretçi alır, ardından verileri biçimlendirir ve *arabelleğe*göre işaret eden belleğe *sayı* karakteri yazar. **Vsnprintf** işlevi, çıktıyı kesen bile her zaman bir null Sonlandırıcı yazar. **_Vsnprintf** ve **_vsnwprintf**kullanılırken, yalnızca sonda yer varsa (yani yazılacak *karakter sayısı sayıdan küçükse),* arabellek null olarak sonlandırılır.
 
 > [!IMPORTANT]
 > Belirli güvenlik riskleri türlerini engellemek için, *biçimin* Kullanıcı tanımlı bir dize olmadığından emin olun. Daha fazla bilgi için bkz. [arabellek taşmalarını önleme](/windows/win32/SecBP/avoiding-buffer-overruns).

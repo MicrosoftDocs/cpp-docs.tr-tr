@@ -1,14 +1,14 @@
 ---
 title: scalbn, scalbnf, scalbnl, scalbln, scalblnf, scalblnl
 ms.date: 04/05/2018
-apiname:
+api_name:
 - scalblnl
 - scalbnl
 - scalbnf
 - scalblnf
 - scalbn
 - scalbln
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -20,7 +20,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - scalblnf
 - scalbnl
@@ -36,16 +39,16 @@ helpviewer_keywords:
 - scalbnf function
 - scalblnf function
 ms.assetid: df2f1543-8e39-4af4-a5cf-29307e64807d
-ms.openlocfilehash: 7109340afaa634fc21177380d015c9eace506081
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 794d0bdceb13aafb83de85fb29e47a4fa3125cd6
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62357167"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70948909"
 ---
 # <a name="scalbn-scalbnf-scalbnl-scalbln-scalblnf-scalblnl"></a>scalbn, scalbnf, scalbnl, scalbln, scalblnf, scalblnl
 
-Bir kayan noktalı sayı bir tam sayı flt_radıx gücünü tarafından çarpar.
+Kayan noktalı sayıyı FLT_RADIX 'in tam sayı gücüyle çarpar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -102,21 +105,21 @@ Tamsayı üs.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**Scalbn** işlevler dönüş değerini *x* \* **flt_radıx**<sup>exp</sup> başarılı olduğunda. Taşma (işaretini bağlı olarak *x*), **scalbn** döndürür **HUGE_VAL**; **errno** değeri ayarı **ERANGE** .
+**Scalbümn** işlevleri başarılı olduğunda *x* \* **FLT_RADIX**<sup>Exp</sup> değerini döndürür. Taşma durumunda ( *x*işaretine bağlı olarak), **scalbümn** +/- **HUGE_VAL**; döndürür **errno** değeri **ERANGE**olarak ayarlanır.
 
-Hakkında daha fazla bilgi için **errno** ve dönüş değerleri için bkz: olası hata [errno _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+**Errno** ve olası hata dönüş değerleri hakkında daha fazla bilgi için bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Flt_radıx** tanımlanan \<float.h > yerel kayan noktalı sayı tabanı olarak; ikili dosya sistemleri, 2, değerini alır ve **scalbn** eşdeğerdir [ldexp](ldexp.md).
+**FLT_RADIX** , \<float. h >, ikili sistemlerde yerel kayan nokta Radix; olarak tanımlanır; 2 değeri vardır ve **scalbümn** , [ldexp](ldexp.md)ile eşdeğerdir.
 
-C++ aşırı yüklemeye izin verdiğinden, aşırı yüklemesini çağırabilirsiniz **scalbn** ve **scalbln** alan ve getiren **float** veya **uzun** **çift** türleri. C programında **scalbn** her zaman alan bir **çift** ve **int** ve döndüren bir **çift**, ve **scalbln**her zaman alan bir **çift** ve **uzun** ve döndüren bir **çift**.
+Aşırı C++ yüklemeye izin verdiğinden, **float** veya **Long** **Double** türlerini alıp döndüren **scalbümn** ve **scalbln** aşırı yüklerini çağırabilirsiniz. C programında, **scalbümn** her zaman bir **Double** ve **int** alır ve bir **Double**döndürür ve **scalbln** her zaman **çift** ve **uzun** sürer ve bir **Double**döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İşlev|C üstbilgisi|C++ üst bilgisi|
+|İşlev|C üstbilgisi|C++üst bilgi|
 |--------------|--------------|------------------|
-|**scalbn**, **scalbnf**, **scalbnl**, **scalbln**, **scalblnf**, **scalblnl**|\<Math.h >|\<cmath >|
+|**scalbümn**, **scalbümnf**, **scalbümnl**, **scalbln**, **scalblnf**, **scalblnl**|\<Math. h >|\<cmath >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

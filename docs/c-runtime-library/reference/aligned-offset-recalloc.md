@@ -1,9 +1,9 @@
 ---
 title: _aligned_offset_recalloc
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _aligned_offset_recalloc
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-heap-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - aligned_offset_recalloc
 - _aligned_offset_recalloc
@@ -23,16 +26,16 @@ helpviewer_keywords:
 - aligned_offset_recalloc function
 - _aligned_offset_recalloc function
 ms.assetid: a258f54e-eeb4-4853-96fc-007d710f98e9
-ms.openlocfilehash: 5ee163d257665b5481d6ab1ead54698ace1ef210
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ef8e68622c86e4504745a63cb0c2c3be4e916163
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62335665"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70944147"
 ---
-# <a name="alignedoffsetrecalloc"></a>_aligned_offset_recalloc
+# <a name="_aligned_offset_recalloc"></a>_aligned_offset_recalloc
 
-İle ayrılan bir bellek bloğunu boyutunu değiştirir [_aligned_malloc](aligned-malloc.md) veya [_aligned_offset_malloc](aligned-offset-malloc.md) ve 0 belleği başlatır.
+[_Aligned_malloc](aligned-malloc.md) veya [_aligned_offset_malloc](aligned-offset-malloc.md) ile ayrılmış bir bellek bloğunun boyutunu değiştirir ve belleği 0 olarak başlatır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -51,37 +54,37 @@ void * _aligned_offset_recalloc(
 *memblock*<br/>
 Geçerli bellek bloğu işaretçisi.
 
-*Sayı*<br/>
+*sayısından*<br/>
 Öğe sayısı.
 
-*Boyutu*<br/>
+*boyutla*<br/>
 Her öğenin bayt cinsinden uzunluğu.
 
-*Hizalama*<br/>
-Hizalama değeri 2'in tam sayı üssü olması gerekir.
+*hizalar*<br/>
+2 ' nin tam sayı üssü olması gereken hizalama değeri.
 
-*uzaklık*<br/>
-Hizalama zorlamak için bellek ayırma olan uzaklık.
+*konumu*<br/>
+Hizalamayı zorlamak için bellek ayırmaya olan fark.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_aligned_offset_recalloc** yeniden (ve muhtemelen taşınan) bellek bloğuna void bir işaretçi döndürür. Dönüş değeri **NULL** boyutu sıfırsa ve arabellek bağımsız değişken değil **NULL**, ya da blok verilen boyuta genişletmek için yeterli kullanılabilir bellek yoksa. Bu durumda, özgün blok serbest bırakılır. İkinci durumda, özgün blok değiştirilmez. Dönüş değeri, nesnenin herhangi bir türde bir depolama için uygun şekilde hizalanması garanti bir depolama alanına işaret eder. Bir işaretçi bir türü void, kullanımı dışında bir tür dönüş değerini almak için.
+**_aligned_offset_recalloc** , yeniden ayrılan (ve muhtemelen taşınan) bellek bloğuna void bir işaretçi döndürür. Boyut sıfır ise ve arabellek bağımsız değişkeni **null**olmadığında veya bloğu belirtilen boyuta genişletmek için yeterli kullanılabilir bellek yoksa dönüş değeri **null** olur. İlk durumda, orijinal blok serbest bırakılır. İkinci durumda, orijinal blok değiştirilmez. Dönüş değeri, herhangi bir nesne türünün depolanması için uygun şekilde hizalı olarak garantili bir depolama alanına işaret eder. Void dışında bir türe işaretçi almak için, dönüş değerinde bir tür dönüştürme kullanın.
 
-**_aligned_offset_recalloc** işaretlenmiş `__declspec(noalias)` ve `__declspec(restrict)`, işlevin genel değişkenleri sağlanır ve diğer ad verilmediğini göstermeyecektir işaretçi döndüren anlamına gelir. Daha fazla bilgi için [noalias](../../cpp/noalias.md) ve [kısıtlama](../../cpp/restrict.md).
+**_aligned_offset_recalloc** işaretlenir `__declspec(noalias)` ve `__declspec(restrict)`işlevin genel değişkenleri değiştirmeyeceği ve döndürülen işaretçinin diğer adı olmadığı anlamına gelir. Daha fazla bilgi için bkz. [noalias](../../cpp/noalias.md) ve [Restrict](../../cpp/restrict.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Gibi [_aligned_offset_malloc](aligned-offset-malloc.md), **_aligned_offset_recalloc** yapısı içinde bir uzaklık hizalanması için bir yapı sağlar.
+[_Aligned_offset_malloc](aligned-offset-malloc.md)gibi **_aligned_offset_recalloc** , yapının yapı içindeki bir uzaklığa göre hizalanmasına izin verir.
 
-**_aligned_offset_recalloc** dayanır **malloc**. Kullanma hakkında daha fazla bilgi için **_aligned_offset_malloc**, bkz: [malloc](malloc.md). Varsa *memblock* olduğu **NULL**, işlev çağrıları **_aligned_offset_malloc** dahili olarak.
+**_aligned_offset_recalloc** , **malloc**'yi temel alır. **_Aligned_offset_malloc**kullanma hakkında daha fazla bilgi için bkz. [malloc](malloc.md). *Memblock* **null**ise, işlev dahili olarak **_aligned_offset_malloc** çağırır.
 
-Bu işlev ayarlar **errno** için **ENOMEM** bellek ayırma başarısız olursa veya istenen boyut (*numarası* * *boyutu* ) daha büyük **_HEAP_MAXREQ**. Hakkında daha fazla bilgi için **errno**, bkz: [errno _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md). Ayrıca, **_aligned_offset_recalloc** kendi parametrelerini doğrular. Varsa *hizalama* 2'in kuvveti değil veya *uzaklığı* büyükse veya istenen boyutuna eşit ve sıfır değilse, bu işlev içinde açıklanan şekilde geçersiz parametre işleyicisi çağırır [parametresi Doğrulama](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse, bu işlevi döndürür **NULL** ve ayarlar **errno** için **EINVAL**.
+Bu işlev, bellek ayırma başarısız olursa veya istenen boyut (*sayı* * *boyutu*) **_HEAP_MAXREQ**değerinden büyükse **errno** değerini **ENOMEM** olarak ayarlar. **Errno**hakkında daha fazla bilgi için bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md). Ayrıca, **_aligned_offset_recalloc** parametrelerini doğrular. *Hizalama* 2 ' nin üssü değilse veya *Aralık* istenen boyuttan büyük veya bu değere eşitse, bu işlev [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev **null** değerini döndürür ve **errno** 'ı **EINVAL**olarak ayarlar.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_aligned_offset_recalloc**|\<malloc.h >|
+|**_aligned_offset_recalloc**|\<malloc. h >|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
