@@ -1,9 +1,9 @@
 ---
 title: _getw
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _getw
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _getw
 helpviewer_keywords:
@@ -23,16 +26,16 @@ helpviewer_keywords:
 - integers, getting from streams
 - getw function
 ms.assetid: ef75facc-b84e-470f-9f5f-8746c90822a0
-ms.openlocfilehash: 615d3ac9bdc73ad200368eaeabf7c84951bc91ae
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ad03c92ce90542ecae13609ee228ad094f64fc07
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62157636"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70954884"
 ---
-# <a name="getw"></a>_getw
+# <a name="_getw"></a>_getw
 
-Bir akıştan tamsayı alır.
+Akıştan bir tamsayı alır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -44,22 +47,22 @@ int _getw(
 
 ### <a name="parameters"></a>Parametreler
 
-*Stream*<br/>
-İşaretçi **dosya** yapısı.
+*ka*<br/>
+**Dosya** yapısına yönelik işaretçi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_getw** okuma Integer değeri döndürür. Dönüş değeri **EOF** bir hata veya dosya sonunu gösterir. Ancak, çünkü **EOF** değeri de yasal bir tamsayı, kullanın **feof** veya **ferror** bir dosya sonu veya hata durumu doğrulamak için. Varsa *stream* olduğu **NULL**, açıklanan şekilde geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse **errno** ayarlanır **EINVAL** ve işlev döndürür **EOF**.
+**_getw** okunan tamsayı değerini döndürür. **EOF** dönüş değeri bir hata ya da dosya sonunu gösterir. Ancak, **EOF** değeri de yasal bir tamsayı değeri olduğundan, dosya sonu veya hata koşulunu doğrulamak için **feof** veya **ferror** kullanın. *Stream* **null**ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, **errno** **EINVAL** olarak ayarlanır ve işlev **EOF**döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Getw** işlevi türü sonraki ikili değeri okuyan **int** ilişkili dosyasından *stream* ve (varsa) ilgili dosya işaretleyicisini işaret etmek üzere artırır Sonraki okunmamış karaktere. **_getw** akışındaki öğelerin herhangi özel hizalama varsaymaz. Bağlantı noktası oluşturma sorunları meydana gelebilir **_getw** çünkü boyutunu **int** türü ve bayt sıralama **int** türü sistemler arasında farklılık gösterir.
+**_Getw** işlevi, *Stream* ile ilişkili dosyadan **int** türünde bir sonraki ikili değeri okur ve sonraki okunmamış karakteri işaret eden ilişkili dosya işaretçisini (varsa) artırır. **_getw** akıştaki öğelerin herhangi bir özel hizalamasını varsaymaz. **İnt** türünün boyutu ve **int** türü içindeki bayt sıralaması sistemler arasında farklı olduğundan, taşıma ile ilgili sorunlar **_getw** ile oluşabilir.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_getw**|\<stdio.h >|
+|**_getw**|\<stdio. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -98,7 +101,7 @@ int main( void )
 }
 ```
 
-### <a name="input-crtgetwtxt"></a>Giriş: crt_getw.txt
+### <a name="input-crt_getwtxt"></a>Giriş: crt_getw. txt
 
 ```Input
 Line one.
@@ -113,5 +116,5 @@ First data word in file: 0x656e694c
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Stream g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [_putw](putw.md)<br/>

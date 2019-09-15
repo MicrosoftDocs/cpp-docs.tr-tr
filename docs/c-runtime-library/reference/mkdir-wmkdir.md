@@ -1,10 +1,10 @@
 ---
 title: _mkdir, _wmkdir
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _wmkdir
 - _mkdir
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-filesystem-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _mkdir
 - tmkdir
@@ -33,14 +36,14 @@ helpviewer_keywords:
 - _mkdir function
 - _tmkdir function
 ms.assetid: 7f22d01d-63a5-4712-a6e7-d34878b2d840
-ms.openlocfilehash: 0d89e1f0930cf9131156a4691069f1f17c15c124
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0d2fd45b566909a61a04a5cabb34c74b9b253430
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62285203"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70951726"
 ---
-# <a name="mkdir-wmkdir"></a>_mkdir, _wmkdir
+# <a name="_mkdir-_wmkdir"></a>_mkdir, _wmkdir
 
 Yeni bir dizin oluşturur.
 
@@ -59,23 +62,23 @@ int _wmkdir(
 ### <a name="parameters"></a>Parametreler
 
 *DizinAdı*<br/>
-Yeni bir dizin yolu.
+Yeni bir dizin için yol.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Yeni dizin oluşturduysanız bu işlevlerin her biri 0 değerini döndürür. Bir hata, işlev -1 döndürür ve kümeleri **errno** gibi.
+Bu işlevlerin her biri, yeni dizin oluşturulduysa 0 değerini döndürür. Bir hatada, işlev-1 döndürür ve **errno** değerini aşağıdaki şekilde ayarlar.
 
-**EEXIST** çünkü dizin oluşturulmadı *DizinAdı* bir var olan dosya, dizin veya cihaz adıdır.
+**Eexist** *Dizinname* mevcut bir dosyanın, dizinin veya cihazın adı olduğundan dizin oluşturulamadı.
 
-**ENOENT** yolu bulunamadı.
+**ENOENT** Yol bulunamadı.
 
-Bunlar ve diğer dönüş kodları hakkında daha fazla bilgi için bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Bu ve diğer dönüş kodları hakkında daha fazla bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Mkdir** işlevi yeni bir dizin belirtilen oluşturur *DizinAdı.* **_mkdir** yalnızca son bileşeni, çağrı başına yalnızca bir yeni dizine oluşturabilirsiniz *DizinAdı* yeni bir dizin adı. **_mkdir** yolu sınırlayıcı anlamına gelmez. Windows NT, her iki eğik çizgi ( \\) ve eğik çizgi (/) çalışma zamanı yordamları karakter dizesinin geçerli yolu sınırlayıcı.
+**_Mkdir** işlevi belirtilen *dirname* ile yeni bir dizin oluşturur. **_mkdir** her çağrı için yalnızca bir yeni dizin oluşturabilir, bu nedenle yalnızca *DizinAdı* 'in son bileşeni yeni bir dizin adını verebilir. **_mkdir** yol sınırlayıcılarını çevirmez. Windows NT 'de, ters eğik çizgi ( \\) ve eğik çizgi (/), çalışma zamanı yordamlarında karakter dizelerinde geçerli yol sınırlayıcılardır.
 
-**_wmkdir** geniş karakterli sürümüdür **_mkdir**; *DizinAdı* bağımsız değişkeni **_wmkdir** geniş karakterli bir dizedir. **_wmkdir** ve **_mkdir** aynı şekilde davranır.
+**_wmkdir** , **_mkdir**'in geniş karakterli bir sürümüdür. **_wmkdir** için *DizinAdı* bağımsız değişkeni geniş karakterli bir dizedir. **_wmkdir** ve **_mkdir** aynı şekilde davranır.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -87,14 +90,14 @@ Bunlar ve diğer dönüş kodları hakkında daha fazla bilgi için bkz: [_doser
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_mkdir**|\<Direct.h >|
-|**_wmkdir**|\<Direct.h > veya \<wchar.h >|
+|**_mkdir**|\<Direct. h >|
+|**_wmkdir**|\<Direct. h > veya \<wchar. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 
-Tüm sürümleri [C çalışma zamanı kitaplıkları](../../c-runtime-library/crt-library-features.md).
+[C çalışma zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md)tüm sürümleri.
 
 ## <a name="example"></a>Örnek
 

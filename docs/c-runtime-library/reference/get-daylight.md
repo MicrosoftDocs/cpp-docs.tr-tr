@@ -1,10 +1,10 @@
 ---
 title: _get_daylight
 ms.date: 11/04/2016
-apiname:
+api_name:
 - __daylight
 - _get_daylight
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-time-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - get_daylight
 - _get_daylight
@@ -25,16 +28,16 @@ helpviewer_keywords:
 - daylight saving time offset
 - _get_daylight function
 ms.assetid: f85a6ba3-e187-4ca7-aed7-ffc694c8ac4c
-ms.openlocfilehash: 03c3386e59379f460d3c07dc310153d990c02b05
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9f63d3baa1e9411039d1482b4cbfbf4bce4e9872
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62332320"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70956048"
 ---
-# <a name="getdaylight"></a>_get_daylight
+# <a name="_get_daylight"></a>_get_daylight
 
-Saat gün ışığından yararlanma saati uzaklığı alır.
+Gün ışığından yararlanma saati farkını saat olarak alır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -44,28 +47,28 @@ error_t _get_daylight( int* hours );
 
 ### <a name="parameters"></a>Parametreler
 
-*saat*<br/>
-Gün ışığından yararlanma saat uzaklığı.
+*saatlerinin*<br/>
+Gün ışığından yararlanma saatine göre saat cinsinden fark.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Sıfır başarılı olursa ya da bir **errno** bir hata oluşursa değeri.
+Başarılıysa sıfır veya bir hata oluşursa **errno** değeri.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Get_daylight** işlevi yaz saati bir tamsayı olarak saat sayısını alır. Gün ışığından yararlanma etkinse, (Bazı bölgelerde iki saat uzaklığı gözlemleyin rağmen) varsayılan uzaklığı bir saattir.
+**_Get_günışığı** işlevi, gün ışığından yararlanma saatine göre saat sayısını tamsayı olarak alır. Gün ışığından yararlanma saati etkin ise, varsayılan konum bir saattir (birkaç bölge iki saatlik bir sapmayı gözlemlese de).
 
-Varsa *saat* olduğu **NULL**, açıklanan şekilde geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütme devam etmesine izin verilirse, bu işlev ayarlar **errno** için **EINVAL** ve döndürür **EINVAL**.
+*Saatler* **null**ise, geçersiz parametre işleyicisi [parametre doğrulamada](../../c-runtime-library/parameter-validation.md)açıklandığı şekilde çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev **errno** ' ı **EINVAL** olarak ayarlar ve **EINVAL**döndürür.
 
-Makro yerine bu işlevi kullanmanız önerilir **_daylight** veya kullanım dışı işlevine **__daylight**.
+Bu işlevi makro **_yaz** veya kullanım dışı **__Yaz**işlevi yerine kullanmanızı öneririz.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_get_daylight**|\<TIME.h >|
+|**_get_daylight**|\<Time. h >|
 
-Daha fazla bilgi için [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla bilgi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

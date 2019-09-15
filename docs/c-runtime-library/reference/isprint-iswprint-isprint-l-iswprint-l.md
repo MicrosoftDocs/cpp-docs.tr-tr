@@ -1,12 +1,12 @@
 ---
 title: isprint, iswprint, _isprint_l, _iswprint_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - iswprint
 - isprint
 - _isprint_l
 - _iswprint_l
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -19,7 +19,10 @@ apilocation:
 - ucrtbase.dll
 - api-ms-win-crt-string-l1-1-0.dll
 - ntoskrnl.exe
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - iswprint
 - _istprint
@@ -34,16 +37,16 @@ helpviewer_keywords:
 - iswprint_l function
 - _isprint_l function
 ms.assetid: a8bbcdb0-e8d0-4d8c-ae4e-56d3bdee6ca3
-ms.openlocfilehash: aab604076f8a2e2eee0eefe20f08f46ae5388a34
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 282b72fcec84f8096ce0d54cd114e756aeafbc85
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62157204"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70953754"
 ---
-# <a name="isprint-iswprint-isprintl-iswprintl"></a>isprint, iswprint, _isprint_l, _iswprint_l
+# <a name="isprint-iswprint-_isprint_l-_iswprint_l"></a>isprint, iswprint, _isprint_l, _iswprint_l
 
-Tamsayının yazdırılabilir bir karakteri temsil edip etmediğini belirler.
+Bir tamsayının yazdırılabilir bir karakteri temsil edip etmediğini belirler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -67,33 +70,33 @@ int _iswprint_l(
 ### <a name="parameters"></a>Parametreler
 
 *c*<br/>
-Test edilecek tamsayı.
+Sınanacak tamsayı.
 
-*Yerel ayar*<br/>
+*ayarlar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Yordamların her biri bu döndürür sıfır olmayan *c* belirli bir gösterimiyse yazdırılabilir bir karakter. **isprint** sıfır olmayan bir değer döndürür *c* yazdırılabilir bir karakterse — bu boşluk karakteri dahil (0x20 - 0x7E). **iswprint** sıfır olmayan bir değer döndürür *c* bir yazdırılabilir geniş karakter — bu boşluk geniş karakteri içerir. Bu yordamların her biri 0 döndürür *c* test koşulu karşılamayan.
+Bu yordamların her biri, *c* , yazdırılabilir bir karakterin belirli bir gösterimiyse sıfır olmayan bir değer döndürür. *c* , yazdırılabilir bir karakter ise, **ısprint** sıfır dışında bir değer döndürür. buna boşluk karakteri (0x20-0x7E) dahildir. *c* , yazdırılabilir geniş bir karakterse **ıswprint** sıfır dışında bir değer döndürür; bu da boşluk geniş karakteri içerir. Bu yordamların her biri, *c* , test koşulunu karşılamadığı takdirde 0 döndürür.
 
-Bu işlevler için test durumunun sonucu bağımlı **LC_CTYPE** yerel ayarının kategori ayarına; bkz: [setlocale, _wsetlocale](setlocale-wsetlocale.md) daha fazla bilgi için. Sahip olmayan bu işlevlerin sürümleri **_l** soneki geçerli yerel ayarı için herhangi bir yerel ayara bağımlı davranış; sahip sürümler **_l** sonekine kullanmaları dışında Bunun yerine iletilen yerel ayar. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
+Bu işlevlerin test koşulunun sonucu, yerel ayarın **LC_CTYPE** kategori ayarına bağlıdır; daha fazla bilgi için bkz. [setlocale, _wsetlocale](setlocale-wsetlocale.md) . **_L** sonekine sahip olmayan bu işlevlerin sürümleri, yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır; **_l** sonekine sahip olan sürümler, bunun yerine geçirilen yerel ayarı kullanmaları dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
-Davranışını **isprint** ve **_isprint_l** tanımsızdır *c* EOF değilse veya 0-0xFF aralığındaysa aralığında. Bir hata ayıklama CRT Kitaplığı kullanıldığında ve *c* değil, bu değerleri işlevleri raise onaylama biridir.
+*C* , EOF veya 0 ile 0xFF (dahil) aralığında değilse, **ısprint** ve **_isprint_l** davranışı tanımsızdır. Bir hata ayıklama CRT kitaplığı kullanıldığında ve *c* bu değerlerden biri değilse, işlevler bir onaylama işlemi yükseltir.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_unicode tanımlı|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|**_** **istprint**|**isprint**|[_ismbcprint](ismbcgraph-functions.md)|**iswprint**|
+|**_** **istprint**|**isprint**|[_ismbcprint](ismbcgraph-functions.md)|**iswprınt**|
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**isprint**|\<CType.h >|
-|**iswprint**|\<CType.h > veya \<wchar.h >|
-|**_isprint_l**|\<CType.h >|
-|**_iswprint_l**|\<CType.h > veya \<wchar.h >|
+|**isprint**|\<CType. h >|
+|**iswprınt**|\<CType. h > veya \<wchar. h >|
+|**_isprint_l**|\<CType. h >|
+|**_iswprint_l**|\<CType. h > veya \<wchar. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

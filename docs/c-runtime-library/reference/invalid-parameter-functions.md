@@ -1,14 +1,17 @@
 ---
 title: _invalid_parameter, _invalid_parameter_noinfo, _invalid_parameter_noinfo_noreturn, _invoke_watson
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _invalid_parameter
 - _invalid_parameter_noinfo
 - _invalid_parameter_noinfo_noreturn
 - _invoke_watson
-apilocation:
+api_location:
 - api-ms-win-crt-runtime-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - CORECRT/_invalid_parameter
 - _invalid_parameter
@@ -19,16 +22,16 @@ f1_keywords:
 - CORECRT/_invoke_watson
 - _invoke_watson
 ms.assetid: a4d6f1fd-ce56-4783-8719-927151a7a814
-ms.openlocfilehash: e43d5caaeebb6303d209d870c804357117812985
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b2714c140a2396d88c700689244c6ec04e12169c
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62157545"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70954603"
 ---
-# <a name="invalidparameter-invalidparameternoinfo-invalidparameternoinfonoreturn-invokewatson"></a>_invalid_parameter, _invalid_parameter_noinfo, _invalid_parameter_noinfo_noreturn, _invoke_watson
+# <a name="_invalid_parameter-_invalid_parameter_noinfo-_invalid_parameter_noinfo_noreturn-_invoke_watson"></a>_invalid_parameter, _invalid_parameter_noinfo, _invalid_parameter_noinfo_noreturn, _invoke_watson
 
-Bu işlevler C çalışma zamanı kitaplığı tarafından CRT kitaplık işlevleri için geçirilen geçerli olmayan parametre işlemek için kullanılır. Kodunuzu bu işlevlerin, varsayılan veya geçerli olmayan parametreler özelleştirilebilir işlenmesini desteklemek için de kullanabilirsiniz.
+Bu işlevler, CRT kitaplığı işlevlerine geçirilen geçerli olmayan parametreleri işlemek için C çalışma zamanı kitaplığı tarafından kullanılır. Kodunuz, geçerli olmayan parametrelerin varsayılan veya özelleştirilebilir işlemesini desteklemek için de bu işlevleri kullanabilir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -58,40 +61,40 @@ _invoke_watson(
 
 ## <a name="parameters"></a>Parametreler
 
-*İfade*<br/>
-Geçersiz kaynak kodu parametresi ifadeyi temsil eden bir dize.
+*ifadesini*<br/>
+Geçerli olmayan kaynak kodu parametre ifadesini temsil eden bir dize.
 
-*işlev_adı*<br/>
-Çağrılan işleyici işlevinin adı.
+*function_name*<br/>
+İşleyiciyi çağıran işlevin adı.
 
-*file_name*<br/>
-Kaynak kodu dosyasının nerede işleyici çağrıldı.
+*dosya_adı*<br/>
+İşleyicinin çağrıldığı kaynak kodu dosyası.
 
 *line_number*<br/>
-Burada işleyicisi çağrılmadan kaynak kodundaki satır numarası.
+İşleyicinin çağrıldığı kaynak kodundaki satır numarası.
 
-*Ayrılmış*<br/>
+*ayrılamadı*<br/>
 Kullanılmayan.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu işlevlerin bir değer döndürmeyen. **_İnvalid_parameter_noinfo_noreturn** ve **_invoke_watson** işlevleri çağıran ve bazı durumlarda, döndürmeyen **_invalid_parameter** ve **_invalid_parameter_noinfo** çağırana döndürmeyebilir.
+Bu işlevler bir değer döndürmez. **_Invalid_parameter_noınfo_noreturn** ve **_ınvoke_watson** işlevleri çağırana geri dönmez ve bazı durumlarda **_ınvalid_parameter** ve **_ınvalid_parameter_noınfo** çağırana geri dönemeyebilir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-C çalışma zamanı kitaplık işlevleri geçerli olmayan parametre olarak geçirildiğinde, çağrı kitaplığı işlevleri bir *geçersiz parametre işleyicisi*, birkaç şey birini yapmak için Programcı tarafından belirtilen bir işlev. Örneğin, bu kullanıcıya sorunu bildirin, günlüğe yazma, bir hata ayıklayıcıda kesme, programı sonlandırmak veya hiç hiçbir şey yapma. Hiçbir işlev Programcı tarafından bir varsayılan işleyici olarak belirtilirse **_invoke_watson**, çağrılır.
+C çalışma zamanı kitaplığı işlevleri geçerli olmayan parametreler geçirildiğinde, kitaplık işlevleri, programcı tarafından birkaç şeyi yapmak üzere belirtilemeyen bir işlev olan *geçersiz bir parametre işleyicisini*çağırır. Örneğin, sorunu kullanıcıya bildirebilir, bir günlüğe yazabilir, bir hata ayıklayıcıda kesilebilir, programı sonlandırabilir veya hiçbir şey yapmayabilir. Programcı tarafından hiçbir işlev belirtilmemişse, varsayılan işleyici olan **_ınvoke_watson**çağrılır.
 
-Varsayılan olarak, geçerli olmayan bir parametre kodu hata ayıklama belirlendiğinde CRT kitaplığı işlevleri işlevi çağırabilir. **_invalid_parameter** ayrıntılı parametreleri kullanarak. Hata ayıklama olmayan kodda, **_invalid_parameter_noinfo** işlevi çağrılır, çağıran **_invalid_parameter** boş parametreleri kullanarak bu işlevi. Program sonlandırma olmayan hata ayıklama CRT kitaplığı işlevi gerektiriyorsa, **_invalid_parameter_noinfo_noreturn** işlevi çağrılır, çağıran **_invalid_parameter** boş kullanarak bu işlevi parametreleri, ardından bir çağrı tarafından **_invoke_watson** program sonlandırma zorlamak için işlevi.
+Varsayılan olarak, hata ayıklama kodunda geçerli olmayan bir parametre tanımlandığında, CRT kitaplığı işlevleri ayrıntılı parametreleri kullanarak **_ınvalid_parameter** işlevini çağırır. Hata ayıklama olmayan kodda, **_ınvalid_parameter_noınfo** işlevi çağırılır ve bu, boş parametreler kullanılarak **_ınvalid_parameter** işlevini çağırır. Hata ayıklama olmayan CRT kitaplığı işlevi program sonlandırmasını gerektiriyorsa, **_ınvalid_parameter_noınfo_noreturn** işlevi çağırılır ve bu, boş parametreler kullanılarak **_ınvalid_parameter** işlevini çağırır ve ardından **_ınvoke_ çağrısı izler Watson** işlevi, program sonlandırmasını zorlayacaktır.
 
-**_İnvalid_parameter** işlevi denetimleri bir kullanıcı tanımlı geçersiz parametre işleyicisi ayarlanmış olup olmadığını ve bu durumda, çağırır. Örneğin, kullanıcı tanımlı bir iş parçacığı-yerel işleyici için bir çağrı tarafından ayarlanmışsa [set_thread_local_invalid_parameter_handler](set-invalid-parameter-handler-set-thread-local-invalid-parameter-handler.md) geçerli iş parçacığı adlandırılır ve işlev döndürür. Aksi takdirde bir çağrı tarafından bir kullanıcı tarafından tanımlanan genel geçersiz parametre işleyicisi ayarlandıysa [set_invalid_parameter_handler](set-invalid-parameter-handler-set-thread-local-invalid-parameter-handler.md)çağrılır, ardından işlev döndürür. Aksi takdirde, varsayılan işleyici **_invoke_watson** çağrılır. Varsayılan davranışını **_invoke_watson** Programı sonlandırmak için. Kullanıcı tanımlı işleyiciler sonlandırmak veya döndürür. Kullanıcı tanımlı işleyiciler kurtarma belirli olmadığı sürece Programı sonlandırmak öneririz.
+**_Invalid_parameter** işlevi, Kullanıcı tanımlı geçersiz parametre işleyicisinin ayarlanmış olup olmadığını denetler ve varsa onu çağırır. Örneğin, Kullanıcı tanımlı bir iş parçacığı yerel işleyicisi geçerli iş parçacığında [set_thread_local_invalid_parameter_handler](set-invalid-parameter-handler-set-thread-local-invalid-parameter-handler.md) çağrısıyla ayarlandıysa, çağrılır, sonra işlev döndürülür. Aksi halde, Kullanıcı tanımlı bir genel geçersiz parametre işleyicisi bir [set_invalid_parameter_handler](set-invalid-parameter-handler-set-thread-local-invalid-parameter-handler.md)çağrısıyla ayarlandıysa, çağrılır, sonra işlev döndürülür. Aksi takdirde, varsayılan işleyici **_ınvoke_watson** çağırılır. **_Invoke_watson** 'ın varsayılan davranışı programı sonlandıracaktır. Kullanıcı tanımlı işleyiciler sonlandırılabilir veya geri dönebilir. Kurtarma belirli değilse, Kullanıcı tanımlı işleyicilerin programı sonlanmasını öneririz.
 
-Varsayılan işleyici **_invoke_watson** çağrılır, işlemci destekliyorsa bir [__fastfail](../../intrinsics/fastfail.md) işlem parametresi kullanılarak çağrılır **FAST_FAIL_INVALID_ARG** ve işlemi sonlandırır. Aksi takdirde, ekli bir hata ayıklayıcı tarafından yakalanabilir bir hızlı hata özel durum oluşturulur. İşlemin devam etmesine izin verilirse, Windows için bir çağrı tarafından sonlandırılır **TerminateProcess** bir özel durum kodu durumunu kullanarak bu işlevi **STATUS_INVALID_CRUNTIME_PARAMETER**.
+Varsayılan işleyici **_ınvoke_watson** çağrıldığında, işlemci bir [__fastfail](../../intrinsics/fastfail.md) işlemini destekliyorsa, **FAST_FAIL_INVALID_ARG** parametresi kullanılarak çağrılır ve işlem sonlanır. Aksi takdirde, ekli bir hata ayıklayıcı tarafından yakalanabilecek hızlı bir hata özel durumu oluşturulur. İşlemin devam etmesine izin veriliyorsa, **STATUS_INVALID_CRUNTIME_PARAMETER**özel durum kodu kullanılarak Windows **TerminateProcess** işlevine yapılan bir çağrı tarafından sonlandırılır.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |İşlev|Gerekli başlık|
 |--------------|------------------|
-|**_invalid_parameter**, **_invalid_parameter_noinfo**, **_invalid_parameter_noinfo_noreturn**, **_invoke_watson**|\<corecrt.h >|
+|**_ınvalid_parameter**, **_ınvalid_parameter_noınfo**, **_ınvalid_parameter_noınfo_noreturn**, **_ınvoke_watson**|\<corecrt. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

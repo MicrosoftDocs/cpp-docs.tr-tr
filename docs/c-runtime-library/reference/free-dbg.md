@@ -1,9 +1,9 @@
 ---
 title: _free_dbg
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _free_dbg
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -14,7 +14,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _free_dbg
 - free_dbg
@@ -24,16 +27,16 @@ helpviewer_keywords:
 - _free_dbg function
 - free_dbg function
 ms.assetid: fc5e8299-616d-48a0-b979-e037117278c6
-ms.openlocfilehash: 5a0024101e4f5a74f1573b271d444b27738db8e1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 43591ce8710dd25ad33832a5f084ca6e84bba979
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62287869"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70956802"
 ---
-# <a name="freedbg"></a>_free_dbg
+# <a name="_free_dbg"></a>_free_dbg
 
-(Yalnızca hata ayıklama sürümü) yığında bellek bloğunu serbest bırakır.
+Yığında bir bellek bloğunu serbest bırakır (yalnızca hata ayıklama sürümü).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -47,32 +50,32 @@ void _free_dbg(
 ### <a name="parameters"></a>Parametreler
 
 *userData*<br/>
-Serbest bırakılacak ayrılan bellek bloğuna işaretçi.
+Serbest bırakmak için ayrılan bellek bloğunun işaretçisi.
 
 *blockType*<br/>
-Serbest bırakılacak ayrılmış bellek bloğu türü: **_clıent_block**, **_NORMAL_BLOCK**, veya **_ıgnore_block**.
+Boşaltılacak ayrılmış bellek bloğunun türü: **_Client_block**, **_NORMAL_BLOCK**veya **_IGNORE_BLOCK**.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Free_dbg** işlev, hata ayıklama sürümü [ücretsiz](free.md) işlevi. Zaman [_DEBUG](../../c-runtime-library/debug.md) tanımlı değil, her çağrı **_free_dbg** çağrısı azaltılır **ücretsiz**. Her ikisi de **ücretsiz** ve **_free_dbg** temel yığında bir bellek öbeğini serbest ancak **_free_dbg** iki hata ayıklama özellikleri kapsar: yığının serbest bırakılan tutma imkanıyla engeller yetersiz bellek koşullarına ve belirli ayırma türleri boşaltmak için bir blok türü parametresi benzetimini yapmak için bağlantılı liste.
+**_Free_dbg** işlevi, [ücretsiz](free.md) işlevin hata ayıklama sürümüdür. [_Debug](../../c-runtime-library/debug.md) tanımlanmadığında, **_free_dbg** öğesine yapılan her çağrı, **serbest**bir çağrıya düşürülür. Hem **ücretsiz** hem de **_free_dbg** , temel yığında bir bellek bloğunu serbest bıraktı, ancak **_free_dbg** iki hata ayıklama özelliğini karşılar: düşük bellek koşullarının ve bir blok türü parametresinin benzetimini yapmak için yığının bağlantılı listesinde serbest bırakılan blokları saklama yeteneği serbest belirli ayırma türleri.
 
-**_free_dbg** ücretsiz işlemi gerçekleştirmeden önce belirtilen tüm dosyaları ve blok konumları üzerinde bir geçerlilik denetimi gerçekleştirir. Uygulama, bu bilgiyi sağlamak için beklenmiyor. Bir bellek bloğunu serbest bırakılır, hata ayıklama yığını Yöneticisi otomatik olarak kullanıcı bölümünün iki tarafındaki arabelleklerin bütünlüğünü denetler ve üzerine yazma olduysa bir hata raporu yayınlar. Varsa **_CRTDBG_DELAY_FREE_MEM_DF** bit alanı [_crtDbgFlag](../../c-runtime-library/crtdbgflag.md) bayrağı ayarlandığında, atanan değer ile 0xDD, serbest bırakılan blok doldurulur **_FREE_BLOCK** blok türü, ve bellek blokları yığının bağlantılı listesinde saklanır.
+**_free_dbg** , ücretsiz işlemi gerçekleştirmeden önce belirtilen tüm dosyalar ve blok konumları üzerinde bir geçerlilik denetimi gerçekleştirir. Uygulamanın bu bilgileri sağlaması beklenmez. Bir bellek bloğu serbest bırakıldığında, hata ayıklama yığın Yöneticisi kullanıcı bölümünün her iki tarafındaki arabelleklerin bütünlüğünü otomatik olarak denetler ve üzerine yazma oluştuysa bir hata raporu yayınlar. [_Crtdbgflag](../../c-runtime-library/crtdbgflag.md) bayrağının **_Crtdbg_delay_free_mem_df** bit alanı ayarlandıysa, serbest bırakılan blok 0xDD değeri Ile doldurulur, **_free_block** blok türü atanır ve yığının bağlı bellek blokları listesinde tutulur.
 
-Bellek serbest bırakma hata oluşması durumunda **errno** bilgilerle hata işletim sisteminden yapısı üzerinde ayarlanır. Daha fazla bilgi için [errno _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Belleği boşaltmaya yönelik bir hata oluşursa, **errno** , işletim sisteminden hata doğasından bilgi olarak ayarlanır. Daha fazla bilgi için bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-Nasıl bellek blokları ayrılan, başlatılır ve taban yığının hata ayıklama sürümünde yönetilen hakkında daha fazla bilgi için bkz: [CRT hata ayıklama öbeği ayrıntıları](/visualstudio/debugger/crt-debug-heap-details). Ayırma blok türleri ve bunların nasıl kullanıldığı hakkında daha fazla bilgi için bkz. [hata ayıklama öbek üzerindeki blokları türleri](/visualstudio/debugger/crt-debug-heap-details). Standart yığın işlevi ve hata ayıklama sürümü, bir uygulamanın hata ayıklama derlemesinde çağırma arasındaki farklar hakkında daha fazla bilgi için bkz. [hata ayıklama sürümleri, yığın ayırma işlevleri](/visualstudio/debugger/debug-versions-of-heap-allocation-functions).
+Bellek bloklarının taban yığının hata ayıklama sürümünde nasıl ayrıldığı, başlatıldığı ve yönetildiği hakkında bilgi için bkz. [CRT hata ayıklama yığını ayrıntıları](/visualstudio/debugger/crt-debug-heap-details). Ayırma bloğu türleri ve bunların nasıl kullanıldığı hakkında bilgi için bkz. [hata ayıklama yığınındaki blok türleri](/visualstudio/debugger/crt-debug-heap-details). Bir uygulamanın hata ayıklama sürümünde standart yığın işlevi çağırma ve hata ayıklama sürümü arasındaki farklar hakkında daha fazla bilgi için bkz. [yığın ayırma Işlevlerinin hata ayıklama sürümleri](/visualstudio/debugger/debug-versions-of-heap-allocation-functions).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_free_dbg**|\<crtdbg.h >|
+|**_free_dbg**|\<Crtdbg. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
-Nasıl kullanılacağını gösteren bir örnek **_free_dbg**, bkz: [crt_dbg2](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/crt_dbg2).
+**_Free_dbg**öğesinin nasıl kullanılacağına ilişkin bir örnek için bkz. [crt_dbg2](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/crt_dbg2).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

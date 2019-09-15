@@ -1,14 +1,14 @@
 ---
 title: _strnset_s, _strnset_s_l, _wcsnset_s, _wcsnset_s_l, _mbsnset_s, _mbsnset_s_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _mbsnset_s_l
 - _strnset_s
 - _mbsnset_s
 - _strnset_s_l
 - _wcsnset_s_l
 - _wcsnset_s
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -22,7 +22,10 @@ apilocation:
 - api-ms-win-crt-multibyte-l1-1-0.dll
 - api-ms-win-crt-string-l1-1-0.dll
 - ntoskrnl.exe
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _mbsnset_s_l
 - wcsnset_s
@@ -55,19 +58,19 @@ helpviewer_keywords:
 - strnset_s function
 - _wcsnset_s function
 ms.assetid: 9cf1b321-b5cb-4469-b285-4c07cfbd8813
-ms.openlocfilehash: 9fc8149bcabb2708f644c80837a93cee72658b8e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3542d2272282a9c3f6b2aed8cc443bef85dfe883
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62209629"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70946985"
 ---
-# <a name="strnsets-strnsetsl-wcsnsets-wcsnsetsl-mbsnsets-mbsnsetsl"></a>_strnset_s, _strnset_s_l, _wcsnset_s, _wcsnset_s_l, _mbsnset_s, _mbsnset_s_l
+# <a name="_strnset_s-_strnset_s_l-_wcsnset_s-_wcsnset_s_l-_mbsnset_s-_mbsnset_s_l"></a>_strnset_s, _strnset_s_l, _wcsnset_s, _wcsnset_s_l, _mbsnset_s, _mbsnset_s_l
 
-Verilen bir karakterde bir dizenin karakterlerini başlatır. Bu sürümleri [_strnset, _strnset_l, _wcsnset, _wcsnset_l, _mbsnset, _mbsnset_l](strnset-strnset-l-wcsnset-wcsnset-l-mbsnset-mbsnset-l.md) açıklandığı gibi güvenlik geliştirmeleri vardır [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
+Bir dizenin karakterlerini verilen karaktere başlatır. Bu [_strnset, _strnset_l, _wcsnset, _wcsnset_l, _mbsnset, _mbsnset_l](strnset-strnset-l-wcsnset-wcsnset-l-mbsnset-mbsnset-l.md) SÜRÜMLERI, [CRT içindeki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklandığı gibi güvenlik geliştirmeleri içerir.
 
 > [!IMPORTANT]
-> **_mbsnset_s** ve **_mbsnset_s_l** Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **_mbsnset_s** ve **_mbsnset_s_l** , Windows çalışma zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -115,40 +118,40 @@ errno_t _mbsnset_s_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*str*<br/>
+*üstbilgisine*<br/>
 Değiştirilecek dize.
 
 *numberOfElements*<br/>
-Boyutu *str* arabellek.
+*Str* arabelleğinin boyutu.
 
 *c*<br/>
 Karakter ayarı.
 
-*Sayısı*<br/>
+*biriktirme*<br/>
 Ayarlanacak karakter sayısı.
 
-*Yerel ayar*<br/>
+*ayarlar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa sıfır Aksi takdirde bir hata kodu.
+Başarılıysa sıfır, aksi takdirde bir hata kodu.
 
-Bu işlevler, kendi bağımsız değişkenlerini doğrular. Varsa *str* geçerli bir null ile sonlandırılmış dize değil veya geçersiz parametre işleyicisi çağrılır bağımsız değişkenin boyutu 0 değerinden küçük veya eşit açıklandığı [Parameter Validation](../../c-runtime-library/parameter-validation.md). Devam etmek için bu işlevler bir hata kodu döndürür ve kümesi yürütülmesine izin veriliyorsa **errno** bu hata kodu. Varsayılan hata kodu **EINVAL** daha belirli bir değer geçerli değilse.
+Bu işlevler bağımsız değişkenlerini doğrular. *Str* geçerli bir null ile sonlandırılmış dize değilse veya boyut bağımsız değişkeni 0 ' dan küçük veya buna eşitse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler bir hata kodu döndürür ve **errno** öğesini bu hata koduna ayarlar. Varsayılan hata kodu, daha belirli bir değer uygulanmadığından, **EINVAL** .
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevler, en çok ilk kümesinden *sayısı* karakterlerinden *str* için *c*. Varsa *sayısı* boyutundan büyükse *str*, boyutu *str* yerine kullanılan *sayısı*. Hata oluşur *sayısı* büyüktür *numberOfElements* ve bu parametrelerin her ikisi boyutundan büyük olan *str*.
+Bu işlevler, en çok, *Str* 'nin ilk *sayı* karakterini *c*olarak ayarlar. *Count* değeri *Str*değerinden büyükse, *Str* değeri *say*yerine kullanılır. *Count* değeri *numberOfElements* değerinden büyükse ve bu parametrelerin her ikisi de *Str*boyutundan fazlaysa bir hata oluşur.
 
-**_wcsnset_s** ve **_mbsnset_s** geniş karakter ve çok baytlı karakter sürümleridir **_strnset_s**. Dize bağımsız değişkeni **_wcsnset_s** geniş karakterli dize; **_mbsnset_s** amultibyte karakterli bir dizedir. Bu üç işlev aynı şekilde davranır.
+**_wcsnset_s** ve **_mbsnset_s** , **_strnset_s**'in geniş karakterli ve çok baytlı karakter sürümleridir. **_Wcsnset_s** dize bağımsız değişkeni geniş karakterli bir dizedir; Bu **_mbsnset_s** , açok baytlı karakter dizesidir. Bu üç işlev, aynı şekilde davranır.
 
-Çıkış değeri ayarından etkilenir **LC_CTYPE** yerel ayarının kategori ayarına; bkz: [setlocale](setlocale-wsetlocale.md) daha fazla bilgi için. Bu işlevlerin sürümleri **_l** soneki geçerli yerel ayarı kullanır bu yerel ayara bağlı davranışı için; sürümleriyle **_l** sonekine bunların yerel ayar parametresini kullanmalarıdır Bunun yerine iletilmiş. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
+Çıkış değeri yerel ayarın **LC_CTYPE** kategori ayarı ayarından etkilenir; daha fazla bilgi için bkz. [setlocale](setlocale-wsetlocale.md) . **_L** sonekine sahip olmayan bu işlevlerin sürümleri, yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır; **_l** sonekine sahip sürümler, bunun yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
-Bu işlevlerin hata ayıklama sürümleri, ilk arabellek 0xFD ile doldurur. Bu davranışı devre dışı bırakmak için [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md).
+Bu işlevlerin hata ayıklama sürümleri ilk olarak arabelleği 0xFD ile doldurur. Bu davranışı devre dışı bırakmak için [_Crtsetdebugfillthreshold](crtsetdebugfillthreshold.md)kullanın.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_tcsnset_s**|**_strnset_s**|**_mbsnbset_s**|**_wcsnset_s**|
 |**_tcsnset_s_l**|**_strnset_s_l**|**_mbsnbset_s_l**|**_wcsnset_s_l**|
@@ -157,11 +160,11 @@ Bu işlevlerin hata ayıklama sürümleri, ilk arabellek 0xFD ile doldurur. Bu d
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_strnset_s**|\<String.h >|
-|**_strnset_s_l**|\<Tchar.h >|
-|**_wcsnset_s**|\<String.h > veya \<wchar.h >|
-|**_wcsnset_s_l**|\<Tchar.h >|
-|**_mbsnset_s**, **_mbsnset_s_l**|\<Mbstring.h >|
+|**_strnset_s**|\<String. h >|
+|**_strnset_s_l**|\<Tchar. h >|
+|**_wcsnset_s**|\<String. h > veya \<wchar. h >|
+|**_wcsnset_s_l**|\<Tchar. h >|
+|**_mbsnset_s**, **_mbsnset_s_l**|\<mbstring. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -189,7 +192,7 @@ After:  **** is a test
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dize düzenlemesi](../../c-runtime-library/string-manipulation-crt.md)<br/>
+[Dize düzenleme](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [locale](../../c-runtime-library/locale.md)<br/>
 [Çok Baytlı Karakter Sıralarının Yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [strcat, wcscat, _mbscat](strcat-wcscat-mbscat.md)<br/>

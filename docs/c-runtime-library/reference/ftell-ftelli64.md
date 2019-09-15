@@ -1,10 +1,10 @@
 ---
 title: ftell, _ftelli64
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _ftelli64
 - ftell
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _ftelli64
 - ftell
@@ -27,14 +30,14 @@ helpviewer_keywords:
 - file pointers [C++], getting current position
 - file pointers [C++]
 ms.assetid: 40149cd8-65f2-42ff-b70c-68e3e918cdd7
-ms.openlocfilehash: f9548d4684bd2df734be2b0b703f98d8c7982884
-ms.sourcegitcommit: 878a164fe6d550ca81ab87d8425c8d3cd52fe384
+ms.openlocfilehash: fda309420e6ae241d3c8ed73c3d41c8ae50de662
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68376128"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70956448"
 ---
-# <a name="ftell-ftelli64"></a>ftell, _ftelli64
+# <a name="ftell-_ftelli64"></a>ftell, _ftelli64
 
 Bir dosya işaretçisinin geçerli konumunu alır.
 
@@ -66,7 +69,7 @@ Bu ve diğer dönüş kodları hakkında daha fazla bilgi için bkz. [_doserrno,
 
 Veri eklemek için bir dosya açıldığında, geçerli dosya konumu, sonraki yazmanın nerede gerçekleştiğine göre değil, son g/ç işlemi tarafından belirlenir. Örneğin, bir dosya ekleme için açılırsa ve son işlem bir okuuysa, dosya konumu sonraki yazma işleminin başlayacağı noktada, sonraki okuma işleminin başlayacağı noktasıdır. (Bir dosya ekleme için açıldığında, dosya konumu herhangi bir yazma işleminden önce dosyanın sonuna taşınır.) Ekleme için açılmış bir dosya üzerinde bir g/ç işlemi henüz gerçekleşmediyse dosya konumu dosyanın başlangıcıdır.
 
-Metin modunda CTRL + Z, girişte dosya sonu karakteri olarak yorumlanır. Okuma/yazma için açılan dosyalarda, **fopen** ve tüm ilgili yordamlar, dosyanın sonunda bir CTRL + Z olup olmadığını kontrol edin ve mümkünse kaldırın. Bu, bir CTRL + Z ile biten  bir dosya içinde hareket etmek için for ve [fseek](fseek-fseeki64.md) veya **_ftelli64** ve [_fseeki64](fseek-fseeki64.md)birleşimini kullanmanın, **fsöyleyin** veya **_ftelli64** öğesinin sonuna doğru şekilde davranmasına neden olabileceği için yapılır. dosyasýný.
+Metin modunda CTRL + Z, girişte dosya sonu karakteri olarak yorumlanır. Okuma/yazma için açılan dosyalarda, **fopen** ve tüm ilgili yordamlar, dosyanın sonunda bir CTRL + Z olup olmadığını kontrol edin ve mümkünse kaldırın. Bu, bir CTRL + Z ile biten bir dosya içinde hareket etmek **için for ve** [fseek](fseek-fseeki64.md) veya **_ftelli64** ve [_fseeki64](fseek-fseeki64.md)birleşimini kullanmanın, **fsöyleyin** veya **_ftelli64** öğesinin sonuna doğru şekilde davranmasına neden olabileceği için yapılır. dosyasýný.
 
 Bu işlev, yürütme sırasında çağıran iş parçacığını kilitler ve bu nedenle iş parçacığı güvenlidir. Kilitleme dışı bir sürüm için bkz. **_ftell_nolock**.
 

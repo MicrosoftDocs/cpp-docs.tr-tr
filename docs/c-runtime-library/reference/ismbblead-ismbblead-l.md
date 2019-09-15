@@ -1,10 +1,10 @@
 ---
 title: _ismbblead, _ismbblead_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _ismbblead_l
 - _ismbblead
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-multibyte-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - ismbblead_l
 - istlead
@@ -32,16 +35,16 @@ helpviewer_keywords:
 - ismbblead_l function
 - _istlead function
 ms.assetid: 2abc6f75-ed5c-472e-bfd0-e905a1835ccf
-ms.openlocfilehash: 7bf8e8c88153e2f22cfa08bb35ff8d4ba01a8804
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c0f9ec748a86d5d1413cf4f881234d786c2a2d78
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62157217"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70954060"
 ---
-# <a name="ismbblead-ismbbleadl"></a>_ismbblead, _ismbblead_l
+# <a name="_ismbblead-_ismbblead_l"></a>_ismbblead, _ismbblead_l
 
-Çok baytlı karakterin ön baytı olup olmadığını belirlemek için karakteri test eder.
+Bir karakteri, çok baytlı bir karakterin bir ön baytı olup olmadığını belirleyecek şekilde sınar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -58,35 +61,35 @@ int _ismbblead_l(
 ### <a name="parameters"></a>Parametreler
 
 *c*<br/>
-Test edilecek tamsayı.
+Sınanacak tamsayı.
 
-*Yerel ayar*<br/>
+*ayarlar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Sıfır dışında bir değer döndürür tamsayı *c* olan çok baytlı bir karakterin ilk baytı.
+Tamsayı *c* , çok baytlı bir karakterin ilk baytı ise sıfır dışında bir değer döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Çok baytlı karakter izleyen son ardından baytı oluşur. Ön baytlar verilen bir karakter kümesi için belirli bir aralıkta olmalarıyla fark. Örneğin, kod sayfası 932'de yalnızca ön bayt 0x81-0x9F ve 0xE0 - 0xFC aralığındadır.
+Çok baytlı karakterler bir ön bayt ve sonrasında sondaki bir bayt oluşur. Ön baytlar, belirli bir karakter kümesi için belirli bir aralıkta olacak şekilde ayırt edilir. Örneğin, yalnızca kod sayfası 932 ' de, 1.0x9F ve 0xE0-0xFC içindeki ön baytlar arasındadır.
 
-**_ismbblead** yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır. **_ismbblead_l** bunun yerine iletilmiş yerel ayarı kullanması dışında aynıdır. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
+**_ismbblider** , yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır. **_ismbblead_l** , bunun yerine geçirilen yerel ayarı kullanması dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
 |Tchar.h yordamı|_UNICODE ve _MBCS tanımlanmaz|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|--------------------------------------|--------------------|-----------------------|
-|**_istlead**|Daima yanlış getirir|**_ismbblead**|Daima yanlış getirir|
+|**_istlider**|Her zaman yanlış döndürür|**_ismbblider**|Her zaman yanlış döndürür|
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|İsteğe bağlı başlık|
 |-------------|---------------------|---------------------|
-|**_ismbblead**|\<Mbctype.h > veya \<mbstring.h >|\<CType.h >, * \<lımıts.h >, \<stdlib.h >|
-|**_ismbblead_l**|\<Mbctype.h > veya \<mbstring.h >|\<CType.h >, * \<lımıts.h >, \<stdlib.h >|
+|**_ismbblider**|\<Mbctype. h > veya \<mbstring. h >|\<CType. h >, * \<limit. h >, \<Stdlib. h >|
+|**_ismbblead_l**|\<Mbctype. h > veya \<mbstring. h >|\<CType. h >, * \<limit. h >, \<Stdlib. h >|
 
-\* Test koşullarına ilişkin bildirim sabitleri için.
+\*Test koşullarına yönelik bildirim sabitleri için.
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

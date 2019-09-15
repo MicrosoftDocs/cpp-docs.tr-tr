@@ -1,9 +1,9 @@
 ---
 title: _aligned_malloc_dbg
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _aligned_malloc_dbg
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -14,7 +14,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _aligned_malloc_dbg
 - aligned_malloc_dbg
@@ -22,16 +25,16 @@ helpviewer_keywords:
 - aligned_malloc_dbg function
 - _aligned_malloc_dbg function
 ms.assetid: fb0429c3-685d-4826-9075-2515c5bdc5c6
-ms.openlocfilehash: eb58313c892ffe13e9f8e34e98b7940022899d14
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3db61d494ea94c9ccbf2844c9f47df66dad87ff7
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62341645"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70939892"
 ---
-# <a name="alignedmallocdbg"></a>_aligned_malloc_dbg
+# <a name="_aligned_malloc_dbg"></a>_aligned_malloc_dbg
 
-Hata ayıklama üst bilgisi için ek alana sahip bir belirtilen hizalama sınırındaki belleği ayırır ve arabellek (yalnızca hata ayıklama sürümü) üzerine yazılır.
+Bir hata ayıklama üst bilgisi ve üzerine yazma arabellekleri (yalnızca hata ayıklama sürümü) için ek alanla belirtilen hizalama sınırında bellek ayırır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -46,43 +49,43 @@ void * _aligned_malloc_dbg(
 
 ### <a name="parameters"></a>Parametreler
 
-*Boyutu*<br/>
+*boyutla*<br/>
 İstenen bellek ayırmasının boyutu.
 
-*Hizalama*<br/>
-Hizalama değeri 2'in tam sayı üssü olması gerekir.
+*hizalar*<br/>
+2 ' nin tam sayı üssü olması gereken hizalama değeri.
 
-*Dosya adı*<br/>
-Ayırma işlemi veya NULL istenen kaynak dosyasının adı için işaretçi.
+*kısaltın*<br/>
+Ayırma işlemini veya NULL değerini isteyen kaynak dosyanın adı işaretçisi.
 
-*LineNumber*<br/>
-Satır numarası kaynak dosyada ayırma işlemi burada istendi veya NULL.
+*onayın*<br/>
+Ayırma işleminin istendiği veya NULL olduğu kaynak dosyadaki satır numarası.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Ayrılan bellek bloğuna işaretçi veya işlem başarısız olursa NULL.
+İşlem başarısız olursa, ayrılan veya NULL olan bellek bloğunun işaretçisi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_aligned_malloc_dbg** bir hata ayıklama sürümü [_aligned_malloc](aligned-malloc.md) işlevi. Zaman [_DEBUG](../../c-runtime-library/debug.md) tanımlı değil, her çağrı **_aligned_malloc_dbg** çağrısı azaltılır `_aligned_malloc`. Her ikisi de `_aligned_malloc` ve **_aligned_malloc_dbg** taban yığının bellek bloğu ayrılamadı ancak **_aligned_malloc_dbg** birkaç hata ayıklama özellikleri sunar: her iki tarafında bir kullanıcı bölümünü arabellekler Blok için sızıntılara, test etmek ve *filename*/*linenumber* ayırma isteklerini kökenini belirlemek için bilgi. Bir blok türü parametresiyle belirli ayırma türleri izleme hizalanmış ayırma desteklenen hata ayıklama özelliği değil. Hizalanmış ayırma _NORMAL_BLOCK bloğu türü olarak görünür.
+**_aligned_malloc_dbg** , [_aligned_malloc](aligned-malloc.md) işlevinin bir hata ayıklama sürümüdür. [_Hata ayıklama](../../c-runtime-library/debug.md) tanımlanmadığında, **_aligned_malloc_dbg** öğesine yapılan her çağrı, öğesine `_aligned_malloc`yapılan çağrıya düşürülür. Hem `_aligned_malloc` hem de **_aligned_malloc_dbg** , temel yığında bir bellek bloğu ayırır, ancak **_aligned_malloc_dbg** birçok hata ayıklama özelliği sunar: sızıntıların Kullanıcı bölümünün her iki tarafında da sızıntı ve *dosya adı* ayırma isteklerinin kaynağını tespit etmek için *onayın bilgileri.* / Bir blok türü parametresiyle belirli ayırma türlerini izlemek, hizalanmış ayırmalar için desteklenen bir hata ayıklama özelliği değildir. Hizalanmış ayırmalar, _NORMAL_BLOCK blok türü olarak görünür.
 
-**_aligned_malloc_dbg** ile biraz daha fazla alan istenen bellek bloğu ayırır *boyutu*. Ek alan, hata ayıklama bellek bloklarını bağlantı ve uygulama ile hata ayıklama üstbilgi bilgileri sağlayın ve arabellek üzerine yazmak için hata ayıklama yığını Yöneticisi tarafından kullanılır. Blok atandığında, blok kullanıcı bölümünü 0xCD değeri ile doldurulur ve 0xFD ile doldurulmuş her üzerine yaz arabellek.
+**_aligned_malloc_dbg** bellek bloğunu istenen *boyuttan*biraz daha fazla alanla ayırır. Hata ayıklama bellek bloklarını bağlamak ve uygulamanın hata ayıklama üstbilgi bilgilerini ve üzerine yazma arabelleğini sağlamak için ek alan, hata ayıklama yığın Yöneticisi tarafından kullanılır. Blok ayrıldığında, bloğun Kullanıcı bölümü, 0xCD değeri ile doldurulur ve üzerine yazma arabelleklerinin her biri 0xFD ile doldurulur.
 
-**_aligned_malloc_dbg** ayarlar `errno` için `ENOMEM` bir bellek ayırma başarısız olursa veya (daha önce bahsedilen ek yük dahil) gerekli bellek miktarını aşıyorsa `_HEAP_MAXREQ`. Bu ve diğer hata kodları hakkında daha fazla bilgi için bkz: [errno _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md). Ayrıca, **_aligned_malloc_dbg** kendi parametrelerini doğrular. Varsa *hizalama* 2'in kuvveti değil veya *boyutu* sıfırsa bu işlev içinde açıklanan şekilde geçersiz parametre işleyicisi çağırır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Devam etmek için bu işlev dönüşleri NULL ve kümeleri yürütülmesine izin veriliyorsa `errno` için `EINVAL`.
+**_aligned_malloc_dbg** , `errno` bir `ENOMEM` bellek ayırma başarısız olursa veya gerekli bellek miktarı (daha önce bahsedilen ek yük dahil) ile aşarsa `_HEAP_MAXREQ`olarak ayarlanır. Bu ve diğer hata kodları hakkında daha fazla bilgi için bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md). Ayrıca, **_aligned_malloc_dbg** kendi parametrelerini doğrular. *Hizalama* 2 ' nin üssü veya *boyutu* sıfır değilse, bu işlev [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev null döndürür ve öğesini olarak `errno` `EINVAL`ayarlar.
 
-Nasıl bellek blokları ayrılan, başlatılır ve taban yığının hata ayıklama sürümünde yönetilen hakkında daha fazla bilgi için bkz: [CRT hata ayıklama öbeği ayrıntıları](/visualstudio/debugger/crt-debug-heap-details). Ayırma blok türleri ve bunların nasıl kullanıldığı hakkında daha fazla bilgi için bkz. [hata ayıklama öbek üzerindeki blokları türleri](/visualstudio/debugger/crt-debug-heap-details). Standart yığın işlevi ve hata ayıklama sürümü, bir uygulamanın hata ayıklama derlemesinde çağırma arasındaki farklar hakkında daha fazla bilgi için bkz. [hata ayıklama sürümleri, yığın ayırma işlevleri](/visualstudio/debugger/debug-versions-of-heap-allocation-functions).
+Bellek bloklarının taban yığının hata ayıklama sürümünde nasıl ayrıldığı, başlatıldığı ve yönetildiği hakkında bilgi için bkz. [CRT hata ayıklama yığını ayrıntıları](/visualstudio/debugger/crt-debug-heap-details). Ayırma bloğu türleri ve bunların nasıl kullanıldığı hakkında bilgi için bkz. [hata ayıklama yığınındaki blok türleri](/visualstudio/debugger/crt-debug-heap-details). Bir uygulamanın hata ayıklama sürümünde standart yığın işlevi çağırma ve hata ayıklama sürümü arasındaki farklar hakkında daha fazla bilgi için bkz. [yığın ayırma Işlevlerinin hata ayıklama sürümleri](/visualstudio/debugger/debug-versions-of-heap-allocation-functions).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_aligned_malloc_dbg**|\<crtdbg.h >|
+|**_aligned_malloc_dbg**|\<Crtdbg. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 
-Hata ayıklama sürümleri [C çalışma zamanı kitaplıkları](../../c-runtime-library/crt-library-features.md) yalnızca.
+Yalnızca [C çalışma zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md) sürümlerini ayıklayın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

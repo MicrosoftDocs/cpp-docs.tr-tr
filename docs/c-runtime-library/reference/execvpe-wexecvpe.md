@@ -1,10 +1,10 @@
 ---
 title: _execvpe, _wexecvpe
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _execvpe
 - _wexecvpe
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-process-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - wexecvpe
 - execvpe
@@ -28,19 +31,19 @@ helpviewer_keywords:
 - _wexecvpe function
 - _execvpe function
 ms.assetid: c0c3c986-d9c0-4814-a96c-10f0b3092766
-ms.openlocfilehash: 064f8b94a9a97795015c09c11cd56e0370dcc60c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: eab63cd54d410daf1dd4d09fb3d904feca0a230d
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62339409"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70941734"
 ---
-# <a name="execvpe-wexecvpe"></a>_execvpe, _wexecvpe
+# <a name="_execvpe-_wexecvpe"></a>_execvpe, _wexecvpe
 
-Yükler ve yeni alt işlemleri çalıştırır.
+Yeni alt süreçler yükler ve çalıştırır.
 
 > [!IMPORTANT]
-> Bu API, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -59,48 +62,48 @@ intptr_t _wexecvpe(
 
 ### <a name="parameters"></a>Parametreler
 
-*■ CmdName*<br/>
+*cmdname*<br/>
 Yürütülecek dosyanın yolu.
 
 *argv*<br/>
-Parametreler için işaretçiler dizisi.
+Parametrelere işaretçiler dizisi.
 
 *envp*<br/>
-Ortam ayarlarına bir işaretçiler dizisi.
+Ortam ayarlarına işaretçiler dizisi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, bu işlevler çağırma işlemine geri gitmez. -1 değeri, bu durumda bir hata belirtir **errno** global değişkeni ayarlanır.
+Başarılı olursa, bu işlevler çağıran işleme geri dönmez. -1 ' in dönüş değeri bir hatayı gösterir, bu durumda **errno** genel değişkeni ayarlanır.
 
 |**errno** değeri|Açıklama|
 |-------------------|-----------------|
-|**E2BIG**|Bağımsız değişkenler ve ortam ayarları için gereken alan 32 KB aşıyor.|
-|**SPAWN**|Belirtilen dosya kilitleme veya paylaşma ihlali var.|
-|**EMFILE**|Çok fazla dosya açık durumda. (Belirtilen dosyanın yürütülebilir olup olmadığını belirlemek için açık olması gerekir.)|
+|**E2BIG**|Bağımsız değişkenler ve ortam ayarları için gereken alan 32 KB 'yi aşıyor.|
+|**EACCES**|Belirtilen dosyada bir kilitleme veya paylaşım ihlali vardır.|
+|**EMFILE**|Çok fazla dosya açık. (Çalıştırılabilir olup olmadığını anlamak için belirtilen dosyanın açılması gerekir.)|
 |**ENOENT**|Dosya veya yol bulunamadı.|
 |**ENOEXEC**|Belirtilen dosya yürütülebilir değil veya geçersiz bir yürütülebilir dosya biçimine sahip.|
-|**ENOMEM**|Yeni işlemi yürütmek yeterli bellek yok; kullanılabilir bellek bozulmuş; ya da geçersiz bir engel var., çağıran işlemin düzgün ayrılmamış olduğunu gösterir.|
+|**ENOMEM**|Yeni işlemi yürütmek için yeterli kullanılabilir bellek yok; kullanılabilir bellek bozulmuş; ya da çağıran işlemin doğru şekilde ayrılmadığını gösteren geçersiz bir blok var.|
 
-Bunlar ve diğer dönüş kodları hakkında daha fazla bilgi için bkz: [errno _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Bu ve diğer dönüş kodları hakkında daha fazla bilgi için bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevlerin her biri yükler ve yeni bir işlem yürütür ve komut satırı bağımsız değişkenleri ve bir ortam ayarlarına bir işaretçiler dizisi bir işaretçiler dizisi geçirir. Bu işlevleri **yolu** yürütülecek dosyayı bulmak için ortam değişkeni.
+Bu işlevlerin her biri yeni bir işlem yükler ve yürütür ve komut satırı bağımsız değişkenlerine bir işaretçiler dizisi ve ortam ayarlarına işaretçiler dizisi geçirir. Bu işlevler, yürütülecek dosyayı bulmak için **Path** ortam değişkenini kullanır.
 
-**_Execvpe** işlevleri kendi parametrelerini doğrular. Varsa *■ cmdname* null bir işaretçiyse veya *argv* null işaretçisiyse, işaretçi boş diziyse ya da ilk bağımsız değişken olarak boş bir dize içeren bir dizi işaretçisi, bu işlevler geçersiz çağırma bölümünde anlatıldığı gibi parametre işleyicisini [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütme devam etmesine izin verilirse bu işlevler kümesi **errno** için **EINVAL** ve -1 döndürür. Hiçbir işlem başlatılmadı.
+**_Execvpe** işlevleri parametrelerini doğrular. *Cmdname* null bir işaretçiyse veya *argv* boş bir işaretçi, boş bir diziye yönelik bir işaretçi veya ilk bağımsız değişken olarak boş bir dize içeren bir dizi işaretçisi ise, bu işlevler, içinde [açıklandığı gibi geçersiz parametre işleyicisini çağırır. Parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **errno** olarak **EINVAL** ve-1 döndürür. Hiçbir işlem başlatılmadı.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |İşlev|Gerekli başlık|İsteğe bağlı başlık|
 |--------------|---------------------|---------------------|
-|**_execvpe**|\<Process.h >|\<errno.h >|
-|**_wexecvpe**|\<Process.h > veya \<wchar.h >|\<errno.h >|
+|**_execvpe**|\<Process. h >|\<errno. h >|
+|**_wexecvpe**|\<Process. h > veya \<wchar. h >|\<errno. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
-Örnekte bakın [_exec, _wexec işlevleri](../../c-runtime-library/exec-wexec-functions.md).
+[_Exec, _wexec Functions](../../c-runtime-library/exec-wexec-functions.md)içindeki örneğe bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

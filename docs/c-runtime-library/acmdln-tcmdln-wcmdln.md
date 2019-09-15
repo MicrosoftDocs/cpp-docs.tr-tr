@@ -1,12 +1,15 @@
 ---
 title: _acmdln, _tcmdln, _wcmdln
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _wcmdln
 - _acmdln
-apilocation:
+api_location:
 - msvcrt.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _acmdln
 - acmdln
@@ -22,14 +25,14 @@ helpviewer_keywords:
 - tcmdln global variable
 - acmdln global variable
 ms.assetid: 4fc0a6a0-3f93-420a-a19f-5276061ba539
-ms.openlocfilehash: f4cacb512cb9b5bb6ea22f4dc4014ac2a2eeebe6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 07061244e06256341a6da7d04e5487e81c4b9378
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62290514"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70940608"
 ---
-# <a name="acmdln-tcmdln-wcmdln"></a>_acmdln, _tcmdln, _wcmdln
+# <a name="_acmdln-_tcmdln-_wcmdln"></a>_acmdln, _tcmdln, _wcmdln
 
 İç CRT genel değişkeni. Komut satırı.
 
@@ -47,7 +50,7 @@ wchar_t * _wcmdln;
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu CRT iç değişkenler, tam komut satırı depolayın. Dışarı aktarılan sembolleri için CRT gösterilir, ancak kodunuzda kullanmak için tasarlanmamıştır. `_acmdln` bir karakter dizisi olarak verileri depolar. `_wcmdln` verileri bir geniş karakter dizesi depolar. `_tcmdln` olarak tanımlanabilir `_acmdln` veya `_wcmdln`uygun olduğu bağlı olarak.
+Bu CRT iç değişkenleri komut satırının tamamını depolar. Bu karakterler CRT için aktarılmış semboller içinde sunulur, ancak kodunuzda kullanılmak üzere tasarlanmamıştır. `_acmdln`verileri bir karakter dizesi olarak depolar. `_wcmdln`verileri geniş bir karakter dizesi olarak depolar. `_tcmdln`, uygun olduğuna bağlı olarak `_acmdln` veya `_wcmdln`olarak tanımlanabilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

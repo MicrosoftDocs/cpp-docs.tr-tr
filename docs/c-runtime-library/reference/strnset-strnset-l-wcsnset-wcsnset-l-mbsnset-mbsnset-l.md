@@ -1,14 +1,14 @@
 ---
 title: _strnset, _strnset_l, _wcsnset, _wcsnset_l, _mbsnset, _mbsnset_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _mbsnset
 - _strnset
 - _mbsnset_l
 - _wcsnset_l
 - _wcsnset
 - _strnset_l
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -22,7 +22,10 @@ apilocation:
 - api-ms-win-crt-multibyte-l1-1-0.dll
 - api-ms-win-crt-string-l1-1-0.dll
 - ntoskrnl.exe
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _tcsncset_l
 - mbsnset_l
@@ -66,19 +69,19 @@ helpviewer_keywords:
 - strings [C++], initializing
 - tcsnset_l function
 ms.assetid: 3f306489-5763-48e5-b939-aefee7c94ef5
-ms.openlocfilehash: 3389213b423857fa0a8561c1d6bd13ae2d9d6d5c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bb2365684f9c35e1523b34aaad30c9ae6875b5c1
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62209616"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70946981"
 ---
-# <a name="strnset-strnsetl-wcsnset-wcsnsetl-mbsnset-mbsnsetl"></a>_strnset, _strnset_l, _wcsnset, _wcsnset_l, _mbsnset, _mbsnset_l
+# <a name="_strnset-_strnset_l-_wcsnset-_wcsnset_l-_mbsnset-_mbsnset_l"></a>_strnset, _strnset_l, _wcsnset, _wcsnset_l, _mbsnset, _mbsnset_l
 
-Verilen bir karakterde bir dizenin karakterlerini başlatır. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz: [_strnset_s, _strnset_s_l, _wcsnset_s, _wcsnset_s_l, _mbsnset_s, _mbsnset_s_l](strnset-s-strnset-s-l-wcsnset-s-wcsnset-s-l-mbsnset-s-mbsnset-s-l.md).
+Bir dizenin karakterlerini verilen karaktere başlatır. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz. [_strnset_s, _strnset_s_l, _wcsnset_s, _wcsnset_s_l, _mbsnset_s, _mbsnset_s_l](strnset-s-strnset-s-l-wcsnset-s-wcsnset-s-l-mbsnset-s-mbsnset-s-l.md).
 
 > [!IMPORTANT]
-> **_mbsnset** ve **_mbsnset_l** Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **_mbsnset** ve **_mbsnset_l** Windows çalışma zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -120,16 +123,16 @@ unsigned char *_mbsnset_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*str*<br/>
+*üstbilgisine*<br/>
 Değiştirilecek dize.
 
 *c*<br/>
 Karakter ayarı.
 
-*Sayısı*<br/>
+*biriktirme*<br/>
 Ayarlanacak karakter sayısı.
 
-*Yerel ayar*<br/>
+*ayarlar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -138,17 +141,17 @@ Değiştirilen dizeye bir işaretçi döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Strnset** işlevi ayarlar, en çok ilk *sayısı* karakterlerinden *str* için *c* (dönüştürülür **char**). Varsa *sayısı* uzunluğundan büyükse *str*, uzunluğunu *str* yerine kullanılan *sayısı*.
+**_Strnset** işlevi, en çok, *Str* 'nin ilk *sayı* karakterlerini *c* 'ye ( **char**'a dönüştürülür) ayarlar. *Count* değeri *Str*uzunluğundan büyükse, *Str* uzunluğu *sayı*yerine kullanılır.
 
-**_wcsnset** ve **_mbsnset** geniş karakter ve çok baytlı karakter sürümleridir **_strnset**. Dize bağımsız değişkenleri ve dönüş değeri **_wcsnset** geniş karakterli dizelerdir; **_mbsnset** çok baytlı karakter dizeleridir. Bu üç işlev aynı şekilde davranır.
+**_wcsnset** ve **_mbsnset** , **_strnset**'in geniş karakterli ve çok baytlı karakter sürümleridir. **_Wcsnset** dize bağımsız değişkenleri ve dönüş değeri geniş karakterli dizelerdir; Bu **_mbsnset** , çok baytlı karakter dizeleridir. Bu üç işlev, aynı şekilde davranır.
 
-**_mbsnset** kendi parametrelerini doğrular; *str* null bir işaretçiyse, açıklanan şekilde geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md) . Yürütmenin devam etmesine izin verilirse **_mbsnset** döndürür **NULL** ve ayarlar **errno** için **EINVAL**. **_strnset** ve **_wcsnset** kendi parametrelerini doğrulamazlar.
+**_mbsnset** parametrelerini doğrular; *Str* null Işaretçisiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md) bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, **_mbsnset** **null** değerini döndürür ve **errno** 'ı **EINVAL**olarak ayarlar. **_strnset** ve **_wcsnset** parametrelerini doğrulamaz.
 
-Çıkış değeri ayarından etkilenir **LC_CTYPE** yerel ayarının kategori ayarına; bkz: [setlocale](setlocale-wsetlocale.md) daha fazla bilgi için. Bu işlevlerin sürümleri **_l** soneki geçerli yerel ayarı kullanır bu yerel ayara bağlı davranışı için; sürümleriyle **_l** sonekine bunların yerel ayar parametresini kullanmalarıdır Bunun yerine iletilmiş. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
+Çıkış değeri yerel ayarın **LC_CTYPE** kategori ayarı ayarından etkilenir; daha fazla bilgi için bkz. [setlocale](setlocale-wsetlocale.md) . **_L** sonekine sahip olmayan bu işlevlerin sürümleri, yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır; **_l** sonekine sahip sürümler, bunun yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_tcsnset**|**_strnset**|**_mbsnbset**|**_wcsnset**|
 |**_tcsnset_l**|**_strnset_l**|**_mbsnbset_l**|**_wcsnset_l**|
@@ -157,11 +160,11 @@ Değiştirilen dizeye bir işaretçi döndürür.
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_strnset**|\<String.h >|
-|**_strnset_l**|\<Tchar.h >|
-|**_wcsnset**|\<String.h > veya \<wchar.h >|
-|**_wcsnset_l**|\<Tchar.h >|
-|**_mbsnset**, **_mbsnset_l**|\<Mbstring.h >|
+|**_strnset**|\<String. h >|
+|**_strnset_l**|\<Tchar. h >|
+|**_wcsnset**|\<String. h > veya \<wchar. h >|
+|**_wcsnset_l**|\<Tchar. h >|
+|**_mbsnset**, **_mbsnset_l**|\<mbstring. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -191,7 +194,7 @@ After:  **** is a test
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dize düzenlemesi](../../c-runtime-library/string-manipulation-crt.md)<br/>
+[Dize düzenleme](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [locale](../../c-runtime-library/locale.md)<br/>
 [Çok Baytlı Karakter Sıralarının Yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [strcat, wcscat, _mbscat](strcat-wcscat-mbscat.md)<br/>

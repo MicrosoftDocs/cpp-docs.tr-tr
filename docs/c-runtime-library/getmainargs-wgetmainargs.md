@@ -1,10 +1,10 @@
 ---
 title: __getmainargs, __wgetmainargs
 ms.date: 11/04/2016
-apiname:
+api_name:
 - __wgetmainargs
 - __getmainargs
-apilocation:
+api_location:
 - msvcr100.dll
 - msvcrt.dll
 - msvcr110_clr0400.dll
@@ -12,7 +12,10 @@ apilocation:
 - msvcr110.dll
 - msvcr90.dll
 - msvcr120.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - __wgetmainargs
 - __getmainargs
@@ -20,16 +23,16 @@ helpviewer_keywords:
 - __wgetmainargs
 - __getmainargs
 ms.assetid: f72f54eb-9509-4bdf-8752-40fc49055439
-ms.openlocfilehash: 6e2bf21f2ac50d3486af56f9581ff6c8d0e0c309
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: dbf186fa699e8faf85385fd322482a4373b3fd60
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62343453"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70940342"
 ---
-# <a name="getmainargs-wgetmainargs"></a>__getmainargs, __wgetmainargs
+# <a name="__getmainargs-__wgetmainargs"></a>__getmainargs, __wgetmainargs
 
-Komut satırı Ayrıştırmada çağırır ve bağımsız değişkenleri kopyalar `main()` geçirilen işaretçileri üzerinden geri.
+Komut satırı ayrıştırmayı çağırır ve geçirilen işaretçilerle bağımsız değişkenleri `main()` geri kopyalar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -52,31 +55,31 @@ int __wgetmainargs (
 #### <a name="parameters"></a>Parametreler
 
 `_Argc`<br/>
-İçinde izleyen bağımsız değişkenlerin sayısı içeren bir tamsayı `argv`. `argc` parametresi her zaman 1'e eşit veya daha büyüktür.
+İçinde `argv`izleyen bağımsız değişkenlerin sayısını içeren bir tamsayı. `argc` parametresi her zaman 1'e eşit veya daha büyüktür.
 
 `_Argv`<br/>
-Programın kullanıcısı tarafından girilen komut satırı bağımsız değişkenlerini temsil eden boş sonlandırılmış bir dize dizisi. Kural olarak, `argv[0]` ile programın çağrıldığı komuttur, argv [1] ilk komut satırı bağımsız değişkeni ve benzeri argv [argc] tarihine kadar her zaman **NULL**. İlk komut satırı bağımsız değişkeni her zaman olduğu `argv[1]` ve sonuncu `argv[argc - 1]`.
+Programın kullanıcısı tarafından girilen komut satırı bağımsız değişkenlerini temsil eden boş sonlandırılmış bir dize dizisi. Kural gereği, `argv[0]` programın çağrıldığı komuttur, argv [1] ilk komut satırı bağımsız değişkenidir ve bu nedenle, argv [argc] tarihine kadar her zaman **null**olur. İlk komut satırı bağımsız değişkeni her zaman `argv[1]` ve en son `argv[argc - 1]`bir ' dır.
 
 `_Env`<br/>
-Kullanıcının ortamında ayarlanmış değişkenleri temsil eden bir dize dizisi. Bu dizi tarafından sonlandırılır bir **NULL** giriş.
+Kullanıcının ortamında ayarlanmış değişkenleri temsil eden bir dize dizisi. Bu dizi, **null** bir girdi tarafından sona erdirildi.
 
 `_DoWildCard`<br/>
-Bir tamsayı, komut satırı bağımsız değişkenleri joker karakter kümesi 1 genişletir veya 0 olarak ayarlanırsa, hiçbir şey yapmaz.
+1 olarak ayarlandıysa komut satırı bağımsız değişkenlerinde joker karakterleri genişler veya 0 olarak ayarlanırsa hiçbir şey yapmaz.
 
 `_StartInfo`<br/>
-CRT DLL'ye geçirilecek diğer bilgiler.
+CRT DLL 'ye geçirilecek diğer bilgiler.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-başarılıysa 0; işlem başarısız olursa negatif değer.
+başarılı olursa 0; başarısız olursa negatif bir değer.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kullanım `__getmainargs` olmayan geniş karakter platformlarda ve `__wgetmainargs` platformlarında geniş karakter (Unicode).
+Geniş `__getmainargs` olmayan karakter platformlarında ve `__wgetmainargs` geniş karakter (Unicode) platformlarında kullanın.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|__getmainargs|internal.h|
-|__wgetmainargs|internal.h|
+|__getmainargs|iç. h|
+|__wgetmainargs|iç. h|

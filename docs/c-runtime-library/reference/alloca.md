@@ -1,9 +1,9 @@
 ---
 title: _alloca
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _alloca
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -14,7 +14,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _alloca
 - alloca
@@ -23,16 +26,16 @@ helpviewer_keywords:
 - alloca function
 - _alloca function
 ms.assetid: 74488eb1-b71f-4515-88e1-cdd03b6f8225
-ms.openlocfilehash: 7c083e791301d3224709a5fc6c711ceaa6397d38
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2212f9e40c78932b63eebfc221ad2f07fa3d3f9d
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62341606"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70943706"
 ---
-# <a name="alloca"></a>_alloca
+# <a name="_alloca"></a>_alloca
 
-Yığında bellek ayırır. Daha güvenli bir sürümü kullanılabilir olmadığından, bu işlev kullanım dışı; bkz: [_malloca](malloca.md).
+Yığında bellek ayırır. Daha güvenli bir sürüm kullanılabilir olduğundan bu işlev kullanım dışıdır; bkz. [_malloca](malloca.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -44,39 +47,39 @@ void *_alloca(
 
 ### <a name="parameters"></a>Parametreler
 
-*Boyutu*<br/>
+*boyutla*<br/>
 Yığından ayrılacak bayt sayısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_Alloca** rutin döndürür bir **void** nesnenin herhangi bir türde bir depolama için uygun şekilde hizalanması garanti ayrılan alanı işaretçisi. Varsa *boyutu* 0 ' dır **_alloca** sıfır uzunluklu öğeyi ayırır ve bu öğeye geçerli bir işaretçi döndürür.
+**_Alloca** yordamı, ayrılan alana **geçersiz** bir işaretçi döndürür. Bu, herhangi bir tür nesnenin depolanması için uygun şekilde hizalı olarak garanti edilir. *Boyut* 0 ise, **_alloca** sıfır uzunluklu bir öğe ayırır ve bu öğeye geçerli bir işaretçi döndürür.
 
-Alanı ayırdığınızda, bir yığın taşması özel durumu oluşturulur. Yığın taşması özel durumu bir C++ özel durum değil; Bu, yapılandırılmış bir özel durumdur. C++ özel durum işleme kullanmak yerine, kullanmanız gerekir [yapılandırılmış özel durum işleme](../../cpp/structured-exception-handling-c-cpp.md) (SEH).
+Boşluk ayrılabileceği takdirde bir yığın taşması özel durumu oluşturulur. Yığın taşması özel durumu bir C++ özel durum değil; Bu, yapılandırılmış bir özel durumdur. Özel durum işlemenin C++ kullanılması yerine, [yapılandırılmış özel durum işleme](../../cpp/structured-exception-handling-c-cpp.md) (SEH) kullanmanız gerekir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_alloca** ayırır *boyutu* program yığınına gelen baytlar. (Ayırma yalnızca kapsam dışına değil geçtiğinde) çağıran işlevin çıktığında ayrılan alanı otomatik olarak serbest bırakılır. Bu nedenle, tarafından döndürülen işaretçi değer geçmeyin **_alloca** bağımsız değişkeni olarak [ücretsiz](free.md).
+**_alloca** , program yığınından *Boyut* baytlarını ayırır. Ayrılan alan, çağırma işlevi çıktığında (ayırma yalnızca kapsam dışına çıktığında değil) otomatik olarak serbest bırakılır. Bu nedenle, **_alloca** tarafından döndürülen işaretçi değerini [boş](free.md)bir bağımsız değişken olarak geçirmeyin.
 
-Açıkça çağırmak için kısıtlamalar **_alloca** bir özel durum işleyicisi (EH). Kendi bellek çerçevede x86 sınıfı işlemciler üzerinde çalışan EH düzenleri çalışır: Kapsayan işlevin yığın işaretçisi geçerli konumuna bağlı olmayan bellek alanı bunlar görevlerini gerçekleştirin. En yaygın olarak görülen uygulamalar, Windows NT yapılandırılmış özel durum işleme (SEH) ve C++ catch yan tümcesi ifadeleri içerir. Bu nedenle, açıkça çağırma **_alloca** herhangi birinde çağıran EH yordam için dönüş sırasında program hata aşağıdaki senaryolarda sonuçları:
+Özel durum işleyicisinde (EH) **_alloca 'yı** açıkça çağırmaya yönelik kısıtlamalar vardır. X86 sınıfı işlemcilerde çalışan EH yordamları kendi bellek çerçevesinde çalışır: Görevleri kapsayan işlevin yığın işaretçisinin geçerli konumuna bağlı olmayan bellek alanında gerçekleştirir. En yaygın uygulamalar Windows NT yapılandırılmış özel durum işleme (SEH) ve C++ catch yan tümcesi ifadelerini içerir. Bu nedenle, aşağıdaki senaryolardan herhangi birinde açıkça **_alloca 'yı** çağırmak, çağıran Eh yordamına geri dönme sırasında program hatasına neden olur:
 
-- Windows NT SEH özel durum filtre ifadesi: `__except ( _alloca() )`
+- Windows NT SEH özel durum filtresi ifadesi:`__except ( _alloca() )`
 
-- Windows NT SEH son özel durum işleyicisi: `__finally { _alloca() }`
+- Windows NT SEH son özel durum işleyicisi:`__finally { _alloca() }`
 
-- C++ EH catch yan tümcesinin ifadesi
+- C++EH catch yan tümcesi ifadesi
 
-Ancak, **_alloca** doğrudan EH yordam içinde ya da çağrılan bir uygulama tarafından sağlanan bir geri çağırma daha önce listelenen EH senaryoları biri tarafından çağrılabilir.
+Ancak, **_alloca** doğrudan bir Eh yordamının içinden veya daha önce listelenen eh senaryolarından biri tarafından çağrılan uygulama tarafından sağlanan geri aramadan çağrılabilir.
 
 > [!IMPORTANT]
-> Windows XP'de, **_alloca** çağrılır bir try/catch bloğu içinde çağırmalısınız [_resetstkoflw](resetstkoflw.md) catch bloğu içinde.
+> Windows XP 'de, **_alloca** bir try/catch bloğu içinde çağrılırsa, catch bloğunda [_resetstkoflw](resetstkoflw.md) çağrısı yapmanız gerekir.
 
-Yukarıdaki sınırlamalara kullanırken, ek olarak[/CLR (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md) seçeneği **_alloca** kullanılamaz **__except** engeller. Daha fazla bilgi için [/CLR kısıtlamalar](../../build/reference/clr-restrictions.md).
+Yukarıdaki kısıtlamalara ek olarak,[/clr (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md) seçeneği kullanılırken, **_alloca** **__except** blokları içinde kullanılamaz. Daha fazla bilgi için bkz. [/clr kısıtlamaları](../../build/reference/clr-restrictions.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_alloca**|\<malloc.h >|
+|**_alloca**|\<malloc. h >|
 
 ## <a name="example"></a>Örnek
 

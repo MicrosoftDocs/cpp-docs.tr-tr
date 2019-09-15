@@ -1,9 +1,9 @@
 ---
 title: read
 ms.date: 11/04/2016
-apiname:
+api_name:
 - read
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -14,19 +14,22 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - read
 helpviewer_keywords:
 - read function
 ms.assetid: 9e0eead4-d38c-4f65-87f5-f6c12da40ead
-ms.openlocfilehash: c32b300107a699f1a91f4652a69722258790e224
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 290274fa2385db13025cabf5948a3692f372505f
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62155957"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70950469"
 ---
 # <a name="read"></a>read
 
-Bu POSIX işlevi kullanım dışı bırakılmıştır. ISO kullanın C++ uyumluluğunu [_read](read.md) yerine.
+Bu POSIX işlevi kullanım dışıdır. Bunun yerine ISO C++ uyumlu [_read](read.md) kullanın.

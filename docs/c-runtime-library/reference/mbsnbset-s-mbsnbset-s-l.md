@@ -1,10 +1,10 @@
 ---
 title: _mbsnbset_s, _mbsnbset_s_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _mbsnbset_s_l
 - _mbsnbset_s
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-multibyte-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - mbsnbset_s
 - _mbsnbset_s_l
@@ -32,19 +35,19 @@ helpviewer_keywords:
 - _tcsnset_s function
 - tcsnset_s_l function
 ms.assetid: 811f92c9-cc31-4bbd-8017-2d1bfc6fb96f
-ms.openlocfilehash: 5d021f147ba407f5b0b7316afc7cfd79fe300997
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b54a05d163430aa01f4c12e841a11d1faf5a6c4b
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62331252"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70952114"
 ---
-# <a name="mbsnbsets-mbsnbsetsl"></a>_mbsnbset_s, _mbsnbset_s_l
+# <a name="_mbsnbset_s-_mbsnbset_s_l"></a>_mbsnbset_s, _mbsnbset_s_l
 
-İlk Ayarlar **n** bayt sayısı için belirtilen bir karakterin çok baytlı karakterli bir dizedir. Bu sürümleri [_mbsnbset, _mbsnbset_l](mbsnbset-mbsnbset-l.md) açıklandığı gibi güvenlik geliştirmeleri vardır [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
+Çok baytlı karakter dizesinin ilk **n** baytını belirtilen karaktere ayarlar. Bu [_mbsnbset _mbsnbset_l](mbsnbset-mbsnbset-l.md) SÜRÜMLERINDE, [CRT 'daki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklandığı gibi güvenlik geliştirmeleri vardır.
 
 > [!IMPORTANT]
-> Bu API, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -79,38 +82,38 @@ errno_t _mbsnbset_s_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*str*<br/>
+*üstbilgisine*<br/>
 Değiştirilecek dize.
 
-*Boyutu*<br/>
+*boyutla*<br/>
 Dize arabelleğinin boyutu.
 
 *c*<br/>
 Tek baytlı veya çok baytlı karakter ayarı.
 
-*Sayısı*<br/>
+*biriktirme*<br/>
 Ayarlanacak bayt sayısı.
 
-*Yerel ayar*<br/>
+*ayarlar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa sıfır; Aksi takdirde bir hata kodu.
+Başarılıysa sıfır; Aksi takdirde, bir hata kodu.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Mbsnbset_s** ve **_mbsnbset_s_l** işlevler kümesi, en çok ilk *sayısı* bayt *str* için *c*. Varsa *sayısı* uzunluğundan büyükse *str*, uzunluğunu *str* yerine kullanılan *sayısı*. Varsa *c* çok baytlı bir karakterse ve tarafından belirtilen son bayrak tamamen içine ayarlanamaz *sayısı*, son bayt bir boş karakterle doldurulur. **_mbsnbset_s** ve **_mbsnbset_s_l** bir sonlandırma yerleştirmeyin sonunda null *str*.
+**_Mbsnbset_s** ve **_mbsnbset_s_l** işlevleri, en çok, *Str* 'nin ilk *sayı* baytlarını *c*'ye ayarlar. *Count* değeri *Str*uzunluğundan büyükse, *Str* uzunluğu *sayı*yerine kullanılır. *C* çok baytlı bir karakter ise ve tamamen *sayı*ile belirtilen son bayta ayarlanamaz, son bayt boş bir karakterle doldurulur. **_mbsnbset_s** ve **_mbsnbset_s_l** , *Str*sonuna bir Sonlandırıcı null değeri yerleştirmiyor.
 
-**_mbsnbset_s** ve **_mbsnbset_s_l** benzer **_mbsnset**ayarladıkları dışında *sayısı* bayt yerine *sayısı* karakter *c*.
+**_mbsnbset_s** ve **_mbsnbset_s_l** , *c* *'nin karakter karakterlerini değil,* *Count* bytes ayarlaması dışında, **_mbsnset**'e benzer.
 
-Varsa *str* olduğu **NULL** veya *sayısı* sıfırsa bu işlev açıklandığı gibi geçersiz parametre özel durum oluşturur [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse **errno** ayarlanır **EINVAL** ve işlev döndürür **NULL**. Ayrıca, varsa *c* geçerli çok baytlı bir karakter değil **errno** ayarlanır **EINVAL** ve boşluk yerine kullanılır.
+*Str* **null** veya *sayı* sıfırsa, bu işlev [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklanan şekilde geçersiz bir parametre özel durumu oluşturur. Yürütmenin devam etmesine izin veriliyorsa, **errno** **EINVAL** olarak ayarlanır ve işlev **null**değerini döndürür. Ayrıca, *c* geçerli bir çok baytlı karakter değilse, **errno** **EINVAL** olarak ayarlanır ve bunun yerine bir boşluk kullanılır.
 
-Çıkış değeri ayarından etkilenir **LC_CTYPE** yerel ayarının kategori ayarına; bkz: [setlocale, _wsetlocale](setlocale-wsetlocale.md) daha fazla bilgi için. **_Mbsnbset_s** sürümü bu işlevin, bu yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır **_mbsnbset_s_l** sürüm, bunun yerine bir yerel ayar parametresini kullanması hariç, aynıdır o geçirildi. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
+Çıkış değeri yerel ayarın **LC_CTYPE** kategori ayarı ayarından etkilenir; daha fazla bilgi için bkz. [setlocale, _wsetlocale](setlocale-wsetlocale.md) . Bu işlevin **_mbsnbset_s** sürümü, yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır; **_mbsnbset_s_l** sürümü, bunun yerine geçirilen yerel ayar parametresini kullanması dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
-C++'da, bu işlevlerin kullanılması şablon aşırı yüklemeleriyle basitleştirilmiştir; aşırı yüklemeler arabellek uzunluğunu otomatik olarak tanım Çıkarsama ve böylece bir boyut bağımsız değişkeni belirtme gereksinimi ortadan kullanabilirsiniz. Daha fazla bilgi için [güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
+' C++De, bu işlevlerin kullanılması şablon aşırı yüklemeleri tarafından basitleştirilmiştir; aşırı yüklemeler arabellek uzunluğunu otomatik olarak çıkarabilir ve böylece bir boyut bağımsız değişkeni belirtme gereksinimini ortadan kaldırabilir. Daha fazla bilgi için bkz. [Güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 
-Bu işlevlerin hata ayıklama sürümleri, ilk arabellek 0xFD ile doldurur. Bu davranışı devre dışı bırakmak için [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md).
+Bu işlevlerin hata ayıklama sürümleri ilk olarak arabelleği 0xFD ile doldurur. Bu davranışı devre dışı bırakmak için [_Crtsetdebugfillthreshold](crtsetdebugfillthreshold.md)kullanın.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -123,8 +126,8 @@ Bu işlevlerin hata ayıklama sürümleri, ilk arabellek 0xFD ile doldurur. Bu d
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_mbsnbset_s**|\<Mbstring.h >|
-|**_mbsnbset_s_l**|\<Mbstring.h >|
+|**_mbsnbset_s**|\<mbstring. h >|
+|**_mbsnbset_s_l**|\<mbstring. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -154,7 +157,7 @@ After:  **** is a test
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dize düzenlemesi](../../c-runtime-library/string-manipulation-crt.md)<br/>
+[Dize düzenleme](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [_mbsnbcat, _mbsnbcat_l](mbsnbcat-mbsnbcat-l.md)<br/>
 [_strnset, _strnset_l, _wcsnset, _wcsnset_l, _mbsnset, _mbsnset_l](strnset-strnset-l-wcsnset-wcsnset-l-mbsnset-mbsnset-l.md)<br/>
 [_strset, _strset_l, _wcsset, _wcsset_l, _mbsset, _mbsset_l](strset-strset-l-wcsset-wcsset-l-mbsset-mbsset-l.md)<br/>

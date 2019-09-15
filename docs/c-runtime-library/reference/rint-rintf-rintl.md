@@ -1,11 +1,11 @@
 ---
 title: rint, rintf, rintl
 ms.date: 04/05/2018
-apiname:
+api_name:
 - rintf
 - rintl
 - rint
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - rintf
 - rintl
@@ -27,16 +30,16 @@ helpviewer_keywords:
 - rint function
 - rintl function
 ms.assetid: 312ae3e6-278c-459a-9393-11b8f87d9184
-ms.openlocfilehash: 9e0e3875b7484735b5439c6c0e0a7252940d4552
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 57c4dc60d6b4d29e5c46fa6f1d03d0710ed44309
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62357596"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70949263"
 ---
 # <a name="rint-rintf-rintl"></a>rint, rintf, rintl
 
-Bir kayan nokta değeri kayan nokta biçiminde en yakın tamsayıya yuvarlar.
+Kayan noktalı bir değeri kayan nokta biçimindeki en yakın tamsayıya yuvarlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -58,22 +61,22 @@ Yuvarlanacak kayan nokta değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**Azdır** İşlevler, en yakın tamsayıya temsil eden bir kayan nokta değeri döndürür *x*. Yarım değerler, kayan nokta yuvarlama modu ile aynı geçerli ayarına göre yuvarlanır **nearbyint** işlevleri. Farklı **nearbyint** İşlevler, **azdır** işlevleri yükseltmek **FE_INEXACT** bağımsız değişken değeri sonuç farklıysa, kayan nokta özel durum. Döndürülen hata yok.
+**Rint** işlevleri, *x*için en yakın tamsayıyı temsil eden bir kayan nokta değeri döndürür. Yarı çift değerler kayan nokta yuvarlama modunun geçerli ayarına göre yuvarlanır ve bu da, bir değer olarak, daha önce, bir **tamsayı** işlevleriyle aynıdır. Değer, bağımsız değişkenden değere farklıysa, **FE_INEXACT** kayan **nokta işlevlerinin aksine** **rint** işlevleri, Hata döndürme yok.
 
-|Giriş|SEH özel durumu|**_matherr** özel durumu|
+|Giriş|SEH özel durumu|**_matherr** Duruma|
 |-----------|-------------------|--------------------------|
 |± ∞, QNAN, IND|yok|yok|
 |Denormals|EXCEPTION_FLT_UNDERFLOW|yok|
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, aşırı yüklemesini çağırabilirsiniz **azdır** alan ve getiren **float** ve **uzun** **çift** değerleri. C programında **azdır** her zaman alan ve döndüren bir **çift**.
+Aşırı C++ yüklemeye izin verdiğinden, **float** ve **Long** **Double** değerleri alıp döndüren **rint** 'nin aşırı yüklerini çağırabilirsiniz. C programında, **rint** her zaman bir **Double**alır ve döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İşlev|C üstbilgisi|C++ üst bilgisi|
+|İşlev|C üstbilgisi|C++üst bilgi|
 |--------------|--------------|------------------|
-|**Yazdır**, **rintf**, **rintl**|\<Math.h >|\<cmath >|
+|**rint**, **rintf**, **rintl**|\<Math. h >|\<cmath >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

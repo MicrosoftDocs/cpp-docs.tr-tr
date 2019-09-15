@@ -1,10 +1,10 @@
 ---
 title: memmove_s, wmemmove_s
 ms.date: 11/04/2016
-apiname:
+api_name:
 - wmemmove_s
 - memmove_s
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - ucrtbase.dll
 - api-ms-win-crt-string-l1-1-0.dll
 - ntoskrnl.exe
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - wmemmove_s
 - memmove_s
@@ -25,16 +28,16 @@ helpviewer_keywords:
 - wmemmove_s function
 - memmove_s function
 ms.assetid: a17619e4-1307-4bb0-98c6-77f8c68dab2d
-ms.openlocfilehash: 28d879a205790d1f132caca1022d0740e317c342
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bc932bb0b13289349543d042e02ead884921d00a
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62285160"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70951789"
 ---
-# <a name="memmoves-wmemmoves"></a>memmove_s, wmemmove_s
+# <a name="memmove_s-wmemmove_s"></a>memmove_s, wmemmove_s
 
-Bir arabellek diğerine taşır. Bunlar sürümleridir [memmove, wmemmove](memmove-wmemmove.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
+Bir arabelleği diğerine gider. Bu sürümler, [CRT 'Daki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklandığı gibi güvenlik geliştirmeleriyle [memmove](memmove-wmemmove.md) 'in sürümleridir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -55,42 +58,42 @@ errno_t wmemmove_s(
 
 ### <a name="parameters"></a>Parametreler
 
-*Hedef*<br/>
+*HD*<br/>
 Hedef nesne.
 
 *numberOfElements*<br/>
 Hedef arabelleğin boyutu.
 
-*src*<br/>
+*YN*<br/>
 Kaynak nesne.
 
-*Sayısı*<br/>
-Bayt sayısı (**memmove_s**) veya karakterleri (**wmemmove_s**) kopyalamak için.
+*biriktirme*<br/>
+Kopyalanacak bayt sayısı (**memmove_s**) veya karakterler (**wmemmove_s**).
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa sıfır; bir hata kodu
+Başarılıysa sıfır; hatada hata kodu
 
 ### <a name="error-conditions"></a>Hata koşulları
 
-|*Hedef*|*numberOfElements*|*src*|Dönüş değeri|İçeriğini *dest*|
+|*HD*|*numberOfElements*|*YN*|Dönüş değeri|*Hedef* içeriği|
 |------------|------------------------|-----------|------------------|------------------------|
-|**NULL**|Tüm|Tüm|**EINVAL**|değiştirilmedi|
-|Tüm|Tüm|**NULL**|**EINVAL**|değiştirilmedi|
-|Tüm|< *Sayısı*|Tüm|**ERANGE**|değiştirilmedi|
+|**DEĞER**|Kaydedilmemiş|Kaydedilmemiş|**EINVAL**|değiştirilmedi|
+|Kaydedilmemiş|Kaydedilmemiş|**DEĞER**|**EINVAL**|değiştirilmedi|
+|Kaydedilmemiş|< *biriktirme*|Kaydedilmemiş|**ERANGE**|değiştirilmedi|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kopya *sayısı* karakterlerinden bayt *src* için *dest*. Bazı kaynak alanını ve hedef bölgelerini çakışırsa, **memmove_s** üzerine önce çakışan bölgede özgün kaynak bayt kopyalanır sağlar.
+*Src* 'den *hedefe*kadar olan karakter *sayısını* kopyalar. Kaynak alanın ve hedefin bazı bölgeleri çakışırsa **memmove_s** , çakışan bölgedeki özgün kaynak baytlarının üzerine yazılmadan önce kopyalanmasını sağlar.
 
-Varsa *dest* veya *src* null bir işaretçiyse veya hedef dize çok küçükse, bu işlevler geçersiz parametre işleyicisini de açıklandığı gibi çağırır [Parameter Validation](../../c-runtime-library/parameter-validation.md) . Yürütmenin devam etmesine izin verilirse, bu işlevler döndürür **EINVAL** ayarlayıp **errno** için **EINVAL**.
+Hedef *veya* *kaynak* boş bir işaretçisiyse veya hedef dize çok küçükse, bu işlevler [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md) açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **EINVAL** döndürür ve **errno** , **EINVAL**olarak ayarlanır.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**memmove_s**|\<String.h >|
-|**wmemmove_s**|\<wchar.h >|
+|**memmove_s**|\<String. h >|
+|**wmemmove_s**|\<wchar. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

@@ -1,11 +1,11 @@
 ---
 title: clog10, clog10f, clog10l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - clog10
 - clog10f
 - clog10l
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - clog10
 - clog10f
@@ -30,16 +33,16 @@ helpviewer_keywords:
 - clog10f function
 - clog10l function
 ms.assetid: 2ddae00d-ef93-4441-add3-f4d58358401b
-ms.openlocfilehash: 195f4be80f0320e83cc9455a598185ce281bbf59
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a840494caf3c34f09d8c90970988e847be712cb4
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62335463"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70939110"
 ---
 # <a name="clog10-clog10f-clog10l"></a>clog10, clog10f, clog10l
 
-Karmaşık bir sayının 10 tabanındaki logaritmasını alır.
+Karmaşık bir sayının 10 tabanında logaritmasını alır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -65,21 +68,21 @@ Olası dönüş değerleri şunlardır:
 
 |z parametresi|Dönüş değeri|
 |-----------------|------------------|
-|Pozitif|Z 10 tabanındaki logaritmasını|
-|Sıfır|- ∞|
+|Pozitif|Z 'nin 10 tabanında logaritmasını|
+|Sıfırlama|- ∞|
 |Negatif|NaN|
 |NaN|NaN|
 |+ ∞|+ ∞|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Çünkü C++ aşırı yüklemesi, sağlayan yüklerini çağırabilirsiniz **clog10** alan ve getiren **_Fcomplex** ve **_Lcomplex** değerleri. C programında **clog10** her zaman alan ve döndüren bir **_Dcomplex** değeri.
+Aşırı C++ yüklemeye izin verdiğinden, **_Fcomplex** ve **_lcomplex** değerlerini alıp döndüren **clog10** aşırı yüklerini çağırabilirsiniz. C programında, **clog10** her zaman bir **_dcomplex** değeri alır ve döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|C üstbilgisi|C++ üst bilgisi|
+|Yordam|C üstbilgisi|C++üst bilgi|
 |-------------|--------------|------------------|
-|**clog10**, **clog10f**, **clogl**|\<Complex.h >|\<ccomplex >|
+|**clog10**, **clog10f**, **clogl**|\<karmaşık. h >|\<ccomplex >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

@@ -1,10 +1,10 @@
 ---
 title: fopen, _wfopen
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _wfopen
 - fopen
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - fopen
 - _wfopen
@@ -32,12 +35,12 @@ helpviewer_keywords:
 - files [C++], opening
 - fopen function
 ms.assetid: e868993f-738c-4920-b5e4-d8f2f41f933d
-ms.openlocfilehash: b57ed2b26428c48efbe544c2b4802e347b915c29
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 0e50854cf35dd58f7f59f67ed861247b51fd4541
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69499949"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70957047"
 ---
 # <a name="fopen-_wfopen"></a>fopen, _wfopen
 

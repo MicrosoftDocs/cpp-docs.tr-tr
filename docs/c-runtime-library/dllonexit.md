@@ -1,9 +1,9 @@
 ---
 title: __dllonexit
 ms.date: 11/04/2016
-apiname:
+api_name:
 - __dllonexit
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr110.dll
 - msvcr110_clr0400.dll
@@ -12,22 +12,25 @@ apilocation:
 - msvcr120.dll
 - msvcr90.dll
 - msvcr120_clr0400.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - __dllonexit
 helpviewer_keywords:
 - __dllonexit
 ms.assetid: 708f2ceb-f95c-46b0-a58d-d68b3fa36f12
-ms.openlocfilehash: a6c077ac010c0b5d94ba21ba823441ea6ac932b9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 61d63c751dd755bf8a7680c674681e114945814b
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62290319"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70940442"
 ---
-# <a name="dllonexit"></a>__dllonexit
+# <a name="__dllonexit"></a>__dllonexit
 
-Çıkış zaman çağrılacak bir yordam kaydeder.
+Çıkış zamanında çağrılması için bir yordam kaydeder.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -40,32 +43,32 @@ _onexit_t __dllonexit(   _onexit_t func,
 
 #### <a name="parameters"></a>Parametreler
 
-*FUNC*<br/>
-Çıkıştan sonra yürütülecek bir işlevi işaretçisi.
+*func*<br/>
+Çıkış sonrasında yürütülecek bir işlev işaretçisi.
 
-*pbegin*<br/>
-Başlangıç noktalarına yürütmek için işlevlerin listesi ayırma bir değişken işaretçisi.
+*pbegın*<br/>
+Ayrılmaya yürütülecek işlevlerin listesinin başlangıcını işaret eden bir değişkene yönelik işaretçi.
 
-*bekleme*<br/>
-İşaretçi değişkenine bir listesinin sonuna işaret yürütmek için işlevleri ayırın.
+*bekleyen*<br/>
+Ayrılmaya yürütülecek işlevlerin listesinin sonuna işaret eden değişken işaretçisi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, kullanıcının işlevi işaretçisi. Aksi takdirde, bir **NULL** işaretçi.
+Başarılı olursa, kullanıcının işlevine yönelik bir işaretçi. Aksi takdirde, bir **null** işaretçi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-`__dllonexit` İşlevi alınmak üzere [_onexit](../c-runtime-library/reference/onexit-onexit-m.md) dışında bu işlev tarafından kullanılan genel değişkenler için bu yordamı görünür olmayan işlev. Global değişkenler yerine, bu işlev kullanır `pbegin` ve `pend` parametreleri.
+İşlev, bu işlev tarafından kullanılan genel değişkenlerin bu yordama görünür olmaması dışında, [_onexit](../c-runtime-library/reference/onexit-onexit-m.md) işlevine benzer. `__dllonexit` Genel değişkenler yerine, bu işlev `pbegin` ve `pend` parametrelerini kullanır.
 
-`_onexit` Ve `atexit` DLL'de işlevleri MSVCRT ile bağlı. LIB, kendi atexit/_onexit listesi sürdürmeniz gerekir. Bu yordam böyle DLL tarafından çağrılan çalışan kalır.
+Msvcrt ile `atexit` bağlantılı bir dll içindeki veişlevleri.`_onexit` LıB kendi atexit/_onexit listesini korumalıdır. Bu yordam, bu tür dll 'Ler tarafından çağrılan çalışandır.
 
-`_PVFV` Türü olarak tanımlanmış olan `typedef void (__cdecl *_PVFV)(void)`.
+`_PVFV` Türü olarak`typedef void (__cdecl *_PVFV)(void)`tanımlanır.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli bir dosya|
+|Yordam|Gerekli dosya|
 |-------------|-------------------|
-|__dllonexit|OnExit.c|
+|__dllonexit|OnExit. c|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

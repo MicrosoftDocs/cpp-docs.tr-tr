@@ -1,9 +1,9 @@
 ---
 title: _callnewh
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _callnewh
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,18 +15,21 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-heap-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _callnewh
 helpviewer_keywords:
 - _callnewh
 ms.assetid: 4dcb73e9-6384-4d12-a973-a8807d4de7a8
-ms.openlocfilehash: 98526f6c8c40b71104345563db71ef098b6cfb8d
-ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
+ms.openlocfilehash: 3e14450538807b164897c335f7e37d82d8562314
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70739816"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70939389"
 ---
 # <a name="_callnewh"></a>_callnewh
 

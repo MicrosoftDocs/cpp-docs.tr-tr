@@ -1,9 +1,9 @@
 ---
 title: _aligned_offset_malloc_dbg
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _aligned_offset_malloc_dbg
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -14,7 +14,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _aligned_offset_malloc_dbg
 - aligned_offset_malloc_dbg
@@ -22,16 +25,16 @@ helpviewer_keywords:
 - _aligned_offset_malloc_dbg function
 - aligned_offset_malloc_dbg function
 ms.assetid: 6c242307-c59e-4d63-aae5-d8cbec8e021c
-ms.openlocfilehash: 96fe9e7fda0d0cdfdbfa5462e4f601e3649e2233
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4fbacb170fd1ae1ce92de4a11ea85ff42b3942a0
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62348880"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70939780"
 ---
-# <a name="alignedoffsetmallocdbg"></a>_aligned_offset_malloc_dbg
+# <a name="_aligned_offset_malloc_dbg"></a>_aligned_offset_malloc_dbg
 
-Belirtilen hizalama sınırındaki (yalnızca hata ayıklama sürümü) bellek ayırır.
+Belirtilen hizalama sınırında bellek ayırır (yalnızca hata ayıklama sürümü).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -47,52 +50,52 @@ void * _aligned_offset_malloc_dbg(
 
 ### <a name="parameters"></a>Parametreler
 
-*Boyutu*<br/>
+*boyutla*<br/>
 İstenen bellek ayırmasının boyutu.
 
-*Hizalama*<br/>
-Hizalama değeri 2'in tam sayı üssü olması gerekir.
+*hizalar*<br/>
+2 ' nin tam sayı üssü olması gereken hizalama değeri.
 
-*uzaklık*<br/>
-Hizalama zorlamak için bellek ayırma olan uzaklık.
+*konumu*<br/>
+Hizalamayı zorlamak için bellek ayırmaya olan fark.
 
-*Dosya adı*<br/>
-Ayırma işlemi istenen kaynak dosyasının adını işaretçisi veya **NULL**.
+*kısaltın*<br/>
+Ayırma işlemini veya **null değerini**isteyen kaynak dosyanın adı işaretçisi.
 
-*LineNumber*<br/>
-Satır numarası kaynak dosyada ayırma işlemi burada istendi veya **NULL**.
+*onayın*<br/>
+Ayırma işleminin istendiği veya **null**olduğu kaynak dosyadaki satır numarası.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Ayrılan bellek bloğuna işaretçi veya **NULL** işlemi başarısız.
+İşlem başarısız olursa, ayrılan veya **null** olan bellek bloğunun işaretçisi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_aligned_offset_malloc_dbg** bir hata ayıklama sürümü [_aligned_offset_malloc](aligned-offset-malloc.md) işlevi. Zaman [_DEBUG](../../c-runtime-library/debug.md) tanımlı değil, her çağrı **_aligned_offset_malloc_dbg** çağrısı azaltılır **_aligned_offset_malloc**. Her ikisi de **_aligned_offset_malloc** ve **_aligned_offset_malloc_dbg** taban yığının bellek bloğu ayrılamadı ancak **_aligned_offset_malloc_dbg** birkaç farklı hata ayıklama özellikleri: arabellek bloğu için sızıntılara, test etmek için kullanıcı bölümünü her iki tarafındaki ve *filename*/*linenumber* kökenini belirlemek için bilgi ayırma isteklerini. Bir blok türü parametresiyle belirli ayırma türleri izleme hizalanmış ayırma desteklenen hata ayıklama özelliği değil. Hizalanmış ayırma _NORMAL_BLOCK bloğu türü olarak görünür.
+**_aligned_offset_malloc_dbg** , [_aligned_offset_malloc](aligned-offset-malloc.md) işlevinin bir hata ayıklama sürümüdür. [_Hata ayıklama](../../c-runtime-library/debug.md) tanımlanmadığında, **_aligned_offset_malloc_dbg** öğesine yapılan her çağrı, **_aligned_offset_malloc**çağrısına düşürülür. Hem **_aligned_offset_malloc** hem de **_aligned_offset_malloc_dbg** temel yığında bir bellek bloğu ayırır, ancak **_aligned_offset_malloc_dbg** çeşitli hata ayıklama özellikleri sunar: blok kullanıcı bölümünün her iki tarafında da sızıntı için test edin ve ayırma isteklerinin kaynağını öğrenmek için *dosya adı*/*linumarası* bilgilerini yapın. Bir blok türü parametresiyle belirli ayırma türlerini izlemek, hizalanmış ayırmalar için desteklenen bir hata ayıklama özelliği değildir. Hizalanmış ayırmalar, _NORMAL_BLOCK blok türü olarak görünür.
 
-**_aligned_offset_malloc_dbg** ile biraz daha fazla alan istenen bellek bloğu ayırır *boyutu*. Ek alan, hata ayıklama bellek bloklarını bağlantı ve uygulama ile hata ayıklama üstbilgi bilgileri sağlayın ve arabellek üzerine yazmak için hata ayıklama yığını Yöneticisi tarafından kullanılır. Blok atandığında, blok kullanıcı bölümünü 0xCD değeri ile doldurulur ve 0xFD ile doldurulmuş her üzerine yaz arabellek.
+**_aligned_offset_malloc_dbg** , bellek bloğunu istenen *boyuttan*biraz daha fazla alanla ayırır. Hata ayıklama bellek bloklarını bağlamak ve uygulamanın hata ayıklama üstbilgi bilgilerini ve üzerine yazma arabelleğini sağlamak için ek alan, hata ayıklama yığın Yöneticisi tarafından kullanılır. Blok ayrıldığında, bloğun Kullanıcı bölümü, 0xCD değeri ile doldurulur ve üzerine yazma arabelleklerinin her biri 0xFD ile doldurulur.
 
-**_aligned_offset_malloc_dbg** hizalama iç içe geçmiş bir öğede; gereken olduğu durumlarda kullanışlıdır örneğin hizalama yuvalanan bir sınıf gerekirse.
+**_aligned_offset_malloc_dbg** , iç içe yerleştirilmiş bir öğede hizalamanın gerekli olduğu durumlarda faydalıdır. Örneğin, iç içe yerleştirilmiş bir sınıfta hizalama gerekliyse.
 
-**_aligned_offset_malloc_dbg** dayanır **malloc**; daha fazla bilgi için bkz: [malloc](malloc.md).
+**_aligned_offset_malloc_dbg** , **malloc**'e dayalıdır; daha fazla bilgi için bkz. [malloc](malloc.md).
 
-Bu işlev ayarlar **errno** için **ENOMEM** bellek ayırma başarısız olursa veya istenen boyutu büyüktür **_HEAP_MAXREQ**. Hakkında daha fazla bilgi için **errno**, bkz: [errno _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md). Ayrıca, **_aligned_offset_malloc** kendi parametrelerini doğrular. Varsa *hizalama* 2'in kuvveti değil veya *uzaklığı* büyüktür veya eşittir *boyutu* ve sıfır değilse, bu işlev geçersiz parametre işleyicisi içindeaçıklananşekildeçağırır[ Parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse, bu işlevi döndürür **NULL** ve ayarlar **errno** için **EINVAL**.
+Bu işlev, bellek ayırma başarısız olursa veya istenen boyut **_Heap_maxreq**değerinden büyükse **errno** değerini **ENOMEM** olarak ayarlar. **Errno**hakkında daha fazla bilgi için bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md). Ayrıca, **_aligned_offset_malloc** parametrelerini doğrular. *Hizalama* 2 ' nin üssü değilse veya Eğer değer *Boyut* ve sıfır dışında bir değere eşit veya *ondan büyükse,* bu işlev [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev **null** değerini döndürür ve **errno** 'ı **EINVAL**olarak ayarlar.
 
-Nasıl bellek blokları ayrılan, başlatılır ve taban yığının hata ayıklama sürümünde yönetilen hakkında daha fazla bilgi için bkz: [CRT hata ayıklama öbeği ayrıntıları](/visualstudio/debugger/crt-debug-heap-details).
+Bellek bloklarının taban yığının hata ayıklama sürümünde nasıl ayrıldığı, başlatıldığı ve yönetildiği hakkında bilgi için bkz. [CRT hata ayıklama yığını ayrıntıları](/visualstudio/debugger/crt-debug-heap-details).
 
-Ayırma blok türleri ve bunların nasıl kullanıldığı hakkında daha fazla bilgi için bkz. [hata ayıklama öbek üzerindeki blokları türleri](/visualstudio/debugger/crt-debug-heap-details).
+Ayırma bloğu türleri ve bunların nasıl kullanıldığı hakkında bilgi için bkz. [hata ayıklama yığınındaki blok türleri](/visualstudio/debugger/crt-debug-heap-details).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_aligned_offset_malloc_dbg**|\<crtdbg.h >|
+|**_aligned_offset_malloc_dbg**|\<Crtdbg. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 
-Hata ayıklama sürümleri [C çalışma zamanı kitaplıkları](../../c-runtime-library/crt-library-features.md) yalnızca.
+Yalnızca [C çalışma zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md) sürümlerini ayıklayın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,11 +1,11 @@
 ---
 title: carg, cargf, cargl
 ms.date: 11/04/2016
-apiname:
+api_name:
 - carg
 - cargf
 - cargl
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - carg
 - cargf
@@ -30,16 +33,16 @@ helpviewer_keywords:
 - cargf function
 - cargl function
 ms.assetid: 610d6a93-b929-46ab-a966-b77db0b804be
-ms.openlocfilehash: 584732594cd9ca9579907986e3dc3b5f3dbf52c0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e66b0b3545b3f28a8f7b4ca14c29ffe1e0fc260c
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62340722"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70939312"
 ---
 # <a name="carg-cargf-cargl"></a>carg, cargf, cargl
 
-Karmaşık bir sayıyı bağımsız değişkeni negatif gerçek ekseni kesin bir dal ile alır.
+Karmaşık bir sayının bağımsız değişkenini, bir dalı negatif gerçek eksen üzerinde kesimiyle alır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -64,21 +67,21 @@ long double cargl(
 ### <a name="parameters"></a>Parametreler
 
 *z*<br/>
-Karmaşık bir sayıyı.
+Karmaşık bir sayı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bağımsız değişkeni (aşama olarak da bilinir) *z*. Bu aralıkta sonucu olduğundan [-π, + π].
+*Z*'nin bağımsız değişkeni (aşama olarak da bilinir). Sonuç [-π, + π] aralığıdır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Çünkü C++ aşırı yüklemesi, sağlayan yüklerini çağırabilirsiniz **carg** Süren **_Fcomplex** veya **_Lcomplex** değerleri ve dönüş **float**veya **uzun** **çift** değerleri. C programında **carg** her zaman alan bir **_Dcomplex** döndürür ve değeri bir **çift** değeri.
+Aşırı C++ yüklemeye izin verdiğinden, **Carg** 'Nin, **_Fcomplex** veya **_lcomplex** değerlerini alan ve **float** ya da **Long** **Double** değerleri döndürebileceğinden aşırı yüklerini çağırabilirsiniz. C programında, **Carg** her zaman bir **_dcomplex** değeri alır ve bir **Double** değeri döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|C üstbilgisi|C++ üst bilgisi|
+|Yordam|C üstbilgisi|C++üst bilgi|
 |-------------|--------------|------------------|
-|**carg**, **cargf**, **cargl**|\<Complex.h >|\<ccomplex >|
+|**Carg**, **cargf**, **cargl**|\<karmaşık. h >|\<ccomplex >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

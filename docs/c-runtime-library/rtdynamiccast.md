@@ -1,9 +1,9 @@
 ---
 title: __RTDynamicCast
 ms.date: 11/04/2016
-apiname:
+api_name:
 - __RTDynamicCast
-apilocation:
+api_location:
 - msvcr90.dll
 - msvcr110.dll
 - msvcr120.dll
@@ -11,22 +11,25 @@ apilocation:
 - msvcr100.dll
 - msvcr80.dll
 - msvcr110_clr0400.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - __RTDynamicCast
 helpviewer_keywords:
 - __RTDynamicCast
 ms.assetid: 56aa2d7a-aa47-46ef-830d-e37175611239
-ms.openlocfilehash: f4bf4895af99b2d5c2d61e739c9d49d59cecb020
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c4b0caadf20d6c5494acf47ee5a788b5ee009c47
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62184534"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70957337"
 ---
-# <a name="rtdynamiccast"></a>__RTDynamicCast
+# <a name="__rtdynamiccast"></a>__RTDynamicCast
 
-Çalışma zamanı uygulaması [dynamic_cast](../cpp/dynamic-cast-operator.md) işleci.
+[Dynamic_cast](../cpp/dynamic-cast-operator.md) işlecinin çalışma zamanı uygulama.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -42,35 +45,35 @@ PVOID __RTDynamicCast (
 
 #### <a name="parameters"></a>Parametreler
 
-*inptr*<br/>
-Çok biçimli bir nesne işaretçisi.
+*ınptr*<br/>
+Polimorfik nesne işaretçisi.
 
 *VfDelta*<br/>
-Nesnedeki sanal işlev işaretçisi uzaklığı.
+Nesne içindeki sanal işlev işaretçisinin boşluğu.
 
 *SrcType*<br/>
-Statik nesne türü tarafından işaret edilen `inptr` parametresi.
+`inptr` Parametresi tarafından işaret edilen statik nesne türü.
 
-*TargetType*<br/>
-Hedeflenen atamanın sonucu.
+*Öğesi*<br/>
+İstenen dönüştürme sonucu.
 
 *IsReference*<br/>
-**doğru** Giriş bir başvuruysa; **false** Giriş bir işaretçi ise.
+Giriş bir başvuru ise **doğru** ; Giriş bir işaretçisiyse **false** .
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa uygun alt nesneye işaretçi; Aksi takdirde, **NULL**.
+Başarılı olursa uygun alt nesneye yönelik işaretçi. Aksi takdirde, **null**.
 
 ## <a name="exceptions"></a>Özel Durumlar
 
-`bad_cast()` Giriş `dynamic_cast<>` bir başvurudur ve dönüştürme başarısız.
+`bad_cast()`girişi bir başvuru `dynamic_cast<>` ise ve atama başarısız olursa.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Dönüştürür `inptr` türünde bir nesne için `TargetType`. Türünü `inptr` bir işaretçi olmalıdır `TargetType` bir işaretçi ya da bir l-değeri ise `TargetType` bir başvurudur. `TargetType` bir işaretçi veya önceden tanımlanmış sınıf türüne yapılan başvuru veya void bir işaretçi olması gerekir.
+`inptr` Türündeki`TargetType`bir nesneye dönüştürür. Türü `inptr` bir işaretçisiyse veya bir başvuru ise `TargetType` l değeri `TargetType` bir işaretçi olmalıdır. `TargetType`bir işaretçi veya önceden tanımlanmış bir sınıf türüne başvuru ya da void işaretçisi olmalıdır.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|__RTDynamicCast|rtti.h|
+|__RTDynamicCast|rtti. h|

@@ -1,9 +1,9 @@
 ---
 title: _CIexp
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _CIexp
-apilocation:
+api_location:
 - msvcr120.dll
 - msvcr80.dll
 - msvcr110.dll
@@ -12,7 +12,10 @@ apilocation:
 - msvcr110_clr0400.dll
 - msvcr90.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - CIexp
 - _CIexp
@@ -20,16 +23,16 @@ helpviewer_keywords:
 - CIexp intrinsic
 - _CIexp intrinsic
 ms.assetid: f8a3e3b7-fa57-41a3-9983-6c81914cbb55
-ms.openlocfilehash: 5d51e8e542ffb14a77001d045903dccb1a091d53
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c901442bc7874e75dc0be03c72953dbacb67add3
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62290345"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70944697"
 ---
-# <a name="ciexp"></a>_CIexp
+# <a name="_ciexp"></a>_CIexp
 
-Üstel yığında üst değeri hesaplar.
+Yığındaki en üstteki değerin üstel değerini hesaplar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -39,9 +42,9 @@ void __cdecl _CIexp();
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu sürümü `exp` derleyici anlayan özelleştirilmiş bir çağırma kuralı işlevi vardır. Kopya oluşturulmasını önlediği için yürütmeyi hızlandırır ve YAZMAÇ ayırma ile yardımcı olur.
+`exp` İşlevin bu sürümünde derleyicinin anladığı özelleştirilmiş bir çağırma kuralı vardır. Kopyaların oluşturulmasını ve YAZMAÇ ayrılmasına yardımcı olmasını önlediği için yürütmeyi hızlandırır.
 
-Sonuç değerini yığın üstüne itilir.
+Elde edilen değer yığının en üstüne gönderilir.
 
 ## <a name="requirements"></a>Gereksinimler
 

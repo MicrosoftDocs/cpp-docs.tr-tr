@@ -1,9 +1,9 @@
 ---
 title: isatty
 ms.date: 11/04/2016
-apiname:
+api_name:
 - isatty
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -14,19 +14,22 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - isatty
 helpviewer_keywords:
 - isatty function
 ms.assetid: 610d0b09-a1db-41ef-9f45-a2c6076b4683
-ms.openlocfilehash: 658f214aa3c91d82be7f8032caea54ebe8787aa7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9fc9014ab24248dfb06973f71bb4bf97e2ab4abd
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62155673"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70950647"
 ---
 # <a name="isatty"></a>isatty
 
-Bu POSIX işlevi kullanım dışı bırakılmıştır. ISO kullanın C++ uyumluluğunu [_isatty](isatty.md) yerine.
+Bu POSIX işlevi kullanım dışıdır. Bunun yerine ISO C++ uyumlu [_isatty](isatty.md) kullanın.

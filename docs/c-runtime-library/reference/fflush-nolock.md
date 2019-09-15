@@ -1,9 +1,9 @@
 ---
 title: _fflush_nolock
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _fflush_nolock
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - fflush_nolock
 - _fflush_nolock
@@ -25,16 +28,16 @@ helpviewer_keywords:
 - streams, flushing
 - flushing
 ms.assetid: 5e33c4a1-b10c-4001-ad01-210757919291
-ms.openlocfilehash: 721098899525df02dc3b3d121cf894f8056fcb98
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f31ef5018abd9adbe9b9db00aaa91e3f0f0c01d5
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62334306"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70940975"
 ---
-# <a name="fflushnolock"></a>_fflush_nolock
+# <a name="_fflush_nolock"></a>_fflush_nolock
 
-İş parçacığını kilitlemeden, bir akışa aktarır.
+İş parçacığını kilitlemeden bir akışı temizler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -46,28 +49,28 @@ int _fflush_nolock(
 
 ### <a name="parameters"></a>Parametreler
 
-*Stream*<br/>
-İşaretçi **dosya** yapısı.
+*ka*<br/>
+**Dosya** yapısına yönelik işaretçi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bkz: [fflush](fflush.md).
+Bkz. [fflush](fflush.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlev, kilitleme yapılmayan bir sürümünü **fflush**. Aynıdır **fflush** , başka iş parçacıklarının engellemelerinden korunmamaları hariç aynıdırlar. Diğer iş parçacıklarının kilitleme yüküne tabi olmayan çünkü daha hızlı olabilir. Bu işlev yalnızca tek iş parçacıklı uygulamalar ve burada çağırma kapsamının iş parçacığı yalıtımını zaten işlediği gibi iş parçacığı bakımından güvenli bağlamlarda kullanın.
+Bu işlev, **fflush**'nin kilitleme dışı bir sürümüdür. Bu, diğer iş parçacıklarının girişim tarafından korunmamasının dışında, **fflush** ile aynıdır. Diğer iş parçacıklarını kilitleme yükünü karşılamadığından daha hızlı olabilir. Bu işlevi yalnızca tek iş parçacıklı uygulamalar gibi iş parçacığı güvenli bağlamlarda veya çağırma kapsamının iş parçacığı yalıtımını zaten işlediği yerde kullanın.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**_fflush_nolock**|\<stdio.h >|
+|**_fflush_nolock**|\<stdio. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Stream g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [fclose, _fcloseall](fclose-fcloseall.md)<br/>
 [_flushall](flushall.md)<br/>
 [setvbuf](setvbuf.md)<br/>

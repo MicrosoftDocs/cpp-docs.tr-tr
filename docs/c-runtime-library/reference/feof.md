@@ -1,9 +1,9 @@
 ---
 title: feof
 ms.date: 11/04/2016
-apiname:
+api_name:
 - feof
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,23 +15,26 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - feof
 helpviewer_keywords:
 - end of file, testing for
 - feof function
 ms.assetid: 09081eee-7c4b-4189-861f-2fad95d3ec6d
-ms.openlocfilehash: 9c023290df601bfc48f9708af86d32d91cd52dc4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: cf6cfdb63689f5d69cc45dd407ecc6b08a7a7a73
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62334404"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70941144"
 ---
 # <a name="feof"></a>feof
 
-Son dosya akışı ile ilgili sınar.
+Akışta dosya sonu için testler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -43,26 +46,26 @@ int feof(
 
 ### <a name="parameters"></a>Parametreler
 
-*Stream*<br/>
-İşaretçi **dosya** yapısı.
+*ka*<br/>
+**Dosya** yapısına yönelik işaretçi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**Feof** işlevi okuma işlemi dosyanın sonundan okumayı denedi, sıfır olmayan bir değer döndürür; Aksi takdirde 0 değerini döndürür. Akış işaretçisini ise **NULL**, işlev içinde açıklanan şekilde geçersiz parametre işleyicisi çağırır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse **errno** ayarlanır **EINVAL** ve **feof** 0 döndürür.
+Bir okuma işlemi dosyanın sonundan sonra okumayı denediğinde **feof** işlevi sıfır dışında bir değer döndürür; Aksi takdirde 0 döndürür. Akış işaretçisi **null**ise, Işlev [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, **errno** **EINVAL** olarak ayarlanır ve **feof** 0 döndürür.
 
-Bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) bu ve diğer hata kodları hakkında daha fazla bilgi için.
+Bu ve diğer hata kodları hakkında daha fazla bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) .
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Feof** belirler (hem bir işlev ve makro olarak uygulanmış) yordamı olmadığını sonuna *stream* geçirildi. Dosya sonu geçirildiğinde, akış kapatılana kadar veya kadar operations dönen bir dosya sonu göstergesi okuma [rewind](rewind.md), **fsetpos**, [fseek](fseek-fseeki64.md), veya  **clearerr** göre adlandırılır.
+Yordamın **Fede** (hem bir işlev olarak hem de bir makro olarak uygulanan) *akışın* sonunun geçtiğini belirler. Dosya sonu geçirildiğinde, akış kapatılıncaya kadar veya [geri sarma](rewind.md), **fsetpos**, [fseek](fseek-fseeki64.md)veya **clearerr** çağrılana kadar okuma işlemleri bir dosya sonu göstergesi döndürür.
 
-Örneğin, 10 bayta bir dosya içeriyorsa ve 10 bayt Dosyadan okuma **feof** dosya işaretçisini dosyanın sonunda olsa bile, son okuma girişiminde bulundunuz değil çünkü 0 döndürür. Okunacak çalıştıktan sonra bir 11 bayt olur yalnızca **feof** sıfır olmayan bir değer döndürür.
+Örneğin, bir dosya 10 bayt içeriyorsa ve dosyadan 10 bayt **okuduğunuzda, dosya** işaretçisi dosyanın sonunda olsa bile, son olarak okumayı Denememekle birlikte 0 döndürür. Yalnızca bir 11 baytını okumaya çalıştıktan **sonra, sıfır** dışında bir değer döndürerirsiniz.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**feof**|\<stdio.h >|
+|**feof**|\<stdio. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -106,7 +109,7 @@ int main( void )
 }
 ```
 
-## <a name="input-crtfeoftxt"></a>Giriş: crt_feof.txt
+## <a name="input-crt_feoftxt"></a>Giriş: crt_feof. txt
 
 ```Input
 Line one.
@@ -122,7 +125,7 @@ Number of bytes read = 19
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Hata İşleme](../../c-runtime-library/error-handling-crt.md)<br/>
-[Stream g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [clearerr](clearerr.md)<br/>
 [_eof](eof.md)<br/>
 [ferror](ferror.md)<br/>

@@ -1,9 +1,9 @@
 ---
 title: fwrite
 ms.date: 11/04/2016
-apiname:
+api_name:
 - fwrite
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,19 +15,22 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - fwrite
 helpviewer_keywords:
 - streams, writing data to
 - fwrite function
 ms.assetid: 7afacf3a-72d7-4a50-ba2e-bea1ab9f4124
-ms.openlocfilehash: f05e39390f3a2d0ad41627f6aed1aecd77b57cca
-ms.sourcegitcommit: 878a164fe6d550ca81ab87d8425c8d3cd52fe384
+ms.openlocfilehash: 8149e0f2cbc84c2c28093d86fecd5ff2a9db7aba
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68376058"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70956190"
 ---
 # <a name="fwrite"></a>fwrite
 
@@ -66,7 +69,7 @@ Yazılacak en fazla öğe sayısı.
 
 **Fwrite** işlevi, sayı *uzunluğunun her* biri, *arabelleğe* çıkış *akışına*kadar olan öğeleri *say* için yazar. *Stream* ile ilişkili dosya işaretçisi (varsa), gerçekten yazılan bayt sayısıyla artırılır. *Akış* metin modunda açılırsa, her satır akışı bir satır başı satır besleme çiftiyle değiştirilmiştir. Değiştirme işleminin dönüş değeri üzerinde hiçbir etkisi yoktur.
 
-*Akış* Unicode çeviri modunda açıldığında — Örneğin, *Stream* , **fopen** çağırarak ve **CCS = UNICODE**, **CCS = UTF-16LE**, ya da **CCS = UTF-8**' i içeren bir mod parametresi kullanılarak açılırsa veya mod ise **_setmode** ve  **_O_WTEXT**, **_O_u16text**veya **_O_U8TEXT**— içeren bir mod parametresi kullanılarak bir Unicode çeviri moduna,*arabellek* , UTF-16 verileri. Bu modda tek sayıda bayt yazma girişimi bir parametre doğrulama hatasına neden olur.
+*Akış* Unicode çeviri modunda açıldığında — Örneğin, *Stream* , **fopen** çağırarak ve **CCS = UNICODE**, **CCS = UTF-16LE**, ya da **CCS = UTF-8**' i içeren bir mod parametresi kullanılarak açılırsa veya mod ise **_setmode** ve **_O_WTEXT**, **_O_U16TEXT**veya **_O_U8TEXT**— içeren bir mod parametresi kullanılarak bir Unicode çeviri moduna,*arabellek* **,** UTF-16 verileri. Bu modda tek sayıda bayt yazma girişimi bir parametre doğrulama hatasına neden olur.
 
 Bu işlev çağıran iş parçacığını kilitlediği için iş parçacığı güvenlidir. Kilitleme dışı bir sürüm için bkz. **_fwrite_nolock**.
 

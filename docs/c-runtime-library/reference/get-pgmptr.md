@@ -1,9 +1,9 @@
 ---
 title: _get_pgmptr
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _get_pgmptr
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-runtime-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - get_pgmptr
 - _get_pgmptr
@@ -25,16 +28,16 @@ helpviewer_keywords:
 - pgmptr global variable
 - _pgmptr global variable
 ms.assetid: 29f16a9f-a685-4721-add3-7fad4f67eece
-ms.openlocfilehash: 2d3959a69d85fca38e4d099d3365553f88fd015f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4f9a3b19cc7eb1870b87ec46b7923987ec646e32
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62287508"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70955758"
 ---
-# <a name="getpgmptr"></a>_get_pgmptr
+# <a name="_get_pgmptr"></a>_get_pgmptr
 
-Geçerli değeri alır **_pgmptr** genel değişkeni.
+**_Pgmptr** genel değişkeninin geçerli değerini alır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -47,21 +50,21 @@ errno_t _get_pgmptr(
 ### <a name="parameters"></a>Parametreler
 
 *pValue*<br/>
-Geçerli değeri ile doldurulacak bir dizeye bir işaretçi **_pgmptr** değişkeni.
+**_Pgmptr** değişkeninin geçerli değeriyle doldurulacak bir dizeye yönelik işaretçi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa sıfır döndürür; bir hata kodu. Varsa *pValue* olduğu **NULL**, açıklanan şekilde geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütme devam etmesine izin verilirse, bu işlev ayarlar **errno** için **EINVAL** ve döndürür **EINVAL**.
+Başarılıysa sıfır döndürür; hatada hata kodu. *PValue* **null**ise, geçersiz parametre işleyicisi [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev **errno** ' ı **EINVAL** olarak ayarlar ve **EINVAL**döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Yalnızca çağrı **_get_pgmptr** programınızı dar giriş noktası varsa, ister **ana()** veya **WinMain()**. **_Pgmptr** genel değişkeni işlemle ilişkili yürütülebilir dosyanın tam yolunu içerir. Daha fazla bilgi için [_pgmptr, _wpgmptr](../../c-runtime-library/pgmptr-wpgmptr.md).
+Yalnızca, programınızın **Main ()** veya **WinMain ()** gibi bir dar giriş noktası varsa, **_get_pgmptr** çağırın. **_Pgmptr** genel değişkeni işlemle ilişkili yürütülebilir dosyanın tam yolunu içerir. Daha fazla bilgi için bkz. [_pgmptr, _wpgmptr](../../c-runtime-library/pgmptr-wpgmptr.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_get_pgmptr**|\<stdlib.h >|
+|**_get_pgmptr**|\<Stdlib. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

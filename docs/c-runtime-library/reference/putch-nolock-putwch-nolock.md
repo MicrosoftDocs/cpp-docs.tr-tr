@@ -1,10 +1,10 @@
 ---
 title: _putch_nolock, _putwch_nolock
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _putwch_nolock
 - _putch_nolock
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-conio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _putch_nolock
 - _puttch_nolock
@@ -33,19 +36,19 @@ helpviewer_keywords:
 - console, writing characters to
 - _putwch_nolock function
 ms.assetid: edbc811d-bac6-47fa-a872-fe4f3a1590b0
-ms.openlocfilehash: 3b3ce1bb36e8a6d938ad620af21e8c1d3bc768db
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 74f1ba5fe43fb8d29a441fd7e024fa195c1c9082
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62358219"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70950088"
 ---
-# <a name="putchnolock-putwchnolock"></a>_putch_nolock, _putwch_nolock
+# <a name="_putch_nolock-_putwch_nolock"></a>_putch_nolock, _putwch_nolock
 
-Bir karakter, iş parçacığını kilitlemeden, konsola yazar.
+İş parçacığını kilitlemeden konsola bir karakter yazar.
 
 > [!IMPORTANT]
-> Bu API, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -61,15 +64,15 @@ wchar_t c
 ### <a name="parameters"></a>Parametreler
 
 *c*<br/>
-Çıktı olacak karakter.
+Çıkış olacak karakter.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Döndürür *c* başarılı olursa. Varsa **_putch_nolock** döndürür, başarısız **EOF**if **_putwch_nolock** döndürür, başarısız **WEOF**.
+Başarılıysa *c* döndürür. **_Putch_nolock** başarısız olursa, **EOF**döndürür; **_putwch_nolock** başarısız olursa, **weof**döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_putch_nolock** ve **_putwch_nolock** özdeş **_putch** ve **_putwch**sırasıyla gelen girişim tarafından korunmayan dışında diğer iş parçacıkları. Diğer iş parçacıklarını kilitleme ek yükü kalmadıklarından daha hızlı olabilir. Bu işlevler yalnızca tek iş parçacıklı uygulamalar ve burada çağırma kapsamının iş parçacığı yalıtımını zaten işlediği gibi iş parçacığı bakımından güvenli bağlamlarda kullanın.
+**_putch_nolock** ve **_putwch_nolock** , sırasıyla **_putch** ve **_putwch**ile aynıdır, ancak diğer iş parçacıkları tarafından girişim tarafından korunmazlar. Diğer iş parçacıklarını kilitleme yükünü sunmadığından daha hızlı olabilir. Bu işlevleri yalnızca, tek iş parçacıklı uygulamalar gibi iş parçacığı güvenli bağlamlarda veya çağırma kapsamının iş parçacığı yalıtımını zaten işlediği yerde kullanın.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -81,14 +84,14 @@ Döndürür *c* başarılı olursa. Varsa **_putch_nolock** döndürür, başar�
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_putch_nolock**|\<conio.h >|
-|**_putwch_nolock**|\<conio.h >|
+|**_putch_nolock**|\<conio. h >|
+|**_putwch_nolock**|\<conio. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 
-Tüm sürümleri [C çalışma zamanı kitaplıkları](../../c-runtime-library/crt-library-features.md).
+[C çalışma zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md)tüm sürümleri.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

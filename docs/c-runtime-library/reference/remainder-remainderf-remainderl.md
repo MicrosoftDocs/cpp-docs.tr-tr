@@ -1,11 +1,11 @@
 ---
 title: remainder, remainderf, remainderl
 ms.date: 04/05/2018
-apiname:
+api_name:
 - remainderl
 - remainder
 - remainderf
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - remainderf
 - remainder
@@ -27,16 +30,16 @@ helpviewer_keywords:
 - remainderl
 - remainder
 ms.assetid: 5f721fb3-8b78-4597-9bc0-ca9bcd1f1d0e
-ms.openlocfilehash: 9a9abe82e69122ca87f44e293e1da725c97045d4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 851f022325bb617cb2b0ae9a331b680b9d9fd303
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62357648"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70949421"
 ---
 # <a name="remainder-remainderf-remainderl"></a>remainder, remainderf, remainderl
 
-En yakın tamsayı değerine yuvarlanır iki kayan nokta değerleri bölümünü geri kalanı hesaplar.
+İki kayan noktalı değer bölümünün geri kalanını hesaplar ve en yakın tamsayı değerine yuvarlanır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -56,24 +59,24 @@ long double remainder( long double x, long double y ); /* C++ only */
 *x*<br/>
 Pay.
 
-*Y*<br/>
+*Iz*<br/>
 Payda.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Kayan nokta kalanını *x* / *y*. Varsa değerini *y* 0.0, olan **kalan** sessiz bir NaN döndürür. Tarafından sessiz bir NaN'ın sunumu hakkındaki bilgiler için **printf** ailesi, bkz: [printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md).
+*X* / *y*'nin kayan nokta kalanı. *Y* değeri 0,0 ise, **kalanı** sessiz bir NaN döndürür. **Printf** ailesi tarafından sessiz bir NaN 'ın temsili hakkında daha fazla bilgi için bkz. [printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Kalan** işlevler hesapla kayan nokta kalanını *r* , *x* / *y* şekilde *x*   =  *n* \* *y* + *r*burada *n*olduğu tamsayı değeri için en yakın *x* / *y* ve *n*olsa bile her &#124; *n*  -  *x* / *y* &#124; = 1/2. Zaman *r* = 0, *r* aynı işarete sahip *x*.
+**Kalan** işlevler *x*  /  n\*y*r 'nin*kayan nokta geri kalanını hesaplar, burada n +  =  -  &#124; *x* *y değerine* en yakın *tamsayı ve n* *x*y / = 1/2 her seferinde &#124; eşit olur. /  *R* = 0 olduğunda, *r* *x*işaretine eşittir.
 
-C++ aşırı yüklemeye izin verdiğinden, aşırı yüklemesini çağırabilirsiniz **kalan** alan ve getiren **float** veya **uzun** **çift** değerleri. C programında **kalan** her zaman iki alan **çift** bağımsız değişkenleri ve döndürür bir **çift**.
+Aşırı C++ yüklemeye izin verdiğinden, **float** veya **Long** **Double** değerlerini alan ve döndüren **geri** yüklerin aşırı yüklerini çağırabilirsiniz. C programında, **kalan** her zaman iki **çift** bağımsız değişken alır ve bir **Double**döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İşlev|Gerekli başlık (C)|Gerekli başlık (C++)|
+|İşlev|Gerekli üst bilgi (C)|Gerekli üst bilgiC++()|
 |--------------|---------------------|-|
-|**remainder**, **remainderf**, **remainderl**|\<Math.h >|\<cmath > veya \<math.h >|
+|**kalan**, **remainderf**, **remainderl**|\<Math. h >|\<cmath > veya \<Math. h >|
 
 Uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

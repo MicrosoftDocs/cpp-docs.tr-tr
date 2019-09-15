@@ -1,9 +1,9 @@
 ---
 title: _setmaxstdio
 ms.date: 05/21/2019
-apiname:
+api_name:
 - _setmaxstdio
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - setmaxstdio
 - _setmaxstdio
@@ -25,16 +28,16 @@ helpviewer_keywords:
 - setmaxstdio function
 - open files, maximum
 ms.assetid: 9e966875-9ff5-47c4-9b5f-e79e83b70249
-ms.openlocfilehash: 94b768d920ffd86a5bd762f8994244dda67fb15f
-ms.sourcegitcommit: bde3279f70432f819018df74923a8bb895636f81
+ms.openlocfilehash: 620213b4df9ea555189a1403b3c9e83b55cad6c6
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66174827"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70948229"
 ---
-# <a name="setmaxstdio"></a>_setmaxstdio
+# <a name="_setmaxstdio"></a>_setmaxstdio
 
-Aynı anda açık dosya sayısı için en fazla akış g/ç düzeyini ayarlar.
+Akış g/ç düzeyindeki eşzamanlı açık dosya sayısı için bir üst sınır ayarlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -47,39 +50,39 @@ int _setmaxstdio(
 ### <a name="parameters"></a>Parametreler
 
 *new_max*<br/>
-Yeni maksimum sayısı için aynı anda akış g/ç düzeyi dosyalarını açın.
+Akış g/ç düzeyinde aynı anda açık dosya sayısı için yeni en yüksek değer.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Döndürür *new_max* başarılıysa; Aksi takdirde -1.
+Başarılı olursa *new_max* döndürür; -1 Aksi takdirde.
 
-Varsa *new_max* olduğu küçüktür **_IOB_ENTRIES**, veya en fazla sayısından büyük işletim sistemi içinde kullanılabilir işler, açıklanan şekilde geçersiz parametre işleyicisi çağrılır [ Parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için bu işlev -1 döndürür ve kümeleri yürütülmesine izin veriliyorsa **errno** için **EINVAL**.
+*New_max* , **_Iob_entries**değerinden küçükse veya işletim sisteminde kullanılabilir olan en fazla tanıtıcı sayısından büyükse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev-1 döndürür ve **errno** 'ı **EINVAL**olarak ayarlar.
 
-Bu ve diğer hata kodları hakkında daha fazla bilgi için bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Bu ve diğer hata kodları hakkında daha fazla bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Setmaxstdio** işlev aynı anda akış g/ç düzeyi açık olabilir dosyaların sayısı, en fazla değeri değiştirir.
+**_Setmaxstdio** işlevi, akış g/ç düzeyinde aynı anda açık olabilecek dosya sayısı için maksimum değeri değiştirir.
 
-Artık, aynı anda açık 8192 dosyaları kadar destekler C çalışma zamanı g/ç [düşük düzey g/ç](../../c-runtime-library/low-level-i-o.md). Bu düzeyde açılır ve kullanılarak erişilen dosyalar içerir **_aç**, **_read**, ve **_write** g/ç işlevler ailesini. Varsayılan olarak, en çok 512 dosyaları aynı anda açılabilir [g/ç düzeyi akış](../../c-runtime-library/stream-i-o.md). Bu düzeyde açılır ve kullanılarak erişilen dosyalar içerir **fopen**, **fgetc**, ve **fputc** işlevler ailesini. Akış g/ç düzeyinde 512 açık dosyalar sınırını kullanarak olmak üzere 8.192 maksimum kadar artırılabilir **_setmaxstdio** işlevi.
+C çalışma zamanı g/ç artık [düşük g/ç düzeyinde](../../c-runtime-library/low-level-i-o.md)aynı anda en fazla 8.192 dosyayı destekler. Bu düzey, açılan ve g/ç işlevlerinin **_açık**, **_Okuma**ve **yazma** ailesi işlevleri kullanılarak erişilen dosyaları içerir. Varsayılan olarak, en çok 512 dosya [akış g/ç düzeyinde](../../c-runtime-library/stream-i-o.md)eşzamanlı olarak açılabilir. Bu düzey, **fopen**, **fgetc**ve **fputc** ailesi işlevleri kullanılarak açılan ve erişilen dosyaları içerir. Akış g/ç düzeyindeki 512 açık dosya sınırı, **_setmaxstdio** işlevi kullanılarak en fazla 8.192 ' e artırılabilir.
 
-Akış miyim/O-düzeyi, gibi gördüğünden **fopen**, oluşturulan düşük miyim/O-düzey işlevleri en üstünde olmak üzere 8.192 maksimum C çalışma zamanı kitaplığı erişilen aynı anda açık dosya sayısı için sabit bir üst sınır olan.
+**Fopen**gibi akış g/ç düzeyi işlevleri düşük g/ç düzeyi işlevlerinin üzerine inşa edildiğinden, en fazla 8.192, C çalışma zamanı kitaplığı aracılığıyla erişilen aynı anda açık dosya sayısı için sabit bir üst sınırdır.
 
 > [!NOTE]
-> Bu üst sınırı, belirli Win32 platform ve yapılandırma tarafından desteklenen özellikler dışında olabilir.
+> Bu üst sınır, belirli bir Win32 platformu ve yapılandırması tarafından desteklenenden daha fazla olabilir.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_setmaxstdio**|\<stdio.h >|
+|**_setmaxstdio**|\<stdio. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
-Bkz: [_getmaxstdio](getmaxstdio.md) kullanma örneği için **_setmaxstdio**.
+**_Setmaxstdio**kullanımı örneği için bkz. [_getmaxstdio](getmaxstdio.md) .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Stream g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>

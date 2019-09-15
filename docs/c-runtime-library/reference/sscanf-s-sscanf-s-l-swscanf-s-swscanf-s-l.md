@@ -1,12 +1,12 @@
 ---
 title: sscanf_s, _sscanf_s_l, swscanf_s, _swscanf_s_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _sscanf_s_l
 - sscanf_s
 - _swscanf_s_l
 - swscanf_s
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -18,7 +18,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - ntoskrnl.exe
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _stscanf_s
 - sscanf_s
@@ -41,16 +44,16 @@ helpviewer_keywords:
 - strings [C++], reading
 - _sscanf_s_l function
 ms.assetid: 956e65c8-00a5-43e8-a2f2-0f547ac9e56c
-ms.openlocfilehash: 07911b7254e74c28310669a697c7492b69567b7f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 14707b64a9c5c49837391be59d83ee39b79d5065
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62354803"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70957979"
 ---
-# <a name="sscanfs-sscanfsl-swscanfs-swscanfsl"></a>sscanf_s, _sscanf_s_l, swscanf_s, _swscanf_s_l
+# <a name="sscanf_s-_sscanf_s_l-swscanf_s-_swscanf_s_l"></a>sscanf_s, _sscanf_s_l, swscanf_s, _swscanf_s_l
 
-Biçimlendirilmiş verileri bir dizeden okur. Bu sürümleri [sscanf, _sscanf_l, swscanf, _swscanf_l](sscanf-sscanf-l-swscanf-swscanf-l.md) açıklandığı gibi güvenlik geliştirmeleri vardır [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
+Bir dizeden biçimlendirilen verileri okur. [Sscanf, _sscanf_l, swscanf, _swscanf_l](sscanf-sscanf-l-swscanf-swscanf-l.md) 'nin bu SÜRÜMLERI, [CRT 'daki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklandığı gibi güvenlik geliştirmeleri içerir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -81,36 +84,36 @@ int _swscanf_s_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*Arabellek*<br/>
-Depolanan veri
+*arabelleğin*<br/>
+Depolanan veriler
 
-*Biçim*<br/>
-Biçim denetimi dizesi. Daha fazla bilgi için [biçim belirtimi alanları: scanf ve wscanf işlevleri](../../c-runtime-library/format-specification-fields-scanf-and-wscanf-functions.md).
+*format*<br/>
+Biçim denetimi dizesi. Daha fazla bilgi için bkz. [Biçim belirtimi alanları: scanf ve wscanf işlevleri](../../c-runtime-library/format-specification-fields-scanf-and-wscanf-functions.md).
 
-*Bağımsız değişken*<br/>
+*değişkendir*<br/>
 İsteğe bağlı bağımsız değişkenler
 
-*Yerel ayar*<br/>
+*ayarlar*<br/>
 Kullanılacak yerel ayar
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu işlevlerin her biri, başarıyla dönüştürülen ve atanan alanların sayısını döndürür; dönüş değeri, Okunmuş ancak atanmamış alanları içermez. 0 değeri hiçbir alan atanmamış belirtir. Dönüş değeri **EOF** bir hata için veya ilk dönüştürmeden önce dizenin sonuna ulaşılırsa.
+Bu işlevlerin her biri, başarıyla dönüştürülen ve atanan alanların sayısını döndürür; dönüş değeri, okunan ancak atanmamış alanları içermez. 0 dönüş değeri hiçbir alan atanmadığını gösterir. Dönüş değeri bir hata **için veya** ilk dönüştürmeden önce dizenin sonuna ulaşılırsa.
 
-Varsa *arabellek* veya *biçimi* olduğu bir **NULL** işaretçiyse, geçersiz parametre işleyicisi çağrılır, açıklandığı [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse, bu işlevler -1 döndürür ve **errno** için **EINVAL**
+*Arabellek* veya *Biçim* **null** işaretçisiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler-1 döndürür ve **errno** 'ı **EINVAL** olarak ayarlar
 
-Bu ve diğer hata kodları hakkında daha fazla bilgi için bkz: [errno _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Bu ve diğer hata kodları hakkında bilgi için bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Sscanf_s** işlevi, verileri okuyan *arabellek* her tarafından verilen konuma *bağımsız değişken*. İçinde bir tür belirleyiciye karşılık gelen bir türe sahip değişkenler işaretçileri sonra biçim dizesi bağımsız değişkenleri belirtmeniz *biçimi*. Daha az güvenli sürümünün aksine [sscanf](sscanf-sscanf-l-swscanf-swscanf-l.md), türü alan karakterleri kullandığınızda bir arabellek büyüklüğü parametresi gereklidir **c**, **C**, **s**, **S**, veya dize içine alınan denetim kümeleri **[]**. Karakter arabelleği boyutu, bunu gerektiren hemen her arabellek parametresinden sonra ek bir parametre olarak sağlanmalıdır. Örneğin, bir dizeye okuyorsanız, bu dize için arabellek boyutu şöyle aktarılır:
+**Sscanf_s** işlevi, *arabellekteki* verileri her *bağımsız değişken*tarafından verilen konuma okur. Biçim dizesinden sonraki bağımsız değişkenler, *biçimde*bir tür belirticisine karşılık gelen bir türe sahip değişkenlere işaretçiler belirtir. Daha az güvenli sürüm olan [sscanf](sscanf-sscanf-l-swscanf-swscanf-l.md)'den farklı olarak, **[]** içinde bulunan **c**, **c**, **s**, **s**veya dize denetim kümelerini tür alan karakterlerini kullandığınızda bir arabellek boyutu parametresi gerekir. Karakter cinsinden arabellek boyutu, her bir arabellek parametresinden hemen sonra ek bir parametre olarak sağlanmalıdır. Örneğin, bir dizeye okuyorsanız, bu dize için arabellek boyutu aşağıdaki gibi geçirilir:
 
 ```C
 wchar_t ws[10];
 swscanf_s(in_str, L"%9s", ws, (unsigned)_countof(ws)); // buffer size is 10, width specification is 9
 ```
 
-Arabellek boyutu sondaki null karakterini içerir. Bir genişlik belirtimi alanı, okunan belirtecin arabelleğe sığmasını sağlamak için kullanılabilir. Hiçbir genişlik belirtimi alanı kullanılmazsa ve okunan belirteç arabelleğe sığamayacak kadar büyük ise, hiçbir şey o arabelleğe yazılır.
+Arabellek boyutu, Sonlandırıcı null değerini içerir. Bir genişlik belirtimi alanı, okunan belirtecin arabelleğe sığmasını sağlamak için kullanılabilir. Bir genişlik belirtimi alanı kullanılmıyorsa ve okunan belirteç arabelleğe sığmayacak kadar büyük ise, bu arabelleğe hiçbir şey yazılmaz.
 
 Karakterler söz konusu olduğunda, tek bir karakter aşağıdaki gibi okunabilir:
 
@@ -119,27 +122,27 @@ wchar_t wc;
 swscanf_s(in_str, L"%c", &wc, 1);
 ```
 
-Bu örnekte, giriş dizesi tek bir karakter okur ve ardından bir geniş karakter arabelleğinde depolar. Değersiz olmayan sonlandırılmış dizeler için birden çok karakter okurken, işaretsiz tamsayılar genişlik belirtimi ve arabellek boyutu kullanılır.
+Bu örnek, giriş dizesinden tek bir karakteri okur ve sonra geniş karakterli bir arabellekte depolar. Null olmayan sonlandırılmış dizeler için birden çok karakter okuduğunuzda, işaretsiz tamsayılar genişlik belirtimi ve arabellek boyutu olarak kullanılır.
 
 ```C
 char c[4];
 sscanf_s(input, "%4c", &c, (unsigned)_countof(c)); // not null terminated
 ```
 
-Daha fazla bilgi için [scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md) ve [scanf türü alan karakterleri](../../c-runtime-library/scanf-type-field-characters.md).
+Daha fazla bilgi için bkz. [scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md) ve [scanf Type alan karakterleri](../../c-runtime-library/scanf-type-field-characters.md).
 
 > [!NOTE]
-> Boyut parametresi türünde **işaretsiz**değil **size_t**. 64-bit hedefler için derleme yaparken dönüştürmek için bir statik atama kullanın **_countof** veya **sizeof** doğru boyuta sonuçları.
+> Boyut parametresi, **size_t**değil, **işaretsiz**türündedir. 64 bitlik hedefler için derlerken, **_countof** veya **sizeof** sonuçlarını doğru boyuta dönüştürmek için statik bir tür kullanın.
 
-*Biçimi* giriş alanlarının yorumunu aynı bağımsız değişkeni denetler ve form ve işleve *biçimi* için bağımsız değişken **scanf_s** işlevi. Çakışan dizeler arasında kopyalama olursa davranış tanımsızdır.
+*Biçim* bağımsız değişkeni, giriş alanlarının yorumunu denetler ve **scanf_s** işlevi için *Biçim* bağımsız değişkeniyle aynı forma ve işleve sahiptir. Çakışan dizeler arasında kopyalama olursa davranış tanımsızdır.
 
-**swscanf_s** geniş karakterli sürümüdür **sscanf_s**; bağımsız değişkenler **swscanf_s** geniş karakterli dizelerdir. **sscanf_s** çok baytlı onaltılı karakter işlemez. **swscanf_s** tam genişlikli onaltılık Unicode veya "uyumluluk bölgesi" karakterlerini işlemez. Aksi takdirde, **swscanf_s** ve **sscanf_s** aynı şekilde davranır.
+**swscanf_s** , **sscanf_s**öğesinin geniş karakterli bir sürümüdür; **swscanf_s** bağımsız değişkenleri geniş karakterli dizelerdir. **sscanf_s** çok baytlı onaltılık karakterleri işlemez. **swscanf_s** , Unicode tam genişlikli onaltılı veya "uyumluluk bölgesi" karakterlerini işlemez. Aksi halde, **swscanf_s** ve **sscanf_s** aynı şekilde davranır.
 
-Sahip bu işlevlerin sürümleri **_l** sonekine dışında geçerli iş parçacığı yerel ayarı yerine iletilen yerel ayar parametresini kullanırlar.
+**_L** sonekine sahip bu işlevlerin sürümleri, geçerli iş parçacığı yerel ayarı yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_stscanf_s**|**sscanf_s**|**sscanf_s**|**swscanf_s**|
 |**_stscanf_s_l**|**_sscanf_s_l**|**_sscanf_s_l**|**_swscanf_s_l**|
@@ -148,8 +151,8 @@ Sahip bu işlevlerin sürümleri **_l** sonekine dışında geçerli iş parçac
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**sscanf_s**, **_sscanf_s_l**|\<stdio.h >|
-|**swscanf_s**, **_swscanf_s_l**|\<stdio.h > veya \<wchar.h >|
+|**sscanf_s**, **_sscanf_s_l**|\<stdio. h >|
+|**swscanf_s**, **_swscanf_s_l**|\<stdio. h > veya \<wchar. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -195,7 +198,7 @@ Real:     = 15.000000
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Stream g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [fscanf, _fscanf_l, fwscanf, _fwscanf_l](fscanf-fscanf-l-fwscanf-fwscanf-l.md)<br/>
 [scanf, _scanf_l, wscanf, _wscanf_l](scanf-scanf-l-wscanf-wscanf-l.md)<br/>
 [sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>

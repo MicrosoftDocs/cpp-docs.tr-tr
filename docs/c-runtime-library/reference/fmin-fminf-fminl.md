@@ -1,11 +1,11 @@
 ---
 title: fmin, fminf, fminl
 ms.date: 04/05/2018
-apiname:
+api_name:
 - fmin
 - fminf
 - fminl
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - fmin
 - fminf
@@ -30,16 +33,16 @@ helpviewer_keywords:
 - fminf function
 - fminl function
 ms.assetid: 1916dfb5-99c1-4b0d-aefb-513525c3f2ac
-ms.openlocfilehash: f73853e18bd5d7f699cd2c3109fe5fb830859bf1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: df01f2205291920b8c0519db622c93048278beb1
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62333384"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70957089"
 ---
 # <a name="fmin-fminf-fminl"></a>fmin, fminf, fminl
 
-Belirtilen iki değerin daha küçük belirler.
+Belirtilen iki değerden daha küçük bir değer belirler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -75,30 +78,30 @@ long double fminl(
 *x*<br/>
 Karşılaştırılacak ilk değer.
 
-*Y*<br/>
+*Iz*<br/>
 Karşılaştırılacak ikinci değer.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa döndürür, daha küçük *x* veya *y*.
+Başarılı olursa *x* veya *y değerinden*küçük bir değer döndürür.
 
 |Giriş|Sonuç|
 |-----------|------------|
-|*x* NaN olup|*Y*|
-|*y* NaN olup|*x*|
-|*x* ve *y* NaN olan|NaN|
+|*x* Nan|*Iz*|
+|*y* Nan|*x*|
+|*x* ve *y* Nan 'tir|NaN|
 
-İşlev neden olmaz [_matherr](matherr.md) çağrılacak, kayan nokta özel durumların neden değiştirin veya **errno**.
+İşlev [_matherr](matherr.md) 'nin çağrılmasına neden olmaz, kayan nokta özel durumlarına neden olur veya **errno**değerini değiştirebilir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, aşırı yüklemesini çağırabilirsiniz **fmin** alan ve getiren **float** ve **uzun** **çift** türleri. C programında **fmin** her zaman alan ve döndüren bir **çift**.
+Aşırı C++ yüklemeye izin verdiğinden, **float** ve **Long** **Double** türlerini alıp döndüren **fmin** aşırı yüklerini çağırabilirsiniz. C programında **fmin** her zaman bir **Double**değeri alır ve döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**fmin**, **fminf**, **fminl**|C: \<math.h ><br />C++: \<math.h > veya \<cmath >|
+|**fmin**, **fminf**, **fminl**|C: \<Math. h ><br />C++: \<Math. h > veya \<cmath >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

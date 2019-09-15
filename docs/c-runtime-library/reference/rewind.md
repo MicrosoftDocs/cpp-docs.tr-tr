@@ -1,9 +1,9 @@
 ---
 title: geri sar
 ms.date: 11/04/2016
-apiname:
+api_name:
 - rewind
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - rewind
 helpviewer_keywords:
@@ -24,16 +27,16 @@ helpviewer_keywords:
 - file pointers [C++], repositioning
 - file pointers [C++]
 ms.assetid: 1a460ce1-28d8-4b5e-83a6-633dca29c28a
-ms.openlocfilehash: d2e50c34d48b5a9570691a8a702cd05c1a48242d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 084a6f3d7e817498bffb510d865f4a32021e4ce8
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62357570"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70949283"
 ---
 # <a name="rewind"></a>geri sar
 
-Dosya işaretçisini dosyanın başına yeniden konumlandırır.
+Dosya işaretçisini bir dosyanın başlangıcına konumlandırır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -45,34 +48,34 @@ void rewind(
 
 ### <a name="parameters"></a>Parametreler
 
-*Stream*<br/>
-İşaretçi **dosya** yapısı.
+*ka*<br/>
+**Dosya** yapısına yönelik işaretçi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Rewind** işlevi, ilişkili dosya işaretçisini yeniden konumlandırır *stream* dosyanın başına. Bir çağrı **rewind** benzer
+**Geri sarma** işlevi, *akış* ile ilişkili dosya işaretçisini dosyanın başlangıcına göre konumlandırır. **Geri sarma** çağrısı şuna benzer
 
-**(void) fseek (** _stream_**, 0 L, SEEK_SET);**
+**(void) fseek (** _Stream_ **, 0l, SEEK_SET);**
 
-Ancak, farklı [fseek](fseek-fseeki64.md), **rewind** akış için hata göstergeleri yanı sıra dosya sonu göstergesini temizler. Ayrıca, farklı [fseek](fseek-fseeki64.md), **rewind** işaretçi başarıyla taşındı olup olmadığını belirten bir değer döndürmez.
+Ancak, [fseek](fseek-fseeki64.md)aksine **geri sarma** , akış için hata göstergelerini ve dosya sonu göstergesini temizler. Ayrıca, [fseek](fseek-fseeki64.md)'ın aksine, **geri sarma** , işaretçinin başarıyla taşındığını göstermek için bir değer döndürmez.
 
-Klavye arabellek silmek için kullanın **rewind** stream ile **stdin**, klavye ile ilişkili olduğu.
+Klavye arabelleğini temizlemek için, varsayılan olarak klavye ile ilişkili akış **stdin**ile **geri sarma** kullanın.
 
-Akış ise bir **NULL** işaretçiyse, geçersiz parametre işleyicisi çağrılır, açıklandığı [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse, bu işlevi döndürür ve **errno** ayarlanır **EINVAL**.
+Stream **null** Işaretçisiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev döndürür ve **errno** , **EINVAL**olarak ayarlanır.
 
-Bunlar ve diğer hata kodları hakkında daha fazla bilgi için bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Bu ve diğer hata kodları hakkında bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**rewind**|\<stdio.h >|
+|**rewind**|\<stdio. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 
-Tüm sürümleri [C çalışma zamanı kitaplıkları](../../c-runtime-library/crt-library-features.md).
+[C çalışma zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md)tüm sürümleri.
 
 ## <a name="example"></a>Örnek
 
@@ -116,4 +119,4 @@ The values read are: 1 and -37
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Stream g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>

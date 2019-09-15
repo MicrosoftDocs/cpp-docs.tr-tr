@@ -1,9 +1,9 @@
 ---
 title: _heapset
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _heapset
-apilocation:
+api_location:
 - msvcr90.dll
 - msvcr80.dll
 - msvcr110.dll
@@ -11,7 +11,10 @@ apilocation:
 - msvcrt.dll
 - msvcr120.dll
 - msvcr100.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _heapset
 - heapset
@@ -22,19 +25,19 @@ helpviewer_keywords:
 - debugging [CRT], heap-related problems
 - _heapset function
 ms.assetid: 9667eeb0-55bc-4c19-af5f-d1fd0a142b3c
-ms.openlocfilehash: 41c39914964de74401dcdef847b2c44f623af249
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 65b74798c4b3b513acea0b51ecc0cb7df98391c1
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62343777"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70944315"
 ---
-# <a name="heapset"></a>_heapset
+# <a name="_heapset"></a>_heapset
 
-En az tutarlılık yığınlar denetler ve ücretsiz girişler için belirtilen değere ayarlar.
+Yığınlarını en düşük tutarlılık açısından denetler ve ücretsiz girdileri belirtilen bir değere ayarlar.
 
 > [!IMPORTANT]
->  Bu işlev artık kullanılmıyor. Visual Studio 2015'te başlayarak, CRT içinde kullanılamaz.
+>  Bu işlev artık kullanılmıyor. Visual Studio 2015 ' den başlayarak CRT ' de kullanılamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -46,35 +49,35 @@ int _heapset(
 
 #### <a name="parameters"></a>Parametreler
 
-*Dolgu*<br/>
-Karakter girin.
+*doldurması*<br/>
+Karakteri doldur.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-`_heapset` Malloc.h içinde tanımlı aşağıdaki tam sayı bildirim sabitlerinden birini döndürür.
+`_heapset`Malloc. h içinde tanımlanan aşağıdaki tamsayı bildirimi sabitlerinden birini döndürür.
 
 |||
 |-|-|
-| `_HEAPBADBEGIN`  | İlk üstbilgi bilgileri geçersiz veya bulunamadı.  |
-| `_HEAPBADNODE`  | Yığın zarar görmüş veya bozuk düğümü bulunamadı.  |
+| `_HEAPBADBEGIN`  | İlk üstbilgi bilgisi geçersiz veya bulunamadı.  |
+| `_HEAPBADNODE`  | Yığın hasarlı veya hatalı düğüm bulundu.  |
 | `_HEAPEMPTY`  | Yığın başlatılmadı.  |
 | `_HEAPOK`  | Yığın tutarlı görünüyor.  |
 
-Ayrıca, bir hata oluşursa `_heapset` ayarlar `errno` için `ENOSYS`.
+Ayrıca, bir hata oluşursa, `_heapset` olarak `ENOSYS`ayarlanır `errno` .
 
 ## <a name="remarks"></a>Açıklamalar
 
-`_heapset` İşlevi boş bellek konumları veya yanlışlıkla üzerine olan düğümleri gösterir.
+İşlevi `_heapset` , yanlışlıkla üzerine yazılmış boş bellek konumlarını veya düğümlerini gösterir.
 
-`_heapset` Yığındaki en alt düzeyde tutarlılık olup olmadığını denetler ve ardından yığının ücretsiz girişine ait her baytın ayarlar `fill` değeri. Bu bilinen değer, hangi yığın bellek konumları ücretsiz düğümler içerebilir ve serbest bırakılan belleğe yanlışlıkla yazılmış veri içerir gösterir. İşletim sistemi desteklemiyorsa `_heapset`(örneğin, Windows 98), işlev döndürür `_HEAPOK` ve ayarlar `errno` için `ENOSYS`.
+`_heapset`yığında en az tutarlılığı denetler ve sonra yığının boş girişlerinin `fill` her baytını değere ayarlar. Bu bilinen değer, yığında serbest düğüm ve yanlışlıkla serbest bırakılmış belleğe yazılan verileri içeren hangi bellek konumlarının olduğunu gösterir. İşletim sistemi desteklemiyorsa `_heapset`(örneğin, Windows 98), işlev öğesini döndürür `_HEAPOK` ve öğesini olarak `ENOSYS`ayarlar `errno` .
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|İsteğe bağlı başlık|
 |-------------|---------------------|---------------------|
-|`_heapset`|\<malloc.h >|\<errno.h >|
+|`_heapset`|\<malloc. h >|\<errno. h >|
 
-Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../c-runtime-library/compatibility.md) giriş.
+Daha fazla uyumluluk bilgisi için bkz. karşılama 'da [Uyumluluk](../c-runtime-library/compatibility.md) .
 
 ## <a name="example"></a>Örnek
 

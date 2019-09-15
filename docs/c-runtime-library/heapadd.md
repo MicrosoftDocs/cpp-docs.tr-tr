@@ -1,9 +1,9 @@
 ---
 title: _heapadd
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _heapadd
-apilocation:
+api_location:
 - msvcr100.dll
 - msvcr110_clr0400.dll
 - msvcr120.dll
@@ -11,7 +11,10 @@ apilocation:
 - msvcrt.dll
 - msvcr110.dll
 - msvcr90.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - heapadd
 - _heapadd
@@ -21,19 +24,19 @@ helpviewer_keywords:
 - heaps, adding memory
 - heapadd function
 ms.assetid: 4d691fe2-2763-49f4-afb1-62738b7cd3ff
-ms.openlocfilehash: 8cfd2a5a112a7a5b578f7b6dfcdcc3998596bc86
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4be87710519c9a389adbaf41fefddb9ea8dfb1e6
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62289617"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70940278"
 ---
-# <a name="heapadd"></a>_heapadd
+# <a name="_heapadd"></a>_heapadd
 
-Bellek yığına ekler.
+Yığına bellek ekler.
 
 > [!IMPORTANT]
->  Bu işlev artık kullanılmıyor. Visual Studio 2015'te başlayarak, CRT içinde kullanılamaz.
+>  Bu işlev artık kullanılmıyor. Visual Studio 2015 ' den başlayarak CRT ' de kullanılamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -47,28 +50,28 @@ int _heapadd(
 #### <a name="parameters"></a>Parametreler
 
 *memblock*<br/>
-Yığın bellek işaretçisi.
+Yığın belleği işaretçisi.
 
-*Boyutu*<br/>
-Eklenecek bayt cinsinden bellek boyutu.
+*boyutla*<br/>
+Eklenecek bellek boyutu (bayt cinsinden).
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, `_heapadd` ; 0 döndürür. Aksi halde, işlev -1 döndürür ve ayarlar `errno` için `ENOSYS`.
+Başarılı olursa, `_heapadd` 0 döndürür; Aksi takdirde, işlev-1 döndürür ve öğesini `errno` olarak `ENOSYS`ayarlar.
 
 Bu ve diğer dönüş kodları hakkında daha fazla bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Visual C++ sürüm 4. 0 ile başlayarak, yığın temelindeki, yeni hata ayıklama özellikleri desteklemek için C çalışma zamanı kitaplıklarına taşındı. Sonuç olarak, `_heapadd` artık Win32 API tabanlı herhangi bir platformda desteklenmiyor.
+Visual C++ sürüm 4,0 ' den başlayarak, temeldeki yığın yapısı yeni hata ayıklama özelliklerini desteklemek için C çalışma zamanı kitaplıklarına taşınmıştır. Sonuç olarak, `_heapadd` Win32 API dayalı hiçbir platformda artık desteklenmez.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|İsteğe bağlı başlık|
 |-------------|---------------------|---------------------|
-|`_heapadd`|\<malloc.h >|\<errno.h >|
+|`_heapadd`|\<malloc. h >|\<errno. h >|
 
-Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../c-runtime-library/compatibility.md) giriş.
+Daha fazla uyumluluk bilgisi için bkz. karşılama 'da [Uyumluluk](../c-runtime-library/compatibility.md) .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

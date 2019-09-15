@@ -1,7 +1,7 @@
 ---
 title: _STATIC_ASSERT Makrosu
 ms.date: 11/04/2016
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -12,22 +12,25 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _STATIC_ASSERT
 helpviewer_keywords:
 - _STATIC_ASSERT macro
 ms.assetid: 89b0350c-2c2f-4be6-9786-8b1f0780a5da
-ms.openlocfilehash: 5d3aa1d9665b48a0690d8eb62353fc98c5a550f7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ac609fc7af937b6f56cd5b310341409187df7de4
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62354706"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70957940"
 ---
-# <a name="staticassert-macro"></a>_STATIC_ASSERT Makrosu
+# <a name="_static_assert-macro"></a>_STATIC_ASSERT Makrosu
 
-Derleme zamanında bir ifadeyi değerlendirir ve sonucu olduğunda bir hata oluşturmak **FALSE**.
+Derleme zamanında bir ifadeyi değerlendirin ve sonuç **false**olduğunda bir hata oluşturun.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -39,16 +42,16 @@ _STATIC_ASSERT(
 
 ### <a name="parameters"></a>Parametreler
 
-*booleanDeyimi*<br/>
-İçin sıfır dışında değerlendirilen (işaretçileri dahil) ifade (**TRUE**) veya 0 (**FALSE**).
+*Boolean*<br/>
+Sıfır (**true**) veya 0 (**false**) olarak değerlendirilen ifade (işaretçiler dahil).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu makro benzer [_ASSERT ve _ASSERTE makroları](assert-asserte-assert-expr-macros.md)dışında *booleanDeyimi* derleme zamanında yerine çalışma zamanında değerlendirilir. Varsa *booleanDeyimi* değerlendiren **FALSE** (0) [derleyici hatası C2466](../../error-messages/compiler-errors-1/compiler-error-c2466.md) oluşturulur.
+Bu makro, [_Onay ve _ASSERTE makrolarına benzer ve](assert-asserte-assert-expr-macros.md)bu durum, *Boolean* , çalışma zamanı yerine derleme zamanında değerlendirilir. *Boolean* **değeri false** (0) olarak değerlendirilirse, [derleyici hatası C2466](../../error-messages/compiler-errors-1/compiler-error-c2466.md) oluşturulur.
 
 ## <a name="example"></a>Örnek
 
-Bu örnekte biz denetleyin olup olmadığını [sizeof](../../c-language/sizeof-operator-c.md) bir **int** değerden büyük veya eşittir 2 bayt ve [sizeof](../../c-language/sizeof-operator-c.md) bir **uzun** 1 bayt. Program derlenmez ve onu oluşturacaktır [derleyici hatası C2466](../../error-messages/compiler-errors-1/compiler-error-c2466.md) çünkü bir **uzun** 1 bayt büyük.
+Bu örnekte, [sizeof](../../c-language/sizeof-operator-c.md) bir **int** 'in 2 bayttan büyük veya buna eşit olup olmadığını ve [sizeof](../../c-language/sizeof-operator-c.md) 'un **Long** 'ın 1 bayt olup olmadığını denetliyoruz. Program derlenmez ve **Long** 1 bayttan büyük olduğu Için [derleyici hatası C2466](../../error-messages/compiler-errors-1/compiler-error-c2466.md) oluşturacaktır.
 
 ```C
 // crt__static_assert.c
@@ -72,7 +75,7 @@ int main()
 
 |Makrosu|Gerekli başlık|
 |-----------|---------------------|
-|**_STATIC_ASSERT**|\<crtdbg.h >|
+|**_STATIC_ONAYLAMA**|\<Crtdbg. h >|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

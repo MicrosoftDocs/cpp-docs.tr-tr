@@ -1,10 +1,10 @@
 ---
 title: _fgetchar, _fgetwchar
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _fgetchar
 - _fgetwchar
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - fgetwchar
 - _fgettchar
@@ -32,16 +35,16 @@ helpviewer_keywords:
 - standard input, reading from
 - fgetchar function
 ms.assetid: 8bce874c-701a-41a3-b1b2-feff266fb5b9
-ms.openlocfilehash: c74618fa0be5392062d13618ff73e2ef45bf7c2a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 90a97308b8c60776d52e58feb84c5398456f26d5
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62333962"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70940871"
 ---
-# <a name="fgetchar-fgetwchar"></a>_fgetchar, _fgetwchar
+# <a name="_fgetchar-_fgetwchar"></a>_fgetchar, _fgetwchar
 
-Bir karakter okur **stdin**.
+**STDIN**'den bir karakter okur.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -52,13 +55,13 @@ wint_t _fgetwchar( void );
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**\_fgetchar** olarak okuma karakteri döndürür bir **int** veya döndürür `EOF` bir hata veya dosya sonunu belirtmek için. **\_fgetwchar** döndürür, olarak bir [wint_t](../../c-runtime-library/standard-types.md), döndürür veya okuma karakterine karşılık gelen geniş karakter `WEOF` bir hata veya dosya sonunu belirtmek için. Her iki işlev için kullanmak **feof** veya **ferror** hata ve bir dosya sonu koşulunu ayırt etmek için.
+fgetchar, bir **int** olarak okunan karakteri döndürür veya bir `EOF` hata ya da dosya sonunu belirtmek için döndürür.  **\_** fgetwchar, bir hata ya [](../../c-runtime-library/standard-types.md)da dosya sonunu göstermek için Read veya döndürüyor `WEOF` karakterine karşılık gelen geniş karakter, wint_t olarak döndürülür.  **\_** Her iki işlev için de bir hata ve dosya sonu koşulu arasında ayrım yapmak için **feof** veya **ferror** kullanın.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevleri tek bir karakter okur **stdin**. İşlevi ardından ilgili dosya işaretleyicisini (tanımlıysa) sonraki karaktere işaret etmek üzere artırır. Akış dosya sonunda ise, akış için dosya sonu göstergesi ayarlanır.
+Bu işlevler, **stdin**'den tek bir karakter okur. İşlev daha sonra, ilişkili dosya işaretçisini (tanımlanmışsa) sonraki karakteri işaret etmek için artırır. Akış dosyanın sonunda ise, akış için dosya sonu göstergesi ayarlanır.
 
-**_fgetchar** eşdeğerdir `fgetc( stdin )`. Ayrıca değerine eşdeğer olan **getchar**, ancak bir işlev ve makro olarak değil, yalnızca işlev olarak uygulanır. **_fgetwchar** öğesinin geniş karakterli sürümüdür **_fgetchar**.
+**_fgetchar** ile `fgetc( stdin )`eşdeğerdir. Ayrıca, **GetChar**öğesine eşdeğerdir, ancak bir işlev ve makro olarak değil, yalnızca işlev olarak uygulanır. **_fgetwchar** , **_fgetchar**öğesinin geniş karakterli sürümüdür.
 
 Bu işlevler ANSI standardı ile uyumlu değildir.
 
@@ -72,10 +75,10 @@ Bu işlevler ANSI standardı ile uyumlu değildir.
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**_fgetchar**|\<stdio.h >|
-|**_fgetwchar**|\<stdio.h > veya \<wchar.h >|
+|**_fgetchar**|\<stdio. h >|
+|**_fgetwchar**|\<stdio. h > veya \<wchar. h >|
 
-Konsolu, Evrensel Windows Platformu (UWP) uygulamaları desteklenmez. Konsolları ile ilişkili standart akış işleyicileri —**stdin**, **stdout**, ve **stderr**— C çalışma zamanı işlevleri bunları UWP uygulamalarında kullanmadan önce yeniden yönlendirilmesi gerekiyor . Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Konsol Evrensel Windows Platformu (UWP) uygulamalarında desteklenmez. Bu konsol ile ilişkili standart akış tutamaçları (**stdin**, **stdout**ve **stderr**), C çalışma zamanı işlevlerinin bunları UWP uygulamalarında kullanabilmesi için yeniden yönlendirilmelidir. Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
@@ -117,6 +120,6 @@ Line two.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Stream g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [fputc, fputwc](fputc-fputwc.md)<br/>
 [getc, getwc](getc-getwc.md)<br/>

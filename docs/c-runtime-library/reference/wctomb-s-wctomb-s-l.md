@@ -1,10 +1,10 @@
 ---
 title: wctomb_s, _wctomb_s_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _wctomb_s_l
 - wctomb_s
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-convert-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - wctomb_s
 - _wctomb_s_l
@@ -29,12 +32,12 @@ helpviewer_keywords:
 - characters, converting
 - string conversion, multibyte character strings
 ms.assetid: 7e94a888-deed-4dbd-b5e9-d4a0455538b8
-ms.openlocfilehash: 1eaa6f0b81daaa7d8c7626398fe30b45ead979c3
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 329724ca0196e07397d4f0337a2bf0aa2db05c84
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69498923"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70957900"
 ---
 # <a name="wctomb_s-_wctomb_s_l"></a>wctomb_s, _wctomb_s_l
 
@@ -84,8 +87,8 @@ Hata koşulları
 |*mbchar*|*sizeInBytes*|Dönüş değeri|*pRetValue*|
 |--------------|-------------------|------------------|-----------------|
 |**DEĞER**|>0|**EINVAL**|değiştirilmedi|
-|kaydedilmemiş|>**INT_MAX**|**EINVAL**|değiştirilmedi|
-|kaydedilmemiş|çok küçük|**EINVAL**|değiştirilmedi|
+|Kaydedilmemiş|>**INT_MAX**|**EINVAL**|değiştirilmedi|
+|Kaydedilmemiş|çok küçük|**EINVAL**|değiştirilmedi|
 
 Yukarıdaki hata koşullarından herhangi biri oluşursa, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa **wctomb** , **EINVAL** döndürür ve **errno** değerini **EINVAL**olarak ayarlar.
 

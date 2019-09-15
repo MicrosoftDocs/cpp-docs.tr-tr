@@ -1,12 +1,12 @@
 ---
 title: _printf_p, _printf_p_l, _wprintf_p, _wprintf_p_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _printf_p
 - _wprintf_p
 - _printf_p_l
 - _wprintf_p_l
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - wprintf_p
 - _wprintf_p
@@ -39,16 +42,16 @@ helpviewer_keywords:
 - tprintf_p_l function
 - _printf_p_l function
 ms.assetid: 1b7e9ef9-a069-45db-af9d-c2730168322e
-ms.openlocfilehash: c7d798bde3ab68541bdcd64b768275b864694284
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 555739fbcdd3503461d7b831660a94602f244aa3
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64345191"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70950259"
 ---
-# <a name="printfp-printfpl-wprintfp-wprintfpl"></a>_printf_p, _printf_p_l, _wprintf_p, _wprintf_p_l
+# <a name="_printf_p-_printf_p_l-_wprintf_p-_wprintf_p_l"></a>_printf_p, _printf_p_l, _wprintf_p, _wprintf_p_l
 
-Standart çıkış akışına biçimlendirilmiş çıkışı yazdırır ve parametreleri bir biçim dizesinde kullanılan order belirtimi sağlar.
+, Biçimli çıktıyı standart çıkış akışına yazdırır ve parametrelerin biçim dizesinde kullanıldığı sıranın belirtimini sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -75,33 +78,33 @@ int _wprintf_p_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*Biçim*<br/>
-Biçim Denetimi.
+*format*<br/>
+Biçim denetimi.
 
-*Bağımsız değişken*<br/>
+*değişkendir*<br/>
 İsteğe bağlı bağımsız değişkenler.
 
-*Yerel ayar*<br/>
+*ayarlar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bir hata oluşursa yazdırılan karakter veya negatif bir değer döndürür.
+Bir hata oluşursa yazdırılan karakter sayısını veya negatif bir değer döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Printf_p** işlevi biçimlendirir ve bir dizi karakter ve değerlerini standart çıkış akışına yazdırır **stdout**. Bağımsız değişkenler izlerseniz *biçimi* dize *biçimi* dizesi bağımsız değişkenler için çıkış biçimini belirleyen belirtimler içermelidir (bkz [printf_p konumsal parametreler](../../c-runtime-library/printf-p-positional-parameters.md)).
+**_Printf_p** işlevi, standart çıkış akışına, **stdout**öğesine bir dizi karakter ve değer yazar ve yazdırır. Bağımsız değişkenler *Biçim* dizesini izleyemiyorsa, *Biçim* dizesi bağımsız değişkenler için çıkış biçimini belirten belirtimleri içermelidir (bkz. [printf_p konumsal Parameters](../../c-runtime-library/printf-p-positional-parameters.md)).
 
-Arasındaki fark **_printf_p** ve **printf_s** olan **_printf_p** bağımsız değişkenleri olan sırasını belirtmeye izin veren konum parametrelerini desteklemesidir Biçim dizesindeki kullanılır. Daha fazla bilgi için [printf_p konumsal parametreler](../../c-runtime-library/printf-p-positional-parameters.md).
+**_Printf_p** ve **printf_s** arasındaki fark, **_printf_p** 'in biçim dizesinde bağımsız değişkenlerin kullanıldığı sırayı belirtmeye izin veren konumsal parametreleri desteklemeleridir. Daha fazla bilgi için bkz. [Printf_p konumsal Parameters](../../c-runtime-library/printf-p-positional-parameters.md).
 
-**_wprintf_p** öğesinin geniş karakterli sürümüdür **_printf_p**; akış ANSI modunda açılırsa, aynı şekilde davranırlar. **_printf_p** UNICODE akışına çıkış şu anda desteklemiyor.
+**_wprintf_p** , **_printf_p**öğesinin geniş karakterli sürümüdür; Akış ANSI modunda açılırsa aynı şekilde davranır. **_printf_p** Şu anda UNICODE bir akışa çıktıyı desteklemez.
 
-Sahip bu işlevlerin sürümleri **_l** sonekine, geçerli iş parçacığı yerel ayarı yerine iletilen yerel ayar parametresini kullanmalarıdır.
+**_L** sonekine sahip bu işlevlerin sürümleri, geçerli iş parçacığı yerel ayarı yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır.
 
 > [!IMPORTANT]
-> Emin *biçimi* kullanıcı tanımlı bir dize değil.
+> *Biçimin* Kullanıcı tanımlı bir dize olmadığından emin olun.
 
-Varsa *biçimi* veya *bağımsız değişken* olan **NULL**, ya da biçimi dizesi geçersiz biçim karakterleri içeriyorsa **_printf_p** ve **_wprintf_p** açıklandığı gibi geçersiz parametre işleyicisini işlevleri çağıran [Parameter Validation](../../c-runtime-library/parameter-validation.md). Devam etmek için işlev -1 döndürür ve kümeleri yürütülmesine izin veriliyorsa **errno** için **EINVAL**.
+*Biçim* veya *bağımsız değişken* **null**veya biçim dizesi geçersiz biçimlendirme karakterleri Içeriyorsa, **_printf_p** ve **_wprintf_p** işlevleri [parametre doğrulama bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır ](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin veriliyorsa işlev-1 döndürür ve **errno** öğesini **EINVAL**olarak ayarlar.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -114,10 +117,10 @@ Varsa *biçimi* veya *bağımsız değişken* olan **NULL**, ya da biçimi dizes
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_printf_p**, **_printf_p_l**|\<stdio.h >|
-|**_wprintf_p**, **_wprintf_p_l**|\<stdio.h > veya \<wchar.h >|
+|**_printf_p**, **_printf_p_l**|\<stdio. h >|
+|**_wprintf_p**, **_wprintf_p_l**|\<stdio. h > veya \<wchar. h >|
 
-Konsolu, Evrensel Windows Platformu (UWP) uygulamaları desteklenmez. Konsolları ile ilişkili standart akış işleyicileri **stdin**, **stdout**, ve **stderr**, C çalışma zamanı işlevleri bunları UWP uygulamalarında kullanmadan önce yeniden yönlendirilmesi gerekiyor . Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Konsol Evrensel Windows Platformu (UWP) uygulamalarında desteklenmez. Console, **STDIN**, **stdout**ve **stderr**Ile ilişkili standart akış TUTAMAÇLARı, C çalışma zamanı işlevlerinin UWP uygulamalarında kullanabilmesi için yeniden yönlendirilmelidir. Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
@@ -152,7 +155,7 @@ Width specifiers:     Hello
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
-[Stream g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [locale](../../c-runtime-library/locale.md)<br/>
 [fopen, _wfopen](fopen-wfopen.md)<br/>
 [_fprintf_p, _fprintf_p_l, _fwprintf_p, _fwprintf_p_l](fprintf-p-fprintf-p-l-fwprintf-p-fwprintf-p-l.md)<br/>

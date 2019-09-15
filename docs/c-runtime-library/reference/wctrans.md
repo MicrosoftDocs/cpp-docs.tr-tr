@@ -1,9 +1,9 @@
 ---
 title: wctrans
 ms.date: 11/04/2016
-apiname:
+api_name:
 - wctrans
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-convert-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - wctrans
 helpviewer_keywords:
@@ -24,16 +27,16 @@ helpviewer_keywords:
 - characters, converting
 - wctrans function
 ms.assetid: 215404bf-6d60-489c-9ae9-880e6b586162
-ms.openlocfilehash: 3c7aace7a93160d2e9a4c1523d49bcaf6ae4dc20
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a75de3b699d0eb5ec6117d0f627e6a8ba34dbc62
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62188461"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70944883"
 ---
 # <a name="wctrans"></a>wctrans
 
-Başka bir karakter kodlarını kümesindeki bir eşleme belirler.
+Bir karakter kodu kümesinden diğerine eşlemeyi belirler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -46,28 +49,28 @@ wctrans_t wctrans(
 ### <a name="parameters"></a>Parametreler
 
 *property*<br/>
-Geçerli dönüşümler birini belirten bir dize.
+Geçerli dönüşümlerinden birini belirten bir dize.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Varsa **LC_CTYPE** geçerli yerel ayarının kategori adı, özellik dizesi ile eşleşen bir eşleme tanımlamıyor *özelliği*, sıfır döndürür. Aksi takdirde, sıfır dışında bir değeri ikinci bağımsız değişken olarak kullanmak için uygun bir sonraki çağrı döndürür [towctrans](towctrans.md).
+Geçerli yerel ayarın **LC_CTYPE** kategorisi, adı özellik dizesi *özelliği*ile eşleşen bir eşleme tanımlamıyorsa, işlev sıfır döndürür. Aksi halde, sonraki [towctrans](towctrans.md)çağrısının ikinci bağımsız değişkeni olarak kullanılmak üzere uygun olmayan bir değer döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlev, başka bir karakter kodlarını kümesindeki bir eşleme belirler.
+Bu işlev, bir karakter kodu kümesinden diğerine eşlemeyi belirler.
 
-Aşağıdaki çağrıları çiftleri tüm yerel ayarlarda aynı davranışa sahip, ancak ek eşlemeleri bile "C" yerel ayarında tanımlamak da mümkündür:
+Aşağıdaki çağrı çiftleri tüm yerel ayarlarda aynı davranışa sahiptir, ancak "C" yerel ayarında bile ek eşlemeler tanımlamak mümkündür:
 
 |İşlev|Aynı|
 |--------------|-------------|
-|tolower(c)|towctrans (c wctrans("towlower"))|
-|towupper(c)|towctrans (c wctrans("toupper"))|
+|ToLower (c)|towctrans (c, wctrans ("towlower"))|
+|kasaüst (c)|towctrans (c, wctrans ("ToUpper"))|
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli başlık|
+|Yordam|Gerekli üst bilgi|
 |-------------|---------------------|
-|**wctrans**|\<wctype.h >|
+|**wctrans**|\<wctype. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

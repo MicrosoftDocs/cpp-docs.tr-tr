@@ -1,10 +1,10 @@
 ---
 title: memcmp, wmemcmp
 ms.date: 11/04/2016
-apiname:
+api_name:
 - memcmp
 - wmemcmp
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,8 +17,10 @@ apilocation:
 - ntdll.dll
 - ucrtbase.dll
 - ntoskrnl.exe
-apitype: DLLExport
-topictype: APIRef
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - memcmp
 - wmemcmp
@@ -26,16 +28,16 @@ helpviewer_keywords:
 - wmemcmp function
 - memcmp function
 ms.assetid: 0c21c3e3-8ee4-40e5-add1-eb26d225fd8d
-ms.openlocfilehash: 228a74ac8cc83bca169779f1afd6936f5be59bee
-ms.sourcegitcommit: 010ecc2bb9a15deea192a34975176ec0426aa3d8
+ms.openlocfilehash: 2fa902c0fa5a4a78f6fd3e46edeb3799aaf92569
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66265622"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70951929"
 ---
 # <a name="memcmp-wmemcmp"></a>memcmp, wmemcmp
 
-İki arabellek karakterleri karşılaştırır.
+İki arabelleki karakterleri karşılaştırır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -55,40 +57,40 @@ int wmemcmp(
 ### <a name="parameters"></a>Parametreler
 
 *buffer1*<br/>
-İlk arabelleği.
+İlk arabellek.
 
 *buffer2*<br/>
-İkinci bir arabellek.
+İkinci arabellek.
 
-*Sayısı*<br/>
-Karşılaştırılacak karakter sayısı. (İçin bayt karşılaştırır **memcmp**, geniş karakterler için **wmemcmp**).
+*biriktirme*<br/>
+Karşılaştırılacak karakter sayısı. ( **Memcmp**için baytları ve **wmemcmp**için geniş karakterleri karşılaştırır).
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Dönüş değeri, arabellek arasındaki ilişkiyi gösterir.
+Dönüş değeri, arabellekler arasındaki ilişkiyi gösterir.
 
-|Dönüş değeri|İlişki ilk *sayısı* buf1 ve buf2 karakter|
+|Dönüş değeri|Buf1 ve buf2 'in ilk *sayı* karakterlerinin ilişkisi|
 |------------------|---------------------------------------------------------------|
 |< 0|*buffer1* küçüktür *buffer2*|
-|0|*buffer1* aynı *buffer2*|
-|> 0|*buffer1* büyüktür *buffer2*|
+|0|*buffer1* özdeş *buffer2*|
+|> 0|*buffer1* daha büyük *buffer2*|
 
 ## <a name="remarks"></a>Açıklamalar
 
-İlk karşılaştırır *sayısı* karakterlerinden *buffer1* ve *buffer2* ve ilişkilerini gösteren bir değer döndürür. Oturum ilk farklı çift arabellekler değerler arasındaki farkın değerdir sıfır olmayan bir oturum döndürür. Değerleri olarak yorumlanır **işaretsiz** **char** için **memcmp**ve **wchar_t** için **wmemcmp**.
+*Buffer1* ve *buffer2* öğesinin ilk *sayı* karakterlerini karşılaştırır ve ilişkilerini gösteren bir değer döndürür. Sıfır olmayan bir dönüş değeri işareti, arabelleklerindeki ilk farklı değer çifti arasındaki farkın işaret değeridir. Değerler, **memcmp**için **imzasız** **karakter** ve **wmemcmp**için **wchar_t** olarak yorumlanır.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**memcmp**|\<Memory.h > veya \<string.h >|
-|**wmemcmp**|\<wchar.h >|
+|**memcmp**|\<Memory. h > veya \<String. h >|
+|**wmemcmp**|\<wchar. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 
-Tüm sürümleri [C çalışma zamanı kitaplığı](../../c-runtime-library/crt-library-features.md).
+[C çalışma zamanı kitaplığının](../../c-runtime-library/crt-library-features.md)tüm sürümleri.
 
 ## <a name="example"></a>Örnek
 

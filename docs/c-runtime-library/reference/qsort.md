@@ -1,9 +1,9 @@
 ---
 title: qsort
 ms.date: 11/04/2016
-apiname:
+api_name:
 - qsort
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - ucrtbase.dll
 - api-ms-win-crt-utility-l1-1-0.dll
 - ntoskrnl.exe
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - qsort
 helpviewer_keywords:
@@ -26,16 +29,16 @@ helpviewer_keywords:
 - sorting arrays
 - arrays [CRT], sorting
 ms.assetid: d6cb33eb-d209-485f-8d41-229eb743c027
-ms.openlocfilehash: 8a770965a03e43227b99f122924c723691f79c61
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f445158bb72c50507af913986aff2d225ee50928
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62358105"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70949705"
 ---
 # <a name="qsort"></a>qsort
 
-Hızlı sıralama gerçekleştirir. Bu işlevin daha güvenli bir sürümü kullanılabilir; bkz: [qsort_s](qsort-s.md).
+Hızlı bir sıralama gerçekleştirir. Bu işlevin daha güvenli bir sürümü kullanılabilir; bkz. [qsort_s](qsort-s.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -51,44 +54,44 @@ void qsort(
 ### <a name="parameters"></a>Parametreler
 
 *base*<br/>
-Hedef dizi başlangıcı.
+Hedef dizinin başlangıcı.
 
-*Sayı*<br/>
-Öğeleri dizi boyutu.
+*sayısından*<br/>
+Öğelerde dizi boyutu.
 
 *Genişlik*<br/>
-Öğe boyutunu bayt cinsinden.
+Bayt cinsinden öğe boyutu.
 
-*Karşılaştırma*<br/>
-Kullanıcı tarafından sağlanan iki diziyi öğe karşılaştırır ve bunların belirten bir değeri döndüren bir yordam için işaretçi.
+*Karşılaştır*<br/>
+İki dizi öğesini karşılaştıran ve ilişkilerini belirten bir değer döndüren kullanıcı tarafından sağlanan bir yordamın işaretçisi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Qsort** işlevi uygulayan bir dizi sıralamak için hızlı Sıralama algoritması *numarası* öğeleri, her biri *genişliği* bayt. Bağımsız değişken *temel* sıralanacak dizinin temel bir işaretçisidir. **qsort** sıralanmış öğelerini kullanarak bu dizinin üzerine yazar.
+**Qsort** işlevi, *sayı* öğelerinden her biri *Genişlik* baytından oluşan bir diziyi sıralamak için hızlı bir sıralama algoritması uygular. Bağımsız değişken *tabanı* , sıralanacak dizinin temelini gösteren bir işaretçidir. **qsort** sıralanmış öğeleri kullanarak bu dizinin üzerine yazar.
 
-**qsort** çağrıları *karşılaştırma* rutin bir veya daha fazla zaman sıralama sırasında ve işaretçileri iki dizi öğelerine her çağrıda geçirir.
+**qsort** , sıralama sırasında *karşılaştırma* yordamını bir veya daha fazla kez çağırır ve her çağrıda işaretçileri iki dizi öğesine geçirir.
 
 ```C
 compare( (void *) & elem1, (void *) & elem2 );
 ```
 
-Yordam, öğeleri karşılaştırır ve aşağıdaki değerlerden birini döndürür.
+Rutin öğeleri karşılaştırır ve aşağıdaki değerlerden birini döndürür.
 
-|İşlev dönüş değeri karşılaştırın|Açıklama|
+|İşlev dönüş değerini Karşılaştır|Açıklama|
 |-----------------------------------|-----------------|
 |< 0|**elem1** küçüktür **elem2**|
-|0|**elem1** eşdeğer **elem2**|
-|> 0|**elem1** büyüktür **elem2**|
+|0|**elem1** eşdeğeri **elem2**|
+|> 0|**elem1** daha büyük **elem2**|
 
-Dizi karşılaştırma işlevi tarafından tanımlandığı şekilde, artan düzende sıralanır. Azalan olarak bir diziyi sıralamak için "büyüktür" ve "az" karşılaştırma işlevde anlamı ters çevir.
+Dizi, karşılaştırma işlevi tarafından tanımlanan şekilde artan sırada sıralanır. Bir diziyi azalan sırada sıralamak için karşılaştırma işlevindeki "büyüktür" ve "küçüktür" durumunu ters çevirin.
 
-Bu işlev, parametrelerini doğrular. Varsa *karşılaştırmak* veya *numarası* olan **NULL**, veya *temel* olan **NULL** ve *numarası* sıfır değilse, ya da Eğer *genişliği* küçük sıfırdan, geçersiz parametre işleyicisi açıklandığı gibi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse, işlev döndürür ve **errno** ayarlanır **EINVAL**.
+Bu işlev, parametrelerini doğrular. *Compare* veya *Number* değeri **null**ise veya *taban* **null** ise ve *sayı* sıfır değilse ya da *Genişlik* sıfırdan küçükse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, işlev döndürür ve **errno** , **EINVAL**olarak ayarlanır.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**qsort**|\<stdlib.h > ve \<search.h >|
+|**qsort**|\<Stdlib. h > ve \<Search. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

@@ -1,9 +1,9 @@
 ---
 title: _configthreadlocale
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _configthreadlocale
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-locale-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _configthreadlocale
 - configthreadlocale
@@ -26,14 +29,14 @@ helpviewer_keywords:
 - per-thread locale
 - thread locale
 ms.assetid: 10e4050e-b587-4f30-80bc-6c76b35fc770
-ms.openlocfilehash: 99e10a0330ba4880ea181e9fe3d56f3fb6bd6493
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: aac0d36654a81e5d616ffff28e5a254fe06628a3
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62340267"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70939016"
 ---
-# <a name="configthreadlocale"></a>_configthreadlocale
+# <a name="_configthreadlocale"></a>_configthreadlocale
 
 İş parçacığı başına yerel ayar seçeneklerini yapılandırır.
 
@@ -46,33 +49,33 @@ int _configthreadlocale( int per_thread_locale_type );
 ### <a name="parameters"></a>Parametreler
 
 *per_thread_locale_type*<br/>
-Ayarlanacak seçenek. Aşağıdaki tabloda listelenen seçeneklerden biri.
+Ayarlanacak seçenek. Aşağıdaki tabloda listelenen seçeneklerden biridir.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Önceki iş parçacığı başına yerel ayar durumu (**_DISABLE_PER_THREAD_LOCALE** veya **_ENABLE_PER_THREAD_LOCALE**), veya hata durumunda -1.
+Önceki iş parçacığı başına yerel ayar durumu ( **_Disable_per_thread_locale** veya **_ENABLE_PER_THREAD_LOCALE**) veya hata durumunda-1.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Configurethreadlocale** işlevi, iş parçacığına özgü yerel ayarların kullanımını denetlemek için kullanılır. Şunlardan birini kullanın *per_thread_locale_type* iş parçacığı başına yerel ayar durumunu belirlemek için seçenekleri:
+**_Configurethreadlocale** işlevi, iş parçacığına özgü yerel ayarların kullanımını denetlemek için kullanılır. İş parçacığı başına yerel ayar durumunu belirtmek veya belirlemek için şu *per_thread_locale_type* seçeneklerinden birini kullanın:
 
 | Seçenek | Açıklama |
 |-|-|
-| **_ENABLE_PER_THREAD_LOCALE** | Geçerli iş parçacığı kullanımı iş parçacığına özgü yerel ayarı olun. Yapılan sonraki çağrılar **setlocale** bu iş parçacığındaki yalnızca iş parçacığının kendi yerel ayarını etkiler. |
-| **_DISABLE_PER_THREAD_LOCALE** | Geçerli iş parçacığının genel yerel ayar kullanmasını olun. Yapılan sonraki çağrılar **setlocale** bu iş parçacığındaki küresel yerel ayarı kullanan diğer iş parçacıklarını etkiler. |
+| **_ENABLE_PER_THREAD_LOCALE** | Geçerli iş parçacığının iş parçacığına özgü yerel ayar kullanmasını sağlayın. Bu iş parçacığında **setlocale** 'e yapılan sonraki çağrılar yalnızca iş parçacığının kendi yerel ayarını etkiler. |
+| **_DISABLE_PER_THREAD_LOCALE** | Geçerli iş parçacığının genel yerel ayarı kullanmasını sağlayın. Bu iş parçacığında **setlocale** 'e yapılan sonraki çağrılar, genel yerel ayarı kullanan diğer iş parçacıklarını etkiler. |
 | **0** | Bu belirli iş parçacığının geçerli ayarını alır. |
 
-Bu işlevler davranışını etkileyen **setlocale**, **_tsetlocale**, **_wsetlocale**, ve **_setmbcp**. İş parçacığı başına yerel ayar devre dışı, herhangi bir sonraki çağrı olduğunda **setlocale** veya **_wsetlocale** genel yerel ayar kullanan tüm iş parçacıklarının yerel ayarını değiştirir. İş parçacığı başına yerel ayar etkin olduğunda, **setlocale** veya **_wsetlocale** yalnızca geçerli iş parçacığının yerel ayarını etkiler.
+Bu işlevler, **setlocale**, **_tsetlocale**, **_wsetlocale**ve **_setmbcp**davranışlarını etkiler. İş parçacığı başına yerel ayar devre dışı bırakıldığında, **setlocale** veya **_wsetlocale** öğesine yapılan sonraki çağrıya genel yerel ayarı kullanan tüm iş parçacıklarının yerel ayarı değişir. İş parçacığı başına yerel ayar etkinleştirildiğinde, **setlocale** veya **_wsetlocale** yalnızca geçerli iş parçacığının yerel ayarını etkiler.
 
-Kullanırsanız **_configurethreadlocale** bir iş parçacığı başına yerel ayarı etkinleştirmek için çağırmanızı öneririz **setlocale** veya **_wsetlocale** bu iş parçacığındaki tercih edilen yerel ayarı belirlemek için hemen sonra.
+İş parçacığı başına yerel ayarı etkinleştirmek için **_configurethreadlocale** kullanırsanız, bu iş parçacığında tercih edilen yerel ayarı hemen daha sonra ayarlamak için **setlocale** veya **_wsetlocale** ' i çağırmanız önerilir.
 
-Varsa *per_thread_locale_type* değerlerden biri değil tabloda listelenen, bu işlev geçersiz parametre işleyicisi açıklandığı gibi çağırır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütme devam etmesine izin verilirse, bu işlev ayarlar **errno** için **EINVAL** ve -1 döndürür.
+*Per_thread_locale_type* tabloda listelenen değerlerden biri değilse, bu Işlev [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev **errno** ' ı **EINVAL** olarak ayarlar ve-1 döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_configthreadlocale**|\<Locale.h >|
+|**_configthreadlocale**|\<locale. h >|
 
 ## <a name="example"></a>Örnek
 

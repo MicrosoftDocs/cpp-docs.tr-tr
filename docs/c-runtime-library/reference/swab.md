@@ -1,10 +1,10 @@
 ---
 title: _swab
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _swab
 - stdlib/_swab
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-utility-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _swab
 - stdlib/_swab
@@ -26,16 +29,16 @@ helpviewer_keywords:
 - swab function
 - bytes, swapping
 ms.assetid: 017142f2-050c-4f6a-8b49-6b094f58ec94
-ms.openlocfilehash: 64753383bcb94947e6b413b5f55ac6e2d9c7dbca
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b0faba55c42023f4d66adae68de6be2c1ab009a0
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62245516"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70946285"
 ---
-# <a name="swab"></a>_swab
+# <a name="_swab"></a>_swab
 
-Bayt değiştirir.
+Baytları değiştirir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -49,30 +52,30 @@ void _swab(
 
 ## <a name="parameters"></a>Parametreler
 
-*src*<br/>
-Kopyalanır ve takas için veriler.
+*YN*<br/>
+Kopyalanacak ve takas edilecek veriler.
 
-*Hedef*<br/>
-Değiştirilen verileri için depolama konumu.
+*HD*<br/>
+Takas edilen veriler için depolama konumu.
 
 *n*<br/>
-Kopyalanır ve takas için bayt sayısı.
+Kopyalanacak ve takas edilecek bayt sayısı.
 
 ## <a name="return-value"></a>Dönüş değeri
 
-**Swab** işlevi, bir değer döndürmüyor. İşlev kümeleri **errno** için **EINVAL** ya da *src* veya *dest* işaretçisi, null veya *n* küçük sıfır ve geçersiz parametre açıklandığı gibi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md).
+**Swab** işlevi bir değer döndürmüyor. *Src* veya *dest* işaretçisi null ya da *n* sıfırdan küçükse ve [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi, geçersiz parametre işleyicisi çağrıldığında, işlev **errno** 'ya **EINVAL** olarak ayarlar.
 
-Bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) bu ve diğer döndürme kodları hakkında daha fazla bilgi için.
+Bu ve diğer dönüş kodları hakkında daha fazla bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) .
 
 ## <a name="remarks"></a>Açıklamalar
 
-Varsa *n* olsa bile, **_swab** işlev kopyaları *n* bayt *src*bitişik bayt her çiftini değiştirir ve sonucu konumundadepolar*dest*. Varsa *n* tektir, **_swab** kopyalar ve ilk değiştirir *n*-1 bayt *src*, ve son bayt kopyalanmaz. **_Swab** işlevi genellikle farklı bayt sırası kullanan bir bilgisayara aktarmak için ikili verileri hazırlamak için kullanılır.
+*N* bile çiftse, **_swab** işlevi *src*'den *n* bayt kopyalar, her bir çift komşu bayt çiftini değiştirir ve sonucu *hedef*olarak depolar. *N* tek ise, **_swab** , *src*'nin ilk *n*-1 baytını kopyalar ve değiştirir ve son bayt kopyalanmaz. **_Swab** işlevi, genellikle ikili verileri farklı bir bayt sırası kullanan bir makineye aktarmak üzere hazırlamak için kullanılır.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_swab**|C: \<stdlib.h > C++: \<cstdlib > veya \<stdlib.h >|
+|**_swab**|C: \<Stdlib. h > C++: \<cstdlib > veya \<Stdlib. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

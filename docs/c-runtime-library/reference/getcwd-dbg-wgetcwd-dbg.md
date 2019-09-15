@@ -1,10 +1,10 @@
 ---
 title: _getcwd_dbg, _wgetcwd_dbg
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _wgetcwd_dbg
 - _getcwd_dbg
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-environment-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _getcwd_dbg
 - _wgetcwd_dbg
@@ -31,16 +34,16 @@ helpviewer_keywords:
 - _wgetcwd_dbg function
 - directories [C++], current working
 ms.assetid: 8d5d151f-d844-4aa6-a28c-1c11a22dc00d
-ms.openlocfilehash: 9616c5f7e29b4f003d3943ba058d1f1a1d5adb5c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3eb318b9b2faa8716abdd26eafa926c8072b5614
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62287234"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70955289"
 ---
-# <a name="getcwddbg-wgetcwddbg"></a>_getcwd_dbg, _wgetcwd_dbg
+# <a name="_getcwd_dbg-_wgetcwd_dbg"></a>_getcwd_dbg, _wgetcwd_dbg
 
-Hata ayıklama sürümleri [_getcwd, _wgetcwd](getcwd-wgetcwd.md) işlevleri (yalnızca hata ayıklama sırasında kullanılabilir).
+[_Getcwd, _wgetcwd](getcwd-wgetcwd.md) işlevlerinin hata ayıklama sürümleri (yalnızca hata ayıklama sırasında kullanılabilir).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -63,32 +66,32 @@ wchar_t *_wgetcwd_dbg(
 
 ### <a name="parameters"></a>Parametreler
 
-*Arabellek*<br/>
+*arabelleğin*<br/>
 Yol için depolama konumu.
 
 *maxlen*<br/>
-Karakter cinsinden yolun en fazla uzunluk: **char** için **_getcwd_dbg** ve **wchar_t** için **_wgetcwd_dbg**.
+Saniyedeki yolun uzunluk üst sınırı: **_getcwd_dbg** için **char** ve **_wgetcwd_dbg**için **wchar_t** .
 
 *blockType*<br/>
-İstenen bellek bloğu türü: **_clıent_block** veya **_NORMAL_BLOCK**.
+Bellek bloğunun istenen türü: **_Client_block** veya **_NORMAL_BLOCK**.
 
-*Dosya adı*<br/>
-Ayırma işlemi istenen kaynak dosyasının adını işaretçisi veya **NULL**.
+*kısaltın*<br/>
+Ayırma işlemini veya **null değerini**isteyen kaynak dosyanın adı işaretçisi.
 
-*LineNumber*<br/>
-Satır numarası kaynak dosyada ayırma işlemi burada istendi veya **NULL**.
+*onayın*<br/>
+Ayırma işleminin istendiği veya **null**olduğu kaynak dosyadaki satır numarası.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bir işaretçi döndürür *arabellek*. A **NULL** dönüş değeri bir hata gösterir ve **errno** ya da ayarlanmış **ENOMEM**, ayırmak için yeterli bellek olduğunu belirten *maxlen* bayt (zaman bir **NULL** bağımsız değişken olarak verilir *arabellek*), veya **ERANGE**, yolun daha uzun olduğunu belirten *maxlen*  karakter.
+*Arabelleğe*yönelik bir işaretçi döndürür. **Null** dönüş değeri bir hatayı gösterir ve **errno** , *maxlen* bayt ayırmak içinyeterli bellek olduğunu ( **null** bir bağımsız değişken *buffer*olarak verildiğinde) veya ERANGE olarak ayarlandığını belirten, yolun *maxlen* karakterden daha uzun olduğunu gösterir.
 
-Daha fazla bilgi için [errno _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Daha fazla bilgi için bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Getcwd_dbg** ve **_wgetcwd_dbg** işlevleri aynı **_getcwd** ve **_wgetcwd** dışında olduğunda **_ Hata ayıklama** olan tanımlanan, bu işlevlerin hata ayıklama sürümünü kullanmak **malloc** ve **_malloc_dbg** , bellek ayırmak için **NULL** olarak geçirilir İlk parametre. Daha fazla bilgi için [_malloc_dbg](malloc-dbg.md).
+**_Getcwd_dbg** ve **_wgetcwd_dbg** işlevleri, **_getcwd** ve **_wgetcwd** ile aynıdır; ancak **_hata ayıklama** tanımlandığında, bu işlevler **malloc** ve **_malloc_dbg** hata ayıklama sürümünü kullanır ilk parametre olarak **null** geçirilirse bellek ayırır. Daha fazla bilgi için bkz. [_malloc_dbg](malloc-dbg.md).
 
-Bu işlevler, çoğu durumda açıkça çağırmanız gerekmez. Bunun yerine, tanımlayabileceğiniz **_CRTDBG_MAP_ALLOC** bayrağı. Zaman **_CRTDBG_MAP_ALLOC** tanımlanır, çağrılar **_getcwd** ve **_wgetcwd** için eşleştirilir **_getcwd_dbg** ve **_ wgetcwd_dbg**sırasıyla ile *blockType* kümesine **_NORMAL_BLOCK**. Bu nedenle, yığın blokları olarak işaretlemek istediğiniz sürece bu işlevler açıkça çağırmanız gerekmez **_clıent_block**. Daha fazla bilgi için [hata ayıklama öbek üzerindeki blokları türleri](/visualstudio/debugger/crt-debug-heap-details).
+Çoğu durumda bu işlevleri açıkça çağırmanız gerekmez. Bunun yerine, **_Crtdbg_map_ayırma** bayrağını tanımlayabilirsiniz. **_Crtdbg_map_ayırma** tanımlandığında, **_getcwd** ve **_wgetcwd** çağrıları sırasıyla **_getcwd_dbg** ve **_Wgetcwd_dbg**olarak eşlenir ve *blok türü* **_NORMAL_BLOCK**olarak ayarlanır. Bu nedenle, yığın bloklarını **_Client_block**olarak işaretlemek istemediğiniz sürece bu işlevleri açıkça çağırmanız gerekmez. Daha fazla bilgi için bkz. [hata ayıklama yığınındaki blok türleri](/visualstudio/debugger/crt-debug-heap-details).
 
 ## <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -100,8 +103,8 @@ Bu işlevler, çoğu durumda açıkça çağırmanız gerekmez. Bunun yerine, ta
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_getcwd_dbg**|\<crtdbg.h >|
-|**_wgetcwd_dbg**|\<crtdbg.h >|
+|**_getcwd_dbg**|\<Crtdbg. h >|
+|**_wgetcwd_dbg**|\<Crtdbg. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

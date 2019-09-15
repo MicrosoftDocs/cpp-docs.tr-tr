@@ -1,10 +1,10 @@
 ---
 title: _ismbbblank, _ismbbblank_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _ismbbblank_l
 - _ismbbblank
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,21 +16,24 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-multibyte-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 ms.assetid: d21b2e41-7206-41f5-85bb-9c9ab4f3e21b
-ms.openlocfilehash: c6709d5a5870c44d200b704e4a34043ff9c37226
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 21f4c88b00774159f8e6945973641e67718494e6
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62286957"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70954242"
 ---
-# <a name="ismbbblank-ismbbblankl"></a>_ismbbblank, _ismbbblank_l
+# <a name="_ismbbblank-_ismbbblank_l"></a>_ismbbblank, _ismbbblank_l
 
-Belirtilen bir çok baytlı karakterin boşluk karakteri olup olmadığını belirler.
+Belirtilen çok baytlı karakterin boş bir karakter olup olmadığını belirler.
 
 > [!IMPORTANT]
-> Bu API, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -47,21 +50,21 @@ int _ismbbblank_l(
 ### <a name="parameters"></a>Parametreler
 
 *c*<br/>
-Test edilecek tamsayı.
+Sınanacak tamsayı.
 
-*Yerel ayar*<br/>
+*ayarlar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_ismbbblank** sıfır olmayan bir değer döndürür *c* boşluk (0x20) karakterini, yatay sekme (0x09) karakteri veya hangi içinmetinsatırıiçindesözcükleriayırmakiçinkullanılanbiryerelayaraözgükaraktertemsileden**isspace** true; Aksi takdirde, 0 döndürür. **_ismbbblank** herhangi bir yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır. **_ismbbblank_l** bunun yerine geçirilen yerel ayarı kullanması hariç, aynıdır. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
+**_ısmbbblank** , *c* bir boşluk (0x20) karakteri, yatay sekme (0x09) karakteri veya bir metin satırı **içinde, bir** metin satırı içinde olan sözcükleri ayırmak için kullanılan yerel ayara özgü bir karakter gösteriyorsa sıfır dışında bir değer döndürür; Aksi takdirde, 0 döndürür. **_ismbbblank** , yerel ayara bağlı herhangi bir davranış için geçerli yerel ayarı kullanır. **_ismbbblank_l** , bunun yerine geçirilen yerel ayarı kullanması dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_ismbbblank**|\<Mbctype.h >|
-|**_ismbbblank_l**|\<Mbctype.h >|
+|**_ismbbboş**|\<Mbctype. h >|
+|**_ismbbblank_l**|\<Mbctype. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

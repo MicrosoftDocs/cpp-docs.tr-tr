@@ -1,10 +1,10 @@
 ---
 title: kaldır, _wremove
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _wremove
 - remove
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-filesystem-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - remove
 - _wremove
@@ -30,14 +33,14 @@ helpviewer_keywords:
 - wremove function
 - remove function
 ms.assetid: b6345ec3-3289-4645-93a4-28b9e478cc19
-ms.openlocfilehash: 05f1c5b6760520e5a982777faa903b3c5116ad05
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2ceedcf9d3cc2b26a8d91ca923f81f0ce539b64a
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62357702"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70949432"
 ---
-# <a name="remove-wremove"></a>kaldır, _wremove
+# <a name="remove-_wremove"></a>kaldır, _wremove
 
 Bir dosyayı silin.
 
@@ -59,17 +62,17 @@ Kaldırılacak dosyanın yolu.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Dosya başarıyla silinirse bu işlevlerin her biri 0 döndürür. Aksi takdirde, -1 döndürür ve ayarlar **errno** ya da **SPAWN** yolunu salt okunur bir dosya belirtir belirtmek için bir dizini belirtir ya da dosya açıksa veya **ENOENT** Dosya adı veya yolu bulunamadı belirtmek için.
+Bu işlevlerin her biri, dosya başarıyla silinirse 0 döndürür. Aksi takdirde,-1 döndürür ve **errno** 'ya, yolun bir salt okunurdur dosyası belirtdüğünü, bir dizin olduğunu veya dosyanın açık olduğunu ya da dosya adının ya da Yolun bulunamadığını **göstermek üzere olduğunu** belirtir.
 
-Bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) bunlar ve diğer dönüş kodları hakkında daha fazla bilgi için.
+Bu ve diğer dönüş kodları hakkında daha fazla bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) .
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Kaldır** işlevi tarafından belirtilen dosya siler *yolu.* **_wremove** geniş karakterli sürümüdür **_kaldır**; *yolu* bağımsız değişkeni **_wremove** geniş karakterli bir dizedir. **_wremove** ve **_kaldır** aynı şekilde davranır. Silinebilmesi için önce tüm dosya tanıtıcıları kapatılmalıdır.
+**Remove** işlevi, yol tarafından belirtilen dosyayı siler *.* **_wremove** , **_remove**; öğesinin geniş karakterli bir sürümüdür **_wremove** 'un *yol* bağımsız değişkeni geniş karakterli bir dizedir. **_wremove** ve **_remove** aynı şekilde davranır. Bir dosya silinmeden önce tüm işleyicilerin kapatılması gerekir.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_tremove**|**remove**|**remove**|**_wremove**|
 
@@ -77,14 +80,14 @@ Bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**remove**|\<stdio.h > veya \<io.h >|
-|**_wremove**|\<stdio.h > veya \<wchar.h >|
+|**remove**|\<stdio. h > veya \<GÇ. h >|
+|**_wremove**|\<stdio. h > veya \<wchar. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 
-Tüm sürümleri [C çalışma zamanı kitaplıkları](../../c-runtime-library/crt-library-features.md).
+[C çalışma zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md)tüm sürümleri.
 
 ## <a name="example"></a>Örnek
 
@@ -103,7 +106,7 @@ int main( void )
 }
 ```
 
-### <a name="input-crtremovetxt"></a>Giriş: crt_remove.txt
+### <a name="input-crt_removetxt"></a>Giriş: crt_remove. txt
 
 ```Input
 This file will be deleted.

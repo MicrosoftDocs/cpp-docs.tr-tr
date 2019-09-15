@@ -1,9 +1,9 @@
 ---
 title: _heapmin
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _heapmin
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-heap-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _heapmin
 - heapmin
@@ -27,16 +30,16 @@ helpviewer_keywords:
 - _heapmin function
 - heapmin function
 ms.assetid: c0bccdf6-2d14-4d7b-a7ff-d6a17bdb410f
-ms.openlocfilehash: 130986894d1e2a68415e6ab9218641eff484ffd1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c36a1028e42d59217586cc50adcb612e78072b03
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62157231"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70954800"
 ---
-# <a name="heapmin"></a>_heapmin
+# <a name="_heapmin"></a>_heapmin
 
-İşletim sistemi için kullanılmayan yığın belleği serbest bırakır.
+Kullanılmayan yığın belleğini işletim sistemine yayınlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -46,19 +49,19 @@ int _heapmin( void );
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, **_heapmin** ; 0 döndürür. Aksi halde, işlev -1 döndürür ve ayarlar **errno** için **ENOSYS**.
+Başarılı olursa **_heapmin** 0 döndürür; Aksi takdirde, işlev-1 döndürür ve **errno** değerini **ENOSYS**olarak ayarlar.
 
 Bu ve diğer dönüş kodları hakkında daha fazla bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Heapmin** işlevi, işletim sistemi için kullanılmayan yığın bellek serbest bırakarak yığın azaltır. İşletim sistemi desteklemiyorsa **_heapmin**(örneğin, Windows 98), işlev -1 döndürür ve ayarlar **errno** için **ENOSYS**.
+**_Heapmin** işlevi, kullanılmayan yığın belleğini işletim sistemine serbest bırakarak yığını en aza indirir. İşletim sistemi **_heapmin**'yi (örneğin, Windows 98) desteklemiyorsa, işlev-1 döndürür ve **errno** değerini **ENOSYS**olarak ayarlar.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|İsteğe bağlı başlık|
 |-------------|---------------------|---------------------|
-|**_heapmin**|\<malloc.h >|\<errno.h >|
+|**_heapmin**|\<malloc. h >|\<errno. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

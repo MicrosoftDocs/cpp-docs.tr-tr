@@ -1,12 +1,12 @@
 ---
 title: _cscanf_s, _cscanf_s_l, _cwscanf_s, _cwscanf_s_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _cwscanf_s_l
 - _cwscanf_s
 - _cscanf_s
 - _cscanf_s_l
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - cscanf_s
 - cscanf_s_l
@@ -48,19 +51,19 @@ helpviewer_keywords:
 - _tcscanf_s function
 - tcscanf_s_l function
 ms.assetid: 9ccab74d-916f-42a6-93d8-920525efdf4b
-ms.openlocfilehash: b49c464c7262a60bb7744a68c0144234e152edd3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: be9d2b0af461b25f5c4db37bb084afcf822480ea
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62288920"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70938523"
 ---
-# <a name="cscanfs-cscanfsl-cwscanfs-cwscanfsl"></a>_cscanf_s, _cscanf_s_l, _cwscanf_s, _cwscanf_s_l
+# <a name="_cscanf_s-_cscanf_s_l-_cwscanf_s-_cwscanf_s_l"></a>_cscanf_s, _cscanf_s_l, _cwscanf_s, _cwscanf_s_l
 
-Biçimlendirilmiş verileri konsolundan okur. Daha güvenli sürümleri [_cscanf, _cscanf_l, _cwscanf, _cwscanf_l](cscanf-cscanf-l-cwscanf-cwscanf-l.md) açıklandığı gibi güvenlik geliştirmeleri vardır [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
+Konsoldan biçimlendirilen verileri okur. [_Cscanf, _cscanf_l, _cwscanf, _cwscanf_l](cscanf-cscanf-l-cwscanf-cwscanf-l.md) 'in bu daha güvenli SÜRÜMLERI, [CRT 'daki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklandığı gibi güvenlik geliştirmeleri içerir.
 
 > [!IMPORTANT]
-> Bu API, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -87,31 +90,31 @@ int _cwscanf_s_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*Biçim*<br/>
+*format*<br/>
 Biçim denetimi dizesi.
 
-*Bağımsız değişken*<br/>
+*değişkendir*<br/>
 İsteğe bağlı parametreler.
 
-*Yerel ayar*<br/>
+*ayarlar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarıyla dönüştürülen ve atanan alanların sayısını. Dönüş değeri, Okunmuş ancak atanmamış alanları içermez. Dönüş değeri **EOF** dosya sonunda okuma girişimi için. Klavye girişini işletim sistemi komut satırı düzeyine yeniden yönlendirildiğinde ortaya çıkabilir. Dönüş değeri hiçbir alan atanmamış 0 anlamına gelir.
+Başarıyla dönüştürülen ve atanan alan sayısı. Dönüş değeri, okunan ancak atanmamış alanları içermez. Dosyanın sonunda okuma girişimi için dönüş değeri **EOF** olur. Klavye girişi, işletim sistemi komut satırı düzeyinde yeniden yönlendirildiğinde bu durum oluşabilir. 0 dönüş değeri hiçbir alanın atanmadığı anlamına gelir.
 
-Bu işlevler kendi parametrelerini doğrular. Varsa *biçimi* null bir işaretçiyse, bu işlevler içinde açıklanan şekilde geçersiz parametre işleyicisi çağırır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse, bu işlevler döndürür **EOF** ve **errno** ayarlanır **EINVAL**.
+Bu işlevler, parametrelerini doğrular. *Biçim* null işaretçisiyse, bu Işlevler [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **EOF** döndürür ve **errno** , **EINVAL**olarak ayarlanır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Cscanf_s** işlevi tarafından verilen konumlara doğrudan konsoldan veri okuyan *bağımsız değişken*. [_Getche](getch-getwch.md) işlevi karakter okumak için kullanılır. Her isteğe bağlı bir parametre içinde bir tür belirleyiciye karşılık gelen bir türe sahip değişkene işaret etmelidir *biçimi*. Yorumu giriş alanlarını ve aynı biçim ve işleve *biçimi* parametresi için [scanf_s](scanf-scanf-l-wscanf-wscanf-l.md) işlevi. Sırada **_cscanf_s** normalde girdi karakterini kopyalarken son çağrı ise bunu gerçekleştirmez değil **_ungetch**.
+**_Cscanf_s** işlevi, verileri doğrudan konsolundan *bağımsız değişken*tarafından verilen konumlara okur. [_Getche](getch-getwch.md) işlevi karakterleri okumak için kullanılır. Her isteğe bağlı parametre, *biçimdeki*bir tür belirticisine karşılık gelen türe sahip bir değişkene bir işaretçi olmalıdır. Biçim, giriş alanlarının yorumunu denetler ve [scanf_s](scanf-scanf-l-wscanf-wscanf-l.md) işlevi için *Biçim* parametresiyle aynı form ve işleve sahiptir. **_Cscanf_s** normalde giriş karakterini yankılarken, son çağrı **_ungetch**ise bunu yapmaz.
 
-İşlevlerde diğer güvenli sürümleri gibi **scanf** ailesi **_cscanf_s** ve **_cswscanf_s** türünden alan karakterleriyle ilgili boyut bağımsız değişkenleri gerektirir **c** , **C**, **s**, **S**, ve **[**. Daha fazla bilgi için [scanf genişlik belirtimi](../../c-runtime-library/scanf-width-specification.md).
+**Scanf** ailesindeki işlevlerin diğer güvenli sürümleri gibi, **_cscanf_s** ve **_cswscanf_s** , alan karakterleri için **c**, **c**, **s**, **s**ve **[** için boyut bağımsız değişkenlerini gerektirir. Daha fazla bilgi için bkz. [scanf Width belirtimi](../../c-runtime-library/scanf-width-specification.md).
 
 > [!NOTE]
-> Boyut parametresi türünde **işaretsiz**değil **size_t**.
+> Boyut parametresi, **size_t**değil, **işaretsiz**türündedir.
 
-Sahip bu işlevlerin sürümleri **_l** sonekine, geçerli iş parçacığı yerel ayarı yerine iletilen yerel ayar parametresini kullanmalarıdır.
+**_L** sonekine sahip bu işlevlerin sürümleri, geçerli iş parçacığı yerel ayarı yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -124,14 +127,14 @@ Sahip bu işlevlerin sürümleri **_l** sonekine, geçerli iş parçacığı yer
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_cscanf_s**, **_cscanf_s_l**|\<conio.h >|
-|**_cwscanf_s**, **_cwscanf_s_l**|\<conio.h > veya \<wchar.h >|
+|**_cscanf_s**, **_cscanf_s_l**|\<conio. h >|
+|**_cwscanf_s**, **_cwscanf_s_l**|\<conio. h > veya \<wchar. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 
-Tüm sürümleri [C çalışma zamanı kitaplıkları](../../c-runtime-library/crt-library-features.md).
+[C çalışma zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md)tüm sürümleri.
 
 ## <a name="example"></a>Örnek
 

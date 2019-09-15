@@ -1,11 +1,11 @@
 ---
 title: tgamma, tgammaf, tgammal
 ms.date: 04/05/2018
-apiname:
+api_name:
 - tgamma
 - tgammaf
 - tgammal
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - tgamma
 - tgammaf
@@ -30,16 +33,16 @@ helpviewer_keywords:
 - tgammaf function
 - tgammal function
 ms.assetid: f1bd2681-8af2-48a9-919d-5358fd068acd
-ms.openlocfilehash: c9ff92658163fc20ce21496aba34b22b3661748b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 02926fa49bbabeb9cf532f53cfa6e30a77805e70
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62155621"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70946207"
 ---
 # <a name="tgamma-tgammaf-tgammal"></a>tgamma, tgammaf, tgammal
 
-Belirtilen değerin gama fonksiyonu belirler.
+Belirtilen değerin gama işlevini belirler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -68,39 +71,39 @@ long double tgammal(
 ### <a name="parameters"></a>Parametreler
 
 *x*<br/>
-Gama, bulunacak değer.
+Gamasını bulmak için değer.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, gama döndürür *x*.
+Başarılı olursa *x*'in gamasını döndürür.
 
-Bir aralık hatası oluşabilir büyüklüğünü *x* çok büyük ya da veri türü için çok küçük. Bir etki alanı hatası veya aralığı hata ortaya çıkabilir *x* < = 0.
+*X* büyüklüğü çok büyükse veya veri türü için çok küçük olduğunda Aralık hatası oluşabilir. *X* < = 0 olduğunda bir etki alanı hatası veya Aralık hatası oluşabilir.
 
-|Sorun|döndürülecek|
+|Sorun|döndürülmesini|
 |-----------|------------|
-|x = ±0|±INFINITY|
+|x = ±0|± INFINITY|
 |x = negatif tamsayı|NaN|
-|x = - INFİNİTY|NaN|
-|x = + INFİNİTY|+ INFİNİTY|
+|x =-sonsuzluk|NaN|
+|x = + sonsuzluk|\+ SONSUZLUK|
 |x = NaN|NaN|
 |etki alanı hatası|NaN|
-|kutup hata|±HUGE_VAL, ±HUGE_VALF veya ±HUGE_VALL|
-|Taşma aralık hatası|±HUGE_VAL, ±HUGE_VALF veya ±HUGE_VALL|
-|Yetersiz aralık hatası|doğru değeri, sonra yuvarlama.|
+|direk hatası|± HUGE_VAL, ± HUGE_VALF veya ± HUGE_VALL|
+|Taşma aralığı hatası|± HUGE_VAL, ± HUGE_VALF veya ± HUGE_VALL|
+|Yetersiz yer aralığı hatası|yuvarlama sonrasında doğru değer.|
 
-Hatalar rapor, belirtilen [_matherr](matherr.md).
+Hatalar [_matherr](matherr.md)içinde belirtilen şekilde bildirilir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, aşırı yüklemesini çağırabilirsiniz **tgamma** alan ve getiren **float** ve **uzun** **çift** türleri. C programında **tgamma** her zaman alan ve döndüren bir **çift**.
+Aşırı C++ yüklemeye izin verdiğinden, **float** ve **Long** **Double** türlerini alıp döndüren **tgama** aşırı yüklerini çağırabilirsiniz. C programında **tgama** her zaman bir **Double**alır ve döndürür.
 
-X doğal sayı ise, bu işlev (x-1) çarpımını döndürür.
+X doğal bir sayı ise, bu işlev (x-1) faktöriyelini döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İşlev|C üstbilgisi|C++ üst bilgisi|
+|İşlev|C üstbilgisi|C++üst bilgi|
 |--------------|--------------|------------------|
-|**tgamma**, **tgammaf**,  **tgammal**|\<Math.h >|\<cmath >|
+|**tgama**, **tgamaf**, **tgammal**|\<Math. h >|\<cmath >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

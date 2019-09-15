@@ -1,9 +1,9 @@
 ---
 title: _get_heap_handle
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _get_heap_handle
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-heap-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _get_heap_handle
 - get_heap_handle
@@ -25,12 +28,12 @@ helpviewer_keywords:
 - _get_heap_handle function
 - get_heap_handle function
 ms.assetid: a4d05049-8528-494a-8281-a470d1e1115c
-ms.openlocfilehash: 7e82686c4b33dc11f02f387a97966d3ff5a47085
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: b5f53569db6cf99eb8f91e9a8668280b135097ce
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69499923"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70955873"
 ---
 # <a name="_get_heap_handle"></a>_get_heap_handle
 

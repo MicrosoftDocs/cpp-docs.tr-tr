@@ -1,12 +1,12 @@
 ---
 title: isblank, iswblank, _isblank_l, _iswblank_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - isblank
 - _isblank_l
 - iswblank
 - _iswblank_l
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -18,7 +18,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-string-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _iswblank_l
 - isblank
@@ -27,16 +30,16 @@ f1_keywords:
 - _isblank_l
 - iswblank
 ms.assetid: 33ce96c0-f387-411a-8283-c3d2a69e56bd
-ms.openlocfilehash: eb088c4056e2277e188d7f98a57dd36216d013ad
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 022eba0335facc597f0608d63cfb58e0146e0f23
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62287087"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70954512"
 ---
-# <a name="isblank-iswblank-isblankl-iswblankl"></a>isblank, iswblank, _isblank_l, _iswblank_l
+# <a name="isblank-iswblank-_isblank_l-_iswblank_l"></a>isblank, iswblank, _isblank_l, _iswblank_l
 
-Tamsayının boşluk karakterini temsil edip etmediğini belirler.
+Bir tamsayının boş bir karakteri temsil edip etmediğini belirler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -60,34 +63,34 @@ int _iswblank_l(
 ### <a name="parameters"></a>Parametreler
 
 *c*<br/>
-Test edilecek tamsayı.
+Sınanacak tamsayı.
 
-*Yerel ayar*<br/>
+*ayarlar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Yordamların her biri bu döndürür sıfır olmayan *c* bir boşluk veya yatay sekme karakterinin belirli bir gösterimiyse veya bir yerel ayara özgü bir metin satırı içinde sözcükleri ayırmak için kullanılan karakter kümesini biridir. **ısblank** sıfır olmayan bir değer döndürür *c* bir boşluk karakteri (0x20) veya yatay sekme karakteriyse (0x09). İçin test durumunun sonucu **ısblank** işlevleri bağlıdır **LC_CTYPE** kategori ayar yerel; daha fazla bilgi için bkz. [setlocale, _wsetlocale](setlocale-wsetlocale.md). Sahip olmayan bu işlevlerin sürümleri **_l** soneki geçerli yerel ayarı için herhangi bir yerel ayara bağımlı davranış; sahip sürümler **_l** sonekine kullanmaları dışında Bunun yerine iletilen yerel ayar. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
+Bu yordamların her biri, *c* 'nin belirli bir boşluk veya yatay sekme karakteri gösterimi olması veya bir metin satırı içinde sözcükleri ayırmak için kullanılan yerel ayara özgü bir karakter kümesinden biridir. *c* bir boşluk karakteri (0x20) veya yatay sekme karakteriyse (0x09), **ISBLANK** sıfır dışında bir değer döndürür. **ISBLANK** işlevlerinin test koşulunun sonucu, yerel ayarın **LC_CTYPE** kategori ayarına bağlıdır; daha fazla bilgi için bkz. [setlocale, _wsetlocale](setlocale-wsetlocale.md). **_L** sonekine sahip olmayan bu işlevlerin sürümleri, yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır; **_l** sonekine sahip olan sürümler, bunun yerine geçirilen yerel ayarı kullanmaları dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
-**iswblank** sıfır olmayan bir değer döndürür *c* standart bir alana karşılık gelen bir geniş karakter veya yatay sekme karakterinin.
+*c* , standart bir boşluk veya yatay sekme karakterine karşılık gelen geniş bir karakter ise, **ıswblank** sıfır dışında bir değer döndürür.
 
-Davranışını **ısblank** ve **_isblank_l** tanımsızdır *c* EOF değilse veya 0-0xFF aralığındaysa aralığında. Bir hata ayıklama CRT Kitaplığı kullanıldığında ve *c* değil, bu değerleri işlevleri raise onaylama biridir.
+*C* , EOF veya 0 ile 0xFF (dahil) aralığında değilse, **ıblank** ve **_isblank_l** davranışı tanımsızdır. Bir hata ayıklama CRT kitaplığı kullanıldığında ve *c* bu değerlerden biri değilse, işlevler bir onaylama işlemi yükseltir.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|**_istblank**|**isblank**|[_ismbcblank](ismbcgraph-functions.md)|**iswblank**|
+|**_istblank**|**ISBLANK**|[_ismbcblank](ismbcgraph-functions.md)|**ıswblank**|
 |**_istblank_l**|**_isblank_l**|[_ismbcblank_l](ismbcgraph-functions.md)|**_iswblank_l**|
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**isblank**|\<CType.h >|
-|**iswblank**|\<CType.h > veya \<wchar.h >|
-|**_isblank_l**|\<CType.h >|
-|**_iswblank_l**|\<CType.h > veya \<wchar.h >|
+|**ISBLANK**|\<CType. h >|
+|**ıswblank**|\<CType. h > veya \<wchar. h >|
+|**_isblank_l**|\<CType. h >|
+|**_iswblank_l**|\<CType. h > veya \<wchar. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

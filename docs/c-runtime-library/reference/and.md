@@ -1,7 +1,7 @@
 ---
 title: and
 ms.date: 11/04/2016
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -12,7 +12,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - And
 - std.and
@@ -20,16 +23,16 @@ f1_keywords:
 helpviewer_keywords:
 - and macro
 ms.assetid: 2644ab57-8e1b-48f0-9021-cafe3e26bdc4
-ms.openlocfilehash: 17acab4402955ad2a7f18eaac3db1f99cdfe6287
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5940cd9c9cf7bb37b7731f62b1d3ff9d0101f748
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62335575"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70939683"
 ---
 # <a name="and"></a>and
 
-Alternatif & & işleci.
+& & İşlecine bir alternatifi.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -40,7 +43,7 @@ Alternatif & & işleci.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Makro işleci verir & &.
+Makro & & işlecini verir.
 
 ## <a name="example"></a>Örnek
 
@@ -72,4 +75,4 @@ false
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<iso646.h >
+**Üst bilgi:** \<iso646. h >

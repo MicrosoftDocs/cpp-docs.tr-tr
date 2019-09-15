@@ -1,10 +1,10 @@
 ---
 title: _onexit, _onexit_m
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _onexit
 - _onexit_m
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _onexit
 - onexit_m
@@ -30,16 +33,16 @@ helpviewer_keywords:
 - registering exit routines
 - registering to be called on exit
 ms.assetid: 45743298-0e2f-46cf-966d-1ca44babb443
-ms.openlocfilehash: c190f777032904802f771bab9fc323ba305ff32e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9afcd729f19f11b82e8f24c2b7fcf9ec40990deb
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62156051"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70951339"
 ---
-# <a name="onexit-onexitm"></a>_onexit, _onexit_m
+# <a name="_onexit-_onexit_m"></a>_onexit, _onexit_m
 
-Çıkış zaman çağrılacak bir yordam kaydeder.
+Çıkış zamanında çağrılması için bir yordam kaydeder.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -54,26 +57,26 @@ _onexit_t_m _onexit_m(
 
 ### <a name="parameters"></a>Parametreler
 
-*İşlevi*<br/>
-Çıkışta çağrılmak için bir işlev işaretçisi.
+*çalışmayacaktır*<br/>
+Çıkışta çağrılacak işleve yönelik işaretçi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_onexit** başarılı olursa işlevine bir işaretçi döndürür veya **NULL** işlev işaretçisi depolamak için boşluk varsa.
+**_onexit** , işlev işaretçisinin depolanması için boşluk yoksa, başarılı veya **null** ise işleve bir işaretçi döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Onexit** işlevi, bir işlevin adresini geçirilir (*işlevi*) programın normal şekilde sonlandırıldığında çağrılabilir. Art arda çağrılar **_onexit** LIFO (son giren ilk-çıkar) sırayla yürütülen işlevler bir kasa oluşturun. İşleve geçirilen **_onexit** parametreleri alamıyor.
+**_Onexit** işlevi, program normal olarak sonlandırıldığında çağrılacak bir işlevin (*işlev*) adresini geçti. **_Onexit** için art arda ÇAĞRıLAR, LIFO (ilk kez geçen) sırada yürütülen işlevlerin bir kaydını oluşturur. **_Onexit** öğesine geçirilen işlevler parametre alamaz.
 
-Durumda olduğunda **_onexit** kayıtlı yordamları bir DLL içinde çağrılır **_onexit** bir DLL çalıştırmada kaldırma sonrasında **DllMain** DLL_PROCESS_DETACH ile adlandırılır.
+Bir DLL içinden **_onexit** çağrıldığında, **DllMain 'ın DllMain** sonrasında dll 'nin kaldırılması sırasında **_onexit** ile kaydedilen yordamlar DLL_PROCESS_DETACH ile çağırılır.
 
-**_onexit** bir Microsoft uzantısıdır. ANSI taşınabilirliğinin için kullanmak [atexit](atexit.md). **_Onexit_m** sürümüdür işlevi için karma mod kullanın.
+**_onexit** bir Microsoft uzantısıdır. ANSI taşınabilirlik için [atexit](atexit.md)' i kullanın. İşlevin **_onexit_d** sürümü karma mod kullanımı içindir.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_onexit**|\<stdlib.h >|
+|**_onexit**|\<Stdlib. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

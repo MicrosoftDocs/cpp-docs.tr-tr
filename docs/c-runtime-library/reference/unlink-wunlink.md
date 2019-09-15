@@ -1,10 +1,10 @@
 ---
 title: _unlink, _wunlink
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _unlink
 - _wunlink
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-filesystem-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _tunlink
 - _unlink
@@ -32,14 +35,14 @@ helpviewer_keywords:
 - files [C++], removing
 - _tunlink function
 ms.assetid: 5e4f5f1b-1e99-4391-9b18-9ac63c32fae8
-ms.openlocfilehash: ec59a02f1302fe4a2149889cf1b48090d061d6b2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 878a1b4aa009bc8528dfac1908ed26c7e3b269ae
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62268778"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70957384"
 ---
-# <a name="unlink-wunlink"></a>_unlink, _wunlink
+# <a name="_unlink-_wunlink"></a>_unlink, _wunlink
 
 Bir dosyayı silin.
 
@@ -56,37 +59,37 @@ int _wunlink(
 
 ### <a name="parameters"></a>Parametreler
 
-*Dosya adı*<br/>
-Kaldırmak için dosyanın adı.
+*kısaltın*<br/>
+Kaldırılacak dosyanın adı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu işlevlerin her biri, başarılı olursa 0 döndürür. Aksi halde, işlev -1 döndürür ve kümelerini **errno** için **SPAWN**, salt okunur bir dosya veya dizin yolunu yani belirtir veya **ENOENT**, dosya veya yol olduğu anlamına gelir bulunamadı.
+Bu işlevlerin her biri, başarılıysa 0 döndürür. Aksi takdirde, işlev-1 döndürür ve **errno** değerini **EACCES**olarak ayarlar. Bu, yolun bir salt okunurdur dosya ya da dizin belirttiği **ya da bir**dosyanın veya yolun bulunamadığı anlamına gelir.
 
-Bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) bu ve diğer hakkında daha fazla bilgi için dönüş kodları.
+Bu ve diğer dönüş kodları hakkında daha fazla bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) .
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Unlink** işlevi tarafından belirtilen dosya siler *filename*. **_wunlink** geniş karakterli sürümüdür **_unlink**; *filename* bağımsız değişkeni **_wunlink** geniş karakterli bir dizedir. Bu işlevler, aynı şekilde davranır.
+**_Kaldır** işlevi dosya *adı*tarafından belirtilen dosyayı siler. **_wbağını** kaldırma, **_//kaldır**; **_wbağını** kaldırma için *filename* bağımsız değişkeni geniş karakterli bir dizedir. Bu işlevler, aynı şekilde davranır.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|**_tunlink**|**_unlink**|**_unlink**|**_wunlink**|
+|**_tunlink**|**_bağlantıyı kaldır**|**_bağlantıyı kaldır**|**_wbağını kaldır**|
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_unlink**|\<io.h > ve \<stdio.h >|
-|**_wunlink**|\<io.h > veya \<wchar.h >|
+|**_bağlantıyı kaldır**|\<GÇ. h > ve \<stdio. h >|
+|**_wbağını kaldır**|\<GÇ. h > veya \<wchar. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="code-example"></a>Kod Örneği
 
-Bu program _unlink CRT_UNLINK silmek için kullanır. TXT.
+Bu program, CRT_UNLINK silmek için _bağlantıyı kaldır 'ı kullanır. TXT.
 
 ```C
 // crt_unlink.c
@@ -102,7 +105,7 @@ int main( void )
 }
 ```
 
-### <a name="input-crtunlinktxt"></a>Giriş: crt_unlink.txt
+### <a name="input-crt_unlinktxt"></a>Giriş: crt_unlink. txt
 
 ```Input
 This file will be deleted.

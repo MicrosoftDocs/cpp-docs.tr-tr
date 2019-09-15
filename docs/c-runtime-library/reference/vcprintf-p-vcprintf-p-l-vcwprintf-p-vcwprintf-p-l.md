@@ -1,12 +1,12 @@
 ---
 title: _vcprintf_p, _vcprintf_p_l, _vcwprintf_p, _vcwprintf_p_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _vcprintf_p
 - _vcwprintf_p_l
 - _vcprintf_p_l
 - _vcwprintf_p
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - vcwprintf_p
 - vcprintf_p_l
@@ -41,12 +44,12 @@ helpviewer_keywords:
 - _vcwprintf_p_l function
 - _vtcprintf_p function
 ms.assetid: 611024cc-90e7-41db-8e85-145ca95012b1
-ms.openlocfilehash: 4d2346237181299b3497fade37827a3abc5e7749
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: a0cfcd5ff6c99ae521d1521c9467288daaf05913
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69499361"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70945739"
 ---
 # <a name="_vcprintf_p-_vcprintf_p_l-_vcwprintf_p-_vcwprintf_p_l"></a>_vcprintf_p, _vcprintf_p_l, _vcwprintf_p, _vcwprintf_p_l
 
@@ -101,7 +104,7 @@ Bu işlevlerin her biri bağımsız değişken listesi için bir işaretçi alı
 
 **_L** sonekine sahip bu işlevlerin sürümleri, geçerli yerel ayar yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır.
 
-Her *bağımsız değişken* (varsa) dönüştürülür ve karşılık gelen biçim belirtimine göre çıkış olur. Biçim belirtimi, bağımsız değişkenlerin biçim dizesinde kullanılacağı sırayı belirleyebilmeniz için Konumsal parametreleri destekler. Daha fazla bilgi için bkz. [Printf_p konumsal Parameters](../../c-runtime-library/printf-p-positional-parameters.md).
+Her *bağımsız değişken* (varsa) dönüştürülür ve karşılık *gelen biçim belirtimine*göre çıkış olur. Biçim belirtimi, bağımsız değişkenlerin biçim dizesinde kullanılacağı sırayı belirleyebilmeniz için Konumsal parametreleri destekler. Daha fazla bilgi için bkz. [Printf_p konumsal Parameters](../../c-runtime-library/printf-p-positional-parameters.md).
 
 Bu işlevler, çıkış olduğunda satır besleme karakterlerini satır başı satır besleme (CR-LF) birleşimlerine çevirmez.
 

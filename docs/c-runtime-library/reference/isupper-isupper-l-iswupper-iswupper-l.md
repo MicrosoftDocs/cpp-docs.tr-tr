@@ -1,12 +1,12 @@
 ---
 title: isupper, _isupper_l, iswupper, _iswupper_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - isupper
 - iswupper
 - _iswupper_l
 - _isupper_l
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -19,7 +19,10 @@ apilocation:
 - ucrtbase.dll
 - api-ms-win-crt-string-l1-1-0.dll
 - ntoskrnl.exe
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - isupper
 - _istupper
@@ -34,16 +37,16 @@ helpviewer_keywords:
 - _iswupper_l function
 - isupper function
 ms.assetid: da2bcc9f-241c-48c0-9a0e-ad273827e16a
-ms.openlocfilehash: 4c7ae7016428f966e8191d9d40c1769152d679c6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 558373d845b88d8959651d0a76e24af80cb6fa5e
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62286355"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70953614"
 ---
-# <a name="isupper-isupperl-iswupper-iswupperl"></a>isupper, _isupper_l, iswupper, _iswupper_l
+# <a name="isupper-_isupper_l-iswupper-_iswupper_l"></a>isupper, _isupper_l, iswupper, _iswupper_l
 
-Bir tamsayı bir büyük harf karakteri temsil edip etmediğini belirler.
+Bir tamsayının büyük harfli bir karakteri temsil edip etmediğini belirler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -67,34 +70,34 @@ int _iwsupper_l(
 ### <a name="parameters"></a>Parametreler
 
 *c*<br/>
-Test edilecek tamsayı.
+Sınanacak tamsayı.
 
-*Yerel ayar*<br/>
+*ayarlar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Yordamların her biri bu döndürür sıfır olmayan *c* bir büyük harf belirli bir gösterimidir. **isupper** sıfır olmayan bir değer döndürür *c* bir büyük harf (A - Z) karakteridir. **iswupper** sıfır olmayan bir değer döndürür *c* büyük harfe karşılık gelen bir geniş karakterse veya *c* geniş karakterlerin uygulama tanımlı bir dizi öğelerinin hiçbiri için biri **iswcntrl**, **iswdigit**, **iswpunct**, veya **iswspace** sıfır değil. Bu yordamların her biri 0 döndürür *c* test koşulu karşılamayan.
+Bu yordamların her biri, *c* , büyük harfle belirli bir gösterimse sıfır olmayan bir değer döndürür. *c* , büyük harfli bir karakter (a-Z) ise, **IsUpper** sıfır dışında bir değer döndürür. *c* büyük harfe karşılık gelen geniş bir karakter ise **ıswupper** sıfır dışında bir değer döndürür ya da *c* , **iswcnp**, **ıswdigit** **'in hiçbiri için uygulama tanımlı geniş karakter kümesinden biridir iswpunct**veya **ıswspace** sıfırdan farklı. Bu yordamların her biri, *c* , test koşulunu karşılamadığı takdirde 0 döndürür.
 
-Sahip bu işlevlerin sürümleri **_l** soneki yerel ayara bağlı davranışları için geçerli yerel ayarı yerine iletilen yerel ayarı kullanır. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
+**_L** sonekine sahip bu işlevlerin sürümleri, yerel ayara bağımlı davranış için geçerli yerel ayar yerine geçirilen yerel ayarı kullanır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
-Davranışını **isupper** ve **_isupper_l** tanımsızdır *c* EOF değilse veya 0-0xFF aralığındaysa aralığında. Bir hata ayıklama CRT Kitaplığı kullanıldığında ve *c* değil, bu değerleri işlevleri raise onaylama biridir.
+*C* , EOF veya 0 ile 0xFF (dahil) arasında değilse, **ıupper** ve **_isüste_l** 'nin davranışı tanımsızdır. Bir hata ayıklama CRT kitaplığı kullanıldığında ve *c* bu değerlerden biri değilse, işlevler bir onaylama işlemi yükseltir.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_istupper**|**isupper**|[_ismbcupper](ismbclower-ismbclower-l-ismbcupper-ismbcupper-l.md)|**iswupper**|
-|**_istupper_l**|**_isupper_l**|[_ismbclower, _ismbclower_l, _ismbcupper, _ismbcupper_l](ismbclower-ismbclower-l-ismbcupper-ismbcupper-l.md)|**_iswupper_l**|
+|**_istupper_l**|**_isüste_l**|[_ismbclower, _ismbclower_l, _ismbcupper, _ismbcupper_l](ismbclower-ismbclower-l-ismbcupper-ismbcupper-l.md)|**_iswüste_l**|
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**isupper**|\<CType.h >|
-|**_isupper_l**|\<CType.h >|
-|**iswupper**|\<CType.h > veya \<wchar.h >|
-|**_iswupper_l**|\<CType.h >|
+|**isupper**|\<CType. h >|
+|**_isüste_l**|\<CType. h >|
+|**iswupper**|\<CType. h > veya \<wchar. h >|
+|**_iswüste_l**|\<CType. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

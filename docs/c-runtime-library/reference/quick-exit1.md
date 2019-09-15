@@ -1,9 +1,9 @@
 ---
 title: quick_exit1
 ms.date: 11/04/2016
-apiname:
+api_name:
 - quick_exit
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-runtime-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - quick_exit
 - process/quick_exit
@@ -23,16 +26,16 @@ f1_keywords:
 helpviewer_keywords:
 - quick_exit function
 ms.assetid: ecfbdae6-01c4-45fa-aaeb-b368e1de2a9c
-ms.openlocfilehash: 50f1ee72cce04c2bebc8f7396a2b6fad98301dd7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 86246ed7a32dcd2f12b38aa4148570fc5fb3b7a6
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62358042"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70949683"
 ---
-# <a name="quickexit"></a>quick_exit
+# <a name="quick_exit"></a>quick_exit
 
-Normal program sonlandırma oluşmasına neden olur.
+Normal program sonlandırmasının oluşmasına neden olur.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -44,26 +47,26 @@ __declspec(noreturn) void quick_exit(
 
 ### <a name="parameters"></a>Parametreler
 
-*Durumu*<br/>
-Ana bilgisayar ortamının için döndürülecek durum kodu.
+*status*<br/>
+Ana bilgisayar ortamına döndürülecek durum kodu.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**Quick_exit** işlevi arayanına döndüremiyor.
+**Quick_exit** işlevi, çağırana geri dönemeyebilir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Quick_exit** işlevi normal program sonlandırma neden olur. Tarafından kaydedilen hiçbir işlevleri çağırır **atexit**, **_onexit** veya sinyal işleyicileri tarafından kaydedilen **sinyal** işlevi. Davranış olup tanımsız **quick_exit** birden çok kez veya varsa çağrılır **çıkmak** işlevi ayrıca çağrılır.
+**Quick_exit** işlevi normal program sonlandırmasına neden olur. Bu, **sinyal** işlevi tarafından kaydedilen **atexit**, **_onexit** veya Signal işleyicileri tarafından kaydedilen hiçbir işlev çağırmayın. **Quick_exit** birden çok kez çağrılırsa veya **Çıkış** işlevi de çağrılırsa, davranış tanımsızdır.
 
-**Quick_exit** işlev çağrısı, son giren ilk çıkar (LIFO) sırası, kaydeden işlevleri **at_quick_exit**zaten çağrılır, bu işlevler için işlev kaydedildiği dışında.  Davranış olup tanımsız bir [longjmp](longjmp.md) işlevi çağrısı sonlanırdı kayıtlı bir işlev çağrısı sırasında çağrı yapılır.
+**Quick_exit** işlevi, işlev kaydedildiğinde zaten çağrılan işlevler hariç, **at_quick_exit**tarafından kaydedilen işlevleri, son gelen ilk çıkar (LIFO) sırasına göre çağırır.  İşlev çağrısını sonlandıran kayıtlı bir işleve yapılan çağrı sırasında bir [longjmp](longjmp.md) çağrısı yapılırsa, davranış tanımsızdır.
 
-Kayıtlı işlevleri çağrıldıktan sonra **quick_exit** çağırır **_Exit** kullanarak *durumu* denetimi için ana bilgisayar ortamının döndürülecek değer.
+Kayıtlı işlevler çağrıldıktan sonra, **quick_exit** , ana bilgisayar ortamına denetim döndürmek için *durum* değerini kullanarak **_exit** 'i çağırır.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**quick_exit**|\<Process.h > veya \<stdlib.h >|
+|**quick_exit**|\<Process. h > veya \<Stdlib. h >|
 
 Uyumluluk hakkında daha fazla bilgi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

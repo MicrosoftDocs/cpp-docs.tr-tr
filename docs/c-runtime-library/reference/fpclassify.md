@@ -1,9 +1,9 @@
 ---
 title: fpclassify
 ms.date: 04/05/2018
-apiname:
+api_name:
 - fpclassify
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -14,7 +14,8 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: HeaderDef
+api_type:
+- HeaderDef
 f1_keywords:
 - fpclassify
 - math/fpclassify
@@ -22,16 +23,16 @@ helpviewer_keywords:
 - fpclassify macro
 - fpclassify function
 ms.assetid: bf549499-7ff9-4a58-8692-f2d1cb6bab81
-ms.openlocfilehash: a25897a110d96923a45695d61f923dc7818c7e3a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e9b5aa1f7dc20cc920a51c2c36371eb907469875
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62287947"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70957061"
 ---
 # <a name="fpclassify"></a>fpclassify
 
-Kayan nokta bağımsız değişken sınıflandırılmasını döndürür.
+Bağımsız değişkenin kayan nokta sınıflandırmasını döndürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -56,31 +57,31 @@ int fpclassify(
 ### <a name="parameters"></a>Parametreler
 
 *x*<br/>
-Test etmek için kayan nokta değeri.
+Sınanacak kayan nokta değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**fpclassify** bağımsız değişkenin kayan nokta sınıfı gösteren bir Integer değeri döndürür *x*. Bu tabloda, olası değerler tarafından döndürülen gösterilmektedir **fpclassify**içinde tanımlanmış \<math.h >.
+**fpsınıflandır** *x*bağımsız değişkeninin kayan nokta sınıfını gösteren bir tamsayı değeri döndürür. Bu tablo, \<Math. h > tanımlanmış **fpsınıflandır**tarafından döndürülen olası değerleri gösterir.
 
 |Değer|Açıklama|
 |-----------|-----------------|
-|**FP_NAN**|Bir sessiz, sinyal veya belirsiz NaN|
-|**FP_INFINITE**|Bir pozitif veya negatif sonsuz|
-|**FP_NORMAL**|Bir pozitif veya negatif normalleştirilmiş sıfır olmayan değer|
-|**FP_SUBNORMAL**|Pozitif veya negatif bir normalleştirilmişlikten çıkarılmış değeri|
-|**FP_ZERO**|Bir pozitif veya sıfır değeri negatif|
+|**FP_NAN**|Sessiz, sinyal veya belirsiz NaN|
+|**FP_INFINITE**|Pozitif veya negatif sonsuzluk|
+|**FP_NORMAL**|Pozitif veya negatif normalleştirilmiş sıfır olmayan bir değer|
+|**FP_SUBNORMAL**|Pozitif veya negatif bir eşit değer|
+|**FP_ZERO**|Pozitif veya negatif sıfır değeri|
 
 ## <a name="remarks"></a>Açıklamalar
 
-C'de, **fpclassify** bir makrodur; C++ ' ta **fpclassify** bağımsız değişken türlerini kullanarak aşırı yüklenmiş bir işlev **float**, **çift**, veya **uzun** **çift**. Her iki durumda da, döndürülen değer bağımsız değişken ifadesi etkili türüne ve değil tüm ara gösterimi bağlıdır. Örneğin, bir normal **çift** veya **uzun** **çift** değeri sonsuzluk duruma, denormal veya sıfır için dönüştürüldüğünde değeri bir **float**.
+C 'de, **fpsınıflandır** bir makrodur; ' C++de, **fpsınıflandır** , **float**, **Double**veya **Long** **Double**bağımsız değişken türleri kullanılarak aşırı yüklenmiş bir işlevdir. Her iki durumda da, döndürülen değer, herhangi bir ara gösterimde değil, bağımsız değişken ifadesinin etkin türüne bağlıdır. Örneğin, normal bir **Double** veya **Long** **Double** değeri bir **float**'e dönüştürüldüğünde sonsuz, denormal veya sıfır değeri olabilir.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İşlevi/makrosu|Gerekli başlık (C)|Gerekli başlık (C++)|
+|İşlev/makro|Gerekli üst bilgi (C)|Gerekli üst bilgiC++()|
 |---------------------|---------------------------|-------------------------------|
-|**fpclassify**|\<Math.h >|\<Math.h > veya \<cmath >|
+|**fpclassify**|\<Math. h >|\<Math. h > veya \<cmath >|
 
-**Fpclassify** makrosu ve **fpclassify** işlevleri uygun ISO C99 ve C ++ 11 özellikleri. Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+**Fpsınıflandır** makrosu ve **fpsınıflandır** Işlevleri ISO C99 ve c++ 11 belirtimlerine uyar. Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,9 +1,9 @@
 ---
 title: _free_locale
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _free_locale
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-locale-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - __free_locale
 - free_locale
@@ -26,14 +29,14 @@ helpviewer_keywords:
 - locales, freeing
 - _free_locale function
 ms.assetid: 1f08d348-ab32-4028-a145-6cbd51b49af9
-ms.openlocfilehash: 92dc8cd711087e8e797b484d6c7e3c6c3b031b5c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 31a8e3191c5e370acb00aaf12e21f0c712c51dd1
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62333046"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70956758"
 ---
-# <a name="freelocale"></a>_free_locale
+# <a name="_free_locale"></a>_free_locale
 
 Bir yerel ayar nesnesini serbest bırakır.
 
@@ -47,20 +50,20 @@ void _free_locale(
 
 ### <a name="parameters"></a>Parametreler
 
-*Yerel ayar*<br/>
-Serbest bırakmak için yerel ayar nesnesi.
+*ayarlar*<br/>
+Yerel ayar nesnesini ücretsiz olarak.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Free_locale** işlev çağrısından alınan yerel ayar nesnesi ücretsiz için kullanılan **_get_current_locale** veya **_create_locale**.
+**_Free_locale** işlevi, **_get_current_locale** veya **_create_locale**çağrısından alınan yerel ayar nesnesini serbest bırakmak için kullanılır.
 
-Bu işlev, önceki adını **__free_locale** (başında iki alt çizgi ile) kullanım dışı bırakıldı.
+Bu işlevin önceki adı, **__free_locale** (iki önde gelen alt çizgi ile) kullanım dışıdır.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|**Yordamı**|Gerekli başlık|
+|**Rutin**|Gerekli başlık|
 |---------------|---------------------|
-|**_free_locale**|\<Locale.h >|
+|**_free_locale**|\<locale. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

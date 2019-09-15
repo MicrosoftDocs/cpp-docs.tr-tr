@@ -1,10 +1,10 @@
 ---
 title: getchar, getwchar
 ms.date: 11/04/2016
-apiname:
+api_name:
 - getchar
 - getwchar
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - getwchar
 - GetChar
@@ -27,12 +30,12 @@ helpviewer_keywords:
 - _gettchar function
 - standard input, reading from
 ms.assetid: 19fda588-3e33-415c-bb60-dd73c028086a
-ms.openlocfilehash: 5f8d7dbeb35c8818706eb6070df613df8654feb6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b969dc48e949efa02b807ec0ea442da7cb793e15
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62287247"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70955410"
 ---
 # <a name="getchar-getwchar"></a>getchar, getwchar
 
@@ -47,28 +50,28 @@ wint_t getwchar();
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Okuma karakteri döndürür. Bir okuma hatası ya da dosya sonu koşulu belirtmek üzere **getchar** döndürür **EOF**, ve **getwchar** döndürür **WEOF**. İçin **getchar**, kullanın **ferror** veya **feof** bir hata veya dosya sonunu denetlemek için.
+Okunan karakteri döndürür. Bir okuma hatası veya dosya sonu koşulu belirtmek için **GetChar** , **EOF**döndürür ve **getwchar** , **weof**döndürür. **GetChar**için, bir hatayı denetlemek veya dosya sonu için **ferror** veya **feof** kullanın.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Her bir rutin tek bir karakter okur **stdin** ve sonraki karaktere işaret etmek için ilgili dosya işaretleyicisini artırır. **getchar** aynı [_fgetchar](fgetc-fgetwc.md), ancak bir işlev ve makro olarak uygulanır.
+Her yordam, **stdin** 'den tek bir karakter okur ve bir sonraki karakteri işaret etmek için ilişkili dosya işaretçisini arttırır. **GetChar** , [_fgetchar](fgetc-fgetwc.md)ile aynıdır, ancak bir işlev ve makro olarak uygulanır.
 
-Bu işlevler, çağıran iş parçacığının kilitler ve bu nedenle iş parçacığı bakımından güvenlidir. Kilitleme yapılmayan bir sürüm için bkz. [_getchar_nolock, _getwchar_nolock](getchar-nolock-getwchar-nolock.md).
+Bu işlevler çağıran iş parçacığını kilitler ve bu nedenle iş parçacığı güvenlidir. Kilitleme dışı bir sürüm için bkz. [_getchar_nolock, _getwchar_nolock](getchar-nolock-getwchar-nolock.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|**_gettchar**|**getchar**|**getchar**|**getwchar**|
+|**_gettchar**|**GetChar**|**GetChar**|**getwchar**|
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**getchar**|\<stdio.h >|
-|**getwchar**|\<stdio.h > veya \<wchar.h >|
+|**GetChar**|\<stdio. h >|
+|**getwchar**|\<stdio. h > veya \<wchar. h >|
 
-Konsolu, Evrensel Windows Platformu (UWP) uygulamaları desteklenmez. Konsolları ile ilişkili standart akış işleyicileri **stdin**, **stdout**, ve **stderr**, C çalışma zamanı işlevleri bunları UWP uygulamalarında kullanmadan önce yeniden yönlendirilmesi gerekiyor . Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Konsol Evrensel Windows Platformu (UWP) uygulamalarında desteklenmez. Console, **STDIN**, **stdout**ve **stderr**Ile ilişkili standart akış TUTAMAÇLARı, C çalışma zamanı işlevlerinin UWP uygulamalarında kullanabilmesi için yeniden yönlendirilmelidir. Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
@@ -102,7 +105,7 @@ This textInput was: This text
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Stream g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [getc, getwc](getc-getwc.md)<br/>
 [fgetc, fgetwc](fgetc-fgetwc.md)<br/>
 [_getch, _getwch](getch-getwch.md)<br/>

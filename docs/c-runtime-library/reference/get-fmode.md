@@ -1,9 +1,9 @@
 ---
 title: _get_fmode
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _get_fmode
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - get_fmode
 - _get_fmode
@@ -24,16 +27,16 @@ helpviewer_keywords:
 - file translation [C++], default mode
 - get_fmode function
 ms.assetid: 22ea70e2-b9b5-422d-b514-64f4beaea45c
-ms.openlocfilehash: dc4740b20ab7283dd8b9f73f458eaba34e582832
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 03e07ea44aadec7c15352bb63fd25aa777ee9bfb
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62287568"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70955879"
 ---
-# <a name="getfmode"></a>_get_fmode
+# <a name="_get_fmode"></a>_get_fmode
 
-Dosya g/ç işlemleri için varsayılan dosya çevirisi modu alır.
+Dosya g/ç işlemleri için varsayılan dosya çevirisi modunu alır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -46,31 +49,31 @@ errno_t _get_fmode(
 ### <a name="parameters"></a>Parametreler
 
 *pmode*<br/>
-Geçerli varsayılan modu ile doldurulacak bir tamsayı işaretçisi: **_O_TEXT** veya **_o_bınary**.
+Geçerli varsayılan mod ile doldurulacak tamsayı işaretçisi: **_O_text** veya **_O_binary**.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa sıfır döndürür; bir hata kodu. Varsa *pmode* olduğu **NULL**, açıklanan şekilde geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse **errno** ayarlanır **EINVAL** ve işlev döndürür **EINVAL**.
+Başarılıysa sıfır döndürür; hatada hata kodu. *Pmode* **null**ise, geçersiz parametre işleyicisi [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, **errno** **EINVAL** olarak ayarlanır ve işlev **EINVAL**döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-İşlev değerini alır [_fmode](../../c-runtime-library/fmode.md) genel değişkeni. Bu değişken, alt düzey her ikisi için varsayılan dosya çevirisi modu belirtir ve dosya g/ç işlemleri gibi akış **_aç**, **_pipe**, **fopen**, ve [ freopen](freopen-wfreopen.md).
+İşlevi, [_fmode](../../c-runtime-library/fmode.md) genel değişkeninin değerini alır. Bu değişken, hem düşük düzey hem de akış dosyası g/ç işlemleri için **_Aç**, **_pipe**, **fopen**ve [freopen](freopen-wfreopen.md)gibi varsayılan dosya çevirisi modunu belirtir.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|İsteğe bağlı başlık|
 |-------------|---------------------|---------------------|
-|**_get_fmode**|\<stdlib.h >|\<fcntl.h >|
+|**_get_fmode**|\<Stdlib. h >|\<fcntl. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
-Örnekte bakın [_set_fmode](set-fmode.md).
+[_Set_fmode](set-fmode.md)içindeki örneğe bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [_fmode](../../c-runtime-library/fmode.md)<br/>
 [_set_fmode](set-fmode.md)<br/>
 [_setmode](setmode.md)<br/>
-[Metin ve ikili mod dosyası g/ç](../../c-runtime-library/text-and-binary-mode-file-i-o.md)<br/>
+[Metin ve Ikili mod dosyası g/ç](../../c-runtime-library/text-and-binary-mode-file-i-o.md)<br/>

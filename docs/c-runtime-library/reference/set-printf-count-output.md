@@ -1,9 +1,9 @@
 ---
 title: _set_printf_count_output
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _set_printf_count_output
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - set_printf_count_output
 - _set_printf_count_output
@@ -24,16 +27,16 @@ helpviewer_keywords:
 - set_printf_count_output function
 - _set_printf_count_output function
 ms.assetid: d8259ec5-764e-42d0-9169-72172e95163b
-ms.openlocfilehash: 0d4847d850b39c7c03ea92a98499715b1e6a4913
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0d53b4e4c56a69582a4eb517fa1a5c9e10cd7d2f
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62356530"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70948416"
 ---
-# <a name="setprintfcountoutput"></a>_set_printf_count_output
+# <a name="_set_printf_count_output"></a>_set_printf_count_output
 
-Etkinleştirmek veya devre dışı desteği **%n** biçiminin [printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md)-ailesi işlevleri.
+[Printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md)-Family işlevlerinde **% n** biçiminin desteğini etkinleştirin veya devre dışı bırakın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -45,22 +48,22 @@ int _set_printf_count_output(
 
 ### <a name="parameters"></a>Parametreler
 
-*Etkinleştirme*<br/>
-Etkinleştirmek için sıfır olmayan bir değer **%n** desteği devre dışı bırakmak için 0 **%n** destekler.
+*etkinleştirebilir*<br/>
+**% N desteğini etkinleştirmek için** sıfır olmayan bir değer, **% n** desteğini devre dışı bırakmak için 0.
 
 ## <a name="property-valuereturn-value"></a>Özellik Değeri/Dönüş Değeri
 
-Durumunu **%n** desteği bu işlevi çağırmadan önce: sıfır olmayan if **%n** desteği etkindir, 0 devre dışı bırakıldı.
+Bu işlev çağrılmadan önce **% n** desteğinin durumu: **% n** desteği etkinleştirildiyse sıfır olmayan, devre dışıysa 0.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Güvenlik nedenleriyle desteği **%n** biçim belirticisi varsayılan olarak devre dışıdır **printf** ve tüm çeşitlerinin. Varsa **%n** ile karşılaşılırsa bir **printf** biçim belirtimi, varsayılan davranışı açıklandığı gibi geçersiz parametre işleyicisini çağırır etmektir [Parameter Validation](../../c-runtime-library/parameter-validation.md). Çağırma **_set_printf_count_output** sıfır olmayan bir bağımsız değişkeni ile neden olacak **printf**-yorumlamak için ailesi işlevleri **%n** açıklandığı [biçimi Belirtim Sözdizimi: printf ve wprintf işlevleri](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).
+Güvenlik nedeniyle, **% n** biçim belirticisi için destek, **printf** ve tüm türevleri için varsayılan olarak devre dışıdır. Bir **printf** biçim belirtiminde **% n** ile karşılaşılırsa, varsayılan davranış [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini çağırmada olur. Sıfır olmayan bir bağımsız değişkenle **_set_printf_count_output** çağırmak, **printf**-Family işlevlerinin [Biçim belirtimi sözdizimi: printf ve wprintf işlevleri](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)bölümünde açıklandığı gibi **% n** öğesini yorumlamasını sağlar.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_set_printf_count_output**|\<stdio.h >|
+|**_set_printf_count_output**|\<stdio. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

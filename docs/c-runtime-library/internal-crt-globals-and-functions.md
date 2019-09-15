@@ -1,7 +1,7 @@
 ---
-title: İç CRT genel değişkenleri ve işlevleri
+title: İç CRT genel ve Işlevleri
 ms.date: 01/22/2019
-apiname:
+api_name:
 - __acrt_iob_func
 - __AdjustPointer
 - _assert
@@ -277,7 +277,7 @@ apiname:
 - _wsopen_dispatch
 - _Xbad_alloc
 - _Xlength_error
-apilocation:
+api_location:
 - api-ms-win-crt-math-l1-1-0.dll
 - api-ms-win-crt-heap-l1-1-0.dll
 - api-ms-win-crt-runtime-l1-1-0.dll
@@ -294,7 +294,10 @@ apilocation:
 - msvcp140_app.dll
 - ntdll.dll
 - ntoskrnl.exe
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - __acrt_iob_func
 - __AdjustPointer
@@ -848,24 +851,24 @@ helpviewer_keywords:
 - _Xbad_alloc
 - _Xlength_error
 ms.assetid: 99a27f11-fa5a-449e-bfbb-aab578d1cc4f
-ms.openlocfilehash: 462b9d80b61b8bda3afc5aec4d819e355adbbbd7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 252065039597b6176b42008b31b7082740bcc265
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62348061"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70940237"
 ---
-# <a name="internal-crt-globals-and-functions"></a>İç CRT genel değişkenleri ve işlevleri
+# <a name="internal-crt-globals-and-functions"></a>İç CRT genel ve Işlevleri
 
-C çalışma zamanı (CRT) kitaplığı, İşlevler ve yalnızca ortak kitaplık arabirimi desteklemek için kullanılan genel değişkenler içerir. Bunlardan bazıları ortak üstbilgileri uygulama ayrıntılarını sunulur. Bu işlevler ve genel değişkenleri ortak dışarı aktarmaları erişilebilir olmasına rağmen bunlar kodunuz tarafından kullanılmak üzere amaçlanmamıştır. Bunun yerine ortak kitaplığı kullanmak için bu işlevler ve değişkenler kullanan herhangi bir kodu değiştirmenizi öneririz. Bu işlevler sürümü sürümü değişebilir. Bunları tanımlamanıza yardımcı olması için burada listelenir. Ek belgeler var, ancak genel olarak, bu uygulama ayrıntılarını belirtilmeyen bağlantılar sağlanır.
+C çalışma zamanı (CRT) kitaplığı yalnızca ortak kitaplık arabirimini desteklemek için kullanılan işlevleri ve genel değişkenleri içerir. Bunlardan bazıları, uygulama ayrıntıları olarak genel üstbilgilere sunulur. Bu işlevlere ve genel değişkenlere genel dışarı aktarmalar aracılığıyla erişilebilse de, kodunuz tarafından kullanılmaya yönelik değildir. Bunun yerine ortak kitaplık eşdeğerlerini kullanmak için bu işlevleri ve değişkenleri kullanan tüm kodları değiştirmenizi öneririz. Bu işlevler sürümden sürümüne değişebilir. Bunları tanımlamanızı sağlamak için burada listelenirler. Ek belgeler varken bağlantılar sağlanır, ancak genel olarak bu uygulama ayrıntıları açıklanmamıştır.
 
-## <a name="internal-crt-globals-and-value-macros"></a>İç CRT genel değişkenleri ve makroları değer
+## <a name="internal-crt-globals-and-value-macros"></a>İç CRT genel ve değer makroları
 
-Bu genel değişkenler ve makro tanımlarını CRT uygulamak için kullanılır.
+Bu genel değişkenler ve makro tanımları CRT uygulamak için kullanılır.
 
 |Ad|
 |----------|
-|__badioinfo|
+|__badioınfo|
 |[_acmdln](../c-runtime-library/acmdln-tcmdln-wcmdln.md)|
 |_commode|
 |_crtAssertBusy|
@@ -873,21 +876,21 @@ Bu genel değişkenler ve makro tanımlarını CRT uygulamak için kullanılır.
 |__initenv|
 |__lconv|
 |[__mb_cur_max](../c-runtime-library/mb-cur-max-func-mb-cur-max-l-func-p-mb-cur-max-mb-cur-max.md)|
-|__pioinfo|
+|__pioınfo|
 |__unguarded_readlc_active|
 |[_wcmdln](../c-runtime-library/acmdln-tcmdln-wcmdln.md)|
-|__winitenv|
+|__wınitenv|
 
-## <a name="internal-crt-functions-and-function-macros"></a>İç CRT işlevleri ve işlev makroları
+## <a name="internal-crt-functions-and-function-macros"></a>İç CRT Işlevleri ve Işlev makroları
 
-Bu işlevler ve işlev makroları CRT ve C++ Standart Kitaplığı'nı uygulamak için kullanılır.
+Bu işlevler ve işlev makroları, CRT ve C++ standart kitaplığı uygulamak için kullanılır.
 
 |Ad|
 |----------|
 |__acrt_iob_func|
 |__AdjustPointer|
-|_assert|
-|__BuildCatchObject|
+|_onaylama|
+|__Buildcatch nesnesi|
 |__BuildCatchObjectHelper|
 |__C_specific_handler|
 |_calloc_base|
@@ -896,8 +899,8 @@ Bu işlevler ve işlev makroları CRT ve C++ Standart Kitaplığı'nı uygulamak
 |_chkstk|
 |_chvalidator|
 |_chvalidator_l|
-|_CIacos|
-|_CIasin|
+|_Cıacos|
+|_Cıasin|
 |[_CIatan](../c-runtime-library/ciatan.md)|
 |[_CIatan2](../c-runtime-library/ciatan2.md)|
 |[_CIcos](../c-runtime-library/cicos.md)|
@@ -908,12 +911,12 @@ Bu işlevler ve işlev makroları CRT ve C++ Standart Kitaplığı'nı uygulamak
 |[_CIlog10](../c-runtime-library/cilog10.md)|
 |[_CIpow](../c-runtime-library/cipow.md)|
 |[_CIsin](../c-runtime-library/cisin.md)|
-|_CIsinh|
+|_Cıınh|
 |[_CIsqrt](../c-runtime-library/cisqrt.md)|
 |[_CItan](../c-runtime-library/citan.md)|
 |_CItanh|
 |__clean_type_info_names_internal|
-|_configure_narrow_argv|
+|_configure_dar _argv|
 |_configure_wide_argv|
 |__conio_common_vcprintf|
 |__conio_common_vcprintf_p|
@@ -932,7 +935,7 @@ Bu işlevler ve işlev makroları CRT ve C++ Standart Kitaplığı'nı uygulamak
 |__crtCompareStringW|
 |__crtCreateEventExW|
 |__crtCreateSemaphoreExW|
-|__crtCreateSymbolicLinkW|
+|__Crtcreatesemboliclinkw|
 |_crt_debugger_hook|
 |__crtEnumSystemLocalesEx|
 |__crtFlsAlloc|
@@ -941,8 +944,8 @@ Bu işlevler ve işlev makroları CRT ve C++ Standart Kitaplığı'nı uygulamak
 |__crtFlsSetValue|
 |_CrtGetCheckCount|
 |__crtGetDateFormatEx|
-|__crtGetFileInformationByHandleEx|
-|__crtGetLocaleInfoEx|
+|__Crtgetfileınformationbyhandleex|
+|__Crtgetlocaleınfoex|
 |__crtGetShowWindowMode|
 |__crtGetTickCount64|
 |__crtGetTimeFormatEx|
@@ -955,7 +958,7 @@ Bu işlevler ve işlev makroları CRT ve C++ Standart Kitaplığı'nı uygulamak
 |[__crtLCMapStringW](../c-runtime-library/crtlcmapstringw.md)|
 |_CrtSetCheckCount|
 |_CrtSetDbgBlockType|
-|__crtSetFileInformationByHandle|
+|__Crtsetfileınformationbyhandle|
 |__crtSetThreadStackGuarantee|
 |__crtSetUnhandledExceptionFilter|
 |__crtSleep|
@@ -966,20 +969,20 @@ Bu işlevler ve işlev makroları CRT ve C++ Standart Kitaplığı'nı uygulamak
 |[__CxxFrameHandler](../c-runtime-library/cxxframehandler.md)|
 |__CxxFrameHandler2|
 |__CxxFrameHandler3|
-|__CxxLongjmpUnwind|
+|__Cxxlongjmpaçılım|
 |__CxxQueryExceptionSize|
 |__CxxRegisterExceptionObject|
 |_CxxThrowException|
 |__CxxUnregisterExceptionObject|
-|__daylight|
+|__günışığı|
 |_dclass|
-|__DestructExceptionObject|
+|__Fıntexceptionobject|
 |[__dllonexit](../c-runtime-library/dllonexit.md)|
 |__doserrno|
 |_dosmaperr|
 |_dpcomp|
 |_dsign|
-|__dstbias|
+|__dstsapma|
 |_dtest|
 |_EH_prolog|
 |_errno|
@@ -992,13 +995,13 @@ Bu işlevler ve işlev makroları CRT ve C++ Standart Kitaplığı'nı uygulamak
 |_fdpcomp|
 |_fdsign|
 |_fdtest|
-|_filbuf|
+|_filarabelleğe|
 |_FindAndUnlinkFrame|
-|_flsbuf|
+|_flsarabelleğe|
 |__fpe_flt_rounds|
 |_FPE_Raise|
 |__fpecode|
-|__FrameUnwindFilter|
+|__Frameunwın_filtresi|
 |_fread_nolock_s|
 |_free_base|
 |__free_locale|
@@ -1007,29 +1010,29 @@ Bu işlevler ve işlev makroları CRT ve C++ Standart Kitaplığı'nı uygulamak
 |_ftol|
 |__get_current_locale|
 |__get_flsindex|
-|_get_initial_narrow_environment|
-|_get_initial_wide_environment|
-|_get_narrow_winmain_command_line|
-|_get_stream_buffer_pointers|
+|_get_ınitial_dar _environment|
+|_get_ınitial_wide_environment|
+|_get_dar _winmain_command_line|
+|_get_stream_buffer_işaretçiler|
 |__get_tlsindex|
 |_get_wide_winmain_command_line|
 |_Getdays|
 |[__getmainargs](../c-runtime-library/getmainargs-wgetmainargs.md)|
-|_Getmonths|
-|__GetPlatformExceptionInfo|
+|_Getaylar|
+|__Getplatformexceptionınfo|
 |_getptd|
 |_Gettnames|
-|_global_unwind2|
-|_inconsistency|
+|_global_unwın1 2|
+|_tutarsızlık|
 |_initialize_lconv_for_unsigned_char|
-|_initialize_narrow_environment|
-|[_initialize_onexit_table](../c-runtime-library/execute-onexit-table-initialize-onexit-table-register-onexit-function.md)|
-|_initialize_wide_environment|
-|_initptd|
-|_invalid_parameter|
-|_invoke_watson|
+|_ınitialize_dar _ortamı|
+|[_ınitialize_onexit_table](../c-runtime-library/execute-onexit-table-initialize-onexit-table-register-onexit-function.md)|
+|_ınitialize_wide_environment|
+|_ınitptd|
+|_ınvalid_parameter|
+|_ınvoke_watson|
 |__iob_func|
-|_IsExceptionObjectToBeDestroyed|
+|_Isexceptionobjecttobeyok etme|
 |[___lc_codepage_func](../c-runtime-library/lc-codepage-func.md)|
 |[___lc_collate_cp_func](../c-runtime-library/lc-collate-cp-func.md)|
 |[___lc_locale_name_func](../c-runtime-library/lc-locale-name-func.md)|
@@ -1072,7 +1075,7 @@ Bu işlevler ve işlev makroları CRT ve C++ Standart Kitaplığı'nı uygulamak
 |__libm_sse2_tanf|
 |[_local_unwind2](../c-runtime-library/local-unwind2.md)|
 |_local_unwind4|
-|_lock_locales|
+|_lock_yerelleri|
 |_longjmpex|
 |_malloc_base|
 |[___mb_cur_max_func](../c-runtime-library/mb-cur-max-func-mb-cur-max-l-func-p-mb-cur-max-mb-cur-max.md)|
@@ -1083,17 +1086,17 @@ Bu işlevler ve işlev makroları CRT ve C++ Standart Kitaplığı'nı uygulamak
 |_NLG_Return2|
 |__p&#95;&#95;_argc|
 |__p&#95;&#95;_argv|
-|__p&#95;&#95;_initenv|
+|__p&#95;&#95;_ınitenv|
 |[__p&#95;&#95;_mb_cur_max](../c-runtime-library/mb-cur-max-func-mb-cur-max-l-func-p-mb-cur-max-mb-cur-max.md)|
 |__p&#95;&#95;_wargv|
-|__p&#95;&#95;_winitenv|
+|__p&#95;&#95;_wınitenv|
 |__p\__acmdln|
 |[__p\__commode](../c-runtime-library/p-commode.md)|
 |__p\__crtAssertBusy|
-|__p\__crtBreakAlloc|
+|__p\__crtbreakkalloc|
 |__p\__crtDbgFlag|
-|__p\__daylight|
-|__p\__dstbias|
+|__p\__yaz|
+|__p\__dstsapma|
 |__p\__environ|
 |[__p\__fmode](../c-runtime-library/p-fmode.md)|
 |__p\__iob|
@@ -1102,7 +1105,7 @@ Bu işlevler ve işlev makroları CRT ve C++ Standart Kitaplığı'nı uygulamak
 |__p\__pctype|
 |__p\__pgmptr|
 |__p\__pwctype|
-|__p\__timezone|
+|__p\__saat dilimi|
 |__p\__tzname|
 |__p\__wcmdln|
 |__p\__wenviron|
@@ -1117,9 +1120,9 @@ Bu işlevler ve işlev makroları CRT ve C++ Standart Kitaplığı'nı uygulamak
 |[_register_onexit_function](../c-runtime-library/execute-onexit-table-initialize-onexit-table-register-onexit-function.md)|
 |_register_thread_local_exe_atexit_callback|
 |__report_gsfailure|
-|__RTCastToVoid|
+|__Rtrotovoid|
 |[__RTDynamicCast](../c-runtime-library/rtdynamiccast.md)|
-|__RTtypeid|
+|__Rttypeıd|
 |_seh_filter_dll|
 |_seh_filter_exe|
 |_seh_longjmp_unwind|
@@ -1154,13 +1157,13 @@ Bu işlevler ve işlev makroları CRT ve C++ Standart Kitaplığı'nı uygulamak
 |__stdio_common_vswprintf_s|
 |__stdio_common_vswscanf|
 |_Strftime|
-|__STRINGTOLD|
+|__STRINGSÖYLEMI|
 |__STRINGTOLD_L|
 |__strncnt|
 |__sys_errlist|
 |__sys_nerr|
 |__threadhandle|
-|__threadid|
+|__threadıd|
 |__timezone|
 |__TypeMatch|
 |__tzname|
@@ -1170,7 +1173,7 @@ Bu işlevler ve işlev makroları CRT ve C++ Standart Kitaplığı'nı uygulamak
 |__unguarded_readlc_active|
 |[___unguarded_readlc_active_add_func](../c-runtime-library/setlc-active-func-unguarded-readlc-active-add-func.md)|
 |_unloaddll|
-|_unlock_locales|
+|_unlock_yerelleri|
 |_vacopy|
 |_ValidateExecute|
 |_ValidateRead|
@@ -1178,14 +1181,14 @@ Bu işlevler ve işlev makroları CRT ve C++ Standart Kitaplığı'nı uygulamak
 |_VCrtDbgReportA|
 |_VCrtDbgReportW|
 |_W_Getdays|
-|_W_Getmonths|
+|_W_getaylar|
 |_W_Getnames|
-|_wassert|
+|_FAZLA sert|
 |_Wcsftime|
-|__wcsncnt|
+|__wcsnsayisi|
 |[__wgetmainargs](../c-runtime-library/getmainargs-wgetmainargs.md)|
 |_wsopen_dispatch|
-|_Xbad_alloc|
+|_Xbad_ayırma|
 |_Xlength_error|
 
 ## <a name="see-also"></a>Ayrıca bkz.

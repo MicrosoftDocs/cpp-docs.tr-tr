@@ -1,12 +1,12 @@
 ---
 title: strcpy_s, wcscpy_s, _mbscpy_s, _mbscpy_s_l
 ms.date: 01/22/2019
-apiname:
+api_name:
 - wcscpy_s
 - _mbscpy_s
 - _mbscpy_s_l
 - strcpy_s
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -20,7 +20,10 @@ apilocation:
 - api-ms-win-crt-multibyte-l1-1-0.dll
 - api-ms-win-crt-string-l1-1-0.dll
 - ntoskrnl.exe
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - strcpy_s
 - _mbscpy_s
@@ -37,19 +40,19 @@ helpviewer_keywords:
 - tcscpy_s function
 - wcscpy_s function
 ms.assetid: 611326f3-7929-4a5d-a465-a4683af3b053
-ms.openlocfilehash: 9763ba66867faba080ed8729b4fe07b96c56ee0d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 12c20abc13846388b7a303af4e29de3cd2a60fed
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62354177"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70957853"
 ---
-# <a name="strcpys-wcscpys-mbscpys-mbscpysl"></a>strcpy_s, wcscpy_s, _mbscpy_s, _mbscpy_s_l
+# <a name="strcpy_s-wcscpy_s-_mbscpy_s-_mbscpy_s_l"></a>strcpy_s, wcscpy_s, _mbscpy_s, _mbscpy_s_l
 
-Bir dizeyi kopyalar. Bu sürümleri [strcpy, wcscpy, _mbscpy](strcpy-wcscpy-mbscpy.md) açıklandığı gibi güvenlik geliştirmeleri vardır [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
+Bir dizeyi kopyalar. [Strcpy, wcscpy, _mbscvy](strcpy-wcscpy-mbscpy.md) uygulamasının bu SÜRÜMLERINDE, [CRT 'daki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklandığı gibi güvenlik geliştirmeleri vardır.
 
 > [!IMPORTANT]
-> **_mbscpy_s** ve **_mbscpy_s_l** Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **_mbscpy_s** ve **_mbscpy_s_l** , Windows çalışma zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -104,47 +107,47 @@ errno_t _mbscpy_s_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*Hedef*<br/>
+*HD*<br/>
 Hedef dize arabelleğinin konumu.
 
 *dest_size*<br/>
-Hedef dize arabelleğinin boyutu **char** dar ve çok baytlı İşlevler, birim ve **wchar_t** geniş işlevlerine yönelik birimleri. Bu değer, sıfırdan büyük ve büyüktür olmalıdır **RSIZE_MAX**.
+Daraltma ve çok baytlı işlevler için **karakter** birimlerindeki hedef dize arabelleğinin boyutu ve geniş işlevler için **wchar_t** birimleri. Bu değer sıfırdan büyük ve **RSIZE_MAX**değerinden büyük olmalıdır.
 
-*src*<br/>
-Null ile sonlandırılmış kaynak dizesi arabelleği.
+*YN*<br/>
+Null ile sonlandırılmış kaynak dize arabelleği.
 
-*Yerel ayar*<br/>
+*ayarlar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa sıfır; Aksi takdirde bir hata oluştu.
+Başarılıysa sıfır; Aksi takdirde bir hata.
 
 ### <a name="error-conditions"></a>Hata koşulları
 
-|*Hedef*|*dest_size*|*src*|Dönüş değeri|İçeriğini *dest*|
+|*HD*|*dest_size*|*YN*|Dönüş değeri|*Hedef* içeriği|
 |----------------------|------------------------|-----------------|------------------|----------------------------------|
-|**NULL**|Tüm|Tüm|**EINVAL**|değiştirilmedi|
-|Tüm|Tüm|**NULL**|**EINVAL**|*Hedef*0 olarak ayarlanırsa [0]|
-|Tüm|0 veya çok küçük|Tüm|**ERANGE**|*Hedef*0 olarak ayarlanırsa [0]|
+|**DEĞER**|Kaydedilmemiş|Kaydedilmemiş|**EINVAL**|değiştirilmedi|
+|Kaydedilmemiş|Kaydedilmemiş|**DEĞER**|**EINVAL**|*hedef* [0] 0 olarak ayarlandı|
+|Kaydedilmemiş|0 veya çok küçük|Kaydedilmemiş|**ERANGE**|*hedef* [0] 0 olarak ayarlandı|
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Strcpy_s** işlevi adresindeki içeriğini kopyalar *src*, tarafından belirtilen konuma bir sonlandırıcı null karakter de dahil olmak üzere *dest*. Hedef dize kaynak dizeyi ve onu sonlandıran null karakteri alacak kadar büyük olmalıdır. Davranışını **strcpy_s** kaynak ve hedef dizeleri örtüştürürse tanımsızdır.
+**Strcpy_s** işlevi, sonlandırma null karakteri dahil *src*adresinin içeriğini *hedef*tarafından belirtilen konuma kopyalar. Hedef dize, kaynak dizeyi ve Sonlandırıcı null karakterini barındıracak kadar büyük olmalıdır. Kaynak ve hedef dizeler çakıştığında **strcpy_s** davranışı tanımsızdır.
 
-**wcscpy_s** öğesinin geniş karakterli sürümüdür **strcpy_s**, ve **_mbscpy_s** çok baytlı karakter sürümüdür. Bağımsız değişkenleri **wcscpy_s** geniş karakterli dizelerdir; **_mbscpy_s** ve **_mbscpy_s_l** çok baytlı karakter dizeleridir. Bu işlevler, aynı şekilde davranır. **_mbscpy_s_l** aynıdır **_mbscpy_s** geçerli yerel ayarı yerine iletilen yerel ayar parametresini kullanması hariç, aynıdır. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
+**wcscpy_s** , **strcpy_s**öğesinin geniş karakterli sürümüdür ve **_mbscpy_s** çok baytlı karakter sürümüdür. **Wcscpy_s** bağımsız değişkenleri geniş karakterli dizelerdir; **_mbscpy_s** ve **_mbscpy_s_l** , çok baytlı karakter dizeleridir. Bu işlevler, aynı şekilde davranır. **_mbscpy_s_l** , geçerli yerel ayar yerine geçirilen yerel ayar parametresini kullanması dışında **_mbscpy_s** ile aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
-Varsa *dest* veya *src* null bir işaretçiyse veya hedef dize boyutu *dest_size* içindeaçıklandığıgibigeçersizparametreişleyicisiçağrılır,çokküçükolduğu[Parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse, bu işlevler döndürür **EINVAL** ayarlayıp **errno** için **EINVAL** olduğunda *dest* veya  *src* null bir işaretçiyse ve döndürmeleri **ERANGE** ayarlayıp **errno** için **ERANGE** zaman hedef dize çok küçük.
+Hedef *veya* *src* null bir işaretçisiyse veya hedef dize boyutu *Dest_size* çok küçükse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **EINVAL** döndürür ve *dest* veya *src* null bir **işaretçi olduğunda** **errno** , **EINVAL** **olarak** **ayarlanır ve** hedef dize çok küçük.
 
-Başarılı yürütme sonrasında hedef dize her zaman null sonlandırılmıştır.
+Başarılı bir yürütme sonrasında, hedef dize her zaman null ile sonlandırılır.
 
-C++ dilinde bu işlevlerin kullanımı, uzunluğun otomatik olarak çıkarabilir ve böylece bir boyut bağımsız değişkeni belirtmeniz gerekmez şablon aşırı yüklemeleriyle basitleştirilmiştir ve bunlar otomatik olarak eski ve daha az güvenli işlevleri, daha yeni değiştirir daha güvenli ortaklarınıza. Daha fazla bilgi için [güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
+' C++De, bu işlevlerin kullanımı, bir boyut bağımsız değişkeni belirtmek zorunda kalmazsınız ve daha eski, daha az güvenli işlevleri daha yeni, daha güvenli bir şekilde otomatik olarak değiştirmek için arabellek uzunluğunu otomatik olarak çıkarsanbilecekleri şablon aşırı yüklemeleri tarafından basitleştirilmiştir ortaklarınıza. Daha fazla bilgi için bkz. [Güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 
-Bu işlevlerin hata ayıklama kitaplığı sürümleri ilk arabellek 0xFE ile doldurur. Bu davranışı devre dışı bırakmak için [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md).
+Bu işlevlerin hata ayıklama Kitaplığı sürümleri ilk olarak arabelleği 0xFE ile doldurur. Bu davranışı devre dışı bırakmak için [_Crtsetdebugfillthreshold](crtsetdebugfillthreshold.md)kullanın.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_tcscpy_s**|**strcpy_s**|**_mbscpy_s**|**wcscpy_s**|
 
@@ -152,15 +155,15 @@ Bu işlevlerin hata ayıklama kitaplığı sürümleri ilk arabellek 0xFE ile do
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**strcpy_s**|\<String.h >|
-|**wcscpy_s**|\<String.h > veya \<wchar.h >|
-|**_mbscpy_s**|\<Mbstring.h >|
+|**strcpy_s**|\<String. h >|
+|**wcscpy_s**|\<String. h > veya \<wchar. h >|
+|**_mbscpy_s**|\<mbstring. h >|
 
-Bu işlevler Microsoft özgüdür. Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Bu işlevler, Microsoft 'a özgüdür. Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
-Üretim kalitesinde kod, bu örnek, hataları denetlemeden güvenli dize işlevleri çağırır:
+Üretim kalitesi kodundan farklı olarak, bu örnek hataları denetlemeden güvenli dize işlevlerini çağırır:
 
 ```C
 // crt_strcpy_s.c
@@ -190,7 +193,7 @@ int main(void)
 String = Hello world from strcpy_s and strcat_s!
 ```
 
-Şablonu sürümleri, C++ kodu oluştururken, kullanımı daha kolay olabilir.
+Kod oluştururken C++ , şablon sürümlerinin kullanımı daha kolay olabilir.
 
 ```cpp
 // crt_wcscpy_s.cpp
@@ -223,8 +226,8 @@ String = Hello world from wcscpy_s and wcscat_s!
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dize düzenlemesi](../../c-runtime-library/string-manipulation-crt.md) <br/>
-[strcat, wcscat, _mbscat, _mbscat_l](strcat-wcscat-mbscat.md) <br/>
+[Dize düzenleme](../../c-runtime-library/string-manipulation-crt.md) <br/>
+[strcat, wcscat, _mbscat, _mbdağınık _l](strcat-wcscat-mbscat.md) <br/>
 [strcmp, wcscmp, _mbscmp, _mbscmp_l](strcmp-wcscmp-mbscmp.md) <br/>
 [strncat_s, _strncat_s_l, wcsncat_s, _wcsncat_s_l, _mbsncat_s, _mbsncat_s_l](strncat-s-strncat-s-l-wcsncat-s-wcsncat-s-l-mbsncat-s-mbsncat-s-l.md) <br/>
 [strncmp, wcsncmp, _mbsncmp, _mbsncmp_l](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md) <br/>

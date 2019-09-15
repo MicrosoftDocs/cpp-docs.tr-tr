@@ -1,9 +1,9 @@
 ---
 title: _set_se_translator
 ms.date: 02/21/2018
-apiname:
+api_name:
 - _set_se_translator
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -14,7 +14,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _set_se_translator
 - set_se_translator
@@ -23,14 +26,14 @@ helpviewer_keywords:
 - exception handling, changing
 - _set_se_translator function
 ms.assetid: 280842bc-d72a-468b-a565-2d3db893ae0f
-ms.openlocfilehash: 23eb4e9016666567771832cefed686cb9197b02f
-ms.sourcegitcommit: 7f5b29e24e1be9b5985044a030977485fea0b50c
+ms.openlocfilehash: 781deaad091b6aed72350100f7575c566bbae793
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68299702"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70948390"
 ---
-# <a name="setsetranslator"></a>_set_se_translator
+# <a name="_set_se_translator"></a>_set_se_translator
 
 Win32 özel durumlarını (C yapılandırılmış özel durumlar) C++ tür özel durumlara çevirmek için iş parçacığı başına geri çağırma işlevini ayarlayın.
 

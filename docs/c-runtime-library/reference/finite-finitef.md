@@ -1,10 +1,10 @@
 ---
 title: isfinite, _finite, _finitef
 ms.date: 01/31/2019
-apiname:
+api_name:
 - _finite
 - _finitef
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
 - ntoskrnl.exe
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - isfinite
 - finite
@@ -32,16 +35,16 @@ helpviewer_keywords:
 - _finite function
 - _finitef function
 ms.assetid: 5a7d7ca7-befb-4e1f-831d-28713c6eb805
-ms.openlocfilehash: d727839521978be66c3dc9ee173ee2ba0a567445
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a2cde4d3a57884413f0c48aa299b171334c5f988
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62333722"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70957179"
 ---
-# <a name="isfinite-finite-finitef"></a>isfinite, _finite, _finitef
+# <a name="isfinite-_finite-_finitef"></a>isfinite, _finite, _finitef
 
-Bir kayan nokta değeri sınırlı olup olmadığını belirler.
+Kayan nokta değerinin sonlu olup olmadığını belirler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -67,22 +70,22 @@ int _finitef(
 ### <a name="parameters"></a>Parametreler
 
 *x*<br/>
-Test etmek için kayan nokta değeri.
+Sınanacak kayan nokta değeri.
 
 ## <a name="return-value"></a>Dönüş değeri
 
-`isfinite` Makrosu ve `_finite` ve `_finitef` işlevler ise sıfır olmayan bir değer döndürür *x* ya da bir normal veya subnormal sınırlı bir değer. Bunlar, bağımsız değişken sonsuz ise 0 ya da bir NaN döndürür. C++ satır içi şablon işlevi `isfinite` aynı şekilde davranır, ancak döndürür **true** veya **false**.
+X normal veya alt `_finite` normal `_finitef` sonlu bir değer ise makroveveişlevlerisıfırolmayanbirdeğerdöndürür.`isfinite` Bağımsız değişken sonsuz veya NaN ise 0 döndürür. C++ Satır içi şablon işlevi `isfinite` aynı şekilde davranır, ancak **true** veya **false**değerini döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-`isfinite` C ve C++ derlendiğinde bir satır içi şablon işlevi olarak derlendiğinde bir makrodur. `_finite` Ve `_finitef` Microsoft'a özgü işlevlerdir. `_finitef` İşlevi, yalnızca kullanılabilir platformları x86, ARM ve ARM64 için derlenmiş.
+`isfinite`, C olarak derlendiğinde bir makro ve olarak C++derlendiğinde bir satır içi şablon işlevidir. `_finite` Ve`_finitef` işlevleri, Microsoft 'a özgüdür. `_finitef` İşlevi yalnızca x86, ARM veya ARM64 platformları için derlendiğinde kullanılabilir.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İşlev|Gerekli başlık (C)|Gerekli başlık (C++)|
+|İşlev|Gerekli üst bilgi (C)|Gerekli üst bilgiC++()|
 |--------------|---------------------------|-------------------------------|
-|`_finite`|\<float.h > veya \<math.h >|\<float.h >, \<math.h >, \<cfloat >, veya \<cmath >|
-|`isfinite`, `_finitef`|\<Math.h >|\<Math.h > veya \<cmath >|
+|`_finite`|\<float. h > veya \<Math. h >|\<float. h >, \<Math. h >, \<cfloat > veya \<cmath >|
+|`isfinite`, `_finitef`|\<Math. h >|\<Math. h > veya \<cmath >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

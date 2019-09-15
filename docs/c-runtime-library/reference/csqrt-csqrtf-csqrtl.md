@@ -1,11 +1,11 @@
 ---
 title: csqrt, csqrtf, csqrtl
 ms.date: 11/04/2016
-apiname:
+api_name:
 - csqrt
 - csqrtf
 - csqrtl
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - csqrt
 - csqrtf
@@ -30,16 +33,16 @@ helpviewer_keywords:
 - csqrtf function
 - csqrtl function
 ms.assetid: b65f086b-0f55-4622-a7a3-4e79d9c9c05c
-ms.openlocfilehash: 00fe12d4f9c136278e56ceaf3fa62443092d0ec4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1afc79f0fba9663ec5fbb0a556da52c3a1c55ca6
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62288842"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70942004"
 ---
 # <a name="csqrt-csqrtf-csqrtl"></a>csqrt, csqrtf, csqrtl
 
-Negatif gerçek ekseni kesin bir dal ile karmaşık bir sayının kare kökünü alır.
+Karmaşık bir sayının kare kökünü alır ve bir dal negatif gerçek eksen üzerinde kesilir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -64,26 +67,26 @@ _Lcomplex csqrtl(
 ### <a name="parameters"></a>Parametreler
 
 *z*<br/>
-Karmaşık bir sayıyı.
+Karmaşık bir sayı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Kare kökünü *z*. Doğru yarı-düzlemde sonucudur.
+*Z*'nin kare kökü. Sonuç doğru yarı düzledir.
 
-|Giriş|SEH özel durumu|**_matherr** özel durumu|
+|Giriş|SEH özel durumu|**_matherr** Duruma|
 |-----------|-------------------|--------------------------|
-|± QNAN, ONRAKİNİ BUL|yok|_DOMAIN|
+|± QNAN, IND|yok|_DOMAIN|
 |- ∞|yok|_DOMAIN|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Çünkü C++ aşırı yüklemesi, sağlayan yüklerini çağırabilirsiniz **csqrt** alan ve getiren **_Fcomplex** ve **_Lcomplex** değerleri. C programında **csqrt** her zaman alan ve döndüren bir **_Dcomplex** değeri.
+Aşırı C++ yüklemeye izin verdiğinden, **_Fcomplex** ve **_lcomplex** değerlerini alıp döndüren **csqrt** 'ın aşırı yüklerini çağırabilirsiniz. C programında **csqrt** her zaman bir **_dcomplex** değeri alır ve döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|C üstbilgisi|C++ üst bilgisi|
+|Yordam|C üstbilgisi|C++üst bilgi|
 |-------------|--------------|------------------|
-|**csqrt**, **csqrtf**, **csqrtl**|\<Complex.h >|\<ccomplex >|
+|**csqrt**, **csqrtf**, **csqrtl**|\<karmaşık. h >|\<ccomplex >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

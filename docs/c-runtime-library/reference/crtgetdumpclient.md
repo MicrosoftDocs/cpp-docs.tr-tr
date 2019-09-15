@@ -1,9 +1,9 @@
 ---
 title: _CrtGetDumpClient
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _CrtGetDumpClient
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -14,7 +14,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - CrtGetDumpClient
 - _CrtGetDumpClient
@@ -22,16 +25,16 @@ helpviewer_keywords:
 - _CrtGetDumpClient function
 - CrtGetDumpClient function
 ms.assetid: 9051867f-341b-493b-b53d-45d2b454a3ad
-ms.openlocfilehash: e4700bd936bec97014508c4a971f6e6c278c6a11
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4b5c6c7d4d123d2d419f104ddaabd57c10ad320e
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62339929"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70938741"
 ---
-# <a name="crtgetdumpclient"></a>_CrtGetDumpClient
+# <a name="_crtgetdumpclient"></a>_CrtGetDumpClient
 
-Dökümü alma için geçerli olan uygulama tanımlı işlevi alır **_clıent_block** bellek blokları (yalnızca hata ayıklama sürümü).
+**_Client_block** türü bellek bloklarının dökümünü yapmak için geçerli uygulama tanımlı işlevi alır (yalnızca hata ayıklama sürümü).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -41,25 +44,25 @@ _CRT_DUMP_CLIENT _CrtGetDumpClient( void );
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Geçerli döküm rutin döndürür.
+Geçerli döküm yordamını döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_CrtGetDumpClient** işlevi depolanan nesnelerin dökümünü almak için geçerli kanca işlevini alır **_clıent_block** bellek blokları için C çalışma zamanı hata ayıklama bellek dökümü işlem.
+**_Crtgetdumpclient** Işlevi, C çalışma zamanı hata ayıklama belleği döküm Işlemi Için **_Client_block** bellek bloklarına depolanan nesneleri dökme için geçerli kanca işlevini alır.
 
-Kanca özellikli diğer çalışma zamanı işlevleri ve kendi istemci tarafından tanımlanan yazma hakkında daha fazla bilgi için kanca işlevleri, bkz: [hata ayıklama kanca işlevi yazma](/visualstudio/debugger/debug-hook-function-writing).
+Diğer kanca özellikli çalışma zamanı işlevlerini kullanma ve kendi istemci tanımlı kanca işlevlerinizi yazma hakkında daha fazla bilgi için bkz. [hata ayıklama kanca Işlevi yazma](/visualstudio/debugger/debug-hook-function-writing).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_CrtGetDumpClient**|\<crtdbg.h >|
+|**_CrtGetDumpClient**|\<Crtdbg. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 
-Hata ayıklama sürümleri [C çalışma zamanı kitaplıkları](../../c-runtime-library/crt-library-features.md) yalnızca.
+Yalnızca [C çalışma zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md) sürümlerini ayıklayın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,10 +1,10 @@
 ---
 title: _getche_nolock, _getwche_nolock
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _getche_nolock
 - _getwche_nolock
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-conio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _getche_nolock
 - _gettche_nolock
@@ -34,19 +37,19 @@ helpviewer_keywords:
 - _getwche_nolock function
 - gettche_nolock function
 ms.assetid: 9e853ad4-4d8a-4442-9ae5-da4b434f0b8c
-ms.openlocfilehash: b5745d85ec1a7338a4625d0c3eaf54da498e2af4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 23f16199314ef1c9834e559631b7299dd1c55c2e
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62287260"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70955293"
 ---
-# <a name="getchenolock-getwchenolock"></a>_getche_nolock, _getwche_nolock
+# <a name="_getche_nolock-_getwche_nolock"></a>_getche_nolock, _getwche_nolock
 
-Yankılı ve iş parçacığını kilitlemeden konsoldan bir karakter alır.
+, Yankıyı ve iş parçacığını kilitlemeden konsolundan bir karakter alır.
 
 > [!IMPORTANT]
-> Bu API, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -57,11 +60,11 @@ wint_t _getwche_nolock( void );
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Okuma karakteri döndürür. Döndürülen hata yok.
+Okunan karakteri döndürür. Hata döndürme yok.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_getche_nolock** ve **_getwche_nolock** özdeş **_getche** ve **_getwche** bunlar başka iş parçacıklarının engellemelerinden korunmamaları hariç aynıdırlar. Diğer iş parçacıklarını kilitleme ek yükü kalmadıklarından daha hızlı olabilir. Bu işlevler yalnızca tek iş parçacıklı uygulamalar ve burada çağırma kapsamının iş parçacığı yalıtımını zaten işlediği gibi iş parçacığı bakımından güvenli bağlamlarda kullanın.
+**_getche_nolock** ve **_getwche_nolock** , diğer iş parçacıkları tarafından girişimlerden korunmamaları hariç **_getche** ve **_getwche** ile özdeştir. Diğer iş parçacıklarını kilitleme yükünü sunmadığından daha hızlı olabilir. Bu işlevleri yalnızca, tek iş parçacıklı uygulamalar gibi iş parçacığı güvenli bağlamlarda veya çağırma kapsamının iş parçacığı yalıtımını zaten işlediği yerde kullanın.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -73,8 +76,8 @@ Okuma karakteri döndürür. Döndürülen hata yok.
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_getche_nolock**|\<conio.h >|
-|**_getwche_nolock**|\<conio.h > veya \<wchar.h >|
+|**_getche_nolock**|\<conio. h >|
+|**_getwche_nolock**|\<conio. h > veya \<wchar. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

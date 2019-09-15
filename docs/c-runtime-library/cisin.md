@@ -1,9 +1,9 @@
 ---
 title: _CIsin
 ms.date: 04/10/2018
-apiname:
+api_name:
 - _CIsin
-apilocation:
+api_location:
 - msvcr80.dll
 - msvcr100.dll
 - msvcrt.dll
@@ -12,7 +12,10 @@ apilocation:
 - msvcr90.dll
 - msvcr110_clr0400.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - CIsin
 - _CIsin
@@ -20,16 +23,16 @@ helpviewer_keywords:
 - _CIsin intrinsic
 - CIsin intrinsic
 ms.assetid: f215f39a-2341-4f1c-ba8e-cb522451ceb2
-ms.openlocfilehash: a76aa2b0e0438afa5728d26451c2a146ed262cab
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 66f26e9fa4dd08d18b15deca4efa40c236e092c9
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62290241"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70944542"
 ---
-# <a name="cisin"></a>_CIsin
+# <a name="_cisin"></a>_CIsin
 
-Kayan nokta yığın üst değer sinüsünü hesaplar.
+Kayan nokta yığınındaki en üstteki değerin sinüsünü hesaplar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -39,9 +42,9 @@ void __cdecl _CIsin();
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu iç sürümü [sin](../c-runtime-library/reference/sin-sinf-sinl.md) derleyici anlayan özelleştirilmiş bir çağırma kuralı işlevi vardır. Kopya oluşturulmasını önlediği için yürütmeyi hızlandırır ve YAZMAÇ ayırma ile yardımcı olur.
+[Sin](../c-runtime-library/reference/sin-sinf-sinl.md) işlevinin bu iç sürümünde derleyicinin anladığı özelleştirilmiş bir çağırma kuralı vardır. Kopyaların oluşturulmasını ve YAZMAÇ ayrılmasına yardımcı olmasını önlediği için yürütmeyi hızlandırır.
 
-Sonuç değerini kayan nokta yığın üstüne itilir.
+Elde edilen değer, kayan nokta yığınının en üstüne gönderilir.
 
 ## <a name="requirements"></a>Gereksinimler
 

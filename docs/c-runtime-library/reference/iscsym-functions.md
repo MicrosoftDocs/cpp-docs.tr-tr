@@ -1,7 +1,7 @@
 ---
 title: iscsym, iscsymf, __iscsym, __iswcsym, __iscsymf, __iswcsymf, _iscsym_l, _iswcsym_l, _iscsymf_l, _iswcsymf_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _iswcsym_l
 - __iswcsym
 - __iscsym
@@ -10,7 +10,7 @@ apiname:
 - __iswcsymf
 - __iscsymf
 - _iscsymf_l
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -22,7 +22,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-string-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _iswcsym_l
 - _iswcsymf_l
@@ -62,16 +65,16 @@ helpviewer_keywords:
 - iscsym function
 - iscsymf function
 ms.assetid: 944dfb99-f2b8-498c-9f55-dbcf370d0a2c
-ms.openlocfilehash: 8ee84243b98c08504ac0bb63593e39c32230b706
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ef5b2487fb49739f9a073adbc87546fb5d49d542
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62331642"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70954407"
 ---
-# <a name="iscsym-iscsymf-iscsym-iswcsym-iscsymf-iswcsymf-iscsyml-iswcsyml-iscsymfl-iswcsymfl"></a>iscsym, iscsymf, __iscsym, __iswcsym, __iscsymf, __iswcsymf, _iscsym_l, _iswcsym_l, _iscsymf_l, _iswcsymf_l
+# <a name="iscsym-iscsymf-__iscsym-__iswcsym-__iscsymf-__iswcsymf-_iscsym_l-_iswcsym_l-_iscsymf_l-_iswcsymf_l"></a>iscsym, iscsymf, __iscsym, __iswcsym, __iscsymf, __iswcsymf, _iscsym_l, _iswcsym_l, _iscsymf_l, _iswcsymf_l
 
-Bir tamsayı bir tanımlayıcı kullanılan bir karakteri temsil edip etmediğini belirler.
+Bir tamsayının bir tanımlayıcıda kullanılabilecek bir karakteri temsil ettiğini belirleme.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -111,28 +114,28 @@ int _iswcsymf_l(
 ### <a name="parameters"></a>Parametreler
 
 *c*<br/>
-Test edilecek tamsayı. *c* işlevi dar karakter sürümü için 0-255 aralığında olmalıdır.
+Sınanacak tamsayı. *c* , işlevin dar karakter sürümü için 0-255 aralığında olmalıdır.
 
-*Yerel ayar*<br/>
+*ayarlar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Her ikisi de **__iscsym** ve **__iswcsym** sıfır olmayan bir değer döndürür *c* bir harf, alt çizgi veya rakam. Her ikisi de **__iscsymf** ve **__iswcsymf** sıfır olmayan bir değer döndürür *c* bir harf veya alt çizgi. Bu yordamların her biri 0 döndürür *c* test koşulu karşılamayan. Sahip bu işlevlerin sürümleri **_l** sonekine kullanmaları dışında *yerel* geçerli yerel ayar yerine geçirilen yerel ayara bağlı davranışları için. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
+*C* bir harf, alt çizgi veya rakam ise, **__scc** ve **__iswcsym** , sıfır dışında bir değer döndürür. Eğer *c* bir harf veya alt çizgi ise, **__scc** ve **__iswcsymf** sıfır dışında bir değer döndürür. Bu yordamların her biri, *c* , test koşulunu karşılamadığı takdirde 0 döndürür. **_L** sonekine sahip bu işlevlerin sürümleri, yerel ayara bağımlı davranış için geçerli yerel ayar yerine geçirilen *yerel ayarı* kullanmaları dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Önişlemci makrosu _CTYPE_DISABLE_MACROS tanımlı olmadığı sürece, bu yordamların makrolar tanımlanır. Bu yordamların makrosu sürümlerini kullandığınızda, bağımsız değişkenlerin birden fazla kez değerlendirilebilir. Bağımsız değişken listesi içinde yan etkisi olan ifade kullanırken dikkatli olun.
+Önişlemci makrosu _CTYPE_DISABLE_MACROS tanımlanmadığı sürece bu yordamlar makrolar olarak tanımlanmıştır. Bu yordamların makro sürümlerini kullandığınızda, bağımsız değişkenler birden çok kez değerlendirilebilirler. Bağımsız değişken listesi içinde yan etkileri olan ifadeleri kullanırken dikkatli olun.
 
-Geriye dönük uyumluluk için **iscsym** ve **iscsymf** makroları olarak tanımlanan yalnızca [ &#95; &#95;STDC&#95; &#95; ](../../preprocessor/predefined-macros.md) tanımlı değil veya tanımlanır 0; Aksi takdirde bunlar tanımsız olur.
+Geriye dönük uyumluluk için, **SCC** ve **SCC** 'ler yalnızca [ &#95; &#95;stdc&#95; ](../../preprocessor/predefined-macros.md) tanımlanmadığında veya 0 olarak tanımlandığında makrolar olarak tanımlanır; Aksi takdirde bunlar tanımsızdır.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**iscsym**, **iscsymf**, **__iscsym**, **__iswcsym**, **__iscsymf**, **__iswcsymf**, **_iscsym_l**, **_iswcsym_l**, **_iscsymf_l**, **_iswcsymf_l**|C: \<ctype.h ><br /><br /> C++: \<cctype > veya \<ctype.h >|
+|**SCC**, **SCC,** xscc, **__scc**, **__ıwcsym**, **__scc**, **__iswcsymf**, **_scc sym_l**, **_iswcsym_l**, **_scc symf_l**, **_iswcsymf_l**|C: \<CType. h ><br /><br /> C++: \<cctype > veya \<CType. h >|
 
-**İscsym**, **iscsymf**, **__iscsym**, **__iswcsym**, **__iscsymf**, **__ iswcsymf**, **_iscsym_l**, **_iswcsym_l**, **_iscsymf_l**, ve **_iswcsymf_l** olan rutinleri Microsoft'a özgü. Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+**SCC**, SCC, **SCC**, **__scc**, **__ıwcsym**, **__scc**, __iswcsymf, **_scc sym_l**, **_iswcsym_l**, **_scc**sym_l ve **_iswcsymf_l** yordamları Microsoft 'a özgüdür. Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,9 +1,9 @@
 ---
 title: _CrtIsValidHeapPointer
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _CrtIsValidHeapPointer
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -14,7 +14,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - CrtlsValidHeapPointer
 - _CrtIsValidHeapPointer
@@ -22,16 +25,16 @@ helpviewer_keywords:
 - _CrtIsValidHeapPointer function
 - CrtIsValidHeapPointer function
 ms.assetid: caf597ce-1b05-4764-9f37-0197a982bec5
-ms.openlocfilehash: cdfb02c622cddc4c86a99f614e469abc527d8845
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9a8746eb2da90ac5515d92113b977011a4647fe6
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62339396"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70942393"
 ---
-# <a name="crtisvalidheappointer"></a>_CrtIsValidHeapPointer
+# <a name="_crtisvalidheappointer"></a>_CrtIsValidHeapPointer
 
-Bazı C çalışma zamanı kitaplığı tarafından ancak gerekmez çağrı sahibinin CRT kitaplığı tarafından ayrılan bir yığın içinde belirtilen bir işaretçi olduğunu doğrular. Visual Studio 2010 önce CRT sürümlerinde, bu belirtilen işaretçi yerel yığında (yalnızca hata ayıklama sürümü) olduğunu doğrular.
+Belirtilen bir işaretçinin bazı C çalışma zamanı kitaplığı tarafından ayrılan, ancak çağıranın CRT kitaplığı tarafından atanan bir yığında olduğunu doğrular. Visual Studio 2010 ' den önceki CRT sürümlerinde, bu, belirtilen işaretçinin yerel yığında olduğunu doğrular (yalnızca hata ayıklama sürümü).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -44,39 +47,39 @@ int _CrtIsValidHeapPointer(
 ### <a name="parameters"></a>Parametreler
 
 *userData*<br/>
-Ayrılan bellek bloğu başlangıcı için işaretçi.
+Ayrılmış bellek bloğunun başlangıcına yönelik işaretçi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_Crtısvalidheappointer** yığınındaki tüm CRT kitaplığı örnekleri tarafından paylaşılan belirtilen işaretçi ise true değeri döndürür. Visual Studio 2010 önce CRT sürümlerinde, belirtilen işaretçi yerel yığında ise bu TRUE döndürür. Aksi takdirde işlev false değerini döndürür.
+**_Crtısvalidheappointer** , belirtilen IŞARETÇI tüm CRT kitaplık örnekleri tarafından paylaşılan yığında yer alıyorsa true değerini döndürür. Visual Studio 2010 ' den önceki CRT sürümlerinde, belirtilen işaretçi yerel yığında ise TRUE değeri döndürür. Aksi takdirde, işlev FALSE döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevi kullanmak önerilmez. Visual Studio 2010 CRT kitaplığı ile başlayarak, bir işletim sistemi yığın tüm CRT kitaplığı paylaşan *işlem yığınını*. **_Crtısvalidheappointer** işlevi işaretçisi CRT yığınında, arayanın CRT kitaplığı tarafından ayrılmış olan ayrılmış ancak olup olmadığını bildirir. Örneğin, Visual Studio 2010 sürümünü CRT kitaplığını kullanarak ayrılmış bir blok göz önünde bulundurun. Varsa **_crtısvalidheappointer** CRT Kitaplığı Visual Studio 2012 sürümü tarafından dışarı aktarılan işlevin işaretçisi testleri, TRUE döndürür. Bu artık yararlı bir denemedir. CRT Kitaplığı Visual Studio 2010 önce sürümlerinde, işlev, belirli bir bellek adresi yerel yığın içinde olduğundan emin olmak için kullanılır. Yerel yığın oluşturulur ve C Çalışma Zamanı Kitaplığı'nın belirli bir örneği tarafından yönetilen yığın ifade eder. Bir dinamik bağlantı kitaplığı (DLL) çalışma zamanı kitaplığının statik bir bağlantı içeriyorsa, çalışma zamanı yığını ve bu nedenle, uygulamanın yerel yığın bağımsız kendi yığın kendi örneğini sahiptir. Zaman [_DEBUG](../../c-runtime-library/debug.md) tanımlı değil, çağrılar **_crtısvalidheappointer** ön işleme sırasında kaldırılır.
+Bu işlevi kullanmanızı önermiyoruz. Visual Studio 2010 CRT kitaplığı ile başlayarak, tüm CRT kitaplıkları bir işletim sistemi yığını, *işlem yığını*paylaşır. **_Crtısvalidheappointer** işlevi, IŞARETÇININ bir CRT yığınında ayrıldığını, ancak çağıranın CRT kitaplığı tarafından ayrılmadığını bildirir. Örneğin, CRT kitaplığı 'nın Visual Studio 2010 sürümünü kullanarak ayrılmış bir bloğu düşünün. CRT kitaplığı 'nın Visual Studio 2012 sürümü tarafından aktarılmış **_Crtisvalidheappointer** işlevi, işaretçiyi test eder, true döndürür. Bu artık yararlı bir test değildir. Visual Studio 2010 ' den önceki CRT kitaplığı sürümlerinde, belirli bir bellek adresinin yerel yığın dahilinde olduğundan emin olmak için işlevi kullanılır. Yerel yığın, C çalışma zamanı kitaplığının belirli bir örneği tarafından oluşturulan ve yönetilen yığına başvurur. Dinamik bağlantı kitaplığı (DLL) çalışma zamanı kitaplığına statik bir bağlantı içeriyorsa, çalışma zamanı yığınının kendi örneğine ve bu nedenle uygulamanın yerel yığınından bağımsız olarak kendi yığınına sahiptir. [_Hata ayıklama](../../c-runtime-library/debug.md) tanımlanmadığında, **_Crtisvalidheappointer** çağrıları ön işleme sırasında kaldırılır.
 
-Bu işlev, TRUE veya false değeri döndürdüğünden, onu birine geçirilebilir [_ASSERT](assert-asserte-assert-expr-macros.md) makroları basit bir hata ayıklama hata işleme mekanizması oluşturmak için. Belirtilen adres yerel yığında yer değilse, aşağıdaki örnekte bir onaylama işlemi hatasına neden olur:
+Bu işlev TRUE veya FALSE döndürdüğünden, basit bir hata ayıklama hata işleme mekanizması oluşturmak için [_Onaylama](assert-asserte-assert-expr-macros.md) makrolarından birine geçirilebilir. Aşağıdaki örnek, belirtilen adres yerel yığında bulunmuyorsa bir onaylama hatasına neden olur:
 
 ```C
 _ASSERTE( _CrtIsValidHeapPointer( userData ) );
 ```
 
-Hakkında daha fazla bilgi için **_crtısvalidheappointer** diğer hata ayıklama işlevlerini ve makrolarını birlikte kullanılabilir, bkz: [raporlama için makroları](/visualstudio/debugger/macros-for-reporting). Nasıl bellek blokları ayrılan, başlatılır ve taban yığının hata ayıklama sürümünde yönetilen hakkında daha fazla bilgi için bkz: [CRT hata ayıklama öbeği ayrıntıları](/visualstudio/debugger/crt-debug-heap-details).
+**_Crtısvalidheappointer** 'ın diğer hata ayıklama işlevleriyle ve makrolarıyla nasıl kullanılabileceği hakkında daha fazla bilgi için bkz. [Raporlama için makrolar](/visualstudio/debugger/macros-for-reporting). Bellek bloklarının taban yığının hata ayıklama sürümünde nasıl ayrıldığı, başlatıldığı ve yönetildiği hakkında bilgi için bkz. [CRT hata ayıklama yığını ayrıntıları](/visualstudio/debugger/crt-debug-heap-details).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_CrtIsValidHeapPointer**|\<crtdbg.h >|
+|**_CrtIsValidHeapPointer**|\<Crtdbg. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 
-Hata ayıklama sürümleri [C çalışma zamanı kitaplıkları](../../c-runtime-library/crt-library-features.md) yalnızca.
+Yalnızca [C çalışma zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md) sürümlerini ayıklayın.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, bellek, C çalışma zamanı kitaplıklarının önce Visual Studio 2010 ile kullanıldığında geçerli olup olmadığını test etmek nasıl gösterir. Bu örnekte, kullanıcılar eski CRT kitaplık kodu için sağlanır.
+Aşağıdaki örnek, Visual Studio 2010 ' den önceki C çalışma zamanı kitaplıkları ile kullanıldığında belleğin geçerli olup olmadığını nasıl test etmek gerektiğini gösterir. Bu örnek, eski CRT kitaplığı kodu kullanıcıları için verilmiştir.
 
 ```C
 // crt_isvalid.c

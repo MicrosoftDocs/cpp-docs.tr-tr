@@ -1,9 +1,9 @@
 ---
 title: fesetenv
 ms.date: 04/05/2018
-apiname:
+api_name:
 - fesetenv
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,23 +15,26 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-runtime-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - fesetenv
 - fenv/fesetenv
 helpviewer_keywords:
 - fesetenv function
 ms.assetid: ffc64fff-8ea7-4d59-9e04-ff96ef8cd012
-ms.openlocfilehash: 8c91bfbb89df964fed0a632d5fb5ebac47ebe948
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 155b9f635f6e8c3dc5acb61126f41c49cd32601f
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62334202"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70941117"
 ---
 # <a name="fesetenv"></a>fesetenv
 
-Geçerli bir kayan nokta ortamını ayarlar.
+Geçerli kayan nokta ortamını ayarlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -44,25 +47,25 @@ int fesetenv(
 ### <a name="parameters"></a>Parametreler
 
 *penv*<br/>
-İşaretçi bir **fenv_t** yapılan bir çağrıyla kümesi olarak bir kayan nokta ortamı içeren nesne [fegetenv](fegetenv1.md) veya [feholdexcept](feholdexcept2.md). Varsayılan başlatma kayan nokta ortamını kullanarak da belirtebilirsiniz **FE_DFL_ENV** makrosu.
+[Fegetenv](fegetenv1.md) veya [feholdexcept](feholdexcept2.md)çağrısıyla ayarlanmış bir kayan nokta ortamı içeren bir **fenv_t** nesnesine yönelik işaretçi. **FE_DFL_ENV** makrosunu kullanarak varsayılan başlangıç kayan nokta ortamını de belirtebilirsiniz.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Ortam başarılı bir şekilde ayarlarsanız, 0 döndürür. Aksi takdirde, sıfır olmayan bir değer döndürür.
+Ortam başarıyla ayarlandıysa 0 döndürür. Aksi takdirde, sıfır dışında bir değer döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Fesetenv** işlevi kayan nokta geçerli ortamdan depolanan değere ayarlar **fenv_t** nesne tarafından işaret edilen *penv*. Kayan nokta ortamıdır durumu bayrakları ve kayan nokta hesaplamalarının etkileyen Denetim modu kümesi. Bu yuvarlama modu ve durumu bayrakları için kayan nokta özel durumlarını içerir.  Varsa *penv* değil **FE_DFL_ENV** veya geçerli bir işaret etmiyor **fenv_t** nesnesi, sonraki davranışı tanımsızdır.
+**Fesetenv** işlevi, *penv*tarafından işaret edilen **fenv_t** nesnesinde depolanan değerden geçerli kayan nokta ortamını ayarlar. Kayan nokta ortamı, kayan nokta hesaplamalarını etkileyen durum bayrakları ve denetim modları kümesidir. Bu, kayan nokta özel durumları için yuvarlama modunu ve durum bayraklarını içerir.  *Penv* **FE_DFL_ENV** değilse veya geçerli bir **fenv_t** nesnesine işaret içermiyorsa, sonraki davranış tanımsızdır.
 
-Bu işlev çağrısı bulunan durumu bayrakları özel ayarlar *penv* nesnesi değil Bu özel durumlar oluşturabilir.
+Bu işleve yapılan bir çağrı, *penv* nesnesinde olan özel durum bayraklarını ayarlar, ancak bu özel durumları oluşturmaz.
 
-Bu işlevi kullanmak için erişim kullanarak engelleyebilir kayan nokta iyileştirmelerinin kapatmanız gerekir `#pragma fenv_access(on)` çağrıdan önceki yönerge. Daha fazla bilgi için [fenv_access](../../preprocessor/fenv-access.md).
+Bu işlevi kullanmak için, çağrıdan önce `#pragma fenv_access(on)` yönergesini kullanarak erişimi engelleyebilecek kayan nokta iyileştirmelerini kapatmanız gerekir. Daha fazla bilgi için bkz. [fenv_access](../../preprocessor/fenv-access.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İşlev|C üstbilgisi|C++ üst bilgisi|
+|İşlev|C üstbilgisi|C++üst bilgi|
 |--------------|--------------|------------------|
-|**fesetenv**|\<fenv.h >|\<cfenv >|
+|**fesetenv**|\<fenv. h >|\<cfenv >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

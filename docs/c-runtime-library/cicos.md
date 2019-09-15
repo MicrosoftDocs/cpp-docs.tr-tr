@@ -1,9 +1,9 @@
 ---
 title: _CIcos
 ms.date: 04/11/2018
-apiname:
+api_name:
 - _CIcos
-apilocation:
+api_location:
 - msvcr90.dll
 - msvcrt.dll
 - msvcr120.dll
@@ -12,7 +12,10 @@ apilocation:
 - msvcr110_clr0400.dll
 - msvcr110.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - CIcos
 - _CIcos
@@ -20,16 +23,16 @@ helpviewer_keywords:
 - _CIcos intrinsic
 - CIcos intrinsic
 ms.assetid: 6fc203fb-66f3-4ead-9784-f85833c26f1b
-ms.openlocfilehash: fef9ef9e197dcd6e8a1880c3acdfa2755ccf1ae1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5a57e948a73b8c4243ebe5a8a12f62cc55a40f3b
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62290215"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70940545"
 ---
-# <a name="cicos"></a>_CIcos
+# <a name="_cicos"></a>_CIcos
 
-Kayan nokta yığın üst değer kosinüsünü hesaplar.
+Kayan nokta yığınındaki en üstteki değerin kosinüsünü hesaplar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -39,9 +42,9 @@ void __cdecl _CIcos();
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu sürümü [cos](../c-runtime-library/reference/cos-cosf-cosl.md) derleyici anlayan özelleştirilmiş bir çağırma kuralı işlevi vardır. Kopya oluşturulmasını önlediği için yürütmeyi hızlandırır ve YAZMAÇ ayırma ile yardımcı olur.
+[Cos](../c-runtime-library/reference/cos-cosf-cosl.md) işlevinin bu sürümünde derleyicinin anladığı özelleştirilmiş bir çağırma kuralı vardır. Kopyaların oluşturulmasını ve YAZMAÇ ayrılmasına yardımcı olmasını önlediği için yürütmeyi hızlandırır.
 
-Sonuç değerini kayan nokta yığın üstüne itilir.
+Elde edilen değer, kayan nokta yığınının en üstüne gönderilir.
 
 ## <a name="requirements"></a>Gereksinimler
 

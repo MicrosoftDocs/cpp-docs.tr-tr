@@ -1,10 +1,10 @@
 ---
 title: tmpnam_s, _wtmpnam_s
 ms.date: 11/04/2016
-apiname:
+api_name:
 - tmpnam_s
 - _wtmpnam_s
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - tmpnam_s
 - _wtmpnam_s
@@ -30,12 +33,12 @@ helpviewer_keywords:
 - file names [C++], temporary
 - wtmpnam_s function
 ms.assetid: e70d76dc-49f5-4aee-bfa2-f1baa2bcd29f
-ms.openlocfilehash: 8cdd3feb177ef44c5dad32563d09a0bb8c820b22
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 847df0d2369857d009c39b4dd61adce45094899c
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69500756"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70946036"
 ---
 # <a name="tmpnam_s-_wtmpnam_s"></a>tmpnam_s, _wtmpnam_s
 
@@ -79,8 +82,8 @@ Bu işlevlerin her ikisi de başarılı olursa 0 veya hata durumunda bir hata nu
 |||||
 |-|-|-|-|
 |*üstbilgisine*|*Sizeınchars*|**Dönüş değeri**|**İçeriği** *Str*|
-|**DEĞER**|kaydedilmemiş|**EINVAL**|değiştirilmedi|
-|**null** değil (geçerli belleğe işaret eder)|çok kısa|**ERANGE**|değiştirilmedi|
+|**DEĞER**|Kaydedilmemiş|**EINVAL**|değiştirilmedi|
+|**Null** değil (geçerli belleğe işaret eder)|çok kısa|**ERANGE**|değiştirilmedi|
 
 *Str* **null**ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **errno** olarak **EINVAL** ve **EINVAL**döndürür.
 
@@ -90,7 +93,7 @@ Bu işlevlerin her biri, şu anda mevcut olmayan bir dosyanın adını döndür�
 
 **Tmpnam_s**için, bu oluşturulan dosya adını *Str*içinde depolayabilirler. **Tmpnam_s** tarafından döndürülen bir dizenin en fazla uzunluğu, stdio 'Da tanımlanan **L_tmpnam_s**'dir. Olsun. *Str* **null**ise, **tmpnam_s** sonucu dahili bir statik arabellekte bırakır. Bu nedenle, sonraki çağrılar bu değeri yok eder. **Tmpnam_s** tarafından oluşturulan ad, program tarafından oluşturulan bir dosya adından ve **tmpnam_s**öğesine yapılan ilk çağrıdan sonra, stdio 'daki **TMP_MAX_S** olduğunda, temel 32 (. 1-. 1vvvvvu) içindeki sıralı sayıların bir dosya uzantısını içerir. H **INT_MAX**).
 
-**tmpnam_s** çok baytlı karakter dize bağımsız değişkenlerini uygun şekilde otomatik olarak işler ve çok baytlı karakter dizilerini işletim sisteminden elde edilen OEM kod sayfasına göre tanıyor. **_wtmpnam_s** , **tmpnam_s**öğesinin geniş karakterli bir sürümüdür; **_wtmpnam_s** bağımsız değişkeni ve dönüş değeri geniş karakterli dizelerdir. **_wtmpnam_s** ve **tmpnam_s** , çok baytlı karakter dizelerini işleyememesi dışında aynı şekilde davranır.
+**tmpnam_s** çok baytlı karakter dize bağımsız değişkenlerini uygun şekilde otomatik olarak işler ve çok baytlı karakter dizilerini işletim sisteminden elde edilen OEM kod sayfasına göre tanıyor. **_wtmpnam_s** , **tmpnam_s**öğesinin geniş karakterli bir sürümüdür; **_wtmpnam_s** bağımsız değişkeni ve dönüş değeri geniş karakterli dizelerdir. **_wtmpnam_s** ve **tmpnam_s** , çok baytlı karakter dizelerini işleyememesi dışında **aynı şekilde davranır** .
 
 ' C++De, bu işlevlerin kullanılması şablon aşırı yüklemeleri tarafından basitleştirilmiştir; aşırı yüklemeler arabellek uzunluğunu otomatik olarak çıkarabilir ve bir boyut bağımsız değişkeni belirtme gereksinimini ortadan kaldırır. Daha fazla bilgi için bkz. [Güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 

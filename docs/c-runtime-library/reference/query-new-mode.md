@@ -1,9 +1,9 @@
 ---
 title: _query_new_mode
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _query_new_mode
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-heap-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - query_new_mode
 - _query_new_mode
@@ -24,16 +27,16 @@ helpviewer_keywords:
 - handler modes
 - _query_new_mode function
 ms.assetid: e185c5f9-b73b-4257-8eff-b47648374768
-ms.openlocfilehash: 327f22c847793316bd126721b4a66846d7da84dd
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 59724dafdc6488596478d0b44b254c4f498fce99
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62358079"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70950110"
 ---
-# <a name="querynewmode"></a>_query_new_mode
+# <a name="_query_new_mode"></a>_query_new_mode
 
-Belirlenen yeni işleyici modu belirten bir tamsayı döndürür **_set_new_mode** için **malloc**.
+**Malloc**için **_set_new_mode** tarafından ayarlanan yeni işleyici modunu gösteren bir tamsayı döndürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -45,23 +48,23 @@ int _query_new_mode(
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-İçin geçerli yeni işleyici modu, 0 veya 1 döndürür **malloc**. Dönüş değeri 1 gösterir, bellek dağıtma hatasında **malloc** ; yeni işleyici rutinini çağırır 0 dönüş değeri yok olduğunu gösterir.
+**Malloc**için 0 veya 1 gibi geçerli yeni işleyici modunu döndürür. 1 dönüş değeri, bellek ayıramadığında, **malloc** 'in yeni işleyici yordamını çağırdığı anlamına gelir; 0 dönüş değeri olmadığını gösterir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ **_Query_new_mode** işlevi tarafından ayarlanan yeni işleyici modu belirten bir tamsayı döndürür C++ [_set_new_mode](set-new-mode.md) için işlev [malloc](malloc.md). Yeni işleyici modu belirtir olup olmadığına göre bellek ayırma hatası **malloc** tarafından belirlenen yeni işleyici rutinini çağırmaktır [_set_new_handler](set-new-handler.md). Varsayılan olarak, **malloc** hatasında yeni işleyici rutinini çağırmaz. Kullanabileceğiniz **_set_new_mode** bu nedenle bu davranışı geçersiz kılmak için hata durumunda **malloc** aynı yeni işleyici rutinini çağırır biçimi **yeni** işlecinin yaptığı için başarısız olduğunda bellek ayrılamadı. Daha fazla bilgi için bkz [yeni ve delete işleçleri](../../cpp/new-and-delete-operators.md) C++ dil başvurusu.
+C++ **_Query_new_mode** işlevi, C++ [malloc](malloc.md)için [_set_new_mode](set-new-mode.md) işlevi tarafından ayarlanan yeni işleyici modunu gösteren bir tamsayı döndürür. Yeni işleyici modu, bellek ayırmayı başarısızlığından, **malloc** 'in [_set_new_handler](set-new-handler.md)tarafından ayarlanan yeni işleyici yordamını çağırmaya yönelik olup olmadığını gösterir. Varsayılan olarak, **malloc** hata durumunda yeni işleyici yordamını çağırmaz. Bu davranışı geçersiz kılmak için **_set_new_mode** kullanabilirsiniz, böylece hata **malloc** , yeni işleyici yordamını, bellek ayıramadığında **Yeni** işlecin yaptığı şekilde çağırır. Daha fazla bilgi için, C++ dil başvurusundaki [New ve delete işleçleri](../../cpp/new-and-delete-operators.md) tartışmalarına bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_query_new_mode**|\<New.h >|
+|**_query_new_mode**|\<Yeni. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 
-Tüm sürümleri [C çalışma zamanı kitaplıkları](../../c-runtime-library/crt-library-features.md).
+[C çalışma zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md)tüm sürümleri.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

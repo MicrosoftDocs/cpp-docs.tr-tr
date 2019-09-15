@@ -1,11 +1,11 @@
 ---
 title: cpow, cpowf, cpowl
 ms.date: 11/04/2016
-apiname:
+api_name:
 - cpow
 - cpowf
 - cpowl
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - cpow
 - cpowf
@@ -30,16 +33,16 @@ helpviewer_keywords:
 - cpowf function
 - complex/cpowl function
 ms.assetid: 83fe2187-22b7-4295-ab16-4d77abdbb80b
-ms.openlocfilehash: 588c437a01237de297e1db31fb2c507eb1145d90
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 005bafd4b19164f5c85be839a90fc7d5259d61bf
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62339851"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70942697"
 ---
 # <a name="cpow-cpowf-cpowl"></a>cpow, cpowf, cpowl
 
-Birkaç temel ve üs karmaşık sayılar nerede belirtilen üssüne yükseltilmiş değerini alır. Bu işlev üs negatif gerçek ekseni için kesin bir dal sahiptir.
+Belirtilen üssün çıkarılan bir sayının değerini alır, burada taban ve üs karmaşık sayılardır. Bu işlev, negatif gerçek eksen boyunca üs için kesilmiş bir dala sahiptir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -64,24 +67,24 @@ _Lcomplex cpowl(
 ### <a name="parameters"></a>Parametreler
 
 *x*<br/>
-Taban dizini.
+Temel.
 
-*Y*<br/>
+*Iz*<br/>
 Üs.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Değerini *x* üssünü *y* için kesin bir dal ile *x* negatif gerçek ekseni.
+X değeri negatif gerçek eksen boyunca *x* için kesilmiş bir dala sahip *x* *değerinin üssü* .
 
 ## <a name="remarks"></a>Açıklamalar
 
-Çünkü C++ aşırı yüklemesi, sağlayan yüklerini çağırabilirsiniz **cpow** alan ve getiren **_Fcomplex** ve **_Lcomplex** değerleri. C programında **cpow** her zaman alan ve döndüren bir **_Dcomplex** değeri.
+Aşırı C++ yüklemeye izin verdiğinden, **_Fcomplex** ve **_lcomplex** değerlerini alıp döndüren **cpow** aşırı yüklerini çağırabilirsiniz. C programında **cpow** her zaman **_dcomplex** değeri alır ve döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|C üstbilgisi|C++ üst bilgisi|
+|Yordam|C üstbilgisi|C++üst bilgi|
 |-------------|--------------|------------------|
-|**cpow**, **cpowf**, **cpowl**|\<Complex.h >|\<ccomplex >|
+|**cpow**, **cpowf**, **cpowl**|\<karmaşık. h >|\<ccomplex >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

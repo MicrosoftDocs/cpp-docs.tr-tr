@@ -1,10 +1,10 @@
 ---
 title: c16rtomb, c32rtomb
 ms.date: 01/22/2018
-apiname:
+api_name:
 - c16rtomb
 - c32rtomb
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-convert-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - c16rtomb
 - c32rtomb
@@ -26,16 +29,16 @@ helpviewer_keywords:
 - c16rtomb function
 - c32rtomb function
 ms.assetid: 7f5743ca-a90e-4e3f-a310-c73e16f4e14d
-ms.openlocfilehash: ad58184c7bab6f95a842bda5f9eb545f09434a3e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a16effe48442ccbb5144b57ead2fb15c908fe898
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62341762"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70943422"
 ---
 # <a name="c16rtomb-c32rtomb"></a>c16rtomb, c32rtomb
 
-Çok baytlı bir karakter geçerli yerel ayarı, UTF-16 veya UTF-32 bir geniş karakter dönüştürün.
+UTF-16 veya UTF-32 geniş karakterini geçerli yerel ayarda çok baytlı bir karaktere dönüştürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -55,31 +58,31 @@ size_t c32rtomb(
 ### <a name="parameters"></a>Parametreler
 
 *mbchar*<br/>
-Çok baytlı dönüştürülmüş karakteri depolamak için bir dizi için işaretçi.
+Çok baytlı dönüştürülen karakteri depolamak için bir diziye yönelik işaretçi.
 
 *wchar*<br/>
-Dönüştürülecek bir geniş karakter.
+Dönüştürülecek geniş bir karakter.
 
-*durumu*<br/>
-Bir işaretçi bir **mbstate_t** nesne.
+*durumunda*<br/>
+**Mbstate_t** nesnesine yönelik bir işaretçi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Dizi nesnesinde depolanan bayt sayısını *mbchar*, herhangi bir üst karakter sıraları dahil olmak üzere. Varsa *wchar* geçerli bir geniş karakter, değer değil (**size_t**)(-1) döndürülür **errno** ayarlanır **EILSEQ**, değeri*durumu* belirtilmemiş.
+Tüm kaydırma dizileri dahil olmak üzere, *mbchar*dizi nesnesinde depolanan bayt sayısı. *Wchar* geçerli bir geniş karakter değilse, değer (**size_t**) (-1) döndürülür, **errno** değeri **eilseq**olarak ayarlanır ve *durum* değeri belirtilmemiş olur.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**C16rtomb** işlevi dönüştürür UTF-16 karakter *wchar* için geçerli yerel ayarı eşdeğer çok baytlı dar karakter dizisi. Varsa *mbchar* bir null işaretçiyse, dönüştürülen dizide dizi nesnesi tarafından işaret edilen işlevi depoları değil *mbchar*. En fazla **MB_CUR_MAX** bayt depolanır *mbchar*, ve *durumu* sonuç çok baytlı shift durumuna ayarlanır.    Varsa *wchar* null geniş bir karakter olan bir dizisi için gerekli olan ilk kaydırma durumu depolanır, gerekirse geri yükleme null karakter, ardından ve *durumu* dönüştürme ilk duruma ayarlanır. **C32rtomb** işlevi aynıdır, ancak bir UTF-32 karakter dönüştürür.
+**C16rtomb** IşLEVI, UTF-16 karakter *wchar* değerini geçerli yerel ayarda eşdeğer çok baytlı dar karakter dizisine dönüştürür. *Mbchar* bir null işaretçi değilse, işlev, çevrilmiş sırayı *mbchar*tarafından işaret edilen dizi nesnesinde depolar. **MB_CUR_MAX** bayt sayısı *mbchar*'da depolanır ve *durum* , ortaya çıkan çok baytlı kaydırma durumuna ayarlanır.    *Wchar* null geniş bir karakter ise, ilk kaydırma durumunu geri yüklemek için gereken bir sıra, gerekirse, ardından null karakteri ve *durum* ilk dönüştürme durumuna ayarlanır. **C32rtomb** işlevi aynıdır, ancak bir UTF-32 karakterini dönüştürür.
 
-Varsa *mbchar* bir null işaretçiyse davranıştır bir iç arabellek için değiştirir işlevi çağrısı eşdeğer *mbchar* ve geniş null karakter *wchar*.
+*Mbchar* null bir işaretçiyse, bu davranış, *mbchar* için bir iç arabellek ve *wchar*için geniş bir null karakter içeren işleve yapılan çağrıya eşdeğerdir.
 
-*Durumu* dönüştürme durumu nesne bu işleve ve çıkış çok baytlı karakter kaydırma durumunu korumak yeniden başlatılabilir diğer işlevlere yapılan sonraki çağrılar yapmanızı sağlar. Yeniden başlatılabilir ve yeniden başlatılabilir olmayan işlevlerin kullanımını karışık olduğunda veya bir çağrı, sonuçlar tanımsız **setlocale** yeniden başlatılabilir işlev çağrıları arasında yapılır.
+*Durum* dönüştürme durumu nesnesi, bu işlev için sonraki çağrıları ve çok baytlı çıkış karakterlerinin kaydırma durumunu koruyacak diğer yeniden başlatılabilir işlevleri ayarlamanıza olanak sağlar. Yeniden başlatılabilir ve yeniden başlatılabilir işlevlerin kullanımını karıştırdığınızda veya yeniden başlatılabilir işlev çağrıları arasında **setlocale** çağrısı yapılırsa sonuçlar tanımsızdır.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**c16rtomb**, **c32rtomb**|C, C++: \<uchar.h>|
+|**c16rtomb**, **c32rtomb**|C, C++: \<uşar. h >|
 
 Uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

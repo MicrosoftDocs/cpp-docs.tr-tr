@@ -1,9 +1,9 @@
 ---
 title: _aligned_offset_realloc_dbg
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _aligned_offset_realloc_dbg
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -14,7 +14,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - aligned_offset_realloc_dbg
 - _aligned_offset_realloc_dbg
@@ -22,16 +25,16 @@ helpviewer_keywords:
 - aligned_offset_realloc_dbg function
 - _aligned_offset_realloc_dbg function
 ms.assetid: 64e30a12-887e-453b-aea8-aed793fca9d8
-ms.openlocfilehash: 7684a752f489eb726b2105b1055b6da1e86e9cd1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ce85fd0dec54a3963af5ae807dfb6f56f92eda7a
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62341580"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70939760"
 ---
-# <a name="alignedoffsetreallocdbg"></a>_aligned_offset_realloc_dbg
+# <a name="_aligned_offset_realloc_dbg"></a>_aligned_offset_realloc_dbg
 
-İle ayrılan bir bellek bloğunu boyutunu değiştirir [_aligned_malloc](aligned-malloc.md) veya [_aligned_offset_malloc](aligned-offset-malloc.md) (yalnızca hata ayıklama sürümü).
+[_Aligned_malloc](aligned-malloc.md) veya [_aligned_offset_malloc](aligned-offset-malloc.md) (yalnızca hata ayıklama sürümü) ile ayrılmış bir bellek bloğunun boyutunu değiştirir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -51,48 +54,48 @@ void * _aligned_offset_realloc_dbg(
 *memblock*<br/>
 Geçerli bellek bloğu işaretçisi.
 
-*Boyutu*<br/>
-Bellek ayırma boyutu.
+*boyutla*<br/>
+Bellek ayırmasının boyutu.
 
-*Hizalama*<br/>
-Hizalama değeri 2'in tam sayı üssü olması gerekir.
+*hizalar*<br/>
+2 ' nin tam sayı üssü olması gereken hizalama değeri.
 
-*uzaklık*<br/>
-Hizalama zorlamak için bellek ayırma olan uzaklık.
+*konumu*<br/>
+Hizalamayı zorlamak için bellek ayırmaya olan fark.
 
-*Dosya adı*<br/>
-İstenen kaynak dosyasının adını işaretçisine **aligned_offset_realloc** işlemi veya **NULL**.
+*kısaltın*<br/>
+**Aligned_offset_realloc** Işlemini veya **null değerini**isteyen kaynak dosyanın adı işaretçisi.
 
-*LineNumber*<br/>
-Satır numarası kaynak dosyada burada **aligned_offset_realloc** işlemi istendi veya **NULL**.
+*onayın*<br/>
+**Aligned_offset_realloc** işleminin Istendiği veya **null**olduğu kaynak dosyadaki satır numarası.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_aligned_offset_realloc_dbg** yeniden (ve muhtemelen taşınan) bellek bloğuna void bir işaretçi döndürür. Dönüş değeri **NULL** boyutu sıfırsa ve arabellek bağımsız değişken değil **NULL**, ya da blok verilen boyuta genişletmek için yeterli kullanılabilir bellek yoksa. Bu durumda, özgün blok serbest bırakılır. İkinci durumda, özgün blok değiştirilmez. Dönüş değeri, nesnenin herhangi bir türde bir depolama için uygun şekilde hizalanması garanti bir depolama alanına işaret eder. Bir işaretçi bir türü void, kullanımı dışında bir tür dönüş değerini almak için.
+**_aligned_offset_realloc_dbg** , yeniden ayrılan (ve muhtemelen taşınan) bellek bloğuna void bir işaretçi döndürür. Boyut sıfır ise ve arabellek bağımsız değişkeni **null**olmadığında veya bloğu belirtilen boyuta genişletmek için yeterli kullanılabilir bellek yoksa dönüş değeri **null** olur. İlk durumda, orijinal blok serbest bırakılır. İkinci durumda, orijinal blok değiştirilmez. Dönüş değeri, herhangi bir nesne türünün depolanması için uygun şekilde hizalı olarak garantili bir depolama alanına işaret eder. Void dışında bir türe işaretçi almak için, dönüş değerinde bir tür dönüştürme kullanın.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_aligned_offset_realloc_dbg** bir hata ayıklama sürümü [_aligned_offset_realloc](aligned-offset-realloc.md) işlevi. Zaman [_DEBUG](../../c-runtime-library/debug.md) tanımlı değil, her çağrı **_aligned_offset_realloc_dbg** çağrısı azaltılır **_aligned_offset_realloc**. Her ikisi de **_aligned_offset_realloc** ve **_aligned_offset_realloc_dbg** taban yığının bellek bloğunda yeniden tahsis ancak **_aligned_offset_realloc_dbg** barındırır birçok hata ayıklama özellikleri: arabellek bloğu için sızıntılara, test etmek için kullanıcı bölümünü her iki tarafındaki ve *filename*/*linenumber* kökenini belirlemek için bilgi ayırma isteklerini. Bir blok türü parametresiyle belirli ayırma türleri izleme hizalanmış ayırma desteklenen hata ayıklama özelliği değil. Hizalanmış ayırma _NORMAL_BLOCK bloğu türü olarak görünür.
+**_aligned_offset_realloc_dbg** , [_aligned_offset_realloc](aligned-offset-realloc.md) işlevinin bir hata ayıklama sürümüdür. [_Hata ayıklama](../../c-runtime-library/debug.md) tanımlanmadığında, **_aligned_offset_realloc_dbg** öğesine yapılan her çağrı, **_aligned_offset_realloc**çağrısına düşürülür. Hem **_aligned_offset_realloc** hem de **_aligned_offset_realloc_dbg** , temel yığında bir bellek bloğunu yeniden tahsis ediyor, ancak **_aligned_offset_realloc_dbg** birkaç hata ayıklama özelliğini karşılar: Kullanıcı bölümünün her iki tarafında da ara bellek sızıntı için sınanacak blok ve ayırma isteklerinin kaynağını tespit etmek için *dosya adı*/*onayın* bilgileri. Bir blok türü parametresiyle belirli ayırma türlerini izlemek, hizalanmış ayırmalar için desteklenen bir hata ayıklama özelliği değildir. Hizalanmış ayırmalar, _NORMAL_BLOCK blok türü olarak görünür.
 
-Gibi [_aligned_offset_malloc](aligned-offset-malloc.md), **_aligned_offset_realloc_dbg** yapısı içinde bir uzaklık hizalanması için bir yapı sağlar.
+[_Aligned_offset_malloc](aligned-offset-malloc.md)gibi **_aligned_offset_realloc_dbg** , yapının yapı içindeki bir uzaklığa göre hizalanmasına izin verir.
 
-**_realloc_dbg** istenen biraz daha fazla alan ile belirtilen bellek bloğu yeniden tahsis ederse *newSize*. *newSize* büyük ya da ilk olarak ayrılan bellek blok boyutundan küçük olabilir. Ek alan, hata ayıklama bellek bloklarını bağlantı ve uygulama ile hata ayıklama üstbilgi bilgileri sağlayın ve arabellek üzerine yazmak için hata ayıklama yığını Yöneticisi tarafından kullanılır. Tahsisat, orijinal bellek bloğunun yığınındaki farklı bir konuma taşımak, yanı sıra bellek blok boyutu değiştirme neden olabilir. Bellek bloğu taşınırsa, özgün blok içeriği üzerine yazılır.
+**_realloc_dbg** Istenen *newSize*göre biraz daha fazla alanla belirtilen bellek bloğunu yeniden konumlandırır. *newSize* , başlangıçta ayrılan bellek bloğunun boyutundan daha büyük veya daha küçük olabilir. Hata ayıklama bellek bloklarını bağlamak ve uygulamanın hata ayıklama üstbilgi bilgilerini ve üzerine yazma arabelleğini sağlamak için ek alan, hata ayıklama yığın Yöneticisi tarafından kullanılır. Yeniden ayırma, özgün bellek bloğunun yığında farklı bir konuma taşınmasına ve bellek bloğunun boyutunu değiştirmeye neden olabilecek. Bellek bloğu taşınırsa, orijinal bloğunun içeriğinin üzerine yazılır.
 
-Bu işlev ayarlar **errno** için **ENOMEM** bellek ayırma başarısız olursa veya istenen boyutu büyüktür **_HEAP_MAXREQ**. Hakkında daha fazla bilgi için **errno**, bkz: [errno _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md). Ayrıca, **_aligned_offset_realloc_dbg** kendi parametrelerini doğrular. Varsa *hizalama* 2'in kuvveti değil veya *uzaklığı* büyüktür veya eşittir *boyutu* ve sıfır değilse, bu işlev geçersiz parametre işleyicisi içindeaçıklananşekildeçağırır[ Parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse, bu işlevi döndürür **NULL** ve ayarlar **errno** için **EINVAL**.
+Bu işlev, bellek ayırma başarısız olursa veya istenen boyut **_Heap_maxreq**değerinden büyükse **errno** değerini **ENOMEM** olarak ayarlar. **Errno**hakkında daha fazla bilgi için bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md). Ayrıca, **_aligned_offset_realloc_dbg** parametrelerini doğrular. *Hizalama* 2 ' nin üssü değilse veya Eğer değer *Boyut* ve sıfır dışında bir değere eşit veya *ondan büyükse,* bu işlev [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev **null** değerini döndürür ve **errno** 'ı **EINVAL**olarak ayarlar.
 
-Nasıl bellek blokları ayrılan, başlatılır ve taban yığının hata ayıklama sürümünde yönetilen hakkında daha fazla bilgi için bkz: [CRT hata ayıklama öbeği ayrıntıları](/visualstudio/debugger/crt-debug-heap-details). Ayırma blok türleri ve bunların nasıl kullanıldığı hakkında daha fazla bilgi için bkz. [hata ayıklama öbek üzerindeki blokları türleri](/visualstudio/debugger/crt-debug-heap-details). Standart yığın işlevi ve hata ayıklama sürümü, bir uygulamanın hata ayıklama derlemesinde çağırma arasındaki farklar hakkında daha fazla bilgi için bkz. [hata ayıklama sürümleri, yığın ayırma işlevleri](/visualstudio/debugger/debug-versions-of-heap-allocation-functions).
+Bellek bloklarının taban yığının hata ayıklama sürümünde nasıl ayrıldığı, başlatıldığı ve yönetildiği hakkında bilgi için bkz. [CRT hata ayıklama yığını ayrıntıları](/visualstudio/debugger/crt-debug-heap-details). Ayırma bloğu türleri ve bunların nasıl kullanıldığı hakkında bilgi için bkz. [hata ayıklama yığınındaki blok türleri](/visualstudio/debugger/crt-debug-heap-details). Bir uygulamanın hata ayıklama sürümünde standart yığın işlevi çağırma ve hata ayıklama sürümü arasındaki farklar hakkında daha fazla bilgi için bkz. [yığın ayırma Işlevlerinin hata ayıklama sürümleri](/visualstudio/debugger/debug-versions-of-heap-allocation-functions).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_aligned_offset_realloc_dbg**|\<crtdbg.h >|
+|**_aligned_offset_realloc_dbg**|\<Crtdbg. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 
-Hata ayıklama sürümleri [C çalışma zamanı kitaplıkları](../../c-runtime-library/crt-library-features.md) yalnızca.
+Yalnızca [C çalışma zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md) sürümlerini ayıklayın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

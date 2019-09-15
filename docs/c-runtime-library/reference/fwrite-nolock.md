@@ -1,9 +1,9 @@
 ---
 title: _fwrite_nolock
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _fwrite_nolock
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _fwrite_nolock
 - fwrite_nolock
@@ -24,16 +27,16 @@ helpviewer_keywords:
 - streams, writing data to
 - _fwrite_nolock function
 ms.assetid: 2b4ec6ce-742e-4615-8407-44a0a18ec1d7
-ms.openlocfilehash: 1c899e34e19547b30a42135f3f818f220f1bc5b7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 035ee1d958c6ea6a13481d92311733ded9ed5f2c
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62332669"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70956211"
 ---
-# <a name="fwritenolock"></a>_fwrite_nolock
+# <a name="_fwrite_nolock"></a>_fwrite_nolock
 
-Veri, iş parçacığını kilitlemeden, bir akışa yazar.
+İş parçacığını kilitlemeden verileri bir akışa yazar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -48,40 +51,40 @@ size_t _fwrite_nolock(
 
 ### <a name="parameters"></a>Parametreler
 
-*Arabellek*<br/>
-Yazılacak veri işaretçisi.
+*arabelleğin*<br/>
+Yazılacak verilere yönelik işaretçi.
 
-*Boyutu*<br/>
-Bayt olarak öğe boyutu.
+*boyutla*<br/>
+Bayt cinsinden öğe boyutu.
 
-*Sayısı*<br/>
-Yazılacak öğe maksimum sayısı.
+*biriktirme*<br/>
+Yazılacak en fazla öğe sayısı.
 
-*Stream*<br/>
-İşaretçi **dosya** yapısı.
+*ka*<br/>
+**Dosya** yapısına yönelik işaretçi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Aynı [fwrite](fwrite.md).
+[Fwrite](fwrite.md)ile aynı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlev, kilitleme yapılmayan bir sürümünü **fwrite**. Aynıdır **fwrite** , başka iş parçacıklarının engellemelerinden korunmamaları hariç aynıdırlar. Diğer iş parçacıklarının kilitleme yüküne tabi olmayan çünkü daha hızlı olabilir. Bu işlev yalnızca tek iş parçacıklı uygulamalar ve burada çağırma kapsamının iş parçacığı yalıtımını zaten işlediği gibi iş parçacığı bakımından güvenli bağlamlarda kullanın.
+Bu işlev, **fwrite**'un kilitleme olmayan bir sürümüdür. Bu, diğer iş parçacıklarının girişim tarafından korunmamasının dışında, **fwrite** ile aynıdır. Diğer iş parçacıklarını kilitleme yükünü karşılamadığından daha hızlı olabilir. Bu işlevi yalnızca tek iş parçacıklı uygulamalar gibi iş parçacığı güvenli bağlamlarda veya çağırma kapsamının iş parçacığı yalıtımını zaten işlediği yerde kullanın.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**_fwrite_nolock**|\<stdio.h >|
+|**_fwrite_nolock**|\<stdio. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
-Örneğin bakın [fread](fread.md).
+[Fread](fread.md)örneğine bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Stream g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [fread](fread.md)<br/>
 [_write](write.md)<br/>

@@ -1,10 +1,10 @@
 ---
 title: _dupenv_s_dbg, _wdupenv_s_dbg
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _dupenv_s_dbg
 - _wdupenv_s_dbg
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _tdupenv_s_dbg
 - _dupenv_s_dbg
@@ -29,16 +32,16 @@ helpviewer_keywords:
 - wdupenv_s_dbg function
 - _dupenv_s_dbg function
 ms.assetid: e3d81148-e24e-46d0-a21d-fd87b5e6256c
-ms.openlocfilehash: 95d8c18a0ebc543304fdb6bf51c4adde589333aa
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6c61986184f93c6cf6e83b33f77dce2bd017cfae
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62339227"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70937686"
 ---
-# <a name="dupenvsdbg-wdupenvsdbg"></a>_dupenv_s_dbg, _wdupenv_s_dbg
+# <a name="_dupenv_s_dbg-_wdupenv_s_dbg"></a>_dupenv_s_dbg, _wdupenv_s_dbg
 
-Geçerli ortamdan bir değer alır.  Sürümleri [_dupenv_s, _wdupenv_s](dupenv-s-wdupenv-s.md) bellek tahsis [_malloc_dbg](malloc-dbg.md) ek hata ayıklama bilgileri sağlamak için.
+Geçerli ortamdan bir değer alın.  Ek hata ayıklama bilgileri sağlamak için [_malloc_dbg](malloc-dbg.md) ile bellek ayıran [_dupenv_s, _wdupenv_s](dupenv-s-wdupenv-s.md) sürümleri.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -63,41 +66,41 @@ errno_t _wdupenv_s_dbg(
 
 ### <a name="parameters"></a>Parametreler
 
-*Arabellek*<br/>
-Değişken değerini depolayan arabellek.
+*arabelleğin*<br/>
+Değişkenin değerini depolayan arabellek.
 
 *numberOfElements*<br/>
-Boyutu *arabellek*.
+*Arabelleğin*boyutu.
 
-*varName*<br/>
+*varname*<br/>
 Ortam değişkeni adı.
 
 *blockType*<br/>
-İstenen bellek bloğu türü: **_clıent_block** veya **_NORMAL_BLOCK**.
+Bellek bloğunun istenen türü: **_Client_block** veya **_NORMAL_BLOCK**.
 
-*Dosya adı*<br/>
-Kaynak dosyasının adı işaretçi veya **NULL**.
+*kısaltın*<br/>
+Kaynak dosyanın adı işaretçisi veya **null**.
 
-*LineNumber*<br/>
-Satır numarası kaynak dosyada veya **NULL**.
+*onayın*<br/>
+Kaynak dosyadaki satır numarası veya **null**.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarı, bir hata kodu sıfır.
+Başarı durumunda sıfır, hata durumunda hata kodu.
 
-Bu işlevler kendi parametrelerini doğrular; varsa *arabellek* veya *varname* olduğu **NULL**, açıklanan şekilde geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse işlevler **errno** için **EINVAL** ve dönüş **EINVAL**.
+Bu işlevler parametrelerini doğrular; *buffer* veya *varname* **null**ise, [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, işlevler **errno** olarak **EINVAL** ve **EINVAL**döndürür.
 
-Bu işlevler yeterli bellek ayıramıyorsa, ayarladıkları *arabellek* için **NULL** ve *numberOfElements* 0'dönüş **ENOMEM**.
+Bu işlevler yeterli bellek ayıramıyorsa, *buffer* 'ı null ve *numberOfElements* **değeri** 0 olarak ayarlar ve **ENOMEM**döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Dupenv_s_dbg** ve **_wdupenv_s_dbg** işlevleri aynı **_dupenv_s** ve **_wdupenv_s** dışında olduğunda **_DEBUG** olan tanımlanan, bu işlevlerin hata ayıklama sürümünü kullanmak [malloc](malloc.md), [_malloc_dbg](malloc-dbg.md), ortam değişkeninin değeri için bellek ayrılamadı. Hata ayıklama özellikleri hakkında bilgi için **_malloc_dbg**, bkz: [_malloc_dbg](malloc-dbg.md).
+**_Dupenv_s_dbg** ve **_wdupenv_s_dbg** işlevleri **_dupenv_s** ve **_wdupenv_s** ile aynıdır; ancak **_hata ayıklama** tanımlandığında, bu işlevler [malloc](malloc.md), [_malloc_dbg](malloc-dbg.md)hata ayıklama sürümünü kullanır ortam değişkeninin değeri için bellek ayırmak için. **_Malloc_dbg**hata ayıklama özellikleri hakkında daha fazla bilgi için, bkz. [_malloc_dbg](malloc-dbg.md).
 
-Bu işlevler, çoğu durumda açıkça çağırmanız gerekmez. Bunun yerine, bayrak tanımlayabilirsiniz **_CRTDBG_MAP_ALLOC**. Zaman **_CRTDBG_MAP_ALLOC** tanımlanır, çağrılar **_dupenv_s** ve **_wdupenv_s** için eşleştirilir **_dupenv_s_dbg** ve **_wdupenv_s_dbg**sırasıyla ile *blockType* kümesine **_NORMAL_BLOCK**. Bu nedenle, yığın blokları olarak işaretlemek istediğiniz sürece bu işlevler açıkça çağırmanız gerekmez **_clıent_block**. Blok türleri hakkında daha fazla bilgi için bkz. [hata ayıklama öbek üzerindeki blokları türleri](/visualstudio/debugger/crt-debug-heap-details).
+Çoğu durumda bu işlevleri açıkça çağırmanız gerekmez. Bunun yerine, **_Crtdbg_map_polationbayrağını**tanımlayabilirsiniz. **_Crtdbg_map_ayırma** tanımlandığında, **_dupenv_s** ve **_wdupenv_s** çağrıları sırasıyla **_dupenv_s_dbg** ve **_Wdupenv_s_dbg**olarak eşlenir ve blok *türü* **_NORMAL_BLOCK**olarak ayarlanır. Bu nedenle, yığın bloklarını **_Client_block**olarak işaretlemek istemediğiniz sürece bu işlevleri açıkça çağırmanız gerekmez. Blok türleri hakkında daha fazla bilgi için bkz. [hata ayıklama yığınındaki blok türleri](/visualstudio/debugger/crt-debug-heap-details).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_tdupenv_s_dbg**|**_dupenv_s_dbg**|**_dupenv_s_dbg**|**_wdupenv_s_dbg**|
 
@@ -105,8 +108,8 @@ Bu işlevler, çoğu durumda açıkça çağırmanız gerekmez. Bunun yerine, ba
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_dupenv_s_dbg**|\<crtdbg.h >|
-|**_wdupenv_s_dbg**|\<crtdbg.h >|
+|**_dupenv_s_dbg**|\<Crtdbg. h >|
+|**_wdupenv_s_dbg**|\<Crtdbg. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

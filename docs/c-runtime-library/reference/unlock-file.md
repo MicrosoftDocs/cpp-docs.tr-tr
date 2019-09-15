@@ -1,9 +1,9 @@
 ---
 title: _unlock_file
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _unlock_file
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-filesystem-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _unlock_file
 - unlock_file
@@ -25,16 +28,16 @@ helpviewer_keywords:
 - _unlock_file function
 - unlocking files
 ms.assetid: cf380a51-6d3a-4f38-bd64-2d4fb57b4369
-ms.openlocfilehash: e3d11cbd59ef5846b33908ae6b6c40d7ea6125e8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2983408f066ea00c0b7ab111d9a6349700ecaece
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62353553"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70957485"
 ---
-# <a name="unlockfile"></a>_unlock_file
+# <a name="_unlock_file"></a>_unlock_file
 
-Dosyaya erişmek diğer işlemlere izin verme, bir dosyanın kilidini açar.
+Bir dosyanın kilidini açarak diğer işlemlerin dosyaya erişmesine izin verir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -46,18 +49,18 @@ void _unlock_file(
 
 ### <a name="parameters"></a>Parametreler
 
-*Dosya*<br/>
+*dosyasýný*<br/>
 Dosya tanıtıcısı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Unlock_file** işlevi tarafından belirtilen dosyanın kilidini açarak *dosya*. Bir dosyanın kilidini başka işlemler tarafından dosyaya erişim sağlar. Bu işlev sürece çağrılmamalıdır **_lock_file** üzerinde daha önceden çağrıldığından *dosya* işaretçi. Çağırma **_unlock_file** kilitli olmayan bir dosyada bir kilitlenmeyle neden olabilir. Bir örnek için bkz. [_lock_file](lock-file.md).
+**_Unlock_ın** işlevi *Dosya*tarafından belirtilen dosyanın kilidini açar. Bir dosyanın kilidini açmak, diğer işlemlere göre dosyaya erişim sağlar. Bu işlev, **_lock_file** , daha önce *Dosya* işaretçisi üzerinde çağrılmadığı müddetçe çağrılmamalıdır. Kilitli olmayan bir dosyada **_unlock_unlock_fıle** çağrısı kilitlenmeye neden olabilir. Bir örnek için bkz. [_lock_.](lock-file.md)
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_unlock_file**|\<stdio.h >|
+|**_unlock_file**|\<stdio. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

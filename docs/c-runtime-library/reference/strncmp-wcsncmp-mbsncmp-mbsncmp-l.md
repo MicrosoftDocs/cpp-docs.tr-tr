@@ -1,12 +1,12 @@
 ---
 title: strncmp, wcsncmp, _mbsncmp, _mbsncmp_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - strncmp
 - _mbsncmp
 - wcsncmp
 - _mbsncmp_l
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -21,7 +21,10 @@ apilocation:
 - api-ms-win-crt-multibyte-l1-1-0.dll
 - api-ms-win-crt-string-l1-1-0.dll
 - ntoskrnl.exe
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _ftcsnccmp
 - _ftcsncmp
@@ -49,19 +52,19 @@ helpviewer_keywords:
 - characters [C++], comparing
 - _ftcsnccmp function
 ms.assetid: 2fdbf4e6-77da-4b59-9086-488f6066b8af
-ms.openlocfilehash: 8f022dec6c161814ade5c6be5aaccfcd239a4af4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 597db3825d1d6165fb6bd4b98b8d469ea8947b59
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62209869"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70947342"
 ---
-# <a name="strncmp-wcsncmp-mbsncmp-mbsncmpl"></a>strncmp, wcsncmp, _mbsncmp, _mbsncmp_l
+# <a name="strncmp-wcsncmp-_mbsncmp-_mbsncmp_l"></a>strncmp, wcsncmp, _mbsncmp, _mbsncmp_l
 
-Belirtilen iki dizenin karakter sayısı kadar karşılaştırır.
+İki dizenin belirtilen sayıda karakter ile karşılaştırılır.
 
 > [!IMPORTANT]
-> **_mbsncmp** ve **_mbsncmp_l** Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **_mbsncmp** ve **_mbsncmp_l** Windows çalışma zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -98,50 +101,50 @@ int _mbsncmp_l(
 *Dize1*, *dize2*<br/>
 Karşılaştırılacak dizeler.
 
-*Sayısı*<br/>
+*biriktirme*<br/>
 Karşılaştırılacak karakter sayısı.
 
-*Yerel ayar*<br/>
+*ayarlar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Dönüş değeri dizelerinin ilişkisini gösteren *Dize1* ve *dize2* gibi.
+Dönüş değeri, *Dize1* ve *dize2* alt dizelerinin aşağıdaki gibi ilişkisini gösterir.
 
 |Dönüş değeri|Açıklama|
 |------------------|-----------------|
-|< 0|*Dize1* alt dize küçüktür *dize2* alt dize|
-|0|*Dize1* aynı alt dizeyi *dize2* alt dize|
-|> 0|*Dize1* alt dizeyi büyük *dize2* alt dize|
+|< 0|*Dize1* substring, *dize2* alt dizenden küçük|
+|0|*Dize1* alt dizesi, *dize2* alt dizesi ile özdeş|
+|> 0|*Dize1* alt dize, *dize2* alt dizeden büyük|
 
-Parametre doğrulama hata **_mbsncmp** ve **_mbsncmp_l** dönüş **_NLSCMPERROR**, tanımlanan \<string.h > ve \< Mbstring.h >.
+Bir parametre doğrulama hatası üzerinde, **_mbsncmp** ve **_mbsncmp_l** , \<String. h > ile \<mbstring. h > tanımlanan **_NLSCMPERROR**döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Strncmp** işlevi, en fazla ilk sıralı bir karşılaştırma gerçekleştirir *sayısı* öğesindeki karakterler *Dize1* ve *dize2* ve alt dizeler arasındaki ilişkiyi gösteren bir değer döndürür. **strncmp** büyük küçük harfe duyarlı bir sürümüdür **_strnicmp**. **wcsncmp** ve **_mbsncmp** büyük/küçük harfe sürümleridir **_wcsnicmp** ve **_mbsnicmp**.
+**Strncmp** işlevi, *Dize1* ve *dize2* içindeki ilk *sayı* karakterlerinin en fazla bir sıralı karşılaştırmasını gerçekleştirir ve alt dizeler arasındaki ilişkiyi gösteren bir değer döndürür. **strncmp** , **_strnıcmp**'nin büyük/küçük harfe duyarlı bir sürümüdür. **wcsncmp** ve **_mbsncmp** , **_wcsnıcmp** ve **_mbsnıcmp**'nin büyük/küçük harfe duyarlı sürümleridir.
 
-**wcsncmp** ve **_mbsncmp** geniş karakter ve çok baytlı karakter sürümleridir **strncmp**. Bağımsız değişkenleri **wcsncmp** geniş karakterli dizelerdir; **_mbsncmp** çok baytlı karakter dizeleridir. **_mbsncmp** bir çok baytlı kod sayfasına göre çok baytlı karakter dizileri tanır ve döndürür **_NLSCMPERROR** üzerinde hata.
+**wcsncmp** ve **_mbsncmp** , **strncmp**'nin geniş karakterli ve çok baytlı karakter sürümleridir. **Wcsncmp** bağımsız değişkenleri geniş karakterli dizelerdir; **_mbsncmp** olanlar çok baytlı karakter dizeleridir. **_mbsncmp** çok baytlı bir kod sayfasına göre çok baytlı karakter dizilerini tanır ve hata üzerinde **_Nlscmperror** döndürür.
 
-Ayrıca, **_mbsncmp** ve **_mbsncmp_l** parametrelerini doğrular. Varsa *Dize1* veya *dize2* null bir işaretçiyse, açıklanan şekilde geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse **_mbsncmp** ve **_mbsncmp_l** dönüş **_NLSCMPERROR** ayarlayıp **errno** için  **EINVAL**. **strncmp** ve **wcsncmp** kendi parametrelerini doğrulamazlar. Bu işlevler, aynı şekilde davranır.
+Ayrıca, **_mbsncmp** ve **_mbsncmp_l** parametrelerini doğrula. *Dize1* veya *dize2* null Işaretçisiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, **_mbsncmp** ve **_mbsncmp_l** **_NLSCMPERROR** döndürür ve **errno** değerini **EINVAL**olarak ayarlayın. **strncmp** ve **wcsncmp** parametrelerini doğrulamaz. Bu işlevler, aynı şekilde davranır.
 
-Karşılaştırma davranışını **_mbsncmp** ve **_mbsncmp_l** ayarından etkilenir **LC_CTYPE** yerel ayarının kategori ayarına. Bu, çok baytlı karakter baştaki ve sondaki baytını algılanması denetler. Daha fazla bilgi için [setlocale](setlocale-wsetlocale.md). **_Mbsncmp** işlevi, bu yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır. **_Mbsncmp_l** işlevi, onu kullanması hariç, aynıdır *yerel ayar* parametresi yerine. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md). Yerel bir tek baytlı yerel ayar varsa, bu işlevler davranışını aynıdır **strncmp**.
+**_Mbsncmp** ve **_mbsncmp_l** karşılaştırma davranışı, yerel ayarın **LC_CTYPE** kategori ayarı ayarından etkilenir. Bu denetim, çok baytlı karakterlerin baştaki ve sondaki baytlarını tespit eder. Daha fazla bilgi için bkz. [setlocale](setlocale-wsetlocale.md). **_Mbsncmp** işlevi, yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır. **_Mbsncmp_l** işlevi, bunun yerine *yerel ayar* parametresini kullanması dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md). Yerel ayar tek baytlık bir yerel ayar ise, bu işlevlerin davranışı **strncmp**ile aynıdır.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_tcsnccmp**|**strncmp**|**_mbsncmp**|**wcsncmp**|
 |**_tcsncmp**|**strncmp**|**_mbsnbcmp**|**wcsncmp**|
-|**_tccmp**|Makro veya satır içi işleve eşlenir|**_mbsncmp**|Makro veya satır içi işleve eşlenir|
-|**Uygulanamaz**|**Uygulanamaz**|**_mbsncmp_l**|**Uygulanamaz**|
+|**_tccmp**|Makroya veya satır içi işleve eşlenir|**_mbsncmp**|Makroya veya satır içi işleve eşlenir|
+|**uygulanamaz**|**uygulanamaz**|**_mbsncmp_l**|**uygulanamaz**|
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**strncmp**|\<String.h >|
-|**wcsncmp**|\<String.h > veya \<wchar.h >|
-|**_mbsncmp**, **_mbsncmp_l**|\<Mbstring.h >|
+|**strncmp**|\<String. h >|
+|**wcsncmp**|\<String. h > veya \<wchar. h >|
+|**_mbsncmp**, **_mbsncmp_l**|\<mbstring. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -196,7 +199,7 @@ Result:      String 1 is equal to string 2
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dize düzenlemesi](../../c-runtime-library/string-manipulation-crt.md)<br/>
+[Dize düzenleme](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [locale](../../c-runtime-library/locale.md)<br/>
 [Çok Baytlı Karakter Sıralarının Yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [_mbsnbcmp, _mbsnbcmp_l](mbsnbcmp-mbsnbcmp-l.md)<br/>

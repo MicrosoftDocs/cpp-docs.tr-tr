@@ -1,10 +1,10 @@
 ---
 title: _putchar_nolock, _putwchar_nolock
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _putchar_nolock
 - _putwchar_nolock
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - putwchar_nolock
 - _puttchar_nolock
@@ -32,16 +35,16 @@ helpviewer_keywords:
 - _putwchar_nolock function
 - puttchar_nolock function
 ms.assetid: 9ac68092-bfc3-4352-b486-c3e780220575
-ms.openlocfilehash: 2a70c2363b5ae35faab9a0167200366b286408b3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4dba6537c5fb7ec66a812f2c34831b1b908fc3e4
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62358170"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70949939"
 ---
-# <a name="putcharnolock-putwcharnolock"></a>_putchar_nolock, _putwchar_nolock
+# <a name="_putchar_nolock-_putwchar_nolock"></a>_putchar_nolock, _putwchar_nolock
 
-Bir karakter Yazar **stdout** iş parçacığını kilitlemeden.
+İş parçacığını kilitlemeden **stdout** 'a bir karakter yazar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -61,11 +64,11 @@ Yazılacak karakter.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bkz: **putchar, putwchar**.
+Bkz. **putchar, putwchar**.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**putchar_nolock** ve **_putwchar_nolock** sürümlerle özdeştir **_nolock** soneki olmayan bunlar başka iş parçacıklarının engellemelerinden korunmamaları. Diğer iş parçacıklarını kilitleme ek yükü kalmadıklarından daha hızlı olabilir. Bu işlevler yalnızca tek iş parçacıklı uygulamalar ve burada çağırma kapsamının iş parçacığı yalıtımını zaten işlediği gibi iş parçacığı bakımından güvenli bağlamlarda kullanın.
+**putchar_nolock** ve **_putwchar_nolock** , diğer iş parçacıkları tarafından girişime karşı korunmamaları dışında **_nolock** soneki olmayan sürümlerle aynıdır. Diğer iş parçacıklarını kilitleme yükünü sunmadığından daha hızlı olabilir. Bu işlevleri yalnızca, tek iş parçacıklı uygulamalar gibi iş parçacığı güvenli bağlamlarda veya çağırma kapsamının iş parçacığı yalıtımını zaten işlediği yerde kullanın.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -77,14 +80,14 @@ Bkz: **putchar, putwchar**.
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_putchar_nolock**|\<stdio.h >|
-|**_putwchar_nolock**|\<stdio.h > veya \<wchar.h >|
+|**_putchar_nolock**|\<stdio. h >|
+|**_putwchar_nolock**|\<stdio. h > veya \<wchar. h >|
 
-Konsolu, Evrensel Windows Platformu (UWP) uygulamaları desteklenmez. Konsolları ile ilişkili standart akış işleyicileri **stdin**, **stdout**, ve **stderr**, C çalışma zamanı işlevleri bunları UWP uygulamalarında kullanmadan önce yeniden yönlendirilmesi gerekiyor . Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Konsol Evrensel Windows Platformu (UWP) uygulamalarında desteklenmez. Console, **STDIN**, **stdout**ve **stderr**Ile ilişkili standart akış TUTAMAÇLARı, C çalışma zamanı işlevlerinin UWP uygulamalarında kullanabilmesi için yeniden yönlendirilmelidir. Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 
-Tüm sürümleri [C çalışma zamanı kitaplıkları](../../c-runtime-library/crt-library-features.md).
+[C çalışma zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md)tüm sürümleri.
 
 ## <a name="example"></a>Örnek
 
@@ -118,6 +121,6 @@ This is the line of output
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Stream g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [fputc, fputwc](fputc-fputwc.md)<br/>
 [fgetc, fgetwc](fgetc-fgetwc.md)<br/>

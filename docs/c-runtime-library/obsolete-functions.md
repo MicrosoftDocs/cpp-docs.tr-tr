@@ -1,7 +1,7 @@
 ---
 title: Kullanımdan kalkmış Işlevler
 ms.date: 01/22/2019
-apiname:
+api_name:
 - _beep
 - _sleep
 - _loaddll
@@ -10,7 +10,7 @@ apiname:
 - is_wctype
 - _getsystime
 - _setsystime
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -25,7 +25,10 @@ apilocation:
 - api-ms-win-crt-runtime-l1-1-0.dll
 - api-ms-win-crt-string-l1-1-0.dll
 - api-ms-win-crt-time-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - is_wctype
 - _loaddll
@@ -50,12 +53,12 @@ helpviewer_keywords:
 - _sleep function
 - _seterrormode function
 ms.assetid: 8e14c2d4-1481-4240-8586-47eb43db02b0
-ms.openlocfilehash: ff0e4376c021fcfd46d4631d1598a3826e9f2851
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: da5bd0569e7116bfd45e6112da8231d6fc2c9b44
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69500028"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70940136"
 ---
 # <a name="obsolete-functions"></a>Kullanımdan kalkmış Işlevler
 

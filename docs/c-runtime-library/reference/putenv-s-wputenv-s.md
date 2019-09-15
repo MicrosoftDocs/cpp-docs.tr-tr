@@ -1,10 +1,10 @@
 ---
 title: _putenv_s, _wputenv_s
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _wputenv_s
 - _putenv_s
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-environment-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - putenv_s
 - wputenv_s
@@ -31,19 +34,19 @@ helpviewer_keywords:
 - environment variables, creating
 - environment variables, modifying
 ms.assetid: fbf51225-a8da-4b9b-9d7c-0b84ef72df18
-ms.openlocfilehash: f675c2c0a2b12db3cce841dd0db9fa722393f1b6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b2de609314a12f626a21680b470bc8831eada2cb
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62357869"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70949898"
 ---
-# <a name="putenvs-wputenvs"></a>_putenv_s, _wputenv_s
+# <a name="_putenv_s-_wputenv_s"></a>_putenv_s, _wputenv_s
 
-Oluşturur, değiştirir veya ortam değişkenlerini kaldırır. Bunlar sürümleridir [_putenv, _wputenv](putenv-wputenv.md) açıklandığı gibi güvenlik geliştirmeleri vardır, ancak [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
+Ortam değişkenlerini oluşturur, değiştirir veya kaldırır. Bunlar, [_putenv, _wputenv](putenv-wputenv.md) 'nin SÜRÜMLERIDIR ancak [CRT içindeki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklandığı gibi güvenlik geliştirmeleri içerir.
 
 > [!IMPORTANT]
-> Bu API, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -60,58 +63,58 @@ errno_t _wputenv_s(
 
 ### <a name="parameters"></a>Parametreler
 
-*varName*<br/>
+*varname*<br/>
 Ortam değişkeni adı.
 
 *value_string*<br/>
-Ortam değişkenini ayarlamak değer.
+Ortam değişkenini ayarlanacak değer.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa 0 döndürür veya bir hata kodu.
+Başarılıysa 0 veya bir hata kodu döndürür.
 
 ### <a name="error-conditions"></a>Hata koşulları
 
-|*varName*|*value_string*|Dönüş değeri|
+|*varname*|*value_string*|Dönüş değeri|
 |------------|-------------|------------------|
-|**NULL**|Tüm|**EINVAL**|
-|Tüm|**NULL**|**EINVAL**|
+|**DEĞER**|Kaydedilmemiş|**EINVAL**|
+|Kaydedilmemiş|**DEĞER**|**EINVAL**|
 
-Hata durumlardan biri oluşursa, bu işlevler geçersiz parametre işleyicisini de açıklandığı gibi çağırır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse, bu işlevler döndürür **EINVAL** ayarlayıp **errno** için **EINVAL**.
+Hata koşullarından biri oluşursa, bu işlevler [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **EINVAL** döndürür ve **errno** , **EINVAL**olarak ayarlanır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Putenv_s** işlevi yeni ortam değişkenleri ekler veya varolan ortam değişkenlerinin değerlerini değiştirir. Ortam değişkenlerini (örneğin, bir programla bağlanacak kitaplıklara varsayılan arama yolu) bir işlem yürütür ortamı tanımlar. **_wputenv_s** geniş karakterli sürümüdür **_putenv_s**; *envstrıng* bağımsız değişkeni **_wputenv_s** geniş karakterli bir dizedir.
+**_Putenv_s** işlevi yeni ortam değişkenleri ekler veya var olan ortam değişkenlerinin değerlerini değiştirir. Ortam değişkenleri bir işlemin yürütüldüğü ortamı tanımlar (örneğin, kitaplıklar için varsayılan arama yolu, bir program ile bağlantılandırılır). **_wputenv_s** , **_putenv_s**öğesinin geniş karakterli bir sürümüdür; **_wputenv_s** için *envstring* bağımsız değişkeni geniş karakterli bir dizedir.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_tputenv_s**|**_putenv_s**|**_putenv_s**|**_wputenv_s**|
 
-*varName* eklenecek veya değiştirilecek ortam değişkenini adıdır ve *value_string* değişkenin değeridir. Varsa *varname* zaten ortamın bir parçası olan alt değer ile değiştirilir *value_string*; Aksi takdirde, yeni *varname* değişkeni ve onun *value_string*  ortama eklenir. Boş bir dize belirterek ortamdan bir değişkeni kaldırabilirsiniz (diğer bir deyişle, "") için *value_string*.
+*varname* , eklenecek veya değiştirilecek ortam değişkeninin adıdır ve *value_string* değişkenin değeridir. *Varname* zaten ortamın parçasıysa, değeri *value_string*ile değiştirilmiştir; Aksi halde, yeni *varname* değişkeni ve onun *value_string* ortama eklenir. *Value_string*için boş bir dize ("") belirterek ortamdan bir değişkeni kaldırabilirsiniz.
 
-**_putenv_s** ve **_wputenv_s** yalnızca geçerli işlemin yerel olduğu ortamı etkiler; komut düzeyindeki ortamı değiştirmek için kullanamazsınız. Bu işlevler, çalışma zamanı kitaplığının erişilebildiği veri yapıları ve "işletim sistemi için bir işlem oluşturur segment" ortam üzerinde çalışır. Geçerli işlem sonlandırıldığında, ortam, çoğu durumda işletim sistemi düzeyi çağırma işleminin düzeyine döner. Ancak değiştirilmiş ortam tarafından oluşturulan yeni süreçlere geçirilebilir **_spawn**, **_exec**, veya **sistem**, ve bu yeni süreçler olan yeni öğeleri alır. tarafından eklenen **_putenv_s** ve **_wputenv_s**.
+**_putenv_s** ve **_wputenv_s** yalnızca geçerli işlem için yerel olan ortamı etkiler; komut düzeyi ortamı değiştirmek için bunları kullanamazsınız. Bu işlevler, işletim sisteminin bir işlem için oluşturduğu "segment" ortamında değil, yalnızca çalışma zamanı kitaplığı için erişilebilen veri yapıları üzerinde çalışır. Geçerli işlem sonlandırıldığında, ortam çağrı işlemi düzeyine döner, bu da çoğu durumda işletim sistemi düzeyidir. Ancak, değiştirilen ortam **_üretilemedi**, **_exec**veya **System**tarafından oluşturulan yeni işlemlere geçirilebilir ve bu yeni süreçler **_putenv_s** ve **_wputenv_s**tarafından eklenen yeni öğeleri alır.
 
-Doğrudan bir ortam girdisini değiştirmeyin; Bunun yerine, **_putenv_s** veya **_wputenv_s** değiştirmek için. Özellikle, doğrudan serbest öğeleri **_environ []** genel dizi ele alınması için geçersiz belleğe neden olabilir.
+Ortam girişini doğrudan değiştirmeyin; Bunun yerine, bunu değiştirmek için **_putenv_s** veya **_wputenv_s** kullanın. Özellikle, **_environ []** genel dizisinin öğeleri doğrudan boşaltılırken geçersiz belleğin giderilmesi neden olabilir.
 
-**GETENV** ve **_putenv_s** genel değişkenin **_environ** ; ortam tablosuna erişmek için **_wgetenv** ve **_wputenv_s** kullanın **_wenviron**. **_putenv_s** ve **_wputenv_s** değerini değişebilir **_environ** ve **_wenviron**ve böylece geçersiz *envp*bağımsız değişkeni **ana** ve **_wenvp** bağımsız değişkeni **wmain**. Bu nedenle, kullanılacak güvenli **_environ** veya **_wenviron** ortam bilgilerine erişmek için. İlişkiyi hakkında daha fazla bilgi için **_putenv_s** ve **_wputenv_s** genel değişkenler için bkz. [_environ, _wenviron](../../c-runtime-library/environ-wenviron.md).
+**getenv** ve **_putenv_s** , ortam tablosuna erişmek için **_environ** genel değişkenini kullanır; **_wgetenv** ve **_wputenv_s** Use **_wenviron**. **_putenv_s** ve **_wputenv_s** , **_environ** ve **_wenviron**değerini değiştirebilir ve bu nedenle, **ana** ve **_wenvp** bağımsız değişkenine **wmain**için *envp* bağımsız değişkenini geçersiz kılar. Bu nedenle, ortam bilgilerine erişmek için **_environ** veya **_wenviron** kullanmak daha güvenlidir. **_Putenv_s** ve **_wputenv_s** ile genel değişkenlere arasındaki ilişki hakkında daha fazla bilgi için bkz. [_environ, _wenviron](../../c-runtime-library/environ-wenviron.md).
 
 > [!NOTE]
-> **_Putenv_s** ve **_getenv_s** işlev aileleri iş parçacığı açısından güvenli değildir. **_getenv_s** dize işaretçisini döndürebilir **_putenv_s** dizeyi değiştirme ve böylece rastgele hatalara neden olur. Bu işlevlere aramaların eşitlendiğinden emin olun.
+> **_Putenv_s** ve **_getenv_s** aileleri işlevleri iş parçacığı açısından güvenli değildir. **_getenv_s** , **_putenv_s** dizeyi değiştirirken bir dize işaretçisi döndürebilir ve bu nedenle rastgele hatalara neden olur. Bu işlevlere yapılan çağrıların eşitlendiğinden emin olun.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_putenv_s**|\<stdlib.h >|
-|**_wputenv_s**|\<stdlib.h > veya \<wchar.h >|
+|**_putenv_s**|\<Stdlib. h >|
+|**_wputenv_s**|\<Stdlib. h > veya \<wchar. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
-Nasıl kullanılacağını gösteren bir örnek için **_putenv_s**, bkz: [getenv_s, _wgetenv_s](getenv-s-wgetenv-s.md).
+**_Putenv_s**'in nasıl kullanılacağını gösteren bir örnek için bkz. [getenv_s, _wgetenv_s](getenv-s-wgetenv-s.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

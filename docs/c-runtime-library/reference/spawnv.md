@@ -1,9 +1,9 @@
 ---
 title: spawnv
 ms.date: 11/04/2016
-apiname:
+api_name:
 - spawnv
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -14,22 +14,25 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - spawnv
 helpviewer_keywords:
 - spawnv function
 ms.assetid: 6f9b247c-1524-4c24-b846-6925fe22f1cd
-ms.openlocfilehash: 7922763ebc482d9bad5037965b7a85824d894c38
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 20d8ad99f6bda98751884a5f530f7320b1472be5
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62355178"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70947546"
 ---
 # <a name="spawnv"></a>spawnv
 
-Bu POSIX işlevi kullanım dışı bırakılmıştır. ISO kullanın C++ uyumluluğunu [_spawnv](spawnv-wspawnv.md) yerine.
+Bu POSIX işlevi kullanım dışıdır. Bunun yerine ISO C++ uyumlu [_Bir NV](spawnv-wspawnv.md) kullanın.
 
 > [!IMPORTANT]
-> Bu API, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).

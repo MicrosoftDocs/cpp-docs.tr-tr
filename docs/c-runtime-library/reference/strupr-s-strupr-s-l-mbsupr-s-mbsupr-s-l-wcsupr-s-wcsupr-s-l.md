@@ -1,14 +1,14 @@
 ---
 title: _strupr_s, _strupr_s_l, _mbsupr_s, _mbsupr_s_l, _wcsupr_s, _wcsupr_s_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _strupr_s
 - _strupr_s_l
 - _mbsupr_s
 - _wcsupr_s_l
 - _mbsupr_s_l
 - _wcsupr_s
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -21,7 +21,10 @@ apilocation:
 - ucrtbase.dll
 - api-ms-win-crt-multibyte-l1-1-0.dll
 - api-ms-win-crt-string-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - strupr_s
 - mbsupr_s
@@ -60,19 +63,19 @@ helpviewer_keywords:
 - _strupr_s function
 - wcsupr_s function
 ms.assetid: 82d3a273-9f6f-4a26-9560-919d891e4581
-ms.openlocfilehash: fb0c7027ff53408ba981aa85f97c49dba054e21d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4789116854c8975f58336984d03f1d2897851fdc
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62304637"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70957586"
 ---
-# <a name="struprs-struprsl-mbsuprs-mbsuprsl-wcsuprs-wcsuprsl"></a>_strupr_s, _strupr_s_l, _mbsupr_s, _mbsupr_s_l, _wcsupr_s, _wcsupr_s_l
+# <a name="_strupr_s-_strupr_s_l-_mbsupr_s-_mbsupr_s_l-_wcsupr_s-_wcsupr_s_l"></a>_strupr_s, _strupr_s_l, _mbsupr_s, _mbsupr_s_l, _wcsupr_s, _wcsupr_s_l
 
-Bir dizeyi, geçerli yerel ayarı veya geçirilen bir belirtilen yerel ayarı kullanarak büyük harfe dönüştürür. Bu sürümleri [_strupr, _strupr_l, _mbsupr, _mbsupr_l, _wcsupr_l, _wcsupr](strupr-strupr-l-mbsupr-mbsupr-l-wcsupr-l-wcsupr.md) açıklandığı gibi güvenlik geliştirmeleri vardır [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
+Geçerli yerel ayarı veya geçirilen belirtilen yerel ayarı kullanarak bir dizeyi büyük harfe dönüştürür. [_Strupr, _strupr_l, _mbsupr, _mbsupr_l, _wcsupr_l, _wcsupr](strupr-strupr-l-mbsupr-mbsupr-l-wcsupr-l-wcsupr.md) 'nin bu SÜRÜMLERI, [CRT içindeki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklandığı gibi güvenlik geliştirmeleri içerir.
 
 > [!IMPORTANT]
-> **_mbsupr_s** ve **_mbsupr_s_l** Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **_mbsupr_s** ve **_mbsupr_s_l** , Windows çalışma zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -135,34 +138,34 @@ errno_t _mbsupr_s_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*str*<br/>
-Yapılacak dize.
+*üstbilgisine*<br/>
+Büyük harfle kullanılacak dize.
 
 *numberOfElements*<br/>
-Arabellek boyutu.
+Arabelleğin boyutu.
 
-*Yerel ayar*<br/>
+*ayarlar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa sıfır; bir sıfır olmayan hata kodu.
+Başarılıysa sıfır; hatada sıfır olmayan bir hata kodu.
 
-Bu işlevler kendi parametrelerini doğrular. Varsa *str* olduğu bir **NULL** işaretçiyse, geçersiz parametre işleyicisi çağrılır, açıklandığı [Parameter Validation](../../c-runtime-library/parameter-validation.md) . Yürütmenin devam etmesine izin verilirse, İşlevler döndürür **EINVAL** ayarlayıp **errno** için **EINVAL**. Varsa *numberOfElements* dizenin uzunluğundan az olan işlevler döndürür **ERANGE** ayarlayıp **errno** için **ERANGE**.
+Bu işlevler, parametrelerini doğrular. *Str* **null** Işaretçisiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md) bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, işlevler **EINVAL** döndürür ve **errno** , **EINVAL**olarak ayarlanır. *NumberOfElements* dizenin uzunluğundan küçükse, Işlevler **ERANGE** döndürür ve **errno** değerini **ERANGE**olarak ayarlar.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Strupr_s** işlev dönüştürür, her küçük harfi yerinde *str* büyük harfe. **_wcsupr_s** öğesinin geniş karakterli sürümüdür **_strupr_s**. **_mbsupr_s** çok baytlı karakter sürümüdür **_strupr_s**.
+**_Strupr_s** işlevi, *Str* içindeki her küçük harfi de büyük harfe dönüştürür. **_wcsupr_s** , **_strupr_s**öğesinin geniş karakterli sürümüdür. **_mbsupr_s** , **_strupr_s**'in çoklu baytlık karakter sürümüdür.
 
-Dönüştürme tarafından belirlenen **LC_CTYPE** yerel ayarının kategori ayarına. Diğer karakterler etkilenmez. Daha fazla bilgi için **LC_CTYPE**, bkz: [setlocale](setlocale-wsetlocale.md). Bu işlevlerin sürümleri **_l** sonekine sahip geçerli yerel ayarı kullanır; sahip **_l** soneki, bunun yerine iletilmiş yerel ayarı kullanmaları hariç, aynıdır. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
+Dönüştürme, yerel ayarın **LC_CTYPE** kategori ayarına göre belirlenir. Diğer karakterler etkilenmez. **LC_CTYPE**hakkında daha fazla bilgi için bkz. [setlocale](setlocale-wsetlocale.md). **_L** sonekine sahip olmayan bu işlevlerin sürümleri, geçerli yerel ayarı kullanır; **_l** sonekine sahip vizyonlar, bunun yerine geçirilen yerel ayarı kullanmaları dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
-C++ dilinde bu işlevlerin kullanılması şablon aşırı yüklemeleriyle basitleştirilmiştir; aşırı yüklemeler arabellek uzunluğunu otomatik olarak çıkarabilir (bir boyut bağımsız değişkeni belirtme gereksinimi ortadan kalkar) ve bunlar otomatik olarak eski ve güvenli olmayan işlevlerle daha yeni ve güvenli karşılıklarını değiştirir. Daha fazla bilgi için [güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
+' C++De, bu işlevlerin kullanılması şablon aşırı yüklemeleri tarafından basitleştirilmiştir; aşırı yüklemeler arabellek uzunluğunu otomatik olarak çıkarabilir (bir boyut bağımsız değişkeni belirtme gereksinimini ortadan kaldırır) ve eski, güvenli olmayan işlevleri otomatik olarak yeni, güvenli karşılıklarıyla değiştirebilir. Daha fazla bilgi için bkz. [Güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 
-Bu işlevlerin hata ayıklama sürümleri, ilk arabellek 0xFD ile doldurur. Bu davranışı devre dışı bırakmak için [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md).
+Bu işlevlerin hata ayıklama sürümleri ilk olarak arabelleği 0xFD ile doldurur. Bu davranışı devre dışı bırakmak için [_Crtsetdebugfillthreshold](crtsetdebugfillthreshold.md)kullanın.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_tcsupr_s**|**_strupr_s**|**_mbsupr_s**|**_wcsupr_s**|
 |**_tcsupr_s_l**|**_strupr_s_l**|**_mbsupr_s_l**|**_wcsupr_s_l**|
@@ -171,18 +174,18 @@ Bu işlevlerin hata ayıklama sürümleri, ilk arabellek 0xFD ile doldurur. Bu d
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_strupr_s**, **_strupr_s_l**|\<String.h >|
-|**_wcsupr_s**, **_wcsupr_s_l**, **_mbsupr_s**, **_mbsupr_s_l**|\<String.h > veya \<wchar.h >|
+|**_strupr_s**, **_strupr_s_l**|\<String. h >|
+|**_wcsupr_s**, **_wcsupr_s_l**, **_mbsupr_s**, **_mbsupr_s_l**|\<String. h > veya \<wchar. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
-Örneğin bakın [_strlwr_s, _strlwr_s_l, _mbslwr_s, _mbslwr_s_l, _wcslwr_s, _wcslwr_s_l](strlwr-s-strlwr-s-l-mbslwr-s-mbslwr-s-l-wcslwr-s-wcslwr-s-l.md) .
+[_Strlwr_s, _strlwr_s_l, _mbslwr_s, _mbslwr_s_l, _wcslwr_s, _wcslwr_s_l](strlwr-s-strlwr-s-l-mbslwr-s-mbslwr-s-l-wcslwr-s-wcslwr-s-l.md) örneğine bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [locale](../../c-runtime-library/locale.md)<br/>
 [Çok Baytlı Karakter Sıralarının Yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
-[Dize düzenlemesi](../../c-runtime-library/string-manipulation-crt.md)<br/>
+[Dize düzenleme](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [_strlwr_s, _strlwr_s_l, _mbslwr_s, _mbslwr_s_l, _wcslwr_s, _wcslwr_s_l](strlwr-s-strlwr-s-l-mbslwr-s-mbslwr-s-l-wcslwr-s-wcslwr-s-l.md)<br/>

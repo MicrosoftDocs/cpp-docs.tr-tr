@@ -1,9 +1,9 @@
 ---
 title: fegetexceptflag
 ms.date: 04/05/2018
-apiname:
+api_name:
 - fegetexceptflag
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,23 +15,26 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-runtime-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - fegetexceptflag
 - fenv/fegetexceptflag
 helpviewer_keywords:
 - fegetexceptflag function
 ms.assetid: 2d28f0ca-70c9-4cff-be8b-3d876eacde71
-ms.openlocfilehash: 43259001bd05bb7df9e2e1636c174018dcdaef3c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3d3bf59b28a464dc163dc027b867e890c3c8797b
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62334430"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70941225"
 ---
 # <a name="fegetexceptflag"></a>fegetexceptflag
 
-Belirtilen kayan nokta özel durumu bayrakları geçerli durumunu depolar.
+Belirtilen kayan nokta özel durum bayraklarının geçerli durumunu depolar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -44,38 +47,38 @@ int fegetexceptflag(
 
 ### <a name="parameters"></a>Parametreler
 
-*pstatus*<br/>
-Bir işaretçi bir **fexcept_t** nesnesi tarafından belirtilen özel durum bayrakların geçerli değerler içerecek şekilde *excepts*.
+*pStatus*<br/>
+**Fexcept_t** nesnesine yönelik bir işaretçi, *hariç tutulan*tarafından belirtilen özel durum bayraklarının geçerli değerlerini içerir.
 
-*excepts*<br/>
-Depolamak için kayan nokta özel durumu bayrakları *pstatus*.
+*hariç tutulan*<br/>
+*PStatus*içinde depolanacak kayan nokta özel durum bayrakları.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa 0 döndürür. Aksi takdirde, sıfır olmayan bir değer döndürür.
+Başarılı olduğunda 0 döndürür. Aksi takdirde, sıfır olmayan bir değer döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Fegetexceptflag** işlevi kayan nokta özel durum durumu bayrakları tarafından belirtilen geçerli durumunu depolar *excepts* içinde **fexcept_t** nesne tarafından işaret edilen *pstatus*.  *pstatus* geçerli bir işaret etmelidir **fexcept_t** nesne veya sonraki davranışı tanımsızdır. **Fegetexceptflag** işlevini desteklemektedir tanımlanan bu özel durum makroları \<fenv.h >:
+**Fegetexceptflag** işlevi, *pStatus*tarafından işaret edilen **fexcept_t** nesnesindeki *exceptler* tarafından belirtilen kayan nokta özel durum bayraklarının geçerli durumunu depolar.  *pStatus* geçerli bir **fexcept_t** nesnesine işaret etmelidir, ya da sonraki davranış tanımsızdır. **Fegetexceptflag** işlevi, \<fenv. h > tanımlı bu özel durum makrolarını destekler:
 
 |Özel durum makrosu|Açıklama|
 |---------------------|-----------------|
-|FE_DIVBYZERO|Daha önce bir kayan nokta işleminde singularity ya da kutup bir hata oluştu; sonsuz değerle oluşturulur.|
-|FE_INEXACT|İşlevi, bir önceki kayan noktalı işlemin depolanmış sonucu yuvarlanacak zorlandı.|
-|FE_INVALID|Daha önce bir kayan nokta işleminde bir etki alanı hatası oluştu.|
-|FE_OVERFLOW|Aralık bir hata oluştu; önceki bir kayan noktalı işlemin sonucu gösterilemeyecek kadar büyüktü.|
-|FE_UNDERFLOW|Önceki bir kayan noktalı işlemin sonucu tam duyarlıklı gösterilemeyecek kadar çok küçük; denormal değer oluşturuldu.|
-|FE_ALLEXCEPT|Bit düzeyinde OR tüm kayan nokta özel durumları desteklenmiyor.|
+|FE_DIVBYZERO|Daha önceki bir kayan nokta işleminde singularor veya direk hatası oluştu; sonsuz değer oluşturuldu.|
+|FE_INEXACT|İşlev, önceki bir kayan nokta işleminin saklı sonucunu yuvarlamak üzere zorlandı.|
+|FE_INVALID|Önceki kayan nokta işleminde bir etki alanı hatası oluştu.|
+|FE_OVERFLOW|Bir Aralık hatası oluştu; daha önceki bir kayan nokta işlem sonucu gösterilemeyecek kadar büyüktü.|
+|FE_UNDERFLOW|Daha önceki bir kayan nokta işlem sonucu tam duyarlıkta gösterilemeyecek kadar küçük; bir denormal değeri oluşturuldu.|
+|FE_ALLEXCEPT|Desteklenen tüm kayan nokta özel durumlarının bit düzeyinde veya dışında.|
 
-*Excepts* sıfır bağımsız değişken olabilir desteklenen kayan nokta özel durum makroları veya bit ya da iki veya daha fazla makroları. Herhangi bir bağımsız değişken değeri etkisini tanımsızdır.
+*Hariç tutulan* bağımsız değişken sıfır, desteklenen kayan nokta özel durumu makrolarından biri veya iki ya da daha fazla makronun BIT düzeyinde ya da daha fazlası olabilir. Diğer bağımsız değişken değerinin etkisi tanımsızdır.
 
-Bu işlevi kullanmak için erişim kullanarak engelleyebilir kayan nokta iyileştirmelerinin kapatmanız gerekir `#pragma fenv_access(on)` çağrıdan önceki yönerge. Daha fazla bilgi için [fenv_access](../../preprocessor/fenv-access.md).
+Bu işlevi kullanmak için, çağrıdan önce `#pragma fenv_access(on)` yönergesini kullanarak erişimi engelleyebilecek kayan nokta iyileştirmelerini kapatmanız gerekir. Daha fazla bilgi için bkz. [fenv_access](../../preprocessor/fenv-access.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İşlev|C üstbilgisi|C++ üst bilgisi|
+|İşlev|C üstbilgisi|C++üst bilgi|
 |--------------|--------------|------------------|
-|**fegetexceptflag**|\<fenv.h >|\<cfenv >|
+|**fegetexceptflag**|\<fenv. h >|\<cfenv >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

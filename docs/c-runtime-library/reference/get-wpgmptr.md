@@ -1,9 +1,9 @@
 ---
 title: _get_wpgmptr
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _get_wpgmptr
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-runtime-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - get_wpgmptr
 - _get_wpgmptr
@@ -25,16 +28,16 @@ helpviewer_keywords:
 - wpgmptr global variable
 - _get_wpgmptr function
 ms.assetid: a77cdd13-2303-4b7c-9a60-8debdbef2011
-ms.openlocfilehash: 87738c8564b70df37a9f2fbdcc5e5ab80165af32
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0cd2dc9c2f82d3dc49a17dc438157233c50b3261
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62331889"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70955567"
 ---
-# <a name="getwpgmptr"></a>_get_wpgmptr
+# <a name="_get_wpgmptr"></a>_get_wpgmptr
 
-Geçerli değeri alır **_wpgmptr** genel değişkeni.
+**_Wpgmptr** genel değişkeninin geçerli değerini alır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -47,21 +50,21 @@ errno_t _get_wpgmptr(
 ### <a name="parameters"></a>Parametreler
 
 *pValue*<br/>
-Geçerli değeri ile doldurulacak bir dizeye bir işaretçi **_wpgmptr** değişkeni.
+**_Wpgmptr** değişkeninin geçerli değeriyle doldurulacak bir dizeye yönelik işaretçi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa sıfır döndürür; bir hata kodu. Varsa *pValue* olduğu **NULL**, açıklanan şekilde geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütme devam etmesine izin verilirse, bu işlev ayarlar **errno** için **EINVAL** ve döndürür **EINVAL**.
+Başarılıysa sıfır döndürür; hatada hata kodu. *PValue* **null**ise, geçersiz parametre işleyicisi [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev **errno** ' ı **EINVAL** olarak ayarlar ve **EINVAL**döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Yalnızca çağrı **_get_wpgmptr** programınızı geniş giriş noktası varsa, ister **wmain()** veya **wWinMain()**. **_Wpgmptr** genel değişkeninin geniş karakterli dize olarak işlemiyle ilişkili yürütülebilir dosyanın tam yolunu içerir. Daha fazla bilgi için [_pgmptr, _wpgmptr](../../c-runtime-library/pgmptr-wpgmptr.md).
+Yalnızca, **wmain ()** veya **wWinMain ()** gibi geniş bir giriş noktası varsa, yalnızca **_get_wpgmptr** çağrısı yapın. **_Wpgmptr** genel değişkeni, işlemle ilişkili yürütülebilir dosyanın tam yolunu geniş karakterli bir dize olarak içerir. Daha fazla bilgi için bkz. [_pgmptr, _wpgmptr](../../c-runtime-library/pgmptr-wpgmptr.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_get_wpgmptr**|\<stdlib.h >|
+|**_get_wpgmptr**|\<Stdlib. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

@@ -1,9 +1,9 @@
 ---
 title: cputs
 ms.date: 11/04/2016
-apiname:
+api_name:
 - cputs
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -14,22 +14,25 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - cputs
 helpviewer_keywords:
 - cputs function
 ms.assetid: 0c2a7d4e-623a-4cb2-a0f9-1900c05bac08
-ms.openlocfilehash: 39a65feb50e896fe324ab3cdf64963393649aa22
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f846031a8dd154e7d100f716add883701ed350ca
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62339745"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70938948"
 ---
 # <a name="cputs"></a>cputs
 
-Bu POSIX işlevi kullanım dışı bırakılmıştır. ISO kullanın C++ uyumluluğunu [_cputs](cputs-cputws.md) yerine.
+Bu POSIX işlevi kullanım dışıdır. Bunun yerine ISO C++ uyumlu [_cput](cputs-cputws.md) kullanın.
 
 > [!IMPORTANT]
-> Bu API, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).

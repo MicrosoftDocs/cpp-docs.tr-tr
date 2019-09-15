@@ -1,9 +1,9 @@
 ---
 title: _recalloc_dbg
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _recalloc_dbg
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -14,7 +14,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - recalloc_dbg
 - _recalloc_dbg
@@ -22,16 +25,16 @@ helpviewer_keywords:
 - _recalloc_dbg function
 - recalloc_dbg function
 ms.assetid: 43c3e9b2-be6d-4508-9b0f-3220c8a47ca3
-ms.openlocfilehash: e2782492d3338b5b548db0153b6123fb82ff5e72
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6274e749b2c4e6f64c7c7f82f8764dcf5ba642fe
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62357694"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70949471"
 ---
-# <a name="recallocdbg"></a>_recalloc_dbg
+# <a name="_recalloc_dbg"></a>_recalloc_dbg
 
-Bir dizi yeniden ayırır ve öğeleri 0 (yalnızca hata ayıklama sürümü) başlatır.
+Bir diziyi yeniden konumlandırır ve öğelerini 0 olarak başlatır (yalnızca hata ayıklama sürümü).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -49,52 +52,52 @@ void *_recalloc_dbg(
 ### <a name="parameters"></a>Parametreler
 
 *userData*<br/>
-Daha önce ayrılmış bellek bloğuna işaretçi.
+Önceden ayrılmış bellek bloğuna yönelik işaretçi.
 
-*Sayı*<br/>
+*sayısından*<br/>
 İstenen bellek bloğu sayısı.
 
-*Boyutu*<br/>
-İstenen boyut (bayt) her bellek bloğu.
+*boyutla*<br/>
+Her bellek bloğunun istenen boyutu (bayt).
 
 *blockType*<br/>
-İstenen bellek bloğu türü: **_clıent_block** veya **_NORMAL_BLOCK**.
+İstenen bellek bloğu türü: **_Client_block** veya **_NORMAL_BLOCK**.
 
-Ayırma blok türleri ve bunların nasıl kullanıldığı hakkında daha fazla bilgi için bkz. [hata ayıklama öbek üzerindeki blokları türleri](/visualstudio/debugger/crt-debug-heap-details).
+Ayırma bloğu türleri ve bunların nasıl kullanıldığı hakkında bilgi için bkz. [hata ayıklama yığınındaki blok türleri](/visualstudio/debugger/crt-debug-heap-details).
 
-*Dosya adı*<br/>
-Ayırma işlemi istenen kaynak dosyasının adı işaretçi veya **NULL**.
+*kısaltın*<br/>
+Ayırma işlemi veya **null**için istenen kaynak dosyanın adı işaretçisi.
 
-*LineNumber*<br/>
-Satır numarası kaynak dosyada ayırma işlemi burada istendi veya **NULL**.
+*onayın*<br/>
+Kaynak dosyasındaki ayırma işleminin istendiği veya **null**olduğu satır numarası.
 
-*Filename* ve *linenumber* parametreleri yalnızca kullanılabilir olduğunda **_recalloc_dbg** açıkça çağrılan veya [_CRTDBG_MAP_ALLOC](../../c-runtime-library/crtdbg-map-alloc.md) ön işlemci sabiti tanımlanmış.
+*Filename* ve *onayın* parametreleri yalnızca **_yeniden hesaplama loc_dbg** açıkça çağrıldığında veya [_crtdbg_map_ayırma](../../c-runtime-library/crtdbg-map-alloc.md) Önişlemci sabiti tanımlandığında kullanılabilir.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarıyla tamamlandığında, bu işlev bir işaretçi bırakılan bellek bloğu kullanıcı bölümünü döndürür, yeni işleyici işlevi çağırır veya döndürür **NULL**. Dönüş davranışı eksiksiz bir açıklaması için aşağıdaki Açıklamalar bölümüne bakın. Yeni işleyici işlevi nasıl kullanıldığı hakkında daha fazla bilgi için bkz. [_recalloc](recalloc.md) işlevi.
+Başarıyla tamamlandığında, bu işlev yeniden ayrılan bellek bloğunun Kullanıcı kısmına bir işaretçi döndürür, yeni işleyici işlevini çağırır veya **null**değerini döndürür. Dönüş davranışının ayrıntılı bir açıklaması için aşağıdaki açıklamalar bölümüne bakın. Yeni işleyici işlevinin nasıl kullanıldığı hakkında daha fazla bilgi için, bkz. [_yeniden hesapla Loc](recalloc.md) işlevi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_recalloc_dbg** bir hata ayıklama sürümü [_recalloc](recalloc.md) işlevi. Zaman [_DEBUG](../../c-runtime-library/debug.md) tanımlı değil, her çağrı **_recalloc_dbg** çağrısı azaltılır **_recalloc**. Her ikisi de **_recalloc** ve **_recalloc_dbg** taban yığının bellek bloğunda yeniden tahsis ancak **_recalloc_dbg** birkaç hata ayıklama özellikleri kapsar: iki tarafındaki arabellekler sızıntıları için test edilecek blok kullanıcı bölümünü bir blok spesifik ayırma türleri izlemek için parametre türü ve *filename*/*linenumber* belirlemek için bilgi ayırma isteği başlangıcı.
+**_yeniden hesapla loc_dbg** , [_yeniden hesapla](recalloc.md) işlevinin bir hata ayıklama sürümüdür. [_Hata ayıklama](../../c-runtime-library/debug.md) tanımlanmadığında, **_yeniden hesapla loc_dbg** öğesine yapılan her çağrı, **_yeniden hesapla**öğesine yapılan çağrıya düşürülür. Hem **_yeniden** hesapla hem de **_yeniden hesapla loc_dbg** , temel yığında bir bellek bloğunu yeniden tahsis ediyor, ancak **_yeniden hesapla loc_dbg** çeşitli hata ayıklama özelliklerini karşılar: sızıntıların her iki tarafında da belirli ayırma türlerini izlemek ve ayırma isteklerinin kaynağını belirleyebilmek için *dosya adı*/*linumarası* bilgilerini izlemek için.
 
-**_recalloc_dbg** istenen boyuttan biraz daha fazla alan ile belirtilen bellek bloğu yeniden tahsis ederse (*numarası* * *boyutu*) olabilen büyük veya boyutundan küçük ilk olarak ayrılan bellek bloğu. Ek alan, hata ayıklama bellek bloklarını bağlantı ve uygulama ile hata ayıklama üstbilgi bilgileri sağlayın ve arabellek üzerine yazmak için hata ayıklama yığını Yöneticisi tarafından kullanılır. Tahsisat, orijinal bellek bloğunun yığınındaki farklı bir konuma taşımak, yanı sıra bellek blok boyutu değiştirme neden olabilir. Blok kullanıcı bölümünü 0xCD değeri ile doldurulur ve 0xFD ile doldurulmuş her üzerine yaz arabellek.
+**_yeniden hesapla** , belirtilen bellek bloğunu istenen boyuttan (*sayı* * *boyutu*) biraz daha fazla alan ile, başlangıçta ayrılan bellek bloğunun boyutundan büyük veya küçük olabilir. Hata ayıklama bellek bloklarını bağlamak ve uygulamanın hata ayıklama üstbilgi bilgilerini ve üzerine yazma arabelleğini sağlamak için ek alan, hata ayıklama yığın Yöneticisi tarafından kullanılır. Yeniden ayırma, özgün bellek bloğunun yığında farklı bir konuma taşınmasına ve bellek bloğunun boyutunu değiştirmeye neden olabilecek. Bloğun Kullanıcı bölümü, 0xCD değeri ile doldurulmuştur ve üzerine yazma arabelleklerinin her biri 0xFD ile doldurulur.
 
-**_recalloc_dbg** ayarlar **errno** için **ENOMEM** bir bellek ayırma başarısız olursa; **EINVAL** (daha önce bahsedilen ek yük dahil) ihtiyaç duyulan bellek miktarı aşması durumunda döndürülen **_HEAP_MAXREQ**. Bu ve diğer hata kodları hakkında daha fazla bilgi için bkz: [errno _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+bir bellek ayırma başarısız olursa, **_yeniden hesapla loc_dbg** , **errmem** çağrısı yapar; **EINVAL** , gereken bellek miktarı (daha önce bahsedilen ek yük dahil) **_Heap_maxreq**değerini aşarsa döndürülür. Bu ve diğer hata kodları hakkında daha fazla bilgi için bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-Nasıl bellek blokları ayrılan, başlatılır ve taban yığının hata ayıklama sürümünde yönetilen hakkında daha fazla bilgi için bkz: [CRT hata ayıklama öbeği ayrıntıları](/visualstudio/debugger/crt-debug-heap-details). Standart yığın işlevi ve hata ayıklama sürümü, bir uygulamanın hata ayıklama derlemesinde çağırma arasındaki farklar hakkında daha fazla bilgi için bkz. [hata ayıklama sürümleri, yığın ayırma işlevleri](/visualstudio/debugger/debug-versions-of-heap-allocation-functions).
+Bellek bloklarının taban yığının hata ayıklama sürümünde nasıl ayrıldığı, başlatıldığı ve yönetildiği hakkında bilgi için bkz. [CRT hata ayıklama yığını ayrıntıları](/visualstudio/debugger/crt-debug-heap-details). Bir uygulamanın hata ayıklama sürümünde standart yığın işlevi çağırma ve hata ayıklama sürümü arasındaki farklar hakkında daha fazla bilgi için bkz. [yığın ayırma Işlevlerinin hata ayıklama sürümleri](/visualstudio/debugger/debug-versions-of-heap-allocation-functions).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_recalloc_dbg**|\<crtdbg.h >|
+|**_recalloc_dbg**|\<Crtdbg. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 
-Hata ayıklama sürümleri [C çalışma zamanı kitaplıkları](../../c-runtime-library/crt-library-features.md) yalnızca.
+Yalnızca [C çalışma zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md) sürümlerini ayıklayın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

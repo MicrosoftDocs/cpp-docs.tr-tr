@@ -1,9 +1,9 @@
 ---
 title: _get_osfhandle
 ms.date: 05/29/2018
-apiname:
+api_name:
 - _get_osfhandle
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - get_osfhandle
 - _get_osfhandle
@@ -25,16 +28,16 @@ helpviewer_keywords:
 - _get_osfhandle function
 - file handles [C++], operating system
 ms.assetid: 0bdd728a-4fd8-410b-8c9f-01a121135196
-ms.openlocfilehash: cc3b50e3d3f65bee83b8df83aa0adb5c8694e35a
-ms.sourcegitcommit: 8adabe177d557c74566c13145196c11cef5d10d4
+ms.openlocfilehash: 65060689e0a7fc72b67da8fc3bf7ce0af75fd645
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66821662"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70955778"
 ---
-# <a name="getosfhandle"></a>_get_osfhandle
+# <a name="_get_osfhandle"></a>_get_osfhandle
 
-Belirtilen dosya tanımlayıcı ile ilişkili olan işletim sistemi dosya tanıtıcısı alır.
+Belirtilen dosya tanımlayıcısıyla ilişkili işletim sistemi dosya tanıtıcısını alır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -51,22 +54,22 @@ Var olan bir dosya tanımlayıcısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bir işletim sistemi dosya tanıtıcısı döndürür *fd* geçerlidir. Aksi takdirde, geçersiz parametre işleyicisi açıklandığı gibi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse, döndürür **INVALID_HANDLE_VALUE** (-1). Ayrıca ayarlar **errno** için **EBADF**, geçersiz bir dosya işlemesi belirten. Bir uyarı sonucu bir Win32 dosya işleci kullanıldığında önlemek için yayınlayacağınızı bir **İŞLEMEK** türü.
+*FD* geçerliyse bir işletim sistemi dosya tutamacı döndürür. Aksi halde, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, **INVALID_HANDLE_VALUE** döndürür (-1). Ayrıca, geçersiz bir dosya tanıtıcısı belirten, **errno** 'U **EBADF**olarak ayarlar. Sonuç bir Win32 dosya tutamacı olarak kullanıldığında bir uyarı oluşmasını önlemek için bunu bir **tanıtıcı** türüne dönüştürün.
 
 > [!NOTE]
-> Zaman **stdin**, **stdout**, ve **stderr** bulunmayan bir akış (örneğin, bir uygulamada Windows bir konsol penceresi olmadan), dosya tanımlayıcısı değerlerini ilişkili Bu akışları döndürülen [_fileno](fileno.md) -2 özel değer. Benzer şekilde, bir çağrı sonucunu yerine dosya tanımlayıcısı parametresi 0, 1 veya 2 kullanıyorsanız **_fileno**, **_get_osfhandle** ayrıca dosya tanımlayıcısı ilişkili olmadığında özel değeri -2 döndürür. bir akışı ve ayarlı değil **errno**. Ancak, bu geçerli bir dosya tanıtıcısı değeri değil ve bunu kullanma girişimi yapılan sonraki çağrılar büyük olasılıkla başarısız olur.
+> **STDIN**, **stdout**ve **stderr** bir Stream ile ilişkili değilse (örneğin, konsol penceresi olmayan bir Windows uygulamasında), bu akışlar için dosya tanımlayıcı değerleri özel değer olarak [_fileno](fileno.md) 'dan döndürülür. Benzer şekilde, bir **_fileno**çağrısının sonucu yerine dosya tanımlayıcısı parametresi olarak 0, 1 veya 2 kullanırsanız, **_get_osfhandle** Ayrıca dosya tanımlayıcısı bir akışa ilişkilendirilmediği zaman 2 özel değerini döndürür ve **errno**'u yapmaz. Ancak, bu geçerli bir dosya tanıtıcı değeri değildir ve bu işlemi kullanmaya çalışacak sonraki çağrılar başarısız olabilir.
 
-Hakkında daha fazla bilgi için **EBADF** ve diğer hata kodları [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+**EBADF** ve diğer hata kodları hakkında daha fazla bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir dosya olan işletim sistemi (OS) dosya tanıtıcısı ile elde edilir kapatmak için **_get_osfhandle**, çağrı [_close](close.md) dosya tanımlayıcısı üzerinde *fd*. Hiçbir çağrı **CloseHandle** bu işlevin dönüş değeri. Temel işletim sistemi dosya tanıtıcısı tarafından sahip olunan *fd* dosya tanımlayıcısı ve kapatılır [_close](close.md) üzerinde çağrılır *fd*. Dosya tanımlayıcısı aitse bir `FILE *` akış, ardından arama [fclose](fclose-fcloseall.md) üzerindeki `FILE *` hem dosya tanımlayıcısı hem de temel alınan işletim sistemi dosya tanıtıcısı akışı kapatır. Bu durumda, Remove() çağırmayın [_close](close.md) üzerinde dosya tanımlayıcısı.
+İşletim sistemi (OS) dosya tanıtıcısı **_get_osfhandle**tarafından edinilen bir dosyayı kapatmak için, dosya tanımlayıcısı *FD*üzerinde [_close](close.md) öğesini çağırın. Bu işlevin dönüş değerindeki **CloseHandle** 'ı hiçbir şekilde çağırmayın. Temel alınan işletim sistemi dosya tanıtıcısı *FD* dosya tanımlayıcısına aittir ve *FD*üzerinde [_close](close.md) çağrıldığında kapalıdır. Dosya tanımlayıcısının bir `FILE *` akışa sahip olması durumunda, bu `FILE *` akışta [fclose](fclose-fcloseall.md) çağrısı hem dosya tanımlayıcısını hem de temel alınan işletim sistemi dosya tanıtıcısını kapatır. Bu durumda dosya tanımlayıcısında [_close](close.md) 'u çağırmayın.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_get_osfhandle**|\<io.h >|
+|**_get_osfhandle**|\<GÇ. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

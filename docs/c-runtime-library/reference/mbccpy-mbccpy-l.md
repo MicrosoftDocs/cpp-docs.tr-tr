@@ -1,10 +1,10 @@
 ---
 title: _mbccpy, _mbccpy_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _mbccpy
 - _mbccpy_l
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-multibyte-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _mbccpy
 - tccpy
@@ -34,12 +37,12 @@ helpviewer_keywords:
 - _mbccpy function
 - mbccpy_l function
 ms.assetid: 13f4de6e-7792-41ac-b319-dd9b135433aa
-ms.openlocfilehash: 8d0711a98813565e945dad1d0e998847029668c2
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 98ae2eb75949077d02b98ba3aec75da534e93884
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69499892"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70952694"
 ---
 # <a name="_mbccpy-_mbccpy_l"></a>_mbccpy, _mbccpy_l
 

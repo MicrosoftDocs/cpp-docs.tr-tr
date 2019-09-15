@@ -1,12 +1,12 @@
 ---
 title: strcspn, wcscspn, _mbscspn, _mbscspn_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _mbscspn_l
 - wcscspn
 - _mbscspn
 - strcspn
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -19,7 +19,10 @@ apilocation:
 - ucrtbase.dll
 - api-ms-win-crt-multibyte-l1-1-0.dll
 - api-ms-win-crt-string-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - strcspn
 - _mbscspn
@@ -39,19 +42,19 @@ helpviewer_keywords:
 - mbscspn function
 - _tcscspn function
 ms.assetid: f73f51dd-b533-4e46-ba29-d05c553708a6
-ms.openlocfilehash: bcb1699f9a3f3c4d9e5ee040fdcb2e999397ac30
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 501732cd4758d14a32aba3bdf503c5d314eee7f9
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62353982"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70940761"
 ---
-# <a name="strcspn-wcscspn-mbscspn-mbscspnl"></a>strcspn, wcscspn, _mbscspn, _mbscspn_l
+# <a name="strcspn-wcscspn-_mbscspn-_mbscspn_l"></a>strcspn, wcscspn, _mbscspn, _mbscspn_l
 
-Bir dizedeki bir karakter kümesine ait olan bir karakterin ilk geçtiği dizini döndürür.
+Bir karakter kümesine ait olan bir dizedeki ilk oluşumun dizinini döndürür.
 
 > [!IMPORTANT]
-> **_mbschr** ve **_mbschr_l** Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **_mbschr** ve **_mbschr_l** Windows çalışma zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -77,32 +80,32 @@ size_t _mbscspn_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*str*<br/>
+*üstbilgisine*<br/>
 Null ile sonlandırılmış Aranan dize.
 
 *strCharSet*<br/>
 Null ile sonlandırılmış karakter kümesi.
 
-*Yerel ayar*<br/>
+*ayarlar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu işlevler ilk karakter dizinini döndürür *str* alanında *strCharSet*. Karakterleri hiçbiri *str* bulunduğu *strCharSet*, dönüş değeri uzunluğu ise *str*.
+Bu işlevler, *strCharSet*içindeki *Str* içindeki ilk karakter dizinini döndürür. *Str* içindeki karakterlerden hiçbiri *strCharSet*içinde değilse, dönüş değeri *Str*'in uzunluğudur.
 
-Dönüş değeri bir hatayı göstermek üzere ayrılmıştır.
+Bir hatayı göstermek için hiçbir dönüş değeri ayrılmadı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**wcscspn** ve **_mbscspn** geniş karakter ve çok baytlı karakter sürümleridir **strcspn**. Bağımsız değişkenleri **wcscspn** geniş karakterli dizelerdir; **_mbscspn** çok baytlı karakter dizeleridir.
+**wcscspn** ve **_mbscspn** , **strcspn**'nin geniş karakterli ve çok baytlı karakter sürümleridir. **Wcscspn** bağımsız değişkenleri geniş karakterli dizelerdir; **_mbscspn** , çok baytlı karakter dizeleridir.
 
-**_mbscspn** kendi parametrelerini doğrular. Ya da *str* veya *strCharSet* null bir işaretçiyse, açıklanan şekilde geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Devam etmek için ayarlar ve işlev 0 döndürür yürütülmesine izin veriliyorsa **errno** için **EINVAL**. **strcspn** ve **wcscspn** kendi parametrelerini doğrulamazlar. Bu üç işlev aynı şekilde davranır.
+**_mbscspn** kendi parametrelerini doğrular. Herhangi bir *Str* veya *strCharSet* null Işaretçisiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, işlev 0 döndürür ve **errno** öğesini **EINVAL**olarak ayarlar. **strcspn** ve **wcscspn** parametrelerini doğrulamaz. Bu üç işlev, aynı şekilde davranır.
 
-Çıkış değeri ayarından etkilenir **LC_CTYPE** yerel ayarının kategori ayarına; bkz: [setlocale](setlocale-wsetlocale.md) daha fazla bilgi için. Bu işlevlerin sürümleri **_l** soneki geçerli yerel ayarı kullanır bu yerel ayara bağlı davranışı için; sürümleriyle **_l** sonekine bunların yerel ayar parametresini kullanmalarıdır Bunun yerine iletilmiş. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
+Çıkış değeri yerel ayarın **LC_CTYPE** kategori ayarı ayarından etkilenir; daha fazla bilgi için bkz. [setlocale](setlocale-wsetlocale.md) . **_L** sonekine sahip olmayan bu işlevlerin sürümleri, yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır; **_l** sonekine sahip sürümler, bunun yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_tcscspn**|**strcspn**|**_mbscspn**|**wcscspn**|
 |yok|yok|**_mbscspn_l**|yok|
@@ -111,9 +114,9 @@ Dönüş değeri bir hatayı göstermek üzere ayrılmıştır.
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**strcspn**|\<String.h >|
-|**wcscspn**|\<String.h > veya \<wchar.h >|
-|**_mbscspn**, **_mbscspn_l**|\<Mbstring.h >|
+|**strcspn**|\<String. h >|
+|**wcscspn**|\<String. h > veya \<wchar. h >|
+|**_mbscspn**, **_mbscspn_l**|\<mbstring. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -153,7 +156,7 @@ strcspn( "", "" ) = 0
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dize düzenlemesi](../../c-runtime-library/string-manipulation-crt.md)<br/>
+[Dize düzenleme](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [locale](../../c-runtime-library/locale.md)<br/>
 [Çok Baytlı Karakter Sıralarının Yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [strncat, _strncat_l, wcsncat, _wcsncat_l, _mbsncat, _mbsncat_l](strncat-strncat-l-wcsncat-wcsncat-l-mbsncat-mbsncat-l.md)<br/>

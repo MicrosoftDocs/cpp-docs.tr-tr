@@ -1,9 +1,9 @@
 ---
 title: _aligned_realloc
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _aligned_realloc
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-heap-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _aligned_realloc
 - aligned_realloc
@@ -23,16 +26,16 @@ helpviewer_keywords:
 - aligned_realloc function
 - _aligned_realloc function
 ms.assetid: 80ce96e8-6087-416f-88aa-4dbb8cb1d218
-ms.openlocfilehash: 456d57eeebfd47a2133b8a5813b11aaf77a300a4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 34af7d1dc3c5c8e5d504191b18280e228079eaa2
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62335704"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70943822"
 ---
-# <a name="alignedrealloc"></a>_aligned_realloc
+# <a name="_aligned_realloc"></a>_aligned_realloc
 
-İle ayrılan bir bellek bloğunu boyutunu değiştirir [_aligned_malloc](aligned-malloc.md) veya [_aligned_offset_malloc](aligned-offset-malloc.md).
+[_Aligned_malloc](aligned-malloc.md) veya [_aligned_offset_malloc](aligned-offset-malloc.md)ile ayrılmış bir bellek bloğunun boyutunu değiştirir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -49,33 +52,33 @@ void * _aligned_realloc(
 *memblock*<br/>
 Geçerli bellek bloğu işaretçisi.
 
-*Boyutu*<br/>
+*boyutla*<br/>
 İstenen bellek ayırmasının boyutu.
 
-*Hizalama*<br/>
-Hizalama değeri 2'in tam sayı üssü olması gerekir.
+*hizalar*<br/>
+2 ' nin tam sayı üssü olması gereken hizalama değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_aligned_realloc** yeniden (ve muhtemelen taşınan) bellek bloğuna void bir işaretçi döndürür. Dönüş değeri **NULL** boyutu sıfırsa ve arabellek bağımsız değişken değil **NULL**, ya da blok verilen boyuta genişletmek için yeterli kullanılabilir bellek yoksa. Bu durumda, özgün blok serbest bırakılır. İkinci, özgün blok değiştirilmez. Dönüş değeri, nesnenin herhangi bir türde bir depolama için uygun şekilde hizalanması garanti bir depolama alanına işaret eder. Bir işaretçi bir türü void, kullanımı dışında bir tür dönüş değerini almak için.
+**_aligned_realloc** , yeniden ayrılan (ve muhtemelen taşınan) bellek bloğuna void bir işaretçi döndürüyor. Boyut sıfır ise ve arabellek bağımsız değişkeni **null**olmadığında veya bloğu belirtilen boyuta genişletmek için yeterli kullanılabilir bellek yoksa dönüş değeri **null** olur. İlk durumda, orijinal blok serbest bırakılır. İkincisi, orijinal blok değiştirilmez. Dönüş değeri, herhangi bir nesne türünün depolanması için uygun şekilde hizalı olarak garantili bir depolama alanına işaret eder. Void dışında bir türe işaretçi almak için, dönüş değerinde bir tür dönüştürme kullanın.
 
-Bu belleği yeniden tahsis ve bir blok hizalamasını değiştirmek için bir hatadır.
+Belleği yeniden ayırmak ve bir bloğun hizalamasını değiştirmek hatadır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_aligned_realloc** dayanır **malloc**. Kullanma hakkında daha fazla bilgi için **_aligned_offset_malloc**, bkz: [malloc](malloc.md).
+**_aligned_realloc** , **malloc**'yi temel alır. **_Aligned_offset_malloc**kullanma hakkında daha fazla bilgi için bkz. [malloc](malloc.md).
 
-Bu işlev ayarlar **errno** için **ENOMEM** bellek ayırma başarısız olursa veya istenen boyutu büyüktür **_HEAP_MAXREQ**. Hakkında daha fazla bilgi için **errno**, bkz: [errno _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md). Ayrıca, **_aligned_realloc** kendi parametrelerini doğrular. Varsa *hizalama* güç değil açıklandığı gibi bu işlev 2, geçersiz parametre işleyicisi çağırır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse, bu işlevi döndürür **NULL** ve ayarlar **errno** için **EINVAL**.
+Bu işlev, bellek ayırma başarısız olursa veya istenen boyut **_Heap_maxreq**değerinden büyükse **errno** değerini **ENOMEM** olarak ayarlar. **Errno**hakkında daha fazla bilgi için bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md). Ayrıca, **_aligned_realloc** kendi parametrelerini doğrular. *Hizalama* 2 ' nin üssü değilse, bu Işlev [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev **null** değerini döndürür ve **errno** 'ı **EINVAL**olarak ayarlar.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_aligned_realloc**|\<malloc.h >|
+|**_aligned_realloc**|\<malloc. h >|
 
 ## <a name="example"></a>Örnek
 
-Daha fazla bilgi için [_aligned_malloc](aligned-malloc.md).
+Daha fazla bilgi için bkz. [_aligned_malloc](aligned-malloc.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

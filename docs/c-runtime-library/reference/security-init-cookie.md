@@ -1,9 +1,9 @@
 ---
 title: __security_init_cookie
 ms.date: 11/04/2016
-apiname:
+api_name:
 - __security_init_cookie
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -14,7 +14,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - security_init_cookie
 - __security_init_cookie
@@ -24,16 +27,16 @@ helpviewer_keywords:
 - security_init_cookie function
 - global security cookie
 ms.assetid: 32119905-0897-4a1c-84ca-bffd16c9b2af
-ms.openlocfilehash: c7b25e05b4574a7b397cd07d55000a5e53db58f6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9f7e9924f4a96803749418d777e5ee2020f9df78
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62356842"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70948714"
 ---
-# <a name="securityinitcookie"></a>__security_init_cookie
+# <a name="__security_init_cookie"></a>__security_init_cookie
 
-Genel güvenlik tanımlama bilgisi başlatır.
+Genel güvenlik tanımlama bilgisini başlatır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -43,23 +46,23 @@ void __security_init_cookie(void);
 
 ## <a name="remarks"></a>Açıklamalar
 
-Genel güvenlik tanımlama bilgisi ile derlenmiş kodda arabellek taşması koruma için kullanılan [/GS (arabellek güvenlik denetimi)](../../build/reference/gs-buffer-security-check.md) ve özel durum işleme kullanan kod. Girişi taşması korumalı bir işleve, tanımlama bilgisi yığına yerleştirilir ve Çıkışta, yığında değeri genel tanımlama bilgisi ile karşılaştırılır. Aralarındaki fark, bir arabellek taşması oluştu ve programı hemen sonlandırılmasına neden gösterir.
+Genel güvenlik tanımlama bilgisi, [/GS (arabellek güvenlik denetimi)](../../build/reference/gs-buffer-security-check.md) ile derlenen kodda ve özel durum işleme kullanan kodda arabellek taşma koruması için kullanılır. Taşma korumalı bir işleve girişte, tanımlama bilgisi yığına konur ve çıkışta, yığındaki değer genel tanımlama bilgisiyle karşılaştırılır. Aralarında herhangi bir farklılık, bir arabellek taşmasının gerçekleştiğini ve programın anında sonlandırılmasını gösterir.
 
-Normalde, **__security_init_cookie** tarafından CRT başlatıldığında çağrılır. CRT başlatma atlarsanız — Örneğin, kullanırsanız [/Entry](../../build/reference/entry-entry-point-symbol.md) giriş noktasını belirtmek için — çağırmalısınız sonra **__security_init_cookie** kendiniz. Varsa **__security_init_cookie** çağrılmaz; genel güvenlik tanımlama bilgisi, varsayılan değerine ayarlanır ve arabellek taşması koruma biri riske. Bir saldırganın bu varsayılan tanımlama bilgisi değeri'arabellek taşma denetimleri yemektir yararlanabilir olduğundan her zaman çağırmanızı öneririz **__security_init_cookie** kendi giriş noktası tanımladığınızda.
+Normalde, **__security_ınit_cookie** başlatıldığında CRT tarafından çağırılır. CRT başlatmayı atlayabilirsiniz — Örneğin, bir giriş noktası belirtmek için [/Entry](../../build/reference/entry-entry-point-symbol.md) kullanırsanız — daha sonra **__security_ınit_cookie** öğesini kendiniz çağırmanız gerekir. **__Security_ınit_cookie** çağrılmadığı takdirde, genel güvenlik tanımlama bilgisi varsayılan bir değere ayarlanır ve arabellek taşması koruması tehlikeye girebilir. Bir saldırgan, arabellek taşma denetimlerini ertelemeyi sağlamak için bu varsayılan tanımlama bilgisi değerinden yararlanabileceğinden, kendi giriş noktanızı tanımladığınızda her zaman **__security_ınit_cookie** öğesini çağırmanız önerilir.
 
-Çağrı **__security_init_cookie** herhangi önce taşması korumalı hale getirilmesi gereken işlevi girilir; sahte bir arabellek taşması algıladı Aksi takdirde. Daha fazla bilgi için [C çalışma zamanı hatası R6035](../../error-messages/tool-errors/c-runtime-error-r6035.md).
+**__Security_ınit_cookie** çağrısı, herhangi bir taşma korumalı işlev girilmadan önce yapılmalıdır; Aksi takdirde, bir spurde bellek taşması algılanır. Daha fazla bilgi için bkz. [C çalışma zamanı hatası R6035](../../error-messages/tool-errors/c-runtime-error-r6035.md).
 
 ## <a name="example"></a>Örnek
 
-Örneklere bakın [C çalışma zamanı hatası R6035](../../error-messages/tool-errors/c-runtime-error-r6035.md).
+[C çalışma zamanı hatası R6035](../../error-messages/tool-errors/c-runtime-error-r6035.md)içindeki örneklere bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**__security_init_cookie**|\<Process.h >|
+|**__security_init_cookie**|\<Process. h >|
 
-**__security_init_cookie** standart C çalışma zamanı kitaplığı Microsoft uzantısıdır. Uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+**__security_ınit_cookie** , standart C çalışma zamanı kitaplığı 'Nın bir Microsoft uzantısıdır. Uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

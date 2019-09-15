@@ -1,11 +1,11 @@
 ---
-title: fmodf, fmodl fmod
+title: FMOD, fmodf, fmodl
 ms.date: 04/05/2018
-apiname:
+api_name:
 - fmod
 - fmodf
 - fmodl
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - fmod
 - _fmodl
@@ -29,14 +32,14 @@ helpviewer_keywords:
 - fmod function
 - floating-point numbers, calculating remainders
 ms.assetid: 6962d369-d11f-40b1-a6d7-6f67239f8a23
-ms.openlocfilehash: 78677be1a0c9921c35e54d43a00b8956a9d858b6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e98432a73df8b872593d4cd610139bdfa72a25c4
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62333358"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70957073"
 ---
-# <a name="fmod-fmodf-fmodl"></a>fmodf, fmodl fmod
+# <a name="fmod-fmodf-fmodl"></a>FMOD, fmodf, fmodl
 
 Kayan nokta kalanını hesaplar.
 
@@ -72,19 +75,19 @@ Kayan nokta değerleri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**fmod** kayan nokta kalanını döndürür *x* / *y*. Varsa değerini *y* 0.0, olan **fmod** sessiz bir NaN döndürür. Sessiz bir NaN göre gösterimini hakkında bilgi için **printf** ailesi, bkz: [printf](printf-printf-l-wprintf-wprintf-l.md).
+**fmod** , *x* / *y*'nin kayan nokta kalanını döndürür. *Y* değeri 0,0 ise, **fmod** sessiz bir NaN döndürür. **Printf** ailesi tarafından sessiz bir NaN 'ın temsili hakkında bilgi için bkz. [printf](printf-printf-l-wprintf-wprintf-l.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Fmod** işlevi kayan nokta kalanını hesaplar *f* , *x* / *y* şekilde *x*  =  *miyim* \* *y* + *f*burada *miyim* bir tamsayıdır *f* aynı işarete sahip *x*ve mutlak değerini *f* mutlak değerini'dan küçük *y*.
+**Fmod** işlevi *x* /  iy\* f + x y 'nin kayan nokta geri kalanını hesaplar, burada *ı*  =  bir tamsayıdır, *f* *x*ile aynı işarete sahiptir ve *f* mutlak değeri *y*'nin mutlak değerinden daha küçüktür.
 
-C++ sağlar aşırı yüklemesi, aşırı yüklemesini çağırabilirsiniz **fmod** alan ve getiren **float** ve **uzun** **çift** değerleri. C programında **fmod** her zaman iki alan **çift** bağımsız değişkenleri ve döndürür bir **çift**.
+C++aşırı yüklemeye izin verir, böylece **float** ve **Long** **Double** değerlerini alıp döndüren **fmod** 'un aşırı yüklerini çağırabilirsiniz. C programında **fmod** her zaman iki **çift** bağımsız değişken alır ve bir **Double**döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**fmod**, **fmodf**, **fmodl**|\<Math.h >|
+|**fmod**, **fmodf**, **fmodl**|\<Math. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

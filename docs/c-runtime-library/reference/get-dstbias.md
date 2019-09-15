@@ -1,10 +1,10 @@
 ---
 title: _get_dstbias
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _get_dstbias
 - __dstbias
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-time-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - __dstbias
 - _get_dstbias
@@ -27,16 +30,16 @@ helpviewer_keywords:
 - get_dstbias function
 - _get_dstbias function
 ms.assetid: e751358c-1ecc-411b-ae2c-81b2ec54ea45
-ms.openlocfilehash: 61807f854dc9c2f7de6f0acd5bbf4668987ce49e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a48cc4fe35a1bbd18342750571214ed0977cf3ee
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62332383"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70955945"
 ---
-# <a name="getdstbias"></a>_get_dstbias
+# <a name="_get_dstbias"></a>_get_dstbias
 
-Yaz Saati farkı saniye cinsinden alır.
+Gün ışığından yararlanma saati sapmasını saniye cinsinden alır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -46,28 +49,28 @@ error_t _get_dstbias( int* seconds );
 
 ### <a name="parameters"></a>Parametreler
 
-*saniye*<br/>
-Yaz Saati saniye cinsinden uzaklığı.
+*saniyeden*<br/>
+Gün ışığından yararlanma zamanının saniye cinsinden değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Sıfır başarılı olursa ya da bir **errno** bir hata oluşursa değeri.
+Başarılıysa sıfır veya bir hata oluşursa **errno** değeri.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Get_dstbias** işlevi yaz saati bir tamsayı olarak saniye sayısını alır. Gün ışığından yararlanma etkinse, varsayılan uzaklık 3600 saniye (Bazı bölgelerde iki saat uzaklığı gözlemleyin rağmen) saniye cinsinden bir saat sayısı olduğu dayalıdır.
+**_Get_dstsapma** işlevi, gün ışığından yararlanma saatine saniye sayısını tamsayı olarak alır. Gün ışığından yararlanma saati etkin ise, varsayılan değer 3600 saniyedir ve bu da bir saatteki saniye sayısıdır (birkaç bölge iki saatlik bir sapmayı gözlemlebilse de).
 
-Varsa *saniye* olduğu **NULL**, açıklanan şekilde geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütme devam etmesine izin verilirse, bu işlev ayarlar **errno** için **EINVAL** ve döndürür **EINVAL**.
+*Saniyeler* **null**ise, [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı şekilde geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev **errno** ' ı **EINVAL** olarak ayarlar ve **EINVAL**döndürür.
 
-Makro yerine bu işlevi kullanmanız önerilir **_dstbias** veya kullanım dışı işlevine **__dstbias**.
+Bu işlevi, makro **_dstsapma** veya kullanım dışı işlev **__dstsapması**yerine kullanmanızı öneririz.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_get_dstbias**|\<TIME.h >|
+|**_get_dstbias**|\<Time. h >|
 
-Daha fazla bilgi için [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla bilgi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

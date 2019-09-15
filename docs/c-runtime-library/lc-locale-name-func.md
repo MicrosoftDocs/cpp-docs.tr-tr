@@ -1,9 +1,9 @@
 ---
 title: ___lc_locale_name_func
 ms.date: 11/04/2016
-apiname:
+api_name:
 - ___lc_locale_name_func
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr110.dll
 - msvcr100.dll
@@ -11,20 +11,23 @@ apilocation:
 - msvcr120.dll
 - msvcr80.dll
 - msvcr110_clr0400.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - ___lc_locale_name_func
 helpviewer_keywords:
 - ___lc_locale_name_func
 ms.assetid: ef858308-872e-43de-95e0-9b1b4084343e
-ms.openlocfilehash: 88ce07ca3fece558c23f4fcd9a12949f184b7532
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: abc1ade393538586ad07f57e6838591833c9948b
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62342685"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70944238"
 ---
-# <a name="lclocalenamefunc"></a>___lc_locale_name_func
+# <a name="___lc_locale_name_func"></a>___lc_locale_name_func
 
 İç CRT işlevi. İş parçacığının geçerli yerel ayar adını alır.
 
@@ -40,9 +43,9 @@ wchar_t** ___lc_locale_name_func(void);
 
 ## <a name="remarks"></a>Açıklamalar
 
-`___lc_locale_name_func` diğer CRT işlevleri tarafından geçerli yerel ayar adı, iş parçacığı yerel depolama alanından CRT verilerini almak için kullanılan bir iç CRT işlevdir. Bu bilgiler ayrıca kullanılarak kullanılabilir [_get_current_locale](../c-runtime-library/reference/get-current-locale.md) işlevi veya [setlocale, _wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) işlevleri.
+`___lc_locale_name_func`, CRT verileri için iş parçacığı yerel depolama alanından geçerli yerel ayar adını almak için diğer CRT işlevleri tarafından kullanılan bir iç CRT işlevidir. Bu bilgiler, [_get_current_locale](../c-runtime-library/reference/get-current-locale.md) işlevi veya [setlocale, _wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) işlevleri kullanılarak da kullanılabilir.
 
-İç CRT işlevleri uygulamasına özgüdür ve her değişebilir bırakın. Kodunuzda bunların kullanılması önerilmemektedir.
+İç CRT işlevleri uygulamaya özgüdür ve her sürümde değiştirilebilir. Kodunuzda kullanımını önermiyoruz.
 
 ## <a name="requirements"></a>Gereksinimler
 

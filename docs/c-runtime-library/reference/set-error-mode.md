@@ -1,9 +1,9 @@
 ---
 title: _set_error_mode
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _set_error_mode
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-runtime-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - set_error_mode
 - _set_error_mode
@@ -23,19 +26,19 @@ helpviewer_keywords:
 - _set_error_mode function
 - set_error_mode function
 ms.assetid: f0807be5-73d1-4a32-a701-3c9bdd139c5c
-ms.openlocfilehash: 8c95ed45423b791a688f05ea30f48e188826a797
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 15a6d72a79f0498fb7d81094ed3595dea1cf444f
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62356660"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70948554"
 ---
-# <a name="seterrormode"></a>_set_error_mode
+# <a name="_set_error_mode"></a>_set_error_mode
 
-Değiştirir **__error_mode** nereye yazdığını programın sonlandırılması bir hata için bir hata iletisi C çalışma zamanı varsayılan dışındaki bir konumu belirlemek için.
+, C çalışma zamanının programı sona erdirmek için bir hata iletisi yazdığı varsayılan olmayan bir konum belirlemesi için **__error_mode** değerini değiştirir.
 
 > [!IMPORTANT]
-> Bu API, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -48,34 +51,34 @@ int _set_error_mode(
 ### <a name="parameters"></a>Parametreler
 
 *mode_val*<br/>
-Hedef hata iletileri.
+Hata iletilerinin hedefi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bir hata oluşursa eski bir ayar veya -1 döndürür.
+Eski ayarı döndürür veya bir hata oluşursa-1.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Hata çıkış havuzu değerini ayarlayarak denetimleri **__error_mode**. Örneğin, standart hata çıktıyı yönlendirin veya kullanın **MessageBox** API.
+**__Error_mode**değerini ayarlayarak hata çıkış havuzunu denetler. Örneğin, çıktıyı standart bir hataya yönlendirebilir veya **MessageBox** API 'sini kullanabilirsiniz.
 
-*Mode_val* parametre aşağıdaki değerlerden biri olarak ayarlanabilir.
+*Mode_val* parametresi aşağıdaki değerlerden birine ayarlanabilir.
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|**_OUT_TO_DEFAULT**|Hata havuz tarafından belirlenir **__app_type**.|
-|**_OUT_TO_STDERR**|Hata havuz standart bir hatadır.|
-|**_OUT_TO_MSGBOX**|Hata havuz, bir ileti kutusudur.|
-|**_REPORT_ERRMODE**|Geçerli rapor **__error_mode** değeri.|
+|**_OUT_TO_DEFAULT**|Hata havuzu **__app_type**tarafından belirlendi.|
+|**_OUT_TO_STDERR**|Hata havuzu standart bir hatadır.|
+|**_OUT_TO_MSGBOX**|Hata havuzu bir ileti kutusudur.|
+|**_REPORT_ERRMODE**|Geçerli **__error_mode** değerini bildirin.|
 
-Bu listedeki dışında bir değer geçtiyse, geçersiz parametre açıklandığı gibi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse **_set_error_mode** ayarlar **errno** için **EINVAL** ve -1 döndürür.
+Listelenenlerin dışında bir değer geçirildiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, **_set_error_mode** **errno** ve **EINVAL** olarak ayarlar ve-1 döndürür.
 
-Birlikte kullanıldığında bir [assert](assert-macro-assert-wassert.md), **_set_error_mode** başarısız ifade iletişim kutusunda görüntüler ve seçme seçeneği sunar **Yoksay** destesinin düğmesi program çalışmaya devam eder.
+**_Set_error_mode** , bir [onaylama](assert-macro-assert-wassert.md)ile kullanıldığında, iletişim kutusunda başarısız olan ifadeyi görüntüler ve ardından programı çalıştırmaya devam edebilmeniz için **yoksayma** düğmesini seçme seçeneğini sunar.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_set_error_mode**|\<stdlib.h >|
+|**_set_error_mode**|\<Stdlib. h >|
 
 ## <a name="example"></a>Örnek
 

@@ -1,9 +1,9 @@
 ---
 title: creat
 ms.date: 11/04/2016
-apiname:
+api_name:
 - creat
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -14,19 +14,22 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - creat
 helpviewer_keywords:
 - creat function
 ms.assetid: 3aa6f0cc-5ae6-40d5-be94-0ab6f53c0c5b
-ms.openlocfilehash: 6cbb255ca2c484f4543eb9b0651d000c516da919
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2fa428a1a91404838343f1b1590e9af0322c0fde
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62340280"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70942602"
 ---
 # <a name="creat"></a>creat
 
-Bu POSIX işlevi kullanım dışı bırakılmıştır. ISO kullanın C++ uyumluluğunu [_creat](creat-wcreat.md) yerine.
+Bu POSIX işlevi kullanım dışıdır. Bunun yerine ISO C++ uyumlu [_creat](creat-wcreat.md) kullanın.

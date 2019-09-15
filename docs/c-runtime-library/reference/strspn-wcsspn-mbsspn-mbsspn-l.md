@@ -1,12 +1,12 @@
 ---
 title: strspn, wcsspn, _mbsspn, _mbsspn_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _mbsspn_l
 - wcsspn
 - strspn
 - _mbsspn
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -20,7 +20,10 @@ apilocation:
 - api-ms-win-crt-multibyte-l1-1-0.dll
 - api-ms-win-crt-string-l1-1-0.dll
 - ntoskrnl.exe
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _ftcsspn
 - wcsspn
@@ -41,19 +44,19 @@ helpviewer_keywords:
 - mbsspn_l function
 - _tcsspn function
 ms.assetid: d077284a-809f-4068-959e-c6d6262677eb
-ms.openlocfilehash: dd3f27387fa180c7de9260e7cf8b7f6102915049
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8e65e466e95464dbd928ff0d80d975ce23fc180c
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62223124"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70946750"
 ---
-# <a name="strspn-wcsspn-mbsspn-mbsspnl"></a>strspn, wcsspn, _mbsspn, _mbsspn_l
+# <a name="strspn-wcsspn-_mbsspn-_mbsspn_l"></a>strspn, wcsspn, _mbsspn, _mbsspn_l
 
-Bir karakter kümesine ait olmayan bir dize, ilk karakterin indisini döndürür.
+Bir dizedeki bir karakter kümesine ait olmayan ilk karakter dizinini döndürür.
 
 > [!IMPORTANT]
-> **_mbsspn** ve **_mbsspn_l** Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **_mbsspn** ve **_mbsspn_l** Windows çalışma zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -79,30 +82,30 @@ size_t _mbsspn_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*str*<br/>
-Aramak için null ile sonlandırılmış dize.
+*üstbilgisine*<br/>
+Aranacak null ile sonlandırılmış dize.
 
 *strCharSet*<br/>
 Null ile sonlandırılmış karakter kümesi.
 
-*Yerel ayar*<br/>
+*ayarlar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-İçinde alt dizenin uzunluğunu belirten bir tamsayı değeri döndürür *str* tamamen karakterden oluşan oluşur *strCharSet*. Varsa *str* içinde olmayan bir karakterle başlıyor *strCharSet*, işlev 0 döndürür.
+*StrCharSet*içindeki tamamen karakterlerden oluşan *Str* içindeki alt dizenin uzunluğunu belirten bir tamsayı değeri döndürür. *Str* , *strCharSet*içinde olmayan bir karakterle başlıyorsa, işlev 0 döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Strspn** işlevi ilk karakterin dizinini geri *str* ait olmayan karakter kümesini *strCharSet*. Arama boş karakterlerin sonlandırılmasını içermez.
+**Strspn** Işlevi, *strCharSet*içindeki karakter kümesine ait olmayan *Str* içindeki ilk karakter dizinini döndürür. Arama, null karakter sonlandırılmasını içermez.
 
-**wcsspn** ve **_mbsspn** geniş karakter ve çok baytlı karakter sürümleridir **strspn**. Bağımsız değişkenleri **wcsspn** geniş karakterli dizelerdir; **_mbsspn** çok baytlı karakter dizeleridir. **_mbsspn** kendi parametrelerini doğrular. Varsa *str* veya *strCharSet* olduğu **NULL**, açıklanan şekilde geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md) . Yürütmenin devam etmesine izin verilirse **_mbspn** ayarlar **errno** için **EINVAL** ve 0 döndürür. **strspn** ve **wcsspn** kendi parametrelerini doğrulamazlar. Bu üç işlev aynı şekilde davranır.
+**wcsspn** ve **_mbsspn** , **strspn**'nin geniş karakterli ve çok baytlı karakter sürümleridir. **Wcsspn** bağımsız değişkenleri geniş karakterli dizelerdir; **_mbsspn** 'ler çok baytlı karakter dizeleridir. **_mbsspn** kendi parametrelerini doğrular. *Str* veya *strCharSet* **null**ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md) bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, **_mbspn** , **errno** değerini **EINVAL** olarak ayarlar ve 0 döndürür. **strspn** ve **wcsspn** , parametrelerini doğrulamaz. Bu üç işlev, aynı şekilde davranır.
 
-Çıkış değeri ayarından etkilenir **LC_CTYPE** yerel ayarının kategori ayarına; bkz: [setlocale](setlocale-wsetlocale.md) daha fazla bilgi için. Bu işlevlerin sürümleri **_l** soneki geçerli yerel ayarı kullanır bu yerel ayara bağlı davranışı için; sürümleriyle **_l** sonekine bunların yerel ayar parametresini kullanmalarıdır Bunun yerine iletilmiş. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
+Çıkış değeri yerel ayarın **LC_CTYPE** kategori ayarı ayarından etkilenir; daha fazla bilgi için bkz. [setlocale](setlocale-wsetlocale.md) . **_L** sonekine sahip olmayan bu işlevlerin sürümleri, yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır; **_l** sonekine sahip sürümler, bunun yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_tcsspn**|**strspn**|**_mbsspn**|**wcsspn**|
 |**yok**|**yok**|**_mbsspn_l**|**yok**|
@@ -111,9 +114,9 @@ Kullanılacak yerel ayar.
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**strspn**|\<String.h >|
-|**wcsspn**|\<String.h > veya \<wchar.h >|
-|**_mbsspn**, **_mbsspn_l**|\<Mbstring.h >|
+|**strspn**|\<String. h >|
+|**wcsspn**|\<String. h > veya \<wchar. h >|
+|**_mbsspn**, **_mbsspn_l**|\<mbstring. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -146,7 +149,7 @@ The portion of 'cabbage' containing only a, b, or c is 5 bytes long
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dize düzenlemesi](../../c-runtime-library/string-manipulation-crt.md)<br/>
+[Dize düzenleme](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [locale](../../c-runtime-library/locale.md)<br/>
 [Çok Baytlı Karakter Sıralarının Yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [_strspnp, _wcsspnp, _mbsspnp, _mbsspnp_l](strspnp-wcsspnp-mbsspnp-mbsspnp-l.md)<br/>

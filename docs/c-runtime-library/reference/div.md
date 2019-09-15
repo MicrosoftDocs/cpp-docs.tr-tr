@@ -1,9 +1,9 @@
 ---
 title: div, ldiv, lldiv
 ms.date: 04/05/2018
-apiname:
+api_name:
 - div
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-utility-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - div
 helpviewer_keywords:
@@ -25,12 +28,12 @@ helpviewer_keywords:
 - dividing integers
 - remainder computing
 ms.assetid: 8ae80d97-54fd-499e-b14c-e30993b58119
-ms.openlocfilehash: 0ee1b3b6a5d7b15470ffe1e667b4077d1f9581e4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5b40fa0c4cc9cdf0c0de0f6af21da04b0c70369f
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62339266"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70937700"
 ---
 # <a name="div-ldiv-lldiv"></a>div, ldiv, lldiv
 
@@ -66,7 +69,7 @@ lldiv_t div(
 
 ### <a name="parameters"></a>Parametreler
 
-*numarası*<br/>
+*numer*<br/>
 Pay.
 
 *denom*<br/>
@@ -74,19 +77,19 @@ Payda.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**div** türünde bağımsız değişkenler kullanarak çağrılır **int** türünden bir yapıyı döndürür **div_t**, bölümü ve kalanı içerir. Dönüş değeri türü bağımsız değişkenler ile **uzun** olduğu **ldiv_t**ve dönüş değeri türü bağımsız değişkenler ile **uzun** **uzun** olan**lldiv_t**. **div_t**, **ldiv_t**, ve **lldiv_t** tanımlanan \<stdlib.h >.
+**int** türünde bağımsız değişkenler kullanılarak çağrılan **div** , **div_t**türünde bir yapı döndürür, bu da bölümü ve kalanı içerir. **Long** türündeki bağımsız değişkenlere sahip dönüş değeri **ldiv_t**, ve **Long** **Long** türündeki bağımsız değişkenlerle birlikte return değeri **lldiv_t**. **div_t**, **ldiv_t**ve \< **lldiv_t** , Stdlib. h > tanımlanmıştır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Div** işlev böler *numarası* tarafından *denom* ve böylece bölümü ve kalanı hesaplar. [Div_t](../../c-runtime-library/standard-types.md) yapısı kalanını içerir **quot**ve kalanı **rem**. Bölüm işareti matematiksel olarak aynıdır. Mutlak değeri matematiksel sayının mutlak değerinden daha küçük olan en büyük tamsayıdır. Payda 0 ise, program bir hata iletisi ile sona erer.
+**Div** işlevi, *numer* 'ı *denom* ile böler ve böylece bölümü ve kalanı hesaplar. [Div_t](../../c-runtime-library/standard-types.md) **yapısı, Bölüm**, **quot**ve kalanını içerir. Bölüm işareti, matematik bölümü ile aynıdır. Mutlak değeri, matematik alanının mutlak değerinden daha küçük olan en büyük tamsayıdır. Payda 0 ise, program bir hata iletisiyle sonlanır.
 
-Aşırı Yüklemeleri **div** türünde bağımsız değişkenler ele **uzun** veya **uzun** **uzun** yalnızca C++ kodu için mevcuttur. Dönüş türleri [ldiv_t](../../c-runtime-library/standard-types.md) ve [lldiv_t](../../c-runtime-library/standard-types.md) üyeleri içeren **quot** ve **rem**, üyeleriileaynıanlamasahiptir**div_t**.
+**Uzun** veya **uzun** **uzunlukta** bağımsız değişkenler alan C++ **DIV** 'in aşırı yüklemeleri yalnızca kod için kullanılabilir. [Ldiv_t](../../c-runtime-library/standard-types.md) ve [lldiv_t](../../c-runtime-library/standard-types.md) dönüş türleri, **div_t**üyeleriyle aynı anlamlara sahip olan **quot** ve **REM**üyelerini içerir.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**div**, **ldiv**, **lldiv**|\<stdlib.h >|
+|**div**, **ldiv**, **lldiv**|\<Stdlib. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

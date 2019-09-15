@@ -1,7 +1,7 @@
 ---
 title: _exec, _wexec İşlevleri
 ms.date: 11/04/2016
-apilocation:
+api_location:
 - msvcr110_clr0400.dll
 - msvcr120.dll
 - msvcr90.dll
@@ -9,7 +9,10 @@ apilocation:
 - msvcr100.dll
 - msvcr110.dll
 - msvcr80.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _texecve
 - texecl
@@ -53,12 +56,12 @@ helpviewer_keywords:
 - _exec function
 - _texecvpe function
 ms.assetid: a261df93-206a-4fdc-b8ac-66aa7db83bc6
-ms.openlocfilehash: d31192a25cce86dad6f8e1e8b0258a457d0a5436
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: f4bef0ef4f3cad0411f6da54ce5e2d8883913754
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69500133"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70940356"
 ---
 # <a name="_exec-_wexec-functions"></a>_exec, _wexec İşlevleri
 

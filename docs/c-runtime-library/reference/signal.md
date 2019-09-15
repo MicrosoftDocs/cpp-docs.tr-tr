@@ -1,9 +1,9 @@
 ---
 title: sinyal
 ms.date: 04/12/2018
-apiname:
+api_name:
 - signal
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,24 +15,27 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-runtime-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - signal
 helpviewer_keywords:
 - signal function
-ms.openlocfilehash: 351bdbe1d787fc5e5d741460adfe415df7fda756
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 04869412272725108911f13857585e650ad20ab9
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62356296"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70948093"
 ---
 # <a name="signal"></a>sinyal
 
-Kesme sinyal işlemeyi ayarlar.
+Kesme sinyali işlemeyi ayarlar.
 
 > [!IMPORTANT]
-> Bu yöntem, test veya hata ayıklama senaryoları dışında bir Microsoft Store uygulamasını kapatmak için kullanmayın. Bir Store uygulamasını kapatmak için programlama veya UI yollarına göre izin verilmez [Microsoft Store ilkeleri](/legal/windows/agreements/store-policies). Daha fazla bilgi için [UWP uygulama yaşam döngüsü](/windows/uwp/launch-resume/app-lifecycle).
+> Test veya hata ayıklama senaryoları dışında Microsoft Store uygulamasını kapatmak için bu yöntemi kullanmayın. Bir mağaza uygulamasını kapatmak için programlı veya Kullanıcı arabirimi yollarına [Microsoft Store ilkelerine](/legal/windows/agreements/store-policies)göre izin verilmez. Daha fazla bilgi için bkz. [UWP uygulama yaşam döngüsü](/windows/uwp/launch-resume/app-lifecycle).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -42,81 +45,81 @@ void __cdecl *signal(int sig, int (*func)(int, int));
 
 ### <a name="parameters"></a>Parametreler
 
-*Sig*<br/>
+*za*<br/>
 Sinyal değeri.
 
-*FUNC*<br/>
-İkinci parametre yürütülecek bir işlevi bir işaretçisidir. İlk parametre bir sinyal değeridir ve ikinci parametre ilk parametre SIGFPE olduğunda kullanılabilen bir alt koddur.
+*func*<br/>
+İkinci parametre, yürütülecek işleve yönelik bir işaretçidir. İlk parametre bir sinyal değeridir ve ikinci parametre ilk parametre SIGFPE olduğunda kullanılabilecek bir alt koddur.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**Sinyal** func verili sinyal ile ilişkili önceki değerini döndürür. Örneğin, önceki değerini *func* olduğu **sıg_ıgn**, dönüş değeri de mi **sıg_ıgn**. Dönüş değeri **SIG_ERR** bir hata olduğunu gösterir; bu durumda, **errno** ayarlanır **EINVAL**.
+**sinyal** verilen sinyalle ilişkili olan Func öğesinin önceki değerini döndürür. Örneğin, önceki *Func* değeri **SIG_IGN**ise, return değeri de **SIG_IGN**olur. **SIG_ERR** dönüş değeri bir hatayı gösterir; Bu durumda, **errno** **EINVAL**olarak ayarlanır.
 
-Bkz: [errno _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) dönüş kodları hakkında daha fazla bilgi için.
+Dönüş kodları hakkında daha fazla bilgi için bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) .
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Sinyal** işlevi sağlayan bir işlemin işletim sisteminden bir kesme sinyalini işlemek için çeşitli yollar birini seçin. *Sig* bağımsız değişkendir, kesme **sinyal** yanıt verir; SİNYAL içinde tanımlanan aşağıdaki bildirim sabitleri biri olmalıdır. H
+**Sinyal** işlevi, bir işlemin işletim sisteminden bir kesme sinyali işlemek için çeşitli yollarla seçim yapmasına olanak sağlar. *SIG* bağımsız değişkeni, **sinyalin** yanıt verdiği kesmede yapılır; Bu, SINYALDE tanımlı olan aşağıdaki bildirim sabitlerinden biri olmalıdır. Olsun.
 
-|*Sig* değeri|Açıklama|
+|*SIG* değeri|Açıklama|
 |-----------------|-----------------|
 |**SIGABRT**|Olağan dışı sonlandırma|
 |**SIGFPE**|Kayan nokta hatası|
 |**SIGILL**|Geçersiz yönerge|
 |**SIGINT**|CTRL + C sinyali|
-|**SIGSEGV**|Geçersiz depo erişimi|
+|**SIGSEGV**|Geçersiz depolama erişimi|
 |**SIGTERM**|Sonlandırma isteği|
 
-Varsa *sig* bulunmaması yukarıdaki değerleri, geçersiz parametre işleyicisi sınıfında tanımlandığı gibi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md) . Yürütme devam etmesine izin verilirse, bu işlev ayarlar **errno** için **EINVAL** ve döndürür **SIG_ERR**.
+*SIG* , yukarıdaki değerlerden biri değilse, [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md) tanımlandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev **errno** ' ı **EINVAL** olarak ayarlar ve **SIG_ERR**döndürür.
 
-Varsayılan olarak, **sinyal** değerinden bağımsız olarak çıkış kodu 3 ile arama programını sonlandırır *sig*.
+Varsayılan olarak, **sinyal** , *SIG*değerinden bağımsız olarak, çıkış kodu 3 ile çağıran programı sonlandırır.
 
 > [!NOTE]
-> **SIGINT** herhangi bir Win32 uygulaması için desteklenmiyor. CTRL + C kesme oluştuğunda, Win32 işletim sistemleri, özellikle bu kesmeyi işlemek için yeni bir iş parçacığı oluşturur. Bu, bir çok iş parçacıklı hale ve beklenmeyen davranışlara neden, UNIX'deki gibi bir tek iş parçacığı uygulama neden olabilir.
+> **Sigint** herhangi bir Win32 uygulaması için desteklenmez. CTRL + C kesme oluştuğunda, Win32 işletim sistemleri bu kesmeyi özellikle işlemek için yeni bir iş parçacığı oluşturur. Bu, UNIX gibi tek iş parçacığı uygulamasının çok iş parçacıklı olmasına ve beklenmeyen davranışlara neden olmasına neden olabilir.
 
-*Func* bağımsız değişkeni yazdığınız bir sinyal işleyicisine veya tanımlı sabitlerden birine bir adresi olan **sıg_dfl** veya **sıg_ıgn**, SİNYAL ayrıca tanımlanan. H Varsa *func* bir işlev ise verilen sinyal için sinyal işleyicisi olarak yüklenir. Sinyal işleyicinin prototipi bir biçimsel bağımsız değişken gerektirir *sig*, türü **int**. İşletim sistemi üzerinden asıl bağımsız değişkenini sağlar *sig* bir kesme oluştuğunda; bağımsız değişken kesmeyi oluşturan sinyaldir. Bu nedenle, altı bildirim sabitini (yukarıdaki tabloda listelenen), sinyal işleyicinizdeki belirlemek için hangi kesme oluştu ve uygun eylemde kullanabilirsiniz. Örneğin, çağırabilirsiniz **sinyal** iki kez için iki farklı sinyale aynı işleyiciyi atamak ve ardından test *sig* temel alınan sinyale göre farklı eylemlerde bulunmak işleyicisinde bağımsız değişken.
+*Func* bağımsız değişkeni, yazdığınız bir sinyal işleyicisinin adresidir veya önceden tanımlanmış **SIG_DFL** veya **SIG_IGN**SABITLERINDEN birine, Ayrıca, sinyal içinde de tanımlanır. Olsun. *Func* işlevi bir işlevise, belirtilen sinyal için sinyal işleyicisi olarak yüklenir. Sinyal işleyicisinin *prototipi,* **int**türünde bir biçimsel bağımsız değişken gerektiriyor. Bir kesme gerçekleştiğinde, işletim sistemi *SIG* aracılığıyla gerçek bağımsız değişkeni sağlar; bağımsız değişkeni, kesmeyi oluşturan sinyaldir. Bu nedenle, hangi kesmenin gerçekleştiğini ve uygun eylemi istediğinizi öğrenmek için sinyal işleyicinizdeki altı bildirim sabitlerini (önceki tabloda listelenmiştir) kullanabilirsiniz. Örneğin, iki farklı sinyalle aynı işleyiciyi atamak için **sinyali** iki kez çağırabilir ve sonra alınan sinyallere göre farklı eylemler gerçekleştirmek için işleyicide *SIG* bağımsız değişkenini test edebilirsiniz.
 
-Kayan nokta özel durumları için sınıyorsanız (**SIGFPE**), *func* isteğe bağlı ikinci bağımsız değişken alan bir işleve işaret FLOAT tanımlanmış birçok bildirim sabitinden biridir. H, formun **FPE_xxx**. Olduğunda bir **SIGFPE** sinyali oluştuğunda, kayan nokta özel durum türünü belirleyin ve ardından uygun eylemi gerçekleştirin ikinci bağımsız değişkenin değerini teste edebilir. Bu bağımsız değişken ve olası değerleri, Microsoft uzantılarıdır.
+Kayan nokta özel durumları (**Sigfpe**) için test ediyorsanız, *Func* , float içinde tanımlanan birkaç bildirim sabitlerinden biri olan isteğe bağlı ikinci bir bağımsız değişken alan bir işleve işaret eder. H, **FPE_xxx**biçiminde. Bir **Sigfpe** sinyali oluştuğunda, kayan nokta özel durumunun türünü belirleyebilmek için ikinci bağımsız değişkenin değerini test edebilir ve ardından uygun eylemi gerçekleştirebilirsiniz. Bu bağımsız değişken ve olası değerleri Microsoft uzantılarıdır.
 
-Kayan nokta özel durumları, değerini *func* sinyal alındığında sıfırlanmaz. Kayan nokta özel durumlarından kurtulmak için try kullanma / hariç yan tümceleri kayan kapsamak için işlemleri gelin. Kullanarak kurtarmak üzere mümkündür [setjmp](setjmp.md) ile [longjmp](longjmp.md). Her iki durumda da arama işlemi yürütmeye devam eder ve kayan nokta durumunu tanımsız işlem şekilde bırakır.
+Kayan nokta özel durumları için, sinyal alındığında *Func* değeri sıfırlanmaz. Kayan nokta özel durumlarını kurtarmak için, kayan nokta işlemlerini çevrelemek üzere try/except yan tümcelerini kullanın. Ayrıca, [longjmp](longjmp.md)ile [setjmp](setjmp.md) kullanılarak kurtarma yapılabilir. Her iki durumda da çağıran işlem yürütmeyi sürdürür ve işlemin kayan nokta durumunu tanımsız bırakır.
 
-Sinyal tutucusu dönerse, arama işlemi yürütmeyi, kesme sinyallerini aldığı noktanın hemen sürdürür. Bu, sinyal türü veya işletim modu ne olursa olsun doğrudur.
+Sinyal işleyicisi döndürülürse, çağıran işlem kesme sinyali aldığı noktadan sonra yürütmeyi hemen sürdürür. Bu, sinyal veya işletim modunun türü ne olursa olsun geçerlidir.
 
-Belirtilen işlev yürütülmeden önce değerini *func* ayarlanır **sıg_dfl**. Sonraki kesme sinyali için açıklandığı gibi değerlendirilir **sıg_dfl**bir bölen çağrı tersini belirtmediği sürece **sinyal** değerlendirilecektir. Bu özellik çağrılan işlevdeki sinyalleri sıfırlamak için kullanabilirsiniz.
+Belirtilen işlev yürütülmeden önce *Func* değeri **SIG_DFL**olarak ayarlanır. Sonraki kesme sinyali, bir **sinyal** çağrısı aksi belirtilmedikçe, **SIG_DFL**için açıklanan şekilde değerlendirilir. Çağrılan işlevdeki sinyalleri sıfırlamak için bu özelliği kullanabilirsiniz.
 
-Bir kesme oluştuğunda sinyal işleyicisi rutinleri genellikle uyumsuz olarak adlandırıldığı, sinyal işleyici işleviniz bir çalıştırma zaman işlemi tamamlanmadığında ve bilinmeyen bir durumda olduğunda denetimi alabilir. Aşağıdaki listede, kullanabileceğiniz, sinyal işleme yordamınızda hangi işlevleri belirleyen sınırlamaları özetlemektedir.
+Sinyal işleyici yordamları genellikle bir kesme gerçekleştiğinde zaman uyumsuz olarak çağrıldığı için, bir çalışma zamanı işlemi eksik olduğunda ve bilinmeyen bir durumda, sinyal işleyicisi işleviniz denetim alabilir. Aşağıdaki listede, sinyal işleyici yordamınız içinde kullanabileceğiniz işlevleri belirleyen kısıtlamalar özetlenmektedir.
 
-- Düşük düzeyli veya STDIO yapın. H g/ç rutinleri (örneğin, **printf** veya **fread**).
+- Düşük düzey veya STDIO vermeyin. H g/ç yordamları (örneğin, **printf** veya **fread**).
 
-- Yığın rutinlerini veya yığın rutinlerini kullanan herhangi bir rutini çağırmayın (örneğin, **malloc**, **_strdup**, veya **_putenv**). Bkz: [malloc](malloc.md) daha fazla bilgi için.
+- Yığın yordamlarını veya yığın yordamlarını (örneğin, **malloc**, **_strdup**veya **_putenv**) kullanan herhangi bir yordamı çağırmayın. Daha fazla bilgi için bkz. [malloc](malloc.md) .
 
-- Sistem çağrısı oluşturan bir işlev kullanmayın (örneğin, **_getcwd** veya **zaman**).
+- Bir sistem çağrısı (örneğin, **_getcwd** veya **Time**) üreten herhangi bir işlev kullanmayın.
 
-- Kullanmayın **longjmp** bir kayan nokta özel durumu kesintiye neden olmazsa (diğer bir deyişle, *sig* olduğu **SIGFPE**). Bu durumda, ilk kayan nokta paketini bir çağrısını kullanarak yeniden **_fpreset**.
+- Kesme bir kayan nokta özel durumu nedeniyle (yani, *SIG* **sigfpe**), **longjmp** kullanmayın. Bu durumda, önce bir **_fönayar**çağrısı kullanarak kayan nokta paketini yeniden başlatın.
 
-- Yer paylaşımı yordamlarını kullanmayın.
+- Herhangi bir kaplama yordamı kullanmayın.
 
-Bir program yakalayacaksa, kayan nokta kodu içermesi gereken **SIGFPE** işlevini kullanarak özel durum. Programınızı kayan nokta kodu yoksa ve çalışma zamanı kitaplığının sinyal işleme kodu gerekiyorsa, geçici bir çift bildirip sıfıra atayacak yalnızca:
+İşlevi kullanarak **Sigfpe** özel durumunu yakalayabiliyorsanız, bir program kayan nokta kodu içermelidir. Programınız kayan nokta kodu içermiyorsa ve çalışma zamanı kitaplığının sinyal işleme kodunu gerektiriyorsa, geçici bir Double bildirin ve sıfıra başlatın:
 
 ```C
 volatile double d = 0.0f;
 ```
 
-**SIGILL** ve **SIGTERM** sinyalleri Windows altında oluşturulmaz. Bunlar, ANSI uyumluluğu için dahil edilir. Kullanarak sinyal işleyiciler bu sinyaller için bu nedenle, ayarlayabilirsiniz **sinyal**, ve çağırarak bu sinyalleri açık olarak oluşturabilir [yükseltmek](raise.md).
+**Sigill** ve **Sigterm** sinyalleri Windows altında oluşturulmaz. Bunlar ANSI uyumluluğu için eklenmiştir. Bu nedenle, **sinyali**kullanarak bu sinyaller için sinyal işleyicileri ayarlayabilir ve ayrıca [Yükselt](raise.md)'i çağırarak bu sinyalleri açıkça oluşturabilirsiniz.
 
-Sinyal ayarları korunmaz yapılan çağrılar tarafından oluşturulan çağrıların ürettiği işlemlerde de [_exec](../../c-runtime-library/exec-wexec-functions.md) veya [_spawn](../../c-runtime-library/spawn-wspawn-functions.md) işlevleri. Sinyal ayarları yeni süreç içerisinde varsayılan değerlerine sıfırlanır.
+Sinyal ayarları, [_exec](../../c-runtime-library/exec-wexec-functions.md) veya [_üretme](../../c-runtime-library/spawn-wspawn-functions.md) işlevlerine yapılan çağrılar tarafından oluşturulan üretilen işlemlerde korunmaz. Sinyal ayarları, yeni işlemdeki varsayılan değerlere sıfırlanır.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**signal**|\<Signal.h >|
+|**signal**|\<sinyal. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek nasıl kullanılacağını gösterir **sinyal** bazı özel davranışların eklenmesi için **SIGABRT** sinyal. İptal davranışını hakkında ek bilgi için bkz: [_set_abort_behavior](set-abort-behavior.md).
+Aşağıdaki örnek, **Sigabrt** sinyaline özel bir davranış eklemek için **sinyalin** nasıl kullanılacağını gösterir. İptali davranışı hakkında daha fazla bilgi için bkz. [_set_abort_behavior](set-abort-behavior.md).
 
 ```C
 // crt_signal.c

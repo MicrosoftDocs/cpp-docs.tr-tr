@@ -1,10 +1,10 @@
 ---
 title: _ismbbkpunct, _ismbbkpunct_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _ismbbkpunct_l
 - _ismbbkpunct
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-multibyte-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - ismbbkpunct_l
 - _ismbbkpunct_l
@@ -28,14 +31,14 @@ helpviewer_keywords:
 - ismbbkpunct function
 - _ismbbkpunct function
 ms.assetid: a04c59cd-5ca7-4296-bec0-2b0d7f04edd0
-ms.openlocfilehash: 24a82bdf0dde2beb0978226208c151689e06ed72
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 35f09013fbbe522a1eb747f2d2131a5fbb23f765
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62287036"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70954084"
 ---
-# <a name="ismbbkpunct-ismbbkpunctl"></a>_ismbbkpunct, _ismbbkpunct_l
+# <a name="_ismbbkpunct-_ismbbkpunct_l"></a>_ismbbkpunct, _ismbbkpunct_l
 
 Çok baytlı bir karakterin bir noktalama karakteri olup olmadığını denetler.
 
@@ -54,21 +57,21 @@ int _ismbbkpunct_l(
 ### <a name="parameters"></a>Parametreler
 
 *c*<br/>
-Test edilecek tamsayı.
+Sınanacak tamsayı.
 
-*Yerel ayar*<br/>
+*ayarlar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_ismbbkpunct** sıfır olmayan bir değer döndürür tamsayı *c* değil bir ASCII olmayan noktalama ya da 0 olur. Örneğin, yalnızca kod sayfası 932 içinde **_ismbbkpunct** katakana noktalaması için test. **_ismbbkpunct** herhangi bir yerel ayara bağımlı karakter ayarları için geçerli yerel ayarı kullanır. **_ismbbkpunct_l** geçirilen yerel ayarı kullanması dışında aynıdır. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
+**_ismbbkpunct** , tamsayı *c* ASCII olmayan bir noktalama sembolse veya değilse 0 dışında bir değer döndürür. Örneğin, yalnızca kod sayfası 932 ' de, Katakana noktalama işaretleri için **_ismbbkpunct** testleri. **_ismbbkpunct** , yerel ayara bağımlı karakter ayarları için geçerli yerel ayarı kullanır. **_ismbbkpunct_l** , geçirilen yerel ayarı kullanması dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_ismbbkpunct**|\<Mbctype.h >|
-|**_ismbbkpunct_l**|\<Mbctype.h >|
+|**_ismbbkpunct**|\<Mbctype. h >|
+|**_ismbbkpunct_l**|\<Mbctype. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

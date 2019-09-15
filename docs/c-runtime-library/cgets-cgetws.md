@@ -1,10 +1,10 @@
 ---
 title: _cgets, _cgetws
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _cgetws
 - _cgets
-apilocation:
+api_location:
 - msvcr100.dll
 - msvcr110.dll
 - msvcr80.dll
@@ -14,7 +14,10 @@ apilocation:
 - msvcr110_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-conio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - cgetws
 - _cgetws
@@ -27,22 +30,22 @@ helpviewer_keywords:
 - cgetws function
 - cgets function
 ms.assetid: 4d5e134a-58c3-4f62-befd-5d235b0212f4
-ms.openlocfilehash: ea4d7be7631f22eecbea7c6727295c17d86dba06
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: aa258eaba34feec8ea25d780ea6392f195e37508
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62290176"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70944686"
 ---
-# <a name="cgets-cgetws"></a>_cgets, _cgetws
+# <a name="_cgets-_cgetws"></a>_cgets, _cgetws
 
-Konsoldan bir karakter dizesi alır. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz: [_cgets_s, _cgetws_s](../c-runtime-library/reference/cgets-s-cgetws-s.md).
-
-> [!IMPORTANT]
->  Bu işlevler kullanım dışıdır. Visual Studio 2015'te başlayarak, CRT içinde kullanılamaz. Bu işlevler, _cgets_s ve _cgetws_s, güvenli sürümleri yine de kullanılabilir. Bu diğer işlevler hakkında daha fazla bilgi için bkz: [_cgets_s, _cgetws_s](../c-runtime-library/reference/cgets-s-cgetws-s.md).
+Konsolundan bir karakter dizesi alır. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz. [_cgets_s, _cgetws_s](../c-runtime-library/reference/cgets-s-cgetws-s.md).
 
 > [!IMPORTANT]
->  Bu API, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+>  Bu işlevler artık kullanılmıyor. Visual Studio 2015 ' den başlayarak, bu dosyalar CRT içinde kullanılamaz. Bu işlevlerin güvenli sürümleri, _cgets_s ve _cgetws_s hala kullanılabilir. Bu alternatif işlevler hakkında daha fazla bilgi için bkz. [_cgets_s, _cgetws_s](../c-runtime-library/reference/cgets-s-cgetws-s.md).
+
+> [!IMPORTANT]
+>  Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -65,20 +68,20 @@ wchar_t *_cgetws(
 
 #### <a name="parameters"></a>Parametreler
 
-*Arabellek*<br/>
-Veri için depolama konumu.
+*arabelleğin*<br/>
+Veriler için depolama konumu.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-`_cgets` ve `_cgetws` dizenin başlangıcına bir işaretçi dönüş `buffer[2]`. Varsa `buffer` olduğu **NULL**, bu işlevler içinde açıklanan şekilde geçersiz parametre işleyicisi çağırır [Parameter Validation](../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse, bunlar döndürür **NULL** ayarlayıp `errno` için `EINVAL`.
+`_cgets``_cgetws` ve`buffer[2]`' de dizenin başlangıcına bir işaretçi döndürür. NULL ise, bu işlevler [parametre doğrulama](../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. `buffer` Yürütmenin devam etmesine izin veriliyorsa, **null** döndürür ve olarak `errno` `EINVAL`ayarlanır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevler, konsoldan bir karakter dizesini okuyun ve dizeyi ve uzunluğunu tarafından işaret edilen konumda depolamak `buffer`. `buffer` Parametresi, bir karakter dizisine bir işaretçi olmalıdır. Dizinin ilk öğesinin `buffer[0]`, okunacak dizenin maksimum uzunluğunu (karakter cinsinden) içermelidir. Dizi, dize, bir sonlandırıcı null karakteri ('\0') ve 2 ek bayt tutmak için yeterli sayıda öğe içermelidir. İşlev bir satır başı satır besleme (CR-LF) birleşimi veya belirli sayıda karakteri okuma kadar karakterleri okur. Dize başlayarak depolanıyor `buffer[2]`. İşlev CR-LF yazıyorsa null karakteri ('\0') depolar. İşlev, dizenin gerçek uzunluğundan ardından ikinci dizi öğesinde depolar. `buffer[1]`.
+Bu işlevler, konsolundan bir karakter dizesini okur ve dizeyi ve uzunluğu tarafından `buffer`işaret edilen konuma depolar. Parametre `buffer` , bir karakter dizisine yönelik bir işaretçi olmalıdır. Dizinin `buffer[0]`ilk öğesi, okunacak dizenin uzunluk üst sınırını (karakter cinsinden) içermelidir. Dizi, dizeyi tutmak için yeterli öğe, bir Sonlandırıcı null karakteri (' \ 0 ') ve 2 ek bayt içermelidir. İşlev, satır başı satır besleme (CR-LF) birleşimi veya belirtilen karakter sayısı okunana kadar karakterleri okur. Dize, tarihinde `buffer[2]`başlayarak depolanır. İşlev bir CR-LF okurlarsa, null karakteri (' \ 0 ') depolar. Daha sonra işlevi, dizenin gerçek uzunluğunu ikinci dizi öğesinde `buffer[1]`depolar.
 
-Tüm düzenleme tuşları etkin olduğu için `_cgets` veya `_cgetws` bir konsolda F3 tuşuna basılması en son girilen girdiyi yineler sırasında çağrılır.
+Bir konsol penceresinde `_cgets` veya `_cgetws` çağrıldığında tüm düzenleyen anahtarlar etkin olduğundan, F3 tuşuna basıldığında son girilen giriş yinelenir.
 
-C++'da, bu işlevler, bu işlevlerin daha yeni ve güvenli karşılıklarını çağırma şablon aşırı yüklemeleri vardır. Daha fazla bilgi için [güvenli şablon aşırı yüklemeleri](../c-runtime-library/secure-template-overloads.md).
+' C++De, bu işlevlerde bu işlevlerin daha yeni ve güvenli karşılıkları çağıran şablon aşırı yüklemeleri vardır. Daha fazla bilgi için bkz. [Güvenli şablon aşırı yüklemeleri](../c-runtime-library/secure-template-overloads.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -90,8 +93,8 @@ C++'da, bu işlevler, bu işlevlerin daha yeni ve güvenli karşılıklarını �
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|`_cgets`|\<conio.h >|
-|`_cgetws`|\<conio.h > veya \<wchar.h >|
+|`_cgets`|\<conio. h >|
+|`_cgetws`|\<conio. h > veya \<wchar. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../c-runtime-library/compatibility.md).
 

@@ -1,11 +1,11 @@
 ---
 title: _seh_filter_dll, _seh_filter_exe
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _XcptFilter
 - _seh_filter_dll
 - _seh_filter_exe
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-runtime-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - XcptFilter
 - _XcptFilter
@@ -31,16 +34,16 @@ helpviewer_keywords:
 - _seh_filter_dll function
 - _seh_filter_exe function
 ms.assetid: 747e5963-3a12-4bf5-b5c4-d4c1b6068e15
-ms.openlocfilehash: 51d6a21b3867eb830a7d9f9b4b9b0ac844cd5aa1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c8c76a4a1d1a39e26f5e78869d3b107578d2085a
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62356738"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70948689"
 ---
-# <a name="sehfilterdll-sehfilterexe"></a>_seh_filter_dll, _seh_filter_exe
+# <a name="_seh_filter_dll-_seh_filter_exe"></a>_seh_filter_dll, _seh_filter_exe
 
-Özel durum ve gerçekleştirilecek ilgili eylemi tanımlar.
+Özel durumu ve gerçekleştirilecek ilgili eylemi tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -58,20 +61,20 @@ int __cdecl _seh_filter_exe(
 ### <a name="parameters"></a>Parametreler
 
 *_ExceptionNum*<br/>
-Özel durum tanımlayıcısı.
+Özel durum için tanımlayıcı.
 
 *_ExceptionPtr*<br/>
-Özel durum bilgilerini bir işaretçi.
+Özel durum bilgisine yönelik bir işaretçi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Özel durum işleme sonucuna göre alınacak, eylemin gösteren bir tamsayı.
+Özel durum işlemenin sonucuna bağlı olarak gerçekleştirilecek eylemi belirten bir tamsayı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu yöntemler tarafından özel durum filtresi ifadesi olarak adlandırılan [deneyin-except deyimi](../../cpp/try-except-statement.md). Yöntemi, burada gösterildiği gibi özel durumu tanımlamak ve uygun eylemi belirlemek için sabit bir iç tablo danışır. Özel durum sayıları winnt.h içinde tanımlanmıştır ve sinyal sayıları sıgnal.h'de tanımlanır.
+Bu yöntemler, [try-except deyiminin](../../cpp/try-except-statement.md)özel durum filtresi ifadesi tarafından çağırılır. Yöntemi, özel durumu tanımlamak ve burada gösterildiği gibi uygun eylemi belirlemek için sabit bir iç tablo sağlar. Özel durum numaraları, Winnt. h içinde tanımlanır ve sinyal numaraları, Signal. h içinde tanımlanır.
 
-|Özel durum numarasını (işaretsiz uzun)|Sinyal sayısı|
+|Özel durum numarası (imzasız Long)|Sinyal numarası|
 |----------------------------------------|-------------------|
 |STATUS_ACCESS_VIOLATION|SIGSEGV|
 |STATUS_ILLEGAL_INSTRUCTION|SIGILL|
@@ -86,7 +89,7 @@ Bu yöntemler tarafından özel durum filtresi ifadesi olarak adlandırılan [de
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** corecrt_startup.h
+**Üstbilgi:** corecrt_startup. h
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

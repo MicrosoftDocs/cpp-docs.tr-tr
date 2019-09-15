@@ -1,9 +1,9 @@
 ---
 title: serbest
 ms.date: 11/04/2016
-apiname:
+api_name:
 - free
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,23 +15,26 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-heap-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - free
 helpviewer_keywords:
 - memory blocks, deallocating
 - free function
 ms.assetid: 74ded9cf-1863-432e-9306-327a42080bb8
-ms.openlocfilehash: f56212874f05ea5d4ab7bd826a7a4c145551dfc0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7e09bec7c83eae64064e3997f2e8d5632a47258a
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62287765"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70956723"
 ---
 # <a name="free"></a>serbest
 
-Kaldırır veya bir bellek bloğunu serbest bırakır.
+Bellek bloğunu ayırır veya serbest bırakır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -44,33 +47,33 @@ void free(
 ### <a name="parameters"></a>Parametreler
 
 *memblock*<br/>
-Daha önce ayrılmış bellek bloğu serbest bırakılacak.
+Serbest bırakmak için önceden ayrılmış bellek bloğu.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Ücretsiz** işlevi bir bellek bloğunu kaldırır (*memblock*) önceden ayrılmış bir çağrı tarafından **calloc**, **malloc**, veya **realloc**. Serbest bırakılan bayt sayısı bloğu ayrıldı, istenen bayt sayısını eşdeğerdir (veya yeniden tahsis, durumunda **realloc**). Varsa *memblock* olduğu **NULL**, işaretçi yok sayılır ve **ücretsiz** hemen döndürür. Geçersiz işaretçi serbest bırakma girişimi (tarafından ayrılmamış bir bellek bloğuna işaretçi **calloc**, **malloc**, veya **realloc**) sonraki ayırma isteklerini etkileyebilir ve hataya neden olur.
+**Free** işlevi, daha önce **calloc**, **malloc**veya **realloc**çağrısıyla ayrılmış bir bellek bloğunu (*memblock*) ayırır. Serbest bırakılan bayt sayısı, blok ayrıldığında (veya yeniden atandığında, **realloc**durumunda) istenen bayt sayısına eşittir. *Memblock* **null**ise, işaretçi yok sayılır ve **serbest** hemen döndürülür. Geçersiz bir işaretçi serbest bırakma girişimi ( **calloc**, **malloc**veya **realloc**tarafından ayrılmamış bir bellek bloğunun işaretçisi) sonraki ayırma isteklerini etkileyebilir ve hatalara neden olabilir.
 
-Bellek serbest bırakma hata oluşması durumunda **errno** bilgilerle hata işletim sisteminden yapısı üzerinde ayarlanır. Daha fazla bilgi için [errno _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Belleği boşaltmaya yönelik bir hata oluşursa, **errno** , işletim sisteminden hata doğasından bilgi olarak ayarlanır. Daha fazla bilgi için bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-Bir bellek bloğunu serbest sonra [_heapmin](heapmin.md) kullanılmayan bölgeleri birleşim ve işletim sistemine bırakmadan yığın boş bellek miktarı en aza indirir. İşletim sistemi tarafından serbest bırakılmış bellek serbest havuza geri ve yeniden ayırma için kullanılabilir.
+Bellek bloğu serbest bırakıldıktan sonra, [_heapmin](heapmin.md) kullanılmayan bölgeleri birleştirerek ve bunları işletim sistemine yeniden bırakarak yığındaki boş bellek miktarını en aza indirir. İşletim sisteminde yayımlanmayan serbest bırakılan bellek, ücretsiz havuza geri yüklenir ve yeniden tahsis için kullanılabilir.
 
-Uygulamayı hata ayıklama sürümü C çalışma zamanı kitaplıkları ile ilişkilendirildiğinde **ücretsiz** çözümler [_free_dbg](free-dbg.md). Yığının hata ayıklama işlemi sırasında nasıl yönetildiği hakkında daha fazla bilgi için bkz. [CRT hata ayıklama yığın](/visualstudio/debugger/crt-debug-heap-details).
+Uygulama, C çalışma zamanı kitaplıklarının hata ayıklama sürümüyle bağlantılı olduğunda, **ücretsiz** [_free_dbg](free-dbg.md)olarak çözümlenir. Hata ayıklama işlemi sırasında yığının nasıl yönetildiği hakkında daha fazla bilgi için bkz. [CRT hata ayıklama yığını](/visualstudio/debugger/crt-debug-heap-details).
 
-**Ücretsiz** işaretlenmiş `__declspec(noalias)`, işlevin genel değişkenleri garanti anlamına gelir. Daha fazla bilgi için [noalias](../../cpp/noalias.md).
+**Free** işaretlenir `__declspec(noalias)`, yani işlevin genel değişkenleri değiştirmeyeceği garanti edilir. Daha fazla bilgi için bkz. [noalias](../../cpp/noalias.md).
 
-İle ayrılan belleği boşaltmak için [_malloca](malloca.md), kullanın [_freea](freea.md).
+[_Malloca](malloca.md)ile ayrılmış belleği boşaltmak için [_freea](freea.md)kullanın.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**free**|\<stdlib.h > ve \<malloc.h >|
+|**free**|\<Stdlib. h > ve \<malloc. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
-Örneğin bakın [malloc](malloc.md).
+[Malloc](malloc.md)örneğine bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

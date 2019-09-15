@@ -1,9 +1,9 @@
 ---
 title: pamuklu çubuk
 ms.date: 11/04/2016
-apiname:
+api_name:
 - swab
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -14,19 +14,22 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - swab
 helpviewer_keywords:
 - swab function
 ms.assetid: fb8b7137-420d-4485-bb65-e1ec68602905
-ms.openlocfilehash: 5fd61f492e5b598c8c238182d114b6af68532dfd
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ffca1beea8446fc1fcfe8e7620389042af67be36
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62304825"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70950342"
 ---
 # <a name="swab"></a>pamuklu çubuk
 
-Bu POSIX işlevi kullanım dışı bırakılmıştır. ISO kullanın C++ uyumluluğunu [_swab](swab.md) yerine.
+Bu POSIX işlevi kullanım dışıdır. Bunun yerine ISO C++ uyumlu [_swab](swab.md) kullanın.

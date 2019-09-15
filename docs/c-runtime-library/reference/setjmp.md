@@ -1,9 +1,9 @@
 ---
 title: setjmp
 ms.date: 08/14/2018
-apiname:
+api_name:
 - setjmp
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - ntoskrnl.exe
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - setjmp
 helpviewer_keywords:
@@ -23,12 +26,12 @@ helpviewer_keywords:
 - current state
 - setjmp function
 ms.assetid: 684a8b27-e8eb-455b-b4a8-733ca1cbd7d2
-ms.openlocfilehash: 9f1a2b71a7b8fc7603c36938879348dca16288e2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4a88467f5b94ceae4281a35f1486380a877be2e5
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62356426"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70948233"
 ---
 # <a name="setjmp"></a>setjmp
 
@@ -45,42 +48,42 @@ int setjmp(
 ### <a name="parameters"></a>Parametreler
 
 *env*<br/>
-Ortam depolandığı değişken.
+Ortamın depolandığı değişken.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Yığın ortamını kaydedildikten sonra 0 döndürür. Varsa **setjmp** sonucu olarak döndürür bir `longjmp` döndürür, çağrı *değer* bağımsız değişkeni `longjmp`, veya *değer* bağımsız değişkeni `longjmp` 0 ' dır **setjmp** 1 döndürür. Döndürülen hata yok.
+Yığın ortamını kaydettikten sonra 0 döndürür. **Setjmp** bir `longjmp` çağrının sonucu olarak döndürülürse, *değer* bağımsız `longjmp`değişkenini döndürür ya da *değeri* `longjmp` 0 ise **setjmp** 1 döndürür. Hata döndürme yok.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Setjmp** işlevi daha sonra kullanarak geri yükleyebileceğiniz bir yığın ortamı kaydeder `longjmp`. Birlikte kullanıldığında **setjmp** ve `longjmp` yerel olmayan yürütmek için bir yol sağlayan **goto**. Bunlar, genellikle normal arama kullanmadan daha önce çağrılmış bir yordam hata işleme veya kurtarma koduna yürütme denetimi geçirmek için kullanılan veya dönüş kuralları.
+**Setjmp** işlevi, daha sonra öğesini kullanarak `longjmp`geri yüklemek için bir yığın ortamı kaydeder. Birlikte kullanıldığında, **setjmp** ve `longjmp` yerel olmayan bir **goto**yürütmek için bir yol sağlar. Genellikle, normal çağırma veya döndürme kurallarını kullanmadan daha önce çağrılan bir yordamın hata işleme veya kurtarma koduna doğrudan yürütme denetimi geçirmek için kullanılır.
 
-Bir çağrı **setjmp** geçerli yığın ortamda kaydeder *env*. Bir sonraki çağrı `longjmp` kaydedilmiş ortamını geri yükler ve döndürür denetim noktasına ilgili hemen sonra **setjmp** çağırın. Denetim alma yordamı için erişilebilir tüm değişkenleri (dışında kayıt değişkenleri) sahip oldukları zaman değerleri içeren `longjmp` çağrıldı.
+**Setjmp** çağrısı geçerli yığın ortamını *env*'ye kaydeder. Sonraki bir çağrı `longjmp` , kaydedilen ortamı geri yükler ve ilgili **setjmp** çağrısından hemen sonra denetim noktasına geri döndürür. Yordam alma denetimine erişilebilen tüm değişkenler (yazmaç değişkenleri hariç), çağrıldığında sahip `longjmp` oldukları değerleri içerir.
 
-Kullanmak mümkün değil **setjmp** yönetilen kod Yerelden atlamak için.
+Yerel sunucudan yönetilen koda geçmek için **setjmp** kullanılması mümkün değildir.
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Windows, Microsoft C++ kodu olarak **longjmp** aynı yığın geriye doğru izleme semantiği özel durum işleme kodu olarak kullanır. C++ özel durumlarını yükseltilebilir aynı yerde kullanmak daha güvenlidir. Ancak, bu kullanım taşınabilir değildir ve bazı önemli uyarılar ile birlikte gelir. Ayrıntılar için bkz [longjmp](longjmp.md).
+Windows 'daki C++ Microsoft kodunda, **longjmp** , özel durum işleme kodu olarak aynı yığın geri sarma semantiğini kullanır. C++ Özel durumların ortaya çıkarılan aynı yerlerde kullanılması güvenlidir. Ancak, bu kullanım taşınabilir değildir ve bazı önemli uyarılarla birlikte gelir. Ayrıntılar için bkz. [longjmp](longjmp.md).
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 > [!NOTE]
-> Taşınabilir C++ kodunda, varsayamazsınız `setjmp` ve `longjmp` C++ nesnesi semantiğini destekler. Özellikle, bir `setjmp` / `longjmp` çifti tanımsız davranış değiştirerek, çağrı `setjmp` ve `longjmp` tarafından **catch** ve **throw** çağırır Otomatik nesneler için tüm önemsiz yok ediciler. C++ programlarında C++ özel durum işleme mekanizmasını kullanmanız önerilir.
+> Taşınabilir C++ kodda, nesne semantiğini `setjmp` varsaymaz `longjmp` ve C++ destekleyebilirsiniz. Özellikle, `setjmp` **catch** ve **throw** / `longjmp` ile değiştirmek `setjmp` , tüm otomatik nesneler için önemsiz olmayan yıkıcıları çağıracağından, bir çağrı çiftinin tanımsız bir `longjmp` davranışı vardır. C++ Programlar ' da, C++ özel durum işleme mekanizmasını kullanmanızı öneririz.
 
-Daha fazla bilgi için [setjmp ve longjmp kullanma](../../cpp/using-setjmp-longjmp.md).
+Daha fazla bilgi için bkz. [setjmp ve longjmp kullanma](../../cpp/using-setjmp-longjmp.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**setjmp**|\<setjmp.h >|
+|**setjmp**|\<setjmp. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
-Örneğin bakın [_fpreset](fpreset.md).
+[_Fönayar](fpreset.md)için örneğe bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

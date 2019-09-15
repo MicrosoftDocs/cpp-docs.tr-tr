@@ -1,11 +1,11 @@
 ---
 title: difftime, _difftime32, _difftime64
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _difftime32
 - difftime
 - _difftime64
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-time-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _difftime64
 - difftime
@@ -32,14 +35,14 @@ helpviewer_keywords:
 - _difftime64 function
 - difftime32 function
 ms.assetid: 4cc0ac2b-fc7b-42c0-8283-8c9d10c566d0
-ms.openlocfilehash: 80aaac1696fc82db248b097e73a2d89d81a20346
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 51d74ae447e87e91e9be3c27864b8dfe7f490b14
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62288529"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70937639"
 ---
-# <a name="difftime-difftime32-difftime64"></a>difftime, _difftime32, _difftime64
+# <a name="difftime-_difftime32-_difftime64"></a>difftime, _difftime32, _difftime64
 
 İki zaman arasındaki farkı bulur.
 
@@ -54,32 +57,32 @@ double _difftime64( __time64_t timeEnd, __time64_t timeStart );
 ### <a name="parameters"></a>Parametreler
 
 *timeEnd*<br/>
-Bitiş saati.
+Bitiş zamanı.
 
 *timeStart*<br/>
-Başlangıç saati.
+Başlangıç zamanı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**difftime** geçen süreyi saniye cinsinden döndürür *timeStart* için *timeEnd*. Döndürülen değer, bir çift duyarlıklı kayan noktalı sayı olan. Dönüş değeri, 0, belirten bir hata olabilir.
+**difftime** , *TimeStart* 'dan *timeend*'e kadar geçen süreyi saniye cinsinden döndürür. Döndürülen değer çift duyarlıklı kayan noktalı bir sayıdır. Dönüş değeri 0 olabilir ve bir hata olduğunu gösterir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Difftime** işlevi iki sağlanan saat değeri arasındaki farkı hesaplar *timeStart* ve *timeEnd*.
+**Difftime** Işlevi, *TimeStart* ve *timeend*olmak üzere iki sağlanan zaman değeri arasındaki farkı hesaplar.
 
-Sağlanan zaman değer aralığında uymalı **time_t**. **time_t** 64-bit bir değerdir. Bu nedenle, aralığın 23:59: 59'dan 23:59:59, 31 Aralık, 3000 18 Ocak 2038, UTC genişletildi. Alt aralığı **time_t** 1 Ocak 1970 gece yarısı olmaya devam eder.
+Sağlanan zaman değeri, **time_t**aralığı içinde olmalıdır. **time_t** , 64 bitlik bir değerdir. Bu nedenle, aralığın sonu 18 Ocak 2038, UTC 'den 23:59:59, 31 Aralık 3000 ' 23:59:59 ten uzatılmıştır. **Time_t** alt aralığı hala gece yarısı, 1 Ocak 1970 ' dir.
 
-**difftime** ya da değerlendirilen bir satır içi işlevdir **_difftime32** veya **_difftime64** bağlı olarak **_use_32bıt_tıme_t** tanımlanır. _difftime32 ve _difftime64 doğrudan belirli bir zaman türü boyutu kullanılmasını zorlamak için kullanılabilir.
+**difftime** , **_Use_32bit_time_t** 'nin tanımlanıp tanımlanmayacağı temelinde **_difftime32** veya **_difftime64** olarak değerlendirilen bir satır içi işlevdir. _difftime32 ve _difftime64, belirli bir zaman türü boyutunun kullanımını zorlamak için doğrudan kullanılabilir.
 
-Bu işlevler kendi parametrelerini doğrular. Varsa parametrelerinin sıfıra eşit ya da negatif, geçersiz parametre işleyicisi açıklandığı gibi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse, bu işlevler 0 döndürür ve **errno** için **EINVAL**.
+Bu işlevler, parametrelerini doğrular. Parametrelerden biri sıfır veya negatif ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler 0 döndürür ve **errno** , **EINVAL**olarak ayarlanır.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**difftime**|\<TIME.h >|
-|**_difftime32**|\<TIME.h >|
-|**_difftime64**|\<TIME.h >|
+|**difftime**|\<Time. h >|
+|**_difftime32**|\<Time. h >|
+|**_difftime64**|\<Time. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

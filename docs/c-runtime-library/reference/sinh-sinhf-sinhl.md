@@ -1,11 +1,11 @@
 ---
-title: SİNH, sinhf, sinhl
+title: sinh, sinhf, sinhl
 ms.date: 04/10/2018
-apiname:
+api_name:
 - sinhl
 - sinhf
 - sinhl
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - sinh
 - sinhf
@@ -31,16 +34,16 @@ helpviewer_keywords:
 - sinhf function
 - sinhl function
 - hyperbolic functions
-ms.openlocfilehash: 7327809a20569c520aa799690203458d54e30fb5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6ae500cf595707acf9022b1c52232314c36cfe4d
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62356283"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70948096"
 ---
-# <a name="sinh-sinhf-sinhl"></a>SİNH, sinhf, sinhl
+# <a name="sinh-sinhf-sinhl"></a>sinh, sinhf, sinhl
 
-Hiperbolik sinüsünü hesaplar.
+Hiperbolik sinüsü hesaplar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -62,24 +65,24 @@ Radyan cinsinden açı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**Sinh** işlevler hiperbolik sinüsünü döndürür *x*. Sonuç çok büyükse, varsayılan olarak **sinh** ayarlar **errno** için **ERANGE** ve döndürür ±**HUGE_VAL**.
+**Sinh** işlevleri *x*' in hiperbolik sinüsünü döndürür. Varsayılan olarak, sonuç çok büyükse, **errno** ' ı **ERANGE** **olarak ayarlar ve** ±**HUGE_VAL**döndürür.
 
 |Giriş|SEH özel durumu|Matherr özel durumu|
 |-----------|-------------------|-----------------------|
-|± QNAN, ONRAKİNİ BUL|None|_DOMAIN|
-|&#124;x&#124; ≥ 7.104760e + 002|OVERFLOW + FİLTRESİNİN|TAŞMA|
+|± QNAN, IND|Yok.|_DOMAIN|
+|&#124;x&#124; ≥ 7.104760 e + 002|TAŞMA + TAM DEĞİL|TAŞMA|
 
-Dönüş kodları hakkında daha fazla bilgi için bkz. [errno _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Dönüş kodları hakkında daha fazla bilgi için bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, aşırı yüklemesini çağırabilirsiniz **sinh** alan ve getiren **float** veya **uzun** **çift** değerleri. C programında **sinh** her zaman alan ve döndüren **çift**.
+Aşırı C++ yüklemeye izin verdiğinden, **sinh** 'nin **float** veya **Long** **Double** değerleri alıp döndüren aşırı yüklerini çağırabilirsiniz. C programında **sinh** her zaman **Double**alır ve döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli başlık (C)|Gerekli başlık (C++)|
+|Yordam|Gerekli üst bilgi (C)|Gerekli üst bilgiC++()|
 |-|-|-|
-|**sinh**, **sinhf**, **sinhl**|\<Math.h >|\<cmath > veya \<math.h >|
+|**sinh**, **sinhf**, **sinhl**|\<Math. h >|\<cmath > veya \<Math. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
