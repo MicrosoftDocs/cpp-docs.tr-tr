@@ -1,9 +1,9 @@
 ---
 title: _aligned_msize_dbg
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _aligned_msize_dbg
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -14,22 +14,25 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _aligned_msize_dbg
 helpviewer_keywords:
 - _aligned_msize_dbg
 ms.assetid: f1c44af0-3f66-4033-81d1-d71d3afecba0
-ms.openlocfilehash: 054f7b88f93eef37a9a88fbb7895452f7c158716
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f2a0ceab906dccacb2e1c78a8789d524b608a4ff
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62342041"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70939859"
 ---
-# <a name="alignedmsizedbg"></a>_aligned_msize_dbg
+# <a name="_aligned_msize_dbg"></a>_aligned_msize_dbg
 
-(Yalnızca hata ayıklama sürümü) yığında ayrılan bir bellek bloğu boyutu döndürür.
+Yığında ayrılan bellek bloğunun boyutunu döndürür (yalnızca hata ayıklama sürümü).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -44,39 +47,39 @@ size_t _aligned_msize_dbg(
 ### <a name="parameters"></a>Parametreler
 
 *memblock*<br/>
-Bellek bloğuna işaretçi.
+Bellek bloğunun işaretçisi.
 
-*Hizalama*<br/>
-Hizalama değeri 2'in tam sayı üssü olması gerekir.
+*hizalar*<br/>
+2 ' nin tam sayı üssü olması gereken hizalama değeri.
 
-*uzaklık*<br/>
-Hizalama zorlamak için bellek ayırma olan uzaklık.
+*konumu*<br/>
+Hizalamayı zorlamak için bellek ayırmaya olan fark.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Boyut (bayt cinsinden), işaretsiz bir tamsayı olarak döndürür.
+Boyutu (bayt olarak) işaretsiz bir tamsayı olarak döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-*Hizalama* ve *uzaklığı* değerleri blok ayrılan işleve geçirilen değerlerin aynı olması gerekir.
+*Hizalama* ve *Aralık* değerleri, bloğu ayrılmış işleve geçirilen değerlerle aynı olmalıdır.
 
-**_aligned_msize_dbg** bir hata ayıklama sürümü [_aligned_msize](aligned-msize.md) işlevi. Zaman [_DEBUG](../../c-runtime-library/debug.md) tanımlı değil, her çağrı **_aligned_msize_dbg** çağrısı azaltılır **_aligned_msize**. Her ikisi de **_aligned_msize** ve **_aligned_msize_dbg** taban yığının bellek bloğunda boyutunu hesaplamak ancak **_aligned_msize_dbg** hata ayıklama özelliğini ekler: Bu, döndürülen boyutunda bellek bloğu kullanıcı bölümünü her iki tarafındaki arabelleklerin içerir.
+**_aligned_msize_dbg** , [_aligned_msize](aligned-msize.md) işlevinin bir hata ayıklama sürümüdür. [_Debug](../../c-runtime-library/debug.md) tanımlanmadığında, **_aligned_msize_dbg** 'e yapılan her çağrı, **_aligned_msize**çağrısına düşürülür. Hem **_aligned_msize** hem de **_aligned_msize_dbg** temel yığında bir bellek bloğunun boyutunu hesaplar, ancak **_aligned_msize_dbg** bir hata ayıklama özelliği ekler: Bu, döndürülen boyuttaki bellek bloğunun Kullanıcı bölümünün her iki tarafındaki arabellekleri da içerir.
 
-Bu işlev, parametresini doğrular. Varsa *memblock* null bir işaretçiyse veya *hizalama* 2 ' nin kuvveti değil **_msize** açıklandığı gibi geçersiz parametre işleyicisini çağırır [parametre doğrulama ](../../c-runtime-library/parameter-validation.md). Hatanın işlenip, işlev ayarlar **errno** için **EINVAL** ve -1 döndürür.
+Bu işlev, parametresini doğrular. *Memblock* null bir işaretçisiyse veya *Hizalama* 2 ' nin üssü değilse, **_msıze** [parametresi doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Hata işlenirse, işlev **errno** ' ı **EINVAL** olarak ayarlar ve-1 döndürür.
 
-Nasıl bellek blokları ayrılan, başlatılır ve taban yığının hata ayıklama sürümünde yönetilen hakkında daha fazla bilgi için bkz: [CRT hata ayıklama öbeği ayrıntıları](/visualstudio/debugger/crt-debug-heap-details). Ayırma blok türleri ve bunların nasıl kullanıldığı hakkında daha fazla bilgi için bkz. [hata ayıklama öbek üzerindeki blokları türleri](/visualstudio/debugger/crt-debug-heap-details). Standart yığın işlevi ve hata ayıklama sürümü, bir uygulamanın hata ayıklama derlemesinde çağırma arasındaki farklar hakkında daha fazla bilgi için bkz. [hata ayıklama sürümleri, yığın ayırma işlevleri](/visualstudio/debugger/debug-versions-of-heap-allocation-functions).
+Bellek bloklarının taban yığının hata ayıklama sürümünde nasıl ayrıldığı, başlatıldığı ve yönetildiği hakkında bilgi için bkz. [CRT hata ayıklama yığını ayrıntıları](/visualstudio/debugger/crt-debug-heap-details). Ayırma bloğu türleri ve bunların nasıl kullanıldığı hakkında bilgi için bkz. [hata ayıklama yığınındaki blok türleri](/visualstudio/debugger/crt-debug-heap-details). Bir uygulamanın hata ayıklama sürümünde standart yığın işlevi çağırma ve hata ayıklama sürümü arasındaki farklar hakkında daha fazla bilgi için bkz. [yığın ayırma Işlevlerinin hata ayıklama sürümleri](/visualstudio/debugger/debug-versions-of-heap-allocation-functions).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_aligned_msize_dbg**|\<crtdbg.h >|
+|**_aligned_msize_dbg**|\<Crtdbg. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 
-Hata ayıklama sürümleri [C çalışma zamanı kitaplıkları](../../c-runtime-library/crt-library-features.md) yalnızca.
+Yalnızca [C çalışma zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md) sürümlerini ayıklayın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

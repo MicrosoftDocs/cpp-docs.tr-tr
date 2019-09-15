@@ -1,7 +1,7 @@
 ---
 title: not
 ms.date: 11/04/2016
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -12,7 +12,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - std::not
 - std.not
@@ -20,16 +23,16 @@ f1_keywords:
 helpviewer_keywords:
 - not function
 ms.assetid: d2ddbd5c-33c0-4aff-8961-feac155b4ba1
-ms.openlocfilehash: 3abe5a5ec6cd40dd6f4e689c7c3f8ebb9eb1550f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 01247a12484e49087d45e7d1417656a5c1782c8b
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62156129"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70951271"
 ---
 # <a name="not"></a>not
 
-Alternatif! işleci.
+İçin bir alternatif! işlecinde.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -70,4 +73,4 @@ a is zero
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<iso646.h >
+**Üst bilgi:** \<iso646. h >

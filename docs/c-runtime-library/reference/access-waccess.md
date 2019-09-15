@@ -1,10 +1,10 @@
 ---
 title: _access, _waccess
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _access
 - _waccess
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-filesystem-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _waccess
 - _access
@@ -31,12 +34,12 @@ helpviewer_keywords:
 - _waccess function
 - taccess function
 ms.assetid: ba34f745-85c3-49e5-a7d4-3590bd249dd3
-ms.openlocfilehash: 37c5760eb5231d17a8b17fe5d21f1459a865c067
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 90092b5d1c250fd79be107b0c36ee5641f70b30c
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69500014"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70943933"
 ---
 # <a name="_access-_waccess"></a>_access, _waccess
 

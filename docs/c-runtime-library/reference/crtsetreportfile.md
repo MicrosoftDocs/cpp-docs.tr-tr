@@ -1,9 +1,9 @@
 ---
 title: _CrtSetReportFile
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _CrtSetReportFile
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -14,7 +14,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - CrtSetReportFile
 - _CrtSetReportFile
@@ -22,16 +25,16 @@ helpviewer_keywords:
 - CrtSetReportFile function
 - _CrtSetReportFile function
 ms.assetid: 3126537e-511b-44af-9c1c-0605265eabc4
-ms.openlocfilehash: 32a560e09c47468daf48c185e23d6e289c6d1d9b
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: bf88bae40031f6e92d6f936ac8a50f85d6c4e36c
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64343014"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70942287"
 ---
-# <a name="crtsetreportfile"></a>_CrtSetReportFile
+# <a name="_crtsetreportfile"></a>_CrtSetReportFile
 
-Kullandıktan sonra [_CrtSetReportMode](crtsetreportmode.md) belirtmek için **_CRTDBG_MODE_FILE**, ileti metnini almak için dosya tanıtıcısını belirleyebilirsiniz. **_CrtSetReportFile** tarafından da kullanılan [_CrtDbgReport, _CrtDbgReportW](crtdbgreport-crtdbgreportw.md) metni (yalnızca hata ayıklama sürümü) hedefini belirtmek için.
+**_CRTDBG_MODE_FILE**belirtmek Için [_Crtsetreportmode](crtsetreportmode.md) komutunu kullandıktan sonra, ileti metnini alacak dosya tanıtıcısını belirtebilirsiniz. **_Crtsetreportfile** Ayrıca, metin hedefini belirtmek Için [_Crtdbgreport, _CrtDbgReportW](crtdbgreport-crtdbgreportw.md) tarafından da kullanılır (yalnızca hata ayıklama sürümü).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -45,24 +48,24 @@ _HFILE _CrtSetReportFile(
 ### <a name="parameters"></a>Parametreler
 
 *reportType*<br/>
-Rapor türü: **_CRT_WARN**, **_CRT_ERROR**, ve **_CRT_ASSERT**.
+Rapor türü: **_CRT_WARN**, **_CRT_ERROR**ve **_CRT_ASSERT**.
 
 *reportFile*<br/>
-Yeni rapor dosyası için *reportType*.
+*ReportType*için yeni rapor dosyası.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarıyla tamamlandığında, **_CrtSetReportFile** içinde belirtilen rapor türü için tanımlanmış olan önceki rapor dosyasını döndürür *reportType*. Geçersiz bir değer geçtiyse *reportType*, bu işlev içinde açıklanan şekilde geçersiz parametre işleyicisi çağırır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse **errno** ayarlanır **EINVAL** ve işlev döndürür **_CRTDBG_HFILE_ERROR**. Daha fazla bilgi için [errno _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Başarılı tamamlandığında, **_Crtsetreportfile** , *reportType*içinde belirtilen rapor türü için tanımlanan önceki rapor dosyasını döndürür. *ReportType*için geçersiz bir değer geçirilirse, bu Işlev [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, **errno** **EINVAL** olarak ayarlanır ve işlev **_CRTDBG_HFILE_ERROR**döndürür. Daha fazla bilgi için bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_CrtSetReportFile** ile kullanılan [_CrtSetReportMode](crtsetreportmode.md) hedefi veya hedefleri tarafından oluşturulan belirli bir rapor türü için tanımlamak üzere işlevi **_CrtDbgReport**. Zaman **_CrtSetReportMode** atamak adlı **_CRTDBG_MODE_FILE** modu, belirli bir rapor türü için raporlama **_CrtSetReportFile** için çağrılmalıdır belirli dosya ya da hedef olarak kullanılmak üzere stream tanımlayın. Zaman [_DEBUG](../../c-runtime-library/debug.md) tanımlı değil, çağrılar **_CrtSetReportFile** ön işleme sırasında kaldırılır.
+**_Crtsetreportfile** , **_Crtdbgreport**tarafından oluşturulan belirli bir rapor türü için hedefi veya hedefleri tanımlamak üzere [_Crtsetreportmode](crtsetreportmode.md) işleviyle birlikte kullanılır. **_Crtsetreportmode** , belirli bir rapor türü için **_CRTDBG_MODE_FILE** Raporlama modunu atamak üzere çağrıldığında, hedef olarak kullanılacak belirli dosya veya akışı tanımlamak Için **_Crtsetreportfile** çağrılmalıdır. [_Hata ayıklama](../../c-runtime-library/debug.md) tanımlanmadığında, **_Crtsetreportfile** çağrıları ön işleme sırasında kaldırılır.
 
-Aşağıdaki liste için kullanılabilen seçenekleri gösterir *reportFile* ve sonuçta elde edilen davranışını **_CrtDbgReport**. Bu seçenekler, Crtdbg.h'de bit bayrakları olarak tanımlanır.
+Aşağıdaki listede *ReportFile* için kullanılabilen seçenekler ve **_Crtdbgreport**'un elde edilen davranışı gösterilmektedir. Bu seçenekler, Crtdbg. h içinde bit bayrakları olarak tanımlanmıştır.
 
 - **dosya tanıtıcısı**
 
-   İletilerin hedefi olacak dosyaya tanıtıcı. Tanıtıcı geçerliliğini doğrulamak için girişimde bulunulmaz. Açın ve dosya tanıtıcısını kapatmanız gerekir. Örneğin:
+   İleti hedefi olacak dosyanın bir tutamacı. Tanıtıcının geçerliliğini doğrulamak için girişimde bulunuldu. Dosya tanıtıcısını açmanız ve kapatmanız gerekir. Örneğin:
 
    ```C
    HANDLE hLogFile;
@@ -78,7 +81,7 @@ Aşağıdaki liste için kullanılabilen seçenekleri gösterir *reportFile* ve 
 
 - **_CRTDBG_FILE_STDERR**
 
-   İleti yazar **stderr**, hangi yönlendirilebilir gibi:
+   **Stderr**'e ileti yazar ve şu şekilde yeniden yönlendirilebilir:
 
    ```C
    freopen( "c:\\log2.txt", "w", stderr);
@@ -90,23 +93,23 @@ Aşağıdaki liste için kullanılabilen seçenekleri gösterir *reportFile* ve 
 
 - **_CRTDBG_FILE_STDOUT**
 
-   İleti yazar **stdout**, hangi bunu yeniden yönlendirebilirsiniz.
+   Yeniden yönlendirebilmeniz için **stdout**'a ileti yazar.
 
-- **_CRTDBG_REPORT_FILE**
+- **_CRTDBG_REPORT_**
 
    Geçerli rapor modunu döndürür.
 
-Her rapor türü tarafından kullanılan rapor dosyası ayrı olarak denetlenebilir. Örneğin belirtmek olası bir *reportType* , **_CRT_ERROR** rapor **stderr**, ancak bir *reportType* ,**_CRT_ASSERT** bir kullanıcı tanımlı tanıtıcıya veya akışa rapor.
+Her rapor türü tarafından kullanılan rapor dosyası ayrı olarak denetlenebilir. Örneğin, bir **_CRT_ERROR** *reportType* **'ın,** Kullanıcı tanımlı bir dosya tanıtıcısına veya akışına bildirildiği bir rapor *türü* olan **stderr**'e raporlanabilmesi olasıdır.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|İsteğe bağlı başlık|
 |-------------|---------------------|---------------------|
-|**_CrtSetReportFile**|\<crtdbg.h >|\<errno.h >|
+|**_CrtSetReportFile**|\<Crtdbg. h >|\<errno. h >|
 
-Konsolu, Evrensel Windows Platformu (UWP) uygulamaları desteklenmez. Konsolları ile ilişkili standart akış işleyicileri **stdin**, **stdout**, ve **stderr**, C çalışma zamanı işlevleri bunları UWP uygulamalarında kullanmadan önce yeniden yönlendirilmesi gerekiyor . Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Konsol Evrensel Windows Platformu (UWP) uygulamalarında desteklenmez. Console, **STDIN**, **stdout**ve **stderr**Ile ilişkili standart akış TUTAMAÇLARı, C çalışma zamanı işlevlerinin UWP uygulamalarında kullanabilmesi için yeniden yönlendirilmelidir. Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
-**Kitaplıklar:** Hata ayıklama sürümleri [CRT kitaplık özellikleri](../../c-runtime-library/crt-library-features.md) yalnızca.
+**Kütüphaneler** Yalnızca [CRT kitaplığı özelliklerinin](../../c-runtime-library/crt-library-features.md) hatalarını ayıklayın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

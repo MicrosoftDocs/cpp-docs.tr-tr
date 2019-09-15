@@ -1,7 +1,7 @@
 ---
 title: or_eq
 ms.date: 11/04/2016
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -12,7 +12,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - std::or_eq
 - or_eq
@@ -20,16 +23,16 @@ f1_keywords:
 helpviewer_keywords:
 - or_eq function
 ms.assetid: 1eb92464-ed58-40d8-a30e-f0a6aa2f4318
-ms.openlocfilehash: 7800bb65969c13d65b8feabebc86ea4c406bade1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d286fbfaf7c388a41b5c421915b921e3b091045d
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62156039"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70951154"
 ---
-# <a name="oreq"></a>or_eq
+# <a name="or_eq"></a>or_eq
 
-Alternatif &#124;= işleci.
+&#124;= İşlecine bir alternatifi.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -40,7 +43,7 @@ Alternatif &#124;= işleci.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Makro işleci verir &#124;=.
+Makro = işlecini &#124;verir.
 
 ## <a name="example"></a>Örnek
 
@@ -70,4 +73,4 @@ int main( )
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<iso646.h >
+**Üst bilgi:** \<iso646. h >

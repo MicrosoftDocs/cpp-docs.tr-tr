@@ -1,10 +1,10 @@
 ---
 title: asctime, _wasctime
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _wasctime
 - asctime
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-time-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _tasctime
 - asctime
@@ -30,16 +33,16 @@ helpviewer_keywords:
 - time structure conversion
 - time, converting
 ms.assetid: 974f1727-10ff-4ed4-8cac-2eb2d681f576
-ms.openlocfilehash: bc2d7a50442d9000eaaebf7a06bf336b3317e4df
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9ca9bbcbfff3d2bef41443ff1744a1b612727c20
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62341814"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70939667"
 ---
-# <a name="asctime-wasctime"></a>asctime, _wasctime
+# <a name="asctime-_wasctime"></a>asctime, _wasctime
 
-Dönüştürme bir **tm** zaman yapısı için bir karakter dizesi. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz: [asctime_s, _wasctime_s](asctime-s-wasctime-s.md).
+Bir **TM** zaman yapısını bir karakter dizesine Dönüştür. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz. [asctime_s, _wasctime_s](asctime-s-wasctime-s.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -59,37 +62,37 @@ Saat/tarih yapısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**asctime** karakter dize sonucu; bir işaretçi döndürür **_wasctime** geniş karakterli dize sonucu için bir işaretçi döndürür. Hata dönüş değeri yoktur.
+**asctime** karakter dizesi sonucuna bir işaretçi döndürür; **_wasctime** , geniş karakterli dize sonucuna bir işaretçi döndürür. Bir hata dönüş değeri yok.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz: [asctime_s, _wasctime_s](asctime-s-wasctime-s.md).
+Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz. [asctime_s, _wasctime_s](asctime-s-wasctime-s.md).
 
-**Asctime** işlevi dönüştürür bir yapıya bir karakter dizesi olarak depolanan bir süre. *Timeptr* değeri çağrısından alınan genellikle **gmtime** veya **localtime**, her ikisi de bir işaretçi döndürür bir **tm** yapısı ZAMAN içinde tanımlanır. H
+**Asctime** işlevi bir yapı olarak depolanan bir saati bir karakter dizesine dönüştürür. *Timeptr* değeri genellıkle, zaman içinde tanımlanan bir **TM** yapısına işaretçi döndüren **gmtime** veya **localtime**çağrısından elde edilir. Olsun.
 
 |timeptr üyesi|Değer|
 |--------------------|-----------|
-|**tm_hour**|Saatleri gece yarısından (0-23)|
-|**tm_isdst**|Gün ışığından yararlanma etkinse pozitif; gün ışığından yararlanma etkin değilse, 0; Yaz Saati durum bilinmiyorsa, negatif. C çalışma zamanı kitaplığı, gün ışığından yararlanma saatine (DST) hesaplanması uygulamak için ABD kurallarını varsayar.|
+|**tm_hour**|Gece yarısından itibaren saat (0-23)|
+|**tm_isdst**|Günışığından yararlanma süresi etkinse pozitif; gün ışığından yararlanma saati etkin değilse 0; gün ışığından yararlanma zamanının durumu bilinmiyorsa negatif olur. C çalışma zamanı kitaplığı, gün ışığından yararlanma zamanının (DST) hesaplanmasını uygulamak için Birleşik Devletler ' kurallarını varsayar.|
 |**tm_mday**|Ayın günü (1-31)|
-|**tm_min**|Saat (0-59) dakika|
+|**tm_min**|Saat sonra dakika (0-59)|
 |**tm_mon**|Ay (0-11; Ocak = 0)|
-|**tm_sec**|(0-59) dakikadan sonra saniye|
+|**tm_sec**|Dakika sonra saniye (0-59)|
 |**tm_wday**|Haftanın günü (0-6; Pazar = 0)|
-|**tm_yday**|(0-365; yılın günü 1 Ocak = 0)|
-|**tm_year**|Yıl (mevcut yıl eksi 1900)|
+|**tm_yday**|Yılın günü (0-365; 1 Ocak = 0)|
+|**tm_year**|Yıl (geçerli yıl eksi 1900)|
 
-Dönüştürülmüş karakteri dize ayrıca yerel saat dilimi ayarlarını göre ayarlanır. Yerel saat yapılandırma hakkında daha fazla bilgi için bkz: [zaman](time-time32-time64.md), [_ftime](ftime-ftime32-ftime64.md), ve [localtime](localtime-localtime32-localtime64.md) işlevleri ve [_tzset](tzset.md) işlevi Genel değişkenler ve saat dilimi ortamı tanımlama hakkında daha fazla bilgi için.
+Dönüştürülen karakter dizesi de yerel saat dilimi ayarlarına göre ayarlanır. Yerel saati yapılandırma hakkında daha fazla bilgi için saat, [_ftime](ftime-ftime32-ftime64.md)ve [localtime](localtime-localtime32-localtime64.md) işlevlerine ve [_tzset](tzset.md) [işlevine, saat](time-time32-time64.md)dilimi ortamı ve genel değişkenleri tanımlama hakkında bilgi için bkz.
 
-Tarafından üretilen dize sonucu **asctime** tam olarak 26 karakter içerir ve form `Wed Jan 02 02:03:55 1980\n\0`. 24 saatlik düzende kullanılır. Tüm alanlar, sabit bir genişliğe sahiptir. Yeni satır karakteri ve null karakteri, dizenin son iki konum kaplar. **asctime** tek, statik olarak ayrılan bir arabellek dizesini tutmak için kullanır. Bu işleve yapılan her çağrı, önceki çağrının sonucu yok eder.
+**Asctime** tarafından üretilen dize sonucu tam 26 karakter içerir ve forma `Wed Jan 02 02:03:55 1980\n\0`sahiptir. 24 saatlik bir saat kullanılır. Tüm alanların sabit bir genişliği vardır. Yeni satır karakteri ve null karakter, dizenin son iki konumunu kaplar. **asctime** , dönüş dizesini tutmak için tek ve statik olarak ayrılmış bir arabellek kullanır. Bu işleve yapılan her çağrı, önceki çağrının sonucunu yok eder.
 
-**_wasctime** geniş karakterli sürümüdür **asctime**. **_wasctime** ve **asctime** aynı şekilde davranır.
+**_wasctime** , **astime**'ın geniş karakterli bir sürümüdür. **_wasctime** ve **asctime** aynı şekilde davranır.
 
-Bu işlevler kendi parametrelerini doğrular. Varsa *timeptr* null bir işaretçiyse veya aralık dışı değerler içeriyorsa, geçersiz parametre işleyicisi açıklandığı gibi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse, işlev döndürür **NULL** ve ayarlar **errno** için **EINVAL**.
+Bu işlevler, parametrelerini doğrular. *Timeptr* null bir işaretçisiyse veya Aralık dışı değerler Içeriyorsa, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, işlev **null** değerini döndürür ve **errno** 'ı **EINVAL**olarak ayarlar.
 
-### <a name="generic-text-routine-mapping"></a>Genel metin yordam eşlemesi
+### <a name="generic-text-routine-mapping"></a>Genel metin rutin eşleme
 
-|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_tasctime**|**asctime**|**asctime**|**_wasctime**|
 
@@ -97,12 +100,12 @@ Bu işlevler kendi parametrelerini doğrular. Varsa *timeptr* null bir işaretç
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**asctime**|\<TIME.h >|
-|**_wasctime**|\<TIME.h > veya \<wchar.h >|
+|**asctime**|\<Time. h >|
+|**_wasctime**|\<Time. h > veya \<wchar. h >|
 
 ## <a name="example"></a>Örnek
 
-Bu program, sistem saatini uzun tamsayı olarak yerleştirir **aclock**, yapısına çevirir **newtime** ve ardından için dize biçiminde çıktı, kullanarak **asctime**işlevi.
+Bu program, sistem saatini uzun tamsayı **ACLOCK**'a koyar, bunu **Newtime** yapısına çevirir ve sonra da **asctime** işlevini kullanarak çıktı için dize biçimine dönüştürür.
 
 ```C
 // crt_asctime.c

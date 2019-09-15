@@ -1,11 +1,11 @@
 ---
 title: ilogb, ilogbf, ilogbl2
 ms.date: 04/05/2018
-apiname:
+api_name:
 - ilogb
 - ilogbf
 - ilogbl
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - ilogb
 - ilogbf
@@ -30,16 +33,16 @@ helpviewer_keywords:
 - ilogbf function
 - ilogbl function
 ms.assetid: 9ef19d57-1caa-41d5-8233-2faad3562fcb
-ms.openlocfilehash: 272544124dd8a8a666fc434516d3c45c73b1d011
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fdafba039537358c9b6a1de21dc176ceea38b4fa
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62331683"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70954761"
 ---
 # <a name="ilogb-ilogbf-ilogbl"></a>ilogb, ilogbf, ilogbl
 
-Belirtilen değer popülasyon 2 tabanında üssünü temsil eden bir tamsayı olarak alır.
+Belirtilen değerin taraflı olmayan taban 2 üssünü temsil eden bir tamsayı alır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -72,28 +75,28 @@ Belirtilen değer.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, 2 tabanında üssünü Döndür *x* işaretli olarak **int** değeri.
+Başarılı olursa, *x* 'in Base-2 üssünü işaretli bir **int** değeri olarak döndürün.
 
-Aksi takdirde, tanımlanan şu değerlerden birini döndürür \<math.h >:
+Aksi takdirde, \<Math. h > tanımlı aşağıdaki değerlerden birini döndürür:
 
 |Giriş|Sonuç|
 |-----------|------------|
 |±0|FP_ILOGB0|
-|±inf, ±nan belirsiz|FP_ILOGBNAN|
+|± inf, ± Nan, sonsuz|FP_ILOGBNAN|
 
-Hatalar rapor, belirtilen [_matherr](matherr.md).
+Hatalar [_matherr](matherr.md)içinde belirtilen şekilde bildirilir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, aşırı yüklemesini çağırabilirsiniz **ilogb** alan ve getiren **float** ve **uzun** **çift** türleri. C programında **ilogb** her zaman alan ve döndüren bir **çift**.
+Aşırı C++ yüklemeye izin verdiğinden, **float** ve **Long** **Double** türlerini alıp döndüren IOF **IGB** aşırı yüklerini çağırabilirsiniz. C **programında,** IBC her zaman bir **Double**alır ve döndürür.
 
-Bu fonksiyonu çağıran benzer eşdeğer çağırmak için **logb** işlevi ve ardından dönüş değerine atama **int**.
+Bu işlevi çağırmak, eşdeğer **logb** işlevini çağırmaya benzerdir ve sonra Return değerini **int**olarak verir.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|C üstbilgisi|C++ üst bilgisi|
+|Yordam|C üstbilgisi|C++üst bilgi|
 |-------------|--------------|------------------|
-|**ilogb**, **ilogbf**, **ilogbl**|\<Math.h >|\<cmath >|
+|ıalınan **GB**, **ılogbf**, **ılogbl**|\<Math. h >|\<cmath >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

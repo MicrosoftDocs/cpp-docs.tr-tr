@@ -1,11 +1,11 @@
 ---
 title: fmax, fmaxf, fmaxl
 ms.date: 04/05/2018
-apiname:
+api_name:
 - fmax
 - fmaxf
 - fmaxl
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - fmax
 - fmaxf
@@ -30,16 +33,16 @@ helpviewer_keywords:
 - fmaxf function
 - fmaxl function
 ms.assetid: a773ccf7-495e-4a9a-8c6d-dfb53e341e35
-ms.openlocfilehash: 371d53257427f2235048807968c82fec1b8bf699
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 27b495e9344ca7e2e3e061b19fee696ce2bdceb2
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62333439"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70957110"
 ---
 # <a name="fmax-fmaxf-fmaxl"></a>fmax, fmaxf, fmaxl
 
-Belirtilen iki sayısal değerin daha büyük belirleyin.
+Belirtilen iki sayısal değerin daha büyük olduğunu belirleme.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -75,32 +78,32 @@ long double fmaxl(
 *x*<br/>
 Karşılaştırılacak ilk değer.
 
-*Y*<br/>
+*Iz*<br/>
 Karşılaştırılacak ikinci değer.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, büyük döndürür *x* veya *y*. Döndürülen değer, tam ve yuvarlama herhangi bir form üzerinde bağlı değildir.
+Başarılı olursa, *x* veya *y*'nin büyük bir kısmını döndürür. Döndürülen değer kesin ve herhangi bir yuvarlama biçimine bağlı değildir.
 
-Aksi halde aşağıdaki değerlerden birini döndürebilir:
+Aksi takdirde, aşağıdaki değerlerden birini döndürebilir:
 
-|Sorun|döndürülecek|
+|Sorun|döndürülmesini|
 |-----------|------------|
-|*x* NaN =|*Y*|
-|*y* NaN =|*x*|
-|*x* ve *y* NaN =|NaN|
+|*x* = Nan|*Iz*|
+|*y* = Nan|*x*|
+|*x* ve *y* = Nan|NaN|
 
-Bu işlev, belirtilen hata kullanmaz [_matherr](matherr.md).
+Bu işlev, [_matherr](matherr.md)içinde belirtilen hataları kullanmaz.
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, alan ve kayan nokta ve uzun çift türleri getiren fmax yüklerini çağırabilirsiniz. C programında fmax her zaman alır ve bir double döndürür.
+Aşırı C++ yüklemeye izin verdiğinden, float ve Long Double türlerini alıp döndüren Fmax aşırı yüklerini çağırabilirsiniz. C programında Fmax her zaman bir Double alır ve döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İşlev|C üstbilgisi|C++ üst bilgisi|
+|İşlev|C üstbilgisi|C++üst bilgi|
 |--------------|--------------|------------------|
-|**fmax**, **fmaxf**, **fmaxl**|\<Math.h >|\<cmath > veya \<math.h >|
+|**Fmax**, **fmaxf**, **fmaxl**|\<Math. h >|\<cmath > veya \<Math. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

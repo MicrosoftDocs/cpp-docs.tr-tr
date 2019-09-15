@@ -1,10 +1,10 @@
 ---
 title: memcpy_s, wmemcpy_s
 ms.date: 11/04/2016
-apiname:
+api_name:
 - memcpy_s
 - wmemcpy_s
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - ucrtbase.dll
 - api-ms-win-crt-string-l1-1-0.dll
 - ntoskrnl.exe
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - wmemcpy_s
 - memcpy_s
@@ -25,16 +28,16 @@ helpviewer_keywords:
 - memcpy_s function
 - wmemcpy_s function
 ms.assetid: 5504e20a-83d9-4063-91fc-3f55f7dabe99
-ms.openlocfilehash: 802d75307096e649df15b1864b99699fba92a3a1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8078590df6950201ef81356ba6c28173e80572ee
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62285340"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70952795"
 ---
-# <a name="memcpys-wmemcpys"></a>memcpy_s, wmemcpy_s
+# <a name="memcpy_s-wmemcpy_s"></a>memcpy_s, wmemcpy_s
 
-Arabellekler arasında bayt kopyalar. Bunlar sürümleridir [memcpy, wmemcpy](memcpy-wmemcpy.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
+Baytları, arabellekler arasında kopyalar. Bunlar, [CRT 'Deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklanan şekilde, wmemcpy ve güvenlik geliştirmeleriyle birlikte [, memckopyala](memcpy-wmemcpy.md) sürümlerindekilerle aynıdır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -55,43 +58,43 @@ errno_t wmemcpy_s(
 
 ### <a name="parameters"></a>Parametreler
 
-*Hedef*<br/>
-Yeni bir arabellek.
+*HD*<br/>
+Yeni arabellek.
 
-*destSize*<br/>
-Hedef arabelleğin memcpy_s ve geniş karakterler (wchar_t) wmemcpy_s için bayt cinsinden boyutu.
+*Hedef boyutu*<br/>
+Wmemcpy_s için memcpy_s ve geniş karakterler (wchar_t) için bayt cinsinden hedef arabelleğin boyutu.
 
-*src*<br/>
-Arabellek kopyalayın.
+*YN*<br/>
+Kopyalanacak arabellek.
 
-*Sayısı*<br/>
+*biriktirme*<br/>
 Kopyalanacak karakter sayısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa sıfır; bir hata kodu.
+Başarılıysa sıfır; hatada hata kodu.
 
 ### <a name="error-conditions"></a>Hata koşulları
 
-|*Hedef*|*destSize*|*src*|*Sayısı*|Dönüş değeri|İçeriğini *dest*|
+|*HD*|*Hedef boyutu*|*YN*|*biriktirme*|Dönüş değeri|*Hedef* içeriği|
 |------------|----------------|-----------|---|------------------|------------------------|
-|Tüm|Tüm|Tüm|0|0|değiştirilmedi|
-|**NULL**|Tüm|Tüm|sıfır olmayan|**EINVAL**|değiştirilmedi|
-|Tüm|Tüm|**NULL**|sıfır olmayan|**EINVAL**|*Hedef* sıfırlanıyor|
-|Tüm|< *Sayısı*|Tüm|sıfır olmayan|**ERANGE**|*Hedef* sıfırlanıyor|
+|Kaydedilmemiş|Kaydedilmemiş|Kaydedilmemiş|0|0|değiştirilmedi|
+|**DEĞER**|Kaydedilmemiş|Kaydedilmemiş|sıfır olmayan|**EINVAL**|değiştirilmedi|
+|Kaydedilmemiş|Kaydedilmemiş|**DEĞER**|sıfır olmayan|**EINVAL**|*hedef* sıfırlandı|
+|Kaydedilmemiş|< *biriktirme*|Kaydedilmemiş|sıfır olmayan|**ERANGE**|*hedef* sıfırlandı|
 
 ## <a name="remarks"></a>Açıklamalar
 
-**memcpy_s** kopyaları *sayısı* bayt *src* için *dest*; **wmemcpy_s** kopyaları *sayısı* geniş karakterler (iki bayt). Kaynak ve hedef örtüştürürse davranışını **memcpy_s** tanımsızdır. Kullanım **memmove_s** çakışan bölgeleri işlemek için.
+**memcpy_s** kopya bayt *sayısını* *src* 'den *hedefe*; **wmemcpy_s** kopya *sayısı* geniş karakter (iki bayt). Kaynak ve hedef çakışırsa, **memcpy_s** davranışı tanımsızdır. Çakışan bölgeleri işlemek için **memmove_s** kullanın.
 
-Bu işlevler kendi parametrelerini doğrular. Varsa *sayısı* sıfır değil ve *hedef* veya *src* bir null işaretçiyse veya *destSize* değerinden küçük *sayısı*, bu işlevler içinde açıklanan şekilde geçersiz parametre işleyicisi çağırır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse, bu işlevler döndürür **EINVAL** veya **ERANGE** ayarlayıp **errno** dönüş değeri.
+Bu işlevler, parametrelerini doğrular. *Count* değeri sıfır değilse ve *hedef* ya da *src* null işaretçisiyse veya *destsize* *Count*değerinden küçükse, bu işlevler [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **EINVAL** veya **ERANGE** döndürür ve **errno** değerini döndürülen değere ayarlar.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**memcpy_s**|\<Memory.h > veya \<string.h >|
-|**wmemcpy_s**|\<wchar.h >|
+|**memcpy_s**|\<Memory. h > veya \<String. h >|
+|**wmemcpy_s**|\<wchar. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

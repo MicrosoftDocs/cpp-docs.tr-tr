@@ -1,7 +1,7 @@
 ---
 title: _ONAYLAMA, _ASSERTE, _ASSERT_EXPR makroları
 ms.date: 11/04/2016
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -12,7 +12,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _ASSERTE
 - ASSERTE
@@ -26,12 +29,12 @@ helpviewer_keywords:
 - _ASSERT macro
 - _ASSERT_EXPR macro
 ms.assetid: e98fd2a6-7f5e-4aa8-8fe8-e93490deba36
-ms.openlocfilehash: d2d83c3afa8e22c1f75480fe2afefa8bf68be858
-ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
+ms.openlocfilehash: efdf7852734d8367d053b1300cd32b8a9195d0cb
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70740020"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70943749"
 ---
 # <a name="_assert-_asserte-_assert_expr-macros"></a>_ONAYLAMA, _ASSERTE, _ASSERT_EXPR makroları
 

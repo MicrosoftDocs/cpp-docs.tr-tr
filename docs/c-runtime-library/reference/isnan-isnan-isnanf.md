@@ -1,11 +1,11 @@
 ---
-title: isNaN, _isnan, _isnanf
+title: isnan, _isnan, _isnanf
 ms.date: 01/31/2019
-apiname:
+api_name:
 - _isnan
 - _isnanf
 - isnan
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _isnan
 - isnan
@@ -32,16 +35,16 @@ helpviewer_keywords:
 - Not a Number (NANs)
 - isnan function
 ms.assetid: 391fbc5b-89a4-4fba-997e-68f1131caf82
-ms.openlocfilehash: 8a907dd33803cebd7bc5d71789834d115333b6a0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a0cc60fb80f8d5b78ec2947a87fde82a536b413c
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62157356"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70953759"
 ---
-# <a name="isnan-isnan-isnanf"></a>isNaN, _isnan, _isnanf
+# <a name="isnan-_isnan-_isnanf"></a>isnan, _isnan, _isnanf
 
-Kayan nokta değerini (NAN) bir sayı olup olmadığını sınar.
+Kayan nokta değerinin bir sayı (NAN) olmadığını sınar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -67,28 +70,28 @@ bool isnan(
 ### <a name="parameters"></a>Parametreler
 
 *x*<br/>
-Test etmek için kayan nokta değeri.
+Sınanacak kayan nokta değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-C'de, **isnan** makrosu ve **_isnan** ve **_isnanf** işlevler ise sıfır olmayan bir değer döndürür bağımsız değişken *x* bir NAN olup; Aksi takdirde bunlar 0 değerini döndürür.
+C 'de, *x* bağımsız DEĞIŞKENI bir NaN ise **isNaN** makrosu ve **_isnan** ve **_isnanf** işlevleri sıfır olmayan bir değer döndürür; Aksi takdirde 0 döndürür.
 
-C++ ' ta **isnan** şablon işlevinin döndürdüğü **true** , bağımsız değişken *x* olduğu bir NaN; Aksi halde döndürür **false**.
+İçinde C++, *x* bağımsız değişkeni bir NaN ise **isNaN** şablon işlevi **true** değerini döndürür; Aksi takdirde **yanlış**döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-NaN değerini başka bir NaN değerini eşit olarak karşılaştırmaz olduğundan, bu işlevler veya makro bir algılamak için kullanmanız gerekir. Belirtilen tür için IEEE 754 kayan nokta biçiminde kayan noktalı bir işlemin sonucunu temsil edilemeyen bir NaN üretilir. Çıkış için bir NaN nasıl temsil edildiğini hakkında daha fazla bilgi için bkz: [printf](printf-printf-l-wprintf-wprintf-l.md).
+NaN değeri başka bir NaN değerine eşit olarak karşılaştırmadığından, birini algılamak için bu işlevlerden veya makrolardan birini kullanmanız gerekir. Bir değer, kayan nokta işleminin sonucu belirtilen tür için IEEE-754 kayan nokta biçiminde gösterilemeyeceği zaman oluşturulur. Bir NaN 'nin çıkış için nasıl temsil edildiği hakkında bilgi için bkz. [printf](printf-printf-l-wprintf-wprintf-l.md).
 
-C++ derlendiğinde **isnan** Makro tanımlı değil ve bir **isnan** şablon işlevi yerine tanımlanır. Makro aynı şekilde davranır ancak türünde bir değer döndürür **bool** tamsayı değil.
+Olarak C++derlendiğinde, **isNaN** makrosu tanımlı değildir ve bunun yerine bir **Inan** şablon işlevi tanımlanır. Makro ile aynı şekilde davranır, ancak tamsayı yerine **bool** türünde bir değer döndürür.
 
-**_İsnan** ve **_isnanf** Microsoft'a özgü işlevlerdir. **_İsnanf** işlevi, yalnızca x64 için derlendiğinde kullanılabilir.
+**_İsnan** ve **_Isnanf** işlevleri, Microsoft 'a özgüdür. **_İsnanf** işlevi yalnızca x64 için derlendikleri zaman kullanılabilir.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli başlık (C)|Gerekli başlık (C++)|
+|Yordam|Gerekli üst bilgi (C)|Gerekli üst bilgiC++()|
 |-------------|---------------------------|-------------------------------|
-|**isnan**, **_isnanf**|\<Math.h >|\<Math.h > veya \<cmath >|
-|**_isnan**|\<float.h >|\<float.h > veya \<cfloat >|
+|**isNaN**, **_isnanf**|\<Math. h >|\<Math. h > veya \<cmath >|
+|**_isnan**|\<float. h >|\<float. h > veya \<cfloat >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

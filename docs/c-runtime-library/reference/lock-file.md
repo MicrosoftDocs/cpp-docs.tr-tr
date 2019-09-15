@@ -1,9 +1,9 @@
 ---
 title: _lock_file
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _lock_file
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-filesystem-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _lock_file
 - lock_file
@@ -24,16 +27,16 @@ helpviewer_keywords:
 - _lock_file function
 - lock_file function
 ms.assetid: 75c7e0e6-efff-4747-b6ed-9bcf2b0894c3
-ms.openlocfilehash: 4c6d9ef3ae9e2f63e702dd3fc6b01f7edea40626
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 43030030d1674cfba24c1300487f576b7a2085ea
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62157443"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70953312"
 ---
-# <a name="lockfile"></a>_lock_file
+# <a name="_lock_file"></a>_lock_file
 
-Kilitler bir **dosya** erişen iş parçacığı için tutarlılık sağlamak için nesne **dosya** eşzamanlı olarak nesnesi.
+**Dosya** nesnesine eşzamanlı olarak erişen iş parçacıklarının tutarlılığını sağlamak Için bir **Dosya** nesnesini kilitler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -43,18 +46,18 @@ void _lock_file( FILE* file );
 
 ### <a name="parameters"></a>Parametreler
 
-*Dosya*<br/>
+*dosyasýný*<br/>
 Dosya tanıtıcısı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Lock_file** işlev kilitleri **dosya** nesnesi tarafından belirtilen *dosya*. Temel alınan dosya tarafından kilitlenmediğinden **_lock_file**. Kullanım [_unlock_file](unlock-file.md) kilidini serbest bırakmak için. Çağrılar **_lock_file** ve **_unlock_file** bir iş parçacığında eşlenmesi gerekir.
+**_Lock_fıle** işlevi *Dosya*tarafından belirtilen **Dosya** nesnesini kilitler. Temel alınan dosya **_lock_tarafından**kilitlenmedi. Dosyadaki kilidi serbest bırakmak için [_unlock_al](unlock-file.md) kullanın. **_Lock_thread** ve **_unlock_bu** çağrıları bir iş parçacığında eşleştirilmelidir.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_lock_file**|\<stdio.h >|
+|**_lock_file**|\<stdio. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

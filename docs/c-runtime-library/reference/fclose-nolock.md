@@ -1,9 +1,9 @@
 ---
 title: _fclose_nolock
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _fclose_nolock
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - fclose_nolock
 - _fclose_nolock
@@ -24,14 +27,14 @@ helpviewer_keywords:
 - fclose_nolock function
 - _fclose_nolock function
 ms.assetid: b4af4392-5fc8-49bb-9fe2-ca7293d3ce04
-ms.openlocfilehash: 440582bb42a1795721eab17b24be3e0bc3daf80f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2e19604f09cdb3ac2a5bfc1635c2b98a8d5218c5
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62334976"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70941422"
 ---
-# <a name="fclosenolock"></a>_fclose_nolock
+# <a name="_fclose_nolock"></a>_fclose_nolock
 
 İş parçacığı kilitleme olmadan bir akışı kapatır.
 
@@ -45,28 +48,28 @@ int _fclose_nolock(
 
 ### <a name="parameters"></a>Parametreler
 
-*Stream*<br/>
-İşaretçi **dosya** yapısı.
+*ka*<br/>
+**Dosya** yapısına yönelik işaretçi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**fclose** akışın başarılı bir şekilde kapanırsa, 0 döndürür. Döndürür **EOF** bir hatayı göstermek için.
+Akış başarıyla kapatılırsa, **fclose** 0 döndürür. Bir hatayı göstermek için **EOF** döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevler, kilitleme yapılmayan bir sürümünü **fclose**. Bunu başka iş parçacıklarının engellemelerinden korunmamaları hariç, aynıdır. Diğer iş parçacıklarının kilitleme yüküne tabi olmayan çünkü daha hızlı olabilir. Bu işlev yalnızca tek iş parçacıklı uygulamalar ve burada çağırma kapsamının iş parçacığı yalıtımını zaten işlediği gibi iş parçacığı bakımından güvenli bağlamlarda kullanın.
+Bu işlevler, **fclose**'un kilitleme dışı bir sürümüdür. Bu, diğer iş parçacıklarının girişim tarafından korunmamasının dışında aynıdır. Diğer iş parçacıklarını kilitleme yükünü karşılamadığından daha hızlı olabilir. Bu işlevi yalnızca tek iş parçacıklı uygulamalar gibi iş parçacığı güvenli bağlamlarda veya çağırma kapsamının iş parçacığı yalıtımını zaten işlediği yerde kullanın.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**_fclose_nolock**|\<stdio.h >|
+|**_fclose_nolock**|\<stdio. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Stream g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [_close](close.md)<br/>
 [_fdopen, _wfdopen](fdopen-wfdopen.md)<br/>
 [fflush](fflush.md)<br/>

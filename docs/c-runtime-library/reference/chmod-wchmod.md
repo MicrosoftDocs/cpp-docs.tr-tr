@@ -1,10 +1,10 @@
 ---
 title: _chmod, _wchmod
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _chmod
 - _wchmod
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-filesystem-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _chmod
 - _wchmod
@@ -29,16 +32,16 @@ helpviewer_keywords:
 - files [C++], changing permissions
 - _wchmod function
 ms.assetid: 92f7cb86-b3b0-4232-a599-b8c04a2f2c19
-ms.openlocfilehash: 278ee1e6dda9e153b55676ce5c0ca389f383efd1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b224133212f19627a8f975dbbe8c80176e29f112
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62348478"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70939201"
 ---
-# <a name="chmod-wchmod"></a>_chmod, _wchmod
+# <a name="_chmod-_wchmod"></a>_chmod, _wchmod
 
-Dosya izin ayarlarını değiştirir.
+Dosya izni ayarlarını değiştirir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -49,31 +52,31 @@ int _wchmod( const wchar_t *filename, int pmode );
 
 ### <a name="parameters"></a>Parametreler
 
-*Dosya adı*<br/>
-Var olan dosyanın adı.
+*kısaltın*<br/>
+Mevcut dosyanın adı.
 
 *pmode*<br/>
-Dosya için izin ayarının.
+Dosya için izin ayarı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-İzin başarıyla değiştirilirse bu işlevler, 0 döndürür. Dönüş değeri-1 hata gösterir. Belirtilen dosya bulunamadı, **errno** ayarlanır **ENOENT**; bir parametre geçersiz **errno** ayarlanır **EINVAL**.
+Bu işlevler, izin ayarı başarıyla değiştiyse 0 döndürür. -1 dönüş değeri hata olduğunu gösterir. Belirtilen dosya bulunamazsa, **errno** , **ENOENT**olarak ayarlanır; bir parametre geçersizse, **errno** **EINVAL**olarak ayarlanır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Chmod** işlevi tarafından belirtilen dosya izni ayarını değiştirir *filename*. İzin ayarının okuma ve dosyaya yazma erişimi denetler. Tamsayı ifadesini *pmode* birini veya her ikisini SYS\Stat.h tanımlanan aşağıdaki bildirim sabitleri içerir.
+**_Chmod** işlevi dosya *adı*ile belirtilen dosyanın izin ayarını değiştirir. İzin ayarı, dosyaya okuma ve yazma erişimini denetler. *Pmode* tamsayı ifadesi, Sys\stat.exe içinde tanımlanan aşağıdaki bildirim sabitlerinden birini veya her ikisini içerir.
 
 | *pmode* | Açıklama |
 |-|-|
-| **\_S\_IREAD** | Yalnızca okuma izin verilir. |
-| **\_S\_IWRITE** | Yazma izin verilir. (Aslında, okuma ve yazma verir.) |
-| **\_S\_IREAD** &#124; **\_S\_IWRITE** | Okuma ve yazma izin verilir. |
+| **\_S\_İREAD** | Yalnızca okuma izni verilir. |
+| **\_S\_İWRİTE** | Yazma izni veriliyor. (Aslında, okuma ve yazma izni verir.) |
+| **\_S\_IREAD** &#124; **SIWRİTE\_ \_** | Okuma ve yazma izni verildi. |
 
-Her iki sabitleri verildiğinde, bunlar ile bit düzeyinde birleştirilir veya işleci (**\|**). Yazma izni verilmemişse, dosyanın salt okunur. Tüm dosyaları her zaman okunabilir olduğunu unutmayın; Salt yazma izni vermek mümkün değildir. Bu nedenle, modları **_s_ıwrıte** ve **_s_ıread** \| **_s_ıwrıte** eşdeğerdir.
+Her iki sabit de verildiğinde, bit düzeyinde OR işleci ( **\|** ) ile birleştirilir. Yazma izni verilmezse, dosya salt okunurdur. Tüm dosyaların her zaman okunabilir olduğunu unutmayın; salt yazılır izin vermek mümkün değildir. Bu nedenle, **_s_iwrite** ve **_s_iread** \| **_s_iwrite** modları eşdeğerdir.
 
-**_wchmod** geniş karakterli sürümüdür **_chmod**; *filename* bağımsız değişkeni **_wchmod** geniş karakterli bir dizedir. **_wchmod** ve **_chmod** aynı şekilde davranır.
+**_wchmod** , **_chmod**; öğesinin geniş karakterli bir sürümüdür. **_wchmod** için *filename* bağımsız değişkeni geniş karakterli bir dizedir. **_wchmod** ve **_chmod** aynı şekilde davranır.
 
-Bu işlev, parametrelerini doğrular. Varsa *pmode* bildirim sabitlerinden birini birleşimi değil veya alternatif bir kümesini içerir, sabitleri işlevi yalnızca bu yok sayar. Varsa *filename* olduğu **NULL**, açıklanan şekilde geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse **errno** ayarlanır **EINVAL** ve işlev -1 döndürür.
+Bu işlev, parametrelerini doğrular. *Pmode* , bildirim sabitlerinden birinin birleşimi değilse veya diğer bir sabitler kümesini içeriyorsa, işlev bunları yoksayar. *Filename* **null**ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, **errno** **EINVAL** olarak ayarlanır ve işlev-1 döndürür.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -85,8 +88,8 @@ Bu işlev, parametrelerini doğrular. Varsa *pmode* bildirim sabitlerinden birin
 
 |Yordam|Gerekli başlık|İsteğe bağlı başlık|
 |-------------|---------------------|---------------------|
-|**_chmod**|\<io.h >|\<sys/Types.h >, \<sys/stat.h >, \<errno.h >|
-|**_wchmod**|\<io.h > veya \<wchar.h >|\<sys/Types.h >, \<sys/stat.h >, \<errno.h >|
+|**_chmod**|\<GÇ. h >|\<sys/Types. h >, \<sys/stat. h >, \<errno. h >|
+|**_wchmod**|\<GÇ. h > veya \<wchar. h >|\<sys/Types. h >, \<sys/stat. h >, \<errno. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -173,4 +176,4 @@ Mode set to read/write
 [_creat, _wcreat](creat-wcreat.md)<br/>
 [_fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32](fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md)<br/>
 [_open, _wopen](open-wopen.md)<br/>
-[_stat, _wstat işlevleri](stat-functions.md)<br/>
+[_stat, _wstat Işlevleri](stat-functions.md)<br/>

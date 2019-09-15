@@ -1,12 +1,12 @@
 ---
 title: strxfrm, wcsxfrm, _strxfrm_l, _wcsxfrm_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - strxfrm
 - _wcsxfrm_l
 - _strxfrm_l
 - wcsxfrm
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -18,7 +18,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-string-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - strxfrm
 - _tcsxfrm
@@ -35,12 +38,12 @@ helpviewer_keywords:
 - strings [C++], comparing locale
 - _wcsxfrm_l function
 ms.assetid: 6ba8e1f6-4484-49aa-83b8-bc2373187d9e
-ms.openlocfilehash: e4dc94d76562daf10544e9b0d09d9608bd83e454
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 411fe3a5a6f66614f0a22e0f623b73685a6e0844
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69500780"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70957615"
 ---
 # <a name="strxfrm-wcsxfrm-_strxfrm_l-_wcsxfrm_l"></a>strxfrm, wcsxfrm, _strxfrm_l, _wcsxfrm_l
 
@@ -93,7 +96,7 @@ Döndürülen boş karakteri saymayan, dönüştürülmüş dizenin uzunluğunu 
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Strxfrm** işlevi, strSource tarafından işaret edilen dizeyi *strDest*içinde depolanan yeni bir harmanlanmış forma dönüştürür. Null karakter dahil olmak üzere en fazla *sayı* karakteri dönüştürülür ve sonuç dizesine konur. Dönüşüm, yerel ayarın **LC_COLLATE** kategori ayarı kullanılarak yapılır. **LC_COLLATE**hakkında daha fazla bilgi için bkz. [setlocale](setlocale-wsetlocale.md). **strxfrm** , yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır; **_strxfrm_l** , geçerli yerel ayar yerine geçirilen yerel ayarı kullanması dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
+**Strxfrm** işlevi, *strSource* tarafından Işaret edilen dizeyi *strDest*içinde depolanan yeni bir harmanlanmış forma dönüştürür. Null karakter dahil olmak üzere en fazla *sayı* karakteri dönüştürülür ve sonuç dizesine konur. Dönüşüm, yerel ayarın **LC_COLLATE** kategori ayarı kullanılarak yapılır. **LC_COLLATE**hakkında daha fazla bilgi için bkz. [setlocale](setlocale-wsetlocale.md). **strxfrm** , yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır; **_strxfrm_l** , geçerli yerel ayar yerine geçirilen yerel ayarı kullanması dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
 Dönüşümden sonra, iki dönüştürülmüş dize içeren bir **strcmp** çağrısı, özgün iki dizeye uygulanan bir **strcoll** çağrısıyla aynı sonuçları verir. **Strcoll** ve **stricoll**ile birlikte, **strxfrm** uygun şekilde çok baytlı karakter dizelerini otomatik olarak işler.
 

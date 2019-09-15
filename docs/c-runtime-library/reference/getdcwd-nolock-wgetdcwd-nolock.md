@@ -1,10 +1,10 @@
 ---
 title: _getdcwd_nolock, _wgetdcwd_nolock
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _wgetdcwd_nolock
 - _getdcwd_nolock
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _wgetdcwd_nolock
 - tgetdcwd_nolock
@@ -34,19 +37,19 @@ helpviewer_keywords:
 - _wgetdcwd_nolock function
 - directories [C++], current working
 ms.assetid: d9bdf712-43f8-4173-8f9a-844e82beaa97
-ms.openlocfilehash: 47938c387ba30d7bcba038145c2dff9c7b59b750
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: cef2c39d3cfcb7690a644d9d2db68f25259b8162
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62157714"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70955196"
 ---
-# <a name="getdcwdnolock-wgetdcwdnolock"></a>_getdcwd_nolock, _wgetdcwd_nolock
+# <a name="_getdcwd_nolock-_wgetdcwd_nolock"></a>_getdcwd_nolock, _wgetdcwd_nolock
 
 Belirtilen sürücüdeki geçerli çalışma dizininin tam yolunu alır.
 
 > [!IMPORTANT]
-> Bu API, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -65,22 +68,22 @@ wchar_t *_wgetdcwd_nolock(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sürücü*<br/>
+*sürücü*<br/>
 Disk sürücüsü.
 
-*Arabellek*<br/>
+*arabelleğin*<br/>
 Yol için depolama konumu.
 
 *maxlen*<br/>
-Karakter cinsinden yolun en fazla uzunluk: **char** için **_getdcwd** ve **wchar_t** için **_wgetdcwd**.
+Karakter cinsinden yol uzunluğu üst sınırı: **_wgetdcwd**için **char** , **_getdcwd** ve **wchar_t** için.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bkz: [_getdcwd, _wgetdcwd](getdcwd-wgetdcwd.md).
+Bkz. [_getdcwd, _wgetdcwd](getdcwd-wgetdcwd.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_getdcwd_nolock** ve **_wgetdcwd_nolock** özdeş **_getdcwd** ve **_wgetdcwd**sırasıyla gelen korunmayan dışında diğer iş parçacıkları tarafından girişim. Diğer iş parçacıklarını kilitleme ek yükü kalmadıklarından daha hızlı olabilir. Bu işlevler yalnızca tek iş parçacıklı uygulamalar ve burada çağırma kapsamının iş parçacığı yalıtımını zaten işlediği gibi iş parçacığı bakımından güvenli bağlamlarda kullanın.
+**_getdcwd_nolock** ve **_wgetdcwd_nolock** , sırasıyla **_getdcwd** ve **_wgetdcwd**ile aynıdır, ancak diğer iş parçacıkları tarafından girişim tarafından korunmazlar. Diğer iş parçacıklarını kilitleme yükünü sunmadığından daha hızlı olabilir. Bu işlevleri yalnızca, tek iş parçacıklı uygulamalar gibi iş parçacığı güvenli bağlamlarda veya çağırma kapsamının iş parçacığı yalıtımını zaten işlediği yerde kullanın.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -92,8 +95,8 @@ Bkz: [_getdcwd, _wgetdcwd](getdcwd-wgetdcwd.md).
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_getdcwd_nolock**|\<Direct.h >|
-|**_wgetdcwd_nolock**|\<Direct.h > veya \<wchar.h >|
+|**_getdcwd_nolock**|\<Direct. h >|
+|**_wgetdcwd_nolock**|\<Direct. h > veya \<wchar. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

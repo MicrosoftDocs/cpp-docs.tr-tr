@@ -1,9 +1,9 @@
 ---
 title: _abnormal_termination
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _abnormal_termination
-apilocation:
+api_location:
 - msvcr110.dll
 - msvcr110_clr0400.dll
 - msvcr90.dll
@@ -11,22 +11,25 @@ apilocation:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr100.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _abnormal_termination
 helpviewer_keywords:
 - _abnormal_termination
 ms.assetid: 952970a4-9586-4c3d-807a-db729448c91c
-ms.openlocfilehash: 213938fa830f0a924fa954d4a36a39b544473dd4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b66cf0df998b4e33a9f3425fdf0f260d163f423b
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62290878"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70944719"
 ---
-# <a name="abnormaltermination"></a>_abnormal_termination
+# <a name="_abnormal_termination"></a>_abnormal_termination
 
-Belirtir olup olmadığını `__finally` bloğu bir [try-finally deyimi](../cpp/try-finally-statement.md) sistem iç listesine sonlandırma işleyicileri yürütülürken girilir.
+Sistem, sonlandırma `__finally` işleyicileri iç listesini yürütürken [try-finally ifadesinin](../cpp/try-finally-statement.md) bloğunun girilip girilmediğini belirtir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,17 +40,17 @@ int   _abnormal_termination(
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**doğru** sistem *geriye doğru izleme* yığını; Aksi takdirde **false**.
+Sistem yığını *geri* alıyorsa **doğru** ; Aksi takdirde, **false**.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu durum, geriye doğru izleme özel durumlarını yönetmek için kullanılan bir iç işlevi ve kullanıcı kodundan çağrılmak üzere tasarlanmamıştır.
+Bu, geriye doğru olmayan özel durumları yönetmek için kullanılan bir iç işlevdir ve kullanıcı kodundan çağrılması amaçlanmamıştır.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|_abnormal_termination|excpt.h|
+|_abnormal_termination|excpt. h|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

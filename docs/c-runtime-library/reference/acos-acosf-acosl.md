@@ -1,11 +1,11 @@
 ---
 title: acos, acosf, acosl
 ms.date: 04/05/2018
-apiname:
+api_name:
 - acosf
 - acos
 - acosl
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - acos
 - acosl
@@ -31,16 +34,16 @@ helpviewer_keywords:
 - trigonometric functions
 - arccosine function
 ms.assetid: 00b89c48-8faf-4824-aa95-fa4349a4975d
-ms.openlocfilehash: 22149e9ff552015238d34a15166d04115438534b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9e8aba1104af5855db9cb4f3cbb989d182b2c78e
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62335678"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70939992"
 ---
 # <a name="acos-acosf-acosl"></a>acos, acosf, acosl
 
-Ark kosinüsünü hesaplar.
+Arkkosinüsünü hesaplar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -58,33 +61,33 @@ long double acos( long double x );   // C++ only
 ### <a name="parameters"></a>Parametreler
 
 *x*<br/>
-(Ters kosinüsünü) arkkosinüsünü hesaplamak 1 ile -1 arasındaki değeri.
+-1 ile 1 arasında olan ve Arkkosinüs (ters kosinüs) hesaplanacak değer.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**Acos** işlevi arkkosinüsünü döndürür *x* 0 aralığındaki π radyan olarak verilir.
+**Acos** işlevi, 0 ile π radyana aralığındaki *x* arkkosinüsünü döndürür.
 
-Varsayılan olarak, *x* -1'den küçük veya 1 ' den büyük olan **acos** bir sonsuz döndürür.
+Varsayılan olarak, *x* 1 ' den küçük veya 1 ' den büyükse **Acos** sonsuz döndürür.
 
 |Giriş|SEH özel durumu|Matherr özel durumu|
 |-----------|-------------------|-----------------------|
 |± ∞|GEÇERSİZ|_DOMAIN|
-|± QNAN, ONRAKİNİ BUL|yok|_DOMAIN|
+|± QNAN, IND|yok|_DOMAIN|
 |&#124;x&#124;>1|GEÇERSİZ|_DOMAIN|
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, aşırı yüklemesini çağırabilirsiniz **acos** alan ve getiren **float** ve **uzun** **çift** türleri. C programında **acos** her zaman alan ve döndüren bir **çift**.
+Aşırı C++ yüklemeye izin verdiğinden, **Acos** 'un **float** ve **Long** **Double** türlerini alıp döndüren aşırı yüklerini çağırabilirsiniz. C programında, **Acos** her zaman bir **Double**alır ve döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli başlık|İsteğe bağlı üst bilgiler|
+|Yordam|Gerekli başlık|İsteğe bağlı üstbilgiler|
 |-------------|---------------------|----------------------|
-|**acos**, **acosf**, **acosl**|\<Math.h >|\<errno.h >|
+|**Acos**, **acosf**, **acosl**|\<Math. h >|\<errno. h >|
 
 ## <a name="example"></a>Örnek
 
-Bu program için 1 -1 aralığında bir değer ister. Bu aralığın dışında kalan giriş değerleri üreten `_DOMAIN` hata iletileri. Geçerli bir değer girilmezse, program arksinüsünü ve bu değer arkkosinüsünü yazdırır.
+Bu program,-1 ile 1 arasında bir değer ister. Bu aralığın dışındaki giriş değerleri hata `_DOMAIN` iletileri oluşturur. Geçerli bir değer girilirse program, bu değerin arksinüsünü ve arkkosinüsünü yazdırır.
 
 ```C
 // crt_asincos.c

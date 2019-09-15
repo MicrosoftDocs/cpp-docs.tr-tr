@@ -1,12 +1,12 @@
 ---
 title: _ismbslead, _ismbstrail, _ismbslead_l, _ismbstrail_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _ismbstrail
 - _ismbslead_l
 - _ismbslead
 - _ismbstrail_l
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -18,7 +18,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-multibyte-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _ismbslead
 - ismbs
@@ -40,19 +43,19 @@ helpviewer_keywords:
 - ismbstrail_l function
 - _ismbstrail_l function
 ms.assetid: 86d2cd7a-3cff-443a-b713-14cc17a231e9
-ms.openlocfilehash: 5b4d3f371f4be640cc22a1bdc3d920acf88e2585
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 71a5d2a82c01a41f945ef3fa8c7652f846f05103
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62287363"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70953775"
 ---
-# <a name="ismbslead-ismbstrail-ismbsleadl-ismbstraill"></a>_ismbslead, _ismbstrail, _ismbslead_l, _ismbstrail_l
+# <a name="_ismbslead-_ismbstrail-_ismbslead_l-_ismbstrail_l"></a>_ismbslead, _ismbstrail, _ismbslead_l, _ismbstrail_l
 
-Çok baytlı karakter dizesi ön bayt ve baytlar için bağlama duyarlı testleri gerçekleştirir ve verilen alt dizenin işaretçi baytı veya sondaki baytı işaret edip etmediğini belirler.
+Çok baytlı karakter dizesi ön baytları ve iz baytları için bağlama duyarlı testler gerçekleştirir ve belirli bir alt dize işaretçisinin bir ön bayta mi yoksa bir iz baytına mı işaret ettiğini belirler.
 
 > [!IMPORTANT]
-> Bu API, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -79,35 +82,35 @@ int _ismbstrail_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*str*<br/>
-Dize veya önceki bilinen bayt işaretçisi.
+*üstbilgisine*<br/>
+Dizenin başlangıcına veya önceki bilinen ön bayta yönelik işaretçi.
 
-*Geçerli*<br/>
-Test edilecek dize içindeki konumu için işaretçi.
+*geçerli*<br/>
+Sınanacak dizedeki konuma yönelik işaretçi.
 
-*Yerel ayar*<br/>
+*ayarlar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_ismbslead** karakterin ön baytı -1 döndürür ve **_ismbstrail** karakterin sondaki baytı -1 döndürür. Bu işlevler, giriş dizelerinden geçerli olan, ancak bir ön bayt veya bayt, sıfır döndürür. Her iki bağımsız değişken ise **NULL**, açıklanan şekilde geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse, bu işlevler döndürür **NULL** ayarlayıp **errno** için **EINVAL**.
+**_ismbslider** , karakter bir ön bayt ise ve **_ismbstraıl** , karakter bir iz baytı ise-1 döndürürse-1 döndürür. Giriş dizeleri geçerliyse ancak bir ön bayt ya da iz baytı değilse, bu işlevler sıfır döndürür. Bağımsız değişken **null**Ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **null** döndürür ve **errno** , **EINVAL**olarak ayarlanır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_ismbslead** ve **_ismbstrail** yavaştır **_ismbblead** ve **_ismbbtrail** sürümleri çünkü bunlar dize bağlam dikkate alın.
+**_ismbslider** ve **_ismbstraıl** , dize bağlamını hesaba attıkları için **_ismbblider** ve **_ismbbiz** sürümlerinden daha yavaştır.
 
-Sahip bu işlevlerin sürümleri **_l** sonekine yerel ayara bağlı davranışları için geçerli yerel ayarı yerine iletilen yerel ayarı kullanmaları dışında. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
+**_L** sonekine sahip bu işlevlerin sürümleri, yerel ayara bağımlı davranış için geçerli yerel ayar yerine geçirilen yerel ayarı kullanmaları dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|İsteğe bağlı başlık|
 |-------------|---------------------|---------------------|
-|**_ismbslead**|\<Mbctype.h > veya \<mbstring.h >|\<CType.h >, * \<lımıts.h >, \<stdlib.h >|
-|**_ismbstrail**|\<Mbctype.h > veya \<mbstring.h >|\<CType.h >, * \<lımıts.h >, \<stdlib.h >|
-|**_ismbslead_l**|\<Mbctype.h > veya \<mbstring.h >|\<CType.h >, * \<lımıts.h >, \<stdlib.h >|
-|**_ismbstrail_l**|\<Mbctype.h > veya \<mbstring.h >|\<CType.h >, * \<lımıts.h >, \<stdlib.h >|
+|**_ismbslider**|\<Mbctype. h > veya \<mbstring. h >|\<CType. h >, * \<limit. h >, \<Stdlib. h >|
+|**_ismbstrail**|\<Mbctype. h > veya \<mbstring. h >|\<CType. h >, * \<limit. h >, \<Stdlib. h >|
+|**_ismbslead_l**|\<Mbctype. h > veya \<mbstring. h >|\<CType. h >, * \<limit. h >, \<Stdlib. h >|
+|**_ismbstrail_l**|\<Mbctype. h > veya \<mbstring. h >|\<CType. h >, * \<limit. h >, \<Stdlib. h >|
 
-\* Test koşullarına ilişkin bildirim sabitleri için.
+\*Test koşullarına yönelik bildirim sabitleri için.
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

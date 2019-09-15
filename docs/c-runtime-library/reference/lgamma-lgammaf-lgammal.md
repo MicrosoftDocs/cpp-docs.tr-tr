@@ -1,11 +1,11 @@
 ---
 title: lgamma, lgammaf, lgammal
 ms.date: 04/05/2018
-apiname:
+api_name:
 - lgamma
 - lgammaf
 - lgammal
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - lgamma
 - lgammaf
@@ -30,16 +33,16 @@ helpviewer_keywords:
 - lgammal function
 - lgammaf function
 ms.assetid: 6e326c58-7077-481a-a329-c82ae56ae9e6
-ms.openlocfilehash: 43ce1599ab9161b9fadf5643ddd2ec739ab2d8b8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9baf8f0fefb50cea6a5301aac9ffd48ff3cd5bde
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62157316"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70953369"
 ---
 # <a name="lgamma-lgammaf-lgammal"></a>lgamma, lgammaf, lgammal
 
-Belirtilen değerin gama fonksiyonu mutlak değerini doğal logaritmasını belirler.
+Belirtilen değerin gama işlevinin mutlak logaritmasına ilişkin doğal logaritmayı belirler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -57,34 +60,34 @@ long double lgamma( long double x ); //C++ only
 ### <a name="parameters"></a>Parametreler
 
 *x*<br/>
-İşlem için değer.
+Hesaplama değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, gama işlevi mutlak değerini doğal logaritmasını Döndür *x*.
+Başarılı olursa, *x*'in gama işlevinin mutlak logaritmasını döndürün.
 
-|Sorun|döndürülecek|
+|Sorun|döndürülmesini|
 |-----------|------------|
-|*x* NaN =|NaN|
-|*x* = ±0|+ INFİNİTY|
-|*x*negatif tamsayı =|+ INFİNİTY|
-|±INFINITY|+ INFİNİTY|
-|kutup hata|+ HUGE_VAL + HUGE_VALF, veya + HUGE_VALL|
-|Taşma aralık hatası|±HUGE_VAL, ±HUGE_VALF veya ±HUGE_VALL|
+|*x* = Nan|NaN|
+|*x* = ±0|\+ SONSUZLUK|
+|*x*= negatif tamsayı|\+ SONSUZLUK|
+|± INFINITY|\+ SONSUZLUK|
+|direk hatası|\+ HUGE_VAL, + HUGE_VALF veya + HUGE_VALL|
+|Taşma aralığı hatası|± HUGE_VAL, ± HUGE_VALF veya ± HUGE_VALL|
 
-Hatalar rapor, belirtilen [_matherr](matherr.md).
+Hatalar [_matherr](matherr.md)içinde belirtilen şekilde bildirilir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, aşırı yüklemesini çağırabilirsiniz **lgamma** alan ve getiren **float** ve **uzun** **çift** türleri. C programında **lgamma** her zaman alan ve döndüren bir **çift**.
+Aşırı C++ yüklemeye izin verdiğinden, **float** ve **Long** **Double** türlerini alıp döndüren **lgama** aşırı yüklerini çağırabilirsiniz. C programında, **lgama** her zaman bir **Double**alır ve döndürür.
 
-X bir rasyonel sayı ise, bu işlev faktöriyelini (x - 1) logaritmasını döndürür.
+X bir Rational Number ise, bu işlev (x-1) faktöriyelini logaritmasını döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İşlev|C üstbilgisi|C++ üst bilgisi|
+|İşlev|C üstbilgisi|C++üst bilgi|
 |--------------|--------------|------------------|
-|**lgamma**, **lgammaf**, **lgammal**|\<Math.h >|\<cmath >|
+|**lgamma**, **lgamaf**, **lgammal**|\<Math. h >|\<cmath >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

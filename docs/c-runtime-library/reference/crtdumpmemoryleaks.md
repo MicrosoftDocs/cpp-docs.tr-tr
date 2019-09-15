@@ -1,9 +1,9 @@
 ---
 title: _CrtDumpMemoryLeaks
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _CrtDumpMemoryLeaks
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -14,7 +14,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - CRTDBG_LEAK_CHECK_DF
 - CRTDBG_CHECK_CRT_DF
@@ -30,16 +33,16 @@ helpviewer_keywords:
 - CRTDBG_CHECK_CRT_DF macro
 - _CRTDBG_CHECK_CRT_DF macro
 ms.assetid: 71b2eab4-7f55-44e8-a55a-bfea4f32d34c
-ms.openlocfilehash: baf4f8d8234ba744acda20541d37bbc3ed076678
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: dae93577f5c0c0297606577c05d6b6ef2040c831
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62339461"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70938825"
 ---
-# <a name="crtdumpmemoryleaks"></a>_CrtDumpMemoryLeaks
+# <a name="_crtdumpmemoryleaks"></a>_CrtDumpMemoryLeaks
 
-Bir bellek sızıntısı (yalnızca hata ayıklama sürümü) oluştuğunda dökümlerinde hata ayıklama yığınındaki tüm belleği engeller.
+Bellek sızıntısı oluştuğunda hata ayıklama yığınındaki tüm bellek bloklarını döker (yalnızca hata ayıklama sürümü).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -50,35 +53,35 @@ int _CrtDumpMemoryLeaks( void );
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_CrtDumpMemoryLeaks** bir bellek sızıntısı bulunursa TRUE değerini döndürür. Aksi takdirde işlev false değerini döndürür.
+**_Crtdumpmemorysızıntı** , bir bellek sızıntısı bulunursa doğru döndürür. Aksi takdirde, işlev FALSE döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_CrtDumpMemoryLeaks** işlevi, program yürütme başlangıcından bir bellek sızıntısı oluşup oluşmadığını belirler. Sızıntı bulunduğunda, hata ayıklama üst bilgi bilgileri Yığındaki tüm nesneler için kullanıcı tarafından okunabilen bir biçimde dökümü yapıldığında. Zaman [_DEBUG](../../c-runtime-library/debug.md) tanımlı değil, çağrılar **_CrtDumpMemoryLeaks** ön işleme sırasında kaldırılır.
+**_Crtdumpmemorysızıntı** işlevi, program yürütme başlangıcından bu yana bir bellek sızıntısı oluşup oluşmadığını belirler. Bir sızıntı bulunduğunda, yığındaki tüm nesneler için hata ayıklama üstbilgi bilgileri Kullanıcı tarafından okunabilen bir biçimde dökülür. [_Hata ayıklama](../../c-runtime-library/debug.md) tanımlanmadığında, **_Crtdumpmemorysızıntı** çağrısı, ön işleme sırasında kaldırılır.
 
-**_CrtDumpMemoryLeaks** sık sık uygulama tarafından ayrılan tüm belleği serbest bırakılmış doğrulamak için program yürütme sonunda çağrılır. İşlev otomatik olarak program sonlandırıldığında etkinleştirerek çağrılabilir **_CRTDBG_LEAK_CHECK_DF** bit alanı [_crtDbgFlag](../../c-runtime-library/crtdbgflag.md) kullanarak bayrak [_CrtSetDbgFlag](crtsetdbgflag.md)işlevi.
+**_Crtdumpmemorysızıntı** , uygulama tarafından ayrılan tüm belleğin serbest olduğunu doğrulamak için genellikle program yürütmenin sonunda çağırılır. İşlevi, [_Crtsetdbgflag](crtsetdbgflag.md) işlevi kullanılarak _Crtdbgflag bayrağının **_Crtdbg_liak_check_df** bit [](../../c-runtime-library/crtdbgflag.md) alanını etkinleştirerek program sonlandırmada otomatik olarak çağrılabilir.
 
-**_CrtDumpMemoryLeaks** çağrıları [_CrtMemCheckpoint](crtmemcheckpoint.md) yığın geçerli durumunu almak için ve ardından durum değil serbest bırakılmış bloklar tarar. Serbest bırakılmamış bir blok karşılaşıldığında **_CrtDumpMemoryLeaks** çağrıları [_CrtMemDumpAllObjectsSince](crtmemdumpallobjectssince.md) program yürütme başlangıcından yığında ayrılan tüm nesneler için döküm bilgiler.
+**_Crtdumpmemorysızıntı** , yığının geçerli durumunu almak Için [_Crtmemcheckpoint](crtmemcheckpoint.md) çağırır ve sonra serbest bırakılmamış blokların durumunu tarar. Serbest bırakılmamış bir blokta karşılaşıldığında, **_Crtdumpmemorysızıntı** , program yürütme başlangıcından yığında ayrılan tüm nesneler için döküm bilgilerini [_CrtMemDumpAllObjectsSince](crtmemdumpallobjectssince.md) çağırır.
 
-Varsayılan olarak, iç C çalışma zamanı blokları (**_CRT_BLOCK**) bellek dökümü işlemlerinde dahil edilmez. [_CrtSetDbgFlag](crtsetdbgflag.md) işlevi, açmak için kullanılabilir **_CRTDBG_CHECK_CRT_DF** , bit **_crtDbgFlag** bu blokları sızıntı algılama işleminde içerecek şekilde.
+Varsayılan olarak, iç C çalışma zamanı blokları ( **_CRT_BLOCK**) bellek dökümü işlemlerine dahil edilmez. [_Crtsetdbgflag](crtsetdbgflag.md) işlevi, sızıntı algılama sürecinde bu blokları dahil etmek Için **_Crtdbgflag** 'ın **_CRTDBG_CHECK_CRT_DF** bitini açmak üzere kullanılabilir.
 
-Yığın durumu işlevleri hakkında daha fazla bilgi ve **_CrtMemState** yapısı için bkz: [yığın durumu raporlama işlevleri](/visualstudio/debugger/crt-debug-heap-details). Nasıl bellek blokları ayrılan, başlatılır ve taban yığının hata ayıklama sürümünde yönetilen hakkında daha fazla bilgi için bkz. [CRT hata ayıklama öbeği ayrıntıları](/visualstudio/debugger/crt-debug-heap-details).
+Yığın durumu işlevleri ve **_Crtmemstate** yapısı hakkında daha fazla bilgi için bkz. [yığın durum raporlama işlevleri](/visualstudio/debugger/crt-debug-heap-details). Bellek bloklarının taban yığının hata ayıklama sürümünde nasıl ayrıldığı, başlatıldığı ve yönetildiği hakkında daha fazla bilgi için bkz. [CRT hata ayıklama yığını ayrıntıları](/visualstudio/debugger/crt-debug-heap-details).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_CrtDumpMemoryLeaks**|\<crtdbg.h >|
+|**_CrtDumpMemoryLeaks**|\<Crtdbg. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 
-Hata ayıklama sürümleri [C çalışma zamanı kitaplıkları](../../c-runtime-library/crt-library-features.md) yalnızca.
+Yalnızca [C çalışma zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md) sürümlerini ayıklayın.
 
 ## <a name="example"></a>Örnek
 
-Nasıl kullanılacağını gösteren bir örnek **_CrtDumpMemoryLeaks**, bkz: [crt_dbg1](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/crt_dbg1).
+**_Crtdumpmemorysızıntısına**nasıl kullanacağınızı gösteren bir örnek için bkz. [crt_dbg1](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/crt_dbg1).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

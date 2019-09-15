@@ -1,14 +1,14 @@
 ---
 title: lrint, lrintf, lrintl, llrint, llrintf, llrintl
 ms.date: 04/05/2018
-apiname:
+api_name:
 - lrint
 - lrintl
 - lrintf
 - llrint
 - llrintf
 - llrintl
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -20,7 +20,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - lrint
 - lrintf
@@ -42,16 +45,16 @@ helpviewer_keywords:
 - llrintf function
 - llrintl function
 ms.assetid: 28ccd5b3-5e6f-434f-997d-a21d51b8ce7f
-ms.openlocfilehash: 01680a62e654112475a55bd8eac0cc14d254e2a2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 72870c3548f0fd6972183b0c090708c6eddc591e
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62285778"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70953125"
 ---
 # <a name="lrint-lrintf-lrintl-llrint-llrintf-llrintl"></a>lrint, lrintf, lrintl, llrint, llrintf, llrintl
 
-Yönünü ve geçerli yuvarlama modu kullanarak belirtilen kayan nokta değeri en yakın tamsayı değerine yuvarlanır.
+Geçerli yuvarlama modunu ve yönünü kullanarak belirtilen kayan nokta değerini en yakın integral değere yuvarlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -104,25 +107,25 @@ Yuvarlanacak değer.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, yuvarlak tamsayı değerini döndürür *x*.
+Başarılı olursa *x*'in yuvarlatılmış tamsayı değerini döndürür.
 
-|Sorun|döndürülecek|
+|Sorun|döndürülmesini|
 |-----------|------------|
-|*x* dönüş türü aralığının dışında<br /><br /> *x* = ±∞<br /><br /> *x* NaN =|Başlatır **FE_INVALID** ve sıfır (0) değerini döndürür.|
+|*x* , dönüş türü aralığının dışında<br /><br /> *x* = ±∞<br /><br /> *x* = Nan|**FE_INVALID** yükseltir ve sıfır (0) döndürür.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, aşırı yüklemesini çağırabilirsiniz **lrint** ve **llrint** Süren **float** ve **uzun**  **çift** türleri. C programında **lrint** ve **llrint** her zaman bir **çift**.
+Aşırı C++ yüklemeye izin verdiğinden, **float** ve **Long** **Double** türlerine sahip **lrint** ve **llrint** aşırı yüklerini çağırabilirsiniz. C programında **lrint** ve **llrint** her zaman bir **Double**alır.
 
-Varsa *x* bir tamsayı değeri, bu işlevler raise kayan nokta denk göstermiyor **FE_INEXACT**.
+*X* bir integral değerin kayan nokta eşdeğerini temsil ediyorsa, bu işlevler **FE_INEXACT**yükseltir.
 
-**Microsoft'a özgü**: Sonucu dönüş türünün aralığı dışında olduğunda veya bir NaN veya sonsuz parametre olarak kullanıldığında, dönüş değeri tanımlı uygulamasıdır. Microsoft derleyicisi, sıfır (0) değeri döndürür.
+**Microsoft 'a özgü**: Sonuç, dönüş türü aralığının dışındaysa veya parametre bir NaN veya Infinity olduğunda, dönüş değeri uygulama tanımlı olur. Microsoft derleyicisi sıfır (0) değeri döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İşlev|C üstbilgisi|C++ üst bilgisi|
+|İşlev|C üstbilgisi|C++üst bilgi|
 |--------------|--------------|------------------|
-|**lrint**, **lrintf**, **lrintl**, **llrint**, **llrintf**, **llrintl**|\<Math.h >|\<cmath >|
+|**lrint**, **lrintf**, **lrintl**, **llrint**, **llrintf**, **llrintl**|\<Math. h >|\<cmath >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

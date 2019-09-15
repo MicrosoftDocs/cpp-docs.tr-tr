@@ -1,11 +1,11 @@
 ---
 title: _ftime_s, _ftime32_s, _ftime64_s
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _ftime_s
 - _ftime64_s
 - _ftime32_s
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-time-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _ftime_s
 - _ftime64_s
@@ -35,16 +38,16 @@ helpviewer_keywords:
 - _ftime_s function
 - _ftime32_s function
 ms.assetid: d03080d9-a520-45be-aa65-504bdb197e8b
-ms.openlocfilehash: 696b461cdb6b8d58bb668b996a99c5d0bb774d6c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b45a22afc824a33e81170f954e6f99088b629f83
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62287687"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70956320"
 ---
-# <a name="ftimes-ftime32s-ftime64s"></a>_ftime_s, _ftime32_s, _ftime64_s
+# <a name="_ftime_s-_ftime32_s-_ftime64_s"></a>_ftime_s, _ftime32_s, _ftime64_s
 
-Geçerli saati alır. Bunlar sürümleridir [_ftime, _ftime32, _ftime64](ftime-ftime32-ftime64.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
+Geçerli saati alır. Bunlar, [CRT 'Daki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklandığı gibi güvenlik geliştirmeleriyle [_ftime, _ftime32, _ftime64](ftime-ftime32-ftime64.md) sürümleridir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -57,42 +60,42 @@ errno_t _ftime64_s( struct __timeb64 *timeptr );
 ### <a name="parameters"></a>Parametreler
 
 *timeptr*<br/>
-İşaretçi bir **_timeb**, **__timeb32**, veya **__timeb64** yapısı.
+**_Timeb**, **__timeb32**veya **__timeb64** yapısına yönelik işaretçi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa sıfır, bir hata kodu. Varsa *timeptr* olduğu **NULL**, dönüş değeri **EINVAL**.
+Başarılıysa sıfır, hata durumunda hata kodu. *Timeptr* **null**Ise, dönüş değeri **EINVAL**' dir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Ftime_s** işlevi, geçerli yerel saat alır ve işaret ettiği yapısında depolar *timeptr*. **_Timeb**, **__timeb32**, ve **__timeb64** yapıları SYS\Timeb.h içinde tanımlanır. Aşağıdaki tabloda listelenen dört alan içerirler.
+**_Ftime_s** işlevi, geçerli yerel saati alır ve *timeptr*tarafından işaret edilen yapıda depolar. **_Timeb**, **__timeb32**ve **__timeb64** yapıları sys\timeb.exe içinde tanımlanmıştır. Bunlar, aşağıdaki tabloda listelenen dört alan içerirler.
 
 |Alan|Açıklama|
 |-|-|
-|**dstflag**|Gün ışığından yararlanma saatine göre geçerli yerel saat dilimini ise sıfır olmayan. (Bkz [_tzset](tzset.md) gün ışığından yararlanma saatine nasıl belirlendiğini'nın açıklaması.)|
-|**millitm**|Saniyenin milisaniye cinsinden.|
-|**saat**|Saniye cinsinden gece yarısından itibaren saat (00: 00:00), 1 Ocak 1970, Eşgüdümlü Evrensel Saat (UTC).|
-|**saat dilimi**|Dakika cinsinden farkı westward, yerel saat ve UTC arasında taşıma. Değerini **saat dilimi** genel değişkenin değerini ayarlamak **_timezone** (bkz **_tzset**).|
+|**dstflag**|Yerel Saat dilimi için günışığından tasarrutasarrufu süresi geçerli ise sıfır dışında. (Gün ışığından yararlanma zamanının nasıl belirlendiği hakkında bir açıklama için bkz. [_tzset](tzset.md) .)|
+|**milimetre TM**|Saniyenin bir saniye cinsinden kesri.|
+|**saat**|Gece yarısından bu yana geçen süre (00:00:00), 1 Ocak 1970, Eşgüdümlü Evrensel Saat (UTC).|
+|**TI**|Dakikalar içinde, Westward, UTC ve yerel saat arasında hareket eden fark. **Saat dilimi** değeri, genel değişken **_saat dilimi** değerinden ayarlanır (bkz. **_tzset**).|
 
-**_Ftime64_s** kullanan işlevi **__timeb64** yapısı, 23:59:59, 31 Aralık, 3000, UTC; yukarı ifade edilecek tarihleri dosya oluşturma sağlarken **_ftime32_s** yalnızca 23:59:59 18 Ocak 2038, UTC tarihleri temsil eder. Gece yarısı, 1 Ocak 1970, tüm bu işlevler için tarih aralığının alt sınırdır.
+**__Timeb64** yapısını kullanan **_ftime64_s** işlevi, dosya oluşturma tarihlerinin 23:59:59, 31 Aralık 3000, UTC; tarihine kadar ifade etmesine olanak tanır. Ancak **_ftime32_s** yalnızca 23:59:59 tarihi 18 Ocak 2038, UTC olarak gösterir. Gece yarısı, 1 Ocak 1970, tüm bu işlevler için tarih aralığının alt sınırdır.
 
-**_Ftime_s** işlev, eşdeğer **_ftime64_s**, ve **_timeb** 64-bit birer pr'nin **_use_32bıt_tıme_t** olduğu tanımlanan, bu durumda eski davranış geçerli olur; **_ftime_s** bir 32-bit kullanır ve **_timeb** 32-bit saati içerir.
+**_Ftime_s** işlevi **_ftime64_s**ile eşdeğerdir ve **_Timeb** , **_Use_32bit_time_t** tanımlanmadığı ve bu durumda eski davranış etkin olduğu müddetçe 64 bitlik bir zaman içerir; **_ftime_s** 32 bitlik bir süre kullanır ve **_timeb** , 32 bit bir zaman içerir.
 
-**_ftime_s** kendi parametrelerini doğrular. Null bir işaretçi olarak geçirilmiş *timeptr*, işlev içinde açıklanan şekilde geçersiz parametre işleyicisi çağırır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütme devam etmesine izin verilirse işlev ayarlar **errno** için **EINVAL**.
+**_ftime_s** , parametrelerini doğrular. Null bir işaretçi *timeptr*olarak geçirilmemişse, Işlev [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, işlev **errno** ' ı **EINVAL**olarak ayarlar.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**_ftime_s**|\<sys/Types.h > ve \<sys/timeb.h >|
-|**_ftime32_s**|\<sys/Types.h > ve \<sys/timeb.h >|
-|**_ftime64_s**|\<sys/Types.h > ve \<sys/timeb.h >|
+|**_ftime_s**|\<sys/Types. h > ve \<sys/timeb. h >|
+|**_ftime32_s**|\<sys/Types. h > ve \<sys/timeb. h >|
+|**_ftime64_s**|\<sys/Types. h > ve \<sys/timeb. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 
-Tüm sürümleri [C çalışma zamanı kitaplıkları](../../c-runtime-library/crt-library-features.md).
+[C çalışma zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md)tüm sürümleri.
 
 ## <a name="example"></a>Örnek
 

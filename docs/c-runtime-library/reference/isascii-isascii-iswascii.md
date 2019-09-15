@@ -1,10 +1,10 @@
 ---
 title: isascii, __isascii, iswascii
 ms.date: 11/04/2016
-apiname:
+api_name:
 - iswascii
 - __isascii
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-string-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - iswascii
 - istascii
@@ -34,16 +37,16 @@ helpviewer_keywords:
 - istascii function
 - iswascii function
 ms.assetid: ba4325ad-7cb3-4fb9-b096-58906d67971a
-ms.openlocfilehash: d150e7bb335dc77ed86f445128eebf97b8be5ac3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ee20711628d5c2135b4ee1c37b87cb77f3610695
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62287475"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70954568"
 ---
-# <a name="isascii-isascii-iswascii"></a>isascii, __isascii, iswascii
+# <a name="isascii-__isascii-iswascii"></a>isascii, __isascii, iswascii
 
-Belirli bir karakter, ASCII karakter olup olmadığını belirler.
+Belirli bir karakterin ASCII karakteri olup olmadığını belirler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -61,32 +64,32 @@ int iswascii(
 ### <a name="parameters"></a>Parametreler
 
 *c*<br/>
-Test edilecek tamsayı.
+Sınanacak tamsayı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Yordamların her biri bu döndürür sıfır olmayan **c** bir ASCII karakter belirli bir gösterimidir. **__isascii** sıfır olmayan bir değer döndürür **c** bir ASCII karakter (aralığında 0x00 - 0x7F). **iswascii** sıfır olmayan bir değer döndürür **c** bir ASCII karakterinin geniş karakter gösterimidir. Bu yordamların her biri 0 döndürür **c** test koşulu karşılamayan.
+**C** , ASCII karakterinin belirli bir gösterimiyse, bu yordamların her biri sıfır dışında bir değer döndürür. **c** bir ASCII karakteriyse (0x00-0x7F aralığında) **__isascıı** sıfır dışında bir değer döndürür. **c** , ASCII karakterinin geniş karakterli bir gösterimiyse **ıswascıı** sıfır dışında bir değer döndürür. Bu yordamların her biri, **c** , test koşulunu karşılamadığı takdirde 0 döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Her ikisi de **__isascii** ve **iswascii** önişlemci makrosu _CTYPE_DISABLE_MACROS tanımlanmadığı sürece makroları olarak uygulanır.
+Önişlemci makrosu _CTYPE_DISABLE_MACROS tanımlanmadığı sürece hem **__isascıı** hem de **ıwascıı** makrolar olarak uygulanır.
 
-Geriye dönük uyumluluk için **isascii** yalnızca bir makro durumlarda uygulanan [ &#95; &#95;STDC&#95; &#95; ](../../preprocessor/predefined-macros.md) tanımlı değil veya; 0 olarak tanımlandığında aksi tanımsızdır.
+Geriye dönük uyumluluk için, **ısascıı** , yalnızca [ &#95; &#95;stdc&#95; ](../../preprocessor/predefined-macros.md) tanımlanmadığında veya 0 olarak tanımlanmışsa bir makro olarak uygulanır; Aksi takdirde, tanımsız olur.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
 |Tchar.h yordamı|_UNICODE ve _MBCS tanımlanmaz|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|--------------------------------------|--------------------|-----------------------|
-|**_istascii**|**__isascii**|**__isascii**|**iswascii**|
+|**_istascıı**|**__isascıı**|**__isascıı**|**iswascıı**|
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**isascii**, **__isascii**|C: \<ctype.h ><br /><br /> C++: \<cctype > veya \<ctype.h >|
-|**iswascii**|C: \<wctype.h >, \<ctype.h >, veya \<wchar.h ><br /><br /> C++: \<cwctype >, \<cctype >, \<wctype.h >, \<ctype.h >, veya \<wchar.h >|
+|**isascıı**, **__isascıı**|C: \<CType. h ><br /><br /> C++: \<cctype > veya \<CType. h >|
+|**iswascıı**|C: \<wctype. h >, \<CType. h > veya \<wchar. h ><br /><br /> C++: \<cwctype >, \<cctype >, \<wctype. h >, \<CType. h > veya \<wchar. h >|
 
-**İsascii**, **__isascii** ve **iswascii** Microsoft'a özgü işlevlerdir. Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+**Isascıı**, **__isascıı** ve **ıwascıı** işlevleri Microsoft 'a özgüdür. Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

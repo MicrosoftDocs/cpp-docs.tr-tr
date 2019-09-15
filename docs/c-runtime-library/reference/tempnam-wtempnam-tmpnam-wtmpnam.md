@@ -1,12 +1,12 @@
 ---
 title: _tempnam, _wtempnam, tmpnam, _wtmpnam
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _wtempnam
 - _wtmpnam
 - tmpnam
 - _tempnam
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -18,7 +18,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - wtempnam
 - _wtmpnam
@@ -40,12 +43,12 @@ helpviewer_keywords:
 - _wtmpnam function
 - _wtempnam function
 ms.assetid: 3ce75f0f-5e30-42a6-9791-8d7cbfe70fca
-ms.openlocfilehash: 0e8e11182948e9bccf1c55685cc7c3d55ff697c8
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 9fd1eb9f2f718afec5b7d5555145fcd7e5cc17cf
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69500762"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70957514"
 ---
 # <a name="_tempnam-_wtempnam-tmpnam-_wtmpnam"></a>_tempnam, _wtempnam, tmpnam, _wtmpnam
 
@@ -100,11 +103,11 @@ Bu işlevlerin her biri, şu anda mevcut olmayan bir dosyanın adını döndür�
 
 - TMP ortam değişkeni tanımlanmazsa veya var olmayan bir dizinin adına ayarlandıysa, **_tempnam** benzersiz adlar oluşturacak yol olarak *dır* parametresini kullanır.
 
-- TMP ortam değişkeni tanımlanmazsa veya var olmayan bir dizinin adına ayarlandıysa ve Dizin **null** ise ya da varolmayan bir dizinin adına ayarlandıysa, **_tempnam** geçerli çalışma dizinini gene olarak kullanır. benzersiz adları derecelendirin. Şu anda, hem TMP hem de *dir* , mevcut olmayan dizinlerin adlarını belirtmekte, **_tempnam** işlev çağrısı başarısız olur.
+- TMP ortam değişkeni tanımlanmazsa veya var olmayan bir dizinin adına ayarlandıysa *ve Dizin* **null** ise ya da varolmayan bir dizinin adına ayarlandıysa, **_tempnam** geçerli çalışma dizinini gene olarak kullanır. benzersiz adları derecelendirin. Şu anda, hem TMP hem de *dir* , mevcut olmayan dizinlerin adlarını belirtmekte, **_tempnam** işlev çağrısı başarısız olur.
 
 **_Tempnam** tarafından döndürülen ad, *ön ek* ve ardışık bir sayı olacak, belirtilen dizin için benzersiz bir dosya adı oluşturacak şekilde birleştirilir. **_tempnam** uzantısı olmayan dosya adları oluşturuyor. **_tempnam** dosya adı için alan ayırmak üzere [malloc](malloc.md) kullanır; program artık gerekli olmadığında bu alanı boşaltmaktan sorumludur.
 
-**_tempnam** ve **tmpnam** uygun şekilde çok baytlı karakter dize bağımsız değişkenlerini otomatik olarak işler ve işletim sisteminden alınan OEM kod sayfasına göre çok baytlı karakter dizilerini tanıyor. **_wtempnam** , **_tempnam**; öğesinin geniş karakterli bir sürümüdür **_wtempnam** bağımsız değişkenleri ve dönüş değeri geniş karakterli dizelerdir. _wtempnam ve **_tempnam** aynı şekilde davranır. Bu, **_wtempnam** çok baytlı karakter dizelerini işlemez. **_wtmpnam** , **tmpnam**öğesinin geniş karakterli bir sürümüdür. **_wtmpnam** öğesinin bağımsız değişkeni ve dönüş değeri geniş karakterli dizelerdir. _wtmpnam, çok baytlı karakter dizelerini işleyememesi dışında **_wtmpnam** ve **tmpnam** aynı şekilde davranır.
+**_tempnam** ve **tmpnam** uygun şekilde çok baytlı karakter dize bağımsız değişkenlerini otomatik olarak işler ve işletim sisteminden alınan OEM kod sayfasına göre çok baytlı karakter dizilerini tanıyor. **_wtempnam** , **_tempnam**; öğesinin geniş karakterli bir sürümüdür **_wtempnam** bağımsız değişkenleri ve dönüş değeri geniş karakterli dizelerdir. **_wtempnam** ve **_tempnam** aynı şekilde davranır. Bu, **_wtempnam** çok baytlı karakter dizelerini işlemez. **_wtmpnam** , **tmpnam**öğesinin geniş karakterli bir sürümüdür. **_wtmpnam** öğesinin bağımsız değişkeni ve dönüş değeri geniş karakterli dizelerdir. _wtmpnam, çok baytlı karakter dizelerini işleyememesi dışında **_wtmpnam** ve **tmpnam** **aynı şekilde davranır** .
 
 **_Debug** ve **_Crtdbg_map_ayırma** tanımlanmışsa, **_tempnam** ve **_wtempnam** , [_tempnam_dbg ve _wtempnam_dbg](tempnam-dbg-wtempnam-dbg.md)çağrılarıyla değiştirilmiştir.
 

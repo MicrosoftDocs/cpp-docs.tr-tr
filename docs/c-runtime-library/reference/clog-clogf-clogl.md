@@ -1,11 +1,11 @@
 ---
-title: clog, clogf clogl
+title: clog, clogf, clogl
 ms.date: 11/04/2016
-apiname:
+api_name:
 - clog
 - clogf
 - clogl
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - clog
 - clogf
@@ -30,16 +33,16 @@ helpviewer_keywords:
 - clogf function
 - clogl function
 ms.assetid: 870b9b0b-6618-46f3-bfcf-da595cbd5e18
-ms.openlocfilehash: fcbc9ba7984898d51f7a3d0beb5ef7c8b6d6892c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 76ee6e4e81c275c8cbed0f74914521c0b44499bb
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62340644"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70942916"
 ---
-# <a name="clog-clogf-clogl"></a>clog, clogf clogl
+# <a name="clog-clogf-clogl"></a>clog, clogf, clogl
 
-Negatif gerçek ekseni kesin bir dal ile karmaşık bir sayının doğal logaritmasını alır.
+Karmaşık bir sayının doğal logaritmasını alır ve bir dal negatif gerçek eksen üzerinde kesilir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -68,27 +71,27 @@ Logaritmanın tabanı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Doğal logaritmasını *z*. Sonuç gerçek ekseni de aralık sınırsız [-iπ, + iπ] sanal ekseni.
+*Z*'nin doğal logaritması. Sonuç, gerçek eksen ve [-iπ, + iπ] aralığında, sanal eksen üzerinde sınırsız olarak yapılır.
 
 Olası dönüş değerleri şunlardır:
 
 |z parametresi|Dönüş değeri|
 |-----------------|------------------|
-|Pozitif|Z 10 tabanındaki logaritmasını|
-|Sıfır|- ∞|
+|Pozitif|Z 'nin 10 tabanında logaritmasını|
+|Sıfırlama|- ∞|
 |Negatif|NaN|
 |NaN|NaN|
 |+ ∞|+ ∞|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Çünkü C++ aşırı yüklemesi, sağlayan yüklerini çağırabilirsiniz **clog** alan ve getiren **_Fcomplex** ve **_Lcomplex** değerleri. C programında **clog** her zaman alan ve döndüren bir **_Dcomplex** değeri.
+Aşırı C++ yüklemeye izin verdiğinden, **_Fcomplex** ve **_lcomplex** değerlerini alıp döndüren **CLOG** aşırı yüklerini çağırabilirsiniz. C programında **CLOG** her zaman bir **_dcomplex** değeri alır ve döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|C üstbilgisi|C++ üst bilgisi|
+|Yordam|C üstbilgisi|C++üst bilgi|
 |-------------|--------------|------------------|
-|**clog**, **clogf**, **clogl**|\<Complex.h >|\<ccomplex >|
+|**CLOG**, **clogf**, **clogl**|\<karmaşık. h >|\<ccomplex >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

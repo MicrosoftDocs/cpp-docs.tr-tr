@@ -1,9 +1,9 @@
 ---
 title: _calloc_dbg
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _calloc_dbg
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -14,7 +14,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _calloc_dbg
 - calloc_dbg
@@ -22,16 +25,16 @@ helpviewer_keywords:
 - _calloc_dbg function
 - calloc_dbg function
 ms.assetid: 7f62c42b-eb9f-4de5-87d0-df57036c87de
-ms.openlocfilehash: c525aa2f19b39ba3cb8304c59c96196707ad859c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: eab17348e473a4f642e784defe4569e0e799299e
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62340869"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70939315"
 ---
-# <a name="callocdbg"></a>_calloc_dbg
+# <a name="_calloc_dbg"></a>_calloc_dbg
 
-Hata ayıklama üst bilgisi için bir sayı ile ek alana yığın bellek bloğu ayırır ve arabellek (yalnızca hata ayıklama sürümü) üzerine yazılır.
+Bir hata ayıklama üst bilgisi ve üzerine yazma arabellekleri (yalnızca hata ayıklama sürümü) için ek alana sahip yığında dizi bellek bloğu ayırır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -47,50 +50,50 @@ void *_calloc_dbg(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sayı*<br/>
+*sayısından*<br/>
 İstenen bellek bloğu sayısı.
 
-*Boyutu*<br/>
-İstenen boyut (bayt) her bellek bloğu.
+*boyutla*<br/>
+Her bellek bloğunun istenen boyutu (bayt).
 
 *blockType*<br/>
-İstenen bellek bloğu türü: **_clıent_block** veya **_NORMAL_BLOCK**.
+İstenen bellek bloğu türü: **_Client_block** veya **_NORMAL_BLOCK**.
 
-Ayırma blok türleri ve bunların nasıl kullanıldığı hakkında daha fazla bilgi için bkz.[hata ayıklama öbek üzerindeki blokları türleri](/visualstudio/debugger/crt-debug-heap-details).
+Ayırma bloğu türleri ve bunların nasıl kullanıldığı hakkında bilgi için bkz.[hata ayıklama yığınındaki blok türleri](/visualstudio/debugger/crt-debug-heap-details).
 
-*Dosya adı*<br/>
-Ayırma işlemi istenen kaynak dosyasının adı işaretçi veya **NULL**.
+*kısaltın*<br/>
+Ayırma işlemi veya **null**için istenen kaynak dosyanın adı işaretçisi.
 
-*LineNumber*<br/>
-Satır numarası kaynak dosyada ayırma işlemi burada istendi veya **NULL**.
+*onayın*<br/>
+Kaynak dosyasındaki ayırma işleminin istendiği veya **null**olduğu satır numarası.
 
-*Filename* ve *linenumber* parametreleri yalnızca kullanılabilir olduğunda **_calloc_dbg** açıkça çağrılan veya [_CRTDBG_MAP_ALLOC](../../c-runtime-library/crtdbg-map-alloc.md)ön işlemci sabiti tanımlanmış.
+*Filename* ve *onayın* parametreleri yalnızca **_calloc_dbg** açıkça çağrıldığında veya [_crtdbg_map_ayırma](../../c-runtime-library/crtdbg-map-alloc.md) Önişlemci sabiti tanımlandığında kullanılabilir.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarıyla tamamlandığında, bu işlev bir işaretçi en son ayrılmış bellek bloğu kullanıcı bölümünü döndürür, yeni işleyici işlevi çağırır veya döndürür **NULL**. Dönüş davranışı eksiksiz bir açıklaması için Açıklamalar bölümüne bakın. Yeni işleyici işlevi nasıl kullanıldığı hakkında daha fazla bilgi için bkz. [calloc](calloc.md) işlevi.
+Başarıyla tamamlandığında, bu işlev son ayrılan bellek bloğunun Kullanıcı kısmına bir işaretçi döndürür, yeni işleyici işlevini çağırır veya **null**değerini döndürür. Dönüş davranışının ayrıntılı bir açıklaması için, açıklamalar bölümüne bakın. Yeni işleyici işlevinin nasıl kullanıldığı hakkında daha fazla bilgi için, [calloc](calloc.md) işlevine bakın.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_calloc_dbg** bir hata ayıklama sürümü [calloc](calloc.md) işlevi. Zaman [_DEBUG](../../c-runtime-library/debug.md) tanımlı değil, her çağrı **_calloc_dbg** çağrısı azaltılır **calloc**. Her ikisi de **calloc** ve **_calloc_dbg** tahsis *numarası* temel yığında bellek engeller ancak **_calloc_dbg** birkaç hata ayıklama sunar Özellikler:
+**_calloc_dbg** , [calloc](calloc.md) işlevinin bir hata ayıklama sürümüdür. [_Hata ayıklama](../../c-runtime-library/debug.md) tanımlanmadığında, **_calloc_dbg** öğesine yapılan her çağrı, **calloc**çağrısına düşürülür. Hem **calloc** hem de **_calloc_dbg** , temel yığında *sayı* bellek blokları ayırır, ancak **_calloc_dbg** çeşitli hata ayıklama özellikleri sunar:
 
-- Her iki tarafında sızıntıları için test edilecek blok kullanıcı kısmı, arabellek.
+- Sızıntıların test olması için bloğun Kullanıcı bölümünün her iki tarafında da arabellekler.
 
-- Belirli bir ayırma türleri izlemek için bir blok türü parametresi.
+- Belirli ayırma türlerini izlemek için bir blok türü parametresi.
 
-- *filename*/*linenumber* ayırma isteklerini kökenini belirlemek için bilgi.
+- /ayırma isteklerinin kaynağını belirleyebilmek için dosya adı*onayın* bilgileri.
 
-**_calloc_dbg** istenen biraz daha fazla alan ile her bellek bloğu ayırır *boyutu*. Ek alan, hata ayıklama bellek bloklarını bağlantı ve uygulama ile hata ayıklama üstbilgi bilgileri sağlayın ve arabellek üzerine yazmak için hata ayıklama yığını Yöneticisi tarafından kullanılır. Blok atandığında, blok kullanıcı bölümünü 0xCD değeri ile doldurulur ve 0xFD ile doldurulmuş her üzerine yaz arabellek.
+**_calloc_dbg** her bir bellek bloğunu istenen *boyuttan*biraz daha fazla alanla ayırır. Hata ayıklama bellek bloklarını bağlamak ve uygulamanın hata ayıklama üstbilgi bilgilerini ve üzerine yazma arabelleğini sağlamak için ek alan, hata ayıklama yığın Yöneticisi tarafından kullanılır. Blok ayrıldığında, bloğun Kullanıcı bölümü, 0xCD değeri ile doldurulur ve üzerine yazma arabelleklerinin her biri 0xFD ile doldurulur.
 
-**_calloc_dbg** ayarlar **errno** için **ENOMEM** bir bellek ayırma başarısız olursa; **EINVAL** (daha önce bahsedilen ek yük dahil) ihtiyaç duyulan bellek miktarı aşması durumunda döndürülen **_HEAP_MAXREQ**. Bu ve diğer hata kodları hakkında daha fazla bilgi için bkz: [errno _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+**_calloc_dbg** bir bellek ayırma başarısız olursa **errno** değerini **ENOMEM** olarak ayarlar; **EINVAL** , gereken bellek miktarı (daha önce bahsedilen ek yük dahil) **_Heap_maxreq**değerini aşarsa döndürülür. Bu ve diğer hata kodları hakkında daha fazla bilgi için bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-Nasıl bellek blokları ayrılan, başlatılır ve taban yığının hata ayıklama sürümünde yönetilen hakkında daha fazla bilgi için bkz: [CRT hata ayıklama öbeği ayrıntıları](/visualstudio/debugger/crt-debug-heap-details). Bir uygulamanın hata ayıklama derlemesinde hata ayıklama sürümü yerine standart yığın işlev çağırma arasındaki farklar hakkında daha fazla bilgi için bkz. [hata ayıklama sürümleri, yığın ayırma işlevleri](/visualstudio/debugger/debug-versions-of-heap-allocation-functions).
+Bellek bloklarının taban yığının hata ayıklama sürümünde nasıl ayrıldığı, başlatıldığı ve yönetildiği hakkında bilgi için bkz. [CRT hata ayıklama yığını ayrıntıları](/visualstudio/debugger/crt-debug-heap-details). Bir uygulamanın hata ayıklama sürümünde bir standart yığın işlevi çağırma ile ilgili hata ayıklama sürümü arasındaki farklar hakkında daha fazla bilgi için bkz. [yığın ayırma Işlevlerinin hata ayıklama sürümleri](/visualstudio/debugger/debug-versions-of-heap-allocation-functions).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_calloc_dbg**|\<crtdbg.h >|
+|**_calloc_dbg**|\<Crtdbg. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

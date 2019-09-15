@@ -1,10 +1,10 @@
 ---
 title: getc, getwc
 ms.date: 11/04/2016
-apiname:
+api_name:
 - getwc
 - getc
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _gettc
 - getwc
@@ -32,16 +35,16 @@ helpviewer_keywords:
 - getwc function
 - gettc function
 ms.assetid: 354ef514-d0c7-404b-92f5-995f6a834bb3
-ms.openlocfilehash: bbaee79eac6802959a11f7f1ba30eaf590ecf2f6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ceb3ca117271e7074c6cb72c9c1f9e74ebe3bc10
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62331876"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70955488"
 ---
 # <a name="getc-getwc"></a>getc, getwc
 
-Bir karakter, bir akıştan okuyun.
+Akıştan bir karakter okur.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -56,31 +59,31 @@ wint_t getwc(
 
 ### <a name="parameters"></a>Parametreler
 
-*Stream*<br/>
+*ka*<br/>
 Giriş akışı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Okuma karakteri döndürür. Bir okuma hatası ya da dosya sonu koşulu belirtmek üzere **getc** döndürür **EOF**, ve **getwc** döndürür **WEOF**. İçin **getc**, kullanın **ferror** veya **feof** bir hata veya dosya sonunu denetlemek için. Varsa *stream* olduğu **NULL**, **getc** ve **getwc** açıklandığı gibi geçersiz parametre işleyicisini çağırır [parametresi Doğrulama](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse, bu işlevler döndürür **EOF** (veya **WEOF** için **getwc**) ayarlayıp **errno** için  **EINVAL**.
+Okunan karakteri döndürür. Bir okuma hatası veya dosya sonu koşulu belirtmek için, **getc** **EOF**döndürür ve **getwc** , **weof**döndürür. **Getc**için, bir hatayı denetlemek veya dosya sonu için **ferror** veya **feof** kullanın. *Stream* **null**ise, **getc** ve **getwc** [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **EOF** (veya **getwc**için **weof** ) döndürür ve **errno** , **EINVAL**olarak ayarlanır.
 
-Bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) bu ve diğer hata kodları hakkında daha fazla bilgi için.
+Bu ve diğer hata kodları hakkında daha fazla bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) .
 
 ## <a name="remarks"></a>Açıklamalar
 
-Her bir rutin tek bir karakter bir dosyadan geçerli konumu ve artışlarla ilgili dosya işaretleyicisini (tanımlıysa) sonraki karaktere işaret edecek şekilde okur. İle ilişkili dosya *stream*.
+Her yordam, geçerli konumdaki bir dosyadan tek bir karakteri okur ve ilgili dosya işaretçisini (tanımlanmışsa) sonraki karakteri işaret etmek üzere arttırır. Dosya *akışıyla*ilişkilendirildi.
 
-Bu işlevler, çağıran iş parçacığının kilitler ve bu nedenle iş parçacığı bakımından güvenlidir. Kilitleme yapılmayan bir sürüm için bkz. [_getc_nolock, _getwc_nolock](getc-nolock-getwc-nolock.md).
+Bu işlevler çağıran iş parçacığını kilitler ve bu nedenle iş parçacığı güvenlidir. Kilitleme dışı bir sürüm için bkz. [_getc_nolock, _getwc_nolock](getc-nolock-getwc-nolock.md).
 
-Ardından yordama özel açıklamalar gelir.
+Rutin olarak özgü notlar izler.
 
 |Yordam|Açıklamalar|
 |-------------|-------------|
-|**getc**|Aynı **fgetc**, ancak uygulanan bir işlev ve makro olarak.|
-|**getwc**|Geniş karakter sürümünü **getc**. Çok baytlı bir karakter veya geniş bir karakter olup olmadığına göre okur *stream* metin modunda veya İkili modda açılmış.|
+|**getc**|**Fgetc**ile aynıdır, ancak bir işlev olarak ve bir makro olarak uygulanır.|
+|**getwc**|**Getc**'nin geniş karakterli sürümü. *Akışın* metin modunda veya ikili modda açılıp açılmayacağı için çok baytlı bir karakter veya geniş bir karakter okur.|
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_gettc**|**getc**|**getc**|**getwc**|
 
@@ -88,8 +91,8 @@ Ardından yordama özel açıklamalar gelir.
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**getc**|\<stdio.h >|
-|**getwc**|\<stdio.h > veya \<wchar.h >|
+|**getc**|\<stdio. h >|
+|**getwc**|\<stdio. h > veya \<wchar. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -130,7 +133,7 @@ int main()
 }
 ```
 
-### <a name="input-crtgetctxt"></a>Giriş: crt_getc.txt
+### <a name="input-crt_getctxt"></a>Giriş: crt_getc. txt
 
 ```Input
 Line one.
@@ -145,7 +148,7 @@ Input was: Line one.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Stream g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [fgetc, fgetwc](fgetc-fgetwc.md)<br/>
 [_getch, _getwch](getch-getwch.md)<br/>
 [putc, putwc](putc-putwc.md)<br/>

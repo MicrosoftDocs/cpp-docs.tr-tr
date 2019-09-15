@@ -1,9 +1,9 @@
 ---
 title: _CrtCheckMemory
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _CrtCheckMemory
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -14,7 +14,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - CrtCheckMemory
 - _CrtCheckMemory
@@ -22,16 +25,16 @@ helpviewer_keywords:
 - _CrtCheckMemory function
 - CrtCheckMemory function
 ms.assetid: 457cc72e-60fd-4177-ab5c-6ae26a420765
-ms.openlocfilehash: cb39a76c140934dabdd1269c02aba6018691f917
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7e458825a81b7032310458ccda52d9299e126a35
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62340397"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70938869"
 ---
-# <a name="crtcheckmemory"></a>_CrtCheckMemory
+# <a name="_crtcheckmemory"></a>_CrtCheckMemory
 
-Hata ayıklama yığınındaki (yalnızca hata ayıklama sürümü) ayrılan bellek blokları bütünlüğünü doğrular.
+Hata ayıklama yığınında ayrılan bellek bloklarının bütünlüğünü onaylar (yalnızca hata ayıklama sürümü).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -42,37 +45,37 @@ int _CrtCheckMemory( void );
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, **_CrtCheckMemory** TRUE; Aksi takdirde işlev FALSE döndürür.
+Başarılı olursa, **_Crtcheckmemory** doğru değerini döndürür; Aksi takdirde, işlev FALSE döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_CrtCheckMemory** işlevi, temel alınan taban yığının doğrulanıyor ve her bellek bloğu incelemek hata ayıklama yığını Yöneticisi tarafından ayrılan bellek doğrular. Bir hata veya bellek tutarsızlık temel alınan taban yığının, hata ayıklama üst bilgi bilgileri veya üzerine yazma arabelleği karşılaşılırsa **_CrtCheckMemory** hata koşulu tanımlayan bilgileri içeren bir hata ayıklama raporunu oluşturur. Zaman [_DEBUG](../../c-runtime-library/debug.md) tanımlı değil, çağrılar **_CrtCheckMemory** ön işleme sırasında kaldırılır.
+**_Crtcheckmemory** işlevi, temeldeki temel yığını doğrulayarak ve her bellek bloğunu inceleyerek hata ayıklama yığın Yöneticisi tarafından ayrılan belleği doğrular. Temel alınan temel yığında bir hata veya bellek tutarsızlığına, hata ayıklama üstbilgi bilgilerine veya üzerine yazma arabelleklerine rastlıyorsanız, **_Crtcheckmemory** , hata koşulunu açıklayan bilgiler içeren bir hata ayıklama raporu oluşturur. [_Hata ayıklama](../../c-runtime-library/debug.md) tanımlanmadığında, **_Crtcheckmemory** çağrıları ön işleme sırasında kaldırılır.
 
-Davranışını **_CrtCheckMemory** bit alanlarını ayarlayarak denetlenebilir [_crtDbgFlag](../../c-runtime-library/crtdbgflag.md) kullanarak bayrak [_CrtSetDbgFlag](crtsetdbgflag.md) işlevi. Kapatma **_CRTDBG_CHECK_ALWAYS_DF** bit alanı üzerinde sonuçlarında **_CrtCheckMemory** bir bellek ayırma işlemi her istendiğinde çağrılıyor. Bu yöntem yürütme yavaşlatır, ancak hataları hızlı bir şekilde yakalamak için yararlıdır. Kapatma **_CRTDBG_ALLOC_MEM_DF** bit alanı OFF nedenleri **_CrtCheckMemory** değil yığın doğrulayın ve hemen döndürmek için **TRUE**.
+**_Crtcheckmemory** davranışı, _Crtsetdbgflag Işlevi kullanılarak [_crtDbgFlag](../../c-runtime-library/crtdbgflag.md) bayrağının bit alanları ayarlanarak denetlenebilir. [](crtsetdbgflag.md) **_Crtdbg_check_always_df** bit alanını, bellek ayırma işlemi Istenilişinde **_Crtcheckmemory** ile sonuçlanıyor. Bu yöntem yürütmeyi yavaşlatır, ancak hataları hızlı bir şekilde yakalamak yararlı olur. **_Crtdbg_alloc_mem_df** BIT alanı kapanmasının açılması, **_Crtcheckmemory** 'ın yığını doğrulaması ve hemen **doğru**dönmesini sağlar.
 
-Bu işlev döndürdüğü için **TRUE** veya **FALSE**, onu birine geçirilebilir [_ASSERT](assert-asserte-assert-expr-macros.md) makroları basit bir hata ayıklama hata işleme mekanizması oluşturmak için. Bozulma i öbeğe algılanırsa aşağıdaki örnekte, bir onaylama işlemi hatasına neden olur:
+Bu işlev **true** veya **false**döndürdüğünden, basit bir hata ayıklama hata Işleme mekanizması oluşturmak için [_onaylama](assert-asserte-assert-expr-macros.md) makrolarından birine geçirilebilir. Aşağıdaki örnek, yığında bozulma algılanırsa bir onaylama hatasına neden olur:
 
 ```C
 _ASSERTE( _CrtCheckMemory( ) );
 ```
 
-Hakkında daha fazla bilgi için **_CrtCheckMemory** diğer hata ayıklama işlevleri ile kullanılabilmesi için bkz: [yığın durumu raporlama işlevleri](/visualstudio/debugger/crt-debug-heap-details). Bellek yönetimi ve hata ayıklama yığınındaki genel bakış için bkz: [CRT hata ayıklama öbeği ayrıntıları](/visualstudio/debugger/crt-debug-heap-details).
+**_Crtcheckmemory** 'ın diğer hata ayıklama işlevleriyle nasıl kullanılabileceği hakkında daha fazla bilgi için bkz. [yığın durum raporlama işlevleri](/visualstudio/debugger/crt-debug-heap-details). Bellek yönetimine ve hata ayıklama yığınına genel bakış için bkz. [CRT hata ayıklama yığını ayrıntıları](/visualstudio/debugger/crt-debug-heap-details).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_CrtCheckMemory**|\<crtdbg.h >|
+|**_CrtCheckMemory**|\<Crtdbg. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 
-Hata ayıklama sürümleri [C çalışma zamanı kitaplıkları](../../c-runtime-library/crt-library-features.md) yalnızca.
+Yalnızca [C çalışma zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md) sürümlerini ayıklayın.
 
 ## <a name="example"></a>Örnek
 
-Nasıl kullanılacağını gösteren bir örnek **_CrtCheckMemory**, bkz: [crt_dbg1](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/crt_dbg1).
+**_Crtcheckmemory**kullanımına ilişkin bir örnek için bkz. [crt_dbg1](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/crt_dbg1).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

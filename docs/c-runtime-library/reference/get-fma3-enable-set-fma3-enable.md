@@ -1,15 +1,18 @@
 ---
 title: _get_FMA3_enable, _set_FMA3_enable
 ms.date: 04/05/2018
-apiname:
+api_name:
 - _get_FMA3_enable
 - _set_FMA3_enable
-apilocation:
+api_location:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-runtime-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _get_FMA3_enable
 - _set_FMA3_enable
@@ -19,16 +22,16 @@ helpviewer_keywords:
 - _get_FMA3_enable
 - _set_FMA3_enable
 ms.assetid: 4c1dc4bc-e86b-451b-9211-5a2ba6c98ee4
-ms.openlocfilehash: 19eabc3b5a11246d5b0056bdafbb169e2a7de9f2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e18db90779ed59a6ca6976f69a5993d94d61c6bc
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62332201"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70955930"
 ---
-# <a name="getfma3enable-setfma3enable"></a>_get_FMA3_enable, _set_FMA3_enable
+# <a name="_get_fma3_enable-_set_fma3_enable"></a>_get_FMA3_enable, _set_FMA3_enable
 
-Aşkın matematik kitaplığı kayan nokta işlevleri FMA3 yönergeleri derlenmiş kodda X64 için kullanıp kullanmadığını belirten bir bayrak alır veya ayarlar platformlar.
+Hareketli kayan nokta kitaplığı işlevlerinin x64 platformları için derlenmiş kodda FMA3 yönergelerini kullanıp kullanmadığını belirten bir bayrak alır veya ayarlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -39,28 +42,28 @@ int _get_FMA3_enable();
 
 ### <a name="parameters"></a>Parametreler
 
-*Bayrağı*<br/>
-Aşkın matematik kitaplığı kayan nokta işlevleri X64 FMA3 uygulamalarını etkinleştirmek için 1 olarak ayarlayın platformları veya FMA3 yönergeleri kullanmayın uygulamaları kullanmak için 0.
+*bayrağıyla*<br/>
+X64 platformlarındaki kayan nokta kitaplığı işlevlerinin FMA3 uygulamalarını etkinleştirmek için 1 olarak veya FMA3 yönergelerini kullanmayan uygulamaları kullanmak için 0 olarak ayarlayın.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Aşkın matematik kitaplığı kayan nokta işlevleri FMA3 uygulamaları etkinleştirilirse sıfır olmayan değer. Aksi takdirde sıfır.
+Kayan nokta kitaplığı işlevlerinin FMA3 uygulamaları etkinleştirilmişse sıfır olmayan bir değer. Aksi takdirde, sıfır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kullanma **_set_FMA3_enable** etkinleştirme veya devre dışı FMA3 aşkın matematik kayan nokta işlevleri CRT Kitaplığı'ndaki yönergeleri kullanımını işlevi. Dönüş değeri kullan uygulamasında değişiklikten sonra yansıtır. CPU FMA3 talimatları desteklemiyor, bu işlevi kitaplıkta etkinleştiremez ve döndürülen değer sıfırdır. Kullanım **_get_FMA3_enable** kitaplığı geçerli durumunu almak için. Varsayılan olarak X64 platformlar, CRT başlatma kodunu CPU FMA3 yönergeleri destekler ve sağlar veya algılar kitaplığı FMA3 uygulamalarında devre dışı bırakır olup olmadığını.
+CRT kitaplığındaki tranmanzara Math kayan nokta işlevlerinde FMA3 yönergelerinin kullanımını etkinleştirmek veya devre dışı bırakmak için **_set_FMA3_enable** işlevini kullanın. Dönüş değeri, değişiklikten sonra kullanımda olan uygulamayı yansıtır. CPU FMA3 yönergelerini desteklemiyorsa, bu işlev kitaplıkta etkinleştirilemez ve dönüş değeri sıfırdır. Kitaplığın geçerli durumunu almak için **_get_FMA3_enable** kullanın. Varsayılan olarak, x64 platformlarında CRT başlangıç kodu, CPU 'nun FMA3 talimatlarını destekleyip desteklemediğini algılar ve kitaplıktaki FMA3 uygulamalarını etkinleştirip devre dışı bırakır.
 
-FMA3 uygulamaları farklı algoritmalar kullandığından, gözlemlenebilir FMA3 uygulamaları etkin veya devre dışı olduğunda veya FMA3 desteklemez veya bilgisayarlar arasında hesaplamalar sonucunu küçük farklılıklar olabilir. Daha fazla bilgi için [kayan nokta geçiş sorunları](../../porting/floating-point-migration-issues.md).
+FMA3 uygulamaları farklı algoritmalar kullandığından, FMA3 uygulamaları etkinleştirildiğinde veya devre dışı bırakıldığında ya da FMA3 desteği olmayan bilgisayarlar arasında hesaplamalar sonucu içindeki hafif farklar observable olabilir. Daha fazla bilgi için bkz. [kayan nokta geçiş sorunları](../../porting/floating-point-migration-issues.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
-**_Set_FMA3_enable** ve **_get_FMA3_enable** işlevleri bulunan ve yalnızca içinde X64 CRT sürümleri.
+**_Set_FMA3_enable** ve **_GET_FMA3_ENABLE** Işlevleri yalnızca CRT 'nin x64 sürümlerinde kullanılabilir.
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_set_FMA3_enable**, **_get_FMA3_enable**| C: \<math.h ><br />C++: \<cmath > veya \<math.h >|
+|**_set_FMA3_enable**, **_get_FMA3_enable**| C: \<Math. h ><br />C++: \<cmath > veya \<Math. h >|
 
-**_Set_FMA3_enable** ve **_get_FMA3_enable** Microsoft'a özgü işlevlerdir. Uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+**_Set_FMA3_enable** ve **_get_FMA3_enable** işlevleri Microsoft 'a özgüdür. Uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

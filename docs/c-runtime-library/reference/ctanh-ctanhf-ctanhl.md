@@ -1,11 +1,11 @@
 ---
 title: ctanh, ctanhf, ctanhl
 ms.date: 11/04/2016
-apiname:
+api_name:
 - ctanh
 - ctanhf
 - ctanhl
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - ctanh
 - ctanhf
@@ -30,16 +33,16 @@ helpviewer_keywords:
 - ctanhl function
 - ctanhf function
 ms.assetid: 807f2cd1-8740-4988-afff-5911c346385b
-ms.openlocfilehash: f63329e45fdcd3a26d613f73cd911fdf6fb10401
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: dae59dcd4a71045b27c6ba9501580bf981b9828f
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62288946"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70941959"
 ---
 # <a name="ctanh-ctanhf-ctanhl"></a>ctanh, ctanhf, ctanhl
 
-Karmaşık bir sayıyı karmaşık hiperbolik tanjantını hesaplar.
+Karmaşık bir sayının karmaşık hiperbolik tanjantını hesaplar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -64,26 +67,26 @@ _Lcomplex ctanhl(
 ### <a name="parameters"></a>Parametreler
 
 *z*<br/>
-Radyan cinsinden açı temsil eden bir karmaşık sayı.
+Radyan cinsinden bir açıyı temsil eden karmaşık bir sayı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Karmaşık hiperbolik tanjantını *z*.
+*Z*'nin karmaşık hiperbolik tanjantı.
 
-|Giriş|SEH özel durumu|**_matherr** özel durumu|
+|Giriş|SEH özel durumu|**_matherr** Duruma|
 |-----------|-------------------|--------------------------|
 |± ∞, QNAN, IND|yok|_DOMAIN|
 |± ∞ (tan, tanf)|GEÇERSİZ|_DOMAIN|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Çünkü C++ aşırı yüklemesi, sağlayan yüklerini çağırabilirsiniz **ctanh** alan ve getiren **_Fcomplex** ve **_Lcomplex** değerleri. C programında **ctanh** her zaman alan ve döndüren bir **_Dcomplex** değeri.
+Aşırı C++ yüklemeye izin verdiğinden, **_Fcomplex** ve **_lcomplex** değerlerini alan ve döndüren **ctanh** 'nin aşırı yüklerini çağırabilirsiniz. C programında **ctanh** her zaman bir **_dcomplex** değeri alır ve döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|C üstbilgisi|C++ üst bilgisi|
+|Yordam|C üstbilgisi|C++üst bilgi|
 |-------------|--------------|------------------|
-|**ctanh**,               **ctanhf**, **ctanhl**|\<Complex.h >|\<ccomplex >|
+|**ctanh**, **ctanhf**, **ctanhl**|\<karmaşık. h >|\<ccomplex >|
 
 Uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

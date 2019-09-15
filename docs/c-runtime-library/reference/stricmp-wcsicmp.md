@@ -1,10 +1,10 @@
 ---
 title: stricmp, wcsicmp
 ms.date: 11/04/2016
-apiname:
+api_name:
 - stricmp
 - wcsicmp
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - stricmp
 - wcsicmp
@@ -23,13 +26,13 @@ helpviewer_keywords:
 - stricmp function
 - wcsicmp function
 ms.assetid: 2e3c6703-2635-4961-a253-e2c4c5029ed8
-ms.openlocfilehash: ff3e160af253765fbafc7c3ee0082639c231a1e7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8288aa8c9b631b9c4d5317fb13fdbbfcd9cad40a
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62353657"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70958123"
 ---
 # <a name="stricmp-wcsicmp"></a>stricmp, wcsicmp
 
-Bu POSIX işlevler kullanım dışı bırakılmıştır. ISO kullanın C++ uyumluluğunu [_stricmp, _wcsicmp, _mbsicmp, _stricmp_l, _wcsicmp_l, _mbsicmp_l](stricmp-wcsicmp-mbsicmp-stricmp-l-wcsicmp-l-mbsicmp-l.md) yerine.
+Bu POSIX işlevleri kullanım dışıdır. Bunun yerine ISO C++ uyumlu [_stricmp, _wcsıcmp, _mbsıcmp, _stricmp_l, _wcsicmp_l, _mbsicmp_l](stricmp-wcsicmp-mbsicmp-stricmp-l-wcsicmp-l-mbsicmp-l.md) kullanın.

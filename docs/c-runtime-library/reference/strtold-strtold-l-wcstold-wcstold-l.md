@@ -1,12 +1,12 @@
 ---
 title: strtold, _strtold_l, wcstold, _wcstold_l
 ms.date: 04/05/2018
-apiname:
+api_name:
 - wcstold
 - strtold
 - _strtold_l
 - _wcstold_l
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -18,7 +18,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-convert-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _tcstold_l
 - _wcstold_l
@@ -27,16 +30,16 @@ f1_keywords:
 - _strtold_l
 - wcstold
 ms.assetid: 928c0c9a-bc49-445b-8822-100eb5954115
-ms.openlocfilehash: dcf1eca5b163c8553b43d747d53537ec424a793c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f1a8bc385072f110832788447bfa248bc12b3663
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62269195"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70957705"
 ---
-# <a name="strtold-strtoldl-wcstold-wcstoldl"></a>strtold, _strtold_l, wcstold, _wcstold_l
+# <a name="strtold-_strtold_l-wcstold-_wcstold_l"></a>strtold, _strtold_l, wcstold, _wcstold_l
 
-Dizeleri bir uzun çift duyarlıklı kayan noktalı değere dönüştürür.
+Dizeleri uzun çift duyarlıklı kayan noktalı değere dönüştürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -69,44 +72,44 @@ Dönüştürülecek null ile sonlandırılmış dize.
 *endptr*<br/>
 Taramayı durduran karakter işaretçisi.
 
-*Yerel ayar*<br/>
+*ayarlar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**strtold** kayan nokta sayı değerini döndürür bir **uzun** **çift**, gösterimin bir taşma neden olduğu zaman dışında — bu durumda, işlev +/-döndürür**HUGE_VALL**. İşaretini **HUGE_VALL** temsil edilemeyen değerin işareti ile eşleşir. **strtold** dönüştürme gerçekleştirilemeyiorsa veya bir Yetersizlik durumu oluşursa 0 döndürür.
+**strma** , kayan noktalı sayının değerini **uzun** bir **Double**olarak döndürür; bu durumda, işlevin bir taşmaya neden olacağı durumlar dışında, işlev +/-**HUGE_VALL**döndürür. **HUGE_VALL** işareti, gösterilemeyen değerin işaretiyle eşleşir. Hiçbir dönüştürme gerçekleştirilemiyorsa veya bir yetersiz kalması durumunda **strbildirilir** 0 döndürür.
 
-**wcstold** çok öğesine değerleri döndürür **strtold**. Her iki işlev için **errno** ayarlanır **ERANGE** taşma veya yetersiz gelme oluşması ve açıklandığı gibi geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md).
+**wcstold** , **strıse**'ye bir değer döndürür. Her iki işlev için de **errno** , taşma veya yetersiz kalması durumunda ve [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisi çağrıldığında **ERANGE** olarak ayarlanır.
 
-Dönüş kodları hakkında daha fazla bilgi için bkz. [errno _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Dönüş kodları hakkında daha fazla bilgi için bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Giriş dizesindeki her işlevi dönüştürür *strSource* için bir **uzun** **çift**. **Strtold** işlevi dizesini okumayı durdurur *strSource* bir sayının parçası olarak tanıyamadığı ilk karakterde. Bu sondaki boş karakter olabilir. Geniş karakter sürümünü **strtold** olduğu **wcstold**; *strSource* geniş karakterli bir dizedir. Aksi takdirde, bu işlevler aynı şekilde davranır.
+Her işlev, *strSource* giriş dizesini **uzun** bir **Double**'a dönüştürür. **Strsöylefunction** , bir sayının parçası olarak tanıyamadığı Ilk karakterde *strSource* dize okumasını durduruyor. Bu, Sonlandırıcı null karakteri olabilir. **Stristeninin** geniş karakterli sürümü **wcstold**; *strSource* bağımsız değişkeni geniş karakterli bir dizedir. Aksi takdirde, bu işlevler aynı şekilde davranır.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|**_tcstold**|**strtold**|**strtold**|**wcstold**|
+|**_tcstold**|**strsöylemi**|**strsöylemi**|**wcstold**|
 |**_tcstold_l**|**_strtold_l**|**_strtold_l**|**_wcstold_l**|
 
-**Lc_numerıc** tanıma öğesindeki taban karakterin tanınmasını geçerli yerel ayar kategori ayarı belirler *strSource*. Daha fazla bilgi için [setlocale, _wsetlocale](setlocale-wsetlocale.md). İşlevlerin **_l** soneki geçerli yerel ayarı kullanır; **_strtold_l** ve **_wcstold_l** özdeş **_strtold** ve **_wcstold** bunun yerine yerel ayarı kullanmaları dışında bu geçirildi. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
+Geçerli yerel ayarın **LC_NUMERIC** kategori ayarı, *strSource*içindeki taban karakterinin tanınmasını belirler. Daha fazla bilgi için bkz. [setlocale, _wsetlocale](setlocale-wsetlocale.md). **_L** soneki olmayan işlevler geçerli yerel ayarı kullanır; **_strtold_l** ve **_wcstold_l** , geçirilen yerel ayarı kullanmaları dışında **_stristenve** **_wcstold** ile aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
-Varsa *endptr* değil **NULL**, taramayı durduran karaktere bir işaretçi tarafından işaret edilen konumda depolanır *endptr*. Dönüştürme gerçekleştirilemezse (geçerli hiç basamak bulunamamış veya geçersiz bir taban belirtilmişse), değeri *strSource* tarafından işaret edilen konumda depolanır *endptr*.
+*Endptr* **null**değilse, taramayı durduran karaktere yönelik bir işaretçi, *endptr*tarafından işaret edilen konumda depolanır. Hiçbir dönüştürme gerçekleştirilemiyorsa (geçerli basamak bulunamadı veya geçersiz bir taban belirtilmişse), *strSource* değeri *endptr*tarafından işaret edilen konumda depolanır.
 
-**strtold** bekliyor *strSource* aşağıdaki biçimde bir dizeye işaret edecek şekilde:
+**strbildirilir** , *strSource* 'un aşağıdaki biçimdeki bir dizeyi işaret edilmesini bekler:
 
-[*whitespace*] [*sign*] [*digits*] [.*digits*] [ {**d** &#124; **D** &#124; **e** &#124; **E**}[*sign*]*digits*]
+[*boşluk*] [*imzala*] [*basamaklar*] [. *basamaklar*] [{**d** &#124; **d** &#124; **e** &#124; **e**} [*oturum açma*]*basamakları*]
 
-A *boşluk* yoksayılan boşluk ve sekme karakterlerinden oluşabilir *oturum* ya da artı (**+**) veya eksidir (**-**); ve *basamak* bir veya daha fazla ondalık basamaktır. Herhangi bir basamak taban karakterden önce görünüyorsa, en az bir taban karakterden sonra yer almalıdır. Ondalık basamak bir tanıtıcı harften oluşan bir üs gelebilir (**d**, **D**, **e**, veya **E**) ve isteğe bağlı olarak işaretli tamsayı. Üstel bir parça ya da bir taban karakter görünürse, taban karakterin dizedeki son basamağı izlediği varsayılır. Bu forma uymayan ilk karakter taramayı durdurur.
+Boşluk ve sekme karakterlerinden oluşan bir *boşluk* , yok sayılır; *işareti* artı ( **+** ) ya da eksi ( **-** ); *rakamlar* bir veya daha fazla ondalık basamak. Taban karakterinden önce bir basamak görünmezse, en az bir sayı, taban karakterinden sonra görünmelidir. Ondalık basamakların ardından, giriş harfinden (**d**, **d**, **e**veya **e**) ve isteğe bağlı olarak işaretli bir tamsayıdan oluşan bir üs gelebilir. Ne bir üs bölümü ne de bir taban karakteri görünmüyorsa, dizedeki son basamağı izlemek için bir taban karakteri varsayılır. Bu forma uymayan ilk karakter taramayı durduruyor.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**strtold**, **_strtold_l**|\<stdlib.h >|
-|**wcstold**, **_wcstold_l**|\<stdlib.h > veya \<wchar.h >|
+|**strbildirilir**, **_strtold_l**|\<Stdlib. h >|
+|**wcstold**, **_wcstold_l**|\<Stdlib. h > veya \<wchar. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

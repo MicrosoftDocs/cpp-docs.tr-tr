@@ -1,11 +1,11 @@
 ---
 title: localtime, _localtime32, _localtime64
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _localtime64
 - _localtime32
 - localtime
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-time-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - localtime64
 - _localtime64
@@ -32,16 +35,16 @@ helpviewer_keywords:
 - localtime function
 - time, converting values
 ms.assetid: 4260ec3d-43ee-4538-b998-402a282bb9b8
-ms.openlocfilehash: d34a45ff20cb74d61a8eb189282bfdce4d8954ae
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7e2f39b3a1b6376e24d8a812d1074840862f398a
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62157519"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70953341"
 ---
-# <a name="localtime-localtime32-localtime64"></a>localtime, _localtime32, _localtime64
+# <a name="localtime-_localtime32-_localtime64"></a>localtime, _localtime32, _localtime64
 
-Bir saat değerine dönüştürür ve yerel saat dilimini düzeltir. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz: [localtime_s, _localtime32_s, _localtime64_s](localtime-s-localtime32-s-localtime64-s.md).
+Bir saat değerini dönüştürür ve yerel saat dilimi için düzeltir. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz. [localtime_s, _localtime32_s, _localtime64_s](localtime-s-localtime32-s-localtime64-s.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -54,56 +57,56 @@ struct tm *_localtime64( const __time64_t *sourceTime );
 ### <a name="parameters"></a>Parametreler
 
 *sourceTime*<br/>
-Depolanan zamana yönelik işaretçi.
+Saklı saate yönelik işaretçi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Yapı sonucu için bir işaretçi döndürür veya **NULL** tarih işleve geçirilen ise:
+Yapı sonucuna bir işaretçi döndürün veya işleve geçirilen Tarih şu ise **null** olur:
 
-- Gece yarısından önce 1 Ocak 1970.
+- Gece yarısından önce, 1 Ocak 1970.
 
-- Sonra 03:14:07, Ocak 19, 2038, UTC (kullanarak **_time32** ve **time32_t**).
+- 03:14:07 sonra, 19 Ocak 2038, UTC ( **_time32** ve **time32_t**kullanarak).
 
-- Sonra 23:59:59, 31 Aralık, 3000, UTC (kullanarak **_time64** ve **__time64_t**).
+- 23:59:59 sonra, 31 Aralık 3000, UTC ( **_time64** ve **__time64_t**kullanarak).
 
-**_localtime64**, kullanan **__time64_t** yapısı, 23:59:59, 31 Aralık, 3000, Eşgüdümlü Evrensel Saat (UTC), yedekleme ifade edilecek tarihleri sağlarken **_localtime32** 23:59:59 18 Ocak 2038, UTC tarihleri temsil eder.
+**__time64_t** yapısını kullanan **_localtime64**, tarihlerin 23:59:59, Aralık 31, 3000, Eşgüdümlü Evrensel Saat (UTC) ile ifade etmesine izin verir, ancak **_localtime32** tarihleri 18 Ocak 2038, 23:59:59 ile gösterir. UTC.
 
-**localtime** olarak değerlendirilen bir satır içi işlev **_localtime64**, ve **time_t** eşdeğerdir **__time64_t**. Yorumlamak üzere zorlamanız gerekirse **time_t** eski 32-bit olarak **time_t**, tanımlayabileceğiniz **_use_32bıt_tıme_t**. Bunun yapılması neden olacak **localtime** için değerlendirilecek **_localtime32**. Bu, 18 Ocak 2038 sonrasında uygulamanız çalışmayabilir ve 64-bit platformlarda izin verilmiyor çünkü önerilmez.
+**localtime** , **_localtime64**olarak değerlendirilen bir satır içi işlevdir ve **time_t** , **__time64_t**ile eşdeğerdir. Derleyicinin **time_t** 'i eski 32 bit **time_t**olarak yorumlamasını zorlamak Istiyorsanız **_Use_32bit_time_t**tanımlayabilirsiniz. Bunun yapılması **localtime** 'ın **_localtime32**olarak değerlendirilmesini sağlar. Uygulamanız 18 Ocak 2038 ' den sonra başarısız olabileceğinden ve 64-bit platformlarda izin verilmediği için bu önerilmez.
 
-Yapı türü alanlarını [tm](../../c-runtime-library/standard-types.md) her biri aşağıdaki değerlerini depolayan bir **int**:
+[TM](../../c-runtime-library/standard-types.md) yapı türü alanları, her biri bir **int**olan aşağıdaki değerleri depolar:
 
 |Alan|Açıklama|
 |-|-|
-|**tm_sec**|Dakikadan sonra saniye (0 - 59).|
-|**tm_min**|Saatten sonraki dakika sayısı (0 - 59).|
-|**tm_hour**|Gece yarısından itibaren saat (0 - 23).|
-|**tm_mday**|(1-31) ayın günü.|
-|**tm_mon**|Ay (0 - 11; Ocak = 0).|
-|**tm_year**|Yıl (mevcut yıl eksi 1900).|
-|**tm_wday**|Haftanın günü (0 - 6; Pazar = 0).|
-|**tm_yday**|Yılın günü (0 - 365; 1 Ocak = 0).|
-|**tm_isdst**|Gün ışığından yararlanma etkinse pozitif değer; gün ışığından yararlanma etkin değilse, 0; Yaz Saati durum bilinmiyorsa, negatif değer.|
+|**tm_sec**|Dakika sonra saniye (0-59).|
+|**tm_min**|Saat sonra dakika (0-59).|
+|**tm_hour**|Gece yarısından itibaren saat (0-23).|
+|**tm_mday**|Ayın günü (1-31).|
+|**tm_mon**|Ay (0-11; Ocak = 0).|
+|**tm_year**|Yıl (geçerli yıl eksi 1900).|
+|**tm_wday**|Haftanın günü (0-6; Pazar = 0).|
+|**tm_yday**|Yılın günü (0-365; 1 Ocak = 0).|
+|**tm_isdst**|Gün ışığından yararlanma saati etkin ise pozitif değer; gün ışığından yararlanma saati etkin değilse 0; gün ışığından yararlanma saatinin durumu bilinmiyorsa negatif değer.|
 
-Varsa **TZ** ortam değişkeninin ayarlı, C çalışma zamanı kitaplığı kuralları Amerika Birleşik Devletleri'nde uygun Yaz Saati (DST) hesaplanmasını uygulamak için varsayar.
+**TZ** ortam değişkeni ayarlandıysa, C çalışma zamanı kitaplığı, gün ışığından yararlanma ZAMANıNıN (DST) hesaplanmasını uygulamak için Birleşik Devletler uygun kuralları kabul eder.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Localtime** işlevi dönüştürür bir saat olarak depolanan bir [time_t](../../c-runtime-library/standard-types.md) değeri ve sonucu türündeki yapıda depolar [tm](../../c-runtime-library/standard-types.md). **Uzun** değer *sourceTime* saniye gece yarısından beri geçen temsil eder (00: 00:00), 1 Ocak 1970, UTC. Bu değer genellikle öğesinden alınan [zaman](time-time32-time64.md) işlevi.
+**Localtime** işlevi, [time_t](../../c-runtime-library/standard-types.md) değeri olarak depolanan bir saati dönüştürür ve sonucu [TM](../../c-runtime-library/standard-types.md)türünde bir yapıda depolar. **Long** değeri *sourcetime* , gece yarısı (00:00:00), 1 Ocak 1970, UTC 'den beri geçen saniyeleri temsil eder. Bu değer genellikle [zaman](time-time32-time64.md) işlevinden elde edilir.
 
-Hem 32-bit ve 64 bit sürümlerini [gmtime](gmtime-gmtime32-gmtime64.md), [mktime](mktime-mktime32-mktime64.md), [mkgmtime](mkgmtime-mkgmtime32-mkgmtime64.md), ve **localtime** tüm tek kullanımlık **tm** yapısı dönüştürme için iş parçacığı başına. Bu yordamların her çağrısına, önceki çağrının sonucu yok eder.
+[Gmtime](gmtime-gmtime32-gmtime64.md), [mktime](mktime-mktime32-mktime64.md), [mkgmtime](mkgmtime-mkgmtime32-mkgmtime64.md)ve **localtime** 'ın 32-bit ve 64 bit sürümleri, dönüştürme için iş parçacığı başına tek bir **TM** yapısı kullanır. Bu yordamların birine yapılan her bir çağrı, önceki çağrının sonucunu yok eder.
 
-**localtime** kullanıcı önce genel ortam değişkenini ayarlar, yerel saat dilimini düzeltir **TZ**. Zaman **TZ** ayarlandığında, üç ortam değişkenlerini (**_timezone**, **_daylight**, ve **_tzname**) de otomatik olarak ayarlanır. Varsa **TZ** değişkeni ayarlanmamış, **localtime** Denetim Masası'ndaki Tarih/saat uygulamasında belirtilen saat dilimi bilgilerini kullanmaya çalışır. Bu bilgileri alınamıyor, Pasifik Saat dilimini belirtir, PST8PDT, varsayılan olarak kullanılır. Bkz: [_tzset](tzset.md) bu değişkenleri açıklaması. **TZ** standart ANSI tanımının parçası değildir ve Microsoft uzantısı olduğundan **localtime**.
+Kullanıcı ilk olarak **TZ**genel ortam değişkenini ayarladığında yerel saat dilimi için **yerelsaat** düzeltir. **TZ** ayarlandığında, diğer üç ortam değişkeni ( **_timezone**, **_gündüz**ve **_tzname**) de otomatik olarak ayarlanır. **TZ** değişkeni ayarlanmamışsa, **localtime** Denetim Masası 'ndaki Tarih/Saat uygulamasında belirtilen saat dilimi bilgilerini kullanmaya çalışır. Bu bilgiler alınamıyorsa, varsayılan olarak Pasifik saati dilimini belirten PST8PDT kullanılır. Bu değişkenlerin açıklaması için bkz. [_tzset](tzset.md) . **TZ** , bir Microsoft uzantısıdır ve **LOCALTIME**'ın ANSI standart tanımının bir parçası değildir.
 
 > [!NOTE]
-> Gün ışığından yararlanma etkin olup olmadığını belirlemek hedef ortamı denemelisiniz.
+> Hedef ortam, gün ışığından yararlanma saatinin etkin olup olmadığını belirlemeyi denemelidir.
 
-Bu işlevler kendi parametrelerini doğrular. Varsa *sourceTime* null bir işaretçiyse veya *sourceTime* değeri negatif ise, bu işlevler içinde açıklanan şekilde geçersiz parametre işleyicisini çağırır [Parameter Validation](../../c-runtime-library/parameter-validation.md) . Yürütmenin devam etmesine izin verilirse, İşlevler döndürür **NULL** ayarlayıp **errno** için **EINVAL**.
+Bu işlevler, parametrelerini doğrular. *Sourcetime* null bir işaretçisiyse veya *sourcetime* değeri negatifse, bu işlevler [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, işlevler **null** döndürür ve **errno** , **EINVAL**olarak ayarlanır.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli C üstbilgisi|Gerekli C++ üst bilgisi|
+|Yordam|Gerekli C üstbilgisi|Gerekli C++ üst bilgi|
 |-------------|---------------------|-|
-|**localtime**, **_localtime32**, **_localtime64**|\<TIME.h >|\<CTime > veya \<TIME.h >|
+|**yerelsaat**, **_localtime32**, **_localtime64**|\<Time. h >|\<CTime > veya \<saati. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

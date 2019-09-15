@@ -1,11 +1,11 @@
 ---
 title: ccosh, ccoshf, ccoshl
 ms.date: 11/04/2016
-apiname:
+api_name:
 - ccosh
 - ccoshf
 - ccoshl
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - ccosh
 - ccoshf
@@ -30,12 +33,12 @@ helpviewer_keywords:
 - ccoshf function
 - ccoshl function
 ms.assetid: 79667449-4edf-4948-bf6b-720adf2b3f3b
-ms.openlocfilehash: c25441d4f25f9e77a0cb71d942e132f34c4c1f5a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 978db0141ecd6799c3a8d19a3b4621ae1a2e8b43
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62335561"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70943284"
 ---
 # <a name="ccosh-ccoshf-ccoshl"></a>ccosh, ccoshf, ccoshl
 
@@ -64,21 +67,21 @@ _Lcomplex ccoshl(
 ### <a name="parameters"></a>Parametreler
 
 *z*<br/>
-Radyan cinsinden açı temsil eden bir karmaşık sayı.
+Radyan cinsinden açıyı temsil eden karmaşık bir sayı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Hiperbolik kosinüsünü *z*, radyan cinsinden açı.
+*Z*'nin radyan cinsinden hiperbolik kosinüsü.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Çünkü C++ aşırı yüklemesi, sağlayan yüklerini çağırabilirsiniz **ccosh** alan ve getiren **_Fcomplex** ve **_Lcomplex** değerleri. C programında **ccosh** her zaman alan ve döndüren bir **_Dcomplex** değeri.
+Aşırı C++ yüklemeye izin verdiğinden, **_Fcomplex** ve **_lcomplex** değerlerini alıp döndüren **ccosh** aşırı yüklerini çağırabilirsiniz. C programında **ccosh** her zaman **_dcomplex** değeri alır ve döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|C üstbilgisi|C++ üst bilgisi|
+|Yordam|C üstbilgisi|C++üst bilgi|
 |-------------|--------------|------------------|
-|**ccosh**,               **ccoshf**, **ccoshl**|\<Complex.h >|\<ccomplex >|
+|**ccosh**, **ccoshf**, **ccoshl**|\<karmaşık. h >|\<ccomplex >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

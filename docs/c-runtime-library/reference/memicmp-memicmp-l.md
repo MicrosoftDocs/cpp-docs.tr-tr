@@ -1,10 +1,10 @@
 ---
 title: _memicmp, _memicmp_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _memicmp_l
 - _memicmp
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-string-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _memicmp
 - memicmp_l
@@ -27,16 +30,16 @@ helpviewer_keywords:
 - memicmp_l function
 - _memicmp_l function
 ms.assetid: 0a6eb945-4077-4f84-935d-1aaebe8db8cb
-ms.openlocfilehash: 8beb632c8bd2cfac486fc58fc930b94490bdecbc
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a463b9c79a76879311bb811b38e4aabcfd6e7226
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62285280"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70951839"
 ---
-# <a name="memicmp-memicmpl"></a>_memicmp, _memicmp_l
+# <a name="_memicmp-_memicmp_l"></a>_memicmp, _memicmp_l
 
-İki arabellek (büyük-küçük harf duyarsız) karakterleri karşılaştırır.
+Karakterleri iki arabelleki karşılaştırır (büyük/küçük harfe duyarsız).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -57,42 +60,42 @@ int _memicmp_l(
 ### <a name="parameters"></a>Parametreler
 
 *buffer1*<br/>
-İlk arabelleği.
+İlk arabellek.
 
 *buffer2*<br/>
-İkinci bir arabellek.
+İkinci arabellek.
 
-*Sayısı*<br/>
+*biriktirme*<br/>
 Karakter sayısı.
 
-*Yerel ayar*<br/>
+*ayarlar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Dönüş değeri, arabellek arasındaki ilişkiyi gösterir.
+Dönüş değeri, arabellekler arasındaki ilişkiyi gösterir.
 
-|Dönüş değeri|İlişki buf1 buf2 ve ilk count bayt|
+|Dönüş değeri|Buf1 ve buf2 'in ilk sayım baytlarının ilişkisi|
 |------------------|--------------------------------------------------------|
 |< 0|*buffer1* küçüktür *buffer2*.|
-|0|*buffer1* aynı *buffer2*.|
-|> 0|*buffer1* büyüktür *buffer2*.|
+|0|*buffer1* özdeş *buffer2*.|
+|> 0|*buffer1* *buffer2*'den büyük.|
 |**_NLSCMPERROR**|Bir hata oluşmuştur.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Memicmp** işlevi ilk karşılaştırır *sayısı* karakterler iki arabellek *buffer1* ve *buffer2* bayt. Karşılaştırma büyük küçük harfe duyarlı değildir.
+**_Memicmp** işlevi, iki arabellek *buffer1* ve *buffer2* bayt bayt olarak ilk *sayı* karakterlerini karşılaştırır. Karşılaştırma büyük/küçük harfe duyarlı değildir.
 
-Ya da *buffer1* veya *buffer2* null bir işaretçiyse, bu işlev içinde açıklanan şekilde geçersiz parametre işleyicisini çağırır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse, işlev döndürür **_NLSCMPERROR** ve ayarlar **errno** için **EINVAL**.
+Eğer *buffer1* veya *buffer2* , null işaretçisiyse, bu işlev [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, işlev **_Nlscmperror** döndürür ve **errno** değerini **EINVAL**olarak ayarlar.
 
-**_memicmp** yerel ayara bağlı davranışı için; geçerli yerel ayarı kullanır **_memicmp_l** bunun yerine iletilmiş yerel ayarı kullanması dışında aynıdır. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
+**_memicmp** , yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır; **_memicmp_l** , bunun yerine geçirilen yerel ayarı kullanması dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_memicmp**|\<Memory.h > veya \<string.h >|
-|**_memicmp_l**|\<Memory.h > veya \<string.h >|
+|**_memicmp**|\<Memory. h > veya \<String. h >|
+|**_memicmp_l**|\<Memory. h > veya \<String. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

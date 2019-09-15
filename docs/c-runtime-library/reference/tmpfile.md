@@ -1,9 +1,9 @@
 ---
 title: tmpfile
 ms.date: 11/04/2016
-apiname:
+api_name:
 - tmpfile
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - tmpfile
 helpviewer_keywords:
@@ -23,16 +26,16 @@ helpviewer_keywords:
 - tmpfile function
 - temporary files, creating
 ms.assetid: c4a4dc24-70da-438d-ae4e-98352d88e375
-ms.openlocfilehash: 98afcb7a3e04a96a1b08bc1b975634153e550839
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f58c23050fe89f84f283c3784a7c0cee72637bf2
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62155569"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70957551"
 ---
 # <a name="tmpfile"></a>tmpfile
 
-Geçici bir dosya oluşturur. Daha güvenli bir sürümü kullanılabilir olmadığından, bu işlev kullanım dışı; bkz: [tmpfile_s](tmpfile-s.md).
+Geçici bir dosya oluşturur. Daha güvenli bir sürüm kullanılabilir olduğundan bu işlev kullanım dışıdır; bkz. [tmpfile_s](tmpfile-s.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -42,28 +45,28 @@ FILE *tmpfile( void );
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, **tmpfile** akış işaretçisini döndürür. Aksi halde bir **NULL** işaretçi.
+Başarılı olursa, **tmpfile** bir akış işaretçisi döndürür. Aksi halde, **null** bir işaretçi döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Tmpfile** işlevi geçici bir dosya oluşturur ve bu akış için bir işaretçi döndürür. Geçici dosya kök dizininde oluşturulur. Kök dışında bir dizinde, geçici bir dosya oluşturmak için kullanın [tmpnam](tempnam-wtempnam-tmpnam-wtmpnam.md) veya [tempnam](tempnam-wtempnam-tmpnam-wtmpnam.md) birlikte [fopen](fopen-wfopen.md).
+**Tmpfile** işlevi, geçici bir dosya oluşturur ve bu akışa bir işaretçi döndürür. Geçici dosya kök dizinde oluşturulur. Kök dışında bir dizinde geçici bir dosya oluşturmak için, [fopen](fopen-wfopen.md)ile birlikte [tmpnam](tempnam-wtempnam-tmpnam-wtmpnam.md) veya [tempnam](tempnam-wtempnam-tmpnam-wtmpnam.md) kullanın.
 
-Dosya açılamıyor, **tmpfile** döndürür bir **NULL** işaretçi. Bu geçici dosya dosya kapatıldığında normalde veya program sona erdiğinde otomatik olarak silinir **_rmtmp** çağrılır, varsayarak geçerli çalışma dizini değişmez. Geçici dosya açılır **w + b** (ikili okuma/yazma) modu.
+Dosya açılamadığı için **tmpfile** **null** bir işaretçi döndürür. Bu geçici dosya, dosya kapatıldığında, program normal olarak sonlandırıldığında veya **_rmtmp** çağrıldığında, geçerli çalışma dizininin değişmediği kabul edildiğinde otomatik olarak silinir. Geçici dosya **w + b** (ikili okuma/yazma) modunda açılır.
 
-En fazla TMP_MAX çalışırsanız hata meydana gelebilir (STDIO bakın. H) çağrılarını **tmpfile**.
+TMP_MAX 'den fazlasını denerseniz hata oluşabilir (bkz. STDIO. H) **tmpfile**ile çağırır.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**tmpfile**|\<stdio.h >|
+|**tmpfile**|\<stdio. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
 > [!NOTE]
-> Bu örnek, Windows Vista üzerinde çalıştırmak için yönetici ayrıcalıkları gerektirir.
+> Bu örnek, Windows Vista 'da çalıştırmak için yönetici ayrıcalıkları gerektirir.
 
 ```C
 // crt_tmpfile.c
@@ -101,6 +104,6 @@ Temporary file 3 was created
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Stream g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [_rmtmp](rmtmp.md)<br/>
 [_tempnam, _wtempnam, tmpnam, _wtmpnam](tempnam-wtempnam-tmpnam-wtmpnam.md)<br/>

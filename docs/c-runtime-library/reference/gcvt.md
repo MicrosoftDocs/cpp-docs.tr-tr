@@ -1,9 +1,9 @@
 ---
 title: _gcvt
 ms.date: 04/05/2018
-apiname:
+api_name:
 - _gcvt
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-convert-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _gcvt
 helpviewer_keywords:
@@ -28,16 +31,16 @@ helpviewer_keywords:
 - strings [C++], converting from floating point
 - CVTBUFSIZE
 ms.assetid: 5761411e-c06b-409a-912f-810fe7f4bcb5
-ms.openlocfilehash: 9cf966b455af601d09b4444a5c590e305a6681c8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3618f5571275783131c74c89f29218f89023f70e
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62332259"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70956096"
 ---
-# <a name="gcvt"></a>_gcvt
+# <a name="_gcvt"></a>_gcvt
 
-Arabellekte depolayan bir dize bir kayan noktalı değere dönüştürür. Bu işlevin daha güvenli bir sürümü kullanılabilir; bkz: [_gcvt_s](gcvt-s.md).
+Bir kayan nokta değerini bir dizeye, arabelleğe depolayan bir dizeye dönüştürür. Bu işlevin daha güvenli bir sürümü kullanılabilir; bkz. [_gcvt_s](gcvt-s.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -54,29 +57,29 @@ char *_gcvt(
 *value*<br/>
 Dönüştürülecek değer.
 
-*basamak*<br/>
-Depolanan anlamlı basamak sayısı.
+*54*<br/>
+Depolanan önemli basamak sayısı.
 
-*Arabellek*<br/>
+*arabelleğin*<br/>
 Sonuç için depolama konumu.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_gcvt** basamak dizeye bir işaretçi döndürür.
+**_gcvt** , basamak dizesine bir işaretçi döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Gcvt** işlevi dönüştürür bir kayan nokta *değer* (kod bir ondalık noktası ve olası oturum bayt içerir) bir karakter dizesine ve dizesini depolar *arabellek*. *Arabellek* dönüştürülen değeri ayrıca otomatik olarak eklenir, sonlandırıcı null karakterini, tutabilecek kadar büyük olmalıdır. Arabellek boyutu, *basamak* + 1 kullanılır, arabelleğin sonuna işlevi üzerine yazar. Dönüştürülmüş dize ondalık noktası içerir ve oturum ve üs bilgi içerebilir olmasıdır. Taşma desteği yoktur. **_gcvt** üretir *basamak* onlu basamak. Erişilemiyorsa ürettiği *basamak* üstel biçimde basamak. Sondaki sıfırları dönüştürme gizlenmiş.
+**_Gcvt** işlevi, bir kayan nokta *değerini* bir karakter dizesine (bir ondalık işaret ve olası bir işaret baytı içerir) dönüştürür ve dizeyi *arabelleğe*depolar. *Arabellek* , dönüştürülmüş değere ve otomatik olarak eklenen bir Sonlandırıcı null karaktere yetecek kadar büyük olmalıdır. Bir arabellek *boyutu + 1* kullanılırsa, işlev arabelleğin sonunu geçersiz kılar. Bunun nedeni, dönüştürülmüş dizenin bir ondalık basamak içermesi ve işaret ve üs bilgilerini içermesi olabilir. Taşma için bir sağlama yoktur. **_gcvt** ondalık biçimde *basamak* rakamları üretmeye çalışır. Yapamazsa, *sayı* rakamlarını üstel biçimde üretir. Sondaki sıfırlar, dönüştürmede gizlenebilir.
 
-A *arabellek* uzunluğu **_CVTBUFSIZE** herhangi bir değişken için yeterliyse noktası değeri.
+Her kayan nokta değeri için **_Cvtbufsize** uzunluğunda bir *arabellek* yeterlidir.
 
-Bu işlev, parametrelerini doğrular. Varsa *arabellek* olduğu **NULL**, açıklanan şekilde geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütme devam etmesine izin verilirse, bu işlev ayarlar **errno** için **EINVAL** ve döndürür **NULL**.
+Bu işlev, parametrelerini doğrular. *Buffer* **null**ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev **errno** ' ı **EINVAL** olarak ayarlar ve **null**değerini döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_gcvt**|\<stdlib.h >|
+|**_gcvt**|\<Stdlib. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

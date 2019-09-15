@@ -1,14 +1,14 @@
 ---
 title: _ismbcl0, _ismbcl0_l, _ismbcl1, _ismbcl1_l, _ismbcl2, _ismbcl2_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _ismbcl2
 - _ismbcl1
 - _ismbcl0
 - _ismbcl2_l
 - _ismbcl1_l
 - _ismbcl0_l
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -20,7 +20,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-multibyte-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - ismbcl0
 - _ismbcl1_l
@@ -48,19 +51,19 @@ helpviewer_keywords:
 - _ismbcl2_l function
 - _ismbcl0 function
 ms.assetid: ee15ebd1-462c-4a43-95f3-6735836d626a
-ms.openlocfilehash: b4ea5a165e5fb06229c3fdf69c53cdf82c4f35f4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 04560b7dd3a7188531e247499bc2ffd18bc23ca5
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62286636"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70953834"
 ---
-# <a name="ismbcl0-ismbcl0l-ismbcl1-ismbcl1l-ismbcl2-ismbcl2l"></a>_ismbcl0, _ismbcl0_l, _ismbcl1, _ismbcl1_l, _ismbcl2, _ismbcl2_l
+# <a name="_ismbcl0-_ismbcl0_l-_ismbcl1-_ismbcl1_l-_ismbcl2-_ismbcl2_l"></a>_ismbcl0, _ismbcl0_l, _ismbcl1, _ismbcl1_l, _ismbcl2, _ismbcl2_l
 
-**Kod sayfası 932 özel işlevler**, geçerli yerel ayarı veya belirtilen LC_CTYPE dönüştürme durumu kategorisini kullanarak.
+Geçerli yerel ayarı veya belirtilen LC_CTYPE dönüştürme durumu kategorisini kullanarak **kod sayfası 932 özgü işlevleri**.
 
 > [!IMPORTANT]
-> Bu API, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -91,44 +94,44 @@ int _ismbcl2_l(
 ### <a name="parameters"></a>Parametreler
 
 *c*<br/>
-Test edilecek karakter.
+Sınanacak karakter.
 
-*Yerel ayar*<br/>
+*ayarlar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Karakter test koşulunu veya 0 karşılıyorsa kullanmıyorsa bu yordamların her biri sıfır dışında bir değeri döndürür. Varsa *c* < = 255 ve karşılık gelen **_ismbb** yordamı (örneğin, **_ismbcalnum** karşılık gelen **_ismbbalnum**), Sonuç, karşılık gelen dönüş değeri olduğu **_ismbb** yordamı.
+Bu yordamların her biri, karakter test koşulunu karşılıyorsa veya 0 değilse sıfır dışında bir değer döndürür. *C* < = 255 ise ve karşılık gelen bir **_ismbb** yordamı varsa (örneğin, **_ismbcalnum** , **_ismbbalnum**öğesine karşılık gelir), sonuç karşılık gelen **_ismbb** yordamının dönüş değeridir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevlerin her biri, belirli bir koşul için belirli bir çok baytlı karakteri test eder.
+Bu işlevlerin her biri, belirli bir koşul için verilen bir çok baytlı karakteri sınar.
 
-Çıkış değeri ayarından etkilenir **LC_CTYPE** yerel ayarının kategori ayarına; bkz: [setlocale](setlocale-wsetlocale.md) daha fazla bilgi için. Bu işlevlerin sürümleri **_l** soneki geçerli yerel ayarı kullanır bu yerel ayara bağlı davranışı için; sürümleriyle **_l** sonekine bunların yerel ayar parametresini kullanmalarıdır Bunun yerine iletilmiş. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
+Çıkış değeri yerel ayarın **LC_CTYPE** kategori ayarı ayarından etkilenir; daha fazla bilgi için bkz. [setlocale](setlocale-wsetlocale.md) . **_L** sonekine sahip olmayan bu işlevlerin sürümleri, yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır; **_l** sonekine sahip sürümler, bunun yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
 |Yordam|Test koşulu (yalnızca kod sayfası 932)|
 |-------------|-------------------------------------------|
-|**_ismbcl0**|JIS non-Kanji: 0x8140 < =*c*< 0x889E =.|
-|**_ismbcl0_l**|JIS non-Kanji: 0x8140 < =*c*< 0x889E =.|
-|**_ismbcl1**|Düzey JIS-1: 0x889F < =*c*< 0x9872 =.|
-|**_ismbcl1_l**|Düzey JIS-1: 0x889F < =*c*< 0x9872 =.|
-|**_ismbcl2**|2-JIS düzeyi: 0x989F < =*c*< 0xEAA4 =.|
-|**_ismbcl2_l**|2-JIS düzeyi: 0x989F < =*c*< 0xEAA4 =.|
+|**_ismbcl0**|JıS Kanji olmayan: 0x8140 < =*c*< = 0x889E.|
+|**_ismbcl0_l**|JıS Kanji olmayan: 0x8140 < =*c*< = 0x889E.|
+|**_ismbcl1**|JıS düzey-1: 0x889F < =*c*< = 0x9872.|
+|**_ismbcl1_l**|JıS düzey-1: 0x889F < =*c*< = 0x9872.|
+|**_ismbcl2**|JıS düzey-2: 0x989F < =*c*< = 0xEAA4.|
+|**_ismbcl2_l**|JıS düzey-2: 0x989F < =*c*< = 0xEAA4.|
 
-İşlevleri kontrol belirtilen değere *c* test koşulları yukarıda açıklanan ancak denetlemez eşleşme *c* geçersiz bir çok baytlı karakter. Düşük bayt 0x00-0x3F, 0x7F veya 0xFD - aralıklardaki 0xFF aralıklarındaysa, bu işlevler, karakterin sınama koşulunu karşıladığını belirterek sıfır dışında bir değeri döndürür. Kullanım [_ismbbtrail](ismbbtrail-ismbbtrail-l.md) çok baytlı karakterin tanımlanıp tanımlanmadığını sınamak için.
+İşlevler, belirtilen *c* değerinin yukarıda açıklanan test koşulları ile eşleşip eşleşmediğini denetler, ancak *c* 'nin geçerli bir çok baytlı karakter olduğunu denetlemez. Alt bayt 0x00-0x3F, 0x7F veya 0xFD-0xFF aralıklarında bu işlevler, karakterin test koşulunu karşılayıp karşılamadığını belirten sıfır dışında bir değer döndürür. Çok baytlı karakterin tanımlanıp tanımlanmadığını sınamak için [_ismbbtraizi](ismbbtrail-ismbbtrail-l.md) kullanın.
 
-**End kod sayfası 932 özel**
+**Son kod sayfası 932 özgü**
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_ismbcl0**|\<Mbstring.h >|
-|**_ismbcl0_l**|\<Mbstring.h >|
-|**_ismbcl1**|\<Mbstring.h >|
-|**_ismbcl1_l**|\<Mbstring.h >|
-|**_ismbcl2**|\<Mbstring.h >|
-|**_ismbcl2_l**|\<Mbstring.h >|
+|**_ismbcl0**|\<mbstring. h >|
+|**_ismbcl0_l**|\<mbstring. h >|
+|**_ismbcl1**|\<mbstring. h >|
+|**_ismbcl1_l**|\<mbstring. h >|
+|**_ismbcl2**|\<mbstring. h >|
+|**_ismbcl2_l**|\<mbstring. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

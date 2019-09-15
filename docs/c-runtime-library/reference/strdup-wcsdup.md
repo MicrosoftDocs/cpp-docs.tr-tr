@@ -1,10 +1,10 @@
 ---
 title: strdup, wcsdup
 ms.date: 11/04/2016
-apiname:
+api_name:
 - wcsdup
 - strdup
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - wcsdup
 - strdup
@@ -23,13 +26,13 @@ helpviewer_keywords:
 - wcsdup function
 - strdup function
 ms.assetid: c9ac0935-b525-4e95-8a64-396fc7e34ee9
-ms.openlocfilehash: 92109b06fd968009f6c05c39b6e9c45e515315aa
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ec62ba2d561d214a285caeb120eb2dd12935f792
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62353918"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70958166"
 ---
 # <a name="strdup-wcsdup"></a>strdup, wcsdup
 
-Bu POSIX işlevler kullanım dışı bırakılmıştır. ISO kullanın C++ uyumluluğunu [_strdup, _wcsdup, _mbsdup](strdup-wcsdup-mbsdup.md) yerine.
+Bu POSIX işlevleri kullanım dışıdır. Bunun yerine ISO C++ uyumlu [_strdup, _wcsdup, _mbsdup](strdup-wcsdup-mbsdup.md) kullanın.

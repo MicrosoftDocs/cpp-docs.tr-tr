@@ -1,10 +1,10 @@
 ---
 title: _getchar_nolock, _getwchar_nolock
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _getchar_nolock
 - _getwchar_nolock
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - getwchar_nolock
 - _getwchar_nolock
@@ -29,14 +32,14 @@ helpviewer_keywords:
 - getchar_nolock function
 - standard input, reading from
 ms.assetid: dc49ba60-0647-4ae9-aa9a-a0618b1666de
-ms.openlocfilehash: feeda65d06dbcfecb6ea5adc60934abf3d0df415
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: df7d07d4478d8feee1d5a0b35c40e4158a93be82
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62331813"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70955403"
 ---
-# <a name="getcharnolock-getwcharnolock"></a>_getchar_nolock, _getwchar_nolock
+# <a name="_getchar_nolock-_getwchar_nolock"></a>_getchar_nolock, _getwchar_nolock
 
 Standart girişten bir karakter okur.
 
@@ -49,11 +52,11 @@ wint_t _getwchar_nolock( void );
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bkz: [getchar, getwchar](getchar-getwchar.md).
+Bkz. [GetChar, getwchar](getchar-getwchar.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_getchar_nolock** ve **_getwchar_nolock** özdeş **getchar** ve **getwchar** hariç, bunlar diğer tarafından korunmamaları iş parçacıkları. Diğer iş parçacıklarını kilitleme ek yükü kalmadıklarından daha hızlı olabilir. Bu işlevler yalnızca tek iş parçacıklı uygulamalar ve burada çağırma kapsamının iş parçacığı yalıtımını zaten işlediği gibi iş parçacığı bakımından güvenli bağlamlarda kullanın.
+**_getchar_nolock** ve **_getwchar_nolock** , diğer iş parçacıkları tarafından girişime karşı korunmamaları hariç **GetChar** ve **getwchar** ile aynıdır. Diğer iş parçacıklarını kilitleme yükünü sunmadığından daha hızlı olabilir. Bu işlevleri yalnızca, tek iş parçacıklı uygulamalar gibi iş parçacığı güvenli bağlamlarda veya çağırma kapsamının iş parçacığı yalıtımını zaten işlediği yerde kullanın.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -65,10 +68,10 @@ Bkz: [getchar, getwchar](getchar-getwchar.md).
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_getchar_nolock**|\<stdio.h >|
-|**_getwchar_nolock**|\<stdio.h > veya \<wchar.h >|
+|**_getchar_nolock**|\<stdio. h >|
+|**_getwchar_nolock**|\<stdio. h > veya \<wchar. h >|
 
-Konsolu, Evrensel Windows Platformu (UWP) uygulamaları desteklenmez. Konsolları ile ilişkili standart akış işleyicileri **stdin**, **stdout**, ve **stderr**, C çalışma zamanı işlevleri bunları UWP uygulamalarında kullanmadan önce yeniden yönlendirilmesi gerekiyor . Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Konsol Evrensel Windows Platformu (UWP) uygulamalarında desteklenmez. Console, **STDIN**, **stdout**ve **stderr**Ile ilişkili standart akış TUTAMAÇLARı, C çalışma zamanı işlevlerinin UWP uygulamalarında kullanabilmesi için yeniden yönlendirilmelidir. Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
@@ -103,7 +106,7 @@ This textInput was: This text
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Stream g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [getc, getwc](getc-getwc.md)<br/>
 [fgetc, fgetwc](fgetc-fgetwc.md)<br/>
 [_getch, _getwch](getch-getwch.md)<br/>

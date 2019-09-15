@@ -1,9 +1,9 @@
 ---
 title: ___lc_codepage_func
 ms.date: 11/04/2016
-apiname:
+api_name:
 - ___lc_codepage_func
-apilocation:
+api_location:
 - msvcr120.dll
 - msvcr110_clr0400.dll
 - msvcr80.dll
@@ -11,23 +11,26 @@ apilocation:
 - msvcr90.dll
 - msvcr110.dll
 - msvcrt.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - lc_codepage_func
 - ___lc_codepage_func
 helpviewer_keywords:
 - ___lc_codepage_func
 ms.assetid: 6a663bd0-5a63-4a2f-9507-872ec1582aae
-ms.openlocfilehash: aebd978839cc59c94c01e9c24432b69add72c4dc
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: dbadf8239652f5c96e7177dedd91d340e545b9fe
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62343512"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70944920"
 ---
-# <a name="lccodepagefunc"></a>___lc_codepage_func
+# <a name="___lc_codepage_func"></a>___lc_codepage_func
 
-İç CRT işlevi. İş parçacığının geçerli kod sayfası alır.
+İç CRT işlevi. İş parçacığının geçerli kod sayfasını alır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -41,11 +44,11 @@ UINT ___lc_codepage_func(void);
 
 ## <a name="remarks"></a>Açıklamalar
 
-`___lc_codepage_func` diğer CRT işlevleri tarafından mevcut kod sayfasında iş parçacığı yerel depolama alanından CRT verilerini almak için kullanılan bir iç CRT işlevdir. Bu bilgiler ayrıca kullanılarak kullanılabilir [_get_current_locale](../c-runtime-library/reference/get-current-locale.md) işlevi.
+`___lc_codepage_func`, diğer CRT işlevleri tarafından, CRT verileri için iş parçacığı yerel depolama alanından geçerli kod sayfasını almak üzere kullanılan bir iç CRT işlevidir. Bu bilgiler, [_get_current_locale](../c-runtime-library/reference/get-current-locale.md) işlevi kullanılarak da kullanılabilir.
 
-A *kod sayfası* karakterlerin tek tek tek veya çift bayt kod eşlemesini. Farklı kod sayfaları genellikle bir dil veya dillerde bir grup için özelleştirilmiş farklı özel karakterler içerir. Kod sayfaları hakkında daha fazla bilgi için bkz. [kod sayfaları](../c-runtime-library/code-pages.md).
+*Kod sayfası* , tek baytlık veya çift baytlık kodların ayrı karakterlere eşlenmesinin. Farklı kod sayfaları, genellikle bir dil veya dil grubu için özelleştirilen, farklı özel karakterler içerir. Kod sayfaları hakkında daha fazla bilgi için bkz. [kod sayfaları](../c-runtime-library/code-pages.md).
 
-İç CRT işlevleri uygulamasına özgüdür ve her değişebilir bırakın. Kodunuzda bunların kullanılması önerilmemektedir.
+İç CRT işlevleri uygulamaya özgüdür ve her sürümde değiştirilebilir. Kodunuzda kullanımını önermiyoruz.
 
 ## <a name="requirements"></a>Gereksinimler
 

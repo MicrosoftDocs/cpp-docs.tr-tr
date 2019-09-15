@@ -1,12 +1,12 @@
 ---
 title: _atoi64, _atoi64_l, _wtoi64, _wtoi64_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _atoi64_l
 - _wtoi64
 - _atoi64
 - _wtoi64_l
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -18,7 +18,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-convert-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _atoi64
 - _tstoi64
@@ -46,16 +49,16 @@ helpviewer_keywords:
 - _wtoi64 function
 - _atoi64 function
 ms.assetid: 2c3e30fd-545d-4222-8364-0c5905df9526
-ms.openlocfilehash: c80480be8895db6afe499d5426b91dcde786d654
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 950774e74462e8d1f301a1d5b933e57feaa9f840
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62341541"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70939492"
 ---
-# <a name="atoi64-atoi64l-wtoi64-wtoi64l"></a>_atoi64, _atoi64_l, _wtoi64, _wtoi64_l
+# <a name="_atoi64-_atoi64_l-_wtoi64-_wtoi64_l"></a>_atoi64, _atoi64_l, _wtoi64, _wtoi64_l
 
-Bir dizeyi bir 64-bit tamsayıya dönüştürür.
+Bir dizeyi 64 bitlik bir tamsayıya dönüştürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -78,35 +81,35 @@ __int64 _wtoi64_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*str*<br/>
+*üstbilgisine*<br/>
 Dönüştürülecek dize.
 
-*Yerel ayar*<br/>
+*ayarlar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Her işlev **__int64** değeri, giriş karakterlerinin sayı olarak yorumlanmasıyla üretilen. Dönüş değeri için 0'dır **_atoi64** giriş türü değerine döndürülemezse.
+Her işlev, giriş karakterlerinin sayı olarak yorumlanarak oluşturulan **__int64** değerini döndürür. Giriş Bu türden bir değere dönüştürülemiyorsa, **_atoi64** için dönüş değeri 0 ' dır.
 
-Büyük pozitif tamsayı değerleri içeren taşma durumunda **_atoi64** döndürür **I64_MAX** ve **I64_MIN** büyük negatif tam sayı değerleri içeren taşma durumunda.
+Büyük pozitif tamsayı değerleriyle taşma durumunda **_atoi64** , büyük negatif tamsayı değerleriyle taşma durumunda **I64_MAX** ve **I64_MIN** döndürür.
 
-Tüm aralık dışı durumlarda **errno** ayarlanır **ERANGE**. Parametre geçirilen ise **NULL**, açıklanan şekilde geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütme devam etmesine izin verilirse bu işlevler kümesi **errno** için **EINVAL** ve 0 döndürür.
+Tüm Aralık dışı durumlarda **errno** , **ERANGE**olarak ayarlanır. Geçirilen parametre **null**Ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **errno** ' ı **EINVAL** olarak ayarlar ve 0 döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevler bir karakter dizesini bir 64-bit tamsayı değerine dönüştürür.
+Bu işlevler, bir karakter dizesini 64 bitlik bir tamsayı değerine dönüştürür.
 
-Giriş dizesi belirtilen türde bir sayısal değer olarak yorumlanabilecek bir karakter dizisi ' dir. İşlev bir sayının parçası olarak tanıyamadığı ilk karakterde giriş dizesini okumayı durdurur. Bu karakteri null karakteri ('\0' veya '\0' L) olabilir. dize sonlandırılıyor.
+Giriş dizesi, belirtilen türden sayısal bir değer olarak yorumlanabilen bir karakter dizisidir. İşlev, bir sayının parçası olarak tanıyamadığı ilk karakterde giriş dizesini okumayı durduruyor. Bu karakter, dizeyi sonlandıran null karakteri (' \ 0 ' veya L ' \ 0 ') olabilir.
 
-*Str* bağımsız değişkeni **_atoi64** aşağıdaki biçime sahiptir:
+**_Atoi64** için *Str* bağımsız değişkeni aşağıdaki biçimdedir:
 
-> [*boşluk*] [*oturum*] [*basamak*]
+> [*boşluk*] [*imzala*] [*basamaklar*]
 
-A *boşluk* yoksayılan boşluk veya sekme karakterlerinden oluşur *oturum* ya da artı (+) veya eksidir (–); ve *basamak* bir veya daha fazla rakamdır.
+*Boşluk* , yoksayılan boşluk veya sekme karakterlerinden oluşur; *imza* artı (+) veya eksi (-); ve *rakamlar* bir veya daha fazla basamaktan oluşur.
 
-**_wtoi64** aynıdır **_atoi64** dışında parametre olarak geniş karakter dizesi alır.
+**_wtoi64** , bir parametre olarak geniş bir karakter dizesi alan hariç **_atoi64** ile aynıdır.
 
-Sahip bu işlevlerin sürümleri **_l** sonekine, geçerli yerel ayarı yerine iletilen yerel ayar parametresini kullanmalarıdır. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
+**_L** sonekine sahip bu işlevlerin sürümleri, geçerli yerel ayar yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -117,14 +120,14 @@ Sahip bu işlevlerin sürümleri **_l** sonekine, geçerli yerel ayarı yerine i
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Rutinleri|Gerekli başlık|
+|Çalıştırmasını|Gerekli başlık|
 |--------------|---------------------|
-|**_atoi64**, **_atoi64_l**|\<stdlib.h >|
-|**_wtoi64**, **_wtoi64_l**|\<stdlib.h > veya \<wchar.h >|
+|**_atoi64**, **_atoi64_l**|\<Stdlib. h >|
+|**_wtoi64**, **_wtoi64_l**|\<Stdlib. h > veya \<wchar. h >|
 
 ## <a name="example"></a>Örnek
 
-Bu program, dizeler olarak saklanan numaralarını kullanarak sayısal değerleri nasıl dönüştürülebilir gösterir **_atoi64** işlevleri.
+Bu program, dizeler olarak depolanan sayıların **_atoi64** işlevleri kullanılarak sayısal değerlere nasıl dönüştürülebileceğini gösterir.
 
 ```C
 // crt_atoi64.c

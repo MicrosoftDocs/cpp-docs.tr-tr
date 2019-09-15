@@ -1,10 +1,10 @@
 ---
 title: _execle, _wexecle
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _execle
 - _wexecle
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-process-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - wexecle
 - _execle
@@ -27,19 +30,19 @@ helpviewer_keywords:
 - _wexecle function
 - _execle function
 ms.assetid: 75efa9c5-96b7-4e23-acab-06258901f63a
-ms.openlocfilehash: dbd84dd8d8e150a063dad4dc89a572c317bce544
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3480b2220c71984dcc30cec54d00deac1f4dfbc7
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62288168"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70937384"
 ---
-# <a name="execle-wexecle"></a>_execle, _wexecle
+# <a name="_execle-_wexecle"></a>_execle, _wexecle
 
-Yükler ve yeni alt işlemleri yürütür.
+Yeni alt süreçler yükler ve yürütür.
 
 > [!IMPORTANT]
-> Bu API, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -62,49 +65,49 @@ intptr_t _wexecle(
 
 ### <a name="parameters"></a>Parametreler
 
-*■ CmdName*<br/>
+*cmdname*<br/>
 Yürütülecek dosyanın yolu.
 
-*arg0*,... *argn*<br/>
-Parametreler için işaretçiler listesi.
+*arg0*,... *argN*<br/>
+Parametrelerin işaretçilerin listesi.
 
 *envp*<br/>
-Ortam ayarlarına bir işaretçiler dizisi.
+Ortam ayarlarına işaretçiler dizisi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, bu işlevler çağırma işlemine geri gitmez. -1 değeri, bu durumda bir hata belirtir **errno** global değişkeni ayarlanır.
+Başarılı olursa, bu işlevler çağıran işleme geri dönmez. -1 ' in dönüş değeri bir hatayı gösterir, bu durumda **errno** genel değişkeni ayarlanır.
 
 |**errno** değeri|Açıklama|
 |-------------------|-----------------|
-|**E2BIG**|Bağımsız değişkenler ve ortam ayarları için gereken alan 32 KB aşıyor.|
-|**SPAWN**|Belirtilen dosya kilitleme veya paylaşma ihlali var.|
+|**E2BIG**|Bağımsız değişkenler ve ortam ayarları için gereken alan 32 KB 'yi aşıyor.|
+|**EACCES**|Belirtilen dosyada bir kilitleme veya paylaşım ihlali vardır.|
 |**EINVAL**|Geçersiz parametre.|
-|**EMFILE**|Çok fazla dosya açık durumda. (Belirtilen dosyanın yürütülebilir olup olmadığını belirlemek için açık olması gerekir.)|
+|**EMFILE**|Çok fazla dosya açık. (Çalıştırılabilir olup olmadığını anlamak için belirtilen dosyanın açılması gerekir.)|
 |**ENOENT**|Dosya veya yol bulunamadı.|
 |**ENOEXEC**|Belirtilen dosya yürütülebilir değil veya geçersiz bir yürütülebilir dosya biçimine sahip.|
-|**ENOMEM**|Yeni işlemi yürütmek yeterli bellek yok; kullanılabilir bellek bozulmuş; ya da geçersiz bir engel var., çağıran işlemin düzgün ayrılmamış olduğunu gösterir.|
+|**ENOMEM**|Yeni işlemi yürütmek için yeterli kullanılabilir bellek yok; kullanılabilir bellek bozulmuş; ya da çağıran işlemin doğru şekilde ayrılmadığını gösteren geçersiz bir blok var.|
 
 Bu dönüş kodları hakkında daha fazla bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevlerin her biri yükler ve yeni bir işlem yürütür ve her komut satırı bağımsız değişkenini ayrı bir parametre olarak geçirir ve ortam ayarlarına bir işaretçiler dizisi geçirir.
+Bu işlevlerin her biri yeni bir işlem yükler ve yürütür ve her komut satırı bağımsız değişkenini ayrı bir parametre olarak geçirir ve ortam ayarlarına bir işaretçiler dizisi geçirir.
 
-**_Execle** işlevleri kendi parametrelerini doğrular. Varsa *■ cmdname* veya *arg0* null bir işaretçi veya boş bir dize içinde açıklanan şekilde bu işlevler geçersiz parametre işleyicisi çağırır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütme devam etmesine izin verilirse bu işlevler kümesi **errno** için **EINVAL** ve -1 döndürür. Yeni bir işlem başlatılır.
+**_Execle** işlevleri parametrelerini doğrular. *Cmdname* veya *arg0* null bir işaretçi ya da boş bir dize Ise, bu işlevler [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **errno** olarak **EINVAL** ve-1 döndürür. Yeni bir işlem başlatılmaz.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |İşlev|Gerekli başlık|İsteğe bağlı başlık|
 |--------------|---------------------|---------------------|
-|**_execle**|\<Process.h >|\<errno.h >|
-|**_wexecle**|\<Process.h > veya \<wchar.h >|\<errno.h >|
+|**_execle**|\<Process. h >|\<errno. h >|
+|**_wexecle**|\<Process. h > veya \<wchar. h >|\<errno. h >|
 
-Daha fazla bilgi için [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla bilgi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
-Örnekte bakın [_exec, _wexec işlevleri](../../c-runtime-library/exec-wexec-functions.md).
+[_Exec, _wexec Functions](../../c-runtime-library/exec-wexec-functions.md)içindeki örneğe bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

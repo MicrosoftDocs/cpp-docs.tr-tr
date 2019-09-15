@@ -1,10 +1,10 @@
 ---
 title: _cexit, _c_exit
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _c_exit
 - _cexit
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-runtime-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _cexit
 - c_exit
@@ -29,16 +32,16 @@ helpviewer_keywords:
 - _cexit function
 - c_exit function
 ms.assetid: f3072045-9924-4b1a-9fef-b0dcd6d12663
-ms.openlocfilehash: a075e8a8e965a195765b86ffa21fed0915dbf5ab
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: aa25d73bef1d85adfed77ba926e2d381e02e45e8
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62335496"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70939249"
 ---
-# <a name="cexit-cexit"></a>_cexit, _c_exit
+# <a name="_cexit-_c_exit"></a>_cexit, _c_exit
 
-Temizleme işlemlerini gerçekleştiren ve işlemi sonlandırmaz döndürür.
+Temizleme işlemlerini gerçekleştirir ve işlemi sonlandırmadan döndürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -49,16 +52,16 @@ void _c_exit( void );
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Cexit** işlev çağrısı, son giren ilk çıkar (LIFO) sırası, kaydeden işlevleri **atexit** ve **_onexit**. Ardından **_cexit** tüm g/ç arabelleklerini boşaltır ve döndürmeden önce tüm açık akışları kapatır. **_c_exit** aynı **_exit** ancak işlem çağırma işlemine geri gönderir **atexit** veya **_onexit** veya akış arabellekleri boşaltma. Davranışını **çıkmak**, **_exit**, **_cexit**, ve **_c_exit** aşağıdaki tabloda gösterilmiştir.
+**_Cexit** işlevi, en son, ilk çıkar (LIFO) sırasına göre, **atexit** ve **_onexit**tarafından kaydedilen işlevleri çağırır. Sonra **_cexit** tüm g/ç arabelleklerini temizler ve döndürmeden önce tüm açık akışları kapatır. **_c_exit** , **_exit** ile aynı, ancak **atexit** veya **_onexit** işlemeden veya akış arabelleklerini temizlemeden çağıran işleme geri döner. **Çıkış**, **_çıkış**, **_cexit**ve **_c_exit** davranışı aşağıdaki tabloda gösterilmiştir.
 
 |İşlev|Davranış|
 |--------------|--------------|
-|**Çıkış**|Tam C Kitaplığı sonlandırma yordamları gerçekleştirir, işlemi sonlandırır ve belirtilen durum koduyla çıkar.|
-|**_exit**|Hızlı C Kitaplığı sonlandırma yordamları gerçekleştirir, işlemi sonlandırır ve belirtilen durum koduyla çıkar.|
-|**_cexit**|Tam C Kitaplığı sonlandırma yordamları gerçekleştirir ve çağırana döner, ancak işlemi sonlandırmak değil.|
-|**_c_exit**|Hızlı C Kitaplığı sonlandırma yordamları gerçekleştirir ve çağırana döner, ancak işlemi sonlandırmak değil.|
+|**çıkıp**|Tüm C Kitaplığı sonlandırma yordamlarını gerçekleştirir, işlemi sonlandırır ve sağlanan durum koduyla çıkar.|
+|**_çıkış**|Hızlı C Kitaplığı sonlandırma yordamlarını gerçekleştirir, işlemi sonlandırır ve sağlanan durum koduyla çıkar.|
+|**_cexit**|Tüm C Kitaplığı sonlandırma yordamlarını gerçekleştirir ve çağırana döner, ancak işlemi sonlandırmaz.|
+|**_c_exit**|Hızlı C Kitaplığı sonlandırma yordamlarını gerçekleştirir ve çağırana döner, ancak işlemi sonlandırmaz.|
 
-Çağırdığınızda **_cexit** veya **_c_exit** İşlevler, çağrı sırada mevcut geçici veya otomatik nesneler için yok ediciler değil çağrılır. Otomatik bir nesne bir işlev içinde tanımlanan bir yere nesne statik olarak bildirilmedi nesnedir. Geçici bir nesne, derleyici tarafından oluşturulan bir nesnedir. Çağırmadan önce otomatik bir nesneyi yok etmek için **_cexit** veya **_c_exit**, açıkça call yok Edicisi nesne için şu şekilde:
+**_Cexit** veya **_c_exit** işlevlerini çağırdığınızda, çağrı sırasında mevcut olan geçici veya otomatik nesnelerin yıkıcıları çağrılmaz. Otomatik nesne, nesnenin statik olduğu bildirilmemiş bir işlevde tanımlanmış bir nesnedir. Geçici bir nesne, derleyici tarafından oluşturulan bir nesnedir. **_Cexit** veya **_c_exit**çağrılmadan önce otomatik bir nesneyi yok etmek için, açıkça nesne için yıkıcıyı aşağıdaki gibi çağırın:
 
 ```cpp
 myObject.myClass::~myClass( );
@@ -68,8 +71,8 @@ myObject.myClass::~myClass( );
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_cexit**|\<Process.h >|
-|**_c_exit**|\<Process.h >|
+|**_cexit**|\<Process. h >|
+|**_c_exit**|\<Process. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

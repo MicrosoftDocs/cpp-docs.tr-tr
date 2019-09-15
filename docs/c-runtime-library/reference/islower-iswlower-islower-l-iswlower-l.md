@@ -1,12 +1,12 @@
 ---
 title: islower, iswlower, _islower_l, _iswlower_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - iswlower
 - _islower_l
 - islower
 - _iswlower_l
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -19,7 +19,10 @@ apilocation:
 - ucrtbase.dll
 - api-ms-win-crt-string-l1-1-0.dll
 - ntoskrnl.exe
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _istlower
 - islower
@@ -42,16 +45,16 @@ helpviewer_keywords:
 - iswlower function
 - _islower_l function
 ms.assetid: fcc3b70a-2b47-45fd-944d-e5c1942e6457
-ms.openlocfilehash: b6b58522277b45fe8147dfa13a5930003f83c835
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 957bae12c718b0466c8e9f6d39dd57d7c0ccca7d
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62331577"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70954319"
 ---
-# <a name="islower-iswlower-islowerl-iswlowerl"></a>islower, iswlower, _islower_l, _iswlower_l
+# <a name="islower-iswlower-_islower_l-_iswlower_l"></a>islower, iswlower, _islower_l, _iswlower_l
 
-Bir tamsayı, küçük harf karakteri temsil edip etmediğini belirler.
+Bir tamsayının küçük harfli bir karakteri temsil edip etmediğini belirler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -75,34 +78,34 @@ int _iswlower_l(
 ### <a name="parameters"></a>Parametreler
 
 *c*<br/>
-Test edilecek tamsayı.
+Sınanacak tamsayı.
 
-*Yerel ayar*<br/>
+*ayarlar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Yordamların her biri bu döndürür sıfır olmayan *c* bir küçük harf karakter, belirli bir gösterimiyse. **islower** sıfır olmayan bir değer döndürür *c* bir küçük harf (a - z) karakteridir. **iswlower** sıfır olmayan bir değer döndürür *c* küçük harfle, karşılık gelen bir geniş karakterse veya *c* geniş karakterlerin uygulama tanımlı bir dizi öğelerinin hiçbiri içinbiri**iswcntrl**, **iswdigit**, **iswpunct**, veya **iswspace** sıfır değil. Bu yordamların her biri 0 döndürür *c* test koşulu karşılamayan.
+Bu yordamların her biri, *c* , küçük harfli bir karakterin belirli bir gösterimiyse sıfır olmayan bir değer döndürür. *c* , küçük harfli bir karakter (a-z) ise, **IsLower** sıfır dışında bir değer döndürür. *c* , küçük harfe karşılık gelen geniş bir karakter ise ya da *c* , **iswcnp**, **ıswdigit**, ıswpunct için uygulama tanımlı geniş karakter kümesinden biri ise, **ıswlower** sıfır dışında bir değer döndürür.veya **ıswspace** sıfırdan farklı. Bu yordamların her biri, *c* , test koşulunu karşılamadığı takdirde 0 döndürür.
 
-Sahip bu işlevlerin sürümleri **_l** soneki yerel ayara bağlı davranışları için geçerli yerel ayarı yerine iletilen yerel ayarı kullanır. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
+**_L** sonekine sahip bu işlevlerin sürümleri, yerel ayara bağımlı davranış için geçerli yerel ayar yerine geçirilen yerel ayarı kullanır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
-Davranışını **islower** ve **_islower_l** tanımsızdır *c* EOF değilse veya 0-0xFF aralığındaysa aralığında. Bir hata ayıklama CRT Kitaplığı kullanıldığında ve *c* değil, bu değerleri işlevleri raise onaylama biridir.
+*C* , EOF veya 0 ile 0xFF (dahil) arasında değilse, **ılower** ve **_isalta _l** davranışı tanımsızdır. Bir hata ayıklama CRT kitaplığı kullanıldığında ve *c* bu değerlerden biri değilse, işlevler bir onaylama işlemi yükseltir.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|**_istlower**|**islower**|[_ismbclower](ismbclower-ismbclower-l-ismbcupper-ismbcupper-l.md)|**iswlower**|
-|**_istlower_l**|`_islower _l`|[_ismbclower_l](ismbclower-ismbclower-l-ismbcupper-ismbcupper-l.md)|**_liswlower_l**|
+|**_istlower**|**islower**|[_ismbclower](ismbclower-ismbclower-l-ismbcupper-ismbcupper-l.md)|**iswdaha düşük**|
+|**_istalmi _l**|`_islower _l`|[_ismbclower_l](ismbclower-ismbclower-l-ismbcupper-ismbcupper-l.md)|**_lizwal_l**|
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**islower**|\<CType.h >|
-|**iswlower**|\<CType.h > veya \<wchar.h >|
-|**_islower_l**|\<CType.h >|
-|**_swlower_l**|\<CType.h > veya \<wchar.h >|
+|**islower**|\<CType. h >|
+|**iswdaha düşük**|\<CType. h > veya \<wchar. h >|
+|**_islower_l**|\<CType. h >|
+|**_swall _l**|\<CType. h > veya \<wchar. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

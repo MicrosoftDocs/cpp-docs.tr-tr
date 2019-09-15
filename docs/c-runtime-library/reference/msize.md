@@ -1,9 +1,9 @@
 ---
 title: _msize
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _msize
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-heap-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - msize
 - _msize
@@ -24,16 +27,16 @@ helpviewer_keywords:
 - msize function
 - _msize function
 ms.assetid: 02b1f89e-d0d7-4f12-938a-9eeba48a0f88
-ms.openlocfilehash: 0321e42face817a0a9f12d780f72c86c67ba308d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c1760cfa6a416e2eb4cd7b549cb5ae9bed00a609
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62156297"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70951431"
 ---
-# <a name="msize"></a>_msize
+# <a name="_msize"></a>_msize
 
-Yığında ayrılan bir bellek bloğu boyutu döndürür.
+Yığında ayrılan bellek bloğunun boyutunu döndürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -46,35 +49,35 @@ size_t _msize(
 ### <a name="parameters"></a>Parametreler
 
 *memblock*<br/>
-Bellek bloğuna işaretçi.
+Bellek bloğunun işaretçisi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_msize** boyutu (bayt cinsinden) işaretsiz bir tamsayı olarak döndürür.
+**_msize** , (bayt olarak) boyutunu işaretsiz bir tamsayı olarak döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Msize** işlevi çağrısı tarafından ayrılan bellek bloğu bayt cinsinden boyutunu döndürür **calloc**, **malloc**, veya **realloc**.
+**_Msize** işlevi, **calloc**, **malloc**veya **realloc**çağrısıyla ayrılan bellek bloğunun boyutunu bayt cinsinden döndürür.
 
-Uygulamayı hata ayıklama sürümü C çalışma zamanı kitaplıkları ile ilişkilendirildiğinde **_msize** çözümler [_msize_dbg](msize-dbg.md). Yığının hata ayıklama işlemi sırasında nasıl yönetildiği hakkında daha fazla bilgi için bkz. [CRT hata ayıklama yığın](/visualstudio/debugger/crt-debug-heap-details).
+Uygulama, C çalışma zamanı kitaplıklarının bir hata ayıklama sürümüyle bağlandığında, **_msize** [_msize_dbg](msize-dbg.md)olarak çözümlenir. Hata ayıklama işlemi sırasında yığının nasıl yönetildiği hakkında daha fazla bilgi için bkz. [CRT hata ayıklama yığını](/visualstudio/debugger/crt-debug-heap-details).
 
-Bu işlev, parametresini doğrular. Varsa *memblock* null bir işaretçiyse, **_msize** açıklandığı gibi geçersiz parametre işleyicisini çağırır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Hatanın işlenip, işlev ayarlar **errno** için **EINVAL** ve -1 döndürür.
+Bu işlev, parametresini doğrular. *Memblock* null bir işaretçisiyse, **_Msıze** [parametresi doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Hata işlenirse, işlev **errno** ' ı **EINVAL** olarak ayarlar ve-1 döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_msize**|\<malloc.h >|
+|**_msize**|\<malloc. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 
-Tüm sürümleri [C çalışma zamanı kitaplıkları](../../c-runtime-library/crt-library-features.md).
+[C çalışma zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md)tüm sürümleri.
 
 ## <a name="example"></a>Örnek
 
-Örneğin bakın [realloc](realloc.md).
+[Realloc](realloc.md)örneğine bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

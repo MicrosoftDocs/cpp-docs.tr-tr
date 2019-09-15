@@ -1,10 +1,10 @@
 ---
 title: _cgets_s, _cgetws_s
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _cgetws_s
 - _cgets_s
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-conio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _cgets_s
 - cgets_s
@@ -30,19 +33,19 @@ helpviewer_keywords:
 - _cgetws_s function
 - cgetws_s function
 ms.assetid: 38b74897-afe6-4dd9-a43f-36a3c0d72c5c
-ms.openlocfilehash: 8341b775df3b9cbaececdfaa1f17e075d7c7416c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2039fc32cecb768c3c3fbc239446abedeb48f188
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62340591"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70939273"
 ---
-# <a name="cgetss-cgetwss"></a>_cgets_s, _cgetws_s
+# <a name="_cgets_s-_cgetws_s"></a>_cgets_s, _cgetws_s
 
-Konsoldan bir karakter dizesi alır. Bu sürümleri [_cgets ve _cgetws](../../c-runtime-library/cgets-cgetws.md) açıklandığı gibi güvenlik geliştirmeleri vardır [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
+Konsolundan bir karakter dizesi alır. [_Cal ve _cgetws](../../c-runtime-library/cgets-cgetws.md) 'nin bu SÜRÜMLERINDE, [CRT 'daki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklandığı gibi güvenlik geliştirmeleri vardır.
 
 > [!IMPORTANT]
-> Bu API, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -71,34 +74,34 @@ errno_t _cgetws_s(
 
 ### <a name="parameters"></a>Parametreler
 
-*Arabellek*<br/>
-Veri için depolama konumu.
+*arabelleğin*<br/>
+Veriler için depolama konumu.
 
 *numberOfElements*<br/>
-Okunacak karakter sayısı olan tek baytlı veya geniş karakterler, arabellek boyutu.
+Tek baytlık veya geniş karakterdeki arabelleğin boyutu, ayrıca okunacak en fazla karakter sayısıdır.
 
 *pSizeRead*<br/>
-Aslında okunan karakter sayısı.
+Gerçekte okunan karakterlerin sayısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa sıfır dönüş değeridir; Aksi takdirde bir hata kodu: bir hata oluşması durumunda.
+Başarılı olursa dönüş değeri sıfırdır; Aksi takdirde, bir hata oluşursa hata kodu.
 
 ### <a name="error-conditions"></a>Hata koşulları
 
-|*Arabellek*|*numberOfElements*|*pSizeRead*|döndürülecek|İçeriğini *arabelleği*|
+|*arabelleğin*|*numberOfElements*|*pSizeRead*|döndürülmesini|*Arabelleğin* içeriği|
 |--------------|------------------------|-----------------|------------|--------------------------|
-|**NULL**|Tüm|Tüm|**EINVAL**|yok|
-|Değil **NULL**|sıfır|Tüm|**EINVAL**|değiştirilmedi|
-|Değil **NULL**|Tüm|**NULL**|**EINVAL**|sıfır uzunluklu bir dize|
+|**DEĞER**|Kaydedilmemiş|Kaydedilmemiş|**EINVAL**|yok|
+|**Null** değil|sıfır|Kaydedilmemiş|**EINVAL**|değiştirilmedi|
+|**Null** değil|Kaydedilmemiş|**DEĞER**|**EINVAL**|sıfır uzunluklu dize|
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_cgets_s** ve **_cgetws_s** konsoldan okuyup bir dize ve dize (ile bir null Sonlandırıcı) kopyalayın *arabellek*. **_cgetws_s** dışında karakter boyutu, bu iki işlev davranışını aynıdır; işlevin geniş karakter sürümüdür. Dizeyi okumak için en büyük boyutu olarak geçirilen *numberOfElements* parametresi. Bu boyut, ek bir sonlandırıcı null karakteri içermelidir. Okunan karakter sayısını yerleştirilir *pSizeRead*.
+**_cgets_s** ve **_cgetws_s** konsolundan bir dize okur ve dizeyi (null Sonlandırıcı ile) *arabelleğe*kopyalayın. **_cgetws_s** , işlevinin geniş karakter sürümüdür; karakter boyutu dışında, bu iki işlevin davranışı aynıdır. Okunacak dizenin en büyük boyutu *numberOfElements* parametresi olarak geçirilir. Bu boyut, Sonlandırıcı null değeri için fazladan bir karakter içermelidir. Okunan karakterlerin gerçek sayısı *pSizeRead*içine yerleştirilir.
 
-İşlemi sırasında ya da parametrelerinin doğrularken bir hata meydana gelirse, geçersiz parametre işleyicisi açıklandığı gibi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md) . Yürütmenin devam etmesine izin verilirse **errno** ayarlanır **EINVAL** ve **EINVAL** döndürülür.
+İşlem sırasında veya parametrelerin doğrulanması sırasında bir hata oluşursa, [parametre doğrulama](../../c-runtime-library/parameter-validation.md) bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, **errno** **EINVAL** olarak ayarlanır ve **EINVAL** döndürülür.
 
-C++ dilinde bu işlevlerin kullanılması şablon aşırı yüklemeleriyle basitleştirilmiştir; aşırı yüklemeler arabellek uzunluğunu otomatik olarak, böylece bir boyut bağımsız değişkeni belirtme ihtiyacını ortadan kaldırır. çıkarabilir ve bunlar otomatik olarak eski ve daha az güvenli işlevlerle daha yeni ve güvenli karşılıklarını değiştirir. Daha fazla bilgi için [güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
+' C++De, bu işlevlerin kullanımı şablon aşırı yüklemeleri tarafından basitleştirilmiştir; aşırı yüklemeler arabellek uzunluğunu otomatik olarak çıkarabilir, böylece bir boyut bağımsız değişkeni belirtme gereksinimini ortadan kaldırır ve daha eski, daha az güvenli işlevleri, daha yeni ve daha güvenli karşılıklarıyla otomatik olarak değiştirebilir. Daha fazla bilgi için bkz. [Güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -110,8 +113,8 @@ C++ dilinde bu işlevlerin kullanılması şablon aşırı yüklemeleriyle basit
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_cgets_s**|\<conio.h >|
-|**_cgetws_s**|\<conio.h > veya \<wchar.h >|
+|**_cgets_s**|\<conio. h >|
+|**_cgetws_s**|\<conio. h > veya \<wchar. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

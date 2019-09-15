@@ -1,11 +1,11 @@
 ---
 title: catanh, catanhf, catanhl
 ms.date: 11/04/2016
-apiname:
+api_name:
 - catanh
 - catanhf
 - catanhl
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - catanh
 - catanhf
@@ -30,16 +33,16 @@ helpviewer_keywords:
 - catanhf function
 - catanhl function
 ms.assetid: 1b6021cb-647a-41b4-9d7f-919cc8b57b86
-ms.openlocfilehash: 8c71d4e44de72b54fd334fc2464ca221f36855a3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9b21427eb4ab1a3ec8eab10d52e636bf253bc947
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62340969"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70943230"
 ---
 # <a name="catanh-catanhf-catanhl"></a>catanh, catanhf, catanhl
 
-Dal keser gerçek ekseni aralığı [-1; + 1] dışında ile karmaşık bir sayının ters hiperbolik tanjant alır.
+Karmaşık bir sayının ters hiperbolik tanjantını alır; dal, gerçek eksen üzerinde [-1; + 1] aralığının dışına keser.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -64,21 +67,21 @@ _Lcomplex catanhl(
 ### <a name="parameters"></a>Parametreler
 
 *z*<br/>
-Radyan cinsinden açı temsil eden bir karmaşık sayı.
+Radyan cinsinden bir açıyı temsil eden karmaşık bir sayı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Ters hiperbolik tanjantını *z*, radyan cinsinden açı. Sonuç gerçek ekseni ve aralık içinde sınırsız [-iπ/2; + iπ/2] sanal ekseni. Bir etki alanı hatası meydana gelir *z* [-1, + 1] aralığının dışında. Kutup hata oluşacaktır *z* -1 veya + 1.
+Radyan cinsinden *z*'nin ters hiperbolik tanjantı. Sonuç, gerçek eksen ve [-iπ/2; + iπ/2] aralığında, sanal eksen üzerinde sınırsız olarak yapılır. *Z* , [-1, + 1] aralığının dışındaysa bir etki alanı hatası meydana gelir. *Z* -1 veya + 1 olduğunda bir direk hatası oluşur.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Çünkü C++ aşırı yüklemesi, sağlayan yüklerini çağırabilirsiniz **catanh** alan ve getiren **_Fcomplex** ve **_Lcomplex** değerleri. C programında **catanh** her zaman alan ve döndüren bir **_Dcomplex** değeri.
+Aşırı C++ yüklemeye izin verdiğinden, **_Fcomplex** ve **_lcomplex** değerlerini alıp döndüren **catanh** 'nin aşırı yüklerini çağırabilirsiniz. C programında **catanh** her zaman **_dcomplex** değeri alır ve döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|C üstbilgisi|C++ üst bilgisi|
+|Yordam|C üstbilgisi|C++üst bilgi|
 |-------------|--------------|------------------|
-|**catanh**,               **catanhf**, **catanhl**|\<Complex.h >|\<ccomplex >|
+|**catanh**, **catanhf**, **catanhl**|\<karmaşık. h >|\<ccomplex >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

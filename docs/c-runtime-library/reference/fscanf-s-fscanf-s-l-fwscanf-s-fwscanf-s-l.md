@@ -1,12 +1,12 @@
 ---
 title: fscanf_s, _fscanf_s_l, fwscanf_s, _fwscanf_s_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - fwscanf_s
 - _fscanf_s_l
 - _fwscanf_s_l
 - fscanf_s
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _fwscanf_s_l
 - _fscanf_s_l
@@ -40,16 +43,16 @@ helpviewer_keywords:
 - streams [C++], reading formatted data from
 - fscanf_s_l function
 ms.assetid: b6e88194-714b-4322-be82-1cc0b343fe01
-ms.openlocfilehash: f9c1686d7e42e0e885a65e153ee4e1ff2be01f27
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ceeba78aa70d3569742415551d20296d726d896e
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62332929"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70956556"
 ---
-# <a name="fscanfs-fscanfsl-fwscanfs-fwscanfsl"></a>fscanf_s, _fscanf_s_l, fwscanf_s, _fwscanf_s_l
+# <a name="fscanf_s-_fscanf_s_l-fwscanf_s-_fwscanf_s_l"></a>fscanf_s, _fscanf_s_l, fwscanf_s, _fwscanf_s_l
 
-Biçimlendirilmiş verileri bir akıştan okur. Bu sürümleri [fscanf, _fscanf_l, fwscanf, _fwscanf_l](fscanf-fscanf-l-fwscanf-fwscanf-l.md) açıklandığı gibi güvenlik geliştirmeleri vardır [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
+Bir akıştan biçimlendirilen verileri okur. [Fscanf, _fscanf_l, fwscanf, _fwscanf_l](fscanf-fscanf-l-fwscanf-fwscanf-l.md) 'nin bu sürümleri [CRT 'daki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklandığı gibi güvenlik geliştirmeleri içerir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -80,38 +83,38 @@ int _fwscanf_s_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*Stream*<br/>
-İşaretçi **dosya** yapısı.
+*ka*<br/>
+**Dosya** yapısına yönelik işaretçi.
 
-*Biçim*<br/>
+*format*<br/>
 Biçim denetimi dizesi.
 
-*Bağımsız değişken*<br/>
+*değişkendir*<br/>
 İsteğe bağlı bağımsız değişkenler.
 
-*Yerel ayar*<br/>
+*ayarlar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu işlevlerin her biri, başarıyla dönüştürülen ve atanan alanların sayısını döndürür; dönüş değeri, Okunmuş ancak atanmamış alanları içermez. 0 değeri hiçbir alan atanmamış belirtir. Bir hata oluşursa veya dosya akışı sonuna ilk dönüştürmeden önce ulaşılırsa, dönüş değeri olduğu **EOF** için **fscanf_s** ve **fwscanf_s**.
+Bu işlevlerin her biri, başarıyla dönüştürülen ve atanan alanların sayısını döndürür; dönüş değeri, okunan ancak atanmamış alanları içermez. 0 dönüş değeri hiçbir alan atanmadığını gösterir. Bir hata oluşursa veya dosya akışının sonuna ilk dönüştürmeden önce ulaşılırsa, **fscanf_s** ve **fwscanf_s**için dönüş değeri **EOF** olur.
 
-Bu işlevler kendi parametrelerini doğrular. Varsa *stream* bir geçersiz dosya işaretçisiyse veya *biçimi* null bir işaretçiyse, açıklandığı gibi bu işlevler geçersiz parametre işleyicisini çağırır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse, bu işlevler döndürür **EOF** ayarlayıp **errno** için **EINVAL**.
+Bu işlevler, parametrelerini doğrular. *Stream* geçersiz bir dosya işaretçisiyse veya *Biçim* null işaretçisiyse, bu işlevler [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **EOF** döndürür ve **errno** , **EINVAL**olarak ayarlanır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Fscanf_s** işlevi, geçerli konumundan verileri okur *stream* tarafından verilen konumlara *bağımsız değişken* (varsa). Her *bağımsız değişken* içinde bir tür belirleyiciye karşılık gelen bir tür bir değişken, bir işaretçi olmalıdır *biçimi*. *Biçim* giriş alanlarının yorumunu aynı denetler ve form ve işleve *biçimi* için bağımsız değişken **scanf_s**; bkz [biçim belirtimi alanları: scanf ve wscanf işlevleri](../../c-runtime-library/format-specification-fields-scanf-and-wscanf-functions.md) açıklamasını *biçimi*.  **fwscanf_s** geniş karakterli sürümüdür **fscanf_s**; biçim bağımsız değişkenler **fwscanf_s** geniş karakterli bir dizedir. Bu işlevler, akış ANSI modunda açıldığında aynı şekilde davranır. **fscanf_s** şu anda UNICODE akışından girişi desteklemez.
+**Fscanf_s** işlevi, geçerli *akış* konumundaki verileri *bağımsız değişken* (varsa) tarafından verilen konumlara okur. Her *bağımsız değişken* , *biçimdeki*bir tür belirticisine karşılık gelen bir tür değişkenine bir işaretçi olmalıdır. *Biçim* , giriş alanlarının yorumunu denetler ve **scanf_s**için *Biçim* bağımsız değişkeniyle aynı forma ve işleve sahiptir; *Biçimlendirme açıklaması için bkz.* [Biçim belirtimi alanları: scanf ve wscanf işlevleri](../../c-runtime-library/format-specification-fields-scanf-and-wscanf-functions.md) .  **fwscanf_s** , **fscanf_s**öğesinin geniş karakterli bir sürümüdür; **fwscanf_s** biçim bağımsız değişkeni geniş karakterli bir dizedir. Bu işlevler akış ANSI modunda açılırsa aynı şekilde davranır. **fscanf_s** Şu anda UNICODE akışından girişi desteklemiyor.
 
-Daha güvenli işlevler arasındaki temel fark (sahip **_Yanları** soneki) ve diğer sürümleri daha güvenli işlevler her karakter cinsinden boyutu önermesinden **c**, **C**, **s**, **S**, ve **[** türü alanı değişkeni takip bağımsız değişken olarak geçirilecek. Daha fazla bilgi için [scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md) ve [scanf genişlik belirtimi](../../c-runtime-library/scanf-width-specification.md).
+Daha güvenli işlevler ( **_s** sonekine sahiptir) ve diğer sürümler arasındaki temel fark, daha güvenli işlevlerin her **c**, **c**, **s** **, ve** **[** Type alanının karakter cinsinden boyutunu gerektirleridir değişken hemen sonrasında bir bağımsız değişken olarak geçildi. Daha fazla bilgi için bkz. [scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md) ve [scanf Width belirtimi](../../c-runtime-library/scanf-width-specification.md).
 
 > [!NOTE]
-> Boyut parametresi türünde **işaretsiz**değil **size_t**.
+> Boyut parametresi, **size_t**değil, **işaretsiz**türündedir.
 
-Sahip bu işlevlerin sürümleri **_l** sonekine dışında geçerli iş parçacığı yerel ayarı yerine iletilen yerel ayar parametresini kullanırlar.
+**_L** sonekine sahip bu işlevlerin sürümleri, geçerli iş parçacığı yerel ayarı yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_ftscanf_s**|**fscanf_s**|**fscanf_s**|**fwscanf_s**|
 |**_ftscanf_s_l**|**_fscanf_s_l**|**_fscanf_s_l**|**_fwscanf_s_l**|
@@ -120,8 +123,8 @@ Sahip bu işlevlerin sürümleri **_l** sonekine dışında geçerli iş parçac
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**fscanf_s**, **_fscanf_s_l**|\<stdio.h >|
-|**fwscanf_s**, **_fwscanf_s_l**|\<stdio.h > veya \<wchar.h >|
+|**fscanf_s**, **_fscanf_s_l**|\<stdio. h >|
+|**fwscanf_s**, **_fwscanf_s_l**|\<stdio. h > veya \<wchar. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -182,7 +185,7 @@ x
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Stream g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [_cscanf_s, _cscanf_s_l, _cwscanf_s, _cwscanf_s_l](cscanf-s-cscanf-s-l-cwscanf-s-cwscanf-s-l.md)<br/>
 [fprintf_s, _fprintf_s_l, fwprintf_s, _fwprintf_s_l](fprintf-s-fprintf-s-l-fwprintf-s-fwprintf-s-l.md)<br/>
 [scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md)<br/>

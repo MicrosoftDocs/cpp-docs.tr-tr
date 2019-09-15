@@ -1,10 +1,10 @@
 ---
 title: _initterm, _initterm_e
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _initterm_e
 - _initterm
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-runtime-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _initterm_e
 - initterm
@@ -28,18 +31,18 @@ helpviewer_keywords:
 - _initterm function
 - _initterm_e function
 ms.assetid: 85131efe-c747-429a-8897-bcdedb000172
-ms.openlocfilehash: 65963e95507d4d6444ebcc9038b5b8cf797f9feb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7e85494bf6c8215d03602ee112e1ff2c0f1cf6f2
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62331668"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70954626"
 ---
-# <a name="initterm-initterme"></a>_initterm, _initterm_e
+# <a name="_initterm-_initterm_e"></a>_initterm, _initterm_e
 
-İşlev işaretçileri tablosu izlemek ve bunları başlatmak iç yöntemler.
+İşlev işaretçilerinin bir tablosunu sunan ve bunları başlatacak iç Yöntemler.
 
-İlk işaretçi tablosundaki Başlangıç konumu ve ikinci işaretçi bitiş konumu.
+İlk işaretçi, tablodaki başlangıç konumu ve ikinci işaretçi ise bitiş konumudur.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -57,13 +60,13 @@ int __cdecl _initterm_e(
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bir sıfır olmayan hata kodu; bir başlatma başarısız olursa ve bir hata oluşturur Eğer hiç Hata oluşmazsa 0.
+Bir başlatma başarısız olursa sıfır olmayan bir hata kodu, bir hata oluşturur; herhangi bir hata oluşursa 0.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu yöntemler, yalnızca C++ program başlatma sırasında dahili olarak adlandırılır. Bu yöntemler bir programda çağırmayın.
+Bu yöntemler yalnızca bir C++ programın başlatılması sırasında dahili olarak çağırılır. Bu yöntemleri bir programda çağırmayın.
 
-Bu yöntemler bir tablo işlevi girişlerinin yol, bunlar atla **NULL** girişleri ve devam edin.
+Bu yöntemler bir işlev girdileri tablosu üzerinde gezinirken, **null** girişleri atlar ve devam eder.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

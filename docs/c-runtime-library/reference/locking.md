@@ -1,9 +1,9 @@
 ---
 title: _locking
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _locking
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _locking
 helpviewer_keywords:
@@ -25,16 +28,16 @@ helpviewer_keywords:
 - files [C++], locking
 - _locking function
 ms.assetid: 099aaac1-d4ca-4827-aed6-24dff9844150
-ms.openlocfilehash: 90327ed3388d4f18e0f64f92c33112c9ddd800f5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4450c511b9d98c31b7e6a777f54f3bd8e0affbb7
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62157469"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70953263"
 ---
-# <a name="locking"></a>_locking
+# <a name="_locking"></a>_locking
 
-Kilitler veya bayt bir dosyanın kilidini açar.
+Bir dosyanın baytlarını kilitler veya kilitlerini kaldırır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -51,52 +54,52 @@ int _locking(
 *FD*<br/>
 Dosya tanımlayıcısı.
 
-*Modu*<br/>
-Gerçekleştirilecek eylem kilitleniyor.
+*modundaysa*<br/>
+Gerçekleştirilecek kilit eylemi.
 
-*nbytes*<br/>
-Kilitlemek için bayt sayısı.
+*nBytes*<br/>
+Kilitlenecek bayt sayısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_locking** başarılı olursa 0 döndürür. Dönüş değeri-1 hata, bu durumda gösteriyor [errno](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) aşağıdaki değerlerden birine ayarlayın.
+**_kilitleme** başarılı olursa 0 döndürür. -1 ' in dönüş değeri hatayı gösterir, bu durumda [errno](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) aşağıdaki değerlerden birine ayarlanır.
 
 |errno değeri|Koşul|
 |-|-|
-| **SPAWN** | (Zaten kilitli veya kilidi dosyası) ihlali kilitleniyor. |
+| **EACCES** | Kilitleme ihlali (dosya zaten kilitli veya kilidi açılmış). |
 | **EBADF** | Geçersiz dosya tanımlayıcısı. |
-| **EDEADLOCK** | Kilit ihlali. Ne zaman iade **_LK_LOCK** veya **_LK_RLCK** bayrağı belirtildi ve 10 denemeden sonra dosya kilitlenemez. |
-| **EINVAL** | Geçersiz bağımsız değişken için verilen **_locking**. |
+| **EDEADLOCK** | Kilitleme ihlali. **_LK_LOCK** veya **_LK_RLCK** bayrağı belirtildiğinde ve 10 denemeden sonra dosya kilitlenemediğinde döndürülür. |
+| **EINVAL** | **_Kilitleme**için geçersiz bir bağımsız değişken verildi. |
 
-Gibi bir geçersiz dosya tanımlayıcısı hatalı bir parametre nedeniyle başarısız olması durumunda geçersiz parametre işleyicisi açıklandığı gibi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md).
+Hata, geçersiz bir dosya tanımlayıcısı gibi hatalı bir parametre nedeniyle kaynaklanıyorsa, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Locking** işlevi kilitler ya da kilidini açarak *nbytes* tarafından belirtilen dosyanın bayt *fd*. Bir dosyadaki baytları kilitleme erişim için bu baytlardan başka işlemler tarafından engeller. Tüm kilitleme veya kilidini açma dosya işaretçisini geçerli konumunda başlar ve sonraki geçer *nbytes* bayt. Kilit bayt mümkündür dosya sonunu geçti.
+**_Lock** işlevi *FD*tarafından belirtilen dosyanın *nBytes* baytını kilitler veya kilidini açar. Bir dosyadaki kilitleme baytları diğer işlemlere göre bu baytlara erişimi engeller. Tüm kilitleme veya kilit açma işlemi, dosya işaretçisinin geçerli konumunda başlar ve sonraki *nBayt* baytları için devam eder. Dosya sonunun ötesinde baytları kilitlemek mümkündür.
 
-*modu* Locking.h içinde tanımlanan aşağıdaki bildirim sabitleri biri olmalıdır.
+*mod* , kilitleme. h içinde tanımlanan aşağıdaki bildirim sabitlerinden biri olmalıdır.
 
-|*modu* değeri|Efekt|
+|*mod* değeri|Efekt|
 |-|-|
-| **_LK_LOCK** | Belirtilen bayt kilitler. Bayt kilitlenemez, program yeniden 1 saniye sonra hemen çalışır. 10 denemeden sonra bayt kilitlenemez, sabit bir hata döndürür. |
-| **_LK_NBLCK** | Belirtilen bayt kilitler. Bayt kilitlenemez, sabit bir hata döndürür. |
-| **_LK_NBRLCK** | Aynı **_LK_NBLCK**. |
-| **_LK_RLCK** | Aynı **_LK_LOCK**. |
-| **_LK_UNLCK** | Önceden kilitlenmiş gerekir belirtilen bayt kilidini açar. |
+| **_LK_LOCK** | Belirtilen baytları kilitler. Baytlar kilitlenmediyse, program 1 saniye sonra hemen yeniden dener. 10 denemeden sonra baytlar kilitlenmediyse, sabit bir hata döndürür. |
+| **_LK_NBLCK** | Belirtilen baytları kilitler. Baytlar kilitlenmediyse, sabit bir hata döndürür. |
+| **_LK_NBRLCK** | **_LK_NBLCK**ile aynı. |
+| **_LK_RLCK** | **_LK_LOCK**ile aynı. |
+| **_LK_UNLCK** | Daha önce kilitli olması gereken belirtilen baytların kilidini açar. |
 
-Bir dosyanın üst üste birden çok bölgede kilitlenebilir. Bir bölge kilidi açılıyor önceden kilitlenmiş gerekir. **_locking** birleştirme bitişik bölgeleri yapar; kilitli iki bölgeleri bitişikse, her bölgede ayrı olarak kilidinin açık olması gerekir. Bölgeler, yalnızca kısa bir süre kilitli olması ve bir dosyayı kapatma veya program çıkmadan önce kilidi.
+Bir dosyanın örtüşmeyen birden çok bölgesi kilitlenebilir. Kilitlenmiş bir bölgenin daha önce kilitli olması gerekir. **_kilitleme** bitişik bölgeleri birleştirmez; iki kilitli bölge bitişik ise, her bölgenin ayrı ayrı açılması gerekir. Bölgeler yalnızca kısa bir süre kilitli olmalıdır ve bir dosyayı kapatmadan veya programdan çıkmadan önce kilidinin açılması gerekir.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|İsteğe bağlı başlık|
 |-------------|---------------------|---------------------|
-|**_locking**|\<io.h > ve \<sys/locking.h >|\<errno.h >|
+|**_locking**|\<GÇ. h > ve \<sys/kilitleme. h >|\<errno. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 
-Tüm sürümleri [C çalışma zamanı kitaplıkları](../../c-runtime-library/crt-library-features.md).
+[C çalışma zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md)tüm sürümleri.
 
 ## <a name="example"></a>Örnek
 
@@ -149,7 +152,7 @@ int main( void )
 }
 ```
 
-### <a name="input-crtlockingtxt"></a>Giriş: crt_locking.txt
+### <a name="input-crt_lockingtxt"></a>Giriş: crt_locking. txt
 
 ```Input
 The first thirty bytes of this file will be locked.

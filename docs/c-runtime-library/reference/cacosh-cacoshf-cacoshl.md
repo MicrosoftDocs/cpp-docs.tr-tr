@@ -1,11 +1,11 @@
 ---
 title: cacosh, cacoshf, cacoshl
 ms.date: 11/04/2016
-apiname:
+api_name:
 - cacosh
 - cacoshf
 - cacoshl
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - cacosh
 - cacoshf
@@ -30,16 +33,16 @@ helpviewer_keywords:
 - cacoshf function
 - cacoshl function
 ms.assetid: 83fd05eb-3587-4741-9be6-589a830a1703
-ms.openlocfilehash: aa31dfa1b29eda18d34528fc8aa9544e58a5a082
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 05ba0b37540e9f1b2dbb4d255e0fa033b54762d1
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62340735"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70943398"
 ---
 # <a name="cacosh-cacoshf-cacoshl"></a>cacosh, cacoshf, cacoshl
 
-Karmaşık bir sayının ters hiperbolik Kosinüs, değerleri gerçek ekseni boyunca 1'den daha az kesin bir dal ile alır. biçimindeki telefon numarasıdır.
+Gerçek eksen üzerinde 1 ' den küçük olan bir dal kesilmiş bir karmaşık sayının ters hiperbolik kosinüsünü alır. biçimindeki telefon numarasıdır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -64,21 +67,21 @@ _Lcomplex cacoshl(
 ### <a name="parameters"></a>Parametreler
 
 *z*<br/>
-Radyan cinsinden açı temsil eden bir karmaşık sayı.
+Radyan cinsinden bir açıyı temsil eden karmaşık bir sayı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Ters hiperbolik kosinüsünü *z*, radyan cinsinden açı. Sınırsız ve negatif olmayan gerçek ekseni ve aralığında sonucudur [-iπ, + iπ] sanal ekseni.
+Radyan cinsinden *z*'nin ters hiperbolik kosinüsü. Sonuç sınırsız ve negatif olmayan gerçek eksen ve [-iπ, + iπ] aralığında ise sanal eksen üzerinde.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Çünkü C++ aşırı yüklemesi, sağlayan yüklerini çağırabilirsiniz **cacosh** alan ve getiren **_Fcomplex** ve **_Lcomplex** değerleri. C programında **cacosh** her zaman alan ve döndüren bir **_Dcomplex** değeri.
+Aşırı C++ yüklemeye izin verdiğinden, **_Fcomplex** ve **_lcomplex** değerlerini alıp döndüren **cacosh** aşırı yüklerini çağırabilirsiniz. C programında, **cacosh** her zaman bir **_dcomplex** değeri alır ve döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|C üstbilgisi|C++ üst bilgisi|
+|Yordam|C üstbilgisi|C++üst bilgi|
 |-------------|--------------|------------------|
-|**cacosh**,               **cacoshf**, **cacoshl**|\<Complex.h >|\<ccomplex >|
+|**cacosh**, **cacoshf**, **cacoshl**|\<karmaşık. h >|\<ccomplex >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

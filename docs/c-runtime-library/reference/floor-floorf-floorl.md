@@ -1,11 +1,11 @@
 ---
 title: floor, floorf, floorl
 ms.date: 04/05/2018
-apiname:
+api_name:
 - floorf
 - floorl
 - floor
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - floor
 - floorl
@@ -29,16 +32,16 @@ helpviewer_keywords:
 - calculating floors of values
 - floorl function
 ms.assetid: e9955f70-d659-414f-8050-132e13c8ff36
-ms.openlocfilehash: 050b7ea0eedf07666fa52145eeaf43f8fde2e18b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c646437b4a1d79ef79e53d79fcbc342e5360f3cd
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62333592"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70957151"
 ---
 # <a name="floor-floorf-floorl"></a>floor, floorf, floorl
 
-Bir değer tabanını hesaplar.
+Bir değerin tabanını hesaplar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -67,23 +70,23 @@ Kayan nokta değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**Kat** işlevleri, küçük veya eşit en büyük tamsayıyı temsil eden bir kayan nokta değeri döndürür *x*. Döndürülen hata yok.
+**Floor** işlevleri, *x*değerinden küçük veya buna eşit olan en büyük tamsayıyı temsil eden bir kayan nokta değeri döndürür. Hata döndürme yok.
 
 |Giriş|SEH özel durumu|Matherr özel durumu|
 |-----------|-------------------|-----------------------|
-|± QNAN, ONRAKİNİ BUL|yok|_DOMAIN|
+|± QNAN, IND|yok|_DOMAIN|
 
-**floor** , Streaming SIMD Extensions 2 (SSE2) kullanan bir uygulamaya sahiptir. Bilgi ve SSE2 uygulamasını kullanmayla ilgili kısıtlamalar için bkz. [_set_SSE2_enable](set-sse2-enable.md).
+**tabanda** Streaming SIMD Extensions 2 (SSE2) kullanan bir uygulama vardır. SSE2 uygulamasını kullanma hakkında bilgi ve sınırlamalar için bkz. [_Set_sse2_enable](set-sse2-enable.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ sağlar aşırı yüklemesi, aşırı yüklemesini çağırabilirsiniz **kat** alan ve getiren **float** ve **uzun** **çift** değerleri. C programında **kat** her zaman alan ve döndüren bir **çift**.
+C++aşırı yüklemeye izin verir, böylece **float** ve **Long** **Double** değerlerini alan ve döndüren **zemin** yüklerini çağırabilirsiniz. C programında, **kat** her zaman bir **Double**alır ve döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**floor**, **floorf**, **floorl**|\<Math.h >|
+|**kat**, **floorf**, **floorl**|\<Math. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

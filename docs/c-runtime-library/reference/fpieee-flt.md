@@ -1,9 +1,9 @@
 ---
 title: _fpieee_flt
 ms.date: 04/05/2018
-apiname:
+api_name:
 - _fpieee_flt
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-runtime-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - fpieee_flt
 - _fpieee_flt
@@ -25,16 +28,16 @@ helpviewer_keywords:
 - floating-point exception handling
 - fpieee_flt function
 ms.assetid: 2bc4801e-0eed-4e73-b518-215da8cc9740
-ms.openlocfilehash: 9a49ec403b1cb95407b0a366accf1d9374d9cb22
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8835a3184300f1c56f1123a09aa48cd34a387c87
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62333254"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70957023"
 ---
-# <a name="fpieeeflt"></a>_fpieee_flt
+# <a name="_fpieee_flt"></a>_fpieee_flt
 
-IEEE kayan nokta özel durumları için bir kullanıcı tanımlı yakalama işleyici çağırır.
+IEEE kayan nokta özel durumları için Kullanıcı tanımlı bir tuzak işleyicisi çağırır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -48,39 +51,39 @@ int _fpieee_flt(
 
 ### <a name="parameters"></a>Parametreler
 
-*excCode*<br/>
+*Tüketim kodu*<br/>
 Özel durum kodu.
 
 *excInfo*<br/>
 Windows NT özel durum bilgileri yapısına yönelik işaretçi.
 
-*İşleyici*<br/>
-Kullanıcının IEEE yakalama işleyici rutinini işaretçisi.
+*Iy*<br/>
+Kullanıcının IEEE tuzak-işleyici yordamına yönelik işaretçi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Dönüş değeri **_fpieee_flt** tarafından döndürülen değer *işleyici*. IEEE filtre yordamı, bu nedenle, kullanılabilir bir yapılandırılmış özel durum işleme (SEH) mekanizmasını yan tümcesi dışında.
+**_Fpieee_flt** dönüş değeri *işleyici*tarafından döndürülen değerdir. Bu nedenle, IEEE filtresi yordamı yapılandırılmış bir özel durum işleme (SEH) mekanizmasının except yan tümcesinde kullanılabilir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Fpieee_flt** işlevi IEEE kayan nokta özel durumları için bir kullanıcı tanımlı yakalama işleyicisine çağırır ve tüm ilgili bilgiler sağlar. Bu yordam, gerektiğinde kendi IEEE özel durum işleyici çağırır SEH mekanizması içinde bir özel durum filtresi olarak görev yapar.
+**_Fpieee_flt** IşLEVI, IEEE kayan nokta özel durumları için Kullanıcı tanımlı bir tuzak işleyicisi çağırır ve ilgili tüm bilgileri sağlar. Bu yordam, gerektiğinde kendi IEEE özel durum işleyicinizi çağıran SEH mekanizmasında özel durum filtresi görevi görür.
 
-**_Fpıeee_record** Fpieee.h içinde tanımlanan yapısı, bir IEEE kayan nokta özel durumuyla ilgili bilgileri içerir. Bu yapı tarafından kullanıcı tanımlı yakalama işleyicisine geçirilir **_fpieee_flt**.
+Fpieee. h içinde tanımlanan **_Fpieee_record** yapısı, bir IEEE kayan nokta özel durumu ile ilgili bilgiler içerir. Bu yapı, **_fpieee_flt**tarafından Kullanıcı tanımlı tuzak işleyicisine geçirilir.
 
-|_Fpıeee_record alan|Açıklama|
+|_FPIEEE_RECORD alanı|Açıklama|
 |----------------------------|-----------------|
-|**RoundingMode**<br/>**Duyarlık**|Bunlar **işaretsiz** **int** alanları oluşan özel durum zaman kayan nokta ortamı hakkında bilgi içerir.|
-|**İşlem**|Bu **işaretsiz** **int** alan yakalama nedeniyle işlem türünü belirtir. Türü bir karşılaştırma ise (**_FpCodeCompare**), özel sağlayabilirsiniz **_FPIEEE_COMPARE_RESULT** değerleri (Fpieee.h içinde tanımlandığı şekilde) **Result.Value** alan. Dönüştürme türü (**_FpCodeConvert**) yakalama bir kayan nokta dönüştürme işlemi sırasında oluştuğunu gösterir. Bakabilirsiniz **işlenen1** ve **sonucu** denenen bir dönüştürme türünü belirlemek için türleri.|
-|**İşlenen1**<br/>**İşlenen2**<br/>**Sonuç**|Bunlar **_FPIEEE_VALUE** türlerini ve değerlerini önerilen sonucu işlenenler ve yapıları gösterir. Her yapı, bu alanları içerir:<br /><br /> **OperandValid** - yanıt veren değerinin geçerli olup olmadığını belirten bayrak.<br />**Biçim** -ilgili değerin veri türü. Buna karşılık gelen değer, geçerli olmasa bile biçim türü döndürdü.<br />**Değer** -sonuç ya da işlenen veri değeri.|
-|**Nedeni**<br/>**Enable**<br/>**Status**|**_FPIEEE_EXCEPTION_FLAGS** kayan nokta özel durum türüne göre bir bit alanı içerir. Bu alanlar ve sağlanan özel durumlarını maskelemek için kullanılan bağımsız değişkenler arasındaki ilişkiyi yoktur [_controlfp](control87-controlfp-control87-2.md). Her bitin tam anlamı bağlam üzerinde bağlıdır:<br /><br /> **Neden** -her set bit gerçekleşmesine neden olan belirli özel durum belirtir.<br />**Etkinleştirme** -her set bit belirli özel durum şu anda maskelenmemiş belirtir.<br />**Durum** -her set bit belirli özel durum şu anda beklemede olduğunu gösterir. Bu tarafından maskelenen çünkü gündeme gelmiş değil özel durumları içerir **_controlfp**.|
+|**RoundingMode**<br/>**Duyarlılık**|Bu **imzasız** **int** alanları, özel durumun gerçekleştiği sırada kayan nokta ortamı hakkında bilgiler içerir.|
+|**İşlem**|Bu **işaretsiz** **int** alanı, tuzağa neden olan işlem türünü gösterir. Tür bir karşılaştırma ( **_Fpcodecompare**) Ise, **Result. Value** alanındaki özel **_Fpieee_compare_result** değerlerinden birini (fpieee. h içinde tanımlandığı gibi) sağlayabilirsiniz. Dönüştürme türü ( **_Fpcodeconvert**), bir kayan nokta dönüştürme işlemi sırasında yakalamanın oluştuğunu belirtir. Denenen dönüştürme türünü öğrenmek için **Operand1** ve **sonuç** türlerine bakabilirsiniz.|
+|**Operand1**<br/>**İşlenen2**<br/>**Sonuç**|Bu **_Fpieee_value** yapıları, önerilen sonucun ve işlenenlerinin türlerini ve değerlerini gösterir. Her yapı şu alanları içerir:<br /><br /> Yanıt veren değerin geçerli olup olmadığını belirten **ılandvalid** -Flag.<br />**Biçim** -karşılık gelen değerin veri türü. Biçim türü, karşılık gelen değer geçerli olmasa bile döndürülebilir.<br />**Değer** -sonuç veya işlenen veri değeri.|
+|**Nedeni**<br/>**Enable**<br/>**Status**|**_Fpieee_exception_flags** kayan nokta özel durumu türü başına bir bit alanı içeriyor. Bu alanlar ve [_controlfp](control87-controlfp-control87-2.md)için sağlanan özel durumları maskelemek için kullanılan bağımsız değişkenler arasında bir yazışmalar vardır. Her bitin tam anlamı bağlama göre değişir:<br /><br /> **Neden** -her küme biti, oluşturulan özel durumu gösterir.<br />**Etkinleştir** -her küme bit, belirli bir özel durumun maskelenmemiş olduğunu gösterir.<br />**Durum** -her küme biti, belirli bir özel durumun şu anda beklemede olduğunu gösterir. Bu, **_controlfp**tarafından maskelendikleri için, desteklenmeyen özel durumları içerir.|
 
-Bunları etkinleştirmek, devre dışı bırakılmış bekleyen özel durumlar harekete geçirilir. Bu kullanırken tanımsız davranışlara neden olabilir **_fpieee_flt** özel durum filtresi olarak. Her zaman çağrı [_clearfp](clear87-clearfp.md) kayan nokta özel durumlarını etkinleştirmeden önce.
+Devre dışı bırakılan bekleyen özel durumlar, bunları etkinleştirdiğinizde tetiklenir. Bu, özel durum filtresi olarak **_fpieee_flt** kullanılırken tanımsız davranışa neden olabilir. Kayan nokta özel durumlarını etkinleştirmeden önce her zaman [_clearfp](clear87-clearfp.md) 'yi çağırın.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**_fpieee_flt**|\<fpieee.h >|
+|**_fpieee_flt**|\<fpieee. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

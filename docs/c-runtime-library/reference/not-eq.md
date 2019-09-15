@@ -1,7 +1,7 @@
 ---
 title: not_eq
 ms.date: 11/04/2016
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -12,7 +12,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - not_eq
 - std::not_eq
@@ -20,14 +23,14 @@ f1_keywords:
 helpviewer_keywords:
 - not_eq function
 ms.assetid: d87ad299-8b50-4393-a57f-06f70e1f23fb
-ms.openlocfilehash: 881aae0ba511d8339b6911720b6fc481ff2f59c0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 784673e2f314c97490511f69a33847cb824c8d7b
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62156180"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70951275"
 ---
-# <a name="noteq"></a>not_eq
+# <a name="not_eq"></a>not_eq
 
 != işleci alternatifi.
 
@@ -70,4 +73,4 @@ a is not equal to b
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<iso646.h >
+**Üst bilgi:** \<iso646. h >

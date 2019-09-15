@@ -1,9 +1,9 @@
 ---
 title: fread_s
 ms.date: 11/04/2016
-apiname:
+api_name:
 - fread_s
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,19 +15,22 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - fread_s
 - stdio/fread_s
 ms.assetid: ce735de0-f005-435d-a8f2-6f4b80ac775e
-ms.openlocfilehash: 1adc999d37025392f03a11daebfffdeeb637d92b
-ms.sourcegitcommit: 878a164fe6d550ca81ab87d8425c8d3cd52fe384
+ms.openlocfilehash: d1f1756af7427ecdfc8ff332f4a2211984a177d8
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68376141"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70956842"
 ---
-# <a name="freads"></a>fread_s
+# <a name="fread_s"></a>fread_s
 
 Akıştan verileri okur. [Fread](fread.md) 'in bu sürümünde [CRT 'daki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklandığı gibi güvenlik geliştirmeleri vardır.
 

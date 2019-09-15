@@ -1,10 +1,10 @@
 ---
 title: _lseek, _lseeki64
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _lseeki64
 - _lseek
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _lseeki64
 - _lseek
@@ -29,16 +32,16 @@ helpviewer_keywords:
 - file pointers [C++], moving
 - seek file pointers
 ms.assetid: aba8a768-d40e-48c3-b38e-473dbd782f93
-ms.openlocfilehash: 4d0320b45cb8cd99f1d9f6494b7dcb17bc545a81
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 67bcce2a9936cd09973e8ddf1828704944866439
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62285932"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70952980"
 ---
-# <a name="lseek-lseeki64"></a>_lseek, _lseeki64
+# <a name="_lseek-_lseeki64"></a>_lseek, _lseeki64
 
-Bir dosya işaretçisiyse, belirtilen konuma taşır.
+Bir dosya işaretçisini belirtilen konuma kaydırır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -58,44 +61,44 @@ __int64 _lseeki64(
 ### <a name="parameters"></a>Parametreler
 
 *FD*<br/>
-Açık olan bir dosyaya başvuran dosya tanımlayıcısı.
+Açık bir dosyaya başvuran dosya tanımlayıcısı.
 
-*uzaklık*<br/>
-Bayt sayısı *kaynak*.
+*konumu*<br/>
+*Kaynaktan*gelen bayt sayısı.
 
-*Kaynak*<br/>
+*tıdır*<br/>
 Başlangıç konumu.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_lseek** dosyanın yeni konumunu başlangıçtan itibaren bayt cinsinden uzaklığı döndürür. **_lseeki64** uzaklığı bir 64-bit tamsayı olarak döndürür. İşlev bir hatayı belirtmek için-1 L döndürür. Hatalı dosya tanımlayıcısı veya değeri gibi geçersiz bir parametre geçirilmiş *kaynak* geçersiz veya tarafından belirtilen konumdaki *uzaklığı* olan dosya başlamadan önce geçersiz parametre işleyicisi olduğu içinde açıklanan şekilde çağırılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütme devam etmesine izin verilirse bu işlevler kümesi **errno** için **EBADF** ve -1 L döndürür. Cihazlarda (terminaller ve yazıcılar gibi) arayan yetersiz, dönüş değeri tanımsızdır.
+**_lseek** , dosyanın başından başlayarak yeni konumun bayt cinsinden sapmasını döndürür. **_lseeki64** , 64 bitlik bir tamsayının sapmasını döndürür. İşlevi bir hatayı göstermek için-1L döndürür. Hatalı bir dosya tanımlayıcısı gibi geçersiz bir parametre geçirilmemişse veya *Origin* için değer geçersiz ya da *fark* tarafından belirtilen konum dosyanın başlangıcından önce ise, parametre bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. [ Doğrulama](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **errno** ' ı **EBADF** ve Return-1L olarak ayarlar. Arama yeteneğine sahip olmayan cihazlarda (Terminal ve yazıcı gibi), dönüş değeri tanımsızdır.
 
 Bu ve diğer hata kodları hakkında daha fazla bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Lseek** işlevi, ilişkili dosya işaretçisini taşır *fd* yeni bir konuma *uzaklığı* bayt *kaynak*. Sonraki işlemi dosya çubuğunda yeni konumda gerçekleşir. *Kaynak* bağımsız değişken Stdio.h içinde tanımlı sabitlerden biri olması gerekir.
+**_Lseek** işlevi *FD* ile ilişkili dosya işaretçisini *kaynaktan*bayt *uzaklığa* yeni bir konuma taşıdır. Dosyadaki bir sonraki işlem yeni konumda oluşur. *Kaynak* bağımsız değişkeni, stdio. h içinde tanımlanan aşağıdaki sabitlerden biri olmalıdır.
 
-|*Kaynak* değeri||
+|*kaynak* değeri||
 |-|-|
-| **SEEK_SET** | Dosyasının başında. |
-| **SEEK_CUR** | Dosya işaretçisini geçerli konumu. |
+| **SEEK_SET** | Dosya başlangıcı. |
+| **SEEK_CUR** | Dosya işaretçisinin geçerli konumu. |
 | **SEEK_END** | Dosya sonu. |
 
-Kullanabileceğiniz **_lseek** işaretçi herhangi bir yerde bir dosya veya dosya sonunu yeniden konumlandırmak için.
+**_Lseek** kullanarak, bir dosyanın içinde herhangi bir yerde veya dosya sonunun ötesinde işaretçiyi yeniden konumlandırabilirsiniz.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_lseek**|\<io.h >|
-|**_lseeki64**|\<io.h >|
+|**_lseek**|\<GÇ. h >|
+|**_lseeki64**|\<GÇ. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 
-Tüm sürümleri [C çalışma zamanı kitaplıkları](../../c-runtime-library/crt-library-features.md).
+[C çalışma zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md)tüm sürümleri.
 
 ## <a name="example"></a>Örnek
 
@@ -149,7 +152,7 @@ int main( void )
 }
 ```
 
-### <a name="input-crtlseekcinput"></a>Input: crt_lseek.c_input
+### <a name="input-crt_lseekc_input"></a>Giriş: crt_lseek. c_input
 
 ```Input
 Line one.
@@ -169,6 +172,6 @@ Position for end of file seek = 57
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Düşük düzey g/ç](../../c-runtime-library/low-level-i-o.md)<br/>
+[Alt düzey g/ç](../../c-runtime-library/low-level-i-o.md)<br/>
 [fseek, _fseeki64](fseek-fseeki64.md)<br/>
 [_tell, _telli64](tell-telli64.md)<br/>

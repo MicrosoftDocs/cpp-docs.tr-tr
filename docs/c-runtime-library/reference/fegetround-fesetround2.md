@@ -1,10 +1,10 @@
 ---
 title: fegetround, fesetround
 ms.date: 04/05/2018
-apiname:
+api_name:
 - fegetround
 - fesetround
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-runtime-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - fegetround
 - fesetround
@@ -26,16 +29,16 @@ helpviewer_keywords:
 - fegetround function
 - fesetround function
 ms.assetid: 596af00b-be2f-4f57-b2f5-460485f9ff0b
-ms.openlocfilehash: 061f0c9563d284396e85c6de70a2fe0911218eb3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b210dbce3104820f667d4ad0b4421277567b279f
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62334378"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70941204"
 ---
 # <a name="fegetround-fesetround"></a>fegetround, fesetround
 
-Alır veya ayarlar geçerli kayan nokta yuvarlama modu.
+Geçerli kayan nokta yuvarlama modunu alır veya ayarlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -50,52 +53,52 @@ int fesetround(
 ### <a name="parameters"></a>Parametreler
 
 *round_mode*<br/>
-, Kayan nokta yuvarlama makroları biri olarak ayarlamak için yuvarlama modu. Değeri kayan nokta yuvarlama makroları birine eşit değilse, yuvarlama modu değiştirilmez.
+Kayan nokta yuvarlama makrolarından biri olarak ayarlanacak yuvarlama modu. Değer, kayan nokta yuvarlama makrolarından birine eşit değilse, yuvarlama modu değiştirilmez.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarı durumunda, **fegetround** yuvarlama modu makrosu değerleri yuvarlama kayan nokta döndürür. Geçerli yuvarlama modu belirlenemiyorsa negatif bir değer döndürür.
+Başarı durumunda **fegetround** , kayan nokta yuvarlama makro değerlerinden biri olarak yuvarlama modunu döndürür. Geçerli yuvarlama modu belirlenemiyorsa negatif bir değer döndürür.
 
-Başarı durumunda, **fesetround** 0 döndürür. Aksi takdirde, sıfır olmayan bir değer döndürülür.
+Başarı durumunda **fesetround** 0 döndürür. Aksi takdirde, sıfır olmayan bir değer döndürülür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kayan nokta işlemleri birkaç yuvarlama modu birini kullanabilirsiniz. Bu sonuçları depolandığında doğru kayan nokta işlemlerinin sonuçlarını yuvarlanır hangi yönde denetler. Bunlar adlarını ve kayan nokta yuvarlama makroları davranışlarını tanımlanan \<fenv.h >:
+Kayan nokta işlemleri, birkaç yuvarlama modundan birini kullanabilir. Bu denetim, sonuçlar depolandığında kayan nokta işlemlerinin sonuçlarının yönünü gösteren bu denetimdir. Bunlar, \<fenv. h > tarafından tanımlanan kayan nokta yuvarlama makrolarının adlarıdır ve davranışlardır:
 
 |Makrosu|Açıklama|
 |-----------|-----------------|
-|FE_DOWNWARD|Negatif sonsuz doğru yuvarlar.|
-|FE_TONEAREST|Yuvarlak doğru en yakın.|
-|FE_TOWARDZERO|Sıfıra doğru yuvarlar.|
-|FE_UPWARD|Pozitif sonsuz doğru yuvarlar.|
+|FE_DOWNWARD|Negatif sonsuza doğru yuvarla.|
+|FE_TONEAREST|En yakın sayıya yaklaşın.|
+|FE_TOWARDZERO|Sıfıra yuvarla.|
+|FE_UPWARD|Pozitif sonsuza doğru yuvarla.|
 
-Varsayılan FE_TONEAREST sonuçları midway doğru en yakın bir bile (0) en az önemli bit değeriyle temsil edilebilir değerler arasında yuvarlanacak davranışıdır.
+Varsayılan FE_TONEAREST davranışı, en yakın değere doğru (0) en az önemli bir bit ile gösterilebilir tablo değerleri arasındaki sonuç sayısını yuvarlayamak olur.
 
-Geçerli yuvarlama modu işlemlerini etkiler:
+Geçerli yuvarlama modu bu işlemleri etkiler:
 
-- Dönüştürmeleri dize.
+- Dize dönüştürmeleri.
 
-- Sabit ifadeler dışında kayan nokta aritmetik işleçler sonuçları.
+- Kayan nokta aritmetik işleçlerinin, sabit ifadelerin dışındaki sonuçları.
 
-- İşlevler, aşağıdakiler gibi yuvarlama Kitaplığı **azdır** ve **nearbyint**.
+- Kitaplık yuvarlama işlevleri, örneğin, **rint** ve yeniden bir **tamsayı**.
 
-- Standart kitaplık matematik işlevleri dönüş değerleri.
+- Standart Kitaplık matematik işlevlerinden değerleri döndürün.
 
 Geçerli yuvarlama modu bu işlemleri etkilemez:
 
-- **Trunc**, **ceil**, **kat**, ve **lround** kitaplık işlevleri.
+- **TRUNC**, **CEIL**, **Floor**ve **lround** kitaplığı işlevleri.
 
-- Kayan nokta tamsayı örtük yayınları ve dönüştürme, her zaman sıfıra doğru yuvarlar.
+- Her zaman sıfır ile yuvarlatılmış olan kayan nokta, tamsayı örtük ve Dönüştürmelere.
 
-- Her zaman en yakın değere yuvarlar sabit ifadeler, kayan nokta aritmetik işleçler sonuçları.
+- Her zaman en yakın değere yuvarlak olan sabit ifadelerde kayan nokta aritmetik işleçlerinin sonuçları.
 
-Bu işlevleri kullanmak için erişim kullanarak engelleyebilir kayan nokta iyileştirmelerinin kapatmanız gerekir `#pragma fenv_access(on)` çağrıdan önceki yönerge. Daha fazla bilgi için [fenv_access](../../preprocessor/fenv-access.md).
+Bu işlevleri kullanmak için, çağrıdan önce `#pragma fenv_access(on)` yönergesini kullanarak erişimi engelleyebilecek kayan nokta iyileştirmelerini kapatmanız gerekir. Daha fazla bilgi için bkz. [fenv_access](../../preprocessor/fenv-access.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İşlev|C üstbilgisi|C++ üst bilgisi|
+|İşlev|C üstbilgisi|C++üst bilgi|
 |--------------|--------------|------------------|
-|**fegetround**, **fesetround**|\<fenv.h >|\<cfenv >|
+|**fegetround**, **fesetround**|\<fenv. h >|\<cfenv >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

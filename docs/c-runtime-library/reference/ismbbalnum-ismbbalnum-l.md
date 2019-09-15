@@ -1,10 +1,10 @@
 ---
 title: _ismbbalnum, _ismbbalnum_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _ismbbalnum
 - _ismbbalnum_l
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-multibyte-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _ismbbalnum
 - ismbbalnum
@@ -28,16 +31,16 @@ helpviewer_keywords:
 - ismbbalnum_l function
 - _ismbbalnum function
 ms.assetid: 8025de50-a871-49fd-9ae6-f437b47aa987
-ms.openlocfilehash: 5b5f54754907c09a34b0f4c3bae3e5c27336ca36
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d817ea6875149f9342854b0c22b27b0c93d29636
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62286567"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70954293"
 ---
-# <a name="ismbbalnum-ismbbalnuml"></a>_ismbbalnum, _ismbbalnum_l
+# <a name="_ismbbalnum-_ismbbalnum_l"></a>_ismbbalnum, _ismbbalnum_l
 
-Belirtilen bir çok baytlı karakterin alfa veya sayısal olup olmadığını belirler.
+Belirtilen çok baytlı karakterin Alfa veya sayısal olduğunu belirler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -53,33 +56,33 @@ int _ismbbalnum_l(
 ### <a name="parameters"></a>Parametreler
 
 *c*<br/>
-Test edilecek tamsayı.
+Sınanacak tamsayı.
 
-*Yerel ayar*<br/>
+*ayarlar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_ismbbalnum** sıfır olmayan bir değer döndürür ifadesi:
+**_ismbbalnum** , ifade yoksa sıfır dışında bir değer döndürür:
 
 `isalnum(c) || _ismbbkalnum(c)`
 
-için sıfır dışında *c*, değilse 0.
+*c*için sıfır veya değilse 0 olur.
 
-Bu işlevle sürümünü **_l** soneki, yerel ayara bağlı davranışı için geçerli yerel ayarı yerine iletilen yerel ayarı kullanması hariç, aynıdır.
+**_L** sonekine sahip bu işlevin sürümü, yerel ayara bağımlı davranış için geçerli yerel ayar yerine geçirilen yerel ayarı kullanması dışında aynıdır.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_ismbbalnum**|\<Mbctype.h >|
-|**_ismbbalnum_l**|\<Mbctype.h >|
+|**_ismbbalnum**|\<Mbctype. h >|
+|**_ismbbalnum_l**|\<Mbctype. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 
-Tüm sürümleri [C çalışma zamanı kitaplıkları](../../c-runtime-library/crt-library-features.md).
+[C çalışma zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md)tüm sürümleri.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

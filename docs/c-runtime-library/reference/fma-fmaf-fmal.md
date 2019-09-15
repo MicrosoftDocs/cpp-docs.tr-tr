@@ -1,11 +1,11 @@
 ---
 title: fma, fmaf, fmal
 ms.date: 04/05/2018
-apiname:
+api_name:
 - fma
 - fmaf
 - fmal
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - fma
 - fmaf
@@ -30,16 +33,16 @@ helpviewer_keywords:
 - fmaf function
 - fmal function
 ms.assetid: 584a6037-da1e-4e86-9f0c-97aae86de0c0
-ms.openlocfilehash: f96592e245e443bae2f3334da51cae5572753708
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4ddc4061e5a24ee3b5176aedc569d134d85e0002
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62333501"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70957099"
 ---
 # <a name="fma-fmaf-fmal"></a>fma, fmaf, fmal
 
-İki değerin birbirine çarpar, üçüncü değer ekler ve ardından sonucu Ara yuvarlama nedeniyle herhangi bir duyarlık kaybı yaşamadan yuvarlar.
+İki değeri birlikte çarpar, üçüncü bir değer ekler ve sonra, ara yuvarlama nedeniyle herhangi bir duyarlık kaybı olmadan sonucu yuvarlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -80,7 +83,7 @@ long double fmal(
 *x*<br/>
 Çarpılacak ilk değer.
 
-*Y*<br/>
+*Iz*<br/>
 Çarpılacak ikinci değer.
 
 *z*<br/>
@@ -88,32 +91,32 @@ Eklenecek değer.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Döndürür `(x * y) + z`. Dönüş değeri geçerli yuvarlama biçimini kullanarak yuvarlanır.
+Döndürür `(x * y) + z`. Dönüş değeri bundan sonra geçerli yuvarlama biçimi kullanılarak yuvarlanır.
 
-Aksi halde aşağıdaki değerlerden birini döndürebilir:
+Aksi takdirde, aşağıdaki değerlerden birini döndürebilir:
 
-|Sorun|döndürülecek|
+|Sorun|döndürülmesini|
 |-----------|------------|
-|*x* SONSUZ, = *y* = 0 veya<br /><br /> *x* = 0, *y* = INFINITY|NaN|
-|*x* veya *y* = tam ± SONSUZ, *z* SONSUZ ters işaretli =|NaN|
-|*x* veya *y* NaN =|NaN|
-|yok (*x* = 0, *y*belirsiz =) ve *z* NaN =<br /><br /> yok (*x*belirsiz = *y*= 0) ve *z* NaN =|NaN|
-|Taşma aralık hatası|±HUGE_VAL, ±HUGE_VALF veya ±HUGE_VALL|
-|Yetersiz aralık hatası|sonra yuvarlama doğru değeri.|
+|*x* = Infinity, *y* = 0 veya<br /><br /> *x* = 0, *y* = sonsuzluk|NaN|
+|*x* veya *y* = tam ± Infinity, *z* = Infinity ters işaretle|NaN|
+|*x* veya *y* = Nan|NaN|
+|Not (*x* = 0, *y*= sonsuz) ve *z* = Nan<br /><br /> Not (*x*= sonsuz, *y*= 0) ve *z* = Nan|NaN|
+|Taşma aralığı hatası|± HUGE_VAL, ± HUGE_VALF veya ± HUGE_VALL|
+|Yetersiz yer aralığı hatası|yuvarlama sonrasında değer doğru değeri.|
 
-Hatalar rapor, belirtilen [_matherr](matherr.md).
+Hatalar [_matherr](matherr.md)içinde belirtilen şekilde bildirilir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, aşırı yüklemesini çağırabilirsiniz **fma** alan ve getiren **float** ve **uzun** **çift** türleri. C programında **fma** her zaman alan ve döndüren bir **çift**.
+Aşırı C++ yüklemeye izin verdiğinden, **float** ve **Long** **Double** türlerini alıp döndüren **FMA** aşırı yüklerini çağırabilirsiniz. C programında **FMA** her zaman bir **Double**alır ve döndürür.
 
-Bu işlev, sonsuz duyarlık için alınan ve daha sonra Nihai sonuç yuvarlanır gibi sorgulamanıza değeri hesaplar.
+Bu işlev değeri sonsuz duyarlığa alınmış gibi hesaplar ve sonra nihai sonucu yuvarlar.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İşlev|C üstbilgisi|C++ üst bilgisi|
+|İşlev|C üstbilgisi|C++üst bilgi|
 |--------------|--------------|------------------|
-|**fma**, **fmaf**, **fmal**|\<Math.h >|\<cmath >|
+|**FMA**, **fmaf**, **Fmal**|\<Math. h >|\<cmath >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

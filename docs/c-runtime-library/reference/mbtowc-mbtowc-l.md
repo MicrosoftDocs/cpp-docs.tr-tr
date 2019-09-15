@@ -1,10 +1,10 @@
 ---
 title: mbtowc, _mbtowc_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - mbtowc
 - _mbtowc_l
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -18,7 +18,10 @@ apilocation:
 - api-ms-win-crt-convert-l1-1-0.dll
 - api-ms-win-crt-multibyte-l1-1-0.dll
 - ntoskrnl.exe
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - mbtowc
 helpviewer_keywords:
@@ -26,12 +29,12 @@ helpviewer_keywords:
 - _mbtowc_l function
 - mbtowc_l function
 ms.assetid: dfd1c8a7-e73a-4307-9353-53b70b45d4d1
-ms.openlocfilehash: 13ac8ad139cc12310663fbd23a21a461cd207236
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 655f5288738d2f2329b50a27381c00cb06e35e6d
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69499723"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70952004"
 ---
 # <a name="mbtowc-_mbtowc_l"></a>mbtowc, _mbtowc_l
 
@@ -73,7 +76,7 @@ Kullanılacak yerel ayar.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Mbtowc** işlevi, mbchar **null**değilse, karşılık gelen genişbir karaktere, mbchar tarafından işaret edilen *sayıyı* veya daha az baytı dönüştürür. **mbtowc** , wchar **null**değilse, sonuçta elde edilen geniş karakteri *wchar* 'da depolar. **mbtowc** , **MB_CUR_MAX** bayttan fazlasını incelemez. **mbtowc** , yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır; **_mbtowc_l** , bunun yerine geçirilen yerel ayarı kullanması dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
+**Mbtowc** işlevi, *mbchar* **null**değilse, karşılık gelen geniş bir karaktere *, mbchar* tarafından işaret edilen *sayıyı* veya daha az baytı dönüştürür. **mbtowc** , *wchar* **null**değilse, sonuçta elde edilen geniş karakteri *wchar* 'da depolar. **mbtowc** , **MB_CUR_MAX** bayttan fazlasını incelemez. **mbtowc** , yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır; **_mbtowc_l** , bunun yerine geçirilen yerel ayarı kullanması dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
 ## <a name="requirements"></a>Gereksinimler
 

@@ -1,12 +1,12 @@
 ---
 title: strcat_s, wcscat_s, _mbscat_s, _mbscat_s_l
 ms.date: 01/22/2019
-apiname:
+api_name:
 - strcat_s
 - _mbscat_s
 - _mbscat_s_l
 - wcscat_s
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -20,7 +20,10 @@ apilocation:
 - api-ms-win-crt-multibyte-l1-1-0.dll
 - api-ms-win-crt-string-l1-1-0.dll
 - ntoskrnl.exe
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - strcat_s
 - wcscat_s
@@ -35,19 +38,19 @@ helpviewer_keywords:
 - _mbscat_s_l function
 - appending strings
 ms.assetid: 0f2f9901-c5c5-480b-98bc-f8f690792fc0
-ms.openlocfilehash: bd7894ba77e7fa67fa3844587394bd3e2e821391
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4449ec788b33a541a04a46d972f56f792797a16e
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62354385"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70957986"
 ---
-# <a name="strcats-wcscats-mbscats-mbscatsl"></a>strcat_s, wcscat_s, _mbscat_s, _mbscat_s_l
+# <a name="strcat_s-wcscat_s-_mbscat_s-_mbscat_s_l"></a>strcat_s, wcscat_s, _mbscat_s, _mbscat_s_l
 
-Bir dize ekler. Bu sürümleri [strcat, wcscat, _mbscat](strcat-wcscat-mbscat.md) açıklandığı gibi güvenlik geliştirmeleri vardır [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
+Bir dize ekler. Strcat 'in bu sürümlerinde, [wcscat, _mbscat](strcat-wcscat-mbscat.md) [CRT 'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklandığı gibi güvenlik geliştirmeleri içerir.
 
 > [!IMPORTANT]
-> **_mbscat_s** ve **_mbscat_s_l** Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **_mbscat_s** ve **_mbdağınık _s_l** , Windows çalışma zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -105,28 +108,28 @@ Null ile sonlandırılmış hedef dize arabelleği.
 Hedef dize arabelleğinin boyutu.
 
 *strSource*<br/>
-Null ile sonlandırılmış kaynak dizesi arabelleği.
+Null ile sonlandırılmış kaynak dize arabelleği.
 
-*Yerel ayar*<br/>
+*ayarlar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa sıfır; bir hata kodu.
+Başarılıysa sıfır; hatada hata kodu.
 
 ### <a name="error-conditions"></a>Hata koşulları
 
-|*strDestination*|*numberOfElements*|*strSource*|Dönüş değeri|İçeriğini *strDestination*|
+|*strDestination*|*numberOfElements*|*strSource*|Dönüş değeri|*StrDestination* içeriği|
 |----------------------|------------------------|-----------------|------------------|----------------------------------|
-|**NULL** veya Sonlandırılmamış|Tüm|Tüm|**EINVAL**|değiştirilmedi|
-|Tüm|Tüm|**NULL**|**EINVAL**|*strDestination*0 olarak ayarlanırsa [0]|
-|Tüm|0 veya çok küçük|Tüm|**ERANGE**|*strDestination*0 olarak ayarlanırsa [0]|
+|**Null** veya Sonlandırılmamış|Kaydedilmemiş|Kaydedilmemiş|**EINVAL**|değiştirilmedi|
+|Kaydedilmemiş|Kaydedilmemiş|**DEĞER**|**EINVAL**|*strDestination* [0] 0 olarak ayarlandı|
+|Kaydedilmemiş|0 veya çok küçük|Kaydedilmemiş|**ERANGE**|*strDestination* [0] 0 olarak ayarlandı|
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Strcat_s** işlevi ekler *strSource* için *strDestination* ve sonuç dizesini null karakteri ile sona erer. İlk karakteri *strSource* Sonlandırıcı null karakterinin üzerine yazar *strDestination*. Davranışını **strcat_s** kaynak ve hedef dizeleri örtüştürürse tanımsızdır.
+**Strcat_s** Işlevi *strSource* 'u *strDestination* öğesine ekler ve elde edilen dizeyi null karakterle sonlandırır. *StrSource* başlangıç karakteri, *strDestination*'ın Sonlandırıcı null karakterinin üzerine yazar. Kaynak ve hedef dizeler çakıştığında **strcat_s** davranışı tanımsızdır.
 
-İkinci parametre arabelleğinde kalan boyutu toplam boyutu olduğuna dikkat edin:
+İkinci parametrenin, kalan boyutu değil, arabelleğin toplam boyutu olduğunu unutmayın:
 
 ```C
 char buf[16];
@@ -135,19 +138,19 @@ strcat_s(buf, 16, " End");               // Correct
 strcat_s(buf, 16 - strlen(buf), " End"); // Incorrect
 ```
 
-**wcscat_s** ve **_mbscat_s** geniş karakter ve çok baytlı karakter sürümleridir **strcat_s**. Bağımsız değişkenler ve dönüş değeri **wcscat_s** geniş karakterli dizelerdir; **_mbscat_s** çok baytlı karakter dizeleridir. Bu üç işlev aynı şekilde davranır.
+**wcscat_s** ve **_mbscat_s** , **strcat_s**'in geniş karakterli ve çok baytlı karakter sürümleridir. **Wcscat_s** bağımsız değişkenleri ve dönüş değeri geniş karakterli dizelerdir; **_mbscat_s** ' un çok baytlı karakter dizeleridir. Bu üç işlev, aynı şekilde davranır.
 
-Varsa *strDestination* null bir işaretçiyse veya null ile sonlandırılmış değil veya *strSource* olduğu bir **NULL** işaretçisi veya hedef dize çok küçük ise, geçersiz parametre işleyici çağrılır, açıklandığı [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse, bu işlevler döndürür **EINVAL** ayarlayıp **errno** için **EINVAL**.
+*StrDestination* null bir işaretçisiyse veya null sonlandırılırsa ya da *strSource* **null** işaretçisiyse veya hedef dize çok küçükse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **EINVAL** döndürür ve **errno** , **EINVAL**olarak ayarlanır.
 
-Sahip işlevlerin sürümleri **_l** son ekine sahip aynı davranışı, ancak geçerli yerel ayarı yerine iletilen yerel ayar parametresini kullanın. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
+**_L** sonekine sahip işlevlerin sürümleri aynı davranışa sahiptir, ancak geçerli yerel ayar yerine geçirilen yerel ayar parametresini kullanın. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
-C++ dilinde bu işlevlerin kullanılması şablon aşırı yüklemeleriyle basitleştirilmiştir; aşırı yüklemeler arabellek uzunluğunu otomatik olarak çıkarabilir (bir boyut bağımsız değişkeni belirtme gereksinimi ortadan kalkar) ve bunlar otomatik olarak eski ve güvenli olmayan işlevlerle daha yeni ve güvenli karşılıklarını değiştirir. Daha fazla bilgi için [güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
+' C++De, bu işlevlerin kullanılması şablon aşırı yüklemeleri tarafından basitleştirilmiştir; aşırı yüklemeler arabellek uzunluğunu otomatik olarak çıkarabilir (bir boyut bağımsız değişkeni belirtme gereksinimini ortadan kaldırır) ve eski, güvenli olmayan işlevleri otomatik olarak yeni, güvenli karşılıklarıyla değiştirebilir. Daha fazla bilgi için bkz. [Güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 
-Bu işlevlerin hata ayıklama sürümleri, ilk arabellek 0xFD ile doldurur. Bu davranışı devre dışı bırakmak için [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md).
+Bu işlevlerin hata ayıklama sürümleri ilk olarak arabelleği 0xFD ile doldurur. Bu davranışı devre dışı bırakmak için [_Crtsetdebugfillthreshold](crtsetdebugfillthreshold.md)kullanın.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_tcscat_s**|**strcat_s**|**_mbscat_s**|**wcscat_s**|
 
@@ -155,19 +158,19 @@ Bu işlevlerin hata ayıklama sürümleri, ilk arabellek 0xFD ile doldurur. Bu d
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**strcat_s**|\<String.h >|
-|**wcscat_s**|\<String.h > veya \<wchar.h >|
-|**_mbscat_s**|\<Mbstring.h >|
+|**strcat_s**|\<String. h >|
+|**wcscat_s**|\<String. h > veya \<wchar. h >|
+|**_mbscat_s**|\<mbstring. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod örneğinde bkz [strcpy_s, wcscpy_s, _mbscpy_s](strcpy-s-wcscpy-s-mbscpy-s.md).
+[Strcpy_s, wcscpy_s, _mbscpy_s](strcpy-s-wcscpy-s-mbscpy-s.md)içindeki kod örneğine bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dize düzenlemesi](../../c-runtime-library/string-manipulation-crt.md)<br/>
+[Dize düzenleme](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [strncat, _strncat_l, wcsncat, _wcsncat_l, _mbsncat, _mbsncat_l](strncat-strncat-l-wcsncat-wcsncat-l-mbsncat-mbsncat-l.md)<br/>
 [strncmp, wcsncmp, _mbsncmp, _mbsncmp_l](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)<br/>
 [strncpy, _strncpy_l, wcsncpy, _wcsncpy_l, _mbsncpy, _mbsncpy_l](strncpy-strncpy-l-wcsncpy-wcsncpy-l-mbsncpy-mbsncpy-l.md)<br/>

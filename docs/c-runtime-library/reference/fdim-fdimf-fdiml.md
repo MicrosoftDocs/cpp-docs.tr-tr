@@ -1,11 +1,11 @@
 ---
 title: fdim, fdimf, fdiml
 ms.date: 04/05/2018
-apiname:
+api_name:
 - fdim
 - fdimf
 - fdiml
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - fdim
 - fdimf
@@ -30,16 +33,16 @@ helpviewer_keywords:
 - fdimf function
 - fdiml function
 ms.assetid: 2d4ac639-51e9-462d-84ab-fb03b06971a0
-ms.openlocfilehash: 263635a32b21b01faa84405ab97bd5518f054ba5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 74935f724b678b08e39604d9916c7c5de5925aee
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62334794"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70941293"
 ---
 # <a name="fdim-fdimf-fdiml"></a>fdim, fdimf, fdiml
 
-Birinci ve ikinci değer arasındaki pozitif farkı belirler.
+Birinci ve ikinci değerler arasındaki pozitif farkı belirler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -75,39 +78,39 @@ long double fdiml(
 *x*<br/>
 İlk değer.
 
-*Y*<br/>
+*Iz*<br/>
 İkinci değer.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Arasındaki pozitif farkı döndürür *x* ve *y*:
+*X* ve *y*arasındaki pozitif farkı döndürür:
 
 |Dönüş değeri|Senaryo|
 |------------------|--------------|
-|x-y|x > y|
+|x-y|x > y ise|
 |0|if x <= y|
 
 Aksi takdirde, aşağıdaki hatalardan birini döndürebilir:
 
-|Sorun|döndürülecek|
+|Sorun|döndürülmesini|
 |-----------|------------|
-|Taşma aralık hatası|+ HUGE_VAL + HUGE_VALF, veya + HUGE_VALL|
-|Yetersiz aralık hatası|doğru değeri (sonra yuvarlama)|
-|*x* veya *y* NaN olup|NaN|
+|Taşma aralığı hatası|\+ HUGE_VAL, + HUGE_VALF veya + HUGE_VALL|
+|Yetersiz yer aralığı hatası|doğru değer (yuvarladıktan sonra)|
+|*x* veya *y* Nan 'dir|NaN|
 
-Hatalar rapor, belirtilen [_matherr](matherr.md).
+Hatalar [_matherr](matherr.md)içinde belirtilen şekilde bildirilir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, aşırı yüklemesini çağırabilirsiniz **fdim** alan ve getiren **float** ve **uzun** **çift** türleri. C programında **fdim** her zaman alan ve döndüren bir **çift**.
+Aşırı C++ yüklemeye izin verdiğinden, **float** ve **Long** **Double** türlerini alıp döndüren **fdim** aşırı yüklerini çağırabilirsiniz. C programında **fdim** her zaman bir **Double**alır ve döndürür.
 
-Bu işlev NaN işleme dışında değerine eşdeğer olan `fmax(x - y, 0)`.
+NaN işleme hariç, bu işlev ile `fmax(x - y, 0)`eşdeğerdir.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İşlev|C üstbilgisi|C++ üst bilgisi|
+|İşlev|C üstbilgisi|C++üst bilgi|
 |--------------|--------------|------------------|
-|**fdim**, **fdimf**, **fdiml**|\<Math.h >|\<cmath >|
+|**fdim**, **fdimf**, **fdiml**|\<Math. h >|\<cmath >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

@@ -1,9 +1,9 @@
 ---
 title: _setjmp3
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _setjmp3
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr90.dll
 - msvcr110.dll
@@ -11,7 +11,10 @@ apilocation:
 - msvcr110_clr0400.dll
 - msvcr100.dll
 - msvcr120.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - setjmp3
 - _setjmp3
@@ -19,16 +22,16 @@ helpviewer_keywords:
 - _setjmp3 function
 - setjmp3 function
 ms.assetid: 6129c2f3-8bac-4fdb-a827-44e1eebba500
-ms.openlocfilehash: e2c89acf1de88b831d70a0f438cdf14148a48632
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d7120ddd10322d0b7391608fd388d9f45c1600e8
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62268804"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70957805"
 ---
-# <a name="setjmp3"></a>_setjmp3
+# <a name="_setjmp3"></a>_setjmp3
 
-İç CRT işlevi. Yeni bir uygulamasını `setjmp` işlevi.
+İç CRT işlevi. `setjmp` İşlevin yeni bir uygulamasıdır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -43,21 +46,21 @@ int _setjmp3(
 #### <a name="parameters"></a>Parametreler
 
 *env*<br/>
-[out] Durum bilgilerini depolamak için arabellek adresi.
+dışı Durum bilgilerini depolamak için arabelleğin adresi.
 
-*Sayısı*<br/>
-[in] Ek sayısı `DWORD`s depolanan bilgilerin `optional parameters`.
+*biriktirme*<br/>
+'ndaki İçinde depolanan ek `DWORD`bilgi sayısı. `optional parameters`
 
-*İsteğe bağlı parametreler*<br/>
-[in] Tarafından ek veri gönderilen `setjmp` iç. İlk `DWORD` ek veri bırakma ve için bir kalıcı döndürmek için kullanılan bir işlev işaretçisi kayıt durumu olan. İkinci `DWORD` geri yüklenmesi deneyin düzeyidir. Genel veri dizideki herhangi bir veri kaydedilir `jmp_buf`.
+*isteğe bağlı parametreler*<br/>
+'ndaki Ek veriler, `setjmp` iç tarafından gönderilir. Birincisi `DWORD` , ek verileri yeniden getirmek ve kalıcı kayıt durumuna dönmek için kullanılan bir işlev işaretçisidir. İkincisi `DWORD` geri yüklenecek deneme düzeyidir. Daha fazla veri, `jmp_buf`içindeki genel veri dizisine kaydedilir.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Her zaman 0 değerini döndürür.
+Her zaman 0 döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlev, bir C++ programında kullanmayın. C++ desteklemez iç bir işlevdir. Nasıl kullanılacağı hakkında daha fazla bilgi için `setjmp`, bkz: [setjmp/longjmp kullanma](../cpp/using-setjmp-longjmp.md).
+Bu işlevi bir C++ programda kullanmayın. Bu, desteklenmeyen C++bir iç işlevdir. ' Nin nasıl kullanılacağı `setjmp`hakkında daha fazla bilgi için bkz. [setjmp/longjmp kullanma](../cpp/using-setjmp-longjmp.md).
 
 ## <a name="requirements"></a>Gereksinimler
 

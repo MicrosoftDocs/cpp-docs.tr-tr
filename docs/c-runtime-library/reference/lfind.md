@@ -1,9 +1,9 @@
 ---
 title: _lfind
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _lfind
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-utility-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - lfind
 - _lfind
@@ -27,16 +30,16 @@ helpviewer_keywords:
 - finding keys in arrays
 - _lfind function
 ms.assetid: a40ece70-1674-4b75-94bd-9f57cfff18f2
-ms.openlocfilehash: 1508d54d6b2f2566e4aee3afef02af45b28e4f48
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8fd2141caf8311844a90a6d12226bb7797ac4734
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62286498"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70953379"
 ---
-# <a name="lfind"></a>_lfind
+# <a name="_lfind"></a>_lfind
 
-Belirtilen anahtar için doğrusal bir arama gerçekleştirir. Bu işlevin daha güvenli bir sürümü kullanılabilir; bkz: [_lfind_s](lfind-s.md).
+Belirtilen anahtar için doğrusal bir arama gerçekleştirir. Bu işlevin daha güvenli bir sürümü kullanılabilir; bkz. [_lfind_s](lfind-s.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -56,32 +59,32 @@ void *_lfind(
 Aranacak nesne.
 
 *base*<br/>
-Arama veri tabanı için işaretçi.
+Arama verileri tabanı işaretçisi.
 
-*Sayı*<br/>
+*sayısından*<br/>
 Dizi öğelerinin sayısı.
 
 *Genişlik*<br/>
-Dizi öğeleri genişliği.
+Dizi öğelerinin genişliği.
 
-*Karşılaştırma*<br/>
-Karşılaştırma yordamı işaretçisi. İlk parametre bir arama için anahtar işaretçisidir. İkinci parametre bir anahtar ile Karşılaştırılacak dizi öğesinin işaretçisidir.
+*Karşılaştır*<br/>
+Karşılaştırma yordamının işaretçisi. İlk parametre, arama için bir tuşa işaretçidir. İkinci parametre, anahtar ile Karşılaştırılacak dizi öğesine yönelik bir işaretçidir.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Anahtar bulunursa **_lfind** dizisi öğeye bir işaretçi döndürür *temel* eşleşen *anahtar*. Anahtar bulunamazsa **_lfind** döndürür **NULL**.
+Anahtar bulunursa, **_lfind** , *tabanında* eşleşen dizinin öğesine bir işaretçi *döndürür.* Anahtar bulunamazsa **_lfind** **null**değerini döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Lfind** işlevi, doğrusal bir arama değeri gerçekleştirir *anahtarı* bir dizide *numarası* öğeleri, her biri *genişliği* bayt. Farklı **bsearch**, **_lfind** sıralanacak dizi gerektirmez. *Temel* bağımsız değişken temel aranacak dizi işaretçidir. *Karşılaştırma* bağımsız kullanıcı tarafından sağlanan iki diziyi öğe karşılaştırır ve sonra bunların belirten bir değeri döndüren bir yordam işaretçidir. **_lfind** çağrıları *karşılaştırma* işaretçileri iki dizi öğelerine her çağrıda geçirme, arama sırasında rutin bir veya daha fazla kez. *Karşılaştırma* yordamı gerekir ve öğeleri karşılaştırma (öğeleri farklı olduğu anlamına gelir) sıfır olmayan dönün veya 0 (öğeleri aynı olduğu anlamına gelir).
+**_Lfind** işlevi, her bir *Genişlik* baytından oluşan *sayı* öğesi dizisinde değer *anahtarı* için doğrusal bir arama gerçekleştirir. **Bsearch**'ten farklı olarak, **_lfind** dizinin sıralanmasını gerektirmez. *Taban* bağımsız değişkeni, aranacak dizinin temelini gösteren bir işaretçidir. *Compare* bağımsız değişkeni, iki dizi öğesini karşılaştıran ve ilişkilerini belirten bir değer döndüren kullanıcı tarafından sağlanan yordamın bir işaretçisidir. **_lfind** , arama sırasında *karşılaştırma* yordamını bir veya daha fazla kez çağırır ve her çağrıda iki dizi öğesine işaretçiler geçiyor. *Compare* yordamı, öğeleri karşılaştırmalıdır ve sıfır dışında bir değere (öğelerin farklı olduğu anlamına gelir) ya da 0 (öğeler özdeş) döndürmelidir.
 
-Bu işlev, parametrelerini doğrular. Varsa *karşılaştırma*, *anahtarı* veya *numarası* olduğu **NULL**, veya *temel* olduğu **NULL**ve *numarası* sıfır değilse, ya da Eğer *genişliği* küçük sıfırdan, geçersiz parametre işleyicisi açıklandığı gibi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse **errno** ayarlanır **EINVAL** ve işlev döndürür **NULL**.
+Bu işlev, parametrelerini doğrular. *Compare*, *Key* veya *Number* değeri **null**ise veya *taban* **null** ise ve *sayı* sıfır değilse ya da *Genişlik* sıfırdan küçükse, parametre bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. [ Doğrulama](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin veriliyorsa, **errno** **EINVAL** olarak ayarlanır ve işlev **null**değerini döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_lfind**|\<Search.h >|
+|**_lfind**|\<Search. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

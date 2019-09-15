@@ -1,9 +1,9 @@
 ---
 title: towctrans
 ms.date: 11/04/2016
-apiname:
+api_name:
 - towctrans
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,18 +15,21 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-string-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - towctrans
 helpviewer_keywords:
 - towctrans function
 ms.assetid: 1ed1e70d-7b31-490f-a7d9-42564b5924ca
-ms.openlocfilehash: b814c65d2f5d0bb18b19d97a539d79dd6df8a1c6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d63fc343647cd0f949f282e2a64d4a0636e62bd7
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62269169"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70957432"
 ---
 # <a name="towctrans"></a>towctrans
 
@@ -44,30 +47,30 @@ wint_t towctrans(
 ### <a name="parameters"></a>Parametreler
 
 *c*<br/>
-Dönüştürmek istediğiniz karakterdir.
+Dönüştürmek istediğiniz karakter.
 
 *Kategori*<br/>
-Dönüş değeri içeren bir tanımlayıcı [wctrans](wctrans.md).
+[Wctrans](wctrans.md)'ın dönüş değerini içeren bir tanımlayıcı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Karakter *c*, sonra **towctrans** dönüştürme kuralda kullanılan *kategori*.
+**Towctrans** öğesinden sonra *c*karakteri, *kategoride*dönüştürme kuralını kullandı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Değerini *kategori* başarılı bir önceki çağrı tarafından iade edilmiş gerekir [wctrans](wctrans.md).
+*Kategori* değeri, [wctrans](wctrans.md)için daha önceki başarılı bir çağrı tarafından döndürülmelidir.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**towctrans**|\<wctype.h >|
+|**towctrans**|\<wctype. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
-Bkz: **wctrans** kullanan bir örnek için **towctrans**.
+**Towctrans**kullanan bir örnek için bkz. **wctrans** .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

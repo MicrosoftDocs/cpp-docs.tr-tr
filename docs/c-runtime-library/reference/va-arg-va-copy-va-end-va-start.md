@@ -1,12 +1,12 @@
 ---
 title: va_arg, va_copy, va_end, va_start
 ms.date: 11/04/2016
-apiname:
+api_name:
 - va_arg
 - va_end
 - va_copy
 - va_start
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - va_arg
 - va_start
@@ -37,16 +40,16 @@ helpviewer_keywords:
 - va_alist macro
 - va_copy macro
 ms.assetid: a700dbbd-bfe5-4077-87b6-3a07af74a907
-ms.openlocfilehash: cc0a903f6bc4895f7d2ea6e80990dea94f28c6c2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 47bd9e3913c6664a52c970dd8a190636683d214e
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62353579"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70957362"
 ---
-# <a name="vaarg-vacopy-vaend-vastart"></a>va_arg, va_copy, va_end, va_start
+# <a name="va_arg-va_copy-va_end-va_start"></a>va_arg, va_copy, va_end, va_start
 
-Değişken bağımsız değişken listeleri erişir.
+Değişken bağımsız değişken listelerine erişir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -74,44 +77,44 @@ void va_start(
 ### <a name="parameters"></a>Parametreler
 
 *type*<br/>
-Alınması için bağımsız değişken türü.
+Alınacak bağımsız değişkenin türü.
 
 *arg_ptr*<br/>
-Bağımsız değişkenler listesine işaretçi.
+Bağımsız değişken listesi işaretçisi.
 
-*Hedef*<br/>
-Gelen başlatılması için bağımsız değişkenler listesine işaretçi *src*
+*HD*<br/>
+*Src* 'den başlatılacak bağımsız değişkenlerin listesi işaretçisi
 
-*src*<br/>
-Başlatılmış kopyalamak için bağımsız değişkenler listesine işaretçi *dest*.
+*YN*<br/>
+*Hedefe*kopyalanacak bağımsız değişkenlerin başlatılmış listesinin işaretçisi.
 
 *prev_param*<br/>
-Önündeki ilk isteğe bağlı bağımsız değişken parametresi.
+İlk isteğe bağlı bağımsız değişkenden önce gelen parametre.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**va_arg** geçerli bağımsız değişkenini döndürür. **va_copy**, **va_start** ve **va_end** değer döndürmüyor.
+**va_arg** geçerli bağımsız değişkeni döndürür. **va_copy**, **va_start** ve **va_end** değer döndürmez.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Va_arg**, **va_copy**, **va_end**, ve **va_start** makrolar bağımsız değişken bir işleve erişmek için taşınabilir bir yol sağlar, işlev, değişken sayıda bağımsız değişken alır. Makroları iki sürümü vardır: STDARG içinde tanımlı makroları. H ISO C99 standart uygun; VARARG'LARDA tanımlı makroları. H kullanım dışı bırakılmıştır, ancak standart ANSI C89 önce yazılmış kod ile geriye dönük uyumluluk için korunur.
+**Va_arg**, **va_copy**, **va_end**ve **va_start** makroları, işlev değişken sayıda bağımsız değişken alırsa bir işleve bağımsız değişkenlere erişmenin taşınabilir bir yolunu sağlar. Makroların iki sürümü vardır: STDARG 'de tanımlanan makrolar. H ISO C99 standardına uygun; VARARGS içinde tanımlanan makrolar. H kullanım dışı bırakılmıştır, ancak ANSI c89 standardına göre yazılmış kodla geriye dönük uyumluluk için korunur.
 
-Bu makrolar, işlev gerekli bağımsız değişken isteğe bağlı bağımsız değişken bir sayı takip eder, sabit sayıda sürdüğünü varsayalım. Gerekli bağımsız değişkenler işleve sıradan parametre olarak bildirilir ve parametre adları erişilebilir. İsteğe bağlı bağımsız değişkenlere STDARG içindeki makrolar aracılığıyla erişilir. Y (veya VARARG'lara. H ANSI C89 standart önce yazılmış kod için), bağımsız değişken listesindeki ilk isteğe bağlı bağımsız değişkeni için bir işaretçi ayarlayan listeden bağımsız değişken alır ve bağımsız değişken işleme tamamlandığında işaretçisini sıfırlar.
+Bu makrolar, işlevin sabit sayıda gerekli bağımsız değişken aldığını ve ardından değişken sayıda isteğe bağlı bağımsız değişken aldığını varsayar. Gerekli bağımsız değişkenler işleve normal parametreler olarak gösterilir ve parametre adlarıyla erişilebilir. İsteğe bağlı bağımsız değişkenlere STDARG içindeki makrolarla erişilir. H (veya VARARGS. H c89 Standard 'dan önce yazılan kod için), bağımsız değişken listesindeki ilk isteğe bağlı bağımsız değişkene bir işaretçi ayarlar, listedeki bağımsız değişkenleri alır ve bağımsız değişken işleme tamamlandığında işaretçiyi sıfırlar.
 
-STDARG içinde tanımlanan C Standart makroları. H, şu şekilde kullanılır:
+STDARG 'de tanımlanan C standart makroları. H, aşağıdaki gibi kullanılır:
 
-- **va_start** ayarlar *arg_ptr* işleve geçirilen bağımsız değişken listesinde ilk isteğe bağlı bağımsız değişkeni. Bağımsız değişken *arg_ptr* olmalıdır **va_list** türü. Bağımsız değişken *prev_param* ilk isteğe bağlı bağımsız değişken bağımsız değişken listesinde hemen önce gelen gerekli parametre adı. Varsa *prev_param* bildirilmiş register depolama sınıfı ile makro davranışı tanımsızdır. **va_start** önce kullanılmalıdır **va_arg** ilk kez kullanılır.
+- **va_start** , *arg_ptr* öğesine geçirilen bağımsız değişkenlerin listesindeki ilk isteğe bağlı bağımsız değişkene ayarlar. *Arg_ptr* bağımsız değişkeni **va_list** türüne sahip olmalıdır. *Prev_param* bağımsız değişkeni, bağımsız değişken listesindeki ilk isteğe bağlı bağımsız değişkenden hemen önce gelen gerekli parametrenin adıdır. *Prev_param* , YAZMAÇ depolama sınıfı ile bildirilirse, makronun davranışı tanımsızdır. **va_start** ilk kez **kullanılmadan önce kullanılmalıdır** .
 
-- **va_arg** değerini alır. *türü* tarafından verilen konumda *arg_ptr*, artırır *arg_ptr* sonraki bağımsız değişken listesinde tarafından işaret etmek için boyutunu kullanarak *türü* sonraki bağımsız başladığı belirlemek için. **va_arg** olabilir herhangi sayıda bağımsız değişken listesinden almak için işlevde kullanılan.
+- **va_arg** , *arg_ptr*tarafından verilen konumdan *türünde* bir değer alır ve bir sonraki bağımsız değişkenin başladığı yeri anlamak için *tür* boyutunu kullanarak *arg_ptr* artırır. **va_arg** , işlev içindeki bağımsız değişkenleri almak için herhangi bir sayıda kez kullanılabilir.
 
-- **va_copy** geçerli durumunda bir bağımsız değişken listesinde bir kopyasını getirir. *Src* parametresi zaten başlatılmalı ile **va_start**; bunu ile güncelleştirilmiş olabilir **va_arg** çağırır, ancak ile sıfırlandı gerekir değil **va_end** . Tarafından alınan sonraki bağımsız **va_arg** gelen *dest* hizmetinden alınan sonraki bağımsız olarak aynıdır *src*.
+- **va_copy** bir bağımsız değişken listesinin bir kopyasını geçerli durumunda yapar. *Src* parametresi zaten **va_start**ile başlatılmış olmalıdır; **va_arg** çağrılarıyla güncelleştirilmiş olabilir, ancak **va_end**ile sıfırlanmamalıdır. *Hedef* **va_arg** tarafından alınan sonraki bağımsız değişken *src*'den alınan bir sonraki bağımsız değişkenle aynıdır.
 
-- Tüm bağımsız değişkenler aldıktan sonra **va_end** işaretçisi sıfırlar **NULL**. **va_end** ile başlatılan her bağımsız değişken listesi çağrılmalıdır **va_start** veya **va_copy** önce işlevi döndürür.
+- Tüm bağımsız değişkenler alındıktan sonra, **va_end** işaretçiyi **null**olarak sıfırlar. **va_end** , işlev dönüşmeden önce **va_start** veya **va_copy** ile başlatılan her bağımsız değişken listesinde çağrılmalıdır.
 
 > [!NOTE]
-> VARARGS makrolarındaki. H kullanım dışıdır ve olduğundan yalnızca geriye doğru uyumluluk için ANSI C89 standart önce yazılmış kod ile korunur. Diğer tüm durumlarda STDARGS makroları kullanın. H
+> VARARGS içindeki makrolar. H kullanım dışıdır ve yalnızca ANSI c89 standardına göre yazılmış kodla geriye dönük uyumluluk için korunur. Diğer tüm durumlarda, stdarg 'lerdeki makroları kullanın. Olsun.
 
-Ne zaman bunlar kullanılarak derlenen [/CLR (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md), bu makrolar kullanan programlar, yerel ve ortak dil çalışma zamanı (CLR) türü sistemleri farklılıklardan dolayı beklenmeyen sonuçlar oluşturabilir. Bu program göz önünde bulundurun:
+[/Clr (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md)kullanılarak derlendiklerinde, bu makroları kullanan programlar, yerel ve ortak dil çalışma zamanı (CLR) tür sistemleri arasındaki farklılıklar nedeniyle beklenmedik sonuçlar oluşturabilir. Bu programı göz önünde bulundurun:
 
 ```C
 #include <stdio.h>
@@ -143,7 +146,7 @@ int main()
 }
 ```
 
-Dikkat **testit** bekliyor ya da, ikinci parametresinin bir **int** veya **char**<strong>\*</strong>. 0xffffffff geçirilen bağımsız değişkenler (bir **işaretsiz** **int**değil bir **int**) ve **NULL** (aslında bir **int**değil bir **char**<strong>\*</strong>). Program için yerel kod derlenir, bu çıktıyı oluşturur:
+**Tesıt** 'in ikinci parametresinin bir **int** veya **char**<strong>\*</strong>olduğunu beklediğini unutmayın. Geçirilmekte olan bağımsız değişkenler 0xFFFFFFFF ( **işaretsiz** **int**, **int**değil) ve **null** (gerçekte bir **char**<strong>\*</strong>değil, bir **int**değil). Program yerel kod için derlendiğinde, bu çıktıyı oluşturur:
 
 ```Output
 -1
@@ -153,13 +156,13 @@ Dikkat **testit** bekliyor ya da, ikinci parametresinin bir **int** veya **char*
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<stdio.h > ve \<stdarg.h >
+**Üst bilgi:** stdio. h > ve \<stdarg. h > \<
 
-**Kullanım dışı üstbilgisi:** \<XENIX >
+**Kullanım dışı üst bilgi:** \<varargs. h >
 
 ## <a name="libraries"></a>Kitaplıklar
 
-Tüm sürümleri [C çalışma zamanı kitaplıkları](../../c-runtime-library/crt-library-features.md).
+[C çalışma zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md)tüm sürümleri.
 
 ## <a name="example"></a>Örnek
 

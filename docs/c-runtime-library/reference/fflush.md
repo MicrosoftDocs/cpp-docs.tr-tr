@@ -1,9 +1,9 @@
 ---
 title: fflush
 ms.date: 09/11/2019
-apiname:
+api_name:
 - fflush
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - fflush
 helpviewer_keywords:
@@ -23,12 +26,12 @@ helpviewer_keywords:
 - flushing
 - fflush function
 ms.assetid: 8bbc753f-dc74-4e77-b563-74da2835e92b
-ms.openlocfilehash: 73ef97306f573fba89ba3cdb8000de9db4d10bac
-ms.sourcegitcommit: effb516760c0f956c6308eeded48851accc96b92
-ms.translationtype: HT
+ms.openlocfilehash: 966ff5622faaccd2d9e501b39da99b010e841c22
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 09/12/2019
-ms.locfileid: "70927429"
+ms.locfileid: "70940941"
 ---
 # <a name="fflush"></a>fflush
 

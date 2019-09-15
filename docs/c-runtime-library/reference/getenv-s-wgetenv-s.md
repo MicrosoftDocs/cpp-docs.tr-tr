@@ -1,10 +1,10 @@
 ---
 title: getenv_s, _wgetenv_s
 ms.date: 11/04/2016
-apiname:
+api_name:
 - getenv_s
 - _wgetenv_s
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-environment-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - getenv_s
 - _tgetenv_s
@@ -29,19 +32,19 @@ helpviewer_keywords:
 - environment variables
 - tgetenv_s function
 ms.assetid: c3ae1ffe-d4cd-4bae-bcb1-3afa754c613a
-ms.openlocfilehash: eac3c036e2f4f271c7bc2d77c8ae82bec28d3617
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7cbd1feab14ac29c46bb8851ff94a48c67bc6014
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62331746"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70955048"
 ---
-# <a name="getenvs-wgetenvs"></a>getenv_s, _wgetenv_s
+# <a name="getenv_s-_wgetenv_s"></a>getenv_s, _wgetenv_s
 
-Geçerli ortamdan bir değer alır. Bu sürümleri [getenv, _wgetenv](getenv-wgetenv.md) açıklandığı gibi güvenlik geliştirmeleri vardır [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
+Geçerli ortamdan bir değer alır. Getenv 'nin bu sürümlerinde [_wgetenv](getenv-wgetenv.md) , [CRT 'daki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklandığı gibi güvenlik geliştirmeleri içerir.
 
 > [!IMPORTANT]
-> Bu API, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -74,68 +77,68 @@ errno_t _wgetenv_s(
 
 ### <a name="parameters"></a>Parametreler
 
-*pReturnValue*<br/>
-Gerekli arabellek boyutu veya 0 değişkeni bulunamadı.
+*Ön kapatma değeri*<br/>
+Gerekli arabellek boyutu veya değişken bulunamazsa 0.
 
-*Arabellek*<br/>
+*arabelleğin*<br/>
 Ortam değişkeninin değerini depolayan arabellek.
 
 *numberOfElements*<br/>
-Boyutu *arabellek*.
+*Arabelleğin*boyutu.
 
-*varName*<br/>
+*varname*<br/>
 Ortam değişkeni adı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa sıfır; Aksi takdirde bir hata kodu hatası.
+Başarılıysa sıfır; Aksi takdirde hata durumunda hata kodu.
 
 ### <a name="error-conditions"></a>Hata koşulları
 
-|*pReturnValue*|*Arabellek*|*numberOfElements*|*varName*|Dönüş Değeri|
+|*Ön kapatma değeri*|*arabelleğin*|*numberOfElements*|*varname*|Dönüş Değeri|
 |--------------------|--------------|------------------------|---------------|------------------|
-|**NULL**|Tüm|Tüm|Tüm|**EINVAL**|
-|Tüm|**NULL**|>0|Tüm|**EINVAL**|
-|Tüm|Tüm|Tüm|**NULL**|**EINVAL**|
+|**DEĞER**|Kaydedilmemiş|Kaydedilmemiş|Kaydedilmemiş|**EINVAL**|
+|Kaydedilmemiş|**DEĞER**|>0|Kaydedilmemiş|**EINVAL**|
+|Kaydedilmemiş|Kaydedilmemiş|Kaydedilmemiş|**DEĞER**|**EINVAL**|
 
-Bu hata durumlardan herhangi biri çağırır, geçersiz parametre işleyicisini açıklandığı [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse işlevler **errno** için **EINVAL** ve dönüş **EINVAL**.
+Bu hata koşullarından herhangi biri, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, işlevler **errno** olarak **EINVAL** ve **EINVAL**döndürür.
 
-Ayrıca, bu işlevler arabellek çok küçük ise, dönüş **ERANGE**. Geçersiz parametre işleyicisi çağırma kullanılamaz. Bunlar gerekli arabellek boyutu kullanıma yazma *pReturnValue*ve böylece daha büyük bir arabellek ile yeniden işlevi çağırmak programları etkinleştirin.
+Ayrıca, arabellek çok küçükse, bu işlevler **ERANGE**döndürür. Geçersiz parametre işleyicisi çağırmazlar. Zorunlu arabellek boyutunu *önceden yapılan değer*olarak yazar ve böylece programların işlevi daha büyük bir arabellekle yeniden çağırmasını sağlar.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Getenv_s** işlevi için ortam değişkenleri listesi arar *varname*. **getenv_s** Windows işletim sistemi büyük/küçük harfe duyarlı değildir. **getenv_s** ve [_putenv_s](putenv-s-wputenv-s.md) genel değişkeni tarafından işaret edilen ortamın kopyasını kullanın **_environ** ortama erişmek için. **getenv_s** çalışma zamanı kitaplığının erişilebildiği veri yapıları ve ortam işlem için işletim sistemi tarafından oluşturulan "segment" üzerinde çalışır. Bu nedenle, kullanan programlar *envp* bağımsız değişkeni [ana](../../cpp/main-program-startup.md) veya [wmain](../../cpp/main-program-startup.md) geçersiz bilgiler almak.
+**Getenv_s** işlevi, *varname*için ortam değişkenlerinin listesini arar. Windows işletim sisteminde **getenv_s** büyük/küçük harfe duyarlı değildir. **getenv_s** ve [_putenv_s](putenv-s-wputenv-s.md) , ortama erişmek için **_environ** genel değişkeni tarafından işaret edilen ortamın kopyasını kullanın. **getenv_s** , işletim sistemi tarafından işlem için oluşturulan "segment" ortamında değil, yalnızca çalışma zamanı kitaplığı tarafından erişilebilen veri yapıları üzerinde çalışır. Bu nedenle, [ana](../../cpp/main-program-startup.md) veya [wmain](../../cpp/main-program-startup.md) için *envp* bağımsız değişkenini kullanan programlar geçersiz bilgileri alabilir.
 
-**_wgetenv_s** geniş karakterli sürümüdür **getenv_s**; bağımsız değişkeni ve dönüş değeri **_wgetenv_s** geniş karakterli dizelerdir. **_Wenviron** genel değişkeni, bir geniş karakter sürümünü **_environ**.
+**_wgetenv_s** , **getenv_s**öğesinin geniş karakterli bir sürümüdür; **_wgetenv_s** bağımsız değişkeni ve dönüş değeri geniş karakterli dizelerdir. **_Wenviron** genel değişkeni, **_environ**'in geniş karakterli bir sürümüdür.
 
-Bir MBCS programında (örneğin, programda bir ASCII SBCS) **_wenviron** başlangıçta **NULL** çünkü ortam çok baytlı karakter dizeleri kümesinden oluşur. Daha sonra yapılan ilk çağrıda [_wputenv](putenv-wputenv.md), veya yapılan ilk çağrıda **_wgetenv_s**, (MBCS) ortamı zaten varsa, karşılık gelen bir geniş karakterli dize ortamı oluşturulur ve ardından tarafından işaret edilen **_wenviron**.
+Bir MBCS programında (örneğin, bir SBCS ASCII programında), ortam çok baytlı karakter dizelerinden oluştuğu için **_wenviron** başlangıçta **null** olur. Ardından, bir (MBCS) ortamı zaten mevcutsa, [_wputenv](putenv-wputenv.md)öğesine yapılan ilk çağrıda veya ilk **_wgetenv_s**çağrısında karşılık gelen bir geniş karakterli dize ortamı oluşturulur ve ardından **_wenviron**tarafından gösterilir.
 
-Benzer şekilde, bir Unicode (**_wmain**) programı **_environ** başlangıçta **NULL** çünkü ortam geniş karakter dizeleri kümesinden oluşur. Daha sonra yapılan ilk çağrıda [_putenv](putenv-wputenv.md), veya yapılan ilk çağrıda **getenv_s** (Unicode) ortamı zaten varsa, karşılık gelen bir MBCS ortamı oluşturulur ve ardından tarafından işaret edilen **_ environ**.
+Benzer şekilde, bir Unicode ( **_wmain**) programında, ortam geniş karakter dizelerinden oluştuğu için **_environ** başlangıçta **null** olur. Ardından, [_putenv](putenv-wputenv.md)için ilk çağrıda veya bir (Unicode) ortam **zaten varsa,** buna karşılık gelen bir MBCS ortamı oluşturulur ve ardından **_environ**tarafından gösterilir.
 
-Ortam (MBCS ve Unicode) iki kopyasını aynı anda bir programda varsa, çalışma zamanı sistemi her iki kopyasında koruması gerekir ve bu daha yavaş yürütme süresi neden olur. Örneğin, çağırdığınızda **_putenv**, bir çağrı **_wputenv** böylece iki ortam dizeleri karşılık da otomatik olarak yürütülür.
+Ortamın iki kopyası (MBCS ve Unicode) bir programda aynı anda mevcut olduğunda, çalışma zamanı sisteminin her iki kopyayı da koruması gerekir ve bu, daha yavaş yürütme süresine neden olur. Örneğin, **_putenv**öğesini çağırdığınızda, iki ortam dizesinin karşılık gelmesi için bir **_wputenv** çağrısı de otomatik olarak yürütülür.
 
 > [!CAUTION]
-> Çalışma zamanı sistemi, hem Unicode sürümü hem de çok baytlı bir sürüm ortamının muhafaza ederken nadir durumlarda, iki ortam sürümleri tam olarak karşılık gelmeyebilir. Benzersiz bir çok baytlı karakterli dize benzersiz bir Unicode dizesini eşleştirir ancak bir çok baytlı karakter dizesi benzersiz bir Unicode dize eşleme mutlaka benzersiz olmadığı için meydana gelir. Daha fazla bilgi için [_environ, _wenviron](../../c-runtime-library/environ-wenviron.md).
+> Nadir örneklerde, çalışma zamanı sistemi hem Unicode sürümü hem de ortamın çok baytlı bir sürümünü kullanırken, iki ortam sürümü tam olarak karşılamayabilir. Bunun nedeni, benzersiz bir çok baytlı karakter dizesinin benzersiz bir Unicode dizesine eşlenmesine karşın, benzersiz bir Unicode dizesinden çok baytlı karakter dizesine eşlemenin benzersiz olması gerekir. Daha fazla bilgi için bkz. [_environ, _wenviron](../../c-runtime-library/environ-wenviron.md).
 
 > [!NOTE]
-> **_Putenv_s** ve **_getenv_s** işlev aileleri iş parçacığı açısından güvenli değildir. **_getenv_s** dize işaretçisini döndürebilir **_putenv_s** dize değiştirme ve böylece rastgele hatalara neden olur. Bu işlevlere aramaların eşitlendiğinden emin olun.
+> **_Putenv_s** ve **_getenv_s** aileleri işlevleri iş parçacığı açısından güvenli değildir. **_getenv_s** , **_putenv_s** dizeyi değiştirirken ve bu nedenle rastgele hatalara neden olduğu sürece bir dize işaretçisi döndürebilir. Bu işlevlere yapılan çağrıların eşitlendiğinden emin olun.
 
-C++'da, bu işlevlerin kullanılması şablon aşırı yüklemeleriyle basitleştirilmiştir; aşırı yüklemeler arabellek uzunluğunu otomatik olarak tanım Çıkarsama ve böylece bir boyut bağımsız değişkeni belirtme gereksinimi ortadan kullanabilirsiniz. Daha fazla bilgi için [güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
+' C++De, bu işlevlerin kullanılması şablon aşırı yüklemeleri tarafından basitleştirilmiştir; aşırı yüklemeler arabellek uzunluğunu otomatik olarak çıkarabilir ve böylece bir boyut bağımsız değişkeni belirtme gereksinimini ortadan kaldırabilir. Daha fazla bilgi için bkz. [Güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_tgetenv_s**|**getenv_s**|**getenv_s**|**_wgetenv_s**|
 
-Denetleyin ya da değerini değiştirmek için **TZ** ortam değişkenini kullanmak **getenv_s**, **_putenv**, ve **_tzset**gerektirdiği gibi. Hakkında daha fazla bilgi için **TZ**, bkz: [_tzset](tzset.md) ve [_daylight, _dstbias, _timezone ve _tzname](../../c-runtime-library/daylight-dstbias-timezone-and-tzname.md).
+**TZ** ortam değişkeninin değerini denetlemek veya değiştirmek için, gerektiği gibi **getenv_s**, **_putenv**ve **_tzset**kullanın. **TZ**hakkında daha fazla bilgi için bkz. [_tzset](tzset.md) ve [_gündüz, _dstsapması, _timezone ve _tzname](../../c-runtime-library/daylight-dstbias-timezone-and-tzname.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**getenv_s**|\<stdlib.h >|
-|**_wgetenv_s**|\<stdlib.h > veya \<wchar.h >|
+|**getenv_s**|\<Stdlib. h >|
+|**_wgetenv_s**|\<Stdlib. h > veya \<wchar. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

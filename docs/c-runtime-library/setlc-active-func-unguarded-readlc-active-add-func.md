@@ -1,10 +1,10 @@
 ---
 title: ___setlc_active_func, ___unguarded_readlc_active_add_func
 ms.date: 11/04/2016
-apiname:
+api_name:
 - ___setlc_active_func
 - ___unguarded_readlc_active_add_func
-apilocation:
+api_location:
 - msvcr90.dll
 - msvcr110_clr0400.dll
 - msvcrt.dll
@@ -12,7 +12,10 @@ apilocation:
 - msvcr80.dll
 - msvcr120.dll
 - msvcr100.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - ___unguarded_readlc_active_add_func
 - ___setlc_active_func
@@ -20,16 +23,16 @@ helpviewer_keywords:
 - ___setlc_active_func
 - ___unguarded_readlc_active_add_func
 ms.assetid: 605ec4e3-81e5-4ece-935a-f434768cc702
-ms.openlocfilehash: 244bb5b0bd6a15dab2de1ad2d6b71c2ae2f850bb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a7dd7d74992aeddffead1c6ef0d52cbc69848dad
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62268830"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70957281"
 ---
-# <a name="setlcactivefunc-unguardedreadlcactiveaddfunc"></a>___setlc_active_func, ___unguarded_readlc_active_add_func
+# <a name="___setlc_active_func-___unguarded_readlc_active_add_func"></a>___setlc_active_func, ___unguarded_readlc_active_add_func
 
-ARTIK KULLANILMIYOR. CRT yalnızca ikili uyumluluğu korumak için bu iç işlevleri dışa aktarır.
+DIŞI. CRT, bu iç işlevleri yalnızca ikili uyumluluğu koruyacak şekilde dışa aktarır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -40,11 +43,11 @@ int * ___unguarded_readlc_active_add_func(void);
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Döndürülen değer önemli değildir.
+Döndürülen değer önemli değil.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Ancak iç CRT işlevleri `___setlc_active_func` ve `___unguarded_readlc_active_add_func` geçersiz ve artık kullanılmayan, bunlar ikili uyumluluğu korumak için CRT kitaplığı tarafından verilir. Özgün amacı `___setlc_active_func` etkin çağrı sayısı döndürülecek olan `setlocale` işlevi. Özgün amacı `___unguarded_readlc_active_add_func` kilitleme olmadan yerel başvurulan işlevler sayısını döndürmek için oluştu.
+İç CRT işlevleri `___setlc_active_func` ve `___unguarded_readlc_active_add_func` artık kullanılmıyor olsa da, ikili uyumluluğu korumak için CRT kitaplığı tarafından verilir. Özgün amacı `___setlc_active_func` , `setlocale` işlevine Şu anda etkin olan çağrıların sayısını döndürmemelidir. Özgün amacı `___unguarded_readlc_active_add_func` , yerel ayara, kilitlemeden önce başvuruda bulunulan işlevlerin sayısını döndüramamıştı.
 
 ## <a name="requirements"></a>Gereksinimler
 

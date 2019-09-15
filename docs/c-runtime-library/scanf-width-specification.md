@@ -1,105 +1,108 @@
 ---
 title: sacnf Genişlik Belirtimi
 ms.date: 11/04/2016
-apilocation:
+api_location:
 - msvcr100.dll
 - msvcr120.dll
 - msvcr80.dll
 - msvcr110_clr0400.dll
 - msvcr110.dll
 - msvcr90.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - scanf
 helpviewer_keywords:
 - scanf function, width specification
 ms.assetid: 94b4e8fe-c4a2-4799-8b6c-a2cf28ffb09c
-ms.openlocfilehash: 1431002a7e7d0054ac20c05c76b05cabc96177c5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3b00996f3a17ab9298b1edba5a8e60826e19fdcc
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62390821"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70957353"
 ---
 # <a name="scanf-width-specification"></a>sacnf Genişlik Belirtimi
 
-Bu bilgiler, Biçim dizesinde yorumunu geçerlidir `scanf` ailesindeki işlevlerin güvenli sürümleri gibi `scanf_s`. Bu işlevler, normalde giriş akışı, bir dizi belirteçleri ayrılmıştır varsayılır. Belirteçleri doğal sonuna kadar sayısal metne dönüştürülemedi ilk karakter tarafından belirtildiği gibi bir sayısal veri türü sayısal türleri söz konusu olduğunda veya boşluk (boşluk, sekme veya yeni satır) tarafından ayrılır. Ancak, bir belirteç doğal bitiminden önce durdurmak için giriş ayrıştırma neden genişlik belirtimi kullanılabilir.
+Bu bilgiler, gibi güvenli sürümler `scanf` `scanf_s`de dahil olmak üzere işlev ailesinde biçim dizelerinin yorumu için geçerlidir. Bu işlevler normalde giriş akışının bir belirteç dizisine bölündüğünü varsayar. Belirteçler boşluk (boşluk, sekme veya yeni satır) ile veya sayısal bir veri türünün, sayısal metne dönüştürülemeyen ilk karakter tarafından belirtildiği gibi doğal sonuna kadar ayrılmış olarak ayrılır. Ancak, bir belirtecin doğal sonundan önce girişin ayrıştırılmasını engellemek için genişlik belirtimi kullanılabilir.
 
-*Genişliği* karakter arasında oluşur belirtimi `%` ve adlı bir pozitif tamsayı içerebilir tür alanı tanımlayıcısı *genişliği* alan ve bir veya daha fazla karakter tür bir tamsayı türü olup olmadığına dair bir gösterge gibi alan değiştiricileri olarak düşünülebilecek alanın boyutunu belirten **kısa** veya **uzun**. Bu tür karakterler boyut öneki adlandırılır.
+*Genişlik* belirtimi ve tür alanı belirleyicisi arasındaki karakterlerden `%` oluşur. Bu, *Width* alanı adlı pozitif bir tamsayı ve alanın boyutunu belirten bir veya daha fazla karakter içerebilir ve bu da olabilir Tamsayı türünün **kısa** veya **uzun**olup olmadığına ilişkin bir gösterge gibi alanın türünün değiştirici olarak değerlendirilir. Bu tür karakterler boyut ön eki olarak adlandırılır.
 
 ## <a name="the-width-field"></a>Genişlik alanı
 
-*Genişliği* Bu alan için okunacak maksimum karakter sayısını denetleme bir ondalık tamsayı alanıdır. En fazla *genişliği* karakter dönüştürülür ve karşılık gelen konumunda depolanan `argument`. Az *genişliği* karakterler olabilir (boşluk, sekme veya yeni satır) boşluk veya göre verilen biçime dönüştürülemez karakter önce oluşursa okuma *genişliği* ulaşıldığında.
+*Width* alanı, bu alan için okunacak en fazla karakter sayısını denetleyen pozitif bir ondalık tamsayıdır. En fazla *Genişlik* karakteri dönüştürülerek karşılık gelen `argument`bir şekilde depolanmaz. Boşluk karakteri (boşluk, sekme veya yeni satır) veya verilen biçime göre dönüştürülemeyen bir karakter, *genişliğe* ulaşılmadan önce gerçekleşmediğinde, *Width* 'ten az karakter okunabilir.
 
-Bu işlevlerin güvenli sürümleri tarafından gerekli arabellek boyutu bağımsız birbirinden ayrı ve genişlik belirtimi (yani, `scanf_s`, `wscanf_s`vb..). Aşağıdaki örnekte, genişlik belirtimi 20 olur olduğunu belirten en fazla 20 karakter giriş akışından okunacak olan. Arabellek uzunluğu yer olası 20 karakter artı null Sonlandırıcı içerir 21,'dir:
+Genişlik belirtimi, bu işlevlerin güvenli sürümleri (ör. `scanf_s` `wscanf_s`,, vb.) için gerekli olan arabellek boyutu bağımsız değişkeninden ayrı ve birbirinden farklıdır. Aşağıdaki örnekte, Width belirtimi 20 ' dir ve giriş akışından 20 ' ye kadar karakter okunacağını gösterir. Arabellek uzunluğu 21 ' dir, bu da olası 20 karakter ve null Sonlandırıcı için yer işareti içerir:
 
 ```C
 char str[21];
 scanf_s("%20s", str, 21);
 ```
 
-Varsa *genişliği* alan kullanılmaz, `scanf_s` dizeye tüm belirteç okumaya çalışacaktır. Belirtilen boyut tüm belirteç tutmak için yeterince büyük değilse, hiçbir şey hedef dizeye yazılır. Varsa *genişliği* alanı belirtilirse, ardından ilk *genişliği* belirteci karakterleri hedef dize null Sonlandırıcı ile yazılır.
+*Genişlik* alanı kullanılmıyorsa, `scanf_s` tüm belirteci dizeye okumayı dener. Belirtilen boyut, belirtecin tamamını tutabilecek kadar büyük değilse, hedef dizeye hiçbir şey yazılmaz. *Genişlik* alanı belirtilmişse, belirteçteki ilk *Genişlik* karakterleri, null Sonlandırıcı ile birlikte hedef dizeye yazılır.
 
-## <a name="the-size-prefix"></a>Boyut öneki
+## <a name="the-size-prefix"></a>Boyut ön eki
 
-İsteğe bağlı önekleri **h**, **l**, **ll**, **I64**, ve **L** boyutunubelirtmek`argument`(uzun veya kısa, tek baytlı karakter veya geniş karakter, değiştirilen türü karakter bağlı olarak). Bu biçim belirtimi karakter türü karakter ile kullanılan `scanf` veya `wscanf` işlevleri aşağıdaki tabloda gösterildiği gibi değişkenleri yorumu belirtin. Tür önek **I64** bir Microsoft uzantısıdır ve ANSI uyumlu değil. Tür karakterleri ve bunların anlamlarını açıklayan "Karakter scanf işlevleri için tür" tablosunda açıklanan [scanf türü alan karakterleri](../c-runtime-library/scanf-type-field-characters.md).
+İsteğe bağlı **h**, **l**, **ll**, **I64** `argument` ve **l** önekleri, değiştirdikleri tür karakterine bağlı olarak, (uzun veya kısa, tek baytlı karakter veya geniş karakter) boyutunu belirtir. Bu biçim belirtimi karakterleri, aşağıdaki tabloda gösterildiği gibi bağımsız değişkenlerin `scanf` yorumunu `wscanf` belirtmek için veya işlevlerinde tür karakterleriyle birlikte kullanılır. Tür ön eki **I64** Microsoft UZANTıSıDıR ve ANSI uyumlu değildir. Tür karakterleri ve anlamları [scanf türü alan karakterleri](../c-runtime-library/scanf-type-field-characters.md)içindeki "scanf Işlevlerine yönelik karakter türleri" tablosunda açıklanmaktadır.
 
 > [!NOTE]
-> **h**, **l**, ve **L** ön ekleri veri türü ile kullanıldığında Microsoft genişletmeleridir `char`.
+> **H**, **l**ve **l** önekleri, türündeki `char`verilerle kullanıldığında Microsoft uzantılarıdır.
 
-### <a name="size-prefixes-for-scanf-and-wscanf-format-type-specifiers"></a>Scanf ve wscanf biçim türü belirteçleri için boyut önekleri
+### <a name="size-prefixes-for-scanf-and-wscanf-format-type-specifiers"></a>Scanf ve wscanf Format-Type belirticileri için boyut önekleri
 
-|Belirtmek için|Önek kullanın|Tür belirticisiyle|
+|Belirtmek için|Ön ek kullan|Tür belirticisiyle|
 |----------------|----------------|-------------------------|
-|**double**|**m**|**e**, **E**, **f**, **g**, veya **G**|
-|**uzun çift** (aynı çift)|**L**|**e**, **E**, **f**, **g**, veya **G**|
-|**Long int**|**m**|**d**, **miyim**, **o**, **x**, veya **X**|
-|**İmzasız Long int**|**m**|**u**|
-|**Long long**|**Tümünü**|**d**, **miyim**, **o**, **x**, veya **X**|
-|`short int`|**h**|**d**, **miyim**, **o**, **x**, veya **X**|
-|**işaretsiz kısa tamsayı**|**h**|**u**|
-|__**int64**|**I64**|**d**, **miyim**, **o**, **u**, **x**, veya **X**|
-|Tek baytlı karakter ile `scanf`|**h**|**c** veya **C**|
-|Tek baytlı karakter ile `wscanf`|**h**|**c** veya **C**|
-|Geniş karakter ile `scanf`|**m**|**c** veya **C**|
-|Geniş karakter ile `wscanf`|**m**|**c**, veya **C**|
-|Tek baytlı - karakter dizesi ile `scanf`|**h**|**s** veya **S**|
-|Tek baytlı - karakter dizesi ile `wscanf`|**h**|**s** veya **S**|
-|Geniş karakter dizesi ile `scanf`|**m**|**s** veya **S**|
-|Geniş karakter dizesi ile `wscanf`|**m**|**s** veya **S**|
+|**double**|**girişindeki**|**e**, **e**, **f**, **g**veya **g**|
+|**uzun çift** (Double ile aynı)|**L**|**e**, **e**, **f**, **g**veya **g**|
+|**long int**|**girişindeki**|**d**, **i**, **o**, **x**veya **x**|
+|**uzun işaretsiz int**|**girişindeki**|**u**|
+|**uzun uzun**|**ceğiz**|**d**, **i**, **o**, **x**veya **x**|
+|`short int`|**h**|**d**, **i**, **o**, **x**veya **x**|
+|**kısa işaretsiz int**|**h**|**u**|
+|__**Int64**|**I64**|**d**, **i**, **o**, **u**, **x**veya **x**|
+|İle tek baytlık karakter`scanf`|**h**|**c** veya **c**|
+|İle tek baytlık karakter`wscanf`|**h**|**c** veya **c**|
+|İle geniş karakter`scanf`|**girişindeki**|**c** veya **c**|
+|İle geniş karakter`wscanf`|**girişindeki**|**c**veya **c**|
+|İle tek baytlık karakter dizesi`scanf`|**h**|**s** veya **s**|
+|İle tek baytlık karakter dizesi`wscanf`|**h**|**s** veya **s**|
+|İle geniş karakterli dize`scanf`|**girişindeki**|**s** veya **s**|
+|İle geniş karakterli dize`wscanf`|**girişindeki**|**s** veya **s**|
 
-Aşağıdaki örneklerde **h** ve **l** ile `scanf_s` işlevleri ve `wscanf_s` İşlevler:
+Aşağıdaki örnekler, işlevleri ve `wscanf_s` işlevleri ile `scanf_s` **h** ve l kullanır:
 
 ```C
 scanf_s("%ls", &x, 2);     // Read a wide-character string
 wscanf_s(L"%hC", &x, 2);    // Read a single-byte character
 ```
 
-Güvenli olmayan bir işlevde kullanıyorsanız `scanf` ailesi, önceki bağımsız değişken arabellek uzunluğunu gösteren boyut parametreyi atlayın.
+`scanf` Ailesinden güvenli olmayan bir işlev kullanıyorsanız, önceki bağımsız değişkenin arabellek uzunluğunu belirten boyut parametresini atlayın.
 
-## <a name="reading-undelimited-strings"></a>Okuma sınırlandırılmamış dizeler
+## <a name="reading-undelimited-strings"></a>Sınırsız dizeleri okuma
 
-Boşluk tarafından ayrılmış olmayan dizeler okumak için karakter, köşeli ayraçlar içindeki karakter kümesi (**[]**) için yerine **s** tür karakteri (dize). Köşeli ayraçlar içindeki karakter kümesini denetim dize olarak adlandırılır. Karşılık gelen giriş alanını denetim dizesinde görünmez ilk karaktere okuyun. Kümedeki ilk karakteri bir şapka olup olmadığını (**^**), ters bir etkisi: Giriş alanı karakter kümesini geri kalanında görünen ilk karaktere okuyun.
+Boşluk karakterleriyle sınırlandırılmamış dizeleri okumak için, köşeli ayraçlar ( **[]** ) içindeki bir karakter kümesi, **s** (dize) türü karakteri için yerine kullanılabilir. Köşeli ayraçlar içindeki karakter kümesi, denetim dizesi olarak adlandırılır. Karşılık gelen giriş alanı, denetim dizesinde görünmeyen ilk karaktere okunurdur. Küme içindeki ilk karakter bir şapka ( **^** ) ise, efekt tersine çevrilir: Giriş alanı, karakter kümesinin geri kalanında görüntülenen ilk karaktere kadar okunurdur.
 
-Unutmayın **% [a-z]** ve **[z-a] %** eşdeğer olarak yorumlanır **% [abcde... z]**. Bu, bir ortak `scanf` işlevi uzantısı, ancak ANSI standardı, gerekmediğini unutmayın.
+% [ **A-z]** ve **% [z-a]** değerinin **% [abcde... ile eşdeğer olarak yorumlandığını unutmayın. z]** . Bu, yaygın `scanf` bir işlev uzantısıdır, ancak ANSI standardının bunu gerektirmediğini unutmayın.
 
-## <a name="reading-unterminated-strings"></a>Okuma Sonlandırılmamış dizeleri
+## <a name="reading-unterminated-strings"></a>Sonlandırılmamış dizeler okunuyor
 
-Bir sonlandırıcı null karakteri ('\0') depolamadan bir dize depolamak için belirtimi kullanın **%** <em>n</em>**c** burada *n* ondalık bir tamsayıdır. Bu durumda, **c** türü karakter bağımsız değişkeni bir karakter dizisine bir işaretçi olduğunu gösterir. Sonraki *n* karakterleri belirtilen konuma giriş akışından okuma ve hiçbir null karakteri ('\0') eklenir. Varsa *n* belirtilmezse, varsayılan değer 1'dir.
+Bir dizeyi, Sonlandırıcı null karakterini (' \ 0 ') depolamadan depolamak <em>için n</em>**c** belirtimini **%** kullanın; burada *n* , Decimal bir tamsayıdır. Bu durumda, **c** türü karakteri bağımsız değişkenin bir karakter dizisine bir işaretçi olduğunu gösterir. Sonraki *n* karakteri giriş akışından belirtilen konuma okundu ve hiçbir null karakter (' \ 0 ') eklenmez. *N* belirtilmemişse, varsayılan değeri 1 ' dir.
 
-## <a name="when-scanf-stops-reading-a-field"></a>Scanf bir alanının okunmasını durduğunda
+## <a name="when-scanf-stops-reading-a-field"></a>Scanf bir alanı okumayı durduruyor
 
-`scanf` İşlevi, her bir giriş alanı, karakter tarar. Bir boşluk karakteri için çeşitli nedenlerle ulaşmadan önce belirli bir giriş alanını okuma durdurabilir:
+`scanf` İşlevi her giriş alanını ve karakteri karakteriyle tarar. Çeşitli nedenlerle bir boşluk karakterine ulaşmadan önce belirli bir giriş alanını okumayı durdurabilir:
 
-- Belirtilen genişlik ulaşıldı.
+- Belirtilen genişliğe ulaşıldı.
 
-- Sonraki karakteri dönüştürülemez belirtildiği gibi.
+- Sonraki karakter, belirtilen şekilde dönüştürülemez.
 
-- Eşleştirilecek beklenen denetim dizesindeki bir karakter ile sonraki karakter çakışıyor.
+- Sonraki karakter, bir denetim dizesinde eşleşmesi beklenen bir karakterle çakışıyor.
 
-- Belirtilen karakter kümesinde görünmesini sonraki karakteri başarısız olur.
+- Bir sonraki karakter, belirli bir karakter kümesinde görünemez.
 
-Herhangi bir nedenle zaman `scanf` işlevi, giriş alanını okuma durdurur, sonraki giriş alanı okunmamış ilk karakterde başlamak için değerlendirilir. Çakışan bir karakter varsa, kabul okunmamış ve sonraki giriş alanı ilk karakteri veya giriş akışında sonraki okuma işlemleri ilk karakteri.
+Her nedenden dolayı, `scanf` işlev bir giriş alanını okumayı durdurulduğunda, sonraki giriş alanı ilk okunmamış karakterden başlayarak kabul edilir. Çakışan karakter, varsa, okunmamış olarak değerlendirilir ve sonraki giriş alanının ilk karakteri veya giriş akışındaki sonraki okuma işlemlerinde ilk karakter kullanılır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

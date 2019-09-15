@@ -1,10 +1,10 @@
 ---
 title: isleadbyte, _isleadbyte_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _isleadbyte_l
 - isleadbyte
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-string-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _istleadbyte
 - _isleadbyte_l
@@ -28,19 +31,19 @@ helpviewer_keywords:
 - istleadbyte function
 - isleadbyte function
 ms.assetid: 3b2bcf09-d82b-4803-9e80-59d04942802a
-ms.openlocfilehash: 1a3f427e49e53bb553020da100b0e713350fab3f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6b853dcea82c2afea91b2e0545d253786c88ae5e
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62286924"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70954304"
 ---
-# <a name="isleadbyte-isleadbytel"></a>isleadbyte, _isleadbyte_l
+# <a name="isleadbyte-_isleadbyte_l"></a>isleadbyte, _isleadbyte_l
 
-Bir karakterin çok baytlı karakterin ön baytı olup olmadığını belirler.
+Bir karakterin çok baytlı bir karakterin ön baytı olup olmadığını belirler.
 
 > [!IMPORTANT]
-> Bu API, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -52,32 +55,32 @@ int _isleadbyte_l( int c );
 ### <a name="parameters"></a>Parametreler
 
 *c*<br/>
-Test edilecek tamsayı.
+Sınanacak tamsayı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**isleadbyte** kullanmıyorsa, bağımsız değişken test koşulunu veya 0 karşılıyorsa, sıfır olmayan bir değer döndürür. "C" yerel ayarında ve tek baytlık karakter (SBCS) yerel kümesi **isleadbyte** her zaman 0 değerini döndürür.
+bağımsız değişken test koşulunu karşılıyorsa veya değilse 0 sıfır olmayan bir **değer döndürür.** "C" yerel ayarında ve tek baytlık karakter kümesi (SBCS) yerel ayarında, **ıleadbyte** her zaman 0 değerini döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**İsleadbyte** makrosu, kendi bağımsız değişken çok baytlı bir karakterin ilk baytı ise sıfır olmayan bir değer döndürür. **isleadbyte** -1 herhangi bir tamsayı bağımsız değişkeni için anlamlı bir sonuç üretir (**EOF**) için **UCHAR_MAX** (0xFF) dahil.
+**Ileadbyte** makrosu, bağımsız değişkeni çok baytlı bir karakterin ilk baytı ise sıfır dışında bir değer döndürür. **ıleadbyte** ,-1 (**EOF**) ile **uchar_max** (0xFF) (dahil) arasında herhangi bir tamsayı bağımsız değişkeni için anlamlı bir sonuç üretir.
 
-Beklenen değişken türü **isleadbyte** olduğu **int**; işaretli bir karakter geçerse derleyici öngörülemeyen sonuçlara işaret uzantısı ilse, bir tamsayıya dönüştürmek.
+**Ileadbyte** 'ın beklenen bağımsız değişken türü **int**'tir; imzalı bir karakter geçirilirse, derleyici onu oturum açma uzantısı tarafından bir tamsayıya dönüştürebilir ve öngörülemeyen sonuçlara neden olabilir.
 
-Bu işlevle sürümünü **_l** soneki, yerel ayara bağlı davranışı için geçerli yerel ayarı yerine iletilen yerel ayarı kullanması hariç, aynıdır.
+**_L** sonekine sahip bu işlevin sürümü, yerel ayara bağımlı davranış için geçerli yerel ayar yerine geçirilen yerel ayarı kullanması dışında aynıdır.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|**_istleadbyte**|Daima yanlış getirir|**_isleadbyte**|Daima yanlış getirir|
+|**_istleadbyte**|Her zaman yanlış döndürür|**_ıleadbyte**|Her zaman yanlış döndürür|
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**isleadbyte**|\<CType.h >|
-|**_isleadbyte_l**|\<CType.h >|
+|**ıleadbyte**|\<CType. h >|
+|**_isleadbyte_l**|\<CType. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

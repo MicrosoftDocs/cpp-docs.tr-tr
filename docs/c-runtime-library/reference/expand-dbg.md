@@ -1,9 +1,9 @@
 ---
 title: _expand_dbg
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _expand_dbg
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -14,7 +14,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - expand_dbg
 - _expand_dbg
@@ -23,16 +26,16 @@ helpviewer_keywords:
 - expand_dbg function
 - _expand_dbg function
 ms.assetid: dc58c91f-72a8-48c6-b643-fe130fb6c1fd
-ms.openlocfilehash: cc3aa2b7e39b52eb71ac10a9b5c4a221ba6fb70c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 836b9cffcf0367f248a14469b30c1a355e2bdec2
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62288051"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70941587"
 ---
-# <a name="expanddbg"></a>_expand_dbg
+# <a name="_expand_dbg"></a>_expand_dbg
 
-Belirtilen bir yığında bellek bloğu genişletme veya engelle (yalnızca hata ayıklama sürümü) ihtiyaçlarımıza göre yeniden boyutlandırır.
+Bloğu genişleterek veya geçirerek (yalnızca hata ayıklama sürümü) yığında belirtilen bellek bloğunu yeniden boyutlandırır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -49,49 +52,49 @@ void *_expand_dbg(
 ### <a name="parameters"></a>Parametreler
 
 *userData*<br/>
-Daha önce ayrılmış bellek bloğuna işaretçi.
+Önceden ayrılmış bellek bloğuna yönelik işaretçi.
 
 *newSize*<br/>
-Yeni Boyut (bayt cinsinden) blok için istendi.
+Blok için yeni boyut istedi (bayt cinsinden).
 
 *blockType*<br/>
-Yeniden boyutlandırılan blok türü istendi: **_clıent_block** veya **_NORMAL_BLOCK**.
+Yeniden boyutlandırılan blok için istenen tür: **_Client_block** veya **_NORMAL_BLOCK**.
 
-*Dosya adı*<br/>
-İstenen kaynak dosyasının adı işaretçi işlemi genişletin veya **NULL**.
+*kısaltın*<br/>
+Genişletme işlemi veya **null değeri**istenen kaynak dosyanın adı işaretçisi.
 
-*LineNumber*<br/>
-Satır numarası kaynak dosyada genişletme işlemi burada istendi veya **NULL**.
+*onayın*<br/>
+Genişletme işleminin istendiği veya **null**olduğu kaynak dosyadaki satır numarası.
 
-*Filename* ve *linenumber* parametreleri yalnızca kullanılabilir olduğunda **_expand_dbg** açıkça çağrılan veya [_CRTDBG_MAP_ALLOC](../../c-runtime-library/crtdbg-map-alloc.md)ön işlemci sabiti tanımlanmış.
+*Filename* ve *onayın* parametreleri yalnızca **_expand_dbg** açıkça çağrıldığında veya [_crtdbg_map_ayırma](../../c-runtime-library/crtdbg-map-alloc.md) Önişlemci sabiti tanımlandığında kullanılabilir.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarıyla tamamlandığında, **_expand_dbg** yeniden boyutlandırılan bir bellek bloğu için bir işaretçi döndürür. Bellek taşınıp taşınmayacağı çünkü adresi userData aynıdır. Bir hata oluştu veya blok istenen boyuta genişletilemedi, üretebiliyorsa **NULL**. Bir hata oluşursa **errno** hata ile işletim sisteminden yapısı bilgilerdir. Hakkında daha fazla bilgi için **errno**, bkz: [errno _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Başarılı tamamlandığında, **_expand_dbg** yeniden boyutlandırılmış bellek bloğuna bir işaretçi döndürür. Bellek taşınmadığından, adres userData ile aynı olur. Bir hata oluştuysa veya blok istenen boyuta genişlememişse, **null**döndürür. Bir hata oluşursa, **errno** işletim sisteminden hatanın doğası hakkında bilgi ile birlikte olur. **Errno**hakkında daha fazla bilgi için bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Expand_dbg** işlev _ hata ayıklama sürümü,[genişletin](expand.md) işlevi. Zaman [_DEBUG](../../c-runtime-library/debug.md) tanımlı değil, her çağrı **_expand_dbg** çağrısı azaltılır **_expand**. Her ikisi de **_expand** ve **_expand_dbg** taban yığının bellek bloğunda yeniden boyutlandırma ancak **_expand_dbg** birkaç hata ayıklama özellikleri kapsar: kullanıcı her iki tarafındaki arabellekler Blok için sızıntılara, belirli bir ayırma türleri izlemek için bir blok türü parametresi test etmek için bir kısmı ve *filename*/*linenumber* kökenini belirlemek için bilgi ayırma isteklerini.
+**_Expand_dbg** işlevi, _[Expand](expand.md) işlevinin bir hata ayıklama sürümüdür. [_Hata ayıklama](../../c-runtime-library/debug.md) tanımlanmadığında, **_expand_dbg** 'e yapılan her çağrı, **_expand**çağrısına düşürülür. Hem **_expand** hem de **_expand_dbg** temel yığında bir bellek bloğunu yeniden boyutlandırır, ancak **_expand_dbg** birkaç hata ayıklama özelliğini karşılar: sızıntıların test olması için bloğun Kullanıcı bölümünün her iki tarafında da arabellekler, izlenecek bir blok türü parametresi ayırma isteklerinin kaynağını tespit etmek için belirli ayırma türleri ve *dosya adı*/*onayın* bilgileri.
 
-**_expand_dbg** istenen biraz daha fazla alan ile belirtilen bellek bloğu yeniden boyutlandırır *newSize*. *newSize* büyük ya da ilk olarak ayrılan bellek blok boyutundan küçük olabilir. Ek alan, hata ayıklama bellek bloklarını bağlantı ve uygulama ile hata ayıklama üstbilgi bilgileri sağlayın ve arabellek üzerine yazmak için hata ayıklama yığını Yöneticisi tarafından kullanılır. Yeniden boyutlandırma, genişletme veya orijinal bellek bloğunun ihtiyaçlarımıza gerçekleştirilir. **_expand_dbg** gibi bellek bloğu taşımaz [_realloc_dbg](realloc-dbg.md) işlevi.
+**_expand_dbg** belirtilen bellek bloğunu Istenen *newSize*kıyasla biraz daha fazla alanla yeniden boyutlandırır. *newSize* , başlangıçta ayrılan bellek bloğunun boyutundan daha büyük veya daha küçük olabilir. Hata ayıklama bellek bloklarını bağlamak ve uygulamanın hata ayıklama üstbilgi bilgilerini ve üzerine yazma arabelleğini sağlamak için ek alan, hata ayıklama yığın Yöneticisi tarafından kullanılır. Yeniden boyutlandırma, özgün bellek bloğunun genişletilmesinin veya bir şekilde genişletilmesi ile gerçekleştirilir. **_expand_dbg** , [_realloc_dbg](realloc-dbg.md) işlevi olduğu gibi bellek bloğunu taşımaz.
 
-Zaman *newSize* özgün blok boyutu, bellek bloğu genişletilir daha büyüktür. Bellek bloğu istenen boyutuna genişletilemiyor, bir genişletme sırasında **NULL** döndürülür. Zaman *newSize* yeni boyut alınana kadar özgün blok boyutu, bellek bloğu sözleşmeleri yapılır daha küçük.
+*NewSize* , orijinal blok boyutundan daha büyükse, bellek bloğu genişletilir. Genişleme sırasında, bellek bloğu istenen boyuta uyacak şekilde genişletilemez, **null** döndürülür. *NewSize* , orijinal blok boyutundan küçük olduğunda, bellek bloğu yeni boyut alınana kadar alınır.
 
-Nasıl bellek blokları ayrılan, başlatılır ve taban yığının hata ayıklama sürümünde yönetilen hakkında daha fazla bilgi için bkz: [CRT hata ayıklama öbeği ayrıntıları](/visualstudio/debugger/crt-debug-heap-details). Ayırma blok türleri ve bunların nasıl kullanıldığı hakkında daha fazla bilgi için bkz. [hata ayıklama öbek üzerindeki blokları türleri](/visualstudio/debugger/crt-debug-heap-details). Standart yığın işlevi ve hata ayıklama sürümü, bir uygulamanın hata ayıklama derlemesinde çağırma arasındaki farklar hakkında daha fazla bilgi için bkz. [hata ayıklama sürümleri, yığın ayırma işlevleri](/visualstudio/debugger/debug-versions-of-heap-allocation-functions).
+Bellek bloklarının taban yığının hata ayıklama sürümünde nasıl ayrıldığı, başlatıldığı ve yönetildiği hakkında bilgi için bkz. [CRT hata ayıklama yığını ayrıntıları](/visualstudio/debugger/crt-debug-heap-details). Ayırma bloğu türleri ve bunların nasıl kullanıldığı hakkında bilgi için bkz. [hata ayıklama yığınındaki blok türleri](/visualstudio/debugger/crt-debug-heap-details). Bir uygulamanın hata ayıklama sürümünde standart yığın işlevi çağırma ve hata ayıklama sürümü arasındaki farklar hakkında daha fazla bilgi için bkz. [yığın ayırma Işlevlerinin hata ayıklama sürümleri](/visualstudio/debugger/debug-versions-of-heap-allocation-functions).
 
-Bu işlev, parametrelerini doğrular. Varsa *memblock* null bir işaretçiyse veya boyutu daha büyükse **_HEAP_MAXREQ**, bu işlev içinde açıklanan şekilde geçersiz parametre işleyicisini çağırır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse **errno** ayarlanır **EINVAL** ve işlev döndürür **NULL**.
+Bu işlev, parametrelerini doğrular. *Memblock* null bir işaretçiyse veya boyut **_Heap_maxreq**değerinden büyükse, bu işlev [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, **errno** **EINVAL** olarak ayarlanır ve işlev **null**değerini döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_expand_dbg**|\<crtdbg.h >|
+|**_expand_dbg**|\<Crtdbg. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 
-Hata ayıklama sürümleri [C çalışma zamanı kitaplıkları](../../c-runtime-library/crt-library-features.md) yalnızca.
+Yalnızca [C çalışma zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md) sürümlerini ayıklayın.
 
 ## <a name="example"></a>Örnek
 
@@ -148,7 +151,7 @@ Size of block after _expand_dbg of 1 more long: 164
 
 ## <a name="comment"></a>Yorum
 
-Bu programın çıkışı tüm bölümleri genişletmek için bilgisayarınızın yeteneklerine bağlı bağlıdır. Tüm bölümleri genişlettiyseniz, çıkışı Çıkış bölümünde yansıtılır.
+Bu programın çıktısı bilgisayarınızın tüm bölümleri genişletme özelliğine bağlıdır. Tüm bölümler genişletilmişse çıkış, çıkış bölümüne yansıtılır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

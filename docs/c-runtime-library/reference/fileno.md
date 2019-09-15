@@ -1,9 +1,9 @@
 ---
 title: _fileno
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _fileno
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _fileno
 helpviewer_keywords:
@@ -24,16 +27,16 @@ helpviewer_keywords:
 - _fileno function
 - streams, getting file handles
 ms.assetid: 86474174-2f17-4100-bcc4-352dd976c7b5
-ms.openlocfilehash: 682ab4b01a663bd9a6314138aa692b1c05b7437a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 586e390e100f5dc46a49b99c007016cf23ac68f0
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62333774"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70957213"
 ---
-# <a name="fileno"></a>_fileno
+# <a name="_fileno"></a>_fileno
 
-Bir akış ile ilişkili dosya tanımlayıcısını alır.
+Bir akışla ilişkili dosya tanımlayıcısını alır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -45,27 +48,27 @@ int _fileno(
 
 ### <a name="parameters"></a>Parametreler
 
-*Stream*<br/>
-İşaretçi **dosya** yapısı.
+*ka*<br/>
+**Dosya** yapısına yönelik işaretçi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_fileno** dosya tanımlayıcısını döndürür. Döndürülen hata yok. Varsa sonuç tanımsızdır *stream* açık bir dosyayı belirtmiyor. Akış ise **NULL**, **_fileno** açıklandığı gibi geçersiz parametre işleyicisini çağırır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Devam etmek için bu işlev -1 döndürür ve kümeleri yürütülmesine izin veriliyorsa **errno** için **EINVAL**.
+**_fileno** , dosya tanımlayıcısını döndürür. Hata döndürme yok. *Akış* bir açık dosya belirtmezse sonuç tanımsızdır. Stream **null**ise, **_Fileno** [parametresi, parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev-1 döndürür ve **errno** 'ı **EINVAL**olarak ayarlar.
 
 Bu ve diğer hata kodları hakkında daha fazla bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 > [!NOTE]
-> Varsa **stdout** veya **stderr** ilişkili değil (örneğin, bir konsol penceresi olmadan bir Windows uygulaması) bir çıkış akışı ile döndürülen dosya -2 tanımlayıcısıdır. Önceki sürümlerde, -1 döndürülen dosya tanımlayıcısı oluştu. Bu değişiklik, bu durum bir hata ayırt etmek uygulamalar sağlar.
+> **Stdout** veya **stderr** bir çıkış akışı ile ilişkili değilse (örneğin, konsol penceresi olmayan bir Windows uygulamasında), döndürülen dosya tanımlayıcısı-2 ' dir. Önceki sürümlerde, döndürülen dosya tanımlayıcısı-1 idi. Bu değişiklik, uygulamaların bu durumu bir hatadan ayırt etmesine olanak tanır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Fileno** yordamı şu anda ilişkili dosya tanımlayıcısı döndürür *stream*. Bu yordam, hem bir işlev ve makro olarak uygulanmıştır. Uygulamayı seçme hakkında daha fazla bilgi için bkz: [seçme arasında işlevlerle makrolar](../../c-runtime-library/recommendations-for-choosing-between-functions-and-macros.md).
+**_Fileno** yordamı, şu anda *Stream*ile ilişkili olan dosya tanımlayıcısını döndürür. Bu yordam, hem işlev hem de makro olarak uygulanır. Uygulama seçme hakkında daha fazla bilgi için bkz. [işlevler ve makrolar arasında seçim yapma](../../c-runtime-library/recommendations-for-choosing-between-functions-and-macros.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**_fileno**|\<stdio.h >|
+|**_fileno**|\<stdio. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -95,7 +98,7 @@ The file descriptor for stderr is 2
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Stream g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [_fdopen, _wfdopen](fdopen-wfdopen.md)<br/>
 [_filelength, _filelengthi64](filelength-filelengthi64.md)<br/>
 [fopen, _wfopen](fopen-wfopen.md)<br/>

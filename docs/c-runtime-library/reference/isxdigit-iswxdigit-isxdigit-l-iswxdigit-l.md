@@ -1,12 +1,12 @@
 ---
 title: isxdigit, iswxdigit, _isxdigit_l, _iswxdigit_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _iswxdigit_l
 - iswxdigit
 - isxdigit
 - _isxdigit_l
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -19,7 +19,10 @@ apilocation:
 - ucrtbase.dll
 - api-ms-win-crt-string-l1-1-0.dll
 - ntoskrnl.exe
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - iswxdigit
 - isxdigit
@@ -35,16 +38,16 @@ helpviewer_keywords:
 - hexadecimal characters
 - iswxdigit function
 ms.assetid: c8bc5146-0b58-4e3f-bee3-f2318dd0f829
-ms.openlocfilehash: 29429aa636d3a06b0ee6ceddfcc8a91a7db0e009
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 18f360e66583dfbf5033f813deed0b56abc71260
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62157363"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70953584"
 ---
-# <a name="isxdigit-iswxdigit-isxdigitl-iswxdigitl"></a>isxdigit, iswxdigit, _isxdigit_l, _iswxdigit_l
+# <a name="isxdigit-iswxdigit-_isxdigit_l-_iswxdigit_l"></a>isxdigit, iswxdigit, _isxdigit_l, _iswxdigit_l
 
-Tamsayının onaltılık basamak olan bir karakteri temsil edip etmediğini belirler.
+Bir tamsayının onaltılık basamak olan bir karakteri temsil edip etmediğini belirler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -68,35 +71,35 @@ int _iswxdigit_l(
 ### <a name="parameters"></a>Parametreler
 
 *c*<br/>
-Test edilecek tamsayı.
+Sınanacak tamsayı.
 
-*Yerel ayar*<br/>
+*ayarlar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Yordamların her biri bu döndürür sıfır olmayan *c* onaltılık basamak belirli bir gösterimidir. **isxdigit** sıfır olmayan bir değer döndürür *c* onaltılık bir sayıysa (A - F, a - f veya 0 - 9). **iswxdigit** sıfır olmayan bir değer döndürür *c* bir onaltılık basamak karakterine karşılık gelen bir geniş karakterse. Bu yordamların her biri 0 döndürür *c* test koşulu karşılamayan.
+Bu yordamların her biri, *c* 'nin belirli bir onaltılı basamak gösterimi olması halinde sıfır dışında bir değer döndürür. *c* , onaltılı bir sayı Ise (a-f, a-f veya 0-9), **ıxdigit** sıfır olmayan bir değer döndürür. *c* , onaltılı basamak karakterine karşılık gelen geniş bir karakter ise, **ıswxdigit** sıfır dışında bir değer döndürür. Bu yordamların her biri, *c* , test koşulunu karşılamadığı takdirde 0 döndürür.
 
-"C" yerel ayar için **iswxdigit** işlevi Unicode tam genişlikli onaltılık karakterleri desteklemez.
+"C" yerel ayarında, **ıswxdigit** işlevi Unicode tam genişlikli onaltılık karakterleri desteklemez.
 
-Sahip bu işlevlerin sürümleri **_l** soneki yerel ayara bağlı davranışları için geçerli yerel ayarı yerine iletilen yerel ayarı kullanır. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
+**_L** sonekine sahip bu işlevlerin sürümleri, yerel ayara bağımlı davranış için geçerli yerel ayar yerine geçirilen yerel ayarı kullanır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
-Davranışını **isxdigit** ve **_isxdigit_l** tanımsızdır *c* EOF değilse veya 0-0xFF aralığındaysa aralığında. Bir hata ayıklama CRT Kitaplığı kullanıldığında ve *c* değil, bu değerleri işlevleri raise onaylama biridir.
+*C* , EOF veya 0 ile 0xFF (dahil) arasında değilse, **ıxdigit** ve **_isxdigit_l** davranışı tanımsızdır. Bir hata ayıklama CRT kitaplığı kullanıldığında ve *c* bu değerlerden biri değilse, işlevler bir onaylama işlemi yükseltir.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|**_istxdigit**|**isxdigit**|**isxdigit**|**iswxdigit**|
+|**_istxbasamağı**|**isxdigit**|**isxdigit**|**iswxdigit**|
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**isxdigit**|\<CType.h >|
-|**iswxdigit**|\<CType.h > veya \<wchar.h >|
-|**_isxdigit_l**|\<CType.h >|
-|**_iswxdigit_l**|\<CType.h > veya \<wchar.h >|
+|**isxdigit**|\<CType. h >|
+|**iswxdigit**|\<CType. h > veya \<wchar. h >|
+|**_isxdigit_l**|\<CType. h >|
+|**_iswxdigit_l**|\<CType. h > veya \<wchar. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

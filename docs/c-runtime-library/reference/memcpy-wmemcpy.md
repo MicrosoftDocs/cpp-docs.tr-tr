@@ -1,10 +1,10 @@
 ---
 title: memcpy, wmemcpy
 ms.date: 11/04/2016
-apiname:
+api_name:
 - memcpy
 - wmemcpy
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - ntoskrnl.exe
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - wmemcpy
 - memcpy
@@ -24,12 +27,12 @@ helpviewer_keywords:
 - wmemcpy function
 - memcpy function
 ms.assetid: 34abb90b-bffb-46dc-a2f3-a5e9940839d6
-ms.openlocfilehash: f687e231060c287e206017dc61fe1d5193d8f0de
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: e9d947dc4e9ecea654e8cb16e957887fe4360161
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69499633"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70951849"
 ---
 # <a name="memcpy-wmemcpy"></a>memcpy, wmemcpy
 
@@ -73,9 +76,9 @@ Kopyalanacak karakter sayısı.
 > Hedef arabelleğinin boyut veya Kaynak arabelleğinden daha büyük olduğundan emin olun. Daha fazla bilgi için bkz. [arabellek taşmalarını önleme](/windows/win32/SecBP/avoiding-buffer-overruns).
 
 > [!IMPORTANT]
-> Bu nedenle çok sayıda arabellek taşması ve bu nedenle olası güvenlik açıkları, **memcler**'in hatalı kullanımıyla izlenmediğinden, bu Işlev güvenlik geliştirme yaşam döngüsü (SDL) tarafından "yasaklanmış" işlevler arasında listelenir.  Bazı VC + + kitaplık sınıflarının memcleyde kullanmaya devam edipedebiliriz.  Ayrıca, VC + + derleyici iyileştiricinin bazen memcleya çağrıları yaydığıgözlemleyebilirsiniz.  Görsel C++ ürün, SDL işlemine uygun olarak geliştirilmiştir ve bu nedenle bu yasaklanmış işlevin kullanımı yakından değerlendirilir.  Kitaplık kullanımı durumunda, bu çağrılar aracılığıyla arabellek taşmalarına izin verilmeyeceğini sağlamak için çağrılar dikkatle scrutinized.  Derleyici söz konusu olduğunda bazen bazı kod desenleri **memctable**deseniyle aynı şekilde tanınır ve bu nedenle, işlev çağrısıyla değiştirilmiştir.  Bu gibi durumlarda, **memckopyala** kullanımı özgün yönergelerden daha güvenli değildir; Bunlar, performansı ayarlanmış **memcler** işlevine yapılan bir çağrıya en iyi duruma getirilmiştir.  "Güvenli" CRT işlevlerinin kullanılması güvenliği garanti etmez (yalnızca güvenli olmaması önerilir), "yasaklanmış" işlevlerinin kullanılması olma tehlikesi 'yi garanti etmez (yalnızca güvenliği sağlamak için daha fazla scrlanlı olması gerekir).
+> Bu nedenle çok sayıda arabellek taşması ve bu nedenle olası güvenlik açıkları, **memcler**'in hatalı kullanımıyla izlenmediğinden, bu Işlev güvenlik geliştirme yaşam döngüsü (SDL) tarafından "yasaklanmış" işlevler arasında listelenir.  Bazı VC + + kitaplık sınıflarının **memcleyde**kullanmaya devam edip edebiliriz.  Ayrıca, VC + + derleyici iyileştiricinin bazen **memcleya**çağrıları yaydığı gözlemleyebilirsiniz.  Görsel C++ ürün, SDL işlemine uygun olarak geliştirilmiştir ve bu nedenle bu yasaklanmış işlevin kullanımı yakından değerlendirilir.  Kitaplık kullanımı durumunda, bu çağrılar aracılığıyla arabellek taşmalarına izin verilmeyeceğini sağlamak için çağrılar dikkatle scrutinized.  Derleyici söz konusu olduğunda bazen bazı kod desenleri **memctable**deseniyle aynı şekilde tanınır ve bu nedenle, işlev çağrısıyla değiştirilmiştir.  Bu gibi durumlarda, **memckopyala** kullanımı özgün yönergelerden daha güvenli değildir; Bunlar, performansı ayarlanmış **memcler** işlevine yapılan bir çağrıya en iyi duruma getirilmiştir.  "Güvenli" CRT işlevlerinin kullanılması güvenliği garanti etmez (yalnızca güvenli olmaması önerilir), "yasaklanmış" işlevlerinin kullanılması olma tehlikesi 'yi garanti etmez (yalnızca güvenliği sağlamak için daha fazla scrlanlı olması gerekir).
 >
-> VC + + derleyicisi ve kitaplıklar tarafından daha dikkatli scrutinized olduğundan, bu çağrılara, başka BIR şekilde SDL ile uyumlu olan kod içinde izin verilir.  uygulama kaynak kodunda tanıtılan **memcler** çağrıları yalnızca, bu kullanım güvenlik uzmanları tarafından incelenmek için SDL ile uyumludur.
+> VC + + derleyicisi ve kitaplıklar tarafından daha dikkatli **scrutinized olduğundan,** bu çağrılara, başka BIR şekilde SDL ile uyumlu olan kod içinde izin verilir.  uygulama kaynak kodunda tanıtılan **memcler** çağrıları yalnızca, bu kullanım güvenlik uzmanları tarafından incelenmek için SDL ile uyumludur.
 
 **Memcler** ve **wmemcpy** işlevleri, işlevlerin kullanım dışı olması için, aşağıdaki örnekte olduğu gibi, yalnızca sabit **_CRT_SECURE_DEPRECATE_MEMORY** , ekleme ifadesiyle önce tanımlanırsa kullanım dışı bırakılır:
 

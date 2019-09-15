@@ -1,10 +1,10 @@
 ---
 title: _fseek_nolock, _fseeki64_nolock
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _fseek_nolock
 - _fseeki64_nolock
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _fseek_nolock
 - _fseeki64_nolock
@@ -30,16 +33,16 @@ helpviewer_keywords:
 - _fseeki64_nolock function
 - seek file pointers
 ms.assetid: 2dd4022e-b715-462b-b935-837561605a02
-ms.openlocfilehash: 57e9a57223d6af620f4f9160923675b4873ab3ad
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c72f44b214893a6702f5da5594db7725a2f02136
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62287712"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70956536"
 ---
-# <a name="fseeknolock-fseeki64nolock"></a>_fseek_nolock, _fseeki64_nolock
+# <a name="_fseek_nolock-_fseeki64_nolock"></a>_fseek_nolock, _fseeki64_nolock
 
-Dosya işaretçisini, belirtilen bir konuma taşır.
+Dosya işaretçisini belirtilen konuma kaydırır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -58,34 +61,34 @@ int _fseeki64_nolock(
 
 ### <a name="parameters"></a>Parametreler
 
-*Stream*<br/>
-İşaretçi **dosya** yapısı.
+*ka*<br/>
+**Dosya** yapısına yönelik işaretçi.
 
-*uzaklık*<br/>
-Bayt sayısı *kaynak*.
+*konumu*<br/>
+*Kaynaktan*gelen bayt sayısı.
 
-*Kaynak*<br/>
+*tıdır*<br/>
 Başlangıç konumu.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Aynı [fseek](fseek-fseeki64.md) ve [_fseeki64](fseek-fseeki64.md)sırasıyla.
+Sırasıyla [fseek](fseek-fseeki64.md) ve [_fseeki64](fseek-fseeki64.md)ile aynıdır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevler kilitlenmeyen sürümleridir [fseek](fseek-fseeki64.md) ve [_fseeki64](fseek-fseeki64.md)sırasıyla. Bunlar aynı olan [fseek](fseek-fseeki64.md) ve [_fseeki64](fseek-fseeki64.md) hariç, bunlar başka iş parçacıklarının engellemelerinden korunmamaları. Bu işlevler, diğer iş parçacıklarını kilitleme ek yükü kalmadıklarından daha hızlı olabilir. Bu işlevler yalnızca tek iş parçacıklı uygulamalar ve burada çağırma kapsamının iş parçacığı yalıtımını zaten işlediği gibi iş parçacığı bakımından güvenli bağlamlarda kullanın.
+Bu işlevler sırasıyla [fseek](fseek-fseeki64.md) ve [_fseeki64](fseek-fseeki64.md)'in kilitleme dışı sürümleridir. Bunlar, diğer iş parçacıkları tarafından girişime karşı korunmamaları hariç [fseek](fseek-fseeki64.md) ve [_fseeki64](fseek-fseeki64.md) ile aynıdır. Bu işlevler, diğer iş parçacıklarını kilitleme yükünü ortadan bulmadığından daha hızlı olabilir. Bu işlevleri yalnızca, tek iş parçacıklı uygulamalar gibi iş parçacığı güvenli bağlamlarda veya çağırma kapsamının iş parçacığı yalıtımını zaten işlediği yerde kullanın.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**_fseek_nolock**, **_fseeki64_nolock**|\<stdio.h >|
+|**_fseek_nolock**, **_fseeki64_nolock**|\<stdio. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Stream g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [ftell, _ftelli64](ftell-ftelli64.md)<br/>
 [_lseek, _lseeki64](lseek-lseeki64.md)<br/>
 [rewind](rewind.md)<br/>

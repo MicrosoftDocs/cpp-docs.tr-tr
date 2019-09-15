@@ -1,9 +1,9 @@
 ---
 title: memicmp
 ms.date: 11/04/2016
-apiname:
+api_name:
 - memicmp
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -14,19 +14,22 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - memicmp
 helpviewer_keywords:
 - memicmp function
 ms.assetid: 45362e9c-7c64-41e9-92bb-7d4999a8635b
-ms.openlocfilehash: da192929f0005aa293c16881b4d21f3d334f6d68
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7bcbcec827caa8cfbeaf305937f0f58aa6b3024b
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62156583"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70951825"
 ---
 # <a name="memicmp"></a>memicmp
 
-Bu POSIX işlevi kullanım dışı bırakılmıştır. ISO kullanın C++ uyumluluğunu [_memicmp](memicmp-memicmp-l.md) yerine.
+Bu POSIX işlevi kullanım dışıdır. Bunun yerine ISO C++ uyumlu [_memicmp](memicmp-memicmp-l.md) kullanın.

@@ -1,9 +1,9 @@
 ---
 title: _ecvt_s
 ms.date: 04/05/2018
-apiname:
+api_name:
 - _ecvt_s
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-convert-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - ecvt_s
 - _ecvt_s
@@ -25,16 +28,16 @@ helpviewer_keywords:
 - numbers, converting
 - converting double numbers
 ms.assetid: d52fb0a6-cb91-423f-80b3-952a8955d914
-ms.openlocfilehash: 0123c618eb5ba614bd8e5b5b3f1f4b0aff539c4c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c50200d16a5e542c247d1c85f8c104381af4a883
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62288265"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70937722"
 ---
-# <a name="ecvts"></a>_ecvt_s
+# <a name="_ecvt_s"></a>_ecvt_s
 
-Dönüştürür bir **çift** bir dizeye sayı. Bu bir sürümüdür [_ecvt](ecvt.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
+**Çift** sayıyı dizeye dönüştürür. Bu, [CRT 'Deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklandığı gibi güvenlik geliştirmeleriyle [_ecvt](ecvt.md) 'in bir sürümüdür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -59,62 +62,62 @@ errno_t _ecvt_s(
 
 ### <a name="parameters"></a>Parametreler
 
-*_Buffer*<br/>
-Bir rakam dizesiyle, dönüştürmenin sonucu işaretçisi ile doldurulur.
+*_Arabellek*<br/>
+Basamak dizesinin işaretçisi, dönüştürmenin sonucu ile doldurulmuştur.
 
-*_SizeInBytes*<br/>
+*_Sizeınbytes*<br/>
 Arabelleğin bayt cinsinden boyutu.
 
-*_Değeri*<br/>
+*_Değer*<br/>
 Dönüştürülecek sayı.
 
-*_Count*<br/>
+*_Sayım*<br/>
 Depolanan basamak sayısı.
 
-*_Dec*<br/>
-Ondalık noktasının konumunu depolanır.
+*_Ara*<br/>
+Saklı ondalık noktası konumu.
 
-*_Oturum*<br/>
-Dönüştürülen sayının işaretini.
+*_Imzala*<br/>
+Dönüştürülen sayının işareti.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa sıfır. Bir hata varsa dönüş değeri bir hata kodudur. Hata kodları Errno.h içinde tanımlanır. Daha fazla bilgi için [errno _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Başarılıysa sıfır. Hata varsa dönüş değeri bir hata kodudur. Hata kodları errno. h içinde tanımlanır. Daha fazla bilgi için bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-Geçersiz bir parametre söz konusu olduğunda aşağıdaki tabloda listelendiği gibi bu işlev geçersiz parametre işleyicisi açıklandığı gibi çağırır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütme devam etmesine izin verilirse, bu işlev ayarlar **errno** için **EINVAL** ve döndürür **EINVAL**.
+Aşağıdaki tabloda listelendiği gibi geçersiz bir parametre söz konusu olduğunda, bu işlev [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev **errno** ' ı **EINVAL** olarak ayarlar ve **EINVAL**döndürür.
 
 ### <a name="error-conditions"></a>Hata koşulları
 
-|*_Buffer*|*_SizeInBytes*|_Değeri|_Count|_Dec|_Sign|Dönüş değeri|Değerini *arabelleği*|
+|*_Arabellek*|*_Sizeınbytes*|_Değer|_Sayım|_Ara|_Imzala|Dönüş değeri|*Arabellekteki* değer|
 |---------------|--------------------|-------------|-------------|-----------|------------|------------------|-----------------------|
-|**NULL**|Tüm|Tüm|Tüm|Tüm|Tüm|**EINVAL**|Değiştirilmedi.|
-|Değil **NULL** (geçerli bellek noktaları)|<=0|Tüm|Tüm|Tüm|Tüm|**EINVAL**|Değiştirilmedi.|
-|Tüm|Tüm|Tüm|Tüm|**NULL**|Tüm|**EINVAL**|Değiştirilmedi.|
-|Tüm|Tüm|Tüm|Tüm|Tüm|**NULL**|**EINVAL**|Değiştirilmedi.|
+|**DEĞER**|Kaydedilmemiş|Kaydedilmemiş|Kaydedilmemiş|Kaydedilmemiş|Kaydedilmemiş|**EINVAL**|Değiştirilmedi.|
+|**Null** değil (geçerli belleğe işaret eder)|<=0|Kaydedilmemiş|Kaydedilmemiş|Kaydedilmemiş|Kaydedilmemiş|**EINVAL**|Değiştirilmedi.|
+|Kaydedilmemiş|Kaydedilmemiş|Kaydedilmemiş|Kaydedilmemiş|**DEĞER**|Kaydedilmemiş|**EINVAL**|Değiştirilmedi.|
+|Kaydedilmemiş|Kaydedilmemiş|Kaydedilmemiş|Kaydedilmemiş|Kaydedilmemiş|**DEĞER**|**EINVAL**|Değiştirilmedi.|
 
 ## <a name="security-issues"></a>Güvenlik Sorunları
 
-**_ecvt_s** bir erişim ihlali durumunda üretebilir *arabellek* değil ve geçerli bellek işaret etmiyor **NULL**.
+*arabellek* geçerli belleğe işaret etmezse ve **null**değilse, **_ecvt_s** bir erişim ihlali oluşturabilir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Ecvt_s** işlevi, bir karakter dizesindeki bir kayan noktalı sayıya dönüştürür. *_Değeri* parametredir dönüştürülecek kayan noktalı sayı. Bu işlev kadar depolar *sayısı* rakamı *_Değeri* dize olarak ve null karakteri ('\0') ekler. Varsa basamak sayısı *_Değeri* aşıyor *_Count*, düşük düzey basamak yuvarlanır. Değerinden daha az *sayısı* basamak, dize sıfır sıfır.
+**_Ecvt_s** işlevi, bir kayan nokta numarasını bir karakter dizesine dönüştürür. *_Value* parametresi dönüştürülecek kayan noktalı sayıdır. Bu işlev, bir dize olarak *_Value* 'nun *sayı* rakamlarını depolar ve null karakteri (' \ 0 ') ekler. *_Value* içindeki basamak sayısı *_Sayımı*aşarsa, düşük sıra basamağı yuvarlanır. *Count* basamaktan daha azı varsa, dize sıfırlar ile doldurulur.
 
-Yalnızca rakam, dizede depolanır. Ondalık ve işaretini konumunu *_Değeri* örneğinden alınabilen *_Dec* ve *_oturum* çağrısından sonra. *_Dec* parametresi dizenin başlangıcına göre ondalık noktasının konumunu vermiş bir tamsayı değeri işaret eder. 0 veya negatif bir tamsayı değeri, Ondalık ayırıcının sol tarafında ilk basamak yer gösterir. *_Oturum* parametresi işaret dönüştürülmüş sayının işaretini belirten bir tamsayı. Tamsayı değeri 0 ise, pozitif bir sayıdır. Aksi takdirde, negatif sayıdır.
+Yalnızca rakamlar dizede depolanır. Ondalık noktanın konumu ve *_Değeri* , çağrıdan sonra *_Dec* ve *_sign* öğesinden elde edilebilir. *_Dec* parametresi, dizenin başlangıcına göre ondalık noktanın konumunu sağlayan bir tamsayı değerini gösterir. 0 veya negatif bir tamsayı değeri, ondalık noktanın ilk basamağın solunda olduğunu gösterir. *_Sign* parametresi, dönüştürülmüş sayının işaretini gösteren bir tamsayıyı işaret eder. Tamsayı değeri 0 ise, sayı pozitif olur. Aksi takdirde, sayı negatif olur.
 
-Arabellek uzunluğu **_CVTBUFSIZE** için herhangi bir kayan nokta değer yeterlidir.
+Her kayan nokta değeri için **_Cvtbufsize** uzunluğunda bir arabellek yeterlidir.
 
-Arasındaki fark **_ecvt_s** ve **_fcvt_s** öğesinin yorumlamasıdır içinde *_Count* parametresi. **_ecvt_s** yorumlar *_Count* çıkış dizesindeki basamak sayısı olarak ise **_fcvt_s** yorumlar *_Count* basamak sayısı ondalık noktası.
+**_Ecvt_s** ve **_Fcvt_s** arasındaki fark *_Count* parametresinin yorumlamasıdır. **_ecvt_s** sayıyı çıkış dizesindeki toplam basamak sayısı *olarak yorumlar,* ancak **_fcvt_s** , ondalık ayırıcıdan sonraki basamak sayısı *olarak değerlendirir.*
 
-C++'da, bu işlevi kullanarak bir şablon aşırı yük tarafından basitleştirilmiştir; aşırı yükleme arabellek uzunluğunu otomatik olarak, bir boyut bağımsız değişkeni belirtme gereksinimi ortadan çıkarabilir. Daha fazla bilgi için [güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
+' C++De, bu işlevin kullanılması şablon aşırı yüklemesiyle basitleştirilmiştir; aşırı yükleme, arabellek uzunluğunu otomatik olarak çıkarabilir ve bir boyut bağımsız değişkeni belirtme gereksinimini ortadan kaldırır. Daha fazla bilgi için bkz. [Güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 
-Hata ayıklama sürümü, bu işlevin ilk arabellek 0xFD ile doldurur. Bu davranışı devre dışı bırakmak için [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md).
+Bu işlevin hata ayıklama sürümü ilk olarak arabelleği 0xFD ile doldurur. Bu davranışı devre dışı bırakmak için [_Crtsetdebugfillthreshold](crtsetdebugfillthreshold.md)kullanın.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |İşlev|Gerekli başlık|İsteğe bağlı başlık|
 |--------------|---------------------|---------------------|
-|**_ecvt_s**|\<stdlib.h >|\<errno.h >|
+|**_ecvt_s**|\<Stdlib. h >|\<errno. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

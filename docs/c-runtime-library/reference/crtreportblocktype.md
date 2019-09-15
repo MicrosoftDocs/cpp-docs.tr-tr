@@ -1,9 +1,9 @@
 ---
 title: _CrtReportBlockType
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _CrtReportBlockType
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -14,7 +14,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _CrtReportBlockType
 - CrtReportBlockType
@@ -26,16 +29,16 @@ helpviewer_keywords:
 - _BLOCK_SUBTYPE macro
 - BLOCK_TYPE macro
 ms.assetid: 0f4b9da7-bebb-4956-9541-b2581640ec6b
-ms.openlocfilehash: 186c63ce1619d6427436ff1458ca551e464d0bce
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: cd50de1d1ade1d83b97bc465ff7e4c73b52fba2d
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62347421"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70942333"
 ---
-# <a name="crtreportblocktype"></a>_CrtReportBlockType
+# <a name="_crtreportblocktype"></a>_CrtReportBlockType
 
-Belirli hata ayıklama yığın blok işaretçisi ile ilişkili blok türü/alt döndürür.
+Verilen bir hata ayıklama yığını blok işaretçisi ile ilişkili blok türünü/alt türü döndürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -48,29 +51,29 @@ int _CrtReportBlockType(
 ### <a name="parameters"></a>Parametreler
 
 *pBlock*<br/>
-Geçerli hata ayıklama yığın blok için işaretçi.
+Geçerli bir hata ayıklama yığın bloğunun işaretçisi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Geçerli hata ayıklama yığın işaretçisi geçirildiğinde **_CrtReportBlockType** işlevi bloğu türünü ve alt biçiminde döndürür bir **int**. Geçersiz işaretçi geçirildiğinde, işlev -1 döndürür.
+Geçerli bir hata ayıklama yığın işaretçisi geçirildiğinde, **_Crtreportblocktype** işlevi bir **int**biçimindeki blok türünü ve alt türü döndürür. Geçersiz bir işaretçi geçirildiğinde, işlev-1 döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Türünü ve alt tarafından döndürülen ayıklanacak **_CrtReportBlockType**, makroları **_BLOCK_TYPE** ve **_BLOCK_SUBTYPE** (hem de Crtdbg.h tanımlanan) dönüş değeri.
+**_Crtreportblocktype**tarafından döndürülen türü ve alt türü ayıklamak için, döndürülen değer üzerinde makrolar **_Block_type** ve **_block_subtype** (her ikisi de Crtdbg. h içinde tanımlanmıştır) kullanın.
 
-Ayırma blok türleri ve bunların nasıl kullanıldığı hakkında daha fazla bilgi için bkz. [hata ayıklama öbek üzerindeki blokları türleri](/visualstudio/debugger/crt-debug-heap-details).
+Ayırma bloğu türleri ve bunların nasıl kullanıldığı hakkında bilgi için bkz. [hata ayıklama yığınındaki blok türleri](/visualstudio/debugger/crt-debug-heap-details).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_CrtReportBlockType**|\<crtdbg.h >|
+|**_CrtReportBlockType**|\<Crtdbg. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 
-Hata ayıklama sürümleri [C çalışma zamanı kitaplıkları](../../c-runtime-library/crt-library-features.md) yalnızca.
+Yalnızca [C çalışma zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md) sürümlerini ayıklayın.
 
 ## <a name="example"></a>Örnek
 

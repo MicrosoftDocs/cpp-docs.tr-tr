@@ -1,10 +1,10 @@
 ---
 title: _endthread, _endthreadex
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _endthread
 - _endthreadex
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-runtime-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _endthread
 - endthreadex
@@ -30,12 +33,12 @@ helpviewer_keywords:
 - _endthreadex function
 - threading [C++], terminating threads
 ms.assetid: 18a91f2f-659e-40b4-b266-ec12dcf2abf5
-ms.openlocfilehash: 5afbc907356d4c5b14b749de5de0c8d36280891e
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: c9dd4a49e534e8fa3e0f5ac735faccb4b0f65af5
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69499958"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70937730"
 ---
 # <a name="_endthread-_endthreadex"></a>_endthread, _endthreadex
 

@@ -1,9 +1,9 @@
 ---
 title: _heapwalk
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _heapwalk
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-heap-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - heapwalk
 - _heapwalk
@@ -24,19 +27,19 @@ helpviewer_keywords:
 - heapwalk function
 - _heapwalk function
 ms.assetid: 2df67649-fb00-4570-a8b1-a4eca5738744
-ms.openlocfilehash: cc2a49d9032746cc6c82c9dc401fc96baabbe2e1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8dc7ee9335f227bde93a414748ff70b165c44f8d
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62331694"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70954770"
 ---
-# <a name="heapwalk"></a>_heapwalk
+# <a name="_heapwalk"></a>_heapwalk
 
-Yığında gezer ve sonraki giriş hakkında bilgi döndürür.
+Yığın ile geçer ve sonraki giriş hakkında bilgi döndürür.
 
 > [!IMPORTANT]
-> Bu API, dışında Windows çalışma zamanı hata ayıklama yapılarında içinde yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, hata ayıklama derlemeleri hariç Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -46,43 +49,43 @@ int _heapwalk( _HEAPINFO *entryinfo );
 
 ### <a name="parameters"></a>Parametreler
 
-*entryinfo*<br/>
-Yığın bilgilerini içeren arabellek.
+*entryınfo*<br/>
+Yığın bilgileri içeren arabellek.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_heapwalk** Malloc.h içinde tanımlı aşağıdaki tam sayı bildirim sabitlerinden birini döndürür.
+**_heapizlenecek yol** , malloc. h içinde tanımlanan aşağıdaki tamsayı bildirim sabitlerinden birini döndürür.
 
 |Dönüş değeri|Açıklama|
 |-|-|
-|**_HEAPBADBEGIN**| İlk üstbilgi bilgileri geçersiz veya bulunamadı.|
-|**_HEAPBADNODE**| Yığın zarar görmüş veya bozuk düğümü bulunamadı.|
-|**_HEAPBADPTR**| **_Pentry** alanını **_heapınfo** yapısı geçerli bir işaretçiyi yığına içermiyor veya *entryinfo* bir null işaretçidir.|
-|**_HEAPEND**| Yığının sonuna başarıyla ulaşıldı.|
+|**_HEAPBADBEGIN**| İlk üstbilgi bilgisi geçersiz veya bulunamadı.|
+|**_HEAPBADNODE**| Yığın hasarlı veya hatalı düğüm bulundu.|
+|**_HEAPBADPTR**| **_Heapınfo** yapısının **_pentry** alanı yığında geçerli bir işaretçi içermiyor veya *entryınfo* null bir işaretçisidir.|
+|**_HEAPEND**| Yığının sonuna başarıyla erişildi.|
 |**_HEAPEMPTY**| Yığın başlatılmadı.|
-|**_HEAPOK**| Kadar hiç hata; *entryinfo* sonraki yığın giriş hakkındaki bilgilerle güncelleştirilir.|
+|**_CENPOK**| Şu ana kadar hata yok; *entryınfo* , sonraki yığın girişi hakkında bilgilerle güncelleştirilir.|
 
-Ayrıca, bir hata oluşursa **_heapwalk** ayarlar **errno** için **ENOSYS**.
+Ayrıca, bir hata oluşursa, **_heapizlenecek yol** , **errsys** olarak ayarlar.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Heapwalk** işlevi, programlardaki yığınla ilişkili sorunlarda hata ayıklama yardımcı olur. İşlev çağrı başına bir girişe geçiş yığın kılavuzluk ve bir türü yapısına bir işaretçi döndürür **_heapınfo** , sonraki yığın girişi hakkında bilgi içerir. **_Heapınfo** Malloc.h içinde tanımlı türü, aşağıdaki öğeleri içerir.
+**_Heapyürüme** işlevi programlarda yığın ile ilgili sorunların hatalarını ayıklamasına yardımcı olur. İşlevi yığın boyunca ilerler, her çağrı için bir girişe geçiş yapın ve bir sonraki yığın girişi hakkında bilgi içeren **_Heapınfo** türünde bir yapıya bir işaretçi döndürür. Malloc. h içinde tanımlanan **_Heapınfo** türü aşağıdaki öğeleri içerir.
 
 |Alan|Açıklama|
 |-|-|
-|`int *_pentry`|Yığın Giriş işaretçisi.|
+|`int *_pentry`|Yığın giriş işaretçisi.|
 |`size_t _size`|Yığın girişinin boyutu.|
-|`int _useflag`|Yığın girdinin kullanımda olup olmadığını gösteren bayrak.|
+|`int _useflag`|Yığın girişinin kullanımda olup olmadığını belirten bayrak.|
 
-Bir çağrı **_heapwalk** döndüren **_HEAPOK** girişin boyutunu depolayan **_boyut** alan ve kümelerini **_useflag** ya da alanı **_FREEENTRY** veya **_USEDENTRY** (her ikisi de Malloc.h içinde tanımlanan sabit değerlerdir). Yığındaki ilk girişle ilgili bu bilgileri almak için geçirin **_heapwalk** bir işaretçi bir **_heapınfo** yapısına **_pentry** üyesidir **NULL** . İşletim sistemi desteklemiyorsa **_heapwalk**(örneğin, Windows 98), işlev döndürür **_HEAPEND** ve ayarlar **errno** için **ENOSYS**.
+**_Cenpok** döndüren **_heapizlenecek** bir çağrı, girişin boyutunu **_Size** alanına depolar ve **_useflag** alanını **_FREEENTRY** ya da **_USEDENTRY** (her ikisi de malloc. h içinde tanımlanan sabitler) olarak ayarlar. Yığındaki ilk giriş hakkında bu bilgileri almak için, **_pentry** üyesi **null**olan **_HEAPINFO** yapısına bir **işaretçi geçirin.** İşletim sistemi **_heapizlenecek yol**(örneğin, Windows 98) desteklemiyorsa, Işlev **_HEAPEND** döndürür ve **errno** , **ENOSYS**olarak ayarlar.
 
-Bu işlev, parametresini doğrular. Varsa *entryinfo* null bir işaretçiyse, açıklanan şekilde geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse **errno** ayarlanır **EINVAL** ve işlev döndürür **_HEAPBADPTR**.
+Bu işlev, parametresini doğrular. *Entryınfo* null Işaretçisiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, **errno** **EINVAL** olarak ayarlanır ve Işlev **_HEAPBADPTR**döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|İsteğe bağlı başlık|
 |-------------|---------------------|---------------------|
-|**_heapwalk**|\<malloc.h >|\<errno.h >|
+|**_heapwalk**|\<malloc. h >|\<errno. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

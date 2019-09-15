@@ -1,9 +1,9 @@
 ---
 title: fetestexcept
 ms.date: 04/05/2018
-apiname:
+api_name:
 - fetestexcept
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,23 +15,26 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-runtime-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - fetestexcept
 - fenv/fetestexcept
 helpviewer_keywords:
 - fetestexept function
 ms.assetid: ca4dc43f-5573-440d-bc19-ead7571b13dc
-ms.openlocfilehash: ed75ab0ff13029f6ec10c1aafbcb7f7b23b46fd6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 61a68b4569d52b550da3fad12c077b82bb067fa9
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62334171"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70941008"
 ---
 # <a name="fetestexcept"></a>fetestexcept
 
-Belirtilen bir kayan nokta özel durumu bayrakları hangisinin şu anda ayarlanmış belirler.
+Belirtilen kayan nokta özel durum durumu bayraklarının hangisinin geçerli olarak ayarlandığını belirler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -43,35 +46,35 @@ int fetestexcept(
 
 ### <a name="parameters"></a>Parametreler
 
-*excepts*<br/>
-Test etmek için bir bit seviyesinde veya kayan nokta durumu bayrakları.
+*hariç tutulan*<br/>
+Test etmek için bir bit düzeyinde veya kayan nokta durum bayraklarının.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarı, özel durum durumu bayrakları için şu anda karşılık gelen kayan nokta özel durum makroları bir bit düzeyinde OR içeren bit maskesi döndürür ayarlayın. Özel durumların yok ise 0 döndürür ayarlanır.
+Başarılı olduğunda, şu anda ayarlanmış olan özel durum bayraklarıyla karşılık gelen bir bit düzeyinde veya kayan nokta özel durum makroları içeren bir bit maskesi döndürür. Özel durumların hiçbiri ayarlanmamışsa 0 döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir kayan hangi özel durumları ortaya çıktı belirlemek için fetestexcept işlevini nokta işlemi. Kullanım *excepts* test etmek için hangi özel durum durumu bayrakları belirtmek için parametre. **Fetestexcept** işlevi kullanır bu özel durum makroları tanımlanan \<fenv.h > içinde *excepts* ve dönüş değeri:
+Bir kayan nokta işlemi tarafından hangi özel durumların ortaya çıkarılmadığını öğrenmek için fetestexcept işlevini kullanın. Sınanacak özel durum durumu bayraklarını belirtmek için *hariç tutulan* parametresini kullanın. **Fetestexcept** işlevi, \< *hariç tutulan* ve dönüş değerindeki fenv. h > içinde tanımlanan bu özel durum makrolarını kullanır:
 
 |Özel durum makrosu|Açıklama|
 |---------------------|-----------------|
-|FE_DIVBYZERO|Daha önce bir kayan nokta işleminde singularity ya da kutup bir hata oluştu; sonsuz değerle oluşturulur.|
-|FE_INEXACT|İşlevi, bir önceki kayan noktalı işlemin depolanmış sonucu yuvarlanacak zorlandı.|
-|FE_INVALID|Daha önce bir kayan nokta işleminde bir etki alanı hatası oluştu.|
-|FE_OVERFLOW|Aralık bir hata oluştu; önceki bir kayan noktalı işlemin sonucu gösterilemeyecek kadar büyüktü.|
-|FE_UNDERFLOW|Önceki bir kayan noktalı işlemin sonucu tam duyarlıklı gösterilemeyecek kadar çok küçük; denormal değer oluşturuldu.|
-|FE_ALLEXCEPT|Bit düzeyinde OR tüm kayan nokta özel durumları desteklenmiyor.|
+|FE_DIVBYZERO|Daha önceki bir kayan nokta işleminde singularor veya direk hatası oluştu; sonsuz değer oluşturuldu.|
+|FE_INEXACT|İşlev, önceki bir kayan nokta işleminin saklı sonucunu yuvarlamak üzere zorlandı.|
+|FE_INVALID|Önceki kayan nokta işleminde bir etki alanı hatası oluştu.|
+|FE_OVERFLOW|Bir Aralık hatası oluştu; daha önceki bir kayan nokta işlem sonucu gösterilemeyecek kadar büyüktü.|
+|FE_UNDERFLOW|Daha önceki bir kayan nokta işlem sonucu tam duyarlıkta gösterilemeyecek kadar küçük; bir denormal değeri oluşturuldu.|
+|FE_ALLEXCEPT|Desteklenen tüm kayan nokta özel durumlarının bit düzeyinde veya dışında.|
 
-Belirtilen *excepts* bağımsız değişkeni 0, desteklenen bir kayan nokta özel durum makroları veya bit ya da iki veya daha fazla makroları olabilir. Diğer etkisini *excepts* bağımsız değişken değeri tanımsızdır.
+Belirtilen *hariç tutulan* bağımsız değişken 0, desteklenen kayan nokta özel durumu makrolarından biri veya iki ya da daha fazla makronun BIT düzeyinde ya da daha fazlası olabilir. Diğer tüm *hariç tutulan* bağımsız değişken değerinin etkisi tanımsızdır.
 
-Bu işlevi kullanmak için erişim kullanarak engelleyebilir kayan nokta iyileştirmelerinin kapatmanız gerekir `#pragma fenv_access(on)` çağrıdan önceki yönerge. Daha fazla bilgi için [fenv_access](../../preprocessor/fenv-access.md).
+Bu işlevi kullanmak için, çağrıdan önce `#pragma fenv_access(on)` yönergesini kullanarak erişimi engelleyebilecek kayan nokta iyileştirmelerini kapatmanız gerekir. Daha fazla bilgi için bkz. [fenv_access](../../preprocessor/fenv-access.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İşlev|C üstbilgisi|C++ üst bilgisi|
+|İşlev|C üstbilgisi|C++üst bilgi|
 |--------------|--------------|------------------|
-|**fetestexcept**|\<fenv.h >|\<cfenv >|
+|**fetestexcept**|\<fenv. h >|\<cfenv >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

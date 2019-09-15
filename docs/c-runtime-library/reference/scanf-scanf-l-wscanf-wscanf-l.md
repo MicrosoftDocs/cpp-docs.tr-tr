@@ -1,12 +1,12 @@
 ---
 title: scanf, _scanf_l, wscanf, _wscanf_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _wscanf_l
 - scanf
 - _scanf_l
 - wscanf
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _tscanf
 - _scanf_l
@@ -40,16 +43,16 @@ helpviewer_keywords:
 - wscanf_l function
 - _wscanf_l function
 ms.assetid: 73eac607-117f-4be4-9ff0-4afd9cf3c848
-ms.openlocfilehash: 48aa0bb3348a3336de9ee0eb9f9ec0d3e1a2b3cb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5c3b0f73561dcd41ef1643042baeac7fff0728b4
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62357128"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70948841"
 ---
-# <a name="scanf-scanfl-wscanf-wscanfl"></a>scanf, _scanf_l, wscanf, _wscanf_l
+# <a name="scanf-_scanf_l-wscanf-_wscanf_l"></a>scanf, _scanf_l, wscanf, _wscanf_l
 
-Biçimlendirilmiş verileri standart giriş akışından okur. Bu işlevin daha güvenli sürümleri mevcuttur; bkz: [scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md).
+Standart giriş akışından biçimlendirilen verileri okur. Bu işlevin daha güvenli sürümleri mevcuttur; bkz. [scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -76,51 +79,51 @@ int _wscanf_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*Biçim*<br/>
-Biçim Denetimi dizesi.
+*format*<br/>
+Biçim denetimi dizesi.
 
-*Bağımsız değişken*<br/>
+*değişkendir*<br/>
 İsteğe bağlı bağımsız değişkenler.
 
-*Yerel ayar*<br/>
+*ayarlar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarıyla dönüştürülen ve atanan alanların sayısını döndürür; dönüş değeri, Okunmuş ancak atanmamış alanları içermez. 0 değeri hiçbir alan atanmamış belirtir.
+Başarıyla dönüştürülen ve atanan alanların sayısını döndürür; dönüş değeri, okunan ancak atanmamış alanları içermez. 0 dönüş değeri hiçbir alan atanmadığını gösterir.
 
-Varsa *biçimi* olduğu bir **NULL** işaretçiyse, geçersiz parametre işleyicisi çağrılır, açıklandığı [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse, bu işlevler döndürür **EOF** ayarlayıp **errno** için **EINVAL**.
+*Biçim* **null** Işaretçisiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **EOF** döndürür ve **errno** , **EINVAL**olarak ayarlanır.
 
-Bunlar ve diğer hata kodları hakkında daha fazla bilgi için bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Bu ve diğer hata kodları hakkında bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Scanf** işlevi standart giriş akışından verileri okur **stdin** ve verileri tarafından verilen konuma Yazar *bağımsız değişken*. Her *bağımsız değişken* içinde bir tür belirleyiciye karşılık gelen bir tür bir değişken, bir işaretçi olmalıdır *biçimi*. Kopyalama çakışan dizeler arasında yer alırsa davranış tanımsızdır.
+**Scanf** işlevi standart giriş akışı **stdin** ' den verileri okur ve *bağımsız değişken*tarafından verilen konuma verileri yazar. Her *bağımsız değişken* , *biçimdeki*bir tür belirticisine karşılık gelen bir tür değişkenine bir işaretçi olmalıdır. Çakışan dizeler arasında kopyalama gerçekleşmesi durumunda davranış tanımsızdır.
 
 > [!IMPORTANT]
-> Bir dizeyle okurken **scanf**, her zaman için bir genişlik belirtin **%s** biçiminde (örneğin, **"% 32s"** yerine **"%s"**); Aksi takdirde kolayca düzgün biçimlendirilmiş bir giriş arabellek taşmasına neden olabilir. Alternatif olarak, kullanmayı [scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md) veya [fgets](fgets-fgetws.md).
+> **Scanf**ile bir dize okunurken, her zaman **% s** biçimi için bir genişlik belirleyin (örneğin, "% **s"** yerine **"% 32S"** ); Aksi halde, düzensiz biçimli giriş, arabellek taşmasına kolayca neden olabilir. Alternatif olarak, [scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md) veya [fal](fgets-fgetws.md)kullanmayı göz önünde bulundurun.
 
-**wscanf** geniş karakterli sürümüdür **scanf**; *biçimi* bağımsız değişkeni **wscanf** geniş karakterli bir dizedir. **wscanf** ve **scanf** akış ANSI modunda açıldığında aynı şekilde davranır. **scanf** şu anda UNICODE akışından girişi desteklemez.
+**wscanf** , **scanf**'nin geniş karakterli bir sürümüdür; **wscanf** *Biçim* bağımsız değişkeni geniş karakterli bir dizedir. Akış ANSI modunda açılırsa **wscanf** ve **scanf** aynı şekilde davranır. **scanf** Şu anda UNICODE akışından girişi desteklememektedir.
 
-Sahip bu işlevlerin sürümleri **_l** sonekine, geçerli iş parçacığı yerel ayarı yerine iletilen yerel ayar parametresini kullanmalarıdır.
+**_L** sonekine sahip bu işlevlerin sürümleri, geçerli iş parçacığı yerel ayarı yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_tscanf**|**scanf**|**scanf**|**wscanf**|
 |**_tscanf_l**|**_scanf_l**|**_scanf_l**|**_wscanf_l**|
 
-Daha fazla bilgi için [biçim belirtimi alanları: scanf işlevler ve wscanf işlevleri](../../c-runtime-library/format-specification-fields-scanf-and-wscanf-functions.md).
+Daha fazla bilgi için bkz. [Biçim belirtim alanları — scanf işlevleri ve wscanf işlevleri](../../c-runtime-library/format-specification-fields-scanf-and-wscanf-functions.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**scanf**, **_scanf_l**|\<stdio.h >|
-|**wscanf**, **_wscanf_l**|\<stdio.h > veya \<wchar.h >|
+|**scanf**, **_scanf_l**|\<stdio. h >|
+|**wscanf**, **_wscanf_l**|\<stdio. h > veya \<wchar. h >|
 
-Konsolu, Evrensel Windows Platformu (UWP) uygulamaları desteklenmez. Konsolları ile ilişkili standart akış işleyicileri **stdin**, **stdout**, ve **stderr**, C çalışma zamanı işlevleri bunları UWP uygulamalarında kullanmadan önce yeniden yönlendirilmesi gerekiyor . Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Konsol Evrensel Windows Platformu (UWP) uygulamalarında desteklenmez. Console, **STDIN**, **stdout**ve **stderr**Ile ilişkili standart akış TUTAMAÇLARı, C çalışma zamanı işlevlerinin UWP uygulamalarında kullanabilmesi için yeniden yönlendirilmelidir. Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
@@ -163,7 +166,7 @@ The contents are: 36 92.300003 y n Wide characters
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
-[Stream g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [locale](../../c-runtime-library/locale.md)<br/>
 [fscanf, _fscanf_l, fwscanf, _fwscanf_l](fscanf-fscanf-l-fwscanf-fwscanf-l.md)<br/>
 [printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md)<br/>

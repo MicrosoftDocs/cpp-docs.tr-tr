@@ -1,12 +1,12 @@
 ---
 title: _mbclen, mblen, _mblen_l, _mbclen_l
 ms.date: 01/22/2019
-apiname:
+api_name:
 - _mbclen
 - mblen
 - _mblen_l
 - _mbclen_l
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -19,7 +19,10 @@ apilocation:
 - ucrtbase.dll
 - api-ms-win-crt-multibyte-l1-1-0.dll
 - api-ms-win-crt-string-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - mblen
 - ftclen
@@ -39,19 +42,19 @@ helpviewer_keywords:
 - mbclen function
 - mblen function
 ms.assetid: d5eb92a0-b7a3-464a-aaf7-9890a8e3ed70
-ms.openlocfilehash: b7888b0b8c87a632dcbb63f54ade11080c7a309a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 96775f513b33eb407981480c17cb609dd85383f6
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62156791"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70952572"
 ---
-# <a name="mbclen-mblen-mblenl-mbclenl"></a>_mbclen, mblen, _mblen_l, _mbclen_l
+# <a name="_mbclen-mblen-_mblen_l-_mbclen_l"></a>_mbclen, mblen, _mblen_l, _mbclen_l
 
-Uzunluğu alır ve çok baytlı karakterin geçerliliğini belirler.
+Uzunluğu alır ve çok baytlı bir karakterin geçerliliğini belirler.
 
 > [!IMPORTANT]
-> Bu API, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -80,39 +83,39 @@ int _mblen_l(
 Çok baytlı karakter.
 
 *mbstr*<br/>
-Bir çok baytlı karakter baytı dizesi adresi.
+Çok baytlı karakter bayt dizisinin adresi.
 
-*Sayısı*<br/>
+*biriktirme*<br/>
 Denetlenecek bayt sayısı.
 
-*Yerel ayar*<br/>
+*ayarlar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_mbclen** döndürür 1 veya 2 olup olmadığına göre çok baytlı karakterin *c* 1 veya 2 bayt uzunluğunda. Herhangi bir hata için dönüş **_mbclen**. Varsa *mbstr* değil **NULL**, **mblen** çok baytlı karakterinin bayt cinsinden uzunluğunu döndürür. Varsa *mbstr* olduğu **NULL** veya geniş karakterli null karakterini gösteriyorsa **mblen** 0 döndürür. Nesne, *mbstr* noktalarına değil geçerli çok baytlı bir karakterin ilk form *sayısı* karakter **mblen** -1 döndürür.
+**_mbclen** , *c* çok baytlı karakterinin 1 veya 2 bayt uzunluğunda olup olmadığına göre 1 veya 2 değerini döndürür. **_Mbclen**için hata döndürme yok. *Mbstr* **null**değilse **mblen** , çok baytlı karakterin bayt cinsinden uzunluğunu döndürür. *Mbstr* **null** ise veya geniş karakterli boş karakteri gösteriyorsa **mblen** 0 döndürür. *Mbstr* tarafından işaret edilen nesne ilk *sayı* karakterleri içinde geçerli bir çok baytlı karakter oluşturmazsa, **mblen** ,-1 döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Mbclen** işlevi çok baytlı karakterinin bayt cinsinden uzunluğunu döndürür *c*. Varsa *c* örtük çağrıyla tarafından belirlendiği çok baytlı karakterin ön baytını işaret etmiyor **_ismbblead**, sonucunu **_mbclen** tahmin edilemez.
+**_Mbclen** işlevi, *c*çok baytlı karakterinin karakter cinsinden uzunluğunu döndürür. *C* , **_ismbblider**'e örtük bir çağrı tarafından belirlendiği şekilde çok baytlı bir karakterin ön bayta işaret etmez, **_mbclen** sonucu tahmin edilemez.
 
-**mblen** bayt cinsinden uzunluğunu döndürür *mbstr* geçerli çok baytlı karakterse ve kod sayfasıyla ilişkili çok baytlı karakter geçerliliğini belirler. **mblen** inceler *sayısı* veya içindeki daha az baytı *mbstr*, fazlasını **MB_CUR_MAX** bayt.
+**mblen** , geçerli bir çok baytlı karakter ise ve kod sayfasıyla ilişkili çok baytlı karakter geçerliliğini belirlerse *mbstr* 'nin bayt cinsinden uzunluğunu döndürür. **mblen** sayısı, *mbstr*içinde bulunan ancak **MB_CUR_MAX** bayttan fazla değil, *Count* veya daha az bayt inceler.
 
-Çıkış değeri tarafından etkilenen **LC_CTYPE** yerel ayarının kategori ayarına; bkz: [setlocale](setlocale-wsetlocale.md) daha fazla bilgi için. Bu işlevlerin sürümleri **_l** soneki, bu yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır. **_L** sonekli sürümleri aynı davranır, ancak bunun yerine iletilmiş yerel ayar parametresini kullanırlar. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
+Çıkış değeri yerel ayarın **LC_CTYPE** kategori ayarından etkilenir; daha fazla bilgi için bkz. [setlocale](setlocale-wsetlocale.md) . **_L** sonekine sahip olmayan bu işlevlerin sürümleri, yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır. **_L** soneki sabit sürümleri aynı şekilde davranır, ancak bunun yerine geçirilen yerel ayar parametresini kullanırlar. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
 |Tchar.h yordamı|_UNICODE ve _MBCS tanımlanmaz|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|--------------------------------------|--------------------|-----------------------|
-|**_tclen**|Makro veya satır içi işleve eşlenir|**_mbclen**|Makro veya satır içi işleve eşlenir|
+|**_tclen**|Makroya veya satır içi işleve eşlenir|**_mbclen**|Makroya veya satır içi işleve eşlenir|
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_mbclen**|\<Mbstring.h >|
-|**mblen**|\<stdlib.h >|
-|**_mblen_l**|\<stdlib.h >|
+|**_mbclen**|\<mbstring. h >|
+|**mblen**|\<Stdlib. h >|
+|**_mblen_l**|\<Stdlib. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

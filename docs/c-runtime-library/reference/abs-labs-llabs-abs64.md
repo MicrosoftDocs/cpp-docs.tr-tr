@@ -1,12 +1,12 @@
 ---
-title: Abs, laboratuvarlar, llabs, _abs64
+title: abs, labs, llabs, _abs64
 ms.date: 04/05/2018
-apiname:
+api_name:
 - abs
 - _abs64
 - labs
 - llabs
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -18,7 +18,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-utility-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - stdlib/_abs64
 - math/abs
@@ -36,14 +39,14 @@ helpviewer_keywords:
 - _abs64 function
 - calculating absolute values
 ms.assetid: 60f789d1-4a1e-49f5-9e4e-0bdb277ea26a
-ms.openlocfilehash: 61aa0a48757a35708ffb85d2c0525bb4eac82d56
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bf5b4be654a3bd48b3e0d43ac97ce02b348942bc
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62341996"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70939927"
 ---
-# <a name="abs-labs-llabs-abs64"></a>Abs, laboratuvarlar, llabs, _abs64
+# <a name="abs-labs-llabs-_abs64"></a>abs, labs, llabs, _abs64
 
 Bağımsız değişkenin mutlak değerini hesaplar.
 
@@ -71,26 +74,26 @@ Sayısal değer.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**Abs**, **labs**, **llabs** ve **_abs64** işlevleri parametrenin mutlak değerini döndürür *n*. Döndürülen hata yok.
+**ABS**, **Labs**, **LLabs** ve **_abs64** işlevleri, *n*parametresinin mutlak değerini döndürür. Hata döndürme yok.
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, aşırı yüklemesini çağırabilirsiniz **abs** alan ve getiren **uzun**, **uzun** **uzun**,  **float**, **çift**, ve **uzun** **çift** değerleri. Bu aşırı yüklemeler tanımlanan \<cmath > Üstbilgi. C programında **abs** her zaman alan ve döndüren bir **int**.
+Aşırı C++ yüklemeye izin **verdiğinden, uzun, uzun** **uzun**, **float**, **Double**ve **Long** **Double** değerlerini alan ve döndüren **ABS** aşırı yüklerini çağırabilirsiniz. Bu aşırı yüklemeler \<cmath > üst bilgisinde tanımlanmıştır. C programında, **ABS** her zaman bir **int**alır ve döndürür.
 
-**Microsoft'a özgü**: Herhangi bir tamsayı türü kullanarak temsil edilebilen negatif tamsayılar aralığı, bu türü kullanarak temsil edilebilen pozitif tamsayılar aralığından daha büyük olduğundan, dönüştürülemeyen bu işlevler bir değişken sağlamak mümkündür. Bağımsız değişkenin mutlak değeri dönüş türü tarafından temsil edilemiyorsa **abs** işlevleri bağımsız değişken değerini değiştirmeden döndürür. Özellikle, `abs(INT_MIN)` döndürür `INT_MIN`, `labs(LONG_MIN)` döndürür `LONG_MIN`, `llabs(LLONG_MIN)` döndürür `LLONG_MIN`, ve `_abs64(_I64_MIN)` döndürür `_I64_MIN`. Diğer bir deyişle **abs** işlevleri pozitif bir değer sağlamak için kullanılamaz.
+**Microsoft 'A özgü**: Herhangi bir integral türü kullanılarak gösterilebilen negatif tamsayılar aralığı, bu türü kullanarak temsil edilebilir pozitif tamsayılar aralığından daha büyükse, bu işlevlere dönüştürülemeyen bir bağımsız değişken sağlamak mümkündür. Bağımsız değişkenin mutlak değeri, dönüş türü tarafından temsil edilemez, **ABS** işlevleri bağımsız değişken değerini değiştirmeden döndürür. Özellikle, `abs(INT_MIN)` `INT_MIN` `labs(LONG_MIN)` döndürür,`_abs64(_I64_MIN)` döndürür, döndürür ve döndürür`_I64_MIN`. `LONG_MIN` `llabs(LLONG_MIN)` `LLONG_MIN` Bu, **ABS** işlevlerinin pozitif bir değeri güvence altına almak için kullanılamayacağı anlamına gelir.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli C üstbilgisi|Gerekli C++ üst bilgisi|
+|Yordam|Gerekli C üstbilgisi|Gerekli C++ üst bilgi|
 |-------------|-----------------------|---------------------------|
-|**Abs**, **labs**, **llabs**|\<Math.h > veya \<stdlib.h >|\<cmath >, \<cstdlib >, \<stdlib.h > veya \<math.h >|
-|**_abs64**|\<stdlib.h >|\<cstdlib > veya \<stdlib.h >|
+|**ABS**, **Labs**, **LLabs**|\<Math. h > veya \<Stdlib. h >|\<cmath >, \<cstdlib >, \<Stdlib. h > veya \<Math. h >|
+|**_abs64**|\<Stdlib. h >|\<cstdlib > veya \<Stdlib. h >|
 
-Aşırı yüklenmiş sürümlerini kullanılacak **abs** C++'da eklemeniz gerekir \<cmath > Üstbilgi.
+İçinde C++ \< **ABS** öğesinin aşırı yüklenmiş sürümlerini kullanmak için cmath > üst bilgisini eklemeniz gerekir.
 
 ## <a name="example"></a>Örnek
 
-Bu program, hesaplar ve birkaç sayının mutlak değerlerini görüntüler.
+Bu program, birkaç sayının mutlak değerlerini hesaplar ve görüntüler.
 
 ```C
 // crt_abs.c

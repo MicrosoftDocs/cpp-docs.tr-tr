@@ -1,7 +1,7 @@
 ---
 title: xor_eq
 ms.date: 11/04/2016
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -12,7 +12,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - std.xor_eq
 - xor_eq
@@ -20,14 +23,14 @@ f1_keywords:
 helpviewer_keywords:
 - xor_eq function
 ms.assetid: eca4b6b4-b77a-4d44-a09a-5a7e69fdb56c
-ms.openlocfilehash: 4ba3025df471a0433d4e3c4a1a8ddb75400c9523
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2d1a8e62cad38ad8013d37e52768aa20e8eb50d4
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62383405"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70957780"
 ---
-# <a name="xoreq"></a>xor_eq
+# <a name="xor_eq"></a>xor_eq
 
 ^= işleci alternatifi.
 
@@ -73,4 +76,4 @@ int main( )
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<iso646.h >
+**Üst bilgi:** \<iso646. h >

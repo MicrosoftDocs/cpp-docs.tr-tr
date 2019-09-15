@@ -1,9 +1,9 @@
 ---
 title: _CrtGetAllocHook
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _CrtGetAllocHook
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -14,7 +14,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - CrtGetAllocHook
 - _CrtGetAllocHook
@@ -22,16 +25,16 @@ helpviewer_keywords:
 - _CrtGetAllocHook function
 - CrtGetAllocHook function
 ms.assetid: 036acf7c-547a-4b3f-a636-80451070d7ed
-ms.openlocfilehash: b49c4cfc820a925187d0ea4d1562965295bea817
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 769621e92bf5f99f76f71b368a3b9a5cd0f79fd0
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62339916"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70942418"
 ---
-# <a name="crtgetallochook"></a>_CrtGetAllocHook
+# <a name="_crtgetallochook"></a>_CrtGetAllocHook
 
-C çalışma zamanı hata ayıklama bellek ayırma işlemine (yalnızca hata ayıklama sürümü) takma için geçerli istemci tanımlı ayırma işlevi alır.
+C çalışma zamanı hata ayıklama belleği ayırma işlemine (yalnızca hata ayıklama sürümü) bağlama için istemci tanımlı geçerli ayırma işlevini alır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -41,25 +44,25 @@ _CRT_ALLOC_HOOK _CrtGetAllocHook( void );
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Şu anda tanımlı ayırma kanca işlevini döndürür.
+Geçerli olarak tanımlanmış ayırma kanca işlevini döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_CrtGetAllocHook** C çalışma zamanı hata ayıklama kitaplığı bellek ayırma işlemi için geçerli uygulama istemci tanımlı kanca işlevini alır.
+**_Crtgetallochook** , C çalışma zamanı hata ayıklama kitaplığı bellek ayırma işlemi için geçerli istemci tanımlı uygulama kanca işlevini alır.
 
-Kanca özellikli diğer çalışma zamanı işlevleri ve kendi istemci tarafından tanımlanan yazma hakkında daha fazla bilgi için kanca işlevleri, bkz: [hata ayıklama kanca işlevi yazma](/visualstudio/debugger/debug-hook-function-writing).
+Diğer kanca özellikli çalışma zamanı işlevlerini kullanma ve kendi istemci tanımlı kanca işlevlerinizi yazma hakkında daha fazla bilgi için bkz. [hata ayıklama kanca Işlevi yazma](/visualstudio/debugger/debug-hook-function-writing).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_CrtGetAllocHook**|\<crtdbg.h >|
+|**_CrtGetAllocHook**|\<Crtdbg. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 
-Hata ayıklama sürümleri [C çalışma zamanı kitaplıkları](../../c-runtime-library/crt-library-features.md) yalnızca.
+Yalnızca [C çalışma zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md) sürümlerini ayıklayın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

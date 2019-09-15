@@ -1,10 +1,10 @@
 ---
 title: _mktemp_s, _wmktemp_s
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _mktemp_s
 - _wmktemp_s
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - wmktemp_s
 - mktemp_s
@@ -32,16 +35,16 @@ helpviewer_keywords:
 - wmktemp_s function
 - temporary files [C++]
 ms.assetid: 92a7e269-7f3d-4c71-bad6-14bc827a451d
-ms.openlocfilehash: fef10f2cfbcc0332741d560a41a782b70ed14798
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b0db1a50f638c6130e4beb6798431179edec153b
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62156544"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70951592"
 ---
-# <a name="mktemps-wmktemps"></a>_mktemp_s, _wmktemp_s
+# <a name="_mktemp_s-_wmktemp_s"></a>_mktemp_s, _wmktemp_s
 
-Benzersiz bir dosya adı oluşturur. Bunlar sürümleridir [_mktemp, _wmktemp](mktemp-wmktemp.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
+Benzersiz bir dosya adı oluşturur. Bunlar, [CRT 'Daki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklandığı gibi güvenlik geliştirmeleriyle [_mktemp, _wmktemp](mktemp-wmktemp.md) sürümleridir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -67,28 +70,28 @@ errno_t _wmktemp_s(
 ### <a name="parameters"></a>Parametreler
 
 *nameTemplate*<br/>
-Dosya adı deseni.
+Dosya adı deseninin.
 
-*sizeInChars*<br/>
-Tek baytlı karakter arabellek boyutunu **_mktemp_s**; geniş öğesindeki karakterler **_wmktemp_s**, null sonlandırıcıyı da dahil olmak üzere.
+*Sizeınchars*<br/>
+**_Mktemp_s**içinde tek baytlık karakterlerle arabelleğin boyutu; null Sonlandırıcı dahil olmak üzere **_wmktemp_s**içindeki geniş karakterler.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu işlevlerin her ikisi de, başarılıysa sıfır değerini döndürür; bir hata kodu.
+Bu işlevlerin her ikisi de başarı durumunda sıfır döndürür; hatada hata kodu.
 
 ### <a name="error-conditions"></a>Hata koşulları
 
-|*nameTemplate*|*sizeInChars*|Dönüş değeri|Yeni değer *nameTemplate*|
+|*nameTemplate*|*Sizeınchars*|Dönüş değeri|*Nametemplate* içindeki yeni değer|
 |----------------|-------------------|----------------------|-------------------------------|
-|**NULL**|Tüm|**EINVAL**|**NULL**|
-|Hatalı biçim (açıklamalara bakın bölümü doğru biçim için)|Tüm|**EINVAL**|Boş dize|
-|Tüm|< = sayısı X'lerin|**EINVAL**|Boş dize|
+|**DEĞER**|Kaydedilmemiş|**EINVAL**|**DEĞER**|
+|Yanlış biçim (doğru biçim için açıklamalar bölümüne bakın)|Kaydedilmemiş|**EINVAL**|Boş dize|
+|Kaydedilmemiş|< = X 'in sayısı|**EINVAL**|Boş dize|
 
-Yukarıdaki hata durumlardan biri oluşursa, geçersiz parametre işleyicisi açıklandığı gibi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse **errno** ayarlanır **EINVAL** ve işlevleri döndürür **EINVAL**.
+Yukarıdaki hata koşullarından herhangi biri oluşursa, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, **errno** **EINVAL** olarak ayarlanır ve işlevler **EINVAL**döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Mktemp_s** işlevi değiştirerek benzersiz bir dosya adı oluşturur *nameTemplate* bağımsız değişkeni, böylece çağrısının sonrasına *nameTemplate* işaretçisi işaret eden bir dizeye Yeni dosya adını içeren. **_mktemp_s** uygun şekilde çok baytlı karakter dizesi bağımsız değişkenleri çalışma zamanı sistemi tarafından çok baytlı karakter sıralarını şu anda çok baytlı kod sayfasına göre algılamayı otomatik olarak işler. **_wmktemp_s** geniş karakterli sürümüdür **_mktemp_s**; bağımsız değişkeni **_wmktemp_s** geniş karakterli bir dizedir. **_wmktemp_s** ve **_mktemp_s** aynı şekilde, hariç davranır **_wmktemp_s** çok baytlı karakter dizelerini işlemez.
+**_Mktemp_s** Işlevi, *nametemplate* bağımsız değişkenini değiştirerek benzersiz bir dosya adı oluşturur, bu nedenle, *nametemplate* işaretçisi yeni dosya adını içeren bir dizeye işaret eder. **_mktemp_s** çok baytlı karakter dizesi bağımsız değişkenlerini uygun şekilde otomatik olarak işler ve çok baytlı karakter dizilerini, çalışma zamanı sistemi tarafından kullanılmakta olan çok baytlı kod sayfasına göre kullanır. **_wmktemp_s** , **_mktemp_s**öğesinin geniş karakterli bir sürümüdür; **_wmktemp_s** bağımsız değişkeni geniş karakterli bir dizedir. **_wmktemp_s** ve **_mktemp_s** aynı şekilde davranır, ancak **_wmktemp_s** çok baytlı karakter dizelerini işlemez.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -96,34 +99,34 @@ Yukarıdaki hata durumlardan biri oluşursa, geçersiz parametre işleyicisi aç
 |---------------------|--------------------------------------|--------------------|-----------------------|
 |**_tmktemp_s**|**_mktemp_s**|**_mktemp_s**|**_wmktemp_s**|
 
-*NameTemplate* bağımsız değişkeni olan form **baseXXXXXX**burada *temel* sağladığınız yeni dosya adının bir parçasıdır ve her X tarafından sağlanan bir karakter için bir yer tutucudur **_mktemp_s**. Her bir yer tutucu karakteri *nameTemplate* bir büyük harf Mac'inizi olmalıdır **_mktemp_s** korur *temel* ve alfabetik bir karakter ile ilk sonunda X değiştirir. **_mktemp_s** aşağıdaki sondaki değiştirir X'lerin beş basamaklı değerle; bu işlem, veya birden çok iş parçacıklı programlarda, çağıran iş parçacığı arama tanımlayan benzersiz bir numara değerdir.
+*Nametemplate* bağımsız değişkeninin **basexxxxxx**biçiminde olması, burada *Base* 'in sağladığınız yeni dosya adının parçası olduğu ve her bir X, **_mktemp_s**tarafından sağlanan bir karakter için yer tutucudur. *Nametemplate* içindeki her bir yer tutucu karakteri bir büyük X olmalıdır. **_mktemp_s** , *temel* ve ilk sondaki X yerine alfabetik bir karakter koyar. **_mktemp_s** , aşağıdaki sondaki X 'i beş basamaklı bir değer ile değiştirir; Bu değer, çağıran işlemi veya çok iş parçacıklı programları çağıran iş parçacığını tanımlayan benzersiz bir sayıdır.
 
-Her başarılı çağrı **_mktemp_s** değiştirir *nameTemplate*. Aynı işlem veya iş parçacığı aynı sonraki her çağrıda *nameTemplate* bağımsız değişkeni, **_mktemp_s** adlarıyla tarafından döndürülen dosya adlarını denetler **_mktemp_s** Önceki çağrılarında. Hiçbir dosya için bir verilen ad, varsa **_mktemp_s** adı döndürür. Tüm adlar, daha önce döndürülen için dosyalar mevcutsa **_mktemp_s** kullanılan harfle sonraki kullanılabilir, 'a' ila 'z', sırası daha önce döndürülen adında alfabetik karakter değiştirerek yeni bir ad oluşturur. Örneğin, varsa *temel* olan:
+Her başarılı **_mktemp_s** çağrısı *nametemplate*' i değiştirir. Aynı işlem ya da aynı *Nametemplate* bağımsız değişkenine sahip iş parçacığından gelen her bir çağrıda, **_mktemp_s** önceki çağrılarında **_mktemp_s** tarafından döndürülen adlarla eşleşen dosya adlarını denetler. Belirli bir ad için dosya yoksa, **_mktemp_s** bu adı döndürür. Daha önce döndürülen tüm adlarla ilgili dosyalar varsa, **_mktemp_s** daha önce döndürülen adda kullanılan alfabetik karakteri, sırasıyla ' a '-' z ' olan bir sonraki kullanılabilir küçük harfle değiştirerek yeni bir ad oluşturur. Örneğin, *temel* :
 
-> **fn**
+> **FN**
 
-beş basamaklı değeri tarafından sağlanan **_mktemp_s** 12345, döndürülen adı:
+ve **_mktemp_s** tarafından sağlanan beş basamaklı değer 12345 ' dir; döndürülen ilk ad:
 
 > **fna12345**
 
-Bu ad FNA12345 dosyası oluşturmak için kullanılır ve bu dosyayı yine de, aynı işlem ya da aynı iş parçacığı sonraki adı bir çağrıda döndürülen varsa *temel* için *nameTemplate* olan:
+Bu ad, FNA12345 dosyası oluşturmak için kullanılırsa ve bu dosya hala mevcutsa, aynı işlemden veya *Nametemplate* için aynı *temele* sahip iş parçacığından yapılan bir çağrıda döndürülen bir sonraki ad şunlardır:
 
 > **fnb12345**
 
-FNA12345 yoksa, döndürülen İleri yeniden adıdır:
+FNA12345 yoksa, döndürülen bir sonraki ad tekrar olur:
 
 > **fna12345**
 
-**_mktemp_s** 26 benzersiz dosya adları, verilen herhangi bir birleşimini için en fazla oluşturabilirsiniz *temel* ve *nameTemplate* değerleri. Bu nedenle, FNZ12345 benzersiz dosya soyadıdır **_mktemp_s** oluşturabilirsiniz *temel* ve *nameTemplate* Bu örnekte kullanılan değerler.
+**_mktemp_s** , herhangi bir *taban* ve *nametemplate* değeri bileşimi için en fazla 26 benzersiz dosya adı oluşturabilir. Bu nedenle FNZ12345, bu örnekte kullanılan *temel* ve *nametemplate* değerleri için **_mktemp_s** tarafından oluşturabileceğiniz son benzersiz dosya adıdır.
 
-C++ dilinde bu işlevlerin kullanılması şablon aşırı yüklemeleriyle basitleştirilmiştir; aşırı yüklemeler arabellek uzunluğunu otomatik olarak çıkarabilir (bir boyut bağımsız değişkeni belirtme gereksinimi ortadan kalkar) ve bunlar otomatik olarak eski ve güvenli olmayan işlevlerle daha yeni ve güvenli karşılıklarını değiştirir. Daha fazla bilgi için [güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
+' C++De, bu işlevlerin kullanılması şablon aşırı yüklemeleri tarafından basitleştirilmiştir; aşırı yüklemeler arabellek uzunluğunu otomatik olarak çıkarabilir (bir boyut bağımsız değişkeni belirtme gereksinimini ortadan kaldırır) ve eski, güvenli olmayan işlevleri otomatik olarak yeni, güvenli karşılıklarıyla değiştirebilir. Daha fazla bilgi için bkz. [Güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_mktemp_s**|\<io.h >|
-|**_wmktemp_s**|\<io.h > veya \<wchar.h >|
+|**_mktemp_s**|\<GÇ. h >|
+|**_wmktemp_s**|\<GÇ. h > veya \<wchar. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
