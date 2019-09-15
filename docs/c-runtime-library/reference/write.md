@@ -1,9 +1,9 @@
 ---
 title: _write
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _write
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _write
 helpviewer_keywords:
@@ -23,14 +26,14 @@ helpviewer_keywords:
 - write function
 - files [C++], writing to
 ms.assetid: 7b868c33-766f-4e1a-95a7-e8d25f0604c4
-ms.openlocfilehash: 032bf332caee09fbe17d58eeae16ab44b98402d3
-ms.sourcegitcommit: 878a164fe6d550ca81ab87d8425c8d3cd52fe384
+ms.openlocfilehash: 2c483df8e07b9496a0a22c1a1ebccf2b40d129cb
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68376296"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70944852"
 ---
-# <a name="write"></a>_write
+# <a name="_write"></a>_write
 
 Verileri bir dosyaya yazar.
 
@@ -63,7 +66,7 @@ Bu ve diğer dönüş kodları hakkında daha fazla bilgi için bkz. [errno, _do
 
 Dosya metin modunda açılırsa, her satır besleme karakteri çıkışdaki bir satır başı satır besleme çiftiyle değiştirilmiştir. Değişiklik, dönüş değerini etkilemez.
 
-Dosya Unicode çeviri modunda açıldığında — Örneğin, *FD* **_open** veya **_Sopen** kullanılarak açıldıysa ve **_O_WTEXT**, **_O_u16text**veya **_O_U8TEXT**içeren bir mode parametresi veya kullanılarak açılırsa  **CCS = UNICODE**, **CCS = UTF-16LE**, veya **CCS = UTF-8**içeren bir mod parametresi veya mod, **_setmode**kullanarak bir UNICODE çeviri moduna değiştirildiyse,*arabellek* bir işaretçi olarak yorumlanır **UTF-16** verileri içeren **wchar_t** dizisi. Bu modda tek sayıda bayt yazma girişimi bir parametre doğrulama hatasına neden olur.
+Dosya Unicode çeviri modunda açıldığında — Örneğin, *FD* **_open** veya **_Sopen** kullanılarak açıldıysa ve **_O_WTEXT**, **_O_u16text**veya **_O_U8TEXT**içeren bir mode parametresi veya kullanılarak açılırsa **CCS = UNICODE**, **CCS = UTF-16LE**, veya **CCS = UTF-8**içeren bir mod parametresi veya mod, **_setmode**kullanarak bir UNICODE çeviri moduna değiştirildiyse,*arabellek* bir işaretçi olarak yorumlanır **UTF-16** verileri içeren **wchar_t** dizisi. Bu modda tek sayıda bayt yazma girişimi bir parametre doğrulama hatasına neden olur.
 
 ## <a name="remarks"></a>Açıklamalar
 

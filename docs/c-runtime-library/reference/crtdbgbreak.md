@@ -1,9 +1,9 @@
 ---
 title: _CrtDbgBreak
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _CrtDbgBreak
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -14,7 +14,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _CrtDbgBreak
 - CrtDbgBreak
@@ -22,14 +25,14 @@ helpviewer_keywords:
 - CrtDbgBreak function
 - _CrtDbgBreak function
 ms.assetid: 01f8b4a2-a2c7-4e1f-9f39-e573b4a7871f
-ms.openlocfilehash: 4cf64daaea3193f7cf6b3aaa0b1aab031f104704
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9471b1a93abd9777c3a53c54c2517e59896d8160
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62340176"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70942577"
 ---
-# <a name="crtdbgbreak"></a>_CrtDbgBreak
+# <a name="_crtdbgbreak"></a>_CrtDbgBreak
 
 Belirli bir kod satırında bir kesme noktası ayarlar. (Yalnızca hata ayıklama modunda kullanılır.)
 
@@ -41,13 +44,13 @@ void _CrtDbgBreak( void );
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Dönüş değeri yoktur.
+Dönüş değeri yok.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_CrtDbgBreak** işlevi ayarlar bir hata ayıklama kesme noktası belirli kod satırının üzerinde işlev bulunduğu. Bu işlev yalnızca hata ayıklama modunda kullanılır ve bağımlı olduğu **_DEBUG** önceden tanımlanmış.
+**_Crtdbgbreak** işlevi, işlevin bulunduğu belirli kod satırında bir hata ayıklama kesme noktası ayarlar. Bu işlev yalnızca hata ayıklama modunda kullanılır ve daha önce tanımlı **_Hata ayıklama** öğesine bağımlıdır.
 
-Kanca özellikli diğer çalışma zamanı işlevleri ve kendi istemci tarafından tanımlanan yazma hakkında daha fazla bilgi için kanca işlevleri, bkz: [yazma bilgisayarınızı kendi hata ayıklama kanca işlevlerini](/visualstudio/debugger/debug-hook-function-writing).
+Diğer kanca özellikli çalışma zamanı işlevlerini kullanma ve kendi istemci tanımlı kanca işlevlerinizi yazma hakkında daha fazla bilgi için, bkz. [kendi hata ayıklama kanca Işlevlerinizi yazma](/visualstudio/debugger/debug-hook-function-writing).
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -57,7 +60,7 @@ Kanca özellikli diğer çalışma zamanı işlevleri ve kendi istemci tarafınd
 
 ## <a name="libraries"></a>Kitaplıklar
 
-Hata ayıklama sürümleri [C çalışma zamanı kitaplıkları](../../c-runtime-library/crt-library-features.md) yalnızca.
+Yalnızca [C çalışma zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md) sürümlerini ayıklayın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

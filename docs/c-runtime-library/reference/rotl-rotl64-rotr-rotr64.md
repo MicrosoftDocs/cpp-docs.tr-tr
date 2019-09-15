@@ -1,12 +1,12 @@
 ---
 title: _rotl, _rotl64, _rotr, _rotr64
 ms.date: 04/05/2018
-apiname:
+api_name:
 - _rotr64
 - _rotl
 - _rotr
 - _rotl64
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -18,7 +18,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-utility-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _rotr64
 - rotl64
@@ -40,16 +43,16 @@ helpviewer_keywords:
 - _rotr64 function
 - bits, rotating
 ms.assetid: cfce439b-366f-4584-8ab1-d527b13fcfc6
-ms.openlocfilehash: c8cf61ecd8ffab9433f5c6ad077ddba39401c0e4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0ae2df7d80778cd4c573192a13b1fd91fb358eef
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62357414"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70949145"
 ---
-# <a name="rotl-rotl64-rotr-rotr64"></a>_rotl, _rotl64, _rotr, _rotr64
+# <a name="_rotl-_rotl64-_rotr-_rotr64"></a>_rotl, _rotl64, _rotr, _rotr64
 
-BITS sola döndürür (**_rotl**) sağa (**_rotr**).
+Bitleri sola ( **_rotl**) veya sağa ( **_rotr**) döndürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -76,31 +79,31 @@ unsigned __int64 _rotr64(
 ### <a name="parameters"></a>Parametreler
 
 *value*<br/>
-Döndürülecek değer.
+Döndürülecektir değer.
 
-*Kaydırma*<br/>
+*karakter*<br/>
 Kaydırılacak bit sayısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Döndürülen değer. Döndürülen hata yok.
+Döndürülen değer. Hata döndürme yok.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Rotl** ve **_rotr** işlevleri döndürme işaretsiz *değer* tarafından *shift* bitleri. **_rotl** kalan değeri döndürür. **_rotr** sağındaki değer döndürür. Her iki işlev de bir ucu Döndürülmüş bit kaydırma *değer* diğer ucuna.
+**_Rotl** ve **_rotr** işlevleri, işaretsiz *değeri* *kaydırma* bitleriyle döndürür. **_rotl** değeri sola döndürür. **_rotr** değeri sağa döndürür. Her iki işlev de bir *değerin* sonundaki bitleri diğer bir uca kaydırır.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_rotl**, **_rotl64**|\<stdlib.h >|
-|**_rotr**, **_rotr64**|\<stdlib.h >|
+|**_rotl**, **_rotl64**|\<Stdlib. h >|
+|**_rotr**, **_rotr64**|\<Stdlib. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 
-Tüm sürümleri [C çalışma zamanı kitaplıkları](../../c-runtime-library/crt-library-features.md).
+[C çalışma zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md)tüm sürümleri.
 
 ## <a name="example"></a>Örnek
 

@@ -1,9 +1,9 @@
 ---
 title: putw
 ms.date: 11/04/2016
-apiname:
+api_name:
 - putw
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -14,19 +14,22 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - putw
 helpviewer_keywords:
 - putw function
 ms.assetid: a004fbb6-7643-4f3f-9ee1-87a23154d49a
-ms.openlocfilehash: 336a387d2f032fad4709033a63f6b170ce8eb5bd
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f8ab564c3a342487fbc924c9e5680219217c4630
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62304812"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70950480"
 ---
 # <a name="putw"></a>putw
 
-Bu POSIX işlevi kullanım dışı bırakılmıştır. ISO kullanın C++ uyumluluğunu [_putw](putw.md) yerine.
+Bu POSIX işlevi kullanım dışıdır. Bunun yerine ISO C++ uyumlu [_putw](putw.md) kullanın.

@@ -1,9 +1,9 @@
 ---
 title: setmode
 ms.date: 11/04/2016
-apiname:
+api_name:
 - setmode
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -14,19 +14,22 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - setmode
 helpviewer_keywords:
 - setmode function
 ms.assetid: cb959d9e-09f3-45af-8943-85f4ca0d3f5a
-ms.openlocfilehash: 63bdb6a2436b9c79f6c50ad289b01cf861854e0f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 18812b5262b7809e4d2fe1b94a311dec8a577c4f
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62155897"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70950582"
 ---
 # <a name="setmode"></a>setmode
 
-Bu POSIX işlevi kullanım dışı bırakılmıştır. ISO kullanın C++ uyumluluğunu [_setmode](setmode.md) yerine.
+Bu POSIX işlevi kullanım dışıdır. Bunun yerine ISO C++ uyumlu [_setmode](setmode.md) kullanın.

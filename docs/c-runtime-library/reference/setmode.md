@@ -1,9 +1,9 @@
 ---
 title: _setmode
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _setmode
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _setmode
 helpviewer_keywords:
@@ -26,16 +29,16 @@ helpviewer_keywords:
 - files [C++], translation
 - setmode function
 ms.assetid: 996ff7cb-11d1-43f4-9810-f6097182642a
-ms.openlocfilehash: 67cca27ba03a99d7e192d438a98f1bb3a93845ee
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7f14cc9451b93a9077916b8c650645990ba654a3
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62356412"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70948589"
 ---
-# <a name="setmode"></a>_setmode
+# <a name="_setmode"></a>_setmode
 
-Dosya çevirisi modu ayarlar.
+Dosya çevirisi modunu ayarlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -51,36 +54,36 @@ int _setmode (
 *FD*<br/>
 Dosya tanımlayıcısı.
 
-*Modu*<br/>
+*modundaysa*<br/>
 Yeni çeviri modu.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
 Başarılı olursa, önceki çeviri modunu döndürür.
 
-Geçersiz parametreler bu işleve geçirilirse, geçersiz parametre işleyicisi açıklandığı gibi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Devam etmek için bu işlev -1 döndürür ve kümeleri yürütülmesine izin veriliyorsa **errno** ya da **EBADF**, bir geçersiz dosya tanımlayıcısı gösterir veya **EINVAL**, hangi Geçersiz bir gösteren *modu* bağımsız değişken.
+Bu işleve geçersiz parametreler geçirilmemişse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev-1 döndürür ve **errno** **, geçersiz**bir dosya tanımlayıcısı ya da geçersiz bir *mod* bağımsız değişkenini gösteren **EINVAL**.
 
-Bunlar ve diğer dönüş kodları hakkında daha fazla bilgi için bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Bu ve diğer dönüş kodları hakkında daha fazla bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Setmode** işlevi ayarlar *modu* tarafından verilen dosya çevirisi modu *fd*. Geçirme **_O_TEXT** olarak *modu* (çevrilmiş) metin ayarlar modu. Satır başı satır besleme (CR-LF) birleşimleri tek bir satır besleme karakteri giriş çevrilir. Satır akış karakterleri çıkış CR-LF kombinasyonlarına çevrilir. Geçirme **_o_bınary** bu Çeviriler bastırılır kümeleri ikili (çevrilmemiş) modda,.
+**_Setmode** işlevi, *FD*tarafından verilen dosyanın çeviri modunu *mod* olarak belirler. **_O_text** *modunun mod* olarak geçirilmesi, metin (yani, çevrilmiş) modunu belirler. Satır başı satır besleme (CR-LF) birleşimleri, girişte tek satırlık bir akış karakteriyle çevrilir. Satır akış karakterleri, çıkışta CR-LF birleşimlerine çevrilir. **_O_binary** , bu çevirilerin gizlendiği ikili (çevrilmemiş) modu geçirme.
 
-De geçirebilirsiniz **_O_U16TEXT**, **_O_U8TEXT**, veya **_O_WTEXT** bu belgenin sonraki bölümlerinde ikinci örnekte gösterildiği gibi Unicode modu etkinleştirmek için.
-
-> [!CAUTION]
-> Unicode modunda olduğu için geniş yazdırma işlevleri (örneğin, `wprintf`) ve dar yazdırma işlevleri için desteklenmez. Unicode modunda akışında dar bir yazdırma işlevinin bir onaylamadır tetikler.
-
-**_setmode** genellikle varsayılan çeviri modunu değiştirmek için kullanılan **stdin** ve **stdout**, ancak herhangi bir dosya kullanın. Uygularsanız, **_setmode** bir akış için dosya tanımlayıcısı için çağrı **_setmode** akışında giriş veya çıkış işlemleri gerçekleştirmeden önce.
+Ayrıca, bu belgenin devamındaki ikinci örnekte gösterildiği gibi, **_O_u16text**, **_O_U8TEXT**veya **_O_wtext** 'i Unicode modunu etkinleştirmek üzere geçirebilirsiniz.
 
 > [!CAUTION]
-> Verileri bir dosya akışı açıkça temizleme kodunu kullanarak yazdığınız [fflush](fflush.md) kullanmadan önce **_setmode** modunu değiştirmek için. Kodu temizleme değil, beklenmeyen davranışı alabilirsiniz. Veri akışına yazmadıysanız kod temizleme gerekmez.
+> Unicode modu geniş yazdırma işlevlerine yöneliktir (örneğin, `wprintf`) ve dar yazdırma işlevlerinde desteklenmez. Bir UNICODE modundaki bir dar Print işlevinin kullanımı bir onaylama tetikler.
+
+**_setmode** , genellikle **stdin** ve **stdout**varsayılan çeviri modunu değiştirmek için kullanılır, ancak bunu herhangi bir dosya üzerinde kullanabilirsiniz. Bir akışın dosya tanımlayıcısına **_setmode** uygularsanız, akışta herhangi bir giriş veya çıkış işlemini gerçekleştirmeden önce **_setmode** komutunu çağırın.
+
+> [!CAUTION]
+> Bir dosya akışına veri yazarsanız, modu değiştirmek için **_setmode** komutunu kullanmadan önce [fflush](fflush.md) kullanarak kodu açık bir şekilde temizleyin. Kodu temizlemeyin, beklenmeyen davranışlarla karşılaşabilirsiniz. Akışa veri yazmadınız, kodu temizlemeyin.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli başlık|İsteğe bağlı üst bilgiler|
+|Yordam|Gerekli başlık|İsteğe bağlı üstbilgiler|
 |-------------|---------------------|----------------------|
-|**_setmode**|\<io.h >|\<fcntl.h >|
+|**_setmode**|\<GÇ. h >|\<fcntl. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

@@ -1,11 +1,11 @@
 ---
 title: _outp, _outpw, _outpd
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _outpd
 - _outp
 - _outpw
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr100.dll
 - msvcr120.dll
@@ -13,7 +13,10 @@ apilocation:
 - msvcr110_clr0400.dll
 - msvcr110.dll
 - msvcr80.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _outpw
 - _outpd
@@ -33,22 +36,22 @@ helpviewer_keywords:
 - _outpw function
 - _outp function
 ms.assetid: c200fe22-41f6-46fd-b0be-ebb805b35181
-ms.openlocfilehash: 1a507f4115a48372706590eb61f9e3e77a0e3548
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d1e7028ae833e1358ce3199b7e7079535c84d135
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62289370"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70944127"
 ---
-# <a name="outp-outpw-outpd"></a>_outp, _outpw, _outpd
+# <a name="_outp-_outpw-_outpd"></a>_outp, _outpw, _outpd
 
-Bağlantı noktasında, bayt çıktıları (`_outp`), bir sözcük (`_outpw`), veya çift sözcüğe (`_outpd`).
-
-> [!IMPORTANT]
->  Bu işlevler kullanım dışıdır. Visual Studio 2015'te başlayarak, CRT içinde kullanılamaz.
+Bir bağlantı noktasında, bir bayt (`_outp`), bir sözcüğe (`_outpw`) veya bir çift sözcüğe (`_outpd`) çıkış verir.
 
 > [!IMPORTANT]
->  Bu API, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+>  Bu işlevler artık kullanılmıyor. Visual Studio 2015 ' den başlayarak, bu dosyalar CRT içinde kullanılamaz.
+
+> [!IMPORTANT]
+>  Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -69,35 +72,35 @@ unsigned long dataword
 ```
 
 #### <a name="parameters"></a>Parametreler
-*Bağlantı noktası*<br/>
+*bağ*<br/>
 Bağlantı noktası numarası.
 
-*databyte, dataword*<br/>
+*databgh, dataword*<br/>
 Çıkış değerleri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-İşlevler veri çıkışını geri döndürür. Döndürülen hata yok.
+İşlevler, veri çıktısını döndürür. Hata döndürme yok.
 
 ## <a name="remarks"></a>Açıklamalar
 
-`_outp`, `_outpw`, Ve `_outpd` işlevler yazma bir bayt, bir sözcük ve bir çift sözcük sırasıyla belirtilen çıkış bağlantı noktasına. *Bağlantı noktası* bağımsız değişkeni de aralık 0 - 65,535; herhangi bir işaretsiz tamsayı. *databyte* 0 - 255 aralığında herhangi bir tamsayı olabilir ve *dataword* aralığında bir tamsayı, işaretsiz kısa tamsayı ve bir işaretsiz uzun tamsayı değerdeki sırasıyla olabilir.
+`_outp`, Veişlevleri`_outpd` , belirtilen çıkış bağlantı noktasına sırasıyla bir bayt, bir sözcük ve bir çift sözcük yazar. `_outpw` *Bağlantı noktası* bağımsız değişkeni 0-65.535; aralığında işaretsiz bir tamsayı olabilir. *databayttan* 0-255 aralığında herhangi bir tamsayı olabilir; ve *dataword* , sırasıyla bir tamsayı, işaretsiz kısa tamsayı ve işaretsiz uzun tamsayı aralığında herhangi bir değer olabilir.
 
-Bu işlevler doğrudan bir g/ç bağlantı noktasına yazıldığı için kullanıcı kodunda kullanılamaz. Bu işletim sistemlerindeki g/ç bağlantı noktalarını kullanma hakkında daha fazla bilgi için MSDN'de "seri iletişimleri"Win32'de arayın.
+Bu işlevler doğrudan bir g/ç bağlantı noktasına yazdıklarından, Kullanıcı kodunda kullanılamaz. Bu işletim sistemlerinde g/ç bağlantı noktalarını kullanma hakkında daha fazla bilgi için, MSDN 'de "Win32 'de seri Iletişim" araması yapın.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|`_outp`|\<conio.h >|
-|`_outpw`|\<conio.h >|
-|`_outpd`|\<conio.h >|
+|`_outp`|\<conio. h >|
+|`_outpw`|\<conio. h >|
+|`_outpd`|\<conio. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 
-Tüm sürümleri [C çalışma zamanı kitaplıkları](../c-runtime-library/crt-library-features.md).
+[C çalışma zamanı kitaplıklarının](../c-runtime-library/crt-library-features.md)tüm sürümleri.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

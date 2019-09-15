@@ -1,10 +1,10 @@
 ---
 title: _putch, _putwch
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _putwch
 - _putch
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-conio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _putch
 - putwch
@@ -29,19 +32,19 @@ helpviewer_keywords:
 - putch function
 - console, writing characters to
 ms.assetid: 3babc7cf-e333-405d-8449-c788d61d51aa
-ms.openlocfilehash: da45744fe56c198cc97228cae8043abbb5436fbd
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8e7d7d57f5418e8c15aa02f015d3346298fa0422
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62358164"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70950041"
 ---
-# <a name="putch-putwch"></a>_putch, _putwch
+# <a name="_putch-_putwch"></a>_putch, _putwch
 
 Konsola bir karakter yazar.
 
 > [!IMPORTANT]
-> Bu API, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -58,17 +61,17 @@ wint_t _putwch(
 ### <a name="parameters"></a>Parametreler
 
 *c*<br/>
-Çıktı olacak karakter.
+Çıkış olacak karakter.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Döndürür *c* başarılı olursa. Varsa **_putch** döndürür, başarısız **EOF**if **_putwch** döndürür, başarısız **WEOF**.
+Başarılıysa *c* döndürür. **_Putch** başarısız olursa, **EOF**döndürür; **_putwch** başarısız olursa, **weof**döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevler karakter yazma *c* , konsola arabelleğe alma olmadan doğrudan. Windows NT'de **_putwch** geçerli konsol yerel ayarını kullanarak Unicode karakterler yazar.
+Bu işlevler, arabelleğe alma olmadan doğrudan *c* karakterini konsola yazar. Windows NT 'de, **_putwch** , geçerli konsol yerel ayarını kullanarak Unicode karakterler yazar.
 
-Sürümlerle **_nolock** soneki, bunlar başka iş parçacıklarının engellemelerinden korunmamaları hariç, aynıdır. Daha fazla bilgi için **_putch_nolock**, **_putwch_nolock**.
+**_Nolock** sonekine sahip sürümler, diğer iş parçacıkları tarafından girişime karşı korunmamaları dışında aynıdır. Daha fazla bilgi için bkz. **_putch_nolock**, **_putwch_nolock**.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -80,18 +83,18 @@ Sürümlerle **_nolock** soneki, bunlar başka iş parçacıklarının engelleme
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_putch**|\<conio.h >|
-|**_putwch**|\<conio.h >|
+|**_putch**|\<conio. h >|
+|**_putwch**|\<conio. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 
-Tüm sürümleri [C çalışma zamanı kitaplıkları](../../c-runtime-library/crt-library-features.md).
+[C çalışma zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md)tüm sürümleri.
 
 ## <a name="example"></a>Örnek
 
-Örneğin bakın [_getch](getch-getwch.md).
+[_Getch](getch-getwch.md)için örneğe bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

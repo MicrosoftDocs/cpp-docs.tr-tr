@@ -1,9 +1,9 @@
 ---
 title: feclearexcept1
 ms.date: 04/05/2018
-apiname:
+api_name:
 - feclearexcept
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,23 +15,26 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-runtime-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - feclearexcept
 - fenv/feclearexcept
 helpviewer_keywords:
 - feclearexcept function
 ms.assetid: ef419da3-c248-4432-b53c-8e7a475d9533
-ms.openlocfilehash: 3c2f037a5be903fc006debfa7319c483431fdd92
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9899d7068a289e7d5f71cb42a8373869d60c3070
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62334742"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70941269"
 ---
 # <a name="feclearexcept"></a>feclearexcept
 
-Bağımsız değişkeni tarafından belirtilen kayan nokta özel durumu bayrakları sıfırlamaya çalışır.
+Bağımsız değişken tarafından belirtilen kayan nokta özel durum bayraklarını temizlemeye çalışır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -43,33 +46,33 @@ int feclearexcept(
 
 ### <a name="parameters"></a>Parametreler
 
-*excepts*<br/>
-Özel durum durumu sıfırlamaya bayraklar.
+*hariç tutulan*<br/>
+Temizlenecek özel durum bayrakları.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Sıfır döndürür *excepts* sıfır veya belirtilen tüm özel durumları başarıyla temizlendi. Aksi takdirde, sıfır olmayan bir değer döndürür.
+, *Hariç tutulan* bir sıfır ise veya belirtilen tüm özel durumlar başarıyla silinirse sıfır döndürür. Aksi takdirde, sıfır dışında bir değer döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Feclearexcept** noktası tarafından belirtilen özel durum durumu bayrakları kayan temizlemek için işlevi çalışır *excepts*. İşlev fenv.h içinde tanımlanan bu özel durum makroları destekler:
+Söz konusu işlev, **hariç** *tutulan*tarafından belirtilen kayan nokta özel durum bayraklarını temizlemeye çalışır. İşlevi, fenv. h içinde tanımlanan bu özel durum makrolarını destekler:
 
 |Özel durum makrosu|Açıklama|
 |---------------------|-----------------|
-|FE_DIVBYZERO|Daha önce bir kayan nokta işleminde singularity ya da kutup bir hata oluştu; sonsuz değerle oluşturulur.|
-|FE_INEXACT|İşlevi, bir önceki kayan noktalı işlemin depolanmış sonucu yuvarlanacak zorlandı.|
-|FE_INVALID|Daha önce bir kayan nokta işleminde bir etki alanı hatası oluştu.|
-|FE_OVERFLOW|Aralık bir hata oluştu; önceki bir kayan noktalı işlemin sonucu gösterilemeyecek kadar büyüktü.|
-|FE_UNDERFLOW|Önceki bir kayan noktalı işlemin sonucu tam duyarlıklı gösterilemeyecek kadar çok küçük; denormal değer oluşturuldu.|
-|FE_ALL_EXCEPT|Bit düzeyinde OR tüm kayan nokta özel durumları desteklenmiyor.|
+|FE_DIVBYZERO|Daha önceki bir kayan nokta işleminde singularor veya direk hatası oluştu; sonsuz değer oluşturuldu.|
+|FE_INEXACT|İşlev, önceki bir kayan nokta işleminin saklı sonucunu yuvarlamak üzere zorlandı.|
+|FE_INVALID|Önceki kayan nokta işleminde bir etki alanı hatası oluştu.|
+|FE_OVERFLOW|Bir Aralık hatası oluştu; daha önceki bir kayan nokta işlem sonucu gösterilemeyecek kadar büyüktü.|
+|FE_UNDERFLOW|Daha önceki bir kayan nokta işlem sonucu tam duyarlıkta gösterilemeyecek kadar küçük; bir denormal değeri oluşturuldu.|
+|FE_ALL_EXCEPT|Desteklenen tüm kayan nokta özel durumlarının bit düzeyinde veya dışında.|
 
-*Excepts* bağımsız değişkeni sıfır veya bir veya daha fazla desteklenen özel durum makroları, bit düzeyinde OR olabilir. Herhangi bir bağımsız değişken değeri, sonuç tanımsızdır.
+*Hariç tutulan* bağımsız değişken sıfır ya da desteklenen bir veya daha fazla özel durum makrosunu veya BIT düzeyinde ya da daha fazlasını içerebilir. Diğer bağımsız değişken değerinin sonucu tanımlı değil.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İşlev|C üstbilgisi|C++ üst bilgisi|
+|İşlev|C üstbilgisi|C++üst bilgi|
 |--------------|--------------|------------------|
-|**feclearexcept**|\<fenv.h >|\<cfenv >|
+|**feclearexcept**|\<fenv. h >|\<cfenv >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

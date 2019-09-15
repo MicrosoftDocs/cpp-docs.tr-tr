@@ -1,9 +1,9 @@
 ---
 title: fgetpos
 ms.date: 11/04/2016
-apiname:
+api_name:
 - fgetpos
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,23 +15,26 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - fgetpos
 helpviewer_keywords:
 - fgetpos function
 - streams, file position indicator
 ms.assetid: bfa05c38-1135-418c-bda1-d41be51acb62
-ms.openlocfilehash: e213c9830ffe6edf04b12a80828f14cc48f77524
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 27d25b29f656d1df889e5f83857ca437f609a07a
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62333936"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70940838"
 ---
 # <a name="fgetpos"></a>fgetpos
 
-Bir akışın dosya konumu göstergesi alır.
+Bir akışın dosya konumu göstergesini alır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -44,25 +47,25 @@ int fgetpos(
 
 ### <a name="parameters"></a>Parametreler
 
-*Stream*<br/>
+*ka*<br/>
 Hedef akış.
 
-*POS*<br/>
-Depolama konumu göstergesi.
+*'un*<br/>
+Konum göstergesi depolaması.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, **fgetpos** 0 döndürür. İsteğe bağlı olarak hata durumunda, sıfır olmayan bir değer döndürür ve ayarlar **errno** aşağıdakilerden birini bildirim Sabitleri (STDIO içinde tanımlanır. H): **EBADF**, belirtilen akış başka bir deyişle, geçerli dosya işaretçisi değil veya erişilebilir değil veya **EINVAL**, anlamına *stream* değeri ya da değerini *pos*olduğu ya da bir null işaretçi ise gibi geçersiz. Varsa *stream* veya *pos* olduğu bir **NULL** işaretçisi işlevi çağıran geçersiz parametre işleyicisi açıklandığı [Parameter Validation](../../c-runtime-library/parameter-validation.md).
+Başarılı olursa **fgetpos** 0 döndürür. Hatada, sıfır dışında bir değer döndürür ve **errno** değerini aşağıdaki bildirim sabitlerinden birine ayarlar (stdio içinde tanımlanmıştır). H): **EBADF**, belirtilen akış geçerli bir dosya işaretçisi değil veya erişilebilir değil ya da **EINVAL**, yani *Stream* değeri ya da *POS* değeri geçersiz (örneğin, null işaretçisiyse) anlamına gelir. *Stream* veya *POS* **null** bir Işaretçisiyse, işlev, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Fgetpos** işlevi, geçerli değerini alır *stream* bağımsız değişkenin dosya konumu göstergesi ve depoları içinde nesne tarafından işaret edilen *pos*. **Fsetpos** işlevi daha sonra depolanan bilgileri kullanmak *pos* sıfırlamak için *stream* bağımsız değişkenin konumuna zaman işaretçisine **fgetpos** çağrıldı. *Pos* değeri iç bir biçimde depolanır ve yalnızca tarafından kullanılması amaçlanan **fgetpos** ve **fsetpos**.
+**Fgetpos** işlevi, *akış* bağımsız değişkeninin dosya konumu göstergesinin geçerli değerini alır ve *POS*tarafından işaret edilen nesnede depolar. **Fsetpos** işlevi daha sonra *POS* 'ta depolanan bilgileri, **fgetpos** çağrıldığında *akış* bağımsız değişkeninin işaretçisini konumuna sıfırlamak için kullanabilir. *POS* değeri dahili bir biçimde depolanır ve yalnızca **fgetpos** ve **fsetpos**tarafından kullanılmak üzere tasarlanmıştır.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**fgetpos**|\<stdio.h >|
+|**fgetpos**|\<stdio. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -108,13 +111,13 @@ int main( void )
 }
 ```
 
-## <a name="input-crtfgetpostxt"></a>Giriş: crt_fgetpos.txt
+## <a name="input-crt_fgetpostxt"></a>Giriş: crt_fgetpos. txt
 
 ```Input
 fgetpos gets a stream's file-position indicator.
 ```
 
-### <a name="output-crtfgetpostxt"></a>Çıkış crt_fgetpos.txt
+### <a name="output-crt_fgetpostxt"></a>Output crt_fgetpos. txt
 
 ```Output
 after fgetpos: gets a stream
@@ -123,5 +126,5 @@ after fsetpos: gets a stream
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Stream g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [fsetpos](fsetpos.md)<br/>

@@ -1,10 +1,10 @@
 ---
 title: _strdate, _wstrdate
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _strdate
 - _wstrdate
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-time-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _tstrdate
 - wstrdate
@@ -33,16 +36,16 @@ helpviewer_keywords:
 - _tstrdate function
 - copying dates
 ms.assetid: de8e4097-58f8-42ba-9dcd-cb4d9a9f1696
-ms.openlocfilehash: 4dc2ea7f25e644c9bf7a4ddca4a625991f37d912
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e1164db5857643bac649e96493a3d66cdee3b6e2
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62353969"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70958218"
 ---
-# <a name="strdate-wstrdate"></a>_strdate, _wstrdate
+# <a name="_strdate-_wstrdate"></a>_strdate, _wstrdate
 
-Geçerli sistem tarihini arabelleğe kopyalayın. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz: [_strdate_s, _wstrdate_s](strdate-s-wstrdate-s.md).
+Geçerli sistem tarihini bir arabelleğe kopyalayın. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz. [_strdate_s, _wstrdate_s](strdate-s-wstrdate-s.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -65,28 +68,28 @@ wchar_t *_wstrdate(
 
 ### <a name="parameters"></a>Parametreler
 
-*datestr*<br/>
-Biçimlendirilen tarih dizesi içeren arabellek için işaretçi.
+*batestr*<br/>
+Biçimlendirilen Tarih dizesini içeren bir arabelleğin işaretçisi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu işlevlerin her biri işaretçi için elde edilen karakter dizesi döndüren *datestr*.
+Bu işlevlerin her biri, sonuçta elde *edilen dize karakter*dizesi için bir işaretçi döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz: [_strdate_s, _wstrdate_s](strdate-s-wstrdate-s.md). Mümkünse daha güvenli işlevler kullanılması önerilir.
+Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz. [_strdate_s, _wstrdate_s](strdate-s-wstrdate-s.md). Mümkün olan yerlerde daha güvenli işlevlerin kullanılması önerilir.
 
-**_Strdate** işlevi tarafından işaret edilen arabellek için geçerli sistem tarihini kopyalar *datestr*biçimlendirilmiş **mm**/**GG** / **yy**burada **mm** olan ayı temsil eden iki basamak **GG** olan iki basamak gününü ve **yy**  yılın son iki basamak. Örneğin, dize **12/05/99** 5 Aralık 1999 temsil eder. Arabelleğin en az 9 bayt uzunluğunda olmalıdır.
+**_Strdate** işlevi, geçerli sistem tarihini *ertestr*/tarafından işaret edilen arabelleğe **(mm** **gg**/**yy**), **dd 'nin ayı** temsil eden iki basamak, **gg** günü temsil eden iki basamakla ve **yy** yılın son iki hanesi olur. Örneğin, **12/05/99** dizesi 5 Aralık 1999 ' i temsil eder. Arabellek en az 9 bayt uzunluğunda olmalıdır.
 
-Varsa *datestr* olduğu bir **NULL** işaretçiyse, geçersiz parametre işleyicisi çağrılır, açıklandığı [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse, bu işlevler -1 döndürür ve **errno** için **EINVAL**.
+Eğer *davtestr* **null** Işaretçisiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler-1 döndürür ve **errno** , **EINVAL**olarak ayarlanır.
 
-**_wstrdate** geniş karakterli sürümüdür **_strdate**; bağımsız değişkeni ve dönüş değeri **_wstrdate** geniş karakterli dizelerdir. Bu işlevler, aynı şekilde davranır.
+**_wstrdate** , **_strdate**; öğesinin geniş karakterli bir sürümüdür; **_wstrdate** bağımsız değişkeni ve dönüş değeri geniş karakterli dizelerdir. Bu işlevler, aynı şekilde davranır.
 
-C++'da, bu işlevler, bu işlevlerin daha yeni ve güvenli karşılıklarını çağırma şablon aşırı yüklemeleri vardır. Daha fazla bilgi için [güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
+' C++De, bu işlevlerde bu işlevlerin daha yeni ve güvenli karşılıkları çağıran şablon aşırı yüklemeleri vardır. Daha fazla bilgi için bkz. [Güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_tstrdate**|**_strdate**|**_strdate**|**_wstrdate**|
 
@@ -94,8 +97,8 @@ C++'da, bu işlevler, bu işlevlerin daha yeni ve güvenli karşılıklarını �
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_strdate**|\<TIME.h >|
-|**_wstrdate**|\<TIME.h > veya \<wchar.h >|
+|**_strdate**|\<Time. h >|
+|**_wstrdate**|\<Time. h > veya \<wchar. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

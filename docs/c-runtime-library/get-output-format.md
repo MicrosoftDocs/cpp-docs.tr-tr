@@ -1,9 +1,9 @@
 ---
 title: _get_output_format
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _get_output_format
-apilocation:
+api_location:
 - msvcr110_clr0400.dll
 - msvcr100.dll
 - msvcr80.dll
@@ -11,7 +11,10 @@ apilocation:
 - msvcr90.dll
 - msvcr120.dll
 - msvcr110.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - get_output_format
 - _get_output_format
@@ -20,19 +23,19 @@ helpviewer_keywords:
 - get_output_format function
 - _get_output_format function
 ms.assetid: 0ce42f3b-3479-41c4-bcbf-1d21f7ee37e7
-ms.openlocfilehash: 60e209f6f8b723bfae1a4b434750b6237dc6479d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 20afa988bc4fdf3bc3a6ff073a48a1cc00ff84c5
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62343519"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70944363"
 ---
-# <a name="getoutputformat"></a>_get_output_format
+# <a name="_get_output_format"></a>_get_output_format
 
-Çıkış biçimi bayrağı geçerli değerini alır.
+Çıkış biçimi bayrağının geçerli değerini alır.
 
 > [!IMPORTANT]
->  Bu işlev artık kullanılmıyor. Visual Studio 2015'te başlayarak, CRT içinde kullanılamaz.
+>  Bu işlev artık kullanılmıyor. Visual Studio 2015 ' den başlayarak CRT ' de kullanılamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -42,19 +45,19 @@ unsigned int _get_output_format();
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Çıkış biçimi bayrağı geçerli değeri.
+Çıkış biçimi bayrağının geçerli değeri.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Çıkış biçimi bayrağı biçimlendirilmiş g/ç özelliklerini denetler. Şu anda bayrağı iki olası değer vardır: 0 ve `_TWO_DIGIT_EXPONENT`. Varsa `_TWO_DIGIT_EXPONENT` ayarlandığında, kayan nokta numaralarını yazdırılıp yalnızca iki basamak ile üçüncü basamak üs boyutu tarafından gerekmedikçe. Kayan nokta bayrağı sıfırsa çıktısını görüntüler üç basamak sıfır üç basamak değerine doldurulacak gerekirse kullanarak üs.
+Çıktı biçimi bayrağı, biçimlendirilen g/ç 'nin özelliklerini denetler. Yukarıdaki bayrakta iki olası değer vardır: 0 ve `_TWO_DIGIT_EXPONENT`. `_TWO_DIGIT_EXPONENT` Ayarlanırsa, üs boyutunun bir üçüncü basamak gerektirmediği takdirde, kayan nokta sayıları üs içinde yalnızca iki basamakla yazdırılır. Bayrak sıfırsa, kayan nokta çıkışı, değeri üç basamağa göstermek için gerekliyse, sıfırdan üç basamak görüntüler.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|`_get_output_format`|\<stdio.h >|
+|`_get_output_format`|\<stdio. h >|
 
-Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../c-runtime-library/compatibility.md) giriş.
+Daha fazla uyumluluk bilgisi için bkz. karşılama 'da [Uyumluluk](../c-runtime-library/compatibility.md) .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

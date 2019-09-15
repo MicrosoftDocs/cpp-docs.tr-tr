@@ -1,11 +1,11 @@
 ---
 title: _Cmulcr, _FCmulcr, _LCmulcr
 ms.date: 03/30/2018
-apiname:
+api_name:
 - _Cmulcr
 - _FCmulcr
 - _LCmulcr
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _Cmulcr
 - _FCmulcr
@@ -29,16 +32,16 @@ helpviewer_keywords:
 - _Cmulcr function
 - _FCmulcr function
 - _LCmulcr function
-ms.openlocfilehash: ce45b1b1081faba18d8532d3a55d1be877cf84e3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: cbff1c2cb0e66da77b6fdc8127b78fb475aa5080
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62340410"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70942895"
 ---
-# <a name="cmulcr-fcmulcr-lcmulcr"></a>_Cmulcr, _FCmulcr, _LCmulcr
+# <a name="_cmulcr-_fcmulcr-_lcmulcr"></a>_Cmulcr, _FCmulcr, _LCmulcr
 
-Karmaşık bir sayıyı bir kayan noktalı sayı ile çarpar.
+Karmaşık bir sayıyı kayan noktalı bir sayı ile çarpar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -51,26 +54,26 @@ _Lcomplex _LCmulcr( _Lcomplex x, long double y );
 ### <a name="parameters"></a>Parametreler
 
 *x*<br/>
-Çarpılacak karmaşık işlenenler biri.
+Çarpılacak karmaşık işlenenlerinden biri.
 
-*Y*<br/>
-Çarpılacak kayan nokta işlenen.
+*Iz*<br/>
+Çarpılacak kayan nokta işleneni.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-A **_Dcomplex**, **_Fcomplex**, veya **_Lcomplex** karmaşık sayının karmaşık bir ürünü temsil yapısı *x* ve flaoting-nokta sayısı *y*.
+Karmaşık sayının *x* ve flaşın nokta numarası *y*'nin karmaşık çarpımını temsil eden **_dcomplex**, **_fcomplex**veya **_lcomplex** yapısı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Yerleşik aritmetik işleçler karmaşık türler, Microsoft uygulaması üzerinde çalışmadığı için **_Cmulcr**, **_FCmulcr**, ve **_LCmulcr** işlevleri kayan nokta türleri tarafından karmaşık tür çarpma basitleştirin.
+Yerleşik aritmetik işleçler karmaşık türlerin Microsoft uygulamasında çalışmadığından, **_Cmulcr**, **_Fcmulcr**ve **_lcmulcr** işlevleri, kayan nokta türlerine göre karmaşık türlerin çarptiğini basitleştirir.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|C üstbilgisi|C++ üst bilgisi|
+|Yordam|C üstbilgisi|C++üst bilgi|
 |-------------|--------------|------------------|
-|**_Cmulcr**, **_FCmulcr**, **_LCmulcr**|\<Complex.h >|\<Complex.h >|
+|**_Cmulcr**, **_fcmulcr**, **_lcmulcr**|\<karmaşık. h >|\<karmaşık. h >|
 
-Bu işlevler Microsoft özgüdür. Türleri **_Dcomplex**, **_Fcomplex**, ve **_Lcomplex** uygulanmayan C99 yerel türler için Microsoft'a özgü eşdeğeri olan **çift _Complex** , **_Complex float**, ve **uzun çift _Complex**sırasıyla. Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Bu işlevler, Microsoft 'a özgüdür. **_Dcomplex**, **_Fcomplex**ve **_lcomplex** türleri, uygulanmayan C99 yerel türlerine, sırasıyla **_complex**, **float _complex**ve **Long Double _complex**için Microsoft 'a özgü eşdeğerlerdir. Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

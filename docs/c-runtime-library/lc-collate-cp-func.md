@@ -1,9 +1,9 @@
 ---
 title: ___lc_collate_cp_func
 ms.date: 11/04/2016
-apiname:
+api_name:
 - ___lc_collate_cp_func
-apilocation:
+api_location:
 - msvcr120.dll
 - msvcrt.dll
 - msvcr100.dll
@@ -11,22 +11,25 @@ apilocation:
 - msvcr110_clr0400.dll
 - msvcr110.dll
 - msvcr90.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - ___lc_collate_cp_func
 helpviewer_keywords:
 - ___lc_collate_cp_func
 ms.assetid: 46ccc084-7ac9-4e5d-9138-e12cb5845615
-ms.openlocfilehash: fac8b7ba2e9568dd53509e5cccbb96a6b2f1df8d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d6a857760bf3b76481cc608ef8f015bca207f35f
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62342772"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70940150"
 ---
-# <a name="lccollatecpfunc"></a>___lc_collate_cp_func
+# <a name="___lc_collate_cp_func"></a>___lc_collate_cp_func
 
-İç CRT işlevi. İş parçacığının geçerli harmanlama kod sayfası alır.
+İç CRT işlevi. İş parçacığının geçerli harmanlama kodu sayfasını alır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -36,13 +39,13 @@ UINT ___lc_codepage_func(void);
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-İş parçacığının geçerli harmanlama kod sayfası.
+İş parçacığının geçerli harmanlama kodu sayfası.
 
 ## <a name="remarks"></a>Açıklamalar
 
-`___lc_collate_cp_func` diğer CRT işlevleri tarafından geçerli harmanlama kod sayfasını bir iş parçacığı yerel depolama alanından CRT verileri almak için kullanılan bir iç CRT işlevdir. Bu bilgiler ayrıca kullanılarak kullanılabilir [_get_current_locale](../c-runtime-library/reference/get-current-locale.md) işlevi.
+`___lc_collate_cp_func`, diğer CRT işlevleri tarafından CRT verileri için iş parçacığı yerel depolama alanından geçerli harmanlama kodu sayfasını almak üzere kullanılan bir iç CRT işlevidir. Bu bilgiler, [_get_current_locale](../c-runtime-library/reference/get-current-locale.md) işlevi kullanılarak da kullanılabilir.
 
-İç CRT işlevleri uygulamasına özgüdür ve her değişebilir bırakın. Kodunuzda bunların kullanılması önerilmemektedir.
+İç CRT işlevleri uygulamaya özgüdür ve her sürümde değiştirilebilir. Kodunuzda kullanımını önermiyoruz.
 
 ## <a name="requirements"></a>Gereksinimler
 

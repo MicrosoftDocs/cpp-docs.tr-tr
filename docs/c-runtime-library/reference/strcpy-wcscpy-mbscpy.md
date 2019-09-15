@@ -1,11 +1,11 @@
 ---
 title: strcpy, wcscpy, _mbscpy
 ms.date: 11/04/2016
-apiname:
+api_name:
 - strcpy
 - wcscpy
 - _mbscpy
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -19,7 +19,10 @@ apilocation:
 - api-ms-win-crt-multibyte-l1-1-0.dll
 - api-ms-win-crt-string-l1-1-0.dll
 - ntoskrnl.exe
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _mbscpy
 - _ftcscpy
@@ -38,19 +41,19 @@ helpviewer_keywords:
 - _ftcscpy function
 - _mbscpy function
 ms.assetid: f97a4f81-e9ee-4f15-888a-0fa5d7094c5a
-ms.openlocfilehash: fa6c0122f2e62c5b39b3da7b9b7c25aa8974f768
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b54bdc2f930b805df036a1fa5d5b1595ea738b88
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62354113"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70958259"
 ---
-# <a name="strcpy-wcscpy-mbscpy"></a>strcpy, wcscpy, _mbscpy
+# <a name="strcpy-wcscpy-_mbscpy"></a>strcpy, wcscpy, _mbscpy
 
-Bir dizeyi kopyalar. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz: [strcpy_s, wcscpy_s, _mbscpy_s](strcpy-s-wcscpy-s-mbscpy-s.md).
+Bir dizeyi kopyalar. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz. [strcpy_s, wcscpy_s, _mbscpy_s](strcpy-s-wcscpy-s-mbscpy-s.md).
 
 > [!IMPORTANT]
-> **_mbscpy** Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **_mbsckopyala** Windows çalışma zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -94,32 +97,32 @@ Null ile sonlandırılmış kaynak dizesi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu işlevlerin her biri hedef dizesini getirir. Dönüş değeri bir hatayı göstermek üzere ayrılmıştır.
+Bu işlevlerin her biri, hedef dizeyi döndürür. Bir hatayı göstermek için hiçbir dönüş değeri ayrılmadı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Strcpy** işlev kopyaları *strSource*, tarafından belirtilen konuma bir sonlandırıcı null karakter de dahil olmak üzere *strDestination*. Davranışını **strcpy** kaynak ve hedef dizeleri örtüştürürse tanımsızdır.
+**Strcpy** işlevi, Sonlandırıcı null karakteri de dahil olmak üzere *strSource*'u *strDestination*tarafından belirtilen konuma kopyalar. Kaynak ve hedef dizeler çakıştığında, **strcpy** davranışı tanımsızdır.
 
 > [!IMPORTANT]
-> Çünkü **strcpy** içinde yeterli yer denetlemez *strDestination* , kopyalamadan önce *strSource*, olduğu arabellek taşmalarına neden olabilir. Bu nedenle, kullanmanızı öneririz [strcpy_s](strcpy-s-wcscpy-s-mbscpy-s.md) yerine.
+> **Strcpy** , *strSource*'U Kopyalayamadan önce *strDestination* içinde yeterli alanı denetlemediğinden, arabellek taşmalarının olası bir nedeni vardır. Bu nedenle, bunun yerine [strcpy_s](strcpy-s-wcscpy-s-mbscpy-s.md) kullanmanızı öneririz.
 
-**wcscpy** ve **_mbscpy** , sırasıyla, geniş karakter ve çok baytlı karakter sürümleridir **strcpy**. Bağımsız değişkenler ve dönüş değeri **wcscpy** geniş karakterli dizelerdir; **_mbscpy** çok baytlı karakter dizeleridir. Bu üç işlev aynı şekilde davranır.
+**wcscpy** ve **_mbsckopyala** , sırasıyla **strcpy**'nin geniş karakterli ve çok baytlı karakter sürümleridir. **Wcscpy** bağımsız değişkenleri ve dönüş değeri geniş karakterli dizelerdir; **_mbscler** çok baytlı karakter dizeleridir. Bu üç işlev, aynı şekilde davranır.
 
-C++'da, bu işlevler, bu işlevlerin daha yeni ve güvenli karşılıklarını çağırma şablon aşırı yüklemeleri vardır. Daha fazla bilgi için [güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
+' C++De, bu işlevlerde bu işlevlerin daha yeni ve güvenli karşılıkları çağıran şablon aşırı yüklemeleri vardır. Daha fazla bilgi için bkz. [Güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|**_tcscpy**|**strcpy**|**_mbscpy**|**wcscpy**|
+|**_tcsckopyala**|**strcpy**|**_mbsckopyala**|**wcscpy**|
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**strcpy**|\<String.h >|
-|**wcscpy**|\<String.h > veya \<wchar.h >|
-|**_mbscpy**|\<Mbstring.h >|
+|**strcpy**|\<String. h >|
+|**wcscpy**|\<String. h > veya \<wchar. h >|
+|**_mbsckopyala**|\<mbstring. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -160,7 +163,7 @@ String = Hello world from strcpy and strcat!
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dize düzenlemesi](../../c-runtime-library/string-manipulation-crt.md)<br/>
+[Dize düzenleme](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [strcat, wcscat, _mbscat](strcat-wcscat-mbscat.md)<br/>
 [strcmp, wcscmp, _mbscmp](strcmp-wcscmp-mbscmp.md)<br/>
 [strncat, _strncat_l, wcsncat, _wcsncat_l, _mbsncat, _mbsncat_l](strncat-strncat-l-wcsncat-wcsncat-l-mbsncat-mbsncat-l.md)<br/>

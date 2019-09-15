@@ -1,9 +1,9 @@
 ---
 title: _set_new_mode
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _set_new_mode
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-heap-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - set_new_mode
 - _set_new_mode
@@ -24,16 +27,16 @@ helpviewer_keywords:
 - _set_new_mode function
 - set_new_mode function
 ms.assetid: 4d14039a-e54e-4689-8c70-74a4b9834768
-ms.openlocfilehash: 0228170e4ab5b55b4b061fa61a412766de77a063
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b248f1c97b1ec334b7441f33862b90473e08993f
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62356608"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70948450"
 ---
-# <a name="setnewmode"></a>_set_new_mode
+# <a name="_set_new_mode"></a>_set_new_mode
 
-İçin yeni bir işleyici modunu ayarlar **malloc**.
+**Malloc**için yeni bir işleyici modu ayarlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -44,29 +47,29 @@ int _set_new_mode( int newhandlermode );
 ### <a name="parameters"></a>Parametreler
 
 *newhandlermode*<br/>
-İçin yeni işleyici modunu **malloc**; geçerli değer 0 veya 1'dir.
+**Malloc**için yeni işleyici modu; geçerli değer 0 veya 1 ' dir.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Önceki işleyici modu kümesi için döndürür **malloc**. Dönüş değeri 1 gösterir, bellek dağıtma hatasında **malloc** yeni işleyici rutinini; önceki adı olduğu değil, 0 değeri belirtir. Varsa *newhandlermode* bağımsız değişkeni 0 veya 1 eşit değildir, -1 döndürür.
+**Malloc**için ayarlanan önceki işleyici modunu döndürür. 1 dönüş değeri, daha önce yeni işleyici yordamı olarak adlandırılan **malloc** , bellek ayırma hatası durumunda olduğunu gösterir; 0 dönüş değeri olmadığını gösterir. *Newhandlermode* bağımsız değişkeni 0 veya 1 değerine eşit değilse,-1 döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ **_Set_new_mode** işlevi için yeni işleyici modunu ayarlar [malloc](malloc.md). Yeni işleyici modunu gösterir mi, hata durumunda, **malloc** tarafından belirlenen yeni işleyici rutinini çağırmaktır [_set_new_handler](set-new-handler.md). Varsayılan olarak, **malloc** bellek dağıtma hatasında yeni işleyici rutinini çağırmaz. Bu varsayılan davranışı geçersiz kılabilirsiniz böylece, **malloc** bellek ayırmak başarısız **malloc** aynı yeni işleyici rutinini çağırır biçimi **yeni** işleci yok aynı nedenden dolayı başarısız olduğunda. Daha fazla bilgi için [yeni](../../cpp/new-operator-cpp.md) ve [Sil](../../cpp/delete-operator-cpp.md) işleçleri *C++ dil başvurusu*. Varsayılan geçersiz kılmak için çağırın:
+C++ **_Set_new_mode** işlevi, [malloc](malloc.md)için yeni işleyici modunu ayarlar. Yeni işleyici modu, hata durumunda **malloc** 'in, [_set_new_handler](set-new-handler.md)tarafından ayarlanan yeni işleyici yordamını çağırıp çağırmayacağını gösterir. Varsayılan olarak, **malloc** bellek ayırma hatası üzerine yeni işleyici yordamını çağırmaz. Bu varsayılan davranışı geçersiz kılabilirsiniz, böylece **malloc** bellek ayıramadığında, **malloc** yeni işleyici yordamını aynı nedenden dolayı başarısız olduğunda **Yeni işlecin yaptığı** şekilde çağırır. Daha fazla bilgi için, bkz.  *C++ dil başvurusundaki* [New](../../cpp/new-operator-cpp.md) ve [Delete](../../cpp/delete-operator-cpp.md) işleçleri. Varsayılanı geçersiz kılmak için şunu çağırın:
 
 ```cpp
 _set_new_mode(1);
 ```
 
-program ya da Newmode.obj ile erken (bkz [bağlantı seçenekleri](../../c-runtime-library/link-options.md)).
+programınızın başlarında veya NewMode. obj ile bağlantılandırın (bkz. [bağlantı seçenekleri](../../c-runtime-library/link-options.md)).
 
-Bu işlev, parametresini doğrular. Varsa *newhandlermode* 0 veya 1 ise, işlev dışındaki çağırır, geçersiz parametre işleyicisi olarak herhangi bir şey açıklanan [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse <strong>_set_new_mode</strong> -1 döndürür ve ayarlar **errno** için `EINVAL`.
+Bu işlev, parametresini doğrular. *Newhandlermode* 0 veya 1 ' den başka bir şeydir, Işlev [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, <strong>_set_new_mode</strong> -1 döndürür ve **errno** değerini olarak `EINVAL`ayarlar.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_set_new_mode**|\<New.h >|
+|**_set_new_mode**|\<Yeni. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

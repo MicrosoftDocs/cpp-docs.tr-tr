@@ -1,9 +1,9 @@
 ---
 title: _expand
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _expand
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-heap-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _bexpand
 - fexpand
@@ -30,16 +33,16 @@ helpviewer_keywords:
 - _expand function
 - expand function
 ms.assetid: 4ac55410-39c8-45c7-bccd-3f1042ae2ed3
-ms.openlocfilehash: c1606bedbb1264bddb7674c829fe456f506d6584
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: cb986d893bd862e61ae595317a890fb489c19919
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62335210"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70941550"
 ---
-# <a name="expand"></a>_expand
+# <a name="_expand"></a>_expand
 
-Bir bellek bloğunu boyutunu değiştirir.
+Bellek bloğunun boyutunu değiştirir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -53,37 +56,37 @@ void *_expand(
 ### <a name="parameters"></a>Parametreler
 
 *memblock*<br/>
-Daha önce ayrılmış bellek bloğuna işaretçi.
+Önceden ayrılmış bellek bloğuna yönelik işaretçi.
 
-*Boyutu*<br/>
-Yeni boyutu bayt cinsinden.
+*boyutla*<br/>
+Bayt cinsinden yeni boyut.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_tümünü Genişlet** bırakılan bellek bloğuna void bir işaretçi döndürür. **_tümünü Genişlet**aksine **realloc**, bir blok boyutunu değiştirmek için taşınamıyor. Bu nedenle, blok, taşımadan genişletmek için kullanılabilir yeterli bellek yoksa *memblock* parametresi **_expand** dönüş değeri ile aynıdır.
+**_expand** yeniden ayrılan bellek bloğuna void bir işaretçi döndürür. **_expand**, **realloc**'ın aksine bir bloğu boyutunu değiştirecek şekilde taşıyamaz. Bu nedenle, bloğu taşımadan genişletmek için yeterli kullanılabilir bellek varsa, **_expand** için *memblock* parametresi, dönüş değeri ile aynıdır.
 
-**_tümünü Genişlet** döndürür **NULL** ne zaman bir hata algılandığında, işlemi sırasında. Örneğin, varsa **_expand** olan bir bellek bloğunu daraltmak için kullanılan, küçük blok yığın veya geçersiz blok işaretçi Bozulması algılamasını ve dönüş **NULL**.
+**_expand** işlemi sırasında bir hata algılandığında **null değeri** döndürür. Örneğin, bir bellek bloğunu daraltmak için **_expand** kullanılırsa, küçük blok yığınında veya geçersiz bir blok İşaretçisinde bozulma algılayabilir ve **null**döndürebilir.
 
-Yetersiz bellek bloğu için verilen boyuta taşımadan genişletmek için kullanılabilir, yok, işlev döndürür **NULL**. **_tümünü Genişlet** hiçbir zaman bir boyut için genişletilmiş değerinden istenen bir blok döndürür. Bir hata oluşursa **errno** hatanın yapısını gösterir. Hakkında daha fazla bilgi için **errno**, bkz: [errno _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Bloğu taşımadan verilen boyuta genişletmek için yeterli kullanılabilir bellek yoksa, işlev **null**değerini döndürür. **_expand** , istenen boyuttan daha küçük bir şekilde genişletilmiş bir blok döndürmez. Bir hata oluşursa, **errno** hatanın yapısını gösterir. **Errno**hakkında daha fazla bilgi için bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-Dönüş değeri, nesnenin herhangi bir türde bir depolama için uygun şekilde hizalanması garanti bir depolama alanına işaret eder. Yeni öğenin boyutunu denetlemek için kullanmak **_msize**. Dışında bir türe işaretçi almaya **void**, bir tür ataması dönüş değerini kullanın.
+Dönüş değeri, herhangi bir nesne türünün depolanması için uygun şekilde hizalı olarak garantili bir depolama alanına işaret eder. Öğenin yeni boyutunu denetlemek için **_msize**kullanın. **Void**dışında bir türe işaretçi almak için, dönüş değerinde bir tür dönüştürme kullanın.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Expand** işlev genişletin veya blok yığın konumunda taşımadan sözleşme çalışılırken tarafından önceden ayrılan bellek blok boyutu değiştirir. *Memblock* parametresi bloğunun başlangıcına işaret eder. *Boyutu* parametre yeni blok boyutunu bayt cinsinden verir. Blok içeriklerini kadar kısa yeni ve eski boyutlarının değiştirilmez. *memblock* serbest bırakılmış bir blok olmamalıdır.
+**_Expand** işlevi, bloğu yığında bir konuma taşımadan genişletmeyi veya anlaşmayı deneyerek, önceden ayrılmış bir bellek bloğunun boyutunu değiştirir. *Memblock* parametresi bloğunun başlangıcına işaret eder. *Boyut* parametresi, blok için bayt cinsinden yeni boyut verir. Bloğun içeriği, yeni ve eski boyutların daha kısa bir şekilde değiştirilmeden kalır. *memblock* , serbest bırakılmış bir blok olmamalıdır.
 
 > [!NOTE]
-> 64-bit platformlarda **_expand** oluştuysa blok boyutu 16 K'küçüktür ve bu nedenle düşük parçalanma yığında ayrılan yeni boyut; özellikle, geçerli boyuttan daha az ise, bloğun sözleşme değil **_tümünü Genişlet**  değişmeden blok ayrılıp döndüğünde *memblock*.
+> 64-bit platformlarda, yeni boyut geçerli boyuttan daha küçükse, **_expand** bloğu sözleşmeyebilir; Özellikle, blok boyutu 16K 'den küçükse ve bu nedenle düşük parçalanma yığınında ayrılırsa, **_expand** engellemeyi değiştirmez ve *memblock*döndürür.
 
-Uygulamayı hata ayıklama sürümü C çalışma zamanı kitaplıkları ile ilişkilendirildiğinde **_expand** çözümler [_expand_dbg](expand-dbg.md). Yığının hata ayıklama işlemi sırasında nasıl yönetildiği hakkında daha fazla bilgi için bkz. [CRT hata ayıklama yığın](/visualstudio/debugger/crt-debug-heap-details).
+Uygulama, C çalışma zamanı kitaplıklarının hata ayıklama sürümüyle bağlantılı olduğunda, **_expand** , [_expand_dbg](expand-dbg.md)olarak çözümlenir. Hata ayıklama işlemi sırasında yığının nasıl yönetildiği hakkında daha fazla bilgi için bkz. [CRT hata ayıklama yığını](/visualstudio/debugger/crt-debug-heap-details).
 
-Bu işlev, parametrelerini doğrular. Varsa *memblock* null bir işaretçiyse, bu işlev içinde açıklanan şekilde geçersiz parametre işleyicisini çağırır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse **errno** ayarlanır **EINVAL** ve işlev döndürür **NULL**. Varsa *boyutu* büyüktür **_HEAP_MAXREQ**, **errno** ayarlanır **ENOMEM** ve işlev döndürür **NULL**.
+Bu işlev, parametrelerini doğrular. *Memblock* null işaretçisiyse, bu Işlev [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, **errno** **EINVAL** olarak ayarlanır ve işlev **null**değerini döndürür. *Boyut* **_Heap_maxreq**değerinden büyükse, **errno** , **ENOMEM** olarak ayarlanır ve işlev **null**değerini döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**_expand**|\<malloc.h >|
+|**_expand**|\<malloc. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

@@ -1,11 +1,14 @@
 ---
 title: errno, _doserrno, _sys_errlist, and _sys_nerr
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _errno
-apilocation:
+api_location:
 - msvcrt.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _sys_errlist
 - errno
@@ -21,16 +24,16 @@ helpviewer_keywords:
 - _sys_nerr global variable
 - sys_nerr global variable
 ms.assetid: adbec641-6d91-4e19-8398-9a34046bd369
-ms.openlocfilehash: 57d04fe5867c6a969b6aeca40f26b18b5dcd7a61
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5b10d98dab41151290d4e44e031f659108b0c73c
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62344050"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70944563"
 ---
-# <a name="errno-doserrno-syserrlist-and-sysnerr"></a>errno, _doserrno, _sys_errlist, and _sys_nerr
+# <a name="errno-_doserrno-_sys_errlist-and-_sys_nerr"></a>errno, _doserrno, _sys_errlist, and _sys_nerr
 
-Bu hata kodlarını tutan genel makrolar, program yürütme ve hata kodlarını görüntülemek için dize eşdeğerleri sırasında ayarlanır.
+Program yürütmesi sırasında ayarlanan hata kodlarını tutan ve görüntüleme için hata kodlarının dize eşdeğerleri olan genel makrolar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -43,25 +46,25 @@ Bu hata kodlarını tutan genel makrolar, program yürütme ve hata kodlarını 
 
 ## <a name="remarks"></a>Açıklamalar
 
-Her ikisi de `errno` ve `_doserrno` 0 olarak program açılışında çalışma zamanı tarafından ayarlanır. `errno` sistem düzeyinde çağrıda bir hatada ayarlanır. Çünkü `errno` tutar, bu değeri ayarlayan son çağrının değerini takip eden çağrılar tarafından değiştirilebilir. Çalışma Zamanı Kitaplığı `errno` bir hatada silmeyin `errno` başarılı. Her zaman Temizle `errno` çağırarak `_set_errno(0)` hemen ayarlayın ve ve çağrının ardından hemen denetleyin bir çağrıdan önce.
+Her ikisi de `errno` program başlatma sırasında çalışma zamanı tarafından 0 olarak ayarlanır. `_doserrno` `errno`sistem düzeyindeki bir çağrıda bir hata üzerinde ayarlanır. , Tarafından ayarlanan son çağrının değerini taşıdığıiçin,budeğerbaşarılıçağrılartarafındandeğiştirilebilir.`errno` Hata üzerinde ayarlanan `errno` çalışma zamanı kitaplık çağrıları başarılı bir şekilde temizlemez `errno` . Kendisini ayarlayabilmesi için `_set_errno(0)` hemen önce çağırarak her zaman temizleyin `errno` ve çağrıdan hemen sonra kontrol edin.
 
-Bir hatada `errno` mutlaka aynı değere bir sistem çağrısı tarafından döndürülen hata kodu olarak ayarlanmadı. G/ç işlemleri `_doserrno` işletim sistemi hata kodu eşdeğerleri depolar `errno` kodları. Çoğu olmayan g/Ç işlemleri için değerini `_doserrno` ayarlı değil.
+Bir hata durumunda, `errno` bir sistem çağrısı tarafından döndürülen hata koduyla aynı değere ayarlı değildir. G/ç işlemleri için, `_doserrno` `errno` kodların işletim sistemi hata kodu eşdeğerlerini depolar. G/ç dışı işlemler için, değeri `_doserrno` ayarlı değildir.
 
-Her `errno` değeri, bir hata iletisi ile ilişkilendirilmiş `_sys_errlist` , yazdırılabilir birini kullanarak [perror](../c-runtime-library/reference/perror-wperror.md) işlevleri veya birini kullanarak bir dizede depolanan [strerror](../c-runtime-library/reference/strerror-strerror-wcserror-wcserror.md) veya [strerror_s](../c-runtime-library/reference/strerror-s-strerror-s-wcserror-s-wcserror-s.md) işlevleri. `perror` Ve `strerror` işlevleri kullanmak `_sys_errlist` dizi ve `_sys_nerr`— içindeki öğelerin sayısını `_sys_errlist`— hata bilgilerini işlemek için. Doğrudan erişim `_sys_errlist` ve `_sys_nerr` kod güvenlik nedenleriyle kullanım dışı bırakılmıştır. Genel makrolar yerine daha güvenli ve işlevsel sürümleri kullanmanız burada gösterildiği gibi öneririz:
+Her `errno` değer, ' deki `_sys_errlist` bir hata iletisiyle ilişkilendirilir ve bu, [pError](../c-runtime-library/reference/perror-wperror.md) işlevlerinden biri kullanılarak yazdırılabilir veya [strerror](../c-runtime-library/reference/strerror-strerror-wcserror-wcserror.md) veya [strerror_s](../c-runtime-library/reference/strerror-s-strerror-s-wcserror-s-wcserror-s.md) işlevlerinden biri kullanılarak bir dizeye depolanır. `_sys_errlist` `_sys_nerr`Ve işlevleri, hata bilgilerini `_sys_errlist` işlemek için diziyi ve — içindeki öğe sayısı ' nı kullanır. `strerror` `perror` `_sys_errlist` Ve '`_sys_nerr` a doğrudan erişim, kod güvenliği nedenleriyle kullanım dışıdır. Burada gösterildiği gibi, genel makrolar yerine daha güvenli, işlevsel sürümleri kullanmanızı öneririz:
 
-|Genel makrosu|İşlevsel Eşdeğerleri|
+|Genel makro|İşlevsel Eşdeğerleri|
 |------------------|----------------------------|
 |`_doserrno`|[_get_doserrno](../c-runtime-library/reference/get-doserrno.md), [_set_doserrno](../c-runtime-library/reference/set-doserrno.md)|
 |`errno`|[_get_errno](../c-runtime-library/reference/get-errno.md), [_set_errno](../c-runtime-library/reference/set-errno.md)|
 |`_sys_errlist`, `_sys_nerr`|[strerror_s, _strerror_s, _wcserror_s, \__wcserror_s](../c-runtime-library/reference/strerror-s-strerror-s-wcserror-s-wcserror-s.md)|
 
-Kitaplık matematik yordamları kümesi `errno` çağırarak [_matherr](../c-runtime-library/reference/matherr.md). Matematik hatalarını farklı şekilde işlemek için kendi yordamınızı göre yazma `_matherr` başvurusunun açıklamasına ve adlandırın `_matherr`.
+Kitaplık matematik yordamları `errno` [_matherr](../c-runtime-library/reference/matherr.md)çağırarak ayarlanır. Matematik hatalarını farklı şekilde işlemek için, `_matherr` başvuru açıklamasına göre kendi yordamını yazın ve `_matherr`adlandırın.
 
-Tüm `errno` değerler aşağıdaki tabloda önceden tanımlanmış sabitleri de \<errno.h >, ve UNIX uyumludur. Yalnızca `ERANGE`, `EILSEQ`, ve `EDOM` ISO C99 standardında belirtilmiştir.
+Aşağıdaki `errno` tablodaki tüm değerler errno. h > içindeki \<önceden tanımlanmış sabitlerdir ve UNIX ile uyumludur. Yalnızca `ERANGE`, `EILSEQ`, ve`EDOM` ISO C99 standardında belirtilir.
 
 |Sabit|Sistem hatası iletisi|Değer|
 |--------------|--------------------------|-----------|
-|`EPERM`|İşleme izin verilmiyor|1.|
+|`EPERM`|İşleme izin verilmiyor|1\.|
 |`ENOENT`|Böyle bir dosya ya da dizin yok|2|
 |`ESRCH`|Böyle bir işlem yok|3|
 |`EINTR`|Kesintiye uğramış işlev|4|
@@ -104,12 +107,12 @@ Tüm `errno` değerler aşağıdaki tabloda önceden tanımlanmış sabitleri de
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Genel makrosu|Gerekli başlık|İsteğe bağlı başlık|
+|Genel makro|Gerekli başlık|İsteğe bağlı başlık|
 |------------------|---------------------|---------------------|
-|`errno`|\<errno.h > veya \<stdlib.h >, \<cerrno > veya \<cstdlib > (C++)||
-|`_doserrno`, `_sys_errlist`, `_sys_nerr`|\<stdlib.h>, \<cstdlib> (C++)|\<errno.h>, \<cerrno> (C++)|
+|`errno`|\<errno. h > veya \<Stdlib. h >, \<cerrno > veya \<cstdlib > (C++)||
+|`_doserrno`, `_sys_errlist`, `_sys_nerr`|\<Stdlib. h >, \<cstdlib > (C++)|\<errno. h >, \<cerrno > (C++)|
 
-`_doserrno`, `_sys_errlist`, Ve `_sys_nerr` Microsoft uzantıları makrolardır. Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../c-runtime-library/compatibility.md).
+`_doserrno`, Vemakroları`_sys_nerr`Microsoftuzantılarıdır. `_sys_errlist` Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

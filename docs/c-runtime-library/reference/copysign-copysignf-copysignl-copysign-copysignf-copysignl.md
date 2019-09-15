@@ -1,14 +1,14 @@
 ---
 title: copysign, copysignf, copysignl, _copysign, _copysignf, _copysignl
 ms.date: 04/05/2018
-apiname:
+api_name:
 - copysignf
 - copysignl
 - _copysignl
 - _copysign
 - _copysignf
 - copysign
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -20,7 +20,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _copysignl
 - copysign
@@ -36,16 +39,16 @@ helpviewer_keywords:
 - _copysign function
 - copysignf function
 ms.assetid: 009216d6-72a2-402d-aa6c-91d924b2c9e4
-ms.openlocfilehash: 6f450da4a4391f94d1905beefdeca8e3f01fec51
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1575f0863b56256513cf6a93cf7b63f3d921af57
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62349062"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70942854"
 ---
-# <a name="copysign-copysignf-copysignl-copysign-copysignf-copysignl"></a>copysign, copysignf, copysignl, _copysign, _copysignf, _copysignl
+# <a name="copysign-copysignf-copysignl-_copysign-_copysignf-_copysignl"></a>copysign, copysignf, copysignl, _copysign, _copysignf, _copysignl
 
-Bir bağımsız değişkenin büyüklüğüne ve başka bir oturum sahip bir değer döndürür.
+Bir bağımsız değişkenin büyüklüğüne ve diğerinin işaretine sahip bir değer döndürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -83,27 +86,27 @@ long double _copysignl(
 ### <a name="parameters"></a>Parametreler
 
 *x*<br/>
-Kayan nokta değeri büyüklüğünü sonuç döndürülür.
+Sonucun büyüklüğü olarak döndürülen kayan nokta değeri.
 
-*Y*<br/>
-Sonucun işaretine göre döndürülen kayan nokta değeri.
+*Iz*<br/>
+Sonucun işareti olarak döndürülen kayan nokta değeri.
 
-[Kayan nokta desteği rutinleri](../../c-runtime-library/floating-point-support.md)
+[Kayan nokta destek yordamları](../../c-runtime-library/floating-point-support.md)
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**Copysign** işlevler büyüklüğünü birleştiren bir kayan nokta değeri döndürür *x* ve işaretini *y*. Döndürülen hata yok.
+**Copysign** işlevleri, *x* boyutunu ve *y*işaretini birleştiren bir kayan nokta değeri döndürür. Hata döndürme yok.
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, aşırı yüklemesini çağırabilirsiniz **copysign** alan ve getiren **float** veya **uzun** **çift** değerleri. C programında **copysign** her zaman alan ve döndüren bir **çift**.
+Aşırı C++ yüklemeye izin verdiğinden, **copysign** 'ın **float** veya **Long** **Double** değerleri alıp döndüren aşırı yüklerini çağırabilirsiniz. C programında, **copysign** her zaman bir **Double**alır ve döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_copysign**|\<float.h >|
-|**copysign**, **copysignf**, **copysignl**, **_copysignf**, **_copysignl**|\<Math.h >|
+|**_copysign**|\<float. h >|
+|**copysign**, **copysignf**, **copysignl**, **_copysignf**, **_copysignl**|\<Math. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

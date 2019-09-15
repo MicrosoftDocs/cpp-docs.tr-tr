@@ -1,12 +1,12 @@
 ---
 title: _vcprintf_s, _vcprintf_s_l, _vcwprintf_s, _vcwprintf_s_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _vcprintf_s
 - _vcprintf_s_l
 - _vcwprintf_s
 - _vcwprintf_s_l
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - vcprintf_s
 - vcwprintf_s_l
@@ -43,12 +46,12 @@ helpviewer_keywords:
 - vtcprintf_s function
 - formatted text [C++]
 ms.assetid: 5a46d45a-30db-45df-9850-455cbdac5636
-ms.openlocfilehash: ccd346141db9f4974ee5f9300792260bf2a8ec72
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: a6a3e94167adcc614a5de45a314fca25bdc9e1f2
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69499322"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70945660"
 ---
 # <a name="_vcprintf_s-_vcprintf_s_l-_vcwprintf_s-_vcwprintf_s_l"></a>_vcprintf_s, _vcprintf_s_l, _vcwprintf_s, _vcwprintf_s_l
 

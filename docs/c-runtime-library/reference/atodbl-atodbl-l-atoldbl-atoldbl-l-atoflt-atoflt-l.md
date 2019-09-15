@@ -1,14 +1,14 @@
 ---
 title: _atodbl, _atodbl_l, _atoldbl, _atoldbl_l, _atoflt, _atoflt_l
 ms.date: 04/05/2018
-apiname:
+api_name:
 - _atoldbl
 - _atoldbl_l
 - _atodbl
 - _atoflt
 - _atoflt_l
 - _atodbl_l
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -20,7 +20,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-convert-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _atoflt
 - _atoflt_l
@@ -49,16 +52,16 @@ helpviewer_keywords:
 - _atoflt function
 - _atodbl_l function
 ms.assetid: 2d2530f4-4bd4-42e3-8083-f2d2fbc8432a
-ms.openlocfilehash: bb8d711dc8dfa912333f34603ad607f0a74143bb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3f3b164042006cab22d0dfd9a7968e2d2e494f5c
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62349283"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70943619"
 ---
-# <a name="atodbl-atodbll-atoldbl-atoldbll-atoflt-atofltl"></a>_atodbl, _atodbl_l, _atoldbl, _atoldbl_l, _atoflt, _atoflt_l
+# <a name="_atodbl-_atodbl_l-_atoldbl-_atoldbl_l-_atoflt-_atoflt_l"></a>_atodbl, _atodbl_l, _atoldbl, _atoldbl_l, _atoflt, _atoflt_l
 
-Bir dizeyi, double'dönüştürür (**_atodbl**), long double (**_atoldbl**), veya float (**_atoflt**).
+Bir dizeyi çift ( **_atodbl**), Long Double ( **_atoldbl**) ya da float ( **_atoflt**) olarak dönüştürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -74,31 +77,31 @@ int _atoflt_l( _CRT_FLOAT * value, const char * str, locale_t locale );
 ### <a name="parameters"></a>Parametreler
 
 *value*<br/>
-Double, long double veya kayan dizeyi bir kayan nokta değerine dönüştürmenin ortaya çıkardığı değer. Bu değerleri bir yapıya sarılır.
+Dizeyi bir kayan nokta değerine dönüştürerek üretilen Double, Long Double veya float değeri. Bu değerler bir yapıya sarmalanır.
 
-*str*<br/>
-Bir kayan nokta değerine dönüştürülmesi için ayrıştırılacak dize.
+*üstbilgisine*<br/>
+Bir kayan noktalı değere dönüştürülecek şekilde Ayrıştırılacak dize.
 
-*Yerel ayar*<br/>
+*ayarlar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa 0 döndürür. Olası hata kodları **_UNDERFLOW** veya **_OVERFLOW**, üstbilgi dosyasında tanımlanan \<math.h >.
+Başarılıysa 0 döndürür. Olası hata kodları, Math. h > üst bilgi dosyasında \<tanımlanan **_yetersiz** veya **_taşma**olur.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevler bir dizeyi bir kayan noktalı değere dönüştürür. Bu işlevler arasındaki farkı ve **atof** işlevleri ailesidir bu işlevlerin kayan nokta kodu üretmemesi ve donanım özel durumları neden olmaz. Bunun yerine, hata durumları hata kodu olarak rapor edilir.
+Bu işlevler bir dizeyi kayan noktalı değere dönüştürür. Bu işlevler ve **atof** işlevleri arasındaki fark, bu işlevlerin kayan nokta kodu oluşturmamasıdır ve donanım özel durumlarına neden olmaz. Bunun yerine, hata koşulları hata kodu olarak bildirilir.
 
-Bir dizeyi bir kayan nokta değeri olarak geçerli bir yoruma sahip değilse *değer* sıfır ve dönüş değeri de sıfırdır.
+Bir dizenin kayan nokta değeri olarak geçerli bir yorumu yoksa, *değer* sıfır olarak ayarlanır ve dönüş değeri sıfırdır.
 
-Sahip bu işlevlerin sürümleri **_l** sonekine kullanmaları hariç, soneke sahip olmayan sürümler *yerel ayar* geçerli iş parçacığı yerine geçirilen parametre yerel ayar.
+**_L** sonekine sahip bu işlevlerin sürümleri, geçerli iş parçacığı yerel ayarı yerine geçirilen *yerel ayar* parametresini kullanmaları dışında, son eki olmayan sürümlerden aynıdır.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Rutinleri|Gerekli başlık|
+|Çalıştırmasını|Gerekli başlık|
 |--------------|---------------------|
-|**_atodbl**, **_atoldbl**, **_atoflt**<br /><br /> **_atodbl_l**, **_atoldbl_l**, **_atoflt_l**|\<stdlib.h >|
+|**_atodbl**, **_atoldbl**, **_atoflt**<br /><br /> **_atodbl_l**, **_atoldbl_l**, **_atoflt_l**|\<Stdlib. h >|
 
 ## <a name="example"></a>Örnek
 

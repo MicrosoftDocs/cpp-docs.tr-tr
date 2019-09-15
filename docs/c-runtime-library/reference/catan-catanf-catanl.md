@@ -1,11 +1,11 @@
 ---
 title: catan, catanf, catanl
 ms.date: 11/04/2016
-apiname:
+api_name:
 - catan
 - catanf
 - catanl
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - catan
 - catanf
@@ -30,16 +33,16 @@ helpviewer_keywords:
 - catanf function
 - catanl function
 ms.assetid: 8415ed9c-7909-4d08-b532-4630bafdc7e8
-ms.openlocfilehash: 99acdccca1b83be2fa667b5e5ef6e5181dc1ba81
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 204a05b4293fefa4378e54ce93a625bf890cf4d5
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62335522"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70943359"
 ---
 # <a name="catan-catanf-catanl"></a>catan, catanf, catanl
 
-Dal keser sanal ekseni aralığı [-1; + 1] dışında ile karmaşık bir sayının arktanjantını alır.
+Dal, sanal eksen üzerindeki [-1; + 1] aralığının dışında bir karmaşık sayının arktanjantını alır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -57,21 +60,21 @@ _Lcomplex catan( _Lcomplex z );  // C++ only
 ### <a name="parameters"></a>Parametreler
 
 *z*<br/>
-Radyan cinsinden açı temsil eden bir karmaşık sayı.
+Radyan cinsinden bir açıyı temsil eden karmaşık bir sayı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Ark tanjantını *z*, radyan cinsinden açı. Sanal ekseni ve aralık içinde sınırsız bir sonucudur [-π/2; + π/2] gerçek ekseni.
+Radyan cinsinden *z*'nin ark tanjantı. Sonuç, sanal eksen ve [-π/2; + π/2] aralığında gerçek eksen üzerinde sınırsız olarak yapılır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Çünkü C++ aşırı yüklemesi, sağlayan yüklerini çağırabilirsiniz **catan** alan ve getiren **_Fcomplex** ve **_Lcomplex** değerleri. C programında **catan** her zaman alan ve döndüren bir **_Dcomplex** değeri.
+Aşırı C++ yüklemeye izin verdiğinden, **_Fcomplex** ve **_lcomplex** değerlerini alıp döndüren **catan** 'ın aşırı yüklerini çağırabilirsiniz. C programında **catan** her zaman **_dcomplex** değeri alır ve döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|C üstbilgisi|C++ üst bilgisi|
+|Yordam|C üstbilgisi|C++üst bilgi|
 |-------------|--------------|------------------|
-|**catan**,               **catanf**, **catanl**|\<Complex.h >|\<ccomplex >|
+|**catan**, **catanf**, **catanl**|\<karmaşık. h >|\<ccomplex >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

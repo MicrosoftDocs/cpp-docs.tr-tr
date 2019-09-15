@@ -1,11 +1,11 @@
 ---
 title: casinh, casinhf, casinhl
 ms.date: 11/04/2016
-apiname:
+api_name:
 - casinh
 - casinhl
 - casinhf
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - casinh
 - casinhf
@@ -30,16 +33,16 @@ helpviewer_keywords:
 - casinhf function
 - casinhl function
 ms.assetid: bd18340b-21dd-4c86-a14e-e8e15dd97e3b
-ms.openlocfilehash: c274f4dcdfb16317820ce5c39918fa6135210eea
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6deec85dc980a7bd421de87349f512564912d98c
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62340683"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70943379"
 ---
 # <a name="casinh-casinhf-casinhl"></a>casinh, casinhf, casinhl
 
-Dal keser aralığı dışında ile karmaşık bir sayının ters hiperbolik sinüs alır [-i, + ı] sanal ekseni.
+Karmaşık bir sayının ters hiperbolik sinüsünü alır; dal, sanal eksen üzerinde [-i, + i] aralığının dışına keser.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -64,21 +67,21 @@ _Lcomplex casinhl(
 ### <a name="parameters"></a>Parametreler
 
 *z*<br/>
-Radyan cinsinden açı temsil eden bir karmaşık sayı.
+Radyan cinsinden bir açıyı temsil eden karmaşık bir sayı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Ters hiperbolik sinüsünü *z*, radyan cinsinden açı. Gerçek ekseni ve aralığında ilişkisiz bir sonucudur [-iπ/2 + iπ/2] sanal ekseni.
+*Z*'nin radyan cinsinden ters hiperbolik sinüsü. Sonuç, gerçek eksen ve [-iπ/2, + iπ/2] aralığında sanal eksen üzerinde ilişkisiz olur.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Çünkü C++ aşırı yüklemesi, sağlayan yüklerini çağırabilirsiniz **casinh** alan ve getiren **_Fcomplex** ve **_Lcomplex** değerleri. C programında **casinh** her zaman alan ve döndüren bir **_Dcomplex** değeri.
+Aşırı C++ yüklemeye izin verdiğinden, **_Fcomplex** ve **_lcomplex** değerlerini alıp döndüren **casinh** aşırı yüklerini çağırabilirsiniz. C programında **casinh** her zaman **_dcomplex** değeri alır ve döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|C üstbilgisi|C++ üst bilgisi|
+|Yordam|C üstbilgisi|C++üst bilgi|
 |-------------|--------------|------------------|
-|**casinh**, **casinhf**, **casinhl**|\<Complex.h >|\<ccomplex >|
+|**casinh**, **casinhf**, **casinhl**|\<karmaşık. h >|\<ccomplex >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

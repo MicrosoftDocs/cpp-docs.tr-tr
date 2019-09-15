@@ -1,13 +1,16 @@
 ---
 title: __argc, __argv, __wargv
 ms.date: 11/04/2016
-apiname:
+api_name:
 - __wargv
 - __argv
 - __argc
-apilocation:
+api_location:
 - msvcrt120.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - __argv
 - __argc
@@ -17,16 +20,16 @@ helpviewer_keywords:
 - __wargv
 - __argc
 ms.assetid: 17001b0a-04ad-4762-b3a6-c54847f02d7c
-ms.openlocfilehash: f428d81215193361a409473a411eb5c4d91fa997
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 59ab1f5ba52e6dc84d44e8cb5465cfa412d01895
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62290488"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70940632"
 ---
-# <a name="argc-argv-wargv"></a>__argc, __argv, __wargv
+# <a name="__argc-__argv-__wargv"></a>__argc, __argv, __wargv
 
-`__argc` Genel değişkenidir programa geçirilen komut satırı bağımsız değişkenleri sayısını. `__argv` program bağımsız değişkenleri içeren bir tek baytlı karakter veya çok byte karakterli dize dizisi bir işaretçidir ve `__wargv` program bağımsız değişkenleri içeren bir geniş karakterli dize dizisi bir işaretçisidir. Bu genel değişkenler bağımsız değişkenleri sağlayın `main` veya `wmain`.
+`__argc` Genel değişken, programa geçirilen komut satırı bağımsız değişkenlerinin sayısının sayısıdır. `__argv`, program bağımsız değişkenlerini içeren bir dizi tek baytlık karakter veya çok baytlı karakter dizelerinin bir işaretçisidir ve `__wargv` program bağımsız değişkenlerini içeren geniş karakterli dizeler dizisinin bir işaretçisidir. Bu genel değişkenler, veya `main` `wmain`için bağımsız değişkenleri sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -38,23 +41,23 @@ extern wchar_t ** __wargv;
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kullanan bir programda `main` işlevi `__argc` ve `__argv` program başlangıcında programı başlatmak için kullanılan komut satırını kullanarak başlatılır. Komut satırı bağımsız ayrıştırılır ve joker karakterler genişletilir. Bağımsız değişken sayısı atandığı `__argc` bağımsız değişkeni dize yığında ayrılır ve bağımsız değişkenlerin dizisine bir işaretçi atandığı `__argv`. Geniş karakterler kullanmak için derlenmiş bir programda ve `wmain` işlevi, bağımsız değişkenler Ayrıştırılan ve joker karakterler geniş karakterli dize olarak genişletilmiş ve bağımsız değişkeni dize dizisine bir işaretçi atandığı `__wargv`.
+`main`İşlevinikullanan bir programda `__argv`veprogramı başlatmak için kullanılan komut satırı kullanılarak program başlangıcında başlatılır. `__argc` Komut satırı bağımsız bağımsız değişkenlere ayrıştırılır ve joker karakterler genişletilir. Bağımsız değişkenlerin sayısı öğesine `__argc` atanır ve bağımsız değişken dizeleri yığına ayrılır ve bağımsız değişkenlerin dizisine bir işaretçi `__argv`atanır. Geniş karakter ve bir `wmain` işlev kullanmak üzere derlenen bir programda bağımsız değişkenler ayrıştırılır ve joker karakterler geniş karakterli dizeler olarak genişletilir ve bağımsız değişken dizesi dizisine bir işaretçi `__wargv`atanır.
 
-Kullanmak için geçirilen bağımsız değişkenler tavsiye ederiz taşınabilir kod için `main` programın komut satırı bağımsız değişkenlerini almak için.
+Taşınabilir kod için, programınızda komut satırı bağımsız değişkenlerini almak `main` için geçirilen bağımsız değişkenleri kullanmanızı öneririz.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|Tchar.h yordamı|_UNICODE tanımlı değil|_UNICODE tanımlanmış|
+|Tchar.h yordamı|_UNıCODE tanımlı değil|_UNICODE tanımlanmış|
 |---------------------|---------------------------|-----------------------|
 |`__targv`|`__argv`|`__wargv`|
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Genel değişkeni|Gerekli başlık|
+|Genel değişken|Gerekli başlık|
 |---------------------|---------------------|
-|`__argc`, `__argv`, `__wargv`|\<stdlib.h>, \<cstdlib> (C++)|
+|`__argc`, `__argv`, `__wargv`|\<Stdlib. h >, \<cstdlib > (C++)|
 
-`__argc`, `__argv`, ve `__wargv` Microsoft uzantılarıdır. Uyumluluk bilgileri için bkz. [Uyumluluk](../c-runtime-library/compatibility.md).
+`__argc`, `__argv` ve`__wargv` , Microsoft uzantılarıdır. Uyumluluk bilgileri için bkz. [Uyumluluk](../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

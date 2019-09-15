@@ -1,11 +1,11 @@
 ---
 title: time, _time32, _time64
 ms.date: 11/06/2018
-apiname:
+api_name:
 - time
 - _time64
 - _time32
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-time-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - time
 - _time64
@@ -33,14 +36,14 @@ helpviewer_keywords:
 - system time
 - time64 function
 ms.assetid: 280e00f2-2b93-4ece-94cd-e048484c6cc7
-ms.openlocfilehash: 693b70b3682876d7e6c3721f5d06aa13d31abb96
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 02dc7f250fe26d9ed7abfd89ca9a4c2163312e6d
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62155595"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70946097"
 ---
-# <a name="time-time32-time64"></a>time, _time32, _time64
+# <a name="time-_time32-_time64"></a>time, _time32, _time64
 
 Sistem saatini alır.
 
@@ -55,23 +58,23 @@ __time64_t _time64( __time64_t *destTime );
 ### <a name="parameters"></a>Parametreler
 
 *destTime*<br/>
-Saat için depolama konumu için işaretçi.
+Zaman için depolama konumu işaretçisi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-1 Ocak 1970 gece yarısı veya bir hata durumunda -1 saniye geçti olarak saati döndürür.
+Bir hata olması durumunda 1 Ocak 1970 veya-1 gece yarısından beri geçen süreyi saniye cinsinden döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Zaman** işlevi döndürür saniye sayısını gece yarısından beri geçen (00: 00:00), 1 Ocak 1970, Eşgüdümlü Evrensel Saat (UTC), sistem saatine göre. Dönüş değeri tarafından belirtilen konumda depolanan *destTime*. Bu parametre olabilir **NULL**, bu durumda döndürülen değer depolanmaz.
+**Time** işlevi, sistem saatine göre gece yarısından beri geçen saniye sayısı (00:00:00), 1 Ocak 1970, Eşgüdümlü Evrensel Saat (UTC) değerini döndürür. Dönüş değeri, *Desttime*tarafından verilen konumda depolanır. Bu parametre **null**olabilir, bu durumda dönüş değeri depolanmaz.
 
-**zaman** için bir sarmalayıcı olan **_time64** ve **time_t** , varsayılan olarak eşdeğer ise **__time64_t**. Yorumlamak üzere zorlamanız gerekirse **time_t** eski 32-bit olarak **time_t**, tanımlayabileceğiniz **_use_32bıt_tıme_t**. 18 Ocak 2038 sonrasında uygulamanız başarısız olabileceği için bu önerilmez; Bu makro kullanımını 64-bit platformlarda izin verilmez.
+**zaman** , varsayılan olarak **__time64_t**ile eşdeğer olan **_time64** ve **time_t** için bir sarmalayıcıdır. Derleyicinin **time_t** 'i eski 32 bit **time_t**olarak yorumlamasını zorlamak Istiyorsanız **_Use_32bit_time_t**tanımlayabilirsiniz. Uygulamanız 18 Ocak 2038 ' den sonra başarısız olabileceğinden bu önerilmez. Bu makronun kullanılmasına 64 bit platformlarda izin verilmez.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli C üstbilgisi|Gerekli C++ üst bilgisi|
+|Yordam|Gerekli C üstbilgisi|Gerekli C++ üst bilgi|
 |-------|------|---------------------|
-|**zaman**,  **\_time32**,  **\_time64**|\<TIME.h >|\<CTime > veya \<TIME.h >|
+|**Time**  **,\_time32**, **time64 \_**|\<Time. h >|\<CTime > veya \<saati. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

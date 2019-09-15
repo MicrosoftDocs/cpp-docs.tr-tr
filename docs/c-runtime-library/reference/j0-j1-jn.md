@@ -1,11 +1,11 @@
 ---
 title: j0, j1, jn
 ms.date: 11/04/2016
-apiname:
+api_name:
 - jn
 - j0
 - j1
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - jn
 - j1
@@ -26,13 +29,13 @@ helpviewer_keywords:
 - j1 function
 - j0 function
 ms.assetid: ec8a9512-aacb-423c-a845-fc8927e6e21d
-ms.openlocfilehash: dad9d045468a0e9d8d63565fb1480da948ac2287
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6737c1f4cc69ab4f66fb145ea76a814bf9ff1662
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62157499"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70953523"
 ---
 # <a name="j0-j1-jn"></a>j0, j1, jn
 
-Bu POSIX işlevler kullanım dışı bırakılmıştır. ISO kullanın C++ uyumluluğunu [_j0, _j1, _jn](bessel-functions-j0-j1-jn-y0-y1-yn.md) yerine.
+Bu POSIX işlevleri kullanım dışıdır. Bunun yerine ISO C++ uyumlu [_j0, _j1, _jn](bessel-functions-j0-j1-jn-y0-y1-yn.md) kullanın.

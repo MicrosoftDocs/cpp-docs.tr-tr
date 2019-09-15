@@ -1,10 +1,10 @@
 ---
 title: setlocale, _wsetlocale
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _wsetlocale
 - setlocale
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-locale-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _wsetlocale
 - _tsetlocale
@@ -30,14 +33,14 @@ helpviewer_keywords:
 - defining locales
 - _wsetlocale function
 ms.assetid: 3ffb684e-5990-4202-9553-b5339af9520d
-ms.openlocfilehash: 618b3e58a52e89561439fe76bf1b30e3cbbce001
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 375b1de82f72447d7e41b051c2aa1307716fb0dd
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62356361"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70948255"
 ---
-# <a name="setlocale-wsetlocale"></a>setlocale, _wsetlocale
+# <a name="setlocale-_wsetlocale"></a>setlocale, _wsetlocale
 
 Çalışma zamanı yerel ayarını ayarlar veya alır.
 
@@ -59,12 +62,12 @@ wchar_t *_wsetlocale(
 *Kategori*<br/>
 Yerel ayardan etkilenen kategori.
 
-*Yerel ayar*<br/>
+*ayarlar*<br/>
 Yerel ayar tanımlayıcı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Geçerli bir *yerel* ve *kategori* verilirse, belirtilen ile ilişkili dize için bir işaretçi döndürür *yerel* ve *kategori*. Varsa *yerel* veya *kategori* geçerli değil, bir null işaretçi ve programın geçerli yerel ayarları değiştirilmez döndürür.
+Geçerli bir *yerel ayar* ve *Kategori* verilirse, belirtilen *yerel ayar* ve *kategoriyle*ilişkili dizeye bir işaretçi döndürür. *Yerel ayar* veya *Kategori* geçerli değilse, null bir işaretçi döndürür ve programın geçerli yerel ayarları değiştirilmez.
 
 Örneğin, çağrı:
 
@@ -78,42 +81,42 @@ yalnızca dizeyi döndürür ve tüm kategorileri ayarlar
 en-US
 ```
 
-Tarafından döndürülen dizeyi kopyalayabilirsiniz **setlocale** programın yerel ayar bilgilerinin o bölümünü geri yüklemek için. Tarafından döndürülen dize için genel yönetici veya iş parçacığı yerel depolama kullanılan **setlocale**. Sonraki çağrılar **setlocale** önceki çağrılar tarafından döndürülen dize işaretçilerini geçersiz kılan dizenin üzerine yazar.
+Programın yerel ayar bilgilerinin o bölümünü geri yüklemek için **setlocale** tarafından döndürülen dizeyi kopyalayabilirsiniz. Küresel veya iş parçacığı yerel depolaması, **setlocale**tarafından döndürülen dize için kullanılır. Daha sonra **setlocale** çağrıları, önceki çağrılar tarafından döndürülen dize işaretçilerini geçersiz kılan dizenin üzerine yazar.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kullanım **setlocale** ayarlamak, değiştirmek veya bazılarını veya tümünü tarafından belirtilen geçerli program yerel ayar bilgilerinin sorgulamak için işlev *yerel* ve *kategori*. *yerel ayar* programınızın bazı yönlerini kendisi için özelleştirebileceğiniz yerel verilere (ülke/bölge ve dil) ifade eder. Bazı yerel ayara bağımlı kategoriler tarih biçimlendirmesini ve parasal değerlerin görüntülenme biçimini içerir. Ayarlarsanız *yerel* bilgisayarınızda desteklenen birden çok forma sahip bir dil için varsayılan dize olarak denetlemeniz gereken **setlocale** hangi dilin etkin olduğunu görmek için bir değer döndürür. Örneğin, ayarlarsanız *yerel ayar* "Çince" dönüş değeri "Çince (Basitleştirilmiş)" veya "Çince (Geleneksel)" olabilir.
+*Yerel ayar* ve *Kategori*tarafından belirtilen geçerli program yerel ayar bilgilerinin bazılarını veya tümünü ayarlamak, değiştirmek veya sorgulamak için **setlocale** işlevini kullanın. *yerel ayar* , programınızın belirli yönlerini özelleştirebileceğiniz yere (ülke/bölge ve dil) başvurur. Bazı yerel ayara bağımlı kategoriler tarih biçimlendirmesini ve parasal değerlerin görüntülenme biçimini içerir. Bilgisayarınızda birden çok form desteklenen bir dil için varsayılan dize olarak *yerel ayar* ayarlarsanız, hangi dilin geçerli olduğunu görmek için **setlocale** dönüş değerini denetlemeniz gerekir. Örneğin, *yerel ayarı* "Çince" olarak ayarlarsanız, dönüş değeri "Çince-Basitleştirilmiş" ya da "Çince-Geleneksel" olabilir.
 
-**_wsetlocale** geniş karakterli sürümüdür **setlocale**; *yerel* bağımsız değişkeni ve dönüş değerini **_wsetlocale** geniş karakterli dizelerdir. **_wsetlocale** ve **setlocale** aynı şekilde davranır.
+**_wsetlocale** , **setlocale**'in geniş karakterli bir sürümüdür; **_wsetlocale** 'in *locale* bağımsız değişkeni ve dönüş değeri geniş karakterli dizelerdir. **_wsetlocale** ve **setlocale** aynı şekilde davranır.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_tsetlocale**|**setlocale**|**setlocale**|**_wsetlocale**|
 
-*Kategori* bağımsız değişkeni, etkilenen programın yerel ayar bilgilerinin bölümlerini belirtir. İçin kullanılan makrolar *kategori* ve etkiledikleri program bölümleri şunlardır:
+*Kategori* bağımsız değişkeni, bir programın etkilenen yerel ayar bilgilerinin parçalarını belirtir. *Kategori* için kullanılan makrolar ve bu programın etkilediği bölümleri şunlardır:
 
-|*Kategori* bayrağı|Etkiler|
+|*Kategori* bayrağı|Ekranlarını|
 |-|-|
-| **LC_ALL** | Aşağıda listelenen tüm kategoriler. |
-| **LC_COLLATE** | **Strcoll**, **_stricoll**, **wcscoll**, **_wcsicoll**, **strxfrm**, **_ strncoll**, **_strnicoll**, **_wcsncoll**, **_wcsnicoll**, ve **wcsxfrm** işlevleri. |
-| **LC_CTYPE** | Karakter işleme işlevleri (dışında **isdigit**, **isxdigit**, **mbstowcs**, ve **mbtowc**, Etkilenmeyen). |
-| **LC_MONETARY** | Tarafından döndürülen para biçimli bilgiler **localeconv** işlevi. |
-| **LC_NUMERIC** | Ondalık nokta karakteri biçimlendirilen çıkış rutinleri (gibi **printf**), veri dönüştürme rutinleri için ve tarafından döndürülen Parasal olmayan biçimlendirme bilgileri için **localeconv**. Ondalık ayırıcı karakterinin yanı sıra **lc_numerıc** tarafından döndürülen dize denetim kümeleri binlik ayırıcı ve gruplandırma [localeconv](localeconv.md). |
+| **LC_ALL** | Aşağıda listelendiği gibi tüm kategoriler. |
+| **LC_COLLATE** | **Strcoll**, **_stricoll**, **wcscoll**, **_wcsicoll**, **strxfrm**, **_strncoll**, **_strnicoll**, **_wcsncoll**, **_wcsnicoll**ve **wcsxfrm** işlevleri. |
+| **LC_CTYPE** | Karakter işleme işlevleri (etkilenmeyen **IsDigit**, **ısxdigit**, **mbstowcs**ve **mbtowc**hariç). |
+| **LC_MONETARY** | **Localeconv** işlevi tarafından döndürülen parasal biçimlendirme bilgileri. |
+| **LC_NUMERIC** | Biçimlendirilmiş çıkış yordamları ( **printf**gibi) için, veri dönüştürme yordamları için ve **localeconv**tarafından döndürülen parasal olmayan biçimlendirme bilgileri için ondalık nokta karakteri. **LC_NUMERIC** , ondalık noktalı karaktere ek olarak, binlerce ayırıcıyı ve [localeconv](localeconv.md)tarafından döndürülen gruplama denetimi dizesini ayarlar. |
 | **LC_TIME** | **Strftime** ve **wcsftime** işlevleri. |
 
-Bu işlev, kategori parametresini doğrular. Kategori parametresi önceki tabloda verilen değerlerden biri değilse, geçersiz parametre işleyicisi açıklandığı gibi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütme devam etmesine izin verilirse işlev ayarlar **errno** için **EINVAL** ve döndürür **NULL**.
+Bu işlev, kategori parametresini doğrular. Kategori parametresi önceki tabloda verilen değerlerden biri değilse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, işlev **errno** ' ı **EINVAL** olarak ayarlar ve **null**değerini döndürür.
 
-*Yerel ayar* bağımsız değişkeni Yereli belirten bir dize için bir işaretçidir. Biçimi hakkında bilgi için *yerel* bağımsız değişken bkz [yerel ayar adları, diller ve ülke/bölge dizeleri](../../c-runtime-library/locale-names-languages-and-country-region-strings.md). Varsa *yerel ayar* noktasıdır boş bir dize, yerel ayar uygulama tarafından tanımlanan doğal ortamdır. Değerini **C** C çeviri için en az ANSI uyumlu ortamı belirtir. **C** yerel varsayar, tüm **char** veri türleri: 1 bayt ve bunların her zaman 256'dan az değerdir.
+*Yerel ayar* bağımsız değişkeni, yerel ayarı belirten bir dizeye yönelik bir işaretçidir. *Yerel ayar* bağımsız değişkeninin biçimi hakkında daha fazla bilgi için bkz. [yerel ayar adları, diller ve ülke/bölge dizeleri](../../c-runtime-library/locale-names-languages-and-country-region-strings.md). *Yerel ayar* boş bir dizeye işaret ediyorsa, yerel ayar uygulama tanımlı yerel ortamdır. **C** değeri, c çevirisi için en az ANSI uyumlu ortamı belirtir. **C** yerel ayarı, tüm **char** veri türlerinin 1 bayt olduğunu ve değerinin her zaman 256 ' den küçük olduğunu varsayar.
 
 Program açılışında, aşağıdaki ifadenin eşdeğeri çalıştırılır:
 
 `setlocale( LC_ALL, "C" );`
 
-*Yerel ayar* bağımsız değişkeni bir yerel ad, bir dil dizesi, bir dil dizesi ve ülke/bölge kodu, bir kod sayfası veya bir dil dizesi, ülke/bölge kodu ve kod sayfası alabilir. Kullanılabilen yerel veri adları, diller, ülke/bölge kodları ve kod sayfaları paketleri UTF-7 ve UTF-8 gibi karakter başına iki bayttan fazlasını gerektiren kod sayfaları dışında Windows NLS API tarafından desteklenenlerin tamamını içermektedir. UTF-8 ya da UTF-7 kod sayfası değeri sağlarsanız **setlocale** döndürerek başarısız olur **NULL**. Tarafından desteklenen yerel ayar adları kümesi **setlocale** açıklanan [yerel ayar adları, diller ve ülke/bölge dizeleri](../../c-runtime-library/locale-names-languages-and-country-region-strings.md). Tarafından desteklenen dil ve ülke/bölge dize kümesi **setlocale** listelenen [dil dizeleri](../../c-runtime-library/language-strings.md) ve [Country/Region Strings](../../c-runtime-library/country-region-strings.md). Kod içinde gömülü veya depolama için seri hale getirilmiş yerel ayar dizelerinin devamlılığı ve performansı için yerel ayar adı biçimi öneririz. Yerel ayar adı dizelerinin bir işletim sistemi güncelleştirmesi tarafından değiştirilmesi olasılığı dil ve ülke/bölge adı biçiminin değiştirilmesi olasılığından daha düşüktür.
+*Yerel ayar* bağımsız değişkeni bir yerel ayar adı, bir dil dizesi, bir dil dizesi ve ülke/bölge kodu, kod sayfası veya dil dizesi, ülke/bölge kodu ve kod sayfası alabilir. Kullanılabilen yerel veri adları, diller, ülke/bölge kodları ve kod sayfaları paketleri UTF-7 ve UTF-8 gibi karakter başına iki bayttan fazlasını gerektiren kod sayfaları dışında Windows NLS API tarafından desteklenenlerin tamamını içermektedir. UTF-7 veya UTF-8 için bir kod sayfası değeri sağlarsanız, **setlocale** başarısız olur ve **null**döndürür. **Setlocale** tarafından desteklenen yerel ayar adları kümesi, [yerel ayar adları, diller ve ülke/bölge dizeleri](../../c-runtime-library/locale-names-languages-and-country-region-strings.md)bölümünde açıklanmıştır. **Setlocale** tarafından desteklenen dil ve ülke/bölge dizeleri kümesi, [dil dizeleri](../../c-runtime-library/language-strings.md) ve [ülke/bölge dizeleri](../../c-runtime-library/country-region-strings.md)bölümünde listelenmiştir. Kod içinde gömülü veya depolama için seri hale getirilmiş yerel ayar dizelerinin devamlılığı ve performansı için yerel ayar adı biçimi öneririz. Yerel ayar adı dizelerinin bir işletim sistemi güncelleştirmesi tarafından değiştirilmesi olasılığı dil ve ülke/bölge adı biçiminin değiştirilmesi olasılığından daha düşüktür.
 
-Olarak geçirilen bir null işaretçi *yerel* bağımsız değişkeni bildirir **setlocale** uluslararası ortamı ayarlaması yerine sorgulamak için. Varsa *yerel ayar* bağımsız değişkeni null bir işaretçiyse, programın geçerli yerel ayarı değiştirilmez. Bunun yerine, **setlocale** ile ilişkili dize için bir işaretçi döndürür *kategori* , iş parçacığının geçerli yerel ayarı kullanır. Varsa *kategori* bağımsız değişkeni **LC_ALL**, işlev noktalı virgülle ayrılmış her bir kategorinin geçerli ayarını gösteren bir dize döndürür. Örneğin, çağrı
+*Yerel ayar* bağımsız değişkeni olarak geçirilmiş bir null işaretçi, **setlocale** 'in Uluslararası ortamı ayarlamak için yerine sorgulamasına söyler. *Yerel ayar* bağımsız değişkeni null işaretçisiyse, programın geçerli yerel ayarı değiştirilmez. Bunun yerine, **setlocale** , iş parçacığının geçerli yerel ayarı *kategorisiyle* ilişkili dizeye bir işaretçi döndürür. *Kategori* bağımsız değişkeni **LC_ALL**ise, işlev her kategorinin geçerli ayarını noktalı virgülle ayırarak gösteren bir dize döndürür. Örneğin, çağrı
 
 ```C
 // Set all categories and return "en-US"
@@ -129,9 +132,9 @@ dizisi
 LC_COLLATE=en-US;LC_CTYPE=en-US;LC_MONETARY=fr-FR;LC_NUMERIC=en-US;LC_TIME=en-US
 ```
 
-ile ilişkili dizeyi olduğu **LC_ALL** kategorisi.
+**LC_ALL** kategorisiyle ilişkilendirilen dize.
 
-Aşağıdaki örnekler ilgilidir **LC_ALL** kategorisi. ".OCP" ve ".ACP" dizelerinden biri, bir kod sayfası numarası yerine sırasıyla kullanıcı varsayılan OEM kod sayfasının ve kullanıcının varsayılan ANSI kod sayfasının kullanımını belirlemek için kullanılabilir.
+Aşağıdaki örnekler **LC_ALL** kategorisine aittir. ".OCP" ve ".ACP" dizelerinden biri, bir kod sayfası numarası yerine sırasıyla kullanıcı varsayılan OEM kod sayfasının ve kullanıcının varsayılan ANSI kod sayfasının kullanımını belirlemek için kullanılabilir.
 
 - `setlocale( LC_ALL, "" );`
 
@@ -147,15 +150,15 @@ Aşağıdaki örnekler ilgilidir **LC_ALL** kategorisi. ".OCP" ve ".ACP" dizeler
 
 - `setlocale( LC_ALL, "<localename>" );`
 
-   Yerel ayarı tarafından belirtilen yerel ayar adına ayarlar  *\<localename >*.
+   Yerel ayarı,  *\<LocaleName >* tarafından belirtilen yerel ayar adına ayarlar.
 
 - `setlocale( LC_ALL, "<language>_<country>" );`
 
-   Yerel ayarı dil ve ülke/bölge tarafından belirtilen ayarlar  *\<dil >* ve  *\<Ülke >* konaktan alınan varsayılan kod sayfası ile birlikte İşletim Sistemi.
+   Yerel ayarı,  *\<dil >* ve  *\<ülke >* tarafından belirtilen dile ve ülkeye/bölgeye, ana bilgisayar işletim sisteminden alınan varsayılan kod sayfasıyla birlikte ayarlar.
 
 - `setlocale( LC_ALL, "<language>_<country>.<code_page>" );`
 
-   Yerel dil, ülke/bölge ve kod sayfası tarafından belirtilen ayarlar  *\<dil >*,  *\<Ülke >*, ve  *\<code_page >* dizeleri. Dilin, ülkenin/bölgenin ve kod sayfasının çeşitli birleşimlerini kullanabilirsiniz. Örneğin, bu çağrı yerel ayarı kod sayfası 1252 ile Fransızca Kanada olarak ayarlar:
+   Yerel ayarı,  *\<dil >* ,  *\<ülke >*  *\<ve code_page >* dizeleri tarafından belirtilen dile, ülkeye/bölgeye ve kod sayfasına ayarlar. Dilin, ülkenin/bölgenin ve kod sayfasının çeşitli birleşimlerini kullanabilirsiniz. Örneğin, bu çağrı yerel ayarı kod sayfası 1252 ile Fransızca Kanada olarak ayarlar:
 
    `setlocale( LC_ALL, "French_Canada.1252" );`
 
@@ -169,7 +172,7 @@ Aşağıdaki örnekler ilgilidir **LC_ALL** kategorisi. ".OCP" ve ".ACP" dizeler
 
 - `setlocale( LC_ALL, "<language>" );`
 
-   Yerel ayarı tarafından belirtilen dile ayarlar  *\<dil >* ve belirtilen dil ve kullanıcının varsayılan ANSI ülke/bölge için ana bilgisayardan alınan kod sayfası için varsayılan ülkeyi/bölgeyi kullanır. İşletim Sistemi. Aşağıdaki örnek, çağrılar **setlocale** işlevsel olarak eşdeğerdir:
+   Yerel ayarı,  *\<dil >* tarafından belirtilen dile ayarlar ve belirtilen dilin varsayılan ülkesini/bölgesini ve bu ülkenin/bölgenin ana bilgisayar işletim sisteminden elde edilen Kullanıcı varsayılan ANSI kod sayfasını kullanır. Örneğin, **setlocale** için aşağıdaki çağrılar işlevsel olarak eşdeğerdir:
 
    `setlocale( LC_ALL, "en-US" );`
 
@@ -181,24 +184,24 @@ Aşağıdaki örnekler ilgilidir **LC_ALL** kategorisi. ".OCP" ve ".ACP" dizeler
 
 - `setlocale( LC_ALL, ".<code_page>" );`
 
-   Kod sayfası tarafından belirtilen değere ayarlar *< code_page >*, belirtilen kod sayfası için (konak işletim sistemi tarafından tanımlanan) dili, varsayılan ülke/bölge.
+   Kod sayfasını, belirtilen kod sayfası için varsayılan ülke/bölge ve dil (ana bilgisayar işletim sistemi tarafından tanımlandığı şekilde) ile birlikte *< code_page >* tarafından belirtilen değere ayarlar.
 
-Kategori olmalıdır **LC_ALL** veya **LC_CTYPE** kod sayfası bir değişiklik etkileyecek. Örneğin, varsayılan ülke/bölge ve işletim sistemi dili "ABD" ve "İngilizce" ise, aşağıdaki iki çağrılar **setlocale** işlevsel olarak eşdeğerdir:
+Kod sayfası değişikliğini etkili olması için kategori **LC_ALL** veya **LC_CTYPE** olmalıdır. Örneğin, ana bilgisayar işletim sisteminin varsayılan ülke/bölge ve dili "Birleşik Devletler" ve "Ingilizce" ise, **setlocale** için aşağıdaki iki çağrı işlevsel olarak eşdeğerdir:
 
 `setlocale( LC_ALL, ".1252" );`
 
 `setlocale( LC_ALL, "English_United States.1252");`
 
-Daha fazla bilgi için [setlocale](../../preprocessor/setlocale.md) pragma yönergesi [C/C++ önişlemci başvurusu](../../preprocessor/c-cpp-preprocessor-reference.md).
+Daha fazla bilgi için [C/C++ Önişlemci başvurusunda](../../preprocessor/c-cpp-preprocessor-reference.md) [setlocale](../../preprocessor/setlocale.md) pragma yönergesine bakın.
 
-İşlev [_configthreadlocale](configthreadlocale.md) denetlemek için kullanılıp kullanılmadığını **setlocale** bir programdaki tüm iş parçacığı yerel ayarı veya yalnızca çağıran iş parçacığının yerel ayarını etkiler.
+[_Configthreadlocale](configthreadlocale.md) işlevi, **setlocale** 'in bir programdaki tüm iş parçacıklarının yerel ayarını veya yalnızca çağıran iş parçacığının yerel ayarını etkileyip etkilemediğini denetlemek için kullanılır.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**setlocale**|\<Locale.h >|
-|**_wsetlocale**|\<Locale.h > veya \<wchar.h >|
+|**setlocale**|\<locale. h >|
+|**_wsetlocale**|\<locale. h > veya \<wchar. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

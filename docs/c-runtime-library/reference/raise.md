@@ -1,9 +1,9 @@
 ---
 title: tetikle
 ms.date: 01/02/2018
-apiname:
+api_name:
 - raise
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-runtime-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - Raise
 helpviewer_keywords:
@@ -23,12 +26,12 @@ helpviewer_keywords:
 - raise function
 - signals
 - programs [C++], sending signals to executing programs
-ms.openlocfilehash: 1354c76207d6cd59249f6c06df88ae23fe69b1e0
-ms.sourcegitcommit: effb516760c0f956c6308eeded48851accc96b92
-ms.translationtype: HT
+ms.openlocfilehash: bed377bb46abac252381344f0b1cf4339815a16e
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 09/12/2019
-ms.locfileid: "70927425"
+ms.locfileid: "70949664"
 ---
 # <a name="raise"></a>tetikle
 

@@ -1,9 +1,9 @@
 ---
 title: _CIlog10
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _CIlog10
-apilocation:
+api_location:
 - msvcr100.dll
 - msvcr120.dll
 - msvcr80.dll
@@ -12,7 +12,10 @@ apilocation:
 - msvcrt.dll
 - msvcr110.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - CIlog10
 - _CIlog10
@@ -20,16 +23,16 @@ helpviewer_keywords:
 - _CIlog10 intrinsic
 - CIlog10 intrinsic
 ms.assetid: 05d7fcaa-3cff-4cc5-8d44-015e7cacba24
-ms.openlocfilehash: 771ed103c8ab0fe29061086923189cc90eb047d9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c99fdab859acf280afc8a595696a17b2d03a47e4
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62290189"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70944606"
 ---
-# <a name="cilog10"></a>_CIlog10
+# <a name="_cilog10"></a>_CIlog10
 
-Gerçekleştiren bir `log10` yığınında üst değer işlemi.
+Yığındaki en `log10` üstteki değerde bir işlem gerçekleştirir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -39,9 +42,9 @@ void __cdecl _CIlog10();
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu sürümü `log10` derleyici anlayan özelleştirilmiş bir çağırma kuralı işlevi vardır. İşlevi, kopya oluşturulmasını önlediği için yürütmeyi hızlandırır ve YAZMAÇ ayırma ile yardımcı olur.
+`log10` İşlevin bu sürümünde derleyicinin anladığı özelleştirilmiş bir çağırma kuralı vardır. İşlev, kopyaların oluşturulmasını ve YAZMAÇ ayrılmasına yardımcı olmaya engel olduğundan yürütmeyi hızlandırır.
 
-Sonuç değerini yığın üstüne itilir.
+Elde edilen değer yığının en üstüne gönderilir.
 
 ## <a name="requirements"></a>Gereksinimler
 

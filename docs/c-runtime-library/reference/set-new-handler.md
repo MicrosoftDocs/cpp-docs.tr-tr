@@ -1,9 +1,9 @@
 ---
 title: _set_new_handler
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _set_new_handler
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-runtime-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _set_new_handler
 - set_new_handler
@@ -25,16 +28,16 @@ helpviewer_keywords:
 - error handling
 - transferring control to error handler
 ms.assetid: 1d1781b6-5cf8-486a-b430-f365e0bb023f
-ms.openlocfilehash: bc7718503f59c69868a75cac9383286a548fc307
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a1f340887efd657dd9ff9bf219534d77fdd90aa3
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62356506"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70948466"
 ---
-# <a name="setnewhandler"></a>_set_new_handler
+# <a name="_set_new_handler"></a>_set_new_handler
 
-Varsa, hata işleme mekanizması aktarır denetim **yeni** işleci başarısız bellek ayrılamadı.
+**Yeni** operatör bellek ayıramazsa, denetimi hata işleme mekanizmanıza aktarır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -45,21 +48,21 @@ _PNH _set_new_handler( _PNH pNewHandler );
 ### <a name="parameters"></a>Parametreler
 
 *pNewHandler*<br/>
-Uygulama tarafından sağlanan belleği işleme işlevinin işaretçisi. Bir bağımsız değişkeni 0 yeni işleyici kaldırılmasına neden olur.
+Uygulama tarafından sağlanan bellek işleme işlevine yönelik işaretçi. 0 bağımsız değişkeni, yeni işleyicinin kaldırılmasına neden olur.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Önceki özel durum işleme işlevi tarafından kaydedilen bir işaretçi döndürür **_set_new_handler**, böylece önceki işlevi daha sonra geri yüklenebilir. Önceki bir işlev ayarlarsanız dönüş değeri, varsayılan davranışı geri yüklemek için kullanılabilir; Bu değer **NULL**.
+Önceki işlevin daha sonra geri yüklenebilmesi için **_set_new_handler**tarafından kaydedilen önceki özel durum işleme işlevine yönelik bir işaretçi döndürür. Önceki bir işlev ayarlanmamışsa, varsayılan davranışı geri yüklemek için dönüş değeri kullanılabilir; Bu değer **null**olabilir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ **_Set_new_handler** işlevi belirtir, Denetim kazançları bir özel durum işleme işlevi **yeni** işleci başarısız bellek ayrılamadı. Varsa **yeni** başarısız çalışma zamanı sistemi otomatik olarak bir bağımsız değişken olarak geçirilen özel durum işleme işlevi çağırır **_set_new_handler**. **_PNH**, New.h içinde tanımlanan, bir tür döndüren bir işlev işaretçisidir **int** ve türünde bir bağımsız değişken **size_t**. Kullanım **size_t** ayrılacak alanı miktarını belirtmek için.
+C++ **_Set_new_handler** işlevi, **Yeni** operatör bellek ayıramazsa denetimi karşılayan bir özel durum işleme işlevi belirtir. **Yeni** işlem başarısız olursa, çalışma zamanı sistemi otomatik olarak **_set_new_handler**için bir bağımsız değişken olarak geçirilen özel durum işleme işlevini çağırır. New. h içinde tanımlanan **_Pnh**, **int** türünde bir bağımsız değişken getiren ve **size_t**türünde bir bağımsız değişken alan bir işlev işaretçisidir. Ayrılacak alan miktarını belirtmek için **size_t** kullanın.
 
-Hiçbir varsayılan işleyici yok.
+Varsayılan işleyici yok.
 
-**_set_new_handler** aslında bir çöp toplama düzeni. Çalışma zamanı sistemi ayırma işlevinizi sıfır olmayan bir değer döndürür ve 0 işlevinizi döndürürse başarısız her zaman yeniden dener.
+**_set_new_handler** aslında bir atık toplama düzenidir. İşleviniz sıfır dışında bir değer döndürdüğünde çalışma zamanı sistemi yeniden deneme süresi ayırması, işleviniz 0 döndürürse başarısız olur.
 
-Bir olayın oluşmasını **_set_new_handler** işlevi bir programda çalışma zamanı sistemi bağımsız değişken listesinde belirtilen özel durum işleme işlevini kaydeder:
+Bir programdaki **_set_new_handler** işlevinin bir oluşumu, bağımsız değişken listesinde belirtilen özel durum işleme işlevini çalışma zamanı sistemiyle kaydeder:
 
 ```cpp
 // set_new_handler1.cpp
@@ -77,7 +80,7 @@ int main( void )
 }
 ```
 
-Son geçirilen işlev adresi kaydedebilirsiniz **_set_new_handler** çalışır ve daha sonra yeniden devreye sokmak:
+En son **_set_new_handler** işlevine geçirilen işlev adresini kaydedebilir ve daha sonra yeniden devreye girebilirsiniz:
 
 ```cpp
    _PNH old_handler = _set_new_handler( my_handler );
@@ -88,31 +91,31 @@ Son geçirilen işlev adresi kaydedebilirsiniz **_set_new_handler** çalışır 
    // . . .
 ```
 
-C++ [_Set_new_mode](set-new-mode.md) işlevi için yeni işleyici modunu ayarlar [malloc](malloc.md). Yeni işleyici modunu gösterir mi, hata durumunda, **malloc** tarafından belirlenen yeni işleyici rutinini çağırmaktır **_set_new_handler**. Varsayılan olarak, **malloc** bellek dağıtma hatasında yeni işleyici rutinini çağırmaz. Bu varsayılan davranışı geçersiz kılabilirsiniz böylece, **malloc** bellek ayırmak başarısız **malloc** aynı yeni işleyici rutinini çağırır biçimi **yeni** işleci yok aynı nedenden dolayı başarısız olduğunda. Varsayılan geçersiz kılmak için çağırın:
+C++ [_Set_new_mode](set-new-mode.md) işlevi, [malloc](malloc.md)için yeni işleyici modunu ayarlar. Yeni işleyici modu, hata durumunda **malloc** 'in, **_set_new_handler**tarafından ayarlanan yeni işleyici yordamını çağırıp çağırmayacağını gösterir. Varsayılan olarak, **malloc** bellek ayırma hatası üzerine yeni işleyici yordamını çağırmaz. Bu varsayılan davranışı geçersiz kılabilirsiniz, böylece **malloc** bellek ayıramadığında, **malloc** yeni işleyici yordamını aynı nedenden dolayı başarısız olduğunda **Yeni işlecin yaptığı** şekilde çağırır. Varsayılanı geçersiz kılmak için şunu çağırın:
 
 ```cpp
 _set_new_mode(1);
 ```
 
-erken, program veya Newmode.obj ile.
+programınızın başlarında veya NewMode. obj ile bağlantılandırın.
 
-Kullanıcı tanımlı değilse `operator new` yeni işleyici işlevleri otomatik olarak hata durumunda çağrılır değil sağlanır.
+Kullanıcı tanımlı `operator new` bir sağlanmışsa, yeni işleyici işlevleri hata durumunda otomatik olarak çağrılmaz.
 
-Daha fazla bilgi için [yeni](../../cpp/new-operator-cpp.md) ve [Sil](../../cpp/delete-operator-cpp.md) içinde *C++ dil başvurusu*.
+Daha fazla bilgi için bkz.  *C++ dil başvurusunda* [Yeni](../../cpp/new-operator-cpp.md) ve [Sil](../../cpp/delete-operator-cpp.md) .
 
-Tek bir yoktur **_set_new_handler** işleyicisi için tüm dinamik olarak bağlı dll veya yürütülebilir dosyaları; çağırsanız bile **_set_new_handler** işleyicinizi bir başkası tarafından değiştirilebilir veya değiştirdiğiniz bir işleyici, başka bir DLL veya yürütülebilir dosya ayarlayın.
+Dinamik olarak bağlı tüm dll 'Ler veya yürütülebilir dosyalar için tek bir **_set_new_handler** işleyicisi vardır; **_set_new_handler** çağırsanız bile işleyiciniz başka bir dll veya yürütülebilir dosya tarafından ayarlanmış bir işleyiciyi değiştirmiş olabilir.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_set_new_handler**|\<New.h >|
+|**_set_new_handler**|\<Yeni. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
-Ayırma başarısız olduğunda, bu örnekte, denetim için MyNewHandler aktarılır. MyNewHandler için geçirilen bağımsız değişken istenen bayt sayısıdır. Ayırma denenen olup olmadığını belirten bir bayrak MyNewHandler döndürülen değer olduğu: ayırma yeniden deneme ve sıfır değeri ayırma başarısız olduğunu gösteren sıfır dışında bir değeri gösterir.
+Bu örnekte, ayırma başarısız olduğunda denetim MyNewHandler 'a aktarılır. MyNewHandler öğesine geçirilen bağımsız değişken istenen bayt sayısıdır. MyNewHandler 'tan döndürülen değer ayırmanın yeniden denenip denenmeyeceğini belirten bir bayrak olur: sıfır dışında bir değer ayırmanın yeniden deneneceği ve sıfır değerinde ayırmanın başarısız olduğunu gösterir.
 
 ```cpp
 // crt_set_new_handler.cpp

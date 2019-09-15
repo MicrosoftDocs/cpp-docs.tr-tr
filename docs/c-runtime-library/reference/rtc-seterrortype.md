@@ -1,9 +1,9 @@
 ---
 title: _RTC_SetErrorType
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _RTC_SetErrorType
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -14,7 +14,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - RTC_SetErrorType
 - _RTC_SetErrorType
@@ -23,16 +26,16 @@ helpviewer_keywords:
 - RTC_SetErrorType function
 - _RTC_SetErrorType function
 ms.assetid: f5f99be7-d357-4b11-b8f5-ddd3428f2b06
-ms.openlocfilehash: 022079bd199477c8bca92e853ed66879c96428db
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6c1eff5920931aa3b72bf3dbc6232c371828b16a
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62357141"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70948930"
 ---
-# <a name="rtcseterrortype"></a>_RTC_SetErrorType
+# <a name="_rtc_seterrortype"></a>_RTC_SetErrorType
 
-Bir tür ile çalışma zamanı hata denetimleri (RTCs) tarafından algılanan bir hata ilişkilendirir. Hata işleyicinizi hata belirtilen türe ait çıktı nasıl işler.
+Çalışma zamanı hata denetimleri (RTCs) tarafından algılanan bir hatayı bir tür ile ilişkilendirir. Hata işleyiciniz, belirtilen türdeki hataların nasıl çıkış yapılacağını işler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -46,34 +49,34 @@ int _RTC_SetErrorType(
 ### <a name="parameters"></a>Parametreler
 
 *errnum*<br/>
-Sıfır ile bir döndürdüğü değerden daha az arasında bir sayı [_RTC_NumErrors](rtc-numerrors.md).
+Sıfır ve [_RTC_NumErrors](rtc-numerrors.md)tarafından döndürülen değerden küçük bir sayı.
 
 *ErrType*<br/>
-Bu atama için bir değer *errnum*. Örneğin, kullanabileceğinize **_CRT_ERROR**. Kullanıyorsanız **_CrtDbgReport** işleyicinizi hata olarak *ErrType* yalnızca tanımlanmış semboller biri olabilir [_CrtSetReportMode](crtsetreportmode.md). Kendi hata işleyicisi varsa ([_RTC_SetErrorFunc](rtc-seterrorfunc.md)), kadar olabilir *ErrType*orada olarak s *errnum*s.
+Bu *errnum*öğesine atanacak değer. Örneğin, **_CRT_ERROR**kullanabilirsiniz. Hata işleyiciniz olarak **_Crtdbgreport** kullanıyorsanız, *ErrType* yalnızca [_Crtsetreportmode](crtsetreportmode.md)içinde tanımlanan simgelerden biri olabilir. Kendi hata işleyiciniz ([_RTC_SetErrorFunc](rtc-seterrorfunc.md)) varsa, *errnum*'lar olduğu Için çok sayıda *ErrType*'a sahip olabilirsiniz.
 
-Bir *ErrType* _RTC_ERRTYPE_IGNORE özel anlamı **_CrtSetReportMode**; hata yoksayıldı.
+*ErrType* _RTC_ERRTYPE_IGNORE, **_Crtsetreportmode**; için özel anlamı vardır. Hata yoksayıldı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Hata türü için önceki değer *türü*.
+Hata türü *türü*için önceki değer.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, tüm hataları kümesine *ErrType* = 1, karşılık gelen **_CRT_ERROR**. Varsayılan hata hakkında daha fazla bilgi türleri gibi **_CRT_ERROR**, bkz: [_CrtDbgReport](crtdbgreport-crtdbgreportw.md).
+Varsayılan olarak, tüm hatalar **_CRT_ERROR**öğesine karşılık gelen *ErrType* = 1 olarak ayarlanır. **_CRT_ERROR**gibi varsayılan hata türleri hakkında daha fazla bilgi için bkz. [_Crtdbgreport](crtdbgreport-crtdbgreportw.md).
 
-Bu işlev çağrı yapmadan önce ilk çalışma zamanı hata denetimi başlatma işlevlerden birini çağırmanız gerekir; bkz: [kullanarak çalışma zamanı denetimleri olmadan C çalışma zamanı kitaplığı](/visualstudio/debugger/using-run-time-checks-without-the-c-run-time-library)
+Bu işlevi çağırabilmeniz için önce çalışma zamanı hata denetimi başlatma işlevlerinden birini çağırmanız gerekir; bkz [. C çalışma zamanı kitaplığı olmadan çalışma zamanı denetimlerini kullanma](/visualstudio/debugger/using-run-time-checks-without-the-c-run-time-library)
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_RTC_SetErrorType**|\<rtcapi.h >|
+|**_RTC_SetErrorType**|\<rtcapı. h >|
 
-Daha fazla bilgi için [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla bilgi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 
-Tüm sürümleri [C çalışma zamanı kitaplıkları](../../c-runtime-library/crt-library-features.md).
+[C çalışma zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md)tüm sürümleri.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

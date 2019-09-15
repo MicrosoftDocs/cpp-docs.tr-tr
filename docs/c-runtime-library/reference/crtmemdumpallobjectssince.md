@@ -1,9 +1,9 @@
 ---
 title: _CrtMemDumpAllObjectsSince
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _CrtMemDumpAllObjectsSince
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -14,7 +14,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - CrtMemDumpAllObjectsSince
 - _CrtMemDumpAllObjectsSince
@@ -22,16 +25,16 @@ helpviewer_keywords:
 - _CrtMemDumpAllObjectsSince function
 - CrtMemDumpAllObjectsSince function
 ms.assetid: c48a447a-e6bb-475c-9271-a3021182a0dc
-ms.openlocfilehash: 7de0ee9ff166af6336a8d14aa0dbd07dbd7d23fc
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9e3793e9b88c593968b108e2801e24476417603c
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62347463"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70942379"
 ---
-# <a name="crtmemdumpallobjectssince"></a>_CrtMemDumpAllObjectsSince
+# <a name="_crtmemdumpallobjectssince"></a>_CrtMemDumpAllObjectsSince
 
-Program yürütme başlangıcından veya belirtilen yığın durumundan (yalnızca hata ayıklama sürümü) yığındaki nesneler hakkında bilgi dökümünü yapar.
+Yığın içindeki nesneler hakkındaki bilgileri program yürütmenin başından veya belirtilen bir yığın durumundan (yalnızca hata ayıklama sürümü) döker.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -43,34 +46,34 @@ void _CrtMemDumpAllObjectsSince(
 
 ### <a name="parameters"></a>Parametreler
 
-*durumu*<br/>
-Gelen dökme başlamak için yığın durumuna yönelik işaretçi veya **NULL**.
+*durumunda*<br/>
+Ya da **null**ile döküm başlatmaya başlamak için yığın durumunun işaretçisi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_CrtMemDumpAllObjectsSince** işlevi, hata ayıklama üst bilgi bilgileri kullanıcı tarafından okunabilen bir formda yığında ayrılan nesnelerin dökümünü alır. Döküm bilgilerini ayırmaları İzle ve bellek sorunlarını algılamak için uygulama tarafından kullanılabilir. Zaman [_DEBUG](../../c-runtime-library/debug.md) tanımlı değil, çağrılar **_CrtMemDumpAllObjectsSince** ön işleme sırasında kaldırılır.
+**_CrtMemDumpAllObjectsSince** işlevi, yığında ayrılan nesnelerin hata ayıklama üstbilgi bilgilerini Kullanıcı tarafından okunabilen bir biçimde döker. Döküm bilgileri, uygulama tarafından ayırmaları izlemek ve bellek sorunlarını algılamak için kullanılabilir. [_Hata ayıklama](../../c-runtime-library/debug.md) tanımlanmadığında, **_CrtMemDumpAllObjectsSince** çağrıları ön işleme sırasında kaldırılır.
 
-**_CrtMemDumpAllObjectsSince** değerini kullanır *durumu* döküm işlemini başlatmak nereye belirlemek için parametre. Belirtilen yığın durumu dökme başlamak için *durumu* parametresi işaretçi olmalıdır bir **_CrtMemState** ile doldurulmuştur yapısı [_CrtMemCheckpoint](crtmemcheckpoint.md) önce **_CrtMemDumpAllObjectsSince** çağrıldı. Zaman *durumu* olduğu **NULL**, döküm program yürütme başlangıcından işlev başlar.
+**_CrtMemDumpAllObjectsSince** , döküm işleminin nerede çalıştırılacağını belirlemekte kullanılacak *durum* parametresinin değerini kullanır. Belirtilen bir yığın durumundan dökme başlamak için *durum* parametresinin, **_CrtMemDumpAllObjectsSince** çağrılmadan önce [_CrtMemCheckpoint](crtmemcheckpoint.md) tarafından doldurulmuş bir **_CrtMemState** yapısına yönelik bir işaretçi olması gerekir. *Durum* **null**olduğunda, işlev program yürütme başlangıcından itibaren dökümü başlatır.
 
-Uygulama bir döküm kanca işlevini çağırarak yüklü olmadığını [_CrtSetDumpClient](crtsetdumpclient.md), ardından her **_CrtMemDumpAllObjectsSince** hakkında bilgi dökümlerini bir **_clıent_block** türü bloğu, uygulama tarafından sağlanan döküm işlevi de çağırır. Varsayılan olarak, iç C çalışma zamanı blokları (**_CRT_BLOCK**) bellek dökümü işlemlerinde dahil edilmez. [_CrtSetDbgFlag](crtsetdbgflag.md) işlevi, açmak için kullanılabilir **_CRTDBG_CHECK_CRT_DF** , bit **_crtDbgFlag** bu blokları içerecek şekilde. Ayrıca, olarak işaretlenmiş blokların serbest veya göz ardı (**_FREE_BLOCK**, **_ıgnore_block**) bellek dökümü içinde yer almaz.
+Uygulama, [_Crtsetdumpclient](crtsetdumpclient.md)' ı çağırarak bir döküm kancası işlevi yüklemiştir, **_CrtMemDumpAllObjectsSince** her seferinde bir **_client_block** türüyle ilgili bilgileri her zaman döker, uygulama tarafından sağlanan dökümü çağırır işlev de vardır. Varsayılan olarak, iç C çalışma zamanı blokları ( **_CRT_BLOCK**) bellek dökümü işlemlerine dahil edilmez. [_Crtsetdbgflag](crtsetdbgflag.md) işlevi, bu blokları dahil etmek Için **_Crtdbgflag** **_CRTDBG_CHECK_CRT_DF** bitini açmak üzere kullanılabilir. Ayrıca, serbest bırakılmış veya yoksayıldı ( **_Free_block**, **_IGNORE_BLOCK**) olarak işaretlenen bloklar bellek dökümünde yer alınmaz.
 
-Yığın durumu işlevleri hakkında daha fazla bilgi ve **_CrtMemState** yapısı için bkz: [yığın durumu raporlama işlevleri](/visualstudio/debugger/crt-debug-heap-details). Nasıl bellek blokları ayrılan, başlatılır ve taban yığının hata ayıklama sürümünde yönetilen hakkında daha fazla bilgi için bkz. [CRT hata ayıklama öbeği ayrıntıları](/visualstudio/debugger/crt-debug-heap-details).
+Yığın durumu işlevleri ve **_Crtmemstate** yapısı hakkında daha fazla bilgi için bkz. [yığın durum raporlama işlevleri](/visualstudio/debugger/crt-debug-heap-details). Bellek bloklarının taban yığının hata ayıklama sürümünde nasıl ayrıldığı, başlatıldığı ve yönetildiği hakkında daha fazla bilgi için bkz. [CRT hata ayıklama yığını ayrıntıları](/visualstudio/debugger/crt-debug-heap-details).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_CrtMemDumpAll-ObjectsSince**|\<crtdbg.h >|
+|**_CrtMemDumpAll-ObjectsSince**|\<Crtdbg. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 
-Hata ayıklama sürümleri [C çalışma zamanı kitaplıkları](../../c-runtime-library/crt-library-features.md) yalnızca.
+Yalnızca [C çalışma zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md) sürümlerini ayıklayın.
 
 ## <a name="example"></a>Örnek
 
-Nasıl kullanılacağını gösteren bir örnek **_CrtMemDumpAllObjectsSince**, bkz: [crt_dbg2](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/crt_dbg2).
+**_CrtMemDumpAllObjectsSince**'in nasıl kullanılacağına ilişkin bir örnek için bkz. [crt_dbg2](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/crt_dbg2).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

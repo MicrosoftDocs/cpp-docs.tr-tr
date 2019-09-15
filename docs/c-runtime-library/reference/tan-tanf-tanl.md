@@ -1,11 +1,11 @@
 ---
-title: Tan, tanf, tanl
+title: tan, tanf, tanl
 ms.date: 04/10/2018
-apiname:
+api_name:
 - tan
 - tanf
 - tanl
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - tan
 - tanf
@@ -32,14 +35,14 @@ helpviewer_keywords:
 - tanf function
 - trigonometric functions
 ms.assetid: 36cc0ce8-9c80-4653-b354-ddb3b378b6bd
-ms.openlocfilehash: 79a374142a914e8c2c7cf5c094d443b16e4bce88
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c79c56555e04c865b70d52a6b1a6e3da1ce94c87
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62258633"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70946896"
 ---
-# <a name="tan-tanf-tanl"></a>Tan, tanf, tanl
+# <a name="tan-tanf-tanl"></a>tan, tanf, tanl
 
 Tanjantı hesaplar.
 
@@ -63,22 +66,22 @@ Radyan cinsinden açı.
 
 ## <a name="return-value"></a>Dönüş değeri
 
-**Tan** işlevler tanjantını döndürür *x*. Varsa *x* büyüktür veya 263'e eşit veya daha az veya buna eşit -263, sonuçta anlam kaybına gerçekleşir.
+**Tan** işlevleri *x*tanjantını döndürür. *X* , 263 veya daha büyük ya da-263 ' den büyükse veya eşitse, sonuçta anlam kaybı meydana gelir.
 
-|Giriş|SEH özel durumu|**Matherr** özel durumu|
+|Giriş|SEH özel durumu|**Matherr** Duruma|
 |-----------|-------------------|-------------------------|
-|± QNAN, ONRAKİNİ BUL|yok|_DOMAIN|
-|INF ±|**GEÇERSİZ**|_DOMAIN|
+|± QNAN, IND|yok|_DOMAIN|
+|± INF|**GEÇERSİZ**|_DOMAIN|
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, aşırı yüklemesini çağırabilirsiniz **tan** alan ve getiren **float** veya **uzun** **çift** değerleri. C programında **tan** her zaman alan ve döndüren **çift**.
+Aşırı C++ yüklemeye izin verdiğinden,, **float** veya **Long** **Double** değerleri alıp döndüren **tan** aşırı yüklerini çağırabilirsiniz. C programında, **tan** her zaman **Double**öğesini alır ve döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli başlık (C)|Gerekli başlık (C++)|
+|Yordam|Gerekli üst bilgi (C)|Gerekli üst bilgiC++()|
 |-------------|---------------------|-|
-|**tan**, **tanf**, **tanl**|\<Math.h >|\<cmath > veya \<math.h >|
+|**tan**, **tanf**, **tanl**|\<Math. h >|\<cmath > veya \<Math. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

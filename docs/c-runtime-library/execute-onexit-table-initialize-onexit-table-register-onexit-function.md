@@ -1,13 +1,16 @@
 ---
 title: _execute_onexit_table, _initialize_onexit_table, _register_onexit_function
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _execute_onexit_table
 - _initialize_onexit_table
 - _register_onexit_function
-apilocation:
+api_location:
 - api-ms-win-crt-runtime-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _execute_onexit_table
 - process/_execute_onexit_table
@@ -20,16 +23,16 @@ helpviewer_keywords:
 - _initialize_onexit_table function
 - _register_onexit_function function
 ms.assetid: ad9e4149-d4ad-4fdf-aaaf-cf786fcb4473
-ms.openlocfilehash: 0090d5d1504f4320c122ae1e811e0af88cccdd2e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bf8c61e467796c7bfaedff6918bfbf598ada528e
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62343978"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70944382"
 ---
-# <a name="executeonexittable-initializeonexittable-registeronexitfunction"></a>_execute_onexit_table, _initialize_onexit_table, _register_onexit_function
+# <a name="_execute_onexit_table-_initialize_onexit_table-_register_onexit_function"></a>_execute_onexit_table, _initialize_onexit_table, _register_onexit_function
 
-Çıkış zaman çağrılacak rutinleri yönetir.
+Çıkış zamanında çağrılacak yordamları yönetir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -50,11 +53,11 @@ int _execute_onexit_table(
 
 #### <a name="parameters"></a>Parametreler
 
-*Tablo*<br/>
-[out içinde] Onexit işlevi tablosu işaretçisi.
+*tablosundan*<br/>
+[in, out] OnExit işlevi tablosuna yönelik işaretçi.
 
-*İşlevi*<br/>
-[in] Onexit işlevi tabloya eklenecek bir işlev işaretçisi.
+*çalışmayacaktır*<br/>
+'ndaki OnExit işlev tablosuna eklenecek bir işlevin işaretçisi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
@@ -62,21 +65,21 @@ Başarılı olursa 0 döndürür. Aksi takdirde, negatif bir değer döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu, altyapı uygulama ayrıntılarını C çalışma zamanı desteklemek için kullanılır ve doğrudan kodunuzdan çağrılmamalıdır işlevlerdir. C çalışma zamanı kullanan bir *onexit işlevi tablo* yapılan çağrılar tarafından kayıtlı işlevleri dizisini temsil etmek için `atexit`, `at_quick_exit`, ve `_onexit`. Onexit işlevi tablo veri yapısını C çalışma zamanı bir donuk uygulama ayrıntısı olduğunu; veri üyelerinin anlamını ve sırası değişebilir. Bunlar dış kod tarafından incelenmelidir değil.
+Bu işlevler, C çalışma zamanını desteklemek için kullanılan altyapı uygulama ayrıntılardır ve doğrudan kodunuzdan çağrılmamalıdır. C çalışma zamanı,, ve `_onexit`çağrıları `atexit` `at_quick_exit`tarafından kaydedilen işlevlerin dizisini temsil eden bir *OnExit işlev tablosu* kullanır. OnExit işlev tablosu veri yapısı, C çalışma zamanının donuk bir uygulama ayrıntısıyla yapılır; veri üyelerinin sırası ve anlamı değişebilir. Bunlar harici kod tarafından denetlenmemelidir.
 
-`_initialize_onexit_table` İşlevi onexit işlevi tablonun ilk değerini başlatır.  Bu işlev onexit işlevi tablo olarak geçirilmeden önce çağrılmalıdır `_register_onexit_function` veya `_execute_onexit_table`.
+`_initialize_onexit_table` İşlevi OnExit işlevi tablosunu ilk değerine başlatır.  OnExit işlev tablosu ya `_register_onexit_function` `_execute_onexit_table`da öğesine geçirilmeden önce bu işlevin çağrılması gerekir.
 
-`_register_onexit_function` İşlevi bir işlev onexit işlevi tablonun sonuna ekler.
+`_register_onexit_function` İşlevi OnExit işlevi tablosunun sonuna bir işlev ekler.
 
-`_execute_onexit_table` İşlevi onexit işlevi tablodaki tüm işlevleri yürütür, tablosunu temizler ve ardından döndürür. Çağrısı yapıldıktan sonra `_execute_onexit_table`, tablo, geçerli olmayan bir durumda; yapılan bir çağrıyla yeniden gerekir `_initialize_onexit_table` yeniden kullanılmadan önce.
+`_execute_onexit_table` İşlevi OnExit işlev tablosundaki tüm işlevleri yürütür, tabloyu temizler ve sonra döndürür. Bir çağrısından `_execute_onexit_table`sonra, tablo geçerli olmayan bir durumda; yeniden `_initialize_onexit_table` kullanılmadan önce bir çağrısıyla yeniden başlatılması gerekir.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|`_initialize_onexit_table function`, `_register_onexit_function`, `_execute_onexit_table`|C, C++: \<process.h >|
+|`_initialize_onexit_table function`, `_register_onexit_function`, `_execute_onexit_table`|C, C++: \<Process. h >|
 
-`_initialize_onexit_table`, `_register_onexit_function`, Ve `_execute_onexit_table` Microsoft'a özgü işlevlerdir. Uyumluluk bilgileri için bkz. [Uyumluluk](../c-runtime-library/compatibility.md).
+`_initialize_onexit_table`, `_register_onexit_function`Ve işlevleri`_execute_onexit_table` Microsoft 'a özgüdür. Uyumluluk bilgileri için bkz. [Uyumluluk](../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

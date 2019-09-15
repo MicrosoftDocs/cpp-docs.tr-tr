@@ -1,14 +1,17 @@
 ---
 title: Sayısal Değer İşlevleri Dizesi
 ms.date: 11/04/2016
-apilocation:
+api_location:
 - msvcr80.dll
 - msvcr110.dll
 - msvcr120.dll
 - msvcr100.dll
 - msvcr110_clr0400.dll
 - msvcr90.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _tcstoui64
 - _tcstoi64
@@ -16,12 +19,12 @@ helpviewer_keywords:
 - parsing, numeric strings
 - string conversion, to numeric values
 ms.assetid: 11cbd9ce-033b-4914-bf66-029070e7e385
-ms.openlocfilehash: 3f24b75c2fdb3aa0d84b16874d2d01f1cb96d4b9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b9d8218bd5a3151e17b7ac380bb86c85dac3e6a3
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62304559"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70944722"
 ---
 # <a name="string-to-numeric-value-functions"></a>Sayısal Değer İşlevleri Dizesi
 
@@ -37,56 +40,56 @@ ms.locfileid: "62304559"
 
 ## <a name="remarks"></a>Açıklamalar
 
-Her işlev **strtod** ailesi null ile sonlandırılmış bir dize sayısal bir değere dönüştürür. Aşağıdaki tabloda kullanabileceğiniz işlevler listelenmiştir.
+**Strtod** ailesindeki her bir işlev, null ile sonlandırılmış bir dizeyi sayısal bir değere dönüştürür. Kullanılabilir işlevler aşağıdaki tabloda listelenmiştir.
 
 |İşlev|Açıklama|
 |--------------|-----------------|
-|`strtod`|Çift duyarlıklı kayan noktalı değeri dize dönüştürme|
-|`strtol`|Dizeye uzun tamsayı dönüştürün|
-|`strtoul`|Dizeyi işaretsiz uzun tamsayı dönüştürme|
-|`_strtoi64`|64 bit dize dönüştürme `__int64` tamsayı|
-|`_strtoui64`|Dönüştürme dizesi 64-bit işaretsiz `__int64` tamsayı|
+|`strtod`|Dizeyi çift duyarlıklı kayan noktalı değere Dönüştür|
+|`strtol`|Dizeyi Long Integer 'a Dönüştür|
+|`strtoul`|Dizeyi işaretsiz uzun tamsayıya Dönüştür|
+|`_strtoi64`|Dizeyi 64-bit `__int64` tamsayıya Dönüştür|
+|`_strtoui64`|Dizeyi işaretsiz 64-bit `__int64` tamsayıya Dönüştür|
 
-`wcstod`, `wcstol`, `wcstoul`, ve `_wcstoi64` geniş karakterli sürümleridir `strtod`, `strtol`, `strtoul`, ve `_strtoi64`sırasıyla. Bu geniş karakter işlevlerin her biri için dize bağımsız değişkeni geniş karakterli bir dizedir; Her işlev tek baytlık karakterlerdir çözümlemesiyle Aksi halde aynı şekilde davranır.
+`wcstod``wcstol` `strtod` `strtol` ,,`_strtoi64`ve, sırasıyla,,, ve ' nin `strtoul`geniş karakterli sürümleridir. `_wcstoi64` `wcstoul` Bu geniş karakter işlevlerinin her birine yönelik dize bağımsız değişkeni, geniş karakterli bir dizedir; Her işlev, başka bir şekilde tek baytlık karakteriyle aynı şekilde davranır.
 
-`strtod` İşlevi iki bağımsız değişkeni alır: ilk giriş dize ve karakter işaretçisine ikinci sona erdiği dönüştürme işlemi. `strtol`, `strtoul`, **_strtoi64** ve **_strtoui64** dönüştürme işleminde kullanılacak sayı tabanı olarak üçüncü bir bağımsız değişken alın.
+`strtod` İşlev iki bağımsız değişkeni alır: ilki giriş dizesidir ve ikinci karakter işaretçisi, dönüştürme işlemini sonlandırır. `strtol`, `strtoul`, **_strtoi64** ve **_strtoui64** , dönüştürme işleminde kullanılacak sayı temeli olarak üçüncü bir bağımsız değişken alır.
 
-Giriş dizesi belirtilen türde bir sayısal değer olarak yorumlanabilecek bir karakter dizisi ' dir. Her işlev bir sayının parçası olarak tanıyamaz ilk karakterde dizesini okumayı durdurur. Bu sondaki boş karakter olabilir. İçin `strtol`, `strtoul`, `_strtoi64`, ve `_strtoui64`, bu Sonlandırıcı karakter de büyük veya ona eşit kullanıcı tarafından sağlanan temel ilk sayısal karakter olabilir.
+Giriş dizesi, belirtilen türden sayısal bir değer olarak yorumlanabilen bir karakter dizisidir. Her işlev, bir sayının parçası olarak tanıyamadığı ilk karakterde dizeyi okumayı durduruyor. Bu, Sonlandırıcı null karakteri olabilir. , `strtol` ,`strtoul`Ve için,busonlandırmakarakteriKullanıcıtarafındansağlanansayıtabanındandahabüyükveyabunaeşitolanilksayısalkarakterdeolabilir.`_strtoui64` `_strtoi64`
 
-Kullanıcı tarafından sağlanan işaretçi dönüştürme son karakter olarak ayarlanmazsa, **NULL** çağrı zaman taramayı durduran karaktere bir işaretçi var. Bunun yerine depolanır. Dönüştürme gerçekleştirilemezse (geçerli hiç basamak bulunamamış veya geçersiz bir taban belirtilmişse), dize işaretçisini değerini bu adreste depolanır.
+Bir dönüştürme bitiş karakteri için Kullanıcı tarafından sağlanan işaretçi, çağrı zamanında **null** olarak ayarlanmamışsa, taramayı durduran karaktere yönelik bir işaretçi burada depolanır. Hiçbir dönüştürme gerçekleştirilemiyorsa (geçerli basamak bulunamadı veya geçersiz bir taban belirtilmişse), dize işaretçisinin değeri o adreste saklanır.
 
-`strtod` Aşağıdaki formun dizesi bekliyor:
+`strtod`aşağıdaki biçimde bir dize bekler:
 
-[*whitespace*] [*sign*] [`digits`] [**.**`digits`] [ {**d** &#124; **D** &#124; **e** &#124; **E**}[*sign*]`digits`]
+[*boşluk*] [*imzala*] [`digits`] [ **.** `digits` &#124; &#124; &#124; ] [{d d e e} [*oturum]]* `digits`
 
-A *boşluk* yoksayılan boşluk veya sekme karakterlerinden oluşabilir *oturum* ya da artı (**+**) veya eksidir (**-**); ve `digits` bir veya daha fazla ondalık basamaktır. Herhangi bir basamak taban karakterden önce görünüyorsa, en az bir taban karakterden sonra yer almalıdır. Ondalık basamak bir tanıtıcı harften oluşan bir üs gelebilir (**d**, **D**, **e**, veya **E**) ve isteğe bağlı olarak işaretli tamsayı. Üstel bir parça ya da bir taban karakter görünürse, taban karakterin dizedeki son basamağı izlediği varsayılır. Bu forma uymayan ilk karakter taramayı durdurur.
+Boşluk veya sekme karakterlerinden oluşan bir *boşluk* , yoksayılan karakter içerebilir; *işareti* artı ( **+** ) ya da eksi ( **-** ); ve `digits` bir veya daha fazla ondalık basamak. Taban karakterinden önce bir basamak görünmezse, en az bir sayı, taban karakterinden sonra görünmelidir. Ondalık basamakların ardından, giriş harfinden (**d**, **d**, **e**veya **e**) ve isteğe bağlı olarak işaretli bir tamsayıdan oluşan bir üs gelebilir. Ne bir üs bölümü ne de bir taban karakteri görünmüyorsa, dizedeki son basamağı izlemek için bir taban karakteri varsayılır. Bu forma uymayan ilk karakter taramayı durduruyor.
 
-`strtol`, `strtoul`, `_strtoi64`, Ve `_strtoui64` işlevleri beklediğiniz aşağıdaki formun dizesi:
+,, Ve işlevleri`_strtoui64` aşağıdaki biçimde bir dize bekler: `strtoul` `strtol` `_strtoi64`
 
-[*whitespace*] [{**+** &#124; **-**}] [**0** [{ **x** &#124; **X** }]] [`digits`]
+[*boşluk*] [{ **+** &#124; `digits` &#124; }] [0 [{x x}]] [] **-**
 
-Temel bağımsız değişkenini 2 ile 36 arasında varsa sayının tabanı kullanılır. 0 ise, ilk karakterleri için dönüştürme son işaretçi tarafından başvurulan tabanı belirlemek için kullanılır. İlk karakter 0 ise ve ikinci karakter 'x' veya 'X' değilse, dize sekizlik bir tamsayı olarak yorumlanır; Aksi takdirde, bir ondalık sayı olarak yorumlanır. İlk karakter '0' ise ve ikinci karakter 'x' veya 'X' dize onaltılık bir tamsayı olarak yorumlanır. İlk karakter ' 1'-' 9' ise, dize ondalık bir tamsayı olarak yorumlanır. Harfler 'bir'-'z' (ya da 'A'-'Z'), 10-35 arasında değerler atanır; yalnızca atanan değerleri olan harf küçüktür *temel* izin verilir. `strtoul` ve `_strtoui64` artı izin ver (**+**) veya eksidir (**-**) oturum önekinin; baştaki eksi işareti dönüş değerine değilleme uygulandığını gösterir.
+Temel bağımsız değişken 2 ile 36 arasındaysa, sayının temeli olarak kullanılır. 0 ise, temeli belirlemekte, dönüştürme sonu işaretçisi tarafından başvurulan başlangıç karakterleri kullanılır. İlk karakter 0 ise ve ikinci karakter ' x ' veya ' X ' değilse, dize sekizlik bir tamsayı olarak yorumlanır; Aksi takdirde, ondalık sayı olarak yorumlanır. İlk karakter ' 0 ' ise ve ikinci karakter ' x ' veya ' X ' ise, dize onaltılık tamsayı olarak yorumlanır. İlk karakter ' 1 '-' 9 ' arasında ise, dize bir ondalık tamsayı olarak yorumlanır. ' A '-' z ' (veya ' A '-' Z ' arasındaki), 10 ile 35 arasında değerler atanır; yalnızca atanmış değerlerine *tabandan* küçük olan harflerine izin verilir. `strtoul`ve `_strtoui64` artı ( **+** ) ya da eksi ( **-** ) işareti ön ekine izin verir; baştaki eksi işareti, dönüş değerinin nelenmiş olduğunu gösterir.
 
-Çıkış değeri ayarından etkilenir `LC_NUMERIC` yerel ayarının kategori ayarına; bkz: [setlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) daha fazla bilgi için. Bu işlevlerin sürümleri **_l** soneki geçerli yerel ayarı kullanır bu yerel ayara bağlı davranışı için; sürümleriyle **_l** sonekine bunların yerel ayar parametresini kullanmalarıdır Bunun yerine iletilmiş.
+Çıkış değeri yerel ayarın `LC_NUMERIC` kategori ayarı ayarından etkilenir; daha fazla bilgi için bkz. [setlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) . **_L** sonekine sahip olmayan bu işlevlerin sürümleri, yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır; **_l** sonekine sahip sürümler, bunun yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır.
 
-Bu işlevler tarafından döndürülen değer, bir taşma veya yetersiz gelme neden olduğu veya dönüştürme mümkün olmadığı durumlarda, gösterildiği gibi özel durum değeri döndürülür:
+Bu işlevler tarafından döndürülen değer taşma veya yetersiz durumuna neden olduğunda ya da dönüştürme mümkün olmadığında, özel durum değerleri gösterildiği gibi döndürülür:
 
 |İşlev|Koşul|Döndürülen değer|
 |--------------|---------------|--------------------|
-|`strtod`|taşma|+/- `HUGE_VAL`|
-|`strtod`|Underflow veya dönüştürme|0|
-|`strtol`|+ Taşması|**LONG_MAX**|
-|`strtol`|-Overflow|**LONG_MIN**|
-|`strtol`|Underflow veya dönüştürme|0|
-|`_strtoi64`|+ Taşması|**_I64_MAX**|
-|`_strtoi64`|-Overflow|**_I64_MIN**|
-|`_strtoi64`|Hiçbir dönüştürme|0|
-|`_strtoui64`|taşma|**_UI64_MAX**|
-|`_strtoui64`|Hiçbir dönüştürme|0|
+|`strtod`|Taşma|+/- `HUGE_VAL`|
+|`strtod`|Yetersiz veya dönüştürme yok|0|
+|`strtol`|+ Taşma|**LONG_MAX**|
+|`strtol`|-Taşma|**LONG_MIN**|
+|`strtol`|Yetersiz veya dönüştürme yok|0|
+|`_strtoi64`|+ Taşma|**_I64_MAX**|
+|`_strtoi64`|-Taşma|**_I64_MIN**|
+|`_strtoi64`|Dönüştürme yok|0|
+|`_strtoui64`|Taşma|**_UI64_MAX**|
+|`_strtoui64`|Dönüştürme yok|0|
 
-**_I64_MAX**, _**I64_MIN**, ve **_UI64_MAX** SINIRLARI tanımlanır. H
+**_I64_MAX**, _**I64_MIN**ve **_Uı64_MAX** , limitlerde tanımlanmıştır. Olsun.
 
-`wcstod`, `wcstol`, `wcstoul`, `_wcstoi64`, ve `_wcstoui64` geniş karakterli sürümleridir `strtod`, `strtol`, `strtoul`, `_strtoi64`, ve `_strtoui64`sırasıyla; bir end-ın-dönüştürme işaretçisi Bu geniş karakter işlevlerin her biri bağımsız değişken geniş karakterli bir dizedir. Aksi takdirde, kendisine tek baytlık karakterlerdir karşılık gelen geniş karakter bu işlevlerin her biri aynı şekilde davranır.
+`wcstod``wcstol` ,,`strtoul`, ve ,sırasıyla,`strtol` ,,`_strtoui64`ve, `strtod`,,, ve ' nin geniş karakterli sürümleridir `_strtoi64` `_wcstoui64` `wcstoul` `_wcstoi64` Bu geniş karakter işlevlerinin her birine dönüştürme sonu bağımsız değişkeni, geniş karakterli bir dizedir. Aksi takdirde, bu geniş karakter işlevlerinin her biri, tek baytlık karakter karşılığına benzer şekilde davranır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

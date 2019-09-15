@@ -1,9 +1,9 @@
 ---
 title: _CrtDoForAllClientObjects
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _CrtDoForAllClientObjects
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -14,7 +14,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _CrtDoForAllClientObjects
 - CrtDoForAllClientObjects
@@ -23,16 +26,16 @@ helpviewer_keywords:
 - _CrtDoForAllClientObjects function
 - CrtDoForAllClientObjects function
 ms.assetid: d0fdb835-3cdc-45f1-9a21-54208e8df248
-ms.openlocfilehash: 86268bd9ac49c8ea27f715404236bcb9291f5d8b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4626df0db1956efd26ee267cb8cacf8ea4a4570c
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62339725"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70942524"
 ---
-# <a name="crtdoforallclientobjects"></a>_CrtDoForAllClientObjects
+# <a name="_crtdoforallclientobjects"></a>_CrtDoForAllClientObjects
 
-Tüm uygulama tarafından sağlanan bir işlevi çağırır **_clıent_block** (yalnızca hata ayıklama sürümü) yığınındaki türler.
+Yığındaki tüm **_Client_block** türleri için uygulama tarafından sağlanan bir işlev çağırır (yalnızca hata ayıklama sürümü).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -45,35 +48,35 @@ void _CrtDoForAllClientObjects(
 
 ### <a name="parameters"></a>Parametreler
 
-*pfn*<br/>
-Uygulama tarafından sağlanan işlev geri çağırma işlevi işaretçisi. İlk parametre olarak bu işlev verileri gösterir. İkinci parametre çağrısına geçirilen içerik işaretçisidir **_CrtDoForAllClientObjects**.
+*PFN*<br/>
+Uygulama tarafından sağlanan işlev geri çağırma işlevine yönelik işaretçi. Bu işlevin ilk parametresi, verileri işaret eder. İkinci parametre, **_Crtdoforallclientobjects**çağrısına geçirilen bağlam işaretçisidir.
 
-*Bağlam*<br/>
-Uygulama tarafından sağlanan bağlamı uygulama tarafından sağlanan işleve yönelik işaretçi.
+*bağlam*<br/>
+Uygulama tarafından sağlanan işleve geçirilecek uygulama tarafından sağlanan bağlam işaretçisi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_CrtDoForAllClientObjects** işlevi ile bellek blokları yığının bağlantılı liste arar **_clıent_block** türü ve çağrılarını bu tür bir blok, uygulama tarafından sağlanan işlev bulundu. Bulunan blok ve *bağlam* parametresi, uygulama tarafından sağlanan işlevine bağımsız değişken olarak geçirilir. Hata ayıklama sırasında bir uygulama belirli bir ayırma grubunu hata ayıklama yığın işlevleri bellek ayırmak için açıkça çağırmak ve blokları atanması belirterek izleyebilirsiniz **_clıent_block** blok türü. Bu blokları ayrı ayrı izlenir ve farklı sızıntı algılama ve bellek durumu bildiren sırasında bildirilir.
+**_Crtdoforallclientobjects** işlevi, yığının bağlantılı listesinde **_Client_block** türüyle bellek blokları arar ve bu türden bir blok bulunduğunda uygulama tarafından sağlanan işlevi çağırır. Bulunan blok ve *bağlam* parametresi, uygulama tarafından sağlanan işleve bağımsız değişken olarak geçirilir. Hata ayıklama sırasında bir uygulama, belleği ayırmak için hata ayıklama yığın işlevlerini açıkça çağırarak ve blokların **_Client_block** blok türüne atanmasını belirterek belirli bir ayırma grubunu izleyebilir. Bu bloklar daha sonra, sızıntı algılama ve bellek durumu raporlama sırasında ayrı olarak izlenebilir ve farklı şekilde raporlanır.
 
-Varsa **_CRTDBG_ALLOC_MEM_DF** bit alanı [_crtDbgFlag](../../c-runtime-library/crtdbgflag.md) bayrağı açık değilse, **_CrtDoForAllClientObjects** hemen döndürür. Zaman [_DEBUG](../../c-runtime-library/debug.md) tanımlı değil, çağrılar **_CrtDoForAllClientObjects** ön işleme sırasında kaldırılır.
+[_Crtdbgflag](../../c-runtime-library/crtdbgflag.md) bayrağının **_Crtdbg_alloc_mem_df** bit alanı açık değilse, **_Crtdoforallclientobjects** hemen döndürülür. [_Hata ayıklama](../../c-runtime-library/debug.md) tanımlanmadığında, **_Crtdoforallclientobjects** çağrıları ön işleme sırasında kaldırılır.
 
-Hakkında daha fazla bilgi için **_clıent_block** yazın ve diğer hata ayıklama işlevleri tarafından kullanılabilmesi için bkz [hata ayıklama öbek üzerindeki blokları türleri](/visualstudio/debugger/crt-debug-heap-details). Nasıl bellek blokları ayrılan, başlatılır ve taban yığının hata ayıklama sürümünde yönetilen hakkında daha fazla bilgi için bkz: [CRT hata ayıklama öbeği ayrıntıları](/visualstudio/debugger/crt-debug-heap-details).
+**_Client_block** türü ve diğer hata ayıklama işlevleri tarafından nasıl kullanılabileceği hakkında daha fazla bilgi için bkz. [hata ayıklama yığınındaki blok türleri](/visualstudio/debugger/crt-debug-heap-details). Bellek bloklarının taban yığının hata ayıklama sürümünde nasıl ayrıldığı, başlatıldığı ve yönetildiği hakkında bilgi için bkz. [CRT hata ayıklama yığını ayrıntıları](/visualstudio/debugger/crt-debug-heap-details).
 
-Varsa *pfn* olduğu **NULL**, açıklanan şekilde geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse [errno _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) ayarlanır **EINVAL** ve işlev döndürür.
+*PFN* **null**ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) **EINVAL** olarak ayarlanır ve işlev döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_CrtDoForAllClientObjects**|\<crtdbg.h >, \<errno.h >|
+|**_CrtDoForAllClientObjects**|\<Crtdbg. h >, \<errno. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
-**Kitaplıklar:** Sürümleri, Evrensel C çalışma zamanı kitaplıklarının yalnızca hata ayıklama.
+**Kütüphaneler** Yalnızca evrensel C çalışma zamanı kitaplıklarının hatalarını ayıklayın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Hata Ayıklama Yordamları](../../c-runtime-library/debug-routines.md)<br/>
 [_CrtSetDbgFlag](crtsetdbgflag.md)<br/>
-[Öbek durumu raporlama işlevleri](/visualstudio/debugger/crt-debug-heap-details)<br/>
+[Yığın durumu raporlama Işlevleri](/visualstudio/debugger/crt-debug-heap-details)<br/>
 [_CrtReportBlockType](crtreportblocktype.md)<br/>

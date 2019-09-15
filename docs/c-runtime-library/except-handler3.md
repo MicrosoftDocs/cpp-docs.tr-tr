@@ -1,9 +1,9 @@
 ---
 title: _except_handler3
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _except_handler3
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr90.dll
 - msvcr80.dll
@@ -11,7 +11,10 @@ apilocation:
 - msvcr120.dll
 - msvcr100.dll
 - msvcr110.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _except_handler3
 - except_handler3
@@ -19,16 +22,16 @@ helpviewer_keywords:
 - _except_handler3 function
 - except_handler3 function
 ms.assetid: b0c64898-0ae5-48b7-9724-80135a0813e2
-ms.openlocfilehash: 0dfe007d7b444401accbf547674f96f7f7d54ac1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5e1dbab97e0f193d4ff59c19229d2c00e2cd7d6a
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62289964"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70944477"
 ---
-# <a name="excepthandler3"></a>_except_handler3
+# <a name="_except_handler3"></a>_except_handler3
 
-İç CRT işlevi. Geçerli özel durumu işlemek için uygun özel durum işleyicisi bulmak için framework tarafından kullanılır.
+İç CRT işlevi. Geçerli özel durumu işlemek için uygun özel durum işleyicisini bulmak için bir Framework tarafından kullanılır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -43,25 +46,25 @@ int _except_handler3(
 
 #### <a name="parameters"></a>Parametreler
 
-*exceptıon_record*<br/>
-[in] Özel durum hakkında bilgi sağlar.
+*exception_record*<br/>
+'ndaki Özel durum hakkında bilgi.
 
-*Kayıt*<br/>
-[in] Özel durum işleyicisi bulmak için kapsam tablo belirten kayıt kullanılmalıdır.
+*kaydını*<br/>
+'ndaki Özel durum işleyicisini bulmak için hangi kapsam tablosunun kullanılması gerektiğini belirten kayıt.
 
-*Bağlam*<br/>
-[in] Ayrılmış.
+*bağlam*<br/>
+'ndaki Ayrılamadı.
 
 *Dağıtıcı*<br/>
-[in] Ayrılmış.
+'ndaki Ayrılamadı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bir özel durum oluşturmayabilir, döndürür `DISPOSITION_DISMISS`. Özel durum bir düzey yukarı kapsülleyerek özel durum işleyicilerine geçirilmelidir döndürür `DISPOSITION_CONTINUE_SEARCH`.
+Bir özel durum kapatıldıktan sonra, döndürür `DISPOSITION_DISMISS`. Özel durumun kapsülleme özel durum işleyicilerine bir düzey geçirilmesi gerekiyorsa, döndürür `DISPOSITION_CONTINUE_SEARCH`.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu yöntemin uygun özel durum işleyicisi bulunursa, özel durum işleyicisine geçirir. Bu durumda, bu yöntemi çağıran koda döndürmüyor ve dönüş değeri önemli değildir.
+Bu yöntem uygun bir özel durum işleyicisi bulursa, özel durumu işleyiciye geçirir. Bu durumda, bu yöntem çağıran koda geri dönmez ve dönüş değeri ilgisiz olur.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

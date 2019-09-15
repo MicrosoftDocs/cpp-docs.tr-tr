@@ -1,14 +1,17 @@
 ---
 title: strcoll İşlevleri
 ms.date: 11/04/2016
-apilocation:
+api_location:
 - msvcr120.dll
 - msvcr110_clr0400.dll
 - msvcr90.dll
 - msvcr80.dll
 - msvcr100.dll
 - msvcr110.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - strcoll
 helpviewer_keywords:
@@ -17,40 +20,40 @@ helpviewer_keywords:
 - strcoll functions
 - strings [C++], comparing by code page
 ms.assetid: c09eeff3-8aba-4cfb-a524-752436d85573
-ms.openlocfilehash: 2acfaafbe15f065dbac924ce72a5ca3a5275537b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c63a130cee6913006fff2ed5568c41cc4fdeac3c
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62267828"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70944894"
 ---
 # <a name="strcoll-functions"></a>strcoll İşlevleri
 
-Her biri `strcoll` ve `wcscoll` işlevleri göre iki dizeyi karşılaştırır `LC_COLLATE` kategori ayarı yerel ayar kod sayfası şu anda kullanımda. Her biri `_mbscoll` işlevleri şu anda çok baytlı kod sayfasına göre iki dizeyi karşılaştırır. Kullanım `coll` karşılaştırması için mevcut kod sayfasında karakter kümesi sırası ve lexicographic karakter sırası arasında bir fark yoktur ve bu fark, dize karşılaştırmaları için işlevleri. Buna karşılık gelen kullanın `cmp` dize eşitlik için test etmek için işlevleri.
+Ve `strcoll` `LC_COLLATE` işlevlerinin her biri, şu anda kullanımda olan yerel ayar kodu sayfasının kategori ayarına göre iki dizeyi karşılaştırır. `wcscoll` `_mbscoll` İşlevlerin her biri, şu anda kullanımda olan çok baytlı kod sayfasına göre iki dizeyi karşılaştırır. Geçerli kod sayfasındaki karakter kümesi sırası ve lexicographic karakter sırası arasında bir fark olduğunda dize karşılaştırmaları için işlevlerikullanınvebufarkkarşılaştırmaaçısındanilginin.`coll` Yalnızca dize eşitlik `cmp` için test etmek üzere ilgili işlevleri kullanın.
 
 ### <a name="strcoll-functions"></a>strcoll İşlevleri
 
 |SBCS|Unicode|MBCS|Açıklama|
 |----------|-------------|----------|-----------------|
-|[strcoll](../c-runtime-library/reference/strcoll-wcscoll-mbscoll-strcoll-l-wcscoll-l-mbscoll-l.md)|[wcscoll](../c-runtime-library/reference/strcoll-wcscoll-mbscoll-strcoll-l-wcscoll-l-mbscoll-l.md)|[_mbscoll](../c-runtime-library/reference/strcoll-wcscoll-mbscoll-strcoll-l-wcscoll-l-mbscoll-l.md)|İki dizeyi collate|
-|[_stricoll](../c-runtime-library/reference/stricoll-wcsicoll-mbsicoll-stricoll-l-wcsicoll-l-mbsicoll-l.md)|[_wcsicoll](../c-runtime-library/reference/stricoll-wcsicoll-mbsicoll-stricoll-l-wcsicoll-l-mbsicoll-l.md)|[_mbsicoll](../c-runtime-library/reference/stricoll-wcsicoll-mbsicoll-stricoll-l-wcsicoll-l-mbsicoll-l.md)|Collate iki dizeyi (büyük küçük harfe duyarlı)|
-|[_strncoll](../c-runtime-library/reference/strncoll-wcsncoll-mbsncoll-strncoll-l-wcsncoll-l-mbsncoll-l.md)|[_wcsncoll](../c-runtime-library/reference/strncoll-wcsncoll-mbsncoll-strncoll-l-wcsncoll-l-mbsncoll-l.md)|[_mbsncoll](../c-runtime-library/reference/strncoll-wcsncoll-mbsncoll-strncoll-l-wcsncoll-l-mbsncoll-l.md)|İlk collate `count` iki dizenin karakter|
-|[_strnicoll](../c-runtime-library/reference/strnicoll-wcsnicoll-mbsnicoll-strnicoll-l-wcsnicoll-l-mbsnicoll-l.md)|[_wcsnicoll](../c-runtime-library/reference/strnicoll-wcsnicoll-mbsnicoll-strnicoll-l-wcsnicoll-l-mbsnicoll-l.md)|[_mbsnicoll](../c-runtime-library/reference/strnicoll-wcsnicoll-mbsnicoll-strnicoll-l-wcsnicoll-l-mbsnicoll-l.md)|İlk collate `count` (büyük-küçük harf duyarsız) iki dizenin karakter|
+|[strcoll](../c-runtime-library/reference/strcoll-wcscoll-mbscoll-strcoll-l-wcscoll-l-mbscoll-l.md)|[wcscoll](../c-runtime-library/reference/strcoll-wcscoll-mbscoll-strcoll-l-wcscoll-l-mbscoll-l.md)|[_mbscoll](../c-runtime-library/reference/strcoll-wcscoll-mbscoll-strcoll-l-wcscoll-l-mbscoll-l.md)|İki dizeyi harmanlama|
+|[_stricoll](../c-runtime-library/reference/stricoll-wcsicoll-mbsicoll-stricoll-l-wcsicoll-l-mbsicoll-l.md)|[_wcsicoll](../c-runtime-library/reference/stricoll-wcsicoll-mbsicoll-stricoll-l-wcsicoll-l-mbsicoll-l.md)|[_mbsicoll](../c-runtime-library/reference/stricoll-wcsicoll-mbsicoll-stricoll-l-wcsicoll-l-mbsicoll-l.md)|İki dizeyi Harmanla (büyük/küçük harfe duyarsız)|
+|[_strncoll](../c-runtime-library/reference/strncoll-wcsncoll-mbsncoll-strncoll-l-wcsncoll-l-mbsncoll-l.md)|[_wcsncoll](../c-runtime-library/reference/strncoll-wcsncoll-mbsncoll-strncoll-l-wcsncoll-l-mbsncoll-l.md)|[_mbsncoll](../c-runtime-library/reference/strncoll-wcsncoll-mbsncoll-strncoll-l-wcsncoll-l-mbsncoll-l.md)|İki dizenin `count` ilk karakterlerini Harmanla|
+|[_strnicoll](../c-runtime-library/reference/strnicoll-wcsnicoll-mbsnicoll-strnicoll-l-wcsnicoll-l-mbsnicoll-l.md)|[_wcsnicoll](../c-runtime-library/reference/strnicoll-wcsnicoll-mbsnicoll-strnicoll-l-wcsnicoll-l-mbsnicoll-l.md)|[_mbsnicoll](../c-runtime-library/reference/strnicoll-wcsnicoll-mbsnicoll-strnicoll-l-wcsnicoll-l-mbsnicoll-l.md)|İki dizenin `count` ilk karakterini Harmanla (büyük/küçük harf duyarsız)|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevlerin tek baytlı karakter (SBCS) sürümleri (`strcoll`, `stricoll`, `_strncoll`, ve `_strnicoll`) karşılaştırma `string1` ve `string2` göre `LC_COLLATE` geçerli yerel ayarının kategori ayarına. Bu işlevler, ilgili farklı `strcmp` , İşlevler `strcoll` işlevleri harmanlama dizileri sağlayan yerel ayar kod sayfası bilgilerini kullanın. Karakter kümesi sırası ve lexicographic karakter sırası farklı, yerel dize karşılaştırmaları için `strcoll` İşlevler, karşılık gelen yerine kullanılmalıdır `strcmp` işlevleri. Daha fazla bilgi için `LC_COLLATE`, bkz: [setlocale](../c-runtime-library/reference/setlocale-wsetlocale.md).
+`strcoll`Bu işlevlerin (, `stricoll`, `_strncoll` `string1` ve `_strnicoll`) tek baytlı karakter (SBCS) sürümleri, geçerli yerel ayarın `LC_COLLATE` kategori ayarına `string2` göre karşılaştırılır. Bu işlevler, `strcoll` işlevlerin harmanlama dizileri `strcmp` sağlayan yerel ayar kod sayfası bilgilerini kullanmasına karşılık gelen işlevlerden farklıdır. Karakter kümesi sırası ve lexicographic karakter sırasının farklı olduğu yerel ayarlarda dize karşılaştırmaları için, `strcoll` işlevler karşılık gelen `strcmp` işlevler yerine kullanılmalıdır. Hakkında `LC_COLLATE`daha fazla bilgi için bkz. [setlocale](../c-runtime-library/reference/setlocale-wsetlocale.md).
 
-Bazı kod sayfaları ve ilgili karakter kümeleri için karakter kümesindeki karakterlerin sırası sözlük karakter sırasından farklı olabilir. "C" yerel ayarında, bu durum geçerli değildir: ASCII karakter kümesindeki karakter sırası karakterlerin sözlük sıralamasına göre ile aynıdır. Ancak, bazı Avrupa kod sayfalarında, örneğin, karakter 'bir' (değer 0x61) karakter kümesi 'ä ''yı (değer 0xE4) karakter, karakter önündeki 'ä' önce gelen karakterin 'a' lexicographically. Böyle bir örnekte lexicographic karşılaştırmasını gerçekleştirmek için kullanın `strcoll` yerine `strcmp`. Alternatif olarak, `strxfrm` sonra özgün dizeleri kullanmak `strcmp` elde edilen dizeler.
+Bazı kod sayfaları ve karşılık gelen karakter kümeleri için, karakter kümesindeki karakterlerin sırası lexicographic karakter sıraından farklı olabilir. "C" yerel ayarında bu durum böyle değildir: ASCII karakter kümesindeki karakterlerin sırası karakterlerin lexicographic sırasıyla aynıdır. Ancak, bazı Avrupa kod sayfalarında, örneğin, ' a ' karakteri (0x61) karakter kümesindeki ' ä ' (değer 0xE4) karakterinden önce gelir, ancak ' ä ' karakteri ' a ' lexıgrafik karakterinden önce gelir. Böyle bir örnek içinde bir lexıgraphic karşılaştırması gerçekleştirmek için `strcoll` `strcmp`yerine kullanın. Alternatif olarak, `strxfrm` özgün dizeler üzerinde öğesini kullanabilir ve sonra elde edilen `strcmp` dizeler üzerinde kullanabilirsiniz.
 
-`strcoll`, `stricoll`, `_strncoll`, ve `_strnicoll` geniş karakter (Unicode)'dekiler gibi çok baytlı karakter dizelerini şu anda kullanımda yerel ayar kod sayfasına göre otomatik olarak işler. Çok baytlı karakter (MBCS) bu işlevlerin sürümleri, ancak şu anda çok baytlı kod sayfasına göre karakter temelinde dizeler collate.
+`strcoll`,,, ve`_strnicoll` çok baytlı karakter dizelerini kullanımda olan yerel ayar kodu sayfasına göre otomatik olarak işler, geniş karakter (Unicode) karşılıklarına `stricoll`göre. `_strncoll` Bununla birlikte, bu işlevlerin çok baytlı karakter (MBCS) sürümleri, kullanılmakta olan çok baytlı kod sayfasına göre dizeleri bir karakter temelinde harmanler.
 
-Çünkü `coll` işlevleri ise dizeleri karşılaştırma için sözlüksel olarak collate `cmp` işlevleri yalnızca dize eşitliği test `coll` işlevleri karşılık gelen daha yavaş `cmp` sürümleri. Bu nedenle, `coll` yalnızca mevcut kod sayfasında karakter kümesi sırası ve lexicographic karakter sırası arasında bir fark olduğunda ve bu fark dize karşılaştırması için ilgilendirir İşlevler'in kullanılması gerekir.
+İşlevler, dizeleri karşılaştırma için bir şekilde harmanladı, `cmp` ancak işlevler dize eşitlik `coll` için test ederken, işlevler karşılık gelen `cmp` sürümlerden çok daha yavaştır. `coll` Bu nedenle, `coll` işlevleri yalnızca, geçerli kod sayfasında karakter kümesi sırası ve lexicographic karakter sırası arasında bir fark olduğunda kullanılmalıdır ve bu fark dize karşılaştırması için ilginin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [locale](../c-runtime-library/locale.md)<br/>
-[Dize düzenlemesi](../c-runtime-library/string-manipulation-crt.md)<br/>
+[Dize düzenleme](../c-runtime-library/string-manipulation-crt.md)<br/>
 [localeconv](../c-runtime-library/reference/localeconv.md)<br/>
 [_mbsnbcoll, _mbsnbcoll_l, _mbsnbicoll, _mbsnbicoll_l](../c-runtime-library/reference/mbsnbcoll-mbsnbcoll-l-mbsnbicoll-mbsnbicoll-l.md)<br/>
 [setlocale, _wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md)<br/>

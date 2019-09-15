@@ -1,11 +1,11 @@
 ---
 title: _control87, _controlfp, __control87_2
 ms.date: 08/29/2019
-apiname:
+api_name:
 - _control87
 - _controlfp
 - __control87_2
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-runtime-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _control87
 - __control87_2
@@ -38,12 +41,12 @@ helpviewer_keywords:
 - EM_AMBIGUOUS
 - control87_2 function
 ms.assetid: 0d09729d-d9a0-43d6-864c-43ff25e7e0c5
-ms.openlocfilehash: 75b2870543ec3ddd20d445a492ad4270b91e80d7
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 15700a5dabfbc3f8915e251bd8b9270f8f9c1a35
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70218423"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70942911"
 ---
 # <a name="_control87-_controlfp-__control87_2"></a>_control87, _controlfp, __control87_2
 
@@ -95,7 +98,7 @@ SSE kayan nokta birimi için Word 'ü denetleme. Yalnızca x87 denetim sözcüğ
 > [!NOTE]
 > Varsayılan olarak, çalışma zamanı kitaplıkları tüm kayan nokta özel durumlarını maskelemez.
 
-_controlfp, _control87 ' nin, **_control87** işleviyle neredeyse aynı olan, platformdan bağımsız, taşınabilir bir sürümüdür. Kodunuz birden fazla platform hedefliyorsa, **_controlfp** veya **_controlfp_s**kullanın. **_Control87** ve **_controlfp** arasındaki fark, denormal değerlerini nasıl değerlendirdikleri değerlerdir. X86, x64, ARM ve ARM64 platformları için **_control87** , denormal OPERAND özel durum maskesini ayarlayabilir ve temizleyebilir. **_controlfp** , denormal işleneni özel durum maskesini değiştirmez. Bu örnek, farkı göstermektedir:
+**_controlfp** , **_control87** ' nin, **_control87** işleviyle neredeyse aynı olan, platformdan bağımsız, taşınabilir bir sürümüdür. Kodunuz birden fazla platform hedefliyorsa, **_controlfp** veya **_controlfp_s**kullanın. **_Control87** ve **_controlfp** arasındaki fark, denormal değerlerini nasıl değerlendirdikleri değerlerdir. X86, x64, ARM ve ARM64 platformları için **_control87** , denormal OPERAND özel durum maskesini ayarlayabilir ve temizleyebilir. **_controlfp** , denormal işleneni özel durum maskesini değiştirmez. Bu örnek, farkı göstermektedir:
 
 ```C
 _control87( _EM_INVALID, _MCW_EM );

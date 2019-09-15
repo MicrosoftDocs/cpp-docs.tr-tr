@@ -1,10 +1,10 @@
 ---
 title: _CrtDbgReport, _CrtDbgReportW
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _CrtDbgReport
 - _CrtDbgReportW
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - CrtDbgReport
 - CrtDbgReportW
@@ -28,12 +31,12 @@ helpviewer_keywords:
 - CrtDbgReportW function
 - _CrtDbgReportW function
 ms.assetid: 6e581fb6-f7fb-4716-9432-f0145d639ecc
-ms.openlocfilehash: b5579a8996950c5f3e923f67ed2a5e667bb566fa
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 986777f755a749e858f7e51b5aa19f10090db13a
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69500009"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70938834"
 ---
 # <a name="_crtdbgreport-_crtdbgreportw"></a>_CrtDbgReport, _CrtDbgReportW
 
@@ -88,18 +91,18 @@ Tüm rapor hedefleri için, **_Crtdbgreport** ve **_Crtdbgreportw** bir hata olu
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Crtdbgreport** ve **_Crtdbgreportw** , hata ayıklama raporunu üç farklı hedefe gönderebilir: hata ayıklama rapor dosyası, hata ayıklama İzleyicisi (Visual Studio hata ayıklayıcı) veya hata ayıklama iletisi penceresi. Her rapor türü için hedefi veya hedefleri belirtmek için, [_CrtSetReportMode](crtsetreportmode.md) ve [_Crtsetreportfile](crtsetreportfile.md)olmak üzere iki yapılandırma işlevi kullanılır. Bu işlevler, her rapor türü için raporlama hedefinin veya hedeflerin ayrı olarak denetlenmesini sağlar. Örneğin, bir **_CRT_WARN** reportType 'ın yalnızca hata ayıklama Izleyicisine gönderileceğini, bir **_CRT_ASSERT** *reportType* , bir hata ayıklama iletisi penceresine ve Kullanıcı tanımlı bir rapor dosyasına gönderilmesini belirtmek mümkündür.
+**_Crtdbgreport** ve **_Crtdbgreportw** , hata ayıklama raporunu üç farklı hedefe gönderebilir: hata ayıklama rapor dosyası, hata ayıklama İzleyicisi (Visual Studio hata ayıklayıcı) veya hata ayıklama iletisi penceresi. Her rapor türü için hedefi veya hedefleri belirtmek için, [_CrtSetReportMode](crtsetreportmode.md) ve [_Crtsetreportfile](crtsetreportfile.md)olmak üzere iki yapılandırma işlevi kullanılır. Bu işlevler, her rapor türü için raporlama hedefinin veya hedeflerin ayrı olarak denetlenmesini sağlar. Örneğin, bir **_CRT_WARN** reportType *'ın yalnızca* hata ayıklama Izleyicisine gönderileceğini, bir **_CRT_ASSERT** *reportType* , bir hata ayıklama iletisi penceresine ve Kullanıcı tanımlı bir rapor dosyasına gönderilmesini belirtmek mümkündür.
 
 **_Crtdbgreportw** , **_Crtdbgreport**öğesinin geniş karakterli sürümüdür. Tüm çıkış ve dize parametreleri geniş karakterli dizelerdir; Aksi takdirde, tek baytlık karakter sürümü ile aynıdır.
 
-**_Crtdbgreport** ve **_Crtdbgreportw** [**n**] bağımsız değişkenlerini, **printf** ya **da tarafından tanımlanan aynı kuralları kullanarak biçim dizesinde değiştirerek hata ayıklama raporu için Kullanıcı iletisini oluşturun wprintf** işlevleri. Bu işlevler daha sonra hata ayıklama raporunu oluşturur ve geçerli rapor modlarına ve *reportType*için tanımlanan dosyaya göre hedef veya hedefleri tespit edin. Rapor bir hata ayıklama iletisi penceresine gönderildiğinde, *dosya adı*, **LineNumber**ve *ModuleName* pencerede görüntülenen bilgilere dahil edilir.
+**_Crtdbgreport** ve **_Crtdbgreportw** [**n** *] bağımsız değişkenlerini*, **printf** ya **da tarafından tanımlanan aynı kuralları kullanarak biçim dizesinde değiştirerek hata ayıklama raporu için Kullanıcı iletisini oluşturun wprintf** işlevleri. Bu işlevler daha sonra hata ayıklama raporunu oluşturur ve geçerli rapor modlarına ve *reportType*için tanımlanan dosyaya göre hedef veya hedefleri tespit edin. Rapor bir hata ayıklama iletisi penceresine gönderildiğinde, *dosya adı*, **LineNumber**ve *ModuleName* pencerede görüntülenen bilgilere dahil edilir.
 
 Aşağıdaki tabloda, rapor modu veya modlar ve dosya için kullanılabilen seçimler ve **_Crtdbgreport** ve **_Crtdbgreportw**için ortaya çıkan davranış listelenmektedir. Bu seçenekler, \<Crtdbg. h > bit bayrakları olarak tanımlanmıştır.
 
 |Rapor modu|Rapor dosyası|**_CrtDbgReport**, **_CrtDbgReportW** davranışı|
 |-----------------|-----------------|------------------------------------------------|
 |**_CRTDBG_MODE_DEBUG**|Geçerli değil|Windows [OutputDebugString](/windows/win32/api/debugapi/nf-debugapi-outputdebugstringw) API kullanarak ileti yazar.|
-|**_CRTDBG_MODE_WNDW**|Geçerli değil|İletiyi **iptal**etme, **yeniden deneme**ve **yoksayma** düğmeleriyle birlikte göstermek Için ileti kutusu oluşturmak üzere Windows [MessageBox](/windows/win32/api/winuser/nf-winuser-messagebox) API 'sini çağırır. Kullanıcı **Durdur**' a tıkladığında **_CrtDbgReport** veya **_CrtDbgReport** hemen iptal edilir. Kullanıcı **yeniden dene**' ye tıkladığında 1 döndürür. Kullanıcı **Yoksay**' ı tıklarsa, yürütme devam eder ve _CrtDbgReport ve **_Crtdbgreportw** 0 döndürür. Hata durumu var olduğunda **Yoksay** ' a tıkladığınızda genellikle "tanımsız davranış" ile sonuçlanır.|
+|**_CRTDBG_MODE_WNDW**|Geçerli değil|İletiyi **iptal**etme, **yeniden deneme**ve **yoksayma** düğmeleriyle birlikte göstermek Için ileti kutusu oluşturmak üzere Windows [MessageBox](/windows/win32/api/winuser/nf-winuser-messagebox) API 'sini çağırır. Kullanıcı **Durdur**' a tıkladığında **_CrtDbgReport** veya **_CrtDbgReport** hemen iptal edilir. Kullanıcı **yeniden dene**' ye tıkladığında 1 döndürür. Kullanıcı **Yoksay**' ı tıklarsa, yürütme devam eder ve **_CrtDbgReport** ve **_Crtdbgreportw** 0 döndürür. Hata durumu var olduğunda **Yoksay** ' a tıkladığınızda genellikle "tanımsız davranış" ile sonuçlanır.|
 |**_CRTDBG_MODE_FILE**|**__HFILE**|Windows [WriteFile](/windows/win32/api/fileapi/nf-fileapi-writefile) API 'sini kullanarak Kullanıcı tarafından sağlanan **tanıtıcıya**ileti yazar ve dosya tanıtıcısının geçerliliğini doğrulamaz; uygulama, rapor dosyasını açmaktan ve geçerli bir dosya tanıtıcısını geçirmekten sorumludur.|
 |**_CRTDBG_MODE_FILE**|**_CRTDBG_FILE_STDERR**|**Stderr**'e ileti yazar.|
 |**_CRTDBG_MODE_FILE**|**_CRTDBG_FILE_STDOUT**|**Stdout**'a ileti yazar.|

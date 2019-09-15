@@ -1,11 +1,11 @@
 ---
 title: _byteswap_uint64, _byteswap_ulong, _byteswap_ushort
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _byteswap_uint64
 - _byteswap_ulong
 - _byteswap_ushort
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-utility-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - byteswap_ulong
 - _byteswap_ulong
@@ -36,16 +39,16 @@ helpviewer_keywords:
 - byteswap_ulong function
 - _byteswap_ulong function
 ms.assetid: 83bda211-f02f-4cf0-8a78-d6de1f175970
-ms.openlocfilehash: 4f9409ebcc7e2bf29d5d6b9303f127188f9e6229
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 46ebc82919327ef5d51b760ae1aae15425910b4c
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62347788"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70939420"
 ---
-# <a name="byteswapuint64-byteswapulong-byteswapushort"></a>_byteswap_uint64, _byteswap_ulong, _byteswap_ushort
+# <a name="_byteswap_uint64-_byteswap_ulong-_byteswap_ushort"></a>_byteswap_uint64, _byteswap_ulong, _byteswap_ushort
 
-Bir tamsayı bayt sırasını tersine çevirir.
+Bayt sırasını bir tamsayıyla tersine çevirir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -57,16 +60,16 @@ unsigned __int64 _byteswap_uint64 ( unsigned __int64 val );
 
 ### <a name="parameters"></a>Parametreler
 
-*VAL*<br/>
-Bayt sırasını tersine çevirmek için bir tamsayı.
+*Acil*<br/>
+Bayt sırasının ters çevrilmesi için tamsayı.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_byteswap_ushort**|\<stdlib.h >|
-|**_byteswap_ulong**|\<stdlib.h >|
-|**_byteswap_uint64**|\<stdlib.h >|
+|**_byteswap_ushort**|\<Stdlib. h >|
+|**_byteswap_ulong**|\<Stdlib. h >|
+|**_byteswap_uint64**|\<Stdlib. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

@@ -1,10 +1,10 @@
 ---
 title: exit, _Exit, _exit
 ms.date: 01/02/2018
-apiname:
+api_name:
 - _exit
 - exit
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-runtime-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - Exit
 - _exit
@@ -30,12 +33,12 @@ helpviewer_keywords:
 - processes, terminating
 - function calls, terminating
 - process termination, calling
-ms.openlocfilehash: c16f306d745b96d8bc7c223213378140fdae14bb
-ms.sourcegitcommit: effb516760c0f956c6308eeded48851accc96b92
-ms.translationtype: HT
+ms.openlocfilehash: fd988ca6339c00b454d673d3bec6f137753ac83a
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 09/12/2019
-ms.locfileid: "70927392"
+ms.locfileid: "70941664"
 ---
 # <a name="exit-_exit-_exit"></a>exit, _Exit, _exit
 

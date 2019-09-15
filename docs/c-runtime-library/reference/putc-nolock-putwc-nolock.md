@@ -1,10 +1,10 @@
 ---
 title: _putc_nolock, _putwc_nolock
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _putc_nolock
 - _putwc_nolock
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _puttc_nolock
 - puttc_nolock
@@ -34,16 +37,16 @@ helpviewer_keywords:
 - _puttc_nolock function
 - _putwc_nolock function
 ms.assetid: 3cfc7f21-c9e8-4b7f-b0fb-af0d4d85e7e1
-ms.openlocfilehash: b2a30b83f0746b1b4f5ab03b4c3dfa0229656bb9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fdec6373f79fd711b371014fc58e17c190a26e95
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62285134"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70950118"
 ---
-# <a name="putcnolock-putwcnolock"></a>_putc_nolock, _putwc_nolock
+# <a name="_putc_nolock-_putwc_nolock"></a>_putc_nolock, _putwc_nolock
 
-İş parçacığını kilitlemeden, bir akışa bir karakter yazar.
+İş parçacığını kilitlemeden akışa bir karakter yazar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -63,18 +66,18 @@ wint_t _putwc_nolock(
 *c*<br/>
 Yazılacak karakter.
 
-*Stream*<br/>
-İşaretçi **dosya** yapısı.
+*ka*<br/>
+**Dosya** yapısına yönelik işaretçi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bkz: **putc, putwc**.
+Bkz. **putc, putwc**.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_putc_nolock** ve **_putwc_nolock** sürümlerle özdeştir **_nolock** soneki olmayan bunlar başka iş parçacıklarının engellemelerinden korunmamaları. Diğer iş parçacıklarını kilitleme ek yükü kalmadıklarından daha hızlı olabilir. Bu işlevler yalnızca tek iş parçacıklı uygulamalar ve burada çağırma kapsamının iş parçacığı yalıtımını zaten işlediği gibi iş parçacığı bakımından güvenli bağlamlarda kullanın.
+**_putc_nolock** ve **_putwc_nolock** , diğer iş parçacıkları tarafından girişime karşı korunmamaları dışında **_nolock** soneki olmayan sürümlerle aynıdır. Diğer iş parçacıklarını kilitleme yükünü sunmadığından daha hızlı olabilir. Bu işlevleri yalnızca, tek iş parçacıklı uygulamalar gibi iş parçacığı güvenli bağlamlarda veya çağırma kapsamının iş parçacığı yalıtımını zaten işlediği yerde kullanın.
 
-**_putwc_nolock** öğesinin geniş karakterli sürümüdür **_putc_nolock**; akış ANSI modunda açılırsa iki işlev aynı şekilde davranır. **_putc_nolock** UNICODE akışına çıkış şu anda desteklemiyor.
+**_putwc_nolock** , **_putc_nolock**; öğesinin geniş karakterli sürümüdür Akış ANSI modunda açılırsa iki işlev aynı şekilde davranır. **_putc_nolock** Şu anda bir UNICODE akışına çıktıyı desteklemiyor.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -86,14 +89,14 @@ Bkz: **putc, putwc**.
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_putc_nolock**|\<stdio.h >|
-|**_putwc_nolock**|\<stdio.h > veya \<wchar.h >|
+|**_putc_nolock**|\<stdio. h >|
+|**_putwc_nolock**|\<stdio. h > veya \<wchar. h >|
 
-Konsolu, Evrensel Windows Platformu (UWP) uygulamaları desteklenmez. Konsolları ile ilişkili standart akış işleyicileri **stdin**, **stdout**, ve **stderr**, C çalışma zamanı işlevleri bunları UWP uygulamalarında kullanmadan önce yeniden yönlendirilmesi gerekiyor . Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Konsol Evrensel Windows Platformu (UWP) uygulamalarında desteklenmez. Console, **STDIN**, **stdout**ve **stderr**Ile ilişkili standart akış TUTAMAÇLARı, C çalışma zamanı işlevlerinin UWP uygulamalarında kullanabilmesi için yeniden yönlendirilmelidir. Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 
-Tüm sürümleri [C çalışma zamanı kitaplıkları](../../c-runtime-library/crt-library-features.md).
+[C çalışma zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md)tüm sürümleri.
 
 ## <a name="example"></a>Örnek
 
@@ -128,6 +131,6 @@ This is the line of output
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Stream g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [fputc, fputwc](fputc-fputwc.md)<br/>
 [getc, getwc](getc-getwc.md)<br/>

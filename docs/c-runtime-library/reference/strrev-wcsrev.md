@@ -1,10 +1,10 @@
 ---
 title: strrev, wcsrev
 ms.date: 11/04/2016
-apiname:
+api_name:
 - strrev
 - wcsrev
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - strrev
 - wcsrev
@@ -23,13 +26,13 @@ helpviewer_keywords:
 - strrev function
 - wcsrev function
 ms.assetid: 89e05854-a9ce-4fb7-993d-a9831cd7edf2
-ms.openlocfilehash: bef47893ba11367b8b695c81c7f89fde45a1f967
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ac4e8cd4545a8b443852d95c58ba67f8f8b243ca
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62365175"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70946804"
 ---
 # <a name="strrev-wcsrev"></a>strrev, wcsrev
 
-Bu POSIX işlevler kullanım dışı bırakılmıştır. ISO kullanın C++ uyumluluğunu [_strrev, _wcsrev, _mbsrev, _mbsrev_l](strrev-wcsrev-mbsrev-mbsrev-l.md) yerine.
+Bu POSIX işlevleri kullanım dışıdır. Bunun yerine ISO C++ uyumlu [_strrev, _wcsrev, _mbsrev, _mbsrev_l](strrev-wcsrev-mbsrev-mbsrev-l.md) kullanın.

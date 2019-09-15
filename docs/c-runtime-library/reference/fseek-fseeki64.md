@@ -1,10 +1,10 @@
 ---
 title: fseek, _fseeki64
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _fseeki64
 - fseek
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - fseek
 - _fseeki64
@@ -28,14 +31,14 @@ helpviewer_keywords:
 - file pointers [C++]
 - seek file pointers
 ms.assetid: f6bb1f8b-891c-426e-9e14-0e7e5c62df70
-ms.openlocfilehash: 4cfb4bcea4a110cf8a9c9db664c42d6603328cf0
-ms.sourcegitcommit: 878a164fe6d550ca81ab87d8425c8d3cd52fe384
+ms.openlocfilehash: e3da603c3c7f1b083ddb7f7f9577adae9be5e4f1
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68376087"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70956571"
 ---
-# <a name="fseek-fseeki64"></a>fseek, _fseeki64
+# <a name="fseek-_fseeki64"></a>fseek, _fseeki64
 
 Dosya işaretçisini belirtilen konuma kaydırır.
 
@@ -71,7 +74,7 @@ Başarılı olursa, **fseek** ve **_fseeki64** 0 döndürür. Aksi takdirde, sı
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Fseek** ve **_fseeki64** işlevleri, *Stream* ile ilişkili dosya işaretçisini (varsa) *kaynaktan*bayt *uzaklığa* yeni bir konuma taşıtır. Akıştaki bir sonraki işlem yeni konumda gerçekleşir. Güncelleştirme için açık bir akışta, sonraki işlem bir okuma veya yazma olabilir. Bağımsız değişken *kaynağı* , stdio 'da tanımlanan aşağıdaki sabitlerden biri olmalıdır. Olsun
+**Fseek** ve **_fseeki64** işlevleri, Stream ile ilişkili dosya işaretçisini (varsa) *kaynaktan*bayt *uzaklığa* yeni bir konuma *taşıtır* . Akıştaki bir sonraki işlem yeni konumda gerçekleşir. Güncelleştirme için açık bir akışta, sonraki işlem bir okuma veya yazma olabilir. Bağımsız değişken *kaynağı* , stdio 'da tanımlanan aşağıdaki sabitlerden biri olmalıdır. Olsun
 
 |kaynak değeri|Açıklama|
 |-|-|
@@ -87,11 +90,11 @@ Metin modunda açılan akışlar için, **fseek** ve **_fseeki64** sınırlı bi
 
 - Kaynak değerlerinden herhangi birine göre 0 uzaklığına sahip arama.
 
-- **_Fseeki64**kullanırken **fseek** veya _ftelli64 kullanırken, dosyanın başından, fseek veya [](ftell-ftelli64.md) kullandığınızda bir [Delta](ftell-ftelli64.md) değeri ile arama.
+- **_Fseeki64**kullanırken **fseek** veya _ftelli64 kullanırken, dosyanın başından, [fseek](ftell-ftelli64.md) veya [](ftell-ftelli64.md) kullandığınızda bir Delta değeri ile arama.
 
-Ayrıca, metin modunda CTRL + Z, girişte bir dosya sonu karakteri olarak yorumlanır. Okuma/yazma için açılan dosyalarda, [fopen](fopen-wfopen.md) ve tüm ilgili yordamlar, dosyanın sonunda bir CTRL + Z olup olmadığını kontrol edin ve mümkünse kaldırın. Bu, bir CTRL + Z ile biten bir dosya içinde [](ftell-ftelli64.md) hareket etmek için **fseek** ve for veya **_fseeki64** ve [_ftelli64](ftell-ftelli64.md)birleşimini kullanmanın, **fseek** veya **_fseeki64** öğesinin sonuna doğru şekilde davranmasına neden olabileceği için yapılır. dosyasýný.
+Ayrıca, metin modunda CTRL + Z, girişte bir dosya sonu karakteri olarak yorumlanır. Okuma/yazma için açılan dosyalarda, [fopen](fopen-wfopen.md) ve tüm ilgili yordamlar, dosyanın sonunda bir CTRL + Z olup olmadığını kontrol edin ve mümkünse kaldırın. Bu, bir CTRL + Z ile biten bir dosya içinde hareket etmek için **fseek** ve [for](ftell-ftelli64.md) veya **_fseeki64** ve [_ftelli64](ftell-ftelli64.md)birleşimini kullanmanın, **fseek** veya **_fseeki64** öğesinin sonuna doğru şekilde davranmasına neden olabileceği için yapılır. dosyasýný.
 
-CRT, bir bayt sırası Işaretiyle (BOM) başlayan bir dosya açtığında, dosya işaretçisi, ürün reçetesinden sonra konumlandırılır (yani, dosyanın gerçek içeriğinin başlangıcında). Dosyanın başlangıcına yönelik bir  bilgi sahibi olmanız gerekirse, ilk konumu almak için [fsöyleyin](ftell-ftelli64.md) ' ı **kullanın ve 0** konumuna geçmek yerine bu konuma gidin.
+CRT, bir bayt sırası Işaretiyle (BOM) başlayan bir dosya açtığında, dosya işaretçisi, ürün reçetesinden sonra konumlandırılır (yani, dosyanın gerçek içeriğinin başlangıcında). Dosyanın başlangıcına yönelik bir bilgi sahibi olmanız gerekirse, ilk konumu almak için [fsöyleyin](ftell-ftelli64.md) ' ı **kullanın ve 0** konumuna geçmek yerine bu konuma gidin.
 
 Bu işlev, yürütme sırasında diğer iş parçacıklarını kilitler ve bu nedenle iş parçacığı açısından güvenlidir. Kilitleme dışı bir sürüm için bkz. [_fseek_nolock, _fseeki64_nolock](fseek-nolock-fseeki64-nolock.md).
 

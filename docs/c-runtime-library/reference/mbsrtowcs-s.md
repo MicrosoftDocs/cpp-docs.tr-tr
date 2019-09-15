@@ -1,9 +1,9 @@
 ---
 title: mbsrtowcs_s
 ms.date: 11/04/2016
-apiname:
+api_name:
 - mbsrtowcs_s
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,22 +15,25 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-convert-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - mbsrtowcs_s
 helpviewer_keywords:
 - mbsrtowcs_s function
 ms.assetid: 4ee084ec-b15d-4e5a-921d-6584ec3b5a60
-ms.openlocfilehash: a935b5181078f3b08ba5f2f89c581ed8cce8ded5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d79cceaf923c1da126a1d133a8d2eb8752883457
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62156674"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70952095"
 ---
-# <a name="mbsrtowcss"></a>mbsrtowcs_s
+# <a name="mbsrtowcs_s"></a>mbsrtowcs_s
 
-Çok baytlı karakter dizesi geçerli ayardaki geniş karakter dize gösterimine dönüştürür. Bir sürümünü [mbsrtowcs](mbsrtowcs.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
+Geçerli yerel ayarda çok baytlı bir karakter dizesini, geniş karakter dizesi gösterimine dönüştürür. [CRT 'Deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklanan şekilde, güvenlik geliştirmeleriyle [mbsrtowcs](mbsrtowcs.md) sürümü.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -55,77 +58,77 @@ errno_t mbsrtowcs_s(
 
 ### <a name="parameters"></a>Parametreler
 
-*pReturnValue*<br/>
-Dönüştürülecek karakter sayısı.
+*Ön kapatma değeri*<br/>
+Dönüştürülen karakterlerin sayısı.
 
 *wcstr*<br/>
-Ortaya çıkan depolayan arabellek adresi geniş karakter dizesi dönüştürülür.
+Elde edilen dönüştürülmüş geniş karakter dizesini depolamak için arabelleğin adresi.
 
 *sizeInWords*<br/>
-Boyutu *wcstr* sözcüklerin (geniş karakter).
+Sözcükteki *wcstr* boyutu (geniş karakterler).
 
 *mbstr*<br/>
-Dönüştürülecek çok baytlı karakter dizesi konumunu dolaylı işaretçisi.
+Dönüştürülecek çok baytlı karakter dizesinin konumunun dolaylı işaretçisi.
 
-*Sayısı*<br/>
-Depolamak için geniş karakterlerin sayısı *wcstr* arabellek, sonlandırıcı null içermeden veya [_TRUNCATE](../../c-runtime-library/truncate.md).
+*biriktirme*<br/>
+*Wcstr* arabelleğinde depolanacak, Sonlandırıcı null veya [_TRUNCATE](../../c-runtime-library/truncate.md)dahil olmayan en fazla geniş karakter sayısı.
 
 *mbstate*<br/>
-Bir işaretçi bir **mbstate_t** dönüştürme durum nesnesi. Bu değer bir null işaretçi ise, statik iç dönüştürme durum nesnesi kullanılır. Olduğundan iç **mbstate_t** nesne iş parçacığı güvenli değil, size her zaman kendi geçmesini öneririz *mbstate* parametresi.
+**Mbstate_t** dönüştürme durumu nesnesine yönelik bir işaretçi. Bu değer null bir işaretçisiyse, statik bir iç dönüştürme durumu nesnesi kullanılır. İç **mbstate_t** nesnesi iş parçacığı açısından güvenli olmadığından, her zaman kendi *mbstate* parametresini geçirmeniz önerilir.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Dönüştürme başarılı olursa sıfır veya bir hata kodu.
+Dönüştürme başarılı olursa sıfır veya hata durumunda hata kodu.
 
 |Hata koşulu|Dönüş değeri ve **errno**|
 |---------------------|------------------------------|
-|*wcstr* null bir işaretçiyse ve *sizeInWords* > 0|**EINVAL**|
-|*mbstr* null bir işaretçiyse|**EINVAL**|
-|Dize dolaylı olarak tarafından işaret edilen *mbstr* , geçerli yerel ayarı için geçerli olmayan bir çok baytlı dizisi içerir.|**EILSEQ**|
-|Hedef arabelleğinin içeren dönüştürülmüş dize çok küçük (sürece *sayısı* olduğu **_TRUNCATE**; daha fazla bilgi için açıklamalara bakın)|**ERANGE**|
+|*wcstr* boş bir Işaretçi ve *sizeınwords* > 0|**EINVAL**|
+|*mbstr* null bir işaretçisidir|**EINVAL**|
+|*Mbstr* tarafından dolaylı olarak işaret edilen dize, geçerli yerel ayar için geçerli olmayan çok baytlı bir sıra içeriyor.|**EILSEQ**|
+|Hedef arabellek dönüştürülmüş dizeyi ( *Count* **_TRUNCATE**olmadığı müddetçe) çok küçük. daha fazla bilgi için bkz. açıklamalar|**ERANGE**|
 
-Bu koşullardan herhangi biri meydana gelirse, açıklanan şekilde geçersiz parametre özel durumu çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md) . Yürütme devam etmesine izin verilirse işlev bir hata kodu döndürür ve ayarlar **errno** tabloda belirtildiği şekilde.
+Bu koşullardan herhangi biri oluşursa, geçersiz parametre özel durumu [parametre doğrulamada](../../c-runtime-library/parameter-validation.md) açıklandığı şekilde çağrılır. Yürütmenin devam etmesine izin veriliyorsa, işlev bir hata kodu döndürür ve tabloda belirtilen **errno** değerini ayarlar.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Mbsrtowcs_s** işlevi dönüştürür bir dolaylı olarak işaret ettiği çok baytlı karakter dizesi *mbstr* tarafından işaret edilen arabellek içinde depolanan geniş karakterlerin içine *wcstr*tarafından içindeki dönüştürme durumu kullanarak *mbstate*. Dönüştürme, her karakter için şu koşullardan biri karşılandığında kadar devam eder:
+**Mbsrtowcs_s** işlevi, *mbstr* tarafından işaret edilen arabellekte depolanan bir çok baytlı karakter *dizesini,* *mbstate*tarafından işaret edilen arabellekte bulunan geniş karakterlere dönüştürür. Bu koşullardan biri karşılanana kadar dönüştürme her karakter için devam eder:
 
-- Çok baytlı bir null karakteri ile karşılaşıldı
+- Çok baytlı null karakter ile karşılaşıldı
 
-- Geçersiz bir çok baytlı karakter karşılaşıldı
+- Geçersiz çok baytlı bir karakter ile karşılaşıldı
 
-- İçinde depolanan geniş karakterlerin sayısını *wcstr* arabellek eşittir *sayısı*.
+- *Wcstr* arabelleğinde depolanan geniş karakterlerin sayısı eşittir *Count*.
 
-Hedef dize *wcstr* null ile sonlandırılmış bir hata olması durumunda bile, her zaman olduğu sürece *wcstr* bir null işaretçidir.
+Wcstr null işaretçisiyse, *wcstr* hedef dizesi her zaman bir hata durumunda bile null olarak sonlandırılır.
 
-Varsa *sayısı* özel değer [_TRUNCATE](../../c-runtime-library/truncate.md), **mbsrtowcs_s** büyük bir işlem olarak dize dönüştürür yine de bir null yer bırakarak hedef arabellek içine Sığdır Sonlandırıcı.
+*Count* özel değeri [_TRUNCATE](../../c-runtime-library/truncate.md)ise, **mbsrtowcs_s** , dizenin büyük bir kısmını hedef arabelleğe sığdıracak şekilde dönüştürür, ancak yine de bir null Sonlandırıcı için oda bırakır.
 
-Varsa **mbsrtowcs_s** başarılı bir şekilde kaynak dizesini dönüştürür dönüştürülmüş dize ve içine null Sonlandırıcı geniş karakter cinsinden boyutu koyar  *&#42;pReturnValue*, sağlanan  *pReturnValue* null bir işaretçi değil. Bu meydana bile *wcstr* bağımsız değişkeni null bir işaretçiyse ve gerekli arabellek boyutunu belirlemenize olanak tanır. Unutmayın *wcstr* null bir işaretçiyse, *sayısı* göz ardı edilir.
+**Mbsrtowcs_s** , kaynak dizeyi başarıyla dönüştürdüğünde, boyutu dönüştürülmüş dizenin geniş karakterlere ve null sonlandırıcısının  *&#42;ön yük değerine*koyar, ancak *pReturnValue* bir null işaretçi değildir. Bu, *wcstr* bağımsız değişkeni null işaretçisiyse ve gerekli arabellek boyutunu belirlemenize izin verseler de gerçekleşir. *Wcstr* null işaretçisiyse, *sayı* yoksayılıp sayılmadığını unutmayın.
 
-Varsa *wcstr* null bir işaretçi değil işaretçi nesnesinin tarafından işaret edilen *mbstr* null bir işaretçi bir sonlandırıcı null karakter üst sınırına ulaşıldığından dönüştürme durdurduysanız atanır. Aksi takdirde, varsa, son çok baytlı karakter dönüştürülür, adresi yalnızca geçmiş atanır. Bu, bir sonraki işlev çağrısı dönüştürme yeniden başlatmak bu çağrı durduğu sağlar.
+*Wcstr* null bir işaretçi değilse, bir Sonlandırıcı null karaktere ulaşıldığından, *mbstr* tarafından işaret edilen işaretçi nesnesine, dönüştürme durdurulmuşsa null işaretçi atanır. Aksi takdirde, adres, varsa, yalnızca son çok baytlı karakteri geçmiş olan adrese atanır. Bu, bir sonraki işlev çağrısının, bu çağrının durdurulduğu yerde dönüştürmeyi yeniden başlatmasını sağlar.
 
-Varsa *mbstate* bir null işaretçiyse, iç Kitaplığı **mbstate_t** dönüştürme durumu statik nesnesi kullanılır. Bu bir iç statik nesne iş parçacığı açısından güvenli olmadığı için kendi geçmesini öneririz *mbstate* değeri.
+*Mbstate* null işaretçisiyse, Library Internal **mbstate_t** dönüştürme durumu statik nesnesi kullanılır. Bu iç statik nesne iş parçacığı açısından güvenli olmadığından, kendi *mbstate* değerini geçirmeniz önerilir.
 
-Varsa **mbsrtowcs_s** geçerli yerel ayarı geçerli değil. bir çok baytlı karakterin karşılaştığında -1 koyar  *&#42;pReturnValue*, hedef arabelleğinin ayarlar *wcstr* boş bir dize olarak ayarlar **errno** için **EILSEQ**ve döndürür **EILSEQ**.
+**Mbsrtowcs_s** , geçerli yerel ayarda geçerli olmayan bir çok baytlı karakterle karşılaşırsa,  *&#42;ön*1 ' i önceden yapılan değere koyar, hedef arabellek *wcstr* değerini boş bir dizeye ayarlar, **errno** 'u **eilseq**olarak ayarlar ve döndürür **Eilseq**.
 
-Dizileri işaret ettiği varsa *mbstr* ve *wcstr* üst üste, davranışını **mbsrtowcs_s** tanımsızdır. **mbsrtowcs_s** geçerli yerel ayarı LC_TYPE kategoriye göre etkilenir.
+*Mbstr* ve *wcstr* tarafından işaret edilen sıralar çakışırsa, **mbsrtowcs_s** davranışı tanımsızdır. **mbsrtowcs_s** , geçerli yerel ayarın LC_TYPE kategorisinden etkilenir.
 
 > [!IMPORTANT]
-> Emin *wcstr* ve *mbstr* örtüşmeyen ve *sayısı* doğru şekilde dönüştürmek için çok baytlı karakter sayısını yansıtır.
+> *Wcstr* ve *mbstr* 'in çakışmadığından ve bu *sayının* dönüştürülecek çok baytlı karakterlerin sayısını doğru yansıttığından emin olun.
 
-**Mbsrtowcs_s** işlevi farklıdır [mbstowcs_s, _mbstowcs_s_l](mbstowcs-s-mbstowcs-s-l.md) kendi restartability tarafından. Dönüştürme durumunu depolanan *mbstate* aynı ya da yeniden başlatılabilir diğer işlevlere yapılan sonraki çağrılar için. Yeniden başlatılabilir ve nonrestartable işlevlerin kullanımını kullanırken sonuçlar tanımsızdır. Örneğin, bir uygulamanın kullanması gereken **mbsrlen** yerine **mbslen**sonraki çağrı, **mbsrtowcs_s** yerine kullanılan **mbstowcs_s**.
+**Mbsrtowcs_s** işlevi, [mbstowcs_s, _mbstowcs_s_l](mbstowcs-s-mbstowcs-s-l.md) öğesinden yeniden startability 'e göre farklılık gösterir. Dönüştürme durumu, aynı veya diğer yeniden başlatılabilir işlevlere sonraki çağrılar için *mbstate* 'de depolanır. Yeniden başlatılabilir ve yeniden başlatılabilir işlevlerin kullanımı karıştırılması halinde sonuçlar tanımsızdır. Örneğin, **mbstowcs_s**yerine **mbsrtowcs_s** için sonraki bir çağrı kullanılırsa, bir uygulamanın **mbslen**yerine **mbsrlen** kullanması gerekir.
 
-C++'da, bu işlevi kullanmak şablon aşırı yüklemeleriyle basitleştirilmiştir; aşırı yüklemeler arabellek uzunluğunu otomatik olarak çıkarabilir (bir boyut bağımsız değişkeni belirtme gereksinimi ortadan kalkar) ve bunlar otomatik olarak eski ve güvenli olmayan işlevlerle daha yeni ve güvenli karşılıkları kullanarak değiştirir. Daha fazla bilgi için [güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
+' C++De, bu işlevin kullanılması şablon aşırı yüklemeleri tarafından basitleştirilmiştir; aşırı yüklemeler arabellek uzunluğunu otomatik olarak çıkarabilir (bir boyut bağımsız değişkeni belirtme gereksinimini ortadan kaldırır) ve daha yeni ve güvenli, güvenli karşılıklarını kullanarak otomatik olarak eski, güvenli olmayan işlevleri değiştirebilir. Daha fazla bilgi için bkz. [Güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 
 ## <a name="exceptions"></a>Özel Durumlar
 
-**Mbsrtowcs_s** işlev, çoklu iş parçacığı güvenli bir işlev, geçerli iş parçacığı çağrı **setlocale** bu işlev yürütülürken sürece ve *mbstate* bağımsız değişkeni null bir işaretçi değil.
+Geçerli iş parçacığında hiçbir işlev bu işlev yürütüldüğü ve *mbstate* bağımsız değişkeni null bir işaretçi **olmadığı sürece** **mbsrtowcs_s** işlevi çoklu iş parçacığı güvenlidir.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**mbsrtowcs_s**|\<wchar.h >|
+|**mbsrtowcs_s**|\<wchar. h >|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

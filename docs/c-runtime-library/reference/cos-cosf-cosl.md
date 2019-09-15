@@ -1,11 +1,11 @@
 ---
 title: cos, cosf, cosl
 ms.date: 04/05/2018
-apiname:
+api_name:
 - cos
 - cosf
 - cosl
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - cos
 - cosf
@@ -31,16 +34,16 @@ helpviewer_keywords:
 - trigonometric functions
 - cosines, calculating
 ms.assetid: ae90435e-6b68-4a47-a81f-be87d5c08f16
-ms.openlocfilehash: b050fd98a35028b121def8b665fce62ad58ec437
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4d07a8636aabc4973c7beb9725a39e98c229a098
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62335366"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70942830"
 ---
 # <a name="cos-cosf-cosl"></a>cos, cosf, cosl
 
-Kosinüsünü hesaplar.
+Kosinüsü hesaplar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -62,28 +65,28 @@ Radyan cinsinden açı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Kosinüsünü *x*. Varsa *x* büyüktür veya 263'e eşit veya daha az veya buna eşit -263, sonuçta anlam kaybına gerçekleşir.
+*X*'in kosinüsü. *X* , 263 veya daha büyük ya da-263 ' den büyükse veya eşitse, sonuçta anlam kaybı meydana gelir.
 
 |Giriş|SEH özel durumu|Matherr özel durumu|
 |-----------|-------------------|-----------------------|
-|± QNAN, ONRAKİNİ BUL|yok|**_DOMAIN**|
-|INF ±|**GEÇERSİZ**|**_DOMAIN**|
+|± QNAN, IND|yok|**_ETKI ALANI**|
+|± INF|**GEÇERSİZ**|**_ETKI ALANI**|
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, aşırı yüklemesini çağırabilirsiniz **cos** alan ve getiren **float** veya **uzun** **çift** değerleri. C programında **cos** her zaman alan ve döndüren bir **çift**.
+Aşırı C++ yüklemeye izin verdiğinden, **float** veya **Long** **Double** değerleri alıp döndüren **cos** 'un aşırı yüklerini çağırabilirsiniz. C programında **cos** her zaman bir **Double**alır ve döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli C üstbilgisi|Gerekli C++ üst bilgisi|
+|Yordam|Gerekli C üstbilgisi|Gerekli C++ üst bilgi|
 |-------------|---------------------|-|
-|**cos**, **cosh**, **cosf**|\<Math.h >|\<cmath > veya \<math.h >|
+|**cos**, **cosh**, **cosf**|\<Math. h >|\<cmath > veya \<Math. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
-Örnekte bakın [sinüs, sinf sinl](sin-sinf-sinl.md).
+Bkz. [Sin, sinf, sinl](sin-sinf-sinl.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

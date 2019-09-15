@@ -1,9 +1,9 @@
 ---
 title: gcvt
 ms.date: 11/04/2016
-apiname:
+api_name:
 - gcvt
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -14,19 +14,22 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - gcvt
 helpviewer_keywords:
 - gcvt function
 ms.assetid: 913478fd-ef22-4dee-b558-ff2bd6d72f3d
-ms.openlocfilehash: dc64a61f232d8d315724a1d4aa610f8186486146
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8a1118aa0b7b68137e0748ae8e19e44e7134c3da
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62305157"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70950730"
 ---
 # <a name="gcvt"></a>gcvt
 
-Bu POSIX işlevi kullanım dışı bırakılmıştır. ISO kullanın C++ uyumluluğunu [_gcvt](gcvt.md) veya Gelişmiş güvenlikli [_gcvt_s](gcvt-s.md) yerine.
+Bu POSIX işlevi kullanım dışıdır. Bunun yerine ISO C++ uyumlu [_gcvt](gcvt.md) veya Security-Enhanced [_gcvt_s](gcvt-s.md) kullanın.

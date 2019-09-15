@@ -1,7 +1,7 @@
 ---
 title: _countof Makrosu
 ms.date: 03/22/2018
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -12,7 +12,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _countof
 - countof
@@ -20,16 +23,16 @@ helpviewer_keywords:
 - countof macro
 - _countof macro
 ms.assetid: 86198767-f7e5-4beb-898d-3cbbf60350a3
-ms.openlocfilehash: 60b4350d6cf14a545de67de0bdaee70ee2099006
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3debd63da7d218e29f31847034c69d89b4691643
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62335353"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70942687"
 ---
-# <a name="countof-macro"></a>_countof Makrosu
+# <a name="_countof-macro"></a>_countof Makrosu
 
-Statik olarak ayrılan bir dizideki öğelerin sayısını hesaplar.
+Statik olarak ayrılan dizideki öğelerin sayısını hesaplar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -39,24 +42,24 @@ Statik olarak ayrılan bir dizideki öğelerin sayısını hesaplar.
 
 ### <a name="parameters"></a>Parametreler
 
-*Dizi*<br/>
+*array*<br/>
 Bir dizinin adı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-İfade bir dizinin içindeki öğelerin sayısını bir **size_t**.
+Dizideki öğe sayısı, bir **size_t**olarak ifade edilir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_countof** işlev benzeri önişlemci makrosu uygulanır. C++ statik olarak bildirilen bir dizi yerine bir işaretçi geçirilirse, derleme zamanında algılamak için ek şablon makineler vardır.
+**_countof** , işlev benzeri bir önişlemci makrosu olarak uygulanır. C++ Sürümünde statik olarak tanımlanmış bir dizi yerine bir işaretçi geçirilirse, derleme zamanında tespit edilecek ek şablon makineleri vardır.
 
-Emin *dizi* aslında bir dizi, bir işaretçi. C'de, **_countof** , hatalı sonuçlar üreten *dizi* gösteren bir işaretçidir. İçinde C++, **_countof** derlemeniz başarısız *dizi* gösteren bir işaretçidir.  Bir dizi bir işleve parametre olarak geçen *decays işaretçi*, yani, işlev içinde kullanamazsınız **_countof** dizi kapsamını belirlemek için.
+*Dizinin* işaretçi değil, gerçekten bir dizi olduğundan emin olun. C 'de, *dizi* işaretçiyse, **_countof** hatalı sonuçlar üretir. İçinde C++, *dizi bir işaretçiyse* , **_countof** derleme işlemi başarısız olur.  Bir işleve parametre olarak geçirilen bir dizi, *bir işaretçiye işaret*eden, bu, işlevin içinde, dizinin kapsamını belirlemede **_countof** kullanamıyoruz.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Makrosu|Gerekli başlık|
 |-----------|---------------------|
-|**_countof**|\<stdlib.h >|
+|**_countof**|\<Stdlib. h >|
 
 ## <a name="example"></a>Örnek
 

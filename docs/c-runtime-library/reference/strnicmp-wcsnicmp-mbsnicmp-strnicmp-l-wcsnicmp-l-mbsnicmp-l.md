@@ -1,14 +1,14 @@
 ---
 title: _strnicmp, _wcsnicmp, _mbsnicmp, _strnicmp_l, _wcsnicmp_l, _mbsnicmp_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _wcsnicmp
 - _strnicmp_l
 - _wcsnicmp_l
 - _strnicmp
 - _mbsnicmp
 - _mbsnicmp_l
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -22,7 +22,10 @@ apilocation:
 - api-ms-win-crt-multibyte-l1-1-0.dll
 - api-ms-win-crt-string-l1-1-0.dll
 - ntoskrnl.exe
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - wcsnicmp_l
 - _strnicmp
@@ -66,19 +69,19 @@ helpviewer_keywords:
 - mbsnicmp function
 - _wcsnicmp function
 ms.assetid: df6e5037-4039-4c85-a0a6-21d4ef513966
-ms.openlocfilehash: 38f5697e0c7fe147a481249888595b7d51cfe93c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6d1645c33684f5a0fbabc2119592c39a7df97ca3
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62209702"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70947129"
 ---
-# <a name="strnicmp-wcsnicmp-mbsnicmp-strnicmpl-wcsnicmpl-mbsnicmpl"></a>_strnicmp, _wcsnicmp, _mbsnicmp, _strnicmp_l, _wcsnicmp_l, _mbsnicmp_l
+# <a name="_strnicmp-_wcsnicmp-_mbsnicmp-_strnicmp_l-_wcsnicmp_l-_mbsnicmp_l"></a>_strnicmp, _wcsnicmp, _mbsnicmp, _strnicmp_l, _wcsnicmp_l, _mbsnicmp_l
 
-Belirtilen sayıda karakteri çalışması dikkate almaksızın, iki dizenin karşılaştırır.
+İki dizenin belirtilen karakter sayısını, büyük/küçük harfe göre karşılaştırır.
 
 > [!IMPORTANT]
-> **_mbsnicmp** ve **_mbsnicmp_l** Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **_mbsnıcmp** ve **_mbsnicmp_l** Windows çalışma zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -121,12 +124,12 @@ int _mbsnicmp_l(
 ### <a name="parameters"></a>Parametreler
 
 *Dize1*, *dize2*<br/>
-Karşılaştırmak için null ile sonlandırılmış dizeler.
+Karşılaştırılacak null ile sonlandırılmış dizeler.
 
-*Sayısı*<br/>
+*biriktirme*<br/>
 Karşılaştırılacak karakter sayısı.
 
-*Yerel ayar*<br/>
+*ayarlar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -135,47 +138,47 @@ Aşağıdaki gibi alt dizeler arasındaki ilişkiyi gösterir.
 
 |Dönüş değeri|Açıklama|
 |------------------|-----------------|
-|< 0|*Dize1* alt dizesidir küçüktür *dize2* alt dize.|
-|0|*Dize1* substring aynıdır *dize2* alt dize.|
-|> 0|*Dize1* alt dizeyi büyük *dize2* alt dize.|
+|< 0|*Dize1* substring, *dize2* alt dizeden küçük.|
+|0|*Dize1* substring, *dize2* alt dizesi ile aynıdır.|
+|> 0|*Dize1* substring, *dize2* alt dizeden büyük.|
 
-Bu işlevler bir parametre doğrulama hatasını döndürür **_NLSCMPERROR**, tanımlanan \<string.h > ve \<mbstring.h >.
+Bir parametre doğrulama hatası üzerinde bu işlevler, \<String. h > ve \<mbstring. h > tanımlanan **_NLSCMPERROR**döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Strnicmp** işlevi ordinally karşılaştırır, en çok ilk *sayısı* karakterlerinden *Dize1* ve *dize2*. Karşılaştırma çalışması bakılmaksızın, her bir karakteri küçük harfe dönüştürme tarafından gerçekleştirilir. **_strnicmp** büyük küçük harf duyarlı bir sürümüdür **strncmp**. Bir sonlandırıcı null karakter ya da dize önce ulaşılırsa karşılaştırma sonlandırır *sayısı* karakter karşılaştırılmadan. Dizeler eşitse bir sonlandırıcı null karakter ulaşıldığında önce her iki dizede *sayısı* karakter karşılaştırılmadan, kısa dize küçüktür.
+**_Strnıcmp** işlevi, en çok, *Dize1* ve *dize2*' nin ilk *sayı* karakterlerini bir üst düzeyde karşılaştırır. Karşılaştırma, her karakter küçük harfe dönüştürülene bakılmaksızın gerçekleştirilir. **_strnıcmp** , **strncmp**'nin büyük/küçük harfe duyarlı bir sürümüdür. *Sayma* karakterleri karşılaştırılmadan önce her iki dizede de bir Sonlandırıcı null karakterine ulaşıldığında karşılaştırma biter. *Sayı* karakterleri karşılaştırılmadan önce bir dizede bir Sonlandırıcı null karakterine ulaşıldığında dizeler eşitse, daha kısa dize daha küçüktür.
 
-ASCII tablosunda 96 91 karakterleri ('[','\\', ']', ' ^', '_' ve '\`') olarak küçüktür herhangi bir alfabetik karakterle değerlendirin. Bu sıralama olarak aynı **stricmp**.
+ASCII tablosunda (' [', '\\', '] ', ' ^ ', ' _ ' ve '\`') 91 ' den 96 ' e kadar olan karakterler herhangi bir alfabetik karakterden daha az değerlendirilir. Bu sıralama, **stricmp**ile aynıdır.
 
-**_wcsnicmp** ve **_mbsnicmp** geniş karakter ve çok baytlı karakter sürümleridir **_strnicmp**. Bağımsız değişkenleri **_wcsnicmp** geniş karakterli dizelerdir; **_mbsnicmp** çok baytlı karakter dizeleridir. **_mbsnicmp** geçerli çok baytlı kod sayfasına göre çok baytlı karakter dizileri tanır ve döndürür **_NLSCMPERROR** üzerinde hata. Daha fazla bilgi için [kod sayfaları](../../c-runtime-library/code-pages.md). Bu üç işlev aynı şekilde davranır. Bu işlevler, yerel ayar tarafından etkilenen — sahip olmayan sürümleri **_l** soneki geçerli yerel ayar için yerel ayara bağlı davranışları; sahip sürümler **_l** soneki Bunun yerine kullanın *yerel ayar* olarak geçirilir. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
+**_wcsnıcmp** ve **_mbsnıcmp** , **_strnıcmp**'nin geniş karakterli ve çok baytlı karakter sürümleridir. **_Wcsnıcmp** bağımsız değişkenleri geniş karakterli dizelerdir; **_mbsnıcmp** olanlar çok baytlı karakter dizeleridir. **_mbsnıcmp** , geçerli çok baytlı kod sayfasına göre çok baytlı karakter dizilerini tanır ve hata üzerinde **_Nlscmperror** döndürür. Daha fazla bilgi için bkz. [kod sayfaları](../../c-runtime-library/code-pages.md). Bu üç işlev, aynı şekilde davranır. Bu işlevler yerel ayar ayarından etkilenir — **_l** sonekine sahip olmayan sürümler, yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır; Bunun yerine **_l** sonekine sahip olan sürümler, geçirilen *yerel ayarı* kullanır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
-Bu işlevlerin tümü kendi parametrelerini doğrular. Ya da *Dize1* veya *dize2* null bir işaretçiyse, açıklanan şekilde geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse, bu işlevler döndürür **_NLSCMPERROR** ayarlayıp **errno** için **EINVAL**.
+Bu işlevlerin hepsi parametrelerini doğrular. *Dize1* veya *dize2* , null Işaretçisiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **_Nlscmperror** döndürür ve **errno** öğesini **EINVAL**olarak ayarlayın.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|**_tcsncicmp**|**_strnicmp**|**_mbsnicmp**|**_wcsnicmp**|
-|**_tcsnicmp**|**_strnicmp**|**_mbsnbicmp**|**_wcsnicmp**|
+|**_tcsncıcmp**|**_strnıcmp**|**_mbsnicmp**|**_wcsnıcmp**|
+|**_tcsnıcmp**|**_strnıcmp**|**_mbsnbicmp**|**_wcsnıcmp**|
 |**_tcsncicmp_l**|**_strnicmp_l**|**_mbsnicmp_l**|**_wcsnicmp_l**|
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_strnicmp**, **_strnicmp_l**|\<String.h >|
-|**_wcsnicmp**, **_wcsnicmp_l**|\<String.h > veya \<wchar.h >|
-|**_mbsnicmp**, **_mbsnicmp_l**|\<Mbstring.h >|
+|**_strnıcmp**, **_strnicmp_l**|\<String. h >|
+|**_wcsnıcmp**, **_wcsnicmp_l**|\<String. h > veya \<wchar. h >|
+|**_mbsnıcmp**, **_mbsnicmp_l**|\<mbstring. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
-Örneğin bakın [strncmp](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md).
+[Strncmp](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)örneğine bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dize düzenlemesi](../../c-runtime-library/string-manipulation-crt.md)<br/>
+[Dize düzenleme](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [strcat, wcscat, _mbscat](strcat-wcscat-mbscat.md)<br/>
 [strcmp, wcscmp, _mbscmp](strcmp-wcscmp-mbscmp.md)<br/>
 [strcpy, wcscpy, _mbscpy](strcpy-wcscpy-mbscpy.md)<br/>
