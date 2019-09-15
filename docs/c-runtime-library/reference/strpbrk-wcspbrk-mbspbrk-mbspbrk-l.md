@@ -1,12 +1,12 @@
 ---
 title: strpbrk, wcspbrk, _mbspbrk, _mbspbrk_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _mbspbrk
 - wcspbrk
 - _mbspbrk_l
 - strpbrk
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -19,7 +19,10 @@ apilocation:
 - ucrtbase.dll
 - api-ms-win-crt-multibyte-l1-1-0.dll
 - api-ms-win-crt-string-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _fstrpbrk
 - _mbspbrk
@@ -44,19 +47,19 @@ helpviewer_keywords:
 - _mbspbrk function
 - mbspbrk_l function
 ms.assetid: 80b504f7-a167-4dde-97ad-4ae3000dc810
-ms.openlocfilehash: 059b0659a8088783c6d169288de486b41a6e8d82
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d6b18ab6dabfb1181f3e65507d27f6afe98a5b9f
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62209573"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70947158"
 ---
-# <a name="strpbrk-wcspbrk-mbspbrk-mbspbrkl"></a>strpbrk, wcspbrk, _mbspbrk, _mbspbrk_l
+# <a name="strpbrk-wcspbrk-_mbspbrk-_mbspbrk_l"></a>strpbrk, wcspbrk, _mbspbrk, _mbspbrk_l
 
-Belirtilen karakter kümelerindeki karakterler için dizeleri tarar.
+Belirtilen karakter kümelerinde karakterler için dizeleri tarar.
 
 > [!IMPORTANT]
-> `_mbspbrk` ve `_mbspbrk_l` Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> `_mbspbrk`ve `_mbspbrk_l` Windows çalışma zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -116,36 +119,36 @@ const unsigned char *_mbspbrk_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*str*<br/>
-Null ile sonlandırılmış, aranan dize.
+*üstbilgisine*<br/>
+Null sonlandırılmış, Aranan dize.
 
 *strCharSet*<br/>
 Null ile sonlandırılmış karakter kümesi.
 
-*Yerel ayar*<br/>
+*ayarlar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Herhangi bir karakterin ilk geçtiği yere bir işaretçi döndürür *strCharSet* içinde *str*, ya da iki dize bağımsız değişkenleri, bir NULL işaretçi herhangi bir karakter ortak sahip.
+*Str*Içindeki *strCharSet* içindeki herhangi bir karakterin ilk oluşumuna yönelik bir işaretçi ya da iki dize bağımsız değişkenlerinin ortak bir karakter yoksa boş bir işaretçi döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-`strpbrk` İşlevi, bir karakterin ilk geçtiği yere bir işaretçi döndürür *str* karakter kümesine ait olan *strCharSet*. Arama, sonlandırıcı null karakteri içermez.
+İşlevi `strpbrk` , *strCharSet*içindeki karakter kümesine ait olan *Str* içindeki bir karakterin ilk oluşumuna yönelik bir işaretçi döndürür. Arama, Sonlandırıcı null karakterini içermiyor.
 
-`wcspbrk` ve `_mbspbrk` geniş karakter ve çok baytlı karakter sürümleridir `strpbrk`. Bağımsız değişkenler ve dönüş değeri `wcspbrk` geniş karakterli dizelerdir; `_mbspbrk` çok baytlı karakter dizeleridir.
+`wcspbrk`ve `_mbspbrk` , öğesinin `strpbrk`geniş karakterli ve çok baytlı karakter sürümleridir. Bağımsız değişkenleri ve dönüş değeri `wcspbrk` geniş karakterli dizelerdir; `_mbspbrk` bunlar çok baytlı karakter dizeleridir.
 
-`_mbspbrk` kendi parametrelerini doğrular. Varsa *str* veya *strCharSet* NULL ise açıklandığı gibi geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse `_mbspbrk` NULL döndürür ve ayarlar `errno` EINVAL için. `strpbrk` ve `wcspbrk` kendi parametrelerini doğrulamazlar. Bu üç işlev aynı şekilde davranır.
+`_mbspbrk`parametrelerini doğrular. *Str* veya *strCharSet* null ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, `_mbspbrk` null döndürür ve EINVAL olarak ayarlar. `errno` `strpbrk`ve `wcspbrk` parametrelerini doğrulamaz. Bu üç işlev, aynı şekilde davranır.
 
-`_mbspbrk` benzer `_mbscspn` dışında `_mbspbrk` türünde bir değer yerine bir işaretçi döndürür [size_t](../../c-runtime-library/standard-types.md).
+`_mbspbrk`, [size_t](../../c-runtime-library/standard-types.md)türünde `_mbscspn` bir değer `_mbspbrk` yerine bir işaretçi döndüren hariç olarak benzerdir.
 
-C'de bu işlevler alır bir **const** ilk bağımsız değişken için bir işaretçi. C++'da, iki aşırı yüklemesi kullanılabilir. Bir işaretçi alan aşırı yükleme **const** bir işaretçi döndürür **const**; olmayan bir işaretçiye alan sürüm**const** olmayan bir işaretçi döndürür**const** . Her iki makro _CRT_CONST_CORRECT_OVERLOADS tanımlanan **const** ve olmayan-**const** bu işlevlerin sürümleri mevcuttur. Olmayan gerektiriyorsa**const** hem de davranışı C++ aşırı _const_return sembolünü.
+C 'de, bu işlevler ilk bağımsız değişken için bir **const** işaretçisi alır. ' C++De, iki aşırı yükleme mevcuttur. **Const** işaretçisine alan aşırı yükleme **const**için bir işaretçi döndürür; **const** olmayan bir işaretçi alan sürüm,**const**olmayan bir işaretçi döndürür. Bu işlevlerin hem **const** hem de**const** olmayan SÜRÜMLERI kullanılabilir değilse makro _CRT_CONST_CORRECT_OVERLOADS tanımlanmıştır. Her iki C++ aşırı yük için**const** olmayan DAVRANıŞLARA ihtiyacınız varsa, _CONST_RETURN sembolünü tanımlayın.
 
-Çıkış değeri yerel LC_CTYPE kategori ayarı ayarından etkilenir; Daha fazla bilgi için [setlocale](setlocale-wsetlocale.md). Bu işlevlerin sürümleri **_l** soneki geçerli yerel ayarı kullanır bu yerel ayara bağlı davranışı için; sürümü ile **_l** soneki, yerel ayar parametresini kullanması hariç, aynıdır Bunun yerine iletilmiş. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
+Çıkış değeri yerel ayarın LC_CTYPE kategori ayarı ayarından etkilenir; daha fazla bilgi için bkz. [setlocale](setlocale-wsetlocale.md). **_L** sonekine sahip olmayan bu işlevlerin sürümleri, yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır; **_l** sonekine sahip sürüm, bunun yerine geçirilen yerel ayar parametresini kullanması dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |`_tcspbrk`|`strpbrk`|`_mbspbrk`|`wcspbrk`|
 |**yok**|**yok**|`_mbspbrk_l`|**yok**|
@@ -154,9 +157,9 @@ C'de bu işlevler alır bir **const** ilk bağımsız değişken için bir işar
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|`strpbrk`|\<String.h >|
-|`wcspbrk`|\<String.h > veya \<wchar.h >|
-|`_mbspbrk`, `_mbspbrk_l`|\<Mbstring.h >|
+|`strpbrk`|\<String. h >|
+|`wcspbrk`|\<String. h > veya \<wchar. h >|
+|`_mbspbrk`, `_mbspbrk_l`|\<mbstring. h >|
 
 Uyumluluk hakkında daha fazla bilgi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -196,7 +199,7 @@ int main( void )
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dize düzenlemesi](../../c-runtime-library/string-manipulation-crt.md)<br/>
+[Dize düzenleme](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [locale](../../c-runtime-library/locale.md)<br/>
 [Çok Baytlı Karakter Sıralarının Yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [strcspn, wcscspn, _mbscspn, _mbscspn_l](strcspn-wcscspn-mbscspn-mbscspn-l.md)<br/>

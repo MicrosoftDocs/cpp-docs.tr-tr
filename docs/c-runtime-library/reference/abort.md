@@ -1,9 +1,9 @@
 ---
 title: durdur
 ms.date: 01/02/2018
-apiname:
+api_name:
 - abort
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,19 +15,22 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-runtime-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - Abort
 helpviewer_keywords:
 - aborting current process
 - abort function
 - processes, aborting
-ms.openlocfilehash: ee07e50504b53e9e363f8b4fc5e9f4414637c449
-ms.sourcegitcommit: effb516760c0f956c6308eeded48851accc96b92
-ms.translationtype: HT
+ms.openlocfilehash: 3f183d6fbf9d7bce7f638e44cdc3f3b450def57b
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 09/12/2019
-ms.locfileid: "70927472"
+ms.locfileid: "70943985"
 ---
 # <a name="abort"></a>durdur
 

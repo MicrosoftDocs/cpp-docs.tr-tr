@@ -1,9 +1,9 @@
 ---
 title: feupdateenv
 ms.date: 04/05/2018
-apiname:
+api_name:
 - feupdateenv
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -14,23 +14,24 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: HeaderDef
+api_type:
+- HeaderDef
 f1_keywords:
 - feupdateenv
 - fenv/feupdateenv
 helpviewer_keywords:
 - feupdateenv function
 ms.assetid: 3d170042-dfd5-4e4f-a55f-038cf2296cc9
-ms.openlocfilehash: 6d553d6899f55f5bdfb3ff313e88abfcb56ab4ec
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8f40cab42e4a89b1fc5a100587b11b0e2aeeb55c
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62334080"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70940984"
 ---
 # <a name="feupdateenv"></a>feupdateenv
 
-Şu anda yükseltilmiş kayan nokta özel durumlarını kaydeder, kayan nokta belirtilen ortam durumunu geri yükler ve ardından kaydedilen kayan nokta özel durumlarını oluşturur.
+Şu anda oluşturulan kayan nokta özel durumlarını kaydeder, belirtilen kayan nokta ortamı durumunu geri yükler ve ardından kaydedilen kayan nokta özel durumlarını yükseltir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -43,23 +44,23 @@ int feupdateenv(
 ### <a name="parameters"></a>Parametreler
 
 *penv*<br/>
-İşaretçi bir **fenv_t** yapılan bir çağrıyla kümesi olarak bir kayan nokta ortamı içeren nesne [fegetenv](fegetenv1.md) veya [feholdexcept](feholdexcept2.md). Varsayılan başlangıç kayan nokta ortam FE_DFL_ENV makrosu kullanarak da belirtebilirsiniz.
+[Fegetenv](fegetenv1.md) veya [feholdexcept](feholdexcept2.md)çağrısıyla ayarlanmış bir kayan nokta ortamı içeren bir **fenv_t** nesnesine yönelik işaretçi. FE_DFL_ENV makrosunu kullanarak varsayılan başlangıç kayan nokta ortamını de belirtebilirsiniz.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Tüm Eylemler başarıyla tamamlandı, 0 döndürür. Aksi takdirde, sıfır olmayan bir değer döndürür.
+Tüm eylemler başarıyla tamamlanırsa 0 döndürür. Aksi takdirde, sıfır dışında bir değer döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Feupdateenv** işlevi, birden fazla eylem gerçekleştirir. İlk olarak, şu anki kayan nokta özel durumu durumu bayrakları otomatik depolama alanında depolar. Ardından, kayan nokta geçerli ortamdan depolanan değere ayarlar **fenv_t** nesne tarafından işaret edilen *penv*. Varsa *penv* değil **FE_DFL_ENV** veya geçerli bir işaret etmiyor **fenv_t** nesnesi, sonraki davranışı tanımsızdır. Son olarak, **feupdateenv** yerel olarak saklanan bir kayan nokta özel durumlarını oluşturur.
+**Feupdateenv** işlevi birden çok eylem gerçekleştirir. İlk olarak, geçerli yükseltilen kayan nokta özel durum bayraklarını otomatik depolamada depolar. Ardından, geçerli kayan nokta ortamını, *penv*tarafından işaret edilen **fenv_t** nesnesinde depolanan değerden ayarlar. *Penv* **FE_DFL_ENV** değilse veya geçerli bir **fenv_t** nesnesine işaret içermiyorsa, sonraki davranış tanımsızdır. Son olarak, **feupdateenv** yerel olarak depolanan kayan nokta özel durumlarını yükseltir.
 
-Bu işlevi kullanmak için erişim kullanarak engelleyebilir kayan nokta iyileştirmelerinin kapatmanız gerekir `#pragma fenv_access(on)` çağrıdan önceki yönerge. Daha fazla bilgi için [fenv_access](../../preprocessor/fenv-access.md).
+Bu işlevi kullanmak için, çağrıdan önce `#pragma fenv_access(on)` yönergesini kullanarak erişimi engelleyebilecek kayan nokta iyileştirmelerini kapatmanız gerekir. Daha fazla bilgi için bkz. [fenv_access](../../preprocessor/fenv-access.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İşlev|C üstbilgisi|C++ üst bilgisi|
+|İşlev|C üstbilgisi|C++üst bilgi|
 |--------------|--------------|------------------|
-|**feupdateenv**|\<fenv.h >|\<cfenv >|
+|**feupdateenv**|\<fenv. h >|\<cfenv >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

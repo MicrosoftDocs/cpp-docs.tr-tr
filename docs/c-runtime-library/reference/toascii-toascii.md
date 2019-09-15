@@ -1,9 +1,9 @@
 ---
 title: toascii, __toascii
 ms.date: 11/04/2016
-apiname:
+api_name:
 - __toascii
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-convert-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - __toascii
 - toascii
@@ -27,16 +30,16 @@ helpviewer_keywords:
 - __toascii function
 - ASCII characters, converting to
 ms.assetid: a07c0608-b0e2-4da2-a20c-7b64d6a9b77c
-ms.openlocfilehash: 22f76bdbdb21eb5b3cc9a226c111e321ee2fd0ce
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 09df829511b38b87cb41e32a59bee9f38a9b8f32
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62155530"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70957468"
 ---
-# <a name="toascii-toascii"></a>toascii, __toascii
+# <a name="toascii-__toascii"></a>toascii, __toascii
 
-Karakterleri 7 bit ASCII için kesilmesi nedeniyle dönüştürür.
+Karakterleri, kesilerek 7 bit ASCII 'ye dönüştürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -54,21 +57,21 @@ Dönüştürülecek karakter.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**__toascii** değerini dönüştürür *c* için 7 bit ASCII aralığı ve sonucu döndürür. Dönüş değeri bir hatayı göstermek için ayrılmış.
+**__toascıı** , *c* değerini 7 bit ASCII aralığına dönüştürür ve sonucu döndürür. Bir hatayı göstermek için ayrılmış dönüş değeri yok.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**__Toascii** yordamı belirli karakterine dönüştürür bir ASCII karakter için düşük düzey 7 bit tarafından kesiliyor. Diğer bir dönüştürme uygulanır.
+**__Toascıı** yordamı, alt sıra 7 bitine kırarak VERILEN karakteri ASCII karakterine dönüştürür. Başka dönüşüm uygulanmaz.
 
-**__Toascii** önişlemci makrosu _CTYPE_DISABLE_MACROS tanımlanmadığı sürece yordamı makro olarak tanımlanır. Geriye dönük uyumluluk için **toascii** makro olarak tanımlanan yalnızca [ &#95; &#95;STDC&#95; &#95; ](../../preprocessor/predefined-macros.md) tanımlı değil veya; 0 olarak tanımlandığında aksi tanımsızdır.
+Önişlemci makrosu _CTYPE_DISABLE_MACROS tanımlanmadığı sürece **__toascıı** yordamı bir makro olarak tanımlanır. Geriye dönük uyumluluk için **toascıı** , yalnızca [ &#95; &#95;stdc&#95; ](../../preprocessor/predefined-macros.md) tanımlanmadığında veya 0 olarak tanımlandığında bir makro olarak tanımlanır; Aksi takdirde, tanımsız olur.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**toascii**, **__toascii**|C: \<ctype.h ><br /><br /> C++: \<cctype > veya \<ctype.h >|
+|**toascıı**, **__toascıı**|C: \<CType. h ><br /><br /> C++: \<cctype > veya \<CType. h >|
 
-**Toascii** makrodur bir POSIX uzantısı ve **__toascii** POSIX uzantıyı Microsoft'a özgü uygulamasıdır. Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+**Toascıı** MAKROSU bir POSIX uzantısıdır ve **__TOASCıı** , POSIX uzantısının Microsoft 'a özgü uygulamasıdır. Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

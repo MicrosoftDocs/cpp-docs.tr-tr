@@ -1,10 +1,10 @@
 ---
 title: _mbsbtype, _mbsbtype_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _mbsbtype_l
 - _mbsbtype
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-multibyte-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - mbsbtype
 - mbsbtype_l
@@ -28,19 +31,19 @@ helpviewer_keywords:
 - _mbsbtype_l function
 - mbsbtype_l function
 ms.assetid: 0d5dd91a-d32d-4f98-ac57-98dfc9e98eac
-ms.openlocfilehash: 5c2927b4e4b68b1284341fe7e767ec50feb21a44
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c474cad9027b7914a08816346e38e954a7200bb5
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62331512"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70952401"
 ---
-# <a name="mbsbtype-mbsbtypel"></a>_mbsbtype, _mbsbtype_l
+# <a name="_mbsbtype-_mbsbtype_l"></a>_mbsbtype, _mbsbtype_l
 
-Bir dizedeki bayt türünü döndürür.
+Bir dize içindeki Byte türünü döndürür.
 
 > [!IMPORTANT]
-> Bu API, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -59,41 +62,41 @@ int _mbsbtype_l(
 ### <a name="parameters"></a>Parametreler
 
 *mbstr*<br/>
-Çok baytlı bir karakter dizisi adresi.
+Çok baytlı karakter dizisinin adresi.
 
-*Sayısı*<br/>
-Baytı dize başından uzaklığı.
+*biriktirme*<br/>
+Dize kafasının bayt kayması.
 
-*Yerel ayar*<br/>
+*ayarlar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_mbsbtype** ve **_mbsbtype_l** belirtilen bayttaki test sonucunu gösteren bir Integer değeri döndürür. Mbctype.h içindeki bildirim sabitleri aşağıdaki tabloda tanımlanır.
+**_mbsbtype** ve **_mbsbtype_l** , belirtilen bayt üzerindeki testin sonucunu gösteren bir tamsayı değeri döndürür. Aşağıdaki tablodaki bildirim sabitleri Mbctype. h içinde tanımlanmıştır.
 
-|Dönüş değeri|Byte türü|
+|Dönüş değeri|Bayt türü|
 |------------------|---------------|
-|**_MBC_SINGLE** (0)|Tek baytlı karakter. Örneğin, kod sayfası 932'de, içinde **_mbsbtype** 0xDF belirtilen bayt 0x20-0x7E veya 0xA1 - aralığında ise 0 değerini döndürür.|
-|**_MBC_LEAD** (1)|Çok baytlı karakterin ön baytı. Örneğin, kod sayfası 932'de, içinde **_mbsbtype** belirtilen bayt 0x81-0x9F veya 0xE0 - aralığında 0xfc aralığında ise, 1 döndürür.|
-|**_MBC_TRAIL** (2)|Çok baytlı karakterin sondaki baytı. Örneğin, kod sayfası 932'de, içinde **_mbsbtype** belirtilen bayt 0x40-0x7E veya 0x80 – 0xFC aralığındaysa 2 döndürür.|
-|**_MBC_ILLEGAL** (-1)|**NULL** dize, geçersiz karakter veya boş bayt uzaklığındaki baytı önce bulunan *sayısı* içinde *mbstr*.|
+|**_MBC_SİNGLE** (0|Tek baytlık karakter. Örneğin, kod sayfası 932 ' de, belirtilen bayt 0x20-0x7E veya 0xA1 – 0xDF aralığı içindeyse, **_mbsbtype** 0 değerini döndürür.|
+|**_MBC_LİDER** (1|Çok baytlı karakterin ön baytı. Örneğin, kod sayfası 932 ' de, belirtilen bayt 0x81-0x9F veya 0xE0-0xFC aralığında yer alıyorsa, **_mbsbtype** 1 değerini döndürür.|
+|**_MBC_İZ** (|Çok baytlı karakterin sondaki baytı. Örneğin, kod sayfası 932 ' de, belirtilen bayt 0x40-0x7E veya 0x80 – 0xFC aralığında ise, **_mbsbtype** 2 değerini döndürür.|
+|**_MBC_GEÇERSİZ** (-1)|*Mbstr*içindeki konum *sayısında* bayttan önce **null** dize, geçersiz karakter veya null bayt bulundu.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Mbsbtype** işlevi çok baytlı karakter dizesindeki bir baytın türünü belirler. İşlevi yalnızca uzaklığındaki baytı inceler *sayısı* içinde *mbstr*, belirlenen bayttan önceki geçersiz karakterleri yok sayılıyor.
+**_Mbsbtype** işlevi çok baytlı bir karakter dizesindeki bir baytın türünü belirler. İşlev, belirtilen bayttan önceki geçersiz karakterleri yoksayarak yalnızca *mbstr*içindeki konum *sayısında* bulunan baytı inceler.
 
-Çıkış değeri ayarından etkilenir **LC_CTYPE** yerel ayarının kategori ayarına; bkz: [setlocale](setlocale-wsetlocale.md) daha fazla bilgi için. Bu işlevin sürümünü **_l** soneki, bu yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır sürümüyle **_l** soneki, onu kullanmalarıdır iletilmiş yerel ayar parametresini aynıdır Bunun yerine. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
+Çıkış değeri yerel ayarın **LC_CTYPE** kategori ayarı ayarından etkilenir; daha fazla bilgi için bkz. [setlocale](setlocale-wsetlocale.md) . Bu işlevin **_l** soneki olmadan sürümü, yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır; **_l** sonekine sahip sürüm, bunun yerine geçirilen yerel ayar parametresini kullanması dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
-Giriş dizesi **NULL**, açıklanan şekilde geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse **errno** ayarlanır **EINVAL** ve işlev döndürür **_MBC_ILLEGAL**.
+Giriş dizesi **null**Ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, **errno** **EINVAL** olarak ayarlanır ve Işlev **_mbc_geçersiz**döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|İsteğe bağlı başlık|
 |-------------|---------------------|---------------------|
-|**_mbsbtype**|\<Mbstring.h >|\<Mbctype.h > *|
-|**_mbsbtype_l**|\<Mbstring.h >|\<Mbctype.h > *|
+|**_mbsbtype**|\<mbstring. h >|\<Mbctype. h > *|
+|**_mbsbtype_l**|\<mbstring. h >|\<Mbctype. h > *|
 
-\* Dönüş değerleri kullanılan bildirim sabitleri için.
+\*Dönüş değeri olarak kullanılan bildirim sabitleri için.
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

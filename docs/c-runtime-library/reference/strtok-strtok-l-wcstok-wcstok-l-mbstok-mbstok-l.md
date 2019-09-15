@@ -1,14 +1,14 @@
 ---
 title: strtok, _strtok_l, wcstok, _wcstok_l, _mbstok, _mbstok_l
 ms.date: 03/25/2019
-apiname:
+api_name:
 - _mbstok_l
 - _mbstok
 - wcstok
 - _mbstok
 - strtok
 - _wcstok_l
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -21,7 +21,10 @@ apilocation:
 - ucrtbase.dll
 - api-ms-win-crt-multibyte-l1-1-0.dll
 - api-ms-win-crt-string-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _mbstok
 - strtok
@@ -45,12 +48,12 @@ helpviewer_keywords:
 - _tcstok_l function
 - strtok_l function
 ms.assetid: 904cb734-f0d7-4d77-ba81-4791ddf461ae
-ms.openlocfilehash: 13fbc0e305f7ad183db06ec0060b2059b4964fe7
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 62ed9edc6ec5a7ee60223f1c5e908aa14f421a25
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69500790"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70957649"
 ---
 # <a name="strtok-_strtok_l-wcstok-_wcstok_l-_mbstok-_mbstok_l"></a>strtok, _strtok_l, wcstok, _wcstok_l, _mbstok, _mbstok_l
 
@@ -113,7 +116,7 @@ Kullanılacak yerel ayar.
 > [!IMPORTANT]
 > Bu işlevler, bir arabellek taşması sorunu ile ilgili olası bir tehdit doğurur. Arabellek taşması sorunları, sistem saldırılarına karşı sık kullanılan bir yöntemdir ve bu da garanti edilmemiş ayrıcalık yükselmesine neden olur. Daha fazla bilgi için bkz. [arabellek taşmalarını önleme](/windows/win32/SecBP/avoiding-buffer-overruns).
 
-**Strtok**öğesine yapılan ilk çağrıda, işlev baştaki sınırlayıcıları atlar ve *strToken*'daki ilk belirtece bir işaretçi döndürür ve belirteci null karakterle sonlandırıyor. **Strtok**öğesine yapılan bir dizi çağrı Ile *strToken* 'ın geri kalanlarından daha fazla belirteç bozulabilir. Her **strtok** çağrısı, bu çağrı tarafından döndürülen belirteçten sonra bir null karakter ekleyerek *strToken* 'ı değiştirir. *StrToken*'dan bir sonraki belirteci okumak için, *strToken* bağımsız değişkeni olarak bir **null** değer ile **strtok** çağrısı yapın. **Null** *strToken* bağımsız değişkeni, **strtok** 'ın değiştirilmiş *strToken*'da bir sonraki belirteci aramasına neden olur. *Strsınırlandıran* bağımsız değişkeni, bir sonraki çağrıdan bir değer alabilir ve bu sayede sınırlayıcılar kümesi farklılık gösterebilir.
+**Strtok**öğesine yapılan ilk çağrıda, işlev baştaki sınırlayıcıları atlar ve *strToken*'daki ilk belirtece bir işaretçi döndürür ve belirteci null karakterle sonlandırıyor. **Strtok**öğesine yapılan bir dizi çağrı Ile *strToken* 'ın geri kalanlarından daha fazla belirteç bozulabilir. Her **strtok** çağrısı, bu çağrı tarafından döndürülen **belirteçten** sonra bir null karakter ekleyerek *strToken* 'ı değiştirir. *StrToken*'dan bir sonraki belirteci okumak için, *strToken* bağımsız değişkeni olarak bir **null** değer ile **strtok** çağrısı yapın. **Null** *strToken* bağımsız değişkeni, **strtok** 'ın değiştirilmiş *strToken*'da bir sonraki belirteci aramasına neden olur. *Strsınırlandıran* bağımsız değişkeni, bir sonraki çağrıdan bir değer alabilir ve bu sayede sınırlayıcılar kümesi farklılık gösterebilir.
 
 Çıkış değeri, yerel ayarın **LC_CTYPE** kategori ayarı ayarından etkilenir. Daha fazla bilgi için bkz. [setlocale](setlocale-wsetlocale.md).
 

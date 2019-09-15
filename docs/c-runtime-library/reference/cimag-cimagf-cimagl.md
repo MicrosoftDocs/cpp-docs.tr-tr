@@ -1,11 +1,11 @@
 ---
 title: cimag, cimagf, cimagl
 ms.date: 11/04/2016
-apiname:
+api_name:
 - cimag
 - cimagf
 - cimagl
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - cimagf
 - cimagl
@@ -30,16 +33,16 @@ helpviewer_keywords:
 - cimagf function
 - cimagl function
 ms.assetid: 0d8836f5-d61d-44cd-8731-6f75cb776def
-ms.openlocfilehash: 6f5067967aa62894abb5316f60074b5125b1cba1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 38eef416afb078614ef26ab5d7c8810f46dd9a85
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62347606"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70939159"
 ---
 # <a name="cimag-cimagf-cimagl"></a>cimag, cimagf, cimagl
 
-Karmaşık bir sayıyı sanal kısmını alır.
+Karmaşık bir sayının sanal kısmını alır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -57,21 +60,21 @@ long double cimag( _Lcomplex z );  // C++
 ### <a name="parameters"></a>Parametreler
 
 *z*<br/>
-Karmaşık bir sayıyı.
+Karmaşık bir sayı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Sanal bir parçası *z*.
+*Z*'nin sanal bölümü.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Çünkü C++ aşırı yüklemesi, sağlayan yüklerini çağırabilirsiniz **cimag** Süren **_Fcomplex** veya **_Lcomplex** değerleri ve dönüş **float**veya **uzun** **çift** değerleri. C programında **cimag** her zaman alan bir **_Dcomplex** döndürür ve değeri bir **çift** değeri.
+Aşırı C++ yüklemeye izin verdiğinden, **_Fcomplex** veya **_lcomplex** değerlerini alan ve **float** veya **Long** **Double** değerlerini döndüren **cımag** 'nin aşırı yüklerini çağırabilirsiniz. C programında, **cımag** her zaman bir **_dcomplex** değeri alır ve bir **Double** değeri döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|C üstbilgisi|C++ üst bilgisi|
+|Yordam|C üstbilgisi|C++üst bilgi|
 |-------------|--------------|------------------|
-|**cimag**, **cimagf**, **cimagl**|\<Complex.h >|\<ccomplex >|
+|**cımag**, **cımıknatıf**, **cımagl**|\<karmaşık. h >|\<ccomplex >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

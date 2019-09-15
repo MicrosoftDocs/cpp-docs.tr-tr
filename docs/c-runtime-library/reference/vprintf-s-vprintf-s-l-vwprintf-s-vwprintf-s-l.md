@@ -1,12 +1,12 @@
 ---
 title: vprintf_s, _vprintf_s_l, vwprintf_s, _vwprintf_s_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _vwprintf_s_l
 - vwprintf_s
 - _vprintf_s_l
 - vprintf_s
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - vprintf_s
 - vwprintf_s
@@ -35,12 +38,12 @@ helpviewer_keywords:
 - formatted text [C++]
 - vprintf_s function
 ms.assetid: cf864996-a530-4b40-9c30-54c4cef439c8
-ms.openlocfilehash: 1bca7c39ebea75a0981c2a9a8238c854930353ea
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 85da6993048982db35320a7d9c6be101ff6d7fb4
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69499136"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70945512"
 ---
 # <a name="vprintf_s-_vprintf_s_l-vwprintf_s-_vwprintf_s_l"></a>vprintf_s, _vprintf_s_l, vwprintf_s, _vwprintf_s_l
 
@@ -92,7 +95,7 @@ Bu ve diğer hata kodları hakkında bilgi için bkz. [_doserrno, errno, _sys_er
 
 Bu işlevlerin her biri bağımsız değişken listesi için bir işaretçi alır ve sonra verilen verileri **stdout**'a biçimlendirir ve yazar.
 
-Bu işlevlerin güvenli sürümleri **vprintf** ve eprintf öğesinden yalnızca güvenli sürümlerin, biçim dizesinin geçerli biçimlendirme karakterleri içerip içermemesini denetlerindekilerle farklılık gösterir.
+Bu işlevlerin güvenli sürümleri **vprintf** ve **eprintf** öğesinden yalnızca güvenli sürümlerin, biçim dizesinin geçerli biçimlendirme karakterleri içerip içermemesini denetlerindekilerle farklılık gösterir.
 
 **vwprintf_s** , **vprintf_s**öğesinin geniş karakterli sürümüdür; Akış ANSI modunda açılırsa iki işlev aynı şekilde davranır. **vprintf_s** Şu anda UNICODE bir akışa çıktıyı desteklemez.
 

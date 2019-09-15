@@ -1,12 +1,12 @@
 ---
 title: strerror_s, _strerror_s, _wcserror_s, __wcserror_s
 ms.date: 11/04/2016
-apiname:
+api_name:
 - __wcserror_s
 - _strerror_s
 - _wcserror_s
 - strerror_s
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -18,7 +18,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-runtime-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - wcserror_s
 - __wcserror_s
@@ -39,16 +42,16 @@ helpviewer_keywords:
 - wcserror_s function
 - error messages, getting
 ms.assetid: 9e5b15a0-efe1-4586-b7e3-e1d7c31a03d6
-ms.openlocfilehash: 00ff9d0df1a78d07eaa509201fb998b30396cc4c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f8d461566f748ce5af3d4b2aab443b5966c27dd7
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62353828"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70958161"
 ---
-# <a name="strerrors-strerrors-wcserrors-wcserrors"></a>strerror_s, _strerror_s, _wcserror_s, __wcserror_s
+# <a name="strerror_s-_strerror_s-_wcserror_s-__wcserror_s"></a>strerror_s, _strerror_s, _wcserror_s, __wcserror_s
 
-Bir sistem hatası iletisi alın (**strerror_s**, **_wcserror_s**) veya bir kullanıcı tarafından sağlanan hata iletisi yazdırın (**_strerror_s**, **__wcserror_s** ). Bunlar sürümleridir [strerror, _strerror, _wcserror, \__wcserror](strerror-strerror-wcserror-wcserror.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
+Bir sistem hata iletisi (**strerror_s**, **_wcserror_s**) veya Kullanıcı tarafından sağlanan bir hata iletisi ( **_strerror_s**, **__wcserror_s**) alın. Bu, CRT [hata, _strerror, _wcserror \_, _wcserror](strerror-strerror-wcserror-wcserror.md) , [CRT içindeki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklandığı gibi güvenlik geliştirmeleri içeren sürümleridir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -97,11 +100,11 @@ errno_t __wcserror_s(
 
 ### <a name="parameters"></a>Parametreler
 
-*Arabellek*<br/>
+*arabelleğin*<br/>
 Hata dizesini tutan arabellek.
 
 *numberOfElements*<br/>
-Arabellek boyutu.
+Arabelleğin boyutu.
 
 *errnum*<br/>
 Hata numarası.
@@ -111,18 +114,18 @@ Kullanıcı tarafından sağlanan ileti.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa sıfır, bir hata kodu.
+Başarılıysa sıfır, hata durumunda hata kodu.
 
-### <a name="error-condtions"></a>Hata durumları
+### <a name="error-condtions"></a>Hata onayları
 
-|*Arabellek*|*numberOfElements*|*strErrMsg*|İçeriğini *arabelleği*|
+|*arabelleğin*|*numberOfElements*|*strErrMsg*|*Arabelleğin* içeriği|
 |--------------|------------------------|-----------------|--------------------------|
-|**NULL**|Tüm|Tüm|yok|
-|Tüm|0|Tüm|değiştirilmedi|
+|**DEĞER**|Kaydedilmemiş|Kaydedilmemiş|yok|
+|Kaydedilmemiş|0|Kaydedilmemiş|değiştirilmedi|
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Strerror_s** işlevini eşlemeleri *errnum* bir hata mesajı dizesine eşliyor, dize döndüren *arabellek*. **_strerror_s** hata numarasını almaz geçerli değerini kullanan **errno** uygun iletiyi belirlemek için. Ne **strerror_s** ya da **_strerror_s** aslında iletiyi yazdırmaz: Bunun için gibi bir çıktı işlevi çağırmanız gerekir [fprintf](fprintf-fprintf-l-fwprintf-fwprintf-l.md):
+**Strerror_s** işlevi *errnum* 'ı bir hata iletisi dizesine eşler, dizeyi *arabelleğe*döndürür. **_strerror_s** hata numarasını almaz; uygun iletiyi belirleyebilmek için **errno** geçerli değerini kullanır. **Strerror_s** veya **_strerror_s** aslında iletiyi yazdırmaz: Bunun için [fprintf](fprintf-fprintf-l-fwprintf-fwprintf-l.md)gibi bir çıkış işlevi çağırmanız gerekir:
 
 ```C
 if (( _access( "datafile",2 )) == -1 )
@@ -132,25 +135,25 @@ if (( _access( "datafile",2 )) == -1 )
 }
 ```
 
-Varsa *strErrMsg* olduğu **NULL**, **_strerror_s** bir dize döndürür *arabellek* son kitaplık çağrısı için hata iletisinin içeren Bu bir hataya neden oldu. Hata iletisi dizesi, yeni satır karakteri ('\n') sonlandırılır. Varsa *strErrMsg* eşit değildir **NULL**, ardından **_strerror_s** bir dize döndürür *arabellek* (sırasıyla) dize iletinizin içeren bir iki nokta üst üste, boşluk, hata ve yeni satır karakteri oluşturan son kitaplık çağrısı için sistem hatası iletisi. Dize iletiniz en fazla 94 karakter uzunluğunda olabilir.
+*StrErrMsg* **null**ise, **_strerror_s** bir hata üreten son kitaplık çağrısının sistem hata iletisini içeren *arabellekte* bir dize döndürür. Hata iletisi dizesi yeni satır karakteri (' \n ') tarafından sona erdirildi. *StrErrMsg* , **null**değerine eşit değilse, **_strerror_s** dize iletinizi, iki nokta üst üste, bir boşluğu, bir hata üreten son kitaplık çağrısının sistem hata iletisini ve yeni bir *satır içeren bir* dize döndürür. inde. Dize iletiniz en fazla 94 karakter uzunluğunda olabilir.
 
-Uzunluğunu aşarsa, bu işlevlerin hata iletisini keser *numberOfElements* -1. İçerisindeki sonuç dizesi *arabellek* her zaman boş sonlandırılmıştır.
+Bu işlevler, uzunluğu *numberOfElements* -1 ' i aşarsa hata iletisini keser. *Arabellekte* elde edilen dize her zaman null ile sonlandırılır.
 
-Gerçek hata numarası **_strerror_s** değişkeninde depolanan [errno](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md). Sistem hata mesajlarına değişken üzerinden erişilen [_sys_errlist](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md), hata numarasıyla sıralanan mesajlar dizisi olan. **_strerror_s** kullanarak uygun hata iletisine erişir **errno** değişkenine bir dizin olarak değer **_sys_errlist**. Değişkenin değerini [_sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) içindeki öğelerin maksimum sayısını olarak tanımlanan **_sys_errlist** dizisi. Doğru sonuçlar üretmek için çağrı **_strerror_s** sonra hemen bir yordamı ile ilgili bir hata döndürür. Aksi takdirde, izleyen çağrılar **strerror_s** veya **_strerror_s** üzerine yazıp **errno** değeri.
+**_Strerror_s** için gerçek hata numarası [errno](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)değişkeninde depolanır. Sistem hata iletilerine, hata numarasına göre sıralanmış bir ileti dizisi olan [_sys_errlist](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)değişkeni üzerinden erişilir. **_strerror_s** , **errno** değeri, **_sys_errlist**değişkenine bir dizin olarak kullanarak uygun hata iletisine erişir. [_Sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) değişkeninin değeri, **_sys_errlist** dizisindeki en fazla öğe sayısı olarak tanımlanmıştır. Doğru sonuçlar oluşturmak için, bir kitaplık yordamı bir hatayla döndürüldüğünde hemen sonra **_strerror_s** çağırın. Aksi halde, **strerror_s** veya **_strerror_s** için sonraki çağrılar **errno** değerinin üzerine yazabilir.
 
-**_wcserror_s** ve **__wcserror_s** geniş karakterli sürümleridir **strerror_s** ve **_strerror_s**sırasıyla.
+**_wcserror_s** ve **__wcserror_s** , sırasıyla **strerror_s** ve **_strerror_s**'in geniş karakterli sürümleridir.
 
-Bu işlevler kendi parametrelerini doğrular. Arabellek ise **NULL** veya boyut parametresi 0 olursa açıklandığı gibi geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md) . Yürütmenin devam etmesine izin verilirse, İşlevler döndürür **EINVAL** ayarlayıp **errno** için **EINVAL**.
+Bu işlevler, parametrelerini doğrular. Buffer **null** ise veya boyut parametresi 0 Ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md) bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, işlevler **EINVAL** döndürür ve **errno** , **EINVAL**olarak ayarlanır.
 
-**_strerror_s**, **_wcserror_s**, ve **__wcserror_s** ANSI tanımının bir parçası değildir ancak bunun yerine Microsoft uzantılarıdır. Bunları, burada taşınabilirliğinin istendiği kullanmayın; ANSI uyumluluğu için kullanmak **strerror_s** yerine.
+**_strerror_s**, **_wcserror_s**ve **__wcserror_s** , ANSI tanımının bir parçası değildir ancak bunun yerine Microsoft uzantısı olur. Bunları, taşınabilirliği istediğiniz yerde kullanmayın; ANSI uyumluluğu için bunun yerine **strerror_s** kullanın.
 
-C++ dilinde bu işlevlerin kullanılması şablon aşırı yüklemeleriyle basitleştirilmiştir; aşırı yüklemeler arabellek uzunluğu bir boyut bağımsız değişkeni belirtme gereksinimi ortadan otomatik olarak çıkarabilir. Daha fazla bilgi için [güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
+' C++De, bu işlevlerin kullanılması şablon aşırı yüklemeleri tarafından basitleştirilmiştir; aşırı yüklemeler arabellek uzunluğunu otomatik olarak çıkarabilir ve bir boyut bağımsız değişkeni belirtme gereksinimini ortadan kaldırır. Daha fazla bilgi için bkz. [Güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 
-Bu işlevlerin hata ayıklama sürümleri, ilk arabellek 0xFD ile doldurur. Bu davranışı devre dışı bırakmak için [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md).
+Bu işlevlerin hata ayıklama sürümleri ilk olarak arabelleği 0xFD ile doldurur. Bu davranışı devre dışı bırakmak için [_Crtsetdebugfillthreshold](crtsetdebugfillthreshold.md)kullanın.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_tcserror_s**|**strerror_s**|**strerror_s**|**_wcserror_s**|
 
@@ -158,18 +161,18 @@ Bu işlevlerin hata ayıklama sürümleri, ilk arabellek 0xFD ile doldurur. Bu d
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**strerror_s**, **_strerror_s**|\<String.h >|
-|**_wcserror_s**, **__wcserror_s**|\<String.h > veya \<wchar.h >|
+|**strerror_s**, **_strerror_s**|\<String. h >|
+|**_wcserror_s**, **__wcserror_s**|\<String. h > veya \<wchar. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
-Örneğin bakın [perror](perror-wperror.md).
+Bkz. [pError](perror-wperror.md)için örneğe bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dize düzenlemesi](../../c-runtime-library/string-manipulation-crt.md)<br/>
+[Dize düzenleme](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [clearerr](clearerr.md)<br/>
 [ferror](ferror.md)<br/>
 [perror, _wperror](perror-wperror.md)<br/>

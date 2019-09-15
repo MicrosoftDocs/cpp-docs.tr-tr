@@ -1,12 +1,12 @@
 ---
 title: _fprintf_p, _fprintf_p_l, _fwprintf_p, _fwprintf_p_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _fwprintf_p
 - _fprintf_p_l
 - _fwprintf_p_l
 - _fprintf_p
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _fprintf_p
 - _ftprintf_p
@@ -41,16 +44,16 @@ helpviewer_keywords:
 - ftprintf_p_l function
 - fwprintf_p_l function
 ms.assetid: 46b082e1-45ba-4383-9ee4-97015aa50bc6
-ms.openlocfilehash: db9e9a746193c7bf35913d6792d87aa9ba85fa79
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6509aba4097b3b37443443b533ebd9fb92c923a1
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62333150"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70956997"
 ---
-# <a name="fprintfp-fprintfpl-fwprintfp-fwprintfpl"></a>_fprintf_p, _fprintf_p_l, _fwprintf_p, _fwprintf_p_l
+# <a name="_fprintf_p-_fprintf_p_l-_fwprintf_p-_fwprintf_p_l"></a>_fprintf_p, _fprintf_p_l, _fwprintf_p, _fwprintf_p_l
 
-Baskı siparişi biçimlendirilmiş verileri bir akışa.
+Biçimli verileri bir akışa yazdırır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -81,34 +84,34 @@ int _fwprintf_p_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*Stream*<br/>
-İşaretçi **dosya** yapısı.
+*ka*<br/>
+**Dosya** yapısına yönelik işaretçi.
 
-*Biçim*<br/>
+*format*<br/>
 Biçim denetimi dizesi.
 
-*Bağımsız değişken*<br/>
+*değişkendir*<br/>
 İsteğe bağlı bağımsız değişkenler.
 
-*Yerel ayar*<br/>
+*ayarlar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_fprintf_p** ve **_fwprintf_p** yazılan karakter sayısını döndürür veya bir hata oluştuğunda negatif bir değer döndürür.
+**_fprintf_p** ve **_fwprintf_p** , yazılan karakter sayısını döndürür veya bir çıkış hatası oluştuğunda negatif bir değer döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_fprintf_p** biçimlendirir ve bir dizi karakter ve değerlerini çıktıya yazdırır *stream*. Her işlev *bağımsız değişken* (varsa) dönüştürülür ve karşılık gelen kapsamındaki biçim belirtimine göre çıkışı *biçimi*. İçin **_fprintf_p**, *biçimi* bağımsız değişken sahip aynı söz dizimi ve sahip olarak kullanım **_printf_p**. Bu işlevler, biçim dizesi tarafından kullanılan parametrelerin sırasını değiştirilebilir anlamı konumsal parametreleri destekler. Konumsal parametreler hakkında daha fazla bilgi için bkz. [printf_p konumsal parametreler](../../c-runtime-library/printf-p-positional-parameters.md).
+**_fprintf_p** , çıkış *akışına*bir dizi karakter ve değer yazar. Her bir işlev *bağımsız değişkeni* (varsa) dönüştürülür ve karşılık *gelen biçim belirtimine göre çıkış.* **_Fprintf_p**için, *Biçim* bağımsız değişkeni aynı sözdizimine sahiptir ve **_printf_p**içinde bulunan kullanır. Bu işlevler konumsal parametreleri destekler, yani biçim dizesi tarafından kullanılan parametrelerin sırası değiştirilebilir. Konumsal parametreler hakkında daha fazla bilgi için bkz. [Printf_p konumsal Parameters](../../c-runtime-library/printf-p-positional-parameters.md).
 
-**_fwprintf_p** geniş karakterli sürümüdür **_fprintf_p**; **_fwprintf_p**, *biçimi* geniş karakterli bir dizedir. Bu işlevler, akış ANSI modunda açıldığında aynı şekilde davranır. **_fprintf_p** UNICODE akışına çıkış şu anda desteklemiyor.
+**_fwprintf_p** , **_fprintf_p**öğesinin geniş karakterli bir sürümüdür; **_fwprintf_p**' de, *Biçim* geniş karakterli bir dizedir. Bu işlevler akış ANSI modunda açılırsa aynı şekilde davranır. **_fprintf_p** Şu anda UNICODE bir akışa çıktıyı desteklemez.
 
-Sahip bu işlevlerin sürümleri **_l** sonekine, geçerli yerel ayarı yerine iletilen yerel ayar parametresini kullanmalarıdır.
+**_L** sonekine sahip bu işlevlerin sürümleri, geçerli yerel ayar yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır.
 
 > [!IMPORTANT]
-> Emin *biçimi* kullanıcı tanımlı bir dize değil.
+> *Biçimin* Kullanıcı tanımlı bir dize olmadığından emin olun.
 
-Güvenli olmayan sürümler gibi (bkz [fprintf, _fprintf_l, fwprintf, _fwprintf_l](fprintf-fprintf-l-fwprintf-fwprintf-l.md)), bu işlevler kendi parametrelerini doğrular ve açıklandığı gibi geçersiz parametre işleyicisini çağırır [parametredoğrulama](../../c-runtime-library/parameter-validation.md), ya da *stream* veya *biçimi* null bir işaretçiyse veya tüm bilinmeyen veya hatalı oluşturulmuş biçimlendirme tanımlayıcıları varsa. Yürütmenin devam etmesine izin verilirse, İşlevler -1 döndürür ve **errno** için **EINVAL**.
+Güvenli olmayan sürümler gibi (bkz. [fprintf, _fprintf_l, fwprintf, _fwprintf_l](fprintf-fprintf-l-fwprintf-fwprintf-l.md)), bu işlevler parametrelerini doğrular ve [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır, ya da *Stream* veya  *biçim* null bir işaretçisidir veya bilinmeyen veya hatalı biçimlendirilmiş biçimlendirme belirticileri vardır. Yürütmenin devam etmesine izin veriliyorsa, işlevler-1 döndürür ve **errno** , **EINVAL**olarak ayarlanır.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -117,14 +120,14 @@ Güvenli olmayan sürümler gibi (bkz [fprintf, _fprintf_l, fwprintf, _fwprintf_
 |**_ftprintf_p**|**_fprintf_p**|**_fprintf_p**|**_fwprintf_p**|
 |**_ftprintf_p_l**|**_fprintf_p_l**|**_fprintf_p_l**|**_fwprintf_p_l**|
 
-Daha fazla bilgi için [biçim belirtimleri](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).
+Daha fazla bilgi için bkz. [Biçim belirtimleri](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**_fprintf_p**, **_fprintf_p_l**|\<stdio.h >|
-|**_fwprintf_p**, **_fwprintf_p_l**|\<stdio.h > veya \<wchar.h >|
+|**_fprintf_p**, **_fprintf_p_l**|\<stdio. h >|
+|**_fwprintf_p**, **_fwprintf_p_l**|\<stdio. h > veya \<wchar. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -174,7 +177,7 @@ this is a string
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Stream g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [_cprintf, _cprintf_l, _cwprintf, _cwprintf_l](cprintf-cprintf-l-cwprintf-cwprintf-l.md)<br/>
 [fscanf, _fscanf_l, fwscanf, _fwscanf_l](fscanf-fscanf-l-fwscanf-fwscanf-l.md)<br/>
 [sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>

@@ -1,9 +1,9 @@
 ---
 title: setvbuf
 ms.date: 11/04/2016
-apiname:
+api_name:
 - setvbuf
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - setvbuf
 helpviewer_keywords:
@@ -23,16 +26,16 @@ helpviewer_keywords:
 - stream buffering
 - setvbuf function
 ms.assetid: 6aa5aa37-3408-4fa0-992f-87f9f9c4baea
-ms.openlocfilehash: d4336c6cc478a035fcc0b9b059a7161d58bc4442
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 38b6474f550107a8edd941c7112ba98891ab3c12
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62356322"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70948191"
 ---
 # <a name="setvbuf"></a>setvbuf
 
-Akışı arabelleğe alma ve arabellek boyutu denetler.
+Akış arabelleği ve arabellek boyutunu denetler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -47,49 +50,49 @@ int setvbuf(
 
 ### <a name="parameters"></a>Parametreler
 
-*Stream*<br/>
-İşaretçi **dosya** yapısı.
+*ka*<br/>
+**Dosya** yapısına yönelik işaretçi.
 
-*Arabellek*<br/>
-Kullanıcı tarafından ayrılan bir arabellek.
+*arabelleğin*<br/>
+Kullanıcı tarafından ayrılan arabellek.
 
-*Modu*<br/>
+*modundaysa*<br/>
 Arabelleğe alma modu.
 
-*Boyutu*<br/>
-Arabellek boyutu bayt cinsinden. İzin verilen aralık: 2 < = *boyutu* < = INT_MAX (2147483647). Dahili olarak, için sağlanan değer *boyutu* 2'in en yakın katına yuvarlanır.
+*boyutla*<br/>
+Bayt cinsinden arabellek boyutu. İzin verilen Aralık: 2 < = *size* < = INT_MAX (2147483647). Dahili olarak, *Boyut* için sağlanan değer, 2 ' nin en yakın katına yuvarlanır.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa 0 döndürür.
+Başarılıysa 0 döndürür.
 
-Varsa *stream* olduğu **NULL**, veya *modu* veya *boyutu* olduğu değil geçerli değişiklik içinde geçersiz parametre işleyicisi, açıklanan şekilde çağrılır [Parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için bu işlev -1 döndürür ve kümeleri yürütülmesine izin veriliyorsa **errno** için **EINVAL**.
+*Stream* **null**ise veya *mod* veya *Boyut* geçerli bir değişiklik içinde değilse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev-1 döndürür ve **errno** 'ı **EINVAL**olarak ayarlar.
 
-Bunlar ve diğer hata kodları hakkında daha fazla bilgi için bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Bu ve diğer hata kodları hakkında bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Setvbuf** işlevine izin verir, her iki kez arabelleğe alma denetlemek ve arabellek boyutu için program *stream*. *Akış* , açıldıktan sonra bir g/ç işlemi gerçekleştirmedi açık bir dosyaya başvurmalıdır. Dizi tarafından işaret edilen *arabellek* olduğu sürece bir arabellek olarak kullanılan **NULL**, bu durumda **setvbuf** kullandığı otomatik olarak ayrılan bir arabellek uzunluğu  *boyutu*/2 \* 2 baytı.
+**Setvbuffer** işlevi, programın *akış*için hem arabelleğe alma hem de arabellek boyutunu denetlemesine izin verir. *akış* , açılmasından bu yana bir g/ç işlemi olmayan açık bir dosyaya başvurmalıdır. *Arabelleğe* göre işaret eden dizi, **null**olmadığı sürece arabellek olarak kullanılır. Bu durumda, **setvbuffer** , uzunluk *boyutu*/2 \* 2 bayt olan otomatik olarak ayrılmış bir arabellek kullanır.
 
-Modu olmalıdır **_ıofbf**, **_ıolbf**, veya **_ıonbf**. Varsa *modu* olduğu **_ıofbf** veya **_ıolbf**, ardından *boyutu* arabellek boyutu kullanılır. Varsa *modu* olduğu **_ıonbf**, akış arabellekten çıkarılan ve *boyutu* ve *arabellek* göz ardı edilir. Değerleri *modu* ve anlamlarını:
+Mod **_IOFBF**, **_iolbf**veya **_IONBF**olmalıdır. *Mod* **_Iofbf** veya **_iolbf**ise, *Boyut* arabelleğin boyutu olarak kullanılır. *Mod* **_IONBF**ise, akış arabelleğe alınmamış ve *Boyut* ve *arabellek* yok sayılır. *Mod* ve anlamları değerleri şunlardır:
 
-|*modu* değeri|Açıklama|
+|*mod* değeri|Açıklama|
 |-|-|
-| **_IOFBF** | Tam arabelleğe; diğer bir deyişle, *arabellek* arabellek olarak kullanılır ve *boyutu* arabellek boyutu kullanılır. Varsa *arabellek* olduğu **NULL**, otomatik olarak ayrılan bir arabellek *boyutu* bayt uzunluğundadır kullanılır. |
-| **_IOLBF** | Bazı sistemler için bu satırı arabelleğe almayı sağlar. Ancak, Win32 için aynı davranıştır **_ıofbf** -tam arabelleğe alma. |
-| **_IONBF** | Arabellek kullanılan, bakılmaksızın *arabellek* veya *boyutu*. |
+| **_IOFBF** | Tam arabelleğe alma; diğer bir deyişle *, arabellek* ve *Boyut* arabelleği boyutu olarak kullanılır. *Arabellek* **null**ise, otomatik olarak ayrılan arabellek *boyutu* baytları kullanılır. |
+| **_IOLBF** | Bazı sistemlerde bu, satır arabelleğe almayı sağlar. Ancak, Win32 için davranış **_IOFBF** -Full arabelleğe alma ile aynıdır. |
+| **_IONBF** | *Arabellek veya* *boyuttan*bağımsız olarak hiçbir arabellek kullanılmaz. |
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**setvbuf**|\<stdio.h >|
+|**setvbuf**|\<stdio. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 
-Tüm sürümleri [C çalışma zamanı kitaplıkları](../../c-runtime-library/crt-library-features.md).
+[C çalışma zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md)tüm sürümleri.
 
 ## <a name="example"></a>Örnek
 
@@ -130,7 +133,7 @@ int main( void )
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Stream g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [fclose, _fcloseall](fclose-fcloseall.md)<br/>
 [fflush](fflush.md)<br/>
 [fopen, _wfopen](fopen-wfopen.md)<br/>

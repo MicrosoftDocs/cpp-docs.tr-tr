@@ -1,9 +1,9 @@
 ---
 title: setbuf
 ms.date: 04/08/2019
-apiname:
+api_name:
 - setbuf
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,23 +15,26 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - setbuf
 helpviewer_keywords:
 - setbuf function
 - stream buffering
 ms.assetid: 13beda22-7b56-455d-8a6c-f2eb636885b9
-ms.openlocfilehash: 89f8a4d8eb853c774f4f7299ceaa9b9eb6177b42
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c6c78297b1818131dcfcb10f4f2eaadd752d8ef4
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62356407"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70948273"
 ---
 # <a name="setbuf"></a>setbuf
 
-Denetim akışı arabelleğe alma. Bu işlev kullanım dışı; kullanma [setvbuf](setvbuf.md) yerine.
+Akış arabelleğini denetler. Bu işlev kullanım dışıdır; Bunun yerine [setvarabelleğe](setvbuf.md) kullanın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -44,23 +47,23 @@ void setbuf(
 
 ### <a name="parameters"></a>Parametreler
 
-*Stream*<br/>
-İşaretçi **dosya** yapısı.
+*ka*<br/>
+**Dosya** yapısına yönelik işaretçi.
 
-*Arabellek*<br/>
-Kullanıcı tarafından ayrılan bir arabellek.
+*arabelleğin*<br/>
+Kullanıcı tarafından ayrılan arabellek.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Setbuf** işlev denetimleri için arabelleğe alma *stream*. *Stream* bağımsız değişkeni, okunabilir veya yazılabilir olmayan açık bir dosyaya başvurmalıdır. Varsa *arabellek* bağımsız değişkeni **NULL**, Ara belleksiz bir akıştır. Arabellek uzunluğu bir karakter dizisi olarak işaret etmiyor, varsa **BUFSIZ**burada **BUFSIZ** STDIO içinde tanımlanan arabellek boyutu olan. H Kullanıcı tarafından belirtilen arabellek, belirtilen akışa için varsayılan sistem tarafından ayrılmış arabellek yerine g/ç için kullanılan arabelleğe alma. **Stderr** varsayılan akışı arabelleğe alınmayan ancak kullanabilirsiniz **setbuf** arabelleklere atamak **stderr**.
+**Setarabelleğe** işlevi *akış*için arabelleğe almayı denetler. *Stream* bağımsız değişkeni, okunamaz veya yazılmayan açık bir dosyaya başvurmalıdır. *Buffer* bağımsız değişkeni **null**ise, akışın ara belleğe alınmamış olması gerekir. Aksi takdirde, arabellek **bufsız**length bir karakter dizisine işaret etmelidir; burada **BUFSıZ** , stdio içinde tanımlanan arabellek boyutudur. Olsun. Belirtilen akış için varsayılan sistem tarafından ayrılan arabellek yerine Kullanıcı tarafından belirtilen arabellek g/ç arabelleğe alma için kullanılır. **Stderr** akışı varsayılan olarak arabelleğe alınmamış, ancak **stderr**'e arabellekler atamak için **setarabelleğe** kullanabilirsiniz.
 
-**setbuf** almıştır [setvbuf](setvbuf.md), yeni kodu için tercih edilen yordamı olduğu. Farklı **setvbuf**, **setbuf** hata bildiren bir yolu yoktur. **setvbuf** ayrıca arabelleğe alma modu hem de arabellek boyutu denetlemenize olanak tanır. **setbuf** mevcut kodlarda uyumluluk için bulunmaktadır.
+**setarabelleğe** , yeni kod için tercih edilen yordam olan [setvarabelleğe](setvbuf.md)ile değiştirilmiştir. **Setvarabelleğe**'nin aksine, **setarabelleğe** hata bildirme yolu yoktur. **setvbuffer** Ayrıca hem arabelleğe alma modunu hem de arabellek boyutunu denetlemenize olanak tanır. Mevcut kodla uyumluluk için **setarabelleğe** var.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**setbuf**|\<stdio.h >|
+|**setbuf**|\<stdio. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -105,7 +108,7 @@ stream2 buffering disabled
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Stream g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [fclose, _fcloseall](fclose-fcloseall.md)<br/>
 [fflush](fflush.md)<br/>
 [fopen, _wfopen](fopen-wfopen.md)<br/>

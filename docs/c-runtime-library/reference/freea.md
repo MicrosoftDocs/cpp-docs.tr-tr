@@ -1,9 +1,9 @@
 ---
 title: _freea
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _freea
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -14,7 +14,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - freea
 - _freea
@@ -23,16 +26,16 @@ helpviewer_keywords:
 - freea function
 - memory deallocation
 ms.assetid: dcd30584-dd9d-443b-8c4c-13237a1cecac
-ms.openlocfilehash: ac9c5528755898b0de131bccf94185b501b0e720
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: dcad8bea4f8cec28d8cb15a9937b1032593ef0cc
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62333074"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70956718"
 ---
-# <a name="freea"></a>_freea
+# <a name="_freea"></a>_freea
 
-Kaldırır veya bir bellek bloğunu serbest bırakır.
+Bellek bloğunu ayırır veya serbest bırakır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -45,7 +48,7 @@ void _freea(
 ### <a name="parameters"></a>Parametreler
 
 *memblock*<br/>
-Daha önce ayrılmış bellek bloğu serbest bırakılacak.
+Serbest bırakmak için önceden ayrılmış bellek bloğu.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
@@ -53,29 +56,29 @@ Yok.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Freea** işlevi bir bellek bloğunu kaldırır (*memblock*) önceden ayrılmış bir çağrı tarafından [_malloca](malloca.md). **_freea** bellek yığın veya yığın üzerinde ayrılan durumunda olup olmadığını kontrol eder. Stack ayırdığınızda **_freea** hiçbir şey yapmaz. Yığında ayrılmış olan, serbest bırakılan bayt sayısı bloğu ayrıldı, istenen bayt sayısını eşdeğerdir. Varsa *memblock* olduğu **NULL**, işaretçi yok sayılır ve **_freea** hemen döndürür. Geçersiz işaretçi serbest bırakma girişimi (tarafından ayrılmamış bir bellek bloğuna işaretçi **_malloca**) sonraki ayırma isteklerini etkiler ve hatalara neden olabilir.
+**_Freea** işlevi, daha önce [_malloca](malloca.md)çağrısıyla ayrılmış bir bellek bloğunu (*memblock*) ayırır. **_freea** , belleğin yığında mi yoksa yığında mi ayrıldığını görmek için denetler. Yığında ayrıldıysa, **_freea** hiçbir şey yapmaz. Yığın üzerinde ayrıldıysa, serbest bırakılan bayt sayısı, blok ayrıldığında istenen bayt sayısına eşittir. *Memblock* **null**ise, işaretçi yok sayılır ve **_freea** hemen döndürülür. Geçersiz bir işaretçi serbest bırakma girişimi ( **_malloca**tarafından ayrılmamış bir bellek bloğunun işaretçisi) sonraki ayırma isteklerini etkileyebilir ve hatalara neden olabilir.
 
-**_freea** çağrıları **ücretsiz** dahili olarak bellek yığında ayrılır bulursa. Yığında bellek olduğu ya da yığının bir işaretçi tarafından belirlenir bellek tahsis edilen bellek hemen önceki adresindeki yerleştirilir.
+**_freea** çağrısı, belleğin yığında ayrıldığını bulursa dahili olarak **ücretsiz** bir çağrı. Belleğin yığında olup olmadığı ya da yığının, ayrılmış bellekten hemen önceki adresteki belleğe yerleştirilmiş bir işaretleyici tarafından belirlenir.
 
-Bellek serbest bırakma hata oluşması durumunda **errno** bilgilerle hata işletim sisteminden yapısı üzerinde ayarlanır. Daha fazla bilgi için [errno _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Belleği boşaltmaya yönelik bir hata oluşursa, **errno** , işletim sisteminden hata doğasından bilgi olarak ayarlanır. Daha fazla bilgi için bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-Bir bellek bloğunu serbest sonra [_heapmin](heapmin.md) kullanılmayan bölgeleri birleşim ve işletim sistemine bırakmadan yığın boş bellek miktarı en aza indirir. İşletim sistemi tarafından serbest bırakılmış bellek serbest havuza geri ve yeniden ayırma için kullanılabilir.
+Bellek bloğu serbest bırakıldıktan sonra, [_heapmin](heapmin.md) kullanılmayan bölgeleri birleştirerek ve bunları işletim sistemine yeniden bırakarak yığındaki boş bellek miktarını en aza indirir. İşletim sisteminde yayımlanmayan serbest bırakılan bellek, ücretsiz havuza geri yüklenir ve yeniden tahsis için kullanılabilir.
 
-Bir çağrı **_freea** tüm çağrıları eşlik gerekir **_malloca**. Ayrıca çağırmak için bir hata olduğunu **_freea** iki kez aynı bellek üzerinde. Ne zaman uygulama bağlı hata ayıklama sürümü C çalışma zamanı kitaplıkları ile özellikle [_malloc_dbg](malloc-dbg.md) tanımlayarak özellikleriyle **_CRTDBG_MAP_ALLOC**, daha kolay eksik veya Çağrı yinelenen **_freea**. Yığının hata ayıklama işlemi sırasında nasıl yönetildiği hakkında daha fazla bilgi için bkz. [CRT hata ayıklama yığın](/visualstudio/debugger/crt-debug-heap-details).
+**_Freea** çağrısı, **_malloca**'ya yapılan tüm çağrılara eşlik etmelidir. Aynı bellekte **_freea** 'yi iki kez çağırmak da bir hatadır. Uygulama C çalışma zamanı kitaplıklarının hata ayıklama sürümü ile bağlantılı olduğunda, özellikle **_Crtdbg_map_ayırma**tanımlayarak etkinleştirilen [_malloc_dbg](malloc-dbg.md) özellikleri ile, **_freea**'ya yönelik eksik veya yinelenen çağrıları bulmak daha kolay olur. Hata ayıklama işlemi sırasında yığının nasıl yönetildiği hakkında daha fazla bilgi için bkz. [CRT hata ayıklama yığını](/visualstudio/debugger/crt-debug-heap-details).
 
-**_freea** işaretlenmiş `__declspec(noalias)`, işlevin genel değişkenleri garanti anlamına gelir. Daha fazla bilgi için [noalias](../../cpp/noalias.md).
+**_freea** işaretlenir `__declspec(noalias)`, yani işlevin genel değişkenleri değiştirmeyeceği garanti edilir. Daha fazla bilgi için bkz. [noalias](../../cpp/noalias.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**_freea**|\<stdlib.h > ve \<malloc.h >|
+|**_freea**|\<Stdlib. h > ve \<malloc. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
-Örneğin bakın [_malloca](malloca.md).
+[_Malloca](malloca.md)örneğine bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

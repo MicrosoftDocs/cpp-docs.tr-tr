@@ -1,9 +1,9 @@
 ---
 title: _rmtmp
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _rmtmp
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - rmtmp
 - _rmtmp
@@ -27,14 +30,14 @@ helpviewer_keywords:
 - files [C++], removing
 - temporary files [C++], removing
 ms.assetid: 7419501e-2587-4f2a-b469-0dca07f84736
-ms.openlocfilehash: bf4f2cff48e8660682fc8a00d10d9a1fe960a6a7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 314399cf174974132a3635631162a7ffa89342c4
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62357429"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70949155"
 ---
-# <a name="rmtmp"></a>_rmtmp
+# <a name="_rmtmp"></a>_rmtmp
 
 Geçici dosyaları kaldırır.
 
@@ -47,31 +50,31 @@ int _rmtmp( void );
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_rmtmp** kapatılır ve silinir geçici dosyaların sayısını döndürür.
+**_rmtmp** kapatılan ve silinen geçici dosya sayısını döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Rmtmp** işlevi, geçerli dizindeki tüm geçici dosyaları temizler. İşlev tarafından oluşturulan dosyaları kaldırır **tmpfile**; geçici dosyalar oluşturulmuş yalnızca aynı dizinde kullanın.
+**_Rmtmp** işlevi, geçerli dizindeki tüm geçici dosyaları temizler. İşlevi yalnızca **tmpfile**tarafından oluşturulan dosyaları kaldırır; Bunu yalnızca geçici dosyaların oluşturulduğu dizinde kullanın.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_rmtmp**|\<stdio.h >|
+|**_rmtmp**|\<stdio. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 
-Tüm sürümleri [C çalışma zamanı kitaplıkları](../../c-runtime-library/crt-library-features.md).
+[C çalışma zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md)tüm sürümleri.
 
 ## <a name="example"></a>Örnek
 
-Örneğin bakın [tmpfile](tmpfile.md).
+[Tmpfile](tmpfile.md)örneğine bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Stream g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [_flushall](flushall.md)<br/>
 [tmpfile](tmpfile.md)<br/>
 [_tempnam, _wtempnam, tmpnam, _wtmpnam](tempnam-wtempnam-tmpnam-wtmpnam.md)<br/>

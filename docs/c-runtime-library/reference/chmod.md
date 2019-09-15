@@ -1,9 +1,9 @@
 ---
 title: chmod
 ms.date: 11/04/2016
-apiname:
+api_name:
 - chmod
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -14,19 +14,22 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - chmod
 helpviewer_keywords:
 - chmod function
 ms.assetid: c3294722-2194-4ff4-ac87-d69f155e279b
-ms.openlocfilehash: a9a86ec70ef1518ccb287b6cda2054edd2ecaf46
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5d53098d88672f1f2d6997ffab41d8af9092b555
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62340670"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70943112"
 ---
 # <a name="chmod"></a>chmod
 
-Bu POSIX işlevi kullanım dışı bırakılmıştır. ISO kullanın C++ uyumluluğunu [_chmod](chmod-wchmod.md) yerine.
+Bu POSIX işlevi kullanım dışıdır. Bunun yerine ISO C++ uyumlu [_chmod](chmod-wchmod.md) kullanın.

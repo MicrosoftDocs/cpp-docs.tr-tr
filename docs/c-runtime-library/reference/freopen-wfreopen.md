@@ -1,10 +1,10 @@
 ---
 title: freopen, _wfreopen
 ms.date: 11/04/2016
-apiname:
+api_name:
 - freopen
 - _wfreopen
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _wfreopen
 - _tfreopen
@@ -29,14 +32,14 @@ helpviewer_keywords:
 - tfreopen function
 - wfreopen function
 ms.assetid: de4b73f8-1043-4d62-98ee-30d2022da885
-ms.openlocfilehash: f31f0eeacaf573fe0f6489f4dc8b5da03bf9b64f
-ms.sourcegitcommit: 878a164fe6d550ca81ab87d8425c8d3cd52fe384
+ms.openlocfilehash: 9f6d4343db3cb507e43e409361059e83fad63148
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68376101"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70956853"
 ---
-# <a name="freopen-wfreopen"></a>freopen, _wfreopen
+# <a name="freopen-_wfreopen"></a>freopen, _wfreopen
 
 Bir dosya işaretçisini yeniden atar. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz. [freopen_s, _wfreopen_s](freopen-s-wfreopen-s.md).
 

@@ -1,26 +1,29 @@
 ---
 title: vprintf İşlevleri
 ms.date: 11/04/2016
-apilocation:
+api_location:
 - msvcr110.dll
 - msvcr120.dll
 - msvcr90.dll
 - msvcr100.dll
 - msvcr110_clr0400.dll
 - msvcr80.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - vprintf
 helpviewer_keywords:
 - vprintf function
 - formatted text [C++]
 ms.assetid: 02ac7c51-eab1-4bf0-bf4c-77065e3fa744
-ms.openlocfilehash: eb8a2829540876936f6c57745fb56e7d19f16394
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 3c04879c7ec90aaba1199264c0c2128b9d1ea27c
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69498879"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70957230"
 ---
 # <a name="vprintf-functions"></a>vprintf İşlevleri
 
@@ -43,30 +46,30 @@ Bu işlevler, hedeflere yönelik verileri aşağıdaki gibi biçimlendirir.
 
 |İşlev|Karşılığı işlevi|Çıkış hedefi|Parametre Doğrulama|Konumsal parametre desteği|
 |--------------|--------------------------|------------------------|--------------------------|----------------------------------|
-|`_vcprintf`|[_cprintf](../c-runtime-library/reference/cprintf-cprintf-l-cwprintf-cwprintf-l.md)|konsolu|Null denetimi yapın.|eşleşen|
-|`_vcwprintf`|[_cwprintf](../c-runtime-library/reference/cprintf-cprintf-l-cwprintf-cwprintf-l.md)|konsolu|Null denetimi yapın.|eşleşen|
-|`vfprintf`|[fprintf](../c-runtime-library/reference/fprintf-fprintf-l-fwprintf-fwprintf-l.md)|*Akış*|Null denetimi yapın.|eşleşen|
+|`_vcprintf`|[_cprintf](../c-runtime-library/reference/cprintf-cprintf-l-cwprintf-cwprintf-l.md)|konsolu|Null denetimi yapın.|Eşleşen|
+|`_vcwprintf`|[_cwprintf](../c-runtime-library/reference/cprintf-cprintf-l-cwprintf-cwprintf-l.md)|konsolu|Null denetimi yapın.|Eşleşen|
+|`vfprintf`|[fprintf](../c-runtime-library/reference/fprintf-fprintf-l-fwprintf-fwprintf-l.md)|*Akış*|Null denetimi yapın.|Eşleşen|
 |**vfprintf_p**|[fprintf_p](../c-runtime-library/reference/fprintf-p-fprintf-p-l-fwprintf-p-fwprintf-p-l.md)|*Akış*|Null ve geçerli biçimi denetleyin.|evet|
-|`vfprintf_s`|[fprintf_s](../c-runtime-library/reference/fprintf-s-fprintf-s-l-fwprintf-s-fwprintf-s-l.md)|*Akış*|Null ve geçerli biçimi denetleyin.|eşleşen|
-|`vfwprintf`|[fwprintf](../c-runtime-library/reference/fprintf-fprintf-l-fwprintf-fwprintf-l.md)|*Akış*|Null denetimi yapın.|eşleşen|
+|`vfprintf_s`|[fprintf_s](../c-runtime-library/reference/fprintf-s-fprintf-s-l-fwprintf-s-fwprintf-s-l.md)|*Akış*|Null ve geçerli biçimi denetleyin.|Eşleşen|
+|`vfwprintf`|[fwprintf](../c-runtime-library/reference/fprintf-fprintf-l-fwprintf-fwprintf-l.md)|*Akış*|Null denetimi yapın.|Eşleşen|
 |**vfwprintf_p**|[fwprintf_p](../c-runtime-library/reference/fprintf-p-fprintf-p-l-fwprintf-p-fwprintf-p-l.md)|*Akış*|Null ve geçerli biçimi denetleyin.|evet|
-|`vfwprintf_s`|[fwprintf_s](../c-runtime-library/reference/fprintf-s-fprintf-s-l-fwprintf-s-fwprintf-s-l.md)|*Akış*|Null ve geçerli biçimi denetleyin.|eşleşen|
-|`vprintf`|[printf](../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md)|`Stdout`|Null denetimi yapın.|eşleşen|
+|`vfwprintf_s`|[fwprintf_s](../c-runtime-library/reference/fprintf-s-fprintf-s-l-fwprintf-s-fwprintf-s-l.md)|*Akış*|Null ve geçerli biçimi denetleyin.|Eşleşen|
+|`vprintf`|[printf](../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md)|`Stdout`|Null denetimi yapın.|Eşleşen|
 |**vprintf_p**|[printf_p](../c-runtime-library/reference/printf-p-printf-p-l-wprintf-p-wprintf-p-l.md)|`Stdout`|Null ve geçerli biçimi denetleyin.|evet|
-|`vprintf_s`|[printf_s](../c-runtime-library/reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md)|`Stdout`|Null ve geçerli biçimi denetleyin.|eşleşen|
-|`vwprintf`|[wprintf](../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md)|`Stdout`|Null denetimi yapın.|eşleşen|
+|`vprintf_s`|[printf_s](../c-runtime-library/reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md)|`Stdout`|Null ve geçerli biçimi denetleyin.|Eşleşen|
+|`vwprintf`|[wprintf](../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md)|`Stdout`|Null denetimi yapın.|Eşleşen|
 |**vwprintf_p**|[wprintf_p](../c-runtime-library/reference/printf-p-printf-p-l-wprintf-p-wprintf-p-l.md)|`Stdout`|Null ve geçerli biçimi denetleyin.|evet|
-|`vwprintf_s`|[wprintf_s](../c-runtime-library/reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md)|`Stdout`|Null ve geçerli biçimi denetleyin.|eşleşen|
-|**vsprıntf**|[sprintf](../c-runtime-library/reference/sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)|*arabelleğe* göre işaret edilen bellek|Null denetimi yapın.|eşleşen|
+|`vwprintf_s`|[wprintf_s](../c-runtime-library/reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md)|`Stdout`|Null ve geçerli biçimi denetleyin.|Eşleşen|
+|**vsprıntf**|[sprintf](../c-runtime-library/reference/sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)|*arabelleğe* göre işaret edilen bellek|Null denetimi yapın.|Eşleşen|
 |**vsprintf_p**|[sprintf_p](../c-runtime-library/reference/sprintf-p-sprintf-p-l-swprintf-p-swprintf-p-l.md)|*arabelleğe* göre işaret edilen bellek|Null ve geçerli biçimi denetleyin.|evet|
-|`vsprintf_s`|[sprintf_s](../c-runtime-library/reference/sprintf-s-sprintf-s-l-swprintf-s-swprintf-s-l.md)|*arabelleğe* göre işaret edilen bellek|Null ve geçerli biçimi denetleyin.|eşleşen|
-|`vswprintf`|[swprintf](../c-runtime-library/reference/sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)|*arabelleğe* göre işaret edilen bellek|Null denetimi yapın.|eşleşen|
+|`vsprintf_s`|[sprintf_s](../c-runtime-library/reference/sprintf-s-sprintf-s-l-swprintf-s-swprintf-s-l.md)|*arabelleğe* göre işaret edilen bellek|Null ve geçerli biçimi denetleyin.|Eşleşen|
+|`vswprintf`|[swprintf](../c-runtime-library/reference/sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)|*arabelleğe* göre işaret edilen bellek|Null denetimi yapın.|Eşleşen|
 |**vswprintf_p**|[swprintf_p](../c-runtime-library/reference/sprintf-p-sprintf-p-l-swprintf-p-swprintf-p-l.md)|*arabelleğe* göre işaret edilen bellek|Null ve geçerli biçimi denetleyin.|evet|
-|`vswprintf_s`|[swprintf_s](../c-runtime-library/reference/sprintf-s-sprintf-s-l-swprintf-s-swprintf-s-l.md)|*arabelleğe* göre işaret edilen bellek|Null ve geçerli biçimi denetleyin.|eşleşen|
-|`_vscprintf`|[_vscprintf](../c-runtime-library/reference/vscprintf-vscprintf-l-vscwprintf-vscwprintf-l.md)|*arabelleğe* göre işaret edilen bellek|Null denetimi yapın.|eşleşen|
-|`_vscwprintf`|[_vscwprintf](../c-runtime-library/reference/vscprintf-vscprintf-l-vscwprintf-vscwprintf-l.md)|*arabelleğe* göre işaret edilen bellek|Null denetimi yapın.|eşleşen|
-|`_vsnprintf`|[_snprintf](../c-runtime-library/reference/snprintf-snprintf-snprintf-l-snwprintf-snwprintf-l.md)|*arabelleğe* göre işaret edilen bellek|Null denetimi yapın.|eşleşen|
-|`_vsnwprintf`|[_snwprintf](../c-runtime-library/reference/snprintf-snprintf-snprintf-l-snwprintf-snwprintf-l.md)|*arabelleğe* göre işaret edilen bellek|Null denetimi yapın.|eşleşen|
+|`vswprintf_s`|[swprintf_s](../c-runtime-library/reference/sprintf-s-sprintf-s-l-swprintf-s-swprintf-s-l.md)|*arabelleğe* göre işaret edilen bellek|Null ve geçerli biçimi denetleyin.|Eşleşen|
+|`_vscprintf`|[_vscprintf](../c-runtime-library/reference/vscprintf-vscprintf-l-vscwprintf-vscwprintf-l.md)|*arabelleğe* göre işaret edilen bellek|Null denetimi yapın.|Eşleşen|
+|`_vscwprintf`|[_vscwprintf](../c-runtime-library/reference/vscprintf-vscprintf-l-vscwprintf-vscwprintf-l.md)|*arabelleğe* göre işaret edilen bellek|Null denetimi yapın.|Eşleşen|
+|`_vsnprintf`|[_snprintf](../c-runtime-library/reference/snprintf-snprintf-snprintf-l-snwprintf-snwprintf-l.md)|*arabelleğe* göre işaret edilen bellek|Null denetimi yapın.|Eşleşen|
+|`_vsnwprintf`|[_snwprintf](../c-runtime-library/reference/snprintf-snprintf-snprintf-l-snwprintf-snwprintf-l.md)|*arabelleğe* göre işaret edilen bellek|Null denetimi yapın.|Eşleşen|
 
 Bağımsız değişkeni, VARARGS içinde tanımlanan, türündedir `va_list`. `argptr` H ve STDARG. Olsun. Değişken, **va_start** tarafından başlatılmalıdır ve sonraki `va_arg` çağrılar tarafından yeniden başlatılabilir. `argptr` ardından, biçim bağımsız değişkeninde karşılık gelen belirtimlere göre, çıktı için dönüştürülen ve aktarılan bağımsız değişkenlerin listesinin başlangıcına işaret eder. `argptr` *Biçim* , [printf](../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md)için *Biçim* bağımsız değişkeniyle aynı form ve işleve sahiptir. Bu işlevlerden hiçbiri çağırmaktadır `va_end`. Her `vprintf` bir işlevin daha ayrıntılı bir açıklaması için, önceki tabloda listelenen karşılık gelen işlevinin açıklamasına bakın.
 

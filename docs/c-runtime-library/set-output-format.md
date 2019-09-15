@@ -1,9 +1,9 @@
 ---
 title: _set_output_format
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _set_output_format
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr120.dll
 - msvcr100.dll
@@ -11,7 +11,10 @@ apilocation:
 - msvcr90.dll
 - msvcr110.dll
 - msvcr80.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - set_output_format
 - _set_output_format
@@ -22,19 +25,19 @@ helpviewer_keywords:
 - _set_output_format function
 - set_output_format function
 ms.assetid: 1cb48df8-44b4-4400-bd27-287831d6b3ff
-ms.openlocfilehash: 173c1bbae3009ffb4ee10b7b32ec7751f47c56c8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b67abb58f4d62c7c54b61d1b1699f09c1bd51b40
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62268752"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70957307"
 ---
-# <a name="setoutputformat"></a>_set_output_format
+# <a name="_set_output_format"></a>_set_output_format
 
-Biçimlendirilmiş g/ç işlevleri tarafından kullanılan Çıkış biçimleri özelleştirir.
+Biçimlendirilen g/ç işlevleri tarafından kullanılan çıkış biçimlerini özelleştirir.
 
 > [!IMPORTANT]
->  Bu işlev artık kullanılmıyor. Visual Studio 2015'te başlayarak, CRT içinde kullanılamaz.
+>  Bu işlev artık kullanılmıyor. Visual Studio 2015 ' den başlayarak CRT ' de kullanılamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -46,8 +49,8 @@ unsigned int _set_output_format(
 
 #### <a name="parameters"></a>Parametreler
 
-*Biçim*<br/>
-[in] Kullanılacak biçim temsil eden bir değer.
+*format*<br/>
+'ndaki Kullanılacak biçimi temsil eden bir değer.
 
 ## <a name="return-value"></a>Dönüş değeri
 
@@ -55,19 +58,19 @@ unsigned int _set_output_format(
 
 ## <a name="remarks"></a>Açıklamalar
 
-`_set_output_format` biçimlendirilmiş g/ç işlevleri çıktısı gibi yapılandırmak için kullanılan [printf_s](../c-runtime-library/reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md). Şu anda, bu işlev tarafından değiştirilebilen yalnızca biçimlendirme kayan nokta numarası çıktı üsler görüntülenen basamak sayısı kuralıdır.
+`_set_output_format`, [printf_s](../c-runtime-library/reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md)gibi biçimlendirilen g/ç işlevlerinin çıkışını yapılandırmak için kullanılır. Mevcut olduğunda, bu işlev tarafından değiştirilebilen tek biçimlendirme kuralı, kayan nokta numaralarının çıkışında üsler halinde görüntülenen basamak sayısıdır.
 
-Varsayılan olarak, kayan bir çıkış noktası numaralarını işlevleri tarafından gibi `printf_s`, `wprintf_s`, ve ilgili işlevleri Visual C++ Standart C Kitaplığı'nda üç basamak değerini temsil etmek için gerekli değildir, bu üç basamak üs için yazdırır Üs. Sıfır, üç basamak değerine paneli için kullanılır. `_set_output_format` Üçüncü basamak üs boyutu tarafından gerekmedikçe üs olarak yalnızca iki basamağı yazdırılır bu davranışı değiştirmenizi sağlar.
+Varsayılan olarak,,, ve görsel `printf_s` C++ standart C kitaplığındaki ilgili işlevler gibi işlevlere `wprintf_s`göre kayan nokta sayılarının çıktısı, değeri temsil etmek için üç basamak gerekli olmasa bile üs için üç basamak yazdırır . Sıfır değeri üç basamağa kadar doldurma için kullanılır. `_set_output_format`üs boyutunun üçüncü bir basamak gerektirmediği takdirde üs içinde yalnızca iki basamak yazdırılması için bu davranışı değiştirmenize izin verir.
 
-İki basamaklı üsler etkinleştirmek için bu işlev parametresi ile çağrı `_TWO_DIGIT_EXPONENT`, örnekte gösterildiği gibi. İki basamaklı üsler devre dışı bırakmak için 0 bağımsız bu işlevi çağırın.
+İki basamaklı üsleri etkinleştirmek için, örnekte gösterildiği gibi bu işlevi parametresiyle `_TWO_DIGIT_EXPONENT`çağırın. İki basamaklı üsleri devre dışı bırakmak için, bu işlevi 0 bağımsız değişkeniyle çağırın.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|`_set_output_format`|\<stdio.h >|
+|`_set_output_format`|\<stdio. h >|
 
-Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../c-runtime-library/compatibility.md) giriş.
+Daha fazla uyumluluk bilgisi için bkz. karşılama 'da [Uyumluluk](../c-runtime-library/compatibility.md) .
 
 ## <a name="example"></a>Örnek
 

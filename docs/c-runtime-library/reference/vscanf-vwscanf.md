@@ -1,10 +1,10 @@
 ---
 title: vscanf, vwscanf
 ms.date: 11/04/2016
-apiname:
+api_name:
 - vscanf
 - vwscanf
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,22 +15,25 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - vscanf
 - vwscanf
 - _vtscanf
 ms.assetid: d1df595b-11bc-4682-9441-a92616301e3b
-ms.openlocfilehash: 936dcc34fb0d2ed73919ca59c7419f2090c54e28
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 86e6588f6309989317c4cee7ec398cfa809afe9b
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62383509"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70945440"
 ---
 # <a name="vscanf-vwscanf"></a>vscanf, vwscanf
 
-Biçimlendirilmiş verileri standart giriş akışından okur. Bu işlevin daha güvenli sürümleri mevcuttur; bkz: [vscanf_s, vwscanf_s](vscanf-s-vwscanf-s.md).
+Standart giriş akışından biçimlendirilen verileri okur. Bu işlevin daha güvenli sürümleri mevcuttur; bkz. [vscanf_s, vwscanf_s](vscanf-s-vwscanf-s.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -47,45 +50,45 @@ int vwscanf(
 
 ### <a name="parameters"></a>Parametreler
 
-*Biçim*<br/>
-Biçim Denetimi dizesi.
+*format*<br/>
+Biçim denetimi dizesi.
 
-*arglist*<br/>
+*Arglist*<br/>
 Değişken bağımsız değişken listesi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarıyla dönüştürülen ve atanan alanların sayısını döndürür; dönüş değeri, Okunmuş ancak atanmamış alanları içermez. 0 değeri hiçbir alan atanmamış belirtir.
+Başarıyla dönüştürülen ve atanan alanların sayısını döndürür; dönüş değeri, okunan ancak atanmamış alanları içermez. 0 dönüş değeri hiçbir alan atanmadığını gösterir.
 
-Varsa *biçimi* olduğu bir **NULL** işaretçiyse, geçersiz parametre işleyicisi çağrılır, açıklandığı [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse, bu işlevler döndürür **EOF** ayarlayıp **errno** için **EINVAL**.
+*Biçim* **null** Işaretçisiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **EOF** döndürür ve **errno** , **EINVAL**olarak ayarlanır.
 
-Bu ve diğer hata kodları hakkında daha fazla bilgi için bkz: [errno _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Bu ve diğer hata kodları hakkında bilgi için bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Vscanf** işlevi standart giriş akışından verileri okur **stdin** ve tarafından verilen konumlarda verileri Yazar *arglist* bağımsız değişken listesi. Listedeki her bağımsız değişken içinde bir tür belirleyiciye karşılık gelen bir tür bir değişken, bir işaretçi olmalıdır *biçimi*. Çakışan dizeler arasında kopyalama olursa davranış tanımsızdır.
+**Vscanf** işlevi standart giriş akışı **stdin** ' den verileri okur ve verileri *Arglist* bağımsız değişken listesi tarafından verilen konumlara yazar. Listedeki her bağımsız değişken, *biçimdeki*bir tür belirticisine karşılık gelen bir tür değişkenine bir işaretçi olmalıdır. Çakışan dizeler arasında kopyalama olursa davranış tanımsızdır.
 
 > [!IMPORTANT]
-> Kullanırken **vscanf** bir dize okumak için her zaman için bir genişlik belirtin **%s** biçiminde (örneğin, **"% 32s"** yerine **"%s"**); Aksi halde, hatalı biçimlendirilmiş bir giriş arabellek taşmasına neden olabilir. Alternatif olarak, kullandığınız [vscanf_s, vwscanf_s](vscanf-s-vwscanf-s.md) veya [fgets](fgets-fgetws.md).
+> Bir dizeyi okumak için **vscanf** kullandığınızda, her zaman **% s** biçimi için bir genişlik belirleyin (örneğin, "% **s"** yerine **"% 32S"** ); Aksi halde, yanlış biçimlendirilmiş giriş arabellek taşmasına neden olabilir. Alternatif olarak, [vscanf_s, vwscanf_s](vscanf-s-vwscanf-s.md) veya [fal](fgets-fgetws.md)kullanabilirsiniz.
 
-**vwscanf** geniş karakterli sürümüdür **vscanf**; *biçimi* bağımsız değişkeni **vwscanf** geniş karakterli bir dizedir. **vwscanf** ve **vscanf** akış ANSI modunda açıldığında aynı şekilde davranır. **vscanf** UNICODE akışından girişi desteklemez.
+**escanf** , **vscanf**; öğesinin geniş karakterli bir sürümüdür. bir geniş karakterli dize *, bir* tam karakter dizesidir. Akış ANSI modunda açılırsa, **escanf** ve **vscanf** aynı şekilde davranır. **vscanf** UNICODE akışından girişi desteklemez.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|**_vtscanf**|**vscanf**|**vscanf**|**vwscanf**|
+|**_vtscanf**|**vscanf**|**vscanf**|**öscanf**|
 
-Daha fazla bilgi için [biçim belirtimi alanları: scanf ve wscanf işlevleri](../../c-runtime-library/format-specification-fields-scanf-and-wscanf-functions.md).
+Daha fazla bilgi için bkz. [Biçim belirtimi alanları: scanf ve wscanf işlevleri](../../c-runtime-library/format-specification-fields-scanf-and-wscanf-functions.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**vscanf**|\<stdio.h >|
-|**vwscanf**|\<stdio.h > veya \<wchar.h >|
+|**vscanf**|\<stdio. h >|
+|**öscanf**|\<stdio. h > veya \<wchar. h >|
 
-Konsolu, Evrensel Windows Platformu (UWP) uygulamaları desteklenmez. Konsolları ile ilişkili standart akış işleyicileri **stdin**, **stdout**, ve **stderr**, C çalışma zamanı işlevleri bunları UWP uygulamalarında kullanmadan önce yeniden yönlendirilmesi gerekiyor . Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Konsol Evrensel Windows Platformu (UWP) uygulamalarında desteklenmez. Console, **STDIN**, **stdout**ve **stderr**Ile ilişkili standart akış TUTAMAÇLARı, C çalışma zamanı işlevlerinin UWP uygulamalarında kullanabilmesi için yeniden yönlendirilmelidir. Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
@@ -145,7 +148,7 @@ The contents are: 36 92.300003 y n Wide characters
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
-[Stream g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [locale](../../c-runtime-library/locale.md)<br/>
 [fscanf, _fscanf_l, fwscanf, _fwscanf_l](fscanf-fscanf-l-fwscanf-fwscanf-l.md)<br/>
 [printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md)<br/>

@@ -1,11 +1,11 @@
 ---
 title: _Cmulcc, _FCmulcc, _LCmulcc
 ms.date: 03/30/2018
-apiname:
+api_name:
 - _Cmulcc
 - _FCmulcc
 - _LCmulcc
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _Cmulcc
 - _FCmulcc
@@ -29,14 +32,14 @@ helpviewer_keywords:
 - _Cmulcc function
 - _FCmulcc function
 - _LCmulcc function
-ms.openlocfilehash: f81ccb641a80ab264e8bc54ba1987e2c2c8469f1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fc21f8cbd2103993bc2b3e36020c57c8520f04a1
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62335398"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70939071"
 ---
-# <a name="cmulcc-fcmulcc-lcmulcc"></a>_Cmulcc, _FCmulcc, _LCmulcc
+# <a name="_cmulcc-_fcmulcc-_lcmulcc"></a>_Cmulcc, _FCmulcc, _LCmulcc
 
 İki karmaşık sayıyı çarpar.
 
@@ -51,26 +54,26 @@ _Lcomplex _LCmulcc( _Lcomplex x, _Lcomplex y );
 ### <a name="parameters"></a>Parametreler
 
 *x*<br/>
-Çarpılacak karmaşık işlenenler biri.
+Çarpılacak karmaşık işlenenlerinden biri.
 
-*Y*<br/>
+*Iz*<br/>
 Çarpılacak diğer karmaşık işlenen.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-A **_Dcomplex**, **_Fcomplex**, veya **_Lcomplex** karmaşık karmaşık sayıların çarpımını gösteren yapısı *x* ve *y*.
+*X* ve *y*karmaşık sayılarının karmaşık çarpımını temsil eden **_dcomplex**, **_fcomplex**veya **_lcomplex** yapısı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Yerleşik aritmetik işleçler karmaşık türler, Microsoft uygulaması üzerinde çalışmadığı için **_Cmulcc**, **_FCmulcc**, ve **_LCmulcc** işlevleri karmaşık türler çarpımı basitleştirin.
+Yerleşik aritmetik işleçler karmaşık türlerin Microsoft uygulamasında çalışmadığından, **_Cmulcc**, **_Fcmulcc**ve **_lcmulcc** işlevleri karmaşık türlerin çarptiğini basitleştirir.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|C üstbilgisi|C++ üst bilgisi|
+|Yordam|C üstbilgisi|C++üst bilgi|
 |-------------|--------------|------------------|
-|**_Cmulcc**, **_FCmulcc**, **_LCmulcc**|\<Complex.h >|\<Complex.h >|
+|**_Cmulcc**, **_fcmulcc**, **_lcmulcc**|\<karmaşık. h >|\<karmaşık. h >|
 
-Bu işlevler Microsoft özgüdür. Türleri **_Dcomplex**, **_Fcomplex**, ve **_Lcomplex** uygulanmayan C99 yerel türler için Microsoft'a özgü eşdeğeri olan **çift _Complex** , **_Complex float**, ve **uzun çift _Complex**sırasıyla. Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Bu işlevler, Microsoft 'a özgüdür. **_Dcomplex**, **_Fcomplex**ve **_lcomplex** türleri, uygulanmayan C99 yerel türlerine, sırasıyla **_complex**, **float _complex**ve **Long Double _complex**için Microsoft 'a özgü eşdeğerlerdir. Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,11 +1,11 @@
 ---
 title: nan, nanf, nanl
 ms.date: 01/31/2019
-apiname:
+api_name:
 - nanf
 - nan
 - nanl
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -17,7 +17,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - nan
 - nanl
@@ -27,16 +30,16 @@ helpviewer_keywords:
 - nanf function
 - nanl function
 ms.assetid: 790e9158-80ab-43e0-8f5a-096198553fd9
-ms.openlocfilehash: df3985a28bc351bdf196c0a1561bd3e25b661c87
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9574eb0382f3bb7fc3c51d504aba9e29d0692c09
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62156272"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70951427"
 ---
 # <a name="nan-nanf-nanl"></a>nan, nanf, nanl
 
-Sessiz bir NaN değerini döndürür.
+Sessiz bir NaN değeri döndürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -48,22 +51,22 @@ long double nanl( const char* input );
 
 ### <a name="parameters"></a>Parametreler
 
-*Giriş*<br/>
+*girişinin*<br/>
 Bir dize değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**Nan** işlevleri sessiz bir NaN değerini döndürür.
+**Nan** işlevleri bir sessiz NaN değeri döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Nan** işlevler (sinyali gönderiliyor) sessiz bir NaN karşılık gelen bir kayan nokta değeri döndürür. *Giriş* değer yoksayılır. Çıkış için bir NaN nasıl temsil edildiğini hakkında daha fazla bilgi için bkz: [printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md).
+**Nan** işlevleri, sessiz (sinyal olmayan) Nan öğesine karşılık gelen bir kayan nokta değeri döndürür. *Giriş* değeri yok sayılır. Bir NaN 'nin çıkış için nasıl temsil edildiği hakkında bilgi için bkz. [printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İşlev|C üstbilgisi|C++ üst bilgisi|
+|İşlev|C üstbilgisi|C++üst bilgi|
 |--------------|--------------|------------------|
-|**nan**, **nanf**, **nanl**|\<Math.h >|\<cmath > veya \<math.h >|
+|**Nan**, **nanf**, **Nanl**|\<Math. h >|\<cmath > veya \<Math. h >|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

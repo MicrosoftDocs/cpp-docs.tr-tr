@@ -1,10 +1,10 @@
 ---
 title: _strtime, _wstrtime
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _wstrtime
 - _strtime
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -16,7 +16,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-time-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _wstrtime
 - _strtime
@@ -33,16 +36,16 @@ helpviewer_keywords:
 - _tstrtime function
 - time, copying
 ms.assetid: 9e538161-cf49-44ec-bca5-c0ab0b9e4ca3
-ms.openlocfilehash: 9d874321418854a703886eb80ee23ac1cba57fa4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ea4a2b304dc30ec167f8a9094bcf278ff0d31f77
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62223104"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70946555"
 ---
-# <a name="strtime-wstrtime"></a>_strtime, _wstrtime
+# <a name="_strtime-_wstrtime"></a>_strtime, _wstrtime
 
-Zaman bir arabelleğe kopyalayın. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz: [_strtime_s, _wstrtime_s](strtime-s-wstrtime-s.md).
+Süreyi bir arabelleğe kopyalayın. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz. [_strtime_s, _wstrtime_s](strtime-s-wstrtime-s.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -66,23 +69,23 @@ wchar_t *_wstrtime(
 ### <a name="parameters"></a>Parametreler
 
 *timestr*<br/>
-Saat dizesi.
+Zaman dizesi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Sonuçta elde edilen karakter dizesine bir işaretçi döndürür *timestr*.
+Sonuç karakter dizesi *timestr*için bir işaretçi döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Strtime** işlevi geçerli yerel saat işaret ettiği arabelleğine kopyalar *timestr*. Saat olarak biçimlendirilmiş **ss: dd:** burada **hh** olduğu saat, 24 saatlik gösterimde temsil eden iki basamak **mm** olan saat ve geçetemsiledenikibasamak**ss** olduğu saniye temsil eden iki basamak. Örneğin, dize **18:23:44** 23 dakika ve 44 saniye 6'da geçmiş temsil eder Arabelleğin en az 9 bayt uzunluğunda olmalıdır.
+**_Strtime** işlevi, geçerli yerel saati *timestr*tarafından işaret edilen arabelleğe kopyalar. Süre SS **: DD: ss** olarak biçimlendirilir; burada **SS** , 24 saatlik gösterimde saati temsil eden iki haneye, **mm** , saati geçen dakikaları temsil eden iki haneye ve **nn** saniyeyi temsil eden iki haneye sahiptir. Örneğin, **18:23:44** dizesi 23 dakika ve 44 saniye içinde 6 P.M. temsil eder Arabellek en az 9 bayt uzunluğunda olmalıdır.
 
-**_wstrtime** geniş karakterli sürümüdür **_strtime**; bağımsız değişkeni ve dönüş değeri **_wstrtime** geniş karakterli dizelerdir. Bu işlevler, aynı şekilde davranır. Varsa *timestr* olduğu bir **NULL** işaretçi veya *timestr* yanlış, geçersiz biçimlendirilmiş parametre işleyicisi çağrılır, açıklandığı [parametresi Doğrulama](../../c-runtime-library/parameter-validation.md). Özel durumun devam etmesine izin verilirse, bu işlevler döndürür bir **NULL** ayarlayıp **errno** için **EINVAL** varsa *timestr* bir olan**NULL** veya **errno** için **ERANGE** varsa *timestr* yanlış biçimlendirilmiş.
+**_wstrtime** , **_strtime**öğesinin geniş karakterli bir sürümüdür; **_wstrtime** bağımsız değişkeni ve dönüş değeri geniş karakterli dizelerdir. Bu işlevler, aynı şekilde davranır. *Timestr* **null** işaretçisiyse veya *timestr* yanlış biçimlendirildiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Özel durumun devam etmesine izin veriliyorsa, bu işlevler **null** döndürür ve *timestr* **null** ise, errno olarak **EINVAL** **olarak ayarlanır** .
 
-C++'da, bu işlevler, bu işlevlerin daha yeni ve güvenli karşılıklarını çağırma şablon aşırı yüklemeleri vardır. Daha fazla bilgi için [güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
+' C++De, bu işlevlerde bu işlevlerin daha yeni ve güvenli karşılıkları çağıran şablon aşırı yüklemeleri vardır. Daha fazla bilgi için bkz. [Güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_tstrtime**|**_strtime**|**_strtime**|**_wstrtime**|
 
@@ -90,8 +93,8 @@ C++'da, bu işlevler, bu işlevlerin daha yeni ve güvenli karşılıklarını �
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_strtime**|\<TIME.h >|
-|**_wstrtime**|\<TIME.h > veya \<wchar.h >|
+|**_strtime**|\<Time. h >|
+|**_wstrtime**|\<Time. h > veya \<wchar. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

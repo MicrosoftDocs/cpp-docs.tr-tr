@@ -1,9 +1,9 @@
 ---
 title: _chsize_s
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _chsize_s
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -15,7 +15,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - chsize_s
 - _chsize_s
@@ -24,16 +27,16 @@ helpviewer_keywords:
 - chsize_s function
 - _chsize_s function
 ms.assetid: d88d2e94-6e3b-42a5-8631-16ac4d82fa38
-ms.openlocfilehash: a56efe826d43c80dc2cdee295e58872e7dd3c9ea
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7250f0b570ae9a4b2478bad09ee7b0044068d972
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62348516"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70939173"
 ---
-# <a name="chsizes"></a>_chsize_s
+# <a name="_chsize_s"></a>_chsize_s
 
-Bir dosyanın boyutunu değiştirir. Bu bir sürümüdür [_chsize](chsize.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
+Bir dosyanın boyutunu değiştirir. Bu, [CRT 'Deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklandığı gibi güvenlik geliştirmeleriyle [_chsize](chsize.md) 'ın bir sürümüdür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -47,30 +50,30 @@ errno_t _chsize_s(
 ### <a name="parameters"></a>Parametreler
 
 *FD*<br/>
-Açık olan bir dosyaya başvuran dosya tanımlayıcısı.
+Açık bir dosyaya başvuran dosya tanımlayıcısı.
 
-*Boyutu*<br/>
-Yeni dosyanın bayt cinsinden uzunluğu.
+*boyutla*<br/>
+Dosyanın bayt cinsinden yeni uzunluğu.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_chsize_s** dosya boyutu başarıyla değiştirilirse, 0 değerini döndürür. Sıfır dışında bir dönüş değeri bir hata olduğunu gösterir: dönüş değeri **SPAWN** belirtilen dosyaya erişime karşı kilitliyse **EBADF** tanımlayıcısı geçersiz veya belirtilen dosya salt okunur **ENOSPC** boşluk cihazda bırakılırsa veya **EINVAL** boyutu küçükse sıfır. **errno** aynı değere ayarlanır.
+**_chsize_s** , dosya boyutu başarıyla değiştirilmişse 0 değerini döndürür. Sıfır olmayan bir dönüş değeri bir hatayı gösterir: belirtilen dosya salt okunurdur veya tanımlayıcı **geçersiz ise,** belirtilen dosya salt okunurdur veya tanımlayıcı geçersizse, bu değer, cihazda boş alan yoksa **enospc** veyaBoyut sıfırdan KÜÇÜKSE EINVAL. **errno** değeri aynı değere ayarlandı.
 
-Bunlar ve diğer dönüş kodları hakkında daha fazla bilgi için bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Bu ve diğer dönüş kodları hakkında daha fazla bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Chsize_s** işlevini genişletir veya ilişkili dosya keser *fd* tarafından belirtilen uzunluktan *boyutu*. Dosya yazma izin veren bir modda açık olmalıdır. Dosya uzatıldıysa null karakterleri ('\0') eklenir. Dosya kesilmiş, özgün dosya uzunluğu kısaltılmış dosyanın sonundan tüm veriler kaybolur.
+**_Chsize_s** işlevi *FD* ile ilişkili dosyayı *boyuta*göre belirtilen uzunluğa genişletir veya keser. Dosyanın yazmaya izin veren bir modda açık olması gerekir. Dosya genişletilmişse null karakterler (' \ 0 ') eklenir. Dosya kesilmişse, kısaltılmış dosyanın sonundaki tüm veriler dosyanın özgün uzunluğuna kaybedilir.
 
-**_chsize_s** bir 64-bit tamsayı olarak dosyanın boyutunu alır ve bu nedenle, dosya boyutu 4 GB'den büyük başa çıkabilir. **_chsize** 32-bit dosya boyutlarına sınırlıdır.
+**_chsize_s** , dosya boyutu olarak 64 bitlik bir tamsayı alır ve bu nedenle 4 GB 'tan büyük dosya boyutlarını işleyebilir. **_chsize** , 32 bitlik dosya boyutları ile sınırlıdır.
 
-Bu işlev, parametrelerini doğrular. Varsa *fd* geçerli dosya tanımlayıcısı veya boyutu sıfırdan küçüktür, geçersiz parametre işleyicisi çağrılır, açıklandığı değil [Parameter Validation](../../c-runtime-library/parameter-validation.md).
+Bu işlev, parametrelerini doğrular. *FD* geçerli bir dosya tanımlayıcısı değil veya boyut sıfırdan küçükse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|İsteğe bağlı başlık|
 |-------------|---------------------|---------------------|
-|**_chsize_s**|\<io.h >|\<errno.h >|
+|**_chsize_s**|\<GÇ. h >|\<errno. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

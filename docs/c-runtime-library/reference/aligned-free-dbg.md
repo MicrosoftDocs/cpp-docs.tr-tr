@@ -1,9 +1,9 @@
 ---
 title: _aligned_free_dbg
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _aligned_free_dbg
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -14,7 +14,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _aligned_free_dbg
 - aligned_free_dbg
@@ -22,16 +25,16 @@ helpviewer_keywords:
 - _aligned_free_dbg function
 - aligned_free_dbg function
 ms.assetid: eb0cb3c8-0992-4db8-bac3-65f1b8311ca6
-ms.openlocfilehash: f51b9b9573ab2e23a0a60979c55a33d2e5cff747
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b510d16b6e784202094bb05e6364f7af1b1fff97
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62341905"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70939915"
 ---
-# <a name="alignedfreedbg"></a>_aligned_free_dbg
+# <a name="_aligned_free_dbg"></a>_aligned_free_dbg
 
-İle ayrılmış olan bellek bloğunu serbest bırakır [_aligned_malloc](aligned-malloc.md) veya [_aligned_offset_malloc](aligned-offset-malloc.md) (yalnızca hata ayıklama).
+[_Aligned_malloc](aligned-malloc.md) veya [_aligned_offset_malloc](aligned-offset-malloc.md) (yalnızca Hata Ayıkla) ile ayrılmış bir bellek bloğunu serbest bırakır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -44,23 +47,23 @@ void _aligned_free_dbg(
 ### <a name="parameters"></a>Parametreler
 
 *memblock*<br/>
-İçin döndürülen bellek bloğuna işaretçi [_aligned_malloc](aligned-malloc.md) veya [_aligned_offset_malloc](aligned-offset-malloc.md) işlevi.
+[_Aligned_malloc](aligned-malloc.md) veya [_aligned_offset_malloc](aligned-offset-malloc.md) işlevine döndürülen bellek bloğunun işaretçisi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Aligned_free_dbg** işlev, hata ayıklama sürümü [_aligned_free](aligned-free.md) işlevi. Zaman [_DEBUG](../../c-runtime-library/debug.md) tanımlı değil, her çağrı **_aligned_free_dbg** çağrısı azaltılır `_aligned_free`. Her ikisi de `_aligned_free` ve **_aligned_free_dbg** temel yığında bir bellek öbeğini serbest ancak **_aligned_free_dbg** hata ayıklama özelliği karşılar: yığının bağlantılı listesinde için serbest bırakılan tutma imkanıyla engeller yetersiz bellek durumları benzetimini yapar.
+**_Aligned_free_dbg** işlevi, [_aligned_free](aligned-free.md) işlevinin bir hata ayıklama sürümüdür. [_Debug](../../c-runtime-library/debug.md) tanımlanmadığında, **_aligned_free_dbg** öğesine yapılan her çağrı, öğesine `_aligned_free`yapılan çağrıya düşürülür. Hem `_aligned_free` hem de **_aligned_free_dbg** , temel yığında bir bellek bloğunu serbest bıraktı, ancak **_aligned_free_dbg** bir hata ayıklama özelliğini karşılar: düşük bellek koşullarının benzetimini yapmak için yığının bağlantılı listesinde serbest bırakılan blokları saklama özelliği.
 
-**_aligned_free_dbg** ücretsiz işlemi gerçekleştirmeden önce belirtilen tüm dosyaları ve blok konumları üzerinde bir geçerlilik denetimi gerçekleştirir. Uygulama, bu bilgiyi sağlamak için beklenmiyor. Bir bellek bloğunu serbest bırakılır, hata ayıklama yığını Yöneticisi otomatik olarak kullanıcı bölümünün iki tarafındaki arabelleklerin bütünlüğünü denetler ve üzerine yazma olduysa bir hata raporu yayınlar. _CRTDBG_DELAY_FREE_MEM_DF bit alanı, [_crtDbgFlag](../../c-runtime-library/crtdbgflag.md) bayrağı ayarlandığında, serbest bırakılan blok 0xDD değeriyle doldurulur, _FREE_BLOCK bloğu türü atanmış ve bellek blokları yığının bağlantılı listesinde saklanır.
+**_aligned_free_dbg** , ücretsiz işlemi gerçekleştirmeden önce belirtilen tüm dosyalar ve blok konumları üzerinde bir geçerlilik denetimi gerçekleştirir. Uygulamanın bu bilgileri sağlaması beklenmez. Bir bellek bloğu serbest bırakıldığında, hata ayıklama yığın Yöneticisi kullanıcı bölümünün her iki tarafındaki arabelleklerin bütünlüğünü otomatik olarak denetler ve üzerine yazma oluştuysa bir hata raporu yayınlar. [_Crtdbgflag](../../c-runtime-library/crtdbgflag.md) BAYRAĞıNıN _CRTDBG_DELAY_FREE_MEM_DF bit alanı ayarlandıysa, serbest bırakılan blok 0xDD değeri ile doldurulur, _free_block blok türü atanır ve yığının bağlı bellek blokları listesinde tutulur.
 
-Bellek serbest bırakma hata oluşması durumunda `errno` bilgilerle hata işletim sisteminden yapısı üzerinde ayarlanır. Daha fazla bilgi için [errno _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Belleği serbest bırakma bölümünde bir hata oluşursa, `errno` hata doğasından işletim sisteminden bilgi olarak ayarlanır. Daha fazla bilgi için bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-Nasıl bellek blokları ayrılan, başlatılır ve taban yığının hata ayıklama sürümünde yönetilen hakkında daha fazla bilgi için bkz: [CRT hata ayıklama öbeği ayrıntıları](/visualstudio/debugger/crt-debug-heap-details). Ayırma blok türleri ve bunların nasıl kullanıldığı hakkında daha fazla bilgi için bkz. [hata ayıklama öbek üzerindeki blokları türleri](/visualstudio/debugger/crt-debug-heap-details). Standart yığın işlevi ve hata ayıklama sürümü, bir uygulamanın hata ayıklama derlemesinde çağırma arasındaki farklar hakkında daha fazla bilgi için bkz. [hata ayıklama sürümleri, yığın ayırma işlevleri](/visualstudio/debugger/debug-versions-of-heap-allocation-functions).
+Bellek bloklarının taban yığının hata ayıklama sürümünde nasıl ayrıldığı, başlatıldığı ve yönetildiği hakkında bilgi için bkz. [CRT hata ayıklama yığını ayrıntıları](/visualstudio/debugger/crt-debug-heap-details). Ayırma bloğu türleri ve bunların nasıl kullanıldığı hakkında bilgi için bkz. [hata ayıklama yığınındaki blok türleri](/visualstudio/debugger/crt-debug-heap-details). Bir uygulamanın hata ayıklama sürümünde standart yığın işlevi çağırma ve hata ayıklama sürümü arasındaki farklar hakkında daha fazla bilgi için bkz. [yığın ayırma Işlevlerinin hata ayıklama sürümleri](/visualstudio/debugger/debug-versions-of-heap-allocation-functions).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_aligned_free_dbg**|\<crtdbg.h >|
+|**_aligned_free_dbg**|\<Crtdbg. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

@@ -1,9 +1,9 @@
 ---
 title: _resetstkoflw
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _resetstkoflw
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -14,7 +14,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - resetstkoflw
 - _resetstkoflw
@@ -24,12 +27,12 @@ helpviewer_keywords:
 - stack, recovering
 - _resetstkoflw function
 ms.assetid: 319529cd-4306-4d22-810b-2063f3ad9e14
-ms.openlocfilehash: fc8a625e767daeb964f838c91f74732c9bd337a4
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 55ac25cda5e6c442e96cae025657454747d571d9
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69499491"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70949289"
 ---
 # <a name="_resetstkoflw"></a>_resetstkoflw
 
