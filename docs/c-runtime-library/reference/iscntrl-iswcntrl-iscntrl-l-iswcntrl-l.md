@@ -1,12 +1,12 @@
 ---
 title: iscntrl, iswcntrl, _iscntrl_l, _iswcntrl_l
 ms.date: 11/04/2016
-apiname:
+api_name:
 - iscntrl
 - _iswcntrl_l
 - _iscntrl_l
 - iswcntrl
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -18,7 +18,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-string-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - _istcntrl_l
 - _iswcntrl_l
@@ -35,16 +38,16 @@ helpviewer_keywords:
 - iswcntrl function
 - _istcntrl_l function
 ms.assetid: 616eebf9-aed4-49ba-ba2c-8677c8fe6fb5
-ms.openlocfilehash: 150073e78426f5029dd46cbc6766fbd6a2a242e1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 302c357c054ad58043b00875d629ae70e5a23e0e
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62157428"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70954443"
 ---
-# <a name="iscntrl-iswcntrl-iscntrll-iswcntrll"></a>iscntrl, iswcntrl, _iscntrl_l, _iswcntrl_l
+# <a name="iscntrl-iswcntrl-_iscntrl_l-_iswcntrl_l"></a>iscntrl, iswcntrl, _iscntrl_l, _iswcntrl_l
 
-Bir tamsayı bir denetim karakterini temsil edip etmediğini belirler.
+Bir tamsayının bir denetim karakterini temsil edip etmediğini belirler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -68,34 +71,34 @@ int _iswcntrl_l(
 ### <a name="parameters"></a>Parametreler
 
 *c*<br/>
-Test etmek için tamsayı
+Sınanacak tamsayı
 
-*Yerel ayar*<br/>
+*ayarlar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Yordamların her biri bu döndürür sıfır olmayan *c* bir denetim karakterinin belirli bir gösterimiyse. **iscntrl** sıfır olmayan bir değer döndürür *c* denetim karakteriyse (0x00-0x1F veya 0x7F). **iswcntrl** sıfır olmayan bir değer döndürür *c* bir geniş karakter bir denetimdir. Bu yordamların her biri 0 döndürür *c* test koşulu karşılamayan.
+Eğer *c* bir denetim karakterinin belirli bir gösterimiyse, bu yordamların her biri sıfır dışında bir değer döndürür. Eğer *c* bir denetim karakteriyse (0x00-0x1F veya 0x7F), **SCC** sıfır olmayan bir değer döndürür. *c* bir denetim genelindeki karakter ise, **ıswcnm** sıfır dışında bir değer döndürür. Bu yordamların her biri, *c* , test koşulunu karşılamadığı takdirde 0 döndürür.
 
-Sahip bu işlevlerin sürümleri **_l** soneki geçerli yerel ayarı yerine iletilen yerel ayar parametresini kullanın. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
+**_L** sonekine sahip bu işlevlerin sürümleri, geçerli yerel ayar yerine geçirilen yerel ayar parametresini kullanır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
-Davranışını **iscntrl** ve **_iscntrl_l** tanımsızdır *c* EOF değilse veya 0-0xFF aralığındaysa aralığında. Bir hata ayıklama CRT Kitaplığı kullanıldığında ve *c* değil, bu değerleri işlevleri raise onaylama biridir.
+*C* 'nin EOF veya 0 ile 0xFF (dahil) aralığında olması halinde, **SCC** ve **_scc ntrl_l** 'nin davranışı tanımsızdır. Bir hata ayıklama CRT kitaplığı kullanıldığında ve *c* bu değerlerden biri değilse, işlevler bir onaylama işlemi yükseltir.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|**_istcntrl**|**iscntrl**|**iscntrl**|**iswcntrl**|
-|**_istcntrl_l**|**_iscntrl_l**|**_iscntrl_l**|**_iswcntrl_l**|
+|**_istcn**|**iscntrl**|**iscntrl**|**iswcnw**|
+|**_istcntrl_l**|**_scc ntrl_l**|**_scc ntrl_l**|**_iswcntrl_l**|
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**iscntrl**|\<CType.h >|
-|**iswcntrl**|\<CType.h > veya \<wchar.h >|
-|**_iscntrl_l**|\<CType.h >|
-|**_iswcntrl_l**|\<CType.h > veya \<wchar.h >|
+|**iscntrl**|\<CType. h >|
+|**iswcnw**|\<CType. h > veya \<wchar. h >|
+|**_scc ntrl_l**|\<CType. h >|
+|**_iswcntrl_l**|\<CType. h > veya \<wchar. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

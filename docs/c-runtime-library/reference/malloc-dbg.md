@@ -1,9 +1,9 @@
 ---
 title: _malloc_dbg
 ms.date: 11/04/2016
-apiname:
+api_name:
 - _malloc_dbg
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -14,7 +14,10 @@ apilocation:
 - msvcr120.dll
 - msvcr120_clr0400.dll
 - ucrtbase.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - malloc_dbg
 - _malloc_dbg
@@ -23,16 +26,16 @@ helpviewer_keywords:
 - memory allocation
 - _malloc_dbg function
 ms.assetid: c97eca51-140b-4461-8bd2-28965b49ecdb
-ms.openlocfilehash: b126678a9aecf6ae4041764576e8d06d1557dcc1
-ms.sourcegitcommit: fc6bdffcf7d5521609da629621cc8459b200b004
+ms.openlocfilehash: cfaaaec17dc8546c937045f93027e9609981bd93
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67351776"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70952872"
 ---
-# <a name="mallocdbg"></a>_malloc_dbg
+# <a name="_malloc_dbg"></a>_malloc_dbg
 
-Hata ayıklama üst bilgisi için bir ek alana sahip yığında bellek bloğu ayırır ve arabellek (yalnızca hata ayıklama sürümü) üzerine yazılır.
+Bir hata ayıklama üst bilgisi ve üzerine yazma arabellekleri (yalnızca hata ayıklama sürümü) için ek alana sahip yığında bir bellek bloğu ayırır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -47,49 +50,49 @@ void *_malloc_dbg(
 
 ### <a name="parameters"></a>Parametreler
 
-*Boyutu*<br/>
-İstenen boyut (bayt cinsinden) bellek bloğu.
+*boyutla*<br/>
+Bellek bloğunun istenen boyutu (bayt).
 
 *blockType*<br/>
-İstenen bellek bloğu türü: **_clıent_block** veya **_NORMAL_BLOCK**.
+Bellek bloğunun istenen türü: **_Client_block** veya **_NORMAL_BLOCK**.
 
-*Dosya adı*<br/>
-Ayırma işlemi istenen kaynak dosyasının adını işaretçisi veya **NULL**.
+*kısaltın*<br/>
+Ayırma işlemini veya **null değerini**isteyen kaynak dosyanın adı işaretçisi.
 
-*LineNumber*<br/>
-Satır numarası kaynak dosyada ayırma işlemi burada istendi veya **NULL**.
+*onayın*<br/>
+Ayırma işleminin istendiği veya **null**olduğu kaynak dosyadaki satır numarası.
 
-*Filename* ve *linenumber* parametreleri yalnızca kullanılabilir olduğunda **_malloc_dbg** açıkça çağrılan veya [_CRTDBG_MAP_ALLOC](../../c-runtime-library/crtdbg-map-alloc.md)ön işlemci sabiti tanımlanmış.
+*Filename* ve *onayın* parametreleri yalnızca **_malloc_dbg** açıkça çağrıldığında veya [_crtdbg_map_ayırma](../../c-runtime-library/crtdbg-map-alloc.md) Önişlemci sabiti tanımlandığında kullanılabilir.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarıyla tamamlandığında, bu işlev için ayrılmış bellek bloğu kullanıcı bölümünü bir işaretçi döndürür, yeni işleyici işlevi çağırır veya döndürür **NULL**. Dönüş davranışı eksiksiz bir açıklaması için aşağıdaki Açıklamalar bölümüne bakın. Yeni işleyici işlevi nasıl kullanıldığı hakkında daha fazla bilgi için bkz. [malloc](malloc.md) işlevi.
+Başarıyla tamamlandığında, bu işlev ayrılan bellek bloğunun Kullanıcı kısmına bir işaretçi döndürür, yeni işleyici işlevini çağırır veya **null**değerini döndürür. Dönüş davranışının ayrıntılı bir açıklaması için aşağıdaki açıklamalar bölümüne bakın. Yeni işleyici işlevinin nasıl kullanıldığı hakkında daha fazla bilgi için bkz. [malloc](malloc.md) işlevi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_malloc_dbg** bir hata ayıklama sürümü [malloc](malloc.md) işlevi. Zaman [_DEBUG](../../c-runtime-library/debug.md) tanımlı değil, her çağrı **_malloc_dbg** çağrısı azaltılır **malloc**. Her ikisi de **malloc** ve **_malloc_dbg** taban yığının bellek bloğu ayrılamadı ancak **_malloc_dbg** birkaç hata ayıklama özellikleri sunar: kullanıcı her iki tarafındaki arabellekler Blok için sızıntılara, belirli bir ayırma türleri izlemek için bir blok türü parametresi test etmek için bir kısmı ve *filename*/*linenumber* kökenini belirlemek için bilgi ayırma isteklerini.
+**_malloc_dbg** , [malloc](malloc.md) işlevinin hata ayıklama sürümüdür. [_Hata ayıklama](../../c-runtime-library/debug.md) tanımlanmadığında, **_malloc_dbg** öğesine yapılan her çağrı, **malloc**çağrısına düşürülür. Hem **malloc** hem de **_malloc_dbg** , temel yığında bir bellek bloğu ayırır, ancak **_malloc_dbg** birçok hata ayıklama özelliği sunar: sızıntıların test olması için bloğun Kullanıcı bölümünün her iki tarafında da arabellekler, izlenecek bir blok türü parametresi ayırma isteklerinin kaynağını tespit etmek için belirli ayırma türleri ve *dosya adı*/*onayın* bilgileri.
 
-**_malloc_dbg** ile biraz daha fazla alan istenen bellek bloğu ayırır *boyutu*. Ek alan, hata ayıklama bellek bloklarını bağlantı ve uygulama ile hata ayıklama üstbilgi bilgileri sağlayın ve arabellek üzerine yazmak için hata ayıklama yığını Yöneticisi tarafından kullanılır. Blok atandığında, blok kullanıcı bölümünü 0xCD değeri ile doldurulur ve 0xFD ile doldurulmuş her üzerine yaz arabellek.
+**_malloc_dbg** bellek bloğunu istenen *boyuttan*biraz daha fazla alanla ayırır. Hata ayıklama bellek bloklarını bağlamak ve uygulamanın hata ayıklama üstbilgi bilgilerini ve üzerine yazma arabelleğini sağlamak için ek alan, hata ayıklama yığın Yöneticisi tarafından kullanılır. Blok ayrıldığında, bloğun Kullanıcı bölümü, 0xCD değeri ile doldurulur ve üzerine yazma arabelleklerinin her biri 0xFD ile doldurulur.
 
-**_malloc_dbg** ayarlar **errno** için **ENOMEM** bir bellek ayırma başarısız olursa veya (daha önce bahsedilen ek yük dahil) gerekli bellek miktarını aşıyorsa **_HEAP_ MAXREQ**. Bu ve diğer hata kodları hakkında daha fazla bilgi için bkz: [errno _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+**_malloc_dbg** , bir bellek ayırma başarısız olursa veya gerekli bellek miktarı (daha önce bahsedilen ek yük dahil) **_Heap_maxreq**değerini aşarsa, **errno** değerini **ENOMEM** olarak ayarlar. Bu ve diğer hata kodları hakkında daha fazla bilgi için bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-Nasıl bellek blokları ayrılan, başlatılır ve taban yığının hata ayıklama sürümünde yönetilen hakkında daha fazla bilgi için bkz: [CRT hata ayıklama öbeği ayrıntıları](/visualstudio/debugger/crt-debug-heap-details). Ayırma blok türleri ve bunların nasıl kullanıldığı hakkında daha fazla bilgi için bkz. [hata ayıklama öbek üzerindeki blokları türleri](/visualstudio/debugger/crt-debug-heap-details). Standart yığın işlevi ve hata ayıklama sürümü, bir uygulamanın hata ayıklama derlemesinde çağırma arasındaki farklar hakkında daha fazla bilgi için bkz. [hata ayıklama sürümleri, yığın ayırma işlevleri](/visualstudio/debugger/debug-versions-of-heap-allocation-functions).
+Bellek bloklarının taban yığının hata ayıklama sürümünde nasıl ayrıldığı, başlatıldığı ve yönetildiği hakkında bilgi için bkz. [CRT hata ayıklama yığını ayrıntıları](/visualstudio/debugger/crt-debug-heap-details). Ayırma bloğu türleri ve bunların nasıl kullanıldığı hakkında bilgi için bkz. [hata ayıklama yığınındaki blok türleri](/visualstudio/debugger/crt-debug-heap-details). Bir uygulamanın hata ayıklama sürümünde standart yığın işlevi çağırma ve hata ayıklama sürümü arasındaki farklar hakkında daha fazla bilgi için bkz. [yığın ayırma Işlevlerinin hata ayıklama sürümleri](/visualstudio/debugger/debug-versions-of-heap-allocation-functions).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_malloc_dbg**|\<crtdbg.h >|
+|**_malloc_dbg**|\<Crtdbg. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 
-Hata ayıklama sürümleri [C çalışma zamanı kitaplıkları](../../c-runtime-library/crt-library-features.md) yalnızca.
+Yalnızca [C çalışma zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md) sürümlerini ayıklayın.
 
 ## <a name="example"></a>Örnek
 
-Nasıl kullanılacağını gösteren bir örnek **_malloc_dbg**, bkz: [crt_dbg1](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/crt_dbg1).
+**_Malloc_dbg**öğesinin nasıl kullanılacağına ilişkin bir örnek için bkz. [crt_dbg1](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/crt_dbg1).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
