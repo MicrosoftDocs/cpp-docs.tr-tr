@@ -1,7 +1,7 @@
 ---
 title: nextafter, nextafterf, nextafterl, _nextafter, _nextafterf, nexttoward, nexttowardf, nexttowardl
 ms.date: 04/05/2018
-apiname:
+api_name:
 - nextafterf
 - _nextafterf
 - nextafter
@@ -10,7 +10,7 @@ apiname:
 - nexttoward
 - nexttowardf
 - nexttowardl
-apilocation:
+api_location:
 - msvcrt.dll
 - msvcr80.dll
 - msvcr90.dll
@@ -22,7 +22,10 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-math-l1-1-0.dll
-apitype: DLLExport
+api_type:
+- DLLExport
+topic_type:
+- apiref
 f1_keywords:
 - nextafter
 - _nextafter
@@ -48,16 +51,16 @@ helpviewer_keywords:
 - nexttowardf function
 - nexttowardl function
 ms.assetid: 9785bfb9-de53-4bd0-9637-f05fa0c1f6ab
-ms.openlocfilehash: 0e0a60dc9f7c068d8c18c10f3c6b819b9e06d3b7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c56c9f8032c9af2ed4404428abe3b9ee26b4b603
+ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62156193"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70951362"
 ---
-# <a name="nextafter-nextafterf-nextafterl-nextafter-nextafterf-nexttoward-nexttowardf-nexttowardl"></a>nextafter, nextafterf, nextafterl, _nextafter, _nextafterf, nexttoward, nexttowardf, nexttowardl
+# <a name="nextafter-nextafterf-nextafterl-_nextafter-_nextafterf-nexttoward-nexttowardf-nexttowardl"></a>nextafter, nextafterf, nextafterl, _nextafter, _nextafterf, nexttoward, nexttowardf, nexttowardl
 
-Gösterilebilir sıradaki kayan nokta değeri döndürür.
+Sonraki gösterilemeyen kayan noktalı değeri döndürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -85,29 +88,29 @@ long double nexttoward( long double x, long double y ); /* C++ only, requires <c
 ### <a name="parameters"></a>Parametreler
 
 *x*<br/>
-Başlamak için kayan nokta değeri.
+Başlangıçtan başlamak için kayan nokta değeri.
 
-*Y*<br/>
-Doğru gitmek için kayan nokta değeri.
+*Iz*<br/>
+Doğru gidilecek kayan nokta değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Dönüş türü sonra sonraki gösterilebilir kayan nokta değeri döndürür *x* yönünde *y*. Varsa *x* ve *y* işlevi döndürür eşit olup olmadığını *y*, hiçbir özel durum harekete dönüş türüyle dönüştürülür. Varsa *x* eşit değildir *y*, ve sonucu bir denormal veya sıfır olan **FE_UNDERFLOW** ve **FE_INEXACT** kayan nokta özel durumları ayarlanır, ve doğru bir sonuç döndürdü. Ya da *x* veya *y* dönüş değeri bir giriş NaN'ler ise bir NAN olup. Varsa *x* sınırlıdır ve sonucu sonsuz veya türü içinde gösterilebilir değil, doğru şekilde imzalanmış sonsuz veya NAN döndürülür, **FE_OVERFLOW** ve **FE_INEXACT** kayan nokta özel durumlarını ayarlanır ve **errno** ayarlanır **ERANGE**.
+*Y*yönünde *x* öğesinden sonra dönüş türünün sonraki gösterilemeyen kayan nokta değerini döndürür. *X* ve *y* eşitse, işlev bir özel durum Tetiklenmeyen, dönüş türüne dönüştürülmüş *y*döndürür. *X* *y*'ye eşit değilse ve sonuç bir denormal veya sıfır Ise, **FE_UNDERFLOW** ve **FE_INEXACT** kayan nokta özel durum durumları ayarlanır ve doğru sonuç döndürülür. *X* veya *y* bir NaN ise, dönüş değeri, giriş nans 'lardan biridir. *X* sınırlı ise ve sonuç tür içinde sonsuz veya gösterilemeyen bir tablo değilse, doğru imzalı bir sonsuzluk veya NaN döndürülür, **FE_OVERFLOW** ve **FE_INEXACT** kayan nokta özel durum durumları ayarlanır ve **errno** , ERANGE olarak ayarlanır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Nextafter** ve **nexttoward** dışında parametre türü, eşdeğer işlev aileleri *y*. Varsa *x* ve *y* döndürülen değer eşit olan *y* dönüş türüne dönüştürülür.
+*Y*parametre türü dışında, **nextafter** ve **NexTTo** işlev aileleri eşdeğerdir. *X* ve *y* eşitse, döndürülen değer *y* , dönüş türüne dönüştürülür.
 
-Aşırı yükleme, C++ eklerseniz izin verdiğinden \<cmath > aşırı yüklemesini çağırabilirsiniz **nextafter** ve **nexttoward** döndüren **float** ve **uzun** **çift** türleri. C programında **nextafter** ve **nexttoward** her zaman dönüş **çift**.
+Aşırı C++ yüklemeye \<izin verdiğinden, cmath > eklerseniz, bu Return **float** ve **Long** **Double** türlerine doğru **nextafter** ve **nextaşırı** yüklerini çağırabilirsiniz. C programında, **nextafter** ve **Next,** her zaman **Double**döndürür.
 
-**_Nextafter** ve **_nextafterf** Microsoft'a özgü işlevlerdir. **_Nextafterf** işlevi, yalnızca kullanılabilir x64 için derleme yaparken.
+**_Nextafter** ve **_nextafterf** işlevleri Microsoft 'a özgüdür. **_Nextafterf** işlevi yalnızca x64 için derlenirken kullanılabilir.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli başlık (C)|Gerekli başlık (C++)|
+|Yordam|Gerekli üst bilgi (C)|Gerekli üst bilgiC++()|
 |-------------|---------------------------|-------------------------------|
-|**nextafter**, **nextafterf**, **nextafterl**, **_nextafterf**, **nexttoward**, **nexttowardf** , **nexttowardl**|\<Math.h >|\<Math.h > veya \<cmath >|
-|**_nextafter**|\<float.h >|\<float.h > veya \<cfloat >|
+|**nextafter**, **nextafterf**, **nextafterl**, **_nextafterf**, **nextnext**, **nexttowardf**, **nexttowardl**|\<Math. h >|\<Math. h > veya \<cmath >|
+|**_nextafter**|\<float. h >|\<float. h > veya \<cfloat >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
