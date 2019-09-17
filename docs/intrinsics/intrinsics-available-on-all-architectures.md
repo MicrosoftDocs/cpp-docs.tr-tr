@@ -4,12 +4,12 @@ ms.date: 09/02/2019
 helpviewer_keywords:
 - cl.exe compiler, intrinsics
 ms.assetid: 1fe3958e-d2fe-4188-8e34-5896738246eb
-ms.openlocfilehash: 6550c97a8d4efae29318d48ed8cab43b85b135f4
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 93f53bf90bd8defaa4559e52c00cfcd6269edee4
+ms.sourcegitcommit: 499dfcb5622c4cd1b6afaf23b9de5b09b7751579
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70217541"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71012242"
 ---
 # <a name="intrinsics-available-on-all-architectures"></a>Tüm mimarilerde kullanılabilen iç bilgiler
 
@@ -28,7 +28,46 @@ Aşağıdaki iç bilgiler x86, AMD64, ARM ve ARM64 mimarilerinde kullanılabilir
 |[_bittestandtamamlayıcı](../intrinsics/bittestandcomplement-bittestandcomplement64.md)|Intrin. h|
 |[_bittestandreset](../intrinsics/bittestandreset-bittestandreset64.md)|Intrin. h|
 |[_bittestandset](../intrinsics/bittestandset-bittestandset64.md)|Intrin. h|
-__code_seg | [__debugbreak](../intrinsics/debugbreak.md)| Intrin. h | | [_Disable](../intrinsics/disable.md)| Intrin. h | | [_Bu](../intrinsics/enable.md)| Intrin. h | | [__fastfail](../intrinsics/fastfail.md)| Intrin. h | | [_InterlockedAnd](../intrinsics/interlockedand-intrinsic-functions.md)| Intrin. h | | [_InterlockedAnd16](../intrinsics/interlockedand-intrinsic-functions.md)| Intrin. h | | [_InterlockedAnd8](../intrinsics/interlockedand-intrinsic-functions.md)| Intrin. h | | [_ınterlockedbittestandreset](../intrinsics/interlockedbittestandreset-intrinsic-functions.md)| Intrin. h | | [_ınterlockedbittestandset](../intrinsics/interlockedbittestandset-intrinsic-functions.md)| Intrin. h | | [_InterlockedCompareExchange](../intrinsics/interlockedcompareexchange-intrinsic-functions.md)| Intrin. h | | [_InterlockedCompareExchange16](../intrinsics/interlockedcompareexchange-intrinsic-functions.md)| Intrin. h | | [_Interlockedcompareexchange8](../intrinsics/interlockedcompareexchange-intrinsic-functions.md)| Intrin. h | | [_Interlockedcompareexchangepointer](../intrinsics/interlockedcompareexchangepointer-intrinsic-functions.md)| Intrin. h | | [_Interlockedazaltma](../intrinsics/interlockeddecrement-intrinsic-functions.md)| Intrin. h | | [_Interlockedes16](../intrinsics/interlockeddecrement-intrinsic-functions.md)| Intrin. h | | [_InterlockedExchange](../intrinsics/interlockedexchange-intrinsic-functions.md)| Intrin. h | | [_InterlockedExchange16](../intrinsics/interlockedexchange-intrinsic-functions.md)| Intrin. h | | [_InterlockedExchange8](../intrinsics/interlockedexchange-intrinsic-functions.md)| Intrin. h | | [_InterlockedExchangeAdd](../intrinsics/interlockedexchangeadd-intrinsic-functions.md)| Intrin. h | | [_InterlockedExchangeAdd16](../intrinsics/interlockedexchangeadd-intrinsic-functions.md)| Intrin. h | | [_InterlockedExchangeAdd8](../intrinsics/interlockedexchangeadd-intrinsic-functions.md)| Intrin. h | | [_InterlockedExchangePointer](../intrinsics/interlockedexchangepointer-intrinsic-functions.md)| Intrin. h | | [_InterlockedIncrement](../intrinsics/interlockedincrement-intrinsic-functions.md)| Intrin. h | | [_InterlockedIncrement16](../intrinsics/interlockedincrement-intrinsic-functions.md)| Intrin. h | | [_InterlockedOr](../intrinsics/interlockedor-intrinsic-functions.md)| Intrin. h | | [_InterlockedOr16](../intrinsics/interlockedor-intrinsic-functions.md)| Intrin. h | | [_Interlockedor8](../intrinsics/interlockedor-intrinsic-functions.md)| Intrin. h | | [_InterlockedXor](../intrinsics/interlockedxor-intrinsic-functions.md)| Intrin. h | | [_InterlockedXor16](../intrinsics/interlockedxor-intrinsic-functions.md)| Intrin. h | | [_InterlockedXor8](../intrinsics/interlockedxor-intrinsic-functions.md)| Intrin. h | | [__nop](../intrinsics/nop.md)| Intrin. h | | [_Readengelini](../intrinsics/readbarrier.md)| Intrin. h | | [_Readwriteengelini](../intrinsics/readwritebarrier.md)| Intrin. h | | [_Returnaddress](../intrinsics/returnaddress.md)| Intrin. h | | [_rotl16](../intrinsics/rotl8-rotl16.md)| Intrin. h | | [_rotl8](../intrinsics/rotl8-rotl16.md)| Intrin. h | | [_rotr16](../intrinsics/rotr8-rotr16.md)| Intrin. h | | [_rotr8](../intrinsics/rotr8-rotr16.md)| Intrin. h | | [_Writeengelini](../intrinsics/writebarrier.md)| Intrin. h |
+|__code_seg|Intrin. h|
+|[__debugbreak](../intrinsics/debugbreak.md)|Intrin. h|
+|[_disable](../intrinsics/disable.md)|Intrin. h|
+|[_enable](../intrinsics/enable.md)|Intrin. h|
+|[__fastfail](../intrinsics/fastfail.md)|Intrin. h|
+|[_InterlockedAnd](../intrinsics/interlockedand-intrinsic-functions.md)|Intrin. h|
+|[_InterlockedAnd16](../intrinsics/interlockedand-intrinsic-functions.md)|Intrin. h|
+|[_InterlockedAnd8](../intrinsics/interlockedand-intrinsic-functions.md)|Intrin. h|
+|[_interlockedbittestandreset](../intrinsics/interlockedbittestandreset-intrinsic-functions.md)|Intrin. h|
+|[_interlockedbittestandset](../intrinsics/interlockedbittestandset-intrinsic-functions.md)|Intrin. h|
+|[_InterlockedCompareExchange](../intrinsics/interlockedcompareexchange-intrinsic-functions.md)|Intrin. h|
+|[_InterlockedCompareExchange16](../intrinsics/interlockedcompareexchange-intrinsic-functions.md)|Intrin. h|
+|[_InterlockedCompareExchange8](../intrinsics/interlockedcompareexchange-intrinsic-functions.md)|Intrin. h|
+|[_InterlockedCompareExchangePointer](../intrinsics/interlockedcompareexchangepointer-intrinsic-functions.md)|Intrin. h|
+|[_Interlockedazaltma](../intrinsics/interlockeddecrement-intrinsic-functions.md)|Intrin. h|
+|[_InterlockedDecrement16](../intrinsics/interlockeddecrement-intrinsic-functions.md)|Intrin. h|
+|[_InterlockedExchange](../intrinsics/interlockedexchange-intrinsic-functions.md)|Intrin. h|
+|[_InterlockedExchange16](../intrinsics/interlockedexchange-intrinsic-functions.md)|Intrin. h|
+|[_InterlockedExchange8](../intrinsics/interlockedexchange-intrinsic-functions.md)|Intrin. h|
+|[_InterlockedExchangeAdd](../intrinsics/interlockedexchangeadd-intrinsic-functions.md)|Intrin. h|
+|[_InterlockedExchangeAdd16](../intrinsics/interlockedexchangeadd-intrinsic-functions.md)|Intrin. h|
+|[_InterlockedExchangeAdd8](../intrinsics/interlockedexchangeadd-intrinsic-functions.md)|Intrin. h|
+|[_InterlockedExchangePointer](../intrinsics/interlockedexchangepointer-intrinsic-functions.md)|Intrin. h|
+|[_InterlockedIncrement](../intrinsics/interlockedincrement-intrinsic-functions.md)|Intrin. h|
+|[_InterlockedIncrement16](../intrinsics/interlockedincrement-intrinsic-functions.md)|Intrin. h|
+|[_InterlockedOr](../intrinsics/interlockedor-intrinsic-functions.md)|Intrin. h|
+|[_InterlockedOr16](../intrinsics/interlockedor-intrinsic-functions.md)|Intrin. h|
+|[_InterlockedOr8](../intrinsics/interlockedor-intrinsic-functions.md)|Intrin. h|
+|[_InterlockedXor](../intrinsics/interlockedxor-intrinsic-functions.md)|Intrin. h|
+|[_InterlockedXor16](../intrinsics/interlockedxor-intrinsic-functions.md)|Intrin. h|
+|[_InterlockedXor8](../intrinsics/interlockedxor-intrinsic-functions.md)|Intrin. h|
+|[__nop](../intrinsics/nop.md)|Intrin. h|
+|[_ReadBarrier](../intrinsics/readbarrier.md)|Intrin. h|
+|[_ReadWriteBarrier](../intrinsics/readwritebarrier.md)|Intrin. h|
+|[_ReturnAddress](../intrinsics/returnaddress.md)|Intrin. h|
+|[_rotl16](../intrinsics/rotl8-rotl16.md)|Intrin. h|
+|[_rotl8](../intrinsics/rotl8-rotl16.md)|Intrin. h|
+|[_rotr16](../intrinsics/rotr8-rotr16.md)|Intrin. h|
+|[_rotr8](../intrinsics/rotr8-rotr16.md)|Intrin. h|
+|[_WriteBarrier](../intrinsics/writebarrier.md)|Intrin. h|
 
 ## <a name="ucrt-intrinsics"></a>UCRT iç öğeleri
 
