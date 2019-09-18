@@ -6,12 +6,12 @@ helpviewer_keywords:
 - Windows applications [C++], Win32
 - Windows Desktop applications [C++]
 - Windows API [C++]
-ms.openlocfilehash: f33365fffc9a4addb0f22a90b87f8a03fdf2c1a9
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 8bc2a42c5a9006065e2f0f4ecb70911e0055823e
+ms.sourcegitcommit: bf724dfc639b16d5410fab72183f8e6b781338bc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69513743"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71062066"
 ---
 # <a name="walkthrough-create-a-traditional-windows-desktop-application-c"></a>İzlenecek yol: Geleneksel Windows masaüstü uygulaması (C++) oluşturma
 
@@ -144,7 +144,7 @@ Daha sonra, Visual Studio 'da bir Windows masaüstü uygulaması için kod oluş
    Bu işlevin parametreleri ve dönüş değeri hakkında daha fazla bilgi için bkz. [WinMain giriş noktası](/windows/win32/api/winbase/nf-winbase-winmain).
 
    > [!NOTE]
-   > Ya da veya gibi tüm ek sözcükler `CALLBACK` `HINSTANCE` `_In_`nelerdir? Geleneksel Windows API 'si, türlerin ve platforma özgü kodun, çağırma kuralları, **__declspec** bildirimleri ve derleyici pragmaları gibi bazı ayrıntılarını soyutlamak için kapsamlı olarak tür tanımları ve Önişlemci makroları kullanır. Visual Studio 'da, bu tür tanımları ve makroların neleri tanımlacağınızı görmek için IntelliSense [hızlı bilgi](/visualstudio/ide/using-intellisense#quick-info) özelliğini kullanabilirsiniz. Farenizi ilgilendiğiniz sözcüğün üzerine getirin veya seçin ve tanımı içeren küçük bir açılır pencere+için CTRL**K**, **CTRL**+**i** tuşlarına basın. Daha fazla bilgi için [IntelliSense kullanarak](/visualstudio/ide/using-intellisense). Parametreler ve dönüş türleri, programlama hatalarını yakalayabilmeniz için genellikle *sal ek açıklamalarını* kullanır. Daha fazla bilgi için, bkz. [CC++ /kod HATALARıNı azaltmak Için sal ek açıklamalarını kullanma](/visualstudio/code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects).
+   > Ya da veya gibi tüm ek sözcükler `CALLBACK` `HINSTANCE` `_In_`nelerdir? Geleneksel Windows API 'si, türlerin ve platforma özgü kodun, çağırma kuralları, **__declspec** bildirimleri ve derleyici pragmaları gibi bazı ayrıntılarını soyutlamak için kapsamlı olarak tür tanımları ve Önişlemci makroları kullanır. Visual Studio 'da, bu tür tanımları ve makroların neleri tanımlacağınızı görmek için IntelliSense [hızlı bilgi](/visualstudio/ide/using-intellisense#quick-info) özelliğini kullanabilirsiniz. Farenizi ilgilendiğiniz sözcüğün üzerine getirin veya seçin ve tanımı içeren küçük bir açılır pencere **için CTRL**+**K**, **CTRL**+**i** tuşlarına basın. Daha fazla bilgi için [IntelliSense kullanarak](/visualstudio/ide/using-intellisense). Parametreler ve dönüş türleri, programlama hatalarını yakalayabilmeniz için genellikle *sal ek açıklamalarını* kullanır. Daha fazla bilgi için, bkz. [CC++ /kod HATALARıNı azaltmak Için sal ek açıklamalarını kullanma](/visualstudio/code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects).
 
 1. Windows masaüstü programları için &lt;Windows. h > gerekir. &lt;Tchar. h >, UNICODE `TCHAR` sembolü projenizde tanımlandıysa, aksi takdirde **char**olarak çözümlenirse, sonunda **wchar_t** ile çözümlenen makroyu tanımlar.  Her zaman UNICODE 'u etkin olarak oluşturursanız, TCHAR 'a ihtiyacınız yoktur ve yalnızca **wchar_t** 'yi doğrudan kullanabilirsiniz.
 
@@ -157,8 +157,8 @@ Daha sonra, Visual Studio 'da bir Windows masaüstü uygulaması için kod oluş
 
    ```cpp
    LRESULT CALLBACK WndProc(
-      _In_ HWND   hwnd,
-      _In_ UINT   uMsg,
+      _In_ HWND   hWnd,
+      _In_ UINT   message,
       _In_ WPARAM wParam,
       _In_ LPARAM lParam
    );

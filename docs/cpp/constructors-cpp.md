@@ -1,17 +1,17 @@
 ---
 title: Oluşturucular (C++)
-ms.date: 07/02/2019
+ms.date: 09/05/2019
 helpviewer_keywords:
 - constructors [C++]
 - objects [C++], creating
 - instance constructors
 ms.assetid: 3e9f7211-313a-4a92-9584-337452e061a9
-ms.openlocfilehash: a2afa605fe110f7dc84d528330417ef3a1fc47e7
-ms.sourcegitcommit: effb516760c0f956c6308eeded48851accc96b92
+ms.openlocfilehash: 0e2e3536c8eb0a5b111ff18e43044783ea684f1f
+ms.sourcegitcommit: bf724dfc639b16d5410fab72183f8e6b781338bc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70926272"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71062022"
 ---
 # <a name="constructors-c"></a>Oluşturucular (C++)
 
@@ -518,47 +518,6 @@ BaseClass1 ctor
 BaseClass2 ctor
 BaseClass3 ctor
 DerivedClass ctor
-```
-
-## <a name="virtual_functions_in_constructors"></a>Oluşturuculardaki sanal işlevler
-
-Oluşturucularda sanal işlevleri çağırırken dikkatli olmanız önerilir. Temel sınıf oluşturucusu her zaman türetilen sınıf oluşturucusundan önce çağrıldığından, temel oluşturucu içinde çağrılan işlev türetilen sınıf sürümü değil, temel sınıf sürümüdür. `DerivedClass` Aşağıdaki örnekte, bir oluşturmak, `DerivedClass` oluşturucusunun uygulamasının yürütülmesine `BaseClass` neden `DerivedClass` `print_it()` olmadan `print_it()` önce yürütülmesi için uygulamasının yürütülmesine neden olur:
-
-```cpp
-#include <iostream>
-using namespace std;
-
-class BaseClass{
-public:
-    BaseClass(){
-        print_it();
-    }
-    virtual void print_it() {
-        cout << "BaseClass print_it" << endl;
-    }
-};
-
-class DerivedClass : public BaseClass {
-public:
-    DerivedClass() {
-        print_it();
-    }
-    virtual void print_it(){
-        cout << "Derived Class print_it" << endl;
-    }
-};
-
-int main() {
-
-    DerivedClass dc;
-}
-```
-
-Çıkış şu şekildedir:
-
-```Output
-BaseClass print_it
-Derived Class print_it
 ```
 
 ## <a name="delegating_constructors"></a>Temsilci oluşturucuları
