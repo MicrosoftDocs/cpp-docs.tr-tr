@@ -1,6 +1,6 @@
 ---
 title: CRecordView ve CDaoRecordView için İletişim Kutusu Veri Değişimi İşlevleri
-ms.date: 11/04/2016
+ms.date: 09/17/2019
 f1_keywords:
 - AFXDAO/DDX_FieldCBIndex
 - AFXDAO/DDX_FieldCBString
@@ -20,39 +20,39 @@ helpviewer_keywords:
 - databases [MFC], dialog data exchange (DDX) support
 - DAO [MFC], dialog data exchange (DDX) support
 ms.assetid: 0d8cde38-3a2c-4100-9589-ac80a7b1ce91
-ms.openlocfilehash: 2a794d16b2f94bf8ba66b6c0398dec262d8829e5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 078e0f450514881084786086683ac026e15ea8be
+ms.sourcegitcommit: 2f96e2fda591d7b1b28842b2ea24e6297bcc3622
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62322559"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71095778"
 ---
 # <a name="dialog-data-exchange-functions-for-crecordview-and-cdaorecordview"></a>CRecordView ve CDaoRecordView için İletişim Kutusu Veri Değişimi İşlevleri
 
-Bu konuda arasında veri değişimi için kullanılan DDX_Field işlevleri listeler bir [CRecordset](../../mfc/reference/crecordset-class.md) ve [CRecordView](../../mfc/reference/crecordview-class.md) form veya [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) ve [ CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) formu.
+Bu konuda, bir [CRecordset](../../mfc/reference/crecordset-class.md) ve [CRecordView](../../mfc/reference/crecordview-class.md) formu veya bir [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) ile [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) formu arasında veri alışverişi yapmak için kullanılan DDX_Field işlevleri listelenmektedir. DAO, Access veritabanları ile birlikte kullanılır ve Office 2013 aracılığıyla desteklenir. 3,6 son sürümdür ve artık kullanılmıyor olarak kabul edilir.
 
 > [!NOTE]
->  Bunların bir formdaki denetimleri ile veri değişimi, DDX_Field işlevleri DDX gibi işlevlerdir. Ancak DDX, görünümün ilişkili kayıt kümesi nesnesi alanlarının bulunduğu yerine alanları kayıt görünümü ile veri değişimi. Daha fazla bilgi için bkz: sınıflarını `CRecordView` ve `CDaoRecordView`.
+>  DDX_Field işlevleri, bir form içindeki denetimlerle veri değiş tokuş ettikleri için DDX işlevleri gibidir. Ancak, DDX 'nin aksine, kayıt görünümündeki alanları yerine görünümün ilişkili kayıt kümesi nesnesinin alanlarıyla verileri değiş tokuş ederler. Daha fazla bilgi için bkz. `CRecordView` sınıflar `CDaoRecordView`ve.
 
-### <a name="ddxfield-functions"></a>DDX_Field işlevleri
+### <a name="ddx_field-functions"></a>DDX_Field Işlevleri
 
 |||
 |-|-|
-|[DDX_FieldCBIndex](#ddx_fieldcbindex)|Kayıt kümesi alan veri üyesi ve geçerli seçimi birleşik giriş kutusunda dizinini arasında tamsayı veri aktarımı bir [CRecordView](../../mfc/reference/crecordview-class.md) veya [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md).|
-|[DDX_FieldCBString](#ddx_fieldcbstring)|Aktarımları `CString` düzenleme denetimi bir açılan bir kayıt kümesi alan veri üyesi arasında verileri kutu bir `CRecordView` veya `CDaoRecordView`. Bu işlev, öğe veri denetime kayıt kümesinden taşırken, belirtilen dizedeki karakterlerle başlayan birleşik giriş kutusundaki seçer.|
-|[DDX_FieldCBStringExact](#ddx_fieldcbstringexact)|Aktarımları `CString` düzenleme denetimi bir açılan bir kayıt kümesi alan veri üyesi arasında verileri kutu bir `CRecordView` veya `CDaoRecordView`. Veri denetime kayıt kümesinden taşırken, bu işlev birleşik giriş kutusuna tam olarak belirtilen dizesiyle eşleşen öğeyi seçer.|
-|[DDX_FieldCheck](#ddx_fieldcheck)|Kayıt kümesi alan veri üyesi ve onay kutusuna arasında Boole veri aktarımı bir `CRecordView` veya `CDaoRecordView`.|
-|[DDX_FieldLBIndex](#ddx_fieldlbindex)|Kayıt kümesi alan veri üyesi ve bir liste kutusunda geçerli seçimin indisini arasında tamsayı veri aktarımı bir `CRecordView` veya `CDaoRecordView`.|
-|[DDX_FieldLBString](#ddx_fieldlbstring)|Aktarımını yöneten [CString](../../atl-mfc-shared/reference/cstringt-class.md) bir liste kutusu denetimi ve bir kayıt kümesi alan veri üyeleri arasında veri. Bu işlev, öğe veri denetime kayıt kümesinden taşırken, belirtilen dizedeki karakterlerle başlayan liste kutusunda seçer.|
-|[DDX_FieldLBStringExact](#ddx_fieldlbstringexact)|Aktarımını yöneten `CString` bir liste kutusu denetimi ve bir kayıt kümesi alan veri üyeleri arasında veri. Bu işlev, verileri kayıt kümesinden denetime taşıma, tam olarak belirtilen dizesiyle eşleşen ilk öğeyi seçer.|
-|[DDX_FieldRadio](#ddx_fieldradio)|Kayıt kümesi alan veri üyesi ve bir grup radyo düğmeleri arasında tamsayı veri aktarımı bir `CRecordView` veya `CDaoRecordView`.|
-|[DDX_FieldScroll](#ddx_fieldscroll)|Bir kaydırma çubuğu denetiminde kaydırma konumunu alır veya ayarlar bir `CRecordView` veya `CDaoRecordView`. Çağırmanıza, [DoFieldExchange](../../mfc/reference/cdaorecordset-class.md#dofieldexchange) işlevi.|
-|[DDX_FieldSlider](#ddx_fieldslider)|Kayıt görünümü bir kaydırıcı denetimi thumb konumunu eşitler ve `int` kümesinin alan veri üyesi. |
-|[DDX_FieldText](#ddx_fieldtext)|Aşırı yüklenmiş sürümleri aktarmak için kullanılabilir `int`, **UINT**, **uzun**, `DWORD`, [CString](../../atl-mfc-shared/reference/cstringt-class.md), **float** , **çift**, **kısa**, [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md), ve [COleCurrency](../../mfc/reference/colecurrency-class.md) kayıt alan veri üyesi bir düzenleme arasında verileri kutu bir `CRecordView` veya `CDaoRecordView`.|
+|[DDX_FieldCBIndex](#ddx_fieldcbindex)|Bir kayıt kümesi alanı veri üyesi ve geçerli seçimin dizini ile bir [CRecordView](../../mfc/reference/crecordview-class.md) veya [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md)içindeki Birleşik giriş kutusunda bulunan tamsayı verilerini aktarır.|
+|[DDX_FieldCBString](#ddx_fieldcbstring)|Bir `CString` kayıt kümesi alanı veri üyesi ve bir `CRecordView` veya `CDaoRecordView`içindeki Birleşik giriş kutusunun düzenleme denetimi arasında veri aktarır. Kayıt kümesinden denetime veri taşırken, bu işlev belirtilen dizedeki karakterlerle başlayan açılan kutudaki öğeyi seçer.|
+|[DDX_FieldCBStringExact](#ddx_fieldcbstringexact)|Bir `CString` kayıt kümesi alanı veri üyesi ve bir `CRecordView` veya `CDaoRecordView`içindeki Birleşik giriş kutusunun düzenleme denetimi arasında veri aktarır. Kayıt kümesinden denetime veri taşırken, bu işlev, belirtilen dizeyle tam olarak eşleşen Birleşik giriş kutusunda bulunan öğeyi seçer.|
+|[DDX_FieldCheck](#ddx_fieldcheck)|Boole verilerini bir kayıt kümesi alanı veri üyesi ile `CRecordView` veya `CDaoRecordView`içindeki onay kutusu arasında aktarır.|
+|[DDX_FieldLBIndex](#ddx_fieldlbindex)|Bir kayıt kümesi alanı veri üyesi ve bir `CRecordView` veya `CDaoRecordView`içindeki bir liste kutusunda geçerli seçimin dizini arasında tam sayı verilerini aktarır.|
+|[DDX_FieldLBString](#ddx_fieldlbstring)|Bir liste kutusu denetimi ve bir kayıt kümesinin alan veri üyeleri arasında [CString](../../atl-mfc-shared/reference/cstringt-class.md) verilerinin aktarımını yönetir. Kayıt kümesinden denetime veri taşırken, bu işlev belirtilen dizedeki karakterlerle başlayan liste kutusunda öğeyi seçer.|
+|[DDX_FieldLBStringExact](#ddx_fieldlbstringexact)|Bir liste kutusu denetimi `CString` ve bir kayıt kümesinin alan veri üyeleri arasında veri aktarımını yönetir. Kayıt kümesinden denetime veri taşırken, bu işlev belirtilen dizeyle tam olarak eşleşen ilk öğeyi seçer.|
+|[DDX_FieldRadio](#ddx_fieldradio)|Bir kayıt kümesi alanı veri üyesi ve bir `CRecordView` veya `CDaoRecordView`içindeki radyo düğmesi grubu arasında tam sayı verilerini aktarır.|
+|[DDX_FieldScroll](#ddx_fieldscroll)|`CRecordView` Veya`CDaoRecordView`içindeki bir kaydırma çubuğu denetiminin kaydırma konumunu alır veya ayarlar. [DoFieldExchange](../../mfc/reference/cdaorecordset-class.md#dofieldexchange) işlevinizden çağrı.|
+|[DDX_FieldSlider](#ddx_fieldslider)|Bir kayıt görünümündeki kaydırıcı denetiminin Thumb konumunu ve `int` bir kayıt kümesinin alan veri üyesini eşitler. |
+|[DDX_FieldText](#ddx_fieldtext)|Daha fazla sürüm aktarmaya `int`, **UINT**, **Long**, `DWORD`, [CString](../../atl-mfc-shared/reference/cstringt-class.md), **float**, **Double**, **Short**, [copadatetime](../../atl-mfc-shared/reference/coledatetime-class.md)ve [copacurrency](../../mfc/reference/colecurrency-class.md) verileri için kullanılabilir bir kayıt kümesi alanı veri üyesi ve bir `CRecordView` veya `CDaoRecordView`içindeki düzenleme kutusu arasında.|
 
 ##  <a name="ddx_fieldcbindex"></a>  DDX_FieldCBIndex
 
-`DDX_FieldCBIndex` İşlevi eşitler kayıt görünümü birleşik giriş kutusu denetiminde liste kutusu denetiminde seçili öğenin dizinini ve `int` kayıt görünümü ile ilişkili kayıt alan veri üyesi.
+İşlevi bir kayıt görünümündeki Birleşik giriş kutusu denetiminin liste kutusu denetimindeki seçili öğenin dizinini `int` ve kayıt görünümüyle ilişkili bir kayıt kümesinin alan veri üyesini eşitler. `DDX_FieldCBIndex`
 
 ```
 void AFXAPI DDX_FieldCBIndex(
@@ -71,36 +71,36 @@ void AFXAPI DDX_FieldCBIndex(
 ### <a name="parameters"></a>Parametreler
 
 *pDX*<br/>
-Bir işaretçi bir [CDataExchange](../../mfc/reference/cdataexchange-class.md) nesne. Framework yön dahil olmak üzere veri değişimi bağlamında kurmak için bu nesneyi sağlar.
+[CDataExchange](../../mfc/reference/cdataexchange-class.md) nesnesine yönelik bir işaretçi. Framework, yönü dahil olmak üzere veri değişim bağlamını oluşturmak için bu nesneyi sağlar.
 
-*nIDC*<br/>
-Bir denetimin kimliği [CRecordView](../../mfc/reference/crecordview-class.md) veya [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) nesne.
+*Nıdc*<br/>
+[CRecordView](../../mfc/reference/crecordview-class.md) veya [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) nesnesindeki bir denetimin kimliği.
 
-*Dizin*<br/>
-İlişkili alan veri üyesi başvuru `CRecordset` veya `CDaoRecordset` nesne.
+*indeks*<br/>
+İlişkili `CRecordset` veya`CDaoRecordset` nesne içindeki bir alan veri üyesine başvuru.
 
 *pRecordset*<br/>
-Bir işaretçi [CRecordset](../../mfc/reference/crecordset-class.md) veya [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) ile veri değişimi nesne.
+Verilerin alınıp alındığı [CRecordset](../../mfc/reference/crecordset-class.md) veya [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) nesnesine yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Veri denetime kayıt kümesinden taşırken, bu işlev belirtilen değere göre denetiminde seçimi ayarlar *dizin*. Kayıt kümesi alanı Null ise bir aktarımı üzerinde kayıt denetimi, MFC dizin değerini 0 olarak ayarlar. Bir aktarımını denetiminden kayıt kümesi için Denetim boş ise veya hiçbir öğe seçili değilse, kayıt kümesi alanı 0 olarak ayarlanır.
+Kayıt kümesinden denetime veri taşırken, bu işlev, *dizinde*belirtilen değere göre denetimdeki seçimi ayarlar. Kayıt kümesinden denetime yapılan bir aktarımda, kayıt kümesi alanı null ise, MFC dizin değerini 0 olarak ayarlar. Denetimden kayıt kümesine bir aktarımdan, denetim boşsa veya hiçbir öğe seçilmezse, kayıt kümesi alanı 0 olarak ayarlanır.
 
-ODBC tabanlı sınıflar ile çalışıyorsanız ilk sürümü kullanın. DAO dayalı sınıflar ile çalışıyorsanız dosyanın ikinci sürümü kullanın.
+ODBC tabanlı sınıflarla çalışıyorsanız ilk sürümü kullanın. DAO tabanlı sınıflarla çalışıyorsanız ikinci sürümü kullanın.
 
-DDX hakkında daha fazla bilgi için bkz: [iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md). Örnekler ve daha fazla bilgi için DDX [CRecordView](../../mfc/reference/crecordview-class.md) ve [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) alanları başlıklı makaleye bakın [kayıt görünümleri](../../data/record-views-mfc-data-access.md).
+DDX hakkında daha fazla bilgi için bkz. [Iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md). [CRecordView](../../mfc/reference/crecordview-class.md) ve [CDAORECORDVIEW](../../mfc/reference/cdaorecordview-class.md) alanları için DDX hakkında örnekler ve daha fazla bilgi Için bkz. [Kayıt görünümleri](../../data/record-views-mfc-data-access.md).
 
 ### <a name="example"></a>Örnek
 
-Bkz: [DDX_FieldText](#ddx_fieldtext) genel DDX_Field örnek. Bu örnek için benzer `DDX_FieldCBIndex`.
+Genel DDX_Field örneği için bkz. [DDX_FieldText](#ddx_fieldtext) . Örnek, için `DDX_FieldCBIndex`de benzerdir.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxdao.h
+**Üstbilgi:** afxdao. h
 
 ##  <a name="ddx_fieldcbstring"></a>  DDX_FieldCBString
 
-`DDX_FieldCBString` İşlevi aktarımını yöneten [CString](../../atl-mfc-shared/reference/cstringt-class.md) birleşik giriş kutusu denetiminde bir kayıt görünümü düzenleme denetiminin arasında veri ve `CString` kayıt görünümü ile ilişkili kayıt alan veri üyesi.
+İşlevi bir kayıt görünümündeki Birleşik giriş [](../../atl-mfc-shared/reference/cstringt-class.md) kutusu denetiminin düzenleme denetimi ve kayıt görünümüyle ilişkili bir kayıt kümesinin alanveriüyesiarasındaCStringverilerininaktarımını`CString`yönetir. `DDX_FieldCBString`
 
 ```
 void AFXAPI DDX_FieldCBString(
@@ -119,36 +119,36 @@ void AFXAPI DDX_FieldCBString(
 ### <a name="parameters"></a>Parametreler
 
 *pDX*<br/>
-Bir işaretçi bir [CDataExchange](../../mfc/reference/cdataexchange-class.md) nesne. Framework yön dahil olmak üzere veri değişimi bağlamında kurmak için bu nesneyi sağlar.
+[CDataExchange](../../mfc/reference/cdataexchange-class.md) nesnesine yönelik bir işaretçi. Framework, yönü dahil olmak üzere veri değişim bağlamını oluşturmak için bu nesneyi sağlar.
 
-*nIDC*<br/>
-Bir denetimin kimliği [CRecordView](../../mfc/reference/crecordview-class.md) veya [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) nesne.
+*Nıdc*<br/>
+[CRecordView](../../mfc/reference/crecordview-class.md) veya [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) nesnesindeki bir denetimin kimliği.
 
 *value*<br/>
-İlişkili alan veri üyesi başvuru `CRecordset` veya `CDaoRecordset` nesne.
+İlişkili `CRecordset` veya`CDaoRecordset` nesne içindeki bir alan veri üyesine başvuru.
 
 *pRecordset*<br/>
-Bir işaretçi [CRecordset](../../mfc/reference/crecordset-class.md) veya [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) ile veri değişimi nesne.
+Verilerin alınıp alındığı [CRecordset](../../mfc/reference/crecordset-class.md) veya [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) nesnesine yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Veri denetime kayıt kümesinden taşırken, bu işlev birleşik giriş kutusunda belirtilen dizedeki karakterlerle başlayan ilk satırına geçerli seçimi ayarlar *değer*. Bir kayıt kümesi aktarımı denetlemek için kayıt kümesi alanı Null ise, herhangi bir seçimi birleşik giriş kutusundan kaldırılır ve birleşik giriş kutusunun düzenleme denetiminin ayarlayın boş. Denetim boşsa, alanın veriyorsa üzerindeki bir aktarımı denetiminden kayıt kümesine, kayıt kümesi alanı Null olarak ayarlanır.
+Kayıt kümesinden denetime veri taşırken, bu işlev Birleşik giriş kutusundaki geçerli seçimi, *değer*'de belirtilen dizedeki karakterlerle başlayan ilk satıra ayarlar. Kayıt kümesinden denetime olan bir aktarım üzerinde, kayıt kümesi alanı null ise, seçim açılan kutudan kaldırılır ve Birleşik giriş kutusunun düzenleme denetimi Empty olarak ayarlanır. Denetimden kayıt kümesine bir aktarımdan, denetim boşsa, alan izin veriyorsa kayıt kümesi alanı null olarak ayarlanır.
 
-ODBC tabanlı sınıflar ile çalışıyorsanız ilk sürümü kullanın. DAO dayalı sınıflar ile çalışıyorsanız dosyanın ikinci sürümü kullanın.
+ODBC tabanlı sınıflarla çalışıyorsanız ilk sürümü kullanın. DAO tabanlı sınıflarla çalışıyorsanız ikinci sürümü kullanın.
 
-DDX hakkında daha fazla bilgi için bkz: [iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md). Örnekler ve daha fazla bilgi için DDX [CRecordView](../../mfc/reference/crecordview-class.md) ve [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) alanları başlıklı makaleye bakın [kayıt görünümleri](../../data/record-views-mfc-data-access.md).
+DDX hakkında daha fazla bilgi için bkz. [Iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md). [CRecordView](../../mfc/reference/crecordview-class.md) ve [CDAORECORDVIEW](../../mfc/reference/cdaorecordview-class.md) alanları için DDX hakkında örnekler ve daha fazla bilgi Için bkz. [Kayıt görünümleri](../../data/record-views-mfc-data-access.md).
 
 ### <a name="example"></a>Örnek
 
-Bkz: [DDX_FieldText](#ddx_fieldtext) genel DDX_Field örnek. Örnek bir çağrı içerdiğine `DDX_FieldCBString`.
+Genel DDX_Field örneği için bkz. [DDX_FieldText](#ddx_fieldtext) . Örnek, için `DDX_FieldCBString`bir çağrısı içerir.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afxdao.h
+  **Header** afxdao. h
 
 ## <a name="ddx_fieldcbstringexact"></a>  DDX_FieldCBStringExact
 
-`DDX_FieldCBStringExact` İşlevi aktarımını yöneten [CString](../../atl-mfc-shared/reference/cstringt-class.md) birleşik giriş kutusu denetiminde bir kayıt görünümü düzenleme denetiminin arasında veri ve `CString` kayıt görünümü ile ilişkili kayıt alan veri üyesi.
+İşlevi bir kayıt görünümündeki Birleşik giriş [](../../atl-mfc-shared/reference/cstringt-class.md) kutusu denetiminin düzenleme denetimi ve kayıt görünümüyle ilişkili bir kayıt kümesinin alanveriüyesiarasındaCStringverilerininaktarımını`CString`yönetir. `DDX_FieldCBStringExact`
 
 ```
 void AFXAPI DDX_FieldCBStringExact(
@@ -167,36 +167,36 @@ void AFXAPI DDX_FieldCBStringExact(
 ### <a name="parameters"></a>Parametreler
 
 *pDX*<br/>
-Bir işaretçi bir [CDataExchange](../../mfc/reference/cdataexchange-class.md) nesne. Framework yön dahil olmak üzere veri değişimi bağlamında kurmak için bu nesneyi sağlar.
+[CDataExchange](../../mfc/reference/cdataexchange-class.md) nesnesine yönelik bir işaretçi. Framework, yönü dahil olmak üzere veri değişim bağlamını oluşturmak için bu nesneyi sağlar.
 
-*nIDC*<br/>
-Bir denetimin kimliği [CRecordView](../../mfc/reference/crecordview-class.md) veya [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) nesne.
+*Nıdc*<br/>
+[CRecordView](../../mfc/reference/crecordview-class.md) veya [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) nesnesindeki bir denetimin kimliği.
 
 *value*<br/>
-İlişkili alan veri üyesi başvuru `CRecordset` veya `CDaoRecordset` nesne.
+İlişkili `CRecordset` veya`CDaoRecordset` nesne içindeki bir alan veri üyesine başvuru.
 
 *pRecordset*<br/>
-Bir işaretçi [CRecordset](../../mfc/reference/crecordset-class.md) veya [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) ile veri değişimi nesne.
+Verilerin alınıp alındığı [CRecordset](../../mfc/reference/crecordset-class.md) veya [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) nesnesine yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Veri denetime kayıt kümesinden taşırken, bu işlev birleşik giriş kutusundaki içinde belirtilen dize ile tam olarak ilk satıra geçerli seçimi ayarlar *değer*. Bir kayıt kümesi aktarımı denetlemek için kayıt kümesi alanı NULL ise, herhangi bir seçimi birleşik giriş kutusundan kaldırılır ve birleşik giriş kutusunun düzenleme kutusuna ayarlamak için boş. Denetim boşsa, bir aktarımı üzerinde denetiminden kayıt kümesine kayıt kümesi alanı NULL olarak ayarlandı.
+Kayıt kümesinden denetime veri taşırken, bu işlev Birleşik giriş kutusundaki geçerli seçimi, *değer*'de belirtilen dizeyle tam olarak eşleşen ilk satıra ayarlar. Kayıt kümesinden denetime olan bir aktarım üzerinde, kayıt kümesi alanı NULL ise, açılan kutudan herhangi bir seçim kaldırılır ve Birleşik giriş kutusunun düzenleme kutusu boş olarak ayarlanır. Denetimden kayıt kümesine bir aktarımdan, denetim boşsa, kayıt kümesi alanı NULL olarak ayarlanır.
 
-ODBC tabanlı sınıflar ile çalışıyorsanız ilk sürümü kullanın. DAO dayalı sınıflar ile çalışıyorsanız dosyanın ikinci sürümü kullanın.
+ODBC tabanlı sınıflarla çalışıyorsanız ilk sürümü kullanın. DAO tabanlı sınıflarla çalışıyorsanız ikinci sürümü kullanın.
 
-DDX hakkında daha fazla bilgi için bkz: [iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md). Örnekler ve daha fazla bilgi için DDX [CRecordView](../../mfc/reference/crecordview-class.md) ve [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) alanları başlıklı makaleye bakın [kayıt görünümleri](../../data/record-views-mfc-data-access.md).
+DDX hakkında daha fazla bilgi için bkz. [Iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md). [CRecordView](../../mfc/reference/crecordview-class.md) ve [CDAORECORDVIEW](../../mfc/reference/cdaorecordview-class.md) alanları için DDX hakkında örnekler ve daha fazla bilgi Için bkz. [Kayıt görünümleri](../../data/record-views-mfc-data-access.md).
 
 ### <a name="example"></a>Örnek
 
-Bkz: [DDX_FieldText](#ddx_fieldtext) genel DDX_Field örnek. Çağrılar `DDX_FieldCBStringExact` benzer olacaktır.
+Genel DDX_Field örneği için bkz. [DDX_FieldText](#ddx_fieldtext) . İçin `DDX_FieldCBStringExact` yapılan çağrılar benzerdir.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afxdao.h
+  **Header** afxdao. h
 
 ##  <a name="ddx_fieldcheck"></a>  DDX_FieldCheck
 
-`DDX_FieldCheck` İşlevi aktarımını yöneten **int** arasında bir iletişim kutusu bir onay kutusu denetiminde veri form görünümü veya denetim görünüm nesnesi ve bir **int** iletişim kutusu, form görünümü veya denetim veri üyesi Görünüm nesnesi.
+İşlevi, bir iletişim kutusu, form görünümü veya denetim görünümü nesnesi ve iletişim kutusu, form görünümü veya denetim görünümü nesnesinin bir **int** veri üyesi içindeki bir onay kutusu denetimi arasında int verilerinin aktarılmasını yönetir. `DDX_FieldCheck`
 
 ```
 void AFXAPI DDX_FieldCheck(
@@ -215,30 +215,30 @@ void AFXAPI DDX_FieldCheck(
 ### <a name="parameters"></a>Parametreler
 
 *pDX*<br/>
-Bir işaretçi bir [CDataExchange](../../mfc/reference/cdataexchange-class.md) nesne. Framework yön dahil olmak üzere veri değişimi bağlamında kurmak için bu nesneyi sağlar.
+[CDataExchange](../../mfc/reference/cdataexchange-class.md) nesnesine yönelik bir işaretçi. Framework, yönü dahil olmak üzere veri değişim bağlamını oluşturmak için bu nesneyi sağlar.
 
-*nIDC*<br/>
-Denetim özelliği ile ilişkilendirilmiş onay kutusu denetimi kaynak kimliği.
+*Nıdc*<br/>
+Denetim özelliğiyle ilişkili onay kutusu denetiminin kaynak KIMLIĞI.
 
 *value*<br/>
-İletişim kutusu, form görünümü veya denetim görünüm nesnesi ile veri değişimi üye değişkeninin bir başvuru.
+İletişim kutusu, form görünümü veya veri alışverişi yapılan denetim görünümü nesnesinin üye değişkenine başvuru.
 
 *pRecordset*<br/>
-Bir işaretçi [CRecordset](../../mfc/reference/crecordset-class.md) veya [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) ile veri değişimi nesne.
+Verilerin alınıp alındığı [CRecordset](../../mfc/reference/crecordset-class.md) veya [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) nesnesine yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Zaman `DDX_FieldCheck` çağrıldığında *değer* onay kutusu denetimi, geçerli durumuna ayarlanır veya denetimin durumunu ayarlamak *değer*aktarımı yönüne bağlı olarak.
+Çağrıldığında, değeri onay kutusu denetiminin geçerli durumu olarak ayarlanır veya aktarımın yönüne bağlı olarak denetimin durumu *değer*olarak ayarlanır. `DDX_FieldCheck`
 
-DDX hakkında daha fazla bilgi için bkz: [iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md).
+DDX hakkında daha fazla bilgi için bkz. [Iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afxdao.h
+  **Header** afxdao. h
 
 ##  <a name="ddx_fieldlbindex"></a>  DDX_FieldLBIndex
 
-`DDX_FieldLBIndex` İşlevi bir liste kutusu denetimini kayıt görünümü'nde seçilen öğenin dizini eşitler ve **int** kayıt görünümü ile ilişkili kayıt alan veri üyesi.
+İşlevi bir kayıt görünümündeki liste kutusu denetimindeki seçili öğenin dizinini ve kayıt görünümüyle ilişkili bir kayıt kümesinin int alan veri üyesini eşitler. `DDX_FieldLBIndex`
 
 ```
 void AFXAPI DDX_FieldLBIndex(
@@ -257,36 +257,36 @@ void AFXAPI DDX_FieldLBIndex(
 ### <a name="parameters"></a>Parametreler
 
 *pDX*<br/>
-Bir işaretçi bir [CDataExchange](../../mfc/reference/cdataexchange-class.md) nesne. Framework yön dahil olmak üzere veri değişimi bağlamında kurmak için bu nesneyi sağlar.
+[CDataExchange](../../mfc/reference/cdataexchange-class.md) nesnesine yönelik bir işaretçi. Framework, yönü dahil olmak üzere veri değişim bağlamını oluşturmak için bu nesneyi sağlar.
 
-*nIDC*<br/>
-Bir denetimin kimliği [CRecordView](../../mfc/reference/crecordview-class.md) veya [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) nesne.
+*Nıdc*<br/>
+[CRecordView](../../mfc/reference/crecordview-class.md) veya [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) nesnesindeki bir denetimin kimliği.
 
-*Dizin*<br/>
-İlişkili alan veri üyesi başvuru `CRecordset` veya `CDaoRecordset` nesne.
+*indeks*<br/>
+İlişkili `CRecordset` veya`CDaoRecordset` nesne içindeki bir alan veri üyesine başvuru.
 
 *pRecordset*<br/>
-Bir işaretçi [CRecordset](../../mfc/reference/crecordset-class.md) veya [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) ile veri değişimi nesne.
+Verilerin alınıp alındığı [CRecordset](../../mfc/reference/crecordset-class.md) veya [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) nesnesine yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Veri denetime kayıt kümesinden taşırken, bu işlev belirtilen değere göre denetiminde seçimi ayarlar *dizin*. Kayıt kümesi alanı Null ise bir aktarımı üzerinde kayıt denetimi, MFC dizin değerini 0 olarak ayarlar. Denetim boşsa, üzerindeki bir aktarımı denetiminden kayıt kümesine, kayıt kümesi alanı 0 olarak ayarlanır.
+Kayıt kümesinden denetime veri taşırken, bu işlev, *dizinde*belirtilen değere göre denetimdeki seçimi ayarlar. Kayıt kümesinden denetime yapılan bir aktarımda, kayıt kümesi alanı null ise, MFC dizin değerini 0 olarak ayarlar. Denetimden kayıt kümesine bir aktarımdan, denetim boşsa, kayıt kümesi alanı 0 olarak ayarlanır.
 
-ODBC tabanlı sınıflar ile çalışıyorsanız ilk sürümü kullanın. DAO dayalı sınıflar ile çalışıyorsanız dosyanın ikinci sürümü kullanın.
+ODBC tabanlı sınıflarla çalışıyorsanız ilk sürümü kullanın. DAO tabanlı sınıflarla çalışıyorsanız ikinci sürümü kullanın.
 
-DDX hakkında daha fazla bilgi için bkz: [iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md). Örnekler ve daha fazla bilgi için DDX [CRecordView](../../mfc/reference/crecordview-class.md) ve [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) alanları başlıklı makaleye bakın [kayıt görünümleri](../../data/record-views-mfc-data-access.md).
+DDX hakkında daha fazla bilgi için bkz. [Iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md). [CRecordView](../../mfc/reference/crecordview-class.md) ve [CDAORECORDVIEW](../../mfc/reference/cdaorecordview-class.md) alanları için DDX hakkında örnekler ve daha fazla bilgi Için bkz. [Kayıt görünümleri](../../data/record-views-mfc-data-access.md).
 
 ### <a name="example"></a>Örnek
 
-Bkz: [DDX_FieldText](#ddx_fieldtext) genel DDX_Field örnek.
+Genel DDX_Field örneği için bkz. [DDX_FieldText](#ddx_fieldtext) .
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afxdao.h
+  **Header** afxdao. h
 
 ##  <a name="ddx_fieldlbstring"></a>  DDX_FieldLBString
 
-`DDX_FieldLBString` Kayıt bir görünümdeki bir liste kutusu denetimini oluşan geçerli seçimi kopyalar bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) kayıt görünümü ile ilişkili kayıt alan veri üyesi.
+, `DDX_FieldLBString` Bir kayıt görünümündeki liste kutusu denetiminin geçerli seçimini, kayıt görünümüyle ilişkili bir kayıt kümesinin [CString](../../atl-mfc-shared/reference/cstringt-class.md) alan veri üyesine kopyalar.
 
 ```
 void AFXAPI DDX_FieldLBString(
@@ -305,36 +305,36 @@ void AFXAPI DDX_FieldLBString(
 ### <a name="parameters"></a>Parametreler
 
 *pDX*<br/>
-Bir işaretçi bir [CDataExchange](../../mfc/reference/cdataexchange-class.md) nesne. Framework yön dahil olmak üzere veri değişimi bağlamında kurmak için bu nesneyi sağlar.
+[CDataExchange](../../mfc/reference/cdataexchange-class.md) nesnesine yönelik bir işaretçi. Framework, yönü dahil olmak üzere veri değişim bağlamını oluşturmak için bu nesneyi sağlar.
 
-*nIDC*<br/>
-Bir denetimin kimliği [CRecordView](../../mfc/reference/crecordview-class.md) veya [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) nesne.
+*Nıdc*<br/>
+[CRecordView](../../mfc/reference/crecordview-class.md) veya [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) nesnesindeki bir denetimin kimliği.
 
 *value*<br/>
-İlişkili alan veri üyesi başvuru `CRecordset` veya `CDaoRecordset` nesne.
+İlişkili `CRecordset` veya`CDaoRecordset` nesne içindeki bir alan veri üyesine başvuru.
 
 *pRecordset*<br/>
-Bir işaretçi [CRecordset](../../mfc/reference/crecordset-class.md) veya [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) ile veri değişimi nesne.
+Verilerin alınıp alındığı [CRecordset](../../mfc/reference/crecordset-class.md) veya [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) nesnesine yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ters yönde, bu işlev tarafından belirtilen dizedeki karakterlerle başlayan ilk satıra liste kutusunda geçerli seçimi ayarlar *değer*. Kayıt kümesi alanı Null ise bir aktarımı üzerinde kayıt denetlemek için liste kutusundan herhangi bir seçimi kaldırılır. Denetim boşsa, bir aktarımı üzerinde denetiminden kayıt kümesine kayıt kümesi alanı Null olarak ayarlandı.
+Ters yönde, bu işlev liste kutusundaki geçerli seçimi *değere*göre belirtilen dizedeki karakterlerle başlayan ilk satıra ayarlar. Kayıt kümesinden denetime olan bir aktarım üzerinde, kayıt kümesi alanı null ise, herhangi bir seçim liste kutusundan kaldırılır. Denetimden kayıt kümesine bir aktarımdan, denetim boşsa, kayıt kümesi alanı null olarak ayarlanır.
 
-ODBC tabanlı sınıflar ile çalışıyorsanız ilk sürümü kullanın. DAO dayalı sınıflar ile çalışıyorsanız dosyanın ikinci sürümü kullanın.
+ODBC tabanlı sınıflarla çalışıyorsanız ilk sürümü kullanın. DAO tabanlı sınıflarla çalışıyorsanız ikinci sürümü kullanın.
 
-DDX hakkında daha fazla bilgi için bkz: [iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md). Örnekler ve daha fazla bilgi için DDX [CRecordView](../../mfc/reference/crecordview-class.md) ve [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) alanları başlıklı makaleye bakın [kayıt görünümleri](../../data/record-views-mfc-data-access.md).
+DDX hakkında daha fazla bilgi için bkz. [Iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md). [CRecordView](../../mfc/reference/crecordview-class.md) ve [CDAORECORDVIEW](../../mfc/reference/cdaorecordview-class.md) alanları için DDX hakkında örnekler ve daha fazla bilgi Için bkz. [Kayıt görünümleri](../../data/record-views-mfc-data-access.md).
 
 ### <a name="example"></a>Örnek
 
-Bkz: [DDX_FieldText](#ddx_fieldtext) genel DDX_Field örnek. Çağrılar `DDX_FieldLBString` benzer olacaktır.
+Genel DDX_Field örneği için bkz. [DDX_FieldText](#ddx_fieldtext) . İçin `DDX_FieldLBString` yapılan çağrılar benzerdir.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afxdao.h
+  **Header** afxdao. h
 
 ##  <a name="ddx_fieldlbstringexact"></a>  DDX_FieldLBStringExact
 
-`DDX_FieldLBStringExact` İşlevi, kaydı bir görünümdeki bir liste kutusu denetimini oluşan geçerli seçimi kopyalar bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) kayıt görünümü ile ilişkili kayıt alan veri üyesi.
+İşlevi bir kayıt görünümündeki liste kutusu denetiminin geçerli seçimini, kayıt görünümüyle ilişkili bir kayıt kümesinin CString alan veri üyesine kopyalar. [](../../atl-mfc-shared/reference/cstringt-class.md) `DDX_FieldLBStringExact`
 
 ```
 void AFXAPI DDX_FieldLBStringExact(
@@ -353,36 +353,36 @@ void AFXAPI DDX_FieldLBStringExact(
 ### <a name="parameters"></a>Parametreler
 
 *pDX*<br/>
-Bir işaretçi bir [CDataExchange](../../mfc/reference/cdataexchange-class.md) nesne. Framework yön dahil olmak üzere veri değişimi bağlamında kurmak için bu nesneyi sağlar.
+[CDataExchange](../../mfc/reference/cdataexchange-class.md) nesnesine yönelik bir işaretçi. Framework, yönü dahil olmak üzere veri değişim bağlamını oluşturmak için bu nesneyi sağlar.
 
-*nIDC*<br/>
-Bir denetimin kimliği [CRecordView](../../mfc/reference/crecordview-class.md) veya [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) nesne.
+*Nıdc*<br/>
+[CRecordView](../../mfc/reference/crecordview-class.md) veya [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) nesnesindeki bir denetimin kimliği.
 
 *value*<br/>
-İlişkili alan veri üyesi başvuru `CRecordset` veya `CDaoRecordset` nesne.
+İlişkili `CRecordset` veya`CDaoRecordset` nesne içindeki bir alan veri üyesine başvuru.
 
 *pRecordset*<br/>
-Bir işaretçi [CRecordset](../../mfc/reference/crecordset-class.md) veya [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) ile veri değişimi nesne.
+Verilerin alınıp alındığı [CRecordset](../../mfc/reference/crecordset-class.md) veya [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) nesnesine yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Liste kutusunda içinde belirtilen dize ile tam olarak ilk satıra ters yönde, bu işlev geçerli seçimi ayarlar *değer*. Kayıt kümesi alanı Null ise bir aktarımı üzerinde kayıt denetlemek için liste kutusundan herhangi bir seçimi kaldırılır. Denetim boşsa, bir aktarımı üzerinde denetiminden kayıt kümesine kayıt kümesi alanı Null olarak ayarlandı.
+Ters yönde, bu işlev liste kutusundaki geçerli seçimi, *değer*'de belirtilen dizeyle tam olarak eşleşen ilk satıra ayarlar. Kayıt kümesinden denetime olan bir aktarım üzerinde, kayıt kümesi alanı null ise, herhangi bir seçim liste kutusundan kaldırılır. Denetimden kayıt kümesine bir aktarımdan, denetim boşsa, kayıt kümesi alanı null olarak ayarlanır.
 
-ODBC tabanlı sınıflar ile çalışıyorsanız ilk sürümü kullanın. DAO dayalı sınıflar ile çalışıyorsanız dosyanın ikinci sürümü kullanın.
+ODBC tabanlı sınıflarla çalışıyorsanız ilk sürümü kullanın. DAO tabanlı sınıflarla çalışıyorsanız ikinci sürümü kullanın.
 
-DDX hakkında daha fazla bilgi için bkz: [iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md). Örnekler ve daha fazla bilgi için DDX [CRecordView](../../mfc/reference/crecordview-class.md) ve [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) alanları başlıklı makaleye bakın [kayıt görünümleri](../../data/record-views-mfc-data-access.md).
+DDX hakkında daha fazla bilgi için bkz. [Iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md). [CRecordView](../../mfc/reference/crecordview-class.md) ve [CDAORECORDVIEW](../../mfc/reference/cdaorecordview-class.md) alanları için DDX hakkında örnekler ve daha fazla bilgi Için bkz. [Kayıt görünümleri](../../data/record-views-mfc-data-access.md).
 
 ### <a name="example"></a>Örnek
 
-Bkz: [DDX_FieldText](#ddx_fieldtext) genel DDX_Field örnek. Çağrılar `DDX_FieldLBStringExact` benzer olacaktır.
+Genel DDX_Field örneği için bkz. [DDX_FieldText](#ddx_fieldtext) . İçin `DDX_FieldLBStringExact` yapılan çağrılar benzerdir.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afxdao.h
+  **Header** afxdao. h
 
 ##  <a name="ddx_fieldradio"></a>  DDX_FieldRadio
 
-`DDX_FieldRadio` İşlevi sıfır tabanlı ilişkilendirir **int** üye değişkeni şu anda seçili radyo düğmesinin bir grup radyo düğmeleri kayıt görünümü ile kayıt görünümünün kümesi.
+İşlevi `DDX_FieldRadio` , kayıt görünümündeki bir radyo düğmeleri grubundaki seçili radyo düğmesiyle bir kayıt görünümünün kayıt kümesinin sıfır tabanlı bir **int** üye değişkenini ilişkilendirir.
 
 ```
 void AFXAPI DDX_FieldRadio(
@@ -401,36 +401,36 @@ void AFXAPI DDX_FieldRadio(
 ### <a name="parameters"></a>Parametreler
 
 *pDX*<br/>
-Bir işaretçi bir [CDataExchange](../../mfc/reference/cdataexchange-class.md) nesne. Framework yön dahil olmak üzere veri değişimi bağlamında kurmak için bu nesneyi sağlar.
+[CDataExchange](../../mfc/reference/cdataexchange-class.md) nesnesine yönelik bir işaretçi. Framework, yönü dahil olmak üzere veri değişim bağlamını oluşturmak için bu nesneyi sağlar.
 
-*nIDC*<br/>
-İlk kimliği bitişik radyo düğmesi denetimleri (WS_GROUP stiliyle) grubu içindeki [CRecordView](../../mfc/reference/crecordview-class.md) veya [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) nesne.
+*Nıdc*<br/>
+[CRecordView](../../mfc/reference/crecordview-class.md) veya [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) nesnesindeki bitişik radyo düğmesi DENETIMLERININ bir gruptaki Ilk kimliği (Style ws_group ile).
 
 *value*<br/>
-İlişkili alan veri üyesi başvuru `CRecordset` veya `CDaoRecordset` nesne.
+İlişkili `CRecordset` veya`CDaoRecordset` nesne içindeki bir alan veri üyesine başvuru.
 
 *pRecordset*<br/>
-Bir işaretçi [CRecordset](../../mfc/reference/crecordset-class.md) veya [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) ile veri değişimi nesne.
+Verilerin alınıp alındığı [CRecordset](../../mfc/reference/crecordset-class.md) veya [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) nesnesine yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kayıt kümesi alanı görünüme aktarırken bu işlevi etkinleştirir *n.* radyo düğmesini (sıfır tabanlı) ve diğer düğmeleri devre dışı bırakır. Ters yönde, bu işlev şu anda (işaretli üzerinde) radyo düğmesi sıra sayısı kayıt kümesi alanı ayarlar. Kayıt kümesi alanı Null ise bir aktarımı üzerinde kayıt denetlemek için hiçbir düğmesi seçilir. Hiçbir denetim seçili alan veriyorsa bir aktarımı üzerinde denetiminden kayıt kümesine kayıt kümesi alanı Null olarak ayarlanır.
+Kayıt kümesi alanından görünüme aktarılırken, bu işlev *nth* radyo düğmesini (sıfır tabanlı) açar ve diğer düğmeleri kapatır. Ters yönde bu işlev, kayıt kümesi alanını şu anda açık olan (işaretli) radyo düğmesinin sıra numarası olarak ayarlar. Kayıt kümesinden denetime yapılan bir aktarım üzerinde, kayıt kümesi alanı null ise, hiçbir düğme seçili değildir. Denetimden kayıt kümesine bir aktarımdan, Denetim seçili değilse, alan izin veriyorsa kayıt kümesi alanı null olarak ayarlanır.
 
-ODBC tabanlı sınıflar ile çalışıyorsanız ilk sürümü kullanın. DAO dayalı sınıflar ile çalışıyorsanız dosyanın ikinci sürümü kullanın.
+ODBC tabanlı sınıflarla çalışıyorsanız ilk sürümü kullanın. DAO tabanlı sınıflarla çalışıyorsanız ikinci sürümü kullanın.
 
-DDX hakkında daha fazla bilgi için bkz: [iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md). Örnekler ve daha fazla bilgi için DDX [CRecordView](../../mfc/reference/crecordview-class.md) ve [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) alanları başlıklı makaleye bakın [kayıt görünümleri](../../data/record-views-mfc-data-access.md).
+DDX hakkında daha fazla bilgi için bkz. [Iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md). [CRecordView](../../mfc/reference/crecordview-class.md) ve [CDAORECORDVIEW](../../mfc/reference/cdaorecordview-class.md) alanları için DDX hakkında örnekler ve daha fazla bilgi Için bkz. [Kayıt görünümleri](../../data/record-views-mfc-data-access.md).
 
 ### <a name="example"></a>Örnek
 
-Bkz: [DDX_FieldText](#ddx_fieldtext) genel DDX_Field örnek. Çağrılar `DDX_FieldRadio` benzer olacaktır.
+Genel DDX_Field örneği için bkz. [DDX_FieldText](#ddx_fieldtext) . İçin `DDX_FieldRadio` yapılan çağrılar benzerdir.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afxdao.h
+  **Header** afxdao. h
 
 ##  <a name="ddx_fieldscroll"></a>  DDX_FieldScroll
 
-`DDX_FieldScroll` İşlevi kayıt görünümü kaydırma çubuğu denetimi kaydırma konumunu eşitler ve **int** kayıt görünümü ile (veya seçtiğiniz için eşlemek için hangi tamsayı değişkeni) ilişkili kümesinin alan veri üyesi .
+İşlevi bir kayıt görünümündeki bir kaydırma çubuğu denetiminin kaydırma konumunu ve kayıt görünümüyle ilişkili bir kayıt kümesinin (ya da eşlemeyi seçtiğiniz tamsayı değişkeni ile) bir int alan veri üyesine eşitler. `DDX_FieldScroll`
 
 ```
 void AFXAPI DDX_FieldScroll(
@@ -449,35 +449,35 @@ void AFXAPI DDX_FieldScroll(
 ### <a name="parameters"></a>Parametreler
 
 *pDX*<br/>
-Bir işaretçi bir [CDataExchange](../../mfc/reference/cdataexchange-class.md) nesne. Framework yön dahil olmak üzere veri değişimi bağlamında kurmak için bu nesneyi sağlar.
+[CDataExchange](../../mfc/reference/cdataexchange-class.md) nesnesine yönelik bir işaretçi. Framework, yönü dahil olmak üzere veri değişim bağlamını oluşturmak için bu nesneyi sağlar.
 
-*nIDC*<br/>
-İlk kimliği bitişik radyo düğmesi denetimleri (WS_GROUP stiliyle) grubu içindeki [CRecordView](../../mfc/reference/crecordview-class.md) veya [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) nesne.
+*Nıdc*<br/>
+[CRecordView](../../mfc/reference/crecordview-class.md) veya [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) nesnesindeki bitişik radyo düğmesi DENETIMLERININ bir gruptaki Ilk kimliği (Style ws_group ile).
 
 *value*<br/>
-İlişkili alan veri üyesi başvuru `CRecordset` veya `CDaoRecordset` nesne.
+İlişkili `CRecordset` veya`CDaoRecordset` nesne içindeki bir alan veri üyesine başvuru.
 
 *pRecordset*<br/>
-Bir işaretçi [CRecordset](../../mfc/reference/crecordset-class.md) veya [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) ile veri değişimi nesne.
+Verilerin alınıp alındığı [CRecordset](../../mfc/reference/crecordset-class.md) veya [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) nesnesine yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev kaydırma çubuğu denetimi kaydırma konumunu veri denetime kayıt kümesinden taşırken, belirtilen değere ayarlar. *değer*. Kayıt kümesi alanı Null ise bir aktarımı üzerinde kayıt denetlemek için kaydırma çubuğu denetimi 0 olarak ayarlanır. Denetim boşsa, bir aktarımı üzerinde denetiminden kayıt kümesine kayıt alanının değeri 0'dır.
+Kayıt kümesinden denetime veri taşırken, bu işlev kaydırma çubuğu denetiminin kaydırma konumunu, *değer*'de belirtilen değere ayarlar. Kayıt kümesinden denetime olan bir aktarım üzerinde, kayıt kümesi alanı null ise, kaydırma çubuğu denetimi 0 olarak ayarlanır. Denetimden kayıt kümesine bir aktarımdan, denetim boşsa, kayıt kümesi alanının değeri 0 ' dır.
 
-ODBC tabanlı sınıflar ile çalışıyorsanız ilk sürümü kullanın. DAO dayalı sınıflar ile çalışıyorsanız dosyanın ikinci sürümü kullanın.
+ODBC tabanlı sınıflarla çalışıyorsanız ilk sürümü kullanın. DAO tabanlı sınıflarla çalışıyorsanız ikinci sürümü kullanın.
 
-DDX hakkında daha fazla bilgi için bkz: [iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md). Örnekler ve daha fazla bilgi için DDX [CRecordView](../../mfc/reference/crecordview-class.md) ve [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) alanları başlıklı makaleye bakın [kayıt görünümleri](../../data/record-views-mfc-data-access.md).
+DDX hakkında daha fazla bilgi için bkz. [Iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md). [CRecordView](../../mfc/reference/crecordview-class.md) ve [CDAORECORDVIEW](../../mfc/reference/cdaorecordview-class.md) alanları için DDX hakkında örnekler ve daha fazla bilgi Için bkz. [Kayıt görünümleri](../../data/record-views-mfc-data-access.md).
 
 ### <a name="example"></a>Örnek
 
-Bkz: [DDX_FieldText](#ddx_fieldtext) genel DDX_Field örnek. Çağrılar `DDX_FieldScroll` benzer olacaktır.
+Genel DDX_Field örneği için bkz. [DDX_FieldText](#ddx_fieldtext) . İçin `DDX_FieldScroll` yapılan çağrılar benzerdir.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afxdao.h
+  **Header** afxdao. h
 
-  ## <a name="ddx_fieldslider"></a>  DDX_FieldSlider
-`DDX_FieldSlider` İşlevi kayıt görünümü bir kaydırıcı denetimi thumb konumunu eşitler ve **int** alan veri üyesi kayıt görünümü ile (veya seçtiğiniz için eşlemek için hangi tamsayı değişkeni) ilişkili bir kayıt kümesi.
+  ## <a name="ddx_fieldslider"></a>DDX_FieldSlider
+İşlevi bir kayıt görünümündeki kaydırıcı denetiminin Thumb konumunu ve kayıt görünümüyle ilişkili bir kayıt kümesinin int alan veri üyesini (veya eşlemeyi seçtiğiniz herhangi bir tamsayı değişkeni ile) eşitler. `DDX_FieldSlider`
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -498,38 +498,38 @@ void AFXAPI DDX_FieldSlider(
 ### <a name="parameters"></a>Parametreler
 
 *pDX*<br/>
-Bir işaretçi bir [CDataExchange](cdataexchange-class.md) nesne. Framework yön dahil olmak üzere veri değişimi bağlamında kurmak için bu nesneyi sağlar.
+[CDataExchange](cdataexchange-class.md) nesnesine yönelik bir işaretçi. Framework, yönü dahil olmak üzere veri değişim bağlamını oluşturmak için bu nesneyi sağlar.
 
-*nIDC*<br/>
-Kaydırıcı denetimi kaynak kimliği.
+*Nıdc*<br/>
+Kaydırıcı denetiminin kaynak KIMLIĞI.
 
 *value*<br/>
-Değiştirilecek değerine bir başvuru. Bu parametre tutan veya kaydırıcı denetiminin geçerli parmak konumu ayarlamak için kullanılır.
+Değiş tokuş edilecek değere bir başvuru. Bu parametre, kaydırıcı denetiminin geçerli Thumb konumunu ayarlamak için veya kullanır.
 
 *pRecordset*<br/>
-İlişkili bir işaretçiye `CRecordset` veya `CDaoRecordset` ile veri değişimi nesne.
+Verilerin alınıp alındığı ilişkili `CRecordset` veya `CDaoRecordset` nesneye yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev kaydırıcıyı konumunu veri kaydırıcısını kayıt kümesinden taşırken, belirtilen değere ayarlar. *değer*. Kayıt kümesi alanı Null ise bir aktarımı üzerinde kayıt denetlemek için kaydırıcı denetiminin konumu 0 olarak ayarlanır. Denetim boşsa, bir aktarımı üzerinde denetiminden kayıt kümesine kayıt alanının değeri 0'dır.
+Kayıt kümesindeki verileri kaydırıcıya taşırken, bu işlev kaydırıcının konumunu *değer*'de belirtilen değere ayarlar. Kayıt kümesinden denetime olan bir aktarım üzerinde, kayıt kümesi alanı null ise kaydırıcı denetiminin konumu 0 olarak ayarlanır. Denetimden kayıt kümesine bir aktarımdan, denetim boşsa, kayıt kümesi alanının değeri 0 ' dır.
 
-`DDX_FieldSlider` yalnızca bir konumu yerine bir aralığı ayarını özellikli kaydırıcı denetimleri ile aralığı bilgi alışverişi değil.
+`DDX_FieldSlider`, yalnızca bir konum yerine bir Aralık ayarlamatabilen kaydırıcı denetimleriyle birlikte Aralık bilgilerini değiş tokuş etmez.
 
-ODBC tabanlı sınıflar ile çalışıyorsanız işlev ilk geçersiz kılmasını kullanın. DAO tabanlı sınıflarıyla ikinci geçersiz kılmasını kullanın.
+ODBC tabanlı sınıflarla çalışıyorsanız, işlevin ilk geçersiz kılmasını kullanın. İkinci geçersiz kılmayı DAO tabanlı sınıflarla kullanın.
 
-DDX hakkında daha fazla bilgi için bkz: [iletişim kutusu veri değişimi ve doğrulaması](../dialog-data-exchange-and-validation.md). Örnekler ve daha fazla bilgi için DDX `CRecordView` ve `CDaoRecordView` alanları görmek [kayıt görünümleri](../../data/record-views-mfc-data-access.md). Kaydırıcı denetimleri hakkında daha fazla bilgi için bkz. [CSliderCtrl kullanma](../using-csliderctrl.md).
+DDX hakkında daha fazla bilgi için bkz. [Iletişim kutusu veri değişimi ve doğrulaması](../dialog-data-exchange-and-validation.md). `CRecordView` Ve`CDaoRecordView` alanları için DDX hakkında örnekler ve daha fazla bilgi için bkz. [Kayıt görünümleri](../../data/record-views-mfc-data-access.md). Kaydırıcı denetimleri hakkında daha fazla bilgi için bkz. [CSliderCtrl kullanma](../using-csliderctrl.md).
 
 ### <a name="example"></a>Örnek
 
-Bkz: [DDX_FieldText](#ddx_fieldtext) genel DDX_Field örnek. Çağrılar `DDX_FieldSlider` benzer olacaktır.
+Genel DDX_Field örneği için bkz. [DDX_FieldText](#ddx_fieldtext) . İçin `DDX_FieldSlider` yapılan çağrılar benzerdir.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxdao.h
+**Üstbilgi:** afxdao. h
 
 ##  <a name="ddx_fieldtext"></a>  DDX_FieldText
 
-`DDX_FieldText` İşlevi aktarımını yöneten **int**, **kısa**, **uzun**, DWORD, [CString](../../atl-mfc-shared/reference/cstringt-class.md), **float**, **çift**, **BOOL**, veya **bayt** düzenleme kutusu denetimi alan veri üyeleri bir kayıt kümesi arasında verileri.
+[](../../atl-mfc-shared/reference/cstringt-class.md)İşlevi, bir düzenleme kutusu denetimi ve a 'nın alan veri üyeleri arasında int, Short, Long, DWORD, CString, float, Double, bool veya Byte verilerinin aktarımını yönetir `DDX_FieldText` IR.
 
 ```
 void AFXAPI DDX_FieldText(
@@ -644,35 +644,35 @@ void AFXAPI DDX_FieldText(
 ### <a name="parameters"></a>Parametreler
 
 *pDX*<br/>
-Bir işaretçi bir [CDataExchange](../../mfc/reference/cdataexchange-class.md) nesne. Framework yön dahil olmak üzere veri değişimi bağlamında kurmak için bu nesneyi sağlar.
+[CDataExchange](../../mfc/reference/cdataexchange-class.md) nesnesine yönelik bir işaretçi. Framework, yönü dahil olmak üzere veri değişim bağlamını oluşturmak için bu nesneyi sağlar.
 
-*nIDC*<br/>
-Bir denetimin kimliği [CRecordView](../../mfc/reference/crecordview-class.md) veya [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) nesne.
+*Nıdc*<br/>
+[CRecordView](../../mfc/reference/crecordview-class.md) veya [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) nesnesindeki bir denetimin kimliği.
 
 *value*<br/>
-İlişkili alan veri üyesi başvuru `CRecordset` veya `CDaoRecordset` nesne. Değerin veri türü bağımlı olduğu aşırı yüklenmiş sürümlerinin `DDX_FieldText` kullanırsınız.
+İlişkili `CRecordset` veya`CDaoRecordset` nesne içindeki bir alan veri üyesine başvuru. Değerin veri türü, kullandığınız aşırı yüklenmiş sürümlere `DDX_FieldText` bağlıdır.
 
 *pRecordset*<br/>
-Bir işaretçi [CRecordset](../../mfc/reference/crecordset-class.md) veya [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) ile veri değişimi nesne. Bu işaretçi sağlayan `DDX_FieldText` algılamak ve Null değerlere ayarlayın.
+Verilerin alınıp alındığı [CRecordset](../../mfc/reference/crecordset-class.md) veya [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) nesnesine yönelik bir işaretçi. Bu işaretçi null `DDX_FieldText` değerleri algılamaya ve ayarlamaya olanak sağlar.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İçin [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) nesneleri `DDX_FieldText` aktarımını da yönetir [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md), ve [COleCurrency](../../mfc/reference/colecurrency-class.md) değerleri. Boş bir düzenleme kutusu denetimi, bir Null değeri gösterir. Düzenleme kutusu üzerindeki bir aktarımı kayıt kümesinden denetlemek için kayıt kümesi alanı Null ise ayarlanmış boş. Denetim boşsa, bir aktarımı üzerinde denetiminden kayıt kümesine kayıt kümesi alanı Null olarak ayarlandı.
+[CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) nesneleri `DDX_FieldText` için [cotadatetime](../../atl-mfc-shared/reference/coledatetime-class.md)ve [copacurrency](../../mfc/reference/colecurrency-class.md) değerlerini aktarmayı da yönetir. Boş bir düzenleme kutusu denetimi null değeri gösterir. Kayıt kümesinden denetime yapılan bir aktarımda, kayıt kümesi alanı null ise, düzenleme kutusu boş olarak ayarlanır. Denetimden kayıt kümesine bir aktarımdan, denetim boşsa, kayıt kümesi alanı null olarak ayarlanır.
 
-Sürümle [CRecordset](../../mfc/reference/crecordset-class.md) ODBC tabanlı sınıflar ile çalışıyorsanız parametreleri. Sürümle [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) DAO dayalı sınıflar ile çalışıyorsanız parametreleri.
+ODBC tabanlı sınıflarla çalışıyorsanız, [CRecordset](../../mfc/reference/crecordset-class.md) parametrelerini içeren sürümleri kullanın. DAO tabanlı sınıflarla çalışıyorsanız, [Cdaokayıt kümesi](../../mfc/reference/cdaorecordset-class.md) parametreleriyle sürümleri kullanın.
 
-DDX hakkında daha fazla bilgi için bkz: [iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md). Örnekler ve daha fazla bilgi için DDX [CRecordView](../../mfc/reference/crecordview-class.md) ve [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) alanları başlıklı makaleye bakın [kayıt görünümleri](../../data/record-views-mfc-data-access.md).
+DDX hakkında daha fazla bilgi için bkz. [Iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md). [CRecordView](../../mfc/reference/crecordview-class.md) ve [CDAORECORDVIEW](../../mfc/reference/cdaorecordview-class.md) alanları için DDX hakkında örnekler ve daha fazla bilgi Için bkz. [Kayıt görünümleri](../../data/record-views-mfc-data-access.md).
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki `DoDataExchange` için işlev bir [CRecordView](../../mfc/reference/crecordview-class.md) içeren `DDX_FieldText` üç veri türleri için işlevini çağırır: `IDC_COURSELIST` bir birleşik giriş kutusu; diğer iki düzenleme kutuları denetimlerdir. DAO programlama için *m_pSet* parametresi için bir işaretçi, bir [CRecordset](../../mfc/reference/crecordset-class.md) veya [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md).
+Bir CRecordView `DoDataExchange` için aşağıdaki işlev [](../../mfc/reference/crecordview-class.md) üç veri `DDX_FieldText` türü için işlev çağrıları içerir: `IDC_COURSELIST` Birleşik giriş kutusudur; diğer iki denetim düzenleme kutularıdır. DAO programlama için, *m_pSet* parametresi [CRecordset](../../mfc/reference/crecordset-class.md) veya [cdaokayıt kümesine](../../mfc/reference/cdaorecordset-class.md)yönelik bir işaretçidir.
 
 [!code-cpp[NVC_MFCDatabase#43](../../mfc/codesnippet/cpp/dialog-data-exchange-functions-for-crecordview-and-cdaorecordview_1.cpp)]
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üst bilgi** afxdao.h
+  **Header** afxdao. h
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Makroları ve genel öğeleri](mfc-macros-and-globals.md)
+[Makrolar ve genel öğeler](mfc-macros-and-globals.md)

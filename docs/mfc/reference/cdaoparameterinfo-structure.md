@@ -1,22 +1,24 @@
 ---
 title: CDaoParameterInfo Yapısı
-ms.date: 11/04/2016
+ms.date: 09/17/2019
 f1_keywords:
 - CDaoParameterInfo
 helpviewer_keywords:
 - CDaoParameterInfo structure [MFC]
 - DAO (Data Access Objects), Parameters collection
 ms.assetid: 45fd53cd-cb84-4e12-b48d-7f2979f898ad
-ms.openlocfilehash: 62addd44f8aa8fceafef6a27244994a2ec6b766b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4f0ee7ebe1d5d4eff50194c2d5c5cccf8f373c61
+ms.sourcegitcommit: 2f96e2fda591d7b1b28842b2ea24e6297bcc3622
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62399791"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71096078"
 ---
 # <a name="cdaoparameterinfo-structure"></a>CDaoParameterInfo Yapısı
 
-`CDaoParameterInfo` Yapısı için veri erişim nesneleri (DAO) tanımlanmış bir parametre nesnesi hakkında bilgiler içerir.
+Yapı `CDaoParameterInfo` , veri erişim nesneleri (DAO) için tanımlanan bir parametre nesnesi hakkında bilgiler içerir.
+DAO 3,6 son sürümdür ve artık kullanılmıyor olarak kabul edilir.
+
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -32,30 +34,30 @@ struct CDaoParameterInfo
 #### <a name="parameters"></a>Parametreler
 
 *m_strName*<br/>
-Parametre nesnesine adlandıran. Daha fazla bilgi için "Name özelliği" DAO Yardım konusuna bakın.
+Parametre nesnesini benzersiz olarak adlandırır. Daha fazla bilgi için, DAO yardımı 'nda "ad özelliği" konusuna bakın.
 
 *m_nType*<br/>
-Bir parametre nesnesi veri türünü gösteren bir değer. Olası değerler listesi için bkz. *m_nType* üyesi [Cdaofieldınfo](../../mfc/reference/cdaofieldinfo-structure.md) yapısı. Daha fazla bilgi için DAO Yardımı'nda "Type özelliği" konusuna bakın.
+Bir parametre nesnesinin veri türünü gösteren bir değer. Olası değerlerin bir listesi için bkz. *m_nType* üyesi [Cdadofielınfo](../../mfc/reference/cdaofieldinfo-structure.md) yapısı. Daha fazla bilgi için, DAO yardımı 'nda "tür özelliği" konusuna bakın.
 
 *m_varValue*<br/>
-Depolanan parametrenin değeri bir [COleVariant](../../mfc/reference/colevariant-class.md) nesne.
+Parametrenin değeri [Colonvariant](../../mfc/reference/colevariant-class.md) nesnesinde saklanır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Birincil ve ikincil yukarıdaki başvuruları nasıl bilgileri tarafından döndürülen belirtmek [Getparameterınfo](../../mfc/reference/cdaoquerydef-class.md#getparameterinfo) sınıf üyesi işlevinde `CDaoQueryDef`.
+Yukarıdaki birincil ve Ikincil başvurular, bilgilerin sınıfında `CDaoQueryDef` [GetParameterInfo](../../mfc/reference/cdaoquerydef-class.md#getparameterinfo) üye işlevi tarafından nasıl döndürüleceğini gösterir.
 
-MFC DAO parametresi nesnelerini bir sınıftaki kapsamayan. Temel alınan MFC DAO querydef nesneleri `CDaoQueryDef` kendi parametrelerini koleksiyonlarında nesneleri depolamak parametreleri. Parametre nesneleri erişmek için bir [CDaoQueryDef](../../mfc/reference/cdaoquerydef-class.md) nesne, querydef nesnesinin çağrı `GetParameterInfo` belirli bir parametre veya parametreler koleksiyonunu bir dizine üye işlevi. Kullanabileceğiniz [CDaoQueryDef::GetParameterCount](../../mfc/reference/cdaoquerydef-class.md#getparametercount) üye işlevi ile birlikte `GetParameterInfo` parametreleri toplulukta döngü.
+MFC bir sınıftaki DAO parametre nesnelerini kapsüllemez. MFC `CDaoQueryDef` nesnelerini temel alan DAO QueryDef nesneleri parametre koleksiyonlarında parametreleri depolar. Bir [CDaoQueryDef](../../mfc/reference/cdaoquerydef-class.md) nesnesindeki parametre nesnelerine erişmek için, belirli bir parametre adı için querydef nesnesinin `GetParameterInfo` üye işlevini veya parametreler koleksiyonuna bir dizin çağırın. , Parameters koleksiyonunu döngüye almak için, ' yle `GetParameterInfo` birlikte [CDaoQueryDef:: GetParameterCount](../../mfc/reference/cdaoquerydef-class.md#getparametercount) üye işlevini kullanabilirsiniz.
 
-Tarafından alınan bilgileri [CDaoQueryDef::GetParameterInfo](../../mfc/reference/cdaoquerydef-class.md#getparameterinfo) üye işlevi depolanan bir `CDaoParameterInfo` yapısı. Çağrı `GetParameterInfo` parametre nesnesi, parametre koleksiyonunda depolanan QueryDefs için.
+[CDaoQueryDef:: GetParameterInfo](../../mfc/reference/cdaoquerydef-class.md#getparameterinfo) üye işlevi tarafından alınan bilgiler bir `CDaoParameterInfo` yapıda depolanıyor. Parametre `GetParameterInfo` koleksiyonundaki parametre nesnesinin depolandığı QueryDef nesnesi için çağrı.
 
 > [!NOTE]
->  İsterseniz almak veya yalnızca bir parametre değerini ayarlamak için kullanın [GetParamValue](../../mfc/reference/cdaorecordset-class.md#getparamvalue) ve [SetParamValue](../../mfc/reference/cdaorecordset-class.md#setparamvalue) sınıfın üye işlevleri `CDaoRecordset`.
+>  Yalnızca bir parametre değerini almak veya ayarlamak istiyorsanız, sınıfının `CDaoRecordset` [GetParamValue](../../mfc/reference/cdaorecordset-class.md#getparamvalue) ve [SetParamValue](../../mfc/reference/cdaorecordset-class.md#setparamvalue) üye işlevlerini kullanın.
 
-`CDaoParameterInfo` Ayrıca tanımlayan bir `Dump` hata ayıklama üye işlevinde oluşturur. Kullanabileceğiniz `Dump` içeriğini dökümünü almak için bir `CDaoParameterInfo` nesne.
+`CDaoParameterInfo`Ayrıca, hata `Dump` ayıklama yapılarında bir üye işlevi tanımlar. `Dump` Bir`CDaoParameterInfo` nesnenin içeriğini dökmek için kullanabilirsiniz.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxdao.h
+**Üstbilgi:** afxdao. h
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

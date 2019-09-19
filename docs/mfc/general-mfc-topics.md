@@ -1,29 +1,29 @@
 ---
 title: Genel MFC Konuları
-ms.date: 11/04/2016
+ms.date: 09/17/2019
 helpviewer_keywords:
 - MFC
 - class libraries [MFC], MFC
 - MFC, application development
 ms.assetid: 617e9945-9bb3-471d-a3ba-e235fcfb55d1
-ms.openlocfilehash: 71cdda0abea8cec29c3b6e17ddfb584e32a931c6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5f4c75e3f8bd8f7d32109cf92465dfa6e5aba6ed
+ms.sourcegitcommit: 2f96e2fda591d7b1b28842b2ea24e6297bcc3622
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62219736"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71095862"
 ---
 # <a name="general-mfc-topics"></a>Genel MFC Konuları
 
-Bu makaleler ailesi Microsoft Foundation Class (MFC) Kitaplığı hakkında teknik ayrıntılar içerir ve MFC çerçevesi ve anahtar bileşenleri ve alt sistemlerin genel bir bakış sağlar.
+Bu makale ailesi, Microsoft Foundation Class (MFC) kitaplığıyla ilgili teknik ayrıntıları içerir ve MFC çerçevesine ve temel bileşenlerine ve alt sistemlerine genel bir bakış sağlar.
 
-Microsoft Foundation Class Kitaplığı, Microsoft Windows programlama için bir uygulama çerçevesidir. MFC C++ programında yazılan, windows, menüler ve iletişim kutuları yönetmek için gereken kodu çoğunu sağlar. temel giriş/çıkış gerçekleştirme; veri nesneleri koleksiyonlarını depolamak; ve benzeri. Tek yapmak için ihtiyacınız olan bu çerçeveye, uygulamaya özgü kodu ekleyin. C++ sınıf programlama yapısı gereği uzatın veya temel işlevleri geçersiz kılma kolaydır, [MFC çerçevesi](../mfc/framework-mfc.md) sağlar.
+Microsoft Foundation Class Kitaplığı, Microsoft Windows 'da programlamaya yönelik bir uygulama çerçevesidir. C++, MFC, Windows, menüler ve iletişim kutularını yönetmek için gerekli kodların çoğunu sağlar; temel giriş/çıkış gerçekleştiriliyor; veri nesneleri koleksiyonlarını depolama; vb. Yapmanız gereken tek şey, uygulamaya özel kodunuzu bu çerçeveye eklemektir. C++ Sınıf programlamanın doğası göz önüne ALıNDıĞıNDA, [MFC çerçevesinin](../mfc/framework-mfc.md) sağladığı temel işlevselliği genişletmek veya geçersiz kılmak kolaydır.
 
-MFC çerçevesi Uzman programcıları için Windows iş sınayabilmesi olanak tanıyan güçlü bir yaklaşımdır. MFC geliştirme süresini kısaltır; kodu daha taşınabilir hale getirir; programlama özgürlük ve esneklik azaltmadan Bilim insanları için inanılmaz desteği sağlar. "program için sabit" için kolay erişim sağlar. kullanıcı arabirimi öğeleri ve teknolojiler etkin teknoloji, OLE ve Internet gibi programlama. Ayrıca, MFC veritabanı programlama yoluyla veri erişim nesneleri (DAO) ve açık veritabanı bağlantısı (ODBC) ve ağ Windows Sockets programlama basitleştirir. MFC özellik sayfaları ("sekme iletişim kutuları") ve baskı önizlemeyi kayan, özelleştirilebilir araç çubukları gibi program özellikleri kolaylaştırır.
+MFC çerçevesi, Windows için uzman programcıların çalışmasına olanak tanıyan güçlü bir yaklaşımdır. MFC, geliştirme süresini kısaltır; kodu daha taşınabilir hale getirir; , programlama özgürlüğü ve esnekliğini azaltmadan inanılmaz destek sağlar; ve etkin teknoloji, OLE ve Internet programlama gibi "donanımdan programa" Kullanıcı Arabirimi öğelerine ve teknolojilerine kolay erişim sağlar. Ayrıca MFC, veri erişim nesneleri (DAO) (artık kullanılmıyor) ve açık veritabanı bağlantısı (ODBC) ve Windows Yuvaları aracılığıyla ağ programlama aracılığıyla veritabanı programlamayı basitleştirir. MFC, özellik sayfaları ("sekme iletişimleri"), baskı önizleme ve kayan araç çubukları gibi özellikleri programlamanızı kolaylaştırır.
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
-`MFC Samples`, içinde sağlanacak olan [Visual C++ örnekleri](../overview/visual-cpp-samples.md)
+`MFC Samples`[görsel C++ örneklerde](../overview/visual-cpp-samples.md) sağlanan
 
 [MFC Kaynak Dosyalarını Kullanma](../mfc/using-the-mfc-source-files.md)
 
@@ -33,9 +33,9 @@ MFC çerçevesi Uzman programcıları için Windows iş sınayabilmesi olanak ta
 
 [Framework'te Derleme](../mfc/building-on-the-framework.md)
 
-[CWinApp: Uygulama sınıfı](../mfc/cwinapp-the-application-class.md)
+[CWinApp: Uygulama Sınıfı](../mfc/cwinapp-the-application-class.md)
 
-[Belge şablonları ve belge/görünüm oluşturma işlemi](../mfc/document-templates-and-the-document-view-creation-process.md)
+[Belge şablonları ve belge/görünüm oluşturma Işlemi](../mfc/document-templates-and-the-document-view-creation-process.md)
 
 [MFC Modüllerinin Durum Verisini Yönetme](../mfc/managing-the-state-data-of-mfc-modules.md)
 
@@ -47,11 +47,11 @@ MFC çerçevesi Uzman programcıları için Windows iş sınayabilmesi olanak ta
 
 [Windows Vista Ortak Denetimleri için Derleme Gereksinimleri](../mfc/build-requirements-for-windows-vista-common-controls.md)
 
-[Nasıl yapılır: Yeniden başlatma Yöneticisi desteği ekleme](../mfc/how-to-add-restart-manager-support.md)
+[Nasıl yapılır: Yeniden Başlatma Yöneticisi Desteği Ekleme](../mfc/how-to-add-restart-manager-support.md)
 
 [Dinamik Düzen](../mfc/dynamic-layout.md)
 
-MFC başvurusu belgelere genel bakış için bkz. [Microsoft Foundation Class Kitaplığı](../mfc/mfc-desktop-applications.md).
+MFC başvuru belgelerine genel bir bakış için bkz. [Microsoft Foundation Class Kitaplığı](../mfc/mfc-desktop-applications.md).
 
 ATL hakkında daha fazla bilgi için bkz. [Etkin Şablon kitaplığı başvurusu](../atl/atl-class-overview.md).
 

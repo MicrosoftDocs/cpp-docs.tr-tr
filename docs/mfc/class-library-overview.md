@@ -1,6 +1,6 @@
 ---
 title: Sınıf Kitaplığına Genel Bakış
-ms.date: 11/04/2016
+ms.date: 09/17/2019
 f1_keywords:
 - vc.classes.mfc
 helpviewer_keywords:
@@ -10,18 +10,18 @@ helpviewer_keywords:
 - class libraries, MFC
 - class libraries
 ms.assetid: 9b0e3152-ac39-4f52-91b4-f20aa3a674aa
-ms.openlocfilehash: aec295ea93868ff1fe6e0d3d1d2370a344e47c73
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 23097c0bf3399a4dced6640f41c0d46dba101b26
+ms.sourcegitcommit: 2f96e2fda591d7b1b28842b2ea24e6297bcc3622
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62327320"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71095950"
 ---
 # <a name="class-library-overview"></a>Sınıf Kitaplığına Genel Bakış
 
-Bu genel bakışta, kategorilere ayırır ve sınıflar, Microsoft Foundation Class Kitaplığı (MFC) sürüm 9.0 açıklanmaktadır. Bir uygulama çerçevesi birlikte MFC'deki sınıflar oluşturur — Windows API için yazılan uygulamanın çerçevesi. Programlama göreviniz, uygulamanıza özgü kodu doldurmak için var.
+Bu genel bakış, Microsoft Foundation Class Kitaplığı (MFC) sürüm 9,0 ' de sınıfları kategorilere ayırır ve tanımlar. MFC 'deki sınıflar birlikte alınan sınıflar, bir uygulama çerçevesini oluşturur — Windows API 'si için yazılmış bir uygulamanın çatısı. Programlama göreviniz, uygulamanıza özgü kodu doldurmanızı sağlar.
 
-Burada Kitaplık sınıfları aşağıdaki kategorilerde sunulan:
+Kitaplığın sınıfları aşağıdaki kategorilerde sunulmuştur:
 
 - [Kök Sınıflar: CObject](../mfc/root-class-cobject.md)
 
@@ -109,13 +109,13 @@ Burada Kitaplık sınıfları aşağıdaki kategorilerde sunulan:
 
    - [Özel Durum Sınıfları](../mfc/exception-classes.md)
 
-Bölüm [genel sınıf tasarımı felsefesi](../mfc/general-class-design-philosophy.md) MFC Kitaplığı nasıl tasarlandığı açıklanır.
+[Genel sınıf tasarımı felsefesi](../mfc/general-class-design-philosophy.md) , MFC kitaplığının nasıl tasarlandığını açıklar.
 
-Framework'ün genel bakış için bkz. [yazma uygulamaları için Windows için sınıfları kullanma](../mfc/using-the-classes-to-write-applications-for-windows.md). Bazı yukarıda listelenen sınıflar çerçevenin dışında kullanılan ve koleksiyonlar, özel durumlar, dosyalar ve dizeler gibi kullanışlı soyut öğelerdir sağlayan genel amaçlı sınıflardır.
+Çerçeveye genel bakış için bkz. [Windows Için uygulama yazmak Için sınıfları kullanma](../mfc/using-the-classes-to-write-applications-for-windows.md). Yukarıda listelenen sınıfların bazıları, çerçeve dışında kullanılabilecek genel amaçlı sınıflardır ve koleksiyonlar, özel durumlar, dosyalar ve dizeler gibi yararlı soyutlamalar sağlar.
 
-Bir sınıfın kalıtımını görmek için [sınıf hiyerarşisi grafiği](../mfc/hierarchy-chart.md).
+Bir sınıfın devralınmasını görmek için [sınıf hiyerarşisi grafiğini](../mfc/hierarchy-chart.md)kullanın.
 
-Bu genel bakışta listelenen sınıflara ek olarak MFC Kitaplığı genel işlevleri, genel değişken ve makro içerir. Bir genel bakış ve bu konudaki ayrıntılı listesi [MFC makroları ve genel öğeleri](../mfc/reference/mfc-macros-and-globals.md), izler ve MFC sınıflarına alfabetik başvuru.
+Bu genel bakışta listelenen sınıflara ek olarak, MFC kitaplığı bir dizi genel işlevler, genel değişkenler ve makrolar içerir. MFC [makroları ve](../mfc/reference/mfc-macros-and-globals.md)genel konu başlığında MFC sınıflarına ilişkin alfabetik başvuruyu izleyen genel bakış ve ayrıntılı bir liste vardır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

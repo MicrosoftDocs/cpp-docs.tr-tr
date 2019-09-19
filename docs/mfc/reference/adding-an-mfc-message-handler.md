@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - message handling [MFC], adding handlers
 ms.assetid: 4251cfce-76ca-443d-bd2f-6303afa6d942
-ms.openlocfilehash: cf46c4f388c4607dbb8fb0e7f439603e5964ea03
-ms.sourcegitcommit: 3caf5261b3ea80d9cf14038c116ba981d655cd13
+ms.openlocfilehash: 1287c8166e02c3aa7696a3a0d79ecc1a240e3032
+ms.sourcegitcommit: 2f96e2fda591d7b1b28842b2ea24e6297bcc3622
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70907666"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71095866"
 ---
 # <a name="adding-an-mfc-message-handler"></a>MFC İleti İşleyicisi Ekleme
 
-Bir sınıfa bir ileti işleyicisi (Windows iletilerini işleyen bir üye işlevi) eklemek ve Windows iletilerini ileti işleyicisine eşlemek için sınıf **görünümü** ' nde [sınıf Sihirbazı](mfc-class-wizard.md) ' nı veya **Özellikler** penceresini kullanabilirsiniz. [Herhangi bir iletişim kutusu denetimi için de bir olay işleyicisi](../../windows/adding-event-handlers-for-dialog-box-controls.md)ekleyebilirsiniz. 
+Bir sınıfa bir ileti işleyicisi (Windows iletilerini işleyen bir üye işlevi) eklemek ve Windows iletilerini ileti işleyicisine eşlemek için sınıf **görünümü** ' nde [sınıf Sihirbazı](mfc-class-wizard.md) ' nı veya **Özellikler** penceresini kullanabilirsiniz. [Herhangi bir iletişim kutusu denetimi için de bir olay işleyicisi](../../windows/adding-event-handlers-for-dialog-box-controls.md)ekleyebilirsiniz.
 
 İleti **sihirbazını** veya **Özellikler** penceresini kullanarak ( **sınıf görünümü**) ileti ve olay işleme işlevlerini tanımlamak için ileti gönderme tablosunu (veya ileti haritasını) ve sınıf üst bilgi dosyanızı otomatik olarak güncelleştirebilirsiniz.
 

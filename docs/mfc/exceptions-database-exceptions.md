@@ -1,6 +1,6 @@
 ---
 title: 'Özel durumlar: Veritabanı Özel Durumları'
-ms.date: 11/04/2016
+ms.date: 09/17/2019
 helpviewer_keywords:
 - DAO [MFC], exceptions
 - exceptions [MFC], database
@@ -11,68 +11,68 @@ helpviewer_keywords:
 - databases [MFC], exception handling
 - error codes [MFC], database exception handling
 ms.assetid: 28daf260-f824-4be6-aecc-1f859e6dec26
-ms.openlocfilehash: 2f7f3bff9f28968361ecfa7374a235a727443004
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c279c5b788cc7bd8a68fe36128c116d8df91c2eb
+ms.sourcegitcommit: 2f96e2fda591d7b1b28842b2ea24e6297bcc3622
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62405904"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71095821"
 ---
 # <a name="exceptions-database-exceptions"></a>Özel durumlar: Veritabanı Özel Durumları
 
-Bu makalede, veritabanı özel durumları işlemek açıklanmaktadır. Bu makalede malzeme çoğunu, MFC sınıfları ile açık veritabanı bağlantısı (ODBC) veya MFC sınıfları için veri erişim nesneleri (DAO) çalışıp çalışmadığını geçerlidir. Bir veya başka bir model için belirli bir malzeme açıkça işaretlenmiştir. Konular şunlardır:
+Bu makalede veritabanı özel durumlarının nasıl işleneceği açıklanır. Bu makaledeki malzemenin çoğu, açık veritabanı bağlantısı (ODBC) için MFC sınıflarıyla veya veri erişim nesneleri (DAO) için MFC sınıflarıyla çalışırken geçerlidir. Bir veya diğer modele özgü malzemeler açıkça işaretlenir. Konular şunları içerir:
 
 - [Özel durum işleme yaklaşımları](#_core_approaches_to_exception_handling)
 
-- [Bir veritabanı özel durum işleme örneği](#_core_a_database_exception.2d.handling_example)
+- [Veritabanı özel durum işleme örneği](#_core_a_database_exception.2d.handling_example)
 
-##  <a name="_core_approaches_to_exception_handling"></a> Özel durum işleme yaklaşımları
+##  <a name="_core_approaches_to_exception_handling"></a>Özel durum Işleme yaklaşımları
 
-DAO veya ODBC ile çalışıyor olmanızdan yaklaşım aynıdır.
+Bu yaklaşım, DAO (eski) veya ODBC ile çalışırken de aynıdır.
 
-Her zaman özel durumları işlemek için özel durum işleyicileri yazmanız gerekir.
+Olağanüstü koşulları işlemek için her zaman özel durum işleyicileri yazmanız gerekir.
 
-Veritabanı özel durumları yakalama en kolay yaklaşım, uygulamanızın özel durum senaryoları ile test etmektir. Kodunuzda bir işlem için oluşur ve özel durum ortaya zorla olası özel durumları belirleyin. Daha sonra hangi özel durum görmek için izleme çıktıyı inceleyin veya hata ayıklayıcı döndürülen hata bilgileri inceleyin. Bu, dönüş kodları için kullanmakta olduğunuz özel durum senaryoları görürsünüz bilmenizi sağlar.
+Veritabanı özel durumlarını yakalamak için en kolay yaklaşım, uygulamanızı özel durum senaryolarıyla test kullanmaktır. Kodunuzda bir işlem için oluşabilecek olası özel durumları saptayın ve özel durumu ortaya çıkmaya zorlayın. Ardından, özel durumun ne olduğunu görmek için izleme çıkışını inceleyin veya hata ayıklayıcıda döndürülen hata bilgilerini inceleyin. Bu, kullanmakta olduğunuz özel durum senaryoları için hangi dönüş kodlarının görütireceğiz olduğunu bilmenizi sağlar.
 
 ### <a name="error-codes-used-for-odbc-exceptions"></a>ODBC özel durumları için kullanılan hata kodları
 
-Framework tarafından tanımlanan dönüş kodları yanı sıra olan form adlarını **AFX_SQL_ERROR_XXX**, bazı [CDBExceptions](../mfc/reference/cdbexception-class.md) dayalı [ODBC](../data/odbc/odbc-basics.md) dönüş kodları. Bu tür özel durumlar için dönüş kodları adlarında formun **SQL_ERROR_XXX**.
+Framework tarafından tanımlanan, **afx_sql_error_xxx**biçiminde adlara sahip olan dönüş kodlarına ek olarak, bazı [CDBExceptions](../mfc/reference/cdbexception-class.md) [ODBC](../data/odbc/odbc-basics.md) dönüş kodlarını temel alır. Bu özel durumlar için dönüş kodları **sql_error_xxx**biçiminde adlara sahiptir.
 
-Dönüş kodları — çerçeve tarafından tanımlanmış hem ODBC tanımlı — veritabanı sınıfları altında belgelenir döndürebilir [m_nRetCode](../mfc/reference/cdbexception-class.md#m_nretcode) sınıfı veri üyesi `CDBException`. ODBC SDK'da ODBC tarafından tanımlanan dönüş kodları hakkında ek bilgi kullanılabilir *Programcının Başvurusu* MSDN Kitaplığı'nda.
+Veritabanı sınıflarının döndürebildiği, hem çerçeve tanımlı hem de ODBC tanımlı dönüş kodları, sınıfının `CDBException` [m_nRetCode](../mfc/reference/cdbexception-class.md#m_nretcode) veri üyesi altında belgelenmiştir. ODBC tarafından tanımlanan dönüş kodları hakkında ek bilgiler, MSDN Kitaplığı 'ndaki ODBC SDK *Programcının Başvurusu* ' nda bulunabilir.
 
-### <a name="error-codes-used-for-dao-exceptions"></a>DAO özel durumlar için kullanılan hata kodları
+### <a name="error-codes-used-for-dao-exceptions"></a>DAO özel durumları için kullanılan hata kodları
 
-DAO özel durumlar için daha fazla bilgi genellikle kullanılabilir. Üç veri üyelerinin bir yakalanan hata bilgilerini erişebileceğiniz [CDaoException](../mfc/reference/cdaoexception-class.md) nesnesi:
+DAO özel durumları için, daha fazla bilgi genellikle kullanılabilir. Yakalanan bir [CDaoException](../mfc/reference/cdaoexception-class.md) nesnesinin üç veri üyesi aracılığıyla hata bilgilerine erişebilirsiniz:
 
-- [m_pErrorInfo](../mfc/reference/cdaoexception-class.md#m_perrorinfo) bir işaretçi içeren bir [Cdaoerrorınfo](../mfc/reference/cdaoerrorinfo-structure.md) veritabanıyla ilişkili hata nesnelerin DAO'ın koleksiyondaki hata bilgileri yalıtan nesne.
+- [m_pErrorInfo](../mfc/reference/cdaoexception-class.md#m_perrorinfo) , DAO 'nun veritabanıyla ilişkili hata nesneleri koleksiyonundaki hata bilgilerini kapsülleyen bir [CDaoErrorInfo](../mfc/reference/cdaoerrorinfo-structure.md) nesnesine yönelik bir işaretçi içerir.
 
-- [m_nAfxDaoError](../mfc/reference/cdaoexception-class.md#m_nafxdaoerror) MFC DAO sınıflarına bir genişletilmiş hata kodu içerir. Adlarında ilgili daha fazla bilgi formu, bu hata kodları **AFX_DAO_ERROR_XXX**, veri üyesi altında belgelenen `CDaoException`.
+- [m_nAfxDaoError](../mfc/reference/cdaoexception-class.md#m_nafxdaoerror) , MFC DAO sınıflarından genişletilmiş bir hata kodu içerir. **Afx_dao_error_xxx**formun adlarına sahip olan bu hata kodları, içindeki `CDaoException`veri üyesi altında belgelenmiştir.
 
-- [m_scode](../mfc/reference/cdaoexception-class.md#m_scode) OLE içeren **SCODE** DAO varsa. Nadiren, ancak bu hata kodu ile çalışmak gerekir. Genellikle diğer iki veri üyeleri daha fazla bilgi mevcuttur. Hakkında daha fazla bilgi için veri üyesi bakın **SCODE** değerleri.
+- [m_scode](../mfc/reference/cdaoexception-class.md#m_scode) , varsa, DAO 'DAN bir OLE **SCODE** içerir. Ancak, bu hata koduyla nadiren çalışmanız gerekir. Genellikle diğer iki veri üyelerinde daha fazla bilgi mevcuttur. **SCODE** değerleri hakkında daha fazla bilgi için veri üyesine bakın.
 
-DAO hataları, DAO hata nesne türü ve DAO hatalar koleksiyonuna hakkında ek bilgi sınıfı altında kullanılabilir [CDaoException](../mfc/reference/cdaoexception-class.md).
+DAO hataları, DAO hatası nesne türü ve DAO hataları koleksiyonu hakkında ek bilgiler, [Cdaoözel durum](../mfc/reference/cdaoexception-class.md)sınıfından kullanılabilir.
 
-##  <a name="_core_a_database_exception.2d.handling_example"></a> Bir veritabanı özel durum işleme örneği
+##  <a name="_core_a_database_exception.2d.handling_example"></a>Veritabanı özel durum Işleme örneği
 
-Aşağıdaki örnek oluşturmak çalışır bir [CRecordset](../mfc/reference/crecordset-class.md)-ile yığında nesne türetilmiş **yeni** işleci ve kayıt kümesi (ODBC veri kaynağında) açın. DAO sınıfları için benzer bir örnek için "DAO özel durum" aşağıdaki örneğe bakın.
+Aşağıdaki örnek, **Yeni** işleçle yığında bir [CRecordset](../mfc/reference/crecordset-class.md)ile türetilmiş nesne oluşturmaya çalışır ve ardından kayıt kümesini (ODBC veri kaynağı için) açar. DAO sınıflarına benzer bir örnek için aşağıdaki "DAO özel durum örneği" ne bakın.
 
-### <a name="odbc-exception-example"></a>ODBC özel durumu örneği
+### <a name="odbc-exception-example"></a>ODBC özel durum örneği
 
-[Açık](../mfc/reference/crecordset-class.md#open) üye işlevi bir özel durum oluşturur (tür [CDBException](../mfc/reference/cdbexception-class.md) ODBC sınıfları için), bu nedenle bu kod ayraç `Open` çağıran bir **deneyin** blok. Sonraki **catch** catch bloğu bir `CDBException`. Çağrılan özel durum nesne kendisine inceleyin `e`, ancak bu durumda bir kayıt kümesi oluşturma girişimi başarısız olduğunu bilmeniz yeterlidir. **Catch** blok bir ileti kutusu görüntüler ve kayıt kümesi nesnesi silerek temizler.
+[Open](../mfc/reference/crecordset-class.md#open) member işlevi, bir özel durum oluşturabilir (ODBC sınıfları için [CDBException](../mfc/reference/cdbexception-class.md) türünde), bu nedenle bu `Open` kod, çağrıyı bir **TRY** bloğu ile ayraç içine alın. Sonraki **catch** bloğu bir `CDBException`yakalar. Bilinen `e`özel durum nesnesinin kendisini inceleyebilirsiniz, ancak bu durumda bir kayıt kümesi oluşturma girişiminin başarısız olduğunu bilmek için yeterlidir. **Catch** bloğu bir ileti kutusu görüntüler ve kayıt kümesi nesnesini silerek temizler.
 
 [!code-cpp[NVC_MFCDatabase#36](../mfc/codesnippet/cpp/exceptions-database-exceptions_1.cpp)]
 
-### <a name="dao-exception-example"></a>DAO özel durumu örneği
+### <a name="dao-exception-example"></a>DAO özel durum örneği
 
-DAO örnek ODBC için örneğe benzer, ancak genellikle daha fazla tür bilgileri alabilirsiniz. Aşağıdaki kod da bir kayıt kümesi açmayı dener. Bu girişim bir özel durum oluşturursa, özel durum nesnesi hata bilgileri için veri üyesi inceleyebilirsiniz. Büyük olasılıkla önceki ODBC örnekte olduğu gibi bir kayıt kümesi oluşturma girişimi başarısız olduğunu bilmek yeterli.
+DAO örneği, ODBC örneğine benzerdir, ancak genellikle daha fazla bilgi türü elde edebilirsiniz. Aşağıdaki kod ayrıca bir kayıt kümesini açmaya çalışır. Bu girişim bir özel durum oluşturursa, hata bilgileri için özel durum nesnesinin bir veri üyesini inceleyebilirsiniz. Önceki ODBC örneğinde olduğu gibi, bir kayıt kümesi oluşturma girişiminin başarısız olduğunu bilmek büyük olasılıkla çok fazla.
 
 [!code-cpp[NVC_MFCDatabase#37](../mfc/codesnippet/cpp/exceptions-database-exceptions_2.cpp)]
 
-Bu kod bir hata iletisi dizeden alır [m_pErrorInfo](../mfc/reference/cdaoexception-class.md#m_perrorinfo) özel durum nesnesi bir üyesi. MFC özel durum oluşturur, bu üye doldurur.
+Bu kod, özel durum nesnesinin [m_pErrorInfo](../mfc/reference/cdaoexception-class.md#m_perrorinfo) üyesinden bir hata iletisi dizesi alır. MFC özel durumu oluşturduğunda bu üyeyi doldurur.
 
-Tarafından döndürülen hata bilgileri hakkında ayrıntılı bilgi için bir `CDaoException` nesne, sınıflara bakın [CDaoException](../mfc/reference/cdaoexception-class.md) ve [Cdaoerrorınfo](../mfc/reference/cdaoerrorinfo-structure.md).
+Bir `CDaoException` nesne tarafından döndürülen hata bilgilerinin bir tartışması için bkz. Classes [CDaoException](../mfc/reference/cdaoexception-class.md) ve [CDaoErrorInfo](../mfc/reference/cdaoerrorinfo-structure.md).
 
-ODBC ile çalışırken, Microsoft Jet (.mdb) veritabanlarında ve çoğu durumda çalışırken, yalnızca bir hata nesnesi olur. Nadir durumlarda ODBC veri kaynağını kullanan ve birden çok hata yoksa, DAO'ın hatalar koleksiyonuna tarafından döndürülen hataları sayısına bağlı döngü [CDaoException::GetErrorCount](../mfc/reference/cdaoexception-class.md#geterrorcount). Döngü, her zaman çağrı [CDaoException::GetErrorInfo](../mfc/reference/cdaoexception-class.md#geterrorinfo) puanı almak için `m_pErrorInfo` veri üyesi.
+Microsoft Jet (. mdb) veritabanları ile çalışırken ve çoğu durumda ODBC ile çalışırken yalnızca bir hata nesnesi olur. Bir ODBC veri kaynağı kullanırken ve birden çok hata olduğunda, nadir olarak bir ODBC veri kaynağı kullandığınızda, bu sayının, [CDaoException:: GetErrorCount](../mfc/reference/cdaoexception-class.md#geterrorcount)tarafından döndürülen hata sayısına bağlı olarak dao hata toplama aracılığıyla döngü yapabilirsiniz. Döngünün her seferinde, `m_pErrorInfo` veri üyesini yeniden doldurmak için [CDaoException:: GetErrorInfo](../mfc/reference/cdaoexception-class.md#geterrorinfo) çağırın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

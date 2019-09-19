@@ -1,6 +1,6 @@
 ---
-title: "TN054: Doğrudan MFC DAO sınıflarını kullanırken DAO'yu çağırma"
-ms.date: 06/28/2018
+title: "TN054: MFC DAO sınıflarını kullanırken DAO 'YU doğrudan çağırma"
+ms.date: 09/17/2019
 helpviewer_keywords:
 - MFC, DAO and
 - passwords [MFC], calling DAO
@@ -11,79 +11,75 @@ helpviewer_keywords:
 - TN054
 - DAO (Data Access Objects), and MFC
 ms.assetid: f7de7d85-8d6c-4426-aa05-2e617c0da957
-ms.openlocfilehash: b6aae8929e2840791e8d629378a0ec2261a2cda9
-ms.sourcegitcommit: 934cb53fa4cb59fea611bfeb9db110d8d6f7d165
+ms.openlocfilehash: cef9852f762a64579e11fe4b0d8606bfc9d36709
+ms.sourcegitcommit: 2f96e2fda591d7b1b28842b2ea24e6297bcc3622
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65610987"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71095971"
 ---
-# <a name="tn054-calling-dao-directly-while-using-mfc-dao-classes"></a>TN054: Doğrudan MFC DAO sınıflarını kullanırken DAO'yu çağırma
+# <a name="tn054-calling-dao-directly-while-using-mfc-dao-classes"></a>TN054: MFC DAO sınıflarını kullanırken DAO 'YU doğrudan çağırma
 
 > [!NOTE]
-> Sihirbazlar ve Visual C++ ortamına DAO (DAO sınıflarına eklenmiştir ve bunları kullanmaya devam edebilirsiniz ancak) desteklemez. Microsoft, kullanmanızı önerir [OLE DB Şablonları](../data/oledb/ole-db-templates.md) veya [ODBC ve MFC](../data/odbc/odbc-and-mfc.md) yeni projeler için. Yalnızca var olan uygulamaları sürdürmek DAO kullanmanız gerekir.
+> DAO, Access veritabanları ile birlikte kullanılır ve Office 2013 aracılığıyla desteklenir. 3,6 son sürümdür ve artık kullanılmıyor olarak kabul edilir. Visual C++ ortamı ve sihirbazları DAO 'yu desteklemez (DAO sınıfları dahil edilir ancak yine de kullanabilirsiniz). Microsoft, yeni projeler için [OLE DB şablonlarını](../data/oledb/ole-db-templates.md) veya [ODBC 'yi ve MFC 'yi](../data/odbc/odbc-and-mfc.md) kullanmanızı önerir. Yalnızca var olan uygulamaları korumak için DAO kullanmanız gerekir.
 
-MFC DAO veritabanı sınıfları kullanırken DAO doğrudan kullanmak için gerekli olduğu durumlar olabilir. Genellikle bu durum olmaz, ancak MFC yapmayı doğrudan DAO çağrıları basit MFC sınıflarını kullanımını doğrudan DAO çağrıları ile birleştirilirken kolaylaştırmak için bazı yardımcı mekanizmaları sağlamıştır. MFC yönetilen DAO nesnenin yöntemlere yapılan çağrılar doğrudan DAO yaparak yalnızca birkaç satır kod istemeniz gerekir. DAO nesneleri oluşturup kullanacağınızı ihtiyacınız varsa *değil* MFC tarafından yönetilen, aslında çağırarak biraz daha fazla iş yapmanız gerekecek `Release` nesne üzerinde. Bu teknik Not, ne zaman DAO doğrudan çağırmak isteyebilirsiniz, MFC Yardımcıları yardımcı olması için neler yapabileceğinizi ve DAO OLE arabirimleri kullanmayı açıklar. Son olarak, bu not, doğrudan DAO güvenlik özellikleri DAO çağırma gösteren bazı örnek işlevleri sağlar.
+MFC DAO veritabanı sınıfları kullanılırken, doğrudan DAO kullanılması gereken durumlar olabilir. Genellikle bu durum olmayacaktır, ancak MFC doğrudan DAO çağrılarıyla MFC sınıflarının kullanımını birleştirirken doğrudan DAO çağrılarını kolaylaştırmak için bazı yardımcı mekanizmalar sağlamıştır. MFC tarafından yönetilen bir DAO nesnesinin yöntemlerine doğrudan DAO çağrıları yapmak için yalnızca birkaç satır kod gerekir. MFC *tarafından yönetilmeyen DAO* nesneleri oluşturmanız ve kullanmanız gerekiyorsa, aslında nesneyi çağırarak `Release` biraz daha iş yapmanız gerekecektir. Bu teknik notta, DAO 'YU doğrudan çağırmak isteyebileceğiniz, MFC yardımcıların size yardımcı olmak için neler olabileceği ve DAO OLE arabirimlerinin nasıl kullanılacağı açıklanmaktadır. Son olarak, bu notta DAO güvenlik özellikleri için doğrudan DAO çağrısının nasıl çağrılacağını gösteren bazı örnek işlevler sağlanmaktadır.
 
-## <a name="when-to-make-direct-dao-calls"></a>DAO doğrudan çağrı yapmak ne zaman
+## <a name="when-to-make-direct-dao-calls"></a>Doğrudan DAO çağrıları ne zaman yapılır?
 
-Koleksiyonları yenilenmesi gerektiğinde doğrudan DAO çağrıları yapmak için en yaygın durumlar ortaya ya da MFC tarafından Sarmalanan değil özellikleri ne zaman uyguluyor. MFC tarafından sunulmadığından en önemli güvenlik özelliğidir. Güvenlik özellikleri uygulamak istiyorsanız, DAO kullanıcılar ve gruplar nesneleri doğrudan kullanmanız gerekir. Güvenlik yanı sıra MFC tarafından desteklenmeyen yalnızca birkaç diğer DAO özellikleri vardır. Bunlar, kayıt kopyalama ve veritabanı çoğaltma özellikleri yanı sıra birkaç geç DAO eklemeleri içerir.
+Doğrudan DAO çağrıları yapmanın en yaygın durumları, koleksiyonların yenilenmesi gerektiğinde veya MFC tarafından sarmalanmamış Özellikler uyguladığınızda oluşur. MFC tarafından açığa çıkarılan en önemli özellik güvenlik ' dir. Güvenlik özelliklerini uygulamak istiyorsanız, doğrudan DAO kullanıcıları ve grupları nesnelerini kullanmanız gerekir. Güvenliğin yanı sıra, MFC tarafından desteklenmeyen başka bir DAO özelliği de vardır. Bunlar, kayıt kümesi kopyalama ve veritabanı çoğaltma özelliklerinin yanı sıra, DAO için birkaç geç ekleme içerir.
 
-## <a name="a-brief-overview-of-dao-and-mfcs-implementation"></a>DAO ve MFC'nin uygulaması kısa bir genel bakış
+## <a name="a-brief-overview-of-dao-and-mfcs-implementation"></a>DAO ve MFC 'nin uygulamasına kısa bir genel bakış
 
-MFC'nin kaydırma, çok az şey hakkında endişelenmeniz gerekmez için pek çok detayından işleyerek DAO daha kolay kullanarak DAO yapar. Bu OLE, oluşturulmasını ve yönetimini (koleksiyon nesnelerini özellikle) hata denetleme ve kesin türü belirtilmiş ve daha basit bir arabirim sağlayan DAO nesnelerin başlatılması içerir (hiçbir **değişken** veya `BSTR` bağımsız değişkenler). Doğrudan DAO aramaları yapmak ve yine de bu özelliklerden yararlanabilirsiniz. Tüm kodunuzu gerçekleştirmelisiniz olan çağrı `Release` doğrudan DAO tarafından oluşturulan nesneler için çağırır ve *değil* MFC üzerinde dahili ihtiyaç duyabilir arabirim işaretçilerini düzenleyin. Örneğin, değiştirmeyin *m_pDAORecordset* açık bir üye `CDaoRecordset` sürece, nesne *tüm* iç sonuçları. Ancak, kullandığınız olabilir *m_pDAORecordset* doğrudan alanlar koleksiyonu almak için DAO çağırmak için arabirim. Bu durumda *m_pDAORecordset* üye değiştirilemiyor. Yalnızca çağırmak zorunda `Release` nesneyle tamamladığınızda, alanlar koleksiyonu nesne üzerinde.
+MFC 'nin DAO sarmalanması, pek çok ayrıntıyı işleyerek DAO kullanımını daha kolay hale getirir, böylece çok az şey konusunda endişelenmenize gerek kalmaz. Bu, OLE başlatma, DAO nesnelerinin oluşturulması ve yönetimi (özellikle koleksiyon nesneleri), hata denetimi ve kesin belirlenmiş, daha basit bir arabirim ( **değişken** veya `BSTR` bağımsız değişken olmadan) sağlama içerir. Doğrudan DAO çağrıları yapabilir ve yine de bu özelliklerden yararlanabilirsiniz. Tüm kodunuzun doğrudan DAO çağrıları tarafından oluşturulan `Release` herhangi bir nesne için çağrı yapması gerekir ve MFC 'nin dahili olarak güvenebileceherhangi bir arabirim işaretçilerinden *hiçbirini değiştirmez.* Örneğin, *Tüm* iç sonuçları anlamadığınız müddetçe açık `CDaoRecordset` bir nesnenin m_pDAORecordset üyesini değiştirmeyin. Ancak, alanlar koleksiyonunu almak için doğrudan DAO çağırmak için *m_pDAORecordset* arabirimini kullanabilirsiniz. Bu durumda *m_pDAORecordset* üyesi değiştirilmez. Nesne ile işiniz bittiğinde alanlar `Release` koleksiyonu nesnesini çağırmanız yeterlidir.
 
-## <a name="description-of-helpers-to-make-dao-calls-easier"></a>DAO yapmak Yardımcıları açıklamasını daha kolay çağırır
+## <a name="description-of-helpers-to-make-dao-calls-easier"></a>DAO çağrılarını daha kolay hale getirmek için yardımcıların açıklaması
 
-DAO daha kolay bir şekilde arama yapmak için sağlanan Yardımcıları MFC DAO veritabanı sınıfları dahili olarak kullanılan aynı yardımcılardır. Bu Yardımcıları, hata ayıklama çıkışını günlüğe kaydetme beklenen hatalarını denetleme ve gerekirse uygun özel durumları atma dönüş kodları doğrudan bir DAO arama yaparken denetlemek için kullanılır. Temel alınan iki yardımcı işlev ve bu iki Yardımcıları birine harita dört makroları vardır. En iyi bir açıklama, kodun okunmasını olacaktır. Bkz: **DAO_CHECK**, **DAO_CHECK_ERROR**, **DAO_CHECK_MEM**, ve **DAO_TRACE** AFXDAO içinde. Makroları bakın ve görmek için H **AfxDaoCheck** ve **AfxDaoTrace** DAOCORE içinde. CPP.
+Bir DAO 'YU çağırmak için belirtilen yardımcılar, MFC DAO veritabanı sınıflarında dahili olarak kullanılan yardımcılardır. Bu yardımcılar, doğrudan bir DAO çağrısı yaparken, hata ayıklama çıkışını günlüğe kaydederken, beklenen hataları denetleyerek ve gerekirse uygun özel durumlar oluşturarak dönüş kodlarını denetlemek için kullanılır. İki temel yardımcı işlev ve bu iki yardımcıdan biriyle eşlenen dört makro vardır. En iyi açıklama yalnızca kodu okumak olacaktır. Bkz. AFXDAO 'da **DAO_CHECK**, **DAO_CHECK_ERROR**, **DAO_CHECK_MEM**ve **DAO_TRACE** . Ve makroları görmek için **AfxDaoCheck** ve **AfxDaoTrace** daocore. CPP.
 
-## <a name="using-the-dao-ole-interfaces"></a>DAO OLE arabirimleri kullanarak
+## <a name="using-the-dao-ole-interfaces"></a>DAO OLE arabirimlerini kullanma
 
-DAO nesne hiyerarşisinde her nesne için OLE arabirimleri DBDAOINT üstbilgi dosyasında tanımlanır. H \Program Visual Studio .NET 2003\VC7\include dizinde bulunamadı. Bu arabirimlerin tüm DAO hiyerarşi yönetmenize olanak tanıyan yöntemler sağlar.
+DAO nesne hiyerarşisindeki her nesnenin OLE arabirimleri, DBDAOINT başlık dosyasında tanımlanmıştır. \Program Files\Microsoft Visual Studio .NET 2003 \ VC7\include dizininde bulunan H. Bu arabirimler, tüm DAO hiyerarşisini değiştirmenize olanak tanıyan yöntemler sağlar.
 
-Birçok DAO arabirimleri yöntemlere yönetmek ihtiyacınız olacak bir `BSTR` nesne (OLE Otomasyonu nesnesi etkin kullanılan bir ön eki uzunluğu dize). `BSTR` Nesne genellikle saklanmış olduğu içinde **değişken** veri türü. MFC sınıfı `COleVariant` kendisini devraldığı **değişken** veri türü. Olup ANSI veya Unicode için projenizi bağlı olarak, ANSI veya Unicode DAO arabirimleri döndüreceği `BSTR`s. DAO arabirimi sağlayan alır için V_BSTR ve V_BSTRT, iki makro yararlı `BSTR` beklenen türde.
+DAO arabirimlerinin birçok yöntemi için, bir `BSTR` nesneyi (OLE Otomasyonu 'nda kullanılan length-önekli dize) değiştirmeniz gerekecektir. Nesnesi genellikle değişken veri türü içinde kapsüllenir. `BSTR` MFC sınıfının `COleVariant` kendisi **değişken** veri türünden devralır. Projenizi ANSI veya Unicode için oluşturup yapılandırdığınıza bağlı olarak, DAO arabirimleri ANSI veya Unicode `BSTR`s döndürür. İki makro, V_BSTR ve V_BSTRT, DAO arabiriminin beklenen türden `BSTR` birini aldığından emin olmak için yararlıdır.
 
-V_BSTR ayıklamak *bstrVal* üyesi bir `COleVariant`. İçeriği geçirmeniz gerektiğinde bu makroyu genellikle kullanılan bir `COleVariant` DAO arabirim yöntemi için. Aşağıdaki kod parçası, bildirimler ve gerçek kullanım için V_BSTR makrosu yararlanan iki DAO DAOUser arabirimin yöntemlerini gösterir:
+V_BSTR, öğesinin `COleVariant` *bstrVal* üyesini ayıklar. Bu makro genellikle bir DAO arabiriminin bir yöntemine bir `COleVariant` öğesine geçiş yapmanız gerektiğinde kullanılır. Aşağıdaki kod parçası, V_BSTR makrodan faydalanan DAO DAOUser arabiriminin iki yöntemi için bildirimleri ve gerçek kullanımı gösterir:
 
 ```cpp
 COleVariant varOldName;
 COleVariant varNewName(_T("NewUser"), VT_BSTRT);
 
-// Code to assign pUser to a valid value omitted
-DAOUser *pUser = NULL;
+// Code to assign pUser to a valid value omitted DAO 3.6 is the final version and it is considered obsolete.User *pUser = NULL;
 
 // These method declarations were taken from DBDAOINT.H
 // STDMETHOD(get_Name) (THIS_ BSTR FAR* pbstr) PURE;
 // STDMETHOD(put_Name) (THIS_ BSTR bstr) PURE;
-
-DAO_CHECK(pUser->get_Name(&V_BSTR (&varOldName)));
-DAO_CHECK(pUser->put_Name(V_BSTR (&varNewName)));
+DAO 3.6 is the final version and it is considered obsolete._CHECK(pUser->get_Name(&V_BSTR (&varOldName))); DAO 3.6 is the final version and it is considered obsolete._CHECK(pUser->put_Name(V_BSTR (&varNewName)));
 ```
 
-Unutmayın `VT_BSTRT` belirtilen bağımsız değişken `COleVariant` Oluşturucusu yukarıdaki sağlar bir ANSI olacaktır `BSTR` içinde `COleVariant` uygulamanız ve bir Unicode ANSI sürümü'derleme `BSTR` Unicode sürümü Uygulamanızı. DAO neleri bekliyor budur.
+`BSTR` `BSTR` `COleVariant` Yukarıdaki oluşturucuda belirtilen `VT_BSTRT` `COleVariant` bağımsız değişkenin, uygulamanız için bir ANSI sürümü ve bir Unicode sürümü için Unicode sürümü oluşturuyorsanız içinde bir ANSI olacağını unutmayın. uygulamanız. Bu, DAO 'nun beklediği şeydir.
 
-Diğer makro V_BSTRT, ANSI veya Unicode ayıklayacaktır *bstrVal* üyesi `COleVariant` (ANSI veya Unicode) yapı türüne bağlıdır. Aşağıdaki kod nasıl ayıklanacağını gösterir `BSTR` değerini bir `COleVariant` içine bir `CString`:
+Diğer makro olan `COleVariant` V_BSTRT, derleme türüne (ANSI veya Unicode) bağlı olarak bir ANSI veya Unicode *bstrVal* üyesini ayıklar. Aşağıdaki kod, ' `BSTR` `COleVariant` dan `CString`' a değerin ' a nasıl ayıklanacağını göstermektedir.
 
 ```cpp
 COleVariant varName(_T("MyName"), VT_BSTRT);
 CString str = V_BSTRT(&varName);
 ```
 
-Depolanan diğer türleri açmak için diğer tekniklerle birlikte V_BSTRT makrosu `COleVariant`, DAOVIEW örnekte gösterilmiştir. Bu çeviri özellikle gerçekleştirilir `CCrack::strVARIANT` yöntemi. Mümkünse, bu yöntem değeri çevirir bir `COleVariant` örneği `CString`.
+V_bstrt makrosu, içinde `COleVariant`depolanan diğer türleri açmaya yönelik diğer tekniklerle birlikte DAOVIEW örneğinde gösterilmiştir. Özellikle, bu çeviri `CCrack::strVARIANT` yönteminde gerçekleştirilir. Mümkün olduğunda bu yöntem değerini bir `COleVariant` `CString`örneğine çevirir.
 
-## <a name="simple-example-of-a-direct-call-to-dao"></a>DAO doğrudan çağrı basit örneği
+## <a name="simple-example-of-a-direct-call-to-dao"></a>DAO 'ya doğrudan çağrının basit örneği
 
-Temel alınan DAO koleksiyon nesnelerini yenilemek gerekli olduğunda durumlarda ortaya çıkabilir. Genellikle bu gerekli olmaz, ancak gerekirse, bir basit bir yordamdır. Ne zaman bir toplama yenilenmesi gerekebilir, çok kullanıcılı bir ortamda birden çok kullanıcının bulunduğu yeni tabledefs oluşturmaya çalışırken örneğidir. Bu durumda, tabledefs koleksiyonu eski hale gelebilir. Koleksiyon yenilemek için çağrı yeterlidir `Refresh` hatalar için belirli bir koleksiyon nesnesi ve onay yöntemi:
+Temel alınan DAO koleksiyon nesnelerinin yenilenmesi gerektiğinde durumlar ortaya çıkabilir. Normalde, bu gerekli değildir, ancak gerekirse basit bir yordamdır. Bir koleksiyonun yenilenmesi gerekebilen bir örnek, birden çok kullanıcı yeni TableDefs oluşturma ile çok kullanıcılı bir ortamda çalışırken. Bu durumda, TableDefs koleksiyonunuz eski hale gelebilir. Koleksiyonu yenilemek için, yalnızca belirli bir koleksiyon nesnesinin `Refresh` yöntemini çağırmanız ve hataları kontrol etmeniz gerekir:
 
-```cpp
-DAO_CHECK(pMyDaoDatabase->m_pDAOTableDefs->Refresh());
+```cpp DAO 3.6 is the final version and it is considered obsolete._CHECK(pMyDaoDatabase->m_pDAOTableDefs->Refresh());
 ```
 
-Şu anda tüm DAO koleksiyon nesnesi arabirimleri MFC DAO veritabanı sınıfları belgelenmemiş uygulama ayrıntılarını olduğunu unutmayın.
+Şu anda tüm DAO koleksiyon nesne arabirimlerinin, MFC DAO veritabanı sınıflarının belgelenmemiş uygulama ayrıntıları olduğunu unutmayın.
 
-## <a name="using-dao-directly-for-dao-security-features"></a>DAO kullanarak doğrudan DAO güvenlik özellikleri
+## <a name="using-dao-directly-for-dao-security-features"></a>DAO güvenlik özellikleri için doğrudan DAO kullanma
 
-MFC DAO veritabanı sınıfları DAO güvenlik özellikleri kaydırılacak. Bazı DAO güvenlik özelliklerini kullanmayı DAO arabirimin yöntemlerini çağırmanız gerekir. Aşağıdaki işlev sistem veritabanı ayarlar ve ardından kullanıcının parolasını değiştirir. Bu işlev, sonradan tanımlanan üç diğer işlevleri çağırır.
+MFC DAO veritabanı sınıfları, DAO güvenlik özelliklerini sarmaz. Bazı DAO güvenlik özelliklerini kullanmak için DAO arabirimlerinin yöntemlerini çağırmanız gerekir. Aşağıdaki işlev sistem veritabanını ayarlar ve sonra kullanıcının parolasını değiştirir. Bu işlev, daha sonra tanımlanan üç diğer işlevi çağırır.
 
 ```cpp
 void ChangeUserPassword()
@@ -133,19 +129,19 @@ void ChangeUserPassword()
 }
 ```
 
-Sonraki dört örnekler göstermektedir nasıl yapılır:
+Sonraki dört örnekte nasıl yapılacağı gösterilmektedir:
 
-- Sistem DAO veritabanı kümesi (. MDW dosyası).
+- Sistem DAO veritabanını ayarlayın (. MDW dosyası).
 
-- Varsayılan kullanıcı adı ve parola ayarlayın.
+- Varsayılan Kullanıcı ve parolayı ayarlayın.
 
-- Bir kullanıcı parolasını değiştirin.
+- Kullanıcının parolasını değiştirin.
 
-- Parolasını değiştirmek bir. Dosyayı MDB.
+- Parolasını değiştirin. MDB dosyası.
 
-### <a name="setting-the-system-database"></a>Sistem veritabanı ayarlama
+### <a name="setting-the-system-database"></a>Sistem veritabanını ayarlama
 
-Bir uygulama tarafından kullanılan sistem veritabanı ayarlamak için bir örnek işlevi aşağıdadır. Bu işlev, diğer DAO çağrı yapılmadan önce çağrılmalıdır.
+Bir uygulama tarafından kullanılacak sistem veritabanını ayarlamak için örnek bir işlev aşağıda verilmiştir. Diğer herhangi bir DAO çağrısı yapılmadan önce bu işlevin çağrılması gerekir.
 
 ```cpp
 // Set the system database that the
@@ -166,9 +162,9 @@ void SetSystemDB(CString& strSystemMDB)
 }
 ```
 
-### <a name="setting-the-default-user-and-password"></a>Varsayılan kullanıcı adı ve parola ayarlama
+### <a name="setting-the-default-user-and-password"></a>Varsayılan Kullanıcı ve Parolayı ayarlama
 
-Varsayılan kullanıcı ve bir sistem veritabanı parolasını ayarlamak için aşağıdaki işlevi kullanın:
+Bir sistem veritabanının varsayılan kullanıcı ve parolasını ayarlamak için aşağıdaki işlevi kullanın:
 
 ```cpp
 void SetDefaultUser(CString& strUserName,
@@ -188,7 +184,7 @@ void SetDefaultUser(CString& strUserName,
 }
 ```
 
-### <a name="changing-a-users-password"></a>Bir kullanıcının parolasını değiştirme
+### <a name="changing-a-users-password"></a>Kullanıcının parolasını değiştirme
 
 Bir kullanıcının parolasını değiştirmek için aşağıdaki işlevi kullanın:
 
@@ -254,9 +250,9 @@ void ChangePassword(CString &strUserName,
 }
 ```
 
-### <a name="changing-the-password-of-an-mdb-file"></a>Parolasını değiştirme bir. Dosyayı MDB
+### <a name="changing-the-password-of-an-mdb-file"></a>Parolasını değiştirme. MDB dosyası
 
-Parolasını değiştirmek için bir. MDB dosyasında, aşağıdaki işlevini kullanın:
+Parolasını değiştirmek için. MDB dosyası, aşağıdaki işlevi kullanın:
 
 ```cpp
 void SetDBPassword(LPCTSTR pDB,

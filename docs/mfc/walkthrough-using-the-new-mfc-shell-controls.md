@@ -4,12 +4,12 @@ ms.date: 04/25/2019
 helpviewer_keywords:
 - shell controls (MFC)
 ms.assetid: f0015caa-199d-4aaf-9501-5a239fce9095
-ms.openlocfilehash: cf0a6bd230364b48c78c72b8e453e7e641fb2d0e
-ms.sourcegitcommit: 3caf5261b3ea80d9cf14038c116ba981d655cd13
+ms.openlocfilehash: e371368d4e588de5f94f6a252c6db291ec851e0a
+ms.sourcegitcommit: 2f96e2fda591d7b1b28842b2ea24e6297bcc3622
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70907401"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71096012"
 ---
 # <a name="walkthrough-using-the-new-mfc-shell-controls"></a>İzlenecek yol: Yeni MFC kabuk denetimlerini kullanma
 
@@ -31,14 +31,14 @@ Bu adımlar, kullandığınız Visual Studio sürümüne bağlı olarak farklıl
 
 1. **Yeni proje oluştur** iletişim kutusunu açmak için ana menüden **Dosya** > **Yeni** > **Proje** ' yi seçin.
 
-1. Üstteki arama kutusuna **MFC** yazın ve ardından sonuçlar listesinden **MFC uygulaması** ' nı seçin. 
+1. Üstteki arama kutusuna **MFC** yazın ve ardından sonuçlar listesinden **MFC uygulaması** ' nı seçin.
 
 1. **İleri**'ye tıklayın. Sonraki sayfada, proje için bir ad girin ve isterseniz proje konumunu belirtin.
 
 1. Projeyi oluşturmak için **Oluştur** düğmesini seçin.
 
    **MFC Uygulama Sihirbazı** görüntülendikten sonra, aşağıdaki seçenekleri kullanın:
- 
+
    1. Sol tarafta **uygulama türü** ' nu seçin. Sonra **tek belge** ' yi seçin ve **belge/görünüm mimarisi desteği**' ni seçin. **Proje stili**altında, **Visual Studio**' yı seçin ve **görsel stil ve renkler** açılan listesinden **Office 2007 (mavi tema)** seçeneğini belirleyin.
 
    1. **Birleşik belge desteği** bölmesinde **hiçbiri**' ni seçin.
@@ -59,7 +59,7 @@ Bu adımlar, kullandığınız Visual Studio sürümüne bağlı olarak farklıl
 
 1. **MFC Uygulama Sihirbazı 'nı** kullanarak yenı bir MFC uygulaması oluşturun. Sihirbazı çalıştırmak için, **Dosya** menüsünden **Yeni**' yi seçin ve ardından **Proje**' yi seçin. **Yeni proje** iletişim kutusu görüntülenir.
 
-1. **Yeni proje** iletişim kutusunda, **Proje türleri** bölmesinde  **C++ görsel** düğümünü genişletin ve **MFC**' yi seçin. Ardından, **Şablonlar** bölmesinde **MFC uygulaması**' nı seçin. Proje için bir ad yazın (gibi `MFCShellControls` ) ve **Tamam**' a tıklayın. 
+1. **Yeni proje** iletişim kutusunda, **Proje türleri** bölmesinde  **C++ görsel** düğümünü genişletin ve **MFC**' yi seçin. Ardından, **Şablonlar** bölmesinde **MFC uygulaması**' nı seçin. Proje için bir ad yazın (gibi `MFCShellControls` ) ve **Tamam**' a tıklayın.
 
    **MFC Uygulama Sihirbazı** görüntülendikten sonra, aşağıdaki seçenekleri kullanın:
 

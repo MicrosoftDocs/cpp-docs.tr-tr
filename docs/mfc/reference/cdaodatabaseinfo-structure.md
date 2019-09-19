@@ -1,22 +1,23 @@
 ---
 title: CDaoDatabaseInfo Yapısı
-ms.date: 11/04/2016
+ms.date: 09/17/2019
 f1_keywords:
 - CDaoDatabaseInfo
 helpviewer_keywords:
 - CDaoDatabaseInfo structure [MFC]
 - DAO (Data Access Objects), Databases collection
 ms.assetid: 68e9e0da-8382-4fc6-8115-1b1519392ddb
-ms.openlocfilehash: 920301af6f660aeac010ecbf844b80ea628bbfd7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 46d8056ee4ab478b65f3ef0bd59d88bd3af9b28c
+ms.sourcegitcommit: 2f96e2fda591d7b1b28842b2ea24e6297bcc3622
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62405774"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71096151"
 ---
 # <a name="cdaodatabaseinfo-structure"></a>CDaoDatabaseInfo Yapısı
 
-`CDaoDatabaseInfo` Yapısı için veri erişim nesneleri (DAO) tanımlanmış bir veritabanı nesnesi hakkında bilgiler içerir.
+Yapı `CDaoDatabaseInfo` , veri erişim nesneleri (DAO) için tanımlanan bir veritabanı nesnesi hakkında bilgiler içerir.
+DAO 3,6 son sürümdür ve artık kullanılmıyor olarak kabul edilir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -36,73 +37,73 @@ struct CDaoDatabaseInfo
 #### <a name="parameters"></a>Parametreler
 
 *m_strName*<br/>
-Veritabanı nesnesi benzersiz olarak adlandırır. Bu özellik doğrudan almak için arama [CDaoDatabase::GetName](../../mfc/reference/cdaodatabase-class.md#getname). Ayrıntılar için "Name özelliği" DAO Yardım konusuna bakın.
+Veritabanı nesnesini benzersiz olarak adlandırır. Bu özelliği doğrudan almak için, [CDaoDatabase:: GetName](../../mfc/reference/cdaodatabase-class.md#getname)' i çağırın. Ayrıntılar için, DAO yardımı 'nda "ad özelliği" konusuna bakın.
 
 *m_bUpdatable*<br/>
-Değişiklikler veritabanına yapılan olup olmadığını gösterir. Bu özellik doğrudan almak için arama [CDaoDatabase::CanUpdate](../../mfc/reference/cdaodatabase-class.md#canupdate). Ayrıntılar için DAO Yardımı'nda "güncelleştirilebilir özelliği" konusuna bakın.
+Veritabanında değişiklik yapılıp yapılmadığını belirtir. Bu özelliği doğrudan almak için, [CDaoDatabase:: CanUpdate](../../mfc/reference/cdaodatabase-class.md#canupdate)çağırın. Ayrıntılar için, DAO yardımı 'nda "güncelleştirilebilir özellik" konusuna bakın.
 
 *m_bTransactions*<br/>
-Bir veri kaynağı işlemleri destekleyip desteklemediğini belirten — daha sonra geri alınabilir değişiklikler dizisini kaydını (iptal edildi) veya kaydedilmiş (kaydedilir). Bir veritabanı Microsoft Jet veritabanı altyapısını temel alıyorsa, işlem sıfır olmayan bir özelliktir ve işlemleri kullanabilirsiniz. Diğer veritabanı altyapıları işlemleri desteklemiyor olabilir. Bu özellik doğrudan almak için arama [CDaoDatabase::CanTransact](../../mfc/reference/cdaodatabase-class.md#cantransact). Ayrıntılar için DAO Yardımı'nda "işlemleri özelliği" konusuna bakın.
+Bir veri kaynağının işlemleri destekleyip desteklemediğini belirtir — daha sonra geri alınacak (iptal edilen) veya kaydedilmiş (kaydedilmiş) bir dizi değişikliğin kaydı. Bir veritabanı Microsoft Jet veritabanı altyapısını temel alıyorsa, Işlemler özelliği sıfır değildir ve işlemleri kullanabilirsiniz. Diğer veritabanı motorları işlemleri desteklemiyor olabilir. Bu özelliği doğrudan almak için, [CDaoDatabase:: CanTransact](../../mfc/reference/cdaodatabase-class.md#cantransact)öğesini çağırın. Ayrıntılar için, DAO yardımı 'nda "Işlemler özelliği" konusuna bakın.
 
 *m_strVersion*<br/>
-Microsoft Jet veritabanı altyapısı sürümünü gösterir. Doğrudan bu özelliğin değerini almak için veritabanı nesnesinin çağrı [GetVersion](../../mfc/reference/cdaodatabase-class.md#getversion) üye işlevi. Ayrıntılar için DAO Yardımı'nda "Version özelliği" konusuna bakın.
+Microsoft Jet veritabanı altyapısının sürümünü gösterir. Bu özelliğin değerini doğrudan almak için, veritabanı nesnesinin [GetVersion](../../mfc/reference/cdaodatabase-class.md#getversion) üye işlevini çağırın. Ayrıntılar için, DAO yardımı 'nda "sürüm özelliği" konusuna bakın.
 
 *m_lCollatingOrder*<br/>
-Dize karşılaştırma ve sıralama için metin sıralama düzeni dizisini belirtir. Olası değerler şunlardır:
+Dize karşılaştırma veya sıralama için metin olarak sıralama düzeni sırasını belirtir. Olası değerler şunlardır:
 
-- `dbSortGeneral` Genel (İngilizce, Fransızca, Almanca, Portekizce, İtalyanca ve Modern İspanyolca) sıralama düzeni kullanın.
+- `dbSortGeneral`Genel (Ingilizce, Fransızca, Almanca, Portekizce, Italyanca ve modern Ispanyolca) sıralama sırasını kullanın.
 
-- `dbSortArabic` Arapça sıralama düzenini kullanın.
+- `dbSortArabic`Arapça sıralama düzenini kullanın.
 
-- `dbSortCyrillic` Rusça sıralama düzenini kullanın.
+- `dbSortCyrillic`Rusça sıralama sırasını kullanın.
 
-- `dbSortCzech` Çekçe sıralama düzenini kullanın.
+- `dbSortCzech`Çek sıralama sırasını kullanın.
 
-- `dbSortDutch` Felemenkçe sıralama düzenini kullanın.
+- `dbSortDutch`Felemenkçe sıralama sırasını kullanın.
 
-- `dbSortGreek` Yunanca sıralama düzenini kullanın.
+- `dbSortGreek`Yunan sıralama sırasını kullanın.
 
-- `dbSortHebrew` İbranice sıralama düzenini kullanın.
+- `dbSortHebrew`Ibranice sıralama sırasını kullanın.
 
-- `dbSortHungarian` Macarca sıralama düzenini kullanın.
+- `dbSortHungarian`Macarca sıralama sırasını kullanın.
 
-- `dbSortIcelandic` İzlanda sıralama düzenini kullanın.
+- `dbSortIcelandic`Izlanda sıralama sırasını kullanın.
 
-- `dbSortNorwdan` Norveççe veya Danca sıralama düzenini kullanın.
+- `dbSortNorwdan`Norveççe veya Danca sıralama sırasını kullanın.
 
-- `dbSortPDXIntl` Paradox Uluslararası sıralama düzenini kullanın.
+- `dbSortPDXIntl`Paradox Uluslararası sıralama sırasını kullanın.
 
-- `dbSortPDXNor` Norveççe Paradox veya Danca sıralama düzeni kullanın.
+- `dbSortPDXNor`Paradox Norveççe veya Danca sıralama sırasını kullanın.
 
-- `dbSortPDXSwe` Paradox İsveççe veya Fince sıralama düzeni kullanın.
+- `dbSortPDXSwe`Paradox Isveççe veya Fince sıralama sırasını kullanın.
 
-- `dbSortPolish` Lehçe sıralama düzenini kullanın.
+- `dbSortPolish`Lehçe sıralama sırasını kullanın.
 
-- `dbSortSpanish` İspanyolca sıralama düzenini kullanın.
+- `dbSortSpanish`Ispanyolca sıralama sırasını kullanın.
 
-- `dbSortSwedFin` İsveç dili veya Fince sıralama düzenini kullanın.
+- `dbSortSwedFin`Isveççe veya Fince sıralama sırasını kullanın.
 
-- `dbSortTurkish` Türkçe sıralama düzenini kullanın.
+- `dbSortTurkish`Türkçe sıralama sırasını kullanın.
 
-- `dbSortUndefined` Sıralama düzenini tanımsız veya bilinmeyen.
+- `dbSortUndefined`Sıralama düzeni tanımsız veya bilinmiyor.
 
-Daha fazla bilgi için "Özelleştirme Windows kayıt defteri ayarları için veri erişim" DAO Yardım konusuna bakın.
+Daha fazla bilgi için, DAO yardımı 'nda "veri erişimi için Windows kayıt defteri ayarlarını özelleştirme" konusuna bakın.
 
 *m_nQueryTimeout*<br/>
-Microsoft Jet veritabanı altyapısı bir zaman aşımı hatası önce bekleyeceği saniye sayısını bir ODBC veritabanı üzerinde bir sorgu çalıştırıldığında gerçekleşir. Varsayılan zaman aşımı değer 60 saniyedir. QueryTimeout 0 olarak ayarlandığında, hiçbir zaman aşımı oluşur; Bu programın yanıt vermeyi durdurmasına neden olabilir. Doğrudan bu özelliğin değerini almak için veritabanı nesnesinin çağrı [GetQueryTimeout](../../mfc/reference/cdaodatabase-class.md#getquerytimeout) üye işlevi. Ayrıntılar için DAO Yardımı'nda "QueryTimeout özelliği" konusuna bakın.
+ODBC veritabanında bir sorgu çalıştırıldığında, bir zaman aşımı hatası oluştuktan önce Microsoft Jet veritabanı altyapısının bekleyeceği saniye sayısı. Varsayılan zaman aşımı değeri 60 saniyedir. QueryTimeout değeri 0 olarak ayarlandığında zaman aşımı oluşmaz; Bu, programın yanıt vermemesine neden olabilir. Bu özelliğin değerini doğrudan almak için veritabanı nesnesinin [GetQueryTimeout](../../mfc/reference/cdaodatabase-class.md#getquerytimeout) üye işlevini çağırın. Ayrıntılar için, DAO yardımı 'nda "QueryTimeout özelliği" konusuna bakın.
 
 *m_strConnect*<br/>
-Açık bir veritabanının kaynak hakkında bilgi sağlar. Bilgi dizeleri hakkında bağlanın ve doğrudan bu özelliğin değerini alma hakkında daha fazla bilgi için bkz [CDaoDatabase::GetConnect](../../mfc/reference/cdaodatabase-class.md#getconnect) üye işlevi. Daha fazla bilgi için DAO Yardımı'nda "özelliği Bağlan" konusuna bakın.
+Açık bir veritabanının kaynağı hakkında bilgi sağlar. Bağlantı dizeleri hakkında daha fazla bilgi için ve bu özelliğin değerini doğrudan alma hakkında bilgi için, bkz. [CDaoDatabase:: GetConnect](../../mfc/reference/cdaodatabase-class.md#getconnect) member işlevi. Daha fazla bilgi için, DAO yardımı 'nda "bağlama özelliği" konusuna bakın.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Veritabanı bir MFC nesne sınıfı, temel alınan bir DAO nesnedir [CDaoDatabase](../../mfc/reference/cdaodatabase-class.md). Birincil, ikincil ve yukarıdaki tüm başvuruları nasıl bilgileri tarafından döndürülen belirtmek [CDaoWorkspace::GetDatabaseInfo](../../mfc/reference/cdaoworkspace-class.md#getdatabaseinfo) üye işlevi.
+Veritabanı, [CDaoDatabase](../../mfc/reference/cdaodatabase-class.md)sınıfının MFC nesnesini temel alan bir DAO nesnesidir. Yukarıdaki birincil, Ikincil ve tüm başvurular, bilgilerin [CDaoWorkspace:: GetDatabaseInfo](../../mfc/reference/cdaoworkspace-class.md#getdatabaseinfo) üye işlevi tarafından nasıl döndürüleceğini gösterir.
 
-Tarafından alınan bilgileri [CDaoWorkspace::GetDatabaseInfo](../../mfc/reference/cdaoworkspace-class.md#getdatabaseinfo) üye işlevi depolanan bir `CDaoDatabaseInfo` yapısı. Çağrı `GetDatabaseInfo` için `CDaoWorkspace` veritabanı nesnesi olan veritabanları koleksiyonda depolanan nesne. `CDaoDatabaseInfo` Ayrıca tanımlayan bir `Dump` hata ayıklama üye işlevinde oluşturur. Kullanabileceğiniz `Dump` içeriğini dökümünü almak için bir `CDaoDatabaseInfo` nesne.
+[CDaoWorkspace:: GetDatabaseInfo](../../mfc/reference/cdaoworkspace-class.md#getdatabaseinfo) üye işlevi tarafından alınan bilgiler bir `CDaoDatabaseInfo` yapıda depolanıyor. Veritabanları `GetDatabaseInfo` koleksiyonundaki veritabanı `CDaoWorkspace` nesnesinin depolandığı nesne için çağrı. `CDaoDatabaseInfo`Ayrıca, hata `Dump` ayıklama yapılarında bir üye işlevi tanımlar. `Dump` Bir`CDaoDatabaseInfo` nesnenin içeriğini dökmek için kullanabilirsiniz.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxdao.h
+**Üstbilgi:** afxdao. h
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,6 +1,6 @@
 ---
 title: Framework (MFC)
-ms.date: 11/04/2016
+ms.date: 09/17/2019
 helpviewer_keywords:
 - encapsulation [MFC], Win32 API
 - MFC, application framework
@@ -12,20 +12,20 @@ helpviewer_keywords:
 - Windows API [MFC], encapsulation by MFC
 - encapsulated Win32 API [MFC]
 ms.assetid: 3be0fec8-9843-4119-ae42-ece993ef500b
-ms.openlocfilehash: 933fcf97c24ed0903395e2c718f8c89d42473494
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d93d2d50bab4b63258a3e0fe4cd2f24c2fcde4f3
+ms.sourcegitcommit: 2f96e2fda591d7b1b28842b2ea24e6297bcc3622
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62219775"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71095795"
 ---
 # <a name="framework-mfc"></a>Framework (MFC)
 
-Microsoft Foundation Class (MFC) kitaplığı framework ile işinizi büyük ölçüde birkaç önemli sınıflarını ve çeşitli Visual C++ Araçları temel alır. Bazı sınıfları Win32 uygulama programlama arabirimi (API) büyük bir kısmı kapsüller. Diğer sınıfları, belgeler, görünümler ve uygulama gibi uygulama kavramlarını kapsüller. Yine de diğer OLE özellikleri ve ODBC ve DAO veri erişim işlevselliğini kapsüller.
+Microsoft Foundation Class (MFC) kitaplığı çerçevesiyle çalışmanız, büyük ölçüde birkaç önemli sınıfa ve çeşitli görsel C++ araçlara dayalıdır. Bazı sınıflar, Win32 uygulama programlama arabiriminin (API) büyük bir bölümünü kapsüllenir. Diğer sınıflar, belgeler, görünümler ve uygulamanın kendisi gibi uygulama kavramlarını kapsüllemez. Hala diğerleri OLE özelliklerini ve ODBC ve DAO veri erişimi işlevselliğini Kapsüller.  (DAO, Office 2013 aracılığıyla desteklenir. DAO 3,6 son sürümdür ve artık kullanılmıyor olarak kabul edilir.)
 
-MFC sınıfı tarafından Win32'ın kavramı penceresi, örneğin, kapsüllenir `CWnd`. Diğer bir deyişle, bir C++ sınıfı olarak adlandırılan `CWnd` kapsülleyen ya da "sarmaladığı" `HWND` Windows penceresini temsil eden bir işleyici. Benzer şekilde, sınıf `CDialog` Win32 iletişim kutuları kapsüller.
+Örneğin, pencere Win32's kavramı MFC sınıfıyla `CWnd`kapsüllenir. Diğer bir deyişle, C++ bir Windows `CWnd` penceresini temsil eden `HWND` tutamacı Kapsüller veya "sarmalanmış" olarak adlandırılan bir sınıf. Benzer şekilde, `CDialog` sınıf Win32 iletişim kutularını kapsüller.
 
-Kapsülleme anlamına C++ sınıfı `CWnd`, örneğin, bir üye değişkeni türü içeren `HWND`, ve bu çağrıları alan Win32 işlevlerine sınıfın üye işlevleri kapsülleyen bir `HWND` bir parametre olarak. Sınıf üyesi işlevleri, genellikle bunlar kapsülleyen Win32 işlevini aynı ada sahip.
+Kapsülleme, C++ sınıfının `CWnd`, örneğin türünde bir üye değişkeni içerdiği ve sınıfın üye işlevlerinin parametre `HWND`olarak bir `HWND` değeri olan Win32 işlevlerine çağrıları kapsülleyen anlamına gelir. Sınıf üyesi işlevleri genellikle kapsülledikleri Win32 işleviyle aynı ada sahiptir.
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
@@ -35,15 +35,15 @@ Kapsülleme anlamına C++ sınıfı `CWnd`, örneğin, bir üye değişkeni tür
 
 [Sihirbazlar ve kaynak düzenleyicileri](../mfc/wizards-and-the-resource-editors.md)
 
-## <a name="in-related-sections"></a>İçinde ilgili bölümler
+## <a name="in-related-sections"></a>Ilgili bölümlerde
 
 [Framework'te Derleme](../mfc/building-on-the-framework.md)
 
 [Framework'ün Kodunuzu Çağırması](../mfc/how-the-framework-calls-your-code.md)
 
-[CWinApp: Uygulama sınıfı](../mfc/cwinapp-the-application-class.md)
+[CWinApp: Uygulama Sınıfı](../mfc/cwinapp-the-application-class.md)
 
-[Belge şablonları ve belge/görünüm oluşturma işlemi](../mfc/document-templates-and-the-document-view-creation-process.md)
+[Belge şablonları ve belge/görünüm oluşturma Işlemi](../mfc/document-templates-and-the-document-view-creation-process.md)
 
 [İleti İşleme ve Eşleme](../mfc/message-handling-and-mapping.md)
 

@@ -1,6 +1,6 @@
 ---
-title: 'TN055: Geçirme MFC ODBC veritabanı sınıfı uygulamalarını MFC DAO sınıflarına'
-ms.date: 06/20/2018
+title: 'TN055: MFC ODBC veritabanı sınıfı uygulamalarını MFC DAO sınıflarına geçirme'
+ms.date: 09/17/2019
 helpviewer_keywords:
 - DAO [MFC], migration
 - TN055
@@ -12,55 +12,55 @@ helpviewer_keywords:
 - porting ODBC database applications to DAO
 - migrating database applications [MFC]
 ms.assetid: 0f858bd1-e168-4e2e-bcd1-8debd82856e4
-ms.openlocfilehash: 7a1d3436a9b19c40df2a08576d797de49833f14f
-ms.sourcegitcommit: 934cb53fa4cb59fea611bfeb9db110d8d6f7d165
+ms.openlocfilehash: 7107964cc894a0aa45be5de362c9edd166dc0af1
+ms.sourcegitcommit: 2f96e2fda591d7b1b28842b2ea24e6297bcc3622
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65611240"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71095967"
 ---
-# <a name="tn055-migrating-mfc-odbc-database-class-applications-to-mfc-dao-classes"></a>TN055: Geçirme MFC ODBC veritabanı sınıfı uygulamalarını MFC DAO sınıflarına
+# <a name="tn055-migrating-mfc-odbc-database-class-applications-to-mfc-dao-classes"></a>TN055: MFC ODBC veritabanı sınıfı uygulamalarını MFC DAO sınıflarına geçirme
 
 > [!NOTE]
-> Sihirbazlar ve Visual C++ ortamına DAO (DAO sınıflarına eklenmiştir ve bunları kullanmaya devam edebilirsiniz ancak) desteklemez. Microsoft, kullanmanızı önerir [OLE DB Şablonları](../data/oledb/ole-db-templates.md) veya [ODBC ve MFC](../data/odbc/odbc-and-mfc.md) yeni projeler için. Yalnızca var olan uygulamaları sürdürmek DAO kullanmanız gerekir.
+> DAO, Access veritabanları ile birlikte kullanılır ve Office 2013 aracılığıyla desteklenir. 3,6 son sürümdür ve artık kullanılmıyor olarak kabul edilir. Visual C++ ortamı ve sihirbazları DAO 'yu desteklemez (DAO sınıfları dahil edilir ancak yine de kullanabilirsiniz). Microsoft, yeni projeler için [OLE DB şablonlarını](../data/oledb/ole-db-templates.md) veya [ODBC 'yi ve MFC 'yi](../data/odbc/odbc-and-mfc.md) kullanmanızı önerir. Yalnızca var olan uygulamaları korumak için DAO kullanmanız gerekir.
 
 ## <a name="overview"></a>Genel Bakış
 
-Çoğu durumda MFC ODBC veritabanı sınıfları MFC'nin DAO veritabanı sınıfları için kullanan uygulamaları geçirmek için istenebilir. Bu teknik Not MFC ODBC ve DAO sınıfları arasındaki farklar çoğunu ayrıntılarını verir. Aklınızda farklarla ODBC sınıflardan MFC sınıfları için isterseniz uygulamaları geçirmek aşırı zor olmamalıdır.
+Çoğu durumda, MFC 'nin ODBC veritabanı sınıflarını kullanan uygulamaların, MFC 'nin DAO veritabanı sınıflarına geçirilmesi istenebilir. Bu teknik notta, MFC ODBC ve DAO sınıfları arasındaki farklılıkların çoğu ayrıntılandıralınacaktır. Farklar göz önünde bulundurularak, ODBC sınıflarından uygulamaları istenirse MFC sınıflarına geçirmek aşırı zor olmamalıdır.
 
-## <a name="why-migrate-from-odbc-to-dao"></a>ODBC'den DAO'ya neden geçirme
+## <a name="why-migrate-from-odbc-to-dao"></a>Neden ODBC 'den DAO 'ya geçiş
 
-Pek çok neden DAO veritabanı sınıfları için ODBC veritabanı sınıflarından uygulamaları geçirmek isteyebileceğiniz, ancak kararı mutlaka basit ya da belirgin değil vardır. Akılda tutulması gereken bir şey DAO tarafından kullanılan Microsoft Jet veritabanı altyapısı erişebileceği herhangi bir ODBC veri kaynağı bir ODBC sürücüsüne sahip okunur. ODBC veritabanı sınıfları kullanın veya kendiniz ancak Microsoft Jet veritabanı altyapısı, ODBC veri okuyabilirsiniz doğrudan ODBC arama daha verimli olabilir.
+ODBC veritabanı sınıflarından uygulamaları DAO veritabanı sınıflarına geçirmek isteyebileceğiniz birçok neden vardır, ancak karar basit veya belirgin değildir. Göz önünde bulundurmanız gereken tek şey, DAO tarafından kullanılan Microsoft Jet veritabanı altyapısının, ODBC sürücünüze sahip olduğunuz herhangi bir ODBC veri kaynağını okuyabileceği bir şeydir. ODBC veritabanı sınıflarını kullanmak veya ODBC 'yi doğrudan kendiniz çağırmak daha verimli olabilir, ancak Microsoft Jet veritabanı altyapısı ODBC verilerini okuyabilir.
 
-ODBC/DAO kararı kolaylaştırmak bazı basit durumlar. Örneğin, yalnızca verilere (erişim biçimi, Excel biçiminde ve benzeri) belirgin seçim DAO veritabanı sınıfları kullanmaktır doğrudan Microsoft Jet motoru okuyabilen bir biçimde erişim gerektiğinde.
+ODBC/DAO kararını kolay hale getirmek için bazı basit durumlar. Örneğin, yalnızca Microsoft Jet motorunun doğrudan okuyabilmesini sağlayan bir biçimde verilere erişmeniz gerektiğinde (erişim biçimi, Excel biçimi vb.), DAO veritabanı sınıflarını kullanmak da açıktır.
 
-Daha karmaşık durumlarda, bir sunucuda veya farklı sunuculara çeşitli verilerinizi mevcut olduğunda ortaya çıkar. Bu durumda, ODBC veritabanı sınıfları veya DAO veritabanı sınıfları karar zor bir bilgisayardır. İsterseniz heterojen birleşimler (SQL Server ve Oracle gibi çoklu biçimlerde sunuculardan verileri birleştirme) gibi şeyler yapın ve ardından Microsoft Jet veritabanı altyapısı, yerine için ODBC veritabanı kullanıyorsanız gerekli iş yapmak zorunda birleşim gerçekleştirir Sınıflar ya da çağrılan ODBC'yi doğrudan. Sürücü imleçler destekleyen bir ODBC sürücüsü kullanıyorsanız, en iyi seçimdir ODBC veritabanı sınıfları olabilir.
+Verileriniz bir sunucuda veya çeşitli farklı sunucularda olduğunda daha karmaşık durumlar oluşur. Bu durumda, ODBC veritabanı sınıflarını veya DAO veritabanı sınıflarını kullanma kararı zor bir durumdur. Heterojen birleşimler (SQL Server ve Oracle gibi birden çok biçimdeki sunuculardan veri birleştirme) gibi şeyler yapmak istiyorsanız, Microsoft Jet veritabanı altyapısı, ODBC veritabanını kullandıysanız gerekli olan işleri gerçekleştirmenize zorlamak yerine sizin için birleştirme işlemi gerçekleştirir Veya ODBC doğrudan olarak adlandırılır. Sürücü imleçlerini destekleyen bir ODBC sürücüsü kullanıyorsanız en iyi seçiminiz ODBC veritabanı sınıfları olabilir.
 
-Özel gereksinimlerinize verilen çeşitli yöntemlerin performansını test etmek için bazı örnek kodlar yazmak isteyebilirsiniz seçim karmaşık, olabilir. Bu teknik Not, ODBC veritabanı sınıflarından DAO veritabanı sınıfları için geçiş kararı yaptığınız varsayılmaktadır.
+Seçim karmaşık olabilir, bu nedenle özel gereksinimleriniz verilen çeşitli yöntemlerin performansını test etmek için bazı örnek kodlar yazmak isteyebilirsiniz. Bu teknik notta ODBC veritabanı sınıflarından DAO veritabanı sınıflarına geçiş kararı verdiğinizi varsayılmaktadır.
 
 ## <a name="similarities-between-odbc-database-classes-and-mfc-dao-database-classes"></a>ODBC veritabanı sınıfları ve MFC DAO veritabanı sınıfları arasındaki benzerlikler
 
-MFC ODBC sınıfları, özgün tasarımda Microsoft Access ve Microsoft Visual Basic kullanımda olan DAO nesne modelinde temel alınmıştır. Bu, tüm bu bölümde listelenen ODBC ve MFC DAO sınıflarını pek çok ortak özelliği olduğu anlamına gelir. Genel olarak, programlama modelleri aynıdır.
+MFC ODBC sınıflarının orijinal tasarımı, Microsoft Access ve Microsoft Visual Basic 'da kullanımda olan DAO nesne modelini temel alır. Bu, ODBC ve DAO MFC sınıflarının pek çok ortak özelliği olduğu anlamına gelir. Bu, hepsi bu bölümde listelenmeyecektir. Genellikle, programlama modelleri aynıdır.
 
-Bazı benzerlikler vurgulamak için:
+Birkaç benzerlikleri vurgulamak için:
 
-- ODBC ve DAO sınıflarını temel alınan veritabanı yönetim sistemi (DBMS)'ni kullanarak veritabanı nesneleri vardır.
+- ODBC ve DAO sınıflarının her ikisi de temel alınan veritabanı yönetim sistemi (DBMS) kullanılarak yöneten veritabanı nesnelerine sahiptir.
 
-- Her ikisi de kayıt nesneleri temsil eden bir o DBMS döndürülen sonuç kümesi vardır.
+- Her ikisinde de, bu DBMS 'den döndürülen sonuç kümesini temsil eden kayıt kümesi nesneleri vardır.
 
-- DAO veritabanı ve kayıt nesneleri üyeleri ODBC sınıfları için neredeyse aynı sahiptir.
+- DAO veritabanı ve kayıt kümesi nesneleri, ODBC sınıflarıyla neredeyse özdeş üyelere sahiptir.
 
-- Her iki sınıfları kümesi ile verileri almak için kod bazı nesne ve üye ad değişiklikleri hariç aynıdır. Değişiklikleri gerekir ancak genellikle bir kolay ad değişikliği ODBC sınıflardan DAO sınıflarına geçiş yaparken işlemidir.
+- Her iki sınıf kümesiyle, veri alma kodu, bazı nesne ve üye adı değişiklikleri dışında aynıdır. Değişiklikler gerekli olacaktır, ancak genellikle işlem ODBC sınıflarından DAO sınıflarına geçiş yaparken doğrudan bir ad değişir.
 
-Örneğin, her iki modelleri oluşturma ve bir veritabanı nesnesi açmak, oluşturmak ve bir kayıt kümesi nesnesi açılamadı ve (taşıma), ancak bazı işlemi verilerde gezinme için verileri almak için yordam aynıdır.
+Örneğin, her iki modelde de veri alma yordamı, bir veritabanı nesnesi oluşturup açmak, bir kayıt kümesi nesnesi oluşturup açmak ve bir işlem gerçekleştirerek veri (taşı) ile gezinmeleridir.
 
-## <a name="differences-between-odbc-and-dao-mfc-classes"></a>ODBC ve MFC DAO sınıfları arasındaki farklar
+## <a name="differences-between-odbc-and-dao-mfc-classes"></a>ODBC ve DAO MFC sınıfları arasındaki farklılıklar
 
-DAO sınıfları daha fazla nesne ve daha zengin bir yöntemler kümesine dahil, ancak bu bölüm yalnızca benzer sınıfları ve işlevleri farklılıkları ayrıntılarını kaydeder.
+DAO sınıfları daha fazla nesne ve daha zengin bir yöntemler kümesi içerir, ancak bu bölüm yalnızca benzer sınıflarda ve işlevlerde farkları ayrıntılandırır.
 
-Sınıflar arasındaki en belirgin farklar benzer sınıflar ve genel işlevler için ad değişiklikleri olabilirsiniz. Aşağıdaki liste, ad değişiklikleri nesneleri, yöntemleri ve veritabanı sınıfları ile ilgili genel işlevleri gösterir:
+Sınıflar arasındaki en belirgin farklılıklar büyük olasılıkla benzer sınıflar ve genel işlevler için ad değişiklikleridir. Aşağıdaki listede, veritabanı sınıflarıyla ilişkili nesneler, Yöntemler ve genel işlevlerin ad değişiklikleri gösterilmektedir:
 
-|Sınıf veya işlev|MFC DAO sınıflarına eşdeğeri|
+|Sınıf veya işlev|MFC DAO sınıflarında eşdeğer|
 |-----------------------|-----------------------------------|
 |`CDatabase`|`CDaoDatabase`|
 |`CDatabase::ExecuteSQL`|`CDaoDatabase::Execute`|
@@ -74,35 +74,35 @@ Sınıflar arasındaki en belirgin farklar benzer sınıflar ve genel işlevler 
 ||`DFX_Currency`|
 |`RFX_Single`|`DFX_Single`|
 |`RFX_Double`|`DFX_Double`|
-|`RFX_Date`<sup>1</sup>|`DFX_Date` (`COleDateTime`-tabanlı)|
+|`RFX_Date`<sup>1</sup>|`DFX_Date`(`COleDateTime`-tabanlı)|
 |`RFX_Text`|`DFX_Text`|
 |`RFX_Binary`|`DFX_Binary`|
 |`RFX_LongBinary`|`DFX_LongBinary`|
 
-<sup>1</sup> `RFX_Date` işlevi temel `CTime` ve `TIMESTAMP_STRUCT`.
+<sup>1</sup> `RFX_Date` işlev`TIMESTAMP_STRUCT`ve tabanlıdır. `CTime`
 
-Uygulamanızı etkileyebilecek ve birden fazla basit adı değişikliği gerektiren önemli değişiklikler işlevine aşağıda listelenmiştir.
+İşlevselliğe yapılan önemli değişiklikler, uygulamanızı etkileyebilecek ve basit ad değişikliklerinin daha fazlasını gerektirenlerin aşağıda listelenmiştir.
 
-- Kayıt kümesi gibi şeyleri açık tür ve Employee seçenekleri belirtmek için kullanılan makrolar ve sabitler değiştirildi.
+- Kayıt kümesi açık türü ve kayıt kümesi açma seçenekleri gibi şeyleri belirtmek için kullanılan sabitler ve makrolar değiştirilmiştir.
 
-   ODBC sınıfları ile MFC makroları aracılığıyla bu seçenekleri tanımlamak için gerekli veya numaralandırılmış türler.
+   ODBC sınıfları MFC ile bu seçenekleri makrolar veya numaralandırılmış türler aracılığıyla tanımlamak için gereklidir.
 
-   DAO sınıfları ile DAO üstbilgi dosyasında (DBDAOINT. Bu seçenekler tanımını sağlar. H). Bu nedenle kayıt kümesi bir listeden seçimli üyesidir `CRecordset`, ancak DAO ile bir sabit yerine. Örneğin kullanırsınız **anlık görüntü** türünü belirtirken `CRecordset` ODBC'de ancak **DB_OPEN_SNAPSHOT** türünü belirtirken `CDaoRecordset`.
+   DAO sınıfları ile, DAO bu seçeneklerin tanımını bir başlık dosyasında (DBDAOINT) sağlar. H). Bu nedenle, kayıt kümesi türü, öğesinin `CRecordset`numaralandırılmış bir üyesidir, ancak DAO ile bunun yerine bir sabittir. Örneğin, ODBC `CRecordset` içinde türünü belirtirken, ancak türünü `CDaoRecordset`belirtirken **db_open_snapshot** **anlık görüntüsünü** kullanırsınız.
 
-- Varsayılan kayıt türü `CRecordset` olduğu **anlık görüntü** while için varsayılan kayıt türü `CDaoRecordset` olduğu **dynaset** (ODBC sınıf anlık görüntüler hakkında ek sorun için aşağıdaki nota bakın).
+- İçin varsayılan kayıt kümesi türü, ' ın **Dynaset** olduğu ve için `CDaoRecordset` varsayılan kayıt kümesi türü ise **anlık görüntüdür** (ODBC sınıfı anlık görüntüleri hakkında ek bir sorun için aşağıdaki nota bakın). `CRecordset`
 
-- ODBC `CRecordset` sınıfı salt iletme kayıt kümesi türü oluşturma seçeneğiniz vardır. İçinde `CDaoRecordset` sınıfı, yalnızca iletme bir kayıt kümesi türü, ancak bunun yerine bir özellik (veya seçeneği) kümelerinin belirli bir türde değil.
+- ODBC `CRecordset` sınıfında yalnızca bir salt iletme kayıt kümesi türü oluşturma seçeneği vardır. `CDaoRecordset` Sınıfında, ileri salt bir kayıt kümesi türü değildir, ancak bunun yerine belirli kayıt kümeleri türlerinin bir özelliği (veya seçeneği) vardır.
 
-- Açılırken yalnızca ekleme yapılabilen bir kayıt bir `CRecordset` nesne kümesinin veri okumak ve eklenmiş olduğunu geliyordu. İle `CDaoRecordset` nesnesi salt ekleme seçeneği olabileceği anlamına gelir tam anlamıyla veri kümesinin yalnızca eklenebilir (ve okuma değil).
+- Bir `CRecordset` nesne açılırken yalnızca bir Append kayıt kümesi, kayıt kümesi verilerinin okunmasının ve eklenebileceği anlamına gelir. Nesnesi `CDaoRecordset` ile, yalnızca APPEND seçeneği, kayıt kümesinin verilerinin yalnızca eklenebileceği (ve okunmayacağı) anlamına gelir.
 
-- ODBC sınıfları işlem üye işlevleri üyeleri `CDatabase` ve veritabanı düzeyinde harekete geçin. DAO sınıfları işlem üye işlevleri daha yüksek düzey bir sınıf üyeleri (`CDaoWorkspace`) ve böylece birden çok etkileyebilir `CDaoDatabase` (işlem alanı) aynı çalışma alanını paylaşan nesneler.
+- ODBC sınıfları işlem üyesi işlevleri, üyeleri `CDatabase` ve veritabanı düzeyinde çalışır. DAO sınıflarında, işlem üyesi işlevleri daha yüksek düzey bir sınıfın (`CDaoWorkspace`) üyeleridir ve bu nedenle aynı çalışma alanını (işlem alanı) paylaşan birden çok `CDaoDatabase` nesneyi etkileyebilir.
 
-- Özel durum sınıfı değiştirildi. `CDBExceptions` ODBC sınıfları oluşturulur ve `CDaoExceptions` DAO sınıflardaki.
+- Özel durum sınıfı değiştirildi. `CDBExceptions`ODBC sınıflarında ve `CDaoExceptions` DAO sınıflarında oluşturulur.
 
-- `RFX_Date` kullanan `CTime` ve `TIMESTAMP_STRUCT` sırasında nesneleri `DFX_Date` kullanan `COleDateTime`. `COleDateTime` Hemen hemen aynıdır `CTime`, üzerinde bir 8 baytlık OLE dayanır ancak **tarih** 4 baytlık yerine **time_t** çok daha geniş bir yelpazede veri içerebileceği için.
+- `RFX_Date`kullanırken `CTime` venesnelerini`TIMESTAMP_STRUCT` kullanır .`COleDateTime` `DFX_Date` , İle neredeyse aynıdır, ancak 4 baytlık bir time_t yerine 8 baytlık bir OLE tarihini temel alır, böylece daha büyük bir veri aralığı olabilir. `COleDateTime` `CTime`
 
    > [!NOTE]
-   > DAO (`CDaoRecordset`) sırasında ODBC salt okunur anlık görüntüler (`CRecordset`) anlık görüntüleri sürücü ve ODBC imleç kitaplığı kullanımına bağlı olarak güncelleştirilebilir. İmleç kitaplığı kullanıyorsanız `CRecordset` anlık görüntüleri güncelleştirilebilir. ODBC imleç kitaplığını kullanmadan Microsoft sürücüleri Masaüstü Sürücü Paketi 3.0 kullanıyorsanız, `CRecordset` anlık görüntüleri salt okunurdur. Başka bir sürücü kullanıyorsanız olmadığını görmek için sürücünün belgelere bakın. anlık görüntüler (`STATIC_CURSORS`) salt okunurdur.
+   > DAO (`CDaoRecordset`) anlık görüntüleri salt okunurdur, ODBC (`CRecordset`) anlık görüntüleri ise ODBC imleç kitaplığının sürücüsüne ve kullanımına bağlı olarak güncelleştirilebilir. İmleç kitaplığını kullanıyorsanız, `CRecordset` anlık görüntüler güncelleştirilebilir. ODBC imleç kitaplığı olmadan masaüstü sürücü paketi 3,0 ' den Microsoft sürücülerinden herhangi birini kullanıyorsanız, `CRecordset` anlık görüntüler salt okunurdur. Başka bir sürücü kullanıyorsanız, anlık görüntülerin (`STATIC_CURSORS`) salt okunurdur olup olmadığını görmek için sürücünün belgelerini denetleyin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
