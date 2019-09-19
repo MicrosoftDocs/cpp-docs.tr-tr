@@ -1,13 +1,13 @@
 ---
 title: C++'da Windows Programlamasına Genel Bakış
-ms.date: 07/28/2019
+ms.date: 09/17/2019
 ms.assetid: efc691d7-21f3-47ae-ae56-cab999ccf59d
-ms.openlocfilehash: 10ef9698e27099d5856c1ed5f8ed2f21cea72c24
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 96a03194059f59f57780bfd70cab3065d6a1aff0
+ms.sourcegitcommit: 76cc69b482ada8ebf0837e8cdfd4459661f996dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69514799"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71127188"
 ---
 # <a name="overview-of-windows-programming-in-c"></a>C++'da Windows Programlamasına Genel Bakış
 
@@ -17,7 +17,7 @@ Bu bölümde, Windows programları oluşturmak için Visual Studio ve MFC/ATL sa
 
 ## <a name="command-line-console-applications"></a>Komut satırı (konsol) uygulamaları
 
-C++Konsol uygulamaları konsol penceresinde komut satırından çalışır ve yalnızca metin çıktısını görüntüleyebilir. Daha fazla bilgi için bkz. [konsol uygulamaları](console-applications-in-visual-cpp.md).
+C++Konsol uygulamaları konsol penceresinde komut satırından çalışır ve yalnızca metin çıktısını görüntüleyebilir. Daha fazla bilgi için bkz. [ C++ konsol uygulaması projesi oluşturma](../get-started/tutorial-console-cpp.md).
 
 ## <a name="native-desktop-client-applications"></a>Yerel Masaüstü istemci uygulamaları
 

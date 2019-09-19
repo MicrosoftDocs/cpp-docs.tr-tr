@@ -1,21 +1,21 @@
 ---
 title: 'Nasıl yapılır: Weak_ptr örnekleri oluşturma ve kullanma'
 ms.custom: how-to
-ms.date: 07/12/2018
+ms.date: 09/18/2019
 ms.topic: conceptual
 ms.assetid: 8dd6909b-b070-4afa-9696-f2fc94579c65
-ms.openlocfilehash: 63eed40117d1a79c69bd05e5bd1503d4222f556d
-ms.sourcegitcommit: af4ab63866ed09b5988ed53f1bb6996a54f02484
+ms.openlocfilehash: e5d1b13d894a617ca514e26f14fde3f514540d34
+ms.sourcegitcommit: 76cc69b482ada8ebf0837e8cdfd4459661f996dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787086"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71127177"
 ---
 # <a name="how-to-create-and-use-weak_ptr-instances"></a>Nasıl yapılır: Weak_ptr örnekleri oluşturma ve kullanma
 
 Bazen bir nesne, başvuru sayısının arttırmasına neden olmadan bir `shared_ptr` öğesinin temel alınan nesnesine erişmek için bir yol depolamalıdır. Genellikle, örnekler arasında `shared_ptr` döngüsel başvurular olduğunda bu durum oluşur.
 
-En iyi tasarım, her seferinde, işaretçilerin paylaşılan sahipliğinin kaçınmaktır. Ancak, `shared_ptr` örneklerin sahipliğini paylaşıma almanız gerekiyorsa aralarındaki döngüsel başvurulardan kaçının. Döngüsel başvurular kaçınılmaz veya bazı nedenlerle tercih edilse de, bir veya daha fazla Sahibe `weak_ptr` daha zayıf bir başvuru `shared_ptr`vermek için kullanın. Bir `weak_ptr`kullanarak, var olan bir ilgili örnekler `shared_ptr` kümesine katılılan, ancak yalnızca temeldeki bellek kaynağı hala geçerliyse bir oluşturabilirsiniz. `weak_ptr` Kendisi başvuru saymasına katılmaz ve bu nedenle başvuru sayısının sıfıra gitmesini engellemez. Ancak, `weak_ptr` `shared_ptr` uygulamasının başlatıldığı yeni bir kopyasını elde etmek için kullanabilirsiniz. Bellek zaten silinmişse bir `bad_weak_ptr` özel durum oluşturulur. Bellek hala geçerliyse, yeni paylaşılan işaretçi başvuru sayısını artırır ve `shared_ptr` değişken kapsamda olduğu sürece belleğin geçerli olacağını garanti eder.
+En iyi tasarım, her seferinde, işaretçilerin paylaşılan sahipliğinin kaçınmaktır. Ancak, `shared_ptr` örneklerin sahipliğini paylaşıma almanız gerekiyorsa aralarındaki döngüsel başvurulardan kaçının. Döngüsel başvurular kaçınılmaz veya bazı nedenlerle tercih edilse de, bir veya daha fazla Sahibe `weak_ptr` daha zayıf bir başvuru `shared_ptr`vermek için kullanın. Bir `weak_ptr`kullanarak, var olan bir ilgili örnekler `shared_ptr` kümesine katılılan, ancak yalnızca temeldeki bellek kaynağı hala geçerliyse bir oluşturabilirsiniz. `weak_ptr` Kendisi başvuru saymasına katılmaz ve bu nedenle başvuru sayısının sıfıra gitmesini engellemez. Ancak, `weak_ptr` `shared_ptr` uygulamasının başlatıldığı yeni bir kopyasını elde etmek için kullanabilirsiniz. Bellek zaten silinmişse `weak_ptr`bool işleci döndürülür `false`. Bellek hala geçerliyse, yeni paylaşılan işaretçi başvuru sayısını artırır ve `shared_ptr` değişken kapsamda olduğu sürece belleğin geçerli olacağını garanti eder.
 
 ## <a name="example"></a>Örnek
 

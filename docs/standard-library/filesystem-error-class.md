@@ -4,16 +4,16 @@ ms.date: 09/10/2018
 f1_keywords:
 - filesystem/std::experimental::filesystem::filesystem_error
 ms.assetid: c53aac27-c1fa-43e4-8967-48ea8ba1f172
-ms.openlocfilehash: c3dbfc080f0a1494950016f42189d932be05b0f1
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 7bd6b2d3d716ba25999388d44e7bd5a8d0750eb5
+ms.sourcegitcommit: 76cc69b482ada8ebf0837e8cdfd4459661f996dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68240738"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71127207"
 ---
-# <a name="filesystemerror-class"></a>filesystem_error Sınıfı
+# <a name="filesystem_error-class"></a>filesystem_error Sınıfı
 
-Bir düzey sistemi taşması bildirmek için oluşturulan tüm özel durumlar için temel sınıf.
+Düşük düzey sistem taşmasını raporlamak için oluşturulan tüm özel durumlar için temel sınıf.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -23,7 +23,7 @@ class filesystem_error    : public system_error;
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıfı bir hata rapor için oluşturulan tüm özel durumlar için temel sınıf olarak hizmet verir \<filesystem > işlevleri. Türünde bir nesne depolar `string`adlı `mymesg` exposition amaçları için burada. Türünden iki nesne de depolar `path`adlı `mypval1` ve `mypval2`.
+Sınıfı, \<FileSystem > işlevlerde hata bildirmek üzere oluşturulan tüm özel durumlar için temel sınıf olarak görev yapar. Buradan, Exposition 'ın amaçları doğrultusunda `string`çağrılan `mymesg` , türünde bir nesne depolar. Ayrıca, ve `path` `mypval1`olarakadlandırılantüründe ikinesnedepolar`mypval2`.
 
 ## <a name="members"></a>Üyeler
 
@@ -31,25 +31,25 @@ Sınıfı bir hata rapor için oluşturulan tüm özel durumlar için temel sın
 
 |||
 |-|-|
-|[filesystem_error](#filesystem_error)|Oluşturur bir `filesystem_error` ileti.|
+|[filesystem_error](#filesystem_error)|Bir `filesystem_error` ileti oluşturur.|
 
 ### <a name="functions"></a>İşlevler
 
 |||
 |-|-|
-|[yol1](#path1)|döndürür `mypval1`|
-|[yol2](#path2)|döndürür `mypval2`|
-|[ne](#what)|Bir işaretçi döndüren bir `NTBS`.|
+|[path1](#path1)|Döndürdüğü`mypval1`|
+|[yol2](#path2)|Döndürdüğü`mypval2`|
+|[Yazdırılacak](#what)|Bir `NTBS`işaretçi döndürür.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<filesystem >
+**Üst bilgi:** \<dosya sistemi >
 
-**Namespace:** std::experimental::filesystem
+**Ad alanı:** std:: deneysel:: FileSystem
 
-## <a name="filesystem_error"></a> filesystem_error
+## <a name="filesystem_error"></a>filesystem_error
 
-İlk Oluşturucu, ileti oluşturur *what_arg* ve *ec*. İkinci oluşturucu Ayrıca, ileti oluşturur *pval1*, içinde depoladığı `mypval1`. Üçüncü Oluşturucu, ayrıca kendi ileti oluşturur *pval1*, içinde depoladığı `mypval1`, gelen ve giden *pval2*, içinde depoladığı `mypval2`.
+İlk Oluşturucu, iletisini *what_arg* ve *EC*'den oluşturur. İkinci Oluşturucu Ayrıca, içinde `mypval1`depoladığı *Pval1*öğesinden iletisini oluşturur. Üçüncü Oluşturucu Ayrıca, *Pval1*adresinden, içinde `mypval1`depoladığı ve *Pval2*' den depoladığı `mypval2`iletiyi de oluşturur.
 
 ```cpp
 filesystem_error(const string& what_arg,
@@ -74,30 +74,30 @@ Belirtilen ileti.
 Belirtilen hata kodu.
 
 *mypval1*\
-Daha fazla belirtilen iletiyi parametresi.
+Daha fazla belirtilmiş ileti parametresi.
 
 *mypval2*\
-Daha fazla belirtilen iletinin parametresi.
+Daha fazla belirtilmiş ileti parametresi.
 
-## <a name="path1"></a> yol1
+## <a name="path1"></a>path1
 
-Üye işlevi döndürür `mypval1`
+Üye işlevi şunu döndürür`mypval1`
 
 ```cpp
 const path& path1() const noexcept;
 ```
 
-## <a name="path2"></a> yol2
+## <a name="path2"></a>yol2
 
-Üye işlevi döndürür `mypval2`
+Üye işlevi şunu döndürür`mypval2`
 
 ```cpp
 const path& path2() const noexcept;
 ```
 
-## <a name="what"></a> ne
+## <a name="what"></a>Yazdırılacak
 
-Üye işlevi işaretçisi döndüren bir `NTBS`, tercihen oluşan gelen `runtime_error::what()`, `system_error::what()`, `mymesg`, `mypval1.native_string()`, ve `mypval2.native_string()`.
+Üye `NTBS`işlevi, `system_error::what()` `runtime_error::what()` tercihen,`mymesg`,, ve`mypval2.native_string()`öğesinden oluşan bir işaretçi döndürür. `mypval1.native_string()`
 
 ```cpp
 const char *what() const noexcept;

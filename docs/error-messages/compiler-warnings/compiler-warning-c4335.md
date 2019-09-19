@@ -6,26 +6,26 @@ f1_keywords:
 helpviewer_keywords:
 - C4335
 ms.assetid: e66467ad-a10b-4438-8c7c-e8e8d11d39bb
-ms.openlocfilehash: 43c2f5d9092cdbad14e429349bd7d04e236b75e4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d44a1ae5354e8d22e41694f4d6df42ad22c3986d
+ms.sourcegitcommit: 76cc69b482ada8ebf0837e8cdfd4459661f996dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62151857"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71127159"
 ---
 # <a name="compiler-warning-c4335"></a>Derleyici Uyarısı C4335
 
-Mac dosya biçimi algılandı: Lütfen kaynak dosyayı DOS veya UNIX biçimine dönüştürün
+Mac dosya biçimi algılandı: lütfen kaynak dosyayı DOS veya UNIX biçimine dönüştürün
 
-Bir kaynak dosyasının ilk satırının satır sonlandırma karakteri UNIX ('\n') veya DOS ('\r\n') aksine Macintosh stili ('\r') ' dir.
+Kaynak dosyanın ilk satırının satır sonlandırma karakteri, UNIX (' \n ') veya DOS (' \r\n ') aksine Macintosh stili (' \r ').
 
-Bu uyarı, bir hata her zaman görüntülenir.  Bkz: [uyarı](../../preprocessor/warning.md) pragma bu uyarıyı devre dışı bırakma hakkında daha fazla bilgi için.  Ayrıca, bu uyarı yalnızca bir kez derlenecek görüntülenir. Bu nedenle, varsa birden çok `#include` Macintosh biçiminde dosyaları belirttiğiniz yönergeleri C4335 yalnızca gönderilmez kez.
+Bu uyarı her zaman bir hata olarak verilir.  Bu uyarıyı devre dışı bırakma hakkında bilgi için bkz. [Warning](../../preprocessor/warning.md) pragma.  Ayrıca, bu uyarı compiland başına yalnızca bir kez verilir. Bu nedenle, Macintosh biçiminde dosyaları `#include` belirten birden fazla yönergeler varsa, C4335 yalnızca bir kez verilir.
 
-Macintosh biçiminde dosyaları oluşturmak için bir yoludur kullanarak **Gelişmiş kaydetme seçenekleri** (üzerinde **dosya** menüsü) Visual Studio'da.
+Macintosh biçiminde dosya oluşturmanın bir yolu, Visual Studio 'daki **Gelişmiş Kaydet seçeneklerini** ( **Dosya** menüsünde) kullanmaktır.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C4335 oluşturur.
+Aşağıdaki örnek C4335 oluşturur.
 
 ```
 // C4335 expected
