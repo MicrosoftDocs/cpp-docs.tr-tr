@@ -39,13 +39,13 @@ unsigned char __vmx_vmwrite(
 
 ## <a name="return-value"></a>Dönüş değeri
 
-0
+0\
 İşlem başarılı oldu.
 
-1
+1\
 İşlem, geçerli VNET `VM-instruction error field` 'lerin içinde kullanılabilir olan genişletilmiş durumla başarısız oldu.
 
-iki
+2\
 İşlem durum kullanılabilir olmadan başarısız oldu.
 
 ## <a name="remarks"></a>Açıklamalar
