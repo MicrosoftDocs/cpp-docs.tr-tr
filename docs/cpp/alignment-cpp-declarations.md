@@ -1,34 +1,34 @@
 ---
 title: Hizalama (C++ Bildirimleri)
-description: Veri hizalama modern nasıl belirtildiğine C++.
-ms.date: 05/30/2019
+description: Modern C++içinde veri hizalaması nasıl belirtilir.
+ms.date: 09/19/2019
 ms.assetid: a986d510-ccb8-41f8-b905-433df9183485
-ms.openlocfilehash: b6e03ac2b89624a0eb6602183d4ff4bf8b518f8d
-ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
+ms.openlocfilehash: 67debc00343b8bee4184e020c9269011e2fcebc9
+ms.sourcegitcommit: f907b15f50a6b945d0b87c03af0050946157d701
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66450776"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71158745"
 ---
 # <a name="alignment-c-declarations"></a>Hizalama (C++ Bildirimleri)
 
-Alt düzey C++ özelliklerinin belirli donanım mimarisiyle en büyük avantajlarından yararlanmak için bellekte nesnelerin kesin hizalamayı belirtme olanağı biridir. Varsayılan olarak, derleyici sınıf ile yapı üyeleri kendi boyutu değeri hizalar: `bool` ve `char` 1 baytlık sınırlarda `short` 2 baytlık sınırlarda `int`, `long`, ve `float` 4 baytlık sınırlarda ve `long long`, `double`, ve `long double` 8 baytlık sınırlarda. Çoğu senaryoda, hiçbir zaman varsayılan hizalama zaten en iyi olduğundan ile aynı doğrultuda konusunda endişe duymaları gerekmez. Bazı durumlarda, ancak, önemli performans geliştirmeleri veya bellek tasarrufu, veri yapıları için özel bir hizalama belirterek elde edebilirsiniz. Visual Studio 2015 önce Microsoft'a özgü anahtar sözcükler kullanabilirsiniz `__alignof` ve `declspec(alignas)` varsayılandan daha büyük bir hizalama belirtmek için. C ++ 11 standart anahtar sözcükleri Visual Studio 2015'te, başlangıç kullanması gereken [alignof ve alignas](../cpp/alignof-and-alignas-cpp.md) maksimum kod taşınabilir. Yeni anahtar sözcüklerle Microsoft'a özgü genişletmelerdir başlık altında aynı şekilde davranır. Bu uzantıları belgelerine, yeni anahtar sözcükler için de geçerlidir. Daha fazla bilgi için [__alignof işleci](../cpp/alignof-operator.md) ve [hizalama](../cpp/align-cpp.md). C++ Standart değil belirtin paketleme davranışı hizalaması için hedef platformu için derleyici varsayılandan daha küçük sınırlarındaki hala #pragma Microsoft kullanmanız gereken şekilde [paketi](../preprocessor/pack.md) böyle bir durumda.
+Öğesinin C++ alt düzey özelliklerinden biri, belirli bir donanım mimarisinin en yüksek avantajlarından yararlanmak için bellekteki nesnelerin kesin hizalamasını belirtme yeteneğidir. Varsayılan olarak, derleyici sınıf ve yapı üyelerini boyut değerlerine `bool` göre ve `char` 1 baytlık sınırlar üzerinde, `short` 2 baytlık `int`sınırlar,, `long`, ve `float` 4 baytlık sınırlarda hizalar.`long long`, ,`double` ve`long double` 8 baytlık sınırlar üzerinde. Çoğu senaryoda, varsayılan hizalama zaten en iyi durumda olduğu için hizalamayla ilgilenmelisiniz. Ancak bazı durumlarda, veri yapılarınız için özel bir hizalama belirterek önemli performans geliştirmeleri veya bellek tasarrufu elde edebilirsiniz. Visual Studio 2015 ' den önce, Microsoft 'a özgü anahtar sözcükleri `__alignof` kullanabilir `declspec(alignas)` ve varsayılandan daha büyük bir hizalama belirtebilirsiniz. Visual Studio 2015 ' den başlayarak, en fazla kod taşınabilirlik için C++ 11 standart anahtar sözcükleri [hizalamasını ve alignas](../cpp/alignof-and-alignas-cpp.md) 'yi kullanmanız gerekir. Yeni anahtar sözcükler, Microsoft 'a özgü uzantılar ile aynı şekilde davranır. Bu uzantılara ait belgeler yeni anahtar sözcükler için de geçerlidir. Daha fazla bilgi için bkz. [__hizalaması](../cpp/alignof-operator.md) ve [Hizalama](../cpp/align-cpp.md). Standart C++ , hedef platformun varsayılan derleyicisinden daha küçük olan sınırlara göre hizalama için paketleme davranışını belirtmez, bu nedenle yine de bu durumda Microsoft #pragma [paketini](../preprocessor/pack.md) kullanmanız gerekir.
 
-Kullanım [aligned_storage sınıfı](../standard-library/aligned-storage-class.md) Özel hizalamaları ile veri yapılarının bellek ayırma için. [Aligned_union sınıfı](../standard-library/aligned-union-class.md) birleşimler için hizalama Önemsiz olmayan oluşturuculara veya yıkıcıları ile belirtmenizi sağlar.
+Özel hizalamalar ile veri yapılarının bellek ayırması için [aligned_storage sınıfını](../standard-library/aligned-storage-class.md) kullanın. [Aligned_union sınıfı](../standard-library/aligned-union-class.md) , önemsiz olmayan oluşturucular veya Yıkıcılar içeren birleşimler için hizalama belirtmek içindir.
 
 ## <a name="about-alignment"></a>Hizalama hakkında
 
-Hizalama, 2'in kuvveti modül sayısal adresi olarak ifade edilen bir bellek adresi özelliğidir. Örneğin, ' % s'adresi 0x0001103F 4 modül 3'tür. Bu adres hizalanması için 4n + 3, 4 2 seçilen gücünü burada gösterir kabul edilir. Bir adresi hizalamasını 2 seçilen gücüyle bağlıdır. Modül 8 aynı adres 7'dir. Bir adresi hizalamanın Xn + 0 ise X için uyumlu kabul edilir.
+Hizalama, bir bellek adresinin 2. kuvvetinin sayısal adres olarak ifade edildiği bir özelliğidir. Örneğin, 0x0001103F modül 4 adresi 3 ' dir. Bu adres 4N + 3 ' e hizalandığını belirtir; burada 4, 2 ' nin seçili kuvvetinin olduğunu gösterir. Bir adresin hizalaması, 2 ' nin seçili gücüne bağlıdır. Aynı adres modül 8 ' i 7 ' dir. Hizalama xn + 0 ise, bir adresin X 'e hizalandığını söylenir.
 
-CPU, bellek içinde depolanan veriler çalıştırma yönergeleri yürütün. Veriler, bellek adreslerinde tarafından tanımlanır. Tek bir veri de bir boyuta sahiptir. Bir veri diyoruz *doğal olarak hizalı* adresini boyutuna hizalanır durumunda. Çağrıldığı *yanlış hizalanmış* Aksi takdirde. Örneğin, 8-bayt kayan veri, doğal olarak tanımlamak için kullanılan adres 8 baytlık hizalama varsa uyumludur.
+CPU 'Lar bellekte depolanan veriler üzerinde çalışan yönergeleri yürütür. Veriler, bellekteki adresleriyle tanımlanır. Tek bir veri de boyut içerir. Adresi boyutuna hizalanmışsa *doğal olarak hizalanmış* bir veri çağırıyoruz. Aksi halde *yanlış hizalanmış* olarak çağırılır. Örneğin, bir 8 baytlık kayan nokta veri, bunu tanımlamak için kullanılan adreste 8 baytlık bir hizalama varsa doğal olarak hizalanır.
 
-## <a name="compiler-handling-of-data-alignment"></a>Veri hizalama derleyici işleme
+## <a name="compiler-handling-of-data-alignment"></a>Veri hizalamasını derleyici işleme
 
-Veri ayırma veri hizalanmama engelleyen bir hale getirmek derleyiciler çalışır.
+Derleyiciler, verileri hatalı hizalanmış şekilde engelleyecek şekilde veri ayırmaları yapmayı dener.
 
-Basit veri türleri için derleyici veri türünde bayt boyutu katları olan adresleri de atar. Örneğin, derleyici adresleri türü değişkenlere atar `long` 4 alt adresinin 2 biti sıfır olarak ayarlandığında, katları olan.
+Basit veri türleri için derleyici, veri türü baytlarına göre boyutun katları olan adresleri atar. Örneğin, derleyici 4 ' ün katları olan türdeki `long` değişkenlere adresler atar ve adresin alt 2 bitini sıfıra ayarlar.
 
-Derleyici ayrıca her öğe yapısının doğal olarak uygun bir şekilde yapıları sıfır ekleyerek doldurur. Yapısı göz önünde bulundurun `struct x_` aşağıdaki kod örneğinde:
+Derleyici Ayrıca yapıları yapının her bir öğesini doğal olarak bir şekilde hizalar. Aşağıdaki kod örneğinde `struct x_` yapıyı göz önünde bulundurun:
 
 ```cpp
 struct x_
@@ -37,12 +37,12 @@ struct x_
    int b;      // 4 bytes
    short c;    // 2 bytes
    char d;     // 1 byte
-} MyStruct;
+} bar[3];
 ```
 
-Derleyici bu yapı hizalama doğal olarak zorlamak için sıfır ekleyerek doldurur.
+Derleyici bu yapıyı, doğal olarak hizalamayı zorlamak için Pad 'ler.
 
-Aşağıdaki kod örneği, nasıl derleyici doldurulan yapısını bellekte yerleştirir gösterir:
+Aşağıdaki kod örneğinde, derleyicinin doldurulmuş yapıyı belleğe nasıl yerleştirdiği gösterilmektedir:
 
 ```cpp
 // Shows the actual memory layout
@@ -54,20 +54,20 @@ struct x_
    short c;          // 2 bytes
    char d;           // 1 byte
    char _pad1[1];    // padding to make sizeof(x_) multiple of 4
-}
+} bar[3];
 ```
 
-1. Her iki bildirimi dönüş `sizeof(struct x_)` 12 bayt olarak.
+Her iki bildirim `sizeof(struct x_)` de 12 bayt olarak döndürülür.
 
-1. İkinci bildirim iki doldurma öğeleri içerir:
+İkinci bildirim iki doldurma öğesi içerir:
 
-1. `char _pad0[3]` hizalamak için `int b` 4-bayt sınırındaki üyesi
+1. `char _pad0[3]``int b` üyeyi 4 baytlık bir sınırın üzerine hizalamak için.
 
-1. `char _pad1[1]` Dizi öğeleri yapı hizalama `struct _x bar[3];`
+1. `char _pad1[1]`yapının `struct _x bar[3];` dizi öğelerini dört baytlık bir sınırın üzerine hizalamak için.
 
-1. Doldurma öğelerini hizalar `bar[3]` doğal erişime izin veren bir yolla.
+Doldurma öğeleri `bar[3]` doğal erişime izin verecek şekilde hizalar.
 
-Aşağıdaki örnekte gösterildiği kod `bar[3]` dizi düzeni:
+Aşağıdaki kod örneği `bar[3]` dizi mizanpajını göstermektedir:
 
 ```Output
 adr offset   element
@@ -96,4 +96,4 @@ adr offset   element
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Veri yapısı hizalama](https://en.wikipedia.org/wiki/Data_structure_alignment)
+[Veri yapısı hizalaması](https://en.wikipedia.org/wiki/Data_structure_alignment)

@@ -1,6 +1,7 @@
 ---
-title: C++'ta yapılandırılmış özel durumları işleme
-ms.date: 08/14/2018
+title: C++ dilinde yapılandırılmış özel durumları işleme
+description: C++ Özel durum işleme modelini kullanarak yapılandırılmış özel durumları işleme.
+ms.date: 09/19/2019
 helpviewer_keywords:
 - structured exception handling [C++], vs. C++ exception handling
 - structured exception handling [C++], vs. unstructured
@@ -8,24 +9,24 @@ helpviewer_keywords:
 - C++ exception handling [C++], vs. structured exception handling
 - wrapper classes [C++], C exception
 ms.assetid: f21d1944-4810-468e-b02a-9f77da4138c9
-ms.openlocfilehash: 2c4f1a8c3729e2b4d49a0152425e57717f7e9997
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0c0e458f576325034d77676d247020adedfa33e5
+ms.sourcegitcommit: f907b15f50a6b945d0b87c03af0050946157d701
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62154418"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71158734"
 ---
-# <a name="handle-structured-exceptions-in-c"></a>C++'ta yapılandırılmış özel durumları işleme
+# <a name="handle-structured-exceptions-in-c"></a>C++ dilinde yapılandırılmış özel durumları işleme
 
-C arasındaki başlıca fark, özel durum işleme (SEH) yapılandırılmış ve C++ özel durum işleme modeli anlaşmalar türlerinde C++ özel durum işleme, yapılandırılmış özel durum işleme modeli sırasında C, bir tür özel durumlar ile ilgilenen ise; Özellikle, **işaretsiz int**. Diğer bir deyişle, C++ özel durumlarını veri türüyle tanımlanır ancak C özel durumlarını bir işaretsiz tamsayı değeri tarafından tanımlanır. C dilinde bir yapılandırılmış özel durum oluştuğunda, her olası işleyici C özel durum bağlamı inceler ve bu özel durum kabul edin, başka bir işleyiciye geçirmek ya da onu yok saymasını belirleyen bir filtre yürütür. C++'da bir özel durum oluştuğunda, bunu herhangi bir türde olabilir.
+C yapılandırılmış özel durum işleme (SEH) ve C++ özel durum işleme arasındaki önemli fark, C++ özel durum işleme modelinin türler halinde ele aldığı, ancak c yapılandırılmış özel durum işleme modelinin tek bir türden özel durumlarla ilgilenir. Özellikle, **işaretsiz int**. Diğer bir deyişle, C özel durumları işaretsiz bir tamsayı değeri tarafından tanımlanır, C++ ancak özel durumlar veri türü tarafından tanımlanır. C 'de yapılandırılmış bir özel durum oluşturulduğunda, olası her işleyici C özel durum bağlamını inceleyen bir filtre yürütür ve özel durumun kabul edilip edilmeyeceğini, başka bir işleyiciye iletmesinin veya yoksayılacağını belirler. İçinde C++bir özel durum oluştuğunda, herhangi bir türde olabilir.
 
-C yapılandırılmış özel durum işleme modeli olarak adlandırılır, ikinci bir fark olduğunu *zaman uyumsuz*, özel durumlar, denetiminin normal akışı için ikincil oluşur. C++ özel durum işleme mekanizmasını tam olan *zaman uyumlu*, yani yalnızca, bunlar özel özel durum oluşur.
+İkinci bir fark, C yapılandırılmış özel durum işleme modelinin *zaman uyumsuz*olarak başvurulduğu, çünkü özel durumlar normal denetim akışına ikincil olarak gerçekleşmektedir. C++ Özel durum işleme mekanizması tamamen *zaman uyumludur*. Bu, özel durumların yalnızca oluşturulduğu zaman oluşması anlamına gelir.
 
-Kullanırken [EHS veya/ehsc](../build/reference/eh-exception-handling-model.md) derleyici seçeneği, C++ özel durum işleyicileri tanıtıcı yapılandırılmış özel durum yok. Bu özel durumların yalnızca işlenen **__catch** yapılandırılmış özel durum işleyicileri veya **__finally** yapılandırılmış sonlandırma işleyicileri. Bilgi için [yapılandırılmış özel durum işleme (C/C++)](structured-exception-handling-c-cpp.md).
+[/EHS veya/EHsc](../build/reference/eh-exception-handling-model.md) derleyici seçeneğini kullandığınızda, C++ özel durum işleyicileri yapılandırılmış özel durumları işlemez. Bu özel durumlar yalnızca **__except** yapılandırılmış özel durum işleyicileri veya **__finally** yapılandırılmış sonlandırma işleyicileri tarafından işlenir. Bilgi için bkz. [yapılandırılmış özel durum işleme (CC++/)](structured-exception-handling-c-cpp.md).
 
-Altında [/eha](../build/reference/eh-exception-handling-model.md) derleyici seçeneği, bir C++ programında C özel durum oluşturulursa, bunu bir C++ veya kendi ilişkili Filtresi ile bir yapılandırılmış özel durum işleyicisi tarafından işlenebilir **catch** hangisi işleyicisi dinamik olarak nearer to özel durum bağlamı. Örneğin, bir C özel durumu bir C++ içinde aşağıdaki C++ programı başlatan **deneyin** Bağlam:
+[/EHa](../build/reference/eh-exception-handling-model.md) derleyici seçeneğinin altında, bir C++ programda bir C özel durumu ortaya çıktığında, ilişkili filtresiyle veya bir C++ **catch** işleyicisiyle, özel duruma dinamik olarak yaklaştığında bu bir yapılandırılmış özel durum işleyicisi tarafından işlenebilir. bağlam. Örneğin, bu örnek C++ program bir C++ **TRY** bağlamı içinde bir C özel durumu oluşturur:
 
-## <a name="example---catch-a-c-exception-in-a-c-catch-block"></a>Örnek - C Catch özel durum bir C++'ta catch bloğu
+## <a name="example---catch-a-c-exception-in-a-c-catch-block"></a>Örnek-bir C++ catch bloğunda C özel durumunu yakala
 
 ```cpp
 // exceptions_Exception_Handling_Differences.cpp
@@ -62,9 +63,9 @@ Caught a C exception.
 
 ## <a name="c-exception-wrapper-classes"></a>C özel durum sarmalayıcı sınıfları
 
-Yukarıdaki gibi basit bir örnekte C özel durumu yalnızca üç nokta yakalanabilir (**...** ) **catch** işleyici. İşleyicinin veya özel durum doğası hakkında hiçbir bilgi iletilir. Bu yöntem çalışır, ancak bazı durumlarda, böylece her C özel durumu belirli bir sınıf ile ilişkili iki özel durum işleme modelleri arasında dönüştürme tanımlamak isteyebilirsiniz. Bunu yapmak için kullanılan veya bir C özel durumu için belirli bir sınıf türü özniteliği için türetilen bir C özel durum "sarmalayıcı" sınıfı tanımlayabilirsiniz. Bunun yapılması her C özel durum ayrı olarak belirli bir C++ tarafından işlenebilen **catch** işleyicisini, yerine tüm bunları tek bir işleyici.
+Yukarıdaki gibi basit bir örnekte C özel durumu yalnızca üç nokta ( **...** ) ile yakalanabilir. **catch** işleyicisi. Özel durumun türü veya doğası hakkında hiçbir bilgi işleyiciye iletilir. Bu yöntem çalışırken, bazı durumlarda her C özel durumunun belirli bir sınıfla ilişkilendirilmesi için iki özel durum işleme modeli arasında bir dönüşüm tanımlamak isteyebilirsiniz. Bir tane dönüştürmek için, belirli bir sınıf türünü C özel durumuna dönüştürmek üzere ' de kullanılabilen veya türetilebilen bir C özel durum "sarmalayıcı" sınıfı tanımlayabilirsiniz. Bu şekilde, her C özel durumu tek bir işleyicide değil, belirli C++ bir **catch** işleyicisi tarafından ayrı olarak işlenebilir.
 
-Bazı üye işlevleri, özel durum değerini belirlemek ve C özel durum modeli tarafından sağlanan genişletilmiş özel durum bağlamı bilgilerini erişim oluşan bir arabirim, sarmalayıcı sınıfı olabilir. Varsayılan bir oluşturucu ve kabul eden bir kurucu tanımlamak isteyebilirsiniz bir **işaretsiz int** (temel alınan C özel durum temsili sağlamak için) bağımsız değişken ve bit düzeyinde bir kopya Oluşturucu. Olası bir uygulaması C özel durum sarmalayıcı sınıfı şöyledir:
+Sarmalayıcı sınıfınız, özel durumun değerini tespit eden bazı üye işlevlerinden oluşan ve C özel durum modeli tarafından sunulan genişletilmiş özel durum bağlam bilgilerine erişen bir arabirime sahip olabilir. Ayrıca, bir varsayılan Oluşturucu ve **işaretsiz bir tamsayı** bağımsız değişkeni kabul eden bir Oluşturucu (temeldeki C özel durum gösterimini sağlamak için) ve bit düzeyinde bir kopya Oluşturucu da tanımlamak isteyebilirsiniz. C özel durum sarmalayıcı sınıfının olası bir uygulamasıdır:
 
 ```cpp
 // exceptions_Exception_Handling_Differences2.cpp
@@ -83,13 +84,13 @@ public:
 };
 ```
 
-Bu sınıf kullanmak için her zaman bir C özel durum iç özel durum işleme mekanizmasını tarafından çağrılan özel bir C özel durum çevirisi işlevi yükleyin. Çeviri işlevinizi içinde herhangi bir türü belirtilmiş özel durumu oluşturabilecek (belki de bir `SE_Exception` türü veya sınıf türü türetilen `SE_Exception`), yakalandı uygun eşleşen C++ tarafından **catch** işleyici. Çeviri işlevi yalnızca geri dönebilirsiniz özel durum işlemedi gösterir. Çeviri işlevi C özel durum harekete geçirirse [sonlandırmak](../c-runtime-library/reference/terminate-crt.md) çağrılır.
+Bu sınıfı kullanmak için, bir C özel durumu oluştuğunda iç özel durum işleme mekanizması tarafından çağrılan özel bir C özel durum çevirisi işlevi yüklersiniz. Çeviri işlevinizde, uygun bir `SE_Exception` eşleşen `SE_Exception` C++ **catch** işleyicisi tarafından yakalanabileceği herhangi bir tür özel durum (Belki de bir tür veya öğesinden türetilmiş bir sınıf türü) oluşturabilirsiniz. Çeviri işlevi bunun yerine, özel durumu işlemediğini belirten döndürebilir. Çeviri işlevinin kendisi bir C özel durumu harekete geçirirse, [Terminate](../c-runtime-library/reference/terminate-crt.md) çağırılır.
 
-Özel çeviri işlevi belirtmek için çağrı [_set_se_translator](../c-runtime-library/reference/set-se-translator.md) tek bağımsız değişken olarak çeviri işlev uygulamanızın adıyla işlevi. Her yığında olan işlev çağrısını için yazdığınız çeviri işlevi bir kez çağrılır **deneyin** engeller. Hiçbir varsayılan çeviri işlevi yoktur; bir çağırarak belirtmezseniz **_set_se_translator**, C özel durumu yalnızca üç nokta yakalanabilir **catch** işleyici.
+Özel bir çeviri işlevi belirtmek için, [_set_se_translator](../c-runtime-library/reference/set-se-translator.md) işlevini çeviri işlevinizin adı ile tek bağımsız değişken olarak çağırın. Yazdığınız çeviri işlevi, **TRY** blokları olan yığında her bir işlev çağrısı için bir kez çağrılır. Varsayılan çeviri işlevi yoktur; **_set_se_translator**çağırarak bir tane belirtmezseniz, C özel durumu yalnızca üç nokta **catch** işleyicisi tarafından yakalanamaz.
 
-## <a name="example---use-a-custom-translation-function"></a>Örnek - Kullanım özel çeviri işlevi
+## <a name="example---use-a-custom-translation-function"></a>Örnek-özel bir çeviri işlevi kullanın
 
-Örneğin, aşağıdaki kod bir özel çeviri işlevi yükler ve ardından tarafından Sarmalanan bir C özel durumu harekete `SE_Exception` sınıfı:
+Örneğin, aşağıdaki kod özel bir çeviri işlevi yüklüyor ve sonra `SE_Exception` sınıfı tarafından Sarmalanan bir C özel durumu oluşturuyor:
 
 ```cpp
 // exceptions_Exception_Handling_Differences3.cpp
@@ -145,4 +146,4 @@ nSE = 0xc0000094
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C (yapılandırılmış) ile C++ özel durumlarını karıştırma](../cpp/mixing-c-structured-and-cpp-exceptions.md)
+[C (yapılandırılmış) ve C++ özel durumları karıştırma](../cpp/mixing-c-structured-and-cpp-exceptions.md)
