@@ -1,85 +1,88 @@
 ---
-title: Linux projeleri adresi temizleyici kullanmak için yapılandırma
-description: Nasıl yapılandırılacağını açıklar C++ adresi temizleyici kullanmak için Visual Studio'da Linux projeleri.
+title: Linux projelerini Adres Temizleyici kullanmak üzere yapılandırma
+description: Adres Temizleme kullanımı için C++ Visual Studio 'da Linux projelerinin nasıl yapılandırılacağını açıklar.
 ms.date: 06/07/2019
-ms.openlocfilehash: 2415e8971614de35f046b699ce99c3822faf9372
-ms.sourcegitcommit: 8adabe177d557c74566c13145196c11cef5d10d4
+ms.openlocfilehash: da7197981a431becfc1231dae96f7542062de675
+ms.sourcegitcommit: b3d19b5f59f3a5d90c24f9f16c73bad4c5eb6944
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66823571"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71195894"
 ---
-# <a name="configure-linux-projects-to-use-address-sanitizer"></a>Linux projeleri adresi temizleyici kullanmak için yapılandırma
+# <a name="configure-linux-projects-to-use-address-sanitizer"></a>Linux projelerini Adres Temizleyici kullanmak üzere yapılandırma
 
-Visual Studio 2019 içinde sürüm 16.1, Linux projelere AddressSanitizer (IsObject) destek tümleşiktir. IsObject MSBuild tabanlı Linux projeleri ve CMake projeleri için etkinleştirebilirsiniz. Linux (WSL) için Uzak Linux sistemlerinde ve Windows alt sisteminde çalışır.
+Visual Studio 2019 sürüm 16,1 ' de, Addresstemizleme (ASan) desteği Linux projeleriyle tümleşiktir. ASan 'ı hem MSBuild tabanlı Linux projeleri hem de CMake projeleri için etkinleştirebilirsiniz. Bu, uzak Linux sistemleri ve Linux için Windows alt sistemi (WSL) üzerinde çalışmaktadır.
 
-## <a name="about-asan"></a>IsObject hakkında
+## <a name="about-asan"></a>ASan hakkında
 
-IsObject olan bir c çalışma zamanı bellek hatası algılayıcısı /C++ , aşağıdaki hataları yakalar:
+ASan, C/C++ için aşağıdaki hataları yakalayan bir çalışma zamanı belleği hata algılayıcısı:
 
-- Ücretsiz (Sallantıdaki işaretçi başvurusu sonra) kullanın
-- Yığın arabellek taşması
-- Yığın arabellek taşması
-- Sonra iade kullanın
-- Sonra kapsam kullanın
+- Ücretsiz (Dangling işaretçi başvurusu) sonra kullanın
+- Yığın arabelleği taşması
+- Yığın arabelleği taşması
+- Döndürmeden sonra kullan
+- Kapsamdan sonra kullan
 - Başlatma sırası hataları
 
-IsObject bir hata algıladığında, yürütmeyi hemen durdurur. Hata ayıklayıcıda bir IsObject etkin programı çalıştırırsanız, hata, bellek adresi ve hatanın oluştuğu kaynak dosya konumu türünü açıklayan bir ileti görürsünüz:
+ASan bir hata algıladığında, yürütmeyi hemen sonlandırır. Hata ayıklayıcıda ASan özellikli bir programı çalıştırırsanız hata türünü, bellek adresini ve hatanın oluştuğu kaynak dosyadaki konumu açıklayan bir ileti görürsünüz:
 
-   ![IsObject hata iletisi](media/asan-error.png)
+   ![ASan hata iletisi](media/asan-error.png)
 
-Ayrıca, çıkış penceresinin hata ayıklama bölmesinde (burada bozuk bellek ayrılan/serbest bırakıldı dahil olmak üzere) tam IsObject çıkış görüntüleyebilirsiniz.
+Ayrıca, çıkış penceresinin hata ayıklama bölmesinde tam ASan çıkışını (bozuk belleğin ayrıldığı/serbest bırakıldığı dahil olmak üzere) görüntüleyebilirsiniz.
 
-## <a name="enable-asan-for-msbuild-based-linux-projects"></a>IsObject Linux MSBuild tabanlı projeler için etkinleştirin
+## <a name="enable-asan-for-msbuild-based-linux-projects"></a>MSBuild tabanlı Linux projeleri için ASan 'ı etkinleştir
 
-IsObject Linux MSBuild tabanlı projeler için etkinleştirmek için projeyi sağ **Çözüm Gezgini** seçip **özellikleri**. Ardından, gitmek **yapılandırma özellikleri** > **C /C++**  > **Sanitizers**. IsObject derleyici ve bağlayıcı bayrakları etkinleştirilir ve çalışacak şekilde derlenmesi için projenizi gerektirir.
+> [!NOTE]
+> Visual Studio 2019 sürüm 16,4 ' den başlayarak, Linux projeleri için addresstemizme özelliği, **yapılandırma özellikleri** > **C/C++**  > **Etkinleştir adres Temizleme**yoluyla etkinleştirilir.
 
-![IsObject etkinleştirmek için bir MSBuild Projesi](media/msbuild-asan-prop-page.png)
+MSBuild tabanlı Linux projeleri için ASan 'ı etkinleştirmek üzere **Çözüm Gezgini** ' de projeye sağ tıklayın ve **Özellikler**' i seçin. Sonra **yapılandırma özellikleri** > **C/C++**  > **Temizleme**' ye gidin. ASan, derleyici ve bağlayıcı bayrakları aracılığıyla etkinleştirilir ve projenizin iş için yeniden derlenmesi gerekir.
 
-İsteğe bağlı IsObject çalışma zamanı bayrakları giderek geçirebilirsiniz **yapılandırma özellikleri** > **hata ayıklama** > **AddressSanitizer çalışma zamanı bayrakları**. Ekleme veya kaldırma bayrakları için aşağı oka tıklayın.
+![MSBuild projesi için ASan 'ı etkinleştir](media/msbuild-asan-prop-page.png)
 
-![Çalışma zamanı bayrakları IsObject yapılandırın](media/msbuild-asan-runtime-flags.png)
+**Yapılandırma özelliklerine** > giderek > , isteğe bağlı asan**çalışma zamanı bayraklarını geçirebilirsiniz.** Bayrak eklemek veya kaldırmak için aşağı oka tıklayın.
 
-## <a name="enable-asan-for-visual-studio-cmake-projects"></a>Visual Studio CMake projeleri için IsObject etkinleştir
+![ASan çalışma zamanı bayraklarını yapılandırma](media/msbuild-asan-runtime-flags.png)
 
-CMake için IsObject etkinleştirmek için CMakeLists.txt dosyasına sağ **Çözüm Gezgini** ve **CMake proje ayarlarını**.
+## <a name="enable-asan-for-visual-studio-cmake-projects"></a>Visual Studio CMake projeleri için ASan 'ı etkinleştir
 
-Bir Linux yapılandırmasına sahip olduğunuzdan emin olun (örneğin, **Linux hata ayıklama**) iletişim kutusunun sol bölmesinde seçili:
+CMake için ASan 'ı etkinleştirmek üzere **Çözüm Gezgini** Içindeki CMakeLists. txt dosyasına sağ tıklayın ve **CMake ayarlarını proje için**seçin.
+
+İletişim kutusunun sol bölmesinde bir Linux yapılandırmanızın (örneğin, **Linux-Debug**) seçili olduğundan emin olun:
 
 ![Linux hata ayıklama yapılandırması](media/linux-debug-configuration.png)
 
-IsObject seçenekleri altındadır **genel**. IsObject çalışma zamanı bayrakları biçiminde girin "bayrak = value" noktalı virgülle ayrılmış.
+ASan seçenekleri **genel**' in altındadır. ASan çalışma zamanı bayraklarını noktalı virgülle ayırarak "bayrak = value" biçiminde girin.
 
 ![Linux hata ayıklama yapılandırması](media/cmake-settings-asan-options.png)
 
-## <a name="install-the-asan-debug-symbols"></a>IsObject hata ayıklama sembolleri yükle
+## <a name="install-the-asan-debug-symbols"></a>ASan hata ayıklama sembollerini yükler
 
-IsObject Tanılama'yı etkinleştirmek için Uzak Linux makinesinin veya WSL yükleme, hata ayıklama simgeleri (dbg libasan) yüklemeniz gerekir. Yüklediğiniz libasan dbg sürümüne, GCC Linux makinenizde yüklü sürümü bağlıdır:
+ASan tanılamayı etkinleştirmek için, uzak Linux makinenize veya WSL yüklemenize hata ayıklama sembollerini (libasan-DBG) yüklemeniz gerekir. Yüklediğiniz libasan-DBG sürümü, Linux makinenizde yüklü GCC sürümüne bağlıdır:
 
-|**IsObject sürümü**|**GCC sürümü**|
+|**ASan sürümü**|**GCC sürümü**|
 | --- | --- |
-|libasan0|gcc 4.8|
-|libasan2|gcc 5|
-|libasan3|gcc-6|
-|libasan4|gcc 7|
-|libasan5|gcc-8|
+|libasan0|GCC-4,8|
+|libasan2|GCC-5|
+|libasan3|GCC-6|
+|libasan4|GCC-7|
+|libasan5|GCC-8|
 
-Bu komutu kullanarak sahip GCC'ın hangi sürümünün belirleyebilirsiniz:
+Bu komutu kullanarak hangi GCC sürümünü kullandığınızı belirleyebilirsiniz:
 
 ```bash
 gcc --version
 ```
 
-Libasan dbg ihtiyacınız sürümünü görüntülemek için programınızı çalıştırın ve ardından bakmak **hata ayıklama** bölmesinde **çıkış** penceresi. Yüklenen IsObject sürümünü libasan dbg Linux makinenizde gereken sürümüne karşılık gelir. Kullanabileceğiniz **Ctrl + F** penceresinde "libasan" Aranacak. Örneğin, libasan4 varsa, şöyle bir satır bakın:
+İhtiyacınız olan libasan-DBG sürümünü görüntülemek için programınızı çalıştırın ve ardından **Çıkış** penceresinin **hata ayıklama** bölmesine bakın. Yüklenen ASan sürümü, Linux makinenizde gereken libasan-DBG sürümüne karşılık gelir. Pencerede "libasan" aramak için **CTRL + F** ' i kullanabilirsiniz. Örneğin, libasan4 varsa şöyle bir satır görürsünüz:
 
 ```Output
 Loaded '/usr/lib/x86_64-linux-gnu/libasan.so.4'. Symbols loaded.
 ```
 
-Apt ile aşağıdaki komutu kullanın. Linux dağıtım paketlerini IsObject hata ayıklama BITS yükleyebilirsiniz. Bu komut, sürüm 4 yükler:
+Asan hata ayıklama bitlerini aşağıdaki komutla apt kullanan Linux Distro 'lara 'ye yükleyebilirsiniz. Bu komut sürüm 4 ' ü yüklüyor:
 
 ```bash
 sudo apt-get install libasan4-dbg
 ```
 
-Visual Studio IsObject etkinleştirilirse, üst kısmında ister **hata ayıklama** bölmesinde **çıkış** IsObject hata ayıklama sembolleri yükleme penceresi.
+ASan etkinleştirilirse, Visual Studio, ASan hata ayıklama sembollerini yüklemek için **Çıkış** penceresinin **hata ayıklama** bölmesinin en üstünde sizi uyarır.
