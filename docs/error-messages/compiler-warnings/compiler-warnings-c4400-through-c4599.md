@@ -134,12 +134,12 @@ helpviewer_keywords:
 - C4594
 - C4595
 ms.assetid: b07850a5-ae89-48ea-bf9a-f0e30939f9b9
-ms.openlocfilehash: 9f7886a88ebd98d5d7ab1848ea7a788967362ad7
-ms.sourcegitcommit: d3829ae0c3db909f96057755a80665f5ea4896ea
+ms.openlocfilehash: d1a4da3d5e721c85879441a53ef4bc00549b587d
+ms.sourcegitcommit: 389c559918d9bfaf303d262ee5430d787a662e92
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69550449"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71230491"
 ---
 # <a name="compiler-warnings-c4400-through-c4599"></a>C4400 ile C4599 arasındaki derleyici uyarıları
 
@@ -299,13 +299,13 @@ Belgenin bu bölümündeki makaleler, derleyici tarafından oluşturulan uyarı 
 |Derleyici Uyarısı (düzey 1) C4568|'*Function*': hiçbir üye açık geçersiz kılma imzasıyla eşleşmiyor|
 |Derleyici Uyarısı (düzey 3) C4569|'*Function*': hiçbir üye açık geçersiz kılma imzasıyla eşleşmiyor|
 |[Derleyici Uyarısı (düzey 3) C4570](../../error-messages/compiler-warnings/compiler-warning-level-3-c4570.md)|'*Type*': açıkça soyut olarak bildirilmemiş ancak soyut işlevlere sahip|
-|[Derleyici Uyarısı (düzey 4) C4571](../../error-messages/compiler-warnings/compiler-warning-level-4-c4571.md)|Bilgilendirici: catch (...) semantiği, Visual C++ 7,1 sonrasında değişti; yapılandırılmış özel durumlar (SEH) artık yakalanmıyor|
+|[Derleyici Uyarısı (düzey 4) C4571](../../error-messages/compiler-warnings/compiler-warning-level-4-c4571.md)|bilgilendirici: catch (...) semantiği, Visual C++ 7,1 sonrasında değişti; yapılandırılmış özel durumlar (SEH) artık yakalanmıyor|
 |[Derleyici Uyarısı (düzey 1) C4572](../../error-messages/compiler-warnings/compiler-warning-level-1-c4572.md)|[ParamArray] özniteliği/clr altında kullanım dışıdır, '... ' kullanın yerine|
 |Derleyici Uyarısı (düzey 1) C4573|'*Lambda işlevi*' kullanımı derleyicinin ' this ' öğesini yakalamasını gerektiriyor, ancak geçerli varsayılan yakalama modu buna izin vermiyor|
 |Derleyici Uyarısı (düzey 4) C4574|'*Tanımlayıcı*' ' 0 ' olarak tanımlandı: ' #if Identifier ' kullanmak mı istediniz?|
 |Derleyici Uyarısı (düzey 1) C4575|' __vectorcall ' '/CLR ' seçeneğiyle uyumsuz: ' __stdcall ' olarak dönüştürülüyor|
 |Derleyici Uyarısı (düzey 1, hata) C4576|bir başlatıcı listesi tarafından izlenen parantez içine alınmış bir tür, standart olmayan bir açık tür dönüştürme sözdizimidir|
-|Derleyici Uyarısı (düzey 1, kapalı) C4577|' noexcept ', özel durum işleme modu belirtilmediği için kullanıldı; özel durum üzerinde sonlandırma garanti edilmez. /EHsc belirtin|
+|[Derleyici Uyarısı (düzey 1, kapalı) C4577](../../error-messages/compiler-warnings/compiler-warning-level-1-c4577.md)|' noexcept ', özel durum işleme modu belirtilmediği için kullanıldı; özel durum üzerinde sonlandırma garanti edilmez. /EHsc belirtin|
 |Derleyici Uyarısı (düzey 1, hata) C4578|' ABS ': '*Type1*' öğesinden '*type2*' öğesine dönüştürme, veri kaybı olabilir ('*Function*' öğesini veya cmath > #include \<için mi olduğunu mı istediniz?)|
 |[Derleyici Uyarısı (düzey 3) C4580](../../error-messages/compiler-warnings/compiler-warning-level-3-c4580.md)|[Attribute] kullanım dışıdır; Bunun yerine, System:: Attribute veya platform:: Metadata öğesini temel sınıf olarak belirtin|
 |[Derleyici Uyarısı (düzey 1) C4581](../../error-messages/compiler-warnings/compiler-warning-level-1-c4581.md)|kullanım dışı davranış: ' "*dize*" ', özniteliği işlemek için '*String*' ile değiştirdi|
@@ -318,7 +318,7 @@ Belgenin bu bölümündeki makaleler, derleyici tarafından oluşturulan uyarı 
 |Derleyici Uyarısı (düzey 1) C4588|'*anonymous_structure*': davranış değişikliği: yıkıcı artık örtük olarak çağrılmayacak|
 |Derleyici Uyarısı (düzey 1) C4591|' constexpr ' çağrı derinliği *sayısı* aşıldı (/constexpr: Depth\<numarası >)|
 |Derleyici Uyarısı (düzey 3) C4592|'*Function*': ' constexpr ' çağrı değerlendirmesi başarısız oldu; işlev, çalışma zamanında çağrılır|
-|Derleyici Uyarısı (düzey 1) C4593|'*Function*': ' limit' çağrı değerlendirmesi adım sınırı '*limit*' aşıldı; sınırı artırmak için/constexpr\<: Steps numarası > kullanın|
+|Derleyici Uyarısı (düzey 1) C4593|'*Function*': '*limit'* çağrı değerlendirmesi adım sınırı ' limit ' aşıldı; sınırı artırmak için/constexpr\<: Steps numarası > kullanın|
 |Derleyici Uyarısı (düzey 3) C4594|'*Type*': bir özel durum oluşturulursa yıkıcı örtük olarak çağrılmayacak|
 |Derleyici Uyarısı (düzey 1) C4595|'*Type*': davranış değişikliği: bir özel durum oluşturulursa yıkıcı artık örtük olarak çağrılmayacak|
 |[Derleyici Uyarısı (düzey 4) C4596](../../error-messages/compiler-warnings/c4596.md)|'*tanımlayıcı*': üye bildiriminde geçersiz nitelenmiş ad|

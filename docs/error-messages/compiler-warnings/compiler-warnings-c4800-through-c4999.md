@@ -63,8 +63,6 @@ f1_keywords:
 - C5042
 - C5043
 - C5044
-- C5045
-- C5046
 - C5047
 - C5048
 - C5049
@@ -74,7 +72,6 @@ f1_keywords:
 - C5102
 - C5103
 - C5104
-- C5105
 - C5106
 - C5107
 helpviewer_keywords:
@@ -139,8 +136,6 @@ helpviewer_keywords:
 - C5042
 - C5043
 - C5044
-- C5045
-- C5046
 - C5047
 - C5048
 - C5049
@@ -150,15 +145,14 @@ helpviewer_keywords:
 - C5102
 - C5103
 - C5104
-- C5105
 - C5106
 - C5107
-ms.openlocfilehash: ae73d4ba503dfbbc27f91040c31beb91da3b7e54
-ms.sourcegitcommit: 9d4ffb8e6e0d70520a1e1a77805785878d445b8a
+ms.openlocfilehash: 7e715dcbac9dc59fe09ee1f917c02a23b3c4db14
+ms.sourcegitcommit: 389c559918d9bfaf303d262ee5430d787a662e92
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69631544"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71230470"
 ---
 # <a name="compiler-warnings-c4800-through-c5999"></a>C4800 ile C5999 Arasındaki Derleyici Uyarıları
 
@@ -193,7 +187,7 @@ Belgenin bu bölümündeki makaleler, derleyici tarafından oluşturulan uyarı 
 |Derleyici Uyarısı (düzey 3) C4827|0 parametrelerine sahip ortak bir ' ToString ' yöntemi, sanal ve geçersiz kılma olarak işaretlenmelidir|
 |[Derleyici Uyarısı (düzey 1) C4829](compiler-warning-level-1-c4829.md)|Ana işlev için yanlış parametreler. ' İnt Main (Platform:: array\<Platform:: String ^ > ^ argv) ' düşünün|
 |[Derleyici Uyarısı (düzey 1) C4835](compiler-warning-level-1-c4835.md)|'*değişken*': içe aktarılmış verilerin başlatıcısı, yönetilen kod ilk ana bilgisayar derlemesinde yürütülene kadar çalıştırılmayacak|
-|Derleyici Uyarısı (düzey 4) C4837|trigraf algılandı: '?? ' karakter ' tarafından değiştirilmiş *karakter*|
+|Derleyici Uyarısı (düzey 4) C4837|trigraf algılandı: '?? '*karakter '* tarafından değiştirilmiş *karakter*|
 |[Derleyici Uyarısı (düzey 1) C4838](compiler-warning-level-1-c4838.md)|'*type_1*' öğesinden '*type_2*' öğesine dönüştürme bir daraltma dönüştürmesi gerektirir|
 |[Derleyici Uyarısı (düzey 3) C4839](compiler-warning-level-3-c4839.md)|'*Type*' sınıfının, değişen sayıda bağımsız değişken işleve bağımsız değişken olarak standart olmayan kullanımı|
 |[Derleyici Uyarısı (düzey 4) C4840](compiler-warning-level-4-c4840.md)|'*Type*' sınıfının, değişen sayıda bağımsız değişken işleve bağımsız değişken olarak taşınabilir olmayan kullanımı|
@@ -303,8 +297,8 @@ Belgenin bu bölümündeki makaleler, derleyici tarafından oluşturulan uyarı 
 |Derleyici Uyarısı (düzey 3) C5042|'*declaration*': blok kapsamındaki işlev bildirimleri, standart C++içinde ' inline ' olarak belirtilemez; ' inline ' belirticisini kaldır|
 |Derleyici Uyarısı (düzey 2) C5043|'*Belirtim*': özel durum belirtimi önceki bildirimle eşleşmiyor|
 |Derleyici Uyarısı (düzey 4) C5044|Komut satırı seçenek *seçeneği* için bir bağımsız değişken var olmayan bir '*Path*' yolunu işaret eder|
-|[Derleyici Uyarısı C5045](c5045.md)|/Qspectre anahtarı belirtilmişse, derleyici bellek yüklemesi için Spectre hafifletme ekleyecektir|
-|[Derleyici Uyarısı (düzey 2) C5046](c5046.md)|'*Function*': İç bağlantıya sahip türü içeren simge tanımlı değil|
+| [Derleyici Uyarısı C5045](c5045.md) | /Qspectre anahtarı belirtilmişse, derleyici bellek yüklemesi için Spectre hafifletme ekleyecektir |
+| [Derleyici Uyarısı (düzey 2) C5046](c5046.md) | '*Function*': İç bağlantıya sahip türü içeren simge tanımlı değil |
 | Derleyici Uyarısı (düzey 1) C5047 | modüller ile\_varsa \_standart olmayan \_kullanımı desteklenmez |
 | Derleyici Uyarısı (düzey 1) C5048 | '*Makroadı*' makrosunun kullanımı, belirleyici olmayan bir çıkışa neden olabilir |
 | Derleyici Uyarısı (düzey 1) C5049 | '*String*': Tam bir yolu gömmek makineye bağımlı çıkışa neden olabilir |
@@ -314,7 +308,7 @@ Belgenin bu bölümündeki makaleler, derleyici tarafından oluşturulan uyarı 
 | Derleyici Uyarısı (düzey 1) C5102 | Geçersiz komut satırı makro tanımı '*Value*' yoksayılıyor |
 | Derleyici Uyarısı (düzey 1) C5103 | '*token1*' ve '*token2*' yapıştırma geçerli bir ön işleme belirtecine neden olmaz |
 | Derleyici Uyarısı (düzey 1) C5104 | makro değiştirme listesinde '*Dize1*#*dize2*' bulundu, '*Dize1*"" #*dize2*' mi demek istediniz? |
-| Derleyici Uyarısı (düzey 1) C5105 | ' Defined ' üreten makro genişletmesi tanımsız davranışa sahip |
+| [Derleyici Uyarısı (düzey 1) C5105](c5105.md) | ' Defined ' üreten makro genişletmesi tanımsız davranışa sahip |
 | Derleyici Uyarısı (düzey 1) C5106 | makro farklı parametre adlarıyla yeniden tanımlandı |
 | Derleyici Uyarısı (düzey 1) C5107 | Sonlandırıcı '*char*' karakteri eksik |
 

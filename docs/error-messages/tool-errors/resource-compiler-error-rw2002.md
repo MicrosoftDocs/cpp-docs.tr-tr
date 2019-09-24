@@ -6,159 +6,159 @@ f1_keywords:
 helpviewer_keywords:
 - RW2002
 ms.assetid: b1d1a49b-b50b-4b0b-9f09-c7762e2dbe8f
-ms.openlocfilehash: 4cd922fff691b524ec9d278ac5948992fc096e09
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1726e6ce74dfd7b6b0c6e4b69771a826cdf07774
+ms.sourcegitcommit: 389c559918d9bfaf303d262ee5430d787a662e92
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62396801"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71230415"
 ---
 # <a name="resource-compiler-error-rw2002"></a>Kaynak Derleyicisi Hatası RW2002
 
 Ayrıştırma hatası
 
-### <a name="to-fix-by-checking-the-following-possible-causes"></a>Aşağıdaki olası nedenleri kontrol ederek düzeltmek için
+### <a name="to-fix-by-checking-the-following-possible-causes"></a>Aşağıdaki olası nedenleri denetleyerek onarmak için
 
-1. **Hızlandırıcı türü (ASCII veya VIRTKEY'e) gerekli**
+1. **Hızlandırıcı türü gerekli (ASCII veya VIRTKEY)**
 
-   `type` Alanındaki **HIZLANDIRICILARI** deyimi ASCII veya VIRTKEY'e değer içermesi gerekir.
+   `type` **Hızlandırıcılar** deyimindeki alan, ASCII ya da virtkey değerini içermelidir.
 
-1. **Hızlandırıcı tablosunu beklenen BEGIN**
+1. **Hızlandırıcı tablosunda başlatma bekleniyor**
 
-   **Başlamak** anahtar sözcüğü hemen izlemelidir **HIZLANDIRICILARI** anahtar sözcüğü.
+   **BEGIN** anahtar sözcüğü, **Hızlandırıcılar** anahtar sözcüğünü hemen izlemelidir.
 
-1. **İletişim kutusunda beklenen BEGIN**
+1. **İletişim kutusunda BEGIN bekleniyor**
 
-   **Başlamak** anahtar sözcüğü hemen izlemelidir **iletişim** anahtar sözcüğü.
+   **BEGIN** anahtar sözcüğü hemen **iletişim kutusuna** gelmelidir.
 
-1. **Başlangıç menüsünde bekleniyor**
+1. **Menüde BEGIN bekleniyor**
 
-   **Başlamak** anahtar sözcüğü hemen izlemelidir **menü** anahtar sözcüğü.
+   **BEGIN** anahtar sözcüğü hemen **menü** anahtar sözcüğünü izlemelidir.
 
-1. **RCData içinde beklenen BEGIN**
+1. **RCData 'da BEGIN bekleniyor**
 
-   **Başlamak** anahtar sözcüğü hemen izlemelidir **RCDATA** anahtar sözcüğü.
+   **BEGIN** anahtar sözcüğü, **rcdata** anahtar sözcüğünü hemen izlemelidir.
 
-1. **Dize tablosunda beklenen BEGIN anahtar sözcüğü**
+1. **Dize tablosunda BEGIN anahtar sözcüğü bekleniyor**
 
-   **Başlamak** anahtar sözcüğü hemen izlemelidir **STRINGTABLE** anahtar sözcüğü.
+   **BEGIN** anahtar sözcüğü, **StringTable** anahtar sözcüğünü hemen izlemelidir.
 
-1. **Dize sabitleri yeniden kullanamazsınız**
+1. **Dize sabitleri yeniden kullanılamaz**
 
-   İki kez içinde aynı değere kullanmakta olduğunuz bir **STRINGTABLE** deyimi. Ondalık ve onaltılık değerlerini çakışan karıştırma değil emin olun. Her kimliği bir **STRINGTABLE** benzersiz olması gerekir. En yüksek düzey verimlilik için 16 bir Çoklu Başlangıç bitişik sabitleri kullanın.
+   **StringTable** bildiriminde aynı değeri iki kez kullanıyorsunuz. Çakışan ondalık ve onaltılık değerleri karıştırdığınızdan emin olun. **StringTable** içindeki her bir kimlik benzersiz olmalıdır. En yüksek verimlilik için, 16 ' dan başlayan bitişik sabitleri kullanın.
 
-1. **Denetim karakteri je mimo rozsah [^ A - ^ Z]**
+1. **Denetim karakteri Aralık dışında [^ A-^ Z]**
 
-   Bir denetim karakteri **HIZLANDIRICILARI** deyimi geçerli değil. Giriş işaretini aşağıdaki karakter (**^**) arasında olmalıdır A-Z, kapsamlı.
+   **Hızlandırıcılar** deyimindeki bir denetim karakteri geçersiz. Şapka işaretini () izleyen karakter **^** ve Z (dahil) arasında olmalıdır.
 
-1. **Boş Menü izin verilmiyor**
+1. **Boş menülere izin verilmiyor**
 
-   Bir **son** anahtar sözcüğü görünür menü öğeleri tanımlanan önce **menü** deyimi. Kaynak Derleyicisi boş menüleri izin vermez. Tüm açık tırnak içine sahip olmadığınız emin **menü** deyimi.
+   Bir **End** anahtar sözcüğü **menü** ifadesinde herhangi bir menü öğesi tanımlanmadan önce görüntülenir. Kaynak derleyicisi boş menülere izin vermiyor. **Menü** bildiriminde açık tırnak işareti olmadığından emin olun.
 
-1. **Son iletişim kutusunda bekleniyor**
+1. **İletişim kutusunda BITIŞ bekleniyor**
 
-   **Son** anahtar sözcüğü, sonunda gerçekleşmelidir bir **iletişim** deyimi. Önceki deyimin sol hiçbir açık tırnak işareti olmadığından emin olun.
+   **End** anahtar sözcüğü bir **iletişim kutusu** ifadesinin sonunda gerçekleşmelidir. Yukarıdaki deyimden kalan açık tırnak bulunmadığından emin olun.
 
-1. **Son menüde bekleniyor**
+1. **Menüde BITIŞ bekleniyor**
 
-   **Son** anahtar sözcüğü, sonunda gelmelidir bir **menü** deyimi. Sahip olmadığınız açık tüm tırnak işaretlerini veya eşleşmeyen bir çift emin **başlamak** ve **son** deyimleri.
+   **End** anahtar sözcüğü bir **menü** ifadesinin sonunda gelmelidir. Açık tırnak işaretleri veya eşleşmeyen bir **Başlangıç** ve **bitiş** deyimleri çiftinin olmadığından emin olun.
 
-1. **Hızlandırıcı tablo beklenen virgülle**
+1. **Hızlandırıcı tablosunda virgül bekleniyor**
 
-   Kaynak Derleyicisi arasına virgül gerektirir `event` ve *idvalue* alanlarını **HIZLANDIRICILARI** deyimi.
+   Kaynak derleyicisi, `event` **Hızlandırıcılar** deyimindeki ve *ıdvalue* alanları arasında virgül gerektirir.
 
 1. **Beklenen denetim sınıfı adı**
 
-   `class` Alanını bir **denetimi** deyiminde **iletişim** deyimi aşağıdaki türlerden biri olmalıdır: DÜĞME, COMBOBOX, düzenleme, liste kutusu, kaydırma çubuğu, statik veya kullanıcı tanımlı. Sınıf doğru yazıldığından emin olun.
+   **İletişim deyimindeki** bir **Denetim** ifadesinin alanıaşağıdakitürlerdenbiriolmalıdır:`class` DÜĞME, AÇıLAN kutusu, düzenleme, LISTBOX, KAYDıRMA çubuğu, STATIK veya Kullanıcı tanımlı. Sınıfın doğru yazıldığından emin olun.
 
-1. **Yazı tipi adını bekleniyor**
+1. **Beklenen yazı tipi yüzü adı**
 
-   *Yazı tipi* yazı tipi seçeneğinin alan **iletişim** deyimi, çift tırnak işareti içine alınmış bir ASCII karakter dizesi olmalıdır. Bu alan bir yazı tipinin adını belirtir.
+   **İletişim** deyimindeki FONT *seçeneğinin yazı tipi alanı,* çift tırnak IŞARETI içine alınmış bir ASCII karakter dizesi olmalıdır. Bu alan bir yazı tipinin adını belirtir.
 
-1. **MenuItem için beklenen kimlik değeri**
+1. **MenuItem için beklenen KIMLIK değeri**
 
-   **Menü** deyimi içermelidir bir *menuID* alanı adı ya da menü kaynağı tanımlayan numara belirtir.
+   **Menü** Ifadesinin bir *menuid* alanı içermesi gerekir ve bu, menü kaynağını tanımlayan adı veya sayıyı belirtir.
 
-1. **Menü beklenen dize**
+1. **Beklenen menü dizesi**
 
-   Her **MENUITEM** ve **açılan** deyimi içermelidir bir *metin* çift tırnak işareti menü öğesi ya da açılan adını belirten dize alanı menüsü. A **MENUITEM AYIRICI** alıntılanmış dize ifadesi gerektirir.
+   Her **MenuItem** ve **Popup** deyimlerinin, menü öğesinin veya açılan menünün adını belirten çift tırnak işareti içine alınmış bir dize olan bir *metin* alanı içermesi gerekir. **MENUıTEM ayırıcı** deyimleri, tırnak işareti gerektirmez.
 
-1. **komut sayısal değer bekleniyor**
+1. **Beklenen sayısal komut değeri**
 
-   Kaynak derleyicisi bir sayısal bekliyordu *idvalue* alanındaki **HIZLANDIRICILARI** deyimi. Kullandığınız emin bir `#define` sabit değeri belirtin ve sabiti doğru yazıldığından.
+   Kaynak derleyicisi, **Hızlandırıcılar** bildiriminde bir sayısal *ıdvalue* alanı bekliyordu. Değeri belirtmek için bir `#define` sabit kullandıysanız ve sabitin doğru yazıldığından emin olun.
 
-1. **Sayısal sabit dize tablosunda bekleniyor**
+1. **Dize tablosunda sayısal sabit bekleniyor**
 
-   Bir sayısal sabit tanımlanmış bir `#define` deyimi, hemen izlemelidir **başlamak** anahtar sözcüğü bir **STRINGTABLE** deyimi.
+   Bir `#define` ifadede tanımlanan sayısal bir sabit, bir **StringTable** deyimindeki **BEGIN** anahtar sözcüğünü hemen izlemelidir.
 
-1. **Sayısal punto boyutu bekleniyor**
+1. **Beklenen sayısal nokta boyutu**
 
-   *Pointsize* yazı tipi seçeneğinin alan **iletişim** deyimi, bir tamsayı noktası boyut değeri olmalıdır.
+   **İletişim** deyimindeki yazı tipi seçeneğinin *Pointsize* alanı bir tamsayı noktası boyutu değeri olmalıdır.
 
-1. **Sayısal iletişim sabiti bekleniyordu**
+1. **Sayısal iletişim kutusu sabiti bekleniyor**
 
-   A **iletişim** çalıştın için tamsayı değerleri *x, y, genişlik*, ve *yükseklik* alanları. Bu değerlerden sonra yer aldığından emin olun **iletişim** anahtar sözcüğü ve negatif olduklarını değil.
+   Bir **Iletişim kutusu** , *x, y, Genişlik*ve *Yükseklik* alanları için tamsayı değerleri gerektirir. Bu değerlerin, **iletişim** anahtar sözcüğünden sonra eklendiğinden ve olumsuz olmadıklarından emin olun.
 
-1. **STRINGTABLE beklenen dize**
+1. **STRINGTABLE içinde beklenen dize**
 
-   Bir dizeyi her birinden sonra beklenen *stringıd* değerini bir **STRINGTABLE** deyimi.
+   **StringTable** deyimindeki her *strıngıd* değerinden sonra bir dize bekleniyor.
 
 1. **Beklenen dize veya sabit Hızlandırıcı komutu**
 
-   Kaynak Derleyicisi ne tür bir anahtar Hızlandırıcı için ayarlanan belirlemek mümkün değildi. `event` Alanındaki **HIZLANDIRICILARI** ifade geçersiz olabilir.
+   Kaynak derleyicisi hızlandırıcı için ne tür bir anahtar ayarlanmakta olduğunu saptayamadı. `event` **Hızlandırıcılar** deyimindeki alan geçersiz olabilir.
 
-1. **KODU için sayı bekleniyor**
+1. **KIMLIK için sayı bekleniyor**
 
-   Bir sayı bekleniyor `id` alan bir denetim deyiminin **iletişim** deyimi. Bir sayı olduğundan emin olun veya `#define` denetim kimliğini for deyimi
+   **İletişim** deyimindeki bir denetim ifadesinin `id` alanı için bir sayı bekleniyor. Denetim kimliği için bir sayı veya `#define` deyiminiz olduğundan emin olun.
 
-1. **İletişim kutusu sınıfında alıntılanmış dize bekleniyor**
+1. **İletişim sınıfında tırnak içinde dize bekleniyor**
 
-   `class` Alan sınıfı seçeneğinin **iletişim** deyimi, bir tamsayı ya da çift tırnak işareti içine alınmış bir dize olmalıdır.
+   **DIALOG deyimindeki** Class seçeneğinin alanı,çifttırnakişaretiiçinealınmışbirtamsayıveyadize`class` olmalıdır.
 
-1. **İletişim başlığı alıntılanmış dize bekleniyor**
+1. **İletişim kutusunda tırnak işaretli dize bekleniyor**
 
-   `captiontext` Açıklamalı alt yazı seçeneğinin alan **iletişim** deyimi, çift tırnak işareti içine alınmış bir ASCII karakter dizesi olmalıdır.
+   DIALOG `captiontext` deyimindeki CAPTION seçeneğinin alanı, çift tırnak işareti içine alınmış bir ASCII karakter dizesi olmalıdır.
 
-1. **Soubor nebyl nalezen: dosya adı**
+1. **Dosya bulunamadı: dosya adı**
 
-   Kaynak derleyici komut satırında belirtilen dosya bulunamadı. Dosya başka bir dizine taşınmış olan ve dosya adı veya yolu olup doğru yazıldığından olmadığını kontrol edin. Dosyaları kullanmak için aranır **INCLUDE** ortam değişkeni veya varsa Workbench Visual ayarı.
+   Kaynak derleyicisi komut satırında belirtilen dosya bulunamadı. Dosyanın başka bir dizine taşınıp taşınmadığını ve dosya adının veya yolun doğru yazıldığından emin olun. Dosyalar, varsa **Include** ortam değişkeni veya Visual Studio ayarı kullanılarak aranır.
 
 1. **Yazı tipi adları sıra sayıları olmalıdır**
 
-   *Pointsize* yazı tipi ifade alanında bir dize değil bir tamsayı olmalıdır.
+   FONT deyimindeki *Pointsize* alanı bir dize değil tamsayı olmalıdır.
 
 1. **Geçersiz Hızlandırıcı**
 
-   Bir `event` alanındaki **HIZLANDIRICILARI** deyimi tanınmadı veya ikiden fazla karakter uzunluğunda olan.
+   Hızlandırıcılar `event` deyimindeki bir alan tanınmıyor veya en fazla iki karakter uzunluğunda.
 
-1. **Geçersiz Hızlandırıcı türü (ASCII veya VIRTKEY'e)**
+1. **Geçersiz Hızlandırıcı türü (ASCII veya VIRTKEY)**
 
-   `type` Alanındaki **HIZLANDIRICILARI** deyimi ASCII veya VIRTKEY'e değer içermesi gerekir.
+   `type` **Hızlandırıcılar** deyimindeki alan, ASCII ya da virtkey değerini içermelidir.
 
 1. **Geçersiz denetim karakteri**
 
-   Bir denetim karakteri **HIZLANDIRICILARI** deyimi geçerli değil. Geçerli bir denetim karakteri bir şapka (^) (yalnızca) izleyen bir harfi oluşur.
+   **Hızlandırıcılar** deyimindeki bir denetim karakteri geçersiz. Geçerli bir denetim karakteri, bir giriş işaretinden (yalnızca) (^) sonraki bir harfle (yalnızca) oluşur.
 
 1. **Geçersiz denetim türü**
 
-   Her denetim deyiminde bir **iletişim** deyimi aşağıdakilerden biri olmalıdır: CHECKBOX, COMBOBOX, CONTROL, CTEXT, DEFPUSHBUTTON, EDITTEXT, GROUPBOX, ICON, LISTBOX, LTEXT, PUSHBUTTON, RADIOBUTTON, RTEXT, SCROLLBAR. Bu denetim ifadeleri doğru yazıldığından emin olun.
+   Bir **Iletişim kutusundaki** her denetim ifadesinin aşağıdakilerden biri olması gerekir: CHECKBOX, COMBOBOX, CONTROL, CTEXT, DEFBASMA, EDITTEXT, GROUPBOX, ICON, LISTBOX, LTEXT, BASMCON, RADIOBUTTON, RTEXT, KAYDIRMA ÇUBUĞU. Bu denetim deyimlerinin doğru yazıldığından emin olun.
 
 1. **Geçersiz tür**
 
-   Kaynak türü WINDOWS.h dosyasında tanımlı türleri arasında değildi.
+   Kaynak türü, WINDOWS. h dosyasında tanımlanan türler arasında değildi.
 
-1. **Metin dizesi veya sıra denetiminde bekleniyor**
+1. **Denetimde beklenen metin dizesi veya sıra sayısı**
 
-   *Metin* alanını bir **denetimi** deyiminde **iletişim** deyimi, bir metin dizesi veya denetim türü için sıralı bir başvuru olmalıdır. Bir sıra kullanan yaparsanız emin, sahip olduğunuz bir `#define` denetim ifadesi.
+   **İletişim** deyimindeki bir **Denetim** ifadesinin *metin* alanı, denetim türüne bir metin dizesi veya bir sıralı başvuru olmalıdır. Sıra kullanılıyorsa, denetim için bir `#define` deyiminiz olduğundan emin olun.
 
 1. **Eşleşmeyen parantezler**
 
-   Kapattığınız her açık parantez olduğundan emin olun **iletişim** deyimi.
+   **Iletişim kutusunda** tüm açık parantezleri kapattığınızdan emin olun.
 
-1. **RCData beklenmeyen değer**
+1. **RCData içinde beklenmeyen değer**
 
-   *Ham verileri* değerler **RCDATA** deyimi bir tamsayı veya dize olmalıdır, her bir virgülle ayrılmış. Değil virgül bırakın veya bir dize etrafında tırnak işareti kullanıma bırakın emin olun.
+   **Rcdata** deyimindeki *ham veri* değerleri, her biri virgülle ayrılmış tamsayılar veya dizeler olmalıdır. Bir dize etrafında bir virgül bırakmadığınızdan veya tırnak işareti bırakmadığınızdan emin olun.
 
-1. **Bilinmeyen menü alt tür**
+1. **Bilinmeyen menü alt türü**
 
-   *Öğesi tanımını* alanını **menü** deyimi yalnızca içerebilir **MENUITEM** ve **açılan** deyimleri.
+   **Menü** ifadesinin *öğe tanımı* alanı yalnızca **MenuItem** ve **Popup** deyimlerini içerebilir.
