@@ -151,10 +151,10 @@ helpviewer_keywords:
 - CMFCPropertyGridCtrl [MFC], ValidateItemData
 ms.assetid: 95877cae-2311-4a2a-9031-0c8c3cf0a5f9
 ms.openlocfilehash: 20b3bafcdbaf02b0f7e40f0092d7f6661855114d
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.sourcegitcommit: 389c559918d9bfaf303d262ee5430d787a662e92
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
+ms.lasthandoff: 09/25/2019
 ms.locfileid: "69505168"
 ---
 # <a name="cmfcpropertygridctrl-class"></a>CMFCPropertyGridCtrl sınıfı
@@ -585,7 +585,7 @@ void EnableHeaderCtrl(
 'ndaki Üst bilgi denetiminin sol sütununun başlığı. Varsayılan değer **özelliktir**.
 
 *lpszRightColumn*<br/>
-'ndaki Üst bilgi denetiminin sağ sütununun başlığı. Varsayılan değer değeridir.
+'ndaki Üst bilgi denetiminin sağ sütununun başlığı. Varsayılan **değer değeridir.**
 
 ##  <a name="endedititem"></a>CMFCPropertyGridCtrl:: EndEditItem
 
@@ -1508,7 +1508,7 @@ void SetCustomColors(
 
 Herhangi bir parametre için, özellik `((COLORREF)-1)` Kılavuzu denetiminin bu öğesi için varsayılan rengi kullanmak üzere renk değerini belirtin.
 
-Belirli bir özelliğin görünümünü özelleştirmek için, [CMFCPropertyGridProperty](../../mfc/reference/cmfcpropertygridproperty-class.md) sınıfından bir sınıf türetirsiniz ve ardından [CMFCPropertyGridProperty:: OnDrawName](../../mfc/reference/cmfcpropertygridproperty-class.md#ondrawname), CMFCPropertyGridProperty [:: OnDrawValue değerlerini](../../mfc/reference/cmfcpropertygridproperty-class.md#ondrawvalue) [geçersiz kılın CMFCPropertyGridProperty:: OnDrawExpandBox](../../mfc/reference/cmfcpropertygridproperty-class.md#ondrawexpandbox)ve [CMFCPropertyGridProperty:: OnDrawButton](../../mfc/reference/cmfcpropertygridproperty-class.md#ondrawbutton) yöntemleri.
+Belirli bir özelliğin görünümünü özelleştirmek için, [CMFCPropertyGridProperty](../../mfc/reference/cmfcpropertygridproperty-class.md) sınıfından bir sınıf türetirsiniz ve ardından [CMFCPropertyGridProperty:: OnDrawName](../../mfc/reference/cmfcpropertygridproperty-class.md#ondrawname), [CMFCPropertyGridProperty:: OnDrawValue değerlerini](../../mfc/reference/cmfcpropertygridproperty-class.md#ondrawvalue) [geçersiz kılın CMFCPropertyGridProperty:: OnDrawExpandBox](../../mfc/reference/cmfcpropertygridproperty-class.md#ondrawexpandbox)ve [CMFCPropertyGridProperty:: OnDrawButton](../../mfc/reference/cmfcpropertygridproperty-class.md#ondrawbutton) yöntemleri.
 
 ##  <a name="setdescriptionrows"></a>CMFCPropertyGridCtrl:: SetDescriptionRows
 

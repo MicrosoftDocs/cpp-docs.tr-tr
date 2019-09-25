@@ -10,10 +10,10 @@ helpviewer_keywords:
 - canceling parallel tasks [Concurrency Runtime]
 ms.assetid: baaef417-b2f9-470e-b8bd-9ed890725b35
 ms.openlocfilehash: 3a7f9c5720c4bd6a43a1a95f9bc19680ba0a9c1e
-ms.sourcegitcommit: 9d4ffb8e6e0d70520a1e1a77805785878d445b8a
+ms.sourcegitcommit: 389c559918d9bfaf303d262ee5430d787a662e92
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/20/2019
+ms.lasthandoff: 09/25/2019
 ms.locfileid: "69631719"
 ---
 # <a name="cancellation-in-the-ppl"></a>PPL'de İptal
@@ -152,7 +152,7 @@ Bir alt görev zaman alan bir işlem gerçekleştirir ve çalışma zamanına ç
 
 [!code-cpp[concrt-task-tree#6](../../parallel/concrt/codesnippet/cpp/cancellation-in-the-ppl_6.cpp)]
 
-Bu örnek, görev döngüsünün her 100.<sup></sup> yinelemesinde iptal olup olmadığını denetler. İptali için kontrol ettiğiniz sıklık, göreviniz için gereken çalışma miktarına ve iptal etmek için görevlerin ne kadar hızlı bir şekilde yanıt vereceğini bağlıdır.
+Bu örnek, görev döngüsünün<sup>her 100.</sup> yinelemesinde iptal olup olmadığını denetler. İptali için kontrol ettiğiniz sıklık, göreviniz için gereken çalışma miktarına ve iptal etmek için görevlerin ne kadar hızlı bir şekilde yanıt vereceğini bağlıdır.
 
 Üst görev grubu nesnesine erişiminiz yoksa, üst görev grubunun iptal edilip edilmeyeceğini öğrenmek için [concurrency:: is_current_task_group_canceling](reference/concurrency-namespace-functions.md#is_current_task_group_canceling) işlevini çağırın.
 

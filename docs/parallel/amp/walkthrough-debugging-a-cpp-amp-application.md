@@ -8,10 +8,10 @@ helpviewer_keywords:
 - debugging, C++ AMP
 ms.assetid: 40e92ecc-f6ba-411c-960c-b3047b854fb5
 ms.openlocfilehash: 0c9fb5588cfd44c83d8fe72c7c4aede0fedab672
-ms.sourcegitcommit: 9d4ffb8e6e0d70520a1e1a77805785878d445b8a
+ms.sourcegitcommit: 389c559918d9bfaf303d262ee5430d787a662e92
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/20/2019
+ms.lasthandoff: 09/25/2019
 ms.locfileid: "69631591"
 ---
 # <a name="walkthrough-debugging-a-c-amp-application"></a>İzlenecek yol: Bir C++ amp uygulamasında hata ayıklama
@@ -211,7 +211,7 @@ Proje oluşturmaya yönelik yönergeler, kullandığınız Visual Studio sürüm
 
 12. **Önceden derlenmiş üst bilgi** özelliği Için, **önceden derlenmiş üst bilgiler kullanmayan**' ı seçin ve ardından **Tamam** düğmesini seçin.
 
-13. Menü çubuğunda Build**Build Solution**öğesini > seçin.
+13. Menü çubuğunda Build**Build Solution**öğesini **seçin.**  > 
 
 ## <a name="debugging-the-cpu-code"></a>CPU kodunda hata ayıklama
 
@@ -312,7 +312,7 @@ Bu bölümde, `sum_kernel_tiled` işlevinde bulunan kod olan GPU kodunda hata ay
 
 2. **Paralel izleme 1** penceresini Visual Studio 'nun en altına yerleştirin. **Paralel izleme** penceresi tablosunda 32 satır vardır. Her biri, hem GPU Iş parçacıkları penceresinde hem de **Paralel Yığınlar** penceresinde görünen bir GPU iş parçacığına karşılık gelir. Şimdi, değerlerini tüm 32 GPU iş parçacıkları genelinde incelemek istediğiniz ifadeleri girebilirsiniz.
 
-3. **Gözcü Ekle** sütun başlığını seçin, girin `localIdx`ve Enter tuşunu seçin.
+3. **Gözcü Ekle** sütun başlığını seçin `localIdx` **, girin ve Enter tuşunu seçin** .
 
 4. **Gözcü Ekle** sütun başlığını tekrar seçin, yazın `globalIdx`ve **ENTER** tuşunu seçin.
 
@@ -325,7 +325,7 @@ Bu bölümde, `sum_kernel_tiled` işlevinde bulunan kod olan GPU kodunda hata ay
    ![Sıralanmış sonuçlarla paralel izleme penceresi](../../parallel/amp/media/campf.png "Sıralanmış sonuçlarla paralel izleme penceresi") <br/>
    Sıralama sonuçları
 
-   Excel düğmesini seçip **Excel 'de aç**' ı seçerek **paralel Izleme** penceresindeki içeriği Excel 'e aktarabilirsiniz. Geliştirme bilgisayarınızda Excel yüklüyse, içerik içeren bir Excel çalışma sayfası açılır.
+   **Excel düğmesini seçip** **Excel 'de aç**' ı seçerek **paralel izleme** penceresindeki içeriği Excel 'e aktarabilirsiniz. Geliştirme bilgisayarınızda Excel yüklüyse, içerik içeren bir Excel çalışma sayfası açılır.
 
 6. **Paralel izleme** penceresinin sağ üst köşesinde, Boole ifadeleri kullanarak içeriği filtrelemek için kullanabileceğiniz bir filtre denetimi vardır. Filtre `localA[localIdx[0]] > 20000` denetimi metin kutusuna girin ve **ENTER** tuşunu seçin.
 
@@ -378,7 +378,7 @@ GPU iş parçacıklarını, **GPU Iş parçacıkları** penceresinden ya da **pa
 
    Benzer şekilde, **paralel izleme** penceresi tüm dört iş parçacıklarının dondurulmuş olduğunu gösterir.
 
-4. Sonraki dört GPU iş parçacığının 22. satırdaki engelden sonra ilerlemesini ve 30. satırdaki kesme noktasına ulaşmasını sağlamak için menü çubuğunda **Hata Ayıkla** > ' yı seçin. **GPU Iş parçacıkları** penceresi, daha önce dondurulmuş olan dört iş parçacığının dondurulmuş olduğunu ve etkin durumda kaldığını gösterir.
+4. Sonraki dört GPU iş parçacığının 22. satırdaki engelden sonra ilerlemesini ve 30. satırdaki kesme noktasına ulaşmasını**sağlamak için menü** çubuğunda **Hata Ayıkla** > ' yı seçin. **GPU Iş parçacıkları** penceresi, daha önce dondurulmuş olan dört iş parçacığının dondurulmuş olduğunu ve etkin durumda kaldığını gösterir.
 
 5. Menü çubuğunda **Hata Ayıkla**, **devam et**' i seçin.
 

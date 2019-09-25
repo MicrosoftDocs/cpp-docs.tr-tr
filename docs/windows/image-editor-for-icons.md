@@ -43,10 +43,10 @@ helpviewer_keywords:
 - grid settings, Image editor
 ms.assetid: 586d2b8b-0348-4883-a85d-1ff0ddbf14dd
 ms.openlocfilehash: 0f8fe228b804538b6a0d0377f05d79c34e787587
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.sourcegitcommit: 389c559918d9bfaf303d262ee5430d787a662e92
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
+ms.lasthandoff: 09/25/2019
 ms.locfileid: "69514224"
 ---
 # <a name="image-editor-for-icons-c"></a>Simgeler (C++) Için görüntü Düzenleyicisi
@@ -81,7 +81,7 @@ Yalnızca **Görüntü Düzenleyicisi** etkinken görüntülenen **görüntü** 
 |**Seçimi fırça olarak kullan**|Görüntünün bir kısmından özel bir fırça oluşturmanıza olanak sağlar.<br/><br/>Seçiminiz, seçimdeki renkleri görüntüde dağıtan özel bir fırça haline gelir. Seçimin kopyaları sürükleme yolu üzerinde bırakılır. Ne kadar yavaş sürüklediğiniz, daha fazla kopya yapılır.|
 |**Seçimi Kopyala ve Seviyelendir**|Geçerli seçimin bir kopyasını oluşturur ve bu seçimi özetler.<br/><br/>Arka plan rengi geçerli seçimde yer alıyorsa, saydam seçiliyse, bu, dışarıda bırakılır.
 |**Renkleri ayarla**|Resminizin sizin için kullandığınız renkleri özelleştirmenizi sağlayan **özel renk seçiciyi**açar.|
-|**Palet Yükle**|Daha önce bir. pal dosyasına kaydedilen palet renklerini yükleyebilirsiniz.|
+|**Palet Yükle**|Daha önce bir. pal dosyasına kaydedilen palet **renklerini yükleyebilirsiniz.**|
 |**Paleti Kaydet**|Palet renklerini bir. pal dosyasına kaydeder.|
 |**Donuk Çiz**|Seçildiğinde, geçerli seçimi donuk hale getirir.<br/><br/>Kaldırıldığında, geçerli seçimi saydam hale getirir.|
 |**Araç Çubuğu Düzenleyicisi**|[Yeni araç çubuğu kaynağı iletişim kutusunu](../windows/new-toolbar-resource-dialog-box.md)açar.|
@@ -203,7 +203,7 @@ Varsayılan olarak, **Görüntü Düzenleyicisi** gerçek boyutun sol bölmesind
 1. **Görüntü Düzenleyicisi** araç çubuğunda, **Büyüt** aracının sağındaki oku seçin ve alt menüden büyütme faktörünü seçin: **1x**, **2x**, **6x**veya **8X**.
 
    > [!NOTE]
-   > Büyütme aracında listelenenler dışında bir büyütme faktörü seçmek için Hızlandırıcı tuşlarını kullanın.
+   > **Büyütme aracında listelenenler** dışında bir büyütme faktörü seçmek için Hızlandırıcı tuşlarını kullanın.
 
 ### <a name="to-display-or-hide-the-pixel-grid"></a>Piksel kılavuzunu göstermek veya gizlemek için
 

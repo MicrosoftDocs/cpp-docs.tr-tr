@@ -403,10 +403,10 @@ helpviewer_keywords:
 - CDC [MFC], m_hDC
 ms.assetid: 715b3334-cb2b-4c9c-8067-02eb7c66c8b2
 ms.openlocfilehash: bae2f9a5a4f39c4eeffe68cc33e744e44c6800c8
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.sourcegitcommit: 389c559918d9bfaf303d262ee5430d787a662e92
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
+ms.lasthandoff: 09/25/2019
 ms.locfileid: "69507011"
 ---
 # <a name="cdc-class"></a>CDC sınıfı
@@ -1179,7 +1179,7 @@ Chmalların bitiş noktasını tanımlayan noktanın x ve y koordinatlarını be
 
 ( *X1*, *Y1*) ve ( *x2*, *Y2*) parametreleri, üst düzey ve sağ alt köşelerden oluşan bir dikdörtgenin bir parçası olan elips sınırlayıcı bir dikdörtgen sınırlayıcı belirler. ( *X3*, *Y3*) ve ( *x4*, *Y4*) parametreleri, elipsi kesiştiği bir çizginin uç noktalarını belirtir. Bu, seçili kalem kullanılarak çizilir ve seçili fırça kullanılarak doldurulur.
 
-`Chord` İşlev tarafından çizilen Şekil, en fazla genişletilir, ancak sağ ve alt koordinatları içermez. Bu, şeklin yüksekliğinin *Y2* - ve şeklin genişliği *x2* - *x1*olduğu anlamına gelir.
+`Chord` İşlev tarafından çizilen Şekil, en fazla genişletilir, ancak sağ ve alt koordinatları içermez. Bu, şeklin yüksekliğinin *Y2* - *ve şeklin* genişliği *x2* - *x1*olduğu anlamına gelir.
 
 ### <a name="example"></a>Örnek
 
@@ -1471,7 +1471,7 @@ Bir dikdörtgenin mantıksal koordinatlarını belirten bir [Rect](/windows/win3
 Dış kenarlığın sol üst köşesinden (yani kenarlığın kalınlığı) bir dikdörtgenin sol üst köşesine kadar olan öteyi belirtir.
 
 *lpRectLast*<br/>
-Dikdörtgen bir yapının [](/windows/win32/api/windef/ns-windef-rect) veya bir dikdörtgenin konumunun mantıksal koordinatlarını belirten bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesine işaret eder; bu durumda dikdörtgenin orijinal konumu yeniden çizilir.
+Dikdörtgen [bir yapının veya](/windows/win32/api/windef/ns-windef-rect) bir dikdörtgenin konumunun mantıksal koordinatlarını belirten bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesine işaret eder; bu durumda dikdörtgenin orijinal konumu yeniden çizilir.
 
 *sizeLast*<br/>
 Yeniden çizmekte olan özgün dikdörtgenin sol üst köşesinin (yani kenarlığın kalınlığı) dış kenarlığın sol üst köşesinden yer alan öteyi belirtir.
@@ -1592,7 +1592,7 @@ Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Birçok durumda nState *nType* parametresine bağlıdır. Aşağıdaki listede, dört *nType* değeri ve *nState*arasındaki ilişki gösterilmektedir:
+Birçok durumda *nState* *nType* parametresine bağlıdır. Aşağıdaki listede, dört *nType* değeri ve *nState*arasındaki ilişki gösterilmektedir:
 
 - DFC_BUTTON
 
@@ -1949,7 +1949,7 @@ Elips 'in sınırlayıcı dikdörtgenini belirtir. Ayrıca, bu parametre için b
 
 Elipsin ortası, *x1*, *Y1*, *x2*, ve *Y2*veya *lpRect*tarafından belirtilen sınırlayıcı dikdörtgenin ortatdır. Elips geçerli kalemle çizilir ve iç kısmı geçerli fırçayla doldurulur.
 
-Bu işlev tarafından çizilen Şekil, sağ ve alt koordinatları kapsamaz, ancak içermez. Bu, şeklin yüksekliğinin *Y2* - ve şeklin genişliği *x2* - *x1*olduğu anlamına gelir.
+Bu işlev tarafından çizilen Şekil, sağ ve alt koordinatları kapsamaz, ancak içermez. Bu, şeklin yüksekliğinin *Y2* - *ve şeklin* genişliği *x2* - *x1*olduğu anlamına gelir.
 
 Sınırlayıcı dikdörtgenin genişliği veya yüksekliği 0 ise, elips çizilmez.
 
@@ -2323,7 +2323,7 @@ Bitişik karakter hücrelerinin kaynakları arasındaki mesafeyi belirten bir de
 
 Dikdörtgen bölge donuk olabilir (geçerli arka plan rengiyle doldurulmuştur) ve bir kırpma bölgesi olabilir.
 
-*Noseçenekler* 0 Ise ve *lpRect* null ise, işlev dikdörtgen bir bölge kullanmadan cihaz bağlamına metin yazar. Varsayılan olarak, geçerli konum işlev tarafından kullanılmaz veya güncelleştirilmez. Uygulamanın, çağrı `ExtTextOut`yaptığı sırada geçerli konumu güncelleştirmesi gerekiyorsa, uygulama *nFlags* [](#settextalign) `CDC` üye işlevini TA_UPDATECP olarak ayarlanmış şekilde çağırabilir. Bu bayrak ayarlandığında Windows, `ExtTextOut` sonraki çağrılarındaki *x* ve *y* 'yi yoksayar ve bunun yerine geçerli konumu kullanır. Bir uygulama geçerli konumu güncelleştirmek için TA_UPDATECP kullandığında, `ExtTextOut` geçerli konumu önceki metin satırının sonuna veya *lpdxgenişlikleri*tarafından işaret edilen öğenin son öğesi tarafından belirtilen konuma, hangisi olduğuna bağlı olarak ayarlar. ilerisi.
+*Noseçenekler* 0 Ise ve *lpRect* null ise, işlev dikdörtgen bir bölge kullanmadan cihaz bağlamına metin yazar. Varsayılan olarak, geçerli konum işlev tarafından kullanılmaz veya güncelleştirilmez. Uygulamanın `ExtTextOut`, çağrı yaptığı sırada geçerli konumu güncelleştirmesi gerekiyorsa, uygulama *nFlags* `CDC` [üye işlevini TA_UPDATECP olarak ayarlanmış](#settextalign) şekilde çağırabilir. Bu bayrak ayarlandığında Windows, `ExtTextOut` sonraki çağrılarındaki *x* ve *y* 'yi yoksayar ve bunun yerine geçerli konumu kullanır. Bir uygulama geçerli konumu güncelleştirmek için TA_UPDATECP kullandığında, `ExtTextOut` geçerli konumu önceki metin satırının sonuna veya *lpdxgenişlikleri*tarafından işaret edilen öğenin son öğesi tarafından belirtilen konuma, hangisi olduğuna bağlı olarak ayarlar. ilerisi.
 
 ##  <a name="fillpath"></a>CDC:: FillPath
 
@@ -4726,9 +4726,9 @@ Yay uç noktasını belirtir. Bu noktanın, tam olarak yay üzerinde olması ger
 
 Yay Merkezi, *x1*, *Y1*, *x2*ve *Y2* (veya *lpRect*tarafından) tarafından belirtilen sınırlayıcı dikdörtgenin ortatdır. Yayı başlangıç ve bitiş noktaları, *x3*, *Y3*, *x4*ve *Y4* (ya da *ptStart* ve *ptEnd*tarafından) tarafından belirtilir.
 
-Yay, seçili kalemle çizilir ve saatin tersi yönde taşınır. Her bir uç noktadan yay merkezine iki ek çizgi çizilir. Pasta şeklindeki alan, geçerli fırça ile doldurulur. *X3* eşittir *x4* ve *Y3* eşitse,sonuç olarak elips merkezinden noktaya ( *x3*, *Y3*) veya ( *x4*, *Y4*) tek bir çizgi içeren bir elips olur.
+Yay, seçili kalemle çizilir ve saatin tersi yönde taşınır. Her bir uç noktadan yay merkezine iki ek çizgi çizilir. Pasta şeklindeki alan, geçerli fırça ile doldurulur. *X3* eşittir *x4* ve *Y3* *eşitse, sonuç olarak elips*merkezinden noktaya ( *x3*, *Y3*) veya ( *x4*, *Y4*) tek bir çizgi içeren bir elips olur.
 
-Bu işlev tarafından çizilen Şekil, ' i uzatır, ancak sağ ve alt koordinatları içermez. Bu, şeklin yüksekliğinin *Y2* - ve şeklin genişliği *x2* - *x1*olduğu anlamına gelir. Sınırlayıcı dikdörtgenin Width ve yüksekliğinin her ikisi de 2 birimden büyük ve 32.767 birimden az olmalıdır.
+Bu işlev tarafından çizilen Şekil, ' i uzatır, ancak sağ ve alt koordinatları içermez. Bu, şeklin yüksekliğinin *Y2* - *ve şeklin* genişliği *x2* - *x1*olduğu anlamına gelir. Sınırlayıcı dikdörtgenin Width ve yüksekliğinin her ikisi de 2 birimden büyük ve 32.767 birimden az olmalıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -5193,7 +5193,7 @@ Mantıksal birimlerde dikdörtgeni belirtir. Bu parametre için bir `CRect` nesn
 
 Dikdörtgenin iç kısmı geçerli fırça kullanılarak doldurulur.
 
-Dikdörtgen, sağ ve alt koordinatları kapsamaz, ancak içermez. Bu, dikdörtgenin yüksekliğinin *Y2* - ve dikdörtgenin genişliği *x2* - *x1*olduğu anlamına gelir. Dikdörtgenin Width ve Height değeri 2 birimden büyük ve 32.767 birimden az olmalıdır.
+Dikdörtgen, sağ ve alt koordinatları kapsamaz, ancak içermez. Bu, dikdörtgenin yüksekliğinin *Y2* - *ve dikdörtgenin* genişliği *x2* - *x1*olduğu anlamına gelir. Dikdörtgenin Width ve Height değeri 2 birimden büyük ve 32.767 birimden az olmalıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -5342,7 +5342,7 @@ Mantıksal birimlerde sınırlayıcı dikdörtgeni belirtir. Bu parametre için 
 
 Dikdörtgenin iç kısmı geçerli fırça kullanılarak doldurulur.
 
-Bu işlevin çiztiği şekil, sağ ve alt koordinatları içermez. Bu, şeklin yüksekliğinin *Y2* - ve şeklin genişliği *x2* - *x1*olduğu anlamına gelir. Sınırlayıcı dikdörtgenin yüksekliği ve genişliği 2 birimden büyük ve 32.767 birimden az olmalıdır.
+Bu işlevin çiztiği şekil, sağ ve alt koordinatları içermez. Bu, şeklin yüksekliğinin *Y2* - *ve şeklin* genişliği *x2* - *x1*olduğu anlamına gelir. Sınırlayıcı dikdörtgenin yüksekliği ve genişliği 2 birimden büyük ve 32.767 birimden az olmalıdır.
 
 ### <a name="example"></a>Örnek
 

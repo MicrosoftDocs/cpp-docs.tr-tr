@@ -21,10 +21,10 @@ helpviewer_keywords:
 - CNetAddressCtrl [MFC], SetAllowType
 ms.assetid: cb4c6aca-3f49-4b52-b76c-65f57096155b
 ms.openlocfilehash: 5e485c22bcc4bf35f61226d84345102052689f89
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.sourcegitcommit: 389c559918d9bfaf303d262ee5430d787a662e92
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
+ms.lasthandoff: 09/25/2019
 ms.locfileid: "69504529"
 ---
 # <a name="cnetaddressctrl-class"></a>Cnetaddressc$sınıfı

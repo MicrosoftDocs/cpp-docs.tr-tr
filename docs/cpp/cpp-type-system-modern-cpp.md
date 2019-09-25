@@ -4,10 +4,10 @@ ms.date: 11/19/2018
 ms.topic: conceptual
 ms.assetid: 553c0ed6-77c4-43e9-87b1-c903eec53e80
 ms.openlocfilehash: b947bd6955a80e051d1dab81061b4b2bf2ab19c8
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.sourcegitcommit: 389c559918d9bfaf303d262ee5430d787a662e92
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
+ms.lasthandoff: 09/25/2019
 ms.locfileid: "69498636"
 ---
 # <a name="c-type-system-modern-c"></a>C++ Tür Sistemi (Modern C++)
@@ -94,7 +94,7 @@ PI = .75 //Error. Cannot modify const variable.
 
 ## <a name="string-types"></a>Dize türleri
 
-Kesinlikle konuşurken, C++ dilin yerleşik dize türü yoktur; **char** ve **wchar_t** depolama tek karakterler-bir dizeyi tahmin etmek için bu türlerin bir dizisini bildirmeniz gerekir, dizi öğesine en son geçerli karakteri (örneğin, ASCII `'\0'`) geçmiş bir *C stili dize*). C stili dizeler çok daha fazla kodun yazılmasını veya harici dize yardımcı program kitaplığı işlevlerini gerektirmekteydi. Ancak modern C++bir, standart kitaplık türlerine `std::string` (8 bitlik karakter türü karakter dizeleri için) veya `std::wstring` (16 bit **wchar_t**-Type karakter dizeleri için) sahiptir. Bu C++ standart kitaplık kapsayıcıları, herhangi bir uyumlu C++ derleme ortamında yer alan standart kitaplıkların bir parçası olduklarından yerel dize türleri olarak düşünülebilir. Yalnızca bu türleri `#include <string>` programınızda kullanılabilir hale getirmek için yönergesini kullanın. (MFC veya ATL kullanıyorsanız, CString sınıfı da ayrıca kullanılabilir ancak C++ standardının bir parçası değildir.) Boş sonlandırılmış karakter dizilerinin kullanımı (daha önce bahsedilen C stili dizeler) modern C++ içinde önerilmez.
+Kesinlikle konuşurken, C++ dilin yerleşik dize türü yoktur; **char** ve **wchar_t** depolama tek karakterler-bir dizeyi tahmin etmek için bu türlerin bir dizisini bildirmeniz gerekir, dizi öğesine en son geçerli karakteri (örneğin, ASCII `'\0'`) geçmiş bir *C stili dize*). C stili dizeler çok daha fazla kodun yazılmasını veya harici dize yardımcı program kitaplığı işlevlerini gerektirmekteydi. Ancak modern C++bir, standart kitaplık `std::string` türlerine (8 bitlik karakter türü karakter dizeleri için) veya `std::wstring` (16 bit **wchar_t**-Type karakter dizeleri için) sahiptir. Bu C++ standart kitaplık kapsayıcıları, herhangi bir uyumlu C++ derleme ortamında yer alan standart kitaplıkların bir parçası olduklarından yerel dize türleri olarak düşünülebilir. Yalnızca bu türleri `#include <string>` programınızda kullanılabilir hale getirmek için yönergesini kullanın. (MFC veya ATL kullanıyorsanız, CString sınıfı da ayrıca kullanılabilir ancak C++ standardının bir parçası değildir.) Boş sonlandırılmış karakter dizilerinin kullanımı (daha önce bahsedilen C stili dizeler) modern C++ içinde önerilmez.
 
 ## <a name="user-defined-types"></a>Kullanıcı tanımlı türler
 

@@ -21,10 +21,10 @@ helpviewer_keywords:
 - structured exception handling [C++], try-finally
 ms.assetid: 826e0347-ddfe-4f6e-a7bc-0398e0edc7c2
 ms.openlocfilehash: c26b72f7c675a4130f38c515cf71ecc290328ccc
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.sourcegitcommit: 389c559918d9bfaf303d262ee5430d787a662e92
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
+ms.lasthandoff: 09/25/2019
 ms.locfileid: "69498601"
 ---
 # <a name="try-finally-statement"></a>try-finally Deyimi
@@ -74,7 +74,7 @@ Sonlandırma Işleyicisi yürütme sırası
 > [!NOTE]
 > Try-finally davranışı,, gibi **son**kullanılması desteklenen diğer dillerden farklıdır C#.  Tek bir **__try** , **__finally** ve **__except**öğelerinin her ikisine de sahip olabilir.  Her ikisi birlikte kullanılacaksa, bir dış try-except ifadesinin INNER try-finally ifadesini içermesi gerekir.  Her bir bloğun ne zaman yürütüldüğünü belirten kurallar da farklıdır.
 
-Önceki sürümlerle uyumluluk için, **_try**, **_Finally**ve **_leave** , **__try**, **__finally**ve _, derleyici seçeneği [/za \(dil uzantılarını devre dışı bırak dışında __leave için eş anlamlılar ](../build/reference/za-ze-disable-language-extensions.md)belirtildi.
+Önceki sürümlerle uyumluluk için, **_try**, **_Finally**ve _leave, **__try**, **__finally**ve **_,** derleyici seçeneği/za [ \(dil uzantılarını devre dışı bırak dışında __leave için eş anlamlılar ](../build/reference/za-ze-disable-language-extensions.md)belirtildi.
 
 ## <a name="the-__leave-keyword"></a>__leave Anahtar Sözcüğü
 

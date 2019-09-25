@@ -8,10 +8,10 @@ helpviewer_keywords:
 - .pch files, creating
 ms.assetid: e2cdb404-a517-4189-9771-c869c660cb1b
 ms.openlocfilehash: 273d8cf996c2717339dd20dcbc7512f9c62afa8d
-ms.sourcegitcommit: 9d4ffb8e6e0d70520a1e1a77805785878d445b8a
+ms.sourcegitcommit: 389c559918d9bfaf303d262ee5430d787a662e92
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/20/2019
+ms.lasthandoff: 09/25/2019
 ms.locfileid: "69630504"
 ---
 # <a name="precompiled-header-files"></a>Önceden Derlenmiş Başlık Dosyaları
@@ -47,7 +47,7 @@ Herhangi bir C veya C++ kodu önceden derleyebilirsiniz; yalnızca üst bilgi do
 
 Kaynak dosyalarınızın ortak başlık dosyaları kümelerini kullandığını ancak bunları aynı sırada içermediğini veya ön derlemenize kaynak kodu eklemek istediğinizde kodu önceden derleyin.
 
-Önceden derlenmiş üst bilgi seçenekleri [/Rivc 'dir (ön derlenmiş üstbilgi dosyası oluştur)](reference/yc-create-precompiled-header-file.md) ve [/yu (önceden derlenmiş üst bilgi dosyası kullan)](reference/yu-use-precompiled-header-file.md). Ön derlenmiş üst bilgi oluşturmak için **/Yıc** kullanın. İsteğe bağlı [hdrstop](../preprocessor/hdrstop.md) pragma ile kullanıldığında, **/i c** hem üstbilgi dosyalarını hem de kaynak kodu önceden derlemenize olanak tanır. Var olan derlemede var olan bir ön derlenmiş üstbilgiyi kullanmak için **/yu** seçin. Ayrıca, ön derlenmiş üst bilgi için alternatif bir ad sağlamak üzere/n ve/Yu seçenekleriyle **/FP** 'yi de kullanabilirsiniz.
+Önceden derlenmiş üst bilgi seçenekleri [/Rivc 'dir (ön derlenmiş üstbilgi dosyası oluştur)](reference/yc-create-precompiled-header-file.md) ve [/yu (önceden derlenmiş üst bilgi dosyası kullan)](reference/yu-use-precompiled-header-file.md). Ön derlenmiş üst bilgi oluşturmak için **/Yıc** kullanın. İsteğe bağlı [hdrstop](../preprocessor/hdrstop.md) pragma ile kullanıldığında, **/i c** hem üstbilgi dosyalarını hem de kaynak kodu önceden derlemenize olanak tanır. Var olan derlemede var olan bir ön derlenmiş üstbilgiyi kullanmak için **/yu** seçin. Ayrıca, ön derlenmiş üst bilgi için alternatif bir ad sağlamak üzere **/N** ve **/yu** seçenekleriyle **/FP** 'yi de kullanabilirsiniz.
 
 **/Yu** ve **/i c** için derleyici seçeneği başvuru konuları geliştirme ortamında bu işlevselliğe nasıl erişileceni tartışır.
 
