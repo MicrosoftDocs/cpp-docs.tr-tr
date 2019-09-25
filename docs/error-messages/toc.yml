@@ -3852,6 +3852,8 @@
           href: compiler-warnings/compiler-warning-level-4-c4571.md
         - name: Derleyici uyarısı (düzey 1) C4572
           href: compiler-warnings/compiler-warning-level-1-c4572.md
+        - name: Derleyici uyarısı (düzey 1) C4577
+          href: compiler-warnings/compiler-warning-level-1-c4577.md
         - name: Derleyici uyarısı (düzey 3) C4580
           href: compiler-warnings/compiler-warning-level-3-c4580.md
         - name: Derleyici uyarısı (düzey 1) C4581
@@ -4246,8 +4248,10 @@
           href: compiler-warnings/c5038.md
         - name: Derleyici uyarısı C5045
           href: compiler-warnings/c5045.md
-        - name: Derleyici uyarısı (düzey2) C5046
+        - name: Derleyici uyarısı (düzey 2) C5046
           href: compiler-warnings/c5046.md
+        - name: Derleyici uyarısı (düzey 1) C5105
+          href: compiler-warnings/c5105.md
 - name: Derleyici sürümüne göre derleyici uyarıları
   href: compiler-warnings/compiler-warnings-by-compiler-version.md
 - name: Varsayılan olarak kapalı olan derleyici uyarıları
