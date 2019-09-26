@@ -1,14 +1,14 @@
 ---
 title: Windows Çalışma Zamanı C++ Şablon Kitaplığı (WRL)
 ms.date: 11/04/2016
-ms.topic: landing-page
+ms.topic: overview
 ms.assetid: b915afce-553b-44a7-b8dc-0ab601758eb0
-ms.openlocfilehash: 7a92676d198ed9ddffeae9a834ebd358c2c58e90
-ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
+ms.openlocfilehash: 7b99f6429f620b56aec5adbc4b8f15d89cc54264
+ms.sourcegitcommit: 7750e4c291d56221c8893120c56a1fe6c9af60d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70740839"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71274666"
 ---
 # <a name="windows-runtime-c-template-library-wrl"></a>Windows Çalışma Zamanı C++ Şablon Kitaplığı (WRL)
 
@@ -85,7 +85,7 @@ Windows Çalışma Zamanı C++ şablon kitaplığı, küçük ve hızlı com nes
 
 Windows Çalışma Zamanı C++ şablon KITAPLıĞı, UWP uygulamaları IÇIN gerekli com işlevlerini destekler. Bu nedenle, ATL 'den farklıdır çünkü şu şekilde COM özellikleri için doğrudan desteği atlar:
 
-- toplama
+- Toplama
 
 - hisse senedi uygulamaları
 

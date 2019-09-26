@@ -2,13 +2,13 @@
 title: C/C++ dil ve standart kitaplıklar başvurusu
 ms.date: 08/13/2019
 ms.assetid: c26a6682-961a-43ef-ad33-2adc612f69ac
-ms.topic: landing-page
-ms.openlocfilehash: 177bd01ec1564d3a0f3be4c66b9e528796c66e6f
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.topic: overview
+ms.openlocfilehash: 15285b2741167e8c873ac0a45514e7d05e259375
+ms.sourcegitcommit: 7750e4c291d56221c8893120c56a1fe6c9af60d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70218411"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71274708"
 ---
 # <a name="cc-language-and-standard-libraries-reference"></a>C/C++ dil ve standart kitaplıklar başvurusu
 

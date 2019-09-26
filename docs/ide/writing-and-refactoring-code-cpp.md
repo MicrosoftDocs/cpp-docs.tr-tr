@@ -3,13 +3,13 @@ title: Visual Studio 'da C++ kodu düzenleme ve yeniden düzenleme
 description: Kodunuzu biçimlendirmek C++ , gezinmek, anlamak ve yeniden düzenleyin Için Visual Studio 'daki kod düzenleyicisini kullanın.
 ms.date: 05/31/2019
 ms.assetid: 56ffb9e9-514f-41f4-a3cf-fd9ce2daf3b6
-ms.topic: landing-page
-ms.openlocfilehash: 255576bfc4a7eb78a660e5bfb05b0a97a7eb4c34
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.topic: overview
+ms.openlocfilehash: 2da1b38d2f5bb61edb473e5909b76225f214a116
+ms.sourcegitcommit: 7750e4c291d56221c8893120c56a1fe6c9af60d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70221610"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71274784"
 ---
 # <a name="edit-and-refactor-c-code-in-visual-studio"></a>Visual Studio 'da C++ kodu düzenleme ve yeniden düzenleme
 
@@ -134,7 +134,7 @@ Daha fazla bilgi için bkz. [kod sihirbazları Ile Işlevsellik eklemeC++()](../
 
 ##  <a name="refactoring"></a>Yeniden Düzenle
 
-Yeniden düzenlemeler, hızlı eylem bağlam menüsü altında veya düzenleyicide bir ampulye tıklayarak kullanılabilir. [](/visualstudio/ide/perform-quick-actions-with-light-bulbs)  Bazıları Ayrıca **düzenle > yeniden düzenleme** menüsünde de bulunur.  Bu özellikler şunlardır:
+Yeniden düzenlemeler, hızlı eylem bağlam menüsü altında veya [düzenleyicide bir](/visualstudio/ide/perform-quick-actions-with-light-bulbs) ampulye tıklayarak kullanılabilir.  Bazıları Ayrıca **düzenle > yeniden düzenleme** menüsünde de bulunur.  Bu özellikler şunlardır:
 
 * [Yeniden Adlandır](refactoring/rename.md)
 * [İşlevi Ayıkla](refactoring/extract-function.md)
