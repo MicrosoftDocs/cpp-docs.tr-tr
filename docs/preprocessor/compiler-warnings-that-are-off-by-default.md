@@ -5,12 +5,12 @@ helpviewer_keywords:
 - warnings, compiler
 - cl.exe compiler, setting options
 ms.assetid: 69809cfb-a38a-4035-b154-283a61938df8
-ms.openlocfilehash: a8b203c94d4a5af28837627fda1b8e1631dfb0c0
-ms.sourcegitcommit: 7babce70714242cf498ca811eec3695fad3abd03
+ms.openlocfilehash: d497886b22c7a90ab7cda47e46dc13daf297b192
+ms.sourcegitcommit: b4572ffcc71e6bdb0ca23221f9476cfaf4528406
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70220491"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71314474"
 ---
 # <a name="compiler-warnings-that-are-off-by-default"></a>Varsayılan olarak kapalı olan derleyici uyarıları
 
@@ -150,14 +150,7 @@ Aşağıdaki uyarılar, Visual Studio 2015 ve sonraki sürümlerinde varsayılan
 |C5042 (düzey 3)|'*Function*': blok kapsamındaki işlev bildirimleri, standart C++içinde ' inline ' olarak belirtilemez; ' inline ' belirticisini Kaldır <sup>15,5</sup>|
 |[C5045](../error-messages/compiler-warnings/c5045.md)|/Qspectre anahtarı belirtilmişse, derleyici bellek yüklemesi için Spectre risk azaltma ekler <sup>15,7</sup>|
 
-<sup>14,1</sup> bu uyarı, Visual Studio 2015 güncelleştirme 1 ' den başlayarak kullanılabilir. \
-<sup>14,3</sup> bu uyarı, Visual Studio 2015 güncelleştirme 3 ' den başlayarak kullanılabilir. \
-<sup>15,3</sup> bu uyarı, Visual Studio 2017 sürüm 15,3 ' den başlayarak kullanılabilir. \
-<sup>15,5</sup> bu uyarı, Visual Studio 2017 sürüm 15,5 ' den başlayarak kullanılabilir. \
-<sup>15,7</sup> bu uyarı, Visual Studio 2017 sürüm 15,7 ' den başlayarak kullanılabilir. \
-<sup>15,8</sup> bu uyarı, Visual Studio 2017 sürüm 15,8 ' den başlayarak kullanılabilir. \
-<sup>16,0</sup> bu uyarı, Visual STUDIO 2019 RTM 'den başlayarak kullanılabilir. \
-<sup>İzin</sup> [/Permissive-](../build/reference/permissive-standards-conformance.md) derleyici seçeneği ayarlanmadığı takdirde bu uyarı kapalıdır.
+<sup>14,1</sup> bu uyarı, Visual Studio 2015 güncelleştirme 1 ' den başlayarak kullanılabilir.\\ <sup>14,3</sup> bu uyarı, Visual Studio 2015 güncelleştirme 3 ' den başlayarak kullanılabilir.\\ <sup>15,3</sup> bu uyarı, Visual Studio 2017 sürüm 15,3 ' den başlayarak kullanılabilir.\\ <sup>15,5</sup> bu uyarı, Visual Studio 2017 sürüm 15,5 ' den başlayarak kullanılabilir.\\ <sup>15,7</sup> bu uyarı, Visual Studio 2017 sürüm 15,7 ' den başlayarak kullanılabilir.\\ <sup>15,8</sup> bu uyarı, Visual Studio 2017 sürüm 15,8 ' den başlayarak kullanılabilir.\\ <sup>16,0</sup> bu uyarı, Visual STUDIO 2019 RTM 'den başlayarak kullanılabilir.\\ <sup>İzin</sup> [/Permissive-](../build/reference/permissive-standards-conformance.md) derleyici seçeneği ayarlanmadığı takdirde bu uyarı kapalıdır.
 
 ## <a name="warnings-off-by-default-in-earlier-versions"></a>Önceki sürümlerde varsayılan olarak kapatma uyarıları
 
