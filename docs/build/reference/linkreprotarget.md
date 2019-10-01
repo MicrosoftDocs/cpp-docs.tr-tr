@@ -9,12 +9,12 @@ helpviewer_keywords:
 - /LINKREPROTARGET linker option
 - -LINKREPROTARGET linker option
 - linker repro reporting
-ms.openlocfilehash: 4912e8bc64d31e3ecc97ea25783c7329e7d7861c
-ms.sourcegitcommit: 1e6386be9084f70def7b3b8b4bab319a117102b2
+ms.openlocfilehash: d629c4c2665239d03f38569677fa579b6c8d37e0
+ms.sourcegitcommit: a361362354f6ce51eda4ffdb016b81c24cd225cb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "71686840"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71712667"
 ---
 # <a name="linkreprotarget-link-repro-file-name"></a>/LINKREPROTARGET (bağlantıyı yeniden üretme dosya adı)
 
@@ -24,7 +24,7 @@ Bağlayıcı veya kitaplık aracına yalnızca hedef belirtilen dosya adına sah
 
 > **/LINKREPROTARGET:** _dosya adı_
 
-### <a name="arguments"></a>Bağımsız Değişkenler
+### <a name="arguments"></a>Arguments
 
 **/LINKREPROTARGET:** _dosya adı_\
 Filtrelenecek hedef dosya adı. Bağlantı yeniden üretme yalnızca, adlandırılmış dosya çıkış hedefi olduğunda oluşturulur. Boşluk içeren dosya adları çift tırnak içine alınmalıdır. Dosya adı, temel adı ve uzantıyı içermelidir, ancak yolu içermemelidir.
@@ -39,7 +39,9 @@ Bağlantı yeniden oluşturmanın nasıl ve ne zaman oluşturulacağı hakkında
 
 **/LINKREPROTARGET** seçeneğinin herhangi bir etkisi olması için **/LINKREPRO** ve [/Out](out-output-file-name.md) seçeneklerinin ayarlanmış olması gerekir.
 
-### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamında bu bağlayıcı seçeneğini ayarlamak için
+**/LINKREPROTARGET** , Visual Studio 2019 sürüm 16,1 ' den başlayarak kullanılabilir.
+
+### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
 1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual C++ Studio 'da derleyici ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
@@ -49,7 +51,7 @@ Bağlantı yeniden oluşturmanın nasıl ve ne zaman oluşturulacağı hakkında
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
 
-- @No__t-0 ' a bakın.
+- Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.AdditionalOptions%2A>.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

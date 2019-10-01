@@ -10,12 +10,12 @@ helpviewer_keywords:
 - libraries [C++], linking to COFF
 - LINK tool [C++], linker options
 ms.assetid: c1d51b8a-bd23-416d-81e4-900e02b2c129
-ms.openlocfilehash: 23cd1c3ce767cf8046e3439432db795f032dc370
-ms.sourcegitcommit: 1e6386be9084f70def7b3b8b4bab319a117102b2
+ms.openlocfilehash: c7a44be5bb21bf83d621bd57c45713bd01e22cb6
+ms.sourcegitcommit: a361362354f6ce51eda4ffdb016b81c24cd225cb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "71685583"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71712695"
 ---
 # <a name="linker-options"></a>Bağlayıcı seçenekleri
 
@@ -23,13 +23,13 @@ LINK. exe, yürütülebilir (. exe) dosya veya dinamik bağlantı kitaplığı (
 
 Aşağıdaki tabloda LINK. exe seçenekleri listelenmektedir. BAĞLANTı hakkında daha fazla bilgi için bkz.
 
-- [Derleyici denetimli bağlantı seçenekleri](compiler-controlled-link-options.md)
+- [Derleyici Denetimindeki LINK Seçenekleri](compiler-controlled-link-options.md)
 
-- [Giriş dosyalarını bağlama](link-input-files.md)
+- [LINK Giriş Dosyaları](link-input-files.md)
 
-- [BAĞLANTı çıkışı](link-output.md)
+- [LINK Çıktısı](link-output.md)
 
-- [Ayrılmış sözcükler](reserved-words.md)
+- [Ayrılmış Sözcükler](reserved-words.md)
 
 Komut satırında bağlayıcı seçenekleri büyük/küçük harfe duyarlı değildir; Örneğin,/Base ve/BASE aynı şeyi ifade ederler. Her bir seçeneğin komut satırında veya Visual Studio 'da nasıl belirtilme hakkındaki ayrıntılar için bu seçeneğe yönelik belgelere bakın.
 
@@ -41,9 +41,9 @@ Bazı bağlayıcı seçeneklerini belirtmek için, pragma [açıklamasını](../
 |------------|-------------|
 |[@](at-specify-a-linker-response-file.md)|Bir yanıt dosyası belirtir.|
 |[/ALıGN](align-section-alignment.md)|Her bölümün hizalamasını belirtir.|
-|[/ALLOWBıND](allowbind-prevent-dll-binding.md)|DLL 'nin bağlanolamayacağını belirtir.|
-|[/ALLOWıSOLATıON](allowisolation-manifest-lookup.md)|Bildirim arama için davranışı belirtir.|
-|[/APPCONTAıNER](appcontainer-windows-store-app.md)|Uygulamanın bir AppContainer işlem ortamı içinde çalıştırılması gerekip gerekmediğini belirtir.|
+|[/ALLOWBIND](allowbind-prevent-dll-binding.md)|DLL 'nin bağlanolamayacağını belirtir.|
+|[/ALLOWISOLATION](allowisolation-manifest-lookup.md)|Bildirim arama için davranışı belirtir.|
+|[/APPCONTAINER](appcontainer-windows-store-app.md)|Uygulamanın bir AppContainer işlem ortamı içinde çalıştırılması gerekip gerekmediğini belirtir.|
 |[/ASSEMBLYDEBUG](assemblydebug-add-debuggableattribute.md)|@No__t-0 ' i yönetilen bir görüntüye ekler.|
 |[/ASSEMBLYLıNKRESOURCE](assemblylinkresource-link-to-dotnet-framework-resource.md)|Yönetilen bir kaynağa bir bağlantı oluşturur.|
 |[/ASSEMBLYMODULE](assemblymodule-add-a-msil-module-to-the-assembly.md)|Bir Microsoft ara dili (MSIL) modülünün derlemeye içeri aktarılması gerektiğini belirtir.|
@@ -64,7 +64,7 @@ Bazı bağlayıcı seçeneklerini belirtmek için, pragma [açıklamasını](../
 |[/DEPENDENTLOADFLAG](dependentloadflag.md)|Bağımlı DLL yüklerinin varsayılan bayraklarını ayarlar.|
 |[/DLL](dll-build-a-dll.md)|Bir DLL oluşturur.|
 |[/DRıVER](driver-windows-nt-kernel-mode-driver.md)|Çekirdek modu sürücüsü oluşturur.|
-|[/DYNAMıCBASE](dynamicbase-use-address-space-layout-randomization.md)|Adres alanı düzeni rastgele seçme (ASLR) özelliğini kullanarak yükleme zamanında rastgele bir şekilde yeniden temellenebilir bir yürütülebilir görüntü oluşturulup oluşturulmayacağını belirtir.|
+|[/DYNAMICBASE](dynamicbase-use-address-space-layout-randomization.md)|Adres alanı düzeni rastgele seçme (ASLR) özelliğini kullanarak yükleme zamanında rastgele bir şekilde yeniden temellenebilir bir yürütülebilir görüntü oluşturulup oluşturulmayacağını belirtir.|
 |[/ENTRY](entry-entry-point-symbol.md)|Başlangıç adresini ayarlar.|
 |[/errorReport](errorreport-report-internal-linker-errors.md)|İç bağlayıcı hatalarını Microsoft 'a bildirir.|
 |[/EXPORT](export-exports-a-function.md)|Bir işlevi dışa aktarır.|
@@ -75,20 +75,20 @@ Bazı bağlayıcı seçeneklerini belirtmek için, pragma [açıklamasını](../
 |[/GENPROFILE,/FASTGENPROFILE](genprofile-fastgenprofile-generate-profiling-instrumented-build.md)|Bu seçeneklerin her ikisi de profil temelli iyileştirme 'yi (PGO) desteklemek için bağlayıcı tarafından bir. pgd dosyası oluşturmayı belirtir. /GENPROFILE ve/FASTGENPROFILE farklı varsayılan parametreler kullanır.|
 |[/GUARD](guard-enable-guard-checks.md)|Denetim akışı koruyucusu korumasını etkinleştir.|
 |[/HEAP](heap-set-heap-size.md)|Yığının boyutunu bayt cinsinden ayarlar.|
-|[/HıGHENTROPYVA](highentropyva-support-64-bit-aslr.md)|Yüksek entropi 64 bit adres alanı düzeni rastgele seçme (ASLR) için desteği belirtir.|
+|[/HIGHENTROPYVA](highentropyva-support-64-bit-aslr.md)|Yüksek entropi 64 bit adres alanı düzeni rastgele seçme (ASLR) için desteği belirtir.|
 |[/IDLOUT](idlout-name-midl-output-files.md)|. IDL dosyasının ve diğer MıDL çıktı dosyalarının adını belirtir.|
 |[/IGNORE](ignore-ignore-specific-warnings.md)|Belirtilen bağlayıcı uyarılarının çıkışını bastırır.|
 |[/IGNOREıDL](ignoreidl-don-t-process-attributes-into-midl.md)|Öznitelik bilgilerinin bir. IDL dosyasına işlenmesini önler.|
 |[/IMPLıB](implib-name-import-library.md)|Varsayılan içeri aktarma kitaplığı adını geçersiz kılar.|
 |[/INCLUDE](include-force-symbol-references.md)|Sembol başvurularını zorlar.|
 |[/INCREMENTAL](incremental-link-incrementally.md)|Artımlı bağlamayı denetler.|
-|[/INTEGRıTYCHECK](integritycheck-require-signature-check.md)|Modülün yükleme zamanında imza denetimi gerektirdiğini belirtir.|
+|[/INTEGRITYCHECK](integritycheck-require-signature-check.md)|Modülün yükleme zamanında imza denetimi gerektirdiğini belirtir.|
 |[/KEYCONTAINER](keycontainer-specify-a-key-container-to-sign-an-assembly.md)|Bir derlemeyi imzalamak için bir anahtar kapsayıcısı belirtir.|
 |[/KEYFILE](keyfile-specify-key-or-key-pair-to-sign-an-assembly.md)|Bir derlemeyi imzalamak için bir anahtar veya anahtar çiftini belirtir.|
 |[/LARGEADDRESSAWARE](largeaddressaware-handle-large-addresses.md)|Derleyiciye uygulamanın iki gigabayt 'tan daha büyük adresler desteklediğini söyler|
 |[/LıBPATH](libpath-additional-libpath.md)|Ortam kitaplığı yolundan önce aramak için bir yol belirtir.|
 |[/LINKREPRO](linkrepro.md)|' Deki bağlantı yeniden üretme yapıtları oluşturmak için bir yol belirtir.|
-|[/LINKREPROTARGET](linkreprotarget.md)|Yalnızca belirtilen hedef üretilirken bir bağlantı yeniden üretme oluşturur.|
+|[/LINKREPROTARGET](linkreprotarget.md)|Yalnızca belirtilen hedef üretilirken bir bağlantı yeniden üretme oluşturur. <sup>16,1</sup>|
 |[/LTCG](ltcg-link-time-code-generation.md)|Bağlantı zamanı kod oluşturmayı belirtir.|
 |[/MACHıNE](machine-specify-target-platform.md)|Hedef platformu belirtir.|
 |[/MANIFEST](manifest-create-side-by-side-assembly-manifest.md)|Yan yana bildirim dosyası oluşturur ve isteğe bağlı olarak ikiliye katıştırır.|
@@ -126,7 +126,7 @@ Bazı bağlayıcı seçeneklerini belirtmek için, pragma [açıklamasını](../
 |[/TLBıD](tlbid-specify-resource-id-for-typelib.md)|Bağlayıcı tarafından oluşturulan tür kitaplığının kaynak KIMLIĞINI belirtir.|
 |[/TLBOUT](tlbout-name-dot-tlb-file.md)|. Tlb dosyasının ve diğer MıDL çıktı dosyalarının adını belirtir.|
 |[/TSAWARE](tsaware-create-terminal-server-aware-application.md)|Özellikle Terminal Server altında çalışacak şekilde tasarlanan bir uygulama oluşturur.|
-|[YERINE/USEPROFıLE](useprofile.md)|İyileştirilmiş bir görüntü oluşturmak için profil temelli iyileştirme eğitimi verilerini kullanır.|
+|[/USEPROFILE](useprofile.md)|İyileştirilmiş bir görüntü oluşturmak için profil temelli iyileştirme eğitimi verilerini kullanır.|
 |[/VERBOSE](verbose-print-progress-messages.md)|Bağlayıcı ilerleme iletilerini yazdırır.|
 |[/VERSION](version-version-information.md)|Bir sürüm numarası atar.|
 |[/WHOLEARCHIVE](wholearchive-include-all-library-object-files.md)|Belirtilen statik kitaplıklardan her nesne dosyasını içerir.|
@@ -137,7 +137,7 @@ Bazı bağlayıcı seçeneklerini belirtmek için, pragma [açıklamasını](../
 |[/WıNMDDELAYSıGN](winmddelaysign-partially-sign-a-winmd.md)|Ortak anahtarı winmd dosyasına yerleştirerek bir Windows Çalışma Zamanı meta veri (. winmd) dosyasını kısmen imzalar.|
 |[/WX](wx-treat-linker-warnings-as-errors.md)|Bağlayıcı uyarılarını hata olarak değerlendirir.|
 
-Daha fazla bilgi için bkz. [derleyici DENETIMLI bağlantı seçenekleri](compiler-controlled-link-options.md).
+<sup>16,1</sup> Bu seçenek, Visual Studio 2019 sürüm 16,1 ' den başlayarak kullanılabilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
