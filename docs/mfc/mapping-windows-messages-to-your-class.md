@@ -1,5 +1,5 @@
 ---
-title: Windows İletilerini Sınıfınıza Eşleme
+title: Windows Iletilerini sınıfınıza eşleme
 ms.date: 09/06/2019
 helpviewer_keywords:
 - MFC dialog boxes [MFC], Windows messages
@@ -11,14 +11,14 @@ helpviewer_keywords:
 - messages to dialog class [MFC], mapping
 - Class Wizard [MFC]
 ms.assetid: a4c6fd1f-1d33-47c9-baa0-001755746d6d
-ms.openlocfilehash: 49d1a888b148793f82cf214637956589d6b8ff07
-ms.sourcegitcommit: 3caf5261b3ea80d9cf14038c116ba981d655cd13
+ms.openlocfilehash: 0f1207faca56acd709db86478722eba85eeb284a
+ms.sourcegitcommit: 1e6386be9084f70def7b3b8b4bab319a117102b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70907472"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "71685613"
 ---
-# <a name="mapping-windows-messages-to-your-class"></a>Windows İletilerini Sınıfınıza Eşleme
+# <a name="mapping-windows-messages-to-your-class"></a>Windows Iletilerini sınıfınıza eşleme
 
 Windows iletilerini işlemek için iletişim kutusuna ihtiyacınız varsa, uygun işleyici işlevlerini geçersiz kılın. Bunu yapmak için **Çözüm Gezgini** **sınıf görünümü** sekmesini seçin, iletişim kutusunu temsil eden sınıfa sağ tıklayın ve [sınıf Sihirbazı](reference/mfc-class-wizard.md)' nı seçin. İletileri iletişim kutusu sınıfına [eşlemek](../mfc/reference/mapping-messages-to-functions.md) için Sihirbazı kullanın. Bu, her ileti için bir ileti eşleme girişi yazar ve sınıfa ileti işleyici üye işlevlerini ekler. İleti işleyicilerinde kod yazmak için kod düzenleyicisini kullanın.
 
@@ -34,5 +34,5 @@ Ayrıca, [CDialog](../mfc/reference/cdialog-class.md) üye işlevlerini ve temel
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İletişim Kutuları](../mfc/dialog-boxes.md)<br/>
-[Bir İletişim Kutusunun Yaşam Döngüsü](../mfc/life-cycle-of-a-dialog-box.md)
+[İletişim kutuları](../mfc/dialog-boxes.md)<br/>
+[MFC 'de Iletişim kutularıyla çalışma](../mfc/life-cycle-of-a-dialog-box.md)

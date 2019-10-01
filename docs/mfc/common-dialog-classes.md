@@ -1,5 +1,5 @@
 ---
-title: Ortak İletişim Kutusu Sınıfları
+title: Ortak Iletişim kutusu sınıfları
 ms.date: 11/04/2016
 helpviewer_keywords:
 - dialog classes [MFC]
@@ -11,34 +11,34 @@ helpviewer_keywords:
 - dialog classes [MFC], common
 - common dialog boxes [MFC]
 ms.assetid: 5c4f6443-896c-4b05-a7df-8169fdadc71d
-ms.openlocfilehash: 5efd885421d8c73c191e2a5603f37d1df85a5168
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d11d0978763d9599b0471a8e994f15a267f7cb8f
+ms.sourcegitcommit: 1e6386be9084f70def7b3b8b4bab319a117102b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62388533"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "71685553"
 ---
-# <a name="common-dialog-classes"></a>Ortak İletişim Kutusu Sınıfları
+# <a name="common-dialog-classes"></a>Ortak Iletişim kutusu sınıfları
 
-Sınıf ek olarak [CDialog](../mfc/reference/cdialog-class.md), MFC sağlayan çeşitli sınıflar türetilen `CDialog` aşağıdaki tabloda gösterildiği gibi yaygın olarak kullanılan iletişim kutuları, kapsayan. Kapsüllenmiş iletişim kutuları "ortak iletişim kutusu" olarak adlandırılır ve Windows ortak iletişim kitaplığı (COMMDLG. bir parçasıdır DLL). İletişim şablonu kaynaklarına ve bu sınıflar için kod içinde Windows, Windows 3.1 ve sonraki sürümlerde bir parçası olan ortak iletişim kutuları sağlanır.
+MFC, [CDialog](../mfc/reference/cdialog-class.md)sınıfına ek olarak, aşağıdaki tabloda gösterildiği gibi yaygın olarak kullanılan iletişim kutularını kapsülleyen `CDialog` ' den türetilmiş çeşitli sınıflar sağlar. Kapsüllenen iletişim kutuları "ortak iletişim kutuları" olarak adlandırılır ve Windows ortak iletişim kutusu kitaplığının (COMMDLG) bir parçasıdır. DLL). Bu sınıfların iletişim kutusu-şablon kaynakları ve kodu, Windows sürümleri 3,1 ve üzeri bir parçası olan Windows ortak iletişim kutularında verilmiştir.
 
-### <a name="common-dialog-classes"></a>Ortak İletişim Kutusu Sınıfları
+### <a name="common-dialog-classes"></a>Ortak Iletişim kutusu sınıfları
 
-|Türetilen bir iletişim kutusu sınıfı|Amaç|
+|Türetilmiş iletişim kutusu sınıfı|Amaç|
 |--------------------------|-------------|
-|[CColorDialog](../mfc/reference/ccolordialog-class.md)|Kullanıcı Seç renkleri olanak tanır.|
-|[CFileDialog](../mfc/reference/cfiledialog-class.md)|Kullanıcı Seç açmak veya kaydetmek için bir dosya adı sağlar.|
-|[CFindReplaceDialog](../mfc/reference/cfindreplacedialog-class.md)|Bir bulma başlatır veya değiştir işlemini bir metin dosyasındaki kullanıcı sağlar.|
-|[CFontDialog](../mfc/reference/cfontdialog-class.md)|Kullanıcının bir yazı tipi belirtmesine olanak tanır.|
-|[CPrintDialog](../mfc/reference/cprintdialog-class.md)|Kullanıcının bir yazdırma işi için bilgileri belirtmesine olanak tanır.|
-|[CPrintDialogEx](../mfc/reference/cprintdialogex-class.md)|Windows Print özellik sayfası.|
+|[CColorDialog](../mfc/reference/ccolordialog-class.md)|Kullanıcının renk seçmesini sağlar.|
+|[CFileDialog](../mfc/reference/cfiledialog-class.md)|Kullanıcının açılacak veya kaydedilecek bir dosya adı seçmesini sağlar.|
+|[CFindReplaceDialog](../mfc/reference/cfindreplacedialog-class.md)|Kullanıcının bir metin dosyasında bulma veya değiştirme işlemi başlatmasını sağlar.|
+|[CFontDialog](../mfc/reference/cfontdialog-class.md)|Kullanıcının bir yazı tipi belirtmesini sağlar.|
+|[CPrintDialog](../mfc/reference/cprintdialog-class.md)|Kullanıcının bir yazdırma işi için bilgi belirtmesini sağlar.|
+|[CPrintDialogEx](../mfc/reference/cprintdialogex-class.md)|Windows yazdırma özelliği sayfası.|
 
-Tek tek sınıf adları ortak iletişim kutusu sınıfları hakkında daha fazla bilgi için bkz. *MFC başvurusu*. MFC OLE için kullanılan standart iletişim kutusu sınıfları sayısı da sağlar. Temel sınıfı, bu sınıfları hakkında daha fazla bilgi için bkz. [COleDialog](../mfc/reference/coledialog-class.md), *MFC başvurusu*.
+Ortak iletişim kutusu sınıfları hakkında daha fazla bilgi için *MFC başvurusunda*ayrı sınıf adlarına bakın. MFC Ayrıca OLE için kullanılan bir dizi standart iletişim kutusu sınıfı sağlar. Bu sınıflar hakkında daha fazla bilgi için, *MFC başvurusu*içindeki temel sınıf, [Colet iletişim kutusu](../mfc/reference/coledialog-class.md)' na bakın.
 
-MFC içinde üç sınıf iletişim gibi özelliklere sahiptir. Sınıfları hakkında daha fazla bilgi için [CFormView](../mfc/reference/cformview-class.md), [CRecordView](../mfc/reference/crecordview-class.md), ve [CDaoRecordView](../mfc/reference/cdaorecordview-class.md), sınıflara bakın *MFC başvurusu*. Sınıfı hakkında daha fazla bilgi için [CDialogBar](../mfc/reference/cdialogbar-class.md), bkz: [iletişim kutusu çubukları](../mfc/dialog-bars.md).
+MFC 'deki üç diğer sınıfın iletişim benzeri özellikleri vardır. [CFormView](../mfc/reference/cformview-class.md), [CRecordView](../mfc/reference/crecordview-class.md)ve [CDaoRecordView](../mfc/reference/cdaorecordview-class.md)sınıfları hakkında daha fazla bilgi için *MFC başvurusu*içindeki sınıflara bakın. Sınıf [CDialogBar](../mfc/reference/cdialogbar-class.md)hakkında daha fazla bilgi için bkz. [İletişim çubukları](../mfc/dialog-bars.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İletişim Kutuları](../mfc/dialog-boxes.md)<br/>
-[Bir İletişim Kutusunun Yaşam Döngüsü](../mfc/life-cycle-of-a-dialog-box.md)<br/>
-[OLE'deki İletişim Kutuları](../mfc/dialog-boxes-in-ole.md)
+[İletişim kutuları](../mfc/dialog-boxes.md)<br/>
+[MFC 'de Iletişim kutularıyla çalışma](../mfc/life-cycle-of-a-dialog-box.md)<br/>
+[OLE 'deki iletişim kutuları](../mfc/dialog-boxes-in-ole.md)

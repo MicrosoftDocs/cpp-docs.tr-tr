@@ -1,53 +1,54 @@
 ---
-title: Microsoft ile ilgili bir sorun bildirme C++ araç takımı
-ms.date: 06/21/2019
+title: Microsoft C++ araç takımı ile sorun bildirme
+description: Microsoft C++ araç takımı için iyi bir sorun raporu ve yeniden üretme bilgileri oluşturma.
+ms.date: 09/24/2019
 ms.technology: cpp-ide
 author: corob-msft
 ms.author: corob
-ms.openlocfilehash: 13826349836e4c58b7d6a7ce8936186930bc7100
-ms.sourcegitcommit: 6cf0c67acce633b07ff31b56cebd5de3218fd733
+ms.openlocfilehash: 350e902501aca5cbe2b4022ec1f977719844644b
+ms.sourcegitcommit: 1e6386be9084f70def7b3b8b4bab319a117102b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "67344378"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "71685699"
 ---
-# <a name="how-to-report-a-problem-with-the-microsoft-c-toolset-or-documentation"></a>Microsoft ile ilgili bir sorun bildirme C++ araç veya belge
+# <a name="how-to-report-a-problem-with-the-microsoft-c-toolset-or-documentation"></a>Microsoft C++ araç takımı veya belgeleriyle ilgili bir sorunu bildirme
 
-Microsoft sorunlar bulursanız C++ (MSVC) derleyici, bağlayıcı veya diğer araçları ve kitaplıkları istiyoruz hakkında bunları da bilmek. Sorunu belgelerimizde olduğunda, bu konuda, çok bilmek istiyoruz.
+Microsoft C++ DERLEYICISI (MSVC), bağlayıcı veya diğer araç ve kitaplıklarda sorunlar bulursanız, bunları öğrenmek istiyoruz. Sorun belgelerimizde olduğunda, bunun da nasıl olduğunu öğrenmek istiyoruz.
 
-## <a name="how-to-report-a-c-toolset-issue"></a>Bir C++ araç takımı sorun bildirme
+## <a name="how-to-report-a-c-toolset-issue"></a>C++ Araç takımı sorununu bildirme
 
-Bir sorun hakkında bize bildirmek için en iyi yolu, bize keşfettiğinize göre sorunun açıklamasını içeren bir rapor göndermektir. Tüm Ayrıntılar programınızın nasıl oluşturacağınız hakkında sahip olması gerekir. Ve bunu içermelidir bir *yineleme*, kendi makinelerinde sorunu yeniden oluşturmak için kullanabileceğiniz eksiksiz bir test çalışması. Bu bilgiler sorun bizim kodun içinde vardır ve ortamınız için yerel olmayan hızla doğrulamamıza olanak tanır. Bu derleyicinin ve nedenini tanılamak için diğer sürümleri etkilenmediğinizi yardımcı olur.
+Bir sorun hakkında bize bildirmek için en iyi yol, bulduğunuz sorunun açıklamasını içeren bir rapor göndermektir. Programınızı nasıl derlemenize ilişkin tüm ayrıntıları içermelidir. Bu, sorunu kendi makinelerimizde yeniden oluşturmak için kullanabilmemiz için bir yeniden oluşturma ve bir yeniden *üretme*içermelidir. Bu bilgiler, sorunun kodunuzda mevcut olduğunu ve ortamınızda yerel olmadığını hızlı bir şekilde doğrulamamızı sağlar. Derleyicinin diğer sürümlerini etkileyip etkilemediğini ve nedenini tanımamıza yardımcı olur.
 
-Aşağıdaki bölümlerde, iyi bir rapor kılan hakkında okuyun. Bir yineleme, buldunuz sorun türü için oluşturma ve raporunuzu ürün ekibine göndermek nasıl açıklanmaktadır. Raporlarınızı bize ve sizin gibi diğer geliştiriciler için önemlidir. Microsoft geliştirmemize yardımcı olmak için teşekkür ederiz C++!
+Aşağıdaki bölümlerde iyi rapor oluşturma hakkında bilgi edineceksiniz. Bulduğunuz sorun türü için yeniden üretme oluşturmayı ve raporunuzun ürün ekibine nasıl gönderileceğini anlatmaktadır. Raporlarınız bizim için ve sizin gibi diğer geliştiriciler için önemlidir. Microsoft C++'un geliştirmemize yardımcı olduğunuz için teşekkürler!
 
-## <a name="how-to-prepare-your-report"></a>Raporunuzu hazırlamayı öğrenin
+## <a name="how-to-prepare-your-report"></a>Raporunuzu hazırlama
 
-Bize tam bilgi bulunamadı sorunu yeniden oluşturmak zor olduğundan, yüksek kaliteli rapor oluşturmak önemlidir. Daha iyi raporunuzu, daha etkili bir şekilde biz yeniden oluşturabilir ve sorunu tanılayın.
+Tam bilgi olmadan bulduğunuz sorunu yeniden oluşturmamızı zortacağından, yüksek kaliteli bir rapor oluşturulması önemlidir. Raporunuzun ne kadar iyi olduğu, sorunu yeniden oluşturup tanılamanıza daha etkili bir hale getirebiliriz.
 
-En azından raporunuza içermesi gerekir:
+Raporunuzun en azından şunları içermesi gerekir:
 
-- Tam sürüm bilgisi kullandığınız araç.
+- Kullanmakta olduğunuz araç takımının tam sürüm bilgileri.
 
-- Kodunuzu derlemek için kullanılan tam cl.exe komut satırı.
+- Kodunuzu derlemek için kullanılan Full CL. exe komut satırı.
 
-- Bulunan sorunun ayrıntılı bir açıklaması.
+- Bulduğunuz sorunun ayrıntılı bir açıklaması.
 
-- Bir yineleme: sorunu gösteren bir tam, Basitleştirilmiş, kendi içindeki kaynak kod örneği.
+- Yeniden üretme: sorunu gösteren, tam, Basitleştirilmiş, kendi kendine içerilen bir kaynak kodu örneği.
 
-İçin okumaya devam ihtiyacımız belirli bilgiler hakkında daha fazla bilgi edinin ve burada bulabilirsiniz ve nasıl iyi bir yineleme oluşturun.
+İhtiyaç duyduğumuz belirli bilgiler ve nerede bulabileceğiniz ve iyi bir yeniden oluşturma oluşturma hakkında daha fazla bilgi edinmek için okumaya devam edin.
 
-### <a name="the-toolset-version"></a>Araç takımının sürüm
+### <a name="the-toolset-version"></a>Araç kümesi sürümü
 
-Tam sürüm bilgilerini ve hedef mimari soruna neden olan araç ihtiyacımız var. Biz, yineleme aynı araç takımı karşı bizim makinelerde sınayabilmeniz olmasıdır. Sorunu yeniden oluşturabileceğinizi, bu bilgileri ayrıca diğer hangi sürümlerinin araç araştırmak için bir başlangıç noktası olan aynı sorunu sağlıyor.
+Soruna neden olan araç takımının tam sürüm bilgilerine ve hedef mimarisine ihtiyacımız var. Bu nedenle, yeniden oluşturma için makinelerimizde aynı araç setine karşı test yapabiliriz. Sorunu yeniden oluşturamıyorsanız bu bilgiler, araç takımının diğer sürümlerinin aynı soruna sahip olduğunu araştırmak için bir başlangıç noktası da sunar.
 
-#### <a name="to-report-the-full-version-of-your-compiler"></a>Rapora derleyicinizin tam sürümü
+#### <a name="to-report-the-full-version-of-your-compiler"></a>Derleyicinin tam sürümünü raporlamak için
 
-1. Açık **Geliştirici komut istemi** projenizi oluşturmak için kullanılan Visual Studio sürümünüz ve yapılandırmanız mimarisi ile eşleşir. Örneğin, üzerinde x64 x64 için Visual Studio 2017 kullanarak yapı hedefleri seçin **x64 VS 2017 için yerel Araçlar komut istemi**. Daha fazla bilgi için [Geliştirici komut istemi kısayolları](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts).
+1. Projenizi oluşturmak için kullanılan Visual Studio sürümü ve yapılandırma mimarisiyle eşleşen **Geliştirici komut istemi** açın. Örneğin, x64 için x64 hedefleri için Visual Studio 2017 kullanarak derleme yaparsanız, **VS 2017 için x64 yerel araçları komut istemi**seçin. Daha fazla bilgi için bkz. [Geliştirici komut istemi kısayolları](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts).
 
-1. Geliştirici komut istemi konsol penceresinde komutu girin **cl /Bv**.
+1. Geliştirici komut istemi konsol penceresinde **CL/v**komutunu girin.
 
-Çıkış şuna benzemelidir:
+Çıktının şuna benzer olması gerekir:
 
 ```Output
 C:\Users\username\Source>cl /Bv
@@ -66,66 +67,66 @@ Compiler Passes:
 cl : Command line error D8003 : missing source filename
 ```
 
-Kopyalayıp raporunuzda tüm çıktıyı yapıştırın.
+Tüm çıktıyı kopyalayıp raporunuza yapıştırın.
 
 ### <a name="the-command-line"></a>Komut satırı
 
-Tam komut satırı, cl.exe ve tüm bağımsız değişkenleri, kodunuzu derlemek için kullanılan, ihtiyacımız var. Biz bunu tam olarak aynı şekilde bizim makinelerde oluşturmanıza yardımcı olacak olmasıdır. Buldunuz sorun yalnızca belirli bir bağımsız değişken veya bağımsız değişken bileşimine oluştururken olabileceğinden önemlidir.
+Kodunuzu derlemek için kullanılan tam komut satırı olan CL. exe ve tüm bağımsız değişkenleri gereklidir. Bu nedenle, makinelerimizde tam olarak aynı şekilde derleyebiliriz. Bulduğunuz sorun yalnızca belirli bir bağımsız değişken veya bağımsız değişken birleşimi ile oluşturulurken mevcut olabileceğinden, bu önemlidir.
 
-Sorunla karşılaştığınız hemen sonra bu bilgileri bulmak için en iyi derleme günlüğünde yerdir. Komut satırı sorunu katkıda bulunan tam olarak aynı bağımsız değişkenleri içeren sağlar.
+Bu bilgileri bulmanın en iyi yeri, sorun yaşandıktan hemen sonra derleme günlüğünde bulunur. Komut satırının, soruna katkıda bulunma ile tam olarak aynı bağımsız değişkenleri içerdiğinden emin olur.
 
-#### <a name="to-report-the-contents-of-the-command-line"></a>Komut satırının içeriğini bildirmek için
+#### <a name="to-report-the-contents-of-the-command-line"></a>Komut satırının içeriğini raporlamak için
 
-1. Bulun **CL.command.1.tlog** dosya ve açın. Varsayılan olarak, bu dosya, Belgeler klasöründe bulunan \\Visual Studio *sürüm*\\projeleri\\*SolutionName* \\ *ProjectName*\\*yapılandırma*\\*ProjectName*.tlog\\CL.command.1.tlog, veya kullanıcı klasörünüzün altında \\Kaynak\\depoları\\*SolutionName*\\*ProjectName*\\*yapılandırma* \\ *ProjectName*.tlog\\CL.command.1.tlog. Başka bir yapı sistemi kullanıyorsanız veya projeniz için varsayılan konum değiştirdiyseniz, farklı bir konumda olabilir.
+1. **CL. Command. 1. TLog** dosyasını bulun ve açın. Varsayılan olarak, bu dosya \\Visual Studio *sürümü*\\projects @ no__t-3*SolutionName*\\*ProjectName*\\*Configuration*\\*ProjectName*.TLog1CL.command.1.tlog veya 2 kaynak @ No__t-13repos @ no__t-14*SolutionName*6*ProjectName*8*yapılandırma*0*ProjectName*.TLog2CL.command.1.tlog içindeki Belgeler klasörünüzde bulunur. Başka bir yapı sistemi kullanıyorsanız veya projeniz için varsayılan konumu değiştirdiyseniz, farklı bir konumda olabilir.
 
-   Bu dosya içinde her ayrı satırlarda onları, derlemek için kullanılan komut satırı bağımsız değişkenleri ardından, kod dosyaları kaynak adlarını bulabilirsiniz.
+   Bu dosyanın içinde, kaynak kodu dosyalarınızın adlarını, ardından her biri ayrı satırlarda derlemek için kullanılan komut satırı bağımsız değişkenlerini bulacaksınız.
 
-1. Sorunun gerçekleştiği kaynak kodu dosyasının adını içeren satırı bulun. Aşağıdaki satırda karşılık gelen cl.exe komut satırı bağımsız değişkenlerini alır.
+1. Sorunun gerçekleştiği kaynak kodu dosyasının adını içeren çizgiyi bulun. Aşağıdaki satır, karşılık gelen CL. exe komut bağımsız değişkenlerini içerir.
 
-Kopyalayıp raporunuzda tüm komut satırı yapıştırabilirsiniz.
+Tüm komut satırını kopyalayıp raporunuza yapıştırın.
 
-### <a name="a-description-of-the-problem"></a>Sorun açıklaması
+### <a name="a-description-of-the-problem"></a>Sorunun açıklaması
 
-Buldunuz sorunun ayrıntılı bir açıklaması ihtiyacımız var. Makinelerimiz aynı etkisini görüyoruz doğrulayabilmemiz olmasıdır. Ayrıca bazen bizim için ne yapmaya çalıştığınızı ve olmasını beklediğinizi bilmek yararlıdır.
+Bulduğunuz sorunun ayrıntılı bir açıklamasına ihtiyacımız var. Bu nedenle makinelerimizde aynı etkiyi görtiğimiz için bu şekilde emin olduğumuz. Ayrıca, ne yapmak istediğimizi ve ne olması gerektiğini bilmemiz için bazen yararlı olur.
 
-İyi bir açıklama sağlar **tam hata iletileri** araç takımı veya çalışma zamanı davranışı görürsünüz. Biz düzgün sorun yeniden olduğunu doğrulamak için bu bilgiye ihtiyacımız var. Dahil **tüm** çıkışı, derleyicinin yalnızca son hata iletisi. Soruna raporu açan her şeyi görmek ihtiyacımız var. Komut satırı derleyicisini kullanarak sorunu çoğaltabilirsiniz ise, derleyici çıkışını tercih edilir. IDE ve diğer yapı sistemi bakın veya yalnızca ilk satır bir hata iletisinin yakalama hata iletilerini filtreleyebilirsiniz.
+İyi bir açıklama, araç kümesi tarafından verilen **tam hata iletilerini** veya gördüğünüz tam çalışma zamanı davranışını sağlar. Sorunu doğru bir şekilde oluşturduğumuz doğrulamak için bu bilgilere ihtiyacımız var. Yalnızca son hata iletisini değil, **Tüm** derleyici çıkışını dahil edin. Rapor ettiğiniz sorunu gösteren her şeyi görmemiz gerekiyor. Komut satırı derleyicisini kullanarak sorunu çoğaltabilir, bu Derleyici çıktısı tercih edilir. IDE ve diğer yapı sistemleri, gördüğünüz hata iletilerini filtreleyebilir veya yalnızca bir hata iletisinin ilk satırını yakalayabilir.
 
-Derleyici geçersiz kod kabul eder ve bir tanılama oluşturmaz sorun olması durumunda, raporunuza dahil.
+Sorun derleyicinin geçersiz kodu kabul etmesidir ve bir tanılama oluşturmaz, Bunu raporunuza dahil edin.
 
-Çalışma zamanı davranışı sorun bildir, eklenecek bir **tam kopya** hangi program yazdırır ve görmeyi beklediğiniz. İdeal olarak, çıktı bildiriminde kendisi, örneğin, ekleyeceğiz `printf("This should be 5: %d\n", actual_result);`. Programınızı kilitlenmesine veya yanıt vermemeye başlıyor, bu da söz.
+Çalışma zamanı davranış sorununu raporlamak için, programın yazdırdıklarının **tam bir kopyasını** ve görmeyi beklediğiniz öğeleri ekleyin. İdeal olarak, onu output ifadesinin kendisine gömeceksiniz, örneğin, `printf("This should be 5: %d\n", actual_result);`. Programınız kilitlenirse veya askıda kalırsa, bu da bunu bahsetme.
 
-Tüm keşfettiğinize göre belgele gibi bulunan sorunu çözmemize yardımcı olabilecek diğer ayrıntıları tanılamak ekleyin. Raporunuzda başka bir yerde bulunan bilgileri kullanmamasını deneyin.
+Bulduğunuz herhangi bir Work-arounds gibi bulduğunuz sorunu tanılamanıza yardımcı olabilecek diğer ayrıntıları ekleyin. Raporunuzda başka bir yerde bulunan bilgileri yinelemenize çalışın.
 
-### <a name="the-repro"></a>Yineleme
+### <a name="the-repro"></a>Yeniden üretme
 
-A *yineleme* tam ve müstakil kaynak kod bir örnektir. Sorunu tekrarlanarak gösteren, bulduk, bu nedenle adı. Böylece hata bizim makinelerde üretebileceği istiyorduk ihtiyacımız var. Kodun kendisi tarafından derleyen ve çalışan temel bir yürütülebilir dosyayı oluşturmak için yeterli olmalıdır. Veya, *misiniz* derlemek ve çalıştırmak, sizin için sorun buldunuz. Bir yineleme, bir kod parçacığı değildir. Tam işlevleri ve sınıfları ve tüm gerekli içermesi # standart üstbilgi için bile include.
+Yeniden *oluşturma işlemi* , tam, kendi kendine içerilen bir kaynak kodu örneğidir. BT reproducibly, bulduğunuz sorunu, dolayısıyla adını gösterir. Makinelerimizde hatayı yeniden oluşturabilmeniz için yeniden üretme gerekir. Kod, derlenen ve çalıştırılan temel bir yürütülebilir dosya oluşturmak için kendine yeterli olmalıdır. Ya da, *bulduğunuz sorun için yoksa derleyip çalıştırılır* . Yeniden üretme bir kod parçacığı değildir. Tüm işlevleri ve sınıfları olmalıdır ve standart üstbilgiler için bile tüm gerekli #include yönergelerini içermelidir.
 
-#### <a name="what-makes-a-good-repro"></a>İyi bir yineleme yapan nedir
+#### <a name="what-makes-a-good-repro"></a>İyi yeniden üretme ne yapar
 
-İyi bir yineleme aşağıdaki gibidir:
+İyi bir yeniden üretme:
 
-- **En az.** Oluşturmalar, olabildiğince az henüz yine de tam olarak bulunan sorun gösterilmektedir. Oluşturmalar karmaşık veya gerçekçi olması gerekmez. Bunlar yalnızca standart veya belgelenmiş derleyici uygulaması için uygun kodu görüntülemeniz gerekir. Bir tanılama eksik, uyumlu olmayan kodu, yineleme göstermelidir. Sorun göstermek için yeterli kod yalnızca içeren basit, için öz oluşturmalar idealdir. Kaldırın veya kodu basitleştirmek ve uyumlu kalır ve ayrıca sorun değiştirmeden bırakın, ardından bunu yapın. Karşı çalışan kod örneklerini eklemeniz gerekmez.
+- **En az.** Yeniden uzmanları mümkün olduğunca küçük olmalıdır, ancak yine de bulduğunuz sorunu tam olarak gösterir. Yeniden uzmanlarının karmaşık veya gerçekçi olması gerekmez. Yalnızca standart ya da belgelenen derleyici uygulamasına uyan kodu göstermesi gerekir. Eksik bir tanılama için yeniden oluşturma, uyumlu olmayan kodu göstermelidir. Yalnızca sorunu göstermek için yeterli kod içeren basit ve noktadan noktaya yeniden uzmanları en iyisidir. Kodu ortadan kaldırabilir veya basitleştirebilir ve uyumlu kaldıysanız ve aynı zamanda sorunu değiştirmeden bırakırsanız, bunu yapın. Bu kodun çalışması için sayaç örnekleri eklemeniz gerekmez.
 
-- **Kendi içinde.** Oluşturmalar gereksiz bağımlılıkları kaçınmanız gerekir. Sorun olmadan üçüncü taraf kitaplıklar yeniden oluşturabiliyorsanız, bunu yapın. Basit çıkış deyimleri yanı sıra herhangi bir kitaplık kodu olmadan sorunu yeniden oluşturabileceğinizi varsa (örneğin, `puts("this shouldn't compile");`, `std::cout << value;`, ve `printf("%d\n", value);`), bunu yapın. Örnek bir tek kaynak kod dosyasına başvuru kullanıcı üst bilgileri olmadan sıkıştırılmış durumunda idealdir. Biz sorunun olası bir katılımcı olarak göz önünde bulundurmanız gereken kod miktarını azaltarak bize artık çok yararlı olur.
+- **Kendi kendine dahil.** Reprofesyonelleri, gereksiz bağımlılıklardan kaçınmalıdır. Sorunu üçüncü taraf kitaplıklar olmadan yeniden oluşturabilmeniz için bunu yapın. Sorunu basit çıkış deyimlerinin yanı sıra herhangi bir kitaplık kodu olmadan yeniden üretemede (örneğin, `puts("this shouldn't compile");`, `std::cout << value;` ve `printf("%d\n", value);`), bunu yapın. Örnek, herhangi bir Kullanıcı başlığına başvuru olmadan tek bir kaynak kod dosyası ile dar ise idealdir. Sorun için olası bir katkıda bulunanı göz önünde bulundurmanız gereken kod miktarını azaltmak, bizim için çok yararlı olabilir.
 
-- **Karşı derleyici en son sürümü.** Oluşturmalar en son güncelleştirmesini en son sürüme mümkün olduğunda araç kullanmanız gerekir. Veya sonraki bir güncelleştirme veya sonraki ana sürümüne ait en son yayın öncesi sürümünü kullanın. Araç takımı eski sürümlerini bulabilirsiniz sorunları daha yeni sürümlerinde genellikle düzelttik. Düzeltmeleri backported olağanüstü durumlarda yalnızca eski sürümleri için olan.
+- **En son derleyici sürümüne karşı.** Reprofesyonelleri, mümkün olduğunda en son güncelleştirmenin en son sürümünü kullanmalıdır. Ya da bir sonraki güncelleştirmenin veya sonraki ana yayının en son yayın öncesi sürümünü kullanın. Araç takımının eski sürümlerinde bulabileceğiniz sorunlar genellikle daha yeni sürümlerde düzeltilmiştir. Düzeltmeler yalnızca olağanüstü koşullarda eski sürümlere karşı geri alınır.
 
-- **Diğer derleyiciler karşı kullanıma** varsa. Taşınabilir C++ kodu içeren oluşturmalar davranışı diğer derleyiciler karşı mümkünse doğrulamanız gerekir. C++ Standart program doğruluk sonuçta belirler ve derleyici mükemmel bir seçimdir. Ancak, Clang ve GCC, kodunuzu bir tanılama olmadan kabul edin ve MSVC değil, büyük olasılıkla bizim derleyicisindeki bir hata buldunuz. (Diğer bir olasılık Unix ve Windows davranış veya C++ standartları uygulama farklı düzeylerde farklılıkları dahil vb..) Ardından tüm derleyiciler kodunuz reddettiğinizde, kodunuzun yanlış olduğundan emin olma olasılığı yüksektir. Farklı hata iletilerini görme sorunu kendiniz tanılamaya yardımcı olabilir.
+- İlgiliyse, **diğer derleyicilere karşı denetlenir** . Taşınabilir C++ kod içeren reprofesyonelleri, mümkünse diğer derleyicilere karşı davranışı doğrulamalıdır. C++ Standart olarak program doğruluğu belirlenir ve hiçbir derleyici kusursuz değildir. Ancak, Clang ve GCC, kodunuzu bir tanılama olmadan kabul eder ve MSVC değilse, büyük olasılıkla derleyicimizde bir hata bulmışsınızdır. (Diğer olasılıklar UNIX ve Windows davranışlarındaki farkları veya farklı C++ standartlar uygulama seviyelerini içerir.) Tüm derleyiciler kodunuzu reddettiğinizde, kodunuzun hatalı olması olasıdır. Farklı hata iletilerini görmek sorunu kendi başınıza tanılamanıza yardımcı olabilir.
 
-   Kodunuzu karşı test etmek için çevrimiçi derleyiciler listesini bulabilirsiniz [çevrimiçi C++ Derleyicileri](https://isocpp.org/blog/2013/01/online-c-compilers) ISO C++ Web sitesi ya da bu seçkin [çevrimiçi C++ Derleyicileri listesi](https://arnemertz.github.io/online-compilers/) GitHub üzerinde. Belirli bazı örnekler [Wandbox](https://wandbox.org/), [derleyici Gezgini](https://godbolt.org/), ve [Coliru](https://coliru.stacked-crooked.com/).
+   Kodunuzu test etmek için çevrimiçi derleyicilerin listesini, ISO C++ Web sitesindeki [çevrimiçi C++ derleyicilerde](https://isocpp.org/blog/2013/01/online-c-compilers) veya GitHub 'daki [çevrimiçi C++ derleyicilerin bu listede](https://arnemertz.github.io/online-compilers/) yer alan bu listede bulabilirsiniz. Bazı belirli örnekler [Wandbox](https://wandbox.org/), [derleyici Gezgini](https://godbolt.org/)ve [Coliru](https://coliru.stacked-crooked.com/)içerir.
 
    > [!NOTE]
-   > Microsoft ile çevrimiçi derleyicisindeki Web siteleri bağlı değil. Birçok çevrimiçi derleyicisindeki Web siteleri, kişisel bir proje olarak çalıştırılır. Bunu okuyun, ancak diğerleri kullanabileceğiniz bir arama bulmanız gerekir sitelerin bazıları kullanılamıyor olabilir.
+   > Çevrimiçi derleyici Web siteleri Microsoft ile bağlantılı değildir. Birçok çevrimiçi derleyici Web sitesi kişisel projeler olarak çalıştırılır. Bu sitelerden bazıları bunu okurken kullanılamayabilir, ancak bir aramanın kullanabileceğiniz diğerlerini bulması gerekir.
 
-Sorunları derleyici, bağlayıcı ve kitaplıklarında, kendisini özellikle yollarını göstermektedir eğilimindedir. Ne tür bir yineleme raporunuzda içermelidir. karşılaştığınız sorun türünü belirler. Uygun bir yineleme araştırmak için hiçbir şey sahibiz. Birkaç tür karşılaşabileceğiniz sorunlar aşağıda verilmiştir. Yineleme türü oluşturma adımları her türden bir soruna bildirmek için kullanmalısınız yönergeler dahil ediyoruz.
+Derleyicide, bağlayıcıda ve kitaplıklarda bulunan sorunlar kendilerini belirli yollarla göstermeye eğilimlidir. Bulduğunuz sorun türü, raporunuza ne tür bir yeniden üretme ekleneceğini belirleyecektir. Uygun bir yeniden üretme olmadan araştırılacağı bir şey yok. Görebileceğiniz bazı sorun türleri aşağıda verilmiştir. Her tür sorunu raporlamak için kullanmanız gereken yeniden üretme türünü nasıl üretiyoruz hakkında yönergeler ekledik.
 
-#### <a name="frontend-parser-crash"></a>Kilitlenme ön uç (ayrıştırıcı)
+#### <a name="frontend-parser-crash"></a>Ön uç (Ayrıştırıcı) kilitlenmesi
 
-Ön uç kilitlenmeler, derleyici ayrıştırma işlemi sırasında oluşur. Genellikle, derleyici yayan [önemli hata C1001](../error-messages/compiler-errors-1/fatal-error-c1001.md)ve kaynak kodu dosyası ve satır numarası hatanın gerçekleştiği başvuruları. Genellikle msc1.cpp adlı bir dosya söz edilen, ancak bu ayrıntı yoksayabilirsiniz.
+Ön uç kilitlenmeler derleyicinin ayrıştırma aşamasında oluşur. Genellikle, derleyici [önemli hata C1001](../error-messages/compiler-errors-1/fatal-error-c1001.md)yayar ve hatanın gerçekleştiği kaynak kod dosyasına ve satır numarasına başvurur. Genellikle msc1. cpp adlı bir dosyanın bahsetmektedir, ancak bu ayrıntıyı yoksayabilirsiniz.
 
-Kilitlenme bu tür için sağlayan bir [yineleme önceden işlenmiş](#preprocessed-repros).
+Bu tür bir kilitlenme için [önceden işlenmiş](#preprocessed-repros)bir yeniden üretme sağlayın.
 
-Bu tür bir kilitlenme için derleyici çıktı örneği aşağıda verilmiştir:
+Bu tür bir kilitlenme için örnek Derleyici çıktısı aşağıda verilmiştir:
 
 ```Output
 SandBoxHost.cpp
@@ -146,13 +147,13 @@ INTERNAL COMPILER ERROR in 'd:\o\dev\otools\bin\x64\cl.exe'
     Help menu, or open the Technical Support help file for more information
 ```
 
-#### <a name="backend-code-generation-crash"></a>Kilitlenme arka uç (kod oluşturma)
+#### <a name="backend-code-generation-crash"></a>Arka uç (kod oluşturma) kilitlenme
 
-Arka uç kilitlenmeleri kod derleyici oluşturma aşaması sırasında oluşur. Genellikle, derleyici yayan [önemli hata C1001](../error-messages/compiler-errors-1/fatal-error-c1001.md), değil kaynak kodu dosyasının başvuru ve satır numarası sorunla ilişkili. Genellikle bir dosya derleyici bahsetmeleri\\utc\\src\\p2\\main.c, ancak bu ayrıntı yok sayabilirsiniz.
+Derleyicinin kod oluşturma aşamasında arka uç kilitlenmeler oluşur. Genellikle, derleyici [önemli hata C1001](../error-messages/compiler-errors-1/fatal-error-c1001.md)yayar ve sorun ile ilişkili kaynak kodu dosyasına ve satır numarasına başvurmayabilir. Genellikle derleyicinin @ no__t-0utc @ no__t-1src @ no__t-2p2 @ no__t-3main. c dosyasında bahsetmektedir, ancak bu ayrıntıyı yoksayabilirsiniz.
 
-Kilitlenme bu tür için sağlayan bir [bağlantı yineleme](#link-repros) bağlama sırasında kod oluşturma (LTCG) kullanıyorsanız, etkin **/GL** cl.exe komut satırı bağımsız değişkeni. Aksi takdirde, sağlayan bir [yineleme önceden işlenmiş](#preprocessed-repros) yerine.
+Bu tür bir kilitlenme için, CL. exe ' ye yönelik **/GL** komut satırı bağımsız değişkeni tarafından etkinleştirilen bağlantı zamanı kod ÜRETIMI (LTCG) kullanıyorsanız bir [bağlantı yeniden üretme](#link-repros) sağlayın. Aksi takdirde, bunun yerine [önceden işlenmiş](#preprocessed-repros) yeniden oluşturma sağlayın.
 
-Hangi LTCG kullanılmayan bir arka uç kilitlenme için derleyici çıktı örneği aşağıda verilmiştir. Derleyici çıktınız aşağıdakine benzer olacaktır, sağlamanız bir [yineleme önceden işlenmiş](#preprocessed-repros).
+Aşağıda, LTCG 'nin kullanılmayan bir arka uç kilitlenme için örnek Derleyici çıktısı verilmiştir. Derleyici çıktılarınız aşağıdaki gibi görünüyorsa, [önceden işlenmiş](#preprocessed-repros)bir yeniden oluşturma sağlamalısınız.
 
 ```Output
 repro.cpp
@@ -169,18 +170,18 @@ INTERNAL COMPILER ERROR in
     Help menu, or open the Technical Support help file for more information
 ```
 
-Çizgi ile başlayan, **iç derleyici hatası** link.exe, bahsetmeleri cl.exe yerine LTCG etkinleştirildi. Sağlayan bir [bağlantı yineleme](#link-repros) bu durumda. LTCG derleyici hata iletisindeki etkin olup açık olmadığı durumlarda, komut satırı bağımsız değişkenlerini inceleyin. Bunları, derleme oturum için bir önceki adımda kopyaladığınız **/GL** komut satırı bağımsız değişkeni.
+**IÇ DERLEYICI hatası** ile başlayan çizgi, CL. exe yerine LINK. exe ' ye bahsetdi, LTCG etkindir. Bu durumda bir [bağlantı yeniden üretme](#link-repros) sağlayın. LTCG 'nin derleyici hata iletisinden etkinleştirilip etkinleştirilmediğini temizlemeden, komut satırı bağımsız değişkenlerini inceleyin. Bunları yapı günlüğinizden, **/GL** komut satırı bağımsız değişkeni için önceki bir adımda kopyaladınız.
 
-#### <a name="linker-crash"></a>Bağlayıcı kilitlenme
+#### <a name="linker-crash"></a>Bağlayıcı kilitlenmesi
 
-Bağlayıcı kilitlenmeleri derleyici çalıştırdıktan sonra bağlama işlemi sırasında oluşur. Genellikle, bağlayıcı yayar [Bağlayıcı araçları hatası LNK1000](../error-messages/tool-errors/linker-tools-error-lnk1000.md).
+Bağlayıcı çöküyor, derleyici çalıştırıldıktan sonra bağlama aşamasında oluşur. Genellikle bağlayıcı, [bağlayıcı araçları hata LNK1000](../error-messages/tool-errors/linker-tools-error-lnk1000.md)' i yayacaktır.
 
 > [!NOTE]
-> Çıkış C1001 bahsetmeleri veya bağlama zamanı kod oluşturmayı içerir, başvurmak [arka uç (kod oluşturma) kilitlenme](#backend-code-generation-crash) yerine.
+> Çıkış C1001 bahsetmektedir veya bağlama zamanı kodu oluşturma içeriyorsa, bunun yerine [arka uç (kod oluşturma) kilitlenmesiyle](#backend-code-generation-crash) bağlantı altına bakın.
 
-Kilitlenme bu tür için sağlayan bir [bağlantı yineleme](#link-repros).
+Bu tür bir kilitlenme için, bir [bağlantı yeniden üretme](#link-repros)sağlayın.
 
-Bu tür bir kilitlenme için derleyici çıktının bir örneği aşağıda verilmiştir:
+Bu tür bir kilitlenme için derleyici çıkışı örneği aşağıda verilmiştir:
 
 ```Output
 z:\foo.obj : error LNK1000: Internal error during IMAGE::Pass2
@@ -214,189 +215,201 @@ CONTEXT:
   Dr2    = 0000000000000000  Dr7    = 0000000000000000
 ```
 
-Artımlı bağlamayı etkindir ve sonra yalnızca başarılı ilk bağlantı kilitlenme oluştu ise diğer bir deyişle, bir sonraki artımlı bağlantı dayandığı yalnızca ilk tam bağlantıya sonra da kitaplığı ve nesne (.obj) bir kopyasını kaynağına karşılık gelen (.lib) dosyaları belirtin ilk bağlantı tamamlandıktan sonra değiştirilen dosyalar.
+Artımlı bağlama etkinse ve kilitlenme yalnızca başarılı bir başlangıç bağlantısından sonra gerçekleştiyse, diğer bir deyişle, daha sonra artımlı bir bağlantının temel aldığı ilk tam bağlantıdan sonra, kaynağa karşılık gelen nesne (. obj) ve kitaplık (. lib) dosyalarının bir kopyasını da sağlar ilk bağlantı tamamlandıktan sonra değiştirilen dosyalar.
 
 #### <a name="bad-code-generation"></a>Hatalı kod oluşturma
 
-Hatalı kod oluşturma nadir olarak rastlanıyor. Derleyici, uygulamanızın çalışma zamanında çökmesine neden yanlış kod yanlışlıkla oluşturduğunda gerçekleşir. Bunun yerine, doğru kodu oluşturmak veya derleme zamanında bir sorunu algıla. Sorun düşünüyorsanız, sonuçlar hatalı kod oluşturma buldunuz, raporunuzu aynı şekilde işlem bir [arka uç (kod oluşturma) kilitlenme](#backend-code-generation-crash).
+Hatalı kod oluşturma nadir bir durumdur. Derleyici yanlışlıkla hatalı kodu oluşturduğunda, bu durum uygulamanızın çalışma zamanında kilitlenmesine neden olur. Bunun yerine, doğru kod üretecek veya derleme zamanında bir sorun algılamamalıdır. Bulduğunuz sorunun hatalı kod oluşturulmasına neden olduğunu düşünüyorsanız, raporunuzu [arka uç (kod oluşturma) kilitlenmesiyle](#backend-code-generation-crash)aynı şekilde değerlendirin.
 
-Kilitlenme bu tür için sağlayan bir [bağlantı yineleme](#link-repros) kullanıyorsanız **/GL** cl.exe komut satırı bağımsız değişkeni. Sağlayan bir [yineleme önceden işlenmiş](#preprocessed-repros) Aksi takdirde.
+Bu tür bir kilitlenme için, CL. exe için **/GL** komut satırı bağımsız değişkenini kullanıyorsanız bir [bağlantı yeniden üretme](#link-repros) sağlayın. Değilse, [önceden işlenmiş yeniden üretme](#preprocessed-repros) sağlayın.
 
-## <a name="how-to-generate-a-repro"></a>Bir yineleme oluşturma
+## <a name="how-to-generate-a-repro"></a>Yeniden üretme oluşturma
 
-Sorunun kaynağını izlemenize yardımcı olmak için bir [iyi yineleme](#what-makes-a-good-repro) yaşamsal önem taşır. Tüm oluşturmalar belirli türdeki özetlenen adımları uygulamadan önce mümkün olduğunca sorunu gösteren kod Daralt deneyin. Bağımlılıklar, gerekli üst bilgileri ve kitaplıkları simge durumuna küçültür veya ortadan kaldırmak deneyin. Mümkünse, kullanılan önişlemci tanımlarını ve derleyici seçenekleri sınırlayın.
+Sorunun kaynağını izlememize yardımcı olması için iyi bir yeniden [üretme](#what-makes-a-good-repro) hayati önem taşır. Belirli türlerde reprofesyonelleri için aşağıda özetlenen adımlardan herhangi birini yapmadan önce, sorunu mümkün olduğunca çok belirten kodu ayrıştırmayı deneyin. Bağımlılıkları, gerekli üstbilgileri ve kitaplıkları ortadan kaldırmaya veya en aza indirmenize çalışın. Mümkünse, kullanılan derleyici seçeneklerini ve Önişlemci tanımlarını sınırlayın.
 
-Raporu farklı türde sorunları için kullanacağınız oluşturmalar çeşitli türleri oluşturmak için yönergeler aşağıda verilmiştir.
+Aşağıda, farklı türlerde sorunları raporlamak için kullanacağınız çeşitli türlerde reprofesyonelleri oluşturmaya yönelik yönergeler verilmiştir.
 
-### <a name="preprocessed-repros"></a>Önceden işlenmiş oluşturmalar
+### <a name="preprocessed-repros"></a>Ön işlenmiş yeniden uzmanları
 
-A *yineleme önceden işlenmiş* bir sorunu gösteren bir tek bir kaynak dosyası. Bunu C önişlemcisinin çıktısından oluşturulur. Oluşturmak için kullanmak **/P** özgün yineleme kaynak dosyada derleyici seçeneği. Bu seçenek satır içleri dahil edilen üst bilgileri ek kaynak ve üstbilgi dosyaları bağımlılıkları kaldırın. Seçeneği, makrolar, #ifdef koşullular ve yerel ortamınızda bağımlı diğer önişlemci komutlarını da giderir.
+*Önceden işlenmiş* yeniden oluşturma bir sorunu gösteren tek bir kaynak dosyasıdır. C Önişlemci çıktısından oluşturulur. Bir tane oluşturmak için özgün yeniden üretme kaynak dosyasında **/p** derleyici seçeneğini kullanın. Bu seçenek, ek kaynak ve üstbilgi dosyalarındaki bağımlılıkları kaldırmak için dahil edilen üst bilgileri geçersiz kılar. Bu seçenek ayrıca, yerel ortamınıza bağlı olabilecek makroları, #ifdef koşulları ve diğer Önişlemci komutlarını da çözümler.
 
 > [!NOTE]
-> Genellikle zaten sorunu düzelttik olup olmadığını görmek için en son, devam eden kararlılığımızın yerine istediğimizden, önceden işlenmiş oluşturmalar hataları standart kitaplığı kararlılığımızın bir sonucu olabilir sorunları için faydalı değildir. Bu durumda, yineleme önişle yoktur ve azaltırsanız olamaz, tek bir kaynak dosyası, sorunu kodunuzu veya benzer bir .zip dosyasına paketleyin veya bir IDE proje yineleme kullanmayı düşünün. Daha fazla bilgi için [diğer oluşturmalar](#other-repros).
+> Önceden işlenmiş yeniden kullanım profesyonelleri, genellikle sorunu düzelttiğimiz bir sorun olup olmadığını görmek için en son sürmekte olan uygulamanızı yerine getirme işlemini yapmak istediğimiz için standart kitaplık uygulamamızda hataların sonucu olabilecek sorunlar için yararlı değildir. Bu durumda, yeniden oluşturma işlemini önceden işlemez ve sorunu tek bir kaynak dosyayla azaltamıyorsanız kodunuzu bir. zip dosyasına veya benzer şekilde paketleyin ya da IDE projesi yeniden oluşturma kullanmayı deneyin. Daha fazla bilgi için bkz. [diğer reprofesyonelleri](#other-repros).
 
-#### <a name="to-preprocess-a-source-code-file"></a>Bir kaynak kodu dosyası ön işleme için
+#### <a name="to-preprocess-a-source-code-file"></a>Kaynak kodu dosyasını önceden işlemek için
 
-1. Açıklandığı gibi bir yineleme oluşturmak için kullanılan komut satırı bağımsız değişkenleri yakalama [komut satırının içeriğini raporlamak için](#to-report-the-contents-of-the-command-line).
+1. [Komut satırının içeriğini raporlamak için](#to-report-the-contents-of-the-command-line)bölümünde açıklandığı şekilde, yeniden oluşturma yapınızı oluşturmak için kullanılan komut satırı bağımsız değişkenlerini yakalayın.
 
-1. Açık **Geliştirici komut istemi** projenizi oluşturmak için kullanılan Visual Studio sürümünüz ve yapılandırmanız mimarisi ile eşleşir.
+1. Projenizi oluşturmak için kullanılan Visual Studio sürümü ve yapılandırma mimarisiyle eşleşen **Geliştirici komut istemi** açın.
 
-1. Repro projenizi içeren dizine geçin.
+1. Yeniden üretme projenizi içeren dizine geçin.
 
-1. Geliştirici komut istemi konsol penceresinde komutu girin **cl /P** *bağımsız değişkenleri* *filename.cpp*. İçin *bağımsız değişkenleri*, yukarıda yakalanan değişkenleri listesini kullanın. *filename.cpp* yineleme kaynak dosyanın adıdır. Bu komut, komut satırı yineleme için kullanılır, ancak derleme önişlemci geçişi sonrasında kesiliyor çoğaltır. Önceden işlenmiş kaynak koduna Yazar sonra *filename.i*.
+1. Geliştirici komut istemi konsol penceresinde **CL/p** *arguments* *filename. cpp*komutunu girin. *Bağımsız değişkenler*için, yukarıda yakaladığınız bağımsız değişkenlerin listesini kullanın. *filename. cpp* yeniden üretme kaynak dosyanızın adıdır. Bu komut yeniden üretme için kullandığınız komut satırını çoğaltır, ancak Önişlemci geçişinden sonra derlemeyi sonlandırır. Daha sonra, önceden işlenmiş kaynak kodunu *filename. ı*dosyasına yazar.
 
-İşleniyorsa bir C++/CX kaynak kodu dosyası veya kullanmakta olduğunuz C++ modülleri özelliğinin, bazı ek adımlar gereklidir. Daha fazla bilgi için aşağıdaki bölümlere bakın.
+Bir C++/CX kaynak kodu dosyasını ön işleme alıyorsa veya C++ modüller özelliğini kullanıyorsanız, bazı ek adımlar gerekir. Daha fazla bilgi için aşağıdaki bölümlere bakın.
 
-Önceden işlenmiş dosyayı oluşturduğunuza göre sonra da emin olmak için iyi bir fikirdir, önceden işlenmiş dosyayı derlerken sorunu hala oluşturmalar.
+Önceden işlenmiş dosyayı oluşturduktan sonra, önceden işlenmiş dosyayı derlerken sorunun hala olumlu hale geldiğinden emin olmak iyi bir fikirdir.
 
-#### <a name="to-confirm-the-preprocessed-file-still-repros-the-error"></a>Önceden işlenmiş dosya hala oluşturmalar hatayı doğrulamak için
+#### <a name="to-confirm-the-preprocessed-file-still-repros-the-error"></a>Önceden işlenmiş dosyayı doğrulamak için yine de hatanın yeniden olumlu olması
 
-1. Geliştirici komut istemi konsol penceresinde komutu girin **cl** *bağımsız değişkenleri* **/TP** *filename.i* derlemek için cl.exe bildirmek için önceden işlenmiş dosyayı farklı bir C++ kaynak dosyası. *Bağımsız değişkenleri* aynı bağımsız değişken yukarıda, ancak tüm yakalanan **/D** ve **/I** bağımsız değişkenleri kaldırıldı. Bunlar zaten önceden işlenmiş dosyayı dahil edilmiş olmasıdır. *filename.i* , önceden işlenmiş dosya adıdır.
+1. Geliştirici komut istemi konsol penceresinde, CL. exe *' nin önceden* işlenmiş C++ dosyayı kaynak dosya olarak derlemesine bildirmek için, CL *filename. i* **komutunu girin** . *Bağımsız* değişkenler yukarıda yakalanan bağımsız değişkenlerle aynıdır, ancak tüm **/d** ve **/ı** bağımsız değişkenleri kaldırılır. Bunun nedeni, önceden işlenmiş dosyaya zaten dahil edilmiştir. *dosya adı. i* , önceden işlenmiş dosyanızın adıdır.
 
-1. Sorunu yeniden olduğunu onaylayın.
+1. Sorunun yeniden üretildiğini doğrulayın.
 
-Son olarak, önceden işlenmiş yineleme ekleme *filename*.i raporunuza.
+Son olarak, önceden işlenmiş yeniden oluşturma *dosya adı*. i raporunuza ekleyin.
 
-### <a name="preprocessed-ccx-winrtuwp-code-repros"></a>Önceden işlenmiş C++/CX WinRT/UWP kod oluşturmalar
+### <a name="preprocessed-ccx-winrtuwp-code-repros"></a>Önceden işlenmiş C++/CX WINRT/UWP kodu yeniden uzmanları
 
-C + kullanıyorsanız +/ CX yürütülebilir dosyanızı oluşturmak için oluşturma ve önceden işlenmiş istiyorduk doğrulamak için gereken bazı ek adımlar vardır.
+Yürütülebilir dosyanızı oluşturmak için C++/CX kullanıyorsanız, önceden işlenmiş yeniden oluşturma işlemi oluşturmak ve doğrulamak için gereken bazı ek adımlar vardır.
 
-#### <a name="to-preprocess-ccx-source-code"></a>Ön işleme için C++/CX kaynak kodu
+#### <a name="to-preprocess-ccx-source-code"></a>/CX kaynak kodunu C++önceden işlemek için
 
-1. Önceden işlenmiş kaynak dosyası açıklandığı oluşturma [bir kaynak kodu dosyası ön işleme için](#to-preprocess-a-source-code-file).
+1. [Kaynak kodu dosyasını önceden Işlemek için](#to-preprocess-a-source-code-file)bölümünde açıklandığı gibi önceden işlenmiş bir kaynak dosya oluşturun.
 
-1. Oluşturulan arama _filename_.i dosyası **#using** yönergeleri.
+1. Oluşturulan _dosya adı_. ı dosyasını **#using** yönergeler için arayın.
 
-1. Tüm başvurulan dosyaların listesini olun. Tüm Windows bırakın\*mscorlib.dll .winmd dosyaları ve platform.winmd dosyaları.
+1. Başvurulan tüm dosyaların bir listesini oluşturun. Herhangi bir Windows @ no__t-0. winmd dosyası, platform. winmd dosyası ve mscorlib. dll ' den çıkın.
 
-Önceden işlenmiş dosyayı yine de sorunu yakalandığı doğrulamak hazırlamak için
+Önceden işlenmiş dosyanın sorunu hala yeniden ürettiğini doğrulamaya hazırlanmak için
 
 1. Önceden işlenmiş dosya için yeni bir dizin oluşturun ve yeni dizine kopyalayın.
 
-1. .Winmd dosyaları kopyalayın, **#using** yeni dizine listesi.
+1. **#Using** listenizden. winmd dosyalarını yeni dizine kopyalayın.
 
-1. Bir boş vccorlib.h dosyasını yeni dizine oluşturun.
+1. Yeni dizinde boş bir vccorlib. h dosyası oluşturun.
 
-1. Kaldırmak için önceden işlenmiş dosyayı düzenleyin **#using** mscorlib.dll için yönergeleri.
+1. Mscorlib. dll ' nin tüm **#using** yönergelerini kaldırmak için önceden işlenmiş dosyayı düzenleyin.
 
-1. Yalnızca tam dosya adları kopyalanan .winmd dosyaları için mutlak yollar değiştirmek için önceden işlenmiş dosyayı düzenleyin.
+1. Tüm mutlak yolları kopyalanan. winmd dosyaları için yalnızca çıplak dosya adlarıyla değiştirmek üzere önceden işlenmiş dosyayı düzenleyin.
 
-Önceden işlenmiş dosyayı yine yukarıdaki sorun yakalandığı onaylayın.
+Önceden işlenmiş dosyanın, yukarıdaki gibi hala sorunu yeniden ürettiğini onaylayın.
 
-### <a name="preprocessed-c-modules-repros"></a>Önceden işlenmiş olan C++ modülleri oluşturmalar
+### <a name="preprocessed-c-modules-repros"></a>Önceden işlenmiş C++ modüller yeniden uzmanları
 
-C++ derleyicisinin modülleri özelliğinin kullanıyorsanız, oluşturma ve önceden işlenmiş istiyorduk doğrulamak için gereken farklı adımlar vardır.
+C++ Derleyicinin modüller özelliğini kullanıyorsanız, önceden işlenmiş yeniden oluşturma işlemi oluşturmak ve doğrulamak için gereken bazı farklı adımlar vardır.
 
-#### <a name="to-preprocess-a-source-code-file-that-uses-a-module"></a>Bir modül kullanan bir kaynak kodu dosyası ön işleme
+#### <a name="to-preprocess-a-source-code-file-that-uses-a-module"></a>Modül kullanan bir kaynak kodu dosyasını önceden işlemek için
 
-1. Açıklandığı gibi bir yineleme oluşturmak için kullanılan komut satırı bağımsız değişkenleri yakalama [komut satırının içeriğini raporlamak için](#to-report-the-contents-of-the-command-line).
+1. [Komut satırının içeriğini raporlamak için](#to-report-the-contents-of-the-command-line)bölümünde açıklandığı şekilde, yeniden oluşturma yapınızı oluşturmak için kullanılan komut satırı bağımsız değişkenlerini yakalayın.
 
-1. Açık **Geliştirici komut istemi** projenizi oluşturmak için kullanılan Visual Studio sürümünüz ve yapılandırmanız mimarisi ile eşleşir.
+1. Projenizi oluşturmak için kullanılan Visual Studio sürümü ve yapılandırma mimarisiyle eşleşen **Geliştirici komut istemi** açın.
 
-1. Repro projenizi içeren dizine geçin.
+1. Yeniden üretme projenizi içeren dizine geçin.
 
-1. Geliştirici komut istemi konsol penceresinde komutu girin **cl /P** *bağımsız değişkenleri* *filename.cpp*. *Bağımsız değişkenleri* yukarıdaki yakalanan bağımsız değişkenidir ve *filename.cpp* modülünü kullanan kaynak dosyasının adıdır.
+1. Geliştirici komut istemi konsol penceresinde **CL/p** *arguments* *filename. cpp*komutunu girin. *Bağımsız değişkenler* yukarıda yakalanan bağımsız değişkenlerdir ve *filename. cpp* , modülü tüketen kaynak dosyanın adıdır.
 
-1. Modül arabirimi (.ifc çıkış) yerleşik yineleme projesini içeren dizine geçin.
+1. Modül arabirimini (. ifc çıkışı) oluşturan yeniden üretme projesini içeren dizine geçin.
 
-1. Bir modül arabirimi oluşturmak için kullanılan komut satırı bağımsız değişkenlerini yakalar.
+1. Modül arabiriminizi derlemek için kullanılan komut satırı bağımsız değişkenlerini yakalayın.
 
-1. Geliştirici komut istemi konsol penceresinde komutu girin **cl /P** *bağımsız değişkenleri* *modulename.ixx*. *Bağımsız değişkenleri* yukarıdaki yakalanan bağımsız değişkenidir ve *modulename.ixx* modül arabirimi oluşturan dosyanın adıdır.
+1. Geliştirici komut istemi konsol penceresinde **CL/p** *arguments* *ModuleName. IXX*komutunu girin. *Bağımsız değişkenler* yukarıda yakalanan bağımsız değişkenlerdir ve *ModuleName. IXX* modül arabirimini oluşturan dosyanın adıdır.
 
-Önceden işlenmiş dosya ürettiğiniz sonra önceden işlenmiş dosyayı kullanırken sorun hala oluşturmalar emin olmak için iyi bir fikirdir.
+Önceden işlenmiş dosyaları oluşturduktan sonra, önceden işlenmiş dosyayı kullanırken sorunun hala olumlu hale geldiğinden emin olmak iyi bir fikirdir.
 
-#### <a name="to-confirm-the-preprocessed-file-still-repros-the-error"></a>Önceden işlenmiş dosya hala oluşturmalar hatayı doğrulamak için
+#### <a name="to-confirm-the-preprocessed-file-still-repros-the-error"></a>Önceden işlenmiş dosyayı doğrulamak için yine de hatanın yeniden olumlu olması
 
-1. Geliştirici konsol penceresinde geri yineleme projenizi içeren dizine geçin.
+1. Geliştirici konsolu penceresinde yeniden üretme projenizi içeren dizine dönün.
 
-1. Komutu girdikten **cl** *bağımsız değişkenleri* **/TP** *filename*.i C++ kaynak dosyası gibi önceden işlenmiş dosya derlemek için yukarıdaki gibi.
+1. Önceden işlenmiş dosyayı bir C++ kaynak dosyası gibi derlemek için, **Yukarıdaki dosya** *adı*. **i komutunu yukarıdaki** şekilde yazın.
 
-1. Sorunu hala tarafından önceden işlenmiş dosyayı yeniden onaylayın.
+1. Sorunun önceden işlenmiş dosya tarafından hala yeniden üretildiğini doğrulayın.
 
-Son olarak, önceden işlenmiş yineleme dosya ekleme (*filename*.i ve *modulename*.i) raporunuza .ifc çıkış yanı sıra.
+Son olarak, önceden işlenmiş yeniden oluşturma dosyalarını (*filename*. i ve *ModuleName*. i) rapora. ifc çıkışı ile birlikte iliştirin.
 
-### <a name="link-repros"></a>Bağlantı oluşturmalar
+### <a name="link-repros"></a>Yeniden uzmanları bağla
 
-A *bağlantı yineleme* bağlayıcı tarafından oluşturulan içeriği tarafından belirtilen bir dizinin **bağlantı\_yineleme** ortam değişkeni. Bu bağlantı zamanında ortaya çıkan bir sorun topluca gösteren derleme yapıtları içerir. Bağlama sırasında kod oluşturma (LTCG) içeren bir arka uç kilitlenme veya bir bağlayıcı kilitlenme örneklerindendir. Bu derleme yapıları olan sorunu yeniden kombinasyonlarına bağlayıcı gerekli olanlar. Bu ortam değişkeni kullanarak bir bağlantı yineleme kolayca oluşturulabilir. Bu bağlayıcı'nın yerleşik bir yineleme oluşturma yeteneği sağlar.
+*Bağlantı yeniden üretme* , **bağlantı @ no__t-2Yeniden üretme** ortam değişkeni veya [/LINKREPRO](../build/reference/linkrepro.md) bağlayıcı seçeneğinin bağımsız değişkeni olarak belirtilen bir dizinin bağlayıcı tarafından oluşturulan içeriğidir. Bağlantı zamanında oluşan bir sorunu topluca gösteren derleme yapıtları içerir. Örneğin, bağlantı zamanı kod oluşturma (LTCG) veya bağlayıcı kilitlenmesiyle ilgili bir arka uç kilitlenmesi bulunur. Bu derleme yapıtları, sorun yeniden üretibilmeleri için bağlayıcı girişi olarak gerekli olanlardır. Bir bağlantı yeniden üretme, bu ortam değişkeni kullanılarak kolayca oluşturulabilir. Bağlayıcının yerleşik yeniden üretme oluşturma özelliğini sunar.
 
-#### <a name="to-generate-a-link-repro"></a>Bir bağlantı yineleme oluşturmak için
+#### <a name="to-generate-a-link-repro-using-the-link_repro-environment-variable"></a>Link_repro ortam değişkenini kullanarak bağlantı yeniden üretme oluşturmak için
 
-1. Açıklandığı gibi bir yineleme oluşturmak için kullanılan komut satırı bağımsız değişkenleri yakalama [komut satırının içeriğini raporlamak için](#to-report-the-contents-of-the-command-line).
+1. [Komut satırının içeriğini raporlamak için](#to-report-the-contents-of-the-command-line)bölümünde açıklandığı şekilde, yeniden oluşturma yapınızı oluşturmak için kullanılan komut satırı bağımsız değişkenlerini yakalayın.
 
-1. Açık **Geliştirici komut istemi** projenizi oluşturmak için kullanılan Visual Studio sürümünüz ve yapılandırmanız mimarisi ile eşleşir.
+1. Projenizi oluşturmak için kullanılan Visual Studio sürümü ve yapılandırma mimarisiyle eşleşen **Geliştirici komut istemi** açın.
 
-1. Geliştirici komut istemi konsol penceresinde yineleme projenizi içeren dizine geçin.
+1. Geliştirici komut istemi konsol penceresinde, yeniden üretme projenizi içeren dizine geçin.
 
-1. Girin **mkdir linkrepro** bağlantı yineleme için bir dizin oluşturmak için.
+1. Bağlantı yeniden üretme için *linkrepro* adlı bir dizin oluşturmak üzere **mkdir linkrepro** girin. Başka bir bağlantı yeniden üretme yakalamak için farklı bir ad kullanabilirsiniz.
 
-1. Komutu girdikten **bağlantı ayarlayın\_yineleme linkrepro =** ayarlamak için **bağlantı\_yineleme** oluşturduğunuz dizine ortam değişkeni. Genellikle daha karmaşık projeler için olduğu gibi farklı bir dizinden derleme çalışırsa ayarlayın **bağlantı\_yineleme** linkrepro dizinine tam yolu için bunun yerine.
+1. **Link @ no__t-3yeniden üretme** ortam değişkenini oluşturduğunuz dizine ayarlamak için **@ no__t-1yeniden üretme = linkrepro komut kümesi bağlantısını** girin. Derlemeniz farklı bir dizinden çalışıyorsa, genellikle daha karmaşık projeler için olduğu gibi, **bağlantı @ no__t-1yeniden** oluşturma ' yı bağlantı yeniden üretme dizininizin tam yoluna ayarlayın.
 
-1. Geliştirici komut istemi konsol penceresinde, Visual Studio'da aracındaki Projeyi derlemek için komutu girin **devenv**. Bu değeri sağlar **bağlantı\_yineleme** ortam değişkenidir Visual Studio'da görünür. Komut satırından Projeyi derlemek için yineleme derleme çoğaltmak için yukarıda yakalanan komut satırı bağımsız değişkenlerini kullanın.
+1. Visual Studio 'da yeniden üretme projesi oluşturmak için, geliştirici komut istemi konsol penceresinde, **devenv**komutunu girin. Bu, **Link @ no__t-1yeniden üretme** ortam değişkeninin değerinin Visual Studio 'ya görünür olmasını sağlar. Projeyi komut satırında derlemek için, yeniden üretme derlemesini çoğaltmak üzere yukarıda yakalanan komut satırı bağımsız değişkenlerini kullanın.
 
-1. Repro projenizi derleyin ve beklenen sorunu oluştu onaylayın.
+1. Yeniden üretme projenizi derleyin ve beklenen sorunun oluştuğunu onaylayın.
 
-1. Derleme yapmak için kullanılan Visual Studio'yu kapatın.
+1. Derlemeyi yapmak için kullandıysanız, Visual Studio 'Yu kapatın.
 
-1. Geliştirici komut istemi konsol penceresinde komutu girin **bağlantı ayarlayın\_yineleme =** temizlemek için **bağlantı\_yineleme** ortam değişkeni.
+1. Geliştirici komut istemi konsol penceresinde, **Link @ no__t-3yeniden üretme** ortam değişkenini temizlemek için **@ no__t-1yeniden üretme = komut kümesi bağlantısını** girin.
 
-Son olarak, tüm linkrepro dizin bir .zip dosyasına veya benzer sıkıştırarak yineleme paketini ve raporunuza ekleyin.
+Son olarak, tüm linkrepro dizinini bir. zip dosyasına veya benzer şekilde sıkıştırarak yeniden oluşturma 'yı paketleyin ve raporunuza ekleyin.
 
-### <a name="other-repros"></a>Diğer oluşturmalar
+**/LINKREPRO** bağlayıcı seçeneği, **Link @ no__t-2Yeniden üretme** ortam değişkeni ile aynı etkiye sahiptir. Oluşturulan bağlantıyı yeniden oluşturma için filtreleyecek adı belirtmek için [/LINKREPROTARGET](../build/reference/linkreprotarget.md) seçeneğini kullanabilirsiniz. **/LINKREPROTARGET**kullanmak için, **/Out** bağlayıcı seçeneğini de belirtmeniz gerekir.
 
-Tek bir kaynak dosyası ya da önceden işlenmiş yineleme sorun indiremezsiniz ve sorun bağlantısını yineleme gerektirmez, biz bir IDE proje araştırabilirsiniz. Tüm kılavuzuna nasıl iyi bir yineleme oluşturmak hala geçerlidir: Kod nerede depolandığının minimal ve müstakil olmalıdır. Sorun, en son araçlarımızı gerçekleşmesi gerektiğini ve uygunsa, diğer derleyicilerde görülür olmaması gerekir.
+#### <a name="to-generate-a-link-repro-using-the-linkrepro-option"></a>/LINKREPRO seçeneğini kullanarak bağlantı yeniden üretme oluşturmak için
 
-Minimal bir IDE proje olarak, yineleme oluşturun, sonra tüm dizin yapısının bir .zip dosyasına veya benzer sıkıştırarak paketini ve raporunuza ekleyin.
+1. Bağlantıyı yeniden oluşturmayı tutacak bir dizin oluşturun. _Dizin yolu_olarak oluşturduğunuz tam dizin yoluna başvuracağız. Boşluk içeriyorsa yolun etrafında çift tırnak işareti kullanın.
+
+1. Bağlayıcı komut satırına **/LINKREPRO:** _Directory-Path_ komutunu ekleyin. Visual Studio 'da, projeniz için **Özellik sayfaları** iletişim kutusunu açın. **Yapılandırma özellikleri** > **bağlayıcı** > **komut satırı** Özellik sayfası ' nı seçin. Daha sonra, **ek seçenekler** kutusuna **/LINKREPRO:** _Directory-Path_ seçeneğini girin. Değişikliklerinizi kaydetmek için **Tamam ' ı** seçin.
+
+1. Yeniden üretme projenizi derleyin ve beklenen sorunun oluştuğunu onaylayın.
+
+Son olarak, tüm _Dizin-yol bağlantısı yeniden_ üretme dizinini bir. zip dosyasına veya benzer şekilde sıkıştırarak yeniden oluşturma 'yı paketleyin ve raporunuza ekleyin.
+
+### <a name="other-repros"></a>Diğer reprofesyonelleri
+
+Sorunu tek bir kaynak dosya veya önceden işlenmiş yeniden oluşturma ile azaltamaz ve sorun bir bağlantı yeniden üretme gerektirmiyorsa, bir IDE projesi araştırıyoruz. İyi bir yeniden oluşturma oluşturmaya ilişkin tüm yönergeler hala geçerlidir: kod, en az ve kendi kendine dahil olmak üzere. Sorun en son araçlarımızda gerçekleşmeli ve ilgiliyse, diğer derleyicilerde görülmemelidir.
+
+Yeniden oluşturma 'yı en düşük IDE projesi olarak oluşturun, ardından tüm dizin yapısını bir. zip dosyasına sıkıştırarak veya benzer şekilde, raporunuza bağlayın.
 
 ## <a name="ways-to-send-your-report"></a>Raporunuzu gönderme yolları
 
-Birkaç raporunuzu bize almak için iyi bir yolu var. Visual Studio'nun yerleşik kullanabileceğiniz [sorun rapor](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017), veya [Visual Studio Geliştirici topluluğu](https://developercommunity.visualstudio.com/) sayfaları. Ayrıca bir **ürün geri bildirimi** bu sayfanın alt kısmındaki düğmesi. Seçim, yerleşik araçlar, ekran görüntüleri yakalamanızı ve raporunuzu düzenlemek için IDE içinde kullanmak istediğinize bağlıdır. Doğrudan değil tercih ederseniz, geliştirici topluluğu Web sitesini kullanabilirsiniz.
+Raporunuzu bize almak için kullanabileceğiniz birkaç iyi yol vardır. Visual Studio 'nun yerleşik [rapor bir sorun aracını](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)veya [Visual Studio Geliştirici topluluğu](https://developercommunity.visualstudio.com/) sayfalarını kullanabilirsiniz. Ayrıca, bu sayfanın alt kısmında bir **ürün geri bildirim** düğmesi de bulunur. Bu seçenek, ekran görüntülerini yakalamak ve raporunuzu düzenlemek için IDE 'de yerleşik araçları kullanmak isteyip istemediğinize bağlıdır. Kullanmayı tercih ediyorsanız, doğrudan geliştirici topluluğu Web sitesini kullanabilirsiniz.
 
 > [!NOTE]
-> Raporunuzu nasıl gönderdiğiniz bağımsız olarak Microsoft, gizliliğinize saygı duyar. Microsoft tüm veri gizlilik yasalarına ve düzenlemelerine uyumluluğa taahhüt eder. Biz bize verileri nasıl kabul hakkında daha fazla bilgi için bkz: [Microsoft gizlilik bildirimi](https://privacy.microsoft.com/privacystatement).
+> Raporunuzu gönderdikten bağımsız olarak, Microsoft gizliliğinize saygı duyar. Microsoft tüm veri gizliliği yasaları ve yönetmelikleriyle uyumluluğu taahhüt etmektedir. Bize göndereceğiniz verileri nasıl değerlendirdiğimiz hakkında bilgi için [Microsoft gizlilik bildirimi](https://privacy.microsoft.com/privacystatement)' ne bakın.
 
-### <a name="use-the-report-a-problem-tool"></a>Sorun raporu kullanın
+### <a name="use-the-report-a-problem-tool"></a>Sorun bildir aracını kullanma
 
-**Sorun bildir** araçtır Visual Studio'da Visual Studio kullanıcıların yalnızca birkaç tıklama ile yaşayabileceğiniz sorunları için bir yol. Bu, buldunuz sorun hakkında ayrıntılı bilgi göndermek için basit bir form açılır. Ayrıca IDE'den çıkmadan sonra raporunuzu gönderebilirsiniz.
+Visual Studio 'da **sorun bildir** Aracı, Visual Studio kullanıcılarının yalnızca birkaç tıklamayla sorunları raporladığı bir yoldur. Bulduğunuz sorun hakkında ayrıntılı bilgi göndermek için basit bir form açılır. Daha sonra, IDE 'yi kapatmadan raporunuzu gönderebilirsiniz.
 
-Sorununuzu aracılığıyla raporlama **sorun bildir** araçtır IDE'den kolay. Başlık Çubuğu'ndan seçerek erişebildiğinizi **geri bildirim gönder** yanındaki simge **Hızlı Başlat** arama kutusu. Veya, menü çubuğunda Bul **yardımcı** > **geri bildirim gönder** > **sorun bildir**.
+**Sorun bildir** aracı aracılığıyla sorununuzu BILDIRME, IDE 'den kolay ve kullanışlı bir işlemdir. **Hızlı başlatma** arama kutusunun yanındaki **geri bildirim gönder** simgesini seçerek, bu kişiye başlık çubuğundan erişebilirsiniz. Ya da, **yardım** >   > **bir sorun rapor** **Gönder**' de menü çubuğunda bulabilirsiniz.
 
-Önce bir sorunu bildirmek seçtiğinizde, benzer sorunlarla ilgili Geliştirici topluluğu arayın. Sorununuzu daha önce bildirilen durumunda rapora oylamak ve açıklamalar ile ek özellikleri ekleyin. Benzer bir sorun görmüyorsanız seçin **yeni sorun bildirme** düğme Visual Studio geri bildirim iletişim kutusunun alt kısmında ve sorununuzu bildirmek için adımları izleyin.
+Bir sorunu bildirmelisiniz, önce geliştirici topluluğunda benzer sorunlar için arama yapın. Sorununuzun daha önce raporlanmış olması durumunda, raporu oylayın ve ek bilgilerle yorum ekleyin. Benzer bir sorun görmüyorsanız, Visual Studio geri bildirim iletişim kutusunun altındaki **yeni sorun bildir** düğmesini seçin ve sorununuzu raporlamak için adımları izleyin.
 
-### <a name="use-the-visual-studio-developer-community-pages"></a>Visual Studio Geliştirici topluluğu sayfalarını kullanma
+### <a name="use-the-visual-studio-developer-community-pages"></a>Visual Studio Geliştirici topluluk sayfalarını kullanma
 
-Visual Studio Geliştirici topluluğu sayfaları sorunları bildirme ve Visual Studio ve C++ Derleyici, araçları ve kitaplıkları için çözüm bulmak için başka bir uygun yoldur. Belirli bir geliştirici topluluğu sayfa için [Visual Studio](https://developercommunity.visualstudio.com/spaces/8/index.html), [Mac için Visual Studio](https://developercommunity.visualstudio.com/spaces/41/index.html), [.NET](https://developercommunity.visualstudio.com/spaces/61/index.html), [ C++ ](https://developercommunity.visualstudio.com/spaces/62/index.html), [Azure DevOps Hizmetleri](https://developercommunity.visualstudio.com/spaces/21/index.html), ve [TFS](https://developercommunity.visualstudio.com/spaces/22/index.html).
+Visual Studio Geliştirici topluluk sayfaları, sorunları bildirmek ve Visual Studio ve C++ derleyici, Araçlar ve kitaplıklar için çözüm bulmak için kullanışlı bir yoldur. [Visual Studio](https://developercommunity.visualstudio.com/spaces/8/index.html), [Mac için Visual Studio](https://developercommunity.visualstudio.com/spaces/41/index.html), [.net](https://developercommunity.visualstudio.com/spaces/61/index.html), [C++](https://developercommunity.visualstudio.com/spaces/62/index.html), [Azure DevOps Services](https://developercommunity.visualstudio.com/spaces/21/index.html)ve [TFS](https://developercommunity.visualstudio.com/spaces/22/index.html)için belirli geliştirici topluluk sayfaları vardır.
 
-Altındaki Topluluk sekmelerin her sayfanın üst kısmındaki arama kutusuna var. Benzer bir sorun bildirin gönderilerini bulmak için kullanabilirsiniz. Bir çözüm bulabilirsiniz veya sorununuz için ilgili diğer yararlı bilgiler zaten mevcuttur. Birisi aynı sorunla daha önce ardından oylamak ve açıklama üzerinde bildirmediyse, rapor yerine yeni bir sorun raporu oluşturun. Yorum yapmak için oy verin veya yeni bir sorun bildirmek için Visual Studio hesabınızda oturum açmak için istenebilir. İlk kez oturum açarken, profilinize Geliştirici topluluğu uygulama erişimi vermek kabul etmeniz gerekir.
+Topluluk sekmelerinin altında, her sayfanın üst kısmına yakın bir arama kutusudur. Bunu, sizinkilerle benzer sorunları rapor eden gönderimler bulmak için kullanabilirsiniz. Sorunla ilgili bir çözüm veya diğer yararlı bilgiler zaten var. Birisi daha önce aynı sorunu rapormışsa, yeni bir sorun raporu oluşturmak yerine bu raporda yukarı oy ve açıklama ekleyin. Yeni bir sorunu yorum, oylamak veya raporlamak için, Visual Studio hesabınızda oturum açmanız istenebilir. İlk kez oturum açtığınızda, geliştirici topluluk uygulamasına profilinize erişim vermeyi kabul etmeniz gerekir.
 
-C++ Derleyici, bağlayıcı ve diğer araçlar ve kitaplıkların kullanımı ile ilgili sorunlar için [C++](https://developercommunity.visualstudio.com/spaces/62/index.html) sayfası. Sorununuz için arama yapın ve bunu önce bildirilen taşınmadığından, seçim **sorun bildir** arama kutusunun yanındaki düğmeyi. Repro kodunuzu ve komut satırı, ekran görüntüleri, ilgili tartışmalar için bağlantıları ve düşündüğünüz faydalı ve ilgili diğer bilgileri içerebilir.
+C++ Derleyici, bağlayıcı ve diğer araç ve kitaplıklarla ilgili sorunlar için [C++](https://developercommunity.visualstudio.com/spaces/62/index.html) sayfasını kullanın. Sorun için arama yaptıysanız ve daha önce bildirilmediyse, arama kutusunun yanındaki **sorun bildir** düğmesini seçin. Yeniden üretme kodunuzu ve Komut satırlarınızı, ekran görüntülerini, ilgili tartışmalara bağlantıları ve uygun ve yararlı olduğunu düşündüğünüz diğer bilgileri ekleyebilirsiniz.
 
 > [!TIP]
-> Diğer tür sorunları için ilgisiz Visual Studio'da bulabileceğiniz C++ (örneğin, kullanıcı Arabirimi sorunları, bozuk bir IDE işlevsellik veya genel kilitlenme), bir araç takımı kullanın **sorun bildir** IDE'de araç. Ekran görüntüsü özelliklerini ve, buldunuz soruna neden UI eylemlerini kaydedin yeteneğini nedeniyle en iyi seçenek budur. Bu tür hatalara da üzerinde aranabilir [Geliştirici topluluğu](https://developercommunity.visualstudio.com/) site. Daha fazla bilgi için [Visual Studio ile ilgili bir sorun bildirme](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017).
+> Visual Studio 'da C++ araç kümesiyle ilgisi olmayan diğer tür sorunlar (ÖRNEĞIN, UI sorunları, kopuk IDE işlevselliği veya genel kilitlenmeler) için IDE 'de **sorun bildir** aracını kullanın. Bu, ekran görüntüsü özellikleri ve bulduğunuz soruna yol açabilecek Kullanıcı Arabirimi eylemlerini kaydetme özelliği nedeniyle en iyi seçenektir. Bu tür hatalar [Geliştirici topluluğu](https://developercommunity.visualstudio.com/) sitesinde de aranabilir. Daha fazla bilgi için bkz. [Visual Studio ile sorun bildirme](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017).
 
-### <a name="reports-and-privacy"></a>Raporlar ve gizlilik
+### <a name="reports-and-privacy"></a>Raporlar ve Gizlilik
 
-**Tüm raporlar ve yorumlar ve yanıt bilgileri varsayılan olarak herkese görünür**. Normalde, sorunları, çözümler ve diğer kullanıcıların bulduğunuz geçici çözümleri görmek tüm topluluğuna izin verdiğinden bir faydası olur. Ancak, verileriniz veya kimliğini, gizlilik veya fikri mülkiyet hakları nedeniyle, genel yapma hakkında endişeleriniz varsa seçeneğiniz vardır.
+**Raporlardaki tüm bilgiler ve tüm yorumlar ve yanıtlar, varsayılan olarak herkese açık bir şekilde görünür**. Normal olarak, diğer kullanıcıların bulduğu sorunları, çözümleri ve geçici çözümleri görmek için topluluğun tamamına izin verdiği için bu bir avantajdır. Bununla birlikte, verilerinizi veya kimliğinizi genel hale getirme konusunda endişe ediyorsanız, gizlilik veya fikri mülkiyet nedenleriyle seçenekleriniz vardır.
 
-Kimliğinizi göstermeden hakkında endişeleriniz varsa [yeni bir Microsoft hesabı oluşturma](https://signup.live.com/) ilgili tüm ayrıntıları ifşa değil. Raporunuzu oluşturmak için bu hesabı kullanın.
+Kimliğinizi açığa çıkardıysanız, sizin hakkındaki ayrıntıları açıklayamaz [Yeni bir Microsoft hesabı oluşturun](https://signup.live.com/) . Raporunuzu oluşturmak için bu hesabı kullanın.
 
-**Özel bir başlık ya da genel ilk rapor içeriğinin tutmak istediğiniz herhangi bir şey yerleştirmeyin.** Bunun yerine, ayrıntıları özel olarak ayrı bir açıklama için göndereceğiz varsayalım. Raporunuzu ve doğru kişiye yönlendirildiğinden emin olmak için dahil **cppcompiler** sorun raporunuzu Konu listesinde. Sorun raporu oluşturulduktan sonra artık kimlerin görebileceğini yanıtlar ve eklerini belirtmek mümkündür.
+**Ortak olan ilk raporun başlığında veya içeriğinde özel tutmak istediğiniz herhangi bir şeyi yerleştirmeyin.** Bunun yerine, ayrıntıları özel olarak ayrı bir yoruma göndereceksiniz. Raporunuzun doğru kişilere yönlendirildiğinden emin olmak için, sorun raporunuzun konu listesine **cppcompiler** ekleyin. Sorun raporu oluşturulduktan sonra, yanıtları ve ekleri kimlerin görebileceğini belirlemek artık mümkündür.
 
 #### <a name="to-create-a-problem-report-for-private-information"></a>Özel bilgiler için bir sorun raporu oluşturmak için
 
-1. Oluşturduğunuz bir raporda seçin **açıklama ekleme** özel, sorunun tanımı oluşturmak için.
+1. Oluşturduğunuz raporda, sorunun özel açıklamasını oluşturmak için **Açıklama Ekle** ' yi seçin.
 
-1. Yanıt Düzenleyicisi'nde, aşağıdaki dropdown denetimi kullanın **Gönder** ve **iptal** yanıtınız hedef kitlesini belirtmek için düğmeler. Yalnızca belirttiğiniz kişilerin bu özel yanıtlar ve tüm görüntüleri, bağlantıları veya kod içine dahil görebilirsiniz. Seçin **Moderatörler ve özgün posteri Viewable** Microsoft çalışanları ve kendiniz için görünürlük sınırlamak için.
+1. Yanıt Düzenleyicisi 'nde Yanıtla ilgili hedef kitlelerinizi belirtmek için **Gönder** ve **iptal** düğmeleri altındaki açılan menü denetimini kullanın. Yalnızca belirttiğiniz kişiler, bu özel yanıtları ve bunlara dahil ettiğiniz herhangi bir görüntüyü, bağlantıyı veya kodu görüntüleyebilir. Microsoft çalışanları ve kendi kendinize yönelik görünürlüğü sınırlamak için **, moderatör ve orijinal poster** seçeneklerini belirleyin.
 
-1. Açıklama ve tüm diğer bilgileri, görüntüleri ve dosya ekleri, yineleme için gereken ekleyin. Seçin **Gönder** özel olarak bu bilgileri göndermek düğmesi.
+1. Yeniden oluşturma için gereken açıklama ve diğer bilgileri, görüntüleri ve dosya eklerini ekleyin. Bu bilgileri özel olarak göndermek için **Gönder** düğmesini seçin.
 
-   En fazla 10 dosyaları ve ekli dosya çubuğunda 2GB sınırlaması yoktur. Tüm büyük karşıya yüklenmesi için istek bir yükleme URL'si, özel açıklama.
+   İliştirilen dosyalar ve en fazla 10 dosya için 2GB sınırı vardır. Daha büyük karşıya yüklemeler için özel açıklamaınıza karşıya yükleme URL 'SI isteyin.
 
-Bu açıklamayı altında bus'dan belirttiğiniz aynı kısıtlı görünürlük vardır. Yanıtları dropdown denetimi kısıtlı görünürlük durumunu doğru şekilde göstermiyor bile geçerlidir.
+Bu yorum altındaki tüm yanıtlar, belirttiğiniz aynı kısıtlanmış görünürlüğe sahiptir. Yanıtlardaki açılan denetim, kısıtlanmış görünürlük durumunu doğru bir şekilde göstermese bile geçerlidir.
 
-Gizliliğinizi korumak ve hassas bilgilerinizi genel görünümü dışında tutmak için dikkatli olun. Microsoft tüm etkileşim yanıtlara kısıtlı yorum altında tutun. Diğer açıklamaları yanıtlar hassas bilgilerin yanlışlıkla açığa neden olabilir.
+Gizliliğinizi korumak ve hassas bilgilerinizi genel görünümden korumak için dikkatli olun. Kısıtlanmış yorum altında yanıt vermek için tüm etkileşimi Microsoft ile koruyun. Diğer açıklamalara yanıt vermek, hassas bilgileri yanlışlıkla açıklayabilmeniz için yol açabilir.
 
-## <a name="how-to-report-a-c-documentation-issue"></a>Bir C++ belgeleri sorun bildirme
+## <a name="how-to-report-a-c-documentation-issue"></a>Bir C++ belge sorununu bildirme
 
-GitHub sorunları belgelerimizde bildirilen sorunları izlemek için kullanırız. Şimdi GitHub sorunları doğrudan bu sayede bir içerik sayfasından Yazıcılar ve ürün ekipleri ile çok daha zengin bir şekilde etkileşim oluşturabilirsiniz. Bir belge, hatalı kod örneği, karmaşık bir açıklama, kritik bir atlama veya bile yalnızca bir yazım yanlışı ile ilgili bir sorun görürseniz, kolayca bize bildirin. Seçin ve sayfayı kaydırın **belgeler hakkında geri bildirimde bulunmak için oturum açın**. Zaten yoksa, bir GitHub hesabı oluşturmanız gerekir. Bir GitHub hesabı varsa, tüm bizim belgeleri sorunları ve bunların durumunu görebilirsiniz. Bildirdiğiniz sorun için değişiklik yapıldığında bildirimleri ayrıca Al. Daha fazla bilgi için [A yeni geri bildirim sistemi geliyor docs.microsoft.com](/teamblog/a-new-feedback-system-is-coming-to-docs).
+Belgelerimizde bildirilen sorunları izlemek için GitHub sorunlarını kullanıyoruz. Artık, yazarlar ve ürün ekipleriyle çok daha zengin bir şekilde etkileşimde bulunmak için doğrudan bir içerik sayfasından GitHub sorunları oluşturabilirsiniz. Bir belgeyle ilgili bir sorun, hatalı kod örneği, kafa karıştırıcı bir açıklama, kritik bir atlama veya hatta yalnızca bir typo görürseniz, kolayca haberdar olabilirsiniz. Sayfanın alt kısmına ilerleyin ve **belge geri bildirimi sağlamak Için oturum aç '** ı seçin. Henüz yoksa bir GitHub hesabı oluşturmanız gerekir. Bir GitHub hesabınız olduğunda, tüm belge sorunlarınızı ve bunların durumlarını görebilirsiniz. Ayrıca, bildirdiğiniz sorun için değişiklik yapıldığında bildirimler alırsınız. Daha fazla bilgi için bkz. [docs.Microsoft.com to A yeni bir geri bildirim sistemi](/teamblog/a-new-feedback-system-is-coming-to-docs).
 
-Belge geri bildirim düğmesi kullandığınızda Github'da bir belge sorunu oluşturun. Sorunu, sorunu oluşturduğunuz sayfası hakkında bazı bilgiler otomatik olarak doldurulur. Sorun bu bilgileri düzenlemeyin şekilde bulunduğu nasıl biliyoruz olmasıdır. Yalnızca bir önerilen düzeltme yanlış ve isterseniz yenilikler hakkında ayrıntıları ekleyin. [Bizim C++ açık kaynak olan belgeleri](https://github.com/MicrosoftDocs/cpp-docs/), bu yüzden bir düzeltme kendinize göndermek istiyorsanız, aşağıdakileri yapabilirsiniz. Belgelerimize nasıl katkıda bulunabileceğinizi hakkında daha fazla bilgi için bkz. bizim [katkıda Kılavuzu](https://github.com/MicrosoftDocs/cpp-docs/blob/master/CONTRIBUTING.md) GitHub üzerinde.
+Belge geri bildirim düğmesini kullandığınızda GitHub 'da bir belge sorunu oluşturursunuz. Sorun, sorunu oluşturduğunuz sayfa hakkında bazı bilgilerle otomatik olarak doldurulur. Sorunun nerede bulunduğunu öğrendiğimiz bu, bu bilgileri düzenlemeyin. Yalnızca neyin yanlış olduğuna ilişkin ayrıntıları ve isterseniz önerilen bir çözümü ekleyin. [Belgelerimiz C++ açık kaynaktır](https://github.com/MicrosoftDocs/cpp-docs/), bu nedenle kendiniz bir çözüm göndermek isterseniz, ' yi kullanabilirsiniz. Belgelerimize nasıl katkıda bulunabileceğiniz hakkında daha fazla bilgi için GitHub 'daki [katkıda bulunan kılavuzumuza](https://github.com/MicrosoftDocs/cpp-docs/blob/master/CONTRIBUTING.md) bakın.

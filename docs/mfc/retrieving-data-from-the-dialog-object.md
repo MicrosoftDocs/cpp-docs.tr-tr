@@ -1,5 +1,5 @@
 ---
-title: İletişim Nesnesinden Veriyi Geri Alma
+title: Iletişim nesnesinden verileri alma
 ms.date: 11/04/2016
 helpviewer_keywords:
 - dialog boxes [MFC], retrieving user data
@@ -21,25 +21,25 @@ helpviewer_keywords:
 - DDX (dialog data exchange) [MFC], retrieving data from Dialog object
 - GetWindowText method [MFC]
 ms.assetid: bdca2b61-6b53-4c2e-b426-8712c7a38ec0
-ms.openlocfilehash: b376edc3ee7d8abbca43da6d823e71abad99bc5d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 903d76a1e672d05a3c093e528f7153562df8e3e5
+ms.sourcegitcommit: 1e6386be9084f70def7b3b8b4bab319a117102b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62308907"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "71685574"
 ---
-# <a name="retrieving-data-from-the-dialog-object"></a>İletişim Nesnesinden Veriyi Geri Alma
+# <a name="retrieving-data-from-the-dialog-object"></a>Iletişim nesnesinden verileri alma
 
-Framework'te iletişim kutusundaki denetimlerin değerleri başlatır ve denetimlerini değerleri almak için kolay bir yol sağlar. Daha zahmetli el ile işlevleri çağırmak için yaklaşımdır `SetDlgItemText` ve `GetDlgItemText` sınıfın üye işlevleri `CWnd`, Denetim windows için geçerlidir. Sahip bu işlevlerin, size her denetimi ayrı ayrı veya kendi değeri gibi işlevleri çağırma erişim `SetWindowText` ve `GetWindowText`. Framework'ün yaklaşım, başlatma ve alma otomatikleştirir.
+Framework, bir iletişim kutusundaki denetim değerlerini başlatmanın ve denetimlerden değerleri almak için kolay bir yol sağlar. Daha fazla laborious el ile yaklaşımı, denetim pencereleri için uygulanan `CWnd` sınıfının `SetDlgItemText` ve `GetDlgItemText` üye işlevleri gibi işlevleri çağırmalıdır. Bu işlevlerle, her denetime, `SetWindowText` ve `GetWindowText` gibi işlevleri çağırarak, değerini ayarlamak veya almak için tek tek erişirsiniz. Çerçevenin yaklaşımı, başlatma ve almayı otomatikleştirir.
 
-İletişim kutusu veri değişimi (DDX) daha kolay iletişim nesnesi iletişim kutusu ve üye değişkenlerinde denetimler arasında veri alışverişi sağlar. Bu exchange iki şekilde de çalışır. İletişim kutusundaki denetimler başlatmak için iletişim nesnesi içinde veri üyelerinin değerlerini ayarlayabilirsiniz ve iletişim kutusu görüntülenmeden önce framework denetimlere değerleri aktarın. Ardından kullanıcı tarafından girilen veriler ile iletişim veri üyeleri herhangi bir zamanda güncelleştirebilirsiniz. Bu noktada, veri üye değişkenlerine bakarak verileri kullanabilirsiniz.
+İletişim kutusu veri değişimi (DDX), iletişim kutusundaki denetimler ve iletişim kutusu nesnesindeki üye değişkenleri arasında daha kolay veri alışverişi yapmanızı sağlar. Bu değişim her iki şekilde de çalışmaktadır. İletişim kutusundaki denetimleri başlatmak için, iletişim kutusu nesnesindeki veri üyelerinin değerlerini ayarlayabilirsiniz ve çerçeve, iletişim kutusu görüntülenmeden önce değerleri denetimlere aktarır. Ardından, iletişim kutusu veri üyelerini Kullanıcı tarafından girilen verilerle güncelleştirebilirsiniz. Bu noktada, veri üyesi değişkenlerine başvurarak verileri kullanabilirsiniz.
 
-İletişim verisi doğrulama (DDV) otomatik olarak doğrulanması için iletişim kutusu denetimleri değerlerinin düzenleyebilirsiniz.
+İletişim kutusu veri doğrulama (DDV) ile otomatik olarak doğrulanacak iletişim kutusu denetimlerinin değerlerini de düzenleyebilirsiniz.
 
-DDX ve DDV daha ayrıntılı olarak açıklanmıştır [iletişim kutusu veri değişimi ve doğrulaması](../mfc/dialog-data-exchange-and-validation.md).
+DDX ve DDV [Iletişim kutusu veri değişimi ve doğrulaması](../mfc/dialog-data-exchange-and-validation.md)konusunda daha ayrıntılı olarak açıklanmıştır.
 
-Kalıcı bir iletişim kutusu için kullanıcının girdiği herhangi bir veri alabilirsiniz `DoModal` IDOK döndürür, ancak önce iletişim nesnesi yok. Modsuz iletişim kutusu için veri iletişim nesnesinden herhangi bir zamanda çağırarak alabilirsiniz `UpdateData` bağımsız değişkeniyle **TRUE** ve sonra iletişim kutusu sınıfı üye değişkenlerine erişme. Bu konu içinde daha ayrıntılı olarak ele alınan [iletişim kutusu veri değişimi ve doğrulaması](../mfc/dialog-data-exchange-and-validation.md).
+Kalıcı bir iletişim kutusu için, `DoModal` ' ı döndürdüğünde, ancak iletişim kutusu nesnesi yok edildiğinde kullanıcı tarafından girilen tüm verileri alabilirsiniz. Kalıcı olmayan iletişim kutusu için, **doğru** bağımsız değişkenle `UpdateData` ' ı çağırarak ve ardından iletişim kutusu sınıfı üye değişkenlerine erişerek, iletişim kutusu nesnesinden veri alabilirsiniz. Bu konu, [Iletişim kutusu veri değişimi ve doğrulaması](../mfc/dialog-data-exchange-and-validation.md)konusunda daha ayrıntılı olarak ele alınmıştır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Bir İletişim Kutusunun Yaşam Döngüsü](../mfc/life-cycle-of-a-dialog-box.md)
+[MFC 'de Iletişim kutularıyla çalışma](../mfc/life-cycle-of-a-dialog-box.md)

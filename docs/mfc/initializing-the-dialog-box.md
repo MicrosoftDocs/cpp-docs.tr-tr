@@ -1,5 +1,5 @@
 ---
-title: İletişim Kutusunu Başlatma
+title: Iletişim kutusu başlatılıyor
 ms.date: 11/04/2016
 helpviewer_keywords:
 - initializing dialog boxes [MFC]
@@ -8,19 +8,19 @@ helpviewer_keywords:
 - modeless dialog boxes [MFC], initializing
 - MFC dialog boxes [MFC], initializing
 ms.assetid: 968142f5-19f9-4b34-a1d4-8e6412d4379b
-ms.openlocfilehash: 87b3405f1441e730cf5c9ce7fc03d2c7372e55db
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 14cdf94bef79f254b4aaa2c1c0dfba6c88b7498b
+ms.sourcegitcommit: 1e6386be9084f70def7b3b8b4bab319a117102b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62297105"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "71685626"
 ---
-# <a name="initializing-the-dialog-box"></a>İletişim Kutusunu Başlatma
+# <a name="initializing-the-dialog-box"></a>Iletişim kutusu başlatılıyor
 
-Sonra iletişim kutusunu ve tüm alt denetimleri oluşturulur ancak yalnızca önce iletişim kutusu (ya da türünde) iletişim nesnesi 's ekranda [OnInitDialog](../mfc/reference/cdialog-class.md#oninitdialog) üye işlevi çağrılır. Kalıcı bir iletişim kutusu için bu sistemdeki `DoModal` çağırın. Kalıcı olmayan iletişim kutusu, `OnInitDialog` aldığında çağrılan `Create` çağrılır. Genellikle geçersiz kılma `OnInitDialog` ilk metin düzenleme kutusu ayarlama gibi iletişim kutusunun denetimleri başlatılamadı. Çağırmalısınız `OnInitDialog` temel sınıfının üye işlevinde `CDialog`, gelen, `OnInitDialog` geçersiz kılar.
+İletişim kutusu ve tüm denetimleri oluşturulduktan sonra, ancak ekranda iletişim kutusu (herhangi bir türden) görüntülenmeden önce, iletişim kutusu nesnesinin [OnInitDialog](../mfc/reference/cdialog-class.md#oninitdialog) üye işlevi çağırılır. Kalıcı bir iletişim kutusu için, bu `DoModal` çağrısı sırasında gerçekleşir. Kalıcı olmayan bir iletişim kutusu için, `Create` çağrıldığında `OnInitDialog` çağrılır. Bir düzenleme kutusunun başlangıç metnini ayarlamak gibi, iletişim kutusunun denetimlerini başlatmak için genellikle `OnInitDialog` ' ı geçersiz kılabilirsiniz. @No__t-2 geçersiz kılmanızda, `CDialog` temel sınıfının `OnInitDialog` üye işlevini çağırmanız gerekir.
 
-İletişim kutusunun arka plan rengini (ve, uygulamanızdaki tüm diğer iletişim kutuları) ayarlamak istiyorsanız, bkz. [iletişim kutusunun arka plan rengini ayarlama](../mfc/setting-the-dialog-boxs-background-color.md).
+İletişim kutusunun arka plan rengini (ve uygulamanızdaki diğer tüm iletişim kutularından) ayarlamak istiyorsanız, bkz. [Iletişim kutusunun arka plan rengini ayarlama](../mfc/setting-the-dialog-boxs-background-color.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Bir İletişim Kutusunun Yaşam Döngüsü](../mfc/life-cycle-of-a-dialog-box.md)
+[MFC 'de Iletişim kutularıyla çalışma](../mfc/life-cycle-of-a-dialog-box.md)

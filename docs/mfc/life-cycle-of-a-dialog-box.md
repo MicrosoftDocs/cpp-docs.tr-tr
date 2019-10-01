@@ -1,6 +1,6 @@
 ---
-title: Bir İletişim Kutusunun Yaşam Döngüsü
-ms.date: 11/04/2016
+title: MFC 'de Iletişim kutularıyla çalışma
+ms.date: 09/27/2019
 helpviewer_keywords:
 - dialog boxes [MFC], life cycle
 - modal dialog boxes [MFC], life cycle
@@ -8,22 +8,22 @@ helpviewer_keywords:
 - MFC dialog boxes [MFC], life cycle
 - life cycle of dialog boxes [MFC]
 ms.assetid: e16fd78e-238d-4f31-8c9d-8564f3953bd9
-ms.openlocfilehash: a3772a180e35a57c997446fcf2268d84bec2daa5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ad15250cf9a8dd663072cf9423263260bbb40a0e
+ms.sourcegitcommit: 1e6386be9084f70def7b3b8b4bab319a117102b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62365350"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "71685732"
 ---
-# <a name="life-cycle-of-a-dialog-box"></a>Bir İletişim Kutusunun Yaşam Döngüsü
+# <a name="working-with-dialog-boxes-in-mfc"></a>MFC 'de Iletişim kutularıyla çalışma
 
-Bir iletişim kutusunun yaşam döngüsü sırasında kullanıcı iletişim kutusunu çağırır ve genellikle kullanıcı oluşturur ve başlatır iletişim nesnesi, bir komut işleyici içinde iletişim kutusu ile etkileşim iletişim kutusu kapanır.
+Bir iletişim kutusunun yaşam döngüsü boyunca Kullanıcı iletişim kutusunu çağırır, genellikle iletişim kutusu nesnesini oluşturan ve Başlatan bir komut işleyici içinde Kullanıcı iletişim kutusuyla etkileşime girer ve iletişim kutusu kapanır.
 
-Kalıcı iletişim kutuları için işleyicinizi iletişim kutusu kapatıldıktan sonra girilen kullanıcı verileri toplar. İletişim nesnesi, iletişim penceresini kapattıktan sonra mevcut olmadığından, verileri ayıklamak için yalnızca iletişim sınıfınızın bir üye değişkenleri kullanabilirsiniz.
+Kalıcı iletişim kutuları için, işleyiciniz, iletişim kutusu kapandığında kullanıcının girdiği verileri toplar. İletişim kutusu, iletişim kutusu penceresi kapatıldıktan sonra mevcut olduğundan, verileri ayıklamak için iletişim kutusu sınıfınızın üye değişkenlerini kullanmanız yeterlidir.
 
-İletişim kutusu hala görülebilir ancak kalıcı olmayan iletişim kutuları için genellikle veri iletişim nesnesinden ayıklar. Belirli bir noktada, iletişim nesnesi yok; Bu durumda, kodunuz üzerinde bağlıdır.
+Kalıcı olmayan iletişim kutuları için, iletişim kutusu hala görünmezken iletişim kutusu nesnesinden verileri genellikle ayıklayabiliriz. Bir noktada iletişim kutusu nesnesi yok edilir; Bu gerçekleştiğinde kodunuza bağlı olur.
 
-## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz
+## <a name="what-do-you-want-to-know-more-about"></a>Hakkında daha fazla bilgi edinmek istiyorsunuz
 
 - [İletişim kutuları oluşturma ve görüntüleme](../mfc/creating-and-displaying-dialog-boxes.md)
 
@@ -31,24 +31,24 @@ Kalıcı iletişim kutuları için işleyicinizi iletişim kutusu kapatıldıkta
 
 - [Kalıcı olmayan iletişim kutuları oluşturma](../mfc/creating-modeless-dialog-boxes.md)
 
-- [Bellekteki bir iletişim şablonunu kullanma](../mfc/using-a-dialog-template-in-memory.md)
+- [Bellekte bir iletişim kutusu şablonu kullanma](../mfc/using-a-dialog-template-in-memory.md)
 
 - [İletişim kutusunun arka plan rengini ayarlama](../mfc/setting-the-dialog-boxs-background-color.md)
 
-- [İletişim kutusunu başlatma](../mfc/initializing-the-dialog-box.md)
+- [İletişim kutusu başlatılıyor](../mfc/initializing-the-dialog-box.md)
 
-- [İletişim kutunuzda Windows iletilerini işleme](../mfc/handling-windows-messages-in-your-dialog-box.md)
+- [İletişim kutusunda Windows iletilerini işleme](../mfc/handling-windows-messages-in-your-dialog-box.md)
 
-- [İletişim nesnesinden veriyi geri alma](../mfc/retrieving-data-from-the-dialog-object.md)
+- [İletişim nesnesinden verileri alma](../mfc/retrieving-data-from-the-dialog-object.md)
 
-- [İletişim kutusunu kapatma](../mfc/closing-the-dialog-box.md)
+- [İletişim kutusu kapatılıyor](../mfc/closing-the-dialog-box.md)
 
 - [İletişim kutusunu yok etme](../mfc/destroying-the-dialog-box.md)
 
-- [İletişim kutusu veri değişimi (DDX) ve doğrulama (DDV)](../mfc/dialog-data-exchange-and-validation.md)
+- [İletişim kutusu veri değişimi (DDX) ve doğrulaması (DDV)](../mfc/dialog-data-exchange-and-validation.md)
 
 - [Özellik sayfası iletişim kutuları](../mfc/property-sheets-and-property-pages-mfc.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İletişim Kutuları](../mfc/dialog-boxes.md)
+[İletişim kutuları](../mfc/dialog-boxes.md)

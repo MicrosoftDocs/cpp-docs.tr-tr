@@ -1,5 +1,5 @@
 ---
-title: Kalıcı ve Kalıcı Olmayan İletişim Kutuları
+title: Kalıcı ve kalıcı olmayan Iletişim kutuları
 ms.date: 11/04/2016
 helpviewer_keywords:
 - MFC dialog boxes [MFC], modeless
@@ -7,34 +7,34 @@ helpviewer_keywords:
 - MFC dialog boxes [MFC], modal
 - modal dialog boxes [MFC]
 ms.assetid: e83df336-5994-4b8f-8233-7942f997315b
-ms.openlocfilehash: c3a5263736324d7fe25066e8879d13b3a41768de
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 886229a2b66968bf76129ecb1da838bd36e66215
+ms.sourcegitcommit: 1e6386be9084f70def7b3b8b4bab319a117102b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62238425"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "71685179"
 ---
-# <a name="modal-and-modeless-dialog-boxes"></a>Kalıcı ve Kalıcı Olmayan İletişim Kutuları
+# <a name="modal-and-modeless-dialog-boxes"></a>Kalıcı ve kalıcı olmayan Iletişim kutuları
 
-Sınıf kullanabileceğiniz [CDialog](../mfc/reference/cdialog-class.md) iletişim kutularının iki tür yönetmek için:
+İki tür iletişim kutusunu yönetmek için class [CDialog](../mfc/reference/cdialog-class.md) kullanabilirsiniz:
 
-- *Kalıcı iletişim kutuları*, programın devam etmeden önce yanıt vermek kullanıcı gerektirir
+- Kullanıcının programa devam etmeden önce yanıt vermesini gerektiren *kalıcı iletişim kutuları*
 
-- *Kalıcı olmayan iletişim kutuları*, kullanmak istediğiniz zaman kullanılabilir ve ekran kalır, ancak diğer kullanıcı etkinlikleri izin
+- Ekranda yer alan ve diğer Kullanıcı etkinliklerine izin veren, ekranda geçen ve *kalıcı olmayan iletişim kutuları*
 
-Kaynak düzenleme ve bir iletişim şablonunu oluşturmayla ilgili yordamlar kalıcı ve kalıcı olmayan iletişim kutuları için aynıdır.
+İletişim kutusu şablonu oluşturmak için kaynak düzenlemesi ve yordamları, kalıcı ve kalıcı olmayan iletişim kutuları için aynıdır.
 
-Programınız için bir iletişim kutusu oluşturmak için aşağıdaki adımları gerektirir:
+Programınız için bir iletişim kutusu oluşturmak aşağıdaki adımları gerektirir:
 
-1. Kullanım [iletişim kutusu Düzenleyicisi](../windows/dialog-editor.md) iletişim kutusu tasarlayıp iletişim şablon kaynağı oluşturun.
+1. İletişim kutusunu tasarlamak ve iletişim kutusu-şablon kaynağını oluşturmak için [iletişim kutusu düzenleyicisini](../windows/dialog-editor.md) kullanın.
 
-1. İletişim kutusu sınıfı oluşturma.
+1. İletişim kutusu sınıfı oluşturun.
 
-1. Connect [iletişim kaynağın denetimleri için ileti işleyicileri](../windows/adding-event-handlers-for-dialog-box-controls.md) iletişim kutusu sınıfı içinde.
+1. İletişim kutusu sınıfının denetimlerini iletişim kutusunda [ileti işleyicilerine](../windows/adding-event-handlers-for-dialog-box-controls.md) bağlayın.
 
-1. Belirtmek için iletişim kutusunun denetimleri ile ilişkili veri üyeleri ekleme [iletişim kutusu veri değişimi](../mfc/dialog-data-exchange.md) ve [iletişim kutusu veri doğrulama](../mfc/dialog-data-validation.md) denetimleri.
+1. İletişim kutusu denetimleriyle ilişkili veri üyeleri ekleyin ve denetimler için [iletişim kutusu veri değişimi](../mfc/dialog-data-exchange.md) ve iletişim kutusu [verileri doğrulamaları](../mfc/dialog-data-validation.md) belirtin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İletişim Kutuları](../mfc/dialog-boxes.md)<br/>
-[Bir İletişim Kutusunun Yaşam Döngüsü](../mfc/life-cycle-of-a-dialog-box.md)
+[İletişim kutuları](../mfc/dialog-boxes.md)<br/>
+[MFC 'de Iletişim kutularıyla çalışma](../mfc/life-cycle-of-a-dialog-box.md)

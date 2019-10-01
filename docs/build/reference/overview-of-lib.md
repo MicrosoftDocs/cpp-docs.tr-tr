@@ -1,60 +1,63 @@
 ---
-title: LIB'e Genel Bakış
-ms.date: 11/04/2016
+title: LıB 'e genel bakış
+description: Lib. exe kitaplık aracının kullanımına ve seçeneklerine genel bakış.
+ms.date: 09/25/2019
 f1_keywords:
 - Lib
 helpviewer_keywords:
 - LIB [C++], modes
 ms.assetid: e997d423-f574-434f-8b56-25585d137ee0
-ms.openlocfilehash: 97d7b8892574fbe485a8d6c5e344e4a77aaf8519
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7223ef0a624cf15c43bd067db8a7919efd27df17
+ms.sourcegitcommit: 1e6386be9084f70def7b3b8b4bab319a117102b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62320285"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "71685490"
 ---
-# <a name="overview-of-lib"></a>LIB'e Genel Bakış
+# <a name="overview-of-lib"></a>LıB 'e genel bakış
 
-LIB standart kitaplıkları oluşturur, kitaplıkları içeri aktarma ve dosyaları ile birlikte kullanabileceğiniz dışarı [bağlantı](linker-options.md) bir program oluşturma sırasında. LIB, bir komut istemi'nden çalıştırır.
+LıB (lib. exe), bir program oluştururken [bağlantı](linker-options.md) ile kullanabileceğiniz standart kitaplıklar, içeri aktarma kitaplıkları ve dışarı aktarma dosyaları oluşturur. LıB bir komut isteminden çalışır.
 
-LIB şu modlarında kullanabilirsiniz:
+LıB 'i aşağıdaki modlarda kullanabilirsiniz:
 
-- [Oluşturma veya değiştirme COFF kitaplığı](managing-a-library.md)
+- [COFF kitaplığı oluşturma veya değiştirme](managing-a-library.md)
 
-- [Bir dosyaya bir üye nesnesi ayıklanıyor](extracting-a-library-member.md)
+- [Bir dosyaya üye nesnesini ayıklama](extracting-a-library-member.md)
 
-- [Bir dışarı aktarma dosyası ve içeri aktarma kitaplığı oluşturma](working-with-import-libraries-and-export-files.md)
+- [Dışarı aktarma dosyası ve içeri aktarma kitaplığı oluşturma](working-with-import-libraries-and-export-files.md)
 
-Bu mod, karşılıklı olarak birbirini dışlar; bir kerede yalnızca bir modda LIB kullanabilirsiniz.
+Bu modlar birbirini dışlıyor; LıB 'i aynı anda yalnızca bir modda kullanabilirsiniz.
 
-## <a name="lib-options"></a>LIB seçenekleri
+## <a name="lib-options"></a>LıB seçenekleri
 
-Daha fazla bilgi bağlantısını içeren bir lib.exe seçenekleri aşağıdaki tabloda listelenmektedir.
+Aşağıdaki tabloda, daha fazla bilgi bağlantısı ile lib. exe seçenekleri listelenmektedir.
 
 |Seçenek|Açıklama|
 |-|-|
-|**/DEF**|Bir içeri aktarma kitaplığını ve dışarı aktarma dosyası oluşturun.<br/><br/>Daha fazla bilgi için [bir içeri aktarma kitaplığını ve dışarı aktarma dosyası derleme](building-an-import-library-and-export-file.md).|
-|**/ ERRORREPORT**|   Lib.exe iç hatalarla ilgili bilgi göndermek.<br/><br/>Daha fazla bilgi için [çalıştıran LIB](running-lib.md).|
-|**/ DIŞARI AKTARMA**|   İşlevi, programınızı dışarı aktarır.<br/><br/>Daha fazla bilgi için [bir içeri aktarma kitaplığını ve dışarı aktarma dosyası derleme](building-an-import-library-and-export-file.md).|
-|**/ EXTRACT**|   Var olan bir kitaplık üyesi bir kopyasını içeren bir nesne (.obj) dosyası oluşturun.<br/><br/>Daha fazla bilgi için [kitaplık üyesini ayıklama](extracting-a-library-member.md).|
-|**/ INCLUDE**|   Bir sembolü sembol tablosuna ekler.<br/><br/>Daha fazla bilgi için [bir içeri aktarma kitaplığını ve dışarı aktarma dosyası derleme](building-an-import-library-and-export-file.md).|
-|**/ LIBPATH**|   Kullanıcının ortam kitaplık yolunu geçersiz kılar.<br/><br/>Daha fazla bilgi için [kitaplığı yönetme](managing-a-library.md).|
-|**/ LİSTELEME**|   Standart çıktıya çıkış Kitaplığı hakkında bilgileri görüntüler.<br/><br/>Daha fazla bilgi için [kitaplığı yönetme](managing-a-library.md).|
-|**/LTCG**|   Bağlama zamanı kod oluşturmayı kullanarak oluşturulacak kitaplığı neden olur.<br/><br/>Daha fazla bilgi için [çalıştıran LIB](running-lib.md).|
-|**/ MACHINE**|   Program için hedef platformu belirtir.<br/><br/>Daha fazla bilgi için [çalıştıran LIB](running-lib.md).|
-|**/ AD**|   İçeri aktarma kitaplığı derlerken, içeri aktarma kitaplığını oluşturulmakta olan DLL'in adını belirtir.<br/><br/>Daha fazla bilgi için [kitaplığı yönetme](managing-a-library.md).|
-|**/ NODEFAULTLIB**|   Bir veya daha fazla varsayılan kitaplığı dış başvuruların çözümlenmesi sırasında aradığı kitaplık listesinden kaldırır.<br/><br/>Daha fazla bilgi için [kitaplığı yönetme](managing-a-library.md).|
-|**/ NOLOGO**|   LIB telif hakkı iletisi ve sürüm numarasını görüntülenmesini engeller ve komut dosyaları Yankı önler.<br/><br/>Daha fazla bilgi için [çalıştıran LIB](running-lib.md).|
-|**/ OUT**|   Varsayılan çıktı dosyası adını geçersiz kılar.<br/><br/>Daha fazla bilgi için [kitaplığı yönetme](managing-a-library.md).|
-|**/ KALDIR**|   Nesneyi çıkış kitaplığında atlar.<br/><br/>Daha fazla bilgi için [kitaplığı yönetme](managing-a-library.md).|
-|**/SUBSYSTEM**|   İşletim sistemi, çıkış Kitaplığı'na bağlama tarafından oluşturulan bir programı çalıştırmak üzere anlatır.<br/><br/>Daha fazla bilgi için [kitaplığı yönetme](managing-a-library.md).|
-|**/ VERBOSE**|   Eklenen .obj dosya adlarını dahil olmak üzere, oturumunun ilerleme durumu hakkında ayrıntıları görüntüler.<br/><br/>Daha fazla bilgi için [çalıştıran LIB](running-lib.md).|
-|**/WX**|   Uyarıları hata olarak değerlendir.<br/><br/>Daha fazla bilgi için [çalıştıran LIB](running-lib.md).|
+|**/DEF**|İçeri aktarma kitaplığı ve dışarı aktarma dosyası oluşturun.<br/><br/>Daha fazla bilgi için bkz. [Içeri aktarma kitaplığı ve dışarı aktarma dosyası oluşturma](building-an-import-library-and-export-file.md).|
+|**/ERRORREPORT**|   LIB. exe ile iç hatalar hakkında Microsoft 'a bilgi gönderin.<br/><br/>Daha fazla bilgi için bkz. [LIB çalıştırma](running-lib.md).|
+|**/EXPORT**|   Programından bir işlevi dışarı aktarır.<br/><br/>Daha fazla bilgi için bkz. [Içeri aktarma kitaplığı ve dışarı aktarma dosyası oluşturma](building-an-import-library-and-export-file.md).|
+|**/EXTRACT**|   Var olan bir kitaplığın bir üyesinin kopyasını içeren bir nesne (. obj) dosyası oluşturun.<br/><br/>Daha fazla bilgi için bkz. [bir kitaplık üyesini ayıklama](extracting-a-library-member.md).|
+|**/INCLUDE**|   Sembol tablosuna bir sembol ekler.<br/><br/>Daha fazla bilgi için bkz. [Içeri aktarma kitaplığı ve dışarı aktarma dosyası oluşturma](building-an-import-library-and-export-file.md).|
+|**/LıBPATH**|   Ortam kitaplığı yolunu geçersiz kılar.<br/><br/>Daha fazla bilgi için bkz. [bir kitaplığı yönetme](managing-a-library.md).|
+|**/LINKREPRO**|   LIB. exe kilitlenmesinin veya iç hatanın yeniden oluşturulması için gereken yapıtları oluşturur.<br/><br/>Daha fazla bilgi için bkz. [LIB çalıştırma](running-lib.md).|
+|**/LINKREPROTARGET**|   Yalnızca lib. exe belirtilen bir dosyayla kullanıldığında **/LINKREPRO** yapılarını oluşturur.<br/><br/>Daha fazla bilgi için bkz. [LIB çalıştırma](running-lib.md).|
+|**/LIST**|   Standart çıktıya çıkış kitaplığıyla ilgili bilgileri görüntüler.<br/><br/>Daha fazla bilgi için bkz. [bir kitaplığı yönetme](managing-a-library.md).|
+|**/LTCG**|   , Kitaplığın bağlantı zamanı kodu oluşturma kullanılarak oluşturulmasına neden olur.<br/><br/>Daha fazla bilgi için bkz. [LIB çalıştırma](running-lib.md).|
+|**/MACHıNE**|   Program için hedef platformu belirtir.<br/><br/>Daha fazla bilgi için bkz. [LIB çalıştırma](running-lib.md).|
+|**No**|   İçeri aktarma kitaplığı oluştururken, içeri aktarma kitaplığının oluşturulduğu DLL 'in adını belirtir.<br/><br/>Daha fazla bilgi için bkz. [bir kitaplığı yönetme](managing-a-library.md).|
+|**/NODEFAULTLıB**|   Dış başvuruları çözümlerken aradığı kitaplık listesinden bir veya daha fazla varsayılan kitaplığı kaldırır.<br/><br/>Daha fazla bilgi için bkz. [bir kitaplığı yönetme](managing-a-library.md).|
+|**/NOLOGO**|   LıB telif hakkı iletisi ve sürüm numarasını görüntülemeyi engeller ve komut dosyalarının yankısını önler.<br/><br/>Daha fazla bilgi için bkz. [LIB çalıştırma](running-lib.md).|
+|**/OUT**|   Varsayılan çıkış dosya adını geçersiz kılar.<br/><br/>Daha fazla bilgi için bkz. [bir kitaplığı yönetme](managing-a-library.md).|
+|**/REMOVE**|   Çıkış kitaplığından bir nesneyi atlar.<br/><br/>Daha fazla bilgi için bkz. [bir kitaplığı yönetme](managing-a-library.md).|
+|**/SUBSYSTEM**|   İşletim sistemine, çıkış kitaplığına bağlanarak oluşturulan bir programın nasıl çalıştırılacağını söyler.<br/><br/>Daha fazla bilgi için bkz. [bir kitaplığı yönetme](managing-a-library.md).|
+|**/VERBOSE**|   Eklenmekte olan. obj dosyalarının adları da dahil olmak üzere, oturumun ilerleme durumu hakkındaki ayrıntıları görüntüler.<br/><br/>Daha fazla bilgi için bkz. [LIB çalıştırma](running-lib.md).|
+|**/WX**|   Uyarıları hata olarak değerlendirin.<br/><br/>Daha fazla bilgi için bkz. [LIB çalıştırma](running-lib.md).|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[LIB Başvurusu](lib-reference.md)<br/>
-[LIB Giriş Dosyaları](lib-input-files.md)<br/>
-[LIB Çıktı Dosyaları](lib-output-files.md)<br/>
-[Diğer LIB Çıktısı](other-lib-output.md)<br/>
-[Kitaplık Yapısı](structure-of-a-library.md)
+[LıB başvurusu](lib-reference.md)<br/>
+[LıB giriş dosyaları](lib-input-files.md)<br/>
+[LıB çıktı dosyaları](lib-output-files.md)<br/>
+[Diğer LıB çıktısı](other-lib-output.md)<br/>
+[Kitaplığın yapısı](structure-of-a-library.md)

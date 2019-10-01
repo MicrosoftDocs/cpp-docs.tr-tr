@@ -1,6 +1,7 @@
 ---
-title: LIB Çalıştırma
-ms.date: 09/28/2018
+title: LıB çalıştırma
+description: LIB. exe ile kullanabileceğiniz komut satırı seçeneklerini açıklar.
+ms.date: 09/25/2019
 f1_keywords:
 - VC.Project.VCLibrarianTool.TargetMachine
 - Lib
@@ -26,74 +27,76 @@ helpviewer_keywords:
 - semicolon, command files
 - / command files
 ms.assetid: d54f5c81-7147-4b2c-a8db-68ce6eb1eabd
-ms.openlocfilehash: e95427b571cd14ad39a7ba4f368b90e806f13862
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0d65c8d8b3b0cd28c7cccda25bfd9512321172f9
+ms.sourcegitcommit: 1e6386be9084f70def7b3b8b4bab319a117102b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62318699"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "71685549"
 ---
-# <a name="running-lib"></a>LIB Çalıştırma
+# <a name="running-lib"></a>LıB çalıştırma
 
-LIB denetlemek için çeşitli komut satırı seçenekleri kullanılabilir.
+KITAPLıĞı denetlemek için çeşitli komut satırı seçenekleri kullanılabilir.
 
-## <a name="lib-command-line"></a>LIB komut satırı
+## <a name="lib-command-line"></a>LıB komut satırı
 
-LIB çalıştırmak için komut türü `lib` seçenekleri ve dosya adları görev için gerçekleştirmek için LIB kullanıyorsunuz. LIB, ayrıca aşağıdaki bölümde açıklanan komut dosyalarında komut satırı girişi kabul eder. LIB ortam değişkeni kullanır.
+LıB çalıştırmak için, bunu yapmak için LIB kullandığınız görevin seçeneklerini ve dosya adlarını `lib` komutunu yazın. LıB Ayrıca aşağıdaki bölümde açıklanan komut dosyalarındaki komut satırı girişini de kabul eder. LıB bir ortam değişkeni kullanmaz.
 
-> [!NOTE]
-> LINK32.exe için alışkın oldukları ve LIB32.exe Microsoft Win32 Yazılım Geliştirme Seti için Windows NT ile ya da komut kullanmakta olduğunuz sağlanan araçları `link32 -lib` ya da komut `lib32` kitaplıklarını yönetme ve oluşturma kitaplıkları içeri aktarma. Kullanılacak derleme görevleri dosyalarını ve toplu iş dosyaları değiştirdiğinizden emin olun `lib` yerine komutu.
+## <a name="lib-command-files"></a>LıB komut dosyaları
 
-## <a name="lib-command-files"></a>LIB komut dosyaları
+Komut satırı bağımsız değişkenlerini aşağıdaki sözdizimini kullanarak bir komut dosyasında LıB 'e geçirebilirsiniz:
 
-Komut satırı bağımsız değişkenleri için aşağıdaki sözdizimini kullanarak bir komut dosyasındaki LIB geçirebilirsiniz:
+> **LIB \@** <em>komut dosyası</em>
 
-> **LIB \@**  <em>commandfile</em>
+Dosya *komutu-dosya* bir metin dosyasıdır. At işareti ( **\@** ) ve dosya adı arasında boşluk veya sekmeye izin verilmez. *Komut dosyası* adının varsayılan uzantısı yoktur; herhangi bir uzantı dahil olmak üzere tam dosya adını belirtmeniz gerekir. Joker karakterler kullanılamaz. Dosya adıyla mutlak veya göreli bir yol belirtebilirsiniz.
 
-Dosya *commandfile* bir metin dosyasıdır. Hiçbir boşluk veya sekme arasında izin at işareti (**\@**) ve dosya adı. Hiçbir varsayılan uzantı yoktur; herhangi bir uzantısına dahil olmak üzere tam dosya adı belirtmeniz gerekir. Joker karakterler kullanılamaz. Mutlak veya göreli bir yol ile dosya adını belirtebilirsiniz.
+Komut dosyasında, komut satırında olabilecek bağımsız değişkenler boşluklarla veya sekmelerle ayrılabilir. Bağımsız değişkenler de yeni satır karakterleri ile ayrılabilir. Bir yorumu işaretlemek için noktalı virgül ( **;** ) kullanın. LıB, noktalı virgülden tüm metni satır sonuna kadar yoksayar.
 
-Komut satırında geliştiricilerimizin mümkün olduğunca komut dosyasında boşluk veya sekme ile bağımsız değişkenleri ayrılabilir; Yeni satır karakterleriyle da ayrılabilir. Noktalı virgül kullanın (**;**) bir açıklama işaretlenecek. LIB satırın sonuna noktalı virgülden tüm metni yok sayar.
+Komut dosyasının tümünü veya bir kısmını bir komut dosyasında belirtebilir ve bir LIB komutunda birden fazla komut dosyası kullanabilirsiniz. LıB komut dosyası girişini komut satırındaki bu konumda belirtilmiş gibi kabul eder. Komut dosyaları iç içe olamaz. **/Nologo** seçeneği kullanılmadığı takdirde LIB, komut dosyalarının içeriğini yankılar.
 
-Tüm veya komut satırının bir parçası bir komut dosyası belirtebilirsiniz ve LIB komutunun içinde birden fazla komut dosyası kullanabilirsiniz. Komut satırında o konumda belirtildi, LIB komut dosyası girişi kabul eder. Komut dosyaları iç içe olamaz. / Nologo seçeneği kullanılmadığı sürece LIB komut dosyalarının içeriğini görüntülemektedir.
+## <a name="using-lib-options"></a>LıB seçeneklerini kullanma
 
-## <a name="using-lib-options"></a>LIB seçeneklerini kullanma
+Bir seçenek, bir tire ( **-** ) veya eğik çizgi ( **/** ) olan ve ardından seçeneğin adı gelen bir seçenek belirticisinden oluşur. Seçenek adları kısaltılabilir. Bazı seçenekler, iki nokta üst üste ( **:** ) sonra belirtilen bir bağımsız değişken alır. Seçenek belirtimi içinde boşluk veya sekmeye izin verilmez. Komut satırındaki seçenek belirtimlerini ayırmak için bir veya daha fazla boşluk ya da sekme kullanın. Seçenek adları ve bunların anahtar sözcüğü ya da dosya adı bağımsız değişkenleri büyük/küçük harfe duyarlıdır, ancak bağımsız değişken olarak kullanılan tanımlayıcılar büyük/küçük harfe duyarlıdır LıB, seçenekleri komut satırında ve komut dosyalarında belirtilen sırada işler. Bir seçenek farklı bağımsız değişkenlerle tekrarlandığında, işlenecek son değer öncelik kazanır.
 
-Bir seçenek ya da tire olan bir seçenek belirleyicisinden oluşur (**-**) veya eğik çizgi (**/**) ve ardından seçeneğinin adı. Seçenek adları kısaltılmış olamaz. Bazı seçenekler iki nokta üst üste sonra belirtilen bir bağımsız değişken alan (**:**). Boşluk veya sekme içinde bir seçenek belirtimine izin verilir. Komut satırı seçeneği belirtimlerine ayırmak için bir veya daha fazla boşluk veya sekme kullanın. Seçenek adları ve kendi anahtar sözcük veya dosya adı bağımsız değişkenler büyük küçük harfe duyarlı değildir, ancak bağımsız değişken olarak kullanılan tanımlayıcıları büyük/küçük harfe duyarlıdır. LIB seçenekleri komut satırında belirtilen sırada ve komut dosyaları işler. Bir seçenek farklı bağımsız değişkenler yinelenirse işlenecek sonuncu önceliklidir.
+Aşağıdaki seçenekler LıB 'in tüm modları için geçerlidir:
 
-Aşağıdaki seçenekler, LIB tüm modları için geçerlidir:
+> **/Errorreport** \[**yok** &#124; **istem** &#124; **kuyruğu** &#124; **gönderme**]
 
-> **/ERRORREPORT** [**NONE** &#124; **PROMPT** &#124; **QUEUE** &#124; **SEND**]
+LIB. exe çalışma zamanında başarısız olursa, bu iç hatalar hakkında Microsoft 'a bilgi göndermek için **/errorreport** ' u kullanabilirsiniz.
 
-Lib.exe çalışma zamanında başarısız olursa, kullanabileceğiniz **/errorreport** iç bu hataları hakkında Microsoft'a bilgi göndermek.
+**/Errorreport**hakkında daha fazla bilgi için bkz. [/errorreport (Iç derleyici hatalarını raporla)](errorreport-report-internal-compiler-errors.md).
 
-Hakkında daha fazla bilgi için **/errorreport**, bkz: [/errorreport (dahili derleme hatalarını raporla)](errorreport-report-internal-compiler-errors.md).
+> **/LINKREPRO:** _dizin-yol_ \
+> **/LINKREPROTARGET:** _dosya adı_
+
+Microsoft lib. exe kilitlenmelerini ve iç hataları tanılamasına yardımcı olmak için [/LINKREPRO](linkrepro.md) seçeneğini kullanabilirsiniz. Microsoft 'un kitaplık işlemleri sırasında oluşan bir sorunu yeniden oluşturmasına izin veren bir dizi derleme *yapıtı*olan bir bağlantı yeniden üretme işlemi oluşturur. [/LINKREPROTARGET](linkreprotarget.md) seçeneği **/LINKREPRO** seçeneğiyle birlikte kullanılabilir. Yalnızca lib. exe belirtilen dosyayı oluşturduğunda bağlantı yeniden üretme yapıtları oluşturur. Daha fazla bilgi için bkz. [Microsoft C++ araç takımı ile sorun bildirme](../../overview/how-to-report-a-problem-with-the-visual-cpp-toolset.md).
 
 > **/LTCG**
 
-"LTCG" anlamına gelen *bağlama sırasında kod oluşturma*. Bu özellik, derleyici arasında işbirliği gerektirir ([cl.exe](compiler-options.md)), LIB ve bağlayıcı ([bağlantı](linker-options.md)) yapabileceklerinizin herhangi bir bileşen kendi kod iyileştirmek için.
+"LTCG", *bağlantı zamanı kod üretimi*için temsil eder. Bu özellik derleyici ([CL. exe](compiler-options.md)), LIB ve bağlayıcı ([bağlantı](linker-options.md)) arasında birlikte işlem gerektirir. böylece, herhangi bir bileşenin kendisi tarafından yapabileceklerinin ötesinde kodu iyileştirebilirsiniz.
 
-LIB için **/LTCG** seçeneği belirtir cl.exe girişler kullanılarak üretilen nesne dosyaları içerdiğini [/GL](gl-whole-program-optimization.md) derleyici seçeneği. LIB gibi girişler karşılaşırsa ve **/LTCG** belirtilmezse, bir bilgi iletisidir görüntüleme sonra etkin/LTCG ile yeniden. Diğer bir deyişle, açıkça bu seçeneği ayarlamak gerekli değildir, ancak kendisi yeniden LIB olmadığından Bunu yapmak için yapı performansını hızlandırır.
+LıB için **/LTCG** seçeneği, CL. exe ' den alınan girişlerin [/GL](gl-whole-program-optimization.md) derleyici seçeneği kullanılarak oluşturulan nesne dosyalarını dahil edileceğini belirtir. LıB bu tür girdilerle karşılaşırsa ve **/LTCG** belirtilmemişse, bir bilgi iletisi görüntülendikten sonra/LTCG etkinleştirilmiş olarak yeniden başlatılır. Diğer bir deyişle, bu seçeneği açıkça ayarlamak gerekli değildir, ancak LıB 'in kendisini yeniden başlatması gerektiğinden, bunu yapmak için yapı performansını hızlandırır.
 
-Derleme işleminde LIB çıktısı bağlantı gönderilir. BAĞLANTIYI içeren, kendi ayrı **/LTCG** seçeneği bütün program iyileştirmesi ve profil temelli iyileştirme (PGO) araçları dahil olmak üzere çeşitli iyileştirmeler gerçekleştirmek için kullanılır. Bağlantı seçeneği hakkında daha fazla bilgi için bkz: [/LTCG](ltcg-link-time-code-generation.md).
+Yapı sürecinde, LıB 'den çıkış BAĞLANTıSı ' na gönderilir. BAĞLANTıNıN kendi ayrı **/LTCG** seçeneği vardır. Tam program iyileştirme ve profil temelli iyileştirme (PGO) araçları dahil çeşitli iyileştirmeler gerçekleştirmek için kullanılır. BAĞLANTı seçeneği hakkında daha fazla bilgi için bkz. [/LTCG](ltcg-link-time-code-generation.md).
 
-> **/ MACHINE**
+> **/MACHıNE**
 
-Program için hedef platformu belirtir. Genellikle, / Machine belirtmeniz gerekmez. LIB .obj dosyaları makine türünden çıkarır. Ancak, bazı durumlarda, LIB makine türü belirlenemiyor ve bir hata iletisi verir. Böyle bir hata oluşursa/Machine belirtin. / Extract modda, yalnızca doğrulama için bu seçeneği değil. Kullanım `lib /?` kullanılabilir makine türlerini görmek için komut satırına.
+Program için hedef platformu belirtir. Genellikle, **/Machine**belirtmeniz gerekmez. LıB,. obj dosyalarından makine türünü anlar. Ancak, bazı durumlarda LIB makine türünü belirleyemez ve bir hata mesajı yayınlar. Böyle bir hata oluşursa, **/Machine**' i belirtin. **/Extract** modunda, bu seçenek yalnızca doğrulama içindir. Kullanılabilir makine türlerini görmek için komut satırında `lib /?` kullanın.
 
-> **/ NOLOGO**
+> **/NOLOGO**
 
-LIB telif hakkı iletisi ve sürüm numarasını görüntülenmesini engeller ve komut dosyaları Yankı önler.
+LıB telif hakkı iletisi ve sürüm numarasını görüntülemeyi engeller ve komut dosyalarının yankısını önler.
 
-> **/ VERBOSE**
+> **/VERBOSE**
 
-Eklenen .obj dosya adlarını dahil olmak üzere, oturumunun ilerleme durumu hakkında ayrıntıları görüntüler. Bilgiler Standart çıkışa gönderilir ve bir dosyaya yönlendirilebilir.
+Eklenmekte olan. obj dosyalarının adları da dahil olmak üzere, oturumun ilerleme durumu hakkındaki ayrıntıları görüntüler. Bilgiler standart çıktıya gönderilir ve bir dosyaya yönlendirilebilir.
 
-> **/WX**[**:NO**]
+> **/WX**[ **: No**]
 
-Uyarıları hata olarak değerlendir. Bkz: [/WX (Bağlayıcı uyarıları hata olarak değerlendir)](wx-treat-linker-warnings-as-errors.md) daha fazla bilgi için.
+Uyarıları hata olarak değerlendirin. Daha fazla bilgi için bkz. [/WX (bağlayıcı uyarılarını hata olarak işle)](wx-treat-linker-warnings-as-errors.md).
 
-Diğer seçenekler, yalnızca belirli modları LIB için geçerlidir. Bu seçeneklerden her modu açıklayan bölümlerde ele alınmıştır.
+Diğer seçenekler yalnızca belirli LıB modları için geçerlidir. Bu seçenekler, her bir modu açıklayan bölümlerde ele alınmıştır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[LIB Başvurusu](lib-reference.md)
+[LıB başvurusu](lib-reference.md)

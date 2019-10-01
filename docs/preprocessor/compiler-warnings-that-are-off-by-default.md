@@ -1,20 +1,20 @@
 ---
-title: Varsayılan olarak kapalı olan derleyici uyarıları
+title: Varsayılan olarak kapalı olan Derleyici Uyarıları
 ms.date: 08/29/2019
 helpviewer_keywords:
 - warnings, compiler
 - cl.exe compiler, setting options
 ms.assetid: 69809cfb-a38a-4035-b154-283a61938df8
-ms.openlocfilehash: d497886b22c7a90ab7cda47e46dc13daf297b192
-ms.sourcegitcommit: b4572ffcc71e6bdb0ca23221f9476cfaf4528406
+ms.openlocfilehash: ac6ad3b5bbe5f3a738dc0019a43ff08a17cf27ca
+ms.sourcegitcommit: 1e6386be9084f70def7b3b8b4bab319a117102b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71314474"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "71685709"
 ---
-# <a name="compiler-warnings-that-are-off-by-default"></a>Varsayılan olarak kapalı olan derleyici uyarıları
+# <a name="compiler-warnings-that-are-off-by-default"></a>Varsayılan olarak kapalı olan Derleyici Uyarıları
 
-Çoğu geliştirici onları yararlı bulmadığından, derleyici varsayılan olarak kapatılmış uyarıları destekler. Bazı durumlarda, bir stil seçimi veya eski koddaki yaygın deyimler hakkında uyarır. Diğer uyarılar, Microsoft uzantısının dile kullanımı ile ilgilidir. Diğer durumlarda, programcılar genellikle yanlış varsayımlar yaparken, beklenmeyen veya tanımsız davranışlara neden olabilecek bir alanı gösterir. Etkinleştirilirse, bu uyarılardan bazıları kitaplık başlıklarında birçok kez görünebilir. C çalışma zamanı kitaplıkları ve C++ standart kitaplıklar yalnızca uyarı düzeyi [/W4](../build/reference/compiler-option-warning-level.md)' te hiçbir uyarı yaymak üzere tasarlanmıştır.
+Çoğu geliştirici onları yararlı bulmadığından, derleyici varsayılan olarak kapatılmış uyarıları destekler. Bazı durumlarda, bir stil seçimi veya eski koddaki yaygın deyimler hakkında uyarır. Diğer uyarılar, Microsoft uzantısının dile kullanımı ile ilgilidir. Bazı uyarılar, programcıların genellikle yanlış varsayımlar yaparken, beklenmeyen veya tanımsız davranışlara neden olabilecek bir alanı gösterir. Bu uyarıların tümü etkinleştirilirse, bazı bunlar kitaplık başlıklarında birçok kez görünebilir. C çalışma zamanı kitaplıkları ve C++ standart kitaplıklar yalnızca uyarı düzeyi [/W4](../build/reference/compiler-option-warning-level.md)' te hiçbir uyarı yaymak üzere tasarlanmıştır.
 
 ## <a name="enable-warnings-that-are-off-by-default"></a>Varsayılan olarak kapalı olan uyarıları etkinleştir
 
@@ -22,7 +22,7 @@ Aşağıdaki seçeneklerden birini kullanarak, normal olarak varsayılan olarak 
 
 - **#pragma Uyarısı (varsayılan:** *warning_number* **)**
 
-   Belirtilen uyarı (*warning_number*) varsayılan düzeyinde etkindir. Uyarılara yönelik belgeler varsayılan uyarı düzeyini içerir.
+   Belirtilen uyarı (*warning_number*) varsayılan düzeyinde etkindir. Uyarı belgeleri, uyarının varsayılan düzeyini içerir.
 
 - **#pragma Uyarısı (** *warning_level* **:** *warning_number* **)**
 
@@ -30,7 +30,7 @@ Aşağıdaki seçeneklerden birini kullanarak, normal olarak varsayılan olarak 
 
 - [/Wall](../build/reference/compiler-option-warning-level.md)
 
-   `/Wall`Varsayılan olarak kapalı olan tüm uyarıları etkinleştirilir. Bu seçeneği kullanırsanız, [/WD](../build/reference/compiler-option-warning-level.md) seçeneğini kullanarak uyarıları tek tek kapatabilirsiniz.
+   `/Wall` varsayılan olarak kapalı tüm uyarıları izin veriyor. Bu seçeneği kullanırsanız, [/WD](../build/reference/compiler-option-warning-level.md) seçeneğini kullanarak uyarıları tek tek kapatabilirsiniz.
 
 - [/w*Lnnnn*](../build/reference/compiler-option-warning-level.md)
 
@@ -59,16 +59,16 @@ Aşağıdaki uyarılar, Visual Studio 2015 ve sonraki sürümlerinde varsayılan
 |[C4339](../error-messages/compiler-warnings/compiler-warning-level-4-c4339.md) (düzey 4)|'*Type*': clr meta verilerinde tanımsız tür kullanımı algılandı-Bu türün kullanılması çalışma zamanı özel durumuna neden olabilir|
 |[C4342](../error-messages/compiler-warnings/compiler-warning-level-1-c4342.md) (düzey 1)|davranış değişikliği: '*Function*' çağrıldı, ancak önceki sürümlerde bir üye işleci çağrıldı|
 |[C4350](../error-messages/compiler-warnings/compiler-warning-level-1-c4350.md) (düzey 1)|davranış değişikliği: '*member1*', '*member2*' yerine çağrıldı|
-|[C4355](../error-messages/compiler-warnings/compiler-warning-c4355.md)|'this' : taban üye başlatıcı listesinde kullanıldı|
+|[C4355](../error-messages/compiler-warnings/compiler-warning-c4355.md)|' this ': temel üye başlatıcısı listesinde kullanılır|
 |[C4365](../error-messages/compiler-warnings/compiler-warning-level-4-c4365.md) (düzey 4)|'*Action*': '*type_1*' değerinden '*type_2*' öğesine dönüştürme, imzalanmış/imzasız uyuşmazlığı|
-|C4370 (düzey 3)|daha iyi paketleme nedeniyle sınıfın düzeni önceki bir derleyici sürümünden farklı|
+|C4370 (düzey 3)|daha iyi paketleme nedeniyle sınıfın düzeni önceki bir derleyici sürümünden değişmiş|
 |[C4371](../error-messages/compiler-warnings/c4371.md) (düzey 3)|'*ClassName*': '*member*' üyesinin daha iyi paketlenmesi nedeniyle sınıfın düzeni önceki bir derleyici sürümünden değişmiş olabilir|
-|C4388 (düzey 4)|İmzalı/imzasız uyuşmazlığı|
+|C4388 (düzey 4)|imzalı/imzasız uyuşmazlığı|
 |[C4412](../error-messages/compiler-warnings/compiler-warning-level-2-c4412.md) (düzey 2)|'*Function*': işlev imzası '*Type*' türünü içeriyor; C++ nesneler saf kod ile karma veya yerel arasında geçiş için güvenli değil|
 |C4426 (düzey 1)|üst bilgi eklendikten sonra iyileştirme bayrakları değişti #pragma optimize olabilir () <sup>14,1</sup>|
-|[C4435](../error-messages/compiler-warnings/compiler-warning-level-4-c4435.md) (düzey 4)|'*Class1*': /VD2 altındaki nesne düzeni, '*Class2*' sanal tabanı nedeniyle değişecektir|
+|[C4435](../error-messages/compiler-warnings/compiler-warning-level-4-c4435.md) (düzey 4)|'*Class1*':/VD2 altındaki nesne düzeni, '*Class2*' sanal tabanı nedeniyle değiştirilecek|
 |[C4437](../error-messages/compiler-warnings/compiler-warning-level-4-c4437.md) (düzey 4)|'*Class1*' sanal temelinde '*Class2*' öğesine dynamic_cast bazı bağlamlarda başarısız olabilir|
-|C4444 (düzey 3)|en üst düzey '__unaligned' bu bağlamda uygulanmadı|
+|C4444 (düzey 3)|üst düzey ' __hizalanmamış ' Bu bağlamda uygulanmıyor|
 |[C4464](../error-messages/compiler-warnings/c4464.md) (düzey 4)|göreli ekleme yolu '.. ' içeriyor|
 |[C4471](../error-messages/compiler-warnings/compiler-warning-level-4-c4471.md) (düzey 4)|kapsamlı olmayan numaralandırmanın ileri bir bildirimi temel alınan bir türe (int <sup>varsayıldı) sahip</sup> olmalıdır|
 |C4472 (düzey 1)|'*Identifier*' yerel bir sabit listesi: yönetilen bir Enum bildirmek için bir erişim belirticisi (Private/public) ekleme|
@@ -89,15 +89,15 @@ Aşağıdaki uyarılar, Visual Studio 2015 ve sonraki sürümlerinde varsayılan
 |C4587 (düzey 1)|'*anonymous_structure*': davranış değişikliği: Oluşturucu artık örtük olarak çağrılmayacak|
 |C4588 (düzey 1)|'*anonymous_structure*': davranış değişikliği: yıkıcı artık örtük olarak çağrılmayacak|
 |[C4596](../error-messages/compiler-warnings/c4596.md) (düzey 4)|'*tanımlayıcı*': üye bildiriminde geçersiz nitelenmiş ad <sup>14,3</sup> <sup>izin</sup>|
-|C4598 (düzey 1 ve düzey 3)|' #include "*üst bilgisi*" ': ön derlenmiş üstbilgideki üst bilgi numarası *numarası* , bu konumdaki geçerli derleme ile eşleşmiyor <sup>14,3</sup>|
+|C4598 (düzey 1 ve düzey 3)|' #include "*üst bilgisi*" ': üst bilgi numarası *üstbilgisi-* ön derlenmiş üstbilgideki sayı bu konumdaki geçerli derleme ile eşleşmiyor <sup>14,3</sup>|
 |C4599 (düzey 3)|'*seçenek* *yolu*': komut satırı bağımsız değişkeni numara *numarası* önceden derlenmiş üst bilgi <sup>14,3</sup> ile eşleşmiyor|
 |C4605 (düzey 1)|Geçerli komut satırında '/d*makro*' belirtildi, ancak önceden derlenmiş üstbilgi oluşturulduğunda belirtilmemiş|
 |[C4608](../error-messages/compiler-warnings/compiler-warning-level-3-c4608.md) (düzey 3)|'*union_member*', Başlatıcı listesindeki başka bir birleşim üyesi tarafından zaten başlatıldı, '*union_member*' <sup>izin</sup>|
 |[C4619](../error-messages/compiler-warnings/compiler-warning-level-3-c4619.md) (düzey 3)|#pragma uyarı: '*Number*' uyarı numarası yok|
-|[C4623](../error-messages/compiler-warnings/compiler-warning-level-4-c4623.md) (düzey 4)|'derived class': bir taban sınıf varsayılan oluşturucusuna erişilemediğinden varsayılan oluşturucu üretilemedi|
-|[C4625](../error-messages/compiler-warnings/compiler-warning-level-4-c4625.md) (düzey 4)|'derived class': bir taban sınıf kopya oluşturucusuna erişilemediğinden kopya oluşturucu üretilemedi|
-|[C4626](../error-messages/compiler-warnings/compiler-warning-level-4-c4626.md) (düzey 4)|'derived class': bir taban sınıf atama işlecine erişilemediğinden atama işleci üretilemedi|
-|[C4628](../error-messages/compiler-warnings/compiler-warning-level-1-c4628.md) (düzey 1)|-Ze ile digraf kullanılması desteklenmez. '*Digraf*' karakter dizisi '*char*' için alternatif bir belirteç olarak yorumlanmadı|
+|[C4623](../error-messages/compiler-warnings/compiler-warning-level-4-c4623.md) (düzey 4)|' derived class ': bir temel sınıf varsayılan oluşturucusuna erişilemediğinden varsayılan Oluşturucu oluşturulamadı|
+|[C4625](../error-messages/compiler-warnings/compiler-warning-level-4-c4625.md) (düzey 4)|' derived class ': bir taban sınıf kopya oluşturucusuna erişilemediğinden kopya Oluşturucu oluşturulamadı|
+|[C4626](../error-messages/compiler-warnings/compiler-warning-level-4-c4626.md) (düzey 4)|' derived class ': bir taban sınıf atama işlecine erişilemediğinden atama işleci oluşturulamadı|
+|[C4628](../error-messages/compiler-warnings/compiler-warning-level-1-c4628.md) (düzey 1)|digraf ile-ze desteklenmez. '*Digraf*' karakter dizisi '*char*' için alternatif bir belirteç olarak yorumlanmadı|
 |[C4640](../error-messages/compiler-warnings/compiler-warning-level-3-c4640.md) (düzey 3)|'*örnek*': yerel statik nesnenin yapımı iş parçacığı güvenli değil|
 | C4643 (düzey 4) | Standart ad alanı std ' de ' tanımlayıcı ' bildiriminde ileri bildirim kullanılmasına izin verilmiyor. C++ <sup>15,8</sup> |
 |C4647 (düzey 3)|davranış değişikliği: __is_pod (*tür*) önceki sürümlerde farklı değere sahip|
@@ -108,10 +108,10 @@ Aşağıdaki uyarılar, Visual Studio 2015 ve sonraki sürümlerinde varsayılan
 |[C4692](../error-messages/compiler-warnings/compiler-warning-level-1-c4692.md) (düzey 1)|'*Function*': özel olmayan üyenin imzası '*native_type*' derleme özel yerel türünü içeriyor|
 |[C4710](../error-messages/compiler-warnings/compiler-warning-level-4-c4710.md) (düzey 4)|'*Function*': işlev satır içine alınmadı|
 |[C4738](../error-messages/compiler-warnings/compiler-warning-level-3-c4738.md) (düzey 3)|32 bit kayan sonuç bellekte depolanıyor, olası performans kaybı|
-|[C4746](../error-messages/compiler-warnings/compiler-warning-c4746.md)|'*Expression*' öğesinin geçici erişimi/volatile:\<ISO&#124;MS > ayarına tabidir; __ıso_volatile_load/Store iç işlevlerini kullanmayı düşünün|
+|[C4746](../error-messages/compiler-warnings/compiler-warning-c4746.md)|'*Expression*' öğesinin geçici erişimi/volatile: \<ISO&#124;MS > Setting 'e tabidir; __ıso_volatile_load/Store iç işlevlerini kullanmayı düşünün|
 |C4749 (düzey 4)|koşullu olarak desteklenir: standart olmayan ' tür ' düzeninde olmayan '*Type*' türü için OffsetOf uygulandı|
 |C4767 (düzey 4)|'*symbol*' bölüm adı 8 karakterden uzun ve bağlayıcı tarafından kesilecek|
-|C4768 (level 3)|bağlantı belirtimi öncesinde __declspec öznitelikleri yoksayıldı|
+|C4768 (düzey 3)|bağlantı belirtimi öncesinde __declspec öznitelikleri yoksayıldı|
 |C4774 (düzey 4)|'*String*': bağımsız değişken *numarasında* beklenen biçim dizesi bir dize sabit değeri değil|
 |C4777 (düzey 4)|'*Function*': biçim dizesi '*String*', '*Type1*' türünde bir bağımsız değişken gerektiriyor, ancak değişen sayıda bağımsız değişken *numarası* '*type2*' türüne sahip|
 |C4786 (düzey 3)|'*symbol*': nesne adı hata ayıklama bilgilerinde '*Number*' karakter olarak kesildi|
@@ -123,15 +123,15 @@ Aşağıdaki uyarılar, Visual Studio 2015 ve sonraki sürümlerinde varsayılan
 |C4841 (düzey 4)|Standart olmayan uzantı kullanıldı: OffsetOf içinde kullanılan bileşik üye göstergesi|
 |C4842 (düzey 4)|birden fazla devralma kullanılarak bir türe uygulanan ' OffsetOf ' sonucunun, derleyici yayınları arasında tutarlı olması garanti edilmez|
 |[C4868](../error-messages/compiler-warnings/compiler-warning-c4868.md) (düzey 4)|'_File_(*Line_Number*) ' derleyicisi, örgü başlatma listesinde soldan sağa değerlendirme sırasını zorlamaz|
-|[C4905](../error-messages/compiler-warnings/compiler-warning-level-1-c4905.md) (düzey 1)|geniş düz dize 'LPSTR' değerine atandı|
-|[C4906](../error-messages/compiler-warnings/compiler-warning-level-1-c4906.md) (düzey 1)|düz dize 'LPWSTR' değerine atandı|
+|[C4905](../error-messages/compiler-warnings/compiler-warning-level-1-c4905.md) (düzey 1)|geniş dize sabit değeri ' LPSTR ' değerine dönüştürüldü|
+|[C4906](../error-messages/compiler-warnings/compiler-warning-level-1-c4906.md) (düzey 1)|dize sabit değeri ' LPWSTR ' olarak dönüştürüldü|
 |[C4917](../error-messages/compiler-warnings/compiler-warning-level-1-c4917.md) (düzey 1)|'*bildirimci*': bir GUID yalnızca bir sınıf, arabirim veya ad alanıyla ilişkilendirilebilir|
-|[C4928](../error-messages/compiler-warnings/compiler-warning-level-1-c4928.md) (düzey 1)|hatalı kopya başlatma; birden çok kullanıcı tanımlı dönüştürme örtük olarak uygulandı|
-|[C4931](../error-messages/compiler-warnings/compiler-warning-level-4-c4931.md) (düzey 4)|tür kitaplığının sayı bit işaretçiler için oluşturulduğunu varsayıyoruz|
+|[C4928](../error-messages/compiler-warnings/compiler-warning-level-1-c4928.md) (düzey 1)|Geçersiz kopya başlatma; birden çok kullanıcı tanımlı dönüştürme örtük olarak uygulandı|
+|[C4931](../error-messages/compiler-warnings/compiler-warning-level-4-c4931.md) (düzey 4)|tür kitaplığının sayı-bit işaretçiler için oluşturulduğunu varsayıyoruz|
 |[C4946](../error-messages/compiler-warnings/compiler-warning-level-1-c4946.md) (düzey 1)|reinterpret_cast ilgili sınıflar arasında kullanıldı: '*Class1*' ve '*Class2*'|
 |C4962|'*Function*': iyileştirmeler profil verilerinin tutarsız olmasına yol açtığı için profil temelli iyileştirmeler devre dışı bırakıldı|
 |[C4986](../error-messages/compiler-warnings/compiler-warning-c4986.md) (düzey 4)|'*symbol*': özel durum belirtimi önceki bildirimle eşleşmiyor|
-|C4987 (düzey 4)|standart olmayan uzantı kullanıldı: 'throw (...)'|
+|C4987 (düzey 4)|Standart olmayan uzantı kullanıldı: ' throw (...) '|
 |C4988 (düzey 4)|'*symbol*': değişken sınıf/işlev kapsamının dışında bildiriliyor|
 |C5022|'*Type*': birden fazla taşıma Oluşturucusu belirtildi|
 |C5023|'*Type*': birden fazla taşıma atama işleci belirtildi|
@@ -142,15 +142,22 @@ Aşağıdaki uyarılar, Visual Studio 2015 ve sonraki sürümlerinde varsayılan
 |C5029 (düzey 4)|Standart olmayan uzantı kullanıldı: ' deki C++ hizalama öznitelikleri yalnızca değişkenlere, veri üyelerine ve etiket türlerine uygulanır|
 |C5031 (düzey 4)|#pragma warning (pop): olası uyuşmazlık, farklı dosya <sup>14,1</sup> ' de oluşan uyarı durumu gönderildi|
 |C5032 (düzey 4)|karşılık gelen #pragma warning (pop <sup>14,1</sup> ) #pragma uyarı (push) algılandı|
-|C5034|iç '*iç*' kullanımı işlev *işlevinin* Konuk kod <sup>15,3</sup> olarak derlenmesine neden oluyor|
-|C5035|'*Feature*' özelliğinin kullanılması işlev *işlevinin* Konuk kod <sup>15,3</sup> olarak derlenmesine neden oluyor|
+|C5034|iç '*iç*' kullanımı işlev *işlev adının* Konuk kod <sup>15,3</sup> olarak derlenmesine neden oluyor|
+|C5035|'*Feature*' özelliğinin kullanılması işlev *işlevi adının* Konuk kod <sup>15,3</sup> olarak derlenmesine neden oluyor|
 |C5036 (düzey 1)|/Hibrit: x86arm64 türünden '*Type1*' ile '*type2*' <sup>15,3</sup> arasında derleme yaparken varargs işlev işaretçisi dönüştürme|
 |[C5038](../error-messages/compiler-warnings/c5038.md) (düzey 4)|veri üyesi '*member1*', '*member2*' <sup>15,3</sup> ' dan sonra başlatılacak|
 |C5039 (düzey 4)|'*Function*':-EHC altındaki extern c işlevine geçilen, büyük olasılıkla atma işlevine yönelik işaretçi veya başvuru. Bu işlev bir özel durum oluşturursa tanımsız davranış ortaya çıkabilir. <sup>15,5</sup>|
 |C5042 (düzey 3)|'*Function*': blok kapsamındaki işlev bildirimleri, standart C++içinde ' inline ' olarak belirtilemez; ' inline ' belirticisini Kaldır <sup>15,5</sup>|
 |[C5045](../error-messages/compiler-warnings/c5045.md)|/Qspectre anahtarı belirtilmişse, derleyici bellek yüklemesi için Spectre risk azaltma ekler <sup>15,7</sup>|
 
-<sup>14,1</sup> bu uyarı, Visual Studio 2015 güncelleştirme 1 ' den başlayarak kullanılabilir.\\ <sup>14,3</sup> bu uyarı, Visual Studio 2015 güncelleştirme 3 ' den başlayarak kullanılabilir.\\ <sup>15,3</sup> bu uyarı, Visual Studio 2017 sürüm 15,3 ' den başlayarak kullanılabilir.\\ <sup>15,5</sup> bu uyarı, Visual Studio 2017 sürüm 15,5 ' den başlayarak kullanılabilir.\\ <sup>15,7</sup> bu uyarı, Visual Studio 2017 sürüm 15,7 ' den başlayarak kullanılabilir.\\ <sup>15,8</sup> bu uyarı, Visual Studio 2017 sürüm 15,8 ' den başlayarak kullanılabilir.\\ <sup>16,0</sup> bu uyarı, Visual STUDIO 2019 RTM 'den başlayarak kullanılabilir.\\ <sup>İzin</sup> [/Permissive-](../build/reference/permissive-standards-conformance.md) derleyici seçeneği ayarlanmadığı takdirde bu uyarı kapalıdır.
+<sup>14,1</sup> bu uyarı, Visual Studio 2015 güncelleştirme 1 ' den başlayarak kullanılabilir. <br/>
+<sup>14,3</sup> bu uyarı, Visual Studio 2015 güncelleştirme 3 ' den başlayarak kullanılabilir. <br/>
+<sup>15,3</sup> bu uyarı, Visual Studio 2017 sürüm 15,3 ' den başlayarak kullanılabilir. <br/>
+<sup>15,5</sup> bu uyarı, Visual Studio 2017 sürüm 15,5 ' den başlayarak kullanılabilir. <br/>
+<sup>15,7</sup> bu uyarı, Visual Studio 2017 sürüm 15,7 ' den başlayarak kullanılabilir. <br/>
+<sup>15,8</sup> bu uyarı, Visual Studio 2017 sürüm 15,8 ' den başlayarak kullanılabilir. <br/>
+<sup>16,0</sup> bu uyarı, Visual STUDIO 2019 RTM 'den başlayarak kullanılabilir. <br/>
+<sup>İzin</sup> [/Permissive-](../build/reference/permissive-standards-conformance.md) derleyici seçeneği ayarlanmadığı takdirde bu uyarı kapalıdır.
 
 ## <a name="warnings-off-by-default-in-earlier-versions"></a>Önceki sürümlerde varsayılan olarak kapatma uyarıları
 
@@ -167,8 +174,8 @@ Bu uyarı, Visual Studio 2012 ' den önceki derleyicinin sürümlerinde varsayı
 
 |||
 |-|-|
-|[C4431](../error-messages/compiler-warnings/compiler-warning-level-4-c4431.md) (düzey 4)|tür belirticisi eksik - int varsayıldı. Not: C artık varsayılan int 'i desteklemiyor|
+|[C4431](../error-messages/compiler-warnings/compiler-warning-level-4-c4431.md) (düzey 4)|tür belirticisi eksik-int varsayıldı. Note: C artık varsayılan int 'i desteklemiyor|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[warning](../preprocessor/warning.md)
+[Warning](../preprocessor/warning.md)

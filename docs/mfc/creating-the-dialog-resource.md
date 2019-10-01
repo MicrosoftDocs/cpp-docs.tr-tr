@@ -1,5 +1,5 @@
 ---
-title: İletişim Kaynağını Oluşturma
+title: Iletişim kaynağı oluşturma
 ms.date: 11/04/2016
 helpviewer_keywords:
 - dialog resources
@@ -9,30 +9,30 @@ helpviewer_keywords:
 - resources [MFC], creating dialog boxes
 - MFC dialog boxes [MFC], dialog resource
 ms.assetid: 0b83bd33-14d3-4611-8129-fccdae18053e
-ms.openlocfilehash: d0df76c506d4e6f2267e3a7628825e7b47a56c8c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7b1e6c81a0f4bd6983c2a76baf6148941a4fa21d
+ms.sourcegitcommit: 1e6386be9084f70def7b3b8b4bab319a117102b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62242334"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "71685639"
 ---
-# <a name="creating-the-dialog-resource"></a>İletişim Kaynağını Oluşturma
+# <a name="creating-the-dialog-resource"></a>Iletişim kaynağı oluşturma
 
-Tasarım [iletişim kutusu](../mfc/dialog-boxes.md) ve iletişim kaynağını oluşturma, kullandığınız [iletişim kutusu Düzenleyicisi](../windows/dialog-editor.md). İletişim kutusu Düzenleyicisi'nde, şunları yapabilirsiniz:
+İletişim [kutusunu](../mfc/dialog-boxes.md) tasarlamak ve diyalog kaynağını oluşturmak için [iletişim kutusu düzenleyicisini](../windows/dialog-editor.md)kullanırsınız. İletişim kutusu düzenleyicisinde şunları yapabilirsiniz:
 
-- Boyut ve konum, iletişim kutusu göründüğünde olacaktır ayarlayın.
+- İletişim kutusunun göründüğü zaman, boyutunu ve konumunu ayarlayın.
 
-- Bir denetim paletinden çeşitli denetimleri sürükleyin ve iletişim kutusunda istediğiniz yere sürükleyip bırakın.
+- Bir denetim paletinden çeşitli denetim türlerini sürükleyin ve iletişim kutusunda istediğiniz yere bırakın.
 
-- Araç çubuğundaki denetimleri hizalama düğmelerle getirin.
+- Denetimleri araç çubuğundaki hizalama düğmeleriyle konumlandırın.
 
-- İletişim kutusu, görünümünü ve davranışını programınızda olması benzetimini yaparak test edin. Sınama modunda pushbuttons'ı tıklatarak iletişim kutusunun denetimleri metin metin kutularına yazarak işlemek ve benzeri.
+- Programınızda sahip olacağı görünümün ve davranışın benzetimini yaparak iletişim kutusunu test edin. Test modu ' nda, metin kutularına metin yazarak, pushbuttons ' a tıklayarak iletişim kutusunun denetimlerini düzenleyebilirsiniz.
 
-İşiniz bittiğinde, iletişim şablonu kaynağınızı, uygulamanızın kaynak betik dosyasında depolanır. Daha sonra gerekirse düzenleyebilirsiniz. Oluşturma ve düzenleme iletişim kutusu kaynakları tam bir açıklaması için bkz. [iletişim kutusu Düzenleyicisi](../windows/dialog-editor.md) konuları. Bu yöntem ayrıca için iletişim şablonu kaynaklarına oluşturmak için kullanılan [CFormView](../mfc/reference/cformview-class.md) ve [CRecordView](../mfc/reference/crecordview-class.md) sınıfları.
+Bitirdiğinizde iletişim kutusu şablonu kaynağınız uygulamanızın kaynak betik dosyasında depolanır. Gerekirse daha sonra düzenleyebilirsiniz. İletişim kaynakları oluşturma ve düzenleme hakkında tam bir açıklama için [iletişim kutusu Düzenleyicisi](../windows/dialog-editor.md) konularına bakın. Bu teknik, [CFormView](../mfc/reference/cformview-class.md) ve [CRecordView](../mfc/reference/crecordview-class.md) sınıfları için iletişim şablonu kaynakları oluşturmak için de kullanılır.
 
-İletişim kutusunun görünümü ihtiyaçlarınıza uygun olduğunda iletişim kutusu sınıfı oluşturma ve açıklandığı gibi iletileri, eşleme [kod sihirbazları ile iletişim kutusu sınıfı oluşturma](../mfc/creating-a-dialog-class-with-code-wizards.md).
+İletişim kutusunun görünümü size uygun olduğunda, [kod sihirbazları Ile iletişim kutusu sınıfı oluşturma](../mfc/creating-a-dialog-class-with-code-wizards.md)bölümünde açıklandığı gibi bir iletişim kutusu sınıfı oluşturun ve iletilerini eşleyin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İletişim Kutuları](../mfc/dialog-boxes.md)<br/>
-[Bir İletişim Kutusunun Yaşam Döngüsü](../mfc/life-cycle-of-a-dialog-box.md)
+[İletişim kutuları](../mfc/dialog-boxes.md)<br/>
+[MFC 'de Iletişim kutularıyla çalışma](../mfc/life-cycle-of-a-dialog-box.md)

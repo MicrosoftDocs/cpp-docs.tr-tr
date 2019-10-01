@@ -1,5 +1,5 @@
 ---
-title: İletişim Kutusu Veri Değişimi ve Doğrulaması
+title: İletişim kutusu veri değişimi ve doğrulaması
 ms.date: 11/04/2016
 helpviewer_keywords:
 - data validation [MFC], dialog boxes
@@ -15,24 +15,24 @@ helpviewer_keywords:
 - dialog boxes [MFC], retrieving data
 - retrieving dialog box data
 ms.assetid: 7d373554-7330-43ae-abf1-4bb14e437b4a
-ms.openlocfilehash: a52af898c844cce05a138b8bc0e608681d13a491
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 651ec5779e3fe1190ff1a3f0f807fb0187e348f8
+ms.sourcegitcommit: 1e6386be9084f70def7b3b8b4bab319a117102b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62302104"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "71685757"
 ---
-# <a name="dialog-data-exchange-and-validation"></a>İletişim Kutusu Veri Değişimi ve Doğrulaması
+# <a name="dialog-data-exchange-and-validation"></a>İletişim kutusu veri değişimi ve doğrulaması
 
-İletişim kutusu veri değişimi (DDX) bir iletişim kutunuzda denetimleri başlatmak ve kullanıcı tarafından veri girişi toplamak için kolay yoludur. İletişim verisi doğrulama (DDV), bir iletişim kutusu veri girişi doğrulamak için kolay bir yoludur. DDX ve DDV, iletişim kutularında faydalanmak için kullanmak [ekleme üye değişkeni Sihirbazı](../ide/add-member-variable-wizard.md) veri üyeleri oluşturma ve veri türlerini ayarlayın ve doğrulama kurallarını belirtin.
+İletişim kutusu veri değişimi (DDX), iletişim kutusundaki denetimleri başlatmanın ve Kullanıcı tarafından veri girişi toplamaya yönelik kolay bir yoldur. İletişim kutusu veri doğrulaması (DDV), bir iletişim kutusunda veri girişini doğrulamanın kolay bir yoludur. İletişim kutularınızdaki DDX ve DDV avantajlarından yararlanmak için, [üye değişkeni Ekleme Sihirbazı](../ide/add-member-variable-wizard.md) ' nı kullanarak veri üyelerini oluşturun ve veri türlerini ayarlayın ve doğrulama kurallarını belirtin.
 
-## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz
+## <a name="what-do-you-want-to-know-more-about"></a>Hakkında daha fazla bilgi edinmek istiyorsunuz
 
 - [İletişim kutusu veri değişimi](../mfc/dialog-data-exchange.md)
 
-- [İletişim verisi doğrulama](../mfc/dialog-data-validation.md)
+- [İletişim kutusu verileri doğrulaması](../mfc/dialog-data-validation.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İletişim Kutuları](../mfc/dialog-boxes.md)<br/>
-[Bir İletişim Kutusunun Yaşam Döngüsü](../mfc/life-cycle-of-a-dialog-box.md)
+[İletişim kutuları](../mfc/dialog-boxes.md)<br/>
+[MFC 'de Iletişim kutularıyla çalışma](../mfc/life-cycle-of-a-dialog-box.md)
