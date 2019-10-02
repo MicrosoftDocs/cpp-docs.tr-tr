@@ -1,6 +1,6 @@
 ---
-title: 'Platform::Collections:: Vector sınıfı'
-ms.date: 12/30/2016
+title: 'Platform:: Collections:: vector Sınıfı'
+ms.date: 10/01/2019
 ms.topic: reference
 f1_keywords:
 - COLLECTION/Platform::Collections::Vector::Vector
@@ -21,16 +21,16 @@ f1_keywords:
 helpviewer_keywords:
 - Vector Class (C++/Cx)
 ms.assetid: aee8c076-9700-47c3-99b6-799fd3edb0ca
-ms.openlocfilehash: 5466f1d1c8987724aa0768cd8915e06b62b031ad
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a70856be04a63cad1c700cb3cc52711dde410265
+ms.sourcegitcommit: 4517932a67bbf2db16cfb122d3bef57a43696242
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62161647"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71816574"
 ---
-# <a name="platformcollectionsvector-class"></a>Platform::Collections:: Vector sınıfı
+# <a name="platformcollectionsvector-class"></a>Platform:: Collections:: vector Sınıfı
 
-Tek tek dizin tarafından erişilebilen nesneler için sıralı bir koleksiyonu temsil eder.
+Dizin tarafından tek tek erişilebilen nesnelerin sıralı koleksiyonunu temsil eder. XAML [veri bağlamaya](/windows/uwp/data-binding/data-binding-in-depth)yardımcı olmak için [Windows:: Foundation:: Collections:: IObservableVector](/uwp/api/Windows.Foundation.Collections.IObservableVector_T_) uygular.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -41,76 +41,76 @@ template <typename T, typename E>
 
 ### <a name="parameters"></a>Parametreler
 
-*T*<br/>
-Vektör nesnesinde yer alan öğelerin türü.
+*Şı*<br/>
+Vektör nesnesinde içerilen öğelerin türü.
 
-*E*<br/>
-Türündeki değerlerle eşitlik testi için bir ikili koşula belirtir *T*. Varsayılan değer `std::equal_to<T>` şeklindedir.
+*A*<br/>
+*T*tür değerleriyle eşitlik test etmek için bir ikili koşul belirtir. Varsayılan değer `std::equal_to<T>` ' dir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İzin verilen türleri şunlardır:
+İzin verilen türler şunlardır:
 
-1. tamsayılar
+1. Kesirli
 
 1. arabirim sınıfı ^
 
-1. Genel başvuru sınıfı ^
+1. ortak başvuru sınıfı ^
 
-1. değer yapısı
+1. value yapısı
 
-1. Genel sabit listesi sınıfı
+1. ortak enum sınıfı
 
-**Vektör** sınıfı, C++ somut uygulamasını [Windows::Foundation::Collections::IVector](/uwp/api/Windows.Foundation.Collections.IVector_T_) arabirimi.
+**Vector** sınıfı, C++ [Windows:: Foundation:: Collections:: IVector](/uwp/api/Windows.Foundation.Collections.IVector_T_) arabiriminin somut uygulamasıdır.
 
-Kullanmayı denerseniz bir **vektör** türü ortak dönüş değeri veya parametre, derleyici hatası C3986 oluşturulur. Parametre değiştirerek hatayı düzeltin ya da dönüş değeri türüne [Windows::Foundation::Collections::IVector](/uwp/api/Windows.Foundation.Collections.IVector_T_). Daha fazla bilgi için [koleksiyonları (C++/CX)](../cppcx/collections-c-cx.md).
+Bir ortak dönüş değeri veya parametresinde bir **vektör** türü kullanmaya çalışırsanız, derleyici hatası C3986 tetiklenir. Bu hatayı, parametre veya dönüş değeri türünü [Windows:: Foundation:: Collections:: IVector](/uwp/api/Windows.Foundation.Collections.IVector_T_)olarak değiştirerek çözebilirsiniz. Daha fazla bilgi için bkz. [koleksiyonlarC++(/CX)](../cppcx/collections-c-cx.md).
 
-### <a name="members"></a>Üyeler
+### <a name="members"></a>Üyeleri
 
-### <a name="public-constructors"></a>Ortak Oluşturucular
+### <a name="public-constructors"></a>Ortak oluşturucular
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[Vector::Vector](#ctor)|Vektör sınıfının yeni bir örneğini başlatır.|
+|[Vector:: vector](#ctor)|Vektör sınıfının yeni bir örneğini başlatır.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Adı|Açıklama|
 |----------|-----------------|
-|[Vector::Append](#append)|Geçerli bir vektör içindeki son öğeden sonra belirtilen öğeyi ekler.|
-|[Vector::Clear](#clear)|Geçerli vektör tüm öğeleri siler.|
-|[Vector::First](#first)|Vektör ilk öğeyi belirten bir yineleyici döndürür.|
-|[Vector::GetAt](#getat)|İdentifed belirtilen dizine göre olan geçerli vektör öğesinin alır.|
-|[Vector::GetMany](#getmany)|Belirtilen dizinden başlayarak geçerli vektör öğelerinin bir dizisini alır.|
-|[Vector::GetView](#getview)|Bir vektör salt okunur bir görünümünü verir. diğer bir deyişle, bir [Platform::Collections:: vectorview](../cppcx/platform-collections-vectorview-class.md).|
-|[Vector::IndexOf](#indexof)|Belirtilen öğe geçerli vektördeki arar ve bulundu, döndürür öğenin dizini.|
-|[Vector::InsertAt](#insertat)|Belirtilen öğe geçerli vektöre sonra tarafından belirtilen dizine belirtilen öğeyi ekler.|
-|[Vector::ReplaceAll](#replaceall)|Geçerli vektör öğeleri siler ve sonra belirtilen diziden öğeleri ekler.|
-|[Vector::RemoveAt](#removeat)|Belirtilen dizinden geçerli vektör tarafından tanımlanan öğeyi silin.|
-|[Vector::RemoveAtEnd](#removeatend)|Geçerli vektör sonundaki öğeyi silin.|
-|[Vector::SetAt](#setat)|Belirtilen dizin tarafından tanımlanan geçerli vektör öğesine belirtilen değeri atar.|
-|[Vector::size](#size)|Geçerli bir vektör nesnesi öğelerin sayısını döndürür.|
+|[Vector:: Append](#append)|Geçerli Vektördeki son öğeden sonra belirtilen öğeyi ekler.|
+|[Vector:: Clear](#clear)|Geçerli Vektördeki tüm öğeleri siler.|
+|[Vector:: First](#first)|Vektördeki ilk öğeyi belirten bir yineleyici döndürür.|
+|[Vector:: GetAt](#getat)|Belirtilen dizin tarafından belirlenen geçerli vektörün öğesini alır.|
+|[Vector:: GetMany](#getmany)|Belirtilen dizinden başlayarak, geçerli vektörden bir öğe dizisi alır.|
+|[Vector:: GetView](#getview)|Bir vektörün salt okunurdur görünümünü döndürür; diğer bir deyişle, bir [Platform:: Collections:: VectorView](../cppcx/platform-collections-vectorview-class.md).|
+|[Vector:: IndexOf](#indexof)|Geçerli vektörde belirtilen öğeyi arar ve bulunursa öğenin dizinini döndürür.|
+|[Vector:: InsertAt](#insertat)|Belirtilen dizin tarafından tanımlanan öğeden sonra, belirtilen öğeyi geçerli vektöre ekler.|
+|[Vector:: ReplaceAll](#replaceall)|Geçerli Vektördeki öğeleri siler ve ardından belirtilen diziden öğeleri ekler.|
+|[Vector:: RemoveAt](#removeat)|Geçerli vektörden belirtilen dizin tarafından tanımlanan öğeyi siler.|
+|[Vector:: RemoveAtEnd](#removeatend)|Geçerli vektörün sonundaki öğeyi siler.|
+|[Vector:: SetAt](#setat)|Belirtilen dizin tarafından tanımlanan geçerli vektörde bulunan öğeye belirtilen değeri atar.|
+|[Vector:: size](#size)|Geçerli vektör nesnesindeki öğe sayısını döndürür.|
 
-### <a name="events"></a>Olaylar
+### <a name="events"></a>Etkinlikler
 
 |||
 |-|-|
-|Ad|Açıklama|
-|olay [Windows::Foundation::Collection::VectorChangedEventHandler\<T > ^ VectorChanged](/uwp/api/windows.foundation.collections.vectorchangedeventhandler)|Vektör değiştiğinde gerçekleşir.|
+|Adı|Açıklama|
+|olay [Windows:: Foundation:: Collection:: VectorChangedEventHandler @ no__t-1T > ^ VectorChanged](/uwp/api/windows.foundation.collections.vectorchangedeventhandler)|Vektör değiştiğinde gerçekleşir.|
 
-## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
+## <a name="inheritance-hierarchy"></a>Devralma hiyerarşisi
 
 `Vector`
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** collection.h
+**Üstbilgi:** Collection. h
 
-**Namespace:** Platform::Collections
+**Ad alanı:** Platform:: Collections
 
-## <a name="append"></a>  Vector::Append yöntemi
+## <a name="append"></a>Vector:: Append yöntemi
 
-Geçerli bir vektör içindeki son öğeden sonra belirtilen öğeyi ekler.
+Geçerli Vektördeki son öğeden sonra belirtilen öğeyi ekler.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -120,12 +120,12 @@ virtual void Append(T item);
 
 ### <a name="parameters"></a>Parametreler
 
-*Dizin*<br/>
-Vektöre eklenecek öğe. Türünü *öğesi* tarafından tanımlanan *T* typename.
+*indeks*<br/>
+Vektöre eklenecek öğe. *Öğe* türü *T* TypeName tarafından tanımlanır.
 
-## <a name="clear"></a>  Vector::Clear yöntemi
+## <a name="clear"></a>Vector:: Clear yöntemi
 
-Geçerli vektör tüm öğeleri siler.
+Geçerli Vektördeki tüm öğeleri siler.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -133,9 +133,9 @@ Geçerli vektör tüm öğeleri siler.
 virtual void Clear();
 ```
 
-## <a name="first"></a>  Vector::First yöntemi
+## <a name="first"></a>Vector:: First yöntemi
 
-Bir yineleyicinin vektör içindeki ilk öğeye döndürür.
+Vektördeki ilk öğeyi gösteren bir yineleyici döndürür.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -143,19 +143,19 @@ Bir yineleyicinin vektör içindeki ilk öğeye döndürür.
 virtual Windows::Foundation::Collections::IIterator <T>^ First();
 ```
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Dönüş değeri
 
-Vektör içindeki ilk öğeyi gösteren bir yineleyici.
+Vektördeki ilk öğeyi gösteren bir yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dönüş değeri ile bildirilen bir değişken atamak First() tarafından döndürülen yineleyici tutmak için kullanışlı bir yol olan **otomatik** kesinti anahtar sözcüğü yazın. Örneğin: `auto x = myVector->First();` Bu yineleyici koleksiyonu uzunluğunu bilir.
+Ilk () tarafından döndürülen yineleyiciyi tutmanın uygun bir yolu, dönüş değerini **Auto** Type kesintisi anahtar sözcüğüyle belirtilen bir değişkene atamaktır. Örneğin, `auto x = myVector->First();`. Bu Yineleyici, koleksiyonun uzunluğunu bilir.
 
-Bir STL işleve Yineleyicilerin bir çiftini gerektiğinde ücretsiz işlevleri kullanmak [Windows::Foundation:: Collections:: başlamak](../cppcx/begin-function.md) ve [Windows::Foundation::Collections::end](../cppcx/end-function.md)
+STL işlevine geçebileceğiniz bir çift yineleyiciye ihtiyacınız olduğunda, ücretsiz işlevler [Windows:: Foundation:: Collections:: Begin](../cppcx/begin-function.md) ve [Windows:: Foundation:: Collections:: End](../cppcx/end-function.md) ' i kullanın.
 
-## <a name="getat"></a>  Vector::GetAt yöntemi
+## <a name="getat"></a>Vector:: GetAt yöntemi
 
-İdentifed belirtilen dizine göre olan geçerli vektör öğesinin alır.
+Belirtilen dizin tarafından belirlenen geçerli vektörün öğesini alır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -165,16 +165,16 @@ virtual T GetAt(unsigned int index);
 
 ### <a name="parameters"></a>Parametreler
 
-*Dizin*<br/>
-Belirli bir öğenin vektör nesnesi belirtir. sıfır tabanlı, işaretsiz bir tamsayı.
+*indeks*<br/>
+Vektör nesnesinde belirli bir öğeyi belirten sıfır tabanlı, işaretsiz bir tamsayı.
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Dönüş değeri
 
-Tarafından belirtilen öğenin *dizin* parametresi. Öğe türü tarafından tanımlanan *T* typename.
+*Dizin* parametresi tarafından belirtilen öğe. Öğe türü *T* TypeName tarafından tanımlanır.
 
-## <a name="getmany"></a>  Vector::GetMany yöntemi
+## <a name="getmany"></a>Vector:: GetMany yöntemi
 
-Belirtilen dizinden başlayarak geçerli vektör öğelerinin bir dizisini alır ve bunları arayana ayrılan dizi içine kopyalar.
+Belirtilen dizinden başlayarak, geçerli vektörden bir öğe dizisi alır ve bunları arayan tarafından ayrılan diziye kopyalar.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -187,22 +187,22 @@ virtual unsigned int GetMany(
 ### <a name="parameters"></a>Parametreler
 
 *startIndex*<br/>
-Alınacak öğelerin başladığı sıfır tabanlı dizini.
+Alınacak öğelerin başlangıcına ait sıfır tabanlı dizin.
 
-*Hedef*<br/>
-Belirtilen öğede başlayan öğeleri arayana ayrılan dizi *startIndex* ve vektör içindeki son öğeden sonunda.
+*HD*<br/>
+*StartIndex* tarafından belirtilen öğede başlayan ve Vektördeki son öğede biten, çağıran bir öğe dizisi.
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Dönüş değeri
 
-Öğe sayısını alınır.
+Alınan öğe sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, doğrudan istemci kodu tarafından kullanılmak üzere tasarlanmamıştır. Buna dahili olarak kullanılan [to_vector işlevi](../cppcx/to-vector-function.md) verimli dönüştürülmesi std::vector örnekleri Platform::Vector uygulamalara sağlamak.
+Bu işlev doğrudan istemci kodu tarafından kullanılmaya yönelik değildir. Platform:: vector örneklerinin std:: vector örneklerine etkin dönüştürülmesini sağlamak için [To_vector işlevinde](../cppcx/to-vector-function.md) dahili olarak kullanılır.
 
-## <a name="getview"></a>  Vector::GetView yöntemi
+## <a name="getview"></a>Vector:: GetView yöntemi
 
-Bir vektör salt okunur bir görünümünü verir. diğer bir deyişle, bir IVectorView.
+Bir vektörün salt okunurdur görünümünü döndürür; diğer bir deyişle, bir ıvectorview.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -210,13 +210,13 @@ Bir vektör salt okunur bir görünümünü verir. diğer bir deyişle, bir IVec
 Windows::Foundation::Collections::IVectorView<T>^ GetView();
 ```
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Dönüş değeri
 
-IVectorView nesne.
+Bir ıvectorview nesnesi.
 
-## <a name="indexof"></a>  Vector::IndexOf yöntemi
+## <a name="indexof"></a>Vector:: IndexOf yöntemi
 
-Belirtilen öğe geçerli vektördeki arar ve bulundu, döndürür öğenin dizini.
+Geçerli vektörde belirtilen öğeyi arar ve bulunursa öğenin dizinini döndürür.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -229,22 +229,22 @@ virtual bool IndexOf(T value, unsigned int* index);
 *value*<br/>
 Bulunacak öğe.
 
-*Dizin*<br/>
-Öğenin sıfır tabanlı dizini, parametre *değer* bulundu; Aksi takdirde, 0.
+*indeks*<br/>
+Parametre *değeri* bulunursa öğenin sıfır tabanlı dizini; Aksi takdirde, 0.
 
-*Dizin* parametresi ise 0 öğe vektör ilk öğesidir ya da öğe bulunamadı. Dönüş değeri ise **true**, öğe bulundu ve ilk öğedir; Aksi takdirde, öğe bulunamadı.
+Öğe vektör 'in ilk öğesi ise veya öğe bulunmazsa *Dizin* parametresi 0 ' dır. Dönüş değeri **true**ise, öğe bulundu ve ilk öğedir; Aksi takdirde, öğe bulunamadı.
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Dönüş değeri
 
-**doğru** belirtilen öğe bulunduysa, **false**.
+Belirtilen öğe bulunursa **true** ; Aksi takdirde, **false**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-IndexOf std::find_if öğeyi bulmak için kullanır. Özel öğe türleri == dolayısıyla aşırı ve! = işleci eşitlik etkinleştirmek için bu find_if karşılaştırma gerektirir.
+IndexOf, öğeyi bulmak için std:: find_if kullanır. Bu nedenle, find_if için gereken eşitlik karşılaştırmalarını etkinleştirmek için özel öğe türleri = = ve! = işlecini aşırı yüklemesi gerekir.
 
-##  <a name="insertat"></a>  Vector::InsertAt yöntemi
+##  <a name="insertat"></a>Vector:: InsertAt yöntemi
 
-Belirtilen öğe geçerli vektöre sonra tarafından belirtilen dizine belirtilen öğeyi ekler.
+Belirtilen dizin tarafından tanımlanan öğeden sonra, belirtilen öğeyi geçerli vektöre ekler.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -254,15 +254,15 @@ virtual void InsertAt(unsigned int index, T item)
 
 ### <a name="parameters"></a>Parametreler
 
-*Dizin*<br/>
-Belirli bir öğenin vektör nesnesi belirtir. sıfır tabanlı, işaretsiz bir tamsayı.
+*indeks*<br/>
+Vektör nesnesinde belirli bir öğeyi belirten sıfır tabanlı, işaretsiz bir tamsayı.
 
-*Öğesi*<br/>
-Bir öğe tarafından belirtilen öğenin sonra vektöre Ekle *dizin*. Türünü *öğesi* tarafından tanımlanan *T* typename.
+*maddesinin*<br/>
+*Dizinle*belirtilen öğeden sonra vector öğesine eklenecek bir öğe. *Öğe* türü *T* TypeName tarafından tanımlanır.
 
-## <a name="removeat"></a>  Vector::RemoveAt yöntemi
+## <a name="removeat"></a>Vector:: RemoveAt yöntemi
 
-Belirtilen dizinden geçerli vektör tarafından tanımlanan öğeyi silin.
+Geçerli vektörden belirtilen dizin tarafından tanımlanan öğeyi siler.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -272,12 +272,12 @@ virtual void RemoveAt(unsigned int index);
 
 ### <a name="parameters"></a>Parametreler
 
-*Dizin*<br/>
-Belirli bir öğenin vektör nesnesi belirtir. sıfır tabanlı, işaretsiz bir tamsayı.
+*indeks*<br/>
+Vektör nesnesinde belirli bir öğeyi belirten sıfır tabanlı, işaretsiz bir tamsayı.
 
-## <a name="removeatend"></a>  Vector::RemoveAtEnd yöntemi
+## <a name="removeatend"></a>Vector:: RemoveAtEnd yöntemi
 
-Geçerli vektör sonundaki öğeyi silin.
+Geçerli vektörün sonundaki öğeyi siler.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -285,9 +285,9 @@ Geçerli vektör sonundaki öğeyi silin.
 virtual void RemoveAtEnd();
 ```
 
-## <a name="replaceall"></a>  Vector::ReplaceAll yöntemi
+## <a name="replaceall"></a>Vector:: ReplaceAll yöntemi
 
-Geçerli vektör öğeleri siler ve sonra belirtilen diziden öğeleri ekler.
+Geçerli Vektördeki öğeleri siler ve ardından belirtilen diziden öğeleri ekler.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -297,12 +297,12 @@ virtual void ReplaceAll(const ::Platform::Array<T>^ arr);
 
 ### <a name="parameters"></a>Parametreler
 
-*arr*<br/>
-Bir dizi türü tarafından tanımlanan nesnelerin *T* typename.
+*ARR*<br/>
+Türü *T* TypeName tarafından tanımlanan bir nesne dizisi.
 
-## <a name="setat"></a>  Vector::SetAt yöntemi
+## <a name="setat"></a>Vector:: SetAt yöntemi
 
-Belirtilen dizin tarafından tanımlanan geçerli vektör öğesine belirtilen değeri atar.
+Belirtilen dizin tarafından tanımlanan geçerli vektörde bulunan öğeye belirtilen değeri atar.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -312,15 +312,15 @@ virtual void SetAt(unsigned int index, T item);
 
 ### <a name="parameters"></a>Parametreler
 
-*Dizin*<br/>
-Belirli bir öğenin vektör nesnesi belirtir. sıfır tabanlı, işaretsiz bir tamsayı.
+*indeks*<br/>
+Vektör nesnesinde belirli bir öğeyi belirten sıfır tabanlı, işaretsiz bir tamsayı.
 
-*Öğesi*<br/>
-Belirtilen öğe için atanacak değer. Türünü *öğesi* tarafından tanımlanan *T* typename.
+*maddesinin*<br/>
+Belirtilen öğeye atanacak değer. *Öğe* türü *T* TypeName tarafından tanımlanır.
 
-## <a name="size"></a>  Vector::size yöntemi
+## <a name="size"></a>Vector:: size yöntemi
 
-Geçerli bir vektör nesnesi öğelerin sayısını döndürür.
+Geçerli vektör nesnesindeki öğe sayısını döndürür.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -328,11 +328,11 @@ Geçerli bir vektör nesnesi öğelerin sayısını döndürür.
 virtual property unsigned int Size;
 ```
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Dönüş değeri
 
-Geçerli vektördeki öğe sayısı.
+Geçerli Vektördeki öğe sayısı.
 
-## <a name="ctor"></a>  Vector::Vector Oluşturucusu
+## <a name="ctor"></a>Vector:: vector Oluşturucusu
 
 Vektör sınıfının yeni bir örneğini başlatır.
 
@@ -358,39 +358,40 @@ Vector(std::initializer_list<T> il);
 ### <a name="parameters"></a>Parametreler
 
 *a*<br/>
-A [std::array](../standard-library/array-class-stl.md) vektör başlatmak için kullanılır.
+Vektörü başlatmak için kullanılacak [std:: Array](../standard-library/array-class-stl.md) .
 
-*arr*<br/>
-A [Platform::Array](../cppcx/platform-array-class.md) vektör başlatmak için kullanılır.
+*ARR*<br/>
+Vektörü başlatmak için kullanılacak [Platform:: Array](../cppcx/platform-array-class.md) .
 
-*InIt*<br/>
-Geçerli vektör başlatmak için kullanılan bir koleksiyon nesnelerin türü.
+*Dengeleyici*<br/>
+Geçerli vektörü başlatmak için kullanılan nesne koleksiyonunun türü.
 
-*IL*<br/>
-A [std::initializer_list](../standard-library/initializer-list-class.md) türünde nesne *T* vektör başlatmak için kullanılır.
+*Demiryolu*<br/>
+Vektör 'yi başlatmak için kullanılacak *T* türünde bir [std:: initializer_list](../standard-library/initializer-list-class.md) nesne.
 
-*N*<br/>
-Bir koleksiyondaki öğeleri geçerli vektör başlatmak için kullanılan nesnelerin sayısı.
+*No*<br/>
+Geçerli vektörü başlatmak için kullanılan nesne koleksiyonundaki öğe sayısı.
 
-*Boyutu*<br/>
+*boyutla*<br/>
 Vektördeki öğe sayısı.
 
 *value*<br/>
-Geçerli bir vektör içindeki her öğeyi başlatmak için kullanılan bir değer.
+Geçerli vektörde her öğeyi başlatmak için kullanılan bir değer.
 
-*v*<br/>
-Bir [Lvalues ve Rvalues](../cpp/lvalues-and-rvalues-visual-cpp.md) için bir [std::vector](../standard-library/vector-class.md) geçerli vektör başlatmak için kullanılır.
+*Yönetim*<br/>
+Geçerli vektörü başlatmak için kullanılan [std:: vector](../standard-library/vector-class.md) öğesine bir [lvalues ve rvalues](../cpp/lvalues-and-rvalues-visual-cpp.md) .
 
-*ptr*<br/>
-İşaretçi bir `std::vector` geçerli vektör başlatmak için kullanılır.
+*kaydetmeye*<br/>
+Geçerli vektörü başlatmak için kullanılan `std::vector` işaretçisi.
 
-*ilk*<br/>
-Geçerli vektör başlatmak için kullanılan nesnelerin bir dizideki ilk öğe. Türünü *ilk* yoluyla geçirilen *kusursuz iletme*. Daha fazla bilgi için [Rvalue başvuru Bildirimcisi: & &](../cpp/rvalue-reference-declarator-amp-amp.md).
+*adı*<br/>
+Geçerli vektörü başlatmak için kullanılan nesne dizisindeki ilk öğe. *İlk* türü *kusursuz iletme*yoluyla geçirilir. Daha fazla bilgi için bkz. [rvalue başvuru bildirimci: & &](../cpp/rvalue-reference-declarator-amp-amp.md).
 
-*Son*<br/>
-Son öğeden bir dizideki nesnelerin geçerli vektör başlatmak için kullanılır. Türünü *son* yoluyla geçirilen *kusursuz iletme*. Daha fazla bilgi için [Rvalue başvuru Bildirimcisi: & &](../cpp/rvalue-reference-declarator-amp-amp.md).
+*soyadına*<br/>
+Geçerli vektörü başlatmak için kullanılan nesneler dizisindeki son öğe. *Son* türü, *kusursuz iletme*yoluyla geçirilir. Daha fazla bilgi için bkz. [rvalue başvuru bildirimci: & &](../cpp/rvalue-reference-declarator-amp-amp.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Platform Namespace](platform-namespace-c-cx.md)<br/>
-[C++'ta Windows çalışma zamanı bileşenleri oluşturma](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)
+[Koleksiyonlar (C++/CX)](collections-c-cx.md)<br/>
+[Platform ad alanı](platform-namespace-c-cx.md)<br/>
+[İçinde Windows Çalışma Zamanı bileşenleri oluşturmaC++](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)
