@@ -409,6 +409,8 @@
                   href: build/reference/vcxproj-file-structure.md
                 - name: Örnek proje dosyası
                   href: build/reference/project-files.md
+                - name: .vcxproj.filters dosya yapısı
+                  href: build/reference/vcxproj-filters-files.md
             - name: C++ proje özelliği sayfaları
               expanded: false
               items:
@@ -430,9 +432,9 @@
                   href: build/reference/linker-property-pages.md
                 - name: Komut satırı özellik sayfaları
                   href: build/reference/command-line-property-pages.md
-                - name: NMake özellik sayfaları
+                - name: NMake özellik sayfası
                   href: build/reference/nmake-property-page.md
-                - name: Bildirim aracı özellik sayfaları
+                - name: Bildirim Aracı özellik sayfaları
                   href: build/reference/manifest-tool-property-pages.md
                 - name: Kaynaklar özellik sayfaları
                   href: build/reference/resources-property-pages.md
@@ -794,6 +796,8 @@
                       href: build/reference/zf.md
                     - name: /Zg (İşlev prototipleri üret)
                       href: build/reference/zg-generate-function-prototypes.md
+                    - name: /ZH (Hata ayıklama bilgilerinde sağlama toplamı için karma algoritması)
+                      href: build/reference/zh.md
                     - name: /Zl (Varsayılan kitaplık adını atla)
                       href: build/reference/zl-omit-default-library-name.md
                     - name: /Zm (Önceden derlenmiş üst bilgi bellek ayırma sınırını belirt)
@@ -952,6 +956,10 @@
                   href: build/reference/largeaddressaware-handle-large-addresses.md
                 - name: /LIBPATH (Ek libpath)
                   href: build/reference/libpath-additional-libpath.md
+                - name: /LINKREPRO (Bağlantıyı yeniden oluşturmak için dizin adı)
+                  href: build/reference/linkrepro.md
+                - name: /LINKREPROTARGET (Bağlantıyı yeniden oluşturmak için dosya adı)
+                  href: build/reference/linkreprotarget.md
                 - name: /LTCG (Bağlama zamanı kodu üretme)
                   href: build/reference/ltcg-link-time-code-generation.md
                 - name: /MACHINE (Hedef platformu belirt)
@@ -1521,6 +1529,8 @@
           href: ide/writing-and-refactoring-code-cpp.md
         - name: C++ kodunda gezinme
           href: ide/navigate-code-cpp.md
+        - name: C++ kodlama tercihlerinizi ayarlama
+          href: ide/how-to-set-preferences.md
         - name: C++ için Live Share kullanarak işbirliği yapma
           href: ide/live-share-cpp.md
         - name: İmzayı değiştirme
@@ -4809,7 +4819,7 @@
                       href: preprocessor/preprocessor-operators.md
                     - name: 'Dizeleyen işleç (#)'
                       href: preprocessor/stringizing-operator-hash.md
-                    - name: 'Karakterleştirme işleci (#@)'
+                    - name: 'Karakter haline getirme işleci (#@)'
                       href: preprocessor/charizing-operator-hash-at.md
                     - name: 'Belirteç yapıştıran işleç (##)'
                       href: preprocessor/token-pasting-operator-hash-hash.md

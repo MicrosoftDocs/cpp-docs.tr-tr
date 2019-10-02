@@ -1023,7 +1023,7 @@
             - name: Bir iletişim kutusunun yaşam döngüsü
               expanded: false
               items:
-                - name: Bir iletişim kutusunun yaşam döngüsü
+                - name: MFC’de İletişim Kutularıyla çalışma
                   href: life-cycle-of-a-dialog-box.md
                 - name: İletişim kutuları oluşturma ve görüntüleme
                   href: creating-and-displaying-dialog-boxes.md
