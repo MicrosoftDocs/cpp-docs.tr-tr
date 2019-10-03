@@ -3,12 +3,12 @@ title: Visual Studio 'da hedef Linux sisteminize bağlanma
 description: Visual Studio C++ projesinin içinden bir uzak Linux makinesine veya WSL 'ye bağlanma.
 ms.date: 09/04/2019
 ms.assetid: 5eeaa683-4e63-4c46-99ef-2d5f294040d4
-ms.openlocfilehash: 75d8b3db64d9b1f3562d6730685b7c29fe4982f4
-ms.sourcegitcommit: a42d3b0408f02138dcd6fabcb98d50b0cb159191
+ms.openlocfilehash: 2f4e6311493f2b29ba6911ec1b76225b6c7abe6d
+ms.sourcegitcommit: b85e1db6b7d4919852ac6843a086ba311ae97d40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "70383398"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "71925566"
 ---
 # <a name="connect-to-your-target-linux-system-in-visual-studio"></a>Visual Studio 'da hedef Linux sisteminize bağlanma
 
@@ -38,10 +38,10 @@ Bu uzak bağlantıyı kurmak için:
 
 1. Aşağıdaki bilgileri girin:
 
-   | Giriş | Açıklama
+   | Girdi | Açıklama
    | ----- | ---
    | **Ana bilgisayar adı**           | Hedef cihazınızın adı veya IP adresi
-   | **Bağ**                | SSH hizmetinin üzerinde çalıştığı bağlantı noktası, genellikle 22
+   | **Bağlantı Noktası**                | SSH hizmetinin üzerinde çalıştığı bağlantı noktası, genellikle 22
    | **Kullanıcı adı**           | Kimlik doğrulaması yapılacak Kullanıcı
    | **Kimlik doğrulama türü** | Parola veya özel anahtar desteklenir
    | **Parola**            | Girilen Kullanıcı adı için parola
@@ -52,11 +52,11 @@ Bu uzak bağlantıyı kurmak için:
    
    Aşağıdaki adımları izleyerek özel bir RSA anahtar dosyası oluşturabilirsiniz:
 
-    1. Windows makinesinde, ile `ssh-keygen -t rsa`SSH anahtar çiftini oluşturun. Bu, bir ortak anahtar ve özel anahtar oluşturur. Varsayılan olarak anahtarlar ve `C:\Users\%USERNAME%\.ssh` `id_rsa.pub` `id_rsa`adlarıyla birlikte yerleştirilir.
+    1. Windows makinesinde, `ssh-keygen -t rsa` ile SSH anahtar çiftini oluşturun. Bu, bir ortak anahtar ve özel anahtar oluşturur. Varsayılan olarak anahtarlar, `id_rsa.pub` ve `id_rsa` adlarıyla `C:\Users\%USERNAME%\.ssh` altına yerleştirilir.
 
     1. Windows 'tan ortak anahtarı Linux makinesine kopyalayın: `scp -p C:\Users\%USERNAME%\.ssh\id_rsa.pub user@hostname`.
 
-    1. Linux sisteminde, anahtarı yetkili anahtarlar listesine ekleyin (ve dosyanın doğru izinlere sahip olduğundan emin olun):`cat ~/id_rsa.pub >> ~/.ssh/authorized_keys; chmod 600 ~/.ssh/authorized_keys`
+    1. Linux sisteminde, anahtarı yetkili anahtarlar listesine ekleyin (ve dosyanın doğru izinlere sahip olduğundan emin olun): `cat ~/id_rsa.pub >> ~/.ssh/authorized_keys; chmod 600 ~/.ssh/authorized_keys`
 
 1. Uzak bilgisayara bir bağlantı denemek için **Bağlan** düğmesine tıklayın. 
 
@@ -94,11 +94,12 @@ Visual Studio 2017 ' de, bu makalenin önceki kısımlarında açıklandığı g
 
 Visual Studio 2019 sürüm 16,1, C++ [Linux Için Windows alt sistemi (WSL)](https://docs.microsoft.com/windows/wsl/about)ile kullanımı için yerel destek ekledi.  Bu, artık yerel WSL yüklemenizde derleme ve hata ayıklama yapmak için uzak bir bağlantı eklemeniz veya SSH yapılandırmanız gerekmediği anlamına gelir. [WSL 'nin nasıl yükleneceğine](https://docs.microsoft.com/windows/wsl/install-win10) ilişkin ayrıntıları burada bulabilirsiniz.
 
-WSL yüklemenizi Visual Studio ile çalışacak şekilde yapılandırmak için aşağıdaki araçların yüklü olması gerekir: GCC, gdb, Make, rsync ve zip. Bu komutu kullanarak, apt 'yi kullanan distro 'lara 'e yükleyebilirsiniz: 
+WSL yüklemenizi Visual Studio ile çalışacak şekilde yapılandırmak için aşağıdaki araçların yüklü olması gerekir: GCC veya Clang, gdb, Make, rsync ve zip. Bu komutları, bu komutu kullanarak apt 'yi kullanan distro 'lara 'ye yükleyebilirsiniz ve bu da g + + derleyicisini de yükler: 
 
 ```bash
 sudo apt install g++ gdb make rsync zip
 ```
+Daha fazla bilgi için bkz. [Linux iş yükünü indirme, yükleme ve ayarlama](download-install-and-setup-the-linux-development-workload.md).
 
 Projenizi WSL için yapılandırmak üzere bkz. [bir Linux projesi yapılandırma](configure-a-linux-project.md) veya sahip olduğunuz proje türüne bağlı olarak [bir Linux CMake projesi yapılandırma](cmake-linux-project.md) . WSL ile basit bir konsol uygulaması oluşturmaya yönelik adım adım yönergeleri izlemek için, [ C++ Visual Studio 2019 ve Linux için Windows alt sistemi (WSL) ile birlikte](https://devblogs.microsoft.com/cppblog/c-with-visual-studio-2019-and-windows-subsystem-for-linux-wsl/)bu giriş blog gönderisine göz atın.
 

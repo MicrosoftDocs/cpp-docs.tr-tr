@@ -4,12 +4,12 @@ ms.date: 10/01/2019
 helpviewer_keywords:
 - CMake in Visual C++
 ms.assetid: 444d50df-215e-4d31-933a-b41841f186f8
-ms.openlocfilehash: 52ca34ef8522ada1881e2f7f5df212167c64c919
-ms.sourcegitcommit: 4517932a67bbf2db16cfb122d3bef57a43696242
+ms.openlocfilehash: 168f5b0aac34757a9c2d73bcebc908a0d58721fe
+ms.sourcegitcommit: b85e1db6b7d4919852ac6843a086ba311ae97d40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71816466"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "71925568"
 ---
 # <a name="cmake-projects-in-visual-studio"></a>Visual Studio 'da CMake projeleri
 
@@ -58,12 +58,6 @@ Hata ayıklama sırasında bir yürütülebilir dosyaya bağımsız değişkenle
 
 > [!NOTE]
 > Diğer açık klasör projesi türleri için, iki ek JSON dosyası kullanılır: **Cppproperties. JSON** ve **Tasks. vs. JSON**. Bunlardan hiçbiri CMake projelerine uygun değildir.
-
-## <a name="import-an-existing-cache"></a>Var olan bir önbelleği içeri aktar
-
-Var olan bir CMakeCache. txt dosyasını içeri aktardığınızda, Visual Studio özelleştirilmiş değişkenleri otomatik olarak ayıklar ve bunlara göre önceden doldurulmuş bir **Cmakesettings. JSON** dosyası oluşturur. Özgün önbellek herhangi bir şekilde değiştirilmez ve komut satırından veya onu oluşturmak için kullanılan herhangi bir araçla ya da IDE ile kullanılmaya devam edilebilir. Yeni **Cmakesettings. JSON** dosyası projenin kök CMakeLists. txt dosyasının yanına yerleştirilir. Visual Studio, ayarlar dosyasını temel alarak yeni bir önbellek oluşturur. **Araçlar > seçenekleri > CMake > genel** iletişim kutusunda otomatik önbellek oluşturmayı geçersiz kılabilirsiniz.
-
-Önbellekteki her şey içeri aktarılmaz. Oluşturucu ve derleyicilerin konumu gibi özellikler, IDE ile birlikte çalışmak üzere bilinen varsayılanlar ile değiştirilmiştir.
 
 ## <a name="open-an-existing-cache"></a>Var olan bir önbelleği aç
 
