@@ -1,57 +1,57 @@
 ---
-title: Visual Studio'da C++ platformlar arası projeler oluşturma
-description: Bu öğreticide, ayarlama, derleme ve hata ayıklama hem Linux hem de Windows hedefleyen Visual Studio'da C++ açık kaynaklı CMake projesi gösterilmektedir.
+title: Visual Studio’da platformlar arası C++ projeleri oluşturma
+description: Bu öğreticide, Visual Studio 'da hem Linux hem de Windows 'u C++ hedefleyen açık kaynaklı bir CMake projesini ayarlama, derleme ve hata ayıklama işlemlerinin nasıl yapılacağı gösterilmektedir.
 author: mikeblome
 ms.topic: tutorial
 ms.date: 03/05/2019
-ms.openlocfilehash: f184cc2ce3eaf3adcc936bd723019956b5b23dc9
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: cd01d5e389bda46fbb05d297ece8e68ef2265725
+ms.sourcegitcommit: c53a3efcc5d51fc55fa57ac83cca796b33ae888f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65220864"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71960721"
 ---
-# <a name="tutorial-create-c-cross-platform-projects-in-visual-studio"></a>Öğretici: Visual Studio'da C++ platformlar arası projeler oluşturma 
+# <a name="tutorial-create-c-cross-platform-projects-in-visual-studio"></a>Öğretici: Visual C++ Studio 'da platformlar arası projeler oluşturma 
 
-Visual Studio C ve C++ geliştirme artık yalnızca Windows için değil. Bu öğreticide, Visual Studio oluşturma veya Visual Studio projeleri oluşturmak zorunda kalmadan CMake tabanlı platformlar arası geliştirme için C++ kullanın. gösterilmektedir. CMakeLists.txt dosyasını içeren bir klasörü açtığınızda Visual Studio IntelliSense derleme ayarlarını yapılandırır ve otomatik olarak. Hızlı düzenleme, oluşturma ve kodunuzu Windows üzerinde yerel olarak hata ayıklama ve ardından aynı Linux'ta, tüm Visual Studio içinden yapmak için yapılandırmayı geçiş yapabilirsiniz.
+Visual Studio C ve C++ geliştirme artık yalnızca Windows için değildir. Bu öğreticide, Visual Studio projeleri oluşturmaya veya C++ oluşturmaya gerek kalmadan CMake tabanlı platformlar arası geliştirme Için Visual Studio 'nun nasıl kullanılacağı gösterilmektedir. CMakeLists. txt dosyasını içeren bir klasörü açtığınızda, Visual Studio IntelliSense ve derleme ayarlarını otomatik olarak yapılandırır. Kodunuzu Windows üzerinde yerel olarak düzenleyebilir, oluşturabilir ve hata ayıklamanıza, sonra da yapılandırmanızı Linux 'ta aynı olacak şekilde, hepsi de Visual Studio içinden geçirebilirsiniz.
 
 Bu öğreticide şunların nasıl yapıladığını öğreneceksiniz:
 
 > [!div class="checklist"]
-> * bir açık kaynak CMake projesini github'dan kopyalama
-> * Projeyi Visual Studio'da açın. 
-> * derleme ve yürütülebilir bir hedef Windows üzerinde hata ayıklama
-> * bir Linux makineye bir bağlantı ekleyin
-> * derleme ve Linux üzerinde aynı hedefi hata ayıklama
+> * GitHub 'dan açık kaynaklı bir CMake projesini kopyalama
+> * Projeyi Visual Studio 'da aç 
+> * Windows üzerinde yürütülebilir bir hedef oluşturma ve hata ayıklama
+> * Linux makinesine bağlantı ekleme
+> * Linux 'ta aynı hedefte derleme ve hata ayıklama
 
-## <a name="prerequisites"></a>Önkoşullar
+## <a name="prerequisites"></a>Prerequisites
 
-- Platformlar arası C++ geliştirme için Visual Studio'yu ayarlama
-    - İlk ihtiyacınız [Visual Studio'nun yüklü](https://visualstudio.microsoft.com/vs/). Ardından, sahip olduğunuz onaylayın **C++ ile masaüstü geliştirme** ve **C++ iş yükleri ile Linux geliştirme** yüklü. Bu en küçük yükleme yalnızca 3 GB, bağlı olarak, indirme hızı yükleme 10 dakikadan fazla sürmez.
-- Platformlar arası C++ geliştirme için bir Linux Makine'yi ayarlayın
-    - Visual Studio, herhangi bir belirli dağıtım Linux gerektirmez. İşletim sistemi Linux (WSL) bir sanal makine, Bulut veya Windows alt sistemi, fiziksel makine üzerinde çalışabilir. Ancak, Bu öğretici için bir grafik ortamı gereklidir; Bu nedenle öncelikle komut satırı işlemleri için tasarlandığından WSL önerilmez.
-    - Linux makinesinde Visual Studio gerektirir araçlar şunlardır: C++ Derleyicileri, GDB, ssh ve zip. Debian tabanlı sistemlerde, bu bağımlılıklar şu şekilde yükleyebilirsiniz.
+- Platformlar arası C++ geliştirme Için Visual Studio 'yu ayarlama
+    - Önce [Visual Studio 'nun yüklü](https://visualstudio.microsoft.com/vs/)olması gerekir. Daha sonra, yüklü **iş yükleriyle C++**  **birlikte C++ masaüstü geliştirme** ve Linux geliştirme hakkında emin olun. Bu minimum yükleme, indirme hızı yüklemenize bağlı olarak 10 dakikadan uzun sürmemelidir.
+- Platformlar arası C++ geliştirme Için bir Linux makinesi ayarlama
+    - Visual Studio, Linux 'un belirli bir dağıtımına gerek yoktur. İşletim sistemi bir fiziksel makinede, bir VM 'de, bulutta veya Linux için Windows alt sisteminde (WSL) çalıştırılabilir. Bununla birlikte, bu öğreticide grafik ortamı gereklidir; Bu nedenle, öncelikli olarak komut satırı işlemleri için tasarlanan WSL önerilmez.
+    - Visual Studio 'Nun Linux makinesinde gerektirdiği araçlar şunlardır: C++ derleyiciler, gdb, SSH, rsync ve zip. BT tabanlı sistemlerde, bu bağımlılıkları aşağıdaki şekilde yükleyebilirsiniz.
     
     ```cmd
-        sudo apt install -y openssh-server build-essential gdb zip
+        sudo apt install -y openssh-server build-essential gdb rsync zip
     ```
-    - Visual Studio, Linux makinesi CMake sunucusu modu (en az 3.8) etkin olan yeni bir sürümüne sahip olmasını gerektirir. Microsoft, üzerinde herhangi bir Linux distro yükleyebileceğiniz CMake Evrensel yapısı oluşturur. En son özelliklere sahip olmasını sağlamak için bu derleme kullanmanızı öneririz. CMake ikili dosyaları alabileceğiniz [CMake Deponun Microsoft çatal](https://github.com/Microsoft/CMake/releases) GitHub üzerinde. O sayfaya gidin ve Linux makinenizde sistem mimarinizle eşleşen sonra yürütülebilir olarak işaretlemek sürümünü karşıdan yükleyin:
+    - Visual Studio, Linux makinesinde sunucu modunun etkin olduğu bir CMake sürümünün (en az 3,8) olmasını gerektirir. Microsoft, herhangi bir Linux 'ta yükleyebileceğiniz bir evrensel CMake derlemesi oluşturur. En son özelliklere sahip olduğunuzdan emin olmak için bu derlemeyi kullanmanızı öneririz. GitHub 'daki [CMake deposunun Microsoft çatalından](https://github.com/Microsoft/CMake/releases) CMake ikili dosyalarını alabilirsiniz. Bu sayfaya gidin ve Linux makinenizde sistem mimarinizle eşleşen sürümü indirin, sonra yürütülebilir olarak işaretleyin:
     
     ```cmd
         wget <path to binary>
         chmod +x cmake-3.11.18033000-MSVC_2-Linux-x86_64.sh
     ```
-    - Komut dosyasını çalıştırmak için seçenekleri görebilirsiniz `-–help`. Kullanmanızı öneririz `–prefix` yükleme belirtmek için seçeneği **/usr/local** yolu, Visual Studio için CMake nerede arar varsayılan konumu olduğundan. Aşağıdaki örnek, Linux x86_64 betik gösterir. Farklı bir hedef platform kullanıyorsanız gerektiği gibi değiştirebilirsiniz. 
+    - Betiği `-–help` ile çalıştırmaya yönelik seçenekleri görebilirsiniz. Visual Studio 'nun CMake 'e baktığı varsayılan konum olduğundan, **/usr/local** yoluna yüklemeyi belirtmek için `–prefix` seçeneğini kullanmanızı öneririz. Aşağıdaki örnekte, Linux-x86_64 betiği gösterilmektedir. Farklı bir hedef platform kullanıyorsanız, gereken şekilde değiştirin. 
     
     ```cmd
         sudo ./cmake-3.11.18033000-MSVC_2-Linux-x86_64.sh --skip-license --prefix=/usr/local
     ```
-- Windows makinenizde yüklü windows için Git.
+- Windows makinenizde yüklü olan Windows için git.
 - Bir GitHub hesabı.
 
-## <a name="clone-an-open-source-cmake-project-from-github"></a>bir açık kaynak CMake projesini github'dan kopyalama
+## <a name="clone-an-open-source-cmake-project-from-github"></a>GitHub 'dan açık kaynaklı bir CMake projesini kopyalama
 
-Bu öğretici, çeşitli farklı uygulamalar için çakışma algılama ve fizik benzetimleri sağlayan, GitHub üzerinde madde işareti fizik SDK'sını kullanır. Bu, derleme ve çalıştırma ek kod yazmak zorunda kalmadan örnek yürütülebilir programlar içerir. Bu öğreticide herhangi bir kaynak kodunun değiştirilmesi değil ya da yapı komut dosyaları. Başlamak için Visual Studio'nun yüklü olduğu bullet3 depoyu github'dan makineye kopyalayın. 
+Bu öğreticide, GitHub üzerinde fizik SDK, çeşitli farklı uygulamalar için çakışma algılama ve fizik simülasyonu sağlayan bir madde Işareti kullanılmaktadır. Ek kod yazmak zorunda kalmadan derleyip çalıştıran örnek yürütülebilir programları içerir. Bu öğretici, kaynak kodların veya derleme betiklerinin hiçbirini değiştirmez. Başlamak için, Visual Studio 'Nun yüklü olduğu makinede bullet3 deposunu GitHub 'dan klonlayın. 
 
 ```cmd
 
@@ -59,139 +59,139 @@ git clone https://github.com/bulletphysics/bullet3.git
 
 ```
 
-1. Visual Studio ana menüden seçin **Dosya > Aç > CMake** ve az önce indirdiğiniz bullet3 deponun kökünde CMakeLists.txt dosyasına gidin.
+1. Visual Studio ana menüsünde **dosya > seçin > CMake** ' i açın ve az önce indirdiğiniz bullet3 deposunun kökündeki CMakeLists. txt dosyasına gidin.
 
-    ![Visual Studio menüsünde Dosya > Aç > CMake](media/cmake-open-cmake.png)
+    ![Dosya > açık > CMake için Visual Studio menüsü](media/cmake-open-cmake.png)
 
-    Klasörü açın hemen sonra klasör yapınız görünmez **Çözüm Gezgini**.
+    Klasörü açtığınızda, klasör yapınız **Çözüm Gezgini**görünür olur.
 
     ![Visual Studio Çözüm Gezgini klasör görünümü](media/cmake-bullet3-solution-explorer.png)
 
-    Bu görünüm mantıksal veya filtrelenmiş bir görünüm değil disk üzerinde tam olarak nedir gösterir. Varsayılan olarak, onu gizli dosya göstermez. 
+    Bu görünüm, mantıksal veya filtrelenmiş bir görünüm değil diskte tam olarak neler olduğunu gösterir. Varsayılan olarak, gizli dosyaları göstermez. 
 
-2. Tuşuna **tüm dosyaları göster** klasördeki tüm dosyaları görmek için düğme.
+2. Klasördeki tüm dosyaları görmek için **tüm dosyaları göster** düğmesine basın.
 
     ![Visual Studio Çözüm Gezgini tüm dosyaları göster düğmesi](media/cmake-bullet3-show-all-files.png)
 
-## <a name="switch-to-targets-view"></a>Hedefleri görünümüne geç
+## <a name="switch-to-targets-view"></a>Hedefler görünümüne geç
 
-CMake kullanan bir klasörü açtığınızda Visual Studio CMake önbellek otomatik olarak oluşturur. Bu işlem, projenize boyutuna bağlı olarak birkaç dakika sürebilir. 
+CMake kullanan bir klasörü açtığınızda, Visual Studio otomatik olarak CMake önbelleğini oluşturur. Bu işlem, projenizin boyutuna bağlı olarak birkaç dakika sürebilir. 
 
-1. İçinde **çıkış penceresine**seçin **çıktıyı Göster** seçip **CMake** önbellek oluşturma işlemi durumunu izlemek için. İşlem tamamlandığında, "hedef bilgilerini ayıklama işlemi tamamlandı" diyor.
+1. **Çıkış penceresi**, **çıktıyı göster** ' i seçin ve ardından önbellek oluşturma Işleminin durumunu izlemek için **CMake** ' i seçin. İşlem tamamlandığında, "hedef bilgileri ayıklama tamamlandı" ifadesini belirtir.
 
-    ![Visual Studio çıkış penceresine adresinden çıkış gösteriliyor](media/cmake-bullet3-output-window.png)
+    ![CMake çıkışının gösterildiği Visual Studio çıkış penceresi](media/cmake-bullet3-output-window.png)
 
-    Bu işlem tamamlandıktan sonra IntelliSense yapılandırılmış, proje oluşturabilir ve uygulamada hata ayıklaması yapabilirsiniz. Visual Studio artık CMakeLists dosyalarında belirtilen hedeflere göre çözümünün mantıksal görünümünü sağlar. 
+    Bu işlem tamamlandıktan sonra, IntelliSense yapılandırılır, proje oluşturabilir ve uygulamada hata ayıklaması yapabilirsiniz. Visual Studio artık CMakeLists dosyalarında belirtilen hedeflere dayalı olarak çözümün mantıksal bir görünümünü sağlayabilir. 
 
-2. Kullanım **çözümler ve klasörler** düğmesine **Çözüm Gezgini** CMake hedefleri görünümüne geçin.
+2. CMake hedefleri görünümüne geçmek için **Çözüm Gezgini** **çözüm ve klasörler** düğmesini kullanın.
 
-    ![Çözümler ve klasörler düğmesi CMake göstermek için Çözüm Gezgini'nde görünümü hedefler](media/cmake-bullet3-show-targets.png)
+    ![CMake hedeflerini göstermek için Çözüm Gezgini çözüm ve klasörler düğmesi](media/cmake-bullet3-show-targets.png)
 
-    Madde işareti SDK'sı için gibi görünüyor, görünümü şu şekildedir:
+    Bu görünüm, madde Işareti SDK 'Sı için şöyle görünür:
 
-    ![Çözüm Gezgini CMake hedefleri görünümü](media/cmake-bullet3-targets-view.png)
+    ![CMake hedeflerini Çözüm Gezgini görünümü](media/cmake-bullet3-targets-view.png)
 
-    Hedefleri görünümü bu kaynağı tabanı olarak daha sezgisel bir görünüm sağlar. Bazı hedefler kitaplıklar ve diğer yürütülebilir dosyalar görebilirsiniz. 
+    Hedefler görünümü bu kaynak tabanında nelerin daha sezgisel bir görünümünü sağlar. Bazı hedeflerin kitaplıkların olduğunu ve başkalarının yürütülebilir olduğunu görebilirsiniz. 
 
-3. Bu dosyalar disk üzerinde bulunabilir olsunlar, kaynak kodu dosyaları görmek için CMake hedefleri görünümü düğümünde genişletin.
+3. Bu dosyaların diskte bulunduğu her yerde kaynak kodu dosyalarını görmek için CMake hedefleri görünümündeki bir düğümü genişletin.
 
-## <a name="set-a-breakpoint-build-and-run"></a>Kesme noktası, derleme ve çalıştırma
+## <a name="add-an-explicit-windows-x64-debug-configuration"></a>Açık bir Windows x64-hata ayıklama yapılandırması ekleme
 
-Bu adımda, madde işareti fizik Kitaplığı gösteren bir örnek program hata ayıklama.
+Visual Studio, Windows için varsayılan bir **x64-hata ayıklama** yapılandırması oluşturur. Yapılandırma, Visual Studio 'nun CMake için hangi platform hedefini kullandığını öğrendiği bir şeydir. Varsayılan yapılandırma diskte temsil değildir. Açıkça bir yapılandırma eklediğinizde, Visual Studio belirttiğiniz tüm yapılandırmaların ayarlarıyla doldurulan CMakeSettings. JSON adlı bir dosya oluşturur. 
+
+1. Araç çubuğundaki yapılandırma açılır listesini tıklayıp **yapılandırmaları Yönet...** öğesini seçerek yeni bir yapılandırma ekleyin.
+
+    ![Yapılandırma açılan eklentisini yönetme](media/cmake-bullet3-manage-configurations.png)
+
+    Bu, [CMake ayarları düzenleyicisini](customize-cmake-settings.md)açar. Yeni bir yapılandırma eklemek için düzenleyicinin sol tarafındaki yeşil artı işaretini seçin. **CMakeSettings 'e yapılandırma Ekle** iletişim kutusu görünür.
+
+    ![CMakeSettings iletişim kutusuna yapılandırma Ekle](media/cmake-bullet3-add-configuration-x64-debug.png)
+
+    Bu iletişim kutusu, Visual Studio 'Ya dahil edilen tüm yapılandırmaların yanı sıra, oluşturabileceğiniz özel yapılandırmaların de gösterir. **X64-hata ayıklama** yapılandırmasını kullanmaya devam etmek istiyorsanız, bu, ilk eklediğiniz ilk olmalıdır. **X64-Debug** ' ı seçin ve **Seç**' e tıklayın. Bu, bir **x64-Debug** yapılandırması Ile CMakeSettings. json dosyasını oluşturur ve yapılandırmayı diske kaydeder. Ad parametresini doğrudan CMakeSettings. JSON içinde değiştirerek, yapılandırlarınız için istediğiniz adları kullanabilirsiniz.
+
+## <a name="set-a-breakpoint-build-and-run-on-windows"></a>Windows üzerinde kesme noktası ayarlama, derleme ve çalıştırma 
+
+Bu adımda, madde Işareti fizik kitaplığını gösteren örnek bir programda hata ayıklaması yapacağız.
   
-1. İçinde **Çözüm Gezgini**AppBasicExampleGui seçin ve genişletin. 
-1. Dosyayı açmak `BasicExample.cpp`. 
-1. Çalışan uygulamada tıkladığınızda, isabet bir kesme noktası ayarlayın. Tıklama olayı, yöntemde yardımcı bir sınıf içinde gerçekleştirilir. Hızla gitmek için:
+1. **Çözüm Gezgini**' de AppBasicExampleGui ' ı seçin ve genişletin. 
+1. Dosyayı açın `BasicExample.cpp`. 
+1. Çalışan uygulamaya tıkladığınızda isabet edilecek bir kesme noktası ayarlayın. Click olayı bir yardımcı sınıf içindeki bir yöntemde işlenir. Hızlıca almak için:
 
-    1. Seçin `CommonRigidBodyBase` , struct `BasicExample` 30 satırı türetilir.
-    1. Sağ tıklatın ve seçin **Tanıma Git**. Üst bilgide CommonRigidBodyBase.h sunulmuştur. 
-    1. Yukarıdaki kaynak tarayıcısı görünümünde olduğunuzu görmelisiniz `CommonRigidBodyBase`. Sağa incelemek için üyeleri seçebilirsiniz. Açılan listeyi tıklatın ve seçin `mouseButtonCallback` , bu işlevin üst bilgisindeki tanımına gidin.
+    1. @No__t-1 @no__t yapısının, 30. satırın etrafında türetildiğinden önce 0 ' ı seçin.
+    1. Sağ tıklayın ve **Tanıma Git**' i seçin. Artık CommonRigidBodyBase. h üst bilgisinde çalışıyorsunuz. 
+    1. Yukarıdaki tarayıcı görünümünde, kaynağınız `CommonRigidBodyBase` ' da olduğunu görmeniz gerekir. Sağ tarafta, incelemek üzere üyeleri seçebilirsiniz. Başlıktaki bu işlevin tanımına gitmek için açılan aşağı tıklayın ve `mouseButtonCallback` ' ı seçin.
 
         ![Visual Studio üye listesi araç çubuğu](media/cmake-bullet3-member-list-toolbar.png)
 
-1. Bu işlevdeki ilk satırında bir kesme noktası koyun. Visual Studio hata ayıklayıcı altında başlatıldığında uygulama penceresi içinde bir fare düğmesine tıkladığınızda bu erişilecektir.
+1. Bu işlevin içindeki ilk satıra bir kesme noktası koyun. Bu, Visual Studio hata ayıklayıcısı altında başlatıldığında uygulamanın penceresinde bir fare düğmesine tıkladığınızda bu sonucu alırsınız.
 
-1. Uygulamayı başlatmak için araç çubuğunda "Başlangıç öğesi seçin" ifadesini içeren oynatma simgesine ile açılan Başlat'ı seçin. Aşağı açılan select AppBasicExampleGui.exe. Yürütülebilir adı Şimdi Başlat düğmesine görüntüler:
+1. Uygulamayı başlatmak için, araç çubuğunda "başlangıç öğesini seç" diyen Play simgesiyle Başlat açılan simgesini seçin. Açılan kutuda AppBasicExampleGui. exe ' yi seçin. Yürütülebilir dosya adı Şimdi Başlat düğmesinde görüntülenir:
 
-    ![Visual Studio araç başlangıç öğesini seçmek için aşağı açılan Başlat](media/cmake-bullet3-launch-button.png)
+    ![Başlangıç öğesi seç için Visual Studio araç çubuğu başlatma açılan menüsü](media/cmake-bullet3-launch-button.png)
 
-5.  Gerekli bağımlılıkları ve uygulama oluşturmak için Başlat düğmesine basın ve ardından Visual Studio hata ayıklayıcısı ekli başlatın. Birkaç dakika sonra çalışan uygulamada görünür:
+5.  Uygulamayı ve gerekli bağımlılıkları oluşturmak için Başlat düğmesine basın, ardından Visual Studio hata ayıklayıcısı ekli olarak başlatın. Birkaç dakika sonra, çalışan uygulama görünür:
 
-    ![Visual Studio hata ayıklama bir Windows uygulaması](media/cmake-bullet3-launched.png)
+    ![Visual Studio bir Windows uygulamasında hata ayıklama](media/cmake-bullet3-launched.png)
 
-6. Uygulama penceresine fareyi hareket ettirin ve kesme noktası tetiklemek için bir düğmeye tıklayın. Bu Visual Studio nerede yürütülmesi duraklatıldı satır gösteren düzenleyiciyle ön plana geri getirir. Uygulama değişkenleri, nesneleri, iş parçacıkları ve bellek incelemek mümkün olacaktır. Etkileşimli olarak kodunuza adım geçebilirsiniz. Tıklayabilirsiniz **devam** sürdürün ve normal çıkış veya Durdur düğmesini kullanarak Visual Studio içinde yürütme sona ermesi izin vermek için.
+6. Farenizi uygulama penceresine taşıyın ve ardından bir düğmeye tıklayarak kesme noktasını tetikleyin. Bu, Visual Studio 'Yu, yürütmenin duraklatıldığı çizgiyi gösteren düzenleyiciyle ön plana geri getirir. Uygulama değişkenlerini, nesneleri, iş parçacıklarını ve belleği inceleyebilirsiniz. Kodunuzda etkileşimli olarak gezinebilirsiniz. Uygulamanın çalışmaya devam etmesini sağlamak için **devam** ' a tıklayabilir veya Durdur düğmesini kullanarak Visual Studio içinde yürütmeyi durduramazsınız.
 
-## <a name="add-an-explicit-windows-x64-debug-configuration"></a>Bir açık Windows x64 hata ayıklama Yapılandırması Ekle
+##  <a name="add-a-linux-configuration-and-connect-to-the-remote-machine"></a>Linux yapılandırması ekleme ve uzak makineye bağlanma
 
-Şu ana kadar varsayılan kullanmakta olduğunuz **x64 hata ayıklama** Windows için yapılandırma. Yapılandırmaları olan Visual Studio platformdan nasıl anlayan giderek CMake için kullanılacak hedef. Varsayılan yapılandırma, diskte temsil değil. Visual Studio, bir yapılandırma açıkça eklediğinizde, belirttiğiniz tüm yapılandırmalar için ayarları ile doldurulur CMakeSettings.json adlı bir dosya oluşturur. 
+1. Şimdi bir Linux yapılandırması ekleyin. **Çözüm Gezgini** görünümünde CMakeSettings. JSON dosyasına sağ tıklayın ve **yapılandırma Ekle**' yi seçin. Daha önce olduğu gibi CMakeSettings iletişim kutusunda aynı yapılandırma Ekle ' ye bakabilirsiniz. Linux ' u seçin-bu kez **hata ayıklayın** , sonra CMakeSettings. json dosyasını kaydedin (Ctrl + s). 
+2. Şimdi yapılandırma açılır penceresinde **Linux-Debug** ' ı seçin.
 
-1. Tıklayarak yeni bir yapılandırma ekleyin yapılandırma araç çubuğundaki açılır ve seçerek **yapılandırmaları Yönet...**
+    ![X64-hata ayıklama ve Linux-hata ayıklama seçenekleri ile yapılandırma açılan eklentisini başlatma](media/cmake-bullet3-linux-configuration-item.png)
 
-    ![Aşağı açılan yapılandırmasını yönetme](media/cmake-bullet3-manage-configurations.png)
+    Bir Linux sistemine ilk kez bağlanıyorsanız, **uzak sistem 'e Bağlan** iletişim kutusu görüntülenir.
 
-    **CMakeSettings yapılandırmasına ekleyin** iletişim kutusu görüntülenir.
+    ![Visual Studio uzak sisteme Bağlan iletişim kutusu](media/cmake-bullet3-connection-manager.png)
 
-    ![Yapılandırma CMakeSettings iletişim kutusuna ekleyin.](media/cmake-bullet3-add-configuration-x64-debug.png)
-
-    Bu iletişim kutusu, oluşturacağınız tüm özel yapılandırmaları yanı sıra, Visual Studio ile birlikte tüm yapılandırmalarını gösterir. Varsayılan kullanmaya devam etmek istiyorsanız **x64 hata ayıklama** yapılandırması, eklediğiniz ilk öğe olmalıdır. Bu yapılandırma öğesini ekleyerek geri ve İleri yapılandırmaları Windows ile Linux arasında geçiş yapabilirsiniz olacaktır. Seçin **x64 hata ayıklama** tıklatıp **seçin**. Bunun için bir yapılandırma ile CMakeSettings.json dosyasına oluşturur **x64 hata ayıklama** ve bu yapılandırma varsayılan yerine kullanılacak Visual Studio geçer. Yapılandırma açılan adının bir parçası artık "(varsayılan)" diyor görürsünüz. Ad parametresindeki doğrudan CMakeSettings.json değiştirerek yapılandırmalarınız için gibi istediğiniz bir adı kullanabilirsiniz.
-
-##  <a name="add-a-linux-configuration-and-connect-to-the-remote-machine"></a>Uzak makineye bağlanın ve Linux yapılandırma Ekle
-
-1. Şimdi bir Linux yapılandırmasına ekleyin. CMakeSettings.json dosyaya sağ **Çözüm Gezgini** görüntüleyebilir ve seçebilir **Yapılandırması Ekle**. Aynı Yapılandırması Ekle iletişim kutusu CMakeSettings önce görürsünüz. Seçin **Linux hata ayıklama** bu kez, sonra CMakeSettings.json dosyasına kaydedin. 
-2. Şimdi seçtiğiniz **Linux hata ayıklama** yapılandırmasında açılır.
-
-    ![Yapılandırmayı açılan X64 hata ayıklama ve Linux hata ayıklama seçenekleri ile Başlat](media/cmake-bullet3-linux-configuration-item.png)
-
-    Bu bir Linux sistemine bağlanırken ilk kez kullanıyorsanız **uzak sisteme Bağlan** iletişim kutusu görüntülenir.
-
-    ![Visual Studio Connect Uzak sistemin iletişim kutusu](media/cmake-bullet3-connection-manager.png)
-
-    Uzak bağlantı eklediyseniz bu pencereyi giderek açabilirsiniz **Araçlar > Seçenekler > Çoklu Platform > Bağlantı Yöneticisi**.
+    Zaten bir uzak bağlantı eklediyseniz, **araçlar > seçenekler > platformlar arası > bağlantı Yöneticisi**' ne giderek bu pencereyi açabilirsiniz.
  
-3. Linux makinenize bağlantı bilgisi sağlamalı ve tıklayın **Connect**. Visual Studio için varsayılan olarak bu makineye CMakeSettings.json seçeceğine ekler **Linux hata ayıklama**. Kullandığınızda, IntelliSense bu makineye belirli alabilmeniz Ayrıca, uzak makineden üstbilgileri aşağı çeker. Visual Studio, dosyaları uzak makineye göndermek, daha sonra CMake önbelleğini oluşturun ve yaptığınızda Visual Studio temel aynı kaynak, uzak Linux makinesinin ile kullanmak için yapılandırılacaktır. Bu adımlar, ağ hızına ve uzak makinenizi gücünü bağlı olarak biraz zaman alabilir. CMake çıkış penceresinde "hedef bilgilerini ayıklama işlemi tamamlandı" iletisi göründüğünde bu işlem tamamlandıktan öğrenmiş olacaksınız.
+3. [Linux makinenize bağlantı bilgilerini girin] (Connect-to-Remote-Linux-computer.md] ve **Bağlan**' a tıklayın. Visual Studio, bu makineyi **Linux-Debug**için varsayılan bağlantınız olarak CMakeSettings. JSON öğesine ekler. Ayrıca, [söz konusu uzak bağlantıya özel IntelliSense](https://docs.microsoft.com/en-us/cpp/linux/configure-a-linux-project?view=vs-2019#remote_intellisense)'i alabilmeniz için uzak makinenizden üstbilgileri çeker. Şimdi Visual Studio, dosyalarınızı uzak makineye gönderir ve uzak sistemde CMake önbelleğini oluşturur. Bu adımlar ağınızın hızına ve uzak makinenizin gücüne bağlı olarak biraz zaman alabilir. CMake çıkış penceresinde "hedef bilgi ayıklama işlemi tamamlandı" iletisi göründüğünde bunun tamamlandığını bilirsiniz.
 
-## <a name="set-a-breakpoint-build-and-run-on-linux"></a>Bir kesme noktası ayarlayın, derleme ve Linux üzerinde çalıştırın
+## <a name="set-a-breakpoint-build-and-run-on-linux"></a>Linux üzerinde bir kesme noktası ayarlayın, derleyin ve çalıştırın
 
-Bu bir masaüstü uygulaması olduğundan, hata ayıklama yapılandırması için bazı ek yapılandırma bilgileri vermeniz gerekir. 
+Bu bir masaüstü uygulaması olduğundan, hata ayıklama yapılandırmasına bazı ek yapılandırma bilgileri sağlamanız gerekir. 
 
-1. CMake hedefleri görünümü AppBasicExampleGui sağ tıklatın ve seçin **hata ayıklama ve başlatma ayarları** gizli launch.vs.json dosyasını açmak için **.vs** alt. Bu dosya, geliştirme ortamınızı yereldir. İçinde ve kaydedin, ekibinizle birlikte iade istiyorsanız, projenizin kök ile taşıyabilirsiniz. Bu dosyada bir yapılandırma için AppBasicExampleGui eklendi. Bu varsayılan ayarları çoğu zaman uyumludur, ancak bu şekilde programını başlatmak için bazı ek bilgiler sağlamanız gereken bir masaüstü uygulaması olduğundan bizim Linux makinesinde görebilirsiniz. 
-2. Ortam değişkeninin değerini bilmeniz gereken `DISPLAY` Linux makinenizde almak için şu komutu çalıştırın.
+1. CMake hedefleri görünümünde AppBasicExampleGui öğesine sağ tıklayın ve **Hata Ayıkla ve başlatma ayarları** ' nı seçerek Hidden **. vs** alt klasöründeki Launch. vs. json dosyasını açın. Bu dosya, geliştirme ortamınız için yereldir. İade etmek ve ekibinizle kaydetmek istiyorsanız, bunu projenizin köküne taşıyabilirsiniz. Bu dosyada AppBasicExampleGui için bir yapılandırma eklenmiştir. Bu varsayılan ayarlar çoğu durumda çalışır, ancak bu bir masaüstü uygulaması olduğu için programı Linux makinemizdeki bir şekilde başlatmak üzere bazı ek bilgiler sağlamanız gerekir. 
+2. Linux makinenizde `DISPLAY` ortam değişkeninin değerini bilmeniz gerekir, bu komutu almak için bu komutu çalıştırın.
 
     ```cmd
     echo $DISPLAY
     ```
 
-    AppBasicExampleGui yapılandırmasında bir parametre dizisi "pipeArgs" yoktur. Burada içinde bir satır olduğundan "${debuggerCommand}". Bu uzak makinede gdb başlatan komuttur. Bu komutu çalıştırmadan önce bu bağlamda ekranını dışarı aktarmak Visual Studio gerekir. Örneğin, ekranınıza değerini: 1, bu satırı aşağıdaki gibi değiştirin:
+    AppBasicExampleGui yapılandırmasında, "pipeArgs" parametre dizisi vardır. İçinde "$ {debuggerCommand}" satırı bulunur. Bu, uzak makinede gdb 'yi Başlatan komuttur. Bu komutu çalıştırmadan önce Visual Studio 'Nun ekranı bu içeriğe dışarı aktarılması gerekir. Örneğin, görüntülerinizin değeri: 1 ise, bu satırı aşağıdaki gibi değiştirin:
 
     ```cmd
     "export DISPLAY=:1;${debuggerCommand}",
     ```
-3. Uygulamamızı hata ayıklama ve başlatma için artık seçim **başlangıç öğesi seçin** açılan araç çubuğunda ve AppBasicExampleGui seçin. Artık bu düğmeyi tuşuna basın veya isabet **F5**. Bu uygulamayı derler ve bağımlılıklarını uzak Linux makinesine sonra Visual Studio hata ayıklayıcısı ekli başlatın. Uzak Linux makinenizde görünür bir uygulama penceresini görmeniz gerekir.
+3. Uygulamamızı başlatmak ve hatalarını ayıklamak için, araç çubuğunda **Başlangıç öğesi Seç** açılan penceresini seçin ve AppBasicExampleGui öğesini seçin. Şimdi bu düğmeye veya **F5**'e basın. Bu işlem, uygulamayı ve onun bağımlılıklarını uzak Linux makinesinde oluşturur ve ardından Visual Studio hata ayıklayıcısı ekli olarak başlatır. Uzak Linux makinenizde bir uygulama penceresi göründüğünü görmeniz gerekir.
 
-4. Uygulama penceresine fareyi hareket ettirin bir düğmeye tıklayın ve kesme noktasına ulaşırsınız. Program yürütme duraklatır, Visual Studio ön plana geri gelir ve, kesme noktasında olacaktır. Ayrıca, Visual Studio'da görünen bir Linux konsol penceresi görmeniz gerekir. Bu pencere, uzak Linux makinesinin çıktısını sağlar ve ayrıca girişi kabul edebilir `stdin`. Tüm Visual Studio penceresi gibi burada görmek tercih ettiğiniz ve konumunu gelecek oturumlarda kalıcı hale sabitlenebilir.
+4. Farenizi uygulama penceresine taşıyın, bir düğmeye tıklayın ve kesme noktası isabet eder. Program yürütme duraklatılır, Visual Studio ön plana geri gelir ve kesme noktasından olursunuz. Ayrıca, Visual Studio 'da bir Linux konsol penceresi göründüğünü görmeniz gerekir. Bu pencere, uzak Linux makinesinden çıkış sağlar ve `stdin` girişi de kabul edebilir. Tüm Visual Studio pencereleri gibi, onu görmeyi tercih ettiğiniz yere yerleştirilebilir ve bu nesnenin konumu gelecekteki oturumlarda kalıcı olacak.
 
     ![Visual Studio Linux konsol penceresi](media/cmake-bullet3-linux-console.png)
 
-5. Kodunuzu etkileşimli olarak Visual Studio kullanarak uygulama değişkenleri, nesneleri, iş parçacıkları, bellek ve adım inceleyebilirsiniz. Ancak bu kez, tüm bu uzak Linux makinesinde yerine yerel Windows ortamınızı yapıyor. Tıklayabilirsiniz **devam** kaldığınız yerden devam edip çıkmak normalde, izin vermek amacıyla veya ile olduğu gibi yerel yürütme Durdur düğmesine basabilirsiniz.
+5. Visual Studio kullanarak uygulama değişkenlerini, nesneleri, iş parçacıklarını, belleği ve kodunuzu etkileşimli olarak inceleyebilirsiniz. Ancak bu sefer, bu kez yerel Windows ortamınız yerine bir uzak Linux makinesinde yapabilirsiniz. Uygulamanın çalışmaya devam etmesini ve normal bir şekilde çıkmasına izin vermek için **devam** ' a tıklayabilir veya yerel yürütmede olduğu gibi Durdur düğmesine de basabilirsiniz.
 
-6. Çağrı yığını penceresinde arayın ve çağrıları görüntülemek `x11OpenGLWindow` beri uygulamanın Linux üzerinde Visual Studio başlatılır.
+6. Çağrı yığını penceresine bakın ve Visual Studio uygulamayı Linux üzerinde başlatmasından sonra `x11OpenGLWindow` ' a yapılan çağrıları görüntüleyin.
 
-    ![Çağrı yığını penceresi Linux çağrı yığınını gösteren](media/cmake-bullet3-linux-callstack.png)
+    ![Linux çağrı yığınını gösteren çağrı yığını penceresi](media/cmake-bullet3-linux-callstack.png)
 
 ## <a name="what-you-learned"></a>Öğrendikleriniz 
 
-Bu öğreticide, doğrudan github'dan kopyalanan ve yerleşik, çalıştırma ve hata ayıklaması Windows üzerinde herhangi bir değişiklik ile temel bir kod gördünüz. Bu kod tabanı küçük yapılandırma değişiklikleriyle gelen, yerleşik, çalıştırın ve Linux makinesinde uzaktan hata ayıklama. 
+Bu öğreticide, doğrudan GitHub 'dan klonlanan ve Windows 'da oluşturulan, çalıştırılan ve hata ayıklamış bir kod temelini hiçbir değişiklik yapmadan gördünüz. Bu, küçük yapılandırma değişiklikleriyle birlikte, uzak bir Linux makinesinde oluşturulan, çalıştırılan ve hata ayıklamakta olan kod tabanına gelmiştir. 
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Yapılandırma ve CMake projeleri Visual Studio'da hata ayıklama hakkında daha fazla bilgi edinin:
+Visual Studio 'da CMake projelerini yapılandırma ve hata ayıklama hakkında daha fazla bilgi edinin:
 
 > [!div class="nextstepaction"]
-> [Visual Studio'da CMake projeleri](cmake-projects-in-visual-studio.md)<br/><br/>
+> [Visual Studio 'da CMake projeleri](cmake-projects-in-visual-studio.md)<br/><br/>
 > [Linux CMake projesi yapılandırma](../linux/cmake-linux-project.md)<br/><br/>
 > [Uzak Linux bilgisayarınıza bağlanma](../linux/connect-to-your-remote-linux-computer.md)<br/><br/>
 > [CMake derleme ayarlarını özelleştirme](customize-cmake-settings.md)<br/><br/>
 > [CMake hata ayıklama oturumlarını yapılandırma](configure-cmake-debugging-sessions.md)<br/><br/>
 > [Linux projenizi dağıtma, çalıştırma ve projenizin hatalarını ayıklama](../linux/deploy-run-and-debug-your-linux-project.md)<br/><br/>
-> [Önceden tanımlanmış CMake yapılandırma başvurusu](cmake-predefined-configuration-reference.md)
+> [CMake önceden tanımlanmış yapılandırma başvurusu](cmake-predefined-configuration-reference.md)
 > 
