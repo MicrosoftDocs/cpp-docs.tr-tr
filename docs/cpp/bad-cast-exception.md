@@ -1,6 +1,6 @@
 ---
 title: bad_cast Özel Durumu
-ms.date: 11/04/2016
+ms.date: 10/04/2019
 f1_keywords:
 - bad_cast
 - bad_cast_cpp
@@ -8,16 +8,16 @@ helpviewer_keywords:
 - exceptions [C++], bad_cast
 - bad_cast keyword [C++]
 ms.assetid: 31eae1e7-d8d5-40a0-9fef-64a6a4fc9021
-ms.openlocfilehash: b40f64671e7c259b7dc04b31a11d20d0fc76c5c4
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 7384394fb53c6aa4bc009a903ba0ed22bf0ed0d6
+ms.sourcegitcommit: c51b2c665849479fa995bc3323a22ebe79d9d7ce
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68242391"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71998777"
 ---
-# <a name="badcast-exception"></a>bad_cast Özel Durumu
+# <a name="bad_cast-exception"></a>bad_cast Özel Durumu
 
-**Bad_cast** tarafından özel durum **dynamic_cast** işleci bir başvuru türüne yapılan başarısız atamanın sonucu olarak.
+**Bad_cast** özel durumu, bir başvuru türüne başarısız bir dönüştürme sonucu olarak **dynamic_cast** işleci tarafından oluşturulur.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -28,18 +28,18 @@ catch (bad_cast)
 
 ## <a name="remarks"></a>Açıklamalar
 
-Arabirimin **bad_cast** olan:
+**Bad_cast** arabirimi:
 
 ```cpp
 class bad_cast : public exception
 ```
 
-Başarısız bir örneği aşağıdaki kodu içeren **dynamic_cast** oluşturan **bad_cast** özel durum.
+Aşağıdaki kod, **bad_cast** özel durumunu oluşturan başarısız bir **dynamic_cast** örneği içerir.
 
 ```cpp
 // expre_bad_cast_Exception.cpp
 // compile with: /EHsc /GR
-#include <typeinfo.h>
+#include <typeinfo>
 #include <iostream>
 
 class Shape {
@@ -65,14 +65,14 @@ int main() {
 }
 ```
 
-Özel durum, atanan nesne (bir Şekil) belirtilen atama türünden (Daire) türetilmediği için oluşturulur. Özel durumdan kaçınmak için bu bildirimleri `main` öğesine ekleyin:
+Cast (bir şekil) nesne belirtilen atama türünden (Daire) türetilmediğinden özel durum oluşturuldu. Özel durumdan kaçınmak için bu bildirimleri `main` öğesine ekleyin:
 
 ```cpp
 Circle circle_instance;
 Circle& ref_circle = circle_instance;
 ```
 
-Ardından algılama atama yönünü ters **deneyin** bloğunu şu şekilde:
+Sonra **TRY** bloğunda dönüştürmenin anlamlı olduğunu aşağıdaki gibi tersine çevirin:
 
 ```cpp
 Shape& ref_shape = dynamic_cast<Shape&>(ref_circle);
@@ -84,38 +84,38 @@ Shape& ref_shape = dynamic_cast<Shape&>(ref_circle);
 
 |Oluşturucu|Açıklama|
 |-|-|
-|[bad_cast](#bad_cast)|Türündeki nesneler için oluşturucu `bad_cast`.|
+|[bad_cast](#bad_cast)|@No__t-0 türündeki nesneler için Oluşturucu.|
 
 ### <a name="functions"></a>İşlevler
 
 |İşlev|Açıklama|
 |-|-|
-|[ne](#what)|TBD|
+|[Yazdırılacak](#what)|TBD|
 
 ### <a name="operators"></a>İşleçler
 
 |İşleç|Açıklama|
 |-|-|
-|[operator=](#op_eq)|Atar bir atama işleci `bad_cast` başka bir nesne.|
+|[işleç =](#op_eq)|Bir `bad_cast` nesnesini diğerine atayan atama işleci.|
 
-## <a name="bad_cast"></a> bad_cast
+## <a name="bad_cast"></a>bad_cast
 
-Türündeki nesneler için oluşturucu `bad_cast`.
+@No__t-0 türündeki nesneler için Oluşturucu.
 
 ```cpp
 bad_cast(const char * _Message = "bad cast");
 bad_cast(const bad_cast &);
 ```
 
-## <a name="op_eq"></a> işleç =
+## <a name="op_eq"></a>işleç =
 
-Atar bir atama işleci `bad_cast` başka bir nesne.
+Bir `bad_cast` nesnesini diğerine atayan atama işleci.
 
 ```cpp
 bad_cast& operator=(const bad_cast&) noexcept;
 ```
 
-## <a name="what"></a> ne
+## <a name="what"></a>Yazdırılacak
 
 ```cpp
 const char* what() const noexcept override;
@@ -123,6 +123,6 @@ const char* what() const noexcept override;
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[dynamic_cast İşleci](../cpp/dynamic-cast-operator.md)<br/>
-[Anahtar Sözcükler](../cpp/keywords-cpp.md)<br/>
+[dynamic_cast işleci](../cpp/dynamic-cast-operator.md)\
+[Anahtar sözcükler](../cpp/keywords-cpp.md)\
 [C++ Özel Durum İşleme](../cpp/cpp-exception-handling.md)

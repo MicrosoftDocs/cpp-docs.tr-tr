@@ -1,18 +1,18 @@
 ---
 title: C++uyumluluk geliştirmeleri
-ms.date: 09/25/2019
+ms.date: 10/04/2019
 description: Visual C++ Studio 'da Microsoft, c++ 20 dil standardı ile tam uygunluğu doğru ilerliyor.
 ms.technology: cpp-language
 author: mikeblome
 ms.author: mblome
-ms.openlocfilehash: 02cf57666c3bffd1adabb912f042f22b71e8d8f5
-ms.sourcegitcommit: 4517932a67bbf2db16cfb122d3bef57a43696242
+ms.openlocfilehash: d313a9a1f9f2bc1aa091935658ca1214f929c048
+ms.sourcegitcommit: c51b2c665849479fa995bc3323a22ebe79d9d7ce
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71816363"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71998891"
 ---
-# <a name="c-conformance-improvements-in-visual-studio"></a>C++Visual Studio 'da uygunluk geliştirmeleri
+# <a name="c-conformance-improvements-in-visual-studio"></a>Visual Studio 2017’deki C++ uyumluluk geliştirmeleri
 
 Microsoft C++ , her yayında uygunluk geliştirmeleri ve hata düzeltmeleri yapar. Bu makalede, ana sürüme ve ardından sürüme göre iyileştirmeler listelenmektedir. Ayrıca, sürüme göre önemli hata düzeltmelerini de listeler. Belirli bir sürümdeki değişikliklere doğrudan geçmek için **Bu makale** listesinde öğesini kullanın.
 
@@ -237,8 +237,8 @@ void f() {
 ### <a name="new-and-updated-standard-library-functions-c20"></a>Yeni ve güncelleştirilmiş standart kitaplık işlevleri (C++ 20)
 
 - `starts_with()` ve `ends_with()` `basic_string` ve `basic_string_view`.
-- ilişkilendirilebilir kapsayıcılar için `contains()`.
-- `list` ve `forward_list` için `remove()`, `remove_if()` ve `unique()` @no__t 5 ' i döndürmektedir.
+- İlişkili kapsayıcılar için `contains()`.
+- `list` ve `forward_list` için `remove()`, `remove_if()` ve `unique()` artık `size_type` değerini döndürüyor.
 - `shift_left()` ve `shift_right()` \<algoritma > eklenir.
 
 
@@ -456,6 +456,10 @@ extern "C" void f(int, int, int, BOOL){}
 ```
 
 Önceki örnekteki hatalardan kaçınmak için, her iki `f` bildiriminde **bool** yerine **bool** kullanın.
+
+### <a name="standard-library-improvements"></a>Standart Kitaplık geliştirmeleri
+
+Standart olmayan üstbilgiler \<stdexcpt. h > ve \<typeınfo. h > kaldırılmıştır. Bunun yerine bunları içeren kod, sırasıyla \<exception > ve \<typeınfo > Standart üstbilgilerini içermelidir.
 
 ## <a name="update_160"></a>Visual Studio 2019 'de hata düzeltmeleri ve davranış değişiklikleri
 
@@ -722,7 +726,7 @@ Sıralanmamış kapsayıcı `reserve` işlevi artık, [LWG 2156](https://cpluspl
 
 - Daha önce, eşzamanlılık kitaplığına geçirilen bazı zaman değerleri, örneğin `condition_variable::wait_for(seconds::max())` ' ı taşırdı. Şimdi düzeltildi, rastgele 29 günlük bir döngüde (altta yatan Win32 API 'Leri tarafından kabul edilen uint32_t milisaniyesi taştı) değiştirilen taşma
 
-- @No__t-0 üstbilgisi artık, genel ad alanında bildirmenin yanı sıra `std` @no__t ad alanında `timespec_get` ' ye doğru şekilde bildirir.
+- @No__t-0ctime > üst bilgisi artık, genel ad alanında bildirmenin yanı sıra `std` ad alanında `timespec` ve `timespec_get` doğru şekilde bildirir.
 
 ### <a name="various-fixes-for-containers"></a>Kapsayıcılar için çeşitli düzeltmeler
 

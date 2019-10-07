@@ -1,15 +1,15 @@
 ---
 title: typeid İşleci
-ms.date: 11/04/2016
+ms.date: 10/04/2019
 helpviewer_keywords:
 - typeid operator
 ms.assetid: 8871cee6-d6b9-4301-a5cb-bf3dc9798d61
-ms.openlocfilehash: b1185f48df4a941eb2a5d81bfa67d07cdf4387d0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 93a2d3c494cd5aadafedcaaae9ec72809d633a4a
+ms.sourcegitcommit: c51b2c665849479fa995bc3323a22ebe79d9d7ce
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62404669"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71998753"
 ---
 # <a name="typeid-operator"></a>typeid İşleci
 
@@ -22,27 +22,27 @@ typeid(expression)
 
 ## <a name="remarks"></a>Açıklamalar
 
-**TypeID** işleci, bir nesnenin çalışma zamanında belirlenecek türü sağlar.
+**TypeId** işleci, çalışma zamanında bir nesne türünün belirlenmesi için izin verir.
 
-Sonucu **TypeID** olduğu bir `const type_info&`. Değer bir başvurudur bir `type_info` temsil eden nesne *türü kimliği* veya türü *ifade*bağlı olarak hangi tür **TypeID** kullanılır. Bkz: [type_info sınıfı](../cpp/type-info-class.md) daha fazla bilgi için.
+**TypeId** 'nin sonucu bir `const type_info&` ' dir. Değer, hangi **TypeId** biçiminin kullanıldığına bağlı olarak, *tür-kimliği* veya *ifadenin*türünü temsil eden `type_info` nesnesine bir başvurudur. Daha fazla bilgi için bkz. [type_info Class](../cpp/type-info-class.md).
 
-**TypeID** işleci yönetilen türlerle (soyut Bildirimciler veya örnekleri) çalışmaz, bkz: [TypeID](../extensions/typeid-cpp-component-extensions.md) alma hakkında bilgi <xref:System.Type> belirli bir türde.
+**TypeId** işleci yönetilen türlerle (soyut Bildirimciler veya örnekler) çalışmaz. Belirtilen türde <xref:System.Type> alma hakkında bilgi için bkz. [TypeId](../extensions/typeid-cpp-component-extensions.md).
 
-**TypeID** işlecinin yaptığı bir l değeri olarak bir çok biçimli bir sınıf türünün uygulandığında bir çalışma zamanı denetimi burada sağlanan statik bilgilerle doğru nesne türü belirlenemiyor. Bu gibi durumlar şunlardır:
+**TypeId** işleci, nesnenin true türünün belirtilen statik bilgilerle belirlenemediği, çok biçimli bir sınıf türünün l değerine uygulandığında bir çalışma zamanı denetimi yapar. Bu gibi durumlar şunlardır:
 
 - Bir sınıf başvurusu
 
-- İle Başvurusu kaldırılmış bir işaretçi \*
+- Bir işaretçi, @no__t ile başvurulduğunu-0
 
-- Bir alt işaretçi (diğer bir deyişle [ ]). (Bir çok biçimli türün işaretçisi ile bir alt simge kullanmanın genellikle güvenli olmadığını unutmayın.)
+- Alt simge işaretçisi (`[ ]`). (Çok biçimli bir tür işaretçisi olan bir alt simge kullanmak güvenli değildir.)
 
-Varsa *ifade* ancak nesne aslında o temel sınıftan türetilmiş bir tür değil bir temel sınıf türüne işaret eden bir `type_info` sonucu türetilmiş sınıf için başvuru. *İfade* çok biçimli bir türe (sanal işlevler içeren bir sınıf) işaret etmelidir. Aksi halde sonuç, `type_info` başvurulan statik sınıf için *ifade*. Ayrıca, işaretçinin işaret ettiği nesnenin kullanılabilmesi için işaretçinin başvurusu kaldırılmalıdır. İşaretçinin başvurusu kaldırılmazsa, sonuç olacaktır `type_info` işaretçisi değil işaret ettiği. Örneğin:
+*İfade* bir temel sınıf türüne işaret ediyorsa, ancak nesne gerçekten o temel sınıftan türetilmiş bir tür ise, türetilmiş sınıf için `type_info` başvurusu elde edilir. *İfade* , polimorfik bir türe (sanal işlevler içeren bir sınıf) işaret etmelidir. Aksi takdirde sonuç, *ifadede*başvurulan statik sınıf için `type_info` ' dır. Ayrıca, işaretçinin işaret ettiği bir nesne olması için işaretçiye başvurulmalıdır. İşaretçinin başvurusunu oluşturmadan sonuç, işaretçinin işaret ettiği, işaretçi için `type_info` olur. Örneğin:
 
 ```cpp
 // expre_typeid_Operator.cpp
 // compile with: /GR /EHsc
 #include <iostream>
-#include <typeinfo.h>
+#include <typeinfo>
 
 class Base {
 public:
@@ -63,9 +63,9 @@ int main() {
 }
 ```
 
-Varsa *ifade* bir işaretçinin başvurusunu kaldırıyorsa ve işaretçinin değeri sıfır ise **TypeID** oluşturur bir [bad_typeid özel durumu](../cpp/bad-typeid-exception.md). İşaretçi geçerli bir nesneye işaret etmiyorsa bir `__non_rtti_object` özel durumu oluşturulur, bir hata tetikleyen RTTI'yi analiz etmek için girişimini (erişim ihlali gibi), nesne şekilde geçersiz olduğundan (hatalı işaretçi veya kod derlenmediği ile[GR](../build/reference/gr-enable-run-time-type-information.md)).
+*İfadenin* bir işaretçinin başvurusu varsa ve bu işaretçinin değeri sıfırsa, **TypeId** bir [bad_typeid özel durumu](../cpp/bad-typeid-exception.md)oluşturur. İşaretçi geçerli bir nesneye işaret vermezse, `__non_rtti_object` özel durumu oluşturulur. Nesne bir biçimde geçersiz olduğu için bir hata tetikleyen RTTı çözümleme girişimi olduğunu gösterir. (Örneğin, bu hatalı bir işaretçidir veya kod [/gr](../build/reference/gr-enable-run-time-type-information.md)ile derlenmedi).
 
-Varsa *ifade* bir işaretçi ya da bir temel sınıf nesnenin bir başvuru değil sonucu olan bir `type_info` statik türünü temsil eden başvuru *ifade*. *Statik tür* derleme zamanında bilinen bir ifade, ifadenin türü gösterir. Yürütme semantikleri, bir ifadenin statik türü değerlendirilirken göz ardı edilir. Ayrıca, bir ifadenin statik türü belirlenirken, mümkün olduğunca başvurular da dikkate alınmaz:
+*İfade* , nesnenin temel sınıfına bir başvuru değil, bir işaretçi değilse sonuç, *ifadenin*statik türünü temsil eden bir `type_info` başvurusudur. Bir ifadenin *statik türü* , derleme zamanında bilinen bir ifadenin türüne başvurur. Yürütme semantikleri, bir ifadenin statik türü değerlendirilirken göz ardı edilir. Ayrıca, bir ifadenin statik türü belirlenirken, mümkün olduğunca başvurular da dikkate alınmaz:
 
 ```cpp
 // expre_typeid_Operator_2.cpp
@@ -77,7 +77,7 @@ int main()
 }
 ```
 
-**typeid** şablonlarında bir şablon parametresinin türünü belirlemek için de kullanılabilir:
+**TypeId** , şablon parametresinin türünü belirleyebilmek için şablonlarda de kullanılabilir:
 
 ```cpp
 // expre_typeid_Operator_3.cpp
@@ -92,5 +92,5 @@ T max( T arg1, T arg2 ) {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Çalışma Zamanı Tür Bilgileri](../cpp/run-time-type-information.md)<br/>
+[Çalışma zamanı tür bilgileri](../cpp/run-time-type-information.md)\
 [Anahtar Sözcükler](../cpp/keywords-cpp.md)
