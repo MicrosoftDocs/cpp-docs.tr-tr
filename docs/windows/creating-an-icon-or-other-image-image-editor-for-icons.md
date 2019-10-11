@@ -272,7 +272,7 @@ Bir bit eşlem oluşturduğunuzda, görüntü bit eşlem biçiminde (. bmp) olu�
 
 1. Gerektiğinde yeni bit eşleminiz üzerinde değişiklik yapın.
 
-1. Bit eşlem hala **görüntü düzenleyicisinde**açıkken, menü **dosyası** >  ***dosya adı*. bmp dosyasını olarak kaydet**' e gidin.
+1. Bit eşlem hala **görüntü düzenleyicisinde**açıkken, menü **dosyası** > **e gidin. *dosya adı*. bmp dosyasını olarak kaydet**'
 
 1. **Dosyayı farklı kaydet** iletişim kutusunda, dosyaya vermek istediğiniz adı ve dosya **adı** kutusunda istediğiniz dosya biçimini belirten uzantıyı yazın. Örneğin, *Dosyam. gif*.
 
@@ -287,7 +287,7 @@ GIF veya JPEG görüntülerini **görüntü düzenleyicisinde** açabilir ve bun
 
 1. Görüntüyü **görüntü düzenleyicisinde**açın.
 
-1. Menü **dosyası** > dosya ***adını* farklı kaydet**' e gidin.
+1. Menü **dosyası** > **dosya *adını* farklı kaydet**' e gidin.
 
 1. **Dosyayı farklı kaydet** iletişim kutusunda, **dosya adı** kutusuna istediğiniz biçimi gösteren dosya adını ve uzantıyı yazın.
 

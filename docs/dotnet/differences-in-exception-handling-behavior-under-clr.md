@@ -5,14 +5,14 @@ helpviewer_keywords:
 - EXCEPTION_CONTINUE_EXECUTION macro
 - set_se_translator function
 ms.assetid: 2e7e8daf-d019-44b0-a51c-62d7aaa89104
-ms.openlocfilehash: b84c51bc6adbb4fd879aadbca2856887e51fc401
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 2e307bbbf79e6340d4090e471fe643726b5366f9
+ms.sourcegitcommit: a9f1a1ba078c2b8c66c3d285accad8e57dc4539a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69501237"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "72037805"
 ---
-# <a name="differences-in-exception-handling-behavior-under-clr"></a>/CLR Altında Özel Durum İşleme Farkları
+# <a name="differences-in-exception-handling-behavior-under-clr"></a>/CLR altında özel durum Işleme davranışındaki farklılıklar
 
 [Yönetilen özel durumları kullanmaya Ilişkin temel kavramlar](../dotnet/basic-concepts-in-using-managed-exceptions.md) yönetilen uygulamalarda özel durum işlemeyi tartışır. Bu konuda, özel durum işlemenin standart davranışından ve bazı kısıtlamaların farkları ayrıntılı bir şekilde ele alınmıştır. Daha fazla bilgi için bkz. [_set_se_translator işlevi](../c-runtime-library/reference/set-se-translator.md).
 
@@ -88,7 +88,7 @@ int main() {
 }
 ```
 
-### <a name="output"></a>Çıkış
+### <a name="output"></a>Çıktı
 
 ```Output
 Caught a nested exception
@@ -97,7 +97,7 @@ We should execute this handler if compiled to native
 
 ##  <a name="vccondisassociatedrethrows"></a>İlişkilendirilirken yeniden oluşturur
 
-**/clr** , bir catch işleyicisi dışında özel durum yeniden üretilmesini desteklemez (ilişkilendirici yeniden oluşturma olarak bilinir). Bu tür özel durumlar standart C++ bir Rethrow olarak değerlendirilir. Etkin yönetilen bir özel durum olduğunda ilişkilendirmeden yeniden oluşturma ile karşılaşılırsa, özel durum C++ özel durum olarak sarmalanır ve yeniden oluşturulur. Bu türün özel durumları yalnızca türünde <xref:System.Runtime.InteropServices.SEHException>bir özel durum olarak yakalanalabilir.
+**/clr** , bir catch işleyicisi dışında özel durum yeniden üretilmesini desteklemez (ilişkilendirici yeniden oluşturma olarak bilinir). Bu tür özel durumlar standart C++ bir Rethrow olarak değerlendirilir. Etkin yönetilen bir özel durum olduğunda ilişkilendirmeden yeniden oluşturma ile karşılaşılırsa, özel durum C++ özel durum olarak sarmalanır ve yeniden oluşturulur. Bu türün özel durumları yalnızca <xref:System.Runtime.InteropServices.SEHException> türünde bir özel durum olarak yakalanmalıdır.
 
 Aşağıdaki örnek C++ özel durum olarak yeniden oluşturulan yönetilen özel durumu gösterir:
 
@@ -141,7 +141,7 @@ int main() {
 }
 ```
 
-### <a name="output"></a>Çıkış
+### <a name="output"></a>Çıktı
 
 ```Output
 caught an SEH Exception
@@ -149,7 +149,7 @@ caught an SEH Exception
 
 ##  <a name="vcconexceptionfiltersandexception_continue_execution"></a>Özel durum filtreleri ve EXCEPTION_CONTINUE_EXECUTION
 
-Bir filtre yönetilen bir `EXCEPTION_CONTINUE_EXECUTION` uygulamada döndürüyorsa, filtre döndürülen `EXCEPTION_CONTINUE_SEARCH`gibi değerlendirilir. Bu sabitler hakkında daha fazla bilgi için bkz. [try-except deyimleri](../cpp/try-except-statement.md).
+Bir filtre yönetilen bir uygulamada `EXCEPTION_CONTINUE_EXECUTION` döndürürse, filtre,-1 @no__t döndürüldüğünden kabul edilir. Bu sabitler hakkında daha fazla bilgi için bkz. [try-except deyimleri](../cpp/try-except-statement.md).
 
 Aşağıdaki örnek bu farkı göstermektedir:
 
@@ -182,7 +182,7 @@ int main() {
 }
 ```
 
-### <a name="output"></a>Çıkış
+### <a name="output"></a>Çıktı
 
 ```Output
 Counter=-3
@@ -190,7 +190,7 @@ Counter=-3
 
 ##  <a name="vcconthe_set_se_translatorfunction"></a>_Set_se_translator Işlevi
 
-Bir çağrısıyla `_set_se_translator`ayarlanan Translator işlevi, yalnızca yönetilmeyen koddaki catch 'i etkiler. Aşağıdaki örnekte bu sınırlama gösterilmektedir:
+@No__t-0 ' a bir çağrı tarafından ayarlanan Translator işlevi yalnızca yönetilmeyen koddaki catch 'i etkiler. Aşağıdaki örnekte bu sınırlama gösterilmektedir:
 
 ```cpp
 // clr_exception_handling_8.cpp
@@ -267,7 +267,7 @@ int main( int argc, char ** argv ) {
 }
 ```
 
-### <a name="output"></a>Çıkış
+### <a name="output"></a>Çıktı
 
 ```Output
 This is invoked since _set_se_translator is not supported when /clr is used
@@ -277,6 +277,6 @@ Caught an SEH exception with exception code: e0000101
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Özel Durum İşleme](../extensions/exception-handling-cpp-component-extensions.md)<br/>
+[Özel durum Işleme](../extensions/exception-handling-cpp-component-extensions.md)<br/>
 [safe_cast](../extensions/safe-cast-cpp-component-extensions.md)<br/>
-[Özel Durum İşleme](../cpp/exception-handling-in-visual-cpp.md)
+[MSVC 'de özel durum Işleme](../cpp/exception-handling-in-visual-cpp.md)

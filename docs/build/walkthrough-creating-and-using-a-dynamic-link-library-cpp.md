@@ -194,7 +194,8 @@ Sihirbaz çözümü tamamladığında, oluşturulan proje ve kaynak dosyaları V
 
 Bu üstbilgi dosyası, bir Genelleştirilmiş Fipriaccı sırası oluşturmak için bazı işlevleri bildirir ve bu iki başlangıç değeri verilir. İçin `fibonacci_init(1, 1)` bir çağrı tanıdık fibonaccı numara sırasını oluşturur.
 
-Dosyanın en üstündeki Önişlemci ifadelerine dikkat edin. Bir DLL projesi için yeni proje şablonu, tanımlanan Önişlemci makrolarına ** _ProjectName_&#95;dışarı aktarmalar ekler. Bu örnekte, MathLibrary DLL projeniz oluşturulduğunda Visual Studio **&#95;MATHLIBRARY dışarı aktarmaları** tanımlar.
+Dosyanın en üstündeki Önişlemci ifadelerine dikkat edin. Bir DLL projesi için yeni proje şablonu, tanımlanan Önişlemci makrolarına ** _ProjectName_&#95;
+ihracatdışarı** aktarmalar ekler. Bu örnekte, MathLibrary DLL projeniz oluşturulduğunda Visual Studio **&#95;MATHLIBRARY dışarı aktarmaları** tanımlar.
 
 **MATHLIBRARY&#95;dışarı aktarma** makrosu tanımlandığında, **MATHLIBRARY&#95;API** makrosu işlev bildirimlerinde `__declspec(dllexport)` değiştiricisini ayarlar. Bu değiştirici, derleyiciye ve bağlayıcıya, DLL 'den diğer uygulamalar tarafından kullanılmak üzere bir işlev veya değişken dışarı aktarmayı söyler. **&#95;MATHLIBRARY dışarı aktarmalar** tanımsız olduğunda, örneğin, üstbilgi dosyası bir istemci uygulaması tarafından dahil edildiğinde, `__declspec(dllimport)` **&#95;MATHLIBRARY API 'si** bildirime değiştiricisini uygular. Bu değiştirici, bir uygulamadaki işlevin veya değişkenin içe aktarımını iyileştirir. Daha fazla bilgi için bkz. [dllexport, dllimport](../cpp/dllexport-dllimport.md).
 

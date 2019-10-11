@@ -157,7 +157,7 @@ Bir arabirime özellik eklemek için bu sihirbazı kullanın.
 
 - `helpstring`
 
-  Uygulandığı öğeyi anlatmak için kullanılan bir karakter dizesini belirtir. Varsayılan olarak, `property`&nbsp;*özellikadı&nbsp;* olarak ayarlanır. *MIDL başvurusunda* [HelpString](/windows/win32/Midl/helpstring) ' i inceleyin.
+  Uygulandığı öğeyi anlatmak için kullanılan bir karakter dizesini belirtir. Varsayılan olarak, `property`&nbsp;*özellikadı&nbsp; olarak ayarlanır*. *MIDL başvurusunda* [HelpString](/windows/win32/Midl/helpstring) ' i inceleyin.
 
 ### <a name="other-options"></a>Diğer seçenekler
 

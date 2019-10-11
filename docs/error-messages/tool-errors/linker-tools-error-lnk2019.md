@@ -7,108 +7,112 @@ helpviewer_keywords:
 - nochkclr.obj
 - LNK2019
 - _check_commonlanguageruntime_version
-ms.openlocfilehash: eb28ff3673c054b8ac1876d8ba736ceddfa5fd1a
-ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
+ms.openlocfilehash: 3c4e5578c7b0f496feb4d40933af624f462a31d2
+ms.sourcegitcommit: 680a155cc44a38f88bb2b1c5a1ef6dcb7141c011
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66449607"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72252628"
 ---
 # <a name="linker-tools-error-lnk2019"></a>Bağlayıcı Araçları Hatası LNK2019
 
-Çözümlenmemiş dış Sembol '*sembol*'işlevinde başvurulan'*işlevi*'
+çözümlenmemiş dış sembol '*symbol*', '*Function*' işlevinde başvuruluyor
 
-Derlenmiş kodunu *işlevi* bir başvurusu veya çağrı yapar *sembol*, ancak herhangi bir bağlayıcıya belirtilen nesne dosyaları ve kitaplıkları sembol tanımlı değil.
+*İşlev* için derlenen kod, bir başvuru veya *simgeye*çağrı yapar, ancak bu sembol bağlayıcı için belirtilen kitaplıkların veya nesne dosyalarının hiçbirinde tanımlı değildir.
 
-Bu hata iletisini önemli hata tarafından izlenir [LNK1120](../../error-messages/tool-errors/linker-tools-error-lnk1120.md). Tüm LNK2001 ve LNK2019 LNK1120 hatayı düzeltmek için hataları düzeltmeniz gerekir.
+Bu hata iletisi, önemli hata [LNK1120](../../error-messages/tool-errors/linker-tools-error-lnk1120.md)tarafından izlenir. Hata LNK1120 'yi onarmak için tüm LNK2001 ve LNK2019 hatalarını çözmeniz gerekir.
 
 ## <a name="possible-causes"></a>Olası nedenler
 
-Bu hatayı almak için birçok yolu vardır, ancak bunların tümünü bir işlev ya da bağlayıcı olamaz değişken başvuru içeren *çözmek*, veya bir tanımı için bulunamadı. Bir sembol olmadığında derleyici tanımlayabilirsiniz *bildirilen*, ancak değil zaman *tanımlanan*, tanımı farklı kaynak dosya veya kitaplık içinde olabilir. Bir sembol başvurulan ancak hiçbir zaman tanımlanmış, bağlayıcı çözümlenmemiş dış sembol hata üretir.
+Bu hatayı almanın pek çok yolu vardır, ancak hepsi bağlayıcının *çözememesi*veya bir tanımı bulmak için bir işlev veya değişken başvurusu içerir. Derleyici, bir simgenin ne zaman *bildirilmemiş*olduğunu ancak *tanımlanmadığında*, tanım farklı bir kaynak dosyasında veya kitaplıkta olabileceğinden tanımlayabilir. Bir sembolle bahsedildiğinde ancak hiç tanımlanmamışsa, bağlayıcı çözümlenmemiş bir dış sembol hatası oluşturur.
 
-LNK2019 neden bazı yaygın sorunlar aşağıda verilmiştir:
+LNK2019 neden olan bazı yaygın sorunlar şunlardır:
 
-### <a name="the-object-file-or-library-that-contains-the-definition-of-the-symbol-is-not-linked"></a>Nesne dosyası veya sembolün tanımını içeren kitaplık bağlı değil
+### <a name="the-object-file-or-library-that-contains-the-definition-of-the-symbol-is-not-linked"></a>Simgenin tanımını içeren nesne dosyası veya kitaplık bağlı değil
 
-Visual Studio'da, tanımını içeren kaynak dosyasını oluşturulan ve projenizin bir parçası olarak bağlı olduğunu doğrulayın. Komut satırında tanımını içeren kaynak dosyayı derlenir ve ortaya çıkan nesne dosyası bağlamak için dosya listesinde bulunduğunu doğrulayın.
+Visual Studio 'da, tanımı içeren kaynak dosyanın projenizin bir parçası olarak oluşturulup bağlandığını doğrulayın. Komut satırında, tanımı içeren kaynak dosyanın derlendiğini ve elde edilen nesne dosyasının bağlanacak dosya listesine eklendiğinden emin olun.
 
-### <a name="the-declaration-of-the-symbol-is-not-spelled-the-same-as-the-definition-of-the-symbol"></a>Sembolün bildirimi simgesinin tanımı olarak aynı yazılmış
+### <a name="the-declaration-of-the-symbol-is-not-spelled-the-same-as-the-definition-of-the-symbol"></a>Simgenin bildirimi, simgenin tanımıyla aynı değil
 
-Yazım ve büyük/küçük harf hem bildirim hem de tanımı kullanılır ve her yerde sembol kullanılan çağrılan veya doğrulayın.
+Doğru Yazımın ve büyük harflerin hem bildirimde hem de tanımda ve simgenin kullanıldığı veya çağrıldığı her yerde kullanıldığını doğrulayın.
 
-### <a name="a-function-is-used-but-the-type-or-number-of-the-parameters-do-not-match-the-function-definition"></a>Bir işlev kullanılır, ancak parametre sayısı ve türü, işlev tanımı eşleşmiyor
+### <a name="a-function-is-used-but-the-type-or-number-of-the-parameters-do-not-match-the-function-definition"></a>Bir işlev kullanıldı, ancak parametrelerin türü veya numarası işlev tanımıyla eşleşmiyor
 
-İşlev bildiriminin, tanımının eşleşmesi gerekir. İşlev çağrısı bildirimi eşleşip eşleşmediğini ve bildirim tanımı eşleştiğini doğrulayın. Şablon işlevleri çağıran kod, ayrıca tanımı olarak aynı şablon parametreleri şablon işlev bildirimleri eşleşen olması gerekir. Şablon bildirimi uyuşmazlığı örneği için örnek LNK2019e.cpp örnekler bölümünde bakın.
+İşlev bildiriminin tanımıyla eşleşmesi gerekir. İşlev çağrısının bildirimle eşleştiğini ve bildirimin tanımıyla eşleştiğini doğrulayın. Şablon işlevlerini çağıran kodun Ayrıca, tanımıyla aynı şablon parametrelerini içeren eşleşen şablon işlev bildirimlerine sahip olması gerekir. Şablon bildirimi uyuşmazlığının bir örneği için örnekler bölümünde örnek LNK2019e. cpp bölümüne bakın.
 
-### <a name="a-function-or-variable-is-declared-but-not-defined"></a>Bir işlev veya değişken bildirimi yapıldı ancak tanımlanmadı
+### <a name="a-function-or-variable-is-declared-but-not-defined"></a>Bir işlev veya değişken tanımlanmış ancak tanımlanmamış
 
-Bu genellikle bir üstbilgi dosyasında bir bildirimi var, ancak hiçbir eşleşen tanımı uygulanan anlamına gelir. Uygulama, üye işlevleri veya statik veri üyeleri için sınıf kapsamı Seçici içermesi gerekir. Bir örnek için bkz. [eksik işlev gövdesi veya değişken](../../error-messages/tool-errors/missing-function-body-or-variable.md).
+Bu genellikle bir başlık dosyasında bir bildirimin bulunduğu ancak eşleşen bir tanım uygulandığı anlamına gelir. Üye işlevleri veya statik veri üyeleri için, uygulama sınıf kapsamı seçiciyi içermelidir. Bir örnek için bkz. [eksik Işlev gövdesi veya değişken](../../error-messages/tool-errors/missing-function-body-or-variable.md).
 
-### <a name="the-calling-convention-is-different-between-the-function-declaration-and-the-function-definition"></a>Çağırma kuralı, işlev bildirimi ile işlev tanımı arasında farklıdır
+### <a name="the-calling-convention-is-different-between-the-function-declaration-and-the-function-definition"></a>Çağırma kuralı, işlev bildirimi ve işlev tanımı arasında farklıdır
 
-Çağırma Kuralları ([__cdecl](../../cpp/cdecl.md), [__stdcall](../../cpp/stdcall.md), [__fastcall](../../cpp/fastcall.md), veya [__vectorcall](../../cpp/vectorcall.md)) düzenlenmiş adı bir parçası olarak kodlanır. Çağırma kuralı aynı olduğunu doğrulayın.
+Çağırma kuralları ([__cdecl](../../cpp/cdecl.md), [__stdcall](../../cpp/stdcall.md), [__fastcall](../../cpp/fastcall.md)veya [__vectorcall](../../cpp/vectorcall.md)), düzenlenmiş adın bir parçası olarak kodlanır. Çağırma kuralının aynı olduğunu doğrulayın.
 
-### <a name="a-symbol-is-defined-in-a-c-file-but-declared-without-using-extern-c-in-a-c-file"></a>Bir sembol C dosyasında tanımlanan, ancak C++ dosyasında extern "C" kullanılarak olmadan bildirilen
+### <a name="a-symbol-is-defined-in-a-c-file-but-declared-without-using-extern-c-in-a-c-file"></a>Bir sembol C dosyasında tanımlanır, ancak bir C++ dosyada extern "C" kullanılmadan bildirilmiştir
 
-C derlenmiş bir dosyada tanımlanan semboller sembolleri kullanmadığınız sürece bir C++ dosyasında bildirilen değerinden farklı düzenlenmiş adlarına sahip bir [extern "C"](../../cpp/using-extern-to-specify-linkage.md) değiştiricisi. Bildirimi derleme bağlantı için her simge eşleştiğini doğrulayın. Benzer şekilde, bir C programının tarafından kullanılacak olan C++ dosyasındaki bir simge tanımlarsanız, kullanın `extern "C"` tanımında.
+C olarak derlenen bir dosyada tanımlanan semboller, [extern bir "C"](../../cpp/using-extern-to-specify-linkage.md) değiştiricisi kullanmadığınız sürece C++ dosyada belirtilen sembollere göre farklı düzenlenmiş adlara sahiptir. Bildirimin her bir simgenin derleme bağlantısıyla eşleştiğini doğrulayın. Benzer şekilde, bir C++ dosyada C programı tarafından kullanılacak bir sembol tanımlarsanız, tanımda `extern "C"` ' i kullanın.
 
-### <a name="a-symbol-is-defined-as-static-and-then-later-referenced-outside-the-file"></a>Bir sembol statik olarak tanımlanır ve daha sonra dosyanın dışında başvurulan
+### <a name="a-symbol-is-defined-as-static-and-then-later-referenced-outside-the-file"></a>Bir sembol statik olarak tanımlanır ve daha sonra dosyanın dışında başvurulur
 
-C++, C, aksine [global sabitler](../../error-messages/tool-errors/global-constants-in-cpp.md) sahip `static` bağlantı. Bu sınırlamaya geçici almak için dahil edebileceğiniz `const` başlatmalarının üstbilgi dosya ve o üstbilgisini .cpp dosyalarınızdan veya değişken sabit olmayan hale getirebilir ve ona erişmek için sabit bir başvuru kullanın.
+' C++De, C 'nin aksine, [Global sabitlerin](../../error-messages/tool-errors/global-constants-in-cpp.md) `static` bağlantısı vardır. Bu kısıtlamayı aşmak için, `const` başlatmaları bir üst bilgi dosyasına dahil edebilir ve bu üstbilgiyi. cpp dosyalarınıza ekleyebilir ya da değişkeni sabit olmayan hale getirebilirsiniz ve buna erişmek için sabit bir başvuru kullanabilirsiniz.
 
-### <a name="a-static-member-of-a-class-is-not-defined"></a>Bir sınıfın statik bir üye tanımlanmadı
+### <a name="a-static-member-of-a-class-is-not-defined"></a>Bir sınıfın statik üyesi tanımlı değil
 
-Tek tanım kuralı ihlal veya bir statik sınıf üyesinin benzersiz bir tanımı olmalıdır. Statik sınıf üyesi tanımlı satır içi olamaz, tam olarak nitelenmiş adını kullanarak bir kaynak dosyasında tanımlanmalıdır. Tüm tanımlı değilse, bağlayıcı LNK2019 oluşturur.
+Statik sınıf üyesinin benzersiz bir tanımı olmalıdır veya tek tanım kuralını ihlal eder. Satır içi tanımlanmayan bir statik sınıf üyesi, tam nitelikli adı kullanılarak bir kaynak dosyasında tanımlanmalıdır. Hiç tanımlanmamışsa, bağlayıcı LNK2019 oluşturur.
 
-### <a name="a-build-dependency-is-only-defined-as-a-project-dependency-in-the-solution"></a>Bir derleme bağımlılığı yalnızca çözümdeki proje bağımlılık olarak tanımlanır
+### <a name="a-build-dependency-is-only-defined-as-a-project-dependency-in-the-solution"></a>Derleme bağımlılığı yalnızca çözümde bir proje bağımlılığı olarak tanımlanır
 
-Visual Studio'nun önceki sürümlerinde, bu düzeyde bağımlılık yeterli. Ancak, Visual Studio 2010 ile başlayarak, Visual Studio gerektirir bir [projeden projeye başvuru](/visualstudio/ide/managing-references-in-a-project). Projenize bir projeden projeye başvuru yoksa, bu bağlayıcı hatası alabilirsiniz. Bunu düzeltmek için bir projeden projeye başvuru ekleyin.
+Visual Studio 'nun önceki sürümlerinde bu bağımlılık düzeyi yeterlidir. Ancak Visual Studio 2010 ' den itibaren, Visual Studio bir [projeden projeye başvuru](/visualstudio/ide/managing-references-in-a-project)gerektirir. Projenizde proje başvurusu yoksa, bu bağlayıcı hatasını alabilirsiniz. Bir projeden projeye başvuru ekleyerek bunu düzeltir.
 
-### <a name="you-build-a-console-application-by-using-settings-for-a-windows-application"></a>Bir Windows uygulaması için ayarları kullanarak bir konsol uygulaması oluşturma
+### <a name="an-entry-point-is-not-defined"></a>Bir giriş noktası tanımlı değil
 
-Hata iletisi benzerse **WinMain işlevi başvurulan çözümlenmemiş dış sembol** *işlev_adı*, bağlantıyı kullanarak **/Subsystem: Console** yerine **/SUBSYSTEM:WINDOWS**. Bu ayar hakkında daha fazla bilgi ve bu özellik, Visual Studio'da ayarlamak konusunda yönergeler için bkz. [/Subsystem (alt sistemi belirtin)](../../build/reference/subsystem-specify-subsystem.md).
+Uygulama kodu uygun bir giriş noktası tanımlamalıdır: konsol uygulamaları için `main` veya `wmain`, Windows uygulamaları için `WinMain` veya `wWinMain`. Daha fazla bilgi için bkz. [Main: program başlatması](../../cpp/main-program-startup.md) veya [WinMain işlevi](/windows/win32/api/winbase/nf-winbase-winmain). Özel bir giriş noktası kullanmak için [/Entry (giriş noktası simgesi)](../../build/reference/entry-entry-point-symbol.md) bağlayıcı seçeneğini belirtin. 
 
-### <a name="you-attempt-to-link-64-bit-libraries-to-32-bit-code-or-32-bit-libraries-to-64-bit-code"></a>32 bit kod veya 32-bit kitaplıklarına 64-bit kodu 64-bit kitaplıkları bağlantı girişimi
+### <a name="you-build-a-console-application-by-using-settings-for-a-windows-application"></a>Bir Windows uygulaması için ayarları kullanarak bir konsol uygulaması oluşturursunuz
 
-Kitaplıkları ve kodunuzu bağlı nesne dosyaları kodunuz aynı mimarisine derlenmiş olmalıdır. Doğrulayın projenizin başvurularına projeniz gibi aynı mimarisi için derlenen kitaplıkları. Emin [/Libpath](../../build/reference/libpath-additional-libpath.md) veya **ek kitaplık dizinleri** kitaplıklarına doğru bir mimari için bağlayıcı noktaları tarafından kullanılan yolu seçeneği.
+Hata iletisi **çözümlenmemiş dış sembol function_name ' de başvuruluyorsa**,/Subsystem: **WINDOWS**yerine **/Subsystem: Console** komutunu kullanarak bağlayın. Bu ayar hakkında daha fazla bilgi ve Visual Studio 'da bu özelliğin nasıl ayarlanacağı hakkında yönergeler için bkz. [/Subsystem (alt sistemi belirt)](../../build/reference/subsystem-specify-subsystem.md).
 
-### <a name="you-use-different-compiler-options-for-function-inlining-in-different-source-files"></a>Farklı kaynak dosyalarında işlevi satır içi kullanım için farklı derleyici seçenekleri kullanın
+### <a name="you-attempt-to-link-64-bit-libraries-to-32-bit-code-or-32-bit-libraries-to-64-bit-code"></a>64 bitlik kitaplıkları 32 bit koda veya 32-bit kitaplıklarına 64-bit koda bağlamayı denediğinizde
 
-Satır içine alınmış işlevleri kullanarak .cpp dosyalarında tanımlanan ve işlev satır içi derleyici seçenekleri farklı kaynak dosyalarında karıştırma LNK2019 neden olabilir. Daha fazla bilgi için [işlevi satır içi kullanım sorunları](../../error-messages/tool-errors/function-inlining-problems.md).
+Kodunuza bağlı kitaplıklar ve nesne dosyaları, kodunuzla aynı mimari için derlenmelidir. Projenizin başvurduğu kitaplıkların, projenizle aynı mimari için derlendiğini doğrulayın. Bağlayıcı tarafından kullanılan [/LIBPATH](../../build/reference/libpath-additional-libpath.md) veya **Ek kitaplık dizinleri** yol seçeneğinin doğru mimari için oluşturulan kitaplıklara işaret ettiğini doğrulayın.
 
-### <a name="you-use-automatic-variables-outside-their-scope"></a>Otomatik değişkenler kendi kapsamı dışında kullanın
+### <a name="you-use-different-compiler-options-for-function-inlining-in-different-source-files"></a>Farklı kaynak dosyalarında işlev girişi için farklı derleyici seçenekleri kullanın
 
-Otomatik (işlev kapsamı) değişkenleri yalnızca bu işlevin kapsamında kullanılabilir. Bu değişkenler bildirilemez `extern` ve diğer kaynak dosyalarında kullanılır. Bir örnek için bkz. [otomatik (işlev kapsamı) değişkenleri](../../error-messages/tool-errors/automatic-function-scope-variables.md).
+. Cpp dosyalarında tanımlanmış satır içine alınmış işlevleri kullanma ve farklı kaynak dosyalarındaki işlev satır içi derleyici seçeneklerini karıştırma LNK2019 neden olabilir. Daha fazla bilgi için bkz. [Işlev satır Içi sorunlar](../../error-messages/tool-errors/function-inlining-problems.md).
 
-### <a name="you-call-instrinsic-functions-or-pass-argument-types-to-intrinsic-functions-that-are-not-supported-on-your-target-architecture"></a>İnstrinsic işlevlerini çağıran ya da hedef Mimarinizi desteklenmeyen iç işlevler için bağımsız değişken türleri geçirin
+### <a name="you-use-automatic-variables-outside-their-scope"></a>Otomatik değişkenleri kapsam dışında kullanırsınız
 
-Örneğin, bir iç AVX2 kullanıyorsanız, ancak belirtmeyin [/ARCH:AVX2](../../build/reference/arch-x86.md) derleyici seçeneği, derleyici iç bir dış işlev olduğunu varsayar. Derleyici, bir satır içi yönerge üretmek yerine iç olarak aynı ada sahip bir dış sembol için bir çağrı oluşturur. Bağlayıcı, bu eksik işlev tanımı bulmayı dener LNK2019 oluşturur. Yalnızca yapı içi değerler ve hedef Mimarinizi tarafından desteklenen tür kullandığını doğrulayın.
+Otomatik (işlev kapsamı) değişkenleri yalnızca söz konusu işlevin kapsamında kullanılabilir. Bu değişkenler, `extern` olarak bildirilemez ve diğer kaynak dosyalarında kullanılabilir. Bir örnek için bkz. [Otomatik (Işlev kapsamı) değişkenleri](../../error-messages/tool-errors/automatic-function-scope-variables.md).
 
-### <a name="you-mix-code-that-uses-native-wchart-with-code-that-doesnt"></a>Yerel wchar kullanan kodu karıştırmak\_olmayan kod ile t
+### <a name="you-call-instrinsic-functions-or-pass-argument-types-to-intrinsic-functions-that-are-not-supported-on-your-target-architecture"></a>Instrinsic işlevlerini çağırır veya bağımsız değişken türlerini hedef mimariniz üzerinde desteklenmeyen iç işlevlere geçirin
 
-C++Visual Studio 2005 yapılan yapıldığı dil uyumluluğu iş `wchar_t` varsayılan olarak yerel bir tür. Kullanmalısınız [/Zc:wchar_t-](../../build/reference/zc-wchar-t-wchar-t-is-native-type.md) Visual Studio'nun önceki sürümleri kullanılarak derlenmiş kitaplığı ve nesne dosyaları ile uyumlu bir kod oluşturmak için derleyici seçeneği. Tüm dosyalar aynı kullanarak derlenen varsa **/Zc:wchar\_t** ayarları, türü başvuruları uyumlu türlerine değil çözebilir. Doğrulayın `wchar_t` tarafından kullanılan türleri güncelleştiriliyor veya tutarlı kullanarak tüm kitaplığı ve nesne dosyalarında türleri uyumlu **/ZC: wchar_t** derlediğinizde ayarları.
+Örneğin, bir AVX2 iç kullanır, ancak [/Arch: AVX2](../../build/reference/arch-x86.md) derleyici seçeneğini belirtmezseniz, derleyici, iç öğenin bir dış işlev olduğunu varsayar. Bir satır içi yönerge oluşturmak yerine, derleyici, iç ile aynı ada sahip bir dış simgeye çağrı oluşturur. Bağlayıcı bu eksik işlevin tanımını bulmaya çalıştığında, LNK2019 oluşturur. Yalnızca hedef mimariniz tarafından desteklenen iç bilgileri ve türleri kullandığınızı doğrulayın.
+
+### <a name="you-mix-code-that-uses-native-wchar_t-with-code-that-doesnt"></a>Yerel wchar @ no__t-0T kullanan kodu,
+
+C++Visual Studio 2005 ' de yapılan, varsayılan olarak yerel bir tür olan `wchar_t` ' de gerçekleştirilen dil uyumluluğu işleri. Visual Studio 'nun önceki sürümleri kullanılarak derlenen kitaplık ve nesne dosyalarıyla uyumlu kod oluşturmak için [/Zc: wchar_t-](../../build/reference/zc-wchar-t-wchar-t-is-native-type.md) derleyici seçeneğini kullanmanız gerekir. Tüm dosyalar aynı **/Zc: wchar @ no__t-1T** ayarları kullanılarak derlenmezse, tür başvuruları uyumlu türlere çözümlenmeyebilir. Tüm kitaplık ve nesne dosyalarındaki `wchar_t` türlerinin uyumlu olduğunu, kullanılan türleri güncelleştirerek veya derlerken tutarlı **/Zc: wchar_t** ayarlarını kullanarak doğrulayın.
 
 ## <a name="third-party-library-issues-and-vcpkg"></a>Üçüncü taraf kitaplığı sorunları ve Vcpkg
 
-Bu hatayı görürseniz, bir üçüncü taraf kitaplığı yapınızın bir parçası olarak yapılandırılmaya çalışılırken kullanmayı [Vcpkg](../../vcpkg.md), Visual C++ paketi yükleyip kitaplığı derleme Yöneticisi. Vcpkg destekleyen çok ve artan [üçüncü taraf kitaplıkların listesini](https://github.com/Microsoft/vcpkg/tree/master/ports)ve tüm başarılı derleme için projenizin bir parçası olarak gerekli bağımlılıkları ve yapılandırma özelliklerini ayarlar. Daha fazla bilgi için bkz. ilgili [Visual C++ blogu](https://blogs.msdn.microsoft.com/vcblog/2016/09/19/vcpkg-a-tool-to-acquire-and-build-c-open-source-libraries-on-windows/) gönderin.
+Derlemeniz kapsamında bir üçüncü taraf kitaplığı yapılandırmaya çalışırken bu hatayı görürseniz, kitaplığı yüklemek ve oluşturmak için [Vcpkg](../../vcpkg.md), Visual C++ Package Manager 'ı kullanmayı düşünün. Vcpkg, [üçüncü taraf kitaplıkların](https://github.com/Microsoft/vcpkg/tree/master/ports)büyük ve artan bir listesini destekler ve projenizin bir parçası olarak başarılı derlemeler için gereken tüm yapılandırma özelliklerini ve bağımlılıklarını ayarlar. Daha fazla bilgi için ilgili [görsel C++ blog](https://blogs.msdn.microsoft.com/vcblog/2016/09/19/vcpkg-a-tool-to-acquire-and-build-c-open-source-libraries-on-windows/) gönderisine bakın.
 
 ## <a name="diagnosis-tools"></a>Tanılama araçları
 
-Bağlayıcının belirli sembol tanımı neden bulunamıyor ayırt etmek zor olabilir. Çoğunlukla sorun, derleme tanımını içeren kod eklemediniz veya düzenlenmiş adları dış sembolleri için seçenekler farklı oluşturmuş olduğunuz derleme olmasıdır. Çeşitli araçları ve yardımcı olabilecek seçenekleri LNK2019 hata tanılayın.
+Bağlayıcının belirli bir sembol tanımını neden bulamadığına söylemek zor olabilir. Genellikle sorunu, derlemenize tanımı içeren kodu dahil etmeniz veya yapı seçeneklerinde dış semboller için farklı düzenlenmiş adlar oluşturulmamasından kaynaklanır. Bir LNK2019 hatasını tanılamanıza yardımcı olabilecek çeşitli araçlar ve seçenekler vardır.
 
-- [/VERBOSE](../../build/reference/verbose-print-progress-messages.md) bağlayıcı seçeneği hangi dosyaların bağlayıcı başvuruları belirlemenize yardımcı olabilir. Bu, simgesinin tanımı içeren dosyanın yapınızda içerilip içerilmeyeceğini doğrulamanıza yardımcı olabilir.
+- [/Verbose](../../build/reference/verbose-print-progress-messages.md) bağlayıcı seçeneği, bağlayıcının başvurduğu dosyaları belirlemenize yardımcı olabilir. Bu, simgenin tanımını içeren dosyanın derlemenize dahil olup olmadığını doğrulamanıza yardımcı olabilir.
 
-- [/EXPORTS](../../build/reference/dash-exports.md) ve [/SEMBOLLER](../../build/reference/symbols.md) seçenekleri **DUMPBIN** yardımcı programı simgelerin, .dll ve nesne veya kitaplık dosyalarında tanımlanan keşfetmenize yardımcı olabilir. Dışarı aktarılan adları eşleşen bağlayıcı arar düzenlenmiş adları düzenlenmiş olduğunu doğrulayın.
+- **Dumpbin** yardımcı programının [/dışarı aktarmalar](../../build/reference/dash-exports.md) ve [/Symbols](../../build/reference/symbols.md) seçenekleri,. dll ve nesne veya kitaplık dosyalarınızda hangi simgelerin tanımlandığını keşfetmenize yardımcı olabilir. Verdiğiniz düzenlenmiş adların, bağlayıcının aradığı düzenlenmiş adlarla eşleştiğinden emin olun.
 
-- **UNDNAME** yardımcı programı, eşdeğer ve dış sembol düzenlenmiş adını gösterebilir.
+- **Undname** yardımcı programı, düzenlenmiş bir ad için, fark edilmemiş dış sembolü gösterebilir.
 
 ## <a name="examples"></a>Örnekler
 
-Birkaç hatayı düzeltme hakkında bilgi ile birlikte bir LNK2019 hatasına neden olur, kod örnekleri aşağıda verilmiştir.
+Hatanın nasıl düzeltileceğiyle ilgili bilgilerle birlikte LNK2019 hatasına neden olan kodun birkaç örneği aşağıda verilmiştir.
 
-### <a name="a-symbol-is-declared-but-not-defined"></a>Bir sembol bildirimi yapıldı ancak tanımlanmadı
+### <a name="a-symbol-is-declared-but-not-defined"></a>Bir sembol tanımlanmış ancak tanımlanmamış
 
-Bu örnekte, bir dış değişken bildirimi yapıldı ancak tanımlanmadı:
+Bu örnekte, bir dış değişken bildirildiği halde tanımlı değil:
 
 ```cpp
 // LNK2019.cpp
@@ -120,7 +124,7 @@ int main() {
 }
 ```
 
-Burada bir değişken ve işlev bildirilir olarak başka bir örnek `extern` ancak hiçbir tanım sağlanır:
+Bir değişken ve işlevin `extern` olarak bildirildiği, ancak hiçbir tanım sağlanmadığından başka bir örnek aşağıda verilmiştir:
 
 ```cpp
 // LNK2019c.cpp
@@ -135,11 +139,11 @@ void f() {
 int main() {}
 ```
 
-Sürece `i` ve `g` tanımlanır yapıya dahil dosyaları her birinde LNK2019 bağlayıcı oluşturur. Derlemenin bir parçası tanımları içeren kaynak kodu dosyası dahil ederek hataları düzeltebilirsiniz. Alternatif olarak, .obj dosyaları veya bağlayıcı için tanımları içeren .lib dosyaları geçirebilirsiniz.
+@No__t-0 ve `g`, derlemede bulunan dosyalardan birinde tanımlanmamışsa, bağlayıcı LNK2019 oluşturur. Derlemenin bir parçası olarak tanımları içeren kaynak kodu dosyasını ekleyerek hataları giderebilirsiniz. Alternatif olarak, bağlayıcıya tanımları içeren. obj dosyalarını veya. lib dosyalarını geçirebilirsiniz.
 
-### <a name="a-static-data-member-is-declared-but-not-defined"></a>Statik veri üyesi bildirimi yapıldı ancak tanımlanmadı
+### <a name="a-static-data-member-is-declared-but-not-defined"></a>Statik bir veri üyesi tanımlanmış ancak tanımlanmamış
 
-Statik veri üyesine bildirimli ancak tanımlanmamış olduğunda LNK2019 da meydana gelebilir. Aşağıdaki örnek, LNK2019 oluşturur ve bu sorunun nasıl gösterir.
+LNK2019, statik bir veri üyesi bildirildiğinde ancak tanımlanmadığında da gerçekleşebilir. Aşağıdaki örnek LNK2019 oluşturur ve nasıl düzeltileceğini gösterir.
 
 ```cpp
 // LNK2019b.cpp
@@ -158,9 +162,9 @@ int main() {
 }
 ```
 
-### <a name="declaration-parameters-do-not-match-definition"></a>Bildirimi parametreleri tanımıyla eşleşmiyor
+### <a name="declaration-parameters-do-not-match-definition"></a>Bildirim parametreleri tanımıyla eşleşmiyor
 
-Şablon işlevleri çağıran kod, şablonu işlev bildirimleri eşleşen olması gerekir. Bildirimleri tanımı olarak aynı şablon parametrelerine içermelidir. Aşağıdaki örnek bir kullanıcı tanımlı işlecinin LNK2019 oluşturur ve bu sorunun nasıl gösterir.
+Şablon işlevlerini çağıran kodun eşleşen şablon işlevi bildirimleri olmalıdır. Bildirimlerin tanımıyla aynı şablon parametrelerini içermesi gerekir. Aşağıdaki örnek, Kullanıcı tanımlı bir operatör üzerinde LNK2019 oluşturur ve nasıl düzeltileceğini gösterir.
 
 ```cpp
 // LNK2019e.cpp
@@ -188,9 +192,9 @@ int main() {
 }
 ```
 
-### <a name="inconsistent-wchart-type-definitions"></a>Tutarsız wchar_t türü tanımları
+### <a name="inconsistent-wchar_t-type-definitions"></a>Tutarsız wchar_t tür tanımları
 
-Bu örnek kullanan bir dışarı aktarma sahip bir DLL oluşturur `WCHAR`, çözümler için `wchar_t`.
+Bu örnek, `wchar_t` ' i çözümleyen `WCHAR` kullanan dışarı aktarma içeren bir DLL oluşturur.
 
 ```cpp
 // LNK2019g.cpp
@@ -200,7 +204,7 @@ Bu örnek kullanan bir dışarı aktarma sahip bir DLL oluşturur `WCHAR`, çöz
 __declspec(dllexport) void func(WCHAR*) {}
 ```
 
-Sonraki örnek önceki örnekte DLL kullanır ve türleri kısa * ve WCHAR işaretsiz olduğundan LNK2019 oluşturur\* aynı değildir.
+Sonraki örnek, önceki örnekteki DLL 'yi kullanır ve imzasız Short * ve WCHAR @ no__t-0 türleri aynı olmadığından LNK2019 oluşturur.
 
 ```cpp
 // LNK2019h.cpp
@@ -213,9 +217,9 @@ int main() {
 }
 ```
 
-Bu hatayı düzeltmek için değiştirme `unsigned short` için `wchar_t` veya `WCHAR`, veya LNK2019g.cpp kullanarak derleme **/Zc:wchar_t-** .
+Bu hatayı onarmak için `unsigned short` ' ı `wchar_t` veya `WCHAR` olarak değiştirin ya da **/Zc: wchar_t-** kullanarak LNK2019g. cpp öğesini derleyin.
 
 ## <a name="additional-resources"></a>Ek kaynaklar
 
-Stack Overflow soru LNK2001 olası nedenleri ve çözümleri hakkında daha fazla bilgi için bkz. [tanımlanmamış başvuru/çözümlenmemiş dış sembol hata nedir ve nasıl düzeltirim bunu?](https://stackoverflow.com/q/12573816/2002113).
+LNK2001 için olası nedenler ve çözümler hakkında daha fazla bilgi için, [tanımsız bir başvuru/çözümlenmemiş dış sembol hatası nedir ve nasıl giderebilirim?](https://stackoverflow.com/q/12573816/2002113)sorusuna Stack Overflow bakın.
 
