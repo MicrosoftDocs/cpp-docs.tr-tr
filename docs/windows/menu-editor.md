@@ -39,12 +39,12 @@ helpviewer_keywords:
 - commands [C++], deleting from menus
 - menus [C++], deleting
 ms.assetid: 421fb215-6e12-4ec9-a3af-82d77f87bfa6
-ms.openlocfilehash: f2a5f1ac63007bf44dc331e2104c6e9e5cac23da
-ms.sourcegitcommit: 389c559918d9bfaf303d262ee5430d787a662e92
+ms.openlocfilehash: a21ff3ba736bd345e4b8399a761b5a8d9db531ac
+ms.sourcegitcommit: 9aab425662a66825772f091112986952f341f7c8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "69514831"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72444979"
 ---
 # <a name="menu-editor-c"></a>Menü Düzenleyicisi (C++)
 
@@ -59,11 +59,11 @@ Menüler, komutları mantıksal ve kolay bir biçimde düzenlemenizi sağlar. **
 
 ### <a name="to-create-a-standard-menu"></a>Standart bir menü oluşturmak için
 
-1. Menü **görünümü** > **kaynak görünümü** gidin ve **menü** başlığına sağ tıklayın. **Kaynak Ekle**' yi ve ardından **menüyü**seçin.
+1. Menü '  > **diğer Windows** > **kaynak görünümü** **görüntüleyin**ve **menü** başlığına sağ tıklayın. **Kaynak Ekle**' yi ve ardından **menüyü**seçin.
 
 1. Menü çubuğunda **Yeni öğe** kutusunu ( *burada türü*içeren dikdörtgen) seçin.
 
-   ![Menü düzenleyicisinde yeni öğe kutusu](../windows/media/vcmenueditornewitembox.gif "Vcmenueditornewitembox")<br/>
+   ![Menü düzenleyicisinde yeni öğe kutusu](../windows/media/vcmenueditornewitembox.gif "vcMenuEditorNewItemBox")<br/>
    **Yeni öğe** kutusu
 
 1. Yeni menünüzün adını (örneğin, *dosyası*) yazın.
@@ -104,7 +104,7 @@ Mevcut bir menü adı seçin ve **Ekle** tuşuna basın veya menü çubuğuna sa
    > Yazdığınız metin, hem **menü düzenleyicisinde** hem de [Özellikler penceresindeki](/visualstudio/ide/reference/properties-window) **başlık** kutusunda görünür. Yeni menünüzün özelliklerini her iki konumdan de düzenleyebilirsiniz.
 
    > [!TIP]
-   > Kullanıcının menü komutunu seçmesini sağlayan bir anımsatıcı anahtar (kısayol tuşu) tanımlayabilirsiniz. Anımsatıcı olarak belirtmek için`&`bir harfin önüne bir ampersan () yazın. Kullanıcı bu harfi yazarak menü komutunu seçebilir.
+   > Kullanıcının menü komutunu seçmesini sağlayan bir anımsatıcı anahtar (kısayol tuşu) tanımlayabilirsiniz. Anımsatıcı olarak belirtmek için bir harfin önüne bir ampersan (`&`) yazın. Kullanıcı bu harfi yazarak menü komutunu seçebilir.
 
 1. **Özellikler** penceresinde, uygulanan menü komutu özelliklerini seçin. Ayrıntılar için bkz. [menü komut özellikleri](../windows/menu-command-properties.md).
 

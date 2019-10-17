@@ -1,45 +1,45 @@
 ---
-title: 'Nasıl yapılır: MSBuild projelerine özel derleme adımı ekleme'
-ms.date: 11/04/2016
+title: 'Nasıl Yapılır: MSBuild Projelerine Özel Derleme Adımı Ekleme'
+ms.date: 10/16/2019
 helpviewer_keywords:
 - 'msbuild (c++), howto: add a custom build step'
 ms.assetid: a20a0c47-4df4-4754-a1f0-a94a99958916
-ms.openlocfilehash: d70f145a9d43463266a9c0bbff68e8e7f36ef2c6
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: 78d40a5b4a02fe9b065bbbdde33afc6180d75381
+ms.sourcegitcommit: 9aab425662a66825772f091112986952f341f7c8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65220734"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72444923"
 ---
-# <a name="how-to-add-a-custom-build-step-to-msbuild-projects"></a>Nasıl yapılır: MSBuild projelerine özel derleme adımı ekleme
+# <a name="how-to-add-a-custom-build-step-to-msbuild-projects"></a>Nasıl Yapılır: MSBuild Projelerine Özel Derleme Adımı Ekleme
 
-Özel derleme adımı bir derleme kullanıcı tanımlı bir adımdır. Özel derleme adımı diğer gibi davranır *komut aracını* gibi standart derleme veya bağlantı aracı adım adım.
+Özel derleme adımı, bir derlemede Kullanıcı tanımlı bir adımdır. Özel bir yapı adımı, standart derleme veya bağlantı araç adımı gibi diğer tüm *komut aracı* adımıyla aynı şekilde davranır.
 
-Özel derleme adımı, proje dosyası (.vcxproj) belirtin. Bu adım yürütülecek, herhangi bir ek giriş veya çıkış dosyalarını ve görüntülenecek bir ileti bir komut satırı belirtebilirsiniz. Varsa **MSBuild** belirleyen çıktı dosyalarınızı onaylamaz, giriş dosyalarınızın güncel değil, bir ileti görüntüler ve komutu yürütür.
+Proje dosyasında (. vcxproj) özel bir yapı adımı belirtin. Adım, yürütülecek bir komut satırı, herhangi bir ek giriş veya çıkış dosyası ve görüntülenecek bir ileti belirtebilir. **MSBuild** , çıkış dosyalarınızın giriş dosyalarınıza göre güncel olmadığını belirlerse, iletiyi görüntüler ve komutu yürütür.
 
-Özel derleme konumu adım yapı hedefleri sırayla belirtmek için aşağıdakilerden birini veya her ikisini de kullanın `CustomBuildAfterTargets` ve `CustomBuildBeforeTargets` proje dosyasındaki XML öğeleri. Örneğin, özel derleme adımı aracı hedef sonra ve bildirim aracı hedef önce çalıştığı belirtebilirsiniz. Kullanılabilir hedeflerden gerçek kümesi üzerinde belirli yapı bağlıdır.
+Yapı hedefleri dizisinde özel derleme adımının konumunu belirtmek için, proje dosyasında `CustomBuildAfterTargets` ve `CustomBuildBeforeTargets` XML öğelerinden birini veya her ikisini kullanın. Örneğin, özel derleme adımının bağlantı aracı hedefinden sonra ve bildirim aracı hedefinden önce çalışacağını belirtebilirsiniz. Kullanılabilir hedeflerin gerçek kümesi, özel derlemeniz temelinde değişir.
 
-Belirtin `CustomBuildBeforeTargets` belirli bir hedefe çalışmadan önce özel derleme adımı yürütülecek öğesi `CustomBuildAfterTargets` belirli bir hedefe çalıştırıldıktan sonra adım yürütülecek öğesi ya da iki bitişik hedefler arasında adımı yürütmeye yönelik her iki öğesi. Sonra varsayılan konumda hiçbiri ögesi belirliyse, özel derleme aracı yürütür **bağlantı** hedef.
+Belirli bir hedefin çalışması için özel derleme adımını yürütmek üzere `CustomBuildBeforeTargets` öğesini belirtin, belirli bir hedef çalıştıktan sonra adımı yürütmek için `CustomBuildAfterTargets` öğesi ya da iki bitişik hedef arasında adımı yürütmek için her iki öğe. Hiçbiri öğesi belirtilmemişse, özel yapı aracınız varsayılan konumunda yürütülür ve bu, **bağlantı** hedefinden sonra olur.
 
-Özel derleme adımlarını ve özel derleme araçları içinde belirtilen bilgileri paylaşmak `CustomBuildBeforeTargets` ve `CustomBuildAfterTargets` XML öğeleri. Bu nedenle, bu hedefleri, proje dosyanızda yalnızca bir kez belirtin.
+Özel derleme adımları ve özel derleme araçları, `CustomBuildBeforeTargets` ve `CustomBuildAfterTargets` XML öğelerinde belirtilen bilgileri paylaşır. Bu nedenle, bu hedefleri proje dosyanızda yalnızca bir kez belirtin.
 
-### <a name="to-define-what-is-executed-by-the-custom-build-step"></a>Özel derleme adımı tarafından yürütülen tanımlamak için
+### <a name="to-define-what-is-executed-by-the-custom-build-step"></a>Özel derleme adımı tarafından yürütülen öğeleri tanımlamak için
 
-1. Proje dosyasına bir özellik grubuna ekleyin. Bu özellik grubunda, aşağıdaki örnekte gösterildiği gibi komutu, girişleri ve çıkışları ve bir ileti belirtin. Bu örnek, oluşturduğunuz Main.cpp öğesi dosyasından bir .cab dosyası oluşturur. [izlenecek yol: Oluşturmak için MSBuild'ı kullanarak bir C++ proje](walkthrough-using-msbuild-to-create-a-visual-cpp-project.md).
+1. Proje dosyasına bir özellik grubu ekleyin. Bu özellik grubunda, aşağıdaki örnekte gösterildiği gibi, komut, giriş ve çıkış ve bir ileti belirtin. Bu örnek, [Izlenecek yol: MSBuild 'ı kullanarak C++ proje oluşturmak için](walkthrough-using-msbuild-to-create-a-visual-cpp-project.md)oluşturduğunuz Main. cpp dosyasından bir. cab dosyası oluşturur.
 
     ```
     <ItemDefinitionGroup>
       <CustomBuildStep>
         <Command>makecab.exe $(ProjectDir)main.cpp $(TargetName).cab</Command>
         <Outputs>$(TargetName).cab</Outputs>
-        <Inputs>$(TargetFileName)</Inputs>
+        <Inputs>$(ProjectDir)main.cpp</Inputs>
       </CustomBuildStep>
     </ItemDefinitionGroup>
     ```
 
-### <a name="to-define-where-in-the-build-the-custom-build-step-will-execute"></a>Özel derleme adımının yapı burada yürütülür tanımlamak için
+### <a name="to-define-where-in-the-build-the-custom-build-step-will-execute"></a>Yapı içinde özel derleme adımının nerede yürütüleceğini tanımlamak için
 
-1. Aşağıdaki özellik grubu proje dosyasına ekleyin. Her iki hedefleri belirtebilirsiniz veya yalnızca özel adımı öncesinde veya sonrasında belirli bir hedefe yürütmek için isterseniz bir atlayabilirsiniz. Bu örnekte söyler **MSBuild** derleme adımından sonra ancak bağlantı adımdan önce özel adımı gerçekleştirmek için.
+1. Aşağıdaki özellik grubunu proje dosyasına ekleyin. Her iki hedefi de belirtebilirsiniz ya da yalnızca özel adımın belirli bir hedeften önce veya sonra yürütmesini istiyorsanız birini atlayabilirsiniz. Bu örnek, **MSBuild** 'in derleme adımından sonra, bağlantı adımından önce özel adımı gerçekleştirmesini söyler.
 
     ```
     <PropertyGroup>
@@ -50,6 +50,6 @@ Belirtin `CustomBuildBeforeTargets` belirli bir hedefe çalışmadan önce özel
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İzlenecek yol: C++ Projesi Oluşturmak için MSBuild Kullanma](walkthrough-using-msbuild-to-create-a-visual-cpp-project.md)<br/>
-[Nasıl yapılır: MSBuild Projelerinde Derleme Olaylarını Kullanma](how-to-use-build-events-in-msbuild-projects.md)<br/>
-[Nasıl yapılır: MSBuild Projelerine Özel Derleme Araçları Ekleme](how-to-add-custom-build-tools-to-msbuild-projects.md)
+[İzlenecek yol: bir C++ proje oluşturmak Için MSBuild kullanma](walkthrough-using-msbuild-to-create-a-visual-cpp-project.md)<br/>
+[Nasıl Yapılır: MSBuild Projelerinde Derleme Olaylarını Kullanma](how-to-use-build-events-in-msbuild-projects.md)<br/>
+[Nasıl Yapılır: MSBuild Projelerine Özel Derleme Araçları Ekleme](how-to-add-custom-build-tools-to-msbuild-projects.md)

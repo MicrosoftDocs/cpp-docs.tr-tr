@@ -1,17 +1,17 @@
 ---
 title: Derleyici Uyarısı (düzey 4) C4127
-ms.date: 09/13/2018
+ms.date: 10/16/2019
 f1_keywords:
 - C4127
 helpviewer_keywords:
 - C4127
 ms.assetid: f59ded9e-5227-45bd-ac43-2aa861581363
-ms.openlocfilehash: 7f1e23d15d8daa126987278611cb5a85a5a36fc9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bef825f546573b878c415c385e1a2a2286e08db4
+ms.sourcegitcommit: 9aab425662a66825772f091112986952f341f7c8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62401322"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72444911"
 ---
 # <a name="compiler-warning-level-4-c4127"></a>Derleyici Uyarısı (düzey 4) C4127
 
@@ -19,13 +19,13 @@ ms.locfileid: "62401322"
 
 ## <a name="remarks"></a>Açıklamalar
 
-Denetim ifadesi, bir **varsa** deyimi veya **sırada** döngü için bir sabit olarak değerlendirilir. Visual Studio 2015 güncelleştirme 3, 1 gibi Önemsiz sabitleri başlayarak, yaygın kullanılan deyimsel kullanım nedeniyle veya **true** bir ifadede bir işlemin sonucunu olmadıkları sürece uyarı tetiklemez.
+**IF** deyiminin veya **while** döngüsünün denetim ifadesi bir sabit olarak değerlendirilir. Visual Studio 2015 güncelleştirme 3 ' ten başlayarak, ortak bir dizi kullanımı nedeniyle, 1 veya **true** gibi önemsiz sabitler, bir ifadede bir işlemin sonucu olmadıkları sürece uyarıyı tetiklemez.
 
-Varsa, Denetim ifadesi bir **sırada** döngüsü, bir sabit ortadaki döngüden çıkılıp çünkü, değiştirmeyi göz önüne alın **sırada** ile döngü bir **için** döngü. Başlatma, sonlandırma testi atlamak ve döngü gelişiminde bir **için** olması gibi sonsuz bir döngüye neden oluyor döngüsü `while(1)`, ve gövdesinden döngüden çıkabilirsiniz **için** deyimi.
+Döngü ortasında çıkış yaptığından **while** döngüsünün denetim ifadesi bir sabit ise **while** döngüsünü bir **for** döngüsü ile değiştirmeyi göz önünde bulundurun. **For** döngüsünün başlatma, sonlandırma testi ve döngü artışını atlayabilirsiniz, bu da döngünün @no__t gibi sonsuz olmasına neden olur ve **for** ifadesinin gövdesinden döngüden çıkabilirsiniz.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C4127 oluşturulur ve nasıl kullanılacağını gösterir iki yolu gösterir. bir uyarıyı önlemek üzere döngü için:
+Aşağıdaki örnekte, C4127 'in oluşturulduğu iki yol gösterilmektedir ve uyarıyı önlemek için bir for döngüsünün nasıl kullanılacağı gösterilmektedir:
 
 ```cpp
 // C4127.cpp
@@ -41,5 +41,34 @@ int main() {
       printf("test\n");
       break;
    }
+}
+```
+
+Bu uyarı, koşullu ifadede bir derleme zamanı sabiti kullanıldığında da oluşturulabilir:
+
+
+```cpp
+#include <string>
+
+using namespace std;
+
+template<size_t S, class T>
+void MyFunc()
+{
+   if (sizeof(T) >= S) // C4127. "Consider using 'if constexpr' statement instead"
+   {
+   }
+}
+
+class Foo
+{
+   int i;
+   string s;
+};
+
+int main()
+{
+   Foo f;
+   MyFunc<4, Foo>();
 }
 ```
