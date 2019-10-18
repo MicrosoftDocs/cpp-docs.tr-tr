@@ -1,26 +1,30 @@
 ---
-title: Hata ayıklama oturumları Visual Studio'da CMake yapılandırma
+title: Visual Studio 'da CMake hata ayıklama oturumlarını yapılandırma
 ms.date: 03/21/2019
 helpviewer_keywords:
 - CMake debugging
-ms.openlocfilehash: 9899f99994935ec419fff400670644b7d78a190a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 41f53c0c3ea46a8a1aa11215968aaee6c13c2dea
+ms.sourcegitcommit: e33126222c418daf977533ea9e2819d99e0d7b8d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62195528"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72534109"
 ---
-# <a name="configure-cmake-debugging-sessions"></a>Hata ayıklama oturumları CMake yapılandırma
+# <a name="configure-cmake-debugging-sessions"></a>CMake hata ayıklama oturumlarını yapılandırma
 
-Tüm yürütülebilir CMake hedefleri gösterilen **başlangıç öğesi** açılır menüde **genel** araç çubuğu. Hata ayıklama oturumu başlatmak için birini seçin ve hata ayıklayıcıyı başlatın.
+Tüm yürütülebilir CMake hedefleri, **genel** araç çubuğundaki **Başlangıç öğesi** açılır listesinde gösterilir. Bir hata ayıklama oturumu başlatmak için yalnızca birini seçip hata ayıklayıcıyı başlatın.
 
-![CMake başlangıç öğesi açılan](media/cmake-startup-item-dropdown.png "CMake başlangıç öğesi açılır")
+![CMake başlangıç öğesi açılan kutusu](media/cmake-startup-item-dropdown.png "CMake başlangıç öğesi açılan kutusu")
 
-CMake menülerden bir hata ayıklama oturumu da başlatabilirsiniz.
+Ayrıca, Çözüm Gezgini bir hata ayıklama oturumu başlatabilirsiniz. İlk olarak, **Çözüm Gezgini** penceresinde **CMake hedeflerini göster görünümü** ' ne geçin.
 
-## <a name="customize-debugger-settings"></a>Hata ayıklayıcı ayarları özelleştirme
+![CMake hedefleri görünümü düğmesi](media/cmake-targets-view.png  "CMake hedefleri görünümü menü öğesi")
 
-Herhangi bir yürütülebilir CMake hedef projesinde hata ayıklayıcısı ayarlarını özelleştirmek için belirli CMakeLists.txt dosyasını sağ tıklatın ve seçin **hata ayıklama ve başlatma ayarları**. (Veya bir hedef seçin **hedefleri görünümü** içinde **Çözüm Gezgini**.) CMake hedef alt menüde seçtiğinizde, bir dosya olarak adlandırılan **launch.vs.json** oluşturulur. Bu dosya seçtiğiniz CMake hedef ilgili bilgilerle önceden doldurulur ve program bağımsız değişkenleri veya hata ayıklayıcı türü gibi ek parametreleri belirtmenizi sağlar. Herhangi bir tuşa başvurmak için bir **CMakeSettings.json** dosya, kendisiyle yazdığınızdan `cmake.` içinde **launch.vs.json**. Aşağıdaki örnek, basit bir gösterir **launch.vs.json** değerinde çeker dosya `remoteCopySources` anahtarını **CMakeSettings.json** şu anda seçili yapılandırma dosyası:
+Ardından, herhangi bir yürütülebilir dosyaya sağ tıklayın ve **Hata Ayıkla** veya **Hata Ayıkla ve başlatma ayarları**' nı seçin. **Hata ayıklama** , etkin yapılandırmanıza bağlı olarak seçili hedefte hata ayıklamayı otomatik olarak başlatır. **Hata ayıklama ve başlatma ayarları** , *Launch. vs. JSON* dosyasını açar ve seçili hedef için yeni bir hata ayıklama yapılandırması ekler.
+
+## <a name="customize-debugger-settings"></a>Hata ayıklayıcı ayarlarını özelleştirme
+
+Projenizdeki herhangi bir çalıştırılabilir CMake hedefi için hata ayıklayıcı ayarlarını özelleştirmek için, belirli CMakeLists. txt dosyasına sağ tıklayın ve **Hata Ayıkla ve başlatma ayarları**' nı seçin. (Veya **Çözüm Gezgini**Içinde **hedefler görünümünde** bir hedef seçin.) Alt menüde CMake hedefini seçtiğinizde, **Launch. vs. JSON** adlı bir dosya oluşturulur. Bu dosya, seçtiğiniz CMake hedefi hakkındaki bilgilerle önceden doldurulmuştur ve program bağımsız değişkenleri veya hata ayıklayıcı türü gibi ek parametreler belirtmenize olanak sağlar. **Cmakesettings. JSON** dosyasındaki herhangi bir anahtara başvurmak için, bunu **Launch. vs. JSON**içinde `cmake.` ön yüz. Aşağıdaki örnek, şu anda seçili olan yapılandırma için **Cmakesettings. JSON** dosyasında `remoteCopySources` anahtarının değerini alan basit bir **Launch. vs. JSON** dosyasını gösterir:
 
 ```json
 {
@@ -38,11 +42,11 @@ Herhangi bir yürütülebilir CMake hedef projesinde hata ayıklayıcısı ayarl
 }
 ```
 
-Kaydettiğiniz hemen sonra **launch.vs.json** dosyasının, bir giriş oluşturulduğunu **başlangıç öğesi** Yeni adla açılır. Düzenleyerek **launch.vs.json** dosya, CMake hedefleri herhangi bir sayıda için istediğiniz sayıda hata ayıklama yapılandırması gibi oluşturabilirsiniz.
+**Launch. vs. JSON** dosyasını kaydettikten hemen sonra, **Başlangıç öğesi** açılan listesinde yeni adla bir giriş oluşturulur. **Launch. vs. JSON** dosyasını düzenleyerek, Istediğiniz sayıda CMake hedefi için dilediğiniz sayıda hata ayıklama yapılandırması oluşturabilirsiniz.
 
 ## <a name="support-for-cmakesettings-variables"></a>CMakeSettings değişkenleri için destek
 
- **Launch.vs.JSON** bildirilen değişkenleri destekleyen **CMakeSettings.json** (aşağıya bakın) ve şu anda seçili yapılandırma için geçerli. Ayrıca adlı bir anahtar sahip `currentDir`, ayarlar başlatan uygulamanın yerel bir proje için geçerli dizin:
+ **Launch. vs. JSON** , **cmakesettings. JSON** dosyasında belirtilen değişkenleri destekler (aşağıda görebilirsiniz) ve şu anda seçili yapılandırma için geçerlidir. Ayrıca, yerel bir proje için Başlatan uygulamanın geçerli dizinini ayarlayan `currentDir` adlı bir anahtara sahiptir:
 
 ```json
 {
@@ -54,13 +58,13 @@ Kaydettiğiniz hemen sonra **launch.vs.json** dosyasının, bir giriş oluşturu
 }
 ```
 
-Değerini uygulamayı çalıştırdığınızda `currentDir` benzer bir şeydir
+Uygulamayı çalıştırdığınızda `currentDir` değeri şuna benzer bir şeydir
 
 ```cmd
 C:\Users\satyan\7f14809a-2626-873e-952e-cdf038211175\
 ```
 
-'Cwd' anahtar başlatılırken uygulama uzak bir proje için geçerli dizinini ayarlar. Varsayılan değer: 'için değerlendiren ${debugInfo.defaultWorkingDirectory}' 
+' CWD ' anahtarı, uzak bir proje için Başlatan uygulamanın geçerli dizinini ayarlar. Varsayılan değer ' $ {DebugInfo. defaultWorkingDirectory} ' olarak değerlendirilir 
 
 ```cmd
 /var/tmp/src/bfc6f7f4-4f0f-8b35-80d7-9198fa973fb9/Linux-Debug
@@ -68,10 +72,10 @@ C:\Users\satyan\7f14809a-2626-873e-952e-cdf038211175\
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual Studio'da CMake projeleri](cmake-projects-in-visual-studio.md)<br/>
+[Visual Studio 'da CMake projeleri](cmake-projects-in-visual-studio.md)<br/>
 [Linux CMake projesi yapılandırma](../linux/cmake-linux-project.md)<br/>
 [Uzak Linux bilgisayarınıza bağlanma](../linux/connect-to-your-remote-linux-computer.md)<br/>
 [CMake derleme ayarlarını özelleştirme](customize-cmake-settings.md)<br/>
 [CMake hata ayıklama oturumlarını yapılandırma](configure-cmake-debugging-sessions.md)<br/>
 [Linux projenizi dağıtma, çalıştırma ve projenizin hatalarını ayıklama](../linux/deploy-run-and-debug-your-linux-project.md)<br/>
-[Önceden tanımlanmış CMake yapılandırma başvurusu](cmake-predefined-configuration-reference.md)<br/>
+[CMake önceden tanımlanmış yapılandırma başvurusu](cmake-predefined-configuration-reference.md)<br/>
