@@ -1,26 +1,39 @@
 ---
-title: C++Visual Studio 2015 ve Visual Studio 2019 ikili uyumluluğu
-ms.date: 05/03/2019
+title: C++Visual Studio 2015 ile Visual Studio 2019 arasında ikili uyumluluk
+ms.date: 10/17/2019
 helpviewer_keywords:
 - binary compatibility, Visual C++
 ms.assetid: 591580f6-3181-4bbe-8ac3-f4fbaca949e6
-ms.openlocfilehash: 052874eb9273ee9a9ce1695ffdadedd9911673e1
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: 6365ded349ad08a167b76ca9f6ab43e6e7752987
+ms.sourcegitcommit: 8178d22701047d24f69f10d01ba37490e3d67241
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65449039"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72587898"
 ---
-# <a name="c-binary-compatibility-between-visual-studio-2015-and-visual-studio-2019"></a>C++Visual Studio 2015 ve Visual Studio 2019 ikili uyumluluğu
+# <a name="c-binary-compatibility-between-visual-studio-2015-and-visual-studio-2019"></a>C++Visual Studio 2015 ile Visual Studio 2019 arasında ikili uyumluluk
 
-Visual Studio 2013 ve önceki sürümlerinde, nesne dosyaları (OBJs), statik kitaplıklar (kitaplıklar), dinamik kitaplıkları (DLL'ler) ve derleyici araç takımı ve çalışma zamanı kitaplıkların farklı sürümleri kullanılarak oluşturulan yürütülebilir dosyaların (EXE'ler) arasında ikili uyumluluğu garanti edilmez. 
+Visual Studio 2013 ve önceki sürümlerde, nesne dosyaları (OBJs), statik kitaplıklar (LIBs), dinamik kitaplıklar (dll 'Ler) ve derleme araç takımı ve çalışma zamanı kitaplıklarının farklı sürümleri kullanılarak oluşturulan yürütülebilir dosyalar arasındaki ikili uyumluluk garanti edilmez. 
 
-Visual Studio 2015 ve sonraki sürümlerinde, C++ araç takımı büyük bir sayıdır (v140 Visual Studio 2015 için Visual Studio 2017 v141 yanı sıra, Visual Studio 2019 için v142) 14. Bu, hem çalışma zamanı kitaplıkları hem de ya da derleyici sürümüyle derlenmiş uygulamalar ikili uyumlu olması, yansıtır. Bu, Visual Studio 2015 ile oluşturulan bir üçüncü taraf kitaplığı varsa, Visual Studio 2017 veya Visual Studio 2019 ile oluşturulan bir uygulamadan kullanmak için derlemeniz yok anlamına gelir.
+Visual Studio 2015 ve üzeri sürümlerde, C++ araç takımı ana numarası 14 ' dir (visual Studio 2015 için v140, visual Studio 2017 için V141 ve visual Studio 2019 için v142). Bu, hem çalışma zamanı kitaplıklarının hem de derleyicinin her iki sürümü ile derlenen uygulamaların ikili uyumlu olduğunu yansıtır. Yani, Visual Studio 2015 ile oluşturulmuş üçüncü taraf kitaplığınız varsa, Visual Studio 2017 veya Visual Studio 2019 ile oluşturulmuş bir uygulamadan kullanmak için yeniden derlemenize gerek kalmaz.
 
-Bu kuralın tek özel durumu olan statik kitaplıkların veya ile derlenmiş nesne dosyaları `/GL` derleyici anahtarı ikili uyumlu değildir. 
+Bu kuralın tek istisnası, `/GL` derleyici anahtarıyla derlenen statik kitaplıkların veya nesne dosyalarının ikili uyumlu olmadığı durumdur. 
 
-Desteklenen sürümler MSVC araç, görsel olduğunda bu, farklı ile oluşturulan ikili dosyaları kesinlikle karıştırmayın C++ yeniden dağıtılabilir uygulama çalıştırmalarınızı sürümlerinin herhangi birinin uygulamanız veya tüm kitaplıkları oluşturmak için kullanılan araç takımı önce olamaz kullanır. 
+MSVC araç takımının desteklenen farklı sürümleriyle oluşturulan ikili dosyaları karıştıradığınızda, uygulamanızın üzerinde çalıştığı C++ görsel yeniden dağıtılabilir, uygulamanızı veya kullandığı kitaplıkları oluşturmak için kullanılan araç takımı sürümlerinden herhangi birini kullanmaktan daha eski olamaz. 
+
+## <a name="upgrade-microsoft-visual-c-redistributable-from-visual-studio-2015-or-2017-to-visual-studio-2019"></a>Visual Studio 2015 C++ veya 2017 ' den Visual Studio 'Ya Microsoft Visual Redistributable 'ı yükseltin 2019
+
+İkili uyumluluk korunduk ve ana sürüm (14) Visual Studio 2015, 2017 ve 2019 için Visual C++ yeniden dağıtılabilir için aynı tutulduğundan, her zaman yalnızca bir görsel C++ yeniden dağıtılabilir sürümü yüklenebilir. Daha yeni bir sürüm, daha eski bir sürümün üzerine yazar. Visual Studio 2015 veya 2017 C++ ' den Visual yeniden dağıtılabilir ve sonra 2019 ' i yüklerseniz, 2019 sürümü daha eski bir sürümün üzerine yazılır. En son sürüme güvenlik düzeltmeleri de dahil olmak üzere en yeni özelliklerin ve hata düzeltmelerinin sahip olacağı için, her zaman kullanılabilir en son sürüme yükseltmeyi öneririz.
+
+Benzer şekilde, daha yeni bir sürüme sahip olan bir makineye daha C++ eski bir görsel yeniden dağıtılabilir sürümünü yüklemeye izin vermedik. Zaten 2019 olan C++ bir makinede visual Studio 2015 veya 2017 ' den Visual yeniden dağıtılabilir yükleme, yükleme hatasına neden olur. Hata şuna benzer bir şey şöyle görünür:
+
+```
+*0x80070666 - Another version of this product is already installed. Installation of this version cannot continue. To configure or remove the existing version of this product, use Add/Remove Programs on the Control Panel.*.
+```
+
+Bu hata tasarıma göre yapılır. En yeni birini yüklü tutmanız önerilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual C++ değişiklik geçmişi](../porting/visual-cpp-change-history-2003-2015.md)
+* [Görsel C++ değişiklik geçmişi](../porting/visual-cpp-change-history-2003-2015.md)
+* [Desteklenen en son C++ yeniden dağıtılabilir karşıdan yüklemeler](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads) 

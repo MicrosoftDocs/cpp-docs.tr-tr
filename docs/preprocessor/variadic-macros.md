@@ -1,16 +1,16 @@
 ---
 title: Değişen sayıda makro
-ms.date: 08/29/2019
+ms.date: 10/17/2019
 helpviewer_keywords:
 - variadic macros [C++]
 - __VA_ARGS__ variadic macro specifier
 ms.assetid: 51e757dc-0134-4bb2-bb74-64ea5ad75134
-ms.openlocfilehash: 171ea797adc1e407a8b7ef0592508653f758df64
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: de4d3a7f03f613cb058e564664f01837df23aefb
+ms.sourcegitcommit: 8178d22701047d24f69f10d01ba37490e3d67241
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70216524"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72587890"
 ---
 # <a name="variadic-macros"></a>Değişen sayıda makro
 
@@ -18,9 +18,9 @@ Değişen sayıda bağımsız değişken içeren makrolar, değişken sayıda ba
 
 ## <a name="remarks"></a>Açıklamalar
 
-Değişen sayıda sayıda makro kullanmak için, üç nokta bir makro tanımında son biçimsel bağımsız değişken olarak belirtilebilir ve ek bağımsız değişkenleri eklemek için tanımda `__VA_ARGS__` değiştirme tanımlayıcısı kullanılabilir.  `__VA_ARGS__`, aralarında virgül de dahil olmak üzere üç nokta ile eşleşen tüm bağımsız değişkenlerle değiştirilmiştir.
+Değişen sayıda sayıda makro kullanmak için, üç nokta bir makro tanımında son biçimsel bağımsız değişken olarak belirtilebilir ve ek bağımsız değişkenleri eklemek için `__VA_ARGS__` değiştirme tanımlayıcısı tanımda kullanılabilir.  `__VA_ARGS__`, aralarında virgül de dahil olmak üzere üç nokta ile eşleşen tüm bağımsız değişkenlerle değiştirilmiştir.
 
-C standardı, makronun sondaki virgülden sonra bir ifadeye çözümlenmemesini sağlamak için en az bir bağımsız değişkenin üç noktaya geçirilmesi gerektiğini belirtir. Geleneksel Microsoft C++ uygulama, üç nokta için bir bağımsız değişken geçirilmezse sondaki virgülden geçer.
+C standardı, makronun sondaki virgülden sonra bir ifadeye çözümlenmemesini sağlamak için en az bir bağımsız değişkenin üç noktaya geçirilmesi gerektiğini belirtir. Geleneksel Microsoft C++ uygulama, üç nokta için bir bağımsız değişken geçirilmezse sondaki virgülden geçer. @No__t_0 derleyici seçeneği ayarlandığında, sondaki virgül görüntülenmez.
 
 ## <a name="example"></a>Örnek
 

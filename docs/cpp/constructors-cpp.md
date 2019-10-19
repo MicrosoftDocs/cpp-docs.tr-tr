@@ -1,23 +1,23 @@
 ---
 title: Oluşturucular (C++)
-ms.date: 09/05/2019
+ms.date: 10/17/2019
 helpviewer_keywords:
 - constructors [C++]
 - objects [C++], creating
 - instance constructors
 ms.assetid: 3e9f7211-313a-4a92-9584-337452e061a9
-ms.openlocfilehash: 0e2e3536c8eb0a5b111ff18e43044783ea684f1f
-ms.sourcegitcommit: bf724dfc639b16d5410fab72183f8e6b781338bc
+ms.openlocfilehash: 799be6cfd4b14061ba61586f361dd884ad59224c
+ms.sourcegitcommit: 8178d22701047d24f69f10d01ba37490e3d67241
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71062022"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72587937"
 ---
 # <a name="constructors-c"></a>Oluşturucular (C++)
 
 Sınıf üyelerinin nasıl başlatıldığını özelleştirmek veya sınıfınızın bir nesnesi oluşturulduğunda işlevleri çağırmak için bir *Oluşturucu*tanımlayın. Bir Oluşturucu, sınıfla aynı ada sahip ve dönüş değeri yok. Başlatmayı çeşitli yollarla özelleştirmek için gereken sayıda aşırı yüklenmiş Oluşturucu tanımlayabilirsiniz. Genellikle, oluşturucular, sınıf tanımı veya devralma hiyerarşisi dışındaki kodların sınıfın nesnelerini oluşturabilmesi için genel erişilebilirliği vardır. Ancak bir oluşturucuyu **korumalı** veya **özel**olarak da bildirebilirsiniz.
 
-Oluşturucular, isteğe bağlı olarak bir üye init listesi alabilir. Bu, Oluşturucu gövdesinde değer atamaya kıyasla sınıf üyelerini başlatmanın daha verimli bir yoludur. Aşağıdaki örnekte, üç aşırı yüklü `Box` Oluşturucu içeren bir sınıf gösterilmektedir. Son iki kullanılan üye başlangıç listeleri:
+Oluşturucular, isteğe bağlı olarak bir üye init listesi alabilir. Bu, Oluşturucu gövdesinde değer atamaya kıyasla sınıf üyelerini başlatmanın daha verimli bir yoludur. Aşağıdaki örnek, üç aşırı yüklü Oluşturucu ile `Box` bir sınıf gösterir. Son iki kullanılan üye başlangıç listeleri:
 
 ```cpp
 class Box {
@@ -64,11 +64,11 @@ int main()
 
 - Oluşturucular **satır içi**, [Açık](#explicit_constructors), **arkadaş** veya [constexpr](#constexpr_constructors)olarak belirtilebilir.
 - Oluşturucu **const**, **volatile** veya **const geçici**olarak tanımlanmış bir nesneyi başlatabilir. Nesne, Oluşturucu tamamlandıktan sonra **const** hale gelir.
-- Bir uygulama dosyasında bir Oluşturucu tanımlamak için, başka bir üye işlevi ile olduğu gibi tam adı verin: `Box::Box(){...}`.
+- Bir uygulama dosyasında bir Oluşturucu tanımlamak için, ona diğer herhangi bir üye işlevi gibi tam adı verin: `Box::Box(){...}`.
 
 ## <a name="member_init_list"></a>Üye başlatıcı listeleri
 
-Oluşturucu, isteğe bağlı olarak, Oluşturucu gövdesinin yürütülmesinden önce sınıf üyelerini Başlatan bir üye Başlatıcı listesine sahip olabilir. (Üye başlatıcısı listesinin [std:: initializer_list\<T >](../standard-library/initializer-list-class.md)türünde bir *Başlatıcı listesi* ile aynı şey olmadığına unutmayın.)
+Oluşturucu, isteğe bağlı olarak, Oluşturucu gövdesinin yürütülmesinden önce sınıf üyelerini Başlatan bir üye Başlatıcı listesine sahip olabilir. (Üye başlatıcısı listesinin [std:: initializer_list \<T >](../standard-library/initializer-list-class.md)türünde bir *Başlatıcı listesi* ile aynı şey olmadığına unutmayın.)
 
 Üyeyi doğrudan başlattığında, üye başlatıcısı listesinin kullanılması, oluşturucunun gövdesinde değer atamaya tercih edilir. Aşağıdaki örnekte, üye Başlatıcı listesi, iki nokta üst üste gelen tüm **tanımlayıcı (bağımsız değişken)** ifadelerinden oluşur:
 
@@ -78,7 +78,7 @@ Oluşturucu, isteğe bağlı olarak, Oluşturucu gövdesinin yürütülmesinden 
     {}
 ```
 
-Tanımlayıcı bir sınıf üyesine başvurmalıdır; bağımsız değişkeninin değeri ile başlatılır. Bağımsız değişken, Oluşturucu parametrelerinden biri, bir işlev çağrısı veya [std:: initializer_list\<T >](../standard-library/initializer-list-class.md)olabilir.
+Tanımlayıcı bir sınıf üyesine başvurmalıdır; bağımsız değişkeninin değeri ile başlatılır. Bağımsız değişken, Oluşturucu parametrelerinden biri, bir işlev çağrısı veya [std:: initializer_list \<T >](../standard-library/initializer-list-class.md)olabilir.
 
 üye başlatıcısı listesinde **const** üyeleri ve başvuru türü üyeleri başlatılmalıdır.
 
@@ -206,13 +206,13 @@ Nesneyi kopyalamaya çalışmak C2280 hatasını üretir *: silinen bir işleve 
 
 ## <a name="move_constructors"></a>Taşıma Oluşturucuları
 
-*Taşıma oluşturucusu* , varolan bir nesne verisinin sahipliğini özgün verileri kopyalamadan yeni bir değişkene taşır özel bir üye işlevidir. İlk parametresi olarak bir rvalue başvurusu alır ve tüm ek parametreler varsayılan değerlere sahip olmalıdır. Taşıma Oluşturucuları, büyük nesneler etrafında geçiş yaparken programınızın verimliliğini önemli ölçüde artırabilir. Taşıma Oluşturucusu ilk parametresi olarak bir rvalue başvurusu alır. Diğer parametrelerin varsayılan değerleri olmalıdır.
+*Taşıma oluşturucusu* , varolan bir nesne verisinin sahipliğini özgün verileri kopyalamadan yeni bir değişkene taşır özel bir üye işlevidir. İlk parametresi olarak bir rvalue başvurusu alır ve tüm ek parametreler varsayılan değerlere sahip olmalıdır. Taşıma Oluşturucuları, büyük nesneler etrafında geçiş yaparken programınızın verimliliğini önemli ölçüde artırabilir.
 
 ```cpp
 Box(Box&& other);
 ```
 
-Derleyici, nesnenin yok edileceği ve artık BT kaynaklarına ihtiyacı olmayan aynı türde başka bir nesne tarafından başlatıldığı bazı durumlarda bir taşıma Oluşturucusu seçer. Aşağıdaki örnekte, bir taşıma Oluşturucusu aşırı yükleme çözümlemesi tarafından seçildiğinde bir durum gösterilmektedir. Get_Box () tarafından döndürülen değişken *kutusu* , kapsam dışına geçmek üzere *olan bir x* (süresi dolan) değeridir. Bu örneğe ilişkin mosyon sağlamak için, içeriği temsil eden büyük bir dize vektörü sunalım. Vektör ve dizelerini kopyalamak yerine, vector öğesinin artık yeni nesneye ait olması için "kutu" süresi dolan değerden "buar" ' A yapılan `std::move` çağrı, ve `string` sınıflarının her ikisi de `vector` kendi taşıma oluşturucularını uygulayacağından gereklidir.
+Derleyici, nesnenin yok edileceği ve artık kaynaklarına ihtiyacı olmayan aynı türde başka bir nesne tarafından başlatıldığı bazı durumlarda bir taşıma Oluşturucusu seçer. Aşağıdaki örnekte, bir taşıma Oluşturucusu aşırı yükleme çözümlemesi tarafından seçildiğinde bir durum gösterilmektedir. @No__t_0 çağıran oluşturucuda, döndürülen *değer bir bir* bir "(süresi dolacak) değeridir. Herhangi bir değişkene atanmamış ve bu nedenle kapsam dışına geçmek üzere. Bu örneğe ilişkin mosyon sağlamak için, içeriği temsil eden büyük bir dize vektörü sunalım. Vektör ve dizelerini kopyalamak yerine, vector öğesinin artık yeni nesneye ait olması için "kutu" süresi dolan değerden "buar" @No__t_0 çağrısı, hem `vector` hem de `string` sınıfları kendi taşıma oluşturucularını uygulamadığından gereklidir.
 
 ```cpp
 #include <iostream>
@@ -318,7 +318,7 @@ Bir [Oluşturucu,](constexpr-cpp.md)
 
 ## <a name="init_list_constructors"></a>Başlatıcı listesi oluşturucuları
 
-Bir Oluşturucu, parametresi olarak [std:: initializer_list\<T\> ](../standard-library/initializer-list-class.md) alırsa ve diğer parametrelerin varsayılan bağımsız değişkenleri varsa, sınıf doğrudan kullanılarak örneği oluşturulduğunda, bu Oluşturucu aşırı yükleme çözümlemesi ' nde seçilir. başlatılmasında. İnitializer_list kullanarak kabul edebilecek herhangi bir üyeyi başlatabilirsiniz. Örneğin, Box sınıfının (daha önce gösterilen) bir `std::vector<string>` üyeye `m_contents`sahip olduğunu varsayalım. Aşağıdaki gibi bir Oluşturucu sağlayabilirsiniz:
+Bir Oluşturucu, parametresi olarak [std:: initializer_list \<T \>](../standard-library/initializer-list-class.md) alırsa ve diğer parametrelerin varsayılan bağımsız değişkenleri varsa, sınıf doğrudan örneklendirirken, bu Oluşturucu aşırı yükleme çözümlemesinde seçilir başlatılmasında. İnitializer_list kullanarak kabul edebilecek herhangi bir üyeyi başlatabilirsiniz. Örneğin, Box sınıfının (daha önce gösterilen) `std::vector<string>` üye `m_contents` sahip olduğunu varsayalım. Aşağıdaki gibi bir Oluşturucu sağlayabilirsiniz:
 
 ```cpp
     Box(initializer_list<string> list, int w = 0, int h = 0, int l = 0)
@@ -335,7 +335,7 @@ Ardından aşağıdaki gibi Box nesneleri oluşturun:
 
 ## <a name="explicit_constructors"></a>Açık oluşturucular
 
-Bir sınıfta tek parametreli bir Oluşturucu varsa veya biri hariç tüm parametrelerin varsayılan bir değeri varsa parametre türü örtük olarak sınıf türüne dönüştürülebilir. Örneğin, `Box` sınıfının şunun gibi bir Oluşturucusu varsa:
+Bir sınıfta tek parametreli bir Oluşturucu varsa veya biri hariç tüm parametrelerin varsayılan bir değeri varsa parametre türü örtük olarak sınıf türüne dönüştürülebilir. Örneğin, `Box` sınıfında aşağıdaki gibi bir Oluşturucu varsa:
 
 ```cpp
 Box(int size): m_width(size), m_length(size), m_height(size){}
@@ -435,7 +435,7 @@ Contained3 ctor
 DerivedContainer ctor
 ```
 
-Bir türetilmiş sınıf oluşturucusu her zaman bir taban sınıf oluşturucusunu çağırır, böylece bu sınıf ek bir çalışma yapılmadan önce tümüyle oluşturulmuş taban sınıflarına dayanabilir. Temel sınıf oluşturucuları türetme sırasıyla çağrılır — `ClassA` Örneğin, `ClassB` `ClassC` `ClassC` öğesinden türetildiyse, Oluşturucu önce, sonra `ClassB` Oluşturucu, sonra da `ClassA` Oluşturucu.
+Bir türetilmiş sınıf oluşturucusu her zaman bir taban sınıf oluşturucusunu çağırır, böylece bu sınıf ek bir çalışma yapılmadan önce tümüyle oluşturulmuş taban sınıflarına dayanabilir. Temel sınıf oluşturucuları türetme sırasıyla çağrılır — Örneğin, `ClassA`, `ClassC` türetilen `ClassB` türetildiyse, önce `ClassC` Oluşturucusu, sonra `ClassB` Oluşturucusu, sonra `ClassA` Oluşturucusu çağrılır.
 
 Bir taban sınıfında varsayılan bir oluşturucu yoksa, türetilen sınıf oluşturucusu içinde temel sınıf oluşturucu parametresini sağlamalısınız:
 
@@ -597,7 +597,7 @@ Derived d4 calls: Base()*/
 
 ::: moniker range=">=vs-2017"
 
-**Visual Studio 2017 sürüm 15,7 ve üzeri**: **/Std: c++ 17** modundaki **using** deyimleri, türetilmiş sınıftaki oluşturucularla aynı imzaya sahip olanlar hariç, taban sınıftan tüm oluşturucuları kapsama getirir. Genel olarak, türetilen sınıf yeni veri üyeleri veya oluşturucular bildirmediği zaman devralma oluşturucularının kullanılması en iyisidir. Ayrıca bkz. [Visual Studio 2017 sürüm 15,7 geliştirmeleri](https://docs.microsoft.com/cpp/overview/cpp-conformance-improvements?view=vs-2017#improvements_157).
+**Visual Studio 2017 sürüm 15,7 ve üzeri**: **/std: c++ 17** modundaki **using** deyimleri, türetilmiş sınıftaki oluşturucularla aynı imzaya sahip olanlar hariç, taban sınıftan tüm oluşturucuları kapsama getirir. Genel olarak, türetilen sınıf yeni veri üyeleri veya oluşturucular bildirmediği zaman devralma oluşturucularının kullanılması en iyisidir. Ayrıca bkz. [Visual Studio 2017 sürüm 15,7 geliştirmeleri](https://docs.microsoft.com/cpp/overview/cpp-conformance-improvements?view=vs-2017#improvements_157).
 
 ::: moniker-end
 
@@ -615,7 +615,7 @@ Bu temel sınıfların aynı imzaya sahip oluşturucuları varsa, türetilen bir
 
 ## <a name="constructors_in_composite_classes"></a>Oluşturucular ve bileşik sınıflar
 
-Sınıf türü üyeleri içeren sınıflar *bileşik sınıflar*olarak bilinir. Bileşik bir sınıfın sınıf türünde bir üyesi oluşturulduğunda, sınıfın kendisi çağrılmadan önce oluşturucu çağrılır. İçerilen bir sınıfın varsayılan bir oluşturucusu yoksa, bileşik sınıfın oluşturucusunda bir başlatma listesi kullanmalısınız. Önceki `StorageBox` örnekte, `m_label` üye değişkeninin türünü yeni `Label` bir sınıfa değiştirirseniz, `m_label` hem temel `StorageBox` sınıf oluşturucusunu hem de değişkeni oluşturucuda başlatmalısınız:
+Sınıf türü üyeleri içeren sınıflar *bileşik sınıflar*olarak bilinir. Bileşik bir sınıfın sınıf türünde bir üyesi oluşturulduğunda, sınıfın kendisi çağrılmadan önce oluşturucu çağrılır. İçerilen bir sınıfın varsayılan bir oluşturucusu yoksa, bileşik sınıfın oluşturucusunda bir başlatma listesi kullanmalısınız. Önceki `StorageBox` örneğinde, `m_label` üyesi değişkeninin türünü yeni bir `Label` sınıfına değiştirirseniz, hem temel sınıf oluşturucusunu çağırmanız hem de `StorageBox` oluşturucusunda `m_label` değişkenini başlatmalısınız :
 
 ```cpp
 class Label {

@@ -50,10 +50,10 @@ helpviewer_keywords:
 - CPathT class
 ms.assetid: eba4137d-1fd2-4b44-a2e1-0944db64df3c
 ms.openlocfilehash: ba1c831d772deef34449d17adc2c8e7a6f90eaef
-ms.sourcegitcommit: 389c559918d9bfaf303d262ee5430d787a662e92
+ms.sourcegitcommit: 8178d22701047d24f69f10d01ba37490e3d67241
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 10/18/2019
 ms.locfileid: "69496611"
 ---
 # <a name="cpatht-class"></a>CPathT sınıfı
@@ -79,7 +79,7 @@ Yol için kullanılacak ATL/MFC dize sınıfı (bkz. [CStringT](../../atl-mfc-sh
 
 ### <a name="public-typedefs"></a>Ortak tür tanımları
 
-|Ad|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CPathT::P CXSTR](#pcxstr)|Sabit bir dize türü.|
 |[CPathT::P XSTR](#pxstr)|Bir dize türü.|
@@ -87,13 +87,13 @@ Yol için kullanılacak ATL/MFC dize sınıfı (bkz. [CStringT](../../atl-mfc-sh
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CPathT:: CPathT](#cpatht)|Yol için Oluşturucu.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CPathT:: Addters eğik çizgi](#addbackslash)|Bir yol için doğru sözdizimi oluşturmak üzere bir dizenin sonuna bir ters eğik çizgi eklemek için bu yöntemi çağırın.|
 |[CPathT:: Addexgeri](#addextension)|Bir yola dosya uzantısı eklemek için bu yöntemi çağırın.|
@@ -110,14 +110,14 @@ Yol için kullanılacak ATL/MFC dize sınıfı (bkz. [CStringT](../../atl-mfc-sh
 |[CPathT:: GetDriveNumber](#getdrivenumber)|' A '-' Z ' aralığı içindeki bir sürücü harfinin yolunu aramak ve karşılık gelen sürücü numarasını döndürmek için bu yöntemi çağırın.|
 |[CPathT:: GetExtension](#getextension)|Yoldan dosya uzantısını almak için bu yöntemi çağırın.|
 |[CPathT:: IsDirectory](#isdirectory)|Yolun geçerli bir dizin olup olmadığını denetlemek için bu yöntemi çağırın.|
-|[CPathT:: ısdosyabelirtimi](#isfilespec)|Yol sınırlayan karakterlerin yolunu aramak için bu yöntemi çağırın (örneğin, ': ' veya '\\'). Yol sınırlayan karakter yoksa, yol bir dosya belirtimi yolu olarak kabul edilir.|
+|[CPathT:: ısdosyabelirtimi](#isfilespec)|Yol sınırlayan karakterlerin yolunu aramak için bu yöntemi çağırın (örneğin, ': ' veya ' \\ '). Yol sınırlayan karakter yoksa, yol bir dosya belirtimi yolu olarak kabul edilir.|
 |[CPathT:: IsPrefix](#isprefix)|Bir yolun *pszPrefix*tarafından geçirilen türün geçerli bir önekini içerip içermediğini anlamak için bu yöntemi çağırın.|
 |[CPathT:: ısgöreli](#isrelative)|Yolun göreli olup olmadığını anlamak için bu yöntemi çağırın.|
 |[CPathT:: IsRoot](#isroot)|Yolun bir dizin kökü olup olmadığını anlamak için bu yöntemi çağırın.|
 |[CPathT:: IsSameRoot](#issameroot)|Başka bir yolun geçerli yol ile ortak bir kök bileşene sahip olup olmadığını anlamak için bu yöntemi çağırın.|
 |[CPathT:: IsUnc](#isunc)|Yolun bir sunucu ve paylaşma için geçerli bir UNC (evrensel adlandırma kuralı) yolu olup olmadığını öğrenmek için bu yöntemi çağırın.|
 |[CPathT:: ısuncserver](#isuncserver)|Yolun yalnızca bir sunucu için geçerli bir UNC (evrensel adlandırma kuralı) yolu olup olmadığını öğrenmek için bu yöntemi çağırın.|
-|[CPathT:: ısuncservershare](#isuncservershare)|Yolun geçerli bir UNC (evrensel adlandırma kuralı) \\paylaşma yolu, \  *sunucu*\ *paylaşımının*olup olmadığını anlamak için bu yöntemi çağırın.|
+|[CPathT:: ısuncservershare](#isuncservershare)|Yolun geçerli bir UNC (evrensel adlandırma kuralı) paylaşma yolu olup olmadığını (\\ \ *server* \ *paylaşımının*mi olduğunu öğrenmek için bu yöntemi çağırın.|
 |[CPathT:: Makeoldukça](#makepretty)|Yolun tutarlı bir görünüm sağlamak için bir yolu tüm küçük harfli karakterlere dönüştürmek için bu yöntemi çağırın.|
 |[CPathT:: MatchSpec](#matchspec)|Joker karakter eşleşme türü içeren bir dizenin yolunu aramak için bu yöntemi çağırın.|
 |[CPathT:: QuoteSpaces](#quotespaces)|Herhangi bir boşluk içeriyorsa, yolu tırnak işaretleri içine almak için bu yöntemi çağırın.|
@@ -135,7 +135,7 @@ Yol için kullanılacak ATL/MFC dize sınıfı (bkz. [CStringT](../../atl-mfc-sh
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Ad|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CPathT:: operator const StringType &](#operator_const_stringtype_amp)|Bu işleç nesnenin bir dize gibi işlenmesine izin verir.|
 |[CPathT:: operator CPathT::P CXSTR](#operator_cpatht__pcxstr)|Bu işleç nesnenin bir dize gibi işlenmesine izin verir.|
@@ -144,13 +144,13 @@ Yol için kullanılacak ATL/MFC dize sınıfı (bkz. [CStringT](../../atl-mfc-sh
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Ad|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CPathT:: m_strPath](#m_strpath)|Yol.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CPath`, `CPathA` `CPathT` ve `CPathW` , aşağıdaki şekilde tanımlanan örneklerdir:
+`CPath`, `CPathA` ve `CPathW`, aşağıdaki gibi tanımlanan `CPathT` örneklemelerdir:
 
 `typedef CPathT< CString > CPath;`
 
@@ -284,7 +284,7 @@ Ortak ön eki döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ön ek şu türlerden biridir: "C:\\\\", ".", "..", ".. \\\\". Daha fazla bilgi için bkz. [PathCommonPrefix](/windows/win32/api/shlwapi/nf-shlwapi-pathcommonprefixw).
+Ön ek şu türlerden biridir: "C: \\ \\", ".", "..", ".. \\ \\ ". Daha fazla bilgi için bkz. [PathCommonPrefix](/windows/win32/api/shlwapi/nf-shlwapi-pathcommonprefixw).
 
 ##  <a name="compactpath"></a>CPathT:: CompactPath
 
@@ -349,7 +349,7 @@ CPathT() throw();
 *pszPath*<br/>
 Yol dizesinin işaretçisi.
 
-*Yolu*<br/>
+*Yolun*<br/>
 Yol dizesi.
 
 ##  <a name="fileexists"></a>CPathT:: FileExists
@@ -446,7 +446,7 @@ Daha fazla bilgi için bkz. [Pathisdirectory](/windows/win32/api/shlwapi/nf-shlw
 
 ##  <a name="isfilespec"></a>CPathT:: ısdosyabelirtimi
 
-Yol sınırlayan karakterlerin yolunu aramak için bu yöntemi çağırın (örneğin, ': ' veya '\\'). Yol sınırlayan karakter yoksa, yol bir dosya belirtimi yolu olarak kabul edilir.
+Yol sınırlayan karakterlerin yolunu aramak için bu yöntemi çağırın (örneğin, ': ' veya ' \\ '). Yol sınırlayan karakter yoksa, yol bir dosya belirtimi yolu olarak kabul edilir.
 
 ```
 BOOL IsFileSpec() const;
@@ -471,7 +471,7 @@ BOOL IsPrefix(PCXSTR pszPrefix) const;
 ### <a name="parameters"></a>Parametreler
 
 *pszPrefix*<br/>
-Aranacak ön ek. Ön ek şu türlerden biridir: "C:\\\\", ".", "..", ".. \\\\".
+Aranacak ön ek. Ön ek şu türlerden biridir: "C: \\ \\", ".", "..", ".. \\ \\ ".
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -568,7 +568,7 @@ Daha fazla bilgi için bkz. [Pathisuncserver](/windows/win32/api/shlwapi/nf-shlw
 
 ##  <a name="isuncservershare"></a>CPathT:: ısuncservershare
 
-Yolun geçerli bir UNC (evrensel adlandırma kuralı) \\paylaşma yolu, \  *sunucu*\ *paylaşımının*olup olmadığını anlamak için bu yöntemi çağırın.
+Yolun geçerli bir UNC (evrensel adlandırma kuralı) paylaşma yolu olup olmadığını (\\ \ *server* \ *paylaşımının*mi olduğunu öğrenmek için bu yöntemi çağırın.
 
 ```
 BOOL IsUNCServerShare() const;
@@ -576,7 +576,7 @@ BOOL IsUNCServerShare() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yol form \\ \  *sunucu*paylaşımındaysa true, değilse false döndürür.\ 
+Yol \\ \ *server* \ *paylaşımında*ise true, aksi takdirde false döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -592,7 +592,7 @@ StringType m_strPath;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`StringType`, için `CPathT`şablon parametresidir.
+`StringType`, `CPathT` şablon parametresidir.
 
 ##  <a name="makepretty"></a>CPathT:: Makeoldukça
 
@@ -648,7 +648,7 @@ Eklenecek dize.
 
 Güncelleştirilmiş yolu döndürür.
 
-##  <a name="operator_const_stringtype_amp"></a>CPathT:: operator const StringType&amp;
+##  <a name="operator_const_stringtype_amp"></a>CPathT:: operator const StringType &amp;
 
 Bu işleç nesnenin bir dize gibi işlenmesine izin verir.
 
@@ -672,7 +672,7 @@ operator PCXSTR() const throw();
 
 Bu nesne tarafından yönetilen geçerli yolu temsil eden bir dize döndürür.
 
-##  <a name="operator_stringtype_amp"></a>CPathT:: operator StringType&amp;
+##  <a name="operator_stringtype_amp"></a>CPathT:: operator StringType &amp;
 
 Bu işleç nesnenin bir dize gibi işlenmesine izin verir.
 
@@ -694,7 +694,7 @@ typedef StringType::PCXSTR PCXSTR;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`StringType`, için `CPathT`şablon parametresidir.
+`StringType`, `CPathT` şablon parametresidir.
 
 ##  <a name="pxstr"></a>CPathT::P XSTR
 
@@ -706,7 +706,7 @@ typedef StringType::PXSTR PXSTR;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`StringType`, için `CPathT`şablon parametresidir.
+`StringType`, `CPathT` şablon parametresidir.
 
 ##  <a name="quotespaces"></a>CPathT:: QuoteSpaces
 
@@ -905,7 +905,7 @@ typedef StringType::XCHAR XCHAR;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`StringType`, için `CPathT`şablon parametresidir.
+`StringType`, `CPathT` şablon parametresidir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
