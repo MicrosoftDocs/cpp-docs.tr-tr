@@ -1,30 +1,30 @@
 ---
-title: '&lt;harita&gt;'
+title: '&lt;map &gt;'
 ms.date: 11/04/2016
 f1_keywords:
 - <map>
 helpviewer_keywords:
 - map header
 ms.assetid: bbf76680-7362-456e-88fa-ecda93561b6a
-ms.openlocfilehash: 3c3c7fc34e75772c10ba39ecc51f6d2ac59d7ad5
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 2e861d2250585fbcdf3e1ef63d92f18185fc7f1c
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68456298"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72687773"
 ---
-# <a name="ltmapgt"></a>&lt;harita&gt;
+# <a name="ltmapgt"></a>&lt;map &gt;
 
-Kapsayıcı şablon sınıfları haritasını ve multimap ve destekleyici şablonlarını tanımlar.
+Kapsayıcı sınıfı şablonları haritasını ve multimap ve destekleyici şablonlarını tanımlar.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<eşleme >
+**Üst bilgi:** \<map >
 
 **Ad alanı:** std
 
 > [!NOTE]
-> Map > kitaplığı, `#include <initializer_list>` ifadesini de kullanır. \<
+> @No__t_0map > kitaplığı `#include <initializer_list>` ifadesini de kullanır.
 
 ## <a name="members"></a>Üyeler
 
@@ -34,7 +34,7 @@ Kapsayıcı şablon sınıfları haritasını ve multimap ve destekleyici şablo
 |-----------------|----------------------|-----------------|
 |[işleç! = (eşleme)](../standard-library/map-operators.md#op_neq)|[işleç! = (multimap)](../standard-library/map-operators.md#op_neq)|İşlecin sol tarafındaki Map veya multimap nesnesinin sağ taraftaki Map veya multimap nesnesine eşit olmadığını test eder.|
 |[işleç < (eşleme)](../standard-library/map-operators.md#op_eq_eq)|[işleç < (multimap)](../standard-library/map-operators.md#op_eq_eq)|İşlecin sol tarafındaki Map veya multimap nesnesinin sağ taraftaki Map veya multimap nesnesinden küçük olup olmadığını test eder.|
-|[işleç < = (eşleme)](../standard-library/map-operators.md#op_lt)|[operator\<= (multimap)](../standard-library/map-operators.md#op_lt)|İşlecin sol tarafındaki Map veya multimap nesnesinin, sağ taraftaki Map veya multimap nesnesinden küçük veya ona eşit olup olmadığını sınar.|
+|[işleç < = (eşleme)](../standard-library/map-operators.md#op_lt)|[işleç \< = (multimap)](../standard-library/map-operators.md#op_lt)|İşlecin sol tarafındaki Map veya multimap nesnesinin, sağ taraftaki Map veya multimap nesnesinden küçük veya ona eşit olup olmadığını sınar.|
 |[işleç = = (eşleme)](../standard-library/map-operators.md#op_eq_eq)|[işleç = = (multimap)](../standard-library/map-operators.md#op_eq_eq_multimap)|İşlecin sol tarafındaki Map veya multimap nesnesinin sağ taraftaki Map veya multimap nesnesine eşit olup olmadığını sınar.|
 |[işleç > (eşleme)](../standard-library/map-operators.md#op_gt)|[işleç > (multimap)](../standard-library/map-operators.md#op_gt_multimap)|İşlecin sol tarafındaki Map veya multimap nesnesinin sağ taraftaki Map veya multimap nesnesinden büyük olup olmadığını test eder.|
 |[işleç > = (eşleme)](../standard-library/map-operators.md#op_gt_eq)|[işleç > = (multimap)](../standard-library/map-operators.md#op_gt_eq_multimap)|İşlecin sol tarafındaki harita veya multimap nesnesinin sağ taraftaki Map veya multimap nesnesinden büyük veya ona eşit olup olmadığını sınar.|
@@ -55,6 +55,6 @@ Kapsayıcı şablon sınıfları haritasını ve multimap ve destekleyici şablo
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Üst bilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)\
-[C++ Standart kitaplıkta Iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[Üst bilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md) \
+[Standart kitaplıkta Iş parçacığı güvenliği \ C++ ](../standard-library/thread-safety-in-the-cpp-standard-library.md)
 [C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)

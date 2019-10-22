@@ -1,5 +1,5 @@
 ---
-title: '&lt;dize&gt; işleçleri'
+title: '&lt;string &gt; işleçleri'
 ms.date: 11/04/2016
 f1_keywords:
 - string/std::operator!=
@@ -20,20 +20,20 @@ helpviewer_keywords:
 - std::operator&lt; (string)
 - std::operator&lt;&lt; (string)
 - std::operator&lt;= (string), std::operator== (string)
-ms.openlocfilehash: bb66e7c0120da9f140ce33da7ecc61299a4d2867
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: f9aa07f7ca30ded5f61e77a327efafe91aa5c269
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68459254"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72685992"
 ---
-# <a name="ltstringgt-operators"></a>&lt;dize&gt; işleçleri
+# <a name="ltstringgt-operators"></a>&lt;string &gt; işleçleri
 
 ||||
 |-|-|-|
-|[operator!=](#op_neq)|[işlecinde&gt;](#op_gt)|[işlecinde&gt;&gt;](#op_gt_gt)|
-|[işlecinde&gt;=](#op_gt_eq)|[işlecinde&lt;](#op_lt)|[işlecinde&lt;&lt;](#op_lt_lt)|
-|[işlecinde&lt;=](#op_lt_eq)|[işleç +](#op_add)|[operator==](#op_eq_eq)|
+|[operator!=](#op_neq)|[işleç &gt;](#op_gt)|[işleç &gt; &gt;](#op_gt_gt)|
+|[işleç &gt; =](#op_gt_eq)|[işleç &lt;](#op_lt)|[işleç &lt; &lt;](#op_lt_lt)|
+|[işleç &lt; =](#op_lt_eq)|[işleç +](#op_add)|[işleç = =](#op_eq_eq)|
 
 ## <a name="op_add"></a>işleç +
 
@@ -103,11 +103,11 @@ basic_string<CharType, Traits, Allocator>&& operator+(
 
 ### <a name="parameters"></a>Parametreler
 
-*tarafta*\
-Bir C stili dize veya birleştirilecek türü `basic_string` nesne.
+*sol* \
+Bir C stili dize veya birleştirilecek `basic_string` nesne.
 
-*Right*\
-Bir C stili dize veya birleştirilecek türü `basic_string` nesne.
+*sağ* \
+Bir C stili dize veya birleştirilecek `basic_string` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -115,7 +115,7 @@ Giriş dizelerinin bitiştirilmesi olan dize.
 
 ### <a name="remarks"></a>Açıklamalar
 
-, Her bir yeniden `operator+` yüklemeyi, şablon sınıfı [basic_string sınıfının](../standard-library/basic-string-class.md)iki nesnesini birleştirmek için çalışır. Tüm etkin şekilde `basic_string< CharType, Traits, Allocator>(Left).append(right)`geri döner. Daha fazla bilgi için bkz. [append](../standard-library/basic-string-class.md#append).
+Her aşırı yükleme işlevi, sınıf şablonu [basic_string sınıfının](../standard-library/basic-string-class.md)iki nesnesini birleştirmek için `operator+`. Tüm etkin şekilde `basic_string< CharType, Traits, Allocator>(Left).append(right)` döndürür. Daha fazla bilgi için bkz. [append](../standard-library/basic-string-class.md#append).
 
 ### <a name="example"></a>Örnek
 
@@ -192,11 +192,11 @@ bool operator!=(
 
 ### <a name="parameters"></a>Parametreler
 
-*tarafta*\
-Karşılaştırılacak bir C stili dize veya tür `basic_string` nesnesi.
+*sol* \
+Karşılaştırılan `basic_string` bir C stili dize veya nesne.
 
-*Right*\
-Karşılaştırılacak bir C stili dize veya tür `basic_string` nesnesi.
+*sağ* \
+Karşılaştırılan `basic_string` bir C stili dize veya nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -283,11 +283,11 @@ bool operator==(
 
 ### <a name="parameters"></a>Parametreler
 
-*tarafta*\
-Karşılaştırılacak bir C stili dize veya tür `basic_string` nesnesi.
+*sol* \
+Karşılaştırılan `basic_string` bir C stili dize veya nesne.
 
-*Right*\
-Karşılaştırılacak bir C stili dize veya tür `basic_string` nesnesi.
+*sağ* \
+Karşılaştırılan `basic_string` bir C stili dize veya nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -351,7 +351,7 @@ The strings s1 & s3 are equal.
 The strings s3 & s2 are not equal.
 ```
 
-## <a name="op_lt"></a>işlecinde&lt;
+## <a name="op_lt"></a>işleç &lt;
 
 İşlecin sol tarafındaki dize nesnesinin, sağ taraftaki dize nesnesinden küçük olup olmadığını sınar.
 
@@ -374,11 +374,11 @@ bool operator<(
 
 ### <a name="parameters"></a>Parametreler
 
-*tarafta*\
-Karşılaştırılacak bir C stili dize veya tür `basic_string` nesnesi.
+*sol* \
+Karşılaştırılan `basic_string` bir C stili dize veya nesne.
 
-*Right*\
-Karşılaştırılacak bir C stili dize veya tür `basic_string` nesnesi.
+*sağ* \
+Karşılaştırılan `basic_string` bir C stili dize veya nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -447,7 +447,7 @@ The string s1 is not less than the string s3.
 The string s3 is less than the string s2.
 ```
 
-## <a name="op_lt_eq"></a>işlecinde&lt;=
+## <a name="op_lt_eq"></a>işleç &lt; =
 
 İşlecin sol tarafındaki dize nesnesinin, sağ taraftaki dize nesnesinden küçük veya ona eşit olup olmadığını sınar.
 
@@ -470,11 +470,11 @@ bool operator<=(
 
 ### <a name="parameters"></a>Parametreler
 
-*tarafta*\
-Karşılaştırılacak bir C stili dize veya tür `basic_string` nesnesi.
+*sol* \
+Karşılaştırılan `basic_string` bir C stili dize veya nesne.
 
-*Right*\
-Karşılaştırılacak bir C stili dize veya tür `basic_string` nesnesi.
+*sağ* \
+Karşılaştırılan `basic_string` bir C stili dize veya nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -550,7 +550,7 @@ The string s1 is less than or equal to the string s3.
 The string s2 is greater than the string s3.
 ```
 
-## <a name="op_lt_lt"></a>işlecinde&lt;&lt;
+## <a name="op_lt_lt"></a>işleç &lt; &lt;
 
 Çıkış akışına bir dize yazan bir şablon işlevi.
 
@@ -563,10 +563,10 @@ basic_ostream<CharType, Traits>& operator<<(
 
 ### <a name="parameters"></a>Parametreler
 
-*_Ostr*\
+*_Ostr* \
 Yazılan çıkış akışı.
 
-*üstbilgisine*\
+*str* \
 Çıkış akışına girilecek dize.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -575,9 +575,9 @@ Belirtilen dizenin değerini *_Ostr*çıkış akışına yazar.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi aşırı yüklerini [basic_string](../standard-library/basic-string-class.md) şablon sınıfının bir nesne *Str* olarak  *\_OSTR*akışına eklemesi **< <** . İşlevi etkin bir şekilde `_Ostr.write( str.c_str, str.size )`döndürür.
+Şablon işlevi aşırı yüklerini **< <** sınıf şablonu bir nesne *Str* *\_Ostr* [Stream 'e ekler](../standard-library/basic-string-class.md) . İşlev etkin bir şekilde `_Ostr.write( str.c_str, str.size )` döndürüyor.
 
-## <a name="op_gt"></a>işlecinde&gt;
+## <a name="op_gt"></a>işleç &gt;
 
 İşlecin sol tarafındaki dize nesnesinin, sağ taraftaki dize nesnesinden büyük olup olmadığını sınar.
 
@@ -600,11 +600,11 @@ bool operator>(
 
 ### <a name="parameters"></a>Parametreler
 
-*tarafta*\
-Karşılaştırılacak bir C stili dize veya tür `basic_string` nesnesi.
+*sol* \
+Karşılaştırılan `basic_string` bir C stili dize veya nesne.
 
-*Right*\
-Karşılaştırılacak bir C stili dize veya tür `basic_string` nesnesi.
+*sağ* \
+Karşılaştırılan `basic_string` bir C stili dize veya nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -680,7 +680,7 @@ The string s3 is greater than the string s1.
 The string s2 is greater than the string s3.
 ```
 
-## <a name="op_gt_eq"></a>işlecinde&gt;=
+## <a name="op_gt_eq"></a>işleç &gt; =
 
 İşlecin sol tarafındaki dize nesnesinin, sağ taraftaki dize nesnesinden büyük veya ona eşit olup olmadığını sınar.
 
@@ -703,11 +703,11 @@ bool operator>=(
 
 ### <a name="parameters"></a>Parametreler
 
-*tarafta*\
-Karşılaştırılacak bir C stili dize veya tür `basic_string` nesnesi.
+*sol* \
+Karşılaştırılan `basic_string` bir C stili dize veya nesne.
 
-*Right*\
-Karşılaştırılacak bir C stili dize veya tür `basic_string` nesnesi.
+*sağ* \
+Karşılaştırılan `basic_string` bir C stili dize veya nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -783,7 +783,7 @@ The string s3 is greater than or equal to the string s1.
 The string s2 is greater than or equal to the string s3.
 ```
 
-## <a name="op_gt_gt"></a>işlecinde&gt;&gt;
+## <a name="op_gt_gt"></a>işleç &gt; &gt;
 
 Giriş akışından bir dizeyi okuyan bir şablon işlevi.
 
@@ -796,10 +796,10 @@ basic_istream<CharType, Traits>& operator>>(
 
 ### <a name="parameters"></a>Parametreler
 
-*_Istr*\
+*_Istr* \
 Diziyi ayıklamak için kullanılan giriş akışı
 
-*Right*\
+*sağ* \
 Giriş akışından ayıklanan dize.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -808,19 +808,19 @@ Giriş akışından ayıklanan dize.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`skipws` Bayrak ayarlanmadığı takdirde işleç baştaki boşlukları atlar. Sonraki karakter bir boşluk olana veya dosyanın sonuna ulaşılana kadar aşağıdaki tüm karakterleri okur.
+İşleci `skipws` bayrağı ayarlanmadığı takdirde baştaki boşlukları atlar. Sonraki karakter bir boşluk olana veya dosyanın sonuna ulaşılana kadar aşağıdaki tüm karakterleri okur.
 
 Şablon işlevi, *_Istr*akışından ayıklanan bir dizi öğe ile *doğrudan* denetlenen sırayı değiştirmek için **> > işlecini** aşırı yükler. Ayıklama durduruluyor:
 
 - Dosya sonunda.
 
-- İşlev ayıkladıktan `_Istr`sonra. Bu değer sıfır değilse **Width** öğeleri.
+- İşlev `_Istr` ayıkladıktan sonra. Bu değer sıfır değilse **Width** öğeleri.
 
-İşlev ayıkladıktan `_Istr`sonra. [max_size](../standard-library/basic-string-class.md#max_size) öğeleri.
+İşlev `_Istr` ayıkladıktan sonra. [max_size](../standard-library/basic-string-class.md#max_size) öğeleri.
 
-- İşlev, [use_facet](../standard-library/basic-filebuf-class.md#open)<  `getloc`**CType** \< **CharType**> > () için bir öğe *ch* öğesini ayıkladıktan sonra. **Şu** ( **CType** \< **CharType**>:: **Space**, *ch*) true, bu durumda karakter geri getirilir.
+- İşlev, [use_facet](../standard-library/basic-filebuf-class.md#open) < **CType** \< **chartype**> > (`getloc`) için bir öğe *ch* öğesini ayıkladıktan sonra. ( **ctype** \< **CharType**>:: **Space**, *ch* **) değeri true**'dur, bu durumda karakter geri konur.
 
-İşlev hiçbir öğe ayıklaıyorsa, [SetState](../standard-library/basic-ios-class.md#setstate)(`ios_base::failbit`) öğesini çağırır. Herhangi bir durumda, **ISTR**çağırır. **Genişlik** (0) ve \* **bunu**döndürür.
+İşlev hiçbir öğe ayıklaıyorsa, [SetState](../standard-library/basic-ios-class.md#setstate)(`ios_base::failbit`) öğesini çağırır. Herhangi bir durumda, **ISTR**çağırır. **Width**(0) **ve \* döndürür**.
 
 ### <a name="example"></a>Örnek
 
@@ -843,4 +843,4 @@ int main( )
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<dize >](../standard-library/string.md)
+[\<string >](../standard-library/string.md)

@@ -1,5 +1,5 @@
 ---
-title: Allocator&lt;void&gt; sınıfı
+title: ayırıcı &lt;void &gt; sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - memory/std::allocator<void>
@@ -7,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - allocator<void> class
 ms.assetid: abfb40f5-c600-46a6-b130-f42c6535b2bd
-ms.openlocfilehash: 7ac7fbaa8c50eb13457271cf96ddc3412733c833
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: c8d787fe03dfe6f67fb8e228308ec74b6e7f620a
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68245875"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72688523"
 ---
-# <a name="allocatorltvoidgt-class"></a>Allocator&lt;void&gt; sınıfı
+# <a name="allocatorltvoidgt-class"></a>ayırıcı &lt;void &gt; sınıfı
 
-Bir türüne şablon sınıf ayırıcı uzmanlığı **void**, bu bağlamda mantıklı türleri tanımlama.
+Bu bağlamda anlamlı olan türleri tanımlayarak **void**türüne sahip sınıf şablonu ayırıcı özelleştirmesi.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -41,12 +41,12 @@ class allocator<void> {
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıfı bir şablon sınıfı açıkça uzmanlaşmış [ayırıcı](../standard-library/allocator-class.md) türünün **void**. Oluşturucu ve atama işleci Şablon sınıfı olduğu gibi aynı şekilde davranır, ancak yalnızca şu türleri tanımlar:
+Sınıfı, **void**türü için sınıf şablonu [ayırıcısını](../standard-library/allocator-class.md) açık bir şekilde özelleştirir. Oluşturucuları ve atama operatörü sınıf şablonuyla aynı şekilde davranır, ancak yalnızca aşağıdaki türleri tanımlar:
 
 - [const_pointer](../standard-library/allocator-class.md#const_pointer).
 
-- [İşaretçi](../standard-library/allocator-class.md#pointer).
+- [işaretçi](../standard-library/allocator-class.md#pointer).
 
 - [value_type](../standard-library/allocator-class.md#value_type).
 
-- [rebind](../standard-library/allocator-class.md#rebind), iç içe geçmiş Şablon sınıfı.
+- iç içe bir sınıf şablonunu yeniden [bağlayın](../standard-library/allocator-class.md#rebind).

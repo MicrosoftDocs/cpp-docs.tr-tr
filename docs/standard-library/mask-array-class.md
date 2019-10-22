@@ -6,26 +6,26 @@ f1_keywords:
 helpviewer_keywords:
 - mask_array class
 ms.assetid: c49bed6a-3000-4f39-bff6-cb9a453acb0b
-ms.openlocfilehash: 9da5e3593288be02819330e11b60e306784054dc
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 12398203d61f2c3ea155b5f6e6e7b118d4a13c75
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68460146"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72689399"
 ---
-# <a name="maskarray-class"></a>mask_array Sınıfı
+# <a name="mask_array-class"></a>mask_array Sınıfı
 
-Alt küme dizileri arasında işlemler sağlayarak bir Boolean ifadesiyle belirtilen üst valarışın alt kümeleri olan nesneleri destekleyen dahili, yardımcı şablon sınıfı.
+Alt küme dizileri arasında işlem sağlayarak bir Boolean ifadesiyle belirtilen üst valarışın alt kümeleri olan nesneleri destekleyen dahili, yardımcı sınıf şablonu.
 
 ## <a name="syntax"></a>Sözdizimi
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıfı `va` , [valarray](../standard-library/valarray-class.md)**Type>\<** sınıfınınbirnesnesinebirbaşvurudepolayanbirnesneyitanımlar,bu,`ba` bir [valarray\<bool >](../standard-library/valarray-bool-class.md)sınıfının ve `valarray<Type>` nesneden seçilecek öğelerin sırası.
+Sınıfı, [valarray](../standard-library/valarray-class.md)  **\<Type >** sınıfının bir nesne `va` bir başvurusunu depolayan bir nesneyi tanımlar ve bu sınıf [valarray \<bool >](../standard-library/valarray-bool-class.md)sınıfının bir nesne `ba` ve seçilecek öğelerin dizisini açıklar `valarray<Type>` nesnesinden.
 
-Yalnızca `mask_array<Type>` [VA&#91;ba&#93;](../standard-library/valarray-class.md#op_at)biçimindeki bir ifade yazarak bir nesne oluşturursunuz. Mask_array sınıfının üye işlevleri, için `valarray<Type>`tanımlanan karşılık gelen işlev imzaları gibi davranır, ancak yalnızca seçili öğelerin sırası etkilenir.
+Yalnızca [VA&#91;ba&#93;](../standard-library/valarray-class.md#op_at)biçimindeki bir ifade yazarak bir `mask_array<Type>` nesnesi oluşturursunuz. Mask_array sınıfının üye işlevleri, `valarray<Type>` için tanımlanan karşılık gelen işlev imzaları gibi davranır, ancak yalnızca seçili öğelerin sırası etkilenir.
 
-Sıra, en çok `ba.size` öğeden oluşur. Yalnızca **ba**[ *J*] true olduğunda *J* öğesi dahil edilir. Bu nedenle, içinde `ba`doğru öğeler olduğundan, dizide birçok öğe vardır. ' De `ba`en düşük doğru öğenin dizinse, **VA**[ `I`] seçili dizideki öğe sıfırdır. `I`
+Dizi `ba.size` öğelerinden oluşur. Yalnızca **ba**[ *J*] true olduğunda *J* öğesi dahil edilir. Bu nedenle, `ba` öğesinde gerçek öğeler olduğundan, dizide birçok öğe vardır. @No__t_0, `ba` en düşük doğru öğenin dizini ise, **VA**[`I`] seçili dizideki öğe sıfırdır.
 
 ## <a name="example"></a>Örnek
 

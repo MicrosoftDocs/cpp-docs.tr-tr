@@ -26,14 +26,14 @@ helpviewer_keywords:
 - std::negative_binomial_distribution [C++], param_type
 - std::negative_binomial_distribution [C++], param_type
 ms.assetid: 7f5f0967-7fdd-4578-99d4-88f292b4fe9c
-ms.openlocfilehash: 11e705629675903803f7230d540417846417cc77
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: d8e71b351d88a1c4dee61f88c18aec513d776cd3
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68456957"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72689251"
 ---
-# <a name="negativebinomialdistribution-class"></a>negative_binomial_distribution Sınıfı
+# <a name="negative_binomial_distribution-class"></a>negative_binomial_distribution Sınıfı
 
 Negatif bir binom dağılımı üretir.
 
@@ -71,29 +71,29 @@ public:
 
 ### <a name="parameters"></a>Parametreler
 
-*IntType*\
-Tamsayı sonuç türü, varsayılan olarak **int 'tir**. Olası türler için bkz [ \<. Random >](../standard-library/random.md).
+*IntType* \
+Tamsayı sonuç türü, varsayılan olarak **int 'tir**. Olası türler için bkz. [\<random >](../standard-library/random.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfı, Kullanıcı tarafından belirtilen integral türünün değerlerini üreten bir dağıtımı açıklar ya da hiçbiri sağlanmazsa negatif binom  dağıtım ayrık olasılık işlevine göre dağıtılır. Aşağıdaki tablo, bireysel üyelerle ilgili makalelere bağlantı sağlar.
+Sınıf şablonu, Kullanıcı tarafından belirtilen **integral türünün değerlerini** üreten bir dağıtımı açıklar ya da hiçbir değer sağlanmazsa negatif binom dağıtım ayrık olasılık işlevine göre dağıtılır. Aşağıdaki tablo, bireysel üyelerle ilgili makalelere bağlantı sağlar.
 
 ||||
 |-|-|-|
 |[negative_binomial_distribution](#negative_binomial_distribution)|`negative_binomial_distribution::k`|`negative_binomial_distribution::param`|
 |`negative_binomial_distribution::operator()`|`negative_binomial_distribution::p`|[param_type](#param_type)|
 
-Özellik üyeleri `k()` ve `p()` Şu anda depolanmış olan dağıtım parametre değerlerini sırasıyla *k* ve *p* döndürür.
+Özellik üyeleri `k()` ve `p()` Şu anda depolanmış olan dağıtım parametresi değerlerini sırasıyla *k* ve *p* döndürür.
 
-Özellik üyesi `param()` , `param_type` depolanan dağıtım parametresi paketini ayarlar veya döndürür.
+Özellik üyesi `param()` `param_type` depolanan dağıtım parametresi paketini ayarlar veya döndürür.
 
-`min()` Ve`max()` üye işlevleri, sırasıyla olası en küçük sonucu ve en büyük olası sonucu döndürür.
+@No__t_0 ve `max()` üye işlevleri, sırasıyla olası en küçük sonucu ve en büyük olası sonucu döndürür.
 
-Üye işlevi önbelleğe alınmış tüm değerleri atar, böylece sonraki `operator()` çağrının sonucu, çağrıdan önce altyapıdan alınan değerlere bağlı değildir. `reset()`
+@No__t_0 member işlevi, önbelleğe alınmış tüm değerleri atar, böylece `operator()` bir sonraki çağrının sonucu, çağrıdan önce altyapıdan alınan değerlere bağlı değildir.
 
-`operator()` Üye işlevleri, geçerli parametre paketinden ya da belirtilen parametre paketinden, URNG altyapısına göre oluşturulan bir sonraki değeri döndürür.
+@No__t_0 üye işlevleri, geçerli parametre paketinden ya da belirtilen parametre paketinden, URNG altyapısına göre oluşturulan bir sonraki değeri döndürür.
 
-Dağıtım sınıfları ve üyeleri hakkında daha fazla bilgi için bkz [ \<. Random >](../standard-library/random.md).
+Dağıtım sınıfları ve üyeleri hakkında daha fazla bilgi için bkz. [\<random >](../standard-library/random.md).
 
 Negatif binom dağıtım ayrık olasılık işlevi hakkında ayrıntılı bilgi için, Wolfram MathWorld article [negatif binom dağıtımına](https://go.microsoft.com/fwlink/p/?linkid=400516)bakın.
 
@@ -217,7 +217,7 @@ Histogram for 100 samples:
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<rastgele >
+**Üst bilgi:** \<random >
 
 **Ad alanı:** std
 
@@ -232,48 +232,48 @@ explicit negative_binomial_distribution(const param_type& parm);
 
 ### <a name="parameters"></a>Parametreler
 
-*ek*\
-`k` Dağıtım parametresi.
+*k* \
+@No__t_0 dağıtım parametresi.
 
-*Lama*\
-`p` Dağıtım parametresi.
+*p* \
+@No__t_0 dağıtım parametresi.
 
-*parametresi*\
+*para* \
 Dağıtımı oluşturmak için kullanılan parametre yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-**Önkoşul:** `0.0 < k` ve`0.0 < p ≤ 1.0`
+Ön **koşul:** `0.0 < k` ve `0.0 < p ≤ 1.0`
 
-İlk Oluşturucu, `p` saklı değeri *p* değerini tutan ve saklanan `k` değeri *k*değerini tutan bir nesne oluşturur.
+İlk Oluşturucu, depolanan `p` değeri *p* değerini tutan ve depolanan `k` değeri *k*değerini tutan bir nesne oluşturur.
 
-İkinci Oluşturucu, saklı parametreleri parmdan başlatılan bir nesne oluşturur . `param()` Üye işlevini çağırarak mevcut bir dağıtımın geçerli parametrelerini alabilir ve ayarlayabilirsiniz.
+İkinci Oluşturucu, saklı parametreleri *parmdan*başlatılan bir nesne oluşturur. @No__t_0 üye işlevini çağırarak mevcut bir dağıtımın geçerli parametrelerini alabilir ve ayarlayabilirsiniz.
 
 ## <a name="param_type"></a>negative_binomial_distribution::p aram_type
 
 Dağıtımın parametrelerini depolar.
 
-struct param_type {typedef negative_binomial_distribution`<`result_type > distribution_type; param_type (result_type k = 1, Double p = 0,5); result_type k () const; Double p () const;
+struct param_type {typedef negative_binomial_distribution `<`result_type > distribution_type; param_type (result_type k = 1, Double p = 0,5); result_type k () const; Double p () const;
 
    bool işleç = = (const param_type & Right) const; bool işleç! = (const param_type & Right) const; };
 
 ### <a name="parameters"></a>Parametreler
 
-*ek*\
-`k` Dağıtım parametresi.
+*k* \
+@No__t_0 dağıtım parametresi.
 
-*Lama*\
-`p` Dağıtım parametresi.
+*p* \
+@No__t_0 dağıtım parametresi.
 
-*Right*\
-Karşılaştırmak için kullanılan yapı. `param_type`
+*sağ* \
+Karşılaştırmak için kullanılan `param_type` yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-**Önkoşul:** `0.0 < k` ve`0.0 < p ≤ 1.0`
+Ön **koşul:** `0.0 < k` ve `0.0 < p ≤ 1.0`
 
-Bu yapı, örnek oluşturma sırasında dağıtımın sınıf oluşturucusuna, `param()` var olan bir dağıtımın saklı parametrelerini ayarlamak için üye işlevine `operator()` ve depolanan parametrelerin yerine kullanılmak üzere geçirilebilir.
+Bu yapı, örnek oluşturma sırasında dağıtımın sınıf oluşturucusuna, var olan bir dağıtımın saklı parametrelerini ayarlamak için `param()` member işlevine ve depolanan parametrelerin yerine kullanılacak `operator()` geçirilebilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<Rastgele >](../standard-library/random.md)
+[\<random >](../standard-library/random.md)

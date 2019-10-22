@@ -1,30 +1,30 @@
 ---
-title: '&lt;Sıradaki&gt;'
+title: '&lt;queue &gt;'
 ms.date: 11/04/2016
 f1_keywords:
 - <queue>
 helpviewer_keywords:
 - queue header
 ms.assetid: 24fcf350-eb0e-48cf-9fef-978be1aeda1f
-ms.openlocfilehash: 506ab5fccd44ad37a08a9f741f44f24d3a85b87d
-ms.sourcegitcommit: 16c0392fc8d96e814c3a40b0c5346d7389aeb525
+ms.openlocfilehash: ee35f880ddf40561cacb5c4d519f2e6291ad77a8
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "68956989"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72689112"
 ---
-# <a name="ltqueuegt"></a>&lt;Sıradaki&gt;
+# <a name="ltqueuegt"></a>&lt;queue &gt;
 
-Priority_queue ve Queue ve birkaç destekleyici şablon sınıfını tanımlar.
+Priority_queue ve Queue sınıf şablonlarını ve birkaç destekleyici şablonu tanımlar.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<sıra >
+**Üst bilgi:** \<queue >
 
 **Ad alanı:** std
 
 > [!NOTE]
-> Sıra > kitaplığı, `#include <initializer_list>` ifadesini de kullanır. \<
+> @No__t_0queue > kitaplığı `#include <initializer_list>` ifadesini de kullanır.
 
 ## <a name="members"></a>Üyeler
 
@@ -34,8 +34,8 @@ Priority_queue ve Queue ve birkaç destekleyici şablon sınıfını tanımlar.
 |-|-|
 |[operator!=](../standard-library/queue-operators.md#op_neq)|İşlecin sol tarafındaki kuyruk nesnesinin, sağ taraftaki kuyruk nesnesine eşit olup olmadığını sınar.|
 |[işleç <](../standard-library/queue-operators.md#op_lt)|İşlecin sol tarafındaki kuyruk nesnesinin, sağ taraftaki sıra nesnesinden küçük olup olmadığını sınar.|
-|[işlecinde\<=](../standard-library/queue-operators.md#op_gt_eq)|İşlecin sol tarafındaki kuyruk nesnesinin, sağ taraftaki kuyruk nesnesinden küçük veya ona eşit olup olmadığını sınar.|
-|[operator==](../standard-library/queue-operators.md#op_eq_eq)|İşlecin sol tarafındaki kuyruk nesnesinin, sağ taraftaki kuyruk nesnesine eşit olup olmadığını sınar.|
+|[işleç \< =](../standard-library/queue-operators.md#op_gt_eq)|İşlecin sol tarafındaki kuyruk nesnesinin, sağ taraftaki kuyruk nesnesinden küçük veya ona eşit olup olmadığını sınar.|
+|[işleç = =](../standard-library/queue-operators.md#op_eq_eq)|İşlecin sol tarafındaki kuyruk nesnesinin, sağ taraftaki kuyruk nesnesine eşit olup olmadığını sınar.|
 |[işleç >](../standard-library/queue-operators.md#op_gt)|İşlecin sol tarafındaki kuyruk nesnesinin, sağ taraftaki sıra nesnesinden büyük olup olmadığını sınar.|
 |[operator>=](../standard-library/queue-operators.md#op_gt_eq)|İşlecin sol tarafındaki kuyruk nesnesinin, sağ taraftaki sıra nesnesinden büyük veya ona eşit olup olmadığını sınar.|
 
@@ -48,6 +48,6 @@ Priority_queue ve Queue ve birkaç destekleyici şablon sınıfını tanımlar.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Üst bilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)\
-[C++ Standart kitaplıkta Iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[Üst bilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md) \
+[Standart kitaplıkta Iş parçacığı güvenliği \ C++ ](../standard-library/thread-safety-in-the-cpp-standard-library.md)
 [C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)

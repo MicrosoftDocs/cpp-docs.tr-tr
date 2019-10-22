@@ -1,5 +1,5 @@
 ---
-title: '&lt;işlemine&gt;'
+title: '&lt;ios &gt;'
 ms.date: 11/04/2016
 f1_keywords:
 - <ios>
@@ -7,31 +7,31 @@ f1_keywords:
 helpviewer_keywords:
 - ios header
 ms.assetid: d3d4c161-2f37-4f04-93cc-0a2a89984a9c
-ms.openlocfilehash: 96e8588e72e864d5324e406859e5a39053a46ccf
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: a322e517a4adb51879fc2a60f6c08f6561276de9
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68449129"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72689501"
 ---
-# <a name="ltiosgt"></a>&lt;işlemine&gt;
+# <a name="ltiosgt"></a>&lt;ios &gt;
 
 Birden çok tür ve temel olarak Iostreams işleminin işlevlerini tanımlar. Bu üst bilgi, genellikle başka bir ıostream üst bilgisi tarafından sizin için eklenmiştir; Bunu nadiren doğrudan dahil edersiniz.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi**: \<iOS >
+**Üst bilgi**: \<ios >
 
 **Ad alanı:** std
 
 > [!NOTE]
-> İOS > kitaplığı, `#include <iosfwd>` ifadesini kullanır. \<
+> @No__t_0ios > kitaplığı `#include <iosfwd>` ifadesini kullanır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Büyük bir işlev grubu, işleicilere sahiptir. \<İOS > bildirildiği bir işleyici, [ios_base](../standard-library/ios-base-class.md)sınıfının bağımsız değişken nesnesinde depolanan değerleri değiştirir. Diğer düzenlemeler, [basic_istream](../standard-library/basic-istream-class.md) veya [basic_ostream](../standard-library/basic-ostream-class.md)şablon sınıflarından birinin özelleştirmesi gibi bu sınıftan türetilmiş bir türün nesneleri tarafından denetlenen akışlar üzerinde eylemler gerçekleştirir. Örneğin, [noskipws](../standard-library/ios-functions.md#noskipws)(**Str**) nesne `ios_base::skipws` `str`içindeki biçim bayrağını temizler ve bu türlerden biri olabilir.
+Büyük bir işlev grubu, işleicilere sahiptir. @No__t_0ios > bildirildiği bir işleyici, [ios_base](../standard-library/ios-base-class.md)sınıfının bağımsız değişken nesnesinde depolanan değerleri değiştirir. Diğer düzenlemeler, [basic_istream](../standard-library/basic-istream-class.md) veya [basic_ostream](../standard-library/basic-ostream-class.md)sınıf şablonlarından birinin özelleştirmesi gibi bu sınıftan türetilmiş bir türün nesneleri tarafından denetlenen akışlar üzerinde eylemler gerçekleştirir. Örneğin, [noskipws](../standard-library/ios-functions.md#noskipws)(**Str**), bu türlerden biri olabilen nesne `str` `ios_base::skipws` biçim bayrağını temizler.
 
-Ayrıca, öğesinden `ios_base`türetilmiş sınıflar için sağlanan özel ekleme ve ayıklama işlemleri nedeniyle bir işleme bir çıkış akışına ekleyerek veya bir giriş akışından çıkartarak bir işleme çağırabilirsiniz. Örneğin:
+Ayrıca, `ios_base` türetilen sınıflar için sağlanan özel ekleme ve ayıklama işlemleri nedeniyle bir işleme bir çıkış akışına ekleyerek veya bir giriş akışından çıkartarak bir işleme çağırabilirsiniz. Örneğin:
 
 ```cpp
 istr>> noskipws;
@@ -58,7 +58,7 @@ istr>> noskipws;
 |-|-|
 |[boolalpha](../standard-library/ios-functions.md#boolalpha)|[Bool](../cpp/bool-cpp.md) türündeki değişkenlerin akışta **doğru** veya **yanlış** olarak göründüğünü belirtir.|
 |[Dec](../standard-library/ios-functions.md#dec)|Tamsayı değişkenlerinin taban 10 gösteriminde göründüğünü belirtir.|
-|[defaultfloat](../standard-library/ios-functions.md#ios_defaultfloat)|Kayan değerler için varsayılan görüntü `ios_base` biçimini kullanmak üzere bir nesnenin bayraklarını yapılandırır.|
+|[defaultfloat](../standard-library/ios-functions.md#ios_defaultfloat)|Bir `ios_base` nesnesinin bayraklarını, float değerleri için varsayılan bir görüntüleme biçimi kullanacak şekilde yapılandırır.|
 |[Düzenle](../standard-library/ios-functions.md#fixed)|Sabit ondalık gösterimde bir kayan noktalı sayının görüntülendiğini belirtir.|
 |[eşlenecek](../standard-library/ios-functions.md#hex)|Tamsayı değişkenlerinin temel 16 gösterimde göründüğünü belirtir.|
 |[onaltıdan kayan](../standard-library/ios-functions.md#hexfloat)|
@@ -95,13 +95,13 @@ istr>> noskipws;
 
 |||
 |-|-|
-|[basic_ios](../standard-library/basic-ios-class.md)|Şablon sınıfı, şablon parametrelerine bağlı olan giriş akışları (şablon sınıfı [basic_istream](../standard-library/basic-istream-class.md)) ve çıkış akışları (şablon sınıfı [basic_ostream](../standard-library/basic-ostream-class.md)) için ortak olan depolama ve üye işlevlerini açıklar.|
-|[fpos](../standard-library/fpos-class.md)|Şablon sınıfı, herhangi bir akışta rastgele bir dosya konumu göstergesini geri yüklemek için gereken tüm bilgileri depolayabilen bir nesneyi tanımlar.|
+|[basic_ios](../standard-library/basic-ios-class.md)|Sınıf şablonu, şablon parametrelerine bağlı olan giriş akışları (sınıf şablonu [basic_istream](../standard-library/basic-istream-class.md)) ve çıkış akışları ( [basic_ostream](../standard-library/basic-ostream-class.md)sınıfı) için ortak depolama ve üye işlevlerini açıklar.|
+|[fpos](../standard-library/fpos-class.md)|Sınıf şablonu, herhangi bir akışta rastgele bir dosya konumu göstergesini geri yüklemek için gereken tüm bilgileri depolayabilen bir nesneyi tanımlar.|
 |[ios_base](../standard-library/ios-base-class.md)|Sınıfı, şablon parametrelerine bağlı olmayan hem giriş hem de çıkış akışları için ortak olan depolama ve üye işlevlerini açıklar.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Üst bilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)\
-[C++ Standart kitaplıkta Iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
-[iostream programlama](../standard-library/iostream-programming.md)\
+[Üst bilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md) \
+[Standart kitaplıkta Iş parçacığı güvenliği \ C++ ](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+[iostream programlama](../standard-library/iostream-programming.md) \
 [iostreams Kuralları](../standard-library/iostreams-conventions.md)

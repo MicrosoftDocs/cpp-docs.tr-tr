@@ -26,14 +26,14 @@ helpviewer_keywords:
 - std::gamma_distribution [C++], param_type
 - std::gamma_distribution [C++], param_type
 ms.assetid: 2a6798ac-6152-41d7-8ef6-d684d92f1572
-ms.openlocfilehash: ac6a82cc7f342f6a96b5f79f36b23d23a1d27097
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: ab71ada5b1fb8b604b94ed098a46820b86a65c63
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68453946"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72689616"
 ---
-# <a name="gammadistribution-class"></a>gamma_distribution Sınıfı
+# <a name="gamma_distribution-class"></a>gamma_distribution Sınıfı
 
 Gama dağılımı üretir.
 
@@ -70,32 +70,32 @@ public:
 
 ### <a name="parameters"></a>Parametreler
 
-*RealType*\
-Kayan nokta sonuç türü, varsayılan olarak **Double**olur. Olası türler için bkz [ \<. Random >](../standard-library/random.md).
+*RealType* \
+Kayan nokta sonuç türü, varsayılan olarak **Double**olur. Olası türler için bkz. [\<random >](../standard-library/random.md).
 
-*URNG*\
-Tekdüzen rastgele sayı Oluşturucu altyapısı. Olası türler için bkz [ \<. Random >](../standard-library/random.md).
+*URNG* \
+Tekdüzen rastgele sayı Oluşturucu altyapısı. Olası türler için bkz. [\<random >](../standard-library/random.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfı, Kullanıcı tarafından belirtilen kayan nokta türünün değerlerini üreten bir dağılımı ya da hiçbiri sağlanmazsa, gama dağıtımına göre  dağıtılan bir dağıtımı açıklar. Aşağıdaki tablo, bireysel üyelerle ilgili makalelere bağlantı sağlar.
+Sınıf şablonu, Kullanıcı tarafından belirtilen kayan **nokta türünün değerlerini** üreten bir dağılımı ya da hiçbiri sağlanmazsa, gama dağıtımına göre dağıtılan bir dağıtımı açıklar. Aşağıdaki tablo, bireysel üyelerle ilgili makalelere bağlantı sağlar.
 
 ||||
 |-|-|-|
 |[gamma_distribution](#gamma_distribution)|`gamma_distribution::alpha`|`gamma_distribution::param`|
 |`gamma_distribution::operator()`|`gamma_distribution::beta`|[param_type](#param_type)|
 
-Özelliği, saklı `alpha()` dağıtım `beta()` parametreleri *Alpha* ve *Beta*için ilgili değerlerini işlevler ve döndürür.
+Özellik işlevleri `alpha()` ve `beta()` depolanan dağıtım parametreleri *Alpha* ve *Beta*için ilgili değerlerini döndürür.
 
-Özellik üyesi `param()` , `param_type` depolanan dağıtım parametresi paketini ayarlar veya döndürür.
+Özellik üyesi `param()` `param_type` depolanan dağıtım parametresi paketini ayarlar veya döndürür.
 
-`min()` Ve`max()` üye işlevleri, sırasıyla olası en küçük sonucu ve en büyük olası sonucu döndürür.
+@No__t_0 ve `max()` üye işlevleri, sırasıyla olası en küçük sonucu ve en büyük olası sonucu döndürür.
 
-Üye işlevi önbelleğe alınmış tüm değerleri atar, böylece sonraki `operator()` çağrının sonucu, çağrıdan önce altyapıdan alınan değerlere bağlı değildir. `reset()`
+@No__t_0 member işlevi, önbelleğe alınmış tüm değerleri atar, böylece `operator()` bir sonraki çağrının sonucu, çağrıdan önce altyapıdan alınan değerlere bağlı değildir.
 
-`operator()` Üye işlevleri, geçerli parametre paketinden ya da belirtilen parametre paketinden, URNG altyapısına göre oluşturulan bir sonraki değeri döndürür.
+@No__t_0 üye işlevleri, geçerli parametre paketinden ya da belirtilen parametre paketinden, URNG altyapısına göre oluşturulan bir sonraki değeri döndürür.
 
-Dağıtım sınıfları ve üyeleri hakkında daha fazla bilgi için bkz [ \<. Random >](../standard-library/random.md).
+Dağıtım sınıfları ve üyeleri hakkında daha fazla bilgi için bkz. [\<random >](../standard-library/random.md).
 
 Gama dağılımı hakkında ayrıntılı bilgi için Wolfram MathWorld article [Gama dağıtımına](https://go.microsoft.com/fwlink/p/?linkid=401111)bakın.
 
@@ -184,7 +184,7 @@ Distribution for 10 samples:
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<rastgele >
+**Üst bilgi:** \<random >
 
 **Ad alanı:** std
 
@@ -199,22 +199,22 @@ explicit gamma_distribution(const param_type& parm);
 
 ### <a name="parameters"></a>Parametreler
 
-*Alfa*\
-`alpha` Dağıtım parametresi.
+*alfa* \
+@No__t_0 dağıtım parametresi.
 
-*Beta*\
-`beta` Dağıtım parametresi.
+*beta* \
+@No__t_0 dağıtım parametresi.
 
-*parametresi*\
+*para* \
 Dağıtımı oluşturmak için kullanılan parametre yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-**Önkoşul:** `0.0 < alpha` ve`0.0 < beta`
+Ön **koşul:** `0.0 < alpha` ve `0.0 < beta`
 
-İlk Oluşturucu, `alpha` saklı değeri *Alpha* değerini tutan ve depolanan `beta` değeri *Beta*değeri olan bir nesne oluşturur.
+İlk Oluşturucu, depolanan `alpha` değeri *Alpha* değerini tutan ve depolanan `beta` değeri *Beta*değerini tutan bir nesne oluşturur.
 
-İkinci Oluşturucu, saklı parametreleri parmdan başlatılan bir nesne oluşturur . `param()` Üye işlevini çağırarak mevcut bir dağıtımın geçerli parametrelerini alabilir ve ayarlayabilirsiniz.
+İkinci Oluşturucu, saklı parametreleri *parmdan*başlatılan bir nesne oluşturur. @No__t_0 üye işlevini çağırarak mevcut bir dağıtımın geçerli parametrelerini alabilir ve ayarlayabilirsiniz.
 
 ## <a name="param_type"></a>gamma_distribution::p aram_type
 
@@ -234,21 +234,21 @@ struct param_type {
 
 ### <a name="parameters"></a>Parametreler
 
-*Alfa*\
-`alpha` Dağıtım parametresi.
+*alfa* \
+@No__t_0 dağıtım parametresi.
 
-*Beta*\
-`beta` Dağıtım parametresi.
+*beta* \
+@No__t_0 dağıtım parametresi.
 
-*Right*\
-Bunu ile Karşılaştırılacak örnek. `param_type`
+*sağ* \
+Bunu ile Karşılaştırılacak `param_type` örneği.
 
 ### <a name="remarks"></a>Açıklamalar
 
-**Önkoşul:** `0.0 < alpha` ve`0.0 < beta`
+Ön **koşul:** `0.0 < alpha` ve `0.0 < beta`
 
-Bu yapı, örnek oluşturma sırasında dağıtımın sınıf oluşturucusuna, `param()` var olan bir dağıtımın saklı parametrelerini ayarlamak için üye işlevine `operator()` ve depolanan parametrelerin yerine kullanılmak üzere geçirilebilir.
+Bu yapı, örnek oluşturma sırasında dağıtımın sınıf oluşturucusuna, var olan bir dağıtımın saklı parametrelerini ayarlamak için `param()` member işlevine ve depolanan parametrelerin yerine kullanılacak `operator()` geçirilebilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<Rastgele >](../standard-library/random.md)
+[\<random >](../standard-library/random.md)

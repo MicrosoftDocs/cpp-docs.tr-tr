@@ -10,14 +10,14 @@ helpviewer_keywords:
 - stdext::cache_freelist [C++], allocate
 - stdext::cache_freelist [C++], deallocate
 ms.assetid: 840694de-36ba-470f-8dae-2b723d5a8cd9
-ms.openlocfilehash: 05260d6800597b64908ff0aeffac47b09fed9a0e
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: d7840d114acfa0f3daa01c8dfdb6c6114829d93d
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68449696"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72689909"
 ---
-# <a name="cachefreelist-class"></a>cache_freelist Sınıfı
+# <a name="cache_freelist-class"></a>cache_freelist Sınıfı
 
 Tek boyuttaki bellek bloklarını ayıran ve ayıran [blok ayırıcıyı](../standard-library/allocators-header.md) tanımlar.
 
@@ -33,19 +33,19 @@ class cache_freelist
 |Parametre|Açıklama|
 |---------------|-----------------|
 |*SZ*|Ayrılacak dizideki öğelerin sayısı.|
-|*en fazla*|Ücretsiz listenin en büyük boyutunu temsil eden en büyük sınıf. Bu, [max_fixed_size](../standard-library/max-fixed-size-class.md), [max_none](../standard-library/max-none-class.md), [max_unbounded](../standard-library/max-unbounded-class.md)veya [max_variable_size](../standard-library/max-variable-size-class.md)olabilir.|
+|*Biçimlendir*|Ücretsiz listenin en büyük boyutunu temsil eden en büyük sınıf. Bu, [max_fixed_size](../standard-library/max-fixed-size-class.md), [max_none](../standard-library/max-none-class.md), [max_unbounded](../standard-library/max-unbounded-class.md)veya [max_variable_size](../standard-library/max-variable-size-class.md)olabilir.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Cache_freelist şablon sınıfı, *SZ*boyutundaki bellek bloklarının boş bir listesini tutar. Ücretsiz liste dolduğunda, bellek bloklarını serbest bırakmak için **işleç Delete** kullanır. Ücretsiz liste boş olduğunda yeni bellek blokları ayırmak için **New işlecini** kullanır. Ücretsiz listenin en büyük boyutu, *en* büyük parametrede geçirilen sınıf en büyük sınıfına göre belirlenir.
+Cache_freelist sınıf şablonu, *SZ*boyutundaki bellek bloklarının boş bir listesini tutar. Ücretsiz liste dolduğunda, bellek bloklarını serbest bırakmak için **işleç Delete** kullanır. Ücretsiz liste boş olduğunda yeni bellek blokları ayırmak için **New işlecini** kullanır. Ücretsiz listenin en büyük boyutu, *en* büyük parametrede geçirilen sınıf en büyük sınıfına göre belirlenir.
 
-Her bellek bloğunda,  kullanılabilir bellek ve **New işleci** ve **delete işleci** için gerekli bellek bulunur.
+Her bellek bloğunda, kullanılabilir bellek ve **New işleci** ve **delete işleci** için gerekli bellek bulunur.
 
 ### <a name="constructors"></a>Oluşturucular
 
 |Oluşturucu|Açıklama|
 |-|-|
-|[cache_freelist](#cache_freelist)|Türünde `cache_freelist`bir nesne oluşturur.|
+|[cache_freelist](#cache_freelist)|@No__t_0 türünde bir nesne oluşturur.|
 
 ### <a name="member-functions"></a>Üye işlevleri
 
@@ -56,7 +56,7 @@ Her bellek bloğunda,  kullanılabilir bellek ve **New işleci** ve **delete iş
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<ayrıcılar >
+**Üst bilgi:** \<allocators >
 
 **Ad alanı:** stdext
 
@@ -82,7 +82,7 @@ Ayrılan nesneye yönelik bir işaretçi.
 
 ## <a name="cache_freelist"></a>cache_freelist::cache_freelist
 
-Türünde `cache_freelist`bir nesne oluşturur.
+@No__t_0 türünde bir nesne oluşturur.
 
 ```cpp
 cache_freelist();
@@ -109,4 +109,4 @@ void deallocate(void* ptr, std::size_t count);
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<ayrıcılar >](../standard-library/allocators-header.md)
+[\<allocators >](../standard-library/allocators-header.md)

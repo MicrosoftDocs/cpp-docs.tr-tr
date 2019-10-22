@@ -1,5 +1,5 @@
 ---
-title: char_traits&lt;char&gt; yapısı
+title: char_traits &lt;char &gt; yapısı
 ms.date: 11/04/2016
 f1_keywords:
 - iosfwd/std::char_traits<char>
@@ -7,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - char_traits<char> class
 ms.assetid: abd9373a-77db-4031-bf4b-f8ac15087581
-ms.openlocfilehash: 6793a039b94a1ddc2daa80c5eb4d47fbdf6d6222
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ccb08f3e505122757080129b36558490456fc2c5
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62379902"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72688319"
 ---
-# <a name="chartraitsltchargt-struct"></a>char_traits&lt;char&gt; yapısı
+# <a name="char_traitsltchargt-struct"></a>char_traits &lt;char &gt; yapısı
 
-Şablon yapı özelleştirmesi olan yapı **char_traits\<CharType >** türünde bir öğe için **char**.
+**Char**türünde bir öğeye **> \<CharType** Template struct 'ın özelleştirmesi olan bir struct.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -27,8 +27,8 @@ struct char_traits<char>;
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu tür nesneler düzenleme kitaplığı işlevleri yararlanmak yapı özelleştirmesi sağlar **char**.
+Özelleşme, yapının bu tür **char**nesnelerini işleyen kitaplık işlevlerinin avantajlarından yararlanmasını sağlar.
 
 ## <a name="example"></a>Örnek
 
-Tür tanımları ve üye işlevleri şablon sınıfının [char_traits sınıfı](../standard-library/char-traits-struct.md)
+Sınıf şablonu [char_traits sınıfının](../standard-library/char-traits-struct.md) tür tanımları ve member işlevlerine bakın

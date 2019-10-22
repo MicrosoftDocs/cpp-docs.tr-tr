@@ -1,5 +1,5 @@
 ---
-title: '&lt;Regex&gt; işleçleri'
+title: '&lt;regex &gt; işleçleri'
 ms.date: 11/04/2016
 f1_keywords:
 - regex/std::operator!=
@@ -10,20 +10,20 @@ f1_keywords:
 - regex/std::operator==
 - regex/std::operator<<
 ms.assetid: ec623e65-c186-491f-aa18-6b12b47e1127
-ms.openlocfilehash: 829b4cf50b02db0a88d61a8801c1e21ddb470344
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 8795d0f1c387fb87c44f2d68c45aa27d1edbfb79
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68460128"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72689069"
 ---
-# <a name="ltregexgt-operators"></a>&lt;Regex&gt; işleçleri
+# <a name="ltregexgt-operators"></a>&lt;regex &gt; işleçleri
 
 ||||
 |-|-|-|
-|[operator!=](#op_neq)|[işlecinde&gt;](#op_gt)|[işlecinde&gt;=](#op_gt_eq)|
-|[işlecinde&lt;](#op_lt)|[işlecinde&lt;&lt;](#op_lt_lt)|[işlecinde&lt;=](#op_lt_eq)|
-|[operator==](#op_eq_eq)|
+|[operator!=](#op_neq)|[işleç &gt;](#op_gt)|[işleç &gt; =](#op_gt_eq)|
+|[işleç &lt;](#op_lt)|[işleç &lt; &lt;](#op_lt_lt)|[işleç &lt; =](#op_lt_eq)|
+|[işleç = =](#op_eq_eq)|
 
 ## <a name="op_neq"></a>işleç! =
 
@@ -66,24 +66,24 @@ bool operator!=(const match_results<BidIt, Alloc>& left,
 
 ### <a name="parameters"></a>Parametreler
 
-*BidIt*\
+*BidIt* \
 Yineleyici türü.
 
-*Ionitelikler*\
+*Ionitelikler* \
 Dize nitelikleri sınıfı.
 
-*Tahsis*\
+*Ayırma* \
 Ayırıcı sınıf.
 
-*tarafta*\
+*sol* \
 Karşılaştırılacak sol nesne.
 
-*Right*\
+*sağ* \
 Karşılaştırılacak doğru nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Her şablon işleci döndürülür `!(left == right)`.
+Her şablon işleci `!(left == right)` döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -144,7 +144,7 @@ sub != "aab" == true
 sub != 'a' == true
 ```
 
-## <a name="op_lt"></a>işlecinde&lt;
+## <a name="op_lt"></a>işleç &lt;
 
 Çeşitli nesneler için karşılaştırmadan daha az.
 
@@ -181,19 +181,19 @@ bool operator<(const sub_match<BidIt>& left,
 
 ### <a name="parameters"></a>Parametreler
 
-*BidIt*\
+*BidIt* \
 Yineleyici türü.
 
-*Ionitelikler*\
+*Ionitelikler* \
 Dize nitelikleri sınıfı.
 
-*Tahsis*\
+*Ayırma* \
 Ayırıcı sınıf.
 
-*tarafta*\
+*sol* \
 Karşılaştırılacak sol nesne.
 
-*Right*\
+*sağ* \
 Karşılaştırılacak doğru nesne.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -254,7 +254,7 @@ sub < "aab" == true
 sub < 'a' == false
 ```
 
-## <a name="op_lt_lt"></a>işlecinde&lt;&lt;
+## <a name="op_lt_lt"></a>işleç &lt; &lt;
 
 Akışa bir sub_match ekler.
 
@@ -266,27 +266,27 @@ basic_ostream<Elem, IOtraits>& operator<<(basic_ostream<Elem, IOtraits>& os,
 
 ### <a name="parameters"></a>Parametreler
 
-*Elem*\
+*Eled* \
 Öğe türü.
 
-*Ionitelikler*\
+*Ionitelikler* \
 Dize nitelikleri sınıfı.
 
-*Tahsis*\
+*Ayırma* \
 Ayırıcı sınıf.
 
-*BidIt*\
+*BidIt* \
 Yineleyici türü.
 
-*atayamadı*\
+*işletim sistemi* \
 Çıkış akışı.
 
-*Right*\
+*sağ* \
 Eklenecek nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işleci döndürülür `os << right.str()`.
+Şablon işleci `os << right.str()` döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -314,7 +314,7 @@ int main()
 whole match: caaa
 ```
 
-## <a name="op_lt_eq"></a>işlecinde&lt;=
+## <a name="op_lt_eq"></a>işleç &lt; =
 
 Çeşitli nesneler için küçüktür veya eşittir karşılaştırması.
 
@@ -351,24 +351,24 @@ bool operator<=(const sub_match<BidIt>& left,
 
 ### <a name="parameters"></a>Parametreler
 
-*BidIt*\
+*BidIt* \
 Yineleyici türü.
 
-*Ionitelikler*\
+*Ionitelikler* \
 Dize nitelikleri sınıfı.
 
-*Tahsis*\
+*Ayırma* \
 Ayırıcı sınıf.
 
-*tarafta*\
+*sol* \
 Karşılaştırılacak sol nesne.
 
-*Right*\
+*sağ* \
 Karşılaştırılacak doğru nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Her şablon işleci döndürülür `!(right < left)`.
+Her şablon işleci `!(right < left)` döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -465,19 +465,19 @@ bool operator==(const match_results<BidIt, Alloc>& left,
 
 ### <a name="parameters"></a>Parametreler
 
-*BidIt*\
+*BidIt* \
 Yineleyici türü.
 
-*Ionitelikler*\
+*Ionitelikler* \
 Dize nitelikleri sınıfı.
 
-*Tahsis*\
+*Ayırma* \
 Ayırıcı sınıf.
 
-*tarafta*\
+*sol* \
 Karşılaştırılacak sol nesne.
 
-*Right*\
+*sağ* \
 Karşılaştırılacak doğru nesne.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -486,11 +486,11 @@ Her bir şablon işleci bağımsız değişkenlerinin her birini bir dize türü
 
 Bir şablon işleci bağımsız değişkenlerini bir dize türüne dönüştürdüğünde, geçerli olan aşağıdaki dönüşümlerinin ilkini kullanır:
 
-türleri Template sınıfının `match_results` bir özelleştirmesi olan veya `sub_match` `str` member işlevi çağırarak dönüştürülen bağımsız değişkenler;
+türleri `match_results` sınıf şablonunun bir özelleştirmesi olan bağımsız değişkenler veya `sub_match` `str` üye işlevi çağırarak dönüştürülür;
 
-türleri Şablon sınıfının `basic_string` bir özelleştirmesi olan bağımsız değişkenler değiştirilmez;
+türleri sınıf şablonunun bir özelleştirmesi olan bağımsız değişkenler `basic_string` değiştirilmez;
 
-diğer tüm bağımsız değişken türleri, şablon sınıfının `basic_string`uygun bir özelleştirmesi için bağımsız değişken değeri oluşturucuya geçirerek dönüştürülür.
+diğer tüm bağımsız değişken türleri, `basic_string` sınıf şablonunun uygun bir özelleştirmesi için bağımsız değişken değeri oluşturucuya geçirerek dönüştürülür.
 
 ### <a name="example"></a>Örnek
 
@@ -551,7 +551,7 @@ sub == "aab" == false
 sub == 'a' == false
 ```
 
-## <a name="op_gt"></a>işlecinde&gt;
+## <a name="op_gt"></a>işleç &gt;
 
 Çeşitli nesneler için karşılaştırmadan daha büyük.
 
@@ -588,24 +588,24 @@ bool operator>(const sub_match<BidIt>& left,
 
 ### <a name="parameters"></a>Parametreler
 
-*BidIt*\
+*BidIt* \
 Yineleyici türü.
 
-*Ionitelikler*\
+*Ionitelikler* \
 Dize nitelikleri sınıfı.
 
-*Tahsis*\
+*Ayırma* \
 Ayırıcı sınıf.
 
-*tarafta*\
+*sol* \
 Karşılaştırılacak sol nesne.
 
-*Right*\
+*sağ* \
 Karşılaştırılacak doğru nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Her şablon işleci döndürülür `right < left`.
+Her şablon işleci `right < left` döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -661,7 +661,7 @@ sub > "aab" == false
 sub > 'a' == true
 ```
 
-## <a name="op_gt_eq"></a>işlecinde&gt;=
+## <a name="op_gt_eq"></a>işleç &gt; =
 
 Çeşitli nesneler için büyük veya eşit karşılaştırma.
 
@@ -698,24 +698,24 @@ bool operator>=(const sub_match<BidIt>& left,
 
 ### <a name="parameters"></a>Parametreler
 
-*BidIt*\
+*BidIt* \
 Yineleyici türü.
 
-*Ionitelikler*\
+*Ionitelikler* \
 Dize nitelikleri sınıfı.
 
-*Tahsis*\
+*Ayırma* \
 Ayırıcı sınıf.
 
-*tarafta*\
+*sol* \
 Karşılaştırılacak sol nesne.
 
-*Right*\
+*sağ* \
 Karşılaştırılacak doğru nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Her şablon işleci döndürülür `!(left < right)`.
+Her şablon işleci `!(left < right)` döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -773,11 +773,11 @@ sub >= 'a' == true
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<Regex >](../standard-library/regex.md)\
-[regex_constants sınıfı](../standard-library/regex-constants-class.md)\
-[regex_error sınıfı](../standard-library/regex-error-class.md)\
-[\<Regex > işlevleri](../standard-library/regex-functions.md)\
-[regex_iterator Sınıfı](../standard-library/regex-iterator-class.md)\
-[regex_token_iterator sınıfı](../standard-library/regex-token-iterator-class.md)\
-[regex_traits Sınıfı](../standard-library/regex-traits-class.md)\
-[\<tür tanımları > Regex](../standard-library/regex-typedefs.md)
+[\<regex >](../standard-library/regex.md) \
+[Regex_constants sınıfı](../standard-library/regex-constants-class.md) \
+[Regex_error sınıfı](../standard-library/regex-error-class.md) \
+[\<regex > işlevleri](../standard-library/regex-functions.md) \
+[Regex_iterator sınıfı](../standard-library/regex-iterator-class.md) \
+[Regex_token_iterator sınıfı](../standard-library/regex-token-iterator-class.md) \
+[regex_traits sınıfı](../standard-library/regex-traits-class.md) \
+[\<regex > tür tanımları](../standard-library/regex-typedefs.md)

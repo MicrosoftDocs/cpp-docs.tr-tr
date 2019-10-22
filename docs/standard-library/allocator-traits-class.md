@@ -40,16 +40,16 @@ helpviewer_keywords:
 - std::allocator_traits [C++], destroy
 - std::allocator_traits [C++], max_size
 - std::allocator_traits [C++], select_on_container_copy_construction
-ms.openlocfilehash: 795fd17c2c5b3c7fa92e62088b8f2fd126094df9
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 470b3086b4bdfa776558122eda9e496fa6c4bcdc
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68245883"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72690068"
 ---
-# <a name="allocatortraits-class"></a>allocator_traits Sınıfı
+# <a name="allocator_traits-class"></a>allocator_traits Sınıfı
 
-Şablon sınıfı tamamlayan bir nesneyi tanımlayan bir *ayırıcı türü*. Ayrılmış depolama alanını yönetmek için kullanılan bir ayırıcı nesnesini tanımlayan herhangi bir türü bir ayırıcı türüdür. Özellikle, herhangi bir ayırıcı türü için `Alloc`, kullanabileceğiniz `allocator_traits<Alloc>` ayırıcı tarafından etkinleştirilen kapsayıcı tarafından gerek duyulan tüm bilgileri belirlemek için. Daha fazla bilgi için bkz varsayılan [allocator sınıfı](../standard-library/allocator-class.md).
+Sınıf şablonu, *ayırıcı türünü*tamamlayan bir nesneyi tanımlar. Ayırıcı türü, ayrılmış depolamayı yönetmek için kullanılan bir ayırıcı nesnesini tanımlayan herhangi bir türdür. Özellikle, `Alloc` ayırıcı türü için, ayırıcı özellikli bir kapsayıcı tarafından ihtiyaç duyulan tüm bilgileri belirtmek için `allocator_traits<Alloc>` kullanabilirsiniz. Daha fazla bilgi için bkz. varsayılan [ayırıcı sınıfı](../standard-library/allocator-class.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -64,34 +64,34 @@ template <class Alloc>
 
 |||
 |-|-|
-|`allocator_type`|Bu tür şablon parametresi eşanlamlıdır `Alloc`.|
-|`const_pointer`|Bu tür `Alloc::const_pointer`, türü doğru biçimlendirildiğinden; Aksi takdirde, bu türü, `pointer_traits<pointer>::rebind<const value_type>`.|
-|`const_void_pointer`|Bu tür `Alloc::const_void_pointer`, türü doğru biçimlendirildiğinden; Aksi takdirde, bu türü, `pointer_traits<pointer>::rebind<const void>`.|
-|`difference_type`|Bu tür `Alloc::difference_type`, türü doğru biçimlendirildiğinden; Aksi takdirde, bu türü, `pointer_traits<pointer>::difference_type`.|
-|`pointer`|Bu tür `Alloc::pointer`, türü doğru biçimlendirildiğinden; Aksi takdirde, bu türü, `value_type *`.|
-|`propagate_on_container_copy_assignment`|Bu tür `Alloc::propagate_on_container_copy_assignment`, türü doğru biçimlendirildiğinden; Aksi takdirde, bu türü, `false_type`.|
-|`propagate_on_container_move_assignment`|Bu tür `Alloc::propagate_on_container_move_assignment`, türü doğru biçimlendirildiğinden; Aksi takdirde, bu türü, `false_type`. Türü korumadıkça, bir ayırıcı tarafından etkinleştirilen kapsayıcı, depolanan bir ayırıcı bir taşıma ataması üzerinde kopyalar.|
-|`propagate_on_container_swap`|Bu tür `Alloc::propagate_on_container_swap`, türü doğru biçimlendirildiğinden; Aksi takdirde, bu türü, `false_type`. Türü korumadıkça, bir ayırıcı tarafından etkinleştirilen kapsayıcı, depolanan bir ayırıcı üzerinde bir takas değiştirir.|
-|`size_type`|Bu tür `Alloc::size_type`, türü doğru biçimlendirildiğinden; Aksi takdirde, bu türü, `make_unsigned<difference_type>::type`.|
-|`value_type`|Bu tür eşanlamlıdır `Alloc::value_type`.|
-|`void_pointer`|Bu tür `Alloc::void_pointer`, türü doğru biçimlendirildiğinden; Aksi takdirde, bu türü, `pointer_traits<pointer>::rebind<void>`.|
+|`allocator_type`|Bu tür, `Alloc` şablon parametresi için bir eş anlamlı.|
+|`const_pointer`|Bu tür iyi biçimlendirilmişse `Alloc::const_pointer`. Aksi takdirde, bu tür `pointer_traits<pointer>::rebind<const value_type>`.|
+|`const_void_pointer`|Bu tür iyi biçimlendirilmişse `Alloc::const_void_pointer`. Aksi takdirde, bu tür `pointer_traits<pointer>::rebind<const void>`.|
+|`difference_type`|Bu tür iyi biçimlendirilmişse `Alloc::difference_type`. Aksi takdirde, bu tür `pointer_traits<pointer>::difference_type`.|
+|`pointer`|Bu tür iyi biçimlendirilmişse `Alloc::pointer`. Aksi takdirde, bu tür `value_type *`.|
+|`propagate_on_container_copy_assignment`|Bu tür iyi biçimlendirilmişse `Alloc::propagate_on_container_copy_assignment`. Aksi takdirde, bu tür `false_type`.|
+|`propagate_on_container_move_assignment`|Bu tür iyi biçimlendirilmişse `Alloc::propagate_on_container_move_assignment`. Aksi takdirde, bu tür `false_type`. Tür true olursa, ayırıcı özellikli bir kapsayıcı, depolanan ayırıcıyı bir taşıma atamasında kopyalar.|
+|`propagate_on_container_swap`|Bu tür iyi biçimlendirilmişse `Alloc::propagate_on_container_swap`. Aksi takdirde, bu tür `false_type`. Tür true olursa, ayırıcı özellikli bir kapsayıcı, bir takas üzerinde depolanan ayırıcıyı değiştirir.|
+|`size_type`|Bu tür iyi biçimlendirilmişse `Alloc::size_type`. Aksi takdirde, bu tür `make_unsigned<difference_type>::type`.|
+|`value_type`|Bu tür `Alloc::value_type` için bir eş anlamlı.|
+|`void_pointer`|Bu tür iyi biçimlendirilmişse `Alloc::void_pointer`. Aksi takdirde, bu tür `pointer_traits<pointer>::rebind<void>`.|
 
 ### <a name="static-methods"></a>Statik yöntemler
 
-Aşağıdaki statik yöntemler üzerinde belirli bir ayırıcı parametre karşılık gelen yöntemini çağırın.
+Aşağıdaki statik yöntemler, belirtilen bir ayırıcı parametresinde karşılık gelen yöntemi çağırır.
 
 |||
 |-|-|
-|[allocate](#allocate)|Belirli bir ayırıcı parametresini kullanarak belleği ayırır statik yöntem.|
-|[Yapısı](#construct)|Bir nesne oluşturmak için belirli bir ayırıcı kullanır statik yöntem.|
-|[Serbest Bırak](#deallocate)|Belirli sayıda nesneleri serbest bırakma için belirli bir ayırıcı kullanır statik yöntem.|
-|[yok](#destroy)|Yok edici bir nesne üzerinde onun belleğini olmadan çağırmak için belirli bir ayırıcı kullanır statik yöntem.|
-|[max_size](#max_size)|Ayrılan nesneler maksimum sayısını belirlemek için belirli bir ayırıcı kullanır statik yöntem.|
-|[select_on_container_copy_construction](#select_on_container_copy_construction)|Çağıran statik yöntem `select_on_container_copy_construction` üzerinde belirtilen ayırıcı.|
+|[allocate](#allocate)|Belirtilen ayırıcı parametresini kullanarak belleği ayıran statik yöntem.|
+|[oluşturma](#construct)|Bir nesne oluşturmak için belirtilen ayırıcıyı kullanan statik yöntem.|
+|[kaldırmak](#deallocate)|Belirtilen sayıda nesneyi serbest bırakmak için belirtilen ayırıcıyı kullanan statik yöntem.|
+|[kaldırılır](#destroy)|Bir nesne üzerinde yıkıcıyı çağırmak için bellek ayırmayı kaldırmadan belirtilen ayırıcıyı kullanan statik yöntem.|
+|[max_size](#max_size)|Ayrılabilen en fazla nesne sayısını belirleyebilmek için belirtilen ayırıcıyı kullanan statik yöntem.|
+|[select_on_container_copy_construction](#select_on_container_copy_construction)|Belirtilen ayırıcı üzerinde `select_on_container_copy_construction` çağıran statik yöntem.|
 
-### <a name="allocate"></a> ayırma
+### <a name="allocate"></a>allocate
 
-Belirli bir ayırıcı parametresini kullanarak belleği ayırır statik yöntem.
+Belirtilen ayırıcı parametresini kullanarak belleği ayıran statik yöntem.
 
 ```cpp
 static pointer allocate(Alloc& al, size_type count);
@@ -102,26 +102,26 @@ static pointer allocate(Alloc& al, size_type count,
 
 #### <a name="parameters"></a>Parametreler
 
-*Al*\
-Ayırıcı nesnesi.
+*al* \
+Ayırıcı nesne.
 
-*Sayısı*\
+*sayı* \
 Ayrılacak öğe sayısı.
 
-*İpucu*\
-A `const_pointer` yardımcı olan ayırıcı nesnesini isteği önce ayrılmış bir nesneye adresini bularak depolama talebi karşılamadığınızı içinde. Bir null işaretçiyse, hiçbir ipucu olarak kabul edilir.
+*ipucu* \
+İstek öncesinde ayrılmış bir nesnenin adresini bularak, depolama için isteği karşılarken yer alan ayırıcı nesnesine yardımcı olabilecek bir `const_pointer`. Null işaretçi hiçbir ipucu olarak değerlendirilir.
 
 #### <a name="return-value"></a>Dönüş Değeri
 
-Her bir yöntemin ayrılmış bir nesneye bir işaretçi döndürür.
+Her yöntem, ayrılan nesneye bir işaretçi döndürür.
 
-İlk statik yöntem döndürür `al.allocate(count)`.
+İlk statik yöntem `al.allocate(count)` döndürür.
 
-İkinci yöntem döndürür `al.allocate(count, hint)`, ifade iyi biçimlendirilmiş; Aksi halde döndürür `al.allocate(count)`.
+İkinci yöntem `al.allocate(count, hint)` döndürür, bu ifade iyi biçimlendirilmiş olur; Aksi takdirde `al.allocate(count)` döndürür.
 
-### <a name="construct"></a> Yapısı
+### <a name="construct"></a>oluşturma
 
-Bir nesne oluşturmak için belirli bir ayırıcı kullanır statik yöntem.
+Bir nesne oluşturmak için belirtilen ayırıcıyı kullanan statik yöntem.
 
 ```cpp
 template <class Uty, class Types>
@@ -130,22 +130,22 @@ static void construct(Alloc& al, Uty* ptr, Types&&... args);
 
 #### <a name="parameters"></a>Parametreler
 
-*Al*\
-Ayırıcı nesnesi.
+*al* \
+Ayırıcı nesne.
 
-*PTR*\
-Nesnenin oluşturulması olduğu yere bir işaretçi.
+*ptr* \
+Nesnenin oluşturulması gereken konuma yönelik bir işaretçi.
 
-*bağımsız değişken*\
-Nesne oluşturucuya geçirilen bağımsız değişkenler listesi.
+*bağımsız değişkenler* \
+Nesne oluşturucusuna geçirilen bağımsız değişkenlerin listesi.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Statik üye işlev çağrıları `al.construct(ptr, args...)`, ifade iyi biçimlendirilmiş; Aksi takdirde değerlendirir `::new (static_cast<void *>(ptr)) Uty(std::forward<Types>(args)...)`.
+Statik üye işlevi, bu ifade düzgün biçimlendirilmişse `al.construct(ptr, args...)` çağırır; Aksi takdirde `::new (static_cast<void *>(ptr)) Uty(std::forward<Types>(args)...)` değerlendirir.
 
-### <a name="deallocate"></a> Serbest Bırak
+### <a name="deallocate"></a>kaldırmak
 
-Belirli sayıda nesneleri serbest bırakma için belirli bir ayırıcı kullanır statik yöntem.
+Belirtilen sayıda nesneyi serbest bırakmak için belirtilen ayırıcıyı kullanan statik yöntem.
 
 ```cpp
 static void deallocate(Alloc al,
@@ -155,24 +155,24 @@ static void deallocate(Alloc al,
 
 #### <a name="parameters"></a>Parametreler
 
-*Al*\
-Ayırıcı nesnesi.
+*al* \
+Ayırıcı nesne.
 
-*PTR*\
-Serbest bırakılması nesnelerin başlangıç konumu için bir işaretçi.
+*ptr* \
+Serbest bırakmak için nesnelerin başlangıç konumuna yönelik bir işaretçi.
 
-*Sayısı*\
-Serbest bırakmak nesne sayısı.
+*sayı* \
+Serbest bırakmak için nesne sayısı.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Bu yöntemin çağırdığı `al.deallocate(ptr, count)`.
+Bu yöntem `al.deallocate(ptr, count)` çağırır.
 
-Bu yöntem, hiçbir şey oluşturulur.
+Bu yöntem hiçbir şey yapmaz.
 
-### <a name="destroy"></a> yok
+### <a name="destroy"></a>kaldırılır
 
-Yok edici bir nesne üzerinde onun belleğini olmadan çağırmak için belirli bir ayırıcı kullanır statik yöntem.
+Bir nesne üzerinde yıkıcıyı çağırmak için bellek ayırmayı kaldırmadan belirtilen ayırıcıyı kullanan statik yöntem.
 
 ```cpp
 template <class Uty>
@@ -181,19 +181,19 @@ template <class Uty>
 
 #### <a name="parameters"></a>Parametreler
 
-*Al*\
-Ayırıcı nesnesi.
+*al* \
+Ayırıcı nesne.
 
-*PTR*\
-Nesnenin konumu için bir işaretçi.
+*ptr* \
+Nesnenin konumuna yönelik bir işaretçi.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Bu yöntemin çağırdığı `al.destroy(ptr)`, ifade iyi biçimlendirilmiş; Aksi takdirde değerlendirir `ptr->~Uty()`.
+Bu yöntem iyi biçimlendirilmişse `al.destroy(ptr)` çağırır; Aksi takdirde `ptr->~Uty()` değerlendirir.
 
-### <a name="max_size"></a> max_size
+### <a name="max_size"></a>max_size
 
-Ayrılan nesneler maksimum sayısını belirlemek için belirli bir ayırıcı kullanır statik yöntem.
+Ayrılabilen en fazla nesne sayısını belirleyebilmek için belirtilen ayırıcıyı kullanan statik yöntem.
 
 ```cpp
 static size_type max_size(const Alloc& al);
@@ -201,16 +201,16 @@ static size_type max_size(const Alloc& al);
 
 #### <a name="parameters"></a>Parametreler
 
-*Al*\
-Ayırıcı nesnesi.
+*al* \
+Ayırıcı nesne.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem döndürür `al.max_size()`, ifade iyi biçimlendirilmiş; Aksi halde döndürür `numeric_limits<size_type>::max()`.
+Bu yöntem, bu ifade düzgün biçimlendirilmişse `al.max_size()` döndürür; Aksi takdirde `numeric_limits<size_type>::max()` döndürür.
 
-### <a name="select_on_container_copy_construction"></a> select_on_container_copy_construction
+### <a name="select_on_container_copy_construction"></a>select_on_container_copy_construction
 
-Çağıran statik yöntem `select_on_container_copy_construction` üzerinde belirtilen ayırıcı.
+Belirtilen ayırıcı üzerinde `select_on_container_copy_construction` çağıran statik yöntem.
 
 ```cpp
 static Alloc select_on_container_copy_construction(const Alloc& al);
@@ -218,13 +218,13 @@ static Alloc select_on_container_copy_construction(const Alloc& al);
 
 #### <a name="parameters"></a>Parametreler
 
-*Al*\
-Ayırıcı nesnesi.
+*al* \
+Ayırıcı nesne.
 
 #### <a name="return-value"></a>Dönüş Değeri
 
-Bu yöntem döndürür `al.select_on_container_copy_construction()`, türü iyi biçimlendirilmiş; Aksi halde döndürür *al*.
+Bu yöntem, bu tür iyi biçimlendirilmişse `al.select_on_container_copy_construction()` döndürür; Aksi takdirde *Al*döndürür.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, bir ayırıcı ilişkili kapsayıcı kopyalama oluşturulmuş olduğunda belirtmek için kullanılır.
+Bu yöntem, ilişkili kapsayıcı kopyalama tarafından oluşturulan bir ayırıcıyı belirtmek için kullanılır.

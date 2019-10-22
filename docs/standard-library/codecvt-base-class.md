@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - codecvt_base class
 ms.assetid: 7e95c083-91b4-4b3f-8918-0d4ea244a040
-ms.openlocfilehash: 1a32ba5e583fdb20118a3397f1ddb326302f2de1
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 6fca9b2130407b165a7a7bfb1fb2a9ec81774e20
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68459385"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72689884"
 ---
-# <a name="codecvtbase-class"></a>codecvt_base Sınıfı
+# <a name="codecvt_base-class"></a>codecvt_base Sınıfı
 
-Bir dönüştürme sonucunu göstermek için model üye işlevleri için dönüş türü olarak kullanılan, olarak `result`adlandırılan bir numaralandırma türünü tanımlamak için kullanılan codecvt sınıfı için temel sınıf.
+Bir dönüştürme sonucunu göstermek için model üye işlevleri için dönüş türü olarak kullanılan, `result` olarak adlandırılan bir numaralandırma türünü tanımlamak için kullanılan codecvt sınıfı için temel sınıf.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -38,19 +38,19 @@ protected:
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıfı, [codecvt](../standard-library/codecvt-class.md)şablon sınıfının tüm uzmanlıklarıyla ortak bir numaralandırma tanımlar. Numaralandırma sonucu, [do_in](../standard-library/codecvt-class.md#do_in) veya [do_out](../standard-library/codecvt-class.md#do_out)' den olası dönüş değerlerini açıklar:
+Sınıfı, [codecvt](../standard-library/codecvt-class.md)sınıf şablonunun tüm uzmanlıklarıyla ortak olan bir sabit listesini açıklar. Numaralandırma sonucu, [do_in](../standard-library/codecvt-class.md#do_in) veya [do_out](../standard-library/codecvt-class.md#do_out)' den olası dönüş değerlerini açıklar:
 
-- `ok`iç ve dış karakter kodlamaları arasında dönüştürme başarılı olursa.
+- iç ve dış karakter kodlamaları arasında dönüştürme başarılı olursa `ok`.
 
-- `partial`hedef dönüştürmenin başarılı olması için yeterince büyük değilse.
+- hedef dönüştürmenin başarılı olması için yeterince büyük değilse `partial`.
 
-- `error`kaynak sırası hatalı biçimlendirilmişse.
+- kaynak sırası hatalı biçimlendirilmişse `error`.
 
-- `noconv`işlev dönüştürme işlemi gerçekleştirmeyebilir.
+- işlev dönüştürme işlemi gerçekleştirmediğini `noconv`.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<yerel ayar >
+**Üst bilgi:** \<locale >
 
 **Ad alanı:** std
 

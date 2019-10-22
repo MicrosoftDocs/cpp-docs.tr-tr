@@ -22,16 +22,16 @@ helpviewer_keywords:
 - std::wstring_convert [C++], converted
 - std::wstring_convert [C++], state
 ms.assetid: e34f5b65-d572-4bdc-ac69-20778712e376
-ms.openlocfilehash: 35689f79f8987cb55c4578869369f35d8656faec
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: ce03510bec05f3e5e770e930759648c9add0387f
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68450895"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72684050"
 ---
-# <a name="wstringconvert-class"></a>wstring_convert Sınıfı
+# <a name="wstring_convert-class"></a>wstring_convert Sınıfı
 
-Şablon sınıfı `wstring_convert` , bir geniş dize ve bir bayt dizesi arasında dönüşümler gerçekleştirir.
+Sınıf şablonu `wstring_convert`, geniş bir dize ve bir bayt dizesi arasında dönüşümler gerçekleştirir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -42,17 +42,17 @@ class wstring_convert
 
 ### <a name="parameters"></a>Parametreler
 
-*Codecvt*\
+*Codecvt* \
 Dönüştürme nesnesini temsil eden [yerel ayar](../standard-library/locale-class.md) modeli.
 
-*Elem*\
+*Eled* \
 Geniş karakterli öğe türü.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfı, sınıfının geniş dize nesneleri `std::basic_string<Elem>` ile sınıfın `std::basic_string<char>` bayt dizesi nesnelerinin (olarak `std::string`da bilinir) arasındaki dönüştürmeleri denetleyen bir nesneyi tanımlar. Şablon sınıfı, türleri `wide_string` ve `byte_string` bu iki tür için eş anlamlıları tanımlar. Bir `Elem` değerler dizisi (bir `wide_string` nesnede depolanan) ve çok baytlı diziler (bir `byte_string` nesnede depolanan) arasında dönüştürme, standart gereksinimlerini karşılayan sınıfının `Codecvt<Elem, char, std::mbstate_t>`bir nesnesi tarafından gerçekleştirilir. kod dönüştürme modeli `std::codecvt<Elem, char, std::mbstate_t>`.
+Sınıf şablonu, sınıf `std::basic_string<Elem>` geniş dize nesneleri ile `std::basic_string<char>` sınıfının (`std::string` olarak da bilinir) bayt dizesi nesneleri arasındaki dönüşümleri denetleyen bir nesneyi tanımlar. Sınıf şablonu, bu iki tür için eş anlamlı `wide_string` ve `byte_string` türlerini tanımlar. @No__t_0 değerleri dizisi (bir `wide_string` nesnesinde depolanır) ve çok baytlı diziler (bir `byte_string` nesnesinde depolanan) arasında dönüştürme, standart kod dönüştürme modeli `std::codecvt<Elem, char, std::mbstate_t>` gereksinimlerini karşılayan `Codecvt<Elem, char, std::mbstate_t>` bir nesne tarafından gerçekleştirilir.
 
-Bu şablon sınıfının bir nesnesi şunları depolar:
+Bu sınıf şablonunun bir nesnesi şunları depolar:
 
 - Hatalarda görüntülenecek bir bayt dizesi
 
@@ -68,7 +68,7 @@ Bu şablon sınıfının bir nesnesi şunları depolar:
 
 |Oluşturucu|Açıklama|
 |-|-|
-|[wstring_convert](#wstring_convert)|Türünde `wstring_convert`bir nesne oluşturur.|
+|[wstring_convert](#wstring_convert)|@No__t_0 türünde bir nesne oluşturur.|
 
 ### <a name="typedefs"></a>Tür tanımları
 
@@ -90,7 +90,7 @@ Bu şablon sınıfının bir nesnesi şunları depolar:
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<yerel ayar >
+**Üst bilgi:** \<locale >
 
 **Ad alanı:** std
 
@@ -104,7 +104,7 @@ typedef std::basic_string<char> byte_string;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür için `std::basic_string<char>`bir eş anlamlı.
+Tür `std::basic_string<char>` için bir eş anlamlı.
 
 ## <a name="converted"></a>wstring_convert:: dönüştürüldü
 
@@ -140,8 +140,8 @@ wide_string from_bytes(const char* first, const char* last);
 |*Bayt*|Dönüştürülecek tek öğeli bayt dizisi.|
 |*ptr*|Dönüştürülecek karakterlerin C stili, null ile sonlandırılmış dizi.|
 |*BSTR*|Dönüştürülecek [byte_string](#byte_string) .|
-|*first*|Dönüştürülecek karakter aralığındaki ilk karakter.|
-|*last*|Dönüştürülecek karakter aralığındaki son karakter.|
+|*adı*|Dönüştürülecek karakter aralığındaki ilk karakter.|
+|*soyadına*|Dönüştürülecek karakter aralığındaki son karakter.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -163,7 +163,7 @@ typedef typename wide_string::traits_type::int_type int_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür için `wide_string::traits_type::int_type`bir eş anlamlı.
+Tür `wide_string::traits_type::int_type` için bir eş anlamlı.
 
 ## <a name="state"></a>wstring_convert:: State
 
@@ -189,7 +189,7 @@ typedef typename Codecvt::state_type state_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü, bir dönüştürme durumunu temsil eden bir nesneyi tanımlar. Tür için `Codecvt::state_type`bir eş anlamlı.
+Türü, bir dönüştürme durumunu temsil eden bir nesneyi tanımlar. Tür `Codecvt::state_type` için bir eş anlamlı.
 
 ## <a name="to_bytes"></a>wstring_convert::to_bytes
 
@@ -207,10 +207,10 @@ byte_string to_bytes(const Elem* first, const Elem* last);
 |Parametre|Açıklama|
 |---------------|-----------------|
 |*Char*|Dönüştürülecek geniş karakter.|
-|*Wptr*|Dönüştürülecek olan C stili, null ile sonlandırılmış sıra `wptr`.|
+|*Wptr*|Dönüştürülecek `wptr` başlayan C stili, null ile sonlandırılmış sıra.|
 |*Wstr*|Dönüştürülecek [wide_string](#wide_string) .|
-|*first*|Dönüştürülecek öğe aralığındaki ilk öğe.|
-|*last*|Dönüştürülecek öğe aralığındaki son öğe.|
+|*adı*|Dönüştürülecek öğe aralığındaki ilk öğe.|
+|*soyadına*|Dönüştürülecek öğe aralığındaki son öğe.|
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -228,11 +228,11 @@ typedef std::basic_string<Elem> wide_string;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür için `std::basic_string<Elem>`bir eş anlamlı.
+Tür `std::basic_string<Elem>` için bir eş anlamlı.
 
 ## <a name="wstring_convert"></a>wstring_convert::wstring_convert
 
-Türünde `wstring_convert`bir nesne oluşturur.
+@No__t_0 türünde bir nesne oluşturur.
 
 ```cpp
 wstring_convert(Codecvt *Pcvt = new Codecvt);
@@ -244,7 +244,7 @@ wstring_convert(const byte_string& _Berr, const wide_string& Werr = wide_string(
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*\*Pcvt*|Dönüştürmeyi gerçekleştirmek için türü `Codecvt` nesne.|
+|*\*Pcvt*|Dönüştürmeyi gerçekleştirmek için `Codecvt` türü nesne.|
 |*_Durum*|Dönüştürme durumunu temsil eden [state_type](#state_type) türünde nesne.|
 |*_Berr*|Hatalarda görüntülenecek [byte_string](#byte_string) .|
 |*Werr*|Hatalarda görüntülenecek [wide_string](#wide_string) .|

@@ -10,16 +10,16 @@ helpviewer_keywords:
 - std::complex [C++], imag
 - std::complex [C++], real
 ms.assetid: d6492e1c-5eba-4bc5-835b-2a88001a5868
-ms.openlocfilehash: 44d44d48f66c9bdbf03d4e36e752ea3dee5ff9c9
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 687665d2ad8bf80f4f2db07ce11c4866ff1ee903
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68453170"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72688256"
 ---
 # <a name="complex-class"></a>complex Sınıfı
 
-Şablon sınıfı, bir karmaşık sayının gerçek parçasını temsil eden bir, `Type`diğeri de sanal parçayı temsil eden, türünde iki nesneyi depolayan bir nesneyi tanımlar.
+Sınıf şablonu, bir karmaşık sayının gerçek bölümünü temsil eden biri olan `Type` türünde iki nesneyi depolayan bir nesne ve sanal parçayı temsil eden bir nesnesi tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -30,7 +30,7 @@ class complex
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıfının `Type`bir nesnesi:
+@No__t_0 sınıfının bir nesnesi:
 
 - Geleneksel davranışa sahip ortak bir varsayılan Oluşturucu, yıkıcı, kopya Oluşturucusu ve atama işleci vardır.
 
@@ -38,9 +38,9 @@ Sınıfının `Type`bir nesnesi:
 
 - Geleneksel davranışa sahip kayan nokta türleri için tanımlanan aritmetik işleçleri ve matematik işlevlerini, gerektiğinde tanımlar.
 
-Özellikle, kopyalama oluşturma ve varsayılan oluşturma arasında ve ardından atama ile hiçbir hafif fark olamaz. Sınıfının `Type` nesnelerinde hiçbir işlem özel durum oluşturabilir.
+Özellikle, kopyalama oluşturma ve varsayılan oluşturma arasında ve ardından atama ile hiçbir hafif fark olamaz. @No__t_0 sınıfının nesnelerinde hiçbir işlem özel durum oluşturabilir.
 
-Üç kayan nokta türü için karmaşık şablon sınıfı açık Uzmanlıkları vardır. Bu uygulamada, diğer herhangi bir `Type` türün bir değeri, gerçek hesaplamalar için **Double** 'a, **Double** sonucuyla birlikte Type `Type`türünde bir değer olarak atanır.
+Üç kayan nokta türü için karmaşık sınıf şablonu açık özelleştirilmesi vardır. Bu uygulamada, `Type` diğer tür bir değer gerçek hesaplamalar için **Double** olarak, `Type` türünde depolanan nesneye yeniden atanmış olan **Double** sonucuyla birlikte typecast ' dır.
 
 ## <a name="members"></a>Üyeler
 
@@ -67,11 +67,11 @@ Sınıfının `Type`bir nesnesi:
 
 |||
 |-|-|
-|[operator*=](#op_star_eq)|Karmaşık bir sayının gerçek ve sanal parçalarıyla aynı türde olan bir faktörle bir hedef karmaşık sayıyı çarparak çarpar.|
-|[operator+=](#op_add_eq)|Eklenmiş sayının, eklendiği karmaşık sayının gerçek ve sanal kısımlarıyla aynı türde olabileceği hedef karmaşık sayıya bir sayı ekler.|
+|[işleç * =](#op_star_eq)|Karmaşık bir sayının gerçek ve sanal parçalarıyla aynı türde olan bir faktörle bir hedef karmaşık sayıyı çarparak çarpar.|
+|[işleç + =](#op_add_eq)|Eklenmiş sayının, eklendiği karmaşık sayının gerçek ve sanal kısımlarıyla aynı türde olabileceği hedef karmaşık sayıya bir sayı ekler.|
 |[işleç-=](#operator-_eq)|Bir sayıyı hedef karmaşık sayıdan çıkartır, burada çıkarılan sayı, eklendiği karmaşık sayının gerçek ve sanal parçalarıyla aynı türde olabilir.|
 |[işleç/=](#op_div_eq)|Karmaşık bir sayının gerçek ve sanal parçalarıyla aynı türde olan ve karmaşık olabilecek bir hedef karmaşık sayıyı bölen tarafından böler.|
-|[operator=](#op_eq)|Atanan sayının, atanmakta olduğu karmaşık sayının gerçek ve sanal parçalarıyla aynı türde olabileceği hedef karmaşık sayıya bir sayı atar.|
+|[işleç =](#op_eq)|Atanan sayının, atanmakta olduğu karmaşık sayının gerçek ve sanal parçalarıyla aynı türde olabileceği hedef karmaşık sayıya bir sayı atar.|
 
 
 
@@ -91,18 +91,18 @@ constexpr complex(
 
 ### <a name="parameters"></a>Parametreler
 
-*_RealVal*\
+*_Realval* \
 Oluşturulan karmaşık sayıyı başlatmak için kullanılan gerçek parçanın değeri.
 
-*_ImagVal*\
+*_Imagval* \
 Oluşturulan karmaşık sayıyı başlatmak için kullanılan sanal parçanın değeri.
 
-*Karmaşıksayı*\
+*Karmaşıksayı* \
 Oluşturulan karmaşık sayıyı başlatmak için gerçek ve sanal parçalarını kullanılan karmaşık sayı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk Oluşturucu, depolanan gerçek parçayı  *\_, realval* ve  *\_depolanan sanal parçayı ımagval*'ye başlatır. İkinci Oluşturucu saklı gerçek parçayı öğesine `complexNum.real()` ve depolanan sanal bölümü öğesine `complexNum.imag()`başlatır.
+İlk Oluşturucu, depolanan gerçek parçayı *\_RealVal* ve depolanan sanal bölümü *\_Imagval*olarak başlatır. İkinci Oluşturucu, depolanan gerçek parçayı `complexNum.real()` ve depolanan sanal bölümü `complexNum.imag()` olarak başlatır.
 
 Bu uygulamada, bir çevirmen üye şablon işlevlerini desteklemiyorsa, şablon:
 
@@ -171,7 +171,7 @@ T imag(const T& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*Right*\
+*sağ* \
 Sanal değeri ayıklanmak üzere olan karmaşık bir sayı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -228,7 +228,7 @@ complex<Type>& operator*=(const complex<Type>& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*Right*\
+*sağ* \
 Karmaşık bir sayı veya hedef karmaşık sayının parametresiyle aynı türde bir sayı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -313,7 +313,7 @@ complex<Type>& operator+=(const complex<Type>& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*Right*\
+*sağ* \
 Karmaşık bir sayı veya hedef karmaşık sayının parametresiyle aynı türde bir sayı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -416,10 +416,10 @@ complex<Type>& operator-=(const complex<Type>& complexNum);
 
 ### <a name="parameters"></a>Parametreler
 
-*Karmaşıksayı*\
+*Karmaşıksayı* \
 Hedef karmaşık sayıdan çıkarılan karmaşık bir sayı.
 
-*_RealPart*\
+*_Realpart* \
 Hedef karmaşık sayıdan çıkarılan gerçek sayı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -524,10 +524,10 @@ complex<Type>& operator/=(const complex<Type>& complexNum);
 
 ### <a name="parameters"></a>Parametreler
 
-*Karmaşıksayı*\
+*Karmaşıksayı* \
 Hedef karmaşık sayıdan çıkarılan karmaşık bir sayı.
 
-*_RealPart*\
+*_Realpart* \
 Hedef karmaşık sayıdan çıkarılan gerçek sayı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -626,7 +626,7 @@ complex<Type>& operator=(const Type& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*Right*\
+*sağ* \
 Karmaşık bir sayı veya hedef karmaşık sayının parametresiyle aynı türde bir sayı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -703,7 +703,7 @@ T real(const T& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*Right*\
+*sağ* \
 Gerçek değeri ayıklanmak üzere olan karmaşık bir sayı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -755,7 +755,7 @@ typedef Type value_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`value_type`, sınıf karmaşık `Type` şablon parametresinin eşanlamlısıdır.
+`value_type`, sınıf karmaşık `Type` şablonu parametresinin eşanlamlısıdır.
 
 ### <a name="example"></a>Örnek
 

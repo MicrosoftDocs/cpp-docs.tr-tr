@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - binder2nd class
 ms.assetid: b2a9c1d1-dfc4-4ca9-a10e-ae84e195a62d
-ms.openlocfilehash: 5f59887e6c9d2965a6c8680f17a40c5bd93869c0
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 46c8bb2ae450b3ef56f2729717fb9b5563a7c139
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68243348"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72689944"
 ---
 # <a name="binder2nd-class"></a>binder2nd Sınıfı
 
-Bir ikili fonksiyon nesnesi belirtilen değere ikili işlevinin ikinci bağımsız değişkeni bağlayarak birli nesnesine dönüştürür. bir oluşturucu sağlayan bir şablon sınıfı. C ++ 17 sürümünde kaldırılmıştır C ++ 11'de kullanım dışı.
+İkili işlevin ikinci bağımsız değişkenini belirtilen bir değere bağlayarak bir ikili işlev nesnesini birli işlev nesnesine dönüştüren bir Oluşturucu sağlayan bir sınıf şablonu. C++ 11 ' de kullanım dışı bırakılmıştır ve C++ 17 ' de kaldırılmıştır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -38,24 +38,24 @@ class binder2nd
 
 ### <a name="parameters"></a>Parametreler
 
-*FUNC*\
-Birli işlevi nesnesine dönüştürülecek ikili fonksiyon nesnesi.
+*Func* \
+Birli işlev nesnesine dönüştürülecek ikili işlev nesnesi.
 
-*sağ*\
-İkinci bağımsız değişken ikili işlev nesnesine bağlı olduğu değeri.
+*sağ* \
+İkili işlev nesnesinin ikinci bağımsız değişkeninin bağlanacağı değer.
 
-*Sol*\
-Uyarlanmış ikili nesne sabit değeri ikinci bağımsız değişkeni olarak karşılaştıran bir bağımsız değişken değeri.
+*sol* \
+Uyarbınary nesnesinin, ikinci bağımsız değişkenin sabit değeriyle karşılaştırıldığı bağımsız değişkenin değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-İkili fonksiyon nesnesi ikinci bağımsız değişkeni değere bağlama gelen sonuçları birli işlev nesnesi *doğru*.
+İkili işlev nesnesinin ikinci bağımsız değişkenini *sağ*değere bağlamakla sonuçlanan birli işlev nesnesi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfı bir ikili fonksiyon nesnesi _ kopyasını depoladığından *Func* içinde `op`ve bir kopyasını *doğru* içinde `value`. Onun üye işlevini tanımlar `operator()` döndüren olarak **op**(`left`, **değer**).
+Sınıf şablonu, `op` bir ikili işlev nesnesinin bir kopyasını ve `value` *sağ* bir kopyasını depolar. @No__t_0 üye işlevini, **işlem**(`left`, **değer**) olarak döndürür.
 
-Varsa `Func` türünde bir nesnedir `Operation` ve c, bir sabit ardından [bind2nd](../standard-library/functional-functions.md#bind2nd) (`Func`, `c`) değerine eşdeğer olan `binder2nd` sınıf oluşturucusu `binder2nd` \<  **İşlem**> (`Func`, `c`) ve daha kolay.
+@No__t_0 `Operation` türünde bir nesnedir ve c bir sabit ise, [bind2nd](../standard-library/functional-functions.md#bind2nd) (`Func`, `c`) `binder2nd` sınıf oluşturucusuna `binder2nd` \< **işlem**> (`Func`, 0) ve daha uygun.
 
 ## <a name="example"></a>Örnek
 

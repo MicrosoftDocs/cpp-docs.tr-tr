@@ -26,14 +26,14 @@ helpviewer_keywords:
 - std::extreme_value_distribution [C++], param_type
 - std::extreme_value_distribution [C++], param_type
 ms.assetid: a0cd8370-0a54-4e26-9388-8b9678fb57da
-ms.openlocfilehash: 810a02e620e6b38732daf611d3b44a4a277322a5
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: a9d83bee5a9186ba35a7cce81600947dd1cf4141
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68457767"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72688073"
 ---
-# <a name="extremevaluedistribution-class"></a>extreme_value_distribution Sınıfı
+# <a name="extreme_value_distribution-class"></a>extreme_value_distribution Sınıfı
 
 Aşırı değerli bir dağıtım üretir.
 
@@ -71,24 +71,24 @@ public:
 
 ### <a name="parameters"></a>Parametreler
 
-*RealType*\
-Kayan nokta sonuç türü, varsayılan olarak **Double**olur. Olası türler için bkz [ \<. Random >](../standard-library/random.md).
+*RealType* \
+Kayan nokta sonuç türü, varsayılan olarak **Double**olur. Olası türler için bkz. [\<random >](../standard-library/random.md).
 
-*URNG*\
-Rastgele sayı Oluşturucu altyapısı. Olası türler için bkz [ \<. Random >](../standard-library/random.md).
+*URNG* \
+Rastgele sayı Oluşturucu altyapısı. Olası türler için bkz. [\<random >](../standard-library/random.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfı, Kullanıcı tarafından belirtilen kayan nokta türünün değerlerini üreten bir dağılımı veya hiç sağlanmazsa, aşırı değer dağıtımına göre dağıtılan bir tür **Double** değeri tanımlar. Aşağıdaki tablo, bireysel üyelerle ilgili makalelere bağlantı sağlar.
+Sınıf şablonu, Kullanıcı tarafından belirtilen kayan nokta türünün değerlerini üreten bir dağılımı veya hiç sağlanmazsa, aşırı değer dağıtımına göre dağıtılan bir tür **Double** değeri tanımlar. Aşağıdaki tablo, bireysel üyelerle ilgili makalelere bağlantı sağlar.
 
 ||||
 |-|-|-|
 |[extreme_value_distribution](#extreme_value_distribution)|`extreme_value_distribution::a`|`extreme_value_distribution::param`|
 |`extreme_value_distribution::operator()`|`extreme_value_distribution::b`|[param_type](#param_type)|
 
-Özelliği `a()` `a` ,ve`b`depolanan dağıtım parametreleri ve için ilgili değerlerini döndürür.`b()`
+Özellik işlevleri `a()` ve `b()` depolanan dağıtım parametreleri `a` ve `b` için ilgili değerlerini döndürür.
 
-Dağıtım sınıfları ve üyeleri hakkında daha fazla bilgi için bkz [ \<. Random >](../standard-library/random.md).
+Dağıtım sınıfları ve üyeleri hakkında daha fazla bilgi için bkz. [\<random >](../standard-library/random.md).
 
 Aşırı değer dağıtımı hakkında ayrıntılı bilgi için Wolfram MathWorld article [Extreme değer dağıtımı](https://go.microsoft.com/fwlink/p/?linkid=401110)' na bakın.
 
@@ -177,7 +177,7 @@ Distribution for 10 samples:
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<rastgele >
+**Üst bilgi:** \<random >
 
 **Ad alanı:** std
 
@@ -192,22 +192,22 @@ explicit extreme_value_distribution(const param_type& parm);
 
 ### <a name="parameters"></a>Parametreler
 
-*a_value*\
-`a` Dağıtım parametresi.
+*a_value* \
+@No__t_0 dağıtım parametresi.
 
-*b_value*\
-`b` Dağıtım parametresi.
+*b_value* \
+@No__t_0 dağıtım parametresi.
 
-*parametresi*\
-Dağıtımı oluşturmak için kullanılan yapı.`param_type`
+*para* \
+Dağıtımı oluşturmak için kullanılan `param_type` yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
 **Önkoşul:** `0.0 < b`
 
-İlk Oluşturucu, `a` saklı değeri *a_value* değerini tutan ve saklanan `b` değeri *b_value*değerini tutan bir nesne oluşturur.
+İlk Oluşturucu, depolanan `a` değeri *a_value* değerini tutan ve depolanan `b` değeri *b_value*değerini tutan bir nesne oluşturur.
 
-İkinci Oluşturucu, saklı parametreleri parmdan başlatılan bir nesne oluşturur . `param()` Üye işlevini çağırarak mevcut bir dağıtımın geçerli parametrelerini alabilir ve ayarlayabilirsiniz.
+İkinci Oluşturucu, saklı parametreleri *parmdan*başlatılan bir nesne oluşturur. @No__t_0 üye işlevini çağırarak mevcut bir dağıtımın geçerli parametrelerini alabilir ve ayarlayabilirsiniz.
 
 ## <a name="param_type"></a>extreme_value_distribution::p aram_type
 
@@ -227,21 +227,21 @@ struct param_type {
 
 ### <a name="parameters"></a>Parametreler
 
-*a_value*\
-`a` Dağıtım parametresi.
+*a_value* \
+@No__t_0 dağıtım parametresi.
 
-*b_value*\
-`b` Dağıtım parametresi.
+*b_value* \
+@No__t_0 dağıtım parametresi.
 
-*Right*\
-Karşılaştırılacak `param_type` nesne.
+*sağ* \
+Bu, Karşılaştırılacak `param_type` nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
 **Önkoşul:** `0.0 < b`
 
-Bu yapı, örnek oluşturma sırasında dağıtımın sınıf oluşturucusuna, `param()` var olan bir dağıtımın saklı parametrelerini ayarlamak için üye işlevine `operator()` ve depolanan parametrelerin yerine kullanılmak üzere geçirilebilir.
+Bu yapı, örnek oluşturma sırasında dağıtımın sınıf oluşturucusuna, var olan bir dağıtımın saklı parametrelerini ayarlamak için `param()` member işlevine ve depolanan parametrelerin yerine kullanılacak `operator()` geçirilebilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<Rastgele >](../standard-library/random.md)
+[\<random >](../standard-library/random.md)

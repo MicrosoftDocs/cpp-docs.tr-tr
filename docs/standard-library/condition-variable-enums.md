@@ -1,20 +1,20 @@
 ---
-title: '&lt;condition_variable&gt; sabit listeleri'
+title: '&gt; numaralandırmalar &lt;condition_variable'
 ms.date: 11/04/2016
 f1_keywords:
 - condition_variable/std::cv_status
 ms.assetid: f261ad79-e25b-4afa-9f8a-909ce697e0d8
-ms.openlocfilehash: d5fe9f3e40af4ba17c5523175de26519f0b352d6
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 593b79115e6f58edd8224d5f38dc6fbefb132fe4
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68244595"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72689774"
 ---
-# <a name="ltconditionvariablegt-enums"></a>&lt;condition_variable&gt; sabit listeleri
+# <a name="ltcondition_variablegt-enums"></a>&gt; numaralandırmalar &lt;condition_variable
 
-## <a name="cv_status"></a> cv_status
+## <a name="cv_status"></a>cv_status
 
-Şablon sınıfının yöntemlerinin döndürdüğü değerler için simgesel adlar sağlar [condition_variable](../standard-library/condition-variable-class.md).
+Sınıf şablonu [condition_variable](../standard-library/condition-variable-class.md)yöntemlerinin dönüş değerleri için simgesel adlar sağlar.
 
-sınıf cv_status {no_timeout timeout};
+sınıf cv_status {no_timeout Timeout};

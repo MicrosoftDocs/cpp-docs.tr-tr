@@ -1,5 +1,5 @@
 ---
-title: tuple_size sınıfı;
+title: tuple_size Sınıfı;
 ms.date: 11/04/2016
 f1_keywords:
 - tuple_size
@@ -8,16 +8,16 @@ f1_keywords:
 helpviewer_keywords:
 - std::tuple_size
 ms.assetid: 73852fc5-eb68-41f1-8379-465cedc2314a
-ms.openlocfilehash: 1c03c02dde3178a257a83720ff437f7981f5f7ed
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 361545bee020d6c3624d1d45743abcb9c2b4ac85
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68241548"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72688851"
 ---
-# <a name="tuplesize-class"></a>tuple_size sınıfı;
+# <a name="tuple_size-class"></a>tuple_size Sınıfı;
 
-Öğe sayısı raporları, bir `tuple` içerir.
+Bir `tuple` içerdiği öğelerin sayısını raporlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -60,31 +60,31 @@ template <class T> inline constexpr size_t tuple_size_v = tuple_size<T>::value;
 
 ### <a name="parameters"></a>Parametreler
 
-*Tanımlama grubu*\
-Demet türü.
+*Tanımlama grubu* \
+Kayıt düzeni türü.
 
-*Elem*\
+*Eled* \
 Dizi öğelerinin türü.
 
-*Boyutu*\
+*Boyut* \
 Dizinin boyutu.
 
-*T1*\
-Çiftin ilk üye türü.
+*T1* \
+Çiftin ilk üyesinin türü.
 
-*T2*\
-Çiftin ikinci üyenin türü.
+*T2* \
+Çiftin ikinci üyesinin türü.
 
-*Türleri*\
-Tanımlama grubu öğelerinin türleri.
+*Türler* \
+Demet öğelerinin türleri.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfı üyesinin `value` diğer bir deyişle, değeri olan tanımlama grubu türüyle kapsamını integral sabit ifadesi *demet*.
+Sınıf şablonu, değeri demet türü *kayıt düzeni*kapsamı olan bir integral sabit ifadesi olan bir üye `value` sahiptir.
 
-Şablon uzmanlığı diziler için bir üyenin `value` değeri olan diğer bir deyişle bir integral sabit ifadesi *boyutu*, dizinin boyutunu olduğu.
+Diziler için şablon *özelleştirmesi, değeri, dizinin*boyutu olan bir integral sabit ifadesi olan bir üye `value` sahiptir.
 
-Şablon uzmanlığı çifti için bir üyenin `value` değeri 2 olan diğer bir deyişle bir integral sabit ifadesi.
+Çiftin şablon özelleştirmesi, değeri 2 olan bir integral sabit ifadesi olan bir üye `value` sahiptir.
 
 ## <a name="example"></a>Örnek
 
@@ -117,10 +117,10 @@ int main()
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<kayıt >
+**Üst bilgi:** \<tuple >
 
-**Başlık:** \<array > (için dizi özelleştirme)
+**Üstbilgi:** \<array > (dizi özelleştirmesi için)
 
-**Başlık:** \<yardımcı programı > (için çifti özelleştirme)
+**Üstbilgi:** \<utility > (çift özelleşme için)
 
-**Namespace:** std
+**Ad alanı:** std

@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - numpunct_byname class
 ms.assetid: 18412924-e085-4771-b5e9-7a200cbdd7c0
-ms.openlocfilehash: 0c9eb565c2dbf54da449411aa11a4c5661debf1d
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: da9259df8c527e44a4adea3a53be31b3c3ffc10b
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68452313"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72687602"
 ---
-# <a name="numpunctbyname-class"></a>numpunct_byname Sınıfı
+# <a name="numpunct_byname-class"></a>numpunct_byname Sınıfı
 
-Türetilmiş şablon sınıfı, sayısal ve Boolean ifadelerin biçimlendirmesini ve noktalama işaretlerini `numpunct` etkinleştirerek, belirtilen bir yerel ayarın bir modeli olarak işlev görebilecek bir nesne tanımlar.
+Türetilmiş sınıf şablonu, sayısal ve Boolean ifadelerin biçimlendirmesini ve noktalama işaretlerini etkinleştirerek, belirli bir yerel ayarın `numpunct` modeli olarak işlev görebilecek bir nesne tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -39,11 +39,11 @@ protected:
 
 ## <a name="remarks"></a>Açıklamalar
 
-Davranışı, [adlandırılmış](../standard-library/locale-class.md#name) yerel ayar `_Locname`tarafından belirlenir. Oluşturucu kendi temel nesnesini, [sayısal tuş takımı olmayan](../standard-library/numpunct-class.md#numpunct)\<> ( `_Refs`) ile başlatır.
+Davranışı, [adlandırılmış](../standard-library/locale-class.md#name) yerel ayar `_Locname` tarafından belirlenir. Oluşturucu kendi temel nesnesini bir [ana \<CharType >](../standard-library/numpunct-class.md#numpunct) (`_Refs`) olarak başlatır.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<yerel ayar >
+**Üst bilgi:** \<locale >
 
 **Ad alanı:** std
 

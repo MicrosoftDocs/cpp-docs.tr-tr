@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - money_base class
 ms.assetid: 1a303c15-9272-4f26-ae16-dcf43a0fd38a
-ms.openlocfilehash: 5b19635cf4d2cce58ec50226c463a075cfac5b0f
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: c614832b0cbb1cc23e42ecb3a939ccf1334a5cea
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68455561"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72689318"
 ---
-# <a name="moneybase-class"></a>money_base Sınıfı
+# <a name="money_base-class"></a>money_base Sınıfı
 
-Sınıfı, [moneypunct](../standard-library/moneypunct-class.md)şablon sınıfının tüm uzmanlıklarıyla ortak bir numaralandırma ve bir yapı tanımlar.
+Sınıfı, [moneypunct](../standard-library/moneypunct-class.md)sınıf şablonunun tüm uzmanlıklarıyla ortak bir numaralandırma ve bir yapı tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -28,21 +28,21 @@ struct pattern
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sabit listesi `part` yapı deseninin dizi alanının öğelerinde olası değerleri açıklar. Değerleri `part` şunlardır:
+Sabit Listesi `part` yapı deseninin dizi alanının öğelerinde olası değerleri açıklar. @No__t_0 değerleri şunlardır:
 
-- `none`sıfır veya daha fazla boşluğu eşleştirmek veya hiçbir şey oluşturmak için.
+- sıfır veya daha fazla boşlukla eşleşecek veya hiçbir şey oluşturmaya `none`.
 
-- `sign`pozitif veya negatif bir işareti eşlemek veya oluşturmak için.
+- `sign` pozitif veya negatif bir işaret ile eşleşecek veya oluşturulacak.
 
-- `space`sıfır veya daha fazla boşluğu eşleştirmek veya bir boşluk oluşturmak için.
+- sıfır veya daha fazla boşlukla eşleşecek veya bir boşluk oluşturacak `space`.
 
-- `symbol`bir para birimi sembolünü eşleştirmek veya oluşturmak için.
+- bir para birimi simgesi eşleştirmek veya oluşturmak için `symbol`.
 
-- `value`bir parasal değeri eşleştirmek veya oluşturmak için.
+- bir parasal değer eşlemek veya oluşturmak için `value`.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<yerel ayar >
+**Üst bilgi:** \<locale >
 
 **Ad alanı:** std
 

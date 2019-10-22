@@ -1,21 +1,21 @@
 ---
-title: '&lt;iosfwd&gt;'
+title: '&lt;iosfwd &gt;'
 ms.date: 11/04/2016
 f1_keywords:
 - <iosfwd>
 helpviewer_keywords:
 - iosfwd header
 ms.assetid: 964442eb-17f1-43ef-a0e0-c5bb77f9c187
-ms.openlocfilehash: e66c3e869f01775512419c877cd52c7f0e0fa2c4
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 8d257a57100615e592f6ebd62b5c91c6c59df408
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68449080"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72687862"
 ---
-# <a name="ltiosfwdgt"></a>&lt;iosfwd&gt;
+# <a name="ltiosfwdgt"></a>&lt;iosfwd &gt;
 
-İostreams boyunca kullanılan birkaç şablon sınıfına iletme başvuruları bildirir. Tüm şablon sınıfları diğer standart başlıklarda tanımlanır. Bu üst bilgiyi yalnızca kendi bildirimlerinden birine ihtiyacınız olduğunda, ancak tanımını değil, açıkça dahil edersiniz.
+İostreams boyunca kullanılan birkaç sınıf şablonuna yönelik İleri başvuruları bildirir. Tüm bu sınıf şablonları diğer standart üstbilgilere tanımlanmıştır. Bu üst bilgiyi yalnızca kendi bildirimlerinden birine ihtiyacınız olduğunda, ancak tanımını değil, açıkça dahil edersiniz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -62,7 +62,7 @@ typedef basic_fstream<wchar_t, char_traits<wchar_t>> wfstream;
 };
 ```
 
-## <a name="forward-declarationstemplate-classes"></a>İletme bildirimleri/şablon sınıfları
+## <a name="forward-declarations-and-class-templates"></a>İletme bildirimleri ve sınıf şablonları
 
 ```cpp
 template <class _Statetype>
@@ -128,7 +128,7 @@ class basic_fstream;
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Üst bilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)\
-[C++ Standart kitaplıkta Iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
-[iostream programlama](../standard-library/iostream-programming.md)\
+[Üst bilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md) \
+[Standart kitaplıkta Iş parçacığı güvenliği \ C++ ](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+[iostream programlama](../standard-library/iostream-programming.md) \
 [iostreams Kuralları](../standard-library/iostreams-conventions.md)

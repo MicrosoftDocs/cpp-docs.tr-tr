@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - hash_compare class
 ms.assetid: d502bb59-de57-4585-beb9-00e3a998c0af
-ms.openlocfilehash: 399b412c41128f513cf01d1e034bad2bbc5ef79f
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 4fb44a371630a66275f6ef59a0bf66b4cb73a71f
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68448803"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72689554"
 ---
-# <a name="hashcompare-class"></a>hash_compare Sınıfı
+# <a name="hash_compare-class"></a>hash_compare Sınıfı
 
-Şablon sınıfı, içerdikleri öğeleri sıralamak ve karma hale getirmek için varsayılan **nitelikler** parametre nesnesi olarak, karma ilişkilendirilebilir kapsayıcılar (hash_map, hash_multimap, hash_set veya hash_multiset) tarafından kullanılabilen bir nesneyi tanımlar.
+Sınıf şablonu, içerdikleri öğeleri sıralamak ve karma hale getirmek için varsayılan **nitelikler** parametre nesnesi olarak, karma ilişkilendirilebilir kapsayıcılar (hash_map, hash_multimap, hash_set veya hash_multiset) tarafından kullanılabilen bir nesneyi tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -23,15 +23,15 @@ Class hash_compare {nitelikler comp; public: const size_t bucket_size = 4; const
 
 ## <a name="remarks"></a>Açıklamalar
 
-Her karma ilişkilendirilebilir kapsayıcı, türünde `Traits` bir karma nitelikleri nesnesi depolar (bir şablon parametresi). Belirli işlevleri ve nesneleri seçmeli olarak geçersiz kılmak için bir hash_compare uzmanından bir sınıf türetebilirsiniz veya belirli minimum gereksinimleri karşıladıysanız bu sınıfın kendi sürümünü sağlayabilirsiniz. Özellikle, türünde `hash_compare<Key, Traits>`bir nesne hash_comp için aşağıdaki davranış yukarıdaki kapsayıcılar için gereklidir:
+Her karma ilişkilendirilebilir kapsayıcı, `Traits` türünde bir karma nitelikleri nesnesi depolar (bir şablon parametresi). Belirli işlevleri ve nesneleri seçmeli olarak geçersiz kılmak için bir hash_compare uzmanından bir sınıf türetebilirsiniz veya belirli minimum gereksinimleri karşıladıysanız bu sınıfın kendi sürümünü sağlayabilirsiniz. Özellikle, `hash_compare<Key, Traits>` türünde bir nesne hash_comp için yukarıdaki kapsayıcılar için aşağıdaki davranış gereklidir:
 
-- Türündeki `key` `size_t` `key`tüm değerler için, hash_comp () çağrısı bir karma işlevi olarak işlev görür, bu, türü değerlerinin bir dağılımını verir. `Key` Hash_compare tarafından sağlanan işlev döndürür `key`.
+- @No__t_1 türü `key` tüm değerler için, Call **hash_comp**(`key`), `size_t` türünde bir değer dağılımı veren bir karma işlev işlevi görür. Hash_compare tarafından sağlanan işlev `key` döndürür.
 
-- Dizide `key1` `key2` yer `Key` alan ve aynı karma değerine (karma işlevi tarafından döndürülen değer) sahip olan herhangi bir değer için, **hash_comp**(`key2`, `key1`) false olur. İşlev, türündeki `Key`değerlere toplam bir sıralama getirmelidir. Hash_compare tarafından sağlanan işlev, hash_comp nesnesini oluştururken belirtebileceğiniz `key1`bir saklı  `Traits` nesne olan *comp*(`key2`,) `,` döndürür. Varsayılan `Traits` parametre türü `less<Key>`için sıralama anahtarları değerde hiçbir şekilde azalmayın.
+- Dizide `key2` önce gelen ve aynı karma değerine (karma işlevi tarafından döndürülen değer) sahip olan `Key` türündeki `key1` herhangi bir değer için, **hash_comp**(`key2`, `key1`) false olur. İşlev, `Key` türündeki değerlere toplam bir sıralama getirmelidir. Hash_compare tarafından sağlanan işlev, hash_comp nesnesini oluştururken belirtebileceğiniz, `Traits` türünde depolanan *bir nesne olan* *comp*(`key2` `key1`) `,` döndürür. Varsayılan `Traits` parametre türü `less<Key>` için sıralama anahtarları değerde hiçbir şekilde azalmayın.
 
-- Tamsayı sabiti `bucket_size` , kapsayıcının aşmamak için gereken ortalama öğe sayısını "demet" (karma tablo girişi) başına belirler. Sıfırdan büyük olmalıdır. Hash_compare tarafından sağlanan değer 4 ' dir.
+- Tamsayı sabiti `bucket_size`, kapsayıcının aşmamak için gereken "demet" (karma tablo girişi) başına öğelerin ortalama sayısını belirtir. Sıfırdan büyük olmalıdır. Hash_compare tarafından sağlanan değer 4 ' dir.
 
-- Tamsayı sabiti `min_buckets` , karma tablosunda korunacak en düşük demet sayısını belirtir. İki ve sıfırdan büyük bir üssü olmalıdır. Hash_compare tarafından sağlanan değer 8 ' dir.
+- Tamsayı sabiti `min_buckets`, Karma tabloda korunacak en düşük demet sayısını belirtir. İki ve sıfırdan büyük bir üssü olmalıdır. Hash_compare tarafından sağlanan değer 8 ' dir.
 
 ## <a name="example"></a>Örnek
 
@@ -45,5 +45,5 @@ Hash_set bildirme ve kullanma örnekleri için bkz. [hash_map:: hash_map](../sta
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Standart kitaplıkta Iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[Standart kitaplıkta Iş parçacığı güvenliği \ C++ ](../standard-library/thread-safety-in-the-cpp-standard-library.md)
 [C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)

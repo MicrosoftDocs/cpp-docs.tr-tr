@@ -14,16 +14,16 @@ f1_keywords:
 - xmemory0/std::pointer_traits::rebind
 - memory/std::pointer_traits::pointer_to
 ms.assetid: 545aecf1-3561-4859-8b34-603c079fe1b3
-ms.openlocfilehash: 109e51ad9eba54f31b90da9b8b85bec105c7dce6
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 6d89348867982bfb86c0bf2404a017f6a448d1a1
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68240417"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72687135"
 ---
-# <a name="pointertraits-struct"></a>pointer_traits Yapısı
+# <a name="pointer_traits-struct"></a>pointer_traits Yapısı
 
-Şablon sınıfın bir nesnesinin gerektirdiği bilgileri sağlar `allocator_traits` bir ayırıcı işaretçi türü ile açıklamak için `Ptr`.
+@No__t_1 işaretçi türündeki bir ayırıcıyı tanımlayan `allocator_traits` türünde bir nesne için gereken bilgileri sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -34,7 +34,7 @@ template <class Ptr>
 
 ## <a name="remarks"></a>Açıklamalar
 
-PTR, bir ham işaretçi türü olabilir `Ty *` veya aşağıdaki özelliklere sahip bir sınıf.
+PTR, `Ty *` türünde bir ham işaretçi veya aşağıdaki özelliklere sahip bir sınıf olabilir.
 
 ```cpp
 struct Ptr
@@ -54,25 +54,25 @@ struct Ptr
 
 |||
 |-|-|
-|`typedef T2 difference_type`|Türü `T2` olduğu `Ptr::difference_type` türü varsa, aksi takdirde, `ptrdiff_t`. Varsa `Ptr` ham bir işaretçi türü `ptrdiff_t`.|
-|`typedef T1 element_type`|Türü `T1` olduğu `Ptr::element_type` türü varsa, aksi takdirde, `Ty`. Varsa `Ptr` ham bir işaretçi türü `Ty`.|
-|`typedef Ptr pointer`|Türü `Ptr`.|
+|`typedef T2 difference_type`|@No__t_0 tür varsa `Ptr::difference_type`, aksi takdirde `ptrdiff_t`. @No__t_0 bir ham işaretçisiyse, tür `ptrdiff_t`.|
+|`typedef T1 element_type`|@No__t_0 tür varsa `Ptr::element_type`, aksi takdirde `Ty`. @No__t_0 bir ham işaretçisiyse, tür `Ty`.|
+|`typedef Ptr pointer`|Tür `Ptr`.|
 
 ### <a name="structs"></a>Yapılar
 
 |||
 |-|-|
-|`rebind`|Temel alınan işaretçiye dönüştürmek için girişimleri için belirtilen bir türün yazın.|
+|`rebind`|Temel alınan işaretçi türünü belirtilen bir türe dönüştürmeye çalışır.|
 
 ### <a name="methods"></a>Yöntemler
 
-|Ad|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
-|[pointer_to](#pointer_to)|Rastgele bir başvuru sınıfının bir nesnesi için dönüştürür `Ptr`.|
+|[pointer_to](#pointer_to)|@No__t_0 sınıfının bir nesnesine rastgele bir başvuru dönüştürür.|
 
-### <a name="pointer_to"></a> pointer_to
+### <a name="pointer_to"></a>pointer_to
 
-Döndüren statik yöntem `Ptr::pointer_to(obj)`, bu işlev zaten varsa. Aksi takdirde, rastgele bir başvuru sınıfının bir nesnesi için dönüştürülmesi mümkün değil `Ptr`. Varsa `Ptr` bu yöntemi döndürür bir ham işaretçi olan `addressof(obj)`.
+Bu işlev varsa `Ptr::pointer_to(obj)` döndüren statik yöntem. Aksi takdirde, `Ptr` sınıfının bir nesnesine rastgele bir başvuru dönüştürmek mümkün değildir. @No__t_0 bir ham işaretçisiyse, bu yöntem `addressof(obj)` döndürür.
 
 ```cpp
 static pointer pointer_to(element_type& obj);

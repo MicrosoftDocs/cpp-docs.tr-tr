@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - gslice_array class
 ms.assetid: ad1b4514-b14a-4baf-a293-d5a8e8674c75
-ms.openlocfilehash: 37c54d09fdfe920c832c4baa7984fee4e090d04a
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 68ce774128395e941ff80580a02c4ee28a74a4e4
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68448929"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72689592"
 ---
-# <a name="gslicearray-class"></a>gslice_array Sınıfı
+# <a name="gslice_array-class"></a>gslice_array Sınıfı
 
-Bir valarray genel dilimi tarafından tanımlanan alt küme dizileri arasında işlemler sağlayarak genel dilim nesnelerini destekleyen iç, yardımcı şablon sınıfı.
+Bir valarray genel dilimi tarafından tanımlanan alt küme dizileri arasında işlemler sağlayarak genel dilim nesnelerini destekleyen iç, yardımcı sınıf şablonu.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -54,15 +54,15 @@ public:
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıfı, `va` [valarray](../standard-library/valarray-class.md) `gs` [](../standard-library/gslice-class.md) **Type>sınıfınınbirnesnesinebirbaşvurudepolayanbirnesnetanımlarvebirgslicesınıfınınarasındanseçilecek\<** öğelerin dizisini açıklayan bir nesneyle birlikte `valarray<Type>` nesnesi.
+Sınıfı, `valarray<Type>` nesnesinden seçilecek öğelerin dizisini açıklayan [gslice](../standard-library/gslice-class.md) sınıfının bir nesne `gs` birlikte [valarray](../standard-library/valarray-class.md)  **\<Type >** sınıfının bir nesne `va` bir başvurusunu depolayan bir nesne tanımlar.
 
-Yalnızca form `gslice_array<Type>` [VA&#91;GS&#93;](../standard-library/valarray-class.md#op_at)ifadesi yazarak bir nesne oluşturursunuz. Gslice_array sınıfının üye işlevleri, için `valarray<Type>`tanımlanan karşılık gelen işlev imzaları gibi davranır, ancak yalnızca seçili öğelerin sırası etkilenir.
+Yalnızca bir `gslice_array<Type>` nesnesi oluşturarak [&#91;&#93;](../standard-library/valarray-class.md#op_at)bir nesne oluşturun. Gslice_array sınıfının üye işlevleri, `valarray<Type>` için tanımlanan karşılık gelen işlev imzaları gibi davranır, ancak yalnızca seçili öğelerin sırası etkilenir.
 
-Şablon sınıfı belirli valarray işlemleri tarafından dolaylı olarak oluşturulur ve programda doğrudan kullanılamaz. Bunun yerine iç yardımcı şablon sınıfı, dilim alt simge işleci tarafından kullanılır:
+Sınıf şablonu belirli valarray işlemleri tarafından dolaylı olarak oluşturulur ve programda doğrudan kullanılamaz. Bunun yerine iç yardımcı sınıf şablonu, dilim alt simge işleci tarafından kullanılır:
 
-`gslice_array`\<**Tür** >   >: :`operator[]` (Constgslice &) yazın. `valarray` \<
+`gslice_array` \< **türü** >  `valarray` \< **Type**>:: `operator[]` ( **constgslice &** ).
 
-Bir `gslice_array<Type>` nesnesi, bir valarray `va[gsl]` `gsl` dilimi`va`için yalnızca formun bir ifadesini yazarak oluşturursunuz. Gslice_array sınıfının üye işlevleri, için `valarray<Type>`tanımlanan karşılık gelen işlev imzaları gibi davranır, ancak yalnızca seçili öğelerin sırası etkilenir. Gslice_array tarafından denetlenen sıra, dilim oluşturucusunun üç parametresi, ilk dilimdeki ilk öğenin dizini, her bir dilimdeki öğelerin sayısı ve her bir dilimdeki öğeler arasındaki mesafe tarafından tanımlanır.
+Bir `gslice_array<Type>` nesnesi, valarray `va` Slice `gsl` için form `va[gsl]` bir ifadesi yazarak oluşturursunuz. Gslice_array sınıfının üye işlevleri, `valarray<Type>` için tanımlanan karşılık gelen işlev imzaları gibi davranır, ancak yalnızca seçili öğelerin sırası etkilenir. Gslice_array tarafından denetlenen sıra, dilim oluşturucusunun üç parametresi, ilk dilimdeki ilk öğenin dizini, her bir dilimdeki öğelerin sayısı ve her bir dilimdeki öğeler arasındaki mesafe tarafından tanımlanır.
 
 Aşağıdaki örnekte:
 

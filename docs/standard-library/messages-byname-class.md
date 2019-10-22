@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - messages_byname class
 ms.assetid: c6c64841-3e80-43c8-b54c-fed41833ad6b
-ms.openlocfilehash: b8fe1ab2db792819831f5c50aa99a02559f71cdd
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 56d8931cb404d9c0f3f5113f8b2ca0f1158209f2
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68451813"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72689337"
 ---
-# <a name="messagesbyname-class"></a>messages_byname Sınıfı
+# <a name="messages_byname-class"></a>messages_byname Sınıfı
 
-Türetilmiş şablon sınıfı, yerelleştirilmiş iletilerin alınmasını etkinleştirerek, belirli bir yerel ayarın ileti modeli olarak kullanılabilecek bir nesneyi tanımlar.
+Türetilmiş sınıf şablonu, yerelleştirilmiş iletilerin alınmasını etkinleştirerek, belirli bir yerel ayarın ileti modeli olarak işlev görebilecek bir nesne tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -39,19 +39,19 @@ protected:
 
 ### <a name="parameters"></a>Parametreler
 
-*_Locname*\
+*_Locname* \
 Adlandırılmış bir yerel ayar.
 
-*_Refs*\
+*_Refs* \
 İlk başvuru sayısı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Davranışı adlandırılmış yerel ayar *_Locname*tarafından belirlenir. Her Oluşturucu kendi temel nesnesini > CharType ( `_Refs`) [iletileri](../standard-library/messages-class.md#messages)\<ile başlatır.
+Davranışı adlandırılmış yerel ayar *_Locname*tarafından belirlenir. Her Oluşturucu kendi temel nesnesini \<CharType > (`_Refs`) [iletileriyle](../standard-library/messages-class.md#messages) başlatır.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<yerel ayar >
+**Üst bilgi:** \<locale >
 
 **Ad alanı:** std
 

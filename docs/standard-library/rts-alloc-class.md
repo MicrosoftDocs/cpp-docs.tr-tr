@@ -12,16 +12,16 @@ helpviewer_keywords:
 - stdext::rts_alloc [C++], deallocate
 - stdext::rts_alloc [C++], equals
 ms.assetid: ab41bffa-83d1-4a1c-87b9-5707d516931f
-ms.openlocfilehash: 065c0eaf936a438f48dbb8aa28704e0f53926a03
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: b0ec7d4d3dbe5ef1334bf3c394819a4f5235c28c
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68451132"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72688989"
 ---
-# <a name="rtsalloc-class"></a>rts_alloc Sınıfı
+# <a name="rts_alloc-class"></a>rts_alloc Sınıfı
 
-Rts_alloc şablon sınıfı, bir dizi önbellek örneği tutan bir [filtre](../standard-library/allocators-header.md) tanımlar ve derleme zamanı yerine çalışma zamanında ayırma ve ayırmayı kaldırma için hangi örneği kullanacağınızı belirler.
+Rts_alloc sınıf şablonu, bir dizi önbellek örneği tutan bir [filtre](../standard-library/allocators-header.md) tanımlar ve derleme zamanı yerine çalışma zamanında ayırma ve ayırmayı kaldırma için hangi örneği kullanacağınızı belirler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -38,7 +38,7 @@ class rts_alloc
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu şablon sınıfı birden çok blok ayırıcı örneği barındırır ve derleme süresi yerine çalışma zamanında ayırma veya ayırmayı kaldırma için hangi örneği kullanacağınızı belirler. Yeniden bağlama Derlenemeyen derleyiciler ile kullanılır.
+Bu sınıf şablonu, birden çok blok ayırıcı örneği barındırır ve derleme süresi yerine çalışma zamanında ayırma veya ayırmayı kaldırma için hangi örneği kullanacağınızı belirler. Yeniden bağlama Derlenemeyen derleyiciler ile kullanılır.
 
 ### <a name="member-functions"></a>Üye işlevleri
 
@@ -50,7 +50,7 @@ Bu şablon sınıfı birden çok blok ayırıcı örneği barındırır ve derle
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<ayrıcılar >
+**Üst bilgi:** \<allocators >
 
 **Ad alanı:** stdext
 
@@ -74,7 +74,7 @@ Ayrılan nesneye yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi `caches[_IDX].allocate(count)` `_IDX` , dizinin istenen blok boyutu *sayısı*tarafından belirlendiği, veya *Count* çok büyükse, öğesini döndürür `operator new(count)`. `cache`, önbellek nesnesini temsil eder.
+Üye işlevi, Dizin `_IDX` istenen blok boyutu *sayısı*tarafından belirlendiği `caches[_IDX].allocate(count)` döndürür veya *sayı* çok büyükse `operator new(count)` döndürür. Cache nesnesini temsil eden `cache`.
 
 ## <a name="deallocate"></a>Rts_alloc::d eallocate
 
@@ -93,7 +93,7 @@ void deallocate(void* ptr, std::size_t count);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi `caches[_IDX].deallocate(ptr, count)` `_IDX` , dizinin istenen blok boyutu *sayısı*tarafından belirlendiği, ya da *Count* çok büyükse, döndürür `operator delete(ptr)`.
+Üye işlevi, Dizin `_IDX` istenen blok boyutu *sayısı*tarafından belirlendiği `caches[_IDX].deallocate(ptr, count)` çağırır veya *sayı* çok büyükse `operator delete(ptr)` döndürür.
 
 ## <a name="equals"></a>Rts_alloc:: Equals
 
@@ -112,9 +112,9 @@ bool equals(const sync<_Cache>& _Other) const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-sonucu`caches[0].equals(other.caches[0])`ise true, aksi durumda **false**. `caches`önbellek nesnelerinin dizisini temsil eder.
+`caches[0].equals(other.caches[0])` sonucu olursa **true** ; Aksi takdirde, **false**. `caches`, önbellek nesnelerinin dizisini temsil eder.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[ALLOCATOR_DECL](../standard-library/allocators-functions.md#allocator_decl)\
-[\<ayrıcılar >](../standard-library/allocators-header.md)
+[ALLOCATOR_DECL](../standard-library/allocators-functions.md#allocator_decl) \
+[\<allocators >](../standard-library/allocators-header.md)

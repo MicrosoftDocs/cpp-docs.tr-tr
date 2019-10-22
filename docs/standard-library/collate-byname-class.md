@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - collate_byname class
 ms.assetid: 3dc380df-867c-4763-b60e-ba62a8e63ca7
-ms.openlocfilehash: b8ed428da05e706796a981b8ca9d601033156c6f
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 3e9a256ac7bdb5f6d077746fe2a08990ed41e931
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68458618"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72688265"
 ---
-# <a name="collatebyname-class"></a>collate_byname Sınıfı
+# <a name="collate_byname-class"></a>collate_byname Sınıfı
 
-Dize sıralama kurallarıyla ilgili kültürel bir alana özgü bilgilerin alınmasını sağlayan, verili yerel ayarın bir harmanlama modeli olarak hizmet verebilen bir nesneyi tanımlayan türetilmiş bir şablon sınıfı.
+Belirli bir yerel ayarın bir harmanlama modeli olarak işlev yapabilecek bir nesneyi tanımlayan, dize sıralama kurallarıyla ilgili bir kültürel alanına özgü bilgilerin alınmasını sağlayan türetilmiş bir sınıf şablonu.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -39,19 +39,19 @@ protected:
 
 ### <a name="parameters"></a>Parametreler
 
-*_Locname*\
+*_Locname* \
 Adlandırılmış bir yerel ayar.
 
-*_Refs*\
+*_Refs* \
 İlk başvuru sayısı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfı, [harmanlama](../standard-library/collate-class.md#collate)\<CharType > türünde bir [yerel ayar modeli](../standard-library/locale-class.md#facet_class) olarak kullanılabilecek bir nesneyi tanımlar. Davranışı [adlandırılmış](../standard-library/locale-class.md#name) yerel ayar *_Locname*tarafından belirlenir. Her Oluşturucu temel nesnesini [harmanlama](../standard-library/collate-class.md#collate)\<CharType > ( `_Refs`) ile başlatır.
+Sınıf şablonu, > \<CharType [harmanlama](../standard-library/collate-class.md#collate) türünde bir [yerel ayar modeli](../standard-library/locale-class.md#facet_class) olarak kullanılabilecek bir nesneyi tanımlar. Davranışı [adlandırılmış](../standard-library/locale-class.md#name) yerel ayar *_Locname*tarafından belirlenir. Her Oluşturucu temel nesnesini [collate](../standard-library/collate-class.md#collate) \<CharType > (`_Refs`) ile başlatır.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<yerel ayar >
+**Üst bilgi:** \<locale >
 
 **Ad alanı:** std
 

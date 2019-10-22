@@ -7,14 +7,14 @@ helpviewer_keywords:
 - iterator_traits struct
 - iterator_traits class
 ms.assetid: 8b92c2c5-f658-402f-8ca1-e7ae301b8514
-ms.openlocfilehash: 9d2f9d79d200579f539f7d9edc49d4a907e6cdb2
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 924ca5ae1d32753bbe315252d942425712962639
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68455577"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72689457"
 ---
-# <a name="iteratortraits-struct"></a>iterator_traits Yapısı
+# <a name="iterator_traits-struct"></a>iterator_traits Yapısı
 
 Bir yineleyicinin sahip olması gereken tüm kritik tür tanımlarını belirtmek için kullanılan bir şablon Yardımcısı yapısı.
 
@@ -35,19 +35,19 @@ struct iterator_traits {
 
 Şablon yapısı üye türlerini tanımlar
 
-- `iterator_category`: için `Iterator::iterator_category`bir eş anlamlı.
+- `iterator_category`: `Iterator::iterator_category` için bir eş anlamlı.
 
-- `value_type`: için `Iterator::value_type`bir eş anlamlı.
+- `value_type`: `Iterator::value_type` için bir eş anlamlı.
 
-- `difference_type`: için `Iterator::difference_type`bir eş anlamlı.
+- `difference_type`: `Iterator::difference_type` için bir eş anlamlı.
 
-- `distance_type`: için bir eş anlamlı`Iterator::difference_type.`
+- `distance_type`: `Iterator::difference_type.` için bir eş anlamlı
 
-- `pointer`: için `Iterator::pointer`bir eş anlamlı.
+- `pointer`: `Iterator::pointer` için bir eş anlamlı.
 
-- `reference`: için `Iterator::reference`bir eş anlamlı.
+- `reference`: `Iterator::reference` için bir eş anlamlı.
 
-Kısmi uzmanlık, **tür** <strong>\*</strong> veya **const türünde** <strong>\*</strong>bir nesne işaretçiyle ilişkili kritik türleri tespit.
+Kısmi uzmanlık **, tür** <strong>\*</strong> veya **const Type** <strong>\*</strong>türünde bir nesne işaretçisi ile ilişkili kritik türleri tespit.
 
 Bu uygulamada, kısmi özelleşmenin kullanıldığı çeşitli şablon işlevleri de kullanabilirsiniz:
 
@@ -71,7 +71,7 @@ template <class Ty>
 ptrdiff_t *_Dist_type(const Ty *);
 ```
 
-aynı türden birkaçını daha dolaylı olarak belirleyen. Bu işlevleri bir işlev çağrısında bağımsız değişken olarak kullanırsınız. Tek amaçları, çağrılan işleve yararlı bir şablon sınıfı parametresi sağlamaktır.
+aynı türden birkaçını daha dolaylı olarak belirleyen. Bu işlevleri bir işlev çağrısında bağımsız değişken olarak kullanırsınız. Tek amaçları, çağrılan işleve yararlı bir sınıf şablonu parametresi sağlamaktır.
 
 ## <a name="example"></a>Örnek
 
@@ -118,12 +118,12 @@ struct std::bidirectional_iterator_tag
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<Yineleyici >
+**Üst bilgi:** \<iterator >
 
 **Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<Yineleyici >](../standard-library/iterator.md)\
-[C++ Standart kitaplıkta Iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[\<iterator >](../standard-library/iterator.md) \
+[Standart kitaplıkta Iş parçacığı güvenliği \ C++ ](../standard-library/thread-safety-in-the-cpp-standard-library.md)
 [C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)

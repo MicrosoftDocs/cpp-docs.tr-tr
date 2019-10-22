@@ -13,19 +13,19 @@ helpviewer_keywords:
 - operator!=
 - operator !=
 ms.assetid: ef2be7f0-1c94-4edc-b65c-731fddd519f4
-ms.openlocfilehash: 1214dd7d5034b80b14f8dd1422aa1a3b8a253023
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 89d41d099d151f77d91cd94b22047824779dcf54
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68447644"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72687343"
 ---
 # <a name="operator"></a>operator!=
 
 > [!NOTE]
 > Bu konu, C++ standart kitaplıkta kullanılan C++ kapsayıcıların Işlevsel bir örneği olarak Microsoft belgelerimde yer almaktadır. Daha fazla bilgi için bkz [ C++ . standart kitaplık kapsayıcıları](../standard-library/stl-containers.md).
 
-Şablon `operator!=` sınıfı [kapsayıcısının](../standard-library/sample-container-class.md)iki nesnesini karşılaştırmak için aşırı yüklemeler.
+Sınıf şablonu [kapsayıcısının](../standard-library/sample-container-class.md)iki nesnesini karşılaştırmak için `operator!=` aşırı yükler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -38,8 +38,8 @@ bool operator!=(
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Döndürür `!(left == right)`.
+@No__t_0 döndürür.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<örnek kapsayıcı >](../standard-library/sample-container.md)
+[kapsayıcı > \<sample](../standard-library/sample-container.md)

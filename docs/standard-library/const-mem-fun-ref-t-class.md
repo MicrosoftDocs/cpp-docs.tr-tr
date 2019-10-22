@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - const_mem_fun_ref_t class
 ms.assetid: 316ddbaa-9f46-4931-8eba-ea4ca66360ef
-ms.openlocfilehash: 7e208364e2cac0e0d4e020dc865b299fbd2bde2c
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 8ce29eb0d2122dbd95fea34fa59f3fa11b9b388e
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68244559"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72689767"
 ---
-# <a name="constmemfunreft-class"></a>const_mem_fun_ref_t Sınıfı
+# <a name="const_mem_fun_ref_t-class"></a>const_mem_fun_ref_t Sınıfı
 
-İzin veren bir bağdaştırıcı sınıfı bir **const** hiçbir bağımsız değişken olarak bir başvuru bağımsız değişkeni ile hazırlarken bir birli işlev nesnesi çağrılacak üye işlevi. C ++ 17 sürümünde kaldırılmıştır C ++ 11'de kullanım dışı.
+Bir başvuru bağımsız değişkeniyle başlatıldığında birli işlev nesnesi olarak çağrılması için bağımsız değişken alan bir **const** üye işlevine izin veren bir bağdaştırıcı sınıfı. C++ 11 ' de kullanım dışı bırakılmıştır ve C++ 17 ' de kaldırılmıştır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -31,20 +31,20 @@ template <class Result, class Type>
 
 ### <a name="parameters"></a>Parametreler
 
-*PM*\
-Bir sınıfın üye işlevi işaretçisi `Type` bir işlev nesnesi için dönüştürülecek.
+*Pm* \
+İşlev nesnesine dönüştürülecek `Type` sınıfının üye işlevine yönelik bir işaretçi.
 
-*Sol*\
-Nesne, *Pm* üye işlevi çağrılır.
+*sol* \
+*PM* üye işlevinin çağrıldığı nesne.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bir uyarlanabilir birli işlevi.
+Uyarlanabilir bir birli işlev.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfı bir kopyasını depolar *Pm*, bir sınıfın bir üye işlevi işaretçisi olmalıdır `Type`, özel üye nesnesinde. Onun üye işlevini tanımlar `operator()` döndüren olarak (**sol**.\* `Pm`) () **const**.
+Sınıf şablonu, bir özel üye nesnesinde `Type` sınıfının üye işlevine bir işaretçi olması gereken *PM*kopyasını depolar. @No__t_0 üye işlevini, döndüren (**Left**. \* `Pm`) () **const**olarak tanımlar.
 
 ## <a name="example"></a>Örnek
 
-Oluşturucusuna `const_mem_fun_ref_t` genellikle kullanılmaz doğrudan; yardımcı işlevini `mem_fun_ref` üye işlevleri uyum sağlamak için kullanılır. Bkz: [mem_fun_ref](../standard-library/functional-functions.md#mem_fun_ref) üye işlevi bağdaştırıcıları kullanmayı gösteren bir örnek.
+@No__t_0 Oluşturucusu genellikle doğrudan kullanılmaz; `mem_fun_ref` yardımcı işlevi, üye işlevlerini uyarlamak için kullanılır. Üye işlev bağdaştırıcılarını nasıl kullanacağınızı gösteren bir örnek için bkz. [mem_fun_ref](../standard-library/functional-functions.md#mem_fun_ref) .

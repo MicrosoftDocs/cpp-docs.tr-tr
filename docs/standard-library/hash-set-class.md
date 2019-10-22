@@ -86,14 +86,14 @@ helpviewer_keywords:
 - stdext::hash_set::upper_bound
 - stdext::hash_set::value_comp
 ms.assetid: c765c06e-cbb6-48c2-93ca-d15468eb28d7
-ms.openlocfilehash: ce762ce63f98ccb43de539d200863a685a70067f
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: becf038678f4abbe285e719e4d1cc1f3f12de982
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68448589"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72689543"
 ---
-# <a name="hashset-class"></a>hash_set Sınıfı
+# <a name="hash_set-class"></a>hash_set Sınıfı
 
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif, [unordered_set sınıfıdır](../standard-library/unordered-set-class.md).
@@ -111,14 +111,14 @@ class hash_set
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtar*\
+*Anahtar* \
 Hash_set içinde depolanacak öğe veri türü.
 
-*Lerdir*\
-İki işlev nesnesi içeren tür, bir ikili koşul olan sınıf karşılaştırmadan, kendi göreli sıralarını ve öğelerin birli koşul eşleme anahtarı değerleri işaretsiz olan bir karma işlevi türü `size_t`tamsayılar. Bu bağımsız değişken isteğe bağlıdır ve `hash_compare<Key, less<Key> >` varsayılan değerdir.
+*Nitelikler* \
+İki işlev nesnesi içeren tür, bir ikili koşul olan sınıf karşılaştırmadan, kendi göreli sıralarını ve öğelerin birli koşul eşleme anahtarı değerleri işaretsiz olan bir karma işlevi `size_t` türünde tamsayılar. Bu bağımsız değişken isteğe bağlıdır ve `hash_compare<Key, less<Key> >` varsayılan değerdir.
 
-*Öğe*\
-Belleğin hash_set's ayırması ve ayırmayı kaldırma hakkındaki ayrıntıları kapsülleyen saklı ayırıcı nesnesini temsil eden tür. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değerdir `allocator<Key>`.
+*Ayırıcı* \
+Belleğin hash_set's ayırması ve ayırmayı kaldırma hakkındaki ayrıntıları kapsülleyen saklı ayırıcı nesnesini temsil eden tür. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer `allocator<Key>`.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -132,7 +132,7 @@ Hash_set:
 
 - Benzersizdir, çünkü öğelerinin her birinde benzersiz bir anahtar olması gerekir. Hash_set Ayrıca basit ilişkilendirilebilir bir kapsayıcı olduğundan, öğeleri de benzersizdir.
 
-- Bir şablon sınıfı, sağladığı işlevsellik geneldir ve bu nedenle öğe veya anahtar olarak içerilen belirli veri türünden bağımsızdır. Öğeler ve anahtarlar için kullanılacak veri türleri, karşılaştırma işlevi ve ayırıcı ile birlikte bir sınıf şablonunda parametreler olarak belirtilir.
+- Bir sınıf şablonu, sağladığı işlevsellik geneldir ve bu nedenle öğe veya anahtar olarak içerilen belirli veri türünden bağımsızdır. Öğeler ve anahtarlar için kullanılacak veri türleri, karşılaştırma işlevi ve ayırıcı ile birlikte bir sınıf şablonunda parametreler olarak belirtilir.
 
 Sıralama üzerinden karmalamanın başlıca avantajı daha fazla verimlilik; başarılı bir karma değer ekleme, silme işlemleri gerçekleştirir ve sabit ortalama süre içinde, sıralama teknikleri için kapsayıcıdaki öğelerin sayısının logaritmasına kıyasla bir zaman orantılı olarak bulur. Bir kümedeki bir öğenin değeri doğrudan değiştirilemez. Bunun yerine, eski değerleri silmeniz ve yeni değerlere sahip öğeler eklemeniz gerekir.
 
@@ -140,75 +140,75 @@ Kapsayıcı türünün seçimi genelde uygulamanın gerektirdiği arama ve eklem
 
 Değerleri, anahtar ile ilişkilendirirken, uygulama tarafından karşılanmadığı durumlarda hash_set 'in ilişkilendirilebilir kapsayıcısı olmalıdır. Bir hash_set öğeleri benzersizdir ve kendi sıralama anahtarları olarak görev yapar. Bu tür bir yapı modeli, sözcüklerin yalnızca bir defa geçebildiği sıralı bir sözcükler listesindedir. Sözcüklerin birden çok örneğine izin veriliyorsa, hash_multiset uygun kapsayıcı yapısı olur. Değerlerin benzersiz anahtar sözcükler listesine eklenmesi gerekiyorsa, hash_map bu verileri içeren uygun bir yapı olacaktır. Bunun yerine anahtarlar benzersiz değilse, hash_multimap kapsayıcı olur.
 
-Hash_set, `Traits` [value_compare](#value_compare)türünde depolanan bir karma nesne çağırarak denetlediği diziyi sıralar. Bu saklı nesneye [key_comp](#key_comp)üye işlevi çağırarak erişilebilir. Böyle bir işlev nesnesi, hash_compare < Key sınıfının bir nesnesiyle aynı davranmalıdır *, daha az\<Key > >.* Özellikle, Key türündeki tüm `key` değerler için, Call nitelik (`key`), size_t türündeki değerlerin bir dağılımını verir.
+Hash_set, [value_compare](#value_compare)türünde bir depolanmış karma `Traits` nesnesi çağırarak denetlediği diziyi sıralar. Bu saklı nesneye [key_comp](#key_comp)üye işlevi çağırarak erişilebilir. Böyle bir işlev nesnesi, hash_compare < Key sınıfının bir nesnesiyle aynı davranmalıdır *> > daha az \<Key.* Özellikle, anahtar türü `key` tüm değerler için, Call nitelik (`key`), size_t türündeki değerlerin bir dağılımını verir.
 
 Genelde, bu sıralamayı oluşturmak için öğelerin yalnızca küçüktür biçiminde karşılaştırılabilir olması gerekir; böylece, herhangi iki öğe belirtildiğinde, eşit oldukları (yani birinin diğerinden daha küçük olmadığı anlamında) veya birinin diğerinden küçük olduğu belirlenebilir. Bu, denk olmayan öğeler arasında bir sıralamaya neden olur. Daha teknik bir not üzerinde, karşılaştırma işlevi standart matematiksel anlamda katı bir zayıf sıralama sevk eden ikili bir koşuldur. Bir ikili koşul *f*( *x*, *y*) iki bağımsız değişken nesnesi olan x ve y ve true ya da false dönüş değerine sahip bir işlev nesnesidir. İkili koşul geri dönüşsüz, antisimetrik ve geçişli ve denklik geçişli ise, hash_set üzerine getirilen bir sıralama katı zayıf bir sıradır, burada iki nesne *x* ve *y* , her ikisi de *f*( *x* , *y*) ve *f*( *y*, *x*) false 'tur. Anahtarlar arasındaki eşitliğinin daha güçlü koşulu bu denkliğin yerini alırsa, sıralama (içindeki tüm öğelerin birbirine göre sıralanması anlamında) toplam haline gelir ve eşleşen anahtarlar birbirinden ayırt edilemez olacaktır.
 
 Denetlenen dizideki öğelerin gerçek sırası, karma işleve, sıralama işlevine ve kapsayıcı nesnesinde depolanan karma tablonun geçerli boyutuna bağlıdır. Karma tablonun geçerli boyutunu belirleyemez, bu nedenle denetimli dizideki öğelerin sırasını genel olarak tahmin edemezsiniz. Öğelerin eklenmesi hiçbir yineleyiciyi geçersiz kılmaz; öğelerin kaldırılması yalnızca özellikle kaldırılan öğeleri gösteren yineleyicileri geçersiz kılar.
 
-Hash_set Sınıfı tarafından sunulan Yineleyici çift yönlü bir yineleyicidir, ancak [Insert](#insert) ve [hash_set](#hash_set) sınıf üyesi işlevleri, şablon parametresi olarak alan ve işlev gereksinimleri daha zayıf bir giriş yineleyicisi olan sürümlere sahiptir Çift yönlü yineleyicilerin sınıfının garantisi olan en az. Farklı yineleyici kavramları, işlevselliklerindeki iyileştirmelere göre ilgili bir aile biçimlendirir. Her yineleyici kavramının kendi gereksinimler kümesi vardır ve bunlarla çalışan algoritmaların kendi varsayımlarını yineleyici türü tarafından sağlanan gereksinimlerle sınırlaması gerekir. Bir giriş yineleyicinin bazı nesnelere başvurusunun kaldırılacağı ve dizideki sonraki yineleyiciye artırılabileceği varsayılabilir. Bu en düşük işlevsellik kümesidir, ancak sınıf üye işlevleri bağlamında yineleyicilerin `first` `last`bir aralığı hakkında anlamlı bir şekilde konuşabilmek için yeterlidir.
+Hash_set Sınıfı tarafından sunulan Yineleyici çift yönlü bir yineleyicidir, ancak [Insert](#insert) ve [hash_set](#hash_set) sınıf üyesi işlevleri, şablon parametresi olarak alan ve işlev gereksinimleri daha zayıf bir giriş yineleyicisi olan sürümlere sahiptir Çift yönlü yineleyicilerin sınıfının garantisi olan en az. Farklı yineleyici kavramları, işlevselliklerindeki iyileştirmelere göre ilgili bir aile biçimlendirir. Her yineleyici kavramının kendi gereksinimler kümesi vardır ve bunlarla çalışan algoritmaların kendi varsayımlarını yineleyici türü tarafından sağlanan gereksinimlerle sınırlaması gerekir. Bir giriş yineleyicinin bazı nesnelere başvurusunun kaldırılacağı ve dizideki sonraki yineleyiciye artırılabileceği varsayılabilir. Bu en düşük işlevsellik kümesidir, ancak sınıf üye işlevleri bağlamında yineleyicilerin bir aralığı [`first`, `last`) hakkında anlamlı bir şekilde konuşabilmek yeterlidir.
 
 ### <a name="constructors"></a>Oluşturucular
 
 |Oluşturucu|Açıklama|
 |-|-|
-|[hash_set](#hash_set)|Boş olan `hash_set` veya bir kısmının tümünün veya bir kısmının `hash_set`kopyası olan oluşturur.|
+|[hash_set](#hash_set)|Boş olan veya diğer bir `hash_set` tümünün veya bir kısmının kopyası olan bir `hash_set` oluşturur.|
 
 ### <a name="typedefs"></a>Tür tanımları
 
 |Tür adı|Açıklama|
 |-|-|
-|[allocator_type](#allocator_type)|`allocator` Nesnenin sınıfını`hash_set` temsil eden bir tür.|
-|[const_iterator](#const_iterator)|İçindeki bir `const` öğeyi okuyabilen çift yönlü bir yineleyici sağlayan bir tür. `hash_set`|
-|[const_pointer](#const_pointer)|İçindeki`hash_set` **const** öğesine işaretçi sağlayan bir tür.|
-|[const_reference](#const_reference)|**Const** işlemlerini okumak ve gerçekleştirmek `hash_set` için ' de depolanan bir **const** öğesine başvuru sağlayan bir tür.|
-|[const_reverse_iterator](#const_reverse_iterator)|İçinde`hash_set`herhangi bir **const** öğesini okuyabilen çift yönlü bir yineleyici sağlayan bir tür.|
-|[difference_type](#difference_type)|Yineleyiciler tarafından gösterilen öğeler arasındaki bir `hash_set` aralıktaki öğelerinin sayısını temsil etmek için kullanılabilen işaretli bir tamsayı türü.|
-|[iden](#iterator)|İçindeki herhangi bir `hash_set`öğeyi okuyabilen veya değiştirebilen çift yönlü bir yineleyici sağlayan bir tür.|
-|[key_compare](#key_compare)|İçindeki iki öğenin göreli sırasını belirleyebilmek için iki sıralama anahtarını karşılaştırabilen bir işlev nesnesi sağlayan bir tür `hash_set`.|
-|[key_type](#key_type)|Bir nesne olarak bir `hash_set` öğesi olarak depolanan bir nesneyi sıralama anahtarı olarak kapasitesinde tanımlayan bir tür.|
-|[çağrısı](#pointer)|İçindeki bir öğeye işaretçi sağlayan bir tür `hash_set`.|
-|[Başvuru](#reference)|İçinde depolanan bir öğeye başvuru sağlayan bir tür `hash_set`.|
-|[reverse_iterator](#reverse_iterator)|Ters çevrilen `hash_set`bir öğeyi okuyabilen veya değiştirebilen çift yönlü bir yineleyici sağlayan bir tür.|
-|[size_type](#size_type)|İçindeki öğe sayısını temsil eden işaretsiz bir tamsayı türü `hash_set`.|
-|[value_compare](#value_compare)|İki işlev nesnesi sağlayan bir tür, bir `hash_set` ' ın iki öğe değerini, göreli sırasını ve öğeleri karmalarını sağlayan birli bir koşulu tespit etmek üzere karşılaştırabilen bir sınıf karşılaştırması ikili koşulu.|
-|[value_type](#value_type)|Değeri olarak kapasitesinin bir `hash_set` öğesi olarak depolanan bir nesneyi açıklayan tür.|
+|[allocator_type](#allocator_type)|@No__t_1 nesnesi için `allocator` sınıfını temsil eden bir tür.|
+|[const_iterator](#const_iterator)|@No__t_1 `const` bir öğeyi okuyabilen çift yönlü bir yineleyici sağlayan bir tür.|
+|[const_pointer](#const_pointer)|@No__t_1 bir **const** öğesine işaretçi sağlayan bir tür.|
+|[const_reference](#const_reference)|**Const** işlemlerini okumak ve gerçekleştirmek için bir `hash_set` depolanan **const** öğesine başvuru sağlayan bir tür.|
+|[const_reverse_iterator](#const_reverse_iterator)|@No__t_1 herhangi bir **const** öğesini okuyabilen çift yönlü bir yineleyici sağlayan bir tür.|
+|[difference_type](#difference_type)|Yineleyiciler tarafından gösterilen öğeler arasındaki bir aralıktaki `hash_set` öğelerinin sayısını temsil etmek için kullanılabilen işaretli bir tamsayı türü.|
+|[iden](#iterator)|Bir `hash_set` herhangi bir öğeyi okuyabilen veya değiştirebilen çift yönlü bir yineleyici sağlayan bir tür.|
+|[key_compare](#key_compare)|@No__t_0 iki öğenin göreli sırasını belirleyebilmek için iki sıralama anahtarını karşılaştıran bir işlev nesnesi sağlayan bir tür.|
+|[key_type](#key_type)|@No__t_0 öğesi olarak depolanan bir nesneyi sıralama anahtarı olarak kapasitesinde tanımlayan bir tür.|
+|[çağrısı](#pointer)|@No__t_0 bir öğeye işaretçi sağlayan bir tür.|
+|[başvurunun](#reference)|@No__t_0 depolanan bir öğeye başvuru sağlayan bir tür.|
+|[reverse_iterator](#reverse_iterator)|Ters çevrilen bir `hash_set` bir öğeyi okuyabilen veya değiştirebilen çift yönlü bir yineleyici sağlayan bir tür.|
+|[size_type](#size_type)|Bir `hash_set` öğe sayısını temsil eden işaretsiz bir tamsayı türü.|
+|[value_compare](#value_compare)|İki işlev nesnesi sağlayan bir tür, bir `hash_set` iki öğe değerini karşılaştırabilir ve öğelerin karma oluşturan birli bir koşulu tespit edebilir.|
+|[value_type](#value_type)|Bir değeri bir değer olarak kapasitesinin `hash_set` bir öğesi olarak tanımlayan bir tür.|
 
 ### <a name="member-functions"></a>Üye işlevleri
 
 |Üye işlevi|Açıklama|
 |-|-|
-|[başladı](#begin)|İçindeki ilk öğeyi ele alan bir yineleyici döndürür `hash_set`.|
-|[cbegin](#cbegin)|İçindeki ilk öğeyi adresleyen bir const yineleyici döndürür `hash_set`.|
-|[cend](#cend)|İçindeki son öğeden sonraki konumu ele alan bir const yineleyici döndürür `hash_set`.|
-|[lediğiniz](#clear)|Tüm öğelerini `hash_set`siler.|
-|[biriktirme](#count)|Bir anahtarı parametre belirtilen anahtarla eşleşen bir `hash_set` öğe sayısını döndürür.|
-|[crbegin](#crbegin)|Ters çevrilen `hash_set`ilk öğeyi adresleyen bir const yineleyici döndürür.|
-|[crend](#crend)|Ters çevrilen `hash_set`son öğeden sonraki konumu ele alan bir const yineleyici döndürür.|
-|[Emplace](#emplace)|İçinde oluşturulan bir öğesi ekler `hash_set`.|
-|[emplace_hint](#emplace_hint)|Bir `hash_set`yerleştirme ipucuyla birlikte, içine oluşturulmuş bir öğe ekler.|
-|[empty](#empty)|`hash_set` Boşsa, sınar.|
-|[erer](#end)|İçindeki son öğeden sonra gelen `hash_set`konumu ele alan bir yineleyici döndürür.|
-|[equal_range](#equal_range)|Belirtilen anahtardan daha büyük bir anahtarla ve anahtarından bir anahtarla eşit veya ondan `hash_set` daha büyük olan bir anahtarla ilk `hash_set` öğesine kadar yineleyicilerin bir çiftini döndürür.|
+|[başladı](#begin)|@No__t_0 ilk öğeyi ele alan bir yineleyici döndürür.|
+|[cbegin](#cbegin)|@No__t_0 ilk öğeyi adresleyen bir const yineleyici döndürür.|
+|[cend](#cend)|@No__t_0 son öğeden sonraki konumu ele alan bir const yineleyici döndürür.|
+|[lediğiniz](#clear)|@No__t_0 tüm öğelerini siler.|
+|[biriktirme](#count)|Anahtarı parametre tarafından belirtilen anahtarla eşleşen bir `hash_set` öğe sayısını döndürür.|
+|[crbegin](#crbegin)|Ters çevrilen `hash_set` ilk öğeyi adresleyen bir const yineleyici döndürür.|
+|[crend](#crend)|Ters çevrilen `hash_set` son öğeden sonraki konumu ele alan bir const yineleyici döndürür.|
+|[Emplace](#emplace)|Bir `hash_set` içinde oluşturulmuş bir öğe ekler.|
+|[emplace_hint](#emplace_hint)|Yerleştirme ipucuyla birlikte `hash_set` oluşturulan bir öğe ekler.|
+|[olmamalıdır](#empty)|@No__t_0 boş ise sınar.|
+|[erer](#end)|@No__t_0 son öğeden sonraki konumu ele alan bir yineleyici döndürür.|
+|[equal_range](#equal_range)|Belirtilen anahtardan daha büyük bir anahtarla ve anahtardan daha büyük veya ona eşit olan bir anahtarla `hash_set` ilk öğe olan bir `hash_set` yineleyicilerin bir çiftini döndürür.|
 |[silme](#erase)|Belirtilen konumlardan bir `hash_set` öğeyi veya öğe aralığını kaldırır veya belirtilen bir anahtarla eşleşen öğeleri kaldırır.|
-|[bilgi](#find)|İçindeki bir `hash_set` öğenin belirtilen anahtara denk eşdeğeri olan konumunu ele alan bir yineleyici döndürür.|
-|[get_allocator](#get_allocator)|Oluşturmak için kullanılan `allocator` nesnenin bir kopyasını döndürür. `hash_set`|
-|[ekleyin](#insert)|İçine bir öğe veya öğe aralığı ekler `hash_set`.|
-|[key_comp](#key_comp)|İçindeki anahtarları sıralamak için kullanılan karşılaştırma nesnesinin bir kopyasını alır `hash_set`.|
-|[lower_bound](#lower_bound)|Bir yineleyiciyi, belirtilen anahtardan daha büyük veya `hash_set` ona eşit olan bir anahtarla birlikte içindeki ilk öğeye döndürür.|
-|[max_size](#max_size)|Maksimum uzunluğunu `hash_set`döndürür.|
-|[rbegin](#rbegin)|Ters çevrilen `hash_set`ilk öğeyi adresleyen bir yineleyici döndürür.|
-|[rend](#rend)|Ters çevrilen `hash_set`son öğeden sonraki konumu ele alan bir yineleyici döndürür.|
-|[boyutla](#size)|İçindeki öğelerin sayısını döndürür `hash_set`.|
-|[Kur](#swap)|İki `hash_set`öğenin öğelerini değiş tokuş eder.|
-|[upper_bound](#upper_bound)|Bir yineleyiciyi belirtilen anahtardan daha büyük veya ona `hash_set` eşit olan bir anahtarla ilk öğesine döndürür.|
-|[value_comp](#value_comp)|Karma nitelikleri nesnesinin bir `hash_set`kopyasını alır ve içindeki öğe anahtar değerlerini sıralamak için kullanılır.|
+|[bilgi](#find)|Belirtilen anahtara eşdeğer bir anahtara sahip bir `hash_set` öğenin konumunu ele alan bir yineleyici döndürür.|
+|[get_allocator](#get_allocator)|@No__t_1 oluşturmak için kullanılan `allocator` nesnesinin bir kopyasını döndürür.|
+|[ekleyin](#insert)|Bir `hash_set` öğe veya öğe aralığı ekler.|
+|[key_comp](#key_comp)|@No__t_0 anahtarları sıralamak için kullanılan karşılaştırma nesnesinin bir kopyasını alır.|
+|[lower_bound](#lower_bound)|Bir yineleyiciyi belirtilen anahtardan daha büyük veya ona eşit bir anahtarla bir `hash_set` ilk öğeye döndürür.|
+|[max_size](#max_size)|@No__t_0 maksimum uzunluğunu döndürür.|
+|[rbegin](#rbegin)|Ters çevrilen `hash_set` ilk öğeyi adresleyen bir yineleyici döndürür.|
+|[rend](#rend)|Ters çevrilen `hash_set` son öğeden sonraki konumu ele alan bir yineleyici döndürür.|
+|[boyutla](#size)|@No__t_0 öğe sayısını döndürür.|
+|[Kur](#swap)|İki `hash_set`s öğelerini değiş tokuş eder.|
+|[upper_bound](#upper_bound)|Bir yineleyiciyi belirtilen anahtardan daha büyük veya ona eşit olan bir anahtarla `hash_set` ilk öğeye döndürür.|
+|[value_comp](#value_comp)|Bir `hash_set` öğe anahtar değerlerini karma ve sıralama için kullanılan karma nitelikleri nesnesinin bir kopyasını alır.|
 
 ### <a name="operators"></a>İşleçler
 
 |İşleç|Açıklama|
 |-|-|
-|[hash_set::operator=](#op_eq)|Öğesinin `hash_set` öğelerini başka `hash_set`bir kopyasıyla değiştirir.|
+|[hash_set:: operator =](#op_eq)|@No__t_0 öğelerini başka bir `hash_set` kopyasıyla değiştirir.|
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -216,7 +216,7 @@ Hash_set Sınıfı tarafından sunulan Yineleyici çift yönlü bir yineleyicidi
 
 **Ad alanı:** stdext
 
-## <a name="allocator_type"></a>  hash_set::allocator_type
+## <a name="allocator_type"></a>hash_set::allocator_type
 
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif, [unordered_set sınıfıdır](../standard-library/unordered-set-class.md).
@@ -235,7 +235,7 @@ typedef list<typename Traits::value_type, typename Traits::allocator_type>::allo
 
 ### <a name="example"></a>Örnek
 
-Tarafından kullanılan `allocator_type`örnek için bkz. [get_allocator](#get_allocator) .
+@No__t_1 kullanan bir örnek için bkz. [get_allocator](#get_allocator) .
 
 ## <a name="begin"></a>hash_set:: Begin
 
@@ -256,7 +256,7 @@ Hash_set içindeki ilk öğeyi ele alarak çift yönlü bir yineleyici veya bir 
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dönüş değeri `begin` `const_iterator`öğesine atanırsa, hash_set nesnesindeki öğeler değiştirilemez. Dönüş değeri `begin` bir `iterator`öğesine atanırsa, hash_set nesnesindeki öğeler değiştirilebilir.
+@No__t_0 dönüş değeri bir `const_iterator` atanırsa, hash_set nesnesindeki öğeler değiştirilemez. @No__t_0 dönüş değeri bir `iterator` atanırsa, hash_set nesnesindeki öğeler değiştirilebilir.
 
 ### <a name="example"></a>Örnek
 
@@ -311,11 +311,11 @@ const_iterator cbegin() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-[Hash_set](../standard-library/hash-set-class.md) içindeki ilk öğeyi ele alarak const çift yönlü bir yineleyici veya bir boş `hash_set`olan konum.
+[Hash_set](../standard-library/hash-set-class.md) içindeki ilk öğeyi ele alarak const çift yönlü yineleyicisi veya konumdaki boş bir `hash_set`.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dönüş değeri `cbegin`ile `hash_set` nesnedeki öğeler değiştirilemez.
+@No__t_0 dönüş değeri ile `hash_set` nesnesindeki öğeler değiştirilemez.
 
 ### <a name="example"></a>Örnek
 
@@ -358,11 +358,11 @@ const_iterator cend() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir [hash_set](../standard-library/hash-set-class.md)içindeki son öğeden sonra gelen konumu ele alan bir const çift yönlü Yineleyici. `hash_set` Boşsa`hash_set::cend == hash_set::begin`,.
+Bir [hash_set](../standard-library/hash-set-class.md)içindeki son öğeden sonra gelen konumu ele alan bir const çift yönlü Yineleyici. @No__t_0 boşsa, `hash_set::cend == hash_set::begin`.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`cend`, bir yineleyicinin sonuna kadar `hash_set`ulaşılmadığını test etmek için kullanılır. Tarafından `cend` döndürülen değer başvurulmamalıdır.
+`cend`, bir yineleyicinin `hash_set` sonuna ulaşılıp ulaşılmadığını test etmek için kullanılır. @No__t_0 tarafından döndürülen değer başvurulmamalıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -437,7 +437,7 @@ The size of the hash_set is initially 2.
 The size of the hash_set after clearing is 0.
 ```
 
-## <a name="const_iterator"></a>  hash_set::const_iterator
+## <a name="const_iterator"></a>hash_set::const_iterator
 
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif, [unordered_set sınıfıdır](../standard-library/unordered-set-class.md).
@@ -450,13 +450,13 @@ typedef list<typename Traits::value_type, typename Traits::allocator_type>::cons
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir tür `const_iterator` , bir öğenin değerini değiştirmek için kullanılamaz.
+Bir tür `const_iterator`, bir öğenin değerini değiştirmek için kullanılamaz.
 
 ### <a name="example"></a>Örnek
 
-Tarafından kullanılan `const_iterator`bir [örnek için bkz](#begin) . örnek.
+@No__t_1 kullanan bir örnek için [Begin](#begin) örneğine bakın.
 
-## <a name="const_pointer"></a>  hash_set::const_pointer
+## <a name="const_pointer"></a>hash_set::const_pointer
 
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif, [unordered_set sınıfıdır](../standard-library/unordered-set-class.md).
@@ -469,7 +469,7 @@ typedef list<typename Traits::value_type, typename Traits::allocator_type>::cons
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir tür `const_pointer` , bir öğenin değerini değiştirmek için kullanılamaz.
+Bir tür `const_pointer`, bir öğenin değerini değiştirmek için kullanılamaz.
 
 Çoğu durumda, bir **const** hash_set nesnesindeki öğelere erişmek için bir [const_iterator](#const_iterator) kullanılmalıdır.
 
@@ -533,11 +533,11 @@ typedef list<typename Traits::value_type, typename Traits::allocator_type>::cons
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir tür `const_reverse_iterator` , bir öğenin değerini değiştiremez ve hash_set içinde ters yönde yinelemek için kullanılır.
+Bir tür `const_reverse_iterator`, bir öğenin değerini değiştiremiyor ve hash_set içinde ters yönde yinelemek için kullanılır.
 
 ### <a name="example"></a>Örnek
 
-Uygulamasının nasıl bildirilemeyeceğini ve kullanılacağı hakkında bir örnek için bkz. [rend](#rend) örneği`const_reverse_iterator`
+@No__t_1 bildirme ve kullanma hakkında bir örnek için bkz. [rend](#rend) örneği
 
 ## <a name="count"></a>hash_set:: Count
 
@@ -552,7 +552,7 @@ size_type count(const Key& key) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*anahtar*\
+*anahtar* \
 Hash_set eşleştirilecek öğelerin anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -565,7 +565,7 @@ hash_set, eşleşen bir anahtara sahip bir öğe içermiyorsa 0.
 
 Üye işlevi aşağıdaki aralıktaki öğelerin sayısını döndürür:
 
-\[lower_bound (*anahtar*), upper_bound (*anahtar*)).
+\[ lower_bound (*anahtar*), upper_bound (*anahtar*)).
 
 ### <a name="example"></a>Örnek
 
@@ -616,13 +616,13 @@ const_reverse_iterator crbegin() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ters çevrilen bir [hash_set](../standard-library/hash-set-class.md) içindeki ilk öğeyi ele almak veya geri çevrilmede `hash_set`son öğe olduğunu belirlemek için bir sabit ters çift yönlü Yineleyici.
+Ters çevrilen bir [hash_set](../standard-library/hash-set-class.md) içindeki ilk öğeyi ele almak veya geri çevrilmeyen `hash_set` son öğe olduğunu belirlemek için bir const ters çift yönlü Yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
 `crbegin`, [hash_set:: Begin](#begin) bir hash_set ile birlikte kullanılan ters bir hash_set ile kullanılır.
 
-Dönüş değeri `crbegin` `hash_set` ile nesne değiştirilemez.
+@No__t_0 dönüş değeri ile `hash_set` nesnesi değiştirilemez.
 
 `crbegin`, `hash_set` geriye doğru yinelemek için kullanılabilir.
 
@@ -668,15 +668,15 @@ const_reverse_iterator crend() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ters çevrilen bir [hash_set](../standard-library/hash-set-class.md) içindeki son öğeden sonra gelen konumu ele alan bir sabit ters çift yönlü yineleyici (geri çevrilmede `hash_set`ilk öğeden önce gelen konum).
+Ters çevrilen bir [hash_set](../standard-library/hash-set-class.md) (önünde olmayan `hash_set` ilk öğeden önce gelen konum) son öğeden sonra gelen konumu ele alan bir sabit ters çift yönlü Yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`crend`[hash_set:: End](#end) `hash_set`ile `hash_set` birlikte kullanılan bir ters ile kullanılır.
+`crend`, [hash_set:: End](#end) bir `hash_set` ile birlikte kullanılan ters bir `hash_set` ile kullanılır.
 
-Dönüş değeri `crend` `hash_set` ile nesne değiştirilemez.
+@No__t_0 dönüş değeri ile `hash_set` nesnesi değiştirilemez.
 
-`crend`, geriye doğru bir yineleyicinin sonuna `hash_set`ulaşılıp ulaşılmadığını test etmek için kullanılabilir.
+`crend`, geriye doğru bir yineleyicinin `hash_set` sonuna ulaşıp ulaşılmadığını test etmek için kullanılabilir.
 
 ### <a name="example"></a>Örnek
 
@@ -721,9 +721,9 @@ typedef list<typename Traits::value_type, typename Traits::allocator_type>::diff
 
 ### <a name="remarks"></a>Açıklamalar
 
-`difference_type` Kapsayıcının yineleyiciler aracılığıyla çıkartılacak veya artırılarak döndürülen türdür. `last` `first` Genellikleyineleyiciler`last` arasındaki[,`first` ) aralıktaki öğelerin sayısını temsil etmek için kullanılır ve öğe aralığı ile işaret edilen öğeleri içerir `first` `difference_type` , ancak, tarafından `last`işaret edilen öğesi dahil edilmez.
+@No__t_0 kapsayıcının yineleyiciler aracılığıyla çıkartılacak veya arttırılarak döndürülen türdür. @No__t_0 genellikle yineleyiciler `first` ve `last` arasındaki [`first`, `last`) aralıktaki öğelerin sayısını temsil etmek için kullanılır, `first` tarafından işaret edilen öğeyi ve öğe aralığını , ancak `last` tarafından işaret edilen öğe dahil değildir.
 
-Bir giriş yineleyicisinin gereksinimlerini karşılayan tüm yineleyiciler için kullanılabilir olsa `difference_type` da, küme gibi tersine çevrilebilir kapsayıcılar tarafından desteklenen çift yönlü yineleyicilerin sınıfını içeren, yineleyiciler arasında çıkarma yalnızca vektör veya deque gibi rastgele bir erişim kapsayıcısı tarafından sunulan rastgele erişim yineleyiciler tarafından desteklenir.
+@No__t_0, bir giriş yineleyicisinin gereksinimlerini karşılayan tüm yineleyiciler için kullanılabilir olsa da, bu arada ters çevrilebilir kapsayıcılar tarafından desteklenen çift yönlü yineleyicilerin sınıfını içeren, yineleyiciler arasındaki çıkarma yalnızca vektör veya deque gibi rastgele erişim kapsayıcısı tarafından sunulan rastgele erişim yineleyiciler.
 
 ### <a name="example"></a>Örnek
 
@@ -803,11 +803,11 @@ emplace(
 
 |Parametre|Açıklama|
 |-|-|
-|*Acil*|`hash_set` Zaten bu öğeyi veya daha genel olarak, anahtarı equivalently sıralı olan bir öğeyi içermiyorsa, [hash_set](../standard-library/hash-set-class.md) içine eklenecek bir öğe değeri.|
+|*Acil*|@No__t_1 zaten bu öğeyi veya daha genel olarak, anahtarı equivalently olan bir öğeyi içermediği müddetçe, [hash_set](../standard-library/hash-set-class.md) içine eklenecek bir öğe değeri.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Üye `emplace` işlevi, bir ekleme   `hash_set` işlemi varsa bool bileşeni true döndüren bir çift **döndürür ve zaten** anahtarı sıralamada denk bir değere sahip olan bir öğe içeriyorsa ve Yineleyici bileşeni, yeni bir öğenin eklendiği veya öğenin zaten bulunduğu yerdeki adresi döndürür.
+@No__t_0 member işlevi, bir ekleme işlemi varsa **bool** bileşeni **true** döndüren bir çift döndürür ve `hash_set` zaten anahtarı sıralamada denk bir değere sahip olan bir **öğe içeriyorsa ve** Yineleyici Bileşen, yeni bir öğenin eklendiği veya öğenin zaten bulunduğu yerdeki adresi döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -855,12 +855,12 @@ iterator emplace(
 
 |Parametre|Açıklama|
 |-|-|
-|*Acil*|`hash_set` Zaten bu öğeyi veya daha genel olarak, anahtarı equivalently sıralı olan bir öğeyi içermiyorsa, [hash_set](../standard-library/hash-set-class.md) içine eklenecek bir öğe değeri.|
+|*Acil*|@No__t_1 zaten bu öğeyi veya daha genel olarak, anahtarı equivalently olan bir öğeyi içermediği müddetçe, [hash_set](../standard-library/hash-set-class.md) içine eklenecek bir öğe değeri.|
 |*_Konum*|Doğru ekleme noktasını aramaya başlamak için yer. (Ekleme noktası *_Nerede*olursa), ekleme noktası, Logaritmik süre yerine, sabit zamanlı olarak ortaya çıkabilir.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-[Hash_set:: emplace](#emplace) üye işlevi, yeni öğenin içine `hash_set`eklendiği konuma veya eşdeğer sıralamaya sahip olan öğenin bulunduğu konuma işaret eden bir yineleyici döndürür.
+[Hash_set:: emplace](#emplace) üye işlevi, yeni öğenin `hash_set` eklendiği konuma veya eşdeğer sıralamaya sahip olan öğenin bulunduğu konuma işaret eden bir yineleyici döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -960,7 +960,7 @@ Bir hash_set içindeki son öğeden sonraki konumu ele alan çift yönlü bir yi
 
 ### <a name="remarks"></a>Açıklamalar
 
-`end`, bir yineleyicinin hash_set sonuna ulaşıp ulaşılmadığını test etmek için kullanılır. Tarafından `end` döndürülen değer başvurulmamalıdır.
+`end`, bir yineleyicinin hash_set sonuna ulaşıp ulaşılmadığını test etmek için kullanılır. @No__t_0 tarafından döndürülen değer başvurulmamalıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -1019,14 +1019,14 @@ pair <iterator, iterator> equal_range (const Key& key);
 
 ### <a name="parameters"></a>Parametreler
 
-*anahtar*\
+*anahtar* \
 Aranan hash_set öğesinden bir öğenin sıralama anahtarıyla Karşılaştırılacak bağımsız değişken anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 Birincisi, anahtarın [lower_bound](../standard-library/set-class.md#lower_bound) , ikincisi ise anahtarın [upper_bound](../standard-library/set-class.md#upper_bound) olduğu yineleyicilerin bir çiftinden biridir.
 
-Üye işlevi tarafından döndürülen bir çiftin PR 'nin ilk Yineleyici öğesine erişmek için kullanın `pr`. **ilk**olarak, alt sınır Yineleyici \*için başvuru yapmak üzere (. `pr` **ilk**). Üye işlevi tarafından döndürülen bir çiftin `pr` ikinci Yineleyici öğesine erişmek için kullanın. `pr` **ikincisi**ve üst sınır yineleyicisini \*başvuru yapmak için (. `pr` **ikinci**).
+Üye işlevi tarafından döndürülen bir çiftin PR 'nin ilk Yineleyici öğesine erişmek için `pr` kullanın. **ilk**olarak, alt sınır yineleyicisini başvuru için \* (`pr` kullanın. **ilk**). Üye işlevi tarafından döndürülen bir çiftin ikinci Yineleyici `pr` erişmek için `pr` kullanın. **ikinci**olarak, üst sınır yineleyicisinin başvurusu için \* (`pr` kullanın. **ikinci**).
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1106,16 +1106,16 @@ size_type erase(const key_type& key);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Konum*\
+*_@No__t_1*
 Hash_set kaldırılacak öğenin konumu.
 
-*adı*\
+*ilk* \
 Hash_set öğesinden kaldırılan ilk öğenin konumu.
 
-*soyadına*\
+*son* \
 Hash_set öğesinden kaldırılan son öğenin hemen ötesinde konumlandır.
 
-*anahtar*\
+*anahtar* \
 Hash_set kaldırılacak öğelerin anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1224,18 +1224,18 @@ const_iterator find(const Key& key) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*anahtar*\
+*anahtar* \
 Aranan hash_set öğesinden bir öğenin sıralama anahtarıyla eşleştirilecek bağımsız değişken anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ya `iterator` da `const_iterator` anahtar için eşleşme bulunmazsa hash_set içindeki son öğeden sonra gelen konumu ele alan veya belirtilen bir anahtarla bir öğenin konumunu ele alan bir veya.
+Anahtar için herhangi bir eşleşme bulunmazsa, belirtilen anahtara denk bir öğenin konumunu adresleyen veya hash_set içindeki son öğeden sonra gelen konumu ele alan bir `iterator` veya `const_iterator`.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, hash_set içindeki bir öğeyi ele alan bir yineleyici döndürür. Bu sıralama anahtarı `equivalent` , daha az karşılaştırılır ilişkisine göre bir sıralamayı karşılayan bir ikili koşul altında bağımsız değişken anahtarına sahip.
+Üye işlevi, hash_set içindeki bir öğeyi adresleyen bir yineleyici döndürür. Bu sıralama anahtarı, daha az karşılaştırıtan bir ilişkiye göre bir sıralamayı karşılayan bir ikili koşuldaki bağımsız değişken anahtarına `equivalent`.
 
-Dönüş değeri `find` bir `const_iterator`öğesine atanırsa, hash_set nesnesi değiştirilemez. Dönüş değeri `find` bir `iterator`öğesine atanırsa, hash_set nesnesi değiştirilebilir.
+@No__t_0 dönüş değeri bir `const_iterator` atanırsa, hash_set nesnesi değiştirilemez. @No__t_0 dönüş değeri bir `iterator` atanırsa, hash_set nesnesi değiştirilebilir.
 
 ### <a name="example"></a>Örnek
 
@@ -1368,7 +1368,7 @@ int main( )
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif, [unordered_set sınıfıdır](../standard-library/unordered-set-class.md).
 
-Boş olan `hash_set` veya bir kısmının tümünün veya bir kısmının `hash_set`kopyası olan oluşturur.
+Boş olan veya diğer bir `hash_set` tümünün veya bir kısmının kopyası olan bir `hash_set` oluşturur.
 
 ```cpp
 hash_set();
@@ -1421,38 +1421,38 @@ hash_set(
 
 |Parametre|Açıklama|
 |-|-|
-|*Eşkenar*|Varsayılan olarak `hash_set` `Allocator`, bu nesne için kullanılacak depolama ayırıcı sınıfı.|
-|*İnin*|' Deki öğeleri sıralamak için `const Traits` kullanılan tür karşılaştırma işlevi, varsayılan olarak. `hash_compare` `hash_set`|
-|*Right*|`hash_set` Oluşturulan`hash_set` öğesinin bir kopyalama olduğu yer.|
+|*Eşkenar*|@No__t_1 varsayılan olarak bu `hash_set` nesnesi için kullanılacak depolama ayırıcı sınıfı.|
+|*İnin*|@No__t_1 öğeleri sıralamak için kullanılan `const Traits` türü karşılaştırma işlevi, varsayılan olarak `hash_compare`.|
+|*Right*|Oluşturulan `hash_set` bir kopya olduğu `hash_set`.|
 |*Adı*|Kopyalanacak öğe aralığındaki ilk öğenin konumu.|
 |*Soyadına*|Kopyalanacak öğe aralığının ötesinde ilk öğenin konumu.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tüm oluşturucular, `hash_set` daha sonra [hash_set:: get_allocator](#get_allocator)çağırarak geri döndürülebilecek ve için bellek depolamayı yöneten bir tür ayırıcı nesnesi depolar. Ayırıcı parametresi, genellikle sınıf bildirimlerinde atlanır ve alternatif ayırıcıları değiştirmek için kullanılan ön işleme makrolarıyla sonuçlanır.
+Tüm oluşturucular, `hash_set` bellek depolamayı yöneten ve daha sonra [hash_set:: get_allocator](#get_allocator)çağırarak döndürülebilecek bir tür ayırıcı nesnesi depolar. Ayırıcı parametresi, genellikle sınıf bildirimlerinde atlanır ve alternatif ayırıcıları değiştirmek için kullanılan ön işleme makrolarıyla sonuçlanır.
 
 Tüm oluşturucular hash_sets başlatır.
 
-Tüm oluşturucular, `Traits` `hash_set` ve daha sonra [hash_set:: key_comp](#key_comp)çağırarak geri döndürülebilecek anahtarlar arasında bir sıra oluşturmak için kullanılan türünde bir işlev nesnesi depolar. Hakkında `Traits` daha fazla bilgi için bkz. [hash_set Class](../standard-library/hash-set-class.md) konusu.
+Tüm oluşturucular, `hash_set` anahtarları arasında bir sıra oluşturmak için kullanılan ve daha sonra [hash_set:: key_comp](#key_comp)çağırarak döndürülebilecek `Traits` türünde bir işlev nesnesi depolar. @No__t_0 hakkında daha fazla bilgi için [hash_set Class](../standard-library/hash-set-class.md) konusuna bakın.
 
-İlk Oluşturucu boş bir başlangıç `hash_set` oluşturur İkincisi, öğelerin sırasını oluşturmak için kullanılacak karşılaştırma işlevinin türünü ( `Comp`) belirtir ve üçüncü olarak açıkça ayırıcı türü ( `Al`) belirtir kullanılamıyor. Anahtar sözcük `explicit` , bazı otomatik tür dönüştürme türlerini bastırır.
+İlk Oluşturucu boş bir ilk `hash_set` oluşturur ve ikinci olarak, öğelerin sırasını oluşturmak için kullanılacak karşılaştırma işlevinin türünü (`Comp`) belirtir ve üçüncüsü açıkça kullanılacak ayırıcı türünü (`Al`) belirtir. @No__t_0 anahtar sözcük, bazı otomatik tür dönüştürme türlerini bastırır.
 
-Dördüncü ve beşinci oluşturucular öğesinin `hash_set` `Right`bir kopyasını belirtir.
+Dördüncü ve beşinci oluşturucular `hash_set` `Right` bir kopyasını belirtir.
 
 Son altıncı, yedinci ve sekizinci oluşturucular öğeler için bir initializer_list kullanır.
 
-Son oluşturucular, ' ın [ `First`, `Last`) aralığını, sınıf `hash_set` nitelikleri ve ayırıcı 'un karşılaştırma işlevinin türünü belirtirken açıkça bir şekilde kopyalar.
+Son oluşturucular, sınıf nitelikleri ve ayırıcısı 'nın karşılaştırma işlevinin türünü belirtirken, bir `hash_set` [`First`, `Last`) aralığını açıkça artırır.
 
-Sekizinci Oluşturucu öğesini taşımaktır `hash_set`. `Right`
+Sekizinci Oluşturucu `hash_set` `Right` taşımaktır.
 
-Bir `hash_set` kapsayıcıdaki öğelerin gerçek sıralaması, karma işleve, sıralama işlevine ve karma tablonun geçerli boyutuna bağlıdır ve genellikle sıralama tarafından belirlendiği şekilde, ayarlanan kapsayıcıda tahmin edilebilir. tek başına işlev.
+@No__t_0 kapsayıcısındaki öğelerin gerçek sıralaması, karma işleve, sıralama işlevine ve karma tablonun geçerli boyutuna bağlıdır ve genellikle sıralama işlevi tarafından belirlendiği şekilde, ayarlanan kapsayıcıda tahmin edilebilir. .
 
 ## <a name="insert"></a>hash_set:: insert
 
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif, [unordered_set sınıfıdır](../standard-library/unordered-set-class.md).
 
-İçine bir öğe veya öğe aralığı ekler `hash_set`.
+Bir `hash_set` öğe veya öğe aralığı ekler.
 
 ```cpp
 pair<iterator, bool> insert(
@@ -1474,25 +1474,25 @@ void insert(
 
 |Parametre|Açıklama|
 |-|-|
-|*Acil*|Zaten bu öğeyi veya daha genel olarak, anahtarı equivalently `hash_set` sıralı bir öğe içermiyorsa, içine eklenecek öğenin değeri. `hash_set`|
-|*Olmadığı*|Doğru ekleme noktasını aramaya başlamak için yer. (Ekleme noktası hemen ardından `_Where`, ekleme noktası, Logaritmik süre yerine, sabit zamanlı olarak bir araya gelebilir.)|
-|*Adı*|Bir `hash_set`öğesinden kopyalanacak ilk öğenin konumu.|
-|*Soyadına*|' Dan `hash_set`kopyalanacak son öğenin hemen ötesinde konum.|
+|*Acil*|@No__t_1 zaten bu öğeyi veya daha genel bir öğeyi içermiyorsa, bu öğe `hash_set` eklenecek öğenin değeri.|
+|*Olmadığı*|Doğru ekleme noktasını aramaya başlamak için yer. (Ekleme noktası `_Where` hemen sonrasında, ekleme, logaritmik bir süre yerine, sabit zamanlı olarak ortaya çıkabilir.)|
+|*Adı*|@No__t_0 kopyalanacak ilk öğenin konumu.|
+|*Soyadına*|@No__t_0 kopyalanacak son öğenin hemen ötesinde konum.|
 |*IList*|Öğelerin kopyalanacağı initializer_list.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk `insert` üye işlevi, bir `hash_set` ekleme işlemi olursa **bool** bileşeni **true** döndüren bir çift döndürür ve zaten anahtarı sıralamada denk bir değere sahip olan bir öğe içeriyorsa **yanlış** olur ve Yineleyici bileşeni, yeni bir öğenin eklendiği veya öğenin zaten bulunduğu yerdeki adresi döndürür.
+İlk `insert` member işlevi, bir ekleme işlemi olursa **bool** bileşeni **true** döndüren bir çift döndürür ve `hash_set` zaten anahtarı sıralamada denk bir değere sahip olan bir **öğe içeriyorsa ve** Yineleyici Bileşen, yeni bir öğenin eklendiği veya öğenin zaten bulunduğu yerdeki adresi döndürür.
 
-Bu üye işlevi `pr.first` tarafından döndürülen bir çiftin `pr` Yineleyici bileşenine erişmek için ve kullanarak başvuru yapın, öğesini kullanın `*(pr.first)`. Bu üye işlevi  tarafından döndürülen bir çiftin `pr` bool bileşenine erişmek için, kullanın `pr.second`ve `*(pr.second)`öğesini kullanın.
+Bu üye işlevi tarafından döndürülen bir çift `pr` Yineleyici bileşenine erişmek için `pr.first` kullanın ve `*(pr.first)` kullanın. Bu üye işlevi tarafından döndürülen bir çift `pr` **bool** bileşenine erişmek için, `pr.second` kullanın ve başvuru yapmak için `*(pr.second)` kullanın.
 
-İkinci `insert` üye işlevi, yeni öğenin `hash_set`içine eklendiği konuma işaret eden bir yineleyici döndürür.
+İkinci `insert` member işlevi, yeni öğenin `hash_set` eklendiği konuma işaret eden bir yineleyici döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Üçüncü üye işlevi, öğeleri bir initializer_list içine ekler.
 
-Üçüncü üye işlevi, `hash_set` öğe değerlerinin dizisini, belirtilen `hash_set`bir [ `First`, `Last`) aralığında bir yineleyici tarafından bahsedilen her öğeye karşılık gelen öğesine ekler.
+Üçüncü üye işlevi, belirtilen `hash_set` [`First`, `Last`) aralığında bir yineleyici tarafından bahsedilen her öğeye karşılık gelen bir `hash_set` öğe değerleri dizisini ekler.
 
 ## <a name="iterator"></a>hash_set:: Yineleyici
 
@@ -1507,11 +1507,11 @@ typedef list<typename Traits::value_type, typename Traits::allocator_type>::iter
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir türü `iterator` , bir öğenin değerini değiştirmek için kullanılabilir.
+Bir tür `iterator`, bir öğenin değerini değiştirmek için kullanılabilir.
 
 ### <a name="example"></a>Örnek
 
-Bildirme ve kullanma `iterator`hakkında bir [örnek için bkz](#begin) . örnek.
+@No__t_1 bildirme ve kullanma hakkında bir [örnek için bkz](#begin) . örnek.
 
 ## <a name="key_comp"></a>hash_set::key_comp
 
@@ -1536,7 +1536,7 @@ Saklı nesne, üye işlevini tanımlar:
 
 `bool operator( const Key& _xVal, const Key& _yVal );`
 
-Bu,  her `_xVal` önceyse true, sıralama düzeninde eşit `_yVal` değildir döndürür.
+`_xVal` önce varsa **true** , sıralama düzeninde `_yVal` eşit değildir.
 
 Hem [key_compare](#key_compare) hem de [value_compare](#value_compare) şablon parametresi *nitelikleri*için eş anlamlı olduğunu unutmayın. Her iki tür de hash_set ve hash_multiset sınıfları için sağlanır ve bunlar birbirinden farklı oldukları hash_map ve hash_multimap sınıflarıyla uyumluluk içindir.
 
@@ -1602,15 +1602,15 @@ typedef Traits key_compare;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`key_compare`, şablon parametresi *nitelikleri*için bir eş anlamlı.
+`key_compare` şablon parametresi *nitelikleri*için bir eş anlamlı.
 
 *Nitelikler* hakkında daha fazla bilgi Için [hash_set Sınıfı](../standard-library/hash-set-class.md) konusuna bakın.
 
-Hem hem de `key_compare` [value_compare](#value_compare) şablon parametresi *nitelikleri*için eş anlamlı olduğunu unutmayın. Her iki tür de, farklı oldukları, eşleme ve multimap sınıfları ile uyumluluk için, aynı oldukları küme ve çoklu küme sınıfları için sağlanır.
+Hem `key_compare` hem de [value_compare](#value_compare) şablon parametresi *nitelikleri*için eş anlamlı olduğunu unutmayın. Her iki tür de, farklı oldukları, eşleme ve multimap sınıfları ile uyumluluk için, aynı oldukları küme ve çoklu küme sınıfları için sağlanır.
 
 ### <a name="example"></a>Örnek
 
-Bildirme ve kullanma `key_compare`hakkında bir örnek için bkz. [key_comp](#key_comp) .
+@No__t_1 bildirme ve kullanma hakkında bir örnek için bkz. [key_comp](#key_comp) .
 
 ## <a name="key_type"></a>hash_set::key_type
 
@@ -1629,11 +1629,11 @@ typedef Key key_type;
 
 *Anahtar*hakkında daha fazla bilgi Için [hash_set Class](../standard-library/hash-set-class.md) konusunun açıklamalar bölümüne bakın.
 
-Hem hem de `key_type` [value_type](#value_type) şablon parametresi *anahtarı*için eş anlamlı olduğunu unutmayın. Her iki tür de hash_set ve hash_multiset sınıfları için sağlanır ve bunlar birbirinden farklı oldukları hash_map ve hash_multimap sınıflarıyla uyumluluk içindir.
+Hem `key_type` hem de [value_type](#value_type) şablon parametre *anahtarı*için eş anlamlı olduğunu unutmayın. Her iki tür de hash_set ve hash_multiset sınıfları için sağlanır ve bunlar birbirinden farklı oldukları hash_map ve hash_multimap sınıflarıyla uyumluluk içindir.
 
 ### <a name="example"></a>Örnek
 
-Bildirme ve kullanma `key_type`hakkında bir örnek için bkz. [value_type](#value_type) .
+@No__t_1 bildirme ve kullanma hakkında bir örnek için bkz. [value_type](#value_type) .
 
 ## <a name="lower_bound"></a>hash_set::lower_bound
 
@@ -1650,12 +1650,12 @@ iterator lower_bound(const Key& key);
 
 ### <a name="parameters"></a>Parametreler
 
-*anahtar*\
+*anahtar* \
 Aranan hash_set öğesinden bir öğenin sıralama anahtarıyla Karşılaştırılacak bağımsız değişken anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir `iterator` veya `const_iterator` bağımsız değişken anahtarından büyük veya buna eşit olan bir anahtarla veya anahtar için eşleşme bulunmazsa hash_set içindeki son öğeden sonraki konumu ele alan bir hash_set içindeki bir öğenin konumunu ele alan bir veya.
+Bağımsız değişken anahtarına eşit veya ondan büyük olan veya anahtar için eşleşme bulunmazsa hash_set içindeki son öğeden sonraki konumu ele alan bir hash_set içindeki bir öğenin konumunu ele alan bir `iterator` veya `const_iterator`.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1764,11 +1764,11 @@ hash_set& operator=(hash_set&& right);
 
 |Parametre|Açıklama|
 |-|-|
-|*Right*|İçine`hash_set`Kopyalanmakta olan [hash_set](../standard-library/hash-set-class.md) .|
+|*Right*|@No__t_1 Kopyalanmakta olan [hash_set](../standard-library/hash-set-class.md) .|
 
 ### <a name="remarks"></a>Açıklamalar
 
-İçindeki `hash_set`varolan öğeleri sildikten sonra, ' `operator=` nin `hash_set`içeriğini kopyalar ya da içine taşısa  .
+Bir `hash_set` var olan öğeleri sildikten sonra, `operator=` içeriğini kopyalar veya `hash_set` içine *taşısa* .
 
 ### <a name="example"></a>Örnek
 
@@ -1821,7 +1821,7 @@ typedef list<typename Traits::value_type, typename Traits::allocator_type>::poin
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir türü `pointer` , bir öğenin değerini değiştirmek için kullanılabilir.
+Bir tür `pointer`, bir öğenin değerini değiştirmek için kullanılabilir.
 
 Çoğu durumda, bir [Yineleyici](#iterator) bir hash_set nesnesindeki öğelere erişmek için kullanılmalıdır.
 
@@ -1844,9 +1844,9 @@ Ters çevrilen bir hash_set içindeki ilk öğeyi ele almak veya geri çevrilme 
 
 ### <a name="remarks"></a>Açıklamalar
 
-`rbegin`[Begin](#begin) , bir hash_set ile birlikte kullanıldığında, ters çevrilmiş bir hash_set ile birlikte kullanılır.
+`rbegin`, [Başlangıç](#begin) olarak bir hash_set ile kullanıldığı için ters çevrilmiş bir hash_set ile kullanılır.
 
-Dönüş değeri `rbegin` bir `const_reverse_iterator`öğesine atanırsa, hash_set nesnesi değiştirilemez. Dönüş değeri `rbegin` bir `reverse_iterator`öğesine atanırsa, hash_set nesnesi değiştirilebilir.
+@No__t_0 dönüş değeri bir `const_reverse_iterator` atanırsa, hash_set nesnesi değiştirilemez. @No__t_0 dönüş değeri bir `reverse_iterator` atanırsa, hash_set nesnesi değiştirilebilir.
 
 `rbegin`, bir hash_set geriye doğru yinelemek için kullanılabilir.
 
@@ -1977,9 +1977,9 @@ Ters çevrilen bir hash_set içindeki son öğeden sonra gelen konumu ele alan b
 
 ### <a name="remarks"></a>Açıklamalar
 
-`rend`[End](#end) , bir hash_set ile birlikte kullanıldığında, ters çevrilmiş bir hash_set ile birlikte kullanılır.
+`rend`, [End](#end) bir hash_set ile kullanıldığı gibi, ters çevrilmiş bir hash_set ile kullanılır.
 
-Dönüş değeri `rend` bir `const_reverse_iterator`öğesine atanırsa, hash_set nesnesi değiştirilemez. Dönüş değeri `rend` bir `reverse_iterator`öğesine atanırsa, hash_set nesnesi değiştirilebilir. Tarafından `rend` döndürülen değer başvurulmamalıdır.
+@No__t_0 dönüş değeri bir `const_reverse_iterator` atanırsa, hash_set nesnesi değiştirilemez. @No__t_0 dönüş değeri bir `reverse_iterator` atanırsa, hash_set nesnesi değiştirilebilir. @No__t_0 tarafından döndürülen değer başvurulmamalıdır.
 
 `rend`, bir ters yineleyicinin hash_set sonuna ulaşıp ulaşılmadığını test etmek için kullanılabilir.
 
@@ -2057,11 +2057,11 @@ typedef list<typename Traits::value_type, typename Traits::allocator_type>::reve
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir tür `reverse_iterator` , ters hash_set içinde yinelemek için kullanılır.
+Bir tür `reverse_iterator`, ters hash_set üzerinden yinelemek için kullanılır.
 
 ### <a name="example"></a>Örnek
 
-Bildirme ve kullanma `reverse_iterator`hakkında bir örnek için bkz. [rbegin](#rbegin) örneği.
+@No__t_1 bildirme ve kullanma hakkında bir örnek için bkz. [rbegin](#rbegin) örneği.
 
 ## <a name="size"></a>hash_set:: size
 
@@ -2125,7 +2125,7 @@ typedef list<typename Traits::value_type, typename Traits::allocator_type>::size
 
 ### <a name="example"></a>Örnek
 
-Nasıl bildirilemeyeceğini ve kullanılacağına ilişkin bir örnek için [Boyut](#size) örneğine bakın`size_type`
+Nasıl bildirilemeyeceğini ve kullanılacağına ilişkin bir örnek için [Boyut](#size) örneğine bakın `size_type`
 
 ## <a name="swap"></a>hash_set:: swap
 
@@ -2140,7 +2140,7 @@ void swap(hash_set& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*Right*\
+*sağ* \
 Hash_set bağımsız değişkeni, hedef hash_set ile takas edilecek öğeleri sağlar.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -2216,12 +2216,12 @@ iterator upper_bound(const Key& key);
 
 ### <a name="parameters"></a>Parametreler
 
-*anahtar*\
+*anahtar* \
 Aranan hash_set öğesinden bir öğenin sıralama anahtarıyla Karşılaştırılacak bağımsız değişken anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir `iterator` veya`const_iterator` bağımsız değişken anahtarından büyük veya buna eşit olan bir anahtarla bir hash_set içindeki bir öğenin konumunu ele alan veya anahtar için eşleşme bulunmazsa hash_set içindeki son öğeden sonraki konumu ele alan bir öğe.
+Bağımsız değişken anahtarına eşit veya daha büyük bir anahtarla bir hash_set içindeki bir öğenin konumunu adresleyen veya anahtar için eşleşme bulunmazsa hash_set içindeki son öğeden sonra gelen konumu ele alan bir `iterator` veya `const_iterator`.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -2298,7 +2298,7 @@ Saklı nesne, üye işlevini tanımlar:
 
 `bool operator( const Key& _xVal, const Key& _yVal );`
 
-Bu,  her `_xVal` önceyse true, sıralama düzeninde eşit `_yVal` değildir döndürür.
+`_xVal` önce varsa **true** , sıralama düzeninde `_yVal` eşit değildir.
 
 Hem [value_compare](../standard-library/set-class.md#value_compare) hem de [Key_compare](../standard-library/set-class.md#key_compare) şablon parametre *karşılaştırması*için eş anlamlı olduğunu unutmayın. Her iki tür de hash_set ve hash_multiset sınıfları için sağlanır ve bunlar birbirinden farklı oldukları hash_map ve hash_multimap sınıflarıyla uyumluluk içindir.
 
@@ -2364,15 +2364,15 @@ typedef key_compare value_compare;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`value_compare`, şablon parametresi *nitelikleri*için bir eş anlamlı.
+`value_compare` şablon parametresi *nitelikleri*için bir eş anlamlı.
 
 *Nitelikler* hakkında daha fazla bilgi Için [hash_set Sınıfı](../standard-library/hash-set-class.md) konusuna bakın.
 
-Hem [key_compare](#key_compare) `value_compare` hem de şablon parametresi *nitelikleri*için eş anlamlıların olduğunu unutmayın. Her iki tür de hash_set ve hash_multiset sınıfları için sağlanır ve bunlar birbirinden farklı oldukları hash_map ve hash_multimap sınıflarıyla uyumluluk içindir.
+Hem [key_compare](#key_compare) hem de `value_compare` şablon parametresi *nitelikleri*için eş anlamlı olduğunu unutmayın. Her iki tür de hash_set ve hash_multiset sınıfları için sağlanır ve bunlar birbirinden farklı oldukları hash_map ve hash_multimap sınıflarıyla uyumluluk içindir.
 
 ### <a name="example"></a>Örnek
 
-Bildirme ve kullanma `value_compare`hakkında bir örnek için bkz. [value_comp](#value_comp) .
+@No__t_1 bildirme ve kullanma hakkında bir örnek için bkz. [value_comp](#value_comp) .
 
 ## <a name="value_type"></a>hash_set::value_type
 
@@ -2423,5 +2423,5 @@ The hash_set has elements: 10 20.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Standart kitaplıkta Iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[Standart kitaplıkta Iş parçacığı güvenliği \ C++ ](../standard-library/thread-safety-in-the-cpp-standard-library.md)
 [C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)

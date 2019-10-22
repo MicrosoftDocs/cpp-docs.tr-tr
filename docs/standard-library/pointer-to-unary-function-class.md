@@ -7,16 +7,16 @@ helpviewer_keywords:
 - pointer_to_unary_function function
 - pointer_to_unary_function class
 ms.assetid: 05600207-b916-4759-beca-6b6facd2d6f6
-ms.openlocfilehash: cff84f1f15eea34c60162f702dfe05350d1383d1
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 2b6bf82faa39e22c5af584a9fc3ebf68f5851463
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68240464"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72689135"
 ---
-# <a name="pointertounaryfunction-class"></a>pointer_to_unary_function Sınıfı
+# <a name="pointer_to_unary_function-class"></a>pointer_to_unary_function Sınıfı
 
-Birli işlevi işaretçisi uyarlanabilir birli bir işleve dönüştürür. C ++ 17 sürümünde kaldırılmıştır C ++ 11'de kullanım dışı.
+Birli işlev işaretçisini uyarlanabilir tablo birli işlevine dönüştürür. C++ 11 ' de kullanım dışı bırakılmıştır ve C++ 17 ' de kaldırılmıştır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -32,20 +32,20 @@ class pointer_to_unary_function
 
 ### <a name="parameters"></a>Parametreler
 
-*pfunc*\
-Dönüştürülecek ikili fonksiyon.
+*pFunc* \
+Dönüştürülecek ikili işlev.
 
-*Sol*\
-Nesne,  *\*pfunc* üzerinde çağrılır.
+*sol* \
+*@No__t_1pfunc* çağrılan nesne.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Şablon sınıfı bir kopyasını depolar `pfunc`. Onun üye işlevini tanımlar `operator()` döndüren olarak (\* **pfunc**) (_ *sol*).
+Sınıf şablonu `pfunc` bir kopyasını depolar. @No__t_0 üye işlevini, döndüren (\* **pFunc**) (_ *Left*) olarak tanımlar.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Birli işlev işaretçisi işlev nesnesi ve bir birli işlevi parametre olarak bekleniyor herhangi bir C++ Standart Kitaplığı algoritma geçirilebilir, ancak uyarlanabilir değil. Bir değer için bağlama veya bir negator ile kullanarak bir bağdaştırıcı ile kullanmak için iç içe geçmiş türler ile sağlanan `argument_type` ve `result_type` oluşturan bir tür uyarlama mümkün. Dönüştürme `pointer_to_unary_function` ikili fonksiyon işaretçiler ile çalışmak işlev bağdaştırıcıları sağlar.
+Birli işlev işaretçisi bir işlev nesnesidir ve parametre olarak birli bir işlev bekleyen C++ standart kitaplık algoritmasına geçirilebilir, ancak uyumlu değil. Bir değeri kendisine bağlama veya bir negatifle ile birlikte kullanma gibi bir bağdaştırıcı ile kullanmak için, bu tür bir uyarlama sağlayan `argument_type` ve `result_type` iç içe geçmiş türlerle sağlanmalıdır. @No__t_0 dönüşümü, işlev bağdaştırıcılarını ikili işlev işaretçileriyle çalışmasına izin verir.
 
 ## <a name="example"></a>Örnek
 
-Oluşturucusuna `pointer_to_unary_function` doğrudan nadiren kullanılır. Yardımcı işlevini bkz [ptr_fun](../standard-library/functional-functions.md#ptr_fun) bildirme ve kullanma konusunda bir örnek için `pointer_to_unary_function` bağdaştırıcısı koşul.
+@No__t_0 Oluşturucusu nadiren doğrudan kullanılır. @No__t_1 bağdaştırıcı koşulunu bildirme ve kullanma hakkında bir örnek için bkz. [ptr_fun](../standard-library/functional-functions.md#ptr_fun) Helper function.

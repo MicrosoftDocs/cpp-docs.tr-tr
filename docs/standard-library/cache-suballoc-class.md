@@ -10,14 +10,14 @@ helpviewer_keywords:
 - stdext::cache_suballoc [C++], allocate
 - stdext::cache_suballoc [C++], deallocate
 ms.assetid: 9ea9c5e9-1dcc-45d0-b3a7-a56a93d88898
-ms.openlocfilehash: aa0ceda69fc169593719c3a4f81d308bb6cde284
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 7a21f0c4f81277200ff069baf751fa013a3c0cea
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68449649"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72688352"
 ---
-# <a name="cachesuballoc-class"></a>cache_suballoc Sınıfı
+# <a name="cache_suballoc-class"></a>cache_suballoc Sınıfı
 
 Tek boyuttaki bellek bloklarını ayıran ve ayıran [blok ayırıcıyı](../standard-library/allocators-header.md) tanımlar.
 
@@ -36,15 +36,15 @@ class cache_suballoc
 
 ## <a name="remarks"></a>Açıklamalar
 
-Cache_suballoc şablon sınıfı, serbest bırakılmış bellek bloklarını, boş bir liste boş olduğunda `freelist<sizeof(Type), max_unbounded>` **Yeni işleçle** ayrılan daha büyük bir öbekten, kullanarak ve alt ayırır.
+Cache_suballoc sınıf şablonu, serbest bırakılmış bellek bloklarını, `freelist<sizeof(Type), max_unbounded>` kullanarak ve boş bir liste boş olduğunda **Yeni işleç** ile ayrılmış daha büyük bir öbekten, alt ayırır.
 
-Her öbek kullanılabilir `Sz * Nelts` bellek miktarını ve **New** ve **Delete** işleci için gerekli olan verileri içerir. Ayrılan parçalar hiçbir şekilde serbest bırakılmaz.
+Her öbek kullanılabilir bellek `Sz * Nelts` bayt ve yeni ve **işleç silme** **işleci** için gerekli olan verileri bulundurur. Ayrılan parçalar hiçbir şekilde serbest bırakılmaz.
 
 ### <a name="constructors"></a>Oluşturucular
 
 |Oluşturucu|Açıklama|
 |-|-|
-|[cache_suballoc](#cache_suballoc)|Türünde `cache_suballoc`bir nesne oluşturur.|
+|[cache_suballoc](#cache_suballoc)|@No__t_0 türünde bir nesne oluşturur.|
 
 ### <a name="member-functions"></a>Üye işlevleri
 
@@ -55,7 +55,7 @@ Her öbek kullanılabilir `Sz * Nelts` bellek miktarını ve **New** ve **Delete
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<ayrıcılar >
+**Üst bilgi:** \<allocators >
 
 **Ad alanı:** stdext
 
@@ -81,7 +81,7 @@ Ayrılan nesneye yönelik bir işaretçi.
 
 ## <a name="cache_suballoc"></a>cache_suballoc::cache_suballoc
 
-Türünde `cache_suballoc`bir nesne oluşturur.
+@No__t_0 türünde bir nesne oluşturur.
 
 ```cpp
 cache_suballoc();
@@ -108,4 +108,4 @@ void deallocate(void* ptr, std::size_t count);
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<ayrıcılar >](../standard-library/allocators-header.md)
+[\<allocators >](../standard-library/allocators-header.md)

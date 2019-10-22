@@ -1,5 +1,5 @@
 ---
-title: '&lt;codecvt&gt;'
+title: '&lt;codecvt &gt;'
 ms.date: 11/04/2016
 f1_keywords:
 - codecvt
@@ -7,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - codecvt header
 ms.assetid: d44ee229-00d5-4761-9b48-0c702122789d
-ms.openlocfilehash: fc711b14a2d30041b4585a9515a95e42280f5306
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 972672e80ce4f82402296317c75e35dcd10c9e93
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68458599"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72688278"
 ---
-# <a name="ltcodecvtgt"></a>&lt;codecvt&gt;
+# <a name="ltcodecvtgt"></a>&lt;codecvt &gt;
 
-[Codecvt](../standard-library/codecvt-class.md)şablon sınıfını temel alan nesneleri tanımlayan çeşitli şablon sınıflarını tanımlar. Bu nesneler, türü `Elem` bir değer dizisi ve **char**türünde bir değer dizisi arasındaki dönüştürmeleri denetleyen [yerel ayar modelleri](../standard-library/locale-class.md#facet_class) olarak işlev görebilir.
+[Codecvt](../standard-library/codecvt-class.md)sınıf şablonunu temel alan nesneleri tanımlayan çeşitli sınıf şablonları tanımlar. Bu nesneler, `Elem` türünde bir değer dizisi ve **char**türünde bir değer dizisi arasındaki dönüştürmeleri denetleyen [yerel ayar modelleri](../standard-library/locale-class.md#facet_class) olarak işlev görebilir.
 
 ## <a name="syntax"></a>Sözdizimi
 

@@ -10,14 +10,14 @@ helpviewer_keywords:
 - stdext::cache_chunklist [C++], allocate
 - stdext::cache_chunklist [C++], deallocate
 ms.assetid: af19eccc-4ae7-4a34-bbb2-81e397424cb9
-ms.openlocfilehash: 73730e0a4a22e7f5e63809cc2c1603cbda1ab596
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 035e5153b4e4c84743a64bcc9cec24920a6a0336
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68449658"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72688359"
 ---
-# <a name="cachechunklist-class"></a>cache_chunklist Sınıfı
+# <a name="cache_chunklist-class"></a>cache_chunklist Sınıfı
 
 Tek boyuttaki bellek bloklarını ayıran ve ayıran [blok ayırıcıyı](../standard-library/allocators-header.md) tanımlar.
 
@@ -36,15 +36,15 @@ class cache_chunklist
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu şablon sınıfı, gerektiğinde bir bellek bloğu için depolama alanı ayırmak üzere alt ayırma blokları, ham bellek öbeklerini ayırmak için **New işlecini** kullanır; serbest bırakılmış bellek bloklarını her bir öbek için ayrı bir ücretsiz listede depolar ve herhangi bir bellek bloğu kullanımda olduğunda bir öbeği serbest bırakmak için **işleç silme** kullanır.
+Bu sınıf şablonu, gerektiğinde bir bellek bloğu için depolama alanı ayırmak üzere alt ayırma blokları, ham bellek öbeklerini ayırmak için **New işlecini** kullanır; serbest bırakılmış bellek bloklarını her bir öbek için ayrı bir ücretsiz listede depolar ve herhangi bir bellek bloğu kullanımda olduğunda bir öbeği serbest bırakmak için **işleç silme** kullanır.
 
-Her bellek bloğunda,  kullanılabilir bellek ve onun ait olduğu öbek için bir işaretçi bulunur. Her Öbek bellek `Nelts` blokları, üç işaretçi, bir int ve **New işleci** ve **delete işleci** için gerekli olan verileri içerir.
+Her bellek bloğunda, kullanılabilir bellek ve onun ait olduğu öbek için bir işaretçi bulunur. Her bir öbek `Nelts` bellek bloklarını, üç işaretçiyi, bir int ve **New** ve **Delete** işlecini içeren verileri içerir.
 
 ### <a name="constructors"></a>Oluşturucular
 
 |Oluşturucu|Açıklama|
 |-|-|
-|[cache_chunklist](#cache_chunklist)|Türünde `cache_chunklist`bir nesne oluşturur.|
+|[cache_chunklist](#cache_chunklist)|@No__t_0 türünde bir nesne oluşturur.|
 
 ### <a name="member-functions"></a>Üye işlevleri
 
@@ -55,7 +55,7 @@ Her bellek bloğunda,  kullanılabilir bellek ve onun ait olduğu öbek için bi
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<ayrıcılar >
+**Üst bilgi:** \<allocators >
 
 **Ad alanı:** stdext
 
@@ -81,7 +81,7 @@ Ayrılan nesneye yönelik bir işaretçi.
 
 ## <a name="cache_chunklist"></a>cache_chunklist::cache_chunklist
 
-Türünde `cache_chunklist`bir nesne oluşturur.
+@No__t_0 türünde bir nesne oluşturur.
 
 ```cpp
 cache_chunklist();
@@ -108,4 +108,4 @@ void deallocate(void* ptr, std::size_t count);
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<ayrıcılar >](../standard-library/allocators-header.md)
+[\<allocators >](../standard-library/allocators-header.md)

@@ -1,5 +1,5 @@
 ---
-title: '&lt;değerleri&gt;'
+title: '&lt;limits &gt;'
 ms.date: 11/04/2016
 f1_keywords:
 - limits/std::<limits>
@@ -7,26 +7,26 @@ f1_keywords:
 helpviewer_keywords:
 - limits header
 ms.assetid: e07d6379-5b00-4a3d-a789-40d41538b59e
-ms.openlocfilehash: de8f815cd59b84a1e63c231e18e4882d0b5d6f09
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 3ad740975cfff4f65f9e1c800a709cfaca3367db
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68447565"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72687817"
 ---
-# <a name="ltlimitsgt"></a>&lt;değerleri&gt;
+# <a name="ltlimitsgt"></a>&lt;limits &gt;
 
-, Kayan nokta temsilleri ve yuvarlama ile ilgili olarak şablon sınıfını `numeric_limits` ve iki numaralandırmayı tanımlar.
+@No__t_0 sınıf şablonu ve kayan nokta temsilleri ve yuvarlama ile ilgili iki numaralandırma tanımlar.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<sınır >
+**Üst bilgi:** \<limits >
 
 **Ad alanı:** std
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıfın açık özeetleri, temel türlerin, ' nin  kuralları tarafından sabitlendiği yerine tanımlanmış bir uygulama olan karakter, tamsayı ve kayan nokta türleri ve bool dahil olmak üzere birçok özelliğini tanımlıyor. `numeric_limits` C++dil. > \<Limitlerde açıklanan özellikler, doğruluk, minimum ve maksimum ölçekli temsiller, yuvarlama ve sinyal türü hataları içerir.
+@No__t_0 sınıfının açık özeetleri, temel türlerin, ' nin C++ kuralları tarafından sabitlendiği yerine tanımlanmış bir uygulama olan karakter, tamsayı ve kayan nokta türleri ve **bool** dahil olmak üzere çok sayıda özelliğini tanımlıyor. dildir. @No__t_0limits > açıklanan özellikler, doğruluk, minimum ve maksimum ölçekli temsiller, yuvarlama ve sinyal türü hataları içerir.
 
 ## <a name="members"></a>Üyeler
 
@@ -41,9 +41,9 @@ Sınıfın açık özeetleri, temel türlerin, ' nin  kuralları tarafından sab
 
 |||
 |-|-|
-|[numeric_limits Sınıfı](../standard-library/numeric-limits-class.md)|Şablon sınıfı, yerleşik sayısal türlerin aritmetik özelliklerini açıklar.|
+|[numeric_limits Sınıfı](../standard-library/numeric-limits-class.md)|Sınıf şablonu, yerleşik sayısal türlerin aritmetik özelliklerini açıklar.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Üst bilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)\
+[Üst bilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md) \
 [C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
