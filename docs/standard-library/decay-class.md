@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - decay class
 ms.assetid: 96baa2fd-c8e0-49af-be91-ba375ba7f9dc
-ms.openlocfilehash: 73b9e2d8ef9a14830c13ee3f6566137bb51e939d
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 3b22dfecb1162ce67a0d648197465115acb044ba
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68450637"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72688108"
 ---
 # <a name="decay-class"></a>decay Sınıfı
 
@@ -29,20 +29,20 @@ using decay_t = typename decay<T>::type;
 
 ### <a name="parameters"></a>Parametreler
 
-*ŞI*\
+*T* \
 Değiştirilecek tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Tür değeri bir bağımsız değişken olarak geçirildikçe, sonuç türünü oluşturmak için Decay şablonunu kullanın. TypeDef `type` şablon sınıfı üyesi, aşağıdaki aşamalar içinde tanımlanan bir değiştirilmiş türü tutar:
+Tür değeri bir bağımsız değişken olarak geçirildikçe, sonuç türünü oluşturmak için Decay şablonunu kullanın. @No__t_0 sınıf şablonu üyesi, aşağıdaki aşamalarda tanımlanan bir değiştirilmiş türü tutar:
 
-- Türü `U` olarak`remove_reference<T>::type`tanımlanır.
+- @No__t_0 türü `remove_reference<T>::type` olarak tanımlanır.
 
-- True ise, değiştirilen tür `type` olur `remove_extent<U>::type *`. `is_array<U>::value`
+- @No__t_0 true ise, değiştirilen tür `type` `remove_extent<U>::type *`.
 
-- Aksi halde, true ise, değiştirilen tür `type` olur `add_pointer<U>::type`. `is_function<U>::value`
+- Aksi takdirde, `is_function<U>::value` true ise, değiştirilen tür `type` `add_pointer<U>::type`.
 
-- Aksi takdirde, değiştirilen tür `type` olur `remove_cv<U>::type`.
+- Aksi takdirde, `type` değiştirilen tür `remove_cv<U>::type`.
 
 ## <a name="requirements"></a>Gereksinimler
 

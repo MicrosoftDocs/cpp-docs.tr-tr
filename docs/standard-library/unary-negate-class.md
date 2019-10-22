@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - unary_negate class
 ms.assetid: e3b86eec-3205-49b9-ab83-f55225af4e0c
-ms.openlocfilehash: 2a7ce9a8593b0dd93b1c3cfe58f2d87fe10ea997
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 2d9f0bedd9e541e65f04ac20375f16f41413cf03
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68240539"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72684429"
 ---
-# <a name="unarynegate-class"></a>unary_negate Sınıfı
+# <a name="unary_negate-class"></a>unary_negate Sınıfı
 
-Belirtilen birli işlevi dönüş değeri verilerek bir üye işlevi sağlayan bir şablon sınıfı. Şunun için C ++ 17'de kullanımdan [not_fn](functional-functions.md#not_fn).
+Belirtilen birli işlevin dönüş değerini geçersiz hale getirmeden bir üye işlevi sağlayan bir sınıf şablonu. [Not_fn](functional-functions.md#not_fn)için c++ 17 ' de kullanım dışı bırakılmıştır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -31,21 +31,21 @@ class unary_negate
 
 ### <a name="parameters"></a>Parametreler
 
-*FUNC*\
-Negatif birli işlevi.
+*Func* \
+Değillenmiş birli işlev.
 
-*Sol*\
-Birli işlevi negatif işleneni.
+*sol* \
+Birli işlevin, iç içe yapılacak işleneni.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Birli işlevi negation.
+Birli işlevin değilleme.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfı bir birli işlevi nesnesinin bir kopyasını depolar  *\_Func*. Onun üye işlevini tanımlar `operator()` döndüren olarak `!_Func(left)`.
+Sınıf şablonu *\_Func*birli işlev nesnesinin bir kopyasını depolar. @No__t_1 döndüren `operator()` üye işlevini tanımlar.
 
-Oluşturucusuna `unary_negate` doğrudan nadiren kullanılır. Yardımcı işlevini [not1](../standard-library/functional-functions.md#not1) bildirme ve kullanma için daha kolay bir yol sağlayan **unary_negator** bağdaştırıcısı koşul.
+@No__t_0 Oluşturucusu nadiren doğrudan kullanılır. [Not1](../standard-library/functional-functions.md#not1) yardımcı işlevi, **unary_negator** bağdaştırıcı koşulunu bildirmek ve kullanmak için daha kolay bir yol sağlar.
 
 ## <a name="example"></a>Örnek
 

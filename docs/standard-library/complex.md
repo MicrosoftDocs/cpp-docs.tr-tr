@@ -1,5 +1,5 @@
 ---
-title: '&lt;ş&gt;'
+title: '&lt;complex &gt;'
 ms.date: 11/04/2016
 f1_keywords:
 - <complex>
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - complex header
 ms.assetid: 5e728995-3059-496a-9ce9-61d1bfbe4f2b
-ms.openlocfilehash: 585f970f1a3482412ff225454b7acce9060e2d7c
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 071e9369cdd0469d8ddc1c6649a3801732d8e23f
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68449435"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72688214"
 ---
-# <a name="ltcomplexgt"></a>&lt;ş&gt;
+# <a name="ltcomplexgt"></a>&lt;complex &gt;
 
-Kapsayıcı şablonu sınıfını `complex` ve destekleyici şablonlarını tanımlar.
+Kapsayıcı sınıfı şablonu `complex` ve destekleyici şablonlarını tanımlar.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi**: \<karmaşık >
+**Üst bilgi**: \<complex >
 
 **Ad alanı:** std
 
@@ -28,9 +28,9 @@ Kapsayıcı şablonu sınıfını `complex` ve destekleyici şablonlarını tan�
 
 Karmaşık bir sayı, gerçek sayıların sıralı bir çiftidir. Yalnızca geometrik olarak, karmaşık düzlem gerçek ve iki boyutlu düzledir. Gerçek düzleden ayırt eden karmaşık düzlemin özel nitelikleri, ek bir cebirsel yapısına sahip olmasından kaynaklanır. Bu cebirsel yapısında iki temel işlem vardır:
 
-- Toplama (*a*, *b*) + (*c*, *d*) = (*a* + *c*, *b* + *d*) olarak tanımlanır
+- Toplama (*a*, *b*) + (*c*, *d*) = (*a*  + *c*, *b*  + *d*) olarak tanımlandı
 
-- (*A*, *b*) \* (*c*, *d*) olarak tanımlanan çarpma = (*AC* - *BD*, *ad* + *BC*)
+- (*A*, *b*) \* (*c*, *d*) olarak tanımlanan çarpma = (*AC*  - *BD*, *ad*  + *BC*)
 
 Karmaşık ek ve karmaşık çarpma işlemlerine sahip karmaşık sayıların kümesi, standart cebirsel Sense içindeki bir alandır:
 
@@ -38,23 +38,23 @@ Karmaşık ek ve karmaşık çarpma işlemlerine sahip karmaşık sayıların k�
 
 - Karmaşık sayı (0, 0), eklenebilir kimliktir ve (1, 0), çarpma kimliğidir.
 
-- Karmaşık bir sayı (*a*, *b*) için ek ters çevirme, (0*a*, 0)*b*hariç olmak üzere bu tür karmaşık sayılar için çarpma tersidir
+- Karmaşık bir sayı (*a*, *b*) için ek ters çevirme, (0,*0) hariç*olmak üzere bu tür karmaşık sayılar için çarpma tersidir
 
-   (*a* */(* <sup>2</sup> + *b*<sup>2),</sup>-*b*/(*a*<sup>2</sup> + *b*<sup>2))</sup>
+   (*a* */(* <sup>2</sup>  + *b*<sup>2</sup>),-*b*/(<sup>2</sup>  + *b*<sup>2</sup>)))
 
-*Z* *a* +  *bı* biçiminde *z* = (*a*, *b*) karmaşık numarasını temsil ederek, *ı*<sup> 2</sup>  = -1 olduğunda, gerçek sayı kümesinin algebi kuralları için uygulanabilir. karmaşık sayıların ve bileşenleri kümesi. Örneğin:
+Z  =  z = (*a*, *b*) biçiminde bir *karmaşık sayıyı temsil* ederek *z* 'yi*bir*  + *bı*, *burada*<sup>2</sup> =-1 olduğunda, gerçek sayıların kümesinin algebi 'nin kuralları karmaşık kümesine uygulanabilir sayılar ve bileşenleri. Örneğin:
 
-   (1 + 2*i*) \* (2 + 3*i*) = 1 \* (2 + 3*i*) + 2*i* \* (2 + 3*i*) = (2 + 3*i*) + (4*i* + 6*i*<sup>2</sup>) = (2 - 6) + (3 + 4)*i* = -4 + 7*i*
+   (1 + 2*ı*) \* (2 + 3*ı*) = 1 \* (2 *+ 3 ı*) + 2*ı* \* (2 *+ 3 ı) =* (2 + 3*ı*) + (4*i* + 6*ı*<sup>2</sup>) = (2-6) + (3 + 4)*i* =-4 + 7*ı*
 
 Karmaşık sayıların sistemi bir alandır, ancak sıralı bir alan değildir. Gerçek sayıların ve alt kümelerinin alanı için olduğu gibi karmaşık sayıların sıralaması yoktur; bu nedenle, gerçek sayılara göre karmaşık sayılara uygulanamaz.
 
 Bir karmaşık sayı olan *z*'yi temsil eden üç ortak biçim vardır:
 
-- Kartezyen: *z* = *a* + *bı*
+- Kartezyen: *z*  = *a*  + *bı*
 
-- Kutupsal: *z* = *r* (cos *p* + *i* *y*)
+- Kutupsal: *z*  = *r* (cos *p*  + *i* te *p*)
 
-- Üstel: *z* = *r* \* *e*<sup>*IP*</sup>
+- Üstel: *z*  = *r* \* *e*<sup>*IP*</sup>
 
 Karmaşık bir sayının bu standart temsillerinde kullanılan terimler şu şekilde adlandırılır:
 
@@ -78,7 +78,7 @@ Aksi belirtilmediği takdirde, birden çok değer döndürebilmesine olanak vere
 |[acos](../standard-library/complex-functions.md#acos)||
 |[acosh](../standard-library/complex-functions.md#acosh)||
 |[değişkeni](../standard-library/complex-functions.md#arg)|Bağımsız değişkeni karmaşık bir sayıdan ayıklar.|
-|[asin](../standard-library/complex-functions.md#asin)||
+|[Asin](../standard-library/complex-functions.md#asin)||
 |[ASİNH](../standard-library/complex-functions.md#asinh)||
 |[atan](../standard-library/complex-functions.md#atan)||
 |[ATANH](../standard-library/complex-functions.md#atanh)||
@@ -87,7 +87,7 @@ Aksi belirtilmediği takdirde, birden çok değer döndürebilmesine olanak vere
 |[Cosh](../standard-library/complex-functions.md#cosh)|Karmaşık bir sayının hiperbolik kosinüsünü döndürür.|
 |[exp](../standard-library/complex-functions.md#exp)|Karmaşık bir sayının üstel fonksiyonunu döndürür.|
 |[imag](../standard-library/complex-functions.md#imag)|Karmaşık bir sayının sanal bileşenini ayıklar.|
-|[log](../standard-library/complex-functions.md#log)|Karmaşık bir sayının doğal logaritmasını döndürür.|
+|[açmasını](../standard-library/complex-functions.md#log)|Karmaşık bir sayının doğal logaritmasını döndürür.|
 |[log10](../standard-library/complex-functions.md#log10)|Karmaşık bir sayının 10 tabanında logaritmasını döndürür.|
 |[eklenmeli](../standard-library/complex-functions.md#norm)|Karmaşık bir sayının norm sayısını ayıklar.|
 |[çizgili](../standard-library/complex-functions.md#polar)|Kartezyen biçiminde, belirtilen mod ve bağımsız değişkene karşılık gelen karmaşık sayıyı döndürür.|
@@ -96,7 +96,7 @@ Aksi belirtilmediği takdirde, birden çok değer döndürebilmesine olanak vere
 |[gerçek](../standard-library/complex-functions.md#real)|Karmaşık bir sayının gerçek bileşenini ayıklar.|
 |[sin](../standard-library/complex-functions.md#sin)|Karmaşık bir sayının sinüsünü döndürür.|
 |[sinh](../standard-library/complex-functions.md#sinh)|Karmaşık bir sayının hiperbolik sinüsünü döndürür.|
-|[sqrt](../standard-library/complex-functions.md#sqrt)|Karmaşık bir sayının kare kökünü döndürür.|
+|[k](../standard-library/complex-functions.md#sqrt)|Karmaşık bir sayının kare kökünü döndürür.|
 |[Başlangıçtan](../standard-library/complex-functions.md#tan)|Karmaşık bir sayının tanjantını döndürür.|
 |[tanh](../standard-library/complex-functions.md#tanh)|Karmaşık bir sayının hiperbolik tanjantını döndürür.|
 
@@ -109,30 +109,30 @@ Aksi belirtilmediği takdirde, birden çok değer döndürebilmesine olanak vere
 |[işleç +](../standard-library/complex-operators.md#op_add)|, Biri veya her ikisi de gerçek ve sanal parçalar için türün alt kümesine ait olabilen iki karmaşık sayı ekler.|
 |[işlecinde](../standard-library/complex-operators.md#operator-)|, Bir veya her ikisini de gerçek ve sanal parçalar için türün alt kümesine ait olabilen iki karmaşık sayıyı çıkartır.|
 |[işlecinde](../standard-library/complex-operators.md#op_div)|İki karmaşık sayıyı, birini veya her ikisini de gerçek ve sanal parçalar için türün alt kümesine ait olabilir.|
-|[işleç <\<](../standard-library/complex-operators.md#op_lt_lt)|Çıkış akışına karmaşık bir sayı ekleyen bir şablon işlevi.|
-|[operator==](../standard-library/complex-operators.md#op_eq_eq)|İki karmaşık sayı arasındaki eşitlik için bir veya her ikisinin de gerçek ve sanal parçalar için türün alt kümesine ait olabileceğini sınar.|
+|[işleç < \<](../standard-library/complex-operators.md#op_lt_lt)|Çıkış akışına karmaşık bir sayı ekleyen bir şablon işlevi.|
+|[işleç = =](../standard-library/complex-operators.md#op_eq_eq)|İki karmaşık sayı arasındaki eşitlik için bir veya her ikisinin de gerçek ve sanal parçalar için türün alt kümesine ait olabileceğini sınar.|
 |[işleç > >](../standard-library/complex-operators.md#op_gt_gt)|Giriş akışından karmaşık bir değer çıkaran bir şablon işlevi.|
 
 ### <a name="classes"></a>Sınıflar
 
 |||
 |-|-|
-|[karmaşık\<çift >](../standard-library/complex-double.md)|Açıkça özelleştirilmiş şablon sınıfı, her ikisi de, her ikisi de karmaşık bir sayının gerçek kısmını temsil eden ve ikinci değer sanal parçayı temsil eden **Double**türünde bir nesne çifti depolayan bir nesneyi tanımlar.|
-|[karmaşık\<float >](../standard-library/complex-float.md)|Açıkça özelleştirilmiş şablon sınıfı, her ikisi de float türünde, her ikisi de karmaşık bir sayının gerçek bölümünü temsil eden ve ikinci sanal parçayı temsil eden **kayan**bir nesne çifti depolayan bir nesneyi tanımlar.|
-|[karmaşık\<uzun çift >](../standard-library/complex-long-double.md)|Açıkça özelleştirilmiş şablon sınıfı, her ikisi de **Long Double**türünde, her ikisi de karmaşık bir sayının gerçek kısmını temsil eden ve ikinci sanal parçayı temsil eden bir nesne çifti depolayan bir nesneyi tanımlar.|
-|[ş](../standard-library/complex-class.md)|Şablon sınıfı, karmaşık sayı sistemini temsil etmek için kullanılan bir nesneyi tanımlar ve karmaşık aritmetik işlemler gerçekleştirir.|
+|[karmaşık \<double >](../standard-library/complex-double.md)|Açıkça özelleştirilmiş sınıf şablonu, her ikisi de, her ikisi de karmaşık bir sayının gerçek bölümünü temsil eden ve ikincisi sanal parçayı temsil eden **Double**türü bir nesne çifti depolayan bir nesneyi tanımlar.|
+|[karmaşık \<float >](../standard-library/complex-float.md)|Açıkça özelleştirilmiş sınıf şablonu, her ikisi de float türünde, her ikisi de karmaşık bir sayının gerçek bölümünü temsil eden ve ikincisi sanal parçayı temsil eden **kayan**bir nesne çifti depolayan bir nesneyi tanımlar.|
+|[karmaşık \<long Double >](../standard-library/complex-long-double.md)|Açıkça özelleştirilmiş sınıf şablonu, her ikisi de **Long Double**türünde, her ikisi de karmaşık bir sayının gerçek kısmını temsil eden ve ikinci sanal parçayı temsil eden bir nesne çifti depolayan bir nesneyi tanımlar.|
+|[ş](../standard-library/complex-class.md)|Sınıf şablonu, karmaşık sayı sistemini temsil etmek için kullanılan bir nesneyi tanımlar ve karmaşık aritmetik işlemler gerçekleştirir.|
 
 ### <a name="literals"></a>Sabit değerler
 
-Karmaşık > üst bilgisi, gerçek bölüm sıfır ve sanal bölüm giriş parametresinin değeri olan karmaşık bir sayı oluşturan [Kullanıcı tanımlı aşağıdaki sabit değerleri](../cpp/user-defined-literals-cpp.md) tanımlar. \<
+@No__t_0complex > üst bilgisi, gerçek bölüm sıfır ve sanal bölüm giriş parametresinin değeri olan karmaşık bir sayı oluşturan [Kullanıcı tanımlı aşağıdaki sabit değerleri](../cpp/user-defined-literals-cpp.md) tanımlar.
 
 |||
 |-|-|
-|`constexpr complex<long double> operator""il(long double d)`<br />`constexpr complex<long double> operator""il(unsigned long long d)`|Döndürdüğü`complex<long double>{0.0L, static_cast<long double>(d)}`|
+|`constexpr complex<long double> operator""il(long double d)`<br />`constexpr complex<long double> operator""il(unsigned long long d)`|Şunu döndürür: `complex<long double>{0.0L, static_cast<long double>(d)}`|
 |`constexpr complex<double> operator""i(long double d)`<br />`constexpr complex<double> operator""i(unsigned long long d)`|Döndürür: `complex<double>{0.0, static_cast<double>(d)}`.|
 |`constexpr complex<float> operator""if(long double d)`<br />`constexpr complex<float> operator""if(unsigned long long d)`|Döndürür: `complex<float>{0.0f, static_cast<float>(d)}`.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Üst bilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)\
+[Üst bilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md) \
 [C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)

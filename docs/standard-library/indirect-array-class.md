@@ -6,26 +6,26 @@ f1_keywords:
 helpviewer_keywords:
 - indirect_array class
 ms.assetid: 10e1eaea-ba5a-405c-a25e-7bdd3eee7fc7
-ms.openlocfilehash: 5db5f2ce60038267b70ae8e77d9dd929d972af6a
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 6be0c5153cbc94d09b414fc9e14fa498c7a4cfa7
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68456337"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72687915"
 ---
-# <a name="indirectarray-class"></a>indirect_array Sınıfı
+# <a name="indirect_array-class"></a>indirect_array Sınıfı
 
-Bir üst valarray dizinlerinin alt kümesini belirterek tanımlanan alt küme dizileri arasında işlemler sağlayarak, valarışın alt kümeleri olan nesneleri destekleyen iç, yardımcı şablon sınıfı.
+Bir üst valarray dizinlerinin alt kümesini belirterek tanımlanan alt küme dizileri arasında işlemler sağlayarak, valarışın alt kümeleri olan nesneleri destekleyen iç, yardımcı sınıf şablonu.
 
 ## <a name="syntax"></a>Sözdizimi
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıfı, `va` [valarray](../standard-library/valarray-class.md) `xa` `valarray<size_t>` **>\<türündeki**bir nesneye başvuru depolayan bir nesneyi tanımlar, bir sınıfının bir nesnesi ile birlikte, içinden seçilecek öğelerin dizisini tanımlar `valarray<Type>` nesnesi.
+Sınıfı, `valarray<size_t>` nesnesinden seçilecek öğelerin dizisini açıklayan > sınıfının bir nesne `xa` birlikte, [valarray](../standard-library/valarray-class.md)  **\<Type**sınıfının bir nesne `va` bir başvurusunu depolayan bir nesneyi tanımlar.
 
-Yalnızca formun `indirect_array<Type>` `va[xa]`bir ifadesini yazarak bir nesne oluşturursunuz. İndirect_array sınıfının üye işlevleri, için `valarray<Type>`tanımlanan karşılık gelen işlev imzaları gibi davranır, ancak yalnızca seçili öğelerin sırası etkilenir.
+Bir `indirect_array<Type>` nesnesini yalnızca form `va[xa]` bir ifadesi yazarak oluşturursunuz. İndirect_array sınıfının üye işlevleri, `valarray<Type>` için tanımlanan karşılık gelen işlev imzaları gibi davranır, ancak yalnızca seçili öğelerin sırası etkilenir.
 
-Sıra, XA 'ten oluşur **.** [](../standard-library/valarray-class.md#size) burada öğesi `I` , `I`içindeki  XA[]dizinihaline`va`gelir.
+Sıra, XA 'ten oluşur **.** [öğe `I`](../standard-library/valarray-class.md#size) , `va` içinde **XA**[`I`] Dizin haline gelir.
 
 ## <a name="example"></a>Örnek:
 

@@ -1,21 +1,21 @@
 ---
-title: '&lt;unordered_set&gt;'
+title: '&lt;unordered_set &gt;'
 ms.date: 11/04/2016
 f1_keywords:
 - <unordered_set>
 helpviewer_keywords:
 - unordered_set header
 ms.assetid: a3364d54-147d-4796-8728-9e62a2e4c226
-ms.openlocfilehash: e03fc2f1c541caedfa9ac83bb9500e50a4b513b1
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 71acab214d891c6139f21685e9368399b99e1657
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68454683"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72688785"
 ---
-# <a name="ltunorderedsetgt"></a>&lt;unordered_set&gt;
+# <a name="ltunordered_setgt"></a>&lt;unordered_set &gt;
 
-[Unordered_multiset](../standard-library/unordered-multiset-class.md) ve [unordered_set](../standard-library/unordered-set-class.md) kapsayıcı şablonu sınıflarını ve bunların destekleyici şablonlarını tanımlar.
+[Unordered_multiset](../standard-library/unordered-multiset-class.md) ve [unordered_set](../standard-library/unordered-set-class.md) kapsayıcı sınıfı şablonlarını ve bunların destekleyici şablonlarını tanımlar.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -24,7 +24,7 @@ ms.locfileid: "68454683"
 **Ad alanı:** std
 
 > [!NOTE]
-> Unordered_set > kitaplığı, `#include <initializer_list>` ifadesini de kullanır. \<
+> @No__t_0unordered_set > kitaplığı `#include <initializer_list>` ifadesini de kullanır.
 
 ## <a name="members"></a>Üyeler
 
@@ -40,13 +40,13 @@ ms.locfileid: "68454683"
 |||
 |-|-|
 |[operator!=](../standard-library/unordered-set-operators.md#op_neq)|İşlecin sol tarafındaki unordered_multiset nesnesinin, sağ taraftaki unordered_multiset nesnesine eşit olup olmadığını sınar.|
-|[operator==](../standard-library/unordered-set-operators.md#op_eq_eq)|İşlecin sol tarafındaki unordered_multiset nesnesinin, sağ taraftaki unordered_multiset nesnesine eşit olup olmadığını sınar.|
+|[işleç = =](../standard-library/unordered-set-operators.md#op_eq_eq)|İşlecin sol tarafındaki unordered_multiset nesnesinin, sağ taraftaki unordered_multiset nesnesine eşit olup olmadığını sınar.|
 |[Kur](../standard-library/unordered-set-functions.md#swap_unordered_multiset)|İki çok kümesini değiştirir.|
 |[operator!=](../standard-library/unordered-set-operators.md#op_neq)|İşlecin sol tarafındaki unordered_set nesnesinin, sağ taraftaki unordered_set nesnesine eşit olup olmadığını sınar.|
-|[operator==](../standard-library/unordered-set-operators.md#op_eq_eq)|İşlecin sol tarafındaki unordered_set nesnesinin, sağ taraftaki unordered_set nesnesine eşit olup olmadığını sınar.|
+|[işleç = =](../standard-library/unordered-set-operators.md#op_eq_eq)|İşlecin sol tarafındaki unordered_set nesnesinin, sağ taraftaki unordered_set nesnesine eşit olup olmadığını sınar.|
 |[Kur](../standard-library/unordered-set-functions.md#swap)|İki kümesini değiştirir.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[unordered_map sınıfı](../standard-library/unordered-map-class.md)\
+[unordered_map sınıfı](../standard-library/unordered-map-class.md) \
 [unordered_multimap Sınıfı](../standard-library/unordered-multimap-class.md)

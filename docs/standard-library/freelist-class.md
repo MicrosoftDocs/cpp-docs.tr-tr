@@ -10,12 +10,12 @@ helpviewer_keywords:
 - stdext::freelist [C++], pop
 - stdext::freelist [C++], push
 ms.assetid: 8ad7e35c-4c80-4479-8ede-1a2497b06d71
-ms.openlocfilehash: 8a504f58f9f64aa8b0d26b17090387c5c2b5de21
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: e37b2371238211033d6a8a0847a41677b4e908a2
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68454135"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72688050"
 ---
 # <a name="freelist-class"></a>freelist Sınıfı
 
@@ -33,17 +33,17 @@ class freelist : public Max
 |Parametre|Açıklama|
 |---------------|-----------------|
 |*SZ*|Ayrılacak dizideki öğelerin sayısı.|
-|*en fazla*|Ücretsiz listede depolanacak en fazla öğe sayısını temsil eden Max sınıfı. Max sınıfı [max_none](../standard-library/max-none-class.md), [max_unbounded](../standard-library/max-unbounded-class.md), [max_fixed_size](../standard-library/max-fixed-size-class.md)veya [max_variable_size](../standard-library/max-variable-size-class.md)olabilir.|
+|*Biçimlendir*|Ücretsiz listede depolanacak en fazla öğe sayısını temsil eden Max sınıfı. Max sınıfı [max_none](../standard-library/max-none-class.md), [max_unbounded](../standard-library/max-unbounded-class.md), [max_fixed_size](../standard-library/max-fixed-size-class.md)veya [max_variable_size](../standard-library/max-variable-size-class.md)olabilir.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu şablon sınıfı, en fazla değer olarak geçirilen en büyük sınıfa göre belirlenen listenin en fazla uzunluğu ile *SZ* boyutundaki bellek bloklarının listesini *yönetir.*
+Bu sınıf şablonu *, en fazla*değer olarak geçirilen maksimum sınıf tarafından belirlenen listenin en fazla uzunluğu ile *SZ* boyutundaki bellek bloklarının listesini yönetir.
 
 ### <a name="constructors"></a>Oluşturucular
 
 |Oluşturucu|Açıklama|
 |-|-|
-|[freelist](#freelist)|Türünde `freelist`bir nesne oluşturur.|
+|[freelist](#freelist)|@No__t_0 türünde bir nesne oluşturur.|
 
 ### <a name="member-functions"></a>Üye işlevleri
 
@@ -54,13 +54,13 @@ Bu şablon sınıfı, en fazla değer olarak geçirilen en büyük sınıfa gör
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<ayrıcılar >
+**Üst bilgi:** \<allocators >
 
 **Ad alanı:** stdext
 
 ## <a name="freelist"></a>freelist:: freelist
 
-Türünde `freelist`bir nesne oluşturur.
+@No__t_0 türünde bir nesne oluşturur.
 
 ```cpp
 freelist();
@@ -100,12 +100,12 @@ bool push(void* ptr);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Maxsınıfının`push` işlevi **false** döndürürse **true**; Aksi takdirde, işlev **FALSE** döndürür. `full`
+Max sınıfının `full` işlevi **false**döndürürse **true** ; Aksi takdirde, `push` işlevi **false**döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Max sınıfının işlevi **false** döndürürse, bu üye işlevi *PTR* tarafından işaret edilen bellek bloğunu listenin baş öğesine ekler.`full`
+Max sınıfının `full` işlevi **false**döndürürse, bu üye işlevi *PTR* tarafından işaret edilen bellek bloğunu listenin baş öğesine ekler.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<ayrıcılar >](../standard-library/allocators-header.md)
+[\<allocators >](../standard-library/allocators-header.md)

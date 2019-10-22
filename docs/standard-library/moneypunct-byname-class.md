@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - moneypunct_byname class
 ms.assetid: e8a544d2-6aee-420d-b513-deb385c9b416
-ms.openlocfilehash: 47c9d2281973cb57288bfdcf865926fb6dd9ed0e
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: c687bc870e4d78cfe9174eb04ea09c34d6a9c955
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68460204"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72687665"
 ---
-# <a name="moneypunctbyname-class"></a>moneypunct_byname Sınıfı
+# <a name="moneypunct_byname-class"></a>moneypunct_byname Sınıfı
 
-Parasal giriş alanını veya parasal çıkış alanlarını biçimlendirmeyi etkinleştirerek, belirli bir yerel `moneypunct` ayarın modeli olarak işlev yapabilecek bir nesneyi tanımlayan türetilmiş bir şablon sınıfı.
+Verilen bir yerel ayarın `moneypunct` modeli olarak işlev görebilecek, parasal giriş alanı veya parasal çıkış alanlarını biçimlendirmeyi sağlayan bir nesneyi tanımlayan türetilmiş bir sınıf şablonu.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -40,11 +40,11 @@ protected:
 
 ## <a name="remarks"></a>Açıklamalar
 
-Davranışı, adlandırılmış yerel ayar `_Locname`tarafından belirlenir. Her Oluşturucu kendi temel nesnesini [moneypunct](../standard-library/moneypunct-class.md#moneypunct)\<CharType, Intl > ( `_Refs`) ile başlatır.
+Davranışı, adlandırılmış yerel ayar `_Locname` tarafından belirlenir. Her Oluşturucu kendi temel nesnesini [moneypunct](../standard-library/moneypunct-class.md#moneypunct) \<CharType, Intl > (`_Refs`) ile başlatır.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<yerel ayar >
+**Üst bilgi:** \<locale >
 
 **Ad alanı:** std
 

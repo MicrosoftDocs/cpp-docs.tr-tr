@@ -1,5 +1,5 @@
 ---
-title: '&lt;sabit&gt;'
+title: '&lt;ratio &gt;'
 ms.date: 11/04/2016
 f1_keywords:
 - ratio/std::mega
@@ -31,16 +31,16 @@ f1_keywords:
 - ratio/std::deci
 - ratio/std::deca
 ms.assetid: 8543e912-2d84-45ea-b3c0-bd7bfacee405
-ms.openlocfilehash: f84bea2e3f4a01bb9428eddde3efbf53b73bc2f3
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 5f6919c84c3fb125e149ba6bcd69b6b7f996d17f
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68458162"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72687059"
 ---
-# <a name="ltratiogt"></a>&lt;sabit&gt;
+# <a name="ltratiogt"></a>&lt;ratio &gt;
 
-Derleme zamanında Rational numaralarını \<depolamak ve işlemek için kullanılan sabitleri ve şablonları tanımlamak için Standart başlık oranı > ekleyin.
+Derleme zamanında Rational numaralarını depolamak ve işlemek için kullanılan sabitleri ve şablonları tanımlamak için standart üst bilgi \<ratio > ekleyin.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -60,17 +60,17 @@ struct ratio // holds the ratio of Numerator to Denominator
 }
 ```
 
-`ratio` Şablon statik sabitleri ve`den` bu = / = pay/paydayı tanımlar`num` ve ortak faktörlere sahipdeğildir.`den` `num` `num` `den` `num` / `den`, şablon sınıfı tarafından temsil edilen değerdir. Bu nedenle `type` , örnek oluşturmayı `ratio<num, den>`gösterir.
+Şablon `ratio` statik sabitleri tanımlar `num` ve `num`  /  `den` = = Pay/payda ve `num` `den` ve `den` hiçbir ortak etkene sahip olmaz. `num`  /  `den`, sınıf şablonuyla temsil edilen değerdir. Bu nedenle, `type` örnek oluşturma `ratio<num, den>` belirler.
 
 ### <a name="specializations"></a>Uzmanlıklar
 
-\<oran >, aşağıdaki biçime sahip olan `ratio` öğesinin uzmanlıklarını da tanımlar.
+\<ratio > Ayrıca, aşağıdaki biçime sahip `ratio` uzmanlıklarını da tanımlar.
 
 `template <class R1, class R2> struct ratio_specialization`
 
-Her özelleşmenin de özelleştirilmiş `ratio`olması gereken iki şablon parametresi alır. Değeri `type` , ilişkili bir mantıksal işlem tarafından belirlenir.
+Her özelleşmenin `ratio` de özelleştirilmesi gereken iki şablon parametresi alır. @No__t_0 değeri, ilişkili bir mantıksal işlem tarafından belirlenir.
 
-|Ad|`type`Deeri|
+|Name|`type` değeri|
 |----------|------------------|
 |`ratio_add`|`R1 + R2`|
 |`ratio_divide`|`R1 / R2`|

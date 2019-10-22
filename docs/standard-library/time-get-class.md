@@ -38,16 +38,16 @@ helpviewer_keywords:
 - std::time_get [C++], get_weekday
 - std::time_get [C++], get_year
 ms.assetid: 869d5f5b-dbab-4628-8333-bdea7e272023
-ms.openlocfilehash: 45eeb7bdf944682ca168b8bff01b42815cfa7f28
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: e605423b829305bd1e7bde8be4fdbf312c8ce3c1
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68460007"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72685500"
 ---
-# <a name="timeget-class"></a>time_get Sınıfı
+# <a name="time_get-class"></a>time_get Sınıfı
 
-Şablon sınıfı, zaman değerlerine tür `CharType` dizileri dönüştürmelerini denetlemek için bir yerel ayar modeli olarak kullanılabilecek bir nesneyi tanımlar.
+Sınıf şablonu, zaman değerlerine `CharType` türündeki dizilerin dönüştürmelerini denetlemek için bir yerel ayar modeli olarak işlev görebilecek bir nesne tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -59,10 +59,10 @@ class time_get : public time_base;
 
 ### <a name="parameters"></a>Parametreler
 
-*CharType*\
+*CharType* \
 Bir program içindeki karakterleri kodlamak için kullanılan tür.
 
-*InputIterator*\
+*InputIterator* \
 Saat değerlerinin okunacağı yineleyici.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -73,7 +73,7 @@ Herhangi bir yerel ayar modelinde olduğu gibi, statik nesne kimliğinde depolan
 
 |Oluşturucu|Açıklama|
 |-|-|
-|[time_get](#time_get)|Türündeki `time_get`nesneler için Oluşturucu.|
+|[time_get](#time_get)|@No__t_0 türündeki nesneler için Oluşturucu.|
 
 ### <a name="typedefs"></a>Tür tanımları
 
@@ -89,25 +89,25 @@ Herhangi bir yerel ayar modelinde olduğu gibi, statik nesne kimliğinde depolan
 |[date_order](#date_order)|Bir model tarafından kullanılan tarih düzenini döndürür.|
 |[do_date_order](#do_date_order)|Bir model tarafından kullanılan tarih düzenini döndürmek için çağrılan korumalı sanal üye işlevi.|
 |[do_get](#do_get)|Karakter verilerini okur ve bir saat değerine dönüştürür.|
-|[do_get_date](#do_get_date)|`x`Tanımlayıcıtarafından üretilen tarih olarak bir dizeyi ayrıştırmak için çağrılan korumalı bir sanal üye işlevi. `strftime`|
+|[do_get_date](#do_get_date)|@No__t_1 için `x` belirleyici tarafından üretilen tarih olarak bir dizeyi ayrıştırmak için çağrılan korumalı sanal üye işlevi.|
 |[do_get_monthname](#do_get_monthname)|Bir dizeyi ayın adı olarak ayrıştırmak için çağrılan korumalı sanal üye işlevi.|
-|[do_get_time](#do_get_time)|`X`Tanımlayıcıtarafından üretilen tarih olarak bir dizeyi ayrıştırmak için çağrılan korumalı bir sanal üye işlevi. `strftime`|
+|[do_get_time](#do_get_time)|@No__t_1 için `X` belirleyici tarafından üretilen tarih olarak bir dizeyi ayrıştırmak için çağrılan korumalı sanal üye işlevi.|
 |[do_get_weekday](#do_get_weekday)|Bir dizeyi haftanın günü adı olarak ayrıştırmak için çağrılan korumalı sanal üye işlevi.|
 |[do_get_year](#do_get_year)|Bir dizeyi yılın adı olarak ayrıştırmak için çağrılan korumalı sanal üye işlevi.|
 |[get](#get)|Karakter verilerinin bir kaynağından okur ve bu verileri saat yapı biriminde depolanan bir saate dönüştürür.|
-|[get_date](#get_date)|Bir dizeyi, `x` `strftime`belirleyici tarafından üretilen tarih olarak ayrıştırır.|
+|[get_date](#get_date)|@No__t_1 için `x` belirleyici tarafından üretilen tarih olarak bir dize ayrıştırır.|
 |[get_monthname](#get_monthname)|Bir dizeyi ayın adı olarak ayrıştırır.|
-|[get_time](#get_time)|Bir dizeyi, `X` `strftime`belirleyici tarafından üretilen tarih olarak ayrıştırır.|
+|[get_time](#get_time)|@No__t_1 için `X` belirleyici tarafından üretilen tarih olarak bir dize ayrıştırır.|
 |[get_weekday](#get_weekday)|Bir dizeyi haftanın gününün adı olarak ayrıştırır.|
 |[get_year](#get_year)|Bir dizeyi yılın adı olarak ayrıştırır.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<yerel ayar >
+**Üst bilgi:** \<locale >
 
 **Ad alanı:** std
 
-## <a name="char_type"></a>  time_get::char_type
+## <a name="char_type"></a>time_get::char_type
 
 Bir yerel ayar tarafından kullanılan bir karakteri tanımlamak için kullanılan tür.
 
@@ -179,7 +179,7 @@ German_Germany.1252(day, month, year)
 English_United Kingdom.1252(day, month, year)
 ```
 
-## <a name="do_date_order"></a>  time_get::do_date_order
+## <a name="do_date_order"></a>time_get::d o_date_order
 
 Bir model tarafından kullanılan tarih düzenini döndürmek için çağrılan korumalı sanal üye işlevi.
 
@@ -197,9 +197,9 @@ Sanal korumalı üye işlevi, **time_base::d ateorder**türünde bir değer dön
 
 ### <a name="example"></a>Örnek
 
-Çağıran`do_date_order` [date_order](#date_order)için örneğe bakın.
+@No__t_1 çağıran [date_order](#date_order)için örneğe bakın.
 
-## <a name="do_get"></a>  time_get::do_get
+## <a name="do_get"></a>time_get::d o_get
 
 Karakter verilerini okur ve bir saat değerine dönüştürür. Bir dönüştürme belirticisi ve değiştirici kabul eder.
 
@@ -217,88 +217,88 @@ iter_type first,
 
 ### <a name="parameters"></a>Parametreler
 
-*adı*\
+*ilk* \
 Dönüştürülecek dizinin başlangıcını gösteren bir giriş Yineleyici.
 
-*soyadına*\
+*son* \
 Dizinin sonunu gösteren bir giriş Yineleyici.
 
-*iosbase*\
+*iosbase* \
 Stream nesnesi.
 
-*durumunda*\
+*durum* \
 Itsbase 'de uygun bit maskesi öğelerinin hataları gösterecek şekilde ayarlandığı bir alan.
 
-*PTM*\
+*PTM* \
 Saatin depolanacağı zaman yapısına yönelik bir işaretçi.
 
-*FMT*\
+*fmt* \
 Bir dönüştürme belirleyici karakteri.
 
-*alma*\
+*mod* \
 İsteğe bağlı bir değiştirici karakteri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk dönüştürülmemiş öğeyi atayan bir yineleyici döndürür. ' De bir dönüştürme `ios_base::failbit` hatası `state` kümesi ve *ilk*olarak döndürür.
+İlk dönüştürülmemiş öğeyi atayan bir yineleyici döndürür. Bir dönüştürme hatası `state` `ios_base::failbit` ayarlar ve *ilk*olarak döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sanal üye işlevi,`first` `last`bir veya daha fazla üyesi içinde depolanan değerleri belirlemede [,) aralığında bir veya daha fazla giriş öğesini dönüştürür ve atlar. `*pt` ' De bir dönüştürme `ios_base::failbit` hatası `state` kümesi ve *ilk*olarak döndürür. Aksi takdirde, işlev, ilk dönüştürülmemiş öğeyi tanımlayarak bir yineleyici döndürür.
+Sanal üye işlevi, `*pt` bir veya daha fazla üye içinde depolanan değerleri belirleyebilmek için [`first`, `last`) aralığındaki bir veya daha fazla giriş öğesini dönüştürür ve atlar. Bir dönüştürme hatası `state` `ios_base::failbit` ayarlar ve *ilk*olarak döndürür. Aksi takdirde, işlev, ilk dönüştürülmemiş öğeyi tanımlayarak bir yineleyici döndürür.
 
 Dönüştürme belirticileri şunlardır:
 
-`'a'`ya `'A'` da-- [time_get:: get_weekday](#get_weekday)ile aynı şekilde davranır.
+`'a'` veya `'A'`-- [time_get:: get_weekday](#get_weekday)ile aynı şekilde davranır.
 
-`'b'`, `'B'`, veya `'h'` -- [time_get:: get_monthname](#get_monthname)ile aynı şekilde davranır.
+`'b'`, `'B'` veya `'h'`, [time_get:: get_monthname](#get_monthname)ile aynı şekilde davranır.
 
-`'c'`--ile aynı şekilde `"%b %d %H : %M : %S %Y"`davranır.
+`'c'`--`"%b %d %H : %M : %S %Y"` ile aynı şekilde davranır.
 
-`'C'`--[0, 99] aralığındaki bir ondalık giriş alanını içindeki `val` `pt-&tm_year`değere ve depolarına `val * 100 - 1900` dönüştürür.
+`'C'`--[0, 99] aralığındaki bir ondalık giriş alanını `val` değerine dönüştürür ve `val * 100 - 1900` `pt-&tm_year` depolar.
 
-`'d'`veya `'e'` --[1, 31] aralığındaki bir ondalık giriş alanını dönüştürür ve değerini içinde `pt-&tm_mday`depolar.
+`'d'` veya `'e'`--[1, 31] aralığındaki bir ondalık giriş alanını dönüştürür ve değerini `pt-&tm_mday` olarak depolar.
 
-`'D'`--ile aynı şekilde `"%m / %d / %y"`davranır.
+`'D'`--`"%m / %d / %y"` ile aynı şekilde davranır.
 
-`'H'`--[0, 23] aralığındaki bir ondalık giriş alanını dönüştürür ve değerini içinde `pt-&tm_hour`depolar.
+`'H'`--[0, 23] aralığındaki bir ondalık giriş alanını dönüştürür ve değerini `pt-&tm_hour` depolar.
 
-`'I'`--[0, 11] aralığındaki bir ondalık giriş alanını dönüştürür ve değerini içinde `pt-&tm_hour`depolar.
+`'I'`--[0, 11] aralığındaki bir ondalık giriş alanını dönüştürür ve değerini `pt-&tm_hour` depolar.
 
-`'j'`--[1, 366] aralığındaki bir ondalık giriş alanını dönüştürür ve değerini içinde `pt-&tm_yday`depolar.
+`'j'`--[1, 366] aralığındaki bir ondalık giriş alanını dönüştürür ve değerini `pt-&tm_yday` depolar.
 
-`'m'`--[1, 12] aralığındaki ondalık bir giriş alanını değerine `val` dönüştürür `val - 1` ve içindeki değerini `pt-&tm_mon`depolar.
+`'m'`--[1, 12] aralığındaki ondalık giriş alanını `val` değerine dönüştürür ve `val - 1` depolar ve değerini `pt-&tm_mon` olarak depolar.
 
-`'M'`--[0, 59] aralığındaki bir ondalık giriş alanını dönüştürür ve değerini içinde `pt-&tm_min`depolar.
+`'M'`--[0, 59] aralığındaki bir ondalık giriş alanını dönüştürür ve değerini `pt-&tm_min` depolar.
 
-`'n'`ya `'t'` da--ile aynı şekilde `" "`davranır.
+`'n'` veya `'t'`--`" "` ile aynı şekilde davranır.
 
-`'p'`--"har" veya "har" değerlerini sıfıra ve "PM" veya "PM" olarak dönüştürür ve bu değeri öğesine `pt-&tm_hour`ekler.
+`'p'`--"har" veya "har" değerlerini sıfıra ve "PM" ya da "PM" ya da 12 ' ye dönüştürür ve bu değeri `pt-&tm_hour` ekler.
 
-`'r'`--ile aynı şekilde `"%I : %M : %S %p"`davranır.
+`'r'`--`"%I : %M : %S %p"` ile aynı şekilde davranır.
 
-`'R'`--ile aynı şekilde `"%H %M"`davranır.
+`'R'`--`"%H %M"` ile aynı şekilde davranır.
 
-`'S'`--[0, 59] aralığındaki bir ondalık giriş alanını dönüştürür ve değerini içinde `pt-&tm_sec`depolar.
+`'S'`--[0, 59] aralığındaki bir ondalık giriş alanını dönüştürür ve değerini `pt-&tm_sec` depolar.
 
-`'T'`ya `'X'` da--ile aynı şekilde `"%H : %M : S"`davranır.
+`'T'` veya `'X'`--`"%H : %M : S"` ile aynı şekilde davranır.
 
-`'U'`--[0, 53] aralığındaki bir ondalık giriş alanını dönüştürür ve değerini içinde `pt-&tm_yday`depolar.
+`'U'`--[0, 53] aralığındaki bir ondalık giriş alanını dönüştürür ve değerini `pt-&tm_yday` depolar.
 
-`'w'`--[0, 6] aralığındaki bir ondalık giriş alanını dönüştürür ve değerini içinde `pt-&tm_wday`depolar.
+`'w'`--[0, 6] aralığındaki bir ondalık giriş alanını dönüştürür ve değerini `pt-&tm_wday` depolar.
 
-`'W'`--[0, 53] aralığındaki bir ondalık giriş alanını dönüştürür ve değerini içinde `pt-&tm_yday`depolar.
+`'W'`--[0, 53] aralığındaki bir ondalık giriş alanını dönüştürür ve değerini `pt-&tm_yday` depolar.
 
-`'x'`--ile aynı şekilde `"%d / %m / %y"`davranır.
+`'x'`--`"%d / %m / %y"` ile aynı şekilde davranır.
 
-`'y'`--[0, 99] aralığındaki bir ondalık giriş alanını içindeki `val` `pt-&tm_year`değere ve depolarına `val < 69  val + 100 : val` dönüştürür.
+`'y'`--[0, 99] aralığındaki bir ondalık giriş alanını `val` değerine dönüştürür ve `val < 69  val + 100 : val` `pt-&tm_year` depolar.
 
 `'Y'`-- [time_get:: get_year](#get_year)ile aynı şekilde davranır.
 
-Ve ' deki `state` diğer herhangi `ios_base::failbit` bir dönüştürme belirticisi kümesi. Bu uygulamada, herhangi bir değiştiricinin etkisi yoktur.
+Diğer herhangi bir dönüştürme belirleyicisi kümesi `state` `ios_base::failbit` ve döndürür. Bu uygulamada, herhangi bir değiştiricinin etkisi yoktur.
 
-## <a name="do_get_date"></a>  time_get::do_get_date
+## <a name="do_get_date"></a>time_get::d o_get_date
 
-İçin`strftime` *x* belirleyicisi tarafından üretilen tarih olarak bir dizeyi ayrıştırmak için çağrılan korumalı bir sanal üye işlevi.
+@No__t_1 için *x* belirleyicisi tarafından üretilen tarih olarak bir dizeyi ayrıştırmak için çağrılan korumalı sanal üye işlevi.
 
 ```cpp
 virtual iter_type do_get_date(iter_type first,
@@ -310,19 +310,19 @@ virtual iter_type do_get_date(iter_type first,
 
 ### <a name="parameters"></a>Parametreler
 
-*adı*\
+*ilk* \
 Dönüştürülecek sıranın başlangıcını ele alarak giriş Yineleyici.
 
-*soyadına*\
+*son* \
 Dönüştürülecek dizinin sonunu ele alarak giriş Yineleyici.
 
-*iosbase*\
+*iosbase* \
 Ayarlanan para birimi sembolünün isteğe bağlı olduğunu gösterdiği zaman bir biçim bayrağı. Aksi takdirde, gereklidir.
 
-*durumunda*\
+*durum* \
 İşlem başarılı olup olmadığına göre akış durumu için uygun bit maskesi öğelerini ayarlar.
 
-*PTM*\
+*PTM* \
 Tarih bilgisinin depolanacağı işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -331,7 +331,7 @@ Giriş alanının ötesinde ilk öğeyi ele alan bir giriş Yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sanal korumalı üye işlevi, tamamlanmış ve boş olmayan bir tarih girişi alanı kabul edene kadar, `first`[ `last`,) dizisindeki ilk başlayarak sıralı öğeleri eşleştirmeyi dener. Başarılı olursa, bu alanı, **TM:\_: TM Mon**, **TM:: TM\_Day**ve **TM\_** `ptm->tm_mon`: `ptm->tm_day`: TM Year bileşenleri olarak eşdeğer değerine dönüştürür ve sonuçları,,, ve `ptm->tm_year`sırasıyla. Date giriş alanının ötesinde ilk öğeyi tanımlayarak bir yineleyici döndürür. Aksi takdirde işlev *durum*olarak `iosbase::failbit` ayarlanır. Geçerli bir tarih giriş alanının herhangi bir ön ekinin ötesinde ilk öğeyi tanımlayarak bir yineleyici döndürür. Her iki durumda da, dönüş değeri *en son*eşitse işlev *durum*olarak ayarlanır `ios_base::eofbit` .
+Sanal korumalı üye işlevi, bir tamamlanmış, boş olmayan tarih girişi alanı kabul edene kadar [`first`, `last`) dizisindeki ilk başlayarak sıralı öğeleri eşleştirmeyi dener. Başarılı olursa, bu alanı buna karşılık gelen, **TM:: tm \_mon**, **TM:: TM \_day**ve **TM:: TM \_year**bileşenleri olarak eşdeğer değerine dönüştürür ve sonuçları sırasıyla `ptm->tm_mon`, `ptm->tm_day` ve `ptm->tm_year` içinde depolar. Date giriş alanının ötesinde ilk öğeyi tanımlayarak bir yineleyici döndürür. Aksi takdirde, işlev `iosbase::failbit` *durumu*olarak ayarlanır. Geçerli bir tarih giriş alanının herhangi bir ön ekinin ötesinde ilk öğeyi tanımlayarak bir yineleyici döndürür. Her iki durumda da, dönüş değeri *en son*eşitse, işlev `ios_base::eofbit` *durumu*olarak ayarlanır.
 
 Tarih giriş alanının biçimi yerel ayara bağımlıdır. Varsayılan yerel ayar için, tarih girişi alanı MMM gg, YYYY biçiminde bulunur, burada:
 
@@ -345,9 +345,9 @@ Sabit değerli boşluklar ve virgüllerin Giriş dizisindeki karşılık gelen �
 
 ### <a name="example"></a>Örnek
 
-Çağıran`do_get_date` [get_date](#get_date)için örneğe bakın.
+@No__t_1 çağıran [get_date](#get_date)için örneğe bakın.
 
-## <a name="do_get_monthname"></a>  time_get::do_get_monthname
+## <a name="do_get_monthname"></a>time_get::d o_get_monthname
 
 Bir dizeyi ayın adı olarak ayrıştırmak için çağrılan korumalı sanal üye işlevi.
 
@@ -361,19 +361,19 @@ virtual iter_type do_get_monthname(iter_type first,
 
 ### <a name="parameters"></a>Parametreler
 
-*adı*\
+*ilk* \
 Dönüştürülecek sıranın başlangıcını ele alarak giriş Yineleyici.
 
-*soyadına*\
+*son* \
 Dönüştürülecek dizinin sonunu ele alarak giriş Yineleyici.
 
-*iosbase*\
+*iosbase* \
 Kullanılmayan.
 
-*durumunda*\
+*durum* \
 İşlem başarılı olup olmadığına göre akış durumu için uygun bit maskesi öğelerini ayarlayan çıkış parametresi.
 
-*PTM*\
+*PTM* \
 Ay bilgilerinin depolanacağı işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -382,17 +382,17 @@ Giriş alanının ötesinde ilk öğeyi ele alan bir giriş Yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sanal korumalı üye işlevi, tamamlanmış ve boş olmayan bir ay girişi alanı tanınıncaya kadar, `first`[ `last`,) dizisindeki ilk başlayarak sıralı öğeleri eşleştirmeyi dener. Başarılı olursa, bu alanı buna karşılık gelen ona, **TM::\_TM Mon**bileşen olarak dönüştürür ve sonucu içinde `ptm->tm_mon`depolar. Month giriş alanının ötesinde ilk öğeyi tanımlayarak bir yineleyici döndürür. Aksi takdirde işlev *durum*olarak `ios_base::failbit` ayarlanır. Geçerli bir ay giriş alanının herhangi bir ön ekinin ötesinde ilk öğeyi tanımlayarak bir yineleyici döndürür. Her iki durumda da, dönüş değeri *en son*eşitse işlev *durum*olarak ayarlanır `ios_base::eofbit` .
+Sanal korumalı üye işlevi, bir tamamen, boş olmayan ay girişi alanı kabul edene kadar [`first`, `last`) dizisindeki ilk başlayarak sıralı öğeleri eşleştirmeyi dener. Başarılı olursa, bu alanı bu alanı buna karşılık gelen bir bileşen **TM:: tm \_mon**olarak dönüştürür ve sonucu `ptm->tm_mon` depolar. Month giriş alanının ötesinde ilk öğeyi tanımlayarak bir yineleyici döndürür. Aksi takdirde, işlev `ios_base::failbit` *durumu*olarak ayarlanır. Geçerli bir ay giriş alanının herhangi bir ön ekinin ötesinde ilk öğeyi tanımlayarak bir yineleyici döndürür. Her iki durumda da, dönüş değeri *en son*eşitse, işlev `ios_base::eofbit` *durumu*olarak ayarlanır.
 
 Ay giriş alanı, Oca, Ocak, Şubat, Şubat vb. gibi bir yerel ayara özgü dizilerin en uzun bir kümesini karşılayan bir dizidir. Dönüştürülen değer, Ocak ayına göre geçen ay sayısıdır.
 
 ### <a name="example"></a>Örnek
 
-Çağıran`do_get_monthname` [get_monthname](#get_monthname)için örneğe bakın.
+@No__t_1 çağıran [get_monthname](#get_monthname)için örneğe bakın.
 
-## <a name="do_get_time"></a>  time_get::do_get_time
+## <a name="do_get_time"></a>time_get::d o_get_time
 
-Için`strftime` *X* belirleyicisi tarafından üretilen tarih olarak bir dizeyi ayrıştırmak için çağrılan korumalı bir sanal üye işlevi.
+@No__t_1 için *X* belirleyicisi tarafından üretilen tarih olarak bir dizeyi ayrıştırmak için çağrılan korumalı sanal üye işlevi.
 
 ```cpp
 virtual iter_type do_get_time(iter_type first,
@@ -404,19 +404,19 @@ virtual iter_type do_get_time(iter_type first,
 
 ### <a name="parameters"></a>Parametreler
 
-*adı*\
+*ilk* \
 Dönüştürülecek sıranın başlangıcını ele alarak giriş Yineleyici.
 
-*soyadına*\
+*son* \
 Dönüştürülecek dizinin sonunu ele alarak giriş Yineleyici.
 
-*iosbase*\
+*iosbase* \
 Kullanılmayan.
 
-*durumunda*\
+*durum* \
 İşlem başarılı olup olmadığına göre akış durumu için uygun bit maskesi öğelerini ayarlar.
 
-*PTM*\
+*PTM* \
 Tarih bilgisinin depolanacağı işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -425,7 +425,7 @@ Giriş alanının ötesinde ilk öğeyi ele alan bir giriş Yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sanal korumalı üye işlevi, bir tamamlanmış ve boş olmayan bir zaman girişi alanı tanınana kadar `first`, `last`[,) dizisindeki ilk başlayarak sıralı öğeleri eşleştirmeyi dener. Başarılı olursa, bu `tm::tm_hour`alanı bileşenleri `tm::tm_min`, ve `tm::tm_sec`gibi eşdeğer değerine dönüştürür ve sonuçları `ptm->tm_hour`sırasıyla, `ptm->tm_min`ve ile `ptm->tm_sec`depolar. İlk öğeyi, zaman girişi alanının ötesinde bir yineleyici döndürür. Aksi takdirde işlev *durum*olarak `ios_base::failbit` ayarlanır. Geçerli bir zaman girişi alanının herhangi bir ön ekinin ötesinde ilk öğeyi tanımlayarak bir yineleyici döndürür. Her iki durumda da, dönüş değeri *en son*eşitse işlev *durum*olarak ayarlanır `ios_base::eofbit` .
+Sanal korumalı üye işlevi, bir bütün olarak boş bir zaman girişi alanı kabul edene kadar, [`first`, `last`) dizisindeki ilk başlayarak sıralı öğeleri eşleştirmeyi dener. Başarılı olursa, bu alanı, bileşen `tm::tm_hour`, `tm::tm_min` ve `tm::tm_sec` aynı değere dönüştürür ve sonuçları sırasıyla `ptm->tm_hour`, `ptm->tm_min` ve `ptm->tm_sec` olarak depolar. İlk öğeyi, zaman girişi alanının ötesinde bir yineleyici döndürür. Aksi takdirde, işlev `ios_base::failbit` *durumu*olarak ayarlanır. Geçerli bir zaman girişi alanının herhangi bir ön ekinin ötesinde ilk öğeyi tanımlayarak bir yineleyici döndürür. Her iki durumda da, dönüş değeri *en son*eşitse, işlev `ios_base::eofbit` *durumu*olarak ayarlanır.
 
 Bu uygulamada, saat girişi alanı HH: MM: SS biçiminde bulunur; burada:
 
@@ -439,9 +439,9 @@ Bu uygulamada, saat girişi alanı HH: MM: SS biçiminde bulunur; burada:
 
 ### <a name="example"></a>Örnek
 
-Çağıran`do_get_time` [get_time](#get_time)için örneğe bakın.
+@No__t_1 çağıran [get_time](#get_time)için örneğe bakın.
 
-## <a name="do_get_weekday"></a>  time_get::do_get_weekday
+## <a name="do_get_weekday"></a>time_get::d o_get_weekday
 
 Bir dizeyi haftanın günü adı olarak ayrıştırmak için çağrılan korumalı sanal üye işlevi.
 
@@ -455,19 +455,19 @@ virtual iter_type do_get_weekday(iter_type first,
 
 ### <a name="parameters"></a>Parametreler
 
-*adı*\
+*ilk* \
 Dönüştürülecek sıranın başlangıcını ele alarak giriş Yineleyici.
 
-*soyadına*\
+*son* \
 Dönüştürülecek dizinin sonunu ele alarak giriş Yineleyici.
 
-*iosbase*\
+*iosbase* \
 Ayarlanan para birimi sembolünün isteğe bağlı olduğunu gösterdiği zaman bir biçim bayrağı. Aksi takdirde, gereklidir.
 
-*durumunda*\
+*durum* \
 İşlem başarılı olup olmadığına göre akış durumu için uygun bit maskesi öğelerini ayarlar.
 
-*PTM*\
+*PTM* \
 Hafta içi bilgilerin depolanacağı bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -476,15 +476,15 @@ Giriş alanının ötesinde ilk öğeyi ele alan bir giriş Yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sanal korumalı üye işlevi, tamamlanmış, boş bir hafta içi iş  günü giriş alanını kabul edene `first`kadar `last`[,) dizisindeki ilk başlayarak sıralı öğeleri eşleştirmeyi dener. Başarılı olursa, bu alanı buna karşılık gelen bir bileşen **TM:: TM\_wDay**olarak dönüştürür ve sonucu içinde `ptm->tm_wday`depolar. İlk öğeyi, hafta içi giriş alanının ötesinde bir yineleyici döndürür. Aksi takdirde işlev *durum*olarak `ios_base::failbit` ayarlanır. Geçerli bir iş günü giriş alanının herhangi bir ön ekinin ötesinde ilk öğeyi tanımlayarak bir yineleyici döndürür. Her iki durumda da, dönüş değeri *en son*eşitse işlev *durum*olarak ayarlanır `ios_base::eofbit` .
+Sanal korumalı üye işlevi, (`first`, `last`) dizisindeki *ilk* başlayarak sıralı öğeleri eşleştirmeye çalışır ve bu, boş olmayan bir hafta içi iş günü giriş alanını kabul edene kadar. Başarılı olursa, bu alanı bu alanı buna karşılık gelen bir bileşen **TM:: tm \_wday**olarak dönüştürür ve sonucu `ptm->tm_wday` depolar. İlk öğeyi, hafta içi giriş alanının ötesinde bir yineleyici döndürür. Aksi takdirde, işlev `ios_base::failbit` *durumu*olarak ayarlanır. Geçerli bir iş günü giriş alanının herhangi bir ön ekinin ötesinde ilk öğeyi tanımlayarak bir yineleyici döndürür. Her iki durumda da, dönüş değeri *en son*eşitse, işlev `ios_base::eofbit` *durumu*olarak ayarlanır.
 
 Hafta içi giriş alanı Sun, Pazar, Mon, Pazartesi vb. gibi bir yerel ayara özgü dizilerin en uzun bir kümesini karşılayan bir dizidir. Dönüştürülen değer Pazar tarihinden bu yana geçen gün sayısıdır.
 
 ### <a name="example"></a>Örnek
 
-Çağıran`do_get_weekday` [get_weekday](#get_weekday)için örneğe bakın.
+@No__t_1 çağıran [get_weekday](#get_weekday)için örneğe bakın.
 
-## <a name="do_get_year"></a>  time_get::do_get_year
+## <a name="do_get_year"></a>time_get::d o_get_year
 
 Bir dizeyi yılın adı olarak ayrıştırmak için çağrılan korumalı sanal üye işlevi.
 
@@ -498,19 +498,19 @@ virtual iter_type do_get_year(iter_type first,
 
 ### <a name="parameters"></a>Parametreler
 
-*adı*\
+*ilk* \
 Dönüştürülecek sıranın başlangıcını ele alarak giriş Yineleyici.
 
-*soyadına*\
+*son* \
 Dönüştürülecek dizinin sonunu ele alarak giriş Yineleyici.
 
-*iosbase*\
+*iosbase* \
 Ayarlanan para birimi sembolünün isteğe bağlı olduğunu gösterdiği zaman bir biçim bayrağı. Aksi takdirde, gereklidir.
 
-*durumunda*\
+*durum* \
 İşlem başarılı olup olmadığına göre akış durumu için uygun bit maskesi öğelerini ayarlar.
 
-*PTM*\
+*PTM* \
 Yıl bilgisinin depolanacağı işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -519,13 +519,13 @@ Giriş alanının ötesinde ilk öğeyi ele alan bir giriş Yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sanal korumalı üye işlevi, bir tamamlanmış ve boş olmayan yıl girişi  alanı tanınana kadar, `first`[ `last`,) dizisindeki ilk başlayarak sıralı öğeleri eşleştirmeyi dener. Başarılı olursa, bu alanı buna karşılık gelen bu alanı buna ait **TM::\_TM Year**olarak dönüştürür ve sonucu içinde `ptm->tm_year`depolar. Yıl giriş alanının ötesinde ilk öğeyi tanımlayarak bir yineleyici döndürür. Aksi takdirde işlev *durum*olarak `ios_base::failbit` ayarlanır. Geçerli bir yıl giriş alanının herhangi bir ön ekinin ötesinde ilk öğeyi tanımlayarak bir yineleyici döndürür. Her iki durumda da, dönüş değeri *en son*eşitse işlev *durum*olarak ayarlanır `ios_base::eofbit` .
+Sanal korumalı üye işlevi, bir tamamen, boş olmayan yıl girişi alanı kabul edene kadar [`first`, `last`) dizisindeki *ilk* başlayarak sıralı öğeleri eşleştirmeyi dener. Başarılı olursa, bu alanı bu alanı buna karşılık gelen bir bileşen **TM:: tm \_year**olarak dönüştürür ve sonucu `ptm->tm_year` depolar. Yıl giriş alanının ötesinde ilk öğeyi tanımlayarak bir yineleyici döndürür. Aksi takdirde, işlev `ios_base::failbit` *durumu*olarak ayarlanır. Geçerli bir yıl giriş alanının herhangi bir ön ekinin ötesinde ilk öğeyi tanımlayarak bir yineleyici döndürür. Her iki durumda da, dönüş değeri *en son*eşitse, işlev `ios_base::eofbit` *durumu*olarak ayarlanır.
 
 Yıl girişi alanı, karşılık gelen sayısal değer [1900, 2036) aralığında olması gereken bir ondalık basamak dizisidir. Depolanan değer bu değer eksi 1900 ' dir. Bu uygulamada, [69, 136) aralığındaki değerler [1969, 2036) yıl aralığını temsil eder. [0, 69) aralığındaki değerlere de izin verilir, ancak belirli bir çeviri ortamına bağlı olarak yıl aralığını [1900, 1969) veya [2000, 2069) temsil edebilir.
 
 ### <a name="example"></a>Örnek
 
-Çağıran`do_get_year` [get_year](#get_year)için örneğe bakın.
+@No__t_1 çağıran [get_year](#get_year)için örneğe bakın.
 
 ## <a name="get"></a>time_get:: Get
 
@@ -553,52 +553,52 @@ iter_type get(
 
 ### <a name="parameters"></a>Parametreler
 
-*adı*\
+*ilk* \
 Dönüştürülecek sıranın başladığı yeri gösteren giriş Yineleyici.
 
-*soyadına*\
+*son* \
 Dönüştürülecek dizinin sonunu gösteren giriş Yineleyici.
 
-*iosbase*\
+*iosbase* \
 Akış.
 
-*durumunda*\
+*durum* \
 Uygun bit maskesi öğeleri, akış durumunun hataları göstermesi için ayarlanır.
 
-*PTM*\
+*PTM* \
 Saatin depolanacağı zaman yapısına yönelik işaretçi.
 
-*FMT*\
+*fmt* \
 Bir dönüştürme belirleyici karakteri.
 
-*alma*\
+*mod* \
 İsteğe bağlı bir değiştirici karakteri.
 
-*fmt_first*\
+*fmt_first* \
 Biçim yönergelerinin başlayacağı yeri işaret eder.
 
-*fmt_last*\
+*fmt_last* \
 Biçim yönergelerinin sonuna işaret eder.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Zaman yapısını `*ptm`atamak için kullanılan verilerden sonraki ilk karaktere bir yineleyici döndürür.
+Zaman yapısını `*ptm` atamak için kullanılan verilerden sonra ilk karaktere bir yineleyici döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk üye işlevi döndürür `do_get(first, last, iosbase, state, ptm, fmt, mod)`.
+İlk üye işlevi `do_get(first, last, iosbase, state, ptm, fmt, mod)` döndürür.
 
-İkinci üye işlevi tarafından `do_get` `[fmt_first, fmt_last)`ayrılan biçimin denetimi altında çağırır. Bu biçim, her biri, tarafından `[first, last)`ayrılmış sıfır veya daha fazla giriş öğesi dönüştürmeyi belirleyen, her biri bir alan dizisi olarak davranır. İlk dönüştürülmemiş öğeyi tanımlayarak bir yineleyici döndürür. Üç tür alan vardır:
+İkinci üye işlevi, `[fmt_first, fmt_last)` tarafından ayrılan biçimin denetimi altında `do_get` çağırır. Bu biçim, her biri, `[first, last)` tarafından ayrılmış sıfır veya daha fazla giriş öğesi dönüştürmeyi belirleyen bir alan dizisi olarak davranır. İlk dönüştürülmemiş öğeyi tanımlayarak bir yineleyici döndürür. Üç tür alan vardır:
 
-Her sent (%) biçimde, sonra [EOQ #] kümesinde isteğe bağlı bir değiştirici *mod* ve ardından bir dönüştürme belirticisi *FMT*değeri, *ilk* olarak tarafından `do_get(first, last, iosbase, state, ptm, fmt, mod)`döndürülen değerle değiştirilir. Bir dönüştürme hatası, `ios_base::failbit` *durum* olarak ayarlanır ve döndürür.
+Her sent (%) biçimde, sonra [EOQ #] kümesinde isteğe bağlı bir değiştirici *mod* ve ardından bir dönüştürme belirticisi *FMT*değeri, *ilk* olarak `do_get(first, last, iosbase, state, ptm, fmt, mod)` tarafından döndürülen değerle değiştirilir. Bir dönüştürme hatası, `ios_base::failbit` *durumunu* ayarlar ve döndürür.
 
 Biçimdeki bir boşluk öğesi, son sıfır veya daha fazla giriş boşluğu öğesi atlar.
 
-Biçimdeki diğer tüm öğeler, atlanan bir sonraki giriş öğesiyle eşleşmelidir. Bir eşleşme hatası `ios_base::failbit` , *durum* ve döndürür.
+Biçimdeki diğer tüm öğeler, atlanan bir sonraki giriş öğesiyle eşleşmelidir. Bir eşleştirme hatası, *durum* `ios_base::failbit` ve döndürür.
 
 ## <a name="get_date"></a>time_get::get_date
 
-Bir dizeyi için `strftime` *x* belirleyicisi tarafından üretilen tarih olarak ayrıştırır.
+Bir dizeyi, `strftime` *x* belirleyicisi tarafından üretilen tarih olarak ayrıştırır.
 
 ```cpp
 iter_type get_date(iter_type first,
@@ -610,19 +610,19 @@ iter_type get_date(iter_type first,
 
 ### <a name="parameters"></a>Parametreler
 
-*adı*\
+*ilk* \
 Dönüştürülecek sıranın başlangıcını ele alarak giriş Yineleyici.
 
-*soyadına*\
+*son* \
 Dönüştürülecek dizinin sonunu ele alarak giriş Yineleyici.
 
-*iosbase*\
+*iosbase* \
 Ayarlanan para birimi sembolünün isteğe bağlı olduğunu gösterdiği zaman bir biçim bayrağı. Aksi takdirde, gereklidir.
 
-*durumunda*\
+*durum* \
 İşlem başarılı olup olmadığına göre akış durumu için uygun bit maskesi öğelerini ayarlar.
 
-*PTM*\
+*PTM* \
 Tarih bilgisinin depolanacağı işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -631,7 +631,7 @@ Giriş alanının ötesinde ilk öğeyi ele alan bir giriş Yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi [do_get_date](#do_get_date)`first`döndürür ( `iosbase` `last` ,`state`,,,, ).`ptm`
+Üye işlevi [do_get_date](#do_get_date)döndürür (`first`, `last`, `iosbase`, `state`, `ptm`).
 
 Ayların 0 ' dan 11 ' e sayıldığını unutmayın.
 
@@ -704,19 +704,19 @@ iter_type get_monthname(iter_type first,
 
 ### <a name="parameters"></a>Parametreler
 
-*adı*\
+*ilk* \
 Dönüştürülecek sıranın başlangıcını ele alarak giriş Yineleyici.
 
-*soyadına*\
+*son* \
 Dönüştürülecek dizinin sonunu ele alarak giriş Yineleyici.
 
-*iosbase*\
+*iosbase* \
 Kullanılmayan.
 
-*durumunda*\
+*durum* \
 İşlem başarılı olup olmadığına göre akış durumu için uygun bit maskesi öğelerini ayarlayan çıkış parametresi.
 
-*PTM*\
+*PTM* \
 Ay bilgilerinin depolanacağı işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -725,7 +725,7 @@ Giriş alanının ötesinde ilk öğeyi ele alan bir giriş Yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi [do_get_monthname](#do_get_monthname)`first`döndürür ( `iosbase` `last` ,`state`,,,, ).`ptm`
+Üye işlevi [do_get_monthname](#do_get_monthname)döndürür (`first`, `last`, `iosbase`, `state`, `ptm`).
 
 ### <a name="example"></a>Örnek
 
@@ -784,7 +784,7 @@ tm_isdst: 0
 
 ## <a name="get_time"></a>time_get::get_time
 
-Bir dizeyi için `strftime` *X* belirleyicisi tarafından üretilen tarih olarak ayrıştırır.
+Bir dizeyi, `strftime` *X* belirleyicisi tarafından üretilen tarih olarak ayrıştırır.
 
 ```cpp
 iter_type get_time(iter_type first,
@@ -796,19 +796,19 @@ iter_type get_time(iter_type first,
 
 ### <a name="parameters"></a>Parametreler
 
-*adı*\
+*ilk* \
 Dönüştürülecek sıranın başlangıcını ele alarak giriş Yineleyici.
 
-*soyadına*\
+*son* \
 Dönüştürülecek dizinin sonunu ele alarak giriş Yineleyici.
 
-*iosbase*\
+*iosbase* \
 Kullanılmayan.
 
-*durumunda*\
+*durum* \
 İşlem başarılı olup olmadığına göre akış durumu için uygun bit maskesi öğelerini ayarlar.
 
-*PTM*\
+*PTM* \
 Tarih bilgisinin depolanacağı işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -817,7 +817,7 @@ Giriş alanının ötesinde ilk öğeyi ele alan bir giriş Yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi [do_get_time](#do_get_time)`first`döndürür ( `iosbase` `last` ,`state`,,,, ).`ptm`
+Üye işlevi [do_get_time](#do_get_time)döndürür (`first`, `last`, `iosbase`, `state`, `ptm`).
 
 ### <a name="example"></a>Örnek
 
@@ -877,19 +877,19 @@ iter_type get_weekday(iter_type first,
 
 ### <a name="parameters"></a>Parametreler
 
-*adı*\
+*ilk* \
 Dönüştürülecek sıranın başlangıcını ele alarak giriş Yineleyici.
 
-*soyadına*\
+*son* \
 Dönüştürülecek dizinin sonunu ele alarak giriş Yineleyici.
 
-*iosbase*\
+*iosbase* \
 Ayarlanan para birimi sembolünün isteğe bağlı olduğunu gösterdiği zaman bir biçim bayrağı. Aksi takdirde, gereklidir.
 
-*durumunda*\
+*durum* \
 İşlem başarılı olup olmadığına göre akış durumu için uygun bit maskesi öğelerini ayarlar.
 
-*PTM*\
+*PTM* \
 Hafta içi bilgilerin depolanacağı bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -898,7 +898,7 @@ Giriş alanının ötesinde ilk öğeyi ele alan bir giriş Yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi [do_get_weekday](#do_get_weekday)`first`döndürür ( `iosbase` `last` ,`state`,,,, ).`ptm`
+Üye işlevi [do_get_weekday](#do_get_weekday)döndürür (`first`, `last`, `iosbase`, `state`, `ptm`).
 
 ### <a name="example"></a>Örnek
 
@@ -954,19 +954,19 @@ iter_type get_year(iter_type first,
 
 ### <a name="parameters"></a>Parametreler
 
-*adı*\
+*ilk* \
 Dönüştürülecek sıranın başlangıcını ele alarak giriş Yineleyici.
 
-*soyadına*\
+*son* \
 Dönüştürülecek dizinin sonunu ele alarak giriş Yineleyici.
 
-*iosbase*\
+*iosbase* \
 Ayarlanan para birimi sembolünün isteğe bağlı olduğunu gösterdiği zaman bir biçim bayrağı. Aksi takdirde, gereklidir.
 
-*durumunda*\
+*durum* \
 İşlem başarılı olup olmadığına göre akış durumu için uygun bit maskesi öğelerini ayarlar.
 
-*PTM*\
+*PTM* \
 Yıl bilgisinin depolanacağı işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -975,7 +975,7 @@ Giriş alanının ötesinde ilk öğeyi ele alan bir giriş Yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi [do_get_year](#do_get_year)`first`döndürür ( `iosbase` `last` ,`state`,,,, ).`ptm`
+Üye işlevi [do_get_year](#do_get_year)döndürür (`first`, `last`, `iosbase`, `state`, `ptm`).
 
 ### <a name="example"></a>Örnek
 
@@ -1032,7 +1032,7 @@ Tür, **InputIterator**şablon parametresi için bir eş anlamlı.
 
 ## <a name="time_get"></a>time_get::time_get
 
-Türündeki `time_get`nesneler için Oluşturucu.
+@No__t_0 türündeki nesneler için Oluşturucu.
 
 ```cpp
 explicit time_get(size_t refs = 0);
@@ -1040,18 +1040,18 @@ explicit time_get(size_t refs = 0);
 
 ### <a name="parameters"></a>Parametreler
 
-*refs*\
+*refs* \
 Nesnenin bellek yönetimi türünü belirtmek için kullanılan tamsayı değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
 *Refs* parametresi için olası değerler ve bunların önemi şunlardır:
 
-- 0: Nesnenin ömrü, kendisini içeren yerel ayarlara göre yönetilir.
+- 0: nesnenin ömrü, kendisini içeren yerel ayarlara göre yönetilir.
 
-- 1: Nesnenin ömrü el ile yönetilmelidir.
+- 1: nesnenin ömrü el ile yönetilmelidir.
 
-- \>1: Bu değerler tanımlı değil.
+- \> 1: Bu değerler tanımlı değil.
 
 Yok edicisi korunduğu için doğrudan örnek mümkün değildir.
 
@@ -1059,6 +1059,6 @@ Oluşturucu kendi temel nesnesini **locale::** [model](../standard-library/local
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<Yerel ayar >](../standard-library/locale.md)\
-[time_base sınıfı](../standard-library/time-base-class.md)\
+[\<locale >](../standard-library/locale.md) \
+[Time_base sınıfı](../standard-library/time-base-class.md) \
 [C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)

@@ -1,30 +1,30 @@
 ---
-title: '&lt;array&gt;'
+title: '&lt;array &gt;'
 ms.date: 11/04/2016
 f1_keywords:
 - <array>
 helpviewer_keywords:
 - array header
 ms.assetid: 084147c1-e805-478e-8201-76846020f187
-ms.openlocfilehash: 4c35d34c9c51c8ebd6885b1a1cd07c28bcb61d1b
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: bdf9209b18328735f15393687528a40a94198730
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68456743"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72690046"
 ---
-# <a name="ltarraygt"></a>&lt;array&gt;
+# <a name="ltarraygt"></a>&lt;array &gt;
 
-Kapsayıcı şablonu sınıf **dizisini** ve çeşitli destekleyici şablonları tanımlar.
+Kapsayıcı sınıfı şablon **dizisini** ve çeşitli destekleyici şablonları tanımlar.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<dizi >
+**Üst bilgi:** \<array >
 
 **Ad alanı:** std
 
 > [!NOTE]
-> Dizi > kitaplığı, `#include <initializer_list>` ifadesini de kullanır. \<
+> @No__t_0array > kitaplığı `#include <initializer_list>` ifadesini de kullanır.
 
 ## <a name="members"></a>Üyeler
 
@@ -32,7 +32,7 @@ Kapsayıcı şablonu sınıf **dizisini** ve çeşitli destekleyici şablonları
 
 |||
 |-|-|
-|[array](../standard-library/array-class-stl.md)|Sabit uzunluklu bir öğe dizisi depolar.|
+|[dizide](../standard-library/array-class-stl.md)|Sabit uzunluklu bir öğe dizisi depolar.|
 |[tuple_element](../standard-library/tuple-element-class-tuple.md)|Bir dizi öğesinin türünü sarmalanmış olarak kaydırır.|
 |[tuple_size](../standard-library/tuple-size-class-tuple.md)|Bir dizi öğesinin boyutunu sarar.|
 
@@ -40,9 +40,9 @@ Kapsayıcı şablonu sınıf **dizisini** ve çeşitli destekleyici şablonları
 
 |||
 |-|-|
-|[operator==](../standard-library/array-operators.md#op_eq_eq)|dizi karşılaştırması, eşittir|
+|[işleç = =](../standard-library/array-operators.md#op_eq_eq)|dizi karşılaştırması, eşittir|
 |[operator!=](../standard-library/array-operators.md#op_neq)|dizi karşılaştırması, eşit değil|
-|[işlecinde\<](../standard-library/array-operators.md#op_lt)|dizi karşılaştırması, küçüktür|
+|[işleç \<](../standard-library/array-operators.md#op_lt)|dizi karşılaştırması, küçüktür|
 |[operator>=](../standard-library/array-operators.md#op_gt_eq)|dizi karşılaştırması, büyüktür veya eşittir|
 |[işleç >](../standard-library/array-operators.md#op_gt)|dizi karşılaştırması, büyüktür|
 |[işleç < =](../standard-library/array-operators.md#op_lt_eq)|dizi karşılaştırması, küçüktür veya eşittir|
@@ -56,5 +56,5 @@ Kapsayıcı şablonu sınıf **dizisini** ve çeşitli destekleyici şablonları
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<tanımlama grubu >](../standard-library/tuple.md)\
+[\<tuple >](../standard-library/tuple.md) \
 [Üst bilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)
