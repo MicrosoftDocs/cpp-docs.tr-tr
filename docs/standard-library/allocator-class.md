@@ -34,16 +34,16 @@ helpviewer_keywords:
 - std::allocator [C++], max_size
 - std::allocator [C++], rebind
 ms.assetid: 3fd58076-56cc-43bb-ad58-b4b7c9c6b410
-ms.openlocfilehash: 09c30eb58655113ef3daa8338829ad43b37bc415
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 8cd49051a25148c1c3289de9f0d7046ad27818c9
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68456416"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72690078"
 ---
 # <a name="allocator-class"></a>allocator Sınıfı
 
-Şablon sınıfı, türünde `Type`nesne dizileri için depolama ayırmayı ve boşaltmayı yöneten bir nesneyi tanımlar. Sınıfının `allocator` bir nesnesi, C++ standart kitaplıktaki birkaç kapsayıcı şablonu sınıfının oluşturucuları içinde belirtilen varsayılan ayırıcı nesnesidir.
+Sınıf şablonu, `Type` türünde nesne dizileri için depolama ayırmayı ve boşaltmayı yöneten bir nesneyi tanımlar. @No__t_0 sınıfının bir nesnesi, C++ standart kitaplıktaki çeşitli kapsayıcı sınıfı şablonlarının oluşturucuları 'nda belirtilen varsayılan ayırıcı nesnedir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -54,12 +54,12 @@ class allocator
 
 ### <a name="parameters"></a>Parametreler
 
-*Türüyle*\
+*Tür* \
 Depolamanın ayrıldığı veya serbest bırakıldığı nesnenin türü.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Tüm standart C++ kitaplık kapsayıcıları, varsayılan olarak kullanılacak `allocator`bir şablon parametresine sahiptir. Özel ayırıcı içeren bir kapsayıcı oluşturmak, bu kapsayıcının öğelerinin ayrılması ve serbest bırakma üzerinde denetim sağlar.
+Tüm standart C++ kitaplık kapsayıcıları, `allocator` varsayılan olarak bir şablon parametresine sahiptir. Özel ayırıcı içeren bir kapsayıcı oluşturmak, bu kapsayıcının öğelerinin ayrılması ve serbest bırakma üzerinde denetim sağlar.
 
 Örneğin, bir ayırıcı nesne bir özel yığında veya paylaşılan bellekte depolama alanı ayırabilir veya küçük veya büyük nesne boyutları için iyileştirebilirler. Ayrıca, sağladığı tür tanımlarına, bu öğelere paylaşılan belleği yöneten özel erişimci nesneleri aracılığıyla erişildiğini veya otomatik çöp toplama işlemini de belirtebilir. Bu nedenle, bir ayırıcı nesnesi kullanarak depolamayı ayıran bir sınıf, C++ standart kitaplıktaki kapsayıcılar gibi işaretçi ve başvuru nesnelerini bildirmek için bu türleri kullanmalıdır.
 
@@ -67,15 +67,15 @@ Tüm standart C++ kitaplık kapsayıcıları, varsayılan olarak kullanılacak `
 
 Bu nedenle, bir ayırıcı aşağıdaki türleri tanımlar:
 
-- [işaretçi](#pointer) , için `Type`bir işaretçi gibi davranır.
+- [işaretçi](#pointer) `Type` bir işaretçi gibi davranır.
 
-- [const_pointer](#const_pointer) , için `Type`bir const işaretçisi gibi davranır.
+- [const_pointer](#const_pointer) `Type` için bir const işaretçisi gibi davranır.
 
-- [başvuru](#reference) , öğesine `Type`başvuru gibi davranır.
+- [başvuru](#reference) , `Type` bir başvuru gibi davranır.
 
-- [const_reference](#const_reference) , öğesine `Type`bir const başvurusu gibi davranır.
+- [const_reference](#const_reference) `Type` bir const başvurusu gibi davranır.
 
-Bu `Type`s, işaretçiler ve başvuruların ayrılan öğeler için uygulanması gereken formu belirler. (ayırıcı: sınıf `allocator`için bu açık tanımına sahip olsa bile, `Type*` [:p oınter](#pointer) 'in tüm ayırıcı nesneleri ile aynı olması gerekmez.)
+Bu `Type`s, işaretçilerin ve başvuruların ayrılan öğeler için uygulanması gereken formu belirler. ( [ayırıcı::p oınter](#pointer) , sınıf `allocator` için bu açık tanımına sahip olsa bile tüm ayırıcı nesneleri için `Type*` aynı değildir.)
 
 **C++ 11 ve üzeri:**  Ayıramanız içindeki taşıma işlemlerini etkinleştirmek için, en az ayırıcı arabirimini kullanın ve kopya oluşturucuyu, = = ve! = işleçlerini uygulayın, ayırır ve serbest bırakın. Daha fazla bilgi ve bir örnek için bkz. [ayırıcılar](../standard-library/allocators.md)
 
@@ -85,7 +85,7 @@ Bu `Type`s, işaretçiler ve başvuruların ayrılan öğeler için uygulanması
 
 |||
 |-|-|
-|[allocator](#allocator)|Nesneleri oluşturmak `allocator` için kullanılan oluşturucular.|
+|[allocator](#allocator)|@No__t_0 nesneleri oluşturmak için kullanılan oluşturucular.|
 
 ### <a name="typedefs"></a>Tür tanımları
 
@@ -95,8 +95,8 @@ Bu `Type`s, işaretçiler ve başvuruların ayrılan öğeler için uygulanması
 |[const_reference](#const_reference)|Ayırıcı tarafından yönetilen nesne türüne sabit bir başvuru sağlayan bir tür.|
 |[difference_type](#difference_type)|Ayırıcı tarafından yönetilen nesne türüne yönelik işaretçilerin değerleri arasındaki farkı temsil eden, işaretli bir tamsayı türü.|
 |[çağrısı](#pointer)|Ayırıcı tarafından yönetilen nesne türüne işaretçi sağlayan bir tür.|
-|[Başvuru](#reference)|Ayırıcı tarafından yönetilen nesne türüne başvuru sağlayan bir tür.|
-|[size_type](#size_type)|Şablon sınıfının `allocator` bir nesnesinin ayırabilecek herhangi bir dizinin uzunluğunu temsil eden işaretsiz bir tamsayı türü.|
+|[başvurunun](#reference)|Ayırıcı tarafından yönetilen nesne türüne başvuru sağlayan bir tür.|
+|[size_type](#size_type)|@No__t_0 türünde bir nesnenin ayırabilecek herhangi bir dizinin uzunluğunu temsil eden işaretsiz bir tamsayı türü.|
 |[value_type](#value_type)|Ayırıcı tarafından yönetilen bir tür.|
 
 ### <a name="functions"></a>İşlevler
@@ -108,14 +108,14 @@ Bu `Type`s, işaretçiler ve başvuruların ayrılan öğeler için uygulanması
 |[oluşturma](#construct)|Belirtilen bir değer ile başlatılan belirli bir adreste belirli bir nesne türü oluşturur.|
 |[kaldırmak](#deallocate)|Belirli bir konumdan başlayarak depolama alanından belirtilen sayıda nesneyi serbest bırakır.|
 |[kaldırılır](#destroy)|Nesnenin depolandığı belleği ayırmayı kaldırmadan bir nesne yıkıcısı çağırır.|
-|[max_size](#max_size)|Boş bellek kullanılmadan önce sınıfının `Type` `allocator` bir nesnesi tarafından ayrılabilecek türdeki öğe sayısını döndürür.|
+|[max_size](#max_size)|Boş bellek kullanılmadan önce, `allocator` sınıfının bir nesnesi tarafından ayrılabilecek `Type` türündeki öğe sayısını döndürür.|
 |[Rebind](#rebind)|Bir tür nesneler için bir ayırıcı, başka bir türdeki nesneler için depolama alanı ayırmasına olanak tanıyan bir yapı.|
 
 ### <a name="operators"></a>İşleçler
 
 |||
 |-|-|
-|[operator=](#op_eq)|Bir nesneyi başka bir `allocator` nesneye atar. `allocator`|
+|[işleç =](#op_eq)|Bir `allocator` nesnesini başka bir `allocator` nesnesine atar.|
 
 ### <a name="address"></a>adrestir
 
@@ -128,7 +128,7 @@ const_pointer address(const_reference val) const;
 
 #### <a name="parameters"></a>Parametreler
 
-*Acil*\
+*val* \
 Adresi aranmakta olan nesnenin const veya nonconst değeri.
 
 #### <a name="return-value"></a>Dönüş Değeri
@@ -193,10 +193,10 @@ pointer allocate(size_type count, const void* _Hint);
 
 #### <a name="parameters"></a>Parametreler
 
-*biriktirme*\
+*sayı* \
 Yeterli depolamanın ayrılabileceği öğe sayısı.
 
-*_Ipucu*\
+*_Ipucu* \
 , İstekten önce ayrılan bir nesnenin adresini bularak, ayırıcı nesnesine yardımcı olabilecek bir const işaretçisi.
 
 #### <a name="return-value"></a>Dönüş Değeri
@@ -205,7 +205,7 @@ Ayrılan nesneye yönelik bir işaretçi veya bellek ayrıldıysa null.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, New işleci ( `Type`*Count*) çağırarak türünde bir Count öğeleri dizisi için depolama ayırır. Ayrılan nesneye bir işaretçi döndürür. İpucu bağımsız değişkeni, başvuru yerinin gelişmesinin bazı ayırıcılarına yardımcı olur; geçerli bir seçenek, aynı ayırıcı nesne tarafından daha önce ayrılan ve henüz serbest bırakılmayan bir nesnenin adresidir. İpucu sağlamak için, bunun yerine null işaretçi bağımsız değişkenini kullanın.
+Üye işlevi, New işleci (*Count*) çağırarak `Type` türünde bir dizi Count öğesi için depolamayı ayırır. Ayrılan nesneye bir işaretçi döndürür. İpucu bağımsız değişkeni, başvuru yerinin gelişmesinin bazı ayırıcılarına yardımcı olur; geçerli bir seçenek, aynı ayırıcı nesne tarafından daha önce ayrılan ve henüz serbest bırakılmayan bir nesnenin adresidir. İpucu sağlamak için, bunun yerine null işaretçi bağımsız değişkenini kullanın.
 
 #### <a name="example"></a>Örnek
 
@@ -256,7 +256,7 @@ template <class Other>
 
 #### <a name="parameters"></a>Parametreler
 
-*Right*\
+*sağ* \
 Kopyalanacak ayırıcı nesne.
 
 #### <a name="remarks"></a>Açıklamalar
@@ -336,7 +336,7 @@ typedef const value_type *const_pointer;
 
 #### <a name="remarks"></a>Açıklamalar
 
-İşaretçi türü, ifadesi `ptr` `*ptr`, şablon sınıfı ayırıcısı nesnesinin ayırabilecek herhangi bir const nesnesi ile belirleyebilecek bir nesneyi tanımlar.
+İşaretçi türü, ifade `*ptr`, `allocator` türündeki bir nesnenin ayırabilecek herhangi bir const nesnesi aracılığıyla belirleyebilecek bir nesne `ptr` tanımlar.
 
 #### <a name="example"></a>Örnek
 
@@ -391,7 +391,7 @@ typedef const value_type& const_reference;
 
 #### <a name="remarks"></a>Açıklamalar
 
-Başvuru türü, bir şablon sınıfı ayırıcısı nesnesinin ayırabilecek herhangi bir const nesnesini belirleyebilecek bir nesneyi tanımlar.
+Başvuru türü, `allocator` türünde bir nesnenin ayıraşabolduğu herhangi bir const nesnesini belirleyebilecek bir nesneyi tanımlar.
 
 #### <a name="example"></a>Örnek
 
@@ -460,15 +460,15 @@ template <class _Other>
 
 #### <a name="parameters"></a>Parametreler
 
-*kaydetmeye*\
+*ptr* \
 Nesnenin oluşturulması gereken konuma yönelik bir işaretçi.
 
-*Acil*\
+*val* \
 Oluşturulan nesnenin başlatılacağı değer.
 
 #### <a name="remarks"></a>Açıklamalar
 
-İlk üye işlevi **New** `void` (( \*) `ptr`) **türü** (`val`) ile eşdeğerdir.
+İlk üye işlevi, **New** ((`void` \*) `ptr`) **türü** (`val`) ile eşdeğerdir.
 
 #### <a name="example"></a>Örnek
 
@@ -529,15 +529,15 @@ void deallocate(pointer ptr, size_type count);
 
 #### <a name="parameters"></a>Parametreler
 
-*kaydetmeye*\
+*ptr* \
 Depolamadan serbest bırakmak için ilk nesneye yönelik bir işaretçi.
 
-*biriktirme*\
+*sayı* \
 Depolamadan serbest bırakmak için nesne sayısı.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, ' ı çağırarak `Type` `operator delete(ptr)`, *PTR*ile başlayan türdeki Count nesnelerinin dizisi için depolamayı boşaltır. İşaretçi *PTR* , aynı boyut ve türden bir dizi nesnesi ayırarak,  **\*Bu**değere eşit olarak karşılaştırıldığı bir ayırıcı nesnesini [ayırmak](#allocate) için bir çağrı tarafından daha önce döndürüldü. `deallocate`hiçbir koşulda özel durum oluşturmaz.
+Üye işlevi, `operator delete(ptr)` çağırarak *PTR*'den başlayarak `Type` Count nesnelerinin dizisi için depolamayı boşaltır. İşaretçi *PTR* , aynı boyut ve türden bir dizi nesnesi ayırarak **\*this**eşit olarak karşılaştırdığı bir ayırıcı [nesnesi için bir](#allocate) çağrı tarafından daha önce döndürüldü. `deallocate` hiçbir şekilde özel durum oluşturmaz.
 
 #### <a name="example"></a>Örnek
 
@@ -553,12 +553,12 @@ void destroy(pointer ptr);
 
 #### <a name="parameters"></a>Parametreler
 
-*kaydetmeye*\
+*ptr* \
 Yok edilecek nesnenin adresini atayarak bir işaretçi.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, yok `ptr->`edicisi **türü**:: **~ tür**çağırarak *PTR*tarafından atanan nesneyi yok eder.
+Üye işlevi, `ptr->` yok ediciyi çağırarak (**tür**:: **~ Type**) *PTR*tarafından atanan nesneyi yok eder.
 
 #### <a name="example"></a>Örnek
 
@@ -619,7 +619,7 @@ typedef ptrdiff_t difference_type;
 
 #### <a name="remarks"></a>Açıklamalar
 
-İmzalanan tamsayı türü, şablon sınıfı ayırıcısı nesnesinin ayıracağı bir dizideki iki öğenin adresleri arasındaki farkı temsil eden bir nesneyi tanımlar.
+İmzalanan tamsayı türü, `allocator` türünde bir nesnenin ayıracağı bir dizideki iki öğenin adresleri arasındaki farkı temsil eden bir nesneyi tanımlar.
 
 #### <a name="example"></a>Örnek
 
@@ -672,7 +672,7 @@ The difference between the integer's addresses is: 8.
 
 ### <a name="max_size"></a>max_size
 
-Boş bellek kullanılmadan önce sınıf ayırıcı nesnesi `Type` tarafından ayrılabilecek türdeki öğe sayısını döndürür.
+Boş bellek kullanılmadan önce sınıf ayırıcı nesnesi tarafından ayrılabilecek `Type` türündeki öğe sayısını döndürür.
 
 ```cpp
 size_type max_size() const;
@@ -750,7 +750,7 @@ template <class Other>
 
 #### <a name="parameters"></a>Parametreler
 
-*Right*\
+*sağ* \
 Bu tür bir nesneye atanacak ayırıcı nesne.
 
 #### <a name="return-value"></a>Dönüş Değeri
@@ -812,7 +812,7 @@ typedef value_type *pointer;
 
 #### <a name="remarks"></a>Açıklamalar
 
-İşaretçi türü, bir şablon sınıfı `ptr` ayırıcısı nesnesinin ayırabilecek herhangi bir nesne olan  **\*PTR**ifadesi aracılığıyla belirleyebilecek bir nesneyi tanımlar.
+İşaretçi türü, ifade **\*ptr**, `allocator` türündeki bir nesnenin ayırabilecek herhangi bir nesneyi `ptr` bir nesne tanımlar.
 
 #### <a name="example"></a>Örnek
 
@@ -867,16 +867,16 @@ struct rebind { typedef allocator<_Other> other; };
 
 #### <a name="parameters"></a>Parametreler
 
-*farklı*\
+*diğer* \
 Belleğin ayrıldığı öğenin türü.
 
 #### <a name="remarks"></a>Açıklamalar
 
 Bu yapı, uygulanan kapsayıcının öğe türünden farklı tür için bellek ayırmak için yararlıdır.
 
-Üye şablon sınıfı, diğer türü tanımlar. Tek amacı\< **tür adı**  ayırıcısı\< türü > verilen tür adı ayırıcısı _ diğer > sağlamaktır.
+Üye sınıfı şablonu diğer türü tanımlar. Tek amacı, tür adı **ayırıcısı** \< **tür**> olarak verilen tür adı **ayırıcısını** **diğer**> \<_ sağlamaktır.
 
-Örneğin, türünde `al` `A`bir ayırıcı nesnesi verildiğinde, ifadesi ile türünde `_Other` bir nesne ayırabilirsiniz:
+Örneğin, `A` türünde bir ayırıcı nesne `al` verildiğinde, ifadesiyle `_Other` türünde bir nesne ayırabilirsiniz:
 
 ```cpp
 A::rebind<Other>::other(al).allocate(1, (Other *)0)
@@ -923,7 +923,7 @@ typedef value_type& reference;
 
 #### <a name="remarks"></a>Açıklamalar
 
-Başvuru türü, şablon sınıfı ayırıcısı nesnesinin ayırabilecek herhangi bir nesneyi belirleyebilecek bir nesneyi tanımlar.
+Başvuru türü, `allocator` türünde bir nesnenin ayırabilecek herhangi bir nesneyi belirleyebilecek bir nesneyi tanımlar.
 
 #### <a name="example"></a>Örnek
 
@@ -975,7 +975,7 @@ The element referred to by vref after being modified is: 150.
 
 ### <a name="size_type"></a>size_type
 
-Şablon sınıfı ayırıcısı nesnesinin ayırabilecek herhangi bir dizinin uzunluğunu temsil eden işaretsiz bir tamsayı türü.
+@No__t_0 türünde bir nesnenin ayırabilecek herhangi bir dizinin uzunluğunu temsil eden işaretsiz bir tamsayı türü.
 
 ```cpp
 typedef size_t size_type;
@@ -1028,7 +1028,7 @@ typedef Type value_type;
 
 #### <a name="remarks"></a>Açıklamalar
 
-Tür, şablon parametresi `Type`için bir eş anlamlı.
+Tür, `Type` şablon parametresi için bir eş anlamlı.
 
 #### <a name="example"></a>Örnek
 

@@ -28,32 +28,32 @@ helpviewer_keywords:
 - std::valarray [C++], sum
 - std::valarray [C++], swap
 ms.assetid: 19b862f9-5d09-4003-8844-6ddd02c1a3a7
-ms.openlocfilehash: f42a452613a76aacd98f7eaf395ce72f68dca7ff
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: f116758591461614acfa7c171bff2b1675f453e4
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68453252"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72684091"
 ---
 # <a name="valarray-class"></a>valarray Sınıfı
 
-Şablon sınıfı, bir dizi olarak depolanan, yüksek hızlı matematik işlemleri gerçekleştirmek için `Type` tasarlanan ve hesaplama performansı için optimize edilmiş türündeki öğe dizisini denetleyen bir nesneyi tanımlar.
+Sınıf şablonu, dizi olarak depolanan `Type` türünde öğelerin dizisini denetleyen, yüksek hızlı matematik işlemleri gerçekleştirmek için tasarlanan ve hesaplama performansı için iyileştirilmiş bir nesne tanımlar.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıfı, sıralı bir değer kümesinin matematik kavramının bir gösterimidir ve öğeler sıfırdan sıralı olarak numaralandırılır. Sınıf, [vektör](../standard-library/vector-class.md), destek gibi birinci sınıf sıra kapsayıcılarının bazı özelliklerini desteklediğinden, yakın bir kapsayıcı olarak açıklanmaktadır. Şablon sınıfı vektöründen iki önemli şekilde farklılık gösterir:
+Sınıfı, sıralı bir değer kümesinin matematik kavramının bir gösterimidir ve öğeler sıfırdan sıralı olarak numaralandırılır. Sınıf, [vektör](../standard-library/vector-class.md), destek gibi birinci sınıf sıra kapsayıcılarının bazı özelliklerini desteklediğinden, yakın bir kapsayıcı olarak açıklanmaktadır. Sınıf şablonu vektöründen iki önemli şekilde farklılık gösterir:
 
-- *Xarr* = cos ( *yarr*) `valarray<Type>` + sin ( *zarr*) gibi aynı türdeki ve uzunluktaki nesnelerin karşılık gelen öğeleri arasında çok sayıda aritmetik işlem tanımlar.
+- Bu, *xarr* = cos ( *yarr*) + sin ( *zarr*) gibi aynı türdeki ve uzunluktaki `valarray<Type>` nesnelerinin karşılık gelen öğeleri arasında çok sayıda aritmetik işlem tanımlar.
 
-- Aşırı yükleme `valarray<Type>` [işlecine&#91;](#op_at)göre bir nesneyi alt indis için çeşitli ilginç yollar tanımlar.
+- Bu, aşırı yükleme [işlecine&#91;](#op_at)göre bir `valarray<Type>` nesnesini altyana eklemek için çeşitli ilginç yollar tanımlar.
 
-Sınıfının `Type`bir nesnesi:
+@No__t_0 sınıfının bir nesnesi:
 
 - , Geleneksel davranışla ortak bir varsayılan oluşturucuya, yıkıcı, kopya oluşturucusuna ve atama işlecine sahiptir.
 
 - Geleneksel davranışla birlikte kayan nokta türleri için tanımlanan, gerektiğinde aritmetik işleçleri ve matematik işlevlerini tanımlar.
 
-Özellikle, kopyalama oluşturma ve varsayılan oluşturma arasında ve ardından atama ile hiçbir hafif fark olamaz. Sınıfının `Type` nesnelerinde hiçbir işlem özel durum oluşturabilir.
+Özellikle, kopyalama oluşturma ve varsayılan oluşturma arasında ve ardından atama ile hiçbir hafif fark olamaz. @No__t_0 sınıfının nesnelerinde hiçbir işlem özel durum oluşturabilir.
 
 ## <a name="members"></a>Üyeler
 
@@ -61,49 +61,49 @@ Sınıfının `Type`bir nesnesi:
 
 |||
 |-|-|
-|[valarray](#valarray)|Belirli bir boyut veya belirli bir değerin öğeleri ya da başka `valarray`bir alt kümesinin bir kopyası `valarray` olarak oluşturur. `valarray`|
+|[valarray](#valarray)|Belirli bir boyutun veya belirli bir değerin öğeleriyle ya da başka bir `valarray` başka bir `valarray` ya da alt kümesinin bir kopyası olarak `valarray` oluşturur.|
 
 ### <a name="typedefs"></a>Tür tanımları
 
 |||
 |-|-|
-|[value_type](#value_type)|İçinde depolanan öğe türünü temsil eden bir tür `valarray`.|
+|[value_type](#value_type)|@No__t_0 depolanan öğe türünü temsil eden bir tür.|
 
 ### <a name="functions"></a>İşlevler
 
 |||
 |-|-|
-|[uygulayabilirsiniz](#apply)|Her öğesine `valarray`belirtilen bir işlevi uygular.|
-|[cshift](#cshift)|Periyodik, içindeki `valarray` tüm öğeleri belirtilen sayıda konum ile kaydırır.|
-|[free](#free)|Tarafından kullanılan belleği serbest bırakır `valarray`.|
-|[max](#max)|İçindeki en büyük öğeyi bulur `valarray`.|
-|[min](#min)|İçindeki en küçük öğeyi bulur `valarray`.|
-|[yeniden boyutlandırma](#resize)|İçindeki `valarray` öğe sayısını belirtilen sayı olarak değiştirir, gerekli olarak öğeleri ekler veya kaldırır.|
-|[karakter](#shift)|İçindeki tüm öğeleri belirtilen sayıda konum `valarray` ile kaydırır.|
-|[boyutla](#size)|İçindeki öğe sayısını bulur `valarray`.|
-|[toplamlarını](#sum)|Sıfır dışında uzunluktaki tüm öğelerin `valarray` toplamını belirler.|
+|[uygulayabilirsiniz](#apply)|@No__t_0 her öğesine belirtilen bir işlevi uygular.|
+|[cshift](#cshift)|Periyodik `valarray` tüm öğeleri belirtilen sayıda konum ile kaydırır.|
+|[free](#free)|@No__t_0 tarafından kullanılan belleği serbest bırakır.|
+|[Biçimlendir](#max)|@No__t_0 en büyük öğeyi bulur.|
+|[Min](#min)|@No__t_0 en küçük öğeyi bulur.|
+|[yeniden boyutlandırma](#resize)|Bir `valarray` öğe sayısını belirtilen sayı olarak değiştirir, gerekli olarak öğeleri ekler veya kaldırır.|
+|[karakter](#shift)|@No__t_0 tüm öğeleri belirtilen sayıda konum ile kaydırır.|
+|[boyutla](#size)|Bir `valarray` öğe sayısını bulur.|
+|[toplamlarını](#sum)|Sıfır olmayan uzunluktaki `valarray` tüm öğelerin toplamını belirler.|
 |[Kur](#swap)||
 
 ### <a name="operators"></a>İşleçler
 
 |||
 |-|-|
-|[işlecinde!](#op_not)|İçindeki her öğenin mantıksal `NOT` değerlerini elde eden birli işleç. `valarray`|
-|[operator%=](#op_mod_eq)|Bir dizi öğesinin öğelerinin, belirtilen `valarray` veya öğe türünün bir değeri tarafından bölünmesinin kalan kısmını alır.|
-|[işleç & =](#op_and_eq)|Bir dizide, `AND` belirtilen `valarray` veya öğe türünün bir değeri ile birlikte karşılık gelen öğelerle birlikte, öğelerin bit düzeyinde öğelerini alır.|
-|[işleç > > =](#op_gt_gt_eq)|Bir `valarray` işlenenin her öğesi için bitleri, belirtilen sayıda konum veya bir saniye `valarray`tarafından belirtilen öğe temelinde bir miktar ile sağa kaydırır.|
-|[işleç < < =](#op_lt_lt_eq)|Sol-bir `valarray` işlenenin her öğesi için bitleri belirtilen sayıda konum veya bir saniye `valarray`tarafından belirtilen öğe temelinde bir sayı ile kaydırır.|
-|[operator*=](#op_star_eq)|Öğe türü, öğe temelinde belirtilen `valarray` veya bir değerin öğelerini bir işlenene `valarray`çarpar.|
-|[işleç +](#op_add)|İçindeki her öğeye bir artı uygulayan birli işleç `valarray`.|
-|[operator+=](#op_add_eq)|Öğe türü, öğe temelinde belirtilen `valarray` veya bir değerin öğelerini bir işlenene `valarray`ekler.|
-|[işlecinde](#operator-)|İçindeki her öğeye eksi işareti uygulayan birli işleç `valarray`.|
-|[işleç-=](#operator-_eq)|Öğe türü, öğe temelinde belirtilen `valarray` veya bir değerin öğelerini bir işlenenden `valarray`çıkartır.|
-|[işleç/=](#op_div_eq)|Bir işlenen `valarray` öğe öğesini, belirtilen `valarray` veya öğe türü için bir değer olan öğe temelinde böler.|
-|[operator=](#op_eq)|Değerlerini doğrudan veya bir `valarray` ya da,, ya `slice_array` `mask_array` `valarray` `gslice_array` da`indirect_array`' ın bir parçası olarak belirtilen bir öğesine atar.|
+|[işlecinde!](#op_not)|Bir `valarray` her öğenin mantıksal `NOT` değerlerini elde eden birli işleç.|
+|[işleç% =](#op_mod_eq)|Bir dizi öğesinin öğelerinin, belirtilen bir `valarray` veya öğe türünün bir değeri ile bölünmesinin kalan kısmını alır.|
+|[işleç & =](#op_and_eq)|Bir dizideki öğelerin bit düzeyinde `AND`, belirtilen bir `valarray` karşılık gelen öğelerle ya da öğe türünün bir değeriyle edinir.|
+|[işleç > > =](#op_gt_gt_eq)|@No__t_0 işleneninin her bir öğesi için bitleri, belirtilen sayıda konum veya ikinci bir `valarray` belirtilen öğe temelinde bir miktar ile sağa kaydırır.|
+|[işleç < < =](#op_lt_lt_eq)|Sol-`valarray` işleneninin her bir öğesi için bitleri, belirtilen sayıda konum veya ikinci bir `valarray` belirtilen öğe temelinde bir miktar ile kaydırır.|
+|[işleç * =](#op_star_eq)|Belirtilen bir `valarray` öğelerini veya öğe türü, öğe temelinde değerini bir işlenenden çarpar `valarray`.|
+|[işleç +](#op_add)|Bir `valarray` içindeki her öğeye Plus uygulayan birli işleç.|
+|[işleç + =](#op_add_eq)|Belirtilen bir `valarray` öğelerini veya öğe türü, öğe temelinde bir değeri bir işlenenin `valarray` ekler.|
+|[işlecinde](#operator-)|Bir `valarray` içindeki her öğeye eksi işareti uygulayan birli işleç.|
+|[işleç-=](#operator-_eq)|Belirtilen bir `valarray` öğelerini veya öğe türü, öğe temelinde bir değeri bir işlenenden çıkartır `valarray`.|
+|[işleç/=](#op_div_eq)|Bir işleneni, belirtilen bir `valarray` öğeleri veya öğe türü için öğe temelinde `valarray` böler.|
+|[işleç =](#op_eq)|Değerleri doğrudan veya diğer bir `valarray` parçası olarak ya da bir `slice_array`, `gslice_array`, `mask_array` veya `indirect_array` olarak belirtilen bir `valarray` öğeleri atar.|
 |[işlecinde&#91;&#93;](#op_at)|Belirtilen dizindeki veya belirtilen bir alt kümedeki bir öğeye veya değerine bir başvuru döndürür.|
-|[operator^=](#op_xor_eq)|Belirtilen bir valarray veya öğe türünde bir değere sahip bir `XOR`dizinin öğe temelinde özel mantıksal veya işlecini () alır.|
-|[işleç&#124;=](#op_or_eq)|Bir dizide, `OR` belirtilen `valarray` veya öğe türünün bir değeri ile birlikte karşılık gelen öğelerle birlikte, öğelerin bit düzeyinde öğelerini alır.|
-|[işleç ~](#op_dtor)|İçindeki her öğenin bit düzeyinde `NOT` değerlerini elde eden birli işleç. `valarray`|
+|[işleç ^ =](#op_xor_eq)|Belirtilen bir valarray veya öğe türünde bir değere sahip bir dizinin öğe temelinde özel mantıksal veya işlecini (`XOR`) alır.|
+|[işleç&#124;=](#op_or_eq)|Bir dizideki öğelerin bit düzeyinde `OR`, belirtilen bir `valarray` karşılık gelen öğelerle ya da öğe türünün bir değeriyle edinir.|
+|[işleç ~](#op_dtor)|Bir `valarray` her öğenin bit düzeyinde `NOT` değerlerini elde eden birli işleç.|
 
 ## <a name="apply"></a>uygulayabilirsiniz
 
@@ -125,11 +125,11 @@ Const için işlev nesnesi, valarray işleneninin her öğesine uygulanır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğeleri valarray işleneninin öğelerine öğe `_Func` temelinde uygulamış olan bir valarray.
+Öğeleri valarray işleneninin öğelerine öğe temelinde uygulanmış olan bir valarray `_Func`.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Member işlevi, [valarray](../standard-library/valarray-class.md) **\<Type >** sınıfının, her biri `_Func((*this)[I])` *bir öğe olan* bir [karakter uzunluğunda](#size)bir nesne döndürür.
+Üye [işlevi,](#size) [valarray](../standard-library/valarray-class.md)  **\<Type >** sınıfının, her biri `_Func((*this)[I])` *olan öğelerinden oluşan* bir nesne döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -191,12 +191,12 @@ valarray<Type> cshift(int count) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*biriktirme*\
+*sayı* \
 Öğelerin ileri kaydırılacağı konum sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Tüm öğelerin, valarray önüne doğru bir *şekilde taşındığı,* valarray 'in, işlenen valarray içindeki konumlarına göre periyodik konumlarını taşıyan yeni bir.
+Tüm öğelerin, valarray önüne doğru bir şekilde taşındığı, valarray 'in, işlenen valarray içindeki konumlarına göre periyodik *konumlarını taşıyan yeni* bir.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -292,7 +292,7 @@ Valarray işleneninde öğelerin en büyük değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, sınıf`Type` **\<öğelerininöğeleri arasında işleç** veya **işleç >** uygulayarak değerleri karşılaştırır. `Type`
+Üye işlevi, sınıf `Type` öğe çiftleri arasında **işleç \<** veya **işleç >** uygulayarak, öğe `Type` için hangi işleçlerin sağlanması gerektiğini, değerleri karşılaştırır.
 
 ### <a name="example"></a>Örnek
 
@@ -345,7 +345,7 @@ Valarray işleneninde öğelerin en küçük değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, sınıf`Type` **\<öğelerininöğeleri arasında işleç** veya **işleç >** uygulayarak değerleri karşılaştırır. `Type`
+Üye işlevi, sınıf `Type` öğe çiftleri arasında **işleç \<** veya **işleç >** uygulayarak, öğe `Type` için hangi işleçlerin sağlanması gerektiğini, değerleri karşılaştırır.
 
 ### <a name="example"></a>Örnek
 
@@ -397,7 +397,7 @@ Valarray işleneninin öğe değerlerini olumsuzlama olan Boolean değerlerinin 
 
 ### <a name="remarks"></a>Açıklamalar
 
-Mantıksal **işlem,** tüm sıfırları bir değere dönüştürdüğünden ve sıfır dışında tüm değerleri sıfır olarak dönüştürerek öğeleri geçersiz hale getirir. Boole değerlerinin döndürülen valarray, valarray işleneni ile aynı boyutudır.
+Mantıksal işlem, tüm sıfırları bir değere dönüştürdüğünden ve sıfır dışında tüm değerleri sıfır olarak dönüştürerek **öğeleri geçersiz hale** getirir. Boole değerlerinin döndürülen valarray, valarray işleneni ile aynı boyutudır.
 
 Ayrıca, bir valarray 'ın **karakter** ve **tamsayı** öğelerinin ikili gösteriminde tek tek bitlerin düzeyinde geçersiz hale gelen bit düzeyinde **olmayan**[valarray:: operator ~](#op_dtor) .
 
@@ -454,7 +454,7 @@ valarray<Type>& operator%=(const Type& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*Right*\
+*sağ* \
 Bir öğe türünün valarray veya değeri, öğe odaklı, öğe temelinde, valarray işleneni olan valarray ile özdeş.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -509,7 +509,7 @@ The remainders from the element-by-element division is the
 valarray: ( 0 -3 4 -7 1 -3 ).
 ```
 
-## <a name="op_and_eq"></a>işlecinde&amp;=
+## <a name="op_and_eq"></a>işleç &amp; =
 
 Bir dizideki bit düzeyinde **ve** öğelerin, belirtilen bir valarray karşılık gelen öğelerle ya da öğe türü değeri ile elde ettiği öğeleri alır.
 
@@ -521,18 +521,18 @@ valarray<Type>& operator&=(const Type& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*Right*\
-Öğe türünün valarray veya değeri, öğe temelinde, valarray işleneni ile mantıksal `AND` tarafından birleştirilecek olan valarray.
+*sağ* \
+Bir öğe türünün valarray veya değeri, öğe temelinde, valarray işleneni ile mantıksal `AND` birleştirilecek olan işlenenden özdeş.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğeleri, valarray işlenenin öğe temelinde mantıksal `AND` öğesi olan bir valarray *sağ*
+Öğeleri, işlenenin öğe temelinde mantıksal `AND` olan bir valarray- *sağ*
 
 ### <a name="remarks"></a>Açıklamalar
 
 Bit düzeyinde bir işlem, **float**, **Double**, **longdouble**, **void**, **bool**veya diğer, daha karmaşık veri türlerinde değil yalnızca **char** ve **int** veri türleri ve varyantlarını işlemek için kullanılabilir.
 
-Bit düzeyinde ve mantıksal `AND` olarak aynı Truth tablosuna sahiptir, ancak tek tek bitlerin düzeyindeki veri türü için geçerli olur. Her iki bit de doğru olursa, *b 1 ve* *b*2, *b*1 `AND` *b*2 değeri de **geçerlidir** ; en az bir false olduğunda **false** .
+Bit düzeyinde ve mantıksal `AND` aynı Truth tablosuna sahiptir, ancak tek tek bitlerin düzeyindeki veri türü için geçerli olur. Her iki *bit de*doğru olursa, b 1 ve *b*2, *b*1 `AND` *b*2 değeri de **geçerlidir** ; en az bir false olduğunda **false** .
 
 ### <a name="example"></a>Örnek
 
@@ -582,7 +582,7 @@ The element-by-element result of the logical AND operator&= is the
 valarray: ( 0 0 0 2 0 4 0 6 0 8 ).
 ```
 
-## <a name="op_gt_gt_eq"></a>işlecinde&gt;&gt;=
+## <a name="op_gt_gt_eq"></a>işleç &gt; &gt; =
 
 Bir valarray işleneninin her öğesi için bitleri, belirtilen sayıda konum veya bir ikinci valarray tarafından belirtilen öğe temelinde bir miktar ile sağa kaydırır.
 
@@ -594,7 +594,7 @@ valarray<Type>& operator>>=(const Type& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*Right*\
+*sağ* \
 Öğesi, sağ SHIFT veya valarray öğelerinin öğe temelinde sağ SHIFT miktarını belirten değer.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -653,7 +653,7 @@ The element-by-element result of the right shift is the
 valarray: ( 64 -32 16 -8 4 -2 1 -1 ).
 ```
 
-## <a name="op_lt_lt_eq"></a>işlecinde&lt;&lt;=
+## <a name="op_lt_lt_eq"></a>işleç &lt; &lt; =
 
 Sol-bir valarray işleneninin her öğesi için bitleri, belirtilen sayıda konum veya bir ikinci valarray tarafından belirtilen öğe temelinde bir miktar ile kaydırır.
 
@@ -665,7 +665,7 @@ valarray<Type>& operator<<=(const Type& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*Right*\
+*sağ* \
 Öğeleri, sol SHIFT veya valarray öğelerinin öğe temelinde sol SHIFT miktarını belirten değer.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -738,7 +738,7 @@ valarray<Type>& operator*=(const Type& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*Right*\
+*sağ* \
 Öğe türünün valarray veya değeri, öğe temelinde, öğe odaklı, valarray işleneni olan valarray ile özdeş.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -857,7 +857,7 @@ valarray<Type>& operator+=(const Type& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*Right*\
+*sağ* \
 Öğe türünün valarray veya değeri, öğe temelinde, öğe odaklı valarray işlenenden özdeş olan valarray.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -977,7 +977,7 @@ valarray<Type>& operator-=(const Type& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*Right*\
+*sağ* \
 Bir öğe türünün valarray veya değeri, öğe temelinde çıkarılacak valarray işleneniyle aynı bir öğe türü için valarray.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1044,7 +1044,7 @@ valarray<Type>& operator/=(const Type& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*Right*\
+*sağ* \
 Öğe türünün valarray veya değeri, öğe temelinde, valarray işleneni içine bölünecek şekilde valarray.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1121,22 +1121,22 @@ valarray<Type>& operator=(const indirect_array<Type>& _Indarray);
 
 ### <a name="parameters"></a>Parametreler
 
-*Right*\
+*sağ* \
 Valarray işleneni kopyalamak için valarray.
 
-*Acil*\
+*val* \
 Valarray işleneninin öğelerine atanacak değer.
 
-*_Dilimleyicearray*\
+*_Dilimleyiceden ray* \
 Valarray işleneni kopyalamak için slice_array.
 
-*_Gdilimleyicearray*\
+*_Gdilimleyicearray* \
 Valarray işleneni kopyalamak için gslice_array.
 
-*_Maskarray*\
+*_Maskarray* \
 Valarray işleneni kopyalamak için mask_array.
 
-*_Indarray*\
+*_Indarray* \
 Valarray işleneni kopyalamak için indirect_array.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1237,19 +1237,19 @@ valarray<Type> operator[](const valarray<size_t>& _Indarray) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*_Kapatma*\
+*_Kapatma* \
 Bir değere atanacak öğenin dizini.
 
-*_Dilimleyicearray*\
+*_Dilimleyiceden ray* \
 Seçilecek veya yeni bir valarray döndürülecek bir alt kümeyi belirten bir valarray slice_array.
 
-*_Gdilimleyicearray*\
+*_Gdilimleyicearray* \
 Seçilecek veya yeni bir valarray döndürülecek bir alt kümeyi belirten bir valarray gslice_array.
 
-*_Boolarray*\
+*_Boolarray* \
 Seçilecek veya yeni bir valarray döndürülecek bir alt kümeyi belirten bir valarray bool_array.
 
-*_Indarray*\
+*_Indarray* \
 Seçilecek veya yeni bir valarray döndürülecek bir alt kümeyi belirten bir valarray indirect_array.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1258,7 +1258,7 @@ Belirtilen dizinde veya belirtilen bir alt kümede bulunan bir öğeye veya değ
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işleci, tarafından  <strong>\*</strong>Denetlenenler arasından öğe dizileri seçmek için çeşitli yollar sağlamak üzere aşırı yüklenmiştir. İlk beş üye işleci grubu, denetlenen sıranın seçmeli değiştirme (dilimleme) için farklı [işleç =](#op_eq) (ve diğer atama işleçleri) ile birlikte çalışır. Seçilen öğeler var olmalıdır.
+Üye işleci, <strong>\*this</strong>tarafından Denetlenenler arasından öğe dizileri seçmek için çeşitli yollar sağlamak üzere aşırı yüklenmiştir. İlk beş üye işleci grubu, denetlenen sıranın seçmeli değiştirme (dilimleme) için farklı [işleç =](#op_eq) (ve diğer atama işleçleri) ile birlikte çalışır. Seçilen öğeler var olmalıdır.
 
 1 veya 2 olarak tanımlanan [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md) kullanılarak derlendiğinde, valarray sınırları dışında bir öğeye erişmeyi denerseniz bir çalışma zamanı hatası oluşur.  Daha fazla bilgi için bkz. [Checked Iterators](../standard-library/checked-iterators.md) .
 
@@ -1278,7 +1278,7 @@ valarray<Type>& operator|=(const Type& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*Right*\
+*sağ* \
 Öğe türünün valarray veya değeri, öğe temelinde, valarray işleneni ile dışlamalı mantıksal **Xor** tarafından birleştirilecek olan valarray.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1287,7 +1287,7 @@ valarray<Type>& operator|=(const Type& right);
 
 ### <a name="remarks"></a>Açıklamalar
 
-**Xor**olarak adlandırılan dışlamalı mantıksal veya, aşağıdaki semantiğe sahiptir: Yalnızca bir öğe doğru *ise,* *e 1 ve* *e*2. e 1 **Xor** *e*2 öğesi **doğru** olur; Her iki öğe de yanlışsa veya her iki öğe de doğruysa **false** .
+Tek başına mantıksal or, **Xor**olarak adlandırılır, aşağıdaki anlamlara sahiptir *: 1 ve*2. öğeler verildiğinde, *e*1 **Xor** *e* *2,* tam olarak bir öğe doğru ise **doğrudur** ; Her iki öğe de yanlışsa veya her iki öğe de doğruysa **false** .
 
 ### <a name="example"></a>Örnek
 
@@ -1343,7 +1343,7 @@ valarray: ( 1 0 0 3 2 4 7 6 6 9 ).
 
 ## <a name="op_or_eq"></a>işleç&#124;=
 
-Belirtilen bir valarray `OR` veya öğe türünde bir değer ile karşılık gelen öğelerle bir dizideki bit düzeyinde öğeleri alır.
+Bir dizideki öğelerin bit düzeyinde `OR`, belirtilen valarray karşılık gelen öğelerle veya öğe türü değeri ile edinir.
 
 ```cpp
 valarray<Type>& operator|=(const valarray<Type>& right);
@@ -1353,18 +1353,18 @@ valarray<Type>& operator|=(const Type& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*Right*\
-Öğe türünün valarray veya değeri, öğe temelinde, valarray işleneni ile bit düzeyinde `OR` olacak şekilde birleştirilir.
+*sağ* \
+Bir öğe türünün valarray veya değeri, öğe temelinde, valarray işleneni ile bit düzeyinde `OR` olarak birleştirilmek için kullanılan işlenenden özdeş.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğeleri, valarray işlenenin öğe temelinde bit düzeyinde `OR` olan bir valarray.
+Öğeleri, valarray işlenenin öğe temelinde bit düzeyinde *`OR`.*
 
 ### <a name="remarks"></a>Açıklamalar
 
 Bit düzeyinde bir işlem, **float**, **Double**, **longdouble**, **void**, **bool**veya diğer, daha karmaşık veri türlerinde değil yalnızca **char** ve **int** veri türleri ve varyantlarını işlemek için kullanılabilir.
 
-Bit düzeyinde `OR` mantıksal `OR` olarak aynı Truth tablosu vardır, ancak tek tek bitlerin düzeyindeki veri türü için geçerli olur. Bitlerin en az biri true ise, *b 1 ve* *b*2, *b*1 `OR` *b*2 değeri de **geçerlidir** ; Her iki bit de false olduğunda **false** .
+Bit düzeyinde `OR`, mantıksal `OR` aynı Truth tablosuna sahiptir ancak tek tek bitlerin düzeyindeki veri türü için geçerli olur. Bitlerin en az biri doğru ise *b 1 ve* *b*2, *b*1 `OR` *b*2, **doğru** olur; Her iki bit de false olduğunda **false** .
 
 ### <a name="example"></a>Örnek
 
@@ -1440,7 +1440,7 @@ Valarray işlenenin öğe değerlerinin bit düzeyinde `NOT` olan Boolean değer
 
 Bit düzeyinde bir işlem, **float**, **Double**, **longdouble**, **void**, **bool** veya diğer, daha karmaşık veri türlerinde değil yalnızca **char** ve **int** veri türleri ve varyantlarını işlemek için kullanılabilir.
 
-Bit düzeyinde `NOT` mantıksal `NOT` olarak aynı Truth tablosu vardır, ancak tek tek bitlerin düzeyindeki veri türü için geçerli olur. Verilen bit *b*, ~ *b* , *b* yanlış ise true, *b* ise false şeklindedir. Mantıksal **Not**[işleci!](#op_not) öğe düzeyinde uygulanır, sıfır olmayan tüm değerler **doğru**olarak belirlenir ve sonuç Boolean değerlerinin bir valarray. Bit düzeyinde `NOToperator~`, aksine, bit düzeyinde işlemin sonucuna bağlı olarak 0 veya 1 ' den farklı değerler valarray olabilir.
+Bit düzeyinde `NOT`, mantıksal `NOT` aynı Truth tablosuna sahiptir ancak tek tek bitlerin düzeyindeki veri türü için geçerli olur. Verilen bit *b*, ~ *b* , *b* yanlış ise true, *b* ise false şeklindedir. Mantıksal **Not**[işleci!](#op_not) öğe düzeyinde uygulanır, sıfır olmayan tüm değerler **doğru**olarak belirlenir ve sonuç Boolean değerlerinin bir valarray. Bit düzeyinde `NOToperator~`, buna karşılık olarak, bit düzeyinde işlemin sonucuna bağlı olarak 0 veya 1 ' den farklı değerlerin valarray oluşmasına neden olabilir.
 
 ### <a name="example"></a>Örnek
 
@@ -1538,10 +1538,10 @@ void resize(
 
 ### <a name="parameters"></a>Parametreler
 
-*_Newsize*\
+*_Newsize* \
 Yeniden boyutlandırılmış valarray öğe sayısı.
 
-*Acil*\
+*val* \
 Yeniden boyutlandırılmış valarray öğelerine verilecek değer.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -1609,12 +1609,12 @@ valarray<Type> shift(int count) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*biriktirme*\
+*sayı* \
 Öğelerin ileri kaydırılacağı konum sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Tüm *öğelerin taşınmış olduğu* yeni bir valarray, valarray işleneninde yer aldığı konumlarda olduğu gibi, valarray önüne doğru.
+Tüm öğelerin taşınmış olduğu yeni bir valarray, valarray işleneninde yer *aldığı konumlarda olduğu* gibi, valarray önüne doğru.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1765,7 +1765,7 @@ Valarray işleneni öğelerinin toplamı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Uzunluk birden büyükse, üye işlevi, sınıfının `operator+=` `Type`öğe çiftleri arasında uygulayarak değerleri toplamına ekler. Bu, bu işleci, sonuç olarak türü `Type`öğeler için sağlanması gerekir.
+Uzunluk birden büyükse, üye işlevi, sınıf `Type` öğe çiftleri arasında `operator+=`, bu nedenle `Type` türü öğeler için sağlanması gereken bir işleç) uygulayarak değerleri toplamına ekler.
 
 ### <a name="example"></a>Örnek
 
@@ -1803,7 +1803,7 @@ The sum of elements in the valarray is: 45.
 
 ## <a name="swap"></a>Kur
 
-İki `valarray`öğenin öğelerini değiş tokuş eder.
+İki `valarray`s öğelerini değiş tokuş eder.
 
 ```cpp
 void swap(valarray& right);
@@ -1811,12 +1811,12 @@ void swap(valarray& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*Right*\
-Takas `valarray` edilecek öğeleri sağlayan bir.
+*sağ* \
+Takas edilecek öğeleri sağlayan bir `valarray`.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, ve `*this` *sağ*arasındaki denetlenen dizileri değiştirir. Bu, sabit bir zamanda özel durum oluşturmaz ve iki denetimli sırada öğeleri belirten hiçbir başvuru, işaretçi veya yineleyiciyi geçersiz kılar.
+Üye işlevi, `*this` ve *sağ*arasındaki denetlenen dizileri değiştirir. Bu, sabit bir zamanda özel durum oluşturmaz ve iki denetimli sırada öğeleri belirten hiçbir başvuru, işaretçi veya yineleyiciyi geçersiz kılar.
 
 ## <a name="valarray"></a>valarray
 
@@ -1860,44 +1860,44 @@ valarray(
 
 ### <a name="parameters"></a>Parametreler
 
-*Biriktirme*\
+*Sayı* \
 Valarray içinde olacak öğe sayısı.
 
-*Acil*\
+*Val* \
 Valarray içindeki öğeleri başlatırken kullanılacak değer.
 
-*Kaydetmeye*\
+*Ptr* \
 Valarray içindeki öğeleri başlatmak için kullanılacak değerlere yönelik işaretçi.
 
-*Right*\
+*Sağ* \
 Yeni valarray 'yi başlatmak için mevcut bir valarray.
 
-*Dilimleyici*\
+@No__t_1 *bölümü*
 Öğe değerleri, oluşturulmakta olan valarray öğelerini başlatırken kullanılacak olan bir slice_array.
 
-*Gdilimleyicearray*\
+*Gdilimleyicearray* \
 Öğe değerleri, oluşturulmakta olan valarray öğelerini başlatırken kullanılacak olan bir gslice_array.
 
-*MaskArray*\
+*Maskarray* \
 Öğe değerleri, oluşturulmakta olan valarray öğelerini başlatırken kullanılacak olan bir mask_array.
 
-*IndArray*\
+*Indarray* \
 Öğe değerleri, oluşturulmakta olan valarray öğelerini başlatırken kullanılacak olan bir indirect_array.
 
-*IList*\
+*Ilist* \
 Kopyalanacak öğeleri içeren initializer_list.
 
 ### <a name="remarks"></a>Açıklamalar
 
 İlk (varsayılan) Oluşturucu nesnesini boş bir diziye başlatır. Sonraki üç Oluşturucu her biri nesneyi aşağıdaki gibi bir *Count* öğeleri dizisine başlatır:
 
-- Açık `valarray(size_t Count)`için her öğe varsayılan Oluşturucu ile başlatılır.
+- Açık `valarray(size_t Count)` için her öğe varsayılan Oluşturucu ile başlatılır.
 
-- İçin `valarray(const Type& Val, Count)`her öğe *Val*ile başlatılır.
+- @No__t_0 için her öğe *Val*ile başlatılır.
 
-- İçin `valarray(const Type* Ptr, Count)`, konumundaki `I` öğesi `Ptr` [`I`] ile başlatılır.
+- @No__t_0 için `I` konumundaki öğe `Ptr` [`I`] ile başlatılır.
 
-Kalan her Oluşturucu nesneyi bağımsız değişkende belirtilen alt küme\<tarafından belirlenen bir valarray Type > nesnesine başlatır.
+Kalan her Oluşturucu, nesneyi bağımsız değişkende belirtilen alt küme tarafından belirlenen bir valarray \<Type > nesnesine başlatır.
 
 Son Oluşturucu son ' a bir sonraki ile aynıdır, ancak [rvalue başvuru bildirimci: & &](../cpp/rvalue-reference-declarator-amp-amp.md).
 
@@ -1964,7 +1964,7 @@ typedef Type value_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, şablon parametresi `Type`için bir eş anlamlı.
+Tür, `Type` şablon parametresi için bir eş anlamlı.
 
 ### <a name="example"></a>Örnek
 

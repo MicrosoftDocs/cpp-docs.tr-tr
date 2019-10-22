@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - binder1st class
 ms.assetid: 6b8ee343-c82f-48f8-867d-06f9d1d324c0
-ms.openlocfilehash: 384a870a10c9f806684443d8c67647e924b6b2aa
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 15b704134d47b7bf7d8857bf380c756b0b03a1b0
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68243380"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72688382"
 ---
 # <a name="binder1st-class"></a>binder1st Sınıfı
 
-Bir ikili fonksiyon nesnesi belirtilen değere ikili işlevinin ilk bağımsız değişkeni bağlayarak birli nesnesine dönüştürür. bir oluşturucu sağlayan bir şablon sınıfı. Şunun için C ++ 11'de kullanım dışı [bağlama](functional-functions.md#bind)ve C ++ 17 sürümünde kaldırılmıştır.
+İkili işlevin ilk bağımsız değişkenini belirtilen bir değere bağlayarak bir ikili işlev nesnesini birli işlev nesnesine dönüştüren bir Oluşturucu sağlayan bir sınıf şablonu. [Bağlama](functional-functions.md#bind)için c++ 11 ' de kullanımdan kaldırılmıştır ve c++ 17 ' de kaldırılır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -43,24 +43,24 @@ protected:
 
 ### <a name="parameters"></a>Parametreler
 
-*binary_fn*\
-Birli işlevi nesnesine dönüştürülecek ikili fonksiyon nesnesi.
+*binary_fn* \
+Birli işlev nesnesine dönüştürülecek ikili işlev nesnesi.
 
-*Sol*\
-İlk bağımsız değişken ikili işlev nesnesine bağlı olduğu değeri.
+*sol* \
+İkili işlev nesnesinin ilk bağımsız değişkeninin bağlanacağı değer.
 
-*sağ*\
-Uyarlanmış ikili nesne sabit değeri ikinci bağımsız değişkeni olarak karşılaştıran bir bağımsız değişken değeri.
+*sağ* \
+Uyarbınary nesnesinin, ikinci bağımsız değişkenin sabit değeriyle karşılaştırıldığı bağımsız değişkenin değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-İkili fonksiyon nesnesi öğesinin ilk bağımsız değişkeninin değeri bağlama gelen sonuçları birli işlev nesnesi *sol*.
+İkili işlev nesnesinin ilk bağımsız değişkenini *sol*değere bağlamayı sağlayan birli işlev nesnesi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfı bir ikili fonksiyon nesnesinin bir kopyasını depolar *binary_fn* içinde `op`ve bir kopyasını *sol* içinde `value`. Onun üye işlevini tanımlar `operator()` döndüren olarak `op(value, right)`.
+Sınıf şablonu, `op` bir ikili *işlev nesnesinin bir* kopyasını ve `value` *sol* bir kopyasını depolar. @No__t_1 döndüren `operator()` üye işlevini tanımlar.
 
-Varsa *binary_fn* türünde bir nesnedir `Operation` ve `c` bir sabit ise `bind1st(binary_fn, c)` daha kullanışlı bir eşdeğeridir `binder1st<Operation>(binary_fn, c)`. Daha fazla bilgi için [bind1st](../standard-library/functional-functions.md#bind1st).
+*Binary_fn* , `Operation` türünde bir nesnedir ve `c` bir sabittir, `bind1st(binary_fn, c)` `binder1st<Operation>(binary_fn, c)` daha kolay bir eşdeğerdir. Daha fazla bilgi için bkz. [bind1st](../standard-library/functional-functions.md#bind1st).
 
 ## <a name="example"></a>Örnek
 
