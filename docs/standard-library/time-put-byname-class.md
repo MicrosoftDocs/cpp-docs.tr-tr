@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - time_put_byname class
 ms.assetid: e08c2348-64d2-4ace-98b1-1496e14c7b1a
-ms.openlocfilehash: 2da2bf4ea1c709b820c1a82dc20e288634139a83
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 4471c0df352a4d40d863ac36f0245cf8194f588c
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68460000"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72685460"
 ---
-# <a name="timeputbyname-class"></a>time_put_byname Sınıfı
+# <a name="time_put_byname-class"></a>time_put_byname Sınıfı
 
-Türetilmiş şablon sınıfı, CharType, OutputIterator > türünde `time_put` \< bir yerel ayar modeli olarak kullanılabilecek bir nesneyi tanımlar.
+Türetilmiş sınıf şablonu, `time_put` \< CharType, OutputIterator > türünde bir yerel ayar modeli olarak işlev görebilecek bir nesne açıklar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -40,19 +40,19 @@ protected:
 
 ### <a name="parameters"></a>Parametreler
 
-*_Locname*\
+*_Locname* \
 Yerel ayar adı.
 
-*_Refs*\
+*_Refs* \
 İlk başvuru sayısı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Davranışı [adlandırılmış](../standard-library/locale-class.md#name) yerel ayar *_Locname*tarafından belirlenir. Her Oluşturucu temel nesnesini [time_put](../standard-library/time-put-class.md#time_put)\<CharType, OutputIterator > (`_Refs`) ile başlatır.
+Davranışı [adlandırılmış](../standard-library/locale-class.md#name) yerel ayar *_Locname*tarafından belirlenir. Her Oluşturucu temel nesnesini [time_put](../standard-library/time-put-class.md#time_put) \<CharType, OutputIterator > (`_Refs`) ile başlatır.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<yerel ayar >
+**Üst bilgi:** \<locale >
 
 **Ad alanı:** std
 

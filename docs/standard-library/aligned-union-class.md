@@ -6,14 +6,14 @@ f1_keywords:
 helpviewer_keywords:
 - aligned_union
 ms.assetid: 9931a44d-3a67-4f29-a0f6-d47a7cf560ac
-ms.openlocfilehash: b9ffb4aff4d4d5667ab8d626ea13a21da94ca0c1
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: ae03802549f7791e51dccf1ea98a7b18929a4a4b
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68456458"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72690102"
 ---
-# <a name="alignedunion-class"></a>aligned_union Sınıfı
+# <a name="aligned_union-class"></a>aligned_union Sınıfı
 
 Bir birleştirme türünü ve gereken boyutu depolamak için yeterince büyük ve uygun şekilde hizalı bir POD türü sağlar.
 
@@ -29,19 +29,19 @@ using aligned_union_t = typename aligned_union<Len, Types...>::type;
 
 ### <a name="parameters"></a>Parametreler
 
-*Tepe*\
+*Len* \
 Birleşimdeki en büyük türe ilişkin hizalama değeri.
 
-*Türü*\
+*Türler* \
 Temel alınan birleşimdeki ayrı türler.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir UNION 'yi başlatılmamış depolamada depolamak için gereken hizalama ve boyutu almak için şablon sınıfını kullanın. TypeDef `type` öğesi, *türlerde*listelenen herhangi bir türün depolanması için uygun bir pod türü adlandırır; minimum boyut *len*olur. Türündeki `alignment_value` statik`std::size_t` üye, *türlerde*listelenen tüm türlerin gereken en katı hizalamasını içerir.
+Bir UNION 'yi başlatılmamış depolamada depolamak için gereken hizalama ve boyutu almak için sınıf şablonunu kullanın. TypeDef üyesi `type`, *türlerinde*listelenen herhangi bir türün depolanması için uygun bir pod türü adlandırır. en küçük boyut *len*. @No__t_1 türündeki statik üye `alignment_value`, *türlerde*listelenen tüm türlerin gereken en katı hizalamasını içerir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, bir UNION yerleştirmek için `aligned_union` hizalanmış yığın arabelleği ayırmak için nasıl kullanılacağını gösterir.
+Aşağıdaki örnek, bir UNION yerleştirmek için hizalanmış bir yığın arabelleği ayırmak üzere `aligned_union` nasıl kullanacağınızı gösterir.
 
 ```cpp
 // std__type_traits__aligned_union.cpp
@@ -85,5 +85,5 @@ value of u->i is 1065353216
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[< type_traits >](../standard-library/type-traits.md)\
+[< type_traits >](../standard-library/type-traits.md) \
 [alignment_of Sınıfı](../standard-library/alignment-of-class.md)

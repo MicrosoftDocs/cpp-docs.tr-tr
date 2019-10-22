@@ -1,34 +1,34 @@
 ---
-title: '&lt;Fi&gt;'
+title: '&lt;random &gt;'
 ms.date: 08/24/2017
 f1_keywords:
 - <random>
 helpviewer_keywords:
 - random header
 ms.assetid: 60afc25c-b162-4811-97c1-1b65398d4c57
-ms.openlocfilehash: 5738a1ea5ab950466f347090649e72471edf5608
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: fbff6123c810251109dd48d74a5bd4632793be6f
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68458300"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72689097"
 ---
-# <a name="ltrandomgt"></a>&lt;Fi&gt;
+# <a name="ltrandomgt"></a>&lt;random &gt;
 
 Rastgele sayı oluşturma tesislerini tanımlar, tek düzen dağıtılmış rastgele sayılar oluşturulmasına izin verir.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi**: \<Random >
+**Üst bilgi**: \<random >
 
 **Ad alanı:** std
 
 > [!NOTE]
-> \<Rastgele > Kitaplığı ' #include < initializer_list > ' ifadesini kullanır.
+> @No__t_0random > Kitaplığı ' #include < initializer_list > ' ifadesini kullanır.
 
 ## <a name="summary"></a>Özet
 
-*Rastgele sayı Oluşturucu* , sözde rastgele değerler dizisi üreten bir nesnedir. Belirli bir aralıkta eşit olarak dağıtılan değerleri oluşturan bir Oluşturucu, *tek bir rastgele sayı Oluşturucu* (URNG). Bir URNG işlevi görecek şekilde tasarlanan bir şablon sınıfı, bu sınıfta daha sonra açıklanan belirli ortak nitelikleri varsa, bir *altyapı* olarak adlandırılır. Bir URNG, dağıtım tarafından tanımlanan bir şekilde dağıtılan değerler oluşturmak  `operator()` için, bir dağıtım ile birlikte, dağıtım tarafından bir bağımsız değişken olarak dağıtılır.
+*Rastgele sayı Oluşturucu* , sözde rastgele değerler dizisi üreten bir nesnedir. Belirli bir aralıkta eşit olarak dağıtılan değerleri oluşturan bir Oluşturucu, *tek bir rastgele sayı Oluşturucu* (URNG). Bir URNG işlevi görecek şekilde tasarlanan bir sınıf şablonu, bu sınıfta daha sonra açıklanan belirli ortak nitelikleri varsa, bir *motor* olarak adlandırılır. Bir URNG, dağıtım tarafından tanımlanan bir şekilde dağıtılan değerler oluşturmak için, dağıtım `operator()` bir bağımsız değişken olarak bir bağımsız değişken olarak geçirerek bir *dağıtım* ile birleştirilir.
 
 Bu bağlantılar, bu makalenin başlıca bölümlerine atlayın:
 
@@ -38,11 +38,11 @@ Bu bağlantılar, bu makalenin başlıca bölümlerine atlayın:
 
 - [Altyapılar ve dağıtımlar](#engdist)
 
-- [Açıklamalar](#comments)
+- [Açıklamalarının](#comments)
 
 ### <a name="quick-tips"></a>Hızlı Ipuçları
 
-Rastgele > kullanırken \<göz önünde bulundurmanız gereken bazı ipuçları aşağıda verilmiştir:
+@No__t_0random > kullanırken göz önünde bulundurmanız gereken bazı ipuçları aşağıda verilmiştir:
 
 - Çoğu amaçla, URNGs dağıtımlar tarafından şekillendirilmiş olması gereken ham bitleri üretir. (Bunun için bir önemli özel durumu, doğrudan bir URNG kullandığından [std:: karıştır ()](../standard-library/algorithm-functions.md#shuffle) .)
 
@@ -50,9 +50,9 @@ Rastgele > kullanırken \<göz önünde bulundurmanız gereken bazı ipuçları 
 
 - Birkaç altyapıya [önceden tanımlanmış tür tanımları](#typedefs) sağlanır; Bu, bir motor kullanılıyorsa bir URNG oluşturmak için tercih edilen yoldur.
 
-- Çoğu uygulama `mt19937` için en yararlı eşleştirme, bu makalenin ilerleyen kısımlarında `uniform_int_distribution` [kod örneğinde](#code) gösterildiği gibi, ile altyapısıdır.
+- Çoğu uygulama için en yararlı eşleştirme, bu makalenin ilerleyen kısımlarında [kod örneğinde](#code) gösterildiği gibi, `uniform_int_distribution` olan `mt19937` altyapısıdır.
 
-\<Rastgele > üst bilgisinde seçebileceğiniz pek çok seçenek vardır ve bunlardan herhangi biri, eski C çalışma zamanı işlevine `rand()`tercih edilir. İle ilgili nelerin yanlış olduğu ve rasgele `rand()` > Bu \<eksiklikleri nasıl ele aldığı hakkında daha fazla bilgi için [Bu videoya](https://go.microsoft.com/fwlink/p/?linkid=397615)bakın.
+@No__t_0random > üst bilgisinde seçebileceğiniz pek çok seçenek vardır ve bunlardan herhangi biri, eski C çalışma zamanı işlevi `rand()` tercih edilir. @No__t_0 nelerin yanlış olduğu ve \<random > Bu eksiklikleri nasıl ele aldığı hakkında daha fazla bilgi için [Bu videoya](https://go.microsoft.com/fwlink/p/?linkid=397615)bakın.
 
 ## <a name="code"></a>Örnekler
 
@@ -207,7 +207,7 @@ Randomized array: Si C Sc H Na O S Cr K Li Al Ti Cl B Mn He Fe Ne Be Ar V P Ca N
 --
 ```
 
-Bu kod, bir test şablonu işleviyle, bir tamsayılar vektörünü rastgele olarak ve dizinli veri dizisini karışarak iki farklı randomizations gösterir. Test işlevine yapılan ilk çağrı, şifre güvenli, belirleyici olmayan, güvenilir olmayan, yinelenebilir olmayan, tekrarlamayan bir URNG `random_device`kullanır. İkinci test çalıştırması, belirleyici `mersenne_twister_engine` bir 32 bitlik sabit çekirdek olan URNG olarak kullanılır, bu da sonuçların tekrarlanabilir olduğu anlamına gelir. Üçüncü test çalıştırması `mersenne_twister_engine` , ' den `random_device`32 bitlik belirleyici olmayan bir sonuçla sahiptir. Dördüncü test çalıştırması, `random_device` sonuçlarla doldurulmuş bir çekirdek sırası kullanarak, 32 bitlik belirleyici olmayan rasgelelik (ancak yine de şifre güvenli) olarak daha fazla değer veren bir [çekirdek sıra](../standard-library/seed-seq-class.md) kullanarak bunu genişletir. Daha fazla bilgi için, makalesini okuyun.
+Bu kod, bir test şablonu işleviyle, bir tamsayılar vektörünü rastgele olarak ve dizinli veri dizisini karışarak iki farklı randomizations gösterir. Test işlevine yapılan ilk çağrı, şifreleme güvenli, belirleyici olmayan, güvenilir olmayan, yinelenebilir olmayan, tekrarlanabilir ve `random_device`. İkinci test çalışması, 32 bitlik bir sabit çekirdek olan `mersenne_twister_engine` URNG olarak kullanır, bu da sonuçların tekrarlanabilir olduğu anlamına gelir. Üçüncü test çalıştırması çekirdekler, `random_device` 32 bitlik belirleyici olmayan bir sonuçla `mersenne_twister_engine`. Dördüncü test çalışması bunu, 32 bitlik belirleyici olmayan rasgelelik (ancak yine de şifre güvenle) üzerinde etkin bir şekilde sunan `random_device` sonuçlarıyla doldurulmuş bir [çekirdek sırası](../standard-library/seed-seq-class.md) kullanarak genişletir. Daha fazla bilgi için, makalesini okuyun.
 
 ## <a name="listing"></a>Kategorilere ayrılmış liste
 
@@ -215,13 +215,13 @@ Bu kod, bir test şablonu işleviyle, bir tamsayılar vektörünü rastgele olar
 
 URNGs, genellikle şu özellikler açısından açıklanmıştır:
 
-1. **Süre uzunluğu**: Oluşturulan sayı dizisini yinelemek için kaç yineleme sürer. Daha uzun.
+1. **Süre uzunluğu**: oluşturulan sayı dizisini yinelemek için kaç yineleme sürer. Daha uzun.
 
-2. **Performans**: Sayıların ne kadar hızlı üretilebileceğini ve ne kadar bellek aldığını öğrenin. Daha küçük olur.
+2. **Performans**: sayıların ne kadar hızlı üretilebileceğini ve ne kadar bellek aldığını öğrenin. Daha küçük olur.
 
-3. **Kalite**: Oluşturulan sıranın gerçek rastgele numaralarına ne kadar yakın olduğunu. Bu genellikle "*rasgelelik*" olarak adlandırılır.
+3. **Kalite**: oluşturulan sıranın gerçek rastgele numaralarına ne kadar yakın olduğunu. Bu genellikle "*rasgelelik*" olarak adlandırılır.
 
-Aşağıdaki bölümlerde, \<rastgele > üstbilgisinde sunulan Tekdüzen rastgele sayı oluşturucuları (URNGs) listelenmektedir.
+Aşağıdaki bölümlerde, \<random > üstbilgisinde sunulan Tekdüzen rastgele sayı oluşturucuları (URNGs) listelenmektedir.
 
 ####  <a name="rd"></a>Belirleyici olmayan Oluşturucu
 
@@ -233,31 +233,31 @@ Aşağıdaki bölümlerde, \<rastgele > üstbilgisinde sunulan Tekdüzen rastgel
 
 Altyapı ve altyapı bağdaştırıcılarını örnekleniyor. Daha fazla bilgi için bkz. [altyapılar ve dağıtımlar](#engdist).
 
-- `default_random_engine`Varsayılan motor.
+- varsayılan altyapıyı `default_random_engine`.
 
     ```cpp
     typedef mt19937 default_random_engine;
     ```
 
-- `knuth_b`Knuth altyapısı.
+- Knuth altyapısını `knuth_b`.
 
     ```cpp
     typedef shuffle_order_engine<minstd_rand0, 256> knuth_b;
     ```
 
-- `minstd_rand0`1988 en düşük standart altyapı (Liwis, Goodman ve Miller, 1969).
+- `minstd_rand0` 1988 en düşük standart altyapı (Liwis, Goodman ve Miller, 1969).
 
     ```cpp
     typedef linear_congruential_engine<unsigned int, 16807, 0, 2147483647> minstd_rand0;
     ```
 
-- `minstd_rand`Minimum standart motor `minstd_rand0` (Park, Miller ve Stockmeyer, 1993) güncelleştirildi.
+- `minstd_rand` minimum standart altyapıyı `minstd_rand0` (Park, Miller ve Stockmeyer, 1993) güncelleştirildi.
 
     ```cpp
     typedef linear_congruential_engine<unsigned int, 48271, 0, 2147483647> minstd_rand;
     ```
 
-- `mt19937`32-bit Mersenne bükücü altyapısı (Matsumoto ve ndiimura, 1998).
+- `mt19937` 32-bit Mersenne bükücü Engine (Matsumoto ve ndiimura, 1998).
 
     ```cpp
     typedef mersenne_twister_engine<
@@ -269,7 +269,7 @@ Altyapı ve altyapı bağdaştırıcılarını örnekleniyor. Daha fazla bilgi i
         18, 1812433253> mt19937;
     ```
 
-- `mt19937_64`64-bit Mersenne bükücü altyapısı (Matsumoto ve ndiimura, 2000).
+- `mt19937_64` 64-bit Mersenne bükücü Engine (Matsumoto ve ndiimura, 2000).
 
     ```cpp
     typedef mersenne_twister_engine<
@@ -281,25 +281,25 @@ Altyapı ve altyapı bağdaştırıcılarını örnekleniyor. Daha fazla bilgi i
         43, 6364136223846793005ULL> mt19937_64;
     ```
 
-- `ranlux24`24 bit RANLUX motoru (MarLüscher ve Fred James, 1994).
+- `ranlux24` 24 bit RANLUX motoru (MarLüscher ve Fred James, 1994).
 
     ```cpp
     typedef discard_block_engine<ranlux24_base, 223, 23> ranlux24;
     ```
 
-- `ranlux24_base`İçin `ranlux24`temel olarak kullanılır.
+- `ranlux24` için temel olarak kullanılan `ranlux24_base`.
 
     ```cpp
     typedef subtract_with_carry_engine<unsigned int, 24, 10, 24> ranlux24_base;
     ```
 
-- `ranlux48`48-bit RANLUX motoru (MarLüscher ve Fred James, 1994).
+- `ranlux48` 48-bit RANLUX motoru (MarLüscher ve Fred James, 1994).
 
     ```cpp
     typedef discard_block_engine<ranlux48_base, 389, 11> ranlux48;
     ```
 
-- `ranlux48_base`İçin `ranlux48`temel olarak kullanılır.
+- `ranlux48` için temel olarak kullanılan `ranlux48_base`.
 
     ```cpp
     typedef subtract_with_carry_engine<unsigned long long, 48, 5, 12> ranlux48_base;
@@ -313,7 +313,7 @@ Altyapı şablonları, tek başına URNGs olarak veya [altyapı bağdaştırıc�
 |-|-|
 |[linear_congruential_engine Sınıfı](../standard-library/linear-congruential-engine-class.md)|Doğrusal congruize algoritmasını kullanarak rastgele bir sıra üretir. En uyarlaması ve en düşük kalite.|
 |[mersenne_twister_engine Sınıfı](../standard-library/mersenne-twister-engine-class.md)|Mersenne bükücü algoritmasını kullanarak rastgele bir sıra üretir. En karmaşık ve random_device sınıfı hariç en yüksek kalitedir. Çok hızlı performans.|
-|[subtract_with_carry_engine Sınıfı](../standard-library/subtract-with-carry-engine-class.md)|Birlikte çıkart algoritmasını kullanarak rastgele bir sıra üretir. Üzerinde `linear_congruential_engine`bir geliştirme, ancak çok daha düşük kalite ve `mersenne_twister_engine`performans.|
+|[subtract_with_carry_engine Sınıfı](../standard-library/subtract-with-carry-engine-class.md)|Birlikte çıkart algoritmasını kullanarak rastgele bir sıra üretir. @No__t_0 geliştirmesi, ancak `mersenne_twister_engine` kıyasla daha düşük kalite ve performans.|
 
 ####  <a name="engadapt"></a>Motor bağdaştırıcı şablonları
 
@@ -329,13 +329,13 @@ Altyapı bağdaştırıcıları, diğer (temel) altyapıları uyarlayacakları �
 
 ###  <a name="distributions"></a>Rastgele sayı dağıtımları
 
-Aşağıdaki bölümlerde, \<rastgele > üstbilgisinde sunulan dağıtımlar listelenmektedir. Dağıtımlar, genellikle giriş olarak URNG çıkışı kullanan ve çıktıyı tanımlı bir istatistiksel olasılık yoğunluğu işlevine dağıtan bir son işlem mekanizmasıdır. Daha fazla bilgi için [altyapılar ve dağıtımlar](#engdist) bölümüne bakın.
+Aşağıdaki bölümlerde \<random > üstbilgisinde sunulan dağıtımlar listelenmektedir. Dağıtımlar, genellikle giriş olarak URNG çıkışı kullanan ve çıktıyı tanımlı bir istatistiksel olasılık yoğunluğu işlevine dağıtan bir son işlem mekanizmasıdır. Daha fazla bilgi için [altyapılar ve dağıtımlar](#engdist) bölümüne bakın.
 
 #### <a name="uniform-distributions"></a>Tekdüzen dağıtımları
 
 |||
 |-|-|
-|[uniform_int_distribution Sınıfı](../standard-library/uniform-int-distribution-class.md)|Kapalı \[aralıktaki a, b] (kapsamlı) bir aralıktaki tek bir tamsayı değer dağılımı üretir.|
+|[uniform_int_distribution Sınıfı](../standard-library/uniform-int-distribution-class.md)|Kapalı aralıktaki \[a, b] (kapsamlı dahil) bir Aralık boyunca tek bir tamsayı değer dağılımı üretir.|
 |[uniform_real_distribution Sınıfı](../standard-library/uniform-real-distribution-class.md)|Yarı açık aralıkta [a, b) (dışlamalı) bir aralığa göre tek biçimli gerçek (kayan nokta) değer dağılımı üretir.|
 |[generate_canonical](../standard-library/random-functions.md#generate_canonical)|[0, 1) (dahil) arasında belirli bir duyarlıkta gerçek (kayan nokta) değerlerinin eşit bir şekilde dağıtılmasını üretir.|
 
@@ -389,7 +389,7 @@ Aşağıdaki bölümlerde, \<rastgele > üstbilgisinde sunulan dağıtımlar lis
 
 ### <a name="utility-functions"></a>Yardımcı program Işlevleri
 
-Bu bölümde, \<rastgele > üstbilgisinde sunulan genel yardımcı program işlevleri listelenmektedir.
+Bu bölümde, \<random > üst bilgisinde sunulan genel yardımcı program işlevleri listelenmektedir.
 
 |||
 |-|-|
@@ -397,7 +397,7 @@ Bu bölümde, \<rastgele > üstbilgisinde sunulan genel yardımcı program işle
 
 ### <a name="operators"></a>İşleçler
 
-Bu bölümde, \<rastgele > üstbilgisinde sunulan işleçler listelenmektedir.
+Bu bölümde \<random > üst bilgisinde belirtilen işleçler listelenmektedir.
 
 |||
 |-|-|
@@ -408,81 +408,81 @@ Bu bölümde, \<rastgele > üstbilgisinde sunulan işleçler listelenmektedir.
 
 ## <a name="engdist"></a>Altyapılar ve dağıtımlar
 
-\<Rastgele > tanımlanmış bu şablon sınıfı kategorilerinin her biri hakkında bilgi için aşağıdaki bölümlere bakın. Bu şablon sınıfı kategorilerinin her ikisi de bir türü bağımsız değişken olarak alır ve gerçek bir bağımsız değişken türü olarak izin verilen türün özelliklerini aşağıda gösterildiği gibi, paylaşılan şablon parametre adlarını kullanır:
+@No__t_0random > tanımlanan bu sınıf şablonu kategorilerinin her biri hakkında daha fazla bilgi için aşağıdaki bölümlere bakın. Bu sınıf şablonu kategorilerinin her ikisi de bir türü bağımsız değişken olarak alır ve gerçek bir bağımsız değişken türü olarak izin verilen türün özelliklerini aşağıda gösterildiği gibi, paylaşılan şablon parametre adlarını kullanır:
 
-- `IntType`bir **Short**, **int**, **Long**, **Long Long**, **işaretsiz Short**, **işaretsiz int**, **imzasız Long**veya **imzasız uzun uzun**bir süre gösterir.
+- `IntType`, bir **kısa**, **int**, **Long**, **Long Long**, **işaretsiz kısa**, **işaretsiz int**, **imzasız Long**veya **imzasız uzun süreyi**belirtir.
 
-- `UIntType`**işaretsiz kısa**, **işaretsiz int**, **imzasız Long**veya **imzasız uzun süreyi**belirtir.
+- `UIntType` **İmzasız kısa**, **işaretsiz int**, **imzasız uzun**veya **imzasız uzun süreyi**gösterir.
 
-- `RealType`bir **float**, **Double**veya **Long Double**belirtir.
+- `RealType`, **float**, **Double**veya **Long Double**olduğunu gösterir.
 
 ### <a name="engines"></a>Yapılarının
 
 [Altyapı şablonları](#eng) ve [altyapı bağdaştırıcısı şablonları](#engadapt) , parametreleri oluşturulan oluşturucuyu özelleştiren şablonlardır.
 
-*Motor* , örnekleri (oluşturucular), minimum ve maksimum değer arasında eşit olarak dağıtılan rastgele sayıların kaynağı görevi gören bir sınıf veya şablon sınıfıdır. Bir *altyapı bağdaştırıcısı* , başka bir rastgele sayı altyapısı tarafından oluşturulan değerleri alarak ve bu değerlere bazı tür bir algoritma uygulayarak farklı rastgele özellikleri olan bir değer dizisi sunar.
+*Motor* , örnekleri (oluşturucular) en düşük ve en yüksek değer arasında eşit olarak dağıtılan rastgele sayıların kaynağı olarak davranan bir sınıf veya sınıf şablonudur. Bir *altyapı bağdaştırıcısı* , başka bir rastgele sayı altyapısı tarafından oluşturulan değerleri alarak ve bu değerlere bazı tür bir algoritma uygulayarak farklı rastgele özellikleri olan bir değer dizisi sunar.
 
 Her altyapı ve altyapı bağdaştırıcısında aşağıdaki Üyeler bulunur:
 
-- `typedef`, oluşturucunun tarafından`operator()`döndürülentürdür. `numeric-type` `result_type` , `numeric-type` Örnek oluşturma sırasında şablon parametresi olarak geçirilir.
+- `typedef` `numeric-type` `result_type`, oluşturucunun `operator()` tarafından döndürülen türdür. @No__t_0, örnek oluşturma sırasında bir şablon parametresi olarak geçirilir.
 
-- `result_type operator()``min()` ve`max()`arasında eşit olarak dağıtılan değerleri döndürür.
+- `result_type operator()`, `min()` ve `max()` arasında eşit olarak dağıtılan değerleri döndürür.
 
-- `result_type min()`oluşturucunun tarafından döndürülen en küçük değeri döndürür `operator()`. Altyapı bağdaştırıcıları, temel altyapının `min()` sonucunu kullanır.
+- `result_type min()`, oluşturucunun `operator()` döndürdüğü en küçük değeri döndürür. Altyapı bağdaştırıcıları, temel altyapının `min()` sonucunu kullanır.
 
-- `result_type max()`oluşturucunun tarafından döndürülen en büyük değeri döndürür `operator()`. Bir `result_type` integral (tamsayı değerli) türü olduğunda, `max()` gerçekte döndürülebilecek maksimum değerdir (dahil); kayan nokta (gerçek değerli) türünde `result_type` olduğunda, `max()` tüm değerlerden daha büyük olan en küçük değer Bu, döndürülebilir (dahil değil). Altyapı bağdaştırıcıları, temel altyapının `max()` sonucunu kullanır.
+- `result_type max()`, oluşturucunun `operator()` döndürdüğü en büyük değeri döndürür. @No__t_0 integral (tamsayı değerli) bir tür olduğunda, `max()` gerçekten döndürülebilecek maksimum değerdir (dahil); `result_type` kayan nokta (gerçek değerli) bir tür olduğunda `max()`, döndürülebilecek tüm değerlerden daha büyük en küçük değerdir (dahil değildir). Altyapı bağdaştırıcıları, temel altyapının `max()` sonucunu kullanır.
 
-- `void seed(result_type s)`Generator, çekirdek değeri `s`ile birlikte. Altyapılar için imza `void seed(result_type s = default_seed)` varsayılan parametre desteği içindir (motor bağdaştırıcıları ayrı `void seed()`bir tanımlama, sonraki alt bölüm).
+- oluşturucuyu çekirdek değer `s` ile `void seed(result_type s)`. Altyapılar için imza varsayılan parametre desteği için `void seed(result_type s = default_seed)` (motor bağdaştırıcıları ayrı bir `void seed()` tanımlar, sonraki alt bölüme bakın).
 
-- `template <class Seq> void seed(Seq& q)`Oluşturucuyu bir [seed_seq](../standard-library/seed-seq-class.md)`Seq`kullanarak yapın.
+- [seed_seq](../standard-library/seed-seq-class.md) `Seq` kullanarak oluşturucuyu `template <class Seq> void seed(Seq& q)`.
 
-- Çağırarak, çağırarak `seed(x)`bir Oluşturucu `result_type x` oluşturan bağımsız değişkenine sahip açık bir Oluşturucu.
+- @No__t_1 çağırarak bir Oluşturucu oluşturan `result_type x` bağımsız değişkenine sahip açık bir Oluşturucu.
 
-- Çağırarak, çağırarak `seed(seq)`bir Oluşturucu `seed_seq& seq` oluşturan bağımsız değişkenine sahip açık bir Oluşturucu.
+- @No__t_1 çağırarak bir Oluşturucu oluşturan `seed_seq& seq` bağımsız değişkenine sahip açık bir Oluşturucu.
 
-- `void discard(unsigned long long count)`süreleri etkin `operator()` bir şekilde çağırır `count` ve her değeri atar.
+- `void discard(unsigned long long count)` `operator()` `count` sürelerini etkin bir şekilde çağırır ve her değeri atar.
 
-**Altyapı bağdaştırıcıları** Ayrıca bu üyeleri destekler (`Engine` bir altyapı bağdaştırıcısının ilk şablon parametresi, temel altyapının türünü tanımlayarak):
+**Altyapı bağdaştırıcıları** Ayrıca bu üyeleri destekler (`Engine`, bir altyapı bağdaştırıcısının ilk şablon parametresidir ve temel altyapının türünü tanımlayarak):
 
 - Oluşturucuyu temel altyapının varsayılan oluşturucusundan gibi başlatmak için varsayılan bir Oluşturucu.
 
-- Bağımsız değişkenli `const Engine& eng`açık bir Oluşturucu. Bu, temel altyapıyı kullanarak kopyalama oluşumunu destekliyoruz.
+- Bağımsız değişken `const Engine& eng` açık bir Oluşturucu. Bu, temel altyapıyı kullanarak kopyalama oluşumunu destekliyoruz.
 
-- Bağımsız değişkenli `Engine&& eng`açık bir Oluşturucu. Bu, temel altyapıyı kullanarak oluşturma oluşumunu destekliyoruz.
+- Bağımsız değişken `Engine&& eng` açık bir Oluşturucu. Bu, temel altyapıyı kullanarak oluşturma oluşumunu destekliyoruz.
 
-- `void seed()`Bu, oluşturucuyu temel altyapının varsayılan tohum değeri ile başlatır.
+- oluşturucuyu temel altyapının varsayılan tohum değeri ile Başlatan `void seed()`.
 
-- `const Engine& base()`oluşturucuyu oluşturmak için kullanılan temel altyapıyı döndüren Özellik işlevi.
+- oluşturucuyu oluşturmak için kullanılan temel altyapıyı döndüren `const Engine& base()` Özellik işlevi.
 
-Her altyapı, için  `operator()`sonraki çağrılar tarafından oluşturulacak değerlerin sırasını belirleyen bir durum sağlar. Aynı türdeki altyapılardan oluşturulan iki üretemeyen durumlar, ve `operator==` `operator!=`kullanılarak karşılaştırılabilir. İki durum eşit olarak karşılaştırıldığı takdirde aynı değer dizisini oluşturur. Bir nesnenin durumu, oluşturucunun ' i kullanılarak `operator<<` 32 bitlik işaretsiz değerler dizisi olarak bir akışa kaydedilebilir. Durum, kaydederek değiştirilmez. Kaydedilmiş bir durum, kullanılarak `operator>>`aynı türdeki bir altyapıdan örneklenmiş şekilde okunabilir.
+Her motor, `operator()` için sonraki çağrılar tarafından oluşturulacak değerlerin sırasını belirleyen bir *durum* sağlar. Aynı türdeki altyapılardan oluşturulan iki jeneratların durumları `operator==` ve `operator!=` kullanılarak karşılaştırılabilir. İki durum eşit olarak karşılaştırıldığı takdirde aynı değer dizisini oluşturur. Bir nesnenin durumu, oluşturucunun `operator<<` kullanarak bir akışa 32 bitlik işaretsiz değerler dizisi olarak kaydedilebilir. Durum, kaydederek değiştirilmez. Kaydedilmiş bir durum, `operator>>` kullanılarak aynı türdeki bir altyapıdan örneklenmiş şekilde okunabilir.
 
 ### <a name="distributions"></a>Dağıtımları
 
-[Rastgele bir sayı dağıtımları](#distributions) , örnekleri bir altyapıdan alınan rastgele rastgele sayıların akışını belirli bir dağıtıma sahip rastgele sayıların akışına dönüştüren bir sınıf veya şablon sınıfıdır. Her dağıtım aşağıdaki üyelere sahiptir:
+[Rastgele bir sayı dağıtımları](#distributions) , örnekleri bir altyapıdan alınan bir eşit olarak dağıtılmış rastgele sayıların akışını belirli bir dağıtıma sahip rastgele sayıların akışına dönüştüren bir sınıf veya sınıf şablonudur. Her dağıtım aşağıdaki üyelere sahiptir:
 
-- `typedef`, dağıtımın tarafından`operator()`döndürülentürdür. `numeric-type` `result_type` , `numeric-type` Örnek oluşturma sırasında şablon parametresi olarak geçirilir.
+- `typedef` `numeric-type` `result_type`, dağıtımın `operator()` tarafından döndürülen türdür. @No__t_0, örnek oluşturma sırasında bir şablon parametresi olarak geçirilir.
 
-- `template <class URNG> result_type operator()(URNG& gen)`bir tek düzen dağıtılmış rastgele değerler kaynağı ve `gen` dağıtımın saklı *parametreleri*olarak kullanarak, dağıtımın tanımına göre dağıtılan değerleri döndürür.
+- `template <class URNG> result_type operator()(URNG& gen)`, dağıtım tanımına göre dağıtılan değerleri, bir tek düzen dağıtılmış rastgele değerler kaynağı ve *dağıtımın saklı parametreleri*olarak `gen` kullanarak döndürür.
 
-- `template <class URNG> result_type operator()(URNG& gen, param_type p)`yapısal olarak dağıtılmış rastgele değerlerin ve parametre yapısının `gen` `p`kaynağı olarak kullanarak, dağıtımın tanımına uygun olarak dağıtılmış değerleri döndürür.
+- `template <class URNG> result_type operator()(URNG& gen, param_type p)`, dağıtım tanımına uygun olarak dağıtılan değerleri, bir tek düzen dağıtılmış rastgele değerler kaynağı ve parametre yapısı `p` `gen` kullanarak döndürür.
 
-- `typedef`, isteğe bağlı olarak öğesine `operator()` geçirilen parametrelerin paketidir ve dönüş değerini oluşturmak için depolanan parametrelerin yerine kullanılır. `unspecified-type` `param_type`
+- `typedef` `unspecified-type` `param_type`, isteğe bağlı olarak `operator()` geçirilen parametrelerin paketidir ve dönüş değerini oluşturmak için depolanan parametrelerin yerine kullanılır.
 
-- Bir `const param&` Oluşturucu, saklı parametreleri bağımsız değişkeninden başlatır.
+- @No__t_0 Oluşturucu, bağımsız değişkeninden saklı parametreleri başlatır.
 
-- `param_type param() const`saklı parametreleri alır.
+- `param_type param() const` saklı parametreleri alır.
 
-- `void param(const param_type&)`bağımsız değişkeninden saklı parametreleri ayarlar.
+- `void param(const param_type&)` bağımsız değişkeninden saklı parametreleri ayarlar.
 
-- `result_type min()`Dağıtım tarafından döndürülen en küçük değeri döndürür `operator()`.
+- `result_type min()`, dağıtımın `operator()` tarafından döndürülen en küçük değeri döndürür.
 
-- `result_type max()`Dağıtım tarafından döndürülen en büyük değeri döndürür `operator()`. Bir `result_type` integral (tamsayı değerli) türü olduğunda, `max()` gerçekte döndürülebilecek maksimum değerdir (dahil); kayan nokta (gerçek değerli) türünde `result_type` olduğunda, `max()` tüm değerlerden daha büyük olan en küçük değer Bu, döndürülebilir (dahil değil).
+- `result_type max()`, dağıtımın `operator()` tarafından döndürülen en büyük değeri döndürür. @No__t_0 integral (tamsayı değerli) bir tür olduğunda, `max()` gerçekten döndürülebilecek maksimum değerdir (dahil); `result_type` kayan nokta (gerçek değerli) bir tür olduğunda `max()`, döndürülebilecek tüm değerlerden daha büyük en küçük değerdir (dahil değildir).
 
-- `void reset()`sonraki çağrının sonucunun çağrıdan önce altyapıdan alınan değerlere bağlı olmaması için `operator()` , önbelleğe alınmış tüm değerleri atar.
+- `void reset()`, tüm önbelleğe alınan değerleri atar, böylece `operator()` bir sonraki çağrının sonucu, çağrıdan önce altyapıdan alınan değerlere bağlı değildir.
 
 Parametre yapısı, bir dağıtım için gereken tüm parametreleri depolayan bir nesnedir. Şunu içerir:
 
-- `typedef``distribution-type` Bu`distribution_type`, dağıtımının türüdür.
+- Dağıtım türü olan `distribution_type` `distribution-type` `typedef`.
 
 - Dağıtım oluşturucuları ile aynı parametre listelerini alan bir veya daha fazla Oluşturucu.
 
@@ -494,18 +494,18 @@ Daha fazla bilgi için, bu makalede daha önce bağlanılan başvuru alt bilgile
 
 ## <a name="comments"></a>Açıklamalarının
 
-Visual Studio`mt19937` 'da ve `random_device`bu karşılaştırma tablosunda gösterildiği gibi, yüksek oranda yararlı iki-NGS vardır:
+Visual Studio 'da (Bu karşılaştırma tablosunda gösterildiği gibi) `mt19937` ve `random_device` olmak üzere iki son derece yararlı URNGs vardır:
 
 |URNG|Hızlı|Şifreleme-güvenli|Seedable|Olmayan|
 |----------|-----------|---------------------|---------------|--------------------|
-|`mt19937`|Evet|Hayır|Evet|Yes<sup>*</sup>|
+|`mt19937`|Evet|Hayır|Evet|Evet<sup> *</sup>|
 |`random_device`|Hayır|Evet|Hayır|Hayır|
 
 <sup>* Bilinen bir çekirdek ile sağlandığında.</sup>
 
-ISO C++ standardı şifreli olarak güvenli olmasını gerektirmese `random_device` de, Visual Studio 'da şifreli olarak güvenli olacak şekilde uygulanır. ("Şifreli güvenli" terimi, güvence garantisi vermez, ancak en düşük düzey entropi anlamına gelir; bu nedenle, belirli bir rastgele seçme algoritması sağlar. Daha fazla bilgi için bkz. ıkipedi makalesi [şifreli pseudportaıdom numarası Oluşturucu](https://go.microsoft.com/fwlink/p/?linkid=398017).) ISO C++ standardı bunu gerektirmediğinden, diğer platformlar basit bir sözde rastgele sayı üreticisi `random_device` (şifreli olarak güvenli değil) olarak uygulayabilir ve yalnızca başka bir Oluşturucu için çekirdek kaynağı olarak uygun olabilir. Platformlar arası kodda kullanırken `random_device` bu platformların belgelerini denetleyin.
+ISO C++ standardı `random_device` şifreli olarak güvenli hale getirmek zorunda olmamasına karşın, Visual Studio 'da şifreli olarak güvenli olacak şekilde uygulanır. ("Şifreli güvenli" terimi, güvence garantisi vermez, ancak en düşük düzey entropi anlamına gelir; bu nedenle, belirli bir rastgele seçme algoritması sağlar. Daha fazla bilgi için bkz. ıkipedi makalesi [şifreli pseudportaıdom numarası Oluşturucu](https://go.microsoft.com/fwlink/p/?linkid=398017).) ISO C++ standardı bunu gerektirmediğinden, diğer platformlar basit bir sözde rastgele sayı üreticisi (şifreli olmayan güvenli değil) olarak `random_device` uygulayabilir ve yalnızca başka bir Oluşturucu için çekirdek kaynağı olarak uygun olabilir. Platformlar arası kodda `random_device` kullanırken bu platformların belgelerini denetleyin.
 
-Tanım olarak, `random_device` sonuçlar tekrarlanabilir değildir ve yan etkisi diğer URNGs 'ten önemli ölçüde daha yavaş çalışabilir. Şifreleme açısından güvenli `mt19937` hale getirmek için gerekli olmayan çoğu uygulama veya benzer bir altyapı, [kod örneğinde](#code)gösterildiği gibi `random_device`, bir çağrısı ile çekirdek hale getirmek isteyebilirsiniz.
+Tanım olarak `random_device` sonuçları tekrarlanabilir değildir ve yan etkisi diğer URNGs 'ten önemli ölçüde daha yavaş çalışabilir. Şifreli olarak güvenli hale getirmek için gerekli olmayan çoğu uygulama `mt19937` veya benzer bir altyapıyı kullanır, ancak bunu [kod örneğinde](#code)gösterildiği gibi bir `random_device` çağrısıyla çekirdek hale getirmek isteyebilirsiniz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

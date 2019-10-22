@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - wbuffer_convert class
 ms.assetid: 4a56f9bf-4138-4612-b516-525fea401358
-ms.openlocfilehash: d19abf74bd9f794bc39ce04e5ed22e360cde75b4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8de0091af93120290105ce7603fae5acff257b76
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62410895"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72688537"
 ---
-# <a name="wbufferconvert-class"></a>wbuffer_convert Sınıfı
+# <a name="wbuffer_convert-class"></a>wbuffer_convert Sınıfı
 
-Bir bayt akış arabelleği gelen ve giden öğeleri aktarımını denetleyen bir akış arabelleğinin açıklar.
+Bir bayt akışı arabelleğine ve bu öğeden öğelerin aktarılmasını denetleyen bir akış arabelleği tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -29,18 +29,18 @@ class wbuffer_convert
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*codecvt*|[Yerel ayar](../standard-library/locale-class.md) dönüştürme nesneyi temsil eden bir model.|
-|*Elem*|Geniş karakter öğe türü.|
-|*Nitelikler*|İle ilişkili nitelikler *Elem*.|
+|*Codecvt*|Dönüştürme nesnesini temsil eden [yerel ayar](../standard-library/locale-class.md) modeli.|
+|*Elem*|Geniş karakterli öğe türü.|
+|*Lerdir*|*Eled*ile ilişkili nitelikler.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu şablon sınıfının türünde öğeler aktarımını denetleyen bir akış arabelleğinin açıklar `_Elem`, olan karakter nitelikleri sınıfı tarafından açıklanan `Traits`, gelen ve Giden bayt Akış Arabellek türü `std::streambuf`.
+Bu sınıf şablonu, `_Elem` türünde öğelerin aktarımını denetleyen bir akış arabelleği tanımlar. Bu, karakter nitelikleri, `std::streambuf` türündeki bir bayt akışı arabelleğine ve bu `Traits` sınıftan açıklanacaktır.
 
-Bir dizi arasında dönüştürme `Elem` değerleri ve çok baytlı dizileri sınıfın bir nesnesi tarafından gerçekleştirilen `Codecvt<Elem, char, std::mbstate_t>`, standart kod dönüştürme modeli gereksinimlerini karşılayan `std::codecvt<Elem, char, std::mbstate_t>`.
+Bir dizi `Elem` değeri ve çok baytlı diziler arasında dönüştürme, standart kod dönüştürme modeli `std::codecvt<Elem, char, std::mbstate_t>` gereksinimlerini karşılayan `Codecvt<Elem, char, std::mbstate_t>` sınıfının bir nesnesi tarafından gerçekleştirilir.
 
-Bu şablon sınıfının bir nesnesi depolar:
+Bu sınıf şablonunun bir nesnesi şunları depolar:
 
-- Temel alınan bayt akış arabelleği için bir işaretçi
+- Temel alınan bayt akışı arabelleğine yönelik bir işaretçi
 
-- Ayrılmış dönüştürme nesneye bir işaretçi (olduğu zaman serbest [wbuffer_convert](../standard-library/wbuffer-convert-class.md)
+- Ayrılmış dönüştürme nesnesine yönelik bir işaretçi ( [wbuffer_convert](../standard-library/wbuffer-convert-class.md) olduğunda serbest bırakılır

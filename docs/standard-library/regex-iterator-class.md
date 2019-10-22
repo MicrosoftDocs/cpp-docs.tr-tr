@@ -16,14 +16,14 @@ helpviewer_keywords:
 - std::regex_iterator::operator->
 - std::regex_iterator::operator++
 ms.assetid: 0cfd8fd0-5a95-4f3c-bf8e-6ef028c423d3
-ms.openlocfilehash: ccf806a7918100c58e04ab403f3a8b895e8dc256
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: fb609df2bf52873dac3cddaa6b12f82ea1b53237
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68451568"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72689086"
 ---
-# <a name="regexiterator-class"></a>regex_iterator Sınıfı
+# <a name="regex_iterator-class"></a>regex_iterator Sınıfı
 
 Eşleşmeler için Yineleyici sınıfı.
 
@@ -38,18 +38,18 @@ class regex_iterator
 
 ## <a name="parameters"></a>Parametreler
 
-*BidIt*\
+*BidIt* \
 Alt eşleşmeler için Yineleyici türü.
 
-*Elem*\
+*Eled* \
 Eşleşecek öğelerin türü.
 
-*Rxnitelikler*\
+*Rxnitelikler* \
 Öğeler için nitelikler sınıfı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfı, sabit bir ileri yineleyici nesnesi tanımlar. Normal ifade nesnesini `*pregex` , yineleyici `match_results<BidIt>` aralığı `[begin, end)`tarafından tanımlanan karakter dizisine sürekli olarak uygulayarak türündeki nesneleri ayıklar.
+Sınıf şablonu, sabit bir ileri yineleyici nesnesi tanımlar. Normal ifade nesnesi `*pregex`, yineleyici aralığı `[begin, end)` tarafından tanımlanan karakter dizisine sürekli olarak uygulayarak `match_results<BidIt>` türündeki nesneleri ayıklar.
 
 ### <a name="constructors"></a>Oluşturucular
 
@@ -64,7 +64,7 @@ Eşleşecek öğelerin türü.
 |[difference_type](#difference_type)|Yineleyici farkının türü.|
 |[iterator_category](#iterator_category)|Yineleyici kategorisinin türü.|
 |[çağrısı](#pointer)|Bir eşleşme işaretçisinin türü.|
-|[Başvuru](#reference)|Bir eşleşme başvurusunun türü.|
+|[başvurunun](#reference)|Bir eşleşme başvurusunun türü.|
 |[regex_type](#regex_type)|Eşleştirilecek normal ifadenin türü.|
 |[value_type](#value_type)|Eşleşme türü.|
 
@@ -75,12 +75,12 @@ Eşleşecek öğelerin türü.
 |[operator!=](#op_neq)|Eşitsizlik için yineleyiciler karşılaştırır.|
 |[işlecinde](#op_star)|Belirlenen eşleştirmeye erişir.|
 |[işleç + +](#op_add_add)|Yineleyiciyi artırır.|
-|[operator=](#op_eq)|Yineleyiciler eşitlik için karşılaştırılmaktadır.|
+|[işleç =](#op_eq)|Yineleyiciler eşitlik için karşılaştırılmaktadır.|
 |[operator->](#op_arrow)|Belirlenen eşleştirmeye erişir.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<Regex >
+**Üst bilgi:** \<regex >
 
 **Ad alanı:** std
 
@@ -137,7 +137,7 @@ match == a
 match == a
 ```
 
-## <a name="difference_type"></a>  regex_iterator::difference_type
+## <a name="difference_type"></a>regex_iterator::d ifference_type
 
 Yineleyici farkının türü.
 
@@ -147,7 +147,7 @@ typedef std::ptrdiff_t difference_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür için `std::ptrdiff_t`bir eş anlamlı.
+Tür `std::ptrdiff_t` için bir eş anlamlı.
 
 ## <a name="iterator_category"></a>regex_iterator::iterator_category
 
@@ -159,7 +159,7 @@ typedef std::forward_iterator_tag iterator_category;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür için `std::forward_iterator_tag`bir eş anlamlı.
+Tür `std::forward_iterator_tag` için bir eş anlamlı.
 
 ## <a name="op_neq"></a>regex_iterator:: operator! =
 
@@ -171,12 +171,12 @@ bool operator!=(const regex_iterator& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*Right*\
+*sağ* \
 Karşılaştırılacak Yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi döndürür `!(*this == right)`.
+Üye işlevi `!(*this == right)` döndürür.
 
 ## <a name="op_star"></a>regex_iterator:: operator *
 
@@ -188,9 +188,9 @@ const match_results<BidIt>& operator*();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, depolanan değeri `match`döndürür.
+Üye işlevi `match` depolanan değeri döndürür.
 
-## <a name="op_add_add"></a>  regex_iterator::operator++
+## <a name="op_add_add"></a>regex_iterator:: operator + +
 
 Yineleyiciyi artırır.
 
@@ -201,11 +201,11 @@ regex_iterator& operator++(int);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Geçerli eşleşmenin ilk operatör çağrısı `regex_search(begin, end, match, *pregex, flags | regex_constants::match_prev_avail | regex_constants::match_not_null)`olmayan bir karakteri yoksa, geçerli eşleşmesinden `regex_search(begin, end, match, *pregex, flags | regex_constants::match_prev_avail)`sonra ilk karakteri işaret etmek `begin` için saklanan değeri ilerletir. Her iki durumda da, arama başarısız olursa işleç nesneyi bir dizi son yineleyicisi olarak ayarlar. İşleci nesnesini döndürür.
+Geçerli eşleşmenin hiçbir karakteri yoksa, ilk işleç `regex_search(begin, end, match, *pregex, flags | regex_constants::match_prev_avail | regex_constants::match_not_null)` çağırır; Aksi takdirde, geçerli eşleşmesinden sonra ilk karakteri işaret eden `begin` saklanan değeri ilerletir ve sonra `regex_search(begin, end, match, *pregex, flags | regex_constants::match_prev_avail)` çağırır. Her iki durumda da, arama başarısız olursa işleç nesneyi bir dizi son yineleyicisi olarak ayarlar. İşleci nesnesini döndürür.
 
 İkinci işleç nesnenin bir kopyasını yapar, nesneyi artırır ve sonra kopyayı döndürür.
 
-## <a name="op_eq"></a>  regex_iterator::operator=
+## <a name="op_eq"></a>regex_iterator:: operator =
 
 Yineleyiciler eşitlik için karşılaştırılmaktadır.
 
@@ -215,12 +215,12 @@ bool operator==(const regex_iterator& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*Right*\
+*sağ* \
 Karşılaştırılacak Yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye `*this` işlevi, ve *sağ* sıralı yineleyiciler ise true döndürür ya da ikisi de sıralı bir `begin == right.begin` `pregex == right.pregex`yineleyici ve, `end == right.end`,, ve `flags == right.flags`ise. Aksi takdirde false döndürür.
+Üye işlevi, `*this` ve *sağ* sıralı yineleyiciler ise true döndürür ya da ikisi de bir dizi yineleyici ve `begin == right.begin`, `end == right.end`, `pregex == right.pregex` ve `flags == right.flags` değilse. Aksi takdirde false döndürür.
 
 ## <a name="op_arrow"></a>regex_iterator:: operator-&gt;
 
@@ -232,7 +232,7 @@ const match_results<BidIt> * operator->();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, depolanan değerin `match`adresini döndürür.
+Üye işlevi `match` depolanan değerin adresini döndürür.
 
 ## <a name="pointer"></a>regex_iterator::p oınter
 
@@ -244,7 +244,7 @@ typedef match_results<BidIt> *pointer;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü, için `match_results<BidIt>*`bir eş anlam, burada `BidIt` şablon parametresidir.
+Tür, `BidIt` şablon parametresi olduğu `match_results<BidIt>*` için bir eş anladır.
 
 ## <a name="reference"></a>regex_iterator:: Reference
 
@@ -256,7 +256,7 @@ typedef match_results<BidIt>& reference;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü, için `match_results<BidIt>&`bir eş anlam, burada `BidIt` şablon parametresidir.
+Tür, `BidIt` şablon parametresi olduğu `match_results<BidIt>&` için bir eş anladır.
 
 ## <a name="regex_iterator"></a>regex_iterator::regex_iterator
 
@@ -273,23 +273,23 @@ regex_iterator(BidIt first,
 
 ### <a name="parameters"></a>Parametreler
 
-*adı*\
+*ilk* \
 Eşleştirilecek sıra başlangıcı.
 
-*soyadına*\
+*son* \
 Eşleştirilecek sıra sonu.
 
-*değerlendirmeyi*\
+*yeniden* \
 Eşleşmeler için normal ifade.
 
-*vadeli*\
+*f* \
 Eşleşmeler için bayraklar.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk Oluşturucu bir dizi son yineleyicisi oluşturur. İkinci Oluşturucu `begin` , saklı değeri *ilki* `end` , *Last* `pregex` değeri, ile `&re`depolanan değer ve *f*ile depolanan değer `flags` ile başlatır. Ardından çağırır `regex_search(begin, end, match, *pregex, flags)`. Arama başarısız olursa, Oluşturucu nesneyi bir dizi son yineleyiciye ayarlar.
+İlk Oluşturucu bir dizi son yineleyicisi oluşturur. İkinci Oluşturucu, depolanan değeri *ilk*`begin` başlatır, depolanan değer *en son*ile `end`, depolanan değer `&re` ile `pregex` ve depolanan değer *f*ile `flags`. Ardından `regex_search(begin, end, match, *pregex, flags)` çağırır. Arama başarısız olursa, Oluşturucu nesneyi bir dizi son yineleyiciye ayarlar.
 
-## <a name="regex_type"></a>  regex_iterator::regex_type
+## <a name="regex_type"></a>regex_iterator::regex_type
 
 Eşleştirilecek normal ifadenin türü.
 
@@ -299,7 +299,7 @@ typedef basic_regex<Elem, RXtraits> regex_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-TypeDef, için `basic_regex<Elem, RXtraits>`bir eş anlamlı.
+TypeDef `basic_regex<Elem, RXtraits>` için bir eş anlamlı.
 
 ## <a name="value_type"></a>regex_iterator::value_type
 
@@ -311,16 +311,16 @@ typedef match_results<BidIt> value_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü, için `match_results<BidIt>`bir eş anlam, burada `BidIt` şablon parametresidir.
+Tür, `BidIt` şablon parametresi olduğu `match_results<BidIt>` için bir eş anladır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<Regex >](../standard-library/regex.md)\
-[regex_constants sınıfı](../standard-library/regex-constants-class.md)\
-[regex_error sınıfı](../standard-library/regex-error-class.md)\
-[\<Regex > işlevleri](../standard-library/regex-functions.md)\
-[regex_iterator Sınıfı](../standard-library/regex-iterator-class.md)\
-[\<Regex > işleçleri](../standard-library/regex-operators.md)\
-[regex_token_iterator sınıfı](../standard-library/regex-token-iterator-class.md)\
-[regex_traits Sınıfı](../standard-library/regex-traits-class.md)\
-[\<tür tanımları > Regex](../standard-library/regex-typedefs.md)
+[\<regex >](../standard-library/regex.md) \
+[Regex_constants sınıfı](../standard-library/regex-constants-class.md) \
+[Regex_error sınıfı](../standard-library/regex-error-class.md) \
+[\<regex > işlevleri](../standard-library/regex-functions.md) \
+[Regex_iterator sınıfı](../standard-library/regex-iterator-class.md) \
+[\<regex > işleçleri](../standard-library/regex-operators.md) \
+[Regex_token_iterator sınıfı](../standard-library/regex-token-iterator-class.md) \
+[regex_traits sınıfı](../standard-library/regex-traits-class.md) \
+[\<regex > tür tanımları](../standard-library/regex-typedefs.md)
