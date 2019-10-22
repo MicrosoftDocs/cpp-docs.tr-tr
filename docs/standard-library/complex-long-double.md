@@ -1,5 +1,5 @@
 ---
-title: karmaşık&lt;uzun çift&gt;
+title: karmaşık &lt;long Double &gt;
 ms.date: 11/04/2016
 f1_keywords:
 - std::complex<long double>
@@ -8,16 +8,16 @@ f1_keywords:
 helpviewer_keywords:
 - complex<long double> function
 ms.assetid: 37591991-b385-46e9-b727-d534dbc10432
-ms.openlocfilehash: 280fb4c15219b11d2325ff37a296e133810bf2b5
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: afd85321ee443359f17850384b06b854dfe89985
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68449487"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72688227"
 ---
-# <a name="complexltlong-doublegt"></a>karmaşık&lt;uzun çift&gt;
+# <a name="complexltlong-doublegt"></a>karmaşık &lt;long Double &gt;
 
-Bu açıkça özelleştirilmiş şablon sınıfı, her ikisi de **Long Double**türünde, her ikisi de karmaşık bir sayının gerçek bölümünü ve sanal parçayı temsil eden ikincisini temsil eden, her ikisi de, düzenli bir nesne çifti depolayan bir nesneyi tanımlar.
+Bu açıkça özelleştirilmiş sınıf şablonu, her ikisi de **Long Double**türünde, her ikisi de karmaşık bir sayının gerçek bölümünü ve sanal parçayı temsil eden ikincisini temsil eden bir nesne çifti depolayan bir nesneyi tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -32,19 +32,19 @@ public:
 complex(
     constexpr complex<long double>& complexNum);
 
-// rest same as template class complex
+// rest same as class template complex
 };
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*_RealVal*\
+*_Realval* \
 Oluşturulan karmaşık sayının gerçek parçası için **Long Double** türü değeri.
 
-*_ImagVal*\
+*_Imagval* \
 Oluşturulan karmaşık sayının sanal parçası için **Long Double** türü değeri.
 
-*Karmaşıksayı*\
+*Karmaşıksayı* \
 Gerçek ve sanal parçaları oluşturulan karmaşık sayıda **Long Double** türü başlatmak için kullanılan **Double** veya **float** türünde karmaşık sayı.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -53,11 +53,11 @@ Gerçek ve sanal parçaları oluşturulan karmaşık sayıda **Long Double** tü
 
 ## <a name="remarks"></a>Açıklamalar
 
-Template sınıfının `complex` , **Long Double** türündeki karmaşık bir sınıfa açık özelleştirmesi, şablon sınıfından yalnızca tanımladığı oluşturucularda farklılık gösterir. **Long Double** 'dan **float** 'e dönüştürmenin örtük olmasına izin verilir, ancak **Double** 'tan **Long Double** 'a dönüştürmenin **Açık**olması gerekir. Atama söz dizimini kullanarak tür dönüşümle başlatma, **Açık** kuralların kullanımı.
+Sınıf şablonunun açık özelleşmesi, **Long Double** türündeki karmaşık bir sınıfa `complex`, yalnızca tanımladığı oluşturuculardaki sınıf şablonundan farklıdır. **Long Double** 'dan **float** 'e dönüştürmenin örtük olmasına izin verilir, ancak **Double** 'tan **Long Double** 'a dönüştürmenin **Açık**olması gerekir. Atama söz dizimini kullanarak tür dönüşümle başlatma, **Açık** kuralların kullanımı.
 
-Şablon sınıfı `complex` ve üyeleri hakkında daha fazla bilgi için bkz. [Complex Class](../standard-library/complex-class.md).
+Sınıf şablonu `complex` ve üyeleri hakkında daha fazla bilgi için bkz. [Complex Class](../standard-library/complex-class.md).
 
-**Microsoft 'a özgü**: **Uzun çift** ve **çift** türleri aynı gösterimine sahiptir, ancak farklı türlerdir. Daha fazla bilgi için bkz. [temel türler](../cpp/fundamental-types-cpp.md).
+**Microsoft 'a özgü**: **uzun çift** ve **çift** türleri aynı gösterimine sahiptir, ancak farklı türlerdir. Daha fazla bilgi için bkz. [temel türler](../cpp/fundamental-types-cpp.md).
 
 ## <a name="example"></a>Örnek
 
@@ -117,11 +117,11 @@ arg( c3 ) = 0.927295 radians, which is 53.1301 degrees.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi**: \<karmaşık >
+**Üst bilgi**: \<complex >
 
 **Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[karmaşık sınıf](../standard-library/complex-class.md)\
+[karmaşık sınıf](../standard-library/complex-class.md) \
 [C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
