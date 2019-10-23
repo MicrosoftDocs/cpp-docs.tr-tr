@@ -2969,7 +2969,7 @@
                           href: c-language/c-integer-constants.md
                         - name: Tam sayı türleri
                           href: c-language/integer-types.md
-                        - name: C++ tamsayı sınırları
+                        - name: C ve C++ tamsayı sınırları
                           href: c-language/cpp-integer-limits.md
                     - name: C karakter sabitleri
                       expanded: false
