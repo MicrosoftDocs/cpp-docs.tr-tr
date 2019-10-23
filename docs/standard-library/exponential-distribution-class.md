@@ -23,14 +23,14 @@ helpviewer_keywords:
 - std::exponential_distribution [C++], param_type
 - std::exponential_distribution [C++], param_type
 ms.assetid: d54f3126-a09b-45f9-a30b-0d94d03bcdc9
-ms.openlocfilehash: 8fd47b6acd4d991741f7ae45332d6cacc1903977
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 7418c0316f98f633d229b3bb544bd34d2ac0fb07
+ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68457880"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72688085"
 ---
-# <a name="exponentialdistribution-class"></a>exponential_distribution Sınıfı
+# <a name="exponential_distribution-class"></a>exponential_distribution Sınıfı
 
 Üstel bir dağıtım üretir.
 
@@ -67,26 +67,26 @@ public:
 
 ### <a name="parameters"></a>Parametreler
 
-*RealType*\
-Kayan nokta sonuç türü, varsayılan olarak **Double**olur. Olası türler için bkz [ \<. Random >](../standard-library/random.md).
+*RealType* \
+Kayan nokta sonuç türü, varsayılan olarak **Double**olur. Olası türler için bkz. [\<random >](../standard-library/random.md).
 
-*URNG*\
-Rastgele sayı Oluşturucu altyapısı. Olası türler için bkz [ \<. Random >](../standard-library/random.md).
+*URNG* \
+Rastgele sayı Oluşturucu altyapısı. Olası türler için bkz. [\<random >](../standard-library/random.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Şablon sınıfı, bir kullanıcı tarafından belirtilen integral türünün değerlerini üreten bir dağıtımı açıklar veya hiçbir değer sağlanmazsa üstel  dağıtıma göre dağıtılır. Aşağıdaki tablo, bireysel üyelerle ilgili makalelere bağlantı sağlar.
+Sınıf şablonu, Kullanıcı tarafından belirtilen **integral türünün değerlerini** üreten bir dağıtımı açıklar ya da hiçbir değer sağlanmazsa üstel dağıtıma göre dağıtılır. Aşağıdaki tablo, bireysel üyelerle ilgili makalelere bağlantı sağlar.
 
 ||||
 |-|-|-|
 |[exponential_distribution](#exponential_distribution)|`exponential_distribution::lambda`|`exponential_distribution::param`|
 |`exponential_distribution::operator()`||[param_type](#param_type)|
 
-Özellik üye işlevi `lambda()` , depolanan dağıtım parametresinin `lambda`değerini döndürür.
+Özellik üyesi işlevi `lambda()` depolanan dağıtım parametresi için değeri döndürür `lambda`.
 
-Özellik üyesi işlevi `param()` , `param_type` depolanan dağıtım parametresi paketini ayarlar veya döndürür.
+Özellik üyesi işlevi `param()` `param_type` depolanan dağıtım parametresi paketini ayarlar veya döndürür.
 
-Dağıtım sınıfları ve üyeleri hakkında daha fazla bilgi için bkz [ \<. Random >](../standard-library/random.md).
+Dağıtım sınıfları ve üyeleri hakkında daha fazla bilgi için bkz. [\<random >](../standard-library/random.md).
 
 Üstel dağıtım hakkında ayrıntılı bilgi için Wolfram MathWorld article [üstel dağıtımına](https://go.microsoft.com/fwlink/p/?linkid=401098)bakın.
 
@@ -167,7 +167,7 @@ Distribution for 10 samples:
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<rastgele >
+**Üst bilgi:** \<random >
 
 **Ad alanı:** std
 
@@ -182,19 +182,19 @@ explicit exponential_distribution(const param_type& parm);
 
 ### <a name="parameters"></a>Parametreler
 
-*danın*\
-`lambda` Dağıtım parametresi.
+*lambda* \
+@No__t_0 dağıtım parametresi.
 
-*parametresi*\
+*para* \
 Dağıtımı oluşturmak için kullanılan parametre paketi.
 
 ### <a name="remarks"></a>Açıklamalar
 
 **Önkoşul:** `0.0 < lambda`
 
-İlk Oluşturucu, saklı `lambda` değeri *lambda*değerini tutan bir nesne oluşturur.
+İlk Oluşturucu, depolanan `lambda` değeri *lambda*değerini tutan bir nesne oluşturur.
 
-İkinci Oluşturucu, saklı parametreleri parmdan başlatılan bir nesne oluşturur . `param()` Üye işlevini çağırarak mevcut bir dağıtımın geçerli parametrelerini alabilir ve ayarlayabilirsiniz.
+İkinci Oluşturucu, saklı parametreleri *parmdan*başlatılan bir nesne oluşturur. @No__t_0 üye işlevini çağırarak mevcut bir dağıtımın geçerli parametrelerini alabilir ve ayarlayabilirsiniz.
 
 ## <a name="param_type"></a>exponential_distribution::p aram_type
 
@@ -213,18 +213,18 @@ struct param_type {
 
 ### <a name="parameters"></a>Parametreler
 
-*danın*\
-`lambda` Dağıtım parametresi.
+*lambda* \
+@No__t_0 dağıtım parametresi.
 
-*Right*\
-Karşılaştırılacak `param_type` nesne.
+*sağ* \
+Bu, Karşılaştırılacak `param_type` nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
 **Önkoşul:** `0.0 < lambda`
 
-Bu yapı, örnek oluşturma sırasında dağıtımın sınıf oluşturucusuna, `param()` var olan bir dağıtımın saklı parametrelerini ayarlamak için üye işlevine `operator()` ve depolanan parametrelerin yerine kullanılmak üzere geçirilebilir.
+Bu yapı, örnek oluşturma sırasında dağıtımın sınıf oluşturucusuna, var olan bir dağıtımın saklı parametrelerini ayarlamak için `param()` member işlevine ve depolanan parametrelerin yerine kullanılacak `operator()` geçirilebilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<Rastgele >](../standard-library/random.md)
+[\<random >](../standard-library/random.md)
