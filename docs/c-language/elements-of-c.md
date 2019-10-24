@@ -5,12 +5,12 @@ helpviewer_keywords:
 - lexical conventions
 - conventions, lexical
 ms.assetid: 20668a49-cab7-4153-a6d9-7439aac3ff3b
-ms.openlocfilehash: af220854f71a84902d9ad417242b6d037d4ba0f2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 52b20c5a8eccbf9e8a87cfa7e8fb01da846153d8
+ms.sourcegitcommit: ea9d78dbb93bf3f8841dde93dbc12bd66f6f32ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62234094"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72778453"
 ---
 # <a name="elements-of-c"></a>C Öğeleri
 
@@ -30,13 +30,13 @@ Aşağıdaki konular açıklanmaktadır:
 
 - [Sabitler](../c-language/c-constants.md)
 
-- [Dize değişmez değerleri](../c-language/c-string-literals.md)
+- [Dize sabit değerleri](../c-language/c-string-literals.md)
 
 - [Noktalama işaretleri ve özel karakterler](../c-language/punctuation-and-special-characters.md)
 
-Bölüm için başvuru tabloları da içerir. [Trigrafları](../c-language/trigraphs.md), [Floating-Point sabitleri sınırlamaları](../c-language/limits-on-floating-point-constants.md), [C++ tamsayı sınırları](../c-language/cpp-integer-limits.md), ve [kaçış dizileri ](../c-language/escape-sequences.md).
+Bu bölümde ayrıca [Trigraf](../c-language/trigraphs.md)için başvuru tabloları, [kayan nokta sabitleri](../c-language/limits-on-floating-point-constants.md), [C ve C++ tamsayı limitleri](../c-language/cpp-integer-limits.md)ve [kaçış dizileri](../c-language/escape-sequences.md)için sınırlamalar de bulunur.
 
-İşleçler, değerlerin nasıl yönetileceğini belirten simgelerdir (hem tek karakterler hem de karakter birleşimleri). Her simge, belirteç adı verilen tek bir birim olarak yorumlanır. Daha fazla bilgi için [işleçleri](../c-language/c-operators.md).
+İşleçler, değerlerin nasıl yönetileceğini belirten simgelerdir (hem tek karakterler hem de karakter birleşimleri). Her simge, belirteç adı verilen tek bir birim olarak yorumlanır. Daha fazla bilgi için bkz. [işleçler](../c-language/c-operators.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
