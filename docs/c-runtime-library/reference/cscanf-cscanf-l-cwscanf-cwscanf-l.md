@@ -1,6 +1,6 @@
 ---
 title: _cscanf, _cscanf_l, _cwscanf, _cwscanf_l
-ms.date: 11/04/2016
+ms.date: 10/21/2019
 api_name:
 - _cscanf_l
 - _cscanf
@@ -48,16 +48,19 @@ helpviewer_keywords:
 - reading data [C++], from the console
 - _cwscanf_l function
 ms.assetid: dbfe7547-b577-4567-a1cb-893fa640e669
-ms.openlocfilehash: ee4c380d3e470fa6e3d12066d3bf34918acf1bea
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 8b996e510d6a8c106aa88a60a8da456d36a4b3e5
+ms.sourcegitcommit: ea9d78dbb93bf3f8841dde93dbc12bd66f6f32ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70938497"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72778308"
 ---
 # <a name="_cscanf-_cscanf_l-_cwscanf-_cwscanf_l"></a>_cscanf, _cscanf_l, _cwscanf, _cwscanf_l
 
 Konsoldan biçimlendirilen verileri okur. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz. [_cscanf_s, _cscanf_s_l, _cwscanf_s, _cwscanf_s_l](cscanf-s-cscanf-s-l-cwscanf-s-cwscanf-s-l.md).
+
+> [!NOTE] 
+> Visual Studio 2015 ' de `printf` ve `scanf` işlev ailesi **satır içi** olarak bildirilmiştir ve `<stdio.h>` ve `<conio.h>` üst bilgilerine taşındı. Eski kodu geçiriyorsanız, Bu işlevlerle bağlantılı *LNK2019* görebilirsiniz. Daha fazla bilgi için bkz [. C++ görsel değişiklik geçmişi 2003-2015](../../porting/visual-cpp-change-history-2003-2015.md#stdio_and_conio).
 
 > [!IMPORTANT]
 > Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
@@ -87,7 +90,7 @@ int _cwscanf_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*format*<br/>
+*formatını*<br/>
 Biçim denetimi dizesi.
 
 *değişkendir*<br/>

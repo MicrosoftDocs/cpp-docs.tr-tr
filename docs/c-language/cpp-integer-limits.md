@@ -1,48 +1,53 @@
 ---
-title: C++ Tamsayı Sınırları
-ms.date: 01/29/2018
+title: C ve C++ tamsayı sınırları
+ms.date: 10/21/2019
 helpviewer_keywords:
 - limits, integer
 - limits, integer constants
 - integer limits
 ms.assetid: 0c23cbd6-29fb-4d9c-b689-5984e19748de
-ms.openlocfilehash: 057da1ac8e4549a05d10a01cc3aead678045d9c5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6940f36e37ec58ca8fe23c9062928cbf90b125bd
+ms.sourcegitcommit: ea9d78dbb93bf3f8841dde93dbc12bd66f6f32ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62312433"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72778371"
 ---
-# <a name="c-integer-limits"></a>C++ Tamsayı Sınırları
+# <a name="c-and-c-integer-limits"></a>C ve C++ tamsayı sınırları
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Tamsayı türleri için sınırlar aşağıdaki tabloda listelenmiştir. Bu sınırlar standart üstbilgisinde tanımlanan dosya SINIRLARI. H Microsoft C de verir boyutu 8-integral türleridir, boyutlandırılmış tamsayı değişkenlerinin bildirimi 16 veya 32-bit. Boyutlandırılmış tamsayıların hakkında daha fazla bilgi için bkz. [boyutlandırılmış tamsayı türleri](../c-language/c-sized-integer-types.md).
+Ve C++ ' deki tamsayı türleri için sınırlar aşağıdaki tabloda listelenmiştir. Bu sınırlar, `<limits.h>` C standart üstbilgi dosyasında tanımlanmıştır. C++ Standart kitaplık üst bilgisi `<limits>`, `<limits.h>` içeren `<climits>` içerir.
 
-## <a name="limits-on-integer-constants"></a>Tamsayı sabitleri sınırlamaları
+Microsoft C Ayrıca, 8-, 16-, 32 veya 64-bit tam sayı türleri olan boyutlu tamsayı değişkenlerinin bildirimine izin verir. C 'de boyutlandırılmış tamsayılar hakkında daha fazla bilgi için bkz. [boyutlandırılmış tamsayı türleri](../c-language/c-sized-integer-types.md).
+
+## <a name="limits-on-integer-constants"></a>Tamsayı sabitleri için sınırlar
 
 |**Sabit**|Açıklama|Değer|
 |------------------|-------------|-----------|
-|**CHAR_BIT**|Bir bit alanı olmayan en küçük değişkeni bit sayısı.|8|
-|**SCHAR_MIN**|Türünde bir değişken için minimum değeri **signed char**.|-128|
-|**SCHAR_MAX**|Türünde bir değişken için maksimum değer **signed char**.|127|
-|**UCHAR_MAX**|Türünde bir değişken için maksimum değer **imzasız char**.|255 (0xff)|
-|**CHAR_MIN**|Türünde bir değişken için minimum değeri **char**.|-128; /J seçeneği kullandıysanız 0|
-|**CHAR_MAX**|Türünde bir değişken için maksimum değer **char**.|127; /J seçeneği kullandıysanız 255|
-|**MB_LEN_MAX**|Çoklu karakter sabitindeki bayt sayısı.|5|
-|**SHRT_MIN**|Türünde bir değişken için minimum değeri **kısa**.|-32768|
-|**SHRT_MAX**|Türünde bir değişken için maksimum değer **kısa**.|32767|
-|**USHRT_MAX**|Türünde bir değişken için maksimum değer **işaretsiz**.|65535 (0xffff)|
-|**INT_MIN**|Türünde bir değişken için minimum değeri **int**.|-2147483647 - 1|
-|**INT_MAX**|Türünde bir değişken için maksimum değer **int**.|2147483647|
-|**UINT_MAX**|Türünde bir değişken için maksimum değer **işaretsiz int**.|4294967295 (0xffffffff)|
-|**LONG_MIN**|Türünde bir değişken için minimum değeri **uzun**.|-2147483647 - 1|
-|**LONG_MAX**|Türünde bir değişken için maksimum değer **uzun**.|2147483647|
-|**ULONG_MAX**|Türünde bir değişken için maksimum değer **işaretsiz uzun**.|4294967295 (0xffffffff)|
+|**CHAR_BIT**|En küçük değişkende bit alanı olmayan bit sayısı.|8|
+|**SCHAR_MIN**|**İşaretli char**türünde bir değişken için minimum değer.|-128|
+|**SCHAR_MAX**|**İşaretli char**türünde bir değişken için maksimum değer.|127|
+|**UCHAR_MAX**|**İşaretsiz char**türünde bir değişken için maksimum değer.|255 (0xFF)|
+|**CHAR_MIN**|**Char**türünde bir değişken için minimum değer.|-128; /J seçeneği kullanılırsa 0|
+|**CHAR_MAX**|**Char**türünde bir değişken için maksimum değer.|127; 255 Eğer/J seçeneği kullanılırsa|
+|**MB_LEN_MAX**|Çok karakterli bir sabitteki en fazla bayt sayısı.|5|
+|**SHRT_MIN**|**Short**türünde bir değişken için minimum değer.|-32768|
+|**SHRT_MAX**|**Short**türünde bir değişken için maksimum değer.|32767|
+|**USHRT_MAX**|**İşaretsiz Short**türünde bir değişken için maksimum değer.|65535 (0xFFFF)|
+|**INT_MIN**|**İnt**türünde bir değişken için minimum değer.|-2147483647-1|
+|**INT_MAX**|**İnt**türünde bir değişken için maksimum değer.|2147483647|
+|**UINT_MAX**|**İşaretsiz int**türünde bir değişken için maksimum değer.|4294967295 (0xffffffff)|
+|**LONG_MIN**|**Long**türünde bir değişken için minimum değer.|-2147483647-1|
+|**LONG_MAX**|**Long**türünde bir değişken için maksimum değer.|2147483647|
+|**ULONG_MAX**|**İşaretsiz Long**türünde bir değişken için maksimum değer.|4294967295 (0xffffffff)|
+|**LLONG_MIN**|**Long Long**türünde bir değişken için minimum değer.|-9.223.372.036.854.775.807-1|
+|**LLONG_MAX**|**Long Long**türündeki bir değişken için maksimum değer.|9\.223.372.036.854.775.807|
+|**ULLONG_MAX**|**İşaretsiz Long**Long türündeki bir değişken için maksimum değer.|18446744073709551615 (0xffffffffffffffff)|
 
-Microsoft derleyicisi, bir değeri en büyük tamsayı gösterimi aşarsa, bir hata oluşturur.
+Bir değer en büyük tamsayı gösterimini aşarsa, Microsoft derleyicisi bir hata oluşturur.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
