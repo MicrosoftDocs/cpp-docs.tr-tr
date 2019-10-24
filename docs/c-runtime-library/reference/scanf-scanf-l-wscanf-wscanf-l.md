@@ -1,6 +1,6 @@
 ---
 title: scanf, _scanf_l, wscanf, _wscanf_l
-ms.date: 11/04/2016
+ms.date: 10/21/2019
 api_name:
 - _wscanf_l
 - scanf
@@ -43,16 +43,19 @@ helpviewer_keywords:
 - wscanf_l function
 - _wscanf_l function
 ms.assetid: 73eac607-117f-4be4-9ff0-4afd9cf3c848
-ms.openlocfilehash: 5c3b0f73561dcd41ef1643042baeac7fff0728b4
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: acb336827a669a867b937806a6cdb9aa51d75cbe
+ms.sourcegitcommit: ea9d78dbb93bf3f8841dde93dbc12bd66f6f32ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70948841"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72778328"
 ---
 # <a name="scanf-_scanf_l-wscanf-_wscanf_l"></a>scanf, _scanf_l, wscanf, _wscanf_l
 
 Standart giriş akışından biçimlendirilen verileri okur. Bu işlevin daha güvenli sürümleri mevcuttur; bkz. [scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md).
+
+> [!NOTE] 
+> Visual Studio 2015 ' de `printf` ve `scanf` işlev ailesi **satır içi** olarak bildirilmiştir ve `<stdio.h>` ve `<conio.h>` üst bilgilerine taşındı. Eski kodu geçiriyorsanız, Bu işlevlerle bağlantılı *LNK2019* görebilirsiniz. Daha fazla bilgi için bkz [. C++ görsel değişiklik geçmişi 2003-2015](../../porting/visual-cpp-change-history-2003-2015.md#stdio_and_conio).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -79,7 +82,7 @@ int _wscanf_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*format*<br/>
+*formatını*<br/>
 Biçim denetimi dizesi.
 
 *değişkendir*<br/>
