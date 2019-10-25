@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - binder2nd class
 ms.assetid: b2a9c1d1-dfc4-4ca9-a10e-ae84e195a62d
-ms.openlocfilehash: 46c8bb2ae450b3ef56f2729717fb9b5563a7c139
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.openlocfilehash: 297f91dd9283b9f004247d2d1814b30a17e7ffa2
+ms.sourcegitcommit: 4b0928a1a497648d0d327579c8262f25ed20d02e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72689944"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72890101"
 ---
 # <a name="binder2nd-class"></a>binder2nd Sınıfı
 
@@ -28,7 +28,7 @@ class binder2nd
     typedef typename Operation::argument_type argument_type;
     typedef typename Operation::result_type result_type;
     binder2nd(
-        const Operation& Func,
+        const Operation& func,
         const typename Operation::second_argument_type& right);
 
     result_type operator()(const argument_type& left) const;
@@ -38,7 +38,7 @@ class binder2nd
 
 ### <a name="parameters"></a>Parametreler
 
-*Func* \
+*func*\
 Birli işlev nesnesine dönüştürülecek ikili işlev nesnesi.
 
 *sağ* \
@@ -47,15 +47,15 @@ Birli işlev nesnesine dönüştürülecek ikili işlev nesnesi.
 *sol* \
 Uyarbınary nesnesinin, ikinci bağımsız değişkenin sabit değeriyle karşılaştırıldığı bağımsız değişkenin değeri.
 
-## <a name="return-value"></a>Dönüş Değeri
+## <a name="return-value"></a>Dönüş değeri
 
 İkili işlev nesnesinin ikinci bağımsız değişkenini *sağ*değere bağlamakla sonuçlanan birli işlev nesnesi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıf şablonu, `op` bir ikili işlev nesnesinin bir kopyasını ve `value` *sağ* bir kopyasını depolar. @No__t_0 üye işlevini, **işlem**(`left`, **değer**) olarak döndürür.
+Sınıf şablonu, `op`bir ikili *işlev nesnesinin bir* kopyasını ve `value`*sağ* bir kopyasını depolar. `op(left, value)`döndüren `operator()` üye işlevini tanımlar.
 
-@No__t_0 `Operation` türünde bir nesnedir ve c bir sabit ise, [bind2nd](../standard-library/functional-functions.md#bind2nd) (`Func`, `c`) `binder2nd` sınıf oluşturucusuna `binder2nd` \< **işlem**> (`Func`, 0) ve daha uygun.
+*Func* , `Operation` türünde bir nesnedir ve c bir sabittir, [bind2nd](../standard-library/functional-functions.md#bind2nd)`(func, c)` `binder2nd` sınıf oluşturucusuna `binder2nd<Operation>(func, c)`ve daha uygun şekilde eşdeğerdir.
 
 ## <a name="example"></a>Örnek
 

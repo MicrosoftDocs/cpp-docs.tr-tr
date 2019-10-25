@@ -40,12 +40,12 @@ helpviewer_keywords:
 - std::codecvt [C++], out
 - std::codecvt [C++], unshift
 ms.assetid: 37d3efa1-2b7f-42b6-b04f-7a972c8c2c86
-ms.openlocfilehash: de7a520dea8510d3e865b4faecd50eb60d2d47a2
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.openlocfilehash: 631c3b88be5e2a03798ff6d8e3fb200ad257a8d7
+ms.sourcegitcommit: 4b0928a1a497648d0d327579c8262f25ed20d02e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72689849"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72890182"
 ---
 # <a name="codecvt-class"></a>codecvt Sınıfı
 
@@ -77,7 +77,7 @@ Sınıf şablonu, *CharType* türünde bir değer dizisi ve *byte*türünde bir 
 
 Herhangi bir yerel ayar modelinde olduğu gibi, statik nesne `id`, ilk depolanan bir sıfır değeri içerir. Depolanan değerine erişmek için yapılan ilk girişim `id` benzersiz bir pozitif değer depolar.
 
-[Do_in](#do_in) ve [do_out](#do_out) şablon sürümleri her zaman `codecvt_base::noconv` döndürür.
+[Do_in](#do_in) ve [do_out](#do_out) şablon sürümleri her zaman `codecvt_base::noconv`döndürür.
 
 Standart C++ kitaplık, çeşitli açık uzmanlık tanımlar:
 
@@ -122,18 +122,18 @@ UTF-32 (UCS-4) olarak kodlanmış `char32_t` dizileri ve UTF-8 olarak kodlanmı�
 |-|-|
 |[always_noconv](#always_noconv)|Bir dönüştürme yapılıp yapılmayacağını sınar.|
 |[do_always_noconv](#do_always_noconv)|Hiçbir dönüştürme yapılması gerekip gerekmediğini sınamak için çağrılan bir sanal işlev.|
-|[do_encoding](#do_encoding)|@No__t_0 akışının kodlanması durum bağımlıysa test eden bir sanal işlev, kullanılan `Byte`s ve üretilen `CharType`s arasındaki oran sabittir ve varsa, bu oranın değerini belirler.|
-|[do_in](#do_in)|Bir iç `Byte`s dizisini dış `CharType`s dizisine dönüştürmek için çağrılan bir sanal işlev.|
-|[do_length](#do_length)|Belirli bir dış `Byte`s dizisinin kaç `Byte`s, verilen iç `CharType`s sayısından daha fazla olmadığını belirleyen ve bu sayıda `Byte`s döndüren bir sanal işlev.|
+|[do_encoding](#do_encoding)|`Byte` akışının kodlanması durum bağımlıysa test eden bir sanal işlev, kullanılan `Byte` değerleri ve üretilen `CharType` değerleri arasındaki oran sabittir ve varsa, bu oranın değerini belirler.|
+|[do_in](#do_in)|İç `Byte` değerleri dizisini dış `CharType` değerleri dizisine dönüştürmek için çağrılan bir sanal işlev.|
+|[do_length](#do_length)|Belirli bir dış `Byte` değerleri dizisinin kaç `Byte` değerinin verilen sayıda iç `CharType` değerden daha fazla olmadığını belirleyen ve bu sayıda `Byte` değeri döndüren bir sanal işlev.|
 |[do_max_length](#do_max_length)|Bir iç `CharType` üretmek için gereken en fazla dış bayt sayısını döndüren bir sanal işlev.|
-|[do_out](#do_out)|Bir iç `CharType`s dizisini dış baytların dizisine dönüştürmek için çağrılan bir sanal işlev.|
-|[do_unshift](#do_unshift)|Bir `Byte`s dizisindeki son karakteri tamamlamaya yönelik duruma bağlı bir dönüşümde gereken `Byte`s sağlamak için adlı sanal bir işlev.|
-|[şifreleme](#encoding)|@No__t_0 akışının kodlamasının durum bağımlı olup olmadığını test eder, kullanılan `Byte`s ve üretilen `CharType`s arasındaki oran sabittir ve varsa, bu oranın değerini belirler.|
-|[in](#in)|Bir `Byte`s dizisinin dış temsilini bir `CharType`s dizisinin iç gösterimine dönüştürür.|
-|[uzunluklu](#length)|Belirli bir dış `Byte`s dizisinin kaç `Byte`s, verilen iç `CharType`s sayısından daha fazla olmadığını ve bu sayı `Byte`s döndürdüğünü belirler.|
-|[max_length](#max_length)|Bir iç `CharType` oluşturmak için gereken en fazla dış `Byte`s sayısını döndürür.|
-|[out](#out)|İç `CharType`s dizisini dış `Byte`s dizisine dönüştürür.|
-|[unshift](#unshift)|@No__t_1s dizisindeki son karakteri tamamlamaya yönelik duruma bağlı bir dönüşümde gereken dış `Byte`s sağlar.|
+|[do_out](#do_out)|İç `CharType` değerlerini bir dizi dış bayt dizisine dönüştürmek için çağrılan bir sanal işlev.|
+|[do_unshift](#do_unshift)|Bir `Byte` değerleri dizisindeki son karakteri tamamlamaya yönelik bir duruma bağlı dönüştürmeye gereken `Byte` değerlerini sağlamak için adlı bir sanal işlev.|
+|[şifreleme](#encoding)|`Byte` akışının kodlamasının durum bağımlı olup olmadığını test eder, kullanılan `Byte` değerleri ve üretilen `CharType` değerleri arasındaki oran sabittir ve varsa, bu oranın değerini belirler.|
+|[in](#in)|Bir `Byte` değerleri dizisinin dış temsilini bir `CharType` değerleri dizisinin iç gösterimine dönüştürür.|
+|[uzunluklu](#length)|Belirli bir dış `Byte` değerleri dizisinin kaç `Byte` değerinin verilen sayıda iç `CharType` değerden daha fazla olmadığını ve bu sayıda `Byte` değeri döndürdüğünü belirler.|
+|[max_length](#max_length)|Bir iç `CharType`üretmek için gereken en fazla dış `Byte` değer sayısını döndürür.|
+|[out](#out)|İç `CharType` değerleri dizisini dış `Byte` değerleri dizisine dönüştürür.|
+|[unshift](#unshift)|`Byte` değerlerinin dizisindeki son karakteri tamamlaması için duruma bağlı bir dönüşümde gereken dış `Byte` değerlerini sağlar.|
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -143,7 +143,7 @@ UTF-32 (UCS-4) olarak kodlanmış `char32_t` dizileri ve UTF-8 olarak kodlanmı�
 
 ## <a name="always_noconv"></a>codecvt:: always_noconv
 
-Bir dönüştürme yapılıp yapılmayacağını sınar.
+Hiçbir dönüştürmenin gerçekleştirilip oluşturulmayacağını sınar.
 
 ```cpp
 bool always_noconv() const throw();
@@ -151,7 +151,7 @@ bool always_noconv() const throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Herhangi bir dönüştürme yapılması gerekmiyorsa **true** olan bir Boolean değeri; **false** , en az bir işlem yapılması gerekiyor.
+Hiçbir dönüştürmenin gerçekleştirilmesi gerekmiyorsa **true** olan bir Boolean değeri; en az bir tane yapılması gerekiyorsa **false** .
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -197,17 +197,17 @@ At least one conversion is required.
 Dönüştürmeleri işlemek için bir yerel ayar modeli olarak hizmet veren codecvt sınıfının nesneleri için Oluşturucu.
 
 ```cpp
-explicit codecvt(size_t _Refs = 0);
+explicit codecvt(size_t refs = 0);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*_Refs* \
+*refs* \
 Nesnenin bellek yönetimi türünü belirtmek için kullanılan tamsayı değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*_Refs* parametresi için olası değerler ve bunların önemi şunlardır:
+*Refs* parametresi için olası değerler ve bunların önemi şunlardır:
 
 - 0: nesnenin ömrü, kendisini içeren yerel ayarlara göre yönetilir.
 
@@ -215,11 +215,11 @@ Nesnenin bellek yönetimi türünü belirtmek için kullanılan tamsayı değeri
 
 - 2: Bu değerler tanımlı değil.
 
-Oluşturucu, `locale::facet` temel nesnesini **locale::** [model](../standard-library/locale-class.md#facet_class)(`_Refs`) ile başlatır.
+Oluşturucu, `locale::facet` temel nesnesini [locale:: model](../standard-library/locale-class.md#facet_class)`(refs)`ile başlatır.
 
 ## <a name="do_always_noconv"></a>codecvt::d o_always_noconv
 
-Hiçbir dönüştürme yapılması gerekip gerekmediğini sınamak için çağrılan bir sanal işlev.
+Hiçbir dönüştürmenin gerçekleştirilip oluşturulmayacağını test etmek için çağrılan bir sanal işlev.
 
 ```cpp
 virtual bool do_always_noconv() const throw();
@@ -227,17 +227,17 @@ virtual bool do_always_noconv() const throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Korumalı sanal üye işlevi, yalnızca [do_in](#do_in) veya [do_out](#do_out) öğesine yapılan her çağrı `noconv` döndürürse **true** değerini döndürür.
+Korumalı sanal üye işlevi, yalnızca [do_in](#do_in) veya [do_out](#do_out) öğesine yapılan her çağrı `noconv`döndürürse **true** değerini döndürür.
 
 Şablon sürümü her zaman **true**değerini döndürür.
 
 ### <a name="example"></a>Örnek
 
-@No__t_1 çağıran [always_noconv](#always_noconv)için örneğe bakın.
+`do_always_noconv`çağıran [always_noconv](#always_noconv)için örneğe bakın.
 
 ## <a name="do_encoding"></a>codecvt::d o_encoding
 
-@No__t_0 akışının kodlanması durum bağımlıysa test eden, kullanılan `Byte`s ve üretilen `CharType`s arasındaki oranın sabit olup olmadığı, bu oranın değerini belirler.
+`Byte` akışının kodlanması durum bağımlıysa test eden bir sanal işlev, kullanılan `Byte` değerleri ve üretilen `CharType` değerleri arasındaki oran sabittir ve varsa, bu oranın değerini belirler.
 
 ```cpp
 virtual int do_encoding() const throw();
@@ -255,15 +255,15 @@ Korumalı sanal üye işlevi şunu döndürür:
 
 ### <a name="example"></a>Örnek
 
-@No__t_1 çağıran [kodlama](#encoding)örneğine bakın.
+`do_encoding`çağıran [kodlama](#encoding)örneğine bakın.
 
 ## <a name="do_in"></a>codecvt::d o_in
 
-Dış `Byte`s dizisini iç `CharType`s dizisine dönüştürmek için çağrılan bir sanal işlev.
+Dış `Byte` değerleri dizisini iç `CharType` değerleri dizisine dönüştürmek için çağrılan bir sanal işlev.
 
 ```cpp
 virtual result do_in(
-    StateType& _State,
+    StateType& state,
     const Byte* first1,
     const Byte* last1,
     const Byte*& next1,
@@ -274,7 +274,7 @@ virtual result do_in(
 
 ### <a name="parameters"></a>Parametreler
 
-*_Durum* \
+*durum* \
 Üye işlevine yapılan çağrılar arasında tutulan dönüştürme durumu.
 
 *first1* \
@@ -309,27 +309,27 @@ Son dönüştürülen `CharType` sonra gelen `CharType` işaretçisi, hedef dizi
 
 ### <a name="remarks"></a>Açıklamalar
 
-*_State* , yeni bir kaynak dizisinin başındaki ilk dönüştürme durumunu temsil etmelidir. İşlevi, başarılı bir dönüştürmenin geçerli durumunu yansıtmak için, saklı değerini gereken şekilde değiştirir. Depolanan değeri aksi durumda belirtilmemiş olur.
+*durum* , yeni bir kaynak dizisinin başlangıcında ilk dönüştürme durumunu temsil etmelidir. İşlevi, başarılı bir dönüştürmenin geçerli durumunu yansıtmak için, saklı değerini gereken şekilde değiştirir. Depolanan değeri aksi durumda belirtilmemiş olur.
 
 ### <a name="example"></a>Örnek
 
-@No__t_1 çağıran [içindeki](#in)için örneğe bakın.
+`do_in`çağıran [içindeki](#in)için örneğe bakın.
 
 ## <a name="do_length"></a>codecvt::d o_length
 
-Belirli bir dış `Byte`s dizisinin kaç `Byte`s, verilen iç `CharType`s sayısından daha fazla olmadığını belirleyen ve bu sayıda `Byte`s döndüren bir sanal işlev.
+Belirli bir dış `Byte` değerleri dizisinin kaç `Byte` değerinin verilen sayıda iç `CharType` değerden daha fazla olmadığını belirleyen ve bu sayıda `Byte` değeri döndüren bir sanal işlev.
 
 ```cpp
 virtual int do_length(
-    const StateType& _State,
+    const StateType& state,
     const Byte* first1,
     const Byte* last1,
-    size_t _Len2) const;
+    size_t len2) const;
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*_Durum* \
+*durum* \
 Üye işlevine yapılan çağrılar arasında tutulan dönüştürme durumu.
 
 *first1* \
@@ -338,28 +338,28 @@ Dış dizinin başlangıcına yönelik işaretçi.
 *last1* \
 Dış dizinin sonuna yönelik işaretçi.
 
-*_Len2* \
-Üye işlevi tarafından döndürülebilecek en fazla `Byte`s sayısı.
+*len2*\
+Üye işlevi tarafından döndürülebilecek en fazla `Byte` değeri sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-[@No__t_1, `last1`) konumundaki dış kaynak sırası tarafından tanımlanan, en fazla dönüştürme sayısı olan *_Len2*' den büyük bir sayıyı temsil eden bir tamsayı.
+[`first1`, `last1`) konumundaki dış kaynak sırası tarafından *tanımlanan, en*fazla dönüştürme sayısının sayısını temsil eden bir tamsayı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Korumalı sanal üye işlevi, *_State* (bir durum kopyası) için `do_in` (`_State`, `first1`, `last1`, `next1`, `_Buf`, `_Buf`  +  `_Len2`, `next2`), bazı arabellek 1 etkin bir şekilde çağırır ve işaretçiler 2and 3.
+Korumalı sanal üye işlevi, *durum* için `do_in( state, first1, last1, next1, buf, buf + len2, next2)` (durum kopyası), bazı arabellek `buf`ve `next1` ve `next2`işaretçiler için etkin bir şekilde çağırır.
 
-Ardından `next2`  -  `buf` döndürür. Bu nedenle, [`first1`, `last1`) adresindeki kaynak sırası tarafından tanımlanan en fazla dönüştürme sayısını *_Len2*' den büyük değil sayar.
+Ardından `next2`  -  `buf` döndürür. Bu *nedenle, [* `first1`, `last1`) adresindeki kaynak sırası tarafından tanımlanan en fazla dönüştürme sayısını sayar.
 
-Şablon sürümü her zaman *last1*  - *first1* ve *_Len2*' den daha küçük bir değer döndürür.
+Şablon sürümü her zaman *last1* - *first1* ve *len2*'in daha küçük olduğunu döndürür.
 
 ### <a name="example"></a>Örnek
 
-@No__t_1 çağıran [length](#length)örneğine bakın.
+`do_length`çağıran [length](#length)örneğine bakın.
 
 ## <a name="do_max_length"></a>codecvt::d o_max_length
 
-Bir iç `CharType` oluşturmak için gereken en fazla dış `Byte`s sayısını döndüren bir sanal işlev.
+Bir iç `CharType`oluşturmak için gereken en fazla dış `Byte` değer sayısını döndüren bir sanal işlev.
 
 ```cpp
 virtual int do_max_length() const throw();
@@ -367,23 +367,23 @@ virtual int do_max_length() const throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir `CharType` oluşturmak için gereken en fazla `Byte`s sayısı.
+Bir `CharType`üretmek için gereken en fazla `Byte` değeri sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Korumalı sanal üye işlevi, *first1* ve *last1*'in rastgele geçerli değerleri için [do_length](#do_length)(`first1`, `last1`, 1) tarafından döndürülebilecek en büyük izin verilen değeri döndürür.
+Korumalı sanal üye işlevi, *first1* ve *last1*'in rastgele geçerli değerleri için [do_length](#do_length)`( first1, last1, 1)` tarafından döndürülebilecek en büyük izin verilen değeri döndürür.
 
 ### <a name="example"></a>Örnek
 
-@No__t_1 çağıran [max_length](#max_length)için örneğe bakın.
+`do_max_length`çağıran [max_length](#max_length)için örneğe bakın.
 
 ## <a name="do_out"></a>codecvt::d o_out
 
-Bir iç `CharType`s dizisini dış `Byte`s dizisine dönüştürmek için çağrılan bir sanal işlev.
+İç `CharType` değerleri dizisini dış `Byte` değerleri dizisine dönüştürmek için çağrılan bir sanal işlev.
 
 ```cpp
 virtual result do_out(
-    StateType& _State,
+    StateType& state,
     const CharType* first1,
     const CharType* last1,
     const CharType*& next1,
@@ -394,7 +394,7 @@ virtual result do_out(
 
 ### <a name="parameters"></a>Parametreler
 
-*_Durum* \
+*durum* \
 Üye işlevine yapılan çağrılar arasında tutulan dönüştürme durumu.
 
 *first1* \
@@ -429,19 +429,19 @@ Son `Byte` dönüştürüldükten sonra, Dönüştürülmeyen ilk `Byte` bir iş
 
 ### <a name="remarks"></a>Açıklamalar
 
-*_State* , yeni bir kaynak dizisinin başındaki ilk dönüştürme durumunu temsil etmelidir. İşlevi, başarılı bir dönüştürmenin geçerli durumunu yansıtmak için, saklı değerini gereken şekilde değiştirir. Depolanan değeri aksi durumda belirtilmemiş olur.
+*durum* , yeni bir kaynak dizisinin başlangıcında ilk dönüştürme durumunu temsil etmelidir. İşlevi, başarılı bir dönüştürmenin geçerli durumunu yansıtmak için, saklı değerini gereken şekilde değiştirir. Depolanan değeri aksi durumda belirtilmemiş olur.
 
 ### <a name="example"></a>Örnek
 
-@No__t_1 çağıran, [Out](#out)örneğine bakın.
+`do_out`çağıran, [Out](#out)örneğine bakın.
 
 ## <a name="do_unshift"></a>codecvt::d o_unshift
 
-Bir `Byte`s dizisindeki son karakteri tamamlamaya yönelik duruma bağlı bir dönüşümde gereken `Byte`s sağlamak için adlı sanal bir işlev.
+Bir `Byte` değerleri dizisindeki son karakteri tamamlamaya yönelik bir duruma bağlı dönüştürmeye gereken `Byte` değerlerini sağlamak için adlı bir sanal işlev.
 
 ```cpp
 virtual result do_unshift(
-    StateType& _State,
+    StateType& state,
     Byte* first2,
     Byte* last2,
     Byte*& next2) const;
@@ -449,7 +449,7 @@ virtual result do_unshift(
 
 ### <a name="parameters"></a>Parametreler
 
-*_Durum* \
+*durum* \
 Üye işlevine yapılan çağrılar arasında tutulan dönüştürme durumu.
 
 *first2* \
@@ -465,7 +465,7 @@ Hedef dizideki ilk değiştirilmemiş öğenin işaretçisi.
 
 İşlevi şunu döndürür:
 
-- _ *State* geçersiz bir durumu gösteriyorsa `codecvt_base::error`
+- *durum* geçersiz bir durumu temsil ediyorsa `codecvt_base::error`
 
 - işlev dönüştürme işlemi gerçekleştirmediğini `codecvt_base::noconv`
 
@@ -475,17 +475,17 @@ Hedef dizideki ilk değiştirilmemiş öğenin işaretçisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Korumalı sanal üye işlevi, `CharType` (0) kaynak öğeyi, Sonlandırıcı öğe `Byte` (0) dışında, [`first2`, `last2`) içinde depoladığı bir hedef diziye dönüştürmeye çalışır. Her zaman, hedef dizideki ilk değiştirilmemiş öğe için *Next2* a işaretçisini depolar.
+Korumalı sanal üye işlevi, `CharType`(0) kaynak öğeyi, Sonlandırıcı öğe `Byte`(0) dışında, [`first2`, `last2`) içinde depoladığı bir hedef diziye dönüştürmeye çalışır. Her zaman, hedef dizideki ilk değiştirilmemiş öğe için *Next2* a işaretçisini depolar.
 
 _ *State* , yeni bir kaynak dizisinin başlangıcında ilk dönüştürme durumunu temsil etmelidir. İşlevi, başarılı bir dönüştürmenin geçerli durumunu yansıtmak için, saklı değerini gereken şekilde değiştirir. Genellikle, kaynak öğe `CharType` dönüştürülürken (0) ilk dönüştürme durumunda geçerli durum kalır.
 
 ### <a name="example"></a>Örnek
 
-@No__t_1 çağıran [unshift](#unshift)için örneğe bakın.
+`do_unshift`çağıran [unshift](#unshift)için örneğe bakın.
 
 ## <a name="encoding"></a>codecvt:: Encoding
 
-@No__t_0 akışının kodlamasının durum bağımlı olup olmadığını test eder, kullanılan `Byte`s ve üretilen `CharType`s arasındaki oran sabittir ve varsa, bu oranın değerini belirler.
+`Byte` akışının kodlamasının durum bağımlı olup olmadığını test eder, kullanılan `Byte` değerleri ve üretilen `CharType` değerleri arasındaki oran sabittir ve varsa, bu oranın değerini belirler.
 
 ```cpp
 int encoding() const throw();
@@ -548,11 +548,11 @@ Tür, `Byte` şablon parametresi için bir eş anlamlı.
 
 ## <a name="in"></a>codecvt:: ın
 
-Bir `Byte`s dizisinin dış temsilini bir `CharType`s dizisinin iç gösterimine dönüştürür.
+Bir `Byte` değerleri dizisinin dış temsilini bir `CharType` değerleri dizisinin iç gösterimine dönüştürür.
 
 ```cpp
 result in(
-    StateType& _State,
+    StateType& state,
     const Byte* first1,
     const Byte* last1,
     const Byte*& next1,
@@ -563,7 +563,7 @@ result in(
 
 ### <a name="parameters"></a>Parametreler
 
-*_Durum* \
+*durum* \
 Üye işlevine yapılan çağrılar arasında tutulan dönüştürme durumu.
 
 *first1* \
@@ -598,9 +598,9 @@ Son dönüştürüldükten sonra gelen `CharType` işaretçisi, hedef dizideki i
 
 ### <a name="remarks"></a>Açıklamalar
 
-*_State* , yeni bir kaynak dizisinin başındaki ilk dönüştürme durumunu temsil etmelidir. İşlevi, başarılı bir dönüştürmenin geçerli durumunu yansıtmak için, gerektiği gibi saklı değerini değiştirir. Kısmi dönüştürmeden sonra, yeni karakter geldiğinde dönüştürmenin sürdürülmesine izin vermek için *_State* ayarlanmalıdır.
+*durum* , yeni bir kaynak dizisinin başlangıcında ilk dönüştürme durumunu temsil etmelidir. İşlevi, başarılı bir dönüştürmenin geçerli durumunu yansıtmak için, gerektiği gibi saklı değerini değiştirir. Kısmi dönüştürmeden sonra, yeni karakter geldiğinde dönüştürmenin sürdürülmesine izin vermek için *durum* ayarlanmalıdır.
 
-Üye işlevi [do_in](#do_in)döndürür (`_State`, _ *first1, last1, next1, First2, _Llast2, Next2*).
+Üye işlevi [do_in](#do_in)`( state, first1,  last1,  next1, first2, last2,  next2)`döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -653,19 +653,19 @@ Tür, `CharType` şablon parametresi için bir eş anlamlı.
 
 ## <a name="length"></a>codecvt:: length
 
-Belirli bir dış `Byte`s dizisinin kaç `Byte`s, verilen iç `CharType`s sayısından daha fazla olmadığını ve bu sayı `Byte`s döndürdüğünü belirler.
+Belirli bir dış `Byte` değerleri dizisinin kaç `Byte` değerinin verilen sayıda iç `CharType` değerden daha fazla olmadığını ve bu sayıda `Byte` değeri döndürdüğünü belirler.
 
 ```cpp
 int length(
-    const StateType& _State,
+    const StateType& state,
     const Byte* first1,
     const Byte* last1,
-    size_t _Len2) const;
+    size_t len2) const;
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*_Durum* \
+*durum* \
 Üye işlevine yapılan çağrılar arasında tutulan dönüştürme durumu.
 
 *first1* \
@@ -674,16 +674,16 @@ Dış dizinin başlangıcına yönelik işaretçi.
 *last1* \
 Dış dizinin sonuna yönelik işaretçi.
 
-*_Len2* \
+*len2*\
 Üye işlevi tarafından döndürülebilecek en fazla bayt sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-[@No__t_1, `last1`) konumundaki dış kaynak sırası tarafından tanımlanan, en fazla dönüştürme sayısı olan *_Len2*' den büyük bir sayıyı temsil eden bir tamsayı.
+[`first1`, `last1`) konumundaki dış kaynak sırası tarafından *tanımlanan, en*fazla dönüştürme sayısının sayısını temsil eden bir tamsayı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi [do_length](#do_length)döndürür ( *_State, first1*, `last1`, `_Len2`).
+Üye işlevi [do_length](#do_length)`( state, first1, last1, len2)`döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -716,7 +716,7 @@ The length of the string is: 50.
 
 ## <a name="max_length"></a>codecvt:: max_length
 
-Bir iç `CharType` oluşturmak için gereken en fazla dış `Byte`s sayısını döndürür.
+Bir iç `CharType`üretmek için gereken en fazla dış `Byte` değer sayısını döndürür.
 
 ```cpp
 int max_length() const throw();
@@ -724,7 +724,7 @@ int max_length() const throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir `CharType` oluşturmak için gereken en fazla `Byte`s sayısı.
+Bir `CharType`üretmek için gereken en fazla `Byte` değeri sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -755,11 +755,11 @@ int main( )
 
 ## <a name="out"></a>codecvt:: Out
 
-İç `CharType`s dizisini dış `Byte`s dizisine dönüştürür.
+İç `CharType` değerleri dizisini dış `Byte` değerleri dizisine dönüştürür.
 
 ```cpp
 result out(
-    StateType& _State,
+    StateType& state,
     const CharType* first1,
     const CharType* last1,
     const CharType*& next1,
@@ -770,7 +770,7 @@ result out(
 
 ### <a name="parameters"></a>Parametreler
 
-*_Durum* \
+*durum* \
 Üye işlevine yapılan çağrılar arasında tutulan dönüştürme durumu.
 
 *first1* \
@@ -793,7 +793,7 @@ Son dönüştürülen `Byte` sonra Dönüştürülmeyen ilk `Byte` işaretçisin
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Üye işlevi [do_out](#do_out)döndürür (`_State`, `first1`, `last1`, `next1`, `first2`, `last2`, `next2`).
+Üye işlevi [do_out](#do_out)`( state, first1, last1, next1, first2, last2, next2)`döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -850,11 +850,11 @@ Tür, `StateType` şablon parametresi için bir eş anlamlı.
 
 ## <a name="unshift"></a>codecvt:: unshift
 
-Bir `Byte`s dizisindeki son karakteri tamamlamaya yönelik duruma bağlı bir dönüştürmede gereken `Byte`s sağlar.
+Bir `Byte` değerleri dizisindeki son karakteri tamamlamaya yönelik duruma bağlı bir dönüştürmede gereken `Byte` değerlerini sağlar.
 
 ```cpp
 result unshift(
-    StateType& _State,
+    StateType& state,
     Byte* first2,
     Byte* last2,
     Byte*& next2) const;
@@ -862,7 +862,7 @@ result unshift(
 
 ### <a name="parameters"></a>Parametreler
 
-*_Durum* \
+*durum* \
 Üye işlevine yapılan çağrılar arasında tutulan dönüştürme durumu.
 
 *first2* \
@@ -888,11 +888,11 @@ Hedef dizideki ilk değiştirilmemiş öğenin işaretçisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Korumalı sanal üye işlevi, `CharType` (0) kaynak öğeyi, Sonlandırıcı öğe `Byte` (0) dışında, [`first2`, `last2`) içinde depoladığı bir hedef diziye dönüştürmeye çalışır. Her zaman, hedef dizideki ilk değiştirilmemiş öğe için *Next2* a işaretçisini depolar.
+Korumalı sanal üye işlevi, `CharType`(0) kaynak öğeyi, Sonlandırıcı öğe `Byte`(0) dışında, [`first2`, `last2`) içinde depoladığı bir hedef diziye dönüştürmeye çalışır. Her zaman, hedef dizideki ilk değiştirilmemiş öğe için *Next2* a işaretçisini depolar.
 
-*_State* , yeni bir kaynak dizisinin başındaki ilk dönüştürme durumunu temsil etmelidir. İşlevi, başarılı bir dönüştürmenin geçerli durumunu yansıtmak için, gerektiği gibi saklı değerini değiştirir. Genellikle, kaynak öğe `CharType` dönüştürülürken (0) ilk dönüştürme durumunda geçerli durum kalır.
+*durum* , yeni bir kaynak dizisinin başlangıcında ilk dönüştürme durumunu temsil etmelidir. İşlevi, başarılı bir dönüştürmenin geçerli durumunu yansıtmak için, gerektiği gibi saklı değerini değiştirir. Genellikle, kaynak öğe `CharType` dönüştürülürken (0) ilk dönüştürme durumunda geçerli durum kalır.
 
-Üye işlevi [do_unshift](#do_unshift)döndürür (`_State`, `first2`, `last2`, `next2`).
+Üye işlevi [do_unshift](#do_unshift)`( state, first2, last2, next2 )`döndürür.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

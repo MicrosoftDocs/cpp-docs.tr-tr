@@ -14,12 +14,12 @@ helpviewer_keywords:
 - std::num_get [C++], do_get
 - std::num_get [C++], get
 ms.assetid: 9933735d-3918-4b17-abad-5fca2adc62d7
-ms.openlocfilehash: 5c6fec7002541b519d7cf7d043eed3e5c932bcb9
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.openlocfilehash: bf6623bb61e7a217fcc18a268a583a7ecea4931d
+ms.sourcegitcommit: 4b0928a1a497648d0d327579c8262f25ed20d02e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72689226"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72889986"
 ---
 # <a name="num_get-class"></a>num_get Sınıfı
 
@@ -90,78 +90,78 @@ Bir karakter dizisinden sayısal veya Boolean değeri ayıklamak için çağrıl
 virtual iter_type do_get(
     iter_type first,
     iter_type last,
-    ios_base& _Iosbase,
-    ios_base::iostate& _State,
+    ios_base& iosbase,
+    ios_base::iostate& state,
     long& val) const;
 
 virtual iter_type do_get(
     iter_type first,
     iter_type last,
-    ios_base& _Iosbase,
-    ios_base::iostate& _State,
+    ios_base& iosbase,
+    ios_base::iostate& state,
     unsigned short& val) const;
 
 virtual iter_type do_get(
     iter_type first,
     iter_type last,
-    ios_base& _Iosbase,
-    ios_base::iostate& _State,
+    ios_base& iosbase,
+    ios_base::iostate& state,
     unsigned int& val) const;
 
 virtual iter_type do_get(
     iter_type first,
     iter_type last,
-    ios_base& _Iosbase,
-    ios_base::iostate& _State,
+    ios_base& iosbase,
+    ios_base::iostate& state,
     unsigned long& val) const;
 
 virtual iter_type do_get(
     iter_type first,
     iter_type last,
-    ios_base& _Iosbase,
-    ios_base::iostate& _State,
+    ios_base& iosbase,
+    ios_base::iostate& state,
     long long& val) const;
 
 virtual iter_type do_get(
     iter_type first,
     iter_type last,
-    ios_base& _Iosbase,
-    ios_base::iostate& _State,
+    ios_base& iosbase,
+    ios_base::iostate& state,
     unsigned long long& val) const;
 
 virtual iter_type do_get(
     iter_type first,
     iter_type last,
-    ios_base& _Iosbase,
-    ios_base::iostate& _State,
+    ios_base& iosbase,
+    ios_base::iostate& state,
     float& val) const;
 
 virtual iter_type do_get(
     iter_type first,
     iter_type last,
-    ios_base& _Iosbase,
-    ios_base::iostate& _State,
+    ios_base& iosbase,
+    ios_base::iostate& state,
     double& val) const;
 
 virtual iter_type do_get(
     iter_type first,
     iter_type last,
-    ios_base& _Iosbase,
-    ios_base::iostate& _State,
+    ios_base& iosbase,
+    ios_base::iostate& state,
     long double& val) const;
 
 virtual iter_type do_get(
     iter_type first,
     iter_type last,
-    ios_base& _Iosbase,
-    ios_base::iostate& _State,
+    ios_base& iosbase,
+    ios_base::iostate& state,
     void *& val) const;
 
 virtual iter_type do_get(
     iter_type first,
     iter_type last,
-    ios_base& _Iosbase,
-    ios_base::iostate& _State,
+    ios_base& iosbase,
+    ios_base::iostate& state,
     bool& val) const;
 ```
 
@@ -173,10 +173,10 @@ Sayının okunacağı karakter aralığının başlangıcı.
 *son* \
 Sayının okunacağı karakter aralığının sonu.
 
-*_Iosbase* \
+*iosbase* \
 Bayrakları dönüştürme tarafından kullanılan [ios_base](../standard-library/ios-base-class.md) .
 
-*_Durum* \
+*durum* \
 Failbit durumu (bkz. [ios_base:: ıostate](../standard-library/ios-base-class.md#iostate)) hata üzerine eklenir.
 
 *val* \
@@ -194,28 +194,28 @@ Değer okunduktan sonra Yineleyici.
 virtual iter_type do_get(
     iter_type first,
     iter_type last,
-    ios_base& _Iosbase,
-    ios_base::iostate& _State,
+    ios_base& iosbase,
+    ios_base::iostate& state,
     long& val) const;
 ```
 
-bir tam, boş olmayan tamsayı giriş alanı kabul edene kadar, sıradaki *ilk* başlayan sıralı öğeleri eşler `[first, last)`. Başarılı olursa, bu alanı **Long**türünde eşdeğer değerine dönüştürür ve sonucu *Val*içinde depolar. İlk öğeyi sayısal giriş alanından daha fazla tanımlayarak bir yineleyici döndürür. Aksi takdirde, işlev *değer* olarak hiçbir şey depolar ve `state` `ios_base::failbit` ayarlar. Geçerli bir tamsayı giriş alanının herhangi bir ön ekinin ötesinde ilk öğeyi tanımlayarak bir yineleyici döndürür. Her iki durumda da, dönüş değeri `last` eşitse, işlev `state` `ios_base::eofbit` belirler.
+bir tam, boş olmayan tamsayı giriş alanı kabul edene kadar, sıradaki *ilk* başlayan sıralı öğeleri eşler `[first, last)`. Başarılı olursa, bu alanı **Long**türünde eşdeğer değerine dönüştürür ve sonucu *Val*içinde depolar. İlk öğeyi sayısal giriş alanından daha fazla tanımlayarak bir yineleyici döndürür. Aksi takdirde, işlev *değer* olarak hiçbir şey depolar ve `state``ios_base::failbit` ayarlar. Geçerli bir tamsayı giriş alanının herhangi bir ön ekinin ötesinde ilk öğeyi tanımlayarak bir yineleyici döndürür. Her iki durumda da, dönüş değeri `last`eşitse, işlev `state``ios_base::eofbit` belirler.
 
 Tamsayı girişi alanı, tarama işlevleri tarafından bir dosyadaki **karakter** öğelerinin serisini eşleştirmek ve dönüştürmek için kullanılan kurallara göre dönüştürülür. (Böyle bir **char** öğesi, basit, bire-tek, eşleme tarafından `Elem` türünde bir eşdeğer öğeyle eşlenecek varsayılır.) Eşdeğer tarama dönüştürme belirtimi aşağıdaki şekilde belirlenir:
 
-@No__t_0[ios_base:: Flags](../standard-library/ios-base-class.md#flags) [Eki](../standard-library/ios-functions.md#oct)`() & ios_base::basefield == ios_base::`, dönüştürme belirtimi `lo`.
+`iosbase.`[ios_base:: Flags](../standard-library/ios-base-class.md#flags) [Eki](../standard-library/ios-functions.md#oct)`() & ios_base::basefield == ios_base::`, dönüştürme belirtimi `lo`.
 
-@No__t_0[onaltılı](../standard-library/ios-functions.md#hex)ise, dönüştürme belirtimi `lx`.
+`iosbase.flags() & ios_base::basefield == ios_base::`[onaltılı](../standard-library/ios-functions.md#hex)ise, dönüştürme belirtimi `lx`.
 
-@No__t_0, dönüştürme belirtimi `li`.
+`iosbase.flags() & ios_base::basefield == 0`, dönüştürme belirtimi `li`.
 
 Aksi takdirde, dönüştürme belirtimi `ld`.
 
-Bir tamsayı girişi alanının biçimi, Call `<` [use_facet](../standard-library/locale-functions.md#use_facet) tarafından döndürülen [yerel ayar esası](../standard-library/locale-class.md#facet_class) `fac` tarafından[belirlenir `<Elem>(iosbase.`](../standard-library/numpunct-class.md) [ios_base:: getloc](../standard-library/ios-base-class.md#getloc) `())`. Engelle
+Bir tamsayı girişi alanının biçimi, Call `<`[use_facet](../standard-library/locale-functions.md#use_facet) tarafından döndürülen [yerel ayar esası](../standard-library/locale-class.md#facet_class)`fac` tarafından [belirlenir`<Elem>(iosbase.`](../standard-library/numpunct-class.md) [ios_base:: getloc](../standard-library/ios-base-class.md#getloc)`())`. Engelle
 
-`fac.` [tuş takımı:: gruplandırma](../standard-library/numpunct-class.md#grouping) `()`, basamakların herhangi bir ondalık noktanın solunda nasıl gruplandığını belirler
+`fac.`[tuş takımı:: gruplandırma](../standard-library/numpunct-class.md#grouping)`()`, basamakların herhangi bir ondalık noktanın solunda nasıl gruplandığını belirler
 
-`fac.` [tuş takımı:: thousands_sep](../standard-library/numpunct-class.md#thousands_sep) `()`, basamak gruplarını herhangi bir ondalık noktanın soluna ayıran Sırayı belirler.
+`fac.`[tuş takımı:: thousands_sep](../standard-library/numpunct-class.md#thousands_sep)`()`, basamak gruplarını herhangi bir ondalık noktanın soluna ayıran Sırayı belirler.
 
 Sayısal giriş alanında `fac.thousands_sep()` örneği yoksa, gruplandırma kısıtlaması uygulanmaz. Aksi takdirde, `fac.grouping()` tarafından uygulanan gruplandırma kısıtlamaları zorlanır ve bu, tarama dönüştürme gerçekleşmeden önce ayırıcılar kaldırılır.
 
@@ -225,8 +225,8 @@ Dördüncü sanal korumalı üye işlevi:
 virtual iter_type do_get(
     iter_type first,
     iter_type last,
-    ios_base& _Iosbase,
-    ios_base::iostate& _State,
+    ios_base& iosbase,
+    ios_base::iostate& state,
     unsigned long& val) const;
 ```
 
@@ -238,8 +238,8 @@ Beşinci sanal korumalı üye işlevi:
 virtual iter_type do_get(
     iter_type first,
     iter_type last,
-    ios_base& _Iosbase,
-    ios_base::iostate& _State,
+    ios_base& iosbase,
+    ios_base::iostate& state,
     long long& val) const;
 ```
 
@@ -251,8 +251,8 @@ Altıncı sanal korumalı üye işlevi:
 virtual iter_type do_get(
     iter_type first,
     iter_type last,
-    ios_base& _Iosbase,
-    ios_base::iostate& _State,
+    ios_base& iosbase,
+    ios_base::iostate& state,
     unsigned long long& val) const;
 ```
 
@@ -264,12 +264,12 @@ Yedinci sanal korumalı üye işlevi:
 virtual iter_type do_get(
     iter_type first,
     iter_type last,
-    ios_base& _Iosbase,
-    ios_base::iostate& _State,
+    ios_base& iosbase,
+    ios_base::iostate& state,
     float& val) const;
 ```
 
-, tam, boş olmayan kayan nokta giriş alanı ile eşleşmesi endeavors hariç, ilki ile aynı şekilde davranır. `fac.`[tuş takımı::d ecimal_point](../standard-library/numpunct-class.md#decimal_point) `()`, tamsayı basamaklarını kesir basamaklarından ayıran Sırayı belirler. Eşdeğer tarama dönüştürme belirticisi `lf`.
+, tam, boş olmayan kayan nokta giriş alanı ile eşleşmesi endeavors hariç, ilki ile aynı şekilde davranır. `fac.`[tuş takımı::d ecimal_point](../standard-library/numpunct-class.md#decimal_point)`()`, tamsayı basamaklarını kesir basamaklarından ayıran Sırayı belirler. Eşdeğer tarama dönüştürme belirticisi `lf`.
 
 Sekizinci sanal korumalı üye işlevi:
 
@@ -277,12 +277,12 @@ Sekizinci sanal korumalı üye işlevi:
 virtual iter_type do_get(
     iter_type first,
     iter_type last,
-    ios_base& _Iosbase,
-    ios_base::iostate& _State,
+    ios_base& iosbase,
+    ios_base::iostate& state,
     double& val) const;
 ```
 
-, tam, boş olmayan kayan nokta giriş alanı ile eşleşmesi endeavors hariç, ilki ile aynı şekilde davranır. `fac.`[tuş takımı::d ecimal_point](../standard-library/numpunct-class.md#decimal_point) `()`, tamsayı basamaklarını kesir basamaklarından ayıran Sırayı belirler. Eşdeğer tarama dönüştürme belirticisi `lf`.
+, tam, boş olmayan kayan nokta giriş alanı ile eşleşmesi endeavors hariç, ilki ile aynı şekilde davranır. `fac.`[tuş takımı::d ecimal_point](../standard-library/numpunct-class.md#decimal_point)`()`, tamsayı basamaklarını kesir basamaklarından ayıran Sırayı belirler. Eşdeğer tarama dönüştürme belirticisi `lf`.
 
 Dokuzuncu sanal korumalı üye işlevi:
 
@@ -290,8 +290,8 @@ Dokuzuncu sanal korumalı üye işlevi:
 virtual iter_type do_get(
     iter_type first,
     iter_type last,
-    ios_base& _Iosbase,
-    ios_base::iostate& _State,
+    ios_base& iosbase,
+    ios_base::iostate& state,
     long double& val) const;
 ```
 
@@ -303,8 +303,8 @@ Onuncu sanal korumalı üye işlevi:
 virtual iter_type do_get(
     iter_type first,
     iter_type last,
-    ios_base& _Iosbase,
-    ios_base::iostate& _State,
+    ios_base& iosbase,
+    ios_base::iostate& state,
     void *& val) const;
 ```
 
@@ -316,18 +316,18 @@ Son (Eleventh) sanal korumalı üye işlevi:
 virtual iter_type do_get(
     iter_type first,
     iter_type last,
-    ios_base& _Iosbase,
-    ios_base::iostate& _State,
+    ios_base& iosbase,
+    ios_base::iostate& state,
     bool& val) const;
 ```
 
 , tüm endeavors, boş olmayan bir Boole girişi alanıyla eşleşmesi dışında, ilki ile aynı şekilde davranır. Başarılı olursa, Boole giriş alanını **bool** türünde bir değere dönüştürür ve bu değeri *Val*' de depolar.
 
-Boole girişi alanı iki formdan birini alır. @No__t_0[boolalpha](../standard-library/ios-functions.md#boolalpha) false ise, dönüştürülmüş değerin 0 (false için) veya 1 (true için) olması dışında bir tamsayı girişi alanı ile aynıdır. Aksi takdirde, dizi `fac.` bir[sayısal tuş takımı:: falsename](../standard-library/numpunct-class.md#falsename) `()` (false için) veya `fac.`[sayısal tuş takımı:: truename](../standard-library/numpunct-class.md#truename) `()` (true için) ile aynı olmalıdır.
+Boole girişi alanı iki formdan birini alır. `iosbase.flags() & ios_base::`[boolalpha](../standard-library/ios-functions.md#boolalpha) false ise, dönüştürülmüş değerin 0 (false için) veya 1 (true için) olması dışında bir tamsayı girişi alanı ile aynıdır. Aksi takdirde, dizi `fac.` bir[sayısal tuş takımı:: falsename](../standard-library/numpunct-class.md#falsename) `()` (false için) veya `fac.`[sayısal tuş takımı:: truename](../standard-library/numpunct-class.md#truename) `()` (true için) ile aynı olmalıdır.
 
 ### <a name="example"></a>Örnek
 
-Sanal üye işlevinin `do_get` tarafından çağrıldığı [Get](#get)için örneğe bakın.
+Sanal üye işlevinin `do_get`tarafından çağrıldığı [Get](#get)için örneğe bakın.
 
 ## <a name="get"></a>num_get:: Get
 
@@ -337,78 +337,78 @@ Bir karakter dizisinden sayısal veya Boolean değeri ayıklar.
 iter_type get(
     iter_type first,
     iter_type last,
-    ios_base& _Iosbase,
-    ios_base::iostate& _State,
+    ios_base& iosbase,
+    ios_base::iostate& state,
     bool& val) const;
 
 iter_type get(
     iter_type first,
     iter_type last,
-    ios_base& _Iosbase,
-    ios_base::iostate& _State,
+    ios_base& iosbase,
+    ios_base::iostate& state,
     unsigned short& val) const;
 
 iter_type get(
     iter_type first,
     iter_type last,
-    ios_base& _Iosbase,
-    ios_base::iostate& _State,
+    ios_base& iosbase,
+    ios_base::iostate& state,
     unsigned int& val) const;
 
 iter_type get(
     iter_type first,
     iter_type last,
-    ios_base& _Iosbase,
-    ios_base::iostate& _State,
+    ios_base& iosbase,
+    ios_base::iostate& state,
     long& val) const;
 
 iter_type get(
     iter_type first,
     iter_type last,
-    ios_base& _Iosbase,
-    ios_base::iostate& _State,
+    ios_base& iosbase,
+    ios_base::iostate& state,
     unsigned long& val) const;
 
 iter_type get(
     iter_type first,
     iter_type last,
-    ios_base& _Iosbase,
-    ios_base::iostate& _State,
+    ios_base& iosbase,
+    ios_base::iostate& state,
     long long& val) const;
 
 iter_type get(
     iter_type first,
     iter_type last,
-    ios_base& _Iosbase,
-    ios_base::iostate& _State,
+    ios_base& iosbase,
+    ios_base::iostate& state,
     unsigned long long& val) const;
 
 iter_type get(
     iter_type first,
     iter_type last,
-    ios_base& _Iosbase,
-    ios_base::iostate& _State,
+    ios_base& iosbase,
+    ios_base::iostate& state,
     float& val) const;
 
 iter_type get(
     iter_type first,
     iter_type last,
-    ios_base& _Iosbase,
-    ios_base::iostate& _State,
+    ios_base& iosbase,
+    ios_base::iostate& state,
     double& val) const;
 
 iter_type get(
     iter_type first,
     iter_type last,
-    ios_base& _Iosbase,
-    ios_base::iostate& _State,
+    ios_base& iosbase,
+    ios_base::iostate& state,
     long double& val) const;
 
 iter_type get(
     iter_type first,
     iter_type last,
-    ios_base& _Iosbase,
-    ios_base::iostate& _State,
+    ios_base& iosbase,
+    ios_base::iostate& state,
     void *& val) const;
 ```
 
@@ -420,10 +420,10 @@ Sayının okunacağı karakter aralığının başlangıcı.
 *son* \
 Sayının okunacağı karakter aralığının sonu.
 
-*_Iosbase* \
+*iosbase* \
 Bayrakları dönüştürme tarafından kullanılan [ios_base](../standard-library/ios-base-class.md) .
 
-*_Durum* \
+*durum* \
 Failbit durumu (bkz. [ios_base:: ıostate](../standard-library/ios-base-class.md#iostate)) hata üzerine eklenir.
 
 *val* \
@@ -435,35 +435,35 @@ Değer okunduktan sonra Yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tüm üye işlevleri [do_get](#do_get)döndürür (`first`, `last`, `_Iosbase`, `_State`, `val`).
+Tüm üye işlevleri [do_get](#do_get)`( first, last, iosbase, state, val)`döndürür.
 
-İlk sanal korumalı üye işlevi, bir tam, boş olmayan tamsayı giriş alanı tanınıncaya kadar [`first`, `last`) dizisindeki ilk başlayarak sıralı öğeleri eşleştirmeyi dener. Başarılı olursa, bu alanı tür **uzunluğu** olarak eşdeğer değerine dönüştürür ve sonucu *Val*olarak depolar. İlk öğeyi sayısal giriş alanından daha fazla tanımlayarak bir yineleyici döndürür. Aksi takdirde, işlev *değer* olarak hiçbir şey depolar ve _ *durumunda*`ios_base::failbit` ayarlar. Geçerli bir tamsayı giriş alanının herhangi bir ön ekinin ötesinde ilk öğeyi tanımlayarak bir yineleyici döndürür. Her iki durumda da, dönüş değeri *en son*eşitse, Işlev *_state*içinde `ios_base::eofbit` ayarlanır.
+İlk sanal korumalı üye işlevi, bir tam, boş olmayan tamsayı giriş alanı tanınıncaya kadar [`first`, `last`) dizisindeki ilk başlayarak sıralı öğeleri eşleştirmeyi dener. Başarılı olursa, bu alanı tür **uzunluğu** olarak eşdeğer değerine dönüştürür ve sonucu *Val*olarak depolar. İlk öğeyi sayısal giriş alanından daha fazla tanımlayarak bir yineleyici döndürür. Aksi takdirde, işlev *değer* olarak hiçbir şey depolar ve *durumu*`ios_base::failbit` ayarlar. Geçerli bir tamsayı giriş alanının herhangi bir ön ekinin ötesinde ilk öğeyi tanımlayarak bir yineleyici döndürür. Her iki durumda da, dönüş değeri *en son*eşitse, işlev `ios_base::eofbit` *durumu*olarak ayarlanır.
 
 Tamsayı girişi alanı, tarama işlevleri tarafından bir dosyadaki **karakter** öğelerinin serisini eşleştirmek ve dönüştürmek için kullanılan kurallara göre dönüştürülür. Her bir **char** öğesi, basit, bire bir eşleme tarafından `CharType` türünde eşdeğer bir öğeyle eşlenecek varsayılır. Eşdeğer tarama dönüştürme belirtimi aşağıdaki şekilde belirlenir:
 
-- @No__t_0. [bayraklar](../standard-library/ios-base-class.md#flags)  &  `ios_base::basefield`  ==  `ios_base::`[Ekim](../standard-library/ios-functions.md#oct), dönüştürme belirtimi `lo`.
+- ` & ios_base::basefield == ios_base::``iosbase.`[bayrak](../standard-library/ios-base-class.md#flags) , [dönüştürme](../standard-library/ios-functions.md#oct)belirtimi `lo`olur.
 
-- **İosbase. flags**  & **ios_base:: basefield**  == [onaltılı](../standard-library/ios-functions.md#hex)`ios_base::`, dönüştürme belirtimi `lx`.
+- `iosbase.flags & ios_base::basefield == ios_base::`[onaltılı](../standard-library/ios-functions.md#hex)ise, dönüştürme belirtimi `lx`.
 
-- **İosbase. flags**  & **ios_base:: basefield** = = 0 ise, dönüştürme belirtimi `li`.
+- `iosbase.flags & ios_base::basefield == 0`, dönüştürme belirtimi `li`.
 
 - Aksi takdirde, dönüştürme belirtimi `ld`.
 
-Bir tamsayı girişi alanının biçimi, Call [use_facet](../standard-library/locale-functions.md#use_facet)  < [tuş takımı](../standard-library/numpunct-class.md) \< **elem>** ( **iosbase**)**tarafından döndürülen** [yerel ayar modeli](../standard-library/locale-class.md#facet_class)tarafından belirlenir. [getloc](../standard-library/ios-base-class.md#getloc)). Engelle
+Bir tamsayı girişi alanının biçimi,`<Elem>(iosbase.`[getloc](../standard-library/ios-base-class.md#getloc)`())`çağrısı [use_facet](../standard-library/locale-functions.md#use_facet) [`numpunct`](../standard-library/numpunct-class.md)`<`tarafından döndürülen [yerel ayar modeli](../standard-library/locale-class.md#facet_class) `fac` tarafından belirlenir. Engelle
 
-- **fac**. [Gruplandırma](../standard-library/numpunct-class.md#grouping) , basamakların herhangi bir ondalık noktanın solunda nasıl gruplandığını belirler.
+- `fac.`[Gruplandırma](../standard-library/numpunct-class.md#grouping) , basamakların herhangi bir ondalık noktanın solunda nasıl gruplandığını belirler.
 
-- **fac**. [thousands_sep](../standard-library/numpunct-class.md#thousands_sep) , basamak gruplarını herhangi bir ondalık noktanın soluna ayıran Sırayı belirler.
+- `fac.`[thousands_sep](../standard-library/numpunct-class.md#thousands_sep) , herhangi bir ondalık noktanın solundaki basamak gruplarını ayıran Sırayı belirler.
 
-Eğer **fac**örneği yoksa. `thousands_sep`, sayısal giriş alanında meydana gelir, hiçbir gruplandırma kısıtlaması uygulanmaz. Aksi takdirde, **fac**tarafından uygulanan gruplandırma kısıtlamaları. **Gruplandırma** zorlanır ve ayırıcılar, tarama dönüştürme gerçekleşmeden önce kaldırılır.
+Sayısal giriş alanında `fac.thousands_sep` örneği yoksa, gruplandırma kısıtlaması uygulanmaz. Aksi takdirde, `fac.grouping` tarafından uygulanan gruplandırma kısıtlamaları zorlanır ve bu, tarama dönüştürme gerçekleşmeden önce ayırıcılar kaldırılır.
 
 İkinci sanal korumalı üye işlevi:
 
 ```cpp
 virtual iter_type do_get(iter_type first,
     iter_type last,
-    ios_base& _Iosbase,
-    ios_base::iostate& _State,
+    ios_base& iosbase,
+    ios_base::iostate& state,
     unsigned long& val) const;
 ```
 
@@ -474,20 +474,20 @@ virtual iter_type do_get(iter_type first,
 ```cpp
 virtual iter_type do_get(iter_type first,
     iter_type last,
-    ios_base& _Iosbase,
-    ios_base::iostate& _State,
+    ios_base& iosbase,
+    ios_base::iostate& state,
     double& val) const;
 ```
 
-, tam, boş olmayan bir kayan nokta giriş alanını eşleştirmeyi denediğinden, ilki ile aynı şekilde davranır. **fac**. [decimal_point](../standard-library/numpunct-class.md#decimal_point) kesir basamaklarından tamsayı basamaklarını ayıran diziyi belirler. Eşdeğer tarama dönüştürme belirticisi `lf`.
+, tam, boş olmayan bir kayan nokta giriş alanını eşleştirmeyi denediğinden, ilki ile aynı şekilde davranır. `fac.`[decimal_point](../standard-library/numpunct-class.md#decimal_point) , tamsayı basamaklarını kesir basamaklarından ayıran Sırayı belirler. Eşdeğer tarama dönüştürme belirticisi `lf`.
 
 Dördüncü sanal korumalı üye işlevi:
 
 ```cpp
 virtual iter_type do_get(iter_type first,
     iter_type last,
-    ios_base& _Iosbase,
-    ios_base::iostate& _State,
+    ios_base& iosbase,
+    ios_base::iostate& state,
     long double& val) const;
 ```
 
@@ -498,8 +498,8 @@ Beşinci sanal korumalı üye işlevi:
 ```cpp
 virtual iter_type do_get(iter_type first,
     iter_type last,
-    ios_base& _Iosbase,
-    ios_base::iostate& _State,
+    ios_base& iosbase,
+    ios_base::iostate& state,
     void *& val) const;
 ```
 
@@ -510,14 +510,14 @@ Altıncı sanal korumalı üye işlevi:
 ```cpp
 virtual iter_type do_get(iter_type first,
     iter_type last,
-    ios_base& _Iosbase,
-    ios_base::iostate& _State,
+    ios_base& iosbase,
+    ios_base::iostate& state,
     bool& val) const;
 ```
 
 , tümü, boş olmayan bir Boole giriş alanını eşleştirmeyi denediğinden, ilki ile aynı şekilde davranır. Başarılı olursa, Boole giriş alanını **bool** türünde bir değere dönüştürür ve bu değeri *Val*' de depolar.
 
-Boole girişi alanı iki formdan birini alır. Eğer **iosbase**ise. `ios_base::`[boolalpha](../standard-library/ios-functions.md#boolalpha)  &  **bayrakları** **false**, bu, dönüştürülmüş değerin 0 ( **false**için) veya 1 ( **true**için) olması dışında bir tamsayı girişi alanı ile aynıdır. Aksi takdirde, sıranın **fac**ile eşleşmesi gerekir. [falsename](../standard-library/numpunct-class.md#falsename) ( **false**için) veya **fac**. [truename](../standard-library/numpunct-class.md#truename) ( **true**için).
+Boole girişi alanı iki formdan birini alır. `iosbase.flags & ios_base::`[boolalpha](../standard-library/ios-functions.md#boolalpha) **false**ise, dönüştürülmüş değerin 0 ( **false**için) veya 1 ( **true**için) olması dışında bir tamsayı girişi alanı ile aynıdır. Aksi takdirde, sıranın `fac.`[falsename](../standard-library/numpunct-class.md#falsename) ( **false**için) veya `fac.`[truename](../standard-library/numpunct-class.md#truename) ( **true**) ile eşleşmesi gerekir.
 
 ### <a name="example"></a>Örnek
 
@@ -568,17 +568,17 @@ Tür, `InputIterator` şablon parametresi için bir eş anlamlı.
 Dizilerden sayısal değerler ayıklamak için kullanılan `num_get` türündeki nesneler için Oluşturucu.
 
 ```cpp
-explicit num_get(size_t _Refs = 0);
+explicit num_get(size_t refs = 0);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*_Refs* \
+*refs* \
 Nesnenin bellek yönetimi türünü belirtmek için kullanılan tamsayı değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*_Refs* parametresi için olası değerler ve bunların önemi şunlardır:
+*Refs* parametresi için olası değerler ve bunların önemi şunlardır:
 
 - 0: nesnenin ömrü, kendisini içeren yerel ayarlara göre yönetilir.
 
@@ -588,7 +588,7 @@ Nesnenin bellek yönetimi türünü belirtmek için kullanılan tamsayı değeri
 
 Yok edicisi korunduğu için doğrudan örnek mümkün değildir.
 
-Oluşturucu kendi temel nesnesini **locale::** [model](../standard-library/locale-class.md#facet_class)(`_Refs`) ile başlatır.
+Oluşturucu, temel nesnesini `locale::`[modeli](../standard-library/locale-class.md#facet_class)`(refs)`ile başlatır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
