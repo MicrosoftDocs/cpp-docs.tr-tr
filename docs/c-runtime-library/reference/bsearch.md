@@ -1,6 +1,6 @@
 ---
 title: bsearch
-ms.date: 11/04/2016
+ms.date: 10/22/2019
 api_name:
 - bsearch
 api_location:
@@ -26,12 +26,12 @@ helpviewer_keywords:
 - arrays [CRT], binary search
 - bsearch function
 ms.assetid: e0ad2f47-e7dd-49ed-8288-870457a14a2c
-ms.openlocfilehash: 9e44e85d1c6d73a68da2edd099cdeb6156f9759d
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 6b476cbdd5e9c072cae03ad1091a96e2d0b7422b
+ms.sourcegitcommit: 0a5518fdb9d87fcc326a8507ac755936285fcb94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70939430"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72811093"
 ---
 # <a name="bsearch"></a>bsearch
 
@@ -51,28 +51,28 @@ void *bsearch(
 
 ### <a name="parameters"></a>Parametreler
 
-*anahtar*<br/>
-Aranacak nesne.
+*anahtar* \
+Aranacak anahtarın işaretçisi.
 
-*base*<br/>
-Arama verileri tabanı işaretçisi.
+*temel*\
+Arama verilerinin tabanına yönelik işaretçi.
 
-*sayısından*<br/>
+*sayı*\
 Öğe sayısı.
 
-*Genişlik*<br/>
+*genişlik*\
 Öğelerin genişliği.
 
-*Karşılaştır*<br/>
+\ *Karşılaştır*
 İki öğeyi karşılaştıran geri çağırma işlevi. Birincisi, arama için anahtarın bir işaretçisidir ve ikincisi, anahtarla Karşılaştırılacak dizi öğesine yönelik bir işaretçidir.
 
-## <a name="return-value"></a>Dönüş Değeri
+## <a name="return-value"></a>Dönüş değeri
 
 **bsearch** , *temel*tarafından işaret edilen dizide *anahtar* oluşumuna yönelik bir işaretçi döndürür. *Anahtar* bulunamazsa, işlev **null**döndürür. Dizi artan sıralama düzeninde değilse veya aynı anahtarlara sahip yinelenen kayıtlar içeriyorsa, sonuç tahmin edilemez.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Bsearch** işlevi, her bir *Genişlik* baytından oluşan bir dizi *sayı* öğe için bir ikili arama gerçekleştirir. *Taban* değeri, aranacak dizinin temelini gösteren bir işaretçidir ve *anahtar* , aranan değerdir. *Compare* parametresi, istenen anahtarı bir dizi öğesiyle karşılaştıran Kullanıcı tarafından sağlanan yordamın bir işaretçisidir ve ilişkilerini belirten aşağıdaki değerlerden birini döndürür:
+**Bsearch** işlevi, her bir *Genişlik* baytından oluşan bir dizi *sayı* öğe için bir ikili arama gerçekleştirir. *Taban* değeri, aranacak dizinin temelini gösteren bir işaretçidir ve *anahtar* , aranan değerdir. *Compare* parametresi, istenen anahtarı bir dizi öğesiyle karşılaştıran Kullanıcı tarafından sağlanan yordamın bir işaretçisidir. Bu, ilişkilerini belirten aşağıdaki değerlerden birini döndürür:
 
 |*Compare* yordamının döndürdüğü değer|Açıklama|
 |-----------------------------------------|-----------------|
@@ -80,7 +80,7 @@ Arama verileri tabanı işaretçisi.
 |0|Anahtar, dizi öğesine eşittir.|
 |> 0|Anahtar, dizi öğesinden daha büyük.|
 
-Bu işlev, parametrelerini doğrular. *Compare*, *Key* veya *Number* değeri **null**ise veya *taban* **null** ise ve *sayı* sıfır değilse, [parametre doğrulama bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır ](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin veriliyorsa, **errno** olarak `EINVAL` ayarlanır ve işlev **null**değerini döndürür.
+Bu işlev, parametrelerini doğrular. *Compare*, *Key* veya *Number* değeri **null**ise veya *taban* **null** ise ve *sayı* sıfır değilse, işlev parametre içinde açıklandığı gibi geçersiz parametre işleyicisini çağırır [ Doğrulama](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin veriliyorsa, **errno** `EINVAL` olarak ayarlanır ve işlev **null**değerini döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -137,7 +137,7 @@ cat found at 002F0F04
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Arama ve Sıralama](../../c-runtime-library/searching-and-sorting.md)<br/>
-[_lfind](lfind.md)<br/>
-[_lsearch](lsearch.md)<br/>
-[qsort](qsort.md)<br/>
+[Arama ve sıralama](../../c-runtime-library/searching-and-sorting.md)\
+[_lfind](lfind.md)\
+[_lsearch](lsearch.md)\
+[qsort](qsort.md)

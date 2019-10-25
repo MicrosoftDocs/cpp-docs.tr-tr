@@ -1,6 +1,6 @@
 ---
 title: mbrtoc16, mbrtoc323
-ms.date: 11/04/2016
+ms.date: 10/22/2019
 api_name:
 - mbrtoc16
 - mbrtoc32
@@ -29,16 +29,16 @@ helpviewer_keywords:
 - mbrtoc16 function
 - mbrtoc32 function
 ms.assetid: 099ade4d-56f7-4e61-8b45-493f1d7a64bd
-ms.openlocfilehash: 52bcec5911fdc2ecbb073ae0042777aa4eb2b963
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 793eadf433f3117d89b4f0dc7c8397762405406b
+ms.sourcegitcommit: 0a5518fdb9d87fcc326a8507ac755936285fcb94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70952432"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72811127"
 ---
 # <a name="mbrtoc16-mbrtoc32"></a>mbrtoc16, mbrtoc32
 
-Dar dizedeki ilk çok baytlı karakteri eşdeğer UTF-16 veya UTF-32 karakteriyle çevirir.
+Dizedeki ilk UTF-8 çok baytlı karakterini karşılık gelen UTF-16 veya UTF-32 karakterine dönüştürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -60,19 +60,19 @@ size_t mbrtoc32(
 
 ### <a name="parameters"></a>Parametreler
 
-*hedefine*<br/>
-Dönüştürülecek çok baytlı karakterin **char16_t** veya **char32_t** eşdeğerini işaretçisi. Null ise, işlev bir değer depolamaz.
+*hedef*\
+Dönüştürülecek UTF-8 çok baytlı karakterin **char16_t** veya **char32_t** eşdeğerini işaretçisi. Null ise, işlev bir değer depolamaz.
 
-*source*<br/>
-Dönüştürülecek çok baytlı karakter dizesinin işaretçisi.
+*kaynak*\
+Dönüştürülecek UTF-8 çok baytlı karakter dizesinin işaretçisi.
 
-*max_bytes*<br/>
-Dönüştürülecek karakteri incelemek için *kaynaktaki* en fazla bayt sayısı. Bu, *kaynak*içinde kalan herhangi bir null Sonlandırıcı dahil olmak üzere bir ve bayt sayısı arasında bir değer olmalıdır.
+*max_bytes*\
+Dönüştürülecek karakteri incelemek için *kaynaktaki* en fazla bayt sayısı. Bu bağımsız değişken, *kaynak*içinde kalan herhangi bir null Sonlandırıcı dahil olmak üzere bir ve bayt sayısı arasında bir değer olmalıdır.
 
-*durumunda*<br/>
-Çok baytlı dizeyi bir veya daha fazla çıkış karakteriyle yorumlamak için kullanılan bir **mbstate_t** dönüştürme durumu nesnesine yönelik işaretçi.
+*durum* \
+UTF-8 çok baytlı dizesini bir veya daha fazla çıkış karakteriyle yorumlamak için kullanılan bir **mbstate_t** dönüştürme durumu nesnesi işaretçisi.
 
-## <a name="return-value"></a>Dönüş Değeri
+## <a name="return-value"></a>Dönüş değeri
 
 Başarılı olduğunda, geçerli *durum* değeri verildiğinde geçerli olan bu koşulların ilk değerini döndürür:
 
@@ -80,17 +80,19 @@ Başarılı olduğunda, geçerli *durum* değeri verildiğinde geçerli olan bu 
 |-----------|---------------|
 |0|*Kaynaktan* dönüştürülen sonraki *max_bytes* veya daha az karakter, *hedef* null değilse depolanan değer olan null geniş karaktere karşılık gelir.<br /><br /> *durum* , ilk kaydırma durumunu içerir.|
 |Dahil olmak üzere 1 ile *max_bytes*arasında|Döndürülen değer, geçerli bir çok baytlı karakteri tamamlayacak *kaynak* bayt sayısıdır. *Hedef* null değilse, dönüştürülen geniş karakter saklanır.|
-|-3|*Hedef* null değilse, işleve yapılan önceki çağrıdan kaynaklanan bir sonraki geniş karakter *hedefte* depolandı. Bu işleve yapılan bu çağrı tarafından *kaynaktan* hiçbir bayt tüketilmemiş.<br /><br /> *Kaynak* , birden fazla geniş karakter (örneğin, bir vekil çifti) temsil etmesi gereken çok baytlı bir karakteri işaret ediyorsa, sonraki işlev çağrısının ek karakteri yazması için *durum* değeri güncellenir.|
-|-2|Sonraki *max_bytes* baytları tamamlanmamış, ancak potansiyel olarak geçerli çok baytlı bir karakteri temsil eder. *Hedefte*hiçbir değer depolanmaz. Bu sonuç, *max_bytes* sıfır olduğunda meydana gelebilir.|
-|-1|Bir kodlama hatası oluştu. Sonraki *max_bytes* veya daha az bayt, bir bütün ve geçerli çok baytlı karaktere katkıda bulunamaz. *Hedefte*hiçbir değer depolanmaz.<br /><br /> **Eilseq** , **errno** 'da depolanır ve dönüştürme durumunun *durumu* belirtilmemiş olur.|
+|-3|*Hedef* null değilse, işleve yapılan önceki çağrıdan kaynaklanan bir sonraki geniş karakter *hedefte* depolandı. Bu işleve yapılan bu çağrı tarafından *kaynaktan* hiçbir bayt tüketilmemiş.<br /><br /> *Kaynak* , birden fazla geniş karakter temsil etmesi için (örneğin, bir vekil çifti) bir UTF-8 çok baytlı karakteri işaret ediyorsa, sonraki işlev çağrısının ek karakteri yazması için *durum* değeri güncellenir.|
+|-2|Sonraki *max_bytes* baytları tamamlanmamış, ancak olasılıkla GEÇERLI bir UTF-8 çok baytlı karakterini temsil eder. *Hedefte*hiçbir değer depolanmaz. Bu sonuç, *max_bytes* sıfır olduğunda meydana gelebilir.|
+|-1|Bir kodlama hatası oluştu. Sonraki *max_bytes* veya daha az bayt, tam ve geçerlI bir UTF-8 çok baytlı karaktere katkıda bulunamaz. *Hedefte*hiçbir değer depolanmaz.<br /><br /> **Eilseq** , **errno** 'da depolanır ve dönüştürme *durumu değeri belirtilmemiş* olur.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Mbrtoc16** işlevi, ilk tamamlanan, geçerli çok baytlı karakteri bulmak için *kaynaktan* en fazla *max_bytes* bayt okur ve sonra karşılık gelen UTF-16 karakterini *hedefte*depolar. Kaynak baytlar, geçerli iş parçacığı çok baytlı yerel ayarına göre yorumlanır. Çok baytlı karakter, vekil çifti gibi birden fazla UTF-16 çıkış karakteri gerektiriyorsa, *durum* değeri sonraki **mbrtoc16**çağrısında bir sonraki UTF-16 karakterini *hedefte* depolayacak şekilde ayarlanır. **Mbrtoc32** işlevi aynıdır, ancak ÇıKTı bir UTF-32 karakteri olarak depolanır.
+**Mbrtoc16** işlevi, ilk tamamlanmış ve geçerli UTF-8 çok baytlı karakterini bulmak için *kaynaktan* en fazla *max_bytes* bayt okur ve sonra karşılık gelen UTF-16 karakterini *hedefte*depolar. Karakter, yedek çifti gibi birden fazla UTF-16 çıkış karakteri gerektiriyorsa, *durum* değeri, sonraki **mbrtoc16**çağrısında bir sonraki UTF-16 karakterini *hedefte* depolayacak şekilde ayarlanır. **Mbrtoc32** işlevi aynıdır, ancak ÇıKTı bir UTF-32 karakteri olarak depolanır.
 
-*Kaynak* null ise, bu işlevler *hedef*için **null** bağımsız değişkenler kullanılarak oluşturulan çağrının eşdeğerini döndürür, *kaynak*için **""** ve *max_bytes*için 1. Geçirilen *hedef* ve *max_bytes* değerleri yok sayılır.
+*Kaynak* null ise, bu işlevler, *hedef*için **null** bağımsız değişkenleri kullanılarak yapılan çağrının eşdeğerini döndürür, *kaynak*için `""` (boş, null sonlandırılmış bir dize) ve *max_bytes*için 1. Geçirilen *hedef* ve *max_bytes* değerleri yok sayılır.
 
-*Kaynak* null değilse, işlev dizenin başlangıcında başlar ve kaydırma dizileri dahil olmak üzere bir sonraki çok baytlı karakteri tamamlamaya yönelik gereken bayt sayısını belirlemede *max_bytes* bayta kadar inceler. İncelenen baytlar geçerli ve tam bir çok baytlı karakter içeriyorsa, işlev karakteri 16 bit veya 32 bitlik geniş karakter veya karakterlere dönüştürür. *Hedef* null değilse, işlev hedefteki ilk (ve muhtemelen yalnızca) sonuç karakterini depolar. Ek çıkış karakterleri gerekliyse, bir değer bir *durum*olarak ayarlanır, böylece işlevin sonraki çağrıları ek karakterlerin çıktısını verir ve-3 değerini döndürür. Daha fazla çıkış karakteri gerekmiyorsa, *durum* ilk kaydırma durumuna ayarlanır.
+*Kaynak* null değilse, işlev dizenin başlangıcında başlar ve kaydırma dizileri dahil olmak üzere sonraki UTF-8 çok baytlı karakterini tamamlaması gereken bayt sayısını belirlemede *max_bytes* bayta kadar inceler. İncelenen baytlar geçerli ve tam bir UTF-8 çok baytlı karakter içeriyorsa, işlev karakteri 16 bit veya 32 bitlik geniş karakter veya karakterlere dönüştürür. *Hedef* null değilse, işlev hedefteki ilk (ve muhtemelen yalnızca) sonuç karakterini depolar. Ek çıkış karakterleri gerekliyse, bir değer bir *durum*olarak ayarlanır, böylece işlevin sonraki çağrıları ek karakterlerin çıktısını verir ve-3 değerini döndürür. Daha fazla çıkış karakteri gerekmiyorsa, *durum* ilk kaydırma durumuna ayarlanır.
+
+UTF-8 olmayan çok baytlı karakterleri UTF-16 LE karakterlerine dönüştürmek için [mbrtowc](mbrtowc.md), [mbtowc veya _mbtowc_l](mbtowc-mbtowc-l.md) işlevlerini kullanın.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -98,14 +100,14 @@ Başarılı olduğunda, geçerli *durum* değeri verildiğinde geçerli olan bu 
 |--------------|--------------|------------------|
 |**mbrtoc16**, **mbrtoc32**|\<uşar. h >|\<cuchar >|
 
-Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Veri Dönüştürme](../../c-runtime-library/data-conversion.md)<br/>
-[locale](../../c-runtime-library/locale.md)<br/>
-[Çok Baytlı Karakter Sıralarının Yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
-[c16rtomb, c32rtomb](c16rtomb-c32rtomb1.md)<br/>
-[mbrtowc](mbrtowc.md)<br/>
-[mbsrtowcs](mbsrtowcs.md)<br/>
-[mbsrtowcs_s](mbsrtowcs-s.md)<br/>
+[Veri dönüştürme](../data-conversion.md)\
+[Yerel ayar](../locale.md)\
+[Çok baytlı karakter sıralarının yorumu](../interpretation-of-multibyte-character-sequences.md)\
+[c16rtomb, c32rtomb](c16rtomb-c32rtomb1.md)\
+[mbrtowc](mbrtowc.md)\
+[mbsrtowcs](mbsrtowcs.md)\
+[mbsrtowcs_s](mbsrtowcs-s.md)

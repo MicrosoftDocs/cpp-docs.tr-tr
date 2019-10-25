@@ -1,6 +1,6 @@
 ---
 title: bsearch_s
-ms.date: 11/04/2016
+ms.date: 10/22/2019
 api_name:
 - bsearch_s
 api_location:
@@ -26,16 +26,16 @@ helpviewer_keywords:
 - arrays [CRT], binary search
 - bsearch_s function
 ms.assetid: d5690d5e-6be3-4f1d-aa0b-5ca6dbded276
-ms.openlocfilehash: 9bcd18add216bb0fc2f203183d82e37ede65dba5
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: fc86576dbbe73f63da6bf0e28e7166ef7c552e55
+ms.sourcegitcommit: 0a5518fdb9d87fcc326a8507ac755936285fcb94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70943479"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72811150"
 ---
 # <a name="bsearch_s"></a>bsearch_s
 
-Sıralanmış bir dizide ikili bir arama gerçekleştirir. Bu, [CRT 'Deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklandığı gibi güvenlik geliştirmeleriyle [bsearch](bsearch.md) 'ün sürümüdür.
+Sıralanmış bir dizide ikili bir arama gerçekleştirir. Bu işlev, [CRT 'Deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklandığı gibi güvenlik geliştirmeleriyle [bsearch](bsearch.md) 'ün bir sürümüdür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -52,39 +52,39 @@ void *bsearch_s(
 
 ### <a name="parameters"></a>Parametreler
 
-*anahtar*<br/>
-Aranacak nesne.
+*anahtar* \
+Aranacak anahtarın işaretçisi.
 
-*base*<br/>
-Arama verileri tabanı işaretçisi.
+*temel*\
+Arama verilerinin tabanına yönelik işaretçi.
 
-*sayısından*<br/>
+*sayı*\
 Öğe sayısı.
 
-*Genişlik*<br/>
+*genişlik*\
 Öğelerin genişliği.
 
-*Karşılaştır*<br/>
+\ *Karşılaştır*
 İki öğeyi karşılaştıran geri çağırma işlevi. İlk bağımsız değişken *bağlam* işaretçisidir. İkinci bağımsız değişken, arama için *anahtarın* bir işaretçisidir. Üçüncü bağımsız değişken, *anahtar*ile Karşılaştırılacak dizi öğesine yönelik bir işaretçidir.
 
-*bağlam*<br/>
+*bağlam*\
 Karşılaştırma işlevinde erişilebilen nesneye yönelik bir işaretçi.
 
-## <a name="return-value"></a>Dönüş Değeri
+## <a name="return-value"></a>Dönüş değeri
 
 **bsearch_s** , *temel*tarafından işaret edilen dizide *anahtar* oluşumuna yönelik bir işaretçi döndürür. *Anahtar* bulunamazsa, işlev **null**döndürür. Dizi artan sıralama düzeninde değilse veya aynı anahtarlara sahip yinelenen kayıtlar içeriyorsa, sonuç tahmin edilemez.
 
-İşleve geçersiz parametreler geçirilmemişse, geçersiz parametre işleyicisi [parametre doğrulamada](../../c-runtime-library/parameter-validation.md)açıklandığı gibi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, **errno** **EINVAL** olarak ayarlanır ve işlev **null**değerini döndürür. Daha fazla bilgi için bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+İşleve geçersiz parametreler geçirilmemişse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, **errno** **EINVAL** olarak ayarlanır ve işlev **null**değerini döndürür. Daha fazla bilgi için bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ### <a name="error-conditions"></a>Hata koşulları
 
 |||||||
 |-|-|-|-|-|-|
 |*anahtar*|*base*|*Karşılaştır*|*sayısından*|*Genişlik*|**errno**|
-|**DEĞER**|Kaydedilmemiş|Kaydedilmemiş|Kaydedilmemiş|Kaydedilmemiş|**EINVAL**|
-|Kaydedilmemiş|**DEĞER**|Kaydedilmemiş|!= 0|Kaydedilmemiş|**EINVAL**|
-|Kaydedilmemiş|Kaydedilmemiş|Kaydedilmemiş|Kaydedilmemiş|= 0|**EINVAL**|
-|Kaydedilmemiş|Kaydedilmemiş|**DEĞER**|Kızılötesi|Kaydedilmemiş|**EINVAL**|
+|**DEĞER**|Kaydedilmemiş|Kaydedilmemiş|Kaydedilmemiş|Kaydedilmemiş|**EıNVAL**|
+|Kaydedilmemiş|**DEĞER**|Kaydedilmemiş|! = 0|Kaydedilmemiş|**EıNVAL**|
+|Kaydedilmemiş|Kaydedilmemiş|Kaydedilmemiş|Kaydedilmemiş|= 0|**EıNVAL**|
+|Kaydedilmemiş|Kaydedilmemiş|**DEĞER**|Kızılötesi|Kaydedilmemiş|**EıNVAL**|
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -194,7 +194,7 @@ cat found at 002F0F04
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Arama ve Sıralama](../../c-runtime-library/searching-and-sorting.md)<br/>
-[_lfind](lfind.md)<br/>
-[_lsearch](lsearch.md)<br/>
-[qsort](qsort.md)<br/>
+[Arama ve sıralama](../../c-runtime-library/searching-and-sorting.md)\
+[_lfind](lfind.md)\
+[_lsearch](lsearch.md)\
+[qsort](qsort.md)
