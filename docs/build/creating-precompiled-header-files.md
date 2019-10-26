@@ -1,22 +1,22 @@
 ---
 title: Önceden Derlenmiş Başlık Dosyaları
-ms.date: 08/19/2019
+ms.date: 10/24/2019
 helpviewer_keywords:
 - precompiled header files, creating
 - PCH files, creating
 - cl.exe compiler, precompiling code
 - .pch files, creating
 ms.assetid: e2cdb404-a517-4189-9771-c869c660cb1b
-ms.openlocfilehash: 273d8cf996c2717339dd20dcbc7512f9c62afa8d
-ms.sourcegitcommit: 389c559918d9bfaf303d262ee5430d787a662e92
+ms.openlocfilehash: 071839df431071a7d8921d1b445094f886ad38e2
+ms.sourcegitcommit: 33a898bf976c65f998b4e88a84765a0cef4193a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "69630504"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72920103"
 ---
 # <a name="precompiled-header-files"></a>Önceden Derlenmiş Başlık Dosyaları
 
-Visual Studio 'da yeni bir proje oluşturduğunuzda, projeye *pch. h* adlı *önceden derlenmiş bir üstbilgi dosyası* eklenir. (Visual Studio 2017 ve önceki sürümlerde dosya *stbafx. h*olarak adlandırılmıştı.) Dosyanın amacı, yapı sürecini hızlandırmaya yönelik olur. Tüm kararlı üstbilgi dosyaları, örneğin gibi standart kitaplık üstbilgileri `<vector>`dahil edilmelidir. Ön derlenmiş üstbilgi yalnızca, veya içerdiği herhangi bir dosya değiştirildiğinde derlenir. Yalnızca proje kaynak kodunuzda değişiklik yaparsanız, derleme ön derlenmiş üst bilgi için derlemeyi atlar. 
+Visual Studio 'da yeni bir proje oluşturduğunuzda, projeye *pch. h* adlı *önceden derlenmiş bir üstbilgi dosyası* eklenir. (Visual Studio 2017 ve önceki sürümlerde dosya *stbafx. h*olarak adlandırılmıştı.) Dosyanın amacı, yapı sürecini hızlandırmaya yönelik olur. Tüm kararlı üstbilgi dosyaları, örneğin `<vector>`gibi standart kitaplık üstbilgileri dahil edilmelidir. Ön derlenmiş üstbilgi yalnızca, veya içerdiği herhangi bir dosya değiştirildiğinde derlenir. Yalnızca proje kaynak kodunuzda değişiklik yaparsanız, derleme ön derlenmiş üst bilgi için derlemeyi atlar. 
 
 Önceden derlenmiş üst bilgiler için derleyici seçenekleri [/y](reference/y-precompiled-headers.md). Proje özelliği sayfalarında, Seçenekler > yapılandırma özellikleri altında bulunur ve **önceden derlenmiş üst bilgileriC++ >** . Önceden derlenmiş üst bilgileri kullanmayı seçebilirsiniz ve çıkış dosyasının adını ve yolunu belirtebilirsiniz. 
 
@@ -87,7 +87,7 @@ PCH dosyası, oluşturulduğu sırada geçerli olan ekleme yolu hakkında bilgi 
 
 ### <a name="pragma-consistency"></a>Pragma tutarlılığı
 
-Bir PCH dosyasının oluşturulması sırasında işlenen pragmalar genellikle PCH dosyasının daha sonra kullanıldığı dosyayı etkiler. `comment` Ve`message` pragmaları, derlemenin kalanını etkilemez.
+Bir PCH dosyasının oluşturulması sırasında işlenen pragmalar genellikle PCH dosyasının daha sonra kullanıldığı dosyayı etkiler. `comment` ve `message` pragmalar derlemenin kalanını etkilemez.
 
 Bu pragmalar yalnızca PCH dosyası içindeki kodu etkiler; daha sonra PCH dosyasını kullanan kodu etkilemez:
 
@@ -116,9 +116,9 @@ Bu pragmalar, önceden derlenmiş üstbilginin bir parçası olarak tutulur ve �
 
 Bu tabloda, ön derlenmiş üst bilgi kullanılırken tutarsızlık uyarısı tetikleyebilen derleyici seçenekleri listelenmektedir:
 
-|Seçenek|Ad|Kural|
+|Seçenek|Name|Kural|
 |------------|----------|----------|
-|BELİRTİLMEDİYSE|Sabitleri ve makroları tanımlama|Ön derlenmiş üstbilgiyi ve geçerli derlemeyi oluşturan derleme arasında aynı olmalıdır. Tanımlı sabitlerin durumu işaretli değil, ancak dosyalarınız değiştirilen sabitlerin değerlerine bağlıysa öngörülemeyen sonuçlar ortaya çıkabilir.|
+|Belirtilmediyse|Sabitleri ve makroları tanımlama|Ön derlenmiş üstbilgiyi ve geçerli derlemeyi oluşturan derleme arasında aynı olmalıdır. Tanımlı sabitlerin durumu işaretli değil, ancak dosyalarınız değiştirilen sabitlerin değerlerine bağlıysa öngörülemeyen sonuçlar ortaya çıkabilir.|
 |/E veya/EP|Önişlemci çıkışını standart çıktıya Kopyala|Önceden derlenmiş üstbilgiler/E veya/EP seçeneğiyle çalışmaz.|
 |/Fr veya/FR|Microsoft kaynak tarayıcısı bilgilerini oluştur|/Fr ve/FR seçeneklerinin/yu seçeneğiyle geçerli olması için, önceden derlenmiş üst bilgi oluşturulduğunda da etkin olmaları gerekir. Ön derlenmiş üstbilgiyi kullanan sonraki derlemeler de kaynak tarayıcı bilgileri oluşturur. Tarayıcı bilgileri tek bir. sbr dosyasına yerleştirilir ve diğer dosyalar tarafından CodeView bilgileriyle aynı şekilde başvurulur. Kaynak tarayıcı bilgilerinin yerleşimini geçersiz kılamazsınız.|
 |/GA,/GD,/GE,/GW veya/GW|Windows protokol seçenekleri|Ön derlenmiş üstbilgiyi ve geçerli derlemeyi oluşturan derleme arasında aynı olmalıdır. Bu seçenekler farklıysa bir uyarı mesajı oluşur.|
@@ -179,9 +179,9 @@ UNSTABLEHDRS = unstable.h
 CLFLAGS = /c /W3
 # List all linker options common to both debug and final
 # versions of your code here:
-LINKFLAGS = /NOD /ONERROR:NOEXE
+LINKFLAGS = /nologo
 !IF "$(DEBUG)" == "1"
-CLFLAGS   = /D_DEBUG $(CLFLAGS) /Od /Zi /f
+CLFLAGS   = /D_DEBUG $(CLFLAGS) /Od /Zi
 LINKFLAGS = $(LINKFLAGS) /COD
 LIBS      = slibce
 !ELSE
@@ -257,7 +257,7 @@ void savetime( void );
 //
 #ifndef __UNSTABLE_H
 #define __UNSTABLE_H
-#include<iostream.h>
+#include<iostream>
 void notstable( void );
 #endif // __UNSTABLE_H
 ```
@@ -270,6 +270,7 @@ void notstable( void );
 #include"another.h"
 #include"stable.h"
 #include"unstable.h"
+using namespace std;
 // The following code represents code that is deemed stable and
 // not likely to change. The associated interface code is
 // precompiled. In this example, the header files STABLE.H and
