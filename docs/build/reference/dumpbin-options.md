@@ -1,23 +1,25 @@
 ---
-title: DUMPBIN Seçenekleri
-ms.date: 11/04/2016
+title: DUMPBIN seçenekleri
+ms.date: 10/24/2019
 f1_keywords:
 - dumpbin
 helpviewer_keywords:
 - DUMPBIN program, options
 ms.assetid: 563b696e-7599-4480-94b9-014776289ec8
-ms.openlocfilehash: 655087236e3e4644c6215da2adccd9755c767b77
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 81c66f1971294531a2904a0b681819476bcc1eb2
+ms.sourcegitcommit: 6ed1bc5b26dc60a780c1fc5f2f19d57ba1dc47d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62272747"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73144550"
 ---
-# <a name="dumpbin-options"></a>DUMPBIN Seçenekleri
+# <a name="dumpbin-options"></a>DUMPBIN seçenekleri
 
-İsteğe bağlı bir tire (-) ya da seçenek adından önce gelen bir eğik çizgi (/), bir seçenek belirticisi oluşur. Seçenek adları kısaltılmış olamaz. Bazı seçenekler, iki nokta (:) sonra belirtilen bir bağımsız değişken, almaz. Boşluk veya sekme içinde bir seçenek belirtimine izin verilir. Komut satırı seçeneği belirtimlerine ayırmak için bir veya daha fazla boşluk veya sekme kullanın. Seçenek adları ve bunların anahtar sözcük veya dosya adı bağımsız değişkenler büyük küçük harfe duyarlı değildir. Çoğu seçenekler tüm ikili dosyalar için geçerlidir; birkaç yalnızca için belirli türden dosyalar uygulayın. Varsayılan olarak, standart çıktıya DUMPBIN bilgi gönderir. Kullanım [/OUT](out-dumpbin.md) çıkışı bir dosyaya göndermek için seçeneği.
+Bir seçenek, bir tire (`-`) veya eğik çizgi (`/`) ve ardından seçeneğin adı olan bir *seçenek belirticisinden*oluşur. Seçenek adları kısaltılabilir. Bazı seçenekler, iki nokta üst üste (`:`) sonra belirtilen bağımsız değişkenler alır. Seçenek belirtimi içinde boşluk veya sekmeye izin verilmez. Komut satırındaki seçenek belirtimlerini ayırmak için bir veya daha fazla boşluk ya da sekme kullanın. Seçenek adları ve bunların anahtar sözcüğü veya dosya adı bağımsız değişkenleri büyük/küçük harfe duyarlı değildir. Çoğu seçenek tüm ikili dosyalar için geçerlidir, ancak bazıları yalnızca belirli dosya türleri için geçerlidir. Varsayılan olarak, DUMPBIN standart çıktıya bilgi gönderir. Çıktıyı bir dosyaya göndermek için [/Out](out-dumpbin.md) seçeneğini kullanın.
 
-DUMPBIN şu seçeneklere sahiptir:
+## <a name="options-list"></a>Seçenekler listesi
+
+DUMPBIN aşağıdaki seçeneklere sahiptir:
 
 - [/ALL](all.md)
 
@@ -29,9 +31,9 @@ DUMPBIN şu seçeneklere sahiptir:
 
 - [/DIRECTIVES](directives.md)
 
-- [/DISASM](disasm.md)
+- [/DISASM\[: {BYTES\|NOBYTES}\]](disasm.md)
 
-- [/ERRORREPORT (dumpbin.exe)](errorreport-dumpbin-exe.md)
+- [/ERRORREPORT: {NONE | KOMUT ISTEMI | KUYRUK | Gönder](errorreport-dumpbin-exe.md)
 
 - [/EXPORTS](dash-exports.md)
 
@@ -39,27 +41,29 @@ DUMPBIN şu seçeneklere sahiptir:
 
 - [/HEADERS](headers.md)
 
-- [/ IMPORTS](imports-dumpbin.md)
+- [/IMPORTS\[: filename\]](imports-dumpbin.md)
 
 - [/LINENUMBERS](linenumbers.md)
 
-- [/LINKERMEMBER](linkermember.md)
+- [/LINKERMEMBER\[: {1 | 2}\]](linkermember.md)
 
 - [/LOADCONFIG](loadconfig.md)
 
-- [/ OUT](out-dumpbin.md)
+- [/NOPDB](nopdb.md)
+
+- [/OUT: filename](out-dumpbin.md)
 
 - [/PDATA](pdata.md)
 
-- [/PDBPATH](pdbpath.md)
+- [/PDBPATH\[: VERBOSE\]](pdbpath.md)
 
-- [/RANGE](range.md)
+- [/RANGEE: vaMin\[, vaMax\]](range.md)
 
-- [/RAWDATA](rawdata.md)
+- [/RAWDATA\[: {NONE\|1\|2\|4\|8}\[, #\]\]](rawdata.md)
 
 - [/RELOCATIONS](relocations.md)
 
-- [/ SECTION](section-dumpbin.md)
+- [/SECTION: ad](section-dumpbin.md)
 
 - [/SUMMARY](summary.md)
 
@@ -67,7 +71,10 @@ DUMPBIN şu seçeneklere sahiptir:
 
 - [/TLS](tls.md)
 
+Komut satırında DUMPBIN tarafından desteklenen seçenekleri listelemek için **/?** kullanın seçeneği.
+
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Ek MSVC derleme araçları](c-cpp-build-tools.md)<br/>
-[DUMPBIN Başvurusu](dumpbin-reference.md)
+[Ek MSVC derleme araçları](c-cpp-build-tools.md)\
+[Dumpbin komut satırı](dumpbin-command-line.md)\
+[DUMPBIN başvurusu](dumpbin-reference.md)

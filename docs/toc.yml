@@ -1157,34 +1157,7 @@
                     - name: Örnek derleme görevleri dosyası
                       href: build/reference/sample-makefile.md
                 - name: Açıklama blokları
-                  expanded: false
-                  items:
-                    - name: Açıklama blokları
-                      href: build/reference/description-blocks.md
-                    - name: Hedefler
-                      expanded: false
-                      items:
-                        - name: Hedefler
-                          href: build/reference/targets.md
-                        - name: Sözde Hedefler
-                          href: build/reference/pseudotargets.md
-                        - name: Birden çok hedef
-                          href: build/reference/multiple-targets.md
-                        - name: Birikmeli bağımlılıklar
-                          href: build/reference/cumulative-dependencies.md
-                        - name: Birden çok açıklama bloğundaki hedefler
-                          href: build/reference/targets-in-multiple-description-blocks.md
-                        - name: Bağımlılık yan etkileri
-                          href: build/reference/dependency-side-effects.md
-                    - name: Bağımlılıklar
-                      expanded: false
-                      items:
-                        - name: Bağımlılıklar
-                          href: build/reference/dependents.md
-                        - name: Çıkarsanan bağımlılıklar
-                          href: build/reference/inferred-dependents.md
-                        - name: Bağımlılıklar için yollar ara
-                          href: build/reference/search-paths-for-dependents.md
+                  href: build/reference/description-blocks.md
                 - name: Derleme görevleri dosyası komutları
                   expanded: false
                   items:
@@ -1410,6 +1383,8 @@
                       href: build/reference/linkermember.md
                     - name: /LOADCONFIG
                       href: build/reference/loadconfig.md
+                    - name: /NOPDB
+                      href: build/reference/nopdb.md
                     - name: /OUT (DUMPBIN)
                       href: build/reference/out-dumpbin.md
                     - name: /PDATA
