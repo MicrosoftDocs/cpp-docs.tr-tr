@@ -21,20 +21,20 @@ Yapı, birleşim ve sınıf üyeleri için paketleme hizalamasını belirtir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **#pragma paketi (göster)** \
-> **#pragma paketi (push** [ **,** *tanımlayıcı* ] [ **,** *n* ] **)** \
-> **#pragma paketi (pop** [ **,** { *Identifier* | *n* }] **)** \
-> **#pragma paketi (** [ *n* ] **)**
+> **#pragma pack( show )** \
+> **#pragma pack( push** [ **,** *identifier* ] [ **,** *n* ] **)** \
+> **#pragma pack( pop** [ **,** { *identifier* | *n* } ] **)** \
+> **#pragma pack(** [ *n* ] **)**
 
 ### <a name="parameters"></a>Parametreler
 
-**göster**\
+**show**\
 Seçim Paketleme hizalaması için geçerli bayt değerini görüntüler. Değer bir uyarı iletisiyle görüntülenir.
 
-**hareketle**\
+**push**\
 Seçim İç derleyici yığınında geçerli paketleme hizalama değerini iter ve geçerli paketleme hizalama değerini *n*olarak ayarlar. *N* belirtilmezse, geçerli paketleme hizalama değeri gönderilir.
 
-**cağımız**\
+**pop**\
 Seçim Kaydı, iç derleyici yığınının üst öğesinden kaldırır. *Hayır* , **pop**ile belirtilmediyse, yığının en üstündeki sonuç kaydıyla ilişkili paketleme değeri, yeni paketleme hizalama değeridir. *N* belirtilmişse, örneğin `#pragma pack(pop, 16)`, *n* yeni paketleme hizalama değeri haline gelir. Örneğin`#pragma pack(pop, r1)`, bir tanımlayıcı kullanarak öğesini seçerseniz, bu durumda, *tanımlayıcı* içeren kayıt bulunana kadar yığındaki tüm kayıtlar işlenir. Bu kayıt oluşur ve yığının en üstündeki sonuç kaydıyla ilişkili paketleme değeri yeni paketleme hizalama değeridir. Yığındaki herhangi bir kayıtta bulunmayan bir *tanımlayıcıyı* kullanarak öğesini seçerseniz, **pop** yok sayılır.
 
 *Tanımlayıcısını*\
