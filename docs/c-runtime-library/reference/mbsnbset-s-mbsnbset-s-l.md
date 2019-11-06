@@ -35,12 +35,12 @@ helpviewer_keywords:
 - _tcsnset_s function
 - tcsnset_s_l function
 ms.assetid: 811f92c9-cc31-4bbd-8017-2d1bfc6fb96f
-ms.openlocfilehash: b54a05d163430aa01f4c12e841a11d1faf5a6c4b
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 7addd7e053816c462ae430443506445b878464a0
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70952114"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73625108"
 ---
 # <a name="_mbsnbset_s-_mbsnbset_s_l"></a>_mbsnbset_s, _mbsnbset_s_l
 
@@ -88,7 +88,7 @@ Değiştirilecek dize.
 *boyutla*<br/>
 Dize arabelleğinin boyutu.
 
-*c*<br/>
+*,*<br/>
 Tek baytlı veya çok baytlı karakter ayarı.
 
 *biriktirme*<br/>
@@ -113,7 +113,7 @@ Başarılıysa sıfır; Aksi takdirde, bir hata kodu.
 
 ' C++De, bu işlevlerin kullanılması şablon aşırı yüklemeleri tarafından basitleştirilmiştir; aşırı yüklemeler arabellek uzunluğunu otomatik olarak çıkarabilir ve böylece bir boyut bağımsız değişkeni belirtme gereksinimini ortadan kaldırabilir. Daha fazla bilgi için bkz. [Güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 
-Bu işlevlerin hata ayıklama sürümleri ilk olarak arabelleği 0xFD ile doldurur. Bu davranışı devre dışı bırakmak için [_Crtsetdebugfillthreshold](crtsetdebugfillthreshold.md)kullanın.
+Bu işlevlerin hata ayıklama Kitaplığı sürümleri ilk olarak arabelleği 0xFE ile doldurur. Bu davranışı devre dışı bırakmak için [_Crtsetdebugfillthreshold](crtsetdebugfillthreshold.md)kullanın.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 

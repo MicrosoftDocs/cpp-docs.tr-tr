@@ -1,70 +1,73 @@
 ---
-title: Yerel çoklu sürüm desteğinin Visual Studio'da eski projeleri oluşturmak için kullanın
-ms.date: 11/04/2016
+title: Visual Studio’da eski projeleri oluşturmak için yerel çoklu sürüm paketi kullanma
+ms.date: 10/25/2019
 helpviewer_keywords:
 - C++ native multi-targeting
 - upgrading Visual C++ applications, retargeting
 ms.assetid: b115aabe-a9dc-4525-90d3-367d97ea20c9
-ms.openlocfilehash: 35f6ac980a451b375d5005c20853fdd29c78d96d
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: aff21121c181131b04ad22d75f03b7cbb222228a
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65448948"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73627154"
 ---
-# <a name="use-native-multi-targeting-in-visual-studio-to-build-old-projects"></a>Yerel çoklu sürüm desteğinin Visual Studio'da eski projeleri oluşturmak için kullanın
+# <a name="use-native-multi-targeting-in-visual-studio-to-build-old-projects"></a>Visual Studio’da eski projeleri oluşturmak için yerel çoklu sürüm paketi kullanma
 
-Normalde, Visual Studio'nun en son sürümünü yüklediğinizde projelerinizi güncelleştirmenizi öneririz. Proje ve kod güncelleştirme maliyeti genellikle daha fazla yeni IDE, derleyici, kitaplıklar ve Araçlar avantajlarını tarafından uzaklığı. Ancak, bazı projeler güncelleştirmek mümkün olmayabilir olduğunu biliyoruz. Eski kitaplıkları veya bakım nedeniyle, yükseltemezsiniz platformları bağlı ikili dosyalarınız. Kodunuz için daha yeni bir derleyici taşıdıysanız, kesmek standart olmayan dil yapıları kullanabilirsiniz. Kodunuzu Visual C++, belirli bir sürümü için derlenmiş 3 şahıs kitaplıklardaki dayanır. Veya Visual C++ belirli bir eski sürümünü hedeflemelidir başkaları için kitaplıkları üretebilir.
+Normalde, Visual Studio 'nun en son sürümünü yüklediğinizde projelerinizi güncelleştirmenizi öneririz. Projelerinizi ve kodunuzu güncelleştirme maliyeti genellikle yeni IDE, derleyici, kitaplıklar ve araçların avantajlarından daha fazla uzaklığa sahiptir. Ancak, bazı projeleri güncelleştiremeyebilirsiniz. Yükselteceğiniz bakım nedenlerinden daha eski kitaplıklara veya platformlara bağlı ikili dosyalarınız olabilir. Kodunuz, daha yeni bir derleyiciye taşıdığınız takdirde kesilecek standart olmayan dil yapılarını kullanabilir. Kodunuz, belirli bir görsel C++sürümü için derlenen 3. taraf kitaplıklarını kullanabilir. Ya da diğer bir görselin belirli bir görsel C++sürümünü hedeflemesi gereken diğer kitaplıkları da oluşturabilirsiniz.
 
-Neyse ki, bu hedef eski derleyici araç kümeleri ve kitaplıklar projeleri derlemek için Visual Studio 2017 ve Visual Studio 2015 kullanabilirsiniz. Visual Studio 2010, Visual Studio 2012, Visual Studio 2013 veya Visual Studio 2015 proje IDE'de yeni özelliklerden yararlanmak için yükseltme gerekmez:
+Neyse ki, daha eski derleyici araç kümelerini ve kitaplıklarını hedefleyen projeler oluşturmak için Visual Studio 2017 ve Visual Studio 2015 ' yi kullanabilirsiniz. IDE 'deki yeni özelliklerden yararlanmak için Visual Studio 2010, Visual Studio 2012, Visual Studio 2013 veya Visual Studio 2015 projesini yükseltmeniz gerekmez:
 
-  - Yeni C++ yeniden düzenleme özellikleri ve Deneysel özellikler Düzenleyicisi
-  - Yeni tanılama araçları penceresi ve Hata Listesi penceresi hata ayıklayıcı
-  - Yenilenmiş kesme noktaları, özel durumlar penceresi ve yeni PerfTips
-  - Yeni kod gezinti ve arama araçları
-  - Yeni C++ hızlı düzeltmeler ve verimlilik güç araçları uzantıları.
+  - Yeni C++ yeniden düzenleme özellikleri ve düzenleyici deneysel özellikleri
+  - Yeni tanılama araçları hata ayıklayıcısı penceresi ve Hata Listesi penceresi
+  - Yeniden kullanıma alınan kesme noktaları, özel durumlar penceresi ve yeni PerfTips
+  - Yeni kod gezintisi ve arama araçları
+  - Yeni C++ hızlı düzeltmeler ve üretkenlik güç araçları uzantıları.
 
-Visual Studio 2008 projeleri de hedefleyebilir, ancak bunlar kullanılamaz değişmez. Ayrıntılar için bkz **yönergeler için Visual Studio 2008** bölümü.
+Visual Studio 2008 projelerini de hedefleyebilirsiniz, ancak bunlar değişmeden kullanılamaz. Ayrıntılar için bkz. **Visual Studio Için yönergeler 2008** bölümü.
 
-Proje gidiş dönüşü yerel çoklu sürüm desteği ve Visual Studio'nun en son sürümlerini destekler. Yerel çoklu sürüm desteğinin araç takımları ile Visual Studio'nun önceki sürümleri yüklü kullanarak oluşturmak için en yeni IDE özelliğidir. Gidiş dönüşü projeye herhangi bir değişiklik yapmadan önceki bir IDE sürümü tarafından oluşturulmuş bir projeyi yüklemeye son IDE'nin yeteneğidir. Mevcut sürümünüz ile Visual Studio yan yana en son sürümünü yüklerseniz, IDE yeni sürümünü derleyici ve araçlarla mevcut sürümünden projelerinizi oluşturmak için kullanabilirsiniz. Diğer ekip üyelerinin projeleri Visual Studio'nun eski sürümde kullanmaya devam edebilirsiniz.
+Visual Studio 'nun en son sürümleri, projelerin yerel Çoklu hedefleme ve gidiş dönüşü destekler. Yerel çoklu hedefleme, en son IDE 'nin Visual Studio 'nun önceki sürümleri tarafından yüklenen araç kümelerini kullanarak oluşturma yeteneğidir. Gidiş dönüşü, en son IDE 'nin proje üzerinde herhangi bir değişiklik yapmadan önceki bir IDE sürümü tarafından oluşturulan projeleri yükleme olanağıdır. Visual Studio 'nun en son sürümünü mevcut sürümünüzle yan yana yüklerseniz, projelerinizi derlemek için mevcut sürümden derleyici ve araçlarla IDE 'nin yeni sürümünü kullanabilirsiniz. Takımınızın diğer üyeleri, Visual Studio 'nun eski sürümünde projeleri kullanmaya devam edebilir.
 
-Eski bir araç takımı kullandığınızda, C++ derleyicisi, kitaplıklar ve derleme araçları birçok yeni IDE özelliği, ancak değil en son geliştirmeleri avantajlarından yararlanabilirsiniz. Örneğin, yeni hata ayıklama yeni dil uyumluluk geliştirmeleri kullanın ve kod çözümleme özellikleri veya en son araç daha hızlı derleme aktarım hızı alma mümkün olmayacaktır. Eski araç takımları ile uyumlu olmayan bazı IDE özellikleri de vardır. Örneğin, tür bilgilerini bellek Profiler ve yeniden düzenleme işlemi eksik olabilir **ham dize değişmez değerlerine dönüştürme** kullandığınızda Visual Studio 2012 veya daha eski araç takımları, derlenemeyecektir C ++ 11 ile uyumlu kod üretir.
+Daha eski bir araç takımını kullandığınızda C++ derleyici, kitaplıklar ve derleme araçlarındaki en son gelişmelerden en son IDE özelliklerinden faydalanabilirsiniz. Örneğin, yeni dil uyumluluğu geliştirmelerini, yeni hata ayıklama ve kod analizi özelliklerini kullanamaz ya da en son araç takımını daha hızlı derleme aktarım hızını edinebilirsiniz. Ayrıca, eski araç kümeleriyle uyumsuz bazı IDE özellikleri de vardır. Örneğin, bellek profil oluşturucuda tür bilgileri eksik olabilir ve yeniden düzenleme işlemi **Ham dize değişmez değerlerine dönüştürüyorsa** , Visual Studio 2012 veya daha eski araç kümelerini kullandığınızda derlenmeyen C + +11 uyumlu kod oluşturulur.
 
-## <a name="how-to-use-native-multi-targeting-in-visual-studio"></a>Visual Studio'da yerel çoklu sürüm desteğinin kullanma
+## <a name="how-to-use-native-multi-targeting-in-visual-studio"></a>Visual Studio 'da yerel Çoklu hedefleme kullanma
 
-Visual Studio yan yana eski sürümünüzle yükledikten sonra yeni Visual Studio sürümünde mevcut projenizi açın. Proje yüklendiğinde, Visual Studio en son C++ Derleyici ve kitaplıkları kullanacak şekilde yükseltmek isteyip istemediğinizi sorar. Proje eski derleyici ve kitaplıkları tutmak istediğinden seçin **iptal** düğmesi.
+Visual Studio 'Yu eski sürümle yan yana yükledikten sonra, mevcut projenizi Visual Studio 'nun yeni sürümünde açın. Proje yüklendiğinde, Visual Studio en son C++ derleyicisini ve kitaplıkları kullanmak üzere yükseltmeyi isteyip istemediğinizi sorar. Projenin eski derleyicisini ve kitaplıkları tutmasını istiyorsanız **iptal** düğmesini seçin.
 
-Visual Studio, projenizi yükseltme hakkında kalıcıdır. Projeyi her yüklediğimizde yükseltme iletişim kutusundan görmekten kaçınmak için aşağıdaki özelliği projelerinizi tanımlayabilirsiniz veya .props veya .targets dosyalarında bunlar içeri aktarın:
+Visual Studio, projenizi yükseltme hakkında kalıcıdır. Projeyi her yüklediğinizde yükseltme iletişim kutusunun görünmemesi için, projelerinizde aşağıdaki özelliği veya içeri aktardıkları. props veya. targets dosyalarını tanımlayabilirsiniz:
 
 `<VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>`
 
-Projelerinizi yükseltmek istediğinizde bu özellik kaldırmanız gerekir.
+Projelerinizi yükseltmek istediğinizde bu özelliği kaldırmanız gerekir.
 
-Yükseltme seçerseniz Visual Studio çözüm veya proje dosyalarınıza değişiklik yapmaz. Projeyi oluşturduğunuzda oluşturulan ikili dosyaları Visual Studio'nun önceki sürümüyle oluşturulan fiyatlarla tam olarak uyumlu değildir. Visual Studio C++ derleyicinin aynısını kullanır ve eski IDE'nizi ile birlikte gelen aynı kitaplıkları bağlantılar olmasıdır. Ayrıca neden yükseltme iletişim kutusundan seçerseniz yüklü olan Visual Studio sürümün tutmak için sizi uyarır olan **iptal**.
+Yükseltmesiz ' ı seçerseniz, Visual Studio çözümünüzde veya proje dosyalarınızda değişiklik yapmaz. Projeyi derlediğinizde, oluşturulan ikililer, Visual Studio 'nun eski sürümüyle derleydiklerle tamamen uyumludur. Bunun nedeni, Visual Studio 'Nun aynı C++ derleyicisini kullanması ve eski IDE 'nizin sevk ettiği aynı kitaplıkları bağlalarıdır. Aynı zamanda, **iptal**' i seçerseniz yükseltme iletişim kutusunun, eski Visual Studio sürümünü yüklü tutmanız için sizi uyarır.
 
 ## <a name="instructions-for-visual-studio-2008"></a>Visual Studio 2008 için yönergeler
 
-Visual Studio 2008 adlı C++ için kendi özel yapı sistemine sahip **VCBuild**. Visual Studio 2010'da, Visual Studio Başlangıç C++ projeleri kullanılacak değiştirildi **MSBuild**. Başka bir deyişle, Visual Studio 2008 projelerinizi Visual Studio'nun en son sürümünü derlemek için bir güncelleştirme adım aracılığıyla gitmeniz gerekir. Güncelleştirilmiş projeniz Visual Studio 2008 IDE kullanılarak oluşturulan ikili dosyalarla tam olarak uyumlu ikili dosyaları yine de oluşturur.
+Visual Studio 2008, C++ **VCBuild**çağrısı için kendi adanmış derleme sistemine sahipti. Visual Studio 2010 ' den başlayarak, Visual C++ Studio projeleri **MSBuild**'i kullanacak şekilde değiştirilmiştir. Bu, kalıcı veya çoklu hedeflemenin yükseltilmesinden bağımsız olarak Visual Studio 2008 projelerinizi Visual Studio 'nun en son sürümünde derlemek için bir güncelleştirme adımından gitmeniz gerekir. Güncelleştirilmiş projeniz, Visual Studio 2008 IDE kullanılarak oluşturulan ikililer ile tamamen uyumlu ikili dosyalar oluşturuyor.
 
-İlk olarak, Visual Studio geçerli sürümüne ek olarak, Visual Studio 2008 ile aynı bilgisayarda Visual Studio 2010 yüklemelisiniz. Visual Studio 2010 yükler **MSBuild** hedef Visual Studio 2008 projeleri için gereken betikler.
+İlk olarak, Visual Studio 'nun geçerli sürümüne ek olarak Visual Studio 2010 ' i Visual Studio 2008 ile aynı bilgisayara yüklemeniz gerekir. Visual Studio 2008 projelerini hedeflemek için gereken **MSBuild** betikleri yalnızca visual Studio 2010 tarafından yüklenir.
 
-Ardından, Visual Studio 2008 çözümünüzü ve projelerinizi Visual Studio'nun geçerli sürüme güncelleştirmelisiniz. Proje ve çözüm dosyaları yükseltmeden önce bir yedeklemesini oluşturun öneririz. Yükseltme işlemini başlatmak için Visual Studio'nun geçerli sürümünde çözümü açın. Yükseltme istemi aldığınızda, bilgileri gözden geçirin ve ardından **Tamam** yükseltmeyi başlatmak için. Çözümde birden fazla projeniz varsa, güncelleştirmelisiniz sihirbaz yeni .vcxproj proje dosyaları yan yana mevcut .vcproj dosyaları oluşturur. Özgün .sln dosyasını bir kopyasını da sahip olduğu sürece, yükseltme, mevcut Visual Studio 2008 projeler üzerinde diğer herhangi bir etkisi yoktur.
+Ardından, Visual Studio 2008 çözümünüzü ve projelerinizi Visual Studio 'nun geçerli sürümüne güncelleştirmeniz gerekir. Yükseltmeden önce projelerinizin ve çözüm dosyalarınızın bir yedeğini oluşturmanızı öneririz. Yükseltme işlemini başlatmak için, çözümü Visual Studio 'nun geçerli sürümünde açın. Yükseltme istemi 'ni aldığınızda, sunulan bilgileri gözden geçirin ve ardından yükseltmeyi başlatmak için **Tamam** ' ı seçin. Çözümde birden çok projeniz varsa, sihirbazın mevcut. vcproj dosyalarıyla yan yana yeni. vcxproj proje dosyaları oluşturacağını güncelleştirmeniz gerekir. Özgün. sln dosyasının bir kopyasına de sahip olduğunuz sürece, yükseltmenin mevcut Visual Studio 2008 projeleriniz üzerinde başka bir etkisi yoktur.
 
-Yükseltme tamamlandığında günlük rapor tüm projeleriniz için hataları veya uyarıları içeriyorsa dikkatle gözden geçirin. Dönüştürme **VCBuild** için **MSBuild** sorunlara neden olabilir. Anlama ve raporu listelenen herhangi bir eylem öğeleri uygulamak emin olun. Yükseltme günlüğünü rapor ve dönüştürme sırasında meydana gelebilecek sorunları hakkında daha fazla bilgi için **VCBuild** için **MSBuild**, bkz. Bu [yerel C++ çoklu sürüm desteğinin](https://blogs.msdn.microsoft.com/vcblog/2009/12/08/c-native-multi-targeting/) blog gönderisi.
+> [!NOTE]
+> Aşağıdaki adımlar yalnızca çoklu hedefleme senaryoları için geçerlidir. Projeyi daha sonraki bir araç takımına kalıcı olarak yükseltmeyi düşünüyorsanız, bir sonraki adımınız projeyi kaydetmek, Visual Studio 2019 ' de açmak ve burada görünen derleme sorunlarını gidermek olacaktır.
 
-Proje yükseltme tamamlandıktan ve günlük dosyasında sorunları düzelttikten sonra çözümünüzün en son araç takımı gerçekten hedefler. Son adım olarak, Visual Studio 2008 araç kümesi kullanmak için çözümde her proje özelliklerini değiştirin. Visual Studio'nun geçerli sürümünde çözümde her proje için yüklenen çözümüyle projeyi açın **özellik sayfaları** iletişim kutusunda: Projeye sağ tıklayarak **Çözüm Gezgini** seçip **özellikleri**. İçinde **özellik sayfaları** iletişim kutusunda, değişiklik **yapılandırma** için aşağı açılan değer **yapılandırmalarında**. İçinde **yapılandırma özellikleri**seçin **genel**ve ardından değiştirmek **Platform araç takımını** için **Visual Studio 2008 (v90)**.
+Yükseltme tamamlandığında, günlük raporunda projelerinizden herhangi birinin hataları veya uyarıları varsa, bunları dikkatle gözden geçirin. **VCBuild** 'ten **MSBuild** 'e dönüştürme soruna neden olabilir. Raporda listelenen tüm eylem öğelerini anladığınızdan ve uyguladığınızdan emin olun. İşlem günlüğü raporu ve **VCBuild** **MSBuild**'e dönüştürülürken oluşabilecek sorunlar hakkında daha fazla bilgi için, bu [ C++ yerel Çoklu hedefleme](https://blogs.msdn.microsoft.com/vcblog/2009/12/08/c-native-multi-targeting/) blog gönderisine bakın.
 
-Bu değişiklikten sonra Visual Studio 2008 derleyici ve kitaplıkları, Visual Studio'nun geçerli sürümünde bir çözüm oluşturduğunuzda, proje ikililerini oluşturmak için kullanılır.
+Proje yükseltmesi tamamlandığında ve günlük dosyasında herhangi bir sorunu düzelttiğiniz zaman, çözümünüz gerçekten en son araç takımını hedefler. Son adım olarak, çözümdeki her projenin özelliklerini Visual Studio 2008 araç takımını kullanacak şekilde değiştirin. Visual Studio 'nun geçerli sürümünde yüklenen çözüm ile, çözümdeki her bir proje için, proje **Özellik sayfaları** iletişim kutusunu açın: **Çözüm Gezgini** ' de projeye sağ tıklayın ve ardından **Özellikler**' i seçin. **Özellik sayfaları** iletişim kutusunda, **yapılandırma** açılan değerini **tüm yapılandırmalar**' a değiştirin. **Yapılandırma özellikleri**' nde **genel**' i seçin ve ardından **Platform araç takımını** **Visual Studio 2008 (V90)** olarak değiştirin.
 
-## <a name="install-an-older-visual-studio-toolset"></a>Eski bir Visual Studio araç takımı'nı yükleme
+Bu değişiklikten sonra Visual Studio 2008 derleyicisi ve kitaplıkları, Visual Studio 'nun geçerli sürümünde çözüm oluşturduğunuzda proje ikili dosyaları oluşturmak için kullanılır.
 
-Eski bir Visual Studio olabilir C++ olamaz ya da yükseltmek istemediğiniz proje, ancak projenizi eşleşen platform araç takımı sürümünü değil. Bu durumda, araç takımı almak için ücretsiz Visual Studio Community'yi veya ihtiyacınız olan sürümü Express sürümü yükleyebilirsiniz. Visual Studio 2008'den Visual Studio'nun her sürümü, derleyici, araçları ve kitaplıklarını geçerli Visual Studio, sürümünü hedefleyecek şekilde ihtiyacınız yükleyebilmek için. Bul ve Visual Studio'nun belirli bir sürümü indirmek için Microsoft Download Center arayın. Kurulum sırasında C++ yükleme seçenekleri seçtiğinizden emin olun. Kurulum tamamlandıktan sonra tüm güncelleştirmeleri yüklemek için Visual Studio'nun bu sürümü çalıştırın. Ayrıca Windows Update değişiklikleri için gerekli olabilecek denetleyin. Bu güncelleştirme onay işlemi her güncelleştirmeyi almak için birden fazla kez yinelenen gerekebilir.
+## <a name="install-an-older-visual-studio-toolset"></a>Eski bir Visual Studio araç takımını yükler
 
-Şu anda kullanılabilir yüklemeler için bkz: [eski Visual Studio yazılımını indirme](https://visualstudio.microsoft.com/vs/older-downloads/).
+Projenize uygun olan platform araç kümesi sürümünü C++ değil, yükseltmek istemediğiniz veya yükseltmek istemediğiniz eski bir Visual Studio projenize sahip olabilirsiniz. Bu durumda, araç takımını almak için, ihtiyacınız olan sürümün ücretsiz Visual Studio Community veya Express sürümünü yükleyebilirsiniz. Visual Studio 2008 ' den Visual Studio 'nun her sürümü, bu sürümü geçerli Visual Studio 'dan hedeflemek için gereken derleyici, Araçlar ve kitaplıkları yükleyebilir. Visual Studio 'nun belirli bir sürümünü bulmak ve indirmek için Microsoft Indirme Merkezi ' nde arama yapın. Kurulum sırasında C++ yükleme seçeneklerini seçtiğinizden emin olun. Kurulum tamamlandıktan sonra, herhangi bir güncelleştirmeyi yüklemek için Visual Studio 'nun bu sürümünü çalıştırın. Ayrıca, gerekli olabilecek Windows Update değişikliklerini denetleyin. Tüm güncelleştirmeleri almak için bu güncelleştirme denetimi işleminin birden çok kez tekrarlanması gerekebilir.
 
-Bu ürünler yüklü olduğunda **Platform araç takımını** özellik açılan menü **özellik sayfaları** iletişim kutusu kullanılabilir takımları gösterecek şekilde otomatik olarak güncelleştirilir. Şimdi, dönüştürme veya yükseltilirken araç bu eski sürümler için projeleri derlemek için Visual Studio'nun en son sürümünü kullanabilirsiniz.
+Mevcut olan İndirilenler için bkz. [eski Visual Studio yazılımlarını indirme](https://visualstudio.microsoft.com/vs/older-downloads/).
+
+Bu ürünler yüklendiğinde, **Özellik sayfaları** Iletişim kutusundaki **platform araç takımı** özelliği açılan menüsü, kullanılabilir araç kümelerini gösterecek şekilde otomatik olarak güncelleştirilir. Artık Visual Studio 'nun en son sürümünü kullanarak araç takımının daha eski sürümleri için projeler oluşturabilirsiniz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Önceki Visual C++ Sürümü Projelerini Yükseltme](upgrading-projects-from-earlier-versions-of-visual-cpp.md)<br/>
+[Projeleri Visual 'ın önceki sürümlerinden yükseltmeC++](upgrading-projects-from-earlier-versions-of-visual-cpp.md)<br/>
 [Visual Studio’deki C++ uyumluluk geliştirmeleri](../overview/cpp-conformance-improvements.md)

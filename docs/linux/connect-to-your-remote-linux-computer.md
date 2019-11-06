@@ -3,12 +3,12 @@ title: Visual Studio 'da hedef Linux sisteminize bağlanma
 description: Visual Studio C++ projesinin içinden bir uzak Linux makinesine veya WSL 'ye bağlanma.
 ms.date: 09/04/2019
 ms.assetid: 5eeaa683-4e63-4c46-99ef-2d5f294040d4
-ms.openlocfilehash: 2f4e6311493f2b29ba6911ec1b76225b6c7abe6d
-ms.sourcegitcommit: b85e1db6b7d4919852ac6843a086ba311ae97d40
+ms.openlocfilehash: 3d91faa7aa83c86e8c2f3544ee61c16f75f8c346
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "71925566"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73626758"
 ---
 # <a name="connect-to-your-target-linux-system-in-visual-studio"></a>Visual Studio 'da hedef Linux sisteminize bağlanma
 
@@ -38,13 +38,13 @@ Bu uzak bağlantıyı kurmak için:
 
 1. Aşağıdaki bilgileri girin:
 
-   | Girdi | Açıklama
+   | Giriş | Açıklama
    | ----- | ---
    | **Ana bilgisayar adı**           | Hedef cihazınızın adı veya IP adresi
-   | **Bağlantı Noktası**                | SSH hizmetinin üzerinde çalıştığı bağlantı noktası, genellikle 22
+   | **Bağ**                | SSH hizmetinin üzerinde çalıştığı bağlantı noktası, genellikle 22
    | **Kullanıcı adı**           | Kimlik doğrulaması yapılacak Kullanıcı
    | **Kimlik doğrulama türü** | Parola veya özel anahtar desteklenir
-   | **Parola**            | Girilen Kullanıcı adı için parola
+   | **Parolayı**            | Girilen Kullanıcı adı için parola
    | **Özel anahtar dosyası**    | SSH bağlantısı için özel anahtar dosyası oluşturuldu
    | **Deyimi**          | Yukarıda seçilen özel anahtarla kullanılan parola
 
@@ -52,7 +52,7 @@ Bu uzak bağlantıyı kurmak için:
    
    Aşağıdaki adımları izleyerek özel bir RSA anahtar dosyası oluşturabilirsiniz:
 
-    1. Windows makinesinde, `ssh-keygen -t rsa` ile SSH anahtar çiftini oluşturun. Bu, bir ortak anahtar ve özel anahtar oluşturur. Varsayılan olarak anahtarlar, `id_rsa.pub` ve `id_rsa` adlarıyla `C:\Users\%USERNAME%\.ssh` altına yerleştirilir.
+    1. Windows makinesinde, `ssh-keygen -t rsa`ile SSH anahtar çiftini oluşturun. Bu, bir ortak anahtar ve özel anahtar oluşturur. Varsayılan olarak anahtarlar `id_rsa.pub` ve `id_rsa`adlarıyla `C:\Users\%USERNAME%\.ssh` yerleştirilir.
 
     1. Windows 'tan ortak anahtarı Linux makinesine kopyalayın: `scp -p C:\Users\%USERNAME%\.ssh\id_rsa.pub user@hostname`.
 
@@ -79,6 +79,20 @@ Bu uzak bağlantıyı kurmak için:
    Günlükler arasında bağlantılar, uzak makineye gönderilen tüm komutlar (bunların metin, çıkış kodu ve yürütme süresi) ve Visual Studio 'dan kabuğa giden tüm çıktılar bulunur. Günlüğe kaydetme, Visual Studio 'daki platformlar arası CMake projesi veya MSBuild tabanlı Linux projesi için geçerlidir.
 
    Çıktıyı bir dosyaya veya Çıkış Penceresi **çapraz platform günlüğü** bölmesine gidecek şekilde yapılandırabilirsiniz. MSBuild tabanlı Linux projeleri için, MSBuild tarafından uzak makineye verilen komutlar, işlem dışı yayıldıklarından **Çıkış penceresi** yönlendirmemektedir. Bunun yerine, "msbuild_" ön ekine sahip bir dosyaya kaydedilir.
+   
+## <a name="tcp-port-forwarding"></a>TCP bağlantı noktası Iletme
+
+Visual Studio 'nun Linux desteğinin TCP bağlantı noktası iletme bağımlılığı vardır. Uzak sisteminizde TCP bağlantı noktası iletme devre dışıysa, **rsync** ve **gdbserver** etkilenecek. 
+
+Rsync, hem MSBuild tabanlı Linux projeleri hem de CMake projeleri tarafından, [uzak sisteminizdeki üst bilgileri IntelliSense için kullanılmak üzere Windows 'a kopyalamak](configure-a-linux-project.md#remote_intellisense)için kullanılır. TCP bağlantı noktası iletmeyi etkinleştiremeyebilirsiniz, uzak üst bilgilerin Araçlar > Seçenekler aracılığıyla > platformlar arası > Bağlantı Yöneticisi > uzak üstbilgiler IntelliSense Yöneticisi aracılığıyla otomatik indirmesini devre dışı bırakabilirsiniz. Bağlanmaya çalıştığınız uzak sistemde TCP bağlantı noktası iletme özelliği etkin değilse, IntelliSense için uzak üst bilgilerin indirilmesi başladığında aşağıdaki hatayı görürsünüz.
+
+![Üst bilgiler hatası](media/port-forwarding-headers-error.png)
+
+Rsync, kaynak dosyaları uzak sisteme kopyalamak için Visual Studio 'nun CMake desteği tarafından da kullanılır. TCP bağlantı noktası iletmeyi etkinleştiremeyebilirsiniz, uzak kopya kaynakları yönteminiz olarak SFTP kullanabilirsiniz. SFTP genellikle rsync 'ten daha yavaştır ancak TCP bağlantı noktası iletme bağımlılığı yoktur. Uzak kopya kaynakları yönteminizi [CMake ayarları düzenleyicisinde](../build/cmakesettings-reference.md#additional-settings-for-cmake-linux-projects)remoteCopySourcesMethod özelliği ile yönetebilirsiniz. Uzak sisteminizde TCP bağlantı noktası iletme devre dışıysa, ilk kez rsync çağrıldığında CMake çıkış penceresinde bir hata görürsünüz.
+
+![Rsync hatası](media/port-forwarding-copy-error.png)
+
+Gdbserver, katıştırılmış cihazlarda hata ayıklama için kullanılabilir. TCP bağlantı noktası iletmeyi etkinleştiremeyebilirsiniz, tüm uzaktan hata ayıklama senaryolarında gdb 'yi kullanmanız gerekir. Uzak sistemdeki projelerde hata ayıklanırken, gdb varsayılan olarak kullanılır. 
 
    ::: moniker-end
 

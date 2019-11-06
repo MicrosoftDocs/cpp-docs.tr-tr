@@ -1,13 +1,13 @@
 ---
 title: 'Taşıma Kılavuzu: Spy++'
-ms.date: 11/19/2018
+ms.date: 10/23/2019
 ms.assetid: e558f759-3017-48a7-95a9-b5b779d5e51d
-ms.openlocfilehash: 175f3fbba7e18f625dc3425c236162737689f068
-ms.sourcegitcommit: 9d4ffb8e6e0d70520a1e1a77805785878d445b8a
+ms.openlocfilehash: 5505e0dbf23dd02f4ae5924ff4f2bacff3f11eea
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69630455"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73627228"
 ---
 # <a name="porting-guide-spy"></a>Taşıma Kılavuzu: Spy++
 
@@ -15,7 +15,7 @@ Bu taşıma olay incelemesi, tipik bir taşıma projesinin ne olduğu, karşıla
 
 ## <a name="spy"></a>Spy++
 
-Spy + +, Windows Masaüstü için Kullanıcı arabirimi öğeleriyle ilgili her türlü bilgiyi sağlayan, yaygın olarak kullanılan bir GUI tanılama aracıdır. Windows 'un tüm hiyerarşisini gösterir ve her pencere ve denetimle ilgili meta verilere erişim sağlar. Bu faydalı uygulama birçok yıl boyunca Visual Studio ile birlikte gönderilmiştir. Visual C++ 6,0 ' de en son derlenen ve visual Studio 2015 ' e geçen eski bir sürümü bulduk. Visual Studio 2017 deneyimi neredeyse aynı olmalıdır.
+Spy + +, Windows Masaüstü için Kullanıcı arabirimi öğeleriyle ilgili her türlü bilgiyi sağlayan, yaygın olarak kullanılan bir GUI tanılama aracıdır. Windows 'un tüm hiyerarşisini gösterir ve her pencere ve denetimle ilgili meta verilere erişim sağlar. Bu faydalı uygulama birçok yıl boyunca Visual Studio ile birlikte gönderilmiştir. Visual C++ 6,0 ' de en son derlenen ve visual Studio 2015 ' e geçen eski bir sürümü bulduk. Visual Studio 2017 veya Visual Studio 2019 deneyimi neredeyse aynı olmalıdır.
 
 Bu durum, özellikle Visual C++ C++ 6,0 ' den bu yana Visual 'in her sürümüyle GÜNCELLEŞTIRILMEMIŞ eski projeler için MFC ve Win32 API kullanan Windows masaüstü uygulamalarını taşıma için tipik olarak kabul ettik.
 
@@ -25,7 +25,7 @@ Visual C++ 6,0 ' deki iki eski. DSW dosyası olan proje dosyası, daha fazla dik
 
 İki proje yükseltildikten sonra çözümümüzü şöyle inceledik:
 
-![Spy&#43; &#43; ](../porting/media/spyxxsolution.PNG "&#43; &#43; ")
+![Spy&#43; &#43; çözümü](../porting/media/spyxxsolution.PNG "Spy&#43; &#43; çözümü")
 
 Biri çok sayıda C++ dosya Içeren ve C dilinde yazılmış başka bir dll olmak üzere iki projeniz vardır.
 
@@ -39,11 +39,11 @@ Spy + + ' da bulunamayan dosyalardan biri verstamp. h idi. Bir Internet aramadan
 1>C:\Program Files (x86)\Windows Kits\8.1\Include\shared\common.ver(212): error RC2104: undefined keyword or key name: VER_FILEFLAGSMASK
 ```
 
-Kullanılabilir içerme dosyaları içinde bir sembol bulmanın en kolay yolu, **dosyalarda bul** (**CTRL**+**SHIFT**+**F**) öğesini kullanmak ve **görsel C++ ekleme dizinlerini**belirtmektir. Bunu ntverp. h içinde bulduk. Verdamgamız. h dahil olmak üzere ntverp. h ile değiştirilmiştir ve bu hata kayboldu.
+Kullanılabilir içerme dosyalarında bir sembol bulmanın en kolay yolu, **dosyalarda bul** (**Ctrl**+**SHIFT**+**F**) öğesini kullanmak ve **görsel C++ ekleme dizinlerini**belirtmektir. Bunu ntverp. h içinde bulduk. Verdamgamız. h dahil olmak üzere ntverp. h ile değiştirilmiştir ve bu hata kayboldu.
 
 ##  <a name="linker_output_settings"></a>3. adım. Bağlayıcı ÇıktıDosyası ayarı
 
-Daha eski projeler bazen, yükseltmeden sonra sorunlara neden olabilecek geleneksel konumlara yerleştirilmiş dosyalardır. Bu durumda, Visual Studio 'nun proje klasörlerinden `$(SolutionDir)` birine değil , orada yer alan bazı üst bilgi dosyalarını bulabileceğinden emin olmak için proje özelliklerine ekleme yoluna eklememiz gerekir.
+Daha eski projeler bazen, yükseltmeden sonra sorunlara neden olabilecek geleneksel konumlara yerleştirilmiş dosyalardır. Bu durumda, Visual Studio 'Nun proje klasörlerinden birine değil, orada yer alan bazı üst bilgi dosyalarını bulabileceğinden emin olmak için proje özelliklerinde **ekleme** yoluna `$(SolutionDir)` eklememiz gerekir.
 
 MSBuild şikayetleri **Link. ÇıktıDosyası** ÖZELLIĞININ, MSB8012 veren **targetPath** ve **TargetName** değerleriyle eşleşmez.
 
@@ -51,9 +51,9 @@ MSBuild şikayetleri **Link. ÇıktıDosyası** ÖZELLIĞININ, MSB8012 veren **t
 warning MSB8012: TargetPath(...\spyxx\spyxxhk\.\..\Debug\SpyxxHk.dll) does not match the Linker's OutputFile property value (...\spyxx\Debug\SpyHk55.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).warning MSB8012: TargetName(SpyxxHk) does not match the Linker's OutputFile property value (SpyHk55). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
 ```
 
-**LINK. çıkışdosyası** , derleme çıktıdır (örneğin, exe, dll) ve normalde ' den `$(TargetDir)$(TargetName)$(TargetExt)`oluşturulur ve yol, dosya adı ve uzantı verir. Bu, eski görsel C++ derleme aracından (VCBuild. exe) projeleri yeni derleme aracına (MSBuild. exe) geçirirken yaygın bir hatadır. Visual Studio 2010 ' de derleme aracı değişikliği gerçekleştiği için, önce 2010 bir projeyi 2010 veya sonraki bir sürüme geçirdiğinizde bu sorunla karşılaşabilirsiniz. Temel sorun, projenin diğer proje ayarlarına dayanmasından ne olduğunu belirlemek için her zaman mümkün olmadığından, proje Geçiş Sihirbazı 'nın **LINK. çıkışdosyası** değerini güncelleştirmemesinden bağımsız olur. Bu nedenle, genellikle el ile ayarlamanız gerekir. Daha fazla ayrıntı için, Visual [](https://devblogs.microsoft.com/cppblog/visual-studio-2010-c-project-upgrade-guide/) C++ blogda bu gönderisine bakın.
+**LINK. çıkışdosyası** , derleme çıktıdır (ÖRNEĞIN, exe, dll) ve normalde `$(TargetDir)$(TargetName)$(TargetExt)`tarafından oluşturulur ve bu yol, dosya adı ve uzantı sağlar. Bu, eski görsel C++ derleme aracından (VCBuild. exe) projeleri yeni derleme aracına (MSBuild. exe) geçirirken yaygın bir hatadır. Visual Studio 2010 ' de derleme aracı değişikliği gerçekleştiği için, önce 2010 bir projeyi 2010 veya sonraki bir sürüme geçirdiğinizde bu sorunla karşılaşabilirsiniz. Temel sorun, projenin diğer proje ayarlarına dayanmasından ne olduğunu belirlemek için her zaman mümkün olmadığından, proje Geçiş Sihirbazı 'nın **LINK. çıkışdosyası** değerini güncelleştirmemesinden bağımsız olur. Bu nedenle, genellikle el ile ayarlamanız gerekir. Daha fazla ayrıntı için, Visual C++ blogda bu [gönderisine](https://devblogs.microsoft.com/cppblog/visual-studio-2010-c-project-upgrade-guide/) bakın.
 
-Bu durumda, yapılandırmaya bağlı olarak, dönüştürülen projedeki **Link. ÇıktıDosyası** özelliği Spy + + projesi için .\Debug\Spyxx.exe ve .\Release\Spyxx.exe olarak ayarlanmıştır. En iyi sonuç, yalnızca bu sabit kodlanmış değerleri `$(TargetDir)$(TargetName)$(TargetExt)` **Tüm yapılandırmalarda**değiştirmek içindir. Bu işe yaramazsa, bu değerlerin ayarlandığı **genel** bölümdeki Özellikler ' i buradan özelleştirebilir veya ( **çıkış dizini**, **hedef adı**ve **hedef uzantısı**) özellikleri değiştirebilirsiniz. Görüntülemekte olduğunuz özellik makrolar kullanıyorsa, açılan listede **Düzenle** ' yi seçerek, makro değişimlerin yaptığı son dizeyi gösteren bir iletişim kutusu açabilirsiniz. **Makrolar** düğmesini seçerek kullanılabilir tüm makroları ve bunların geçerli değerlerini görüntüleyebilirsiniz.
+Bu durumda, yapılandırmaya bağlı olarak, dönüştürülen projedeki **Link. ÇıktıDosyası** özelliği Spy + + projesi için .\Debug\Spyxx.exe ve .\Release\Spyxx.exe olarak ayarlanmıştır. En iyi sonuç, bu sabit kodlanmış değerleri **Tüm yapılandırmalarda**`$(TargetDir)$(TargetName)$(TargetExt)` değiştirmek olacaktır. Bu işe yaramazsa, bu değerlerin ayarlandığı **genel** bölümdeki Özellikler ' i buradan özelleştirebilir veya ( **çıkış dizini**, **hedef adı**ve **hedef uzantısı**) özellikleri değiştirebilirsiniz. Görüntülemekte olduğunuz özellik makrolar kullanıyorsa, açılan listede **Düzenle** ' yi seçerek, makro değişimlerin yaptığı son dizeyi gösteren bir iletişim kutusu açabilirsiniz. **Makrolar** düğmesini seçerek kullanılabilir tüm makroları ve bunların geçerli değerlerini görüntüleyebilirsiniz.
 
 ##  <a name="updating_winver"></a>4. adım. Hedef Windows sürümü güncelleştiriliyor
 
@@ -89,7 +89,7 @@ Bu değişikliklerle, SpyHk (DLL) projesi oluşturulur ancak bir bağlayıcı ha
 LINK : warning LNK4216: Exported entry point _DLLEntryPoint@12
 ```
 
-DLL için giriş noktası aktarılmamalıdır. Giriş noktası yalnızca, DLL ilk olarak belleğe yüklendiğinde yükleyici tarafından çağrılmalıdır. bu nedenle, diğer çağıranlar için olan dışarı aktarma tablosunda olmaması gerekir. Kendisine bağlı **__declspec (dllexport)** yönergesini içermediğinden emin olmak istiyoruz. Spyxxhk. c ' de, bunu iki konumdan, bildirimini ve tanımına `DLLEntryPoint`kaldırdık. Bu yönergeyi kullanmanın hiçbir anlamı yoktur, ancak bağlayıcı ve derleyicinin önceki sürümleri sorun olarak bayrak almadı. Bağlayıcının daha yeni sürümleri bir uyarı verir.
+DLL için giriş noktası aktarılmamalıdır. Giriş noktası yalnızca, DLL ilk olarak belleğe yüklendiğinde yükleyici tarafından çağrılmalıdır. bu nedenle, diğer çağıranlar için olan dışarı aktarma tablosunda olmaması gerekir. Kendisine bağlı **__declspec (dllexport)** yönergesini içermediğinden emin olmak istiyoruz. Spyxxhk. c ' de, bunu iki yerden, `DLLEntryPoint`bildirimi ve tanımını kaldırdık. Bu yönergeyi kullanmanın hiçbir anlamı yoktur, ancak bağlayıcı ve derleyicinin önceki sürümleri sorun olarak bayrak almadı. Bağlayıcının daha yeni sürümleri bir uyarı verir.
 
 ```cpp
 // deleted __declspec(dllexport)
@@ -102,9 +102,9 @@ C DLL projesi, SpyHK. dll, artık hata olmadan derleme ve bağlantı.
 
 Bu noktada, spyxx ana yürütülebilir projesi üzerinde çalışmaya başladık.
 
-Diğer birkaç içerme dosyası bulunamadı: ctl3d. h ve penwin. h. Üstbilginin ne olduğunu belirlemeyi denemek için Internet 'te arama yapmak faydalı olabilir, bazen bilgiler yararlı değildir. Bu ctl3d. h 'nin Exchange geliştirme seti 'nin bir parçası olduğunu ve Windows 95 ' de belirli bir denetim stili olduğunu ve penwin. h ' nin, eski bir API ile pencere kalemi Bilgi Işlem ile ilişkili olduğunu bulduk. Bu durumda, yalnızca `#include` satırı açıklamamız ve verkadamgası. h ile yaptığımız tanımsız simgelerle uğraştık. 3B denetimlerle veya kalem Bilgi Işlem ile ilgili her şey projeden kaldırılmıştır.
+Diğer birkaç içerme dosyası bulunamadı: ctl3d. h ve penwin. h. Üstbilginin ne olduğunu belirlemeyi denemek için Internet 'te arama yapmak faydalı olabilir, bazen bilgiler yararlı değildir. Bu ctl3d. h 'nin Exchange geliştirme seti 'nin bir parçası olduğunu ve Windows 95 ' de belirli bir denetim stili olduğunu ve penwin. h ' nin, eski bir API ile pencere kalemi Bilgi Işlem ile ilişkili olduğunu bulduk. Bu durumda, `#include` satırını açıklamamız ve verkadamgası. h ile yaptığımız tanımsız simgelerle uğraştık. 3B denetimlerle veya kalem Bilgi Işlem ile ilgili her şey projeden kaldırılmıştır.
 
-Kademeli olarak ortadan kaldırdığınız çok sayıda derleme hatası olan bir proje verildiğinde, `#include` yönergeyi kaldırdığınızda güncel olmayan bir API 'nin tüm kullanımlarını bulmak gerçekçi değildir. Bu işlemi hemen algılamadık, ancak daha sonraki bir noktada WM_DLGBORDER 'in tanımsız olduğunu belirten bir hata geldi. Bu, ctl3d. h ' den gelen tanımsız simgelerden yalnızca biridir. Süresi geçmiş bir API ile ilgili olduğunu belirledikten sonra, koddaki tüm başvuruları kaldırdık.
+Aşamalı olarak ortadan kaldırdığınız çok sayıda derleme hatası olan bir proje verildiğinde, `#include` yönergesini kaldırdığınızda güncel olmayan bir API 'nin tüm kullanımlarını bulmak gerçekçi değildir. Bu işlemi hemen algılamadık, ancak daha sonraki bir noktada WM_DLGBORDER 'in tanımsız olduğunu belirten bir hata geldi. Bu, ctl3d. h ' den gelen tanımsız simgelerden yalnızca biridir. Süresi geçmiş bir API ile ilgili olduğunu belirledikten sonra, koddaki tüm başvuruları kaldırdık.
 
 ##  <a name="updating_iostreams_code"></a>7. adım. Eski Iostreams kodu güncelleştiriliyor
 
@@ -130,15 +130,15 @@ Bunlar şu şekilde bulunur:
 #include <iomanip>
 ```
 
-Bu değişiklik ile, artık kullanılmayan sorunlarla `ostrstream`karşılaştık. Uygun değişiklik ostringstream 'dir. Kodu, en az bir başlangıç `ostrstream` olarak çok fazla değiştirmeyi önlemek için için bir typedef eklemeyi denedik.
+Bu değişiklik ile artık kullanılmayan `ostrstream`sorunlarla karşılaştık. Uygun değişiklik ostringstream 'dir. Kodu çok büyük, en azından bir başlangıç olarak değiştirmeyi önlemek için `ostrstream` için bir **typedef** eklemeyi denedik.
 
 ```cpp
 typedef std::basic_ostringstream<TCHAR> ostrstream;
 ```
 
-Şu anda proje MBCS (çok baytlık karakter kümesi) kullanılarak oluşturulmuştur, bu nedenle **char** uygun karakter veri türüdür. Ancak, kodu UTF-16 Unicode 'a daha kolay bir şekilde güncelleştirmeye izin vermek için, bunu olarak `TCHAR`, proje ayarlarındaki **karakter kümesi** özelliğinin MBCS veya Unicode olarak ayarlanmış olmasına bağlı olarak **char** veya **wchar_t** olarak çözümlenen şekilde güncelleştiririz.
+Şu anda proje MBCS (çok baytlık karakter kümesi) kullanılarak oluşturulmuştur, bu nedenle **char** uygun karakter veri türüdür. Ancak, kodu UTF-16 Unicode 'a daha kolay bir şekilde güncelleştirmeye izin vermek için bunu, proje ayarlarındaki **karakter kümesi** özelliğinin MBCS veya Unicode olarak ayarlanmış olmasına bağlı olarak **char** veya **wchar_t** olarak çözümlenen `TCHAR`güncelleştiririz.
 
-Birkaç başka kod parçasının güncellenmesi gerekiyor.  Temel sınıfı `ios` ile `ios_base`değiştirdik ve ostream, basic_ostream\<T > olarak değiştirildik. İki ek Typedefs ekleyeceğiz ve bu bölüm derlenir.
+Birkaç başka kod parçasının güncellenmesi gerekiyor.  Temel sınıf `ios` `ios_base`ile değiştirdik ve ostream, basic_ostream\<T > olarak değiştirildik. İki ek Typedefs ekleyeceğiz ve bu bölüm derlenir.
 
 ```cpp
 typedef std::basic_ostream<TCHAR> ostream;
@@ -153,13 +153,13 @@ Bu tür tanımları 'ın kullanılması yalnızca geçici bir çözümdür. Daha
 error C2039: 'freeze': is not a member of 'std::basic_stringbuf<char,std::char_traits<char>,std::allocator<char>>'
 ```
 
-Sonraki sorun bir `freeze` yöntemine sahip `basic_stringbuf` değildir. Yöntemi, eski `ostream`bir bellek sızıntısını engellemek için kullanılır. `freeze` Artık yeni `ostringstream`bir kullandığımıza gerek kalmaz. Çağrısını silebiliriz `freeze`.
+Bir sonraki sorun `basic_stringbuf` `freeze` yöntemine sahip değildir. `freeze` yöntemi, eski `ostream`bellek sızıntısına engel olmak için kullanılır. Artık yeni `ostringstream`kullandığımıza gerek kalmaz. `freeze`çağrısı silinebilir.
 
 ```cpp
 //rdbuf()->freeze(0);
 ```
 
-Bitişik satırlarda sonraki iki hata oluştu. Bir dizeye null Sonlandırıcı ekleyen eski `ends` `iostream` kitaplığın GÇ işleyicisi olan, kullanımı yaklaşık ilk şikayet. Bu hataların saniyesi, `str` yöntemin çıktısının const olmayan bir işaretçiye atanamayacak olduğunu açıklar.
+Bitişik satırlarda sonraki iki hata oluştu. Bir dizeye null Sonlandırıcı ekleyen eski `iostream` kitaplığının GÇ işleyicisi olan `ends`kullanmaya yönelik ilk şikayet. Bu hataların saniyesi `str` yönteminin çıkışının const olmayan bir işaretçiye atanmadığı açıklanmaktadır.
 
 ```cpp
 // Null terminate the string in the buffer and
@@ -173,7 +173,7 @@ LPSTR psz = str();
 2>mstream.cpp(167): error C2065: 'ends': undeclared identifier2>mstream.cpp(168): error C2440: 'initializing': cannot convert from 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' to 'LPSTR'
 ```
 
-Yeni akış kitaplığını kullanarak, `ends` dize her zaman null sonlandırılmış olduğundan, bu satır kaldırılabileceği için gerekli değildir. İkinci sorun için, sorun artık `str()` dize için karakter dizisine bir işaretçi döndürmemelidir; `std::string` türü döndürür. İkinci çözüm, türü olarak `LPCSTR` değiştirmek ve işaretçi istemek için `c_str()` metodunu kullanmaktır.
+Yeni akış kitaplığını kullanarak, dizenin her zaman null sonlandırıldığı için `ends`, bu satır kaldırılabileceği için gerekli değildir. İkinci sorun için, sorun artık `str()` bir dizenin karakter dizisine bir işaretçi döndürmemelidir; `std::string` türünü döndürür. İkinci çözüm, türü `LPCSTR` olarak değiştirmek ve işaretçiyi istemek için `c_str()` metodunu kullanmaktır.
 
 ```cpp
 //*this << ends;
@@ -187,7 +187,7 @@ MOUT << _T(" chUser:'") << chUser
 << _T("' (") << (INT)(UCHAR)chUser << _T(')');
 ```
 
-MOUT makrosu, türünde `*g_pmout` `mstream`bir nesne olan olarak çözümlenir. `mstream` Sınıfı ,`std::basic_ostream<TCHAR>`standart çıkış dizesi sınıfından türetilir. Ancak, Unicode 'a dönüştürmeye hazırlanmaya koyduğumuz dize sabit değerinin etrafında, **< <** için aşırı yükleme çözümlemesi aşağıdaki hata iletisiyle başarısız olur: \_
+MOUT makrosu, `mstream`türünde bir nesne olan `*g_pmout` çözümleniyor. `mstream` sınıfı, `std::basic_ostream<TCHAR>`standart çıkış dizesi sınıfından türetilir. Ancak, Unicode 'a dönüştürmeye hazırlanmaya koyduğumuz dize sabit değeri etrafında \_T ile **< < işleç** için aşırı yükleme çözümlemesi aşağıdaki hata iletisiyle başarısız olur:
 
 ```Output
 1>winmsgs.cpp(4612): error C2666: 'mstream::operator <<': 2 overloads have similar conversions
@@ -250,7 +250,7 @@ mstream& operator<<(LPTSTR psz)
 }
 ```
 
-Çağrılmasının nedeni, bu uzun hata iletisinin son satırından görebileceğiniz gibi dize `const wchar_t[10]` sabit değerinin türü olduğundan, const olmayan bir işaretçiye dönüştürme işlemi otomatik değildir. Ancak, bu operatör giriş parametresini değiştirmemelidir, bu nedenle daha uygun parametre türü `LPCTSTR` (`const char*` MBCS olarak derlerken ve `const wchar_t*` Unicode olarak derlenirken), değil `LPTSTR` (`char*` MBCS olarak derlerken ve `wchar_t*` Unicode olarak). Bu değişikliğin yapılması bu hatayı düzeltir.
+Çağrılmadığı neden, bu uzun hata iletisinin son satırından görebileceğiniz gibi `const wchar_t[10]` dize değişmez değeri, bu nedenle const olmayan bir işaretçiye dönüştürme otomatik değildir. Ancak, bu operatör giriş parametresini değiştirmemelidir. bu nedenle, daha uygun parametre türü `LPCTSTR` (MBCS olarak derlerken`const char*` ve Unicode olarak `const wchar_t*`), `LPTSTR` değil (MBCS olarak derlerken`char*` ve `wchar_t*` Unicode olarak derlenirken). Bu değişikliğin yapılması bu hatayı düzeltir.
 
 Bu tür dönüştürmeye daha eski, daha az sıkı derleyici altında izin verilir, ancak daha son uygunluk değişiklikleri daha doğru kod gerektirir.
 
@@ -271,7 +271,7 @@ ON_WM_NCHITTEST() // Error occurs on this line.
 END_MESSAGE_MAP()
 ```
 
-Bu makronun tanımına giderek, işlevine `OnNcHitTest`başvurmuş olduğunu görüyoruz.
+Bu makronun tanımına giderek `OnNcHitTest`işlevine başvurduğumuz görüyoruz.
 
 ```cpp
 #define ON_WM_NCHITTEST() \
@@ -280,7 +280,7 @@ Bu makronun tanımına giderek, işlevine `OnNcHitTest`başvurmuş olduğunu gö
 (static_cast< LRESULT (AFX_MSG_CALL CWnd::*)(CPoint) > (&ThisClass :: OnNcHitTest)) },
 ```
 
-Bu sorun, üye işlev türlerine yönelik işaretçiyle uyuşmuyor. Sorun, geçerli bir türetilmiş- `CHotLinkCtrl` temel dönüşüm olduğundan, bu `CWnd` , sınıf türü olarak öğesine bir sınıf türü olarak dönüştürme değildir. Bu sorun, dönüş türüdür: UINT ile LRESULT. LRESULT, hedef ikili türüne bağlı olarak 64 bitlik bir işaretçi veya 32 bit işaretçi olan LONG_PTR 'e çözümlendiğinden, UINT bu türe dönüştürmez. Bu, bir çok ileti eşleme yönteminin dönüş türü, Visual Studio 2005 ' de 64-bit uyumluluk değişikliklerinin bir parçası olarak değiştiğinden, bu nedenle 2005 ' dan önce yazılan kodu yükseltirken sık görülen bir durumdur. Aşağıdaki koddaki UINT olan dönüş türünü LRESULT olarak değiştirdik:
+Bu sorun, üye işlev türlerine yönelik işaretçiyle uyuşmuyor. Sorun, geçerli bir türetilmiş-temel dönüştürme olduğundan, sınıf türü olarak `CWnd` `CHotLinkCtrl` bir sınıf türü olarak bir dönüştürme değildir. Sorun, dönüş türü: UINT vs. LRESULT. LRESULT, hedef ikili türüne bağlı olarak 64 bitlik bir işaretçi veya 32 bit işaretçi olan LONG_PTR 'e çözümlendiğinden, UINT bu türe dönüştürmez. Bu, bir çok ileti eşleme yönteminin dönüş türü, Visual Studio 2005 ' de 64-bit uyumluluk değişikliklerinin bir parçası olarak değiştiğinden, bu nedenle 2005 ' dan önce yazılan kodu yükseltirken sık görülen bir durumdur. Aşağıdaki koddaki UINT olan dönüş türünü LRESULT olarak değiştirdik:
 
 ```cpp
 afx_msg UINT OnNcHitTest(CPoint point);
@@ -292,7 +292,7 @@ Değişiklikten sonra aşağıdaki kodu sunuyoruz:
 afx_msg LRESULT OnNcHitTest(CPoint point);
 ```
 
-Bu işlevin, CWnd 'den türetilmiş farklı sınıflarda on kez yinelendiği hakkında daha fazla oluşum olduğundan, **Tanıma Git** (klavye: **F12**) ve **bildirimine git** (klavye:CTRL+**F12**) imleci, simgeleri bulmak ve **sembol bul** araç penceresinde bunlara gitmek üzere düzenleyicideki işlevinizde olduğunda. **Tanıma Git** genellikle ikiden fazla yararlı olur. **Bildirimine git** , friend sınıfı bildirimleri veya iletme başvuruları gibi tanımlayıcı sınıf bildirimi dışındaki bildirimleri bulur.
+Bu işlevin, CWnd 'den türetilmiş farklı sınıflarda on kez yinelendiği hakkında daha fazla oluşum olduğundan, bu, **Tanım Için go** (klavye: **F12**) ve **bildirim sayfasına git** (klavye: **CTRL**+**F12**) imleç, simgeleri bulmak ve **sembol bul** araç penceresinde bunlara gitmek için düzenleyicide işlevidir. **Tanıma Git** genellikle ikiden fazla yararlı olur. **Bildirimine git** , friend sınıfı bildirimleri veya iletme başvuruları gibi tanımlayıcı sınıf bildirimi dışındaki bildirimleri bulur.
 
 ##  <a name="mfc_changes"></a>9. adım. MFC değişiklikleri
 
@@ -302,7 +302,7 @@ Sonraki hata ayrıca değiştirilmiş bir bildirim türüyle ilgilidir ve aynı 
 error C2440: 'static_cast': cannot convert from 'void (__thiscall CFindWindowDlg::* )(BOOL,HTASK)' to 'void (__thiscall CWnd::* )(BOOL,DWORD)'
 ```
 
-Sorun, ikinci parametresi `CWnd::OnActivateApp` HTASK 'dan DWORD 'e değiştirilvidir. Bu değişiklik, Visual Studio 'nun 2002 sürümünde (Visual Studio .NET) oluştu.
+Sorun, `CWnd::OnActivateApp` ikinci parametresi HTASK 'dan DWORD 'e değiştirilvidir. Bu değişiklik, Visual Studio 'nun 2002 sürümünde (Visual Studio .NET) oluştu.
 
 ```cpp
 afx_msg void OnActivateApp(BOOL bActive, HTASK hTask);
@@ -318,9 +318,9 @@ Bu noktada, projeyi derleyebiliriz. Bununla birlikte çalışmak için birkaç u
 
 ##  <a name="compiler_warnings"></a>10. adım. Derleyici uyarılarını adresleme
 
-Uyarıların tam listesini almak için, yalnızca geçerli derlemeden uyarı raporları aldığınızdan, yalnızca derlenmiş olan her şeyin yeniden derlendiğinden emin olmak için, normal derleme yerine çözüm üzerinde **tümünü yeniden derle** yapmanız gerekir. Diğer soru, geçerli Uyarı düzeyinin kabul edilip edilmeyeceğini veya daha yüksek bir uyarı düzeyi kullanılmasını sağlar.  Büyük bir kod taşıma sırasında, özellikle eski kod, daha yüksek bir uyarı düzeyi kullanılarak uygun olabilir.  Ayrıca, varsayılan uyarı düzeyiyle başlamak ve tüm uyarıları almak için uyarı düzeyini artırmak isteyebilirsiniz. Kullanıyorsanız, sistem üstbilgi dosyalarında bazı uyarılar alırsınız, bu sayede birçok kişi, sistem üstbilgileri için uyarı almadan kendi kodlarında en fazla uyarıyı almak için kullanılır `/W4`. `/Wall` Uyarıların hata olarak gösterilmesini istiyorsanız, `/WX` seçeneğini ekleyin. Bu ayarlar, **Proje özellikleri** iletişim kutusunun **C/C++**  bölümünde bulunur.
+Uyarıların tam listesini almak için, yalnızca geçerli derlemeden uyarı raporları aldığınızdan, yalnızca derlenmiş olan her şeyin yeniden derlendiğinden emin olmak için, normal derleme yerine çözüm üzerinde **tümünü yeniden derle** yapmanız gerekir. Diğer soru, geçerli Uyarı düzeyinin kabul edilip edilmeyeceğini veya daha yüksek bir uyarı düzeyi kullanılmasını sağlar.  Büyük bir kod taşıma sırasında, özellikle eski kod, daha yüksek bir uyarı düzeyi kullanılarak uygun olabilir.  Ayrıca, varsayılan uyarı düzeyiyle başlamak ve tüm uyarıları almak için uyarı düzeyini artırmak isteyebilirsiniz. `/Wall`kullanıyorsanız, sistem üstbilgi dosyalarında bazı uyarılar alırsınız, böylece birçok kişi, sistem üstbilgileri için uyarı almadan kendi kodlarında en iyi uyarıları almak üzere `/W4` kullanır. Uyarıların hata olarak gösterilmesini istiyorsanız `/WX` seçeneğini ekleyin. Bu ayarlar, **Proje özellikleri** iletişim kutusunun **C/C++**  bölümünde bulunur.
 
-`CSpyApp` Sınıftaki yöntemlerden biri, artık desteklenmeyen bir işlev hakkında uyarı oluşturur.
+`CSpyApp` sınıfındaki yöntemlerden biri, artık desteklenmeyen bir işlev hakkında uyarı oluşturur.
 
 ```cpp
 void SetDialogBkColor() {CWinApp::SetDialogBkColor(::GetSysColor(COLOR_BTNFACE));}
@@ -332,7 +332,7 @@ Uyarı aşağıdaki gibidir.
 warning C4996: 'CWinApp::SetDialogBkColor': CWinApp::SetDialogBkColor is no longer supported. Instead, handle WM_CTLCOLORDLG in your dialog
 ```
 
-WM_CTLCOLORDLG iletisi Spy + + kodunda zaten işlendi, bu nedenle gerekli tek değişiklik, ' a yönelik `SetDialogBkColor`başvuruları silmektir, ancak artık gerekli değildir.
+WM_CTLCOLORDLG iletisi Spy + + kodunda zaten işlendi, bu nedenle gerekli tek değişiklik, artık gerekli olmayan `SetDialogBkColor`başvurularını silmektir.
 
 Sonraki uyarı, değişken adını açıklama ekleyerek düzeltilmesi basittir. Şu uyarıyı aldık:
 
@@ -373,7 +373,7 @@ Makroların bu kodda olduğu gibi ağır kullanımı, kodun bakımını daha zor
 #define PARM(var, type, src)type var = (type)src
 ```
 
-Bu nedenle `lpszBuffer` , değişken aynı işlevde iki kez bildirilmiştir. Bu, kodun makroları kullanmamasına (yalnızca ikinci tür bildirimini kaldırmanız) olanak tanıdığından, bu durum doğrudan düzeltilmek değildir. Olduğu gibi, makro kodunu sıradan kod olarak yeniden yazmak (sıkıcı ve olası hata durumunda olabilecek bir görev) veya uyarıyı devre dışı bırakma seçeneklerine talihsiz karar veririz.
+Bu nedenle `lpszBuffer` değişkeni aynı işlevde iki kez bildirilmiştir. Bu, kodun makroları kullanmamasına (yalnızca ikinci tür bildirimini kaldırmanız) olanak tanıdığından, bu durum doğrudan düzeltilmek değildir. Olduğu gibi, makro kodunu sıradan kod olarak yeniden yazmak (sıkıcı ve olası hata durumunda olabilecek bir görev) veya uyarıyı devre dışı bırakma seçeneklerine talihsiz karar veririz.
 
 Bu durumda, uyarıyı devre dışı bırakmayı kabul ediyoruz. Bunu aşağıdaki gibi bir pragma ekleyerek yapabiliriz:
 
@@ -406,7 +406,7 @@ Bu, Windows 95 ' de çalışıp çalışmadığını ve hangi Windows NT sürüm
 
 [Windows 8.1 ve Windows Server 2012 R2 'Deki işletim sistemi sürümü değişiklikleri](/windows/win32/w8cookbook/operating-system-version-changes-in-windows-8-1) makalesinde durum açıklanır.
 
-`CSpyApp` Sınıfında, işletim sistemi sürümünü sorgulayan yöntemler vardır: `IsWindows9x`, `IsWindows4x`, ve `IsWindows5x`. İyi bir başlangıç noktası, bu eski uygulama tarafından kullanılan teknolojiler açısından, desteklemeyi düşüntiğimiz Windows sürümlerinin (Windows 7 ve üzeri) Windows NT 5 ' e yakın olduğunu varsaymaktadır. Bu yöntemlerin kullanımları eski işletim sistemlerinin sınırlamalarıyla ilgilendi. Bu nedenle, bu yöntemleri, için `IsWindows5x` true, diğerleri için false döndürecek şekilde değiştirdik.
+`CSpyApp` sınıfında, işletim sistemi sürümünü sorgulayan yöntemler vardır: `IsWindows9x`, `IsWindows4x`ve `IsWindows5x`. İyi bir başlangıç noktası, bu eski uygulama tarafından kullanılan teknolojiler açısından, desteklemeyi düşüntiğimiz Windows sürümlerinin (Windows 7 ve üzeri) Windows NT 5 ' e yakın olduğunu varsaymaktadır. Bu yöntemlerin kullanımları eski işletim sistemlerinin sınırlamalarıyla ilgilendi. Bu nedenle, bu yöntemleri `IsWindows5x` için TRUE, diğerleri için FALSE döndürecek şekilde değiştirdik.
 
 ```cpp
 BOOL IsWindows9x() {/*return(m_bIsWindows9x);*/ return FALSE;  }
@@ -448,7 +448,7 @@ Bunu tetikleyen kod aşağıdaki gibidir.
 m_bStdMouse = TRUE;
 ```
 
-Bildirimi, bir `m_bStdMouse` bitfield olduğunu gösterir.
+`m_bStdMouse` bildirimi, bir bitfield olduğunu gösterir.
 
 ```cpp
 class CTreeListBox : public CListBox
@@ -484,7 +484,7 @@ Bu uyarıyı üreten kod aşağıdaki gibidir.
 virtual void OnSelectTab(int nTab) {};
 ```
 
-Bu, yeterince zararsız gibi görünse de, `/W4` ve ayarlanmış bir temiz derleme yaptığımız için, değişken adını öğrendiğimiz ve `/WX` bu, okunaklı olması için dışarıda bıraktık.
+Bu, yeterince zararsız görünmektedir, ancak `/W4` ve `/WX` ayarlanmış bir temiz derleme yaptığımız için, değişken adını öğrendiğimiz ve bu, okunabilirliği artırmak için dışarıda bıraktık.
 
 ```cpp
 virtual void OnSelectTab(int /*nTab*/) {};
@@ -498,7 +498,7 @@ Bu kod için aldığımız diğer 4. düzey uyarısı:
 warning C4211: nonstandard extension used: redefined extern to static
 ```
 
-Bu sorun, bir değişken ilk **extern**olarak bildirildiği ve daha sonra **statik**olarak bildirildiği zaman oluşur. Bu iki depolama sınıfı belirticinin anlamı birbirini dışlıyor, ancak buna Microsoft uzantısı olarak izin verilir. Kodun diğer derleyicilere taşınabilir olmasını veya (ANSI uyumluluğu) ile `/Za` derlemeyi istediyseniz, bildirimleri eşleşen depolama sınıfı belirticilerine sahip olacak şekilde değiştirirsiniz.
+Bu sorun, bir değişken ilk **extern**olarak bildirildiği ve daha sonra **statik**olarak bildirildiği zaman oluşur. Bu iki depolama sınıfı belirticinin anlamı birbirini dışlıyor, ancak buna Microsoft uzantısı olarak izin verilir. Kodun diğer derleyicilere taşınabilir olmasını istiyorsanız veya `/Za` (ANSI uyumluluğu) ile derlemek isterseniz, bildirimleri eşleşen depolama sınıfı belirticilerine sahip olacak şekilde değiştirirsiniz.
 
 ##  <a name="porting_to_unicode"></a>11. adım. MBCS 'den Unicode 'a taşıma
 
@@ -518,11 +518,11 @@ msvcrtd.lib;msvcirtd.lib;kernel32.lib;user32.lib;gdi32.lib;advapi32.lib;Debug\Sp
 
 Şimdi eski çok baytlı karakter kümesi (MBCS) kodunu Unicode olarak güncelleştirmemize izin verin. Bu bir Windows uygulaması olduğundan, içkin Windows masaüstü platformu 'na bağlı olduğundan, Windows 'un kullandığı UTF-16 Unicode ' a bağlantı göndereceğiz. Platformlar arası kod yazıyorsanız veya bir Windows uygulamasını başka bir platforma taşırken, diğer işletim sistemlerinde yaygın olarak kullanılan UTF-8 ' e geçiş yapmayı düşünmek isteyebilirsiniz.
 
-UTF-16 Unicode 'a taşıma seçeneği, yine de MBCS 'ye derleme yapmak isteyip istememize karar vermelidir.  MBCS 'yi destekleme seçeneğine sahip olmak istiyorsam, derleme sırasında \_MBCS veya \_UNICODE tanımlandığına bağlı olarak, bir karakter türü olarak TCHAR makrosunu kullanacağız . **Wchar_t** ve ilişkili API 'leri yerine çeşitli API 'lerin TCHAR ve TCHAR sürümlerine geçiş yapmak, yalnızca, \_ \_UNICODE yerine MBCS makrosunu tanımlayarak, kodunuzun bir MBCS sürümüne geri alabileceğiniz anlamına gelir. TCHAR 'ın yanı sıra, yaygın olarak kullanılan typedefs, makrolar ve işlevler gibi çeşitli TCHAR sürümleri mevcuttur. Örneğin, LPCSTR yerine LPCTSTR ve bu şekilde devam eder. Proje Özellikleri iletişim kutusunda, **yapılandırma özellikleri**altında, **genel** bölümünde, **Unicode**karakter kümesini kullan ' ı kullanarak **karakter kümesi** özelliğini **kullanın** . Bu ayar, derleme sırasında önceden tanımlanan makroyu etkiler. Hem Unicode makrosu \_hem de Unicode makrosu vardır. Proje özelliği her ikisini de sürekli olarak etkiler. Windows üst bilgileri, MFC gibi C++ görsel üst bilgilerinde Unicode kullanır \_, ancak biri tanımlandığında diğeri her zaman tanımlanır.
+UTF-16 Unicode 'a taşıma seçeneği, yine de MBCS 'ye derleme yapmak isteyip istememize karar vermelidir.  MBCS 'yi destekleme seçeneğine sahip olmak istiyoruz, derleme sırasında \_MBCS veya \_UNICODE 'un tanımlanıp tanımlanmayacağı ile ilgili olarak, **char** veya **wchar_t**olarak çözümlenen bır karakter türü olarak TCHAR makrosunu kullanacağız. **Wchar_t** ve Ilişkili API 'leri yerine çeşitli API 'lerin TCHAR ve TCHAR sürümlerine geçiş yapmak, yalnızca \_UNICODE yerıne \_MBCS makrosunu tanımlayarak KODUNUZUN bir MBCS sürümüne geri dönebilirsiniz. TCHAR 'ın yanı sıra, yaygın olarak kullanılan typedefs, makrolar ve işlevler gibi çeşitli TCHAR sürümleri mevcuttur. Örneğin, LPCSTR yerine LPCTSTR ve bu şekilde devam eder. Proje Özellikleri iletişim kutusunda, **yapılandırma özellikleri**altında, **genel** bölümünde, **Unicode**karakter kümesini kullan ' ı kullanarak **karakter kümesi** özelliğini **kullanın** . Bu ayar, derleme sırasında önceden tanımlanan makroyu etkiler. Hem UNICODE makrosu hem de \_UNICODE makrosu vardır. Proje özelliği her ikisini de sürekli olarak etkiler. Windows üst bilgileri, MFC gibi C++ görsel üstbilgilerin Unicode \_kullanacağı Unicode kullanır, ancak biri tanımlandığında diğeri her zaman tanımlanır.
 
 TCHAR 'dan UTF-16 Unicode 'a gitmek için iyi bir [kılavuz](/previous-versions/cc194801(v=msdn.10)) vardır. Bu yolu seçtik. İlk olarak, **karakter kümesi** özelliğini **Unicode karakter kümesini kullanacak** şekilde değiştiririz ve projeyi yeniden derliyoruz.
 
-Koddaki bazı konumlar zaten, olasılığına, sonunda Unicode destekleyici olduğunu Görünüşe göre zaten TCHAR kullanıyor. Bazıları değildi. Char için bir **typedef** olan char örnekleri aradık ve BUNLARıN çoğunuTCHAR ile değiştirdi. Ayrıca, için `sizeof(CHAR)`baktık. Char 'dan TCHAR 'a her değiştirtiğimiz zaman, genellikle bir dizedeki karakter sayısını `sizeof(TCHAR)` belirlemede kullanılan bu yana ' ı ' a geçiş yapmak zorunda kaldık. Burada yanlış tür kullanılması bir derleyici hatası oluşturmaz, bu nedenle bu durumda dikkat çekici bir değer ödemelidir.
+Koddaki bazı konumlar zaten, olasılığına, sonunda Unicode destekleyici olduğunu Görünüşe göre zaten TCHAR kullanıyor. Bazıları değildi. **Char için bir** **typedef** olan char örnekleri aradık ve bunların çoğunu TCHAR ile değiştirdi. Ayrıca, `sizeof(CHAR)`için baktık. CHAR 'dan TCHAR 'a her değiştirtiğimiz zaman, bu genellikle bir dizedeki karakter sayısını belirlemede kullanıldığından `sizeof(TCHAR)` olarak değişmemiz gerekiyordu. Burada yanlış tür kullanılması bir derleyici hatası oluşturmaz, bu nedenle bu durumda dikkat çekici bir değer ödemelidir.
 
 Bu tür bir hata, yalnızca Unicode 'a geçiş sonrasında çok yaygındır.
 
@@ -536,15 +536,15 @@ error C2664: 'int wsprintfW(LPWSTR,LPCWSTR,...)': cannot convert argument 1 from
 wsprintf(szTmp, "%d.%2.2d.%4.4d", rmj, rmm, rup);
 ```
 
-Hatayı kaldırmak \_için dize değişmezini koyuyoruz.
+Hatayı kaldırmak için dize sabit değeri etrafında \_T yerleştiriyoruz.
 
 ```cpp
 wsprintf(szTmp, _T("%d.%2.2d.%4.4d"), rmj, rmm, rup);
 ```
 
-T makrosu, MBCS veya UNICODE ayarlarına bağlı olarak bir dize sabiti derlemesini bir **char** dize veya wchar_t dizesi olarak oluşturma etkisine sahiptir. \_ Tüm dizeleri Visual Studio 'da \_T ile değiştirmek için, önce **hızlı değiştirme** 'yi (klavye:CTRL+**F**) kutusu veya **dosyalardaki değiştirme** (klavye: **CTRL**SHIFTH)veardındannormalifadelerikullanonaykutusunuseçin.++ Arama `((\".*?\")|('.+?'))` metni ve `_T($1)` değiştirme metni olarak girin. Zaten \_bazı dizelerin etrafında t Makronuz varsa, bu yordam onu tekrar ekler ve ayrıca, kullandığınız `#include`gibi \_t 'yi kullanmak **istemediğiniz durumlar da bulabilir. Tümünü Değiştir**.
+\_T makrosu, MBCS veya UNICODE ayarlarına bağlı olarak bir dize sabiti derlemesini bir **char** dize veya **wchar_t** dizesi olarak oluşturma etkisine sahiptir. Tüm dizeleri Visual Studio 'daki \_T ile değiştirmek için, önce **hızlı değiştirme** (klavye: **CTRL**+**F**) kutusunu veya **dosyalardaki değiştirme** (klavye: **CTRL**+**SHIFT**+**H**) öğesini açın. ardından **normal Ifadeleri kullan** onay kutusunu seçin. Arama metni olarak `((\".*?\")|('.+?'))` girin ve değiştirme metni olarak `_T($1)`. Bazı dizelerin etrafında \_T Makronuz zaten varsa, bu yordam onu tekrar ekler ve ayrıca, `#include`kullanırken olduğu gibi \_T **'yi kullanmak istemediğiniz** durumları da **bulabilir.**
 
-Bu özel işlev olan [wsprintf](/windows/win32/api/winuser/nf-winuser-wsprintfw), aslında Windows üst bilgilerinde tanımlanmıştır ve bunun, olası arabellek taşmasından dolayı kullanılması tavsiye edilir. `szTmp` Arabellek için boyut verilmemiş, bu nedenle işlevin, arabelleğe yazılacak tüm verileri tutabilmesini denetme yolu yoktur. Daha benzer sorunları giderdiğimiz güvenli CRT 'ye taşıma hakkında bir sonraki bölüme bakın. [_Stprintf_s](../c-runtime-library/reference/sprintf-s-sprintf-s-l-swprintf-s-swprintf-s-l.md)ile değiştirmeyi bitirdik.
+Bu özel işlev olan [wsprintf](/windows/win32/api/winuser/nf-winuser-wsprintfw), aslında Windows üst bilgilerinde tanımlanmıştır ve bunun, olası arabellek taşmasından dolayı kullanılması tavsiye edilir. `szTmp` arabelleği için boyut verilmedi, bu nedenle işlevin, arabelleğe yazılacak tüm verileri tutabilmesini denetme yolu yoktur. Daha benzer sorunları giderdiğimiz güvenli CRT 'ye taşıma hakkında bir sonraki bölüme bakın. [_Stprintf_s](../c-runtime-library/reference/sprintf-s-sprintf-s-l-swprintf-s-swprintf-s-l.md)ile değiştirmeyi bitirdik.
 
 Unicode 'a dönüştürme işleminde göreceğiniz diğer yaygın hata budur.
 
@@ -559,7 +559,7 @@ pParentNode->m_szText = new char[strTitle.GetLength() + 1];
 _tcscpy(pParentNode->m_szText, strTitle);
 ```
 
-Bir dizeyi kopyalamak için Tchar strcpy işlevi olan işlevkullanılsabile,ayrılanarabellekbirChartamponiydi`_tcscpy` . Bu, kolayca TCHAR olarak değiştirilmiştir.
+Bir dizeyi kopyalamak için TCHAR strcpy işlevi olan `_tcscpy` işlevi kullanılsa bile, ayrılan arabellek bir **char** tamponiydi. Bu, kolayca TCHAR olarak değiştirilmiştir.
 
 ```cpp
 pParentNode->m_szText = new TCHAR[strTitle.GetLength() + 1];
@@ -570,9 +570,9 @@ Benzer şekilde, bir derleyici hatası ile garanti edildiğinde LPSTR (dize içi
 
 Bazı durumlarda, bir türü, doğru bir şekilde çözümlenen bir sürümü (örneğin, WNDCLASSA yerine) kullanarak değiştirmek zorunda kaldık.
 
-Birçok durumda, gibi `GetClassName` bir Win32 API genel sürümü (makro) kullanmak zorunda kaldık ( `GetClassNameA`yerine). İleti işleyici anahtar ifadesinde, bazı iletiler MBCS veya Unicode 'a özeldir, bu durumlarda, genel olarak adlandırılmış işlevleri ve **W** 'a özgü işlevleri değiştirdiğimiz için kodu, MBCS sürümünü açıkça çağırmak üzere değiştirdik. ve, UNICODE 'un tanımlanıp tanımlanmayacağı konusunda doğru **a** veya **W** adına çözümlenen genel ad için bir makro ekledi.  Kodun birçok bölümünde, UNICODE tanımlamak \_için geçiş yaptığımız sırada W sürümü artık, **bir** sürüm istenen gibi olduğunda bile seçilir.
+Çoğu durumda, `GetClassName` gibi bir Win32 API (`GetClassNameA`) genel sürümünü (makro) kullanmak zorunda kaldık. İleti işleyici anahtar ifadesinde, bazı iletiler MBCS veya Unicode 'a özeldir, bu durumlarda, genel olarak adlandırılmış işlevleri ve **W** **'a özgü** işlevleri DEĞIŞTIRDIĞIMIZ için kodu, MBCS sürümünü açıkça çağırmak üzere değiştirdik. ve, UNICODE 'un tanımlanıp tanımlanmayacağı konusunda doğru **a** veya **W** adına çözümlenen genel ad için bir makro ekledi.  Kodun birçok bölümünde, UNICODE \_tanımlamak için geçiş yaptığımız sırada W sürümü, **bir** sürüm istenen gibi olduğunda bile seçilir.
 
-Özel eylemlerin alınması gereken birkaç yer vardır. `WideCharToMultiByte` Veya`MultiByteToWideChar` herhangi bir kullanımı daha yakından bir görünüm gerektirebilir. İşte kullanıldığı bir örnek `WideCharToMultiByte` .
+Özel eylemlerin alınması gereken birkaç yer vardır. `WideCharToMultiByte` veya `MultiByteToWideChar` herhangi bir kullanımı daha yakından bir görünüm gerektirebilir. İşte `WideCharToMultiByte` kullanıldığı bir örnek.
 
 ```cpp
 BOOL C3dDialogTemplate::GetFont(CString& strFace, WORD& nFontSize)
@@ -597,7 +597,7 @@ BOOL C3dDialogTemplate::GetFont(CString& strFace, WORD& nFontSize)
 }
 ```
 
-Bunu çözmek için, bunun yapıldığı nedenin, bir yazı tipinin adını temsil eden geniş bir karakter dizesini bir `CString`' `strFace`ın iç arabelleğine kopyalamak bizim için de anladık. Bu, çok baytlı `CString` dizeler için geniş karakter `CString` dizeleri gibi biraz farklı kod gerektirdiğinden bu durumda bir `#ifdef` de ekledik.
+Bunu çözmek için, bunun yapıldığı nedenin bir `strFace``CString`iç arabelleğine bir yazı tipinin adını temsil eden geniş bir karakter dizesi kopyalamanın was olduğunu anladık. Bu, çok baytlı `CString` dizeleri için geniş karakter `CString` dizeleri gibi biraz farklı kod gerektirdiğinden bu durumda bir `#ifdef` ekledik.
 
 ```cpp
 #ifdef _MBCS
@@ -610,7 +610,7 @@ strFace.ReleaseBuffer();
 #endif
 ```
 
-Kuşkusuz `wcscpy` , gerçekten kullanılması `wcscpy_s`gereken daha güvenli sürüm. Sonraki bölümde bu ele alınmaktadır.
+Kuşkusuz `wcscpy` bunun yerine, gerçekten de daha güvenli sürümü `wcscpy_s`kullandık. Sonraki bölümde bu ele alınmaktadır.
 
 Çalışmamıza bir denetim olarak, **karakter kümesini** **çok baytlı karakter kümesini kullanacak** şekilde sıfırlamamız ve kodun hala MBCS 'yi ve Unicode 'u kullanarak derlendiğinden emin olması gerekir. Daha az söylemek gerekir, tüm bu değişiklikler sonrasında yeniden derlenen uygulamada tam bir test geçişi yürütülmelidir.
 
@@ -628,15 +628,15 @@ Visual C++ , çok sayıda boyut parametresi eklemeden ve şablon aşırı yükle
 
 Bunu tanımlarken, bir ham işaretçi yerine arabellek bir dizi olduğunda, bu boyut dizi türünden algılanır ve bu, size sağlamak zorunda kalmadan boyut parametresi olarak kullanılır. Bu, kodu yeniden yazma karmaşıklığını kesmeye yardımcı olur. İşlev adını yine de **_s** sürümüyle değiştirmeniz gerekir, ancak bu, genellikle bir arama ve değiştirme işlemi tarafından yapılabilir.
 
-Bazı işlevlerin dönüş değerleri değişti. Örneğin, `_itoa_s` (ve `_itow_s` ve makrosu `_itot_s`) dize yerine bir hata kodu (`errno_t`) döndürür. Bu durumda, çağrıyı `_itoa_s` ayrı bir satıra taşımanız ve arabelleğin tanımlayıcısı ile değiştirmeniz gerekir.
+Bazı işlevlerin dönüş değerleri değişti. Örneğin, `_itoa_s` (ve `_itow_s` ve makro `_itot_s`), dize yerine bir hata kodu (`errno_t`) döndürür. Bu şekilde, bu durumda `_itoa_s` çağrısını ayrı bir satıra taşımanız ve arabelleğin tanımlayıcısıyla değiştirmeniz gerekir.
 
-Bazı yaygın durumlar: için `memcpy`, ' a `memcpy_s`geçiş yaparken, kopyalandığı yapının boyutunu sıklıkla ekledik. Benzer şekilde, çoğu dize ve arabellek için, dizi veya arabelleğin boyutu, arabelleğin bildiriminden veya arabelleğin ilk olarak ayrıldığı yeri bularak kolayca belirlenir. Bazı durumlarda, arabelleğin büyük bir kısmının gerçekten kullanılabilir olduğunu belirlemeniz gerekir ve bu bilgiler değiştirmekte olduğunuz işlevin kapsamında yoksa, ek bir parametre olarak eklenmelidir ve çağıran kodun şu şekilde değiştirilmesi gerekir bilgileri sağlayın.
+Yaygın durumlardan bazıları: `memcpy`için, `memcpy_s`geçiş yaparken sıklıkla kopyalandığı yapının boyutunu ekledik. Benzer şekilde, çoğu dize ve arabellek için, dizi veya arabelleğin boyutu, arabelleğin bildiriminden veya arabelleğin ilk olarak ayrıldığı yeri bularak kolayca belirlenir. Bazı durumlarda, arabelleğin büyük bir kısmının gerçekten kullanılabilir olduğunu belirlemeniz gerekir ve bu bilgiler değiştirmekte olduğunuz işlevin kapsamında yoksa, ek bir parametre olarak eklenmelidir ve çağıran kodun şu şekilde değiştirilmesi gerekir bilgileri sağlayın.
 
 Bu teknikler sayesinde, kodun güvenli CRT işlevlerini kullanmak için bir gün boyunca dönüştürülmesi gerekir. Şablon aşırı yüklerini seçip boyut parametrelerini el ile eklemek istiyorsanız, büyük olasılıkla iki kez daha zaman alabilir.
 
 ##  <a name="deprecated_forscope"></a>13. adım. /Zc: forScope-kullanım dışı
 
-Visual C++ 6,0 ' den bu yana derleyici, bir döngüde belirtilen değişkenlerin kapsamını döngünün kapsamına göre sınırlayan geçerli standarda uyar. [/Zc: forScope](../build/reference/zc-forscope-force-conformance-in-for-loop-scope.md) derleyici seçeneği (proje özelliklerindeki**döngü kapsamı için uygunluğu zorla** ), bunun hata olarak raporlanıp raporlanmadığını denetler. Kodumuzu uyumlu olacak şekilde güncelleştirmemiz ve yalnızca döngünün dışında bildirimler ekleyeceğiz. Kod değişikliği yapmaktan kaçınmak için, C++ `No (/Zc:forScope-)`proje özelliklerinin **dil** bölümündeki bu ayarı değiştirebilirsiniz. Ancak, bir görselin `/Zc:forScope-` C++gelecekteki bir sürümünde kaldırılabileceğini aklınızda bulundurun. bu nedenle, kodunuzun standarda uyacak şekilde değiştirilmesi gerekir.
+Visual C++ 6,0 ' den bu yana derleyici, bir döngüde belirtilen değişkenlerin kapsamını döngünün kapsamına göre sınırlayan geçerli standarda uyar. [/Zc: forScope](../build/reference/zc-forscope-force-conformance-in-for-loop-scope.md) derleyici seçeneği (proje özelliklerindeki**döngü kapsamı için uygunluğu zorla** ), bunun hata olarak raporlanıp raporlanmadığını denetler. Kodumuzu uyumlu olacak şekilde güncelleştirmemiz ve yalnızca döngünün dışında bildirimler ekleyeceğiz. Kod değişikliği yapmaktan kaçınmak için, C++ proje özelliklerinin **dil** bölümündeki bu ayarı `No (/Zc:forScope-)`olarak değiştirebilirsiniz. Ancak, `/Zc:forScope-` bir görselin C++gelecekteki bir sürümünde kaldırılabileceğini aklınızda bulundurun. bu nedenle, kodunuzun standart ile uyumlu olacak şekilde değiştirilmesi gerekir.
 
 Bu sorunların düzeltilmesi nispeten kolaydır, ancak kodunuza bağlı olarak çok sayıda kodu etkileyebilir. Tipik bir sorun aşağıda verilmiştir.
 

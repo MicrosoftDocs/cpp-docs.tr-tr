@@ -1,18 +1,18 @@
 ---
-title: WINVER ve _WIN32_WINNT'de Değişiklik Yapma
+title: WINVER ve _WıN32_WıNNT güncelleştirme
 ms.date: 09/04/2017
 helpviewer_keywords:
 - WINVER in an upgraded Visual Studio C++ project
 - _WIN32_WINNT in an upgraded Visual Studio C++ project
 ms.assetid: 6a1f1d66-ae0e-48a7-81c3-524d8e8f3447
-ms.openlocfilehash: a83e92444e7010e4d3b65153b2e60e1c5d952cef
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 0cfdb3d065a85bd02ef21de9c4c5282cf54fcb2a
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69511607"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73627251"
 ---
-# <a name="modifying-winver-and-_win32_winnt"></a>WINVER ve _WIN32_WINNT'de Değişiklik Yapma
+# <a name="update-winver-and-_win32_winnt"></a>WINVER ve _WıN32_WıNNT güncelleştirme
 
 Görsel C++ artık Windows 95, Windows 98, Windows Me, Windows NT veya Windows 2000 'in hedeflenmesini desteklememektedir. Bu Windows sürümlerinden birine **WINVER** veya **_Wın32_wınnt** makrolarınızı atanırsa, makroları değiştirmeniz gerekir. Visual C++'ın önceki bir sürümü kullanılarak oluşturulmuş bir projeyi yükselttiğinizde, artık desteklenmeyen bir Windows sürümüne atandıklarında, **WINVER** veya **_WIN32_WINNT** makrolarıyla ilgili derleme hataları görebilirsiniz.
 
@@ -51,7 +51,7 @@ Aradığınız SDKDDKVer. h kopyasında listelenen bu Windows sürümlerinin tü
 > [!NOTE]
 > Uygulamanıza iç MFC üstbilgileri eklerseniz, değerlerin çalışması garanti edilmez.
 
-Bu makroyu `/D` derleyici seçeneğini kullanarak da tanımlayabilirsiniz. Daha fazla bilgi için bkz. [/d (Önişlemci tanımları)](../build/reference/d-preprocessor-definitions.md).
+Ayrıca, bu makroyu `/D` derleyici seçeneğini kullanarak da tanımlayabilirsiniz. Daha fazla bilgi için bkz. [/d (Önişlemci tanımları)](../build/reference/d-preprocessor-definitions.md).
 
 Bu makroların anlamları hakkında daha fazla bilgi için bkz. [Windows üst bilgilerini kullanma](/windows/win32/WinProg/using-the-windows-headers).
 

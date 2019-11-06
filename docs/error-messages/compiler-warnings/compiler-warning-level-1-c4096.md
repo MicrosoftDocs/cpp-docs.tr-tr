@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C4096
 ms.assetid: abf3cca2-2f21-45d8-b025-6b513b00681e
-ms.openlocfilehash: 287465e9a3f5681f459f0823a4409b0906309a55
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8f526b26eda4c02825d225aa007c6029cc4b03dd
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62280471"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73627070"
 ---
 # <a name="compiler-warning-level-1-c4096"></a>Derleyici Uyarısı (düzey 1) C4096
 
-'bir': arabirim bir COM arabirimi değil IDL için yayılan değil
+' a ': arabirim bir COM arabirimi değil; IDL 'ye yayınlanmayacak
 
-Bir COM arabirimi olarak hedeflenen bir arabirim tanımı, bir COM arabirimi olarak tanımlı değil ve bu nedenle IDL dosyasına yayılan değil.
+COM arabirimi olarak hedeflediğiniz bir arabirim tanımı bir COM arabirimi olarak tanımlanmamıştır ve bu nedenle IDL dosyasına yayınlanmaz.
 
-Bkz: [arabirim öznitelikleri](../../windows/attributes/interface-attributes.md) için bir arabirim bir COM arabirimi olduğunu belirten bir liste öznitelikleri.
+Bir arabirimin COM arabirimi olduğunu belirten liste öznitelikleri için bkz. [arabirim öznitelikleri](../../windows/attributes/interface-attributes.md) .
 
-Aşağıdaki örnek, C4096 oluşturur:
+Aşağıdaki örnek C4096 oluşturur:
 
-```
+```cpp
 // C4096.cpp
 // compile with: /W1 /LD
 #include "windows.h"

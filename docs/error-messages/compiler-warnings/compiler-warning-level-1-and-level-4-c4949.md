@@ -6,32 +6,32 @@ f1_keywords:
 helpviewer_keywords:
 - C4949
 ms.assetid: 34f45a05-c115-49cb-9f67-0bd4f0735d9b
-ms.openlocfilehash: 8050edbd7a653776d046bc7b4155fd43094d9a5d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f2876813131271ebb2561f8ea7435bb96dc2ce17
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62187528"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73627410"
 ---
 # <a name="compiler-warning-level-1-and-level-4-c4949"></a>Derleyici Uyarısı (düzey 1 ve düzey 4) C4949
 
-'managed' ve 'unmanaged' pragmaları yalnızca ile derlendikleri zaman anlamlıdır ' / clr [: option]'
+' Managed ' ve ' yönetilmeyen ' pragmaları yalnızca '/CLR [: Option] ' ile derlendikleri zaman anlamlıdır
 
-Derleyicinin yoksaydığı [yönetilen](../../preprocessor/managed-unmanaged.md) ve ile kaynak kodu derlenmemişse pragmaları yönetilmeyen [/CLR](../../build/reference/clr-common-language-runtime-compilation.md). Bu uyarı, bilgi amaçlıdır.
+Kaynak kodu [/clr](../../build/reference/clr-common-language-runtime-compilation.md)ile derlenmediğinde, derleyici [yönetilen](../../preprocessor/managed-unmanaged.md) ve yönetilmeyen pragmaları yoksayar. Bu uyarı bilgilendirme amaçlıdır.
 
-Aşağıdaki örnek, C4949 oluşturur:
+Aşağıdaki örnek C4949 oluşturur:
 
-```
+```cpp
 // C4949.cpp
 // compile with: /LD /W1
 #pragma managed   // C4949
 ```
 
-Zaman **yönetilmeyen #pragma** olmadan kullanılan **/CLR**, C4949 olan düzey 4 uyarısı.
+**#Pragma** , **/clr**olmadan kullanıldığında, C4949 4. düzey bir uyarıdır.
 
-Aşağıdaki örnek, C4949 oluşturur:
+Aşağıdaki örnek C4949 oluşturur:
 
-```
+```cpp
 // C4949b.cpp
 // compile with: /LD /W4
 #pragma unmanaged   // C4949

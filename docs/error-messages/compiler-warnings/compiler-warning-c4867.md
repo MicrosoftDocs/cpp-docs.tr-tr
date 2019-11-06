@@ -6,28 +6,28 @@ f1_keywords:
 helpviewer_keywords:
 - C4867
 ms.assetid: 8a257d70-c3a7-462d-b285-e57c952a8bf7
-ms.openlocfilehash: 0fd5de46f713aed08508f8755c9e54c3ff46366b
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: e093d262bc26cf0acfbb181d621fffc1aa391ee9
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65447199"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73626598"
 ---
 # <a name="compiler-warning-c4867"></a>Derleyici Uyarısı C4867
 
-'function': işlev çağrısı; bağımsız değişken listesi eksik bir üyeye işaretçi oluşturmak için 'çağrısı' kullanın
+' function ': işlev çağrısında bağımsız değişken listesi eksik; üyeye işaretçi oluşturmak için ' Call ' kullanın
 
-Üye işlevi işaretçisi hatalı olarak başlatıldı.
+Üye işlevine yönelik bir işaretçi yanlış başlatılmış.
 
-Bu uyarı için Visual Studio 2005 yapıldığı derleyici uyumluluğu iş sonucu olarak oluşturulan: Gelişmiş işaretçi-üye uyumluluğu.  Visual Studio 2005'ten önce derlenmiş kod artık C4867 oluşturur.
+Bu uyarı, Visual Studio 2005: Gelişmiş üye işaretçisi uygunluğu için yapılan derleyici uygunluk işinin bir sonucu olarak oluşturulabilir.  Visual Studio 2005 ' den önce derlenen kod artık C4867 oluşturacak.
 
-Bu uyarı, her zaman hata olarak görüntülenir. Kullanım [uyarı](../../preprocessor/warning.md) pragması, bu uyarıyı devre dışı bırakmak için. C4867 ve MFC/ATL hakkında daha fazla bilgi için bkz. [_ATL_ENABLE_PTM_WARNING](../../atl/reference/compiler-options-macros.md#_atl_enable_ptm_warning).
+Bu uyarı her zaman bir hata olarak verilir. Bu uyarıyı devre dışı bırakmak için [Uyarı](../../preprocessor/warning.md) pragmasını kullanın. C4867 ve MFC/ATL hakkında daha fazla bilgi için bkz. [_Atl_enable_ptm_warning](../../atl/reference/compiler-options-macros.md#_atl_enable_ptm_warning).
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C4867 oluşturur.
+Aşağıdaki örnek C4867 oluşturur.
 
-```
+```cpp
 // C4867.cpp
 // compile with: /c
 class A {

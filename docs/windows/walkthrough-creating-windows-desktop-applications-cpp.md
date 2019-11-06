@@ -1,17 +1,18 @@
 ---
 title: 'İzlenecek yol: geleneksel Windows masaüstü uygulaması (C++) oluşturma'
+description: Visual Studio, C++ve Win32 API kullanarak en düşük, geleneksel Windows masaüstü uygulaması oluşturma
 ms.custom: get-started-article
-ms.date: 10/21/2019
+ms.date: 11/03/2019
 helpviewer_keywords:
 - Windows applications [C++], Win32
 - Windows Desktop applications [C++]
 - Windows API [C++]
-ms.openlocfilehash: 080c4cd9612058a0a54f19e5d0f4b8add4a03bce
-ms.sourcegitcommit: ea9d78dbb93bf3f8841dde93dbc12bd66f6f32ff
+ms.openlocfilehash: 6f219a0c199971b563b1c0ff291f2f5d12803023
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72778543"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73627472"
 ---
 # <a name="walkthrough-create-a-traditional-windows-desktop-application-c"></a>İzlenecek yol: geleneksel Windows masaüstü uygulaması (C++) oluşturma
 
@@ -76,9 +77,7 @@ Projeniz artık oluşturulur ve kaynak dosyanız düzenleyicide açılır. Devam
 
    ![DesktopApp projesini adlandırın](../build/media/desktop-app-new-project-name-153.png "DesktopApp projesini adlandırın")
 
-1. **Windows Masaüstü projesi** iletişim kutusunda, **uygulama türü**altında **Windows uygulaması (. exe)** öğesini seçin. **Ek seçenekler**altında **boş proje**' yi seçin. Projeyi oluşturmak için **Tamam ' ı** seçin.
-
-   ![Windows Masaüstü Projesi Sihirbazı 'nda DesktopApp oluşturma](../build/media/desktop-app-new-project-wizard-153.png "Windows Masaüstü Projesi Sihirbazı 'nda DesktopApp oluşturma")
+1. **Windows Masaüstü projesi** iletişim kutusunda, **uygulama türü**altında **Windows uygulaması (. exe)** öğesini seçin. **Ek seçenekler**altında **boş proje**' yi seçin. **Önceden derlenmiş üstbilginin** seçili olmadığından emin olun. Projeyi oluşturmak için **Tamam ' ı** seçin.
 
 1. **Çözüm Gezgini**, **Desktopapp** projesine sağ tıklayın, **Ekle**' yi ve ardından **Yeni öğe**' yi seçin.
 
@@ -108,9 +107,7 @@ Projeniz artık oluşturulur ve kaynak dosyanız düzenleyicide açılır. Devam
 
    ![Win32 uygulama Sihirbazına Genel Bakış 'da DesktopApp oluşturma](../build/media/desktop-app-win32-wizard-overview-150.png "Win32 uygulama Sihirbazına Genel Bakış 'da DesktopApp oluşturma")
 
-1. **Uygulama ayarları** sayfasında, **uygulama türü**altında **Windows uygulaması**' nı seçin. **Ek seçenekler**altında **boş proje**' yi seçin. Projeyi oluşturmak için **son** ' a tıklayın.
-
-   ![Win32 uygulama Sihirbazı ayarlarında DesktopApp oluşturma](../build/media/desktop-app-win32-wizard-settings-150.png "Win32 uygulama Sihirbazı ayarlarında DesktopApp oluşturma")
+1. **Uygulama ayarları** sayfasında, **uygulama türü**altında **Windows uygulaması**' nı seçin. **Ek seçenekler**altında, **önceden derlenmiş üstbilginin**Işaretini kaldırın, sonra **boş proje**' yi seçin. Projeyi oluşturmak için **son** ' a tıklayın.
 
 1. **Çözüm Gezgini**, DesktopApp projesine sağ tıklayın, **Ekle**' yi ve ardından **Yeni öğe**' yi seçin.
 
@@ -144,16 +141,16 @@ Daha sonra, Visual Studio 'da bir Windows masaüstü uygulaması için kod oluş
    Bu işlevin parametreleri ve dönüş değeri hakkında daha fazla bilgi için bkz. [WinMain giriş noktası](/windows/win32/api/winbase/nf-winbase-winmain).
 
    > [!NOTE]
-   > @No__t_0 veya `HINSTANCE` veya `_In_` gibi tüm ek sözcükler nelerdir? Geleneksel Windows API 'si, türlerin ve platforma özgü kodun, çağırma kuralları, **__declspec** bildirimleri ve derleyici pragmaları gibi bazı ayrıntılarını soyutlamak için kapsamlı olarak tür tanımları ve Önişlemci makroları kullanır. Visual Studio 'da, bu tür tanımları ve makroların neleri tanımlacağınızı görmek için IntelliSense [hızlı bilgi](/visualstudio/ide/using-intellisense#quick-info) özelliğini kullanabilirsiniz. Farenizi ilgilendiğiniz sözcüğün üzerine getirin veya **seçin, sonra** da tanımı içeren küçük bir açılır pencere **Için ctrl +** **i** +**K**tuşlarına basın. Daha fazla bilgi için bkz. [IntelliSense kullanma](/visualstudio/ide/using-intellisense). Parametreler ve dönüş türleri, programlama hatalarını yakalayabilmeniz için genellikle *sal ek açıklamalarını* kullanır. Daha fazla bilgi için, bkz. [CC++ /kod HATALARıNı azaltmak Için sal ek açıklamalarını kullanma](/visualstudio/code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects).
+   > `CALLBACK`veya `HINSTANCE`veya `_In_`gibi tüm ek sözcükler nelerdir? Geleneksel Windows API 'si, türlerin ve platforma özgü kodun, çağırma kuralları, **__declspec** bildirimleri ve derleyici pragmaları gibi bazı ayrıntılarını soyutlamak için kapsamlı olarak tür tanımları ve Önişlemci makroları kullanır. Visual Studio 'da, bu tür tanımları ve makroların neleri tanımlacağınızı görmek için IntelliSense [hızlı bilgi](/visualstudio/ide/using-intellisense#quick-info) özelliğini kullanabilirsiniz. Farenizi ilgilendiğiniz sözcüğün üzerine getirin veya **seçin, sonra** da tanımı içeren küçük bir açılır pencere **Için ctrl +** **i** +**K**tuşlarına basın. Daha fazla bilgi için bkz. [IntelliSense kullanma](/visualstudio/ide/using-intellisense). Parametreler ve dönüş türleri, programlama hatalarını yakalayabilmeniz için genellikle *sal ek açıklamalarını* kullanır. Daha fazla bilgi için, bkz. [CC++ /kod HATALARıNı azaltmak Için sal ek açıklamalarını kullanma](/visualstudio/code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects).
 
-1. Windows masaüstü programları &lt;windows. h > gerektirir. &lt;tchar. h >, bir `TCHAR` makrosunu tanımlar ve bu, UNICODE sembolü projenizde tanımlandıysa, aksi takdirde **char**olarak çözümlenirse, sonunda **wchar_t** ile çözümlenir.  Her zaman UNICODE 'u etkin olarak oluşturursanız, TCHAR 'a ihtiyacınız yoktur ve yalnızca **wchar_t** 'yi doğrudan kullanabilirsiniz.
+1. Windows masaüstü programları &lt;windows. h > gerektirir. &lt;Tchar. h > `TCHAR` makrosunu tanımlar ve bu, UNICODE sembolü projenizde tanımlandıysa, aksi takdirde **char**olarak çözümlenirse, sonunda **wchar_t** ile çözümlenir.  Her zaman UNICODE 'u etkin olarak oluşturursanız, TCHAR 'a ihtiyacınız yoktur ve yalnızca **wchar_t** 'yi doğrudan kullanabilirsiniz.
 
    ```cpp
    #include <windows.h>
    #include <tchar.h>
    ```
 
-1. @No__t_0 işleviyle birlikte, her Windows masaüstü uygulamasının de bir pencere yordamı işlevi olması gerekir. Bu işlev genellikle `WndProc` olarak adlandırılır, ancak istediğiniz gibi adlandırabilirsiniz. `WndProc` aşağıdaki söz dizimine sahiptir.
+1. `WinMain` işleviyle birlikte, her Windows masaüstü uygulamasının de bir pencere yordamı işlevi olması gerekir. Bu işlev genellikle `WndProc` olarak adlandırılır, ancak istediğiniz gibi adlandırabilirsiniz. `WndProc` aşağıdaki söz dizimine sahiptir.
 
    ```cpp
    LRESULT CALLBACK WndProc(
@@ -170,7 +167,7 @@ Daha sonra, Visual Studio 'da bir Windows masaüstü uygulaması için kod oluş
 
 ### <a name="to-add-functionality-to-the-winmain-function"></a>WinMain işlevine işlevsellik eklemek için
 
-1. @No__t_0 işlevinde, [WNDCLASSEX](/windows/win32/api/winuser/ns-winuser-wndclassexw)türünde bir yapıyı doldurursunuz. Yapı, pencere hakkında bilgiler içerir: uygulama simgesi, pencerenin arka plan rengi, başlık çubuğunda görüntülenecek ad, diğer şeyler. Önemlisi, pencere yordamınıza bir işlev işaretçisi içerir. Aşağıdaki örnek tipik bir `WNDCLASSEX` yapısını gösterir.
+1. `WinMain` işlevinde, [WNDCLASSEX](/windows/win32/api/winuser/ns-winuser-wndclassexw)türünde bir yapıyı doldurursunuz. Yapı, pencere hakkında bilgiler içerir: uygulama simgesi, pencerenin arka plan rengi, başlık çubuğunda görüntülenecek ad, diğer şeyler. Önemlisi, pencere yordamınıza bir işlev işaretçisi içerir. Aşağıdaki örnek tipik bir `WNDCLASSEX` yapısını gösterir.
 
    ```cpp
    WNDCLASSEX wcex;
@@ -191,7 +188,7 @@ Daha sonra, Visual Studio 'da bir Windows masaüstü uygulaması için kod oluş
 
    Yukarıdaki yapının alanları hakkında daha fazla bilgi için bkz. [WNDCLASSEX](/windows/win32/api/winuser/ns-winuser-wndclassexw).
 
-1. @No__t_0 Windows 'a kaydedin ve bu sayede, pencerenize ve iletilerin nasıl gönderileceğini bilecektir. [RegisterClassEx](/windows/win32/api/winuser/nf-winuser-registerclassexw) işlevini kullanın ve pencere sınıfı yapısını bir bağımsız değişken olarak geçirin. @No__t_1 türünü kullandığımızda `_T` makrosu kullanılır.
+1. `WNDCLASSEX` Windows 'a kaydedin ve bu sayede, pencerenize ve iletilerin nasıl gönderileceğini bilecektir. [RegisterClassEx](/windows/win32/api/winuser/nf-winuser-registerclassexw) işlevini kullanın ve pencere sınıfı yapısını bir bağımsız değişken olarak geçirin. `TCHAR` türünü kullandığımızda `_T` makrosu kullanılır.
 
    ```cpp
    if (!RegisterClassEx(&wcex))
@@ -256,7 +253,7 @@ Daha sonra, Visual Studio 'da bir Windows masaüstü uygulaması için kod oluş
    UpdateWindow(hWnd);
    ```
 
-   @No__t_0 işlevini henüz uygulamadıysanız, görüntülenmiş pencerenin içeriği çok fazla içeriğe sahip değil. Diğer bir deyişle, uygulama henüz Windows 'un buraya gönderdiği iletileri işlememiştir.
+   `WndProc` işlevini henüz uygulamadıysanız, görüntülenmiş pencerenin içeriği çok fazla içeriğe sahip değil. Diğer bir deyişle, uygulama henüz Windows 'un buraya gönderdiği iletileri işlememiştir.
 
 1. İletileri işlemek için ilk olarak Windows 'un gönderdiği iletileri dinlemek üzere bir ileti döngüsü ekleyeceğiz. Uygulama bir ileti aldığında, bu döngü onu işlenecek `WndProc` işlevinizde gönderir. İleti döngüsü aşağıdaki koda benzer.
 
@@ -362,11 +359,11 @@ Daha sonra, Visual Studio 'da bir Windows masaüstü uygulaması için kod oluş
 
 ### <a name="to-add-functionality-to-the-wndproc-function"></a>WndProc işlevine işlevsellik eklemek için
 
-1. @No__t_0 işlevini uygulamanın aldığı iletileri işleyecek şekilde etkinleştirmek için bir switch ifadesini uygulayın.
+1. `WndProc` işlevini uygulamanın aldığı iletileri işleyecek şekilde etkinleştirmek için bir switch ifadesini uygulayın.
 
    İşlemek için önemli bir ileti [WM_PAINT](/windows/win32/gdi/wm-paint) iletisidir. Uygulama, görüntülenmiş pencerenin bir kısmı güncelleştirilirken `WM_PAINT` iletisini alır. Olay, bir Kullanıcı pencerenize bir pencere taşıdığı zaman meydana gelebilir ve sonra yeniden gider. Uygulamanız bu olayların ne zaman gerçekleşeceğini bilmez. Yalnızca Windows biliyor, bu nedenle uygulamanıza bir `WM_PAINT` mesajı bildirir. Pencere ilk görüntülendiğinde, tümünün güncellenmesi gerekir.
 
-   @No__t_0 bir iletiyi işlemek için önce [BeginPaint](/windows/win32/api/winuser/nf-winuser-beginpaint)'i çağırın, ardından penceredeki metni, düğmeleri ve diğer denetimleri düzenlemek için tüm mantığı işleyin ve ardından [EndPaint](/windows/win32/api/winuser/nf-winuser-endpaint)'i çağırın. Uygulama için, başlangıç çağrısıyla bitiş çağrısı arasındaki mantık, "Merhaba, Windows Masaüstü!" dizesini görüntülemektir. penceresinde. Aşağıdaki kodda, [TextOut](/windows/win32/api/wingdi/nf-wingdi-textoutw) işlevinin dizeyi göstermek için kullanıldığına dikkat edin.
+   `WM_PAINT` bir iletiyi işlemek için önce [BeginPaint](/windows/win32/api/winuser/nf-winuser-beginpaint)'i çağırın, ardından penceredeki metni, düğmeleri ve diğer denetimleri düzenlemek için tüm mantığı işleyin ve ardından [EndPaint](/windows/win32/api/winuser/nf-winuser-endpaint)'i çağırın. Uygulama için, başlangıç çağrısıyla bitiş çağrısı arasındaki mantık, "Merhaba, Windows Masaüstü!" dizesini görüntülemektir. penceresinde. Aşağıdaki kodda, [TextOut](/windows/win32/api/wingdi/nf-wingdi-textoutw) işlevinin dizeyi göstermek için kullanıldığına dikkat edin.
 
    ```cpp
    PAINTSTRUCT ps;
@@ -391,7 +388,7 @@ Daha sonra, Visual Studio 'da bir Windows masaüstü uygulaması için kod oluş
    }
    ```
 
-   koddaki `HDC`, Windows 'un uygulamanızın grafik alt sistemiyle iletişim kurmasını sağlamak için kullandığı bir veri yapısı olan bir cihaz bağlamı tanıtıcıdır. @No__t_0 ve `EndPaint` işlevleri, uygulamanızın iyi bir vatandaşlık gibi davranmasını sağlar ve cihaz bağlamını gerekenden daha uzun bir süre için kullanmaz. İşlevler, grafik alt sisteminin diğer uygulamalar tarafından kullanılabilir olmasını sağlamaya yardımcı olur.
+   koddaki `HDC`, Windows 'un uygulamanızın grafik alt sistemiyle iletişim kurmasını sağlamak için kullandığı bir veri yapısı olan bir cihaz bağlamı tanıtıcıdır. `BeginPaint` ve `EndPaint` işlevleri, uygulamanızın iyi bir vatandaşlık gibi davranmasını sağlar ve cihaz bağlamını gerekenden daha uzun bir süre için kullanmaz. İşlevler, grafik alt sisteminin diğer uygulamalar tarafından kullanılabilir olmasını sağlamaya yardımcı olur.
 
 1. Bir uygulama genellikle diğer birçok iletiyi işler. Örneğin, bir pencere ilk oluşturulduğunda [WM_CREATE](/windows/win32/winmsg/wm-create) ve pencere kapatıldığında [WM_DESTROY](/windows/win32/winmsg/wm-destroy) . Aşağıdaki kod, bir temel ancak tamamen `WndProc` işlevi gösterir.
 

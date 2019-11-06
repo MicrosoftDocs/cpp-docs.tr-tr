@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C4087
 ms.assetid: 546e4d57-5c8e-422c-8ef1-92657336dad5
-ms.openlocfilehash: 84d24d95053b962c1776dc18576e4ed236b63469
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fe2b4fadfb87726e81178a3530299dbb8620aec9
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62363875"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73626838"
 ---
 # <a name="compiler-warning-level-1-c4087"></a>Derleyici Uyarısı (düzey 1) C4087
 
-'function': 'void' parametre listesiyle bildirildi
+' function ': ' void ' parametre listesiyle bildiriliyor
 
-İşlev bildirimi hiç biçimsel parametre, ancak işlev çağrısının gerçek parametre içeriyor. Ek parametreler işlevi çağırma kuralı göre geçirilir.
+İşlev bildiriminde hiç biçimsel parametre yoktur, ancak işlev çağrısının gerçek parametreleri vardır. Ek parametreler, işlevin çağırma kuralına göre geçirilir.
 
-Bu uyarı, C derleyicisi için değil.
+Bu uyarı C derleyicisi içindir.
 
 ## <a name="example"></a>Örnek
 
-```
+```c
 // C4087.c
 // compile with: /W1
 int f1( void ) {

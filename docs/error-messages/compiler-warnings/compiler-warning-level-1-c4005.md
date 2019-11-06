@@ -6,34 +6,34 @@ f1_keywords:
 helpviewer_keywords:
 - C4005
 ms.assetid: 7f2dc79a-9fcb-4d5b-be61-120d9cb487ad
-ms.openlocfilehash: 76aab2160bd5f7918771dcf63b7297a869da751e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 71b23ec719198d15a99b4fcfd50db8b151e03226
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62187345"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73627365"
 ---
 # <a name="compiler-warning-level-1-c4005"></a>Derleyici Uyarısı (düzey 1) C4005
 
-'identifier': makro yeniden tanımlama
+' tanımlayıcı ': makro yeniden tanımı
 
-Makro tanımlayıcı, iki kez tanımlanmış. Derleyici ikinci Makro tanımında kullanır.
+Makro tanımlayıcısı iki kez tanımlanır. Derleyici ikinci makro tanımını kullanır.
 
-### <a name="to-fix-by-checking-the-following-possible-causes"></a>Aşağıdaki olası nedenleri kontrol ederek düzeltmek için
+### <a name="to-fix-by-checking-the-following-possible-causes"></a>Aşağıdaki olası nedenleri denetleyerek onarmak için
 
-1. Makro, komut satırında ve kodla tanımlarken bir `#define` yönergesi.
+1. Komut satırında ve bir `#define` yönergesi ile kodda bir makro tanımlama.
 
-1. Makroları dahil etme dosyaları içeri aktarıldı.
+1. İçerme dosyalarından içeri aktarılan makrolar.
 
-### <a name="to-fix-by-using-the-following-possible-solutions"></a>Aşağıdaki olası çözümleri kullanarak düzeltmek için
+### <a name="to-fix-by-using-the-following-possible-solutions"></a>Aşağıdaki olası çözümleri kullanarak düzeltilmesi için
 
 1. Tanımlardan birini kaldırın.
 
-1. Kullanım bir [#undef](../../preprocessor/hash-undef-directive-c-cpp.md) ikinci tanımından önce yönergesi.
+1. İkinci tanımdan önce bir [#undef](../../preprocessor/hash-undef-directive-c-cpp.md) yönergesi kullanın.
 
-Aşağıdaki örnek, C4005 oluşturur:
+Aşağıdaki örnek C4005 oluşturur:
 
-```
+```cpp
 // C4005.cpp
 // compile with: /W1 /EHsc
 #include <iostream>

@@ -3,20 +3,20 @@ title: C++'a (Modern C++) Tekrar Hoş Geldiniz
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 1cb1b849-ed9c-4721-a972-fd8f3dab42e2
-ms.openlocfilehash: 5b2868d20c047eef7762256ff8c9bf43de7a0de0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1f59395001722244cb407ef07ed8a301f08df85b
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62209534"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73624756"
 ---
 # <a name="welcome-back-to-c-modern-c"></a>C++'a (Modern C++) Tekrar Hoş Geldiniz
 
-C++ dünyada en yaygın olarak kullanılan programlama dilleri biridir. İyi yazılmış C++ programları hızlı ve verimlidir. Çok çeşitli uygulamalar oluşturmak için kullanın dil diğer dillerden daha esnektir çünkü — eğlenceli ve heyecan verici oyunlardan yüksek performanslı bilimsel yazılımlara, cihaz sürücüleri, katıştırılmış programlara ve Windows istemci uygulamaları için. 20 yıldan fazla, C++ ve diğer birçok gibi sorunları çözmek için kullanıldı. Değil bilmeniz, artan sayıda C++ programcıları dün belki C stili programlamada yukarı Katlanmış ve modern C++ yerine donned olmasıdır.
+C++, dünyanın en yaygın olarak kullanılan programlama dillerinden biridir. İyi yazılmış C++ programlar hızlı ve verimlidir. Dil, eğlenceli ve heyecan verici oyunlardan, cihaz sürücülerine, katıştırılmış programlara ve Windows istemci uygulamalarına kadar çok çeşitli uygulamalar oluşturmak için kullanabileceğiniz diğer dillerden daha esnektir. 20 yıldan C++ daha uzun bir süredir bu ve diğerleri gibi sorunları çözümlemek için kullanılmıştır. Bilmeyebilirsiniz, daha fazla sayıda C++ programcı, Dünün C stili programlamayı dün ve bunun yerine modern C++ bir şekilde katmış.
 
-C++ için orijinal gereksinimlerden C diliyle geriye dönük uyumluluk biriydi. O zamandan bu yana, C++ birkaç yineleme boyunca gelişmiştir — sınıflar, ardından orijinal C++ dil belirtimi ve sonra çok sayıda alt geliştirme ile C. Bu kalıtım nedeniyle, C++ genellikle bir çoklu paradigma programlama dili adlandırılır. C++'da, ham işaretçileri, dizileri, null ile sonlandırılmış dizeleri, özel veri yapıları ve harika performans sağlayan ancak aynı zamanda hataları ve karmaşıklık düzeyini artırabilen diğer özellikleri içeren tam olarak yordama dayalı C stili programlama yapabilirsiniz.  C stili programlamada amaçlardan kaybolduğu olduğundan, kuruluş hedeflerinden c++ programları hem tür kullanımı uyumlu hem de yazma, genişletmeyi ve sürdürmeyi daha kolay hale getirmektir. İlk C++ nesne yönelimli programlama gibi programlama paradigmalarını benimsemekteydi. Yıllar içinde dile, yüksek oranda test edilen standart kitaplıkları veri yapıları ve algoritmaları ile birlikte özellik eklenmiştir. Modern C++ stilinin olası yapmış olduğunuz bu eklemelerdir.
+İçin C++ özgün gereksinimlerinden biri, C diliyle geriye dönük uyumlulukta. Daha sonra, C++ birkaç yineleme (sınıflar ile C), ardından özgün C++ dil belirtimi ve daha sonra yapılan birçok gelişmeye sahip. Bu Mirada, C++ genellikle multi-kip programlama dili olarak adlandırılır. İçinde C++, ham işaretçiler, diziler, null ile sonlandırılmış karakter dizeleri, özel veri yapıları ve ayrıca hata ve karmaşıklık sağlayan diğer özellikleri içeren, tamamen yordamsal bir C stili programlama yapabilirsiniz.  C stili programlama bu gibi perıls içerdiğinden, ' ın temel amaçlarından C++ biri, programları hem tür kullanımı güvenli hem de yazmayı, genişletmeyi ve bakımını daha kolay hale getirmeye yöneliktir. Erken on, C++ nesne odaklı programlama gibi programlama paradigmalarına. Yılların üzerinde özellikler, yüksek düzeyde test edilmiş standart kitaplıklar ve algoritmalarla birlikte dile eklenmiştir. Bu, modern C++ stili mümkün hale getirilen bu eklemelere sahiptir.
 
-Modern C++ şunları vurgular:
+Modern C++ vurgular:
 
 - Yığın veya statik genel kapsam yerine yığın tabanlı kapsam.
 
@@ -24,21 +24,21 @@ Modern C++ şunları vurgular:
 
 - Ham işaretçiler yerine akıllı işaretçiler.
 
-- `std::string` ve `std::wstring` türleri (bkz [ \<dizesi >](../standard-library/string.md)) ham yerine `char[]` dizileri.
+- `std::string` ve `std::wstring` türler (bkz. [\<string >](../standard-library/string.md)) ham `char[]` dizileri yerine.
 
-- [C++ Standart Kitaplığı](../standard-library/cpp-standard-library-header-files.md) kapsayıcıları ister `vector`, `list`, ve `map` ham diziler veya özel kapsayıcılar yerine. Bkz: [ \<vektör >](../standard-library/vector.md), [ \<listesi >](../standard-library/list.md), ve [ \<harita >](../standard-library/map.md).
+- Ham diziler veya özel kapsayıcılar yerine `vector`, `list`ve `map` gibi standart kitaplık kapsayıcıları. [ C++ ](../standard-library/cpp-standard-library-header-files.md) Bkz. [\<vektör >](../standard-library/vector.md), [\<list >](../standard-library/list.md)ve [\<Map >](../standard-library/map.md).
 
-- C++ Standart Kitaplığı [algoritmaları](../standard-library/algorithm.md) el ile kodlanmışlar yerine.
+- C++El ile kodlanması yerine standart kitaplık [algoritmaları](../standard-library/algorithm.md) .
 
-- Özel durumlar, hata koşullarını raporlamak ve işlemek için.
+- Hata koşullarını bildirmek ve işlemek için özel durumlar.
 
-- Kilit içermeyen C++ Standart Kitaplığı kullanarak iş parçacıkları arası iletişim `std::atomic<>` (bkz [ \<atomik >](../standard-library/atomic.md)) diğer iş parçacıkları arası iletişim mekanizmaları yerine.
+- Standart Kitaplık `std::atomic<>` (bkz. C++ [\<atomik >](../standard-library/atomic.md)) kullanarak, diğer iş parçacıkları arası iletişim mekanizmaları yerine, kilit zincirsiz iş parçacıkları arası iletişim.
 
-- Satır içi [lambda işlevleri](../cpp/lambda-expressions-in-cpp.md) küçük işlevlerin ayrı ayrı uygulanması yerine.
+- Küçük işlevler yerine satır içi [Lambda işlevleri](../cpp/lambda-expressions-in-cpp.md) ayrı olarak uygulanır.
 
-- Aralık tabanlı for biçiminde koleksiyonları diziler, C++ Standart Kitaplığı kapsayıcıları ve Windows çalışma zamanı ile çalışan daha güçlü döngüler yazılmasını `for ( for-range-declaration : expression )`. Bu çekirdek dil desteğinin bir parçasıdır. Daha fazla bilgi için [aralık tabanlı for deyimi (C++)](../cpp/range-based-for-statement-cpp.md).
+- Aralık tabanlı, diziler, C++ standart kitaplık kapsayıcıları ve form `for ( for-range-declaration : expression )`Windows çalışma zamanı koleksiyonlarıyla çalışan daha güçlü döngüler yazmak için döngülere dayalıdır. Bu, çekirdek dil desteğinin bir parçasıdır. Daha fazla bilgi için bkz. [Aralık tabanlı for deyimleri (C++)](../cpp/range-based-for-statement-cpp.md).
 
-C++ dili de gelişmiştir. Aşağıdaki kod parçacıklarını karşılaştırın. Bu, c++'ta olması için öğeleri nasıl kullanılacağını gösterir:
+C++ Dilin kendisi de geliştirilmiştir. Aşağıdaki kod parçacıklarını karşılaştırın. Bu, şu şekilde C++kullanılan şeyleri gösterir:
 
 ```cpp
 #include <vector>
@@ -69,7 +69,7 @@ void f()
 } // end f()
 ```
 
-Modern C++'da aynı şeyi nasıl gerçekleştirilir aşağıda verilmiştir:
+Modern C++' de aynı şey nasıl gerçekleştirilir:
 
 ```cpp
 #include <memory>
@@ -91,45 +91,45 @@ void f()
 }
 ```
 
-Modern C++ programlamada, new/delete veya explicit özel durum bunun yerine akıllı işaretçiler kullanabileceğinizden işlemelerini kullanmak zorunda değilsiniz. Kullanırken **otomatik** ifadeden tür çıkarma ve [lambda işlevi](../cpp/lambda-expressions-in-cpp.md), daha hızlı kod yazabileceğiniz, kısaltabilir ve daha iyi anlayabilirsiniz. Hem de aralık tabanlı **için** döngü daha net, daha kolay ve hata potansiyeli daha az istenmeyen C stili daha **için** döngü. Uygulamanızı yazmak için Demirbaş ve birkaç satır kod kullanabilirsiniz. Ve kod özel durum açısından güvenli ve bellek-güvenli hale getirmek ve uğraşmanız hiçbir ayırma uğraşmazsınız veya hata kodlarıyla.
+Modern C++bir sürümünde, bunun yerine akıllı işaretçiler kullanabileceğiniz yeni/Delete ya da açık özel durum işleme kullanmanız gerekmez. **Otomatik** tür kesintisi ve [Lambda işlevini](../cpp/lambda-expressions-in-cpp.md)kullandığınızda, daha hızlı kod yazabilir, onu açabilir ve daha iyi anlayabilirsiniz. Ve Aralık tabanlı bir **for** döngüsü temizleyici, kullanımı kolay ve bir for döngüsü **için** C stili olmayan istenmeden hatalara karşı daha az yol açmaya yöneliktir. Uygulamanızı yazmak için en az kod satırı ile ortak bir şekilde birlikte kullanabilirsiniz. Bu kod özel durum güvenli ve bellek açısından güvenli hale getirebilirsiniz ve ile başa çıkmak/ayırmayı kaldırma ya da hata kodu yoktur.
 
-Modern C++ iki türde çok biçimlilik içerir: Şablonlar aracılığıyla derleme zamanı ve devralma ve sanallaştırmayla çalışma zamanı. Çok biçimlilik harika etkili olması için iki tür karıştırabilirsiniz. C++ Standart kitaplığı şablonu `shared_ptr` kendi görünüşe göre kolay tür silme işlemini gerçekleştirmek için iç sanal yöntemler kullanır. Ancak, bir şablon daha iyi bir seçimdir, sanallaştırmayı çok biçimlilik için aşırı kullanmayın. Şablonlar çok güçlü olabilir.
+Modern C++ iki tür çok biçimlilik içerir: derleme zamanı, şablonlar ve çalışma zamanı, devralma ve sanallaştırma aracılığıyla. İki tür biçimliliği harika bir etkiye karıştırabilirsiniz. Standart C++ kitaplık `shared_ptr` şablonu, Görünüşe göre daha seyrek bir tür elde etmek için iç sanal yöntemleri kullanır. Ancak, bir şablon daha iyi bir seçenek olduğunda çok biçimlilik için sanallaştırmayı kullanmayın. Şablonlar çok güçlü olabilir.
 
-Başka bir dil içindeki türlerin çoğu başvuru türleridir ve çok az sayıda değer türü olduğu özellikle yönetilen bir dil için C++ geldiği varsa C++ sınıflarının varsayılan değer türleri olduğunu bilirsiniz. Ancak, nesne odaklı programlamayı destekleyen çok biçimli davranışları etkinleştirmek için başvuru türleri olarak belirtebilirsiniz. Yararlı bir perspektif: değer türleri olan temel sınıflar ve çok biçimlilik destekleyen sanal işlevleri hakkında daha fazla bellek ve düzen denetimi, başvuru türleri hakkında daha fazla. Varsayılan olarak, değer türleri kopyalanabilirdir — her bir kopya oluşturucu ve kopya atama işlecine sahip. Bir başvuru türü belirttiğinizde, sınıfı kopyalanamaz yapın — kopya oluşturucu ve kopya atama işleci devre dışı — ve çok biçimlilik destekleyen sanal bir yıkıcı kullanın. Değer Ayrıca bunlar kopyalandığında, ayrı ayrı değiştirebileceğiniz iki bağımsız değer erişmenizi sağlayan içeriği hakkında türleridir. Ancak başvuru türleri hakkında daha fazla kimlik — ne tür bir nesne olduğuyla — ve bu nedenle çok biçimli türler olarak adlandırılır.
+Başka bir dilden geliyorsa C++ , özellikle türlerin çoğunun başvuru türleri olduğu ve çok az sayıda değer türü olduğu yönetilen bir dilden, sınıfların varsayılan olarak değer türleri olduğunu unutmayın. C++ Ancak, nesne odaklı programlamayı destekleyen polimorfik davranışı etkinleştirmek için bunları başvuru türleri olarak belirtebilirsiniz. Faydalı perspektif: değer türleri bellek ve düzen denetimi hakkında daha fazla bilgi için başvuru türleri temel sınıflar ve sanal işlevler hakkında çok biçimlilik desteği sağlar. Varsayılan olarak, değer türleri kopyalanabilir — her birinin bir kopya Oluşturucusu ve bir kopya atama işleci vardır. Bir başvuru türü belirttiğinizde, sınıfı kopyalanabilir dışı yapın — kopya oluşturucuyu ve kopya atamasını devre dışı bırakın — ve çok biçimliliği destekleyen bir sanal yıkıcı kullanın. Değer türleri aynı zamanda, kopyalandığı içerik hakkında, ayrı olarak değiştirebileceğiniz iki bağımsız değer sağlar. Ancak başvuru türleri kimlik ve ne tür bir nesne olduğunu — bu nedenle bazen çok biçimli türler olarak adlandırılır.
 
-Güç yeniden revaçta olduğundan, C++ bir Rönesans devri yaşıyor. Java ve C# gibi diller Programcı verimliliğinin önemli olduğu, ancak güç ve performans en önemli olduğunda bazı sınırlamalara gösterdikleri iyidir. Yüksek verimlilik ve güç, özellikle sınırlı donanımı olan cihazlarda için hiçbir şey modern C++ programlamadan daha iyi değildir.
+C++güç bir Renaissance yaşıyor. Java gibi diller ve C# programcı üretkenliği önemli olduğunda iyi, ancak güç ve performans paralandıklarında bunların sınırlamalarını gösterir. Özellikle sınırlı donanıma sahip cihazlarda yüksek verimlilik ve güç için, modern C++hiçbir şey olmaz.
 
-Yalnızca dil, geliştirme araçları da moderndir. Visual Studio geliştirme döngüsünün tüm bölümlerini sağlam ve verimli hale getirir. Uygulama Yaşam Döngüsü Yönetimi (ALM) araçları, IntelliSense gibi IDE geliştirmelerini, XAML ve hata ayıklama, oluşturma, gibi araç dostu mekanizmaları içerdiğinden ve birçok diğer aracı.
+Yalnızca dil modern değildir, geliştirme araçları da çok önemlidir. Visual Studio, geliştirme döngüsünün tüm parçalarını sağlam ve verimli hale getirir. Uygulama yaşam döngüsü yönetimi (ALM) araçlarını, IntelliSense gibi IDE geliştirmelerini, XAML gibi araç kullanımı kolay mekanizmalarını, oluşturma, hata ayıklamayı ve diğer birçok aracı içerir.
 
-Belgelerin bu bölümündeki makaleler, üst düzey yönergeler ve en önemli özellikleri için en iyi uygulamalar ve modern C++ programları yazmak için teknikleri sağlar.
+Belgelerinin bu bölümündeki makaleler, modern C++ programlar yazmak için en önemli özellikler ve teknikler için üst düzey yönergeler ve en iyi uygulamalar sağlar.
 
-- [C++ tür sistemi](../cpp/cpp-type-system-modern-cpp.md)
+- [C++Tür sistemi](../cpp/cpp-type-system-modern-cpp.md)
 
 - [Tek Düzen Başlatma ve Oluşturucuları Temsilci Olarak Görevlendirme](../cpp/uniform-initialization-and-delegating-constructors.md)
 
-- [Nesne yaşam süresi ve kaynak yönetimi](../cpp/object-lifetime-and-resource-management-modern-cpp.md)
+- [Nesne ömrü ve kaynak yönetimi](../cpp/object-lifetime-and-resource-management-modern-cpp.md)
 
 - [Nesnelerin Kaynakları (RAII)](../cpp/objects-own-resources-raii.md)
 
-- [Smart Pointers](../cpp/smart-pointers-modern-cpp.md)
+- [Akıllı Işaretçiler](../cpp/smart-pointers-modern-cpp.md)
 
-- [Derleme zamanı kapsüllemesi için Pimpl](../cpp/pimpl-for-compile-time-encapsulation-modern-cpp.md)
+- [Derleme zamanı Kapsüllemesi Için pımpl](../cpp/pimpl-for-compile-time-encapsulation-modern-cpp.md)
 
 - [Kapsayıcılar](../cpp/containers-modern-cpp.md)
 
 - [Algoritmalar](../cpp/algorithms-modern-cpp.md)
 
-- [Dize ve g/ç biçimlendirme (Modern C++)](../cpp/string-and-i-o-formatting-modern-cpp.md)
+- [Dize ve g/ç biçimlendirme (modern C++)](../cpp/string-and-i-o-formatting-modern-cpp.md)
 
-- [Hatalar ve özel durum işleme](../cpp/errors-and-exception-handling-modern-cpp.md)
+- [Hatalar ve özel durum Işleme](../cpp/errors-and-exception-handling-modern-cpp.md)
 
-- [ABI sınırlarında taşınabilirlik](../cpp/portability-at-abi-boundaries-modern-cpp.md)
+- [ABı sınırlarındaki taşınabilirlik](../cpp/portability-at-abi-boundaries-modern-cpp.md)
 
-Daha fazla bilgi için Stack Overflow bkz [C ++ 11'de, C++ deyimleri kullanım dışı](https://stackoverflow.com/questions/9299101/which-c-idioms-are-deprecated-in-c11).
+Daha fazla bilgi için, [c++ 11 ' de C++ ıoms 'nin kullanım dışı olduğunu](https://stackoverflow.com/questions/9299101/which-c-idioms-are-deprecated-in-c11)Stack Overflow makalesine bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [C++ Dil Başvurusu](../cpp/cpp-language-reference.md)<br/>
 [Lambda İfadeleri](../cpp/lambda-expressions-in-cpp.md)<br/>
 [C++ Standart Kitaplığı](../standard-library/cpp-standard-library-reference.md)<br/>
-[Visual C++ dil uyumluluğu](../overview/visual-cpp-language-conformance.md)
+[Microsoft C++ dil uygunluk tablosu](../overview/visual-cpp-language-conformance.md)

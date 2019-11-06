@@ -1,12 +1,21 @@
 ---
 title: '&lt;sayısal&gt; işlevleri'
-ms.date: 11/04/2016
+description: C++ Standart kitaplıkta &lt;sayısal&gt;üst bilgisi tarafından belirtilen işlev şablonlarını açıklar.
+ms.date: 10/30/2019
 f1_keywords:
 - numeric/std::accumulate
 - numeric/std::adjacent_difference
+- numeric/std::exclusive_scan
+- numeric/std::gcd
+- numeric/std::inclusive_scan
 - numeric/std::inner_product
 - numeric/std::iota
+- numeric/std::lcm
 - numeric/std::partial_sum
+- numeric/std::reduce
+- numeric/std::transform_exclusive_scan
+- numeric/std::transform_inclusive_scan
+- numeric/std::transform_reduce
 ms.assetid: a4b0449a-c80c-4a1d-8d9f-d7fcd0058f8b
 helpviewer_keywords:
 - std::accumulate [C++]
@@ -22,52 +31,55 @@ helpviewer_keywords:
 - std::transform_exclusive_scan [C++]
 - std::transform_inclusive_scan [C++]
 - std::transform_reduce [C++]
-ms.openlocfilehash: ab1e2942cbcfe568dd4c280c059fe0768493794c
-ms.sourcegitcommit: 4b0928a1a497648d0d327579c8262f25ed20d02e
+ms.openlocfilehash: 88a97a3d110c684090b78570077927e32541eed7
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72889965"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73627456"
 ---
 # <a name="ltnumericgt-functions"></a>&lt;sayısal&gt; işlevleri
 
 ## <a name="accumulate"></a>accumulate
 
-Ardışık kısmi toplamları hesaplayarak, belirli bir aralıktaki tüm öğelerin toplamını, bazı başlangıç değerleri de dahil olmak üzere, belirli bir ikili işlemi, toplamın dışında bir şekilde kullanarak hesaplar.
+Belirli bir aralıktaki tüm öğelerin toplamını, bazı başlangıç değerleri de dahil olmak üzere, ardışık kısmi toplamları hesaplayarak hesaplar. Ya da, belirtilen ikili işlemin art arda oluşan kısmi sonuçlarının sonucunu hesaplar.
 
 ```cpp
 template <class InputIterator, class Type>
-Type accumulate(InputIterator first, InputIterator last, Type val);
+Type accumulate(
+    InputIterator first,
+    InputIterator last,
+    Type init);
 
 template <class InputIterator, class Type, class BinaryOperation>
 Type accumulate(
     InputIterator first,
     InputIterator last,
-    Type val,
+    Type init,
     BinaryOperation binary_op);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *ilk* \
-Belirtilen bir ikili işleme göre toplanacak veya birleştirilecek aralıktaki ilk öğeyi ele almak için bir giriş Yineleyici.
+*Binary_Op*kullanarak toplamak veya birleştirmek için aralıktaki ilk öğeyi ele alarak bir giriş Yineleyici.
 
 *son* \
-Yinelenen birikmeye dahil edilen son öğenin ötesinde bir konum olan belirtilen bir ikili işleme göre toplanacak veya birleştirilecek aralıktaki son öğeyi ele alan bir giriş Yineleyici.
+*Binary_Op*kullanarak toplama veya birleştirme için aralıktaki son öğeyi ele alan bir giriş Yineleyici, bu, yinelenen birikme dahil olmak üzere son öğenin ötesinde bir konum.
 
-*val* \
-Her bir öğenin belirtilen bir ikili işleme göre eklendiği veya birleştirileceği bir başlangıç değeri.
+*init*\
+Her bir öğenin *Binary_Op*kullanılarak eklendiği veya birleştirileceği bir başlangıç değeri.
 
 *binary_op*\
-Belirtilen aralıktaki her öğeye ve önceki uygulamalarının sonucuna uygulanacak olan ikili işlem.
+Belirtilen aralıktaki her bir öğeye ve önceki uygulamalarının sonucuna uygulanacak olan ikili işlem.
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Dönüş değeri
 
-İlk şablon işlevi için belirtilen aralıktaki *Val* ve tüm öğelerin toplamı, ya da ikinci şablon işlevi için, Sum işlemi yerine, belirtilen ikili işlemi uygulamanın sonucu, (*partialresult, \*Iter)* ), yani *PartialResult* işlemin önceki uygulamalarının sonucudur ve `Iter` aralıktaki bir öğeyi işaret eden bir yineleyici.
+İlk şablon işlevi için belirtilen aralıktaki *init* ve tüm öğelerin toplamı veya ikinci şablon işlevi için, Sum işlemi yerine *Binary_Op* ikili işlemi uygulama sonucu, (* PartialResult, *in_ iter*), *PartialResult* işlemin önceki uygulamalarının sonucudur ve *in_iter* aralıktaki bir sonraki öğeyi işaret eden bir yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk değer, Aralık boş olduğunda iyi tanımlanmış bir sonuç olacağını Yöntem, bu durumda *Val* değeri döndürülür. İkili işlemin ilişkilendirilebilir veya iletişim olması gerekmez. Sonuç ilk değer *Val* olarak başlatılır ve *sonuç* olarak = `binary_op` (*sonuç*, <strong>\*</strong>`Iter`) Aralık aracılığıyla tekrarlayarak hesaplanır; burada `Iter`, art arda işaret eden bir yineleyici olur Aralık içindeki öğe. Aralığın geçerli olması ve karmaşıklığın, aralığın boyutuyla doğrusal olması gerekir. Yineleme sırasında kapanış sağlamak için ikili işlecin dönüş türü **türüne** dönüştürülebilir olmalıdır.
+İlk değer, Aralık boş olduğunda iyi tanımlanmış bir sonuç olmasını sağlar ve bu durumda *init* döndürülür. İkili işlemin ilişkilendirilebilir veya iletişim olması gerekmez. Sonuç başlangıç değeri *init* olarak başlatılır ve *sonuç* = *Binary_Op*(*Result*, *in_iter*), Aralık aracılığıyla yinelemeli olarak hesaplanır; burada *in_iter* her birine işaret eden bir yineleyici olur. aralıktaki birbirini izleyen öğe. Aralık geçerli olmalıdır ve karmaşıklık, aralığın boyutuyla doğrusal olmalıdır. Yineleme sırasında kapanış sağlamak için ikili işlecin dönüş türü **türüne** dönüştürülebilir olmalıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -170,7 +182,7 @@ The vector of partial products is:
 
 ## <a name="adjacent_difference"></a>adjacent_difference
 
-Her bir öğe arasındaki art arda gelen farkları ve bir giriş aralığındaki kendi öncellerini hesaplar ve bir hedef aralığında sonuçların çıktısını alır veya fark işleminin başka bir belirtilen bir ikili işlem tarafından değiştirildiği genelleştirilmiş bir yordamın sonucunu hesaplar.
+Her öğe ve bir giriş aralığındaki öncülü arasındaki birbirini izleyen farkları hesaplar. Sonuçları bir hedef aralığa verir. Veya, fark işleminin başka bir belirtilen ikili işlem tarafından değiştirildiği genelleştirilmiş bir yordamın sonucunu hesaplar.
 
 ```cpp
 template <class InputIterator, class OutIterator>
@@ -205,6 +217,9 @@ ForwardIterator2 adjacent_difference(
 
 ### <a name="parameters"></a>Parametreler
 
+*exec*\
+Bir yürütme ilkesi.
+
 *ilk* \
 Öğeleri karşılık gelen öncelleriyle fark kaydı yapılacak olan giriş aralığındaki ilk öğeyi ele alan veya değer çiftinin başka bir belirtilen ikili işlemde çalıştırılacağı bir giriş yineleyici.
 
@@ -215,9 +230,9 @@ ForwardIterator2 adjacent_difference(
 Fark dizilerinin veya belirtilen işlemin sonuçlarının depolanacağı hedef aralıktaki ilk öğeyi ele alan çıkış yineleyici.
 
 *binary_op*\
-Fark kayıt yordamındaki çıkarma işleminin yerini alan genelleştirilmiş işlemde uygulanacak olan ikili işlem.
+Fark kayıt yordamında çıkarma işleminin yerine, genelleştirilmiş işlemde uygulanacak olan ikili işlem.
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Dönüş değeri
 
 Hedef aralığın sonunu adresleyen çıkış yineleyicisi: `result` + (`last` - `first`).
 
@@ -225,11 +240,11 @@ Hedef aralığın sonunu adresleyen çıkış yineleyicisi: `result` + (`last` -
 
 Çıkış Yineleyici *sonucunun* , *ilk*olarak giriş yineleyicisi ile aynı Yineleyici olmasına izin verilir, böylece `adjacent_difference` değerleri yerinde hesaplanabilir.
 
-1, 2, 3 *, bir giriş aralığında bir değer dizisi*için, ilk şablon işlevi ardışık `partial_difference` değerlerini *bir*1 *, 2-* *a*1, a3- *a* *2,* hedef aralığında depolar.
+1, 2, 3 *, bir giriş aralığında bir değer dizisi*için, ilk şablon işlevi ardışık `adjacent_difference` değerlerini *bir*1 *, 2-* *a*1, a3- *a* *2,* hedef aralığında depolar.
 
-1, 2, 3 *, bir giriş aralığında bir değer dizisi*için, ikinci şablon işlevi `partial_difference` art arda *1, 2*`binary_op` *bir* *1,* *3 `binary_op`* 2 *' dir*. aralığı.
+*Bir değer dizisi*için 1, 2, *3, bir giriş* *aralığında, ikinci*şablon işlevi art arda *`adjacent_difference` değerlerini bir* *1, 2* *Binary_Op* *a*1, *3* *Binary_Op* *a*2 hedef Aralık.
 
-Uygulanan işlem sırası belirtildiğinden, ikili işlem `binary_op` ilişkilendirilebilir veya iletişim olması gerekmez.
+Uygulanan işlem sırası belirtildiğinden, *Binary_Op* ikili işleminin ilişkilendirilebilir veya iletişim olması gerekmez.
 
 ### <a name="example"></a>Örnek
 
@@ -294,66 +309,160 @@ int main( )
 
 ## <a name="exclusive_scan"></a>exclusive_scan
 
+Bir başlangıç değeri verilen bir Aralık üzerinde `std::plus<>()` veya belirtilen bir ikili işleci kullanarak özel ön ek toplamı işlemini hesaplar. Sonuçları belirtilen hedefte başlayan aralığa yazar. *Dışlamalı önek* toplamı *n*. girdi öğesinin *n*. Sum 'a dahil olmadığı anlamına gelir. Bir yürütme ilkesi bağımsız değişkeni içeren aşırı yüklemeler belirtilen ilkeye göre yürütülür.
+
 ```cpp
-template<class InputIterator, class OutputIterator, class T>
-OutputIterator exclusive_scan(InputIterator first, InputIterator last,
-OutputIterator result,
-T init);
-template<class InputIterator, class OutputIterator, class T, class BinaryOperation>
-OutputIterator exclusive_scan(InputIterator first, InputIterator last,
-OutputIterator result,
-T init, BinaryOperation binary_op);
-template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2, class T>
-ForwardIterator2 exclusive_scan(ExecutionPolicy&& exec, 
-ForwardIterator1 first, ForwardIterator1 last,
-ForwardIterator2 result,
-T init);
-template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2, class T,
-class BinaryOperation>
-ForwardIterator2 exclusive_scan(ExecutionPolicy&& exec, 
-ForwardIterator1 first, ForwardIterator1 last,
-ForwardIterator2 result,
-T init, BinaryOperation binary_op);
+template<class InputIterator, class OutputIterator, class Type>
+OutputIterator exclusive_scan(
+    InputIterator first,
+    InputIterator last,
+    OutputIterator result,
+    Type init);
+
+template<class InputIterator, class OutputIterator, class Type, class BinaryOperation>
+OutputIterator exclusive_scan(
+    InputIterator first,
+    InputIterator last,
+    OutputIterator result,
+    Type init,
+    BinaryOperation binary_op);
+
+template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2, class Type>
+ForwardIterator2 exclusive_scan(
+    ExecutionPolicy&& exec,
+    ForwardIterator1 first,
+    ForwardIterator1 last,
+    ForwardIterator2 result,
+    Type init);
+
+template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2, class Type, class BinaryOperation>
+ForwardIterator2 exclusive_scan(
+    ExecutionPolicy&& exec,
+    ForwardIterator1 first,
+    ForwardIterator1 last,
+    ForwardIterator2 result,
+    Type init,
+    BinaryOperation binary_op);
 ```
 
+### <a name="parameters"></a>Parametreler
+
+*exec*\
+Bir yürütme ilkesi.
+
+*ilk* \
+*Binary_Op*kullanarak toplamak veya birleştirmek için aralıktaki ilk öğeyi ele alarak bir giriş Yineleyici.
+
+*son* \
+*Binary_Op*kullanarak toplama veya birleştirme için aralıktaki son öğeyi ele alan bir giriş Yineleyici, bu, yinelenen birikme dahil olmak üzere son öğenin ötesinde bir konum.
+
+*sonuç*\
+Toplamların dizisinin veya belirtilen işlemin sonuçlarının depolanacağı hedef aralıktaki ilk öğeyi ele alan çıkış Yineleyici.
+
+*init*\
+Her bir öğenin *Binary_Op*kullanılarak eklendiği veya birleştirileceği bir başlangıç değeri.
+
+*binary_op*\
+Belirtilen aralıktaki her bir öğeye ve önceki uygulamalarının sonucuna uygulanacak olan ikili işlem.
+
+### <a name="return-value"></a>Dönüş değeri
+
+Hedef aralığın sonunu adresleyen bir çıkış yineleyicisi: *Result* + (önce*son* - ).
+
 ## <a name="gcd"></a>GCD
+
+K ve n tamsayıların en büyük ortak bölenini hesaplar.
 
 ```cpp
 template <class M, class N>
 constexpr common_type_t<M,N> gcd(M m, N n);
 ```
 
+### <a name="parameters"></a>Parametreler
+
+*e*, *n*\
+İntegral türünün değerleri.
+
+### <a name="return-value"></a>Dönüş değeri
+
+*K ve* *n*mutlak değerlerinin en büyük ortak bölenini döndürür veya hem *d* *hem de* sıfır sıfırsa sıfır. *R* veya *n* mutlak değerleri `common_type_t<M,N>`türünde değerler olarak gösterilemez, sonuçlar tanımsızdır.
+
 ## <a name="inclusive_scan"></a>inclusive_scan
+
+Bir dizi ön eki, bir Aralık üzerinde `std::plus<>()` veya belirtilen bir ikili işleci kullanarak bir başlangıç değeri verildiğinde hesaplar. Sonuçları belirtilen hedefte başlayan aralığa yazar. *Kapsamlı önek* toplamı *n*TH giriş öğesi *n*. Sum 'a dahil edilir. Bir yürütme ilkesi bağımsız değişkeni içeren aşırı yüklemeler belirtilen ilkeye göre yürütülür.
 
 ```cpp
 template<class InputIterator, class OutputIterator>
-OutputIterator inclusive_scan(InputIterator first, InputIterator last,
-OutputIterator result);
+OutputIterator inclusive_scan(
+    InputIterator first,
+    InputIterator last,
+    OutputIterator result);
+
 template<class InputIterator, class OutputIterator, class BinaryOperation>
-OutputIterator inclusive_scan(InputIterator first, InputIterator last,
-OutputIterator result,
-BinaryOperation binary_op);
-template<class InputIterator, class OutputIterator, class BinaryOperation, class T>
-OutputIterator inclusive_scan(InputIterator first, InputIterator last,
-OutputIterator result,
-BinaryOperation binary_op, T init);
+OutputIterator inclusive_scan(
+    InputIterator first,
+    InputIterator last,
+    OutputIterator result,
+    BinaryOperation binary_op);
+
+template<class InputIterator, class OutputIterator, class BinaryOperation, class Type>
+OutputIterator inclusive_scan(
+    InputIterator first,
+    InputIterator last,
+    OutputIterator result,
+    BinaryOperation binary_op,
+    Type init);
+
 template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2>
-ForwardIterator2 inclusive_scan(ExecutionPolicy&& exec, 
-ForwardIterator1 first, ForwardIterator1 last,
-ForwardIterator2 result);
+ForwardIterator2 inclusive_scan(
+    ExecutionPolicy&& exec,
+    ForwardIterator1 first,
+    ForwardIterator1 last,
+    ForwardIterator2 result);
+
 template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2,
 class BinaryOperation>
-ForwardIterator2 inclusive_scan(ExecutionPolicy&& exec, 
-ForwardIterator1 first, ForwardIterator1 last,
-ForwardIterator2 result,
-BinaryOperation binary_op);
+ForwardIterator2 inclusive_scan(
+    ExecutionPolicy&& exec,
+    ForwardIterator1 first,
+    ForwardIterator1 last,
+    ForwardIterator2 result,
+    BinaryOperation binary_op);
+
 template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2,
-class BinaryOperation, class T>
-ForwardIterator2 inclusive_scan(ExecutionPolicy&& exec, 
-ForwardIterator1 first, ForwardIterator1 last,
-ForwardIterator2 result,
-BinaryOperation binary_op, T init);
+class BinaryOperation, class Type>
+ForwardIterator2 inclusive_scan(
+    ExecutionPolicy&& exec,
+    ForwardIterator1 first,
+    ForwardIterator1 last,
+    ForwardIterator2 result,
+    BinaryOperation binary_op,
+    Type init);
 ```
+
+### <a name="parameters"></a>Parametreler
+
+*exec*\
+Bir yürütme ilkesi.
+
+*ilk* \
+*Binary_Op*kullanarak toplamak veya birleştirmek için aralıktaki ilk öğeyi ele alarak bir giriş Yineleyici.
+
+*son* \
+*Binary_Op*kullanarak toplama veya birleştirme için aralıktaki son öğeyi ele alan bir giriş Yineleyici, bu, yinelenen birikme dahil olmak üzere son öğenin ötesinde bir konum.
+
+*sonuç*\
+Toplamların dizisinin veya belirtilen işlemin sonuçlarının depolanacağı hedef aralıktaki ilk öğeyi ele alan çıkış Yineleyici.
+
+*init*\
+Her bir öğenin *Binary_Op*kullanılarak eklendiği veya birleştirileceği bir başlangıç değeri.
+
+*binary_op*\
+Belirtilen aralıktaki her bir öğeye ve önceki uygulamalarının sonucuna uygulanacak olan ikili işlem.
+
+### <a name="return-value"></a>Dönüş değeri
+
+Hedef aralığın sonunu adresleyen bir çıkış yineleyicisi: *Result* + (önce*son* - ).
 
 ## <a name="inner_product"></a>inner_product
 
@@ -365,16 +474,16 @@ Type inner_product(
     InputIterator1   first1,
     InputIterator1   last1,
     InputIterator2   first2,
-    Type             val);
+    Type             init);
 
 template <class InputIterator1, class InputIterator2, class Type, class BinaryOperation1, class BinaryOperation2>
 Type inner_product(
     InputIterator1   first1,
     InputIterator1   last1,
     InputIterator2   first2,
-    Type             val,
-    BinaryOperation1  binary_op1,
-    BinaryOperation2  binary_op2);
+    Type             init,
+    BinaryOperation1 binary_op1,
+    BinaryOperation2 binary_op2);
 ```
 
 ### <a name="parameters"></a>Parametreler
@@ -388,7 +497,7 @@ Type inner_product(
 *first2* \
 İkinci aralıktaki ilk öğeyi, ilk aralıktaki iç ürünü veya Genelleştirilmiş iç ürünü ele almak için bir giriş Yineleyici.
 
-*val* \
+*init*\
 Aralık arasındaki iç ürünün veya Genelleştirilmiş iç ürünün ekleneceği başlangıç değeri.
 
 *binary_op1*\
@@ -397,23 +506,23 @@ Aralık arasındaki iç ürünün veya Genelleştirilmiş iç ürünün eklenece
 *binary_op2*\
 İç ürünün genelleştirilme işleminde çarpma işleminin iç ürün öğe temelinde yerine geçen ikili işlem.
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Dönüş değeri
 
 İlk üye işlevi, öğe temelinde ürünlerin toplamını döndürür ve belirtilen başlangıç değerine ekler. Bu nedenle, ı ve *b* *i değer aralıkları*için şunu döndürür:
 
-`val` + (*1 \** *b*1) + (*bir*2 \* *b*2) +... + (*a*n \* *b*n)
+*init* + (*1 \** *b*1) + *(2 \** *b*2) +... + (*a*n \* *b*n)
 
-*değer* , `val` + (*a*ı \* *b*i) ile yinelemeli olarak değiştiriliyor.
+init + *init + (* *a*ı \* *b*i *) ile değiştirerek* .
 
 İkinci üye işlevi şunu döndürür:
 
-`val` *binary_op1* (*a*1 *binary_op2* *b*1) *binary_op1* (*bir*2 *binary_op2* *b*2) *binary_op1* ... *binary_op1* (*a*n *binary_op2* *b*n)
+*init* *binary_op1* (*1* *binary_op2* *b*1) *binary_op1* (*bir*2 *binary_op2* *b*2) *binary_op1* ... *binary_op1* (*a*n *binary_op2* *b*n)
 
-*değer* `val` *binary_op1* (*a*i *binary_op2* *b*i) ile yinelemeli olarak değiştiriliyor.
+Init ile init *binary_op1* (*a*ı *binary_op2* *b*i) arasında yinelemeli *olarak değiştiriliyor.*
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk değer, Aralık boş olduğunda iyi tanımlanmış bir sonuç olmasını sağlar ve bu durumda *Val* değeri döndürülür. İkili işlemlerin ilişkilendirilebilir veya iletişim olması gerekmez. Aralığın geçerli olması ve karmaşıklığın, aralığın boyutuyla doğrusal olması gerekir. Yineleme sırasında kapanış sağlamak için ikili işlecin dönüş türü **türüne** dönüştürülebilir olmalıdır.
+İlk değer, Aralık boş olduğunda iyi tanımlanmış bir sonuç olmasını sağlar. Bu durumda, *init* döndürülür. İkili işlemlerin ilişkilendirilebilir veya iletişim olması gerekmez. Aralık geçerli olmalıdır ve karmaşıklık, aralığın boyutuyla doğrusal olmalıdır. Yineleme sırasında kapanış sağlamak için ikili işlecin dönüş türü **türüne** dönüştürülebilir olmalıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -507,7 +616,7 @@ int main()
 
 ## <a name="iota"></a>harfi
 
-İlk öğeden başlayarak ve Aralık `[first,  last)`öğelerin her birinde bu değerin (` value++`) birbirini izleyen artışlarıyla doldurarak başlangıç değerini depolar.
+İlk öğeden başlayarak ve Aralık `[first,  last)`öğelerin her birinde bu değerin (`value++`) birbirini izleyen artışlarıyla doldurarak başlangıç değerini depolar.
 
 ```cpp
 template <class ForwardIterator, class Type>
@@ -576,7 +685,7 @@ constexpr common_type_t<M,N> lcm(M m, N n);
 
 ## <a name="partial_sum"></a>partial_sum
 
-İlk öğeden *i*. öğe aracılığıyla bir giriş aralığındaki bir dizi toplamı hesaplar ve bir hedef aralığın *i*. öğesinde her bir toplamın sonucunu depolar ya da toplam işlemin olduğu genelleştirilmiş bir yordamın sonucunu hesaplar belirtilen başka bir ikili işlem tarafından değiştirilmiş.
+İlk öğeden *n*. öğe aracılığıyla bir giriş aralığındaki bir dizi toplamı hesaplar ve bu her toplamın sonucunu bir hedef aralığın *n*. öğesinde depolar. Ya da, Sum işleminin başka bir belirtilen ikili işlem tarafından değiştirildiği genelleştirilmiş bir yordamın sonucunu hesaplar.
 
 ```cpp
 template <class InputIterator, class OutIt>
@@ -602,24 +711,24 @@ Belirtilen bir ikili işleme göre kısmen toplanan veya birleştirilen aralıkt
 Yineleyen birikime dahil son öğenin ötesinde konumlanmış belirtilen bir ikili işleme göre kısmen toplanan veya birleştirilen aralıktaki son öğeyi ele alan giriş yineleyici.
 
 *sonuç*\
-Kısmı toplamların dizilerinin veya belirtilen işlemin sonuçlarının depolanacağı hedef aralıktaki ilk öğeyi ele alan çıkış yineleyici.
+Kısmi toplamların serisini veya belirtilen ikili işlemin art arda sonuçlarını depolamak için bir hedef aralıktaki ilk öğeyi ele alan çıkış Yineleyici.
 
 *binary_op*\
-Kısmi toplam yordamındaki toplama işleminin yerini alan genelleştirilmiş işlemde uygulanacak olan ikili işlem.
+Kısmi toplama yordamındaki Sum işleminin yerine, genelleştirilmiş işlemde uygulanacak olan ikili işlem.
 
-### <a name="return-value"></a>Dönüş Değeri
+### <a name="return-value"></a>Dönüş değeri
 
-Hedef aralığın sonunu ele alarak çıkış yineleyici: `result` + (`last` - `first`),
+Hedef aralığın sonunu adresleyen bir çıkış yineleyicisi: *Result* + (önce*son* - ).
 
 ### <a name="remarks"></a>Açıklamalar
 
 Çıkış Yineleyici *sonucunun* , *ilk*olarak giriş yineleyicisi ile aynı Yineleyici olmasına izin verilir, böylece kısmi toplamların yerine hesaplanabilir.
 
-1, *2, 3, bir*giriş *aralığında bir*değerdizisi için, ilk şablon işlevi, *ı*. öğesinin ((((*a*1 + *a*2) + *a*3) tarafından verildiği hedef aralıktaki ardışık kısmi toplamları depolari).
+*Bir değer dizisi*için 1 *, 2,* ... *x, bir giriş*aralığında, ilk şablon işlevi, hedef aralıktaki birbirini izleyen kısmi toplamları depolar. *N*. öğe tarafından*verilen (bir*1 + *bir*2 *+ 3 +* ... *+ n)* .
 
-1 *, 2,* 3 *, bir giriş aralığında bir değer dizisi*için, ikinci şablon işlevi, "a `binary_op` *(((1 `binary_op`* *a*2)3) *bir*ı).
+1, *2, 3, bir*giriş *aralığında bir*değerdizisi için ikinci şablon işlevi, hedef aralıktaki art arda kısmi sonuçları depolar. *N*. öğesi tarafından veriliyor ((... *((1* *Binary_Op* *a*2) *Binary_Op* *a*3) *Binary_Op* ...) *Binary_Op* *a*n).
 
-İşlem sırası geçerli olduğundan, *Binary_Op* ikili işleminin ilişkilendirilebilir veya iletişim olması gerekmez.
+Uygulanan işlem sırası belirtildiğinden, *Binary_Op* ikili işleminin ilişkilendirilebilir veya iletişim olması gerekmez.
 
 ### <a name="example"></a>Örnek
 
@@ -683,123 +792,276 @@ int main( )
 
 ## <a name="reduce"></a>azal
 
+Belirli bir aralıktaki tüm öğeleri, büyük olasılıkla bazı başlangıç değerleri de dahil olmak üzere, bir rastgele ve belki de büyük olasılıkla kapalı sırada hesaplar. Ya da, belirtilen bir ikili işlemin sonuçlarını hesaplayarak azaltır. Bir yürütme ilkesi bağımsız değişkeni içeren aşırı yüklemeler belirtilen ilkeye göre yürütülür.
+
 ```cpp
 template<class InputIterator>
-typename iterator_traits<InputIterator>::value_type
-reduce(InputIterator first, InputIterator last);
-template<class InputIterator, class T>
-T reduce(InputIterator first, InputIterator last, T init);
-template<class InputIterator, class T, class BinaryOperation>
-T reduce(InputIterator first, InputIterator last, T init,
-BinaryOperation binary_op);
+typename iterator_traits<InputIterator>::value_type reduce(
+    InputIterator first,
+    InputIterator last);
+
+template<class InputIterator, class Type>
+Type reduce(
+    InputIterator first,
+    InputIterator last,
+    Type init);
+
+template<class InputIterator, class Type, class BinaryOperation>
+Type reduce(
+    InputIterator first,
+    InputIterator last,
+    Type init,
+    BinaryOperation binary_op);
+
 template<class ExecutionPolicy, class ForwardIterator>
-typename iterator_traits<ForwardIterator>::value_type
-reduce(ExecutionPolicy&& exec, 
-ForwardIterator first, ForwardIterator last);
-template<class ExecutionPolicy, class ForwardIterator, class T>
-T reduce(ExecutionPolicy&& exec, 
-ForwardIterator first, ForwardIterator last, T init);
-template<class ExecutionPolicy, class ForwardIterator, class T, class BinaryOperation>
-T reduce(ExecutionPolicy&& exec, 
-ForwardIterator first, ForwardIterator last, T init,
-BinaryOperation binary_op);
+typename iterator_traits<ForwardIterator>::value_type reduce(
+    ExecutionPolicy&& exec,
+    ForwardIterator first,
+    ForwardIterator last);
+
+template<class ExecutionPolicy, class ForwardIterator, class Type>
+Type reduce(
+    ExecutionPolicy&& exec,
+    ForwardIterator first,
+    ForwardIterator last,
+    Type init);
+
+template<class ExecutionPolicy, class ForwardIterator, class Type, class BinaryOperation>
+Type reduce(
+    ExecutionPolicy&& exec,
+    ForwardIterator first,
+    ForwardIterator last,
+    Type init,
+    BinaryOperation binary_op);
 ```
+
+### <a name="parameters"></a>Parametreler
+
+*exec*\
+Bir yürütme ilkesi.
+
+*ilk* \
+*Binary_Op*kullanarak toplamak veya birleştirmek için aralıktaki ilk öğeyi ele alarak bir giriş Yineleyici.
+
+*son* \
+*Binary_Op*kullanarak toplama veya birleştirme için aralıktaki son öğeyi ele alan bir giriş Yineleyici, bu, yinelenen birikme dahil olmak üzere son öğenin ötesinde bir konum.
+
+*sonuç*\
+Toplamların dizisinin veya belirtilen işlemin sonuçlarının depolanacağı hedef aralıktaki ilk öğeyi ele alan çıkış Yineleyici.
+
+*init*\
+Her bir öğenin *Binary_Op*kullanılarak eklendiği veya birleştirileceği bir başlangıç değeri.
+
+*binary_op*\
+Belirtilen aralıktaki her bir öğeye ve önceki uygulamalarının sonucuna uygulanacak olan ikili işlem.
+
+### <a name="return-value"></a>Dönüş değeri
+
+*Binary_Op* veya `std::plus<>()` 'in *Init* 'e ve belirtilen aralıktaki tüm öğelere (* PartialResult, *in_iter*) uygulanması sonucu, yani *PartialResult* , işlemin önceki uygulamalarının sonucudur ve *in_iter* aralıktaki bir öğeyi işaret eden bir yineleyici. *İnit*belirtmeyen aşırı yüklerde kullanılan *init* değeri `typename iterator_traits<InputIterator>::value_type{}`eşdeğerdir.
+
+### <a name="remarks"></a>Açıklamalar
+
+*Binary_Op* ilişkilendirilebilir ve iletişim olmadığı takdirde `reduce` davranışı belirleyici değildir. *Binary_Op* herhangi bir öğeyi değiştirirse veya \[Aralık içinde *ilk*, *son*] ve dahil olmak üzere herhangi bir yineleyiciyi geçersiz kılan davranış tanımsızdır.
 
 ## <a name="transform_exclusive_scan"></a>transform_exclusive_scan
 
+Bir aralığın öğelerini belirtilen birli işleçle dönüştürür, sonra bir ilk değer olarak `std::plus<>()` veya Aralık üzerinde belirtilen bir ikili işleç kullanarak bir özel önek toplamı işlemi hesaplar. Sonuçları belirtilen hedefte başlayan aralığa yazar. *Dışlamalı önek* toplamı *n*. girdi öğesinin *n*. Sum 'a dahil olmadığı anlamına gelir. Bir yürütme ilkesi bağımsız değişkeni içeren aşırı yüklemeler belirtilen ilkeye göre yürütülür. Toplama, rastgele bir sırayla gerçekleştirilebilir.
+
 ```cpp
-template<class InputIterator, class OutputIterator, class T,
-class BinaryOperation, class UnaryOperation>
-OutputIterator transform_exclusive_scan(InputIterator first, InputIterator last,
-OutputIterator result,
-T init,
-BinaryOperation binary_op,
-UnaryOperation unary_op);
-template<class ExecutionPolicy,
-class ForwardIterator1, class ForwardIterator2, class T,
-class BinaryOperation, class UnaryOperation>
-ForwardIterator2 transform_exclusive_scan(ExecutionPolicy&& exec, 
-ForwardIterator1 first, ForwardIterator1 last,
-ForwardIterator2 result,
-T init,
-BinaryOperation binary_op,
-UnaryOperation unary_op);
+template<class InputIterator, class OutputIterator, class Type, class BinaryOperation, class UnaryOperation>
+OutputIterator transform_exclusive_scan(
+    InputIterator first,
+    InputIterator last,
+    OutputIterator result,
+    Type init,
+    BinaryOperation binary_op,
+    UnaryOperation unary_op);
+
+template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2, class Type, class BinaryOperation, class UnaryOperation>
+ForwardIterator2 transform_exclusive_scan(
+    ExecutionPolicy&& exec,
+    ForwardIterator1 first,
+    ForwardIterator1 last,
+    ForwardIterator2 result,
+    Type init,
+    BinaryOperation binary_op,
+    UnaryOperation unary_op);
 ```
+
+### <a name="parameters"></a>Parametreler
+
+*exec*\
+Bir yürütme ilkesi.
+
+*ilk* \
+*Binary_Op*kullanarak toplamak veya birleştirmek için aralıktaki ilk öğeyi ele alarak bir giriş Yineleyici.
+
+*son* \
+*Binary_Op*kullanarak toplama veya birleştirme için aralıktaki son öğeyi ele alan bir giriş Yineleyici, bu, yinelenen birikme dahil olmak üzere son öğenin ötesinde bir konum.
+
+*sonuç*\
+Toplamların dizisinin veya belirtilen işlemin sonuçlarının depolanacağı hedef aralıktaki ilk öğeyi ele alan çıkış Yineleyici.
+
+*init*\
+Her bir öğenin *Binary_Op*kullanılarak eklendiği veya birleştirileceği bir başlangıç değeri.
+
+*binary_op*\
+Belirtilen aralıktaki her bir öğeye ve önceki uygulamalarının sonucuna uygulanacak olan ikili işlem.
+
+*unary_op*\
+Belirtilen aralıktaki her öğeye uygulanacak birli işlem.
 
 ## <a name="transform_inclusive_scan"></a>transform_inclusive_scan
 
+Bir aralığın öğelerini belirtilen birli işleçle dönüştürür, ardından `std::plus<>()` veya Aralık üzerinde belirtilen bir ikili işleci kullanarak bir ilk değer verildiğinde bir kapsamlı önek toplamı işlemi hesaplar Sonuçları belirtilen hedefte başlayan aralığa yazar. *Kapsamlı önek* toplamı *n*TH giriş öğesi *n*. Sum 'a dahil edilir. Bir yürütme ilkesi bağımsız değişkeni içeren aşırı yüklemeler belirtilen ilkeye göre yürütülür. Toplama, rastgele bir sırayla gerçekleştirilebilir.
+
 ```cpp
-template<class InputIterator, class OutputIterator,
-class BinaryOperation, class UnaryOperation>
-OutputIterator transform_inclusive_scan(InputIterator first, InputIterator last,
-OutputIterator result,
-BinaryOperation binary_op,
-UnaryOperation unary_op);
-template<class InputIterator, class OutputIterator,
-class BinaryOperation, class UnaryOperation, class T>
-OutputIterator transform_inclusive_scan(InputIterator first, InputIterator last,
-OutputIterator result,
-BinaryOperation binary_op,
-UnaryOperation unary_op,
-T init);
-template<class ExecutionPolicy,
-class ForwardIterator1, class ForwardIterator2,
-class BinaryOperation, class UnaryOperation>
-ForwardIterator2 transform_inclusive_scan(ExecutionPolicy&& exec, 
-ForwardIterator1 first, ForwardIterator1 last,
-ForwardIterator2 result,
-BinaryOperation binary_op,
-UnaryOperation unary_op);
-template<class ExecutionPolicy,
-class ForwardIterator1, class ForwardIterator2,
-class BinaryOperation, class UnaryOperation, class T>
-ForwardIterator2 transform_inclusive_scan(ExecutionPolicy&& exec, 
-ForwardIterator1 first, ForwardIterator1 last,
-ForwardIterator2 result,
-BinaryOperation binary_op,
-UnaryOperation unary_op,
-T init);
+template<class InputIterator, class OutputIterator, class BinaryOperation, class UnaryOperation>
+OutputIterator transform_inclusive_scan(
+    InputIterator first,
+    InputIterator last,
+    OutputIterator result,
+    BinaryOperation binary_op,
+    UnaryOperation unary_op);
+
+template<class InputIterator, class OutputIterator, class BinaryOperation, class UnaryOperation, class Type>
+OutputIterator transform_inclusive_scan(
+    InputIterator first,
+    InputIterator last,
+    OutputIterator result,
+    BinaryOperation binary_op,
+    UnaryOperation unary_op,
+    Type init);
+
+template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2, class BinaryOperation, class UnaryOperation>
+ForwardIterator2 transform_inclusive_scan(
+    ExecutionPolicy&& exec,
+    ForwardIterator1 first,
+    ForwardIterator1 last,
+    ForwardIterator2 result,
+    BinaryOperation binary_op,
+    UnaryOperation unary_op);
+
+template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2, class BinaryOperation, class UnaryOperation, class Type>
+ForwardIterator2 transform_inclusive_scan(
+    ExecutionPolicy&& exec,
+    ForwardIterator1 first,
+    ForwardIterator1 last,
+    ForwardIterator2 result,
+    BinaryOperation binary_op,
+    UnaryOperation unary_op,
+    Type init);
 ```
+
+### <a name="parameters"></a>Parametreler
+
+*exec*\
+Bir yürütme ilkesi.
+
+*ilk* \
+*Binary_Op*kullanarak toplamak veya birleştirmek için aralıktaki ilk öğeyi ele alarak bir giriş Yineleyici.
+
+*son* \
+*Binary_Op*kullanarak toplama veya birleştirme için aralıktaki son öğeyi ele alan bir giriş Yineleyici, bu, yinelenen birikme dahil olmak üzere son öğenin ötesinde bir konum.
+
+*sonuç*\
+Toplamların dizisinin veya belirtilen işlemin sonuçlarının depolanacağı hedef aralıktaki ilk öğeyi ele alan çıkış Yineleyici.
+
+*binary_op*\
+Belirtilen aralıktaki her bir öğeye ve önceki uygulamalarının sonucuna uygulanacak olan ikili işlem.
+
+*unary_op*\
+Belirtilen aralıktaki her öğeye uygulanacak birli işlem.
+
+*init*\
+Her bir öğenin *Binary_Op*kullanılarak eklendiği veya birleştirileceği bir başlangıç değeri.
 
 ## <a name="transform_reduce"></a>transform_reduce
 
+Bir dizi öğeyi dönüştürür, sonra dönüştürülmüş öğeleri rastgele sırada azaltan bir functor uygular. Etkin olarak, bir `transform` ardından `reduce`.
+
 ```cpp
-template<class InputIterator1, class InputIterator2, class T>
-T transform_reduce(InputIterator1 first1, InputIterator1 last1,
-InputIterator2 first2,
-T init);
-template<class InputIterator1, class InputIterator2, class T,
-class BinaryOperation1, class BinaryOperation2>
-T transform_reduce(InputIterator1 first1, InputIterator1 last1,
-InputIterator2 first2,
-T init,
-BinaryOperation1 binary_op1,
-BinaryOperation2 binary_op2);
-template<class InputIterator, class T,
-class BinaryOperation, class UnaryOperation>
-T transform_reduce(InputIterator first, InputIterator last,
-T init,
-BinaryOperation binary_op, UnaryOperation unary_op);
-template<class ExecutionPolicy,
-class ForwardIterator1, class ForwardIterator2, class T>
-T transform_reduce(ExecutionPolicy&& exec, 
-ForwardIterator1 first1, ForwardIterator1 last1,
-ForwardIterator2 first2,
-T init);
-template<class ExecutionPolicy,
-class ForwardIterator1, class ForwardIterator2, class T,
-class BinaryOperation1, class BinaryOperation2>
-T transform_reduce(ExecutionPolicy&& exec, 
-ForwardIterator1 first1, ForwardIterator1 last1,
-ForwardIterator2 first2,
-T init,
-BinaryOperation1 binary_op1,
-BinaryOperation2 binary_op2);
-template<class ExecutionPolicy,
-class ForwardIterator, class T,
-class BinaryOperation, class UnaryOperation>
-T transform_reduce(ExecutionPolicy&& exec, 
-ForwardIterator first, ForwardIterator last,
-T init,
-BinaryOperation binary_op, UnaryOperation unary_op);
+template<class InputIterator1, class InputIterator2, class Type>
+Type transform_reduce(
+    InputIterator1 first1,
+    InputIterator1 last1,
+    InputIterator2 first2,
+    Type init);
+
+template<class InputIterator1, class InputIterator2, class Type, class BinaryOperation1, class BinaryOperation2>
+Type transform_reduce(
+    InputIterator1 first1,
+    InputIterator1 last1,
+    InputIterator2 first2,
+    Type init,
+    BinaryOperation1 binary_op1,
+    BinaryOperation2 binary_op2);
+
+template<class InputIterator, class Type, class BinaryOperation, class UnaryOperation>
+Type transform_reduce(
+    InputIterator first,
+    InputIterator last,
+    Type init,
+    BinaryOperation binary_op,
+    UnaryOperation unary_op);
+
+template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2, class Type>
+Type transform_reduce(
+    ExecutionPolicy&& exec,
+    ForwardIterator1 first1,
+    ForwardIterator1 last1,
+    ForwardIterator2 first2,
+    Type init);
+
+template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2, class Type, class BinaryOperation1, class BinaryOperation2>
+Type transform_reduce(
+    ExecutionPolicy&& exec,
+    ForwardIterator1 first1,
+    ForwardIterator1 last1,
+    ForwardIterator2 first2,
+    Type init,
+    BinaryOperation1 binary_op1,
+    BinaryOperation2 binary_op2);
+
+template<class ExecutionPolicy, class ForwardIterator, class Type, class BinaryOperation, class UnaryOperation>
+Type transform_reduce(
+    ExecutionPolicy&& exec,
+    ForwardIterator first,
+    ForwardIterator last,
+    Type init,
+    BinaryOperation binary_op,
+    UnaryOperation unary_op);
 ```
+
+### <a name="parameters"></a>Parametreler
+
+*exec*\
+Bir yürütme ilkesi.
+
+*ilk* \
+*Binary_Op*kullanarak toplamak veya birleştirmek için aralıktaki ilk öğeyi ele alarak bir giriş Yineleyici.
+
+*first1* \
+*Binary_op1*kullanarak toplamak veya birleştirmek için aralıktaki ilk öğeyi ele alarak bir giriş Yineleyici.
+
+*son* \
+*Binary_Op*kullanarak toplama veya birleştirme için aralıktaki son öğeyi ele alan bir giriş Yineleyici, bu, yinelenen birikme dahil olmak üzere son öğenin ötesinde bir konum.
+
+*last1* \
+*Binary_op1*kullanarak toplama veya birleştirme için aralıktaki son öğeyi ele alan bir giriş Yineleyici, bu, yinelenen birikme dahil olmak üzere son öğenin ötesinde bir konum.
+
+*sonuç*\
+Toplamların dizisinin veya belirtilen işlemin sonuçlarının depolanacağı hedef aralıktaki ilk öğeyi ele alan çıkış Yineleyici.
+
+*init*\
+Her bir öğenin *Binary_Op*kullanılarak eklendiği veya birleştirileceği bir başlangıç değeri.
+
+*binary_op*\
+Belirtilen aralıktaki her bir öğeye ve önceki uygulamalarının sonucuna uygulanacak olan ikili işlem.
+
+*unary_op*\
+Belirtilen aralıktaki her öğeye uygulanacak birli işlem.
+
+### <a name="return-value"></a>Dönüş değeri
+
+Dönüştürülen daha sonra sonuç azalır.

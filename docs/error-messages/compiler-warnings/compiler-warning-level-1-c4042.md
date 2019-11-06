@@ -6,30 +6,30 @@ f1_keywords:
 helpviewer_keywords:
 - C4042
 ms.assetid: e4bd861b-1194-426b-bf79-68c5b021eb0a
-ms.openlocfilehash: 99f4f45aad82aa9898dad4cffb60b8e3311ddc9f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: db7f0425c3752c20ca8c5d4b6c95845ff64475c5
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62152149"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73627034"
 ---
 # <a name="compiler-warning-level-1-c4042"></a>Derleyici Uyarısı (düzey 1) C4042
 
-'identifier': hatalı depolama sınıfına sahip
+' Identifier ': Hatalı depolama sınıfına sahip
 
-Belirtilen depolama sınıfı, şu tanımlayıcıyla bu bağlamda kullanılamaz. Bunun yerine, derleyici varsayılan depolama sınıfı kullanır:
+Belirtilen depolama sınıfı bu bağlamda bu tanımlayıcıyla kullanılamaz. Derleyici bunun yerine varsayılan depolama sınıfını kullanır:
 
-- `extern`, varsa *tanımlayıcı* bir işlevdir.
+- *tanımlayıcı* bir fonksiyonda ise `extern`.
 
-- **Otomatik**, *tanımlayıcı* biçimsel parametre veya yerel değişken.
+- *tanımlayıcı* , bir biçimsel parametre veya yerel değişken ise **Auto**.
 
-- Hiçbir depolama sınıfı, *tanımlayıcı* genel bir değişkendir.
+- *Tanımlayıcı* genel bir değişkense, depolama sınıfı yok.
 
-Bu uyarı bir depolama sınıfı dışındaki belirterek kaynaklanabilir **kaydetme** parametre bildirimi.
+Bu uyarı, bir parametre bildiriminde **yazmaç** dışında bir depolama sınıfı belirtilerek oluşabilir.
 
 Aşağıdaki örnek C4042 oluşturur
 
-```
+```cpp
 // C4042.cpp
 // compile with: /W1 /LD
 int func2( __declspec( thread ) int tls_i )    // C4042
