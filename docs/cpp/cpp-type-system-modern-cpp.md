@@ -66,11 +66,11 @@ Aşağıdaki tablo en sık kullanılan temel türleri listeler:
 |Tür|Boyut|Yorum|
 |----------|----------|-------------|
 |int|4 bayt|Tamsayı değerler için varsayılan seçim.|
-|çift|8 bayt|Kayan nokta değerleri için varsayılan seçim.|
+|double|8 bayt|Kayan nokta değerleri için varsayılan seçim.|
 |bool|1 bayt|True veya false olabilen değerleri temsil eder.|
 |char|1 bayt|Daha eski C stili dizelerde veya std::string nesnelerde UNICODE'a dönüştürülmesi hiçbir zaman gerekmeyecek ASCII karakterler için kullanın.|
 |wchar_t|2 bayt|UNICODE biçiminde (Windows'ta UTF-16, diğer işletim sistemlerinde değişiklik gösterebilir) kodlanmış olabilecek "geniş" karakter değerlerini temsil eder. Bu, `std::wstring` türünde dizelerde kullanılan karakter türüdür.|
-|imzasız &nbsp;char|1 bayt|C++yerleşik `byte` türüne sahip değildir.  Bayt değerini göstermek için unsigned char kullanın.|
+|unsigned&nbsp;char|1 bayt|C++yerleşik `byte` türüne sahip değildir.  Bayt değerini göstermek için unsigned char kullanın.|
 |unsigned int|4 bayt|Bit bayrakları için varsayılan seçimdir.|
 |long long|8 bayt|Çok büyük tamsayı değerlerini temsil eder.|
 
