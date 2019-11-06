@@ -35,12 +35,12 @@ helpviewer_keywords:
 - mbsnbcat_s_l function
 - tcsncat function
 ms.assetid: 2c9e9be7-d979-4a54-8ada-23428b6648a9
-ms.openlocfilehash: 8a3f66f8fc8d4fd659880e8793fdaae635f9f7ba
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: a148f4be503ee793e4e36855233edfc8fa8f165a
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70952268"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73624328"
 ---
 # <a name="_mbsnbcat_s-_mbsnbcat_s_l"></a>_mbsnbcat_s, _mbsnbcat_s_l
 
@@ -105,9 +105,9 @@ Başarılıysa sıfır; Aksi takdirde, bir hata kodu.
 
 |**HD**|*sizeInBytes*|*YN*|Dönüş değeri|
 |------------|-------------------|-----------|------------------|
-|**DEĞER**|Kaydedilmemiş|Kaydedilmemiş|**EINVAL**|
-|Any|<= 0|Kaydedilmemiş|**EINVAL**|
-|Any|Kaydedilmemiş|**DEĞER**|**EINVAL**|
+|**DEĞER**|Kaydedilmemiş|Kaydedilmemiş|**EıNVAL**|
+|Kaydedilmemiş|< = 0|Kaydedilmemiş|**EıNVAL**|
+|Kaydedilmemiş|Kaydedilmemiş|**DEĞER**|**EıNVAL**|
 
 Hata koşullarından herhangi biri gerçekleşirse, işlev [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklanan şekilde geçersiz bir parametre hatası oluşturur. Hata işlenirse, işlev **EINVAL** döndürür ve **errno** 'u **EINVAL**olarak ayarlar.
 
@@ -119,7 +119,7 @@ Hata koşullarından herhangi biri gerçekleşirse, işlev [parametre doğrulama
 
 ' C++De, bu işlevlerin kullanımı şablon aşırı yüklemeleri tarafından basitleştirilmiştir; aşırı yüklemeler arabellek uzunluğunu otomatik olarak çıkarabilir ve böylece bir boyut bağımsız değişkeni belirtme gereksinimini ortadan kaldırabilir ve daha eski, daha az güvenli işlevlerini değiştirmek için daha yeni, daha güvenli işlevlerini otomatik olarak kullanabilir. Daha fazla bilgi için bkz. [Güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 
-Bu işlevlerin hata ayıklama sürümleri ilk olarak arabelleği 0xFD ile doldurur. Bu davranışı devre dışı bırakmak için [_Crtsetdebugfillthreshold](crtsetdebugfillthreshold.md)kullanın.
+Bu işlevlerin hata ayıklama Kitaplığı sürümleri ilk olarak arabelleği 0xFE ile doldurur. Bu davranışı devre dışı bırakmak için [_Crtsetdebugfillthreshold](crtsetdebugfillthreshold.md)kullanın.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 

@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C4103
 ms.assetid: 9021b514-375e-4d62-b261-ccb06f299e8e
-ms.openlocfilehash: 15d7403d461467e33b7e89957821a311179d33a7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 456e7d393eb751e99c1969619ccfdcc649193c75
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62300296"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73627058"
 ---
 # <a name="compiler-warning-level-1-c4103"></a>Derleyici Uyarısı (düzey 1) C4103
 
-'filename': #pragma pack(pop) eksik olduğundan üst bilgi eklendikten sonra değiştirilen hizalama olabilir
+' filename ': üst bilgi eklendikten sonra hizalama değişti, nedeni eksik #pragma Pack (pop) olabilir
 
-Paketleme sınıfların düzenini etkiler ve sık, üstbilgi dosyaları arasında değişiklikleri paketleme, olabilir sorunları.
+Paketleme, sınıfların yerleşimini etkiler ve genellikle, üst bilgi dosyaları arasında değişiklik yaparken sorun olabilir.
 
-#Pragma kullanın [paketi](../../preprocessor/pack.md)bu uyarıyı çözmek için üst bilgi dosyasını çıkmadan önce (pop).
+Bu uyarıyı çözmek için üstbilgi dosyasından çıkmadan önce #pragma [Pack](../../preprocessor/pack.md)(pop) kullanın.
 
-Aşağıdaki örnek, C4103 oluşturur:
+Aşağıdaki örnek C4103 oluşturur:
 
-```
+```cpp
 // C4103.h
 #pragma pack(push, 4)
 
@@ -35,7 +35,7 @@ Aşağıdaki örnek, C4103 oluşturur:
 
 Ardından,
 
-```
+```cpp
 // C4103.cpp
 // compile with: /LD /W1
 #include "c4103.h"   // C4103

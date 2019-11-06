@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C4047
 ms.assetid: b75ad6fb-5c93-4434-a85f-c4083051a5de
-ms.openlocfilehash: 87c9e39e5dac40341adc63af45cc0e460806c736
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0bfbcb0e88380dfcc21eb724fc3682ac66b655e6
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62388832"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73624944"
 ---
 # <a name="compiler-warning-level-1-c4047"></a>Derleyici Uyarısı (düzey 1) C4047
 
-'operator': 'ıdentifier1' farklıdır, 'identifier2' nden yöneltme düzeyi
+' operator ': ' Identifier1 ', ' identifier2 ' öğesinden yöneltme seviyelerine göre farklılık gösterir
 
-Bir işaretçi değişkenine (bir düzey yöneltme), bir değişken (iki, yöneltme düzeyi) ve benzeri için işaret eden başka bir işaretçiye işaret edebilir.
+Bir işaretçi bir değişkene işaret edebilir (bir yöneltme düzeyi), bir değişkene işaret eden başka bir işaretçiye (iki yöneltme düzeyi) ve bu şekilde devam edebilir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C4047 oluşturur:
+Aşağıdaki örnek C4047 oluşturur:
 
-```
+```c
 // C4047.c
 // compile with: /W1
 
@@ -41,9 +41,9 @@ int main() {
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C4047 oluşturur:
+Aşağıdaki örnek C4047 oluşturur:
 
-```
+```c
 // C4047b.c
 // compile with: /W1
 #include <stdio.h>

@@ -32,12 +32,12 @@ helpviewer_keywords:
 - strings [C++], converting from floating point
 - CVTBUFSIZE
 ms.assetid: 0a8d8a26-5940-4ae3-835e-0aa6ec1b0744
-ms.openlocfilehash: 7ecb6fe105d8a976979f91d38c9e536b10989310
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: da36641f6a3ba8dc1da0894aedbfa390d2e796ae
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70956117"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73625043"
 ---
 # <a name="_gcvt_s"></a>_gcvt_s
 
@@ -82,9 +82,9 @@ Başarılıysa sıfır. Geçersiz bir parametre nedeniyle hata oluşursa (geçer
 
 |*arabelleğin*|*sizeInBytes*|*value*|*54*|döndürülmesini|*Arabellekteki* değer|
 |--------------|-------------------|-------------|--------------|------------|-----------------------|
-|**DEĞER**|Kaydedilmemiş|Kaydedilmemiş|Kaydedilmemiş|**EINVAL**|Değiştirilmedi.|
-|**Null** değil (geçerli belleğe işaret eder)|sıfır|Kaydedilmemiş|Kaydedilmemiş|**EINVAL**|Değiştirilmedi.|
-|**Null** değil (geçerli belleğe işaret eder)|Kaydedilmemiş|Kaydedilmemiş|>= *sizeInBytes*|**EINVAL**|Değiştirilmedi.|
+|**DEĞER**|Kaydedilmemiş|Kaydedilmemiş|Kaydedilmemiş|**EıNVAL**|Değiştirilmedi.|
+|**Null** değil (geçerli belleğe işaret eder)|sıfır|Kaydedilmemiş|Kaydedilmemiş|**EıNVAL**|Değiştirilmedi.|
+|**Null** değil (geçerli belleğe işaret eder)|Kaydedilmemiş|Kaydedilmemiş|>= *sizeInBytes*|**EıNVAL**|Değiştirilmedi.|
 
 **Güvenlik Sorunları**
 
@@ -96,13 +96,13 @@ Başarılıysa sıfır. Geçersiz bir parametre nedeniyle hata oluşursa (geçer
 
 ' C++De, bu işlevin kullanılması şablon aşırı yüklemesiyle basitleştirilmiştir; aşırı yükleme, arabellek uzunluğunu otomatik olarak çıkarabilir ve bir boyut bağımsız değişkeni belirtme gereksinimini ortadan kaldırır. Daha fazla bilgi için bkz. [Güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 
-Bu işlevin hata ayıklama sürümü ilk olarak arabelleği 0xFD ile doldurur. Bu davranışı devre dışı bırakmak için [_Crtsetdebugfillthreshold](crtsetdebugfillthreshold.md)kullanın.
+Bu işlevin hata ayıklama sürümü ilk olarak arabelleği 0xFE ile doldurur. Bu davranışı devre dışı bırakmak için [_Crtsetdebugfillthreshold](crtsetdebugfillthreshold.md)kullanın.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|İsteğe bağlı başlık|
 |-------------|---------------------|---------------------|
-|**_gcvt_s**|\<Stdlib. h >|\<hata. h >|
+|**_gcvt_s**|\<Stdlib. h >|\<hatası. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

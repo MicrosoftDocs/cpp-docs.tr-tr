@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C4010
 ms.assetid: d607a9ff-8f8f-45c0-b07b-3b2f439e5485
-ms.openlocfilehash: 40c6724daf17c1c0b546bb7bc64bb704f732e8d6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 045b3f6e615e11c24caa9a088baf6ea9f6448efb
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62386557"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73627324"
 ---
 # <a name="compiler-warning-level-1-c4010"></a>Derleyici Uyarısı (düzey 1) C4010
 
-tek satır açıklama satır devam ettirme karakteri içeriyor
+Tek satırlı açıklama satır devamlılık karakteri içerir
 
-Tarafından sunulan bir tek satır açıklama / /, ters eğik çizgi içerir (\\) satır devam ettirme karakteri olarak görev yapar. Derleyici, bir devamlılık sonraki satırını göz önünde bulundurur ve açıklama olarak değerlendirir.
+//Tarafından tanıtılan tek satırlık bir açıklama, satır devamlılık karakteri görevi gören bir ters eğik çizgi (\\) içerir. Derleyici sonraki satırı bir devamlılık olarak değerlendirir ve bunu bir yorum olarak değerlendirir.
 
-Bazı sözdizimi düzenleyicileri devamlılık karakter olarak bir açıklama satırı göstermez yönelik. Sözdizimi renklendirme bu uyarıyı neden olan tüm satırları yoksay.
+Bazı sözdizimi temelli düzenleyiciler, bir yorum olarak devamlılık karakteri izleyen çizgiyi göstermez. Bu uyarıya neden olan satırlarda söz dizimi renklendirmesini yoksay.
 
-Aşağıdaki örnek, C4010 oluşturur:
+Aşağıdaki örnek C4010 oluşturur:
 
-```
+```cpp
 // C4010.cpp
 // compile with: /WX
 int main() {

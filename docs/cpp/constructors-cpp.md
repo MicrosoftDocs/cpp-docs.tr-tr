@@ -6,12 +6,12 @@ helpviewer_keywords:
 - objects [C++], creating
 - instance constructors
 ms.assetid: 3e9f7211-313a-4a92-9584-337452e061a9
-ms.openlocfilehash: 799be6cfd4b14061ba61586f361dd884ad59224c
-ms.sourcegitcommit: 8178d22701047d24f69f10d01ba37490e3d67241
+ms.openlocfilehash: 8fa7f02f8537f60b71ff21a476589cab9fcf595b
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72587937"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73625080"
 ---
 # <a name="constructors-c"></a>Oluşturucular (C++)
 
@@ -68,7 +68,7 @@ int main()
 
 ## <a name="member_init_list"></a>Üye başlatıcı listeleri
 
-Oluşturucu, isteğe bağlı olarak, Oluşturucu gövdesinin yürütülmesinden önce sınıf üyelerini Başlatan bir üye Başlatıcı listesine sahip olabilir. (Üye başlatıcısı listesinin [std:: initializer_list \<T >](../standard-library/initializer-list-class.md)türünde bir *Başlatıcı listesi* ile aynı şey olmadığına unutmayın.)
+Oluşturucu, isteğe bağlı olarak, Oluşturucu gövdesinin yürütülmesinden önce sınıf üyelerini Başlatan bir üye Başlatıcı listesine sahip olabilir. (Üye başlatıcısı listesinin [std:: initializer_list\<t >](../standard-library/initializer-list-class.md)türünde bir *Başlatıcı listesi* ile aynı şey olmadığına unutmayın.)
 
 Üyeyi doğrudan başlattığında, üye başlatıcısı listesinin kullanılması, oluşturucunun gövdesinde değer atamaya tercih edilir. Aşağıdaki örnekte, üye Başlatıcı listesi, iki nokta üst üste gelen tüm **tanımlayıcı (bağımsız değişken)** ifadelerinden oluşur:
 
@@ -78,7 +78,7 @@ Oluşturucu, isteğe bağlı olarak, Oluşturucu gövdesinin yürütülmesinden 
     {}
 ```
 
-Tanımlayıcı bir sınıf üyesine başvurmalıdır; bağımsız değişkeninin değeri ile başlatılır. Bağımsız değişken, Oluşturucu parametrelerinden biri, bir işlev çağrısı veya [std:: initializer_list \<T >](../standard-library/initializer-list-class.md)olabilir.
+Tanımlayıcı bir sınıf üyesine başvurmalıdır; bağımsız değişkeninin değeri ile başlatılır. Bağımsız değişken, Oluşturucu parametrelerinden biri, bir işlev çağrısı veya [std:: initializer_list\<t >](../standard-library/initializer-list-class.md)olabilir.
 
 üye başlatıcısı listesinde **const** üyeleri ve başvuru türü üyeleri başlatılmalıdır.
 
@@ -212,7 +212,7 @@ Nesneyi kopyalamaya çalışmak C2280 hatasını üretir *: silinen bir işleve 
 Box(Box&& other);
 ```
 
-Derleyici, nesnenin yok edileceği ve artık kaynaklarına ihtiyacı olmayan aynı türde başka bir nesne tarafından başlatıldığı bazı durumlarda bir taşıma Oluşturucusu seçer. Aşağıdaki örnekte, bir taşıma Oluşturucusu aşırı yükleme çözümlemesi tarafından seçildiğinde bir durum gösterilmektedir. @No__t_0 çağıran oluşturucuda, döndürülen *değer bir bir* bir "(süresi dolacak) değeridir. Herhangi bir değişkene atanmamış ve bu nedenle kapsam dışına geçmek üzere. Bu örneğe ilişkin mosyon sağlamak için, içeriği temsil eden büyük bir dize vektörü sunalım. Vektör ve dizelerini kopyalamak yerine, vector öğesinin artık yeni nesneye ait olması için "kutu" süresi dolan değerden "buar" @No__t_0 çağrısı, hem `vector` hem de `string` sınıfları kendi taşıma oluşturucularını uygulamadığından gereklidir.
+Derleyici, nesnenin yok edileceği ve artık kaynaklarına ihtiyacı olmayan aynı türde başka bir nesne tarafından başlatıldığı bazı durumlarda bir taşıma Oluşturucusu seçer. Aşağıdaki örnekte, bir taşıma Oluşturucusu aşırı yükleme çözümlemesi tarafından seçildiğinde bir durum gösterilmektedir. `get_Box()`çağıran oluşturucuda, döndürülen *değer bir bir* bir "(süresi dolacak) değeridir. Herhangi bir değişkene atanmamış ve bu nedenle kapsam dışına geçmek üzere. Bu örneğe ilişkin mosyon sağlamak için, içeriği temsil eden büyük bir dize vektörü sunalım. Vektör ve dizelerini kopyalamak yerine, vector öğesinin artık yeni nesneye ait olması için "kutu" süresi dolan değerden "buar" `std::move` çağrısı, hem `vector` hem de `string` sınıfları kendi taşıma oluşturucularını uygulamadığından gereklidir.
 
 ```cpp
 #include <iostream>
@@ -318,7 +318,7 @@ Bir [Oluşturucu,](constexpr-cpp.md)
 
 ## <a name="init_list_constructors"></a>Başlatıcı listesi oluşturucuları
 
-Bir Oluşturucu, parametresi olarak [std:: initializer_list \<T \>](../standard-library/initializer-list-class.md) alırsa ve diğer parametrelerin varsayılan bağımsız değişkenleri varsa, sınıf doğrudan örneklendirirken, bu Oluşturucu aşırı yükleme çözümlemesinde seçilir başlatılmasında. İnitializer_list kullanarak kabul edebilecek herhangi bir üyeyi başlatabilirsiniz. Örneğin, Box sınıfının (daha önce gösterilen) `std::vector<string>` üye `m_contents` sahip olduğunu varsayalım. Aşağıdaki gibi bir Oluşturucu sağlayabilirsiniz:
+Bir Oluşturucu, parametresi olarak [std:: initializer_list\<t\>](../standard-library/initializer-list-class.md) alırsa ve diğer parametrelerin varsayılan bağımsız değişkenleri varsa, sınıf doğrudan kullanılarak örneği oluşturulduğunda, bu Oluşturucu aşırı yükleme çözümlemesi içinde seçilir başlatılmasında. İnitializer_list kullanarak kabul edebilecek herhangi bir üyeyi başlatabilirsiniz. Örneğin, Box sınıfının (daha önce gösterilen) `std::vector<string>` üye `m_contents`sahip olduğunu varsayalım. Aşağıdaki gibi bir Oluşturucu sağlayabilirsiniz:
 
 ```cpp
     Box(initializer_list<string> list, int w = 0, int h = 0, int l = 0)

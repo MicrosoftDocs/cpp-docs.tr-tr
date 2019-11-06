@@ -23,12 +23,12 @@ f1_keywords:
 - signal
 helpviewer_keywords:
 - signal function
-ms.openlocfilehash: 04869412272725108911f13857585e650ad20ab9
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 232bf7bc518907db8744fbb85e0f3a33c9296006
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70948093"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73625846"
 ---
 # <a name="signal"></a>sinyal
 
@@ -63,12 +63,12 @@ Dönüş kodları hakkında daha fazla bilgi için bkz. [errno, _doserrno, _sys_
 
 |*SIG* değeri|Açıklama|
 |-----------------|-----------------|
-|**SIGABRT**|Olağan dışı sonlandırma|
-|**SIGFPE**|Kayan nokta hatası|
-|**SIGILL**|Geçersiz yönerge|
-|**SIGINT**|CTRL + C sinyali|
-|**SIGSEGV**|Geçersiz depolama erişimi|
-|**SIGTERM**|Sonlandırma isteği|
+|**SıGABRT**|Olağan dışı sonlandırma|
+|**SıGFPE**|Kayan nokta hatası|
+|**SıGıLL**|Geçersiz yönerge|
+|**SıGıNT**|CTRL + C sinyali|
+|**SıGSEGV**|Geçersiz depolama erişimi|
+|**SıGTERM**|Sonlandırma isteği|
 
 *SIG* , yukarıdaki değerlerden biri değilse, [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md) tanımlandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev **errno** ' ı **EINVAL** olarak ayarlar ve **SIG_ERR**döndürür.
 
@@ -113,7 +113,7 @@ Sinyal ayarları, [_exec](../../c-runtime-library/exec-wexec-functions.md) veya 
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**signal**|\<sinyal. h >|
+|**signal**|\<Signal. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -127,7 +127,6 @@ Aşağıdaki örnek, **Sigabrt** sinyaline özel bir davranış eklemek için **
 // Use signal to attach a signal handler to the abort routine
 #include <stdlib.h>
 #include <signal.h>
-#include <tchar.h>
 
 void SignalHandler(int signal)
 {
@@ -149,9 +148,16 @@ int main()
 }
 ```
 
+Çıktı, kullanılan çalışma zamanının sürümüne, uygulamanın bir konsol veya Windows uygulaması ve Windows kayıt defteri ayarları olmasına bağlıdır. Konsol uygulaması için, stderr 'e aşağıdaki iletiyle benzer bir ileti gönderilebilir:
+
 ```Output
-This application has requested the Runtime to terminate it in an unusual way.
-Please contact the application's support team for more information.
+Debug Error!
+
+Program: c:\Projects\crt_signal\Debug\crt_signal.exe
+
+R6010
+
+- abort() has been called
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.

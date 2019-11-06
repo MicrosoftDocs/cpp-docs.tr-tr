@@ -33,12 +33,12 @@ helpviewer_keywords:
 - _wasctime_s function
 - asctime_s function
 ms.assetid: 17ad9b2b-a459-465d-976a-42822897688a
-ms.openlocfilehash: 0a40dad34d607bb52b062fc2cec163dfc8b62219
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 1cd2a15db0a27dedd88b9abf24b98d338515c949
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70943668"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73624780"
 ---
 # <a name="asctime_s-_wasctime_s"></a>asctime_s, _wasctime_s
 
@@ -88,11 +88,11 @@ Başarılıysa sıfır. Bir hata oluşursa, [parametre doğrulama](../../c-runti
 
 |*arabelleğin*|*numberOfElements*|*tmSource*|döndürülmesini|*Arabellekteki* değer|
 |--------------|------------------------|----------|------------|-----------------------|
-|**DEĞER**|Any|Any|**EINVAL**|değiştirilmedi|
-|**Null** değil (geçerli belleğe işaret eder)|0|Any|**EINVAL**|değiştirilmedi|
-|**Null** değil|0 < boyutu < 26|Any|**EINVAL**|Boş dize|
-|**Null** değil|>= 26|**DEĞER**|**EINVAL**|Boş dize|
-|**Null** değil|>= 26|Zaman bileşenleri için geçersiz zaman yapısı veya Aralık değerleri|**EINVAL**|Boş dize|
+|**DEĞER**|Kaydedilmemiş|Kaydedilmemiş|**EıNVAL**|değiştirilmedi|
+|**Null** değil (geçerli belleğe işaret eder)|0|Kaydedilmemiş|**EıNVAL**|değiştirilmedi|
+|**null** değil|0 < boyutu < 26|Kaydedilmemiş|**EıNVAL**|Boş dize|
+|**null** değil|> = 26|**DEĞER**|**EıNVAL**|Boş dize|
+|**null** değil|> = 26|Zaman bileşenleri için geçersiz zaman yapısı veya Aralık değerleri|**EıNVAL**|Boş dize|
 
 > [!NOTE]
 > **Wasctime_s** için hata koşulları, boyut sınırının sözcüklerle ölçüldüğü özel durum **asctime_s** ile benzerdir.
@@ -115,9 +115,11 @@ Başarılıysa sıfır. Bir hata oluşursa, [parametre doğrulama](../../c-runti
 
 Dönüştürülen karakter dizesi de yerel saat dilimi ayarlarına göre ayarlanır. Yerel saati ve [_tzset](tzset.md) işlevini yapılandırma hakkında bilgi için bkz. [_time32, _time64](time-time32-time64.md), [_ftime, _ftime32, _ftime64](ftime-ftime32-ftime64.md)ve [localtime_s, _localtime32_s, _localtime64_s](localtime-s-localtime32-s-localtime64-s.md) Functions Saat dilimi ortamını ve genel değişkenleri tanımlama.
 
-**Asctime_s** tarafından üretilen dize sonucu tam 26 karakter içerir ve forma `Wed Jan 02 02:03:55 1980\n\0`sahiptir. 24 saatlik bir saat kullanılır. Tüm alanların sabit bir genişliği vardır. Yeni satır karakteri ve null karakter, dizenin son iki konumunu kaplar. İkinci parametre olarak geçirilen değer en az bu büyük olmalıdır. Daha az ise, **EINVAL**bir hata kodu döndürülür.
+**Asctime_s** tarafından üretilen dize sonucu tam 26 karakter içerir ve `Wed Jan 02 02:03:55 1980\n\0`formu vardır. 24 saatlik bir saat kullanılır. Tüm alanların sabit bir genişliği vardır. Yeni satır karakteri ve null karakter, dizenin son iki konumunu kaplar. İkinci parametre olarak geçirilen değer en az bu büyük olmalıdır. Daha az ise, **EINVAL**bir hata kodu döndürülür.
 
 **_wasctime_s** , **asctime_s**öğesinin geniş karakterli bir sürümüdür. **_wasctime_s** ve **asctime_s** aynı şekilde davranır.
+
+Bu işlevlerin hata ayıklama Kitaplığı sürümleri ilk olarak arabelleği 0xFE ile doldurur. Bu davranışı devre dışı bırakmak için [_Crtsetdebugfillthreshold](crtsetdebugfillthreshold.md)kullanın.
 
 ### <a name="generic-text-routine-mapping"></a>Genel metin rutin eşleme
 
@@ -131,7 +133,7 @@ Dönüştürülen karakter dizesi de yerel saat dilimi ayarlarına göre ayarlan
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**asctime_s**|\<Time. h >|
+|**asctime_s**|\<zaman. h >|
 |**_wasctime_s**|\<Time. h > veya \<wchar. h >|
 
 ## <a name="security"></a>Güvenlik

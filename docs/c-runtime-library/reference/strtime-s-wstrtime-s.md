@@ -33,12 +33,12 @@ helpviewer_keywords:
 - time, copying
 - _strtime_s function
 ms.assetid: 42acf013-c334-485d-b610-84c0af8a46ec
-ms.openlocfilehash: 855c88f22e00cad398f6357b8e35931598041aeb
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: c74e7359f68469fd8322ba1c9348acffd636282a
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70946573"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73625912"
 ---
 # <a name="_strtime_s-_wstrtime_s"></a>_strtime_s, _wstrtime_s
 
@@ -83,9 +83,9 @@ Bir hata durumu oluşursa, [parametre doğrulama](../../c-runtime-library/parame
 
 |*arabelleğin*|*numberOfElements*|döndürülmesini|*Arabelleğin* içeriği|
 |--------------|------------------------|------------|--------------------------|
-|**DEĞER**|kaydedilmemiş|**EINVAL**|değiştirilmedi|
-|**Null** değil (geçerli arabelleğe işaret ediyor)|0|**EINVAL**|değiştirilmedi|
-|**Null** değil (geçerli arabelleğe işaret ediyor)|0 < boyutu < 9|**EINVAL**|Boş dize|
+|**DEĞER**|kaydedilmemiş|**EıNVAL**|değiştirilmedi|
+|**Null** değil (geçerli arabelleğe işaret ediyor)|0|**EıNVAL**|değiştirilmedi|
+|**Null** değil (geçerli arabelleğe işaret ediyor)|0 < boyutu < 9|**EıNVAL**|Boş dize|
 |**Null** değil (geçerli arabelleğe işaret ediyor)|Boyut > 9|0|Geçerli saat, açıklamalara belirtilen şekilde biçimlendirildi|
 
 ## <a name="security-issues"></a>Güvenlik Sorunları
@@ -102,6 +102,8 @@ Bu işlevler, [_strtime](strtime-wstrtime.md) ve [_wstrtime](strtime-wstrtime.md
 
 ' C++De, bu işlevlerin kullanılması şablon aşırı yüklemeleri tarafından basitleştirilmiştir; aşırı yüklemeler arabellek uzunluğunu otomatik olarak çıkarabilir (bir boyut bağımsız değişkeni belirtme gereksinimini ortadan kaldırır) ve eski, güvenli olmayan işlevleri otomatik olarak yeni, güvenli karşılıklarıyla değiştirebilir. Daha fazla bilgi için bkz. [Güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 
+Bu işlevlerin hata ayıklama Kitaplığı sürümleri ilk olarak arabelleği 0xFE ile doldurur. Bu davranışı devre dışı bırakmak için [_Crtsetdebugfillthreshold](crtsetdebugfillthreshold.md)kullanın.
+
 ### <a name="generic-text-routine-mapping"></a>Genel metin rutin eşleme:
 
 |TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
@@ -112,7 +114,7 @@ Bu işlevler, [_strtime](strtime-wstrtime.md) ve [_wstrtime](strtime-wstrtime.md
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_strtime_s**|\<Time. h >|
+|**_strtime_s**|\<zaman. h >|
 |**_wstrtime_s**|\<Time. h > veya \<wchar. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).

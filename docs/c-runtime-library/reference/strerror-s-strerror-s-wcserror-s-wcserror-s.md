@@ -42,16 +42,16 @@ helpviewer_keywords:
 - wcserror_s function
 - error messages, getting
 ms.assetid: 9e5b15a0-efe1-4586-b7e3-e1d7c31a03d6
-ms.openlocfilehash: f8d461566f748ce5af3d4b2aab443b5966c27dd7
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 74caba0398fdb5cdd0f9c80270a42d2903200a5d
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70958161"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73625817"
 ---
 # <a name="strerror_s-_strerror_s-_wcserror_s-__wcserror_s"></a>strerror_s, _strerror_s, _wcserror_s, __wcserror_s
 
-Bir sistem hata iletisi (**strerror_s**, **_wcserror_s**) veya Kullanıcı tarafından sağlanan bir hata iletisi ( **_strerror_s**, **__wcserror_s**) alın. Bu, CRT [hata, _strerror, _wcserror \_, _wcserror](strerror-strerror-wcserror-wcserror.md) , [CRT içindeki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklandığı gibi güvenlik geliştirmeleri içeren sürümleridir.
+Bir sistem hata iletisi (**strerror_s**, **_wcserror_s**) veya Kullanıcı tarafından sağlanan bir hata iletisi ( **_strerror_s**, **__wcserror_s**) alın. Bu, CRT [hata, _strerror, _wcserror, \__wcserror](strerror-strerror-wcserror-wcserror.md) ile [CRT 'daki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklandığı gibi güvenlik geliştirmelerinden oluşan sürümleridir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -125,7 +125,7 @@ Başarılıysa sıfır, hata durumunda hata kodu.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Strerror_s** işlevi *errnum* 'ı bir hata iletisi dizesine eşler, dizeyi *arabelleğe*döndürür. **_strerror_s** hata numarasını almaz; uygun iletiyi belirleyebilmek için **errno** geçerli değerini kullanır. **Strerror_s** veya **_strerror_s** aslında iletiyi yazdırmaz: Bunun için [fprintf](fprintf-fprintf-l-fwprintf-fwprintf-l.md)gibi bir çıkış işlevi çağırmanız gerekir:
+**Strerror_s** işlevi *errnum* 'ı bir hata iletisi dizesine eşler, dizeyi *arabelleğe*döndürür. **_strerror_s** hata numarasını almaz; uygun iletiyi belirleyebilmek için **errno** geçerli değerini kullanır. **Strerror_s** veya **_strerror_s** aslında iletiyi yazdırmaz: bunun için [fprintf](fprintf-fprintf-l-fwprintf-fwprintf-l.md)gibi bir çıkış işlevi çağırmanız gerekir:
 
 ```C
 if (( _access( "datafile",2 )) == -1 )
@@ -149,7 +149,7 @@ Bu işlevler, parametrelerini doğrular. Buffer **null** ise veya boyut parametr
 
 ' C++De, bu işlevlerin kullanılması şablon aşırı yüklemeleri tarafından basitleştirilmiştir; aşırı yüklemeler arabellek uzunluğunu otomatik olarak çıkarabilir ve bir boyut bağımsız değişkeni belirtme gereksinimini ortadan kaldırır. Daha fazla bilgi için bkz. [Güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 
-Bu işlevlerin hata ayıklama sürümleri ilk olarak arabelleği 0xFD ile doldurur. Bu davranışı devre dışı bırakmak için [_Crtsetdebugfillthreshold](crtsetdebugfillthreshold.md)kullanın.
+Bu işlevlerin hata ayıklama Kitaplığı sürümleri ilk olarak arabelleği 0xFE ile doldurur. Bu davranışı devre dışı bırakmak için [_Crtsetdebugfillthreshold](crtsetdebugfillthreshold.md)kullanın.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 

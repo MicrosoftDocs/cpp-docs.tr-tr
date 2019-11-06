@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C4288
 ms.assetid: 6aaeb139-90cd-457a-9d37-65687042736f
-ms.openlocfilehash: d8769f5663ca0bde9048e52d4579012dfccab0a1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 81094bf019060b56337347f7d364ead7c78c8128
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62207101"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73626652"
 ---
 # <a name="compiler-warning-level-1-c4288"></a>Derleyici Uyarısı (düzey 1) C4288
 
-Standart olmayan uzantı kullanıldı: 'var': for döngüsünde bildirimi yapılan döngü denetim değişkeni for döngüsü kapsamının dışında; kullanılıyor Dış kapsamdaki bildirimiyle çakışıyor
+Standart olmayan uzantı kullanıldı: ' var ': for döngüsünde belirtilen döngü denetim değişkeni for döngüsü kapsamının dışında kullanılıyor; Dış kapsamdaki bildirimle çakışıyor
 
-İle derlerken [/Ze](../../build/reference/za-ze-disable-language-extensions.md) ve **/Zc:forscope-**, içinde bildirilen bir değişken bir **için** döngü sonra kullanıldı [için](../../cpp/for-statement-cpp.md)-döngü kapsamı. C++ dili için bir Microsoft uzantısı kapsamında kalmak bu değişkeni verir ve C4288 değişkenin ilk bildirimi kullanılmaz anımsatır.
+[/Ze](../../build/reference/za-ze-disable-language-extensions.md) ve **/Zc: forScope**ile derlerken, **for döngüsünde belirtilen bir değişken** [for](../../cpp/for-statement-cpp.md)döngüsü kapsamından sonra kullanılır. C++ Dile yönelik bir Microsoft uzantısı, bu değişkenin kapsamda kalmasına izin verir ve C4288, değişkenin ilk bildiriminin kullanılmadığını hatırlatır.
 
-Bkz: [/ZC: forscope](../../build/reference/zc-forscope-force-conformance-in-for-loop-scope.md) Microsoft uzantısı'nda belirtme hakkında daha fazla bilgi için **için** döngüleri /Ze ile.
+Bkz. [/Zc: forScope](../../build/reference/zc-forscope-force-conformance-in-for-loop-scope.md) , Microsoft uzantısını/Zeile döngüler **için** ' de belirtme hakkında bilgi için.
 
-Aşağıdaki örnek, C4288 oluşturur:
+Aşağıdaki örnek C4288 oluşturur:
 
-```
+```cpp
 // C4288.cpp
 // compile with: /W1 /c /Zc:forScope-
 int main() {

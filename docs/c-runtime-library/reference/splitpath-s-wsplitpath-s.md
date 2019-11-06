@@ -34,12 +34,12 @@ helpviewer_keywords:
 - path names
 - wsplitpath_s function
 ms.assetid: 30fff3e2-cd00-4eb6-b5a2-65db79cb688b
-ms.openlocfilehash: f97c07ed01ae629fe3eb61346c6c0fcd8fa803f0
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 8eeb6a0f43827578c5d5ba900c35a3ac30f4ae7c
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70958047"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73625833"
 ---
 # <a name="_splitpath_s-_wsplitpath_s"></a>_splitpath_s, _wsplitpath_s
 
@@ -90,7 +90,7 @@ errno_t _wsplitpath_s(
 
 ### <a name="parameters"></a>Parametreler
 
-*Yolu*<br/>
+*Yolun*<br/>
 Tam yol.
 
 *sürücü*<br/>
@@ -100,7 +100,7 @@ Sürücü harfi, ardından iki nokta üst üste ( **:** ). Sürücü harfine iht
 Tek bayt veya geniş karakterdeki *sürücü* arabelleğinin boyutu. *Sürücü* **null**ise, bu değer 0 olmalıdır.
 
 *öğesini*<br/>
-Sondaki eğik çizgi dahil dizin yolu. Eğik çizgi ( **/** ), ters eğik **\\** çizgi () veya her ikisi de kullanılabilir. Dizin yoluna ihtiyacınız yoksa, bu parametre için **null değeri** geçirebilirsiniz.
+Sondaki eğik çizgi dahil dizin yolu. Eğik çizgi ( **/** ), ters eğik çizgi ( **\\** ) veya her ikisi de kullanılabilir. Dizin yoluna ihtiyacınız yoksa, bu parametre için **null değeri** geçirebilirsiniz.
 
 *Dirnumberoföğeleri*<br/>
 Tek bayt veya geniş karakterdeki *Dizin* arabelleğinin boyutu. *Dır* **null**ise, bu değer 0 olmalıdır.
@@ -125,15 +125,15 @@ Başarılıysa sıfır; hatada hata kodu.
 
 |Koşul|Dönüş Değeri|
 |---------------|------------------|
-|*yol* **null**|**EINVAL**|
-|*sürücü* **null**, *driveNumberOfElements* sıfır dışında|**EINVAL**|
-|*sürücü* **null**olmayan, *driveNumberOfElements* sıfır|**EINVAL**|
-|*dır* **null**, *dirnumberofelements* sıfır değil|**EINVAL**|
-|*dır* **null**değil, *dirnumberofelements* sıfır|**EINVAL**|
-|*fname* **null**, *nameNumberOfElements* sıfır değil|**EINVAL**|
-|*fname* **null**olmayan, *nameNumberOfElements* sıfır|**EINVAL**|
-|*EXT* **null**, *extnumberofelements* sıfır değil|**EINVAL**|
-|*EXT* **null**değil, *extnumberofelements* sıfır|**EINVAL**|
+|*yol* **null**|**EıNVAL**|
+|*sürücü* **null**, *driveNumberOfElements* sıfır dışında|**EıNVAL**|
+|*sürücü* **null**olmayan, *driveNumberOfElements* sıfır|**EıNVAL**|
+|*dır* **null**, *dirnumberofelements* sıfır değil|**EıNVAL**|
+|*dır* **null**değil, *dirnumberofelements* sıfır|**EıNVAL**|
+|*fname* **null**, *nameNumberOfElements* sıfır değil|**EıNVAL**|
+|*fname* **null**olmayan, *nameNumberOfElements* sıfır|**EıNVAL**|
+|*EXT* **null**, *extnumberofelements* sıfır değil|**EıNVAL**|
+|*EXT* **null**değil, *extnumberofelements* sıfır|**EıNVAL**|
 
 Yukarıdaki koşullardan herhangi biri oluşursa, [parametre doğrulama](../../c-runtime-library/parameter-validation.md) bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **errno** olarak **EINVAL** ve **EINVAL**döndürür.
 
@@ -153,7 +153,7 @@ Tam yolun her bileşeni ayrı bir arabellekte saklanır; bildirim sabitleri **_M
 
 Aşağıdaki tablo, bildirim sabitlerinin değerlerini listelemektedir.
 
-|Ad|Değer|
+|Name|Değer|
 |----------|-----------|
 |_MAX_DRIVE|3|
 |_MAX_DIR|256|
@@ -164,7 +164,7 @@ Tam yol bir bileşen içermiyorsa (örneğin, bir dosya adı), **_splitpath_s** 
 
 ' C++De, bu işlevlerin kullanılması şablon aşırı yüklemeleri tarafından basitleştirilmiştir; aşırı yüklemeler arabellek uzunluğunu otomatik olarak çıkarabilir ve bir boyut bağımsız değişkeni belirtme gereksinimini ortadan kaldırır. Daha fazla bilgi için bkz. [Güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 
-Bu işlevlerin hata ayıklama sürümleri ilk olarak arabelleği 0xFD ile doldurur. Bu davranışı devre dışı bırakmak için [_Crtsetdebugfillthreshold](crtsetdebugfillthreshold.md)kullanın.
+Bu işlevlerin hata ayıklama Kitaplığı sürümleri ilk olarak arabelleği 0xFE ile doldurur. Bu davranışı devre dışı bırakmak için [_Crtsetdebugfillthreshold](crtsetdebugfillthreshold.md)kullanın.
 
 ## <a name="requirements"></a>Gereksinimler
 

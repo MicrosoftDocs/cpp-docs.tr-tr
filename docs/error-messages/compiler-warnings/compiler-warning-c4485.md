@@ -6,28 +6,28 @@ f1_keywords:
 helpviewer_keywords:
 - C4485
 ms.assetid: a6f2b437-ca93-4dcd-b9cb-df415e10df86
-ms.openlocfilehash: b5afb829485e0e9533a14e818e6d6785f268a83b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 896fca6c6b257c90ccdf813a9c6cb6bc27ad9e96
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62311334"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73623619"
 ---
 # <a name="compiler-warning-c4485"></a>Derleyici Uyarısı C4485
 
-'override_function': taban başvuru sınıfı yöntemiyle 'base_class_function' eşleşiyor, ancak işaretlenen 'new' veya 'override'; 'new' (ve 'virtual') varsayıldı
+' override_function ': ' base_class_function ' taban başvuru sınıfı yöntemiyle eşleşiyor, ancak ' New ' veya ' override ' olarak işaretlenmemiş; ' New ' (ve ' Virtual ') varsayıldı
 
-Erişimci, ile veya olmadan geçersiz kılmalar `virtual` anahtar sözcüğü, bir temel sınıf erişimci işlevi ancak `override` veya `new` tanımlayıcısı geçersiz kılma işlevi imzasının bir parçası değildi. Ekleme `new` veya `override` bu uyarıyı çözmek için tanımlayıcısı.
+Bir erişimci, bir temel sınıf erişimci işlevi olan `virtual` anahtar sözcüğüyle veya olmadan geçersiz kılar, ancak `override` veya `new` belirticisi geçersiz kılma işlevi imzasının bir parçası değildi. Bu uyarıyı çözmek için `new` veya `override` belirticisi ekleyin.
 
-Bkz: [geçersiz kılma](../../extensions/override-cpp-component-extensions.md) ve [yeni (vtable'da yeni yuva)](../../extensions/new-new-slot-in-vtable-cpp-component-extensions.md) daha fazla bilgi için.
+Daha fazla bilgi için bkz. [geçersiz kılma](../../extensions/override-cpp-component-extensions.md) ve [Yeni (vtable 'da yeni yuva)](../../extensions/new-new-slot-in-vtable-cpp-component-extensions.md) .
 
-C4485 her zaman hata olarak verilir. Kullanım [uyarı](../../preprocessor/warning.md) C4485 bastırmak için pragması.
+C4485 her zaman bir hata olarak verilir. C4485 bastırmak için [Warning](../../preprocessor/warning.md) pragma kullanın.
 
 ## <a name="example"></a>Örnek
 
 Aşağıdaki örnek C4485 oluşturur
 
-```
+```cpp
 // C4485.cpp
 // compile with: /clr
 delegate void Del();

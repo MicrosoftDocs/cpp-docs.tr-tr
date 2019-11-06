@@ -1,22 +1,26 @@
 ---
-title: Bağlayıcı Araçları Hatası LNK1120
-ms.date: 05/17/2017
+title: Bağlayıcı araçları hatası LNK1120
+description: Bağlantıdaki çözümlenmemiş dış sembol hatalarının sayısını raporlayan LNK1120 bağlayıcı hatasını açıklar.
+ms.date: 10/31/2019
 f1_keywords:
 - LNK1120
 helpviewer_keywords:
 - LNK1120
 ms.assetid: 56aa7d36-921f-4daf-b44d-cca0d4fb1b51
-ms.openlocfilehash: b11318dcffb665d3b422fffcbd7e6275f35984dd
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 21a1ede07a69cdc065dd897715e243115529600d
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62255111"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73626575"
 ---
-# <a name="linker-tools-error-lnk1120"></a>Bağlayıcı Araçları Hatası LNK1120
+# <a name="linker-tools-error-lnk1120"></a>Bağlayıcı araçları hatası LNK1120
 
-> *sayı* çözümlenmemiş dışlar
+> çözülmemiş dışlar *sayısı*
 
-Hatası LNK1120 rapor sayısı (*numarası*) Bu bağlantı işlemi için çözümlenmemiş dış sembol hataları. Çoğu çözümlenmemiş dış sembol hataları tek tek rapor [Bağlayıcı araçları hatası LNK2001](../../error-messages/tool-errors/linker-tools-error-lnk2001.md) ve [Bağlayıcı araçları hatası LNK2019](../../error-messages/tool-errors/linker-tools-error-lnk2019.md), çözülmemiş dış her öğe için bir kez bu hata iletisini koyun simge hatası.
+Error LNK1120, geçerli bağlantıdaki [çözümlenmemiş dış sembol](linker-tools-error-lnk2001.md#what-is-an-unresolved-external-symbol) hatalarının sayısını raporlar.
 
-Bu hatayı düzeltmek için tüm diğer çözülmemiş dış hataları veya oluşturma çıktısında önünde diğer bağlayıcı hatalarını düzeltin. Bu hata, çözülmemiş dış hatasız kaldığında bildirilmedi.
+İlk çözümlenmemiş dış sembol bir [LNK2001](linker-tools-error-lnk2001.md) veya [LNK2019](linker-tools-error-lnk2019.md) hatası tarafından bildirilir. LNK1120 iletisi en son gelir ve çözümlenmemiş sembol hata sayısını gösterir.
+
+> [!IMPORTANT]
+> **Bu hatayı çözmeniz gerekmez.** Bu hata, derleme çıkışında LNK2001 ve LNK2019 bağlayıcı hatalarının tümünü düzeltilerek dışarıda olur. İlk bildirilen hatadan başlayarak her zaman sorunları giderin. Daha sonraki hatalara neden olmuş olabilir ve önceki hatalar düzeltildiğinde dışarıda kalabilir.

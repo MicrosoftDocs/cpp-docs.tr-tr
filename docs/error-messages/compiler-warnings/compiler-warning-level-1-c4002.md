@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C4002
 ms.assetid: 6bda1dfe-e2e4-4771-9794-5a404c466dd5
-ms.openlocfilehash: f2d2166a1370c02cfbc2346a63a424239ccb2b92
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6aac8285e3935bb0fb910b52a7dd813d0a708732
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62187267"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73627403"
 ---
 # <a name="compiler-warning-level-1-c4002"></a>Derleyici Uyarısı (düzey 1) C4002
 
-Makro 'identifier' için çok fazla sayıda gerçek parametre
+' tanımlayıcı ' makrosunun gerçek parametre sayısı çok fazla
 
-Makro gerçek parametre sayısı, Makro tanımında biçimsel parametre sayısını aşıyor. Önişlemci toplar ek parametreler ancak yoksayar bunları makro genişletme sırasında.
+Makrodaki gerçek parametrelerin sayısı, makro tanımındaki biçimsel parametre sayısını aşıyor. Önişlemci ek parametreleri toplar ancak makro genişletmesi sırasında onları yoksayar.
 
-Yanlış kullanırken C4002 oluşabilir [Variadic makrolar](../../preprocessor/variadic-macros.md).
+C4002, değişken olmayan bağımsız [makrolar](../../preprocessor/variadic-macros.md)kullanılırken hatalı gerçekleşir.
 
-Aşağıdaki örnek, C4002 oluşturur:
+Aşağıdaki örnek C4002 oluşturur:
 
-```
+```cpp
 // C4002.cpp
 // compile with: /W1
 #define test(a) (a)
@@ -37,11 +37,11 @@ int main() {
 }
 ```
 
-Bu hata için Visual Studio .NET 2003 yapıldığı derleyici uyumluluğu iş sonucu olarak da oluşturulabilir: makroda artık kabul ek virgül.
+Bu hata, Visual Studio .NET 2003 için yapılan derleyici uygunluk işinin sonucu olarak da oluşturulabilir: makrodaki ek virgüller artık kabul edilmedi.
 
-Derleyici artık bir makroda fazladan bir virgül kabul eder. Visual Studio .NET 2003 ve Visual Studio .NET Visual C++ sürümü geçerli olması kod için fazladan bir virgül kaldırın.
+Derleyici, bir makroda daha fazla virgül kabul etmez. Visual Studio .NET 2003 ve Visual Studio .NET sürümlerinde kodun geçerli olması için C++, ek virgüller kaldırın.
 
-```
+```cpp
 // C4002b.cpp
 // compile with: /W1
 #define F(x,y)

@@ -6,20 +6,20 @@ f1_keywords:
 helpviewer_keywords:
 - C4258
 ms.assetid: bbb75e6d-6693-4e62-8ed3-b006a0ec55e3
-ms.openlocfilehash: a3ce4c81a86920baddfc1b277df0236a96254be4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 75d706fafacc5c1524915d063a7fa392cea01b4c
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62207402"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73624873"
 ---
 # <a name="compiler-warning-level-1-c4258"></a>Derleyici Uyarısı (düzey 1) C4258
 
-'variable': tanımından döngü göz ardı edilir için; kapsayan kapsamdan gelen tanım kullanılan"
+' Variable ': for döngüsünden gelen tanım yoksayıldı; kapsayan kapsamdaki tanım kullanılır "
 
-Altında [/Ze](../../build/reference/za-ze-disable-language-extensions.md) ve [/ZC: forscope](../../build/reference/zc-forscope-force-conformance-in-for-loop-scope.md), tanımlanan değişkenler bir [için](../../cpp/for-statement-cpp.md) döngü Git kapsam dışına **için** döngü sona erer. İçeren kapsamı döngü değişkeni kapsayan bir döngü içinde tanımlanan ancak aynı ada sahip bir değişken tekrar kullanılıyorsa, bu uyarı oluşur **için** döngü. Örneğin:
+[/Ze](../../build/reference/za-ze-disable-language-extensions.md) ve [/Zc: forScope](../../build/reference/zc-forscope-force-conformance-in-for-loop-scope.md)altında, [for döngüsünde tanımlanan](../../cpp/for-statement-cpp.md) değişkenler, **for** döngüsü bittikten sonra kapsam dışına çıkar. Bu uyarı, döngü değişkeniyle aynı ada sahip olan ancak kapsayan döngüde tanımlanan bir değişken **için for** döngüsünü içeren kapsamda yeniden kullanıldığında oluşur. Örneğin:
 
-```
+```cpp
 // C4258.cpp
 // compile with: /Zc:forScope /W1
 int main()

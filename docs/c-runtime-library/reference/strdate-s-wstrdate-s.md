@@ -1,6 +1,7 @@
 ---
 title: _strdate_s, _wstrdate_s
-ms.date: 11/04/2016
+description: _strdate_s ve _wstrdate_s, geçerli tarihi bir arabelleğe yerleştirmeye yönelik _strdate ve _wstrdate işlevlerinin güvenli CRT sürümleridir.
+ms.date: 11/01/2019
 api_name:
 - _strdate_s
 - _wstrdate_s
@@ -36,27 +37,27 @@ helpviewer_keywords:
 - _strdate_s function
 - _wstrdate_s function
 ms.assetid: d41d8ea9-e5ce-40d4-864e-1ac29b455991
-ms.openlocfilehash: fadd30ec81cff59d675212e59c8513656c7b2f35
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 7d04c134fcd19753ac0cecf8cc3b87e902d92e83
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70940744"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73625757"
 ---
 # <a name="_strdate_s-_wstrdate_s"></a>_strdate_s, _wstrdate_s
 
-Geçerli sistem tarihini bir arabelleğe kopyalayın. Bu sürümler, [CRT 'Daki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklandığı gibi güvenlik geliştirmeleriyle birlikte [_wstrdate, _strdate](strdate-wstrdate.md) sürümleridir.
+Geçerli sistem tarihini bir arabelleğe kopyalayın. Bu işlevler, [CRT 'Daki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklandığı gibi güvenlik geliştirmeleriyle [, _wstrdate ile _strdate](strdate-wstrdate.md) 'in sürümleridir.
 
 ## <a name="syntax"></a>Sözdizimi
 
 ```C
 errno_t _strdate_s(
    char *buffer,
-   size_t numberOfElements
+   size_t size
 );
 errno_t _wstrdate_s(
    wchar_t *buffer,
-   size_t numberOfElements
+   size_t size
 );
 template <size_t size>
 errno_t _strdate_s(
@@ -70,40 +71,42 @@ errno_t _wstrdate_s(
 
 ### <a name="parameters"></a>Parametreler
 
-*arabelleğin*<br/>
-Biçimlendirilen Tarih dizesiyle doldurulacak, arabellek işaretçisi.
+*arabellek* \
+Biçimlendirilen Tarih dizesini yerleştirmek için bir arabelleğin işaretçisi.
 
-*numberOfElements*<br/>
-Arabelleğin boyutu.
+*boyut* \
+Karakter birimlerindeki arabelleğin boyutu.
 
-## <a name="return-value"></a>Dönüş Değeri
+## <a name="return-value"></a>Dönüş değeri
 
 Başarılıysa sıfır. Hata varsa dönüş değeri bir hata kodudur. Hata kodları ERRNO içinde tanımlanmıştır. Olsun Bu işlev tarafından oluşturulan tam hatalar için aşağıdaki tabloya bakın. Hata kodları hakkında daha fazla bilgi için bkz. [errno](../../c-runtime-library/errno-constants.md).
 
 ## <a name="error-conditions"></a>Hata koşulları
 
-|*arabelleğin*|*numberOfElements*|döndürülmesini|*Arabelleğin* içeriği|
+|*arabelleğin*|*boyutla*|döndürülmesini|*Arabelleğin* içeriği|
 |--------------|------------------------|------------|--------------------------|
-|**DEĞER**|kaydedilmemiş|**EINVAL**|değiştirilmedi|
-|**Null** değil (geçerli arabelleğe işaret ediyor)|0|**EINVAL**|değiştirilmedi|
-|**Null** değil (geçerli arabelleğe işaret ediyor)|0 < *numberOfElements* < 9|**EINVAL**|Boş dize|
-|**Null** değil (geçerli arabelleğe işaret ediyor)|*numberOfElements* > = 9|0|Geçerli tarih, açıklamalar bölümünde belirtildiği gibi biçimlendirilir|
+|**DEĞER**|kaydedilmemiş|**EıNVAL**|değiştirilmedi|
+|**Null** değil (geçerli arabelleğe işaret ediyor)|0|**EıNVAL**|değiştirilmedi|
+|**Null** değil (geçerli arabelleğe işaret ediyor)|0 < *boyutu* < 9|**EıNVAL**|Boş dize|
+|**Null** değil (geçerli arabelleğe işaret ediyor)|*boyut* > = 9|0|Geçerli tarih, açıklamalar bölümünde belirtildiği gibi biçimlendirilir|
 
-## <a name="security-issues"></a>Güvenlik Sorunları
+## <a name="security-issues"></a>Güvenlik sorunları
 
-*NumberOfElements* parametresi 9 ' dan büyükse, arabellek Için geçersiz **null** olmayan bir değer geçirmek erişim ihlaline neden olur.
+*Arabellek* için GEÇERSIZ ve null olmayan bir değer geçirmek, *Boyut* parametresi dokuz ' den büyükse erişim ihlaline neden olur.
 
-*Arabelleğin* gerçek boyutundan daha büyük olan boyut değerlerinin geçirilmesi arabellek taşmasına neden olur.
+*Bellek* boyutunun gerçek boyutundan *daha büyük bir* değer geçirilmesi arabellek taşmasına neden olur.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevler, **_strdate** ve **_wstrdate**'in daha güvenli sürümlerini sağlar. **_Strdate_s** işlevi, geçerli sistem tarihini *arabelleğe*göre işaret eden arabelleğe/, aa**gg**/**yy**olarak, DD 'nin ayı belirten iki **basamak,** **gg** günü temsil eden iki basamakla ve **yy** yılın son iki hanesi olur. Örneğin, **12/05/99** dizesi 5 Aralık 1999 ' i temsil eder. Arabellek en az 9 karakter uzunluğunda olmalıdır.
+Bu işlevler, **_strdate** ve **_wstrdate**'in daha güvenli sürümlerini sağlar. **_Strdate_s** işlevi, geçerli sistem tarihini *arabelleğin*gösterdiği arabelleğe kopyalar. `mm/dd/yy`biçimlendirilir, burada `mm` iki basamaklı bir aydır, `dd` iki rakamlı gün ve `yy` yılın son iki hanesi olur. Örneğin `12/05/99` dize, 5 Aralık 1999 ' i temsil eder. Arabellek en az dokuz karakter uzunluğunda olmalıdır.
 
 **_wstrdate_s** , **_strdate_s**öğesinin geniş karakterli bir sürümüdür; **_wstrdate_s** bağımsız değişkeni ve dönüş değeri geniş karakterli dizelerdir. Bu işlevler, aynı şekilde davranır.
 
-*Buffer* **null** Işaretçisiyse veya *numberOfElements* 9 karakterden azsa, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler-1 döndürür ve arabellek **null** Ise veya *numberOfElements* değeri 0 ' dan küçük ya da buna eşitse, **EINVAL** **olarak** **errno** **olarak ayarlanır veya**9 ' dan küçük.
+*Arabellek* **null** işaretçisiyse veya *Boyut* dokuz karakterden daha azsa, geçersiz parametre işleyicisi çağrılır. [Parametre doğrulamada](../../c-runtime-library/parameter-validation.md)açıklanmaktadır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler-1 döndürür. Arabellek **null** ise veya *Boyut* 0 ' dan küçük veya eşitse **errno** , **EINVAL** olarak ayarlanır. Ya da, *Boyut* 9 ' dan küçükse **errno** ' u **ERANGE** olarak ayarlar.
 
-' C++De, bu işlevlerin kullanılması şablon aşırı yüklemeleri tarafından basitleştirilmiştir; aşırı yüklemeler arabellek uzunluğunu otomatik olarak çıkarabilir (bir boyut bağımsız değişkeni belirtme gereksinimini ortadan kaldırır) ve eski, güvenli olmayan işlevleri otomatik olarak yeni, güvenli karşılıklarıyla değiştirebilir. Daha fazla bilgi için bkz. [Güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
+' C++De, bu işlevlerin kullanılması şablon aşırı yüklemeleri tarafından basitleştirilmiştir. Aşırı yüklemeler arabellek uzunluğunu otomatik olarak çıkarabilir, bu da bir *Boyut* bağımsız değişkeni belirtme gereksinimini ortadan kaldırır. Ayrıca, güvenli olmayan işlevleri otomatik olarak yeni, daha güvenli karşılıklarla değiştirebilir. Daha fazla bilgi için bkz. [Güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
+
+Bu işlevlerin hata ayıklama Kitaplığı sürümleri ilk olarak arabelleği 0xFE ile doldurur. Bu davranışı devre dışı bırakmak için [_Crtsetdebugfillthreshold](crtsetdebugfillthreshold.md)kullanın.
 
 ### <a name="generic-text-routine-mapping"></a>Genel metin rutin eşleme:
 
@@ -115,9 +118,9 @@ Bu işlevler, **_strdate** ve **_wstrdate**'in daha güvenli sürümlerini sağl
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_strdate**|\<Time. h >|
+|**_strdate**|\<zaman. h >|
 |**_wstrdate**|\<Time. h > veya \<wchar. h >|
-|**_strdate_s**|\<Time. h >|
+|**_strdate_s**|\<zaman. h >|
 
 ## <a name="example"></a>Örnek
 
@@ -125,11 +128,11 @@ Bu işlevler, **_strdate** ve **_wstrdate**'in daha güvenli sürümlerini sağl
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Zaman Yönetimi](../../c-runtime-library/time-management.md)<br/>
-[asctime_s, _wasctime_s](asctime-s-wasctime-s.md)<br/>
-[ctime_s, _ctime32_s, _ctime64_s, _wctime_s, _wctime32_s, _wctime64_s](ctime-s-ctime32-s-ctime64-s-wctime-s-wctime32-s-wctime64-s.md)<br/>
-[gmtime_s, _gmtime32_s, _gmtime64_s](gmtime-s-gmtime32-s-gmtime64-s.md)<br/>
-[localtime_s, _localtime32_s, _localtime64_s](localtime-s-localtime32-s-localtime64-s.md)<br/>
-[mktime, _mktime32, _mktime64](mktime-mktime32-mktime64.md)<br/>
-[time, _time32, _time64](time-time32-time64.md)<br/>
-[_tzset](tzset.md)<br/>
+[Zaman yönetimi](../../c-runtime-library/time-management.md)\
+[asctime_s, _wasctime_s](asctime-s-wasctime-s.md)\
+[ctime_s, _ctime32_s, _ctime64_s, _wctime_s, _wctime32_s, _wctime64_s](ctime-s-ctime32-s-ctime64-s-wctime-s-wctime32-s-wctime64-s.md)\
+[gmtime_s, _gmtime32_s, _gmtime64_s](gmtime-s-gmtime32-s-gmtime64-s.md)\
+[localtime_s, _localtime32_s, _localtime64_s](localtime-s-localtime32-s-localtime64-s.md)\
+[mktime, _mktime32, _mktime64](mktime-mktime32-mktime64.md)\
+[zaman, _time32, _time64](time-time32-time64.md)\
+[_tzset](tzset.md)

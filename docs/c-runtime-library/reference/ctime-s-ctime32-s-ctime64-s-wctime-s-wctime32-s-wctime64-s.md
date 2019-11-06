@@ -54,12 +54,12 @@ helpviewer_keywords:
 - _ctime32_s function
 - _tctime32_s function
 ms.assetid: 36ac419a-8000-4389-9fd8-d78b747a009b
-ms.openlocfilehash: d983ee4219985c7b213812a69f6f83f49dbf389b
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: a6329319be5d002c8f0a35ceb0258cb9081923f7
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70942015"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73624407"
 ---
 # <a name="ctime_s-_ctime32_s-_ctime64_s-_wctime_s-_wctime32_s-_wctime64_s"></a>ctime_s, _ctime32_s, _ctime64_s, _wctime_s, _wctime32_s, _wctime64_s
 
@@ -150,11 +150,11 @@ Başarılıysa sıfır. Geçersiz bir parametre nedeniyle hata oluşursa, [param
 
 |*arabelleğin*|*numberOfElements*|*sourceTime*|döndürülmesini|*Arabellekteki* değer|
 |--------------|------------------------|------------|------------|-----------------------|
-|**DEĞER**|Kaydedilmemiş|Kaydedilmemiş|**EINVAL**|değiştirilmedi|
-|**Null** değil (geçerli belleğe işaret eder)|0|Kaydedilmemiş|**EINVAL**|değiştirilmedi|
-|**Null** değil|0 < boyutu < 26|Kaydedilmemiş|**EINVAL**|Boş dize|
-|**Null** değil|>= 26|NULL|**EINVAL**|Boş dize|
-|**Null** değil|>= 26|< 0|**EINVAL**|Boş dize|
+|**DEĞER**|Kaydedilmemiş|Kaydedilmemiş|**EıNVAL**|değiştirilmedi|
+|**Null** değil (geçerli belleğe işaret eder)|0|Kaydedilmemiş|**EıNVAL**|değiştirilmedi|
+|**null** değil|0 < boyutu < 26|Kaydedilmemiş|**EıNVAL**|Boş dize|
+|**null** değil|> = 26|NULL|**EıNVAL**|Boş dize|
+|**null** değil|> = 26|< 0|**EıNVAL**|Boş dize|
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -172,6 +172,8 @@ Dönüştürülen karakter dizesi de yerel saat dilimi ayarlarına göre ayarlan
 
 ' C++De, bu işlevlerin kullanılması şablon aşırı yüklemeleri tarafından basitleştirilmiştir; aşırı yüklemeler arabellek uzunluğunu otomatik olarak çıkarabilir ve bir boyut bağımsız değişkeni belirtme gereksinimini ortadan kaldırır. Daha fazla bilgi için bkz. [Güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 
+Bu işlevlerin hata ayıklama Kitaplığı sürümleri ilk olarak arabelleği 0xFE ile doldurur. Bu davranışı devre dışı bırakmak için [_Crtsetdebugfillthreshold](crtsetdebugfillthreshold.md)kullanın.
+
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
 |TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
@@ -184,7 +186,7 @@ Dönüştürülen karakter dizesi de yerel saat dilimi ayarlarına göre ayarlan
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**ctime_s**, **_ctime32_s**, **_ctime64_s**|\<Time. h >|
+|**ctime_s**, **_ctime32_s**, **_ctime64_s**|\<zaman. h >|
 |**_wctime_s**, **_wctime32_s**, **_wctime64_s**|\<Time. h > veya \<wchar. h >|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).

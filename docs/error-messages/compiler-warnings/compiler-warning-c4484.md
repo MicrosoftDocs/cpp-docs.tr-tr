@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C4484
 ms.assetid: 3d30e5b3-2297-45b7-a37a-1360056fdd0e
-ms.openlocfilehash: 29e99da02aa0144699d3c20e523b5e5e4b6b8f72
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4d3f72ddf7675ea7ad73022dc55a60fdc74d4390
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62363537"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73623625"
 ---
 # <a name="compiler-warning-c4484"></a>Derleyici Uyarısı C4484
 
-'override_function': taban başvuru sınıfı yöntemiyle 'base_class_function' eşleşiyor, ancak 'virtual', 'new' veya 'override'; işaretli değil 'new' (ve 'virtual' değil) varsayıldı
+' override_function ': ' base_class_function ' taban başvuru sınıfı yöntemiyle eşleşiyor, ancak ' Virtual ', ' New ' veya ' override ' olarak işaretlenmemiş; ' New ' (' Virtual ' değil) varsayıldı
 
-İle derlerken **/CLR**, derleyici işlev vtable'da yeni yuva alacak anlamına gelir. bir temel sınıf işlev örtük olarak geçersiz kılmaz. Çözümlemek için açıkça bir işlevi geçersiz kılma olup olmadığını belirtin.
+**/Clr**ile derlerken, derleyici bir temel sınıf işlevini örtülü olarak geçersiz kılmaz, bu da işlevin vtable 'da yeni bir yuva alabileceği anlamına gelir. Çözümlemek için, bir işlevin geçersiz kılma olup olmadığını açıkça belirtin.
 
 Daha fazla bilgi için bkz.:
 
@@ -27,13 +27,13 @@ Daha fazla bilgi için bkz.:
 
 - [yeni (vtable'de yeni yuva)](../../extensions/new-new-slot-in-vtable-cpp-component-extensions.md)
 
-C4484 her zaman hata olarak verilir. Kullanım [uyarı](../../preprocessor/warning.md) C4484 bastırmak için pragması.
+C4484 her zaman bir hata olarak verilir. C4484 bastırmak için [Warning](../../preprocessor/warning.md) pragma kullanın.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C4484 oluşturur.
+Aşağıdaki örnek C4484 oluşturur.
 
-```
+```cpp
 // C4484.cpp
 // compile with: /clr
 ref struct A {

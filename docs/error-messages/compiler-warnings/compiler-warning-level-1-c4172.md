@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C4172
 ms.assetid: a8d2bf65-d8b1-4fe3-8340-a223d7e7fde6
-ms.openlocfilehash: caa71da9182c1da1d17d87d901084d0ee9badf73
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7d53972dbcb2e3ab6a95b0b874cc6bb98cd66840
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62391796"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73624820"
 ---
 # <a name="compiler-warning-level-1-c4172"></a>Derleyici Uyarısı (düzey 1) C4172
 
-yerel değişkenin veya geçici adresini döndürüyor
+yerel değişkenin veya geçici adresin adresi döndürülüyor
 
-Bir işlev bir yerel değişken veya geçici nesnenin adresini döndürür. Bir işlev geri döndüğünde, döndürülen adresi geçerli değil. Bu nedenle yerel değişkenleri ve geçici nesneler yok edilir.
+Bir işlev, yerel bir değişkenin veya geçici nesnenin adresini döndürür. Bir işlev döndürüldüğünde yerel değişkenler ve geçici nesneler yok edilir, bu nedenle döndürülen adres geçerli değildir.
 
-İşlevi, yerel bir nesnenin adresini döndürmeyen olacak şekilde yeniden tasarlayın.
+İşlevi bir yerel nesnenin adresini döndürmemesi için yeniden tasarlayabilmenizi öneririz.
 
-Aşağıdaki örnek, C4172 oluşturur:
+Aşağıdaki örnek C4172 oluşturur:
 
-```
+```cpp
 // C4172.cpp
 // compile with: /W1 /LD
 float f = 10;

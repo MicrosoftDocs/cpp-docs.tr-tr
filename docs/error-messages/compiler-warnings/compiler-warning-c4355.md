@@ -6,26 +6,26 @@ f1_keywords:
 helpviewer_keywords:
 - C4355
 ms.assetid: b819ecab-8a07-42d7-8fa4-1180d51626c0
-ms.openlocfilehash: 6b74c8dd5ce9860cb218d21790f12ba05e9be22f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f1f5e5be2606a03ec5e9ecd0c571f94c25f82494
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62151831"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73623741"
 ---
 # <a name="compiler-warning-c4355"></a>Derleyici Uyarısı C4355
 
 'this' : taban üye başlatıcı listesinde kullanıldı
 
-**Bu** işaretçi yalnızca statik olmayan üye işlevlerinde geçerlidir. Başlatıcı listesinde bir temel sınıf için kullanılamaz.
+**Bu** işaretçi yalnızca statik olmayan üye işlevleri içinde geçerlidir. Temel sınıf için Başlatıcı listesinde kullanılamaz.
 
-Önce çağırılır temel sınıf oluşturucuları ve sınıf üye oluşturucuları **bu** Oluşturucusu. Aslında, unconstructed nesneyi başka bir oluşturucu için bir işaretçi geçirildi. Bu diğer oluşturucuların tüm üyelerine erişmek veya üye işlevlerini bu çağırın, sonucu tanımsız olur. Kullanmamalısınız **bu** tüm yapı tamamlanana kadar işaretçi.
+Temel sınıf oluşturucular ve sınıf üye oluşturucuları **Bu** oluşturucudan önce çağırılır. Aslında, oluşturulmamış bir nesneye başka bir oluşturucuya işaretçi geçirdiniz. Bu diğer oluşturucular herhangi bir üyeye veya çağrı üye işlevlerine erişse, sonuç tanımsız olur. Oluşturma işlemi tamamlanana kadar **Bu** işaretçiyi kullanmamalısınız.
 
-Varsayılan olarak bu uyarıyı kapalıdır. Bkz: [derleyici uyarıları emin olan kapalı varsayılan](../../preprocessor/compiler-warnings-that-are-off-by-default.md) daha fazla bilgi için.
+Bu uyarı varsayılan olarak kapalıdır. Daha fazla bilgi için bkz. [Varsayılan olarak kapalı olan Derleyici uyarıları](../../preprocessor/compiler-warnings-that-are-off-by-default.md) .
 
-Aşağıdaki örnek, C4355 oluşturur:
+Aşağıdaki örnek C4355 oluşturur:
 
-```
+```cpp
 // C4355.cpp
 // compile with: /w14355 /c
 #include <tchar.h>

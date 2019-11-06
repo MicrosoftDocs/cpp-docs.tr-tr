@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C4162
 ms.assetid: 21ae3c92-501d-4689-ad7d-13753cb65eff
-ms.openlocfilehash: 6c6b675fd47cb6e98255515c7cd77c6dd48ea02b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7e70898065a40a965b08b090bc59263acd918515
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62391822"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73624844"
 ---
 # <a name="compiler-warning-level-1-c4162"></a>Derleyici Uyarısı (düzey 1) C4162
 
-'identifier': hiçbir işlev bulunamadı C bağlaması olan
+' tanımlayıcı ': C bağlaması olan hiçbir işlev bulunamadı
 
-Bir işlev C bağlaması olan bildirildi ancak bulunamıyor.
+C bağlantısına sahip bir işlev tanımlanmış ancak bulunamıyor.
 
-Bu uyarıyı çözmek için derleme .c dosyasında (C derleyicisinin).  C++ derleyicisini çağırma gerekir, extern "C" işlev bildirimi önce yerleştirin.
+Bu uyarıyı çözmek için bir. c dosyasında derleyin (C derleyicisini çağırın).  C++ Derleyiciyi çağırmanız gerekiyorsa, işlev bildiriminden önce extern "C" koyun.
 
 Aşağıdaki örnek C4162 oluşturur
 
-```
+```cpp
 // C4162.cpp
 // compile with: /c /W1
 unsigned char _bittest(long* a, long b);
@@ -38,7 +38,7 @@ int main() {
 
 Olası çözüm:
 
-```
+```cpp
 // C4162b.cpp
 // compile with: /c
 extern "C"

@@ -1,13 +1,13 @@
 ---
 title: 'Taşıma Kılavuzu: MFC Scribble'
-ms.date: 11/19/2018
+ms.date: 10/23/2019
 ms.assetid: 8ddb517d-89ba-41a1-ab0d-4d2c6d9047e8
-ms.openlocfilehash: e808f67b1479653add27a54ddf91f6578c046734
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: c5e0e8fecd99e4f03077574da7b7fcb3e538762b
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69511537"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73627221"
 ---
 # <a name="porting-guide-mfc-scribble"></a>Taşıma Kılavuzu: MFC Scribble
 
@@ -19,17 +19,17 @@ Visual Studio 'nun her sürümü, Visual Studio 'nun eski bir sürümünden daha
 
 MFC karalama, birçok farklı görsel C++sürümünde bulunan iyi bilinen bir örnektir. MFC 'nin temel özelliklerinden bazılarını gösteren basit bir çizim uygulamasıdır. Hem yönetilen hem de yerel kod sürümleri dahil olmak üzere çeşitli sürümleri mevcuttur. Bu örnekte, Visual Studio 2005 ' den yerel kodda eski bir karalama sürümü bulduk ve Visual Studio 2017 ' de açıldı.
 
-Yükseltmeyi denemeden önce, Windows masaüstü iş yükünün yüklü olduğundan emin olun. Visual Studio yükleyicisi 'ni (vs_installer. exe) açın. Yükleyiciyi açmak için bir yol, **Dosya** > **Yeni proje** ' yi seçmek ve **Açık Visual Studio yükleyicisi**görene kadar yüklü şablonlar listesinin altına kaydırmanız. Yükleyiciyi açtıktan sonra, tüm kullanılabilir iş yüklerini görürsünüz. **Windows Masaüstü** iş yükü kutusu seçili değilse, bunu seçip pencerenin alt kısmındaki **Değiştir** düğmesine tıklayın.
+Yükseltmeyi denemeden önce, Windows masaüstü iş yükünün yüklü olduğundan emin olun. Visual Studio yükleyicisi 'ni (vs_installer. exe) açın. Yükleyiciyi açmak için bir yol > **Dosya** **Yeni proje** ' yi seçin ve **Açık Visual Studio yükleyicisi**görene kadar yüklü şablonlar listesinin en altına gidin. Yükleyiciyi açtıktan sonra, tüm kullanılabilir iş yüklerini görürsünüz. **Windows Masaüstü** iş yükü kutusu seçili değilse, bunu seçip pencerenin alt kısmındaki **Değiştir** düğmesine tıklayın.
 
 Sonra, tüm çözümü ve tüm içeriğini yedekleyin.
 
-Son olarak, belirli yükseltme yöntemine karar vermemiz gerekiyordu. Uzun süredir yükseltilmemiş daha karmaşık çözümler ve projeler için aynı anda bir Visual Studio sürümü yükseltmeniz önerilir. Bu şekilde, hangi Visual Studio sürümünün bir sorun sunmakta olduğunu daraltabilirsiniz. Basit bir proje için, Visual Studio 'nun en son sürümünde açmaya ve sihirbazın projeyi dönüştürmesine izin verilmesi gerekir. Bu işe yaramazsa, Visual Studio 'nun uygun sürümlerine erişiminiz varsa tek seferde bir sürümü yükseltmeyi deneyebilirsiniz.
+Son olarak, çözümü Visual Studio 'nun en son sürümünde açın ve sihirbazın projeyi dönüştürmesini bekleyin. 
 
-Projelerinizi yükseltmek için Sihirbazı kullanmak yerine, komut satırında devenv ' `/Upgrade` i de çalıştırabileceğinizi unutmayın. Bkz. [/Upgrade (devenv. exe)](/visualstudio/ide/reference/upgrade-devenv-exe). Bu, çok sayıda projenin yükseltme işlemini otomatikleştirmede yararlı olabilir.
+Projelerinizi yükseltmek için Sihirbazı kullanmak yerine, `/Upgrade` seçeneğini kullanarak komut satırında devenv ' i de çalıştırabileceğinizi unutmayın. Bkz. [/Upgrade (devenv. exe)](/visualstudio/ide/reference/upgrade-devenv-exe). Bu, çok sayıda projenin yükseltme işlemini otomatikleştirmede yararlı olabilir.
 
 ### <a name="step-1-converting-the-project-file"></a>Adım 1. Proje dosyası dönüştürülüyor
 
-Visual Studio 2017 ' de eski bir proje dosyası açtığınızda, Visual Studio proje dosyasını kabul ettiğimiz en son sürüme dönüştürmek için teklifleri sunar. Aşağıdaki iletişim kutusu görüntülendü:
+Visual Studio 'da eski bir proje dosyası açtığınızda, Visual Studio proje dosyasını kabul ettiğimiz en son sürüme dönüştürmek için teklifler sunar. Aşağıdaki iletişim kutusu görüntülendü:
 
 ![Proje ve çözüm değişikliklerini gözden geçirme](../porting/media/scribbleprojectupgrade.PNG "Proje ve çözüm değişikliklerini gözden geçirme")
 
@@ -49,7 +49,7 @@ Bu durumda, sorunlar tüm uyarılardır ve Visual Studio proje dosyasında uygun
 
 ### <a name="step-2-getting-it-to-build"></a>Adım 2. Oluşturmaya alma
 
-Derlemeden önce, proje sisteminin hangi derleyici sürümünü kullandığını bilmemiz için platform araç takımını denetliyoruz. Proje Özellikleri iletişim kutusunda, **yapılandırma özellikleri**altında, **genel** kategorisinde, **platform araç takımı** özelliğine bakın. Visual Studio sürümünü ve bu örnekte, araçların Visual Studio 2017 sürümü için v141 olan platform Aracı sürüm numarasını içerir. Özgün olarak Visual Studio 2010, 2012, 2013 veya 2015 ile derlenen bir projeyi dönüştürdüğünüzde, araç takımı Visual Studio 2017 araç takımını otomatik olarak güncellenmez.
+Derlemeden önce, proje sisteminin hangi derleyici sürümünü kullandığını bilmemiz için platform araç takımını denetliyoruz. Proje Özellikleri iletişim kutusunda, **yapılandırma özellikleri**altında, **genel** kategorisinde, **platform araç takımı** özelliğine bakın. Visual Studio sürümünü ve bu örnekte, araçların Visual Studio 2017 sürümü için v141 olan platform Aracı sürüm numarasını içerir. Özgün olarak Visual Studio 2010, 2012, 2013 veya 2015 ile derlenen bir projeyi dönüştürdüğünüzde, araç takımı en son araç takımını otomatik olarak güncellenmez.
 
 Anahtarı Unicode 'a getirmek için, projenin özelliklerini açın, **yapılandırma özellikleri**altında **genel** bölümünü seçin ve **karakter kümesi** özelliğini bulun. Bunu, **birden çok baytlık karakter kümesini** **Unicode karakter kümesi kullanacak**şekilde değiştirin. Bu değişikliğin etkisi artık _unicode ve Unicode makrolarının tanımlandığından ve _MBCS 'nin, **komut satırı** özelliğindeki **C/C++**  kategori altındaki Özellikler iletişim kutusunda doğrulayabileceği anlamına gelir.
 
@@ -77,7 +77,7 @@ Kod, bu makroyla belirttiğiniz Windows sürümünde kullanılamayan Windows API
 
 Test paketi yok, bu nedenle uygulamayı yalnızca kullanıcı arabiriminden el ile test ettik. Hiçbir sorun gözlemlenmedi.
 
-### <a name="step-4-improve-the-code"></a>4\. adımı. Kodu geliştirme
+### <a name="step-4-improve-the-code"></a>4\. adım. Kodu geliştirme
 
 Artık Visual Studio 2017 ' ye geçirdiniz, yeni C++ özelliklerden yararlanmak için bazı değişiklikler yapmak isteyebilirsiniz. C++ Derleyicinin geçerli sürümü standart ve C++ önceki sürümlere çok daha uyumlu olduğundan, kodunuzu daha güvenli hale getirmek için bazı kod değişiklikleri yapmanız ve diğer derleyiciler ve işletim sistemlerine daha fazla taşınabilir bazı iyileştirmeleri göz önünde bulundurun.
 

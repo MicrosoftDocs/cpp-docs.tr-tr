@@ -79,12 +79,12 @@ helpviewer_keywords:
 - _ui64tot_s function
 - _i64toa_s function
 ms.assetid: eb746581-bff3-48b5-a973-bfc0a4478ecf
-ms.openlocfilehash: 204abd65981371a970623879ec94ff77db6728b2
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: df7f3ec970e0205ab999d1a04299a22dcc422d42
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70953553"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73625074"
 ---
 # <a name="_itoa_s-_ltoa_s-_ultoa_s-_i64toa_s-_ui64toa_s-_itow_s--_ltow_s--_ultow_s-_i64tow_s-_ui64tow_s"></a>_itoa_s, _ltoa_s, _ultoa_s, _i64toa_s, _ui64toa_s, _itow_s, _ltow_s, _ultow_s, _i64tow_s, _ui64tow_s
 
@@ -144,7 +144,7 @@ Dönüştürmenin sonucunu tutan çıkış arabelleği.
 *boyutla*<br/>
 Karakter veya geniş karakterdeki *arabelleğin* boyutu.
 
-*radix*<br/>
+*taban*<br/>
 Değeri dönüştürmek için kullanılan taban veya sayısal temel *değer*2-36 aralığında olmalıdır.
 
 ## <a name="return-value"></a>Dönüş değeri
@@ -155,10 +155,10 @@ Başarılıysa sıfır; hatada hata kodu. Aşağıdaki koşullardan herhangi bir
 
 |value|Arabelleğin|size|taban|döndürülmesini|
 |-----------|------------|----------------------|-----------|------------|
-|Kaydedilmemiş|**DEĞER**|Kaydedilmemiş|Kaydedilmemiş|**EINVAL**|
-|Kaydedilmemiş|Kaydedilmemiş|<=0|Kaydedilmemiş|**EINVAL**|
-|Kaydedilmemiş|Kaydedilmemiş|< = gereken sonuç dizesinin uzunluğu|Kaydedilmemiş|**EINVAL**|
-|Kaydedilmemiş|Kaydedilmemiş|Kaydedilmemiş|*taban* < 2 veya *taban* > 36|**EINVAL**|
+|Kaydedilmemiş|**DEĞER**|Kaydedilmemiş|Kaydedilmemiş|**EıNVAL**|
+|Kaydedilmemiş|Kaydedilmemiş|< = 0|Kaydedilmemiş|**EıNVAL**|
+|Kaydedilmemiş|Kaydedilmemiş|< = gereken sonuç dizesinin uzunluğu|Kaydedilmemiş|**EıNVAL**|
+|Kaydedilmemiş|Kaydedilmemiş|Kaydedilmemiş|*taban* < 2 veya *taban* > 36|**EıNVAL**|
 
 ### <a name="security-issues"></a>Güvenlik sorunları
 
@@ -170,7 +170,7 @@ Parametreler ve dönüş değeri hariç, **_itoa_s** ve **_itow_s** işlevi aile
 
 ' C++De, bu işlevlerin kullanılması şablon aşırı yüklemeleri tarafından basitleştirilmiştir; aşırı yüklemeler arabellek uzunluğunu otomatik olarak çıkarabilir (bir boyut bağımsız değişkeni belirtme gereksinimini ortadan kaldırır) ve eski, güvenli olmayan işlevleri otomatik olarak yeni, güvenli karşılıklarıyla değiştirebilir. Daha fazla bilgi için bkz. [Güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 
-Bu işlevlerin hata ayıklama Kitaplığı sürümleri ilk olarak arabelleği 0xFD ile doldurur. Bu davranışı devre dışı bırakmak için [_Crtsetdebugfillthreshold](crtsetdebugfillthreshold.md)kullanın.
+Bu işlevlerin hata ayıklama Kitaplığı sürümleri ilk olarak arabelleği 0xFE ile doldurur. Bu davranışı devre dışı bırakmak için [_Crtsetdebugfillthreshold](crtsetdebugfillthreshold.md)kullanın.
 
 CRT, çeşitli genel tabanlara yönelik null Sonlandırıcı ve işaret karakteri de dahil olmak üzere her bir tamsayı türünün en uzun olası değerini dönüştürmek için gereken arabellek boyutunu tanımlamak üzere kullanışlı makrolar içerir. Daha fazla bilgi için bkz. [en fazla dönüştürme sayısı makroları](itoa-itow.md#maximum-conversion-count-macros).
 

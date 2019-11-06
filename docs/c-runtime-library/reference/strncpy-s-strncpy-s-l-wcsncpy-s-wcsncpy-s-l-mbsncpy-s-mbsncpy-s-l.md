@@ -49,12 +49,12 @@ helpviewer_keywords:
 - _tcsncpy_s function
 - wcsncpy_s_l function
 ms.assetid: a971c800-94d1-4d88-92f3-a2fe236a4546
-ms.openlocfilehash: 196a3aac09db790da6b8137029383cca77c3d2ad
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 2ccfde34d12dadb76bc8b4058a3f9b52c3d1f4bc
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70947271"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73626145"
 ---
 # <a name="strncpy_s-_strncpy_s_l-wcsncpy_s-_wcsncpy_s_l-_mbsncpy_s-_mbsncpy_s_l"></a>strncpy_s, _strncpy_s_l, wcsncpy_s, _wcsncpy_s_l, _mbsncpy_s, _mbsncpy_s_l
 
@@ -171,10 +171,10 @@ Başarılı olursa **sıfır, kesme oluştuysa, aksi** takdirde hata kodu.
 
 |*strDest*|*numberOfElements*|*strSource*|Dönüş değeri|*StrDest* içeriği|
 |---------------|------------------------|-----------------|------------------|---------------------------|
-|**DEĞER**|Kaydedilmemiş|Kaydedilmemiş|**EINVAL**|değiştirilmedi|
-|Kaydedilmemiş|Kaydedilmemiş|**DEĞER**|**EINVAL**|*strDest* [0] 0 olarak ayarlandı|
-|Kaydedilmemiş|0|Kaydedilmemiş|**EINVAL**|değiştirilmedi|
-|**Null** değil|çok küçük|Kaydedilmemiş|**ERANGE**|*strDest* [0] 0 olarak ayarlandı|
+|**DEĞER**|Kaydedilmemiş|Kaydedilmemiş|**EıNVAL**|değiştirilmedi|
+|Kaydedilmemiş|Kaydedilmemiş|**DEĞER**|**EıNVAL**|*strDest*[0] 0 olarak ayarlandı|
+|Kaydedilmemiş|0|Kaydedilmemiş|**EıNVAL**|değiştirilmedi|
+|**null** değil|çok küçük|Kaydedilmemiş|**ERANGE**|*strDest*[0] 0 olarak ayarlandı|
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -210,14 +210,14 @@ Kaynak ve hedef dizeler çakıştığında **strncpy_s** davranışı tanımsız
 
 ' C++De, bu işlevlerin kullanılması şablon aşırı yüklemeleri tarafından basitleştirilmiştir; aşırı yüklemeler arabellek uzunluğunu otomatik olarak çıkarabilir (bir boyut bağımsız değişkeni belirtme gereksinimini ortadan kaldırır) ve eski, güvenli olmayan işlevleri otomatik olarak yeni, güvenli karşılıklarıyla değiştirebilir. Daha fazla bilgi için bkz. [Güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 
-Bu işlevlerin hata ayıklama sürümleri ilk olarak arabelleği 0xFD ile doldurur. Bu davranışı devre dışı bırakmak için [_Crtsetdebugfillthreshold](crtsetdebugfillthreshold.md)kullanın.
+Bu işlevlerin hata ayıklama Kitaplığı sürümleri ilk olarak arabelleği 0xFE ile doldurur. Bu davranışı devre dışı bırakmak için [_Crtsetdebugfillthreshold](crtsetdebugfillthreshold.md)kullanın.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
 |TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_tcsncpy_s**|**strncpy_s**|**_mbsnbcpy_s**|**wcsncpy_s**|
-|**_tcsncpyı_s_l**|**_strncpy_s_l**|**_mbsnbcpy_s_l**|**_wcsncpy_s_l**|
+|**_tcsncpyı_s_l**|**_strncpyı_s_l**|**_mbsnbcpyı_s_l**|**_wcsncpyı_s_l**|
 
 > [!NOTE]
 > **_strncpyı_s_l**, **_wcsncpyı_s_l** ve **_mbsncpyı_s_l** yerel ayar bağımlılığını içermez ve yalnızca **_tcsncpon _s_l** için sağlanır ve doğrudan çağrılması amaçlanmamıştır.

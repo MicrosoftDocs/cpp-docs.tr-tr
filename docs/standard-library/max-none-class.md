@@ -16,14 +16,14 @@ helpviewer_keywords:
 - stdext::max_none [C++], released
 - stdext::max_none [C++], saved
 ms.assetid: 12ab5376-412e-479c-86dc-2c3d6a3559b6
-ms.openlocfilehash: 0d409928de4bf66bcc6d6dda3008131f87e790c3
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: b296c641be68efac7410328a448a4ad2bd0fa88e
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68460164"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73626824"
 ---
-# <a name="maxnone-class"></a>max_none Sınıfı
+# <a name="max_none-class"></a>max_none Sınıfı
 
 [Freelist](../standard-library/freelist-class.md) nesnesini en fazla sıfır uzunluğuna sınırlayan bir [Max Class](../standard-library/allocators-header.md) nesnesi tanımlar.
 
@@ -38,7 +38,7 @@ class max_none
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*en fazla*|İçinde depolanacak en fazla öğe sayısını belirleyen Max sınıfı `freelist`.|
+|*Biçimlendir*|`freelist`depolanacak en fazla öğe sayısını belirleyen Max sınıfı.|
 
 ### <a name="member-functions"></a>Üye işlevleri
 
@@ -52,7 +52,7 @@ class max_none
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<ayrıcılar >
+**Üst bilgi:** \<allocators >
 
 **Ad alanı:** stdext
 
@@ -72,7 +72,7 @@ void allocated(std::size_t _Nx = 1);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi hiçbir şey yapmaz. Her başarılı çağrıdan `cache_freelist::allocate` sonra **New**işlecine kadar çağrılır. *_Nx* bağımsız değişkeni, **New**işlecine göre ayrılan öbekteki bellek bloklarının sayısıdır.
+Bu üye işlevi hiçbir şey yapmaz. Her başarılı çağrıdan sonra **Yeni**işleç `cache_freelist::allocate` tarafından çağrılır. *_Nx* bağımsız değişkeni, **New**işlecine göre ayrılan öbekteki bellek bloklarının sayısıdır.
 
 ## <a name="deallocated"></a>max_none::d eayrılan
 
@@ -90,7 +90,7 @@ void deallocated(std::size_t _Nx = 1);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi hiçbir şey yapmaz. Bu üye işlevi, her çağrıdan `cache_freelist::deallocate` sonra işleç **Delete**'e kadar çağrılır. *_Nx* bağımsız değişkeni, işleç **silme**tarafından serbest bırakılmış öbek içindeki bellek bloklarının sayısıdır.
+Üye işlevi hiçbir şey yapmaz. Bu üye işlevi, her çağrıdan sonra `cache_freelist::deallocate` işleci **Delete**öğesine çağrılır. *_Nx* bağımsız değişkeni, işleç **silme**tarafından serbest bırakılmış öbek içindeki bellek bloklarının sayısıdır.
 
 ## <a name="full"></a>max_none:: Full
 
@@ -106,7 +106,7 @@ Bu üye işlev her zaman **true**değerini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi tarafından `cache_freelist::deallocate`çağrılır. Çağrı **true**döndürürse, `deallocate` bellek bloğunu ücretsiz listeye koyar; yanlış döndürürse, `deallocate` blok serbest bırakmak için işleç **silme** yöntemini çağırır.
+Bu üye işlevi `cache_freelist::deallocate`tarafından çağırılır. Çağrı **true**döndürürse `deallocate` bellek bloğunu ücretsiz listeye koyar; **false**döndürürse, blok serbest bırakmak için işleç **Delete** ' i çağırır `deallocate`.
 
 ## <a name="released"></a>max_none:: yayınlandı
 
@@ -118,7 +118,7 @@ void released();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi hiçbir şey yapmaz. Geçerli Max sınıfının `cache_freelist::allocate` üyeişlevi,boşlistedenbirbellekbloğunuher`released` kaldırdığında tarafından çağrılır.
+Bu üye işlevi hiçbir şey yapmaz. Geçerli Max sınıfının `released` üye işlevi, boş listeden bir bellek bloğunu her kaldırdığında `cache_freelist::allocate` tarafından çağrılır.
 
 ## <a name="saved"></a>max_none:: kaydedildi
 
@@ -130,8 +130,8 @@ void saved();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi hiçbir şey yapmaz. Bu, `cache_freelist::deallocate` her bir bellek bloğunu ücretsiz listeye yerleştirdiğinde çağrılır.
+Bu üye işlevi hiçbir şey yapmaz. Her bir bellek bloğunu ücretsiz listeye yerleştirdiğinde `cache_freelist::deallocate` tarafından çağrılır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<ayrıcılar >](../standard-library/allocators-header.md)
+[\<allocators >](../standard-library/allocators-header.md)

@@ -1,113 +1,113 @@
 ---
-title: 'İzlenecek yol: Standart bir C++ programını (C++) oluşturma'
+title: 'İzlenecek yol: standart C++ program oluşturma (C++)'
 ms.custom: get-started-article
 ms.date: 04/25/2019
 helpviewer_keywords:
 - command-line applications [C++], standard
 - standard applications [C++]
 ms.assetid: 48217e35-d892-46b7-93e3-f6f0b7e2da35
-ms.openlocfilehash: b3172dd6ed4c438bacedd6760da5ab65228396f3
-ms.sourcegitcommit: 8bb2bea1384b290b7570b01608a86c7488ae7a02
+ms.openlocfilehash: 9b2d1f3bf1a229a0590553369e37bc07f35ada33
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67400917"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73627137"
 ---
-# <a name="walkthrough-creating-a-standard-c-program-c"></a>İzlenecek yol: Standart bir C++ programını (C++) oluşturma
+# <a name="walkthrough-creating-a-standard-c-program-c"></a>İzlenecek yol: standart C++ program oluşturma (C++)
 
-Visual Studio standart oluşturmak için kullanabileceğiniz C++ programlar. Bu kılavuzda açıklanan adımları izleyerek, bir proje oluşturun, projeye yeni bir dosya ekleyin, yapabilirsiniz C++ kodu eklemek ve ardından derleyin ve Visual Studio kullanarak programı çalıştırmak için dosyasını değiştirin.
+Standart C++ programlar oluşturmak Için Visual Studio 'yu kullanabilirsiniz. Bu izlenecek adımları izleyerek bir proje oluşturabilir, projeye yeni bir dosya ekleyebilir, kod eklemek C++ için dosyayı değiştirebilir ve sonra Visual Studio 'yu kullanarak programı derleyip çalıştırabilirsiniz.
 
-Kendi C++ programınızı yazabilir veya örnek programlardan birini kullanın. Bu kılavuzda örnek program bir konsol uygulamasıdır. Bu uygulamanın kullandığı `set` C++ Standart Kitaplığı'nda kapsayıcı.
+Kendi C++ programınızı yazabilir veya örnek programlardan birini kullanabilirsiniz. Bu izlenecek yolda örnek program bir konsol uygulamasıdır. Bu uygulama, C++ standart kitaplıktaki `set` kapsayıcısını kullanır.
 
 > [!NOTE]
-> Belirli bir sürümü ile uyumluluk C++ dil standardı (yani C ++ 14 veya C ++ 17) gerekli, kullanın `/std:C++14` veya `/std:c++17` derleyici seçeneği. (Visual Studio 2017 ve üzeri.)
+> C++ Dil standardının belirli bir sürümüyle uyumluluk (örn. c++ 14 veya c++ 17) gerekliyse, `/std:c++14` veya `/std:c++17` derleyici seçeneğini kullanın. (Visual Studio 2017 ve üzeri.)
 
-## <a name="prerequisites"></a>Önkoşullar
+## <a name="prerequisites"></a>Prerequisites
 
 Bu adım adım öğreticiyi tamamlamak için C++ dilinin temellerini anlamanız gerekir.
 
-### <a name="to-create-a-project-and-add-a-source-file"></a>Bir proje oluşturun ve bir kaynak dosyası eklemek için
+### <a name="to-create-a-project-and-add-a-source-file"></a>Bir proje oluşturmak ve kaynak dosya eklemek için
 
-Aşağıdaki adımlar, kullandığınız Visual Studio'nun hangi sürümünün bağlı olarak farklılık gösterir. Bu sayfanın sol üst sürüm seçicisinde doğru ayarlandığından emin olun.
+Aşağıdaki adımlar, kullandığınız Visual Studio sürümüne bağlı olarak farklılık gösterir. Bu sayfanın sol üst kısmındaki sürüm seçicinin doğru ayarlandığından emin olun.
 
 ::: moniker range="vs-2019"
 
-### <a name="to-create-a-c-project-in-visual-studio-2019"></a>Oluşturmak için bir C++ Visual Studio 2019 projesinde
+### <a name="to-create-a-c-project-in-visual-studio-2019"></a>Visual Studio 2019 C++ ' de bir proje oluşturmak için
 
-1. Ana menüden **dosya** > **yeni** > **proje** açmak için **yeni bir proje oluşturma** iletişim bir kutu.
+1. **Yeni proje oluştur** iletişim kutusunu açmak için ana menüden **dosya** > **Yeni** > **Proje** ' yi seçin.
 
-1. İletişim kutusunun üstündeki ayarlamak **dil** için **C++** ayarlayın **Platform** için **Windows**, ayarlayıp **proje türü** için **konsol**. 
+1. İletişim kutusunun üst kısmında, **dili** olarak **C++** ayarlayın, **platformu** **Windows**'a ayarlayın ve **proje türünü** **konsol**olarak ayarlayın. 
 
-1. Filtrelenmiş proje türleri listesinden seçim **konsol uygulaması** ardından **sonraki**. Sonraki sayfada, proje için bir ad girin ve istenen proje konumu belirtin.
+1. Filtre uygulanmış proje türleri listesinden **konsol uygulaması** ' nı seçin ve ardından **İleri**' yi seçin. Sonraki sayfada, proje için bir ad girin ve isterseniz proje konumunu belirtin.
 
-1. Seçin **Oluştur** projeyi oluşturmak için.
+1. Projeyi oluşturmak için **Oluştur** düğmesini seçin.
 
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
-### <a name="to-create-a-c-project-in-visual-studio-2017"></a>Oluşturmak için bir C++ proje Visual Studio 2017
+### <a name="to-create-a-c-project-in-visual-studio-2017"></a>Visual Studio 2017 C++ ' de bir proje oluşturmak için
 
-1. İşaret ederek bir proje oluşturma **yeni** üzerinde **dosya** menüsüne ve ardından **proje**.
+1. **Dosya** menüsünde **Yeni** ' ye Işaret ederek ve ardından **Proje**' ye tıklayarak bir proje oluşturun.
 
-1. İçinde **Visual C++** Proje Türleri bölmesinde ye **Windows Masaüstü**ve ardından **Windows konsol uygulaması**.
+1. **C++ Visual** Project Types bölmesinde **Windows Desktop**' a ve ardından **Windows konsol uygulaması**' na tıklayın.
 
-1. Proje için bir ad yazın. Varsayılan olarak, projeyi içeren çözüm proje ile aynı ada sahiptir ancak farklı bir ad yazabilirsiniz. Proje için farklı bir konum da yazabilirsiniz.
+1. Proje için bir ad yazın. Varsayılan olarak, projeyi içeren çözüm proje ile aynı ada sahiptir, ancak farklı bir ad yazabilirsiniz. Ayrıca, proje için farklı bir konum da yazabilirsiniz.
 
-1. Tıklayın **Tamam** projeyi oluşturmak için.
+1. Projeyi oluşturmak için **Tamam** ' ı tıklatın.
 
 ::: moniker-end
 
 ::: moniker range="vs-2015"
 
-### <a name="to-create-a-c-project-in-visual-studio-2015"></a>Oluşturmak için bir C++ proje Visual Studio 2015'te
+### <a name="to-create-a-c-project-in-visual-studio-2015"></a>Visual Studio 2015 C++ ' de bir proje oluşturmak için
 
-1. İşaret ederek bir proje oluşturma **yeni** üzerinde **dosya** menüsüne ve ardından **proje**.
+1. **Dosya** menüsünde **Yeni** ' ye Işaret ederek ve ardından **Proje**' ye tıklayarak bir proje oluşturun.
 
-1. İçinde **Visual C++** Proje Türleri bölmesinde ye **Windows Masaüstü**ve ardından **Windows konsol uygulaması**.
+1. **C++ Visual** Project Types bölmesinde **Windows Desktop**' a ve ardından **Windows konsol uygulaması**' na tıklayın.
 
-1. İçinde **yeni proje** iletişim kutusunda **yüklü** > **şablonları** > **Visual C++** , ve ardından **Win32**. Orta bölmede seçin **Win32 konsol uygulaması**.
+1. **Yeni proje** iletişim kutusunda, **Visual C++**  >  > **Şablonlar** **' ı genişletin** ve ardından **Win32**' yi seçin. Orta bölmede **Win32 konsol uygulaması**' nı seçin.
 
-1. Proje için bir ad yazın. Varsayılan olarak, projeyi içeren çözüm proje ile aynı ada sahiptir ancak farklı bir ad yazabilirsiniz. Proje için farklı bir konum da yazabilirsiniz.
+1. Proje için bir ad yazın. Varsayılan olarak, projeyi içeren çözüm proje ile aynı ada sahiptir, ancak farklı bir ad yazabilirsiniz. Ayrıca, proje için farklı bir konum da yazabilirsiniz.
 
-1. Tıklayın **Tamam** projeyi oluşturmak için.
+1. Projeyi oluşturmak için **Tamam** ' ı tıklatın.
 
-1. Tamamlamak **Win32 Uygulama Sihirbazı**. 
+1. **Win32 uygulama Sihirbazı 'nı**doldurun. 
 
-1. Tıklayın **sonraki**, ardından emin **konsol uygulaması** seçilidir ve işaretini kaldırın **önceden derlenmiş üst bilgiler** kutusu. 
+1. **İleri**' ye tıklayın, ardından **konsol uygulamasının** seçili olduğundan emin olun ve **önceden derlenmiş üstbilgiler** kutusunun işaretini kaldırın. 
 
 1. **Son**'a tıklayın.
 
 ::: moniker-end
 
-## <a name="add-a-new-source-file"></a>Yeni bir kaynak dosyası ekleme
+## <a name="add-a-new-source-file"></a>Yeni bir kaynak dosya ekleyin
 
-1. Varsa **Çözüm Gezgini** , üzerinde görüntülenmediğini **görünümü** menüsünde tıklayın **Çözüm Gezgini**.
+1. **Çözüm Gezgini** görüntülenmiyorsa, **Görünüm** menüsünde **Çözüm Gezgini**' a tıklayın.
 
-1. Yeni bir kaynak dosyası projeye aşağıdaki şekilde ekleyin.
+1. Projeye aşağıdaki gibi yeni bir kaynak dosya ekleyin.
 
-   1. İçinde **Çözüm Gezgini**, sağ **kaynak dosyaları** klasörünü **Ekle**ve ardından **yeni öğe**.
+   1. **Çözüm Gezgini**, **kaynak dosyalar** klasörüne sağ tıklayın, **Ekle**' nin üzerine gelin ve ardından **Yeni öğe**' ye tıklayın.
 
-   1. İçinde **kod** düğümünü tıklatın **C++ dosyası (.cpp)** dosyası için bir ad yazın ve ardından **Ekle**.
+   1. **Kod** düğümünde  **C++ dosya (. cpp)** öğesine tıklayın, dosya için bir ad yazın ve ardından **Ekle**' ye tıklayın.
 
-   .Cpp dosyası görünür **kaynak dosyaları** klasöründe **Çözüm Gezgini**, ve dosya Visual Studio Düzenleyicisi'nde açılır.
+   . Cpp dosyası **Çözüm Gezgini**Içindeki **kaynak dosyaları** klasöründe görünür ve dosya Visual Studio Düzenleyicisi 'nde açılır.
 
-1. Düzenleyicideki dosyada, C++ Standart Kitaplığı'nı kullanan geçerli bir C++ programınızı yazabilir veya örnek programlardan birini kopyalayın ve dosyaya yapıştırın.
+1. Düzenleyicideki dosyada, C++ C++ standart kitaplığı kullanan geçerli bir program yazın veya örnek programlardan birini kopyalayıp dosyaya yapıştırın.
 
 1. Dosyayı kaydedin.
 
-1. Üzerinde **derleme** menüsünde tıklatın **Çözümü Derle**.
+1. **Yapı** menüsünde **çözüm oluştur**' a tıklayın.
 
-   **Çıkış** penceresi, örneğin, konumunu yapı günlüğüne ve yapı durumunu belirten bir ileti gibi derleme ilerlemesi hakkında bilgileri görüntüler.
+   **Çıkış** penceresi, derleme ilerlemesi hakkındaki bilgileri, örneğin, derleme günlüğünün konumunu ve yapı durumunu gösteren bir iletiyi görüntüler.
 
-1. Üzerinde **hata ayıklama** menüsünü tıklatın **hata ayıklama olmadan Başlat**.
+1. **Hata Ayıkla** menüsünde, **hata ayıklama olmadan Başlat**' a tıklayın.
 
-   Örnek programı kullandıysanız bir komut penceresi görüntülenir ve kümede belirli tamsayılar bulunup bulunmadığını gösterir.
+   Örnek programı kullandıysanız, bir komut penceresi görüntülenir ve küme içinde belirli tamsayılar bulunup bulunamamadığını gösterir.
 
 ## <a name="next-steps"></a>Sonraki Adımlar
 
-**Önceki:** [Visual C++'ta Konsol Uygulamaları](../windows/console-applications-in-visual-cpp.md)<br/>
-**Sonraki:** [İzlenecek yol: Komut Satırında Yerel C++ Programı Derleme](../build/walkthrough-compiling-a-native-cpp-program-on-the-command-line.md)
+**Önceki:** [Visual C++ 'teki konsol uygulamaları](../windows/console-applications-in-visual-cpp.md)<br/>
+**Sonraki:** [Izlenecek yol: komut satırında C++ yerel bir program derleme](../build/walkthrough-compiling-a-native-cpp-program-on-the-command-line.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

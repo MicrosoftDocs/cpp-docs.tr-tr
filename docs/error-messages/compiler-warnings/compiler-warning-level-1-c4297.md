@@ -6,28 +6,28 @@ f1_keywords:
 helpviewer_keywords:
 - C4297
 ms.assetid: ba92fcdc-9f70-4f60-abe6-281f9582ca59
-ms.openlocfilehash: 07dd6c65498ddd0d377ec3e0fbc7b44e52bec96b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 48ae909b9484fd0581f4691059272c5a488ea5fe
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62408634"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73626612"
 ---
 # <a name="compiler-warning-level-1-c4297"></a>Derleyici Uyarısı (düzey 1) C4297
 
-'function': işlev kabul ancak bir özel durum oluşturması beklenmiyor
+' function ': işlevin özel durum oluşturması, ancak
 
-Bir işlev bildirimi bir (muhtemelen örtük) içeren `noexcept` tanımlayıcısı, boş bir `throw` özel durum tanımlayıcısı veya bir [__declspec(nothrow)](../../cpp/nothrow-cpp.md) özniteliği ve tanımını içeren bir veya daha fazla [throw ](../../cpp/try-throw-and-catch-statements-cpp.md) deyimleri. C4297 çözmek için bildirilen işlevler özel durumlar çalışmayın `__declspec(nothrow)`, `noexcept(true)` veya `throw()`. Alternatif olarak, kaldırma `noexcept`, `throw()`, veya `__declspec(nothrow)` belirtimi.
+Bir işlev bildirimi (muhtemelen örtük) `noexcept` Belirleyicisi, boş bir `throw` özel durum belirleyicisi veya bir [__declspec (nothrow)](../../cpp/nothrow-cpp.md) özniteliği içerir ve tanım bir veya daha fazla [throw](../../cpp/try-throw-and-catch-statements-cpp.md) deyimi içerir. C4297 çözümlemek için, `__declspec(nothrow)`, `noexcept(true)` veya `throw()`olarak belirtilen işlevlerde özel durumlar yapmayı denemeyin. Alternatif olarak, `noexcept`, `throw()`veya `__declspec(nothrow)` belirtimini kaldırın.
 
-Varsayılan olarak, derleyici örtük oluşturur `noexcept(true)` kullanıcı tanımlı yıkıcı ve birleştiricinin işlevleri ve derleyicinin ürettiği özel üye işlevleri tanımlayıcıları. Bu, ISO C ++ 11 standardına uyar. Örtük noexcept belirticisi oluşturulmasını önlemek ve Visual Studio 2013'ün standart olmayan davranış derleyiciye dönmek için kullandığınız **/Zc:implicitNoexcept-** derleyici seçeneği. Daha fazla bilgi için [/ZC: implicitnoexcept (örtük özel durum tanımlayıcıları)](../../build/reference/zc-implicitnoexcept-implicit-exception-specifiers.md).
+Varsayılan olarak, derleyici Kullanıcı tanımlı Yıkıcılar ve deayırıcı işlevleri ve derleyicinin ürettiği özel üye işlevleri için örtük `noexcept(true)` belirticileri üretir. Bu, ISO C++ 11 standardına uygundur. Örtük noexcept belirticileri oluşturmayı engellemek ve derleyiciyi Visual Studio 2013 standart olmayan davranışına dönüştürmek için **/Zc: implicitNoexcept-** derleyici seçeneğini kullanın. Daha fazla bilgi için bkz. [/Zc: implicitNoexcept (örtük özel durum tanımlayıcıları)](../../build/reference/zc-implicitnoexcept-implicit-exception-specifiers.md).
 
-Özel durum belirtimleri hakkında daha fazla bilgi için bkz. [özel durum belirtimleri (throw)](../../cpp/exception-specifications-throw-cpp.md). Ayrıca bkz [/EH (özel durum işleme modeli)](../../build/reference/eh-exception-handling-model.md) özel durum işleme derleme zamanında değişiklik yapma hakkında bilgi için.
+Özel durum belirtimleri hakkında daha fazla bilgi için bkz. [özel durum belirtimleri (throw)](../../cpp/exception-specifications-throw-cpp.md). Ayrıca, derleme zamanında özel durum işleme davranışının nasıl değiştirileceği hakkında bilgi için bkz. [/Eh (özel durum Işleme modeli)](../../build/reference/eh-exception-handling-model.md) .
 
-Bu uyarı için __declspec da oluşturulur ([dllexport](../../cpp/dllexport-dllimport.md)) işlevleri olsalar bile extern "C" olarak işaretlenmiş C++ işlevleri.
+Bu uyarı, C++ işlev olsalar bile extern "C" olarak işaretlenmiş __declspec ([dllexport](../../cpp/dllexport-dllimport.md)) işlevleri için de oluşturulur.
 
-Aşağıdaki örnek, C4297 oluşturur:
+Aşağıdaki örnek C4297 oluşturur:
 
-```
+```cpp
 // C4297.cpp
 // compile with: /W1 /LD
 void __declspec(nothrow) f1()   // declared nothrow

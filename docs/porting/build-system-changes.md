@@ -1,8 +1,7 @@
 ---
-title: Derleme sistemi değişiklikleri Visual Studio 2010
-ms.date: 11/04/2016
-f1_keywords:
-- vc.msbuild.changes
+title: VCBuild ile MSBuild
+description: Visual Studio C++ derleme sistemi, visual Studio 2010 ' de VCBuild ile MSBuild 'e değiştirilmiştir.
+ms.date: 10/25/2019
 helpviewer_keywords:
 - Build system changes, project file (.vcxprog)
 - Build system changes, custom build rules
@@ -12,66 +11,68 @@ helpviewer_keywords:
 - Build system changes, $(Inherit)
 - Build system changes, $(NoInherit)
 ms.assetid: e564d95f-a6cc-4d97-b57e-1a71daf66f4a
-ms.openlocfilehash: c3e51aa7e5a4346137e94191b551b0d53452e460
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: afa9324d6074db72fd065cfa07c16349f86a615c
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65449014"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73626608"
 ---
-# <a name="build-system-changes"></a>Derleme Sistemi Değişiklikleri
+# <a name="vcbuild-vs-msbuild-build-system-changes-in-visual-studio-2010"></a>VCBuild ile MSBuild: Visual Studio 2010 'de sistem değişiklikleri oluşturma
 
-Visual Studio derleme için kullanılan MSBuild sistemi C++ projeleri. Ancak, Visual Studio 2008 ve önceki sürümlerde, VCBuild sistemi kullanıldı. Belirli dosya türleri ve üzerinde VCBuild bağımlı kavramları yok veya geçerli sistemde farklı şekilde temsil edilir. Bu belgede, geçerli derleme sistemi farklılıkları açıklar.
+Projeler için C++ MSBuild sistemi, Visual Studio 2010 ' de tanıtılmıştı. Visual Studio 2008 ve önceki sürümlerde VCBuild sistemi kullanılmıştır. VCBuild üzerinde bağımlıya ait olmayan bazı dosya türleri ve kavramlar, MSBuild 'te de farklı şekilde temsil edilir. Bu belgede geçerli derleme sistemindeki farklar açıklanmaktadır. Visual Studio 2008 projesini MSBuild 'e dönüştürmek için Visual Studio 2010 kullanmanız gerekir. Proje dönüştürüldükten sonra, geçerli IDE ve derleyici araç takımını yükseltmek için Visual Studio 'nun en son sürümünü kullanmanız gerekir. Visual Studio 2010 ' i edinme dahil daha fazla bilgi için bkz. [Visual studio 2008 Için yönergeler](use-native-multi-targeting.md#instructions-for-visual-studio-2008).
 
-## <a name="vcproj-is-now-vcxproj"></a>.vcproj .vcxproj sunulmuştur
+Aşağıdaki bölümlerde VCBuild 'tan MSBuild 'e yapılan değişiklikler özetlenmektedir. VCBuild projenizin MSBuild tarafından tanınmayan özel yapı kuralları veya makroları varsa, bu yönergeleri MSBuild sistemine nasıl çevirebileceğinizi öğrenmek için bkz. [Visual Studio projeleri C++ ](../build/creating-and-managing-visual-cpp-projects.md) . VCBuild 'ten MSBuild 'e ilk dönüştürme işlemi yalnızca bir ara adımdır. Proje dosyasının tamamen doğru olmaması veya programın hatasız derlenmesi için gerekli değildir. Projeyi Visual Studio 'nun en son sürümünde çalışır durumda olacak şekilde, projeyi MSBuild biçimine dönüştürmek için yalnızca Visual Studio 2010 ' i kullanıyorsunuz.
 
-Proje dosyaları artık .vcproj dosya adı uzantısını kullanın. Visual Studio, Visual C++'ın önceki bir sürümünü geçerli sistemi tarafından kullanılan biçime tarafından oluşturulan proje dosyalarını otomatik olarak dönüştürür. Bir proje el ile yükseltme hakkında daha fazla bilgi için bkz. [Upgrade (devenv.exe)](/visualstudio/ide/reference/upgrade-devenv-exe).
+## <a name="vcproj-is-now-vcxproj"></a>. vcproj şimdi. vcxproj
 
-Geçerli sürümde, .vcxproj dosya adı uzantısı için bir proje dosyası var.
+Proje dosyaları artık. VCPROJ dosya adı uzantısını kullanmaz. Visual Studio 2010, Visual C++ Studio 'nun önceki bir sürümü tarafından oluşturulan proje dosyalarını otomatik olarak, proje dosyaları için. vcxproj uzantısını kullanan MSBuild biçimine dönüştürür.
 
-## <a name="vsprops-is-now-props"></a>.vsprops .props sunulmuştur
+## <a name="vsprops-is-now-props"></a>. vsprops artık. props
 
-Önceki sürümlerde bir *proje özellik sayfası* .vsprops dosya adı uzantısına sahip bir XML tabanlı bir dosya. Proje özellik sayfası için derleme araçları gibi derleyici veya bağlayıcı anahtarları belirtin ve kullanıcı tanımlı makrolar oluşturmanıza olanak sağlar.
+Visual Studio 2008 ve önceki sürümlerde, *Proje özellik sayfası* . vsprops dosya adı uzantısına sahıp olan XML tabanlı bir dosyadır. Proje özellik sayfası, derleyici veya bağlayıcı gibi derleme araçları için anahtarlar belirtmenize ve Kullanıcı tanımlı makrolar oluşturmanıza imkan tanır. MSBuild 'de, proje özellik sayfası için dosya adı uzantısı. props olur.
 
-Geçerli sürümde .props dosya adı uzantısı için bir proje özellik sayfası var.
+## <a name="custom-build-rules-and-rules-files"></a>Özel derleme kuralları ve. Rules dosyaları
 
-## <a name="custom-build-rules-and-rules-files"></a>Özel derleme kuralları ve .rules dosyaları
+Visual Studio 2008 ve önceki sürümlerde, *kural dosyası* . Rules dosya adı uzantısına sahıp olan XML tabanlı bir dosyadır. Bir kural dosyası, özel yapı kuralları tanımlamanıza ve bunları bir Visual Studio C++ projesinin yapı işlemine eklemenize olanak tanır. Bir veya daha fazla dosya adı uzantısıyla ilişkilendirilebilen özel bir yapı kuralı, giriş dosyalarını bir veya daha fazla çıktı dosyası oluşturan bir araca geçirmenize olanak sağlar.
 
-Önceki sürümlerde bir *kural dosyası* .rules dosya adı uzantısına sahip bir XML tabanlı bir dosya. Bir kural dosyası özel derleme kuralları tanımlayın ve bunları Visual Studio derleme işlemine birleştirmenizi sağlar C++ proje. Daha fazla çıkış dosyalarını veya ilişkili bir veya daha fazla dosya adı uzantılarına sahip olabilir, bir özel derleme kuralının giriş dosyaları birini oluşturan bir araca geçirmek sağlar.
-
-Bu sürümde, özel derleme kuralları üç dosya türleri, .xml, .props ve .targets, .rules dosyası tarafından temsil edilir. Visual C++'ın önceki bir sürümü kullanılarak oluşturulmuş bir .rules dosyası geçerli sürüme geçiş yaptığında eşdeğer .xml, .props ve .targets dosyaları oluşturulur ve özgün .rules dosyası ile birlikte, projenizdeki depolanır.
+MSBuild sisteminde, özel derleme kuralları. Rules dosyası yerine üç dosya türü,. xml,. props ve. targets tarafından temsil edilir. Visual C++ Studio 'nun önceki bir sürümü kullanılarak oluşturulan bir. Rules dosyası visual Studio 2010 ' ye geçirildiğinde, eşdeğer. xml,. props ve. targets dosyaları özgün. Rules dosyası ile birlikte oluşturulup projenizde depolanır.
 
 > [!IMPORTANT]
->  Geçerli sürümde, IDE, yeni kurallar oluşturulmasını desteklemiyor. Bu nedenle, Visual C++'ın önceki bir sürümü kullanılarak oluşturulmuş bir projeden bir kuralı dosyasını kullanmak için en kolay yolu projeyi geçerli sürüme geçirmek olmaktır.
+> Visual Studio 2010 ' de, IDE yeni kuralların oluşturulmasını desteklemez. Bu nedenle, Visual C++ Studio 'nun önceki bir sürümü kullanılarak oluşturulmuş bir projeden bir kural dosyası kullanmanın en kolay yolu projeyi visual Studio 2010 ' e geçirmelidir.
 
 ## <a name="inheritance-macros"></a>Devralma makroları
 
-Önceki sürümlerde, **$(ınherit)** makrosu proje sistemi tarafından oluşturulan komut satırında devralınan özellikler görünme sırasını belirtir. **$(Noınherit)** makrosu $(ınherit) sayılmasına tüm oluşumlarını neden olur ve devralınacak devralınacak değil, tüm özellikleri neden olur. Örneğin, varsayılan olarak $(ınherit) makrosu kullanılarak belirtilen dosyaları neden [/ı (ek içeren dizinler)](../build/reference/i-additional-include-directories.md) derleyici seçeneği, komut satırına eklenecek.
+Visual Studio 2008 ve önceki sürümlerde, **$ (Inherit)** makrosu, devralınan özelliklerin proje yapı sistemi tarafından oluşturulan komut satırında görünme sırasını belirtir. **$ (NoInherit)** makrosu, $ (Inherit) örneklerinin yok sayılmasına neden olur ve aksi takdirde devralınabilecek özelliklerin devralınmasına neden olur. Örneğin, varsayılan olarak $ (Inherit) makrosu, [/ı (ek ekleme dizinleri)](../build/reference/i-additional-include-directories.md) derleyici seçeneği kullanılarak belirtilen dosyaların komut satırına eklenmesini sağlar.
 
-Geçerli sürümde, bir veya daha fazla değişmez değerler ve özelliği makroları birleşimi bir özelliğin değerini belirterek devralma desteklenir. **$(Inherit)** ve **$(noınherit)** makroları desteklenmez.
+Visual Studio 2010 ' de devralma, bir veya daha fazla değişmez değer ve özellik makrosu birleşimi olarak bir özelliğin değeri belirtilerek desteklenir. **$ (Inherit)** ve **$ (NoInherit)** makroları desteklenmez.
 
-Aşağıdaki örnekte, noktalı virgül ile ayrılmış bir listeyi özellik sayfasında bir özelliğine atanır. Liste bitiştirilmiş halini oluşur  *\<değer >* je typu literal a değerini `MyProperty` makrosu gösterimi kullanılarak erişilen özelliği **$(**  <em>MyProperty</em>**)**.
+Aşağıdaki örnekte, bir özellik sayfasındaki bir özelliğe noktalı virgülle ayrılmış bir liste atanır. Liste, *\<değeri >* sabit değeri ve **$ (** <em>MyProperty</em> **)** makro gösterimi kullanılarak erişilen `MyProperty` özelliğinin değerini içerir.
 
 ```
 Property=<value>;$(MyProperty)
 ```
 
-## <a name="vcxprojuser-files"></a>.vcxproj.user Files
+## <a name="vcxprojuser-files"></a>. vcxproj. user dosyaları
 
-Bir kullanıcı dosyası (. vcxproj.user) kullanıcıya özgü özelliklerini, örneğin, hata ayıklama ve dağıtım ayarları depolar. Vcxproj.user dosyanın belirli bir kullanıcı için tüm projeler için geçerlidir.
+Kullanıcı dosyası (. vcxproj. User) kullanıcıya özgü özellikleri, örneğin hata ayıklama ve dağıtım ayarlarını depolar. *Vcxproj. User* dosyası belirli bir kullanıcı için tüm projelere uygulanır.
 
-## <a name="vcxprojfilters-file"></a>.vcxproj.filters File
+## <a name="vcxprojfilters-file"></a>. vcxproj. Filters dosyası
 
-Zaman **Çözüm Gezgini** filtreler dosyası bir projeye bir dosya eklemek için kullanılır (. vcxproj.filters) nerede tanımlar **Çözüm Gezgini** ağaç görünümü, dosya adı uzantısına göre veya dosya eklenir.
+Bir projeye dosya eklemek için **Çözüm Gezgini** kullanıldığında, filtreler dosyası ( *. vcxproj. Filters*), dosyanın dosya adı uzantısına bağlı olarak **Çözüm Gezgini** ağaç görünümünde nerede eklendiğini tanımlar.
 
-## <a name="vc-directories-settings"></a>VC ++ dizinleri ayarları
+## <a name="vc-directories-settings"></a>VC + + dizin ayarları
 
-Visual C++ dizinleri ayarları belirtilir [VC ++ Directories Property Page](../ide/vcpp-directories-property-page.md). Visual Studio'nun önceki sürümlerinde, kullanıcı başına dizinleri ayarları uygulamak ve hariç tutulan dizinler listesini sysincl.dat dosyasında belirtilir.
+Görsel C++ dizinler ayarları, [VC + + dizinleri Özellik sayfasında](../ide/vcpp-directories-property-page.md)belirtilir. Visual Studio 2008 ve önceki sürümlerde, dizin ayarları Kullanıcı başına uygulanır ve dışlanan dizinlerin listesi, *sysındat* dosyasında belirtilir. 
 
-Çalıştırırsanız, VC ++ dizinleri ayarlarını değiştiremezsiniz [devenv/resetsettings](/visualstudio/ide/reference/resetsettings-devenv-exe) komut satırına. Açarsanız ayarları da değiştiremezsiniz **Araçları** menüsünde tıklatın **içeri ve dışarı aktarma ayarları**ve ardından **tüm ayarları Sıfırla** seçeneği.
+[Devenv/ResetSettings](/visualstudio/ide/reference/resetsettings-devenv-exe) komutunu komut satırında ÇALıŞTıRıRSANıZ, VC + + dizinleri ayarlarını değiştiremezsiniz. Ayrıca, **Araçlar** menüsünü açıp ayarları **Içeri aktar ve dışarı aktar**' a tıklayıp **tüm ayarları Sıfırla** seçeneğini belirlediğinizde ayarları değiştiremezsiniz.
 
-VC ++ dizinleri ayarları önceki bir Visual C++ sürümü tarafından oluşturulmuş bir .vssettings dosyası geçiş. Açık **Araçları** menüsünde tıklatın **içeri ve dışarı aktarma ayarları**seçin **seçili ortam ayarlarını içeri aktarma**ve ardından sihirbazdaki yönergeleri izleyin. Veya üzerinde ilk kez Visual Studio'yu başlattığınızda **varsayılan ortam ayarlarını Seç** iletişim kutusunda **uygun ayarlarımı önceki bir sürümünden geçirme ve bunları ek olarak varsayılan ayarları uygulamak Aşağıda seçili**.
+VC + + dizinleri ayarlarını, Visual Studio 'nun önceki bir sürümü tarafından oluşturulan bir *. vssettings* dosyasından geçirmek için:
+
+1. **Araçlar** menüsünü açın, **Içeri ve dışarı aktarma ayarları** ' na tıklayın.
+2. **Seçili ortam ayarlarını Içeri aktar** ' ı seçin
+3. Sihirbazdaki yönergeleri izleyin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MSBuild komut satırında - C++](../build/msbuild-visual-cpp.md)
+[Komut satırında MSBuild-C++](../build/msbuild-visual-cpp.md)

@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C4138
 ms.assetid: 65ebf929-bba0-4237-923b-c1b66adfe17d
-ms.openlocfilehash: 96f8915b9bec166496ca4305d796ce8ef514ca15
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e6e368f27371b744efa4006630938f68f51a2ca0
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62402534"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73627102"
 ---
 # <a name="compiler-warning-level-1-c4138"></a>Derleyici Uyarısı (düzey 1) C4138
 
-' * /' açıklama dışında bulundu
+' */' açıklama dışında bulundu
 
-Kapanış açıklama sınırlayıcısı bir açılış bir açıklama sınırlayıcısı gelmelidir değil. Yıldız arasında bir boşluk derleyici varsayar (<strong>\*</strong>) ve eğik çizgi (/).
+Kapanış yorumu sınırlayıcısından önce bir açılış yorumu sınırlayıcısı yok. Derleyici, yıldız işareti (<strong>\*</strong>) ile eğik çizgi (/) arasında bir boşluk olduğunu varsayar.
 
 ## <a name="example"></a>Örnek
 
-```
+```cpp
 // C4138a.cpp
 // compile with: /W1
 int */*comment*/ptr;   // C4138 Ambiguous first delimiter causes warning
@@ -30,11 +30,11 @@ int main()
 }
 ```
 
-Bu uyarı açıklamalar iç içe deneyerek neden olabilir.
+Bu uyarı, yorumları iç içe oluşturmaya çalışırken meydana olabilir.
 
-Bu uyarı açıklama içeren, kod içine kod bölümlerini çıkarırsanız çözümlenebilir bir **#if / #endif** blok ve denetleme ifadesiyle sıfır olarak ayarlayın:
+Bu uyarı, yorum içeren kodun bölümlerini açıklama satırı **#if/#endif** bloğunda içine eklerseniz ve denetim ifadesini sıfır olarak ayarlarsanız çözülebilir:
 
-```
+```cpp
 // C4138b.cpp
 // compile with: /W1
 #if 0

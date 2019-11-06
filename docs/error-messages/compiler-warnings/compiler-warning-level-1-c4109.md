@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C4109
 ms.assetid: 9e8d95c6-e05d-47e0-bd87-78974b3cc06c
-ms.openlocfilehash: 1156bbfbed7aed9524b24b046b9ce9acdbdc8b8a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b6b6c0f182aff9bdb4a5e4e7d35dfd111e11e079
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62300212"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73626308"
 ---
 # <a name="compiler-warning-level-1-c4109"></a>Derleyici Uyarısı (düzey 1) C4109
 
-Beklenmeyen tanımlayıcı 'identifier'
+beklenmeyen tanımlayıcı ' tanımlayıcı '
 
-Beklenmeyen tanımlayıcı içeren pragma yoksayıldı.
+Beklenmeyen tanımlayıcıyı içeren pragma yoksayıldı.
 
 ## <a name="example"></a>Örnek
 
-```
+```cpp
 // C4109.cpp
 // compile with: /W1 /LD
 #pragma init_seg( abc ) // C4109

@@ -130,16 +130,16 @@ helpviewer_keywords:
 - CRecordset [MFC], m_strFilter
 - CRecordset [MFC], m_strSort
 ms.assetid: dd89a21d-ef39-4aab-891b-1e373d67c855
-ms.openlocfilehash: efb833a8d4cc0b801f75951bc648d6b83df5bae8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1ebdb18254171d28b5d5e02367596b79142df284
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62372211"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73626183"
 ---
 # <a name="crecordset-class"></a>CRecordset sınıfı
 
-Bir veri kaynağından seçilen kayıt kümesini temsil eder.
+Bir veri kaynağından seçilen bir kayıt kümesini temsil eder.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -151,105 +151,105 @@ class CRecordset : public CObject
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
-|[CRecordset::CRecordset](#crecordset)|Oluşturur bir `CRecordset` nesne. Bunu çağıran bir oluşturucu, türetilmiş sınıf sağlamanız gerekir.|
+|[CRecordset:: CRecordset](#crecordset)|`CRecordset` nesnesi oluşturur. Türetilmiş sınıfınız bunu çağıran bir Oluşturucu sağlamalıdır.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
-|[CRecordset::AddNew](#addnew)|Yeni bir kayıt eklemek için hazırlar. Çağrı `Update` eklenmesi tamamlanması.|
-|[CRecordset::CanAppend](#canappend)|Yeni kayıtlar kayıt kümesine eklenebilir, sıfır döndürür `AddNew` üye işlevi.|
-|[CRecordset::CanBookmark](#canbookmark)|Kayıt kümesi yer işaretleri destekliyorsa, sıfır döndürür.|
-|[CRecordset::Cancel](#cancel)|Zaman uyumsuz bir işlem veya ikinci bir iş parçacığı bir işlem iptal eder.|
-|[CRecordset::CancelUpdate](#cancelupdate)|Beklemedeki Güncelleştirmeleri nedeniyle iptal bir `AddNew` veya `Edit` işlemi.|
-|[CRecordset::CanRestart](#canrestart)|Döndürür gösterimiyse `Requery` kümesinin sorguyu yeniden çalıştırmayı çağrılabilir.|
-|[CRecordset::CanScroll](#canscroll)|Kayıtlarda gezinmek, sıfır döndürür.|
-|[CRecordset::CanTransact](#cantransact)|Veri kaynağı işlemleri destekliyorsa, sıfır döndürür.|
-|[CRecordset::CanUpdate](#canupdate)|Kayıt kümesi güncelleştirilebilir, sıfır döndürür (ekleyebilir, güncelleştirme veya kayıtlarını sil).|
-|[CRecordset::CheckRowsetError](#checkrowseterror)|Kaydı alma sırasında oluşturulan hataları işlemek için çağrılır.|
-|[CRecordset::Close](#close)|Kayıt kümesi ve onunla ilişkili ODBC HSTMT kapatır.|
-|[CRecordset::Delete](#delete)|Geçerli kayıt kayıt kümesinden siler. Silindikten sonra başka bir kayıtla açıkça kaydırma gerekir.|
-|[CRecordset::DoBulkFieldExchange](#dobulkfieldexchange)|Toplu satır kayıt veri kaynağından veri değişimi için çağrılır. Toplu kayıt alanı değişimi (Bulk RFX) olarak uygular.|
-|[CRecordset::DoFieldExchange](#dofieldexchange)|Kayıt alan veri üyeleri ve ilgili kaydı veri kaynağında arasında (her iki yönde) veri değişimi için çağrılır. Implements alanı değişimi (RFX) kaydedin.|
-|[CRecordset::Edit](#edit)|Değişiklikleri geçerli kayda hazırlar. Çağrı `Update` düzenlemeyi tamamlamak için.|
-|[CRecordset::FlushResultSet](#flushresultset)|Önceden tanımlanmış sorgu kullanırken alınması için başka bir sonuç ise sıfır olmayan döndürür ayarlayın.|
-|[CRecordset::GetBookmark](#getbookmark)|Yer işareti değeri bir kayıt parametresi nesnesine atar.|
-|[CRecordset::GetDefaultConnect](#getdefaultconnect)|Varsayılan bağlantı dizesini almak için çağrılır.|
-|[CRecordset::GetDefaultSQL](#getdefaultsql)|Yürütmek için varsayılan SQL dizesini almak için çağrılır.|
-|[CRecordset::GetFieldValue](#getfieldvalue)|Bir kayıt kümesinde bir alanın değerini döndürür.|
-|[CRecordset::GetODBCFieldCount](#getodbcfieldcount)|Kayıt kümesinde alanların sayısını döndürür.|
-|[CRecordset::GetODBCFieldInfo](#getodbcfieldinfo)|Bir kayıt kümesinde belirli tür alanları hakkında bilgileri döndürür.|
-|[CRecordset::GetRecordCount](#getrecordcount)|Kayıt kümesindeki kayıt sayısını döndürür.|
-|[CRecordset::GetRowsetSize](#getrowsetsize)|Tek bir getirme sırasında almak istediğiniz kayıt sayısını döndürür.|
-|[CRecordset::GetRowsFetched](#getrowsfetched)|Getirme sırasında alınan satır sayısını döndürür.|
-|[CRecordset::GetRowStatus](#getrowstatus)|Satır durumunu, getirmeden sonra döndürür.|
-|[CRecordset::GetSQL](#getsql)|Kayıt kümesi kayıtları seçmek için kullanılan SQL dizesi alır.|
-|[CRecordset::GetStatus](#getstatus)|Kayıt durumunu alır: geçerli kayıt ve son sayısıyla olup elde edilmiş dizini.|
-|[CRecordset::GetTableName](#gettablename)|Kayıt kümesi, temel tablonun adını alır.|
-|[CRecordset::IsBOF](#isbof)|İlk kayıttan önce kayıt üzere konumlandırmıştır sıfır olmayan döndürür. Geçerli kayıt yok.|
-|[CRecordset::IsDeleted](#isdeleted)|Kayıt kümesini silinmiş bir kayda konumlandırıldı, sıfır döndürür.|
-|[CRecordset::IsEOF](#iseof)|Son kayıttan sonra kayıt üzere konumlandırmıştır, sıfır döndürür. Geçerli kayıt yok.|
-|[CRecordset::IsFieldDirty](#isfielddirty)|Belirtilen alan geçerli kayıt değiştirilmişse, sıfır döndürür.|
-|[CRecordset::IsFieldNull](#isfieldnull)|Geçerli kayıt belirtilen alan null ise sıfır olmayan döndürür (değeri yok).|
-|[CRecordset::IsFieldNullable](#isfieldnullable)|Geçerli kayıt belirtilen alan null (hiçbir değer yok) olarak ayarlarsanız, sıfır döndürür.|
-|[CRecordset::IsOpen](#isopen)|Döndürür gösterimiyse `Open` daha önce çağırıldı.|
-|[CRecordset::Move](#move)|Kayıt belirli bir kayıt sayısı için herhangi bir yönde geçerli kaydından yerleştirir.|
-|[CRecordset::MoveFirst](#movefirst)|İlk kayıt kayıt kümesindeki geçerli kayıt yerleştirir. Test `IsBOF` ilk.|
-|[CRecordset::MoveLast](#movelast)|Son kayda veya son satır kümesi geçerli kayıt yerleştirir. Test `IsEOF` ilk.|
-|[CRecordset::MoveNext](#movenext)|Sonraki kayıt veya sonraki satır kümesi geçerli kayıt yerleştirir. Test `IsEOF` ilk.|
-|[CRecordset::MovePrev](#moveprev)|Önceki kayda veya önceki satır kümesi geçerli kayıt yerleştirir. Test `IsBOF` ilk.|
-|[CRecordset::OnSetOptions](#onsetoptions)|(Seçim kullanılan) seçeneklerini ayarlamak için belirtilen ODBC deyimi için çağrılır.|
-|[CRecordset::OnSetUpdateOptions](#onsetupdateoptions)|Belirtilen ODBC deyimi için (güncelleştirmesinde kullanılır) seçeneklerini ayarlamak için çağrılır.|
-|[CRecordset::Open](#open)|Kayıt, tablo almak veya kayıt kümesini temsil eden sorgu gerçekleştirme açılır.|
-|[CRecordset::RefreshRowset](#refreshrowset)|Belirtilen satırları durumunu ve verileri yeniler.|
-|[CRecordset::Requery](#requery)|Yeniden seçilen kayıtları yenilemek için kayıt kümesinin sorgusu çalıştırır.|
-|[CRecordset::SetAbsolutePosition](#setabsoluteposition)|Belirtilen kayıt numarasına karşılık gelen kayıt kayıt kümesini yerleştirir.|
-|[CRecordset::SetBookmark](#setbookmark)|Yer işareti tarafından belirtilen kayıt kayıt kümesini yerleştirir.|
-|[CRecordset::SetFieldDirty](#setfielddirty)|Geçerli kayıt belirtilen alan değiştirilmiş olarak işaretler.|
-|[CRecordset::SetFieldNull](#setfieldnull)|Null (hiçbir değer yok) geçerli kayıttaki belirtilen alanın değerini ayarlar.|
-|[CRecordset::SetLockingMode](#setlockingmode)|"İyimser" (varsayılan) kilitleme ya da "kötümser" kilitleme Kilitleme modunu ayarlar. Kayıtların güncelleştirmeleri nasıl kilitlenip belirler.|
-|[CRecordset::SetParamNull](#setparamnull)|Belirtilen parametre null (hiçbir değer yok) olarak ayarlar.|
-|[CRecordset::SetRowsetCursorPosition](#setrowsetcursorposition)|İmleci belirtilen satırda satır içinde konumlandırır.|
-|[CRecordset::SetRowsetSize](#setrowsetsize)|Getirme sırasında almak istediğiniz kayıt sayısını belirtir.|
-|[CRecordset::Update](#update)|Tamamlanan bir `AddNew` veya `Edit` yeni veya düzenlenmiş verilerin veri kaynağında kaydederek işlemi.|
+|[CRecordset:: AddNew](#addnew)|Yeni bir kayıt eklemeye hazırlar. Ekleme işleminin tamamlanabilmesi için `Update` çağırın.|
+|[CRecordset:: CanAppend](#canappend)|`AddNew` üye işlevi aracılığıyla kayıt kümesine yeni kayıtlar eklenebileceği sıfır dışında bir değer döndürür.|
+|[CRecordset:: CanBookmark](#canbookmark)|Kayıt kümesi yer imlerini destekliyorsa sıfır dışında bir değer döndürür.|
+|[CRecordset:: Cancel](#cancel)|Zaman uyumsuz bir işlemi veya ikinci bir iş parçacığından bir işlemi iptal eder.|
+|[CRecordset:: CancelUpdate](#cancelupdate)|`AddNew` veya `Edit` işlemi nedeniyle bekleyen tüm güncelleştirmeleri iptal eder.|
+|[CRecordset:: CanRestart](#canrestart)|Kayıt kümesinin sorgusunu yeniden çalıştırmak için `Requery` çağrılırsa sıfır dışı döndürür.|
+|[CRecordset:: CanScroll](#canscroll)|Kayıtlar arasında gezinebilirsiniz, sıfır dışında bir değer döndürür.|
+|[CRecordset:: CanTransact](#cantransact)|Veri kaynağı işlemleri destekliyorsa sıfır dışında bir değer döndürür.|
+|[CRecordset:: CanUpdate](#canupdate)|Kayıt kümesi güncelleştiribir şekilde (kayıt ekleyebilir, güncelleştirebilir veya silebilirsiniz) sıfır dışında bir değer döndürür.|
+|[CRecordset:: CheckRowsetError](#checkrowseterror)|Kayıt getirilirken oluşturulan hataları işlemek için çağırılır.|
+|[CRecordset:: Close](#close)|Kayıt kümesini ve onunla ilişkili ODBC HSTMT 'yi kapatır.|
+|[CRecordset::D Sil](#delete)|Kayıt kümesinden geçerli kaydı siler. Silme işleminden sonra açıkça başka bir kayda kaydırma yapmanız gerekir.|
+|[CRecordset::D oBulkFieldExchange](#dobulkfieldexchange)|Veri kaynağından kayıt kümesine toplu veri verileri alışverişi için çağırılır. Toplu kayıt alanı değişimi (toplu RFX) uygular.|
+|[CRecordset::D oFieldExchange](#dofieldexchange)|Kayıt kümesinin alan veri üyeleri ile veri kaynağındaki karşılık gelen kayıt arasındaki verileri (her iki yönde) değiş tokuş etmek için çağırılır. Kayıt alanı değişimi (RFX) uygular.|
+|[CRecordset:: Edit](#edit)|Geçerli kayıttaki değişikliklere hazırlar. Düzenleme işleminin tamamlanabilmesi için `Update` çağırın.|
+|[CRecordset:: FlushResultSet](#flushresultset)|Önceden tanımlanmış bir sorgu kullanılırken, alınacak başka bir sonuç kümesi varsa sıfır dışında bir değer döndürür.|
+|[CRecordset:: GetBookmark](#getbookmark)|Bir kaydın yer işareti değerini parametre nesnesine atar.|
+|[CRecordset:: GetDefaultConnect](#getdefaultconnect)|Varsayılan bağlantı dizesini almak için çağırılır.|
+|[CRecordset:: GetDefaultSQL](#getdefaultsql)|Yürütülecek varsayılan SQL dizesini almak için çağırılır.|
+|[CRecordset:: GetFieldValue](#getfieldvalue)|Bir kayıt kümesindeki bir alanın değerini döndürür.|
+|[CRecordset:: GetODBCFieldCount](#getodbcfieldcount)|Kayıt kümesindeki alan sayısını döndürür.|
+|[CRecordset:: GetODBCFieldInfo](#getodbcfieldinfo)|Bir kayıt kümesindeki alanlarla ilgili belirli tür bilgileri döndürür.|
+|[CRecordset:: GetRecordCount](#getrecordcount)|Kayıt kümesindeki kayıt sayısını döndürür.|
+|[CRecordset:: GetRowsetSize](#getrowsetsize)|Tek bir getirme sırasında almak istediğiniz kayıt sayısını döndürür.|
+|[CRecordset:: Getrowsgetirilen](#getrowsfetched)|Bir getirme sırasında alınan satırların gerçek sayısını döndürür.|
+|[CRecordset:: GetRowStatus](#getrowstatus)|Bir getirme işleminden sonra satırın durumunu döndürür.|
+|[CRecordset:: GetSQL](#getsql)|Kayıt kümesi için kayıt seçmek üzere kullanılan SQL dizesini alır.|
+|[CRecordset:: GetStatus](#getstatus)|Kayıt kümesinin durumunu alır: geçerli kaydın dizini ve kayıtların son sayımının alınıp alınmayacağı.|
+|[CRecordset:: GetTableName](#gettablename)|Kayıt kümesinin temel aldığı tablonun adını alır.|
+|[CRecordset:: IsBOF](#isbof)|Kayıt kümesi ilk kayıttan önce konumlandırılmışsa sıfır dışında bir değer döndürür. Geçerli kayıt yok.|
+|[CRecordset:: IsDeleted](#isdeleted)|Kayıt kümesi silinen bir kayıt üzerinde konumlandırılmışsa sıfır dışında bir değer döndürür.|
+|[CRecordset:: IsEOF](#iseof)|Kayıt kümesi son kayıttan sonra konumlandırılmışsa sıfır dışında bir değer döndürür. Geçerli kayıt yok.|
+|[CRecordset:: IsFieldDirty](#isfielddirty)|Geçerli kayıttaki belirtilen alan değiştirilmişse sıfır dışında bir değer döndürür.|
+|[CRecordset:: IsFieldNull](#isfieldnull)|Geçerli kayıttaki belirtilen alan null ise (değer yoksa) sıfır dışında bir değer döndürür.|
+|[CRecordset:: Isfieldnullenebilir](#isfieldnullable)|Geçerli kayıttaki belirtilen alan null (değer olmadan) olarak ayarlandıysa sıfır dışında bir değer döndürür.|
+|[CRecordset:: IsOpen](#isopen)|Daha önce çağrılırsa `Open` sıfır dışı döndürür.|
+|[CRecordset:: Move](#move)|Kayıt kümesini geçerli kayıttaki belirtilen sayıda kayda her iki yönde konumlandırır.|
+|[CRecordset:: MoveFirst](#movefirst)|Kayıt kümesindeki ilk kayıttaki geçerli kaydı konumlandırır. Önce `IsBOF` için test edin.|
+|[CRecordset:: MoveLast](#movelast)|Son kayıttaki veya son satır kümesindeki geçerli kaydı konumlandırır. Önce `IsEOF` için test edin.|
+|[CRecordset:: MoveNext](#movenext)|Sonraki kayıttaki veya bir sonraki satır kümesindeki geçerli kaydı konumlandırır. Önce `IsEOF` için test edin.|
+|[CRecordset:: Moveöncekini](#moveprev)|Önceki kayıttaki veya önceki satır kümesindeki geçerli kaydı konumlandırır. Önce `IsBOF` için test edin.|
+|[CRecordset:: OnSetOptions](#onsetoptions)|Belirtilen ODBC ifadesinin seçeneklerini (seçimde kullanılan) ayarlamak için çağırılır.|
+|[CRecordset:: OnSetUpdateOptions](#onsetupdateoptions)|Belirtilen ODBC ifadesinin seçeneklerini (güncelleştirmede kullanılır) ayarlamak için çağırılır.|
+|[CRecordset:: Open](#open)|Tabloyu alarak veya kayıt kümesinin temsil ettiği sorguyu gerçekleştirerek kayıt kümesini açar.|
+|[CRecordset:: RefreshRowset](#refreshrowset)|Belirtilen satırların verilerini ve durumunu yeniler.|
+|[CRecordset:: Requery](#requery)|Seçilen kayıtları yenilemek için kayıt kümesinin sorgusunu yeniden çalıştırır.|
+|[CRecordset:: SetAbsolutePosition](#setabsoluteposition)|Kayıt kümesini belirtilen kayıt numarasına karşılık gelen kayıtta konumlandırır.|
+|[CRecordset:: SetBookmark](#setbookmark)|Yer işareti tarafından belirtilen kayıttaki kayıt kümesini konumlandırır.|
+|[CRecordset:: SetFieldDirty](#setfielddirty)|Geçerli kayıttaki belirtilen alanı değiştirildi olarak işaretler.|
+|[CRecordset:: SetFieldNull](#setfieldnull)|Geçerli kayıttaki belirtilen alanın değerini null olarak ayarlar (hiçbir değer olmadan).|
+|[CRecordset:: SetLockingMode](#setlockingmode)|Kilitleme modunu "iyimser" kilitleme (varsayılan) veya "kötümser" kilitleme olarak ayarlar. Kayıtların güncelleştirmeler için nasıl kilitlendiğini belirler.|
+|[CRecordset:: SetParamNull](#setparamnull)|Belirtilen parametreyi null (değer olmadan) olarak ayarlar.|
+|[CRecordset:: SetRowsetCursorPosition](#setrowsetcursorposition)|İmleci satır kümesi içindeki belirtilen satıra konumlandırır.|
+|[CRecordset:: SetRowsetSize](#setrowsetsize)|Bir getirme sırasında almak istediğiniz kayıt sayısını belirtir.|
+|[CRecordset:: Update](#update)|Yeni veya düzenlenmiş verileri veri kaynağına kaydederek bir `AddNew` veya `Edit` işlemi tamamlar.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Ad|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
-|[CRecordset::m_hstmt](#m_hstmt)|Kayıt kümesi için ODBC deyim tanıtıcı içerir. `HSTMT`yazın.|
-|[CRecordset::m_nFields](#m_nfields)|Alan veri üyeleri kümesinde sayısını içerir. `UINT`yazın.|
-|[CRecordset::m_nParams](#m_nparams)|Kayıt kümesi parametre veri üyeleri sayısını içerir. `UINT`yazın.|
-|[CRecordset::m_pDatabase](#m_pdatabase)|Bir işaretçi içeren `CDatabase` üzerinden kayıt bir veri kaynağına bağlıysa nesne.|
-|[CRecordset::m_strFilter](#m_strfilter)|İçeren bir `CString` yapılandırılmış sorgu dili (SQL) belirten `WHERE` yan tümcesi. Belirli ölçütleri karşılayan kayıtları seçmek için filtre olarak kullanılır.|
-|[CRecordset::m_strSort](#m_strsort)|İçeren bir `CString` SQL belirten `ORDER BY` yan tümcesi. Kayıtları nasıl sıralanacağını denetlemek için kullanılır.|
+|[CRecordset:: m_hstmt](#m_hstmt)|Kayıt kümesi için ODBC ifade tanıtıcısını içerir. `HSTMT` yazın.|
+|[CRecordset:: m_nFields](#m_nfields)|Kayıt kümesindeki alan veri üyelerinin sayısını içerir. `UINT` yazın.|
+|[CRecordset:: m_nParams](#m_nparams)|Kayıt kümesindeki parametre veri üyelerinin sayısını içerir. `UINT` yazın.|
+|[CRecordset:: m_pDatabase](#m_pdatabase)|Kayıt kümesinin bir veri kaynağına bağlı olduğu `CDatabase` nesnesine yönelik bir işaretçi içerir.|
+|[CRecordset:: m_strFilter](#m_strfilter)|Bir Yapılandırılmış Sorgu Dili (SQL) `WHERE` yan tümcesini belirten bir `CString` içerir. Yalnızca belirli ölçütlere uyan kayıtları seçmek için filtre olarak kullanılır.|
+|[CRecordset:: m_strSort](#m_strsort)|Bir SQL `ORDER BY` yan tümcesini belirten bir `CString` içerir. Kayıtların nasıl sıralanacağını denetlemek için kullanılır.|
 
-## <a name="remarks"></a>Açıklamalar
+## <a name="remarks"></a>Açıklamalarının
 
-"Kayıt kümeleri," bilinen `CRecordset` nesneler genellikle iki formlarında kullanılan: dinamik kümeler ve anlık görüntüler. Bir dinamik diğer kullanıcılar tarafından yapılan veri güncelleştirmeleri ile eşitlenmiş durumda kalır. Verilerin statik görünümünü anlık görüntüsüdür. Her form kayıt açıldığında sabit kayıt kümesini temsil eder, ancak bir dinamik bir kayıtta gidin, kayıt için diğer kullanıcılar tarafından veya uygulamanızdaki diğer kayıt kümeleri tarafından yapılmış değişiklikleri yansıtır.
+"Kayıt kümeleri" olarak bilinen `CRecordset` nesneleri genellikle iki biçimde kullanılır: Dinamik kümeler ve anlık görüntüler. DYNASET, diğer kullanıcılar tarafından yapılan veri güncelleştirmeleriyle eşitlenmiş olarak kalır. Anlık görüntü, verilerin statik bir görünümüdür. Her form, kayıt kümesinin açıldığı sırada düzeltilen bir kayıt kümesini temsil eder, ancak bir Dynaset içindeki bir kayda kaydırdığınızda, diğer kullanıcılar veya uygulamanızdaki diğer kayıt kümeleri tarafından daha sonra yapılan değişiklikleri yansıtır.
 
 > [!NOTE]
->  Açık veritabanı bağlantısı (ODBC) sınıfları yerine veri erişim nesneleri (DAO) sınıfları ile çalışıyorsanız, sınıf kullanmak [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) yerine. Daha fazla bilgi için bkz [genel bakış: Veritabanı programlama](../../data/data-access-programming-mfc-atl.md).
+>  Açık veritabanı bağlantısı (ODBC) sınıfları yerine veri erişim nesneleri (DAO) sınıflarıyla çalışıyorsanız, bunun yerine Class [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) kullanın. Daha fazla bilgi için bkz. [genel bakış: veritabanı programlama](../../data/data-access-programming-mfc-atl.md).
 
-Kayıt kümesi ya da tür ile çalışmak için genellikle bir uygulamaya özgü kayıt sınıfından türetilir `CRecordset`. Kayıt kümeleri, bir veri kaynağındaki kayıtları seçmek ve ardından şunları yapabilirsiniz:
+Her iki tür kayıt kümesiyle çalışmak için, genellikle `CRecordset`' den uygulamaya özgü bir kayıt kümesi sınıfı türetirsiniz. Kayıt kümeleri bir veri kaynağından kayıtları seçer ve ardından şunları yapabilirsiniz:
 
-- Kayıtlarda gezinin.
+- Kayıtlarda ilerleyin.
 
-- Kayıtları güncelleştirmek ve kilitleme modunu belirtin.
+- Kayıtları güncelleştirin ve kilitleme modunu belirtin.
 
-- Veri kaynağında mevcut kodlar arasından seçen kayıtları sınırlamak için kayıt filtreleyin.
+- Veri kaynağında kullanılabilir olanlardan seçim yaptığı kayıtları kısıtlamak için kayıt kümesini filtreleyin.
 
-- Kayıt kümesi sıralayın.
+- Kayıt kümesini sıralayın.
 
-- Çalışma zamanına kadar bilinmiyor bilgilerle, seçim özelleştirmek için kayıt kümesini parametreleştirme.
+- Çalışma zamanına kadar bilinmeyen bilgilerle seçimini özelleştirmek için kayıt kümesini parametreleştirin.
 
-Sınıfınıza kullanmak için bir veritabanını açmak ve oluşturucu için bir işaretçi geçirerek bir kayıt kümesi nesnesi oluşturun, `CDatabase` nesne. Ardından kayıt kümesinin çağrı `Open` belirleyebileceğiniz bir anlık görüntüsünü veya bir dinamik Nesne olup olmadığını, üye işlevi. Çağırma `Open` veri kaynağından veri seçer. Kayıt kümesi nesnesi açıldıktan sonra üye işlevleri ve veri üyelerini kayıtlarda gezinin ve üzerlerinde çalışmak için kullanın. Güncelleştirilebilir veya salt okunur olup olmadığını kullanılabilen işlemleri nesne bir anlık görüntüsünü veya bir dinamik olmasına göre değişir (açık veritabanı bağlantısı (ODBC) veri kaynağının yeteneğini bağlıdır), ve toplu satır getirme olup uyguladıysanız. Değiştirilmiş veya olabilir beri eklenen kayıtları yenilemek için `Open` çağrı, nesnenin çağrı `Requery` üye işlevi. Nesnenin `Close` üye işlev ve ile işiniz bittiğinde nesneyi yok edin.
+Sınıfınızı kullanmak için bir veritabanı açın ve bir kayıt kümesi nesnesi oluşturun ve oluşturucuyu `CDatabase` nesnesine bir işaretçi geçirerek. Ardından, nesnenin Dynaset veya anlık görüntü olduğunu belirtebileceğiniz kayıt kümesinin `Open` üye işlevini çağırın. Çağırma `Open` veri kaynağından veri seçer. Kayıt kümesi nesnesi açıldıktan sonra, kayıtlarda gezinmek ve üzerinde işlem yapmak için üye işlevlerini ve veri üyelerini kullanın. Kullanılabilir işlemler, nesnenin bir değişken kümesi mi yoksa anlık görüntü mi olduğunu, güncelleştirilebilir mi yoksa salt okunurdur mi olduğunu (Bu, açık veritabanı bağlantısı (ODBC) veri kaynağının özelliğine bağlıdır) ve toplu satır getirme uyguladığınıza göre değişir. `Open` çağrısından bu yana değiştirilmiş veya eklenmiş olabilecek kayıtları yenilemek için, nesnenin `Requery` üye işlevini çağırın. Nesnenin `Close` üye işlevini çağırın ve ile bitirdiğinizde nesneyi yok edin.
 
-Türetilen bir `CRecordset` sınıfı, kayıt alanı değişimi (RFX) veya toplu kayıt alanı değişimi (Bulk RFX), okuma ve kayıt alanlarının güncelleştirmeyi desteklemek için kullanılır.
+Türetilmiş bir `CRecordset` sınıfında kayıt alanlarını okumayı ve güncelleştirmeyi desteklemek için kayıt alanı değişimi (RFX) veya toplu kayıt alanı değişimi (toplu RFX) kullanılır.
 
-Kayıt kümeleri ve kayıt alanı değişimi hakkında daha fazla bilgi için makalelere göz atın [genel bakış: Veritabanı programlama](../../data/data-access-programming-mfc-atl.md), [kayıt kümesi (ODBC)](../../data/odbc/recordset-odbc.md), [kayıt kümesi: Kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md), ve [kayıt alanı değişimi (RFX)](../../data/odbc/record-field-exchange-rfx.md). Bir odaklanmak için dinamik kümeler ve anlık görüntüleri, makalelere göz atın [Dynaset](../../data/odbc/dynaset.md) ve [anlık görüntü](../../data/odbc/snapshot.md).
+Kayıt kümeleri ve kayıt alanı değişimi hakkında daha fazla bilgi için bkz. makalelere [genel bakış: veritabanı programlama](../../data/data-access-programming-mfc-atl.md), [kayıt kümesi (ODBC)](../../data/odbc/recordset-odbc.md), [kayıt kümesi: kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md)ve [kayıt alanı değişimi (RFX)](../../data/odbc/record-field-exchange-rfx.md). Dinamik [kümeler ve anlık](../../data/odbc/dynaset.md) görüntülere odaklanmak için bkz [..](../../data/odbc/snapshot.md)
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -259,11 +259,11 @@ Kayıt kümeleri ve kayıt alanı değişimi hakkında daha fazla bilgi için ma
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxdb.h
+**Üstbilgi:** Afxdb. h
 
-##  <a name="addnew"></a>  CRecordset::AddNew
+##  <a name="addnew"></a>CRecordset:: AddNew
 
-Tabloya yeni bir kayıt eklemek için hazırlar.
+Tabloya yeni bir kayıt eklemeye hazırlar.
 
 ```
 virtual void AddNew();
@@ -271,32 +271,32 @@ virtual void AddNew();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağırmalısınız [Requery](#requery) yeni eklenen kaydın görmek için üye işlevi. Kaydın alanları başlangıçta Null. (Veritabanı terminolojisinde Null "değer olan" anlamına gelir ve C++'ta NULL ile aynı değildir.) İşlemi tamamlamak için çağırmalıdır [güncelleştirme](#update) üye işlevi. `Update` yaptığınız değişiklikleri veri kaynağına kaydeder.
+Yeni eklenen kaydı görmek için [YenidenSorgula](#requery) üye işlevini çağırmanız gerekir. Kaydın alanları başlangıçta null. (Veritabanı terimlerinde null "değer yok" anlamına gelir ve içinde C++null ile aynı değildir.) İşlemi gerçekleştirmek için, [Update](#update) member işlevini çağırmanız gerekir. `Update`, veri kaynağına yaptığınız değişiklikleri kaydeder.
 
 > [!NOTE]
->  Toplu satır getirme uyguladıysanız çağıramazsınız `AddNew`. Bu başarısız bir onaylama işlemi neden olur. Ancak sınıf `CRecordset` mekanizması sağlamaz toplu veri satırlarını güncelleştirmek için kendi işlevlerinizi ODBC API işlevini kullanarak yazabileceğiniz `SQLSetPos`. Toplu satır getirme hakkında daha fazla bilgi için bkz [kayıt kümesi: Kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
+>  Toplu satır getirme uyguladıysanız `AddNew`çağıramaz. Bu, başarısız bir onaylama işlemi oluşmasına neden olur. `CRecordset` sınıfı, toplu veri satırlarını güncelleştirmek için bir mekanizma sağlamasa da, `SQLSetPos`ODBC API işlevini kullanarak kendi işlevlerinizi yazabilirsiniz. Toplu satır getirme hakkında daha fazla bilgi için bkz. kayıt [kümesi: kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
 
-`AddNew` kümesinin alan veri üyeleri kullanarak yeni ve boş bir kayda hazırlar. Çağırdıktan sonra `AddNew`, kayıt kümesinin alan veri üyeleri istediğiniz değerleri ayarlayın. (Çağrı gerekmez [Düzenle](#edit) üye işlev bu amaçla; kullanım `Edit` yalnızca için var olan kayıtların.) Daha sonra çağırdığınızda `Update`değişen değerler alan veri üyeleri, veri kaynağında kaydedilir.
+`AddNew`, kayıt kümesinin alan veri üyelerini kullanarak yeni, boş bir kayıt hazırlar. `AddNew`çağırdıktan sonra, kayıt kümesinin alan veri üyelerinde istediğiniz değerleri ayarlayın. (Bu amaçla üye [Düzenle](#edit) işlevini çağırmanız gerekmez; yalnızca mevcut kayıtlar için `Edit` kullanın.) Daha sonra `Update`çağırdığınızda, alan veri üyelerinde değiştirilen değerler veri kaynağına kaydedilir.
 
 > [!CAUTION]
->  Çağırmadan önce yeni bir kayıt için kaydırın, `Update`yeni kayıt kaybolur ve herhangi bir uyarı verilir.
+>  `Update`çağırmadan önce yeni bir kayda kayırsanız, yeni kayıt kaybolur ve hiçbir uyarı verilmez.
 
-Veri kaynağı işlemleri destekliyorsa, yapabileceğiniz, `AddNew` arama işlemlerinin bir parçası. İşlemler hakkında daha fazla bilgi için bkz. [CDatabase](../../mfc/reference/cdatabase-class.md). Çağırmalısınız Not [CDatabase::BeginTrans](../../mfc/reference/cdatabase-class.md#begintrans) çağırmadan önce `AddNew`.
+Veri kaynağı işlemleri destekliyorsa `AddNew` bir işlemin parçası olarak çağrı yapabilirsiniz. İşlemler hakkında daha fazla bilgi için bkz. sınıf [CDatabase](../../mfc/reference/cdatabase-class.md). `AddNew`çağrılmadan önce [CDatabase:: BeginTrans](../../mfc/reference/cdatabase-class.md#begintrans) çağrısı yapmanız gerektiğini unutmayın.
 
 > [!NOTE]
->  Dynaset'ler için yeni kayıt en son kaydını kayıt kümesine eklenir. Eklenen kayıtlar için anlık görüntüleri eklenmez; çağırmalısınız `Requery` kayıt kümesini yenilemek için.
+>  Dinamik kümeler için son kayıt olarak kayıt kümesine yeni kayıtlar eklenir. Eklenen kayıtlar anlık görüntülere eklenmez; kayıt kümesini yenilemek için `Requery` çağırmanız gerekir.
 
-Çağırmak geçersizdir `AddNew` bir kayıt kümesi için olan `Open` üye işlev çağrılmadı. A `CDBException` çağırırsanız durum `AddNew` için bir kayıt kümesi için eklenemiyor. Kayıt kümesi çağırarak güncelleştirilebilir olup olmadığını belirleyebilir [CanAppend](#canappend).
+`Open` üye işlevi çağrılmayan bir kayıt kümesi için `AddNew` çağrısı geçersizdir. Öğesine eklenemedikleri bir kayıt kümesi için `AddNew` çağırırsanız bir `CDBException` oluşturulur. Kayıt kümesinin [CanAppend](#canappend)çağırarak güncelleştirilebilir olup olmadığını belirleyebilirsiniz.
 
-Daha fazla bilgi için aşağıdaki makalelere bakın: [Kayıt kümesi: Kümelerinin kayıtları Güncelleştirmesi (ODBC) kayıtları](../../data/odbc/recordset-how-recordsets-update-records-odbc.md), [kayıt kümesi: Ekleme, güncelleştirme ve silme (ODBC) kayıtları](../../data/odbc/recordset-adding-updating-and-deleting-records-odbc.md), ve [işlem (ODBC)](../../data/odbc/transaction-odbc.md).
+Daha fazla bilgi için şu makalelere bakın: [kayıt kümesi: kayıt kümelerinin kayıtları güncelleştirme (ODBC)](../../data/odbc/recordset-how-recordsets-update-records-odbc.md), [kayıt kümesi: kayıtları ekleme, güncelleştirme ve silme](../../data/odbc/recordset-adding-updating-and-deleting-records-odbc.md)(ODBC) ve [işlem (ODBC)](../../data/odbc/transaction-odbc.md).
 
 ### <a name="example"></a>Örnek
 
-Makaleye göz atın [işlem: (ODBC) kayıt kümesinde işlem gerçekleştirme](../../data/odbc/transaction-performing-a-transaction-in-a-recordset-odbc.md).
+İşlem [: kayıt kümesinde Işlem gerçekleştirme (ODBC)](../../data/odbc/transaction-performing-a-transaction-in-a-recordset-odbc.md)makalesine bakın.
 
-##  <a name="canappend"></a>  CRecordset::CanAppend
+##  <a name="canappend"></a>CRecordset:: CanAppend
 
-Önceden açılmış kayıt yeni kayıtlar eklemenize izin verip vermediğini belirler.
+Daha önce açılan kayıt kümesinin yeni kayıtlar eklemenize izin verip sağlamadığını belirler.
 
 ```
 BOOL CanAppend() const;
@@ -304,11 +304,11 @@ BOOL CanAppend() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yeni kayıtlar ekleyerek kayıt kümesini sağlayan olursa sıfır dışı; Aksi durumda 0. `CanAppend` kayıt kümesi salt okunur olarak açıldıysa 0 döndürür.
+Kayıt kümesi yeni kayıtlar eklemeye izin veriyorsa sıfır dışı; Aksi takdirde 0. kayıt kümesini salt okunurdur olarak açtıysanız `CanAppend` 0 döndürür.
 
-##  <a name="canbookmark"></a>  CRecordset::CanBookmark
+##  <a name="canbookmark"></a>CRecordset:: CanBookmark
 
-Kayıt, kayıt yer işaretlerini kullanma işaretlemek izin verip vermediğini belirler.
+Kayıt kümesinin, kayıt imlerini kullanarak kayıtları işaretlemenize izin verip sağlamadığını belirler.
 
 ```
 BOOL CanBookmark() const;
@@ -316,20 +316,20 @@ BOOL CanBookmark() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kayıt kümesi yer işaretleri destekliyorsa, sıfır olmayan; Aksi durumda 0.
+Kayıt kümeleri, yer işaretlerini destekliyorsa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev bağımsız olarak, `CRecordset::useBookmarks` seçeneğini *dwOptions* parametresinin [açık](#open) üye işlevi. `CanBookmark` Belirtilen ODBC sürücüsünü ve imleç desteği yer işaretleri türü olup olmadığını gösterir. `CRecordset::useBookmarks` Bunlar desteklenir sağlanan yer işaretleri kullanılabilir durumda olup olmadığını gösterir.
+Bu işlev, [Open](#open) member Işlevinin *dwoptions* parametresindeki `CRecordset::useBookmarks` seçeneğinden bağımsızdır. `CanBookmark`, verilen ODBC sürücüsünün ve imleç türünün yer imlerini destekleyip desteklemediğini gösterir. `CRecordset::useBookmarks`, desteklenseler de yer işaretlerinin kullanılabilir olup olmadığını gösterir.
 
 > [!NOTE]
->  Yer işaretleri salt iletme kayıt kümeleri desteklenmez.
+>  Yer işaretleri salt iletme kayıt kümelerinde desteklenmez.
 
-Yer işaretleri ve kayıt kümesi Gezinti hakkında daha fazla bilgi için makalelere göz atın [kayıt kümesi: Yer işaretleri ve Mutlak Konumlar (ODBC)](../../data/odbc/recordset-bookmarks-and-absolute-positions-odbc.md) ve [kayıt kümesi: Kaydırma (ODBC)](../../data/odbc/recordset-scrolling-odbc.md).
+Yer işaretleri ve kayıt kümesi gezintisi hakkında daha fazla bilgi için bkz. makalelere [kayıt kümesi: yer işaretleri ve mutlak konumlar (ODBC)](../../data/odbc/recordset-bookmarks-and-absolute-positions-odbc.md) ve [kayıt kümesi: kaydırma (ODBC)](../../data/odbc/recordset-scrolling-odbc.md).
 
-##  <a name="cancel"></a>  CRecordset::Cancel
+##  <a name="cancel"></a>CRecordset:: Cancel
 
-Veri kaynağı zaman uyumsuz bir işlem devam ediyor ya da bir işlemin ikinci bir iş parçacığından iptal isteği.
+Veri kaynağının devam eden bir zaman uyumsuz işlemi ya da ikinci bir iş parçacığından bir işlemi iptal ettiğini ister.
 
 ```
 void Cancel();
@@ -337,11 +337,11 @@ void Cancel();
 
 ### <a name="remarks"></a>Açıklamalar
 
-MFC ODBC sınıfları artık zaman uyumsuz işleme kullandığını unutmayın. bir Aracıdan işlemi gerçekleştirmek için doğrudan ODBC API işlevini çağırmanız gerekir `SQLSetConnectOption`. Daha fazla bilgi için bölümündeki "Yürütülen işlevler zaman uyumsuz olarak" konusuna bakın. *ODBC SDK Programcı Kılavuzu*.
+MFC ODBC sınıflarının artık zaman uyumsuz işleme kullanmadığını unutmayın; bir asychronous işlemi gerçekleştirmek için `SQLSetConnectOption`ODBC API işlevini doğrudan çağırmanız gerekir. Daha fazla bilgi için, *ODBC SDK Programcı Kılavuzu*'Ndaki "Işlevleri zaman uyumsuz olarak yürütme" konusuna bakın.
 
-##  <a name="cancelupdate"></a>  CRecordset::CancelUpdate
+##  <a name="cancelupdate"></a>CRecordset:: CancelUpdate
 
-Güncelleştirmeleri nedeni, bekleyen iptal bir [Düzenle](#edit) veya [AddNew](#addnew) işlemi, önce [güncelleştirme](#update) çağrılır.
+[Güncelleştirme](#update) çağrılmadan önce, bir [düzenleme](#edit) veya [AddNew](#addnew) işlemi nedeniyle bekleyen tüm güncelleştirmeleri iptal eder.
 
 ```
 void CancelUpdate();
@@ -350,15 +350,15 @@ void CancelUpdate();
 ### <a name="remarks"></a>Açıklamalar
 
 > [!NOTE]
->  Bu üye işlevi gibi kayıt kümeleri çağrılamıyor beri toplu satır, getirme kullanarak kümelerinde uygulanamaz `Edit`, `AddNew`, veya `Update`. Toplu satır getirme hakkında daha fazla bilgi için bkz [kayıt kümesi: Kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
+>  Bu üye işlevi, toplu satır getirme kullanan kayıt kümelerinde uygulanabilir değildir, çünkü bu kayıt kümeleri `Edit`, `AddNew`veya `Update`çağıramaz. Toplu satır getirme hakkında daha fazla bilgi için bkz. kayıt [kümesi: kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
 
-Otomatik kirli alan denetimi etkinse, `CancelUpdate` üye değişkenleri önce sahip oldukları değerlere geri yüklenir `Edit` veya `AddNew` ; tersi durumda, değer değişikliklerini kalır. Kayıt kümesi açıldığında, varsayılan olarak, otomatik alan denetimi etkin. Devre dışı bırakmak için belirtmelisiniz `CRecordset::noDirtyFieldCheck` içinde *dwOptions* parametresinin [açık](#open) üye işlevi.
+Otomatik kirli alan denetimi etkinse `CancelUpdate`, üye değişkenlerini `Edit` veya `AddNew` çağrılmadan önce sahip oldukları değerlere geri yükler; Aksi takdirde, tüm değer değişiklikleri kalır. Varsayılan olarak, kayıt kümesi açıldığında otomatik alan denetimi etkinleştirilir. Devre dışı bırakmak için, [Open](#open) member Işlevinin *dwoptions* parametresinde `CRecordset::noDirtyFieldCheck` belirtmeniz gerekir.
 
-Verileri güncelleştirme hakkında daha fazla bilgi için bkz [kayıt kümesi: Ekleme, güncelleştirme ve silme (ODBC) kayıtları](../../data/odbc/recordset-adding-updating-and-deleting-records-odbc.md).
+Verileri güncelleştirme hakkında daha fazla bilgi için bkz. kayıt [kümesi: kayıtları ekleme, güncelleştirme ve silme (ODBC)](../../data/odbc/recordset-adding-updating-and-deleting-records-odbc.md).
 
-##  <a name="canrestart"></a>  CRecordset::CanRestart
+##  <a name="canrestart"></a>CRecordset:: CanRestart
 
-Kayıt kümesi (kayıtlarını yenilemek için), sorgu çağırarak yeniden izin verip vermediğini belirler `Requery` üye işlevi.
+Kayıt kümesinin, `Requery` üye işlevini çağırarak sorgunun (kayıtlarını yenilemek için) yeniden başlatılmasına izin verip sağlamadığını belirler.
 
 ```
 BOOL CanRestart() const;
@@ -366,11 +366,11 @@ BOOL CanRestart() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Requery izin olursa sıfır dışı; Aksi durumda 0.
+YenidenSorgula izin veriliyorsa sıfır dışı; Aksi takdirde 0.
 
-##  <a name="canscroll"></a>  CRecordset::CanScroll
+##  <a name="canscroll"></a>CRecordset:: CanScroll
 
-Kayıt kaydırma izin verip vermediğini belirler.
+Kayıt kümesinin kaydırmaya izin verip etmeyeceğini belirler.
 
 ```
 BOOL CanScroll() const;
@@ -378,15 +378,15 @@ BOOL CanScroll() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kayıt kaydırma sağlar olursa sıfır dışı; Aksi durumda 0.
+Kayıt kümesi kaydırmaya izin veriyorsa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kaydırma hakkında daha fazla bilgi için bkz [kayıt kümesi: Kaydırma (ODBC)](../../data/odbc/recordset-scrolling-odbc.md).
+Kaydırma hakkında daha fazla bilgi için bkz. [kayıt kümesi: kaydırma (ODBC)](../../data/odbc/recordset-scrolling-odbc.md).
 
-##  <a name="cantransact"></a>  CRecordset::CanTransact
+##  <a name="cantransact"></a>CRecordset:: CanTransact
 
-Kayıt işlemleri izin verip vermediğini belirler.
+Kayıt kümesinin işlemlere izin verip etmeyeceğini belirler.
 
 ```
 BOOL CanTransact() const;
@@ -394,15 +394,15 @@ BOOL CanTransact() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kayıt kümesi işlemlerin başlamasına izin veren olursa sıfır dışı; Aksi durumda 0.
+Kayıt kümesi işlemlere izin veriyorsa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için bkz [işlem (ODBC)](../../data/odbc/transaction-odbc.md).
+Daha fazla bilgi için bkz. Makale [işleme (ODBC)](../../data/odbc/transaction-odbc.md).
 
-##  <a name="canupdate"></a>  CRecordset::CanUpdate
+##  <a name="canupdate"></a>CRecordset:: CanUpdate
 
-Kayıt kümesi güncelleştirilebilir olup olmadığını belirler.
+Kayıt kümesinin güncelleştirilip güncelleştirimeyeceğini belirler.
 
 ```
 BOOL CanUpdate() const;
@@ -410,15 +410,15 @@ BOOL CanUpdate() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kayıt kümesi güncelleştirilebilir olursa sıfır dışı; Aksi durumda 0.
+Kayıt kümesi güncelleştirişiyorsa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir kayıt kümesi veri kaynağındaki salt okunur ise veya belirttiyseniz salt okunur olabilir `CRecordset::readOnly` içinde *dwOptions* kayıt açıldığında parametresi.
+Kayıt kümesi, temel alınan veri kaynağı salt okunurdur veya kayıt kümesini açtığınızda *dwOptions* parametresinde `CRecordset::readOnly` belirlediyseniz salt okunurdur.
 
-##  <a name="checkrowseterror"></a>  CRecordset::CheckRowsetError
+##  <a name="checkrowseterror"></a>CRecordset:: CheckRowsetError
 
-Kaydı alma sırasında oluşturulan hataları işlemek için çağrılır.
+Kayıt getirilirken oluşturulan hataları işlemek için çağırılır.
 
 ```
 virtual void CheckRowsetError(RETCODE nRetCode);
@@ -426,29 +426,29 @@ virtual void CheckRowsetError(RETCODE nRetCode);
 
 ### <a name="parameters"></a>Parametreler
 
-*nRetCode*<br/>
-ODBC API işlevi dönüş kodu. Ayrıntılar için açıklamalara bakın.
+*Nekcode*<br/>
+ODBC API işlevi dönüş kodu. Ayrıntılar için bkz. açıklamalar.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu sanal üye işlevi, kayıtları getirilen kullanırken oluşan hatalarını ele alır ve toplu satır getirme sırasında yararlıdır. Geçersiz kılma düşünmek isteyebilirsiniz `CheckRowsetError` kendi hata işleme uygulamak için.
+Bu sanal üye işlevi, kayıtlar getirilirken oluşan hataları işler ve toplu satır getirme sırasında yararlı olur. Kendi hata işleme uygulamak için `CheckRowsetError` geçersiz kılmayı düşünmek isteyebilirsiniz.
 
-`CheckRowsetError` İmleç bir gezinti işlemi gibi otomatik olarak çağrılır `Open`, `Requery`, ya da tüm `Move` işlemi. ODBC API işlev dönüş değeri geçirilir `SQLExtendedFetch`. İçin olası değerler aşağıdaki tabloda *nRetCode* parametresi.
+`CheckRowsetError`, `Open`, `Requery`veya herhangi bir `Move` işlemi gibi imleç gezinme işleminde otomatik olarak çağrılır. ODBC API işlevinin dönüş değeri `SQLExtendedFetch`geçirilir. Aşağıdaki tabloda, *Nekcode* parametresi için olası değerler listelenmektedir.
 
-|nRetCode|Açıklama|
+|Nekcode|Açıklama|
 |--------------|-----------------|
-|SQL_SUCCESS|İşlev; başarıyla tamamlandı ek bilgi kullanılabilir.|
-|SQL_SUCCESS_WITH_INFO|İşlev başarılı bir şekilde, büyük olasılıkla önemli olmayan bir hata ile tamamlandı. Ek bilgi elde edilebilir çağırarak `SQLError`.|
-|SQL_NO_DATA_FOUND|Sonuç kümesi tablosundan tüm satırları getirildi.|
-|SQL_ERROR HATASI|İşlev başarısız oldu. Ek bilgi elde edilebilir çağırarak `SQLError`.|
-|SQL_INVALID_HANDLE|İşlev Geçersiz ortam tanıtıcısı, bağlantı tanıtıcısı veya deyim tanıtıcısı nedeniyle başarısız oldu. Bu, bir programlama hatası gösterir. Ek bilgi kullanılabilir `SQLError`.|
-|SQL_STILL_EXECUTING|Zaman uyumsuz olarak başlatılan bir işlev hala yürütülüyor. Varsayılan olarak, MFC hiçbir zaman bu değere geçeceğini Not `CheckRowsetError`; MFC arama devam `SQLExtendedFetch` artık sql_stıll_executıng dönene kadar.|
+|SQL_SUCCESS|İşlev başarıyla tamamlandı; ek bilgi yok.|
+|SQL_SUCCESS_WITH_INFO|İşlev, büyük olasılıkla önemli olmayan bir hatayla başarıyla tamamlandı. Ek bilgiler `SQLError`çağırarak elde edilebilir.|
+|SQL_NO_DATA_FOUND|Sonuç kümesindeki tüm satırlar getirildi.|
+|SQL_ERROR|İşlev başarısız oldu. Ek bilgiler `SQLError`çağırarak elde edilebilir.|
+|SQL_INVALID_HANDLE|Geçersiz ortam tanıtıcısı, bağlantı tanıtıcısı veya ekstre tanıtıcısı nedeniyle işlev başarısız oldu. Bu bir programlama hatası gösterir. `SQLError`ek bilgi yok.|
+|SQL_STILL_EXECUTING|Zaman uyumsuz olarak başlatılan bir işlev hala yürütülüyor. Varsayılan olarak, MFC 'nin bu değeri hiçbir şekilde `CheckRowsetError`geçirdiğine unutmayın; MFC artık SQL_STILL_EXECUTING döndürünceye kadar `SQLExtendedFetch` çağırmaya devam eder.|
 
-Hakkında daha fazla bilgi için `SQLError`, Windows SDK'sı bakın. Toplu satır getirme hakkında daha fazla bilgi için bkz [kayıt kümesi: Kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
+`SQLError`hakkında daha fazla bilgi için bkz. Windows SDK. Toplu satır getirme hakkında daha fazla bilgi için bkz. kayıt [kümesi: kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
 
-##  <a name="close"></a>  CRecordset::Close
+##  <a name="close"></a>CRecordset:: Close
 
-Kayıt kümesi kapatır.
+Kayıt kümesini kapatır.
 
 ```
 virtual void Close();
@@ -456,17 +456,17 @@ virtual void Close();
 
 ### <a name="remarks"></a>Açıklamalar
 
-ODBC HSTMT ve kayıt için ayrılan framework tüm bellek serbest bırakılır. Arama sonra genellikle `Close`, ile ayırdığınızda C++ kayıt kümesi nesnesi silme **yeni**.
+ODBC HSTMT ve kayıt kümesi için ayrılan çerçeve serbest bırakılır. Genellikle `Close`çağrıldıktan sonra, C++ **Yeni**ile ayrıldıysa kayıt kümesi nesnesini silersiniz.
 
-Çağırabilirsiniz `Open` arama sonra yeniden `Close`. Bu, kayıt kümesi nesnesi yeniden kullanmanıza olanak sağlar. Alternatif çağırmaktır `Requery`.
+`Close`çağrıldıktan sonra `Open` yeniden çağırabilirsiniz. Bu, kayıt kümesi nesnesini yeniden kullanmanıza olanak sağlar. Alternatif, `Requery`çağırdır.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDatabase#17](../../mfc/codesnippet/cpp/crecordset-class_1.cpp)]
 
-##  <a name="crecordset"></a>  CRecordset::CRecordset
+##  <a name="crecordset"></a>CRecordset:: CRecordset
 
-Oluşturur bir `CRecordset` nesne.
+`CRecordset` nesnesi oluşturur.
 
 ```
 CRecordset(CDatabase* pDatabase = NULL);
@@ -475,22 +475,22 @@ CRecordset(CDatabase* pDatabase = NULL);
 ### <a name="parameters"></a>Parametreler
 
 *pDatabase*<br/>
-Bir işaretçi içeren bir `CDatabase` nesne veya NULL değeri. BOŞ değilse ve `CDatabase` nesnenin `Open` veri kaynağına bağlanmak için üye işlev çağrılmadı, kayıt, sizin için kendi sırasında açmaya `Open` çağırın. NULL, başarılı olursa bir `CDatabase` nesne oluşturulur ve belirttiğiniz zaman, ClassWizard ile kayıt kümesi sınıfı türetilmiş veri kaynağı bilgilerini kullanarak bağlandı.
+`CDatabase` nesnesine veya NULL değerine yönelik bir işaretçi içerir. NULL değilse ve `CDatabase` nesnenin `Open` üye işlevi onu veri kaynağına bağlamak için çağrılmışsa, kayıt kümesi kendi `Open` çağrısı sırasında sizin için açmaya çalışır. NULL geçirirseniz, ClassWizard ile kayıt kümesi sınıfınızı türettiğiniz zaman belirttiğiniz veri kaynağı bilgileri kullanılarak sizin için bir `CDatabase` nesnesi oluşturulur ve bağlanır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanabilir `CRecordset` doğrudan veya bir uygulamaya özgü sınıfından türetilir `CRecordset`. ClassWizard kayıt kümesi sınıflarını türetmek için kullanabilirsiniz.
+`CRecordset` doğrudan kullanabilir ya da uygulamaya özgü bir sınıfı `CRecordset`türetebilirsiniz. Kayıt kümesi sınıflarınızı türetmek için ClassWizard ' i kullanabilirsiniz.
 
 > [!NOTE]
->  Türetilmiş bir sınıf *gerekir* kendi Oluşturucu sağlayın. Türetilmiş sınıfınızın oluşturucuda oluşturucusunu `CRecordset::CRecordset`, kendisine boyunca uygun parametreleri geçirme.
+>  Türetilmiş bir sınıfın kendi oluşturucusunu sağlaması *gerekir* . Türetilmiş sınıfınızın oluşturucusunda, ile ilgili parametreleri geçirerek Oluşturucu `CRecordset::CRecordset`çağırın.
 
-NULL geçirmek için kayıt kümesi oluşturucusuna bir `CDatabase` nesne oluşturulur ve sizin için otomatik olarak bağlı. Bu, oluşturmak ve bağlanmak gerektirmeyen yararlı bir toplu özelliktir bir `CDatabase` kümenizin oluşturmak önce nesne.
+Sizin için otomatik olarak bir `CDatabase` nesnesinin oluşturulmasını ve bağlanmasını sağlamak için kayıt kümesi yapıcısına NULL geçirin. Bu, kayıt kümenizin oluşturmadan önce bir `CDatabase` nesnesi oluşturup bağlamanıza gerek olmayan yararlı bir toplu özelliktir.
 
 ### <a name="example"></a>Örnek
 
-Daha fazla bilgi için bkz [kayıt kümesi: Bir sınıf bildirme (ODBC) için bir tabloyu](../../data/odbc/recordset-declaring-a-class-for-a-table-odbc.md).
+Daha fazla bilgi için bkz. [kayıt kümesi: tablo Için sınıf bildirme (ODBC)](../../data/odbc/recordset-declaring-a-class-for-a-table-odbc.md).
 
-##  <a name="delete"></a>  CRecordset::Delete
+##  <a name="delete"></a>CRecordset::D Sil
 
 Geçerli kaydı siler.
 
@@ -500,25 +500,25 @@ virtual void Delete();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Başarılı silindikten sonra kayıt kümesinin alan veri üyeleri Null değerine ayarlanır ve biri açıkça çağırmalıdır `Move` silinen kayıt taşımak için işlevleri. Silinen bir kaydı taşıdığınızda, geri mümkün değildir. Veri kaynağı işlemleri destekliyorsa, yapabileceğiniz `Delete` arama işlemlerinin bir parçası. Daha fazla bilgi için bkz [işlem (ODBC)](../../data/odbc/transaction-odbc.md).
+Başarılı bir silme işleminden sonra, kayıt kümesinin alan verisi üyeleri bir boş değere ayarlanır ve silinen kaydın dışına geçmek için `Move` işlevlerinden birini açıkça çağırmanız gerekir. Silinen kaydı kapattıktan sonra buna dönmek mümkün değildir. Veri kaynağı işlemleri destekliyorsa, `Delete` çağrısı bir işlemin parçası yapabilirsiniz. Daha fazla bilgi için bkz. Makale [işleme (ODBC)](../../data/odbc/transaction-odbc.md).
 
 > [!NOTE]
->  Toplu satır getirme uyguladıysanız çağıramazsınız `Delete`. Bu başarısız bir onaylama işlemi neden olur. Ancak sınıf `CRecordset` mekanizması sağlamaz toplu veri satırlarını güncelleştirmek için kendi işlevlerinizi ODBC API işlevini kullanarak yazabileceğiniz `SQLSetPos`. Toplu satır getirme hakkında daha fazla bilgi için bkz [kayıt kümesi: Kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
+>  Toplu satır getirme uyguladıysanız `Delete`çağıramaz. Bu, başarısız bir onaylama işlemi oluşmasına neden olur. `CRecordset` sınıfı, toplu veri satırlarını güncelleştirmek için bir mekanizma sağlamasa da, `SQLSetPos`ODBC API işlevini kullanarak kendi işlevlerinizi yazabilirsiniz. Toplu satır getirme hakkında daha fazla bilgi için bkz. kayıt [kümesi: kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
 
 > [!CAUTION]
->  Kayıt kümesi güncelleştirilebilir olmalıdır ve olmalıdır geçerli bir kayıt kümenize geçerli çağırdığınızda `Delete`; Aksi takdirde hata oluşur. Örneğin, bir kaydı silmek, ancak çağırmadan önce yeni bir kayıt için kaydırma değil `Delete` yeniden `Delete` oluşturur bir [CDBException](../../mfc/reference/cdbexception-class.md).
+>  Kayıt kümesi güncelleştirilebilir olmalıdır ve `Delete`çağırdığınızda kayıt kümesinde geçerli olan geçerli bir kayıt olmalıdır; Aksi takdirde bir hata oluşur. Örneğin, bir kaydı siler ancak `Delete` yeniden çağırmadan önce yeni bir kayda kaymayın, `Delete` bir [CDBException](../../mfc/reference/cdbexception-class.md)oluşturur.
 
-Farklı [AddNew](#addnew) ve [Düzenle](#edit), çağrı `Delete` bir çağrı tarafından izlenmiyor [güncelleştirme](#update). Varsa bir `Delete` çağrısı başarısız olursa, değiştirmeden üyeleri bırakılır alan verisi.
+[AddNew](#addnew) ve [Edit](#edit)'in aksine, bir `Delete` çağrısının ardından [güncelleştirme](#update)çağrısı yoktur. `Delete` çağrısı başarısız olursa, alan veri üyeleri değişmeden bırakılır.
 
 ### <a name="example"></a>Örnek
 
-Bu örnek, bir işlevin karesinde oluşturulan bir kayıt kümesi gösterir. Örnek varsayar `m_dbCust`, bir üye değişkeni türü `CDatabase` zaten veri kaynağına bağlı.
+Bu örnek, bir işlevin çerçevesinde oluşturulan bir kayıt kümesini gösterir. Örnek, `m_dbCust`varlığını, `CDatabase` türünde bir üye değişkeninin zaten veri kaynağına bağlı olduğunu varsayar.
 
 [!code-cpp[NVC_MFCDatabase#18](../../mfc/codesnippet/cpp/crecordset-class_2.cpp)]
 
-##  <a name="dobulkfieldexchange"></a>  CRecordset::DoBulkFieldExchange
+##  <a name="dobulkfieldexchange"></a>CRecordset::D oBulkFieldExchange
 
-Toplu satır kayıt veri kaynağından veri değişimi için çağrılır. Toplu kayıt alanı değişimi (Bulk RFX) olarak uygular.
+Veri kaynağından kayıt kümesine toplu veri verileri alışverişi için çağırılır. Toplu kayıt alanı değişimi (toplu RFX) uygular.
 
 ```
 virtual void DoBulkFieldExchange(CFieldExchange* pFX);
@@ -526,27 +526,27 @@ virtual void DoBulkFieldExchange(CFieldExchange* pFX);
 
 ### <a name="parameters"></a>Parametreler
 
-*pFX*<br/>
-Bir işaretçi bir [CFieldExchange](../../mfc/reference/cfieldexchange-class.md) nesne. Çerçeve zaten bu nesnesini alan değiştirme işlemi için bir bağlam belirtmek için kurmanız gerekir.
+*Türk*<br/>
+[CFieldExchange](../../mfc/reference/cfieldexchange-class.md) nesnesine yönelik bir işaretçi. Çerçeve, alan değişim işlemi için bir bağlam belirtmek üzere bu nesneyi zaten ayarlamış.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Toplu satır getirme uygulandığında framework otomatik olarak veri kaynağından veri kayıt nesnenizin aktarmak için bu üye işlevini çağırır. `DoBulkFieldExchange` Ayrıca, parametre veri üyeleri, varsa kayıt kümesinin seçimi için SQL deyim dizesi parametre yer tutucularını bağlar.
+Toplu satır getirme uygulandığında, çerçeve veri kaynağındaki verileri kayıt kümesi nesneniz için otomatik olarak aktarmak üzere bu üye işlevini çağırır. `DoBulkFieldExchange` Ayrıca parametre veri üyelerinize, varsa kayıt kümesinin seçimine ait SQL deyimindeki parametre yer tutucularına bağlar.
 
-Toplu satır getirme uygulanmadı, framework çağırır [DoFieldExchange](#dofieldexchange). Toplu satır getirme uygulamak için belirtmelisiniz `CRecordset::useMultiRowFetch` seçeneği *dwOptions* parametresinde [açık](#open) üye işlevi.
+Toplu satır getirme uygulanmadığından, Framework, [DoFieldExchange](#dofieldexchange)' i çağırır. Toplu satır getirmeyi uygulamak için, [Açık](#open) üye Işlevindeki *dwoptions* parametresinin `CRecordset::useMultiRowFetch` seçeneğini belirtmeniz gerekir.
 
 > [!NOTE]
-> `DoBulkFieldExchange` türetilen bir sınıf kullanıyorsanız kullanılabilir `CRecordset`. Doğrudan kayıt kümesi nesnesi oluşturduysanız `CRecordset`, çağırmalısınız [GetFieldValue](#getfieldvalue) veri almak için üye işlevi.
+> `DoBulkFieldExchange`, yalnızca `CRecordset`türetilmiş bir sınıf kullanıyorsanız kullanılabilir. Doğrudan `CRecordset`bir kayıt kümesi nesnesi oluşturduysanız, verileri almak için [GetFieldValue](#getfieldvalue) üye işlevini çağırmanız gerekir.
 
-Kayıt alanı değişimi (RFX) için toplu kayıt alanı değişimi (Bulk RFX) benzer. Veriler, kayıt kümesi nesnesi için veri kaynağından otomatik olarak aktarılır. Ancak, çağıramazsınız `AddNew`, `Edit`, `Delete`, veya `Update` veri kaynağına yapılan değişiklikleri aktarmak için. Sınıf `CRecordset` şu anda veri; toplu satırı güncelleştirmek için bir mekanizma sağlamaz ODBC API işlevini kullanarak kendi işlevlerinizi ancak yazabilirsiniz `SQLSetPos`.
+Toplu kayıt alanı değişimi (toplu RFX), kayıt alanı değişimi (RFX) ile benzerdir. Veriler veri kaynağından kayıt kümesi nesnesine otomatik olarak aktarılır. Ancak, değişiklikleri veri kaynağına geri aktarmak için `AddNew`, `Edit`, `Delete`veya `Update` çağıramıyorsunuz. Sınıf `CRecordset` Şu anda toplu veri satırlarını güncelleştirmek için bir mekanizma sağlamıyor; Ancak, `SQLSetPos`ODBC API işlevini kullanarak kendi işlevlerinizi yazabilirsiniz.
 
-ClassWizard toplu kayıt alanı değişimi desteklemediğini unutmayın. Bu nedenle, kılmalı `DoBulkFieldExchange` toplu RFX işlevleri çağrıları yazarak el ile. Bu işlevler hakkında daha fazla bilgi için Ek Yardım konusuna [kayıt alanı değişim işlevleri](../../mfc/reference/record-field-exchange-functions.md).
+ClassWizard 'ın toplu kayıt alanı değişimini desteklemediğini unutmayın; Bu nedenle, toplu RFX işlevlerine çağrılar yazarak `DoBulkFieldExchange` el ile geçersiz kılmanız gerekir. Bu işlevler hakkında daha fazla bilgi için bkz. [kayıt alanı değişim işlevleri](../../mfc/reference/record-field-exchange-functions.md).
 
-Toplu satır getirme hakkında daha fazla bilgi için bkz [kayıt kümesi: Kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md). İlgili bilgi için bkz [kayıt alanı değişimi (RFX)](../../data/odbc/record-field-exchange-rfx.md).
+Toplu satır getirme hakkında daha fazla bilgi için bkz. kayıt [kümesi: kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md). İlgili bilgiler için bkz. [kayıt alanı değişimi (RFX)](../../data/odbc/record-field-exchange-rfx.md).
 
-##  <a name="dofieldexchange"></a>  CRecordset::DoFieldExchange
+##  <a name="dofieldexchange"></a>CRecordset::D oFieldExchange
 
-Kayıt alan veri üyeleri ve ilgili kaydı veri kaynağında arasında (her iki yönde) veri değişimi için çağrılır. Implements alanı değişimi (RFX) kaydedin.
+Kayıt kümesinin alan veri üyeleri ile veri kaynağındaki karşılık gelen kayıt arasındaki verileri (her iki yönde) değiş tokuş etmek için çağırılır. Kayıt alanı değişimi (RFX) uygular.
 
 ```
 virtual void DoFieldExchange(CFieldExchange* pFX);
@@ -554,33 +554,33 @@ virtual void DoFieldExchange(CFieldExchange* pFX);
 
 ### <a name="parameters"></a>Parametreler
 
-*pFX*<br/>
-Bir işaretçi bir [CFieldExchange](../../mfc/reference/cfieldexchange-class.md) nesne. Çerçeve zaten bu nesnesini alan değiştirme işlemi için bir bağlam belirtmek için kurmanız gerekir.
+*Türk*<br/>
+[CFieldExchange](../../mfc/reference/cfieldexchange-class.md) nesnesine yönelik bir işaretçi. Çerçeve, alan değişim işlemi için bir bağlam belirtmek üzere bu nesneyi zaten ayarlamış.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Toplu satır getirme uygulanmadı framework otomatik olarak, kayıt kümesi nesnesi alan veri üyeleri geçerli kaydın veri kaynağında karşılık gelen sütunlara arasında veri değişimi için bu üye işlevini çağırır. `DoFieldExchange` Ayrıca, parametre veri üyeleri, varsa kayıt kümesinin seçimi için SQL deyim dizesi parametre yer tutucularını bağlar.
+Toplu satır getirme uygulanmadığı zaman, çerçeve, kayıt kümesi nesnenizin alan veri üyeleri ile veri kaynağındaki geçerli kaydın ilgili sütunları arasında otomatik olarak veri alışverişi yapmak için bu üye işlevini çağırır. `DoFieldExchange` Ayrıca parametre veri üyelerinize, varsa kayıt kümesinin seçimine ait SQL deyimindeki parametre yer tutucularına bağlar.
 
-Toplu satır getirme uygulanmışsa framework çağırır [DoBulkFieldExchange](#dobulkfieldexchange). Toplu satır getirme uygulamak için belirtmelisiniz `CRecordset::useMultiRowFetch` seçeneği *dwOptions* parametresinde [açık](#open) üye işlevi.
+Toplu satır getirme uygulanmışsa, Framework [DoBulkFieldExchange](#dobulkfieldexchange)çağırır. Toplu satır getirmeyi uygulamak için, [Açık](#open) üye Işlevindeki *dwoptions* parametresinin `CRecordset::useMultiRowFetch` seçeneğini belirtmeniz gerekir.
 
 > [!NOTE]
-> `DoFieldExchange` türetilen bir sınıf kullanıyorsanız kullanılabilir `CRecordset`. Doğrudan kayıt kümesi nesnesi oluşturduysanız `CRecordset`, çağırmalısınız [GetFieldValue](#getfieldvalue) veri almak için üye işlevi.
+> `DoFieldExchange`, yalnızca `CRecordset`türetilmiş bir sınıf kullanıyorsanız kullanılabilir. Doğrudan `CRecordset`bir kayıt kümesi nesnesi oluşturduysanız, verileri almak için [GetFieldValue](#getfieldvalue) üye işlevini çağırmanız gerekir.
 
-Kayıt alanı değişimi (RFX) adlı alan veri alışverişi her iki yönde de çalışır: kayıt nesnenin alan veri üyeleri alanlara veri kaynağında kayıt ve kayıt kümesi nesnesi için veri kaynağında kayıt.
+Kayıt alanı değişimi (RFX) olarak adlandırılan alan verileri alışverişi her iki yönde de geçerlidir: kayıt kümesi nesnesinin alan verileri üyelerinden veri kaynağındaki kaydın alanları ve veri kaynağındaki kayıttan kayıt kümesi nesnesi.
 
-Normal olarak yapmanız gereken uygulamak için tek eylem `DoFieldExchange` türetilmiş kümeniz için sınıf ClassWizard ile oluşturup alan veri üyeleri adları ve veri türlerini belirtmek için sınıftır. Ayrıca, hangi ClassWizard parametre veri üyeleri belirtin veya dinamik olarak bağlama tüm sütunları ile uğraşmak yazar için kod ekleyebilirsiniz. Daha fazla bilgi için bkz [kayıt kümesi: (ODBC) veri sütunlarını dinamik olarak bağlama](../../data/odbc/recordset-dynamically-binding-data-columns-odbc.md).
+Yalnızca türetilmiş kayıt kümesi sınıfınız için `DoFieldExchange` uygulamak için gerçekleştirmeniz gereken tek eylem, sınıfı ClassWizard ile oluşturmak ve alan veri üyelerinin adlarını ve veri türlerini belirtmek içindir. Ayrıca, parametre veri üyelerini belirtmek veya dinamik olarak bağlanan tüm sütunlarla uğraşmak için ClassWizard 'ın yazdığı kodu da ekleyebilirsiniz. Daha fazla bilgi için bkz. [kayıt kümesi: dinamik olarak veri sütunlarını bağlama (ODBC)](../../data/odbc/recordset-dynamically-binding-data-columns-odbc.md).
 
-ClassWizard ile türetilmiş kayıt kümesi sınıfı bildirdiğinizde, sihirbaz geçersiz kılma Yazar `DoFieldExchange` sizin için hangi benzer aşağıdaki örnekte:
+Türetilmiş kayıt kümesi sınıfınızı ClassWizard ile bildirdiğinizde, sihirbaz sizin için `DoFieldExchange` bir geçersiz kılma yazar ve bu örnek aşağıdaki örneğe benzer:
 
 [!code-cpp[NVC_MFCDatabase#19](../../mfc/codesnippet/cpp/crecordset-class_3.cpp)]
 
-RFX işlevleri hakkında daha fazla bilgi için Ek Yardım konusuna [kayıt alanı değişim işlevleri](../../mfc/reference/record-field-exchange-functions.md).
+RFX işlevleri hakkında daha fazla bilgi için bkz. [kayıt alanı değişim işlevleri](../../mfc/reference/record-field-exchange-functions.md).
 
-Daha ayrıntılı örnekler ve ayrıntılar hakkında `DoFieldExchange`, makaleye göz atın [kayıt alanı değişimi: RFX'in çalışması](../../data/odbc/record-field-exchange-how-rfx-works.md). RFX hakkında genel bilgi için bkz [kayıt alanı değişimi](../../data/odbc/record-field-exchange-rfx.md).
+`DoFieldExchange`hakkında daha fazla örnek ve Ayrıntılar için bkz. [kayıt alanı değişimi: RFX 'In nasıl çalıştığı](../../data/odbc/record-field-exchange-how-rfx-works.md). RFX hakkında genel bilgi için bkz. [kayıt alanı değişimi](../../data/odbc/record-field-exchange-rfx.md)makalesi.
 
-##  <a name="edit"></a>  CRecordset::Edit
+##  <a name="edit"></a>CRecordset:: Edit
 
-Değişiklik geçerli kayda izin verir.
+Geçerli kayıtta değişikliklere izin verir.
 
 ```
 virtual void Edit();
@@ -588,30 +588,30 @@ virtual void Edit();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağırdıktan sonra `Edit`, doğrudan değerlerine sıfırlayarak alan veri üyelerini değiştirebilirsiniz. Daha sonra çağırdığınızda, işlem tamamlanmadan [güncelleştirme](#update) veri kaynağı üzerinde yaptığınız değişiklikleri kaydetmek için üye işlevi.
+`Edit`çağırdıktan sonra, değerlerini doğrudan sıfırlayarak alan veri üyelerini değiştirebilirsiniz. Değişiklikleri veri kaynağına kaydetmek için daha sonra [Update](#update) member işlevini çağırdığınızda işlem tamamlanır.
 
 > [!NOTE]
->  Toplu satır getirme uyguladıysanız çağıramazsınız `Edit`. Bu başarısız bir onaylama işlemi neden olur. Ancak sınıf `CRecordset` mekanizması sağlamaz toplu veri satırlarını güncelleştirmek için kendi işlevlerinizi ODBC API işlevini kullanarak yazabileceğiniz `SQLSetPos`. Toplu satır getirme hakkında daha fazla bilgi için bkz [kayıt kümesi: Kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
+>  Toplu satır getirme uyguladıysanız `Edit`çağıramaz. Bu, başarısız bir onaylama işlemi oluşmasına neden olur. `CRecordset` sınıfı, toplu veri satırlarını güncelleştirmek için bir mekanizma sağlamasa da, `SQLSetPos`ODBC API işlevini kullanarak kendi işlevlerinizi yazabilirsiniz. Toplu satır getirme hakkında daha fazla bilgi için bkz. kayıt [kümesi: kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
 
-`Edit` kayıt kümesi veri üyelerinin değerlerini kaydeder. Çağırırsanız `Edit`, ardından çağırın değişiklik `Edit` ne ilk önce oldukları için kaydın değerleri yeniden geri `Edit` çağırın.
+`Edit`, kayıt kümesinin veri üyelerinin değerlerini kaydeder. `Edit`çağırır, değişiklikler yaparsanız ve `Edit` yeniden çağırırsanız, kaydın değerleri ilk `Edit` çağrısından önceki duruma geri yüklenir.
 
-Bazı durumlarda, bir sütun Null (hiçbir veri içeren) yaparak güncelleştirmek isteyebilirsiniz. Bunu yapmak için çağrı [SetFieldNull](#setfieldnull) parametresi Null; alanı işareti true ile bu da güncelleştirilmesi sütun neden olur. Bir alanın değerini değişmemiş olsa da veri kaynağına yazılması, çağrı istiyorsanız [SetFieldDirty](#setfielddirty) parametresi true. ' % S'değeri boş alan olsa bile bu çalışır.
+Bazı durumlarda, null (veri içermeyen) yaparak bir sütunu güncelleştirmek isteyebilirsiniz. Bunu yapmak için, null parametresiyle [SetFieldNull](#setfieldnull) çağrısı yapın, alanı null olarak işaretleyin; Bu, sütunun güncelleştirilmesine de neden olur. Değer değişmemiş olmasına rağmen bir alanın veri kaynağına yazılmasını istiyorsanız, TRUE parametresiyle [SetFieldDirty](#setfielddirty) çağırın. Bu, alanda null değeri olsa bile işe yarar.
 
-Veri kaynağı işlemleri destekliyorsa, yapabileceğiniz `Edit` arama işlemlerinin bir parçası. Çağırmalısınız Not [CDatabase::BeginTrans](../../mfc/reference/cdatabase-class.md#begintrans) çağırmadan önce `Edit` ve kayıt açıldıktan sonra. Ayrıca, arama unutmayın [CDatabase::CommitTrans](../../mfc/reference/cdatabase-class.md#committrans) çağırmak yerine değil `Update` tamamlanması `Edit` işlemi. İşlemler hakkında daha fazla bilgi için bkz. [CDatabase](../../mfc/reference/cdatabase-class.md).
+Veri kaynağı işlemleri destekliyorsa, `Edit` çağrısı bir işlemin parçası yapabilirsiniz. `Edit` çağrılmadan önce ve kayıt kümesi açıldıktan sonra [CDatabase:: BeginTrans](../../mfc/reference/cdatabase-class.md#begintrans) çağrısı yapmanız gerektiğini unutmayın. Ayrıca, `Edit` işleminin tamamlanabilmesi için [CDatabase:: CommitTrans](../../mfc/reference/cdatabase-class.md#committrans) çağırmanın `Update` çağrısı için bir yedek olmadığına de unutmayın. İşlemler hakkında daha fazla bilgi için bkz. sınıf [CDatabase](../../mfc/reference/cdatabase-class.md).
 
-Geçerli kilitleme modunuza bağlı olarak güncelleştirilen bir kaydı tarafından kilitlenmiş olabilir `Edit` , çağırana kadar `Update` veya başka bir kayıt gidin veya yalnızca sırasında kilitlenebilir `Edit` çağırın. Kilitleme moduyla değiştirebilirsiniz [CRecordset::pessimistic](#setlockingmode).
+Geçerli kilitleme moduna bağlı olarak, `Update` çağırana veya başka bir kayda kaydırma yapana kadar, güncelleştirilmekte olan kayıt `Edit` tarafından kilitlenebilir veya yalnızca `Edit` çağrısı sırasında kilitlenmiş olabilir. Kilit modunu [SetLockingMode](#setlockingmode)ile değiştirebilirsiniz.
 
-Geçerli kayıt önceki değerine geri çağırmadan önce yeni bir kayıt için kaydırırsanız `Update`. A `CDBException` çağırırsanız durum `Edit` güncelleştirilemiyor bir kayıt veya geçerli bir kayıt olup olmadığını.
+`Update`çağrılmadan önce yeni bir kayda kaydırırsanız geçerli kaydın önceki değeri geri yüklenir. Güncelleştirilemeyen bir kayıt kümesi için `Edit` çağırdıysanız veya geçerli kayıt yoksa `CDBException` atılır.
 
-Daha fazla bilgi için makalelere bakın [işlem (ODBC)](../../data/odbc/transaction-odbc.md) ve [kayıt kümesi: Kayıtları Kilitleme (ODBC)](../../data/odbc/recordset-locking-records-odbc.md).
+Daha fazla bilgi için bkz. Makale [işleme (ODBC)](../../data/odbc/transaction-odbc.md) ve [kayıt kümesi: KAYıTLARı kilitleme (ODBC)](../../data/odbc/recordset-locking-records-odbc.md).
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDatabase#20](../../mfc/codesnippet/cpp/crecordset-class_4.cpp)]
 
-##  <a name="flushresultset"></a>  CRecordset::FlushResultSet
+##  <a name="flushresultset"></a>CRecordset:: FlushResultSet
 
-Birden çok sonuç kümesi varsa (saklı yordam), önceden tanımlanmış sorgu sonraki sonuç kümesini alır.
+Birden çok sonuç kümesi varsa, önceden tanımlanmış bir sorgunun (saklı yordam) bir sonraki sonuç kümesini alır.
 
 ```
 BOOL FlushResultSet();
@@ -619,29 +619,29 @@ BOOL FlushResultSet();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Alınacak daha fazla sonuç kümesi yoksa sıfır; Aksi durumda 0.
+Alınacak daha fazla sonuç kümesi varsa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağırmalısınız `FlushResultSet` yalnızca geçerli sonuç kümesi imleç tamamen tamamlanmış olduğunuzda. Sonraki sonuç çağırarak kümesini alırken unutmayın `FlushResultSet`, imleç, sonuç kümesi üzerinde geçerli değil; çağırmalısınız [MoveNext](#movenext) üye işlevini çağırmadan sonra `FlushResultSet`.
+Yalnızca geçerli sonuç kümesinde imleç ile tamamen işiniz bittiğinde `FlushResultSet` çağırmalısınız. `FlushResultSet`çağırarak bir sonraki sonuç kümesini aldığınızda, imlecinizin bu sonuç kümesinde geçerli olmadığı unutulmamalıdır; `FlushResultSet`çağrıldıktan sonra [MoveNext](#movenext) üye işlevini çağırmanız gerekir.
 
-Önceden tanımlanmış sorgu çıkış parametresi veya giriş/çıkış parametrelerini kullanıyorsa, çağırmalıdır `FlushResultSet` döndürür kadar `FALSE` (Bu parametre değerlerini almak için değer 0).
+Önceden tanımlanmış bir sorgu çıkış parametresi veya giriş/çıkış parametreleri kullanıyorsa, bu parametre değerlerini almak için `FALSE` (0 değeri) görünene kadar `FlushResultSet` çağırmanız gerekir.
 
-`FlushResultSet` ODBC API işlevini çağıran `SQLMoreResults`. Varsa `SQLMoreResults` SQL_ERROR hatası veya SQL_INVALID_HANDLE, ardından döndürür `FlushResultSet` bir özel durum oluşturur. Hakkında daha fazla bilgi için `SQLMoreResults`, Windows SDK'sı bakın.
+`FlushResultSet` ODBC API işlevini `SQLMoreResults`çağırır. `SQLMoreResults` SQL_ERROR veya SQL_INVALID_HANDLE döndürürse `FlushResultSet` bir özel durum oluşturur. `SQLMoreResults`hakkında daha fazla bilgi için bkz. Windows SDK.
 
-Depolanmış yordamınızdaki çağırmak istiyorsanız alanlar bağlı gerekiyor `FlushResultSet`.
+`FlushResultSet`çağırmak istiyorsanız, saklı yordamınız bağlantılı alanlara sahip olmalıdır.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod, varsayar `COutParamRecordset` olduğu bir `CRecordset`-birden çok sonuç kümesi olan ve giriş parametresi ve bir output parametresi önceden tanımlanmış sorgu temel türetilmiş nesne. Yapısını Not [DoFieldExchange](#dofieldexchange) geçersiz kılar.
+Aşağıdaki kod, `COutParamRecordset` bir giriş parametresi ve bir çıkış parametresi ve birden çok sonuç kümesine sahip önceden tanımlanmış bir sorgu temel alınarak `CRecordset`türetilmiş bir nesne olduğunu varsayar. [DoFieldExchange](#dofieldexchange) geçersiz kılma yapısına göz önünde edin.
 
 [!code-cpp[NVC_MFCDatabase#21](../../mfc/codesnippet/cpp/crecordset-class_5.cpp)]
 
 [!code-cpp[NVC_MFCDatabase#22](../../mfc/codesnippet/cpp/crecordset-class_6.cpp)]
 
-##  <a name="getbookmark"></a>  CRecordset::GetBookmark
+##  <a name="getbookmark"></a>CRecordset:: GetBookmark
 
-Geçerli kayıt için yer işareti değeri elde eder.
+Geçerli kayıt için yer işareti değerini alır.
 
 ```
 void GetBookmark(CDBVariant& varBookmark);
@@ -650,25 +650,25 @@ void GetBookmark(CDBVariant& varBookmark);
 ### <a name="parameters"></a>Parametreler
 
 *varBookmark*<br/>
-Bir başvuru bir [CDBVariant](../../mfc/reference/cdbvariant-class.md) geçerli kayıtta yer işareti temsil eden nesne.
+Geçerli kayıttaki yer işaretini temsil eden bir [CDBVariant](../../mfc/reference/cdbvariant-class.md) nesnesine başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yer işaretleri kayıt kümesinde desteklenip desteklenmediğini belirlemek için çağrı [CanBookmark](#canbookmark). Destekleniyorsa yer işaretleri kullanılabilir hale getirmek için ayarlamalısınız `CRecordset::useBookmarks` seçeneğini *dwOptions* parametresinin [açık](#open) üye işlevi.
+Kayıt kümesinde yer işaretlerinin desteklenip desteklenmediğini anlamak için [CanBookmark](#canbookmark)çağırın. Eğer desteklendiklerinde yer imlerini kullanılabilir hale getirmek için, [Open](#open) member Işlevinin *dwoptions* parametresinde `CRecordset::useBookmarks` seçeneğini ayarlamanız gerekir.
 
 > [!NOTE]
->  Yer işaretleri desteklenmeyen veya kullanılamıyor, çağırma `GetBookmark` oluşturulan bir özel durumu oluşur. Yer işaretleri salt iletme kayıt kümeleri desteklenmez.
+>  Yer işaretleri desteklenmiyorsa veya kullanılamıyorsa, `GetBookmark` çağırmak bir özel durum oluşmasına neden olur. Yer işaretleri salt iletme kayıt kümelerinde desteklenmez.
 
-`GetBookmark` yer işareti için geçerli kayda değerini atar bir `CDBVariant` nesne. Başka bir kayıda taşıdıktan herhangi bir zamanda kayda döndürmek için çağrı [SetBookmark](#setbookmark) ile karşılık gelen `CDBVariant` nesne.
+`GetBookmark` geçerli kayıt için yer işaretinin değerini bir `CDBVariant` nesnesine atar. Farklı bir kayda geçtikten sonra istediğiniz zaman bu kayda dönmek için, karşılık gelen `CDBVariant` nesnesiyle birlikte [SetBookmark](#setbookmark) çağırın.
 
 > [!NOTE]
->  Belirli kayıt işlemlerinden sonra yer işaretlerini artık geçerli olmayabilir. Örneğin, eğer `GetBookmark` ardından `Requery`, kayıtla dönmek mümkün olmayabilir `SetBookmark`. Çağrı [CDatabase::GetBookmarkPersistence](../../mfc/reference/cdatabase-class.md#getbookmarkpersistence) güvenli bir şekilde çağırıp çağırmayacağınızı denetlenecek `SetBookmark`.
+>  Belirli kayıt kümesi işlemlerinden sonra, yer işaretleri artık geçerli olmayabilir. Örneğin, `Requery`tarafından izlenen `GetBookmark` çağırırsanız `SetBookmark`ile kayda geri dönemeyebilirsiniz. `SetBookmark`güvenli bir şekilde çağırıp çağıramayacağını denetlemek için [CDatabase:: Getbookmarkkalıcılığı](../../mfc/reference/cdatabase-class.md#getbookmarkpersistence) çağırın.
 
-Yer işaretleri ve kayıt kümesi Gezinti hakkında daha fazla bilgi için makalelere göz atın [kayıt kümesi: Yer işaretleri ve Mutlak Konumlar (ODBC)](../../data/odbc/recordset-bookmarks-and-absolute-positions-odbc.md) ve [kayıt kümesi: Kaydırma (ODBC)](../../data/odbc/recordset-scrolling-odbc.md).
+Yer işaretleri ve kayıt kümesi gezintisi hakkında daha fazla bilgi için bkz. makalelere [kayıt kümesi: yer işaretleri ve mutlak konumlar (ODBC)](../../data/odbc/recordset-bookmarks-and-absolute-positions-odbc.md) ve [kayıt kümesi: kaydırma (ODBC)](../../data/odbc/recordset-scrolling-odbc.md).
 
-##  <a name="getdefaultconnect"></a>  CRecordset::GetDefaultConnect
+##  <a name="getdefaultconnect"></a>CRecordset:: GetDefaultConnect
 
-Varsayılan bağlantı dizesini almak için çağrılır.
+Varsayılan bağlantı dizesini almak için çağırılır.
 
 ```
 virtual CString GetDefaultConnect();
@@ -676,15 +676,15 @@ virtual CString GetDefaultConnect();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-A `CString` , varsayılan bağlantı dizesini içerir.
+Varsayılan bağlantı dizesini içeren bir `CString`.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Framework ' kayıt kümesi temel aldığı veri kaynağı için varsayılan bağlantı dizesini almak için bu üye işlevi çağırır. ClassWizard ClassWizard tablolar ve sütunlar hakkında bilgi almak için kullandığınız aynı veri kaynağını tanımlayarak bu işlev, uygular. Büyük olasılıkla, uygulamanızı geliştirme sırasında bu varsayılan bağlantı etmenin kolay bulacaksınız. Ancak, varsayılan bağlantı uygulamanızın kullanıcıları için uygun olmayabilir. Bu durumda, bu işlev, ClassWizard'ın sürümü atılıyor yeniden uygulayın. Bağlantı dizeleri hakkında daha fazla bilgi için bkz [veri kaynağı (ODBC)](../../data/odbc/data-source-odbc.md).
+Framework, kayıt kümesinin temel aldığı veri kaynağı için varsayılan bağlantı dizesini almak üzere bu üye işlevini çağırır. ClassWizard, tablolar ve sütunlar hakkında bilgi almak için classıntertıon sihirbazında kullandığınız veri kaynağını tanımlayarak sizin için bu işlevi uygular. Büyük olasılıkla uygulamanızı geliştirirken bu varsayılan bağlantıyı kullanmak için uygun olduğunu fark edersiniz. Ancak varsayılan bağlantı, uygulamanızın kullanıcıları için uygun olmayabilir. Bu durumda, ClassWizard 'ın sürümünü atarak bu işlevi yeniden uygulamalısınız. Bağlantı dizeleri hakkında daha fazla bilgi için bkz. [veri kaynağı (ODBC)](../../data/odbc/data-source-odbc.md).
 
-##  <a name="getdefaultsql"></a>  CRecordset::GetDefaultSQL
+##  <a name="getdefaultsql"></a>CRecordset:: GetDefaultSQL
 
-Yürütmek için varsayılan SQL dizesini almak için çağrılır.
+Yürütülecek varsayılan SQL dizesini almak için çağırılır.
 
 ```
 virtual CString GetDefaultSQL();
@@ -692,24 +692,24 @@ virtual CString GetDefaultSQL();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-A `CString` , varsayılan SQL deyimi içerir.
+Varsayılan SQL ifadesini içeren bir `CString`.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Framework, kayıt temel varsayılan SQL durumunu almak için bu üye işlevini çağırır. Bu tablo adı veya bir SQL olabilir **seçin** deyimi.
+Çerçeve, üzerinde kayıt kümesinin temel aldığı varsayılan SQL ifadesini almak için bu üye işlevini çağırır. Bu bir tablo adı veya bir SQL **Select** bildirisi olabilir.
 
-Dolaylı olarak ClassWizard ile kayıt kümesi sınıfı bildirerek varsayılan SQL deyimini tanımlayın ve bu görevi, ClassWizard gerçekleştirir.
+Sınıf Sihirbazı ile kayıt kümesi sınıfınızı bildirerek varsayılan SQL ifadesini dolaylı olarak tanımlarsınız ve ClassWizard bu görevi sizin için gerçekleştirir.
 
-Kendi kullanımınız için SQL deyimi dizeye gereksiniminiz varsa, çağrı `GetSQL`, açıldığında kayıt kümesinin kayıtları seçmek için kullanılan SQL ifadesi döndürür. Varsayılan SQL dizesinde geçersiz kılma sınıfınızın düzenleyebileceğiniz `GetDefaultSQL`. Örneğin, kullanarak bir önceden tanımlanmış sorgu için bir çağrı belirtebilirsiniz bir **çağrı** deyimi. (Not olması durumunda, ancak düzenleme `GetDefaultSQL`, değiştirmeniz gerekir `m_nFields` veri kaynağındaki sütun sayısı eşleştirilecek.)
+Kendi kullanmanız için SQL deyimin dizesine ihtiyacınız varsa, bu kayıt kümesi açıldığında kayıt kümesinin kayıtlarını seçmek için kullanılan SQL ifadesini döndüren `GetSQL`çağırın. Sınıfınızın `GetDefaultSQL`geçersiz kılındığı varsayılan SQL dizesini düzenleyebilirsiniz. Örneğin, **Call** ifadesini kullanarak önceden tanımlanmış bir sorgu için bir çağrı belirtebilirsiniz. (Ancak `GetDefaultSQL`düzenlediğinizde, veri kaynağındaki sütun sayısıyla eşleşmesi için `m_nFields` de değiştirmeniz gerektiğini unutmayın.)
 
-Daha fazla bilgi için bkz [kayıt kümesi: Bir sınıf bildirme (ODBC) için bir tabloyu](../../data/odbc/recordset-declaring-a-class-for-a-table-odbc.md).
+Daha fazla bilgi için bkz. [kayıt kümesi: tablo Için sınıf bildirme (ODBC)](../../data/odbc/recordset-declaring-a-class-for-a-table-odbc.md).
 
 > [!CAUTION]
->  Tablo adı framework birden çok tablo adları belirttiğinizde veya bir tablo adı tanımlanamadı değeri boş bir **çağrı** deyimi değil yorumlanabilir. Kullanırken dikkat bir **çağrı** deyim, küme ayracı arasında boşluk eklememeniz gerekir ve **çağrı** anahtar sözcüğü, ya da önce küme ayracı veya önce boşluk eklemeniz gerekir  **SEÇİN** anahtar sözcüğü bir **seçin** deyimi.
+>  Çerçeve bir tablo adı tanımlayamadı, birden fazla tablo adı sağlanırsa veya bir **çağrı** açıklaması yorumlanamadığından tablo adı boş olur. Bir **çağrı** açıklaması kullanırken, küme ayracı ile **Call** anahtar sözcüğü arasında boşluk eklememelisiniz, ya da küme ayracından önce ya da **Select** deyimindeki **Select** anahtar sözcüğünden önce boşluk eklemeniz gerektiğini unutmayın.
 
-##  <a name="getfieldvalue"></a>  CRecordset::GetFieldValue
+##  <a name="getfieldvalue"></a>CRecordset:: GetFieldValue
 
-Geçerli kayıt alanı verileri alır.
+Geçerli kayıttaki alan verilerini alır.
 
 ```
 void GetFieldValue(
@@ -736,10 +736,10 @@ void GetFieldValue(
 *lpszName*<br/>
 Bir alanın adı.
 
-*varValu*e bir başvuru bir [CDBVariant](../../mfc/reference/cdbvariant-class.md) alanın değerini depolayan bir nesne.
+alan değerini depolayacak bir [CDBVariant](../../mfc/reference/cdbvariant-class.md) nesnesine başvuru.
 
-*nFieldType*<br/>
-ODBC C alanın veri türü. Varsayılan değer, DEFAULT_FIELD_TYPE, kullanarak zorlar `GetFieldValue` aşağıdaki tabloda temel C veriler SQL veri türü belirlenemiyor. Aksi takdirde, verileri doğrudan yazın veya uyumlu bir veri türü seçin belirtebilirsiniz; Örneğin, herhangi bir veri türü SQL_C_CHAR içine depolayabilirsiniz.
+*N,*<br/>
+Alanın ODBC C veri türü. Varsayılan DEFAULT_FIELD_TYPE değerini kullanarak, aşağıdaki tabloya bağlı olarak SQL veri türünden C veri türünü belirleme `GetFieldValue` zorlar. Aksi takdirde, veri türünü doğrudan belirtebilir veya uyumlu bir veri türü seçebilirsiniz; Örneğin, herhangi bir veri türünü SQL_C_CHAR ' ye kaydedebilirsiniz.
 
 |C veri türü|SQL veri türü|
 |-----------------|-------------------|
@@ -753,41 +753,41 @@ ODBC C alanın veri türü. Varsayılan değer, DEFAULT_FIELD_TYPE, kullanarak z
 |SQL_C_CHAR|SQL_NUMERICSQL_DECIMALSQL_BIGINTSQL_CHARSQL_VARCHARSQL_LONGVARCHAR|
 |SQL_C_BINARY|SQL_BINARYSQL_VARBINARYSQL_LONGVARBINARY|
 
-ODBC veri türleri hakkında daha fazla bilgi için "SQL veri türleri" ve "C veri türleri" ek d Windows SDK'sının konularına bakın.
+ODBC veri türleri hakkında daha fazla bilgi için Windows SDK ek D 'de "SQL veri türleri" ve "C veri türleri" konularına bakın.
 
-*nIndex*<br/>
-Alan sıfır tabanlı dizini.
+*nDizin*<br/>
+Alanın sıfır tabanlı dizini.
 
 *strValue*<br/>
-Bir başvuru bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) alanın değerini depolayan bir nesne, metin, alanın veri türünü bağımsız olarak dönüştürülür.
+Alanın veri türünden bağımsız olarak, alana Dönüştürülecek alanın değerini depolayan bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) nesnesine başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir alan adı veya dizin bakabilirsiniz. Alan değeri ya da depolayabilirsiniz bir `CDBVariant` nesnesi veya bir `CString` nesne.
+Bir alanı ada veya dizine göre arayabilirsiniz. Alan değerini bir `CDBVariant` nesne veya bir `CString` nesnesi içinde saklayabilirsiniz.
 
-Toplu satır getirme uyguladıysanız, bir satır kümesinde bulunan ilk kayda üzerinde her zaman geçerli kayda konumlandırıldı. Kullanılacak `GetFieldValue` belirli bir satır kümesindeki bir kayıt üzerinde ilk çağırmalısınız [SetRowsetCursorPosition](#setrowsetcursorposition) imleç istenen satır, satır içinde taşımak için üye işlevi. Ardından çağırın `GetFieldValue` ilgili satır için. Toplu satır getirme uygulamak için belirtmelisiniz `CRecordset::useMultiRowFetch` seçeneği *dwOptions* parametresinde [açık](#open) üye işlevi.
+Toplu satır getirme uyguladıysanız geçerli kayıt, her zaman bir satır kümesindeki ilk kayıtta konumlandırılır. Belirli bir satır kümesi içindeki bir kayıt üzerinde `GetFieldValue` kullanmak için, önce imleci bu satır kümesi içindeki istenen satıra taşımak için [SetRowsetCursorPosition](#setrowsetcursorposition) üye işlevini çağırmanız gerekir. Sonra bu satır için `GetFieldValue` çağırın. Toplu satır getirmeyi uygulamak için, [Açık](#open) üye Işlevindeki *dwoptions* parametresinin `CRecordset::useMultiRowFetch` seçeneğini belirtmeniz gerekir.
 
-Kullanabileceğiniz `GetFieldValue` dinamik olarak bunları tasarım zamanında statik bağlama yerine çalışma zamanı alanları getirilemedi. Örneğin, bir kayıt kümesi nesnesi doğrudan bildirilmişlerse `CRecordset`, kullanmalısınız `GetFieldValue` almak için veri alanının; kayıt alanı değişimi (RFX) veya toplu kayıt alanı değişimi (Bulk RFX) henüz uygulanmadı.
+Çalışma zamanında alanları, tasarım zamanında statik olarak bağlamak yerine dinamik olarak getirmek için `GetFieldValue` kullanabilirsiniz. Örneğin, doğrudan `CRecordset`bir kayıt kümesi nesnesi bildirdiyseniz, alan verilerini almak için `GetFieldValue` kullanmanız gerekir; kayıt alanı değişimi (RFX) veya toplu kayıt alanı değişimi (toplu RFX) uygulanmadı.
 
 > [!NOTE]
->  Kayıt kümesi nesnesi türetme olmadan bildirirseniz `CRecordset`, yüklenen ODBC imleç kitaplığı izniniz yok. İmleç Kitaplığı kayıt kümesi en az bir ilişkili sütun olmasını gerektirir; Ancak, kullandığınızda `CRecordset` sütunların hiçbirinin doğrudan bağlanır. Üye işlevleri [CDatabase::OpenEx](../../mfc/reference/cdatabase-class.md#openex) ve [CDatabase::Open](../../mfc/reference/cdatabase-class.md#open) imleç kitaplığı yüklü olup olmadığını denetleme.
+>  `CRecordset`türetmeden bir kayıt kümesi nesnesi bildirirseniz ODBC Imleç kitaplığı yüklü değildir. İmleç kitaplığı, kayıt kümesinin en az bir tane bağlantılı sütunu olmasını gerektirir; Ancak `CRecordset` doğrudan kullandığınızda, sütunlardan hiçbiri bağlanmadı. İmleç kitaplığının yüklenip yüklenmeyeceğini, [CDatabase:: OpenEx](../../mfc/reference/cdatabase-class.md#openex) ve [CDatabase:: Open](../../mfc/reference/cdatabase-class.md#open) işlevlerini üye olarak denetleyin.
 
-`GetFieldValue` ODBC API işlevini çağıran `SQLGetData`. Alan değeri, gerçek uzunluk değeri SQL_NO_TOTAL sürücünüzü çıkışını veriyorsa `GetFieldValue` bir özel durum oluşturur. Hakkında daha fazla bilgi için `SQLGetData`, Windows SDK'sı bakın.
+`GetFieldValue` ODBC API işlevini `SQLGetData`çağırır. Sürücünüz alan değerinin gerçek uzunluğu için SQL_NO_TOTAL değerini çıktıysa `GetFieldValue` bir özel durum oluşturur. `SQLGetData`hakkında daha fazla bilgi için bkz. Windows SDK.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek kod çağrıları gösterir `GetFieldValue` doğrudan bir kayıt kümesi nesnesi bildirilen `CRecordset`.
+Aşağıdaki örnek kod, `CRecordset`doğrudan tanımlanmış bir kayıt kümesi nesnesi için `GetFieldValue` çağrılarını gösterir.
 
 [!code-cpp[NVC_MFCDatabase#23](../../mfc/codesnippet/cpp/crecordset-class_7.cpp)]
 
 > [!NOTE]
->  DAO sınıfının aksine `CDaoRecordset`, `CRecordset` sahip olmadığı bir `SetFieldValue` üye işlevi. Doğrudan bir nesne oluşturursanız `CRecordset`, etkili bir şekilde salt okunur.
+>  `CDaoRecordset`DAO sınıfının aksine, `CRecordset` `SetFieldValue` üye işlevine sahip değildir. Doğrudan `CRecordset`bir nesne oluşturursanız, bu, etkin bir şekilde salt okunurdur.
 
-Toplu satır getirme hakkında daha fazla bilgi için bkz [kayıt kümesi: Kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
+Toplu satır getirme hakkında daha fazla bilgi için bkz. kayıt [kümesi: kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
 
-##  <a name="getodbcfieldcount"></a>  CRecordset::GetODBCFieldCount
+##  <a name="getodbcfieldcount"></a>CRecordset:: GetODBCFieldCount
 
-Kayıt kümesi nesnenizin alanlarında toplam sayısını alır.
+Kayıt kümesi nesnenizin Toplam alan sayısını alır.
 
 ```
 short GetODBCFieldCount() const;
@@ -795,15 +795,15 @@ short GetODBCFieldCount() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kayıt alan sayısı.
+Kayıt kümesindeki alan sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kayıt kümeleri oluşturma hakkında daha fazla bilgi için bkz [kayıt kümesi: Oluşturma ve kapatma (ODBC) kayıt kümeleri](../../data/odbc/recordset-creating-and-closing-recordsets-odbc.md).
+Kayıt kümeleri oluşturma hakkında daha fazla bilgi için bkz: [kayıt kümeleri oluşturma ve kapatma (ODBC)](../../data/odbc/recordset-creating-and-closing-recordsets-odbc.md).
 
-##  <a name="getodbcfieldinfo"></a>  CRecordset::GetODBCFieldInfo
+##  <a name="getodbcfieldinfo"></a>CRecordset:: GetODBCFieldInfo
 
-Kayıt kümesi alanları hakkında bilgi edinir.
+Kayıt kümesindeki alanlarla ilgili bilgileri alır.
 
 ```
 void GetODBCFieldInfo(
@@ -820,23 +820,23 @@ void GetODBCFieldInfo(
 *lpszName*<br/>
 Bir alanın adı.
 
-*FieldInfo*<br/>
-Bir başvuru bir `CODBCFieldInfo` yapısı.
+*sağlanırken*<br/>
+`CODBCFieldInfo` yapısına yönelik bir başvuru.
 
-*nIndex*<br/>
-Alan sıfır tabanlı dizini.
+*nDizin*<br/>
+Alanın sıfır tabanlı dizini.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlevin bir sürümünü, bir alan adına göre aramak sağlar. Başka bir sürüm dizin ile bir alanı Ara olanak sağlar.
+İşlevin bir sürümü bir alanı adına göre arama yapmanızı sağlar. Diğer sürüm, bir alanı dizine göre arama yapmanızı sağlar.
 
-Döndürülen bilgiler hakkında daha fazla açıklaması için bkz. [Codbcfieldınfo](../../mfc/reference/codbcfieldinfo-structure.md) yapısı.
+Döndürülen bilgiler hakkında bir açıklama için bkz. [CODBCFieldInfo](../../mfc/reference/codbcfieldinfo-structure.md) yapısı.
 
-Kayıt kümeleri oluşturma hakkında daha fazla bilgi için bkz [kayıt kümesi: Oluşturma ve kapatma (ODBC) kayıt kümeleri](../../data/odbc/recordset-creating-and-closing-recordsets-odbc.md).
+Kayıt kümeleri oluşturma hakkında daha fazla bilgi için bkz: [kayıt kümeleri oluşturma ve kapatma (ODBC)](../../data/odbc/recordset-creating-and-closing-recordsets-odbc.md).
 
-##  <a name="getrecordcount"></a>  CRecordset::GetRecordCount
+##  <a name="getrecordcount"></a>CRecordset:: GetRecordCount
 
-Kayıt kümesi boyutunu belirler.
+Kayıt kümesinin boyutunu belirler.
 
 ```
 long GetRecordCount() const;
@@ -844,16 +844,16 @@ long GetRecordCount() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kayıt kümesindeki kayıt sayısı; kayıt kümesi kayıt bulundurmuyorsa 0; veya kayıt sayısı belirlenemiyorsa, -1.
+Kayıt kümesindeki kayıt sayısı; kayıt kümesi kayıt içermiyorsa 0; ya da kayıt sayısı belirlenemiyorsa-1.
 
 ### <a name="remarks"></a>Açıklamalar
 
 > [!CAUTION]
->  Kayıt sayısı "yüksek su işareti," en yüksek numaralı kaydı tutulan henüz kullanıcı kayıtlar arasında hareket ettikçe görülür. Kullanıcının son kaydını taşındıktan sonra toplam kayıt sayısı yalnızca bilinir. Performansla ilgili nedenlerden dolayı çağırdığınızda sayısı güncelleştirilmez `MoveLast`. Kayıtları kendiniz saymak için çağrı `MoveNext` kadar sürekli olarak `IsEOF` sıfır döndürür. Bir kayıt aracılığıyla ekleme `CRecordset:AddNew` ve `Update` sayısını artırır; aracılığıyla kayıt silme `CRecordset::Delete` sayısı azalır.
+>  Kayıt sayısı bir "yüksek su işareti" olarak korunur, ancak Kullanıcı kayıtlarda ilerleyecek şekilde görülen en yüksek numaralı kayıt. Toplam kayıt sayısı yalnızca Kullanıcı son kaydın ötesine taşındıktan sonra bilinirdi. Performans nedenleriyle, `MoveLast`çağırdığınızda sayı güncellenmez. Kayıtları kendiniz saymak için, `IsEOF` sıfır dışında bir değer döndürene kadar `MoveNext` tekrar tekrar çağırın. `CRecordset:AddNew` ve `Update` aracılığıyla bir kayıt eklemek sayıyı artırır; `CRecordset::Delete` aracılığıyla bir kaydı silmek sayıyı azaltır.
 
-##  <a name="getrowsetsize"></a>  CRecordset::GetRowsetSize
+##  <a name="getrowsetsize"></a>CRecordset:: GetRowsetSize
 
-Belirli bir getirme sırasında almak istediğiniz satır sayısı için geçerli ayarını alır.
+Belirli bir getirme sırasında almak istediğiniz satır sayısı için geçerli ayarı edinir.
 
 ```
 DWORD GetRowsetSize() const;
@@ -861,19 +861,19 @@ DWORD GetRowsetSize() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirli bir getirme sırasında almak için satır sayısı.
+Belirli bir getirme sırasında alınacak satır sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Toplu satır getirme kullanıyorsanız, kayıt açıldığında varsayılan satır boyutu 25'tir; Aksi takdirde, 1'dir.
+Toplu satır getirme kullanıyorsanız, kayıt kümesi açıldığında varsayılan satır kümesi boyutu 25 ' tir; Aksi takdirde, 1 ' dir.
 
-Toplu satır getirme uygulamak için belirtmelisiniz `CRecordset::useMultiRowFetch` seçeneğini *dwOptions* parametresinin [açık](#open) üye işlevi. Satır kümesi boyutu için ayarı değiştirmek için çağrı [SetRowsetSize](#setrowsetsize).
+Toplu satır getirmeyi uygulamak için, [Open](#open) member Işlevinin *dwoptions* parametresinde `CRecordset::useMultiRowFetch` seçeneğini belirtmeniz gerekir. Satır kümesi boyutu ayarını değiştirmek için [SetRowsetSize](#setrowsetsize)çağırın.
 
-Toplu satır getirme hakkında daha fazla bilgi için bkz [kayıt kümesi: Kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
+Toplu satır getirme hakkında daha fazla bilgi için bkz. kayıt [kümesi: kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
 
-##  <a name="getrowsfetched"></a>  CRecordset::GetRowsFetched
+##  <a name="getrowsfetched"></a>CRecordset:: Getrowsgetirilen
 
-Kaç tane kaydın getirmeden sonra gerçekte alınan belirler.
+Bir getirme işleminden sonra gerçekten kaç kayıt alındığını belirler.
 
 ```
 DWORD GetRowsFetched() const;
@@ -881,23 +881,23 @@ DWORD GetRowsFetched() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Satır sayısı, belirli bir getirmeden sonra veri kaynağından alınan.
+Belirli bir getirme işleminden sonra veri kaynağından alınan satır sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Toplu satır getirme uygulandığında, bu yararlıdır. Satır kümesi boyutunu, normalde bir getirme kaç satır alınır gösterir; Ancak, satır kümesinde toplam sayısını da satır içinde kaç satır alınır etkiler. Kümenizin 4 satır boyutu ayarı 10 kayıt varsa, örneğin, ardından kayıt kümesi içinde çağırarak döngü `MoveNext` yalnızca 2 kayıtları sahip son satır kümesinde neden olur.
+Toplu satır getirme uyguladığınızda bu faydalıdır. Satır kümesi boyutu normalde, bir getirmeye göre kaç satır alınacağını belirtir; Ancak, kayıt kümesindeki toplam satır sayısı, bir satır kümesinde kaç satır alınacağını da etkiler. Örneğin, kayıt kümeniz, satır kümesi boyutu ayarı 4 olan 10 kayda sahipse, `MoveNext` çağırarak kayıt kümesinden döngü, son satır kümesinin yalnızca 2 kayıt olmasına neden olur.
 
-Toplu satır getirme uygulamak için belirtmelisiniz `CRecordset::useMultiRowFetch` seçeneğini *dwOptions* parametresinin [açık](#open) üye işlevi. Satır kümesi boyutunu belirlemek için çağrı [SetRowsetSize](#setrowsetsize).
+Toplu satır getirmeyi uygulamak için, [Open](#open) member Işlevinin *dwoptions* parametresinde `CRecordset::useMultiRowFetch` seçeneğini belirtmeniz gerekir. Satır kümesi boyutunu belirtmek için [SetRowsetSize](#setrowsetsize)çağırın.
 
-Toplu satır getirme hakkında daha fazla bilgi için bkz [kayıt kümesi: Kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
+Toplu satır getirme hakkında daha fazla bilgi için bkz. kayıt [kümesi: kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDatabase#24](../../mfc/codesnippet/cpp/crecordset-class_8.cpp)]
 
-##  <a name="getrowstatus"></a>  CRecordset::GetRowStatus
+##  <a name="getrowstatus"></a>CRecordset:: GetRowStatus
 
-Geçerli satır kümesindeki bir satır için durumu alır.
+Geçerli satır kümesindeki bir satırın durumunu alır.
 
 ```
 WORD GetRowStatus(WORD wRow) const;
@@ -906,15 +906,15 @@ WORD GetRowStatus(WORD wRow) const;
 ### <a name="parameters"></a>Parametreler
 
 *wRow*<br/>
-Bir tabanlı konumu bir satır satır kümesi geçerli. Bu değer 1'den satır boyutunu değişebilir.
+Geçerli satır kümesindeki bir satırın tek tabanlı konumu. Bu değer, 1 ' den satır kümesinin boyutuyla değişebilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Satır için bir durum değeri. Ayrıntılar için açıklamalara bakın.
+Satır için bir durum değeri. Ayrıntılar için bkz. açıklamalar.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`GetRowStatus` alınan veri kaynağına veya, son başlatıldığından beri ya da herhangi bir değişiklik durumunda, satıra gösteren bir değer döndürür. hiçbir satır karşılık gelen *wRow* getirildi. Aşağıdaki tabloda olası dönüş değerleri listelenmektedir.
+`GetRowStatus`, veri kaynağından en son alındığı veya *wRow* 'a karşılık gelen bir satırın getirilmediği tarihten itibaren satıra yapılan herhangi bir değişikliği belirten bir değer döndürür. Aşağıdaki tabloda olası dönüş değerleri listelenmektedir.
 
 |Durum değeri|Açıklama|
 |------------------|-----------------|
@@ -922,14 +922,14 @@ Satır için bir durum değeri. Ayrıntılar için açıklamalara bakın.
 |SQL_ROW_UPDATED|Satır güncelleştirildi.|
 |SQL_ROW_DELETED|Satır silindi.|
 |SQL_ROW_ADDED|Satır eklendi.|
-|SQL_ROW_ERROR|Satır bir hata nedeniyle getirilemez.|
-|SQL_ROW_NOROW|Karşılık gelen satır yok *wRow*.|
+|SQL_ROW_ERROR|Satır bir hata nedeniyle geri alınamıyor.|
+|SQL_ROW_NOROW|*WRow*'a karşılık gelen satır yok.|
 
-Daha fazla bilgi için bkz: ODBC API işlevini `SQLExtendedFetch` Windows SDK.
+Daha fazla bilgi için Windows SDK `SQLExtendedFetch` ODBC API işlevine bakın.
 
-##  <a name="getstatus"></a>  CRecordset::GetStatus
+##  <a name="getstatus"></a>CRecordset:: GetStatus
 
-Kayıt kümesi ve en son kaydını olup yakaladı geçerli kayıt dizinini belirler.
+Kayıt kümesindeki geçerli kaydın dizinini ve son kaydın görülip görülmediğini belirler.
 
 ```
 void GetStatus(CRecordsetStatus& rStatus) const;
@@ -938,13 +938,13 @@ void GetStatus(CRecordsetStatus& rStatus) const;
 ### <a name="parameters"></a>Parametreler
 
 *rStatus*<br/>
-Bir başvuru bir `CRecordsetStatus` nesne. Daha fazla bilgi için Açıklamalar bölümüne bakın.
+`CRecordsetStatus` nesnesine bir başvuru. Daha fazla bilgi için Açıklamalar bölümüne bakın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CRecordset` Dizin izlemek çalışır ancak bazı durumlarda bu mümkün olmayabilir. Bkz: [GetRecordCount](#getrecordcount) açıklaması.
+`CRecordset` dizini izlemeye çalışır, ancak bazı durumlarda bu mümkün olmayabilir. Bir açıklama için bkz. [GetRecordCount](#getrecordcount) .
 
-`CRecordsetStatus` Yapısı aşağıdaki biçime sahiptir:
+`CRecordsetStatus` yapısı aşağıdaki biçimdedir:
 
 ```cpp
 struct CRecordsetStatus
@@ -954,15 +954,15 @@ struct CRecordsetStatus
 };
 ```
 
-İki üyesi `CRecordsetStatus` aşağıdaki anlamlara sahiptir:
+`CRecordsetStatus` iki üyesi aşağıdaki anlamlara sahiptir:
 
-- `m_lCurrentRecord` Geçerli kayıt kümesinde, sıfır tabanlı dizini biliniyorsa içerir. Dizin belirlenemiyorsa, bu üye AFX_CURRENT_RECORD_UNDEFINED-(2) içerir. Varsa `IsBOF` olduğu (boş bir kayıt kümesi veya önce ilk kaydı kaydırma denemesi), ardından TRUE `m_lCurrentRecord` AFX_CURRENT_RECORD_BOF (-1) için ayarlanır. İlk kayda, ardından bu 0 olarak ayarlanırsa, ikinci 1 kaydedin ve benzeri.
+- `m_lCurrentRecord`, bilinen kayıt kümesindeki geçerli kaydın sıfır tabanlı dizinini Içerir. Dizin saptanamıyor, bu üye AFX_CURRENT_RECORD_UNDEFINED (-2) içerir. `IsBOF` TRUE ise (boş kayıt kümesi veya ilk kayıttan önce kaydırmaya çalışırsanız), `m_lCurrentRecord` AFX_CURRENT_RECORD_BOF (-1) olarak ayarlanır. İlk kayıtta, 0, ikinci kayıt 1, vb. olarak ayarlanır.
 
-- `m_bRecordCountFinal` Toplam kayıt kümesindeki kayıt sayısı belirlendiğinde sıfır. Genellikle bu kayıt başlangıcında başlangıç ve çağırma gerçekleştirilmesi gereken `MoveNext` kadar `IsEOF` sıfır döndürür. Bu üye sıfırsa kayıt sayısı tarafından döndürülen `GetRecordCount`değil -1'dir, yalnızca "yüksek su işareti" sayısını kaydeder.
+- kayıt kümesindeki toplam kayıt sayısı belirleniyorsa sıfır dışında `m_bRecordCountFinal`. Genellikle bu, kayıt kümesinin başlangıcında başlayıp `IsEOF` sıfır dışında bir değer döndürülünceye kadar `MoveNext` yapılmalıdır. Bu üye sıfırsa, `GetRecordCount`tarafından döndürülen kayıt sayısı, yalnızca bir "yüksek su işareti" sayısı olarak ayarlanır.
 
-##  <a name="getsql"></a>  CRecordset::GetSQL
+##  <a name="getsql"></a>CRecordset:: GetSQL
 
-Açıldığında kayıt kümesinin kayıtları seçmek için kullanılan SQL durumunu almak için bu üye işlevini çağırın.
+Açıldığında kayıt kümesinin kayıtlarını seçmek için kullanılan SQL ifadesini almak için bu üye işlevi çağırın.
 
 ```
 const CString& GetSQL() const;
@@ -970,20 +970,20 @@ const CString& GetSQL() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-A **const** başvurusu bir `CString` SQL deyimini içeren.
+SQL ifadesini içeren `CString` bir **const** başvurusu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu, genellikle bir SQL olacaktır **seçin** deyimi. Tarafından döndürülen dize `GetSQL` salt okunur.
+Bu, genellikle bir SQL **Select** deyimidir. `GetSQL` tarafından döndürülen dize salt okunurdur.
 
-Tarafından döndürülen dize `GetSQL` kümenize için geçirilen herhangi bir dize genellikle farklı *lpszSQL* parametresi `Open` üye işlevi. Kayıt kümesi ne sizin için geçen dayalı tam bir SQL deyimi oluşturur olmasıdır `Open`, ClassWizard ne belirttiğiniz ile belirtilen `m_strFilter` ve `m_strSort` veri üyeleri ve sahip olabileceğiniz herhangi bir parametre Belirtilen. Kayıt kümesi bu SQL deyimi nasıl yapıları hakkında ayrıntılar için bkz. makaleyi [kayıt kümesi: Kayıtları seçme biçimi (ODBC) kayıtları nasıl](../../data/odbc/recordset-how-recordsets-select-records-odbc.md).
+`GetSQL` tarafından döndürülen dize, genel olarak, *lpszSQL* parametresindeki kayıt kümesine `Open` üye işlevine geçirilebileceğiniz herhangi bir dizeden farklıdır. Bunun nedeni, kayıt kümesinin `Open`ne geçirdiklerinizi, ClassWizard ile belirtdiklerinizi, `m_strFilter` ve `m_strSort` veri üyelerini ve belirttiğiniz tüm parametreleri temel alan tam bir SQL ifadesini oluşturduğundan. Kayıt kümesinin bu SQL ifadesini oluşturma hakkında ayrıntılı bilgi için kayıt [kümesi: kayıt kümeleri kayıtları seçme (ODBC)](../../data/odbc/recordset-how-recordsets-select-records-odbc.md)makalesine bakın.
 
 > [!NOTE]
->  Bu üye işlevi çağırdıktan sonra yalnızca çağrı [açık](#open).
+>  Bu üye işlevini yalnızca [Open](#open)çağrıldıktan sonra çağırın.
 
-##  <a name="gettablename"></a>  CRecordset::GetTableName
+##  <a name="gettablename"></a>CRecordset:: GetTableName
 
-Kayıt kümesinin sorgu temel SQL tablosunun adını alır.
+Kayıt kümesi sorgusunun temel aldığı SQL tablosunun adını alır.
 
 ```
 const CString& GetTableName() const;
@@ -991,18 +991,18 @@ const CString& GetTableName() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-A **const** başvurusu bir `CString` içeren tablo adı, kayıt varsa bağlı olarak bir tablo; Aksi takdirde boş bir dize.
+Kayıt kümesi bir tabloyu temel alıyorsa tablo adını içeren `CString` bir **const** başvurusu; Aksi takdirde, boş bir dize.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`GetTableName` yalnızca bir tablo, bir birleşim değil birden fazla tablo ya da önceden tanımlanmış sorgu (saklı yordam) kayıt temel alıyorsa geçerlidir. Adı salt okunurdur.
+`GetTableName` yalnızca kayıt kümesi, birden fazla tablonun veya önceden tanımlanmış bir sorgunun (saklı yordam) JOIN değil bir tabloyu temel alıyorsa geçerlidir. Ad salt okunurdur.
 
 > [!NOTE]
->  Bu üye işlevi çağırdıktan sonra yalnızca çağrı [açık](#open).
+>  Bu üye işlevini yalnızca [Open](#open)çağrıldıktan sonra çağırın.
 
-##  <a name="isbof"></a>  CRecordset::IsBOF
+##  <a name="isbof"></a>CRecordset:: IsBOF
 
-İlk kayıttan önce kayıt üzere konumlandırmıştır sıfır olmayan döndürür. Geçerli kayıt yok.
+Kayıt kümesi ilk kayıttan önce konumlandırılmışsa sıfır dışında bir değer döndürür. Geçerli kayıt yok.
 
 ```
 BOOL IsBOF() const;
@@ -1010,23 +1010,23 @@ BOOL IsBOF() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kayıt kümesi kayıt içeriyorsa veya geriye doğru ilk kaydı önce kaydırılan sıfır; Aksi durumda 0.
+Kayıt kümesi kayıt içermiyorsa veya ilk kayıttan önce geriye doğru kaydırdıysanız sıfır dışı. Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kayıttan önce ilk kaydı kümesi ilerlemiş olup olmadığını öğrenmek için kayıt kaydırarak önce bu üye işlevini çağırın. Ayrıca `IsBOF` ile birlikte `IsEOF` kayıt herhangi bir kayıt içerip boş olup olmadığını belirlemek için. Çağırdıktan hemen sonra `Open`, kayıt, kayıt bulundurmuyorsa `IsBOF` sıfır döndürür. En az bir kaydına sahip bir kayıt kümesi açtığınızda, geçerli kaydın ilk kaydıdır ve `IsBOF` 0 döndürür.
+Kayıt kümesinin ilk kaydından önce ilerlemeyeceğinizi öğrenmek için kayıttan kayda geçmeden önce Bu üye işlevini çağırın. Kayıt kümesinin herhangi bir kayıt içerip içermediğini veya boş olduğunu anlamak için `IsEOF` ile birlikte `IsBOF` de kullanabilirsiniz. `Open`çağırdıktan hemen sonra, kayıt kümesi hiçbir kayıt içermiyorsa, `IsBOF` sıfır dışında bir değer döndürür. En az bir kaydı olan bir kayıt kümesini açtığınızda, ilk kayıt geçerli kayıttır ve `IsBOF` 0 döndürür.
 
-Geçerli kaydı ilk kaydı ise ve çağırmanızı `MovePrev`, `IsBOF` sonradan sıfır döndürür. Varsa `IsBOF` sıfır döndürür ve çağrı `MovePrev`, bir hata oluşur. Varsa `IsBOF` sıfır döndürür, geçerli kayıt tanımsız olur ve geçerli bir kayıt gerektiren herhangi bir eylem hataya neden.
+İlk kayıt geçerli kayıttır ve `MovePrev`çağırırsanız, `IsBOF` daha sonra sıfır dışında bir değer döndürür. `IsBOF` sıfır dışında bir değer döndürürse ve `MovePrev`çağırırsanız bir hata oluşur. `IsBOF` sıfır dışında bir değer döndürürse, geçerli kayıt tanımsızdır ve geçerli kayıt gerektiren herhangi bir eylem hataya neden olur.
 
 ### <a name="example"></a>Örnek
 
-Bu örnekte `IsBOF` ve `IsEOF` kodu her iki yönde de kayıt aracılığıyla kayarken bir kayıt kümesinin sınırlarını algılamak için.
+Bu örnek, kod kayıt kümesini her iki yönde de kaydığından, bir kayıt kümesinin sınırlarını algılamak için `IsBOF` ve `IsEOF` kullanır.
 
 [!code-cpp[NVC_MFCDatabase#25](../../mfc/codesnippet/cpp/crecordset-class_9.cpp)]
 
-##  <a name="isdeleted"></a>  CRecordset::IsDeleted
+##  <a name="isdeleted"></a>CRecordset:: IsDeleted
 
-Geçerli kaydı silinmiş olup olmadığını belirler.
+Geçerli kaydın silinip silinmediğini belirler.
 
 ```
 BOOL IsDeleted() const;
@@ -1034,22 +1034,22 @@ BOOL IsDeleted() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kayıt kümesi silinmiş bir kayda konumlandırıldı olursa sıfır dışı; Aksi durumda 0.
+Kayıt kümesi silinmiş bir kayıtta konumlandırılmışsa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir kayda kaydırırsanız ve `IsDeleted` doğru (sıfırdan farklı) döndürür ve herhangi bir kayıt işlemi gerçekleştirmek için önce başka bir kayıtla kaydırın.
+Bir kayda kayırsanız ve `IsDeleted` TRUE (sıfır dışında) döndürürse, başka bir kayıt kümesi işlemini gerçekleştirebilmek için önce başka bir kayda kaydırmanız gerekir.
 
-Sonucu `IsDeleted` belirttiğiniz olmadığını kümenizin güncelleştirilebilir, olup olmadığını, kayıt kümesi türü gibi birçok faktöre bağlıdır `CRecordset::skipDeletedRecords` , sürücü paketleri kayıtları silinen olmadığını kayıt açıldığında olup olmadığına dair seçeneği birden çok kullanıcı.
+`IsDeleted` sonucu, kayıt kümeniz, kayıt kümenizin güncelleştirilebilir olup olmadığını, kayıt kümeniz açıldığında `CRecordset::skipDeletedRecords` seçeneğini belirtdiğinize bakılmaksızın, Sürücü paketlerinizin kayıtları sildiği ve birden çok olup olmadığı gibi birçok etkene bağlıdır. kullanıcılarına.
 
-Hakkında daha fazla bilgi için `CRecordset::skipDeletedRecords` ve paketleme, sürücü [açık](#open) üye işlevi.
+`CRecordset::skipDeletedRecords` ve sürücü paketleme hakkında daha fazla bilgi için, [Açık](#open) üye işlevine bakın.
 
 > [!NOTE]
->  Toplu satır getirme uyguladıysanız değil, çağırmalıdır `IsDeleted`. Bunun yerine çağrı [GetRowStatus](#getrowstatus) üye işlevi. Toplu satır getirme hakkında daha fazla bilgi için bkz [kayıt kümesi: Kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
+>  Toplu satır getirme uyguladıysanız `IsDeleted`çağırmamalıdır. Bunun yerine [GetRowStatus](#getrowstatus) member işlevini çağırın. Toplu satır getirme hakkında daha fazla bilgi için bkz. kayıt [kümesi: kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
 
-##  <a name="iseof"></a>  CRecordset::IsEOF
+##  <a name="iseof"></a>CRecordset:: IsEOF
 
-Son kayıttan sonra kayıt üzere konumlandırmıştır, sıfır döndürür. Geçerli kayıt yok.
+Kayıt kümesi son kayıttan sonra konumlandırılmışsa sıfır dışında bir değer döndürür. Geçerli kayıt yok.
 
 ```
 BOOL IsEOF() const;
@@ -1057,21 +1057,21 @@ BOOL IsEOF() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kayıt kümesi kayıt içeriyorsa veya en son kaydını kaydırırsanız sıfır; Aksi durumda 0.
+Kayıt kümesi hiçbir kayıt içermiyorsa veya son kaydın ötesine kaydırdıysanız sıfır dışında; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kayıt kümesi en son kaydını ilerlemiş olup olmadığını öğrenmek için kayda kaydından gezinirken bu üye işlevini çağırın. Ayrıca `IsEOF` kayıt herhangi bir kayıt içerip boş olup olmadığını belirlemek için. Çağırdıktan hemen sonra `Open`, kayıt, kayıt bulundurmuyorsa `IsEOF` sıfır döndürür. En az bir kaydına sahip bir kayıt kümesi açtığınızda, geçerli kaydın ilk kaydıdır ve `IsEOF` 0 döndürür.
+Kayıt kümesinin son kaydını aşıp geçmeyeceğinizi öğrenmek için kayıttan kayda gittiğinden bu üye işlevi çağırın. Kayıt kümesinin herhangi bir kayıt içerip içermediğini veya boş olduğunu anlamak için `IsEOF` de kullanabilirsiniz. `Open`çağırdıktan hemen sonra, kayıt kümesi hiçbir kayıt içermiyorsa, `IsEOF` sıfır dışında bir değer döndürür. En az bir kaydı olan bir kayıt kümesini açtığınızda, ilk kayıt geçerli kayıttır ve `IsEOF` 0 döndürür.
 
-Son kayda çağırdığınızda geçerli kayıt olup olmadığını `MoveNext`, `IsEOF` sonradan sıfır döndürür. Varsa `IsEOF` sıfır döndürür ve çağrı `MoveNext`, bir hata oluşur. Varsa `IsEOF` sıfır döndürür, geçerli kayıt tanımsız olur ve geçerli bir kayıt gerektiren herhangi bir eylem hataya neden.
+`MoveNext`çağırdığınızda son kayıt geçerli kayıt ise, `IsEOF` daha sonra sıfır dışında bir değer döndürür. `IsEOF` sıfır dışında bir değer döndürürse ve `MoveNext`çağırırsanız bir hata oluşur. `IsEOF` sıfır dışında bir değer döndürürse, geçerli kayıt tanımsızdır ve geçerli kayıt gerektiren herhangi bir eylem hataya neden olur.
 
 ### <a name="example"></a>Örnek
 
-Örneğin bakın [IsBOF](#isbof).
+[IsBOF](#isbof)örneğine bakın.
 
-##  <a name="isfielddirty"></a>  CRecordset::IsFieldDirty
+##  <a name="isfielddirty"></a>CRecordset:: IsFieldDirty
 
-Belirtilen alan veri üyesi bu yana değiştirilip değiştirilmediğini belirler [Düzenle](#edit) veya [AddNew](#addnew) çağrıldı.
+[Düzenleme](#edit) veya [AddNew](#addnew) çağrıldıktan sonra belirtilen alan veri üyesinin değiştirilip değiştirilmediğini belirler.
 
 ```
 BOOL IsFieldDirty(void* pv);
@@ -1079,29 +1079,29 @@ BOOL IsFieldDirty(void* pv);
 
 ### <a name="parameters"></a>Parametreler
 
-*BD*<br/>
-Durumu denetlemek veya herhangi bir alanı olumsuz olup olmadığını belirlemek için boş istediğiniz alanın veri üyesi için bir işaretçi.
+*bakın*<br/>
+Durumu denetlemek istediğiniz alan verisi üyesine yönelik bir işaretçi veya alanlardan birinin kirli olup olmadığını belirleme NULL.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen alan veri üyesi arama bu yana değişmişse sıfır olmayan `AddNew` veya `Edit`; Aksi durumda 0.
+`AddNew` veya `Edit`çağrıldıktan sonra belirtilen alan veri üyesi değiştiyse sıfır dışında; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yapılan bir çağrıyla geçerli kayıt güncelleştirildiğinde tüm kirli alan veri üyeleri verileri kaydı veri kaynağında aktarılır [güncelleştirme](#update) üye işlevinin `CRecordset` (çağrıyı izleyen `Edit` veya `AddNew`).
+Geçerli kayıt, `CRecordset` [Update](#update) üye işlevine yapılan bir çağrı (`Edit` veya `AddNew`çağrısı sonrasında) ile güncelleştirildiği zaman, tüm kirli alan verileri üyelerinde veri kaynağındaki kayda aktarılır.
 
 > [!NOTE]
->  Bu üye işlevi toplu satır getirme kullanarak kümelerinde geçerli değildir. Toplu satır getirme, ardından uyguladıysanız `IsFieldDirty` başarısız bir onaylama işlemi neden olur ve her zaman FALSE döndürür. Toplu satır getirme hakkında daha fazla bilgi için bkz [kayıt kümesi: Kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
+>  Bu üye işlevi, toplu satır getirme kullanan kayıt kümelerinde uygulanabilir değildir. Toplu satır getirmeyi uyguladıysanız `IsFieldDirty` her zaman FALSE döndürür ve başarısız bir onaylama işlemine neden olur. Toplu satır getirme hakkında daha fazla bilgi için bkz. kayıt [kümesi: kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
 
-Çağırma `IsFieldDirty` çağrıları önceki etkilerini sıfırlar [SetFieldDirty](#setfielddirty) beri alanın kirli durumu yeniden değerlendirilir. İçinde `AddNew` durumda, güncel alan değerini sözde null değerinden farklı olması durumunda alan durumu ayarlanmış kirli. İçinde `Edit` alan değeri alan durumu kirli olarak ayarlayın daha sonra önbelleğe alınan değeri farklıysa, servis talebi.
+`IsFieldDirty` çağrısı, alanın kirli durumu yeniden değerlendirildiğinden, önceki çağrıların etkilerini [SetFieldDirty](#setfielddirty) olarak sıfırlayacaktır. `AddNew` durumda, geçerli alan değeri sözde null değerinden farklıysa, alan durumu kirli olarak ayarlanır. `Edit` durumda, alan değeri önbelleğe alınan değerden farklıysa, alan durumu kirli olarak ayarlanır.
 
-`IsFieldDirty` aracılığıyla uygulanır [DoFieldExchange](#dofieldexchange).
+`IsFieldDirty`, [DoFieldExchange](#dofieldexchange)aracılığıyla uygulanır.
 
-Kirli bayrağı hakkında daha fazla bilgi için bkz [kayıt kümesi: Kayıtları seçme biçimi (ODBC) kayıtları nasıl](../../data/odbc/recordset-how-recordsets-select-records-odbc.md).
+Kirli bayrağı hakkında daha fazla bilgi için [kayıt kümesi: kayıt kümeleri kayıtları seçme (ODBC)](../../data/odbc/recordset-how-recordsets-select-records-odbc.md)makalesine bakın.
 
-##  <a name="isfieldnull"></a>  CRecordset::IsFieldNull
+##  <a name="isfieldnull"></a>CRecordset:: IsFieldNull
 
-Geçerli kayıt belirtilen alan Null ise sıfır olmayan döndürür (değeri yok).
+Geçerli kayıttaki belirtilen alan null ise (değer yoksa) sıfır dışında bir değer döndürür.
 
 ```
 BOOL IsFieldNull(void* pv);
@@ -1109,25 +1109,25 @@ BOOL IsFieldNull(void* pv);
 
 ### <a name="parameters"></a>Parametreler
 
-*BD*<br/>
-Durumu denetlemek veya tüm alanları boş olup olmadığını belirlemek için boş istediğiniz alanın veri üyesi için bir işaretçi.
+*bakın*<br/>
+Durumu denetlemek istediğiniz alan verisi üyesine yönelik bir işaretçi veya alanlardan birinin null olup olmadığını belirleme NULL.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen alan veri üyesi Null olarak işaretlenen olursa sıfır dışı; Aksi durumda 0.
+Belirtilen alan verisi üyesi null olarak işaretlense sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir kayıt kümesi belirtilen alan veri üyesi Null olarak işaretlenmiş durumda olup olmadığını belirlemek için bu üye işlevini çağırın. (Veritabanı terminolojisinde Null "değer olan" anlamına gelir ve C++'ta NULL ile aynı değildir.) Alan veri üyesi Null olarak işaretlenmişse, kendisi için bir değer yoktur geçerli kaydın bir sütun olarak yorumlanır.
+Bir kayıt kümesinin belirtilen alan verisi üyesinin null olarak işaretlenip işaretlenmediğini öğrenmek için bu üye işlevini çağırın. (Veritabanı terimlerinde null "değer yok" anlamına gelir ve içinde C++null ile aynı değildir.) Bir alan veri üyesine null olarak bayrak eklenmiş ise, geçerli kaydın değeri olmayan bir sütun olarak yorumlanır.
 
 > [!NOTE]
->  Bu üye işlevi toplu satır getirme kullanarak kümelerinde geçerli değildir. Toplu satır getirme, ardından uyguladıysanız `IsFieldNull` başarısız bir onaylama işlemi neden olur ve her zaman FALSE döndürür. Toplu satır getirme hakkında daha fazla bilgi için bkz [kayıt kümesi: Kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
+>  Bu üye işlevi, toplu satır getirme kullanan kayıt kümelerinde uygulanabilir değildir. Toplu satır getirmeyi uyguladıysanız `IsFieldNull` her zaman FALSE döndürür ve başarısız bir onaylama işlemine neden olur. Toplu satır getirme hakkında daha fazla bilgi için bkz. kayıt [kümesi: kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
 
-`IsFieldNull` aracılığıyla uygulanır [DoFieldExchange](#dofieldexchange).
+`IsFieldNull`, [DoFieldExchange](#dofieldexchange)aracılığıyla uygulanır.
 
-##  <a name="isfieldnullable"></a>  CRecordset::IsFieldNullable
+##  <a name="isfieldnullable"></a>CRecordset:: Isfieldnullenebilir
 
-(Hiçbir değer yok), geçerli kayıtta belirtilen alan Null olarak ayarlanabilir, sıfır döndürür.
+Geçerli kayıttaki belirtilen alan null (değer olmadan) olarak ayarlandıysa sıfır dışında bir değer döndürür.
 
 ```
 BOOL IsFieldNullable(void* pv);
@@ -1135,35 +1135,35 @@ BOOL IsFieldNullable(void* pv);
 
 ### <a name="parameters"></a>Parametreler
 
-*BD*<br/>
-Durumu denetlemek veya alanlar için Null değer ayarlanabilir, belirlemek için boş istediğiniz alanın veri üyesi için bir işaretçi.
+*bakın*<br/>
+Durumu denetlemek istediğiniz alan verisi üyesine yönelik bir işaretçi veya alanlardan birinin null değere ayarlanmadığını belirleme NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Belirtilen alan veri üyesi "NULL" olup olmadığını belirlemek için (bir Null değer; olabilir, bu üye işlevini çağırın C++ NULL değil diğer bir deyişle, Veritabanı terminolojisinde, Null, aynı "değeri olan").
+Belirtilen alan verisi üyesinin "Nullable" olup olmadığını ve null değere ayarlanamayacağını öğrenmek için bu üye işlevi çağırın; C++ Null, Veritabanı terminolojisinde "hiçbir değer yok" anlamına gelen null ile aynı değildir.
 
 > [!NOTE]
->  Toplu satır getirme uyguladıysanız çağıramazsınız `IsFieldNullable`. Bunun yerine çağrı [GetODBCFieldInfo](#getodbcfieldinfo) alana Null değerine ayarlanmış olup olmadığını belirlemek için üye işlevi. Her zaman çağırabilirsiniz Not `GetODBCFieldInfo`olup toplu satır getirme uyguladıysanız bakılmaksızın. Toplu satır getirme hakkında daha fazla bilgi için bkz [kayıt kümesi: Kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
+>  Toplu satır getirme uyguladıysanız `IsFieldNullable`çağıramaz. Bunun yerine, bir alanın null değere ayarlanamayacağını öğrenmek için [GetODBCFieldInfo](#getodbcfieldinfo) üye işlevini çağırın. Toplu satır getirme uygulanıp uygulanmadığı bağımsız olarak `GetODBCFieldInfo`her zaman çağırabileceğinizi unutmayın. Toplu satır getirme hakkında daha fazla bilgi için bkz. kayıt [kümesi: kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
 
-Bir alan boş olamaz, bir değere sahip olmalıdır. Böyle bir alana eklerken veya bir kaydı güncelleştirme Null olarak ayarlamak çalışırsanız, veri kaynağı ekleme veya güncelleştirme, reddeder ve [güncelleştirme](#update) bir özel durum oluşturur. Çağırdığınızda özel durum oluşur `Update`, arama yaparken [SetFieldNull](#setfieldnull).
+Null olmayan bir alan bir değere sahip olmalıdır. Bir kaydı eklerken veya güncelleştirirken bu tür bir alanı null olarak ayarlamaya çalışırsanız, veri kaynağı ekleme veya güncelleştirmeyi reddeder ve [güncelleştirme](#update) bir özel durum oluşturur. Özel durum, [SetFieldNull](#setfieldnull)' ı çağırdığınızda değil `Update`çağırdığınızda oluşur.
 
-İşlevinin ilk bağımsız değişkeni yalnızca işlev geçerlidir NULL kullanarak `outputColumn` alanları değil `param` alanları. Örneğin, çağrı
+İşlevin ilk bağımsız değişkeni için NULL kullanmak, işlevi `param` alanlara değil yalnızca `outputColumn` alanlara uygular. Örneğin, çağrı
 
 [!code-cpp[NVC_MFCDatabase#26](../../mfc/codesnippet/cpp/crecordset-class_10.cpp)]
 
-yalnızca ayarlar `outputColumn` null; alanlar `param` alanları etkilenmez.
+yalnızca `outputColumn` alanlarını NULL olarak ayarlar; `param` alanlar etkilenmeyecektir.
 
-Üzerinde çalışılacak `param` alanları, ayrı ayrı gerçek adresi sağlamanız gerekir `param` gibi çalışmak istediğiniz:
+`param` alanlarla çalışmak için, üzerinde çalışmak istediğiniz bireysel `param` gerçek adresini sağlamanız gerekir, örneğin:
 
 [!code-cpp[NVC_MFCDatabase#27](../../mfc/codesnippet/cpp/crecordset-class_11.cpp)]
 
-Yani tüm ayarlayamıyor `param` ile yapabildiğiniz gibi alanları NULL olarak `outputColumn` alanları.
+Bu, `outputColumn` alanları ile yaptığınız gibi tüm `param` alanlarını NULL olarak ayarlayamayacağı anlamına gelir.
 
-`IsFieldNullable` aracılığıyla uygulanır [DoFieldExchange](#dofieldexchange).
+`IsFieldNullable`, [DoFieldExchange](#dofieldexchange)aracılığıyla uygulanır.
 
-##  <a name="isopen"></a>  CRecordset::IsOpen
+##  <a name="isopen"></a>CRecordset:: IsOpen
 
-Kayıt kümesi zaten açık olup olmadığını belirler.
+Kayıt kümesinin zaten açık olup olmadığını belirler.
 
 ```
 BOOL IsOpen() const;
@@ -1171,112 +1171,112 @@ BOOL IsOpen() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ancak kayıt kümesi nesnesinin [açık](#open) veya [Requery](#requery) üye işlev önceden çağrıldıktan ve kayıt kapalı değil; Aksi durumda 0.
+Kayıt kümesi nesnesinin [Open](#open) veya [Requery](#requery) üye işlevi daha önce çağrılırsa ve kayıt kümesi kapanmamış ise sıfır dışı. Aksi takdirde 0.
 
-##  <a name="m_hstmt"></a>  CRecordset::m_hstmt
+##  <a name="m_hstmt"></a>CRecordset:: m_hstmt
 
-Kayıt kümesi ile ilişkili tür HSTMT, ODBC deyimi veri yapısı için bir tanıtıcı içerir.
-
-### <a name="remarks"></a>Açıklamalar
-
-Her sorgu bir ODBC veri kaynağı için bir HSTMT ile ilişkilidir.
-
-> [!CAUTION]
->  Kullanmayın `m_hstmt` önce [açık](#open) çağrıldı.
-
-Normalde HSTMT doğrudan erişimi gerekmez, ancak doğrudan SQL deyimlerini yürütme için gerekebilir. `ExecuteSQL` Sınıfının üye işlevinde `CDatabase` kullanarak bir örnek sağlar `m_hstmt`.
-
-##  <a name="m_nfields"></a>  CRecordset::m_nFields
-
-Alan veri üyeleri kayıt kümesi sınıfında sayısını içerir. diğer bir deyişle, veri kaynağından kayıt tarafından seçilen sütunların sayısı.
+Kayıt kümesiyle ilişkili olan HSTMT türündeki ODBC deyim veri yapısına yönelik bir tanıtıcı içerir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kayıt kümesi sınıfı için oluşturucu başlatmalıdır `m_nFields` doğru numarasına sahip. Toplu satır getirme uygulanmadı, ClassWizard kayıt sınıfınıza bildirmek için kullanırken bu başlatmayı sizin için yazar. Ayrıca, el ile yazabilirsiniz.
-
-Framework, alan veri üyeleri geçerli kaydın veri kaynağında karşılık gelen sütunlara arasındaki etkileşimi yönetmek için bu sayıyı kullanır.
+ODBC veri kaynağına yapılan her sorgu, HSTMT ile ilişkilendirilir.
 
 > [!CAUTION]
->  Bu sayı "çıkış sütunları kayıtlı" sayısına karşılık gelmelidir `DoFieldExchange` veya `DoBulkFieldExchange` çağrısı yapıldıktan sonra [SetFieldType](../../mfc/reference/cfieldexchange-class.md#setfieldtype) parametresiyle `CFieldExchange::outputColumn`.
+>  [Open](#open) çağrılmadan önce `m_hstmt` kullanmayın.
 
-Sütunları makalesinde açıklandığı gibi dinamik olarak bağlama "kayıt kümesi: Dinamik olarak bağlama veri sütunlarını." Bunu yaparsanız, sayı artırmalıdır `m_nFields` RFX veya Bulk RFX işlev sayısı çağrıları yansıtacak şekilde, `DoFieldExchange` veya `DoBulkFieldExchange` dinamik olarak bağlı sütun için üye işlevi.
+Normalde HSTMT 'ye doğrudan erişmeniz gerekmez, ancak SQL deyimlerinin doğrudan yürütülmesi için buna ihtiyacınız olabilir. `CDatabase` sınıfının `ExecuteSQL` üye işlevi `m_hstmt`kullanma örneği sağlar.
 
-Daha fazla bilgi için makalelere bakın [kayıt kümesi: (ODBC) veri sütunlarını dinamik olarak bağlama](../../data/odbc/recordset-dynamically-binding-data-columns-odbc.md) ve [kayıt kümesi: Kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
+##  <a name="m_nfields"></a>CRecordset:: m_nFields
+
+Kayıt kümesi sınıfındaki alan veri üyelerinin sayısını içerir; diğer bir deyişle, veri kaynağından kayıt kümesi tarafından seçilen sütun sayısıdır.
+
+### <a name="remarks"></a>Açıklamalar
+
+Kayıt kümesi sınıfının Oluşturucusu doğru sayıda `m_nFields` başlatmalıdır. Toplu satır getirmeyi uygulamadıysanız, ClassWizard, kayıt kümesi sınıfınızı bildirmek için kullandığınızda bu başlatmayı sizin için yazar. Ayrıca, el ile de yazabilirsiniz.
+
+Framework, alan veri üyeleri ile veri kaynağındaki geçerli kaydın ilgili sütunları arasındaki etkileşimi yönetmek için bu numarayı kullanır.
+
+> [!CAUTION]
+>  Bu sayı, `DoFieldExchange` kayıtlı olan "çıkış sütunları" sayısına veya `CFieldExchange::outputColumn`parametresiyle [SETbir](../../mfc/reference/cfieldexchange-class.md#setfieldtype) çağrısından sonra `DoBulkFieldExchange` karşılık gelmelidir.
+
+"Kayıt kümesi: dinamik olarak veri sütunlarını bağlama" makalesinde açıklandığı gibi sütunları dinamik olarak bağlayabilirsiniz. Bunu yaparsanız, dinamik olarak bağlı sütunlar için `DoFieldExchange` veya `DoBulkFieldExchange` üye işlevinizdeki RFX veya toplu RFX işlev çağrılarının sayısını yansıtmak üzere `m_nFields` sayısını artırmanız gerekir.
+
+Daha fazla bilgi için bkz. Makaleler [kayıt kümesi: dinamik olarak bağlama veri sütunları (ODBC)](../../data/odbc/recordset-dynamically-binding-data-columns-odbc.md) ve [kayıt kümesi: kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
 
 ### <a name="example"></a>Örnek
 
-Makaleye göz atın [kayıt alanı değişimi: RFX kullanma](../../data/odbc/record-field-exchange-using-rfx.md).
+[Kayıt alanı değişimi: RFX kullanma](../../data/odbc/record-field-exchange-using-rfx.md)makalesine bakın.
 
-##  <a name="m_nparams"></a>  CRecordset::m_nParams
+##  <a name="m_nparams"></a>CRecordset:: m_nParams
 
-Kayıt kümesi sınıfı parametre veri üyeleri sayısını içerir. diğer bir deyişle, parametrelerin sayısı kayıt kümesinin sorgusuyla geçirildi.
+Kayıt kümesi sınıfındaki parametre veri üyelerinin sayısını içerir; diğer bir deyişle, kayıt kümesinin sorgusuyla geçilen parametre sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kayıt kümesi sınıfınızın herhangi bir parametre veri üyesi varsa, sınıfın oluşturucusunda başlatmanız gerekir `m_nParams` doğru numarasına sahip. Değerini `m_nParams` varsayılan ayar: 0. (El ile yapmanız gerekir) parametre veri üyeleri eklerseniz, parametre sayısını yansıtacak şekilde sınıfı oluşturucusunda bir başlatma el ile eklemelisiniz (en az sayıda kadar büyük olması gereken '' içindeki yer tutucuları, `m_strFilter` veya `m_strSort`dize).
+Kayıt kümesi sınıfınızın herhangi bir parametre veri üyesi varsa, sınıfın oluşturucusunun doğru sayıyla `m_nParams` başlatması gerekir. `m_nParams` değeri varsayılan olarak 0 ' dır. Parametre veri üyelerini (el ile yapmanız gereken) eklerseniz, parametre sayısını yansıtmak için sınıf oluşturucusunda bir başlatma da eklemeniz gerekir (en azından, `m_strFilter` veya `m_strSort` ' ' yer tutucuları sayısı kadar büyük olması gerekir) dize).
 
-Framework kümesinin sorgu parametreleştiren bu sayıyı kullanır.
+Çerçeve, kayıt kümesinin sorgusunu parametrelendirtiğinde bu numarayı kullanır.
 
 > [!CAUTION]
->  Bu sayı "kaydedilmiş params" sayısına karşılık gelmelidir `DoFieldExchange` veya `DoBulkFieldExchange` çağrısı yapıldıktan sonra [SetFieldType](../../mfc/reference/cfieldexchange-class.md#setfieldtype) parametre değerini `CFieldExchange::inputParam`, `CFieldExchange::param`, `CFieldExchange::outputParam`, veya `CFieldExchange::inoutParam`.
+>  Bu sayı, `DoFieldExchange` kayıtlı olan "params" sayısına veya `CFieldExchange::inputParam`, `CFieldExchange::param`, `CFieldExchange::outputParam`veya `CFieldExchange::inoutParam`parametre değeriyle [SETbir](../../mfc/reference/cfieldexchange-class.md#setfieldtype) çağrısından sonra `DoBulkFieldExchange` karşılık gelmelidir.
 
 ### <a name="example"></a>Örnek
 
-  Makalelerine bakın [kayıt kümesi: (ODBC) bir kayıt kümesini parametreleştirme](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md) ve [kayıt alanı değişimi: RFX kullanma](../../data/odbc/record-field-exchange-using-rfx.md).
+  Bkz. Makaleler [kayıt kümesi: bir kayıt kümesini Parametreleme (ODBC)](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md) ve [kayıt alanı değişimi: RFX kullanma](../../data/odbc/record-field-exchange-using-rfx.md).
 
-##  <a name="m_pdatabase"></a>  CRecordset::m_pDatabase
+##  <a name="m_pdatabase"></a>CRecordset:: m_pDatabase
 
-Bir işaretçi içeren `CDatabase` üzerinden kayıt bir veri kaynağına bağlıysa nesne.
-
-### <a name="remarks"></a>Açıklamalar
-
-Bu değişken, iki şekilde ayarlanır. Genellikle, bir işaretçi bir zaten bağlı geçirdiğiniz `CDatabase` kayıt kümesi nesnesi oluştururken nesne. Bunun yerine, NULL geçirirseniz `CRecordset` oluşturur bir `CDatabase` sizin için nesne ve bağlar. Her iki durumda da `CRecordset` işaretçiyi bu değişkeninde depolar.
-
-Normalde, doğrudan depolanmış işaretçiyi kullanın gerekmez `m_pDatabase`. Kendi uzantılarınızı yazarsanız `CRecordset`, ancak işaretçi kullanmanız gerekebilir. Durum, örneğin, işaretçiyi kendi ihtiyacınız olabilecek `CDBException`s. Ya da aynı şey istiyorsanız buna ihtiyaç duyabilirsiniz `CDatabase` çalıştıran ayarı zaman aşımları, işlem veya arama gibi nesne `ExecuteSQL` sınıfının üye işlevinde `CDatabase` doğrudan SQL deyimlerini yürütmek için.
-
-##  <a name="m_strfilter"></a>  CRecordset::m_strFilter
-
-Kayıt kümesi nesnesi oluşturduktan sonra ancak çağırmadan önce kendi `Open` üye işlev, bu veri üyesi depolamak için kullanmak bir `CString` içeren bir SQL **burada** yan tümcesi.
+Kayıt kümesinin bir veri kaynağına bağlı olduğu `CDatabase` nesnesine yönelik bir işaretçi içerir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kayıt sırasında seçtiği kayıtları sınırlamak (veya filtrelemek için) bu dizeyi kullanır `Open` veya `Requery` çağırın. Kayıtların, "California'da bağlı tüm satış temsilcisi" gibi bir alt kümesini seçmek için kullanışlıdır ("durumu CA ="). ODBC SQL söz dizimi bir **burada** yan tümcesi
+Bu değişken iki şekilde ayarlanır. Genellikle, kayıt kümesi nesnesini oluştururken zaten bağlı olan `CDatabase` nesnesine bir işaretçi geçirirsiniz. Bunun yerine NULL geçirirseniz `CRecordset`, sizin için bir `CDatabase` nesnesi oluşturur ve bunu bağlar. Her iki durumda da, `CRecordset` işaretçiyi Bu değişkende depolar.
+
+Normalde, `m_pDatabase`' de depolanan işaretçiyi doğrudan kullanmanız gerekmez. `CRecordset`için kendi uzantılarınızı yazarsanız, işaretçiyi kullanmanız gerekebilir. Örneğin, kendi `CDBException`s oluşturduysanız işaretçiye ihtiyacınız vardır. Ya da işlem çalıştırma, zaman aşımlarını ayarlama ya da SQL deyimlerini doğrudan yürütmek için `CDatabase` sınıfının `ExecuteSQL` member işlevini çağırma gibi aynı `CDatabase` nesnesini kullanarak bir şey yapmanız gerekiyorsa, buna ihtiyacınız olabilir.
+
+##  <a name="m_strfilter"></a>CRecordset:: m_strFilter
+
+Kayıt kümesi nesnesini oluşturduktan sonra, ancak `Open` üye işlevini çağırmadan önce, bir SQL **WHERE** yan tümcesi içeren bir `CString` depolamak için bu veri üyesini kullanın.
+
+### <a name="remarks"></a>Açıklamalar
+
+Kayıt kümesi, `Open` veya `Requery` çağrısı sırasında seçtiği kayıtları kısıtlamak (veya filtrelemek) için bu dizeyi kullanır. Bu, bir kayıt alt kümesini seçmek için yararlıdır, örneğin "California 'yı temel alarak tüm saleskişileriniz" ("State = CA"). **WHERE** yan TÜMCESI IÇIN ODBC SQL söz dizimi
 
 `WHERE search-condition`
 
-Dahil etmezseniz Not **burada** anahtar sözcük, dize. Framework, sağlar.
+Dizeniz **WHERE** anahtar sözcüğünü eklemeyin. Framework bunu sağlar.
 
-Yerleştirerek, filtre dizesi parametreleştirebilirsiniz '' sınıfınıza parametre veri üyesi için her bir yer tutucu bildirme ve parametreleri kayıt kümesine geçirme yer tutucuları, çalışma zamanında. Bu, çalışma zamanında bir filtre oluşturmak sağlar. Daha fazla bilgi için bkz [kayıt kümesi: (ODBC) bir kayıt kümesini parametreleştirme](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md).
+Ayrıca, içinde ' ' yer tutucuları yerleştirerek, her yer tutucu için sınıfınıza bir parametre veri üyesi bildirerek ve çalışma zamanında parametreleri kayıt kümesine geçirerek filtre dizenizi parametreleştirebilirsiniz. Bu, çalışma zamanında filtreyi oluşturmanıza olanak sağlar. Daha fazla bilgi için bkz. kayıt kümesi [: bir kayıt kümesini parametrize (ODBC)](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md).
 
-SQL hakkında daha fazla bilgi için **burada** yan tümceleri, başlıklı makaleye bakın [SQL](../../data/odbc/sql.md). Seçme ve kayıtları filtreleme hakkında daha fazla bilgi için bkz [kayıt kümesi: Kayıtları filtreleme (ODBC)](../../data/odbc/recordset-filtering-records-odbc.md).
+SQL **WHERE** yan tümceleri hakkında daha fazla bilgi için [SQL](../../data/odbc/sql.md)makalesine bakın. Kayıtları seçme ve filtreleme hakkında daha fazla bilgi için bkz. kayıt [kümesi: kayıtları filtreleme (ODBC)](../../data/odbc/recordset-filtering-records-odbc.md).
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDatabase#30](../../mfc/codesnippet/cpp/crecordset-class_12.cpp)]
 
-##  <a name="m_strsort"></a>  CRecordset::m_strSort
+##  <a name="m_strsort"></a>CRecordset:: m_strSort
 
-Kayıt kümesi nesnesi oluşturduktan sonra ancak çağırmadan önce kendi `Open` üye işlev, bu veri üyesi depolamak için kullanmak bir `CString` içeren bir SQL **ORDER BY** yan tümcesi.
+Kayıt kümesi nesnesini oluşturduktan sonra, ancak `Open` üye işlevini çağırmadan önce, SQL **order by** yan tümcesini içeren bir `CString` depolamak için bu veri üyesini kullanın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kayıt sırasında seçtiği kayıtları sıralamak için bu dizeyi kullanır. `Open` veya `Requery` çağırın. Bir kayıt kümesi bir veya daha fazla sütunlarda sıralamak için bu özelliği kullanabilirsiniz. ODBC SQL söz dizimi bir **ORDER BY** yan tümcesi
+Kayıt kümesi bu dizeyi, `Open` veya `Requery` çağrısı sırasında seçtiği kayıtları sıralamak için kullanır. Bu özelliği, bir veya daha fazla sütunda bir kayıt kümesini sıralamak için kullanabilirsiniz. **Order by** yan TÜMCESININ ODBC SQL söz dizimi
 
 `ORDER BY sort-specification [, sort-specification]...`
 
-Burada bir sıralama belirtimi bir tamsayı ya da bir sütun adı ' dir. Artan veya azalan sıralama (order varsayılan olarak artan) sıralama dizedeki sütun listesi için "ASC" veya "DESC" ekleyerek de belirtebilirsiniz. Seçilen kayıtları ilk tarafından saniye vb. sonra listelenen ilk sütuna göre sıralanır. Örneğin, "Müşteri" kayıt, Soyadı, daha sonra ad sipariş. Listelemek sütun sayısı, veri kaynağına bağlıdır. Daha fazla bilgi için Windows SDK'sı bakın.
+sıralama belirtiminin tamsayı veya sütun adı olduğu yerdir. Ayrıca sıralama dizesindeki sütun listesine "ASC" veya "DESC" ekleyerek artan veya azalan sıra (varsayılan olarak sıralama) belirtebilirsiniz. Seçilen kayıtlar önce listelenen ilk sütundan, sonra ikincisine göre sıralanır ve bu şekilde devam eder. Örneğin, bir "Customers" kayıt kümesini soyadı, sonra adı olarak sipariş edebilirsiniz. Listeleyebilir sütun sayısı veri kaynağına bağlıdır. Daha fazla bilgi için Windows SDK bakın.
 
-Dahil etmezseniz Not **ORDER BY** anahtar sözcük, dize. Framework, sağlar.
+Dizeniz **Için order by** anahtar sözcüğünü dahil mayacağınızı unutmayın. Framework bunu sağlar.
 
-SQL yan tümceleri hakkında daha fazla bilgi için bkz [SQL](../../data/odbc/sql.md). Kayıtları sıralama hakkında daha fazla bilgi için bkz [kayıt kümesi: Kayıtları sıralama (ODBC)](../../data/odbc/recordset-sorting-records-odbc.md).
+SQL yan tümceleri hakkında daha fazla bilgi için [SQL](../../data/odbc/sql.md)makalesine bakın. Kayıtları sıralama hakkında daha fazla bilgi için bkz. kayıt [kümesi: kayıtları sıralama (ODBC)](../../data/odbc/recordset-sorting-records-odbc.md).
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDatabase#31](../../mfc/codesnippet/cpp/crecordset-class_13.cpp)]
 
-##  <a name="move"></a>  CRecordset::Move
+##  <a name="move"></a>CRecordset:: Move
 
-Kayıt kümesi, öne veya arkaya geçerli kayıt işaretçinin taşır.
+Kayıt kümesi içindeki geçerli kayıt işaretçisini ileri veya geri kaydırır.
 
 ```
 virtual void Move(
@@ -1286,56 +1286,56 @@ virtual void Move(
 
 ### <a name="parameters"></a>Parametreler
 
-*nRows*<br/>
-İleriye veya geriye doğru gitme satırların sayısı. Pozitif değerlere, kayıt kümesinin sonuna doğru ileriye taşıyın. Negatif değerler başına doğru geriye doğru taşıyın.
+*nsatırlar*<br/>
+İleri veya geri taşınacak satır sayısı. Pozitif değerler, kayıt kümesinin sonuna doğru ileri doğru taşınır. Negatif değerler geriye doğru, başlangıca taşınır.
 
 *wFetchType*<br/>
-Satır kümesi belirler, `Move` getirir. Ayrıntılar için açıklamalara bakın.
+`Move` getirecek satır kümesini belirler. Ayrıntılar için bkz. açıklamalar.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İçin 0 değeri geçirirseniz *nRows*, `Move` ; geçerli kaydı yeniler `Move` herhangi bir geçerli sona erecek `AddNew` veya `Edit` modunda ve önceki değer geçerli kaydın geri `AddNew` veya `Edit` çağrıldı.
+*Nrows*için 0 değerini geçirirseniz, `Move` geçerli kaydı yeniler; `Move` geçerli `AddNew` veya `Edit` modundan sona acaktır ve `AddNew` veya `Edit` çağrılmadan önce geçerli kaydın değerini geri yükler.
 
 > [!NOTE]
->  Bir kayıt kümesi taşıdığınızda, silinen kayıtlar atlayamazsınız. Bkz: [CRecordset::IsDeleted](#isdeleted) daha fazla bilgi için. Açtığınızda bir `CRecordset` ile `skipDeletedRecords` seçenek kümesi, `Move` , onaylar *nRows* 0 parametredir. Bu davranış, yenileme aynı verileri kullanarak diğer istemci uygulamalar tarafından silinen satır engeller. Bkz: *dwOption* parametresinde [açık](#open) açıklamasını `skipDeletedRecords`.
+>  Bir kayıt kümesi içinde geçiş yaptığınızda, silinen kayıtları atlayamazsınız. Daha fazla bilgi için bkz. [CRecordset:: IsDeleted](#isdeleted) . `skipDeletedRecords` seçenek kümesi ile bir `CRecordset` açtığınızda, *nrows* parametresinin 0 olması durumunda `Move` onaylar. Bu davranış, aynı verileri kullanan diğer istemci uygulamaları tarafından silinen satırların yenilenmesini önler. `skipDeletedRecords`açıklaması için bkz. *dwOption* parametresi [Açık](#open) .
 
-`Move` kayıt kümesi satır kümeleri tarafından yeniden konumlandırır. İçin değerlere göre *nRows* ve *wFetchType*, `Move` uygun satır kümesi getirir ve ardından söz konusu satır kümesinde ilk kaydı geçerli kayıt yapar. Toplu satır getirme uyguladıysanız değil, satır boyutu her zaman 1 olur. Bir satır kümesi getirilirken `Move` doğrudan çağıran [CheckRowsetError](#checkrowseterror) getirme kaynaklanan hataları işlemek için üye işlevi.
+`Move` kayıt kümelerini satır kümelerine göre konumlandırır. *Nrows* ve *wFetchType*değerlerini temel alarak, `Move` uygun satır kümesini getirir ve sonra o satır kümesindeki ilk kaydı geçerli kayıt yapar. Toplu satır getirmeyi gerçekleştirdiyseniz, satır kümesi boyutu her zaman 1 ' dir. Bir satır kümesi getirilirken, `Move` doğrudan [CheckRowsetError](#checkrowseterror) üye işlevini çağırarak, getirme işleminden kaynaklanan hataları işler.
 
-Geçirdiğiniz, değerleri bağlı olarak `Move` diğer eşdeğerdir `CRecordset` üye işlevleri. Özellikle, değerini *wFetchType* daha sezgisel bir üye işlevine ve genellikle geçerli kaydın taşınması için tercih edilen yöntem gösteriyor olabilir.
+Geçirdiğiniz değerlere bağlı olarak, `Move` diğer `CRecordset` üye işlevlerine eşdeğerdir. Özellikle, *wFetchType* değeri, geçerli kaydın taşınması için daha sezgisel ve genellikle tercih edilen yöntem olan bir üye işlevi gösterebilir.
 
-İçin olası değerler aşağıdaki tabloda *wFetchType*, satır kümesi, `Move` getirir göre *wFetchType* ve *nRows*ve herhangi bir eşdeğer üye işlevi için karşılık gelen *wFetchType*.
+Aşağıdaki *tabloda wFetchType için olası*değerler, `Move` *wFetchType* ve *nrows*temel alınarak getirileceği satır kümesi ve *wFetchType*öğesine karşılık gelen eşdeğer üye işlevleri listelenmektedir.
 
-|wFetchType|Getirilen satır kümesi|Eşdeğer üye işlevi|
+|wFetchType|Getirilen satır kümesi|Denk üye işlevi|
 |----------------|--------------------|--------------------------------|
-|SQL_FETCH_RELATIVE (varsayılan değer)|Satır kümesi başlangıç *nRows* geçerli satır kümesindeki ilk satırdan satır.||
-|SQL_FETCH_NEXT|Sonraki satır kümesi; *nRows* göz ardı edilir.|[MoveNext](#movenext)|
-|SQL_FETCH_PRIOR|Önceki satır kümesi; *nRows* göz ardı edilir.|[MovePrev](#moveprev)|
-|SQL_FETCH_FIRST|İlk satır kümesinde; *nRows* göz ardı edilir.|[MoveFirst](#movefirst)|
-|SQL_FETCH_LAST|Son tam satır kümesinde; *nRows* göz ardı edilir.|[MoveLast](#movelast)|
-|SQL_FETCH_ABSOLUTE|Varsa *nRows* > 0, başlangıç satır kümesi *nRows* baştan başlayarak bir satır kümesi. Varsa *nRows* < 0, başlangıç satır kümesi *nRows* satır sonundan itibaren kayıt. Varsa *nRows* = 0, dosya başına (BOF) koşul verilir.|[SetAbsolutePosition](#setabsoluteposition)|
-|SQL_FETCH_BOOKMARK|Yer işareti değeri karşılık gelen satırda başlayan satır kümesi *nRows*.|[SetBookmark](#setbookmark)|
+|SQL_FETCH_RELATIVE (varsayılan değer)|Geçerli satır kümesindeki ilk satırdan *nrows* satırlarını Başlatan satır kümesi.||
+|SQL_FETCH_NEXT|Sonraki satır kümesi; *nsatırlar* yoksayıldı.|[Iken](#movenext)|
+|SQL_FETCH_PRIOR|Önceki satır kümesi; *nsatırlar* yoksayıldı.|[MovePrev](#moveprev)|
+|SQL_FETCH_FIRST|Kayıt kümesindeki ilk satır kümesi; *nsatırlar* yoksayıldı.|[MoveFirst](#movefirst)|
+|SQL_FETCH_LAST|Kayıt kümesindeki son tamamlanma satır kümesi; *nsatırlar* yoksayıldı.|[MoveLast](#movelast)|
+|SQL_FETCH_ABSOLUTE|*Nrows* > 0 ise, satır kümesi, kayıt kümesinin başından *nrows* satırlarını Başlatan satır kümesidir. *Nrows* < 0 ise satır kümesi, kayıt kümesinin sonundan *nrows* satırlarını başlatıyor. Eğer *nrows* = 0 ise, bir dosya BAŞLANGıCı (BOF) koşulu döndürülür.|[SetAbsolutePosition](#setabsoluteposition)|
+|SQL_FETCH_BOOKMARK|Yer işareti değeri *nrows*'a karşılık gelen satırda başlayan satır kümesi.|[SetBookmark](#setbookmark)|
 
 > [!NOTE]
->  Salt iletme kayıt kümeleri için `Move` yalnızca SQL_FETCH_NEXT için değerinin geçerli olduğundan *wFetchType*.
+>  Salt iletme kayıt kümeleri için `Move` yalnızca *wFetchType*için SQL_FETCH_NEXT değeriyle geçerlidir.
 
 > [!CAUTION]
->  Çağırma `Move` kayıt kayıt içermeyen bir özel durum oluşturur. Kayıt kümesi herhangi bir kayıt olup olmadığını belirlemek için çağrı [IsBOF](#isbof) ve [IsEOF](#iseof).
+>  `Move` çağrısı, kayıt kümesinde kayıt yoksa bir özel durum oluşturur. Kayıt kümesinde herhangi bir kayıt olup olmadığını belirleme, [IsBOF](#isbof) ve [IOF](#iseof)'yi çağırın.
 
 > [!NOTE]
->  Başta veya sonda kümesinin kaydırılan varsa (`IsBOF` veya `IsEOF` sıfır döndürür), çağıran bir `Move` işlevi oluşturur büyük olasılıkla bir `CDBException`. Örneğin, varsa `IsEOF` sıfır döndürür ve `IsBOF` ardından yok, `MoveNext` bir özel durum oluşturmaz ancak `MovePrev` erişemez.
+>  Kayıt kümesinin başlangıcını veya sonunu (`IsBOF` veya `IsEOF` sıfır dışında bir değer döndürür) daha önce kaydırdıysanız, bir `Move` işlevi çağırmak muhtemelen bir `CDBException`oluşturur. Örneğin, `IsEOF` sıfır dışında bir değer döndürürse ve `IsBOF`, `MoveNext` bir özel durum oluşturur, ancak `MovePrev` olmaz.
 
 > [!NOTE]
->  Eğer `Move` geçerli kayıt yüklenirken güncelleştirildi veya eklendi, güncelleştirmeleri uyarı vermeden kaybolur.
+>  Geçerli kayıt güncelleştirilirken veya eklenirken `Move` çağırırsanız güncelleştirmeler uyarı vermeden kaybedilir.
 
-Kayıt kümesi gezintisi hakkında daha fazla bilgi için makalelere göz atın [kayıt kümesi: Kaydırma (ODBC)](../../data/odbc/recordset-scrolling-odbc.md) ve [kayıt kümesi: Yer işaretleri ve Mutlak Konumlar (ODBC)](../../data/odbc/recordset-bookmarks-and-absolute-positions-odbc.md). Toplu satır getirme hakkında daha fazla bilgi için bkz [kayıt kümesi: Kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md). İlgili bilgiler için bkz: ODBC API işlevini `SQLExtendedFetch` Windows SDK.
+Kayıt kümesi gezintisi hakkında daha fazla bilgi için bkz. makalelere [kayıt kümesi: kaydırma (ODBC)](../../data/odbc/recordset-scrolling-odbc.md) ve [kayıt kümesi: yer Işaretleri ve mutlak konumlar (ODBC)](../../data/odbc/recordset-bookmarks-and-absolute-positions-odbc.md). Toplu satır getirme hakkında daha fazla bilgi için bkz. kayıt [kümesi: kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md). İlgili bilgiler için Windows SDK `SQLExtendedFetch` ODBC API işlevine bakın.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDatabase#28](../../mfc/codesnippet/cpp/crecordset-class_14.cpp)]
 
-##  <a name="movefirst"></a>  CRecordset::MoveFirst
+##  <a name="movefirst"></a>CRecordset:: MoveFirst
 
-İlk kayıt ilk satır kümesi geçerli kayıt yapar.
+İlk satır kümesindeki ilk kaydı geçerli kayıt yapar.
 
 ```
 void MoveFirst();
@@ -1343,31 +1343,31 @@ void MoveFirst();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Olup toplu satır getirme uygulanmıştır bağımsız olarak, bu kayıt kümesindeki ilk kayıt her zaman olacaktır.
+Toplu satır yakalamanın uygulanıp uygulanmadığı bağımsız olarak, bu her zaman kayıt kümesindeki ilk kayıt olacaktır.
 
-Çağrı gerekmez `MoveFirst` kayıt açıldıktan hemen sonra. O anda (varsa) ilk kaydı otomatik olarak geçerli kaydı olur.
-
-> [!NOTE]
->  Bu üye işlevi salt iletme kayıt kümeleri için geçerli değil.
+Kayıt kümesini açtıktan hemen sonra `MoveFirst` çağırmanız gerekmez. Bu sırada, ilk kayıt (varsa) otomatik olarak geçerli kayıt olur.
 
 > [!NOTE]
->  Bir kayıt kümesi taşıdığınızda, silinen kayıtlar atlayamazsınız. Bkz: [IsDeleted](#isdeleted) Ayrıntılar için üye işlevi.
+>  Bu üye işlevi yalnızca iletme kayıt kümeleri için geçerli değil.
+
+> [!NOTE]
+>  Bir kayıt kümesi içinde geçiş yaptığınızda, silinen kayıtları atlayamazsınız. Ayrıntılar için [IsDeleted](#isdeleted) üye işlevine bakın.
 
 > [!CAUTION]
->  Herhangi bir çağırma `Move` işlevleri kayıt kayıt varsa, bir özel durum oluşturur. Kayıt kümesi herhangi bir kayıt olup olmadığını belirlemek için çağrı `IsBOF` ve `IsEOF`.
+>  `Move` işlevlerden herhangi birini çağırmak, kayıt kümesinde kayıt yoksa bir özel durum oluşturur. Kayıt kümesinin herhangi bir kayıt içerip içermediğini anlamak için, `IsBOF` ve `IsEOF`çağırın.
 
 > [!NOTE]
->  Herhangi bir çağırırsanız `Move` geçerli kayıt yüklenirken işlevleri güncelleştirildi veya eklendi, güncelleştirmeleri uyarı vermeden kaybolur.
+>  Geçerli kayıt güncelleştirilirken veya eklenirken `Move` işlevlerinden herhangi birini çağırırsanız, güncelleştirmeler uyarı vermeden kaybedilir.
 
-Kayıt kümesi gezintisi hakkında daha fazla bilgi için makalelere göz atın [kayıt kümesi: Kaydırma (ODBC)](../../data/odbc/recordset-scrolling-odbc.md) ve [kayıt kümesi: Yer işaretleri ve Mutlak Konumlar (ODBC)](../../data/odbc/recordset-bookmarks-and-absolute-positions-odbc.md). Toplu satır getirme hakkında daha fazla bilgi için bkz [kayıt kümesi: Kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
+Kayıt kümesi gezintisi hakkında daha fazla bilgi için bkz. makalelere [kayıt kümesi: kaydırma (ODBC)](../../data/odbc/recordset-scrolling-odbc.md) ve [kayıt kümesi: yer Işaretleri ve mutlak konumlar (ODBC)](../../data/odbc/recordset-bookmarks-and-absolute-positions-odbc.md). Toplu satır getirme hakkında daha fazla bilgi için bkz. kayıt [kümesi: kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [IsBOF](#isbof).
+  [IsBOF](#isbof)örneğine bakın.
 
-##  <a name="movelast"></a>  CRecordset::MoveLast
+##  <a name="movelast"></a>CRecordset:: MoveLast
 
-İlk kaydı son tam satır kümesi geçerli kayıt yapar.
+Son tamamlanan ilk kayıt satır kümesinden geçerli kaydı yapar.
 
 ```
 void MoveLast();
@@ -1375,29 +1375,29 @@ void MoveLast();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Toplu satır getirme değil uyguladıysanız, kümenizin 1 satır kümesi boyutunu serileştirilmesini `MoveLast` yalnızca son kayıt kümenize taşır.
+Toplu satır getirmeyi gerçekleştirdiyseniz, kayıt kümeniz 1 satır kümesi boyutuna sahiptir, bu nedenle `MoveLast` yalnızca kayıt kümesindeki son kayda gider.
 
 > [!NOTE]
->  Bu üye işlevi salt iletme kayıt kümeleri için geçerli değil.
+>  Bu üye işlevi yalnızca iletme kayıt kümeleri için geçerli değil.
 
 > [!NOTE]
->  Bir kayıt kümesi taşıdığınızda, silinen kayıtlar atlayamazsınız. Bkz: [IsDeleted](#isdeleted) Ayrıntılar için üye işlevi.
+>  Bir kayıt kümesi içinde geçiş yaptığınızda, silinen kayıtları atlayamazsınız. Ayrıntılar için [IsDeleted](#isdeleted) üye işlevine bakın.
 
 > [!CAUTION]
->  Herhangi bir çağırma `Move` işlevleri kayıt kayıt varsa, bir özel durum oluşturur. Kayıt kümesi herhangi bir kayıt olup olmadığını belirlemek için çağrı `IsBOF` ve `IsEOF`.
+>  `Move` işlevlerden herhangi birini çağırmak, kayıt kümesinde kayıt yoksa bir özel durum oluşturur. Kayıt kümesinin herhangi bir kayıt içerip içermediğini anlamak için, `IsBOF` ve `IsEOF`çağırın.
 
 > [!NOTE]
->  Herhangi bir çağırırsanız `Move` geçerli kayıt yüklenirken işlevleri güncelleştirildi veya eklendi, güncelleştirmeleri uyarı vermeden kaybolur.
+>  Geçerli kayıt güncelleştirilirken veya eklenirken `Move` işlevlerinden herhangi birini çağırırsanız, güncelleştirmeler uyarı vermeden kaybedilir.
 
-Kayıt kümesi gezintisi hakkında daha fazla bilgi için makalelere göz atın [kayıt kümesi: Kaydırma (ODBC)](../../data/odbc/recordset-scrolling-odbc.md) ve [kayıt kümesi: Yer işaretleri ve Mutlak Konumlar (ODBC)](../../data/odbc/recordset-bookmarks-and-absolute-positions-odbc.md). Toplu satır getirme hakkında daha fazla bilgi için bkz [kayıt kümesi: Kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
+Kayıt kümesi gezintisi hakkında daha fazla bilgi için bkz. makalelere [kayıt kümesi: kaydırma (ODBC)](../../data/odbc/recordset-scrolling-odbc.md) ve [kayıt kümesi: yer Işaretleri ve mutlak konumlar (ODBC)](../../data/odbc/recordset-bookmarks-and-absolute-positions-odbc.md). Toplu satır getirme hakkında daha fazla bilgi için bkz. kayıt [kümesi: kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [IsBOF](#isbof).
+  [IsBOF](#isbof)örneğine bakın.
 
-##  <a name="movenext"></a>  CRecordset::MoveNext
+##  <a name="movenext"></a>CRecordset:: MoveNext
 
-İlk kayıt sonraki satır kümesi geçerli kayıt yapar.
+Sonraki satır kümesindeki ilk kaydı geçerli kayıt yapar.
 
 ```
 void MoveNext();
@@ -1405,29 +1405,29 @@ void MoveNext();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Toplu satır getirme değil uyguladıysanız, kümenizin 1 satır kümesi boyutunu serileştirilmesini `MoveNext` yalnızca sonraki kayda taşır.
+Toplu satır getirmeyi gerçekleştirdiyseniz, kayıt kümeniz 1 satır kümesi boyutuna sahiptir, bu nedenle `MoveNext` yalnızca bir sonraki kayda gider.
 
 > [!NOTE]
->  Bir kayıt kümesi taşıdığınızda, silinen kayıtlar atlayamazsınız. Bkz: [IsDeleted](#isdeleted) Ayrıntılar için üye işlevi.
+>  Bir kayıt kümesi içinde geçiş yaptığınızda, silinen kayıtları atlayamazsınız. Ayrıntılar için [IsDeleted](#isdeleted) üye işlevine bakın.
 
 > [!CAUTION]
->  Herhangi bir çağırma `Move` işlevleri kayıt kayıt varsa, bir özel durum oluşturur. Kayıt kümesi herhangi bir kayıt olup olmadığını belirlemek için çağrı `IsBOF` ve `IsEOF`.
+>  `Move` işlevlerden herhangi birini çağırmak, kayıt kümesinde kayıt yoksa bir özel durum oluşturur. Kayıt kümesinin herhangi bir kayıt içerip içermediğini anlamak için, `IsBOF` ve `IsEOF`çağırın.
 
 > [!NOTE]
->  Ayrıca çağırmanızı önerilir `IsEOF` çağırmadan önce `MoveNext`. Örneğin, kayıt kümesi sonundan kaydırırsanız `IsEOF` sıfır; döndürür bir sonraki çağrı `MoveNext` bir özel durum oluşturması.
+>  Ayrıca, `MoveNext`çağrılmadan önce `IsEOF` çağırmanız önerilir. Örneğin, kayıt kümesinin sonunu daha önce kaydırdıysanız `IsEOF` sıfır dışında döndürür; `MoveNext` sonraki bir çağrı özel durum oluşturur.
 
 > [!NOTE]
->  Herhangi bir çağırırsanız `Move` geçerli kayıt yüklenirken işlevleri güncelleştirildi veya eklendi, güncelleştirmeleri uyarı vermeden kaybolur.
+>  Geçerli kayıt güncelleştirilirken veya eklenirken `Move` işlevlerinden herhangi birini çağırırsanız, güncelleştirmeler uyarı vermeden kaybedilir.
 
-Kayıt kümesi gezintisi hakkında daha fazla bilgi için makalelere göz atın [kayıt kümesi: Kaydırma (ODBC)](../../data/odbc/recordset-scrolling-odbc.md) ve [kayıt kümesi: Yer işaretleri ve Mutlak Konumlar (ODBC)](../../data/odbc/recordset-bookmarks-and-absolute-positions-odbc.md). Toplu satır getirme hakkında daha fazla bilgi için bkz [kayıt kümesi: Kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
+Kayıt kümesi gezintisi hakkında daha fazla bilgi için bkz. makalelere [kayıt kümesi: kaydırma (ODBC)](../../data/odbc/recordset-scrolling-odbc.md) ve [kayıt kümesi: yer Işaretleri ve mutlak konumlar (ODBC)](../../data/odbc/recordset-bookmarks-and-absolute-positions-odbc.md). Toplu satır getirme hakkında daha fazla bilgi için bkz. kayıt [kümesi: kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [IsBOF](#isbof).
+  [IsBOF](#isbof)örneğine bakın.
 
-##  <a name="moveprev"></a>  CRecordset::MovePrev
+##  <a name="moveprev"></a>CRecordset:: Moveöncekini
 
-İlk kayıt önceki satır kümesi geçerli kayıt yapar.
+Önceki satır kümesindeki ilk kaydı geçerli kayıt yapar.
 
 ```
 void MovePrev();
@@ -1435,32 +1435,32 @@ void MovePrev();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Toplu satır getirme değil uyguladıysanız, kümenizin 1 satır kümesi boyutunu serileştirilmesini `MovePrev` yalnızca önceki kayıda taşır.
+Toplu satır getirmeyi gerçekleştirdiyseniz, kayıt kümeniz 1 satır kümesi boyutuna sahiptir, bu nedenle `MovePrev` yalnızca önceki kayda gider.
 
 > [!NOTE]
->  Bu üye işlevi salt iletme kayıt kümeleri için geçerli değil.
+>  Bu üye işlevi yalnızca iletme kayıt kümeleri için geçerli değil.
 
 > [!NOTE]
->  Bir kayıt kümesi taşıdığınızda, silinen kayıtlar atlayamazsınız. Bkz: [IsDeleted](#isdeleted) Ayrıntılar için üye işlevi.
+>  Bir kayıt kümesi içinde geçiş yaptığınızda, silinen kayıtları atlayamazsınız. Ayrıntılar için [IsDeleted](#isdeleted) üye işlevine bakın.
 
 > [!CAUTION]
->  Herhangi bir çağırma `Move` işlevleri kayıt kayıt varsa, bir özel durum oluşturur. Kayıt kümesi herhangi bir kayıt olup olmadığını belirlemek için çağrı `IsBOF` ve `IsEOF`.
+>  `Move` işlevlerden herhangi birini çağırmak, kayıt kümesinde kayıt yoksa bir özel durum oluşturur. Kayıt kümesinin herhangi bir kayıt içerip içermediğini anlamak için, `IsBOF` ve `IsEOF`çağırın.
 
 > [!NOTE]
->  Ayrıca çağırmanızı önerilir `IsBOF` çağırmadan önce `MovePrev`. Örneğin, kayıt kümesi başına önüne kaydırırsanız `IsBOF` sıfır; döndürür bir sonraki çağrı `MovePrev` bir özel durum oluşturması.
+>  Ayrıca, `MovePrev`çağrılmadan önce `IsBOF` çağırmanız önerilir. Örneğin, kayıt kümesinin başından önce kaydırdıysanız `IsBOF` sıfır dışında döndürür; `MovePrev` sonraki bir çağrı özel durum oluşturur.
 
 > [!NOTE]
->  Herhangi bir çağırırsanız `Move` geçerli kayıt yüklenirken işlevleri güncelleştirildi veya eklendi, güncelleştirmeleri uyarı vermeden kaybolur.
+>  Geçerli kayıt güncelleştirilirken veya eklenirken `Move` işlevlerinden herhangi birini çağırırsanız, güncelleştirmeler uyarı vermeden kaybedilir.
 
-Kayıt kümesi gezintisi hakkında daha fazla bilgi için makalelere göz atın [kayıt kümesi: Kaydırma (ODBC)](../../data/odbc/recordset-scrolling-odbc.md) ve [kayıt kümesi: Yer işaretleri ve Mutlak Konumlar (ODBC)](../../data/odbc/recordset-bookmarks-and-absolute-positions-odbc.md). Toplu satır getirme hakkında daha fazla bilgi için bkz [kayıt kümesi: Kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
+Kayıt kümesi gezintisi hakkında daha fazla bilgi için bkz. makalelere [kayıt kümesi: kaydırma (ODBC)](../../data/odbc/recordset-scrolling-odbc.md) ve [kayıt kümesi: yer Işaretleri ve mutlak konumlar (ODBC)](../../data/odbc/recordset-bookmarks-and-absolute-positions-odbc.md). Toplu satır getirme hakkında daha fazla bilgi için bkz. kayıt [kümesi: kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
 
 ### <a name="example"></a>Örnek
 
-  Örneğin bakın [IsBOF](#isbof).
+  [IsBOF](#isbof)örneğine bakın.
 
-##  <a name="onsetoptions"></a>  CRecordset::OnSetOptions
+##  <a name="onsetoptions"></a>CRecordset:: OnSetOptions
 
-(Seçim kullanılan) seçeneklerini ayarlamak için belirtilen ODBC deyimi için çağrılır.
+Belirtilen ODBC ifadesinin seçeneklerini (seçimde kullanılan) ayarlamak için çağırılır.
 
 ```
 virtual void OnSetOptions(HSTMT hstmt);
@@ -1468,20 +1468,20 @@ virtual void OnSetOptions(HSTMT hstmt);
 
 ### <a name="parameters"></a>Parametreler
 
-*hstmt*<br/>
-HSTMT ODBC deyiminin ayarlanacak olan seçeneklerdir.
+*bağlayıcıları*<br/>
+Seçenekleri ayarlanacak ODBC ifadesinin HSTMT 'ı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağrı `OnSetOptions` için belirtilen ODBC deyimini (seçimde kullanılır) seçeneklerini ayarlamak için. Framework ilk kayıt seçeneklerini ayarlamak için bu üye işlevini çağırır. `OnSetOptions` veri kaynağının destek kaydırılabilir işaretçiler ve imleç eşzamanlılık belirler ve buna göre kayıt kümesinin seçeneklerini ayarlar. (Ancak `OnSetOptions` seçimi işlemleri için kullanılan `OnSetUpdateOptions` güncelleştirme işlemleri için kullanılır.)
+Belirtilen ODBC ifadesinin seçeneklerini (seçimde kullanılan) ayarlamak için `OnSetOptions` çağırın. Çerçeve, kayıt kümesine yönelik başlangıç seçeneklerini ayarlamak için bu üye işlevini çağırır. `OnSetOptions`, veri kaynağının kaydırılabilir imleçler ve imleç Eşzamanlılık için desteğini belirler ve kayıt kümesinin seçeneklerini uygun şekilde ayarlar. (`OnSetOptions` seçim işlemleri için `OnSetUpdateOptions`, güncelleştirme işlemleri için kullanılır.)
 
-Geçersiz kılma `OnSetOptions` seçeneklerini belirli sürücü veya veri kaynağı ayarlamak için. Örneğin, özel erişim için açma destekler, veri kaynağı ise, geçersiz kılabilir `OnSetOptions` bu özelliği yararlanmak için.
+Sürücüye veya veri kaynağına özgü seçenekleri ayarlamak için `OnSetOptions` geçersiz kılın. Örneğin, veri kaynağınız özel erişim için açmayı destekliyorsa, bu özelliklerden yararlanmak için `OnSetOptions` geçersiz kılabilirsiniz.
 
-İşaretçiler hakkında daha fazla bilgi için bkz [ODBC](../../data/odbc/odbc-basics.md).
+İmleçler hakkında daha fazla bilgi için bkz. [ODBC](../../data/odbc/odbc-basics.md).
 
-##  <a name="onsetupdateoptions"></a>  CRecordset::OnSetUpdateOptions
+##  <a name="onsetupdateoptions"></a>CRecordset:: OnSetUpdateOptions
 
-Belirtilen ODBC deyimi için (güncelleştirmesinde kullanılır) seçeneklerini ayarlamak için çağrılır.
+Belirtilen ODBC ifadesinin seçeneklerini (güncelleştirmede kullanılır) ayarlamak için çağırılır.
 
 ```
 virtual void OnSetUpdateOptions(HSTMT hstmt);
@@ -1489,20 +1489,20 @@ virtual void OnSetUpdateOptions(HSTMT hstmt);
 
 ### <a name="parameters"></a>Parametreler
 
-*hstmt*<br/>
-HSTMT ODBC deyiminin ayarlanacak olan seçeneklerdir.
+*bağlayıcıları*<br/>
+Seçenekleri ayarlanacak ODBC ifadesinin HSTMT 'ı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağrı `OnSetUpdateOptions` için belirtilen ODBC deyimini (güncelleştirmesinde kullanılır) seçeneklerini ayarlamak için. Bir kayıt kümesindeki kayıtları güncelleştirmek için bir HSTMT oluşturduktan sonra framework bu üye işlevini çağırır. (Ancak `OnSetOptions` seçimi işlemleri için kullanılan `OnSetUpdateOptions` güncelleştirme işlemleri için kullanılır.) `OnSetUpdateOptions` kaydırılabilir işaretçiler için ve imleç eşzamanlılık veri kaynağının desteği belirler ve buna göre kayıt kümesinin seçeneklerini ayarlar.
+Belirtilen ODBC ifadesinin seçeneklerini (güncelleştirmede kullanılan) ayarlamak için `OnSetUpdateOptions` çağırın. Framework bir kayıt kümesindeki kayıtları güncelleştirmek için bir HSTMT oluşturduktan sonra bu üye işlevini çağırır. (`OnSetOptions` seçim işlemleri için `OnSetUpdateOptions`, güncelleştirme işlemleri için kullanılır.) `OnSetUpdateOptions`, veri kaynağının kaydırılabilir imleçler ve imleç Eşzamanlılık için desteğini belirler ve kayıt kümesinin seçeneklerini uygun şekilde ayarlar.
 
-Geçersiz kılma `OnSetUpdateOptions` bu deyim, bir veritabanına erişmek için kullanılmadan önce bir ODBC deyiminin seçeneklerini ayarlamak için.
+Bir veritabanına erişmek için bu deyimin kullanılmadan önce ODBC bildiriminin seçeneklerini ayarlamak için `OnSetUpdateOptions` geçersiz kılın.
 
-İşaretçiler hakkında daha fazla bilgi için bkz [ODBC](../../data/odbc/odbc-basics.md).
+İmleçler hakkında daha fazla bilgi için bkz. [ODBC](../../data/odbc/odbc-basics.md).
 
-##  <a name="open"></a>  CRecordset::Open
+##  <a name="open"></a>CRecordset:: Open
 
-Kayıt, tablo almak veya kayıt kümesini temsil eden sorgu gerçekleştirme açılır.
+Tabloyu alarak veya kayıt kümesinin temsil ettiği sorguyu gerçekleştirerek kayıt kümesini açar.
 
 ```
 virtual BOOL Open(
@@ -1514,108 +1514,108 @@ virtual BOOL Open(
 ### <a name="parameters"></a>Parametreler
 
 *nOpenType*<br/>
-Varsayılan değer, AFX_DB_USE_DEFAULT_TYPE ya da aşağıdakilerden birini değerleri kullanmak kabul `enum OpenType`:
+Varsayılan değeri kabul edin, AFX_DB_USE_DEFAULT_TYPE veya `enum OpenType`aşağıdaki değerlerden birini kullanın:
 
-- `CRecordset::dynaset` İki yönlü kaydırma ile bir kayıt kümesi. Üyelik ve kayıtları sıralama kayıt kümesi açıldı, ancak veri değerleri için diğer kullanıcılar tarafından yapılan değişiklikler, aşağıdaki getirme işlemi görülebilir belirlenir. Dynaset'ler dynasets'te kayıt kümeleri de verilir.
+- iki yönlü kaydırma içeren bir kayıt kümesi `CRecordset::dynaset`. Kayıtların üyeliği ve sıralaması, kayıt kümesi açıldığında belirlenir, ancak diğer kullanıcılar tarafından veri değerlerine yapılan değişiklikler bir getirme işleminden sonra görünür olur. Dinamik kümeler, anahtar kümesi temelli kayıt kümeleri olarak da bilinir.
 
-- `CRecordset::snapshot` İki yönlü kaydırma ile statik bir kayıt. Kayıt kümesi açıldığında, üyelik ve kayıtları sıralama belirlenir; veri değerleri, kayıtları getirilen olduğunda belirlenir. Kayıt kümesi kapatılıp yeniden açıldığında kadar diğer kullanıcılar tarafından yapılan değişiklikleri görünür değildir.
+- iki yönlü kaydırma ile statik bir kayıt kümesi `CRecordset::snapshot`. Kayıtların üyeliği ve sıralaması, kayıt kümesi açıldığında belirlenir; veri değerleri, kayıtlar getirilirken belirlenir. Diğer kullanıcılar tarafından yapılan değişiklikler, kayıt kümesi kapatılana ve sonra yeniden açılıncaya kadar görünmez.
 
-- `CRecordset::dynamic` İki yönlü kaydırma ile bir kayıt kümesi. Üyelik, sipariş ve veri değerleri için diğer kullanıcılar tarafından yapılan değişiklikler, aşağıdaki getirme işlemi görülebilir. Bu tür bir kayıt kümesi birçok ODBC sürücüleri desteklemez unutmayın.
+- iki yönlü kaydırma içeren bir kayıt kümesi `CRecordset::dynamic`. Diğer kullanıcılar tarafından üyelik, sıralama ve veri değerlerine yapılan değişiklikler, getirme işleminden sonra görülebilir. Birçok ODBC sürücüsünün bu tür bir kayıt kümesini desteklemediğini unutmayın.
 
-- `CRecordset::forwardOnly` Sadece ileri kaydırma ile salt okunur kayıt.
+- yalnızca ileri kaydırma içeren salt okunurdur bir kayıt kümesi `CRecordset::forwardOnly`.
 
-   İçin `CRecordset`, varsayılan değer `CRecordset::snapshot`. Varsayılan değer mekanizması sağlar hem ODBC ile etkileşim kurmak Visual C++ sihirbazları `CRecordset` ve DAO `CDaoRecordset`, varsayılan değerleri farklı olan.
+   `CRecordset`için varsayılan değer `CRecordset::snapshot`. Varsayılan değer mekanizması, Visual C++ sihirbazları 'nın, farklı varsayılan değerlere sahıp hem ODBC `CRecordset` hem de DAO `CDaoRecordset`etkileşime geçmesini sağlar.
 
-Bu kayıt türleri hakkında daha fazla bilgi için bkz [kayıt kümesi (ODBC)](../../data/odbc/recordset-odbc.md). Makaleyi "Kullanarak blok ve kaydırılabilir imleçler" Windows SDK'sı ilgili bilgi için bkz.
+Bu kayıt kümesi türleri hakkında daha fazla bilgi için bkz. [kayıt kümesi (ODBC)](../../data/odbc/recordset-odbc.md). İlgili bilgiler için, Windows SDK "blok ve kaydırılabilir Imleçler kullanma" makalesine bakın.
 
 > [!CAUTION]
->  İstenen türü desteklenmiyorsa framework özel durum oluşturur.
+>  İstenen tür desteklenmiyorsa Framework bir özel durum oluşturur.
 
 *lpszSQL*<br/>
 Aşağıdakilerden birini içeren bir dize işaretçisi:
 
-- Bir NULL işaretçi.
+- NULL işaretçi.
 
 - Bir tablonun adı.
 
-- Bir SQL **seçin** deyimi (isteğe bağlı olarak bir SQL ile **burada** veya **ORDER BY** yan tümcesi).
+- Bir SQL **Select** deyimi (isteğe bağlı olarak bir SQL **WHERE** veya **order by** yan tümcesi ile).
 
-- A **çağrı** (saklı yordam) önceden tanımlanmış sorgu adı belirterek deyimi. Küme ayracı arasında boşluk yerleştirmeyin dikkatli olun ve **çağrı** anahtar sözcüğü.
+- Önceden tanımlanmış bir sorgunun (saklı yordam) adını belirten bir **çağrı** bildirisi. Küme ayracı ve **Call** anahtar sözcüğü arasına boşluk eklememeye dikkat edin.
 
-Bu dize hakkında daha fazla bilgi için tablo ve açıklamalar altında ClassWizard'ın rolünün tartışmaya bakın.
+Bu dize hakkında daha fazla bilgi için, [açıklamalar](#remarks) bölümü altındaki ClassWizard 'ın rolünün tablosuna ve başlığına bakın.
 
 > [!NOTE]
->  Sonuç kümenizi sütunların sırasını RFX eşleşmesi gerekir ya da toplu RFX işlev çağrıları, [DoFieldExchange](#dofieldexchange) veya [DoBulkFieldExchange](#dobulkfieldexchange) geçersiz kılma işlevi.
+>  Sonuç kümesindeki sütunların sırası, [DoFieldExchange](#dofieldexchange) veya [DoBulkFieldExchange](#dobulkfieldexchange) IşLEVI geçersiz kılmanızda RFX veya toplu RFX işlev çağrılarının sırasıyla eşleşmelidir.
 
 *dwOptions*<br/>
-Aşağıda listelenen değerlerinin bir birleşimini belirtebileceğiniz bir bit maskesi. Bunlardan bazıları birbirini dışlar. Varsayılan değer **hiçbiri**.
+Aşağıda listelenen değerlerin birleşimini belirtebileceğiniz bir bit maskesi. Bunlardan bazıları birbirini dışlıyor. Varsayılan değer **none**' dır.
 
-- `CRecordset::none` Hiçbir seçenek ayarlanmadı. Diğer tüm değerler ile birbirini dışlayan Bu parametre değeridir. Varsayılan olarak, kayıt kümesi ile güncelleştirilebilir [Düzenle](#edit) veya [Sil](#delete) ve yenileriyle ekleme sağlayan [AddNew](#addnew). Güncelleştirilebilirlik bağlıdır veri kaynağında da itibariyle *nOpenType* seçeneği belirtirsiniz. En iyi duruma getirme toplu ekleme kullanılamaz. Toplu satır getirme gerçekleştirilmez. Silinmiş kayıtlar, kayıt kümesi gezinti sırasında atlandı değildir. Yer işaretleri kullanılabilir değil. Otomatik kirli alan denetimi gerçekleştirilir.
+- `CRecordset::none` seçenek ayarlanmadı. Bu parametre değeri, diğer tüm değerlerle birbirini dışlıyor. Varsayılan olarak, kayıt kümesi [düzenleme](#edit) veya [silme](#delete) ile güncelleştirilebilen ve [AddNew](#addnew)ile yeni kayıtlar eklemeye izin verebilir. Updatability, veri kaynağına ve belirttiğiniz *nOpenType* seçeneğine bağlıdır. Toplu eklemeler için iyileştirme kullanılamıyor. Toplu satır getirme uygulanmayacak. Silinen kayıtlar, kayıt kümesi gezintisi sırasında atlanmaz. Yer işaretleri kullanılamıyor. Otomatik kirli alan denetimi uygulandı.
 
-- `CRecordset::appendOnly` İzin verme `Edit` veya `Delete` kayıt üzerinde. İzin `AddNew` yalnızca. Bu seçenek ile birbirini dışlayan `CRecordset::readOnly`.
+- `CRecordset::appendOnly`, kayıt kümesinde `Edit` veya `Delete` izin vermez. Yalnızca `AddNew` izin ver. Bu seçenek `CRecordset::readOnly`birlikte birbirini dışlar.
 
-- `CRecordset::readOnly` Kayıt kümesi salt okunur olarak açın. Bu seçenek ile birbirini dışlayan `CRecordset::appendOnly`.
+- `CRecordset::readOnly` kayıt kümesini salt okuma olarak açın. Bu seçenek `CRecordset::appendOnly`birlikte birbirini dışlar.
 
-- `CRecordset::optimizeBulkAdd` Tek seferde çok sayıda kayıt ekleme iyileştirmek için hazırlanmış bir SQL deyimini kullanın. Yalnızca ODBC API işlevini kullanmıyorsanız geçerlidir `SQLSetPos` kayıt kümesini güncelleştirmek için. Hangi alanların kirli olarak işaretlenmiş ilk güncelleştirme belirler. Bu seçenek ile birbirini dışlayan `CRecordset::useMultiRowFetch`.
+- tek seferde çok sayıda kayıt eklemeyi iyileştirmek için hazırlanmış bir SQL ifadesini kullanmak `CRecordset::optimizeBulkAdd`. Kayıt kümesini güncelleştirmek için `SQLSetPos` ODBC API işlevini kullanmıyorsanız geçerlidir. İlk güncelleştirme hangi alanların kirli olarak işaretlendiğini belirler. Bu seçenek `CRecordset::useMultiRowFetch`birlikte birbirini dışlar.
 
-- `CRecordset::useMultiRowFetch` Bir tek getirme işleminde alınacak birden çok satır izin vermek için toplu satır getirme uygulayın. Bu, performansı iyileştirmek için tasarlanmış, Gelişmiş bir özelliktir; Ancak, toplu kayıt alanı değişimi ClassWizard tarafından desteklenmiyor. Bu seçenek ile birbirini dışlayan `CRecordset::optimizeBulkAdd`. Belirtirseniz unutmayın `CRecordset::useMultiRowFetch`, ardından seçeneği `CRecordset::noDirtyFieldCheck` otomatik olarak kapatılacak (iki kez arabelleğe alma kullanılabilir olmayacak); üzerinde salt iletme kayıt kümeleri, seçeneği `CRecordset::useExtendedFetch` otomatik olarak kapatılacak. Toplu satır getirme hakkında daha fazla bilgi için bkz [kayıt kümesi: Kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
+- tek bir getirme işleminde birden çok satırın alınmasına izin vermek için toplu satır getirmeyi uygulayın `CRecordset::useMultiRowFetch`. Bu, performansı artırmak için tasarlanan gelişmiş bir özelliktir; ancak toplu kayıt alanı değişimi, ClassWizard tarafından desteklenmez. Bu seçenek `CRecordset::optimizeBulkAdd`birlikte birbirini dışlar. `CRecordset::useMultiRowFetch`belirtirseniz `CRecordset::noDirtyFieldCheck` seçeneğinin otomatik olarak açılıp açılmadığını unutmayın (çift arabelleğe alma kullanılamaz); yalnızca iletme kayıt kümelerinde `CRecordset::useExtendedFetch` seçeneği otomatik olarak açılır. Toplu satır getirme hakkında daha fazla bilgi için bkz. kayıt [kümesi: kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
 
-- `CRecordset::skipDeletedRecords` Tüm silinen kayıtlar, kayıt kümesi içinde gezindiğinizde atlayın. Bu, belirli göreli öğesinden performansı düşürür. Bu seçenek yalnızca iletme kayıt kümeleri üzerinde geçerli değil. Eğer [taşıma](#move) ile *nRows* parametresi 0 olarak ayarlayın ve `CRecordset::skipDeletedRecords` seçenek kümesi, `Move` assert. Unutmayın `CRecordset::skipDeletedRecords` benzer *sürücü paketleme*, silinen satır anlamına kayıt kümesinden kaldırılır. Ancak, kayıtları, sürücü paketleri, sildiğiniz kayıtları atla; kayıt kümesi açıkken, diğer kullanıcılar tarafından silinen kayıtlar atlayın değil. `CRecordset::skipDeletedRecords` diğer kullanıcılar tarafından silinmiş satırları atlar.
+- `CRecordset::skipDeletedRecords`, kayıt kümesinden gezinirken silinen tüm kayıtları atlayın. Bu, belirli göreli getirmeler için performansı yavaşlatır. Bu seçenek yalnızca iletme kayıt kümelerinde geçerli değildir. [Move](#move) for *nrows* parametresi 0 olarak ayarlandıysa ve `CRecordset::skipDeletedRecords` seçenek ayarlandıysa, `Move` onay olur. `CRecordset::skipDeletedRecords`, *sürücü paketleme*ile benzerdir, yani silinen satırlar kayıt kümesinden kaldırılır. Ancak, Sürücü paketlerinizin kaydı varsa, yalnızca sildiğiniz kayıtları atlar; kayıt kümesi açıkken, diğer kullanıcılar tarafından silinen kayıtları atlamaz. `CRecordset::skipDeletedRecords`, diğer kullanıcılar tarafından silinen satırları atlar.
 
-- `CRecordset::useBookmarks` Yer işaretleri destekleniyorsa, kayıt kümesi üzerinde kullanabilir. Yer işaretleri, veri alma yavaş ancak veri gezinme için performansı. Salt iletme kayıt kümeleri üzerinde geçerli değil. Daha fazla bilgi için bkz [kayıt kümesi: Yer işaretleri ve Mutlak Konumlar (ODBC)](../../data/odbc/recordset-bookmarks-and-absolute-positions-odbc.md).
+- `CRecordset::useBookmarks`, destekleniyorsa, kayıt kümesinde yer işaretlerini kullanabilir. Yer işaretleri yavaş veri alımı, ancak veri gezinmesi performansını geliştirir. Yalnızca iletme kayıt kümelerinde geçerli değildir. Daha fazla bilgi için bkz. [kayıt kümesi: yer işaretleri ve mutlak konumlar (ODBC)](../../data/odbc/recordset-bookmarks-and-absolute-positions-odbc.md).
 
-- `CRecordset::noDirtyFieldCheck` (İki kez arabelleğe alma) denetleniyor otomatik kirli alan devre dışı bırakın. Bu, performansı iyileştirir; Ancak, el ile alanları kirli olarak çağırarak işaretlemelisiniz `SetFieldDirty` ve `SetFieldNull` üye işlevleri. Sınıfta çift o arabelleğe almayı unutmayın `CRecordset` iki sınıfta kez arabelleğe alma için benzer `CDaoRecordset`. Bununla birlikte, `CRecordset`, tek tek alanlarda iki kez arabelleğe alma etkinleştirilemiyor; tüm alanlar için etkinleştirmek veya tüm alanlar için devre dışı bırakın. Seçeneğini belirtirseniz unutmayın `CRecordset::useMultiRowFetch`, ardından `CRecordset::noDirtyFieldCheck` kapatılacak otomatik olarak; ancak `SetFieldDirty` ve `SetFieldNull` toplu satır getirme uygulayan kümelerinde kullanılamaz.
+- Otomatik kirli alan denetimini devre dışı bırakmak `CRecordset::noDirtyFieldCheck` (çift arabelleğe alma). Bu, performansı iyileştirir; Ancak, `SetFieldDirty` ve `SetFieldNull` üye işlevlerini çağırarak alanları kirli olarak el ile işaretlemeniz gerekir. `CRecordset` sınıfında çift arabelleğe alma, `CDaoRecordset`sınıfında çift arabelleğe alma ile benzerdir. Ancak, `CRecordset`' de tek tek alanlarda çift arabelleğe almayı etkinleştiremezsiniz; Tüm alanlar için etkinleştirin ya da tüm alanlar için devre dışı bırakın. `CRecordset::useMultiRowFetch`seçeneğini belirtirseniz `CRecordset::noDirtyFieldCheck` otomatik olarak açılır. Ancak, `SetFieldDirty` ve `SetFieldNull` toplu satır getirmeyi uygulayan kayıt kümelerinde kullanılamaz.
 
-- `CRecordset::executeDirect` Hazırlanmış bir SQL deyimi kullanmayın. Daha iyi performans için bu seçeneği belirtin `Requery` üye işlev hiçbir zaman çağrılır.
+- `CRecordset::executeDirect` hazırlanan bir SQL ifadesini kullanmayın. Daha iyi performans için, `Requery` member işlevinin hiçbir şekilde çağrılmayacağı bu seçeneği belirtin.
 
-- `CRecordset::useExtendedFetch` Uygulama `SQLExtendedFetch` yerine `SQLFetch`. Bu işlem, toplu satır salt iletme kayıt kümeleri getirme uygulamak için tasarlanmıştır. Seçeneğini belirtirseniz `CRecordset::useMultiRowFetch` salt iletme kayıt kümesinde, ardından `CRecordset::useExtendedFetch` otomatik olarak kapatılacak.
+- `CRecordset::useExtendedFetch` `SQLFetch`yerine `SQLExtendedFetch` uygulayın. Bu, yalnızca ileri kayıt kümelerinde toplu satır getirmeyi uygulamak için tasarlanmıştır. Yalnızca bir salt iletme kayıt kümesinde `CRecordset::useMultiRowFetch` seçeneğini belirtirseniz, `CRecordset::useExtendedFetch` otomatik olarak açılır.
 
-- `CRecordset::userAllocMultiRowBuffers` Kullanıcı verilerini depolama arabelleği ayırır. Bu seçeneği ile birlikte kullanarak `CRecordset::useMultiRowFetch` kendi depolama; ayırmak istiyorsanız Aksi takdirde, framework otomatik olarak gereken depolama alanı ayırır. Daha fazla bilgi için bkz [kayıt kümesi: Kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md). Bu belirleme unutmayın `CRecordset::userAllocMultiRowBuffers` belirtmeden `CRecordset::useMultiRowFetch` başarısız bir onaylama işlemi neden olur.
+- `CRecordset::userAllocMultiRowBuffers` kullanıcının veri için depolama arabellekleri ayıracaktır. Kendi depolama alanınızı ayırmak istiyorsanız bu seçeneği `CRecordset::useMultiRowFetch` birlikte kullanın; Aksi takdirde, çerçeve gerekli depolamayı otomatik olarak ayırır. Daha fazla bilgi için [kayıt kümesi: kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md)başlıklı makaleye bakın. `CRecordset::useMultiRowFetch` belirtmeksizin `CRecordset::userAllocMultiRowBuffers` belirtmenin, başarısız bir onaylama işlemi ile sonuçlanabileceğini unutmayın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yalnız `CRecordset` nesne başarıyla açıldı; Aksi durumda 0 ise [CDatabase::Open](../../mfc/reference/cdatabase-class.md#open) (çağrılırsa) 0 değerini döndürür.
+`CRecordset` nesnesi başarıyla açıldıysa sıfır dışı; Aksi takdirde 0 varsa, [CDatabase:: Open](../../mfc/reference/cdatabase-class.md#open) (çağrılırsa) 0 döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kayıt kümesi tarafından tanımlanan sorguyu çalıştırmak için bu üye işlevi çağırmanız gerekir. Çağırmadan önce `Open`, kayıt kümesi nesnesi oluşturmalıdır.
+Kayıt kümesi tarafından tanımlanan sorguyu çalıştırmak için bu üye işlevini çağırmanız gerekir. `Open`çağrılmadan önce, kayıt kümesi nesnesi oluşturmanız gerekir.
 
-Kayıt kümesi çağırmadan önce nasıl oluşturmak bu kümesinin bağlantı veri kaynağına bağlıdır `Open`. Geçirirseniz bir [CDatabase](../../mfc/reference/cdatabase-class.md) nesnesini veri kaynağına bağlı olmayan bir kayıt kümesi oluşturucusu için bu üye işlevi kullanır [GetDefaultConnect](#getdefaultconnect) veritabanı nesnesi denemek için. Kayıt kümesi oluşturucuya NULL geçirirseniz, oluşturucu oluşturur bir `CDatabase` nesne, için ve `Open` veritabanı nesnesi bağlanmayı dener. Kayıt kümesi ve bu çeşitli koşullar altında bağlantı kapatma hakkında daha fazla bilgi için bkz [Kapat](#close).
+Bu kayıt kümesinin veri kaynağıyla bağlantısı, `Open`çağrılmadan önce kayıt kümesini nasıl oluşturduğunuza bağlıdır. Veri kaynağına bağlı olmayan kayıt kümesi oluşturucusuna bir [CDatabase](../../mfc/reference/cdatabase-class.md) nesnesi geçirirseniz, bu üye işlev veritabanı nesnesini açmayı denemek Için [GetDefaultConnect](#getdefaultconnect) kullanır. Kayıt kümesi oluşturucusuna NULL geçirirseniz, Oluşturucu sizin için bir `CDatabase` nesnesi oluşturur ve `Open` veritabanı nesnesini bağlamaya çalışır. Kayıt kümesini ve bağlantıyı bu farklı koşullarda kapatma hakkında ayrıntılar için bkz. [Close](#close).
 
 > [!NOTE]
->  Bir veri kaynağı erişimi bir `CRecordset` nesne her zaman paylaşılır. Farklı `CDaoRecordset` sınıfı kullanamaz bir `CRecordset` bir veri kaynağına özel erişim ile açmak için nesne.
+>  `CRecordset` nesne aracılığıyla bir veri kaynağına erişim her zaman paylaşılır. `CDaoRecordset` sınıfından farklı olarak, bir veri kaynağını özel erişim ile açmak için bir `CRecordset` nesnesi kullanamazsınız.
 
-Çağırdığınızda `Open`, genellikle bir SQL sorgu **seçin** deyimi, kayıtları aşağıdaki tabloda belirtilen ölçütlere göre seçer.
+`Open`çağırdığınızda bir sorgu, genellikle bir SQL **Select** deyimidir, aşağıdaki tabloda gösterilen ölçütlere göre kayıtları seçer.
 
-|LpszSQL parametresinin değeri|Seçilen kayıt tarafından belirlenir|Örnek|
+|LpszSQL parametresinin değeri|Seçilen kayıtlar şunları belirler|Örnek|
 |------------------------------------|----------------------------------------|-------------|
-|NULL|Tarafından döndürülen dize `GetDefaultSQL`.||
-|SQL tablo adı|Tablo listesinde tüm sütunları `DoFieldExchange` veya `DoBulkFieldExchange`.|`"Customer"`|
-|Önceden tanımlanmış sorgu (saklı yordam) adı|Sorgu döndürmek için tanımlanan sütunları.|`"{call OverDueAccts}"`|
-|**SEÇİN** sütun listesi **FROM** Tablo listesi|Belirtilen tablo belirtilen sütunları.|`"SELECT CustId, CustName FROM`<br /><br /> `Customer"`|
+|NULL|`GetDefaultSQL`tarafından döndürülen dize.||
+|SQL tablo adı|`DoFieldExchange` veya `DoBulkFieldExchange`içindeki Tablo listesinin tüm sütunları.|`"Customer"`|
+|Önceden tanımlanmış sorgu (saklı yordam) adı|Sorgunun geri dönmesi için tanımladığı sütunlar.|`"{call OverDueAccts}"`|
+|**Tablo listesinden** sütun listesi **seçin**|Belirtilen tablo (ler) den belirtilen sütunlar.|`"SELECT CustId, CustName FROM`<br /><br /> `Customer"`|
 
 > [!CAUTION]
->  Ek boşluk SQL dizenizi eklemeyin dikkat edin. Örneğin, küme ayracı arasında boşluk ekleyin ve **çağrı** anahtar sözcüğü, MFC SQL dizesi olarak bir tablo adı hatalı yorumlayan ve içine dahil edilip derecelendirilir bir **seçin** sonuçlanır deyimi, bir oluşturulan özel durum. Önceden tanımlanmış sorgunuzu çıkış parametresi kullanıyorsa, küme ayracı arasında boşluk benzer şekilde, eklemeyin ve '' simgesi. Son olarak, küme ayracı önce boşluk eklemeniz gerekir değil bir **çağrı** deyimi veya önce **seçin** anahtar sözcüğü bir **seçin** deyimi.
+>  SQL dizeniz üzerinde fazladan boşluk eklememeye dikkat edin. Örneğin, küme ayracı ve **Call** anahtar sözcüğü arasında boşluk eklersenız, MFC SQL dizesini tablo adı olarak yorumlayıp bir **Select** ifadesiyle birleştirir, bu da bir özel durum oluşmasına neden olur. Benzer şekilde, önceden tanımlanmış sorgunuz bir çıkış parametresi kullanıyorsa, küme ayracı ve ' ' sembolü arasına boşluk eklemeyin. Son olarak, bir **çağrı** deyimindeki küme ayracından önce veya **Select** deyimindeki **Select** anahtar sözcüğünden önce boşluk eklememelidir.
 
-NULL olarak geçirmek için normal yordamdır `Open`; bu durumda, `Open` çağrıları [GetDefaultSQL](#getdefaultsql). Türetilmiş kullanıyorsanız `CRecordset` sınıfı `GetDefaultSQL` ClassWizard içinde belirttiğiniz tablo adlarını sağlar. Bunun yerine diğer bilgileri belirtebilirsiniz `lpszSQL` parametresi.
+Her zamanki yordam `Open`NULL değer geçirmektir; Bu durumda, `Open` [GetDefaultSQL](#getdefaultsql)çağırır. Türetilmiş bir `CRecordset` sınıfı kullanıyorsanız, `GetDefaultSQL` ClassWizard 'da belirttiğiniz tablo adlarını verir. Bunun yerine `lpszSQL` parametresinde diğer bilgileri belirtebilirsiniz.
 
-İnovasyonunuz ne olursa olsun, geçirdiğiniz, `Open` sorgu için son SQL dizesi oluşturur (SQL dizesi olabilir **burada** ve **ORDER BY** yan tümceleri eklenmiş için `lpszSQL` , geçirilen dize) ve ardından yürütür Sorgu. Çağırarak oluşturulmuş dize inceleyebilirsiniz [GetSQL](#getsql) arama sonra `Open`. Kayıt kümesi bir SQL deyimi oluşturur ve kayıt seçer hakkında ek ayrıntılar için bkz. makaleyi [kayıt kümesi: Kayıtları seçme biçimi (ODBC) kayıtları nasıl](../../data/odbc/recordset-how-recordsets-select-records-odbc.md).
+Her ne kadar başarılı olursa olsun, sorgu için son bir SQL dizesi `Open` (dize, geçirdiğiniz `lpszSQL` dizesinin sonuna SQL **WHERE** ve **order by** yan tümceleri olabilir) ve sonra sorguyu yürütür. `Open`çağrıldıktan sonra [GetSQL](#getsql) 'i çağırarak oluşturulmuş dizeyi inceleyebilirsiniz. Kayıt kümesinin bir SQL ifadesini nasıl oluşturup kayıt seçtiğinden ilgili ek ayrıntılar için kayıt [kümesi: kayıt kümeleri kayıtları seçme (ODBC)](../../data/odbc/recordset-how-recordsets-select-records-odbc.md)makalesine bakın.
 
-Kayıt kümesi sınıfınızın alan veri üyeleri, seçili veri sütunlarının bağlıdır. Hiçbir kayıt döndürülmezse, ilk kayıt geçerli kayıt haline gelir.
+Kayıt kümesi sınıfınızın alan veri üyeleri, seçilen verilerin sütunlarına bağlanır. Herhangi bir kayıt döndürülürse, ilk kayıt geçerli kayıt olur.
 
-Kayıt kümesi gibi bir filtre veya sıralama seçeneklerini ayarlamak isterseniz kayıt kümesi nesnesi oluşturduktan sonra ancak çağırmadan önce bunları belirlemenin `Open`. Sonra kayıt kümesindeki kayıtları yenilemek istiyorsanız recordset zaten açık olan, çağrı [Requery](#requery).
+Kayıt kümesi için filtre veya sıralama gibi seçenekler ayarlamak istiyorsanız, kayıt kümesi nesnesini oluşturduktan sonra, ancak `Open`çağırmadan önce bu ayarları belirtin. Kayıt kümesi zaten açık olduktan sonra kayıt kümesindeki kayıtları yenilemek istiyorsanız, yeniden [sorgula](#requery)' yı çağırın.
 
-Ek örnekler de dahil olmak üzere daha fazla bilgi için makalelere göz atın [kayıt kümesi (ODBC)](../../data/odbc/recordset-odbc.md), [kayıt kümesi: Kayıtları seçme biçimi (ODBC) kayıtları nasıl](../../data/odbc/recordset-how-recordsets-select-records-odbc.md), ve [kayıt kümesi: Oluşturma ve kapatma (ODBC) kayıt kümeleri](../../data/odbc/recordset-creating-and-closing-recordsets-odbc.md).
+Ek örnekler dahil daha fazla bilgi için bkz. Makaleler [kayıt kümesi (ODBC)](../../data/odbc/recordset-odbc.md), [kayıt kümesi: kayıt kümeleri KAYıTLARı seçme (ODBC)](../../data/odbc/recordset-how-recordsets-select-records-odbc.md)ve [kayıt kümesi: kayıt KÜMELERI oluşturma ve kapatma (ODBC)](../../data/odbc/recordset-creating-and-closing-recordsets-odbc.md).
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod örnekleri, farklı formlarda gösterilen `Open` çağırın.
+Aşağıdaki kod örnekleri `Open` çağrısının farklı biçimlerini gösterir.
 
 [!code-cpp[NVC_MFCDatabase#16](../../mfc/codesnippet/cpp/crecordset-class_15.cpp)]
 
-##  <a name="refreshrowset"></a>  CRecordset::RefreshRowset
+##  <a name="refreshrowset"></a>CRecordset:: RefreshRowset
 
-Veri ve geçerli satır kümesindeki bir satır durumunu güncelleştirir.
+Geçerli satır kümesindeki bir satırın verilerini ve durumunu güncelleştirir.
 
 ```
 void RefreshRowset(
@@ -1626,30 +1626,30 @@ void RefreshRowset(
 ### <a name="parameters"></a>Parametreler
 
 *wRow*<br/>
-Bir tabanlı konumu bir satır satır kümesi geçerli. Bu değer, sıfırdan satır boyutu değişebilir.
+Geçerli satır kümesindeki bir satırın tek tabanlı konumu. Bu değer sıfırdan satır kümesinin boyutuna kadar değişebilir.
 
 *wLockType*<br/>
-Bunu yenilendikten satır kilitleme belirten bir değer. Ayrıntılar için açıklamalara bakın.
+Yenilenme sonrasında satırın nasıl kilitleneceği belirten bir değer. Ayrıntılar için bkz. açıklamalar.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İçin sıfır değeri geçirirseniz *wRow*, ardından her bir satır kümesinde yenilenir.
+*WRow*için sıfır değerini geçirirseniz, satır kümesindeki her satır yenilenir.
 
-Kullanılacak `RefreshRowset`, belirterek toplu satır getirme uygulanan gerekir `CRecordset::useMulitRowFetch` seçeneğini [açık](#open) üye işlevi.
+`RefreshRowset`kullanmak için, [Open](#open) member işlevinde `CRecordset::useMulitRowFetch` seçeneğini belirterek toplu satır getirmeyi uygulamış olmanız gerekir.
 
-`RefreshRowset` ODBC API işlevini çağıran `SQLSetPos`. *WLockType* parametresinin belirttiği sonuna satır kilidi durumunu `SQLSetPos` yürütüldü. Aşağıdaki tabloda olası değerleri açıklanmaktadır *wLockType*.
+`RefreshRowset` ODBC API işlevini `SQLSetPos`çağırır. *WLockType* parametresi, `SQLSetPos` yürütüldükten sonra satırın kilit durumunu belirtir. Aşağıdaki tabloda *wLockType*için olası değerler açıklanmaktadır.
 
 |wLockType|Açıklama|
 |---------------|-----------------|
-|SQL_LOCK_NO_CHANGE (varsayılan değer)|Sürücü veya veri kaynağı önce olduğu gibi satır aynı kilitli veya kilidi açılmış durumda olmasını sağlar. `RefreshRowset` çağrıldı.|
-|SQL_LOCK_EXCLUSIVE|Satır bir sürücü veya veri kaynağı özel olarak kilitler. Bu tür bir kilit tüm veri kaynaklarını destekler.|
-|SQL_LOCK_UNLOCK|Sürücü veya veri kaynağı, satır kilidini açar. Bu tür bir kilit tüm veri kaynaklarını destekler.|
+|SQL_LOCK_NO_CHANGE (varsayılan değer)|Sürücü veya veri kaynağı, `RefreshRowset` çağrılmadan önce, sıranın aynı kilitli veya kilitlenmemiş durumda olmasını sağlar.|
+|SQL_LOCK_EXCLUSIVE|Sürücü veya veri kaynağı satırı özel olarak kilitler. Tüm veri kaynakları bu tür kilidi desteklemez.|
+|SQL_LOCK_UNLOCK|Sürücü veya veri kaynağı satırın kilidini açar. Tüm veri kaynakları bu tür kilidi desteklemez.|
 
-Hakkında daha fazla bilgi için `SQLSetPos`, Windows SDK'sı bakın. Toplu satır getirme hakkında daha fazla bilgi için bkz [kayıt kümesi: Kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
+`SQLSetPos`hakkında daha fazla bilgi için bkz. Windows SDK. Toplu satır getirme hakkında daha fazla bilgi için bkz. kayıt [kümesi: kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
 
-##  <a name="requery"></a>  CRecordset::Requery
+##  <a name="requery"></a>CRecordset:: Requery
 
-(Yenileme) oluşturur. bir kayıt kümesi.
+Bir kayıt kümesini yeniden oluşturur (yeniler).
 
 ```
 virtual BOOL Requery();
@@ -1657,30 +1657,30 @@ virtual BOOL Requery();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kayıt kümesi başarıyla yeniden oluşturuldu olursa sıfır dışı; Aksi durumda 0.
+Kayıt kümesi başarıyla yeniden oluşturulmuşsa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Hiçbir kayıt döndürülmezse, ilk kayıt geçerli kayıt haline gelir.
+Herhangi bir kayıt döndürülürse, ilk kayıt geçerli kayıt olur.
 
-Ekleme ve veri kaynağına, sizin veya diğer kullanıcıların kuran silme işlemleri yansıtacak şekilde kayıt kümesi için sırada çağırarak kayıt derlemelisiniz `Requery`. Kayıt kümesi bir dinamik ise, sizin veya diğer kullanıcıların, var olan kayıtların (ancak değil eklemeleri) olun güncelleştirmeleri otomatik olarak yansıtır. Kayıt kümesi bir anlık görüntüyse çağırmalısınız `Requery` düzenlemeleri diğer kullanıcıların yanı sıra ekleme ve silme işlemleri tarafından yansıtmak için.
+Kayıt kümesinin, sizin veya diğer kullanıcıların veri kaynağına yaptığı eklemeleri ve silmeleri yansıtması için, `Requery`çağırarak kayıt kümesini yeniden oluşturmanız gerekir. Kayıt kümesi bir Dynaset ise, sizin veya diğer kullanıcıların mevcut kayıtları (eklemeler) üzerinde yaptığı güncelleştirmeleri otomatik olarak yansıtır. Kayıt kümesi bir anlık görüntüdür, diğer kullanıcıların yanı sıra eklemeleri ve silmeleri yansıtmak için `Requery` çağırmanız gerekir.
 
-Bir dinamik veya bir anlık görüntü için çağrı `Requery` yeni bir filtre veya sıralama ya da yeni parametre değerlerini kullanarak kayıt kümesini yeniden oluşturmak için istediğiniz zaman. İçin yeni değerler atayarak yeni bir filtre veya sıralama özelliğini ayarlayın `m_strFilter` ve `m_strSort` çağırmadan önce `Requery`. Parametre veri üyeleri çağırmadan önce yeni değerler atayarak yeni parametreler Ayarla `Requery`. Filtreleme ve sıralama dizeleri aynıdır, sorgu performansı geliştirir yeniden kullanabilirsiniz.
+Bir Dynaset veya anlık görüntü için, yeni bir filtre veya sıralama ya da yeni parametre değerleri kullanarak kayıt kümesini yeniden derlemek istediğiniz zaman `Requery` çağırın. `Requery`çağrılmadan önce `m_strFilter` ve `m_strSort` yeni değerler atayarak yeni filtre veya sıralama özelliğini ayarlayın. `Requery`çağrılmadan önce parametre veri üyelerine yeni değerler atayarak yeni parametreler ayarlayın. Filtre ve sıralama dizeleri değişmezse, sorguyu yeniden kullanabilirsiniz ve bu da performansı geliştirir.
 
-Kayıt yeniden deneme başarısız olursa, kayıt kapatılır. Çağırmadan önce `Requery`, kayıt çağırarak yeniden olup olmadığını belirlemek `CanRestart` üye işlevi. `CanRestart` garanti etmez `Requery` başarılı olur.
+Kayıt kümesini yeniden derleme girişimi başarısız olursa, kayıt kümesi kapalıdır. `Requery`çağırmadan önce, `CanRestart` üye işlevini çağırarak kayıt kümesinin yeniden sorgulama yapıp kullanamayacağını belirleyebilirsiniz. `CanRestart`, `Requery` başarılı olacağını garanti etmez.
 
 > [!CAUTION]
->  Çağrı `Requery` yalnızca çağrısı yapmanız sonrasında [açık](#open).
+>  Yalnızca [Open](#open)'ı çağırdıktan sonra `Requery` çağırın.
 
 ### <a name="example"></a>Örnek
 
-Bu örnekte, farklı bir sıralama düzeni uygulamak için bir kayıt oluşturur.
+Bu örnek, farklı bir sıralama düzeni uygulamak için bir kayıt kümesi yeniden oluşturur.
 
 [!code-cpp[NVC_MFCDatabase#29](../../mfc/codesnippet/cpp/crecordset-class_16.cpp)]
 
-##  <a name="setabsoluteposition"></a>  CRecordset::SetAbsolutePosition
+##  <a name="setabsoluteposition"></a>CRecordset:: SetAbsolutePosition
 
-Belirtilen kayıt numarasına karşılık gelen kayıt kayıt kümesini yerleştirir.
+Kayıt kümesini belirtilen kayıt numarasına karşılık gelen kayıtta konumlandırır.
 
 ```
 void SetAbsolutePosition(long nRows);
@@ -1688,28 +1688,28 @@ void SetAbsolutePosition(long nRows);
 
 ### <a name="parameters"></a>Parametreler
 
-*nRows*<br/>
-Bir tabanlı sıralı konumu için geçerli kayıt kümesinde.
+*nsatırlar*<br/>
+Kayıt kümesindeki geçerli kayıt için tek tabanlı sıra konumu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`SetAbsolutePosition` Bu sıralı konumlarına göre geçerli kayıt işaretçisi taşır.
+`SetAbsolutePosition` geçerli kayıt işaretçisini bu sıra konumuna göre taşımaktır.
 
 > [!NOTE]
->  Bu üye işlevi salt iletme kayıt kümeleri üzerinde geçerli değil.
+>  Bu üye işlevi yalnızca iletme kayıt kümelerinde geçerli değildir.
 
-ODBC kayıt kümeleri için ilk kayıt kümesinde bir mutlak konumu ayarı 1'in başvurduğu; dosya başına (BOF) konumu için 0 ayarı gösterir.
+ODBC kayıt kümeleri için, mutlak konum ayarı, kayıt kümesindeki ilk kayda başvurur; 0 ayarı dosya başı (BOF) konumunu ifade eder.
 
-Negatif değerleri de geçirebilirsiniz `SetAbsolutePosition`. Bu durumda kayıt kümesinin konumu kayıt sonundan değerlendirilir. Örneğin, `SetAbsolutePosition( -1 )` son kaydını kayıt kümesindeki geçerli kayıt işaretçisine taşır.
+Ayrıca, `SetAbsolutePosition`negatif değerler geçirebilirsiniz. Bu durumda, kayıt kümesinin konumu kayıt kümesinin sonundan değerlendirilir. Örneğin, `SetAbsolutePosition( -1 )` geçerli kayıt işaretçisini kayıt kümesindeki son kayda taşıır.
 
 > [!NOTE]
->  Mutlak konumu, bir yedek kayıt numarası olarak kullanılmak üzere tasarlanmamıştır. Yer işaretleri hala korur ve sonraki önceki kayıtları silinen bir kaydın konumu değişiklikler belirli bir konuma döndürerek için önerilen yoldur. Ayrıca, bir SQL deyimi kullanarak bir oluşturulmadıkçabirkayıtiçindekitektekkayıtlarısıralamasınıkesindeğildirçünkükayıtyenidenyenidenoluşturulursa,belirlibirkaydıaynımutlakkonumunusahipolacağınıgarantiedilemez**ORDER BY** yan tümcesi.
+>  Mutlak konum, vekil kayıt numarası olarak kullanılmak üzere tasarlanmamıştır. Önceki kayıtlar silindiğinde bir kaydın konumu değiştiği için, yer işaretleri hâlâ belirli bir konuma geri dönmek ve döndürmek için önerilen yoldur. Ayrıca, bir kayıt kümesi içindeki bireysel kayıtların sırası, sıralama kullanılarak bir SQL ifadesiyle oluşturulmadığı müddetçe, belirli bir kaydın aynı mutlak konuma sahip olduğundan emin olamaz.yan tümce.
 
-Kayıt kümesi gezinti ve yer işaretleri hakkında daha fazla bilgi için makalelere göz atın [kayıt kümesi: Kaydırma (ODBC)](../../data/odbc/recordset-scrolling-odbc.md) ve [kayıt kümesi: Yer işaretleri ve Mutlak Konumlar (ODBC)](../../data/odbc/recordset-bookmarks-and-absolute-positions-odbc.md).
+Kayıt kümesi gezintisi ve yer işaretleri hakkında daha fazla bilgi için bkz. makalelere [kayıt kümesi: kaydırma (ODBC)](../../data/odbc/recordset-scrolling-odbc.md) ve [kayıt kümesi: yer Işaretleri ve mutlak konumlar (ODBC)](../../data/odbc/recordset-bookmarks-and-absolute-positions-odbc.md).
 
-##  <a name="setbookmark"></a>  CRecordset::SetBookmark
+##  <a name="setbookmark"></a>CRecordset:: SetBookmark
 
-Kayıtta belirtilen yer işareti içeren kayıt kümesini yerleştirir.
+Kayıt kümesini belirtilen yer işaretini içeren kayıt üzerinde konumlandırır.
 
 ```
 void SetBookmark(const CDBVariant& varBookmark);
@@ -1718,25 +1718,25 @@ void SetBookmark(const CDBVariant& varBookmark);
 ### <a name="parameters"></a>Parametreler
 
 *varBookmark*<br/>
-Bir başvuru bir [CDBVariant](../../mfc/reference/cdbvariant-class.md) belirli bir kaydı için yer işareti değeri içeren nesne.
+Belirli bir kayıt için yer işareti değerini içeren bir [CDBVariant](../../mfc/reference/cdbvariant-class.md) nesnesine başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yer işaretleri kayıt kümesinde desteklenip desteklenmediğini belirlemek için çağrı [CanBookmark](#canbookmark). Destekleniyorsa yer işaretleri kullanılabilir hale getirmek için ayarlamalısınız `CRecordset::useBookmarks` seçeneğini *dwOptions* parametresinin [açık](#open) üye işlevi.
+Kayıt kümesinde yer işaretlerinin desteklenip desteklenmediğini anlamak için [CanBookmark](#canbookmark)çağırın. Eğer desteklendiklerinde yer imlerini kullanılabilir hale getirmek için, [Open](#open) member Işlevinin *dwoptions* parametresinde `CRecordset::useBookmarks` seçeneğini ayarlamanız gerekir.
 
 > [!NOTE]
->  Yer işaretleri desteklenmeyen veya kullanılamıyor, çağırma `SetBookmark` oluşturulan bir özel durumu oluşur. Yer işaretleri salt iletme kayıt kümeleri desteklenmez.
+>  Yer işaretleri desteklenmiyorsa veya kullanılamıyorsa, `SetBookmark` çağırmak bir özel durum oluşmasına neden olur. Yer işaretleri salt iletme kayıt kümelerinde desteklenmez.
 
-Yer işareti için geçerli kayıt ilk almak için arama [GetBookmark](#getbookmark), yer işareti değeri kaydeder bir `CDBVariant` nesne. Çağırarak kayda daha sonra geri dönebilirsiniz `SetBookmark` kaydedilmiş bu yer işaretini değerini kullanarak.
+İlk olarak geçerli kayıt için yer işaretini almak üzere, bir `CDBVariant` nesnesine yer işareti değerini kaydeden [GetBookmark](#getbookmark)öğesini çağırın. Daha sonra, kaydedilen yer işareti değerini kullanarak `SetBookmark` çağırarak bu kayda geri dönebilirsiniz.
 
 > [!NOTE]
->  Belirli kayıt işlemlerinden sonra yer işareti Kalıcılık çağırmadan önce denetlemelisiniz `SetBookmark`. Örneğin, bir yer işareti ile alırsanız `GetBookmark` ve sonra çağrı `Requery`, yer işareti artık geçerli olmayabilir. Çağrı [CDatabase::GetBookmarkPersistence](../../mfc/reference/cdatabase-class.md#getbookmarkpersistence) güvenli bir şekilde çağırıp çağırmayacağınızı denetlenecek `SetBookmark`.
+>  Belirli kayıt kümesi işlemlerinden sonra, `SetBookmark`çağrılmadan önce yer işareti kalıcılığını denetlemeniz gerekir. Örneğin, `GetBookmark` içeren bir yer işareti alırsanız ve sonra `Requery`çağırırsanız, yer işareti artık geçerli olmayabilir. `SetBookmark`güvenli bir şekilde çağırıp çağıramayacağını denetlemek için [CDatabase:: Getbookmarkkalıcılığı](../../mfc/reference/cdatabase-class.md#getbookmarkpersistence) çağırın.
 
-Yer işaretleri ve kayıt kümesi Gezinti hakkında daha fazla bilgi için makalelere göz atın [kayıt kümesi: Yer işaretleri ve Mutlak Konumlar (ODBC)](../../data/odbc/recordset-bookmarks-and-absolute-positions-odbc.md) ve [kayıt kümesi: Kaydırma (ODBC)](../../data/odbc/recordset-scrolling-odbc.md).
+Yer işaretleri ve kayıt kümesi gezintisi hakkında daha fazla bilgi için bkz. makalelere [kayıt kümesi: yer işaretleri ve mutlak konumlar (ODBC)](../../data/odbc/recordset-bookmarks-and-absolute-positions-odbc.md) ve [kayıt kümesi: kaydırma (ODBC)](../../data/odbc/recordset-scrolling-odbc.md).
 
-##  <a name="setfielddirty"></a>  CRecordset::SetFieldDirty
+##  <a name="setfielddirty"></a>CRecordset:: SetFieldDirty
 
-Alan veri üyesi kümesinin değiştirilmiş veya değişmemiş olarak işaretler.
+Kayıt kümesinin alan veri üyesini değiştirilmiş veya değiştirilmemiş olarak işaretler.
 
 ```
 void SetFieldDirty(void* pv, BOOL bDirty = TRUE);
@@ -1744,39 +1744,39 @@ void SetFieldDirty(void* pv, BOOL bDirty = TRUE);
 
 ### <a name="parameters"></a>Parametreler
 
-*BD*<br/>
-Kayıt kümesi veya NULL bir alan veri üyesinin adresini içerir. NULL ise, kayıt kümesindeki tüm alan veri üyeleri işaretlenir. (C++ NULL değil Null ile aynı veritabanı terminolojisinde, "herhangi bir değere sahip." anlamına gelir)
+*bakın*<br/>
+Kayıt kümesindeki bir alan veri üyesinin adresini veya NULL değerini içerir. NULL ise, kayıt kümesindeki tüm alan verisi üyeleri işaretlenir. (C++ Null, Veritabanı terminolojisinde null ile aynı değildir, yani "hiçbir değer yok" anlamına gelir.)
 
 *bDirty*<br/>
-"(Değiştirilmiş) kirli olarak" işaretlenmesini alan veri üyesi ise, TRUE. "(Değişmeden) temiz olarak" işaretlenmesini alan veri üyesi ise, aksi takdirde FALSE.
+Alan veri üyesi "kirli" (değiştirilmiş) olarak işaretlenmek için TRUE. Aksi takdirde, alan veri üyesi "temiz" (değiştirilmemiş) olarak işaretlenmek için FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Alanları değişmemiş olarak işaretleme alanı güncelleştirilmez ve az SQL trafiğini sonuçlarını sağlar.
+Alanları değiştirilmemiş olarak işaretlemek, alanın güncelleştirilmediğini ve daha az SQL trafiği elde edilmesini sağlar.
 
 > [!NOTE]
->  Bu üye işlevi toplu satır getirme kullanarak kümelerinde geçerli değildir. Toplu satır getirme, ardından uyguladıysanız `SetFieldDirty` başarısız bir onaylama işlemi neden olur. Toplu satır getirme hakkında daha fazla bilgi için bkz [kayıt kümesi: Kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
+>  Bu üye işlevi, toplu satır getirme kullanan kayıt kümelerinde uygulanabilir değildir. Toplu satır getirmeyi uyguladıysanız `SetFieldDirty`, başarısız bir onaylama işlemine neden olur. Toplu satır getirme hakkında daha fazla bilgi için bkz. kayıt [kümesi: kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
 
-Framework işaretleri alan veri üyeleri, veri kaynağında kayıt kayıt alanı değişimi (RFX) mekanizması tarafından yazılır emin olmak için değiştirildi. Genellikle bir alanın değerini değiştirme alanı kirli otomatik olarak ayarlar, nadiren çağırmanız gerekir böylece `SetFieldDirty` kendiniz, ancak bazen isteyebileceğiniz sütunları açıkça güncelleştirildi veya kaldırılacak alanı verileri hangi değeri bağımsız olarak eklenen emin emin olmak üye.
+Çerçeve, veri kaynağındaki kayda kayıt alanı değişimi (RFX) mekanizması tarafından yazıldıklarından emin olmak için alan veri üyelerini işaretler. Bir alanın değerini değiştirmek genellikle alanı kirli olarak ayarlar. bu nedenle, nadiren `SetFieldDirty` çağırmanız gerekecektir, ancak bazen, alan verilerinde hangi değerin olduğuna bakılmaksızın sütunların açıkça güncelleştirilmesini veya eklenmesini sağlamak isteyebilirsiniz üyesidir.
 
 > [!CAUTION]
->  Yalnızca çağrısı yapmanız sonrasında bu üye işlevi çağrısı [Düzenle](#edit) veya [AddNew](#addnew).
+>  Yalnızca [Edit](#edit) veya [AddNew](#addnew)çağrıldıktan sonra bu üye işlevini çağırın.
 
-İşlevinin ilk bağımsız değişkeni yalnızca işlev geçerlidir NULL kullanarak `outputColumn` alanları değil `param` alanları. Örneğin, çağrı
+İşlevin ilk bağımsız değişkeni için NULL kullanmak, işlevi `param` alanlara değil yalnızca `outputColumn` alanlara uygular. Örneğin, çağrı
 
 [!code-cpp[NVC_MFCDatabase#26](../../mfc/codesnippet/cpp/crecordset-class_10.cpp)]
 
-yalnızca ayarlar `outputColumn` null; alanlar `param` alanları etkilenmez.
+yalnızca `outputColumn` alanlarını NULL olarak ayarlar; `param` alanlar etkilenmeyecektir.
 
-Üzerinde çalışılacak `param` alanları, ayrı ayrı gerçek adresi sağlamanız gerekir `param` gibi çalışmak istediğiniz:
+`param` alanlarla çalışmak için, üzerinde çalışmak istediğiniz bireysel `param` gerçek adresini sağlamanız gerekir, örneğin:
 
 [!code-cpp[NVC_MFCDatabase#27](../../mfc/codesnippet/cpp/crecordset-class_11.cpp)]
 
-Yani tüm ayarlayamıyor `param` ile yapabildiğiniz gibi alanları NULL olarak `outputColumn` alanları.
+Bu, `outputColumn` alanları ile yaptığınız gibi tüm `param` alanlarını NULL olarak ayarlayamayacağı anlamına gelir.
 
-##  <a name="setfieldnull"></a>  CRecordset::SetFieldNull
+##  <a name="setfieldnull"></a>CRecordset:: SetFieldNull
 
-Kayıt alanı veri üyesi (özellikle hiçbir değer yok) Null veya boş olmayan olarak işaretler.
+Kayıt kümesinin bir alan veri üyesini null (özellikle bir değer olmadan) veya null olmayan olarak işaretler.
 
 ```
 void SetFieldNull(void* pv, BOOL bNull = TRUE);
@@ -1784,44 +1784,44 @@ void SetFieldNull(void* pv, BOOL bNull = TRUE);
 
 ### <a name="parameters"></a>Parametreler
 
-*BD*<br/>
-Kayıt kümesi veya NULL bir alan veri üyesinin adresini içerir. NULL ise, kayıt kümesindeki tüm alan veri üyeleri işaretlenir. (C++ NULL değil Null ile aynı veritabanı terminolojisinde, "herhangi bir değere sahip." anlamına gelir)
+*bakın*<br/>
+Kayıt kümesindeki bir alan veri üyesinin adresini veya NULL değerini içerir. NULL ise, kayıt kümesindeki tüm alan verisi üyeleri işaretlenir. (C++ Null, Veritabanı terminolojisinde null ile aynı değildir, yani "hiçbir değer yok" anlamına gelir.)
 
 *bNull*<br/>
-Alan veri üyesi değeri (Null) sahip olarak işaretlenen ise sıfır olmayan. Null olmayan işaretlenmesine alan veri üyesi ise, aksi durumda 0.
+Alan verisi üyesinin değer yok (null) olarak işaretlenmek için sıfır dışında. Aksi takdirde 0 alan verisi üyesi null olarak işaretlenir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yeni bir kayıt için bir kayıt kümesi eklediğinizde, tüm alan veri üyeleri başlangıçta Null değerine ayarlayın ve "(değiştirilmiş) kirli olarak" bayrak. Bir veri kaynağındaki bir kaydı aldığınızda, sütunlarını ya da zaten değerlere sahip veya Null.
+Bir kayıt kümesine yeni bir kayıt eklediğinizde, tüm alan veri üyeleri başlangıçta null değere ayarlanır ve "kirli" (değiştirildi) olarak işaretlenir. Bir veri kaynağından bir kayıt aldığınızda, sütunlarının değerleri zaten var ya da null.
 
 > [!NOTE]
->  Bu üye işlevi, toplu satır getirme kullanarak kümelerinde çağırmayın. Toplu satır getirme uyguladıysanız, çağırma `SetFieldNull` sonuçları başarısız bir onaylama işlemi. Toplu satır getirme hakkında daha fazla bilgi için bkz [kayıt kümesi: Kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
+>  Toplu satır getirme kullanan kayıt kümelerinde Bu üye işlevini çağırmayın. Toplu satır getirme uyguladıysanız, `SetFieldNull` çağrısı başarısız bir onaylama sırasında sonuçları çağırır. Toplu satır getirme hakkında daha fazla bilgi için bkz. kayıt [kümesi: kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
 
-Özel bir alan geçerli kaydın çağrısı bir değer olmaması olarak atamak istiyorsanız `SetFieldNull` ile *bNull* boş olarak işaretlemek için TRUE olarak ayarlayın. Bir alan daha önce Null olarak işaretlendi ve artık bir değeri vermek istiyorsanız, yeni değeri ayarlamanız yeterlidir. Null bayrağıyla kaldırmak zorunda değilsiniz `SetFieldNull`. Alan Null olmasına izin verilip verilmeyeceğini belirlemek için çağrı `IsFieldNullable`.
+Geçerli kaydın bir alanını bir değer olmadan belirlemek isterseniz, null olarak işaretlemek için *bNull* değeri true olarak ayarlanmış `SetFieldNull` çağırın. Bir alan önceden null olarak işaretlenmişse ve bundan böyle bir değer vermek istiyorsanız, yeni değerini ayarlamanız yeterlidir. Null bayrağını `SetFieldNull`kaldırmak zorunda değilsiniz. Alanın null olmasına izin verilip verilmeyeceğini anlamak için `IsFieldNullable`çağırın.
 
 > [!CAUTION]
->  Yalnızca çağrısı yapmanız sonrasında bu üye işlevi çağrısı [Düzenle](#edit) veya [AddNew](#addnew).
+>  Yalnızca [Edit](#edit) veya [AddNew](#addnew)çağrıldıktan sonra bu üye işlevini çağırın.
 
-İşlevinin ilk bağımsız değişkeni yalnızca işlev geçerlidir NULL kullanarak `outputColumn` alanları değil `param` alanları. Örneğin, çağrı
+İşlevin ilk bağımsız değişkeni için NULL kullanmak, işlevi `param` alanlara değil yalnızca `outputColumn` alanlara uygular. Örneğin, çağrı
 
 [!code-cpp[NVC_MFCDatabase#26](../../mfc/codesnippet/cpp/crecordset-class_10.cpp)]
 
-yalnızca ayarlar `outputColumn` null; alanlar `param` alanları etkilenmez.
+yalnızca `outputColumn` alanlarını NULL olarak ayarlar; `param` alanlar etkilenmeyecektir.
 
-Üzerinde çalışılacak `param` alanları, ayrı ayrı gerçek adresi sağlamanız gerekir `param` gibi çalışmak istediğiniz:
+`param` alanlarla çalışmak için, üzerinde çalışmak istediğiniz bireysel `param` gerçek adresini sağlamanız gerekir, örneğin:
 
 [!code-cpp[NVC_MFCDatabase#27](../../mfc/codesnippet/cpp/crecordset-class_11.cpp)]
 
-Yani tüm ayarlayamıyor `param` ile yapabildiğiniz gibi alanları NULL olarak `outputColumn` alanları.
+Bu, `outputColumn` alanları ile yaptığınız gibi tüm `param` alanlarını NULL olarak ayarlayamayacağı anlamına gelir.
 
 > [!NOTE]
->  Parametreleri NULL, çağrı ayarlarken `SetFieldNull` önce kayıt onaylama açılan sonuçlanır. Bu durumda, çağrı [SetParamNull](#setparamnull).
+>  Parametreleri null olarak ayarlarken, kayıt kümesi açılmadan önce `SetFieldNull` çağrısı bir onaylama işlemine neden olur. Bu durumda [SetParamNull](#setparamnull)çağrısı yapın.
 
-`SetFieldNull` aracılığıyla uygulanır [DoFieldExchange](#dofieldexchange).
+`SetFieldNull`, [DoFieldExchange](#dofieldexchange)aracılığıyla uygulanır.
 
-##  <a name="setlockingmode"></a>  CRecordset::SetLockingMode
+##  <a name="setlockingmode"></a>CRecordset:: SetLockingMode
 
-"İyimser" (varsayılan) kilitleme ya da "kötümser" kilitleme Kilitleme modunu ayarlar. Kayıtların güncelleştirmeleri nasıl kilitlenip belirler.
+Kilitleme modunu "iyimser" kilitleme (varsayılan) veya "kötümser" kilitleme olarak ayarlar. Kayıtların güncelleştirmeler için nasıl kilitlendiğini belirler.
 
 ```
 void SetLockingMode(UINT nMode);
@@ -1830,19 +1830,19 @@ void SetLockingMode(UINT nMode);
 ### <a name="parameters"></a>Parametreler
 
 *nMode*<br/>
-Aşağıdaki değerlerden birini içeren `enum LockMode`:
+`enum LockMode`aşağıdaki değerlerden birini içerir:
 
-- `optimistic` İyimser kilitleme kilitler çağrı sırasında yalnızca güncelleştirilen kaydı `Update`.
+- `optimistic` Iyimser kilitleme, yalnızca `Update`çağrısı sırasında güncelleştirilmekte olan kaydı kilitler.
 
-- `pessimistic` Kötümser kilitleme kilitler kaydı hemen sonra `Edit` olarak adlandırılır ve tutar kadar kilitli `Update` çağrı tamamlanana veya yeni kayıt için taşıyın.
+- `pessimistic` Kötümser kilitleme, `Edit` çağrıldıktan hemen sonra kaydı kilitler ve `Update` çağrısı tamamlanana kadar veya yeni bir kayda geçene kadar kilitli kalır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kayıt kümesi güncelleştirmeleri kullanan iki kayıt kilitleme stratejileri belirtmek gerekirse, bu üye işlevini çağırın. Varsayılan olarak, kayıt kilitleme modudur `optimistic`. Daha dikkatli değiştirebilir miyim `pessimistic` stratejisi kilitleme. Çağrı `SetLockingMode` oluşturmak ve kayıt kümesi nesnesi açılamadı sonra ancak çağırmadan önce `Edit`.
+Kayıt kümesinin güncelleştirmeler için hangi iki kayıt kilitleme stratejisinden hangisini kullandığını belirtmeniz gerekiyorsa bu üye işlevini çağırın. Varsayılan olarak, bir kayıt kümesinin kilitleme modu `optimistic`. Bunu, kilitleme stratejisi `pessimistic` daha dikkatli bir şekilde değiştirebilirsiniz. Kayıt kümesi nesnesini oluşturup açtıktan sonra, ancak `Edit`çağırmadan önce `SetLockingMode` çağırın.
 
-##  <a name="setparamnull"></a>  CRecordset::SetParamNull
+##  <a name="setparamnull"></a>CRecordset:: SetParamNull
 
-Bir parametre (özellikle hiçbir değer yok) Null veya boş olmayan olarak işaretler.
+Bir parametreyi null (özellikle bir değer olmadan) veya null olmayan şekilde işaretler.
 
 ```
 void SetParamNull(
@@ -1852,21 +1852,21 @@ void SetParamNull(
 
 ### <a name="parameters"></a>Parametreler
 
-*nIndex*<br/>
-Parametre sıfır tabanlı dizini.
+*nDizin*<br/>
+Parametrenin sıfır tabanlı dizini.
 
 *bNull*<br/>
-Değilse (varsayılan değer) TRUE, parametre Null olarak işaretlenir. Aksi takdirde, parametre Null olmayan işaretlenir.
+TRUE ise (varsayılan değer), parametre null olarak işaretlenir. Aksi takdirde, parametresi null olmayan olarak işaretlenir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Farklı [SetFieldNull](#setfieldnull), çağırabilirsiniz `SetParamNull` kayıt açılmadan.
+[SetFieldNull](#setfieldnull)'ın aksine, kayıt kümesini açmadan önce `SetParamNull` çağırabilirsiniz.
 
-`SetParamNull` genellikle önceden tanımlanmış sorgular (saklı yordamlar) kullanılır.
+`SetParamNull` genellikle önceden tanımlanmış sorgular (saklı yordamlar) ile kullanılır.
 
-##  <a name="setrowsetcursorposition"></a>  CRecordset::SetRowsetCursorPosition
+##  <a name="setrowsetcursorposition"></a>CRecordset:: SetRowsetCursorPosition
 
-İmleç geçerli satır içinde bir satıra taşır.
+İmleci geçerli satır kümesi içindeki bir satıra kaydırır.
 
 ```
 void SetRowsetCursorPosition(WORD wRow, WORD wLockType = SQL_LOCK_NO_CHANGE);
@@ -1875,30 +1875,30 @@ void SetRowsetCursorPosition(WORD wRow, WORD wLockType = SQL_LOCK_NO_CHANGE);
 ### <a name="parameters"></a>Parametreler
 
 *wRow*<br/>
-Bir tabanlı konumu bir satır satır kümesi geçerli. Bu değer 1'den satır boyutunu değişebilir.
+Geçerli satır kümesindeki bir satırın tek tabanlı konumu. Bu değer, 1 ' den satır kümesinin boyutuyla değişebilir.
 
 *wLockType*<br/>
-Bunu yenilendikten satır kilitleme belirten değer. Ayrıntılar için açıklamalara bakın.
+Yenilenme sonrasında satırın nasıl kilitleneceği belirten değer. Ayrıntılar için bkz. açıklamalar.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Toplu satır getirme uygularken kayıtları ilk kaydı getirilen satır kümesindeki geçerli kayıt olduğu satır kümeleri tarafından alınır. Geçerli kayıt başka bir kayıt satır içinde yapmak için çağrı `SetRowsetCursorPosition`. Örneğin, birleştirebilirsiniz `SetRowsetCursorPosition` ile [GetFieldValue](#getfieldvalue) veri kümeniz herhangi bir kayıttan dinamik olarak almak için üye işlevi.
+Toplu satır getirme uygularken, kayıtlar satır kümesi tarafından alınır; burada getirilen satır kümesindeki ilk kayıt geçerli kayıttır. Geçerli kaydın satır kümesi içinde başka bir kayıt yapmak için `SetRowsetCursorPosition`çağırın. Örneğin, verileri kayıt kümenizin herhangi bir kaydından dinamik olarak almak için `SetRowsetCursorPosition` [GetFieldValue](#getfieldvalue) üye işleviyle birleştirebilirsiniz.
 
-Kullanılacak `SetRowsetCursorPosition`, belirterek toplu satır getirme uygulanan gerekir `CRecordset::useMultiRowFetch` seçeneği *dwOptions* parametresinde [açık](#open) üye işlevi.
+`SetRowsetCursorPosition`kullanmak için, [Open](#open) member Işlevindeki *dwoptions* parametresinin `CRecordset::useMultiRowFetch` seçeneğini belirterek toplu satır getirmeyi uygulamış olmanız gerekir.
 
-`SetRowsetCursorPosition` ODBC API işlevini çağıran `SQLSetPos`. *WLockType* parametresinin belirttiği sonuna satır kilidi durumunu `SQLSetPos` yürütüldü. Aşağıdaki tabloda olası değerleri açıklanmaktadır *wLockType*.
+`SetRowsetCursorPosition` ODBC API işlevini `SQLSetPos`çağırır. *WLockType* parametresi, `SQLSetPos` yürütüldükten sonra satırın kilit durumunu belirtir. Aşağıdaki tabloda *wLockType*için olası değerler açıklanmaktadır.
 
 |wLockType|Açıklama|
 |---------------|-----------------|
-|SQL_LOCK_NO_CHANGE (varsayılan değer)|Sürücü veya veri kaynağı önce olduğu gibi satır aynı kilitli veya kilidi açılmış durumda olmasını sağlar. `SetRowsetCursorPosition` çağrıldı.|
-|SQL_LOCK_EXCLUSIVE|Satır bir sürücü veya veri kaynağı özel olarak kilitler. Bu tür bir kilit tüm veri kaynaklarını destekler.|
-|SQL_LOCK_UNLOCK|Sürücü veya veri kaynağı, satır kilidini açar. Bu tür bir kilit tüm veri kaynaklarını destekler.|
+|SQL_LOCK_NO_CHANGE (varsayılan değer)|Sürücü veya veri kaynağı, `SetRowsetCursorPosition` çağrılmadan önce, sıranın aynı kilitli veya kilitlenmemiş durumda olmasını sağlar.|
+|SQL_LOCK_EXCLUSIVE|Sürücü veya veri kaynağı satırı özel olarak kilitler. Tüm veri kaynakları bu tür kilidi desteklemez.|
+|SQL_LOCK_UNLOCK|Sürücü veya veri kaynağı satırın kilidini açar. Tüm veri kaynakları bu tür kilidi desteklemez.|
 
-Hakkında daha fazla bilgi için `SQLSetPos`, Windows SDK'sı bakın. Toplu satır getirme hakkında daha fazla bilgi için bkz [kayıt kümesi: Kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
+`SQLSetPos`hakkında daha fazla bilgi için bkz. Windows SDK. Toplu satır getirme hakkında daha fazla bilgi için bkz. kayıt [kümesi: kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
 
-##  <a name="setrowsetsize"></a>  CRecordset::SetRowsetSize
+##  <a name="setrowsetsize"></a>CRecordset:: SetRowsetSize
 
-Getirme sırasında almak istediğiniz kayıt sayısını belirtir.
+Bir getirme sırasında almak istediğiniz kayıt sayısını belirtir.
 
 ```
 virtual void SetRowsetSize(DWORD dwNewRowsetSize);
@@ -1907,27 +1907,27 @@ virtual void SetRowsetSize(DWORD dwNewRowsetSize);
 ### <a name="parameters"></a>Parametreler
 
 *dwNewRowsetSize*<br/>
-Belirli bir getirme sırasında almak için satır sayısı.
+Belirli bir getirme sırasında alınacak satır sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu sanal üye işlevi, tek bir getirme sırasında toplu satır getirme kullanırken almak istediğiniz kaç satır belirtir. Toplu satır getirme uygulamak için ayarlamalısınız `CRecordset::useMultiRowFetch` seçeneğini *dwOptions* parametresinin [açık](#open) üye işlevi.
+Bu sanal üye işlevi, toplu satır getirme kullanılırken tek bir getirme sırasında kaç satır getirmek istediğinizi belirtir. Toplu satır getirmeyi uygulamak için, [Open](#open) member Işlevinin *dwoptions* parametresinde `CRecordset::useMultiRowFetch` seçeneğini ayarlamanız gerekir.
 
 > [!NOTE]
->  Çağırma `SetRowsetSize` uygulamadan toplu satır getirme başarısız bir onaylama işlemi içinde neden olur.
+>  Toplu satır getirmeyi uygulamadan `SetRowsetSize` çağırmak, başarısız bir onaylama işlemine neden olur.
 
-Çağrı `SetRowsetSize` çağırmadan önce `Open` başlangıçta kayıt satır kümesi boyutunu ayarlamak için. Toplu satır getirme uygularken varsayılan satır boyutu 25'tir.
+Kayıt kümesinin satır kümesi boyutunu başlangıçta ayarlamak için `Open` çağrılmadan önce `SetRowsetSize` çağırın. Toplu satır getirmeyi uygularken varsayılan satır kümesi boyutu 25 ' tir.
 
 > [!NOTE]
->  Çağırırken dikkatli `SetRowsetSize`. Depolama verilerini el ile ayırma varsa (belirtildiği gibi `CRecordset::userAllocMultiRowBuffers` bulunan dwOptions parametrenin seçeneği `Open`), çağırdıktan sonra bu depolama arabellekleri yeniden tahsis gerek olup olmadığını denetlemelisiniz `SetRowsetSize`, önce herhangi bir imleç gezinme işlemi gerçekleştirin.
+>  `SetRowsetSize`çağrılırken dikkatli olun. Veriler için el ile depolama alanı ayırdıysanız (`Open`dwOptions parametresinin `CRecordset::userAllocMultiRowBuffers` seçeneği tarafından belirtildiği gibi), `SetRowsetSize`çağırdıktan sonra, ancak herhangi bir imleç gerçekleştirmeden önce bu depolama arabelleğini yeniden ayırmanız gerekip gerekmediğini denetlemeniz gerekir Gezinti işlemi.
 
-Satır kümesi boyutu için geçerli ayarı almak için çağrı [GetRowsetSize](#getrowsetsize).
+Satır kümesi boyutu için geçerli ayarı almak üzere [GetRowsetSize](#getrowsetsize)çağırın.
 
-Toplu satır getirme hakkında daha fazla bilgi için bkz [kayıt kümesi: Kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
+Toplu satır getirme hakkında daha fazla bilgi için bkz. kayıt [kümesi: kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
 
-##  <a name="update"></a>  CRecordset::Update
+##  <a name="update"></a>CRecordset:: Update
 
-Tamamlanan bir `AddNew` veya `Edit` yeni veya düzenlenmiş verilerin veri kaynağında kaydederek işlemi.
+Yeni veya düzenlenmiş verileri veri kaynağına kaydederek bir `AddNew` veya `Edit` işlemi tamamlar.
 
 ```
 virtual BOOL Update();
@@ -1935,27 +1935,27 @@ virtual BOOL Update();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir kaydı başarıyla güncelleştirildi olursa sıfır dışı; Hiçbir sütun değiştirdiyseniz, aksi durumda 0. Hiçbir kayıt güncelleştirildi veya daha fazlası tek bir kayıtta güncelleştirildi, bir özel durum oluşturulur. Bir özel durum, veri kaynağında da bir durum için herhangi bir hata oluşturulur.
+Bir kayıt başarıyla güncelleştirilirse sıfır dışı; Aksi takdirde 0 sütunu değiştirilmeyecektir. Hiçbir kayıt güncellenmemişse veya birden fazla kayıt güncellendiyse, bir özel durum oluşturulur. Veri kaynağındaki diğer hatalar için de bir özel durum oluşturulur.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi çağrısı yapıldıktan sonra çağırma [AddNew](#addnew) veya [Düzenle](#edit) üye işlevi. Bu çağrı tamamlamak için gereken `AddNew` veya `Edit` işlemi.
+[AddNew](#addnew) veya [Edit](#edit) member işlevine yapılan çağrıdan sonra bu üye işlevini çağırın. `AddNew` veya `Edit` işleminin tamamlanabilmesi için bu çağrı gereklidir.
 
 > [!NOTE]
->  Toplu satır getirme uyguladıysanız çağıramazsınız `Update`. Bu başarısız bir onaylama işlemi neden olur. Ancak sınıf `CRecordset` mekanizması sağlamaz toplu veri satırlarını güncelleştirmek için kendi işlevlerinizi ODBC API işlevini kullanarak yazabileceğiniz `SQLSetPos`. Toplu satır getirme hakkında daha fazla bilgi için bkz [kayıt kümesi: Kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
+>  Toplu satır getirme uyguladıysanız `Update`çağıramaz. Bu, başarısız bir onaylama işlemi oluşmasına neden olur. `CRecordset` sınıfı, toplu veri satırlarını güncelleştirmek için bir mekanizma sağlamasa da, `SQLSetPos`ODBC API işlevini kullanarak kendi işlevlerinizi yazabilirsiniz. Toplu satır getirme hakkında daha fazla bilgi için bkz. kayıt [kümesi: kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
 
-Her ikisi de `AddNew` ve `Edit` eklendi veya düzenlenmiş verilerin yerleştirilir düzenleme arabelleği veri kaynağına kaydetmek için hazırlayın. `Update` verileri kaydeder. İşaretli veya değiştirilmiş olarak algılanan yalnızca bu alanları güncelleştirilir.
+Hem `AddNew` hem de `Edit` veri kaynağına kaydetmek için eklenen veya düzenlenen verilerin yerleştirildiği bir düzenleme arabelleği hazırlayın. `Update` verileri kaydeder. Yalnızca değiştirilen veya değiştirilmiş olarak algılanan alanlar güncelleştirilir.
 
-Veri kaynağı işlemleri destekliyorsa, yapabileceğiniz `Update` çağırın (ve kendi ilişkili `AddNew` veya `Edit` çağrısı) bir işlemin bir parçası. İşlemler hakkında daha fazla bilgi için bkz [işlem (ODBC)](../../data/odbc/transaction-odbc.md).
+Veri kaynağı işlemleri destekliyorsa, `Update` çağrısını (ve buna karşılık gelen `AddNew` veya `Edit` çağrısını) bir işlemin parçası yapabilirsiniz. İşlemler hakkında daha fazla bilgi için bkz. Makale [işleme (ODBC)](../../data/odbc/transaction-odbc.md).
 
 > [!CAUTION]
->  Eğer `Update` ilk ya da çağırma `AddNew` veya `Edit`, `Update` oluşturur bir `CDBException`. Eğer `AddNew` veya `Edit`, çağırmalısınız `Update` çağırmadan önce bir `Move` işlem veya kayıt veya veri kaynağı bağlantısı kapatmadan önce. Aksi takdirde, bildirim yapılmadan değişiklikleriniz kaybolur.
+>  Önce `AddNew` veya `Edit`çağırılmadan `Update` çağırırsanız `Update` bir `CDBException`oluşturur. `AddNew` veya `Edit`çağırırsanız, `Move` bir işlemi çağırmadan önce veya kayıt kümesini ya da veri kaynağı bağlantısını kapatmadan önce `Update` çağırmanız gerekir. Aksi takdirde, değişiklikleriniz bildirim olmadan kaybedilir.
 
-İşleme hakkında ayrıntılı bilgi için `Update` hataları, bkz makaleyi [kayıt kümesi: Kümelerinin kayıtları Güncelleştirmesi (ODBC) kayıtları](../../data/odbc/recordset-how-recordsets-update-records-odbc.md).
+`Update` başarısızlıklarını işleme hakkında daha fazla bilgi için [kayıt kümesi: kayıt kümeleri kayıtları güncelleştirme (ODBC)](../../data/odbc/recordset-how-recordsets-update-records-odbc.md)makalesine bakın.
 
 ### <a name="example"></a>Örnek
 
-Makaleye göz atın [işlem: (ODBC) kayıt kümesinde işlem gerçekleştirme](../../data/odbc/transaction-performing-a-transaction-in-a-recordset-odbc.md).
+İşlem [: kayıt kümesinde Işlem gerçekleştirme (ODBC)](../../data/odbc/transaction-performing-a-transaction-in-a-recordset-odbc.md)makalesine bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

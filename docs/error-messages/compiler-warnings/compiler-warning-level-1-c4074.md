@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C4074
 ms.assetid: cd510e66-c338-4a86-a4d7-bfa1df9b16c3
-ms.openlocfilehash: d9b0259e95198396d8c34ca43781045248e22ad9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1c84bbf436354ed672cedf13358837e298c7e4a5
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62374748"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73626914"
 ---
 # <a name="compiler-warning-level-1-c4074"></a>Derleyici Uyarısı (düzey 1) C4074
 
-Derleyici için ayrılmış başlatma alanına başlatıcılar yerleştirildi
+derleyici için ayrılmış başlatma alanına başlatıcılar yerleştirildi
 
-Tarafından belirtilen derleyici başlatma alanına [#pragma init_seg](../../preprocessor/init-seg.md), Microsoft tarafından ayrılmış. Bu alandaki kodu önce C çalışma zamanı kitaplığı başlatma çalıştırılabilir.
+[#Pragma init_seg](../../preprocessor/init-seg.md)tarafından belirtilen derleyici başlatma alanı Microsoft tarafından ayrılmıştır. Bu alandaki kod, C çalışma zamanı kitaplığının başlatılmasından önce yürütülebilir.
 
-Aşağıdaki örnek, C4074 oluşturur:
+Aşağıdaki örnek C4074 oluşturur:
 
-```
+```cpp
 // C4074.cpp
 // compile with: /W1
 #pragma init_seg( compiler )   // C4074

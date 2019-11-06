@@ -35,12 +35,12 @@ helpviewer_keywords:
 - wmktemp_s function
 - temporary files [C++]
 ms.assetid: 92a7e269-7f3d-4c71-bad6-14bc827a451d
-ms.openlocfilehash: b0db1a50f638c6130e4beb6798431179edec153b
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 464f0dfbdb0b84e1fd29ec650e53f5c2543c4403
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70951592"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73624219"
 ---
 # <a name="_mktemp_s-_wmktemp_s"></a>_mktemp_s, _wmktemp_s
 
@@ -83,15 +83,17 @@ Bu işlevlerin her ikisi de başarı durumunda sıfır döndürür; hatada hata 
 
 |*nameTemplate*|*Sizeınchars*|Dönüş değeri|*Nametemplate* içindeki yeni değer|
 |----------------|-------------------|----------------------|-------------------------------|
-|**DEĞER**|Kaydedilmemiş|**EINVAL**|**DEĞER**|
-|Yanlış biçim (doğru biçim için açıklamalar bölümüne bakın)|Kaydedilmemiş|**EINVAL**|Boş dize|
-|Kaydedilmemiş|< = X 'in sayısı|**EINVAL**|Boş dize|
+|**DEĞER**|Kaydedilmemiş|**EıNVAL**|**DEĞER**|
+|Yanlış biçim (doğru biçim için açıklamalar bölümüne bakın)|Kaydedilmemiş|**EıNVAL**|Boş dize|
+|Kaydedilmemiş|< = X 'in sayısı|**EıNVAL**|Boş dize|
 
 Yukarıdaki hata koşullarından herhangi biri oluşursa, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, **errno** **EINVAL** olarak ayarlanır ve işlevler **EINVAL**döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
 **_Mktemp_s** Işlevi, *nametemplate* bağımsız değişkenini değiştirerek benzersiz bir dosya adı oluşturur, bu nedenle, *nametemplate* işaretçisi yeni dosya adını içeren bir dizeye işaret eder. **_mktemp_s** çok baytlı karakter dizesi bağımsız değişkenlerini uygun şekilde otomatik olarak işler ve çok baytlı karakter dizilerini, çalışma zamanı sistemi tarafından kullanılmakta olan çok baytlı kod sayfasına göre kullanır. **_wmktemp_s** , **_mktemp_s**öğesinin geniş karakterli bir sürümüdür; **_wmktemp_s** bağımsız değişkeni geniş karakterli bir dizedir. **_wmktemp_s** ve **_mktemp_s** aynı şekilde davranır, ancak **_wmktemp_s** çok baytlı karakter dizelerini işlemez.
+
+Bu işlevlerin hata ayıklama Kitaplığı sürümleri ilk olarak arabelleği 0xFE ile doldurur. Bu davranışı devre dışı bırakmak için [_Crtsetdebugfillthreshold](crtsetdebugfillthreshold.md)kullanın.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -125,8 +127,8 @@ FNA12345 yoksa, döndürülen bir sonraki ad tekrar olur:
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_mktemp_s**|\<GÇ. h >|
-|**_wmktemp_s**|\<GÇ. h > veya \<wchar. h >|
+|**_mktemp_s**|\<IO. h >|
+|**_wmktemp_s**|\<io. h > veya \<wchar. h >|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
