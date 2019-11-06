@@ -34,7 +34,7 @@ Aşağıdaki tabloda yerleşik sayısal türler listeler. Sayısal türlerin bil
 |uint16|Bir 16 bitlik işaretsiz tamsayı.|imzasız short|0 ile 65.535|
 |Int32|32-bit işaretli tamsayı.|int|-2.147.483.648 ile 2.147.483.647|
 |uint32|32-bit işaretsiz bir tamsayı.|unsigned int|0'dan 4.294.967.295'e kadar|
-|Int64|64-bit imzalı bir tamsayı.|Long long - veya - __int64|-9,223,372,036,854, 775,808 9.223.372.036.854.775.807 aracılığıyla|
+|Int64|64-bit imzalı bir tamsayı.|Long long - veya - __int64|-9,223,372,036,854, 775,808 ile 9,223,372,036,854,775,807|
 |uint64|64-bit işaretsiz bir tamsayı.|İmzasız uzun uzun - veya - unsigned __int64|0 ile 18,446,744,073,709,551,615|
 |float32|Bir 32-bit IEEE 754 kayan noktalı sayı.|float|3.4e +/-38 (7 basamak)|
 |float64|Bir 64-bit IEEE 754 kayan noktalı sayı.|çift|1.7E +/-308 (15 basamak)|
