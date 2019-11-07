@@ -1,19 +1,19 @@
 ---
 title: .ENDIF
-ms.date: 08/30/2018
+ms.date: 11/05/2019
 f1_keywords:
 - .ENDIF
 helpviewer_keywords:
 - .ENDIF directive
 ms.assetid: b9f25ed5-6634-40f7-bcbc-d3135f09cce6
-ms.openlocfilehash: c80fca47b1168c63b40bbc47d410868820262645
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 089e964e53d2ddfa18e318a533ad95e8dcc4a203
+ms.sourcegitcommit: 45f1d889df633f0f7e4a8e813b46fa73c9858b81
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62204354"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73703452"
 ---
-# <a name="endif"></a>.ENDIF
+# <a name="endif-32-bit-masm"></a>. ENDIF (32-bit masa)
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -21,7 +21,7 @@ ms.locfileid: "62204354"
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bkz: [. Eğer](../../assembler/masm/dot-if.md).
+(yalnızca 32-bit masa.) Bkz [. Eğer](../../assembler/masm/dot-if.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

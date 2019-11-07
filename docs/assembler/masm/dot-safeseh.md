@@ -1,6 +1,6 @@
 ---
 title: .SAFESEH
-ms.date: 08/30/2018
+ms.date: 11/05/2019
 f1_keywords:
 - .SAFESEH
 helpviewer_keywords:
@@ -8,16 +8,16 @@ helpviewer_keywords:
 - SAFESEH directive
 - .SAFESEH directive
 ms.assetid: 6eaac8c4-c46f-47ae-8a66-f5cfeb267e43
-ms.openlocfilehash: 417aea13518621f775cafa176ff7d74f9704d511
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4577bd5d76949dfb777a359c80d91814f1c45fe2
+ms.sourcegitcommit: 45f1d889df633f0f7e4a8e813b46fa73c9858b81
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62178299"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73703954"
 ---
-# <a name="safeseh"></a>.SAFESEH
+# <a name="safeseh-32-bit-masm"></a>. SAFESEH (32-bit masa)
 
-Bir işlev bir yapılandırılmış özel durum işleyici kaydeder.
+Bir işlevi yapılandırılmış özel durum işleyicisi olarak kaydeder. (yalnızca 32-bit masa.)
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -25,11 +25,11 @@ Bir işlev bir yapılandırılmış özel durum işleyici kaydeder.
 
 ## <a name="remarks"></a>Açıklamalar
 
-*tanımlayıcı* yerel olarak tanımlanan bir kimliği olmalı [PROC](../../assembler/masm/proc.md) veya [EXTRN](../../assembler/masm/extrn.md) yordam A [etiket](../../assembler/masm/label-masm.md) izin verilmiyor. . SAFESEH yönergesi gerektirir [SAFESEH](../../assembler/masm/ml-and-ml64-command-line-reference.md) ml.exe komut satırı seçeneği.
+*tanımlayıcı* yerel olarak tanımlanan bir [proc](../../assembler/masm/proc.md) veya [EXTRN](../../assembler/masm/extrn.md) proc için kimlik olmalıdır. [Etikete](../../assembler/masm/label-masm.md) izin verilmiyor. İçin. SAFESEH yönergesi [/SafeSEH](../../assembler/masm/ml-and-ml64-command-line-reference.md) ml. exe komut satırı seçeneğini gerektirir.
 
-Yapılandırılmış özel durum işleyicileri hakkında daha fazla bilgi için bkz. [SAFESEH](../../build/reference/safeseh-image-has-safe-exception-handlers.md).
+Yapılandırılmış özel durum işleyicileri hakkında daha fazla bilgi için bkz. [/SafeSEH](../../build/reference/safeseh-image-has-safe-exception-handlers.md).
 
-Örneğin, bir güvenli özel durum işleyicisini kaydetmek için yeni MASM dosyası (gibi) oluşturmak, SAFESEH ile birleştirin ve bağlı nesnelere ekleyin.
+Örneğin, güvenli bir özel durum işleyicisini kaydetmek için yeni bir MASı dosyası oluşturun (aşağıdaki gibi),/SafeSEH ile birleştirin ve bağlı nesnelere ekleyin.
 
 ```asm
 .386

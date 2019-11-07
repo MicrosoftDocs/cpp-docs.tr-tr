@@ -1,21 +1,21 @@
 ---
 title: .686P
-ms.date: 08/30/2018
+ms.date: 11/05/2019
 f1_keywords:
 - .686P
 helpviewer_keywords:
 - .686P directive
 ms.assetid: 06d9a9bf-50b1-4eed-b4a3-86b256c71b48
-ms.openlocfilehash: 6e37107b76ef1cfea787147dc32725a36fee52f3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 692f60a217f8b18d1f0f669a767f0ffa9b588604
+ms.sourcegitcommit: 45f1d889df633f0f7e4a8e813b46fa73c9858b81
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62206275"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73702904"
 ---
-# <a name="686p"></a>.686P
+# <a name="686p-32-bit-masm"></a>.686P (32-bit MASM)
 
-Tüm yönergeleri (Ayrıcalıklı dahil) Pentium Pro işlemcisi için derleme sağlar.
+Pentium Pro işlemcisi için tüm yönergelerin derlemesini (ayrıcalıklı dahil) sunar. (yalnızca 32-bit masa.)
 
 ## <a name="syntax"></a>Sözdizimi
 

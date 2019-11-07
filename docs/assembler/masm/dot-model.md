@@ -1,58 +1,58 @@
 ---
 title: .MODEL
-ms.date: 08/30/2018
+ms.date: 11/05/2019
 f1_keywords:
 - .MODEL
 helpviewer_keywords:
 - .MODEL directive
 ms.assetid: 057f00df-1515-4c55-852a-d936c8a34b53
-ms.openlocfilehash: c409bf10a2f863c380cda6b4822583ffb3787da6
-ms.sourcegitcommit: 61121faf879cc581a4d39e4baccabf7cf1f673a5
+ms.openlocfilehash: b341cfaec35c08f5ac16447890c85570e9c9c0df
+ms.sourcegitcommit: 45f1d889df633f0f7e4a8e813b46fa73c9858b81
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65934095"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73703577"
 ---
-# <a name="model"></a>.MODEL
+# <a name="model-32-bit-masm"></a>. MODEL (32-bit masa)
 
-Program bellek modeli başlatır.
+Program bellek modelini başlatır. (yalnızca 32-bit masa.)
 
 ## <a name="syntax"></a>Sözdizimi
 
-> . MODEL memorymodel [[, langtype]] [[, stackoption]]
+> . MODEL MemoryModel [[, langtype]] [[, stackoption]]
 
 ### <a name="parameters"></a>Parametreler
 
-*memorymodel*<br/>
-Kod ve veri işaretçileri boyutunu belirler gerekli parametre.
+*MemoryModel*<br/>
+Kod ve veri işaretçilerinin boyutunu belirleyen gerekli parametre.
 
 *langtype*<br/>
-Arama ve adlandırma kuralları için yordamlar ve ortak semboller ayarlar isteğe bağlı parametre.
+Yordamlar ve genel semboller için çağrı ve adlandırma kurallarını ayarlayan isteğe bağlı parametre.
 
-*stackoption*<br/>
+*yığın*<br/>
 İsteğe bağlı parametre.
 
-*stackoption* kullanılmaz *memorymodel* olduğu `FLAT`.
+*MemoryModel* `FLAT`ise *stackoption* kullanılmaz.
 
-Belirtme `NEARSTACK` yığın kesiminin tek bir fiziksel kesim içinde gruplar (`DGROUP`) verileriyle birlikte. Yığın segment kaydı (`SS`) veri segmenti kaydı aynı adresi tutacak varsayılır (`DS`). `FARSTACK` yığın ile gruplandırmaz `DGROUP`; bu nedenle `SS` eşit olmadığı `DS`.
+`NEARSTACK` belirtme yığın segmentini verilerle birlikte tek bir fiziksel kesime (`DGROUP`) gruplandırır. Yığın segmentinin (`SS`), veri segmenti kaydetme (`DS`) ile aynı adresi tutan varsayılır. `FARSTACK`, `DGROUP`ile yığını gruplandırmaz; Bu nedenle `SS` `DS`eşit değildir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-.`MODEL` kullanılmaz [x64 (ml64.exe) için MASM](../../assembler/masm/masm-for-x64-ml64-exe.md).
+.`MODEL` , [x64 (ml64. exe) Için Masd](../../assembler/masm/masm-for-x64-ml64-exe.md)'de kullanılmaz.
 
-Aşağıdaki tabloda, 16-bit ve 32-bit platformu hedeflerken her parametre için olası değerler listelenmiştir:
+Aşağıdaki tabloda, 16 bit ve 32-bit platformları hedeflenirken her bir parametre için olası değerler listelenmektedir:
 
-|Parametre|32-bit değerleri|16-bit değerleri (geliştirme desteği için önceki 16-bit)|
+|Parametre|32 bit değerleri|16 bit değerler (önceki 16 bit geliştirme desteği)|
 |---------------|--------------------|----------------------------------------------------------------|
-|*memorymodel*|`FLAT`|`TINY`, `SMALL`, `COMPACT`, `MEDIUM`, `LARGE`, `HUGE`, `FLAT`|
+|*MemoryModel*|`FLAT`|`TINY`, `SMALL`, `COMPACT`, `MEDIUM`, `LARGE`, `HUGE`, `FLAT`|
 |*langtype*|`C`, `STDCALL`|`C`, `BASIC`, `FORTRAN`, `PASCAL`, `SYSCALL`, `STDCALL`|
-|*stackoption*|Kullanılan değil|`NEARSTACK`, `FARSTACK`|
+|*yığın*|Kullanılan değil|`NEARSTACK`, `FARSTACK`|
 
 ## <a name="code"></a>Kod
 
-MASM ile ilgili örnekler için derleyici örneklerini indirin [Visual C++ örnekleri ve ilgili belgeler için Visual Studio 2010](https://go.microsoft.com/fwlink/p/?linkid=178749).
+Mase ile ilgili örnekler için, Visual [Studio 2010 Için Visual C++ örneklerden ve ilgili belgelerden](https://go.microsoft.com/fwlink/p/?linkid=178749)derleyici örneklerini indirin.
 
-Aşağıdaki örnek, kullanımını gösterir `.MODEL` yönergesi.
+Aşağıdaki örnek, `.MODEL` yönergesinin kullanımını gösterir.
 
 ## <a name="example"></a>Örnek
 

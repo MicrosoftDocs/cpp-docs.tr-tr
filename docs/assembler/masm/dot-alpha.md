@@ -1,21 +1,21 @@
 ---
 title: .ALPHA
-ms.date: 08/30/2018
+ms.date: 11/05/2019
 f1_keywords:
 - .ALPHA
 helpviewer_keywords:
 - .ALPHA directive
 ms.assetid: 3f9d1386-6367-4cd7-a37f-2cd1cd46f2d7
-ms.openlocfilehash: 31985d27f5e5941612ceda669ba20ff26352c180
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c1bcd330633a3f784f62ef2534b653d842f5ac5f
+ms.sourcegitcommit: 45f1d889df633f0f7e4a8e813b46fa73c9858b81
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62206417"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73702985"
 ---
-# <a name="alpha"></a>.ALPHA
+# <a name="alpha-32-bit-masm"></a>. Alfa (32-bit masa)
 
-Segment alfabetik olarak sıralar.
+Segmentleri alfabetik olarak sıralar. (yalnızca 32-bit masa.)
 
 ## <a name="syntax"></a>Sözdizimi
 

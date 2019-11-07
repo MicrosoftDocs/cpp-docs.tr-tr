@@ -1,35 +1,35 @@
 ---
 title: .IF
-ms.date: 08/30/2018
+ms.date: 11/05/2019
 f1_keywords:
 - .IF
 helpviewer_keywords:
 - .IF directive
 ms.assetid: dccc7615-8fc7-4829-9f39-0ee405f6c1e3
-ms.openlocfilehash: cf9c594d843c937dd2191bee2a7cebadbc615c82
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 83c9ff588e2fe273e24e1d0b1c16517c5eee3365
+ms.sourcegitcommit: 45f1d889df633f0f7e4a8e813b46fa73c9858b81
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62185273"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73703787"
 ---
-# <a name="if"></a>.IF
+# <a name="if-32-bit-masm"></a>. IF (32-bit masa)
 
-Testleri kod oluşturur `condition1` (örneğin, > 7 AX) ve yürüten *deyimleri* bu koşulun doğru olması durumunda.
+`condition1` test eden (örneğin, AX > 7) kodu üretir ve bu koşulun doğru olması durumunda *deyimleri* yürütür. (yalnızca 32-bit masa.)
 
 ## <a name="syntax"></a>Sözdizimi
 
-> . Eğer condition1<br/>
+> . Condition1 Ise<br/>
 > deyimler<br/>
-> [[. ELSEIF condition2<br/>
-> deyimleri]]<br/>
-> [[. ELSE<br/>
-> deyimleri]]<br/>
+> [[. Condition2 Ise ELSEıF<br/>
+> deyimler]]<br/>
+> [[. DEĞILSE<br/>
+> deyimler]]<br/>
 > .ENDIF
 
 ## <a name="remarks"></a>Açıklamalar
 
-Varsa bir [. BAŞKA](../../assembler/masm/dot-else.md) orijinal koşul false ise aşağıdaki gibi kendi deyimler yürütülür. Çalışma zamanında koşulların değerlendirilmesi gerektiğini unutmayın.
+Bir [. ](../../assembler/masm/dot-else.md)Bundan sonra, özgün koşul yanlış ise deyimleri yürütülür. Koşulların çalışma zamanında değerlendirildiğini unutmayın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

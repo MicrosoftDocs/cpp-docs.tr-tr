@@ -1,21 +1,21 @@
 ---
 title: .486P
-ms.date: 08/30/2018
+ms.date: 11/05/2019
 f1_keywords:
 - .486P
 helpviewer_keywords:
 - .486P directive
 ms.assetid: ad1ff7a8-18e8-47cd-8e3b-dfd57a0ca370
-ms.openlocfilehash: f002afda9882b5c6e389dcd760bc7377861cbbcd
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ee6d658162eb7a6ad028e5d669df9b76169ebf45
+ms.sourcegitcommit: 45f1d889df633f0f7e4a8e813b46fa73c9858b81
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62185646"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73703025"
 ---
-# <a name="486p"></a>.486P
+# <a name="486p-32-bit-masm"></a>.486P (32-bit MASM)
 
-80486 işlemcisi için derleme (Ayrıcalıklı dahil) tüm yönergeleri sağlar.
+80486 işlemcisi için tüm yönergelerin (ayrıcalıklı dahil) derlemesini mümkün bir şekilde sunar. (yalnızca 32-bit masa.)
 
 ## <a name="syntax"></a>Sözdizimi
 
