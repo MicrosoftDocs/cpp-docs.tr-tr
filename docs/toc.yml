@@ -4714,6 +4714,8 @@
               items:
                 - name: Ön işlemci
                   href: preprocessor/preprocessor.md
+                - name: Deneysel ön işlemciye genel bakış
+                  href: preprocessor/preprocessor-experimental-overview.md
                 - name: Çeviri aşamaları
                   href: preprocessor/phases-of-translation.md
                 - name: Ön işlemci yönergeleri
