@@ -1,5 +1,5 @@
 ---
-title: '&lt;algoritmalar&gt;'
+title: '&lt;algoritması&gt;'
 ms.date: 11/04/2016
 f1_keywords:
 - <algorithm>
@@ -8,14 +8,14 @@ helpviewer_keywords:
 - C++ Standard Library, algorithms
 - <algorithm> header
 ms.assetid: 19f97711-7a67-4a65-8fd1-9a2bd3ca327d
-ms.openlocfilehash: 0b9b259d49808002442492ce2912b4f9aa96d2b8
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: f72969052ae3ecc0d9fb88382e1560c846e2167c
+ms.sourcegitcommit: eb254b4462a58d219376ff501bf768bd1adc07ae
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68456498"
+ms.lasthandoff: 11/11/2019
+ms.locfileid: "73912888"
 ---
-# <a name="ltalgorithmgt"></a>&lt;algoritmalar&gt;
+# <a name="ltalgorithmgt"></a>&lt;algoritması&gt;
 
 Algoritmaları C++ gerçekleştiren standart kitaplık kapsayıcı şablonu işlevlerini tanımlar.
 
@@ -26,23 +26,23 @@ Algoritmaları C++ gerçekleştiren standart kitaplık kapsayıcı şablonu işl
 ```
 
 > [!NOTE]
-> Algoritma > kitaplığı, `#include <initializer_list>` ifadesini de kullanır. \<
+> \<algoritması > kitaplığı `#include <initializer_list>` ifadesini de kullanır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Standart C++ kitaplık algoritmaları, çeşitli veri yapıları üzerinde çalışabildiklerinden geneldir. Üzerinde çalışabildikleri veri yapıları yalnızca ve C++ `vector` `list`gibi standart kitaplık kapsayıcı sınıfları değil, aynı zamanda program tanımlı veri yapıları ve bir Özel algoritma. C++Standart Kitaplık algoritmaları, yineleyiciler aracılığıyla dolaylı olarak bir kapsayıcının öğelerine erişerek ve geçiş yaparak bu düzeyde bir elde elde elde edebilirler.
+Standart C++ kitaplık algoritmaları, çeşitli veri yapıları üzerinde çalışabildiklerinden geneldir. Üzerinde çalışabildikleri veri yapıları yalnızca `vector` ve `list`gibi C++ standart kitaplık kapsayıcı sınıfları değil, ayrıca program tanımlı veri yapılarını ve belirli bir algoritmanın gereksinimlerini karşılayan öğe dizilerini içerir. C++Standart Kitaplık algoritmaları, yineleyiciler aracılığıyla dolaylı olarak bir kapsayıcının öğelerine erişerek ve geçiş yaparak bu düzeyde bir elde elde elde edebilirler.
 
 C++Standart Kitaplık algoritmaları, genellikle başlangıç veya bitiş konumlarına göre belirtilen Yineleyici aralıklarını işler. Aralıklardaki tüm işaretçilerin tekrar başvurulabilir olması ve her aralığın dizisinde olması gerekliliği bakımından, başvurulan aralıkların geçerli olması gerekir; son konum da artış yoluyla birinciden erişilebilir olmalıdır.
 
 C++ Standart kitaplık algoritmaları, her C++ standart kitaplık kapsayıcısının işlemler ve üye işlevleri tarafından desteklenen eylemleri genişletir ve örneğin aynı anda farklı kapsayıcı nesne türleriyle çalışmaya izin verir. İki sonek, algoritmaların amacı hakkında bilgi iletmek için kullanılmıştır.
 
-- `_if` Sonek, algoritmanın öğelerin değerleri yerine öğelerin değerleri üzerinde çalışan işlev nesneleriyle kullanıldığını gösterir. Algoritması, değerleri bir işlev nesnesi tarafından belirtilen ölçütü karşılayan öğeleri arar `find` ve algoritma belirli bir değeri arar. `find_if`
+- `_if` soneki, algoritmanın öğelerin kendileri yerine öğelerin değerleri üzerinde çalışan işlev nesneleriyle kullanıldığını gösterir. `find_if` algoritması, değerleri bir işlev nesnesi tarafından belirtilen ölçütü karşılayan öğeleri arar ve `find` algoritması belirli bir değeri arar.
 
-- _Copy soneki algoritmanın yalnızca öğelerinin değerlerini yönetmeyeceğini, aynı zamanda değiştirilen değerlerin bir hedef aralığına da kopyalayacağını belirtir. Algoritma, öğelerin sırasını bir Aralık içinde tersine çevirir `reverse_copy` ve algoritma Ayrıca sonucu bir hedef aralığa kopyalar. `reverse`
+- _Copy soneki algoritmanın yalnızca öğelerinin değerlerini yönetmeyeceğini, aynı zamanda değiştirilen değerlerin bir hedef aralığına da kopyalayacağını belirtir. `reverse` algoritması, öğelerin sırasını bir Aralık içinde tersine çevirir ve `reverse_copy` algoritması sonucu bir hedef aralığa kopyalar.
 
 C++Standart Kitaplık algoritmaları, genellikle amaçları veya gereksinimleriyle ilgili bir şeyi gösteren gruplar halinde sınıflandırılır. Bunlar, öğelerin değerlerini değiştiren algoritmaların değişmeyen algoritmalarla karşılaştırıldığında değiştirilmesini içerir. Algoritmaların değiştirilmesi öğelerin sırasını değiştirir, ancak kendi öğelerinin değerlerini değiştirmez. Algoritmaların kaldırılması bir aralıktaki ya da aralıktaki bir kopyadaki öğeleri yok sayabilir. Sıralama algoritmaları, bir aralıktaki öğeleri çeşitli yollarla yeniden sıralar ve sıralanmış Aralık algoritmaları yalnızca öğeleri belirli bir şekilde sıralanan aralıklar üzerinde işlem görür.
 
-Sayısal C++ işleme için sunulan standart kitaplık sayısal algoritmalarının kendi başlık dosyası [ \<sayısal >](../standard-library/numeric.md)vardır ve işlev nesneleri ve bağdaştırıcılar üst bilgi [ \<işlev](../standard-library/functional.md) bölümünde tanımlanmıştır > Boole değerleri döndüren işlev nesneleri, koşullar olarak bilinir. Varsayılan ikili koşul karşılaştırma `operator<`' dır. Genelde, sıralanan öğelerin küçüktür biçiminde karşılaştırılabilir olması gerekir; böylece, herhangi iki öğe belirtildiğinde, eşit oldukları (yani birinin diğerinden daha küçük olmadığı anlamında) veya birinin diğerinden küçük olduğu belirlenebilir. Bu eşdeğer olmayan öğeler arasında bir sıralamaya neden olur.
+Sayısal C++ işleme için sunulan standart kitaplık sayısal algoritmalarının, kendi başlık dosyaları [\<, sayısal >](../standard-library/numeric.md)ve işlev nesneleri ve [\<](../standard-library/functional.md) bağdaştırıcılar, Boole değerleri döndüren işlev nesnelerinin koşullar olarak bilinir. Varsayılan ikili koşul karşılaştırma `operator<`. Genelde, sıralanan öğelerin küçüktür biçiminde karşılaştırılabilir olması gerekir; böylece, herhangi iki öğe belirtildiğinde, eşit oldukları (yani birinin diğerinden daha küçük olmadığı anlamında) veya birinin diğerinden küçük olduğu belirlenebilir. Bu eşdeğer olmayan öğeler arasında bir sıralamaya neden olur.
 
 ### <a name="function-templates"></a>İşlev şablonları
 
@@ -84,13 +84,13 @@ Sayısal C++ işleme için sunulan standart kitaplık sayısal algoritmalarını
 |[lexicographical_compare](../standard-library/algorithm-functions.md#lexicographical_compare)|Daha küçük olanı belirlemek için iki diziyi öğe öğe karşılaştırır.|
 |[lower_bound](../standard-library/algorithm-functions.md#lower_bound)|Sıralı bir aralıkta belirtilen değere eşit ya da daha büyük bir değere sahip ilk öğenin konumunu bulur, burada sıralama kriteri bir ikili koşula göre belirtilebilir.|
 |[make_heap](../standard-library/algorithm-functions.md#make_heap)|Belirtilen bir aralıktaki öğeleri ilk öğenin en büyük olduğu ve onun için bir ikili koşula sahip bir sıralama ölçütünün belirtilebildiği bir yığına dönüştürür.|
-|[max](../standard-library/algorithm-functions.md#max)|İki nesneyi karşılaştırır ve ikisinden büyük olanı döndürür, burada sıralama ölçütü ikili bir koşula göre belirtilebilir.|
+|[Biçimlendir](../standard-library/algorithm-functions.md#max)|İki nesneyi karşılaştırır ve ikisinden büyük olanı döndürür, burada sıralama ölçütü ikili bir koşula göre belirtilebilir.|
 |[max_element](../standard-library/algorithm-functions.md#max_element)|Belirtilen bir aralıktaki en büyük öğenin geçtiği ilk yeri bulur, burada sıralama ölçütü bir ikili koşula göre belirtilebilir.|
 |[birleþtirmek](../standard-library/algorithm-functions.md#merge)|İki sıralanmış kaynak aralıktaki tüm öğeleri tek bir sıralanmış aralıkta birleştirir, burada sıralama ölçütü bir ikili koşula göre belirtilebilir.|
-|[min](../standard-library/algorithm-functions.md#min)|İki nesneyi karşılaştırır ve ikisinden küçük olanı döndürür, burada sıralama ölçütü ikili bir koşula göre belirtilebilir.|
+|[Min](../standard-library/algorithm-functions.md#min)|İki nesneyi karşılaştırır ve ikisinden küçük olanı döndürür, burada sıralama ölçütü ikili bir koşula göre belirtilebilir.|
 |[min_element](../standard-library/algorithm-functions.md#min_element)|Belirtilen bir aralıktaki en küçük öğenin geçtiği ilk yeri bulur, burada sıralama ölçütü bir ikili koşula göre belirtilebilir.|
 |[MinMax](../standard-library/algorithm-functions.md#minmax)|İki giriş parametresini karşılaştırır ve bunları küçükten büyüğe bir çift olarak döndürür.|
-|[minmax_element](../standard-library/algorithm-functions.md#minmax_element)|[Min_element](../standard-library/algorithm-functions.md#min_element) ve [max_element](../standard-library/algorithm-functions.md#max_element) tarafından gerçekleştirilen işi tek bir çağrıda gerçekleştirir.|
+|[minmax_element](../standard-library/algorithm-functions.md#minmax_element)|[Min_element](../standard-library/algorithm-functions.md#min_element) tarafından gerçekleştirilen çalışmayı gerçekleştirir ve tek bir çağrıda [max_element](../standard-library/algorithm-functions.md#max_element) .|
 |[mez](../standard-library/algorithm-functions.md#mismatch)|Eşitlik ya da denklik için ikili bir koşul tarafından belirtildiği şekilde iki aralığı öğe öğe karşılaştırır ve farkın oluştuğu ilk yeri bulur.|
 |[&lt;alg&gt; taşı](../standard-library/algorithm-functions.md#alg_move)|Belirtilen aralıkla ilişkili öğeleri taşı.|
 |[move_backward](../standard-library/algorithm-functions.md#move_backward)|Bir yineleyicinin öğelerini diğerine taşır. Hareket belirli bir aralıktaki son öğeyle başlar ve söz konusu aralıktaki ilk öğeyle biter.|
@@ -110,7 +110,7 @@ Sayısal C++ işleme için sunulan standart kitaplık sayısal algoritmalarını
 |[remove_copy](../standard-library/algorithm-functions.md#remove_copy)|Öğeleri, belirtilen değerin kopyalanmayan öğeleri hariç, kalan öğelerin sırasını bozmadan ve yeni hedef aralığın sonuna döndürerek bir kaynak aralıktan bir hedef aralığa kopyalar.|
 |[remove_copy_if](../standard-library/algorithm-functions.md#remove_copy_if)|Öğeleri, bir koşulu karşılayan kopyalanmayan öğeler hariç, kalan öğelerin sırasını bozmadan ve yeni hedef aralığın sonuna döndürerek bir kaynak aralıktan bir hedef aralığa kopyalar.|
 |[remove_if](../standard-library/algorithm-functions.md#remove_if)|Kalan öğelerin sırasını bozmadan ve belirtilen değerin yeni aralığının sonunu boş döndürerek verili aralıktaki bir koşulu karşılayan öğeleri ortadan kaldırır.|
-|[replace](../standard-library/algorithm-functions.md#replace)|Bir aralıktaki tüm öğeleri inceler ve belirtilen bir değerle eşleşiyorsa değiştirir.|
+|[değiştirin](../standard-library/algorithm-functions.md#replace)|Bir aralıktaki tüm öğeleri inceler ve belirtilen bir değerle eşleşiyorsa değiştirir.|
 |[replace_copy](../standard-library/algorithm-functions.md#replace_copy)|Bir kaynak aralığındaki her öğeyi inceler ve sonuç yeni bir hedef aralığına kopyalanırken öğe belirtilen değerle eşleşiyorsa, onu değiştirir.|
 |[replace_copy_if](../standard-library/algorithm-functions.md#replace_copy_if)|Bir kaynak aralığındaki her öğeyi inceler ve sonuç yeni bir hedef aralığına kopyalanırken öğe belirtilen bir koşulu karşılıyorsa, onu değiştirir.|
 |[replace_if](../standard-library/algorithm-functions.md#replace_if)|Bir aralıktaki tüm öğeleri inceler ve belirtilen bir koşulu karşılıyorsa değiştirir.|
@@ -132,13 +132,13 @@ Sayısal C++ işleme için sunulan standart kitaplık sayısal algoritmalarını
 |[stable_sort](../standard-library/algorithm-functions.md#stable_sort)|Belirtilen bir aralıktaki öğeleri, eşdeğer öğelerin göreli sıralamasını koruyaraktan, azalmayan şekilde veya bir ikili koşul tarafından belirtilen bir sıralama ölçütüne göre düzenler.|
 |[Kur](../standard-library/algorithm-functions.md#swap)|İlk nesnenin içeriğini ikinci nesneye ve ikinci nesneni içeriğini birinciye atayarak, nesnelerin iki türü arasındaki öğelerin değerlerini birbiriyle değiştirir.|
 |[swap_ranges](../standard-library/algorithm-functions.md#swap_ranges)|Bir aralığın öğelerini eşit büyüklükteki bir diğerinin öğeleriyle değiştirir.|
-|[transform](../standard-library/algorithm-functions.md#transform)|Belirtilen işlev nesnesini bir kaynak aralıktaki her bir öğeye veya iki kaynak aralıktaki bir öğe çiftine uygular ve işlev nesnenin dönüş değerlerini bir hedef aralığa kopyalar.|
+|[Dönüşümler](../standard-library/algorithm-functions.md#transform)|Belirtilen işlev nesnesini bir kaynak aralıktaki her bir öğeye veya iki kaynak aralıktaki bir öğe çiftine uygular ve işlev nesnenin dönüş değerlerini bir hedef aralığa kopyalar.|
 |[unique](../standard-library/algorithm-functions.md#unique)|Belirli bir aralıktaki birbirine bitişik yinelenen öğeleri kaldırır.|
 |[unique_copy](../standard-library/algorithm-functions.md#unique_copy)|Birbirine bitişik yinelenen öğeler hariç bir kaynak aralıktaki öğeleri hedef aralığa kopyalar.|
 |[upper_bound](../standard-library/algorithm-functions.md#upper_bound)|Belirtilenden daha büyük bir değere sahip sıralı bir aralıktaki ilk öğenin konumunu bulur, burada sıralama ölçütü bir ikili koşula göre belirtilebilir.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Üst bilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)\
-[C++ Standart kitaplıkta Iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[Üst bilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md) \
+[Standart kitaplıkta Iş parçacığı güvenliği \ C++ ](../standard-library/thread-safety-in-the-cpp-standard-library.md)
 [C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)

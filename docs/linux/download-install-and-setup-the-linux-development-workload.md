@@ -3,12 +3,12 @@ title: C++ Linux Iş yükünü Visual Studio 'ya yükler
 description: Visual Studio 'da için C++ Linux iş yükünün nasıl indirileceği, yükleneceği ve kurulacağı açıklanmaktadır.
 ms.date: 06/11/2019
 ms.assetid: e11b40b2-f3a4-4f06-b788-73334d58dfd9
-ms.openlocfilehash: ad0fd856fc15ce9f787ba620463480bfe3e59d47
-ms.sourcegitcommit: b85e1db6b7d4919852ac6843a086ba311ae97d40
+ms.openlocfilehash: 68e347a4f90fc15f9d3846c82c3392213e1bd7bc
+ms.sourcegitcommit: eb254b4462a58d219376ff501bf768bd1adc07ae
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "71925415"
+ms.lasthandoff: 11/11/2019
+ms.locfileid: "73912912"
 ---
 # <a name="download-install-and-set-up-the-linux-workload"></a>Linux iş yükünü indirme, yükleme ve ayarlama
 
@@ -48,7 +48,7 @@ Bu senaryoların herhangi biri için iş yüküyle **Linux geliştirme C++**  ge
 
 Henüz bir Linux makineniz yoksa Azure 'da bir Linux sanal makinesi oluşturabilirsiniz. Daha fazla bilgi için bkz. [hızlı başlangıç: Azure Portal Linux sanal makinesi oluşturma](/azure/virtual-machines/linux/quick-create-portal).
 
-Windows 10 ' da, Linux (WSL) için Windows alt sistemine sahip en sevdiğiniz Linux 'u yükleyebilir ve hedefleyebilirsiniz. Daha fazla bilgi için bkz. [Windows 10 Için Linux Için Windows alt sistemi yükleme kılavuzu](/windows/wsl/install-win10). WSL, uygun bir konsol ortamıdır, ancak grafik uygulamalar için önerilmez. 
+Windows 10 ' da, Linux (WSL) için Windows alt sistemine sahip en sevdiğiniz Linux 'u yükleyebilir ve hedefleyebilirsiniz. Daha fazla bilgi için bkz. [Windows 10 Için Linux Için Windows alt sistemi yükleme kılavuzu](/windows/wsl/install-win10). Windows Mağazası 'na erişemiyorsanız, [WSL 'nin geçmiş paketlerini el ile indirebilirsiniz](/windows/wsl/install-manual). WSL, uygun bir konsol ortamıdır, ancak grafik uygulamalar için önerilmez. 
 
 ::: moniker-end
 
@@ -160,7 +160,7 @@ Linux C++ geliştirmeye yönelik destek, Visual Studio 2017 ve üzeri sürümler
 
 ## <a name="next-steps"></a>Sonraki Adımlar
 
-Artık bir Linux projesi oluşturmaya veya açmaya ve hedef sistemde çalışacak şekilde yapılandırmaya hazırsınız. Daha fazla bilgi için bkz.
+Artık bir Linux projesi oluşturmaya veya açmaya ve hedef sistemde çalışacak şekilde yapılandırmaya hazırsınız. Daha fazla bilgi için bkz.:
 
-- [Yeni bir Linux projesi oluştur](create-a-new-linux-project.md)
+- [Yeni Linux projesi oluşturma](create-a-new-linux-project.md)
 - [Linux CMake projesi yapılandırma](cmake-linux-project.md)
