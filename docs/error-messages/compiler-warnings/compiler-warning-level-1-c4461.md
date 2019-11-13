@@ -6,28 +6,28 @@ f1_keywords:
 helpviewer_keywords:
 - C4461
 ms.assetid: 104ffecc-3dd4-4cb1-89a8-81154fbe46d9
-ms.openlocfilehash: 5cc9b08f0f25e9c92b4185f060ab123684c5d9e2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 195e5532b6555210077e43ad3086ee3106f3e757
+ms.sourcegitcommit: e5192a25c084eda9eabfa37626f3274507e026b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62408270"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73966020"
 ---
 # <a name="compiler-warning-level-1-c4461"></a>Derleyici Uyarısı (düzey 1) C4461
 
-'type': Bu sınıf, bir Sonlandırıcı 'Sonlandırıcı' ancak hiçbir yok edici 'dtor' sahiptir
+' Type ': Bu sınıfta bir Sonlandırıcı ' Sonlandırıcı ' bulunur, ancak yıkıcı ' dtor ' yok
 
-Kaynakları silmek için bir tür içindeki bir sonlandırıcı varlığını gösterir. Sonlandırıcıda tür yok ediciden açıkça çağrılır sürece, ortak dil çalışma zamanı zaman Sonlandırıcı nesnenizin kapsamın dışına çıkıncaya sonra çalıştırılacak belirler.
+Bir tür içindeki sonlandırıcının varlığı, silinecek kaynakları belirtir. Sonlandırıcı, türün yıkıcısında açıkça çağrılmadığı takdirde, ortak dil çalışma zamanı sonlandırıcının ne zaman çalıştırılacağı, nesnenizin kapsam dışına çıktıktan sonra belirler.
 
-Türün bir yok ediciyi tanımlayın ve sonlandırıcı yok ediciden açıkça çağırmak, belirleyici, sonlandırıcı çalıştırabilirsiniz.
+Tür içinde bir yıkıcı tanımlayabilir ve yıkıcıdan sonlandırıcıyı açıkça çağırırsanız, sonlandırıcıyı kesin bir şekilde çalıştırabilirsiniz.
 
-Daha fazla bilgi için [yok ediciler ve sonlandırıcılar](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers).
+Daha fazla bilgi için bkz. yok [ediciler ve sonlandırıcılar](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers).
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C4461 oluşturur.
+Aşağıdaki örnek C4461 oluşturur.
 
-```
+```cpp
 // C4461.cpp
 // compile with: /W1 /clr /c
 ref class A {

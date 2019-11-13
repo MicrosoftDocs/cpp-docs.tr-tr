@@ -1,6 +1,6 @@
 ---
 title: pack pragması
-ms.date: 08/29/2019
+ms.date: 11/11/2019
 f1_keywords:
 - pack_CPP
 - vc-pragma.pack
@@ -8,12 +8,12 @@ helpviewer_keywords:
 - pragmas, pack
 - pack pragma
 ms.assetid: e4209cbb-5437-4b53-b3fe-ac264501d404
-ms.openlocfilehash: 4bf0b3d4529de012f4a09d6e60a5b112b9a101df
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 3572bd0d0b0e8149f527c1c43eca5870783b13a8
+ms.sourcegitcommit: e5192a25c084eda9eabfa37626f3274507e026b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70218759"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73965253"
 ---
 # <a name="pack-pragma"></a>pack pragması
 
@@ -21,39 +21,39 @@ Yapı, birleşim ve sınıf üyeleri için paketleme hizalamasını belirtir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **#pragma pack( show )** \
-> **#pragma pack( push** [ **,** *identifier* ] [ **,** *n* ] **)** \
-> **#pragma pack( pop** [ **,** { *identifier* | *n* } ] **)** \
-> **#pragma pack(** [ *n* ] **)**
+> **#pragma paketi (göster)** \
+> **#pragma paketi (push** [ **,** *tanımlayıcı* ] [ **,** *n* ] **)** \
+> **#pragma Pack (pop** [ **,** { *Identifier* | *n* }] **)** \
+> **#pragma paketi (** [ *n* ] **)**
 
 ### <a name="parameters"></a>Parametreler
 
-**show**\
+\ **göster**
 Seçim Paketleme hizalaması için geçerli bayt değerini görüntüler. Değer bir uyarı iletisiyle görüntülenir.
 
-**push**\
+**gönderim**\
 Seçim İç derleyici yığınında geçerli paketleme hizalama değerini iter ve geçerli paketleme hizalama değerini *n*olarak ayarlar. *N* belirtilmezse, geçerli paketleme hizalama değeri gönderilir.
 
 **pop**\
-Seçim Kaydı, iç derleyici yığınının üst öğesinden kaldırır. *Hayır* , **pop**ile belirtilmediyse, yığının en üstündeki sonuç kaydıyla ilişkili paketleme değeri, yeni paketleme hizalama değeridir. *N* belirtilmişse, örneğin `#pragma pack(pop, 16)`, *n* yeni paketleme hizalama değeri haline gelir. Örneğin`#pragma pack(pop, r1)`, bir tanımlayıcı kullanarak öğesini seçerseniz, bu durumda, *tanımlayıcı* içeren kayıt bulunana kadar yığındaki tüm kayıtlar işlenir. Bu kayıt oluşur ve yığının en üstündeki sonuç kaydıyla ilişkili paketleme değeri yeni paketleme hizalama değeridir. Yığındaki herhangi bir kayıtta bulunmayan bir *tanımlayıcıyı* kullanarak öğesini seçerseniz, **pop** yok sayılır.
+Seçim Kaydı, iç derleyici yığınının üst öğesinden kaldırır. *Hayır* , **pop**ile belirtilmediyse, yığının en üstündeki sonuç kaydıyla ilişkili paketleme değeri, yeni paketleme hizalama değeridir. *N* belirtilirse, örneğin `#pragma pack(pop, 16)`, *n* yeni paketleme hizalama değeri haline gelir. Bir *tanımlayıcı*kullanarak (örneğin, `#pragma pack(pop, r1)`) seçerseniz, yığındaki tüm kayıtlar, *tanımlayıcı* bulunana kadar doldurulur. Bu kayıt oluşur ve yığının en üstündeki sonuç kaydıyla ilişkili paketleme değeri yeni paketleme hizalama değeridir. Yığındaki herhangi bir kayıtta bulunmayan bir *tanımlayıcıyı* kullanarak öğesini seçerseniz, **pop** yok sayılır. 
 
-*Tanımlayıcısını*\
-Seçim **Push**ile kullanıldığında, iç derleyici yığınındaki kayda bir ad atar. **Pop**ile kullanıldığında, kayıt kaldırıldığında, pop 'lar iç yığının dışına çıkar. İç yığında *tanımlayıcı* bulunmazsa hiçbir şey yapılmadı.
+`#pragma pack (pop, r1, 2)` deyimin `#pragma pack (pop, r1)`, ardından `#pragma pack(2)`ile eşdeğerdir.
 
-*No*\
+*tanımlayıcı*\
+Seçim **Push**ile kullanıldığında, iç derleyici yığınındaki kayda bir ad atar. **Pop**ile kullanıldığında, kayıt *kaldırıldığında, pop* 'lar iç yığının dışına çıkar. İç yığında *tanımlayıcı* bulunmazsa hiçbir şey yapılmadı.
+
+*n* \
 Seçim Paketleme için kullanılacak değeri bayt cinsinden belirtir. Modül için [/ZP](../build/reference/zp-struct-member-alignment.md) derleyici seçeneği ayarlanmamışsa, *n* için varsayılan değer 8 ' dir. Geçerli değerler 1, 2, 4, 8 ve 16 ' dır. Bir üyenin hizalaması, *n*' nin katı olan veya üyenin boyutunun (hangisi daha küçükse) bir sınırından fazla.
-
-`#pragma pack(pop, identifier, n)`tanımlı değil.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir sınıfı paketledikten sonra, kendi üyelerini belleğin birbirlerine doğrudan yerleştirebilirsiniz. Bu, bazı veya tüm üyelerin hedef mimarinin varsayılan hizalamadan daha küçük bir sınıra hizalanabilir anlamına gelebilir. **paket** , veri bildirimi düzeyinde denetim sağlar. Yalnızca modül düzeyi denetim sağlayan [/ZP](../build/reference/zp-struct-member-alignment.md)derleyici seçeneğinden farklıdır. **paket** , pragma görüntülendikten sonra ilk **Yapı**, **birleşim**veya **sınıf** bildiriminde devreye girer. **paketin** tanımları üzerinde hiçbir etkisi yoktur. Bağımsız değişken içermeyen çağrı **paketi** , derleyici seçeneğinde `/Zp`ayarlanan değere n olarak ayarlanır. Derleyici seçeneği ayarlanmamışsa, varsayılan değer 8 ' dir.
+Bir sınıfı *paketledikten* sonra, kendi üyelerini belleğin birbirlerine doğrudan yerleştirebilirsiniz. Bu, bazı veya tüm üyelerin hedef mimarinin varsayılan hizalamadan daha küçük bir sınıra hizalanabilir anlamına gelebilir. **paket** , veri bildirimi düzeyinde denetim sağlar. Yalnızca modül düzeyi denetim sağlayan [/ZP](../build/reference/zp-struct-member-alignment.md)derleyici seçeneğinden farklıdır. **paket** , pragma görüntülendikten sonra ilk **Yapı**, **birleşim**veya **sınıf** bildiriminde devreye girer. **paketin** tanımları üzerinde hiçbir etkisi yoktur. Bağımsız değişken içermeyen çağrı **paketi** , `/Zp`derleyici seçeneğinde ayarlanan *değere ayarlanır.* Derleyici seçeneği ayarlanmamışsa, varsayılan değer 8 ' dir.
 
 Bir yapının hizalamasını değiştirirseniz bu, bellekte çok fazla alan kullanamaz, ancak performansın azaldığını veya hatta hizalanmamış erişim için donanım tarafından oluşturulan bir özel durum elde edebilir.  Bu özel durum davranışını [SetErrorMode](/windows/win32/api/errhandlingapi/nf-errhandlingapi-seterrormode)kullanarak değiştirebilirsiniz.
 
 Hizalamayı değiştirme hakkında daha fazla bilgi için şu makalelere bakın:
 
-- [__hizalaması](../cpp/alignof-operator.md)
+- [__alignof](../cpp/alignof-operator.md)
 
 - [align](../cpp/align-cpp.md)
 
@@ -62,7 +62,7 @@ Hizalamayı değiştirme hakkında daha fazla bilgi için şu makalelere bakın:
 - [Yapı hizalaması örnekleri](../build/x64-software-conventions.md#examples-of-structure-alignment) (x64 'e özgü)
 
    > [!WARNING]
-   > Visual Studio 2015 ve sonraki sürümlerde, derleyicilerin aksine `__alignof` ve `declspec( align )` bunlar arasında taşınabilen standart **alignas** ve **Hizalama** işleçlerini kullanabilirsiniz. C++ Standart paketleme, bu nedenle hedef mimarinin sözcük boyutundan daha küçük hizalamaları belirtmek için **paketi** (veya diğer derleyicilerde karşılık gelen uzantıyı) kullanmaya devam etmeniz gerekir.
+   > Visual Studio 2015 ve sonraki sürümlerde, `__alignof` ve `declspec( align )` farklı olarak derleyiciler arasında taşınabilen standart **alignas** ve **Hizalama** işleçlerini kullanabilirsiniz. C++ Standart paketleme, bu nedenle hedef mimarinin sözcük boyutundan daha küçük hizalamaları belirtmek için **paketi** (veya diğer derleyicilerde karşılık gelen uzantıyı) kullanmaya devam etmeniz gerekir.
 
 ## <a name="examples"></a>Örnekler
 
@@ -113,6 +113,9 @@ Aşağıdaki örnek, *Push*, *pop*ve *Show* sözdiziminin nasıl kullanılacağ�
 #pragma pack(show)   // C4810
 #pragma pack(push, r1, 16)   // n = 16, pushed to stack
 #pragma pack(show)   // C4810
+
+// pop to the identifier and then set
+// the value of the current packing alignment:
 #pragma pack(pop, r1, 2)   // n = 2 , stack popped
 #pragma pack(show)   // C4810
 ```

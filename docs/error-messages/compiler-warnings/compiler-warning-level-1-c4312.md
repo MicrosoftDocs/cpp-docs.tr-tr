@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C4312
 ms.assetid: 541906ed-4f62-4bcb-947f-cf9ae7411bcb
-ms.openlocfilehash: 1983d7b89688568b8152372328216c2a814f7bc0
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 83f8aa5d03bddde58f9edd4ffc9f19073045da30
+ms.sourcegitcommit: e5192a25c084eda9eabfa37626f3274507e026b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69510084"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73966091"
 ---
 # <a name="compiler-warning-level-1-c4312"></a>Derleyici Uyarısı (düzey 1) C4312
 
 'operation' : 'type1' öğesinden daha büyük boyutlu 'type2' öğesine dönüştürme
 
-Bu uyarı, 32 bitlik bir değeri 64 bit işaretçi türüne atama girişimini algılar, örneğin, 32-bit `int` veya `long` 64-bit işaretçisi atama.
+Bu uyarı, 64 bit işaretçi türüne 32 bitlik bir değer atama girişimini algılar, örneğin, 32-bit `int` veya `long` 64-bit işaretçisine atar.
 
 Bu, oturum açma uzantısı gerçekleştiğinde 32 bite sığan işaretçi değerleri bile güvenli olmayan bir dönüştürme olabilir. Bir 64 bit işaretçi türüne negatif 32 bitlik bir tamsayı atanırsa, imza uzantısı, işaretçi değerinin tamsayının değerinden farklı bir bellek adresine başvurmasına neden olur.
 
@@ -25,7 +25,7 @@ Bu uyarı yalnızca 64 bitlik derleme hedefleri için verilir. Daha fazla bilgi 
 
 Aşağıdaki kod örneği 64-bit hedefler için derlendiğinde C4312 oluşturur:
 
-```
+```cpp
 // C4312.cpp
 // compile by using: cl /W1 /LD C4312.cpp
 void* f(int i) {

@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C4440
 ms.assetid: 78b9642a-a93e-401e-9d92-372f6451bc5d
-ms.openlocfilehash: ccd7c14cbd078d4740795d25ad772bdc78840a60
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a2d4bf160cbbabacc1dc3d747a8e4ddb37c6ad46
+ms.sourcegitcommit: e5192a25c084eda9eabfa37626f3274507e026b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62408283"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73966035"
 ---
 # <a name="compiler-warning-level-1-c4440"></a>Derleyici Uyarısı (düzey 1) C4440
 
-'calling_convention1' kuralı yeniden tanımlanması yoksayıldı 'calling_convention2' için çağırma
+' calling_convention1 ' değerinden ' calling_convention2 ' öğesine çağırma kuralı yeniden tanımı yoksayıldı
 
-Çağırma kuralı değiştirme girişimi yoksayıldı.
+Çağırma kuralını değiştirme girişimi yoksayıldı.
 
-Aşağıdaki örnek, C4440 oluşturur:
+Aşağıdaki örnek C4440 oluşturur:
 
-```
+```cpp
 // C4440.cpp
 // compile with: /W1 /LD /clr
 typedef void __clrcall F();

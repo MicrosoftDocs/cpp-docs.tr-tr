@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C4346
 ms.assetid: 68ee562d-cca9-4a2a-9a1b-14ad1a1e7396
-ms.openlocfilehash: 53381ca6e33321001299ce27bce550c5b2b8f59e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: aa71565824355ff4b3658fd9de22c09d6db6dc33
+ms.sourcegitcommit: e5192a25c084eda9eabfa37626f3274507e026b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62187224"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73966556"
 ---
 # <a name="compiler-warning-level-1-c4346"></a>Derleyici Uyarısı (düzey 1) C4346
 
-'name': bağımlı öğe adı bir tür değil
+' name ': bağımlı ad bir tür değil
 
-[Typename](../../cpp/typename.md) anahtar sözcüğü, bir tür olarak kabul edilmesi için bir bağımlı adı ise gereklidir. Visual C++'ın tüm sürümlerinde çalışır kod ekleme `typename` bildirimine.
+Bağımsız bir ad bir tür olarak değerlendirilme ise [TypeName](../../cpp/typename.md) anahtar sözcüğü gereklidir. Tüm görsellerde C++aynı şekilde çalışacak kod için, bildirime `typename` ekleyin.
 
-Aşağıdaki örnek, C4346 oluşturur:
+Aşağıdaki örnek C4346 oluşturur:
 
-```
+```cpp
 // C4346.cpp
 // compile with: /WX /LD
 template<class T>
@@ -32,9 +32,9 @@ struct C {
 };
 ```
 
-Aşağıdaki örnekleri gösterir, diğer örnekleri burada **typename** anahtar sözcüğü gereklidir:
+Aşağıdaki örneklerde **TypeName** anahtar sözcüğünün gerekli olduğu diğer örnekler gösterilmektedir:
 
-```
+```cpp
 // C4346b.cpp
 // compile with: /LD /W1
 template<class T>
@@ -55,7 +55,7 @@ struct M : public L<typename T::Type, T::Value>
 
 ve bu,
 
-```
+```cpp
 // C4346c.cpp
 // compile with: /LD /WX
 struct Y {

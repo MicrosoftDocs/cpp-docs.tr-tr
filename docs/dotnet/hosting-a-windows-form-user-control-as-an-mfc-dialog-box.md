@@ -6,12 +6,12 @@ helpviewer_keywords:
 - Windows Forms [C++], hosting as MFC Dialog
 - hosting Windows Forms control [C++]
 ms.assetid: 0434a9d7-8b14-48e6-ad69-9ba9a684677a
-ms.openlocfilehash: 1351f0b2aa4ebc288469231a27c691237b52b1c1
-ms.sourcegitcommit: 45f1d889df633f0f7e4a8e813b46fa73c9858b81
+ms.openlocfilehash: 7fc2aad1e0a550fb8f22b311518ae9fb16c076a5
+ms.sourcegitcommit: e5192a25c084eda9eabfa37626f3274507e026b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73704127"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73964946"
 ---
 # <a name="hosting-a-windows-form-user-control-as-an-mfc-dialog-box"></a>MFC İletişim Kutusu Olarak Windows Formu Kullanıcı Denetimi Barındırma
 
@@ -19,7 +19,7 @@ MFC, bir Windows Forms Kullanıcı denetimini (<xref:System.Windows.Forms.UserCo
 
 `CWinFormsDialog` Kullanıcı denetimini barındırmak için kullandığı işlem, [MFC Iletişim kutusunda Windows form kullanıcı denetimi barındırma](../dotnet/hosting-a-windows-form-user-control-in-an-mfc-dialog-box.md)bölümünde açıklananla benzerdir. Ancak, `CWinFormsDialog` el ile programlanabilmesi için Kullanıcı denetiminin başlatılmasını ve barındırmayı yönetir.
 
-MFC ile kullanılan Windows Forms gösteren örnek bir uygulama için bkz. [MFC ve Windows Forms tümleştirmesi](https://www.microsoft.com/en-us/download/details.aspx?id=2113).
+MFC ile kullanılan Windows Forms gösteren örnek bir uygulama için bkz. [MFC ve Windows Forms tümleştirmesi](https://www.microsoft.com/download/details.aspx?id=2113).
 
 ### <a name="to-create-the-mfc-host-application"></a>MFC ana bilgisayar uygulaması oluşturmak için
 

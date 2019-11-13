@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C4532
 ms.assetid: 4e2a286a-d233-4106-9f65-29be1a94ca02
-ms.openlocfilehash: bcadf31eda079ebb8ea7a496efe4c945e16b1ab7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b47eb192bc01e6fe2c6c9423ed2c672f16c6818f
+ms.sourcegitcommit: e5192a25c084eda9eabfa37626f3274507e026b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62160763"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73966244"
 ---
 # <a name="compiler-warning-level-1-c4532"></a>Derleyici Uyarısı (düzey 1) C4532
 
-'continue': __finally/finally bloğunun dışına atlama sonlandırma işleme sırasında davranışı tanımsız
+' devam ': __finally/finally bloğunun dışına atlayın, sonlandırma işlemi sırasında tanımsız davranışa sahiptir
 
-Derleyici, aşağıdaki anahtar sözcükler birini karşılaştı:
+Derleyici aşağıdaki anahtar sözcüklerden biriyle karşılaştı:
 
 - [continue](../../cpp/continue-statement-cpp.md)
 
@@ -25,15 +25,15 @@ Derleyici, aşağıdaki anahtar sözcükler birini karşılaştı:
 
 - [goto](../../cpp/goto-statement-cpp.md)
 
-dışında bir atlama neden bir [__finally](../../cpp/try-finally-statement.md) veya [son](../../dotnet/finally.md) olağan dışı sonlandırma sırasında blok.
+olağan dışı Sonlandırma sırasında [__finally](../../cpp/try-finally-statement.md) veya [finally](../../dotnet/finally.md) bloğunun dışına atlanmasına neden olur.
 
-Bir özel durum oluşursa ve yığın sonlandırma işleyicileri yürütülürken sapmasına sırada ( `__finally` veya finally bloklarında), ve kod dışı atlar bir `__finally` önce block `__finally` blok uç, davranış tanımlanmamıştır. Özel durumu düzgün bir şekilde işlenmemiş için denetimi geriye doğru izleme kodu döndürmeyebilir.
+Bir özel durum oluşursa ve yığın sonlandırma işleyicilerinin yürütülmesi sırasında (`__finally` ya da finally blokları) ve kodunuz, `__finally` bloğu bitmeden önce bir `__finally` bloğunun dışına atlarken, davranış tanımsızdır. Denetim geri sarma koduna dönemeyebilir, bu nedenle özel durum düzgün işlenmeyebilir.
 
-/ Atlama, bir **__finally** engelleme, olağan dışı sonlandırma için ilk olarak denetleyin.
+**__Finally** bloğundan birini atlamanız gerekiyorsa, önce olağan dışı sonlandırmasını denetleyin.
 
-Aşağıdaki örnek, C4532 oluşturur; Yalnızca açıklama uyarıları gidermek için atlama deyimleri yerleştirin.
+Aşağıdaki örnek C4532 oluşturur; uyarıları çözümlemek için, sıçrama deyimlerini açıklama olarak belirlemeniz yeterlidir.
 
-```
+```cpp
 // C4532.cpp
 // compile with: /W1
 // C4532 expected

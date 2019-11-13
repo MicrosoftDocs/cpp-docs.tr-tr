@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C4392
 ms.assetid: 817806ad-06a6-4b9e-8355-e25687c782dc
-ms.openlocfilehash: 1dc0c546509b17132358f432f6a781035a314a72
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b19080f4a86267a48618a5f40d7576c07c96c18a
+ms.sourcegitcommit: e5192a25c084eda9eabfa37626f3274507e026b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62386427"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73966102"
 ---
 # <a name="compiler-warning-level-1-c4392"></a>Derleyici Uyarısı (düzey 1) C4392
 
-'imza': iç işlev için bağımsız değişkenler yanlış sayıda 'number' bağımsız değişkeni bekleniyordu
+' Signature ': iç işlev için yanlış sayıda bağımsız değişken, beklenen ' number ' bağımsız değişkeni
 
-Bir işlev bildirimi bir iç derleyici için yanlış sayıda bağımsız değişken var. Elde edilen görüntü düzgün çalışmayabilir.
+Bir derleyici iç öğesinin işlev bildiriminde yanlış sayıda bağımsız değişken vardı. Elde edilen görüntü doğru çalışmayabilir.
 
-Bu uyarıyı düzeltmek için bildirimi düzeltin ya da silme bildirimi ve yalnızca # uygun üstbilgi dosyasını include.
+Bu uyarıyı düzeltmek için, bildirimi düzeltin ya da bildirimi silin ve yalnızca uygun üstbilgi dosyasını #include.
 
-Aşağıdaki örnek, C4392 oluşturur:
+Aşağıdaki örnek C4392 oluşturur:
 
-```
+```cpp
 // C4392.cpp
 // compile with: /W1
 // processor: x86

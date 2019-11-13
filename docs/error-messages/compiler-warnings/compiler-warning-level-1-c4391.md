@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C4391
 ms.assetid: 95c6182c-fae9-4174-8f7b-98aa352e68ca
-ms.openlocfilehash: d9d1cebe08a6a163d76271ab001ec91b7cee82a2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 60b68906697f76d56ff6c0e13f1b4ec105ef1c25
+ms.sourcegitcommit: e5192a25c084eda9eabfa37626f3274507e026b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62386466"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73966122"
 ---
 # <a name="compiler-warning-level-1-c4391"></a>Derleyici Uyarısı (düzey 1) C4391
 
-'imza': iç işlev için yanlış dönüş türü, 'type' bekleniyor
+' Signature ': iç işlev için yanlış dönüş türü; ' Type ' bekleniyor
 
-Bir işlev bildirimi için bir iç derleyici hatalı dönüş türüne sahip. Elde edilen görüntü düzgün çalışmayabilir.
+Bir derleyici iç öğesinin işlev bildirimi yanlış dönüş türüne sahipti. Elde edilen görüntü doğru çalışmayabilir.
 
-Bu uyarıyı düzeltmek için bildirimi düzeltin ya da silme bildirimi ve yalnızca # uygun üstbilgi dosyasını include.
+Bu uyarıyı düzeltmek için, bildirimi düzeltin ya da bildirimi silin ve yalnızca uygun üstbilgi dosyasını #include.
 
-Aşağıdaki örnek, C4391 oluşturur:
+Aşağıdaki örnek C4391 oluşturur:
 
-```
+```cpp
 // C4391.cpp
 // compile with: /W1
 // processor: x86

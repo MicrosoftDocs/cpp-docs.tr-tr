@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C4395
 ms.assetid: 8051469a-3a39-4677-80f7-1300fbffe8ea
-ms.openlocfilehash: 27503b94a18b949637293201203e18793f5e7788
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 074e00ff2ae44986127f629da6ef38f9f5df7212
+ms.sourcegitcommit: e5192a25c084eda9eabfa37626f3274507e026b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62182411"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73964879"
 ---
 # <a name="compiler-warning-level-1-c4395"></a>Derleyici Uyarısı (düzey 1) C4395
 
-'function': üye işlev 'member' initonly veri üyesinin bir kopyası üzerinde çağrılacak
+' function ': ' Member ' initonly veri üyesinin kopyasında üye işlevi çağrılacak
 
-Bir üye işlev çağrıldı bir [initonly (C++/CLI)](../../dotnet/initonly-cpp-cli.md) veri üyesi.  C4395 uyarır **initonly** veri üyesi işlev tarafından değiştirilemez.
+[İnitonly (C++/CLI)](../../dotnet/initonly-cpp-cli.md) veri üyesinde üye işlevi çağrıldı.  C4395, **initonly** veri üyesinin işlev tarafından değiştirilemeyeceğini uyarır.
 
-Aşağıdaki örnek, C4395 oluşturur:
+Aşağıdaki örnek C4395 oluşturur:
 
-```
+```cpp
 // C4395.cpp
 // compile with: /W1 /clr
 public value class V {

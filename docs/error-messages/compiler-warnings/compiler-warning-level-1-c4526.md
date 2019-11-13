@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C4526
 ms.assetid: 490f8916-5fdc-4cad-b412-76c3382a5976
-ms.openlocfilehash: 892e6c37e54a868be48ced35354a1096aa7bf9d3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 60ac01d6a118f37a22b39ab41fa60252866f3360
+ms.sourcegitcommit: e5192a25c084eda9eabfa37626f3274507e026b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62160750"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73966279"
 ---
 # <a name="compiler-warning-level-1-c4526"></a>Derleyici Uyarısı (düzey 1) C4526
 
-'function': statik üye işlevini sanal işlevini geçersiz kılamaz ' yoksayıldı, sanal function'override sanal işlev gizlenecek
+' function ': statik üye işlevi sanal işlevi geçersiz kılamaz ' Virtual function'override yoksayıldı, sanal işlev gizlenecek
 
-Statik üye işlevini hem sanal hem de statik üye işlevini kılan sanal işlev geçersiz kılmak için ölçütleri karşılar.
+Statik üye işlevi, üye işlevini hem sanal hem de statik hale getiren sanal işlevi geçersiz kılma ölçütlerini karşılar.
 
 Aşağıdaki kod C4526 oluşturur:
 
-```
+```cpp
 // C4526.cpp
 // compile with: /W1 /c
 // C4526 expected
@@ -34,8 +34,8 @@ struct myStruct2: public myStruct1 {
 };
 ```
 
-Olası düzeltmeleri şunlardır:
+Aşağıdakiler olası düzeltmelerdir:
 
-- İşlev temel sınıf sanal işlevi geçersiz kılmak için tasarlanmıştı statik belirteci kaldırın.
+- İşlev, temel sınıf sanal işlevini geçersiz kılmak için tasarlandıysa, statik belirleyicisi kaldırın.
 
-- İşlev bir statik üye işlevi olarak kullanılması, temel sınıf sanal işlevi ile çakışmadığından şekilde yeniden adlandırın.
+- İşlevin statik üye işlevi olması amaçlandıysa, temel sınıf sanal işleviyle çakışmayacak şekilde yeniden adlandırın.

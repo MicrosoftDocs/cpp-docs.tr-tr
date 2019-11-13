@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C4558
 ms.assetid: 52bb0324-7bec-468c-b35b-13a08d38e578
-ms.openlocfilehash: ae4dd6ebfb00441591a4aa1cdd2ecdfbf37f74d7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d47e2a619cb84838144b3be6fd45d1f79ecc8661
+ms.sourcegitcommit: e5192a25c084eda9eabfa37626f3274507e026b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62397308"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73965996"
 ---
 # <a name="compiler-warning-level-1-c4558"></a>Derleyici Uyarısı (düzey 1) C4558
 
-'value' işleneninin değeri 'lowerbound - upperbound' aralığının dışında olduğundan
+' Value ' işleneni değeri, ' albağı-üst sınırı ' aralığının dışında
 
-Bir derleme dili yönergesine geçirilen değer parametresi için belirtilen aralık dışında. Değer kesilecek.
+Bir derleme dili yönergesine geçirilen değer, parametre için belirtilen aralığın dışında. Değer kesilecek.
 
-Aşağıdaki örnek, C4558 oluşturur:
+Aşağıdaki örnek C4558 oluşturur:
 
-```
+```cpp
 // C4558.cpp
 // compile with: /W1
 // processor: x86

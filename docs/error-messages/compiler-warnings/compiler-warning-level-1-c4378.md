@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C4378
 ms.assetid: d08e11ef-891a-4752-9a5e-360e7394acf7
-ms.openlocfilehash: 6197bd66214785d515bb1b73ceaf5a68d6751e79
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: cc5e5365ffb53125085ce7b374f1362e93f4bb03
+ms.sourcegitcommit: e5192a25c084eda9eabfa37626f3274507e026b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62410414"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73966489"
 ---
 # <a name="compiler-warning-level-1-c4378"></a>Derleyici Uyarısı (düzey 1) C4378
 
-Başlatıcıları çalıştırmak için işlev işaretçilerinin edinmeniz gerekir; :: resolvemethodhandle kullanmayı düşünün
+Başlatıcıları çalıştırmak için işlev işaretçileri almalıdır; System:: ModuleHandle:: ResolveMethodHandle kullanmayı düşünün
 
-Altında **/CLR**, başlatıcı sembolleri işlevi belirteçleri, işlev işaretçilerini içerir.  Belirteçleri kullanarak işaretçileri dönüştürmek gereken <xref:System.ModuleHandle.ResolveMethodHandle%2A>.
+**/Clr**' ın altında, başlatıcı sembolleri, işlev işaretçileri değil işlev belirteçleri içerir.  <xref:System.ModuleHandle.ResolveMethodHandle%2A>kullanarak belirteçleri işaretçilere dönüştürmeniz gerekir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C4378 oluşturur.
+Aşağıdaki örnek C4378 oluşturur.
 
-```
+```cpp
 // C4378.cpp
 // compile with: /W1 /clr /c
 typedef void (__cdecl *PF)(void);
@@ -65,9 +65,9 @@ int main () {
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C4378 çözme işlemi gösterilmektedir.
+Aşağıdaki örnek, C4378 nasıl çözümleneceğini göstermektedir.
 
-```
+```cpp
 // C4378_b.cpp
 // compile with: /clr
 #pragma warning(disable:4378)

@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C4488
 ms.assetid: 55625e46-ddb5-4c7c-99c7-cd4aa9f879bd
-ms.openlocfilehash: c816c1b3f5481ccff19fd2a2377c5fc98f950fee
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c3d176d034e679f3cca145ccb2fc77cc7fa64f3d
+ms.sourcegitcommit: e5192a25c084eda9eabfa37626f3274507e026b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62404084"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73965568"
 ---
 # <a name="compiler-warning-level-1-c4488"></a>Derleyici Uyarısı (düzey 1) C4488
 
-'function': 'interface_method' arabirim yöntemini uygulamak için 'anahtar sözcüğü' anahtar sözcüğünü gerektiriyor
+' function ': ' interface_method ' arabirim yöntemini uygulamak için ' anahtar sözcüğü ' anahtar sözcüğünü gerektirir
 
-Bir sınıf tüm üyelerini doğrudan devraldığı arabirim uygulamalıdır. Uygulanan bir üye, genel erişilebilirliği olmalıdır ve sanal olarak işaretlenmelidir.
+Bir sınıfın, doğrudan devraldığı bir arabirimin tüm üyelerini uygulaması gerekir. Uygulanan bir üyenin genel erişilebilirliği olması ve sanal olarak işaretlenmesi gerekir.
 
 ## <a name="example"></a>Örnek
 
-C4488 uygulanan bir üyesi genel olmadığından ortaya çıkabilir. Aşağıdaki örnek, C4488 oluşturur.
+C4488, uygulanan bir üyenin ortak olmaması durumunda gerçekleşebilir. Aşağıdaki örnek C4488 oluşturur.
 
-```
+```cpp
 // C4488.cpp
 // compile with: /clr /c /W1 /WX
 interface struct MyI {
@@ -42,9 +42,9 @@ public:
 
 ## <a name="example"></a>Örnek
 
-Uygulanan bir üye sanal işaretlenmemişse C4488 ortaya çıkabilir. Aşağıdaki örnek, C4488 oluşturur.
+C4488, uygulanan bir üyenin sanal olarak işaretlenmemiş olması durumunda gerçekleşebilir. Aşağıdaki örnek C4488 oluşturur.
 
-```
+```cpp
 // C4488_b.cpp
 // compile with: /clr /c /W1 /WX
 interface struct MyI {

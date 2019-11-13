@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C4401
 ms.assetid: 2e7ca136-f144-4b40-b847-82976e8643fc
-ms.openlocfilehash: c7e6cf8a52288d895b74481678dc91fee387a6a3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 242c854339608c88d139c898d81d142c52f90134
+ms.sourcegitcommit: e5192a25c084eda9eabfa37626f3274507e026b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62280431"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73966309"
 ---
 # <a name="compiler-warning-level-1-c4401"></a>Derleyici Uyarısı (düzey 1) C4401
 
-'bit alanı': üye bit alanıdır
+' bitfield ': üye bit alanıdır
 
-Bir bit alanı üyesine erişmek satır içi derleme kodu çalışır. Bu nedenle son paket sınırında bit alanı üyesi önce kullanılır, satır içi derleme bit alanı üyeleri erişemez.
+Satır içi derleme kodu bir bit alanı üyesine erişmeye çalışır. Satır içi bütünleştirilmiş kod, bit alan üyelerine erişemez, bu nedenle, bit alanı üyesi kullanılmadan önce son paketleme sınırı kullanılır.
 
-Bu uyarıyı engellemek için satır içi derleme kodunda referans yapmadan önce bit alanını uygun bir tür cast. Aşağıdaki örnek, C4401 oluşturur:
+Bu uyarıyı önlemek için, satır içi derleme kodunda başvuruyu yapmadan önce bit alanını uygun bir türe atayın. Aşağıdaki örnek C4401 oluşturur:
 
-```
+```cpp
 // C4401.cpp
 // compile with: /W1
 // processor: x86

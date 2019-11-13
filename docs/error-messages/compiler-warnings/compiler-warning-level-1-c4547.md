@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C4547
 ms.assetid: 3edf1c2e-c0d5-444d-ae83-44a7cce24bb2
-ms.openlocfilehash: 3293e07eb7c03c71d582d83e40bc011fa7c1eb11
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e4425fea3bc22b1929127e2fa84baea8ce848578
+ms.sourcegitcommit: e5192a25c084eda9eabfa37626f3274507e026b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62410375"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73966163"
 ---
 # <a name="compiler-warning-level-1-c4547"></a>Derleyici Uyarısı (düzey 1) C4547
 
-'operator': virgülden önceki etkisi yok; işleci yan etkisi olan beklenen işleci
+' operator ': virgülden önceki işlecin etkisi yok; yan etkisi olan işleç bekleniyordu
 
-Derleyici, bir virgül yapılı ifade algıladı.
+Derleyici hatalı biçimlendirilmiş bir virgül ifadesi algıladı.
 
-Varsayılan olarak bu uyarıyı kapalıdır. Daha fazla bilgi için [derleyici uyarıları emin olan kapalı varsayılan](../../preprocessor/compiler-warnings-that-are-off-by-default.md).
+Bu uyarı varsayılan olarak kapalıdır. Daha fazla bilgi için bkz. [Varsayılan olarak kapalı olan Derleyici uyarıları](../../preprocessor/compiler-warnings-that-are-off-by-default.md).
 
-Aşağıdaki örnek, C4547 oluşturur:
+Aşağıdaki örnek C4547 oluşturur:
 
-```
+```cpp
 // C4547.cpp
 // compile with: /W1
 #pragma warning (default : 4547)

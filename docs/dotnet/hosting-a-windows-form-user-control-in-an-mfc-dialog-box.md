@@ -6,18 +6,18 @@ helpviewer_keywords:
 - hosting Windows Forms control [C++]
 - Windows Forms [C++], MFC support
 ms.assetid: 9f66ee52-b7cb-4ffd-8306-392a5da990d8
-ms.openlocfilehash: 1a688870f4700e8e3b935245f2c9243f8d5aa823
-ms.sourcegitcommit: 45f1d889df633f0f7e4a8e813b46fa73c9858b81
+ms.openlocfilehash: 8925b86a5920df6a53a2625b782cf41e1a7fe32c
+ms.sourcegitcommit: e5192a25c084eda9eabfa37626f3274507e026b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73704093"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73964962"
 ---
 # <a name="hosting-a-windows-form-user-control-in-an-mfc-dialog-box"></a>MFC İletişim Kutusunda Windows Form Kullanıcı Denetimi Barındırma
 
 MFC bir Windows Forms denetimini özel bir ActiveX denetimi olarak barındırır ve ActiveX arabirimlerini ve <xref:System.Windows.Forms.Control> sınıfının özelliklerini ve yöntemlerini kullanarak denetimle iletişim kurar. Denetim üzerinde çalışmak için .NET Framework özellikleri ve yöntemleri kullanmanızı öneririz.
 
-MFC ile kullanılan Windows Forms gösteren örnek bir uygulama için bkz. [MFC ve Windows Forms tümleştirmesi](https://www.microsoft.com/en-us/download/details.aspx?id=2113).
+MFC ile kullanılan Windows Forms gösteren örnek bir uygulama için bkz. [MFC ve Windows Forms tümleştirmesi](https://www.microsoft.com/download/details.aspx?id=2113).
 
 > [!NOTE]
 >  Geçerli sürümde, bir `CDialogBar` nesnesi Windows Forms denetimleri barındıraamaz.

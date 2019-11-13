@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C4486
 ms.assetid: 2c0c59e3-d025-4d97-8da2-fa27df1402fc
-ms.openlocfilehash: 402d5eefde6c2dfd5693e53c27edb00d1ac2e56c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4c92c23af4aeb6a18c812517cfef9fa00d15dfcb
+ms.sourcegitcommit: e5192a25c084eda9eabfa37626f3274507e026b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62404071"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73965402"
 ---
 # <a name="compiler-warning-level-1-c4486"></a>Derleyici Uyarısı (düzey 1) C4486
 
-'function': bir başvuru sınıfının veya değer sınıfının özel bir sanal yöntemi 'sealed' olarak işaretlenmelidir
+' function ': bir başvuru sınıfının veya değer sınıfının özel bir sanal yöntemi ' Sealed ' olarak işaretlenmelidir
 
-Bir özel sanal üye işlevi bir yönetilen sınıfın veya yapının geçersiz kılınmış veya erişilemiyor beri işaretlenmelidir [korumalı](../../extensions/sealed-cpp-component-extensions.md).
+Yönetilen bir sınıfın veya yapının özel sanal üye işlevine erişilemez veya geçersiz kılınmadığından, [korumalı](../../extensions/sealed-cpp-component-extensions.md)olarak işaretlenmelidir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C4486 oluşturur.
+Aşağıdaki örnek C4486 oluşturur.
 
-```
+```cpp
 // C4486.cpp
 // compile with: /clr /c /W1
 ref class B {
@@ -35,9 +35,9 @@ private:
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, özel bir korumalı, sanal işlevin olası kullanım gösterir.
+Aşağıdaki örnek, özel bir Sealed, sanal işlevin olası bir kullanımını gösterir.
 
-```
+```cpp
 // C4486_b.cpp
 // compile with: /clr /c
 ref class B {};

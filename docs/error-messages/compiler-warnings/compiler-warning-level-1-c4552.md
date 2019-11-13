@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C4552
 ms.assetid: ebbbb5ee-1c19-45bd-b386-41a19630fc76
-ms.openlocfilehash: 1fb2dc7fd4bc685e457898b47c513c21009146ce
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b9f7fcd5a1949082aad75407f230db2e32dddd67
+ms.sourcegitcommit: e5192a25c084eda9eabfa37626f3274507e026b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62410362"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73966353"
 ---
 # <a name="compiler-warning-level-1-c4552"></a>Derleyici Uyarısı (düzey 1) C4552
 
-'operator': işlecin etkisi yok; yan etkisi olan beklenen işleci
+' operator ': işlecin etkisi yok; yan etkisi olan işleç bekleniyordu
 
-Bir ifade deyimi ifade üstüne yan etkiye sahip bir işleç varsa, bir hata olabilir.
+Bir ifade deyiminin ifadenin en üstünde yan etkisi olmayan bir işleci varsa, muhtemelen bir hata olabilir.
 
-Bu uyarıyı geçersiz kılmak için ifadeyi parantez içine yerleştirin.
+Bu uyarıyı geçersiz kılmak için, ifadeyi parantez içine alın.
 
-Aşağıdaki örnek, C4552 oluşturur:
+Aşağıdaki örnek C4552 oluşturur:
 
-```
+```cpp
 // C4552.cpp
 // compile with: /W1
 int main() {

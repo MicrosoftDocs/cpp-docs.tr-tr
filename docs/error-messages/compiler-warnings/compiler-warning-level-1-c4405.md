@@ -6,20 +6,20 @@ f1_keywords:
 helpviewer_keywords:
 - C4405
 ms.assetid: 155c64d6-58ae-4455-b61f-ccd711c5da96
-ms.openlocfilehash: e85bdc995fe16f91e2e9c734dacc65ca0b7b622d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 182f9ff061fd2a8ebe5ea0046545412fca5f646a
+ms.sourcegitcommit: e5192a25c084eda9eabfa37626f3274507e026b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62182387"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73965581"
 ---
 # <a name="compiler-warning-level-1-c4405"></a>Derleyici Uyarısı (düzey 1) C4405
 
-'identifier': tanımlayıcı olan ayrılmış sözcük
+' tanımlayıcı ': tanımlayıcı ayrılmış bir sözcük
 
-Satır içi derleme için ayrılmış bir sözcük, bir değişken adı olarak kullanılır. Bu, öngörülemeyen sonuçlara neden olabilir. Bu uyarıyı düzeltmek için adlandırma değişkenler ile satır içi derleme için ayrılmış sözcükler kullanmaktan kaçının. Aşağıdaki örnek, C4405 oluşturur:
+Satır içi derleme için ayrılmış bir sözcük, değişken adı olarak kullanılır. Bu durum öngörülemeyen sonuçlara neden olabilir. Bu uyarıyı onarmak için, satır içi derleme için ayrılmış sözcüklerin bulunduğu adlandırma değişkenleri kullanmaktan kaçının. Aşağıdaki örnek C4405 oluşturur:
 
-```
+```cpp
 // C4405.cpp
 // compile with: /W1
 // processor: x86

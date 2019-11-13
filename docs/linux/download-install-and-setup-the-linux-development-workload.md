@@ -3,12 +3,12 @@ title: C++ Linux Iş yükünü Visual Studio 'ya yükler
 description: Visual Studio 'da için C++ Linux iş yükünün nasıl indirileceği, yükleneceği ve kurulacağı açıklanmaktadır.
 ms.date: 06/11/2019
 ms.assetid: e11b40b2-f3a4-4f06-b788-73334d58dfd9
-ms.openlocfilehash: 68e347a4f90fc15f9d3846c82c3392213e1bd7bc
-ms.sourcegitcommit: eb254b4462a58d219376ff501bf768bd1adc07ae
+ms.openlocfilehash: 1dad17756cbc12fdf65250b7c54314ff2a645287
+ms.sourcegitcommit: e5192a25c084eda9eabfa37626f3274507e026b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "73912912"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73966205"
 ---
 # <a name="download-install-and-set-up-the-linux-workload"></a>Linux iş yükünü indirme, yükleme ve ayarlama
 
@@ -48,29 +48,31 @@ Bu senaryoların herhangi biri için iş yüküyle **Linux geliştirme C++**  ge
 
 Henüz bir Linux makineniz yoksa Azure 'da bir Linux sanal makinesi oluşturabilirsiniz. Daha fazla bilgi için bkz. [hızlı başlangıç: Azure Portal Linux sanal makinesi oluşturma](/azure/virtual-machines/linux/quick-create-portal).
 
-Windows 10 ' da, Linux (WSL) için Windows alt sistemine sahip en sevdiğiniz Linux 'u yükleyebilir ve hedefleyebilirsiniz. Daha fazla bilgi için bkz. [Windows 10 Için Linux Için Windows alt sistemi yükleme kılavuzu](/windows/wsl/install-win10). Windows Mağazası 'na erişemiyorsanız, [WSL 'nin geçmiş paketlerini el ile indirebilirsiniz](/windows/wsl/install-manual). WSL, uygun bir konsol ortamıdır, ancak grafik uygulamalar için önerilmez. 
+Windows 10 ' da, Linux (WSL) için Windows alt sistemine sahip en sevdiğiniz Linux 'u yükleyebilir ve hedefleyebilirsiniz. Daha fazla bilgi için bkz. [Windows 10 Için Linux Için Windows alt sistemi yükleme kılavuzu](/windows/wsl/install-win10). Windows Mağazası 'na erişemiyorsanız, [WSL 'nin geçmiş paketlerini el ile indirebilirsiniz](/windows/wsl/install-manual). WSL, uygun bir konsol ortamıdır, ancak grafik uygulamalar için önerilmez.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-Visual Studio 'da Linux projeleri, uzak Linux sisteminize veya WSL 'ye aşağıdaki bağımlılıkların yüklenmesini gerektirir: 
-- **Derleyici** -Visual Studio 2019, GCC ve [Clang](https://docs.microsoft.com/en-us/cpp/build/clang-support-cmake?view=vs-2019)için kullanıma hazır destek içerir. 
-- **gdb** -Visual Studio, Linux sisteminde otomatik olarak gdb 'yi başlatır ve Linux üzerinde tam uygunlukta hata ayıklama deneyimi sağlamak Için Visual Studio hata ayıklayıcısının ön ucu kullanır. 
+Visual Studio 'da Linux projeleri, uzak Linux sisteminize veya WSL 'ye aşağıdaki bağımlılıkların yüklenmesini gerektirir:
+
+- **Derleyici** -Visual Studio 2019, GCC ve [Clang](/cpp/build/clang-support-cmake?view=vs-2019)için kullanıma hazır destek içerir.
+- **gdb** -Visual Studio, Linux sisteminde otomatik olarak gdb 'yi başlatır ve Linux üzerinde tam uygunlukta hata ayıklama deneyimi sağlamak Için Visual Studio hata ayıklayıcısının ön ucu kullanır.
 - **rsync** ve **ZIP** -rsync ve zip dahil, Visual Studio 'nun IntelliSense tarafından kullanılmak üzere Linux sisteminizden Windows dosya sistemine üst bilgi dosyalarını ayıklamasına olanak tanır.
 - **yapabilir**
 - **OpenSSH-Server** (yalnızca uzak Linux sistemleri)-Visual Studio, GÜVENLI bir SSH bağlantısı üzerinden uzak Linux sistemlerine bağlanır.
 - **CMake** (yalnızca CMake projeleri)- [Linux için Microsoft 'un statik bağlantılı CMake İkililerini](https://github.com/microsoft/CMake/releases)yükleyebilirsiniz.
 
-Aşağıdaki komutlar Clang yerine g + + kullandığınızı varsayar. 
+Aşağıdaki komutlar Clang yerine g + + kullandığınızı varsayar.
 
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
-Visual Studio 'da Linux projeleri, uzak Linux sisteminize veya WSL 'ye aşağıdaki bağımlılıkların yüklenmesini gerektirir: 
+Visual Studio 'da Linux projeleri, uzak Linux sisteminize veya WSL 'ye aşağıdaki bağımlılıkların yüklenmesini gerektirir:
+
 - **GCC** -Visual Studio 2017, gcc için kullanıma hazır destek içerir.
-- **gdb** -Visual Studio, Linux sisteminde otomatik olarak gdb 'yi başlatır ve Linux üzerinde tam uygunlukta hata ayıklama deneyimi sağlamak Için Visual Studio hata ayıklayıcısının ön ucu kullanır. 
+- **gdb** -Visual Studio, Linux sisteminde otomatik olarak gdb 'yi başlatır ve Linux üzerinde tam uygunlukta hata ayıklama deneyimi sağlamak Için Visual Studio hata ayıklayıcısının ön ucu kullanır.
 - **rsync** ve **ZIP** -rsync ve zip dahil, Visual Studio 'Nun IntelliSense için kullanılacak Windows dosya sistemine Linux sisteminizden başlık dosyalarını ayıklamasına olanak tanır.
 - **yapabilir**
 - **OpenSSH-Server** -Visual Studio, GÜVENLI bir SSH bağlantısı üzerinden uzak Linux sistemlerine bağlanır.
@@ -78,7 +80,7 @@ Visual Studio 'da Linux projeleri, uzak Linux sisteminize veya WSL 'ye aşağıd
 
 ::: moniker-end
 
-::: moniker range="vs-2019" 
+::: moniker range="vs-2019"
 
 ## <a name="linux-setup-ubuntu-on-wsl"></a>Linux Kurulumu: WSL üzerinde Ubuntu
 

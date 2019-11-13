@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C4561
 ms.assetid: 3a10c12c-601b-4b6c-9861-331fd022e021
-ms.openlocfilehash: 24a3ca8b35266e93f298314f45015b7a480e2af0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b0fd27142f0404a53fa2fee87fb2309e2f54d2c2
+ms.sourcegitcommit: e5192a25c084eda9eabfa37626f3274507e026b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62397295"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73965973"
 ---
 # <a name="compiler-warning-level-1-c4561"></a>Derleyici Uyarısı (düzey 1) C4561
 
-'__fastcall' ile uyumsuz ' / clr' seçeneği: dönüştürme '\__stdcall'
+' __fastcall ' '/CLR ' seçeneğiyle uyumsuz: '\__stdcall ' olarak dönüştürülüyor
 
-[__Fastcall](../../cpp/fastcall.md) işlevi çağırma kuralı ile kullanılamaz [/CLR](../../build/reference/clr-common-language-runtime-compilation.md) derleyici seçeneği. Çağrıları derleyicinin yoksaydığı `__fastcall`. Bu uyarıyı düzeltmek için çağrıları kaldırın **__fastcall** veya olmadan derleme **/CLR**.
+[__Fastcall](../../cpp/fastcall.md) işlev çağırma kuralı [/clr](../../build/reference/clr-common-language-runtime-compilation.md) derleyici seçeneği ile kullanılamaz. Derleyici `__fastcall`çağrılarını yoksayar. Bu uyarıyı onarmak için **__fastcall** çağrıları kaldırın ya da **/clr**olmadan derleyin.
 
-Aşağıdaki örnek, C4561 oluşturur:
+Aşağıdaki örnek C4561 oluşturur:
 
-```
+```cpp
 // C4561.cpp
 // compile with: /clr /W1 /c
 // processor: x86

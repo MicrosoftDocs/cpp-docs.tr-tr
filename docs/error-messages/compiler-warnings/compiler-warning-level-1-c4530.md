@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C4530
 ms.assetid: a04dcdb2-84db-459d-9e5e-4e743887465f
-ms.openlocfilehash: a542f9b6bb73e561592e1e779aa6ee493612e6ac
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3139d321bca64b9938badebdabccd3ca1eb96d11
+ms.sourcegitcommit: e5192a25c084eda9eabfa37626f3274507e026b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62160724"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73966257"
 ---
 # <a name="compiler-warning-level-1-c4530"></a>Derleyici Uyarısı (düzey 1) C4530
 
-C++ özel durum işleyicisi kullanılır, ancak geriye doğru izleme semantiği etkinleştirilmedi. / Ehsc belirtin
+C++özel durum işleyicisi kullanıldı, ancak geriye doğru izleme semantiği etkin değil. /EHsc belirtin
 
-C++ özel durum işleme kullanıldı ancak [/ehsc](../../build/reference/eh-exception-handling-model.md) seçilmedi.
+C++özel durum işleme kullanıldı ancak [/EHsc](../../build/reference/eh-exception-handling-model.md) seçilmedi.
 
-/ Ehsc seçeneği etkinleştirilmemiş olduğunda otomatik depolama çerçevesinde, throw yapılması ve throw yakalama işlevleri arasında olan bir nesne yok edilmez. Ancak, otomatik depolamalı bir nesnenin oluşturulup bir **deneyin** veya **catch** blok silinecektir.
+/EHsc seçeneği etkinleştirilmediğinde, oluşturma işlemi yapan işlev ve throw 'u yakalayan işlev arasında çerçevede otomatik depolamaya sahip bir nesne yok edilmez. Ancak, bir **TRY** veya **catch** bloğunda oluşturulan otomatik depolamaya sahip bir nesne yok edilir.
 
-Aşağıdaki örnek, C4530 oluşturur:
+Aşağıdaki örnek C4530 oluşturur:
 
-```
+```cpp
 // C4530.cpp
 // compile with: /W1
 int main() {
@@ -31,4 +31,4 @@ int main() {
 }
 ```
 
-Örnek uyarı çözümlemek için/ehsc ile derleyin.
+Uyarıyı çözümlemek için, örneği/EHsc ile derleyin.

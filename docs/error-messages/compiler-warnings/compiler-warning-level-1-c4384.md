@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C4384
 ms.assetid: fafa8eb2-cbfc-4edb-8b0f-511ff5d37ac0
-ms.openlocfilehash: 0f2666011e88dfd59eaaca154f4407bece7c963c
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 467f15522503d16d3b023661ee339c986f74ddec
+ms.sourcegitcommit: e5192a25c084eda9eabfa37626f3274507e026b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64344589"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73964883"
 ---
 # <a name="compiler-warning-level-1-c4384"></a>Derleyici Uyarısı (düzey 1) C4384
 
-\#pragma 'make_public' yalnızca genel kapsamda kullanılmalıdır
+\#pragma ' make_public ' yalnızca genel kapsamda kullanılmalıdır
 
 [Make_public](../../preprocessor/make-public.md) pragma yanlış uygulandı.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C4384 oluşturur.
+Aşağıdaki örnek C4384 oluşturur.
 
-```
+```cpp
 // C4384.cpp
 // compile with: /c /W1
 namespace n {

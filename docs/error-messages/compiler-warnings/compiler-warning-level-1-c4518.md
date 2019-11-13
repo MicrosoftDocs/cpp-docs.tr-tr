@@ -6,20 +6,20 @@ f1_keywords:
 helpviewer_keywords:
 - C4518
 ms.assetid: 4ad21004-f076-43fd-99f4-4bf1f9be4c0b
-ms.openlocfilehash: 85e0d87094fc355bf63d79bf2eb5b1d06f233542
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9992032c71798f604b5a45a1b48c1266067b2acb
+ms.sourcegitcommit: e5192a25c084eda9eabfa37626f3274507e026b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62160737"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73966293"
 ---
 # <a name="compiler-warning-level-1-c4518"></a>Derleyici Uyarısı (düzey 1) C4518
 
-'belirticisi': depolama sınıfı belirticileri beklenmiyor burada; yazın yoksayıldı
+' belirtici ': burada depolama sınıfı veya tür belirticileri beklenmiyor; LIP
 
-Aşağıdaki örnek, C4518 oluşturur:
+Aşağıdaki örnek C4518 oluşturur:
 
-```
+```cpp
 // C4518.cpp
 // compile with: /c /W1
 _declspec(dllexport) extern "C" void MyFunction();   // C4518

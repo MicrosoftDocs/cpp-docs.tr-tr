@@ -6,26 +6,26 @@ f1_keywords:
 helpviewer_keywords:
 - C4377
 ms.assetid: a1c797b8-cd5e-4a56-b430-d07932e811cf
-ms.openlocfilehash: d8c89967e0dc900e098ca03d22932451f26a6a0a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 30e2ecb1d5e0de290c028cdfb53c7df831a732b4
+ms.sourcegitcommit: e5192a25c084eda9eabfa37626f3274507e026b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62410431"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73966456"
 ---
 # <a name="compiler-warning-level-1-c4377"></a>Derleyici Uyarısı (düzey 1) C4377
 
-Yerel türler varsayılan olarak özeldir; -d1PrivateNativeTypes kullanım dışıdır
+yerel türler varsayılan olarak özeldir; -D1privatenativetypes kullanımdan kalktı kullanım dışıdır
 
-Önceki sürümlerde, bütünleştirilmiş kodlarında yerel türler varsayılan ve belgelenmemiş, iç derleyici seçeneği tarafından genel (**/d1PrivateNativeTypes**) özel hale getirmek için kullanıldı.
+Önceki sürümlerde, derlemelerdeki yerel türler varsayılan olarak geneldir ve özel hale getirmek için dahili, belgelenmemiş bir derleyici seçeneği ( **/d1PrivateNativeTypes**) kullanılmıştı.
 
-Tüm türleri, yerel ve CLR, artık varsayılan olarak, derleme özel olan şekilde **/d1PrivateNativeTypes** artık gerekli değildir.
+Tüm türler, yerel ve CLR artık bir derlemede varsayılan olarak özeldir, bu nedenle **/d1PrivateNativeTypes** artık gerekli değildir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C4377 oluşturur.
+Aşağıdaki örnek C4377 oluşturur.
 
-```
+```cpp
 // C4377.cpp
 // compile with: /clr /d1PrivateNativeTypes /W1
 // C4377 warning expected

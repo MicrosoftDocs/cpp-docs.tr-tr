@@ -6,26 +6,26 @@ f1_keywords:
 helpviewer_keywords:
 - C4407
 ms.assetid: 32bc2c21-363a-4bb8-b486-725faeaededc
-ms.openlocfilehash: 2e47e293b650f64d2a6be91a837cc4195e073e8f
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: cdc25155aced50331851e9581c346155c6f8e45c
+ms.sourcegitcommit: e5192a25c084eda9eabfa37626f3274507e026b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65447752"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73966335"
 ---
 # <a name="compiler-warning-level-1-c4407"></a>Derleyici Uyarısı (düzey 1) C4407
 
-farklı işaretçiden üyeye gösterimleri arasında tür dönüştürme; derleyici yanlış kod üretebilir
+farklı işaretçilere üye temsillerine atama, derleyici yanlış kod üretebilir
 
-Hatalı bir tür dönüştürme algılandı.
+Yanlış bir atama algılandı.
 
-Visual Studio 2005'te yapıldığı derleyici uyumluluğu iş nedeniyle C4407 oluşturulabilir. İşaretçi-üye artık gerektiren bir tam adı ve address-of işleci (&).
+C4407, Visual Studio 2005 ' de gerçekleştirilen derleyici uyumluluğu işi nedeniyle oluşturulabilir. Üye işaretçisi artık nitelenmiş bir ad ve adres işleci (&) gerektirir.
 
-Bir çoklu devralma işaretçi-üye için bir tek devralma işaretçi-üye arasında dönüştürme C4407 oluşabilir. Bu bazen çalışabilir, ancak bazen tek devralma işaretçi-üye gösterimi yeterli bilgiyi tutmak değil olduğundan işlem gerçekleştirilemiyor. İle derlerken **/VMM** yardımcı olabilir (daha fazla bilgi için [/VMM, / VMs, / vmv (genel amaçlı temsil)](../../build/reference/vmm-vms-vmv-general-purpose-representation.md)). Taban sınıfları yeniden düzenleme de deneyebilirsiniz; sıfır olmayan uzaklığı türetilmiş bir temel sınıf olduğundan derleyici dönüştürmede bilgi kaybı algılıyor.
+Birden çok devralım işaretçisi arasında tek bir devralma işaretçisine üye olarak atama yaparsanız, C4407 oluşabilir. Bazen bu işe yarar, ancak tek bir devralma işaretçisinin üye gösteriminin yeterli bilgi içermediğinden, bazı durumlarda olamaz. **/VMM** ile derleme yardımcı olabilirler (daha fazla bilgi için bkz. [/VMM,/VM 'ler,/vmv (genel amaçlı temsili)](../../build/reference/vmm-vms-vmv-general-purpose-representation.md)). Ayrıca, temel sınıflarınızı yeniden düzenlemeyi deneyebilirsiniz; Derleyici, bir taban sınıfı türetilmişten sıfır olmayan bir uzaklığa sahip olduğundan, dönüştürmede bilgi kaybını algılıyor.
 
-Aşağıdaki örnek, C4407 oluşturur:
+Aşağıdaki örnek C4407 oluşturur:
 
-```
+```cpp
 // C4407.cpp
 // compile with: /W1 /c
 struct C1 {};

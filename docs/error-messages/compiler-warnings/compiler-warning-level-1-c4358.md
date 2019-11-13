@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C4358
 ms.assetid: a9848f84-14b3-405e-81bf-ee3e91a51511
-ms.openlocfilehash: aebac17a343efedf678b55f8940004c85a2db708
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7fd3109df3ecd32933b5fc217dfc02181f43d97c
+ms.sourcegitcommit: e5192a25c084eda9eabfa37626f3274507e026b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62408387"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73966530"
 ---
 # <a name="compiler-warning-level-1-c4358"></a>Derleyici Uyarısı (düzey 1) C4358
 
-'operator': birleştirilmiş temsilcilerin türü 'void'; değil döndürülen değer tanımsız olur.
+' operator ': birleştirilmiş temsilcilerin dönüş türü ' void ' değil; döndürülen değer tanımsız
 
-İki temsilci olduğunda birleştirilen ve void dönüş değeri değil. Derleyici, iki temsilci olduğunda void olmayan dönüş değerleri ile birleştirildiğinde, temsilcinin dönüş değeri kullanılırsa, doğru atama yapmak mümkün olmayacaktır.
+İki temsilci birleştirildi ve dönüş değeri void değil. Void olmayan dönüş değerleri olan iki temsilci birleştirilirse, temsilcinin dönüş değeri kullanılırsa derleyici uygun bir atama yapamaz.
 
-Aşağıdaki örnek, C4358 oluşturur:
+Aşağıdaki örnek C4358 oluşturur:
 
-```
+```cpp
 // C4358.cpp
 // compile with: /clr /W1
 delegate int D();

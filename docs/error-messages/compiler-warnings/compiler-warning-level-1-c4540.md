@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C4540
 ms.assetid: 8085e748-5f4d-43c2-b06d-eaf794edbf72
-ms.openlocfilehash: 86f6cd866f7708277ebba436ba7c076086dc9c8c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8e514f4f3cf0cc3ee95ff709eda307b143ab3b1c
+ms.sourcegitcommit: e5192a25c084eda9eabfa37626f3274507e026b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62160711"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73965695"
 ---
 # <a name="compiler-warning-level-1-c4540"></a>Derleyici Uyarısı (düzey 1) C4540
 
-erişilemeyen veya belirsiz tabanı dönüştürmek için kullanılan dynamic_cast; test çalışma zamanı ('type2' öğesine ' type1') başarısız olur
+dynamic_cast erişilemeyen veya belirsiz tabana dönüştürmek için kullanılır; çalışma zamanı testi başarısız olacak (' type1 '-' type2 ')
 
-Kullanılan `dynamic_cast` bir türden diğerine dönüştürme. Derleyici, atama her zaman başarısız olacağı belirlenen (dönüş **NULL**) bir taban sınıfına erişilemez olduğundan (`private`, örneği için) veya belirsiz (birden çok kez sınıf hiyerarşisini, örneğin görünür).
+Bir türden diğerine dönüştürmek için `dynamic_cast` kullandınız. Derleyici, bir temel sınıf erişilemez olduğu (örneğin, örneğin`private`) veya belirsiz olduğu (örneğin, sınıf hiyerarşisinde birden çok kez göründüğü) için dönüştürmenin her zaman başarısız olacağını ( **null**döndürecek) belirledi.
 
-Bu uyarı örneği aşağıda gösterilmiştir. Sınıf **B** sınıfından türetilen **A**. Programın kullandığı `dynamic_cast` sınıftan dönüştürme için **B** (türetilmiş sınıf) sınıfı için **A**, her zaman başarısız olur çünkü sınıfı **B** olduğu `private` ve bu nedenle erişilemez. Erişimi değiştirme **A** için **genel** uyarı çözülecektir.
+Aşağıda bu uyarının bir örneği gösterilmektedir. **B** sınıfı, **A**sınıfından türetilir. Program, b **sınıfı `private`** ve bu nedenle erişilemez olduğu için her zaman başarısız olacak şekilde **b** sınıfından (türetilmiş sınıf) **bir sınıf A**'ya dönüştürmek için `dynamic_cast` kullanır. **A** erişiminin **genel** olarak değiştirilmesi, uyarıyı çözmeyecektir.
 
-```
+```cpp
 // C4540.cpp
 // compile with: /W1
 

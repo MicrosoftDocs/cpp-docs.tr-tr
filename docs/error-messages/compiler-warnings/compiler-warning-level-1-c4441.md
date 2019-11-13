@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C4441
 ms.assetid: 7fc540a5-e41f-47cf-aa37-b2b699c2685e
-ms.openlocfilehash: 45d7a6af09677c1e63dab5ffcc55c35d8203b40b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6f45288e1e52d157e5c135a45c0801a909fccfbc
+ms.sourcegitcommit: e5192a25c084eda9eabfa37626f3274507e026b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62408244"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73966030"
 ---
 # <a name="compiler-warning-level-1-c4441"></a>Derleyici Uyarısı (düzey 1) C4441
 
-çağırma kuralı yoksayıldı; 'cc1' Bunun yerine 'cc2'
+' CC1 ' çağırma kuralı yoksayıldı; Bunun yerine ' CC2 ' kullanıldı
 
-Yönetilen kullanıcı tanımlı türler ve genel işlev genel türler, üye işlevleri kullanmalıdır [__clrcall](../../cpp/clrcall.md) çağırma kuralı.  Kullanılan derleyici `__clrcall`.
+Yönetilen Kullanıcı tanımlı türler ve genel işlev genel türlerindeki üye işlevleri [__clrcall](../../cpp/clrcall.md) çağırma kuralını kullanmalıdır.  `__clrcall`kullanılan derleyici.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C4441 oluşturur.
+Aşağıdaki örnek C4441 oluşturur.
 
-```
+```cpp
 // C4441.cpp
 // compile with: /clr /W1 /c
 generic <class ItemType>

@@ -6,26 +6,26 @@ f1_keywords:
 helpviewer_keywords:
 - C4489
 ms.assetid: 43b51c8c-27b5-44c9-b974-fe4b48f4896f
-ms.openlocfilehash: dd150621ad3474444861982c095ae8a6addb52fa
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 78ceecb5918ccb74bd61afe62bbf8b542d585f81
+ms.sourcegitcommit: e5192a25c084eda9eabfa37626f3274507e026b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62404045"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73966194"
 ---
 # <a name="compiler-warning-level-1-c4489"></a>Derleyici Uyarısı (düzey 1) C4489
 
-'belirticisi': arabirim yöntemi 'method';'üzerinde izin verilmiyor geçersiz kılma belirticileri yalnızca başvuru sınıfı ve değer sınıfı yöntemleri üzerinde izin verilir
+' belirtici ': ' Method ' arabirim yönteminde izin verilmiyor; geçersiz kılma belirticilerine yalnızca başvuru sınıfı ve değer sınıfı yöntemlerinde izin verilir
 
-Belirleyicisi anahtar sözcüğü, bir arabirimi yöntemi üzerinde yanlış kullanıldı.
+Bir tanımlayıcı anahtar sözcüğü, bir arabirim yönteminde yanlış kullanıldı.
 
-Daha fazla bilgi için [geçersiz kılma tanımlayıcıları](../../extensions/override-specifiers-cpp-component-extensions.md).
+Daha fazla bilgi için bkz. [geçersiz kılma belirticileri](../../extensions/override-specifiers-cpp-component-extensions.md).
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C4489 oluşturur.
+Aşağıdaki örnek C4489 oluşturur.
 
-```
+```cpp
 // C4489.cpp
 // compile with: /clr /c /W1
 public interface class I {
