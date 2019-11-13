@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C4550
 ms.assetid: f902b4ed-5f17-48ea-b693-92f4fb8c8054
-ms.openlocfilehash: eff3548ef43075a86f52086caf9b79158ad70cb9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1c310855ee3925374de8b736cde9013d48df6482
+ms.sourcegitcommit: e5192a25c084eda9eabfa37626f3274507e026b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62410388"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73966384"
 ---
 # <a name="compiler-warning-level-1-c4550"></a>Derleyici Uyarısı (düzey 1) C4550
 
-ifade bir bağımsız değişken listesi eksik bir işlev olarak değerleniyor
+ifade bir bağımsız değişken listesi olmayan bir işlev olarak değerlendirilir
 
-Başvurusu kaldırılmış bir işaretçi bir işlev için bağımsız değişken listesi eksik.
+Bir işleve başvuru yapılan bir işaretçiye bir bağımsız değişken listesi eksik.
 
 ## <a name="example"></a>Örnek
 
-```
+```cpp
 // C4550.cpp
 // compile with: /W1
 bool f()

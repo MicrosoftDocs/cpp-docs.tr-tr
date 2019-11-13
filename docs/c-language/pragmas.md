@@ -1,29 +1,29 @@
 ---
 title: Pragmalar
-ms.date: 11/04/2016
+ms.date: 11/11/2019
 helpviewer_keywords:
 - pragmas, about pragmas
 ms.assetid: 3ce8aced-53ee-4524-87d0-f998d6977ff5
-ms.openlocfilehash: 22762b80ac9fb799589d1b4dbdfc1f77af2009f3
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: ffe57c7cacc47c971f8a9d415f1d3416564f253d
+ms.sourcegitcommit: e5192a25c084eda9eabfa37626f3274507e026b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64343091"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73965462"
 ---
 # <a name="pragmas"></a>Pragmalar
 
-**ANSI 3.8.6** her tanınan #pragma yönergesindeki davranış.
+**ANSI 3.8.6** Her tanınan #pragma yönergesinin davranışı.
 
-Aşağıdaki [C pragmaları](../c-language/c-pragmas.md) Microsoft C derleyicisi için tanımlanır:
+Aşağıdaki [c pragmaları](../c-language/c-pragmas.md) , Microsoft c derleyicisi için tanımlanmıştır:
 
 |||||
 |-|-|-|-|
-|**alloc_text**|**data_seg**|**include_alias**|`setlocale`|
-|**auto_inline**|**İşlevi**|**intrinsic**|**warning**|
-|**check_stack**|**hdrstop**|**message**||
-|**code_seg**|**inline_depth**|**optimize**||
-|**Açıklama**|**inline_recursion**|`pack`||
+|[alloc_text](../preprocessor/alloc-text.md)|[data_seg](../preprocessor/data-seg.md)|[include_alias](../preprocessor/include-alias.md)|[setlocale](../preprocessor/setlocale.md)|
+|[auto_inline](../preprocessor/auto-inline.md)|[çalışmayacaktır](../preprocessor/function-c-cpp.md)|[intrinsic](../preprocessor/intrinsic.md)|[warning](../preprocessor/warning.md)|
+|[check_stack](../preprocessor/check-stack.md)|[hdrstop](../preprocessor/hdrstop.md)|[message](../preprocessor/message.md)||
+|[code_seg](../preprocessor/code-seg.md)|[inline_depth](../preprocessor/inline-depth.md)|[optimize](../preprocessor/optimize.md)||
+|[açıklamanın](../preprocessor/comment-c-cpp.md)|[inline_recursion](../preprocessor/inline-recursion.md)|[pack](../preprocessor/pack.md)||
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

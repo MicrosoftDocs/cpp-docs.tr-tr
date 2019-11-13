@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C4566
 ms.assetid: 65f40730-e86f-447c-b37b-16caadcfe311
-ms.openlocfilehash: c864feb2478e9f99ad6e4c0087dcef72b55de601
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c6a62b399aa32ec6caf2e5a9ee6d4c5836601ba4
+ms.sourcegitcommit: e5192a25c084eda9eabfa37626f3274507e026b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62397271"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73965968"
 ---
 # <a name="compiler-warning-level-1-c4566"></a>Derleyici Uyarısı (düzey 1) C4566
 
-evrensel karakter adı 'char' temsil edilen karakter geçerli kod sayfasında (sayfa) gösterilemez
+' Char ' evrensel karakter adı ile temsil edilen karakter geçerli kod sayfasında (sayfa) gösterilemez
 
-Her Unicode karakter geçerli ANSI kod sayfasında temsil edilebilir.
+Geçerli ANSI kod sayfanızda her Unicode karakteri temsil edilebilir.
 
-Çok geniş dizelerdir (iki baytlık karakter) ise korunmadığını dar dize (tek bayt karakterle) için çok baytlı karakter dönüştürülür.
+Dar dizeler (bir baytlık karakterler) çok baytlı karakterlere dönüştürülür, geniş dizeler (iki baytlık karakterler) değildir.
 
-Aşağıdaki örnek, C4566 oluşturur:
+Aşağıdaki örnek C4566 oluşturur:
 
-```
+```cpp
 // C4566.cpp
 // compile with: /W1
 int main() {

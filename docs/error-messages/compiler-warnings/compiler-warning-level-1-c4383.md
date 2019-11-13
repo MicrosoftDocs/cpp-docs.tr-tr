@@ -6,28 +6,28 @@ f1_keywords:
 helpviewer_keywords:
 - C4383
 ms.assetid: 96c0e52d-874e-4b57-a154-0e49b6a00fae
-ms.openlocfilehash: 2510dda59047632e2a4823f734feeffd0c0a5b02
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9681408841173bad4aca3305e727ddde6cd98f14
+ms.sourcegitcommit: e5192a25c084eda9eabfa37626f3274507e026b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62390444"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73966167"
 ---
 # <a name="compiler-warning-level-1-c4383"></a>Derleyici Uyarısı (düzey 1) C4383
 
-'instance_dereference_operator': bir kullanıcı tanımlı 'operator' işleci olduğunda; müşteri başvurusunu değiştirmenin anlamı değiştirebilirsiniz işleci, işlenenin hakkında açık olmaya statik işlev olarak yazma
+' instance_dereference_operator ': bir tanıtıcının başvurusunun kaldırılması anlamı, Kullanıcı tanımlı ' operator ' işleci olduğunda değişebilir; işleneni açık olacak şekilde işleci statik bir işlev olarak yazın
 
-İçinde yönetilen bir türe başvuru işleci bir kullanıcı tanımlı örneği geçersiz kılma eklediğinizde, türün başvuru işleci yeteneğini tutamacın nesneyi döndürmek için potansiyel olarak geçersiz kılın. Göz önünde bulundurun, kullanıcı tarafından tanımlanan statik yazma başvuru kaldırma işleci.
+Yönetilen bir türdeki başvuru işlecinin Kullanıcı tanımlı örnek geçersiz kılmayı eklediğinizde, türün başvuru işlecinin tanıtıcının nesnesini döndürme özelliğini geçersiz kılarsınız. Statik, Kullanıcı tanımlı bir başvuru operatörü yazmayı düşünün.
 
-Daha fazla bilgi için [işlemek nesne işleci (^)](../../extensions/handle-to-object-operator-hat-cpp-component-extensions.md) ve [Tracking Reference Operator](../../extensions/tracking-reference-operator-cpp-component-extensions.md).
+Daha fazla bilgi için, bkz. [nesne işleci (^)](../../extensions/handle-to-object-operator-hat-cpp-component-extensions.md) ve [izleme başvurusu işleci](../../extensions/tracking-reference-operator-cpp-component-extensions.md).
 
-Ayrıca, bir örnek işleci başvurulan meta verileri üzerinden diğer dil derleyicileri için kullanılabilir değil. Daha fazla bilgi için [kullanıcı tanımlı işleçler (C++/CLI)](../../dotnet/user-defined-operators-cpp-cli.md).
+Ayrıca, bir örnek operatörü başvurulan meta veriler aracılığıyla diğer dil derleyicileri için kullanılamaz. Daha fazla bilgi için bkz. [Kullanıcı tanımlı işleçler (C++/CLI)](../../dotnet/user-defined-operators-cpp-cli.md).
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C4383 oluşturur.
+Aşağıdaki örnek C4383 oluşturur.
 
-```
+```cpp
 // C4383.cpp
 // compile with: /clr /W1
 
