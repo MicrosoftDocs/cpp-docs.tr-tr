@@ -6,26 +6,26 @@ f1_keywords:
 helpviewer_keywords:
 - C4722
 ms.assetid: d8660710-f67b-4f59-a5fd-59259475529e
-ms.openlocfilehash: 320061c2daf2be042afe45828af637638399beaf
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 85921d67b764a28f9251f0c8b6e3fc807edd0f5b
+ms.sourcegitcommit: 458dcc794e3841919c01a3a5ff6b9a3767f8861b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62327294"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74052446"
 ---
 # <a name="compiler-warning-level-1-c4722"></a>Derleyici Uyarısı (düzey 1) C4722
 
-'function': yok edici hiç dönmüyor, olası bellek sızıntısı
+' function ': yıkıcı hiçbir şekilde döndürmez, olası bellek sızıntısı
 
-Denetim akışı bir yok edici içinde sonlandırır. İş parçacığı veya tüm program sona erer ve ayrılan kaynakları serbest.  Ayrıca, özel durum işleme sırasında yığın geriye doğru izleme için bir yok Edicisi çağrılır, yürütülebilir dosyanın davranış tanımlanmamıştır.
+Denetim akışı bir yıkıcıda sonlandırılır. İş parçacığı veya tüm program sonlandırılır ve ayrılan kaynaklar yayımlanmayabilir.  Ayrıca, özel durum işleme sırasında yığın geri sarma için bir yıkıcı çağrılacaktır, yürütülebilir dosyanın davranışı tanımsızdır.
 
-Çözümlemek için yok edici değil döndürmek neden işlev çağrısı kaldırın.
+Çözümlemek için, yok edicinin dönüşmesine neden olan işlev çağrısını kaldırın.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C4722 oluşturur:
+Aşağıdaki örnek C4722 oluşturur:
 
-```
+```cpp
 // C4722.cpp
 // compile with: /O1 /W1 /c
 #include <stdlib.h>

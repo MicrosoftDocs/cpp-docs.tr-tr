@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C4946
 ms.assetid: b85cbef0-e053-4de6-9b14-7b0f82d40495
-ms.openlocfilehash: f215c621486bf223d8f6c90b0a4f4ae119ad4b1f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 238e842202bfde05f41d5ab7bc4e3eb2b8b63735
+ms.sourcegitcommit: 458dcc794e3841919c01a3a5ff6b9a3767f8861b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62280578"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74050197"
 ---
 # <a name="compiler-warning-level-1-c4946"></a>Derleyici Uyarısı (düzey 1) C4946
 
 reinterpret_cast ilgili sınıflar arasında kullanıldı: 'class1' ve 'class2'
 
-Kullanmayın [reinterpret_cast](../../cpp/reinterpret-cast-operator.md) ilgili türleri arasında dönüştürme için. Kullanma [static_cast](../../cpp/static-cast-operator.md) yerine veya çok biçimli türler için [dynamic_cast](../../cpp/dynamic-cast-operator.md).
+İlgili türler arasında dönüştürme yapmak için [reinterpret_cast](../../cpp/reinterpret-cast-operator.md) kullanmayın. [Static_cast](../../cpp/static-cast-operator.md) veya polimorfik türler için [dynamic_cast](../../cpp/dynamic-cast-operator.md)kullanın.
 
-Varsayılan olarak, bu uyarıyı kapalıdır. Daha fazla bilgi için [derleyici uyarıları emin olan kapalı varsayılan](../../preprocessor/compiler-warnings-that-are-off-by-default.md).
+Varsayılan olarak, bu uyarı kapalıdır. Daha fazla bilgi için bkz. [Varsayılan olarak kapalı olan Derleyici uyarıları](../../preprocessor/compiler-warnings-that-are-off-by-default.md).
 
 Aşağıdaki kod örneği C4946 oluşturur:
 
-```
+```cpp
 // C4946.cpp
 // compile with: /W1
 #pragma warning (default : 4946)

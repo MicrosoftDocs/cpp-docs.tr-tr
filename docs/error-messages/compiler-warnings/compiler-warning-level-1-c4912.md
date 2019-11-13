@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C4912
 ms.assetid: ba1f1a66-8c20-4792-9ac8-43e49f729ae2
-ms.openlocfilehash: 7a6f7df79a98685a7eec1582ae248ea3f620c5fa
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1e9e13cd909ec77397eac8b40ec4323b2b5847d9
+ms.sourcegitcommit: 458dcc794e3841919c01a3a5ff6b9a3767f8861b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62207062"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74050258"
 ---
 # <a name="compiler-warning-level-1-c4912"></a>Derleyici Uyarısı (düzey 1) C4912
 
-'attribute': özniteliği bir iç içe geçmiş UDT'de davranışı tanımlı değil
+' Attribute ': öznitelik iç içe bir UDT üzerinde tanımsız davranışa sahip
 
-İç içe geçmiş Udt'ler (bir tür tanımı, birleşim veya yapı olabilecek kullanıcı tanımlı türü) için uygulanan öznitelikleri yoksayılabilir.
+İç içe (typedef, Union veya struct olabilecek Kullanıcı tanımlı tür) için uygulanan öznitelikler yok sayılabilir.
 
-Aşağıdaki kod nasıl bu uyarı oluşturulacağını gösterir:
+Aşağıdaki kod, bu uyarının nasıl oluşturulacağını gösterir:
 
-```
+```cpp
 // C4912.cpp
 // compile with: /W1
 #include <windows.h>

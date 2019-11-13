@@ -6,28 +6,28 @@ f1_keywords:
 helpviewer_keywords:
 - C4803
 ms.assetid: 2552f3a6-c418-49f4-98a2-a929857be658
-ms.openlocfilehash: bb8f5fe9d55a44193325a2fcfe9ef7675a2b3b89
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ebf7b3baec3519a142c7a1835aa15a980974bb48
+ms.sourcegitcommit: 458dcc794e3841919c01a3a5ff6b9a3767f8861b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62406502"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74052343"
 ---
 # <a name="compiler-warning-level-1-c4803"></a>Derleyici Uyarısı (düzey 1) C4803
 
-'method': yükseltme yönteminde olayın bir farklı depolama sınıfı olan 'event'
+' Method ': Raise yönteminin, ' Event ' olayından farklı bir depolama sınıfı vardır
 
-Olay yöntemleri olay bildirimiyle aynı depolama sınıfına sahip olmalıdır. Depolama sınıfları aynı olacak şekilde derleyici olay yöntemleri ayarlar.
+Olay yöntemlerinin, olay bildirimiyle aynı depolama sınıfına sahip olması gerekir. Derleyici, olay yöntemlerini, depolama sınıflarının aynısını aynı olacak şekilde ayarlar.
 
-Bu uyarı, bir olaydan bir arabirimi uygulayan bir sınıf varsa ortaya çıkabilir. Derleyici örtük olarak bir arabirimde bir olayın bir raise yöntemi oluşturmaz. Bir sınıfta arabirimi uyguladığınızda, derleyici bir raise yöntemi örtük bir şekilde oluşturmaya ve bu yöntem bu nedenle sanal olmayacak uyarı. Olaylar hakkında daha fazla bilgi için bkz. [olay](../../extensions/event-cpp-component-extensions.md).
+Bu uyarı, bir arabirimden bir olay uygulayan bir sınıfınız varsa oluşabilir. Derleyici, arabirimdeki bir olay için örtük olarak bir Raise yöntemi oluşturmaz. Bu arabirimi bir sınıfta uyguladığınızda, derleyici örtük olarak bir Raise yöntemi oluşturur ve bu yöntem sanal olmaz ve bu nedenle uyarı görüntülenir. Olaylar hakkında daha fazla bilgi için bkz. [Event](../../extensions/event-cpp-component-extensions.md).
 
-Bkz: [uyarı](../../preprocessor/warning.md) pragma bir uyarı kapatmak hakkında bilgi için.
+Bir uyarının nasıl kapatılacağı hakkında bilgi için bkz. [Warning](../../preprocessor/warning.md) pragma.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C4803 oluşturur.
+Aşağıdaki örnek C4803 oluşturur.
 
-```
+```cpp
 // C4803.cpp
 // compile with: /clr /W1
 using namespace System;

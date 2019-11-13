@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C4930
 ms.assetid: 89a206c9-c536-4186-8e81-1cde3e7f4f5b
-ms.openlocfilehash: 15cd1ed61c747e2c9168b9fc0fee03dca8403a24
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b21cc6364692eb2f3b1d56b03d175df1f2ad7ee8
+ms.sourcegitcommit: 458dcc794e3841919c01a3a5ff6b9a3767f8861b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62242792"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74050263"
 ---
 # <a name="compiler-warning-level-1-c4930"></a>Derleyici Uyarısı (düzey 1) C4930
 
-'prototip': prototipli işlev çağrılmadı (değişken bir tanım hedeflenen oldu mu?)
+' Prototype ': prototipi oluşturulmuş işlev çağrılmadı (bir değişken tanımmıdır?)
 
-Derleyici bir kullanılmayan işlev prototipi algıladı. Prototip bir Değişken bildiriminde hedeflediyseniz, açma/kapama parantezleri kaldırın.
+Derleyici kullanılmamış bir işlev prototipi algıladı. Prototip bir değişken bildirimi olarak tasarlanmışsa, açma/kapatma parantezleri kaldırın.
 
-Aşağıdaki örnek, C4930 oluşturur:
+Aşağıdaki örnek C4930 oluşturur:
 
-```
+```cpp
 // C4930.cpp
 // compile with: /W1
 class Lock {
@@ -39,11 +39,11 @@ int main() {
 }
 ```
 
-Derleyici, bir işlev prototipi bildirimi ve bir işlev çağrısı arasında ayrım yapamaz C4930 da meydana gelebilir.
+C4930, derleyici bir işlev prototipi bildirimi ve bir işlev çağrısı arasında ayrım yapmadığından da oluşabilir.
 
-Aşağıdaki örnek, C4930 oluşturur:
+Aşağıdaki örnek C4930 oluşturur:
 
-```
+```cpp
 // C4930b.cpp
 // compile with: /EHsc /W1
 
@@ -112,4 +112,4 @@ int main()
 }
 ```
 
-Yukarıdaki örnekte, sıfır bağımsız değişken alan bir yöntemin sonucu yerel adsız sınıf değişkeni oluşturucusuna bağımsız değişken olarak geçirilir. Çağrı, yöntem çağrısının uygun işaretçi-üye işleci ile birlikte bir nesne örneği ile önek veya yerel değişken adlandırma disambiguated.
+Yukarıdaki örnekte, sıfır bağımsız değişken alan bir yöntemin sonucu, adlandırılmamış bir yerel sınıf değişkeninin oluşturucusuna bağımsız değişken olarak geçirilir. Bu çağrı, yerel değişkeni adlandırarak veya yöntem çağrısının uygun işaretçiden üyeye işleciyle birlikte bir nesne örneğiyle önek olarak nitelenebilir.

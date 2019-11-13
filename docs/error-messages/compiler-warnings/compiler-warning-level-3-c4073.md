@@ -1,25 +1,25 @@
 ---
-title: Derleyici Uyarısı (Düzey 3) C4073
+title: Derleyici Uyarısı (düzey 3) C4073
 ms.date: 11/04/2016
 f1_keywords:
 - C4073
 helpviewer_keywords:
 - C4073
 ms.assetid: 50081a6e-6acd-45ff-8484-9b1ea926cc5c
-ms.openlocfilehash: db39f76f9bfdd46c300ea6e3738a63b636fe0a03
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: af9f8fc7323fab8c737e7a63cea20809c9182ad9
+ms.sourcegitcommit: 458dcc794e3841919c01a3a5ff6b9a3767f8861b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62402339"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74051922"
 ---
-# <a name="compiler-warning-level-3-c4073"></a>Derleyici Uyarısı (Düzey 3) C4073
+# <a name="compiler-warning-level-3-c4073"></a>Derleyici Uyarısı (düzey 3) C4073
 
-Kitaplığın başlatma alanına başlatıcılar yerleştirildi
+Kitaplık başlatma alanına başlatıcılar yerleştirildi
 
-Üçüncü taraf kitaplığı geliştiriciler tarafından belirtilen kitaplığın başlatma alanına kullanmalıdır yalnızca [#pragma init_seg](../../preprocessor/init-seg.md). Aşağıdaki örnek, C4073 oluşturur:
+Yalnızca üçüncü taraf kitaplık geliştiricileri, [#pragma init_seg](../../preprocessor/init-seg.md)tarafından belirtilen kitaplık başlatma alanını kullanmalıdır. Aşağıdaki örnek C4073 oluşturur:
 
-```
+```cpp
 // C4073.cpp
 // compile with: /W3
 #pragma init_seg(lib)   // C4073

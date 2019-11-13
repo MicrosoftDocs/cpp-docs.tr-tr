@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C4964
 ms.assetid: b89c9274-8a92-4b7c-aa30-3fbb1b68ac73
-ms.openlocfilehash: 556c6e0963fc41d76cd123373cc4cd85edc66962
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2a75a1b7d3738794046ac697113c3c746bb6fcff
+ms.sourcegitcommit: 458dcc794e3841919c01a3a5ff6b9a3767f8861b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62384146"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74052241"
 ---
 # <a name="compiler-warning-level-1-c4964"></a>Derleyici Uyarısı (düzey 1) C4964
 
-İyileştirme seçeneği belirtilmedi; profil bilgileri toplanmayacak değil
+İyileştirme seçeneği belirtilmedi; Profil bilgileri toplanmayacak
 
-[/GL](../../build/reference/gl-whole-program-optimization.md) ve [/LTCG](../../build/reference/ltcg-link-time-code-generation.md) herhangi bir iyileştirme belirtilmiş istendi, böylece .pgc dosyası oluşturulur ve bu nedenle, herhangi bir profil temelli iyileştirme mümkün olacaktır.
+[/GL](../../build/reference/gl-whole-program-optimization.md) ve [/LTCG](../../build/reference/ltcg-link-time-code-generation.md) belirtildi, ancak hiçbir iyileştirme istenmedi, bu nedenle hiçbir. pgc dosyası oluşturulmayacak ve bu nedenle, profil temelli en iyi duruma getirme mümkün olmayacak.
 
-.Pgc dosyası, uygulamanızı çalıştırdığınızda oluşturulmasını istiyorsanız, aşağıdakilerden birini belirtin [/O](../../build/reference/o-options-optimize-code.md) derleyici seçenekleri.
+Uygulamanızı çalıştırdığınızda. pgc dosyalarının oluşturulmasını istiyorsanız, [/o](../../build/reference/o-options-optimize-code.md) derleyici seçeneklerinden birini belirtin.
 
-Aşağıdaki örnek, C4964 oluşturur:
+Aşağıdaki örnek C4964 oluşturur:
 
-```
+```cpp
 // C4964.cpp
 // compile with: /W1 /GL /link /ltcg:pgi
 // C4964 expected

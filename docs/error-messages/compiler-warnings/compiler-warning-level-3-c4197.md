@@ -1,27 +1,27 @@
 ---
-title: Derleyici Uyarısı (Düzey 3) C4197
+title: Derleyici Uyarısı (düzey 3) C4197
 ms.date: 11/04/2016
 f1_keywords:
 - C4197
 helpviewer_keywords:
 - C4197
 ms.assetid: f766feef-82b0-4d81-8a65-33628c7db196
-ms.openlocfilehash: 15b2fba94bfc956775a1e454893e7509a32000e5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d7c8cee42f17ad3301980852b8333ea37f5ca6be
+ms.sourcegitcommit: 458dcc794e3841919c01a3a5ff6b9a3767f8861b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62402248"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74051777"
 ---
-# <a name="compiler-warning-level-3-c4197"></a>Derleyici Uyarısı (Düzey 3) C4197
+# <a name="compiler-warning-level-3-c4197"></a>Derleyici Uyarısı (düzey 3) C4197
 
-'type': tür Dönüştürmedeki en üst düzey volatile yoksayıldı
+' Type ': tür dönüştürmedeki en üst düzey geçici değer yoksayıldı
 
-Derleyici ile nitelenmiş bir r türüne bir dönüştürme algıladı [geçici](../../cpp/volatile-cpp.md), veya bir tür dönüştürme ile geçici nitelikli tür için bir r türü. C göre standart (6.5.3), tam türleriyle ilişkili özellikler yalnızca l-değeri ifadeleri için anlamlıdır.
+Derleyici, [geçici](../../cpp/volatile-cpp.md)ile nitelenmiş bir r-value türüne bir tür dönüştürme algıladı ya da bir r-değer türü, geçici ile nitelenen bir türe dönüştürüldü. C standardına (6.5.3) göre, nitelikli türlerle ilişkili özellikler yalnızca l-Value ifadeleri için anlamlıdır.
 
-Aşağıdaki örnek, C4197 oluşturur:
+Aşağıdaki örnek C4197 oluşturur:
 
-```
+```cpp
 // C4197.cpp
 // compile with: /W3
 #include <stdio.h>

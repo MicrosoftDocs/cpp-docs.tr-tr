@@ -1,33 +1,33 @@
 ---
-title: Derleyici Uyarısı (Düzey 2) C4244
+title: Derleyici Uyarısı (düzey 2) C4244
 ms.date: 11/04/2016
 f1_keywords:
 - C4244
 helpviewer_keywords:
 - C4244
 ms.assetid: 2c19d157-21d1-42c2-a6c0-3f30f2ce3813
-ms.openlocfilehash: af821d80ff8c4c7717986f2ff4d0f3392cd6fca3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 43d8a992801d556ce85577f5f9da1bec584cb173
+ms.sourcegitcommit: 458dcc794e3841919c01a3a5ff6b9a3767f8861b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62349730"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74052127"
 ---
-# <a name="compiler-warning-level-2-c4244"></a>Derleyici Uyarısı (Düzey 2) C4244
+# <a name="compiler-warning-level-2-c4244"></a>Derleyici Uyarısı (düzey 2) C4244
 
-'bağımsız değişkeni': 'type1' öğesinden 'type2', olası veri kaybı dönüştürme
+' Argument ': ' type1 ' öğesinden ' type2 ' öğesine dönüştürme, olası veri kaybı
 
-Bir kayan nokta türü bir tamsayı türüne dönüştürüldü.  Olası bir veri kaybı meydana gelebilir.
+Kayan nokta türü bir tamsayı türüne dönüştürüldü.  Olası bir veri kaybı oluşmuş olabilir.
 
-C4244 alırsanız, uyumlu türler kullanmak için programınızı değiştirmenize veya mantığa olası değerler aralığı her zaman kullanmakta olduğunuz türleri ile uyumlu olmasını sağlamak için kodunuzu ekleyin.
+C4244 alırsanız, programınızı uyumlu türler kullanacak şekilde değiştirmeniz veya kodunuzda bir mantık eklemeniz gerekir, bu da olası değerlerin aralığının her zaman kullandığınız türlerle uyumlu olmasını sağlar.
 
-Ayrıca C4244 3 ve 4 düzeyinde özelliği kullanabilirsiniz; bkz: [Derleyici Uyarısı (Düzey 3 ve 4) C4244](../../error-messages/compiler-warnings/compiler-warning-levels-3-and-4-c4244.md) daha fazla bilgi için.
+C4244 Ayrıca 3. düzey ve 4 ' te de tetikde olabilir. daha fazla bilgi için bkz. [Derleyici Uyarısı (düzey 3 ve 4) C4244](../../error-messages/compiler-warnings/compiler-warning-levels-3-and-4-c4244.md) .
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C4244 oluşturur:
+Aşağıdaki örnek C4244 oluşturur:
 
-```
+```cpp
 // C4244_level2.cpp
 // compile with: /W2
 

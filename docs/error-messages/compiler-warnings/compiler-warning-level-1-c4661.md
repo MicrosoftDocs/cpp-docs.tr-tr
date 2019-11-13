@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C4661
 ms.assetid: 603bb8b7-356d-4eef-924b-64d769bac5bd
-ms.openlocfilehash: 7566ba3d1db8e15d2919904d3dc2316e10a7ff59
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d9d608c0e9baf05c327e17fa7159e25e27fb5cf3
+ms.sourcegitcommit: 458dcc794e3841919c01a3a5ff6b9a3767f8861b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62374709"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74051407"
 ---
 # <a name="compiler-warning-level-1-c4661"></a>Derleyici Uyarısı (düzey 1) C4661
 
-'identifier': açık şablon örneği oluşturma isteği için sağlanan uygun bir tanım
+' tanımlayıcı ': açık şablon örneği oluşturma isteği için uygun bir tanım belirtilmedi
 
-Şablon sınıfının üye tanımlanmadı.
+Şablon sınıfının bir üyesi tanımlı değil.
 
 ## <a name="example"></a>Örnek
 
-```
+```cpp
 // C4661.cpp
 // compile with: /W1 /LD
 template<class T> class MyClass {

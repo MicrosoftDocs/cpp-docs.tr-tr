@@ -1,29 +1,29 @@
 ---
-title: Derleyici Uyarısı (Düzey 2) C4250
+title: Derleyici Uyarısı (düzey 2) C4250
 ms.date: 11/04/2016
 f1_keywords:
 - C4250
 helpviewer_keywords:
 - C4250
 ms.assetid: d47f7249-6b5a-414b-b2d4-56e5d246a782
-ms.openlocfilehash: 8baf3c03c87dc70a80b785d7f81cbee4e1d828f0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 03826f10659cbdf6035cd4dedebecca3e3302e3a
+ms.sourcegitcommit: 458dcc794e3841919c01a3a5ff6b9a3767f8861b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62349717"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74052110"
 ---
-# <a name="compiler-warning-level-2-c4250"></a>Derleyici Uyarısı (Düzey 2) C4250
+# <a name="compiler-warning-level-2-c4250"></a>Derleyici Uyarısı (düzey 2) C4250
 
-'class1': baskınlık yoluyla ' class2::member' devralıyor
+' Class1 ': ' Class2:: Member ' öğesini baskınlık aracılığıyla devralır
 
-İki veya daha fazla üye aynı ada sahip. Bir `class2` salt okunur olduğundan bu üye yer alan diğer sınıflar için temel sınıf devralınır.
+İki veya daha fazla üye aynı ada sahip. `class2`, bu üyeyi içeren diğer sınıfların temel sınıfı olduğundan devralınır.
 
-C4250 engellemek için kullanın [uyarı](../../preprocessor/warning.md) pragması.
+C4250 bastırmak için, [Uyarı](../../preprocessor/warning.md) pragmasını kullanın.
 
-Bir sanal temel sınıfın birden çok türetilmiş sınıflar arasında paylaşıldığından, türetilen bir sınıfta bir adı bir temel sınıf adı kaplamaktadır. Örneğin, aşağıdaki sınıf hiyerarşisi göz önünde bulundurulduğunda, vardır içinde elmas devralınan func iki tanımları: zayıf sınıfı ve baskın:: func() baskın sınıf aracılığıyla vbc::func() örneği. Func() elmas sınıf nesnesi üzerinden nitelenmemiş bir çağrı, her zaman dominate:: func() örneği çağırır.  Zayıf bir sınıf örneği func() tanıtmak için olsaydı, ne tanımı baskındır ve çağrısı belirsiz olarak işaretlenmiş.
+Bir sanal temel sınıf birden çok türetilmiş sınıf arasında paylaşıldığından, türetilmiş sınıftaki bir ad temel sınıftaki bir adı ayırır. Örneğin, aşağıdaki sınıf hiyerarşisi söz konusu olduğunda, elmas içinde devralınan iki işlev tanımı vardır: zayıf sınıf aracılığıyla vbc:: Func () örneği ve baskın sınıf ile baskın:: Func (). Bir Diamond Class nesnesi aracılığıyla () nitelenmemiş çağrısı, her zaman Dominate:: Func () örneğini çağırır.  Zayıf sınıf Func () öğesinin bir örneğini tanıtmak olsaydı, hiçbir tanım neden olmaz ve çağrı belirsiz olarak işaretlenir.
 
-```
+```cpp
 // C4250.cpp
 // compile with: /c /W2
 #include <stdio.h>
@@ -47,9 +47,9 @@ int main() {
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C4250 oluşturur.
+Aşağıdaki örnek C4250 oluşturur.
 
-```
+```cpp
 // C4250_b.cpp
 // compile with: /W2 /EHsc
 #include <iostream>
@@ -80,9 +80,9 @@ int main() {
 
 ## <a name="example"></a>Örnek
 
-Bu örnek, daha karmaşık bir durum gösterir. Aşağıdaki örnek, C4250 oluşturur.
+Bu örnekte daha karmaşık bir durum gösterilmektedir. Aşağıdaki örnek C4250 oluşturur.
 
-```
+```cpp
 // C4250_c.cpp
 // compile with: /W2 /EHsc
 #include <iostream>

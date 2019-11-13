@@ -6,26 +6,26 @@ f1_keywords:
 helpviewer_keywords:
 - C4794
 ms.assetid: badc9c36-fa1a-4fec-929b-7bfda7a7b79f
-ms.openlocfilehash: d44e3af88de9457fdc5c2df905ccbae22d3562da
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7d669280c0dc6a730a22480e602dac8cc6153449
+ms.sourcegitcommit: 458dcc794e3841919c01a3a5ff6b9a3767f8861b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62280379"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74052375"
 ---
 # <a name="compiler-warning-level-1-c4794"></a>Derleyici Uyarısı (düzey 1) C4794
 
-'variable 'bölüm adı', '.tls$ için' değiştirildi' iş parçacığı yerel depolama değişkeninin segmenti
+' bölüm adı ' olan ' değişken ' iş parçacığı yerel depolama değişkeninin segmenti '. TLS $ ' olarak değiştirildi
 
-Kullanılan [kullanılmadan önce #pragma data_seg](../../preprocessor/data-seg.md) başlamıyor .tls$ ile bir bölümünde bir tls değişkeni yerleştirmek için.
+Bir TLS değişkenini. TLS $ ile başlamıyor bir bölüme koymak için [#pragma data_seg](../../preprocessor/data-seg.md) kullandınız.
 
-.Tls$*x* bölümü nesne dosyasında var olduğu [gt;__declspec(thread)](../../cpp/thread.md) değişkenler tanımlanır. Bir EXE veya DLL .tls bölümü şu bölümlerden neden olur.
+. TLS $*x* bölümü, [__declspec (iş parçacığı)](../../cpp/thread.md) değişkenlerinin tanımlandığı nesne dosyasında bulunur. EXE veya DLL 'deki bir. TLS bölümü, bu bölümlerin oluşmasına neden olur.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C4794 oluşturur:
+Aşağıdaki örnek C4794 oluşturur:
 
-```
+```cpp
 // C4794.cpp
 // compile with: /W1 /c
 #pragma data_seg(".someseg")

@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C4804
 ms.assetid: 069e8f44-3ef6-43bb-8524-4116fc6eea83
-ms.openlocfilehash: 28b3e49717993a3bf20c8cfec5938d698266c0f9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 97ad076325b11329896d98367fb3ac311ec5ded9
+ms.sourcegitcommit: 458dcc794e3841919c01a3a5ff6b9a3767f8861b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62406541"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74051567"
 ---
 # <a name="compiler-warning-level-1-c4804"></a>Derleyici Uyarısı (düzey 1) C4804
 
-'operation': işlemde ' bool' türü güvensiz kullanımı
+' Operation ': işlemde güvenli olmayan ' bool ' türü kullanımı
 
-Bu uyarı için kullanıldığında bir `bool` değişkeni veya beklenmedik bir şekilde değer. Negatif birli işleç gibi işleçler kullanın, örneğin, C4804 oluşturulur (**-**) veya Tamamlayıcı işleci (`~`). Derleyici, ifadeyi değerlendirir.
+Bu uyarı, `bool` değişken veya değeri beklenmedik bir şekilde kullandığınızda içindir. Örneğin, negatif birli işleç ( **-** ) veya tamamlama işleci (`~`) gibi işleçler kullanırsanız, C4804 oluşturulur. Derleyici, ifadeyi değerlendirir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C4804 oluşturur:
+Aşağıdaki örnek C4804 oluşturur:
 
-```
+```cpp
 // C4804.cpp
 // compile with: /W1
 

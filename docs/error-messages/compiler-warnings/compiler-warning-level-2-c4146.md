@@ -1,41 +1,41 @@
 ---
-title: Derleyici Uyarısı (Düzey 2) C4146
+title: Derleyici Uyarısı (düzey 2) C4146
 ms.date: 11/04/2016
 f1_keywords:
 - C4146
 helpviewer_keywords:
 - C4146
 ms.assetid: d6c31ab1-3120-40d5-8d80-32b5f7046e32
-ms.openlocfilehash: 8b3090f1bc3a64752ede4dab2b1e1b5cd800057d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d595befc80d954c8fb84f83ad6c4e0cb5f4fcf26
+ms.sourcegitcommit: 458dcc794e3841919c01a3a5ff6b9a3767f8861b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62349795"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74052161"
 ---
-# <a name="compiler-warning-level-2-c4146"></a>Derleyici Uyarısı (Düzey 2) C4146
+# <a name="compiler-warning-level-2-c4146"></a>Derleyici Uyarısı (düzey 2) C4146
 
-birli eksi işleci, sonuç hala işaretsiz işaretsiz türe uygulandı
+Birli eksi işleci işaretsiz türe uygulandı, sonuç hala işaretsiz
 
-Birli eksi (olumsuzlama) genellikle bir işaretsiz türe başvurulduğunda mantıklı şekilde imzasız türler yalnızca negatif olmayan değerleri tutabilir. Negatif olmayan hem işlenen hem de sonucu.
+İşaretsiz türler yalnızca negatif olmayan değerler tutabilir, bu nedenle birli eksi (olumsuzlama) genellikle işaretsiz bir türe uygulandığında anlamlı değildir. Hem işlenen hem de sonuç negatif değil.
 
-Pratikte, programcı -2147483648 en küçük tamsayı değeri express çalışırken bu oluşur. İfade iki aşamada işlendiğinden, bu değer -2147483648 yazılamıyor:
+Pratikte, bu durum programcı 'nin-2147483648 olan en düşük tamsayı değerini ifade edilmeye çalıştığı zaman oluşur. İfade iki aşamada işlendiği için bu değer-2147483648 olarak yazılamaz:
 
-1. Sayı 2147483648 değerlendirilir. 2147483647 en büyük tamsayı değerinden daha büyük olduğundan, 2147483648 türünde değil [int](../../c-language/integer-types.md), ancak `unsigned int`.
+1. 2147483648 sayısı değerlendirilir. 2147483647 en büyük tamsayı değerinden büyük olduğundan, 2147483648 türü [int](../../c-language/integer-types.md)değil, ancak `unsigned int`.
 
-1. Tek İşlenenli eksi işareti ile de 2147483648 özelleştirmede işaretsiz bir sonuç değeri uygulanır.
+1. Birli eksi değeri işaretsiz bir sonuç ile, ayrıca 2147483648 olarak da gerçekleşen değere uygulanır.
 
-İşaretsiz bir sonuç türü beklenmeyen davranışlara neden olabilir. Sonucu bir Karşılaştırmada kullanılan sonra diğer işlenen olduğunda işaretsiz bir karşılaştırma, örneğin, kullanılabilir bir `int`. Bu, aşağıdaki örnek program tek bir satır neden yazdırır açıklanmaktadır.
+Sonucun işaretsiz türü beklenmedik davranışa neden olabilir. Sonuç bir karşılaştırmada kullanılıyorsa, örneğin, diğer işlenen bir `int`olduğunda işaretsiz karşılaştırma kullanılabilir. Bu, aşağıdaki örnek programın yalnızca bir satır yazdırmasını açıklar.
 
-Beklenen ikinci satırın `1 is greater than the most negative int`, çünkü yazdırılmaz `((unsigned int)1) > 2147483648` false'tur.
+`((unsigned int)1) > 2147483648` false olduğundan beklenen ikinci satır `1 is greater than the most negative int`yazdırılmıyor.
 
-Int_mın türünde lımıts.h kullanarak C4146 kaçınabilirsiniz **signed int**.
+C4146 ' den kaçınabilirsiniz. Bu, **işaretli Int**türünde olan limit.h 'dan INT_MIN.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C4146 oluşturur:
+Aşağıdaki örnek C4146 oluşturur:
 
-```
+```cpp
 // C4146.cpp
 // compile with: /W2
 #include <stdio.h>

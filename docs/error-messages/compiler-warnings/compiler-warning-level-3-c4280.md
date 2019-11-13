@@ -1,27 +1,27 @@
 ---
-title: Derleyici Uyarısı (Düzey 3) C4280
+title: Derleyici Uyarısı (düzey 3) C4280
 ms.date: 11/04/2016
 f1_keywords:
 - C4280
 helpviewer_keywords:
 - C4280
 ms.assetid: 153fb639-3ee1-4fee-baf9-71420abcf3f6
-ms.openlocfilehash: 6a3daa9903cbf983ddc19538a154d9717a2f9f0f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9936aa7b6baf0c1f94186aa4785490897d8606e2
+ms.sourcegitcommit: 458dcc794e3841919c01a3a5ff6b9a3767f8861b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62402144"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74051719"
 ---
-# <a name="compiler-warning-level-3-c4280"></a>Derleyici Uyarısı (Düzey 3) C4280
+# <a name="compiler-warning-level-3-c4280"></a>Derleyici Uyarısı (düzey 3) C4280
 
-'operator ->' kendi kendine özniyeleniyordu türü aracılığıyla 'type'
+' operator-> ', ' Type ' türü aracılığıyla kendinden özyinelemeli
 
-Kodunuzun yanlış sağlar **-> işleci** kendisini çağırmak için.
+Kodunuz, **operator->** kendisini çağırmak için yanlış izin veriyor.
 
-Aşağıdaki örnek, C4280 oluşturur:
+Aşağıdaki örnek C4280 oluşturur:
 
-```
+```cpp
 // C4280.cpp
 // compile with: /W3 /WX
 struct A

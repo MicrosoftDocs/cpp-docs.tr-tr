@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C4925
 ms.assetid: a4b206c0-016a-4f28-873a-bb8bb41bad50
-ms.openlocfilehash: cb7b416fe15380dc914bd57152e8a0ce3618ee85
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 88eb09bdde1fa8dc50fa601cf7ae200d2851ac03
+ms.sourcegitcommit: 458dcc794e3841919c01a3a5ff6b9a3767f8861b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62393512"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74052299"
 ---
 # <a name="compiler-warning-level-1-c4925"></a>Derleyici Uyarısı (düzey 1) C4925
 
-'method': dispinterface yöntemi betikten çağrılamaz
+' Method ': dispınterface yöntemi betikten çağrılamaz
 
-Komut dosyası dilleri 'ın' parametresi bir VT_BYREF oluşturulamıyor, yalnızca 'out' parametreleri VT_BYREF oluşturabilirsiniz.
+Betik dilleri VT_BYREF ' ın ' parametresi oluşturamaz, yalnızca VT_BYREF ' Out ' parametreleri oluşturabilir.
 
-Bu uyarıyı çözmek için başka bir parametre (tanımı ve uygulaması) bir işaretçi türü olmamasını yoludur.
+Bu uyarıyı çözmek için bir diğer yol, parametreyi (tanım ve uygulamada) bir işaretçi türü haline getirir.
 
-Aşağıdaki örnek, C4925 oluşturur:
+Aşağıdaki örnek C4925 oluşturur:
 
-```
+```cpp
 // C4925.cpp
 // compile with: /LD /W1
 #define _ATL_ATTRIBUTES 1

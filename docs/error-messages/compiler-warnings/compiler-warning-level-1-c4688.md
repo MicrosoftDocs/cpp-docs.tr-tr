@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C4688
 ms.assetid: a027df3c-b2b8-4c49-8539-c2bc42db74e8
-ms.openlocfilehash: 1c94198eca0a88174c8655e0d571c37f82a2df36
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bc869b7e22bc8bce0230892dc9a67d6aaec09f46
+ms.sourcegitcommit: 458dcc794e3841919c01a3a5ff6b9a3767f8861b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62375099"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74052510"
 ---
 # <a name="compiler-warning-level-1-c4688"></a>Derleyici Uyarısı (düzey 1) C4688
 
-'kısıtlaması': sınırlama listesi 'type' derleme özel türünü içeriyor
+' Constraint ': kısıtlama listesi ' Type ' derleme özel türünü içeriyor
 
-Bir kısıtlama listesi türü derlemenin dışından erişilebilir olduğunda yeniden kullanılabilir olmayacaktır yani bir derleme özel türünü içeriyor. Daha fazla bilgi için [genel türler](../../extensions/generics-cpp-component-extensions.md).
+Bir kısıtlama listesinin bütünleştirilmiş kod özel türü vardır, yani tür derlemenin dışından erişildiğinde kullanılabilir olmaz. Daha fazla bilgi için bkz. [Genel türler](../../extensions/generics-cpp-component-extensions.md).
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C4688 oluşturur.
+Aşağıdaki örnek C4688 oluşturur.
 
-```
+```cpp
 // C4688.cpp
 // compile with: /clr /c /W1
 ref struct A {};   // private type

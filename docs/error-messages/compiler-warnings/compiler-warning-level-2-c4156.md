@@ -1,29 +1,29 @@
 ---
-title: Derleyici Uyarısı (Düzey 2) C4156
+title: Derleyici Uyarısı (düzey 2) C4156
 ms.date: 11/04/2016
 f1_keywords:
 - C4156
 helpviewer_keywords:
 - C4156
 ms.assetid: 9adf3acb-c0fe-42a8-a4db-5822b1493f77
-ms.openlocfilehash: 7d9a4ed09f026267e2c0f37fbbe4550ecd668dfc
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 95605aa29e1faba449e19dcf20e6895d31cc5874
+ms.sourcegitcommit: 458dcc794e3841919c01a3a5ff6b9a3767f8861b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62350471"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74052140"
 ---
-# <a name="compiler-warning-level-2-c4156"></a>Derleyici Uyarısı (Düzey 2) C4156
+# <a name="compiler-warning-level-2-c4156"></a>Derleyici Uyarısı (düzey 2) C4156
 
-'delete'; dizi biçimi kullanılmadan bir dizi ifadesinin silinmesi dizi biçimi kullanıldı
+' DELETE ' deyiminin dizi biçimi kullanılmadan bir dizi ifadesinin silinmesi; dizi formu değiştirildi
 
-Dizi olmayan tür **Sil** dizi nelze odstranit. Derleyici çevrilmiş **Sil** dizi biçimi için.
+**Delete** 'in dizi olmayan biçimi bir diziyi silemez. Derleyici, **Delete** öğesini dizi formuna çevirdi.
 
-Bu uyarı, yalnızca Microsoft uzantıları altında (/Ze) oluşur.
+Bu uyarı yalnızca Microsoft uzantıları (/Ze) altında oluşur.
 
 ## <a name="example"></a>Örnek
 
-```
+```cpp
 // C4156.cpp
 // compile with: /W2
 int main()

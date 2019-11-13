@@ -1,27 +1,27 @@
 ---
-title: Derleyici Uyarısı (Düzey 3) C4102
+title: Derleyici Uyarısı (düzey 3) C4102
 ms.date: 11/04/2016
 f1_keywords:
 - C4102
 helpviewer_keywords:
 - C4102
 ms.assetid: 349f308a-daf3-48c6-bd53-6c38b73f8880
-ms.openlocfilehash: 9e5b4850c82083e19a0fe859b1021b5beecf1a1d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1a0c5389a5f8f6f2dc885fccecf34313308bf769
+ms.sourcegitcommit: 458dcc794e3841919c01a3a5ff6b9a3767f8861b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62402313"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74051887"
 ---
-# <a name="compiler-warning-level-3-c4102"></a>Derleyici Uyarısı (Düzey 3) C4102
+# <a name="compiler-warning-level-3-c4102"></a>Derleyici Uyarısı (düzey 3) C4102
 
-'etiketi': Etiket başvurusu kaldırıldı
+' Label ': başvurulmayan etiket
 
-Etiket tanımlandı ancak nikdy neodkazovalo. Derleyici, etiket yok sayar.
+Etiket tanımlanmış, ancak hiçbir şekilde başvurulmadı. Derleyici etiketi yoksayar.
 
-Aşağıdaki örnek, C4102 oluşturur:
+Aşağıdaki örnek C4102 oluşturur:
 
-```
+```cpp
 // C4102.cpp
 // compile with: /W3
 int main() {

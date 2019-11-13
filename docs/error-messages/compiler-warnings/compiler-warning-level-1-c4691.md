@@ -6,28 +6,28 @@ f1_keywords:
 helpviewer_keywords:
 - C4691
 ms.assetid: 722133d9-87f6-46c1-9e86-9825453d6999
-ms.openlocfilehash: c194e19c8766b67eb7deef32e7228564cda5f1e6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6124171bb5f257dac1dd972f7943d001fb54c9ca
+ms.sourcegitcommit: 458dcc794e3841919c01a3a5ff6b9a3767f8861b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62406385"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74051353"
 ---
 # <a name="compiler-warning-level-1-c4691"></a>Derleyici Uyarısı (düzey 1) C4691
 
-'type': başvurulan tür, başvurulmayan derlemede 'file', bunun yerine geçerli çeviri biriminde tanımlanan tür bekleniyordu
+' Type ': başvurulan tür, başvurulmayan ' File ' derlemesinde bekleniyordu, bunun yerine geçerli çeviri biriminde tanımlanan tür kullanıldı
 
-Özgün tür tanımını içeren meta veri dosyası başvurulmayan ve derleyici bir yerel tür tanımı kullanıyor.
+Özgün tür tanımını içeren meta veri dosyasına başvurulmuyor ve derleyici yerel bir tür tanımı kullanıyor.
 
-Burada yeniden durumda *dosya*, C4691 göz ardı veya pragma ile kapalı [uyarı](../../preprocessor/warning.md).  Diğer bir deyişle, oluşturmakta olduğunuz dosya nerede derleyicinin tür tanımı bulmayı beklediği dosya ile aynı olduğunda, C4691 yoksayabilirsiniz.
+*Dosyayı*yeniden oluşturduğunuz durumda, C4691, pragma [Warning](../../preprocessor/warning.md)ile yoksayılabilir veya kapatılabilir.  Diğer bir deyişle, oluşturmakta olduğunuz dosya derleyicinin tür tanımını bulmayı beklediği dosyayla aynıysa, C4691 'yi yoksayabilirsiniz.
 
-Ancak, aynı derlemesinden meta verilerinde başvurulan değil bir tanımı derleyici kullanıyorsa, beklenmeyen davranış oluşabilir; CLR türleri yalnızca tür adıyla, aynı zamanda derleme tarafından yazılmış.  Diğer bir deyişle, derleme z.dll bir türden Z derleme y.dll bir türden Z farklıdır.
+Ancak, derleyici meta verilerde başvurulan derlemeden aynı derlemeden olmayan bir tanım kullanıyorsa beklenmeyen bir davranış meydana gelebilir; CLR türleri yalnızca türün adı ile değil, derleme tarafından da yazılır.  Diğer bir deyişle, z. dll derlemesinden z türü, y. dll ' den Z 'den farklı.
 
 ## <a name="example"></a>Örnek
 
-Bu örnek, özgün tür tanımı içerir.
+Bu örnek, özgün tür tanımını içerir.
 
-```
+```cpp
 // C4691_a.cpp
 // compile with: /clr /LD /W1
 public ref class Original_Type {};
@@ -35,9 +35,9 @@ public ref class Original_Type {};
 
 ## <a name="example"></a>Örnek
 
-Bu örnek C4691_a.dll başvuruyor ve Original_Type türünde bir alan bildirir.
+Bu örnek C4691_a. dll ' ye başvurur ve Original_Type türünde bir alan bildirir.
 
-```
+```cpp
 // C4691_b.cpp
 // compile with: /clr /LD
 #using "C4691_a.dll"
@@ -49,11 +49,11 @@ public:
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C4691 oluşturur.  Bu örnek için Original_Type bir tanım içeriyor ve C4691a.dll başvuruda bulunmamaya dikkat edin.
+Aşağıdaki örnek C4691 oluşturur.  Bu örnekte Original_Type için bir tanım ve C4691a. dll ' nin başvurmadığından dikkat edin.
 
-Çözmek için özgün türü tanımını içeren meta veri dosyası başvurusu ve yerel bildirimi ve tanımı kaldırın.
+Çözümlemek için, özgün tür tanımını içeren meta veri dosyasına başvurun ve yerel bildirimi ve tanımı kaldırın.
 
-```
+```cpp
 // C4691_c.cpp
 // compile with: /clr /LD /W1
 // C4691 expected

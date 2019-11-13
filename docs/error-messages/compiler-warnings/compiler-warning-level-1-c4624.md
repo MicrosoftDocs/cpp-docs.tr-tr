@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C4624
 ms.assetid: 14f61769-d92e-482b-9515-debd87b30a66
-ms.openlocfilehash: b1a7d715057f4c6d8ada104ad07f6ad0b9c52fb2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8ef871f31d5d1d31e6d1d26d46b6f7f99c8fba86
+ms.sourcegitcommit: 458dcc794e3841919c01a3a5ff6b9a3767f8861b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62221399"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74051444"
 ---
 # <a name="compiler-warning-level-1-c4624"></a>Derleyici Uyarısı (düzey 1) C4624
 
-'derived class': yıkıcı örtük bir şekilde bir temel sınıf yok edicisini erişilemez veya silinmiş olduğundan silindi olarak tanımlandı
+' derived class ': bir taban sınıf yıkıcısı erişilemediğinden veya silindiğinden yıkıcı örtük olarak silindi olarak tanımlandı
 
-Bir yok edici erişilebilir veya silinmiş bir temel sınıfta değil ve bir türetilmiş sınıf için oluşturulmadı. Yığında bu türde bir nesne oluşturmak için her türlü girişim, bir derleyici hatasına neden olur.
+Bir yıkıcı bir temel sınıfta erişilebilir veya silinmemiş ve bu nedenle türetilmiş bir sınıf için üretilmedi. Yığında bu türde bir nesne oluşturma girişimi bir derleyici hatasına neden olur.
 
-Aşağıdaki örnek, C4624 oluşturur ve bu sorunun nasıl gösterir:
+Aşağıdaki örnek C4624 oluşturur ve nasıl düzeltileceğini gösterir:
 
-```
+```cpp
 // C4624.cpp
 // compile with: /W1 /c
 class B {

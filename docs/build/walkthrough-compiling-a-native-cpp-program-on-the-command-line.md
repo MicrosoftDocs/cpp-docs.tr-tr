@@ -9,12 +9,12 @@ helpviewer_keywords:
 - compiling programs [C++]
 - command-line applications [C++], native
 ms.assetid: b200cfd1-0440-498f-90ee-7ecf92492dc0
-ms.openlocfilehash: 36017b28ab91478da2515cd7c8588a998013171d
-ms.sourcegitcommit: c53a3efcc5d51fc55fa57ac83cca796b33ae888f
+ms.openlocfilehash: daab00768f8140869a8db39c73f4fec3ab6304c7
+ms.sourcegitcommit: 458dcc794e3841919c01a3a5ff6b9a3767f8861b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71960711"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74051521"
 ---
 # <a name="walkthrough-compiling-a-native-c-program-on-the-command-line"></a>İzlenecek Yol: Komut Satırında Yerel C++ Programı Derleme
 
@@ -30,7 +30,7 @@ Bu yönergeyi tamamlamak için, Visual Studio 'yu ve iş yüküyle isteğe bağl
 
 Visual Studio, birçok dil ve platformda tam özellikli bir düzenleyici, kaynak yöneticileri, hata ayıklayıcıları ve derleyiciler destekleyen güçlü bir tümleşik geliştirme ortamıdır (IDE). Visual Studio 'yu indirme ve yükleme hakkında daha fazla bilgi için, ücretsiz Visual Studio Community Edition ve C/C++ geliştirmeye yönelik destek dahil olmak üzere, bkz. [Visual C++ Studio 'da destek yükleme](vscpp-step-0-installation.md).
 
-Visual Studio için derleme araçları, yalnızca C ve C++ programları derlemek için gereken komut satırı derleyicilerini, araçları ve kitaplıkları kurar. Derleme laboratuvarları veya sınıf alıştırmaları için idealdir ve görece hızlı bir şekilde yüklenir. Yalnızca komut satırı araçlarını yüklemek için [Visual Studio İndirmeleri](https://visualstudio.microsoft.com/downloads/) sayfasında Visual Studio Için derleme araçları ' nı arayın.
+Visual Studio için derleme araçları, yalnızca C ve C++ programları derlemek için gereken komut satırı derleyicilerini, araçları ve kitaplıkları kurar. Derleme laboratuvarları veya sınıf alıştırmaları için idealdir ve görece hızlı bir şekilde yüklenir. Yalnızca komut satırı araçlarını yüklemek için [Visual Studio İndirmeleri](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2019) sayfasında Visual Studio Için derleme araçları ' nı arayın.
 
 Komut satırında bir C veya C++ program oluşturabilmeniz için önce araçların yüklendiğini ve bunlara komut satırından erişebildiğinizi doğrulamanız gerekir. Görsel C++ , komut satırı ortamının kullandığı araçları, üstbilgileri ve kitaplıkları bulması için karmaşık gereksinimlere sahiptir. **Bir hazırlık yapmadan, C++ görseli düz bir komut istemi penceresinde kullanamazsınız** . Neyse ki, C++ görsel, komut satırı yapıları için ayarlanmış ortamı olan bir geliştirici komut istemi başlatmanıza yönelik kısayolları yüklüyor. Ne yazık ki, geliştirici komut istemi kısayollarının ve bulundukları yer adları, neredeyse her görsel C++ sürümü ve farklı Windows sürümlerinde farklıdır. İlk adım adım göreviniz, kullanmak için doğru olanı buluyor.
 
@@ -58,16 +58,16 @@ Komut satırında bir C veya C++ program oluşturabilmeniz için önce araçlar�
    Geçerli dizin veya sürüm numaralarında, görsel C++ sürümüne ve yüklü güncelleştirmelerden bağlı olarak farklılıklar olabilir. Yukarıdaki çıkış, gördüklerinize benzer ise, komut satırında C veya C++ programları oluşturmaya hazırsınız demektir.
 
    > [!NOTE]
-   > "' CL" gibi bir hata alırsanız bir iç veya dış komut, çalıştırılabilir program veya toplu iş dosyası, "hata C1034 veya hata LNK1104" **CL** komutunu çalıştırdığınızda bir geliştirici komut istemi kullanmıyorsanız ya da bir sorun oluştu Visual C++yüklemeniz. Devam edebilmeniz için bu sorunu çözmeniz gerekir.
+   > "' CL" gibi bir hata alırsanız bir iç veya dış komut, çalıştırılabilir program veya toplu iş dosyası, "hata C1034 veya hata LNK1104" **CL** komutunu çalıştırdığınızda bir geliştirici komut istemi kullanmıyorsanız ya da görsel C++yüklemenizde bir sorun oluştu. Devam edebilmeniz için bu sorunu çözmeniz gerekir.
 
-   Geliştirici komut istemi kısayolunu bulamazsanız veya `cl` girdiğinizde bir hata iletisi alırsanız, görsel C++ yüklemenizin bir sorunu olabilir. Visual Studio 'da görsel C++ bileşeni yeniden yüklemeyi deneyin veya Microsoft Visual C++ derleme araçları 'nı yeniden yükleyin. Bu işe ana kadar bir sonraki bölüme geçmeyin. Görsel C++yükleme ve sorun giderme hakkında daha fazla bilgi için bkz. [Visual Studio 'yu yükleme](/visualstudio/install/install-visual-studio).
+   Geliştirici komut istemi kısayolunu bulamazsanız veya `cl`girdiğinizde bir hata iletisi alırsanız, görsel C++ yüklemenizin bir sorunu olabilir. Visual Studio 'da görsel C++ bileşeni yeniden yüklemeyi deneyin veya Microsoft Visual C++ derleme araçları 'nı yeniden yükleyin. Bu işe ana kadar bir sonraki bölüme geçmeyin. Görsel C++yükleme ve sorun giderme hakkında daha fazla bilgi için bkz. [Visual Studio 'yu yükleme](/visualstudio/install/install-visual-studio).
 
    > [!NOTE]
-   > Bilgisayardaki Windows sürümüne ve sistem güvenlik yapılandırmasına bağlı olarak, geliştirici komut istemi kısayolunun kısayol menüsünü açmak için sağ tıklayıp, başarıyla derlemek ve çalıştırmak için **yönetici olarak çalıştır** ' ı seçmeniz gerekebilir. Bu yönergeyi izleyerek oluşturduğunuz program.
+   > Bilgisayardaki Windows sürümüne ve sistem güvenlik yapılandırmasına bağlı olarak, geliştirici komut istemi kısayolunun kısayol menüsünü açmak için sağ tıklayıp **yönetici olarak çalıştır** ' ı seçerek bu yönergeyi izleyerek oluşturduğunuz programı başarıyla oluşturup çalıştırın.
 
 ### <a name="create-a-visual-c-source-file-and-compile-it-on-the-command-line"></a>Görsel C++ kaynak dosyası oluşturma ve komut satırında derleme
 
-1. Geliştirici komut istemi penceresinde bir dizin oluşturmak için `md c:\hello` girin ve ardından bu dizine geçmek için `cd c:\hello` girin. Bu dizin, kaynak dosyanızın ve derlenmiş programın içinde oluşturulduğu yerdir.
+1. Geliştirici komut istemi penceresinde bir dizin oluşturmak için `md c:\hello` girin ve ardından bu dizine değiştirmek için `cd c:\hello` girin. Bu dizin, kaynak dosyanızın ve derlenmiş programın içinde oluşturulduğu yerdir.
 
 1. Komut istemi penceresine `notepad hello.cpp` girin.
 
@@ -90,7 +90,7 @@ Komut satırında bir C veya C++ program oluşturabilmeniz için önce araçlar�
 
    Tebrikler, derleme için hazırlamış C++ olan Hello. cpp kaynak dosyasını oluşturdunuz.
 
-1. Geliştirici komut istemi penceresine geri dönün. C:\Hello dizininin içeriğini listelemek için komut istemine `dir` girin. Dizin listesinde Hello. cpp kaynak dosyasını görmeniz gerekir, bu durum şöyle görünür:
+1. Geliştirici komut istemi penceresine geri dönün. C:\Hello dizininin içeriğini listelemek için komut istemine `dir` yazın. Dizin listesinde Hello. cpp kaynak dosyasını görmeniz gerekir, bu durum şöyle görünür:
 
    ```Output
    c:\hello>dir
@@ -132,7 +132,7 @@ Komut satırında bir C veya C++ program oluşturabilmeniz için önce araçlar�
    > [!NOTE]
    > Farklı bir derleyici veya bağlayıcı hatası ya da uyarısı alırsanız, hataları düzeltmek için kaynak kodunuzu gözden geçirin, sonra dosyayı kaydedin ve derleyiciyi yeniden çalıştırın. Belirli hatalar hakkında daha fazla bilgi için bu MSDN sayfasındaki arama kutusunu kullanarak hata numarasını arayın.
 
-1. Hello. exe programını çalıştırmak için komut isteminde `hello` girin.
+1. Hello. exe programını çalıştırmak için komut isteminde `hello`girin.
 
    Program bu metni görüntüler ve çıkar:
 
@@ -152,7 +152,7 @@ Ek kaynak kodu dosyaları olan bir programı derlemek için, bunları komut sat�
 
 `cl /EHsc file1.cpp file2.cpp file3.cpp`
 
-@No__t-0 komut satırı seçeneği derleyiciye özel durum işlemeyi etkinleştirmesini C++ söyler. Daha fazla bilgi için bkz. [/Eh (özel durum Işleme modeli)](reference/eh-exception-handling-model.md).
+`/EHsc` komut satırı seçeneği derleyiciye özel durum işlemeyi etkinleştirmesini C++ söyler. Daha fazla bilgi için bkz. [/Eh (özel durum Işleme modeli)](reference/eh-exception-handling-model.md).
 
 Ek kaynak dosyaları sağlarsanız, derleyici program adını oluşturmak için ilk giriş dosyasını kullanır. Bu durumda, FILE1. exe adlı bir program çıkışı verir. Adı Program1. exe olarak değiştirmek için, bir [/Out](reference/out-output-file-name.md) bağlayıcı seçeneği ekleyin:
 

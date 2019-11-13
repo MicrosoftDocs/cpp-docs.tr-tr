@@ -2,7 +2,7 @@
 title: Komut satırından Microsoft C++ araç takımını kullanma
 description: Visual Studio IDE C++ 'nin dışında, komut satırından Microsoft derleyicisi araç ZINCIRI (MSVC) kullanın.
 ms.custom: conceptual
-ms.date: 10/22/2019
+ms.date: 11/12/2019
 helpviewer_keywords:
 - command-line builds [C++]
 - compiling source code [C++], command line
@@ -10,16 +10,20 @@ helpviewer_keywords:
 - command line [C++], building from
 - command line [C++], compilers
 ms.assetid: 7ca9daed-a003-4162-842d-908f79058365
-ms.openlocfilehash: 7aa8673b7bb29591c7cf1c26b96b48261db9fee4
-ms.sourcegitcommit: 0a5518fdb9d87fcc326a8507ac755936285fcb94
+ms.openlocfilehash: ec30cba8e119f96efc5bca156fa565db77904520
+ms.sourcegitcommit: 458dcc794e3841919c01a3a5ff6b9a3767f8861b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72811165"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74051487"
 ---
 # <a name="use-the-microsoft-c-toolset-from-the-command-line"></a>Komut satırından Microsoft C++ araç takımını kullanma
 
-Visual Studio 'da bulunan araçları C++ kullanarak komut satırında C ve uygulamalar oluşturabilirsiniz. Microsoft C++ (MSVC) derleyicisi araç takımı Ayrıca [Visual Studio İndirmeleri](https://visualstudio.microsoft.com/downloads/) sayfasından tek başına bir paket olarak indirilebilir. **Visual Studio Için derleme araçları** paketi 'nin bir parçasıdır. Yalnızca geliştirme için C++ ihtiyacınız olan araçları indirmeyi seçebilirsiniz.
+Visual Studio 'da bulunan araçları C++ kullanarak komut satırında C ve uygulamalar oluşturabilirsiniz. Microsoft C++ (MSVC) derleyici araç takımı, VISUAL Studio IDE 'yi içermeyen tek başına bir paket olarak da indirilebilir.
+
+## <a name="download-and-install-the-tools"></a>Araçları indirme ve yükleme
+
+Visual Studio 'Yu ve bir C++ iş yükünü yüklediyseniz, tüm komut satırı araçlarına sahip olursunuz. Ve Visual Studio 'Nun nasıl yükleneceği C++ hakkında bilgi için bkz. [Visual C++ Studio 'da destek yüklemesi](vscpp-step-0-installation.md). Yalnızca komut satırı araç takımını istiyorsanız, [Visual Studio Için derleme araçları](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2019)' nı indirin. İndirilen çalıştırılabiliri çalıştırdığınızda Visual Studio Yükleyicisi güncelleştirir ve çalıştırır. Yalnızca geliştirme için C++ ihtiyacınız olan araçları yüklemek için  **C++ derleme araçları** iş yükünü seçin. **Yükleme ayrıntıları**altına dahil etmek için isteğe bağlı kitaplıkları ve araç kümelerini seçebilirsiniz. Visual Studio 2015 veya 2017 Toolsets 'i kullanarak kod derlemek için isteğe bağlı MSVC v140 veya MSVC v141 derleme araçlarını seçin. Seçimlerinizden memnun kaldığınızda, **yüklensin**' i seçin.
 
 ## <a name="how-to-use-the-command-line-tools"></a>Komut satırı araçlarını kullanma
 

@@ -6,32 +6,32 @@ f1_keywords:
 helpviewer_keywords:
 - C4788
 ms.assetid: 47d75bda-f833-4bdd-93a0-a134df0cd303
-ms.openlocfilehash: c51a4409c2a3028823462539343654b5eac365d0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 03ce38aaa910a410025c5cccdf39646d34104779
+ms.sourcegitcommit: 458dcc794e3841919c01a3a5ff6b9a3767f8861b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62187211"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74052385"
 ---
 # <a name="compiler-warning-level-1-c4788"></a>Derleyici Uyarısı (düzey 1) C4788
 
-'identifier': tanımlayıcı 'number' karakter olarak kesildi
+' tanımlayıcı ': tanımlayıcı ' number ' karakter olarak kesildi
 
-Derleyici, bir işlev adı için izin verilen uzunluk sınırını kısıtlar. Derleyici funclets EH/SEH kodu oluşturduğunda, bazı metinleri işlevi adıyla eklenerek funclet'inde adı oluşturur, örneğin "__catch", "\__unwind", veya başka bir dize.
+Derleyici, bir işlev adı için izin verilen uzunluk üst sınırını sınırlandırır. Derleyici, EH/SEH kodu için funclets oluşturduğunda, işlev adını bazı metinler (örneğin, "__catch", "\__unwind" veya başka bir dize) ile önceden bekleyen, funclet 'inde sembol adını oluşturur.
 
-Sonuçta elde edilen funclet'inde adı çok uzun olabilir ve derleyici kesme ve C4788 oluşturur.
+Elde edilen funclet 'inde sembol adı çok uzun olabilir ve derleyici onu keser ve C4788 oluşturur.
 
-Bu uyarıyı çözmek için orijinal işlev adını kısaltın. İşlevi, bir C++ şablon işlevi veya yöntemi ise, adın bir bölümü için bir typedef kullanın. Örneğin:
+Bu uyarıyı çözmek için özgün işlev adını kısaltın. İşlev bir C++ şablon işlevi veya yöntemi ise, adın bir parçası olarak bir typedef kullanın. Örneğin:
 
-```
+```cpp
 C1<x, y, z<T>>::C2<a,b,c>::f
 ```
 
-tarafından değiştirilebilir:
+Şu şekilde değiştirilebilir:
 
-```
+```cpp
 typedef C1<x, y, z<T>>::C2<a,b,c> new_class ;
 new_class::f
 ```
 
-Bu uyarı yalnızca içinde x64 oluşur derleyici.
+Bu uyarı yalnızca x64 derleyicisinde oluşur.

@@ -6,20 +6,20 @@ f1_keywords:
 helpviewer_keywords:
 - C4806
 ms.assetid: 79eb74cd-b925-4b5b-84e1-8ae6f33e38b3
-ms.openlocfilehash: b6fc5708d4e2f9982ceaab57260f13e134e4d247
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: dae6ed7d7a38daf0ce525ae62409823212db711b
+ms.sourcegitcommit: 458dcc794e3841919c01a3a5ff6b9a3767f8861b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62406411"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74052357"
 ---
 # <a name="compiler-warning-level-1-c4806"></a>Derleyici Uyarısı (düzey 1) C4806
 
-'operation': Güvenli olmayan işlem: 'type 'type' türü için yükseltilen' türünde hiçbir değer belirtilen Sabitle eşit olabilir
+' işlem ': güvenli olmayan işlem: ' Type ' türüne yükseltilen ' Type ' türünde hiçbir değer verilen sabite eşit olamaz
 
-Bu ileti karşı kodu gibi uyarır `b == 3`burada `b` türünde `bool`. Promosyon kurallarını neden `bool` yükseltilmesi için `int`. Bu yasal, ancak hiçbir zaman olabilir **true**. Aşağıdaki örnek, C4806 oluşturur:
+Bu ileti, `b` tür `bool`olan `b == 3`gibi koda karşı uyarır. Promosyon kuralları `bool` `int`yükseltilmesine neden olur. Bu geçerlidir, ancak hiçbir şekilde **doğru**olmaz. Aşağıdaki örnek C4806 oluşturur:
 
-```
+```cpp
 // C4806.cpp
 // compile with: /W1
 int main()

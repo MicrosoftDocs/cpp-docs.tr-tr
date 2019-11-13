@@ -6,29 +6,29 @@ f1_keywords:
 helpviewer_keywords:
 - C4744
 ms.assetid: f2a7d0b5-afd5-4926-abc3-cfbd367e3ff5
-ms.openlocfilehash: 2118a32af8b99d35c1e1a6691561391ec5d2b8cc
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f6954ae7966edf200249bb5d10f0dfb011bcef22
+ms.sourcegitcommit: 458dcc794e3841919c01a3a5ff6b9a3767f8861b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62385426"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74051553"
 ---
 # <a name="compiler-warning-level-1-c4744"></a>Derleyici Uyarısı (düzey 1) C4744
 
-'var', 'dosya1' ve 'dosya2' farklı türe sahip: 'type1' ve 'type2'
+' var ', ' FILE1 ' ve ' dosya2 ' içinde farklı türe sahip: ' type1 ' ve ' type2 '
 
-İki dosyalarında tanımlanan ya da başvurulan bir dış değişkenine bu dosyaları farklı türleri vardır.  Çözmek için aynı tür tanımlarını belirleyebilir veya dosyalardan biri değişken adını değiştirin.
+İki dosyada başvurulan veya tanımlanan bir dış değişken bu dosyalardaki farklı türlere sahip.  Çözümlemek için, tür tanımlarını aynı yapın ya da dosyalardan birindeki değişken adını değiştirin.
 
-/GL ile derlenmiş dosyalar yalnızca zaman C4744 yayıldığını  Daha fazla bilgi için [/GL (bütün Program iyileştirmesi)](../../build/reference/gl-whole-program-optimization.md).
+C4744, yalnızca dosyalar/GLILE derlenmişse dağıtılır.  Daha fazla bilgi için bkz. [/GL (tüm program iyileştirmesi)](../../build/reference/gl-whole-program-optimization.md).
 
 > [!NOTE]
->  C++'ta bir değişken adı türü bilgilerini ile donatılmış olduğundan C4744 genellikle C (C++ değil) dosyalarında gerçekleşir.  (Aşağıda) örnek C++ derler olduğunda, bağlayıcı hatası LNK2019 elde edersiniz.
+>  Bir değişken adı tür bilgileriyle donatılmış olduğundan C++, C4744 genellikle C (Not) dosyalarında oluşur. C++  Örnek (aşağıdaki) olarak C++derlendiğinde BAĞLAYıCı hatası LNK2019 alırsınız.
 
 ## <a name="example"></a>Örnek
 
-Bu örnek, ilk tanımı içeriyor.
+Bu örnek ilk tanımı içerir.
 
-```
+```c
 // C4744.c
 // compile with: /c /GL
 int global;
@@ -36,9 +36,9 @@ int global;
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C4744 oluşturur.
+Aşağıdaki örnek C4744 oluşturur.
 
-```
+```c
 // C4744b.c
 // compile with: C4744.c /GL /W1
 // C4744 expected

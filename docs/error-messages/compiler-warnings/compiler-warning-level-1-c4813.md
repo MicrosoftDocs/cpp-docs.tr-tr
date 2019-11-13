@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C4813
 ms.assetid: c30bf877-ab04-4fe4-897e-8162092426f0
-ms.openlocfilehash: c6aaf3cc8e17cd1be1d9c964c03bb18b3bb0ff77
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 517349dacc9081d2d34a861bb55ba734089124e2
+ms.sourcegitcommit: 458dcc794e3841919c01a3a5ff6b9a3767f8861b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62410335"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74051267"
 ---
 # <a name="compiler-warning-level-1-c4813"></a>Derleyici Uyarısı (düzey 1) C4813
 
-'function': bir arkadaş işlev yerel bir sınıfın önceden bildirilmiş olmalıdır
+' function ': yerel bir sınıfın arkadaş işlevinin daha önce tanımlanmış olması gerekir
 
-Bir iç sınıf, bir arkadaş işlev dış sınıfında bildirilmedi.
+İç sınıftaki arkadaş işlevi dış sınıfta bildirilmemiş.
 
-Aşağıdaki örnek, C4813 oluşturur:
+Aşağıdaki örnek C4813 oluşturur:
 
-```
+```cpp
 // C4813.cpp
 // compile with: /W1 /LD
 void MyClass()

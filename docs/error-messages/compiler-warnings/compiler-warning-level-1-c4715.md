@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C4715
 ms.assetid: 1c819bf7-0d8b-4f5e-b338-9cc292870439
-ms.openlocfilehash: f165ea3b54b78e2f8fae995815e309d55101244e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 268a26f5de1bb7f757a8e7cba6d3f5e6ddff882e
+ms.sourcegitcommit: 458dcc794e3841919c01a3a5ff6b9a3767f8861b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62406333"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74052474"
 ---
 # <a name="compiler-warning-level-1-c4715"></a>Derleyici Uyarısı (düzey 1) C4715
 
-'function': tüm denetim yolları değer döndürmez
+' function ': tüm denetim yolları bir değer döndürmüyor
 
-Belirtilen işlev, bir değer döndürmesi olası değil.
+Belirtilen işlev, büyük olasılıkla bir değer döndüremez.
 
 ## <a name="example"></a>Örnek
 
-```
+```cpp
 // C4715a.cpp
 // compile with: /W1 /LD
 int func1( int i )
@@ -31,9 +31,9 @@ int func1( int i )
 }
 ```
 
-Bu uyarıyı engellemek için tüm yolları, dönüş değeri işleve atayın. böylece kodu değiştirin:
+Bu uyarıyı engellemek için, tüm yolların işleve bir dönüş değeri atamasını sağlayacak şekilde kodu değiştirin:
 
-```
+```cpp
 // C4715b.cpp
 // compile with: /LD
 int func1( int i )
@@ -43,9 +43,9 @@ int func1( int i )
 }
 ```
 
-Kodunuzu hiç dönmüyor, aşağıdaki örnekte olduğu gibi bir işlevi çağrısı içerebilir mümkündür:
+Aşağıdaki örnekte olduğu gibi, kodunuzun hiçbir şekilde döndürdüğü bir işleve çağrı içermesi olasıdır:
 
-```
+```cpp
 // C4715c.cpp
 // compile with: /W1 /LD
 void fatal()
@@ -62,4 +62,4 @@ int glue()
 }
 ```
 
-Bu kod derleyici, bilmediğinden, aynı zamanda bir uyarı oluşturur `fatal` hiçbir zaman döndürür. Bu kod bir hata iletisi oluşturmasını önlemek için bildirin `fatal` kullanarak [__declspec(noreturn)](../../cpp/noreturn.md).
+Bu kod ayrıca bir uyarı oluşturur, çünkü derleyici `fatal` hiçbir şekilde dönmediğini bilmez. Bu kodun bir hata mesajı oluşturmasını engellemek için [__declspec (noreturn)](../../cpp/noreturn.md)kullanarak `fatal` bildirin.

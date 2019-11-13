@@ -6,26 +6,26 @@ f1_keywords:
 helpviewer_keywords:
 - C4905
 ms.assetid: 40240bf4-b14e-4c22-aeb2-52f2851532f6
-ms.openlocfilehash: c1d201eb7d3eee322a1aa1e598eeb24928e361a3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0086a3b312895d86f2e76bdbbd348f90654ba8e2
+ms.sourcegitcommit: 458dcc794e3841919c01a3a5ff6b9a3767f8861b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62380662"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74051212"
 ---
 # <a name="compiler-warning-level-1-c4905"></a>Derleyici Uyarısı (düzey 1) C4905
 
 geniş düz dize 'LPSTR' değerine atandı
 
-Derleyici, güvenli olmayan bir tür dönüştürme algıladı. Atama başarısız oldu, ancak bir dönüştürme yordamına kullanmanız gerekir.
+Derleyici güvenli olmayan bir tür algıladı. Atama başarılı oldu, ancak bir dönüştürme yordamı kullanmanız gerekir.
 
-Varsayılan olarak bu uyarıyı kapalıdır. Bkz: [derleyici uyarıları emin olan kapalı varsayılan](../../preprocessor/compiler-warnings-that-are-off-by-default.md) daha fazla bilgi için.
+Bu uyarı varsayılan olarak kapalıdır. Daha fazla bilgi için bkz. [Varsayılan olarak kapalı olan Derleyici uyarıları](../../preprocessor/compiler-warnings-that-are-off-by-default.md) .
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C4905 oluşturur.
+Aşağıdaki örnek C4905 oluşturur.
 
-```
+```cpp
 // C4905.cpp
 // compile with: /W1
 #pragma warning(default : 4905)

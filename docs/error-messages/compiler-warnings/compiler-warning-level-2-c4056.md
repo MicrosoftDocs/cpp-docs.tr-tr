@@ -1,29 +1,29 @@
 ---
-title: Derleyici Uyarısı (Düzey 2) C4056
+title: Derleyici Uyarısı (düzey 2) C4056
 ms.date: 11/04/2016
 f1_keywords:
 - C4056
 helpviewer_keywords:
 - C4056
 ms.assetid: a3c3a9b8-ec30-452d-96cb-3694adcce789
-ms.openlocfilehash: 59c66f2f7dcbd1e20463df613b1b7deae6a1c349
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 20e7c2693c14c0ea05cc6f07f8dad4ce76c1ef5e
+ms.sourcegitcommit: 458dcc794e3841919c01a3a5ff6b9a3767f8861b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62349873"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74052187"
 ---
-# <a name="compiler-warning-level-2-c4056"></a>Derleyici Uyarısı (Düzey 2) C4056
+# <a name="compiler-warning-level-2-c4056"></a>Derleyici Uyarısı (düzey 2) C4056
 
-Kayan sabit nokta aritmetiği içinde taşması
+kayan noktalı sabit aritmetik işleminde taşma
 
-Kayan noktalı sabit aritmetik, izin verilen en büyük değeri aşıyor bir sonuç oluşturur.
+Kayan noktalı sabit aritmetik, izin verilen en yüksek değeri aşan bir sonuç oluşturuyor.
 
-Bu uyarı sabit aritmetik sırasında gerçekleştirilen derleyici iyileştirmelerine neden olabilir. İyileştirmeyi kapatın açtığınızda hemen aşması durumunda bu uyarıyı güvenle yoksayabilirsiniz ([/Od](../../build/reference/od-disable-debug.md)).
+Bu uyarı, sabit aritmetik sırasında gerçekleştirilen derleyici iyileştirmelerinden kaynaklanabilir. İyileştirme 'yi ([/od](../../build/reference/od-disable-debug.md)) kapattığınızda bu uyarıyı güvenle yoksayabilirsiniz.
 
-Aşağıdaki örnek, C4056 oluşturur:
+Aşağıdaki örnek C4056 oluşturur:
 
-```
+```cpp
 // C4056.cpp
 // compile with: /W2 /LD
 #pragma warning (default : 4056)

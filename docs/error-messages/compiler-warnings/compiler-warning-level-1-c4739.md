@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C4739
 ms.assetid: 600873b3-7c85-4cd4-944e-cd8e01bfcbb0
-ms.openlocfilehash: 4c48ad9349361324c18ec790c51d1095cce104e2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: df8f3bcf6cfcc9feb2a400526285ccd9cb0396e4
+ms.sourcegitcommit: 458dcc794e3841919c01a3a5ff6b9a3767f8861b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62280444"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74052418"
 ---
 # <a name="compiler-warning-level-1-c4739"></a>Derleyici Uyarısı (düzey 1) C4739
 
-'var' değişkeni başvuru depolama alanını aşıyor
+' var ' değişkenine yapılan başvuru depolama alanını aşıyor
 
-Bir değişkene bir değer Atandı ancak değişkenin boyutundan daha büyük bir değerdir. Bellek değişkenin bellek konumuna yazılır ve veri kaybı mümkündür.
+Bir değişkene bir değer atandı, ancak değer değişkenin boyutundan büyük. Bellek, değişkenin bellek konumunun ötesinde yazılır ve veri kaybı mümkündür.
 
-Bu uyarıyı çözmek için yalnızca bir değer boyutu değeri barındırabilecek bir değişkene atayın.
+Bu uyarıyı çözmek için, yalnızca boyutu değeri barındırabilecek bir değişkene bir değer atayın.
 
-Aşağıdaki örnek, C4739 oluşturur:
+Aşağıdaki örnek C4739 oluşturur:
 
-```
+```cpp
 // C4739.cpp
 // compile with: /RTCs /Zi /W1 /c
 char *pc;

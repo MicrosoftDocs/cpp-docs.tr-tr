@@ -6,20 +6,20 @@ f1_keywords:
 helpviewer_keywords:
 - C4920
 ms.assetid: 1e501f2e-93c1-4d27-a4fa-54fc86271ae7
-ms.openlocfilehash: cd501cf0e3b434523623276027056c93c77fc278
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7cbb29c8dae24a87fcd5a32b4cf46d7a8ac4c790
+ms.sourcegitcommit: 458dcc794e3841919c01a3a5ff6b9a3767f8861b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62393486"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74050239"
 ---
 # <a name="compiler-warning-level-1-c4920"></a>Derleyici Uyarısı (düzey 1) C4920
 
-Enum sabit listesi üyesi üyesi numaralandırma sabit listesi üyesi olarak zaten görüldü value = value =
+Enum enum member member = değeri Member = Value olarak Enum numaralandırmasında zaten görüldü
 
-#İmport için geçirdiğiniz bir .tlb iki veya daha fazla sabit listelerinde tanımlanan aynı sembolü varsa, bu uyarı, sonraki aynı sembolleri göz ardı edilir ve .tlh dosyasına yorum gösterir.
+#İmport geçirdiğiniz bir. tlb iki veya daha fazla numaralandırmalarda tanımlanmış aynı simgeye sahipse, bu uyarı izleyen aynı sembollerin yoksayıldığını ve. tlh dosyasında açıklama alınmayacağını gösterir.
 
-İçeren bir .tlb varsayılarak:
+Şunu içeren bir. tlb varsayılıyor:
 
 ```
 library MyLib
@@ -34,9 +34,9 @@ library MyLib
 };
 ```
 
-Aşağıdaki örnekler C4920 oluşturur,
+Aşağıdaki örnekler C4920 oluşturur.
 
-```
+```cpp
 // C4920.cpp
 // compile with: /W1
 #import "t4920.tlb"   // C4920

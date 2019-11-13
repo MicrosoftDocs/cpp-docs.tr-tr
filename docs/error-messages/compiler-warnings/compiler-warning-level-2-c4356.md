@@ -1,29 +1,29 @@
 ---
-title: Derleyici Uyarısı (Düzey 2) C4356
+title: Derleyici Uyarısı (düzey 2) C4356
 ms.date: 11/04/2016
 f1_keywords:
 - C4356
 helpviewer_keywords:
 - C4356
 ms.assetid: 3af3defe-de33-43b6-bd6c-2c2e09e34f3f
-ms.openlocfilehash: 218aac1cc98d9b119490a547d63b4b5ee83e53df
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f110ee633fed1c3b43ecc06dadcc27fde4f14bde
+ms.sourcegitcommit: 458dcc794e3841919c01a3a5ff6b9a3767f8861b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62402469"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74052020"
 ---
-# <a name="compiler-warning-level-2-c4356"></a>Derleyici Uyarısı (Düzey 2) C4356
+# <a name="compiler-warning-level-2-c4356"></a>Derleyici Uyarısı (düzey 2) C4356
 
-'member': statik veri üyesi türetilmiş sınıf aracılığıyla başlatılamaz
+' üye ': statik veri üyesi türetilmiş sınıf aracılığıyla başlatılamaz
 
-Statik veri üyesinin başlatılması ill oluşturulmuş. Derleyici, başlatma kabul edildi. Bu uyarıyı engellemek için temel sınıfı aracılığıyla üye başlatın.
+Statik veri üyesinin başlatılması hatalı biçimlendirilmiş. Derleyici başlatmayı kabul etti. Uyarıyı önlemek için, üyeyi temel sınıf aracılığıyla başlatın.
 
-Kullanım [uyarı](../../preprocessor/warning.md) Bu uyarının gösterilmemesi için pragması.
+Bu uyarıyı gizlemek için [Uyarı](../../preprocessor/warning.md) pragmasını kullanın.
 
-Aşağıdaki örnek, C4356 oluşturur:
+Aşağıdaki örnek C4356 oluşturur:
 
-```
+```cpp
 // C4356.cpp
 // compile with: /W2 /EHsc
 #include <iostream>

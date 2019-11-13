@@ -6,28 +6,28 @@ f1_keywords:
 helpviewer_keywords:
 - C4716
 ms.assetid: d95ecfe5-870f-461f-a746-7913af98414b
-ms.openlocfilehash: 5ec0aea543053d699db7483df7dd7ea91b3af715
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5215e8fd0bdd44c9bdfc731d2b74499d38853e80
+ms.sourcegitcommit: 458dcc794e3841919c01a3a5ff6b9a3767f8861b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62363823"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74052469"
 ---
 # <a name="compiler-warning-level-1-c4716"></a>Derleyici Uyarısı (düzey 1) C4716
 
-'function' bir değer döndürmelidir
+' function ' bir değer döndürmelidir
 
-Verilen işlevin bir değer döndürmedi.
+Verilen işlev bir değer döndürmedi.
 
-Yalnızca işlevler dönüş türü void can ile eşlik eden bir dönüş değeri olmadan dönüş komutunu kullanın.
+Yalnızca void dönüş türüne sahip işlevler return komutunu, eşlik eden bir dönüş değeri olmadan kullanabilir.
 
-Bu işlev çağrıldığında, tanımlanmamış bir değer döndürülür.
+Bu işlev çağrıldığında tanımsız bir değer döndürülür.
 
-Bu uyarı, bir hata için otomatik olarak yükseltilir. Bu davranışı değiştirmek istiyorsanız, [#pragma Uyarısı](../../preprocessor/warning.md).
+Bu uyarı otomatik olarak bir hataya yükseltilir. Bu davranışı değiştirmek isterseniz [#pragma uyarı](../../preprocessor/warning.md)kullanın.
 
-Aşağıdaki örnek, C4716 oluşturur:
+Aşağıdaki örnek C4716 oluşturur:
 
-```
+```cpp
 // C4716.cpp
 // compile with: /c /W1
 // C4716 expected

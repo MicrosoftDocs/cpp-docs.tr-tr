@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C4928
 ms.assetid: 77235d7f-9360-45cb-8348-d148c605c4a3
-ms.openlocfilehash: 9357e5775e6cfc9a44c43104c4ffd3fd34084e51
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: cb05dfc42ae5bcd6f7a30f4ee249eb866ac4179a
+ms.sourcegitcommit: 458dcc794e3841919c01a3a5ff6b9a3767f8861b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62393447"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74050180"
 ---
 # <a name="compiler-warning-level-1-c4928"></a>Derleyici Uyarısı (düzey 1) C4928
 
 hatalı kopya başlatma; birden çok kullanıcı tanımlı dönüştürme örtük olarak uygulandı
 
-Birden fazla kullanıcı tanımlı dönüştürme yordamına bulunamadı. Derleyici bu yordamlar, kod yürütülür.
+Birden çok kullanıcı tanımlı dönüştürme yordamı bulundu. Derleyici, tüm bu yordamlar için kodu yürütür.
 
-Varsayılan olarak bu uyarıyı kapalıdır. Bkz: [derleyici uyarıları emin olan kapalı varsayılan](../../preprocessor/compiler-warnings-that-are-off-by-default.md) daha fazla bilgi için.
+Bu uyarı varsayılan olarak kapalıdır. Daha fazla bilgi için bkz. [Varsayılan olarak kapalı olan Derleyici uyarıları](../../preprocessor/compiler-warnings-that-are-off-by-default.md) .
 
-Aşağıdaki örnek, C4928 oluşturur:
+Aşağıdaki örnek C4928 oluşturur:
 
-```
+```cpp
 // C4928.cpp
 // compile with: /W1
 #pragma warning(default: 4928)

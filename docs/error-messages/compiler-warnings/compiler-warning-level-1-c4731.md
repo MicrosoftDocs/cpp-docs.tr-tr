@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C4731
 ms.assetid: 5658c24c-3e6f-4505-835b-1fb92d47cab0
-ms.openlocfilehash: af091d1d35fff955afcc5af3da48b80416e79f36
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b2591756dfaa8887affbe4e470f1c98738b6b680
+ms.sourcegitcommit: 458dcc794e3841919c01a3a5ff6b9a3767f8861b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62385439"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74052423"
 ---
 # <a name="compiler-warning-level-1-c4731"></a>Derleyici Uyarısı (düzey 1) C4731
 
-'işaretçisi': çerçeve işaretçisi kaydı satır içi derleme kodu tarafından değiştirilen 'register'
+' Pointer ': çerçeve işaretçisi yazmaç ' Register ' satır içi derleme kodu tarafından değiştirildi
 
-Çerçeve işaretçisi kaydı değiştirildi. Kaydedin ve kaydı, satır içi bütünleştirilmiş kod bloğu veya çerçeve değişkeni (yerel veya parametre, değişiklik kaydı bağlı olarak) geri yükleme veya kodunuzun düzgün çalışmayabilir.
+Çerçeve işaretçisi kaydı değiştirildi. Kaydı satır içi derleme blobundan veya çerçeve değişkenine (yerel veya parametreye, kaydın değiştirilmesine bağlı olarak) kaydetmeniz ve geri yüklemeniz gerekir, aksi durumda kodunuz düzgün çalışmayabilir.
 
-Aşağıdaki örnek, C4731 oluşturur:
+Aşağıdaki örnek C4731 oluşturur:
 
-```
+```cpp
 // C4731.cpp
 // compile with: /W1 /LD
 // processor: x86
@@ -39,4 +39,4 @@ void bad(int p) {
 }
 ```
 
-EBP (FPO izin verilmiyor) çerçeve işaretçidir ve değiştirilmekte olan. Zaman `p` sonraki başvurulan, göreli başvuru `EBP`. Ancak `EBP` kodla yazıldığı program düzgün çalışmaz ve hatta hata.
+EBP çerçeve işaretçisine (mı izin verilmiyor) ve değiştirilmektedir. `p` daha sonra başvuruluyorsa, `EBP`göreli olarak başvurulur. Ancak `EBP` kodla üzerine yazıldı, bu nedenle program düzgün çalışmayacaktır ve hatta hataya neden olur.

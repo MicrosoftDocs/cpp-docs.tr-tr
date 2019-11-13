@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C4730
 ms.assetid: 11303e3f-162b-4b19-970a-479686123a68
-ms.openlocfilehash: 4da60194deaeac3c79f8c3e9be3bd87d91bc7ca2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5cdd6018afd26b09f7a4555ff8d0431c3364f09e
+ms.sourcegitcommit: 458dcc794e3841919c01a3a5ff6b9a3767f8861b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62386362"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74051335"
 ---
 # <a name="compiler-warning-level-1-c4730"></a>Derleyici Uyarısı (Düzey 1) C4730
 
-'main': mixing _m64 ve kayan nokta ifadeleri hatalı koda neden olabilir
+' Main ': _m64 ve kayan nokta ifadelerini karıştırma hatalı koda neden olabilir
 
-Bir işlev kullanan [__m64](../../cpp/m64.md) ve **float**/**çift** türleri. Kayıt alanı MMX ve kayan nokta kayıtlarını aynı fiziksel paylaştığından (aynı anda kullanarak kullanılamaz) `__m64` ve **float**/**çift** aynı türleri işlevi, büyük olasılıkla bir özel duruma neden veri bozulmasına neden olabilir.
+Bir işlev [__m64](../../cpp/m64.md) ve **float**/**Double** türlerini kullanır. MMX ve kayan nokta kayıtları aynı fiziksel kayıt alanını paylaştığından (aynı anda kullanılamaz), `__m64` ve **float**/aynı işlevdeki **çift** türler, veri bozulmasına neden olabilir, bu da özel duruma neden olabilir.
 
-Güvenli bir şekilde kullanmak için `__m64` türleri ve kayan nokta türleri aynı işlevde, türlerinden birini kullanan her yönerge ayrılmalıdır **_m_empty()** (için MMX) veya **_m_femms()** (için 3DNow!) İç.
+Aynı işlevde `__m64` türlerini ve kayan nokta türlerini güvenle kullanmak için, türlerden birini kullanan her yönerge **_m_empty ()** (MMX için) veya **_m_femms ()** (3now!) iç ile ayrılmalıdır.
 
-Aşağıdaki örnek, C4730 oluşturur:
+Aşağıdaki örnek C4730 oluşturur:
 
-```
+```cpp
 // C4730.cpp
 // compile with: /W1
 // processor: x86

@@ -1,31 +1,31 @@
 ---
-title: Derleyici Uyarısı (Düzey 3) C4287
+title: Derleyici Uyarısı (düzey 3) C4287
 ms.date: 11/04/2016
 f1_keywords:
 - C4287
 helpviewer_keywords:
 - C4287
 ms.assetid: 1bf3bff8-6402-4d06-95ba-431678a790a7
-ms.openlocfilehash: da051bb27ec877fd6347469c9f06b09bd4e0db32
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b37e0692a63f02dc96dec8717d4defd64d7183ac
+ms.sourcegitcommit: 458dcc794e3841919c01a3a5ff6b9a3767f8861b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62402105"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74051668"
 ---
-# <a name="compiler-warning-level-3-c4287"></a>Derleyici Uyarısı (Düzey 3) C4287
+# <a name="compiler-warning-level-3-c4287"></a>Derleyici Uyarısı (düzey 3) C4287
 
-'operator': işaretsiz/negatif sabit uyuşmazlığı
+' operator ': işaretsiz/negatif sabit uyuşmazlığı
 
-Negatif bir sayı ile işleminde işaretsiz bir değişken kullanıldı.
+İşaretsiz bir değişken negatif bir sayı olan bir işlemde kullanıldı.
 
-Varsayılan olarak bu uyarıyı kapalıdır. Bkz: [derleyici uyarıları emin olan kapalı varsayılan](../../preprocessor/compiler-warnings-that-are-off-by-default.md) daha fazla bilgi için.
+Bu uyarı varsayılan olarak kapalıdır. Daha fazla bilgi için bkz. [Varsayılan olarak kapalı olan Derleyici uyarıları](../../preprocessor/compiler-warnings-that-are-off-by-default.md) .
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C4287 oluşturur:
+Aşağıdaki örnek C4287 oluşturur:
 
-```
+```cpp
 // C4287.cpp
 // compile with: /W3
 #pragma warning(default : 4287)

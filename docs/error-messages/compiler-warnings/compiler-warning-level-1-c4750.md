@@ -6,34 +6,34 @@ f1_keywords:
 helpviewer_keywords:
 - C4750
 ms.assetid: b0b2c938-7d2a-4c36-8270-7daee15ffee3
-ms.openlocfilehash: 2a6d83074f180a455e9c305fb4ca8ea270d0a593
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 35b57cf88bf9f9a170a05af890632316b7030838
+ms.sourcegitcommit: 458dcc794e3841919c01a3a5ff6b9a3767f8861b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62385406"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74052396"
 ---
 # <a name="compiler-warning-level-1-c4750"></a>Derleyici Uyarısı (düzey 1) C4750
 
-'identifier': işlev bir döngünün satır içine _alloca() değerine sahip
+' tanımlayıcı ': _alloca () ile bir döngüde satır içine alınmış işlev
 
-'İdentifier' işlevi satır içi genişletme, zorlar [_alloca](../../c-runtime-library/reference/alloca.md) işlevi içinde bir döngüye döngü yürütüldüğünde, yığın taşmasına neden olabilir.
+' Identifier ' işlevi döngü içinde [_alloca](../../c-runtime-library/reference/alloca.md) işlevinin satır içi genişletmesini zorlar ve döngü yürütüldüğünde yığın taşmasına neden olabilir.
 
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için
 
-1. 'İdentifier' işlevi ile değiştirilmez olun [__forceinline](../../cpp/inline-functions-cpp.md) tanımlayıcısı.
+1. ' Tanımlayıcı ' işlevinin [__forceinline](../../cpp/inline-functions-cpp.md) belirticisiyle değiştirilmediğinden emin olun.
 
-1. 'İdentifier' işlev içermediğinden emin olun bir [_alloca](../../c-runtime-library/reference/alloca.md) bir döngü içinde bulunan işlev.
+1. ' Identifier ' işlevinin döngüde bulunan [_alloca](../../c-runtime-library/reference/alloca.md) işlevi içermediğinden emin olun.
 
-1. Belirtmeyin [/O1](../../build/reference/o1-o2-minimize-size-maximize-speed.md), [/O2](../../build/reference/o1-o2-minimize-size-maximize-speed.md), [/Ox](../../build/reference/ox-full-optimization.md), veya [/Og](../../build/reference/og-global-optimizations.md) derleme anahtar.
+1. [/O1](../../build/reference/o1-o2-minimize-size-maximize-speed.md), [/O2](../../build/reference/o1-o2-minimize-size-maximize-speed.md), [/Ox](../../build/reference/ox-full-optimization.md)veya [/OG](../../build/reference/og-global-optimizations.md) derleme anahtarı belirtmeyin.
 
-1. Bir yerde [_alloca](../../c-runtime-library/reference/alloca.md) işlevi bir [deneyin-except deyimi](../../cpp/try-except-statement.md) bir yığın taşması catch.
+1. [_Alloca](../../c-runtime-library/reference/alloca.md) işlevini bir yığın taşmasını yakalayamayacak bir [try-except ifadesine](../../cpp/try-except-statement.md) yerleştirin.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği çağrıları `MyFunction` bir döngüye ve `MyFunction` çağrıları `_alloca` işlevi. `__forceinline` Değiştiricisine neden olur, satır içi genişletme `_alloca` işlevi.
+Aşağıdaki kod örneği bir döngüsünde `MyFunction` çağırır ve `MyFunction` `_alloca` işlevini çağırır. `__forceinline` değiştiricisi `_alloca` işlevinin satır içi genişlemesine neden olur.
 
-```
+```cpp
 // c4750.cpp
 // compile with: /O2 /W1 /c
 #include <intrin.h>

@@ -1,5 +1,5 @@
 ---
-title: 'İzlenecek yol: Komut satırında C programı derleme'
+title: 'İzlenecek yol: komut satırında C programı derleme'
 ms.custom: conceptual
 ms.date: 04/25/2019
 helpviewer_keywords:
@@ -8,66 +8,66 @@ helpviewer_keywords:
 - compiling programs [C++]
 - C program compiling [C++]
 ms.assetid: 7e74cc2d-54b1-49de-b7ad-d3ae6b39ab8d
-ms.openlocfilehash: 03876ba47270252caa21d7e2994a4f8321a6d59e
-ms.sourcegitcommit: 18d3b1e9cdb4fc3a76f7a650c31994bdbd2bde64
+ms.openlocfilehash: d91ee36d26e307577aa56560eb95bef5ed03305b
+ms.sourcegitcommit: 458dcc794e3841919c01a3a5ff6b9a3767f8861b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "64877193"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74051526"
 ---
-# <a name="walkthrough-compile-a-c-program-on-the-command-line"></a>İzlenecek yol: Komut satırında C programı derleme
+# <a name="walkthrough-compile-a-c-program-on-the-command-line"></a>İzlenecek yol: komut satırında C programı derleme
 
-Visual C++, her şeyin tam Windows Masaüstü uygulamaları, mobil uygulamalar ve daha fazla bilgi için temel bir konsol programlarından oluşturmak için kullanabileceğiniz bir C derleyicisi içerir.
+Görsel C++ , temel konsol programlarından tam Windows masaüstü uygulamalarına, mobil uygulamalara ve daha fazlasına her şeyi oluşturmak için kullanabileceğiniz bir C derleyicisi içerir.
 
-Bu izlenecek yol, temel, "Hello, World" oluşturma işlemi gösterilmektedir-C programının bir metin kullanarak Düzenleyicisi stil ve sonra komut satırında derleyin. C++'ta komut satırında işe yarar olup [izlenecek yol: Komut satırında yerel C++ programı derleme](walkthrough-compiling-a-native-cpp-program-on-the-command-line.md). İsterseniz bkz yerine komut satırını kullanarak Visual Studio IDE deneyin [izlenecek yol: Projeler ve çözümler (C++) ile çalışma](../ide/walkthrough-working-with-projects-and-solutions-cpp.md) veya [C++ Masaüstü geliştirmesi için Visual Studio IDE'yi kullanarak](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md).
+Bu izlenecek yol, bir metin düzenleyicisi kullanarak temel, "Merhaba, Dünya" stili C programı oluşturmayı ve ardından komut satırında derlemeyi gösterir. Komut satırında C++ üzerinde çalışmayı tercih ediyorsanız, bkz. [Izlenecek yol: komut satırında yerel C++ program derleme](walkthrough-compiling-a-native-cpp-program-on-the-command-line.md). Komut satırını kullanmak yerine Visual Studio IDE 'yi denemek istiyorsanız, bkz. [izlenecek yol: projeler ve çözümlerle çalışma (C++)](../ide/walkthrough-working-with-projects-and-solutions-cpp.md) veya [masaüstü geliştirme için C++ Visual Studio IDE 'yi kullanma](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md).
 
-## <a name="prerequisites"></a>Önkoşullar
+## <a name="prerequisites"></a>Prerequisites
 
-Bu izlenecek yolu tamamlamak için Visual Studio ve Visual C++ isteğe bağlı bileşenler veya derleme araçları Visual Studio için yüklü gerekir.
+Bu izlenecek yolu tamamlamak için, Visual Studio 'Yu ve isteğe bağlı görsel C++ bileşenleri ya da Visual Studio Için derleme araçlarını yüklemiş olmanız gerekir.
 
-Visual Studio tam özellikli bir düzenleyici, kaynak yöneticileri, hata ayıklayıcıları ve derleyiciler birçok diller ve platformlar için destekleyen bir güçlü tümleşik geliştirme ortamıdır. Bu özellikler ve ücretsiz Visual Studio Community sürümü dahil olmak üzere Visual Studio yükleyip hakkında daha fazla bilgi için bkz. [Visual Studio'yu yükleyin](/visualstudio/install/install-visual-studio).
+Visual Studio, birçok dil ve platformda tam özellikli bir düzenleyici, kaynak yöneticileri, hata ayıklayıcıları ve derleyiciler destekleyen güçlü bir tümleşik geliştirme ortamıdır. Bu özellikler hakkında bilgi edinmek ve ücretsiz Visual Studio Community Edition dahil Visual Studio 'yu indirme ve yükleme hakkında bilgi için bkz. [Visual Studio 'Yu yükleme](/visualstudio/install/install-visual-studio).
 
-Visual Studio'nun Visual Studio sürümü için derleme araçları, yalnızca komut satırı araç takımı, derleyiciler, araçları ve kitaplıkları C ve C++ programları oluşturmak için ihtiyacınız yükler. Derleme laboratuvarlarının için mükemmeldir veya sınıf sınayan ve oldukça hızlı bir şekilde yükler. Yalnızca komut satırı araç takımı'nı yüklemek için Visual Studio derleme araçları indirin [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/) sayfasında ve yükleyiciyi çalıştırın.
+Visual Studio 'nun Visual Studio sürümü için derleme araçları, yalnızca komut satırı araç takımını, derleyicileri, araçları ve kitaplıkları, C ve C++ programlar oluşturmak için gereken kitaplığı yükleme. Derleme laboratuvarları veya sınıf alıştırmaları için idealdir ve görece hızlı bir şekilde yüklenir. Yalnızca komut satırı araç takımını yüklemek için Visual Studio için derleme araçları 'nı [Visual Studio İndirmeleri](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2019) sayfasından indirin ve yükleyiciyi çalıştırın. Visual Studio yükleyicisi ' nde,  **C++ derleme araçları** iş yükünü seçin ve **yükleme**' yi seçin.
 
-Komut satırında C veya C++ programı oluşturmadan önce araçların yüklendiğini ve bunları komut satırından erişebildiğinizi doğrulamanız gerekir. Visual C++ için Araçlar, üstbilgiler ve kitaplıkları kullanır bulmak komut satırı ortamını karmaşık gereksinimleri vardır. **Visual C++ bir düz bir komut istemi penceresinde kullanamazsınız** bazı hazırlık olmadan. Gereksinim duyduğunuz bir *Geliştirici komut istemi* ayarlanmış tüm gerekli ortam değişkenleri içeren bir normal komut istemi penceresi penceresinde. Neyse ki, Visual C++ komut satırı derlemeleri için ayarlanan ortam sahip bir geliştirici komut istemleri başlatmak, kısayol yükler. Ne yazık ki, geliştirici komut istemi kısayolları ve bulundukları neredeyse her sürümünde, Visual C++ ve Windows farklı sürümlerini farklı adlarıdır. İlk kılavuz göreviniz, kullanılacak doğru kısayol bulmaktır.
+Komut satırında bir C veya C++ program oluşturabilmeniz için önce araçların yüklendiğini ve bunlara komut satırından erişebildiğinizi doğrulamanız gerekir. Görsel C++ , komut satırı ortamının kullandığı araçları, üstbilgileri ve kitaplıkları bulması için karmaşık gereksinimlere sahiptir. **Bir hazırlık yapmadan düz C++ bir komut istemi penceresinde görsel kullanamazsınız** . Tüm gerekli ortam değişkenleri ayarlanmış olan bir normal komut istemi penceresi olan bir *Geliştirici komut istemi* penceresi gerekir. Neyse ki, C++ görsel, komut satırı yapıları için ayarlanmış olan geliştirici komut istemlerini başlatmanız için kısayollar yüklüyor. Ne yazık ki, geliştirici komut istemi kısayollarının ve bulundukları yer adları, neredeyse her görsel C++ sürümü ve farklı Windows sürümlerinde farklıdır. İlk izlenecek yol göreviniz, kullanılacak doğru kısayolu bulmektir.
 
 > [!NOTE]
-> Bir geliştirici komut istemi kısayolunun doğru yolları derleyici ve araçları ve tüm gerekli üst bilgileri ve kitaplıkları otomatik olarak ayarlar. Her derleme yapılandırması için bu değerlerden bazıları farklıdır. Kısayolları kullanmıyorsanız, bu ortam değerleri kendiniz ayarlamalısınız. Daha fazla bilgi için [komut satırı derlemeleri için yolu ve ortam değişkenlerini ayarlamak](setting-the-path-and-environment-variables-for-command-line-builds.md). Yapı ortamı karmaşık olduğundan, kendi oluşturmak yerine bir geliştirici komut istemi kısayolunun kullanmanız önerilir.
+> Geliştirici komut istemi kısayolu, derleyici ve araçlar için doğru yolları otomatik olarak ayarlar ve tüm gerekli üst bilgiler ve kitaplıklar için. Bu değerlerden bazıları her derleme yapılandırması için farklıdır. Kısayollardan birini kullanmıyorsanız, bu ortam değerlerini kendiniz ayarlamanız gerekir. Daha fazla bilgi için bkz. [komut satırı derlemeleri Için yolu ve ortam değişkenlerini ayarlama](setting-the-path-and-environment-variables-for-command-line-builds.md). Derleme ortamı karmaşık olduğundan, kendi kendinize derlemek yerine bir geliştirici komut istemi kısayolunu kullanmanızı önemle tavsiye ederiz.
 
-Bu yönergeler, kullandığınız Visual Studio'nun hangi sürümünün bağlı olarak değişir. Devam etmeden önce sol üst sürüm seçicisinde bu sayfanın düzgün ayarlandığından emin olun.
+Bu yönergeler, kullandığınız Visual Studio sürümüne bağlı olarak farklılık gösterir. Devam etmeden önce, bu sayfanın sol üst kısmındaki sürüm seçicinin doğru ayarlandığından emin olun.
 
 ::: moniker range="vs-2019"
 
-## <a name="open-a-developer-command-prompt-in-visual-studio-2019"></a>Visual Studio 2019 içinde bir geliştirici komut istemi açın
+## <a name="open-a-developer-command-prompt-in-visual-studio-2019"></a>Visual Studio 2019 'de bir geliştirici komut istemi açın
 
-Windows 10'da Visual Studio 2019'nı yüklediyseniz, Başlat menüsü açın ve ardından aşağı kaydırın ve açın **Visual Studio 2019** klasörü (Visual Studio 2019 uygulama değil). Seçin **VS 2019 için geliştirici komut istemi** komut istemi penceresi açın.
+Windows 10 ' da Visual Studio 2019 yüklediyseniz, Başlat menüsünü açın ve ardından aşağı kaydırın ve **Visual studio 2019** klasörünü (visual Studio 2019 uygulaması değil) açın. **VS 2019 için geliştirici komut istemi** seçin ve komut istemi penceresini açın.
 
-Farklı bir Windows sürümü kullanıyorsanız, arayın, Başlat menüsünde veya başlangıç sayfası için geliştirici komut istemi kısayolunun içeren bir Visual Studio Araçları klasörü. Windows arama işlevi, yüklü Visual Studio sürümünüzle eşleşen birini seçin ve "Geliştirici komut istemi için" arama için de kullanabilirsiniz. Komut İstemi penceresini açmak için kısayolu kullanın.
+Farklı bir Windows sürümü kullanıyorsanız, geliştirici komut istemi kısayolunu içeren bir Visual Studio Araçları klasörü için başlangıç menünüzün veya başlangıç sayfası ' na bakın. Windows Search işlevini "Geliştirici komut istemi" ni aramak ve yüklü Visual Studio sürümünüz ile eşleşen bir seçim yapmak için de kullanabilirsiniz. Komut istemi penceresini açmak için kısayolu kullanın.
 
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
-## <a name="open-a-developer-command-prompt-in-visual-studio-2017"></a>Visual Studio 2017'de bir geliştirici komut istemi açın
+## <a name="open-a-developer-command-prompt-in-visual-studio-2017"></a>Visual Studio 2017 'de bir geliştirici komut istemi açın
 
-Windows 10'da Visual Studio 2017 yüklediyseniz, Başlat menüsü açın ve ardından aşağı kaydırın ve açın **Visual Studio 2017** klasörü (Visual Studio 2017 uygulama değil). Seçin **VS 2017 için geliştirici komut istemi** komut istemi penceresi açın.
+Windows 10 ' da Visual Studio 2017 yüklediyseniz, Başlat menüsünü açın ve ardından aşağı kaydırın ve **Visual studio 2017** klasörünü (visual Studio 2017 uygulaması değil) açın. **VS 2017 için geliştirici komut istemi** seçin ve komut istemi penceresini açın.
 
-Farklı bir Windows sürümünü çalıştırıyorsanız, arayın, Başlat menüsünde veya başlangıç sayfası için geliştirici komut istemi kısayolunun içeren bir Visual Studio Araçları klasörü. Windows arama işlevi, yüklü Visual Studio sürümünüzle eşleşen birini seçin ve "Geliştirici komut istemi için" arama için de kullanabilirsiniz. Komut İstemi penceresini açmak için kısayolu kullanın.
+Farklı bir Windows sürümü çalıştırıyorsanız, geliştirici komut istemi kısayolunu içeren bir Visual Studio Araçları klasörü için başlangıç menünüzün veya başlangıç sayfası ' na bakın. Windows Search işlevini "Geliştirici komut istemi" ni aramak ve yüklü Visual Studio sürümünüz ile eşleşen bir seçim yapmak için de kullanabilirsiniz. Komut istemi penceresini açmak için kısayolu kullanın.
 
 ::: moniker-end
 
 ::: moniker range="vs-2015"
 
-## <a name="open-a-developer-command-prompt-in-visual-studio-2015"></a>Visual Studio 2015'te bir geliştirici komut istemi açın
+## <a name="open-a-developer-command-prompt-in-visual-studio-2015"></a>Visual Studio 2015 'de bir geliştirici komut istemi açın
 
-Windows 10'da Microsoft Visual C++ derleme araçları 2015 yüklü değilse, açmak **Başlat** menüsünü ve sonra aşağı kaydırın ve açık **Visual C++ derleme Araçları** klasör. Seçin **Visual C++ 2015 x86 yerel Araçlar komut istemi** komut istemi penceresi açın.
+Windows 10 ' da Microsoft Visual C++ derleme araçları 2015 ' ü yüklediyseniz, **Başlat** menüsünü açın ve ardından aşağı kaydırın ve  **C++ Visual derleme araçları** klasörünü açın. Komut istemi penceresini açmak için  **C++ Visual 2015 x86 yerel araçları komut istemi** seçin.
 
-Farklı bir Windows sürümünü çalıştırıyorsanız, arayın, Başlat menüsünde veya başlangıç sayfası için geliştirici komut istemi kısayolunun içeren bir Visual Studio Araçları klasörü. Windows arama işlevi, yüklü Visual Studio sürümünüzle eşleşen birini seçin ve "Geliştirici komut istemi için" arama için de kullanabilirsiniz. Komut İstemi penceresini açmak için kısayolu kullanın.
+Farklı bir Windows sürümü çalıştırıyorsanız, geliştirici komut istemi kısayolunu içeren bir Visual Studio Araçları klasörü için başlangıç menünüzün veya başlangıç sayfası ' na bakın. Windows Search işlevini "Geliştirici komut istemi" ni aramak ve yüklü Visual Studio sürümünüz ile eşleşen bir seçim yapmak için de kullanabilirsiniz. Komut istemi penceresini açmak için kısayolu kullanın.
    
 ::: moniker-end
 
 
-Ardından, Visual C++ Geliştirici komut istemi doğru şekilde ayarlandığını doğrulayın. Komut İstemi penceresinde girin `cl` ve çıkış şuna benzediğini doğrulayın:
+Ardından, Visual C++ Developer komut isteminin doğru şekilde ayarlandığını doğrulayın. Komut istemi penceresinde `cl` girin ve çıktının şuna benzer göründüğünü doğrulayın:
 
 ```Output
 C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise>cl
@@ -77,23 +77,23 @@ Copyright (C) Microsoft Corporation.  All rights reserved.
 usage: cl [ option... ] filename... [ /link linkoption... ]
 ```
 
-Geçerli dizinde veya Visual C++ ve yüklü herhangi bir güncelleştirme sürümüne bağlı olarak, sürüm numaraları farklılıklar olabilir. Yukarıdaki gördüğünüz için benzer bir çıkış, daha sonra komut satırında C veya C++ programları oluşturmaya hazırsınız.
+Geçerli dizin veya sürüm numaralarında, görsel C++ sürümüne ve yüklü güncelleştirmelerden bağlı olarak farklılıklar olabilir. Yukarıdaki çıkış, gördüklerinize benzer ise, komut satırında C veya C++ programları oluşturmaya hazırsınız demektir.
 
 > [!NOTE]
-> "'Temizle' iç ya da dış komut, çalıştırılabilir program ya da toplu iş dosyası tanınmıyor gibi" hata alırsanız hata C1034 veya hata çalıştırdığınızda LNK1104 **cl** ya da bir geliştirici komut istemi kullanmıyorsanız, komut veya Visual C++ yüklemenizle yanlış bir şeydir. Devam etmeden önce bu sorunu düzeltmeniz gerekiyor.
+> "' CL" gibi bir hata alırsanız bir iç veya dış komut, çalıştırılabilir program veya toplu iş dosyası, "hata C1034 veya hata LNK1104" **CL** komutunu çalıştırdığınızda bir geliştirici komut istemi kullanmıyorsanız ya da görsel C++yüklemenizde bir sorun oluştu. Devam edebilmeniz için bu sorunu çözmeniz gerekir.
 
-Geliştirici komut istemi kısayolunun bulamazsa ya da bir hata iletisi alırsanız, girdiğiniz zaman `cl`, sonra da Visual C++ yüklemenizin bir sorun olabilir. Daha sonra yeniden deneyin veya Visual Studio 2017 kullanıyorsanız **ile masaüstü geliştirme C++**  Visual Studio Yükleyicisi'nde iş yükü. Ayrıntılar için bkz [Visual Studio'da C++ yükleme desteği](vscpp-step-0-installation.md). Ya da derleme Araçları'ndan yeniden [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/) sayfası. Bu işlemin çalıştığı kadar sonraki bölüme gidin yok. Yükleme ve Visual Studio sorunlarını giderme hakkında daha fazla bilgi için bkz. [Visual Studio'yu yükleyin](/visualstudio/install/install-visual-studio).
+Geliştirici komut istemi kısayolunu bulamazsanız veya `cl`girdiğinizde bir hata iletisi alırsanız, görsel C++ yüklemenizin bir sorunu olabilir. Visual Studio 2017 veya sonraki bir sürümünü kullanıyorsanız, Visual Studio yükleyicisindeki iş yüküyle **Masaüstü geliştirmeyi C++**  yeniden yüklemeyi deneyin. Ayrıntılar için bkz. [Visual C++ Studio 'da destek yüklemesi](vscpp-step-0-installation.md). Ya da [Visual Studio İndirmeleri](https://visualstudio.microsoft.com/downloads/) sayfasından derleme araçlarını yeniden yükleyin. Bu işe ana kadar bir sonraki bölüme geçmeyin. Visual Studio 'Yu yükleme ve sorun giderme hakkında daha fazla bilgi için bkz. [Visual Studio 'Yu yükleme](/visualstudio/install/install-visual-studio).
 
 > [!NOTE]
-> Sürümüne Windows bilgisayarda ve sistem güvenlik yapılandırmasına, geliştirici komut istemi kısayolunun ilişkin kısayol menüsünü açın ve ardından sağ gerekebilir **yönetici olarak çalıştır** için başarılı bir şekilde oluşturun ve bu izlenecek yolu takip ederek oluşturduğunuz programı çalıştırın.
+> Bilgisayardaki Windows sürümüne ve sistem güvenlik yapılandırmasına bağlı olarak, geliştirici komut istemi kısayolunun kısayol menüsünü açmak için sağ tıklayıp **yönetici olarak çalıştır** ' ı seçerek bu yönergeyi izleyerek oluşturduğunuz programı başarıyla oluşturup çalıştırın.
 
-## <a name="create-a-c-source-file-and-compile-it-on-the-command-line"></a>Bir C kaynak dosyası oluşturun ve komut satırında derleme
+## <a name="create-a-c-source-file-and-compile-it-on-the-command-line"></a>C kaynak dosyası oluşturma ve komut satırında derleme
 
-1. Geliştirici komut istemi penceresinde girin `cd c:\` , C: sürücüsünün köküne geçerli çalışma dizini değiştirmek için. Ardından, girin `md c:\simple` bir dizin oluşturun ve girmeniz `cd c:\simple` bu dizine gidin. Bu dizin, kaynak dosyanızı ve derlenmiş programın tutar.
+1. Geliştirici komut istemi penceresinde, geçerli çalışma dizinini C: sürücünüzün köküne değiştirmek için `cd c:\` girin. Sonra, bir dizin oluşturmak için `md c:\simple` girin ve ardından bu dizine geçmek için `cd c:\simple` girin. Bu dizin, kaynak dosyanızı ve derlenen programı tutacaktır.
 
-1. Girin `notepad simple.c` Geliştirici komut isteminde. Görüntülenen iletideki Not Defteri uyarı iletişim kutusunda, seçmek **Evet** çalışma dizininizde yeni simple.c dosyası oluşturmak için.
+1. Geliştirici komut isteminde `notepad simple.c` girin. Açılan not defteri uyarı iletişim kutusunda, çalışma dizininizde yeni bir basit. c dosyası oluşturmak için **Evet** ' i seçin.
 
-1. Not Defteri'nde, aşağıdaki kod satırlarını girin:
+1. Not defteri 'nde aşağıdaki kod satırlarını girin:
 
     ```C
     #include <stdio.h>
@@ -105,9 +105,9 @@ Geliştirici komut istemi kısayolunun bulamazsa ya da bir hata iletisi alırsan
     }
     ```
 
-1. Not Defteri'ni menü çubuğunda **dosya** > **Kaydet** simple.c çalışma dizininizde kaydetmek için.
+1. Çalışma dizininizde Simple. c dosyasını kaydetmek için Not defteri menü çubuğunda **dosya** > **Kaydet** ' i seçin.
 
-1. Geliştirici komut istemi penceresine geçin. Girin `dir` c:\simple dizininin içeriğini listelemek için komut isteminde. Kaynak dosya simple.c şuna benzer şekilde görünür dizin listesinde görmeniz gerekir:
+1. Geliştirici komut istemi penceresine geri dönün. C:\simple dizininin içeriğini listelemek için komut istemine `dir` yazın. Dizin listesinde basit. c kaynak dosyasını görmeniz gerekir, bu, şöyle bir şey görür:
 
     ```Output
     C:\simple>dir
@@ -124,11 +124,11 @@ Geliştirici komut istemi kısayolunun bulamazsa ya da bir hata iletisi alırsan
 
     ```
 
-   Bilgisayarınızda tarih ve diğer ayrıntıları farklılık gösterir. Kaynak kod dosyanız görmüyorsanız simple.c, oluşturduğunuz c:\simple dizine değiştirdiğinizi doğrulayın ve Not Defteri'nde, kaynak dosyanız bu dizine kaydedilmiş emin olun. Ayrıca, kaynak kodu .c dosya adı uzantısına sahip, .txt uzantısı kaydettiğiniz emin olun.
+   Tarihler ve diğer ayrıntılar bilgisayarınızda farklı olacaktır. Basit. c kaynak kodu dosyanızı görmüyorsanız, oluşturduğunuz c:\simple dizinine değiştirdiğinizden emin olun ve Not defteri 'nde kaynak dosyanızı bu dizine kaydettiğinizden emin olun. Ayrıca, kaynak kodunu. txt uzantısıyla değil. c dosya adı uzantısıyla kaydettiğinizden emin olun.
 
-1. Programınızı derlemek için girin `cl simple.c` Geliştirici komut isteminde.
+1. Programınızı derlemek için, geliştirici komut istemine `cl simple.c` girin.
 
-   Yürütülebilir program adını derleyicinin görüntülediği çıktı bilgisi satırlarında simple.exe görebilirsiniz:
+   Yürütülebilir program adı, basit. exe ' yi derleyicinin görüntülediği çıkış bilgileri satırlarında görebilirsiniz:
 
     ```Output
     c:\simple>cl simple.c
@@ -144,48 +144,48 @@ Geliştirici komut istemi kısayolunun bulamazsa ya da bir hata iletisi alırsan
     ```
 
    > [!NOTE]
-   > "'Temizle' iç ya da dış komut, çalıştırılabilir program ya da toplu iş dosyası tanınmıyor gibi" hata alırsanız hata C1034 veya hatası LNK1104, geliştirici komut istemi, doğru şekilde ayarlanmamış. Bu sorunun çözümü hakkında daha fazla bilgi için geri dön **bir geliştirici komut istemi açın** bölümü.
+   > "' CL" iç veya dış komut, çalıştırılabilir programı veya toplu iş dosyası, "hata C1034 veya hata LNK1104" gibi bir hata alırsanız, geliştirici komut isteminize doğru şekilde ayarlanmamaktadır. Bu sorunu giderme hakkında daha fazla bilgi için, **Geliştirici komut istemi** bölümüne geri dönün.
 
    > [!NOTE]
-   > Farklı bir derleyici veya bağlayıcı hata veya uyarı alırsanız, hataları düzeltin, ardından dosyayı kaydedin ve derleyici yeniden çalıştırmak için kaynak kodu gözden geçirin. Kendi hatalarıyla ilgili daha fazla bilgi için hata numarası aramak için bu sayfanın en üstündeki arama kutusunu kullanın.
+   > Farklı bir derleyici veya bağlayıcı hatası ya da uyarısı alırsanız, hataları düzeltmek için kaynak kodunuzu gözden geçirin, sonra dosyayı kaydedin ve derleyiciyi yeniden çalıştırın. Belirli hatalar hakkında daha fazla bilgi için, bu sayfanın üst kısmındaki arama kutusunu kullanarak hata numarasını arayın.
 
-1. Programınızı çalıştırmak için girin `simple` komut isteminde.
+1. Programınızı çalıştırmak için komut istemine `simple` girin.
 
-   Program bu metni görüntüler ve kapanır:
+   Program bu metni görüntüler ve sonra çıkar:
 
     ```Output
     Hello, World! This is a native C program compiled on the command line.
     ```
 
-   Tebrikler, derlenmiş ve komut satırını kullanarak bir C programını çalıştırın.
+   Tebrikler, komut satırını kullanarak bir C programını derlediniz ve çalıştırdık.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Bu "Hello, World" örnek olarak bir C programının alabilirsiniz hakkında kadar kolaydır. Gerçek dünya programlarının üst bilgi dosyaları ve daha fazla kaynak dosyaları, bağlantı kitaplıklarında ve yararlı işi vardır.
+Bu "Hello, World" örneği, C programının alabilir kadar basit bir işlemdir. Gerçek dünyada programlar üst bilgi dosyalarına ve daha fazla kaynak dosyasına sahiptir, kitaplıklarda bağlantı sağlar ve yararlı işler yapılır.
 
-Gösterilen örnek kod yazmak yerine kendi C kodu derlemek için bu izlenecek yolda adımları kullanabilirsiniz. Ayrıca, başka bir yerde bulabileceğiniz birçok C kodu örnek programını da oluşturabilirsiniz. Ek kaynak kodu dosyaları olan bir program derlemek için bunları tüm komut satırında gibi girin:
+Gösterilen örnek kodu yazmak yerine kendi C kodunuzu oluşturmak için bu yönergedeki adımları kullanabilirsiniz. Ayrıca, başka bir yerde bulduğunuz birçok C kod örnek programı da oluşturabilirsiniz. Ek kaynak kodu dosyaları olan bir programı derlemek için, bunları komut satırına şu şekilde girin:
 
 `cl file1.c file2.c file3.c`
 
-Derleyici file1.exe adlı bir programı çıkarır. Ekleme için program1.exe adını değiştirmek için bir [/out](reference/out-output-file-name.md) bağlayıcı seçeneği:
+Derleyici, FILE1. exe adlı bir program çıkışı verir. Adı Program1. exe olarak değiştirmek için, bir [/Out](reference/out-output-file-name.md) bağlayıcı seçeneği ekleyin:
 
 `cl file1.c file2.c file3.c /link /out:program1.exe`
 
-Daha fazla programlama hatalarını otomatik olarak çekmek için derleme kullanarak öneririz [/W3](reference/compiler-option-warning-level.md) veya [/W4](reference/compiler-option-warning-level.md) Uyarısı Düzeyi:
+Otomatik olarak daha fazla programlama hatası yakalamak için [/w3](reference/compiler-option-warning-level.md) veya [/W4](reference/compiler-option-warning-level.md) uyarı düzeyi seçeneğini kullanarak derlemeyi öneririz:
 
 `cl /W4 file1.c file2.c file3.c /link /out:program1.exe`
 
-Derleyici, cl.exe'yi uygulama oluşturmak için en iyi duruma getirme, hata ayıklama ve kod çözümleme kullanabileceğiniz pek çok seçenek vardır. Hızlı bir listesi için girin `cl /?` Geliştirici komut isteminde. Ayrıca derlemek ve da ayrı ayrı bağlayın ve derleme daha karmaşık senaryolarda bağlayıcı seçenekleri uygulayabilirsiniz. Derleyici ve bağlayıcı seçenekleri ve kullanım hakkında daha fazla bilgi için bkz. [C/C++ oluşturma başvurusu](reference/c-cpp-building-reference.md).
+, CL. exe ' nin, kodunuzu derlemek, iyileştirmek, hatalarını ayıklamak ve analiz etmek için uygulayabileceğiniz birçok daha fazla seçeneği vardır. Hızlı bir liste için, geliştirici komut isteminde `cl /?` girin. Ayrıca, ayrı olarak derleyip bağlayabilir ve bağlayıcı seçeneklerini daha karmaşık derleme senaryolarında uygulayabilirsiniz. Derleyici ve bağlayıcı seçenekleri ve kullanımı hakkında daha fazla bilgi için bkz. [CC++ /Building Reference](reference/c-cpp-building-reference.md).
 
-NMAKE ve derleme görevleri dosyası ve MSBuild ve proje dosyaları, yapılandırmak ve komut satırında daha karmaşık projeleri oluşturmak için kullanabilirsiniz. Bu araçları kullanarak daha fazla bilgi için bkz: [NMAKE başvurusu](reference/nmake-reference.md) ve [MSBuild](msbuild-visual-cpp.md).
+Komut satırında daha karmaşık projeler yapılandırmak ve derlemek için NMAKE ve makefiles, MSBuild ve proje dosyalarını kullanabilirsiniz. Bu araçları kullanma hakkında daha fazla bilgi için bkz. [NMAKE Başvurusu](reference/nmake-reference.md) ve [MSBuild](msbuild-visual-cpp.md).
 
-C ve C++ dillerinin benzerdir ancak aynı değildir. Microsoft C /C++ derleyici (MSVC), kodunuzu derleyen sırasında kullanmak için hangi dilin belirlemek üzere basit bir kuralı kullanır. Varsayılan olarak, MSVC derleyicisi, .c C kaynak kodu biten tüm dosyaları ve C++ kaynak kodu, .cpp ile biten tüm dosyaları işler. Tüm dosyaları C bağımlı olmayan dosya adı uzantısıyla derleyicinin zorlamak için kullanan [/Tc](reference/tc-tp-tc-tp-specify-source-file-type.md) derleyici seçeneği.
+C ve C++ diller benzerdir, ancak aynı değildir. Microsoft C/C++ DERLEYICISI (MSVC), kodunuzu derlediğinde hangi dilin kullanılacağını belirleyen basit bir kural kullanır. Varsayılan olarak, MSVC derleyicisi. c ile biten tüm dosyaları C kaynak kodu olarak ve. cpp ile biten tüm dosyaları kaynak kodu olarak C++ değerlendirir. Derleyicinin tüm dosyaları dosya adı uzantısına bağlı olmayan C olarak kabul etmeye zorlamak için [/TC](reference/tc-tp-tc-tp-specify-source-file-type.md) derleyici seçeneğini kullanın.
 
-MSVC ISO C99 standardı ile uyumludur, ancak tamamen uyumlu değildir. Çoğu durumda, taşınabilir C kodu derleyin ve beklendiği gibi çalıştırın. Visual C++ ISO C11 içinde yapılan değişikliklerin çoğu desteklemiyor. Belirli bir kitaplığı işlevleri ve işlev adları POSIX tarafından MSVC kullanım dışı bırakılmıştır. İşlevler desteklenir, ancak tercih edilen adlar değişmiştir. Daha fazla bilgi için [CRT'deki güvenlik özellikleri](../c-runtime-library/security-features-in-the-crt.md) ve [Derleyici Uyarısı (Düzey 3) C4996](../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md).
+MSVC, ISO C99 standardı ile uyumludur, ancak kesinlikle uyumlu değildir. Çoğu durumda, taşınabilir C kodu, beklendiği gibi derleyip çalıştırılır. Visual C++ , ISO C11 'deki değişikliklerin çoğunu desteklemez. Belirli kitaplık işlevleri ve POSIX işlev adları MSVC tarafından kullanımdan kaldırılmıştır. İşlevler desteklenir, ancak tercih edilen adlar değişmiştir. Daha fazla bilgi için bkz. CRT ve derleyici uyarısında [güvenlik özellikleri](../c-runtime-library/security-features-in-the-crt.md) [(düzey 3) C4996](../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İzlenecek yol: Standart Bir C++ Programı Oluşturma (C++)](../windows/walkthrough-creating-a-standard-cpp-program-cpp.md)<br/>
+[İzlenecek yol: Standart C++ Programı Oluşturma](../windows/walkthrough-creating-a-standard-cpp-program-cpp.md)<br/>
 [C Dil Başvurusu](../c-language/c-language-reference.md)<br/>
 [Projeler ve derleme sistemleri](projects-and-build-systems-cpp.md)<br/>
 [Uyumluluk](../c-runtime-library/compatibility.md)

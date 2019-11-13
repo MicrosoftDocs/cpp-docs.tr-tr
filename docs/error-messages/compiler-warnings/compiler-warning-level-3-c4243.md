@@ -1,27 +1,27 @@
 ---
-title: Derleyici Uyarısı (Düzey 3) C4243
+title: Derleyici Uyarısı (düzey 3) C4243
 ms.date: 11/04/2016
 f1_keywords:
 - C4243
 helpviewer_keywords:
 - C4243
 ms.assetid: ca72f9ad-ce0b-43a9-a68c-106e1f8b90ef
-ms.openlocfilehash: e08a8538c93681c59779f681812a9ba8f7e316a9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ed5cc87f1bc376526f5129aa157c38a3f034b20b
+ms.sourcegitcommit: 458dcc794e3841919c01a3a5ff6b9a3767f8861b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62402209"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74051735"
 ---
-# <a name="compiler-warning-level-3-c4243"></a>Derleyici Uyarısı (Düzey 3) C4243
+# <a name="compiler-warning-level-3-c4243"></a>Derleyici Uyarısı (düzey 3) C4243
 
-'dönüştürme türünü' dönüştürme 'type1' 'type2' var, ancak erişilebilir değil
+' type1 ' öğesinden ' type2 ' öğesine ' dönüştürme türü ' dönüştürmesi var, ancak erişilebilir değil
 
-Bir taban sınıfı işaretçisini bir türetilmiş sınıf işaretçisine dönüştürülür, ancak türetilen sınıfın temel sınıf özel veya korumalı erişimle devralır.
+Türetilmiş bir sınıfa yönelik bir işaretçi, temel sınıfa bir işaretçiye dönüştürülür, ancak türetilmiş sınıf, özel veya korumalı erişimi olan temel sınıfı devralır.
 
-Aşağıdaki örnek, C4243 oluşturur:
+Aşağıdaki örnek C4243 oluşturur:
 
-```
+```cpp
 // C4243.cpp
 // compile with: /W3
 // C4243 expected
