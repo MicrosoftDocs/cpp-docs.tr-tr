@@ -1,6 +1,6 @@
 ---
 title: basic_string Sınıfı
-ms.date: 11/04/2016
+ms.date: 11/12/2019
 f1_keywords:
 - xstring/std::basic_string
 - xstring/std::basic_string::allocator_type
@@ -116,12 +116,12 @@ helpviewer_keywords:
 - std::basic_string [C++], substr
 - std::basic_string [C++], swap
 ms.assetid: a9c3e0a2-39bf-4c8a-b093-9abe30839591
-ms.openlocfilehash: c77c09394bb8997168d8a6756da69e9545dad0a2
-ms.sourcegitcommit: 4a0a108aa6f042576a777feb6dcb310dc0bb9230
+ms.openlocfilehash: 6919f2ece4ed846cd80f791af91797373dea33b2
+ms.sourcegitcommit: 458dcc794e3841919c01a3a5ff6b9a3767f8861b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "73842325"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74051498"
 ---
 # <a name="basic_string-class"></a>basic_string Sınıfı
 
@@ -194,9 +194,9 @@ Dizenin bellek ayırmayı ve ayırmayı kaldırma hakkındaki ayrıntıları kap
 |[erer](#end)|Dizedeki son öğeden sonraki konumu ele alan bir yineleyici döndürür.|
 |[silme](#erase)|Bir dizedeki bir öğeyi veya öğe aralığını belirtilen konumdan kaldırır.|
 |[bilgi](#find)|Belirtilen karakter dizisiyle eşleşen bir alt dizenin ilk oluşumu için bir dizeyi ileriye doğru yönde arar.|
-|[find_first_not_of](#find_first_not_of)|Belirtilen dizenin herhangi bir öğesi olmayan ilk karakter için bir dizeyi arar.|
+|[find_first_not_of](#find_first_not_of)|Belirtilen bir dizenin herhangi bir öğesi olmayan ilk karakter için bir dizeyi arar.|
 |[find_first_of](#find_first_of)|Belirtilen dizenin herhangi bir öğesiyle eşleşen ilk karakter için bir dizeyi arar.|
-|[find_last_not_of](#find_last_not_of)|Belirtilen dizenin herhangi bir öğesi olmayan son karakter için bir dizeyi arar.|
+|[find_last_not_of](#find_last_not_of)|Belirli bir dizenin herhangi bir öğesi olmayan son karakter için bir dizeyi arar.|
 |[find_last_of](#find_last_of)|Belirtilen dizenin bir öğesi olan son karakter için bir dizeyi arar.|
 |[yapılan](#front)|Dizedeki ilk öğeye bir başvuru döndürür.|
 |[get_allocator](#get_allocator)|Dizeyi oluşturmak için kullanılan `allocator` nesnesinin bir kopyasını döndürür.|
@@ -281,7 +281,7 @@ basic_string<CharType, Traits, Allocator>& append(
 
 basic_string<CharType, Traits, Allocator>& append(
     const basic_string<CharType, Traits, Allocator>& str,
-    size_type _Off,
+    size_type offset,
     size_type count);
 
 basic_string<CharType, Traits, Allocator>& append(
@@ -289,7 +289,7 @@ basic_string<CharType, Traits, Allocator>& append(
 
 basic_string<CharType, Traits, Allocator>& append(
     size_type count,
-    value_type _Ch);
+    value_type char_value);
 
 template <class InputIterator>
 basic_string<CharType, Traits, Allocator>& append(
@@ -313,13 +313,13 @@ Eklenecek C dizesi.
 *str* \
 Karakterleri eklenecek dize.
 
-*_Off*\
+\ *boşluğu*
 Eklenecek karakterleri sağlayan kaynak dize bölümünün dizini.
 
 *sayı* \
 Kaynak dizeden en fazla eklenecek karakter sayısı.
 
-*_Ch*\
+*char_value*\
 Eklenecek karakter değeri.
 
 *ilk* \
@@ -450,7 +450,7 @@ basic_string<CharType, Traits, Allocator>& assign(
 
 basic_string<CharType, Traits, Allocator>& assign(
     size_type count,
-    value_type _Ch);
+    value_type char_value);
 
 template <class InIt>
 basic_string<CharType, Traits, Allocator>& assign(
@@ -477,7 +477,7 @@ Kaynak dizeden atanacak karakter sayısı.
 *str* \
 Hedef dizeye karakterler atanacak kaynak dize.
 
-*_Ch*\
+*char_value*\
 Atanacak karakter değeri.
 
 *ilk* \
@@ -594,14 +594,14 @@ The string str1 assigned a range of string str2f is: World.
 Bir dizedeki belirtilen dizine sahip karaktere bir başvuru sağlar.
 
 ```cpp
-const_reference at(size_type _Off) const;
+const_reference at(size_type offset) const;
 
-reference at(size_type _Off);
+reference at(size_type offset);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*_Off*\
+\ *boşluğu*
 Başvurulacak öğenin konumunun dizini.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -614,7 +614,7 @@ Dizenin ilk öğesi sıfır dizinine sahiptir ve aşağıdaki öğeler pozitif t
 
 Üye [işleci&#91; ](#op_at) , bir dizenin öğelerine okuma ve yazma erişimi sağlamak için `at` üye işlevinden daha hızlıdır.
 
-Üye `operator[]`, parametre olarak geçirilen dizinin geçerli olup olmadığını denetlemez, ancak üye işlevi `at` ve bu nedenle, geçerlilik belirli değilse kullanılmalıdır. Bir dizin, dizenin boyutundan sıfır veya daha büyük ya da buna eşit veya daha büyük bir dizin olan geçersiz bir dizin, `at` üye işlevine geçirilir ve bir [Out_of_range sınıfı](../standard-library/out-of-range-class.md) özel durumu oluşturur. `operator[]` geçirilen geçersiz bir dizin tanımsız davranışa neden olur, ancak dizenin uzunluğuna eşit olan dizin const dizeler için geçerli bir dizindir ve işleç bu dizin geçirildiğinde null karakter döndürür.
+Üye `operator[]`, parametre olarak geçirilen dizinin geçerli olup olmadığını denetlemez, ancak üye işlevi `at` ve bu nedenle, geçerlilik kesin değilse kullanılmalıdır. Bir dizin, dizenin boyutundan sıfır veya daha büyük ya da buna eşit veya daha büyük bir dizin olan geçersiz bir dizin, `at` üye işlevine geçirilir ve bir [Out_of_range sınıfı](../standard-library/out-of-range-class.md) özel durumu oluşturur. `operator[]` geçirilen geçersiz bir dizin tanımsız davranışa neden olur, ancak dizenin uzunluğuna eşit olan dizin const dizeler için geçerli bir dizindir ve işleç bu dizin geçirildiğinde null karakter döndürür.
 
 Döndürülen başvuru, **sabit** olmayan dizeler için dize reallocations veya değişiklikleri tarafından geçersiz kılınabilir.
 
@@ -681,7 +681,7 @@ Boş olan, belirli karakterler tarafından başlatılan veya başka bir dize nes
 basic_string();
 
 explicit basic_string(
-    const allocator_type& _Al);
+    const allocator_type& alloc_type);
 
 basic_string(
     const basic_string& right);
@@ -691,14 +691,14 @@ basic_string(
 
 basic_string(
     const basic_string& right,
-    size_type _Roff,
+    size_type right_offset,
     size_type count = npos);
 
 basic_string(
     const basic_string& right,
-    size_type _Roff,
+    size_type right_offset,
     size_type count,
-    const allocator_type& _Al);
+    const allocator_type& alloc_type);
 
 basic_string(
     const value_type* ptr,
@@ -707,23 +707,23 @@ basic_string(
 basic_string(
     const value_type* ptr,
     size_type count,
-    const allocator_type& _Al);
+    const allocator_type& alloc_type);
 
 basic_string(
     const value_type* ptr);
 
 basic_string(
     const value_type* ptr,
-    const allocator_type& _Al);
+    const allocator_type& alloc_type);
 
 basic_string(
     size_type count,
-    value_type _Ch);
+    value_type char_value);
 
 basic_string(
     size_type count,
-    value_type _Ch,
-    const allocator_type& _Al);
+    value_type char_value,
+    const allocator_type& alloc_type);
 
 template <class InputIterator>
 basic_string(
@@ -734,7 +734,7 @@ template <class InputIterator>
 basic_string(
     InputIterator first,
     InputIterator last,
-    const allocator_type& _Al);
+    const allocator_type& alloc_type);
 
 basic_string(
     const_pointer first,
@@ -750,7 +750,7 @@ basic_string(
 *ptr* \
 Oluşturulan `string` başlatmak için karakterleri kullanılacak olan C dizesi. Bu değer, null bir işaretçi olamaz.
 
-*_Al*\
+*alloc_type*\
 Oluşturulan dize nesnesinin depolama ayırıcı sınıfı.
 
 *sayı* \
@@ -759,10 +759,10 @@ Başlatılacak karakter sayısı.
 *sağ* \
 Oluşturulan dizeyi başlatacak dize.
 
-*_Roff*\
+*right_offset*\
 Oluşturulan dizenin karakter değerlerini başlatmak için ilk kullanılan bir dizedeki bir karakterin dizini.
 
-*_Ch*\
+*char_value*\
 Oluşturulan dizeye kopyalanacak karakter değeri.
 
 *ilk* \
@@ -777,9 +777,9 @@ Oluşturucular tarafından oluşturulan dize nesnesine bir başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tüm oluşturucular bir [basic_string:: allocator_type](#allocator_type) depolar ve denetimli sırayı başlatır. Ayırıcı nesne varsa `al` bağımsız değişkendir. Kopya Oluşturucu için `right.`[basic_string:: get_allocator](#get_allocator)`()`. Aksi takdirde, `Alloc()`.
+Tüm oluşturucular bir [basic_string:: allocator_type](#allocator_type) depolar ve denetimli sırayı başlatır. Ayırıcı nesne varsa `al` bağımsız değişkendir. Kopya Oluşturucu için `right.`[basic_string:: get_allocator](#get_allocator)`()`. Aksi takdirde, ayırıcı `Alloc()`.
 
-Denetlenen sıra, kalan işlenenler tarafından belirtilen işlenen dizisinin bir kopyasına başlatılır. İşlenen dizisi olmayan bir Oluşturucu, boş bir ilk denetimli sırayı belirtir. Bir şablon oluşturucusunda bir tamsayı türü `InputIterator`, işlenen dizisi _F `irst,  last` `(size_type) first, (value_type) last`ile aynı şekilde davranır.
+Denetlenen sıra, kalan işlenenler tarafından belirtilen işlenen dizisinin bir kopyasına başlatılır. İşlenen dizisi olmayan bir Oluşturucu, boş bir ilk denetimli sırayı belirtir. Bir şablon oluşturucusunda bir tamsayı türü `InputIterator`, işlenen dizisi `first,  last` `(size_type) first, (value_type) last`ile aynı şekilde davranır.
 
 ### <a name="example"></a>Örnek
 
@@ -896,7 +896,7 @@ const value_type *c_str() const;
 
 \<char > basic_string sınıf şablonuna ait olan dize türündeki nesnelerin null sonlandırılanmış olması gerekmez. ' \ 0 ' null karakteri, dizenin sonunu işaretlemek için bir C dizesinde özel bir karakter olarak kullanılır, ancak String türünde bir nesne içinde özel bir anlamı yoktur ve dizenin bir parçası olan herhangi bir karakterle aynı olabilir. **Const char** 'dan dizelere<strong>\*</strong> otomatik dönüştürme vardır ancak dize sınıfı, C stili dizelerden **basic_string\<char >** nesne türüne otomatik dönüştürmeler sağlamaz.
 
-Döndürülen C stili dize değiştirilmemesi gerekir, çünkü dizenin süresi sınırlı olduğundan ve sınıf dizesine ait olduğundan, bu dize için işaretçiyi geçersiz kılabilir veya silinir.
+Döndürülen C stili dize değiştirilmemesi gerekir, çünkü dize, sınırlı bir yaşam süresine sahip olduğundan ve sınıf dizesine ait olduğundan, bu dize işaretçisini geçersiz kılabilir veya silinir.
 
 ### <a name="example"></a>Örnek
 
@@ -1128,30 +1128,30 @@ int compare(
     const basic_string<CharType, Traits, Allocator>& str) const;
 
 int compare(
-    size_type _Pos1,
-    size_type _Num1,
+    size_type position_1,
+    size_type number_1,
     const basic_string<CharType, Traits, Allocator>& str) const;
 
 int compare(
-    size_type _Pos1,
-    size_type _Num1,
+    size_type position_1,
+    size_type number_1,
     const basic_string<CharType, Traits, Allocator>& str,
-    size_type _Off,
+    size_type offset,
     size_type count) const;
 
 int compare(
     const value_type* ptr) const;
 
 int compare(
-    size_type _Pos1,
-    size_type _Num1,
+    size_type position_1,
+    size_type number_1,
     const value_type* ptr) const;
 
 int compare(
-    size_type _Pos1,
-    size_type _Num1,
+    size_type position_1,
+    size_type number_1,
     const value_type* ptr
-    size_type _Num2) const;
+    size_type number_2) const;
 ```
 
 ### <a name="parameters"></a>Parametreler
@@ -1159,16 +1159,16 @@ int compare(
 *str* \
 İşlenen dizesiyle Karşılaştırılacak dize.
 
-*_Pos1*\
+*position_1*\
 Karşılaştırma işleminin başladığı işlenen dizesinin dizini.
 
-*_Num1*\
+*number_1*\
 Karşılaştırılacak işlenen dizeden en fazla karakter sayısı.
 
-*_Num2*\
+*number_2*\
 Karşılaştırılacak parametre dizesinden en fazla karakter sayısı.
 
-*_Off*\
+\ *boşluğu*
 Karşılaştırma işleminin başladığı parametre dizesinin dizini.
 
 *sayı* \
@@ -1408,7 +1408,7 @@ typedef typename allocator_type::const_pointer const_pointer;
 
 Tür `allocator_type::const_pointer`için bir eş anlamlı.
 
-Tür `string` için `char*` eşdeğerdir.
+Tür `string`için `char*`eşdeğerdir.
 
 Const olarak belirtilen işaretçiler, bildirildiği zaman başlatılmalıdır. Const işaretçileri her zaman aynı bellek konumuna işaret edebilir ve sabit veya sabit olmayan verilere işaret edebilir.
 
@@ -1448,7 +1448,7 @@ typedef typename allocator_type::const_reference const_reference;
 
 Bir tür `const_reference`, bir öğenin değerini değiştirmek için kullanılamaz.
 
-Tür `allocator_type::const_reference`için bir eş anlamlı. Dize `type` için const `char&` eşdeğerdir.
+Tür `allocator_type::const_reference`için bir eş anlamlı. Dize `type`için const `char&`eşdeğerdir.
 
 ### <a name="example"></a>Örnek
 
@@ -1480,7 +1480,7 @@ Bu yöntem, geçilen değerlerin doğru olup olmadığını denetlemek için ça
 size_type copy(
     value_type* ptr,
     size_type count,
-    size_type _Off = 0) const;
+    size_type offset = 0) const;
 ```
 
 ### <a name="parameters"></a>Parametreler
@@ -1488,9 +1488,9 @@ size_type copy(
 *ptr* \
 Öğelerin kopyalanacağı hedef karakter dizisi.
 
-_ Kaynak dizeden, en fazla kopyalanacak karakter sayısını *say* .
+*sayı* Kaynak dizeden en fazla kopyalanacak olan karakter sayısı.
 
-*_Off*\
+\ *boşluğu*
 Kopya yapılacak Kaynak dizedeki başlangıç konumu.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1499,7 +1499,7 @@ Gerçekte kopyalanmış karakterlerin sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kopyanın sonuna bir null karakter eklenmez.
+Kopyanın sonuna null bir karakter eklenmez.
 
 ### <a name="example"></a>Örnek
 
@@ -1585,7 +1585,7 @@ size_type _Copy_s(
     value_type* dest,
     size_type dest_size,
     size_type count,
-    size_type _Off = 0) const;
+    size_type offset = 0) const;
 ```
 
 ### <a name="parameters"></a>Parametreler
@@ -1596,9 +1596,9 @@ size_type _Copy_s(
 *dest_size*\
 *Hedef*boyutu.
 
-_ Kaynak dizeden, en fazla kopyalanacak karakter sayısını *say* .
+*sayı* Kaynak dizeden en fazla kopyalanacak olan karakter sayısı.
 
-*_Off*\
+\ *boşluğu*
 Kopya yapılacak Kaynak dizedeki başlangıç konumu.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1607,7 +1607,7 @@ Gerçekte kopyalanmış karakterlerin sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kopyanın sonuna bir null karakter eklenmez.
+Kopyanın sonuna null bir karakter eklenmez.
 
 ### <a name="example"></a>Örnek
 
@@ -1904,10 +1904,10 @@ iterator erase(
     iterator last);
 
 iterator erase(
-    iterator _It);
+    iterator iter);
 
 basic_string<CharType, Traits, Allocator>& erase(
-    size_type _Pos = 0,
+    size_type offset = 0,
     size_type count = npos);
 ```
 
@@ -1919,14 +1919,14 @@ Silinecek aralıktaki ilk öğenin konumunu adresleyen bir yineleyici.
 *son* \
 Silinen aralıktaki son öğeden geçen konumu ele aldığı bir yineleyici.
 
-*_It*\
+*iter*\
 Silinecek dizedeki öğenin konumunu adresleyen bir yineleyici.
 
-*_Pos*\
+\ *boşluğu*
 Kaldırılacak dizedeki ilk karakterin dizini.
 
 *sayı* \
-*_Pos*ile başlayan dize aralığında çok sayıda olduğunda kaldırılacak olan öğe sayısı.
+Aralıktan itibaren dize aralığında çok sayıda varsa, kaldırılacak öğe *sayısı.*
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -2003,29 +2003,29 @@ Belirtilen karakter dizisiyle eşleşen bir alt dizenin ilk oluşumu için bir d
 
 ```cpp
 size_type find(
-    value_type _Ch,
-    size_type _Off = 0) const;
+    value_type char_value,
+    size_type offset = 0) const;
 
 size_type find(
     const value_type* ptr,
-    size_type _Off = 0) const;
+    size_type offset = 0) const;
 
 size_type find(
     const value_type* ptr,
-    size_type _Off,
+    size_type offset,
     size_type count) const;
 
 size_type find(
     const basic_string<CharType, Traits, Allocator>& str,
-    size_type _Off = 0) const;
+    size_type offset = 0) const;
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*_Ch*\
+*char_value*\
 Üye işlevin aranacağı karakter değeri.
 
-*_Off*\
+\ *boşluğu*
 Aramanın başlayacağı konumun dizini.
 
 *ptr* \
@@ -2178,29 +2178,29 @@ Belirtilen dizenin bir öğesi olmayan ilk karakter için bir dizeyi arar.
 
 ```cpp
 size_type find_first_not_of(
-    value_type _Ch,
-    size_type _Off = 0) const;
+    value_type char_value,
+    size_type offset = 0) const;
 
 size_type find_first_not_of(
     const value_type* ptr,
-    size_type _Off = 0) const;
+    size_type offset = 0) const;
 
 size_type find_first_not_of(
     const value_type* ptr,
-    size_type _Off,
+    size_type offset,
     size_type count) const;
 
 size_type find_first_not_of(
     const basic_string<CharType, Traits, Allocator>& str,
-    size_type _Off = 0) const;
+    size_type offset = 0) const;
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*_Ch*\
+*char_value*\
 Üye işlevin aranacağı karakter değeri.
 
-*_Off*\
+\ *boşluğu*
 Aramanın başlayacağı konumun dizini.
 
 *ptr* \
@@ -2366,29 +2366,29 @@ Belirtilen dizenin herhangi bir öğesiyle eşleşen ilk karakter için bir dize
 
 ```cpp
 size_type find_first_of(
-    value_type _Ch,
-    size_type _Off = 0) const;
+    value_type char_value,
+    size_type offset = 0) const;
 
 size_type find_first_of(
     const value_type* ptr,
-    size_type _Off = 0) const;
+    size_type offset = 0) const;
 
 size_type find_first_of(
     const value_type* ptr,
-    size_type _Off,
+    size_type offset,
     size_type count) const;
 
 size_type find_first_of(
     const basic_string<CharType, Traits, Allocator>& str,
-    size_type _Off = 0) const;
+    size_type offset = 0) const;
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*_Ch*\
+*char_value*\
 Üye işlevin aranacağı karakter değeri.
 
-*_Off*\
+\ *boşluğu*
 Aramanın başlayacağı konumun dizini.
 
 *ptr* \
@@ -2549,33 +2549,33 @@ the 0th position is: 1
 
 ## <a name="find_last_not_of"></a>basic_string:: find_last_not_of
 
-Belirtilen dizenin herhangi bir öğesi olmayan son karakter için bir dizeyi arar.
+Belirli bir dizenin herhangi bir öğesi olmayan son karakter için bir dizeyi arar.
 
 ```cpp
 size_type find_last_not_of(
-    value_type _Ch,
-    size_type _Off = npos) const;
+    value_type char_value,
+    size_type offset = npos) const;
 
 size_type find_last_not_of(
     const value_type* ptr,
-    size_type _Off = npos) const;
+    size_type offset = npos) const;
 
 size_type find_last_not_of(
     const value_type* ptr,
-    size_type _Off,
+    size_type offset,
     size_type count) const;
 
 size_type find_last_not_of(
     const basic_string<CharType, Traits, Allocator>& str,
-    size_type _Off = npos) const;
+    size_type offset = npos) const;
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*_Ch*\
+*char_value*\
 Üye işlevin aranacağı karakter değeri.
 
-*_Off*\
+\ *boşluğu*
 Aramanın tamamlanalınacağı konumun dizini.
 
 *ptr* \
@@ -2742,29 +2742,29 @@ Belirtilen dizenin herhangi bir öğesiyle eşleşen son karakter için bir dize
 
 ```cpp
 size_type find_last_of(
-    value_type _Ch,
-    size_type _Off = npos) const;
+    value_type char_value,
+    size_type offset = npos) const;
 
 size_type find_last_of(
     const value_type* ptr,
-    size_type _Off = npos) const;
+    size_type offset = npos) const;
 
 size_type find_last_of(
     const value_type* ptr,
-    size_type _Off,
+    size_type offset,
     size_type count) const;
 
 size_type find_last_of(
     const basic_string<CharType, Traits, Allocator>& str,
-    size_type _Off = npos) const;
+    size_type offset = npos) const;
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*_Ch*\
+*char_value*\
 Üye işlevin aranacağı karakter değeri.
 
-*_Off*\
+\ *boşluğu*
 Aramanın tamamlanalınacağı konumun dizini.
 
 *ptr* \
@@ -2975,60 +2975,60 @@ Belirli bir konumdaki dizeye bir öğe veya dizi öğe veya öğe aralığı ekl
 
 ```cpp
 basic_string<CharType, Traits, Allocator>& insert(
-    size_type _P0,
+    size_type position,
     const value_type* ptr);
 
 basic_string<CharType, Traits, Allocator>& insert(
-    size_type _P0,
+    size_type position,
     const value_type* ptr,
     size_type count);
 
 basic_string<CharType, Traits, Allocator>& insert(
-    size_type _P0,
+    size_type position,
     const basic_string<CharType, Traits, Allocator>& str);
 
 basic_string<CharType, Traits, Allocator>& insert(
-    size_type _P0,
+    size_type position,
     const basic_string<CharType, Traits, Allocator>& str,
-    size_type _Off,
+    size_type offset,
     size_type count);
 
 basic_string<CharType, Traits, Allocator>& insert(
-    size_type _P0,
+    size_type position,
     size_type count,
-    value_type _Ch);
+    value_type char_value);
 
 iterator insert(
-    iterator _It);
+    iterator iter);
 
 iterator insert(
-    iterator _It,
-    value_type _Ch)l
+    iterator iter,
+    value_type char_value)l
 template <class InputIterator>
 void insert(
-    iterator _It,
+    iterator iter,
     InputIterator first,
     InputIterator last);
 
 void insert(
-    iterator _It,
+    iterator iter,
     size_type count,
-    value_type _Ch);
+    value_type char_value);
 
 void insert(
-    iterator _It,
+    iterator iter,
     const_pointer first,
     const_pointer last);
 
 void insert(
-    iterator _It,
+    iterator iter,
     const_iterator first,
     const_iterator last);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*_P0*\
+*konum*\
 Yeni karakterleri ekleme noktasının arkasındaki konumun dizini.
 
 *ptr* \
@@ -3040,13 +3040,13 @@ Eklenecek karakter sayısı.
 *str* \
 Hedef dizeye tamamen veya kısmen eklenecek dize.
 
-*_Off*\
+\ *boşluğu*
 Eklenecek karakterleri sağlayan kaynak dize bölümünün dizini.
 
-*_Ch*\
+*char_value*\
 Eklenecek öğelerin karakter değeri.
 
-*_It*\
+*iter*\
 Arkasında bir karakter eklenecek konumu ele veren bir yineleyici.
 
 *ilk* \
@@ -3322,7 +3322,7 @@ Bir dizeye karakter ekler.
 
 ```cpp
 basic_string<CharType, Traits, Allocator>& operator+=(
-    value_type _Ch);
+    value_type char_value);
 
 basic_string<CharType, Traits, Allocator>& operator+=(
     const value_type* ptr);
@@ -3333,7 +3333,7 @@ basic_string<CharType, Traits, Allocator>& operator+=(
 
 ### <a name="parameters"></a>Parametreler
 
-*_Ch*\
+*char_value*\
 Eklenecek karakter.
 
 *ptr* \
@@ -3411,7 +3411,7 @@ Bir dizenin içeriğine yeni karakter değerleri atar.
 
 ```cpp
 basic_string<CharType, Traits, Allocator>& operator=(
-    value_type _Ch);
+    value_type char_value);
 
 basic_string<CharType, Traits, Allocator>& operator=(
     const value_type* ptr);
@@ -3425,7 +3425,7 @@ basic_string<CharType, Traits, Allocator>& operator=(
 
 ### <a name="parameters"></a>Parametreler
 
-*_Ch*\
+*char_value*\
 Atanacak karakter değeri.
 
 *ptr* \
@@ -3504,13 +3504,13 @@ The string str1 reassigned with string str3c is: World.
 Bir dizedeki belirtilen dizine sahip karaktere bir başvuru sağlar.
 
 ```cpp
-const_reference operator[](size_type _Off) const;
-reference operator[](size_type _Off);
+const_reference operator[](size_type offset) const;
+reference operator[](size_type offset);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*_Off*\
+\ *boşluğu*
 Başvurulacak öğenin konumunun dizini.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -3580,7 +3580,7 @@ typedef typename allocator_type::pointer pointer;
 
 Tür `allocator_type::pointer`için bir eş anlamlı.
 
-Tür `string` için, **char**  <strong>\*</strong>eşdeğerdir.
+Tür `string`için **char** <strong>\*</strong>eşdeğerdir.
 
 ### <a name="example"></a>Örnek
 
@@ -3622,17 +3622,17 @@ Bu üye işlevi, dizinin boş olması gereken son öğeyi silmek için `erase(si
 Dizenin sonuna bir öğesi ekler.
 
 ```cpp
-void push_back(value_type _Ch);
+void push_back(value_type char_value);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*_Ch*\
+*char_value*\
 Dizenin sonuna eklenecek karakter.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi [Insert](#insert)( [End](#end), _ *ch* ) öğesini etkin bir şekilde çağırır.
+Üye işlevi [Insert](#insert)( [End](#end), *char_value* ) öğesini etkin bir şekilde çağırır.
 
 ### <a name="example"></a>Örnek
 
@@ -3762,7 +3762,7 @@ Bir tür `reference`, bir öğenin değerini değiştirmek için kullanılabilir
 
 Tür `allocator_type::reference`için bir eş anlamlı.
 
-Tür `string` için `chr&` eşdeğerdir.
+Tür `string`için `chr&`eşdeğerdir.
 
 ### <a name="example"></a>Örnek
 
@@ -3852,33 +3852,33 @@ Belirli bir konumdaki bir dizedeki öğeleri, belirtilen karakterlerle veya diğ
 
 ```cpp
 basic_string<CharType, Traits, Allocator>& replace(
-    size_type _Pos1,
-    size_type _Num1,
+    size_type position_1,
+    size_type number_1,
     const value_type* ptr);
 
 basic_string<CharType, Traits, Allocator>& replace(
-    size_type _Pos1,
-    size_type _Num1,
+    size_type position_1,
+    size_type number_1,
     const basic_string<CharType, Traits, Allocator>& str);
 
 basic_string<CharType, Traits, Allocator>& replace(
-    size_type _Pos1,
-    size_type _Num1,
+    size_type position_1,
+    size_type number_1,
     const value_type* ptr,
-    size_type _Num2);
+    size_type number_2);
 
 basic_string<CharType, Traits, Allocator>& replace(
-    size_type _Pos1,
-    size_type _Num1,
+    size_type position_1,
+    size_type number_1,
     const basic_string<CharType, Traits, Allocator>& str,
-    size_type _Pos2,
-    size_type _Num2);
+    size_type position_2,
+    size_type number_2);
 
 basic_string<CharType, Traits, Allocator>& replace(
-    size_type _Pos1,
-    size_type _Num1,
+    size_type position_1,
+    size_type number_1,
     size_type count,
-    value_type _Ch);
+    value_type char_value);
 
 basic_string<CharType, Traits, Allocator>& replace(
     iterator first0,
@@ -3894,13 +3894,13 @@ basic_string<CharType, Traits, Allocator>& replace(
     iterator first0,
     iterator last0,
     const value_type* ptr,
-    size_type _Num2);
+    size_type number_2);
 
 basic_string<CharType, Traits, Allocator>& replace(
     iterator first0,
     iterator last0,
-    size_type _Num2,
-    value_type _Ch);
+    size_type number_2,
+    value_type char_value);
 
 template <class InputIterator>
 basic_string<CharType, Traits, Allocator>& replace(
@@ -3927,22 +3927,22 @@ basic_string<CharType, Traits, Allocator>& replace(
 *str* \
 İşlenen dizesinin karakter kaynağı olacak dize.
 
-*_Pos1*\
+*position_1*\
 Değiştirme işleminin başladığı işlenen dizesinin dizini.
 
-*_Num1*\
+*number_1*\
 İşlenen dizesinde değiştirilmekte olan en fazla karakter sayısı.
 
-*_Pos2*\
+*position_2*\
 Kopyalamanın başladığı parametre dizesinin dizini.
 
-*_Num2*\
+*number_2*\
 C-String parametresinden kullanılacak en fazla karakter sayısı.
 
 *ptr* \
 İşlenen dize için bir karakter kaynağı olacak C-dize.
 
-*_Ch*\
+*char_value*\
 İşlenen dizesine kopyalanacak karakter.
 
 *first0* \
@@ -3958,7 +3958,7 @@ Bir yineleyici, const_pointer veya const_iterator parametre dizesinde kopyalanac
 Parametre dizesinde kopyalanacak bir yineleyici, const_pointer veya const_iterator son karakteri adresleyen.
 
 *sayı* \
-*_Ch* işlenen dizesine kopyalandığı zaman sayısı.
+*Char_value* işlenen dizesine kopyalandığı zaman sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -4243,7 +4243,7 @@ void resize(
 
 void resize(
     size_type count,
-    _Elem _Ch);
+    value_type char_value);
 ```
 
 ### <a name="parameters"></a>Parametreler
@@ -4251,7 +4251,7 @@ void resize(
 *sayı* \
 Dizenin yeni boyutu.
 
-*_Ch*\
+*char_value*\
 Ek öğeler gerekliyse, eklenen karakterlerin değeri ile başlatılır.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -4365,29 +4365,29 @@ Belirtilen karakter dizisiyle eşleşen bir alt dizenin ilk oluşumu için bir d
 
 ```cpp
 size_type rfind(
-    value_type _Ch,
-    size_type _Off = npos) const;
+    value_type char_value,
+    size_type offset = npos) const;
 
 size_type rfind(
     const value_type* ptr,
-    size_type _Off = npos) const;
+    size_type offset = npos) const;
 
 size_type rfind(
     const value_type* ptr,
-    size_type _Off,
+    size_type offset,
     size_type count) const;
 
 size_type rfind(
     const basic_string<CharType, Traits, Allocator>& str,
-    size_type _Off = npos) const;
+    size_type offset = npos) const;
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*_Ch*\
+*char_value*\
 Üye işlevin aranacağı karakter değeri.
 
-*_Off*\
+\ *boşluğu*
 Aramanın başlayacağı konumun dizini.
 
 *ptr* \
@@ -4661,13 +4661,13 @@ Belirli bir konumdan başlayarak bir dizeden en fazla sayıda karakter alt dizes
 
 ```cpp
 basic_string<CharType, Traits, Allocator> substr(
-    size_type _Off = 0,
+    size_type offset = 0,
     size_type count = npos) const;
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*_Off*\
+\ *boşluğu*
 Varsayılan değeri 0 olan, dizenin kopyasının oluşturulduğu konumdaki öğeyi bulmak için bir dizin.
 
 *sayı* \
@@ -4787,7 +4787,7 @@ typedef Traits traits_type;
 
 Tür, `Traits` ikinci şablon parametresi için bir eş anlamlı.
 
-Tür `string`için, **char_traits\<char >** eşdeğerdir.
+Tür `string`için **char_traits\<char >** eşdeğerdir.
 
 ### <a name="example"></a>Örnek
 
