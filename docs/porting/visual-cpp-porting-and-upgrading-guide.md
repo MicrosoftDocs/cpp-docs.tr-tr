@@ -1,15 +1,15 @@
 ---
 title: Microsoft C++ taşıma ve Yükseltme Kılavuzu
 description: Microsoft C++ Code 'U Visual Studio 'nun en son sürümüne yükseltin.
-ms.date: 10/29/2019
+ms.date: 11/05/2019
 ms.assetid: f5fbcc3d-aa72-41a6-ad9a-a706af2166fb
 ms.topic: overview
-ms.openlocfilehash: d67c2665574242a46d697f6e9f24321556146958
-ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
+ms.openlocfilehash: 04c3950d637c01031e78d0d95e13232143ceb232
+ms.sourcegitcommit: 4dde7914608508e47c21cae03ac58fe953a0c29b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73625689"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74119493"
 ---
 # <a name="microsoft-c-porting-and-upgrading-guide"></a>Microsoft C++ taşıma ve Yükseltme Kılavuzu
 
@@ -25,7 +25,7 @@ Eski bir uygulama çalışır durumda, güvenli bir ortamda çalışır ve etkin
 
 - Aynı kod, geliştirilmiş derleyici iyileştirmeleri nedeniyle daha hızlı çalışabilir.
 
-- Modern C++ Özellikler ve programlama uygulamaları hataların yaygın nedenlerini ortadan kaldırır ve eski C stili deyimlerinin korunmasını çok daha kolay hale getirir.
+- Modern C++ Özellikler ve programlama uygulamaları, hataların yaygın olarak karşılaşılan nedenlerini ortadan kaldırır ve eski C stili deyimlerinin korunması çok daha kolay olan kodlar üretir.
 
 - Derleme süreleri, derleyicide ve bağlayıcıdaki performans iyileştirmeleri nedeniyle önemli ölçüde daha hızlıdır.
 
@@ -48,6 +48,7 @@ Daha fazla bilgi için bkz. [Eski projeler oluşturmak Için Visual Studio 'da y
 |Başlık|Açıklama|
 |-----------|-----------------|
 |[Visual C++ Studio 'nun önceki sürümlerinden projeleri yükseltme](upgrading-projects-from-earlier-versions-of-visual-cpp.md)|Kod tabanınızı Visual Studio 2019 ve derleyicinin v142 sürümüne yükseltme.|
+|[Kod yükseltmek C++ için IDE araçları](ide-tools-for-upgrading-code.md)|Yükseltme sürecinde yardımcı olan yararlı IDE özellikleri.|
 |[C++2015 ile 2019 arasında ikili uyumluluk](binary-compat-2015-2017.md)|V140 kitaplıklarını v142 projelerinden olduğu gibi kullanın.|
 |[Visual Studio’da Eski Projeleri Oluşturmak için Yerel Çoklu Sürüm Paketi Kullanma](use-native-multi-targeting.md)|Daha eski derleyiciler ve kitaplıklarla Visual Studio 2019 kullanın.|
 |[Visual C++ değişiklik geçmişi 2003 - 2015](visual-cpp-change-history-2003-2015.md)|Microsoft C++ kitaplıklarında yapılan tüm değişikliklerin listesi ve Visual Studio 2003 ile 2015 arasındaki derleme araçları, kodunuzda değişiklik yapılmasını gerektirebilir.|
