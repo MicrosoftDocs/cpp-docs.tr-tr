@@ -7,12 +7,12 @@ helpviewer_keywords:
 - cl.exe compiler, performance
 - cl.exe compiler, intrinsics
 ms.assetid: 48bb9929-7d78-4fd8-a092-ae3c9f971858
-ms.openlocfilehash: 8c101de6d74a4f2d3073bd220a29f2a0328d2959
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 61fc825e333b8d839d15752ce737dfc6d3980809
+ms.sourcegitcommit: e805200eaef4fe7a65a00051bbd305273af94fe7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70216875"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74163480"
 ---
 # <a name="compiler-intrinsics"></a>Derleyici iç bilgileri
 
@@ -22,19 +22,21 @@ ms.locfileid: "70216875"
 
 Bir işlev içsel ise, bu işlevin kodu genellikle satır içi olarak eklenir, bir işlev çağrısının ek yükünü ortadan kaldırır ve bu işlev için yüksek düzeyde verimli makine yönergelerine izin verir. En iyi duruma getirme, en çok sayıda iç yapı ile ilgili yerleşik bir bilgiye sahip olduğundan ve satır içi derleme kullanıldığında kullanılamayan bazı iyileştirmeler kullanılabilir olduğundan, bir iç öğe genellikle denk satır içi derlemeden daha hızlıdır. Ayrıca, iyileştirici iç farklı şekilde genişleyebilir, arabellekleri farklı hizalayabilir veya çağrının bağlamına ve bağımsız değişkenlerine bağlı olarak diğer ayarlamaları yapabilirsiniz.
 
-Kod diğer derleyiciler ile derlenirse ve bazı hedef mimarilerde kullanılabilecek bazı iç bilgiler olmadığından C++ , iç işlem kullanımı kod taşınabilirliği etkiler. Tüm mimarilerde kullanılabilir. Ancak, iç bilgiler genellikle satır içi derlemeden daha taşınabilir. Satır içi derlemenin desteklenmediği 64 bitlik mimarilerde iç bilgiler gereklidir.
+Kod diğer derleyiciler ile derlenirse ve bazı hedef mimarilerde kullanılabilir olabilecek bazı iç bilgiler C++ tüm mimarilerde kullanılabilir değilse, iç yapı kullanımı kod taşınabilirliği etkiler. Ancak, iç bilgiler genellikle satır içi derlemeden daha taşınabilir. Satır içi derlemenin desteklenmediği 64 bitlik mimarilerde iç bilgiler gereklidir.
 
-`__assume` Ve gibi bazı iç öğeler derleyiciye `__ReadWriteBarrier`bilgi sağlar ve bu da iyileştiricinin davranışını etkiler.
+`__assume` ve `__ReadWriteBarrier`gibi bazı iç bilgiler derleyiciye bilgi sağlar ve bu da iyileştiricinin davranışını etkiler.
 
-Bazı iç bilgiler yalnızca iç bilgiler olarak kullanılabilir ve bazıları hem işlev hem de iç uygulamalarda kullanılabilir. Yalnızca belirli işlevleri etkinleştirmek mi yoksa tüm iç bilgileri etkinleştirmek mi istediğinize bağlı olarak derleyicinin iç uygulamayı iki şekilde kullanmasını bildirebilirsiniz. İlk yöntem, `#pragma intrinsic(` *iç işlev ad listesini*`)`kullanmaktır. Pragma, virgülle ayrılmış tek bir iç veya birden çok iç yapı belirtmek için kullanılabilir. İkincisi, belirli bir platformdaki tüm iç bilgileri kullanılabilir hale getiren [/Oi (iç Işlevler üret)](../build/reference/oi-generate-intrinsic-functions.md) derleyici seçeneğini kullanmaktır. **/Oi**altında, bir `#pragma function(`işlev çağrısının bir iç yerine kullanılmasına zorlamak için *iç işlev adı-liste* `)` kullanın. Belirli bir iç belge için olan belgeler, yordamın yalnızca bir iç öğe olarak kullanılabileceğini fark etdiğine göre, iç uygulama, **/Oi** veya `#pragma intrinsic` belirtilen olduklarına bakılmaksızın kullanılır. Her durumda, **/Oi** veya `#pragma intrinsic` izin verir, ancak en iyi duruma getirmeyi zorunlu hale getirmez. İyileştirici hala işlevi çağırabilir.
+Bazı iç bilgiler yalnızca iç bilgiler olarak kullanılabilir ve bazıları hem işlev hem de iç uygulamalarda kullanılabilir. Yalnızca belirli işlevleri etkinleştirmek mi yoksa tüm iç bilgileri etkinleştirmek mi istediğinize bağlı olarak derleyicinin iç uygulamayı iki şekilde kullanmasını bildirebilirsiniz. İlk yol `#pragma intrinsic(`*iç işlev adı-liste*`)`kullanmaktır. Pragma, virgülle ayrılmış tek bir iç veya birden çok iç yapı belirtmek için kullanılabilir. İkincisi, belirli bir platformdaki tüm iç bilgileri kullanılabilir hale getiren [/Oi (iç Işlevler üret)](../build/reference/oi-generate-intrinsic-functions.md) derleyici seçeneğini kullanmaktır. **/Oi**altında, bir işlev çağrısının bir iç yerine kullanılmasına zorlamak için `#pragma function(`*iç işlev adı-liste*`)` kullanın. Belirli bir iç belge için belgeler yalnızca iç öğe olarak kullanılabilir olduğunda, iç uygulama **/Oi** veya `#pragma intrinsic` belirtildiğinden bağımsız olarak kullanılır. Her durumda, **/Oi** veya `#pragma intrinsic` izin verir, ancak en iyi duruma getirmeyi zorlamaz. İyileştirici hala işlevi çağırabilir.
 
 Bazı standart C/C++ kitaplık işlevleri bazı mimarilerde iç uygulamalarda kullanılabilir. CRT işlevini çağırırken, komut satırında **/Oi** belirtilmişse iç uygulama kullanılır.
 
-Bir üst bilgi dosyası \<olan Intrin. h >, ortak iç işlevler için prototipler bildiren kullanılabilir. Üreticiye özgü iç bilgiler, \<ımmintrin. h > ve \<ammintrin. h > üst bilgi dosyalarında mevcuttur. Ayrıca, bazı Windows üstbilgileri bir derleyici iç üzerine eşlenen işlevleri bildirir.
+\<Intrin. h > bir üst bilgi dosyası, ortak iç işlevler için prototipler bildiren kullanılabilir. Üreticiye özgü iç bilgiler \<ımmintrin. h > ve \<ammintrin. h > üst bilgi dosyalarında mevcuttur. Ayrıca, bazı Windows üstbilgileri bir derleyici iç üzerine eşlenen işlevleri bildirir.
 
 Aşağıdaki bölümlerde, çeşitli mimarilerde bulunan tüm iç bilgiler listelenmektedir. İç bilgilerin belirli bir hedef işlemcide nasıl çalıştığı hakkında daha fazla bilgi için, üreticinin başvuru belgelerine bakın.
 
 - [ARM iç bilgileri](../intrinsics/arm-intrinsics.md)
+
+- [ARM64 içleri](../intrinsics/arm64-intrinsics.md)
 
 - [x86 iç bilgi listesi](../intrinsics/x86-intrinsics-list.md)
 

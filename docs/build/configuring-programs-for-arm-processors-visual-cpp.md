@@ -1,36 +1,39 @@
 ---
-title: C++ projeleri ARM işlemcileri için yapılandırma
+title: C++ projelerini ARM işlemciler için yapılandırma
 ms.date: 07/11/2018
 ms.assetid: 3d95f221-656a-480d-9651-9ad263895747
-ms.openlocfilehash: 7e6e0c97245c0941abc49096d1693a8d152c1709
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0dc87e9a119f82c03a11dde0d90c27de71618f5a
+ms.sourcegitcommit: e805200eaef4fe7a65a00051bbd305273af94fe7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62273834"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74163433"
 ---
-# <a name="configure-c-projects-for-arm-processors"></a>C++ projeleri ARM işlemcileri için yapılandırma
+# <a name="configure-c-projects-for-arm-processors"></a>C++ projelerini ARM işlemciler için yapılandırma
 
-Belgelerinin bu bölümü, ARM donanım hedeflemek için MSVC derleme araçları kullanma hakkında bilgiler içerir.
+Belgelerinin bu bölümü, ARM donanımını hedeflemek için MSVC derleme araçlarının nasıl kullanılacağına ilişkin bilgiler içerir.
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
-[ARM ABI Kurallarına Genel Bakış](overview-of-arm-abi-conventions.md)<br/>
-ARM üzerinde Windows tarafından çağırma kuralları ve özel durum işleme yazmaç kullanımı için kullanılan uygulama ikili arabirimi açıklar.
+[ARM ABI kurallarına genel bakış](overview-of-arm-abi-conventions.md)\
+Kayıt kullanımı, çağırma kuralları ve özel durum işleme için ARM 'de Windows tarafından kullanılan uygulama ikili arabirimini açıklar.
 
-[ARM64 ABI Kurallarına Genel Bakış](arm64-windows-abi-conventions.md)<br/>
-ARM64 üzerinde Windows tarafından kayıt kullanımı çağırma kuralları ve özel durum işleme için kullanılan uygulama ikili arabirimi açıklar.
+[ARM64 ABI kurallarına genel bakış](arm64-windows-abi-conventions.md)\
+Kayıt kullanımı, çağırma kuralları ve özel durum işleme için ARM64 üzerinde Windows tarafından kullanılan uygulama ikili arabirimini açıklar.
 
-[Genel MSVC ARM Geçiş Sorunları](common-visual-cpp-arm-migration-issues.md)<br/>
-Genellikle mimariler arasında taşınabilir olarak kabul edilir, ancak hangi x86 ve x64 ARM için farklı sonuçlar üreten C++ kod öğelerini açıklar.
+[Ortak MSVC ARM geçiş sorunları](common-visual-cpp-arm-migration-issues.md)\
+Genellikle C++ mimarilerde taşınabilen, ancak x86 ve x64 IÇIN olan ARM için farklı sonuçlar üreten kod öğelerini açıklar.
 
-[ARM Özel Durum İşleme](arm-exception-handling.md)<br/>
-Yığını geriye doğru izleme sırasında Windows ARM üzerinde işleme, yapılandırılmış özel durum için kodlama düzenini açıklar.
+[ARM özel durum işleme](arm-exception-handling.md)\
+ARM 'de Windows 'da yapılandırılmış özel durum işleme sırasında yığın geri sarma için kodlama şemasını açıklar.
 
-[ARM64 Özel Durum İşleme](arm64-exception-handling.md)<br/>
-Yığını geriye doğru izleme sırasında Windows ARM64 üzerinde yapılandırılmış özel durum işlemesi için kodlama düzenini açıklar.
+[ARM64 özel durum işleme](arm64-exception-handling.md)\
+ARM64 üzerinde Windows 'da yapılandırılmış özel durum işleme sırasında yığın geri sarma için kodlama şemasını açıklar.
 
 ## <a name="related-sections"></a>İlgili Bölümler
 
-[ARM İç Bilgileri](../intrinsics/arm-intrinsics.md)<br/>
-ARM mimarisini kullanan işlemciler için iç derleyicileri açıklar.
+[ARM iç](../intrinsics/arm-intrinsics.md) bilgileri\
+ARM mimarisini kullanan işlemciler için derleyici iç yapısını açıklar.
+
+[ARM64 iç](../intrinsics/arm-intrinsics.md)\
+ARM64 mimarisini kullanan işlemciler için derleyici iç yapısını açıklar.

@@ -2,28 +2,29 @@
 title: ARM Assembler Başvurusu
 ms.date: 08/28/2017
 ms.assetid: f8a076cc-9627-4328-a34a-9c44f7a3aab1
-ms.openlocfilehash: 698bbae8e3ed48ff89c851baba380d7d9de7432a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: dadb3730ae0efc4f81ee8141c0dbac956f2693ef
+ms.sourcegitcommit: e805200eaef4fe7a65a00051bbd305273af94fe7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62167549"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74163236"
 ---
 # <a name="arm-assembler-reference"></a>ARM Assembler Başvurusu
 
-Belgelerin bu bölümdeki makaleleri Microsoft ARM derleyicisi (armasm) ve ilgili araçlara yönelik başvuru malzemesi sağlar.
+Belgelerinin bu bölümündeki makaleler, Microsoft ARM Assembler (armasd) ve ilgili araçların başvuru malzemesini sunmaktadır.
 
 ## <a name="related-articles"></a>İlgili Makaleler
 
 |Başlık|Açıklama|
 |-----------|-----------------|
-|[ARM Assembler Komut Satırı Başvurusu](../../assembler/arm/arm-assembler-command-line-reference.md)|Armasm komut satırı seçeneklerini açıklar.|
-|[ARM Assembler Tanılama İletileri](../../assembler/arm/arm-assembler-diagnostic-messages.md)|Yaygın olarak karşılaşılan armasm uyarı ve hata iletilerini açıklamaktadır.|
-|[ARM Assembler Yönergeleri](../../assembler/arm/arm-assembler-directives.md)|İçinde armasm farklı ARM yönergeleri açıklar.|
-|[ARM mimarisi Reference Manual](https://developer.arm.com/search#q=ARM%20Architecture%20Reference%20Manual) ARM Geliştirici Web sitesinde.|İlgili el kitabı, ARM mimarisi için seçin. Her, ARM, Flash, NEON'da ve VFP hakkında başvuru bölümlere ve ARM derleme dili hakkında ek bilgiler içerir.|
-|[ARM derleyici armasm Kullanıcı Kılavuzu](https://developer.arm.com/search#q=ARM%20Compiler%20armasm%20User%20Guide) ARM Geliştirici Web sitesinde.|ARM assembler dili hakkında güncel bilgi için yeni bir sürümü seçin. **Not:**  ARM Geliştirici Web sitesinde adlandırılır "armasm" assembler Visual Studio'ya eklenmiştir ve bu bölümde belgelenen Microsoft armasm assembler değil.|
+|[ARM Assembler Komut Satırı Başvurusu](../../assembler/arm/arm-assembler-command-line-reference.md)|Armasa komut satırı seçeneklerini açıklar.|
+|[ARM Assembler Tanılama İletileri](../../assembler/arm/arm-assembler-diagnostic-messages.md)|Yaygın olarak karşılaşılan armasd uyarısı ve hata iletileri açıklanmaktadır.|
+|[ARM Assembler Yönergeleri](../../assembler/arm/arm-assembler-directives.md)|Armasd 'de farklılık gösteren ARM yönergelerini açıklar.|
+|ARM Geliştirici Web sitesinde [ARM mimari başvurusu el kitabı](https://developer.arm.com/search#q=ARM%20Architecture%20Reference%20Manual) .|ARM mimariniz için ilgili el kitabını seçin. Her biri ARM, Thumb, NEON ve VFP hakkında başvuru bölümleri ve ARM derleme diliyle ilgili ek bilgiler içerir.|
+|ARM Geliştirici Web sitesinde [ARM derleyicisi armasa Kullanıcı Kılavuzu](https://developer.arm.com/search#q=ARM%20Compiler%20armasm%20User%20Guide) .|ARM derleme dili hakkında güncel bilgileri bulmak için son sürümü seçin. **Note:**  ARM Geliştirici Web sitesinde başvurulan "armase" derleyicisi, Visual Studio 'ya dahil olan ve bu bölümde belgelenen Microsoft armase derleyicisi değildir.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[ARM İç Bilgileri](../../intrinsics/arm-intrinsics.md)<br/>
-[Derleyici İç Bilgileri](../../intrinsics/compiler-intrinsics.md)<br/>
+[ARM iç](../../intrinsics/arm-intrinsics.md) bilgileri\
+[ARM64 iç](../../intrinsics/arm64-intrinsics.md)\
+[Derleyici iç bilgileri](../../intrinsics/compiler-intrinsics.md)
