@@ -1,31 +1,31 @@
 ---
-title: Derleyici Uyarısı (Düzey 3) C4641
+title: Compiler Warning (level 3) C4641
 ms.date: 11/04/2016
 f1_keywords:
 - C4641
 helpviewer_keywords:
 - C4641
 ms.assetid: 28fe5c3e-6039-42da-9100-1312b5b15aea
-ms.openlocfilehash: 9357088106a45026eae543f8627ea59988e73995
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0a930490f7b53fbbb31abb0f621cf972295d2ea6
+ms.sourcegitcommit: 217fac22604639ebd62d366a69e6071ad5b724ac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62401676"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74189421"
 ---
-# <a name="compiler-warning-level-3-c4641"></a>Derleyici Uyarısı (Düzey 3) C4641
+# <a name="compiler-warning-level-3-c4641"></a>Compiler Warning (level 3) C4641
 
-XML belgesi açıklamasında belirsiz bir çapraz başvuru var
+XML document comment has an ambiguous cross reference
 
-Derleyici, bir başvuru dönüştürmelerle çözemedi. Bu uyarıyı çözmek için başvuru anlaşılır hale getirmek için gerekli parametre bilgilerini belirtin.
+The compiler was unable to unambiguously resolve a reference. To resolve this warning, specify the parameter information necessary to make the reference unambiguous.
 
-Daha fazla bilgi için [XML belgeleri](../../build/reference/xml-documentation-visual-cpp.md).
+For more information, see [XML Documentation](../../build/reference/xml-documentation-visual-cpp.md).
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C4641 oluşturur.
+The following sample generates C4641.
 
-```
+```cpp
 // C4641.cpp
 // compile with: /W3 /doc /clr /c
 

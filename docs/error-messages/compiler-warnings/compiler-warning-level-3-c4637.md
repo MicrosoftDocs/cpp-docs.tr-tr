@@ -1,27 +1,27 @@
 ---
-title: Derleyici Uyarısı (Düzey 3) C4637
+title: Compiler Warning (level 3) C4637
 ms.date: 11/04/2016
 f1_keywords:
 - C4637
 helpviewer_keywords:
 - C4637
 ms.assetid: 5fd347c1-2de9-408f-9136-1bf1ff273622
-ms.openlocfilehash: 80c55494a391922453f2d89ae26ee5f47dc433b1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e712429ad52ccb990f81e1a4d3bd65a525558692
+ms.sourcegitcommit: 217fac22604639ebd62d366a69e6071ad5b724ac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62401704"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74189116"
 ---
-# <a name="compiler-warning-level-3-c4637"></a>Derleyici Uyarısı (Düzey 3) C4637
+# <a name="compiler-warning-level-3-c4637"></a>Compiler Warning (level 3) C4637
 
-XML belgesi yorum hedef: \<dahil > Etiket atıldı.  Nedeni
+XML document comment target: \<include> tag discarded.  reason
 
-Söz dizimi bir [ \<dahil >](../../build/reference/include-visual-cpp.md) etiketi doğru değildi.
+The syntax of an [\<include>](../../build/reference/include-visual-cpp.md) tag was not correct.
 
-Aşağıdaki örnek, C4637 oluşturur:
+The following sample generates C4637:
 
-```
+```cpp
 // C4637.cpp
 // compile with: /clr /doc /LD /W3
 using namespace System;

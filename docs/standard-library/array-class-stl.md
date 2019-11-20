@@ -1,6 +1,6 @@
 ---
-title: Array sınıfı (C++ standart kitaplık) | Microsoft Docs
-ms.date: 11/04/2016
+title: array Class (C++ Standard Library)| Microsoft Docs
+ms.date: 11/13/2019
 f1_keywords:
 - array/std::array
 - array/std::array::const_iterator
@@ -96,16 +96,16 @@ helpviewer_keywords:
 - std::array [C++], size
 - std::array [C++], swap
 ms.assetid: fdfd43a5-b2b5-4b9e-991f-93bf10fb4293
-ms.openlocfilehash: aba7026fa60045720c893478c1ea637dbaa037c1
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: e93f5089e62956e7473c95eb6835046b5fe992bf
+ms.sourcegitcommit: 217fac22604639ebd62d366a69e6071ad5b724ac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68456912"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74189418"
 ---
-# <a name="array-class-c-standard-library"></a>Array sınıfı (C++ standart kitaplık)
+# <a name="array-class-c-standard-library"></a>array Class (C++ Standard Library)
 
-`N` Türündeki`Ty`öğelerin uzunluğunu denetleyen nesneyi tanımlar. Dizi, `Ty` `array<Ty, N>` nesnesinde bulunan bir dizisi olarak depolanır.
+Describes an object that controls a sequence of length `N` of elements of type `Ty`. The sequence is stored as an array of `Ty`, contained in the `array<Ty, N>` object.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -119,7 +119,7 @@ class array;
 |Parametre|Açıklama|
 |-|-|
 |`Ty`|Öğenin türü.|
-|`N`|Öğe sayısı.|
+|`N`|The number of elements.|
 
 ## <a name="members"></a>Üyeler
 
@@ -128,61 +128,61 @@ class array;
 |[const_iterator](#const_iterator)|Denetlenen dizi için bir sabit yineleyici türü.|
 |[const_pointer](#const_pointer)|Bir öğe için sabit bir işaretçi türü.|
 |[const_reference](#const_reference)|Bir öğe için sabit bir başvuru türü.|
-|[const_reverse_iterator](#const_reverse_iterator)|Denetlenen sıra için bir sabit ters yineleyicinin türü.|
+|[const_reverse_iterator](#const_reverse_iterator)|The type of a constant reverse iterator for the controlled sequence.|
 |[difference_type](#difference_type)|İki öğe arasındaki işaretli mesafenin türü.|
-|[iden](#iterator)|Denetlenen dizi için bir yineleyici türü.|
-|[çağrısı](#pointer)|Bir öğe için bir işaretçi türü.|
-|[Başvuru](#reference)|Bir öğe için bir başvuru türü.|
-|[reverse_iterator](#reverse_iterator)|Denetlenen sıra için ters yineleyicinin türü.|
+|[iterator](#iterator)|Denetlenen dizi için bir yineleyici türü.|
+|[pointer](#pointer)|Bir öğe için bir işaretçi türü.|
+|[reference](#reference)|Bir öğe için bir başvuru türü.|
+|[reverse_iterator](#reverse_iterator)|The type of a reverse iterator for the controlled sequence.|
 |[size_type](#size_type)|İki öğe arasındaki işaretsiz bir mesafenin türü.|
 |[value_type](#value_type)|Öğenin türü.|
 
 |Üye İşlevi|Açıklama|
 |-|-|
-|[array](#array)|Bir dizi nesnesi oluşturur.|
-|[ata](#assign)|Tüm öğeleri değiştirir.|
-|[hızı](#at)|Belirtilen konumdaki bir öğeye erişir.|
-|[Geri](#back)|Son öğeye erişir.|
-|[başladı](#begin)|Denetlenen dizinin başlangıcını belirtir.|
-|[cbegin](#cbegin)|Dizideki ilk öğeye Rastgele erişimli bir const yineleyicisi döndürür.|
-|[cend](#cend)|Dizinin sonunun hemen ötesinde işaret eden Rastgele erişimli bir const yineleyici döndürür.|
-|[crbegin](#crbegin)|Ters çevrilen dizideki ilk öğeye bir const yineleyici döndürür.|
-|[crend](#crend)|Ters çevrilen dizinin sonuna bir const yineleyici döndürür.|
-|[verileri](#data)|İlk öğenin adresini alır.|
-|[empty](#empty)|Öğelerin mevcut olup olmadığını sınar.|
-|[erer](#end)|Denetlenen dizinin bitişini belirtir.|
-|[doldurması](#fill)|Tüm öğeleri belirtilen değerle değiştirir.|
-|[yapılan](#front)|İlk öğeye erişir.|
+|[array](#array)|Constructs an array object.|
+|[assign](#assign)|(Obsolete. Use `fill`.) Replaces all elements.|
+|[at](#at)|Accesses an element at a specified position.|
+|[back](#back)|Accesses the last element.|
+|[begin](#begin)|Denetlenen dizinin başlangıcını belirtir.|
+|[cbegin](#cbegin)|Returns a random-access const iterator to the first element in the array.|
+|[cend](#cend)|Returns a random-access const iterator that points just beyond the end of the array.|
+|[crbegin](#crbegin)|Returns a const iterator to the first element in a reversed array.|
+|[crend](#crend)|Returns a const iterator to the end of a reversed array.|
+|[data](#data)|Gets the address of the first element.|
+|[empty](#empty)|Tests whether elements are present.|
+|[end](#end)|Denetlenen dizinin bitişini belirtir.|
+|[fill](#fill)|Replaces all elements with a specified value.|
+|[front](#front)|Accesses the first element.|
 |[max_size](#max_size)|Öğe sayısını sayar.|
-|[rbegin](#rbegin)|Ters denetlenen sıranın başlangıcını belirtir.|
-|[rend](#rend)|Ters denetlenen sıranın sonunu belirtir.|
-|[boyutla](#size)|Öğe sayısını sayar.|
-|[Kur](#swap)|İki kapsayıcının içeriğinin yerini değiştirir.|
+|[rbegin](#rbegin)|Designates the beginning of the reversed controlled sequence.|
+|[rend](#rend)|Designates the end of the reversed controlled sequence.|
+|[size](#size)|Öğe sayısını sayar.|
+|[swap](#swap)|İki kapsayıcının içeriğinin yerini değiştirir.|
 
 |İşleç|Açıklama|
 |-|-|
-|[array::operator=](#op_eq)|Denetlenen sırayı değiştirir.|
-|[Array:: operator\[\]](#op_at)|Belirtilen konumdaki bir öğeye erişir.|
+|[array::operator=](#op_eq)|Replaces the controlled sequence.|
+|[array::operator\[\]](#op_at)|Accesses an element at a specified position.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Türün varsayılan oluşturucusu `array()` ve varsayılan atama işleci `operator=`vardır ve bir `aggregate`için gereksinimleri karşılar. Bu nedenle, türündeki `array<Ty, N>` nesneler bir toplama başlatıcısı kullanılarak başlatılabilir. Örneğin,
+The type has a default constructor `array()` and a default assignment operator `operator=`, and satisfies the requirements for an `aggregate`. Therefore, objects of type `array<Ty, N>` can be initialized by using an aggregate initializer. Örneğin,
 
 ```cpp
 array<int, 4> ai = { 1, 2, 3 };
 ```
 
-dört tamsayı değerini `ai` tutan nesneyi oluşturur, sırasıyla ilk üç öğeyi 1, 2 ve 3 değerlerine başlatır ve dördüncü öğeyi 0 olarak başlatır.
+creates the object `ai` that holds four integer values, initializes the first three elements to the values 1, 2, and 3, respectively, and initializes the fourth element to 0.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<dizi >
+**Header:** \<array>
 
-**Ad alanı:** std
+**Namespace:** std
 
-## <a name="array"></a>Array:: Array
+## <a name="array"></a>  array::array
 
-Bir dizi nesnesi oluşturur.
+Constructs an array object.
 
 ```cpp
 array();
@@ -192,108 +192,60 @@ array(const array& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*Right*\
-Eklenecek nesne veya Aralık.
+*right*\
+Object or range to insert.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan Oluşturucu `array()` denetimli sırayı başlatılmamış olarak bırakır (veya varsayılan olarak başlatılır). Başlatılmamış bir denetim sırası belirtmek için bunu kullanırsınız.
+The default constructor `array()` leaves the controlled sequence uninitialized (or default initialized). You use it to specify an uninitialized controlled sequence.
 
-Kopya Oluşturucu `array(const array& right)` , denetimli sırayı sırasıyla [*Right*`.begin()`, *Right*`.end()`) başlatır. Dizi nesnesi *sağa*tarafından denetlenen sıranın bir kopyası olan ilk denetimli bir sıra belirtmek için bunu kullanırsınız.
+The copy constructor `array(const array& right)` initializes the controlled sequence with the sequence [*right*`.begin()`, *right*`.end()`). You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the array object *right*.
 
 ### <a name="example"></a>Örnek
 
 ```cpp
-// std__array__array_array.cpp
-// compile with: /EHsc
 #include <array>
 #include <iostream>
 
 typedef std::array<int, 4> Myarray;
 int main()
-    {
-    Myarray c0 = {0, 1, 2, 3};
+{
+    typedef std::array<int, 4> Myarray;
 
-// display contents " 0 1 2 3"
-    for (Myarray::const_iterator it = c0.begin();
-        it != c0.end(); ++it)
-        std::cout << " " << *it;
+    Myarray c0 = { 0, 1, 2, 3 };
+
+    // display contents " 0 1 2 3"
+    for (const auto& it : c0)
+    {
+        std::cout << " " << it;
+    }
     std::cout << std::endl;
 
     Myarray c1(c0);
 
-// display contents " 0 1 2 3"
-    for (Myarray::const_iterator it = c1.begin();
-        it != c1.end(); ++it)
-        std::cout << " " << *it;
-    std::cout << std::endl;
-
-    return (0);
-    }
-```
-
-```Output
-0 1 2 3
-0 1 2 3
-```
-
-## <a name="assign"></a>Array:: Assign
-
-C++ 11 ' de kullanılmıyor, [Fill](#fill)ile değiştirilmiştir. Tüm öğeleri değiştirir.
-
-```cpp
-void assign(const Ty& val);
-```
-
-### <a name="parameters"></a>Parametreler
-
-*Acil*\
-Atanacak değer.
-
-### <a name="remarks"></a>Açıklamalar
-
-Üye işlevi, tarafından `*this` denetlenen sırayı değer değer değeri  `N` öğelerinin tekrarından sonra değiştirir.
-
-### <a name="example"></a>Örnek
-
-```cpp
-// std__array__array_assign.cpp
-// compile with: /EHsc
-#include <array>
-#include <iostream>
-
-typedef std::array<int, 4> Myarray;
-int main()
+    // display contents " 0 1 2 3"
+    for (const auto& it : c1)
     {
-    Myarray c0 = {0, 1, 2, 3};
-
-// display contents " 0 1 2 3"
-    for (Myarray::const_iterator it = c0.begin();
-        it != c0.end(); ++it)
-        std::cout << " " << *it;
-    std::cout << std::endl;
-
-    Myarray c1;
-    c1.assign(4);
-
-// display contents " 4 4 4 4"
-    for (Myarray::const_iterator it = c1.begin();
-        it != c1.end(); ++it)
-        std::cout << " " << *it;
+        std::cout << " " << it;
+    }
     std::cout << std::endl;
 
     return (0);
-    }
+}
 ```
 
 ```Output
 0 1 2 3
-4 4 4 4
+0 1 2 3
 ```
 
-## <a name="at"></a>Array:: at
+## <a name="assign"></a>  array::assign
 
-Belirtilen konumdaki bir öğeye erişir.
+Obsolete in C++11, replaced by [fill](#fill). Replaces all elements.
+
+## <a name="at"></a>  array::at
+
+Accesses an element at a specified position.
 
 ```cpp
 reference at(size_type off);
@@ -303,44 +255,43 @@ constexpr const_reference at(size_type off) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*dışına*\
-Erişim için öğenin konumu.
+*off*\
+Position of element to access.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevleri, konumundaki denetimli sıranın öğesine bir başvuru *döndürür.* Bu konum geçersizse, işlev sınıfının `out_of_range`bir nesnesini oluşturur.
+The member functions return a reference to the element of the controlled sequence at position *off*. If that position is invalid, the function throws an object of class `out_of_range`.
 
 ### <a name="example"></a>Örnek
 
 ```cpp
-// std__array__array_at.cpp
-// compile with: /EHsc
 #include <array>
 #include <iostream>
 
 typedef std::array<int, 4> Myarray;
 int main()
-    {
-    Myarray c0 = {0, 1, 2, 3};
+{
+    Myarray c0 = { 0, 1, 2, 3 };
 
-// display contents " 0 1 2 3"
-    for (Myarray::const_iterator it = c0.begin();
-        it != c0.end(); ++it)
-        std::cout << " " << *it;
+    // display contents " 0 1 2 3"
+    for (const auto& it : c0)
+    {
+        std::cout << " " << it;
+    }
     std::cout << std::endl;
 
-// display odd elements " 1 3"
+    // display odd elements " 1 3"
     std::cout << " " << c0.at(1);
     std::cout << " " << c0.at(3);
     std::cout << std::endl;
 
     return (0);
-    }
+}
 ```
 
-## <a name="back"></a>Array:: Back
+## <a name="back"></a>  array::back
 
-Son öğeye erişir.
+Accesses the last element.
 
 ```cpp
 reference back();
@@ -350,33 +301,32 @@ constexpr const_reference back() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevleri denetlenen sıranın son öğesine bir başvuru döndürür, bu da boş olmamalıdır.
+The member functions return a reference to the last element of the controlled sequence, which must be non-empty.
 
 ### <a name="example"></a>Örnek
 
 ```cpp
-// std__array__array_back.cpp
-// compile with: /EHsc
 #include <array>
 #include <iostream>
 
 typedef std::array<int, 4> Myarray;
 int main()
-    {
-    Myarray c0 = {0, 1, 2, 3};
+{
+    Myarray c0 = { 0, 1, 2, 3 };
 
-// display contents " 0 1 2 3"
-    for (Myarray::const_iterator it = c0.begin();
-        it != c0.end(); ++it)
-        std::cout << " " << *it;
+    // display contents " 0 1 2 3"
+    for (const auto& it : c0)
+    {
+        std::cout << " " << it;
+    }
     std::cout << std::endl;
 
-// display last element " 3"
+    // display last element " 3"
     std::cout << " " << c0.back();
     std::cout << std::endl;
 
     return (0);
-    }
+}
 ```
 
 ```Output
@@ -384,7 +334,7 @@ int main()
 3
 ```
 
-## <a name="begin"></a>Array:: Begin
+## <a name="begin"></a>  array::begin
 
 Denetlenen dizinin başlangıcını belirtir.
 
@@ -395,34 +345,33 @@ const_iterator begin() const noexcept;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevleri, dizinin ilk öğesini işaret eden (veya boş bir dizinin sonunun ötesinde) bir rastgele erişim yineleyici döndürür.
+The member functions return a random-access iterator that points at the first element of the sequence (or just beyond the end of an empty sequence).
 
 ### <a name="example"></a>Örnek
 
 ```cpp
-// std__array__array_begin.cpp
-// compile with: /EHsc
 #include <array>
 #include <iostream>
 
 typedef std::array<int, 4> Myarray;
 int main()
-    {
-    Myarray c0 = {0, 1, 2, 3};
+{
+    Myarray c0 = { 0, 1, 2, 3 };
 
-// display contents " 0 1 2 3"
-    for (Myarray::const_iterator it = c0.begin();
-        it != c0.end(); ++it)
-        std::cout << " " << *it;
+    // display contents " 0 1 2 3"
+    for (const auto& it : c0)
+    {
+        std::cout << " " << it;
+    }
     std::cout << std::endl;
 
-// display first element " 0"
+    // display first element " 0"
     Myarray::iterator it2 = c0.begin();
     std::cout << " " << *it2;
     std::cout << std::endl;
 
     return (0);
-    }
+}
 ```
 
 ```Output
@@ -430,9 +379,9 @@ int main()
 0
 ```
 
-## <a name="cbegin"></a>Array:: cbegin
+## <a name="cbegin"></a>  array::cbegin
 
-Aralıktaki ilk öğeyi ele alan bir **sabit** yineleyici döndürür.
+Returns a **const** iterator that addresses the first element in the range.
 
 ```cpp
 const_iterator cbegin() const noexcept;
@@ -440,13 +389,13 @@ const_iterator cbegin() const noexcept;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Aralığın  ilk öğesine veya boş bir aralığın sonundaki konuma (boş bir Aralık `cbegin() == cend()`için) işaret eden const bir rastgele erişim Yineleyici.
+A **const** random-access iterator that points at the first element of the range, or the location just beyond the end of an empty range (for an empty range, `cbegin() == cend()`).
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dönüş değeri `cbegin`ile, aralıktaki öğeler değiştirilemez.
+With the return value of `cbegin`, the elements in the range cannot be modified.
 
-Dönüş değerinin olduğunu `begin()` `const_iterator`garantilemek için üye işlevin yerine bu üye işlevi kullanabilirsiniz. Genellikle, aşağıdaki örnekte gösterildiği gibi [Otomatik](../cpp/auto-cpp.md) tür kesintisi anahtar sözcüğüyle birlikte kullanılır. Örnekte, ve `Container` `begin()` ' ı destekleyen herhangi bir türde değiştirilebilir (const olmayan) bir kapsayıcı olarak göz önünde bulundurun.  `cbegin()`
+You can use this member function in place of the `begin()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **const**) container of any kind that supports `begin()` and `cbegin()`.
 
 ```cpp
 auto i1 = Container.begin();
@@ -456,9 +405,9 @@ auto i2 = Container.cbegin();
 // i2 is Container<T>::const_iterator
 ```
 
-## <a name="cend"></a>Array:: cend
+## <a name="cend"></a>  array::cend
 
-Bir aralıktaki son öğeden hemen sonra gelen konumu ele alan bir **const** yineleyici döndürür.
+Returns a **const** iterator that addresses the location just beyond the last element in a range.
 
 ```cpp
 const_iterator cend() const noexcept;
@@ -470,9 +419,9 @@ Aralığın hemen sonunu gösteren bir rastgele erişim yineleyicisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`cend`, bir yineleyicinin aralığın sonunu geçtiğini test etmek için kullanılır.
+`cend` is used to test whether an iterator has passed the end of its range.
 
-Dönüş değerinin olduğunu `end()` `const_iterator`garantilemek için üye işlevin yerine bu üye işlevi kullanabilirsiniz. Genellikle, aşağıdaki örnekte gösterildiği gibi [Otomatik](../cpp/auto-cpp.md) tür kesintisi anahtar sözcüğüyle birlikte kullanılır. Örnekte, ve `Container` `end()` ' ı destekleyen herhangi bir türde değiştirilebilir (const olmayan) bir kapsayıcı olarak göz önünde bulundurun.  `cend()`
+You can use this member function in place of the `end()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **const**) container of any kind that supports `end()` and `cend()`.
 
 ```cpp
 auto i1 = Container.end();
@@ -482,9 +431,9 @@ auto i2 = Container.cend();
 // i2 is Container<T>::const_iterator
 ```
 
-Tarafından `cend` döndürülen değer başvurulmamalıdır.
+The value returned by `cend` should not be dereferenced.
 
-## <a name="const_iterator"></a>Array:: const_iterator
+## <a name="const_iterator"></a>  array::const_iterator
 
 Denetlenen dizi için bir sabit yineleyici türü.
 
@@ -494,13 +443,11 @@ typedef implementation-defined const_iterator;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü, denetimli sıra için sabit bir rastgele erişim Yineleyici işlevi görebilecek bir nesneyi tanımlar.
+The type describes an object that can serve as a constant random-access iterator for the controlled sequence.
 
 ### <a name="example"></a>Örnek
 
 ```cpp
-// std__array__array_const_iterator.cpp
-// compile with: /EHsc /W4
 #include <array>
 #include <iostream>
 
@@ -508,14 +455,14 @@ typedef std::array<int, 4> MyArray;
 
 int main()
 {
-    MyArray c0 = {0, 1, 2, 3};
+    MyArray c0 = { 0, 1, 2, 3 };
 
     // display contents " 0 1 2 3"
     std::cout << "it1:";
-    for ( MyArray::const_iterator it1 = c0.begin();
-          it1 != c0.end();
-          ++it1 ) {
-       std::cout << " " << *it1;
+    for (MyArray::const_iterator it1 = c0.begin();
+        it1 != c0.end();
+        ++it1) {
+        std::cout << " " << *it1;
     }
     std::cout << std::endl;
 
@@ -534,7 +481,7 @@ it1: 0 1 2 3
 it2: 0
 ```
 
-## <a name="const_pointer"></a>Array:: const_pointer
+## <a name="const_pointer"></a>  array::const_pointer
 
 Bir öğe için sabit bir işaretçi türü.
 
@@ -544,34 +491,33 @@ typedef const Ty *const_pointer;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü, sıranın öğelerine sabit bir işaretçi olarak kullanılabilecek bir nesneyi tanımlar.
+The type describes an object that can serve as a constant pointer to elements of the sequence.
 
 ### <a name="example"></a>Örnek
 
 ```cpp
-// std__array__array_const_pointer.cpp
-// compile with: /EHsc
 #include <array>
 #include <iostream>
 
 typedef std::array<int, 4> Myarray;
 int main()
-    {
-    Myarray c0 = {0, 1, 2, 3};
+{
+    Myarray c0 = { 0, 1, 2, 3 };
 
-// display contents " 0 1 2 3"
-    for (Myarray::const_iterator it = c0.begin();
-        it != c0.end(); ++it)
-        std::cout << " " << *it;
+    // display contents " 0 1 2 3"
+    for (const auto& it : c0)
+    {
+        std::cout << " " << it;
+    }
     std::cout << std::endl;
 
-// display first element " 0"
+    // display first element " 0"
     Myarray::const_pointer ptr = &*c0.begin();
     std::cout << " " << *ptr;
     std::cout << std::endl;
 
     return (0);
-    }
+}
 ```
 
 ```Output
@@ -579,7 +525,7 @@ int main()
 0
 ```
 
-## <a name="const_reference"></a>Array:: const_reference
+## <a name="const_reference"></a>  array::const_reference
 
 Bir öğe için sabit bir başvuru türü.
 
@@ -589,34 +535,33 @@ typedef const Ty& const_reference;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü, denetlenen dizinin bir öğesine sabit başvuru olarak işlev yapabilecek bir nesneyi tanımlar.
+The type describes an object that can serve as a constant reference to an element of the controlled sequence.
 
 ### <a name="example"></a>Örnek
 
 ```cpp
-// std__array__array_const_reference.cpp
-// compile with: /EHsc
 #include <array>
 #include <iostream>
 
 typedef std::array<int, 4> Myarray;
 int main()
-    {
-    Myarray c0 = {0, 1, 2, 3};
+{
+    Myarray c0 = { 0, 1, 2, 3 };
 
-// display contents " 0 1 2 3"
-    for (Myarray::const_iterator it = c0.begin();
-        it != c0.end(); ++it)
-        std::cout << " " << *it;
+    // display contents " 0 1 2 3"
+    for (const auto& it : c0)
+    {
+        std::cout << " " << it;
+    }
     std::cout << std::endl;
 
-// display first element " 0"
+    // display first element " 0"
     Myarray::const_reference ref = *c0.begin();
     std::cout << " " << ref;
     std::cout << std::endl;
 
     return (0);
-    }
+}
 ```
 
 ```Output
@@ -624,9 +569,9 @@ int main()
 0
 ```
 
-## <a name="const_reverse_iterator"></a>Array:: const_reverse_iterator
+## <a name="const_reverse_iterator"></a>  array::const_reverse_iterator
 
-Denetlenen sıra için bir sabit ters yineleyicinin türü.
+The type of a constant reverse iterator for the controlled sequence.
 
 ```cpp
 typedef std::reverse_iterator<const_iterator> const_reverse_iterator;
@@ -634,34 +579,33 @@ typedef std::reverse_iterator<const_iterator> const_reverse_iterator;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü, denetimli sıra için sabit bir ters Yineleyici işlevi görebilecek bir nesneyi tanımlar.
+The type describes an object that can serve as a constant reverse iterator for the controlled sequence.
 
 ### <a name="example"></a>Örnek
 
 ```cpp
-// std__array__array_const_reverse_iterator.cpp
-// compile with: /EHsc
 #include <array>
 #include <iostream>
 
 typedef std::array<int, 4> Myarray;
 int main()
-    {
-    Myarray c0 = {0, 1, 2, 3};
+{
+    Myarray c0 = { 0, 1, 2, 3 };
 
-// display contents " 0 1 2 3"
-    for (Myarray::const_iterator it = c0.begin();
-        it != c0.end(); ++it)
-        std::cout << " " << *it;
+    // display contents " 0 1 2 3"
+    for (const auto& it : c0)
+    {
+        std::cout << " " << it;
+    }
     std::cout << std::endl;
 
-// display last element " 3"
+    // display last element " 3"
     Myarray::const_reverse_iterator it2 = c0.rbegin();
     std::cout << " " << *it2;
     std::cout << std::endl;
 
     return (0);
-    }
+}
 ```
 
 ```Output
@@ -669,9 +613,9 @@ int main()
 3
 ```
 
-## <a name="crbegin"></a>Array:: crbegin
+## <a name="crbegin"></a>  array::crbegin
 
-Ters çevrilen dizideki ilk öğeye bir const yineleyici döndürür.
+Returns a const iterator to the first element in a reversed array.
 
 ```cpp
 const_reverse_iterator crbegin() const;
@@ -679,17 +623,15 @@ const_reverse_iterator crbegin() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ters çevrilen dizideki ilk öğeyi ele alarak veya geri çevrilmeyen dizide son öğenin ne olduğunu adresleyen bir const ters rasgele erişim Yineleyici.
+A const reverse random-access iterator addressing the first element in a reversed array or addressing what had been the last element in the unreversed array.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dönüş değeri `crbegin`ile, dizi nesnesi değiştirilemez.
+With the return value of `crbegin`, the array object cannot be modified.
 
 ### <a name="example"></a>Örnek
 
 ```cpp
-// array_crbegin.cpp
-// compile with: /EHsc
 #include <array>
 #include <iostream>
 
@@ -715,9 +657,9 @@ The first element of array is 1.
 The first element of the reversed array is 2.
 ```
 
-## <a name="crend"></a>dizi:: crend
+## <a name="crend"></a>  array::crend
 
-Ters çevrilen dizideki son öğeden sonraki konumu ele alan bir const yineleyici döndürür.
+Returns a const iterator that addresses the location succeeding the last element in a reversed array.
 
 ```cpp
 const_reverse_iterator crend() const noexcept;
@@ -725,23 +667,21 @@ const_reverse_iterator crend() const noexcept;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ters çevrilen bir dizideki son öğeden sonra gelen konumu ele alan bir sabit ters rastgele erişim yineleyici (geri çevrilmeyen dizide ilk öğeden önce gelen konum).
+A const reverse random-access iterator that addresses the location succeeding the last element in a reversed array (the location that had preceded the first element in the unreversed array).
 
 ### <a name="remarks"></a>Açıklamalar
 
-`crend`[Array:: cend](#cend) , bir dizi ile birlikte kullanıldığında, ters çevrilmiş bir dizi ile birlikte kullanılır.
+`crend` is used with a reversed array just as [array::cend](#cend) is used with a array.
 
-Dönüş değeri `crend` (uygun şekilde azaltılır) ile dizi nesnesi değiştirilemez.
+With the return value of `crend` (suitably decremented), the array object cannot be modified.
 
-`crend`, bir ters yineleyicinin dizisinin sonuna ulaşıp ulaşılmadığını test etmek için kullanılabilir.
+`crend` can be used to test to whether a reverse iterator has reached the end of its array.
 
-Tarafından `crend` döndürülen değer başvurulmamalıdır.
+The value returned by `crend` should not be dereferenced.
 
 ### <a name="example"></a>Örnek
 
 ```cpp
-// array_crend.cpp
-// compile with: /EHsc
 #include <array>
 #include <iostream>
 
@@ -761,9 +701,9 @@ int main( )
 1
 ```
 
-## <a name="data"></a>dizi: ata:d
+## <a name="data"></a>  array::data
 
-İlk öğenin adresini alır.
+Gets the address of the first element.
 
 ```cpp
 Ty *data();
@@ -773,34 +713,33 @@ const Ty *data() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevleri denetlenen dizideki ilk öğenin adresini döndürür.
+The member functions return the address of the first element in the controlled sequence.
 
 ### <a name="example"></a>Örnek
 
 ```cpp
-// std__array__array_data.cpp
-// compile with: /EHsc
 #include <array>
 #include <iostream>
 
 typedef std::array<int, 4> Myarray;
 int main()
-    {
-    Myarray c0 = {0, 1, 2, 3};
+{
+    Myarray c0 = { 0, 1, 2, 3 };
 
-// display contents " 0 1 2 3"
-    for (Myarray::const_iterator it = c0.begin();
-        it != c0.end(); ++it)
-        std::cout << " " << *it;
+    // display contents " 0 1 2 3"
+    for (const auto& it : c0)
+    {
+        std::cout << " " << it;
+    }
     std::cout << std::endl;
 
-// display first element " 0"
+    // display first element " 0"
     Myarray::pointer ptr = c0.data();
     std::cout << " " << *ptr;
     std::cout << std::endl;
 
     return (0);
-    }
+}
 ```
 
 ```Output
@@ -808,7 +747,7 @@ int main()
 0
 ```
 
-## <a name="difference_type"></a>dizi::d ifference_type
+## <a name="difference_type"></a>  array::difference_type
 
 İki öğe arasındaki işaretli mesafenin türü.
 
@@ -818,34 +757,33 @@ typedef std::ptrdiff_t difference_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-İmzalanan tamsayı türü, denetlenen dizideki herhangi iki öğenin adresleri arasındaki farkı temsil eden bir nesneyi tanımlar. Türün `std::ptrdiff_t`eşanlamlısıdır.
+The signed integer type describes an object that can represent the difference between the addresses of any two elements in the controlled sequence. It is a synonym for the type `std::ptrdiff_t`.
 
 ### <a name="example"></a>Örnek
 
 ```cpp
-// std__array__array_difference_type.cpp
-// compile with: /EHsc
 #include <array>
 #include <iostream>
 
 typedef std::array<int, 4> Myarray;
 int main()
-    {
-    Myarray c0 = {0, 1, 2, 3};
+{
+    Myarray c0 = { 0, 1, 2, 3 };
 
-// display contents " 0 1 2 3"
-    for (Myarray::const_iterator it = c0.begin();
-        it != c0.end(); ++it)
-        std::cout << " " << *it;
+    // display contents " 0 1 2 3"
+    for (const auto& it : c0)
+    {
+        std::cout << " " << it;
+    }
     std::cout << std::endl;
 
-// display distance first-last " -4"
+    // display distance first-last " -4"
     Myarray::difference_type diff = c0.begin() - c0.end();
     std::cout << " " << diff;
     std::cout << std::endl;
 
     return (0);
-    }
+}
 ```
 
 ```Output
@@ -853,7 +791,7 @@ int main()
 -4
 ```
 
-## <a name="empty"></a>Array:: Empty
+## <a name="empty"></a>  array::empty
 
 Bir öğe olup olmadığını sınar.
 
@@ -863,39 +801,38 @@ constexpr bool empty() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi yalnızca ise `N == 0`true değerini döndürür.
+The member function returns true only if `N == 0`.
 
 ### <a name="example"></a>Örnek
 
 ```cpp
-// std__array__array_empty.cpp
-// compile with: /EHsc
 #include <array>
 #include <iostream>
 
 typedef std::array<int, 4> Myarray;
 int main()
-    {
-    Myarray c0 = {0, 1, 2, 3};
+{
+    Myarray c0 = { 0, 1, 2, 3 };
 
-// display contents " 0 1 2 3"
-    for (Myarray::const_iterator it = c0.begin();
-        it != c0.end(); ++it)
-        std::cout << " " << *it;
+    // display contents " 0 1 2 3"
+    for (const auto& it : c0)
+    {
+        std::cout << " " << it;
+    }
     std::cout << std::endl;
 
-// display whether c0 is empty " false"
+    // display whether c0 is empty " false"
     std::cout << std::boolalpha << " " << c0.empty();
     std::cout << std::endl;
 
     std::array<int, 0> c1;
 
-// display whether c1 is empty " true"
+    // display whether c1 is empty " true"
     std::cout << std::boolalpha << " " << c1.empty();
     std::cout << std::endl;
 
     return (0);
-    }
+}
 ```
 
 ```Output
@@ -904,7 +841,7 @@ false
 true
 ```
 
-## <a name="end"></a>Array:: End
+## <a name="end"></a>  array::end
 
 Denetlenen dizinin bitişini belirtir.
 
@@ -916,34 +853,33 @@ const_reference end() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevleri, dizinin sonunun hemen ötesinde işaret eden bir rastgele erişim yineleyici döndürür.
+The member functions return a random-access iterator that points just beyond the end of the sequence.
 
 ### <a name="example"></a>Örnek
 
 ```cpp
-// std__array__array_end.cpp
-// compile with: /EHsc
 #include <array>
 #include <iostream>
 
 typedef std::array<int, 4> Myarray;
 int main()
-    {
-    Myarray c0 = {0, 1, 2, 3};
+{
+    Myarray c0 = { 0, 1, 2, 3 };
 
-// display contents " 0 1 2 3"
-    for (Myarray::const_iterator it = c0.begin();
-        it != c0.end(); ++it)
-        std::cout << " " << *it;
+    // display contents " 0 1 2 3"
+    for (const auto& it : c0)
+    {
+        std::cout << " " << it;
+    }
     std::cout << std::endl;
 
-// display last element " 3"
+    // display last element " 3"
     Myarray::iterator it2 = c0.end();
     std::cout << " " << *--it2;
     std::cout << std::endl;
 
     return (0);
-    }
+}
 ```
 
 ```Output
@@ -951,9 +887,9 @@ int main()
 3
 ```
 
-## <a name="fill"></a>Array:: Fill
+## <a name="fill"></a>  array::fill
 
-Bir diziyi siler ve belirtilen öğeleri boş diziye kopyalar.
+Erases a array and copies the specified elements to the empty array.
 
 ```cpp
 void fill(const Type& val);
@@ -963,42 +899,43 @@ void fill(const Type& val);
 
 |Parametre|Açıklama|
 |-|-|
-|*Acil*|Diziye eklenmekte olan öğenin değeri.|
+|*val*|The value of the element being inserted into the array.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-`fill`dizinin her öğesini belirtilen değerle değiştirir.
+`fill` replaces each element of the array with the specified value.
 
 ### <a name="example"></a>Örnek
 
 ```cpp
-// array_fill.cpp
-// compile with: /EHsc
 #include <array>
 #include <iostream>
 
-int main( )
+int main()
 {
-   using namespace std;
-   array<int, 2> v1 = {1, 2};
-   array<int, 2>::iterator iter;
+    using namespace std;
+    array<int, 2> v1 = { 1, 2 };
 
-   cout << "v1 = " ;
-   for (iter = v1.begin(); iter != v1.end(); iter++)
-      cout << *iter << " ";
-   cout << endl;
+    cout << "v1 = ";
+    for (const auto& it : v1)
+    {
+        std::cout << " " << it;
+    }
+    cout << endl;
 
-   v1.fill(3);
-   cout << "v1 = " ;
-   for (iter = v1.begin(); iter != v1.end(); iter++)
-      cout << *iter << " ";
-   cout << endl;
+    v1.fill(3);
+    cout << "v1 = ";
+    for (const auto& it : c0)
+    {
+        std::cout << " " << it;
+    }
+    cout << endl;
 }
 ```
 
-## <a name="front"></a>Array:: Front
+## <a name="front"></a>  array::front
 
-İlk öğeye erişir.
+Accesses the first element.
 
 ```cpp
 reference front();
@@ -1008,33 +945,32 @@ constexpr const_reference front() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevleri denetlenen sıranın ilk öğesine bir başvuru döndürür ve bu boş olmamalıdır.
+The member functions return a reference to the first element of the controlled sequence, which must be non-empty.
 
 ### <a name="example"></a>Örnek
 
 ```cpp
-// std__array__array_front.cpp
-// compile with: /EHsc
 #include <array>
 #include <iostream>
 
 typedef std::array<int, 4> Myarray;
 int main()
-    {
-    Myarray c0 = {0, 1, 2, 3};
+{
+    Myarray c0 = { 0, 1, 2, 3 };
 
-// display contents " 0 1 2 3"
-    for (Myarray::const_iterator it = c0.begin();
-        it != c0.end(); ++it)
-        std::cout << " " << *it;
+    // display contents " 0 1 2 3"
+    for (const auto& it : c0)
+    {
+        std::cout << " " << it;
+    }
     std::cout << std::endl;
 
-// display first element " 0"
+    // display first element " 0"
     std::cout << " " << c0.front();
     std::cout << std::endl;
 
     return (0);
-    }
+}
 ```
 
 ```Output
@@ -1042,7 +978,7 @@ int main()
 0
 ```
 
-## <a name="iterator"></a>Array:: Yineleyici
+## <a name="iterator"></a>  array::iterator
 
 Denetlenen dizi için bir yineleyici türü.
 
@@ -1052,13 +988,11 @@ typedef implementation-defined iterator;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü, denetimli sıra için rastgele erişim Yineleyici işlevi görebilecek bir nesneyi tanımlar.
+The type describes an object that can serve as a random-access iterator for the controlled sequence.
 
 ### <a name="example"></a>Örnek
 
 ```cpp
-// std__array__array_iterator.cpp
-// compile with: /EHsc /W4
 #include <array>
 #include <iostream>
 
@@ -1066,14 +1000,14 @@ typedef std::array<int, 4> MyArray;
 
 int main()
 {
-    MyArray c0 = {0, 1, 2, 3};
+    MyArray c0 = { 0, 1, 2, 3 };
 
     // display contents " 0 1 2 3"
     std::cout << "it1:";
-    for ( MyArray::iterator it1 = c0.begin();
-          it1 != c0.end();
-          ++it1 ) {
-       std::cout << " " << *it1;
+    for (MyArray::iterator it1 = c0.begin();
+        it1 != c0.end();
+        ++it1) {
+        std::cout << " " << *it1;
     }
     std::cout << std::endl;
 
@@ -1093,7 +1027,7 @@ it1: 0 1 2 3
 it2: 0
 ```
 
-## <a name="max_size"></a>Array:: max_size
+## <a name="max_size"></a>  array::max_size
 
 Öğe sayısını sayar.
 
@@ -1103,33 +1037,32 @@ constexpr size_type max_size() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi döndürür `N`.
+The member function returns `N`.
 
 ### <a name="example"></a>Örnek
 
 ```cpp
-// std__array__array_max_size.cpp
-// compile with: /EHsc
 #include <array>
 #include <iostream>
 
 typedef std::array<int, 4> Myarray;
 int main()
-    {
-    Myarray c0 = {0, 1, 2, 3};
+{
+    Myarray c0 = { 0, 1, 2, 3 };
 
-// display contents " 0 1 2 3"
-    for (Myarray::const_iterator it = c0.begin();
-        it != c0.end(); ++it)
-        std::cout << " " << *it;
+    // display contents " 0 1 2 3"
+    for (const auto& it : c0)
+    {
+        std::cout << " " << it;
+    }
     std::cout << std::endl;
 
-// display (maximum) size " 4"
+    // display (maximum) size " 4"
     std::cout << " " << c0.max_size();
     std::cout << std::endl;
 
     return (0);
-    }
+}
 ```
 
 ```Output
@@ -1137,9 +1070,9 @@ int main()
 4
 ```
 
-## <a name="op_at"></a>Array:: operator []
+## <a name="op_at"></a>  array::operator[]
 
-Belirtilen konumdaki bir öğeye erişir.
+Accesses an element at a specified position.
 
 ```cpp
 reference operator[](size_type off);
@@ -1149,41 +1082,40 @@ constexpr const_reference operator[](size_type off) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*dışına*\
-Erişim için öğenin konumu.
+*off*\
+Position of element to access.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevleri, konumundaki denetimli sıranın öğesine bir başvuru *döndürür.* Bu konum geçersizse, davranış tanımsızdır.
+The member functions return a reference to the element of the controlled sequence at position *off*. If that position is invalid, the behavior is undefined.
 
-Ayrıca, bir **dizinin**öğesine başvuru almak için üye olmayan bir [Get](array-functions.md#get) işlevi de mevcuttur.
+There is also a non-member [get](array-functions.md#get) function available to get a reference to an element of an **array**.
 
 ### <a name="example"></a>Örnek
 
 ```cpp
-// std__array__array_operator_sub.cpp
-// compile with: /EHsc
 #include <array>
 #include <iostream>
 
 typedef std::array<int, 4> Myarray;
 int main()
-    {
-    Myarray c0 = {0, 1, 2, 3};
+{
+    Myarray c0 = { 0, 1, 2, 3 };
 
-// display contents " 0 1 2 3"
-    for (Myarray::const_iterator it = c0.begin();
-        it != c0.end(); ++it)
-        std::cout << " " << *it;
+    // display contents " 0 1 2 3"
+    for (const auto& it : c0)
+    {
+        std::cout << " " << it;
+    }
     std::cout << std::endl;
 
-// display odd elements " 1 3"
+    // display odd elements " 1 3"
     std::cout << " " << c0[1];
     std::cout << " " << c0[3];
     std::cout << std::endl;
 
     return (0);
-    }
+}
 ```
 
 ```Output
@@ -1191,9 +1123,9 @@ int main()
 1 3
 ```
 
-## <a name="op_eq"></a>Array:: operator =
+## <a name="op_eq"></a>  array::operator=
 
-Denetlenen sırayı değiştirir.
+Replaces the controlled sequence.
 
 ```cpp
 array<Value> operator=(array<Value> right);
@@ -1201,43 +1133,44 @@ array<Value> operator=(array<Value> right);
 
 ### <a name="parameters"></a>Parametreler
 
-*Right*\
-Kopyalanacak kapsayıcı.
+*right*\
+Container to copy.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Member işleci, *her bir öğesini* denetimli sıranın karşılık gelen öğesine atar ve ardından döndürür `*this`. Denetlenen diziyi, denetimli sıranın bir kopyasıyla değiştirmek için bunu *kullanırsınız.*
+The member operator assigns each element of *right* to the corresponding element of the controlled sequence, then returns `*this`. You use it to replace the controlled sequence with a copy of the controlled sequence in *right*.
 
 ### <a name="example"></a>Örnek
 
 ```cpp
-// std__array__array_operator_as.cpp
-// compile with: /EHsc
 #include <array>
 #include <iostream>
 
 typedef std::array<int, 4> Myarray;
 int main()
-    {
-    Myarray c0 = {0, 1, 2, 3};
+{
+    Myarray c0 = { 0, 1, 2, 3 };
 
-// display contents " 0 1 2 3"
-    for (Myarray::const_iterator it = c0.begin();
-        it != c0.end(); ++it)
-        std::cout << " " << *it;
+    // display contents " 0 1 2 3"
+    for (const auto& it : c0)
+    {
+        std::cout << " " << it;
+    }
     std::cout << std::endl;
 
     Myarray c1;
     c1 = c0;
 
-// display copied contents " 0 1 2 3"
-    for (Myarray::const_iterator it = c1.begin();
-        it != c1.end(); ++it)
-        std::cout << " " << *it;
+    // display copied contents " 0 1 2 3"
+        // display contents " 0 1 2 3"
+    for (auto it : c1)
+    {
+        std::cout << " " << it;
+    }
     std::cout << std::endl;
 
     return (0);
-    }
+}
 ```
 
 ```Output
@@ -1245,7 +1178,7 @@ int main()
 0 1 2 3
 ```
 
-## <a name="pointer"></a>dizi::p oınter
+## <a name="pointer"></a>  array::pointer
 
 Bir öğe için bir işaretçi türü.
 
@@ -1255,34 +1188,33 @@ typedef Ty *pointer;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü, sıranın öğelerinin işaretçisi olarak işlev görebilecek bir nesne tanımlar.
+The type describes an object that can serve as a pointer to elements of the sequence.
 
 ### <a name="example"></a>Örnek
 
 ```cpp
-// std__array__array_pointer.cpp
-// compile with: /EHsc
 #include <array>
 #include <iostream>
 
 typedef std::array<int, 4> Myarray;
 int main()
-    {
-    Myarray c0 = {0, 1, 2, 3};
+{
+    Myarray c0 = { 0, 1, 2, 3 };
 
-// display contents " 0 1 2 3"
-    for (Myarray::const_iterator it = c0.begin();
-        it != c0.end(); ++it)
-        std::cout << " " << *it;
+    // display contents " 0 1 2 3"
+    for (const auto& it : c0)
+    {
+        std::cout << " " << it;
+    }
     std::cout << std::endl;
 
-// display first element " 0"
+    // display first element " 0"
     Myarray::pointer ptr = &*c0.begin();
     std::cout << " " << *ptr;
     std::cout << std::endl;
 
     return (0);
-    }
+}
 ```
 
 ```Output
@@ -1290,9 +1222,9 @@ int main()
 0
 ```
 
-## <a name="rbegin"></a>Array:: rbegin
+## <a name="rbegin"></a>  array::rbegin
 
-Ters denetlenen sıranın başlangıcını belirtir.
+Designates the beginning of the reversed controlled sequence.
 
 ```cpp
 reverse_iterator rbegin()noexcept;
@@ -1301,34 +1233,33 @@ const_reverse_iterator rbegin() const noexcept;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevleri, denetimli dizinin sonunun hemen ötesinde bir ters yineleyici döndürür. Bu nedenle, ters sıranın başlangıcını belirler.
+The member functions return a reverse iterator that points just beyond the end of the controlled sequence. Hence, it designates the beginning of the reverse sequence.
 
 ### <a name="example"></a>Örnek
 
 ```cpp
-// std__array__array_rbegin.cpp
-// compile with: /EHsc
 #include <array>
 #include <iostream>
 
 typedef std::array<int, 4> Myarray;
 int main()
-    {
-    Myarray c0 = {0, 1, 2, 3};
+{
+    Myarray c0 = { 0, 1, 2, 3 };
 
-// display contents " 0 1 2 3"
-    for (Myarray::const_iterator it = c0.begin();
-        it != c0.end(); ++it)
-        std::cout << " " << *it;
+    // display contents " 0 1 2 3"
+    for (const auto& it : c0)
+    {
+        std::cout << " " << it;
+    }
     std::cout << std::endl;
 
-// display last element " 3"
+    // display last element " 3"
     Myarray::const_reverse_iterator it2 = c0.rbegin();
     std::cout << " " << *it2;
     std::cout << std::endl;
 
     return (0);
-    }
+}
 ```
 
 ```Output
@@ -1336,7 +1267,7 @@ int main()
 3
 ```
 
-## <a name="reference"></a>Array:: Reference
+## <a name="reference"></a>  array::reference
 
 Bir öğe için bir başvuru türü.
 
@@ -1346,34 +1277,33 @@ typedef Ty& reference;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü, denetlenen sıranın bir öğesine başvuru olarak işlev görebilecek bir nesne tanımlar.
+The type describes an object that can serve as a reference to an element of the controlled sequence.
 
 ### <a name="example"></a>Örnek
 
 ```cpp
-// std__array__array_reference.cpp
-// compile with: /EHsc
 #include <array>
 #include <iostream>
 
 typedef std::array<int, 4> Myarray;
 int main()
-    {
-    Myarray c0 = {0, 1, 2, 3};
+{
+    Myarray c0 = { 0, 1, 2, 3 };
 
-// display contents " 0 1 2 3"
-    for (Myarray::const_iterator it = c0.begin();
-        it != c0.end(); ++it)
-        std::cout << " " << *it;
+    // display contents " 0 1 2 3"
+    for (const auto& it : c0)
+    {
+        std::cout << " " << it;
+    }
     std::cout << std::endl;
 
-// display first element " 0"
+    // display first element " 0"
     Myarray::reference ref = *c0.begin();
     std::cout << " " << ref;
     std::cout << std::endl;
 
     return (0);
-    }
+}
 ```
 
 ```Output
@@ -1381,9 +1311,9 @@ int main()
 0
 ```
 
-## <a name="rend"></a>dizi:: rend
+## <a name="rend"></a>  array::rend
 
-Ters denetlenen sıranın sonunu belirtir.
+Designates the end of the reversed controlled sequence.
 
 ```cpp
 reverse_iterator rend()noexcept;
@@ -1392,34 +1322,33 @@ const_reverse_iterator rend() const noexcept;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevleri, sıranın ilk öğesini işaret eden bir ters yineleyici döndürür (veya bir boş dizinin sonunun ötesinde)). Bu nedenle, ters sıranın sonunu belirler.
+The member functions return a reverse iterator that points at the first element of the sequence (or just beyond the end of an empty sequence)). Hence, it designates the end of the reverse sequence.
 
 ### <a name="example"></a>Örnek
 
 ```cpp
-// std__array__array_rend.cpp
-// compile with: /EHsc
 #include <array>
 #include <iostream>
 
 typedef std::array<int, 4> Myarray;
 int main()
-    {
-    Myarray c0 = {0, 1, 2, 3};
+{
+    Myarray c0 = { 0, 1, 2, 3 };
 
-// display contents " 0 1 2 3"
-    for (Myarray::const_iterator it = c0.begin();
-        it != c0.end(); ++it)
-        std::cout << " " << *it;
+    // display contents " 0 1 2 3"
+    for (const auto& it : c0)
+    {
+        std::cout << " " << it;
+    }
     std::cout << std::endl;
 
-// display first element " 0"
+    // display first element " 0"
     Myarray::const_reverse_iterator it2 = c0.rend();
     std::cout << " " << *--it2;
     std::cout << std::endl;
 
     return (0);
-    }
+}
 ```
 
 ```Output
@@ -1427,9 +1356,9 @@ int main()
 0
 ```
 
-## <a name="reverse_iterator"></a>Array:: reverse_iterator
+## <a name="reverse_iterator"></a>  array::reverse_iterator
 
-Denetlenen sıra için ters yineleyicinin türü.
+The type of a reverse iterator for the controlled sequence.
 
 ```cpp
 typedef std::reverse_iterator<iterator> reverse_iterator;
@@ -1437,34 +1366,33 @@ typedef std::reverse_iterator<iterator> reverse_iterator;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü, denetimli sıra için ters Yineleyici işlevi görebilecek bir nesneyi tanımlar.
+The type describes an object that can serve as a reverse iterator for the controlled sequence.
 
 ### <a name="example"></a>Örnek
 
 ```cpp
-// std__array__array_reverse_iterator.cpp
-// compile with: /EHsc
 #include <array>
 #include <iostream>
 
 typedef std::array<int, 4> Myarray;
 int main()
-    {
-    Myarray c0 = {0, 1, 2, 3};
+{
+    Myarray c0 = { 0, 1, 2, 3 };
 
-// display contents " 0 1 2 3"
-    for (Myarray::const_iterator it = c0.begin();
-        it != c0.end(); ++it)
-        std::cout << " " << *it;
+    // display contents " 0 1 2 3"
+    for (const auto& it : c0)
+    {
+        std::cout << " " << it;
+    }
     std::cout << std::endl;
 
-// display last element " 3"
+    // display last element " 3"
     Myarray::reverse_iterator it2 = c0.rbegin();
     std::cout << " " << *it2;
     std::cout << std::endl;
 
     return (0);
-    }
+}
 ```
 
 ```Output
@@ -1472,7 +1400,7 @@ int main()
 3
 ```
 
-## <a name="size"></a>Array:: size
+## <a name="size"></a>  array::size
 
 Öğe sayısını sayar.
 
@@ -1482,33 +1410,32 @@ constexpr size_type size() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi döndürür `N`.
+The member function returns `N`.
 
 ### <a name="example"></a>Örnek
 
 ```cpp
-// std__array__array_size.cpp
-// compile with: /EHsc
 #include <array>
 #include <iostream>
 
 typedef std::array<int, 4> Myarray;
 int main()
-    {
-    Myarray c0 = {0, 1, 2, 3};
+{
+    Myarray c0 = { 0, 1, 2, 3 };
 
-// display contents " 0 1 2 3"
-    for (Myarray::const_iterator it = c0.begin();
-        it != c0.end(); ++it)
-        std::cout << " " << *it;
+    // display contents " 0 1 2 3"
+    for (const auto& it : c0)
+    {
+        std::cout << " " << it;
+    }
     std::cout << std::endl;
 
-// display size " 4"
+    // display size " 4"
     std::cout << " " << c0.size();
     std::cout << std::endl;
 
     return (0);
-    }
+}
 ```
 
 ```Output
@@ -1516,9 +1443,9 @@ int main()
 4
 ```
 
-## <a name="size_type"></a>Array:: size_type
+## <a name="size_type"></a>  array::size_type
 
-İki öğe arasındaki işaretsiz mesafe türü.
+The type of an unsigned distance between two element.
 
 ```cpp
 typedef std::size_t size_type;
@@ -1526,34 +1453,33 @@ typedef std::size_t size_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşaretsiz tamsayı türü, denetlenen bir dizinin uzunluğunu temsil eden bir nesneyi tanımlar. Türün `std::size_t`eşanlamlısıdır.
+The unsigned integer type describes an object that can represent the length of any controlled sequence. It is a synonym for the type `std::size_t`.
 
 ### <a name="example"></a>Örnek
 
 ```cpp
-// std__array__array_size_type.cpp
-// compile with: /EHsc
 #include <array>
 #include <iostream>
 
 typedef std::array<int, 4> Myarray;
 int main()
-    {
-    Myarray c0 = {0, 1, 2, 3};
+{
+    Myarray c0 = { 0, 1, 2, 3 };
 
-// display contents " 0 1 2 3"
-    for (Myarray::const_iterator it = c0.begin();
-        it != c0.end(); ++it)
-        std::cout << " " << *it;
+    // display contents " 0 1 2 3"
+    for (const auto& it : c0)
+    {
+        std::cout << " " << it;
+    }
     std::cout << std::endl;
 
-// display distance last-first " 4"
+    // display distance last-first " 4"
     Myarray::size_type diff = c0.end() - c0.begin();
     std::cout << " " << diff;
     std::cout << std::endl;
 
     return (0);
-    }
+}
 ```
 
 ```Output
@@ -1561,9 +1487,9 @@ int main()
 4
 ```
 
-## <a name="swap"></a>Array:: swap
+## <a name="swap"></a>  array::swap
 
-Bu dizinin içeriğini başka bir dizi ile değiştirir.
+Swaps the contents of this array with another array.
 
 ```cpp
 void swap(array& right);
@@ -1571,53 +1497,54 @@ void swap(array& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*Right*\
-İçeriği takas eden dizi.
+*right*\
+Array to swap contents with.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, ve `*this` *sağ*arasındaki denetlenen dizileri değiştirir. Bir dizi öğe ataması gerçekleştirir ve Oluşturucu çağrıları ile orantılıdır `N`.
+The member function swaps the controlled sequences between `*this` and *right*. It performs a number of element assignments and constructor calls proportional to `N`.
 
-Ayrıca, iki **dizi** örneğini değiştirmek için üye olmayan bir [değiştirme](array-functions.md#swap) işlevi de mevcuttur.
+There is also a non-member [swap](array-functions.md#swap) function available to swap two **array** instances.
 
 ### <a name="example"></a>Örnek
 
 ```cpp
-// std__array__array_swap.cpp
-// compile with: /EHsc
 #include <array>
 #include <iostream>
 
 typedef std::array<int, 4> Myarray;
 int main()
-    {
-    Myarray c0 = {0, 1, 2, 3};
+{
+    Myarray c0 = { 0, 1, 2, 3 };
 
-// display contents " 0 1 2 3"
-    for (Myarray::const_iterator it = c0.begin();
-        it != c0.end(); ++it)
-        std::cout << " " << *it;
+    // display contents " 0 1 2 3"
+    for (const auto& it : c0)
+    {
+        std::cout << " " << it;
+    }
     std::cout << std::endl;
 
-    Myarray c1 = {4, 5, 6, 7};
+    Myarray c1 = { 4, 5, 6, 7 };
     c0.swap(c1);
 
-// display swapped contents " 4 5 6 7"
-    for (Myarray::const_iterator it = c0.begin();
-        it != c0.end(); ++it)
-        std::cout << " " << *it;
+    // display swapped contents " 4 5 6 7"
+    for (const auto& it : c0)
+    {
+        std::cout << " " << it;
+    }
     std::cout << std::endl;
 
     swap(c0, c1);
 
-// display swapped contents " 0 1 2 3"
-    for (Myarray::const_iterator it = c0.begin();
-        it != c0.end(); ++it)
-        std::cout << " " << *it;
+    // display swapped contents " 0 1 2 3"
+    for (const auto& it : c0)
+    {
+        std::cout << " " << it;
+    }
     std::cout << std::endl;
 
     return (0);
-    }
+}
 ```
 
 ```Output
@@ -1626,7 +1553,7 @@ int main()
 0 1 2 3
 ```
 
-## <a name="value_type"></a>Array:: value_type
+## <a name="value_type"></a>  array::value_type
 
 Öğenin türü.
 
@@ -1636,38 +1563,36 @@ typedef Ty value_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, şablon parametresi `Ty`için bir eş anlamlı.
+The type is a synonym for the template parameter `Ty`.
 
 ### <a name="example"></a>Örnek
 
 ```cpp
-// std__array__array_value_type.cpp
-// compile with: /EHsc
 #include <array>
 #include <iostream>
 
 typedef std::array<int, 4> Myarray;
 int main()
-    {
-    Myarray c0 = {0, 1, 2, 3};
+{
+    Myarray c0 = { 0, 1, 2, 3 };
 
-// display contents " 0 1 2 3"
-    for (Myarray::const_iterator it = c0.begin();
-        it != c0.end(); ++it)
-        std::cout << " " << *it;
+    // display contents " 0 1 2 3"
+    for (const auto& it : c0)
+    {
+        std::cout << " " << it;
+    }
     std::cout << std::endl;
 
-// display contents " 0 1 2 3"
-    for (Myarray::const_iterator it = c0.begin();
-        it != c0.end(); ++it)
-        {
-        Myarray::value_type val = *it;
+    // display contents " 0 1 2 3"
+    for (const auto& it : c0)
+    {
+        Myarray::value_type val = it;
         std::cout << " " << val;
-        }
+    }
     std::cout << std::endl;
 
     return (0);
-    }
+}
 ```
 
 ```Output
@@ -1677,4 +1602,4 @@ int main()
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<dizi >](../standard-library/array.md)
+[\<array>](../standard-library/array.md)

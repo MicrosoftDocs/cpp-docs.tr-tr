@@ -11,33 +11,33 @@ helpviewer_keywords:
 - cpp.stop
 - Class View, hint file
 ms.assetid: 17194f66-cf62-4523-abec-77db0675ab65
-ms.openlocfilehash: af28dac17c57c8c0699950cc1fdb542642c01722
-ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
+ms.openlocfilehash: ca111fcb8b0fc511fda3bbb3a4769ebc9fdd28bc
+ms.sourcegitcommit: 217fac22604639ebd62d366a69e6071ad5b724ac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65707106"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74189002"
 ---
 # <a name="hint-files"></a>İpucu Dosyaları
 
-A *ipucu dosyası* Aksi takdirde C++ gözatma veritabanı ayrıştırıcı tarafından Atlanan bölgeleri neden makrolar içerir. Visual Studio açtığınızda C++ proje, ayrıştırıcının projedeki her kaynak dosyasındaki kodu inceler ve her bir tanımlayıcı hakkında bilgi içeren bir veritabanı oluşturur. IDE, kod gözatma desteği veren bilgiler gibi özellikleri kullanır **sınıf görünümü** tarayıcı ve **gezinti çubuğu**.
+A *hint file* contains macros that would otherwise cause regions of code to be skipped by the C++ Browsing Database Parser. When you open a Visual Studio C++ project, the parser analyzes the code in each source file in the project and builds a database with information about every identifier. The IDE uses that information to support code browsing features such as the **Class View** browser and the **Navigation Bar**.
 
-C++ gözatma veritabanı ayrıştırıcı büyük miktarda kod kısa bir sürede ayrıştırabilen belirsiz bir ayrıştırıcısıdır. Hızlı nedenlerinden biri, içerik bloklarının atlar olmasıdır. Örneği için yalnızca bir işlevin parametreleri ve konumunu kaydeder ve içeriğini yok sayar. Belirli makrolar, başlangıç ve bitiş bloğunun belirlemek için kullanılan buluşsal yöntemler için sorunlara neden olabilir. Bu sorunlar, yanlış kaydedilecek bölgeleri neden.
+The C++ Browsing Database Parser is a fuzzy parser that can parse large amounts of code in a short amount of time. One reason it's fast is because it skips the content of blocks. For instance, it only records the location and parameters of a function, and ignores its contents. Certain macros can cause issues for the heuristics used to determine the start and end of a block. These issues cause regions of code to be recorded improperly.
 
-Atlanan Bu bölgeler, birden çok yolla bildirilebilir:
+These skipped regions can manifest in multiple ways:
 
-- Eksik türleri ve içindeki işlevler **sınıf görünümü**, **Git** ve **gezinti çubuğu**
+- Missing types and functions in **Class View**, **Go To** and **Navigation Bar**
 
-- Yanlış kapsamlarda **gezinti çubuğu**
+- Incorrect scopes in the **Navigation Bar**
 
-- Önerilerinizi **oluşturma bildirimi/tanımı** zaten tanımlanmış olan işlevler
+- Suggestions to **Create Declaration/Definition** for functions that are already defined
 
-İpucu dosyası olarak C/C++ makro tanımları aynı söz dizimine sahip kullanıcı tarafından özelleştirilebilir ipuçları içerir. Visual C++, çoğu proje için yeterli olan bir yerleşik ipucu dosyası içerir. Ancak, projeniz için özel bir ayrıştırıcı iyileştirmek için kendi ipucu dosyaları oluşturabilirsiniz.
+A hint file contains user-customizable hints, which have the same syntax as C/C++ macro definitions. Visual C++ includes a built-in hint file that is sufficient for most projects. However, you can create your own hint files to improve the parser specifically for your project.
 
 > [!IMPORTANT]
-> Değiştirme ya da bir ipucu dosyası ekleyin, değişikliklerin etkili olması ek adımlar uygulamanız gerekir:
-> - Visual Studio 2017 sürüm 15.6 önce sürümlerde: .Sdf dosya ve/veya çözüm VC.db dosyada yapılan tüm değişiklikler silin.
-> - Visual Studio 2017 sürüm 15.6 15.9 aracılığıyla: Kapatın ve yeni ipucu dosyaları ekledikten sonra çözümü yeniden açın.
+> If you modify or add a hint file, you need to take additional steps in order for the changes to take effect:
+> - In versions before Visual Studio 2017 version 15.6: Delete the .sdf file and/or VC.db file in the solution for all changes.
+> - In Visual Studio 2017 version 15.6 and later: Close and reopen the solution after adding new hint files.
 
 ## <a name="scenario"></a>Senaryo
 
@@ -48,129 +48,129 @@ void Function() NOEXCEPT
 }
 ```
 
-Bir ipucu dosyası olmadan `Function` içinde gösterilmesini **sınıf görünümü**, **Git** veya **gezinti çubuğu**. Bu Makro tanımında bir ipucu dosyası ekledikten sonra ayrıştırıcının artık anlar ve değiştirir `NOEXCEPT` işlevi düzgün ayrıştırılamadı izin veren makro:
+Without a hint file, `Function` doesn't show up in **Class View**, **Go To** or the **Navigation Bar**. After adding a hint file with this macro definition, the parser now understands and replaces the `NOEXCEPT` macro, which allows it to correctly parse the function:
 
 ```cpp.hint
 #define NOEXCEPT
 ```
 
-## <a name="disruptive-macros"></a>Kesintiye uğratan makroları
+## <a name="disruptive-macros"></a>Disruptive Macros
 
-Ayrıştırıcının kesintiye makroları iki kategorisi vardır:
+There are two categories of macros that disrupt the parser:
 
-- Bir işlev adorn anahtar sözcükleri kapsülleyen makroları
+- Macros that encapsulate keywords that adorn a function
 
    ```cpp
    #define NOEXCEPT noexcept
    #define STDMETHODCALLTYPE __stdcall
    ```
 
-   Bu tür makroları, makro adı ipucu dosyasında gereklidir:
+   For these types of macros, only the macro name is required in the hint file:
 
    ```cpp.hint
    #define NOEXCEPT
    #define STDMETHODCALLTYPE
    ```
 
-- Eşleşmeyen ayraç içeren makroları
+- Macros that contain unbalanced brackets
 
    ```cpp
    #define BEGIN {
    ```
 
-   Bu tür makroları, makro adı hem de içeriğini ipucu dosyasında gerekir:
+   For these types of macros, both the macro name and its contents are required in the hint file:
 
    ```cpp.hint
    #define BEGIN {
    ```
 
-## <a name="editor-support"></a>Düzenleyicisi desteği
+## <a name="editor-support"></a>Editor Support
 
-Visual Studio 2017 sürüm 15,8 kesintiye uğratan makroları tanımlamak için birkaç özellik vardır. başlangıç:
+Starting in Visual Studio 2017 version 15.8 there are several features to identify disruptive macros:
 
-- Ayrıştırıcı tarafından Atlanan bölgeleri içinde makroların vurgulanır.
+- Macros that are inside regions skipped by the parser are highlighted.
 
-- Hızlı bir vurgulanan makro içeren bir ipucu dosyası oluşturmak için eylem veya makro ipucu dosyasına eklemek için bir varolan ipucu dosyası ise.
+- There's a Quick Action to create a hint file that includes the highlighted macro, or if there's an existing hint file, to add the macro to the hint file.
 
-![Vurgulanan makrosu. ](media/hint-squiggle-and-actions.png "İpucu kapalıysa ve hızlı Eylemler")
+![Highlighted Macro.](media/hint-squiggle-and-actions.png "Hint squiggle and Quick Actions")
 
-Hızlı Eylemler birini yürütüldükten sonra ayrıştırıcının ipucu dosyası tarafından etkilenen dosyalar reparses.
+After executing either of the Quick Actions, the parser reparses the files affected by the hint file.
 
-Varsayılan olarak, sorunu makrosu öneri olarak vurgulanır. Vurgulama kırmızı veya yeşil dalgalı çizgi gibi daha belirgin bir şey değiştirilebilir. Kullanım **makroları atlandı gözatma bölgelerde** seçeneğini **kod dalgalı çizgiler** bölümüne **Araçları** > **seçenekleri**  >  **Metin düzenleyici** > **C/C++** > **görünümü**.
+By default, the problem macro is highlighted as a suggestion. The highlight can be changed to something more noticeable, such as a red or green squiggle. Use the **Macros in Skipped Browsing Regions** option in the **Code Squiggles** section under **Tools** > **Options** > **Text Editor** > **C/C++**  > **View**.
 
-![Atlanan gözatma bölgeler seçenek makroları. ](media/skipped-regions-squiggle-option.png "Bölgeleri dalgalı çizgi seçenek atlandı.")
+![Macros in Skipped Browsing Regions Option.](media/skipped-regions-squiggle-option.png "Skipped regions squiggle option.")
 
-## <a name="display-browsing-database-errors"></a>Gözatma veritabanı hataları görüntüleme
+## <a name="display-browsing-database-errors"></a>Display Browsing Database Errors
 
-**Proje** > **görünen gözatma veritabanı hataları** menü komutunu görüntüler olarak ayrıştırılamadı tüm bölgeler **hata listesi**. Komut, ilk ipucu dosyası derleme kolaylaştırmak için tasarlanmıştır. Ancak, ayrıştırıcının her hata değerlendirmelidir. böylece hatanın nedenini kesintiye uğratan bir makro olduğunu anlayamaz. Çalıştırma **görünen gözatma veritabanı hataları** komut ve etkilenen dosyayı düzenleyicide yüklenecek her bir hata gidin. Dosya yüklendiğinde makroların bölgenin içinde olduğunda vurgulanmış. Bunları bir ipucu dosyasına eklemek için hızlı Eylemler çağırabilirsiniz. İpucu dosyası güncelleştirmesinden sonra hata listesinde otomatik olarak güncelleştirilir. Alternatif olarak, el ile ipucu dosyası değiştiriyorsanız kullanabilirsiniz **yeniden tarama çözüm** güncelleştirme tetiklemek için komutu.
+The **Project** > **Display Browsing Database Errors** menu command displays all the regions that failed to parse in the **Error List**. The command is meant to streamline building the initial hint file. However, the parser can't tell if the cause of the error was a disruptive macro, so you must evaluate each error. Run the **Display Browsing Database Errors** command and navigate to each error to load the affected file in the editor. Once the file is loaded, if any macros are inside the region, they're highlighted. You can invoke the Quick Actions to add them to a hint file. After a hint file update, the error list is updated automatically. Alternatively, if you're modifying the hint file manually you can use the **Rescan Solution** command to trigger an update.
 
 ## <a name="architecture"></a>Mimari
 
-İpucu dosyaları ilişkili fiziksel dizinlerine, gösterilen mantıksal dizinleri **Çözüm Gezgini**. Projenize bir etkiye sahip olma ipucu dosyası için bir ipucu dosyası eklemeniz gerekmez. Yalnızca kaynak dosyaları ayıklarken ayrıştırma sistem ipucu dosyaları kullanır.
+Hint files relate to physical directories, not the logical directories shown in **Solution Explorer**. You don't have to add a hint file to your project for the hint file to have an effect. The parsing system uses hint files only when it parses source files.
 
-Her ipucu dosyası adlı **cpp.hint**. Birden çok dizini bir ipucu dosyası içerebilir, ancak yalnızca bir ipucu dosyası belirli bir dizinde ortaya çıkabilir.
+Every hint file is named **cpp.hint**. Many directories can contain a hint file, but only one hint file can occur in a particular directory.
 
-Sıfır veya daha fazla ipucu dosyaları projenize etkilenebilir. İpucu dosya yoksa, ayrıştırma sistem şifresi çözülemeyen bir kaynak kodu yok sayılacak hata kurtarma teknikleri kullanır. Aksi takdirde ayrıştırma sistem bulmak ve ipuçları toplamak için aşağıdaki stratejisi kullanır.
+Your project can be affected by zero or more hint files. If there are no hint files, the parsing system uses error recovery techniques to ignore indecipherable source code. Otherwise, the parsing system uses the following strategy to find and gather hints.
 
-### <a name="search-order"></a>Arama sırası
+### <a name="search-order"></a>Search Order
 
-Ayrıştırma sistem ipucu dosyaları için dizinleri şu sırayla arar.
+The parsing system searches directories for hint files in the following order.
 
-- Visual C++ için yükleme paketini içeren dizine (**vcpackages**). Bu dizin gibi sık kullanılan sistem dosyaları, simgeler tanımlayan bir yerleşik ipucu dosyası içeren **windows.h**. Sonuç olarak, projeniz otomatik olarak en çok ihtiyaç duyduğu ipuçları devralır.
+- The directory that contains the installation package for Visual C++ (**vcpackages**). This directory contains a built-in hint file that describes symbols in frequently used system files, such as **windows.h**. Consequently, your project automatically inherits most of the hints that it needs.
 
-- Kaynak dosyayı içeren dizine kök dizininde bir kaynak dosyasının yolu. Tipik bir Visual Studio C++ proje kök dizinini çözüm veya proje dosyasını içerir.
+- The path from the root directory of a source file to the directory that contains the source file itself. In a typical Visual Studio C++ project, the root directory contains the solution or project file.
 
-   Bu kuralın istisnası, bir *durdurma dosya* içinde kaynak dosyasının yolu. Adlı bir dosyaya bir Durma dosyasıdır **cpp.stop**. Durdurma dosya arama sırası üzerinde ek denetim sağlar. Kök dizininden başlayarak yerine, kaynak dosyasını içeren dizine durdurma dosyasını içeren dizinden ayrıştırma sistem arar. Tipik bir projede bir Durma dosyası gerekmez.
+   The exception to this rule is if a *stop file* is in the path to the source file. A stop file is any file that is named **cpp.stop**. A stop file provides additional control over the search order. Instead of starting from the root directory, the parsing system searches from the directory that contains the stop file to the directory that contains the source file. In a typical project, you don't need a stop file.
 
-### <a name="hint-gathering"></a>İpucu toplanıyor
+### <a name="hint-gathering"></a>Hint Gathering
 
-Sıfır veya daha fazla ipucu dosyası içeren *ipuçları*. İpucu tanımlanan veya yalnızca C/C++ makro gibi silindi. Diğer bir deyişle, `#define` önişlemci yönergesi oluşturur veya bir ipucu'ı yeniden tanımladığı ve `#undef` yönergesi bir ipucu siler.
+A hint file contains zero or more *hints*. A hint is defined or deleted just like a C/C++ macro. That is, the `#define` preprocessor directive creates or redefines a hint, and the `#undef` directive deletes a hint.
 
-Ayrıştırma sistem daha önce açıklanan arama sırayla her ipucu dosyası açılır. Bir dizi her dosyanın ipuçları biriktirir *etkili ipuçları*ve daha sonra kodunuzda tanımlayıcıları yorumlamak için etkili ipuçları kullanır.
+The parsing system opens each hint file in the search order described earlier. It accumulates each file's hints into a set of *effective hints*, and then uses the effective hints to interpret the identifiers in your code.
 
-Ayrıştırma sistem ipuçları ulaşıncaya kadar bu kuralları kullanır:
+The parsing system uses these rules to accumulate hints:
 
-- Yeni ipucu zaten tanımlı olmayan bir ad belirtiyorsa, yeni ipucu için etkili ipuçları adını ekler.
+- If the new hint specifies a name that isn't already defined, the new hint adds the name to the effective hints.
 
-- Yeni ipucu zaten tanımlı bir ad belirtiyorsa, yeni ipucu mevcut ipucu yeniden tanımlar.
+- If the new hint specifies a name that is already defined, the new hint redefines the existing hint.
 
-- Yeni ipucu ise bir `#undef` yönergesi, var olan bir etkin ipucu belirtir, mevcut ipucu yeni ipucu siler.
+- If the new hint is an `#undef` directive that specifies an existing effective hint, the new hint deletes the existing hint.
 
-İlk kural etkili ipuçları önceden açılmış ipucu dosyalarından devralınır anlamına gelir. Son iki kural daha sonra arama sırası ipuçlarına önceki ipuçları kılabilirsiniz anlamına gelir. Örneğin, bir kaynak dosyasını içeren dizin ipucu dosyası oluşturursanız, önceki açıklanmıyorsa geçersiz kılabilirsiniz.
+The first rule means that effective hints are inherited from previously opened hint files. The last two rules mean that hints later in the search order can override earlier hints. For example, you can override any previous hints if you create a hint file in the directory that contains a source file.
 
-İpuçları nasıl toplanır bir gösterimi için bkz. [örnek](#example) bölümü.
+For a depiction of how hints are gathered, see the [Example](#example) section.
 
 ### <a name="syntax"></a>Sözdizimi
 
-Oluşturur ve ipuçları oluşturma ve silme makrolar önişlemci yönergeleri aynı söz dizimini kullanarak silin. Aslında, ayrıştırma sistem ipuçları değerlendirmek için C/C++ ön işlemci kullanır. Önişlemci yönergeleri hakkında daha fazla bilgi için bkz: [#define yönergesi (C/C++)](../../preprocessor/hash-define-directive-c-cpp.md) ve [#undef yönergesi (C/C++)](../../preprocessor/hash-undef-directive-c-cpp.md).
+You create and delete hints by using the same syntax as the preprocessor directives to create and delete macros. In fact, the parsing system uses the C/C++ preprocessor to evaluate the hints. For more information about the preprocessor directives, see [#define Directive (C/C++)](../../preprocessor/hash-define-directive-c-cpp.md) and [#undef Directive (C/C++)](../../preprocessor/hash-undef-directive-c-cpp.md).
 
-Yalnızca olağan dışı bir söz dizimi öğeleri `@<`, `@=`, ve `@>` değiştirme dizeleri. Bu ipucu dosyası özel bir yenileme dizeler yalnızca kullanılan *harita* makroları. Harita veri, İşlevler ve olayları ile ilgili diğer verileri, işlevleri veya olay işleyicileri makroları kümesidir. Örneğin, `MFC` eşlemeleri oluşturmak için kullandığı [ileti eşlemeleri](../../mfc/reference/message-maps-mfc.md), ve `ATL` eşlemeleri oluşturmak için kullandığı [nesne eşlemeleri](../../atl/reference/object-map-macros.md). İpucu dosyası belirli değiştirme dizelerini, başlangıç, Orta ve bitiş bir eşlemin öğelerini işaretleyin. Yalnızca bir eşleme makro adı büyük/küçük harf önemlidir. Bu nedenle, her bir değiştirme dizesi makro uygulamasını kasıtlı olarak gizler.
+The only unusual syntax elements are the `@<`, `@=`, and `@>` replacement strings. These hint-file specific replacement strings are only used in *map* macros. A map is a set of macros that relate data, functions, or events to other data, functions, or event handlers. For example, `MFC` uses maps to create [message maps](../../mfc/reference/message-maps-mfc.md), and `ATL` uses maps to create [object maps](../../atl/reference/object-map-macros.md). The hint-file specific replacement strings mark the starting, intermediate, and ending elements of a map. Only the name of a map macro is significant. Therefore, each replacement string intentionally hides the implementation of the macro.
 
-İpuçları, bu sözdizimini kullanın:
+Hints use this syntax:
 
 |Sözdizimi|Açıklama|
 |------------|-------------|
-|`#define` *İpucu-name* *değiştirme dizesi*<br /><br /> `#define` *İpucu-name* `(` *parametre*,... `)` *değiştirme dizesi*|Yeni bir ipucu tanımlar veya mevcut bir ipucu'ı yeniden tanımladığı bir önişlemci yönergesi. Yönergesinden sonra önişlemci her oluşumunun değiştirir *ipucu adı* ile kaynak kodundaki *değiştirme dizesi*.<br /><br /> İkinci sözdizimi formu, bir işlev benzeri ipucu tanımlar. Kaynak kodunda bir işlev benzeri ipucu ortaya çıkarsa, önişlemci önce her örneğini değiştirir *parametre* içinde *değiştirme dizesi* karşılık gelen bağımsız kaynak kodu ve ardından değiştirir *ipucu adı* ile *değiştirme dizesi*.|
-|`@<`|İpucu dosyası belirli bir *değiştirme dizesi* harita öğeleri kümesi başlangıcını gösterir.|
-|`@=`|İpucu dosyası belirli bir *değiştirme dizesi* Ara harita öğesi belirtir. Bir eşleme, birden çok harita öğelerine sahip olabilir.|
-|`@>`|İpucu dosyası belirli bir *değiştirme dizesi* harita öğeleri kümesi sonunu gösterir.|
-|`#undef` *İpucu-name*|Önişlemci yönergesi var olan bir ipucu siler. İpucu adını tarafından sağlanan *ipucu adı* tanımlayıcısı.|
-|`//` *Açıklama*|Bir tek satır açıklama.|
-|`/*` *Açıklama* `*/`|Çok satırlı yorum.|
+|`#define` *hint-name* *replacement-string*<br /><br /> `#define` *hint-name* `(` *parameter*, ...`)`*replacement-string*|A preprocessor directive that defines a new hint or redefines an existing hint. After the directive, the preprocessor replaces each occurrence of *hint-name* in source code with *replacement-string*.<br /><br /> The second syntax form defines a function-like hint. If a function-like hint occurs in source code, the preprocessor first replaces each occurrence of *parameter* in *replacement-string* with the corresponding argument in source code, and then replaces *hint-name* with *replacement-string*.|
+|`@<`|A hint-file specific *replacement-string* that indicates the start of a set of map elements.|
+|`@=`|A hint-file specific *replacement-string* that indicates an intermediate map element. A map can have multiple map elements.|
+|`@>`|A hint-file specific *replacement-string* that indicates the end of a set of map elements.|
+|`#undef` *hint-name*|The preprocessor directive that deletes an existing hint. The name of the hint is provided by the *hint-name* identifier.|
+|`//` *comment*|A single-line comment.|
+|`/*` *comment* `*/`|A multiline comment.|
 
 ## <a name="example"></a>Örnek
 
-Bu örnek nasıl ipuçları ipucu dosyalarından biriktirilir gösterir. Bu örnekte durdurma dosyaları kullanılmaz.
+This example shows how hints are accumulated from hint files. Stop files aren't used in this example.
 
-Bazı fiziksel dizinlerin Visual Studio'da gösterimde C++ proje. İpucu dosyaları vardır `vcpackages`, `Debug`, `A1`, ve `A2` dizinleri.
+The illustration shows some of the physical directories in a Visual Studio C++ project. There are hint files in the `vcpackages`, `Debug`, `A1`, and `A2` directories.
 
-### <a name="hint-file-directories"></a>İpucu dosyası dizinleri
+### <a name="hint-file-directories"></a>Hint File Directories
 
-![Ortak ve proje&#45;belirli ipucu dosyası dizinleri. ](media/hintfile.png "HintFile")
+![Common and project&#45;specific hint file directories.](media/hintfile.png "HintFile")
 
-### <a name="directories-and-hint-file-contents"></a>Dizinler ve ipucu dosyası içeriği
+### <a name="directories-and-hint-file-contents"></a>Directories and Hint File Contents
 
-Bu liste, bu projede ipucu dosyaları ve bu ipucu dosyaların içeriğini içeren dizinleri gösterir. Birçok ipuçları, yalnızca bazıları `vcpackages` dizin ipucu dosyası listelenmiştir:
+This list shows the directories in this project that contain hint files, and the contents of those hint files. Only some of the many hints in the `vcpackages` directory hint file are listed:
 
 - vcpackages
 
@@ -210,13 +210,13 @@ Bu liste, bu projede ipucu dosyaları ve bu ipucu dosyaların içeriğini içere
     #undef CBRACE
     ```
 
-### <a name="effective-hints"></a>Etkili ipuçları
+### <a name="effective-hints"></a>Effective Hints
 
-Bu tabloda, bu projede kaynak dosyaları için etkili ipuçları listelenmiştir:
+This table lists the effective hints for the source files in this project:
 
-- Kaynak dosya: A1_A2_B.cpp
+- Source File: A1_A2_B.cpp
 
-- Etkili ipuçları:
+- Effective hints:
 
     ```cpp.hint
     // vcpackages (partial list)
@@ -232,19 +232,19 @@ Bu tabloda, bu projede kaynak dosyaları için etkili ipuçları listelenmiştir
     #define END_NAMESPACE }
     ```
 
-Bu Notlar Yukarıdaki listeye geçerlidir:
+These notes apply to the preceding list:
 
-- Etkili ipuçları arasındadır `vcpackages`, `Debug`, `A1`, ve `A2` dizinleri.
+- The effective hints are from the `vcpackages`, `Debug`, `A1`, and `A2` directories.
 
-- **#Undef** yönergesini `Debug` ipucu dosyası kaldırıldı `#define _In_` içinde İpucu `vcpackages` dizin ipucu dosyası.
+- The **#undef** directive in the `Debug` hint file removed the `#define _In_` hint in the `vcpackages` directory hint file.
 
-- İpucu dosyasında `A1` dizin'ı yeniden tanımladığı `START_NAMESPACE`.
+- The hint file in the `A1` directory redefines `START_NAMESPACE`.
 
-- `#undef` İçinde İpucu `A2` dizin ipuçları kaldırıldı `OBRACE` ve `CBRACE` içinde `Debug` dizin ipucu dosyası.
+- The `#undef` hint in the `A2` directory removed the hints for `OBRACE` and `CBRACE` in the `Debug` directory hint file.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Oluşturulan türleri için Visual Studio dosya C++ projeleri](file-types-created-for-visual-cpp-projects.md)<br>
+[File Types Created for Visual Studio C++ projects](file-types-created-for-visual-cpp-projects.md)<br>
 [#define Yönergesi (C/C++)](../../preprocessor/hash-define-directive-c-cpp.md)<br>
 [#undef Yönergesi (C/C++)](../../preprocessor/hash-undef-directive-c-cpp.md)<br>
 [SAL Ek Açıklamaları](../../c-runtime-library/sal-annotations.md)<br>

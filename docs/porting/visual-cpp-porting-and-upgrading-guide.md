@@ -1,65 +1,65 @@
 ---
-title: Microsoft C++ taşıma ve Yükseltme Kılavuzu
-description: Microsoft C++ Code 'U Visual Studio 'nun en son sürümüne yükseltin.
-ms.date: 11/05/2019
+title: Microsoft C++ porting and upgrading guide
+description: Upgrade Microsoft C++ code to the latest version of Visual Studio.
+ms.date: 11/18/2019
 ms.assetid: f5fbcc3d-aa72-41a6-ad9a-a706af2166fb
 ms.topic: overview
-ms.openlocfilehash: 04c3950d637c01031e78d0d95e13232143ceb232
-ms.sourcegitcommit: 4dde7914608508e47c21cae03ac58fe953a0c29b
+ms.openlocfilehash: 88b5b31428979d26bbbf810c4c04c99f411dbcbb
+ms.sourcegitcommit: 217fac22604639ebd62d366a69e6071ad5b724ac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74119493"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74189332"
 ---
-# <a name="microsoft-c-porting-and-upgrading-guide"></a>Microsoft C++ taşıma ve Yükseltme Kılavuzu
+# <a name="microsoft-c-porting-and-upgrading-guide"></a>Microsoft C++ porting and upgrading guide
 
-Bu konuda, Microsoft C++ kodunu Visual Studio 'nun en son sürümüne yükseltmeye yönelik bir kılavuz sağlanmaktadır. Visual Studio 2008 veya önceki sürümlerde oluşturulan bir projeden yükseltiyorsanız, önce Visual Studio 2010 ' i kullanarak projeyi MSBuild biçimine dönüştürmeniz, ardından projeyi Visual Studio 2019 ' de açmanız gerekir. Visual Studio 2010 ile 2015 arasında oluşturulan projeler için Visual Studio 2019 ' de projeyi açmanız yeterlidir. Tüm yönergeler için bkz. [Visual C++ Studio 'nun önceki sürümlerinden projeleri yükseltme](upgrading-projects-from-earlier-versions-of-visual-cpp.md).
+This article provides a guide for upgrading Microsoft C++ code to the latest version of Visual Studio. For projects created in Visual Studio 2010 through 2015, just open the project in Visual Studio 2019. You can upgrade a Visual Studio 2008 or earlier project in two steps. Use Visual Studio 2010 to convert the project to MSBuild format first. Then open the project in Visual Studio 2019. For complete instructions, see [Upgrading C++ projects from earlier versions of Visual Studio](upgrading-projects-from-earlier-versions-of-visual-cpp.md).
 
-Visual Studio 2015 ' deki araç kümeleri, Visual Studio 2017 ve Visual Studio 2019 ikili uyumludur ve kitaplık bağımlılıklarını yükseltmek zorunda kalmadan derleyicinin daha yeni bir sürümüne yükseltmenizi sağlar. Daha fazla bilgi için bkz [ C++ . 2015 ve 2019 arasındaki ikili uyumluluk](binary-compat-2015-2017.md).
+The toolsets in Visual Studio 2015, Visual Studio 2017, and Visual Studio 2019 are binary-compatible. Now you can upgrade to a more recent version of the compiler without having to upgrade your library dependencies. For more information, see [C++ binary compatibility 2015-2019](binary-compat-2015-2017.md).
 
-Açık kaynaklı kitaplıkları kullanan veya birden çok platformda çalışacak olan projeleri yükseltirken, CMake tabanlı bir projeye geçiş yapmanız önerilir. Daha fazla bilgi için bkz. [Visual Studio 'Da CMake projeleri](../build/cmake-projects-in-visual-studio.md)
+When upgrading projects that use open-source libraries or are meant to run on multiple platforms, we recommended migrating to a CMake-based project. For more information, see [CMake projects in Visual Studio](../build/cmake-projects-in-visual-studio.md)
 
-## <a name="reasons-to-upgrade-c-code"></a>Kodu yükseltme C++ nedenleri
+## <a name="reasons-to-upgrade-c-code"></a>Reasons to upgrade C++ code
 
-Eski bir uygulama çalışır durumda, güvenli bir ortamda çalışır ve etkin geliştirme kapsamında değilse, bunu yükseltmek için çok daha özensiz bir sorun olabilir. Ancak, bir uygulama devam eden bakım veya performans veya güvenlik iyileştirmeleri dahil yeni özellik geliştirmesi gerektiriyorsa, aşağıdaki nedenlerden herhangi biri için kodu yükseltmeniz göz önüne alabilirsiniz:
+If a legacy application is running satisfactorily, in a secure environment, and isn't under active development, there might not be much incentive to upgrade it. However, consider an upgrade in these cases: Your application requires ongoing maintenance. Or, you're doing new feature development, or making performance or security improvements. An upgrade brings these benefits:
 
-- Aynı kod, geliştirilmiş derleyici iyileştirmeleri nedeniyle daha hızlı çalışabilir.
+- The same code can run faster, because we've improved compiler optimizations.
 
-- Modern C++ Özellikler ve programlama uygulamaları, hataların yaygın olarak karşılaşılan nedenlerini ortadan kaldırır ve eski C stili deyimlerinin korunması çok daha kolay olan kodlar üretir.
+- Modern C++ features and programming practices eliminate many common causes of bugs, and produce code that's far easier to maintain than older C-style idioms.
 
-- Derleme süreleri, derleyicide ve bağlayıcıdaki performans iyileştirmeleri nedeniyle önemli ölçüde daha hızlıdır.
+- Build times are faster, because of performance improvements in the compiler and linker.
 
-- Daha iyi standartlar uygunluğu. [/Permissive-](../build/reference/permissive-standards-conformance.md) derleyici seçeneği, daha önce Microsoft C++ derleyicisi tarafından izin verilen ancak geçerli C++ standarda uygun olmayan kodu tanımlamanızı sağlar.
+- Better standards conformance. The [/permissive-](../build/reference/permissive-standards-conformance.md) compiler option helps you identify code that doesn't conform to the current C++ standard.
 
-- Daha güvenli [C çalışma zamanı kitaplığı]() özellikleri ve [koruyucu denetimi](../build/reference/guard-enable-guard-checks.md) ve adres temizleme (Visual Studio 2019 sürüm 16,4) gibi derleyici özellikleri de dahil olmak üzere daha iyi çalışma zamanı güvenliği.
+- Better run-time security, including more secure [C Runtime library]() features. And, compiler features such as [guard checking](../build/reference/guard-enable-guard-checks.md) and address sanitizers (new in Visual Studio 2019 version 16.4).
 
-## <a name="multitargeting-vs-upgrading"></a>Çoklu hedefleme ve yükseltme
+## <a name="multitargeting-vs-upgrading"></a>Multitargeting vs. upgrading
 
-Kod tabanınızı yeni bir araç takımına yükseltmek bir seçenek değilse, daha eski araç kümeleri ve kitaplıkları ile derlenen projeleri derlemek ve düzenlemek için Visual Studio 'nun son sürümünü kullanmaya devam edebilirsiniz. Visual Studio 2019 ' de, şu özelliklerden yararlanabilirsiniz:
+Perhaps upgrading your code base to a new toolset isn't an option for you. You can still use the latest Visual Studio to build and edit projects that use older toolsets and libraries. In Visual Studio 2019, you can take advantage of features such as:
 
-- kaynak kodunuzda olası sorunları belirlemenize yardımcı olmak C++ Için temel yönergeler denetleyicileri ve Clang-Tidy dahil olmak üzere modern statik analiz araçları.
+- modern static analysis tools, including the C++ Core Guidelines checkers and Clang-Tidy, to help identify potential problems in your source code.
 
-- modern stilleri seçiminize göre otomatik biçimlendirme, eski kodların çok daha okunaklı olmasına yardımcı olabilir.
+- automatic formatting according to your choice of modern styles can help make legacy code much more readable.
 
-Daha fazla bilgi için bkz. [Eski projeler oluşturmak Için Visual Studio 'da yerel çoklu sürüm kullanımını kullanma](use-native-multi-targeting.md).
+For more information, see [Use native multi-targeting in Visual Studio to build old projects](use-native-multi-targeting.md).
 
 ## <a name="in-this-section"></a>Bu bölümde
 
 |Başlık|Açıklama|
 |-----------|-----------------|
-|[Visual C++ Studio 'nun önceki sürümlerinden projeleri yükseltme](upgrading-projects-from-earlier-versions-of-visual-cpp.md)|Kod tabanınızı Visual Studio 2019 ve derleyicinin v142 sürümüne yükseltme.|
-|[Kod yükseltmek C++ için IDE araçları](ide-tools-for-upgrading-code.md)|Yükseltme sürecinde yardımcı olan yararlı IDE özellikleri.|
-|[C++2015 ile 2019 arasında ikili uyumluluk](binary-compat-2015-2017.md)|V140 kitaplıklarını v142 projelerinden olduğu gibi kullanın.|
-|[Visual Studio’da Eski Projeleri Oluşturmak için Yerel Çoklu Sürüm Paketi Kullanma](use-native-multi-targeting.md)|Daha eski derleyiciler ve kitaplıklarla Visual Studio 2019 kullanın.|
-|[Visual C++ değişiklik geçmişi 2003 - 2015](visual-cpp-change-history-2003-2015.md)|Microsoft C++ kitaplıklarında yapılan tüm değişikliklerin listesi ve Visual Studio 2003 ile 2015 arasındaki derleme araçları, kodunuzda değişiklik yapılmasını gerektirebilir.|
-|[Visual C++ 2003 ile 2015 Arasındaki Farklar](visual-cpp-what-s-new-2003-through-2015.md)|Visual Studio 2015 aracılığıyla Visual Studio 2003 ' den Microsoft C++ 'a yönelik "yenilikler" bilgileri.|
-|[Taşıma ve Yükseltme: Örnekler ve Örnek Olay İncelemeleri](porting-and-upgrading-examples-and-case-studies.md)|Bu bölümde, birkaç örnek ve uygulama ele alınmıştır ve bu deneyimleri ve sonuçları tartıştık. Bunları okumayı, taşıma ve yükseltme sürecinde nelerin bulunduğunu anlabileceğinizi fark edebilirsiniz. İşlemin tamamında, yükseltme için ipuçları ve püf noktaları tartışıyoruz ve belirli hataların düzeltilme şeklini gösteririz.|
-|[Evrensel Windows Platformu taşıma](porting-to-the-universal-windows-platform-cpp.md)|Windows 10 ' a kod taşıma hakkında bilgi içerir|
-|[UNIX Kullanıcıları için Visual C++'a Giriş](introduction-to-visual-cpp-for-unix-users.md)|Görsele C++ yenı olan UNIX kullanıcıları için bilgi sağlar ve bu verilerle üretken olmak ister.|
-|[Windows 'da Linux programlarını çalıştırma](porting-from-unix-to-win32.md)|UNIX uygulamalarının Windows 'a geçirilmesi için seçenekleri açıklar.|
+|[Upgrading C++ projects from earlier versions of Visual Studio](upgrading-projects-from-earlier-versions-of-visual-cpp.md)|How to upgrade your code base to Visual Studio 2019 and v142 of the compiler.|
+|[IDE tools for upgrading C++ code](ide-tools-for-upgrading-code.md)|Useful IDE features that help in the upgrade process.|
+|[C++ binary compatibility 2015-2019](binary-compat-2015-2017.md)|Consume v140 and v141 libraries as-is from v142 projects.|
+|[Visual Studio’da Eski Projeleri Oluşturmak için Yerel Çoklu Sürüm Paketi Kullanma](use-native-multi-targeting.md)|Use Visual Studio 2019 with older compilers and libraries.|
+|[Visual C++ değişiklik geçmişi 2003 - 2015](visual-cpp-change-history-2003-2015.md)|A list of all the changes in the Microsoft C++ libraries and build tools from Visual Studio 2003 through 2015 that might require changes in your code.|
+|[Visual C++ 2003 ile 2015 Arasındaki Farklar](visual-cpp-what-s-new-2003-through-2015.md)|All the "what's new" information for Microsoft C++ from Visual Studio 2003 through Visual Studio 2015.|
+|[Taşıma ve Yükseltme: Örnekler ve Örnek Olay İncelemeleri](porting-and-upgrading-examples-and-case-studies.md)|For this section, we ported and upgrades several samples and applications and discussed the experiences and results. These articles give you a sense of what's involved in the porting and upgrading process. Throughout the process, we discuss tips and tricks for upgrading and show how specific errors were fixed.|
+|[Porting to the Universal Windows Platform](porting-to-the-universal-windows-platform-cpp.md)|Contains information about porting code to Windows 10|
+|[UNIX Kullanıcıları için Visual C++'a Giriş](introduction-to-visual-cpp-for-unix-users.md)|Provides information for UNIX users who are new to Visual C++ and want to become productive with it.|
+|[Running Linux programs on Windows](porting-from-unix-to-win32.md)|Discusses options for migrating UNIX applications to Windows.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Visual Studio’da C++](../overview/visual-cpp-in-visual-studio.md)<br/>
-[Visual Studio 'daki C++ derleyicide yenilikler](../overview/what-s-new-for-visual-cpp-in-visual-studio.md)<br/>
+[What's New for The C++ compiler in Visual Studio](../overview/what-s-new-for-visual-cpp-in-visual-studio.md)<br/>
 [Visual Studio’deki C++ uyumluluk geliştirmeleri](../overview/cpp-conformance-improvements.md)<br/>

@@ -1,31 +1,31 @@
 ---
-title: Derleyici Uyarısı (Düzey 3) C4521
+title: Compiler Warning (level 3) C4521
 ms.date: 11/04/2016
 f1_keywords:
 - C4521
 helpviewer_keywords:
 - C4521
 ms.assetid: 057d770c-ebcf-44cd-b943-1b1bb1ceaa8c
-ms.openlocfilehash: 887526810f7e65280adcde422ef871a67ccdde1f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 362fd3c14037fa62ab73c928a45eaf7808de66bc
+ms.sourcegitcommit: 217fac22604639ebd62d366a69e6071ad5b724ac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62401923"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74189357"
 ---
-# <a name="compiler-warning-level-3-c4521"></a>Derleyici Uyarısı (Düzey 3) C4521
+# <a name="compiler-warning-level-3-c4521"></a>Compiler Warning (level 3) C4521
 
-'class': birden fazla kopya Oluşturucusu belirtildi
+'class' : multiple copy constructors specified
 
-Sınıfın tek bir türde birden fazla kopya Oluşturucusu vardır. Bu uyarı, bilgi amaçlıdır; Oluşturucular, programınızda çağrılabilir.
+The class has multiple copy constructors of a single type. This warning is informational; the constructors are callable in your program.
 
-Kullanım [uyarı](../../preprocessor/warning.md) Bu uyarının gösterilmemesi için pragması.
+Use the [warning](../../preprocessor/warning.md) pragma to suppress this warning.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C4521 oluşturur.
+The following sample generates C4521.
 
-```
+```cpp
 // C4521.cpp
 // compile with: /EHsc /W3
 #include <iostream>

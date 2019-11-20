@@ -1,27 +1,27 @@
 ---
-title: Derleyici Uyarısı (Düzey 3) C4645
+title: Compiler Warning (level 3) C4645
 ms.date: 11/04/2016
 f1_keywords:
 - C4645
 helpviewer_keywords:
 - C4645
 ms.assetid: fd7c1ddf-f0d0-4e10-bab9-ccb4c3476298
-ms.openlocfilehash: a3e5c834a3f14b9a125176dcddd5bcc355cf1faa
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4fa286f177284c03e5067b4af56f4e606b073653
+ms.sourcegitcommit: 217fac22604639ebd62d366a69e6071ad5b724ac
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62401650"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74189370"
 ---
-# <a name="compiler-warning-level-3-c4645"></a>Derleyici Uyarısı (Düzey 3) C4645
+# <a name="compiler-warning-level-3-c4645"></a>Compiler Warning (level 3) C4645
 
-__declspec(noreturn) ile bildirilen işlevde dönüş deyimi var
+function declared with __declspec(noreturn) has a return statement
 
-A [dönüş](../../cpp/return-statement-in-program-termination-cpp.md) deyimi ile işaretlenmiş bir işlev bulundu [noreturn](../../cpp/noreturn.md) `__declspec` değiştiricisi. `return` Deyimi yoksayıldı.
+A [return](../../cpp/return-statement-in-program-termination-cpp.md) statement was found in a function that is marked with the [noreturn](../../cpp/noreturn.md) `__declspec` modifier. The `return` statement was ignored.
 
-Aşağıdaki örnek, C4645 oluşturur:
+The following sample generates C4645:
 
-```
+```cpp
 // C4645.cpp
 // compile with:  /W3
 void __declspec(noreturn) func() {
