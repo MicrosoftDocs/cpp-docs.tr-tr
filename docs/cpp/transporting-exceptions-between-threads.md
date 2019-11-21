@@ -14,16 +14,16 @@ helpviewer_keywords:
 - rethrow_exception
 - move exceptions between threads
 ms.assetid: 5c95d57b-acf5-491f-8122-57c5df0edd98
-ms.openlocfilehash: db9546bb02fcd5b253fec29777fd71172e50739e
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 25b09c508b932a4d1470f6b23f03aa52e62c68cc
+ms.sourcegitcommit: 654aecaeb5d3e3fe6bc926bafd6d5ace0d20a80e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69500596"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74246307"
 ---
 # <a name="transporting-exceptions-between-threads"></a>Özel durumları iş parçacıkları arasında taşıma
 
-Microsoft C++ DERLEYICISI (MSVC) bir *özel durumun* bir iş parçacığından diğerine taşınmasını destekler. Taşınan özel durumlar bir iş parçacığındaki özel durumu yakalamanızı sağlar ve sonra özel durumun farklı bir iş parçacığında oluşmuş gibi görünmesini sağlar. Örneğin, bu özelliği birincil iş parçacığının ikincil iş parçacıkları tarafından oluşturulan tüm özel durumları işlediği çok iş parçacıklı bir uygulamayı yazmak için kullanabilirsiniz. Özel durum taşımaları, çoğunlukla paralel programlama kitaplıkları veya sistemleri oluşturan geliştiriciler için yararlıdır. MSVC, taşıma özel durumlarını uygulamak için [exception_ptr](../standard-library/exception-typedefs.md#exception_ptr) türünü ve [current_exception](../standard-library/exception-functions.md#current_exception), [rethrow_exception](../standard-library/exception-functions.md#rethrow_exception)ve [make_exception_ptr](../standard-library/exception-functions.md#make_exception_ptr) işlevlerini sağlar.
+The Microsoft C++ compiler (MSVC) supports *transporting an exception* from one thread to another. Taşınan özel durumlar bir iş parçacığındaki özel durumu yakalamanızı sağlar ve sonra özel durumun farklı bir iş parçacığında oluşmuş gibi görünmesini sağlar. Örneğin, bu özelliği birincil iş parçacığının ikincil iş parçacıkları tarafından oluşturulan tüm özel durumları işlediği çok iş parçacıklı bir uygulamayı yazmak için kullanabilirsiniz. Özel durum taşımaları, çoğunlukla paralel programlama kitaplıkları veya sistemleri oluşturan geliştiriciler için yararlıdır. To implement transporting exceptions, MSVC provides the [exception_ptr](../standard-library/exception-typedefs.md#exception_ptr) type and the [current_exception](../standard-library/exception-functions.md#current_exception), [rethrow_exception](../standard-library/exception-functions.md#rethrow_exception), and [make_exception_ptr](../standard-library/exception-functions.md#make_exception_ptr) functions.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -42,16 +42,16 @@ namespace std
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*Memesi*|`exception_ptr` Türü uygulamak için kullanılan belirtilmemiş bir iç sınıf.|
-|*p*|Özel `exception_ptr` duruma başvuran bir nesne.|
+|*unspecified*|An unspecified internal class that is used to implement the `exception_ptr` type.|
+|*p*|An `exception_ptr` object that references an exception.|
 |*E*|Bir özel durumu temsil eden sınıf.|
-|*e*|Parametre `E` sınıfının bir örneği.|
+|*e*|An instance of the parameter `E` class.|
 
-## <a name="return-value"></a>Dönüş Değeri
+## <a name="return-value"></a>Return value
 
-İşlevi, devam etmekte `exception_ptr` olan özel duruma başvuran bir nesne döndürür. `current_exception` Devam eden bir özel durum yoksa, işlev herhangi bir özel `exception_ptr` durumla ilişkilendirilmemiş bir nesne döndürür.
+The `current_exception` function returns an `exception_ptr` object that references the exception that is currently in progress. If no exception is in progress, the function returns an `exception_ptr` object that is not associated with any exception.
 
-İşlevi, e parametresi `exception_ptr` tarafından belirtilen özel duruma başvuran bir nesne döndürür. `make_exception_ptr`
+The `make_exception_ptr` function returns an `exception_ptr` object that references the exception specified by the *e* parameter.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -63,88 +63,88 @@ Ancak, ikincil bir iş parçacığı bir özel durum oluşturursa, birincil iş 
 
 ### <a name="solution"></a>Çözüm
 
-C++ Standard, önceki senaryonun işlenmesi için, bir özel durumun iş parçacıkları arasında taşınmasını destekler. İkincil bir iş parçacığı bir özel durum oluşturursa, bu özel durum *geçerli özel durum*olur. Benzerleme vurguladı ile gerçek dünyaya, geçerli özel durumun *uçuş*aşamasında olduğu söylenir. Geçerli özel durum, özel durum işleyicisi tarafından dönüşü yakalanana kadar uçuştadır.
+C++ Standard, önceki senaryonun işlenmesi için, bir özel durumun iş parçacıkları arasında taşınmasını destekler. If a secondary thread throws an exception, that exception becomes the *current exception*. By analogy to the real world, the current exception is said to be *in flight*. Geçerli özel durum, özel durum işleyicisi tarafından dönüşü yakalanana kadar uçuştadır.
 
-İkincil iş parçacığı, bir **catch** bloğunda geçerli özel durumu yakalayabilir ve sonra özel durumu bir `current_exception` `exception_ptr` nesne içinde depolamak için işlevini çağırabilir. `exception_ptr` Nesne, ikincil iş parçacığı ve birincil iş parçacığı için kullanılabilir olmalıdır. Örneğin, `exception_ptr` nesnesi, erişimi bir mutex tarafından denetlenen genel bir değişken olabilir. *Özel durum taşıma* terimi, bir iş parçacığında bir özel durumun başka bir iş parçacığı tarafından erişilebilen bir biçime dönüştürülebileceği anlamına gelir.
+The secondary thread can catch the current exception in a **catch** block, and then call the `current_exception` function to store the exception in an `exception_ptr` object. The `exception_ptr` object must be available to the secondary thread and to the primary thread. For example, the `exception_ptr` object can be a global variable whose access is controlled by a mutex. The term *transport an exception* means an exception in one thread can be converted to a form that can be accessed by another thread.
 
-Ardından, birincil iş parçacığı `rethrow_exception` işlevini çağırarak `exception_ptr` nesnesinden özel durumu ayıklar ve sonra oluşturur. Özel durum oluştuğunda, birincil iş parçacığındaki geçerli özel durum haline gelir. Diğer bir deyişle, özel durum birincil iş parçacığında oluşmuş görünür.
+Next, the primary thread calls the `rethrow_exception` function, which extracts and then throws the exception from the `exception_ptr` object. Özel durum oluştuğunda, birincil iş parçacığındaki geçerli özel durum haline gelir. Diğer bir deyişle, özel durum birincil iş parçacığında oluşmuş görünür.
 
-Son olarak, birincil iş parçacığı geçerli özel durumu bir **catch** bloğunda yakalayabilir ve sonra işleyebilir veya daha yüksek düzeydeki bir özel durum işleyicisine atar. Ya da birincil iş parçacığı özel durumu yoksayar ve işlemi sonlandırmaya izin verir.
+Finally, the primary thread can catch the current exception in a **catch** block and then process it or throw it to a higher level exception handler. Ya da birincil iş parçacığı özel durumu yoksayar ve işlemi sonlandırmaya izin verir.
 
 Çoğu uygulamada özel durumların iş parçacıkları arasında taşınması gerekmez. Ancak, sistem işi ikincil iş parçacıkları, işlemci veya çekirdek arasında bölebildiğinden, bu özellik paralel bir bilgi işlem sisteminde yararlıdır. Paralel bir bilgi işlem ortamında, tek ve özel bir iş parçacığı ikincil iş parçacıklarından gelen tüm özel durumları işleyebilir ve herhangi bir uygulama için tutarlı bir özel durum işleme modeli sunabilir.
 
 C++ Standartları komitesi teklifi hakkında daha fazla bilgi için, internette "Özel Durumları İş Parçacıkları Arasında Taşıma için Dil Desteği" başlıklı N2179 belge numarasını arayın.
 
-### <a name="exception-handling-models-and-compiler-options"></a>Özel Durum-İşleme Modelleri ve Derleyici Seçenekleri
+### <a name="exception-handling-models-and-compiler-options"></a>Exception-handling models and compiler options
 
-Uygulamanızın özel durum işleme modeli, bir özel durumu yakalayıp taşıyabileceğini ya da bunu yapamayacağınızı belirler. Visual C+; C++ özel durumlarını, yapılandırılmış özel durum işleme (SEH) özel durumlarını ve ortak dil çalışma zamanı (CLR) özel durumlarını işleyebilen üç modeli destekler. Uygulamanızın özel durum işleme modelini belirtmek için [/Eh](../build/reference/eh-exception-handling-model.md) ve [/clr](../build/reference/clr-common-language-runtime-compilation.md) derleyici seçeneklerini kullanın.
+Uygulamanızın özel durum işleme modeli, bir özel durumu yakalayıp taşıyabileceğini ya da bunu yapamayacağınızı belirler. Visual C+; C++ özel durumlarını, yapılandırılmış özel durum işleme (SEH) özel durumlarını ve ortak dil çalışma zamanı (CLR) özel durumlarını işleyebilen üç modeli destekler. Use the [/EH](../build/reference/eh-exception-handling-model.md) and [/clr](../build/reference/clr-common-language-runtime-compilation.md) compiler options to specify your application's exception-handling model.
 
 Yalnızca aşağıdaki derleyici seçeneklerinin ve programlama deyimlerinin birleşimi bir özel durumu taşıyabilir. Diğer birleşimler özel durumları yakalayamaz ya da özel durumları yakalasa da taşıyamaz.
 
-- **/EHa** derleyici seçeneği ve **catch** deyimleri, SEH ve C++ özel durumları taşıyabilir.
+- The **/EHa** compiler option and the **catch** statement can transport SEH and C++ exceptions.
 
-- **/EHa**, **/EHS**ve **/EHsc** derleyici seçenekleri ve **catch** deyimleri C++ özel durumları taşıyabilir.
+- The **/EHa**, **/EHs**, and **/EHsc** compiler options and the **catch** statement can transport C++ exceptions.
 
-- **/Clr** derleyici seçeneği ve **catch** deyimleri C++ özel durumları taşıyabilir. **/Clr** derleyici seçeneği, **/EHa** seçeneğinin belirtimini gerektirir. Derleyicinin yönetilen özel durumların taşınmasını desteklemediğini unutmayın. Bunun nedeni, [System. Exception sınıfından](../standard-library/exception-class.md)türetilen yönetilen özel durumların, ortak dil çalışma zamanının tesislerini kullanarak iş parçacıkları arasında taşıyabildiğiniz bir nesnelerdir.
+- The **/CLR** compiler option and the **catch** statement can transport C++ exceptions. The **/CLR** compiler option implies specification of the **/EHa** option. Derleyicinin yönetilen özel durumların taşınmasını desteklemediğini unutmayın. This is because managed exceptions, which are derived from the [System.Exception class](../standard-library/exception-class.md), are already objects that you can move between threads by using the facilities of the common languange runtime.
 
    > [!IMPORTANT]
-   > **/EHsc** derleyici seçeneğini belirtmenizi ve yalnızca C++ özel durumları yakalanmasını öneririz. **/EHa** veya **/clr** derleyici seçeneğini ve üç nokta *özel durum bildirimi* (`catch(...)`) ile bir **catch** bildirimini kullanırsanız, kendinizi bir güvenlik tehditlerine maruz olursunuz. Büyük olasılıkla bazı özel durumları yakalamak için **catch** ifadesini kullanmayı amaçlarsınız. Ancak, `catch(...)` ifade, önemli olması C++ gereken beklenmeyen olanlar da dahil olmak üzere All ve SEH özel durumlarını yakalar. Beklenmeyen bir özel durumu yoksayarsanız ya da düzgün işleyemezseniz, kötü amaçlı yazılımlar programınızın güvenliğine zarar vermek için bu fırsatı kullanabilir.
+   > We recommend that you specify the **/EHsc** compiler option and catch only C++ exceptions. You expose yourself to a security threat if you use the **/EHa** or **/CLR** compiler option and a **catch** statement with an ellipsis *exception-declaration* (`catch(...)`). You probably intend to use the **catch** statement to capture a few specific exceptions. However, the `catch(...)` statement captures all C++ and SEH exceptions, including unexpected ones that should be fatal. Beklenmeyen bir özel durumu yoksayarsanız ya da düzgün işleyemezseniz, kötü amaçlı yazılımlar programınızın güvenliğine zarar vermek için bu fırsatı kullanabilir.
 
 ## <a name="usage"></a>Kullanım
 
-Aşağıdaki bölümlerde, `exception_ptr` türü `current_exception`ve, `rethrow_exception`ve `make_exception_ptr` işlevleri kullanılarak özel durumların nasıl taşınması anlatılmaktadır.
+The following sections describe how to transport exceptions by using the `exception_ptr` type, and the `current_exception`, `rethrow_exception`, and `make_exception_ptr` functions.
 
-## <a name="exception_ptr-type"></a>exception_ptr Türü
+## <a name="exception_ptr-type"></a>exception_ptr type
 
-Geçerli özel `exception_ptr` duruma veya Kullanıcı tarafından belirtilen özel durum örneğine başvurmak için bir nesne kullanın. Microsoft uygulamasında bir özel durum, bir [EXCEPTION_RECORD](/windows/win32/api/winnt/ns-winnt-exception_record) yapısı tarafından temsil edilir. Her `exception_ptr` nesne, özel durumu temsil eden `EXCEPTION_RECORD` yapının bir kopyasına işaret eden bir özel durum başvurusu alanı içerir.
+Use an `exception_ptr` object to reference the current exception or an instance of a user-specified exception. In the Microsoft implementation, an exception is represented by an [EXCEPTION_RECORD](/windows/win32/api/winnt/ns-winnt-exception_record) structure. Each `exception_ptr` object includes an exception reference field that points to a copy of the `EXCEPTION_RECORD` structure that represents the exception.
 
-Bir `exception_ptr` değişken bildirdiğinizde, değişken herhangi bir özel durumla ilişkili değildir. Diğer bir deyişle, özel durum başvuru alanı NULL olur. Böyle bir nesne null exception_ptr olarak adlandırılır. `exception_ptr`
+When you declare an `exception_ptr` variable, the variable is not associated with any exception. Diğer bir deyişle, özel durum başvuru alanı NULL olur. Such an `exception_ptr` object is called a *null exception_ptr*.
 
-`current_exception` Bir `make_exception_ptr` nesneye özel durumatamakiçinorişlevinikullanın.`exception_ptr` Bir `exception_ptr` değişkene bir özel durum atadığınızda, değişkenin özel durum başvuru alanı özel durumun bir kopyasına işaret eder. Özel durumu kopyalamak için yeterli bellek yoksa, özel durum başvuru alanı bir [std:: bad_alloc](../standard-library/bad-alloc-class.md) özel durumunun kopyasına işaret eder. OR işlevi başka bir nedenle özel durumu kopyalayamayacağı takdirde, işlev geçerli işlemden çıkmak için Terminate işlevini çağırır. [](../c-runtime-library/reference/terminate-crt.md) `current_exception` `make_exception_ptr`
+Use the `current_exception` or `make_exception_ptr` function to assign an exception to an `exception_ptr` object. When you assign an exception to an `exception_ptr` variable, the variable's exception reference field points to a copy of the exception. If there is insufficient memory to copy the exception, the exception reference field points to a copy of a [std::bad_alloc](../standard-library/bad-alloc-class.md) exception. If the `current_exception` or `make_exception_ptr` function cannot copy the exception for any other reason, the function calls the [terminate](../c-runtime-library/reference/terminate-crt.md) function to exit the current process.
 
-Adına rağmen bir `exception_ptr` nesne bir işaretçi değildir. İşaretçi semantiğini etkilemez ve işaretçi üye erişimi (`->`) veya yöneltme (`*`) işleçleriyle kullanılamaz. `exception_ptr` Nesnenin ortak veri üyeleri veya üye işlevleri yok.
+Despite its name, an `exception_ptr` object is not itself a pointer. It does not obey pointer semantics and cannot be used with the pointer member access (`->`) or indirection (`*`) operators. The `exception_ptr` object has no public data members or member functions.
 
 ### <a name="comparisons"></a>Karşılaştırma
 
-İki`!=``==` nesneyikarşılaştırmakiçineşittir()veNot-eşit()işleçlerinikullanabilirsiniz.`exception_ptr` İşleçler, özel durumları temsil eden `EXCEPTION_RECORD` yapıların ikili değerini (bit düzeniyle) karşılaştırmaz. Bunun yerine, işleçler, `exception_ptr` nesnelerin özel durum başvurusu alanındaki adresleri karşılaştırır. Sonuç olarak, null `exception_ptr` ve null değeri eşit olarak karşılaştırılır.
+You can use the equal (`==`) and not-equal (`!=`) operators to compare two `exception_ptr` objects. The operators do not compare the binary value (bit pattern) of the `EXCEPTION_RECORD` structures that represent the exceptions. Instead, the operators compare the addresses in the exception reference field of the `exception_ptr` objects. Consequently, a null `exception_ptr` and the NULL value compare as equal.
 
-## <a name="current_exception-function"></a>current_exception İşlevi
+## <a name="current_exception-function"></a>current_exception function
 
-Bir **catch** bloğunda işlevi`current_exception` çağırın. Bir özel durum uçuş durumunda ve **catch** bloğu özel durumu yakalayabiliyorsanız, `current_exception` işlev özel duruma başvuran bir `exception_ptr` nesne döndürür. Aksi takdirde, işlev null `exception_ptr` bir nesne döndürür.
+Call the `current_exception` function in a **catch** block. If an exception is in flight and the **catch** block can catch the exception, the `current_exception` function returns an `exception_ptr` object that references the exception. Otherwise, the function returns a null `exception_ptr` object.
 
 ### <a name="details"></a>Ayrıntılar
 
-İşlevi, catch ifadesinin bir [özel durum bildirimi](../cpp/try-throw-and-catch-statements-cpp.md) bildirimi belirttiğinden bağımsız olarak, uçuştaki özel durumu yakalar. `current_exception`
+The `current_exception` function captures the exception that is in flight regardless of whether the **catch** statement specifies an [exception-declaration](../cpp/try-throw-and-catch-statements-cpp.md) statement.
 
-Özel durumu yeniden oluşturmazsınız, geçerli özel durum için yok edici **catch** bloğunun sonunda çağırılır. Ancak, `current_exception` işlevi yıkıcıda çağırsanız bile, işlev geçerli özel duruma başvuran bir `exception_ptr` nesne döndürür.
+The destructor for the current exception is called at the end of the **catch** block if you do not rethrow the exception. However, even if you call the `current_exception` function in the destructor, the function returns an `exception_ptr` object that references the current exception.
 
-`current_exception` İşleve art arda yapılan çağrılar, `exception_ptr` geçerli özel durumun farklı kopyalarına başvuran nesneler döndürür. Sonuç olarak, kopyalar aynı ikili değerde olsalar da farklı kopyalara başvurduklarından, nesneler eşit olmayarak karşılaştırılır.
+Successive calls to the `current_exception` function return `exception_ptr` objects that refer to different copies of the current exception. Sonuç olarak, kopyalar aynı ikili değerde olsalar da farklı kopyalara başvurduklarından, nesneler eşit olmayarak karşılaştırılır.
 
-### <a name="seh-exceptions"></a>SEH özel durumları
+### <a name="seh-exceptions"></a>SEH exceptions
 
-**/EHa** derleyici seçeneğini kullanırsanız, bir C++ SEH özel durumunu **catch** bloğunda yakalayabilirsiniz. İşlevi, SEH özel `exception_ptr` durumuna başvuran bir nesne döndürür. `current_exception` Ve işlevi bağımsız değişkeni olarak thetranted `exception_ptr` nesnesiyle birlikte çağırırsanız, SEH özel durumunu atar. `rethrow_exception`
+If you use the **/EHa** compiler option, you can catch an SEH exception in a C++ **catch** block. The `current_exception` function returns an `exception_ptr` object that references the SEH exception. And the `rethrow_exception` function throws the SEH exception if you call it with thetransported `exception_ptr` object as its argument.
 
-`exception_ptr` İşlevi bir SEH __finally sonlandırma işleyicisine, bir __except özel durum işleyicisine veya __except filtre ifadesine çağırırsanız null değeri döndürür. `current_exception`
+The `current_exception` function returns a null `exception_ptr` if you call it in an SEH **__finally** termination handler, an **__except** exception handler, or the **__except** filter expression.
 
-Taşınan özel durumlar iç içe geçmiş özel durumları desteklemez. Bir iç içe geçmiş özel durum, bir özel durum işlenirken başka bir özel durumun oluşturulmasıyla ortaya çıkar. İç içe geçmiş bir özel durumu yakalarsanız `EXCEPTION_RECORD.ExceptionRecord` , veri üyesi ilişkili özel durumları tanımlayan `EXCEPTION_RECORD` bir yapı zincirine işaret eder. İşlevi `current_exception` , `ExceptionRecord` veri üyesi sıfırlandı bir `exception_ptr` nesne döndürdüğünden iç içe özel durumları desteklemez.
+Taşınan özel durumlar iç içe geçmiş özel durumları desteklemez. Bir iç içe geçmiş özel durum, bir özel durum işlenirken başka bir özel durumun oluşturulmasıyla ortaya çıkar. If you catch a nested exception, the `EXCEPTION_RECORD.ExceptionRecord` data member points to a chain of `EXCEPTION_RECORD` structures that describe the associated exceptions. The `current_exception` function does not support nested exceptions because it returns an `exception_ptr` object whose `ExceptionRecord` data member is zeroed out.
 
-Bir seh özel durumu yakalarsanız, `EXCEPTION_RECORD.ExceptionInformation` veri üyesi dizisindeki herhangi bir işaretçi tarafından başvurulan belleği yönetmeniz gerekir. Belleğin, karşılık gelen `exception_ptr` nesnenin ömrü boyunca geçerli olduğunu ve `exception_ptr` nesne silindiğinde belleğin serbest olduğunu garanti etmeniz gerekir.
+If you catch an SEH exception, you must manage the memory referenced by any pointer in the `EXCEPTION_RECORD.ExceptionInformation` data member array. You must guarantee that the memory is valid during the lifetime of the corresponding `exception_ptr` object, and that the memory is freed when the `exception_ptr` object is deleted.
 
-Yapılandırılmış özel durum (SE) çevirici işlevlerini özel durumları taşıma özelliğiyle birlikte kullanabilirsiniz. Bir seh özel durumu bir C++ özel duruma çevrilmişse, `current_exception` işlev özgün SEH özel durumu yerine çevrilmiş özel duruma başvuran bir `exception_ptr` döndürür. `rethrow_exception` İşlev daha sonra, özgün özel durum değil, çevrilmiş özel durumu oluşturur. İ çevirici işlevleri hakkında daha fazla bilgi için bkz. [_set_se_translator](../c-runtime-library/reference/set-se-translator.md).
+Yapılandırılmış özel durum (SE) çevirici işlevlerini özel durumları taşıma özelliğiyle birlikte kullanabilirsiniz. If an SEH exception is translated to a C++ exception, the `current_exception` function returns an `exception_ptr` that references the translated exception instead of the original SEH exception. The `rethrow_exception` function subsequently throws the translated exception, not the original exception. For more information about SE translator functions, see [_set_se_translator](../c-runtime-library/reference/set-se-translator.md).
 
-## <a name="rethrow_exception-function"></a>rethrow_exception İşlevi
+## <a name="rethrow_exception-function"></a>rethrow_exception function
 
-Bir `exception_ptr` nesnede yakalanan bir özel durum depoladıktan sonra, birincil iş parçacığı nesneyi işleyebilir. Birincil iş parçacığın bağımsız değişkeni olarak `rethrow_exception` `exception_ptr` nesnesiyle birlikte işlevi çağırın. `rethrow_exception` İşlevi `exception_ptr` nesnesinden özel durumu ayıklar ve ardından birincil iş parçacığı bağlamında özel durumu oluşturur. `rethrow_exception` İşlevin *p* parametresi null `exception_ptr`ise, işlev [std:: bad_exception](../standard-library/bad-exception-class.md)atar.
+After you store a caught exception in an `exception_ptr` object, the primary thread can process the object. In your primary thread, call the `rethrow_exception` function together with the `exception_ptr` object as its argument. The `rethrow_exception` function extracts the exception from the `exception_ptr` object and then throws the exception in the context of the primary thread. If the *p* parameter of the `rethrow_exception` function is a null `exception_ptr`, the function throws [std::bad_exception](../standard-library/bad-exception-class.md).
 
-Ayıklanan özel durum artık birincil iş parçacığında geçerli özel durumdur ve diğer özel durumlar gibi onu işleyebilirsiniz. Özel durumu yakalarsanız, hemen işleyebilir veya bir **throw** ifadesini kullanarak daha yüksek düzey özel durum işleyicisine gönderebilirsiniz. Aksi halde, hiçbir şey yapmayın ve varsayılan sistem özel durum işleyicisinin işlemi sonlandırmasına izin verin.
+Ayıklanan özel durum artık birincil iş parçacığında geçerli özel durumdur ve diğer özel durumlar gibi onu işleyebilirsiniz. If you catch the exception, you can handle it immediately or use a **throw** statement to send it to a higher level exception handler. Aksi halde, hiçbir şey yapmayın ve varsayılan sistem özel durum işleyicisinin işlemi sonlandırmasına izin verin.
 
-## <a name="make_exception_ptr-function"></a>make_exception_ptr İşlevi
+## <a name="make_exception_ptr-function"></a>make_exception_ptr işlevi
 
-İşlevi, bağımsız değişkeni olarak bir sınıfın örneğini alır ve sonra örneğe başvuran bir `exception_ptr` döndürür. `make_exception_ptr` Genellikle, `make_exception_ptr` işlev bağımsız değişkeni olarak bir [özel durum sınıfı](../standard-library/exception-class.md) nesnesi belirtirsiniz, ancak herhangi bir sınıf nesnesi bağımsız değişken olabilir.
+The `make_exception_ptr` function takes an instance of a class as its argument and then returns an `exception_ptr` that references the instance. Usually, you specify an [exception class](../standard-library/exception-class.md) object as the argument to the `make_exception_ptr` function, although any class object can be the argument.
 
-C++ `current_exception` `exception_ptr` İşlevi çağırmak, özel durum atma, bir catch bloğunda yakalama ve sonra özel duruma başvuran bir nesne döndürmek için işlevini çağırma ile eşdeğerdir. `make_exception_ptr` `make_exception_ptr` İşlevin Microsoft uygulamasında uygulanması daha etkilidir ve bir özel durum yakalanmasıdır.
+Calling the `make_exception_ptr` function is equivalent to throwing a C++ exception, catching it in a **catch** block, and then calling the `current_exception` function to return an `exception_ptr` object that references the exception. The Microsoft implementation of the `make_exception_ptr` function is more efficient than throwing and then catching an exception.
 
-Uygulama genellikle `make_exception_ptr` işlevi gerektirmez ve kullanımını önermiyoruz.
+An application typically does not require the `make_exception_ptr` function, and we discourage its use.
 
 ## <a name="example"></a>Örnek
 
@@ -252,7 +252,7 @@ exception_ptr 1: Caught a  myException exception.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<özel durum >
+**Header:** \<exception>
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -3,20 +3,20 @@ title: Nesnelerin Kaynakları (RAII)
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: f86b484e-5a27-4c3b-a92a-dfaa5dd6d93a
-ms.openlocfilehash: 5705fc1996343141b13e37d1267b2e8c981c1eba
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d100d4a9df5d829566e4856594c44dcf4057a329
+ms.sourcegitcommit: 654aecaeb5d3e3fe6bc926bafd6d5ace0d20a80e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62245095"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74245589"
 ---
 # <a name="objects-own-resources-raii"></a>Nesnelerin Kaynakları (RAII)
 
-Kendi kaynaklarını nesnelerin emin olun. Bu ilke olarak da bilinen "kaynak alımı başlatma" ise veya "RAII."
+Make sure that objects own resources. This principle is also known as “resource acquisition is initialization” or “RAII.”
 
 ## <a name="example"></a>Örnek
 
-"Yeni" her nesne (hemen her zaman unique_ptr) sahip başka bir adlandırılmış nesnesi bir oluşturucu bağımsız değişken olarak geçirin.
+Pass every “new” object as a constructor argument to another named object that owns it (almost always unique_ptr).
 
 ```cpp
 void f() {
@@ -27,7 +27,7 @@ void f() {
   // automatic exception safety, as if "finally { p->dispose(); x.w.dispose(); }"
 ```
 
-Her zaman hemen yeni bir kaynak sahibi başka bir nesneye geçirin.
+Always immediately pass any new resource to another object that owns it.
 
 ```cpp
 void g() {
@@ -39,6 +39,6 @@ void g() {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++'a (Modern C++) Tekrar Hoş Geldiniz](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
+[Welcome back to C++](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
 [C++ Dil Başvurusu](../cpp/cpp-language-reference.md)<br/>
 [C++ Standart Kitaplığı](../standard-library/cpp-standard-library-reference.md)

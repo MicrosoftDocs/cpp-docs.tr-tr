@@ -1,46 +1,46 @@
 ---
-title: Tür Dönüştürmeleri ve Tür Güvenliği (Modern C++)
-ms.date: 05/07/2019
+title: Type conversions and type safety
+ms.date: 11/19/2019
 ms.topic: conceptual
 ms.assetid: 629b361a-2ce1-4700-8b5d-ab4f57b245d5
-ms.openlocfilehash: e06ea3f9c3ea427f205764c35988ea3316c3794a
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: dbca9057622ab1a92b74e2958b8dfbe8d810fede
+ms.sourcegitcommit: 654aecaeb5d3e3fe6bc926bafd6d5ace0d20a80e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65221857"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74246119"
 ---
-# <a name="type-conversions-and-type-safety-modern-c"></a>Tür Dönüştürmeleri ve Tür Güvenliği (Modern C++)
+# <a name="type-conversions-and-type-safety"></a>Type conversions and type safety
 
-Bu belge, tür dönüştürme için yaygın sorunlar tanımlanmakta ve nasıl bunları C++ kodunuzu önleyebilirsiniz açıklar.
+This document identifies common type conversion problems and describes how you can avoid them in your C++ code.
 
-Bir C++ programını yazdığınızda, tür kullanımı uyumlu olmasını sağlamak önemlidir. Yani, her değişken, işlev bağımsız değişkeni ve işlev dönüş değeri kabul edilebilir bir tür verileri depolamak ve farklı türlerde değerler ilgili işlemleri "mantıklı" ve bit desenlerinin yanlış yorumlanmasını veri kaybına neden olmayan veya Bellek Bozulması. Tür kullanımı uyumlu asla açıkça veya dolaylı olarak değerleri bir türden diğerine dönüştürür bir program tarafından tanımı. Ancak, tür dönüştürmeleri, güvenli olmayan dönüştürme bile, bazen gereklidir. Örneğin, bir kayan sonucunu depolamak zorunda kalabilirsiniz işlemi türündeki bir değişkene işaret **int**, veya değer işaretsiz bir geçirmeniz gerekebilir **int** imzalı bir alan bir işleve  **int**. Örneklerin her ikisi de, veri kaybı veya bir değerin yeniden yorumu neden olabileceğinden güvenli olmayan dönüştürme gösterilmektedir.
+When you write a C++ program, it's important to ensure that it's type-safe. This means that every variable, function argument, and function return value is storing an acceptable kind of data, and that operations that involve values of different types "make sense" and don't cause data loss, incorrect interpretation of bit patterns, or memory corruption. A program that never explicitly or implicitly converts values from one type to another is type-safe by definition. However, type conversions, even unsafe conversions, are sometimes required. For example, you might have to store the result of a floating point operation in a variable of type **int**, or you might have to pass the value in an unsigned **int** to a function that takes a signed **int**. Both examples illustrate unsafe conversions because they may cause data loss or re-interpretation of a value.
 
-Derleyici, güvenli olmayan bir dönüştürme algıladığında, bir hata veya uyarı verir. Bir hata derleme durdurur; bir uyarı, devam etmek derleme verir ancak koddaki olası bir hatayı gösterir. Programınızı uyarılar olmadan derleme olsa bile, ancak bunu hala yanlış sonuçlar örtük tür dönüştürmelerini müşteri adayları kod içerebilir. Tür hataları, açık dönüştürmeler ya da kod atamaları da tanıtılabilir.
+When the compiler detects an unsafe conversion, it issues either an error or a warning. An error stops compilation; a warning allows compilation to continue but indicates a possible error in the code. However, even if your program compiles without warnings, it still may contain code that leads to implicit type conversions that produce incorrect results. Type errors can also be introduced by explicit conversions, or casts, in the code.
 
-## <a name="implicit-type-conversions"></a>Örtük tür dönüştürmelerini
+## <a name="implicit-type-conversions"></a>Implicit type conversions
 
-Bir ifade işlenenleri farklı yerleşik türleri içeriyor ve açık cast mevcut olduğunda yerleşik derleyici kullanır *standart dönüştürmeler* türleri aynı şekilde işlenenlerden dönüştürmek için. Derleyici, biri başarılı olana kadar iyi tanımlanmış bir dizi Dönüşümlerde çalışır. Seçili dönüştürme promosyon ise, derleyici bir uyarı kesmez. Dönüştürme bir daraltma ise, derleyici, olası veri kaybı ile ilgili bir uyarı verir. Olup gerçek veri kaybı oluştuğunda ilgili gerçek değerlerine bağlıdır, ancak bu uyarıyı hata olarak gör öneririz. Kullanıcı tanımlı bir tür söz konusu ise, derleyici, sınıf tanımında belirttiğiniz dönüştürmeler kullanmaya çalışır. Kabul edilebilir bir dönüştürme bulamazsanız, derleyici bir hata verir ve program derlenmiyor. Standart dönüştürmeler yöneten kurallar hakkında daha fazla bilgi için bkz: [standart dönüştürmeler](../cpp/standard-conversions.md). Kullanıcı tanımlı dönüştürmeler hakkında daha fazla bilgi için bkz. [kullanıcı tanımlı Dönüşümler (C++/CLI)](../dotnet/user-defined-conversions-cpp-cli.md).
+When an expression contains operands of different built-in types, and no explicit casts are present, the compiler uses built-in *standard conversions* to convert one of the operands so that the types match. The compiler tries the conversions in a well-defined sequence until one succeeds. If the selected conversion is a promotion, the compiler does not issue a warning. If the conversion is a narrowing, the compiler issues a warning about possible data loss. Whether actual data loss occurs depends on the actual values involved, but we recommend that you treat this warning as an error. If a user-defined type is involved, then the compiler tries to use the conversions that you have specified in the class definition. If it can't find an acceptable conversion, the compiler issues an error and does not compile the program. For more information about the rules that govern the standard conversions, see [Standard Conversions](../cpp/standard-conversions.md). For more information about user-defined conversions, see [User-Defined Conversions (C++/CLI)](../dotnet/user-defined-conversions-cpp-cli.md).
 
-### <a name="widening-conversions-promotion"></a>Genişletme dönüştürmeleri (yükseltme)
+### <a name="widening-conversions-promotion"></a>Widening conversions (promotion)
 
-Öğesinde Genişletme dönüşümü, veri kaybı olmadan büyük bir değişkenle daha küçük bir değişkene bir değer atanır. Genişletme dönüştürmeleri her zaman güvenli olduğu için derleyici sessiz bir şekilde gerçekleştirir ve Uyarıları kesmez. Aşağıdaki dönüşümlerden dönüşümlerdir.
+In a widening conversion, a value in a smaller variable is assigned to a larger variable with no loss of data. Because widening conversions are always safe, the compiler performs them silently and does not issue warnings. The following conversions are widening conversions.
 
 |Başlangıç|Bitiş|
 |----------|--------|
-|Tüm imzalı veya dışında tamsayı türü imzasız **uzun uzun** veya **__int64**|**double**|
-|**bool** veya **char**|Herhangi bir yerleşik türü|
-|**kısa** veya **wchar_t**|**int**, **uzun**, **uzun uzun**|
-|**int**, **uzun**|**Long long**|
+|Any signed or unsigned integral type except **long long** or **__int64**|**double**|
+|**bool** or **char**|Any other built-in type|
+|**short** or **wchar_t**|**int**, **long**, **long long**|
+|**int**, **long**|**long long**|
 |**float**|**double**|
 
-### <a name="narrowing-conversions-coercion"></a>Daraltma Dönüşümleri (zorlama)
+### <a name="narrowing-conversions-coercion"></a>Narrowing conversions (coercion)
 
-Derleyici örtük olarak daraltma dönüştürmelerini gerçekleştirir, ancak veri kaybı hakkında sizi uyarır. Bu uyarıları ele çok ciddi bir şekilde. Ardından daha küçük bir değişkende büyük değişken değerler her zaman sığması için veri kaybı meydana gelir, böylece derleyici artık bir uyarı verir açık bir tür dönüştürme ekleyin. Dönüştürme güvenli olduğundan emin değilseniz, programınızın yanlış sonuçlar neden olmaz, böylece olası veri kaybı işlemek için çalışma zamanı denetimi tür kod ekleyin.
+The compiler performs narrowing conversions implicitly, but it warns you about potential data loss. Take these warnings very seriously. If you are certain that no data loss will occur because the values in the larger variable will always fit in the smaller variable, then add an explicit cast so that the compiler will no longer issue a warning. If you are not sure that the conversion is safe, add to your code some kind of runtime check to handle possible data loss so that it does not cause your program to produce incorrect results.
 
-Kayan öğesinden herhangi bir dönüştürme türü bir tamsayı türüne olduğundan bir daraltma dönüşümü kesirli bölümü kayan noktası değeri noktası atılır ve kaybolur.
+Any conversion from a floating point type to an integral type is a narrowing conversion because the fractional portion of the floating point value is discarded and lost.
 
-Aşağıdaki kod örneği, bazı örtük dönüştürmeler ve derleyicinin bunları için sorunları uyarılar daraltma gösterir.
+The following code example shows some implicit narrowing conversions, and the warnings that the compiler issues for them.
 
 ```cpp
 int i = INT_MAX + 1; //warning C4307:'+':integral constant overflow
@@ -55,9 +55,9 @@ int k = 7.7; // warning C4244:'initializing':conversion from 'double' to
              // 'int', possible loss of data
 ```
 
-### <a name="signed---unsigned-conversions"></a>İmzalı - işaretsiz dönüştürmeler
+### <a name="signed---unsigned-conversions"></a>Signed - unsigned conversions
 
-İşaretli bir integral türe ve imzasız kendisine karşılık gelen her zaman aynı boyuttaysa, ancak bit deseni değeri dönüştürme için nasıl yorumlanır içinde farklılık gösterir. Aşağıdaki kod örneği, aynı bit deseninin imzalı değer olarak ve işaretsiz bir değer olarak yorumlanır ne olacağını gösterir. Her ikisinde de depolanan bir bit desenine `num` ve `num2` hiçbir zaman önceki çizimde gösterilen gelen değiştirir.
+A signed integral type and its unsigned counterpart are always the same size, but they differ in how the bit pattern is interpreted for value transformation. The following code example demonstrates what happens when the same bit pattern is interpreted as a signed value and as an unsigned value. The bit pattern stored in both `num` and `num2` never changes from what is shown in the earlier illustration.
 
 ```cpp
 using namespace std;
@@ -73,37 +73,37 @@ cout << "unsigned val = " << num << " signed val = " << num2 << endl;
 // Prints: unsigned val = 65535 signed val = -1
 ```
 
-Değerler her iki yönde düşürülen dikkat edin. Programınızı beklediğinizden ters tek sonuçları hangi değerin oturum görünüyor oluşturursa, imzalı ve imzasız tamsayı türleri arasında örtük dönüştürme arayın. Aşağıdaki örnekte, ifadenin sonucunu (0 - 1) örtük olarak dönüştürülür **int** için **işaretsiz int** olduğunda, depolanan `num`. Bu bit deseninin düşürülen neden olur.
+Notice that values are reinterpreted in both directions. If your program produces odd results in which the sign of the value seems inverted from what you expect, look for implicit conversions between signed and unsigned integral types. In the following example, the result of the expression ( 0 - 1) is implicitly converted from **int** to **unsigned int** when it's stored in `num`. This causes the bit pattern to be reinterpreted.
 
 ```cpp
 unsigned int u3 = 0 - 1;
 cout << u3 << endl; // prints 4294967295
 ```
 
-Derleyici, işaretli ve işaretsiz integral türleri arasında örtük dönüştürme hakkında uyarmaz. Bu nedenle, imzasız için imzalanmış dönüştürmeler tamamen önlemek öneririz. Bunları yoksayılamaz ise kodunuza dönüştürülen değerin daha büyük veya sıfıra eşit olup olmadığını algılamak için bir çalışma zamanı denetimi ekleyin ve en yüksek değeri işaretli tür küçüktür veya eşittir. Bu aralıktaki değerleri imzalanmamış veya işaretsiz düşürülen olmadan oturum açmış nden aktarırız.
+The compiler does not warn about implicit conversions between signed and unsigned integral types. Therefore, we recommend that you avoid signed-to-unsigned conversions altogether. If you can't avoid them, then add to your code a runtime check to detect whether the value being converted is greater than or equal to zero and less than or equal to the maximum value of the signed type. Values in this range will transfer from signed to unsigned or from unsigned to signed without being reinterpreted.
 
-### <a name="pointer-conversions"></a>İşaretçi dönüşümleri
+### <a name="pointer-conversions"></a>İşaretçi Dönüştürmeler
 
-Birçok ifadelerde dizideki ilk öğe işaretçisi için bir C tarzı dizi örtük olarak dönüştürülür ve sabit dönüştürmeler sessizce oluşabilir. Bu kullanışlı olsa da büyük olasılıkla hata yapmaya açık. Örneğin, aşağıdaki kötü tasarlanmış bir kod örneği nonsensical gibi görünüyor ve henüz derlenir ve 'p' bir sonuç üretir. "Yardım" dize sabit hazır değer için ilk olarak, dönüştürülen bir `char*` dizisinin ilk öğesine işaret eder; böylece onu artık son öğesi 'p' işaret işaretçiyle ardından üç öğe tarafından artırılır.
+In many expressions, a C-style array is implicitly converted to a pointer to the first element in the array, and constant conversions can happen silently. Although this is convenient, it's also potentially error-prone. For example, the following badly designed code example seems nonsensical, and yet it will compile and produces a result of 'p'. First, the "Help" string constant literal is converted to a `char*` that points to the first element of the array; that pointer is then incremented by three elements so that it now points to the last element 'p'.
 
 ```cpp
 char* s = "Help" + 3;
 ```
 
-## <a name="explicit-conversions-casts"></a>Açık dönüştürmeler (yayınları)
+## <a name="explicit-conversions-casts"></a>Explicit conversions (casts)
 
-Tür dönüştürme işlemini kullanarak, bir türün bir değerini başka bir türe dönüştürmek için derleyici bildirebilirsiniz. Derleyici, iki tür tamamen ilişkisiz hak Kazandıysanız ancak işlemi, tür kullanımı uyumlu olmasa bile diğer durumlarda, bir hata oluşturmaz bazı durumlarda bir hata verir. Atamalar, herhangi bir türden diğerine dönüştürme başka bir programın hatasının olası bir kaynak olduğundan tedbirli şekilde kullanın. Ancak, yayınları bazen gereklidir ve tüm atamaları eşit tehlikeli. Bir etkili bir tür dönüştürme bir daraltma dönüşümü kodunuzu gerçekleştirir ve dönüştürme programınızın yanlış sonuçlar neden olmadığını bildiğiniz kullanılır. Aslında bu neler yaptığını bilmek derleyiciye ve uyarılarla ilgili rahatsız etme durdurmak için. Başka bir işaretçi temel sınıfına işaretçi-türetilmiş bir sınıftan dönüştürme için kullanılır. Hemen dönüştürme için başka bir kullanılır **const**- ness olmayan bir gerektiren bir işleve geçirilecek bir değişkenin -**const** bağımsız değişken. Bazı risk bu dönüştürme işlemleri çoğunu içerir.
+By using a cast operation, you can instruct the compiler to convert a value of one type to another type. The compiler will raise an error in some cases if the two types are completely unrelated, but in other cases it will not raise an error even if the operation is not type-safe. Use casts sparingly because any conversion from one type to another is a potential source of program error. However, casts are sometimes required, and not all casts are equally dangerous. One effective use of a cast is when your code performs a narrowing conversion and you know that the conversion is not causing your program to produce incorrect results. In effect, this tells the compiler that you know what you are doing and to stop bothering you with warnings about it. Another use is to cast from a pointer-to-derived class to a pointer-to-base class. Another use is to cast away the **const**-ness of a variable to pass it to a function that requires a non-**const** argument. Most of these cast operations involve some risk.
 
-C stili programlamada, aynı C stili tür dönüştürme işleci, her türden atamalar için kullanılır.
+In C-style programming, the same C-style cast operator is used for all kinds of casts.
 
 ```cpp
 (int) x; // old-style cast, old-style syntax
 int(x); // old-style cast, functional syntax
 ```
 
-C stili tür dönüştürme işleci çağrısı işleci ()'olarak aynıdır ve bu nedenle inconspicuous kod içinde ve kolayca gözden kaçabilir kolaydır. Her ikisi de bir bakışta veya arama tanımak zordur ve bunlar herhangi bir birleşimini çağırmak için farklı hatalı olduğu **statik**, **const**, ve **reinterpret_cast**. Eski stil atama gerçekten yaptıklarını anlamak zor ve hata yapmaya açık olabilir. Bir yayın gerektiğinde bu nedenlerle, bazı durumlarda önemli ölçüde daha fazla tür kullanımı uyumlu ve hangi programlama hedefini açıkça çok daha hızlı aşağıdaki C++ atama işleçleri, birini kullanmanızı öneririz:
+The C-style cast operator is identical to the call operator () and is therefore inconspicuous in code and easy to overlook. Both are bad because they're difficult to recognize at a glance or search for, and they're disparate enough to invoke any combination of **static**, **const**, and **reinterpret_cast**. Figuring out what an old-style cast actually does can be difficult and error-prone. For all these reasons, when a cast is required, we recommend that you use one of the following C++ cast operators, which in some cases are significantly more type-safe, and which express much more explicitly the programming intent:
 
-- **static_cast**, derleme sırasında denetlenir yayınları zaman yalnızca. **static_cast** derleyici tamamen uyumlu olmayan türleri arasında dönüştürme çalıştığınız algılarsa bir hata döndürür. Ayrıca, işaretçi temel ve türetilmiş işaretçi arasında dönüştürme için kullanabilirsiniz, ancak derleyici, her zaman bu tür dönüştürmeler çalışma zamanında güvenli olup olmayacağını bildiremez.
+- **static_cast**, for casts that are checked at compile time only. **static_cast** returns an error if the compiler detects that you are trying to cast between types that are completely incompatible. You can also use it to cast between pointer-to-base and pointer-to-derived, but the compiler can't always tell whether such conversions will be safe at runtime.
 
     ```cpp
     double d = 1.58947;
@@ -117,9 +117,9 @@ C stili tür dönüştürme işleci çağrısı işleci ()'olarak aynıdır ve b
     Derived* d2 = static_cast<Derived*>(b);
     ```
 
-   Daha fazla bilgi için [static_cast](../cpp/static-cast-operator.md).
+   For more information, see [static_cast](../cpp/static-cast-operator.md).
 
-- **dynamic_cast**, işaretçi temel alınan işaretçi için güvenli, çalışma zamanı işaretli yayınları için. A **dynamic_cast** daha güvenlidir bir **static_cast** onay, alt türe çevirme işlemleri, ancak çalışma zamanı, bazı ek yüke neden olur.
+- **dynamic_cast**, for safe, runtime-checked casts of pointer-to-base to pointer-to-derived. A **dynamic_cast** is safer than a **static_cast** for downcasts, but the runtime check incurs some overhead.
 
     ```cpp
     Base* b = new Base();
@@ -142,9 +142,9 @@ C stili tür dönüştürme işleci çağrısı işleci ()'olarak aynıdır ve b
     //Output: d3 is null;
     ```
 
-   Daha fazla bilgi için [dynamic_cast](../cpp/dynamic-cast-operator.md).
+   For more information, see [dynamic_cast](../cpp/dynamic-cast-operator.md).
 
-- **const_cast**hemen atama için **const**- ness bir değişkenin veya olmayan bir dönüştürme -**const** olmasını değişkeni **const**. Hemen atama **const**-ness kullanarak bu işleci yalnızca gibi hataya eğilimli C stili atama ile hariç kullandığından olan **const atama** yanlışlıkla dönüştürme gerçekleştirmek daha düşüktür. Bazen hemen türüne sahip **const**-ness geçirmek için bir değişken, örneğin, bir **const** olmayan bir alan bir işlev için değişken**const** parametresi. Aşağıdaki örnek bunun nasıl yapılacağı gösterilmektedir.
+- **const_cast**, for casting away the **const**-ness of a variable, or converting a non-**const** variable to be **const**. Casting away **const**-ness by using this operator is just as error-prone as is using a C-style cast, except that with **const-cast** you are less likely to perform the cast accidentally. Sometimes you have to cast away the **const**-ness of a variable, for example, to pass a **const** variable to a function that takes a non-**const** parameter. The following example shows how to do this.
 
     ```cpp
     void Func(double& d) { ... }
@@ -155,14 +155,14 @@ C stili tür dönüştürme işleci çağrısı işleci ()'olarak aynıdır ve b
     }
     ```
 
-   Daha fazla bilgi için [const_cast](../cpp/const-cast-operator.md).
+   For more information, see [const_cast](../cpp/const-cast-operator.md).
 
-- **reinterpret_cast**yayınları arasında gibi türler ilgisiz için **işaretçi** için **int**.
+- **reinterpret_cast**, for casts between unrelated types such as **pointer** to **int**.
 
     > [!NOTE]
-    >  Bu tür dönüştürme işleci olarak diğerleriyle genellikle kullanılmaz ve diğer derleyiciler için taşınabilir olması garantili.
+    >  This cast operator is not used as often as the others, and it's not guaranteed to be portable to other compilers.
 
-   Aşağıdaki örnekte nasıl **reinterpret_cast** farklıdır **static_cast**.
+   The following example illustrates how **reinterpret_cast** differs from **static_cast**.
 
     ```cpp
     const char* str = "hello";
@@ -174,11 +174,11 @@ C stili tür dönüştürme işleci çağrısı işleci ()'olarak aynıdır ve b
                                        // However, it is not 64-bit safe.
     ```
 
-   Daha fazla bilgi için [reinterpret_cast işleci](../cpp/reinterpret-cast-operator.md).
+   For more information, see [reinterpret_cast Operator](../cpp/reinterpret-cast-operator.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Tür Sistemi (Modern C++)](../cpp/cpp-type-system-modern-cpp.md)<br/>
-[C++'a (Modern C++) Tekrar Hoş Geldiniz](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
+[C++ type system](../cpp/cpp-type-system-modern-cpp.md)<br/>
+[Welcome back to C++](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
 [C++ Dil Başvurusu](../cpp/cpp-language-reference.md)<br/>
 [C++ Standart Kitaplığı](../standard-library/cpp-standard-library-reference.md)

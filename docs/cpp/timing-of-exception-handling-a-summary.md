@@ -1,5 +1,5 @@
 ---
-title: 'Özel durum işleme zamanlaması: Özeti'
+title: 'Timing of exception handling: A summary'
 ms.date: 05/07/2019
 helpviewer_keywords:
 - sequence [C++]
@@ -11,19 +11,19 @@ helpviewer_keywords:
 - handlers [C++], order of exception
 - structured exception handling [C++], timing
 ms.assetid: 5d1da546-73fd-4673-aa1a-7ac0f776c420
-ms.openlocfilehash: 7b52252454e27d622e412f490360a025dfc97838
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: 870606c3661df3654581760214e48ef2bdfb1987
+ms.sourcegitcommit: 654aecaeb5d3e3fe6bc926bafd6d5ace0d20a80e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65221900"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74246331"
 ---
-# <a name="timing-of-exception-handling-a-summary"></a>Özel durum işleme zamanlaması: Özeti
+# <a name="timing-of-exception-handling-a-summary"></a>Timing of exception handling: A summary
 
-Sonlandırma işleyicisi ne olursa olsun nasıl yürütülen **__try** deyim bloğunu sonlandırılır. Nedenler tanesi atlama **__try** bloğu bir `longjmp` denetim bloğu ve özel durum işleme nedeniyle yığının geriye doğru izleme dışına aktaran deyimi.
+A termination handler is executed no matter how the **__try** statement block is terminated. Causes include jumping out of the **__try** block, a `longjmp` statement that transfers control out of the block, and unwinding the stack due to exception handling.
 
 > [!NOTE]
->  Microsoft C++ derleyici iki biçimini destekler `setjmp` ve `longjmp` deyimleri. Hızlı sürüm sonlandırma işlemeyi atlar, ancak daha etkilidir. Bu sürümü kullanmak için dosyayı dahil \<setjmp.h >. Diğer sürüm, sonlandırma işlemeyi önceki paragrafta açıklandığı gibi destekler. Bu sürümü kullanmak için dosyayı dahil \<setjmpex.h >. Hızlı sürümün performansında artış, donanım yapılandırmasına bağlıdır.
+>  The Microsoft C++ compiler supports two forms of the `setjmp` and `longjmp` statements. Hızlı sürüm sonlandırma işlemeyi atlar, ancak daha etkilidir. To use this version, include the file \<setjmp.h>. Diğer sürüm, sonlandırma işlemeyi önceki paragrafta açıklandığı gibi destekler. To use this version, include the file \<setjmpex.h>. Hızlı sürümün performansında artış, donanım yapılandırmasına bağlıdır.
 
 İşletim sistemi, özel durum işleyicisinin gövdesi de dahil olmak üzere başka bir kod yürütülmeden önce tüm sonlandırma işleyicilerini uygun sırada yürütür.
 
@@ -35,7 +35,7 @@ Kesintinin nedeni bir özel durum olduğunda, sistem neyi sonlandıracağına ka
 
 1. Bu filtre denetimi (0 döndürür) geçerse, işlem denetimi geçirmeyen bir filtre bulunana dek devam eder.
 
-1. Bu filtre, -1 döndürür, burada özel durum oluştu ve sonlandırma gerçekleşmez gerçekleşmeden yürütme devam eder.
+1. If this filter returns -1, execution continues where the exception was raised, and no termination takes place.
 
 1. Filtre 1 değerini döndürürse, aşağıdaki olaylar gerçekleşir:
 
@@ -49,5 +49,5 @@ Kesintinin nedeni bir özel durum olduğunda, sistem neyi sonlandıracağına ka
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sonlandırma İşleyicisi Yazma](../cpp/writing-a-termination-handler.md)<br/>
+[Writing a termination handler](../cpp/writing-a-termination-handler.md)<br/>
 [Yapılandırılmış Özel Durum İşleme (C/C++)](../cpp/structured-exception-handling-c-cpp.md)

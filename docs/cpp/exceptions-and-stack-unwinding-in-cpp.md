@@ -1,31 +1,31 @@
 ---
-title: C++'da Özel Durumlar ve Yığını Geriye Doğru İzleme
-ms.date: 11/04/2016
+title: C++'da özel durumlar ve yığını geriye doğru izleme
+ms.date: 11/19/2019
 ms.assetid: a1a57eae-5fc5-4c49-824f-3ce2eb8129ed
-ms.openlocfilehash: 5e094101557469a189311ce2c5344bb895696649
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 11657206e86dbc81eb62c1e11b49fd87777f11d8
+ms.sourcegitcommit: 654aecaeb5d3e3fe6bc926bafd6d5ace0d20a80e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62398894"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74246563"
 ---
 # <a name="exceptions-and-stack-unwinding-in-c"></a>C++'da Özel Durumlar ve Yığını Geriye Doğru İzleme
 
-C++ özel durum mekanizmasında denetim, throw deyiminden throw türünü işleyebilen ilk catch deyimine geçer. Catch deyimine ulaşıldığında, tüm kapsamda arasında throw ve catch deyimleri otomatik değişkenler olarak da bilinen bir işlemle yok edilir *yığın geriye doğru izleme*. Yığın geriye doğru izleme işleminde, yürütme aşağıdaki gibi olur:
+C++ özel durum mekanizmasında denetim, throw deyiminden throw türünü işleyebilen ilk catch deyimine geçer. When the catch statement is reached, all of the automatic variables that are in scope between the throw and catch statements are destroyed in a process that is known as *stack unwinding*. Yığın geriye doğru izleme işleminde, yürütme aşağıdaki gibi olur:
 
-1. Denetim ulaştığında **deneyin** normal sıralı yürütme deyimi. Korunan bölüm **deneyin** bloğu yürütülür.
+1. Control reaches the **try** statement by normal sequential execution. The guarded section in the **try** block is executed.
 
-1. Korunan bölümün yürütülmesi sırasında hiçbir özel durum oluşturulursa **catch** izleyin yan tümceleri **deneyin** blok yürütülmez. Yürütme devam eder en son deyimindeki **catch** ilişkili aşağıdaki yan tümcesi **deneyin** blok.
+1. If no exception is thrown during execution of the guarded section, the **catch** clauses that follow the **try** block are not executed. Execution continues at the statement after the last **catch** clause that follows the associated **try** block.
 
-1. Korunan bölümün doğrudan veya dolaylı olarak çağırdığı bir yordam veya korunan bölümün yürütülmesi sırasında bir özel durum, bir özel durum nesnesi tarafından oluşturulan nesneden oluşturulur **throw** işlenen. (Bu, bir kopya oluşturucusunu da işin içine katabilir.) Bu noktada derleyici arar bir **catch** yan tümcesinde bir özel durum türü ya da işleyebilir daha yüksek bir yürütme bağlamı bir **catch** her türden özel durumu işleyebilen bir işleyici. **Catch** işleyicileri sonra görünme sırasına göre incelenir **deneyin** blok. Uygun bir işleyici bulunduğunda, sonraki dinamik olarak kapsayan **deneyin** bloğu incelenir. Bu işlem en dıştaki kapsayan kadar devam eder. **deneyin** bloğu incelenir.
+1. If an exception is thrown during execution of the guarded section or in any routine that the guarded section calls either directly or indirectly, an exception object is created from the object that is created by the **throw** operand. (This implies that a copy constructor may be involved.) At this point, the compiler looks for a **catch** clause in a higher execution context that can handle an exception of the type that is thrown, or for a **catch** handler that can handle any type of exception. The **catch** handlers are examined in order of their appearance after the **try** block. If no appropriate handler is found, the next dynamically enclosing **try** block is examined. This process continues until the outermost enclosing **try** block is examined.
 
 1. Eşleşen bir işleyici hala bulunamazsa ya da geriye doğru işlem sırasında işleyici denetimi almadan önce bir özel durum oluşursa, önceden tanımlanmış çalışma zamanı işlevi `terminate` çağrılır. Özel durum, geriye doğru izleme başlamadan önce ve bir özel durum oluştuktan sonra oluşursa, `terminate` çağrılır.
 
-1. Eşleşen bir **catch** işleyicisi bulunursa ve değere göre yakalarsa, özel durum nesnesi kopyalanarak biçimsel parametresi başlatılır. Başvuruya göre yakalarsa, parametre özel durum nesnesine başvurmak için başlatılır. Biçimsel parametre başlatıldıktan sonra, yığını geriye doğru izleme işlemi başlar. Bu tam olarak oluşturulmuş tüm otomatik nesnelerin yok edilmesi içerir; ancak henüz imha — başlangıcı arasındaki **deneyin** ilişkili olduğu blok **catch** işleyicisi ve özel durumun atar. Yok etme işlemi oluşturma işleminin ters sırasıyla yapılır. **Catch** işleyicisi yürütülür ve program son işleyiciden sonra yürütmeye devam eder; diğer bir deyişle, ilk deyim veya olmayan yapısı, bir **catch** işleyici. Denetim yalnızca girebilirsiniz bir **catch** işleyici oluşturulan bir özel durumla hiçbir zaman aracılığıyla bir **goto** deyimi veya bir **çalışması** etiketi bir **geçiş** deyimi.
+1. If a matching **catch** handler is found, and it catches by value, its formal parameter is initialized by copying the exception object. Başvuruya göre yakalarsa, parametre özel durum nesnesine başvurmak için başlatılır. Biçimsel parametre başlatıldıktan sonra, yığını geriye doğru izleme işlemi başlar. This involves the destruction of all automatic objects that were fully constructed—but not yet destructed—between the beginning of the **try** block that is associated with the **catch** handler and the throw site of the exception. Yok etme işlemi oluşturma işleminin ters sırasıyla yapılır. The **catch** handler is executed and the program resumes execution after the last handler—that is, at the first statement or construct that is not a **catch** handler. Control can only enter a **catch** handler through a thrown exception, never through a **goto** statement or a **case** label in a **switch** statement.
 
-## <a name="stack-unwinding-example"></a>Yığın Geriye Doğru İzleme Örneği
+## <a name="stack-unwinding-example"></a>Stack unwinding example
 
-Aşağıdaki örnek, bir özel durum oluştuğunda yığının nasıl geriye doğru izlediğini gösterir. İş parçacığı üzerindeki yürütme, `C` içindeki throw deyiminden `main` içindeki catch deyimine atlar ve yol boyunca her işlevi geriye doğru alır. `Dummy` nesnelerinin oluşturulduğu ve ardından kapsam dışına çıkarken yok edildikleri sıralamaya dikkat edin. Ayrıca, catch deyimini içeren `main` haricinde, hiçbir işlevin tamamlamadığına dikkat edin. `A` işlevi `B()` için yaptığı çağrıdan, `B` işlevi de `C()` için yaptığı çağrıdan hiçbir zaman dönmez. `Dummy` işaretçisine ve ilişkili delete deyiminin tanımına ilişkin açıklamayı kaldırır ve ardından programı çalıştırırsanız, işaretçinin asla silinmediğine dikkat edin. Bu, işlevler özel durum sağlamadığında neler olabileceğini gösterir. Daha fazla bilgi için bkz: nasıl yapılır: Özel durumlar için tasarım. Catch deyimi için açıklama satırı yaparsanız, işlenmemiş bir özel durum nedeniyle bir program sonlandığında ne olacağını görebilirsiniz.
+The following example demonstrates how the stack is unwound when an exception is thrown. İş parçacığı üzerindeki yürütme, `C` içindeki throw deyiminden `main` içindeki catch deyimine atlar ve yol boyunca her işlevi geriye doğru alır. `Dummy` nesnelerinin oluşturulduğu ve ardından kapsam dışına çıkarken yok edildikleri sıralamaya dikkat edin. Ayrıca, catch deyimini içeren `main` haricinde, hiçbir işlevin tamamlamadığına dikkat edin. `A` işlevi `B()` için yaptığı çağrıdan, `B` işlevi de `C()` için yaptığı çağrıdan hiçbir zaman dönmez. `Dummy` işaretçisine ve ilişkili delete deyiminin tanımına ilişkin açıklamayı kaldırır ve ardından programı çalıştırırsanız, işaretçinin asla silinmediğine dikkat edin. Bu, işlevler özel durum sağlamadığında neler olabileceğini gösterir. Daha fazla bilgi için bkz. Nasıl yapılır: Özel Durumlar için Tasarım. Catch deyimi için açıklama satırı yaparsanız, işlenmemiş bir özel durum nedeniyle bir program sonlandığında ne olacağını görebilirsiniz.
 
 ```cpp
 #include <string>

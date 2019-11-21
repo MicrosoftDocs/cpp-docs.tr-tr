@@ -3,30 +3,30 @@ title: Nesne Yaşam Süresi ve Kaynak Yönetimi (Modern C++)
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 8aa0e1a1-e04d-46b1-acca-1d548490700f
-ms.openlocfilehash: 5964078960a5b241cb5af369aeddba45a06e48ad
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 91229ea1b2d7a85f852138176d8cdb46dfa8c0df
+ms.sourcegitcommit: 654aecaeb5d3e3fe6bc926bafd6d5ace0d20a80e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62245029"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74246427"
 ---
 # <a name="object-lifetime-and-resource-management-modern-c"></a>Nesne Yaşam Süresi ve Kaynak Yönetimi (Modern C++)
 
-Yönetilen dillerden farklı olarak, C++, bir program çalışırken, otomatik olarak bellek yok-uzun-kullanılan kaynakları serbest bırakır, çöp toplama (GC) sahip değil. C++'da, kaynak yönetimi için nesne ömrü doğrudan ilgilidir. Bu belgede, c++ nesne yaşam süresi ve bunları yönetme etkileyen faktörler açıklanmaktadır.
+Unlike managed languages, C++ doesn’t have garbage collection (GC), which automatically releases no-longer-used memory resources as a program runs. In C++, resource management is directly related to object lifetime. This document describes the factors that affect object lifetime in C++ and how to manage it.
 
-Bellek içi kaynaklar öncelikli olarak işlemiyor için C++ GC sahip. Yalnızca c++ gelenler belirleyici yok ediciler, bellek ve bellek içi kaynaklarını eşit olarak işleyebilir. GC, bellek ve CPU tüketimi ve Yerleşim Yeri yükü daha fazladır gibi diğer sorunlara da vardır. Ancak universality akıllı iyileştirmeler sayesinde azaltılamaz temel bir sorundur.
+C++ doesn’t have GC primarily because it doesn't handle non-memory resources. Only deterministic destructors like those in C++ can handle memory and non-memory resources equally. GC also has other problems, like higher overhead in memory and CPU consumption, and locality. But universality is a fundamental problem that can't be mitigated through clever optimizations.
 
 ## <a name="concepts"></a>Kavramlar
 
-Nesne ömrü Yönetimi önemli bir şeyi kapsülleme olan — kişi bir nesne kullanıyor ne nesne kaynakları sahibi, veya bunları kurtulmak nasıl veya hatta olup herhangi bir kaynağa hiç sahibi bilmeniz gerekmez. Nesneyi yok etmek yalnızca sahiptir. C++ çekirdek dil nesneler doğru zamanlarda, diğer bir deyişle, yok emin olmak için tasarlanan blokları, ters sırada yapımı çıkıldı gibi. Bir nesne kaldırıldığında, bu belirli bir sırada kendi tabanları ve üyeleri yok edilir.  Yığın ayırma ya da yeni yerleştirme gibi özel şeyler sürece dil nesneleri otomatik olarak yok eder.  Örneğin, [akıllı işaretçileri](../cpp/smart-pointers-modern-cpp.md) gibi `unique_ptr` ve `shared_ptr`, ve C++ Standart Kitaplığı kapsayıcıları `vector`, kapsülleyen **yeni** /  **silme** ve `new[]` / `delete[]` nesnelerde, Yıkıcılar sahip. İşte bu akıllı işaretçiler ve C++ Standart Kitaplığı kapsayıcıları kullanmak bu kadar önemlidir.
+An important thing in object-lifetime management is the encapsulation—whoever's using an object doesn't have to know what resources that object owns, or how to get rid of them, or even whether it owns any resources at all. It just has to destroy the object. The C++ core language is designed to ensure that objects are destroyed at the correct times, that is, as blocks are exited, in reverse order of construction. When an object is destroyed, its bases and members are destroyed in a particular order.  The language automatically destroys objects, unless you do special things like heap allocation or placement new.  For example, [smart pointers](../cpp/smart-pointers-modern-cpp.md) like `unique_ptr` and `shared_ptr`, and C++ Standard Library containers like `vector`, encapsulate **new**/**delete** and `new[]`/`delete[]` in objects, which have destructors. That's why it's so important to use smart pointers and C++ Standard Library containers.
 
-Başka bir önemli kavramı ömrü Yönetimi: yıkıcı. Yıkıcılar, kaynak sürüm kapsüller.  (Kullanılan anımsatıcı RRID, kaynak sürüm olan yok etme içindir.)  Bir kaynak "" sistemden ve daha sonra tekrar sağlamak zorunda değildir.  Bellek en yaygın bir kaynaktır girmeyecek olsak da dosyaları, yuva, dokuları ve diğer bellek içi kaynaklar. "Bir kaynağa sahip olan", ihtiyaç duyduğunuz ancak onunla tamamladığınızda serbest bırakmak de kullanabileceğiniz anlamına gelir.  Bir nesne kaldırıldığında, bu yok edici bu ait kaynakları serbest bırakır.
+Another important concept in lifetime management: destructors. Destructors encapsulate resource release.  (The commonly used mnemonic is RRID, Resource Release Is Destruction.)  A resource is something that you get from "the system" and have to give back later.  Memory is the most common resource, but there are also files, sockets, textures, and other non-memory resources. "Owning" a resource means you can use it when you need it but you also have to release it when you're finished with it.  When an object is destroyed, its destructor releases the resources that it owned.
 
-Son (yönlendirilmiş Çevrimsiz graf) DAG kavramdır.  Bir DAG sahipliği programında yapısını oluşturur. Hiçbir nesne kendisine sahip olabilir; bu değil yalnızca imkansız ancak aynı zamanda kendiliğinden anlamsız. Ancak, iki nesne üçüncü nesne sahipliğini paylaşabilirsiniz.  Böyle bir DAG içindeki bağlantılar çeşitli türlerde desteklenir: A B üyesidir (B sahibi A) C depoları bir `vector<D>` (C D her öğenin sahibi), E depoları bir `shared_ptr<F>` (E paylaşır sahipliğini F, büyük olasılıkla diğer nesnelerle), ve benzeri.  Hiçbir döngü vardır ve her bir bağlantının DAG içindeki bir nesne tarafından temsil edilen sürece (yerine, bir ham işaretçi, tanıtıcı veya başka bir mekanizma) bir yok Edicisi olan ve ardından bunları dil önlediği için kaynak sızıntılarını mümkün. Hemen bunlar artık, çalışan bir çöp toplayıcı ihtiyaç duyulan sonra kaynakları serbest bırakılır. Yığın kapsamı, tabanları, üyeleri ve ilgili örnekler için ek yükü ücretsiz ve hesaplı için izleme ömrü `shared_ptr`.
+The final concept is the DAG (Directed Acyclic Graph).  The structure of ownership in a program forms a DAG. No object can own itself—that's not only impossible but also inherently meaningless. But two objects can share ownership of a third object.  Several kinds of links are possible in a DAG like this: A is a member of B (B owns A), C stores a `vector<D>` (C owns each D element), E stores a `shared_ptr<F>` (E shares ownership of F, possibly with other objects), and so forth.  As long as there are no cycles and every link in the DAG is represented by an object that has a destructor (instead of a raw pointer, handle, or other mechanism), then resource leaks are impossible because the language prevents them. Resources are released immediately after they're no longer needed, without a garbage collector running. The lifetime tracking is overhead-free for stack scope, bases, members, and related cases, and inexpensive for `shared_ptr`.
 
-### <a name="heap-based-lifetime"></a>Yığın temelli ömrü
+### <a name="heap-based-lifetime"></a>Heap-based lifetime
 
-Yığın nesnesi ömrü boyunca kullanın [akıllı işaretçileri](../cpp/smart-pointers-modern-cpp.md). Kullanım `shared_ptr` ve `make_shared` varsayılan işaretçi ve ayırıcı olarak. Kullanım `weak_ptr` döngüleri kesme, önbelleğe alma yapmak ve nesneleri etkileyen veya yaşam ilgili hiçbir şeyi varsayılarak olmadan gözlemleyin.
+For heap object lifetime, use [smart pointers](../cpp/smart-pointers-modern-cpp.md). Use `shared_ptr` and `make_shared` as the default pointer and allocator. Use `weak_ptr` to break cycles, do caching, and observe objects without affecting or assuming anything about their lifetimes.
 
 ```cpp
 void func() {
@@ -38,13 +38,13 @@ p->draw();
 } // no delete required, out-of-scope triggers smart pointer destructor
 ```
 
-Kullanım `unique_ptr` benzersiz sahipliği için örneğin *derleme pimpl* deyimidir. (Bkz [derleme zamanı kapsüllemesi için Pimpl](../cpp/pimpl-for-compile-time-encapsulation-modern-cpp.md).) Olun bir `unique_ptr` tüm açık birincil hedefinin **yeni** ifadeler.
+Use `unique_ptr` for unique ownership, for example, in the *pimpl* idiom. (See [Pimpl For Compile-Time Encapsulation](../cpp/pimpl-for-compile-time-encapsulation-modern-cpp.md).) Make a `unique_ptr` the primary target of all explicit **new** expressions.
 
 ```cpp
 unique_ptr<widget> p(new widget());
 ```
 
-Ham işaretçilerin sahiplik olmayan ve gözlem için kullanabilirsiniz. Sahip olmayan bir işaretçi dangle, ancak sızıntı olamaz.
+You can use raw pointers for non-ownership and observation. A non-owning pointer may dangle, but it can’t leak.
 
 ```cpp
 class node {
@@ -56,11 +56,11 @@ class node {
 node::node() : parent(...) { children.emplace_back(new node(...) ); }
 ```
 
-Performans iyileştirmesi gerektiğinde kullanmanız gerekebilir *iyi kapsüllenmiş* işaretçiler ve silmek için açık çağrılar sahip. Kendi alt düzey veri yapısı uygularken bir örnektir.
+When performance optimization is required, you might have to use *well-encapsulated* owning pointers and explicit calls to delete. An example is when you implement your own low-level data structure.
 
-### <a name="stack-based-lifetime"></a>Yığın tabanlı ömrü
+### <a name="stack-based-lifetime"></a>Stack-based lifetime
 
-Modern C++ ' ta *yığın tabanlı kapsam* otomatik olarak birleştirir çünkü sağlam kod yazmak için güçlü bir araçtır *yığın ömrü* ve *veri üyesi ömrü* yüksek verimlilik ile — yaşam süresi izleme yükünü temelde ücretsizdir. Yığın nesne ömrü dikkatli el ile yönetim gerektirir ve özellikle, ham işaretçilerle çalışırken kaynak sızıntılarını ve verimsiz, kaynağı olabilir. Yığın tabanlı kapsam gösterir. Bu kodu göz önünde bulundurun:
+In modern C++, *stack-based scope* is a powerful way to write robust code because it combines automatic *stack lifetime* and *data member lifetime* with high efficiency—lifetime tracking is essentially free of overhead. Heap object lifetime requires diligent manual management and can be the source of resource leaks and inefficiencies, especially when you are working with raw pointers. Consider this code, which demonstrates stack-based scope:
 
 ```cpp
 class widget {
@@ -81,10 +81,10 @@ void functionUsingWidget () {
   // as if "finally { w.dispose(); w.g.dispose(); }"
 ```
 
-Statik ömrü tedbirli şekilde kullanın (genel statik, işlev yerel statik) çünkü sorunlar ortaya çıkabilir. Bir genel nesnesinin Oluşturucusu bir özel durum oluşturduğunda ne olur? Genellikle, uygulama hatalarını hata ayıklaması zor olan şekilde. Oluşturma sırası statik ömrü nesneler için sorun yaratır ve eşzamanlılık açısından güvenli değildir. Yalnızca nesne oluşturmayı bir sorunu olduğunu, özellikle çok biçimlilik söz konusu olduğunda yok etme sırası karmaşık olabilir. Nesne veya değişkenin çok biçimli değil ve karmaşık oluşturma/sıralama yok etme sahip olsa da hala iş parçacığı eşzamanlılık ilgili bir sorun yoktur. Çok iş parçacıklı bir uygulama, iş parçacığı yerel depolama, kaynak kilitleri ve diğer özel önlemler zorunda kalmadan statik nesneler verileri güvenli bir şekilde değiştiremezsiniz.
+Use static lifetime sparingly (global static, function local static) because problems can arise. What happens when the constructor of a global object throws an exception? Typically, the app faults in a way that can be difficult to debug. Construction order is problematic for static lifetime objects, and is not concurrency-safe. Not only is object construction a problem, destruction order can be complex, especially where polymorphism is involved. Even if your object or variable isn’t polymorphic and doesn't have complex construction/destruction ordering, there’s still the issue of thread-safe concurrency. A multithreaded app can’t safely modify the data in static objects without having thread-local storage, resource locks, and other special precautions.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++'a (Modern C++) Tekrar Hoş Geldiniz](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
+[Welcome back to C++](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
 [C++ Dil Başvurusu](../cpp/cpp-language-reference.md)<br/>
 [C++ Standart Kitaplığı](../standard-library/cpp-standard-library-reference.md)

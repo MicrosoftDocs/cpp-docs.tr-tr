@@ -1,27 +1,27 @@
 ---
-title: "Nasıl yapılır: Özel durumlar MSIL'den oluşan yerel kodda catch"
+title: "Nasıl yapılır: MSIL'den Oluşan Yerel Kodda Catch Özel Durumları"
 ms.date: 11/04/2016
 helpviewer_keywords:
 - exceptions, catching
 - catching exceptions, thrown from MSIL
 - MSIL, catching exceptions in native code
 ms.assetid: c15afd2b-8505-43bf-8a4a-f1d41532a124
-ms.openlocfilehash: 95ce7a2afabc34ea78376b12da61f419dab4af34
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c3afa29d8c9bee1c1f1cc2fd1869d108c08a249b
+ms.sourcegitcommit: 654aecaeb5d3e3fe6bc926bafd6d5ace0d20a80e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62379054"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74246684"
 ---
-# <a name="how-to-catch-exceptions-in-native-code-thrown-from-msil"></a>Nasıl yapılır: Özel durumlar MSIL'den oluşan yerel kodda catch
+# <a name="how-to-catch-exceptions-in-native-code-thrown-from-msil"></a>Nasıl yapılır: MSIL'den Oluşan Yerel Kodda Catch Özel Durumları
 
-Yerel kodda MSIL öğesinden yerel C++ özel durumu yakalamak mümkündür.  İle CLR özel durumları yakalayabilir `__try` ve `__except`.
+In native code, you can catch native C++ exception from MSIL.  You can catch CLR exceptions with `__try` and `__except`.
 
-Daha fazla bilgi için [yapılandırılmış özel durum işleme (C/C++)](../cpp/structured-exception-handling-c-cpp.md) ve [C++ özel durum işleme](../cpp/cpp-exception-handling.md).
+For more information, see [Structured Exception Handling (C/C++)](../cpp/structured-exception-handling-c-cpp.md) and [Modern C++ best practices for exceptions and error handling](../cpp/errors-and-exception-handling-modern-cpp.md).
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, MSIL aykırı iki işlev, bir yerel bir özel durum oluşturur ve başka bir sahip bir modül tanımlar.
+The following sample defines a module with two functions, one that throws a native exception, and another that throws an MSIL exception.
 
 ```
 // catch_MSIL_in_native.cpp
@@ -37,7 +37,7 @@ void Test2() {
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, yerel ve MSIL özel durumu yakalayan bir modül tanımlar.
+The following sample defines a module that catches a native and MSIL exception.
 
 ```
 // catch_MSIL_in_native_2.cpp

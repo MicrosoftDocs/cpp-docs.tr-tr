@@ -1,25 +1,25 @@
 ---
-title: 'Nasıl yapılır: Weak_ptr örnekleri oluşturma ve kullanma'
+title: 'How to: Create and use weak_ptr instances'
 ms.custom: how-to
-ms.date: 09/18/2019
+ms.date: 11/19/2019
 ms.topic: conceptual
 ms.assetid: 8dd6909b-b070-4afa-9696-f2fc94579c65
-ms.openlocfilehash: e5d1b13d894a617ca514e26f14fde3f514540d34
-ms.sourcegitcommit: 76cc69b482ada8ebf0837e8cdfd4459661f996dd
+ms.openlocfilehash: 32e8d64fdb6449f1d40aec4161bfda54987ca66a
+ms.sourcegitcommit: 654aecaeb5d3e3fe6bc926bafd6d5ace0d20a80e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71127177"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74245595"
 ---
-# <a name="how-to-create-and-use-weak_ptr-instances"></a>Nasıl yapılır: Weak_ptr örnekleri oluşturma ve kullanma
+# <a name="how-to-create-and-use-weak_ptr-instances"></a>How to: Create and use weak_ptr instances
 
-Bazen bir nesne, başvuru sayısının arttırmasına neden olmadan bir `shared_ptr` öğesinin temel alınan nesnesine erişmek için bir yol depolamalıdır. Genellikle, örnekler arasında `shared_ptr` döngüsel başvurular olduğunda bu durum oluşur.
+Sometimes an object must store a way to access the underlying object of a [shared_ptr](../standard-library/shared-ptr-class.md) without causing the reference count to be incremented. Typically, this situation occurs when you have cyclic references between `shared_ptr` instances.
 
-En iyi tasarım, her seferinde, işaretçilerin paylaşılan sahipliğinin kaçınmaktır. Ancak, `shared_ptr` örneklerin sahipliğini paylaşıma almanız gerekiyorsa aralarındaki döngüsel başvurulardan kaçının. Döngüsel başvurular kaçınılmaz veya bazı nedenlerle tercih edilse de, bir veya daha fazla Sahibe `weak_ptr` daha zayıf bir başvuru `shared_ptr`vermek için kullanın. Bir `weak_ptr`kullanarak, var olan bir ilgili örnekler `shared_ptr` kümesine katılılan, ancak yalnızca temeldeki bellek kaynağı hala geçerliyse bir oluşturabilirsiniz. `weak_ptr` Kendisi başvuru saymasına katılmaz ve bu nedenle başvuru sayısının sıfıra gitmesini engellemez. Ancak, `weak_ptr` `shared_ptr` uygulamasının başlatıldığı yeni bir kopyasını elde etmek için kullanabilirsiniz. Bellek zaten silinmişse `weak_ptr`bool işleci döndürülür `false`. Bellek hala geçerliyse, yeni paylaşılan işaretçi başvuru sayısını artırır ve `shared_ptr` değişken kapsamda olduğu sürece belleğin geçerli olacağını garanti eder.
+The best design is to avoid shared ownership of pointers whenever you can. However, if you must have shared ownership of `shared_ptr` instances, avoid cyclic references between them. When cyclic references are unavoidable, or even preferable for some reason, use [weak_ptr](../standard-library/weak-ptr-class.md) to give one or more of the owners a weak reference to another `shared_ptr`. By using a `weak_ptr`, you can create a `shared_ptr` that joins to an existing set of related instances, but only if the underlying memory resource is still valid. A `weak_ptr` itself does not participate in the reference counting, and therefore, it cannot prevent the reference count from going to zero. However, you can use a `weak_ptr` to try to obtain a new copy of the `shared_ptr` with which it was initialized. If the memory has already been deleted, the `weak_ptr`'s bool operator returns `false`. If the memory is still valid, the new shared pointer increments the reference count and guarantees that the memory will be valid as long as the `shared_ptr` variable stays in scope.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod örneğinde, dairesel bağımlılıklara sahip nesnelerin `weak_ptr` düzgün silinmesini sağlamak için kullanılan bir durum gösterilmektedir. Örneği incelerken, yalnızca alternatif çözümler değerlendirildikten sonra oluşturulduğunu varsayın. `Controller` Nesneler bir makine işleminin bazı yönlerini temsil eder ve bağımsız olarak çalışır. Her denetleyici, diğer denetleyicilerin durumunu dilediğiniz zaman sorgulayabilmelidir ve her biri bu amaç için özel `vector<weak_ptr<Controller>>` bir içerir. Her vektör döngüsel bir başvuru içerir ve bu nedenle, `weak_ptr` örnekleri `shared_ptr`yerine kullanılır.
+The following code example shows a case where `weak_ptr` is used to ensure proper deletion of objects that have circular dependencies. As you examine the example, assume that it was created only after alternative solutions were considered. The `Controller` objects represent some aspect of a machine process, and they operate independently. Each controller must be able to query the status of the other controllers at any time, and each one contains a private `vector<weak_ptr<Controller>>` for this purpose. Each vector contains a circular reference, and therefore, `weak_ptr` instances are used instead of `shared_ptr`.
 
 [!code-cpp[stl_smart_pointers#222](../cpp/codesnippet/CPP/how-to-create-and-use-weak-ptr-instances_1.cpp)]
 
@@ -82,7 +82,7 @@ Destroying Controller4
 Press any key
 ```
 
-Bir deneme olarak, vektörü `others` bir `vector<shared_ptr<Controller>>`olacak şekilde değiştirin ve ardından çıktıda, `TestRun` döndüğünde hiçbir yok edicisi çağrıldığına dikkat edin.
+As an experiment, modify the vector `others` to be a `vector<shared_ptr<Controller>>`, and then in the output, notice that no destructors are invoked when `TestRun` returns.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

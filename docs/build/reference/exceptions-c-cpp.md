@@ -1,6 +1,6 @@
 ---
-title: Özel Durumlar (C/C++)
-ms.date: 11/04/2016
+title: DLL loading exception codes (C/C++)
+ms.date: 11/19/2019
 f1_keywords:
 - ERROR_MOD_NOT_FOUND
 - vcppException
@@ -12,22 +12,22 @@ helpviewer_keywords:
 - ERROR_SEVERITY_ERROR exception
 - ERROR_MOD_NOT_FOUND exception
 ms.assetid: c03be05d-1c39-4f35-84cf-00c9af3bae9a
-ms.openlocfilehash: 360acba73278902cc40d10fd975011488742a7a2
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: f557fe736f45f8c3f5411d076a0be18f1d1b670e
+ms.sourcegitcommit: 654aecaeb5d3e3fe6bc926bafd6d5ace0d20a80e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69492925"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74243845"
 ---
 # <a name="exceptions-cc"></a>Özel Durumlar (C/C++)
 
-Hatalarla karşılaşıldığında iki özel durum kodu ortaya çıkar:
+Two exception codes can be raised when failures are encountered:
 
-- Bir **LoadLibrary** hatası için
+- For a **LoadLibrary** failure
 
-- **GetProcAddress** hatası için
+- For a **GetProcAddress** failure
 
-Özel durum bilgileri aşağıda verilmiştir:
+Here is the exception information:
 
 ```
 //
@@ -37,11 +37,11 @@ Hatalarla karşılaşıldığında iki özel durum kodu ortaya çıkar:
 #define VcppException(sev,err)  ((sev) | (FACILITY_VISUALCPP<<16) | err)
 ```
 
-Oluşturulan özel durum kodları standart VcppException (ERROR_SEVERITY_ERROR, ERROR_MOD_NOT_FOUND) ve VcppException (ERROR_SEVERITY_ERROR, ERROR_PROC_NOT_FOUND) değerlerdir. Özel durum, [EXCEPTION_RECORD](/windows/win32/api/winnt/ns-winnt-exception_record) yapısı, ExceptionInformation [0] alanındaki **GetExceptionInformation** tarafından alınabilecek lpdword değerindeki bir **DelayLoadInfo** yapısına bir işaretçi geçirir.
+The exception codes thrown are the standard VcppException(ERROR_SEVERITY_ERROR, ERROR_MOD_NOT_FOUND) and VcppException(ERROR_SEVERITY_ERROR, ERROR_PROC_NOT_FOUND) values. The exception passes a pointer to a **DelayLoadInfo** structure in the LPDWORD value that can be retrieved by **GetExceptionInformation** in the [EXCEPTION_RECORD](/windows/win32/api/winnt/ns-winnt-exception_record) structure, ExceptionInformation[0] field.
 
-Ayrıca, grAttrs alanında yanlış bitler ayarlandıysa, ERROR_INVALID_PARAMETER özel durumu oluşturulur. Bu özel durum, tüm amaçlar ve amaçlar için önemli.
+Additionally, if the incorrect bits are set in the grAttrs field, the exception ERROR_INVALID_PARAMETER is thrown. This exception is, for all intents and purposes, fatal.
 
-Daha fazla bilgi için bkz. [Yapı ve sabit tanımlar](structure-and-constant-definitions.md) .
+See [Structure and Constant Definitions](structure-and-constant-definitions.md) for more information.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

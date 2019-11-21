@@ -1,42 +1,62 @@
 ---
-title: Özel durum MSVC içinde işleme
-ms.date: 05/07/2019
+title: Exception handling in MSVC
+ms.date: 11/19/2019
 helpviewer_keywords:
 - try-catch keyword [C++], exception handling
 ms.assetid: a6aa08de-669d-4ce8-9ec3-ec20d1354fcf
-ms.openlocfilehash: 47443f1b7021aac7755d77f797a4f7b7410281f8
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: 6cf71d6e6d0519951a084ebead65003bd363395f
+ms.sourcegitcommit: 654aecaeb5d3e3fe6bc926bafd6d5ace0d20a80e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65222070"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74246585"
 ---
-# <a name="exception-handling-in-msvc"></a>Özel durum MSVC içinde işleme
+# <a name="exception-handling-in-msvc"></a>Exception handling in MSVC
 
-Bir özel durum denetimi dışında kalan programın normal yürütme yolu devam etmesini engelleyen büyük olasılıkla programın, bir hata durumudur. Hatta programınızı doğru çalışırken nesne oluşturma, dosya giriş/çıkış ve diğer modüllerden yapılan işlev çağrılarının da dahil olmak üzere belirli, özel durumların tüm olası kaynakları işlemlerdir. Güçlü kod düşünmektedir ve özel durumları işler.
+An exception is an error condition, possibly outside the program's control, that prevents the program from continuing along its regular execution path. Certain operations, including object creation, file input/output, and function calls made from other modules, are all potential sources of exceptions even when your program is running correctly. Robust code anticipates and handles exceptions. To detect logic errors, use assertions rather than exceptions (see [Using Assertions](/visualstudio/debugger/c-cpp-assertions)).
 
-Tek bir program veya Modül içindeki mantık hataları algılamak için özel durumlar yerine onaylar kullanın (bkz [kullanarak Onaylamalar](/visualstudio/debugger/c-cpp-assertions)).
+## <a name="kinds-of-exceptions"></a>Kinds of exceptions
 
-Microsoft C++ derleyici (MSVC) özel durum işleme üç tür destekler:
+The Microsoft C++ compiler (MSVC) supports three kinds of exception handling:
 
-- [C++ özel durum işleme](../cpp/cpp-exception-handling.md)
+- [C++ exception handling](errors-and-exception-handling-modern-cpp.md)
 
-   C++ programları için hangi tür bakımından güvenlidir ve yığın geriye doğru izleme sırasında yok edicinin çağrılmadığına söz konusu nesne sağlar, C++ özel durum işleme kullanmanız gerekir.
+   For most C++ programs, you should use C++ exception handling, which is type-safe and ensures that object destructors are invoked during stack unwinding.
 
-- [Yapılandırılmış özel durum işleme](../cpp/structured-exception-handling-c-cpp.md)
+- [Structured exception handling](structured-exception-handling-c-cpp.md)
 
-   Windows SEH adı verilen kendi özel durum mekanizması sağlar. C++ ya da MFC programlama için önerilmez. SEH yalnızca MFC olmayan C programlarında kullanın.
+   Windows supplies its own exception mechanism, called SEH. It is not recommended for C++ or MFC programming. Use SEH only in non-MFC C programs.
 
-- [MFC özel durumları](../mfc/exception-handling-in-mfc.md)
+- [MFC exceptions](../mfc/exception-handling-in-mfc.md)
 
-   Sürüm 3.0, bu yana MFC C++ özel durumlarını kullanılmış, ancak yine de C++ özel durumlarını formunda benzer makroları, işleme, eski özel durumu destekler. Bu makrolar için yeni programlama önerilmez olsa da, bunlar yine de geriye dönük uyumluluk için desteklenir. Makroları kullanan programlar içinde de C++ özel durumlarını ücretsiz olarak kullanabilirsiniz. Ön işleme sırasında özel durum işleme MSVC uygulamasında tanımlı anahtar sözcükler için makroları değerlendirin C++ dil Visual itibarıyla C++ sürüm 2.0. C++ özel durumlarını kullanmayı başlatırken mevcut bir özel durum makroları yerinde bırakabilirsiniz.
+Use the [/EH](../build/reference/eh-exception-handling-model.md) compiler option to specify the type of exception handling to use in a project; C++ exception handling is the default. Do not mix the error handling mechanisms; for example, do not use C++ exceptions with structured exception handling. Using C++ exception handling makes your code more portable, and it allows you to handle exceptions of any type. For more information about the drawbacks of structured exception handling, see [Structured Exception Handling](structured-exception-handling-c-cpp.md). For advice about mixing MFC macros and C++ exceptions, see [Exceptions: Using MFC Macros and C++ Exceptions](../mfc/exceptions-using-mfc-macros-and-cpp-exceptions.md).
 
-Kullanma [/EH](../build/reference/eh-exception-handling-model.md) bir projede; kullanmak için özel durum işleme türünü belirtmek için derleyici seçeneği C++ özel durum işleme varsayılandır. Hata işleme düzenekleri karıştırmayın; Örneğin, C++ özel durumlarını, yapılandırılmış özel durum işleme ile kullanmayın. C++ özel durum işlemeyi kullanarak kodunuzun daha taşınabilir yapar ve herhangi bir türde özel durumları işlemenizi sağlar. Yapılandırılmış özel durum işleme dezavantajları hakkında daha fazla bilgi için bkz. [yapılandırılmış özel durum işleme](../cpp/structured-exception-handling-c-cpp.md). MFC makroları ve C++ özel durumlarını karıştırma hakkında daha fazla öneri için bkz. [özel durumlar: MFC makroları ve C++ özel durumlarını kullanma](../mfc/exceptions-using-mfc-macros-and-cpp-exceptions.md).
+## <a name="in-this-section"></a>Bu bölümde
 
-CLR uygulamaları özel durumları işleme hakkında daha fazla bilgi için bkz: [özel durum işleme (C++/CLI ve C++/CX)](../extensions/exception-handling-cpp-component-extensions.md).
+- [Modern C++ best practices for exceptions and error handling](errors-and-exception-handling-modern-cpp.md)
 
-Özel durum x64 üzerinde işleme hakkında bilgi için işlemciler bkz [x64 özel durum işleme](../build/exception-handling-x64.md).
+- [How to design for exception safety](how-to-design-for-exception-safety.md)
+
+- [How to interface between exceptional and non-exceptional code](how-to-interface-between-exceptional-and-non-exceptional-code.md)
+
+- [The try, catch, and throw Statements](try-throw-and-catch-statements-cpp.md)
+
+- [Yakala Bloğu Nasıl Değerlendirilir](how-catch-blocks-are-evaluated-cpp.md)
+
+- [Exceptions and Stack Unwinding](exceptions-and-stack-unwinding-in-cpp.md)
+
+- [Exception Specifications](exception-specifications-throw-cpp.md)
+
+- [noexcept](noexcept-cpp.md)
+
+- [İşlenilmeyen C++ Özel Durumları](unhandled-cpp-exceptions.md)
+
+- [C (Yapılandırılmış) ile C++ Özel Durumlarını Karıştırma](mixing-c-structured-and-cpp-exceptions.md)
+
+- [Structured Exception Handling (SEH) (C/C++)](structured-exception-handling-c-cpp.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Dil Başvurusu](../cpp/cpp-language-reference.md)
+[C++ Dil Başvurusu](cpp-language-reference.md)</br>
+[x64 özel durum işleme](../build/exception-handling-x64.md)</br>
+[Exception Handling (C++/CLI and C++/CX)](../extensions/exception-handling-cpp-component-extensions.md)

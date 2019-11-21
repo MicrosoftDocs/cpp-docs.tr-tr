@@ -1,29 +1,29 @@
 ---
-title: 'Nasıl yapılır: Olağanüstü ve özel durumlu olmayan kod arasında arabirim'
+title: 'How to: Interface between exceptional and non-exceptional code'
 ms.custom: how-to
-ms.date: 11/04/2016
+ms.date: 11/19/2019
 ms.topic: conceptual
 ms.assetid: fd5bb4af-5665-46a1-a321-614b48d4061e
-ms.openlocfilehash: e8ff92f965f48faa7954ae0364ec7877428e519c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fccc40302ab7bd43b3e6b2f87eef488c7813c9be
+ms.sourcegitcommit: 654aecaeb5d3e3fe6bc926bafd6d5ace0d20a80e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62183706"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74245616"
 ---
-# <a name="how-to-interface-between-exceptional-and-non-exceptional-code"></a>Nasıl yapılır: Olağanüstü ve özel durumlu olmayan kod arasında arabirim
+# <a name="how-to-interface-between-exceptional-and-non-exceptional-code"></a>How to: Interface between exceptional and non-exceptional code
 
-Bu makalede, bir C++ modülünde tutarlı özel durum işleme gerçekleştirme ve ayrıca bu özel durumların özel durum sınırlarındaki hata kodlarına/kodlarından çevirmek nasıl açıklar.
+This article describes how to implement consistent exception-handling in a C++ module, and also how to translate those exceptions to and from error codes at the exception boundaries.
 
-Bir C++ modülünün bazen gerekir (durumsuz kod) özel durumlar kullanmayan kod arabirimi. Böyle bir arabirim olarak bilinen bir *özel durum sınırı*. Örneğin, Win32 işlevini çağırmak isteyebilirsiniz `CreateFile` C++ programınızda. `CreateFile` özel durumlar oluşturmaz; Bunun yerine tarafından alınabilen hata kodlarını ayarlar `GetLastError` işlevi. C++ programınız Önemsiz ise, ardından bunu, büyük olasılıkla tutarlı bir özel durum tabanlı hata işleme ilkesi tercih edebilirsiniz. Ve büyük olasılıkla özel durumları çünkü yalnızca özel durumlu olmayan kod ile arabirim ve özel durum tabanlı ve özel durum tabanlı olmayan tabansız hata ilkelerini C++ modülünüzde karıştırmak diğerinden istediğiniz bırakmaya karar istemiyorum.
+Sometimes a C++ module has to interface with code that doesn't use exceptions (non-exceptional code). Such an interface is known as an *exception boundary*. For example, you may want to call the Win32 function `CreateFile` in your C++ program. `CreateFile` doesn't throw exceptions; instead it sets error codes that can be retrieved by the `GetLastError` function. If your C++ program is non-trivial, then in it you probably prefer to have a consistent exception-based error-handling policy. And you probably don't want to abandon exceptions just because you interface with non-exceptional code, and neither do you want to mix exception-based and non-exception-based error policies in your C++ module.
 
-## <a name="calling-non-exceptional-functions-from-c"></a>C++'tan olmayan durum fonksiyonlarını çağırma
+## <a name="calling-non-exceptional-functions-from-c"></a>Calling non-exceptional functions from C++
 
-C++'dan olağanüstü olmayan bir işlev çağırdığınızda, bu işlev hatalar varsa algılayan ve muhtemelen bir istisna atan bir C++ işlev içinde sarmalamak olur. Böyle bir sarmalayıcı işlevi tasarlarken, öncelikle sağlamak için özel durum garantisi türüne karar verin: fırlatmasız, güçlü veya temel. İkinci olarak, bir özel durum oluşturulursa tüm kaynakların, örneğin dosya tanıtıcılarının doğru yayımlanır böylece işlev tasarlayın. Genellikle, bu kaynaklara sahip olmak için akıllı işaretçiler veya benzer kaynak yöneticileri kullanmanız anlamına gelir. Tasarım konuları hakkında daha fazla bilgi için bkz. [nasıl yapılır: Özel durum güvenliği tasarımı](../cpp/how-to-design-for-exception-safety.md).
+When you call a non-exceptional function from C++, the idea is to wrap that function in a C++ function that detects any errors and then possibly throws an exception. When you design such a wrapper function, first decide which type of exception guarantee to provide:  no-throw, strong, or basic. Second, design the function so that all resources, for example, file handles, are correctly released if an exception is thrown. Typically, this means that you use smart pointers or similar resource managers to own the resources. For more information about design considerations, see [How to: Design for Exception Safety](how-to-design-for-exception-safety.md).
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, Win32 kullanan C++ işlevlerini gösterir. `CreateFile` ve `ReadFile` işlevleri dahili olarak açmak ve iki dosya okuma için.  `File` Sınıfı, kaynak alımı başlatma (RAII) sarmalayıcı dosya tanıtıcıları için olan. Oluşturucusuna bir "dosya bulunamadı" koşulu algılar ve C++ modülü çağrı yığınına hata yaymak için bir özel durum oluşturur (Bu örnekte, `main()` işlevi). Sonra bir özel durum oluşturulursa bir `File` nesnesi tamamen oluşturulduktan, yıkıcı otomatik olarak çağırır `CloseHandle` dosya tanıtıcısını bırakmak için. (İsterseniz, Etkin Şablon kitaplığı (ATL) kullanabileceğiniz `CHandle` sınıfı, aynı amaçla veya bir `unique_ptr` özel bir siliciyle birlikte.) Win32 ve CRT API çağıran işlevler hataları algılar ve ardından yerel olarak tanımlanan kullanan C++ özel durumlarını throw `ThrowLastErrorIf` sırayla kullanan işlevi, `Win32Exception` sınıfından türetilen `runtime_error` sınıfı. Bu örnekteki tüm işlevler güçlü özel durum garantisi sağlar; Bu işlevlerden herhangi bir noktada bir özel durum oluşturulursa, kaynak sızmaz ve program durumu değiştirilmez.
+The following example shows C++ functions that use the Win32 `CreateFile` and `ReadFile` functions internally to open and read two files.  The `File` class is a resource acquisition is initialization (RAII) wrapper for the file handles. Its constructor detects a "file not found" condition and throws an exception to propagate the error up the call stack of the C++ module (in this example, the `main()` function). If an exception is thrown after a `File` object is fully constructed, the destructor automatically calls `CloseHandle` to release the file handle. (If you prefer, you can use the Active Template Library (ATL) `CHandle` class for this same purpose, or a `unique_ptr` together with a custom deleter.) The functions that call Win32 and CRT APIs detect errors and then throw C++ exceptions using the locally-defined `ThrowLastErrorIf` function, which in turn uses the `Win32Exception` class, derived from the `runtime_error` class. All functions in this example provide a strong exception guarantee; if an exception is thrown at any point in these functions, no resources are leaked and no program state is modified.
 
 ```cpp
 // compile with: /EHsc
@@ -158,11 +158,11 @@ int main ( int argc, char* argv[] )
 }
 ```
 
-## <a name="calling-exceptional-code-from-non-exceptional-code"></a>Özel durumlu olmayan kod kodundan olağanüstü durum kodunu çağırma
+## <a name="calling-exceptional-code-from-non-exceptional-code"></a>Calling exceptional code from non-exceptional code
 
-"Dış C" C programları tarafından çağrılabilir olarak bildirilen C++ işlevler. C++ COM sunucuları herhangi bir dizi farklı dillerde yazılan kod tarafından tüketilebilir. Genel özel durum duyarlı işlevleri özel durumlu olmayan kod tarafından çağrılmak üzere uygularken, C++ işlevi özel durumların tekrar çağırana yayılmasına izin vermemesi gerekir. Bu nedenle, C++ işlevi, işlemek ve uygunsa, özel durumu çağıranın anladığı bir hata koduna dönüştürmek bildiği her özel durum özellikle yakalamalıdır. Tüm potansiyel özel durumlar bilinmiyorsa, C++ işlevi olmalıdır bir `catch(...)` son işleyici olarak blok. Programınız bilinmeyen bir durumda olabilir. böyle bir durumda, en iyisi arayana önemli bir hata raporu olmasıdır.
+C++ functions that are declared as "extern C" can be called by C programs. C++ COM servers can be consumed by code written in any of a number of different languages. When you implement public exception-aware functions in C++ to be called by non-exceptional code, the C++ function must not allow any exceptions to propagate back to the caller. Therefore, the C++ function must specifically catch every exception that it knows how to handle and, if appropriate, convert the exception to an error code that the caller understands. If not all potential exceptions are known, the C++ function should have a `catch(...)` block as the last handler. In such a case, it's best to report a fatal error to the caller, because your program might be in an unknown state.
 
-Aşağıdaki örnek oluşturulabilecek tüm özel bir Win32Exception veya türetilmiş bir özel durum türü olduğunu varsayan bir işlev gösterir `std::exception`. İşlevi, bu tür herhangi bir özel durumu yakalar ve hata bilgisini çağırana bir Win32 hata kodu olarak yayar.
+The following example shows a function that assumes that any exception that might be thrown is either a Win32Exception or an exception type derived from `std::exception`. The function catches any exception of these types and propagates the error information as a Win32 error code to the caller.
 
 ```cpp
 BOOL DiffFiles2(const string& file1, const string& file2)
@@ -191,7 +191,7 @@ BOOL DiffFiles2(const string& file1, const string& file2)
 }
 ```
 
-Özel durumlardan hata kodlarına dönüştürdüğünüzde, hata kodlarının genellikle bir özel durumun depolayabileceği bilgi zenginliği içermeyen bir olası sorun olduğunu. Bunu ele almak için sağlayabilirsiniz bir **catch** blok harekete geçirilebilirse ve bir hata koduna dönüştürülmeden önce özel durumun ayrıntılarını kaydetmek için günlük işlemi her özel durum türü. Birden fazla işlevin hepsi aynı kümesi kullanıyorsanız bu yaklaşım çok fazla kod tekrarı oluşturabilir **catch** engeller. Kod tekrarından kaçınmanın en iyi yolu, söz konusu bloklar uygulayan bir özel bir yardımcı programda yeniden düzenlemektir tarafından olan **deneyin** ve **catch** engeller ve içindeçağrılanişlevnesnesinikabul**deneyin** blok. Her ortak işlev kodunda, kodu lambda ifadesiyle yardımcı program işlevine geçirin.
+When you convert from exceptions to error codes, one potential issue is that error codes often don't contain the richness of information that an exception can store. To address this, you can provide a **catch** block for each specific exception type that might be thrown, and perform logging to record the details of the exception before it is converted to an error code. This approach can create a lot of code repetition if multiple functions all use the same set of **catch** blocks. A good way to avoid code repetition is by refactoring those blocks into one private utility function that implements the **try** and **catch** blocks and accepts a function object that is invoked in the **try** block. In each public function, pass the code to the utility function as a lambda expression.
 
 ```cpp
 template<typename Func>
@@ -213,7 +213,7 @@ bool Win32ExceptionBoundary(Func&& f)
 }
 ```
 
-Aşağıdaki örnek işlev nesnesini tanımlayan lambda ifadesinin nasıl yazılacağını gösterir. Bir functor, lambda ifadesi kullanılarak "satır içi" olduğunda, genellikle bu yazılmış bir adlandırılmış işlev nesnesi olarak olmasına kıyasla okuması daha kolay olur.
+The following example shows how to write the lambda expression that defines the functor. When a functor is defined "inline" by using a lambda expression, it is often easier to read than it would be if it were written as a named function object.
 
 ```cpp
 bool DiffFiles3(const string& file1, const string& file2)
@@ -232,9 +232,9 @@ bool DiffFiles3(const string& file1, const string& file2)
 }
 ```
 
-Lambda ifadeleri hakkında daha fazla bilgi için bkz. [Lambda ifadeleri](../cpp/lambda-expressions-in-cpp.md).
+For more information about lambda expressions, see [Lambda Expressions](lambda-expressions-in-cpp.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Hatalar ve Özel Durum İşleme (Modern C++)](../cpp/errors-and-exception-handling-modern-cpp.md)<br/>
-[Nasıl yapılır: Özel Durum Güvenliği Tasarımı](../cpp/how-to-design-for-exception-safety.md)<br/>
+[Modern C++ best practices for exceptions and error handling](errors-and-exception-handling-modern-cpp.md)<br/>
+[Nasıl yapılır: Özel Durum Güvenliği Tasarımı](how-to-design-for-exception-safety.md)<br/>

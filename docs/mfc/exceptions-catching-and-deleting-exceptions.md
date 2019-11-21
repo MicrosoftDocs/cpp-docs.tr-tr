@@ -1,5 +1,5 @@
 ---
-title: 'Özel durumlar: Yakalama ve özel durumları silme'
+title: 'Özel Durumlar: Özel Durumları Yakalama ve Silme'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - exceptions [MFC], deleting
@@ -9,47 +9,47 @@ helpviewer_keywords:
 - catch blocks [MFC], catching and deleting exceptions
 - execution [MFC], returns from within catch block
 ms.assetid: 7c233ff0-89de-4de0-a68a-9e9cdb164311
-ms.openlocfilehash: 511850c3c17a4eb70529202f4b0c2b36132fc8ff
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0142ffddfb391ae8da878d9e5fe34629cf16cb52
+ms.sourcegitcommit: 654aecaeb5d3e3fe6bc926bafd6d5ace0d20a80e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62173302"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74246698"
 ---
-# <a name="exceptions-catching-and-deleting-exceptions"></a>Özel durumlar: Yakalama ve özel durumları silme
+# <a name="exceptions-catching-and-deleting-exceptions"></a>Özel Durumlar: Özel Durumları Yakalama ve Silme
 
-Aşağıdaki yönergeler ve örnekler catch ve özel durumları silme işlemini göstermektedir. Daha fazla bilgi için **deneyin**, **catch**, ve **throw** anahtar bkz [C++ özel durum işleme](../cpp/cpp-exception-handling.md).
+The following instructions and examples show you how to catch and delete exceptions. For more information on the **try**, **catch**, and **throw** keywords, see [Modern C++ best practices for exceptions and error handling](../cpp/errors-and-exception-handling-modern-cpp.md).
 
-Bu kod bir özel durumu yakalar her bir bellek sızıntısı özel durum silme hatası neden olduğundan, özel durum işleyicileri işledikleri, özel durum nesneleri silmeniz gerekir.
+Your exception handlers must delete exception objects they handle, because failure to delete the exception causes a memory leak whenever that code catches an exception.
 
-**Catch** blok, bir özel durum silmelisiniz olduğunda:
+Your **catch** block must delete an exception when:
 
-- **Catch** bloğu yeni bir özel durum oluşturur.
+- The **catch** block throws a new exception.
 
-   Elbette, tekrar aynı özel durum, özel durum silmemelisiniz:
+   Of course, you must not delete the exception if you throw the same exception again:
 
    [!code-cpp[NVC_MFCExceptions#3](../mfc/codesnippet/cpp/exceptions-catching-and-deleting-exceptions_1.cpp)]
 
-- Yürütme döndürür içinden **catch** blok.
+- Execution returns from within the **catch** block.
 
 > [!NOTE]
->  Silerken bir `CException`, kullanın `Delete` üye işlevi, özel durumu silinemedi. Kullanmayın **Sil** anahtar sözcüğü, çünkü özel durum yığın üzerinde değilse başarısız.
+>  When deleting a `CException`, use the `Delete` member function to delete the exception. Do not use the **delete** keyword, because it can fail if the exception is not on the heap.
 
-#### <a name="to-catch-and-delete-exceptions"></a>Catch ve özel durumları Sil
+#### <a name="to-catch-and-delete-exceptions"></a>To catch and delete exceptions
 
-1. Kullanım **deneyin** ayarlamak için anahtar sözcüğü bir **deneyin** blok. İçinde bir özel durum oluşturabilecek herhangi bir programı deyim yürütme bir **deneyin** blok.
+1. Use the **try** keyword to set up a **try** block. Execute any program statements that might throw an exception within a **try** block.
 
-   Kullanım **catch** ayarlamak için anahtar sözcüğü bir **catch** blok. Özel durum işleme kodu yerleştirin bir **catch** blok. Kodda **catch** blokesi yalnızca içindeki kod **deneyin** blok, belirtilen türde bir özel durum oluşturursa **catch** deyimi.
+   Use the **catch** keyword to set up a **catch** block. Place exception-handling code in a **catch** block. The code in the **catch** block is executed only if the code within the **try** block throws an exception of the type specified in the **catch** statement.
 
-   Aşağıdaki çatı gösterildiği nasıl **deneyin** ve **catch** blokları normal şekilde düzenlenmiştir:
+   The following skeleton shows how **try** and **catch** blocks are normally arranged:
 
    [!code-cpp[NVC_MFCExceptions#4](../mfc/codesnippet/cpp/exceptions-catching-and-deleting-exceptions_2.cpp)]
 
-   Bir özel durum oluştuğunda denetim geçer ilk **catch** blok özel durum bildirimi eşleşen özel durumun türü. Farklı türde özel durum ile sıralı seçmeli olarak işleyebilir **catch** aşağıda listelenen engeller:
+   When an exception is thrown, control passes to the first **catch** block whose exception-declaration matches the type of the exception. You can selectively handle different types of exceptions with sequential **catch** blocks as listed below:
 
    [!code-cpp[NVC_MFCExceptions#5](../mfc/codesnippet/cpp/exceptions-catching-and-deleting-exceptions_3.cpp)]
 
-Daha fazla bilgi için [özel durumlar: MFC özel durum makrolarından dönüştürme](../mfc/exceptions-converting-from-mfc-exception-macros.md).
+For more information, see [Exceptions: Converting from MFC Exception Macros](../mfc/exceptions-converting-from-mfc-exception-macros.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

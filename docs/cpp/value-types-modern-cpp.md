@@ -1,24 +1,20 @@
 ---
-title: Değer Türleri (Modern C++)
-ms.date: 05/07/2019
+title: C++ classes as value types
+ms.date: 11/19/2019
 ms.topic: conceptual
 ms.assetid: f63bb62c-60da-40d5-ac14-4366608fe260
-ms.openlocfilehash: 204ea9f86377eb8a5796f01cb81a9161163d9649
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: 1aabcad46e848e1a499a142adaba5002a829bbf5
+ms.sourcegitcommit: 654aecaeb5d3e3fe6bc926bafd6d5ace0d20a80e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65221890"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74246015"
 ---
-# <a name="value-types-modern-c"></a>Değer Türleri (Modern C++)
+# <a name="c-classes-as-value-types"></a>C++ classes as value types
 
-C++, varsayılan değer türleri tarafından sınıflardır. Bu konu, değer türleri ve kullanımlarıyla sorunları tanıtıcı genel bakış sağlar.
+C++ classes are by default value types. They can be specified as reference types, which enable polymorphic behavior to support object-oriented programming. Value types are sometimes viewed from the perspective of memory and layout control, whereas reference types are about base classes and virtual functions for polymorphic purposes. By default, value types are copyable, which means there is always a copy constructor and a copy assignment operator. For reference types, you make the class non-copyable (disable the copy constructor and copy assignment operator) and use a virtual destructor, which supports their intended polymorphism. Value types are also about the contents, which, when they are copied, always give you two independent values that can be modified separately. Reference types are about identity - what kind of object is it? For this reason, "reference types" are also referred to as "polymorphic types".
 
-## <a name="value-vs-reference-types"></a>Değer başvuru türleri
-
-Daha önce belirtildiği gibi C++ sınıflarının varsayılan değer türleri olan. Nesne yönelimli programlama desteklemek çok biçimli davranışları etkinleştirmek başvuru türleri olarak belirtilebilir. Başvuru türleri temel sınıflar ve sanal işlevler hakkında çok biçimli amacıyla oysa değer türleri, bellek ve düzen denetimi perspektifinden bazen görüntülenir. Varsayılan olarak, her zaman bir kopya oluşturucu ve kopya atama işlecine anlamına gelir, değer türleri kopyalanabilir,. Başvuru türleri için sınıfı kopyalanamaz yapın (kopya oluşturucu ve kopya atama işleci devre dışı bırakın) ve bunların hedeflenen çok biçimlilik destekleyen sanal bir yıkıcı kullanın. Değer türleri kopyalanırlar olduğunda, her zaman ayrı ayrı değiştirilebilir iki bağımsız değer erişmenizi sağlayan içeriği hakkında da var. Başvuru türleri, hangi nesne çeşidi olduğu kimlik hakkında - misiniz? Bu nedenle, "türleri başvurusu" "çok biçimli türler olarak" de denir.
-
-Bir başvuru benzeri türü (sanal işlevler, temel sınıf) istediğinizden açıkça kopyalama, devre dışı bırakmak gösterildiği gerekirse `MyRefType` aşağıdaki kodda sınıfı.
+If you really want a reference-like type (base class, virtual functions), you need to explicitly disable copying, as shown in the `MyRefType` class in the following code.
 
 ```cpp
 // cl /EHsc /nologo /W4
@@ -39,7 +35,7 @@ int main()
 }
 ```
 
-Yukarıdaki kod derleme şu hatayla sonuçlanır:
+Compiling the above code will result in the following error:
 
 ```Output
 test.cpp(15) : error C2248: 'MyRefType::operator =' : cannot access private member declared in class 'MyRefType'
@@ -47,13 +43,13 @@ test.cpp(15) : error C2248: 'MyRefType::operator =' : cannot access private memb
         meow.cpp(3) : see declaration of 'MyRefType'
 ```
 
-## <a name="value-types-and-move-efficiency"></a>Değer türleri ve verimliliği Taşı
+## <a name="value-types-and-move-efficiency"></a>Value types and move efficiency
 
-Yeni kopya iyileştirmeleri nedeniyle kopyalama ayırma yükü önlenmiş olur. Örneğin, dizelerden oluşan bir vektörü ortasında bir dize eklediğinizde, olacaktır kopyalama yeniden ayırma zahmetine, yalnızca bir move - bile vektör bir Büyüt sonuçlanır. Bu örneği için bir ekleme işlemi iki çok büyük nesneler üzerinde gerçekleştirmek, diğer işlemler için de geçerlidir. Bu değer işlemi iyileştirmeleri nasıl etkinleştirebilirim? Çok kopya oluşturucuları otomatik olarak derleyici tarafından oluşturulabilir gibi bazı C++ Derleyicileri, derleyici bu sizin için örtük olarak etkinleştirir. Bununla birlikte, C++, kendi sınıfınızı "atama ve Oluşturucular, sınıf tanımında bildirerek taşımak için katılımı" gerekir. Bu çift ve işareti kullanılarak elde edilir (& &) uygun üyesini rvalue başvurusu işlev bildirimleri ve tanımlayan bir taşıma oluşturucusuna ve taşıma ataması yöntemlerinde.  Ayrıca "dışında kaynak nesnesi guts çalmak için" doğru kod eklemeniz gerekir.
+Copy allocation overhead is avoided due to new copy optimizations. For example, when you insert a string in the middle of a vector of strings, there will be no copy re-allocation overhead, only a move- even if it results in a grow of the vector itself. This also applies to other operations, for instance performing an add operation on two very large objects. How do you enable these value operation optimizations? In some C++ compilers, the compiler will enable this for you implicitly, much like copy constructors can be automatically generated by the compiler. However, in C++, your class will need to "opt-in" to move assignment and constructors by declaring it in your class definition. This is accomplished by using the double ampersand (&&) rvalue reference in the appropriate member function declarations and defining move constructor and move assignment methods.  You also need to insert the correct code to "steal the guts" out of the source object.
 
-Etkin taşıma varsa nasıl karar verebilirim? Zaten etkin yapı kopyalamanız biliyorsanız, muhtemelen derin kopya ucuz olabilir, etkin taşımak istersiniz. Destek taşıma olduğunu biliyorsanız, ancak bunu mutlaka etkin kopyalama istediğiniz anlamına gelmez. Bu ikinci durumda, bir "yalnızca taşıma türü" adlı. Standart Kitaplığı'nda zaten bir örnek `unique_ptr`. Yan Not, eski olarak `auto_ptr` kullanım dışıdır ve tarafından değiştirildi `unique_ptr` tam C++'ın önceki sürümünü taşıma semantiği desteği eksikliği nedeniyle.
+How do you decide if you need move enabled? If you already know you need copy construction enabled, you probably want move enabled if it can be cheaper than a deep copy. However, if you know you need move support, it doesn't necessarily mean you want copy enabled. This latter case would be called a "move-only type". An example already in the standard library is `unique_ptr`. As a side note, the old `auto_ptr` is deprecated, and was replaced by `unique_ptr` precisely due to the lack of move semantics support in the previous version of C++.
 
-Taşıma semantiği kullanarak Ekle-Orta ya da dönüş değeri gerçekleştirebilirsiniz. Taşıma bir kopyalama iyileştirmesi ' dir. Yığın ayırma geçici bir çözüm olarak gerek yoktur. Aşağıdaki sözde kod göz önünde bulundurun:
+By using move semantics you can return-by-value or insert-in-middle. Move is an optimization of copy. There is need for heap allocation as a workaround. Consider the following pseudocode:
 
 ```cpp
 #include <set>
@@ -82,9 +78,9 @@ HugeMatrix operator+(      HugeMatrix&&,       HugeMatrix&&);
 hm5 = hm1+hm2+hm3+hm4+hm5;   // efficient, no extra copies
 ```
 
-### <a name="enabling-move-for-appropriate-value-types"></a>Taşıma için uygun değer türleri etkinleştirme
+### <a name="enabling-move-for-appropriate-value-types"></a>Enabling move for appropriate value types
 
-Burada, taşıma derin kopya ucuz olabilir bir değer benzeri sınıf için taşıma oluşturma etkinleştirin ve verimlilik için atama taşıma. Aşağıdaki sözde kod göz önünde bulundurun:
+For a value-like class where move can be cheaper than a deep copy, enable move construction and move assignment for efficiency. Consider the following pseudocode:
 
 ```cpp
 #include <memory>
@@ -106,17 +102,13 @@ public:
 };
 ```
 
-Kopya oluşturma/atama etkinleştirirseniz, derin kopya ucuz olabilir, ayrıca taşıma yapımı/atama etkinleştirin.
+If you enable copy construction/assignment, also enable move construction/assignment if it can be cheaper than a deep copy.
 
-Bazı *değer olmayan* türleri yalnızca Aktarım sahipliği bir kaynak olduğunda kopyalanamıyor gibi yalnızca taşınabilir,. Örnek: `unique_ptr`.
-
-## <a name="section"></a>Bölüm
-
-İçerik
+Some *non-value* types are move-only, such as when you can’t clone a resource, only transfer ownership. Example: `unique_ptr`.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Tür Sistemi (Modern C++)](../cpp/cpp-type-system-modern-cpp.md)<br/>
-[C++'a (Modern C++) Tekrar Hoş Geldiniz](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
+[C++ type system](../cpp/cpp-type-system-modern-cpp.md)<br/>
+[Welcome back to C++](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
 [C++ Dil Başvurusu](../cpp/cpp-language-reference.md)<br/>
 [C++ Standart Kitaplığı](../standard-library/cpp-standard-library-reference.md)

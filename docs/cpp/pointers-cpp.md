@@ -1,255 +1,39 @@
 ---
 title: Pointers (C++)
-ms.date: 11/04/2016
+ms.date: 11/19/2019
+description: About raw pointers and smart pointers in Microsoft C++.
 helpviewer_keywords:
-- declarators, pointers
-- declarations, pointers
-- pointers [C++]
-- pointers, declarations
+- pointers (C++)
 ms.assetid: 595387c5-8e58-4670-848f-344c7caf985e
-ms.openlocfilehash: a258a71b8b89643ee98785ee9dfbf30cdf128db7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 21dcc55048e9e378f370f25254e1910b05e49d69
+ms.sourcegitcommit: 654aecaeb5d3e3fe6bc926bafd6d5ace0d20a80e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62223072"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74246417"
 ---
 # <a name="pointers-c"></a>Pointers (C++)
 
-İşaretçiler, aşağıdaki dizi kullanılarak bildirilir.
+A pointer is a variable that stores the memory address of an object. Pointers are used extensively in both C and C++ for three main purposes:
 
-> \[*storage-class-specifiers*] \[*cv-qualifiers*] *type-specifiers* \[*ms-modifier*] *declarator* **;**
+- to allocate new objects on the heap,
+- to pass functions to other functions
+- to iterate over elements in arrays or other data structures.
 
-Burada herhangi bir geçerli işaretçi bildirimcisi kullanılabilir için *bildirimci*. Basit bir işaretçi bildirimci sözdizimi aşağıdaki gibidir:
+In C-style programming, *raw pointers* are used for all these scenarios. However, raw pointers are the source of many serious programming errors. Therefore, their use is strongly discouraged except where they provide a significant performance benefit and there is no ambiguity as to which pointer is the *owning pointer* that is responsible for deleting the object. Modern C++ provides *smart pointers* for allocating objects, *iterators* for traversing data structures, and *lambda expressions* for passing functions. By using these language and library facilities instead of raw pointers, you will make your program safer, easier to debug, and simpler to understand and maintain. See [Smart pointers](smart-pointers-modern-cpp.md), [Iterators](../standard-library/iterators.md), and [Lambda expressions](lambda-expressions-in-cpp.md) for more information.
 
-> __\*__ \[*cv-qualifiers*] *identifier* \[**=** *expression*]
+## <a name="in-this-section"></a>Bu bölümde
 
-1. Bildirim tanımlayıcıları:
-
-   - İsteğe bağlı bir depolama sınıfı tanımlayıcısı. Daha fazla bilgi için [tanımlayıcıları](../cpp/specifiers.md).
-
-   - İsteğe bağlı **const** veya **geçici** olarak işaret ettiği için nesne türü için uygulama anahtar sözcüğü.
-
-   - Tür belirticisi: olarak işaret ettiği nesnenin türünü temsil eden bir tür adı.
-
-1. Bildirimci:
-
-   - İsteğe bağlı Microsoft'a özgü değiştirici. Daha fazla bilgi için [Microsoft'a özel değiştiriciler](../cpp/microsoft-specific-modifiers.md).
-
-   - __\*__ İşleci.
-
-   - İsteğe bağlı **const** veya **geçici** işaretçi için uygulama anahtar sözcüğü.
-
-   - Tanımlayıcı.
-
-   - İsteğe bağlı bir başlatıcı.
-
-İşlevi için bir işaretçi bildirimcisi şöyle görünür:
-
-> __(\*__  \[ *cv niteleyicileri*] *tanımlayıcı* **) (** *bağımsız değişken listesi* **)** \[ *cv qualifers*] \[ *özel durum belirtimi*] \[ **=** *ifade*] **;**
-
-Bir işaretçiler dizisi için söz dizimi şu şekilde görünür:
-
-> __\*__ *tanımlayıcı* **\[** \[ *sabit-ifade*] **]**
-
-Birden çok bildirimcisi ve bunların başlatıcıları birlikte tek bir bildirim belirticisi aşağıdaki virgülle ayrılmış listesi bildiriminde görünebilir.
-
-Bir işaretçi bildirimi basit bir örneği verilmiştir:
-
-```cpp
-char *pch;
-```
-
-Yukarıdaki bildirim belirten `pch` türündeki bir nesneye işaret **char**.
-
-Daha karmaşık bir örnek
-
-```cpp
-static unsigned int * const ptr;
-```
-
-Yukarıdaki bildirim belirten `ptr` türünde bir nesne için sabit bir işaretçi olduğu **işaretsiz** **int** statik depolama süresine sahip.
-
-Sonraki örnek, birden çok işaretçisi bildirilir ve başlatılır gösterir:
-
-```cpp
-static int *p = &i, *q = &j;
-```
-
-Önceki örnekte, işaretçiler p ve soru türündeki nesneleri işaret **int** ve adresler i j ve sırasıyla başlatılır.  Depolama sınıfı tanımlayıcısı **statik** hem işaretçiler için geçerlidir.
-
-## <a name="example"></a>Örnek
-
-```cpp
-// pointer.cpp
-// compile with: /EHsc
-#include <iostream>
-int main() {
-   int i = 1, j = 2; // local variables on the stack
-   int *p;
-
-   // a pointer may be assigned to "point to" the value of
-   // another variable using the & (address of) operator
-   p = & j;
-
-   // since j was on the stack, this address will be somewhere
-   // on the stack.  Pointers are printed in hex format using
-   // %p and conventionally marked with 0x.
-   printf_s("0x%p\n",  p);
-
-   // The * (indirection operator) can be read as "the value
-   // pointed to by".
-   // Since p is pointing to j, this should print "2"
-   printf_s("0x%p %d\n",  p, *p);
-
-   // changing j will change the result of the indirection
-   // operator on p.
-   j = 7;
-   printf_s("0x%p %d\n",  p, *p );
-
-   // The value of j can also be changed through the pointer
-   // by making an assignment to the dereferenced pointer
-   *p = 10;
-   printf_s("j is %d\n", j); // j is now 10
-
-   // allocate memory on the heap for an integer,
-   // initialize to 5
-   p = new int(5);
-
-   // print the pointer and the object pointed to
-   // the address will be somewhere on the heap
-   printf_s("0x%p %d\n",  p, *p);
-
-   // free the memory pointed to by p
-   delete p;
-
-   // At this point, dereferencing p with *p would trigger
-   // a runtime access violation.
-
-   // Pointer arithmetic may be done with an array declared
-   // on the stack or allocated on the heap with new.
-   // The increment operator takes into account the size
-   // of the objects pointed to.
-   p = new int[5];
-   for (i = 0; i < 5; i++, p++) {
-      *p = i * 10;
-      printf_s("0x%p %d\n", p, *p);
-   }
-
-   // A common expression seen is dereferencing in combination
-   // with increment or decrement operators, as shown here.
-   // The indirection operator * takes precedence over the
-   // increment operator ++.
-   // These are particularly useful in manipulating char arrays.
-   char s1[4] = "cat";
-   char s2[4] = "dog";
-   char* p1 = s1;
-   char* p2 = s2;
-
-   // the following is a string copy operation
-   while (*p1++ = *p2++);
-
-   // s2 was copied into s1, so now they are both equal to "dog"
-   printf_s("%s %s", s1, s2);
-}
-```
-
-```Output
-0x0012FEC8
-0x0012FEC8 2
-0x0012FEC8 7
-j is 10
-0x00320850 5
-0x00320850 0
-0x00320854 10
-0x00320858 20
-0x0032085C 30
-0x00320860 40
-dog dog
-```
-
-## <a name="example"></a>Örnek
-
-Başka bir örnek veri yapıları işaretçi kullanımını gösterir; Bu durumda, bir bağlantılı listesinde.
-
-```cpp
-// pointer_linkedlist.cpp
-// compile with: /EHsc
-#include <iostream>
-using namespace std;
-
-struct NewNode {
-   NewNode() : node(0){}
-   int i;
-   NewNode * node;
-};
-
-void WalkList(NewNode * ptr) {
-   if (ptr != 0) {
-      int i = 1;
-      while (ptr->node != 0 ) {
-         cout << "node " << i++ << " = " << ptr->i << endl;
-         ptr = ptr->node;
-      }
-      cout << "node " << i++ << " = " << ptr->i << endl;
-   }
-}
-
-void AddNode(NewNode ** ptr) {
-   NewNode * walker = 0;
-   NewNode * MyNewNode = new NewNode;
-   cout << "enter a number: " << endl;
-   cin >> MyNewNode->i;
-
-   if (*ptr == 0)
-      *ptr = MyNewNode;
-   else  {
-      walker = *ptr;
-      while (walker->node != 0)
-         walker = walker->node;
-
-      walker->node = MyNewNode;
-   }
-}
-
-int main() {
-   char ans = ' ';
-   NewNode * ptr = 0;
-   do {
-      cout << "a (add node)  d (display list)  q (quit)" << endl;
-      cin >> ans;
-      switch (ans) {
-      case 'a':
-         AddNode(&ptr);
-         break;
-      case 'd':
-         WalkList(ptr);
-         break;
-      }
-   } while (ans != 'q');
-}
-```
-
-```Output
-a
-45
-d
-a
-789
-d
-qa (add node)  d (display list)  q (quit)
-enter a number:
-a (add node)  d (display list)  q (quit)
-node 1 = 45
-a (add node)  d (display list)  q (quit)
-enter a number:
-a (add node)  d (display list)  q (quit)
-node 1 = 45
-node 2 = 789
-a (add node)  d (display list)  q (quit)
-```
+- [Raw pointers](raw-pointers.md)
+- [Const and volatile pointers](const-and-volatile-pointers.md)
+- [new and delete operators](new-and-delete-operators.md)
+- [Smart pointers](smart-pointers-modern-cpp.md)
+- [How to: Create and use unique_ptr instances](how-to-create-and-use-unique-ptr-instances.md)
+- [How to: Create and use shared_ptr instances](how-to-create-and-use-shared-ptr-instances.md)
+- [How to: Create and use weak_ptr instances](how-to-create-and-use-weak-ptr-instances.md)
+- [How to: Create and use CComPtr and CComQIPtr instances](how-to-create-and-use-ccomptr-and-ccomqiptr-instances.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yöneltme İşleci: *](../cpp/indirection-operator-star.md)<br/>
-[Address-of İşleci: &](../cpp/address-of-operator-amp.md)
+[Yineleyiciler](../standard-library/iterators.md)</br>
+[Lambda expressions](lambda-expressions-in-cpp.md)

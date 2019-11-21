@@ -26,76 +26,76 @@ helpviewer_keywords:
 - _exception_info keyword [C++]
 - _abnormal_termination keyword [C++]
 ms.assetid: 30d60071-ea49-4bfb-a8e6-7a420de66381
-ms.openlocfilehash: b4dccb58bf63f51e88006b793b8a94bfbe021c73
-ms.sourcegitcommit: 8bb2bea1384b290b7570b01608a86c7488ae7a02
+ms.openlocfilehash: af378f510f11e1fe7d08619b5f33efe92a13d7be
+ms.sourcegitcommit: 654aecaeb5d3e3fe6bc926bafd6d5ace0d20a80e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67400543"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74245172"
 ---
 # <a name="try-except-statement"></a>try-except Deyimi
 
-**Microsoft'a özgü**
+**Microsoft Specific**
 
-**Deneyin-dışında** ifadesi bir Microsoft uzantısı c ve C++ dilleri destekleyen yapılandırılmış özel durum işleme.
+The **try-except** statement is a Microsoft extension to the C and C++ languages that supports structured exception handling.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **\_\_deneyin**<br/>
+> **\_\_try**<br/>
 > {<br/>
-> &nbsp;&nbsp;&nbsp;&nbsp;Korumalı kod<br/>
+> &nbsp;&nbsp;&nbsp;&nbsp;// guarded code<br/>
 > }<br/>
-> **\_\_dışında** ( *ifade* )<br/>
+> **\_\_except** ( *expression* )<br/>
 > {<br/>
-> &nbsp;&nbsp;&nbsp;&nbsp;özel durum işleyici kodu<br/>
+> &nbsp;&nbsp;&nbsp;&nbsp;// exception handler code<br/>
 > }
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Deneyin-dışında** deyimi, C için bir Microsoft uzantısıdır ve edinmek için hedef uygulamalar sağlayan C++ dilleri, normalde programın yürütülmesini sonlandıran olaylar gerçekleştiğinde denetim. Bu tür olayların adlı *özel durumları*, ve uğraşan mekanizması olarak adlandırılan *yapılandırılmış özel durum işleme* (SEH).
+The **try-except** statement is a Microsoft extension to the C and C++ languages that enables target applications to gain control when events that normally terminate program execution occur. Such events are called *exceptions*, and the mechanism that deals with exceptions is called *structured exception handling* (SEH).
 
-İlgili bilgiler için bkz. [try-finally deyimi](../cpp/try-finally-statement.md).
+For related information, see the [try-finally statement](../cpp/try-finally-statement.md).
 
 Özel durumlar, donanım tabanlı veya yazılım tabanlı olabilir. Uygulamalar donanım veya yazılım özel durumlarından tamamen kurtarılamadığında bile, yapılandırılmış özel durum işleme hata bilgilerinin görüntülenmesini ve sorunun tanılanmasına yardımcı olmak için uygulamanın iç durumunun yakalanmasını sağlar. Bu, özellikle kolayca yeniden oluşturulamayan aralıklı sorunlar için yararlıdır.
 
 > [!NOTE]
-> Yapılandırılmış özel durum işlemi, hem C hem de C++ kaynak dosyaları için Win32 ile çalışır. Ancak, özellikle C++ için tasarlanmamıştır. C++ özel durum işlemeyi kullanarak kodunuzun daha taşınabilir olduğundan emin olabilirsiniz. Ayrıca, C++ özel durum işleme her türden özel durumu işleyebildiği için daha esnektir. C++ programları için C++ özel durum işleme mekanizmasını kullanmanız önerilir ([try, catch ve throw](../cpp/try-throw-and-catch-statements-cpp.md) deyimleri).
+> Yapılandırılmış özel durum işlemi, hem C hem de C++ kaynak dosyaları için Win32 ile çalışır. Ancak, özellikle C++ için tasarlanmamıştır. C++ özel durum işlemeyi kullanarak kodunuzun daha taşınabilir olduğundan emin olabilirsiniz. Ayrıca, C++ özel durum işleme her türden özel durumu işleyebildiği için daha esnektir. For C++ programs, it is recommended that you use the C++ exception-handling mechanism ([try, catch, and throw](../cpp/try-throw-and-catch-statements-cpp.md) statements).
 
-Sonra gelen bileşik deyim **__try** yan tümcesi ise gövdedir veya korunan bölümdür. Sonra gelen bileşik deyim **__except** yan tümcesi özel durum işleyicisidir. İşleyici, korunan bölümün gövdesi yürütülürken bir özel durum oluşturulursa yapılacak işlemleri belirtir. Yürütme aşağıdaki gibi çalışır:
+The compound statement after the **__try** clause is the body or guarded section. The compound statement after the **__except** clause is the exception handler. İşleyici, korunan bölümün gövdesi yürütülürken bir özel durum oluşturulursa yapılacak işlemleri belirtir. Execution proceeds as follows:
 
 1. Korunan bölüm yürütülür.
 
-1. Korunan bölümün yürütülmesi sırasında hiçbir özel durum oluşursa yürütme tümcesinden sonraki deyimden devam eder **__except** yan tümcesi.
+1. If no exception occurs during execution of the guarded section, execution continues at the statement after the **__except** clause.
 
-1. Özel bir durum oluştuğunda korunan bölümün yürütülmesi sırasında veya korunan bölümün çağırdığı herhangi bir yordamda **__except** *ifade* (adlı *filtre* ifade) değerlendirilir ve değer özel durumun nasıl işlendiğini belirler. Üç olası değer vardır:
+1. If an exception occurs during execution of the guarded section or in any routine the guarded section calls, the **__except** *expression* (called the *filter* expression) is evaluated and the value determines how the exception is handled. Üç olası değer vardır:
 
-   - Exceptıon_contınue_executıon (-1) özel durum kapatıldı. Yürütmeye, özel durumun gerçekleştiği noktadan devam edin.
+   - EXCEPTION_CONTINUE_EXECUTION (-1) Exception is dismissed. Yürütmeye, özel durumun gerçekleştiği noktadan devam edin.
 
-   - Exceptıon_contınue_search (0) özel durum tanınmıyor. Yığında bir işleyici ilk içeren için aramaya devam edin **deneyin-dışında** deyimleri, ardından sonraki en yüksek önceliğe sahip işleyicileri için.
+   - EXCEPTION_CONTINUE_SEARCH (0) Exception is not recognized. Continue to search up the stack for a handler, first for containing **try-except** statements, then for handlers with the next highest precedence.
 
-   - Exceptıon_execute_handler (1) özel durum tanınır. Yürüterek denetimi özel durum işleyicisine aktarma **__except** bileşik deyimini sonra yürütmeye devam **__except** blok.
+   - EXCEPTION_EXECUTE_HANDLER (1) Exception is recognized. Transfer control to the exception handler by executing the **__except** compound statement, then continue execution after the **__except** block.
 
-Çünkü **__except** ifadesi C ifadesi olarak değerlendirildiği, tek bir değer, koşullu ifade işleci veya virgül işlecinin sınırlıdır. Daha kapsamlı bir işlem gerekliyse, ifade yukarıda listelenen üç değerden birini döndüren bir yordam çağırabilir.
+Because the **__except** expression is evaluated as a C expression, it is limited to a single value, the conditional-expression operator, or the comma operator. Daha kapsamlı bir işlem gerekliyse, ifade yukarıda listelenen üç değerden birini döndüren bir yordam çağırabilir.
 
 Her uygulamanın kendi özel durum işleyicisi olabilir.
 
-İçine atlanamaz değil bir **__try** deyimi, ancak herhangi birinden dışarı atlanabilir. Özel durum işleyicisi bir işlem yürütülürken sonlandırılırsa sonlandırılırsa çağrılmaz bir **deneyin-dışında** deyimi.
+It is not valid to jump into a **__try** statement, but valid to jump out of one. The exception handler is not called if a process is terminated in the middle of executing a **try-except** statement.
 
-Önceki sürümlerle uyumluluk için **_try**, **_except**, ve **_leave** için eş anlamlı sözcükler olan **__try**, **__except** , ve **__leave** sürece derleyici seçeneği [/Za \(dil uzantılarını devre dışı bırak)](../build/reference/za-ze-disable-language-extensions.md) belirtilir.
+For compatibility with previous versions, **_try**, **_except**, and **_leave** are synonyms for **__try**, **__except**, and **__leave** unless compiler option [/Za \(Disable language extensions)](../build/reference/za-ze-disable-language-extensions.md) is specified.
 
-### <a name="the-leave-keyword"></a>__leave Anahtar Sözcüğü
+### <a name="the-__leave-keyword"></a>__leave Anahtar Sözcüğü
 
-**__Leave** anahtar sözcüğü yalnızca korunan bölümünde geçerlidir bir **deneyin-dışında** deyimi ve etkisi korunan bölümün sonuna atlama etmektir. Yürütme, özel durum işleyicisinden sonra ilk deyimde devam eder.
+The **__leave** keyword is valid only within the guarded section of a **try-except** statement, and its effect is to jump to the end of the guarded section. Yürütme, özel durum işleyicisinden sonra ilk deyimde devam eder.
 
-A **goto** deyimi korumalı bölümün dışına da atlayabilir ve olduğu gibi performansı düşmez bir **try-finally** deyimi yığın geriye doğru izleme gerçekleşmediği için. Ancak, kullanmanızı öneririz **__leave** anahtar sözcüğü yerine **goto** deyimi korunan bölümün büyük veya karmaşık ise programlama hata yapma olasılığını olduğundan.
+A **goto** statement can also jump out of the guarded section, and it does not degrade performance as it does in a **try-finally** statement because stack unwinding does not occur. However, we recommend that you use the **__leave** keyword rather than a **goto** statement because you are less likely to make a programming mistake if the guarded section is large or complex.
 
 ### <a name="structured-exception-handling-intrinsic-functions"></a>Yapılandırılmış Özel Durum İşleme İç İşlevleri
 
-Yapılandırılmış özel durum işleme ile kullanılabilecek iki iç işlev sağlar **deneyin-dışında** deyimi: `GetExceptionCode` ve `GetExceptionInformation`.
+Structured exception handling provides two intrinsic functions that are available to use with the **try-except** statement: `GetExceptionCode` and `GetExceptionInformation`.
 
-`GetExceptionCode` özel durum kodunu (32-bit tamsayı) döndürür.
+`GetExceptionCode` returns the code (a 32-bit integer) of the exception.
 
-İç işlevi `GetExceptionInformation` özel durum hakkında ek bilgi içeren bir yapıya bir işaretçi döndürür. Bu işaretçiyle, donanım özel durumu sırasında var olan makine durumuna erişebilirsiniz. Yapı aşağıdaki gibidir:
+The intrinsic function `GetExceptionInformation` returns a pointer to a structure containing additional information about the exception. Bu işaretçiyle, donanım özel durumu sırasında var olan makine durumuna erişebilirsiniz. Yapı aşağıdaki gibidir:
 
 ```cpp
 typedef struct _EXCEPTION_POINTERS {
@@ -104,19 +104,19 @@ typedef struct _EXCEPTION_POINTERS {
 } EXCEPTION_POINTERS, *PEXCEPTION_POINTERS;
 ```
 
-İşaretçi türleri `PEXCEPTION_RECORD` ve `PCONTEXT` içerme dosyasında tanımlanır \<winnt.h >, ve `_EXCEPTION_RECORD` ve `_CONTEXT` içerme dosyasında tanımlanır \<excpt.h >
+The pointer types `PEXCEPTION_RECORD` and `PCONTEXT` are defined in the include file \<winnt.h>, and `_EXCEPTION_RECORD` and `_CONTEXT` are defined in the include file \<excpt.h>
 
-Kullanabileceğiniz `GetExceptionCode` içinde özel durum işleyicisi. Ancak, kullanabileceğiniz `GetExceptionInformation` yalnızca özel durum filtresi ifadesinde. İşaret ettiği bilgiler, genellikle yığındadır ve denetim özel durum işleyicisine aktarıldığında kullanılamaz.
+You can use `GetExceptionCode` within the exception handler. However, you can use `GetExceptionInformation` only within the exception filter expression. İşaret ettiği bilgiler, genellikle yığındadır ve denetim özel durum işleyicisine aktarıldığında kullanılamaz.
 
-İç işlevi `AbnormalTermination` sonlandırma işleyicisinin içerisinde kullanılabilir. 0 döndürür gövdesinin **try-finally** sırayla deyimini sonlandırır. Diğer tüm durumlarda, 1 döndürür.
+The intrinsic function `AbnormalTermination` is available within a termination handler. It returns 0 if the body of the **try-finally** statement terminates sequentially. Diğer tüm durumlarda, 1 döndürür.
 
-excpt.h, bu iç öğeler için bazı alternatif adlar tanımlar:
+excpt.h defines some alternate names for these intrinsics:
 
-`GetExceptionCode` eşdeğerdir `_exception_code`
+`GetExceptionCode` is equivalent to `_exception_code`
 
-`GetExceptionInformation` eşdeğerdir `_exception_info`
+`GetExceptionInformation` is equivalent to `_exception_info`
 
-`AbnormalTermination` eşdeğerdir `_abnormal_termination`
+`AbnormalTermination` is equivalent to `_abnormal_termination`
 
 ## <a name="example"></a>Örnek
 
@@ -182,10 +182,10 @@ in except
 world
 ```
 
-**END Microsoft özgü**
+**END Microsoft Specific**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Özel Durum İşleyicisi Yazma](../cpp/writing-an-exception-handler.md)<br/>
+[Writing an exception handler](../cpp/writing-an-exception-handler.md)<br/>
 [Yapılandırılmış Özel Durum İşleme (C/C++)](../cpp/structured-exception-handling-c-cpp.md)<br/>
 [Anahtar Sözcükler](../cpp/keywords-cpp.md)
