@@ -1,5 +1,5 @@
 ---
-title: Yazılım Özel Durumlarını Oluşturma
+title: Yazılım özel durumlarını oluşturma
 ms.date: 11/04/2016
 helpviewer_keywords:
 - run-time errors, treating as exceptions
@@ -13,45 +13,45 @@ helpviewer_keywords:
 - software exceptions [C++]
 - formats [C++], exception codes
 ms.assetid: be1376c3-c46a-4f52-ad1d-c2362840746a
-ms.openlocfilehash: 65e011f74868a77781b03f475d45e2a5d636d460
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 7c58ae2e2b6635345a162d11d2b75a9865d37751
+ms.sourcegitcommit: 654aecaeb5d3e3fe6bc926bafd6d5ace0d20a80e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69498577"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74246401"
 ---
-# <a name="raising-software-exceptions"></a>Yazılım Özel Durumlarını Oluşturma
+# <a name="raising-software-exceptions"></a>Yazılım özel durumlarını oluşturma
 
-Program hatalarının en yaygın kaynaklarından bazıları sistem tarafından özel durum olarak işaretlenmez. Örneğin, bellek bloğu ayırmaya çalışırsanız, ancak yeterli bellek yoksa, çalışma zamanı veya API işlevi bir özel durum oluşturmaz, ancak bir hata kodu döndürür.
+Some of the most common sources of program errors are not flagged as exceptions by the system. For example, if you attempt to allocate a memory block but there is insufficient memory, the run-time or API function does not raise an exception but returns an error code.
 
-Ancak, kodunuzda söz konusu koşulu algılayıp ve sonra [RaiseException](/windows/win32/api/errhandlingapi/nf-errhandlingapi-raiseexception) işlevini çağırarak rapor vererek herhangi bir koşulu özel durum olarak ele alabilirsiniz. Hatalara bu şekilde bayrak koyarak, yapılandırılmış özel durum işlemenin avantajlarının her türlü çalışma zamanı hatasına getirebilirsiniz.
+However, you can treat any condition as an exception by detecting that condition in your code and then reporting it by calling the [RaiseException](/windows/win32/api/errhandlingapi/nf-errhandlingapi-raiseexception) function. By flagging errors this way, you can bring the advantages of structured exception handling to any kind of run-time error.
 
-Yapılandırılmış özel durum işlemeyi hatalarla birlikte kullanmak için:
+To use structured exception handling with errors:
 
-- Olay için kendi özel durum kodunuzu tanımlayın.
+- Define your own exception code for the event.
 
-- Bir `RaiseException` sorunu tespit ettiğinizde çağırın.
+- Call `RaiseException` when you detect a problem.
 
-- Tanımladığınız özel durum kodunu test etmek için özel durum işleme filtrelerini kullanın.
+- Use exception-handling filters to test for the exception code you defined.
 
-Winerror. h > dosyası, \<özel durum kodlarının biçimini gösterir. Mevcut bir özel durum koduyla çakışan bir kod tanımlamadığınızdan emin olmak için, üçüncü en önemli biti 1 olarak ayarlayın. En önemli dört bit, aşağıdaki tabloda gösterildiği gibi ayarlanmalıdır.
+The \<winerror.h> file shows the format for exception codes. To make sure that you do not define a code that conflicts with an existing exception code, set the third most significant bit to 1. The four most-significant bits should be set as shown in the following table.
 
-|Bits|Önerilen ikili ayar|Açıklama|
+|Bits|Recommended binary setting|Açıklama|
 |----------|--------------------------------|-----------------|
-|31-30|11|Bu iki bit kodun temel durumunu anlatmaktadır:  11 = hata, 00 = başarılı, 01 = bilgilendirici, 10 = uyarı.|
-|29|1\.|İstemci bit. Kullanıcı tanımlı kodlar için 1 olarak ayarlayın.|
-|28|0|Ayrılmış bit. (0 olarak ayarlı bırakın.)|
+|31-30|11|These two bits describe the basic status of the code:  11 = error, 00 = success, 01 = informational, 10 = warning.|
+|29|1\.|Client bit. Set to 1 for user-defined codes.|
+|28|0|Reserved bit. (Leave set to 0.)|
 
-"Hata" ayarı çok sayıda özel durum için uygun olsa da, ilk iki biti isterseniz 11 ikili dışında bir ayara ayarlayabilirsiniz. Anımsanması gereken önemli şey, önceki tabloda gösterildiği gibi BITS 29 ve 28 ' i ayarlamanıza olanak sağlar.
+You can set the first two bits to a setting other than 11 binary if you want, although the "error" setting is appropriate for most exceptions. The important thing to remember is to set bits 29 and 28 as shown in the previous table.
 
-Sonuç olarak oluşan hata kodu, en yüksek dört bit onaltılık E olarak ayarlanmalıdır. Örneğin, aşağıdaki tanımlar herhangi bir Windows özel durum koduyla çakışmayan özel durum kodları tanımlar. (Ancak, üçüncü taraf dll 'Ler tarafından hangi kodların kullanıldığını denetlemeniz gerekebilir.)
+The resulting error code should therefore have the highest four bits set to hexadecimal E. For example, the following definitions define exception codes that do not conflict with any Windows exception codes. (You may, however, need to check which codes are used by third-party DLLs.)
 
 ```cpp
 #define STATUS_INSUFFICIENT_MEM       0xE0000001
 #define STATUS_FILE_BAD_FORMAT        0xE0000002
 ```
 
-Bir özel durum kodu tanımladıktan sonra, özel durum yükseltmek için kullanabilirsiniz. Örneğin, aşağıdaki kod, bir bellek ayırma `STATUS_INSUFFICIENT_MEM` sorununa yanıt olarak özel durumu oluşturur:
+After you have defined an exception code, you can use it to raise an exception. For example, the following code raises the `STATUS_INSUFFICIENT_MEM` exception in response to a memory allocation problem:
 
 ```cpp
 lpstr = _malloc( nBufferSize );
@@ -59,9 +59,9 @@ if (lpstr == NULL)
     RaiseException( STATUS_INSUFFICIENT_MEM, 0, 0, 0);
 ```
 
-Yalnızca bir özel durum yükseltmek istiyorsanız, son üç parametreyi 0 olarak ayarlayabilirsiniz. Son üç parametre ek bilgi iletmek ve işleyicilerin yürütmeye devam etmesini önleyen bir bayrak ayarlamak için faydalıdır. Daha fazla bilgi için Windows SDK [RaiseException](/windows/win32/api/errhandlingapi/nf-errhandlingapi-raiseexception) işlevine bakın.
+If you want to simply raise an exception, you can set the last three parameters to 0. The three last parameters are useful for passing additional information and setting a flag that prevents handlers from continuing execution. See the [RaiseException](/windows/win32/api/errhandlingapi/nf-errhandlingapi-raiseexception) function in the Windows SDK for more information.
 
-Özel durum işleme filtrelerinde, daha sonra tanımladığınız kodları test edebilirsiniz. Örneğin:
+In your exception-handling filters, you can then test for the codes you've defined. Örneğin:
 
 ```cpp
 __try {
@@ -73,5 +73,5 @@ __except (GetExceptionCode() == STATUS_INSUFFICIENT_MEM ||
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Özel Durum İşleyicisi Yazma](../cpp/writing-an-exception-handler.md)<br/>
-[Yapılandırılmış Özel Durum İşleme (C/C++)](../cpp/structured-exception-handling-c-cpp.md)
+[Writing an exception handler](../cpp/writing-an-exception-handler.md)<br/>
+[Structured exception handling (C/C++)](../cpp/structured-exception-handling-c-cpp.md)

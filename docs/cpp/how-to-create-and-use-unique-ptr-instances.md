@@ -1,57 +1,57 @@
 ---
-title: 'Nasıl yapılır: Unique_ptr örnekleri oluşturma ve kullanma'
+title: 'How to: Create and use unique_ptr instances'
 ms.custom: how-to
 ms.date: 11/19/2018
 ms.topic: conceptual
 ms.assetid: 9a373030-e587-452f-b9a5-c5f9d58b7673
-ms.openlocfilehash: 48e459b69592bf4c231407c2a378a7b7e01ff4ae
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4b3362f71d1ccab0efb03d7e8705c6b3f25f9780
+ms.sourcegitcommit: 654aecaeb5d3e3fe6bc926bafd6d5ace0d20a80e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62153659"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74246532"
 ---
-# <a name="how-to-create-and-use-uniqueptr-instances"></a>Nasıl yapılır: Unique_ptr örnekleri oluşturma ve kullanma
+# <a name="how-to-create-and-use-unique_ptr-instances"></a>How to: Create and use unique_ptr instances
 
-A [unique_ptr](../standard-library/unique-ptr-class.md) işaretçisini paylaşmaz. Bunu başka kopyalanamaz `unique_ptr`, bir işleve değer olarak geçilemez veya yapılacak kopya oluşturmayı gerektiren herhangi bir C++ Standart Kitaplığı algoritmasında kullanılamaz. A `unique_ptr` yalnızca taşınabilir. Bu bellek kaynağının sahipliğinin başka aktarılır anlamına gelir `unique_ptr` ve özgün `unique_ptr` INI artık belleğe sahip. Birden fazla sahiplik program mantığına karmaşıklık kattığından nesneyi tek sahiple kısıtlamanızı öneririz. Bu nedenle, gerektiğinde bir akıllı işaretçi için bir düz C++ nesnesi `unique_ptr`, oluşturduğunuzda bir `unique_ptr`, kullanın [make_unique](../standard-library/memory-functions.md#make_unique) yardımcı işlevi.
+A [unique_ptr](../standard-library/unique-ptr-class.md) does not share its pointer. It cannot be copied to another `unique_ptr`, passed by value to a function, or used in any C++ Standard Library algorithm that requires copies to be made. A `unique_ptr` can only be moved. This means that the ownership of the memory resource is transferred to another `unique_ptr` and the original `unique_ptr` no longer owns it. Birden fazla sahiplik program mantığına karmaşıklık kattığından nesneyi tek sahiple kısıtlamanızı öneririz. Therefore, when you need a smart pointer for a plain C++ object, use `unique_ptr`, and when you construct a `unique_ptr`, use the [make_unique](../standard-library/memory-functions.md#make_unique) helper function.
 
-Aşağıdaki diyagramda iki arasında sahipliğin aktarılması gösterilmiştir `unique_ptr` örnekleri.
+The following diagram illustrates the transfer of ownership between two `unique_ptr` instances.
 
-![Benzersiz bir sahipliğini taşıma&#95;ptr](../cpp/media/unique_ptr.png "sahipliğini benzersiz bir taşıma&#95;ptr")
+![Moving the ownership of a unique&#95;ptr](media/unique_ptr.png "Moving the ownership of a unique&#95;ptr")
 
-`unique_ptr` tanımlanan `<memory>` C++ Standart Kitaplığı üst bilgisi. Bu tam olarak ham işaretçi olarak kadar verimli ve C++ Standart Kitaplığı kapsayıcıları kullanılabilir. Ek `unique_ptr` C++ Standart Kitaplığı kapsayıcıları örneklerine verimlidir çünkü taşıma Oluşturucusu `unique_ptr` kopyalama işlemine ihtiyacı ortadan kaldırır.
+`unique_ptr` is defined in the `<memory>` header in the C++ Standard Library. It is exactly as efficient as a raw pointer and can be used in C++ Standard Library containers. The addition of `unique_ptr` instances to C++ Standard Library containers is efficient because the move constructor of the `unique_ptr` eliminates the need for a copy operation.
 
-## <a name="example"></a>Örnek
+## <a name="example-1"></a>Örnek 1
 
-Aşağıdaki örnek nasıl oluşturulacağını gösterir `unique_ptr` örnekleri ve bunları işlevler arasında geçirin.
+The following example shows how to create `unique_ptr` instances and pass them between functions.
 
-[!code-cpp[stl_smart_pointers#210](../cpp/codesnippet/CPP/how-to-create-and-use-unique-ptr-instances_1.cpp)]
+[!code-cpp[stl_smart_pointers#210](codesnippet/CPP/how-to-create-and-use-unique-ptr-instances_1.cpp)]
 
-Bu örneklerde, temel özelliklerini gösterir `unique_ptr`:, taşınabilir, ancak kopyalanamaz. "Taşıma" sahipliği yeni bir aktarır `unique_ptr` ve eski sıfırlar `unique_ptr`.
+These examples demonstrate this basic characteristic of `unique_ptr`: it can be moved, but not copied. "Moving" transfers ownership to a new `unique_ptr` and resets the old `unique_ptr`.
 
-## <a name="example"></a>Örnek
+## <a name="example-2"></a>Örnek 2
 
-Aşağıdaki örnek nasıl oluşturulacağını gösterir `unique_ptr` örnekler ve vektör içinde kullanabilirsiniz.
+The following example shows how to create `unique_ptr` instances and use them in a vector.
 
-[!code-cpp[stl_smart_pointers#211](../cpp/codesnippet/CPP/how-to-create-and-use-unique-ptr-instances_2.cpp)]
+[!code-cpp[stl_smart_pointers#211](codesnippet/CPP/how-to-create-and-use-unique-ptr-instances_2.cpp)]
 
-Döngü aralığında dikkat `unique_ptr` başvuruyla geçirildi. Burada değişkeni değer olarak denerseniz, derleyici bir hata verir `unique_ptr` kopya kurucusu silindiğinden.
+In the range for  loop, notice that the `unique_ptr` is passed by reference. If you try to pass by value here, the compiler will throw an error because the `unique_ptr` copy constructor is deleted.
 
-## <a name="example"></a>Örnek
+## <a name="example-3"></a>Örnek 3
 
-Aşağıdaki örnek nasıl başlatılacağını gösterir. bir `unique_ptr` sınıf üyesi olan.
+The following example shows how to initialize a `unique_ptr` that is a class member.
 
-[!code-cpp[stl_smart_pointers#212](../cpp/codesnippet/CPP/how-to-create-and-use-unique-ptr-instances_3.cpp)]
+[!code-cpp[stl_smart_pointers#212](codesnippet/CPP/how-to-create-and-use-unique-ptr-instances_3.cpp)]
 
-## <a name="example"></a>Örnek
+## <a name="example-4"></a>Example 4
 
-Kullanabileceğiniz [make_unique](../standard-library/memory-functions.md#make_unique) oluşturmak için bir `unique_ptr` bir diziye ancak kullanamazsınız `make_unique` dizi öğelerini başlatmak için.
+You can use [make_unique](../standard-library/memory-functions.md#make_unique) to create a `unique_ptr` to an array, but you cannot use `make_unique` to initialize the array elements.
 
-[!code-cpp[stl_smart_pointers#213](../cpp/codesnippet/CPP/how-to-create-and-use-unique-ptr-instances_4.cpp)]
+[!code-cpp[stl_smart_pointers#213](codesnippet/CPP/how-to-create-and-use-unique-ptr-instances_4.cpp)]
 
-Daha fazla örnek için bkz. [make_unique](../standard-library/memory-functions.md#make_unique).
+For more examples, see [make_unique](../standard-library/memory-functions.md#make_unique).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akıllı İşaretçiler (Modern C++)](../cpp/smart-pointers-modern-cpp.md)<br/>
+[Akıllı İşaretçiler (Modern C++)](smart-pointers-modern-cpp.md)<br/>
 [make_unique](../standard-library/memory-functions.md#make_unique)

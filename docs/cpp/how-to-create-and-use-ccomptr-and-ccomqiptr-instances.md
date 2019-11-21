@@ -1,39 +1,39 @@
 ---
-title: 'Nasıl yapılır: CComPtr ve CComQIPtr örnekleri oluşturma ve kullanma'
+title: 'How to: Create and use CComPtr and CComQIPtr instances'
 ms.custom: how-to
-ms.date: 11/04/2016
+ms.date: 11/19/2019
 ms.topic: conceptual
 ms.assetid: b0356cfb-12cc-4ee8-b988-8311ed1ab5e0
-ms.openlocfilehash: 8dd7aa903eefd533b1dd2688f3cee46ab3787e60
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: e376eab75b9b1fb4a7a271d05fe037142f22e139
+ms.sourcegitcommit: 654aecaeb5d3e3fe6bc926bafd6d5ace0d20a80e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69498587"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74246536"
 ---
-# <a name="how-to-create-and-use-ccomptr-and-ccomqiptr-instances"></a>Nasıl yapılır: CComPtr ve CComQIPtr örnekleri oluşturma ve kullanma
+# <a name="how-to-create-and-use-ccomptr-and-ccomqiptr-instances"></a>How to: Create and use CComPtr and CComQIPtr instances
 
-Klasik Windows programlamada, kitaplıklar genellikle COM nesneleri olarak (veya daha kesin olarak COM sunucuları olarak) uygulanır. Birçok Windows işletim sistemi bileşeni COM sunucusu olarak uygulanır ve birçok katkıda bulunanlar bu biçimde kitaplıklar sağlar. COM temel bilgileri hakkında daha fazla bilgi için bkz. [bileşen nesne modeli (com)](/windows/win32/com/component-object-model--com--portal).
+In classic Windows programming, libraries are often implemented as COM objects (or more precisely, as COM servers). Many Windows operating system components are implemented as COM servers, and many contributors provide libraries in this form. For information about the basics of COM, see [Component Object Model (COM)](/windows/win32/com/component-object-model--com--portal).
 
-Bir bileşen nesne modeli (com) nesnesi örneğini başlattığınızda, arabirim işaretçisini, yok edicinin `AddRef` ve `Release` yıkıcısında yapılan çağrıları kullanarak bir com akıllı İşaretçisinde depolayın. Etkin Şablon kitaplığı (ATL) veya Microsoft Foundation Class Kitaplığı (MFC) kullanıyorsanız `CComPtr` akıllı işaretçiyi kullanın. ATL veya MFC kullanmıyorsanız, öğesini kullanın `_com_ptr_t`. İçin `std::unique_ptr`com eşdeğeri olmadığından, bu akıllı işaretçileri hem tek sahip hem de birden çok sahip senaryolar için kullanın. Hem hem de `CComPtr` Rvalue başvuruları olan taşıma işlemlerini destekler.`ComQIPtr`
+When you instantiate a Component Object Model (COM) object, store the interface pointer in a COM smart pointer, which performs the reference counting by using calls to `AddRef` and `Release` in the destructor. If you are using the Active Template Library (ATL) or the Microsoft Foundation Class Library (MFC), then use the `CComPtr` smart pointer. If you are not using ATL or MFC, then use `_com_ptr_t`. Because there is no COM equivalent to `std::unique_ptr`, use these smart pointers for both single-owner and multiple-owner scenarios. Both `CComPtr` and `ComQIPtr` support move operations that have rvalue references.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, bir com nesnesinin örneğini `CComPtr` oluşturmak ve arabirimlerine işaretçiler almak için kullanımını gösterir. `CComPtr::CoCreateInstance` Üye işlevinin, aynı ada sahip Win32 işlevi yerine com nesnesini oluşturmak için kullanıldığını unutmayın.
+The following example shows how to use `CComPtr` to instantiate a COM object and obtain pointers to its interfaces. Notice that the `CComPtr::CoCreateInstance` member function is used to create the COM object, instead of the Win32 function that has the same name.
 
 [!code-cpp[COM_smart_pointers#01](../cpp/codesnippet/CPP/how-to-create-and-use-ccomptr-and-ccomqiptr-instances_1.cpp)]
 
-`CComPtr`ve onun akrabaları ATL 'nin bir parçasıdır ve atlcomclı. h > içinde \<tanımlanmıştır. `_com_ptr_t`comıp. \<h > içinde bildirilmiştir. Derleyici, tür kitaplıkları için sarmalayıcı `_com_ptr_t` sınıflar oluşturduğunda uzmanlık özelliklerini oluşturur.
+`CComPtr` and its relatives are part of the ATL and are defined in \<atlcomcli.h>. `_com_ptr_t` is declared in \<comip.h>. The compiler creates specializations of `_com_ptr_t` when it generates wrapper classes for type libraries.
 
 ## <a name="example"></a>Örnek
 
-ATL ayrıca `CComQIPtr`bir com nesnesini ek bir arabirim almak üzere sorgulamak için daha basit bir sözdizimine sahiptir. Ancak, bunu yapabileceği `CComPtr` `CComQIPtr` her şeyi yaptığından, ham com arabirim işaretçileriyle anlam açısından daha tutarlı olması önerilir. Bir arabirim için bir `CComPtr` sorgu kullanırsanız, yeni arabirim işaretçisi bir out parametresine yerleştirilir. Çağrı başarısız olursa, tipik bir COM deseninin olduğu bir HRESULT döndürülür. İle `CComQIPtr`, dönüş değeri işaretçinin kendisidir ve çağrı başarısız olursa, iç HRESULT dönüş değerine erişilemez. Aşağıdaki iki satır, ' deki `CComPtr` ve `CComQIPtr` farklı hata işleme mekanizmalarının nasıl farklılık gösterir.
+ATL also provides `CComQIPtr`, which has a simpler syntax for querying a COM object to retrieve an additional interface. However, we recommend `CComPtr` because it does everything that `CComQIPtr` can do and is semantically more consistent with raw COM interface pointers. If you use a `CComPtr` to query for an interface, the new interface pointer is placed in an out parameter. If the call fails, an HRESULT is returned, which is the typical COM pattern. With `CComQIPtr`, the return value is the pointer itself, and if the call fails, the internal HRESULT return value cannot be accessed. The following two lines show how the error handling mechanisms in `CComPtr` and `CComQIPtr` differ.
 
 [!code-cpp[COM_smart_pointers#02](../cpp/codesnippet/CPP/how-to-create-and-use-ccomptr-and-ccomqiptr-instances_2.cpp)]
 
 ## <a name="example"></a>Örnek
 
-`CComPtr`IDispatch 'in COM Otomasyon bileşenlerine işaretçiler depolamasını ve geç bağlamayı kullanarak arabirimdeki yöntemleri çağırmasını sağlayan bir IDispatch özelleştirmesi sağlar. `CComDispatchDriver`, için örtük olarak `CComQIPtr<IDispatch, &IIDIDispatch>` `CComPtr<IDispatch>`dönüştürülebilir olan için bir typedef. Bu nedenle, bu üç adlardan herhangi biri kodda göründüğünde, öğesine `CComPtr<IDispatch>`eşdeğerdir. Aşağıdaki örnek, kullanarak Microsoft Word nesne modeli için bir `CComPtr<IDispatch>`işaretçinin nasıl alınacağını gösterir.
+`CComPtr` provides a specialization for IDispatch that enables it to store pointers to COM automation components and invoke the methods on the interface by using late binding. `CComDispatchDriver` is a typedef for `CComQIPtr<IDispatch, &IIDIDispatch>`, which is implicitly convertible to `CComPtr<IDispatch>`. Therefore, when any of these three names appears in code, it is equivalent to `CComPtr<IDispatch>`. The following example shows how to obtain a pointer to the Microsoft Word object model by using a `CComPtr<IDispatch>`.
 
 [!code-cpp[COM_smart_pointers#03](../cpp/codesnippet/CPP/how-to-create-and-use-ccomptr-and-ccomqiptr-instances_3.cpp)]
 

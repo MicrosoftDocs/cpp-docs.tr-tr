@@ -3,28 +3,28 @@ title: Derleme Zamanı Kapsüllemesi için Pimpl (Modern C++)
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c3e8a90a-b328-4990-82bb-e1b147f76e07
-ms.openlocfilehash: 6e114e2802dd4b2e5d1497867e2224be90c4752d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f1eb06ad3a52be486f085babf699677951b1ee71
+ms.sourcegitcommit: 654aecaeb5d3e3fe6bc926bafd6d5ace0d20a80e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62396112"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74245183"
 ---
 # <a name="pimpl-for-compile-time-encapsulation-modern-c"></a>Derleme Zamanı Kapsüllemesi için Pimpl (Modern C++)
 
-*Derleme pimpl deyim* bağlantısından en aza indirmek ve arabirimleri ayırmak için uygulama gizlemek için modern bir C++ Teknik. Derleme Pimpl kısaltması "uygulaması." işaretçisidir Zaten kavramı hakkında bilgi sahibi olmanız ancak Cheshire Cat veya derleyici güvenlik duvarı deyim gibi diğer adlarıyla bildirin.
+The *pimpl idiom* is a modern C++ technique to hide implementation, to minimize coupling, and to separate interfaces. Pimpl is short for "pointer to implementation." You may already be familiar with the concept but know it by other names like Cheshire Cat or Compiler Firewall idiom.
 
-## <a name="why-use-pimpl"></a>Derleme pimpl neden kullanmalısınız?
+## <a name="why-use-pimpl"></a>Why use pimpl?
 
-Derleme pimpl deyim yazılım geliştirme yaşam döngüsünün nasıl geliştireceğiniz aşağıda verilmiştir:
+Here's how the pimpl idiom can improve the software development lifecycle:
 
-- Derleme bağımlılıkları küçültme.
+- Minimization of compilation dependencies.
 
-- Arabirim ve uygulama ayrılması.
+- Separation of interface and implementation.
 
-- Taşınabilirlik.
+- Portability.
 
-## <a name="pimpl-header"></a>Derleme Pimpl üstbilgisi
+## <a name="pimpl-header"></a>Pimpl header
 
 ```cpp
 // my_class.h
@@ -35,11 +35,11 @@ private:
 };
 ```
 
-Derleme pimpl deyim yeniden basamaklar ve kırılgan nesne düzeni önler. De (Geçişli) popüler türleri için de uygundur.
+The pimpl idiom avoids rebuild cascades and brittle object layouts. It's well suited for (transitively) popular types.
 
-## <a name="pimpl-implementation"></a>Derleme Pimpl uygulama
+## <a name="pimpl-implementation"></a>Pimpl implementation
 
-Tanımlama `impl` .cpp dosyası sınıfta.
+Define the `impl` class in the .cpp file.
 
 ```cpp
 // my_class.cpp
@@ -55,10 +55,10 @@ my_class::my_class(): pimpl( new impl )
 
 ## <a name="best-practices"></a>Önerilen uygulamalar
 
-Oluşturmayan takas özelleştirmesi için destek eklenip eklenmeyeceğini göz önünde bulundurun.
+Consider whether to add support for non-throwing swap specialization.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++'a (Modern C++) Tekrar Hoş Geldiniz](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
+[Welcome back to C++](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
 [C++ Dil Başvurusu](../cpp/cpp-language-reference.md)<br/>
 [C++ Standart Kitaplığı](../standard-library/cpp-standard-library-reference.md)
