@@ -1,22 +1,23 @@
 ---
-title: ABI Sınırlarında Taşınabilirlik (Modern C++)
-ms.date: 11/04/2016
+title: ABı sınırlarındaki taşınabilirlik
+description: Arabirimleri C++ , ikili arabirim sınırlarında C çağırma kuralları için düzleştirin.
+ms.date: 11/19/2019
 ms.topic: conceptual
 ms.assetid: abbd405e-3038-427c-8c24-e00598f0936a
-ms.openlocfilehash: 379b402354c6f08e003dffb38366d1dce20e0987
-ms.sourcegitcommit: 654aecaeb5d3e3fe6bc926bafd6d5ace0d20a80e
+ms.openlocfilehash: b3b2b217739ff5900c8ef0329ff3e8909a3fe036
+ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74246399"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74303312"
 ---
-# <a name="portability-at-abi-boundaries-modern-c"></a>ABI Sınırlarında Taşınabilirlik (Modern C++)
+# <a name="portability-at-abi-boundaries"></a>ABı sınırlarındaki taşınabilirlik
 
-Use sufficiently portable types and conventions at binary interface boundaries. A “portable type” is a C built-in type or a struct that contains only C built-in types. Class types can only be used when caller and callee agree on layout, calling convention, etc. This is only possible when both are compiled with the same compiler and compiler settings.
+İkili arabirim sınırlarında yeterli taşınabilir türler ve kurallar kullanın. "Taşınabilir tür", C yerleşik türü veya yalnızca C yerleşik türlerini içeren bir struct. Sınıf türleri yalnızca, çağıran ve çağrılan düzen, çağırma kuralı vb. için kabul edildiğinde kullanılabilir. Bu yalnızca, her ikisi de aynı derleyici ve derleyici ayarlarıyla derlendiğinde mümkündür.
 
-## <a name="how-to-flatten-a-class-for-c-portability"></a>How to flatten a class for C portability
+## <a name="how-to-flatten-a-class-for-c-portability"></a>C taşınabilirlik için bir sınıfı düzleştirme
 
-When callers may be compiled with another compiler/language, then “flatten” to an **extern "C"** API with a specific calling convention:
+Çağıranlar başka bir derleyici/dille derleniyorsa, belirli bir çağırma kuralına sahip bir **extern "C"** API 'sine "Düzleştir":
 
 ```cpp
 // class widget {
@@ -34,6 +35,6 @@ extern "C" {        // functions using explicit "this"
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Welcome back to C++](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
+[Uygulamasına geri hoş geldinizC++](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
 [C++ Dil Başvurusu](../cpp/cpp-language-reference.md)<br/>
 [C++ Standart Kitaplığı](../standard-library/cpp-standard-library-reference.md)
