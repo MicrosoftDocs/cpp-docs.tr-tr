@@ -1,5 +1,5 @@
 ---
-title: 'MFC ActiveX denetimleri: Gelişmiş Konular'
+title: 'MFC ActiveX Denetimleri: Gelişmiş Konular'
 ms.date: 09/12/2018
 helpviewer_keywords:
 - MFC ActiveX controls [MFC], error codes
@@ -12,16 +12,16 @@ helpviewer_keywords:
 - MFC ActiveX controls [MFC], parameterized property
 - ThrowError method [MFC]
 ms.assetid: e9e34abb-8e2d-461e-bb9c-a1aec5dcecbd
-ms.openlocfilehash: e0daabf3d236eb7038f22c54ea76d616baf613a0
-ms.sourcegitcommit: 2f96e2fda591d7b1b28842b2ea24e6297bcc3622
+ms.openlocfilehash: 9f1fa862a30a83cbda049fc63bac6c33a101587b
+ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71095995"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74305379"
 ---
-# <a name="mfc-activex-controls-advanced-topics"></a>MFC ActiveX denetimleri: Gelişmiş Konular
+# <a name="mfc-activex-controls-advanced-topics"></a>MFC ActiveX Denetimleri: Gelişmiş Konular
 
-Bu makalede, ActiveX denetimleri geliştirmeyle ilgili gelişmiş konular ele alınmaktadır. Bu güncelleştirmeler şunlardır:
+Bu makalede, ActiveX denetimleri geliştirmeyle ilgili gelişmiş konular ele alınmaktadır. Bunlar:
 
 - [ActiveX denetimlerinde veritabanı sınıflarını kullanma](#_core_using_database_classes_in_activex_controls)
 
@@ -43,7 +43,7 @@ ActiveX denetim sınıfları sınıf kitaplığının bir parçası olduğundan,
 MFC veritabanı sınıflarına genel bir bakış için bkz. [MFC veritabanı sınıfları (DAO ve ODBC)](../data/mfc-database-classes-odbc-and-dao.md). Bu makalede hem MFC ODBC sınıfları hem de MFC DAO sınıfları tanıtılmakta ve üzerinde daha fazla ayrıntı için sizi yönlendirmaktadır.
 
 > [!NOTE]
->   DAO, Office 2013 aracılığıyla desteklenir. DAO 3,6 son sürümdür ve artık kullanılmıyor olarak kabul edilir. Visual C++ ortamı ve sihirbazları DAO 'yu desteklemez (DAO sınıfları dahil edilir ancak yine de kullanabilirsiniz). Microsoft, yeni projeler için [OLE DB şablonlarını](../data/oledb/ole-db-programming.md) veya [ODBC 'yi ve MFC 'yi](../data/odbc/odbc-and-mfc.md) kullanmanızı önerir. Yalnızca var olan uygulamaları korumak için DAO kullanmanız gerekir.
+> DAO, Office 2013 aracılığıyla desteklenir. DAO 3,6 son sürümdür ve artık kullanılmıyor olarak kabul edilir. Visual C++ ortamı ve sihirbazları DAO 'yu desteklemez (DAO sınıfları dahil edilir ancak yine de kullanabilirsiniz). Microsoft, yeni projeler için [OLE DB şablonlarını](../data/oledb/ole-db-programming.md) veya [ODBC 'yi ve MFC 'yi](../data/odbc/odbc-and-mfc.md) kullanmanızı önerir. Yalnızca var olan uygulamaları korumak için DAO kullanmanız gerekir.
 
 ##  <a name="_core_implementing_a_parameterized_property"></a>Parametreli özellik uygulama
 
@@ -67,7 +67,7 @@ Aşağıdaki yordam, iki boyutlu tamsayılar dizisi olarak erişilebilen Array a
 
 1. Kısayol menüsünde, **Ekle** ' ye ve ardından **Özellik Ekle**' ye tıklayın.
 
-1. **Özellik adı** kutusuna yazın `Array`.
+1. **Özellik adı** kutusuna `Array`yazın.
 
 1. **Özellik türü** kutusunda, **kısa**' ı seçin.
 
@@ -89,7 +89,7 @@ Aşağıdaki satırlar denetim sınıfına eklenir. H dosyası:
 
 [!code-cpp[NVC_MFC_AxUI#35](../mfc/codesnippet/cpp/mfc-activex-controls-advanced-topics_2.h)]
 
-Bu kod, adlı `GetArray` iki işlev bildirir ve `SetArray` kullanıcının özelliğe erişirken belirli bir satır ve sütun istemesine izin verir.
+Bu kod `GetArray` adlı iki işlev bildirir ve kullanıcının özelliğe erişirken belirli bir satırı ve sütunu istemesine izin veren `SetArray`.
 
 Ayrıca Özellik Ekleme Sihirbazı, denetim sınıfı uygulamasında bulunan denetim dağıtım eşlemesine aşağıdaki satırları ekler (. CPP) dosyası:
 
@@ -103,7 +103,7 @@ Bu özelliğin yararlı olması için, parametreli özelliğin değerlerini depo
 
 Denetimde hata koşulları oluşursa, hatayı denetim kapsayıcısına rapor etmeniz gerekebilir. Hatanın gerçekleştiği duruma bağlı olarak, hataları raporlamak için iki yöntem vardır. Hata bir özelliğin get veya set işlevi içinde ya da bir OLE Automation yönteminin uygulanması içinde oluşursa, denetim kullanıcıya bir hata oluştuğunu işaret eden [Cotacontrol:: ThrowError](../mfc/reference/colecontrol-class.md#throwerror)öğesini çağırmalıdır. Hata başka bir zamanda oluşursa, denetim, bir stok hata olayını harekete geçen [Colicontrol:: FireError](../mfc/reference/colecontrol-class.md#fireerror)öğesini çağırmalıdır.
 
-Oluşan hata türünü belirtmek için, Denetim `ThrowError` veya `FireError`' a bir hata kodu iletmelidir. Hata kodu, 32 bitlik bir değere sahip bir OLE durum kodudur. Mümkün olduğunda, OLECTL 'de tanımlanan standart kod kümesinden bir hata kodu seçin. H üstbilgi dosyası. Aşağıdaki tabloda bu kodlar özetlenmektedir.
+Oluşan hata türünü belirtmek için denetim `ThrowError` veya `FireError`bir hata kodu iletmelidir. Hata kodu, 32 bitlik bir değere sahip bir OLE durum kodudur. Mümkün olduğunda, OLECTL 'de tanımlanan standart kod kümesinden bir hata kodu seçin. H üstbilgi dosyası. Aşağıdaki tabloda bu kodlar özetlenmektedir.
 
 ### <a name="activex-control-error-codes"></a>ActiveX denetimi hata kodları
 
@@ -160,7 +160,7 @@ Var olan bir VBX denetimini değiştirmek için ActiveX denetimi oluşturuyorsan
 
 Bazı durumlarda belirli tuş bileşimlerini özel bir şekilde işlemek isteyebilirsiniz; Örneğin, ENTER tuşuna bir çok satırlı metin kutusu denetiminde basıldığında yeni bir satır ekleyin veya yönlü anahtar KIMLIĞI basıldığında bir düzenleme denetimleri grubu arasında geçiş yapın.
 
-ActiveX denetiminizin temel sınıfı ise `COleControl`, kapsayıcıyı işleymadan önce iletileri işlemek için [CWnd::P retranslatemessage](../mfc/reference/cwnd-class.md#pretranslatemessage) ' ı geçersiz kılabilirsiniz. Bu tekniği kullanırken, iletiyi geçersiz kılmanızda `PreTranslateMessage`kullanırsanız her zaman **true** döndürün.
+ActiveX denetiminizin temel sınıfı `COleControl`ise, kapsayıcıyı işleymadan önce iletileri işlemek için [CWnd::P reTranslateMessage](../mfc/reference/cwnd-class.md#pretranslatemessage) ' ı geçersiz kılabilirsiniz. Bu tekniği kullanırken, iletiyi geçersiz kılmanızda `PreTranslateMessage`her zaman **true** döndürün.
 
 Aşağıdaki kod örneği, yönlü anahtarlarla ilgili herhangi bir iletiyi işlemenin olası bir yolunu gösterir.
 
@@ -174,9 +174,9 @@ Kullanıcı arabirimine sahip olmayan ve çalışma zamanında görünmeyen ilet
 
 - Üye değişkeni Ekleme Sihirbazı ' nı kullanarak **denetim değişkeni** ' ni seçin ve ardından denetimin kimliğini seçin. Bir üye değişkeni adı girin ve denetim **türü**olarak denetimin sarmalayıcı sınıfını seçin.
 
-     -veya-
+     veya
 
-- İletişim kutusu öğesi olarak yerel bir değişken ve alt sınıf bildirin. Aşağıdakine benzer bir kod ekleyin (`CMyCtrl` sarmalayıcı sınıfı, IDC_MYCTRL1, denetimin kimliğidir):
+- İletişim kutusu öğesi olarak yerel bir değişken ve alt sınıf bildirin. Aşağıdaki gibi bir kod ekleyin (`CMyCtrl` sarmalayıcı sınıftır, IDC_MYCTRL1 denetimin KIMLIĞIDIR):
 
    [!code-cpp[NVC_MFC_AxCont#19](../mfc/codesnippet/cpp/mfc-activex-controls-advanced-topics_6.cpp)]
 

@@ -7,17 +7,16 @@ helpviewer_keywords:
 - CDaoDatabaseInfo structure [MFC]
 - DAO (Data Access Objects), Databases collection
 ms.assetid: 68e9e0da-8382-4fc6-8115-1b1519392ddb
-ms.openlocfilehash: 46d8056ee4ab478b65f3ef0bd59d88bd3af9b28c
-ms.sourcegitcommit: 2f96e2fda591d7b1b28842b2ea24e6297bcc3622
+ms.openlocfilehash: 60972aa3ecaef4d38c9a0d0ecc70477796aa37aa
+ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71096151"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74304259"
 ---
 # <a name="cdaodatabaseinfo-structure"></a>CDaoDatabaseInfo Yapısı
 
-Yapı `CDaoDatabaseInfo` , veri erişim nesneleri (DAO) için tanımlanan bir veritabanı nesnesi hakkında bilgiler içerir.
-DAO 3,6 son sürümdür ve artık kullanılmıyor olarak kabul edilir.
+`CDaoDatabaseInfo` yapısı, veri erişim nesneleri (DAO) için tanımlanan bir veritabanı nesnesi hakkında bilgi içerir. DAO 3,6 son sürümdür ve artık kullanılmıyor olarak kabul edilir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -51,41 +50,41 @@ Microsoft Jet veritabanı altyapısının sürümünü gösterir. Bu özelliğin
 *m_lCollatingOrder*<br/>
 Dize karşılaştırma veya sıralama için metin olarak sıralama düzeni sırasını belirtir. Olası değerler şunlardır:
 
-- `dbSortGeneral`Genel (Ingilizce, Fransızca, Almanca, Portekizce, Italyanca ve modern Ispanyolca) sıralama sırasını kullanın.
+- `dbSortGeneral` genel (Ingilizce, Fransızca, Almanca, Portekizce, Italyanca ve modern Ispanyolca) sıralama sırasını kullanın.
 
-- `dbSortArabic`Arapça sıralama düzenini kullanın.
+- `dbSortArabic` Arapça sıralama düzenini kullanır.
 
-- `dbSortCyrillic`Rusça sıralama sırasını kullanın.
+- `dbSortCyrillic` Rusça sıralama sırasını kullanın.
 
-- `dbSortCzech`Çek sıralama sırasını kullanın.
+- Çek sıralama düzenini kullanmak `dbSortCzech`.
 
-- `dbSortDutch`Felemenkçe sıralama sırasını kullanın.
+- `dbSortDutch` Hollanda sıralama sırasını kullanın.
 
-- `dbSortGreek`Yunan sıralama sırasını kullanın.
+- `dbSortGreek` Yunan sıralama düzenini kullanın.
 
-- `dbSortHebrew`Ibranice sıralama sırasını kullanın.
+- `dbSortHebrew` Ibranice sıralama sırasını kullanın.
 
-- `dbSortHungarian`Macarca sıralama sırasını kullanın.
+- `dbSortHungarian`, Macarca sıralama sırasını kullanın.
 
-- `dbSortIcelandic`Izlanda sıralama sırasını kullanın.
+- `dbSortIcelandic`, Izlanda sıralama sırasını kullanın.
 
-- `dbSortNorwdan`Norveççe veya Danca sıralama sırasını kullanın.
+- `dbSortNorwdan` Norveç veya Danca sıralama sırasını kullanın.
 
-- `dbSortPDXIntl`Paradox Uluslararası sıralama sırasını kullanın.
+- `dbSortPDXIntl` Paradox Uluslararası sıralama sırasını kullanın.
 
-- `dbSortPDXNor`Paradox Norveççe veya Danca sıralama sırasını kullanın.
+- `dbSortPDXNor`, Paradox Norveççe veya Danca sıralama sırasını kullanın.
 
-- `dbSortPDXSwe`Paradox Isveççe veya Fince sıralama sırasını kullanın.
+- `dbSortPDXSwe`, Paradox Isveççe veya Fince sıralama sırasını kullanın.
 
-- `dbSortPolish`Lehçe sıralama sırasını kullanın.
+- `dbSortPolish` Lehçe sıralama sırasını kullanın.
 
-- `dbSortSpanish`Ispanyolca sıralama sırasını kullanın.
+- `dbSortSpanish` Ispanyolca sıralama düzenini kullanın.
 
-- `dbSortSwedFin`Isveççe veya Fince sıralama sırasını kullanın.
+- `dbSortSwedFin` Isveç veya Fince sıralama sırasını kullanın.
 
-- `dbSortTurkish`Türkçe sıralama sırasını kullanın.
+- `dbSortTurkish` Türkçe sıralama düzenini kullanın.
 
-- `dbSortUndefined`Sıralama düzeni tanımsız veya bilinmiyor.
+- sıralama düzeni tanımsız veya bilinmiyor `dbSortUndefined`.
 
 Daha fazla bilgi için, DAO yardımı 'nda "veri erişimi için Windows kayıt defteri ayarlarını özelleştirme" konusuna bakın.
 
@@ -99,7 +98,7 @@ Açık bir veritabanının kaynağı hakkında bilgi sağlar. Bağlantı dizeler
 
 Veritabanı, [CDaoDatabase](../../mfc/reference/cdaodatabase-class.md)sınıfının MFC nesnesini temel alan bir DAO nesnesidir. Yukarıdaki birincil, Ikincil ve tüm başvurular, bilgilerin [CDaoWorkspace:: GetDatabaseInfo](../../mfc/reference/cdaoworkspace-class.md#getdatabaseinfo) üye işlevi tarafından nasıl döndürüleceğini gösterir.
 
-[CDaoWorkspace:: GetDatabaseInfo](../../mfc/reference/cdaoworkspace-class.md#getdatabaseinfo) üye işlevi tarafından alınan bilgiler bir `CDaoDatabaseInfo` yapıda depolanıyor. Veritabanları `GetDatabaseInfo` koleksiyonundaki veritabanı `CDaoWorkspace` nesnesinin depolandığı nesne için çağrı. `CDaoDatabaseInfo`Ayrıca, hata `Dump` ayıklama yapılarında bir üye işlevi tanımlar. `Dump` Bir`CDaoDatabaseInfo` nesnenin içeriğini dökmek için kullanabilirsiniz.
+[CDaoWorkspace:: GetDatabaseInfo](../../mfc/reference/cdaoworkspace-class.md#getdatabaseinfo) üye işlevi tarafından alınan bilgiler `CDaoDatabaseInfo` bir yapıda depolanıyor. Veritabanları koleksiyonundaki veritabanı nesnesinin depolandığı `CDaoWorkspace` nesnesi için `GetDatabaseInfo` çağırın. `CDaoDatabaseInfo` Ayrıca hata ayıklama yapılarında bir `Dump` member işlevi tanımlar. Bir `CDaoDatabaseInfo` nesnesinin içeriğini dökmek için `Dump` kullanabilirsiniz.
 
 ## <a name="requirements"></a>Gereksinimler
 

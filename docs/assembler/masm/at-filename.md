@@ -6,21 +6,21 @@ f1_keywords:
 helpviewer_keywords:
 - '@FileName symbol'
 ms.assetid: a713bf70-2abd-4953-b187-7875ded58e52
-ms.openlocfilehash: 86fe01e924f4bd8af4e15e4aab2d809ac78dae97
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6104cf7abbbd1be945344c6221c0bbaeb19a014a
+ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62180114"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74302660"
 ---
-# <a name="filename"></a>@FileName
+# <a name="filename"></a>\@dosya adı
 
-Temel bir araya getirilen ana dosyası (metin makro) adı.
+Birleştirilen ana dosyanın temel adı (Metin makrosu).
 
 ## <a name="syntax"></a>Sözdizimi
 
-> @FileName
+> **\@dosya adı**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Semboller Başvurusu](../../assembler/masm/symbols-reference.md)<br/>
+[Semboller Başvurusu](../../assembler/masm/symbols-reference.md)

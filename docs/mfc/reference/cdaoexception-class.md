@@ -18,17 +18,16 @@ helpviewer_keywords:
 - CDaoException [MFC], m_pErrorInfo
 - CDaoException [MFC], m_scode
 ms.assetid: b2b01fa9-7ce2-42a1-842e-40f13dc50da4
-ms.openlocfilehash: 262c9b75771611dc04938fa5d9f58c3f7e5fc2ef
-ms.sourcegitcommit: 2f96e2fda591d7b1b28842b2ea24e6297bcc3622
+ms.openlocfilehash: 92105bfb094f50f3077fcf2c1fc221c43015c4d2
+ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71096131"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74303831"
 ---
 # <a name="cdaoexception-class"></a>CDaoException sınıfı
 
-Veri erişim nesnelerine (DAO) göre MFC veritabanı sınıflarından kaynaklanan bir özel durum koşulunu temsil eder.
-DAO 3,6 son sürümdür ve artık kullanılmıyor olarak kabul edilir.
+Veri erişim nesnelerine (DAO) göre MFC veritabanı sınıflarından kaynaklanan bir özel durum koşulunu temsil eder. DAO 3,6 son sürümdür ve artık kullanılmıyor olarak kabul edilir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -40,20 +39,20 @@ class CDaoException : public CException
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
-|[CDaoException:: CDaoException](#cdaoexception)|Bir `CDaoException` nesnesi oluşturur.|
+|[CDaoException:: CDaoException](#cdaoexception)|`CDaoException` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CDaoException:: GetErrorCount](#geterrorcount)|Veritabanı altyapısının hata koleksiyonundaki hata sayısını döndürür.|
 |[CDaoException:: GetErrorInfo](#geterrorinfo)|Hatalar koleksiyonundaki belirli bir hata nesnesi hakkında hata bilgilerini döndürür.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Ad|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[CDaoException:: m_nAfxDaoError](#m_nafxdaoerror)|MFC DAO sınıflarında herhangi bir hata için genişletilmiş bir hata kodu içerir.|
 |[CDaoException:: m_pErrorInfo](#m_perrorinfo)|Bir DAO hata nesnesi hakkında bilgi içeren bir [CDaoErrorInfo](../../mfc/reference/cdaoerrorinfo-structure.md) nesnesine yönelik bir işaretçi.|
@@ -61,18 +60,18 @@ class CDaoException : public CException
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıfı, özel durumun nedenini belirlemede kullanabileceğiniz ortak veri üyelerini içerir. `CDaoException`nesneler, DAO veritabanı sınıflarının üye işlevleri tarafından oluşturulur ve oluşturulur.
+Sınıfı, özel durumun nedenini belirlemede kullanabileceğiniz ortak veri üyelerini içerir. `CDaoException` nesneler, DAO veritabanı sınıflarının üye işlevleri tarafından oluşturulur ve oluşturulur.
 
 > [!NOTE]
 >  DAO veritabanı sınıfları, açık veritabanı bağlantısı (ODBC) tabanlı MFC veritabanı sınıflarından farklıdır. Tüm DAO veritabanı sınıf adlarında "CDao" öneki vardır. ODBC veri kaynaklarına, DAO sınıflarıyla erişmeye devam edebilirsiniz. Genel olarak, DAO tabanlı MFC sınıfları ODBC tabanlı MFC sınıflarından daha sahiptir; DAO tabanlı sınıflar, ODBC sürücüleri dahil olmak üzere verilere kendi veritabanı altyapıları aracılığıyla erişebilir. DAO tabanlı sınıflar, DAO 'YU doğrudan çağırmak zorunda kalmadan, sınıflar aracılığıyla tablo ekleme gibi veri tanımlama dili (DDL) işlemlerini de destekler. ODBC sınıfları tarafından oluşturulan özel durumlar hakkında daha fazla bilgi için bkz. [CDBException](../../mfc/reference/cdbexception-class.md).
 
-Özel durum nesnelerine bir [catch](../../mfc/reference/exception-processing.md#catch) ifadesinin kapsamı içinde erişebilirsiniz. Ayrıca, [AfxThrowDaoException](../../mfc/reference/exception-processing.md#afxthrowdaoexception) Global `CDaoException` işlevi ile kendi kodunuzla nesneler de oluşturabilirsiniz.
+Özel durum nesnelerine bir [catch](../../mfc/reference/exception-processing.md#catch) ifadesinin kapsamı içinde erişebilirsiniz. Ayrıca, [AfxThrowDaoException](../../mfc/reference/exception-processing.md#afxthrowdaoexception) genel işleviyle kendi kodunuzla `CDaoException` nesneleri de oluşturabilirsiniz.
 
-MFC 'de, tüm DAO hataları, türünde `CDaoException`özel durumlar olarak ifade edilir. Bu türde bir özel durumu yakalarsanız, veritabanı altyapısının hata koleksiyonunda `CDaoException` depolanan herhangi bir DAO hata nesnesinden bilgi almak için üye işlevlerini kullanabilirsiniz. Her hata oluştuğunda, bir veya daha fazla hata nesnesi hatalar koleksiyonuna yerleştirilir. (Normalde koleksiyon yalnızca bir hata nesnesi içerir; ODBC veri kaynağı kullanıyorsanız, birden çok hata nesnesi almanız daha olasıdır.) Başka bir DAO işlemi hata oluşturduğunda, hatalar koleksiyonu temizlenir ve yeni hata nesnesi hatalar koleksiyonuna yerleştirilir. Hata üretmesiz DAO işlemlerinin, hatalar koleksiyonu üzerinde hiçbir etkisi yoktur.
+MFC 'de, tüm DAO hataları `CDaoException`türü özel durum olarak ifade edilir. Bu türde bir özel durumu yakalarsanız, veritabanı altyapısının hata koleksiyonunda depolanan tüm DAO hata nesnelerinden bilgi almak için `CDaoException` üye işlevlerini kullanabilirsiniz. Her hata oluştuğunda, bir veya daha fazla hata nesnesi hatalar koleksiyonuna yerleştirilir. (Normalde koleksiyon yalnızca bir hata nesnesi içerir; ODBC veri kaynağı kullanıyorsanız, birden çok hata nesnesi almanız daha olasıdır.) Başka bir DAO işlemi hata oluşturduğunda, hatalar koleksiyonu temizlenir ve yeni hata nesnesi hatalar koleksiyonuna yerleştirilir. Hata üretmesiz DAO işlemlerinin, hatalar koleksiyonu üzerinde hiçbir etkisi yoktur.
 
 DAO hata kodları için, DAOERR dosyasına bakın. Olsun. İlgili bilgiler için, DAO yardımı 'nda "Yakalanabilir veri erişim hataları" konusuna bakın.
 
-Genel veya nesneler hakkında `CDaoException` özel durum işleme hakkında daha fazla bilgi için bkz. Makaleler [özel durum işleme (MFC)](../../mfc/exception-handling-in-mfc.md) ve [özel durumlar: Veritabanı özel](../../mfc/exceptions-database-exceptions.md)durumları. İkinci makale, DAO 'da özel durum işlemeyi gösteren örnek kodu içerir.
+Genel olarak özel durum işleme veya `CDaoException` nesneleri hakkında daha fazla bilgi için bkz. Makaleler [özel durum işleme (MFC)](../../mfc/exception-handling-in-mfc.md) ve [özel durumlar: veritabanı özel durumları](../../mfc/exceptions-database-exceptions.md). İkinci makale, DAO 'da özel durum işlemeyi gösteren örnek kodu içerir.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -88,7 +87,7 @@ Genel veya nesneler hakkında `CDaoException` özel durum işleme hakkında daha
 
 ##  <a name="cdaoexception"></a>CDaoException:: CDaoException
 
-Bir `CDaoException` nesnesi oluşturur.
+`CDaoException` nesnesi oluşturur.
 
 ```
 CDaoException();
@@ -96,25 +95,25 @@ CDaoException();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Normalde, Framework kendi kodu bir özel durum oluşturduğunda özel durum nesneleri oluşturur. Nadiren özel bir durum nesnesi oluşturmanız gerekir. Kendi kodınızdan bir oluşturmak `CDaoException` istiyorsanız, [AfxThrowDaoException](../../mfc/reference/exception-processing.md#afxthrowdaoexception)genel işlevini çağırın.
+Normalde, Framework kendi kodu bir özel durum oluşturduğunda özel durum nesneleri oluşturur. Nadiren özel bir durum nesnesi oluşturmanız gerekir. Kendi kodunuzda bir `CDaoException` oluşturmak istiyorsanız, [AfxThrowDaoException](../../mfc/reference/exception-processing.md#afxthrowdaoexception)genel işlevini çağırın.
 
 Ancak, MFC sınıflarının kapsülleyip sarmaladığı DAO arabirimi işaretçileri aracılığıyla DAO 'ya doğrudan çağrılar yapıyorsanız, açıkça bir özel durum nesnesi oluşturmak isteyebilirsiniz. Bu durumda, DAO 'dan hata bilgilerini almanız gerekebilir. Bir çalışma alanının veritabanları koleksiyonuna DAODatabases arabirimi aracılığıyla bir DAO yöntemi çağırdığınızda, DAO 'da bir hata oluştuğunu varsayalım.
 
 ##### <a name="to-retrieve-the-dao-error-information"></a>DAO hata bilgilerini almak için
 
-1. Bir `CDaoException` nesne oluşturun.
+1. `CDaoException` nesnesi oluşturun.
 
 1. Veritabanı altyapısının hata koleksiyonunda kaç hata nesnesi olduğunu öğrenmek için özel durum nesnesinin [GetErrorCount](#geterrorcount) üye işlevini çağırın. (Normalde, bir ODBC veri kaynağı kullanmadığınız durumlar dışında yalnızca bir tane.)
 
 1. Özel durum nesnesi yoluyla, koleksiyondaki dizine göre belirli bir hata nesnesini tek seferde almak için, özel durum nesnesinin [GetErrorInfo](#geterrorinfo) üye işlevini çağırın. Özel durum nesnesini bir DAO hata nesnesi için proxy olarak düşünün.
 
-1. [M_pErrorInfo](#m_perrorinfo) veri üyesinde `GetErrorInfo` döndüren geçerli [CDaoErrorInfo](../../mfc/reference/cdaoerrorinfo-structure.md) yapısını inceleyin. Üyeleri, DAO hatası hakkında bilgi sağlar.
+1. `GetErrorInfo` [m_pErrorInfo](#m_perrorinfo) veri üyesinde döndürdüğü geçerli [CDaoErrorInfo](../../mfc/reference/cdaoerrorinfo-structure.md) yapısını inceleyin. Üyeleri, DAO hatası hakkında bilgi sağlar.
 
 1. ODBC veri kaynağı söz konusu olduğunda, daha fazla hata nesnesi için gerektiğinde 3 ve 4 numaralı adımları tekrarlayın.
 
 1. Özel durum nesnesini yığında oluşturduysanız, bitirdiğinizde **Delete** işleci ile silin.
 
-MFC DAO sınıflarında hataları işleme hakkında daha fazla bilgi için, bkz [. özel durum: Veritabanı özel](../../mfc/exceptions-database-exceptions.md)durumları.
+MFC DAO sınıflarında hataları işleme hakkında daha fazla bilgi için bkz. [özel durumlar: veritabanı özel durumları](../../mfc/exceptions-database-exceptions.md).
 
 ##  <a name="geterrorcount"></a>CDaoException:: GetErrorCount
 
@@ -154,7 +153,7 @@ Dizine göre arama için veritabanı altyapısının hatalar koleksiyonundaki ha
 
 - Hata kodu
 
-- Source
+- Kaynak
 
 - Açıklama
 
@@ -162,9 +161,9 @@ Dizine göre arama için veritabanı altyapısının hatalar koleksiyonundaki ha
 
 - Yardım bağlamı
 
-`GetErrorInfo`bilgileri özel durum nesnesinin `m_pErrorInfo` veri üyesinde depolar. Döndürülen bilgilerin kısa bir açıklaması için bkz. [m_pErrorInfo](#m_perrorinfo). `CDaoException` MFC`m_pErrorInfo` tarafından oluşturulan türdeki bir özel durumu yakalarsanız üye zaten doldurulur. Doğrudan DAO çağrısını seçerseniz, doldurmanız `GetErrorInfo` `m_pErrorInfo`için özel durum nesnesinin üye işlevini çağırmanız gerekir. Daha ayrıntılı bir açıklama için, [CDaoErrorInfo](../../mfc/reference/cdaoerrorinfo-structure.md) yapısına bakın.
+`GetErrorInfo`, özel durum nesnesinin `m_pErrorInfo` veri üyesinde bilgi depolar. Döndürülen bilgilerin kısa bir açıklaması için bkz. [m_pErrorInfo](#m_perrorinfo). MFC tarafından oluşturulan `CDaoException` türünde bir özel durum yakalarsanız, `m_pErrorInfo` üyesi zaten doldurulur. Doğrudan DAO çağrısını seçerseniz, `m_pErrorInfo`doldurmanız için özel durum nesnesinin `GetErrorInfo` üye işlevini kendiniz çağırmanız gerekir. Daha ayrıntılı bir açıklama için, [CDaoErrorInfo](../../mfc/reference/cdaoerrorinfo-structure.md) yapısına bakın.
 
-DAO özel durumları ve örnek kod hakkında daha fazla bilgi için bkz. [makale özel durumları: Veritabanı özel](../../mfc/exceptions-database-exceptions.md)durumları.
+DAO özel durumları ve örnek kod hakkında daha fazla bilgi için bkz. [özel durumlar: veritabanı özel durumları](../../mfc/exceptions-database-exceptions.md).
 
 ##  <a name="m_nafxdaoerror"></a>CDaoException:: m_nAfxDaoError
 
@@ -176,35 +175,35 @@ Bu kod, MFC DAO sınıflarının belirli bir bileşeninin erred olduğu durumlar
 
 Olası değerler şunlardır:
 
-- NO_AFX_DAO_ERROR en son işlem, MFC genişletilmiş hatası ile sonuçlanmadı. Ancak, işlem DAO veya OLE 'den başka hatalar üretti, bu nedenle [m_pErrorInfo](#m_perrorinfo) ve belki [m_scode](#m_scode)' yi denetlemeniz gerekir.
+- NO_AFX_DAO_ERROR en son işlem, MFC genişletilmiş hatası ile sonuçlanmadı. Ancak, işlem DAO veya OLE 'den başka hatalar üretti, bu nedenle [m_pErrorInfo](#m_perrorinfo) ve muhtemelen [m_scode](#m_scode)denetlemeniz gerekir.
 
 - AFX_DAO_ERROR_ENGINE_INITIALIZATION MFC, Microsoft Jet veritabanı altyapısını başlatamıyor. OLE başlatılamadı veya DAO veritabanı altyapısı nesnesinin bir örneğini oluşturmak imkansız olabilir. Bu sorunlar genellikle, DAO veya OLE 'nin hatalı bir yüklemesini önerir.
 
-- AFX_DAO_ERROR_DFX_BIND bir DAO Kayıt alanı değişimi (DFX) işlev çağrısında kullanılan bir adres yok veya geçersiz (adres, veri bağlamak için kullanılmadı). Bir DFX çağrısında hatalı bir adres geçirtiniz veya adres, DFX işlemleri arasında geçersiz olmuş olabilir.
+- AFX_DAO_ERROR_DFX_BIND bir DAO Kayıt alanı değişimi (DFX) işlev çağrısında kullanılan bir adres yok veya geçersiz (adres veri bağlamak için kullanılmadı). Bir DFX çağrısında hatalı bir adres geçirtiniz veya adres, DFX işlemleri arasında geçersiz olmuş olabilir.
 
-- AFX_DAO_ERROR_OBJECT_NOT_OPEN bir QueryDef veya açık durumda olmayan bir TableDef nesnesine dayalı bir kayıt kümesi açmaya çalıştınız.
+- Bir QueryDef veya açık durumda olmayan bir TableDef nesnesine dayalı bir kayıt kümesi açmaya çalıştınız AFX_DAO_ERROR_OBJECT_NOT_OPEN.
 
 ##  <a name="m_perrorinfo"></a>CDaoException:: m_pErrorInfo
 
-[GetErrorInfo](#geterrorinfo)çağırarak son `CDaoErrorInfo` aldığınız dao hata nesnesi hakkında bilgi sağlayan bir yapıya yönelik bir işaretçi içerir.
+[GetErrorInfo](#geterrorinfo)çağırarak son aldığınız dao hata nesnesi hakkında bilgi sağlayan `CDaoErrorInfo` yapısına yönelik bir işaretçi içerir.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Bu nesne aşağıdaki bilgileri içerir:
 
-|CDaoErrorInfo üyesi|Bilgiler|Açıklama|
+|CDaoErrorInfo üyesi|Bilgiler|Anlamı|
 |--------------------------|-----------------|-------------|
 |`m_lErrorCode`|Hata Kodu|DAO hata kodu|
-|`m_strSource`|Source|İlk olarak hatayı oluşturan nesnenin veya uygulamanın adı|
+|`m_strSource`|Kaynak|İlk olarak hatayı oluşturan nesnenin veya uygulamanın adı|
 |`m_strDescription`|Açıklama|Hatayla ilişkili açıklayıcı bir dize|
 |`m_strHelpFile`|Yardım dosyası|Kullanıcının sorun hakkında bilgi alabileceğiniz bir Windows Yardım dosyasının yolu|
 |`m_lHelpContext`|Yardım bağlamı|DAO Yardım dosyasındaki bir konunun bağlam KIMLIĞI|
 
-`CDaoErrorInfo` Nesnesinde yer alan bilgiler hakkında tam Ayrıntılar için, [CDaoErrorInfo](../../mfc/reference/cdaoerrorinfo-structure.md) yapısına bakın.
+`CDaoErrorInfo` nesnesinde yer alan bilgiler hakkında tam Ayrıntılar için, [CDaoErrorInfo](../../mfc/reference/cdaoerrorinfo-structure.md) yapısına bakın.
 
 ##  <a name="m_scode"></a>CDaoException:: m_scode
 
-Hatayı açıklayan bir tür `SCODE` değeri içerir.
+Hatayı açıklayan `SCODE` türünde bir değer içerir.
 
 ### <a name="remarks"></a>Açıklamalar
 

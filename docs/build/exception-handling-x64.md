@@ -5,12 +5,12 @@ helpviewer_keywords:
 - C++ exception handling, x64
 - exception handling, x64
 ms.assetid: 41fecd2d-3717-4643-b21c-65dcd2f18c93
-ms.openlocfilehash: c1936e51630c78de3e7b9dc8a5c7d141ea01ad4b
-ms.sourcegitcommit: 9aab425662a66825772f091112986952f341f7c8
+ms.openlocfilehash: eff4f1a22512b597b5479dbcaabcc9d5fc93c940
+ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72444867"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74303203"
 ---
 # <a name="x64-exception-handling"></a>x64 özel durum işleme
 
@@ -38,7 +38,7 @@ Bırakma verileri bilgi yapısı, bir işlevin yığın işaretçisine sahip old
 
 |||
 |-|-|
-|UBDE: 3|Version|
+|UBDE: 3|Sürüm|
 |UBYELERI: 5|Bayraklar|
 |UBDE|Giriş boyutu|
 |UBDE|Bırakma kodlarının sayısı|
@@ -72,11 +72,11 @@ UNWIND_INFO yapısı, bellekte DWORD hizalı olmalıdır. Her alanın anlamı a�
 
    Şu anda üç bayrak tanımlanmış:
 
-   |bayrağıyla|Açıklama|
+   |Bayrağı|Açıklama|
    |-|-|
    |`UNW_FLAG_EHANDLER`| İşlevin, özel durumları incelemesi gereken işlevleri ararken çağrılması gereken bir özel durum işleyicisi vardır.|
    |`UNW_FLAG_UHANDLER`| İşlevin bir özel durumu geriye doğru geri yüklerken çağrılması gereken bir sonlandırma işleyicisi vardır.|
-   |`UNW_FLAG_CHAININFO`| Bu bırakma bilgisi yapısı, yordam için birincil bir değer değil. Bunun yerine, zincirleme bırakma bilgisi girişi, önceki bir RUNTIME_FUNCTION girişinin içeriğidir. Bilgi için bkz. [zincirleme bırakma bilgi yapıları](#chained-unwind-info-structures). Bu bayrak ayarlandıysa, UNW_FLAG_EHANDLER ve UNW_FLAG_UHANDLER bayrakları temizlenmelidir. Ayrıca, çerçeve kaydı ve sabit yığın ayırma alanları, birincil bırakma bilgilerinde aynı değerlere sahip olmalıdır.|
+   |`UNW_FLAG_CHAININFO`| Bu bırakma bilgisi yapısı, yordam için birincil bir değer değil. Bunun yerine, zincirleme bırakma bilgisi girişi, önceki bir RUNTIME_FUNCTION girişinin içeriğidir. Bilgi için bkz. [zincirleme bırakma bilgi yapıları](#chained-unwind-info-structures). Bu bayrak ayarlandıysa UNW_FLAG_EHANDLER ve UNW_FLAG_UHANDLER bayrakları temizlenmelidir. Ayrıca, çerçeve kaydı ve sabit yığın ayırma alanları, birincil bırakma bilgilerinde aynı değerlere sahip olmalıdır.|
 
 - **Giriş boyutu**
 
@@ -84,7 +84,7 @@ UNWIND_INFO yapısı, bellekte DWORD hizalı olmalıdır. Her alanın anlamı a�
 
 - **Bırakma kodlarının sayısı**
 
-   Geriye doğru izleme kodları dizisindeki yuva sayısı. Örneğin, UWOP_SAVE_NONVOL için bazı bırakma kodları dizide birden fazla yuva gerektirir.
+   Geriye doğru izleme kodları dizisindeki yuva sayısı. Örneğin UWOP_SAVE_NONVOL bazı bırakma kodları dizide birden fazla yuva gerektirir.
 
 - **Çerçeve kaydı**
 
@@ -92,15 +92,15 @@ UNWIND_INFO yapısı, bellekte DWORD hizalı olmalıdır. Her alanın anlamı a�
 
 - **Çerçeve kayıt boşluğu (ölçeklendirilmiş)**
 
-   Çerçeve kayıt alanı sıfır değilse, bu alan, oluşturulduğunda FP kaydına uygulanan RSP 'den ölçeklenmiş bir uzaklığa sahiptir. Gerçek FP yazmacı RSP + 16 \* olarak ayarlanır. bu sayı, 0 ile 240 arasında uzaklıklara izin verir. Bu konum, FP 'nin dinamik yığın çerçeveleri için yerel yığın ayırmasının ortasına, daha kısa yönergeler aracılığıyla daha iyi kod yoğunluğu sağlayan şekilde belirtilmesine izin verir. (Diğer bir deyişle, daha fazla yönerge 8 bit işaretli fark formunu kullanabilir.)
+   Çerçeve kayıt alanı sıfır değilse, bu alan, oluşturulduğunda FP kaydına uygulanan RSP 'den ölçeklenmiş bir uzaklığa sahiptir. Gerçek FP yazmacı bu sayı \* RSP + 16 olarak ayarlanır ve 0 ' dan 240 ' a kadar uzaklıklara izin verir. Bu konum, FP 'nin dinamik yığın çerçeveleri için yerel yığın ayırmasının ortasına, daha kısa yönergeler aracılığıyla daha iyi kod yoğunluğu sağlayan şekilde belirtilmesine izin verir. (Diğer bir deyişle, daha fazla yönerge 8 bit işaretli fark formunu kullanabilir.)
 
 - **Geriye doğru izleme kodları dizisi**
 
-   Kalıcı yazmaçları ve RSP üzerinde giriş etkisini açıklayan öğelerin dizisi. Ayrı öğelerin anlamları için UNWIND_CODE sayfasındaki bölümüne bakın. Hizalama amacıyla bu dizi her zaman çift sayıda girişe sahiptir ve son giriş muhtemelen kullanılmıyor olabilir. Bu durumda, dizi geriye doğru izleme kodları alanı tarafından gösterilenden daha uzun bir alandır.
+   Kalıcı yazmaçları ve RSP üzerinde giriş etkisini açıklayan öğelerin dizisi. Tek tek öğelerin anlamları için UNWIND_CODE bölümüne bakın. Hizalama amacıyla bu dizi her zaman çift sayıda girişe sahiptir ve son giriş muhtemelen kullanılmıyor olabilir. Bu durumda, dizi geriye doğru izleme kodları alanı tarafından gösterilenden daha uzun bir alandır.
 
 - **Özel durum işleyicisinin adresi**
 
-   İşlevin dile özgü özel duruma veya sonlandırma işleyicisine, UNW_FLAG_CHAININFO bayrağı Clear ve UNW_FLAG_EHANDLER ya da UNW_FLAG_UHANDLER bayraklarından biri ayarlanırsa görüntü göreli bir işaretçi.
+   İşlevin dile özgü özel duruma veya sonlandırma işleyicisine, bayrak UNW_FLAG_CHAININFO açık ve bayraklardan biri UNW_FLAG_EHANDLER veya UNW_FLAG_UHANDLER ayarlandıysa resim göreli bir işaretçi.
 
 - **Dile özgü işleyici verileri**
 
@@ -108,7 +108,7 @@ UNWIND_INFO yapısı, bellekte DWORD hizalı olmalıdır. Her alanın anlamı a�
 
 - **Zincirleme bırakma bilgileri**
 
-   Bayrak UNW_FLAG_CHAININFO ayarlandıysa, UNWIND_INFO yapısı üç Ukelimeyle sona erer.  Bu Ukelimeler, zincirleme bırakma işlevinin işlevi için RUNTIME_FUNCTION bilgilerini temsil eder.
+   Bayrak UNW_FLAG_CHAININFO ayarlandıysa, UNWIND_INFO yapısı üç Ukelimeyle sona erer.  Bu Ukelimeler, zincirleme bırakma işlevinin işlevine ilişkin RUNTIME_FUNCTION bilgilerini temsil eder.
 
 ### <a name="struct-unwind_code"></a>struct UNWIND_CODE
 
@@ -128,17 +128,17 @@ Bu işlemi gerçekleştiren yönergenin sonundaki fark (giriş başından itibar
 
 #### <a name="unwind-operation-code"></a>Geriye doğru işlem kodu
 
-Note: belirli işlem kodları, yerel yığın çerçevesindeki bir değere işaretsiz bir konum gerektirir. Bu konum başlangıçtan, diğer bir deyişle, sabit yığın ayırmanın en düşük adresidir. UNWIND_INFO içindeki çerçeve kayıt alanı sıfırsa, bu fark RSP 'den olur. Çerçeve kayıt alanı sıfır değilse, bu fark, FP kaydı oluşturulduğunda RSP 'nin bulunduğu yerdir. Bu, FP Register 'ın (16 \* ' da UNWIND_INFO) ölçeklendirilen çerçeve kayıt boşluğu ' na eşit olduğunu eşittir. Bir FP kaydı kullanılıyorsa, bir konum alan herhangi bir açılım kodu yalnızca giriş bölümünde FP kaydı kurulduktan sonra kullanılmalıdır.
+Note: belirli işlem kodları, yerel yığın çerçevesindeki bir değere işaretsiz bir konum gerektirir. Bu konum başlangıçtan, diğer bir deyişle, sabit yığın ayırmanın en düşük adresidir. UNWIND_INFO çerçeve kayıt alanı sıfırsa, bu fark RSP 'den olur. Çerçeve kayıt alanı sıfır değilse, bu fark, FP kaydı oluşturulduğunda RSP 'nin bulunduğu yerdir. Bu, FP kaydına eşittir (UNWIND_INFO) ölçekli çerçeve kayıt sapmasını (16 \*). Bir FP kaydı kullanılıyorsa, bir konum alan herhangi bir açılım kodu yalnızca giriş bölümünde FP kaydı kurulduktan sonra kullanılmalıdır.
 
-@No__t-0 ve `UWOP_SAVE_XMM128_FAR` dışındaki tüm işlem kodları için, ilgilendiğiniz tüm yığın değerleri 8 baytlık sınırlarda depolandığından (yığının kendisi her zaman 16 bayta hizalı), fark her zaman 8 ' in katı olur. Kısa bir uzaklığa (512K ' den az) sahip olan işlem kodları için, bu koda ait düğümlerdeki son USHORT, sapmayı 8 ' den bölünen olarak tutar. Uzun bir uzaklığa (512K < = fark < 4GB) sahip olan işlem kodları için, bu kod için son iki USHORT düğümü, sapmayı (küçük endian biçiminde) tutar.
+`UWOP_SAVE_XMM128` ve `UWOP_SAVE_XMM128_FAR`dışındaki tüm işlem kodları için, ilgilendiğiniz tüm yığın değerleri 8 baytlık sınırlarda depolandığından (yığının kendisi her zaman 16 bayta hizalı), her zaman 8 ' in her biri bir adet. Kısa bir uzaklığa (512K ' den az) sahip olan işlem kodları için, bu koda ait düğümlerdeki son USHORT, sapmayı 8 ' den bölünen olarak tutar. Uzun bir uzaklığa (512K < = fark < 4GB) sahip olan işlem kodları için, bu kod için son iki USHORT düğümü, sapmayı (küçük endian biçiminde) tutar.
 
-@No__t-0 ve `UWOP_SAVE_XMM128_FAR` işlem kodları için, tüm 128-bit XMM işlemleri 16 baytlık hizalanmış bellekte gerçekleşmesi gerektiğinden, her zaman 16 ' dan fazla bir değer vardır. Bu nedenle, `UWOP_SAVE_XMM128` için 16 ölçek faktörü kullanılır, 1 milyon ' den az uzaklıklara izin verilir.
+Tüm 128-bit XMM işlemleri 16 baytlık hizalanmış bellekte gerçekleşdiğinden, işlem kodları `UWOP_SAVE_XMM128` ve `UWOP_SAVE_XMM128_FAR`için her zaman 16 ' dan fazla bir değer vardır. Bu nedenle, `UWOP_SAVE_XMM128`için 16 ölçek faktörü kullanılır ve 1 milyon 'den az uzaklıklara izin verilir.
 
 Geriye doğru izleme işlemi kodu şu değerlerden biridir:
 
 - `UWOP_PUSH_NONVOL` (0) 1 düğüm
 
-  Kalıcı tamsayı kaydını göndererek RSP 'yi 8 ' den azaltarak. İşlem bilgisi kayıt sayısıdır. Epıng 'lerdeki kısıtlamalar nedeniyle, `UWOP_PUSH_NONVOL` bırakma kodları giriş ve geri doğru, en son açılım kodu dizisinde görünmelidir. Bu göreli sıralama, `UWOP_PUSH_MACHFRAME` dışındaki diğer tüm bırakma kodları için geçerlidir.
+  Kalıcı tamsayı kaydını göndererek RSP 'yi 8 ' den azaltarak. İşlem bilgisi kayıt sayısıdır. Epıng 'lerdeki kısıtlamalar nedeniyle, aşağı doğru izleme kodları `UWOP_PUSH_NONVOL` giriş ve geri doğru bir şekilde aşağı doğru aşağı doğru bir şekilde aşağı doğru görünmelidir. Bu göreli sıralama, `UWOP_PUSH_MACHFRAME`dışındaki tüm diğer bırakma kodları için geçerlidir.
 
 - `UWOP_ALLOC_LARGE` (1) 2 veya 3 düğümleri
 
@@ -146,7 +146,7 @@ Geriye doğru izleme işlemi kodu şu değerlerden biridir:
 
 - `UWOP_ALLOC_SMALL` (2) 1 düğüm
 
-  Yığında küçük ölçekli bir alan ayırın. Ayırmanın boyutu, \* 8 + 8 olan işlem bilgileri alanıdır ve 8 ' den 128 bayta ayırmaya izin verir.
+  Yığında küçük ölçekli bir alan ayırın. Ayırma boyutu, 8 + 8 ' \* işlem bilgileri alanıdır ve 8 ' den 128 bayta ayırmaya izin verir.
 
   Yığın ayırma için bırakma kodu, her zaman mümkün olan en kısa kodlamayı kullanmalıdır:
 
@@ -158,7 +158,7 @@ Geriye doğru izleme işlemi kodu şu değerlerden biridir:
 
 - `UWOP_SET_FPREG` (3) 1 düğüm
 
-  Kaydı geçerli RSP 'nin bir uzaklığa ayarlayarak çerçeve işaretçisi kaydını oluşturun. Uzaklık, UNWIND_INFO \* 16 ' deki çerçeve kayıt boşluğu (ölçeklendirilmiş) alanına eşittir. Bu, 0 ' dan 240 ' e kadar uzaklıklara izin verir. Bir konum kullanımı, sabit yığın ayırmanın ortasına işaret eden bir çerçeve işaretçisinin oluşturulmasına izin verir ve daha fazla erişimin kısa yönerge formlarını kullanmasına izin vererek kod yoğunluğuna yardımcı olur. İşlem bilgisi alanı ayrılmıştır ve kullanılmamalıdır.
+  Kaydı geçerli RSP 'nin bir uzaklığa ayarlayarak çerçeve işaretçisi kaydını oluşturun. Uzaklık, 0 ' dan 240 ' a kadar uzaklıklara izin veren UNWIND_INFO \* 16 ' daki çerçeve kayıt boşluğu (ölçeklendirilmiş) alanına eşittir. Bir konum kullanımı, sabit yığın ayırmanın ortasına işaret eden bir çerçeve işaretçisinin oluşturulmasına izin verir ve daha fazla erişimin kısa yönerge formlarını kullanmasına izin vererek kod yoğunluğuna yardımcı olur. İşlem bilgisi alanı ayrılmıştır ve kullanılmamalıdır.
 
 - `UWOP_SAVE_NONVOL` (4) 2 düğüm
 
@@ -199,7 +199,7 @@ Geriye doğru izleme işlemi kodu şu değerlerden biridir:
   |RSP + 8|'TE|
   |RSP|Hata kodu|
 
-  Bu bırakma kodu, hiçbir zaman aslında Yürütülmeyen, ancak bunun yerine bir kesme yordamının gerçek giriş noktasına ait olan ve yalnızca bir makine çerçevesinin göndermesinin benzetimini yapmak için mevcut olan bir kukla giriş içinde görüntülenir. `UWOP_PUSH_MACHFRAME`, makinenin bu işlemi kavramsal olarak yaptığını belirten simülasyonu kaydeder:
+  Bu bırakma kodu, hiçbir zaman aslında Yürütülmeyen, ancak bunun yerine bir kesme yordamının gerçek giriş noktasına ait olan ve yalnızca bir makine çerçevesinin göndermesinin benzetimini yapmak için mevcut olan bir kukla giriş içinde görüntülenir. , makinenin bu işlemi kavramsal olarak yaptığını gösteren benzetimi yapan `UWOP_PUSH_MACHFRAME` kaydeder:
 
   1. Yığının üstünden *Temp* 'e açılan RIP dönüş adresi
   
@@ -215,7 +215,7 @@ Geriye doğru izleme işlemi kodu şu değerlerden biridir:
 
   1. Gönderim hata kodu (op bilgisinin 1 ' e eşit olması halinde)
 
-  Sanal @no__t 0 işlemi, RSP 'yi 40 (op bilgisi eşittir 0) veya 48 (op bilgisi eşittir 1) ile azaltır.
+  Sanal `UWOP_PUSH_MACHFRAME` işlemi, RSP 'yi 40 (op bilgisi eşittir 0) veya 48 (op bilgisi eşittir 1) ile azaltır.
 
 #### <a name="operation-info"></a>İşlem bilgisi
 
@@ -235,7 +235,7 @@ Geriye doğru izleme işlemi kodu şu değerlerden biridir:
 
 ### <a name="chained-unwind-info-structures"></a>Zincirleme bırakma bilgi yapıları
 
-UNW_FLAG_CHAININFO bayrağı ayarlandıysa, bir geriye doğru izleme bilgisi yapısı ikincil bir durumdur ve paylaşılan özel durum-Handler/zincirleme-bilgi adresi alanı birincil geriye doğru bırakma bilgilerini içerir. Bu örnek kod, `unwindInfo` ' ın UNW_FLAG_CHAININFO bayrağı ayarlanmış yapıda olduğunu varsayarak, birincil geriye doğru izleme bilgilerini alır.
+UNW_FLAG_CHAININFO bayrağı ayarlandıysa, geriye doğru izleme bilgisi yapısı ikincil bir durumdur ve paylaşılan özel durum işleyici/zincirleme-bilgi adresi alanı birincil geriye doğru bırakma bilgilerini içerir. Bu örnek kod, `unwindInfo` UNW_FLAG_CHAININFO bayrak ayarlanmış yapıyı olduğunu varsayarak, birincil geriye doğru izleme bilgilerini alır.
 
 ```cpp
 PRUNTIME_FUNCTION primaryUwindInfo = (PRUNTIME_FUNCTION)&(unwindInfo->UnwindCode[( unwindInfo->CountOfCodes + 1 ) & ~1]);
@@ -243,15 +243,15 @@ PRUNTIME_FUNCTION primaryUwindInfo = (PRUNTIME_FUNCTION)&(unwindInfo->UnwindCode
 
 Zincirleme bilgileri iki durumda faydalıdır. İlk olarak, bitişik olmayan kod kesimleri için kullanılabilir. Zincirleme bilgilerini kullanarak, gerekli geriye doğru bırakma bilgisinin boyutunu azaltabilirsiniz, çünkü geriye doğru bırakma bilgilerinizden bırakma kodları dizisini çoğaltmak zorunda değilsiniz.
 
-Geçici kayıt kaydetmeyi gruplandırmak için zincirleme bilgilerini de kullanabilirsiniz. Derleyici, işlev girdisi giriş girişinin dışına çıkana kadar bazı geçici yazmaçların kaydedilmesini erteleyebilir. Gruplanmış koddan önce işlevin bölümü için birincil geriye doğru bilgi vererek ve sonra zincirleme bilgileri, zincirleme olmayan bir giriş ile, zincirleme bilgilerinin kalıcı yazmaçların kaydedilmelerini yansıtarak kayıt bilgilerini ayarlayarak kaydedebilirsiniz. Bu durumda, geriye doğru izleme kodları tüm UWOP_SAVE_NONVOL örnekleri. Kalıcı kayıtları bir PUSH kullanarak kaydeden veya ek bir sabit yığın ayırması kullanarak RSP kaydını değiştiren bir gruplama desteklenmez.
+Geçici kayıt kaydetmeyi gruplandırmak için zincirleme bilgilerini de kullanabilirsiniz. Derleyici, işlev girdisi giriş girişinin dışına çıkana kadar bazı geçici yazmaçların kaydedilmesini erteleyebilir. Gruplanmış koddan önce işlevin bölümü için birincil geriye doğru bilgi vererek ve sonra zincirleme bilgileri, zincirleme olmayan bir giriş ile, zincirleme bilgilerinin kalıcı yazmaçların kaydedilmelerini yansıtarak kayıt bilgilerini ayarlayarak kaydedebilirsiniz. Bu durumda, geriye doğru izleme kodları UWOP_SAVE_NONVOL örneklerinden oluşur. Kalıcı kayıtları bir PUSH kullanarak kaydeden veya ek bir sabit yığın ayırması kullanarak RSP kaydını değiştiren bir gruplama desteklenmez.
 
-UNW_FLAG_CHAININFO kümesi olan bir UNWIND_INFO öğesi, UNWIND_INFO öğesinde aynı zamanda *birden çok küçültme-sarmalama*olarak ADLANDıRıLAN bir RUNTIME_FUNCTION girişi içerebilir. Sonuç olarak, zincirleme bırakma bilgileri işaretçileri UNW_FLAG_CHAININFO temizlenmiş bir UNWIND_INFO öğesine ulaşır. Bu öğe, gerçek yordam giriş noktasını işaret eden birincil UNWIND_INFO öğesidir.
+UNW_FLAG_CHAININFO kümesine sahip bir UNWIND_INFO öğesi, bazı durumlarda *birden çok küçültme*olarak adlandırılan UNWIND_INFO öğesi UNW_FLAG_CHAININFO ayarlanmış olan bir RUNTIME_FUNCTION girişi içerebilir. Sonuç olarak, zincirleme bırakma bilgileri işaretçileri, UNW_FLAG_CHAININFO temizlenmiş bir UNWIND_INFO öğesine ulaşır. Bu öğe, gerçek yordam giriş noktasını işaret eden birincil UNWIND_INFO öğesidir.
 
 ## <a name="unwind-procedure"></a>Geriye doğru izleme prosedürü
 
 Bırakma kodu dizisi azalan düzende sıralanır. Bir özel durum oluştuğunda, tüm bağlam, işletim sistemi tarafından bir bağlam kaydında saklanır. Özel durum gönderme mantığı çağrılır ve bu adımlar bir özel durum işleyicisini bulmak için art arda çalıştırılır:
 
-1. Geçerli işlevi (veya zincirleme UNWIND_INFO girdileri için işlev bölümünü) açıklayan bir RUNTIME_FUNCTION tablo girişi aramak için bağlam kaydında depolanan geçerli RIP 'yi kullanın.
+1. Geçerli işlevi (veya zincirleme UNWIND_INFO girişleri için işlev bölümünü) açıklayan bir RUNTIME_FUNCTION tablo girişi aramak için bağlam kaydında depolanan geçerli RIP 'yi kullanın.
 
 1. Hiçbir işlev tablosu girişi bulunamazsa, bir yaprak fonksiyonda olur ve RSP doğrudan dönüş işaretçisine yöneliktir. [RSP] konumundaki dönüş işaretçisi güncelleştirilmiş bağlamda saklanır, sanal RSP 8 ile artırılır ve 1. adım yinelenir.
 
@@ -273,7 +273,7 @@ En küçük bırakma verisi kümesi 8 bayttır. Bu, yalnızca 128 baytlık yığ
 
 ## <a name="language-specific-handler"></a>Dile özel işleyici
 
-UNW_FLAG_EHANDLER veya UNW_FLAG_UHANDLER bayrakları ayarlandığında dile özgü işleyicinin göreli adresi UNWIND_INFO içinde bulunur. Önceki bölümde açıklandığı gibi dile özgü işleyici, bir özel durum işleyici aramasının parçası olarak veya bir geriye doğru izleme kapsamında çağırılır. Bu prototipi içerir:
+Her bayrak UNW_FLAG_EHANDLER veya UNW_FLAG_UHANDLER ayarlandığında dile özgü işleyicinin göreli adresi UNWIND_INFO vardır. Önceki bölümde açıklandığı gibi dile özgü işleyici, bir özel durum işleyici aramasının parçası olarak veya bir geriye doğru izleme kapsamında çağırılır. Bu prototipi içerir:
 
 ```cpp
 typedef EXCEPTION_DISPOSITION (*PEXCEPTION_ROUTINE) (
@@ -305,11 +305,11 @@ typedef struct _DISPATCHER_CONTEXT {
 } DISPATCHER_CONTEXT, *PDISPATCHER_CONTEXT;
 ```
 
-**ControlPc** , bu Işlev içindeki RIP 'in değeridir. Bu değer bir özel durum adresidir veya denetimin oluşturma işlevinin solundaki adrestir. Bu işlevin içinde denetimin bazı korunan bir yapı içinde olup olmadığını, örneğin `__try` @ no__t-2 @ no__t-3 veya `__try` @ no__t-5 @ no__t-6 için `__try` bloğu olup olmadığını denetlemek için RIP kullanılır.
+**ControlPc** , bu Işlev içindeki RIP 'in değeridir. Bu değer bir özel durum adresidir veya denetimin oluşturma işlevinin solundaki adrestir. Bu işlevin içinde denetimin bazı korunan bir yapı içinde olup olmadığını, örneğin, `__try`/`__except` veya `__try`/`__finally`için bir `__try` bloğunu denetlemek için RIP kullanılır.
 
 **ImageBase** , bu işlevi içeren modülün (yükleme adresi), işlev girişinde kullanılan 32 bitlik uzaklıklara eklenmek üzere ve ilgili adresleri kaydetmek üzere geriye doğru izleme bilgisi olarak görüntülenir.
 
-**FunctionEntry** , bu işlev için işlev ve bırakma bilgisi GÖRÜNTÜSÜNÜ tutan RUNTIME_FUNCTION işlev girişi için bir işaretçi sağlar.
+**FunctionEntry** , bu işlev için işlev ve bırakma bilgisi görüntüsünü tutan RUNTIME_FUNCTION işlevi girişi için bir işaretçi sağlar.
 
 **EstablisherFrame** , bu işlevin sabit yığın ayırma tabanının adresidir.
 
@@ -332,9 +332,9 @@ Doğru derleme yordamlarını yazmak için, uygun. pdata ve. xdata ' ı oluştur
 |İşlem ÇERÇEVESI \[:*ehandler*]|Bir işlevin yapılandırılmış özel durum işleme geri alma davranışı için. pdata içinde bir işlev tablosu girişi ve. xdata içindeki bırakma bilgilerini oluşturmak için MASı 'nin oluşmasına neden olur.  *Ehandler* varsa, bu proc. xdata 'a dile özgü işleyici olarak girilir.<br /><br /> ÇERÇEVE özniteliği kullanıldığında, arkasından bir gelmelidir. ENDPROLOG yönergesi.  İşlev bir yaprak işlevsiyse ( [işlev türlerinde](../build/stack-usage.md#function-types)tanımlandığı gibi), bu sözde işlemlerin geri KALANı gibi çerçeve özniteliği gereksizdir.|
 |. PUSHREG *kaydı*|Belirtilen kayıt numarası için, prolog 'deki geçerli sapmayı kullanarak bir UWOP_PUSH_NONVOL bırakma kodu girişi oluşturur.<br /><br /> Yalnızca kalıcı tamsayı Yazmaçları ile kullanın.  Geçici yazmaçların gönderimleri için bir kullanın. Bunun yerine ALLOCSTACK 8|
 |. SETFRAME *kaydı*, *konum*|Belirtilen yazmaç ve sapmayı kullanarak, çerçeve kaydı alanını ve geriye doğru izleme bilgilerinde yer alan kaydırmayı doldurur. Aralık 16 ' dan büyük ve 240 ' e eşit veya daha küçük olmalıdır. Bu yönerge Ayrıca, geçerli prolog sapmasını kullanarak belirtilen kayıt için bir UWOP_SET_FPREG bırakma kodu girişi oluşturur.|
-|. ALLOCSTACK *boyutu*|Prolog 'deki geçerli fark için belirtilen boyuta sahip bir UWOP_ALLOC_SMALL veya UWOP_ALLOC_LARGE oluşturur.<br /><br /> *Boyut* işleneni 8 ' in katı olmalıdır.|
-|. SAVEREG *kaydı*, *konum*|Belirtilen yazmaç için bir UWOP_SAVE_NONVOL veya UWOP_SAVE_NONVOL_FAR bırakma kodu girişi, geçerli bir başlangıç sapmasını kullanarak bir konum oluşturur. Masa en verimli kodlamayı seçer.<br /><br /> *kaydırın* pozitif olması ve 8 ' in katı olması gerekir. *göreli konum* , genellikle RSP 'deki veya bir çerçeve işaretçisi kullanılıyorsa, ölçeklendirilmemiş çerçeve işaretçisi olan yordamın çerçevesinin tabanına göredir.|
-|. SAVEXMM128 *kaydı*, *konum*|Belirtilen XMM kaydı için bir UWOP_SAVE_XMM128 veya UWOP_SAVE_XMM128_FAR bırakma kodu girişi, geçerli bir başlangıç sapmasını kullanarak da bir değer oluşturur. Masa en verimli kodlamayı seçer.<br /><br /> *kaydırın* pozitif ve 16 ' dan fazla olması gerekir.  *göreli konum* , genellikle RSP 'deki veya bir çerçeve işaretçisi kullanılıyorsa, ölçeklendirilmemiş çerçeve işaretçisi olan yordamın çerçevesinin tabanına göredir.|
+|. ALLOCSTACK *boyutu*|Prolog 'daki geçerli fark için belirtilen boyuta sahip bir UWOP_ALLOC_SMALL veya UWOP_ALLOC_LARGE oluşturur.<br /><br /> *Boyut* işleneni 8 ' in katı olmalıdır.|
+|. SAVEREG *kaydı*, *konum*|Geçerli başlangıç sapmasını kullanarak belirtilen yazmaç ve uzaklığa yönelik bir UWOP_SAVE_NONVOL ya da UWOP_SAVE_NONVOL_FAR bırakma kodu girişi oluşturur. Masa en verimli kodlamayı seçer.<br /><br /> *kaydırın* pozitif olması ve 8 ' in katı olması gerekir. *göreli konum* , genellikle RSP 'deki veya bir çerçeve işaretçisi kullanılıyorsa, ölçeklendirilmemiş çerçeve işaretçisi olan yordamın çerçevesinin tabanına göredir.|
+|. SAVEXMM128 *kaydı*, *konum*|Belirtilen XMM kaydı için bir UWOP_SAVE_XMM128 veya UWOP_SAVE_XMM128_FAR geriye doğru izleme kodu girdisi ya da geçerli prolog sapmasını kullanarak bir konum üretir. Masa en verimli kodlamayı seçer.<br /><br /> *kaydırın* pozitif ve 16 ' dan fazla olması gerekir.  *göreli konum* , genellikle RSP 'deki veya bir çerçeve işaretçisi kullanılıyorsa, ölçeklendirilmemiş çerçeve işaretçisi olan yordamın çerçevesinin tabanına göredir.|
 |. PUSHFRAME \[*kodu*]|Bir UWOP_PUSH_MACHFRAME bırakma kodu girişi oluşturur. İsteğe bağlı *kod* belirtilmişse, geriye doğru izleme kod girişine 1 değiştiricisi verilir. Aksi takdirde değiştirici 0 ' dır.|
 |.ENDPROLOG|Prolog bildirimlerinin sonuna işaret eder.  İşlevin ilk 255 baytından oluşmalıdır.|
 
@@ -361,8 +361,8 @@ sample PROC FRAME
 
 ; you can modify the stack pointer outside of the prologue (similar to alloca)
 ; because we have a frame pointer.
-; if we didn’t have a frame pointer, this would be illegal
-; if we didn’t make this modification,
+; if we didn't have a frame pointer, this would be illegal
+; if we didn't make this modification,
 ; there would be no need for a frame pointer
 
     sub rsp, 060h
@@ -372,14 +372,14 @@ sample PROC FRAME
     mov rax, 0
     mov rax, [rax] ; AV!
 
-; restore the registers that weren’t saved with a push
-; this isn’t part of the official epilog, as described in section 2.5
+; restore the registers that weren't saved with a push
+; this isn't part of the official epilog, as described in section 2.5
 
     movdqa xmm7, [rbp]
     mov rsi, [rbp+018h]
     mov rdi, [rbp-010h]
 
-; Here’s the official epilog
+; Here's the official epilog
 
     lea rsp, [rbp+020h] ; deallocate both fixed and dynamic portions of the frame
     pop rbp
@@ -393,15 +393,15 @@ Bitiş örneği hakkında daha fazla bilgi için bkz. [x64 giriş ve bitiş](pro
 
 [Ham sözde işlemlerin](#raw-pseudo-operations)kullanımını basitleştirmek için, ksamd64. inc ' de tanımlanan ve tipik yordam ve epengues oluşturmak için kullanılabilen bir dizi makro vardır.
 
-|Makroya|Açıklama|
+|Makrosu|Açıklama|
 |-|-|
-|alloc_stack (n)|N baytlık bir yığın çerçevesini ayırır (`sub rsp, n` kullanarak) ve uygun geriye doğru izleme bilgilerini (. ALLOCSTACK n) yayar|
+|alloc_stack (n)|N baytlık bir yığın çerçevesini ayırır (`sub rsp, n`kullanarak) ve uygun bırakma bilgilerini (. ALLOCSTACK n) yayar|
 |save_reg *reg*, *loc*|Kalıcı kayıt *reg* ' i RSP kayması *loc*' de yığına kaydeder ve uygun geriye doğru izleme bilgilerini yayar. (. savereg Reg, Loc)|
 |push_reg *reg*|Yığında kalıcı kayıt *reg* gönderir ve uygun geriye doğru izleme bilgilerini yayar. (. PUSHREG reg)|
 |rex_push_reg *reg*|2 baytlık gönderim kullanarak yığında kalıcı kayıt kaydeder ve uygun geriye doğru izleme bilgilerini (. PUSHREG reg) yayar.  İşlevin çalışır durumda olduğundan emin olmak için bu makroyu, işlev içindeki ilk yönerge ise kullanın.|
 |save_xmm128 *reg*, *loc*|Kalıcı bir XMM kayıt *reg* dosyasını RSP kayması *loc*yığınına kaydeder ve uygun geriye doğru izleme bilgilerini (. SAVEXMM128 Reg, Loc) yayar|
-|set_frame *reg*, *konum*|Çerçeve kaydı *reg* ' i RSP + *kayması* (`mov` veya bir `lea`) olarak ayarlar ve uygun bırakma bilgilerini (. set_frame Reg, konum) yayar|
-|push_eflags|EFLAGS 'i `pushfq` yönergesiyle iter ve uygun geriye doğru izleme bilgilerini (. alloc_stack 8) yayar|
+|set_frame *reg*, *konum*|Çerçeve kaydı *reg* ' i RSP + *kayması* (bir `mov`veya bir `lea`kullanarak) olarak ayarlar ve uygun geriye doğru izleme bilgilerini (. set_frame Reg, fark) yayar|
+|push_eflags|`pushfq` yönergesiyle EFLAGS iter ve uygun geriye doğru izleme bilgilerini (. alloc_stack 8) yayar|
 
 Makroların uygun kullanımıyla birlikte örnek bir işlev girişi aşağıda verilmiştir:
 
@@ -423,7 +423,7 @@ sample2 PROC FRAME
     mov rsi, sampleFrame.SavedRsi[rsp]
     mov rdi, sampleFrame.SavedRdi[rsp]
 
-; Here’s the official epilog
+; Here's the official epilog
 
     add rsp, (sizeof sampleFrame)
     ret

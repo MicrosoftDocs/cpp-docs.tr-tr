@@ -9,24 +9,24 @@ helpviewer_keywords:
 - control views [MFC]
 - view classes [MFC], architecture
 ms.assetid: 8894579a-1436-441e-b985-83711061e495
-ms.openlocfilehash: c6c1272d41eb7a01ec5a7ee10fadb4ab21547ce7
-ms.sourcegitcommit: 2f96e2fda591d7b1b28842b2ea24e6297bcc3622
+ms.openlocfilehash: fda4e968a4761fcf1e2245964bd5dca3f41a82ad
+ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71096050"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74302983"
 ---
 # <a name="view-classes-architecture"></a>Görünüm Sınıfları (Mimari)
 
-`CView`ve türetilmiş sınıfları, bir çerçeve penceresinin istemci alanını temsil eden alt bir pencere. Görünümler, verileri gösterir ve bir belge için girişi kabul eder.
+`CView` ve türetilmiş sınıfları, bir çerçeve penceresinin istemci alanını temsil eden alt Windows 'lardır. Görünümler, verileri gösterir ve bir belge için girişi kabul eder.
 
 Bir görünüm sınıfı bir belge sınıfı ve bir belge şablonu nesnesi kullanan bir çerçeve pencere sınıfı ile ilişkilendirilir.
 
 [CView](../mfc/reference/cview-class.md)<br/>
-Belge verilerinin uygulamaya özgü görünümleri için temel sınıf. Görünümler verileri görüntüler ve verileri düzenlemek veya seçmek için Kullanıcı girişini kabul eder. Görünüm sınıfınızı buradan `CView`türetirsiniz.
+Belge verilerinin uygulamaya özgü görünümleri için temel sınıf. Görünümler verileri görüntüler ve verileri düzenlemek veya seçmek için Kullanıcı girişini kabul eder. `CView`görünüm sınıfınızı türetirsiniz.
 
 [CScrollView](../mfc/reference/cscrollview-class.md)<br/>
-Kaydırma özelliklerine sahip görünümler için temel sınıf. Otomatik kaydırma `CScrollView` için görünümündeki görünüm sınıfınızı türetirsiniz.
+Kaydırma özelliklerine sahip görünümler için temel sınıf. Otomatik kaydırma için `CScrollView` görünüm sınıfınızı türetirsiniz.
 
 ## <a name="form-and-record-views"></a>Form ve kayıt görünümleri
 
@@ -35,10 +35,10 @@ Form görünümleri Ayrıca görünümleri de kaydırmalıdır. Bunlar bir ileti
 Kayıt görünümleri form görünümlerinden türetilir. İletişim kutusu şablonuna ek olarak, bir veritabanı bağlantısı da vardır.
 
 [CFormView](../mfc/reference/cformview-class.md)<br/>
-Bir iletişim kutusu şablonunda düzeni tanımlanan bir kaydırma görünümü. Bir iletişim kutusu şablonunu `CFormView` temel alan bir kullanıcı arabirimi uygulamak için öğesinden bir sınıf türetebilirsiniz.
+Bir iletişim kutusu şablonunda düzeni tanımlanan bir kaydırma görünümü. Bir iletişim kutusu şablonuna dayalı kullanıcı arabirimini uygulamak için `CFormView` bir sınıf türetebilirsiniz.
 
 [CDaoRecordView](../mfc/reference/cdaorecordview-class.md)<br/>
-Doğrudan bir veri erişim nesnesi (DAO) kayıt kümesi nesnesine bağlı bir form görünümü sağlar. Tüm form görünümleri gibi, bir `CDaoRecordView` iletişim kutusu şablonunu temel alır. DAO, Access veritabanları ile birlikte kullanılır ve Office 2013 aracılığıyla desteklenir. 3,6 son sürümdür ve artık kullanılmıyor olarak kabul edilir.
+Doğrudan bir veri erişim nesnesi (DAO) kayıt kümesi nesnesine bağlı bir form görünümü sağlar. Tüm form görünümleri gibi, bir `CDaoRecordView` iletişim kutusu şablonunu temel alır. DAO, Access veritabanları ile birlikte kullanılır ve Office 2013 aracılığıyla desteklenir. DAO 3,6 son sürümdür ve artık kullanılmıyor olarak kabul edilir.
 
 [CHtmlView](../mfc/reference/chtmlview-class.md)<br/>
 Bir uygulama içinde Web 'e göz atma denetimini destekler. Denetim MFC 'de dinamik HTML 'yi destekler.

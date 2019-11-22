@@ -4,12 +4,12 @@ ms.date: 10/31/2019
 helpviewer_keywords:
 - CMake in Visual C++
 ms.assetid: 444d50df-215e-4d31-933a-b41841f186f8
-ms.openlocfilehash: 2efd228971f19ca525f245014f3046b1b62995dc
-ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
+ms.openlocfilehash: d27ea235290115a43bacb38d4dc3da536a06f527
+ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73624587"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74303311"
 ---
 # <a name="cmake-projects-in-visual-studio"></a>Visual Studio 'da CMake projeleri
 

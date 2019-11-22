@@ -4,65 +4,65 @@ ms.date: 05/16/2019
 helpviewer_keywords:
 - .vcxproj file structure
 ms.assetid: 14d0c552-29db-480e-80c1-7ea89d6d8e9c
-ms.openlocfilehash: 86c393796b1ce3efdb92d8aefd1f653390619ea4
-ms.sourcegitcommit: a10c9390413978d36b8096b684d5ed4cf1553bc8
+ms.openlocfilehash: a24349980e9395257f20fcfcc0987883060a7c1d
+ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65837511"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74303130"
 ---
 # <a name="vcxproj-and-props-file-structure"></a>.vcxproj ve .props dosya yapısı
 
-[MSBuild](../msbuild-visual-cpp.md) seçtiğinizde, Visual Studio; varsayılan proje sistemi olan **dosya** > **yeni proje** Visual c++'ta ayarlarını depolanan bir MSBuild Projesi oluşturuyorsunuz. uzantıya sahip bir XML proje dosyasında `.vcxproj`. Proje dosyası ayrıca .props dosyaları ve .targets dosyaları ayarları depolandığı içe. Çoğu durumda, proje dosyasını elle düzenlemeniz gerekiyor ve MSBuild iyi anlamış olmanız sürece aslında onu el ile düzenlemeniz değil. Mümkün olduğunda proje ayarlarını değiştirmek için Visual Studio özellik sayfaları kullanmanız gerekir (bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md). Ancak, bazı durumlarda bir proje dosyası veya özellik sayfası el ile değiştirmeniz gerekebilir. Bu senaryolar için bu makalede dosya yapısı hakkında temel bilgileri içerir.
+[MSBuild](../msbuild-visual-cpp.md) , Visual Studio 'daki varsayılan proje sistemidir; Visual C++ 'te **Dosya** > **Yeni proje** ' yi seçtiğinizde, ayarları, uzantısı `.vcxproj`olan bir XML proje dosyasında depolanan bir MSBuild projesi oluşturuyorsunuz. Proje dosyası, ayarların saklanabileceği. props dosyalarını ve. targets dosyalarını da içeri aktarabilir. Çoğu durumda, proje dosyasını el ile düzenlemeniz gerekmez ve aslında MSBuild 'in iyi bir şekilde anlaşılmadığı müddetçe el ile düzenlememelisiniz. Her mümkün olduğunda proje ayarlarını değiştirmek için Visual Studio özellik sayfalarını kullanmanız gerekir (bkz. [Visual C++ Studio 'da derleyici ve derleme özelliklerini ayarlama](../working-with-project-properties.md). Ancak, bazı durumlarda bir proje dosyasını veya özellik sayfasını el ile değiştirmeniz gerekebilir. Bu senaryolar için, bu makale dosyanın yapısıyla ilgili temel bilgileri içerir.
 
 **Önemli:**
 
-.Vcxproj dosyasını el ile düzenlemek isterseniz, bu bilgiler dikkat edin:
+Bir. vcxproj dosyasını el ile düzenlemeyi seçerseniz, bu olgulara dikkat edin:
 
-1. Bu makalede açıklanan önceden belirlenmiş bir form dosya yapısını izlemeniz gerekir.
+1. Dosyanın yapısı, bu makalede açıklanan, önceden tanımlanmış bir biçimde gelmelidir.
 
-1. Visual Studio C++ proje sistemi şu anda desteklemiyor joker karakterler proje öğeleri. Örneğin, bu desteklenmez:
+1. Visual Studio C++ proje sistemi şu anda proje öğelerinde joker karakterleri desteklemiyor. Örneğin, bu desteklenmez:
 
    ```xml
    <ClCompile Include="*.cpp"/>
    ```
 
-1. Visual Studio C++ proje sistemi şu anda desteklemiyor makroları proje öğesi yolları. Örneğin, bu desteklenmez:
+1. Visual Studio C++ proje sistemi şu anda proje öğesi yollarında makroları desteklemez. Örneğin, bu desteklenmez:
 
    ```xml
    <ClCompile Include="$(IntDir)\generated.cpp"/>
    ```
 
-   "Desteklenmiyor" makroları IDE içindeki tüm işlemler için çalışmaya garanti edilmez anlamına gelir. Hangi değerlerine farklı yapılandırmaları değiştirme makroları çalışması gerekir, ancak farklı bir filtre ya da projeye bir öğe taşınırsa korunmayabilir. IDE farklı proje yapılandırmaları için farklı proje öğe yolları beklentisi çünkü hangi değerlerine farklı yapılandırmaları değiştirme makroları sorunlara neden olur.
+   "Desteklenmiyor", makroların IDE 'deki tüm işlemler için çalışma garantisi olmadığı anlamına gelir. Farklı yapılandırmalarda değerlerini değiştirolmayan makrolar çalışmalıdır, ancak bir öğe farklı bir filtreye veya projeye taşınırsa korunmayabilir. Farklı yapılandırmalara ilişkin değerlerini değiştiren makrolar, IDE proje öğesi yollarının farklı proje yapılandırmalarında farklı olmasına neden olmadığı için sorunlara neden olur.
 
-1. Doğru bir şekilde eklendi, kaldırıldı veya düzenlendi, değiştirilen proje özellikleri için **proje özellikleri** iletişim kutusunda, dosyanın her proje yapılandırması için ayrı Grup içermelidir ve koşullar Bu biçimde olmalıdır:
+1. **Proje Özellikleri iletişim kutusunda** düzenlendiğinde proje özelliklerinin doğru şekilde eklenmesini, kaldırılmasını veya değiştirilmesini sağlamak için, her proje yapılandırması için dosyanın ayrı gruplar içermesi ve koşulların bu biçimde olması gerekir:
 
    ```xml
    Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"
    ```
 
-1. Özellik kuralı dosyasında belirtildiği gibi doğru etiketle grubundaki her bir özellik belirtilmelidir. Daha fazla bilgi için [özellik sayfası xml kural dosyaları](property-page-xml-files.md).
+1. Özellik kuralı dosyasında belirtildiği gibi, her bir özellik, doğru etikete sahip olan grupta belirtilmelidir. Daha fazla bilgi için bkz. [özellik sayfası XML kural dosyaları](property-page-xml-files.md).
 
-## <a name="vcxproj-file-elements"></a>.vcxproj dosyası öğeleri
+## <a name="vcxproj-file-elements"></a>. vcxproj dosya öğeleri
 
-Herhangi bir metin veya XML Düzenleyicisi'ni kullanarak bir .vcxproj dosyası içeriğini inceleyebilirsiniz. Visual Studio'daki Çözüm Gezgini'nde projeye sağ tıklayarak görüntüleyebilirsiniz seçme **projeyi** seçip **Düzenle Foo.vcxproj**.
+Herhangi bir metin veya XML Düzenleyicisi kullanarak bir. vcxproj dosyasının içeriğini inceleyebilirsiniz. Projeyi Çözüm Gezgini ' de projeye sağ tıklayıp, **Projeyi Kaldır** ' ı seçip **foo. vcxproj Düzenle**' yi seçerek Visual Studio 'da görüntüleyebilirsiniz.
 
-Üst düzey öğeleri belirli bir sırada göründüğünü fark edilecek ilk şey var. Örneğin:
+Dikkat edilmesi gereken ilk şey, en üst düzey öğelerin belirli bir sırada görünmeişindedir. Örneğin:
 
-- Birçok özellik grupları ve öğe tanımı gruplarındaki Microsoft.Cpp.Default.props için içe sonra oluşur.
+- Özellik gruplarının ve öğe tanımı gruplarının çoğu, Microsoft. cpp. default. props için içeri aktarma işleminden sonra oluşur.
 
-- Dosyanın sonunda tüm hedefleri içeri aktarılır.
+- Tüm hedefler dosyanın sonuna aktarılır.
 
-- Her bir benzersiz etiket ile birden çok özellik grubu vardır ve belirli bir sırada ortaya.
+- Her biri benzersiz bir etikete sahip birden çok özellik grubu vardır ve bunlar belirli bir sırada oluşur.
 
-MSBuild sıralı Değerlendirme modelini temel alan çünkü proje dosyasındaki öğelerin sırasını çok önemlidir.  Proje dosyanızı içeri aktarılan .props ve .targets dosyalarına dahil olmak üzere, bir özelliğin birden çok tanımları oluşuyorsa, son tanımı önceki olanları geçersiz kılar. MSBUild altyapısını olduğundan, değerlendirme sırasında son karşılaştığı aşağıdaki örnekte, derleme sırasında "xyz" değerine ayarlanır.
+MSBuild sıralı bir değerlendirme modelini temel aldığı için proje dosyasındaki öğelerin sırası çok önemlidir.  Tüm içeri aktarılan. props ve. targets dosyaları dahil olmak üzere proje dosyanız bir özelliğin birden çok tanımından oluşuyorsa, son tanım önceki değerleri geçersiz kılar. Aşağıdaki örnekte, "XYZ" değeri derleme sırasında ayarlanacak, çünkü MSBUild altyapısı değerlendirme sırasında en son ile karşılaştığında.
 
 ```xml
   <MyProperty>abc</MyProperty>
   <MyProperty>xyz</MyProperty>
 ```
 
-Aşağıdaki kod parçacığı bir minimal .vcxproj dosyası gösterir. Visual Studio tarafından oluşturulan tüm .vcxproj dosyası bu üst düzey MSBuild öğeleri içerir ve (bunlar birden çok kopyasını böyle her bir üst düzey öğe içerebilir ancak) şu sırada görünür. Unutmayın `Label` öznitelikleri yalnızca Visual Studio tarafından işaret panolarını düzenlemek için kullanılan rastgele etiketler; diğer bir işlev sahiptirler.
+Aşağıdaki kod parçacığında en az bir. vcxproj dosyası gösterilmektedir. Visual Studio tarafından oluşturulan herhangi bir. vcxproj dosyası, bu üst düzey MSBuild öğelerini içerir ve bu sırada görünür (ancak, her bir en üst düzey öğenin birden çok kopyasını içerse de). `Label` özniteliklerin yalnızca Visual Studio tarafından yalnızca düzenlenmek üzere signas iletileri olarak kullanılan rastgele Etiketler olduğunu unutmayın; başka bir işlevi yoktur.
 
 ```xml
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns='http://schemas.microsoft.com/developer/msbuild/2003'>
@@ -82,7 +82,7 @@ Aşağıdaki kod parçacığı bir minimal .vcxproj dosyası gösterir. Visual S
 </Project>
 ```
 
-Aşağıdaki bölümlerde bu öğelerin her birinin amacı ve neden bu şekilde sıralanır açıklanmaktadır:
+Aşağıdaki bölümler, bu öğelerin her birinin amacını ve neden bu şekilde sıralı olduğunu anlatmaktadır:
 
 ### <a name="project-element"></a>Proje öğesi
 
@@ -90,7 +90,7 @@ Aşağıdaki bölümlerde bu öğelerin her birinin amacı ve neden bu şekilde 
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns='http://schemas.microsoft.com/developer/msbuild/2003' >
 ```
 
-`Project` kök düğümüdür. Bu, kullanılacak MSBuild sürümü ve aynı zamanda bu dosya için MSBuild.exe geçirildiğinde yürütülecek varsayılan hedef belirtir.
+kök düğüm `Project`. Bu, kullanılacak MSBuild sürümünü ve ayrıca bu dosya MSBuild. exe ' ye geçirildiğinde yürütülecek varsayılan hedefi belirler.
 
 ### <a name="projectconfigurations-itemgroup-element"></a>ProjectConfigurations ItemGroup öğesi
 
@@ -98,13 +98,13 @@ Aşağıdaki bölümlerde bu öğelerin her birinin amacı ve neden bu şekilde 
 <ItemGroup Label="ProjectConfigurations" />
 ```
 
-`ProjectConfigurations` Proje yapılandırması açıklamasını içerir. Örnekler, hata ayıklama | Win32, yayın | Win32, hata ayıklama | ARM ve benzeri. Birçok proje ayarları, belirli bir yapılandırmaya özgüdür. Örneğin, bir yayın yapısı ancak hata ayıklama derlemesi için en iyi duruma getirme özellikleri ayarlamak büyük olasılıkla isteyeceksiniz.
+`ProjectConfigurations` proje yapılandırma açıklamasını içerir. Örnekler hata ayıklaması | Win32, yayın | Win32, hata ayıkla | ARM ve benzeri. Birçok proje ayarı belirli bir yapılandırmaya özgüdür. Örneğin, büyük olasılıkla bir yayın derlemesi için en iyi duruma getirme özelliklerini ayarlamak isteyeceksiniz, ancak bir hata ayıklama derlemesi.
 
-`ProjectConfigurations` Öğesi grubu oluşturma zamanında kullanılmaz. Visual Studio IDE, proje yüklemek için gerektirir. Şu öğe grubunu .props dosya taşındı ve .vcxproj dosyası içeri aktarıldı. Ekleme veya kaldırma yapılandırmaları gerekir, ancak bu durumda, elle .props dosyası düzenlemeniz gerekir; IDE kullanamazsınız.
+`ProjectConfigurations` öğesi grubu derleme zamanında kullanılmaz. Visual Studio IDE, projeyi yüklemek için bunu gerektirir. Bu öğe grubu bir. props dosyasına taşınabilir ve. vcxproj dosyasına aktarılabilir. Ancak, bu durumda, yapılandırma eklemeniz veya kaldırmanız gerekirse,. props dosyasını el ile düzenlemeniz gerekir. IDE 'yi kullanamazsınız.
 
 ### <a name="projectconfiguration-elements"></a>ProjectConfiguration öğeleri
 
-Aşağıdaki kod parçacığında, bir proje yapılandırması gösterilmektedir. Bu örnekte ' Debug | x 64' olan yapılandırma adı. Proje yapılandırması adı biçimi $(Configuration)|$(Platform). içinde olmalıdır Bir proje yapılandırması düğüm iki özelliklere sahiptir: Yapılandırma ve Platform. Bu özellikler yapılandırma etkin olduğunda burada belirtilen değerlerle otomatik olarak ayarlanır.
+Aşağıdaki kod parçacığında bir proje yapılandırması gösterilmektedir. Bu örnekte, ' Debug | x64 ' yapılandırma adıdır. Proje yapılandırma adı $ (yapılandırma) | $ (Platform) biçiminde olmalıdır. Proje yapılandırma düğümü iki özelliğe sahip olabilir: yapılandırma ve platform. Yapılandırma etkin olduğunda, bu özellikler burada belirtilen değerlerle otomatik olarak ayarlanır.
 
 ```xml
 <ProjectConfiguration Include="Debug|x64">
@@ -113,23 +113,23 @@ Aşağıdaki kod parçacığında, bir proje yapılandırması gösterilmektedir
 </ProjectConfiguration>
 ```
 
-Bir proje yapılandırması için herhangi bir birleşimini tüm ProjectConfiguration öğelerinde kullanılan yapılandırma ve Platform değerleri bulmak IDE bekliyor. Bu, genellikle anlamsız proje yapılandırmaları, bu gereksinimi karşılamak için bir proje gerekebileceği anlamına gelir. Örneğin, bir projenin bu yapılandırmaları varsa:
+IDE, tüm ProjectConfiguration öğelerinde kullanılan yapılandırma ve platform değerlerinin herhangi bir birleşimi için bir proje yapılandırması bulmayı bekler. Bu, genellikle bir projenin bu gereksinimi karşılamak için anlamlı proje yapılandırmalarına sahip olabileceği anlamına gelir. Örneğin, bir proje şu yapılandırmalara sahipse:
 
-- Hata ayıklama | Win32
+- Hata Ayıkla | Win
 
-- Perakende | Win32
+- Perakende | Win
 
-- Özel 32-bit iyileştirme | Win32
+- Özel 32 bit Iyileştirmesi | Win
 
-ardından "Özel 32-bit iyileştirme" için x64 anlamsız olmasına rağmen bu yapılandırmalar olmalıdır:
+Ayrıca, "özel 32 bit Iyileştirmesi" x64 için anlamlı olsa da, bu yapılandırmalara de sahip olmalıdır:
 
-- Hata ayıklama | x64
+- Hata Ayıkla | x64
 
 - Perakende | x64
 
-- Özel 32-bit iyileştirme | x64
+- Özel 32 bit Iyileştirmesi | x64
 
-Yapı devre dışı bırakabilir ve herhangi bir yapılandırma için komutları dağıtma **çözüm Yapılandırma Yöneticisi**.
+**Çözüm Configuration Manager**herhangi bir yapılandırma için derleme ve dağıtma komutlarını devre dışı bırakabilirsiniz.
 
 ### <a name="globals-propertygroup-element"></a>Globals PropertyGroup öğesi
 
@@ -137,47 +137,47 @@ Yapı devre dışı bırakabilir ve herhangi bir yapılandırma için komutları
 <PropertyGroup Label="Globals" />
 ```
 
-`Globals` Proje düzeyi ayarları ProjectGuid RootNamespace ve ApplicationType gibi içeren / ApplicationTypeRevision. Son iki genellikle hedef işletim sistemi tanımlar. Başvurular ve proje öğeleri koşullar şu anda sahip olamaz Bunun nedeni, bir proje yalnızca tek bir işletim sistemi hedefleyebilirsiniz. Bu özellikler genellikle başka bir proje dosyasında geçersiz kılınmaz. Bu grup yapılandırması bağımlı değildir ve bu nedenle genellikle yalnızca bir Globals grup proje dosyasında mevcut.
+`Globals` ProjectGuid, RootNamespace ve ApplicationType/ApplicationTypeRevision gibi proje düzeyi ayarları içerir. Son iki genellikle hedef işletim sistemini tanımlar. Bir proje yalnızca bir işletim sistemini hedefleyebilir çünkü başvuruları ve proje öğeleri şu anda koşullara sahip olamaz. Bu özellikler genellikle proje dosyasının başka bir yerinde geçersiz kılınmaz. Bu grup, yapılandırmaya bağımlı değildir ve bu nedenle genellikle proje dosyasında yalnızca bir genel grup bulunur.
 
-### <a name="microsoftcppdefaultprops-import-element"></a>Microsoft.Cpp.default.props içeri aktarma öğesi
+### <a name="microsoftcppdefaultprops-import-element"></a>Microsoft. cpp. default. props Içeri aktarma öğesi
 
 ```xml
 <Import Project="$(VCTargetsPath)\Microsoft.Cpp.default.props" />
 ```
 
-**Microsoft.Cpp.default.props** özellik sayfası Visual Studio ile birlikte gelir ve değiştirilemez. Bu proje için varsayılan ayarları içerir. Varsayılan değerleri ApplicationType bağlı olarak değişebilir.
+**Microsoft. cpp. default. props** Özellik sayfası Visual Studio ile birlikte gelir ve değiştirilemez. Proje için varsayılan ayarları içerir. Varsayılanlar, ApplicationType öğesine göre farklılık gösterebilir.
 
-### <a name="configuration-propertygroup-elements"></a>Yapılandırma PropertyGroup öğelerinin
+### <a name="configuration-propertygroup-elements"></a>Yapılandırma PropertyGroup öğeleri
 
 ```xml
 <PropertyGroup Label="Configuration" />
 ```
 
-A `Configuration` özellik grubuna sahip bir ekli yapılandırma durumu (gibi `Condition=”'$(Configuration)|$(Platform)'=='Debug|Win32'”`) ve yapılandırma başına birden çok kopya olarak gelir. Bu özellik grubu, belirli bir yapılandırma için ayarlanan özellikler barındırır. Yapılandırma özellikleri PlatformToolset içerir ve ayrıca sistem özellik sayfalarında dahilini denetimini **Microsoft.Cpp.props**. Örneğin, özellik tanımlarsanız `<CharacterSet>Unicode</CharacterSet>`, sonra sistem özellik sayfası **microsoft. Cpp.unicodesupport.props** dahil edilir. İnceleyin, **Microsoft.Cpp.props**, satır görürsünüz: `<Import Condition=”'$(CharacterSet)' == 'Unicode'”   Project=”$(VCTargetsPath)\microsoft.Cpp.unicodesupport.props”/>`.
+Bir `Configuration` özellik grubu, bağlı bir yapılandırma koşuluna sahiptir (örneğin, `Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"`) ve her yapılandırma için birden fazla kopyaya gelir. Bu özellik grubu, belirli bir yapılandırma için ayarlanan özellikleri barındırır. Yapılandırma özellikleri Platformaraç takımını içerir ve ayrıca **Microsoft. cpp. props**içindeki Sistem özellik sayfalarının eklenmesini denetler. Örneğin, `<CharacterSet>Unicode</CharacterSet>`özelliğini tanımlarsanız, ardından sistem özellik sayfası **Microsoft. Cpp. unicodesupport. props** dahil edilecek. **Microsoft. cpp. props**' u incelemenizi istiyorsanız şu satırı görürsünüz: `<Import Condition="'$(CharacterSet)' == 'Unicode'" Project="$(VCTargetsPath)\microsoft.Cpp.unicodesupport.props" />`.
 
-### <a name="microsoftcppprops-import-element"></a>Microsoft.cpp.props öğesine içeri aktarma öğesi
+### <a name="microsoftcppprops-import-element"></a>Microsoft. cpp. props Içeri aktarma öğesi
 
 ```xml
 <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
 ```
 
-**Microsoft.Cpp.props** özellik sayfası (doğrudan veya içeri aktarmalar aracılığıyla) derleyicinin en iyi duruma getirme ve uyarı düzeyi özellikleri, MIDL Aracı'nın TypeLibraryName gibi birçok araca özgü özellikler için varsayılan değerleri tanımlar özellik ve benzeri. Yapılandırma özellikleri hemen yukarıdaki özelliği grupta tanımlanan göre çeşitli sistem özellik sayfalarını içeri aktarır.
+**Microsoft. cpp. props** Özellik sayfası (doğrudan veya içeri aktarmalar aracılığıyla), derleyicinin En Iyi duruma getirme ve uyarı düzeyi özellikleri, MIDL aracının TypeLibraryName özelliği vb. gibi birçok araca özgü özellik için varsayılan değerleri tanımlar. Ayrıca, yukarıdaki özellik grubunda tanımlanan yapılandırma özelliklerine göre çeşitli sistem özellik sayfalarını içeri aktarır.
 
-### <a name="extensionsettings-importgroup-element"></a>ExtensionSettings Importgroup öğesi
+### <a name="extensionsettings-importgroup-element"></a>ExtensionSettings ImportGroup öğesi
 
 ```xml
 <ImportGroup Label="ExtensionSettings" />
 ```
 
-`ExtensionSettings` Yapı özelleştirmeleri parçası olan özellik sayfaları için içeri aktarmalar grubunu içerir. Bir yapı özelleştirmesi sağlayan üç adede kadar dosyalar tarafından tanımlanır: bir .targets dosyasında ve .props dosyası bir .xml dosyasıdır. Bu içeri aktarma Grup Imports .props dosyası içerir.
+`ExtensionSettings` grubu, yapı özelleştirmelerinin parçası olan özellik sayfaları için içeri aktarmaları içerir. Yapı özelleştirmesi en fazla üç dosya tarafından tanımlanır:. targets dosyası, bir. props dosyası ve bir. xml dosyası. Bu içeri aktarma grubu. props dosyası için içeri aktarmaları içerir.
 
-### <a name="propertysheets-importgroup-elements"></a>PropertySheets Importgroup öğeleri
+### <a name="propertysheets-importgroup-elements"></a>Propertysayfalarý ImportGroup öğeleri
 
 ```xml
 <ImportGroup Label="PropertySheets" />
 ```
 
-`PropertySheets` Kullanıcı özellik sayfaları için içeri aktarmalar grubunu içerir. Visual Studio özellik Yöneticisi görünüm aracılığıyla eklediğiniz özellik sayfalarını şunlardır. Bu içeri aktarmalar listelendiği sırası önemlidir ve özellik Yöneticisi'nde yansıtılır. Proje dosyası normal olarak, bu tür bir içe aktarma grubu, her bir proje yapılandırması için birden çok örneğini de içerir.
+`PropertySheets` grubu, Kullanıcı Özellik sayfaları için içeri aktarmaları içerir. Bunlar, Visual Studio 'daki Özellik Yöneticisi görünümü aracılığıyla eklediğiniz Özellik sayfalarıdır. Bu içeri aktarmaların listelendiği sıra önemlidir ve Özellik Yöneticisi yansıtılır. Proje dosyası normalde her proje yapılandırması için bir tane olan bu türdeki içeri aktarma grubunun birden fazla örneğini içerir.
 
 ### <a name="usermacros-propertygroup-element"></a>UserMacros PropertyGroup öğesi
 
@@ -185,46 +185,46 @@ A `Configuration` özellik grubuna sahip bir ekli yapılandırma durumu (gibi `C
 <PropertyGroup Label="UserMacros" />
 ```
 
-`UserMacros` özellikleri içeren yapı işleminizi özelleştirmek için kullanılan değişkenleri olarak oluşturun. Örneğin, özel çıkış yolunuzu $(CustomOutputPath) tanımlayın ve diğer değişkenleri tanımlamak için kullanmak için bir kullanıcı makrosu tanımlayabilirsiniz. Bu özellik grubu gibi özellikleri barındırır. Visual C++ yapılandırmaları için kullanıcı makroları desteklemediğinden Visual Studio'da bu grup proje dosyasında doldurulmamış olduğunu unutmayın. Kullanıcı makroları, özellik sayfalarında desteklenir.
+`UserMacros` yapı işleminizi özelleştirmek için kullanılan değişkenler olarak oluşturduğunuz özellikleri içerir. Örneğin, özel çıkış yolunuzu $ (CustomOutputPath) olarak tanımlamak için bir Kullanıcı makrosu tanımlayabilir ve bunu diğer değişkenleri tanımlamak için kullanabilirsiniz. Bu özellik grubu, bu tür özellikleri barındırır. Visual Studio 'da bu grubun proje dosyasında doldurulmadığını unutmayın çünkü görsel C++ , yapılandırma için Kullanıcı makrolarını desteklemez. Kullanıcı makroları özellik sayfalarında desteklenir.
 
-### <a name="per-configuration-propertygroup-elements"></a>Yapılandırma PropertyGroup öğelerinin
+### <a name="per-configuration-propertygroup-elements"></a>Yapılandırma başına PropertyGroup öğeleri
 
 ```xml
 <PropertyGroup />
 ```
 
-Bu grubun özelliği, tüm proje yapılandırmalarına ilişkin yapılandırma her birden çok örneği vardır. Her özellik grubu, bağlı bir yapılandırma koşul bulunmalıdır. Tüm yapılandırmaları eksikse **proje özellikleri** iletişim düzgün çalışmaz. Yukarıdaki özellik gruplarını, bu etiket yok. Bu grup, proje düzeyi yapılandırma ayarları içerir. Bu ayarlar, belirtilen öğe grubunun parçası olan tüm dosyalar için geçerlidir. Derleme özelleştirme öğesi tanımı meta verileri burada başlatılır.
+Her proje yapılandırması için bir yapılandırma başına, bu özellik grubunun birden çok örneği vardır. Her özellik grubuna bir yapılandırma koşulu eklenmiş olmalıdır. Herhangi bir yapılandırma eksikse, **Proje özellikleri** iletişim kutusu doğru çalışmaz. Yukarıdaki Özellik gruplarının aksine, bu bir etiketi yoktur. Bu grup proje yapılandırma düzeyi ayarlarını içerir. Bu ayarlar, belirtilen öğe grubunun parçası olan tüm dosyalar için geçerlidir. Derleme özelleştirme öğesi tanımı meta verileri buradan başlatılır.
 
-Bu PropertyGroup sonra gelmelidir `<Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />` ve diğer hiçbir PropertyGroup önce bu etiket olmadan olması gerekir (Aksi takdirde proje özelliklerini düzenleme doğru şekilde çalışmaz).
+Bu PropertyGroup `<Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />` sonrasında gelmelidir ve önce etiketi olmayan başka bir PropertyGroup olmamalıdır (Aksi halde proje özellikleri düzenlemesi doğru çalışmaz).
 
-### <a name="per-configuration-itemdefinitiongroup-elements"></a>Yapılandırma Itemdefinitiongroup öğeleri
+### <a name="per-configuration-itemdefinitiongroup-elements"></a>Yapılandırma başına ItemDefinitionGroup öğeleri
 
 ```xml
 <ItemDefinitionGroup />
 ```
 
-Öğe tanımları içerir. Bu, her yapılandırma için etiket daha az PropertyGroup öğesi olarak aynı koşullar kurallara uymanız gerekir.
+Öğe tanımlarını içerir. Bunlar, tek tek yapılandırma PropertyGroup öğeleriyle aynı koşul kurallarını izlemelidir.
 
-### <a name="itemgroup-elements"></a>ItemGroup öğelerini
+### <a name="itemgroup-elements"></a>ItemGroup öğeleri
 
 ```xml
 <ItemGroup />
 ```
 
-Proje öğeleri (kaynak dosyaları, vb.) içerir. Koşullar, proje öğeleri (proje öğeleri kuralları tanımlar tarafından kabul edilir diğer bir deyişle, öğe türleri) için desteklenmez.
+Projedeki öğeleri (kaynak dosyaları, vb.) içerir. Koşullar proje öğeleri (yani, kural tanımlarına göre proje öğeleri olarak kabul edilen öğe türleri) için desteklenmez.
 
-Bunların tümü aynı olsa bile, her bir yapılandırma için koşulları yapılandırma meta verileri olmalıdır. Örneğin:
+Verilerin tümünün aynı olsa bile her yapılandırma için yapılandırma koşulları olmalıdır. Örneğin:
 
 ```xml
 <ItemGroup>
   <ClCompile Include="stdafx.cpp">
-    <TreatWarningAsError Condition="‘$(Configuration)|$(Platform)’==’Debug|Win32’">true</TreatWarningAsError>
-    <TreatWarningAsError Condition="‘$(Configuration)|$(Platform)’==’Debug|x64’">true</TreatWarningAsError>
+    <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</TreatWarningAsError>
+    <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</TreatWarningAsError>
   </ClCompile>
 </ItemGroup>
 ```
 
-Visual Studio C++ proje sistemi şu anda desteklemiyor joker karakterler proje öğeleri.
+Visual Studio C++ proje sistemi şu anda proje öğelerinde joker karakterleri desteklemiyor.
 
 ```xml
 <ItemGroup>
@@ -232,7 +232,7 @@ Visual Studio C++ proje sistemi şu anda desteklemiyor joker karakterler proje �
 </ItemGroup>
 ```
 
-Visual Studio C++ proje sistemi şu anda desteklemiyor makroları proje öğeleri.
+Visual Studio C++ proje sistemi şu anda proje öğelerindeki makroları desteklemez.
 
 ```xml
 <ItemGroup>
@@ -240,43 +240,43 @@ Visual Studio C++ proje sistemi şu anda desteklemiyor makroları proje öğeler
 </ItemGroup>
 ```
 
-Başvuruları içinde bir ItemGroup belirtilir ve bu sınırlamalara sahiptirler:
+Başvurular bir ItemGroup içinde belirtilmiştir ve şu sınırlamalara sahiptir:
 
-- Başvuruları koşulları desteklemez.
+- Başvurular koşulları desteklemez.
 
-- Meta verilere başvurur, koşulları desteklemez.
+- Başvuru meta verileri, koşulları desteklemez.
 
-### <a name="microsoftcpptargets-import-element"></a>Microsoft.Cpp.targets içeri aktarma öğesi
+### <a name="microsoftcpptargets-import-element"></a>Microsoft. cpp. targets Içeri aktarma öğesi
 
 ```xml
 <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
 ```
 
-(Doğrudan veya içeri aktarmalar aracılığıyla) gibi yapı, Visual C++ hedefleri temiz, vb. tanımlar.
+Derleme, temizleme vb. gibi görsel C++ hedefleri tanımlar (doğrudan veya aracılığıyla içeri aktarmaları).
 
-### <a name="extensiontargets-importgroup-element"></a>ExtensionTargets Importgroup öğesi
+### <a name="extensiontargets-importgroup-element"></a>ExtensionTargets ImportGroup öğesi
 
 ```xml
 <ImportGroup Label="ExtensionTargets" />
 ```
 
-Bu grup, hedef yapı özelleştirmesi dosyaları için içeri aktarmalar içerir.
+Bu grup, derleme özelleştirmesi hedef dosyaları için içeri aktarmaları içerir.
 
-## <a name="impact-of-incorrect-ordering"></a>Hatalı sıralama etkisi
+## <a name="impact-of-incorrect-ordering"></a>Yanlış sıralamanın etkisi
 
-Visual Studio IDE proje dosyası sıralaması yukarıda açıklanan bağlıdır. Bir özellik değeri özellik sayfaları'nda tanımladığınızda, örneğin, IDE genel özellik tanımı boş bir etikete sahip özellik grubundaki yerleştirmeniz gerekir. Bu duruma sistem özellik sayfalarında varsayılan değerleri kullanıcı tanımlı değerler tarafından geçersiz kılınmasını sağlar. Benzer şekilde, hedef dosya sonunda yukarıda tanımlanan özellikler kullandıkları ve genellikle özelliklerinin kendileri tanımlamazsanız olduğundan içeri aktarılır. Sistem özellik sayfalarından sonra benzer şekilde, kullanıcı özellik sayfaları içeri aktarılan (aracılığıyla dahil **Microsoft.Cpp.props**). Bu kullanıcı tarafından sistem özellik sayfalarını getirildi tüm varsayılanları geçersiz kılabilirsiniz sağlar.
+Visual Studio IDE, yukarıda açıklanan sıralamaya sahip proje dosyasına bağlıdır. Örneğin, özellik sayfalarında bir özellik değeri tanımladığınızda, IDE, özellik tanımını genellikle boş etikete sahip özellik grubuna yerleştirir. Bu, sistem özellik sayfalarında getirilen varsayılan değerlerin Kullanıcı tanımlı değerler tarafından geçersiz kılınmasını sağlar. Benzer şekilde, hedef dosyalar, yukarıda tanımlanan özellikleri tükettiği ve genellikle özellikleri tanımlamadığı için son olarak içeri aktarılır. Benzer şekilde, Kullanıcı Özellik sayfaları, sistem Özellik sayfaları ( **Microsoft. cpp. props**aracılığıyla bulunur) sonrasında içeri aktarılır. Bu, kullanıcının sistem Özellik sayfaları tarafından getirilen tüm Varsayılanları geçersiz kılabilmesini sağlar.
 
-Bu düzen bir .vcxproj dosyası izlemiyorsa, yapı sonuçlarını beklediğiniz olmayabilir. Örneğin, kullanıcı tarafından tanımlanan özellik sayfalarından sonra yanlışlıkla bir sistem özellik sayfası içe aktarırsanız, kullanıcı ayarları tarafından sistem özellik sayfalarını kılınır.
+Bir. vcxproj dosyası bu düzeni izlemmezse, yapı sonuçları beklediğiniz gibi olmayabilir. Örneğin, Kullanıcı tarafından tanımlanan özellik sayfalarından sonra bir sistem özellik sayfasını yanlışlıkla içeri aktarırsanız, Kullanıcı ayarları sistem Özellik sayfaları tarafından geçersiz kılınır.
 
-Hatta IDE tasarım zamanı deneyimi öğeleri doğru sıralama belirli bir ölçüde bağlıdır. Örneğin, .vcxproj dosyası yoksa, `PropertySheets` grubunu İçeri Aktar, IDE içinde kullanıcı tarafından oluşturulan yeni bir özellik sayfası yerleştirileceği yeri belirlemek mümkün olmayabilir **özellik Yöneticisi**. Bu, bir kullanıcı e-tablosunda bir sistem sayfası tarafından geçersiz kılınmasını sonuçlanabilir. IDE tarafından kullanılan buluşsal yöntem .vcxproj dosya düzeni küçük tutarsızlıklar tolere edebilen olsa da, bu makalenin önceki bölümlerinde gösterilen yapısından cluster_count_prıor değil önemle tavsiye edilir.
+IDE tasarım zamanı deneyimi bile, öğelerin doğru sıralamasına göre bir ölçüde farklılık gösterir. Örneğin,. vcxproj dosyanızda `PropertySheets` içeri aktarma grubu yoksa, IDE, kullanıcının **Özellik Yöneticisi**oluşturduğu yeni bir özellik sayfasının nereye yerleştirileceğini belirleyemeyebilir. Bu, bir Kullanıcı sayfasının bir sistem sayfası tarafından geçersiz kılınmasına neden olabilir. IDE tarafından kullanılan buluşsal yöntem. vcxproj dosya düzeninde küçük tutarsızlıklara izin verse de, bu makalede daha önce gösterilen yapıdan sapmamak kesinlikle önerilir.
 
-## <a name="how-the-ide-uses-element-labels"></a>IDE öğesi etiketleri kullanma
+## <a name="how-the-ide-uses-element-labels"></a>IDE 'nin öğe etiketleri nasıl kullanır
 
-Ayarladığınızda IDE'de **UseOfAtl** özelliği genel özellik sayfası'nda yazılmış proje dosyasındaki yapılandırma özellik grubuna sırada **TargetName** aynı özellik sayfası özelliği Etiket daha az başına-yapılandırma özellik grubuna yazılır. Visual Studio her bir özellik yazılacağı hakkında bilgi için özellik sayfanın xml dosyasını inceler. İçin **genel** özellik sayfası (Visual Studio 2019 Enterprise Edition'ın İngilizce sürümünü sahip olduğunuz varsayılarak), bu dosya `%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\VC\VCTargets\1033\general.xml`. Özellik sayfası XML kural dosyası, bir kural ve tüm özelliklerini statik bilgilerini tanımlar. Böyle bir bilgi parçasıdır tercih edilen bir kural özelliğine (değerinin yazılacağı dosyası) hedef dosyadaki konumudur. Tercih edilen konum, proje dosyası öğelerini etiket özniteliği tarafından belirtilir.
+IDE 'de, genel özellik sayfasında **useOfATL** özelliğini ayarladığınızda, bu, proje dosyasındaki yapılandırma özellik grubuna yazılır, ancak aynı özellik sayfasındaki **TargetName** özelliği, etiket-daha az yapılandırma özellik grubuna yazılır. Visual Studio her bir özelliğin nereye yazılacağı hakkında bilgi için özellik sayfasının XML dosyasına bakar. **Genel** Özellik sayfası Için (Visual Studio 2019 Enterprise Edition 'ın İngilizce sürümüne sahip olduğunuz varsayılarak), bu dosya `%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\VC\VCTargets\1033\general.xml`. Özellik sayfası XML kural dosyası, bir kuralla ilgili statik bilgileri ve tüm özelliklerini tanımlar. Bu tür bir bilgi, hedef dosyadaki bir kural özelliğinin tercih edilen konumudur (değerinin yazılacağı dosya). Tercih edilen konum, proje dosyası öğelerinde Label özniteliğiyle belirtilir.
 
-## <a name="property-sheet-layout"></a>Özellik sayfa düzeni
+## <a name="property-sheet-layout"></a>Özellik sayfası düzeni
 
-Aşağıdaki XML kod parçacığı, bir özellik sayfası (.props) dosyasının en az bir düzendir. Bir .vcxproj dosyası benzer ve önceki tartışmadan .props öğeleri işlevlerini olayla.
+Aşağıdaki XML kod parçacığı, bir özellik sayfası (. props) dosyasının en az düzenidir. . Vcxproj dosyasına benzer ve. props öğelerinin işlevselliği önceki tartışmadan çıkarsanamıyor.
 
 ```xml
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -288,7 +288,7 @@ Aşağıdaki XML kod parçacığı, bir özellik sayfası (.props) dosyasının 
 </Project>
 ```
 
-Kendi özellik sayfası yapmak için .props dosyalardan biri VCTargets klasörüne kopyalayıp amaçlarınız için değiştirebilirsiniz. Visual Studio 2019 Enterprise edition için varsayılan VCTargets yoldur `%ProgramFiles%\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\VC\VCTargets`.
+Kendi özellik sayfanızı oluşturmak için, VCTargets klasöründeki. props dosyalarından birini kopyalayın ve sizin amacınıza göre değiştirin. Visual Studio 2019 Enterprise Edition için varsayılan VCTargets yolu `%ProgramFiles%\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\VC\VCTargets`.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

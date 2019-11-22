@@ -4,12 +4,12 @@ description: Hem Linux hem de Windows 'u hedefleyen Visual Studio 'da C++ açık
 author: mikeblome
 ms.topic: tutorial
 ms.date: 11/08/2019
-ms.openlocfilehash: 05f120335180d27e84a99819ee97c233dd1b39a7
-ms.sourcegitcommit: e5192a25c084eda9eabfa37626f3274507e026b3
+ms.openlocfilehash: 269c9e88133a492f66df7c7f81ab35424aff125d
+ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "73965098"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74303247"
 ---
 # <a name="tutorial-create-c-cross-platform-projects-in-visual-studio"></a>Öğretici: Visual C++ Studio 'da platformlar arası projeler oluşturma
 
@@ -24,7 +24,7 @@ Bu öğreticide şunların nasıl yapıladığını öğreneceksiniz:
 > * Linux makinesine bağlantı ekleme
 > * Linux 'ta aynı hedefte derleme ve hata ayıklama
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Önkoşullar
 
 * Platformlar arası C++ geliştirme Için Visual Studio 'yu ayarlama
   * İlk olarak, [Visual Studio 'yu yükledikten](https://visualstudio.microsoft.com/vs/) sonra ve **iş C++ yükleriyle Linux ile geliştirme** **ile C++ masaüstü geliştirmeyi** seçin. Bu minimum yüklemesi yalnızca 3 GB 'dir. Yükleme hızınıza bağlı olarak, yükleme 10 dakikadan uzun sürmemelidir.
@@ -155,7 +155,7 @@ Bu adımda, madde Işareti fizik kitaplığını gösteren örnek bir programda 
 
    Zaten bir uzak bağlantı eklediyseniz, **araçlar > seçenekler > platformlar arası > bağlantı Yöneticisi**' ne giderek bu pencereyi açabilirsiniz.
 
-1. [Linux makinenize bağlantı bilgilerini](/cpp/linux/connect-to-your-remote-linux-computer.md) girin ve **Bağlan**' ı seçin. Visual Studio, bu makineyi **Linux-Debug**için varsayılan bağlantınız olarak CMakeSettings. JSON öğesine ekler. Ayrıca, uzak makinenize ait üst bilgileri alıp [Bu uzak bağlantıya özel IntelliSense](/cpp/linux/configure-a-linux-project?view=vs-2019#remote_intellisense)'i edinirsiniz. Ardından, Visual Studio dosyalarınızı uzak makineye gönderir ve uzak sistemde CMake önbelleğini oluşturur. Bu adımlar, ağınızın hızına ve uzak makinenizin gücüne bağlı olarak biraz zaman alabilir. CMake çıkış penceresinde "hedef bilgi ayıklama işlemi bitti" iletisi göründüğünde bunun tamamlandığını bilirsiniz.
+1. [Linux makinenize bağlantı bilgilerini](/cpp/linux/connect-to-your-remote-linux-computer) girin ve **Bağlan**' ı seçin. Visual Studio, bu makineyi **Linux-Debug**için varsayılan bağlantınız olarak CMakeSettings. JSON öğesine ekler. Ayrıca, uzak makinenize ait üst bilgileri alıp [Bu uzak bağlantıya özel IntelliSense](/cpp/linux/configure-a-linux-project?view=vs-2019#remote_intellisense)'i edinirsiniz. Ardından, Visual Studio dosyalarınızı uzak makineye gönderir ve uzak sistemde CMake önbelleğini oluşturur. Bu adımlar, ağınızın hızına ve uzak makinenizin gücüne bağlı olarak biraz zaman alabilir. CMake çıkış penceresinde "hedef bilgi ayıklama işlemi bitti" iletisi göründüğünde bunun tamamlandığını bilirsiniz.
 
 ## <a name="set-a-breakpoint-build-and-run-on-linux"></a>Linux 'ta kesme noktası ayarlama, derleme ve çalıştırma
 

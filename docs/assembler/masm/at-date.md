@@ -6,21 +6,21 @@ f1_keywords:
 helpviewer_keywords:
 - '@Date symbol'
 ms.assetid: e5af496b-c5c8-4724-a54a-6880fcd67ee3
-ms.openlocfilehash: 3fe1b50243609a11b996ddb1569920967399f98a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7903d298b703dc811881bca1cbf8e7c88b89fd77
+ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62166405"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74302691"
 ---
-# <a name="date"></a>@Date
+# <a name="date"></a>\@tarihi
 
-Sistem tarih biçimini aa/gg/yy (metin makro).
+Aa/gg/yy biçiminde sistem tarihi (Metin makrosu).
 
 ## <a name="syntax"></a>Sözdizimi
 
-> @Date
+> **\@tarihi**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Semboller Başvurusu](../../assembler/masm/symbols-reference.md)<br/>
+[Semboller Başvurusu](../../assembler/masm/symbols-reference.md)

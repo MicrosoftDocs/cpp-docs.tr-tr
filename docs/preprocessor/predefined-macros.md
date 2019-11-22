@@ -1,7 +1,8 @@
 ---
 title: Önceden tanımlanmış makrolar
+description: Microsoft C++ derleyicisi önceden tanımlanmış Önişlemci makrolarını listeler ve açıklar.
 ms.custom: update_every_version
-ms.date: 10/01/2019
+ms.date: 11/20/2019
 f1_keywords:
 - _ATL_VER
 - __ATOM__
@@ -153,12 +154,84 @@ helpviewer_keywords:
 - _WINRT_DLL macro
 - __func__ identifier
 ms.assetid: 1cc5f70a-a225-469c-aed0-fe766238e23f
-ms.openlocfilehash: 57982e32da75aa7f364c51146e50c3d75b4b7710
-ms.sourcegitcommit: e805200eaef4fe7a65a00051bbd305273af94fe7
+no-loc:
+- _ATL_VER
+- __ATOM__
+- __AVX__
+- __AVX2__
+- __AVX512BW__
+- __AVX512CD__
+- __AVX512DQ__
+- __AVX512F__
+- __AVX512VL__
+- _CHAR_UNSIGNED
+- __CLR_VER
+- _CONTROL_FLOW_GUARD
+- __COUNTER__
+- __cplusplus
+- __cplusplus_cli
+- __cplusplus_winrt
+- _CPPRTTI
+- _CPPUNWIND
+- __DATE__
+- _DEBUG
+- _DLL
+- __FILE__
+- __FUNCDNAME__
+- __FUNCSIG__
+- __FUNCTION__
+- _INTEGRAL_MAX_BITS
+- _ISO_VOLATILE
+- _KERNEL_MODE
+- __LINE__
+- _M_AMD64
+- _M_ARM
+- _M_ARM_ARMV7VE
+- _M_ARM_FP
+- _M_ARM64
+- _M_CEE
+- _M_CEE_PURE
+- _M_CEE_SAFE
+- _M_FP_EXCEPT
+- _M_FP_FAST
+- _M_FP_PRECISE
+- _M_FP_STRICT
+- _M_IX86
+- _M_IX86_FP
+- _M_X64
+- _MANAGED
+- _MFC_VER
+- _MSC_BUILD
+- _MSC_EXTENSIONS
+- _MSC_FULL_VER
+- _MSC_VER
+- _MSVC_LANG
+- __MSVC_RUNTIME_CHECKS
+- _MT
+- _NATIVE_WCHAR_T_DEFINED
+- _NO_SIZED_DEALLOCATION
+- _OPENMP
+- _PREFAST_
+- _RESUMABLE_FUNCTIONS_SUPPORTED
+- _RTC_CONVERSION_CHECKS_ENABLED
+- __STDC__
+- __STDC_HOSTED__
+- __STDCPP_THREADS__
+- __TIME__
+- __TIMESTAMP__
+- __VA_ARGS__
+- _VC_NODEFAULTLIB
+- _WCHAR_T_DEFINED
+- _WIN32
+- _WIN64
+- _WINRT_DLL
+- __func__
+ms.openlocfilehash: 7d019b527abea89ab8337270fbd22abc9dbecc4e
+ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74163341"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74305476"
 ---
 # <a name="predefined-macros"></a>Önceden tanımlanmış makrolar
 
@@ -170,7 +243,7 @@ MSVC, ANSI/ISO C99 Standard ve ISO C++ 14 ve C++ 17 standartları için gereken 
 
 Derleyici ISO C99 ve ISO C++ 11 tarafından belirtilen önceden tanımlanmış tanımlayıcıyı destekler.
 
-- **&#95; Func &#95; &#95;** İşlevin yerel **statik sabit** dizisi **olarak, kapsayan**işlevin nitelenmemiş ve donatımış adı.
+- işlevin yerel **statik const** dizisi **olarak, kapsayan**işlevin nitelenmemiş ve donatımış adını `__func__`.
 
     ```cpp
     void example(){
@@ -182,45 +255,45 @@ Derleyici ISO C99 ve ISO C++ 11 tarafından belirtilen önceden tanımlanmış t
 
 Derleyici ISO C99 ve ISO C++ 17 standartları tarafından belirtilen önceden tanımlanmış makroları destekler.
 
-- **&#95; &#95;** Çeviri birimi olarak C++derlendiğinde tamsayı sabit değeri olarak tanımlanır. Aksi takdirde, tanımsız.
+- çeviri birimi olarak C++derlendiğinde tamsayı sabit değeri olarak tanımlanmış `__cplusplus`. Aksi takdirde, tanımsız.
 
-- **&#95; Tarih &#95; &#95;** Geçerli kaynak dosyanın derleme tarihi. Tarih, *aaa gg yyyy*biçiminde sabit uzunluklu bir dize sabit değeri olur. Ay adı *aaa* , C çalışma zamanı KITAPLıĞı (CRT) [asctime](../c-runtime-library/reference/asctime-wasctime.md) işlevi tarafından oluşturulan kısaltılmış ay adı ile aynıdır. Değer 10 ' dan küçükse, *gg* 'nin ilk karakteri bir alandır. Bu makro her zaman tanımlanmıştır.
+- geçerli kaynak dosyanın derleme tarihini `__DATE__`. Tarih, *aaa gg yyyy*biçiminde sabit uzunluklu bir dize sabit değeri olur. Ay adı *aaa* , C çalışma zamanı KITAPLıĞı (CRT) [asctime](../c-runtime-library/reference/asctime-wasctime.md) işlevi tarafından oluşturulan kısaltılmış ay adı ile aynıdır. Değer 10 ' dan küçükse, *gg* 'nin ilk karakteri bir alandır. Bu makro her zaman tanımlanmıştır.
 
-- **&#95; Dosya &#95; &#95;** Geçerli kaynak dosyanın adı. Dosya, bir karakter dizesi değişmez değerine genişletilir. **&#95; &#95;&#95;** Dosyanın tam yolunun görüntülendiğinden emin olmak için [/FC (kaynak kodu dosyasının Tanılamadaki Tam yolu)](../build/reference/fc-full-path-of-source-code-file-in-diagnostics.md)kullanın. Bu makro her zaman tanımlanmıştır.
+- geçerli kaynak dosyanın adını `__FILE__`. `__FILE__` bir karakter dizesi değişmez değerine genişletilir. Dosyanın tam yolunun görüntülendiğinden emin olmak için [/FC (kaynak kodu dosyasının Tanılamadaki Tam yolu)](../build/reference/fc-full-path-of-source-code-file-in-diagnostics.md)kullanın. Bu makro her zaman tanımlanmıştır.
 
-- **&#95; Satır &#95; &#95;** Geçerli kaynak dosyasında tamsayı satır numarası olarak tanımlanır. Satır makrosunun değeri bir `#line` yönergesi kullanılarak değiştirilebilir. **&#95; &#95; &#95;** Bu makro her zaman tanımlanmıştır.
+- geçerli kaynak dosyasında tamsayı satır numarası olarak tanımlanmış `__LINE__`. `__LINE__` makrosunun değeri bir `#line` yönergesi kullanılarak değiştirilebilir. Bu makro her zaman tanımlanmıştır.
 
-- **&#95;&#95; Stdc &#95;** Yalnızca C olarak derlendiğinde ve [/za](../build/reference/za-ze-disable-language-extensions.md) derleyici seçeneği belirtilmişse 1 olarak tanımlanır. Aksi takdirde, tanımsız.
+- `__STDC__` yalnızca C olarak derlendiğinde ve [/za](../build/reference/za-ze-disable-language-extensions.md) derleyici seçeneği belirtilmişse 1 olarak tanımlanır. Aksi takdirde, tanımsız.
 
-- **&#95;&#95;&#95;&#95;**  Uygulama *barındırılan bir uygulama*ise ve tüm gerekli standart kitaplığı destekleyen, 1 olarak barındırılan stdc. Aksi takdirde, 0 olarak tanımlanır.
+- uygulama, tüm gerekli standart kitaplığı destekleyen bir *barındırılan uygulama*ise, 1 olarak tanımlanır `__STDC_HOSTED__`. Aksi takdirde, 0 olarak tanımlanır.
 
-- **&#95;&#95;&#95;&#95;**  Yalnızca bir programın birden fazla yürütme iş parçacığı ve olarak C++derlenmesi halinde olması halinde, ve yalnızca bir program tarafından 1 olarak tanımlanan stdcpp iş parçacıkları. Aksi takdirde, tanımsız.
+- `__STDCPP_THREADS__`, ve yalnızca bir programın birden fazla yürütme iş parçacığı ve olarak C++derlenmesi durumunda 1 olarak tanımlanır. Aksi takdirde, tanımsız.
 
-- **&#95; Zaman &#95; &#95;** Önceden işlenmiş çeviri biriminin çevirisi süresi. Bu zaman, *HH: mm: ss*biçimindeki bir karakter dizesi değişmez DEĞERI, CRT [asctime](../c-runtime-library/reference/asctime-wasctime.md) işlevi tarafından döndürülen zaman ile aynıdır. Bu makro her zaman tanımlanmıştır.
+- önceden işlenmiş çeviri biriminin çevirisinin saati `__TIME__`. Bu zaman, *HH: mm: ss*biçimindeki bir karakter dizesi değişmez DEĞERI, CRT [asctime](../c-runtime-library/reference/asctime-wasctime.md) işlevi tarafından döndürülen zaman ile aynıdır. Bu makro her zaman tanımlanmıştır.
 
 ## <a name="microsoft-specific-predefined-macros"></a>Microsoft 'a özgü önceden tanımlanmış makrolar
 
 MSVC bu önceden tanımlanmış ek makroları destekler.
 
-- **&#95; Atom &#95; &#95;** [/İyileştir: Atom](../build/reference/favor-optimize-for-architecture-specifics.md) derleyicisi seçeneği ayarlandığında ve derleyici hedefi x86 veya x64 olduğunda 1 olarak tanımlanır. Aksi takdirde, tanımsız.
+- [/et: Atom](../build/reference/favor-optimize-for-architecture-specifics.md) derleyicisi seçeneği ayarlandığında ve derleyici hedefi x86 veya x64 olduğunda, 1 olarak tanımlanır `__ATOM__`. Aksi takdirde, tanımsız.
 
-- **&#95;&#95; AVX &#95;** [/Arch: AVX](../build/reference/arch-x86.md), [/Arch: AVX2](../build/reference/arch-x86.md) veya [/Arch: AVX512](../build/reference/arch-x86.md) derleyici seçenekleri ayarlandığında ve derleyici hedefi x86 veya x64 olduğunda, 1 olarak tanımlanır. Aksi takdirde, tanımsız.
+- [/Arch: AVX](../build/reference/arch-x86.md), [/Arch: AVX2](../build/reference/arch-x86.md) veya [/Arch: AVX512](../build/reference/arch-x86.md) derleyici seçenekleri ayarlandığında ve derleyici hedefi x86 veya x64 olduğunda, 1 olarak tanımlanır `__AVX__`. Aksi takdirde, tanımsız.
 
-- **&#95; AVX2 &#95; &#95;** [/Arch: AVX2](../build/reference/arch-x86.md) veya [/Arch: AVX512](../build/reference/arch-x86.md) derleyici seçeneği ayarlandığında ve derleyici hedefi x86 veya x64 olduğunda, 1 olarak tanımlanır. Aksi takdirde, tanımsız.
+- [/Arch: AVX2](../build/reference/arch-x86.md) veya [/Arch: AVX512](../build/reference/arch-x86.md) derleyici seçeneği ayarlandığında ve derleyici hedefi x86 veya x64 olduğunda, 1 olarak tanımlanır `__AVX2__`. Aksi takdirde, tanımsız.
 
-- **&#95; AVX512BW &#95; &#95;** [/Arch: AVX512](../build/reference/arch-x86.md) derleyici seçeneği ayarlandığında ve derleyici hedefi x86 veya x64 olduğunda, 1 olarak tanımlanır. Aksi takdirde, tanımsız.
+- [/Arch: AVX512](../build/reference/arch-x86.md) derleyici seçeneği ayarlandığında ve derleyici hedefi x86 veya x64 olduğunda `__AVX512BW__` 1 olarak tanımlanır. Aksi takdirde, tanımsız.
 
-- **&#95; AVX512CD &#95; &#95;** [/Arch: AVX512](../build/reference/arch-x86.md) derleyici seçeneği ayarlandığında ve derleyici hedefi x86 veya x64 olduğunda, 1 olarak tanımlanır. Aksi takdirde, tanımsız.
+- [/Arch: AVX512](../build/reference/arch-x86.md) derleyici seçeneği ayarlandığında ve derleyici hedefi x86 veya x64 olduğunda `__AVX512CD__` 1 olarak tanımlanır. Aksi takdirde, tanımsız.
 
-- **&#95; AVX512DQ &#95; &#95;** [/Arch: AVX512](../build/reference/arch-x86.md) derleyici seçeneği ayarlandığında ve derleyici hedefi x86 veya x64 olduğunda, 1 olarak tanımlanır. Aksi takdirde, tanımsız.
+- [/Arch: AVX512](../build/reference/arch-x86.md) derleyici seçeneği ayarlandığında ve derleyici hedefi x86 veya x64 olduğunda `__AVX512DQ__` 1 olarak tanımlanır. Aksi takdirde, tanımsız.
 
-- **&#95; AVX512F &#95; &#95;** [/Arch: AVX512](../build/reference/arch-x86.md) derleyici seçeneği ayarlandığında ve derleyici hedefi x86 veya x64 olduğunda, 1 olarak tanımlanır. Aksi takdirde, tanımsız.
+- [/Arch: AVX512](../build/reference/arch-x86.md) derleyici seçeneği ayarlandığında ve derleyici hedefi x86 veya x64 olduğunda `__AVX512F__` 1 olarak tanımlanır. Aksi takdirde, tanımsız.
 
-- **&#95; AVX512VL &#95; &#95;** [/Arch: AVX512](../build/reference/arch-x86.md) derleyici seçeneği ayarlandığında ve derleyici hedefi x86 veya x64 olduğunda, 1 olarak tanımlanır. Aksi takdirde, tanımsız.
+- [/Arch: AVX512](../build/reference/arch-x86.md) derleyici seçeneği ayarlandığında ve derleyici hedefi x86 veya x64 olduğunda `__AVX512VL__` 1 olarak tanımlanır. Aksi takdirde, tanımsız.
 
-- **&#95;Varsayılan&#95;** **char** türü işaretsiz ise, Char işaretsiz olarak 1 olarak tanımlanır. [/J (varsayılan karakter türü işaretsiz)](../build/reference/j-default-char-type-is-unsigned.md) derleyici seçeneği ayarlandığında bu değer tanımlanmıştır. Aksi takdirde, tanımsız.
+- Varsayılan **char** türü işaretsiz ise 1 olarak tanımlanır `_CHAR_UNSIGNED`. [/J (varsayılan karakter türü işaretsiz)](../build/reference/j-default-char-type-is-unsigned.md) derleyici seçeneği ayarlandığında bu değer tanımlanmıştır. Aksi takdirde, tanımsız.
 
-- **&#95;clr ver &#95;&#95;** Uygulamayı derlemek için kullanılan ortak dil çalışma zamanının (CLR) sürümünü temsil eden bir tamsayı sabiti olarak tanımlanır. Değer, `M` çalışma zamanının ana sürümü olduğu `mm`, çalışma zamanının alt sürümü olan ve `bbbbb` yapı numarasıdır `Mmmbbbbb`biçiminde kodlanır. **&#95;&#95;&#95;** [/Clr](../build/reference/clr-common-language-runtime-compilation.md) derleyici seçeneği ayarlandıysa clr ver tanımlanmıştır. Aksi takdirde, tanımsız.
+- uygulamayı derlemek için kullanılan ortak dil çalışma zamanının (CLR) sürümünü temsil eden bir tamsayı sabit değeri olarak tanımlanmış `__CLR_VER`. Değer, `M` çalışma zamanının ana sürümü olduğu `mm`, çalışma zamanının alt sürümü olan ve `bbbbb` yapı numarasıdır `Mmmbbbbb`biçiminde kodlanır. [/clr](../build/reference/clr-common-language-runtime-compilation.md) derleyici seçeneği ayarlandıysa `__CLR_VER` tanımlanır. Aksi takdirde, tanımsız.
 
     ```cpp
     // clr_ver.cpp
@@ -231,9 +304,9 @@ MSVC bu önceden tanımlanmış ek makroları destekler.
     }
     ```
 
-- **&#95;&#95;&#95;** [/Guard: CF (denetim akışı korumasını ETKINLEŞTIR)](../build/reference/guard-enable-control-flow-guard.md) derleyici seçeneği ayarlandığında, denetim akışı koruyucusu 1 olarak tanımlanır. Aksi takdirde, tanımsız.
+- [/Guard: CF (Control Flow Guard 'ı etkinleştir)](../build/reference/guard-enable-control-flow-guard.md) derleyici seçeneği ayarlandığında 1 olarak tanımlanan `_CONTROL_FLOW_GUARD`. Aksi takdirde, tanımsız.
 
-- **&#95; Sayaç &#95; &#95;** 0 ' dan başlayan bir tamsayı değişmez değerine genişletilir. Değer, kaynak dosyada her kullanıldığında veya kaynak dosyanın eklenen üst bilgilerinde 1 ile artırılır. Önceden derlenmiş üst bilgiler kullandığınızda **&#95; sayaç, durumunu anımsar. &#95; &#95;** Bu makro her zaman tanımlanmıştır.
+- `__COUNTER__`, 0 ' dan başlayan bir tamsayı değişmez değerine genişletilir. Değer, kaynak dosyada her kullanıldığında veya kaynak dosyanın eklenen üst bilgilerinde 1 ile artırılır. önceden derlenmiş üstbilgiler kullandığınızda `__COUNTER__` durumunu anımsar. Bu makro her zaman tanımlanmıştır.
 
   Bu örnek, aynı türdeki üç farklı nesneye benzersiz tanımlayıcılar atamak için `__COUNTER__` kullanır. `exampleClass` Oluşturucusu bir tam sayı parametresi olarak alır. `main`, uygulama benzersiz tanımlayıcı parametresi olarak `__COUNTER__` kullanarak `exampleClass`türünde üç nesne bildirir:
 
@@ -277,7 +350,7 @@ MSVC bu önceden tanımlanmış ek makroları destekler.
     }
     ```
 
-- **&#95;&#95;&#95;** bir/clr derleyici seçeneği ayarlandığında, bir tamsayı sabit değeri olarak tanımlanan CPlusPlus CLI 200406. [](../build/reference/clr-common-language-runtime-compilation.md) C++ Aksi takdirde, tanımsız. Tanımlandığında,  **&#95; &#95;CPlusPlus&#95;CLI** , çeviri birimi boyunca geçerli olur.
+- olarak C++ derlendiğinde `__cplusplus_cli` tamsayı sabit 200406 değeri olarak tanımlanır ve bir [/clr](../build/reference/clr-common-language-runtime-compilation.md) derleyici seçeneği ayarlanır. Aksi takdirde, tanımsız. Tanımlandığında, çeviri birimi boyunca `__cplusplus_cli` geçerli olur.
 
     ```cpp
     // cplusplus_cli.cpp
@@ -292,27 +365,27 @@ MSVC bu önceden tanımlanmış ek makroları destekler.
     }
     ```
 
-- **&#95;&#95;&#95;** olarak C++ derlendiğinde ve [/ZW (Windows çalışma zamanı derlemesi)](../build/reference/zw-windows-runtime-compilation.md) derleyici seçeneği ayarlandığında, CPlusPlus WinRT, tamsayı sabit değeri 201009 olarak tanımlandı. Aksi takdirde, tanımsız.
+- `__cplusplus_winrt` tamsayı sabit 201009 değeri olarak tanımlanır C++ ve [/zw (Windows çalışma zamanı derleme)](../build/reference/zw-windows-runtime-compilation.md) derleyici seçeneği ayarlanır. Aksi takdirde, tanımsız.
 
-- **&#95;Cpprttı** [/Gr (çalışma zamanı türü bilgilerini etkinleştir)](../build/reference/gr-enable-run-time-type-information.md) derleyici seçeneği ayarlandıysa 1 olarak tanımlanır. Aksi takdirde, tanımsız.
+- [/gr (çalışma zamanı türü bilgilerini etkinleştir)](../build/reference/gr-enable-run-time-type-information.md) derleyici seçeneği ayarlandıysa 1 olarak tanımlanır `_CPPRTTI`. Aksi takdirde, tanımsız.
 
-- **&#95;Cppaçılım** Bir veya daha fazla [/GX (özel durum Işlemeyi etkinleştir)](../build/reference/gx-enable-exception-handling.md), [/clr (ortak dil çalışma zamanı derlemesi)](../build/reference/clr-common-language-runtime-compilation.md)veya [/Eh (özel durum işleme modeli](../build/reference/eh-exception-handling-model.md) ) derleyici seçenekleri ayarlanmışsa 1 olarak tanımlanır. Aksi takdirde, tanımsız.
+- `_CPPUNWIND` bir veya daha fazla [/GX (özel durum Işlemeyi etkinleştir)](../build/reference/gx-enable-exception-handling.md), [/clr (ortak dil çalışma zamanı derlemesi)](../build/reference/clr-common-language-runtime-compilation.md)veya [/Eh (özel durum işleme modeli](../build/reference/eh-exception-handling-model.md) ) derleyici seçenekleri ayarlanmışsa 1 olarak tanımlanır. Aksi takdirde, tanımsız.
 
-- **&#95;Hata ayıkla** [/LDD](../build/reference/md-mt-ld-use-run-time-library.md), [/MDD](../build/reference/md-mt-ld-use-run-time-library.md)veya [/MTD](../build/reference/md-mt-ld-use-run-time-library.md) derleyici seçeneği ayarlandığında 1 olarak tanımlanır. Aksi takdirde, tanımsız.
+- `_DEBUG` [/LDD](../build/reference/md-mt-ld-use-run-time-library.md), [/MDD](../build/reference/md-mt-ld-use-run-time-library.md)veya [/MTD](../build/reference/md-mt-ld-use-run-time-library.md) derleyici seçeneği ayarlandığında 1 olarak tanımlanır. Aksi takdirde, tanımsız.
 
-- [/Md](../build/reference/md-mt-ld-use-run-time-library.md) veya [/MDD](../build/reference/md-mt-ld-use-run-time-library.md) (çok iş parçacıklı DLL) derleyici seçeneği ayarlandığında 1 olarak tanımlanan dll.  **&#95;** Aksi takdirde, tanımsız.
+- [/md](../build/reference/md-mt-ld-use-run-time-library.md) veya [/MDD](../build/reference/md-mt-ld-use-run-time-library.md) (çok iş parçacıklı DLL) derleyici seçeneği ayarlandığında 1 olarak tanımlanan `_DLL`. Aksi takdirde, tanımsız.
 
-- **&#95;Funcdname &#95;&#95;** Kapsayan işlevin [düzenlenmiş adını](../build/reference/decorated-names.md) içeren bir dize sabit değeri olarak tanımlanır. Makro yalnızca bir işlev içinde tanımlanır. /EP veya [/p](../build/reference/p-preprocess-to-a-file.md) derleyici seçeneğini kullanırsanız [](../build/reference/ep-preprocess-to-stdout-without-hash-line-directives.md)  **&#95;funcdname&#95; makrosu genişletilmez &#95;** .
+- kapsayan işlevin [düzenlenmiş adını](../build/reference/decorated-names.md) içeren bir dize sabit değeri olarak tanımlanmış `__FUNCDNAME__`. Makro yalnızca bir işlev içinde tanımlanır. [/EP](../build/reference/ep-preprocess-to-stdout-without-hash-line-directives.md) veya [/p](../build/reference/p-preprocess-to-a-file.md) derleyici seçeneğini kullanırsanız `__FUNCDNAME__` makrosu genişletilmez.
 
    Bu örnek, işlev bilgilerini göstermek için `__FUNCDNAME__`, `__FUNCSIG__`ve `__FUNCTION__` makrolarını kullanır.
 
    [!code-cpp[NVC_Predefined_Macros_Examples#1](../preprocessor/codesnippet/CPP/predefined-macros_1.cpp)]
 
-- **&#95;&#95; Funcsig &#95;** Kapsayan işlevin imzasını içeren bir dize sabit değeri olarak tanımlanır. Makro yalnızca bir işlev içinde tanımlanır. [/EP](../build/reference/ep-preprocess-to-stdout-without-hash-line-directives.md) veya [/p](../build/reference/p-preprocess-to-a-file.md) derleyici seçeneğini kullanırsanız,  **&#95; &#95;&#95; funcsig** makrosu genişletilmez. 64 bitlik bir hedef için derlendiğinde, çağırma kuralı varsayılan olarak `__cdecl`. Kullanım örneği için `__FUNCDNAME__` makroya bakın.
+- kapsayan işlevin imzasını içeren bir dize sabit değeri olarak tanımlanmış `__FUNCSIG__`. Makro yalnızca bir işlev içinde tanımlanır. [/EP](../build/reference/ep-preprocess-to-stdout-without-hash-line-directives.md) veya [/p](../build/reference/p-preprocess-to-a-file.md) derleyici seçeneğini kullanırsanız `__FUNCSIG__` makrosu genişletilmez. 64 bitlik bir hedef için derlendiğinde, çağırma kuralı varsayılan olarak `__cdecl`. Kullanım örneği için `__FUNCDNAME__` makroya bakın.
 
-- **&#95; İşlev &#95; &#95;** Kapsayan işlevin açıklanmıyor adını içeren bir dize sabit değeri olarak tanımlanır. Makro yalnızca bir işlev içinde tanımlanır. /EP veya [/p](../build/reference/p-preprocess-to-a-file.md) derleyici seçeneğini kullanırsanız [](../build/reference/ep-preprocess-to-stdout-without-hash-line-directives.md)  **&#95;işlev&#95; makrosu genişletilmez &#95;** . Kullanım örneği için `__FUNCDNAME__` makroya bakın.
+- kapsayan işlevin açıklanmıyor adını içeren bir dize sabit değeri olarak tanımlanmış `__FUNCTION__`. Makro yalnızca bir işlev içinde tanımlanır. [/EP](../build/reference/ep-preprocess-to-stdout-without-hash-line-directives.md) veya [/p](../build/reference/p-preprocess-to-a-file.md) derleyici seçeneğini kullanırsanız `__FUNCTION__` makrosu genişletilmez. Kullanım örneği için `__FUNCDNAME__` makroya bakın.
 
-- **Integral&#95;en&#95;büyük bit &#95;** Vektör olmayan tamsayı türü için en büyük boyut olan 64 (bit cinsinden) olarak tanımlanır. Bu makro her zaman tanımlanmıştır.
+- `_INTEGRAL_MAX_BITS` tamsayı sabit 64 değeri olarak tanımlanan, vektör olmayan integral türü için maksimum boyut (bit cinsinden). Bu makro her zaman tanımlanmıştır.
 
    ```cpp
    // integral_max_bits.cpp
@@ -322,19 +395,19 @@ MSVC bu önceden tanımlanmış ek makroları destekler.
    }
    ```
 
-- **&#95; IntelliSense &#95; &#95;** Visual Studio IDE 'de bir IntelliSense derleyicisi geçişi sırasında 1 olarak tanımlanır. Aksi takdirde, tanımsız. IntelliSense derleyicisinin tanımadığı kodu korumak için bu makroyu kullanabilir veya yapı ile IntelliSense derleyicisi arasında geçiş yapmak için kullanabilirsiniz. Daha fazla bilgi için bkz. [IntelliSense Yavaşlılığını Için sorun giderme ipuçları](https://devblogs.microsoft.com/cppblog/troubleshooting-tips-for-intellisense-slowness/).
+- `__INTELLISENSE__`, Visual Studio IDE içinde bir IntelliSense derleyicisi geçişi sırasında 1 olarak tanımlanır. Aksi takdirde, tanımsız. IntelliSense derleyicisinin tanımadığı kodu korumak için bu makroyu kullanabilir veya yapı ile IntelliSense derleyicisi arasında geçiş yapmak için kullanabilirsiniz. Daha fazla bilgi için bkz. [IntelliSense Yavaşlılığını Için sorun giderme ipuçları](https://devblogs.microsoft.com/cppblog/troubleshooting-tips-for-intellisense-slowness/).
 
-- **&#95;,&#95;** [/Volatile: iso](../build/reference/volatile-volatile-keyword-interpretation.md) derleyici seçeneği ayarlandıysa, ISO geçici olarak 1 olarak tanımlanmıştır. Aksi takdirde, tanımsız.
+- `_ISO_VOLATILE` [/volatile: iso](../build/reference/volatile-volatile-keyword-interpretation.md) derleyici seçeneği ayarlandıysa 1 olarak tanımlanır. Aksi takdirde, tanımsız.
 
-- **&#95;&#95;** [/Kernel (çekirdek modu ikilisi oluştur)](../build/reference/kernel-create-kernel-mode-binary.md) derleyici seçeneği ayarlandıysa, çekirdek modu 1 olarak tanımlanır. Aksi takdirde, tanımsız.
+- [/Kernel (çekirdek modu Ikilisi oluştur)](../build/reference/kernel-create-kernel-mode-binary.md) derleyici seçeneği ayarlandıysa `_KERNEL_MODE` 1 olarak tanımlanır. Aksi takdirde, tanımsız.
 
-- **&#95;A&#95;AMD64** X64 işlemcileri hedefleyen derlemeler için 100 tamsayı sabit değeri olarak tanımlanır. Aksi takdirde, tanımsız.
+- x64 işlemcileri hedefleyen derlemeler için 100 tamsayı sabit değeri olarak tanımlanan `_M_AMD64`. Aksi takdirde, tanımsız.
 
-- **&#95;d&#95;ARM** ARM işlemcilerini hedefleyen derlemeler için 7 tamsayı sabit değeri olarak tanımlanır. Aksi takdirde, tanımsız.
+- ARM işlemcilerini hedefleyen derlemeler için 7 tamsayı sabit değeri olarak tanımlanmış `_M_ARM`. Aksi takdirde, tanımsız.
 
-- **&#95;P&#95;ARM&#95;ARMV7VE** , ARM İşlemcileri hedef derlemeler için [/Arch: ARMV7VE](../build/reference/arch-arm.md) derleyici seçeneği ayarlandığında 1 olarak tanımlanır. Aksi takdirde, tanımsız.
+- ARM İşlemcileri hedef derlemeler için [/Arch: ARMv7VE](../build/reference/arch-arm.md) derleyici seçeneği ayarlandığında 1 olarak tanımlanır `_M_ARM_ARMV7VE`. Aksi takdirde, tanımsız.
 
-- **&#95;ARM&#95;işlemci&#95;** hedefleri için hangi [/Arch](../build/reference/arch-arm.md) derleyici seçeneğinin ayarlandığını gösteren bir tamsayı sabit değeri olarak tanımlanan, a ARM FP. Aksi takdirde, tanımsız.
+- ARM işlemci hedefleri için hangi [/Arch](../build/reference/arch-arm.md) derleyici seçeneğinin ayarlandığını gösteren tamsayı sabit değeri olarak tanımlanmış `_M_ARM_FP`. Aksi takdirde, tanımsız.
 
   - ARM için varsayılan mimariyi belirten `/arch` ARM seçeneği belirtilmemişse 30-39 aralığındaki bir değer (`VFPv3`).
 
@@ -342,47 +415,47 @@ MSVC bu önceden tanımlanmış ek makroları destekler.
 
   - Daha fazla bilgi için bkz. [/Arch (ARM)](../build/reference/arch-arm.md).
 
-- **&#95;A&#95;ARM64** 64-bit ARM İşlemcileri hedefleyen derlemeler için 1 olarak tanımlanmıştır. Aksi takdirde, tanımsız.
+- 64-bit ARM İşlemcileri hedefleyen derlemeler için 1 olarak tanımlanır `_M_ARM64`. Aksi takdirde, tanımsız.
 
-- **&#95;Herhangi&#95;** bir [/clr (ortak dil çalışma zamanı derlemesi)](../build/reference/clr-common-language-runtime-compilation.md) derleyici seçeneği ayarlandıysa, M Cee, 001 olarak tanımlanır. Aksi takdirde, tanımsız.
+- herhangi bir [/clr (ortak dil çalışma zamanı derlemesi)](../build/reference/clr-common-language-runtime-compilation.md) derleyici seçeneği ayarlandıysa, 001 olarak tanımlanır `_M_CEE`. Aksi takdirde, tanımsız.
 
-- **M&#95;Cee&#95;saf &#95;** Visual Studio 2015 ' de kullanım dışı bırakıldı. [/Clr: Pure](../build/reference/clr-common-language-runtime-compilation.md) derleyici seçeneği ayarlandıysa 001 olarak tanımlanır. Aksi takdirde, tanımsız.
+- Visual Studio 2015 ' de kullanım dışı `_M_CEE_PURE`. [/Clr: Pure](../build/reference/clr-common-language-runtime-compilation.md) derleyici seçeneği ayarlandıysa 001 olarak tanımlanır. Aksi takdirde, tanımsız.
 
-- **M&#95;Cee&#95;güvenli &#95;** Visual Studio 2015 ' de kullanım dışı bırakıldı. [/Clr: Safe](../build/reference/clr-common-language-runtime-compilation.md) derleyici seçeneği ayarlandıysa, 001 olarak tanımlanır. Aksi takdirde, tanımsız.
+- Visual Studio 2015 ' de kullanım dışı `_M_CEE_SAFE`. [/Clr: Safe](../build/reference/clr-common-language-runtime-compilation.md) derleyici seçeneği ayarlandıysa, 001 olarak tanımlanır. Aksi takdirde, tanımsız.
 
-- **&#95;&#95;/FP: except veya/FP: Strict derleyici seçeneği ayarlandıysa, 1 olarak&#95;tanımlanır.** [](../build/reference/fp-specify-floating-point-behavior.md) [](../build/reference/fp-specify-floating-point-behavior.md) Aksi takdirde, tanımsız.
+- [/FP: except](../build/reference/fp-specify-floating-point-behavior.md) veya [/FP: Strict](../build/reference/fp-specify-floating-point-behavior.md) derleyici seçeneği ayarlandıysa 1 olarak tanımlanır `_M_FP_EXCEPT`. Aksi takdirde, tanımsız.
 
-- **&#95;/FP&#95;: Fast derleyici seçeneği ayarlandıysa, 1 olarak hızlı bir şekilde tanımlanır.&#95;** [](../build/reference/fp-specify-floating-point-behavior.md) Aksi takdirde, tanımsız.
+- [/FP: Fast](../build/reference/fp-specify-floating-point-behavior.md) derleyici seçeneği ayarlandıysa 1 olarak tanımlanır `_M_FP_FAST`. Aksi takdirde, tanımsız.
 
-- **&#95;&#95;&#95;** [/FP: kesin](../build/reference/fp-specify-floating-point-behavior.md) derleyici seçeneği ayarlandıysa, 5 FP kesin olarak 1 olarak tanımlanır. Aksi takdirde, tanımsız.
+- [/FP: kesin](../build/reference/fp-specify-floating-point-behavior.md) derleyici seçeneği ayarlandıysa `_M_FP_PRECISE` 1 olarak tanımlanır. Aksi takdirde, tanımsız.
 
-- **&#95;5&#95;FP: Strict derleyici seçeneği ayarlandıysa, 1 olarak&#95;tanımlanır.** [](../build/reference/fp-specify-floating-point-behavior.md) Aksi takdirde, tanımsız.
+- [/FP: Strict](../build/reference/fp-specify-floating-point-behavior.md) derleyici seçeneği ayarlandıysa `_M_FP_STRICT` 1 olarak tanımlanır. Aksi takdirde, tanımsız.
 
-- **&#95;A&#95;IX86** X86 işlemcileri hedefleyen derlemeler için 600 tamsayı sabit değeri olarak tanımlanır. Bu makro x64 veya ARM derleme hedefleri için tanımlı değil.
+- x86 işlemcileri hedefleyen derlemeler için 600 tamsayı sabit değeri olarak tanımlanan `_M_IX86`. Bu makro x64 veya ARM derleme hedefleri için tanımlı değil.
 
-- **&#95;A&#95;IX86&#95;FP** , ayarlanan [/Arch](../build/reference/arch-arm.md) derleyici seçeneğini veya varsayılan değeri belirten bir tamsayı sabit değeri olarak tanımlanır. Bu makro, derleme hedefi bir x86 işlemcisi olduğunda her zaman tanımlanır. Aksi takdirde, tanımsız. Tanımlandığında değer şu şekilde olur:
+- ayarlanan veya varsayılan değer olan [/Arch](../build/reference/arch-arm.md) derleyici seçeneğini belirten bir tamsayı sabit değeri olarak tanımlanmış `_M_IX86_FP`. Bu makro, derleme hedefi bir x86 işlemcisi olduğunda her zaman tanımlanır. Aksi takdirde, tanımsız. Tanımlandığında değer şu şekilde olur:
 
   - `/arch:IA32` derleyici seçeneği ayarlandıysa 0.
 
   - `/arch:SSE` derleyici seçeneği ayarlandıysa 1.
 
-  - 2 `/arch:SSE2`, `/arch:AVX`, `/arch:AVX2`veya `/arch:AVX512` derleyici seçeneği ayarlandıysa. Bu değer, bir `/arch` derleyici seçeneği belirtilmemişse varsayılan değerdir. `/arch:AVX` belirtildiğinde, **&#95; &#95;AVX&#95;** makrosu da tanımlanmıştır. `/arch:AVX2` belirtildiğinde hem **&#95; &#95;AVX&#95;** hem **&#95; &#95;de AVX2&#95;** de tanımlanmıştır. `/arch:AVX512` belirtildiğinde,  **&#95; &#95;&#95;AVX**,  **&#95; &#95;AVX2&#95;** , **&#95;AVX512BW, &#95; &#95;** **AVX512CD,&#95;AVX512DQ, AVX512F ve AVX512VL de tanımlanmıştır. &#95; &#95;**  **&#95; &#95;&#95;** **&#95; &#95;&#95;** **&#95; &#95;&#95;**
+  - 2 `/arch:SSE2`, `/arch:AVX`, `/arch:AVX2`veya `/arch:AVX512` derleyici seçeneği ayarlandıysa. Bu değer, bir `/arch` derleyici seçeneği belirtilmemişse varsayılan değerdir. `/arch:AVX` belirtildiğinde, makro `__AVX__` de tanımlanır. `/arch:AVX2` belirtildiğinde, hem `__AVX__` hem de `__AVX2__` de tanımlanmıştır. `/arch:AVX512` belirtildiğinde `__AVX__`, `__AVX2__`, `__AVX512BW__`, `__AVX512CD__`, `__AVX512DQ__`, `__AVX512F__` ve `__AVX512VL__` de tanımlanmıştır.
 
   - Daha fazla bilgi için bkz. [/Arch (x86)](../build/reference/arch-x86.md).
 
-- **&#95;D&#95;x64** X64 işlemcileri hedefleyen derlemeler için 100 tamsayı sabit değeri olarak tanımlanır. Aksi takdirde, tanımsız.
+- x64 işlemcileri hedefleyen derlemeler için 100 tamsayı sabit değeri olarak tanımlanan `_M_X64`. Aksi takdirde, tanımsız.
 
-- **&#95;Yönetilen** [/Clr](../build/reference/clr-common-language-runtime-compilation.md) derleyici seçeneği ayarlandığında 1 olarak tanımlanır. Aksi takdirde, tanımsız.
+- [/clr](../build/reference/clr-common-language-runtime-compilation.md) derleyici seçeneği ayarlandığında 1 olarak tanımlanır `_MANAGED`. Aksi takdirde, tanımsız.
 
-- **&#95;msc&#95;derlemesi** Derleyicinin sürüm numarasının düzeltme numarası öğesini içeren bir tamsayı sabit değeri olarak tanımlanır. Düzeltme numarası, dönem ile ayrılmış sürüm numarasının dördüncü öğesidir. Örneğin, Microsoft C/C++ derleyicisinin sürüm numarası 15.00.20706.01 ise,  **&#95;msc&#95;derleme** makrosu 1 olarak değerlendirilir. Bu makro her zaman tanımlanmıştır.
+- Derleyicinin sürüm numarasının düzeltme numarası öğesini içeren bir tamsayı sabit değeri olarak tanımlanmış `_MSC_BUILD`. Düzeltme numarası, dönem ile ayrılmış sürüm numarasının dördüncü öğesidir. Örneğin, Microsoft C/C++ derleyicisinin sürüm numarası 15.00.20706.01 ise `_MSC_BUILD` makrosu 1 olarak değerlendirilir. Bu makro her zaman tanımlanmıştır.
 
-- **&#95;Varsayılan&#95;** [/Ze (dil uzantılarını etkinleştir)](../build/reference/za-ze-disable-language-extensions.md) derleyici seçeneği AYARLANDıYSA, 1 olarak tanımlanan msc uzantıları. Aksi takdirde, tanımsız.
+- `_MSC_EXTENSIONS` varsayılan [/Ze (dil uzantılarını etkinleştir)](../build/reference/za-ze-disable-language-extensions.md) derleyici seçeneği ayarlandıysa 1 olarak tanımlanır. Aksi takdirde, tanımsız.
 
-- **msc&#95;tam&#95;ver &#95;** Derleyicinin sürüm numarasının büyük, küçük ve derleme numarası öğelerini kodlayan bir tamsayı sabit değeri olarak tanımlanır. Ana sayı, dönem ile ayrılmış sürüm numarasının ilk öğesidir, küçük sayı ikinci öğedir ve yapı numarası üçüncü öğedir. Örneğin, MicrosoftC++ C/derleyicisinin sürüm numarası 15.00.20706.01 ise,  **&#95;msc&#95;tam&#95;ver** makrosu 150020706 olarak değerlendirilir. Derleyicinin sürüm numarasını görüntülemek için komut satırına `cl /?` yazın. Bu makro her zaman tanımlanmıştır.
+- Derleyicinin sürüm numarasının büyük, küçük ve derleme numarası öğelerini kodlayan bir tamsayı sabit değeri olarak tanımlanmış `_MSC_FULL_VER`. Ana sayı, dönem ile ayrılmış sürüm numarasının ilk öğesidir, küçük sayı ikinci öğedir ve yapı numarası üçüncü öğedir. Örneğin, Microsoft C/C++ derleyicisinin sürüm numarası 15.00.20706.01 ise `_MSC_FULL_VER` makrosu 150020706 olarak değerlendirilir. Derleyicinin sürüm numarasını görüntülemek için komut satırına `cl /?` yazın. Bu makro her zaman tanımlanmıştır.
 
-- **&#95;msc&#95;ver** Derleyicinin sürüm numarasının büyük ve küçük sayı öğelerini kodlayan bir tamsayı sabit değeri olarak tanımlanır. Ana sayı, dönem ile ayrılmış sürüm numarasının ilk öğesidir ve ikincil sayı ikinci öğedir. Örneğin, Microsoft C/C++ derleyicisinin sürüm numarası 17.00.51106.1 ise,  **&#95;msc&#95;ver** makrosu 1700 olarak değerlendirilir. Derleyicinin sürüm numarasını görüntülemek için komut satırına `cl /?` yazın. Bu makro her zaman tanımlanmıştır.
+- Derleyicinin sürüm numarasının büyük ve küçük sayı öğelerini kodlayan bir tamsayı sabit değeri olarak tanımlanmış `_MSC_VER`. Ana sayı, dönem ile ayrılmış sürüm numarasının ilk öğesidir ve ikincil sayı ikinci öğedir. Örneğin, Microsoft C/C++ derleyicisinin sürüm numarası 17.00.51106.1 ise `_MSC_VER` makrosu 1700 olarak değerlendirilir. Derleyicinin sürüm numarasını görüntülemek için komut satırına `cl /?` yazın. Bu makro her zaman tanımlanmıştır.
 
-   |Visual Studio sürüm|**&#95;MSC&#95;ver**|
+   |Visual Studio sürümü|`_MSC_VER`|
    |-|-|
    |Visual Studio 6.0|1200|
    |Visual Studio .NET 2002 (7,0)|1300|
@@ -395,8 +468,8 @@ MSVC bu önceden tanımlanmış ek makroları destekler.
    |Visual Studio 2015 (14,0)|1900|
    |Visual Studio 2017 RTW (15,0)|1910|
    |Visual Studio 2017 sürüm 15,3|1911|
-   |Visual Studio 2017 sürüm 15,5|1912|
-   |Visual Studio 2017 sürüm 15,6|1913|
+   |Visual Studio 2017 sürüm 15.5|1912|
+   |Visual Studio 2017 sürüm 15.6|1913|
    |Visual Studio 2017 sürüm 15,7|1914|
    |Visual Studio 2017 sürüm 15,8|1915|
    |Visual Studio 2017 sürüm 15,9|1916|
@@ -405,7 +478,7 @@ MSVC bu önceden tanımlanmış ek makroları destekler.
    |Visual Studio 2019 sürüm 16,2|1922|
    |Visual Studio 2019 sürüm 16,3|1923|
 
-   Visual Studio 'nun belirli bir sürümünde veya sonrasında derleyici sürümlerini veya güncelleştirmelerini test etmek için **>=** işlecini kullanın. Bu sürümü, bu bilinen sürüme karşı  **&#95;msc&#95;** sürümünü karşılaştırmak için koşullu bir yönerge içinde kullanabilirsiniz. Karşılaştırmak için birbirini dışlayan birkaç sürümleriniz varsa, karşılaştırmaları sürüm numarası azalan sırada sıralayın. Örneğin, bu kod Visual Studio 2017 ve üzeri sürümlerde yayınlanan derleyicileri denetler. Ardından, Visual Studio 2015 ' de veya sonrasında yayınlanan derleyicileri denetler. Ardından, Visual Studio 2015 'den önce yayınlanan tüm derleyicileri denetler:
+   Visual Studio 'nun belirli bir sürümünde veya sonrasında derleyici sürümlerini veya güncelleştirmelerini test etmek için `>=` işlecini kullanın. `_MSC_VER`, bu bilinen sürüme karşı karşılaştırmak için koşullu bir yönergede kullanabilirsiniz. Karşılaştırmak için birbirini dışlayan birkaç sürümleriniz varsa, karşılaştırmaları sürüm numarası azalan sırada sıralayın. Örneğin, bu kod Visual Studio 2017 ve üzeri sürümlerde yayınlanan derleyicileri denetler. Ardından, Visual Studio 2015 ' de veya sonrasında yayınlanan derleyicileri denetler. Ardından, Visual Studio 2015 'den önce yayınlanan tüm derleyicileri denetler:
 
    ```cpp
    #if _MSC_VER >= 1910
@@ -419,11 +492,11 @@ MSVC bu önceden tanımlanmış ek makroları destekler.
 
    Daha fazla bilgi için bkz. Microsoft C++ ekibi blogu 'ndaki [Visual C++ derleyicisi sürümü](https://devblogs.microsoft.com/cppblog/visual-c-compiler-version/) .
 
-- **&#95;Derleyicinin&#95;** hedeflediği C++ dil standardını belirten BIR tamsayı sabiti olarak tanımlanan MSVC lang. Yalnızca olarak C++derlenen kodda ayarlanır. Makro varsayılan olarak 201402L tamsayı sabit değeridir veya [/std: c++ 14](../build/reference/std-specify-language-standard-version.md) derleyici seçeneği belirtildiğinde. [/Std: c++ 17](../build/reference/std-specify-language-standard-version.md) derleyici seçeneği belirtilmişse, makro 201703L olarak ayarlanır. [/Std: c + + latest](../build/reference/std-specify-language-standard-version.md) seçeneği belirtildiğinde, daha yüksek, belirtilmeyen bir değere ayarlanır. Aksi takdirde, makro tanımsız olur. **&#95;MSVC&#95;lang** makrosu ve [/std (dil standardı sürümü belirt)](../build/reference/std-specify-language-standard-version.md) derleyici seçenekleri Visual Studio 2015 güncelleştirme 3 ' ten başlayarak kullanılabilir.
+- Derleyicinin hedeflediği C++ dil standardını belirten bir tamsayı sabit değeri olarak tanımlanmış `_MSVC_LANG`. Yalnızca olarak C++derlenen kodda ayarlanır. Makro varsayılan olarak 201402L tamsayı sabit değeridir veya [/std: c++ 14](../build/reference/std-specify-language-standard-version.md) derleyici seçeneği belirtildiğinde. [/Std: c++ 17](../build/reference/std-specify-language-standard-version.md) derleyici seçeneği belirtilmişse, makro 201703L olarak ayarlanır. [/Std: c + + latest](../build/reference/std-specify-language-standard-version.md) seçeneği belirtildiğinde, daha yüksek, belirtilmeyen bir değere ayarlanır. Aksi takdirde, makro tanımsız olur. `_MSVC_LANG` makrosu ve [/std (dil standardı sürümü belirt)](../build/reference/std-specify-language-standard-version.md) derleyici seçenekleri Visual Studio 2015 güncelleştirme 3 ' ten itibaren kullanılabilir.
 
-- **&#95;&#95;MSVC&#95;çalışma&#95;zamanı denetimleri** , [/RTC](../build/reference/rtc-run-time-error-checks.md) derleyici seçeneklerinden biri ayarlandığında 1 olarak tanımlanır. Aksi takdirde, tanımsız.
+- `__MSVC_RUNTIME_CHECKS` [/RTC](../build/reference/rtc-run-time-error-checks.md) derleyici seçeneklerinden biri ayarlandığında 1 olarak tanımlanır. Aksi takdirde, tanımsız.
 
-- **&#95;Önişlemci&#95;** uyumluluk modu [/deneysel: ÖNIŞLEMCI](../build/reference/experimental-preprocessor.md) derleyici seçeneği ayarlandığında MSVC geleneksel olarak 0 olarak tanımlanır. Geleneksel Önişlemci 'nin kullanımda olduğunu belirtmek için varsayılan olarak 1 veya [/deneysel: Önişlemci-](../build/reference/experimental-preprocessor.md) derleyici seçeneği ayarlandığında tanımlanmıştır. **&#95;MSVC&#95;geleneksel** makrosu ve [/deneysel: Önişlemci (Önişlemci uyumluluk modunu etkinleştir)](../build/reference/experimental-preprocessor.md) derleyici seçeneği Visual Studio 2017 sürüm 15,8 ' den başlayarak kullanılabilir.
+- Önişlemci uyumluluk modu [/deneysel: Önişlemci](../build/reference/experimental-preprocessor.md) derleyici seçeneği ayarlandığında 0 olarak tanımlanmış `_MSVC_TRADITIONAL`. Geleneksel Önişlemci 'nin kullanımda olduğunu belirtmek için varsayılan olarak 1 veya [/deneysel: Önişlemci-](../build/reference/experimental-preprocessor.md) derleyici seçeneği ayarlandığında tanımlanmıştır. `_MSVC_TRADITIONAL` makrosu ve [/deneysel: Önişlemci (Önişlemci uyumluluk modunu etkinleştir)](../build/reference/experimental-preprocessor.md) derleyici seçeneği Visual Studio 2017 sürüm 15,8 ' den başlayarak kullanılabilir.
 
    ```cpp
    #if defined(_MSVC_TRADITIONAL) && _MSVC_TRADITIONAL
@@ -433,11 +506,11 @@ MSVC bu önceden tanımlanmış ek makroları destekler.
    #endif
    ```
 
-- **&#95;MT** [/Md veya/MDd](../build/reference/md-mt-ld-use-run-time-library.md) (çok Iş parçacıklı DLL) veya [/MT ya da/MTD](../build/reference/md-mt-ld-use-run-time-library.md) (çok iş parçacıklı) belirtildiğinde 1 olarak tanımlanır. Aksi takdirde, tanımsız.
+- [/md veya/MDd](../build/reference/md-mt-ld-use-run-time-library.md) (çok Iş parçacıklı DLL) veya [/MT ya da/MTD](../build/reference/md-mt-ld-use-run-time-library.md) (çok iş parçacıklı) belirtildiğinde 1 olarak `_MT` tanımlanır. Aksi takdirde, tanımsız.
 
-- **&#95;Yerel&#95;wchar&#95;T&#95;** , [/Zc: wchar_t](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) derleyici seçeneği ayarlandığında 1 olarak tanımlanır. Aksi takdirde, tanımsız.
+- [/Zc: wchar_t](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) derleyici seçeneği ayarlandığında 1 olarak tanımlanır `_NATIVE_WCHAR_T_DEFINED`. Aksi takdirde, tanımsız.
 
-- **&#95;OPENMP** [/OpenMP (openmp 2,0 desteğini etkinleştir)](../build/reference/openmp-enable-openmp-2-0-support.md) derleyici seçeneği ayarlandıysa tamsayı sabit değeri 200203 olarak tanımlanır. Bu değer, MSVC tarafından uygulanan OpenMP belirtiminin tarihini temsil eder. Aksi takdirde, tanımsız.
+- `_OPENMP` tamsayı sabit 200203 değeri olarak tanımlanır, [/OpenMP (openmp 2,0 desteğini etkinleştir)](../build/reference/openmp-enable-openmp-2-0-support.md) derleyici seçeneği ayarlanır. Bu değer, MSVC tarafından uygulanan OpenMP belirtiminin tarihini temsil eder. Aksi takdirde, tanımsız.
 
    ```cpp
    // _OPENMP_dir.cpp
@@ -448,25 +521,25 @@ MSVC bu önceden tanımlanmış ek makroları destekler.
    }
    ```
 
-- **&#95;PREfast&#95;** [/Analyze](../build/reference/analyze-code-analysis.md) derleyici seçeneği ayarlandığında 1 olarak tanımlanır. Aksi takdirde, tanımsız.
+- [/Analyze](../build/reference/analyze-code-analysis.md) derleyici seçeneği ayarlandığında 1 olarak tanımlanır `_PREFAST_`. Aksi takdirde, tanımsız.
 
-- **&#95;&#95; Zaman &#95;damgası** Geçerli kaynak dosyanın son değiştirilme tarihini ve saatini içeren bir dize sabit değeri olarak tanımlanır. Örneğin, CRT [asctime](../c-runtime-library/reference/asctime-wasctime.md) işlevi tarafından döndürülen kısaltılmış, sabit uzunluk formunda `Fri 19 Aug 13:32:58 2016`. Bu makro her zaman tanımlanmıştır.
+- geçerli kaynak dosyanın son değiştirilme tarihini ve saatini içeren bir dize sabit değeri olarak tanımlanmış `__TIMESTAMP__`, CRT [asctime](../c-runtime-library/reference/asctime-wasctime.md) işlevi tarafından döndürülen kısaltılmış, sabit uzunluk formunda, örneğin `Fri 19 Aug 13:32:58 2016`. Bu makro her zaman tanımlanmıştır.
 
-- **&#95;Bir&#95;** [/zl (varsayılan kitaplık adını atla)](../build/reference/zl-omit-default-library-name.md) derleyici seçeneği ayarlandığında, VC nodefaultlib 1 olarak tanımlanır. Aksi takdirde, tanımsız.
+- `_VC_NODEFAULTLIB` [/zl (varsayılan kitaplık adını atla)](../build/reference/zl-omit-default-library-name.md) derleyici seçeneği ayarlandığında 1 olarak tanımlanır. Aksi takdirde, tanımsız.
 
-- **&#95;WCHAR&#95;T&#95;** varsayılan [/Zc: wchar_t](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) derleyici seçeneği ayarlandığında 1 olarak tanımlanır. **Wchar&#95;&#95;T tanımlı makro tanımlanmış, ancak `/Zc:wchar_t-` derleyici seçeneği ayarlandıysa ve wchar_t projenize dahil olan bir sistem üst bilgisi dosyasında tanımlanmışsa bir değere sahip &#95;** değildir. Aksi takdirde, tanımsız.
+- Varsayılan [/Zc: wchar_t](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) derleyici seçeneği ayarlandığında 1 olarak tanımlanır `_WCHAR_T_DEFINED`. `_WCHAR_T_DEFINED` makrosu tanımlanmıştır, ancak `/Zc:wchar_t-` derleyici seçeneği ayarlandıysa **wchar_t** ve projenize dahil olan bir sistem üst bilgisi dosyasında tanımlı bir değere sahip değildir. Aksi takdirde, tanımsız.
 
-- **&#95;WIN32** Derleme hedefi 32-bit ARM, 64-bit ARM, x86 veya x64 olduğunda 1 olarak tanımlanır. Aksi takdirde, tanımsız.
+- `_WIN32`, derleme hedefi 32 bit ARM, 64-bit ARM, x86 veya x64 olduğunda 1 olarak tanımlanır. Aksi takdirde, tanımsız.
 
-- **&#95;WIN64** Derleme hedefi 64-bit ARM veya x64 olduğunda 1 olarak tanımlanır. Aksi takdirde, tanımsız.
+- `_WIN64`, derleme hedefi 64 bit ARM veya x64 olduğunda 1 olarak tanımlanır. Aksi takdirde, tanımsız.
 
-- **&#95;Olarak&#95;** C++ derlendiğinde ve her ikisi de [/ZW (Windows çalışma zamanı derlemesi)](../build/reference/zw-windows-runtime-compilation.md) ve [/ld ya da/LDD](../build/reference/md-mt-ld-use-run-time-library.md) derleyici seçenekleri ayarlandığında, WINRT dll 'si 1 olarak tanımlanır. Aksi takdirde, tanımsız.
+- `_WINRT_DLL` olarak C++ derlendiğinde 1 olarak tanımlanır ve hem [/zw (Windows çalışma zamanı derleme)](../build/reference/zw-windows-runtime-compilation.md) hem de [/ld veya/LDD](../build/reference/md-mt-ld-use-run-time-library.md) derleyici seçenekleri ayarlanır. Aksi takdirde, tanımsız.
 
 Derleyici tarafından önceden tanımlanmış ATL veya MFC kitaplık sürümünü tanımlayan bir ön işlemci makrosu yoktur. ATL ve MFC kitaplık üstbilgileri bu sürüm makrolarını dahili olarak tanımlar. Bunlar, gerekli üst bilgi eklenmeden önce yapılan ön işlemci yönergelerinde tanımsızdır.
 
-- **&#95;ATL&#95;ver** \<atldef. h >, ATL sürüm numarasını kodlayan bir tamsayı sabit değeri olarak tanımlanmıştır.
+- ATL sürüm numarasını kodlayan bir tamsayı sabit değeri olarak \<atldef. h > tanımlanmış `_ATL_VER`.
 
-- **&#95;MFC&#95;ver** \<afxver_. h > MFC sürüm numarasını kodlayan bir tamsayı sabit değeri olarak tanımlanmıştır.
+- MFC sürüm numarasını kodlayan bir tamsayı sabit değeri olarak \<afxver_. h > tanımlanmış `_MFC_VER`.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

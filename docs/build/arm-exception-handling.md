@@ -2,12 +2,12 @@
 title: ARM özel durum Işleme
 ms.date: 07/11/2018
 ms.assetid: fe0e615f-c033-4ad5-97f4-ff96af45b201
-ms.openlocfilehash: a3d1a5f3becefc064c5bb38dc566892ae8da8530
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: c55baf453c1879f1e0a857cc746bba7802d69f88
+ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69493374"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74303280"
 ---
 # <a name="arm-exception-handling"></a>ARM özel durum Işleme
 
@@ -113,7 +113,7 @@ Kurallı işlevler için prologues, en fazla 5 yönerge içerebilir (3A ve 3B bi
 
 Yönerge 1, *H* bit 1 olarak ayarlandıysa her zaman vardır.
 
-Çerçeve zincirlemesini ayarlamak için, *C* bit ayarlandıysa yönerge 3A veya 3B vardır. R11 ve LR dışında bir kayıt `mov` yoksa, 16 bittir; Aksi takdirde, 32 bittir. `add`
+Çerçeve zincirlemesini ayarlamak için, *C* bit ayarlandıysa yönerge 3A veya 3B vardır. R11 ve LR dışında bir kayıt yoksa, 16 bit `mov`. Aksi takdirde, 32 bitlik bir `add`.
 
 Katsız bir ayarlama belirtilirse, yönerge 5 açık yığın ayarlamadır.
 
@@ -127,15 +127,15 @@ Yönergeler 2 ve 4, bir gönderme gerekli olup olmadığına göre ayarlanır. B
 |0|0|1\.|1\.|r*S*-R3|D8-d*E*|
 |0|1\.|0|0|R4-r*N*, LR|yok|
 |0|1\.|0|1\.|r*S*-r*N*, LR|yok|
-|0|1\.|1|0|LR|D8-d*E*|
+|0|1\.|1\.|0|LR|D8-d*E*|
 |0|1\.|1\.|1\.|r*S*-R3, LR|D8-d*E*|
 |1\.|0|0|0|R4-r*N*, R11|yok|
 |1\.|0|0|1\.|r*S*-r*N*, R11|yok|
 |1\.|0|1\.|0|r11|D8-d*E*|
 |1\.|0|1\.|1\.|r*S*-R3, R11|D8-d*E*|
-|1\.|1|0|0|R4-r*N*, R11, LR|yok|
-|1\.|1|0|1\.|r*S*-r*N*, R11, LR|yok|
-|1\.|1\.|1|0|R11, LR|D8-d*E*|
+|1\.|1\.|0|0|R4-r*N*, R11, LR|yok|
+|1\.|1\.|0|1\.|r*S*-r*N*, R11, LR|yok|
+|1\.|1\.|1\.|0|R11, LR|D8-d*E*|
 |1\.|1\.|1\.|1\.|r*S*-R3, R11, LR|D8-d*E*|
 
 Kurallı işlevler için epıtes benzer bir biçimde, ancak ters ve bazı ek seçeneklerle birlikte izler. Epıg en fazla 5 yönerge uzunluğunda olabilir ve kendi formu, her zaman bir başlangıç biçimi tarafından tamamen dikte edilir.
@@ -167,7 +167,7 @@ Paketlenmiş bırakma biçimi, bir işlevin geri sarılini anlatmak için yeters
    |Word|Bits|Amaç|
    |----------|----------|-------------|
    |0|0-17|*Işlev uzunluğu* , işlevin toplam uzunluğunu bayt cinsinden belirten ve 2 ' ye bölünen 18 bitlik bir alandır. Bir işlev 512 KB 'tan büyükse, işlevi anlatmak için birden çok. pdata ve. xdata kaydı kullanılmalıdır. Ayrıntılar için bu belgenin büyük Işlevler bölümüne bakın.|
-   |0|18-19|Sunucular, kalan XData 'ın sürümünü açıklayan 2 bitlik bir alandır. Şu anda yalnızca sürüm 0 tanımlı; 1-3 değerleri ayrılmıştır.|
+   |0|18-19|Sunucular *, kalan* XData 'ın sürümünü açıklayan 2 bitlik bir alandır. Şu anda yalnızca sürüm 0 tanımlı; 1-3 değerleri ayrılmıştır.|
    |0|20|*X* , varlık (1) veya Devamsızlık (0) özel durum verilerinin olduğunu gösteren 1 bitlik bir alandır.|
    |0|21|*E* , tek bir ön uç tanımlayan bilgilerin, daha sonra ek kapsam sözcükleri gerektirmek yerine üst bilgiye (1) paketlendiğini belirten 1 bitlik bir alandır (0).|
    |0|22|*F* , bu kaydın bir işlev parçasını (1) veya tam işlevi (0) açıklar olduğunu gösteren 1 bitlik bir alandır. Bir parça, hiçbir işlem olmaması ve tüm prolog işlemenin yoksayılması anlamına gelir.|
@@ -238,25 +238,25 @@ Aşağıdaki tabloda, bırakma kodlarından opkodlara eşleme gösterilmektedir.
 
 |Bayt 1|Byte 2|Byte 3|Bayt 4|Opsize|Açıklama|
 |------------|------------|------------|------------|------------|-----------------|
-|00-7F||||16|`add   sp,sp,#X`<br /><br /> Burada X, (kod & 0x7F) \* 4|
+|00-7F||||16|`add   sp,sp,#X`<br /><br /> Burada X (kod & 0x7F) \* 4|
 |80-BF|00-FF|||32|`pop   {r0-r12, lr}`<br /><br /> Code & 0x1FFF kodunda karşılık gelen bit ayarlandıysa, & 0x2000 ve R0-R12 kodu posoında LR eksik|
 |C0-CF||||16|`mov   sp,rX`<br /><br /> Burada X kod & 0x0F|
 |D0-D7||||16|`pop   {r4-rX,lr}`<br /><br /> Burada X (kod & 0x03) + 4 ve LR, kod & 0x04 ise|
 |D8-DF||||32|`pop   {r4-rX,lr}`<br /><br /> Burada X (kod & 0x03) + 8 ve LR, kod & 0x04 ise|
 |E0-E7||||32|`vpop  {d8-dX}`<br /><br /> Burada X, (kod & 0x07) + 8|
-|E8-EB|00-FF|||32|`addw  sp,sp,#X`<br /><br /> Burada X şeklindedir (kod & 0x03ff) \* 4|
+|E8-EB|00-FF|||32|`addw  sp,sp,#X`<br /><br /> Burada X şeklindedir (kod & 0x03FF) \* 4|
 |EC-ED|00-FF|||16|`pop   {r0-r7,lr}`<br /><br /> Bu kod & 0x0100 ve R0-R7 kodu, karşılık gelen bit & kodda ayarlandıysa "0x00FF"|
 |PROFIL|00-0F|||16|Microsoft'a özgü|
 |PROFIL|10-FF|||16|Kullanılabilir|
-|AŞV|00-0F|||32|`ldr   lr,[sp],#X`<br /><br /> Burada X, (kod & 0x000f) \* 4|
+|AŞV|00-0F|||32|`ldr   lr,[sp],#X`<br /><br /> Burada X (kod & 0x000F) \* 4|
 |AŞV|10-FF|||32|Kullanılabilir|
 |F0-F4||||-|Kullanılabilir|
 |F5|00-FF|||32|`vpop  {dS-dE}`<br /><br /> burada S (kod & 0x00F0) > > 4 ve E kod & 0x000F|
 |F6|00-FF|||32|`vpop  {dS-dE}`<br /><br /> burada S ((kod & 0x00F0) > > 4) + 16 ve E 'dir (kod & 0x000F) + 16|
-|F7|00-FF|00-FF||16|`add   sp,sp,#X`<br /><br /> Burada X (kod & 0x00ffff) \* 4|
-|F8|00-FF|00-FF|00-FF|16|`add   sp,sp,#X`<br /><br /> Burada X, (kod & 0x00ffffff) \* 4|
-|F9|00-FF|00-FF||32|`add   sp,sp,#X`<br /><br /> Burada X (kod & 0x00ffff) \* 4|
-|BELIRLEDIĞINIZ|00-FF|00-FF|00-FF|32|`add   sp,sp,#X`<br /><br /> Burada X, (kod & 0x00ffffff) \* 4|
+|F7|00-FF|00-FF||16|`add   sp,sp,#X`<br /><br /> Burada X (kod & 0x00FFFF) \* 4|
+|F8|00-FF|00-FF|00-FF|16|`add   sp,sp,#X`<br /><br /> Burada X (kod & 0x00FFFFFF) \* 4|
+|F9|00-FF|00-FF||32|`add   sp,sp,#X`<br /><br /> Burada X (kod & 0x00FFFF) \* 4|
+|BELIRLEDIĞINIZ|00-FF|00-FF|00-FF|32|`add   sp,sp,#X`<br /><br /> Burada X (kod & 0x00FFFFFF) \* 4|
 |ARIAL||||16|nop (16 bit)|
 |FC||||32|nop (32-bit)|
 |FD||||16|Son + 16-bit NOP, epıg|
@@ -267,7 +267,7 @@ Bu, bir geriye doğru izleme kodu *kodundaki*her bir bayt için onaltılık değ
 
 Geriye doğru izleme kodları, kodun ilk baytlık her ikisi de kodun baytındaki toplam boyutu ve yönerge akışındaki karşılık gelen Opcode boyutunu söylerken tasarlanmıştır. İşlem veya başlangıç boyutunu hesaplamak için, sıranın başından sonuna kadar geriye doğru izleme kodları yapın ve ilgili Opcode 'ın ne kadar süreyle olduğunu anlamak için bir arama tablosu veya benzer bir yöntem kullanın.
 
-Geriye doğru izleme kodları 0xFD ve 0xFE, normal bitiş kodu 0xFF ile eşdeğerdir, ancak epıg durumunda 16 bit ya da 32 bit olan bir ek NOP işlem kodunun hesabıdır. Prologues için, 0xFD, 0xFE ve 0xFF kodları tam olarak eşdeğerdir. Bu hesap, yaygın olarak kullanılan `bx lr` ve eşdeğer bir prolog yönergesi olmayan bir veya `b <tailcall-target>`daha fazla. Bu, geri bırakma sıralarının, prolog ve epengues arasında paylaşılabilmesi olasılığını artırır.
+Geriye doğru izleme kodları 0xFD ve 0xFE, normal bitiş kodu 0xFF ile eşdeğerdir, ancak epıg durumunda 16 bit ya da 32 bit olan bir ek NOP işlem kodunun hesabıdır. Prologues için, 0xFD, 0xFE ve 0xFF kodları tam olarak eşdeğerdir. Bu hesaplar, eşdeğer bir prolog yönergesine sahip olmayan `bx lr` veya `b <tailcall-target>`ortak bir genel bakış bitleridir. Bu, geri bırakma sıralarının, prolog ve epengues arasında paylaşılabilmesi olasılığını artırır.
 
 Çoğu durumda, prolog ve tüm epenler için aynı bırakma kodları kümesini kullanmak mümkün olmalıdır. Ancak, kısmen yürütülen prologues ve epıtes 'nin geriye doğru listesini işlemek için, sıralama veya davranışta değişen birden fazla bırakma kodu sırası olması gerekebilir. Bu nedenle, her bir epıg 'nin yürütme işlemini nereden başlayabileceğiniz göstermek için geriye doğru bırakma dizisine sahip olduğu.
 
@@ -360,7 +360,7 @@ ShrinkWrappedFunction
     pop    {r4, pc}          ; C:
 ```
 
-Daraltma Sarmalanan işlevler genellikle, ek kayıt için alanın önceden ayrılması, normal bir `str` `push`prolog 'da kaydedilir ve ardından kayıt işlemini veya `stm` yerine kullanarak kaydeder. Bu, işlevin özgün prolog öğesinde tüm yığın işaretçisi işlemesini korur.
+Daraltma Sarmalanan işlevler genellikle, ek kayıt için alanın önceden ayrılması, normal bir prolog 'da kaydedilir ve ardından kayıt işlemini `push`yerine `str` veya `stm` kullanarak kaydeder. Bu, işlevin özgün prolog öğesinde tüm yığın işaretçisi işlemesini korur.
 
 Örnek küçültme Sarmalanan işlev, açıklamalarda bir, B ve C olarak işaretlenen üç bölgeye bölünmemelidir. İlk A bölgesi, diğer geçici olmayan kaydetme işlemi boyunca işlevin başlangıcını ele alır. Bir. pdata veya. xdata kaydı, bu parçayı, bir prolog ve epıtes yok olarak anlatmak için oluşturulmalıdır.
 
@@ -410,7 +410,7 @@ Tek yönergeden sonra, tek yönergeden sonra yok sayılırsa, bir Compact. pdata
 
 Bu örneklerde, görüntü tabanı 0x00400000 ' dır.
 
-### <a name="example-1-leaf-function-no-locals"></a>Örnek 1: Yaprak Işlevi, Yereller yok
+### <a name="example-1-leaf-function-no-locals"></a>Örnek 1: yaprak Işlev, Yereller yok
 
 ```asm
 Prologue:
@@ -442,9 +442,9 @@ Epilogue:
 
    - *C* = 0, çerçeve zinciri olmadığını gösterir
 
-   - Yığın ayarlama = 0, yığın ayarlaması olmadığını gösterir
+   - *Yığın ayarlama = 0* , yığın ayarlaması olmadığını gösterir
 
-### <a name="example-2-nested-function-with-local-allocation"></a>Örnek 2: Yerel ayırma ile iç içe Işlev
+### <a name="example-2-nested-function-with-local-allocation"></a>Örnek 2: yerel ayırma ile Iç Içe Işlev
 
 ```asm
 Prologue:
@@ -479,7 +479,7 @@ Epilogue:
 
    - *Stack ayarlaması* = 3 (= 0x0C/4)
 
-### <a name="example-3-nested-variadic-function"></a>Örnek 3: İç içe değişen bağımsız değişken Işlevi
+### <a name="example-3-nested-variadic-function"></a>Örnek 3: Iç Içe değişen bağımsız değişken Işlev
 
 ```asm
 Prologue:
@@ -512,9 +512,9 @@ Epilogue:
 
    - *C* = 0, çerçeve zinciri olmadığını gösterir
 
-   - Yığın ayarlama = 0, yığın ayarlaması olmadığını gösterir
+   - *Yığın ayarlama = 0* , yığın ayarlaması olmadığını gösterir
 
-### <a name="example-4-function-with-multiple-epilogues"></a>Örnek 4: Birden çok Epengues ile işlev
+### <a name="example-4-function-with-multiple-epilogues"></a>Örnek 4: birden fazla Epıle Işlevi
 
 ```asm
 Prologue:
@@ -576,7 +576,7 @@ Epilogues:
 
    - Bırakma kodu 2 = 0xFF: bitiş
 
-### <a name="example-5-function-with-dynamic-stack-and-inner-epilogue"></a>Örnek 5: Dinamik yığın ve Iç EPG ile işlev
+### <a name="example-5-function-with-dynamic-stack-and-inner-epilogue"></a>Örnek 5: dinamik yığın ve Iç Epıng ile Işlev
 
 ```asm
 Prologue:
@@ -626,7 +626,7 @@ Epilogue:
 
    - *Kod kelimeleri* = 0x01, geriye doğru izleme kodları için 1 32 bit kelime
 
-- Word 1: 0xC6 (= 0x18C/2) uzaklığında epıg kapsamı, 5. yeniden bırakma kodu dizinini 0x00 ve 0x0E (her zaman) durumuyla başlatma
+- Word 1:0xC6 (= 0x18C/2) uzaklığında Epıg kapsamı, 5. yeniden bırakma kodu dizinini 0x00 ve 0x0E (her zaman) durumuyla başlatma
 
 - Bırakma kodları, Word 2 ' den başlayarak: (prolog/epıg arasında paylaşılan)
 
@@ -638,7 +638,7 @@ Epilogue:
 
    - Bırakma kodu 3 = 0xFD: son, epıg için 16 bit yönerge olarak sayılır
 
-### <a name="example-6-function-with-exception-handler"></a>Örnek 6: Özel durum Işleyicisi olan işlev
+### <a name="example-6-function-with-exception-handler"></a>Örnek 6: özel durum Işleyicisiyle Işlev
 
 ```asm
 Prologue:
@@ -698,7 +698,7 @@ Epilogue:
 
 - 4 ve ötesi sözcükleri satır içine alınmış özel durum verileri
 
-### <a name="example-7-funclet"></a>Örnek 7: Funclet 'inde sembol
+### <a name="example-7-funclet"></a>Örnek 7: funclet
 
 ```asm
 Function:

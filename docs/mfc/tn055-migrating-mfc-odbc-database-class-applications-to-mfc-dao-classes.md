@@ -1,5 +1,5 @@
 ---
-title: 'TN055: MFC ODBC veritabanı sınıfı uygulamalarını MFC DAO sınıflarına geçirme'
+title: 'TN055: MFC ODBC Veritabanı Sınıfı Uygulamalarını MFC DAO Sınıflarına Geçirme'
 ms.date: 09/17/2019
 helpviewer_keywords:
 - DAO [MFC], migration
@@ -12,17 +12,17 @@ helpviewer_keywords:
 - porting ODBC database applications to DAO
 - migrating database applications [MFC]
 ms.assetid: 0f858bd1-e168-4e2e-bcd1-8debd82856e4
-ms.openlocfilehash: 7107964cc894a0aa45be5de362c9edd166dc0af1
-ms.sourcegitcommit: 2f96e2fda591d7b1b28842b2ea24e6297bcc3622
+ms.openlocfilehash: 744e1c71476ccfbe6ea8f8359dcdb9a29efc995e
+ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71095967"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74305375"
 ---
-# <a name="tn055-migrating-mfc-odbc-database-class-applications-to-mfc-dao-classes"></a>TN055: MFC ODBC veritabanı sınıfı uygulamalarını MFC DAO sınıflarına geçirme
+# <a name="tn055-migrating-mfc-odbc-database-class-applications-to-mfc-dao-classes"></a>TN055: MFC ODBC Veritabanı Sınıfı Uygulamalarını MFC DAO Sınıflarına Geçirme
 
 > [!NOTE]
-> DAO, Access veritabanları ile birlikte kullanılır ve Office 2013 aracılığıyla desteklenir. 3,6 son sürümdür ve artık kullanılmıyor olarak kabul edilir. Visual C++ ortamı ve sihirbazları DAO 'yu desteklemez (DAO sınıfları dahil edilir ancak yine de kullanabilirsiniz). Microsoft, yeni projeler için [OLE DB şablonlarını](../data/oledb/ole-db-templates.md) veya [ODBC 'yi ve MFC 'yi](../data/odbc/odbc-and-mfc.md) kullanmanızı önerir. Yalnızca var olan uygulamaları korumak için DAO kullanmanız gerekir.
+> DAO, Access veritabanları ile birlikte kullanılır ve Office 2013 aracılığıyla desteklenir. DAO 3,6 son sürümdür ve artık kullanılmıyor olarak kabul edilir. Visual C++ ortamı ve sihirbazları DAO 'yu desteklemez (DAO sınıfları dahil edilir ancak yine de kullanabilirsiniz). Microsoft, yeni projeler için [OLE DB şablonlarını](../data/oledb/ole-db-templates.md) veya [ODBC 'yi ve MFC 'yi](../data/odbc/odbc-and-mfc.md) kullanmanızı önerir. Yalnızca var olan uygulamaları korumak için DAO kullanmanız gerekir.
 
 ## <a name="overview"></a>Genel Bakış
 
@@ -74,12 +74,12 @@ Sınıflar arasındaki en belirgin farklılıklar büyük olasılıkla benzer s�
 ||`DFX_Currency`|
 |`RFX_Single`|`DFX_Single`|
 |`RFX_Double`|`DFX_Double`|
-|`RFX_Date`<sup>1</sup>|`DFX_Date`(`COleDateTime`-tabanlı)|
+|`RFX_Date`<sup>1</sup>|`DFX_Date` (`COleDateTime`tabanlı)|
 |`RFX_Text`|`DFX_Text`|
 |`RFX_Binary`|`DFX_Binary`|
 |`RFX_LongBinary`|`DFX_LongBinary`|
 
-<sup>1</sup> `RFX_Date` işlev`TIMESTAMP_STRUCT`ve tabanlıdır. `CTime`
+<sup>1</sup> `RFX_Date` işlevi `CTime` ve `TIMESTAMP_STRUCT`temel alır.
 
 İşlevselliğe yapılan önemli değişiklikler, uygulamanızı etkileyebilecek ve basit ad değişikliklerinin daha fazlasını gerektirenlerin aşağıda listelenmiştir.
 
@@ -87,22 +87,22 @@ Sınıflar arasındaki en belirgin farklılıklar büyük olasılıkla benzer s�
 
    ODBC sınıfları MFC ile bu seçenekleri makrolar veya numaralandırılmış türler aracılığıyla tanımlamak için gereklidir.
 
-   DAO sınıfları ile, DAO bu seçeneklerin tanımını bir başlık dosyasında (DBDAOINT) sağlar. H). Bu nedenle, kayıt kümesi türü, öğesinin `CRecordset`numaralandırılmış bir üyesidir, ancak DAO ile bunun yerine bir sabittir. Örneğin, ODBC `CRecordset` içinde türünü belirtirken, ancak türünü `CDaoRecordset`belirtirken **db_open_snapshot** **anlık görüntüsünü** kullanırsınız.
+   DAO sınıfları ile, DAO bu seçeneklerin tanımını bir başlık dosyasında (DBDAOINT) sağlar. H). Bu nedenle, kayıt kümesi türü `CRecordset`numaralandırılmış bir üyesidir, ancak DAO ile bunun yerine bir sabittir. Örneğin, ODBC 'de `CRecordset` türünü belirtirken, ancak `CDaoRecordset`türünü belirtirken **db_open_snapshot** **anlık görüntü** kullanırsınız.
 
-- İçin varsayılan kayıt kümesi türü, ' ın **Dynaset** olduğu ve için `CDaoRecordset` varsayılan kayıt kümesi türü ise **anlık görüntüdür** (ODBC sınıfı anlık görüntüleri hakkında ek bir sorun için aşağıdaki nota bakın). `CRecordset`
+- `CRecordset` için varsayılan kayıt kümesi türü, `CDaoRecordset` için varsayılan kayıt kümesi türü **Dynaset** olduğundan, **anlık görüntüdür** (ODBC sınıfı anlık görüntüleri hakkında ek bir sorun için aşağıdaki nota bakın).
 
-- ODBC `CRecordset` sınıfında yalnızca bir salt iletme kayıt kümesi türü oluşturma seçeneği vardır. `CDaoRecordset` Sınıfında, ileri salt bir kayıt kümesi türü değildir, ancak bunun yerine belirli kayıt kümeleri türlerinin bir özelliği (veya seçeneği) vardır.
+- ODBC `CRecordset` sınıfında yalnızca bir salt iletme kayıt kümesi türü oluşturma seçeneği vardır. `CDaoRecordset` sınıfında, ileri salt bir kayıt kümesi türü değildir, bunun yerine belirli kayıt kümeleri türlerinin bir özelliği (veya seçeneği) değildir.
 
-- Bir `CRecordset` nesne açılırken yalnızca bir Append kayıt kümesi, kayıt kümesi verilerinin okunmasının ve eklenebileceği anlamına gelir. Nesnesi `CDaoRecordset` ile, yalnızca APPEND seçeneği, kayıt kümesinin verilerinin yalnızca eklenebileceği (ve okunmayacağı) anlamına gelir.
+- Bir `CRecordset` nesnesini açarken yalnızca bir Append kayıt kümesi, kayıt kümesi verilerinin okunmasının ve eklenebileceği anlamına gelir. `CDaoRecordset` nesnesi ile, yalnızca APPEND seçeneği, kayıt kümesinin verilerinin yalnızca eklenebileceği (ve okunmayacağı) anlamına gelir.
 
-- ODBC sınıfları işlem üyesi işlevleri, üyeleri `CDatabase` ve veritabanı düzeyinde çalışır. DAO sınıflarında, işlem üyesi işlevleri daha yüksek düzey bir sınıfın (`CDaoWorkspace`) üyeleridir ve bu nedenle aynı çalışma alanını (işlem alanı) paylaşan birden çok `CDaoDatabase` nesneyi etkileyebilir.
+- ODBC sınıfları işlem üyesi işlevleri `CDatabase` üyeleridir ve veritabanı düzeyinde çalışır. DAO sınıflarında, işlem üyesi işlevleri daha yüksek düzey bir sınıfın (`CDaoWorkspace`) üyeleridir ve bu nedenle aynı çalışma alanını (işlem alanı) paylaşan birden çok `CDaoDatabase` nesnesini etkileyebilir.
 
-- Özel durum sınıfı değiştirildi. `CDBExceptions`ODBC sınıflarında ve `CDaoExceptions` DAO sınıflarında oluşturulur.
+- Özel durum sınıfı değiştirildi. `CDBExceptions` ODBC sınıflarında oluşturulur ve DAO sınıflarında `CDaoExceptions`.
 
-- `RFX_Date`kullanırken `CTime` venesnelerini`TIMESTAMP_STRUCT` kullanır .`COleDateTime` `DFX_Date` , İle neredeyse aynıdır, ancak 4 baytlık bir time_t yerine 8 baytlık bir OLE tarihini temel alır, böylece daha büyük bir veri aralığı olabilir. `COleDateTime` `CTime`
+- `RFX_Date`, `DFX_Date` `COleDateTime`kullandığından `CTime` ve `TIMESTAMP_STRUCT` nesnelerini kullanır. `COleDateTime`, `CTime`neredeyse aynıdır, ancak 4 baytlık **time_t** yerine 8 BAYTLıK bir OLE **tarihini** temel alır, böylece çok daha büyük bir veri aralığı olabilir.
 
    > [!NOTE]
-   > DAO (`CDaoRecordset`) anlık görüntüleri salt okunurdur, ODBC (`CRecordset`) anlık görüntüleri ise ODBC imleç kitaplığının sürücüsüne ve kullanımına bağlı olarak güncelleştirilebilir. İmleç kitaplığını kullanıyorsanız, `CRecordset` anlık görüntüler güncelleştirilebilir. ODBC imleç kitaplığı olmadan masaüstü sürücü paketi 3,0 ' den Microsoft sürücülerinden herhangi birini kullanıyorsanız, `CRecordset` anlık görüntüler salt okunurdur. Başka bir sürücü kullanıyorsanız, anlık görüntülerin (`STATIC_CURSORS`) salt okunurdur olup olmadığını görmek için sürücünün belgelerini denetleyin.
+   > DAO (`CDaoRecordset`) anlık görüntüleri salt okunurdur ve ODBC (`CRecordset`) anlık görüntüleri, ODBC imleç kitaplığının sürücüsüne ve kullanımına bağlı olarak güncelleştirilebilir. İmleç kitaplığını kullanıyorsanız, `CRecordset` anlık görüntüleri güncelleştirilebilir. ODBC imleç kitaplığı olmadan masaüstü sürücü paketi 3,0 ' den Microsoft sürücülerinden herhangi birini kullanıyorsanız, `CRecordset` anlık görüntüleri salt okunurdur. Başka bir sürücü kullanıyorsanız, anlık görüntülerin (`STATIC_CURSORS`) salt okunurdur olup olmadığını görmek için sürücünün belgelerini denetleyin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

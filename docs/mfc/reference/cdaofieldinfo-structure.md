@@ -7,16 +7,16 @@ helpviewer_keywords:
 - DAO (Data Access Objects), Fields collection
 - CDaoFieldInfo structure [MFC]
 ms.assetid: 91b13e3f-bdb8-440c-86fc-ba4181ea0182
-ms.openlocfilehash: e98f5ba69f6702dd768cfe6605f993064e1b896c
-ms.sourcegitcommit: 2f96e2fda591d7b1b28842b2ea24e6297bcc3622
+ms.openlocfilehash: e2638ac908e4e286530301bc913173e87008df47
+ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71096108"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74303696"
 ---
 # <a name="cdaofieldinfo-structure"></a>CDaoFieldInfo Yapısı
 
-Yapı `CDaoFieldInfo` , veri erişim nesneleri (DAO) için tanımlanan bir alan nesnesi hakkında bilgiler içerir.
+`CDaoFieldInfo` yapısı, veri erişim nesneleri (DAO) için tanımlanan alan nesnesi hakkında bilgi içerir.
 
 DAO, Office 2013 aracılığıyla desteklenir. DAO 3,6 son sürümdür ve artık kullanılmıyor olarak kabul edilir.
 
@@ -50,29 +50,29 @@ Alan nesnesini benzersiz olarak adlandırır. Ayrıntılar için, DAO yardımı 
 *m_nType*<br/>
 Alanın veri türünü gösteren bir değer. Ayrıntılar için, DAO yardımı 'nda "tür özelliği" konusuna bakın. Bu özelliğin değeri aşağıdakilerden biri olabilir:
 
-- `dbBoolean`Evet/Hayır, doğru/yanlış ile aynı
+- Evet/Hayır, doğru/yanlış ile aynı `dbBoolean`
 
-- `dbByte`Bayt
+- `dbByte` bayt
 
-- `dbInteger`Kısadır
+- `dbInteger` kısa
 
-- `dbLong`Kalacağını
+- `dbLong` Long
 
-- `dbCurrency`Birimindeki bkz. MFC sınıfı [Colet para birimi](../../mfc/reference/colecurrency-class.md)
+- `dbCurrency` para birimi; bkz. MFC sınıfı [Colet para birimi](../../mfc/reference/colecurrency-class.md)
 
-- `dbSingle`Sunuculu
+- Tek `dbSingle`
 
-- `dbDouble`Çift
+- `dbDouble` Double
 
-- `dbDate`Tarih/saat; bkz. MFC sınıfı [Cotatarihsaat](../../atl-mfc-shared/reference/coledatetime-class.md)
+- `dbDate` tarih/saat; bkz. MFC sınıfı [Cotatarihsaat](../../atl-mfc-shared/reference/coledatetime-class.md)
 
-- `dbText`Metinleri bkz. MFC sınıfı [CString](../../atl-mfc-shared/reference/cstringt-class.md)
+- `dbText` metin; bkz. MFC sınıfı [CString](../../atl-mfc-shared/reference/cstringt-class.md)
 
-- `dbLongBinary`Long Binary (OLE nesnesi); sınıf`CLongBinary` yerine, daha zengin ve kullanımı daha kolay olan mfc sınıfının CByteArray sınıfını kullanmak isteyebilirsiniz. [](../../mfc/reference/cbytearray-class.md) `CByteArray`
+- `dbLongBinary` Long Binary (OLE nesnesi); `CByteArray` daha zengin ve kullanımı daha kolay olduğundan `CLongBinary` sınıf yerine bir MFC sınıfı [CByteArray](../../mfc/reference/cbytearray-class.md) kullanmak isteyebilirsiniz.
 
-- `dbMemo`Faturasındaki bkz. MFC sınıfı`CString`
+- `dbMemo` faturası; bkz. MFC sınıfı `CString`
 
-- `dbGUID`Uzak yordam çağrılarında kullanılan, genel olarak benzersiz tanımlayıcı/evrensel benzersiz tanımlayıcı. Daha fazla bilgi için, DAO yardımı 'nda "tür özelliği" konusuna bakın.
+- uzak yordam çağrılarında kullanılan genel benzersiz tanımlayıcı/evrensel benzersiz tanımlayıcı `dbGUID`. Daha fazla bilgi için, DAO yardımı 'nda "tür özelliği" konusuna bakın.
 
 > [!NOTE]
 >  İkili veriler için dize veri türleri kullanmayın. Bu, verilerinizin Unicode/ANSI çeviri katmanından geçmesine neden olur ve bu da daha fazla ek yük ve muhtemelen beklenmeyen çeviri sağlar.
@@ -80,35 +80,35 @@ Alanın veri türünü gösteren bir değer. Ayrıntılar için, DAO yardımı '
 *m_lSize*<br/>
 Metin veya sayısal değerler içeren bir alan nesnesinin sabit boyutunu veya metin içeren bir DAO alanı nesnesinin en büyük boyutunu bayt cinsinden belirten bir değer. Ayrıntılar için, DAO yardımı 'nda "boyut özelliği" konusuna bakın. Boyutlar aşağıdaki değerlerden biri olabilir:
 
-|Tür|Boyut (bayt)|Açıklama|
+|Type|Boyut (bayt)|Açıklama|
 |----------|--------------------|-----------------|
 |`dbBoolean`|1 bayt|Evet/Hayır (true/false ile aynı)|
 |`dbByte`|1\.|Bayt|
-|`dbInteger`|2|Integer|
+|`dbInteger`|2|Tamsayı|
 |`dbLong`|4|Uzun|
 |`dbCurrency`|8|Para birimi ([Copapara birimi](../../mfc/reference/colecurrency-class.md))|
 |`dbSingle`|4|Tek|
 |`dbDouble`|8|Çift|
 |`dbDate`|8|Tarih/saat ([Copadatetime](../../atl-mfc-shared/reference/coledatetime-class.md))|
 |`dbText`|1 - 255|Metin ([CString](../../atl-mfc-shared/reference/cstringt-class.md))|
-|`dbLongBinary`|0|Long Binary (OLE nesnesi; [CByteArray](../../mfc/reference/cbytearray-class.md); yerine `CLongBinary`kullanın)|
+|`dbLongBinary`|0|Long Binary (OLE nesnesi; [CByteArray](../../mfc/reference/cbytearray-class.md); `CLongBinary`yerine kullanın)|
 |`dbMemo`|0|Memo ([CString](../../atl-mfc-shared/reference/cstringt-class.md))|
 |`dbGUID`|16|Uzak yordam çağrılarında kullanılan, genel olarak benzersiz tanımlayıcı/evrensel benzersiz tanımlayıcı.|
 
 *m_lAttributes*<br/>
 Bir TableDef, Recordset, QueryDef veya Index nesnesi tarafından içerilen bir Field nesnesinin karakteristiklerini belirtir. Döndürülen değer, C++ BIT düzeyinde OR ( **&#124;** ) işleciyle oluşturulan bu sabitlerin toplamı olabilir:
 
-- `dbFixedField`Alan boyutu sabittir (sayısal alanlar için varsayılan).
+- `dbFixedField` alan boyutu sabittir (sayısal alanlar için varsayılan).
 
-- `dbVariableField`Alan boyutu değişken (yalnızca metin alanları).
+- alan boyutu değişken (yalnızca metin alanları) `dbVariableField`.
 
-- `dbAutoIncrField`Yeni kayıtlar için alan değeri, değiştirilemeyen benzersiz bir uzun tamsayıya otomatik olarak artırılır. Yalnızca Microsoft Jet veritabanı tabloları için desteklenir.
+- Yeni kayıtlar için alan değeri `dbAutoIncrField`, değiştirilemeyen benzersiz bir uzun tamsayıya otomatik olarak artırılır. Yalnızca Microsoft Jet veritabanı tabloları için desteklenir.
 
-- `dbUpdatableField`Alan değeri değiştirilebilir.
+- `dbUpdatableField` alan değeri değiştirilebilir.
 
-- `dbDescending`Alan, azalan (Z-A veya 100-0) düzende sıralanır (yalnızca bir Index nesnesinin Fields koleksiyonundaki Field nesnesi için geçerlidir; MFC 'de, dizin nesnelerinin kendisi TableDef nesnelerinde bulunur). Bu sabiti atlarsanız, alan artan (A-Z veya 0-100) bir düzende sıralanır (varsayılan).
+- `dbDescending` alan azalan (Z-A veya 100-0) düzende sıralanır (yalnızca bir dizin nesnesinin Fields koleksiyonundaki Field nesnesi için geçerlidir; MFC 'de, dizin nesnelerinin kendisi TableDef nesnelerinde bulunur). Bu sabiti atlarsanız, alan artan (A-Z veya 0-100) bir düzende sıralanır (varsayılan).
 
-Bu özelliğin ayarını denetlerken, belirli bir özniteliği sınamak için C++ bit düzeyinde and işlecini ( **&** ) kullanabilirsiniz. Birden çok öznitelik ayarlarken, bit düzeyinde OR ( **&#124;** ) işleciyle uygun sabitleri birleştirerek bunları birleştirebilirsiniz. Ayrıntılar için, DAO yardımı 'nda "öznitelikler özelliği" konusuna bakın.
+Bu özelliğin ayarını denetlerken, belirli bir özniteliği sınamak için C++ BIT düzeyinde and işlecini ( **&** ) kullanabilirsiniz. Birden çok öznitelik ayarlarken, bit düzeyinde OR ( **&#124;** ) işleciyle uygun sabitleri birleştirerek bunları birleştirebilirsiniz. Ayrıntılar için, DAO yardımı 'nda "öznitelikler özelliği" konusuna bakın.
 
 *m_nOrdinalPosition*<br/>
 Bir DAO alan nesnesi tarafından temsil edilen bir alanın diğer alanlara göre görüntülenmesini istediğiniz sayısal sırayı belirten bir değer. Bu özelliği, [CDaoTableDef:: CreateField](../../mfc/reference/cdaotabledef-class.md#createfield)ile ayarlayabilirsiniz. Ayrıntılar için, DAO yardımı 'nda "OrdinalPosition özelliği" konusuna bakın.
@@ -134,7 +134,7 @@ Bir TableDef, Recordset veya QueryDef nesnesi tarafından içerilen bir DAO alan
 *m_strValidationRule*<br/>
 Değiştirilen veya tabloya eklenen bir alandaki verileri doğrulayan bir değer. Ayrıntılar için, DAO yardımı 'nda "ValidationRule özelliği" konusuna bakın. Bu özelliği, [CDaoTableDef:: CreateField](../../mfc/reference/cdaotabledef-class.md#createfield)ile bir TableDef için ayarlayabilirsiniz.
 
-TableDefs hakkında ilgili bilgi için, `m_strValidationRule` [cdaotabledefinınfo](../../mfc/reference/cdaotabledefinfo-structure.md) yapısının üyesine bakın.
+TableDefs hakkında ilgili bilgi için, [Cdaotabledefinınfo](../../mfc/reference/cdaotabledefinfo-structure.md) yapısının `m_strValidationRule` üyesine bakın.
 
 *m_strValidationText*<br/>
 Bir DAO alan nesnesinin değeri ValidationRule özelliği ayarı tarafından belirtilen doğrulama kuralına uygun değilse uygulamanızın görüntüleyeceği iletinin metnini belirten bir değer. Ayrıntılar için, DAO yardımı 'nda "ValidationText özelliği" konusuna bakın. Bu özelliği, [CDaoTableDef:: CreateField](../../mfc/reference/cdaotabledef-class.md#createfield)ile bir TableDef için ayarlayabilirsiniz.
@@ -144,13 +144,13 @@ Bir DAO alan nesnesinin varsayılan değeri. Yeni bir kayıt oluşturulduğunda,
 
 ## <a name="remarks"></a>Açıklamalar
 
-Birincil, ikincil ve tüm sürümler başvuruları, bilgilerin [CDaoTableDef](../../mfc/reference/cdaotabledef-class.md#getfieldinfo), [CDaoQueryDef](../../mfc/reference/cdaoquerydef-class.md#getfieldinfo)ve [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md#getfieldinfo)sınıflarında `GetFieldInfo` üye işlevi tarafından nasıl döndürüleceğini gösterir.
+Birincil, Ikincil ve tüm sürümler başvuruları, bilgilerin [CDaoTableDef](../../mfc/reference/cdaotabledef-class.md#getfieldinfo), [CDaoQueryDef](../../mfc/reference/cdaoquerydef-class.md#getfieldinfo)ve [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md#getfieldinfo)sınıflarında `GetFieldInfo` üye işlevi tarafından nasıl döndürüleceğini gösterir.
 
-Alan nesneleri bir MFC sınıfıyla temsil edilmez. Bunun yerine, aşağıdaki sınıfların MFC nesnelerini temeldeki DAO nesneleri alan nesnelerinin koleksiyonlarını içerir: [CDaoTableDef](../../mfc/reference/cdaotabledef-class.md), [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md)ve [CDaoQueryDef](../../mfc/reference/cdaoquerydef-class.md). Bu sınıflar, alan bilgilerinin bazı ayrı öğelerine erişmek için üye işlevleri sağlar veya kapsayan nesnenin `CDaoFieldInfo` `GetFieldInfo` üye işlevini çağırarak bir nesne ile tümüne tek seferde erişebilirsiniz.
+Alan nesneleri bir MFC sınıfıyla temsil edilmez. Bunun yerine, aşağıdaki sınıfların MFC nesnelerini temeldeki DAO nesneleri alan nesnelerinin koleksiyonlarını içerir: [CDaoTableDef](../../mfc/reference/cdaotabledef-class.md), [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md)ve [CDaoQueryDef](../../mfc/reference/cdaoquerydef-class.md). Bu sınıflar, alan bilgilerinin bazı ayrı öğelerine erişmek için üye işlevleri sağlar veya kapsayan nesnenin `GetFieldInfo` üye işlevini çağırarak bir `CDaoFieldInfo` nesnesi ile tümüne tek seferde erişebilirsiniz.
 
-Nesne özelliklerini incelemek için kullanmanın yanı sıra, bir TableDef içinde yeni `CDaoFieldInfo` alanlar oluşturmak için bir giriş parametresi oluşturmak için de kullanabilirsiniz. Bu görevde daha basit seçenekler bulunur, ancak daha hassas bir denetim istiyorsanız, bir `CDaoFieldInfo` parametre alan [CDaoTableDef:: CreateField](../../mfc/reference/cdaotabledef-class.md#createfield) sürümünü kullanabilirsiniz.
+Nesne özelliklerini incelemek için kullanmanın yanı sıra, bir TableDef içinde yeni alanlar oluşturmak için bir giriş parametresi oluşturmak üzere `CDaoFieldInfo` de kullanabilirsiniz. Bu görevde daha basit seçenekler bulunur, ancak daha hassas bir denetim istiyorsanız, bir `CDaoFieldInfo` parametresi alan [CDaoTableDef:: CreateField](../../mfc/reference/cdaotabledef-class.md#createfield) sürümünü kullanabilirsiniz.
 
-`GetFieldInfo` Üye işlevi tarafından alınan bilgiler (alanı içeren sınıf) bir `CDaoFieldInfo` yapıda depolanır. Fields koleksiyonundaki Field nesnesinin depolandığı kapsayan nesnenin üyeişleviniçağırın.`GetFieldInfo` `CDaoFieldInfo`Ayrıca, hata `Dump` ayıklama yapılarında bir üye işlevi tanımlar. `Dump` Bir`CDaoFieldInfo` nesnenin içeriğini dökmek için kullanabilirsiniz.
+`GetFieldInfo` üye işlevi tarafından alınan bilgiler (alanı içeren sınıfın) `CDaoFieldInfo` yapısında depolanır. Fields koleksiyonundaki Field nesnesinin depolandığı kapsayan nesnenin `GetFieldInfo` üye işlevini çağırın. `CDaoFieldInfo` Ayrıca hata ayıklama yapılarında bir `Dump` member işlevi tanımlar. Bir `CDaoFieldInfo` nesnesinin içeriğini dökmek için `Dump` kullanabilirsiniz.
 
 ## <a name="requirements"></a>Gereksinimler
 

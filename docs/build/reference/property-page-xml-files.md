@@ -4,16 +4,16 @@ ms.date: 05/06/2019
 helpviewer_keywords:
 - property page XML files
 ms.assetid: dd9d9734-4387-4098-8ba6-85b93507731d
-ms.openlocfilehash: 76378dc5ef9d7443045c329579cfa3c410dc262f
-ms.sourcegitcommit: 9d4ffb8e6e0d70520a1e1a77805785878d445b8a
+ms.openlocfilehash: da9fa72419dc6971e90124b061da48493d7ca017
+ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69630749"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74303161"
 ---
 # <a name="property-page-xml-rule-files"></a>Özellik sayfası XML kuralı dosyaları
 
-IDE 'deki proje özelliği sayfaları, VCTargets klasöründeki XML dosyaları tarafından yapılandırılır. Tam yol, Visual Studio 'nun hangi sürümüne ve ürün diline bağlı olarak değişir. Visual Studio 2019 Enterprise Edition için, Ingilizce 'de yol olur `%ProgramFiles%\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\VC\VCTargets\1033`. XML dosyaları kuralların adlarını, kategorileri ve bireysel özelliklerini, veri türlerini, varsayılan değerlerini ve bunların nasıl görüntüleneceğini açıklamaktadır. IDE 'de bir özelliği ayarladığınızda, yeni değer proje dosyasında depolanır.
+IDE 'deki proje özelliği sayfaları, VCTargets klasöründeki XML dosyaları tarafından yapılandırılır. Tam yol, Visual Studio 'nun hangi sürümüne ve ürün diline bağlı olarak değişir. Visual Studio 2019 Enterprise Edition için, Ingilizce 'de yol `%ProgramFiles%\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\VC\VCTargets\1033`. XML dosyaları kuralların adlarını, kategorileri ve bireysel özelliklerini, veri türlerini, varsayılan değerlerini ve bunların nasıl görüntüleneceğini açıklamaktadır. IDE 'de bir özelliği ayarladığınızda, yeni değer proje dosyasında depolanır.
 
 Bu dosyaların iç işleyişini anlamanız gereken tek senaryolar ve Visual Studio IDE, (a) özel bir özellik sayfası oluşturmak istediğiniz veya (b), Visual Studio IDE 'den farklı bazı yollarla proje özelliklerinizi özelleştirmek istiyorsunuz.
 
@@ -73,7 +73,7 @@ Tüm verilerin CL. xml ' yi Strip, aşağıdaki iskelet ile sona erdirmek için 
 
 Aşağıdaki bölümde, her önemli öğe ve bunlara iliştirilebilecek bazı meta veriler açıklanmaktadır.
 
-1. **Kurallar**  Kural genellikle XML dosyasındaki kök düğümdür; birçok özniteliğe sahip olabilir:
+1. **Kural:**  Kural genellikle XML dosyasındaki kök düğümdür; birçok özniteliğe sahip olabilir:
 
     ```xml
     <Rule Name="CL" PageTemplate="tool" SwitchPrefix="/" Order="10"
@@ -85,34 +85,34 @@ Aşağıdaki bölümde, her önemli öğe ve bunlara iliştirilebilecek bazı me
       </Rule.DisplayName>
     ```
 
-   a. **Ada** Name özniteliği kural için bir kimliğidir. Projenin tüm özellik sayfası XML dosyaları arasında benzersiz olması gerekir.
+   a. **Ad:** Name özniteliği kural için bir kimliğidir. Projenin tüm özellik sayfası XML dosyaları arasında benzersiz olması gerekir.
 
    b. **PageTemplate:** Bu özniteliğin değeri kullanıcı ARABIRIMI tarafından Kullanıcı arabirimi şablonları koleksiyonundan seçim yapmak için kullanılır. "Araç" şablonu, özellikleri standart kılavuz biçiminde işler. Bu öznitelik için diğer yerleşik değerler "Debugger" ve "Generic" dir. Bu değerleri belirtmekten kaynaklanan Kullanıcı arabirimi biçimini görmek için sırasıyla hata ayıklama düğümüne ve genel düğümüne bakın. "Hata ayıklayıcı" sayfa şablonu için Kullanıcı arabirimi, farklı hata ayıklayıcıların özellikleri arasında geçiş yapmak için bir açılır kutu kullanır, ancak "genel" şablon farklı özellik kategorilerini bir sayfada birden çok kategori alt düğümüne sahip olmanın aksine tek bir sayfada görüntüler düğümüne. Bu öznitelik yalnızca Kullanıcı arabirimine yönelik bir öneridir; XML dosyası, Kullanıcı arabirimine bağımsız olacak şekilde tasarlanmıştır. Farklı bir kullanıcı arabirimi bu özniteliği farklı amaçlar için kullanabilir.
 
    c. **Anahtar öneki:** Bu, anahtarlar için komut satırında kullanılan önekidir. "/" Değeri/ZI,/nologo,/W3 vb. gibi görünen anahtarlara neden olur.
 
-   d. **Siparişi** Bu, sistemdeki diğer kurallara kıyasla bu kuralın göreli konumundaki olası bir kullanıcı arabirimi istemcisine yönelik bir öneridir.
+   d. **Sıra:** Bu, sistemdeki diğer kurallara kıyasla bu kuralın göreli konumundaki olası bir kullanıcı arabirimi istemcisine yönelik bir öneridir.
 
-   e. **özniteliði** Bu, standart bir XAML öğesidir. Listelenen üç ad alanını görebilirsiniz. Bunlar, sırasıyla XAML seri kaldırma sınıfları, XAML şeması ve sistem ad alanları için ad alanlarına karşılık gelir.
+   e. **xmlns:** Bu, standart bir XAML öğesidir. Listelenen üç ad alanını görebilirsiniz. Bunlar, sırasıyla XAML seri kaldırma sınıfları, XAML şeması ve sistem ad alanları için ad alanlarına karşılık gelir.
 
-   f. **DisplayName** Bu, kural düğümü için özellik sayfası kullanıcı arabiriminde gösterilen addır. Bu değer yerelleştirilmiştir. DisplayName, iç yerelleştirme aracı gereksinimleri nedeniyle bir öznitelik (ad veya SwitchPrefix gibi) yerine kuralın alt öğesi olarak oluşturulmuştur. XAML perspektifinden, her ikisi de eşdeğerdir. Bu nedenle, yalnızca dağınıklığı azaltmak veya olduğu gibi bırakmak için bir özniteliği yapabilirsiniz.
+   f. **DisplayName:** Bu, kural düğümü için özellik sayfası kullanıcı arabiriminde gösterilen addır. Bu değer yerelleştirilmiştir. DisplayName, iç yerelleştirme aracı gereksinimleri nedeniyle bir öznitelik (ad veya SwitchPrefix gibi) yerine kuralın alt öğesi olarak oluşturulmuştur. XAML perspektifinden, her ikisi de eşdeğerdir. Bu nedenle, yalnızca dağınıklığı azaltmak veya olduğu gibi bırakmak için bir özniteliği yapabilirsiniz.
 
-   g. **DataSource** Bu çok önemli bir özelliktir ve bu, proje sistemine özellik değerinin hangi konuma okunduğunu ve yazıldığını ve gruplandırılmasının (aşağıda açıklanmıştır) olduğunu söyler. CL. xml için bu değerler şunlardır:
+   g. **Veri kaynağı:** Bu çok önemli bir özelliktir ve bu, proje sistemine özellik değerinin hangi konuma okunduğunu ve yazıldığını ve gruplandırılmasının (aşağıda açıklanmıştır) olduğunu söyler. CL. xml için bu değerler şunlardır:
 
       ```xml
       <DataSource Persistence="ProjectFile" ItemType="ClCompile" Label="" HasConfigurationCondition="true" />
       ```
 
-   - `Persistence="ProjectFile`Proje sistemine kural için tüm özelliklerin proje dosyasına veya özellik sayfası dosyasına (özellik sayfalarını oluşturma için kullanılan düğüme bağlı olarak) yazılmasını söyler. Diğer olası değer,. User dosyasına değeri yazacak olan "UserFile" değeridir.
+   - `Persistence="ProjectFile`, proje sistemine kural için tüm özelliklerin proje dosyasına veya özellik sayfası dosyasına (özellik sayfalarını oluşturma için kullanılan düğüme bağlı olarak) yazılmasını söyler. Diğer olası değer,. User dosyasına değeri yazacak olan "UserFile" değeridir.
 
-   - `ItemType="ClCompile"`özelliklerin, bu öğe türünün ItemDefinition meta verileri veya öğe meta verileri (yalnızca Çözüm Gezgini 'nde bir dosya düğümünden üretildiğinde) olarak depolandığını belirtir. Bu alan ayarlanmamışsa, özellik bir PropertyGroup içinde ortak bir özellik olarak yazılır.
+   - `ItemType="ClCompile"`, bu öğe türünün, özelliklerinin ItemDefinition meta verileri veya öğe meta verileri olarak (yalnızca Çözüm Gezgini 'nde bir dosya düğümünden üretildiğinde) depolandığını belirtir. Bu alan ayarlanmamışsa, özellik bir PropertyGroup içinde ortak bir özellik olarak yazılır.
 
-   - `Label=""`Özellikler meta veri olarak `ItemDefinition` yazıldığında, ana ItemDefinitionGroup 'un etiketinin boş olacağını gösterir (her MSBuild öğesinin bir etiketi olabilir). Visual Studio 2017 ve üzeri,. vcxproj proje dosyasında gezinmek için etiketlenmiş grupları kullanır. Kural özelliklerinin çoğunu içeren grupların etiket olarak boş bir dize olduğunu unutmayın.
+   - `Label=""`, Özellikler `ItemDefinition` meta veriler olarak yazıldığında, ana ItemDefinitionGroup 'un etiketinin boş olacağını gösterir (her MSBuild öğesinin bir etiketi olabilir). Visual Studio 2017 ve üzeri,. vcxproj proje dosyasında gezinmek için etiketlenmiş grupları kullanır. Kural özelliklerinin çoğunu içeren grupların etiket olarak boş bir dize olduğunu unutmayın.
 
-   - `HasConfigurationCondition="true"`proje sisteminin, yalnızca geçerli proje yapılandırması için etkili olması için bir yapılandırma koşulunu değere yapıştırmasını söyler (koşul, üst gruba veya değerin kendisine yapıştırılmış olabilir). Örneğin, proje düğümündeki özellik sayfalarını açın ve özellik değerini, **yapılandırma özellikleri > CC++ /genel** ' i "Evet" olarak ayarlayın. Aşağıdaki değer proje dosyasına yazılır. Yapılandırma koşulunun ana ItemDefinitionGroup grubuna iliştirildiğine dikkat edin.
+   - `HasConfigurationCondition="true"`, proje sisteminin, yalnızca geçerli proje yapılandırması için etkili olması için bir yapılandırma koşulunu değere yapıştırmasını söyler (koşul, üst gruba veya değerin kendisine yapıştırılmış olabilir). Örneğin, proje düğümündeki özellik sayfalarını açın ve özellik değerini, **yapılandırma özellikleri > C/C++ genel** ' i "Evet **" olarak ayarlayın** . Aşağıdaki değer proje dosyasına yazılır. Yapılandırma koşulunun ana ItemDefinitionGroup grubuna iliştirildiğine dikkat edin.
 
       ```xml
-      <ItemDefinitionGroup Condition="‘$(Configuration)|$(Platform)’==’Debug|Win32’">
+      <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
         <ClCompile>
           <TreatWarningAsError>true</TreatWarningAsError>
         </ClCompile>
@@ -124,7 +124,7 @@ Aşağıdaki bölümde, her önemli öğe ve bunlara iliştirilebilecek bazı me
       ```xml
       <ItemGroup>
         <ClCompile Include="stdafx.cpp">
-          <TreatWarningAsError Condition="‘$(Configuration)|$(Platform)’==’Debug|Win32’">true</TreatWarningAsError>
+          <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</TreatWarningAsError>
         </ClCompile>
       </ItemGroup>
       ```
@@ -133,11 +133,11 @@ Aşağıdaki bölümde, her önemli öğe ve bunlara iliştirilebilecek bazı me
 
    Tek bir özellik, üst kuralının veri kaynağını geçersiz kılabilir. Bu durumda, bu özelliğin değerinin konumu kuraldaki diğer özelliklerden farklı olacaktır.
 
-   h. Burada görünmeyen Description ve Supportsfilebatch dahil olmak üzere bir kuralın diğer öznitelikleri vardır. Bir kurala veya diğer herhangi bir öğeye uygulanabilen özniteliklerin tam kümesi, bu türler için belgelere göz atarak elde edilebilir. Alternatif olarak, `Microsoft.Build.Framework.XamlTypes` `Microsoft.Build.Framework .dll` derlemede bulunan ad alanındaki türler üzerinde ortak özellikleri inceleyebilirsiniz.
+   h. Burada görünmeyen Description ve Supportsfilebatch dahil olmak üzere bir kuralın diğer öznitelikleri vardır. Bir kurala veya diğer herhangi bir öğeye uygulanabilen özniteliklerin tam kümesi, bu türler için belgelere göz atarak elde edilebilir. Alternatif olarak, `Microsoft.Build.Framework .dll` derlemesindeki `Microsoft.Build.Framework.XamlTypes` ad alanındaki türler üzerinde genel özellikleri inceleyebilirsiniz.
 
    i. **DisplayName**, **PageTemplate**ve **Order** , bu durumda UI ile bağımsız veri modelinde bulunan UI ile ilgili özelliklerdir. Bu özellikler, özellik sayfalarını göstermek için kullanılan herhangi bir kullanıcı arabirimi tarafından kullanılmak üzere neredeyse belli olur. **DisplayName** ve **Description** , XML dosyasındaki neredeyse tüm öğelerde bulunan iki özelliklerdir. Bunlar, yerelleştirilmiş olan tek iki özelliklerdir (Bu dizelerin yerelleştirilmesi sonraki bir göndermede açıklanacaktır).
 
-1. **Alan** Bir kuralda birden fazla kategori olabilir. Kategorilerin XML dosyasında listelenme sırası, kategorilerin aynı sırada görüntülenmesi için Kullanıcı arabirimine yönelik bir öneridir. Örneğin, UI – genel, Iyileştirme, Önişlemci,..C++ . içinde görüldüğü gibi, C/düğümü altındaki kategorilerin sırası.  –, CL. xml ' deki ile aynıdır. Örnek kategori şöyle görünür:
+1. **Kategori:** Bir kuralda birden fazla kategori olabilir. Kategorilerin XML dosyasında listelenme sırası, kategorilerin aynı sırada görüntülenmesi için Kullanıcı arabirimine yönelik bir öneridir. Örneğin, UI – genel, Iyileştirme, Önişlemci,..C++ . içinde görüldüğü gibi, C/düğümü altındaki kategorilerin sırası.  –, CL. xml ' deki ile aynıdır. Örnek kategori şöyle görünür:
 
     ```xml
     <Category Name="Optimization">
@@ -149,7 +149,7 @@ Aşağıdaki bölümde, her önemli öğe ve bunlara iliştirilebilecek bazı me
 
    Yukarıdaki kod parçacığı, daha önce açıklanan **adı** ve **DisplayName** özniteliklerini gösterir. Bir kez daha, bir **kategorinin** yukarıda kullanılmamış olması için başka öznitelikler de vardır. Belgeleri okuyarak veya ıldadsm. exe ' yi kullanarak derlemeleri inceleyerek, bu bilgileri bilirsiniz.
 
-1. **Özelliklerinin** Bu, XML dosyasının et ve bu kuraldaki tüm özelliklerin listesini içerir. Her özellik, Yukarıdaki XAML iskelet 'de gösterilen beş olası türden biri olabilir. Kuşkusuz, dosyanızda bu türlerden yalnızca birkaçı olabilir. Bir özellik, zengin olarak açıklanacak bir dizi özniteliğe sahiptir. Burada yalnızca **StringProperty** ' I açıklayacağım. Rest çok benzerdir.
+1. **Özellikler:** Bu, XML dosyasının et ve bu kuraldaki tüm özelliklerin listesini içerir. Her özellik, Yukarıdaki XAML iskelet 'de gösterilen beş olası türden biri olabilir. Kuşkusuz, dosyanızda bu türlerden yalnızca birkaçı olabilir. Bir özellik, zengin olarak açıklanacak bir dizi özniteliğe sahiptir. Burada yalnızca **StringProperty** ' I açıklayacağım. Rest çok benzerdir.
 
     ```xml
     <StringProperty Subtype="file" Name="ObjectFileName" Category="Output Files" Switch="Fo">
@@ -166,14 +166,14 @@ Aşağıdaki bölümde, her önemli öğe ve bunlara iliştirilebilecek bazı me
 
    a. **Subtype** yalnızca **StringProperty** ve **StringListProperty**için kullanılabilen bir özniteliktir; bağlamsal bilgiler verir. Örneğin, "File" değeri, özelliğin bir dosya yolunu temsil ettiğini belirtir. Bu tür bağlamsal bilgiler, kullanıcının dosyayı görsel olarak seçmesini sağlayan, özelliğin Düzenleyicisi olarak bir Windows Gezgini sağlayarak düzenleme deneyimini geliştirmek için kullanılır.
 
-   b. **Alan** Bu, bu özelliğin hangi kategoriye düştüğünü bildirir. Bu özelliği kullanıcı arabirimindeki **çıkış dosyaları** kategorisi altında bulmayı deneyin.
+   b. **Kategori:** Bu, bu özelliğin hangi kategoriye düştüğünü bildirir. Bu özelliği kullanıcı arabirimindeki **çıkış dosyaları** kategorisi altında bulmayı deneyin.
 
-   c. **Değiştirebilirsiniz** Bir kural, bu durumda derleyici aracı gibi bir aracı temsil ettiğinde, kuralın çoğu özelliği derleme sırasında araç yürütülebilirine anahtar olarak geçirilir. Bu özniteliğin değeri, kullanılacak anahtar değişmez değerini belirtir. Yukarıdaki özelliği, anahtarın **Info**olması gerektiğini belirtir. Üst kuraldaki **SwitchPrefix** özniteliğiyle birlikte, bu özellik yürütülebilir **\" "hata ayıklama** (özellik sayfası kullanıcı arabiriminde CC++ için komut satırında görünür) olarak çalıştırılabilir dosyaya geçirilir.
+   c. **Anahtar:** Bir kural, bu durumda derleyici aracı gibi bir aracı temsil ettiğinde, kuralın çoğu özelliği derleme sırasında araç yürütülebilirine anahtar olarak geçirilir. Bu özniteliğin değeri, kullanılacak anahtar değişmez değerini belirtir. Yukarıdaki özelliği, anahtarın **Info**olması gerektiğini belirtir. Üst kuraldaki **SwitchPrefix** özniteliğiyle birlikte, bu özellik yürütülebilir dosya **"Debug\"** (özellik sayfası kullanıcı arabiriminde C/C++ için komut satırında görünür) olarak çalıştırılabilir dosyaya geçirilir.
 
    Diğer özellik öznitelikleri şunlardır:
 
-   d. **Görüne** Bir nedenden dolayı, özelliğin özellik sayfalarında görünmesini istemezsiniz (ancak büyük olasılıkla yapı süresi sırasında kullanılabilir), bu özniteliği false olarak ayarlayın.
+   d. **Görünür:** Bir nedenden dolayı, özelliğin özellik sayfalarında görünmesini istemezsiniz (ancak büyük olasılıkla yapı süresi sırasında kullanılabilir), bu özniteliği false olarak ayarlayın.
 
-   e. **Özelliğinin** Özellik sayfalarında bu özelliğin değerinin salt okunurdur görünümünü sağlamak istiyorsanız, bu özniteliği true olarak ayarlayın.
+   e. **Salt okunur:** Özellik sayfalarında bu özelliğin değerinin salt okunurdur görünümünü sağlamak istiyorsanız, bu özniteliği true olarak ayarlayın.
 
    f. **IncludeInCommandLine:** Bazı özelliklerin derleme zamanında bir araca geçirilmesi gerekmez. Bu özniteliğin false olarak ayarlanması, geçirilmesini engeller.

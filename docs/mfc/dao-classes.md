@@ -7,20 +7,20 @@ helpviewer_keywords:
 - database classes [MFC], DAO
 - DAO [MFC], classes
 ms.assetid: b15d0cd6-328b-4288-9c19-d037a795db57
-ms.openlocfilehash: febd20971fd85275bd7ded0d2216fab0e05adbd1
-ms.sourcegitcommit: 2f96e2fda591d7b1b28842b2ea24e6297bcc3622
+ms.openlocfilehash: cdd3fd9a733df73d36441693d049724878219df5
+ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71095617"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74303396"
 ---
 # <a name="dao-classes"></a>DAO Sınıfları
 
-DAO, Access veritabanları ile birlikte kullanılır ve Office 2013 aracılığıyla desteklenir. 3,6 son sürümdür ve artık kullanılmıyor olarak kabul edilir.
+DAO, Access veritabanları ile birlikte kullanılır ve Office 2013 aracılığıyla desteklenir. DAO 3,6 son sürümdür ve artık kullanılmıyor olarak kabul edilir.
 
 Bu sınıflar, Microsoft Visual Basic ve Microsoft Access ile aynı veritabanı altyapısını kullanan veri erişim nesnesi (DAO) veritabanlarına kolay erişim sağlamak için diğer uygulama çerçevesi sınıflarıyla birlikte çalışır. DAO sınıfları, açık veritabanı bağlantısı (ODBC) sürücülerinin kullanılabildiği çok çeşitli veritabanlarına da erişebilir.
 
-DAO veritabanları kullanan programlar en az bir `CDaoDatabase` nesne ve bir `CDaoRecordset` nesne olacaktır.
+DAO veritabanları kullanan programlar en az bir `CDaoDatabase` nesnesine ve `CDaoRecordset` nesnesine sahip olur.
 
 > [!NOTE]
 >  Visual C++ ortamı ve sihirbazları artık DAO 'yu desteklemez (DAO sınıfları dahil edilir ancak yine de kullanabilirsiniz). Microsoft, yeni MFC projeleri için ODBC kullanmanızı önerir. Yalnızca var olan uygulamaları korumak için DAO kullanmanız gerekir.
@@ -52,7 +52,7 @@ DAO veritabanı sınıfları tarafından kullanılan DAO Kayıt alanı değişim
 ## <a name="related-classes"></a>İlgili sınıflar
 
 [CLongBinary](../mfc/reference/clongbinary-class.md)<br/>
-Bir bit eşlem gibi ikili büyük nesne (BLOB) için bir tanıtıcıyı saklar. `CLongBinary`nesneler, veritabanı tablolarında depolanan büyük veri nesnelerini yönetmek için kullanılır.
+Bir bit eşlem gibi ikili büyük nesne (BLOB) için bir tanıtıcıyı saklar. `CLongBinary` nesneler, veritabanı tablolarında depolanan büyük veri nesnelerini yönetmek için kullanılır.
 
 [Colet para birimi](../mfc/reference/colecurrency-class.md)<br/>
 Sabit noktalı aritmetik tür olan ve sonra ondalık noktadan önce 15 basamakla ve sonrasında 4 basamaktan oluşan OLE Otomasyon türü **para birimi**için sarmalayıcı.

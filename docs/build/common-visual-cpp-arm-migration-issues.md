@@ -2,68 +2,68 @@
 title: Genel Visual C++ ARM Geçiş Sorunları
 ms.date: 05/06/2019
 ms.assetid: 0f4c434e-0679-4331-ba0a-cc15dd435a46
-ms.openlocfilehash: 78d87000240acd394edf823a778ae29060c6d09c
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: 518b8872b301a8fcfc0f154cb3d5d0299efb0975
+ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65220887"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74303233"
 ---
 # <a name="common-visual-c-arm-migration-issues"></a>Genel Visual C++ ARM Geçiş Sorunları
 
-Microsoft kullanırken C++ derleyici (MSVC) aynı C++ kaynak kodu, ARM mimarisi üzerinde farklı sonuçlar üretebilir, x86 veya x64 mimarilerde gösterilenden.
+Microsoft C++ derleyicisini (MSVC) kullanırken, aynı C++ kaynak kodu ARM mimarisinde x86 veya x64 mimarilerinde olduğundan farklı sonuçlar üretebilir.
 
-## <a name="sources-of-migration-issues"></a>Geçiş sorunlarını kaynakları
+## <a name="sources-of-migration-issues"></a>Geçiş sorunları kaynakları
 
-ARM mimarisi için x86 veya x64 mimarilerin arasından kod geçirdiğinizde karşılaşabileceğiniz çok sayıda sorunu tanımlanmamış, uygulama tanımlı veya belirtilmeyen davranışı çağırabilir kaynak kodu yapıları için ilgilidir.
+X86 veya x64 mimarilerinden ARM mimarisine kod geçirdiğinizde karşılaşabileceğiniz birçok sorun, tanımsız, uygulama tanımlı veya belirtilmemiş davranışı çağırabilen kaynak kod yapıları ile ilgilidir.
 
-*Tanımsız davranış* C++ Standart tanımlamaz, davranıştır ve makul hiçbir sonucu olan bir işlem tarafından neden: Örneğin, bir kayan nokta değeri işaretsiz tamsayıya dönüştürmek veya konumlarını sayısına göre bir değer değiştirme negatif veya yükseltilen tür bit sayısını aşıyor.
+*Tanımsız davranış* , C++ standart tanımlamaz ve makul bir sonuç içermeyen bir işlem nedeniyle oluşur: Örneğin, kayan noktalı bir değeri işaretsiz tamsayıya dönüştürmek ya da değeri negatif olan veya yükseltilen türdeki bitlerin sayısını aşan bir dizi konum ile kaydırma.
 
-*Uygulama tanımlı davranış* tanımlamak ve belge derleyici tedarikçisi C++ Standart gerektiren bir davranıştır. Bunu yaptığınızda bu nedenle taşınabilir olmayabilir rağmen bir programın güvenli bir şekilde uygulama tanımlı davranış üzerinde güvenebilirsiniz. Uygulama tanımlı davranış örnekleri, hizalama gereksinimlerinin yerleşik veri türleri ve boyutları içerir. Uygulama tanımlı davranış tarafından etkilenebilecek bir işlem örneği değişken bağımsız değişkenler listesi erişir.
+*Uygulama tanımlı davranış* , C++ standart olarak derleyicinin satıcının tanımlamasını ve belgeyi gerektirmesidir. Bir program, uygulama tanımlı davranışa güvenle güvenebilse de, taşınabilir olmayabilir. Uygulama tanımlı davranış örnekleri, yerleşik veri türleri ve bunların hizalama gereksinimlerinin boyutlarını içerir. Uygulama tanımlı davranıştan etkilenebilecek bir işlem örneği, değişken bağımsız değişken listesine erişiyor olabilir.
 
-*Belirtilmeyen davranışı* C++ Standart kasıtlı olarak belirleyici bırakır, davranıştır. Davranış belirleyici olarak kabul edilir olsa da, belirtilmeyen davranışının belirli çağrılarını derleyici uygulaması tarafından belirlenir. Ancak, bir derleyici tedarikçisi sonucu önceden veya karşılaştırılabilir çağrıları arasında tutarlı davranışı garantilemek için bir gereksinimi yoktur ve belgeler için bir gereksinimi yoktur. Bir işlev çağrısı için bağımsız değişken içeren alt ifadelerin değerlendirilme sırasını belirtilmeyen davranışı örneğidir.
+*Belirtilmeyen davranış* , C++ standart bir şekilde belirleyici olmayan bir davranıştır. Davranışı belirleyici olmayan kabul edilse de, belirtilmeyen davranışın belirli bir çağırma yöntemi derleyici uygulamasına göre belirlenir. Ancak, bir derleyici satıcısının sonucu önceden belirlemesi veya karşılaştırılabilir çağırmaları arasındaki tutarlı davranışı garanti etmek için bir gereksinim yoktur ve belge için gereksinim yoktur. Belirtilmeyen davranışa örnek olarak, bir işlev çağrısına bağımsız değişkenler içeren alt ifadelerin sıralaması yapılır.
 
-Diğer geçiş sorunları, ARM ve C++ standardı ile farklı şekilde etkileşime x86 veya x64 mimarileri donanım farklılıkları ilişkilendirilebildiği. Örneğin, güçlü bellek modeli x86 ve x64 mimarisinin verir `volatile`-değişkenleri belirli bir türdeki iş parçacıkları arası iletişim geçmişte kolaylaştırmak için kullanılan bazı ek özellikleri nitelenmiş. Ancak bu kullanım ARM mimarisinin zayıf bellek modeli desteklemiyor ya da C++ Standart gerekli olmadığı.
+Diğer geçiş sorunları, C++ standart ile farklı bir şekilde ETKILEŞIMDE bulunan ARM ve x86 veya x64 mimarileri arasındaki donanım farklılıkları ile ilişkilendirilebilmektedir. Örneğin, x86 ve x64 mimarisinin güçlü bellek modeli, daha önce belirli türlerde iş parçacığı iletişimini kolaylaştırmak için kullanılan bazı ek özellikler `volatile`nitelikli değişkenlere sahiptir. Ancak ARM mimarisinin zayıf bellek modeli bu kullanımı desteklemez ve C++ standart bunu gerektirmez.
 
 > [!IMPORTANT]
->  Ancak `volatile` x86 ve x64, bu ek özellikleri üzerinde sınırlı forms iş parçacıkları arası iletişim uygulamak için kullanılan bazı özellikleri uygulamak yeterli değil kazançlar arası iş parçacığı iletişim genel. C++ standardına uygun eşitleme temellerine kullanarak bu tür bir iletişim uygulanması önerir.
+>  `volatile`, x86 ve x64 üzerinde iş parçacığı arası iletişimin sınırlı biçimlerini uygulamak için kullanılabilecek bazı özellikler sunmakla birlikte, bu ek özellikler, genel olarak iş parçacıkları arası iletişimi uygulamak için yeterli değildir. Standart C++ , bunun yerine uygun eşitleme temelleri kullanılarak bu tür iletişimin uygulanması önerilir.
 
-Farklı platformlar bu tür davranış farklı express çünkü platformlar arasında yazılım taşıma zor ve hata yapmaya açık belirli bir platformun davranışa bağlıysa olabilir. Bu tür davranış birçoğu gösterilebilir ve kararlı görünebilir ancak bunlar üzerinde bağlı olan en az taşınabilir değildir ve davranışı tanımlanmamış veya belirtilmeyen durumlarda, aynı zamanda bir hatadır. Bile bu belgede alıntı davranışı üzerinde kullanılmamalıdır ve derleyicilerini veya CPU uygulamaları gelecekte değişebilir.
+Farklı platformlar bu tür davranışları farklı şekilde ifade edebildiğinden, platformlar arasında yazılım taşıma, belirli bir platformun davranışına bağımlıysa zor ve hataya açıktır. Bu tür davranışların birçoğu gözlemlenebilir ve kararlı görünebilse de, bunlara bağlı olarak en az taşınabilir değildir ve tanımsız veya belirtilmemiş davranış durumlarında de bir hatadır. Bu belgede alıntı yapılan davranış bile buna güvenmemelidir ve gelecekteki derleyicilerde veya CPU uygulamalarında değişebilir.
 
 ## <a name="example-migration-issues"></a>Örnek geçiş sorunları
 
-Bu belgenin geri kalan nasıl bu C++ dil öğeleri farklı bir davranış farklı platformlarda farklı sonuçlar üretebilir açıklar.
+Bu belgenin geri kalanında, bu C++ dil öğelerinin farklı davranışının farklı platformlarda farklı sonuçlar üretebileceğini açıklanmaktadır.
 
-### <a name="conversion-of-floating-point-to-unsigned-integer"></a>İşaretsiz tamsayı, kayan nokta dönüştürme
+### <a name="conversion-of-floating-point-to-unsigned-integer"></a>Kayan noktanın işaretsiz tamsayıya dönüştürülmesi
 
-ARM mimarisini temel bir kayan nokta değerine dönüştürülmesi 32-bit tamsayı, kayan nokta değeri bir tamsayı temsil edebilen aralığı dışında ise bir tamsayı temsil edebilen en yakın değere dolduruyor. Tamsayı imzasız ya da işaretli bir tamsayı, -2147483648 ile ayarlanır x86 ve x64 mimarilerde dönüştürme etrafında sarmalar. Bu mimarileri hiçbiri kayan nokta değerlerine dönüştürme küçük tamsayı türleri için doğrudan desteği: Bunun yerine, 32 bit dönüştürmeler gerçekleştirilir ve sonuçları daha küçük bir boyuta kesilir.
+ARM mimarisinde, kayan nokta değerinin 32 bitlik bir tamsayıya dönüştürülmesi, kayan nokta değeri tamsayının temsil ettiği aralığın dışındaysa tamsayı temsil edilebilmesi için en yakın değere göre Cumartesi. X86 ve x64 mimarilerinde, tamsayı işaretsiz ise veya tamsayı imzalanmışsa-2147483648 olarak ayarlandıysa dönüştürme etrafında kaydırılır. Bu mimarilerin hiçbiri, kayan nokta değerlerinin küçük tamsayı türlerine dönüştürülmesini doğrudan desteklemez; Bunun yerine, dönüştürmeler 32 bit olarak gerçekleştirilir ve sonuçlar daha küçük bir boyuta kesilir.
 
-ARM mimarisi için bir 32 bit tamsayı dolduruyor ancak daha büyük değerler için kısaltılmış bir sonuç işaretsiz türlere dönüşüm için doğru küçük imzasız türler dolduruyor Doygunluk ve kesme birleşimi anlamına gelir daha küçük tür çok küçük tam 32-bit tamsayı saturate için temsil edebilir. Dönüştürme de doğru için 32-bit imzalı tamsayı dolduruyor ancak olumlu doygun değerleri için -1 ve 0 olumsuz doygun değerler için kesme doymuş, imzalı tamsayı sonuçlanır. Bir küçük işaretli tamsayıya dönüştürme tahmin edilemez kesilmiş bir sonuç üretir.
+ARM mimarisi için, doygunluk ve kesme birleşimi, işaretsiz türlere dönüştürmenin 32 bitlik bir tamsayıyı büyütürse daha küçük işaretsiz türlere doğru bir şekilde büyütülebileceğini, ancak bundan daha büyük değerler için kesilmiş bir sonuç üretir. daha küçük bir tür, tam 32 bitlik tamsayının doygunluğu için çok küçük bir değer temsil edebilir. Ayrıca, dönüştürme 32 bitlik işaretli tamsayılar için de doğru şekilde Cumartesi, ancak doygun, işaretli tamsayılar, pozitif doygun değerler için 1 ile, olumsuz doygun değerler için 0 ile sonuçlanır. Daha küçük bir işaretli tamsayıya dönüştürme öngörülemeyen bir sonuç üretir.
 
-X86 ve x64 mimarileri için işaretsiz tamsayı dönüştürmeleri davranışını döner ve kesilmesi, birlikte taşmada işaretli tamsayı dönüştürmeleri için açık değerleme hale çoğu kaydırmalar sonuçları olmaları durumunda öngörülemeyen çok büyük.
+X86 ve x64 mimarilerinde, işaretsiz tamsayı dönüştürmeleri için sarmalama davranışının birleşimi ve taşma üzerinde işaretli tamsayı dönüştürmeleri için açık değerlendirme, kesme ile birlikte çok büyük.
 
-Aşağıdaki platformları tamsayı türleri NaN (bir sayı değil) dönüştürülmesi işledikleri olarak nasıl farklılık gösterir. ARM üzerinde NaN için 0x00000000 dönüştürür; x86 ve x64 0x80000000 için dönüştürür.
+Bu platformlar Ayrıca NaN (bir-Number değil) tamsayı türlerine dönüştürmeyi nasıl işleyseler de farklılık gösterir. ARM 'de NaN, 0x00000000 değerine dönüştürür; x86 ve x64 üzerinde, 0x80000000 öğesine dönüştürür.
 
-Değer aralığı için dönüştürülüyor tamsayı türünün içinde olduğunu biliyorsanız, kayan nokta dönüştürme yalnızca yararlandı.
+Kayan nokta dönüştürme yalnızca değerin dönüştürülmekte olduğu tamsayı türü aralığında olduğunu biliyorsanız, bu, yalnızca bir değere güvenlebilir.
 
-### <a name="shift-operator---behavior"></a>Kaydırma işleci (\< \< >>) davranışı
+### <a name="shift-operator---behavior"></a>SHIFT işleci (\<\< > >) davranışı
 
-Desen başlamadan önce ARM mimarisine bir değer sola veya sağa en çok 255 bit kaydırılmasına. Bir 64-bit değişken desen kaynağı olmadığı sürece x86 ve x64 mimarilerde 32 her birden çok desen yinelenir; Bu durumda, her 64 x 64 ve her bir yazılım uygulamasını nerede işe x86, 256 katları katları adresindeki deseni tekrarlar. Örneğin, 32 konumları tarafından sola kaydırılacak 1 değeri olan bir 32-bit değişken için ARM üzerinde sonucu 0'dır, üzerinde x86 sonuç 1'dir ve üzerinde x64 sonucu da 1. Ancak, kaynak değeri bir 64-bit değişken ise 4294967296 üç tüm platformlarda sonuç olur ve "64 konumları x64 veya ARM 256 konumlarda ve x86 değişmiştir kadar değer sarma değil".
+ARM mimarisinde, model tekrarlamaya başlamadan önce bir değer sola veya 255 bite doğru bir şekilde kaydıreklenebilir. X86 ve x64 mimarilerinde, düzenin kaynağı 64 bitlik bir değişken değilse, bu model her iki 32 katı için yinelenir. Bu durumda, model x64 üzerinde 64 ' un her katı ve bir yazılım uygulamasının çalıştığı x86 üzerinde 256 ' in her katı yinelenir. Örneğin, 32 konumunda sola kaydırılan 1 değeri olan 32 bitlik bir değişken için, ARM 'de sonuç 0, x86 üzerinde sonuç ise 1 ' dir ve sonuç olarak 1 ' dir. Ancak, değerin kaynağı 64 bitlik bir değişkense, üç platformda de elde edilen sonuç 4294967296 ' dir ve değer, x64 üzerinde 64 veya ARM ve x86 üzerinde 256 konumlarda kaydırılana kadar "sarmalama" yapmaz.
 
-Kaynak türü bit sayısı aşan bir kaydırma işleminin sonucu tanımsız olduğundan, derleyici her durumda tutarlı bir davranış sağlamak için gerekli değildir. Bir kaydırma her iki işleneni de derleme zamanında biliniyorsa, örneğin, derleyici program shift sonucunu önceden hesaplar için bir iç yordamı kullanarak ve ardından sonucu kaydırma işlemi yerine değiştirerek en iyi duruma. Değiştirme miktarı çok büyük veya negatif ise, iç yordamı sonucunu CPU tarafından yürütülen gibi farklı aynı kaydırma ifadesinin sonucu olabilir.
+Kaynak türündeki bitlerin sayısını aşan bir vardiya işleminin sonucu tanımsız olduğundan, derleyicinin her durumda tutarlı davranışa sahip olması gerekmez. Örneğin, bir vardiyanın her iki işleneni de derleme zamanında biliniyorsa, derleyici, SHIFT 'in sonucunu önceden hesaplamak için bir iç yordam kullanarak programı en iyi hale getirebilir ve ardından SHIFT işleminin yerine sonucu yerine getirebilir. Kaydırma miktarı çok büyük veya negatif ise, iç yordamın sonucu CPU tarafından yürütülen aynı kaydırma ifadesinin sonucundan farklı olabilir.
 
 ### <a name="variable-arguments-varargs-behavior"></a>Değişken bağımsız değişkenler (varargs) davranışı
 
-ARM mimarisini temel yığın üzerine geçirilir değişken bağımsız değişken listesinden tabi hizalama parametreleridir. Örneğin, bir 64-bit parametresi bir 64-bit sınırında hizalanır. X86 ve x64, bağımsız değişkenler yığında geçirilir hizalama ve paketi tabi sıkı bir şekilde değildir. Bu fark, değişen sayıda bağımsız değişken işlev gibi neden olabilir `printf` değişken bağımsız değişken listesinin beklenen düzenini tam olarak eşleşmiyorsa x86 üzerinde bazı değerlerin bir alt kümesi için bu işe yarayabilir olsa da, ARM doldurma olarak hedeflenen bellek adresleri okunamıyor veya x64 mimariler. Bu örneği göz önünde bulundurun:
+ARM mimarisinde, yığına geçirilen değişken bağımsız değişken listesindeki parametreler hizalamasına tabidir. Örneğin, 64 bitlik bir parametre 64 bit sınırında hizalanır. X86 ve x64 üzerinde, yığına geçirilen bağımsız değişkenler hizalama ve paket sıkı bir şekilde uygulanmaz. Bu fark, değişken bağımsız değişkenler listesinin beklenen düzeni tam olarak eşleşmiyorsa, örneğin, x86 veya x64 mimarilerinde bazı değerlerin bir alt kümesi için çalışsa bile, bu farkı, `printf` gibi değişen bir bağımsız işlevin, ARM 'de doldurma olarak tasarlanan bellek adreslerini okumasına neden olabilir. Şu örneği göz önünde bulundurun:
 
 ```C
 // notice that a 64-bit integer is passed to the function, but '%d' is used to read it.
-// on x86 and x64 this may work for small values because %d will “parse” the low-32 bits of the argument.
+// on x86 and x64 this may work for small values because %d will "parse" the low-32 bits of the argument.
 // on ARM the calling convention will align the 64-bit value and the code will print a random value
 printf("%d\n", 1LL);
 ```
 
-Bu durumda, hatayı hizalama bağımsız değişken olarak kabul edilir, böylece doğru biçim belirtimi kullanılmamasını sağlayarak düzeltilebilir. Bu kod doğrudur:
+Bu durumda, bağımsız değişkenin hizalaması kabul edilebilmesi için doğru biçim belirtiminin kullanıldığından emin olarak hata düzeltilebilir. Bu kod doğru:
 
 ```C
 // CORRECT: use %I64d for 64-bit integers
@@ -72,9 +72,9 @@ printf("%I64d\n", 1LL);
 
 ### <a name="argument-evaluation-order"></a>Bağımsız değişken değerlendirme sırası
 
-Çünkü, x 86 ve x64 ARM işlemcileri çok farklı, derleyici uygulamaları ve farklı fırsatları iyileştirmeler için farklı gereksinimler ortaya çıkarabilir. Bu nedenle, çağırma kuralı ve iyileştirme ayarları gibi diğer etkenler birlikte bir derleyici işlev bağımsız değişkenleri farklı mimari veya diğer etkenler ne zaman değiştirildiğini farklı bir sırada değerlendirebilir. Bu, beklenmedik bir şekilde değiştirmek için belirli bir değerlendirme sırası üzerinde bağımlı bir uygulamanın davranış şekli neden olabilir.
+ARM, x86 ve x64 işlemciler bu kadar farklı olduğundan, derleyici uygulamalarına farklı gereksinimler ve ayrıca iyileştirmeler için farklı fırsatlar sunabilir. Bu nedenle, çağırma kuralı ve iyileştirme ayarları gibi diğer faktörlerle birlikte, bir derleyici, işlev bağımsız değişkenlerini farklı mimarilerde farklı bir sırada veya diğer faktörler değiştirildiğinde değerlendirebilirler. Bu, belirli bir değerlendirme sırasını kullanan bir uygulamanın davranışının beklenmedik şekilde değişmesine neden olabilir.
 
-Bağımsız değişken bir işleve diğer bağımsız değişkenler aynı çağrı işlevine etkileyen yan etkileri varsa bu türde bir hata oluşabilir. Genellikle bu tür bir bağımlılık kaçınmak kolaydır, ancak, bazen elde edilmesi güç olan bağımlılıkların veya İşleç aşırı yüklemesi görünmeyebilir. Bu kod örneği göz önünde bulundurun:
+Bu tür bir hata, bir işlevin bağımsız değişkenlerinin, diğer bağımsız değişkenleri aynı çağrıda işleve etkileyen yan etkileri olduğunda meydana gelebilir. Genellikle bu tür bağımlılığın önlenmesi kolaydır, ancak bazen ayırt edilmesi zor olan bağımlılıklar veya operatör aşırı yüklemesi tarafından görünmeyebilir. Aşağıdaki kod örneğini göz önünde bulundurun:
 
 ```cpp
 handle memory_handle;
@@ -82,21 +82,21 @@ handle memory_handle;
 memory_handle->acquire(*p);
 ```
 
-Bu, iyi tanımlanmış görünür ancak `->` ve `*` sonra bu kodu bu benzeyen bir şey için çevrilir aşırı yüklenmiş işleçler şunlardır:
+Bu, iyi tanımlanmış görünüyor, ancak `->` ve `*` aşırı yüklenmiş işleçlerdir, bu kod şuna benzer bir şeye çevrilir:
 
 ```cpp
 Handle::acquire(operator->(memory_handle), operator*(p));
 ```
 
-Ve arasında bir bağımlılık ise `operator->(memory_handle)` ve `operator*(p)`, kodu belirli bir değerlendirme sırasını bağlı olabilir, özgün koda benzer olsa da olası hiçbir bağımlılık yoktur.
+`operator->(memory_handle)` ve `operator*(p)`arasında bir bağımlılık varsa, özgün kod olası bir bağımlılık olmadığı gibi görünse de kod belirli bir değerlendirme sırasına bağlı olabilir.
 
-### <a name="volatile-keyword-default-behavior"></a>volatile anahtar sözcüğü varsayılan davranışı
+### <a name="volatile-keyword-default-behavior"></a>geçici anahtar sözcüğü varsayılan davranışı
 
-MSVC derleyicisi, iki farklı ınterpretations destekler `volatile` depolama niteleyicisi, derleyici anahtarlarını kullanarak belirtebilirsiniz. [/Volatile:ms](reference/volatile-volatile-keyword-interpretation.md) anahtar, Microsoft geleneksel durum x86 hem x64 nedeniyle bu mimarilerde güçlü bellek modeli olduğu güçlü sıralama, garanti geçici semantiği genişletilmiş seçer. [/Volatile:iso](reference/volatile-volatile-keyword-interpretation.md) anahtar, güçlü sıralama garanti etmez katı C++ Standart geçici semantiklerini seçer.
+MSVC derleyicisi, derleyici anahtarları kullanarak belirtebileceğiniz `volatile` depolama niteleyicisi 'nin iki farklı yorumleyicisini destekler. [/Volatile: MS](reference/volatile-volatile-keyword-interpretation.md) anahtarı, bu mimarilerde güçlü bellek modeli nedeniyle, x86 ve x64 için geleneksel durum olduğundan, güçlü sıralamayı garanti eden Microsoft genişletilmiş geçici semantiğini seçer. [/Volatile: ISO](reference/volatile-volatile-keyword-interpretation.md) anahtarı, güçlü sıralama garantisi C++ olmayan katı standart geçici semantiğini seçer.
 
-ARM mimarisini temel varsayılandır **/volatile:iso** bellek modeli sıralı ARM işlemcileri sahipli sahip olduğundan ve ARM yazılım üzerinde Genişletilmiş semantiği bağlı olan, eski olmadığından **/volatile:ms**  ve genellikle yok mu yazılım ile arabirim oluşturmak için. Ancak, yine de bazı durumlarda kullanışlı ya da bir ARM programın genişletilmiş semantiğini kullanmasına derlemek için bile gerekli değildir. Örneğin, ISO C++ semantiği kullanılacak bir program bağlantı noktasına pahalı olabilir veya yazılımı düzgün çalışması için geleneksel semantiği kullanan gerekebilir. Bu gibi durumlarda, kullandığınız **/volatile:ms** ancak ARM hedefleri geleneksel geçici semantiği yeniden oluşturmak için derleyici her bir okuma veya yazma etrafında belleği engelleri eklemeniz gerekir; anahtar bir `volatile` zorlamak için değişkeni Güçlü sıralama, tera negatif bir etkiye performans.
+ARM mimarisinde, ARM işlemcilerin zayıf sıralı bir bellek modeli olduğundan ve ARM yazılımının, **/volatile: MS** genişletilmiş semantiğine bağlı olmadığından ve genellikle bunu yapan yazılımlarla arabirim içermediği için, varsayılan olarak **/volatile: ISO** ' dur. Ancak bazen genişletilmiş semantiğini kullanmak için bir ARM programı derlemek için de kullanışlı veya hatta gereklidir. Örneğin, bir programın ISO C++ semantiğini kullanması için bağlantı noktası çok pahalı olabilir veya sürücü yazılımının doğru çalışması için geleneksel semantiklere uyması gerekebilir. Bu durumlarda, **/volatile: MS** anahtarını kullanabilirsiniz; Bununla birlikte, ARM hedeflerinde geleneksel geçici semantiğini yeniden oluşturmak için derleyicinin, bir `volatile` değişkeninin her okuma veya yazma sonrasında, performans üzerinde olumsuz bir etkiye sahip olabilen bir değişkenine yönelik bellek engelleri eklemesi gerekir.
 
-X86 ve x64 mimarilerde varsayılandır **/volatile:ms** MSVC kullanarak bu mimari için önceden oluşturulmuş yazılım çoğunu bunlara bağımlı olduğundan. X86 ve x64 programları derlediğinizde, belirtebileceğiniz **/volatile:iso** geleneksel geçici semantiği gereksiz güvenme önlemeye yardımcı olmak ve taşınabilirlik yükseltmek için anahtar.
+X86 ve x64 mimarilerinde, MSVC kullanılarak bu mimarilerin zaten oluşturulmuş olduğu yazılımların çoğu için **/volatile: MS** varsayılandır. X86 ve x64 programları derlerken, geleneksel geçici semantiklere gereksiz bir şekilde güvenilmesini ve taşınabilirliği yükseltmeyi önlemeye yardımcı olmak için **/volatile: iso** anahtarını belirtebilirsiniz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

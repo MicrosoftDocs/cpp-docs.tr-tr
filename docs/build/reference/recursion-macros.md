@@ -1,28 +1,33 @@
 ---
-title: Özyineleme Makroları
-ms.date: 11/04/2016
+title: Özyineleme makroları
+description: Özyinelemeli oturumlarda NMAKE 'i çağırmak için kullandığınız makroları açıklar.
+ms.date: 11/20/2019
 helpviewer_keywords:
 - NMAKE program, recursion macros
 - recursion macros
 - macros, recursion
 ms.assetid: c53e5ae7-619e-46b1-bdc2-86d8c7798b1d
-ms.openlocfilehash: 064bc40906bcf3a126c225585a6df43443b5c38e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+no-loc:
+- MAKE
+- MAKEDIR
+- MAKEFLAGS
+ms.openlocfilehash: f2bda23cb079e4fd7d12cea3598d33b3625c088d
+ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62319245"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74303146"
 ---
-# <a name="recursion-macros"></a>Özyineleme Makroları
+# <a name="recursion-macros"></a>Özyineleme makroları
 
-Özyineleme makroları NMAKE yinelemeli olarak çağırmak için kullanın. Komut satırı ve ortam değişkeni makroları ve Tools.ini bilgi özyinelemeli oturumları devralır. Derleme görevleri dosyası tarafından tanımlanan çıkarım kuralları devralmamanızı veya **. SONEKLERİ** ve **. DEĞERLİ** belirtimleri. Bir özyinelemeli NMAKE oturumuna makroları geçirmek için önce Özyinelemeli çağrı KÜMESİYLE bir ortam değişkenini ayarlamak, özyinelemeli çağrı için komutu bir makro tanımlayın veya Tools.ini içinde bir makro tanımlayın.
+Yineleme makrolarını kullanarak NMAKE 'i yinelemeli olarak çağırın. Özyinelemeli oturumlar komut satırı ve ortam değişkeni makrolarını ve Tools. ini bilgilerini miras alır. Derleme görevleri dosyası tanımlı çıkarımı kurallarını veya `.SUFFIXES` ve `.PRECIOUS` belirtimlerini almayacaktır. Yinelemeli bir NMAKE oturumuna makro geçirmenin üç yolu vardır: özyinelemeli çağrıdan önce bir :::no-loc text="SET"::: komutuyla bir ortam değişkeni ayarlayın. Komutta özyinelemeli çağrı için bir makro tanımlayın. Ya da Tools. ini dosyasında bir makro tanımlayın.
 
 |Makrosu|Tanım|
 |-----------|----------------|
-|**OLUN**|NMAKE çağırmak için ilk olarak kullanılan komutu.<br /><br /> $(MAKE) makrosu nmake.exe için tam yolunu sağlar.|
+|**MAKE**|Komut ilk olarak NMAKE çağırmak için kullanıldı.<br /><br /> `$(MAKE)` makrosu nmake. exe dosyasının tam yolunu verir.|
 |**MAKEDIR**|NMAKE çağrıldığında geçerli dizin.|
-|**MAKEFLAGS**|Seçeneklerinde şu anda etkin. Olarak `/$(MAKEFLAGS)`.  Unutmayın, /F dahil değildir.|
+|**MAKEFLAGS**|Şu anda etkin olan seçenekler. `/$(MAKEFLAGS)`olarak kullanın. **/F** seçeneği dahil değildir.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Özel NMAKE Makroları](special-nmake-macros.md)
+[Özel NMAKE makroları](special-nmake-macros.md)

@@ -12,20 +12,20 @@ helpviewer_keywords:
 - Windows API [MFC], encapsulation by MFC
 - encapsulated Win32 API [MFC]
 ms.assetid: 3be0fec8-9843-4119-ae42-ece993ef500b
-ms.openlocfilehash: d93d2d50bab4b63258a3e0fe4cd2f24c2fcde4f3
-ms.sourcegitcommit: 2f96e2fda591d7b1b28842b2ea24e6297bcc3622
+ms.openlocfilehash: 387f53e3123b6863fcf218da39c7c5e356eb8219
+ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71095795"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74303410"
 ---
 # <a name="framework-mfc"></a>Framework (MFC)
 
 Microsoft Foundation Class (MFC) kitaplığı çerçevesiyle çalışmanız, büyük ölçüde birkaç önemli sınıfa ve çeşitli görsel C++ araçlara dayalıdır. Bazı sınıflar, Win32 uygulama programlama arabiriminin (API) büyük bir bölümünü kapsüllenir. Diğer sınıflar, belgeler, görünümler ve uygulamanın kendisi gibi uygulama kavramlarını kapsüllemez. Hala diğerleri OLE özelliklerini ve ODBC ve DAO veri erişimi işlevselliğini Kapsüller.  (DAO, Office 2013 aracılığıyla desteklenir. DAO 3,6 son sürümdür ve artık kullanılmıyor olarak kabul edilir.)
 
-Örneğin, pencere Win32's kavramı MFC sınıfıyla `CWnd`kapsüllenir. Diğer bir deyişle, C++ bir Windows `CWnd` penceresini temsil eden `HWND` tutamacı Kapsüller veya "sarmalanmış" olarak adlandırılan bir sınıf. Benzer şekilde, `CDialog` sınıf Win32 iletişim kutularını kapsüller.
+Örneğin, pencere Win32's kavramı `CWnd`MFC sınıfı tarafından kapsüllenir. Diğer bir deyişle, C++ `CWnd` adlı bir sınıf, bir Windows penceresini temsil eden `HWND` tanıtıcısını Kapsüller veya "kaydırır". Benzer şekilde, sınıf `CDialog` Win32 iletişim kutularını kapsüller.
 
-Kapsülleme, C++ sınıfının `CWnd`, örneğin türünde bir üye değişkeni içerdiği ve sınıfın üye işlevlerinin parametre `HWND`olarak bir `HWND` değeri olan Win32 işlevlerine çağrıları kapsülleyen anlamına gelir. Sınıf üyesi işlevleri genellikle kapsülledikleri Win32 işleviyle aynı ada sahiptir.
+Kapsülleme `CWnd`C++ sınıfının, örneğin, `HWND`türünde bir üye değişkeni içerdiğini ve sınıfın üye işlevlerinin bir `HWND` parametre olarak bir alan Win32 işlevlerine çağrıları kapsüllemesini sağlar. Sınıf üyesi işlevleri genellikle kapsülledikleri Win32 işleviyle aynı ada sahiptir.
 
 ## <a name="in-this-section"></a>Bu Bölümde
 

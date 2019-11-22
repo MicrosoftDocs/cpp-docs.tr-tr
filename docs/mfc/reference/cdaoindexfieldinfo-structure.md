@@ -7,16 +7,16 @@ helpviewer_keywords:
 - CDaoIndexFieldInfo structure [MFC]
 - DAO (Data Access Objects), Index Fields collection
 ms.assetid: 097ee8a6-83b1-4db7-8f05-d62a2deefe19
-ms.openlocfilehash: a8b0ff991b8cc4988192b89d7f70309af9b9112a
-ms.sourcegitcommit: 2f96e2fda591d7b1b28842b2ea24e6297bcc3622
+ms.openlocfilehash: 10c786ef4fed9ecb3bbbb93526cd68a11e18d58c
+ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71096085"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74303627"
 ---
 # <a name="cdaoindexfieldinfo-structure"></a>CDaoIndexFieldInfo Yapısı
 
-Yapı `CDaoIndexFieldInfo` , veri erişim nesneleri (DAO) için tanımlanan bir dizin alanı nesnesi hakkında bilgiler içerir.
+`CDaoIndexFieldInfo` yapısı, veri erişim nesneleri (DAO) için tanımlanan bir dizin alanı nesnesi hakkında bilgi içerir.
 
 DAO, Office 2013 aracılığıyla desteklenir. DAO 3,6 son sürümdür ve artık kullanılmıyor olarak kabul edilir.
 
@@ -40,11 +40,11 @@ Dizin nesnesi tarafından tanımlanan dizin sıralamasını gösterir. Sıra aza
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir dizin nesnesi, bir TableDef (veya bir tabloya dayalı bir kayıt kümesi) için hangi alanların dizine alınacağını gösteren bir dizi alana sahip olabilir. Yukarıdaki birincil başvurular, bu bilgilerin, [CDaoTableDef](../../mfc/reference/cdaotabledef-class.md#getindexinfo) veya [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md#getindexinfo)sınıfının `m_pFieldInfos` `GetIndexInfo` üye işlevini çağırarak elde edilen bir [CDaoIndexInfo](../../mfc/reference/cdaoindexinfo-structure.md) nesnesinin üyesinde nasıl döndürüldüğünü gösterir.
+Bir dizin nesnesi, bir TableDef (veya bir tabloya dayalı bir kayıt kümesi) için hangi alanların dizine alınacağını gösteren bir dizi alana sahip olabilir. Yukarıdaki birincil başvurular, bilgilerin [CDaoTableDef](../../mfc/reference/cdaotabledef-class.md#getindexinfo) veya [cdaorecordset](../../mfc/reference/cdaorecordset-class.md#getindexinfo)sınıfının `GetIndexInfo` member işlevini çağırarak elde edilen bir [CDaoIndexInfo](../../mfc/reference/cdaoindexinfo-structure.md) nesnesinin `m_pFieldInfos` üyesinde nasıl döndürüldüğünü gösterir.
 
-Dizin nesneleri ve Dizin alanı nesneleri bir MFC sınıfıyla temsil edilmez. Bunun yerine, [CDaoTableDef](../../mfc/reference/cdaotabledef-class.md) veya [CDAORECORDSET](../../mfc/reference/cdaorecordset-class.md) sınıfının MFC nesnelerini temel alan DAO nesneleri, dizinler koleksiyonu olarak adlandırılan dizin nesnelerinin bir koleksiyonunu içerir. Her dizin nesnesi, sırasıyla alan nesnelerinin bir koleksiyonunu içerir. Bu sınıflar, dizin bilgilerinin tek tek öğelerine erişmek için üye işlevleri sağlar veya kapsayan nesnenin `CDaoIndexInfo` `GetIndexInfo` üye işlevini çağırarak bir nesne ile tümüne tek seferde erişebilirsiniz. Daha sonra `m_pFieldInfos` `CDaoIndexFieldInfo`nesnesi, bir nesne dizisine işaret eden bir veri üyesine sahiptir. `CDaoIndexInfo`
+Dizin nesneleri ve Dizin alanı nesneleri bir MFC sınıfıyla temsil edilmez. Bunun yerine, [CDaoTableDef](../../mfc/reference/cdaotabledef-class.md) veya [CDAORECORDSET](../../mfc/reference/cdaorecordset-class.md) sınıfının MFC nesnelerini temel alan DAO nesneleri, dizinler koleksiyonu olarak adlandırılan dizin nesnelerinin bir koleksiyonunu içerir. Her dizin nesnesi, sırasıyla alan nesnelerinin bir koleksiyonunu içerir. Bu sınıflar, dizin bilgilerinin tek tek öğelerine erişmek için üye işlevleri sağlar veya kapsayan nesnenin `GetIndexInfo` üye işlevini çağırarak bir `CDaoIndexInfo` nesnesine bir kez erişebilirsiniz. `CDaoIndexInfo` nesnesi, `m_pFieldInfos`bir `CDaoIndexFieldInfo` nesne dizisine işaret eden bir veri üyesine sahiptir.
 
-Dizinler koleksiyonu ilgilendiğiniz dizin nesnesini depoladığınız içeren tabledef veya Recordset nesnesinin üyeişleviniçağırın.`GetIndexInfo` Ardından, `m_pFieldInfos` [CDaoIndexInfo](../../mfc/reference/cdaoindexinfo-structure.md) nesnesinin üyesine erişin. `m_pFieldInfos` Dizinin uzunluğu içinde `m_nFields`depolanır. `CDaoIndexFieldInfo`Ayrıca, hata `Dump` ayıklama yapılarında bir üye işlevi tanımlar. `Dump` Bir`CDaoIndexFieldInfo` nesnenin içeriğini dökmek için kullanabilirsiniz.
+Dizinler koleksiyonu ilgilendiğiniz dizin nesnesini depoındaki içeren tabledef veya Recordset nesnesinin `GetIndexInfo` üye işlevini çağırın. Ardından, [CDaoIndexInfo](../../mfc/reference/cdaoindexinfo-structure.md) nesnesinin `m_pFieldInfos` üyesine erişin. `m_pFieldInfos` dizisinin uzunluğu `m_nFields`depolanır. `CDaoIndexFieldInfo` Ayrıca hata ayıklama yapılarında bir `Dump` member işlevi tanımlar. Bir `CDaoIndexFieldInfo` nesnesinin içeriğini dökmek için `Dump` kullanabilirsiniz.
 
 ## <a name="requirements"></a>Gereksinimler
 

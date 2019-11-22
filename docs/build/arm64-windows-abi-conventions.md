@@ -1,12 +1,12 @@
 ---
 title: ARM64 ABI kurallarına genel bakış
 ms.date: 03/27/2019
-ms.openlocfilehash: 3a3df475b8f814fcecaf2e67a0a62c7267a0de30
-ms.sourcegitcommit: e805200eaef4fe7a65a00051bbd305273af94fe7
+ms.openlocfilehash: 07d58bbd64795235ad63a7b26b6f18fcffdcd1d2
+ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74163226"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74303265"
 ---
 # <a name="overview-of-arm64-abi-conventions"></a>ARM64 ABI kurallarına genel bakış
 
@@ -105,10 +105,10 @@ Her kayda tam 128 bitlik bir değer (v0-V31 veya Q0-Q31 aracılığıyla) olarak
 
 Kayan nokta denetim kaydı (fpcr), içindeki çeşitli bit alanları üzerinde belirli gereksinimlere sahiptir:
 
-| Bits | Açıklama | Katılımcıdan? | Rol |
+| Bits | Anlamı | Katılımcıdan? | Rol |
 | - | - | - | - |
 | 26 | AHP | Geçici olmayan | Alternatif yarı duyarlık denetimi. |
-| 25 | DEĞERI | Geçici olmayan | Varsayılan NaN modu denetimi. |
+| 25 | DN | Geçici olmayan | Varsayılan NaN modu denetimi. |
 | 24 | FZ | Geçici olmayan | Sıfır moddan sıfıra denetim. |
 | 23-22 | RMode | Geçici olmayan | Yuvarlama modu denetimi. |
 | 15, 12-8 | IDE/ıXE/etc | Geçici olmayan | Özel durum yakalama bitlerini etkinleştir, her zaman 0 olmalıdır. |

@@ -1,118 +1,118 @@
 ---
-title: Okumanız ve anlamanız C++ Visual Studio'daki kod
-description: Kullanım C++ biçimlendirmek ve kodunuzu anlamak için Visual Studio'daki Kod Düzenleyicisi.
+title: Visual Studio 'da C++ kodu okuyun ve anlayın
+description: Kodunuzu biçimlendirmek C++ ve anlamak Için Visual Studio 'da kod düzenleyicisini kullanın.
 ms.date: 05/28/2019
-ms.openlocfilehash: c5e4d7f3e53ef37649e3635d11cf99b10cb8a7ee
-ms.sourcegitcommit: 65ed563a8a1d4d90f872a2a6edcb086f84ec9f77
+ms.openlocfilehash: d4af4c9bc747540bada49de305c45cffc5c44374
+ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66743383"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74303116"
 ---
-# <a name="read-and-understand-c-code-in-visual-studio"></a>Okumanız ve anlamanız C++ Visual Studio'daki kod
+# <a name="read-and-understand-c-code-in-visual-studio"></a>Visual Studio 'da C++ kodu okuyun ve anlayın
 
-C++ Kod Düzenleyicisi ve Visual Studio IDE birçok kodlama yardımları sağlayın. Bazı C++ için özeldir ve bazı temel olarak tüm Visual Studio dilleri için aynıdır. Paylaşılan özellikler hakkında daha fazla bilgi için bkz. [kodu ve metin düzenleyicisi kod yazma](/visualstudio/ide/writing-code-in-the-code-and-text-editor).  
+C++ Kod Düzenleyicisi ve VISUAL Studio IDE birçok kodlama yardımı sağlar. Bazıları için C++benzersizdir ve bazıları tüm Visual Studio dilleri için temelde aynıdır. Paylaşılan Özellikler hakkında daha fazla bilgi için bkz. kod [ve metin düzenleyicisinde kod yazma](/visualstudio/ide/writing-code-in-the-code-and-text-editor).  
 
 ## <a name="colorization"></a>Renklendirme
 
-Visual Studio dil anahtar sözcükleri, tür adları, değişken adları, işlev parametrelerini, dize sabit değerleri ve benzeri gibi simgeleri türlerini birbirinden ayırmak için söz dizimi öğeleri renklendirmesi.
+Visual Studio, dil anahtar kelimeleri, tür adları, değişken adları, işlev parametreleri, dize sabit değerleri vb. gibi sembol türlerini ayırt etmek için sözdizimi öğelerini renklendirir.
 
-![Renklendirme kodu](../ide/media/code-outline-colorization.png " C++ renklendirme")
+![Kod renklendirme](../ide/media/code-outline-colorization.png "C++renklendirme")
 
- Kullanılmayan kod (örneğin, bir #if 0 altındaki kodu), rengi daha soluk.
+ Kullanılmayan kod (bir #if 0 ' ın altında kod gibi) renkli olarak daha fafdır.
 
- ![Pasif kod](../ide/media/inactive-code-cpp.png " C++ pasif kod")
+ ![Etkin olmayan kod](../ide/media/inactive-code-cpp.png "C++etkin olmayan kod")
 
-Renkleri "Yazı tiplerini" yazarak, özelleştirebileceğiniz **hızlı başlatma**ve ardından **yazı tipleri ve renkler**. İçinde **yazı tipleri ve renkler** C iletişim kaydırın /C++ seçenekleri ve bir özel yazı tipi ve/veya renk seçin.
+**Hızlı Başlat**' da "yazı tipleri" yazarak ve ardından **yazı tipleri ve renkler**' i seçerek renkleri özelleştirebilirsiniz. **Yazı tipleri ve renkler** Iletişim kutusunda C/C++ seçeneklere gidin ve özel bir yazı tipi ve/veya renk seçin.
 
 ## <a name="outlining"></a>Anahat Oluşturma
 
-Bir kaynak kodu dosyasında herhangi bir yere sağ tıklayın ve seçin **anahat** kod bloklarını ve/veya yalnızca ilgilendiğiniz koda göz atmak daha kolay hale getirmek için özel bölgeleri'ni genişletin veya daraltın. Daha fazla bilgi için [anahat](/visualstudio/ide/outlining).
+Kaynak kodu dosyasında herhangi bir yere sağ tıklayın ve kod bloklarını ve/veya özel bölgeleri daraltmak veya genişletmek için **anahat oluşturma** 'yı, yalnızca ilgilendiğiniz koda Gözatmayı kolaylaştırmak için seçin. Daha fazla bilgi için bkz. [anahat oluşturma](/visualstudio/ide/outlining).
 
-![C&#43; &#43; anahat oluşturma](../ide/media/vs2015_cpp_outlining.png "anahat oluşturma")
+![C&#43; &#43; anahat oluşturma](../ide/media/vs2015_cpp_outlining.png "Anahat Oluşturma")
 
-İmlecinizi bir küme ayracı önüne yerleştirdiğinizde ' {' veya '}', düzenleyici eşleşen çözümlemesiyle vurgular.
+İmlecinizi, ' {' veya '} ' küme ayracı önüne yerleştirdiğinizde, düzenleyici eşleşen karşılığı vurgular.
 
-Diğer anahat oluşturma seçenekleri altında bulunan **Düzenle** > **anahat** da ana menüde.
+Diğer anahat oluşturma seçenekleri, ana **menüdeki** > **anahat oluşturma** altında bulunur.
 
 ## <a name="line-numbers"></a>Satır numaraları
 
-Satır numaraları giderek projenize ekleyebilirsiniz **Araçları** > **seçenekleri** > **metin düzenleyici** > **tüm Diller** > **genel** ya da "satır numaraları için" ile arayarak **Hızlı Başlat (Ctrl + Q)** . Satır numaraları ayarlanabilir tüm diller için veya yalnızca belirli diller için de dahil olmak üzere C++.
+**Araçlar** > **Seçenekler** > **metin Düzenleyicisi** ' ne kadar **tüm diller** > **genel** ' i > ve hızlı başlatma ile "satır numarası" araması yaparak projenize satır numaraları ekleyebilirsiniz **(CTRL + Q)** . Satır numaraları tüm diller için ya da dahil olmak üzere C++yalnızca belirli dillerde ayarlanabilir.
 
 ## <a name="scroll-and-zoom"></a>Kaydırma ve yakınlaştırma
 
-Tuşlarına basarak veya dışarı düzenleyicisinde yakınlaştırabilirsiniz **Ctrl** anahtar ve fare tekerleğini kaydırma. Ayrıca, sol alt köşedeki yakınlaştırma ayarını kullanarak yakınlaştırma yapabilirsiniz.
+**CTRL** tuşuna basarak ve fare tekerleği inizle kaydırarak düzenleyicide yakınlaştırıp uzaklaştırabilirsiniz. Ayrıca, sol alt köşedeki yakınlaştırma ayarını kullanarak da yakınlaştırma yapabilirsiniz.
 
-![C&#43; &#43; yakınlaştırma denetimi](../ide/media/zoom-control.png "yakınlaştırma denetimi")
+![C&#43; &#43; yakınlaştırma denetimi](../ide/media/zoom-control.png "Yakınlaştırma denetimi")
 
-Kaydırma çubuğu **eşleme modu** hızla kaydırma ve bir kod dosyası geçerli konumunuzu çıkmadan Gözat olanak tanır. Herhangi bir yere bu konuma gitmek için kod Haritası tıklayabilirsiniz.
+Kaydırma çubuğu **harita modu** , geçerli konumunuzu çıkmadan bir kod dosyasına hızlıca kaydırma yapmanızı ve göz atmanıza olanak sağlar. Doğrudan bu konuma gitmek için kod haritasında herhangi bir yere tıklayabilirsiniz.
 
-![Kod eşlemesi C'de&#43;&#43;](../ide/media/vs2015-cpp-code-map.png "kod eşlemesi")
+![C 'de kod Haritası&#43;&#43;](../ide/media/vs2015-cpp-code-map.png "Kod Haritası")
 
-Açmak için **eşleme modu**, türü "Bağlan" **hızlı başlatma** seçin ve arama kutusuna ana araç çubuğunda **kaydırma eşleme modunu kullan**. Daha fazla bilgi için [nasıl yapılır: Kaydırma çubuğunu özelleştirerek kodunuzu izleme](/visualstudio/ide/how-to-track-your-code-by-customizing-the-scrollbar).
+**Harita modunu**açmak için ana araç çubuğundaki **Hızlı başlatma** araması kutusuna "Eşle" yazın ve **kaydırma eşleme modunu kullan**' ı seçin. Daha fazla bilgi için bkz. [nasıl yapılır: kaydırma çubuğunu özelleştirerek kodunuzu izleme](/visualstudio/ide/how-to-track-your-code-by-customizing-the-scrollbar).
 
-Zaman **eşleme modu** kapalıysa, kaydırma çubuğu, dosyada yaptığınız değişiklikleri yine de vurgular. Yeşil kaydedilen değişiklikleri gösterir ve sarı kaydedilmemiş değişiklikleri gösterir.
+**Harita modu** kapalı olduğunda, kaydırma çubuğu hala dosyada yaptığınız değişiklikleri vurgulamaktadır. Yeşil, kaydedilen değişiklikleri ve sarı kaydedilmemiş değişiklikleri gösterir.
 
 ## <a name="quick-info-and-parameter-info"></a>Hızlı bilgi ve parametre bilgisi
 
-Herhangi bir değişken, işlev veya, ilgili bildirim ve yalnızca önceki bulunan açıklamalar da dahil olmak üzere bilgi almak için başka bir simge üzerine getirin.
+Bildirim ve hemen öncesinde bulunan tüm yorumlar dahil olmak üzere herhangi bir değişken, işlev veya başka bir simgenin üzerine gelin.
 
 ::: moniker range="vs-2019"
 
-![Hızlı bilgi C'de&#43;&#43;](../ide/media/quick-info-vs2019.png "hızlı bilgi")
+![C 'de hızlı bilgi&#43;&#43;](../ide/media/quick-info-vs2019.png "Hızlı Bilgi")
 
-**Hızlı bilgi** araç ipucu olan bir **çevrimiçi Ara** bağlantı. Git **Araçları** > **seçenekleri** > **metin düzenleyici**  >  **C++**  >  **Görünümü** arama sağlayıcısı belirtmek için. 
+**Hızlı bilgi** araç Ipucunda bir **çevrimiçi arama** bağlantısı vardır. Arama sağlayıcısını belirtmek için **araçlar** > **Seçenekler** > **metin Düzenleyicisi** > **C++**  > **görünümü** ' ne gidin. 
 
-Kodunuzda bir hata varsa, üzerine gelerek ve **hızlı bilgi** hata iletisini görüntüler. Hata Listesi penceresindeki hata iletisi da bulabilirsiniz.
+Kodunuzda bir hata varsa, üzerine gelin ve **hızlı bilgi** hata iletisini görüntüler. Hata iletisini Hata Listesi penceresinde de bulabilirsiniz.
 
-![Hızlı bilgi hata](../ide/media/quickinfo-on-error.png "hata hızlı bilgi")
+![Hata hakkında hızlı bilgi](../ide/media/quickinfo-on-error.png "Hata hakkında hızlı bilgi")
 
 ::: moniker-end
 
 ::: moniker range="<=vs-2017"
 
-![Hızlı bilgi C'de&#43;&#43;](../ide/media/quick-info.png "hızlı bilgi")
+![C 'de hızlı bilgi&#43;&#43;](../ide/media/quick-info.png "Hızlı Bilgi")
 
-Kodunuzda bir hata varsa, üzerine gelerek ve **hızlı bilgi** hata iletisini görüntüler. Hata iletisinde de bulabilirsiniz **hata listesi** penceresi.
+Kodunuzda bir hata varsa, üzerine gelin ve **hızlı bilgi** hata iletisini görüntüler. Hata iletisini **hata listesi** penceresinde de bulabilirsiniz.
 
-![Hızlı bilgi hata](../ide/media/quickinfo-on-error.png "hata hızlı bilgi")
+![Hata hakkında hızlı bilgi](../ide/media/quickinfo-on-error.png "Hata hakkında hızlı bilgi")
 
 ::: moniker-end
 
-Bir işlev çağırdığınızda **parametre bilgisi** parametreleri ve bunların beklenen sırası türleri gösterilmektedir.
+Bir işlevi çağırdığınızda **parametre bilgisi** parametrelerin türlerini ve beklendikleri sırayı gösterir.
 
-![Parametre bilgisi C'de&#43;&#43;](../ide/media/parameter-info.png "parametre bilgisi")
+![C 'de parametre bilgisi&#43;&#43;](../ide/media/parameter-info.png "Parametre Bilgisi")
 
 ## <a name="peek-definition"></a>Tanıma göz at
 
-Bir değişken veya işlev bildiriminin sağ tıklayın, ardından gelin seçin **Özet tanım** geçerli konumunuzu uzağa gitmeden tanımına bir satır içi görünümünü görmek için. Daha fazla bilgi için [Özet tanım (Alt + F12)](/visualstudio/ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12).
+Bir değişken veya işlev bildiriminin üzerine gelin, sağ tıklayın ve ardından Geçerli konumunuzda uzaklaşmadan, tanımının satır içi görünümünü görmek için **Gözat** ' ı seçin. Daha fazla bilgi için bkz. [Peek tanımı (alt + F12)](/visualstudio/ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12).
 
-![C&#43; &#43; Özet tanımı](../ide/media/vs2015_cpp_peek_definition.png "vs2015_cpp_peek_definition")
+![C&#43; &#43; Özeti tanımı](../ide/media/vs2015_cpp_peek_definition.png "vs2015_cpp_peek_definition")
 
 ##  <a name="f1-help"></a>F1 Yardımı
 
-Ya da herhangi bir tür, anahtar sözcüğü veya işlevi ve basın hemen sonra imlecin yerleştirileceği **F1** docs.microsoft.com'da doğrudan ilgili başvuru konusuna gidin. **F1** öğeler için hata listesinden ve birçok iletişim kutularında üzerinde de çalışır.
+İmleci herhangi bir tür, anahtar sözcük veya işlevi üzerine veya hemen sonrasına yerleştirin ve docs.microsoft.com üzerindeki ilgili başvuru konusuna doğrudan gitmek için **F1** 'e basın. **F1** Ayrıca hata listesindeki öğelerde ve birçok iletişim kutusunda da geçerlidir.
 
 ## <a name="class-view"></a>Sınıf Görünümü
 
-**Sınıf Görünümü** ağaçları tüm kod sembolleri proje başına olarak düzenlenmiş kendi kapsamı ve üst/alt öğe hiyerarşileri ve aranabilir bir kümesini görüntüler. Ne yapılandırabileceğiniz **sınıf görünümü** gelen görüntüler **sınıf görünümü ayarlar** (pencerenin üst kısmındaki dişli kutusu simgesine tıklayın).
+**Sınıf görünümü** , tüm kod sembolleri ve bunların kapsam ve üst/alt hiyerarşilerinden proje temelinde düzenli olarak aranabilir bir ağaç kümesi görüntüler. **Sınıf görünümü ayarlarından** hangi **sınıf görünümü** görüntüleyeceğini yapılandırabilirsiniz (pencerenin üst kısmındaki dişli kutusu simgesine tıklayın).
 
-![Sınıf Görünümü'nde C&#43;&#43;](../ide/media/class-view.png "sınıf görünümü")
+![C 'de Sınıf Görünümü&#43;&#43;](../ide/media/class-view.png "Sınıf Görünümü")
 
-## <a name="generate-graph-of-include-files"></a>Ekleme dosyalarının grafını oluştur
+## <a name="generate-graph-of-include-files"></a>Ekleme dosyalarının grafiğini oluştur
 
-Bir kod dosyası projenize sağ tıklayın ve seçin **ekleme dosyalarının grafını Oluştur** hangi dosyaları diğer dosyalar tarafından eklenir bir grafik görmek için.
+Projenizdeki bir kod dosyasına sağ tıklayın ve diğer dosyalar tarafından hangi dosyaların dahil edildiğini gösteren bir grafik görmek için **ekleme dosyaları grafiğini oluştur** ' u seçin.
 
-![C&#43; &#43; ekleme dosyalarının grafı](../ide/media/vs2015_cpp_include_graph.png "vs2015_cpp_include_graph")
+![İçerme&#43; &#43; dosyalarının C grafiği](../ide/media/vs2015_cpp_include_graph.png "vs2015_cpp_include_graph")
 
 ## <a name="view-call-hierarchy"></a>Çağrı hiyerarşisini görüntüle
 
-Herhangi bir işlev çağrısına sağ tıklayın ve çağrı yaptığı tüm işlevlerin ve çağırdığı tüm işlevlerin özyinelemeli listesini görüntüleyin. Listedeki her işlev aynı şekilde genişletilebilir. Daha fazla bilgi için [çağrı hiyerarşisi](/visualstudio/ide/reference/call-hierarchy).
+Herhangi bir işlev çağrısına sağ tıklayın ve çağırdığı tüm işlevlerin özyinelemeli bir listesini ve bunu çağıran tüm işlevleri görüntüleyin. Listedeki her bir işlev aynı şekilde genişletilebilir. Daha fazla bilgi için bkz. [çağrı hiyerarşisi](/visualstudio/ide/reference/call-hierarchy).
 
-![C&#43; &#43; çağrı hiyerarşisi](../ide/media/vs2015_cpp_call_hierarchy.png "vs2015_cpp_call_hierarchy")
+![C&#43; &#43; çağrısı hiyerarşisi](../ide/media/vs2015_cpp_call_hierarchy.png "vs2015_cpp_call_hierarchy")
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Düzenleme ve yeniden düzenleme, kod (C++)](writing-and-refactoring-code-cpp.md)</br>
-[Git, C++ Visual Studio'da temel kod](navigate-code-cpp.md)</br>
-[Canlı paylaşım için işbirliği yapınC++](live-share-cpp.md)
+[Kodu düzenleme ve yeniden düzenlemeC++()](writing-and-refactoring-code-cpp.md)</br>
+[Visual Studio C++ 'da kod tabanınız üzerinde gezinme](navigate-code-cpp.md)</br>
+[İçin Live Share işbirliği yapınC++](live-share-cpp.md)

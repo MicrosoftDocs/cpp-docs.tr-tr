@@ -1,27 +1,43 @@
 ---
-title: Komut Makroları ve Seçenek Makroları
-ms.date: 11/04/2016
+title: Komut makroları ve seçenek makroları
+description: Derleme araçları ve bunların seçenekleri için önceden tanımlanmış NMAKE makrolarını açıklar.
+ms.date: 11/20/2019
 helpviewer_keywords:
 - options macros
 - command macros in NMAKE
 - macros, options macros
 - macros, command macros
 ms.assetid: 50dff03c-0dc3-4a8a-9a17-57e0e4ea9bac
-ms.openlocfilehash: c6dad7b50d265a1460a98747665d48051078163a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+no-loc:
+- AS
+- AFLAGS
+- CC
+- CFLAGS
+- CPP
+- CPPFLAGS
+- CXX
+- CXXFLAGS
+- RC
+- RFLAGS
+- ias
+- ml
+- ml64
+- cl
+- rc
+ms.openlocfilehash: d5c4477fd97e2a6c48dbac4d0ce83f7fd5f12ad6
+ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62272444"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74303175"
 ---
-# <a name="command-macros-and-options-macros"></a>Komut Makroları ve Seçenek Makroları
+# <a name="command-macros-and-options-macros"></a>Komut makroları ve seçenek makroları
 
-Komut makroları, Microsoft ürünleri için önceden tanımlanmıştır. Seçenekler makroları, bu ürünler için seçenekleri temsil eder ve varsayılan olarak tanımlanmamış. Hem önceden tanımlanmış Çıkarsama kurallarında kullanılan ve açıklama blokları veya kullanıcı tanımlı çıkarım kuralları içinde kullanılabilir. Komut makroları kısmını veya tamamını seçenekleri dahil olmak üzere bir komut satırı temsil etmek için tanımlanabilir. Seçenekler makroları tanımsız boş bir dize oluşturur.
+Komut makroları, Microsoft ürünleri için önceden tanımlanmıştır. Seçenekler makroları bu ürünlerin seçeneklerini temsil eder ve varsayılan olarak tanımsız değildir. Her ikisi de önceden tanımlanmış çıkarım kurallarında kullanılır ve açıklama blokları veya Kullanıcı tanımlı çıkarım kurallarında kullanılabilir. Komut makroları, seçenekler de dahil olmak üzere bir komut satırının bir kısmını veya tümünü temsil edecek şekilde yeniden tanımlanabilir. Seçenekler makroları, belirtilmemişse boş bir dize oluşturur.
 
-|Microsoft Ürün|Komut makrosu|Olarak tanımlanmış|Seçenekleri makrosu|
+|Microsoft ürün|Komut makrosu|Farklı tanımlanmış|Seçenekler makrosu|
 |-----------------------|-------------------|----------------|-------------------|
-|Macro derleyicisi|**FARKLI**|ml|**AFLAGS**|
-|Temel derleyici|**BC**|bc|**BFLAGS**|
+|Makro Assembler|**AS**|ml, iasveya ml64|**AFLAGS**|
 |C derleyicisi|**CC**|cl|**CFLAGS**|
 |C++ Derleyicisi|**CPP**|cl|**CPPFLAGS**|
 |C++ Derleyicisi|**CXX**|cl|**CXXFLAGS**|

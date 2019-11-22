@@ -6,21 +6,21 @@ f1_keywords:
 helpviewer_keywords:
 - '@data symbol'
 ms.assetid: d3e99fb0-4c9e-40a8-9e2d-15de3b01a2fe
-ms.openlocfilehash: 456a1f1e53fbcba47d1ef33a1fa89b0d4fdc6a37
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 50c8128697ab9d488be013bed10d6875ce8bd33a
+ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62166873"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74302732"
 ---
-# <a name="data"></a>@data
+# <a name="data"></a>\@verileri
 
-Varsayılan veri grubu adı. Tüm modeller için DGROUP için değerlendirir **DÜZ**. Değerlendiren **DÜZ** altında **DÜZ** bellek modeli (metin makro).
+Varsayılan veri grubunun adı. **Düz**dışındaki tüm modeller IÇIN DGROUP olarak değerlendirilir. **Düz** bellek modeli (Metin makrosu) altında **düz** olarak değerlendirilir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> @data
+> **\@verileri**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Semboller Başvurusu](../../assembler/masm/symbols-reference.md)<br/>
+[Semboller Başvurusu](../../assembler/masm/symbols-reference.md)

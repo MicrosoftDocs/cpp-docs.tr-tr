@@ -6,21 +6,21 @@ f1_keywords:
 helpviewer_keywords:
 - '@B symbol'
 ms.assetid: ca17c71a-4a5d-4470-a098-484c781dbfa7
-ms.openlocfilehash: dc3e06283f1dc552a5f0cee6c8a7b608b5c421e7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0d21f09491a7349585e2a1a33092177940aac163
+ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62166379"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74302859"
 ---
-# <a name="b"></a>@B
+# <a name="b"></a>\@B
 
-Önceki konumunu [@@:](../../assembler/masm/at-at.md) etiketi.
+Önceki [\@\@:](../../assembler/masm/at-at.md) etiketinin konumu.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> @B
+> **\@B**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Semboller Başvurusu](../../assembler/masm/symbols-reference.md)<br/>
+[Semboller Başvurusu](../../assembler/masm/symbols-reference.md)

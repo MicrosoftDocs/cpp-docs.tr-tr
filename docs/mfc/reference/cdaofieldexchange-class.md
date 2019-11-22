@@ -14,19 +14,18 @@ helpviewer_keywords:
 - CDaoFieldExchange [MFC], m_nOperation
 - CDaoFieldExchange [MFC], m_prs
 ms.assetid: 350a663e-92ff-44ab-ad53-d94efa2e5823
-ms.openlocfilehash: 015fcdf0ece03bd52927196b6ff3cbe25f370e2b
-ms.sourcegitcommit: 2f96e2fda591d7b1b28842b2ea24e6297bcc3622
+ms.openlocfilehash: cfffebd16c3c1d62dc4084b962c22911e4b46ae5
+ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71096111"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74303877"
 ---
 # <a name="cdaofieldexchange-class"></a>Cdadofieldexchange sınıfı
 
 DAO veritabanı sınıfları tarafından kullanılan DAO Kayıt alanı değişimi (DFX) yordamlarını destekler.
 
 DAO, Office 2013 aracılığıyla desteklenir. DAO 3,6 son sürümdür ve artık kullanılmıyor olarak kabul edilir.
-
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -38,21 +37,21 @@ class CDaoFieldExchange
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Ad|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[Cdadofieldexchange:: IsValidOperation](#isvalidoperation)|Güncel işlem güncelleştirilmekte olan alanın türü için uygun ise sıfır olmayan bir değer döndürür.|
-|[Cdadofieldexchange:: settc](#setfieldtype)|Sonraki çağrıya `SetFieldType`kadar dfx işlevlerine yapılan tüm sonraki çağrılar tarafından temsil edilen kayıt kümesi veri üyesi (sütun veya parametre) türünü belirtir.|
+|[Cdadofieldexchange:: settc](#setfieldtype)|`SetFieldType`bir sonraki çağrıya kadar DFX işlevlerine yapılan tüm sonraki çağrılar tarafından temsil edilen kayıt kümesi veri üyesi (sütun veya parametre) türünü belirtir.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Ad|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
-|[Cdadofieldexchange:: m_nOperation](#m_noperation)|Kayıt kümesinin `DoFieldExchange` üye işlevine geçerli çağrı tarafından gerçekleştirilen DFX işlemi.|
+|[Cdadofieldexchange:: m_nOperation](#m_noperation)|Kayıt kümesinin `DoFieldExchange` üye işlevine yapılan geçerli çağrı tarafından gerçekleştirilen DFX işlemi.|
 |[Cdadofieldexchange:: m_prs](#m_prs)|DFX işlemlerinin gerçekleştirildiği kayıt kümesine yönelik bir işaretçi.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CDaoFieldExchange`taban sınıfına sahip değildir.
+`CDaoFieldExchange` temel bir sınıfa sahip değil.
 
 Özel veri türleri için veri değişim yordamlarını yazıyorsanız, bu sınıfı kullanın; Aksi takdirde, bu sınıfı doğrudan kullanamazsınız. DFX, [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) nesnenizin alan veri üyeleri ile veri kaynağındaki geçerli kaydın karşılık gelen alanları arasında verileri değiş tokuş eder. DFX, Exchange 'i veri kaynağından ve veri kaynağından her iki yönde yönetir. Özel DFX yordamları yazma hakkında bilgi için bkz. [Teknik Note 53](../../mfc/tn053-custom-dfx-routines-for-dao-database-classes.md) .
 
@@ -60,13 +59,13 @@ class CDaoFieldExchange
 >  DAO veritabanı sınıfları, açık veritabanı bağlantısı (ODBC) tabanlı MFC veritabanı sınıflarından farklıdır. Tüm DAO veritabanı sınıf adlarında "CDao" öneki vardır. ODBC veri kaynaklarına, DAO sınıflarıyla erişmeye devam edebilirsiniz. Genel olarak, DAO tabanlı MFC sınıfları ODBC tabanlı MFC sınıflarından daha yetenekli değildir. DAO tabanlı sınıflar, ODBC sürücüleri dahil olmak üzere verilere kendi veritabanı altyapıları aracılığıyla erişebilir. Ayrıca, DAO 'YU çağırmak zorunda kalmak yerine sınıfları kullanarak tablo ekleme gibi veri tanımlama dili (DDL) işlemlerini de destekler.
 
 > [!NOTE]
->  DAO Kayıt alanı değişimi (DFX), ODBC tabanlı MFC veritabanı sınıflarında ( `CDatabase`, `CRecordset`) kayıt alanı değişimi 'ne (RFX) çok benzer. RFX 'i anladıysanız, DFX kullanmayı daha kolay bulacaksınız.
+>  DAO Kayıt alanı değişimi (DFX), ODBC tabanlı MFC veritabanı sınıflarında (`CDatabase`, `CRecordset`) kayıt alanı değişimi 'ne (RFX) çok benzer. RFX 'i anladıysanız, DFX kullanmayı daha kolay bulacaksınız.
 
-Bir `CDaoFieldExchange` nesnesi, DAO Kayıt alanı değişimi 'nin gerçekleşmesi için gereken bağlam bilgilerini sağlar. `CDaoFieldExchange`nesneler, bağlama parametreleri ve alan veri üyeleri dahil olmak üzere bir dizi işlemi destekler ve geçerli kaydın alanlarında çeşitli bayraklar ayarlar. DFX işlemleri **, içindeki** `CDaoFieldExchange` **sabit listesi** tarafından tanımlanan türlerin kayıt kümesi sınıfı veri üyeleri üzerinde gerçekleştirilir. Olası **bir** bu değer şunlardır:
+Bir `CDaoFieldExchange` nesnesi, DAO Kayıt alanı değişimi 'nin gerçekleşmesi için gereken bağlam bilgilerini sağlar. `CDaoFieldExchange` nesneler, bağlama parametreleri ve alan veri üyeleri dahil olmak üzere bir dizi işlemi destekler ve geçerli kaydın alanlarında çeşitli bayraklar ayarlar. DFX işlemleri, `CDaoFieldExchange`**sabit listesi** tarafından tanımlanan türlerin kayıt kümesi sınıfı veri üyelerinde gerçekleştirilir. Olası **bir** bu değer şunlardır:
 
-- `CDaoFieldExchange::outputColumn`alan veri üyeleri için.
+- alan veri üyeleri için `CDaoFieldExchange::outputColumn`.
 
-- `CDaoFieldExchange::param`parametre veri üyeleri için.
+- parametre veri üyeleri için `CDaoFieldExchange::param`.
 
 [IsValidOperation](#isvalidoperation) member işlevi kendı özel DFX yordamlarını yazmak için sağlanır. [:D oFieldExchange işlevlerinde, Cdaokayıt kümenizde setıbu](../../mfc/reference/cdaorecordset-class.md#dofieldexchange) sıklıkla kullanacaksınız. [](#setfieldtype) DFX genel işlevleri hakkında daha fazla bilgi için bkz. [kayıt alanı değişim işlevleri](../../mfc/reference/record-field-exchange-functions.md). Kendi veri türlerinizin özel DFX yordamlarını yazma hakkında daha fazla bilgi için bkz. [teknik notta 53](../../mfc/tn053-custom-dfx-routines-for-dao-database-classes.md).
 
@@ -80,7 +79,7 @@ Bir `CDaoFieldExchange` nesnesi, DAO Kayıt alanı değişimi 'nin gerçekleşme
 
 ##  <a name="isvalidoperation"></a>Cdadofieldexchange:: IsValidOperation
 
-Kendi DFX işlevinizi yazarsanız, geçerli işlemin belirli `IsValidOperation` bir alan veri üyesi türü (a `CDaoFieldExchange::outputColumn` veya a `CDaoFieldExchange::param`) üzerinde gerçekleştirilip gerçekleştirilebileceğini öğrenmek için işlevinizin başlangıcında çağırın.
+Kendi DFX işlevinizi yazarsanız, geçerli işlemin belirli bir alan veri üyesi türü (`CDaoFieldExchange::outputColumn` veya `CDaoFieldExchange::param`) üzerinde gerçekleştirilip gerçekleştirilebileceğini öğrenmek için işlevinizin başlangıcında `IsValidOperation` çağırın.
 
 ```
 BOOL IsValidOperation();
@@ -102,12 +101,12 @@ Alan değişimi nesnesiyle ilişkili [CDaoRecordset](../../mfc/reference/cdaorec
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CDaoFieldExchange` Nesnesi, kayıt kümesinde çeşitli farklı DFX işlemleri için bağlam sağlar.
+`CDaoFieldExchange` nesnesi, kayıt kümesinde çeşitli farklı DFX işlemleri için bağlam sağlar.
 
 > [!NOTE]
 >  Aşağıdaki MarkForAddNew ve SetFieldNull işlemlerinde tanımlanan sözde değer, alanları null olarak işaretlemek için kullanılan bir değerdir. DAO Kayıt alanı değişim mekanizması (DFX), hangi alanların açık olarak null olarak işaretlendiğini belirlemede bu değeri kullanır. [Copaull](../../atl-mfc-shared/reference/coledatetime-class.md) ve [cotacurrency](../../mfc/reference/colecurrency-class.md) alanları için sözde değer gerekmez.
 
-Olası değerleri `m_nOperation` şunlardır:
+`m_nOperation` olası değerleri şunlardır:
 
 |Çalışma|Açıklama|
 |---------------|-----------------|
@@ -129,13 +128,13 @@ Olası değerleri `m_nOperation` şunlardır:
 
 ##  <a name="m_prs"></a>Cdadofieldexchange:: m_prs
 
-`CDaoFieldExchange` Nesneyle ilişkili [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) nesnesine yönelik bir işaretçi içerir.
+`CDaoFieldExchange` nesnesiyle ilişkili [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) nesnesine yönelik bir işaretçi içerir.
 
 ### <a name="remarks"></a>Açıklamalar
 
 ##  <a name="setfieldtype"></a>Cdadofieldexchange:: settc
 
-Sınıfınızın geçersiz kılmada çağırın `SetFieldType`. `CDaoRecordset` `DoFieldExchange`
+`CDaoRecordset` sınıfınızın `DoFieldExchange` geçersiz kılmada `SetFieldType` çağırın.
 
 ```
 void SetFieldType(UINT nFieldType);
@@ -144,7 +143,7 @@ void SetFieldType(UINT nFieldType);
 ### <a name="parameters"></a>Parametreler
 
 *N,*<br/>
-' De `CDaoFieldExchange`, aşağıdakilerden biri olabilecek olarak belirtilen **sabit**listesinin bir değeri:
+`CDaoFieldExchange`olarak belirtilen, aşağıdakilerden biri olabilen **sabit**listesi için bir değer:
 
 - `CDaoFieldExchange::outputColumn`
 
@@ -152,11 +151,11 @@ void SetFieldType(UINT nFieldType);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Normalde, ClassWizard bu çağrıyı sizin için yazar. Kendi işlevinizi yazarsanız ve işlevinizi `DoFieldExchange` yazmak için sihirbazı kullanıyorsanız, alan eşlemesi dışında kendi işlevinizdeki çağrıları ekleyin. Sihirbazı kullanmıyorsanız, bir alan eşlemesi olmayacaktır. Çağrı, sınıfınızın her bir alan veri üyesi için bir tane olmak üzere DFX işlevlerini çağırır ve alan türünü olarak `CDaoFieldExchange::outputColumn`tanımlar.
+Normalde, ClassWizard bu çağrıyı sizin için yazar. Kendi işlevinizi yazarsanız ve `DoFieldExchange` işlevinizi yazmak için sihirbazı kullanıyorsanız, alan eşlemesi dışında kendi işlevinizdeki çağrıları ekleyin. Sihirbazı kullanmıyorsanız, bir alan eşlemesi olmayacaktır. Çağrı, sınıfınızın her bir alan veri üyesi için bir tane olmak üzere DFX işlevlerini çağırır ve alan türünü `CDaoFieldExchange::outputColumn`olarak tanımlar.
 
-Kayıt kümesi sınıfınızı parametreleştirebilirsiniz, tüm parametre veri üyeleri (alan haritası dışında) için DFX çağrıları eklemeniz ve bu çağrıların önüne ' a çağrı `SetFieldType`uygulamanız gerekir. Değeri `CDaoFieldExchange::param`geçirin. (Bunun yerine, bir [CDaoQueryDef](../../mfc/reference/cdaoquerydef-class.md) kullanabilir ve parametre değerlerini ayarlayabilirsiniz.)
+Kayıt kümesi sınıfınızı parametreleştirebilirsiniz, tüm parametre veri üyeleri (alan haritası dışında) için DFX çağrıları eklemeniz ve bu çağrıların önüne `SetFieldType`çağrısı yapmanız gerekir. `CDaoFieldExchange::param`değeri geçirin. (Bunun yerine, bir [CDaoQueryDef](../../mfc/reference/cdaoquerydef-class.md) kullanabilir ve parametre değerlerini ayarlayabilirsiniz.)
 
-Genel olarak, alan veri üyeleri veya parametre veri üyeleri ile ilişkili her bir DFX işlev çağrısı öncesinde öğesine `SetFieldType`bir çağrı gelmelidir. `SetFieldType` Her `SetFieldType` çağrının *Neli* parametresi, çağrıyı izleyen DFX işlev çağrılarının gösterdiği veri üyelerinin türünü tanımlar.
+Genel olarak, alan veri üyeleri veya parametre veri üyeleri ile ilişkili her bir DFX işlev çağrısı öncesinde `SetFieldType`çağrısı olmalıdır. Her `SetFieldType` çağrısının *Neli* parametresi, `SetFieldType` ÇAĞRıSıNı izleyen DFX işlev çağrılarının gösterdiği veri üyelerinin türünü tanımlar.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

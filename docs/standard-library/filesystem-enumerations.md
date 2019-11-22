@@ -1,5 +1,5 @@
 ---
-title: '&lt;Dosya&gt; sistemi numaralandırmaları'
+title: '&lt;dosya sistemi&gt; numaralandırmalar'
 ms.date: 11/04/2016
 f1_keywords:
 - filesystem/std::filesystem::copy_options
@@ -11,20 +11,20 @@ f1_keywords:
 - filesystem/std::filesystem::perms
 - filesystem/std::experimental::filesystem::perms
 ms.assetid: 0096c046-d101-464c-8259-b878a48280b0
-ms.openlocfilehash: dfbcf65462f0bb7bc6ca44f43507efa7b753e7bc
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: f148347cd132a604622415c65bb3e0352f5308eb
+ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68457706"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74303495"
 ---
-# <a name="ltfilesystemgt-enumerations"></a>&lt;Dosya&gt; sistemi numaralandırmaları
+# <a name="ltfilesystemgt-enumerations"></a>&lt;dosya sistemi&gt; numaralandırmalar
 
 Bu konu, dosya sistemi üstbilgisindeki numaralandırmaları belgeler.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<deneysel/FileSystem >
+**Üstbilgi:** \<deneysel/FileSystem >
 
 **Ad alanı:** std:: deneysel:: FileSystem
 
@@ -79,14 +79,14 @@ enum class directory_options {
 
 ### <a name="values"></a>Değerler
 
-|Ad|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |`none`|Varsayılan davranış: dizinlere sembolik bağlantıları yoksayın. İzin reddedildi hatası.|
 |`follow_directory_symlink`|Gerçek dizinler olarak dizinlere sembolik bağlantıları değerlendirin.|
 
 ## <a name="file_type"></a>file_type
 
-Dosya türleri için bir sabit listesi. Desteklenen değerler normal, dizin, NOT_FOUND ve bilinmelidir.
+Dosya türleri için bir sabit listesi. Desteklenen değerler normal, dizin, not_found ve bilinmelidir.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -107,7 +107,7 @@ enum class file_type {
 
 ### <a name="values"></a>Değerler
 
-|Ad|Değer|Açıklama|
+|Name|Value|Açıklama|
 |----------|-----------|-----------------|
 |`not_found`|-1|Varolmayan bir dosyayı temsil eder.|
 |`none`|0|Tür özniteliği olmayan bir dosyayı temsil eder. (Desteklenmiyor.)|
@@ -122,7 +122,7 @@ enum class file_type {
 
 ## <a name="perm_options"></a>perm_options
 
-,, `replace`Ve `add` değerlerini`nofollow`içerir. `remove`
+`replace`, `add`, `remove`ve `nofollow`değerleri içerir.
 
 ```cpp
 enum class perm_options;
@@ -130,7 +130,7 @@ enum class perm_options;
 
 ## <a name="perms"></a>izinleri
 
-Dosya izinleri için bayraklar. Desteklenen değerler temelde "ReadOnly" ve hepsi. Salt okunur bir dosya için, * _write bitlerinin hiçbiri ayarlanmadı. Aksi halde `all` bit (0x0777) ayarlanır.
+Dosya izinleri için bayraklar. Desteklenen değerler temelde "ReadOnly" ve hepsi. Salt okunur bir dosya için, * _write bitlerin hiçbiri ayarlanmadı. Aksi takdirde `all` bit (0x0777) ayarlanır.
 
 ### <a name="syntax"></a>Sözdizimi
 

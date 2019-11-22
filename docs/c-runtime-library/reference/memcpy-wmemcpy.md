@@ -27,12 +27,12 @@ helpviewer_keywords:
 - wmemcpy function
 - memcpy function
 ms.assetid: 34abb90b-bffb-46dc-a2f3-a5e9940839d6
-ms.openlocfilehash: e9d947dc4e9ecea654e8cb16e957887fe4360161
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: bf7f12cd00780347f23252764aace449dd6f5722
+ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70951849"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74303297"
 ---
 # <a name="memcpy-wmemcpy"></a>memcpy, wmemcpy
 
@@ -61,7 +61,7 @@ Yeni arabellek.
 *YN*<br/>
 Kopyalanacak arabellek.
 
-*biriktirme*<br/>
+{1&gt;count&lt;1}<br/>
 Kopyalanacak karakter sayısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -80,7 +80,7 @@ Kopyalanacak karakter sayısı.
 >
 > VC + + derleyicisi ve kitaplıklar tarafından daha dikkatli **scrutinized olduğundan,** bu çağrılara, başka BIR şekilde SDL ile uyumlu olan kod içinde izin verilir.  uygulama kaynak kodunda tanıtılan **memcler** çağrıları yalnızca, bu kullanım güvenlik uzmanları tarafından incelenmek için SDL ile uyumludur.
 
-**Memcler** ve **wmemcpy** işlevleri, işlevlerin kullanım dışı olması için, aşağıdaki örnekte olduğu gibi, yalnızca sabit **_CRT_SECURE_DEPRECATE_MEMORY** , ekleme ifadesiyle önce tanımlanırsa kullanım dışı bırakılır:
+**Memcler** ve **wmemcpy** işlevleri, işlevlerin kullanım dışı olması için aşağıdaki örnekte olduğu gibi, yalnızca sabit **_CRT_SECURE_DEPRECATE_MEMORY** dahil etme ifadesiyle önce tanımlanmışsa kullanım dışı bırakılır:
 
 ```C
 #define _CRT_SECURE_DEPRECATE_MEMORY

@@ -8,24 +8,24 @@ helpviewer_keywords:
 - splitter window classes [MFC]
 - view classes [MFC], Windows
 ms.assetid: b11683fb-9f43-4de3-9499-2b55775f9870
-ms.openlocfilehash: f3e9ea2ebf3eb0ce04fde0339aaf0243686248a9
-ms.sourcegitcommit: 2f96e2fda591d7b1b28842b2ea24e6297bcc3622
+ms.openlocfilehash: a3e0f837bc13c022bec91bfff6e38c1513abaf16
+ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71096035"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74302971"
 ---
 # <a name="view-classes-windows"></a>Görünüm Sınıfları (Windows)
 
-`CView`ve türetilmiş sınıfları, bir çerçeve penceresinin istemci alanını temsil eden alt bir pencere. Görünümler, verileri gösterir ve bir belge için girişi kabul eder.
+`CView` ve türetilmiş sınıfları, bir çerçeve penceresinin istemci alanını temsil eden alt Windows 'lardır. Görünümler, verileri gösterir ve bir belge için girişi kabul eder.
 
 Bir görünüm sınıfı bir belge sınıfı ve bir belge şablonu nesnesi kullanan bir çerçeve pencere sınıfı ile ilişkilendirilir.
 
 [CView](../mfc/reference/cview-class.md)<br/>
-Belge verilerinin uygulamaya özgü görünümleri için temel sınıf. Görünümler verileri görüntüler ve verileri düzenlemek veya seçmek için Kullanıcı girişini kabul eder. Görünüm sınıfınızı veya sınıflarınızı öğesinden `CView`türetirsiniz.
+Belge verilerinin uygulamaya özgü görünümleri için temel sınıf. Görünümler verileri görüntüler ve verileri düzenlemek veya seçmek için Kullanıcı girişini kabul eder. Görünüm sınıfınızı veya sınıflarınızı `CView`türetebilirsiniz.
 
 [CScrollView](../mfc/reference/cscrollview-class.md)<br/>
-Kaydırma özelliklerine sahip görünümler için temel sınıf. Otomatik kaydırma `CScrollView` için görünümündeki görünüm sınıfınızı türetirsiniz.
+Kaydırma özelliklerine sahip görünümler için temel sınıf. Otomatik kaydırma için `CScrollView` görünüm sınıfınızı türetirsiniz.
 
 ## <a name="form-and-record-views"></a>Form ve kayıt görünümleri
 
@@ -34,10 +34,10 @@ Form görünümleri Ayrıca görünümleri de kaydırmalıdır. Bunlar bir ileti
 Kayıt görünümleri form görünümlerinden türetilir. İletişim kutusu şablonuna ek olarak, bir veritabanı bağlantısı da vardır.
 
 [CFormView](../mfc/reference/cformview-class.md)<br/>
-Bir iletişim kutusu şablonunda düzeni tanımlanan bir kaydırma görünümü. Bir iletişim kutusu şablonunu `CFormView` temel alan bir kullanıcı arabirimi uygulamak için öğesinden bir sınıf türetebilirsiniz.
+Bir iletişim kutusu şablonunda düzeni tanımlanan bir kaydırma görünümü. Bir iletişim kutusu şablonuna dayalı kullanıcı arabirimini uygulamak için `CFormView` bir sınıf türetebilirsiniz.
 
 [CDaoRecordView](../mfc/reference/cdaorecordview-class.md)<br/>
-Doğrudan bir veri erişim nesnesi (DAO) kayıt kümesi nesnesine bağlı bir form görünümü sağlar. Tüm form görünümleri gibi, bir `CDaoRecordView` iletişim kutusu şablonunu temel alır. DAO, Access veritabanları ile birlikte kullanılır ve Office 2013 aracılığıyla desteklenir. 3,6 son sürümdür ve artık kullanılmıyor olarak kabul edilir.
+Doğrudan bir veri erişim nesnesi (DAO) kayıt kümesi nesnesine bağlı bir form görünümü sağlar. Tüm form görünümleri gibi, bir `CDaoRecordView` iletişim kutusu şablonunu temel alır. DAO, Access veritabanları ile birlikte kullanılır ve Office 2013 aracılığıyla desteklenir. DAO 3,6 son sürümdür ve artık kullanılmıyor olarak kabul edilir.
 
 [CRecordView](../mfc/reference/crecordview-class.md)<br/>
 Açık veritabanı bağlantısı (ODBC) kayıt kümesi nesnesine doğrudan bağlı bir form görünümü sağlar. Tüm form görünümleri gibi, bir `CRecordView` iletişim kutusu şablonunu temel alır.
@@ -66,7 +66,7 @@ Windows ağaç denetimi içeren bir görünüm (bkz. [Ctreeci](../mfc/reference/
 
 ## <a name="related-classes"></a>İlgili sınıflar
 
-`CSplitterWnd`tek bir çerçeve penceresi içinde birden çok görünümizin sağlar. `CPrintDialog`ve `CPrintInfo` görünümlerin yazdırma ve baskı önizleme özelliğini destekler. `CRichEditDoc`ve `CRichEditCntrItem` , OLE kapsayıcı `CRichEditView` yeteneklerini uygulamak için ile kullanılır.
+`CSplitterWnd`, tek bir çerçeve penceresi içinde birden çok görünümizin sağlar. `CPrintDialog` ve `CPrintInfo` görünümlerin yazdırma ve baskı önizleme özelliğini destekler. `CRichEditDoc` ve `CRichEditCntrItem` OLE kapsayıcı özelliklerini uygulamak için `CRichEditView` ile birlikte kullanılır.
 
 [CSplitterWnd](../mfc/reference/csplitterwnd-class.md)<br/>
 Kullanıcının birden çok bölmeye bölüneceği bir pencere. Bu bölmeler Kullanıcı veya sabit boyuta göre yeniden boyutlandırılabilir.
@@ -75,13 +75,13 @@ Kullanıcının birden çok bölmeye bölüneceği bir pencere. Bu bölmeler Kul
 Dosya yazdırmak için standart bir iletişim kutusu sağlar.
 
 [CPrintInfo](../mfc/reference/cprintinfo-structure.md)<br/>
-Yazdırma veya baskı önizleme işi hakkında bilgi içeren bir yapı. Yazdırma mimarisi `CView`tarafından kullanılır.
+Yazdırma veya baskı önizleme işi hakkında bilgi içeren bir yapı. `CView`yazdırma mimarisi tarafından kullanılır.
 
 [CRichEditDoc](../mfc/reference/cricheditdoc-class.md)<br/>
-İçinde olan OLE istemci öğelerinin listesini tutar `CRichEditView`.
+`CRichEditView`olan OLE istemci öğelerinin listesini tutar.
 
 [CRichEditCntrItem](../mfc/reference/cricheditcntritem-class.md)<br/>
-İçinde depolanan bir OLE öğesine istemci tarafı erişimi sağlar `CRichEditView`.
+`CRichEditView`depolanan bir OLE öğesine istemci tarafı erişimi sağlar.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
