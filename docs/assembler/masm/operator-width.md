@@ -8,21 +8,21 @@ helpviewer_keywords:
 - WIDTH operator
 - operator WIDTH
 ms.assetid: 7b00e296-a101-4cd5-a578-17eec7a4eb44
-ms.openlocfilehash: d77bc86a8b1aab1654198c58a42b0b0449502622
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 81fb9926116d805df32e7bbc14bccbcac95aa9eb
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62198892"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74395323"
 ---
 # <a name="operator-width"></a>WIDTH işleci
 
-Geçerli bir bit cinsinden genişliğini döndürür *recordfieldname* veya *kayıt*.
+Returns the width in bits of the current *recordfieldname* or *record*.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> Genişlik {recordfieldname | kayıt}
+> **WIDTH** {*recordfieldname* | *record*}
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İşleçler Başvurusu](../../assembler/masm/operators-reference.md)<br/>
+[Operators reference](operators-reference.md)

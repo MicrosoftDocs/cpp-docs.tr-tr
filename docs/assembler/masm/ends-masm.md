@@ -6,21 +6,21 @@ f1_keywords:
 helpviewer_keywords:
 - ENDS directive
 ms.assetid: 30f68c58-de1f-4bdd-ac83-4658bdbaad65
-ms.openlocfilehash: a92b307e0d426afb4c74113de5738c15be064040
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 95ade586e1a2a422e7cfbc00fa9d92471d0f8bdf
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62185167"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74397625"
 ---
 # <a name="ends-masm"></a>ENDS (MASM)
 
-Segment, yapı veya birleşim sonunu işaretleyen *adı* ile daha önce başlamış [SEGMENT](../../assembler/masm/segment.md), [yapı](../../assembler/masm/struct-masm.md), [birleşim](../../assembler/masm/union.md), ya da bir Basitleştirilmiş kesimi yönergesi.
+Marks the end of segment, structure, or union *name* previously begun with [SEGMENT](../../assembler/masm/segment.md), [STRUCT](../../assembler/masm/struct-masm.md), [UNION](../../assembler/masm/union.md), or a simplified segment directive.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> ADI
+> *name* **ENDS**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

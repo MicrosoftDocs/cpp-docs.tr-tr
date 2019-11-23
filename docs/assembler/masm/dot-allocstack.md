@@ -6,34 +6,34 @@ f1_keywords:
 helpviewer_keywords:
 - .ALLOCSTACK directive
 ms.assetid: 9801594b-7ac2-4df2-a49d-07d9dd9af99e
-ms.openlocfilehash: b92db3d03bb5c45e67473cd4085f2369698f6b42
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6d9d86371503992d1bebe738fb6e6773581b10e3
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62185659"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74398624"
 ---
 # <a name="allocstack"></a>.ALLOCSTACK
 
-Oluşturur bir **UWOP_ALLOC_SMALL** veya **UWOP_ALLOC_LARGE** prolog geçerli uzaklığı için belirtilen boyut ile.
+Generates a **UWOP_ALLOC_SMALL** or a **UWOP_ALLOC_LARGE** with the specified size for the current offset in the prologue.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> . ALLOCSTACK boyutu
+> **.ALLOCSTACK** *size*
 
 ## <a name="remarks"></a>Açıklamalar
 
-MASM için verilen boyuta en verimli kodlama seçersiniz.
+MASM will choose the most efficient encoding for a given size.
 
-. ALLOCSTACK ml64.exe kullanıcılara nasıl çerçeve işlevi geriye doğru izler belirtmek ve yalnızca gelen genişletir prolog içinde izin [PROC](../../assembler/masm/proc.md) çerçeve bildirimine [. ENDPROLOG](../../assembler/masm/dot-endprolog.md) yönergesi. Bu yönergeler, kodu üretmemesi; yalnızca hazırlanmasının `.xdata` ve `.pdata`. . Geriye doğru olması için eylemleri uygulayan yönergeleri ile ALLOCSTACK gelmelidir. Bırakma yönergeleri hem anlaşma emin olmak için bunlar bir makroda geriye doğru şekilde tasarlanmıştır kodu kaydırmak için iyi bir uygulamadır.
+**.ALLOCSTACK** allows ml64.exe users to specify how a frame function unwinds and is only allowed within the prologue, which extends from the [PROC](../../assembler/masm/proc.md) FRAME declaration to the [.ENDPROLOG](../../assembler/masm/dot-endprolog.md) directive. These directives do not generate code; they only generate `.xdata` and `.pdata`. **.ALLOCSTACK** should be preceded by instructions that actually implement the actions to be unwound. It is a good practice to wrap both the unwind directives and the code they are meant to unwind in a macro to ensure agreement.
 
-`size` İşlenen 8'in katı olmalıdır.
+The *size* operand must be a multiple of 8.
 
-Daha fazla bilgi için bkz. [x64 (ml64.exe) için MASM](../../assembler/masm/masm-for-x64-ml64-exe.md).
+For more information, see [MASM for x64 (ml64.exe)](../../assembler/masm/masm-for-x64-ml64-exe.md).
 
 ## <a name="sample"></a>Örnek
 
-Aşağıdaki örnek, bir geriye doğru izleme/özel durum işleyicisi belirteceğiniz gösterilmektedir:
+The following sample shows how to specify an unwind/exception handler:
 
 ```asm
 ; ml64 ex3.asm /link /entry:Example1  /SUBSYSTEM:Console
@@ -65,4 +65,4 @@ END
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)<br/>
+[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)

@@ -6,25 +6,25 @@ f1_keywords:
 helpviewer_keywords:
 - IFB directive
 ms.assetid: 6395e313-e590-41b3-824c-577f200faf80
-ms.openlocfilehash: 815cb75e0d00cc660c8dfad896fbe0064881edd7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3f45ce4e50e8cc33dc060e8cc4a48626e677b3c2
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62202936"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74397438"
 ---
 # <a name="ifb"></a>IFB
 
-Derleme verir *textitem* boştur.
+Grants assembly if *textitem* is blank.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> IFB *textitem*
+> **IFB** *textitem*
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bkz: [IF](../../assembler/masm/if-masm.md) tam söz dizimi.
+See [IF](../../assembler/masm/if-masm.md) for complete syntax.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

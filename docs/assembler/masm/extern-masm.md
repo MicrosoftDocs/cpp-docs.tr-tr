@@ -6,25 +6,25 @@ f1_keywords:
 helpviewer_keywords:
 - EXTERN directive
 ms.assetid: 667d703d-3aaf-4139-a586-29bc5dab1aff
-ms.openlocfilehash: 30d1b3ae7c6676aeb97b91c7627da859525b9ce1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fc66338d90b54ecb12ef3ab1aa56214fb445cb13
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62203621"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74397562"
 ---
 # <a name="extern-masm"></a>EXTERN (MASM)
 
-Bir veya daha fazla dış değişkenlerin, etiketler veya adlı sembolleri tanımlar *adı* türü olan *türü*.
+Defines one or more external variables, labels, or symbols called *name* whose type is *type*.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> EXTERN [[*langtype*]] *adı* [[(*altid*)]]: *türü* [[, [[*langtype*]]  *adı* [[(*altid*)]]: *türü*]]...
+> **EXTERN** ⟦*language-type*⟧ *name* ⟦ __(__ *altid* __)__ ⟧ __:__ *type* ⟦ __,__ ⟦*language-type*⟧ *name* ⟦ __(__ *altid* __)__ ⟧ __:__ *type* ...⟧
 
 ## <a name="remarks"></a>Açıklamalar
 
-*Türü* olabilir [ABS](../../assembler/masm/operator-abs.md), hangi içeri aktarmalar *adı* bir sabit olarak. Aynı [EXTRN](../../assembler/masm/extrn.md).
+The *type* can be [ABS](../../assembler/masm/operator-abs.md), which imports *name* as a constant. Same as [EXTRN](../../assembler/masm/extrn.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)<br/>
+[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)

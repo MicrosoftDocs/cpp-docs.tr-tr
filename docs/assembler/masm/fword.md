@@ -6,26 +6,26 @@ f1_keywords:
 helpviewer_keywords:
 - FWORD directive
 ms.assetid: 8fd33d12-d49d-4e2a-80ac-0f55792e99be
-ms.openlocfilehash: 85ea61b4d2d08e183663d4c0d1e15f998b49d3c4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 65fd1c35ce5787b0fc0fa3ecb2cb5cb48050e28b
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62185538"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74397504"
 ---
 # <a name="fword"></a>FWORD
 
-Ayırır ve her biri için isteğe bağlı olarak depolama 6 bayt başlatır `initializer`.
+Allocates and optionally initializes 6 bytes of storage for each *initializer*.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> [[ad]] FWORD Başlatıcı [[, başlatıcı]]...
+> ⟦*name*⟧ **FWORD** *initializer* ⟦ __,__ *initializer* ...⟧
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir tür tanımlayıcısı da kullanılabilir herhangi bir yasal türüdür.
+Also can be used as a type specifier anywhere a type is legal.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)<br/>
-[DF](../../assembler/masm/df.md)<br/>
+[Directives Reference](../../assembler/masm/directives-reference.md)\
+[DF](../../assembler/masm/df.md)

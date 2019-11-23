@@ -1,5 +1,5 @@
 ---
-title: operator +
+title: '\+ işleci'
 ms.date: 08/30/2018
 f1_keywords:
 - +
@@ -10,21 +10,21 @@ helpviewer_keywords:
 - arithmetic operators [C++], addition
 - operators [MASM], arithmetic
 ms.assetid: 89e31a6e-2f68-4481-b394-1348e14e4653
-ms.openlocfilehash: 01bb647b6cef0bb417a9c897912387dc0019bf0b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e6f1e587e192fbf38d26c4485e97831b2242effc
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62177246"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74397129"
 ---
-# <a name="operator-"></a>operator +
+# <a name="operator-"></a>\+ işleci
 
-İlk işleç döndürür *İfade1* yanı sıra *expression2*.
+The first operator returns *expression1* plus *expression2*.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> *İfade1* + *expression2*
+> *expression1* + *expression2*
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İşleçler Başvurusu](../../assembler/masm/operators-reference.md)<br/>
+[İşleçler Başvurusu](../../assembler/masm/operators-reference.md)

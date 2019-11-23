@@ -1,5 +1,5 @@
 ---
-title: İşleci &amp;
+title: operator &amp;
 ms.date: 08/30/2018
 f1_keywords:
 - '&'
@@ -9,21 +9,21 @@ helpviewer_keywords:
 - AND operator
 - '& operator'
 ms.assetid: f3c51a54-48ba-4b99-afed-5c45177bf694
-ms.openlocfilehash: f3e41c3ad2b086dcd2c20b97227b8f6cb40141ac
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e42279961d2ac1fe7a67f5fc7039461c2c41e472
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62176804"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74397094"
 ---
-# <a name="operator-amp"></a>İşleci &amp;
+# <a name="operator-amp"></a>operator &amp;
 
-Bit düzeyinde **ve**. Yalnızca kullanılan [. Eğer](../../assembler/masm/dot-if.md), [. SIRADA](../../assembler/masm/dot-while.md), veya [. Yineleme](../../assembler/masm/dot-repeat.md) engeller ve derleme zamanında çalışma zamanında değerlendirilir.
+Bitwise **AND**. Used only within [.IF](../../assembler/masm/dot-if.md), [.WHILE](../../assembler/masm/dot-while.md), or [.REPEAT](../../assembler/masm/dot-repeat.md) blocks and evaluated at run time, not at assembly time.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> İfade1 & expression2
+> *expression1* **&** *expression2*
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İşleçler Başvurusu](../../assembler/masm/operators-reference.md)<br/>
+[İşleçler Başvurusu](../../assembler/masm/operators-reference.md)

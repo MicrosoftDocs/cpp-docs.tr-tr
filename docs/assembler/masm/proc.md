@@ -6,31 +6,31 @@ f1_keywords:
 helpviewer_keywords:
 - PROC directive
 ms.assetid: ee5bb6b6-fa15-4d73-b0cf-e650178539a9
-ms.openlocfilehash: e7931c97570c0fefcacb0123d75934867793fba4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5d1e44fcc4adbbe012b2f31fe9c6c27511bafff1
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62210540"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74395024"
 ---
 # <a name="proc"></a>PROC
 
-Başlangıç ve bitiş adlı bir yordam bloğunun işaretler *etiket*. Bloğu içindeki deyimler ile çağrılabilir **çağrı** yönerge veya [INVOKE](../../assembler/masm/invoke.md) yönergesi.
+Marks start and end of a procedure block called *label*. The statements in the block can be called with the **CALL** instruction or [INVOKE](../../assembler/masm/invoke.md) directive.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> *Etiket* PROC [[*uzaklık*]] [[*langtype*]] [[*görünürlük*]] [[\<*prologuearg*>]] [[ KULLANAN *reglist*]] [[, *parametre* [[:*etiketi*]]]...<br/>
-> [[Çerçeve [[:*ehandler adresi*]]]]<br/>
-> *Deyimleri*<br/>
-> *Etiket* ENDP
+> *label* **PROC** ⟦*distance*⟧ ⟦*language-type*⟧ ⟦*visibility*⟧ ⟦ __\<__ *prologuearg* __>__ ⟧ ⟦**USES** *reglist*⟧ ⟦ __,__ *parameter* ⟦ __:__ *tag*⟧ ...⟧\
+> ⟦**FRAME** ⟦ __:__ *ehandler-address*⟧ ⟧\
+> *statements*\
+> *label* **ENDP**
 
 ## <a name="remarks"></a>Açıklamalar
 
-[[Çerçeve [[:*ehandler adresi*]]]] yalnızca ml64.exe ile geçerlidir ve .pdata işlev bir tablo girişi oluşturun ve bir işlevin yapılandırılmış bilgiler sanal işlem bulunur, geriye doğru izleme MASM neden olan özel durum işleme geriye doğru davranışı.
+⟦**FRAME** ⟦ __:__ *ehandler-address*⟧ ⟧ is only valid with ml64.exe, and causes MASM to generate a function table entry in .pdata and unwind information in .xdata for a function's structured exception handling unwind behavior.
 
-Zaman **çerçeve** özniteliği kullanılır, bu gelmelidir bir [. ENDPROLOG](../../assembler/masm/dot-endprolog.md) yönergesi.
+When the **FRAME** attribute is used, it must be followed by an [.ENDPROLOG](../../assembler/masm/dot-endprolog.md) directive.
 
-Bkz: [x64 (ml64.exe) için MASM](../../assembler/masm/masm-for-x64-ml64-exe.md) ml64.exe kullanma hakkında daha fazla bilgi için.
+See [MASM for x64 (ml64.exe)](../../assembler/masm/masm-for-x64-ml64-exe.md) for more information on using ml64.exe.
 
 ## <a name="example"></a>Örnek
 
@@ -54,7 +54,7 @@ _text ENDS
 END
 ```
 
-Yukarıdaki kod, aşağıdaki işlev tablosu yayma ve geriye doğru izleme bilgilerini:
+The above code will emit the following function table and unwind information:
 
 ```Output
 FileHeader->Machine 34404
@@ -79,4 +79,4 @@ Dumping Unwind Information for file ex2.exe
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](../../assembler/masm/directives-reference.md)

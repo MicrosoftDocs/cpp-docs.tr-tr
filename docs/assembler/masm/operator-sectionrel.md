@@ -8,25 +8,25 @@ helpviewer_keywords:
 - SECTIONREL operator
 - operator SECTIONREL
 ms.assetid: db033a9d-b029-48dd-a010-d19e3a9d1af2
-ms.openlocfilehash: 6908d8a0d21e601217b0dea34ae1f2f7f01dd1ce
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ac8f99758541d975a1a2e505a6a7fcf3482a4432
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62176349"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74396480"
 ---
 # <a name="operator-sectionrel"></a>SECTIONREL işleci
 
-Son yürütülebilir dosyayı hedef içeren bölümün göreli ifadesinin bölüm göreli uzaklık döndürür.
+Returns the section relative offset of expression relative to the section containing the target in the final executable.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> SECTIONREL ifadesi
+> **SECTIONREL** *expression*
 
 ## <a name="remarks"></a>Açıklamalar
 
-SECTIONREL yalnızca COFF nesnesi çıkması ile kullanılabilir.
+**SECTIONREL** is available only with COFF object emission.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İşleçler Başvurusu](../../assembler/masm/operators-reference.md)<br/>
+[Operators reference](operators-reference.md)

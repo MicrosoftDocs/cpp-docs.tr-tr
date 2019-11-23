@@ -6,21 +6,21 @@ f1_keywords:
 helpviewer_keywords:
 - .SALL directive
 ms.assetid: 2791e746-96aa-4ed5-ae69-abd072378f86
-ms.openlocfilehash: 9384f33c6c5c77d8b9103ee5eda44d3dadf3644a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a7a72a28240deb222061de74a88f3105d63b24c2
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62204051"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74397974"
 ---
 # <a name="sall"></a>.SALL
 
-Bkz: [. NOLISTMACRO](../../assembler/masm/dot-nolistmacro.md).
+See [.NOLISTMACRO](../../assembler/masm/dot-nolistmacro.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
-> .SALL
+> **.SALL**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)
