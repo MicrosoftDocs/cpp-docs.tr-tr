@@ -6,21 +6,21 @@ f1_keywords:
 helpviewer_keywords:
 - SUBTTL directive
 ms.assetid: 927efadd-ec99-4de9-b64d-229bb2df3bf4
-ms.openlocfilehash: ca0dfe4382e56edd157c0669fb5a2b591f6abb02
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 91d744ec823dc737e45b580207bdf98d03326912
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62210158"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74393486"
 ---
 # <a name="subttl"></a>SUBTTL
 
-Bkz: [alt konu BAŞLIĞINI](../../assembler/masm/subtitle.md).
+See [SUBTITLE](../../assembler/masm/subtitle.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
-> SUBTTL
+> **SUBTTL**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

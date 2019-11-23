@@ -8,21 +8,21 @@ helpviewer_keywords:
 - OPATTR operator
 - operator OPATTR
 ms.assetid: ebf2e514-249d-44ad-8810-6bcefb3e4cef
-ms.openlocfilehash: 381951020ecd0603339208f88e5a1dc432c7cf2a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8287c5410beb44046f43eaa5a749506c640d9296
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62176570"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74396556"
 ---
 # <a name="operator-opattr"></a>OPATTR işleci
 
-Bir sözcük modunu ve kapsamı tanımlama döndürür *ifade*. Düşük bayt tarafından döndürülen bayt özdeş [. TÜR](../../assembler/masm/operator-dot-type.md). Yüksek bayt ek bilgiler içerir.
+Returns a word defining the mode and scope of *expression*. The low byte is identical to the byte returned by [.TYPE](../../assembler/masm/operator-dot-type.md). The high byte contains additional information.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> OPATTR ifadesi
+> **OPATTR** *expression*
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İşleçler Başvurusu](../../assembler/masm/operators-reference.md)<br/>
+[Operators reference](operators-reference.md)

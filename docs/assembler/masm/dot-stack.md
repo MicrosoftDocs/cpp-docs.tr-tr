@@ -6,21 +6,21 @@ f1_keywords:
 helpviewer_keywords:
 - .STACK directive
 ms.assetid: 70019463-5d4f-41b6-8464-023a8ac2466f
-ms.openlocfilehash: 78c089c771e8e5a8c82905578ec2377246a44a0e
-ms.sourcegitcommit: 45f1d889df633f0f7e4a8e813b46fa73c9858b81
+ms.openlocfilehash: aabb2fc1267277aded4802fc8e1992f6a5c78ced
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73703533"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74397903"
 ---
-# <a name="stack-32-bit-masm"></a>. YıĞıN (32-bit masa)
+# <a name="stack-32-bit-masm"></a>.STACK (32-bit MASM)
 
-İle kullanıldığında [. MODEL](../../assembler/masm/dot-model.md), yığın segmenti tanımlar (kesim adı yığını ile). İsteğe bağlı `size`, yığın için bayt sayısını belirtir (varsayılan 1.024). `.STACK` yönergesi Stack ifadesini otomatik olarak kapatır. (yalnızca 32-bit masa.)
+When used with [.MODEL](../../assembler/masm/dot-model.md), defines a stack segment (with segment name **STACK**). The optional *size* specifies the number of bytes for the stack (default 1,024). The **.STACK** directive automatically closes the stack statement. (32-bit MASM only.)
 
 ## <a name="syntax"></a>Sözdizimi
 
-> . YıĞıN [[size]]
+> **.STACK** ⟦*size*⟧
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

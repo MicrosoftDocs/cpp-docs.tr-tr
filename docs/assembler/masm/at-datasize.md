@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - '@DataSize symbol'
 ms.assetid: c31dd6ab-0706-43ed-9a5d-024730f7931b
-ms.openlocfilehash: be8495e609e5ca9cf45f7cac2e7d05c9298c4dcf
-ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
+ms.openlocfilehash: 18cafbe034dd34dde21871a6be7a75e54674b796
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74302725"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74399146"
 ---
 # <a name="datasize"></a>\@DataSize
 
-küçük, **küçük**, **Orta**ve **düz** **modeller için 0**, **kompakt** ve büyük modeller için 1 ve **çok** **büyük** model (sayısal eşdeğer) için 2.
+0 for **TINY**, **SMALL**, **MEDIUM**, and **FLAT** models, 1 for **COMPACT** and **LARGE** models, and 2 for **HUGE** model (numeric equate).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -23,4 +23,4 @@ küçük, **küçük**, **Orta**ve **düz** **modeller için 0**, **kompakt** ve
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Semboller Başvurusu](../../assembler/masm/symbols-reference.md)
+[Symbols reference](symbols-reference.md)
