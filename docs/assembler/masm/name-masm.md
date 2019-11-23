@@ -6,21 +6,21 @@ f1_keywords:
 helpviewer_keywords:
 - NAME directive
 ms.assetid: 7a7ab431-6ffe-4293-9b76-4a5e020c66da
-ms.openlocfilehash: cc8edf7e336fcd5c0e116c3a6162f95b22cb1f84
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9d97f5f2f1e66c1a9556f2db9b5ebe6069f03264
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62177480"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74397142"
 ---
 # <a name="name-masm"></a>NAME (MASM)
 
-Yoksayıldı.
+Ignored.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> NAME
+> **NAME**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

@@ -6,21 +6,21 @@ f1_keywords:
 helpviewer_keywords:
 - '@fardata? symbol'
 ms.assetid: 5184ac8d-c433-4136-81b2-3e7f6082415d
-ms.openlocfilehash: c2e036090d53aa2623faea50834cbcf1e5d1e436
-ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
+ms.openlocfilehash: 2b3df142a7cd45948c934cae04bdb36c00b5ba76
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74302668"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74399092"
 ---
-# <a name="fardata"></a>farverileri \@misiniz?
+# <a name="fardata"></a>\@fardata?
 
-Tarafından tanımlanan segmentin adı [. FARVERI?](../../assembler/masm/dot-fardata-q.md) yönergesi (Metin makrosu).
+The name of the segment defined by the [.FARDATA?](../../assembler/masm/dot-fardata-q.md) directive (text macro).
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **farverileri \@misiniz?**
+> **\@fardata?**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Semboller Başvurusu](../../assembler/masm/symbols-reference.md)
+[Symbols reference](symbols-reference.md)

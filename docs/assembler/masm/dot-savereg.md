@@ -6,27 +6,27 @@ f1_keywords:
 helpviewer_keywords:
 - .SAVEREG directive
 ms.assetid: 1dbc2ef6-a197-40e7-9e55-fddcae8cef29
-ms.openlocfilehash: cac7aa7f2bdbf6b60831d2beb062f86559ec0358
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 324cf0e70a7ad619e5741c9acc18c24a72f54d13
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62178169"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74397963"
 ---
 # <a name="savereg"></a>.SAVEREG
 
-Oluşturur ya da bir `UWOP_SAVE_NONVOL` veya `UWOP_SAVE_NONVOL_FAR` belirtilen kasa için kod girişi bırakma (`reg`) ve uzaklık (`offset`) geçerli başlangıç uzaklığını kullanarak. MASM en verimli kodlama seçersiniz.
+Generates either a `UWOP_SAVE_NONVOL` or a `UWOP_SAVE_NONVOL_FAR` unwind code entry for the specified register (*reg*) and offset (*offset*) using the current prologue offset. MASM will choose the most efficient encoding.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> . SAVEREG yazmaç, offset
+> **.SAVEREG** *reg* __,__ *offset*
 
 ## <a name="remarks"></a>Açıklamalar
 
-. SAVEREG ml64.exe kullanıcılara nasıl çerçeve işlevi geriye doğru izler belirtmek ve yalnızca gelen genişletir prolog içinde izin [PROC](../../assembler/masm/proc.md) çerçeve bildirimine [. ENDPROLOG](../../assembler/masm/dot-endprolog.md) yönergesi. Bu yönergeler, kodu üretmemesi; yalnızca hazırlanmasının `.xdata` ve `.pdata`. . Geriye doğru olması için eylemleri uygulayan yönergeleri ile SAVEREG gelmelidir. Bırakma yönergeleri hem anlaşma emin olmak için bunlar bir makroda geriye doğru şekilde tasarlanmıştır kodu kaydırmak için iyi bir uygulamadır.
+**.SAVEREG**allows ml64.exe users to specify how a frame function unwinds and is only allowed within the prologue, which extends from the [PROC](../../assembler/masm/proc.md) FRAME declaration to the [.ENDPROLOG](../../assembler/masm/dot-endprolog.md) directive. These directives do not generate code; they only generate `.xdata` and `.pdata`. **.SAVEREG** should be preceded by instructions that actually implement the actions to be unwound. It is a good practice to wrap both the unwind directives and the code they are meant to unwind in a macro to ensure agreement.
 
-Daha fazla bilgi için [x64 (ml64.exe) için MASM](../../assembler/masm/masm-for-x64-ml64-exe.md).
+For more information, see [MASM for x64 (ml64.exe)](../../assembler/masm/masm-for-x64-ml64-exe.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

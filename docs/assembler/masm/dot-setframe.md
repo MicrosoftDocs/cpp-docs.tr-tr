@@ -6,32 +6,32 @@ f1_keywords:
 helpviewer_keywords:
 - .SETFRAME directive
 ms.assetid: eaa9b5ed-4daa-4f1e-bdb6-100758007ab3
-ms.openlocfilehash: c2c35cdb2889350b27e9fb11c397b684506972c5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a21dda496d32abcfeb4692d0228afdbcfd4e5ebb
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62178182"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74397926"
 ---
 # <a name="setframe"></a>.SETFRAME
 
-Çerçeve doldurur, geriye doğru izleme bilgilerinde belirtilen yazmaç kullanarak alan ve uzaklık kaydetme (`reg`) ve uzaklık (`offset`). Uzaklık 16 olmalıdır ve 240 küçüktür veya eşittir. Bu yönerge ayrıca oluşturur bir `UWOP_SET_FPREG` belirtilen geçerli başlangıç uzaklığını kullanarak kaydetmek için kod girişi geriye doğru izleme.
+Fills in the frame register field and offset in the unwind information using the specified register (*reg*) and offset (*offset*). The offset must be a multiple of 16 and less than or equal to 240. This directive also generates a `UWOP_SET_FPREG` unwind code entry for the specified register using the current prologue offset.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> . SETFRAME yazmaç, offset
+> **.SETFRAME** *reg*, *offset*
 
 ## <a name="remarks"></a>Açıklamalar
 
-. SETFRAME sağlayan nasıl çerçeve işlevi geriye doğru izler ve yalnızca gelen genişletir prolog içinde izin ml64.exe kullanıcıların [PROC](../../assembler/masm/proc.md) çerçeve bildirimine [. ENDPROLOG](../../assembler/masm/dot-endprolog.md) yönergesi. Bu yönergeler, kodu üretmemesi; yalnızca hazırlanmasının `.xdata` ve `.pdata`. . Geriye doğru olması için eylemleri uygulayan yönergeleri ile SETFRAME gelmelidir. Bırakma yönergeleri hem anlaşma emin olmak için bunlar bir makroda geriye doğru şekilde tasarlanmıştır kodu kaydırmak için iyi bir uygulamadır.
+**.SETFRAME** allows ml64.exe users to specify how a frame function unwinds, and is only allowed within the prologue, which extends from the [PROC](../../assembler/masm/proc.md) FRAME declaration to the [.ENDPROLOG](../../assembler/masm/dot-endprolog.md) directive. These directives do not generate code; they only generate `.xdata` and `.pdata`. **.SETFRAME** should be preceded by instructions that actually implement the actions to be unwound. It is a good practice to wrap both the unwind directives and the code they are meant to unwind in a macro to ensure agreement.
 
-Daha fazla bilgi için [x64 (ml64.exe) için MASM](../../assembler/masm/masm-for-x64-ml64-exe.md).
+For more information, see [MASM for x64 (ml64.exe)](../../assembler/masm/masm-for-x64-ml64-exe.md).
 
 ## <a name="sample"></a>Örnek
 
 ### <a name="description"></a>Açıklama
 
-Aşağıdaki örnek, bir çerçeve işaretçisi kullanma işlemini gösterir:
+The following sample shows how to use a frame pointer:
 
 ### <a name="code"></a>Kod
 
@@ -64,4 +64,4 @@ END
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

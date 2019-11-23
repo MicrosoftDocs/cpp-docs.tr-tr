@@ -6,25 +6,25 @@ f1_keywords:
 helpviewer_keywords:
 - EXTERNDEF directive
 ms.assetid: 95a10de6-c345-4428-a2f2-90f7d411dc86
-ms.openlocfilehash: 23d34af470e825a8535de8cb28645a7bfb4c4d1b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 469b49832c171ee78336a0c457f0d269acd3b59d
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62203103"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74397535"
 ---
 # <a name="externdef"></a>EXTERNDEF
 
-Bir veya daha fazla dış değişkenlerin, etiketler veya adlı sembolleri tanımlar *adı* türü olan `type`.
+Defines one or more external variables, labels, or symbols called *name* whose type is *type*.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> [[Langtype]] EXTERNDEF adı: type [[, [[langtype]] ad: tür]]...
+> **EXTERNDEF** ⟦*language-type*⟧ *name* __:__ *type* ⟦ __,__ ⟦*language-type*⟧ *name* __:__ *type* ...⟧
 
 ## <a name="remarks"></a>Açıklamalar
 
-Varsa *adı* tanımlanan modülünde bunu kabul [genel](../../assembler/masm/public-masm.md). Varsa *adı* başvuruluyor modülünde bunu kabul [EXTERN](../../assembler/masm/extern-masm.md). Varsa *adı* olduğu başvurulmayan, göz ardı edilir. `type` Olabilir [ABS](../../assembler/masm/operator-abs.md), hangi içeri aktarmalar *adı* bir sabit olarak. Normalde kullanılan dosyaları ekleyin.
+If *name* is defined in the module, it is treated as [PUBLIC](../../assembler/masm/public-masm.md). If *name* is referenced in the module, it is treated as [EXTERN](../../assembler/masm/extern-masm.md). If *name* is not referenced, it is ignored. The *type* can be [ABS](../../assembler/masm/operator-abs.md), which imports *name* as a constant. Normally used in include files.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)<br/>
+[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)

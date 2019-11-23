@@ -6,21 +6,21 @@ f1_keywords:
 helpviewer_keywords:
 - '@Model symbol'
 ms.assetid: a67c04ac-6ba7-458c-8138-0346e5b85eb6
-ms.openlocfilehash: 09e5663a8c3bfe0f2ce0a94bcb4006f2dd654cc2
-ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
+ms.openlocfilehash: d62026b02f476a19defc9ae6c8e9c83500bfe067
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301912"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74398950"
 ---
-# <a name="model"></a>\@modeli
+# <a name="model"></a>\@Model
 
-1 küçük **model için 2** , **küçük** model için 2, **Compact** model için 3, orta model için 4, **Orta düzey** Için 5, büyük **model için 6** ve **düz** model için 7 (sayısal eşkarakter).
+1 for **TINY** model, 2 for **SMALL** model, 3 for **COMPACT** model, 4 for **MEDIUM** model, 5 for **LARGE** model, 6 for **HUGE** model, and 7 for **FLAT** model (numeric equate).
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **\@modeli**
+> **\@Model**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Semboller Başvurusu](../../assembler/masm/symbols-reference.md)
+[Symbols reference](symbols-reference.md)

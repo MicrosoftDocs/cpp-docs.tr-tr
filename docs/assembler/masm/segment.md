@@ -6,62 +6,62 @@ f1_keywords:
 helpviewer_keywords:
 - SEGMENT directive
 ms.assetid: e6f68367-6714-4f06-a79c-edfa88014430
-ms.openlocfilehash: f37be47b92a71e20821cd1e40f8cf1350dfedaff
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b7344d9cb685e0212748d7835e19f398f14979e7
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62210381"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74393725"
 ---
 # <a name="segment"></a>SEGMENT
 
-Bir program segmenti tanımlayan *adı* segment özniteliklere sahip
+Defines a program segment called *name* having segment attributes
 
 ## <a name="syntax"></a>Sözdizimi
 
-> *adı* SEGMENT [[salt okunur]] [[*hizalama*]] [[*birleştirmek*]] [[*kullanın*]] [[*özellikleri*]] diğer adı (*dize*) [['*sınıfı*']]<br/>
-> *Deyimleri*<br/>
-> *adı* sona ERER
+> *name* **SEGMENT** ⟦**READONLY**⟧ ⟦*align*⟧ ⟦*combine*⟧ ⟦*use*⟧ ⟦*characteristics*⟧ **ALIAS(** _string_ **)** ⟦ __'__ *class* __'__ ⟧\
+> *statements*\
+> *name* **ENDS**
 
 #### <a name="parameters"></a>Parametreler
 
 *align*<br/>
-Kesimin başlangıç adresi seçilebilir bellek adresleri aralığı. Hizalama türü aşağıdakilerden herhangi biri olabilir:
+The range of memory addresses from which a starting address for the segment can be selected. The alignment type can be any one of the following:
 
-|Hizalama türü|Başlangıç adresi|
+|Align Type|Starting Address|
 |----------------|----------------------|
-|**BAYT**|Sonraki kullanılabilir bayt adresi.|
-|**WORD**|Sonraki kullanılabilir word adresi (sözcük başına 2 bayt).|
-|**DWORD**|Sonraki kullanılabilir çift sözcük adresi (çift sözcük başına 4 bayt).|
-|**PARA**|Sonraki kullanılabilir paragraf adresi (paragraf başına 16 bayt).|
-|**PAGE**|Sonraki kullanılabilir sayfa (sayfa başına 256 bayt) adresi.|
-|**ALIGN**(*n*)|Sonraki kullanılabilir *n*th bayt adresi. Daha fazla bilgi için Açıklamalar bölümüne bakın.|
+|**BYTE**|Next available byte address.|
+|**WORD**|Next available word address (2 bytes per word).|
+|**DWORD**|Next available double word address (4 bytes per double word).|
+|**PARA**|Next available paragraph address (16 bytes per paragraph).|
+|**PAGE**|Next available page address (256 bytes per page).|
+|**ALIGN**(*n*)|Next available *n*th byte address. See Remarks section for more information.|
 
-Bu parametre belirtilmezse, **PARA** varsayılan olarak kullanılır.
+If this parameter is not specified, **PARA** is used by default.
 
-*Birleştirme*<br/>
-**Genel**, **yığın**, **ortak**, **bellek**, **ADRESİNDEKİ**<em>adresi</em>, **Özel**
+*combine*\
+**PUBLIC**, **STACK**, **COMMON**, **MEMORY**, **AT**<em>address</em>, **PRIVATE**
 
-*Kullanın*<br/>
-**USE16**, **USE32**, **DÜZ**
+*use*\
+**USE16**, **USE32**, **FLAT**
 
-*Özellikleri*<br/>
-**BİLGİ**, **okuma**, **yazma**, **yürütme**, **paylaşılan**, **NOPAGE**, **NOCACHE**, ve **AT**
+*characteristics*\
+**INFO**, **READ**, **WRITE**, **EXECUTE**, **SHARED**, **NOPAGE**, **NOCACHE**, and **DISCARD**
 
-Bunlar için COFF yalnızca desteklenir ve benzer adı COFF bölümü özelliklerini karşılık gelir (örneğin, **paylaşılan** için IMAGE_SCN_MEM_SHARED karşılık gelir). Okuma IMAGE_SCN_MEM_READ bayrağını ayarlar. Eski salt okunur bayrağı IMG_SCN_MEM_WRITE bayrağını temizleme bölümüne neden oldu. Varsa *özellikleri* , varsayılan özelliklerini kullanılmaz ve Programcı belirtilen bayraklar yalnızca yürürlükte olan ayarlanmıştır.
+These are supported for COFF only and correspond to the COFF section characteristics of similar name (for example, **SHARED** corresponds to IMAGE_SCN_MEM_SHARED). READ sets the IMAGE_SCN_MEM_READ flag. The obsolete READONLY flag caused the section to clear the IMG_SCN_MEM_WRITE flag. If any *characteristics* are set, the default characteristics are not used and only the programmer-specified flags are in effect.
 
-`ALIAS(` *dize* `)`<br/>
-Bu dize, yayılan COFF nesne içinde bölüm adı olarak kullanılır.  Aynı dış ada farklı MASM segmentli ada sahip birden çok bölümü oluşturur.
+_string_\
+This string is used as the section name in the emitted COFF object.  Creates multiple sections with the same external name, with distinct MASM segment names.
 
-İle desteklenmez **/OMF**.
+Not supported with **/omf**.
 
-*class*<br/>
-Segment birleştirilmiş ve bunları nasıl birleştirilmiş dosyasında sıralı belirler. Normal değerler, `'DATA'`, `'CODE'`, `'CONST'` ve `'STACK'`
+*class*\
+Designates how segments should be combined and ordered in the assembled file. Typical values are, `'DATA'`, `'CODE'`, `'CONST'` and `'STACK'`
 
 ## <a name="remarks"></a>Açıklamalar
 
-İçin `ALIGN(n)`, *n* 8192 1'den 2'in herhangi bir güç olabilir; ile desteklenmeyen **/OMF**.
+For `ALIGN(n)`, *n* may be any power of 2 from 1 to 8192; not supported with **/omf**.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

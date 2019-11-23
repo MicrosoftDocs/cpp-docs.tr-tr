@@ -6,21 +6,21 @@ f1_keywords:
 helpviewer_keywords:
 - .FARDATA? directive
 ms.assetid: 3b416313-44b7-4724-a2cf-69d73871a10c
-ms.openlocfilehash: b26da266671eb84b0015cb57c2d0dae11e9ac8d2
-ms.sourcegitcommit: 45f1d889df633f0f7e4a8e813b46fa73c9858b81
+ms.openlocfilehash: d32a742a26fff8e2cfb72269b010340e12ecfa13
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73703838"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74398283"
 ---
-# <a name="fardata-32-bit-masm"></a>.FARDATA? (32-bit masa)
+# <a name="fardata-32-bit-masm"></a>.FARDATA? (32-bit MASM)
 
-İle kullanıldığında [. , Başlatılmamış](../../assembler/masm/dot-model.md)veriler için bir veya daha fazla veri kesimini başlatır (kesim adı FAR_BSS veya *ad*). (yalnızca 32-bit masa.)
+When used with [.MODEL](../../assembler/masm/dot-model.md), starts a far data segment for uninitialized data (segment name FAR_BSS or *name*). (32-bit MASM only.)
 
 ## <a name="syntax"></a>Sözdizimi
 
-> .FARDATA? [[name]]
+> **.FARDATA?** ⟦*name*⟧
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

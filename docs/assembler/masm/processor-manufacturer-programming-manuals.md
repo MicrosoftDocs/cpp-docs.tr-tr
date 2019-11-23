@@ -1,30 +1,30 @@
 ---
-title: İşlemci Üreticisi Programlama Kılavuzları
+title: İşlemci üreticisi programlama kılavuzları
 ms.date: 08/30/2018
 ms.assetid: 61844163-de2f-419a-808e-04de39dfdddf
-ms.openlocfilehash: be650b0d19577b0a2191a6bf7d16063e720f3b0d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bd1cba8378a8b173d36e9cc8975b171cd58d388c
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62210583"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74394831"
 ---
-# <a name="processor-manufacturer-programming-manuals"></a>İşlemci Üreticisi Programlama Kılavuzları
+# <a name="processor-manufacturer-programming-manuals"></a>İşlemci üreticisi programlama kılavuzları
 
-Bu makalede, üretilen, satılan, veya Microsoft tarafından desteklenen işlemciler programlama bilgileri içerebilen Web sitelerinin bağlantılarını sağlar. Microsoft, kendi veya Web siteleri veya bunları içerik denetleme.
+This article provides links to websites that may contain programming information about processors that are not manufactured, sold, or supported by Microsoft. Microsoft does not own or control the websites or the content on them.
 
-## <a name="processor-manufacturer-websites"></a>İşlemci üreticisi Web siteleri
+## <a name="processor-manufacturer-websites"></a>Processor manufacturer websites
 
-- [AMD Geliştirici kılavuzlar, Kılavuzlar ve ISA belgeleri](https://developer.amd.com/resources/developer-guides-manuals/)
+- [AMD Developer Guides, Manuals & ISA Documents](https://developer.amd.com/resources/developer-guides-manuals/)
 
-- [Intel 64 ve IA-32 mimarileri yazılım geliştirici kılavuzları](https://software.intel.com/articles/intel-sdm)
+- [Intel 64 and IA-32 Architectures Software Developer Manuals](https://software.intel.com/articles/intel-sdm)
 
-- [Gelişmiş vektör uzantıları Intel giriş](https://software.intel.com/articles/introduction-to-intel-advanced-vector-extensions)
+- [Introduction to Intel Advanced Vector Extensions](https://software.intel.com/articles/introduction-to-intel-advanced-vector-extensions)
 
 ## <a name="remarks"></a>Açıklamalar
 
-Visual Studio ya da Microsoft Macro Assembler, tüm işlemcilerin destekler.
+Neither Visual Studio nor the Microsoft Macro Assembler support all processors.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Microsoft Macro Assembler Başvurusu](../../assembler/masm/microsoft-macro-assembler-reference.md)
+[Microsoft Macro Assembler reference](../../assembler/masm/microsoft-macro-assembler-reference.md)

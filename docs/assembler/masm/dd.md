@@ -6,25 +6,25 @@ f1_keywords:
 helpviewer_keywords:
 - DD directive
 ms.assetid: 0c238628-2fe2-437e-979d-a90bdae7b478
-ms.openlocfilehash: 6022da53ad8cde2b90431bfaf5b1ea2ddc0cac34
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e87098d2536cce5d818a0759f50b42fa50cb887a
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62178814"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74398793"
 ---
 # <a name="dd"></a>DD
 
-Ayırır ve isteğe bağlı olarak bir çift sözcük (4 bayt) depolama için her başlatır `initializer`. `DD` ' ın eşanlamlıdır [DWORD](../../assembler/masm/dword.md).
+Allocates and optionally initializes a double word (4 bytes) of storage for each *initializer*. **DD** is a synonym of [DWORD](../../assembler/masm/dword.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
-> [[ad]] DD Başlatıcı [[, başlatıcı]]...
+> ⟦*name*⟧ **DD** *initializer* ⟦ __,__ *initializer* ...⟧
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir tür tanımlayıcısı da kullanılabilir herhangi bir yasal türüdür.
+Can also be used as a type specifier anywhere a type is legal.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)<br/>
+[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)

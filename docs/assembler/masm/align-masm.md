@@ -6,30 +6,30 @@ f1_keywords:
 helpviewer_keywords:
 - ALIGN directive
 ms.assetid: 1c386b23-439f-4ec3-a6de-74427b25e47f
-ms.openlocfilehash: eb42b1952b3fd59438f0dd4c29d48c91c4d8864d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 22b18f2e238c780377b84fc2be3eb6678686bb73
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62166483"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74399282"
 ---
 # <a name="align-masm"></a>ALIGN (MASM)
 
-**HİZALA** yönergesi, sonraki veri öğesi veya katlarından biri, parametresinin bir adresi yönerge hizalar. Parametre 2'in üssü olmalıdır (örneğin, 1, 2, 4 ve benzeri) küçük veya eşit segment hizalama için.
+The **ALIGN** directive aligns the next data element or instruction on an address that is a multiple of its parameter. The parameter must be a power of 2 (for example, 1, 2, 4, and so on) that is less than or equal to the segment alignment.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> Hizalama [[*numarası*]]
+> **ALIGN** ⟦*number*⟧
 
 ## <a name="remarks"></a>Açıklamalar
 
-**HİZALA** yönergesi, bir veri öğesi veya bir yönerge başlangıç uzaklığı belirtmenize olanak sağlar. Hizalanmış veri performansı, veri öğeleri arasındaki harcanmış çoğaltamaz artırabilir. Büyük performans geliştirmeleri, veri erişimleri sınırlarındaki önbellek satırları içinde uygun olduğunda görülebilir. Yerel türler için doğal sınırlara erişimlerde daha az zaman içinde iç donanım yeniden hizalama mikro kod için harcanan anlamına gelir.
+The **ALIGN** directive allows you to specify the beginning offset of a data element or an instruction. Aligned data can improve performance, at the expense of wasted space between data elements. Large performance improvements can be seen when data accesses are on boundaries that fit within cache lines. Accesses on natural boundaries for native types means less time spent in internal hardware realignment microcode.
 
-Hizalanmış yönergeleri gereksinimini düz bir adresleme modeli kullanan, ancak diğer adresleme modelleri için eski kod atlama hedefleri için gerekli olabilecek modern işlemcilerde nadir olarak rastlanıyor.
+The need for aligned instructions is rare on modern processors that use a flat addressing model, but may be required for jump targets in older code for other addressing models.
 
-Veri hizalandığında Atlanan alanı sıfırlarla doldurulur. Yönergeler hizalandığında, atlanan alanı uygun şekilde boyutlandırıldığından NOP yönergeleri ile doldurulur.
+When data is aligned, the skipped space is padded with zeroes. When instructions are aligned, the skipped space is filled with appropriately-sized NOP instructions.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[EVEN](even.md)<br/>
-[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)<br/>
+[EVEN](even.md)\
+[Directives reference](directives-reference.md)

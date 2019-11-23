@@ -1,5 +1,5 @@
 ---
-title: İşleç &#39;&#39;
+title: operator &#39; &#39;
 ms.date: 08/30/2018
 f1_keywords:
 - operator ' '
@@ -8,21 +8,21 @@ helpviewer_keywords:
 - operator ' '
 - "' ' operator"
 ms.assetid: 62a5d993-3d9b-470d-ba8a-53d76afd29b1
-ms.openlocfilehash: 0b3fb01136a5021cd67c8b72925b9ca4c6a4b2ed
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4bb7e5b82abd5a76209785b814571172ec2ea54e
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62176245"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74395845"
 ---
-# <a name="operator-39-39"></a>İşleç &#39;&#39;
+# <a name="operator-39-39"></a>operator &#39; &#39;
 
-Davranır*metin*' olarak bir dize.
+Treats '*text*' as a string.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> 'text'
+> __'__ *text* __'__
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İşleçler Başvurusu](../../assembler/masm/operators-reference.md)<br/>
+[Operators reference](operators-reference.md)

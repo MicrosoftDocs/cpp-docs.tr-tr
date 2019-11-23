@@ -6,21 +6,21 @@ f1_keywords:
 helpviewer_keywords:
 - OWORD directive
 ms.assetid: 83262c07-6c67-4296-a07d-65502ba5d09c
-ms.openlocfilehash: 6ed24ab7997f0386e4201d9c31d75326c539777a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7dd69d2b2a42f78d17018e1840c8118aa12d55fa
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62210729"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74395102"
 ---
 # <a name="oword"></a>OWORD
 
-Bir 16 baytlık veri türü gerekli olduğunda, bir tür tanımlayıcısı kullanılır.
+Used as a type specifier when an 16-byte data type is required.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> OWORD
+> **OWORD**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

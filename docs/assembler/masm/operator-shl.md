@@ -8,21 +8,21 @@ helpviewer_keywords:
 - SHL operator
 - operator SHL
 ms.assetid: 7c4fbc25-cbbf-41ee-a07e-d6a15e9192ff
-ms.openlocfilehash: 3fb5dd80213c321ed28a0a6ffacff72749f3f4f6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 64a62f222047a3a7e61ab8808d40a5208b7d76da
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62176362"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74396180"
 ---
 # <a name="operator-shl"></a>SHL işleci
 
-Bit kaydırma sonucunu döndürür *ifade* sol *sayısı* bit sayısı.
+Returns the result of shifting the bits of *expression* left *count* number of bits.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> ifade SHL sayısı
+> *expression* **SHL** *count*
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İşleçler Başvurusu](../../assembler/masm/operators-reference.md)<br/>
+[Operators reference](operators-reference.md)

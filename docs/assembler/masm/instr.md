@@ -6,25 +6,25 @@ f1_keywords:
 helpviewer_keywords:
 - INSTR directive
 ms.assetid: fc37f6a2-3c95-47b2-b6bb-1066edd25994
-ms.openlocfilehash: be3dda768d153e764242f16cd6500e39bdda7923
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 23641e4f7a8bec9eddcfa0e26b8acfe50c760a1a
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62184560"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74397320"
 ---
 # <a name="instr"></a>INSTR
 
-İlk oluşumunu bulur *textitem2* içinde *textitem1*.
+Finds the first occurrence of *textitem2* in *textitem1*.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> *adı* INSTR [[*konumu*,]] *textitem1*, *textitem2*
+> *name* **INSTR** ⟦*position* __,__ ⟧ *textitem1* __,__ *textitem2*
 
 ## <a name="remarks"></a>Açıklamalar
 
-Başlangıç *konumu* isteğe bağlıdır. Her metin öğesi önünde bir sabit bir sabit dize olabilir bir `%`, veya bir makro işlevi tarafından döndürülen dize.
+The starting *position* is optional. Each text item can be a literal string, a constant preceded by a **%** , or the string returned by a macro function.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

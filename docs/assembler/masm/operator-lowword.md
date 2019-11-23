@@ -8,21 +8,21 @@ helpviewer_keywords:
 - LOWWORD operator
 - operator LOWWORD
 ms.assetid: ceb45c78-474b-4099-b46e-35eb072294ff
-ms.openlocfilehash: b599dfa5c005998666cdcd16db21b8fe9f00fc1a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4a2300f21ae5d19a69885fdb763c9a72df14bdb8
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62176739"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74396722"
 ---
 # <a name="operator-lowword"></a>LOWWORD işleci
 
-Düşük 16 bitlik döndürür *ifade*. MASM ifadeleri, 64-bit değerlerdir.
+Returns the low 16 bits of *expression*. MASM expressions are 64-bit values.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> LOWWORD ifadesi
+> **LOWWORD** *expression*
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İşleçler Başvurusu](../../assembler/masm/operators-reference.md)<br/>
+[Operators reference](operators-reference.md)

@@ -8,21 +8,21 @@ helpviewer_keywords:
 - operator OVERFLOW?
 - OVERFLOW? operator
 ms.assetid: 376b2850-993a-4538-b8f1-bd682ff7e91c
-ms.openlocfilehash: e6c92999e5f9172557b2bd853c5e97b05305ee1f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3f682a2573ea0091c32a523e849acf84d27e9030
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62176596"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74396532"
 ---
 # <a name="operator-overflow"></a>OVERFLOW? işleci
 
-Taşma bayrak durumu. Yalnızca kullanılan [. Eğer](../../assembler/masm/dot-if.md), [. SIRADA](../../assembler/masm/dot-while.md), veya [. Yineleme](../../assembler/masm/dot-repeat.md) engeller ve derleme zamanında çalışma zamanında değerlendirilir.
+Status of overflow flag. Used only within [.IF](../../assembler/masm/dot-if.md), [.WHILE](../../assembler/masm/dot-while.md), or [.REPEAT](../../assembler/masm/dot-repeat.md) blocks and evaluated at run time, not at assembly time.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> OVERFLOW?
+> **OVERFLOW?**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İşleçler Başvurusu](../../assembler/masm/operators-reference.md)<br/>
+[Operators reference](operators-reference.md)

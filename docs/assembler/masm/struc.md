@@ -6,21 +6,21 @@ f1_keywords:
 helpviewer_keywords:
 - STRUC directive
 ms.assetid: 1c7c131e-b787-4902-8db7-3a2342e523f9
-ms.openlocfilehash: b63c83c222a5dc54c68328d008bea9f7c46c8447
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fcd4a0e97f5bb93b02b1e3fc53202796ceaf8d15
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62217125"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74393674"
 ---
 # <a name="struc"></a>STRUC
 
-Bkz: [yapı](../../assembler/masm/struct-masm.md).
+See [STRUCT](../../assembler/masm/struct-masm.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
-> STRUC
+> **STRUC**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

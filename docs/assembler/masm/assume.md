@@ -6,28 +6,28 @@ f1_keywords:
 helpviewer_keywords:
 - ASSUME directive
 ms.assetid: cd162070-aee9-4c65-babc-005c6cc73d7c
-ms.openlocfilehash: 4bf8f0c41e9ce3e296cf201efd4fd9be2033cbdb
-ms.sourcegitcommit: 45f1d889df633f0f7e4a8e813b46fa73c9858b81
+ms.openlocfilehash: 73ef8bcc33087a56747b80f94482fcd6c50e3bf6
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73702473"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74399262"
 ---
-# <a name="assume-32-bit-masm"></a>VARSAY (32-bit Masz)
+# <a name="assume-32-bit-masm"></a>ASSUME (32-bit MASM)
 
-Kayıt değerlerinin hata denetimini sunar. (yalnızca 32-bit masa.)
+Enables error checking for register values. (32-bit MASM only.)
 
 ## <a name="syntax"></a>Sözdizimi
 
-> *Segregister*:*Name* [[, *segregister*:*Name*]]...<br/>
-> *Dataregister*türü varsayın:*Type* [[, *dataregister*:*Type*]]...<br/>
-> *Kayıt*varsay: hata [[, *kayıt*: hata]]...<br/>
-> [[*Register*:]] nothıng [[, *yazmaç*: nothıng]] olduğunu varsayın...
+> **ASSUME**  *segregister* __:__ *name* ⟦ __,__ *segregister* __:__ *name*...⟧\
+> **ASSUME**  *dataregister* __:__ *type* ⟦ __,__ *dataregister* __:__ *type*...⟧\
+> **ASSUME**  *register* __:ERROR__ ⟦ __,__ *register* __:ERROR__...⟧\
+> **ASSUME**  ⟦*register* __:__ ⟧**NOTHING** ⟦ __,__ *register* __:NOTHING__...⟧
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir `ASSUME` yürürlüğe girdikten sonra, derleyici verilen yazmaçların değerlerine yapılan değişiklikleri izler. Kayıt kullanılırsa **hata** oluşturur. **Hiçbir şey** kaydetme hata denetimini siler. Tek bir ifadede farklı tür varsayımları birleştirebilirsiniz.
+After an **ASSUME** is put into effect, the assembler watches for changes to the values of the given registers. **ERROR** generates an error if the register is used. **NOTHING** removes register error checking. You can combine different kinds of assumptions in one statement.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)<br/>
+[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)

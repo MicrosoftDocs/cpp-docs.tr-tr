@@ -6,23 +6,23 @@ f1_keywords:
 helpviewer_keywords:
 - UNION directive
 ms.assetid: 52504abf-7dc1-47c5-944c-b886803a0c6a
-ms.openlocfilehash: 37d486c6a9b8ba66a892e3cf9b3f68532509782d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e7cb39d578fd96603bc769333b48c27669a94db9
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62216897"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74392987"
 ---
 # <a name="union"></a>UNION
 
-Bir veya daha fazla veri türü UNION bildirir. *Alan bildirimleri* geçerli veri tanımlarını olması gerekir. Atlamak [sona ERER](../../assembler/masm/ends-masm.md) *adı* etikette iç içe geçmiş **birleşim** tanımları.
+Declares a union of one or more data types. The *field-declarations* must be valid data definitions. Omit the [ENDS](../../assembler/masm/ends-masm.md) *name* label on nested **UNION** definitions.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> *adı* birleşimi [[*hizalama*]] [[, benzersiz olmayan]]<br/>
-> *bildirimler alanı*<br/>
-> [[*adı*]] sona ERER
+> *name* **UNION** ⟦*alignment*⟧ ⟦ __,__ **NONUNIQUE**⟧\
+> *field-declarations*\
+> ⟦*name*⟧ **ENDS**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](../../assembler/masm/directives-reference.md)

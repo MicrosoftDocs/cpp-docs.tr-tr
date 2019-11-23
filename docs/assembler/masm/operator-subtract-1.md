@@ -11,21 +11,21 @@ helpviewer_keywords:
 - division operator, syntax
 - / operator, syntax
 ms.assetid: 76db4c26-59c0-495f-8e3b-66c644da02a3
-ms.openlocfilehash: 22c1f2cb1b9c47cd2cfadc6231142841269ed520
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 60966fe8f111e922fe3259a347c6bc8fc290e5b4
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62198596"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74395500"
 ---
 # <a name="operator-"></a>/ işleci
 
-Döndürür *İfade1* bölü *expression2*.
+Returns *expression1* divided by *expression2*.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> İfade1 / expression2
+> *expression1* __/__ *expression2*
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İşleçler Başvurusu](../../assembler/masm/operators-reference.md)<br/>
+[Operators reference](operators-reference.md)

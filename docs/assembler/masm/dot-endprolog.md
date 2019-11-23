@@ -6,27 +6,27 @@ f1_keywords:
 helpviewer_keywords:
 - .ENDPROLOG directive
 ms.assetid: 61a2474c-9527-46e6-9f9d-bc4b42c10f35
-ms.openlocfilehash: e6450ff0daaf679738cbbfe224002b01fe97b8ec
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b2eb635264590d7323c67d69b56a539907fe2c25
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62185335"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74398460"
 ---
 # <a name="endprolog"></a>.ENDPROLOG
 
-Giriş bildirimlerinin sonuna işaret eder.
+Signals the end of the prologue declarations.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> .ENDPROLOG
+> **.ENDPROLOG**
 
 ## <a name="remarks"></a>Açıklamalar
 
-Herhangi bir giriş bildirimlerinin bir bölge arasında dışında kullanmak için bir hata olduğunu [PROC](../../assembler/masm/proc.md) çerçeve ve. ENDPROLOG.
+It is an error to use any of the prologue declarations outside of the region between [PROC](../../assembler/masm/proc.md) **FRAME** and **.ENDPROLOG**.
 
-Daha fazla bilgi için [x64 (ml64.exe) için MASM](../../assembler/masm/masm-for-x64-ml64-exe.md).
+For more information, see [MASM for x64 (ml64.exe)](../../assembler/masm/masm-for-x64-ml64-exe.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)<br/>
+[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)

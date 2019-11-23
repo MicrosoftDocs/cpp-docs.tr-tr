@@ -6,21 +6,21 @@ f1_keywords:
 helpviewer_keywords:
 - .XCREF directive
 ms.assetid: f8443482-2a7e-4764-bef8-8bfdaf06d2fe
-ms.openlocfilehash: 72728ca8e656b617cf05dcf7f2e66a78fcf6aa6c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 22fa1bd5ca0a5e0c1aad127792ae3dd1490d1b4e
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62203527"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74397794"
 ---
 # <a name="xcref"></a>.XCREF
 
-Bkz: [. NOCREF](../../assembler/masm/dot-nocref.md).
+See [.NOCREF](../../assembler/masm/dot-nocref.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
-> .XCREF
+> **.XCREF**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

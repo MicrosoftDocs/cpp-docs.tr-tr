@@ -8,28 +8,28 @@ helpviewer_keywords:
 - SAFESEH directive
 - .SAFESEH directive
 ms.assetid: 6eaac8c4-c46f-47ae-8a66-f5cfeb267e43
-ms.openlocfilehash: 4577bd5d76949dfb777a359c80d91814f1c45fe2
-ms.sourcegitcommit: 45f1d889df633f0f7e4a8e813b46fa73c9858b81
+ms.openlocfilehash: df9798800da293e5e0b4f545a8442380b7ff9408
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73703954"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74397991"
 ---
-# <a name="safeseh-32-bit-masm"></a>. SAFESEH (32-bit masa)
+# <a name="safeseh-32-bit-masm"></a>.SAFESEH (32-bit MASM)
 
-Bir işlevi yapılandırılmış özel durum işleyicisi olarak kaydeder. (yalnızca 32-bit masa.)
+Registers a function as a structured exception handler. (32-bit MASM only.)
 
 ## <a name="syntax"></a>Sözdizimi
 
-> . SAFESEH tanımlayıcısı
+> **.SAFESEH** *identifier*
 
 ## <a name="remarks"></a>Açıklamalar
 
-*tanımlayıcı* yerel olarak tanımlanan bir [proc](../../assembler/masm/proc.md) veya [EXTRN](../../assembler/masm/extrn.md) proc için kimlik olmalıdır. [Etikete](../../assembler/masm/label-masm.md) izin verilmiyor. İçin. SAFESEH yönergesi [/SafeSEH](../../assembler/masm/ml-and-ml64-command-line-reference.md) ml. exe komut satırı seçeneğini gerektirir.
+*identifier* must be the ID for a locally defined [PROC](../../assembler/masm/proc.md) or [EXTRN](../../assembler/masm/extrn.md) PROC. A [LABEL](../../assembler/masm/label-masm.md) is not allowed. The .SAFESEH directive requires the [/safeseh](../../assembler/masm/ml-and-ml64-command-line-reference.md) ml.exe command-line option.
 
-Yapılandırılmış özel durum işleyicileri hakkında daha fazla bilgi için bkz. [/SafeSEH](../../build/reference/safeseh-image-has-safe-exception-handlers.md).
+For more information about structured exception handlers, see [/SAFESEH](../../build/reference/safeseh-image-has-safe-exception-handlers.md).
 
-Örneğin, güvenli bir özel durum işleyicisini kaydetmek için yeni bir MASı dosyası oluşturun (aşağıdaki gibi),/SafeSEH ile birleştirin ve bağlı nesnelere ekleyin.
+For example, to register a safe exception handler, create a new MASM file (as follows), assemble with /safeseh, and add it to the linked objects.
 
 ```asm
 .386
@@ -41,4 +41,4 @@ end
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

@@ -6,27 +6,27 @@ f1_keywords:
 helpviewer_keywords:
 - .PUSHFRAME directive
 ms.assetid: 17b123d0-4c6d-4fd2-85eb-798e8ad0a73c
-ms.openlocfilehash: 9ea506e25435c5d6f1b10eab8c4f25f72bf88791
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b0f047278f6250d5ef359f7992df4ea23f4bbd9b
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62178442"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74398042"
 ---
 # <a name="pushframe"></a>.PUSHFRAME
 
-Oluşturur bir `UWOP_PUSH_MACHFRAME` kod girişi geriye doğru izleme. İsteğe bağlı `code` belirtilirse, geriye doğru izleme kodu giriş 1 değiştiricisi verilmiştir. Aksi takdirde değiştirici 0'dır.
+Generates a `UWOP_PUSH_MACHFRAME` unwind code entry. If the optional *code* is specified, the unwind code entry is given a modifier of 1. Otherwise the modifier is 0.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> . PUSHFRAME [kod]
+> **.PUSHFRAME** ⟦*code*⟧;;
 
 ## <a name="remarks"></a>Açıklamalar
 
-. PUSHFRAME ml64.exe kullanıcılara nasıl çerçeve işlevi geriye doğru izler belirtmek ve yalnızca gelen genişletir prolog içinde izin [PROC](../../assembler/masm/proc.md) çerçeve bildirimine [. ENDPROLOG](../../assembler/masm/dot-endprolog.md) yönergesi. Bu yönergeler, kodu üretmemesi; yalnızca hazırlanmasının `.xdata` ve `.pdata`. . Geriye doğru olması için eylemleri uygulayan yönergeleri ile PUSHFRAME gelmelidir. Bırakma yönergeleri hem anlaşma emin olmak için bunlar bir makroda geriye doğru şekilde tasarlanmıştır kodu kaydırmak için iyi bir uygulamadır.
+.PUSHFRAME allows ml64.exe users to specify how a frame function unwinds and is only allowed within the prologue, which extends from the [PROC](../../assembler/masm/proc.md) FRAME declaration to the [.ENDPROLOG](../../assembler/masm/dot-endprolog.md) directive. These directives do not generate code; they only generate `.xdata` and `.pdata`. **.PUSHFRAME** should be preceded by instructions that actually implement the actions to be unwound. It is a good practice to wrap both the unwind directives and the code they are meant to unwind in a macro to ensure agreement.
 
-Daha fazla bilgi için [x64 (ml64.exe) için MASM](../../assembler/masm/masm-for-x64-ml64-exe.md).
+For more information, see [MASM for x64 (ml64.exe)](../../assembler/masm/masm-for-x64-ml64-exe.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

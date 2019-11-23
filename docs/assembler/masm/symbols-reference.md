@@ -1,44 +1,44 @@
 ---
-title: Semboller Başvurusu
+title: Semboller başvurusu
 ms.date: 11/06/2018
 helpviewer_keywords:
 - MASM (Microsoft Macro Assembler), symbols reference
 ms.assetid: 96ed59cc-dafa-4299-bb2e-9c7c3f496491
-ms.openlocfilehash: e57583ce2b4184120569be3a44d87ffc3f51586c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a07b7bcc46a27e019c53a2aafcd9529763ea61fd
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62210222"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74393563"
 ---
-# <a name="symbols-reference"></a>Semboller Başvurusu
+# <a name="symbols-reference"></a>Semboller başvurusu
 
-## <a name="date-and-time-information"></a>Tarih ve saat bilgilerini
-
-|||
-|-|-|
-|[\@Tarih](../../assembler/masm/at-date.md)|[\@saat](../../assembler/masm/at-time.md)|
-
-## <a name="environment-information"></a>Ortam bilgileri
+## <a name="date-and-time-information"></a>Date and time information
 
 |||
 |-|-|
-|[\@CPU](../../assembler/masm/at-cpu.md)|[\@Environ](../../assembler/masm/at-environ.md)|
-|[\@Arabirimi](../../assembler/masm/at-interface.md)|[\@Sürüm](../../assembler/masm/at-version.md)|
+|[\@Date](../../assembler/masm/at-date.md)|[\@Time](../../assembler/masm/at-time.md)|
 
-## <a name="file-information"></a>Dosya bilgileri
+## <a name="environment-information"></a>Environment information
 
 |||
 |-|-|
-|[\@FileCur](../../assembler/masm/at-filecur.md)|[\@Dosya adı](../../assembler/masm/at-filename.md)|
-|[\@Satır](../../assembler/masm/at-line.md)||
+|[\@Cpu](../../assembler/masm/at-cpu.md)|[\@Environ](../../assembler/masm/at-environ.md)|
+|[\@Interface](../../assembler/masm/at-interface.md)|[\@Version](../../assembler/masm/at-version.md)|
 
-## <a name="macro-functions"></a>Makro işlevleri
+## <a name="file-information"></a>File information
+
+|||
+|-|-|
+|[\@FileCur](../../assembler/masm/at-filecur.md)|[\@FileName](../../assembler/masm/at-filename.md)|
+|[\@Line](../../assembler/masm/at-line.md)||
+
+## <a name="macro-functions"></a>Macro functions
 
 |||
 |-|-|
 |[\@CatStr](../../assembler/masm/at-catstr.md)|[\@InStr](../../assembler/masm/at-instr.md)|
-|[\@Sızestr](../../assembler/masm/at-sizestr.md)|[\@SubStr](../../assembler/masm/at-substr.md)|
+|[\@SizeStr](../../assembler/masm/at-sizestr.md)|[\@SubStr](../../assembler/masm/at-substr.md)|
 
 ## <a name="miscellaneous"></a>Çeşitli
 
@@ -47,15 +47,15 @@ ms.locfileid: "62210222"
 |[\$](../../assembler/masm/dollar.md)|[\?](../../assembler/masm/q.md)|[\@\@:](../../assembler/masm/at-at.md)|
 |[\@B](../../assembler/masm/at-b.md)|[\@F](../../assembler/masm/at-f.md)||
 
-## <a name="segment-information"></a>Segment bilgileri
+## <a name="segment-information"></a>Segment information
 
 ||||
 |-|-|-|
-|[\@Kod](../../assembler/masm/at-code.md)|[\@CodeSize](../../assembler/masm/at-codesize.md)|[\@CurSeg](../../assembler/masm/at-curseg.md)|
-|[\@Veri](../../assembler/masm/at-data.md)|[\@DataSize](../../assembler/masm/at-datasize.md)|[\@fardata](../../assembler/masm/at-fardata.md)|
-|[\@fardata?](../../assembler/masm/at-fardata-q.md)|[\@Model](../../assembler/masm/at-model.md)|[\@Yığın](../../assembler/masm/at-stack.md)|
+|[\@code](../../assembler/masm/at-code.md)|[\@CodeSize](../../assembler/masm/at-codesize.md)|[\@CurSeg](../../assembler/masm/at-curseg.md)|
+|[\@data](../../assembler/masm/at-data.md)|[\@DataSize](../../assembler/masm/at-datasize.md)|[\@fardata](../../assembler/masm/at-fardata.md)|
+|[\@fardata?](../../assembler/masm/at-fardata-q.md)|[\@Model](../../assembler/masm/at-model.md)|[\@stack](../../assembler/masm/at-stack.md)|
 |[\@WordSize](../../assembler/masm/at-wordsize.md)|||
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Microsoft Macro Assembler Başvurusu](../../assembler/masm/microsoft-macro-assembler-reference.md)<br/>
+[Microsoft Macro Assembler reference](../../assembler/masm/microsoft-macro-assembler-reference.md)

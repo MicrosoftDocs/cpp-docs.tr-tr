@@ -9,21 +9,21 @@ helpviewer_keywords:
 - semicolon operator
 - ; operator
 ms.assetid: 8369b28c-1fee-4e9a-a4a6-7db627e21075
-ms.openlocfilehash: e7ab11485e772431b684f22aa5ec0278e4bde7af
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: df1e75f749e00781ae7ce1ffc580632d6216201c
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62176284"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74396450"
 ---
 # <a name="operator-"></a>; işleci
 
-İşler *metin* yorum olarak.
+Treats *text* as a comment.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> ; *metin*
+> __;__ *text*
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İşleçler Başvurusu](../../assembler/masm/operators-reference.md)<br/>
+[Operators reference](operators-reference.md)
