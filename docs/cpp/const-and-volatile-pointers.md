@@ -16,34 +16,34 @@ ms.locfileid: "74246624"
 ---
 # <a name="const-and-volatile-pointers"></a>const ve volatile işaretçiler
 
-The [const](const-cpp.md) and [volatile](volatile-cpp.md) keywords change how pointers are treated. The **const** keyword specifies that the pointer cannot be modified after initialization; the pointer is protected from modification thereafter.
+[Const](const-cpp.md) ve [volatile](volatile-cpp.md) anahtar sözcükleri işaretçilerin nasıl ele alınacağını değiştirir. **Const** anahtar sözcüğü, işaretçinin başlangıçtan sonra değiştirilemeyeceğini belirtir; işaretçi, bundan sonra değişiklikten korunmaktadır.
 
-The **volatile** keyword specifies that the value associated with the name that follows can be modified by actions other than those in the user application. Therefore, the **volatile** keyword is useful for declaring objects in shared memory that can be accessed by multiple processes or global data areas used for communication with interrupt service routines.
+**Volatile** anahtar sözcüğü, izleyen adla ilişkili değerin Kullanıcı uygulamasındaki eylemlerle farklı eylemler tarafından değiştirilebileceğini belirtir. Bu nedenle, **geçici** anahtar sözcüğü,, kesme hizmeti yordamları ile iletişim için kullanılan birden çok işlem veya küresel veri alanı tarafından erişilebilen paylaşılan bellekteki nesneleri bildirmek için yararlıdır.
 
-When a name is declared as **volatile**, the compiler reloads the value from memory each time it is accessed by the program. Bu, olası iyileştirmeleri önemli ölçüde azaltır. Ancak, bir nesnenin durumu beklenmedik bir şekilde değiştiğinde, yalnızca bu şekilde tahmin edilebilir program performansı sağlanabilir.
+Bir ad **geçici**olarak bildirildiği zaman, derleyici, program tarafından her erişildiğinde değeri bellekten yeniden yükler. Bu, olası iyileştirmeleri önemli ölçüde azaltır. Ancak, bir nesnenin durumu beklenmedik bir şekilde değiştiğinde, yalnızca bu şekilde tahmin edilebilir program performansı sağlanabilir.
 
-To declare the object pointed to by the pointer as **const** or **volatile**, use a declaration of the form:
+İşaretçi tarafından işaret edilen nesneyi **const** veya **volatile**olarak bildirmek için şu biçimde bir bildirim kullanın:
 
 ```cpp
 const char *cpch;
 volatile char *vpch;
 ```
 
-To declare the value of the pointer — that is, the actual address stored in the pointer — as **const** or **volatile**, use a declaration of the form:
+İşaretçinin değerini (yani, İşaretçisinde depolanan gerçek adresi) **const** veya **volatile**olarak bildirmek için şu biçimde bir bildirim kullanın:
 
 ```cpp
 char * const pchc;
 char * volatile pchv;
 ```
 
-The C++ language prevents assignments that would allow modification of an object or pointer declared as **const**. Bu tür atamalar, nesne veya işaretçinin birlikte bildirildiği bilgileri kaldırarak orijinal bildirimin amacını ihlal eder. Aşağıdaki bildirimleri dikkate alın:
+Dil C++ , **const**olarak belirtilen bir nesne veya işaretçinin değiştirilmesine izin veren atamaları engeller. Bu tür atamalar, nesne veya işaretçinin birlikte bildirildiği bilgileri kaldırarak orijinal bildirimin amacını ihlal eder. Aşağıdaki bildirimleri dikkate alın:
 
 ```cpp
 const char cch = 'A';
 char ch = 'B';
 ```
 
-Given the preceding declarations of two objects (`cch`, of type **const char**, and `ch`, of type **char)** , the following declaration/initializations are valid:
+İki nesnenin önceki bildirimleri ( **const char**türü`cch`, char türünde `ch` **)** verildiğinde, aşağıdaki bildirim/başlatmalar geçerlidir:
 
 ```cpp
 const char *pch1 = &cch;
@@ -61,7 +61,7 @@ char *pch2 = &cch;   // Error
 char *const pch3 = &cch;   // Error
 ```
 
-`pch2` bildirimi, sabit bir nesnenin değiştirilebileceği ve bu nedenle izin verilmeyen bir işaretçiyi bildirir. The declaration of `pch3` specifies that the pointer is constant, not the object; the declaration is disallowed for the same reason the `pch2` declaration is disallowed.
+`pch2` bildirimi, sabit bir nesnenin değiştirilebileceği ve bu nedenle izin verilmeyen bir işaretçiyi bildirir. `pch3` bildirimi, işaretçinin nesnenin değil, sabit olduğunu belirtir; `pch2` bildirimine izin verilmeyen bir nedenden dolayı bildirime izin verilmez.
 
 Aşağıdaki sekiz atama, işaretçiyle atama ve önceki bildirimler için işaretçi değerinin değiştirilmesini göstermektedir; şimdilik başlatmanın `pch1` ile `pch8` arasında doğru olduğunu varsayın.
 
@@ -76,20 +76,20 @@ pch3 = &ch;   // Error: pointer declared const
 pch4 = &ch;   // Error: pointer declared const
 ```
 
-Pointers declared as **volatile**, or as a mixture of **const** and **volatile**, obey the same rules.
+**Geçici**olarak veya **const** ve **volatile**'nin bir karışımı olarak belirtilen işaretçiler, aynı kurallara uyar.
 
-Pointers to **const** objects are often used in function declarations as follows:
+**Const** nesnelerinin işaretçileri, genellikle işlev bildirimlerinde aşağıdaki gibi kullanılır:
 
 ```cpp
 errno_t strcpy_s( char *strDestination, size_t numberOfElements, const char *strSource );
 ```
 
-The preceding statement declares a function, [strcpy_s](../c-runtime-library/reference/strcpy-s-wcscpy-s-mbscpy-s.md), where two of the three arguments are of type pointer to **char**. Because the arguments are passed by reference and not by value, the function would be free to modify both `strDestination` and `strSource` if `strSource` were not declared as **const**. The declaration of `strSource` as **const** assures the caller that `strSource` cannot be changed by the called function.
+Yukarıdaki ifade, üç bağımsız değişkenin ikisi de **char**türü işaretçisiyse [strcpy_s](../c-runtime-library/reference/strcpy-s-wcscpy-s-mbscpy-s.md)bir işlev bildirir. Bağımsız değişkenler değere göre değil, başvuruya göre geçirildiğinden ve `strSource` **const**olarak bildirilmemiş ise, işlev hem `strDestination` hem de `strSource` değiştirmek ücretsizdir. **Const** olarak `strSource` bildirimi, `strSource` çağrılan işlev tarafından değiştirilemeyen çağrıyı yapana sağlar.
 
 > [!NOTE]
-> Because there is a standard conversion from *typename* <strong>\*</strong> to **const** *typename* <strong>\*</strong>, it is legal to pass an argument of type `char *` to [strcpy_s](../c-runtime-library/reference/strcpy-s-wcscpy-s-mbscpy-s.md). However, the reverse is not true; no implicit conversion exists to remove the **const** attribute from an object or pointer.
+> *Typename* <strong>\*</strong> **const** *typename* <strong>\*</strong>'e standart bir dönüştürme olduğundan [strcpy_s](../c-runtime-library/reference/strcpy-s-wcscpy-s-mbscpy-s.md)`char *` türünde bir bağımsız değişken geçirmek geçerlidir. Ancak, tersi doğru değildir; bir nesne veya işaretçiden **const** özniteliğini kaldırmak için örtük dönüştürme yok.
 
-A **const** pointer of a given type can be assigned to a pointer of the same type. However, a pointer that is not **const** cannot be assigned to a **const** pointer. Aşağıdaki kod, doğru ve hatalı atamaları gösterir:
+Verilen türün **const** işaretçisi aynı türdeki bir işaretçiye atanabilir. Ancak **const** olmayan bir işaretçi bir **const** işaretçisine atanamaz. Aşağıdaki kod, doğru ve hatalı atamaları gösterir:
 
 ```cpp
 // const_pointer.cpp
@@ -126,5 +126,5 @@ int main() {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Pointers](pointers-cpp.md)
-[Raw pointers](raw-pointers.md)
+[İşaretçiler](pointers-cpp.md)
+[ham işaretçiler](raw-pointers.md)

@@ -1,5 +1,5 @@
 ---
-title: /Arch (x86)
+title: /arch (x86)
 ms.date: 10/01/2019
 ms.assetid: 9dd5a75d-06e4-4674-aade-33228486078d
 ms.openlocfilehash: b1e5501f6edd3eb016395380ff476250c0c388b9
@@ -9,7 +9,7 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 10/02/2019
 ms.locfileid: "71816313"
 ---
-# <a name="arch-x86"></a>/Arch (x86)
+# <a name="arch-x86"></a>/arch (x86)
 
 X86 üzerinde kod oluşturma mimarisini belirtir. Ayrıca bkz. [/Arch (x64)](arch-x64.md) ve [/Arch (ARM)](arch-arm.md).
 
@@ -19,7 +19,7 @@ X86 üzerinde kod oluşturma mimarisini belirtir. Ayrıca bkz. [/Arch (x64)](arc
 /arch:[IA32|SSE|SSE2|AVX|AVX2|AVX512]
 ```
 
-## <a name="arguments"></a>Bağımsız Değişkenler
+## <a name="arguments"></a>Arguments
 
 **/Arch: ıA32**<br/>
 Gelişmiş yönergeler ve ayrıca kayan nokta hesaplamaları için x87 belirtir.
@@ -41,7 +41,7 @@ Intel Gelişmiş vektör Uzantıları 512 yönergelerinin kullanımını sunar.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**/Arch** seçeneği, özellikle vektör hesaplama Için, ıNTEL ve AMD 'deki işlemcilerde kullanılabilen belirli yönerge kümesi uzantılarının kullanımını mümkün veya devre dışı bırakır. Genel olarak, en son sunulan işlemciler, daha eski işlemciler tarafından desteklenen ek uzantıları destekleyebilir, ancak belirli bir işlemci için veya __ kullanarak yönerge kümesi uzantısı desteği için test için belgelere danışmanız gerekir. [ ](../../intrinsics/cpuid-cpuidex.md)bir yönerge kümesi uzantısı kullanarak kodu yürütmeden önce CPUID.
+**/Arch** seçeneği, özellikle vektör hesaplama Için, ıNTEL ve AMD 'deki işlemcilerde kullanılabilen belirli yönerge kümesi uzantılarının kullanımını mümkün veya devre dışı bırakır. Genel olarak, en son sunulan işlemciler daha eski işlemciler tarafından desteklenen ek uzantıları destekleyebilir, ancak bir yönerge kümesi uzantısı kullanarak kodu yürütmeden önce [__cpuid](../../intrinsics/cpuid-cpuidex.md) kullanarak belirli bir işlemcinin veya yönerge kümesi uzantısı desteğinin test olması için belgelere danışmanız gerekir.
 
 **/Arch** yalnızca yerel işlevler için kod oluşturmayı etkiler. Derlemek için [/clr](clr-common-language-runtime-compilation.md) kullandığınızda, **/Arch** yönetilen işlevler için kod üretimi üzerinde hiçbir etkiye sahip değildir.
 
@@ -63,7 +63,7 @@ Intel Gelişmiş vektör Uzantıları 512 yönergelerinin kullanımını sunar.
 
 Vektör ve kayan nokta skaler talimatlarına ek olarak, her **/Arch** seçeneği bu seçenekle ilişkili diğer vektör olmayan yönergelerin kullanımını da etkinleştirebilir. Bu örnek, ilk olarak Intel Pentium Pro işlemcilerde görülen CMOVcc yönerge ailesidir. SSE yönergeleri sonraki Intel Pentium III işlemciyle tanıtıldığı için, **/Arch: IA32** belirtildiğinde CMOVcc yönergeleri oluşturulabilir.
 
-Kayan nokta işlemleri normalde x87 kodunda çift duyarlığa (64-bit) yuvarlanır, ancak duyarlık denetimini genişletilmiş duyarlık (80-bit) veya tek duyarlıklı (32-bit) olarak ayarlama dahil olmak üzere FP denetim sözcüğünü değiştirmek için `_controlfp` kullanabilirsiniz. Daha fazla bilgi için bkz. [_control87, _controlfp, @no__t -1 _control87_2](../../c-runtime-library/reference/control87-controlfp-control87-2.md). SSE ve AVX her işlem için ayrı tek duyarlıklı ve çift duyarlıklı yönergelere sahiptir, bu nedenle SSE/AVX kodu için eşdeğer değildir. Bu, kayan nokta işleminin sonucu bir Kullanıcı değişkenine atamak yerine doğrudan daha fazla hesaplamada kullanıldığında sonuçların nasıl yuvarlanacağını değiştirebilir. Aşağıdaki topluluklara bir göz atın:
+Kayan nokta işlemleri normalde x87 kodunda çift duyarlığa (64-bit) yuvarlanır, ancak duyarlık denetimini genişletilmiş duyarlık (80-bit) veya tek duyarlıklı (32-bit) olarak ayarlama dahil olmak üzere FP denetim sözcüğünü değiştirmek için `_controlfp` kullanabilirsiniz. Daha fazla bilgi için bkz. [_control87, _controlfp, \__control87_2](../../c-runtime-library/reference/control87-controlfp-control87-2.md). SSE ve AVX her işlem için ayrı tek duyarlıklı ve çift duyarlıklı yönergelere sahiptir, bu nedenle SSE/AVX kodu için eşdeğer değildir. Bu, kayan nokta işleminin sonucu bir Kullanıcı değişkenine atamak yerine doğrudan daha fazla hesaplamada kullanıldığında sonuçların nasıl yuvarlanacağını değiştirebilir. Aşağıdaki topluluklara bir göz atın:
 
 ```cpp
 r = f1 * f2 + d;  // Different results are possible on SSE/SSE2.
@@ -89,7 +89,7 @@ int convert_double_to_int(double x) {
 }
 ```
 
-@No__t-0, `__AVX__`, `__AVX2__`, `__AVX512F__`, `__AVX512CD__`, `__AVX512BW__`, `__AVX512DQ__` ve `__AVX512VL__` makroları hangisinin varsa **/Arch** derleyici seçeneğinin kullanıldığını gösterir. Daha fazla bilgi için bkz. [önceden tanımlanmış makrolar](../../preprocessor/predefined-macros.md). **/Arch: AVX2** seçeneği ve `__AVX2__` makrosu, Visual Studio 2013 güncelleştirme 2, sürüm 12.0.34567.1 ' de tanıtılmıştı. **/Arch: AVX512** için sınırlı destek visual Studio 2017 ' de eklenmiştir ve visual Studio 2019 ' de genişletilir.
+`_M_IX86_FP`, `__AVX__`, `__AVX2__`, `__AVX512F__`, `__AVX512CD__`, `__AVX512BW__`, `__AVX512DQ__` ve `__AVX512VL__` makroları hangi, varsa **/Arch** derleyici seçeneğinin kullanıldığını gösterir. Daha fazla bilgi için bkz. [önceden tanımlanmış makrolar](../../preprocessor/predefined-macros.md). **/Arch: AVX2** seçeneği ve `__AVX2__` makrosu Visual Studio 2013 güncelleştirme 2, sürüm 12.0.34567.1 ' de tanıtılmıştı. **/Arch: AVX512** için sınırlı destek visual Studio 2017 ' de eklenmiştir ve visual Studio 2019 ' de genişletilir.
 
 ### <a name="to-set-this-compiler-option-for-avx-avx2-avx512-ia32-sse-or-sse2-in-visual-studio"></a>Visual Studio 'da AVX, AVX2, AVX512, ıA32, SSE veya SSE2 için bu derleyici seçeneğini ayarlamak için
 
@@ -101,12 +101,12 @@ int convert_double_to_int(double x) {
 
 1. **Gelişmiş yönerge kümesini etkinleştir** özelliğini değiştirin.
 
-### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program aracılığıyla ayarlamak için
+### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
-- @No__t-0 ' a bakın.
+- Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.EnableEnhancedInstructionSet%2A>.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[/Arch (en düşük CPU mimarisi)](arch-minimum-cpu-architecture.md)<br/>
-[MSVC derleyici seçenekleri](compiler-options.md)<br/>
-[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)
+[/arch (En Düşük CPU Mimarisi)](arch-minimum-cpu-architecture.md)<br/>
+[MSVC Derleyicisi Seçenekleri](compiler-options.md)<br/>
+[MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)

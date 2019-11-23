@@ -1,5 +1,5 @@
 ---
-title: 'Platform:: Guid değer sınıfı'
+title: Platform::Guid değer sınıfı
 ms.date: 01/15/2019
 ms.topic: reference
 f1_keywords:
@@ -14,7 +14,7 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 10/02/2019
 ms.locfileid: "71816587"
 ---
-# <a name="platformguid-value-class"></a>Platform:: Guid değer sınıfı
+# <a name="platformguid-value-class"></a>Platform::Guid değer sınıfı
 
 Windows Çalışma Zamanı tür sisteminde bir [GUID](/previous-versions/cc317743(v%3dmsdn.10)) türü temsil eder.
 
@@ -26,19 +26,19 @@ public value struct Guid
 
 ### <a name="members"></a>Üyeleri
 
-`Platform::Guid`, [Platform:: Object sınıfından](../cppcx/platform-object-class.md)türetilmiş `Equals()`, `GetHashCode()` ve `ToString()` yöntemlerine sahiptir ve [Platform:: Type sınıfından](../cppcx/platform-type-class.md)türetilmiş `GetTypeCode()` yöntemi vardır. `Platform::Guid` ' da aşağıdaki Üyeler de vardır.
+`Platform::Guid` [Platform:: Object sınıfından](../cppcx/platform-object-class.md)türetilmiş `Equals()`, `GetHashCode()`ve `ToString()` yöntemlere ve [Platform:: Type sınıfından](../cppcx/platform-type-class.md)türetilmiş `GetTypeCode()` yönteminden sahiptir. `Platform::Guid` Ayrıca aşağıdaki üyelere sahiptir.
 
 |Üye|Açıklama|
 |------------|-----------------|
-|['İni](#ctor)|@No__t yeni bir örneğini başlatır-0.|
-|[işleç = =](#operator-equality)|Equals işleci.|
-|[işleç! =](#operator-inequality)|Eşit değildir işleci.|
-|[işleç @ no__t-1](#operator-less)|Küçüktür işleci.|
-|[operator ()](#operator-call)|@No__t-0 ' a bir `GUID` dönüştürür.|
+|['İni](#ctor)|`Platform::Guid`yeni bir örneğini başlatır.|
+|[operator==](#operator-equality)|Equals işleci.|
+|[operator!=](#operator-inequality)|Eşit değildir işleci.|
+|[işleç&lt;](#operator-less)|Küçüktür işleci.|
+|[operator()](#operator-call)|Bir `Platform::Guid` `GUID`dönüştürür.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yeni bir @no__t oluşturmak için, [Windows:: Foundation:: GuidHelper:: Createnewguıd](/uwp/api/windows.foundation.guidhelper.createnewguid#Windows_Foundation_GuidHelper_CreateNewGuid) static metodunu kullanın.
+Yeni bir `Platform::Guid`oluşturmak için [Windows:: Foundation:: GuidHelper:: CreateNewGuid](/uwp/api/windows.foundation.guidhelper.createnewguid#Windows_Foundation_GuidHelper_CreateNewGuid) statik yöntemini kullanın.
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -52,7 +52,7 @@ Yeni bir @no__t oluşturmak için, [Windows:: Foundation:: GuidHelper:: Createne
 
 ## <a name="ctor"></a>Guid:: Guid oluşturucuları
 
-@No__t yeni bir örneğini başlatır-0.
+`Platform::Guid`yeni bir örneğini başlatır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -82,43 +82,43 @@ Guid(
 ### <a name="parameters"></a>Parametreler
 
 *a*<br/>
-@No__t-0 ' ın ilk 4 baytı.
+`GUID`ilk 4 baytı.
 
-*kenarı*<br/>
-@No__t 0 ' ın sonraki 2 baytı.
+*b*<br/>
+`GUID`sonraki 2 baytı.
 
-*,*<br/>
-@No__t 0 ' ın sonraki 2 baytı.
+*c*<br/>
+`GUID`sonraki 2 baytı.
 
-*TID*<br/>
-@No__t sonraki baytı-0.
+*d*<br/>
+`GUID`sonraki baytı.
 
-*a*<br/>
-@No__t sonraki baytı-0.
+*e*<br/>
+`GUID`sonraki baytı.
 
-*vadeli*<br/>
-@No__t sonraki baytı-0.
+*f*<br/>
+`GUID`sonraki baytı.
 
-*Acil*<br/>
-@No__t sonraki baytı-0.
+*g*<br/>
+`GUID`sonraki baytı.
 
-*olsun*<br/>
-@No__t sonraki baytı-0.
+*h*<br/>
+`GUID`sonraki baytı.
 
-*kaydedemiyorum*<br/>
-@No__t sonraki baytı-0.
+*i*<br/>
+`GUID`sonraki baytı.
 
 *uygulanmaz*<br/>
-@No__t sonraki baytı-0.
+`GUID`sonraki baytı.
 
-*ek*<br/>
-@No__t sonraki baytı-0.
+*k*<br/>
+`GUID`sonraki baytı.
 
 *m*<br/>
 Bir [GUID yapısı](/previous-versions/cc317743(v%3dmsdn.10))biçimindeki `GUID`.
 
-*No*<br/>
-@No__t 0 ' ın kalan 8 baytı.
+*n*<br/>
+`GUID`kalan 8 baytı.
 
 ## <a name="operator-equality"></a>Guid:: operator = = Işleci
 
@@ -138,13 +138,13 @@ Karşılaştırılacak ilk `Platform::Guid`.
 *guid2*<br/>
 Karşılaştırılacak ikinci `Platform::Guid`.
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Dönüş Değeri
 
 İki `Platform::Guid` örneği eşitse true.
 
 ### <a name="remarks"></a>Açıklamalar
 
-[Windows:: Foundation:: GuidHelper:: Equals](/uwp/api/windows.foundation.guidhelper.equals) static yöntemi yerine `==` işlecini kullanmayı tercih edin.
+[Windows:: Foundation:: GuidHelper:: Equals](/uwp/api/windows.foundation.guidhelper.equals) static yöntemi yerine `==` işlecinin kullanılmasını tercih edin.
 
 ## <a name="operator-inequality"></a>Guid:: operator! = Işleci
 
@@ -164,11 +164,11 @@ Karşılaştırılacak ilk `Platform::Guid`.
 *guid2*<br/>
 Karşılaştırılacak ikinci `Platform::Guid`.
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Dönüş Değeri
 
 İki `Platform::Guid` örneği eşitse true.
 
-## <a name="operator-less"></a>Guid:: operator @ no__t-1 Işleci
+## <a name="operator-less"></a>Guid:: operator&lt; Işleci
 
 Sıralama için iki `Platform::Guid` örneğini karşılaştırır.
 
@@ -186,15 +186,15 @@ Karşılaştırılacak ilk `Platform::Guid`.
 *guid2*<br/>
 Karşılaştırılacak ikinci `Platform::Guid`.
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Dönüş Değeri
 
-*Guid1* , *guid2*'den önce sipariş alıyorsa true. Sıralama, 4 32 bitlik işaretsiz değerler dizisi gibi her `Platform::Guid` ' a davrandıktan sonra lexicographic olur. Bu, SQL Server veya .NET Framework tarafından kullanılan sıralama değildir ve dize gösterimine göre lexıgraf sıralaması ile aynı değildir.
+*Guid1* , *guid2*'den önce sipariş alıyorsa true. Sıralama, her `Platform::Guid` 4 32 bitlik işaretsiz değerler dizisi gibi davrandıktan sonra lexicographic 'dir. Bu, SQL Server veya .NET Framework tarafından kullanılan sıralama değildir ve dize gösterimine göre lexıgraf sıralaması ile aynı değildir.
 
 Bu işleç, `Guid` nesnelerinin C++ standart kitaplık tarafından daha kolay bir şekilde tüketilebilmesi için sağlanır.
 
 ## <a name="operator-call"></a>Guid:: operator () Işleci
 
-@No__t-0 ' i örtük olarak bir [GUID yapısına](/previous-versions/cc317743(v%3dmsdn.10))dönüştürür.
+Bir `Platform::Guid` bir [GUID yapısına](/previous-versions/cc317743(v%3dmsdn.10))örtülü olarak dönüştürür.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -202,7 +202,7 @@ Bu işleç, `Guid` nesnelerinin C++ standart kitaplık tarafından daha kolay bi
 const GUID& Platform::Guid::operator();
 ```
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Dönüş Değeri
 
 Bir [GUID yapısı](/previous-versions/cc317743(v%3dmsdn.10)).
 

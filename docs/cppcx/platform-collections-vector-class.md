@@ -44,14 +44,14 @@ template <typename T, typename E>
 *Şı*<br/>
 Vektör nesnesinde içerilen öğelerin türü.
 
-*A*<br/>
-*T*tür değerleriyle eşitlik test etmek için bir ikili koşul belirtir. Varsayılan değer `std::equal_to<T>` ' dir.
+*E*<br/>
+*T*tür değerleriyle eşitlik test etmek için bir ikili koşul belirtir. Varsayılan değer `std::equal_to<T>`.
 
 ### <a name="remarks"></a>Açıklamalar
 
 İzin verilen türler şunlardır:
 
-1. Kesirli
+1. tamsayılar
 
 1. arabirim sınıfı ^
 
@@ -67,15 +67,15 @@ Bir ortak dönüş değeri veya parametresinde bir **vektör** türü kullanmaya
 
 ### <a name="members"></a>Üyeleri
 
-### <a name="public-constructors"></a>Ortak oluşturucular
+### <a name="public-constructors"></a>Genel Oluşturucular
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[Vector:: vector](#ctor)|Vektör sınıfının yeni bir örneğini başlatır.|
 
-### <a name="public-methods"></a>Ortak Yöntemler
+### <a name="public-methods"></a>Genel Yöntemler
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[Vector:: Append](#append)|Geçerli Vektördeki son öğeden sonra belirtilen öğeyi ekler.|
 |[Vector:: Clear](#clear)|Geçerli Vektördeki tüm öğeleri siler.|
@@ -91,14 +91,14 @@ Bir ortak dönüş değeri veya parametresinde bir **vektör** türü kullanmaya
 |[Vector:: SetAt](#setat)|Belirtilen dizin tarafından tanımlanan geçerli vektörde bulunan öğeye belirtilen değeri atar.|
 |[Vector:: size](#size)|Geçerli vektör nesnesindeki öğe sayısını döndürür.|
 
-### <a name="events"></a>Etkinlikler
+### <a name="events"></a>Olaylar
 
 |||
 |-|-|
-|Adı|Açıklama|
-|olay [Windows:: Foundation:: Collection:: VectorChangedEventHandler @ no__t-1T > ^ VectorChanged](/uwp/api/windows.foundation.collections.vectorchangedeventhandler)|Vektör değiştiğinde gerçekleşir.|
+|Name|Açıklama|
+|olay [Windows:: Foundation:: Collection:: VectorChangedEventHandler\<t > ^ Vektörtorchanged](/uwp/api/windows.foundation.collections.vectorchangedeventhandler)|Vektör değiştiğinde gerçekleşir.|
 
-## <a name="inheritance-hierarchy"></a>Devralma hiyerarşisi
+## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
 `Vector`
 
@@ -143,13 +143,13 @@ Vektördeki ilk öğeyi gösteren bir yineleyici döndürür.
 virtual Windows::Foundation::Collections::IIterator <T>^ First();
 ```
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Dönüş Değeri
 
 Vektördeki ilk öğeyi gösteren bir yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ilk () tarafından döndürülen yineleyiciyi tutmanın uygun bir yolu, dönüş değerini **Auto** Type kesintisi anahtar sözcüğüyle belirtilen bir değişkene atamaktır. Örneğin, `auto x = myVector->First();`. Bu Yineleyici, koleksiyonun uzunluğunu bilir.
+Ilk () tarafından döndürülen yineleyiciyi tutmanın uygun bir yolu, dönüş değerini **Auto** Type kesintisi anahtar sözcüğüyle belirtilen bir değişkene atamaktır. Örneğin: `auto x = myVector->First();` Bu Yineleyici, koleksiyonun uzunluğunu bilir.
 
 STL işlevine geçebileceğiniz bir çift yineleyiciye ihtiyacınız olduğunda, ücretsiz işlevler [Windows:: Foundation:: Collections:: Begin](../cppcx/begin-function.md) ve [Windows:: Foundation:: Collections:: End](../cppcx/end-function.md) ' i kullanın.
 
@@ -168,7 +168,7 @@ virtual T GetAt(unsigned int index);
 *indeks*<br/>
 Vektör nesnesinde belirli bir öğeyi belirten sıfır tabanlı, işaretsiz bir tamsayı.
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Dönüş Değeri
 
 *Dizin* parametresi tarafından belirtilen öğe. Öğe türü *T* TypeName tarafından tanımlanır.
 
@@ -192,7 +192,7 @@ Alınacak öğelerin başlangıcına ait sıfır tabanlı dizin.
 *HD*<br/>
 *StartIndex* tarafından belirtilen öğede başlayan ve Vektördeki son öğede biten, çağıran bir öğe dizisi.
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Dönüş Değeri
 
 Alınan öğe sayısı.
 
@@ -210,7 +210,7 @@ Bir vektörün salt okunurdur görünümünü döndürür; diğer bir deyişle, 
 Windows::Foundation::Collections::IVectorView<T>^ GetView();
 ```
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Dönüş Değeri
 
 Bir ıvectorview nesnesi.
 
@@ -234,13 +234,13 @@ Parametre *değeri* bulunursa öğenin sıfır tabanlı dizini; Aksi takdirde, 0
 
 Öğe vektör 'in ilk öğesi ise veya öğe bulunmazsa *Dizin* parametresi 0 ' dır. Dönüş değeri **true**ise, öğe bulundu ve ilk öğedir; Aksi takdirde, öğe bulunamadı.
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Dönüş Değeri
 
 Belirtilen öğe bulunursa **true** ; Aksi takdirde, **false**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-IndexOf, öğeyi bulmak için std:: find_if kullanır. Bu nedenle, find_if için gereken eşitlik karşılaştırmalarını etkinleştirmek için özel öğe türleri = = ve! = işlecini aşırı yüklemesi gerekir.
+IndexOf, öğeyi bulmak için std:: find_if kullanır. Bu nedenle, find_if gerektirdiği eşitlik karşılaştırmalarını etkinleştirmek için özel öğe türleri = = ve! = işlecini aşırı yüklemelidir.
 
 ##  <a name="insertat"></a>Vector:: InsertAt yöntemi
 
@@ -328,7 +328,7 @@ Geçerli vektör nesnesindeki öğe sayısını döndürür.
 virtual property unsigned int Size;
 ```
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Dönüş Değeri
 
 Geçerli Vektördeki öğe sayısı.
 
@@ -367,9 +367,9 @@ Vektörü başlatmak için kullanılacak [Platform:: Array](../cppcx/platform-ar
 Geçerli vektörü başlatmak için kullanılan nesne koleksiyonunun türü.
 
 *Demiryolu*<br/>
-Vektör 'yi başlatmak için kullanılacak *T* türünde bir [std:: initializer_list](../standard-library/initializer-list-class.md) nesne.
+Vektör 'yi başlatmak için kullanılacak *T* türünde nesnelerin [std:: initializer_list](../standard-library/initializer-list-class.md) .
 
-*No*<br/>
+*N*<br/>
 Geçerli vektörü başlatmak için kullanılan nesne koleksiyonundaki öğe sayısı.
 
 *boyutla*<br/>
@@ -378,16 +378,16 @@ Vektördeki öğe sayısı.
 *value*<br/>
 Geçerli vektörde her öğeyi başlatmak için kullanılan bir değer.
 
-*Yönetim*<br/>
+*v*<br/>
 Geçerli vektörü başlatmak için kullanılan [std:: vector](../standard-library/vector-class.md) öğesine bir [lvalues ve rvalues](../cpp/lvalues-and-rvalues-visual-cpp.md) .
 
-*kaydetmeye*<br/>
-Geçerli vektörü başlatmak için kullanılan `std::vector` işaretçisi.
+*ptr*<br/>
+Geçerli vektörü başlatmak için kullanılan bir `std::vector` işaretçisi.
 
-*adı*<br/>
+*first*<br/>
 Geçerli vektörü başlatmak için kullanılan nesne dizisindeki ilk öğe. *İlk* türü *kusursuz iletme*yoluyla geçirilir. Daha fazla bilgi için bkz. [rvalue başvuru bildirimci: & &](../cpp/rvalue-reference-declarator-amp-amp.md).
 
-*soyadına*<br/>
+*last*<br/>
 Geçerli vektörü başlatmak için kullanılan nesneler dizisindeki son öğe. *Son* türü, *kusursuz iletme*yoluyla geçirilir. Daha fazla bilgi için bkz. [rvalue başvuru bildirimci: & &](../cpp/rvalue-reference-declarator-amp-amp.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.

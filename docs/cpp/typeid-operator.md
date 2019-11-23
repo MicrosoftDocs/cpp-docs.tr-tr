@@ -24,19 +24,19 @@ typeid(expression)
 
 **TypeId** işleci, çalışma zamanında bir nesne türünün belirlenmesi için izin verir.
 
-**TypeId** 'nin sonucu bir `const type_info&` ' dir. Değer, hangi **TypeId** biçiminin kullanıldığına bağlı olarak, *tür-kimliği* veya *ifadenin*türünü temsil eden `type_info` nesnesine bir başvurudur. Daha fazla bilgi için bkz. [type_info Class](../cpp/type-info-class.md).
+**TypeId** 'nin sonucu bir `const type_info&`. Değer, hangi **TypeId** biçiminin kullanıldığına bağlı olarak, *türün tür kimliğini* veya *ifadenin*türünü temsil eden bir `type_info` nesnesine başvurudur. Daha fazla bilgi için bkz. [type_info sınıfı](../cpp/type-info-class.md).
 
-**TypeId** işleci yönetilen türlerle (soyut Bildirimciler veya örnekler) çalışmaz. Belirtilen türde <xref:System.Type> alma hakkında bilgi için bkz. [TypeId](../extensions/typeid-cpp-component-extensions.md).
+**TypeId** işleci yönetilen türlerle (soyut Bildirimciler veya örnekler) çalışmaz. Belirtilen bir türün <xref:System.Type> alma hakkında daha fazla bilgi için bkz. [TypeId](../extensions/typeid-cpp-component-extensions.md).
 
 **TypeId** işleci, nesnenin true türünün belirtilen statik bilgilerle belirlenemediği, çok biçimli bir sınıf türünün l değerine uygulandığında bir çalışma zamanı denetimi yapar. Bu gibi durumlar şunlardır:
 
 - Bir sınıf başvurusu
 
-- Bir işaretçi, @no__t ile başvurulduğunu-0
+- Bir işaretçi, `*` ile başvurulduğunu
 
 - Alt simge işaretçisi (`[ ]`). (Çok biçimli bir tür işaretçisi olan bir alt simge kullanmak güvenli değildir.)
 
-*İfade* bir temel sınıf türüne işaret ediyorsa, ancak nesne gerçekten o temel sınıftan türetilmiş bir tür ise, türetilmiş sınıf için `type_info` başvurusu elde edilir. *İfade* , polimorfik bir türe (sanal işlevler içeren bir sınıf) işaret etmelidir. Aksi takdirde sonuç, *ifadede*başvurulan statik sınıf için `type_info` ' dır. Ayrıca, işaretçinin işaret ettiği bir nesne olması için işaretçiye başvurulmalıdır. İşaretçinin başvurusunu oluşturmadan sonuç, işaretçinin işaret ettiği, işaretçi için `type_info` olur. Örneğin:
+*İfade* bir temel sınıf türüne işaret ediyorsa, nesne gerçekten o temel sınıftan türetilmiş bir tür ise, türetilmiş sınıf için `type_info` başvurusu oluşur. *İfade* , polimorfik bir türe (sanal işlevler içeren bir sınıf) işaret etmelidir. Aksi takdirde sonuç, *ifadede*başvurulan statik sınıfın `type_info`. Ayrıca, işaretçinin işaret ettiği bir nesne olması için işaretçiye başvurulmalıdır. İşaretçinin başvurusunu oluşturmadan, sonuç işaretçinin gösterdiği gibi değil, işaretçi için `type_info` olur. Örneğin:
 
 ```cpp
 // expre_typeid_Operator.cpp
@@ -63,7 +63,7 @@ int main() {
 }
 ```
 
-*İfadenin* bir işaretçinin başvurusu varsa ve bu işaretçinin değeri sıfırsa, **TypeId** bir [bad_typeid özel durumu](../cpp/bad-typeid-exception.md)oluşturur. İşaretçi geçerli bir nesneye işaret vermezse, `__non_rtti_object` özel durumu oluşturulur. Nesne bir biçimde geçersiz olduğu için bir hata tetikleyen RTTı çözümleme girişimi olduğunu gösterir. (Örneğin, bu hatalı bir işaretçidir veya kod [/gr](../build/reference/gr-enable-run-time-type-information.md)ile derlenmedi).
+*İfadenin* bir işaretçinin başvurusu varsa ve bu işaretçinin değeri sıfırsa, **TypeId** [bad_typeid bir özel durum](../cpp/bad-typeid-exception.md)oluşturur. İşaretçi geçerli bir nesneye işaret vermezse, bir `__non_rtti_object` özel durumu oluşturulur. Nesne bir biçimde geçersiz olduğu için bir hata tetikleyen RTTı çözümleme girişimi olduğunu gösterir. (Örneğin, bu hatalı bir işaretçidir veya kod [/gr](../build/reference/gr-enable-run-time-type-information.md)ile derlenmedi).
 
 *İfade* , nesnenin temel sınıfına bir başvuru değil, bir işaretçi değilse sonuç, *ifadenin*statik türünü temsil eden bir `type_info` başvurusudur. Bir ifadenin *statik türü* , derleme zamanında bilinen bir ifadenin türüne başvurur. Yürütme semantikleri, bir ifadenin statik türü değerlendirilirken göz ardı edilir. Ayrıca, bir ifadenin statik türü belirlenirken, mümkün olduğunca başvurular da dikkate alınmaz:
 
@@ -92,5 +92,5 @@ T max( T arg1, T arg2 ) {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Çalışma zamanı tür bilgileri](../cpp/run-time-type-information.md)\
-[Anahtar Sözcükler](../cpp/keywords-cpp.md)
+[Çalışma zamanı türü bilgileri](../cpp/run-time-type-information.md)\
+[anahtar sözcükler](../cpp/keywords-cpp.md)

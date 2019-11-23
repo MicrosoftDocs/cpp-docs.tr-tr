@@ -1,6 +1,6 @@
 ---
-title: Raw pointers (C++)
-description: How to use raw pointers in C++
+title: Ham işaretçiler (C++)
+description: İçinde ham işaretçiler kullanmaC++
 ms.date: 11/19/2019
 helpviewer_keywords:
 - pointers [C++]
@@ -11,11 +11,11 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 11/20/2019
 ms.locfileid: "74250662"
 ---
-# <a name="raw-pointers-c"></a>Raw pointers (C++)
+# <a name="raw-pointers-c"></a>Ham işaretçiler (C++)
 
-A pointer is a type of variable that stores the address of an object in memory and is used to access that object. A *raw pointer* is a pointer whose lifetime is not controlled by an encapsulating object such as a [smart pointer](smart-pointers-modern-cpp.md). A raw pointer can be assigned the address of another non-pointer variable, or it can be assigned a value of [nullptr](nullptr.md). A pointer that has not been assigned a value contains random data.
+İşaretçi, bellekteki bir nesnenin adresini depolayan ve bu nesneye erişmek için kullanılan bir değişken türüdür. *Ham işaretçi* , yaşam süresi [akıllı bir işaretçi](smart-pointers-modern-cpp.md)gibi bir Kapsülleyici nesne tarafından denetlenmeyen bir işaretçisidir. Bir ham işaretçiye başka bir işaretçi olmayan değişkenin adresi atanabilir veya bir [nullptr](nullptr.md)değeri atanabilir. Değer atanmamış bir işaretçi rastgele veri içeriyor.
 
-A pointer can also be *dereferenced* to retrieve the value of the object that it points at. The *member access operator* provides access to an object's members.
+Ayrıca, işaret ettiği nesnenin değerini almak için bir işaretçiye de *başvurulmalıdır* . *Üye erişim işleci* , bir nesnenin üyelerine erişim sağlar.
 
 ```cpp
     int* p = nullptr; // declare pointer and initialize it
@@ -26,7 +26,7 @@ A pointer can also be *dereferenced* to retrieve the value of the object that it
 
 ```
 
-A pointer can point to a typed object or to **void**. When a program allocates a new object on the [heap](https://wikipedia.org/wiki/Heap) in memory, it receives the address of that object in the form of a pointer. Such pointers are called *owning pointers*; an owning pointer (or a copy of it) must be used to explicitly delete the heap-allocated object when it is no longer needed. Failure to delete the memory results in a *memory leak* and renders that memory location unavailable to any other program on the machine. For more information, see [new and delete operators](new-and-delete-operators.md).
+Bir işaretçi, yazılan bir nesneyi işaret edebilir veya **void**. Bir program, bellekte [yığında](https://wikipedia.org/wiki/Heap) yeni bir nesne ayırdığında, bu nesnenin adresini işaretçi biçiminde alır. Bu tür işaretçiler *sahip işaretçiler*olarak adlandırılır; artık gerekli olmadığında yığın tarafından ayrılan nesneyi açıkça silmek için, sahip olan bir işaretçinin (veya bir kopyasının) kullanılması gerekir. Bellek *sızıntısına* neden olan belleği silme hatası ve bu bellek konumunu makinedeki diğer herhangi bir program için kullanılamaz hale göre işler. Daha fazla bilgi için bkz. [New ve delete işleçleri](new-and-delete-operators.md).
 
 ```cpp
 
@@ -35,7 +35,7 @@ A pointer can point to a typed object or to **void**. When a program allocates a
     delete mc; // delete object (please don't forget!)
 ```
 
-A pointer (if it isn't declared as **const**) can be incremented or decremented so that it points to a new location in memory. This is called *pointer arithmetic* and is used in C-style programming to iterate over elements in arrays or other data structures. A **const** pointer can't be made to point to a different memory location, and in that sense is very similar to a [reference](references-cpp.md). For more information, see [const and volatile pointers](const-and-volatile-pointers.md).
+Bir işaretçi ( **const**olarak bildirilmemiş), bellekteki yeni bir konuma işaret etmek için arttırılır veya azaltılır. Bu, *işaretçi aritmetiği* olarak adlandırılır ve diziler ya da diğer veri yapılarında öğeleri yinelemek için C stili programlamada kullanılır. Bir **const** işaretçisi, farklı bir bellek konumunu işaret etmek için yapılamaz ve bu anlamlı bir [başvuruya](references-cpp.md)çok benzer. Daha fazla bilgi için bkz. [const ve volatile işaretçileri](const-and-volatile-pointers.md).
 
 ```cpp
     // declare a C-style string. Compiler adds terminating '\0'.
@@ -49,13 +49,13 @@ A pointer (if it isn't declared as **const**) can be incremented or decremented 
     // pconst2 = &c2; // Error! pconst2 is const.
 ```
 
-On 64-bit operating systems, a pointer has a size of 64 bits; a system's pointer size determines how much addressable memory it can have. All copies of a pointer point to the same memory location. Pointers (along with references) are used extensively in C++ to pass larger objects to and from functions because it is usually far more efficient to copy an object's 64-bit address than to copy an entire object. When defining a function, specify pointer parameters as **const** unless you intend for the function to modify the object. In general, **const** references are the preferred way to pass objects to functions unless the value of the object can possibly be **nullptr**.
+64 bit işletim sistemlerinde, bir işaretçinin boyutu 64 bittir; sistemin işaretçi boyutu, ne kadar adreslenebilir bellek olduğunu belirler. Bir işaretçinin tüm kopyaları aynı bellek konumuna işaret noktasıdır. İşaretçiler (başvurularla birlikte), bir nesnenin 64 C++ bitlik adresini kopyalamak için bir nesnenin tamamını kopyalamaya kıyasla büyük nesneleri çok daha verimli bir şekilde geçirmek için kapsamlı olarak kullanılır. Bir işlevi tanımlarken, işlevin nesneyi değiştirmesini istemediğiniz sürece işaretçi parametrelerini **const** olarak belirtin. Genel olarak, **const** başvuruları, nesne değeri muhtemelen **nullptr**değilse, nesneleri işlevlere geçirmek için tercih edilen yoldur.
 
-[Pointers to functions](#pointers_to_functions) enable functions to be passed to other functions and are used for "callbacks" in C-style programming. Modern C++ uses [lambda expressions](lambda-expressions-in-cpp.md) for this purpose.
+[Işlevlerin işaretçileri](#pointers_to_functions) , işlevlerin diğer işlevlere geçirilmesini sağlar ve C stili programlamada "geri aramalar" için kullanılır. Modern C++ , bu amaçla [lambda ifadeleri](lambda-expressions-in-cpp.md) kullanır.
 
-## <a name="initialization-and-member-access"></a>Initialization and member access
+## <a name="initialization-and-member-access"></a>Başlatma ve üye erişimi
 
-The following example shows how to declare a raw pointer and initialize it with an object allocated on the heap, and then how to use it. It also shows a few of the dangers associated with raw pointers. (Remember, this is C-style programming and not modern C++!)
+Aşağıdaki örnek, bir ham işaretçinin nasıl bildirilemeyeceğini ve yığın üzerinde ayrılmış bir nesneyle nasıl başlatılacağını ve ardından nasıl kullanılacağını gösterir. Ayrıca, ham işaretçilerle ilişkili bazı tehlikeler de gösterilmektedir. (Bu, C stili bir programlama ve modern C++değil!)
 
 ```cpp
 #include <iostream>
@@ -133,14 +133,14 @@ int main()
 }
 ```
 
-## <a name="pointer-arithmetic-and-arrays"></a>Pointer arithmetic and arrays
+## <a name="pointer-arithmetic-and-arrays"></a>İşaretçi aritmetik ve dizileri
 
-Pointers and arrays are closely related. When an array is passed by-value to a function, it is passed as a pointer to the first element. The following example demonstrates the following important properties of pointers and arrays:
+İşaretçiler ve diziler yakından ilgilidir. Bir dizi değere göre bir işleve geçirildiğinde, ilk öğeye işaretçi olarak geçirilir. Aşağıdaki örnek, işaretçilerin ve dizilerin aşağıdaki önemli özelliklerini gösterir:
 
-- the `sizeof` operator returns the total size in bytes of an array
-- to determine the number of elements, divide total bytes by the size of one element
-- when an array is passed to a function, it *decays* to a pointer type
-- the `sizeof` operator when applied to a pointer returns the pointer size, 4 bytes on x86 or 8 bytes on x64
+- `sizeof` işleci, bir dizinin bayt cinsinden toplam boyutunu döndürür
+- öğelerin sayısını öğrenmek için, toplam baytları bir öğe boyutuna bölün
+- bir dizi bir işleve geçirildiğinde bir işaretçi *türü olur*
+- bir işaretçiye uygulandığında `sizeof` işleci, x64 üzerinde 5 bayt veya 8 bayt üzerinde işaretçi boyutunu döndürür
 
 ```cpp
 #include <iostream>
@@ -166,9 +166,9 @@ int main()
 }
 ```
 
-Certain arithmetic operations can be performed on non-const pointers to make them point to a new memory location. A pointer can be incremented and decremented using the **++** , **+=** , **-=** and **--** operators. This technique can be used in arrays and is especially useful in buffers of untyped data. A **void\*** increments by the size of a **char** (1 byte). A typed pointer increments by size of the type it points to.
+Belirli aritmetik işlemler, yeni bir bellek konumuna işaret etmek üzere const olmayan işaretçilerde gerçekleştirilebilir. **++** , **+=** , **-=** ve **--** işleçlerini kullanarak bir işaretçi arttırılır ve azaltılır. Bu teknik diziler için kullanılabilir ve özellikle türsüz verilerin arabelleklerinde faydalıdır. **Void\*** bir **char** (1 baytlık) boyutuna göre artar. Yazılı bir işaretçi, işaret ettiği türün boyutuna göre artar.
 
-The following example demonstrates how pointer arithmetic can be used to access individual pixels in a bitmap on Windows. Note the use of **new** and **delete**, and the dereference operator. 
+Aşağıdaki örnek, Windows üzerindeki bir bit eşlemdeki tek tek piksellere erişmek için işaretçi aritmetiğinin nasıl kullanılabileceğini gösterir. **Yeni** ve **Sil**'in kullanımını ve başvuru işlecinin olduğunu aklınızda edin. 
 
 ```cpp
 #include <Windows.h>
@@ -233,11 +233,11 @@ int main()
 }
 ```
 
-## <a name="void-pointers"></a>void* pointers
+## <a name="void-pointers"></a>void * işaretçileri
 
-A pointer to **void** simply points to a raw memory location. Sometimes it is necessary to use **void\*** pointers, for example when passing between C++ code and C functions. 
+**Void** işaretçisi, ham bellek konumunu işaret eder. Bazen kod ve C işlevleri arasında C++ geçiş yaparken **void\*** işaretçilerinin kullanılması gerekir. 
 
-When a typed pointer is cast to a void pointer, the contents of the memory location are not changed, but the type information is lost, so that you can't perform increment or decrement operations. A memory location can be cast, for example, from MyClass* to void* and back again to MyClass*. Such operations are inherently error-prone and require great care to avoid errors. Modern C++ discourages the use of void pointers unless absolutely necessary.
+Yazılı bir işaretçi void işaretçiye ayarlandığında, bellek konumunun içeriği değiştirilmez, ancak artış veya azaltma işlemlerini gerçekleştirebilmek için tür bilgileri kaybedilir. Bir bellek konumu, örneğin MyClass * öğesinden void * ve yeniden MyClass * öğesine dönüşebilir. Bu gibi işlemler, doğal olarak hataya açıktır ve hataları önlemek için harika bir fikir gerektirir. Modern C++ etkilenmeden, kesin bir şekilde gerekmedikçe void işaretçilerinin kullanımını kullanır.
 
 ```cpp
 
@@ -290,11 +290,11 @@ int main()
 }
 ```
 
-## <a name="pointers_to_functions"></a> Pointers to functions
+## <a name="pointers_to_functions"></a>İşlevlere işaretçiler
 
-In C-style programming, function pointers are used primarily to pass functions to other functions. In this scenario, the caller can customize the behavior of a function without modifying it. In modern C++, [lambda expressions](lambda-expressions-in-cpp.md) provide the same capability with greater type safety and other advantages.
+C stili programlamada, işlev işaretçileri birincil olarak işlevleri diğer işlevlere geçirmek için kullanılır. Bu senaryoda, çağıran bir işlevin davranışını değiştirmeden özelleştirebilir. Modern C++bir deyişle, [lambda ifadeleri](lambda-expressions-in-cpp.md) daha fazla güvenlik ve diğer avantajlar ile aynı özelliği sağlar.
 
-A function pointer declaration specifies the signature that the pointed-to function must have:
+Bir işlev işaretçisi bildirimi, işaret eden işlevin sahip olması gereken imzayı belirtir:
 
 ```cpp
 // Declare pointer to any function that...
@@ -310,7 +310,7 @@ void (*x)();
 int (*i)(int i, string s, double d);
 ```
 
-The following example shows a function `combine` that takes as a parameter any function that accepts a `std::string` and returns a `std::string`. Depending on the function that is passed to `combine` it will either prepend or append a string.
+Aşağıdaki örnek, bir `std::string` kabul eden ve bir `std::string`döndüren işlev olarak bir parametre olarak alan bir işlev `combine` gösterir. `combine` geçirilen işleve bağlı olarak, bir dize önüne veya sonuna bir dize eklenir.
 
 ```cpp
 #include <iostream>
@@ -344,7 +344,7 @@ int main()
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Smart pointers](smart-pointers-modern-cpp.md)
-[Indirection Operator: *](indirection-operator-star.md)<br/>
+[Akıllı işaretçiler](smart-pointers-modern-cpp.md)
+[yöneltme işleci: *](indirection-operator-star.md)<br/>
 [Address-of İşleci: &](address-of-operator-amp.md)</br>
-[Welcome back to C++](welcome-back-to-cpp-modern-cpp.md)
+[Uygulamasına geri hoş geldinizC++](welcome-back-to-cpp-modern-cpp.md)

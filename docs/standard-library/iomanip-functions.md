@@ -57,15 +57,15 @@ T7 get_money(Money& amount, bool use_intl);
 Ayıklanan parasal değer.
 
 *use_intl*\
-**Değer doğru**ise, uluslararası biçim kullanın. Varsayılan değer **false**'dur.
+**Değer doğru**ise, uluslararası biçim kullanın. Varsayılan değer **false**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleici, Stream `str`ayıklandığında, `str`ile ilişkili yerel ayar modeli `money_get` için üye işlevi `get` çağıran bir `formatted input function` olarak davranır, uluslararası biçimi göstermek için *use_intl* kullanarak . Başarılı olursa, çağrı çıkarılan parasal değeri *tutar* olarak depolanır. Ardından, işleleyici `str`döndürür.
+İşleici, Stream `str`ayıklandığında, `str`ile ilişkili yerel ayar modeli `money_get` `get` üye işlevini çağıran bir `formatted input function` olarak davranır ve bu da uluslararası biçimi göstermek için *use_intl* kullanılarak yapılır. Başarılı olursa, çağrı çıkarılan parasal değeri *tutar* olarak depolanır. Ardından, işleleyici `str`döndürür.
 
 `Money`, `str`ile aynı öğe ve nitelikler parametrelerine sahip `basic_string` `long double` türünde veya bir örneklemede olmalıdır.
 
-## <a name="iomanip_get_time"></a>get_time
+## <a name="iomanip_get_time"></a>  get_time
 
 İstenen biçimi kullanarak bir akıştan zaman değeri ayıklar. Bir parametre içindeki değeri zaman yapısı olarak döndürür.
 
@@ -84,7 +84,7 @@ Saat değerini elde etmek için kullanılacak biçim.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleici `str`, Stream 'den ayıklandığında, `str`ile ilişkili yerel ayar modeli `time_get` `get` üye işlevini çağıran bir `formatted input function` olarak davranır, zaman yapısını ve `tptr` belirtmek için @no__t_6 kullanarak _ null sonlandırılmış bir biçim dizesinin başlangıcını göstermek için. Başarılı olursa, çağrı, ayıklanan zaman alanları ile ilişkili değerleri zaman yapısında depolar. Ardından, işleleyici `str`döndürür.
+İşleici, Stream `str`ayıklandığında, `str`ile ilişkili yerel ayar `time_get` modeli için `get` üye işlevini çağıran bir `formatted input function` olarak davranır ve null sonlandırılmış bir biçim dizesinin başlangıcını göstermek için `tptr` kullanarak zaman yapısını ve `fmt` gösterir. Başarılı olursa, çağrı, ayıklanan zaman alanları ile ilişkili değerleri zaman yapısında depolar. Ardından, işleleyici `str`döndürür.
 
 ## <a name="iomanip_put_money"></a>put_money
 
@@ -109,7 +109,7 @@ Akışa eklenecek parasal miktar.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleici, akışa eklenen bir nesne döndürür `str`, `str`ilişkili yerel ayar modeli `money_put` için `put` üye işlevini çağıran bir biçimli çıkış işlevi olarak davranır. Başarılı olursa, çağrı `amount` uygun şekilde formatlanan ve Fill öğesi olarak uluslararası biçimi ve `str.fill()`belirtmek için *use_intl* kullanılarak biçimlendirilir. Ardından, işleleyici `str`döndürür.
+İşleici, akışa eklenen bir nesne döndürür `str`, `str`ilişkili yerel ayar modeli `money_put` için `put` üye işlevini çağıran bir biçimli çıkış işlevi olarak davranır. Başarılı olursa, arama `amount` uygun şekilde biçimlendirir ve *use_intl* kullanarak, bir uluslararası biçimi ve `str.fill()`, Fill öğesi olarak gösterir. Ardından, işleleyici `str`döndürür.
 
 `Money`, `str`ile aynı öğe ve nitelikler parametrelerine sahip `basic_string` `long double` türünde veya bir örneklemede olmalıdır.
 
@@ -132,7 +132,7 @@ Saat değerini yazmak için istenen biçim.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleici, akışa eklenen `str``formatted output function`olarak davrandığı bir nesne döndürür. Output işlevi, `str`ilişkili yerel ayar modeli `time_put` için `put` üye işlevini çağırır. Output işlevi, null ile sonlandırılmış bir biçim dizesinin başlangıcını göstermek için zaman yapısını ve *time_format* 'yi göstermek için *time_ptr* kullanır. Başarılı olursa, çağrı, biçim dizesinden sabit metin ve zaman yapısından dönüştürülen değerleri ekler. Ardından, işleleyici `str`döndürür.
+İşleici, akışa eklenen `str``formatted output function`olarak davrandığı bir nesne döndürür. Output işlevi, `str`ilişkili yerel ayar modeli `time_put` için `put` üye işlevini çağırır. Output işlevi, zaman yapısını belirtmek için *time_ptr* kullanır ve null sonlandırılmış bir biçim dizesinin başlangıcını göstermek için *time_format* . Başarılı olursa, çağrı, biçim dizesinden sabit metin ve zaman yapısından dönüştürülen değerleri ekler. Ardından, işleleyici `str`döndürür.
 
 ## <a name="quoted"></a>tırnak işaretli
 
@@ -147,10 +147,10 @@ quoted(const char* str, char delimiter, char escape) // or wide versions
 
 ### <a name="parameters"></a>Parametreler
 
-*str* \
+*str*\
 Std:: String, Char\*, dize sabiti veya ham dize değişmez değeri ya da bunlardan herhangi birinin geniş bir sürümü (örneğin, std:: wstring, wchar_t\*).
 
-*sınırlayıcı* \
+*sınırlayıcı*\
 Dizenin başı ve sonu için sınırlayıcı olarak kullanılacak kullanıcı tanımlı bir karakter veya geniş karakter.
 
 *kaçış*\
@@ -337,7 +337,7 @@ Sayı tabanı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşleici `str`Stream 'den ayıklandığında veya akışa eklenen bir nesne döndürür, `str.setf(mask, `[ios_base:: basefield](../standard-library/ios-base-class.md#fmtflags)`)`çağırır ve sonra `str`döndürür. Burada `mask` aşağıdaki şekilde belirlenir:
+İşleici `str`Stream 'den ayıklandığında veya akışa eklenen bir nesne döndürür, `str.setf(mask, `[ios_base:: basefield](../standard-library/ios-base-class.md#fmtflags)`)`çağırır ve ardından `str`döndürür. Burada `mask` aşağıdaki şekilde belirlenir:
 
 - *Taban* 8 ise, [`mask` `ios_base::`.](../standard-library/ios-functions.md#oct)
 
@@ -362,7 +362,7 @@ T4 setfill(Elem Ch);
 
 ### <a name="parameters"></a>Parametreler
 
-*Ch* \
+*Ch*\
 Sağa hizalanmış bir ekranda boşlukları dolduriçin kullanılacak karakter.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -653,4 +653,4 @@ l5 = 65536
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[iomanıp >\<](../standard-library/iomanip.md)
+[iomanıp > \<](../standard-library/iomanip.md)

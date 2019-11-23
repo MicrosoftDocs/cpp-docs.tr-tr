@@ -63,7 +63,7 @@ ms.locfileid: "69514684"
 
 **Araç Çubuğu Düzenleyicisi** penceresi, **resim Düzenleyicisi** penceresiyle aynı olan bir düğme resminin iki görünümünü gösterir. Bölünmüş çubuk iki bölmeyi ayırır ve bölmelerin göreli boyutlarını değiştirmek için bölme çubuğunu yan yana sürükleyebilirsiniz. Etkin bölmede bir seçim kenarlığı görüntülenir ve görüntünün iki görünümünün üzerinde konu araç çubuğu bulunur.
 
-![Araç Çubuğu Düzenleyicisi](../mfc/media/vctoolbareditor.gif "Vctoolbareditor")<br/>
+![Araç Çubuğu Düzenleyicisi](../mfc/media/vctoolbareditor.gif "vctoolbareditor")<br/>
 **Araç Çubuğu Düzenleyicisi**
 
 **Araç Çubuğu Düzenleyicisi** , Işlevsellikten **Görüntü Düzenleyicisi** ile benzerdir ve ikisi arasındaki menü öğeleri, grafik araçları ve bit eşlem Kılavuzu aynıdır. **Araç Çubuğu Düzenleyicisi** ve **Görüntü Düzenleyicisi**arasında geçiş yapmak için **görüntü** menüsünde bir menü komutu vardır. **Grafik** araç çubuğunu, **renkler** paletini veya **görüntü** menüsünü kullanma hakkında daha fazla bilgi için bkz. [görüntü düzenleyici](../windows/image-editor-for-icons.md).
@@ -107,7 +107,7 @@ Bir araç çubuğu düğmesi aşağıdaki özelliklere sahiptir:
 
 1. **Kaynak Ekle** Iletişim kutusunda **kaynak türü** listesinden **araç çubuğu** ' nu seçin ve ardından **Yeni**' yi seçin.
 
-   **Araç çubuğu** kaynak türünün yanında **+** bir artı işareti () görünürse, araç çubuğu şablonlarının kullanılabildiği anlamına gelir. Şablon listesini genişletmek için artı işaretini seçin, bir şablon seçin ve **Yeni**' yi seçin.
+   **Araç çubuğu** kaynak türünün yanında bir artı işareti ( **+** ) görünürse, araç çubuğu şablonlarının kullanılabildiği anlamına gelir. Şablon listesini genişletmek için artı işaretini seçin, bir şablon seçin ve **Yeni**' yi seçin.
 
 ### <a name="to-convert-bitmaps-to-toolbar-resources"></a>Bit eşlemleri araç çubuğu kaynaklarına dönüştürmek için
 
@@ -134,7 +134,7 @@ Bir araç çubuğu düğmesi aşağıdaki özelliklere sahiptir:
 
    - Araç çubuğunun sağ ucundaki boş düğmeye bir KIMLIK atayın. Bunu, [Özellikler penceresinde](/visualstudio/ide/reference/properties-window) **ID** özelliğini düzenleyerek yapabilirsiniz. Örneğin, bir menü seçeneği olarak aynı KIMLIĞE bir araç çubuğu düğmesi vermek isteyebilirsiniz. Bu durumda, menü seçeneğinin **kimliğini** seçmek için açılan liste kutusunu kullanın.
 
-   - **Araç çubuğu görünüm** bölmesinde araç çubuğunun sağ ucundaki boş düğmesini seçin ve çizim ' i başlatın. Varsayılan bir Button komutu kimliği atandı (ID_BUTTON\<n >).
+   - **Araç çubuğu görünüm** bölmesinde araç çubuğunun sağ ucundaki boş düğmesini seçin ve çizim ' i başlatın. Varsayılan düğme komut KIMLIĞI atanır (ID_BUTTON\<n >).
 
 #### <a name="to-add-an-image-to-a-toolbar-as-a-button"></a>Bir araç çubuğuna düğme olarak görüntü eklemek için
 
@@ -145,11 +145,11 @@ Bir araç çubuğu düğmesi aşağıdaki özelliklere sahiptir:
    > [!NOTE]
    > Görüntüyü Visual Studio 'da açarsanız, **görüntü düzenleyicide**açılır. Görüntüyü diğer grafik programlarında da açabilirsiniz.
 
-1. Menü**kopyasını** **Düzenle** > ' ye gidin.
+1. Menü **düzenle** > **Kopyala**' ya gidin.
 
 1. Kaynak pencerenin üst kısmındaki sekmesini seçerek araç çubuğa geçiş yapın.
 
-1. Menü **Düzenle** > **Yapıştır**'a gidin.
+1. Menü **düzenle** > **Yapıştır**'a gidin.
 
    Görüntü, araç çubuğunda yeni bir düğme olarak görünür.
 
@@ -183,19 +183,19 @@ Bir araç çubuğu düğmesi aşağıdaki özelliklere sahiptir:
 
 1. Araç çubuğu düğmesini seçin.
 
-1. [Özellikler penceresinde](/visualstudio/ide/reference/properties-window), **istem** alanına, durum çubuğu için bir açıklama ve iletiden sonra araç ipucu adı ekleyin `\n` .
+1. [Özellikler penceresinde](/visualstudio/ide/reference/properties-window), **istem** alanında, durum çubuğu için bir açıklama ve ileti sonra `\n` ekleyin ve araç ipucu adını ekleyin.
 
 Örneğin, **WordPad**'de **Yazdır** düğmesine ait araç ipucunu görmek için:
 
 1. **WordPad 'i**açın.
 
-1. Fare işaretçinizi **Yazdır** araç çubuğu düğmesinin üzerine getirin ve Word 'ün `Print` artık fare işaretçiniz altında olduğuna dikkat edin.
+1. Fare işaretçinizi **Yazdır** araç çubuğu düğmesinin üzerine getirin ve şimdi `Print` kelimesinin fare işaretçiniz altında olduğuna dikkat edin.
 
-1. **WordPad** penceresinin alt kısmındaki durum çubuğuna bakın ve şimdi metni `Prints the active document`gösterir.
+1. **WordPad** penceresinin altındaki durum çubuğuna bakın ve şimdi `Prints the active document`metin gösterdiğini unutmayın.
 
-`Print`araç ipucu adıdır ve `Prints the active document` durum çubuğu düğmesinin açıklamasıdır.
+`Print` araç ipucu adıdır ve `Prints the active document` durum çubuğu düğmesinin açıklamasıdır.
 
-Bu etkiyi **araç çubuğu düzenleyicisini**kullanarak Istiyorsanız, **Prompt** özelliğini olarak `Prints the active document\nPrint`ayarlayın.
+Bu etkiyi **araç çubuğu düzenleyicisini**kullanarak Istiyorsanız, **Prompt** özelliğini `Prints the active document\nPrint`olarak ayarlayın.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -204,5 +204,5 @@ MFC veya ATL
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Kaynak düzenleyicileri](../windows/resource-editors.md)
-[menüleri ve diğer kaynaklar](/windows/win32/menurc/resources)<br/>
+[menüler ve diğer kaynaklar](/windows/win32/menurc/resources)<br/>
 [Araç Çubuğu Düğmesi Özellikleri](../windows/toolbar-button-properties.md)<br/>

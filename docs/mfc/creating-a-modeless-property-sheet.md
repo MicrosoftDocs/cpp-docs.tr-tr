@@ -1,5 +1,5 @@
 ---
-title: Kalıcı olmayan özellik sayfası oluşturma
+title: Kalıcı Olmayan Özellik Sayfası Oluşturma
 ms.date: 11/04/2016
 helpviewer_keywords:
 - modeless property sheets
@@ -13,7 +13,7 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 09/30/2019
 ms.locfileid: "71685694"
 ---
-# <a name="creating-a-modeless-property-sheet"></a>Kalıcı olmayan özellik sayfası oluşturma
+# <a name="creating-a-modeless-property-sheet"></a>Kalıcı Olmayan Özellik Sayfası Oluşturma
 
 Normalde, oluşturduğunuz Özellik sayfaları kalıcı olacaktır. Kalıcı bir özellik sayfası kullanırken, uygulamanın başka bir bölümünü kullanmadan önce kullanıcının özellik sayfasını kapatması gerekir. Bu makalede, uygulamanın diğer bölümlerini kullanırken Kullanıcı özellik sayfasını açık tutmaya izin veren engelleyici olmayan bir özellik sayfası oluşturmak için kullanabileceğiniz yöntemler açıklanır.
 
@@ -21,14 +21,14 @@ Bir özellik sayfasını kalıcı iletişim kutusu yerine kalıcı olmayan ileti
 
 Ek görevlerden biri, özellik sayfası açıkken değişiklik yaptığı dış nesne ve özellik sayfası arasında veri alışverişi yapılır. Bu genellikle standart kalıcı olmayan iletişim kutuları ile aynı görevdir. Bu görevin bir kısmı, kalıcı olmayan özellik sayfası ve özellik ayarlarının uygulandığı dış nesne arasında bir iletişim kanalı uygulamadır. Kalıcı olmayan özellik sayfası için [CPropertySheet](../mfc/reference/cpropertysheet-class.md) öğesinden bir sınıf türetirsiniz bu uygulama oldukça kolaydır. Bu makalede, bu işlemi yaptığınız varsayılır.
 
-Kalıcı olmayan özellik sayfası ve dış nesne (örneğin, görünümdeki geçerli seçim) arasında iletişim kurmak için bir yöntem, özellik sayfasından dış nesneye bir işaretçi tanımlamaktır. Odak bir dış nesneden diğerine değiştiği zaman işaretçiyi değiştirmek için @no__t -1-Derived sınıfında `SetMyExternalObject` gibi bir işlev tanımlayın. @No__t-0 işlevinin, yeni seçilen dış nesneyi yansıtacak şekilde her bir özellik sayfası için ayarları sıfırlaması gerekir. Bunu gerçekleştirmek için `SetMyExternalObject` işlevi, `CPropertySheet` sınıfına ait [CPropertyPage](../mfc/reference/cpropertypage-class.md) nesnelerine erişebilmelidir.
+Kalıcı olmayan özellik sayfası ve dış nesne (örneğin, görünümdeki geçerli seçim) arasında iletişim kurmak için bir yöntem, özellik sayfasından dış nesneye bir işaretçi tanımlamaktır. Odak bir dış nesneden diğerine her değiştiğinde işaretçiyi değiştirmek için `CPropertySheet`türetilmiş sınıfta bir işlev (`SetMyExternalObject`gibi) tanımlayın. `SetMyExternalObject` işlevin, yeni seçilen dış nesneyi yansıtacak şekilde her bir özellik sayfası için ayarları sıfırlaması gerekir. Bunu gerçekleştirmek için `SetMyExternalObject` işlevi, `CPropertySheet` sınıfına ait olan [CPropertyPage](../mfc/reference/cpropertypage-class.md) nesnelerine erişebilmelidir.
 
-Özellik sayfası içindeki özellik sayfalarına erişim sağlamanın en kolay yolu, `CPropertyPage` nesnelerini @no__t -1-Derived nesnesine katıştırmanız sağlamaktır. @No__t -1-türetilmiş nesnesindeki `CPropertyPage` nesne ekleme, kalıcı iletişim kutuları için tipik tasarımdan farklıdır, burada Özellik sayfası sahibinin `CPropertyPage` nesnelerini oluşturduğu ve bunları [CPropertySheet:: AddPage](../mfc/reference/cpropertysheet-class.md#addpage)aracılığıyla Özellik sayfasına geçirir.
+Özellik sayfası içindeki özellik sayfalarına erişim sağlamanın en kolay yolu, `CPropertyPage` nesnelerini `CPropertySheet`türetilmiş nesneye katıştırmanız. `CPropertySheet`türetilmiş nesnedeki `CPropertyPage` nesneleri eklemek, kalıcı iletişim kutuları için tipik tasarımdan farklıdır, burada Özellik sayfası sahibi `CPropertyPage` nesneleri oluşturur ve bunları [CPropertySheet:: AddPage](../mfc/reference/cpropertysheet-class.md#addpage)aracılığıyla Özellik sayfasına geçirir.
 
 Kalıcı olmayan özellik sayfası ayarlarının bir dış nesneye ne zaman uygulanacağını belirlemek için birçok Kullanıcı Arabirimi seçeneği vardır. Her bir alternatif, Kullanıcı herhangi bir değeri değiştirdiğinde geçerli özellik sayfasının ayarlarını uygulamadır. Diğer bir seçenek de bir Uygula düğmesi sağlamaktır ve bu, kullanıcının, değişiklikleri dış nesneye kaydetmeden önce özellik sayfalarında birikmesini sağlar. Uygula düğmesini işleme yolları hakkında daha fazla bilgi için, [Uygula düğmesini işleme](../mfc/handling-the-apply-button.md)başlıklı makaleye bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Özellik sayfaları](../mfc/property-sheets-mfc.md)<br/>
-[Veri değişimi](../mfc/exchanging-data.md)<br/>
+[Veri Değişimi](../mfc/exchanging-data.md)<br/>
 [MFC 'de Iletişim kutularıyla çalışma](../mfc/life-cycle-of-a-dialog-box.md)

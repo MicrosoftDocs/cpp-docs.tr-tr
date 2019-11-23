@@ -21,7 +21,7 @@ ms.locfileid: "72444911"
 
 **IF** deyiminin veya **while** döngüsünün denetim ifadesi bir sabit olarak değerlendirilir. Visual Studio 2015 güncelleştirme 3 ' ten başlayarak, ortak bir dizi kullanımı nedeniyle, 1 veya **true** gibi önemsiz sabitler, bir ifadede bir işlemin sonucu olmadıkları sürece uyarıyı tetiklemez.
 
-Döngü ortasında çıkış yaptığından **while** döngüsünün denetim ifadesi bir sabit ise **while** döngüsünü bir **for** döngüsü ile değiştirmeyi göz önünde bulundurun. **For** döngüsünün başlatma, sonlandırma testi ve döngü artışını atlayabilirsiniz, bu da döngünün @no__t gibi sonsuz olmasına neden olur ve **for** ifadesinin gövdesinden döngüden çıkabilirsiniz.
+Döngü ortasında çıkış yaptığından **while** döngüsünün denetim ifadesi bir sabit ise **while** döngüsünü bir **for** döngüsü ile değiştirmeyi göz önünde bulundurun. Bir **for** döngüsünün başlatma, sonlandırma testi ve döngü artışını atlayabilirsiniz, bu da döngünün `while(1)`gibi sonsuz olmasına neden olur ve **for** ifadesinin gövdesinden döngüden çıkabilirsiniz.
 
 ## <a name="example"></a>Örnek
 

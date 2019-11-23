@@ -19,7 +19,7 @@ ms.locfileid: "71998660"
 
 ## <a name="remarks"></a>Açıklamalar
 
-@No__t-1, @no__t olmayan veya tam sayı türü olarak tanımlanmış `static` veri üyesini başlatmak için üye tanımı ifadesini kullanın. Bildirimde başlatılamaz.
+`volatile`,`const`olmayan veya tam sayı türü olarak tanımlanan bir `static` veri üyesini başlatmak için üye tanımı ifadesini kullanın. Bildirimde başlatılamaz.
 
 ## <a name="example"></a>Örnek
 

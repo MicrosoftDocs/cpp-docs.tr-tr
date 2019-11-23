@@ -77,7 +77,7 @@ Bu bilgileri bulmanın en iyi yeri, sorun yaşandıktan hemen sonra derleme gün
 
 #### <a name="to-report-the-contents-of-the-command-line"></a>Komut satırının içeriğini raporlamak için
 
-1. **CL. Command. 1. TLog** dosyasını bulun ve açın. Varsayılan olarak, bu dosya \\Visual Studio *sürümü*\\projects @ no__t-3*SolutionName*\\*ProjectName*\\*Configuration*\\*ProjectName*.TLog1CL.command.1.tlog veya 2 kaynak @ No__t-13repos @ no__t-14*SolutionName*6*ProjectName*8*yapılandırma*0*ProjectName*.TLog2CL.command.1.tlog içindeki Belgeler klasörünüzde bulunur. Başka bir yapı sistemi kullanıyorsanız veya projeniz için varsayılan konumu değiştirdiyseniz, farklı bir konumda olabilir.
+1. **CL. Command. 1. TLog** dosyasını bulun ve açın. Bu dosya, varsayılan olarak, \\ Visual Studio *Sürüm*\\projeler klasöründe bulunur\\*SolutionName*\\*ProjectName*\\*Configuration*\\*ProjectName*. TLog\\CL. Command. 1. TLog, ya da \\Source\\\\CL. Command. 1. TLog.\\\\\\\\ Başka bir yapı sistemi kullanıyorsanız veya projeniz için varsayılan konumu değiştirdiyseniz, farklı bir konumda olabilir.
 
    Bu dosyanın içinde, kaynak kodu dosyalarınızın adlarını, ardından her biri ayrı satırlarda derlemek için kullanılan komut satırı bağımsız değişkenlerini bulacaksınız.
 
@@ -93,7 +93,7 @@ Bulduğunuz sorunun ayrıntılı bir açıklamasına ihtiyacımız var. Bu neden
 
 Sorun derleyicinin geçersiz kodu kabul etmesidir ve bir tanılama oluşturmaz, Bunu raporunuza dahil edin.
 
-Çalışma zamanı davranış sorununu raporlamak için, programın yazdırdıklarının **tam bir kopyasını** ve görmeyi beklediğiniz öğeleri ekleyin. İdeal olarak, onu output ifadesinin kendisine gömeceksiniz, örneğin, `printf("This should be 5: %d\n", actual_result);`. Programınız kilitlenirse veya askıda kalırsa, bu da bunu bahsetme.
+Çalışma zamanı davranış sorununu raporlamak için, programın yazdırdıklarının **tam bir kopyasını** ve görmeyi beklediğiniz öğeleri ekleyin. İdeal olarak, bunu çıkış ifadesinin kendisine katıştıracaksınız, örneğin, `printf("This should be 5: %d\n", actual_result);`. Programınız kilitlenirse veya askıda kalırsa, bu da bunu bahsetme.
 
 Bulduğunuz herhangi bir Work-arounds gibi bulduğunuz sorunu tanılamanıza yardımcı olabilecek diğer ayrıntıları ekleyin. Raporunuzda başka bir yerde bulunan bilgileri yinelemenize çalışın.
 
@@ -107,7 +107,7 @@ Yeniden *oluşturma işlemi* , tam, kendi kendine içerilen bir kaynak kodu örn
 
 - **En az.** Yeniden uzmanları mümkün olduğunca küçük olmalıdır, ancak yine de bulduğunuz sorunu tam olarak gösterir. Yeniden uzmanlarının karmaşık veya gerçekçi olması gerekmez. Yalnızca standart ya da belgelenen derleyici uygulamasına uyan kodu göstermesi gerekir. Eksik bir tanılama için yeniden oluşturma, uyumlu olmayan kodu göstermelidir. Yalnızca sorunu göstermek için yeterli kod içeren basit ve noktadan noktaya yeniden uzmanları en iyisidir. Kodu ortadan kaldırabilir veya basitleştirebilir ve uyumlu kaldıysanız ve aynı zamanda sorunu değiştirmeden bırakırsanız, bunu yapın. Bu kodun çalışması için sayaç örnekleri eklemeniz gerekmez.
 
-- **Kendi kendine dahil.** Reprofesyonelleri, gereksiz bağımlılıklardan kaçınmalıdır. Sorunu üçüncü taraf kitaplıklar olmadan yeniden oluşturabilmeniz için bunu yapın. Sorunu basit çıkış deyimlerinin yanı sıra herhangi bir kitaplık kodu olmadan yeniden üretemede (örneğin, `puts("this shouldn't compile");`, `std::cout << value;` ve `printf("%d\n", value);`), bunu yapın. Örnek, herhangi bir Kullanıcı başlığına başvuru olmadan tek bir kaynak kod dosyası ile dar ise idealdir. Sorun için olası bir katkıda bulunanı göz önünde bulundurmanız gereken kod miktarını azaltmak, bizim için çok yararlı olabilir.
+- **Kendi kendine dahil.** Reprofesyonelleri, gereksiz bağımlılıklardan kaçınmalıdır. Sorunu üçüncü taraf kitaplıklar olmadan yeniden oluşturabilmeniz için bunu yapın. Sorunu basit çıkış deyimlerinin yanı sıra herhangi bir kitaplık kodu olmadan yeniden üretemede (örneğin, `puts("this shouldn't compile");`, `std::cout << value;`ve `printf("%d\n", value);`), bunu yapın. Örnek, herhangi bir Kullanıcı başlığına başvuru olmadan tek bir kaynak kod dosyası ile dar ise idealdir. Sorun için olası bir katkıda bulunanı göz önünde bulundurmanız gereken kod miktarını azaltmak, bizim için çok yararlı olabilir.
 
 - **En son derleyici sürümüne karşı.** Reprofesyonelleri, mümkün olduğunda en son güncelleştirmenin en son sürümünü kullanmalıdır. Ya da bir sonraki güncelleştirmenin veya sonraki ana yayının en son yayın öncesi sürümünü kullanın. Araç takımının eski sürümlerinde bulabileceğiniz sorunlar genellikle daha yeni sürümlerde düzeltilmiştir. Düzeltmeler yalnızca olağanüstü koşullarda eski sürümlere karşı geri alınır.
 
@@ -149,7 +149,7 @@ INTERNAL COMPILER ERROR in 'd:\o\dev\otools\bin\x64\cl.exe'
 
 #### <a name="backend-code-generation-crash"></a>Arka uç (kod oluşturma) kilitlenme
 
-Derleyicinin kod oluşturma aşamasında arka uç kilitlenmeler oluşur. Genellikle, derleyici [önemli hata C1001](../error-messages/compiler-errors-1/fatal-error-c1001.md)yayar ve sorun ile ilişkili kaynak kodu dosyasına ve satır numarasına başvurmayabilir. Genellikle derleyicinin @ no__t-0utc @ no__t-1src @ no__t-2p2 @ no__t-3main. c dosyasında bahsetmektedir, ancak bu ayrıntıyı yoksayabilirsiniz.
+Derleyicinin kod oluşturma aşamasında arka uç kilitlenmeler oluşur. Genellikle, derleyici [önemli hata C1001](../error-messages/compiler-errors-1/fatal-error-c1001.md)yayar ve sorun ile ilişkili kaynak kodu dosyasına ve satır numarasına başvurmayabilir. Genellikle dosya derleyicisi\\UTC\\src\\P2\\Main. c ' dir, ancak bu ayrıntıyı yoksayabilirsiniz.
 
 Bu tür bir kilitlenme için, CL. exe ' ye yönelik **/GL** komut satırı bağımsız değişkeni tarafından etkinleştirilen bağlantı zamanı kod ÜRETIMI (LTCG) kullanıyorsanız bir [bağlantı yeniden üretme](#link-repros) sağlayın. Aksi takdirde, bunun yerine [önceden işlenmiş](#preprocessed-repros) yeniden oluşturma sağlayın.
 
@@ -268,7 +268,7 @@ Yürütülebilir dosyanızı oluşturmak için C++/CX kullanıyorsanız, öncede
 
 1. Oluşturulan _dosya adı_. ı dosyasını **#using** yönergeler için arayın.
 
-1. Başvurulan tüm dosyaların bir listesini oluşturun. Herhangi bir Windows @ no__t-0. winmd dosyası, platform. winmd dosyası ve mscorlib. dll ' den çıkın.
+1. Başvurulan tüm dosyaların bir listesini oluşturun. Tüm Windows\*. winmd dosyalarını, platform. winmd dosyalarını ve mscorlib. dll ' yi kapatın.
 
 Önceden işlenmiş dosyanın sorunu hala yeniden ürettiğini doğrulamaya hazırlanmak için
 
@@ -318,7 +318,7 @@ Son olarak, önceden işlenmiş yeniden oluşturma dosyalarını (*filename*. i 
 
 ### <a name="link-repros"></a>Yeniden uzmanları bağla
 
-*Bağlantı yeniden üretme* , **bağlantı @ no__t-2Yeniden üretme** ortam değişkeni veya [/LINKREPRO](../build/reference/linkrepro.md) bağlayıcı seçeneğinin bağımsız değişkeni olarak belirtilen bir dizinin bağlayıcı tarafından oluşturulan içeriğidir. Bağlantı zamanında oluşan bir sorunu topluca gösteren derleme yapıtları içerir. Örneğin, bağlantı zamanı kod oluşturma (LTCG) veya bağlayıcı kilitlenmesiyle ilgili bir arka uç kilitlenmesi bulunur. Bu derleme yapıtları, sorun yeniden üretibilmeleri için bağlayıcı girişi olarak gerekli olanlardır. Bir bağlantı yeniden üretme, bu ortam değişkeni kullanılarak kolayca oluşturulabilir. Bağlayıcının yerleşik yeniden üretme oluşturma özelliğini sunar.
+*Bağlantı yeniden üretme* , **bağlantı\_yeniden üretme** ortam değişkeni veya [/LINKREPRO](../build/reference/linkrepro.md) bağlayıcı seçeneğine bir bağımsız değişken olarak belirtilen bir dizinin bağlayıcı tarafından oluşturulan içeriğidir. Bağlantı zamanında oluşan bir sorunu topluca gösteren derleme yapıtları içerir. Örneğin, bağlantı zamanı kod oluşturma (LTCG) veya bağlayıcı kilitlenmesiyle ilgili bir arka uç kilitlenmesi bulunur. Bu derleme yapıtları, sorun yeniden üretibilmeleri için bağlayıcı girişi olarak gerekli olanlardır. Bir bağlantı yeniden üretme, bu ortam değişkeni kullanılarak kolayca oluşturulabilir. Bağlayıcının yerleşik yeniden üretme oluşturma özelliğini sunar.
 
 #### <a name="to-generate-a-link-repro-using-the-link_repro-environment-variable"></a>Link_repro ortam değişkenini kullanarak bağlantı yeniden üretme oluşturmak için
 
@@ -330,19 +330,19 @@ Son olarak, önceden işlenmiş yeniden oluşturma dosyalarını (*filename*. i 
 
 1. Bağlantı yeniden üretme için *linkrepro* adlı bir dizin oluşturmak üzere **mkdir linkrepro** girin. Başka bir bağlantı yeniden üretme yakalamak için farklı bir ad kullanabilirsiniz.
 
-1. **Link @ no__t-3yeniden üretme** ortam değişkenini oluşturduğunuz dizine ayarlamak için **@ no__t-1yeniden üretme = linkrepro komut kümesi bağlantısını** girin. Derlemeniz farklı bir dizinden çalışıyorsa, genellikle daha karmaşık projeler için olduğu gibi, **bağlantı @ no__t-1yeniden** oluşturma ' yı bağlantı yeniden üretme dizininizin tam yoluna ayarlayın.
+1. **Bağlantı\_yeniden üretme** ortam değişkenini oluşturduğunuz dizine ayarlamak için **\_yeniden üretme = linkrepro komut kümesi bağlantısını** girin. Derlemeniz farklı bir dizinden çalışıyorsa, çoğu zaman daha karmaşık projeler için de olduğu gibi, **bağlantı\_** yeniden oluşturma işlemi yerine bağlantı yeniden oluşturma dizininizin tam yolunu ayarlayın.
 
-1. Visual Studio 'da yeniden üretme projesi oluşturmak için, geliştirici komut istemi konsol penceresinde, **devenv**komutunu girin. Bu, **Link @ no__t-1yeniden üretme** ortam değişkeninin değerinin Visual Studio 'ya görünür olmasını sağlar. Projeyi komut satırında derlemek için, yeniden üretme derlemesini çoğaltmak üzere yukarıda yakalanan komut satırı bağımsız değişkenlerini kullanın.
+1. Visual Studio 'da yeniden üretme projesi oluşturmak için, geliştirici komut istemi konsol penceresinde, **devenv**komutunu girin. **Bağlantı\_yeniden üretme** ortamı değişkeninin değerinin Visual Studio 'ya görünür olmasını sağlar. Projeyi komut satırında derlemek için, yeniden üretme derlemesini çoğaltmak üzere yukarıda yakalanan komut satırı bağımsız değişkenlerini kullanın.
 
 1. Yeniden üretme projenizi derleyin ve beklenen sorunun oluştuğunu onaylayın.
 
 1. Derlemeyi yapmak için kullandıysanız, Visual Studio 'Yu kapatın.
 
-1. Geliştirici komut istemi konsol penceresinde, **Link @ no__t-3yeniden üretme** ortam değişkenini temizlemek için **@ no__t-1yeniden üretme = komut kümesi bağlantısını** girin.
+1. Geliştirici komut istemi konsol penceresinde, **bağlantı\_yeniden üretme** ortam değişkenini temizlemek için **\_yeniden üretme = komut kümesi bağlantısını** girin.
 
 Son olarak, tüm linkrepro dizinini bir. zip dosyasına veya benzer şekilde sıkıştırarak yeniden oluşturma 'yı paketleyin ve raporunuza ekleyin.
 
-**/LINKREPRO** bağlayıcı seçeneği, **Link @ no__t-2Yeniden üretme** ortam değişkeni ile aynı etkiye sahiptir. Oluşturulan bağlantıyı yeniden oluşturma için filtreleyecek adı belirtmek için [/LINKREPROTARGET](../build/reference/linkreprotarget.md) seçeneğini kullanabilirsiniz. **/LINKREPROTARGET**kullanmak için, **/Out** bağlayıcı seçeneğini de belirtmeniz gerekir.
+**/LINKREPRO** bağlayıcı seçeneği, **bağlantı\_yeniden üretme** ortam değişkeniyle aynı etkiye sahiptir. Oluşturulan bağlantıyı yeniden oluşturma için filtreleyecek adı belirtmek için [/LINKREPROTARGET](../build/reference/linkreprotarget.md) seçeneğini kullanabilirsiniz. **/LINKREPROTARGET**kullanmak için, **/Out** bağlayıcı seçeneğini de belirtmeniz gerekir.
 
 #### <a name="to-generate-a-link-repro-using-the-linkrepro-option"></a>/LINKREPRO seçeneğini kullanarak bağlantı yeniden üretme oluşturmak için
 
@@ -371,7 +371,7 @@ Raporunuzu bize almak için kullanabileceğiniz birkaç iyi yol vardır. Visual 
 
 Visual Studio 'da **sorun bildir** Aracı, Visual Studio kullanıcılarının yalnızca birkaç tıklamayla sorunları raporladığı bir yoldur. Bulduğunuz sorun hakkında ayrıntılı bilgi göndermek için basit bir form açılır. Daha sonra, IDE 'yi kapatmadan raporunuzu gönderebilirsiniz.
 
-**Sorun bildir** aracı aracılığıyla sorununuzu BILDIRME, IDE 'den kolay ve kullanışlı bir işlemdir. **Hızlı başlatma** arama kutusunun yanındaki **geri bildirim gönder** simgesini seçerek, bu kişiye başlık çubuğundan erişebilirsiniz. Ya da, **yardım** >   > **bir sorun rapor** **Gönder**' de menü çubuğunda bulabilirsiniz.
+**Sorun bildir** aracı aracılığıyla sorununuzu BILDIRME, IDE 'den kolay ve kullanışlı bir işlemdir. **Hızlı başlatma** arama kutusunun yanındaki **geri bildirim gönder** simgesini seçerek, bu kişiye başlık çubuğundan erişebilirsiniz. Ya da **bir sorun bildirmek** > **Yardım** > **geri bildirim göndermek** için menü çubuğunda bulabilirsiniz.
 
 Bir sorunu bildirmelisiniz, önce geliştirici topluluğunda benzer sorunlar için arama yapın. Sorununuzun daha önce raporlanmış olması durumunda, raporu oylayın ve ek bilgilerle yorum ekleyin. Benzer bir sorun görmüyorsanız, Visual Studio geri bildirim iletişim kutusunun altındaki **yeni sorun bildir** düğmesini seçin ve sorununuzu raporlamak için adımları izleyin.
 

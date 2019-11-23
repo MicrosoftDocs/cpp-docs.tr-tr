@@ -35,7 +35,7 @@ MFC ile kullanılan Windows Forms gösteren örnek bir uygulama için bkz. [MFC 
 
    **Çözüm Gezgini**, **MFC03** proje düğümüne sağ tıklayın ve **Özellikler**' i seçin. **Özellik sayfaları** iletişim kutusu görüntülenir.
 
-   **Özellik sayfaları** iletişim kutusunda, **yapılandırma özellikleri** ağaç denetiminde **genel**' i seçin, sonra **Proje Varsayılanları** bölümünde ortak dil çalışma zamanı **desteğini** **ortak dil çalışma zamanı desteğine ayarlayın ( /clr)** . **Tamam**'a tıklayın.
+   **Özellik sayfaları** iletişim kutusunda, **yapılandırma özellikleri** ağaç denetiminde **genel**' i seçin, sonra **Proje Varsayılanları** bölümünde ortak dil çalışma zamanı **desteğini** **ortak dil çalışma zamanı desteği (/CLR)** olarak ayarlayın. **Tamam** düğmesine tıklayın.
 
 1. .NET denetimine bir başvuru ekleyin.
 
@@ -60,9 +60,9 @@ MFC ile kullanılan Windows Forms gösteren örnek bir uygulama için bkz. [MFC 
     m_HostForWinForm.DoModal();
     ```
 
-1. Projeyi derleyin ve çalıştırın.
+1. Derleme ve projeyi çalıştırın.
 
-   **Yapı** menüsünde **çözüm oluştur**' a tıklayın.
+   Üzerinde **derleme** menüsünde tıklatın **Çözümü Derle**.
 
    **Hata Ayıkla** menüsünde, **hata ayıklama olmadan Başlat**' a tıklayın.
 
@@ -105,7 +105,7 @@ MFC ile kullanılan Windows Forms gösteren örnek bir uygulama için bkz. [MFC 
     }
     ```
 
-1. Projeyi derleyin ve çalıştırın. Windows formundaki düğmesine tıkladığınızda, MFC uygulamasındaki kod çalışır.
+1. Derleme ve projeyi çalıştırın. Windows formundaki düğmesine tıkladığınızda, MFC uygulamasındaki kod çalışır.
 
     Ardından, MFC kodundan görüntülenecek kodu Windows formundaki metin kutusunda bulunan değer ekleyeceksiniz.
 
@@ -132,7 +132,7 @@ MFC ile kullanılan Windows Forms gösteren örnek bir uygulama için bkz. [MFC 
     System::Windows::Forms::MessageBox::Show(z);
     ```
 
-1. Projeyi derleyin ve çalıştırın.
+1. Derleme ve projeyi çalıştırın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

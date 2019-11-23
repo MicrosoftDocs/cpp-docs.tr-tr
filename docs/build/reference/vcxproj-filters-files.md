@@ -1,5 +1,5 @@
 ---
-title: Vcxproj. Filters dosyaları
+title: vcxproj. Filters dosyaları
 ms.date: 09/25/2019
 description: Çözüm Gezgini içindeki dosyalar için özel mantıksal C++ klasörler tanımlamak üzere Visual Studio projelerindeki filtre dosyalarını kullanın
 helpviewer_keywords:
@@ -14,7 +14,7 @@ ms.locfileid: "71686861"
 ---
 # <a name="vcxprojfilters-files"></a>vcxproj. Filters dosyaları
 
-*Filtreler* dosyası (@no__t -1. vcxproj. Filters), MSBuild BIÇIMINDEKI bir XML dosyasıdır ve kök proje klasöründe bulunur. Hangi dosya türlerinin **Çözüm Gezgini**hangi mantıksal klasöre gidebileceği belirler. Aşağıdaki çizimde, *. cpp* dosyaları **kaynak dosyaları** düğümünün altındadır. *. h* dosyaları **üstbilgi dosyaları** düğümünün altında *. ICO* ve *. RC* dosyaları **kaynak dosyaları**altındadır. Bu yerleştirme, filtreler dosyası tarafından denetlenir.
+*Filtreler* dosyası (\*. vcxproj. Filters), MSBuild BIÇIMINDEKI bir XML dosyasıdır ve kök proje klasöründe bulunur. Hangi dosya türlerinin **Çözüm Gezgini**hangi mantıksal klasöre gidebileceği belirler. Aşağıdaki çizimde, *. cpp* dosyaları **kaynak dosyaları** düğümünün altındadır. *. h* dosyaları **üstbilgi dosyaları** düğümünün altında *. ICO* ve *. RC* dosyaları **kaynak dosyaları**altındadır. Bu yerleştirme, filtreler dosyası tarafından denetlenir.
 
 ![Çözüm Gezgini mantıksal klasörler](media/solution-explorer-filters.png)
 
@@ -24,9 +24,9 @@ Visual Studio bu dosyayı otomatik olarak oluşturur. Masaüstü uygulamaları i
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, daha önce gösterilecek örnek için filtreler dosyasını gösterir. Düz bir hiyerarşiye sahiptir; diğer bir deyişle, iç içe geçmiş mantıksal klasör yoktur. @No__t-0 düğümü isteğe bağlıdır. Visual Studio Automation arabirimlerinin filtreyi bulmasını sağlar. `Extensions` de isteğe bağlıdır. Projeye yeni bir dosya eklendiğinde, bu, eşleşen bir dosya uzantısına sahip en üstteki filtreye eklenir. Belirli bir filtreye dosya eklemek için filtreye sağ tıklayıp **Yeni öğe Ekle**' yi seçin.
+Aşağıdaki örnek, daha önce gösterilecek örnek için filtreler dosyasını gösterir. Düz bir hiyerarşiye sahiptir; diğer bir deyişle, iç içe geçmiş mantıksal klasör yoktur. `UniqueIdentifier` düğümü isteğe bağlıdır. Visual Studio Automation arabirimlerinin filtreyi bulmasını sağlar. `Extensions` Ayrıca isteğe bağlıdır. Projeye yeni bir dosya eklendiğinde, bu, eşleşen bir dosya uzantısına sahip en üstteki filtreye eklenir. Belirli bir filtreye dosya eklemek için filtreye sağ tıklayıp **Yeni öğe Ekle**' yi seçin.
 
-@No__t-1 düğümlerini içeren `ItemGroup`, proje ilk başlatıldığında oluşturulur. Kendi vcxproj dosyalarınızı oluşturuyorsanız, tüm proje öğelerinin filtreler dosyasında da bir girdiye sahip olduğundan emin olun. @No__t-0 düğümündeki değerler dosya uzantılarına göre varsayılan filtrelemeyi geçersiz kılar. Projeye yeni bir öğe eklemek için Visual Studio kullandığınızda, IDE filtreler dosyasına tek bir dosya girişi ekler. Dosyanın uzantısını değiştirirseniz filtre otomatik olarak yeniden atanmaz. 
+`ClInclude` düğümlerini içeren `ItemGroup`, proje ilk başlatıldığında oluşturulur. Kendi vcxproj dosyalarınızı oluşturuyorsanız, tüm proje öğelerinin filtreler dosyasında da bir girdiye sahip olduğundan emin olun. `ClInclude` düğümdeki değerler, dosya uzantılarına göre varsayılan filtrelemeyi geçersiz kılar. Projeye yeni bir öğe eklemek için Visual Studio kullandığınızda, IDE filtreler dosyasına tek bir dosya girişi ekler. Dosyanın uzantısını değiştirirseniz filtre otomatik olarak yeniden atanmaz. 
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -91,7 +91,7 @@ Aşağıdaki örnek, daha önce gösterilecek örnek için filtreler dosyasını
 </Project>
 ```
 
-İç içe mantıksal klasörler oluşturmak için, `ItemGroup` filtrelerdeki tüm düğümleri aşağıda gösterildiği gibi bildirin. Her alt düğüm, en üstteki üst öğenin tam mantıksal yolunu bildirmelidir. Aşağıdaki örnekte, sonraki düğümlerde başvurulduğundan boş bir `ParentFilter` bildirilmelidir.
+İç içe mantıksal klasörler oluşturmak için, filtrelerdeki tüm düğümleri aşağıda gösterildiği gibi bildirin `ItemGroup`. Her alt düğüm, en üstteki üst öğenin tam mantıksal yolunu bildirmelidir. Aşağıdaki örnekte, daha sonraki düğümlerde başvurulduğundan boş bir `ParentFilter` bildirilmelidir.
 
 ```xml
   <ItemGroup>

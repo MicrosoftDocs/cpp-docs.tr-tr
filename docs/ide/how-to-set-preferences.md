@@ -12,7 +12,7 @@ ms.locfileid: "71816566"
 ---
 # <a name="set-your-c-coding-preferences-in-visual-studio"></a>Visual Studio C++ 'da kodlama tercihlerinizi ayarlama
 
-Visual Studio 'Yu kişiselleştirerek C++ kodlama deneyiminizi daha rahat, üretken ve güvenilir hale getirebilirsiniz. Yapabilecekleriniz:
+Visual Studio 'Yu kişiselleştirerek C++ kodlama deneyiminizi daha rahat, üretken ve güvenilir hale getirebilirsiniz. Şunları yapabilirsiniz:
 
 - Menüleri ve araç çubuklarını özelleştirin.
 - Pencere yerleşimini düzenleyin.
@@ -30,21 +30,21 @@ Aşağıdaki ekran görüntüsünde, **Takım Gezgini** penceresinin varsayılan
 
 ![Düzen değişikliği vurgulanmış şekilde Visual Studio Takım Gezgini penceresinin ekran görüntüsü](media/window-layout-move-team-explorer.png)
 
-Belge penceresinde, her açık dosya sekmeli bir çerçevede yer alır. Araç pencereleri gibi bu sekmeleri de float veya kilitle. Daha fazla bilgi için bkz. [Visual Studio 'da pencere düzenlerini özelleştirme](/visualstudio/ide/customizing-window-layouts-in-visual-studio).
+Belge penceresinde, her açık dosya sekmeli bir çerçevede yer alır. Araç pencereleri gibi bu sekmeleri de float veya kilitle. Daha fazla bilgi için [Visual Studio'da pencere düzenlerini özelleştirme](/visualstudio/ide/customizing-window-layouts-in-visual-studio).
 
-Tüm araç pencerelerini gizlemek ve kod Düzenleyicisi penceresini en üst düzeye çıkarmak için **Alt** + **SHIFT**@no__t **-3 '** e basarak *tam ekran modunu*değiştirin.
+Tüm araç pencerelerini gizlemek ve kod Düzenleyicisi penceresini en üst düzeye çıkarmak için **Alt** + **SHIFT** tuşuna basarak *tam ekran moduna*geçiş **yapın + .**
 
 ## <a name="set-c-coding-styles-and-formatting"></a>Kodlama C++ stillerini ve biçimlendirmeyi ayarlama
 
-Girinti ve ayraç konumları gibi birçok bağımsız kod biçimlendirme seçeneği belirtebilirsiniz. Bunu yapmak için **Araçlar** > **Seçenekler** > **metin Düzenleyicisi** > **C/C++**  > **biçimlendirme** (veya **CTRL + Q** yazın ve "biçimlendirme" araması yapın). Alternatif olarak, [Clangformat](https://clang.llvm.org/docs/ClangFormat.html) stillerinden birini (veya kendi özel clangformat stilinizi) belirtebilirsiniz.
+Girinti ve ayraç konumları gibi birçok bağımsız kod biçimlendirme seçeneği belirtebilirsiniz. Bunu yapmak için **Araçlar** > **Seçenekler** > **metin Düzenleyicisi** > **C/C++**  > **biçimlendirme** (veya **CTRL + Q** yazın ve "biçimlendirme" için arama yapın) bölümüne gidin. Alternatif olarak, [Clangformat](https://clang.llvm.org/docs/ClangFormat.html) stillerinden birini (veya kendi özel clangformat stilinizi) belirtebilirsiniz.
 
 ![ClangFormat seçeneklerinin ekran görüntüsü](media/clang-format-ide.png)
 
 Biçimlendirme seçenekleri hakkında daha fazla bilgi için bkz. [Seçenekler, metin düzenleyici, CC++/, biçimlendirme](/visualstudio/ide/reference/options-text-editor-c-cpp-formatting).
 
-## <a name="set-the-color-theme"></a>Renk temasını ayarlama
+## <a name="set-the-color-theme"></a>Renk teması ayarlayabilir
 
-Açık veya koyu bir arka plan ayarlamak için **CTRL + Q** yazın ve "renkli tema" araması yapın. Ayrıca, **araçlar** > **seçenekleri** > **ortamında**ve **renk teması**' nı seçerek bunları bulabilirsiniz.
+Açık veya koyu bir arka plan ayarlamak için **CTRL + Q** yazın ve "renkli tema" araması yapın. Ayrıca, **araçlar** > **Seçenekler** > **ortama**giderek ve **renk teması**' nı seçerek bunları bulabilirsiniz.
 
 ![Renk temalarının ekran görüntüsü](media/tools-options-color-theme.png)
 
@@ -62,7 +62,7 @@ Visual Studio 2019 ' de, önceden tanımlanmış üç *renk düzeni*arasından s
 
 ![Gelişmiş renk düzeninin ekran görüntüsü](media/color-scheme-enhanced.png)
 
-Hangi tema veya renk şemasının etkin olduğuna bakılmaksızın, bağımsız kod öğeleri için yazı tipi ve renkler özelleştirebilirsiniz. Bunu yapmak için **araçlar** > **Seçenekler** > **ortam** > **yazı tipi ve renk** ' e gidin (ya da **CTRL + Q** yazın ve "yazı tipleri" için arama yapın). C++ Seçenekleri görene kadar görüntüleme öğelerinin listesini aşağı kaydırın.
+Hangi tema veya renk şemasının etkin olduğuna bakılmaksızın, bağımsız kod öğeleri için yazı tipi ve renkler özelleştirebilirsiniz. Bunu yapmak için **araçlar** > **seçenekler** > **ortam** > **yazı tipleri ve renkler** ' e gidin (ya da **CTRL + Q** yazın ve "yazı tipleri" için arama yapın). C++ Seçenekleri görene kadar görüntüleme öğelerinin listesini aşağı kaydırın.
 
 ![C++ Yazı tipi ve renk seçeneklerinin ekran görüntüsü](media/tools-options-cpp-colors.png)
 
@@ -90,4 +90,4 @@ Daha fazla bilgi için bkz. [nasıl yapılır: Visual Studio 'da menüleri ve ar
 
 ## <a name="create-keyboard-shortcuts"></a>Klavye kısayolları oluşturma
 
-Visual Studio 'daki birçok komut *klavye kısayollarına*, CTRL, alt ve SHIFT tuşlarına sahip tuş birleşimlerine sahiptir. Bu klavye kısayollarını değiştirebilir veya Visual Studio 'da kendi yeni bir tane oluşturabilirsiniz. **Araçlar** > **seçenekleri** > **ortam** > **klavye** (veya **CTRL + Q** yazın ve "kısayollar" araması yapın). Daha fazla bilgi için bkz. [Visual Studio 'da klavye kısayollarını tanımlamak ve özelleştirmek](/visualstudio/ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio).
+Visual Studio 'daki birçok komut *klavye kısayollarına*, CTRL, alt ve SHIFT tuşlarına sahip tuş birleşimlerine sahiptir. Bu klavye kısayollarını değiştirebilir veya Visual Studio 'da kendi yeni bir tane oluşturabilirsiniz. **Araçlar** > **seçenekler** > **ortam** > **klavye** (veya **CTRL + Q** yazın ve "kısayollar" için arama yapın) bölümüne gidin. Daha fazla bilgi için bkz. [Visual Studio 'da klavye kısayollarını tanımlamak ve özelleştirmek](/visualstudio/ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio).

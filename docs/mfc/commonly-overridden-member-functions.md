@@ -1,5 +1,5 @@
 ---
-title: Yaygın olarak geçersiz kılınan üye Işlevleri
+title: Yaygın Olarak Geçersiz Kılınan Üye İşlevleri
 ms.date: 09/06/2019
 helpviewer_keywords:
 - CDialog class [MFC], members
@@ -17,9 +17,9 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 09/30/2019
 ms.locfileid: "71685813"
 ---
-# <a name="commonly-overridden-member-functions"></a>Yaygın olarak geçersiz kılınan üye Işlevleri
+# <a name="commonly-overridden-member-functions"></a>Yaygın Olarak Geçersiz Kılınan Üye İşlevleri
 
-Aşağıdaki tabloda, @no__t -0-Derived sınıfında geçersiz kılmak için en olası üye işlevleri listelenmektedir.
+Aşağıdaki tabloda, `CDialog`türetilmiş sınıfınıza geçersiz kılmak için en olası üye işlevleri listelenmektedir.
 
 ### <a name="commonly-overridden-member-functions-of-class-cdialog"></a>CDialog sınıfının genellikle geçersiz kılınan üye Işlevleri
 
@@ -29,11 +29,11 @@ Aşağıdaki tabloda, @no__t -0-Derived sınıfında geçersiz kılmak için en 
 |`OnOK`|Düğme **IDOK** için **BN_CLICKED**|Kullanıcı Tamam düğmesine tıkladığında yanıt verir.|
 |`OnCancel`|Düğme **IDCANCEL** için **BN_CLICKED**|Kullanıcı Iptal düğmesine tıkladığında yanıt verir.|
 
-`OnInitDialog`, `OnOK` ve `OnCancel` sanal işlevlerdir. Bunları geçersiz kılmak için, [MFC sınıf Sihirbazı 'nı](reference/mfc-class-wizard.md)kullanarak türetilmiş iletişim sınıfınızda bir geçersiz kılma işlevi bildirirsiniz.
+`OnInitDialog`, `OnOK`ve `OnCancel` sanal işlevlerdir. Bunları geçersiz kılmak için, [MFC sınıf Sihirbazı 'nı](reference/mfc-class-wizard.md)kullanarak türetilmiş iletişim sınıfınızda bir geçersiz kılma işlevi bildirirsiniz.
 
 `OnInitDialog`, iletişim kutusu görüntülenmeden hemen önce çağrılır. Varsayılan `OnInitDialog` işleyicisini, genellikle işleyicisindeki ilk eylem olarak, geçersiz kılmanızda çağırmanız gerekir. Varsayılan olarak, `OnInitDialog`, odağın iletişim kutusundaki ilk denetime ayarlanması gerektiğini belirtmek için **true** değerini döndürür.
 
-`OnOK` genellikle modsuz ancak kalıcı olmayan iletişim kutuları için geçersiz kılınır. Kalıcı bir iletişim kutusu için bu işleyiciyi geçersiz kılarsınız, `EndDialog` ' ın çağrıldığından emin olmak için, geçersiz kılmanızda temel sınıf sürümünü çağırın — veya `EndDialog` ' i çağırın.
+`OnOK` genellikle modsuz ancak kalıcı olmayan iletişim kutuları için geçersiz kılınır. Kalıcı bir iletişim kutusu için bu işleyiciyi geçersiz kılarsınız, `EndDialog` çağrıldığından emin olmak için, geçersiz kılmanızda temel sınıf sürümünü çağırın — veya `EndDialog` kendiniz çağırın.
 
 `OnCancel` genellikle kalıcı olmayan iletişim kutuları için geçersiz kılınır.
 
@@ -41,5 +41,5 @@ Bu üye işlevleri hakkında daha fazla bilgi için bkz. *MFC başvurusu* Içind
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İletişim kutuları](../mfc/dialog-boxes.md)<br/>
-[Yaygın olarak eklenen üye Işlevleri](../mfc/commonly-added-member-functions.md)
+[İletişim Kutuları](../mfc/dialog-boxes.md)<br/>
+[Yaygın Olarak Eklenen Üye İşlevleri](../mfc/commonly-added-member-functions.md)

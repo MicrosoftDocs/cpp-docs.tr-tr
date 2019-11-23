@@ -38,22 +38,22 @@ ref class Map sealed;
 
 ### <a name="parameters"></a>Parametreler
 
-*Ek*<br/>
+*K*<br/>
 Anahtar-değer çiftindeki anahtar türü.
 
-*Yönetim*<br/>
+*V*<br/>
 Anahtar-değer çiftindeki değerin türü.
 
 *C*<br/>
-Haritada göreli sıralarını belirleyebilmek için iki öğe değerini sıralama anahtarları olarak karşılaştırabilen bir işlev nesnesi sağlayan bir tür. Varsayılan olarak [std:: less @ no__t-1K >](../standard-library/less-struct.md).
+Haritada göreli sıralarını belirleyebilmek için iki öğe değerini sıralama anahtarları olarak karşılaştırabilen bir işlev nesnesi sağlayan bir tür. Varsayılan olarak [std:: less\<K >](../standard-library/less-struct.md).
 
-*__is_valid_wınrt_type ()* *K* ve *V* türünü doğrulayan ve tür haritada depolanmıyorsa kolay bir hata iletisi sağlayan derleyicinin ürettiği bir işlev.
+*__is_valid_winrt_type ()* *K* ve *V* türünü doğrulayan ve tür haritada depolanmıyorsa kolay bir hata iletisi sağlayan derleyicinin ürettiği bir işlev.
 
 ### <a name="remarks"></a>Açıklamalar
 
 İzin verilen türler şunlardır:
 
-- Kesirli
+- tamsayılar
 
 - arabirim sınıfı ^
 
@@ -63,21 +63,21 @@ Haritada göreli sıralarını belirleyebilmek için iki öğe değerini sırala
 
 - ortak enum sınıfı
 
-Eşleme temel olarak [std:: Map](../standard-library/map-class.md)için bir sarmalayıcı olur. Windows:: C++ [Foundation:: Collections:: Map < Windows:: Foundation:: Collections:: IKeyValuePair @ no__t-2k, V > >](/uwp/api/Windows.Foundation.Collections.IMap_K_V_) ve [ıobservablemap](/uwp/api/Windows.Foundation.Collections.IObservableMap_K_V_) Types 'ın ortak pencereler arasında geçirildiği somut bir uygulamasıdır Çalışma zamanı arabirimleri. Ortak dönüş değeri veya parametresinde `Platform::Collections::Map` türü kullanmaya çalışırsanız, derleyici hatası C3986 tetiklenir. Bu hatayı, parametre türünü veya döndürülen değeri [Windows:: Foundation:: Collections:: Map @ no__t-1K, V >](/uwp/api/Windows.Foundation.Collections.IMap_K_V_)olarak değiştirerek çözebilirsiniz.
+Eşleme temel olarak [std:: Map](../standard-library/map-class.md)için bir sarmalayıcı olur. Bu, Windows C++ :: Foundation: [: Collections:: Map < Windows:: Foundation:: Collections:: IKeyValuePair\<K, V > >](/uwp/api/Windows.Foundation.Collections.IMap_K_V_) ve genel Windows çalışma zamanı arabirimleri arasında geçirilen [ıobservablemap](/uwp/api/Windows.Foundation.Collections.IObservableMap_K_V_) türlerinin somut bir uygulamasıdır. Ortak dönüş değeri veya parametresinde `Platform::Collections::Map` türünü kullanmayı denerseniz, derleyici hatası C3986 tetiklenir. Bu hatayı, parametre türünü veya dönüş değerini [Windows:: Foundation:: Collections:: map\<K, V >](/uwp/api/Windows.Foundation.Collections.IMap_K_V_)olarak değiştirerek giderebilirsiniz.
 
 Daha fazla bilgi için bkz. [koleksiyonlar](../cppcx/collections-c-cx.md).
 
 ### <a name="members"></a>Üyeleri
 
-### <a name="public-constructors"></a>Ortak oluşturucular
+### <a name="public-constructors"></a>Genel Oluşturucular
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[Map:: Map](#ctor)|Map sınıfının yeni bir örneğini başlatır.|
 
-### <a name="public-methods"></a>Ortak Yöntemler
+### <a name="public-methods"></a>Genel Yöntemler
 
-|Adı|Açıklama|
+|Name|Açıklama|
 |----------|-----------------|
 |[Map:: Clear](#clear)|Geçerli harita nesnesinden tüm anahtar-değer çiftlerini kaldırır.|
 |[Map:: First](#first)|Eşlemedeki ilk öğeyi belirten bir yineleyici döndürür.|
@@ -88,14 +88,14 @@ Daha fazla bilgi için bkz. [koleksiyonlar](../cppcx/collections-c-cx.md).
 |[Map:: Remove](#remove)|Belirtilen anahtar-değer çiftini geçerli harita nesnesinden siler.|
 |[Map:: size](#size)|Geçerli harita nesnesindeki öğe sayısını döndürür.|
 
-### <a name="events"></a>Etkinlikler
+### <a name="events"></a>Olaylar
 
 |||
 |-|-|
-|Adı|Açıklama|
+|Name|Açıklama|
 |[Map:: MapChanged](#mapchanged) olayı|Eşleme değiştiğinde gerçekleşir.|
 
-## <a name="inheritance-hierarchy"></a>Devralma hiyerarşisi
+## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
 `Map`
 
@@ -117,7 +117,7 @@ virtual void Clear();
 
 ## <a name="first"></a>Map:: First yöntemi
 
-Eşlemedeki ilk öğeyi belirten bir yineleyici veya eşleme boşsa `nullptr` döndürür.
+Eşlemedeki ilk öğeyi belirten bir yineleyici döndürür veya eşleme boşsa `nullptr`.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -126,17 +126,17 @@ virtual Windows::Foundation::Collections::IIterator<
 Windows::Foundation::Collections::IKeyValuePair<K, V>^>^ First();
 ```
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Dönüş Değeri
 
 Eşlemedeki ilk öğeyi belirten bir yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ilk () tarafından döndürülen yineleyiciyi tutmanın uygun bir yolu, dönüş değerini **Auto** Type kesintisi anahtar sözcüğüyle belirtilen bir değişkene atamaktır. Örneğin, `auto x = myMap->First();`.
+Ilk () tarafından döndürülen yineleyiciyi tutmanın uygun bir yolu, dönüş değerini **Auto** Type kesintisi anahtar sözcüğüyle belirtilen bir değişkene atamaktır. Örneğin: `auto x = myMap->First();`
 
 ## <a name="getview"></a>Map:: GetView yöntemi
 
-Geçerli haritanın salt okunurdur görünümünü döndürür; diğer bir deyişle, [Windows:: Foundation:: Collections:: ımapview @ no__t-1K, V >]/uwp/api/Windows.Foundation.Collections.IMapView_K_V_) arabirimini uygulayan [Platform:: Collections:: MapView Sınıfı](../cppcx/platform-collections-mapview-class.md).
+Geçerli haritanın salt okunurdur görünümünü döndürür; diğer bir deyişle, [Windows:: Foundation:: Collections:: ımapview\<K, V >]/uwp/api/Windows.Foundation.Collections. IMapView_K_V_) arabirimini uygulayan [Platform:: Collections:: MapView Sınıfı](../cppcx/platform-collections-mapview-class.md).
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -144,9 +144,9 @@ Geçerli haritanın salt okunurdur görünümünü döndürür; diğer bir deyi�
 Windows::Foundation::Collections::IMapView<K, V>^ GetView();
 ```
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Dönüş Değeri
 
-@No__t-0 nesnesi.
+A `MapView` nesne.
 
 ## <a name="haskey"></a>Map:: HasKey yöntemi
 
@@ -163,7 +163,7 @@ bool HasKey(K key);
 *anahtar*<br/>
 Map öğesini bulmak için kullanılan anahtar. *Anahtar* türü TypeName *K*.
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Dönüş Değeri
 
 anahtar bulunursa **true** ; Aksi takdirde, **false**.
 
@@ -185,7 +185,7 @@ Anahtar-değer çiftinin anahtar bölümü. *Anahtar* türü TypeName *K*.
 *value*<br/>
 Anahtar-değer çiftinin değer kısmı. *Değer* türü, TypeName *V*' dir.
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Dönüş Değeri
 
 geçerli haritadaki var olan bir *öğenin anahtarı ile eşleşiyorsa* **true** , bu öğenin değer kısmı ise *değer*olarak ayarlanır. geçerli Haritadaki mevcut hiçbir öğe *anahtarla* eşleşmez ve anahtar ve *değer* parametreleri *anahtar-* değer çiftinde yapılırsa ve sonra geçerli haritaya eklendiyse **false** .
 
@@ -204,7 +204,7 @@ V Lookup(K key);
 *anahtar*<br/>
 Haritada bir öğe bulmak için kullanılan anahtar. *Anahtar* türü TypeName *K*.
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Dönüş Değeri
 
 *Anahtarla*eşleştirilmiş değer. Dönüş değerinin türü, TypeName *V*.
 
@@ -238,12 +238,12 @@ Geçerli haritanın TypeName 'i.
 Haritada göreli sıralarını belirleyebilmek için iki öğe değerini sıralama anahtarları olarak karşılaştırabilen bir işlev nesnesi sağlayan bir tür.
 
 *m*<br/>
-Geçerli eşlemeyi başlatmak için kullanılan `map Class` öğesine bir başvuru veya [rvalue](../cpp/lvalues-and-rvalues-visual-cpp.md) .
+Geçerli eşlemeyi başlatmak için kullanılan bir `map Class` başvuru veya [rvalue](../cpp/lvalues-and-rvalues-visual-cpp.md) .
 
-*adı*<br/>
+*first*<br/>
 Geçerli eşlemeyi başlatmak için kullanılan öğe aralığındaki ilk öğenin giriş yineleyicisi.
 
-*soyadına*<br/>
+*last*<br/>
 Geçerli eşlemeyi başlatmak için kullanılan bir dizi öğeden sonra ilk öğenin giriş yineleyicisi.
 
 ## <a name="mapchanged"></a>Map:: MapChanged olayı
@@ -256,13 +256,13 @@ Haritaya bir öğe eklendiğinde veya haritada kaldırıldığında oluşturulur
 event Windows::Foundation::Collections::MapChangedEventHandler<K,V>^ MapChanged;
 ```
 
-### <a name="property-valuereturn-value"></a>Özellik değeri/dönüş değeri
+### <a name="property-valuereturn-value"></a>Özellik Değeri/Dönüş Değeri
 
-Olayı oluşturan nesne ve gerçekleşen değişiklik türü hakkında bilgi içeren bir [MapChangedEventHandler @ no__t-1K, V >](/uwp/api/windows.foundation.collections.mapchangedeventhandler) . Ayrıca bkz. [ımapchangedeventargs @ no__t-1K >](/uwp/api/Windows.Foundation.Collections.IMapChangedEventArgs_K_) ve [collectionchange numaralandırması](/uwp/api/windows.foundation.collections.collectionchange).
+Olayı oluşturan nesne ve gerçekleşen değişiklik türü hakkında bilgi içeren bir [MapChangedEventHandler\<K, V >](/uwp/api/windows.foundation.collections.mapchangedeventhandler) . Ayrıca bkz. [ımapchangedeventargs\<K >](/uwp/api/Windows.Foundation.Collections.IMapChangedEventArgs_K_) ve [collectionchange numaralandırması](/uwp/api/windows.foundation.collections.collectionchange).
 
-## <a name="net-framework-equivalent"></a>.NET Framework eşdeğeri
+## <a name="net-framework-equivalent"></a>.NET Framework Eşdeğeri
 
-IMAP @ no__t- C# 1k, v > ' ı IDictionary @ No__t-2k, v > olarak kullanan veya Visual Basic Windows çalışma zamanı uygulamalar.
+Windows Çalışma Zamanı Visual Basic\<K C# , v > ' ı IDictionary\<k, v > olarak kullanan uygulamalar.
 
 ## <a name="remove"></a>Map:: Remove yöntemi
 
@@ -281,7 +281,7 @@ Anahtar-değer çiftinin anahtar bölümü. *Anahtar* türü TypeName *K*.
 
 ## <a name="size"></a>Map:: size yöntemi
 
-Eşlemedeki [Windows:: Foundation:: Collections:: IKeyValuePair @ no__t-1K, V >](/uwp/api/Windows.Foundation.Collections.IKeyValuePair_K_V_) öğelerinin sayısını döndürür.
+Eşlemedeki [Windows:: Foundation:: Collections:: IKeyValuePair\<K, V >](/uwp/api/Windows.Foundation.Collections.IKeyValuePair_K_V_) öğelerinin sayısını döndürür.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -289,7 +289,7 @@ Eşlemedeki [Windows:: Foundation:: Collections:: IKeyValuePair @ no__t-1K, V >]
 virtual property unsigned int Size;
 ```
 
-### <a name="return-value"></a>Dönüş değeri
+### <a name="return-value"></a>Dönüş Değeri
 
 Haritadaki öğelerin sayısı.
 
