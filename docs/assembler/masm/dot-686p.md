@@ -6,21 +6,21 @@ f1_keywords:
 helpviewer_keywords:
 - .686P directive
 ms.assetid: 06d9a9bf-50b1-4eed-b4a3-86b256c71b48
-ms.openlocfilehash: 692f60a217f8b18d1f0f669a767f0ffa9b588604
-ms.sourcegitcommit: 45f1d889df633f0f7e4a8e813b46fa73c9858b81
+ms.openlocfilehash: 77cb829df13dafebe6ad839b6af14c7c47870adb
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73702904"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74398619"
 ---
 # <a name="686p-32-bit-masm"></a>.686P (32-bit MASM)
 
-Pentium Pro işlemcisi için tüm yönergelerin derlemesini (ayrıcalıklı dahil) sunar. (yalnızca 32-bit masa.)
+Enables assembly of all instructions (including privileged) for the Pentium Pro processor. (32-bit MASM only.)
 
 ## <a name="syntax"></a>Sözdizimi
 
-> .686P
+> **.686P**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)<br/>
+[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)
