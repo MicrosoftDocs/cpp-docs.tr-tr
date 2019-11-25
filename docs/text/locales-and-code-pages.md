@@ -15,32 +15,32 @@ helpviewer_keywords:
 - code pages [C++], locales
 - conventions [C++], international character support
 ms.assetid: bd937361-b6d3-4c98-af95-beb7c903187b
-ms.openlocfilehash: c0cfc7f192b65738984feb1933ea720fdf18fc6d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5821048363d92911f2902a580cb11f5b349f5e7c
+ms.sourcegitcommit: 4f15b69e35dd112001b24fe9dc836dd5d6902465
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62410648"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "74474075"
 ---
 # <a name="locales-and-code-pages"></a>Yerel Ayarlar ve Kod Sayfaları
 
-Bir yerel ayar kimliği, belirli bir coğrafi bölge için dili ve yerel kurallarını yansıtır. Belirli bir dile birden fazla ülkede/bölgede konuşulan; Örneğin, Brezilya'da de Portekiz olduğu gibi Portekizce konuşulan. Buna karşılık, bir ülke/bölge, birden fazla dil olabilir. Örneğin, Kanada, iki dilden vardır: İngilizce ve Fransızca. Bu nedenle, Kanada, iki farklı yerel ayarlar da vardır: Kanada İngilizce ve Fransızca Kanada. Bazı yerel ayara bağımlı kategoriler tarih biçimlendirmesini ve parasal değerlerin görüntülenme biçimini içerir.
+A locale ID reflects the local conventions and language for a particular geographical region. A given language might be spoken in more than one country/region; for example, Portuguese is spoken in Brazil as well as in Portugal. Conversely, a country/region might have more than one official language. For example, Canada has two languages: English and French. Thus, Canada has two distinct locales: Canadian-English and Canadian-French. Bazı yerel ayara bağımlı kategoriler tarih biçimlendirmesini ve parasal değerlerin görüntülenme biçimini içerir.
 
-Metin ve biçimlendirme kurallarını ülke/bölge yerel kuralları belirlerken veri dili belirler. Her dil alfabe (örneğin, noktalama işaretleri ve sayılar) dışındaki karakterler içeren kod sayfaları tarafından temsil edilen bir benzersiz eşlemesi vardır. Bir kod sayfasında karakter kümesi ve dille ilgili. Bu nedenle, bir [yerel ayar](../c-runtime-library/locale.md) benzersiz bir dil, ülke/bölge ve kod sayfası birleşimidir. Yerel ayar ve kod sayfası ayarı çağırarak çalışma zamanında değiştirilebilir [setlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) işlevi.
+The language determines the text and data formatting conventions, while the country/region determines the local conventions. Every language has a unique mapping, represented by code pages, which includes characters other than those in the alphabet (such as punctuation marks and numbers). A code page is a character set and is related to the language. As such, a [locale](../c-runtime-library/locale.md) is a unique combination of language, country/region, and code page. The locale and code page setting can be changed at run time by calling the [setlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) function.
 
-Farklı dillerde farklı kod sayfalarını kullanabilir. Örneğin, ANSI kod sayfası 1252 İngilizce ve birçok Avrupa dilleri için kullanılır ve ANSI kod sayfası 932'de Japonca Kanji için kullanılır. Neredeyse tüm kod sayfaları ASCII karakter düşük 128 karakter (0x00-0x7F) kümesini paylaşır.
+Different languages might use different code pages. For example, the ANSI code page 1252 is used for English and most European languages, and the ANSI code page 932 is used for Japanese Kanji. Virtually all code pages share the ASCII character set for the lowest 128 characters (0x00 to 0x7F).
 
-Herhangi bir tek baytlı kod sayfası (256 girişleri ile) bir tablodaki bayt değerleri (sayılar ve noktalama işaretleri dahil) karakteri veya karakterleri eşlemesi olarak gösterilebilir. Herhangi bir çok baytlı kod sayfasında karakter çift bayt değerleri (girişlerle 64 K) çok büyük bir tablo olarak da temsil edilebilir. Uygulamada, ancak bu genellikle gösterilir (tek bayt) ilk 256 karakteri için bir tabloyu ve çift bayt değerleri için aralığı olarak.
+Any single-byte code page can be represented in a table (with 256 entries) as a mapping of byte values to characters (including numbers and punctuation marks), or glyphs. Any multibyte code page can also be represented as a very large table (with 64K entries) of double-byte values to characters. In practice, however, it is usually represented as a table for the first 256 (single-byte) characters and as ranges for the double-byte values.
 
-Kod sayfaları hakkında daha fazla bilgi için bkz. [kod sayfaları](../c-runtime-library/code-pages.md).
+For more information about code pages, see [Code Pages](../c-runtime-library/code-pages.md).
 
-C çalışma zamanı kitaplığı iç kod sayfaları iki tür vardır: yerel ayar ve çok baytlı. Program yürütülmesi sırasında mevcut kod sayfasında değiştirebilirsiniz (belgelerine bakın [setlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) ve [_setmbcp](../c-runtime-library/reference/setmbcp.md) işlevler). Ayrıca, çalışma zamanı kitaplığı bir almak ve program yürütme süresi boyunca sabit olan işletim sistemi kod sayfasını kullanın.
+The C run-time library has two types of internal code pages: locale and multibyte. You can change the current code page during program execution (see the documentation for the [setlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) and [_setmbcp](../c-runtime-library/reference/setmbcp.md) functions). Also, the run-time library might obtain and use the value of the operating system code page, which is constant for the duration of the program's execution.
 
-Yerel ayar kod sayfası değiştiğinde seçilen kod sayfası tarafından dikte işlevleri değişiklikleri yerel ayara bağımlı kümesini davranışı. Varsayılan olarak, tüm yerel ayara bağlı İşlevler, yürütme "C" yerel ayarı için benzersiz bir yerel ayar kod sayfası ile başlayın. İç yerel ayar kod sayfası (yanı sıra diğer yerel ayara özgü özellikleri) çağırarak değiştirebilirsiniz `setlocale` işlevi. Bir çağrı `setlocale`(LC_ALL, "") yerel ayarı işletim sistemi kullanıcı yerel ayar tarafından belirtilen ayarlar.
+When the locale code page changes, the behavior of the locale-dependent set of functions changes to that dictated by the chosen code page. By default, all locale-dependent functions begin execution with a locale code page unique to the "C" locale. You can change the internal locale code page (as well as other locale-specific properties) by calling the `setlocale` function. A call to `setlocale`(LC_ALL, "") sets the locale to that indicated by the operating system user locale.
 
-Benzer şekilde, çok baytlı kod sayfasına değiştiğinde, seçilen kod sayfası tarafından dikte çok baytlı işlevleri değişiklikleri davranışı. Varsayılan olarak, tüm çok baytlı işlevler işletim sisteminin varsayılan kod sayfasına karşılık gelen bir çok baytlı kod sayfası ile yürütme başlar. İç çok baytlı kod sayfası çağırarak değiştirebilirsiniz `_setmbcp` işlevi.
+Similarly, when the multibyte code page changes, the behavior of the multibyte functions changes to that dictated by the chosen code page. By default, all multibyte functions begin execution with a multibyte code page corresponding to the operating system's default code page. You can change the internal multibyte code page by calling the `_setmbcp` function.
 
-C çalışma zamanı işlevi `setlocale` ayarlar, değiştirir veya bazılarını veya tümünü geçerli programın yerel ayar bilgilerinin sorgular. [_Wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) yordamdır, bir geniş karakter sürümünü `setlocale`; bağımsız değişkenler ve dönüş değerleri `_wsetlocale` geniş karakterli dizelerdir.
+The C run-time function `setlocale` sets, changes, or queries some or all of the current program's locale information. The [_wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) routine is a wide-character version of `setlocale`; the arguments and return values of `_wsetlocale` are wide-character strings.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
