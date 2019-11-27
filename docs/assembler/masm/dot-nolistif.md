@@ -15,7 +15,7 @@ ms.locfileid: "74398075"
 ---
 # <a name="nolistif"></a>.NOLISTIF
 
-Suppresses listing of conditional blocks whose condition evaluates to false (0).
+Koşulu yanlış (0) olarak değerlendirilen koşullu blokların listesini gizler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -23,8 +23,8 @@ Suppresses listing of conditional blocks whose condition evaluates to false (0).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu varsayılandır. Same as [.SFCOND](../../assembler/masm/dot-sfcond.md).
+Bu varsayılandır. Aynı [. SFCOND](../../assembler/masm/dot-sfcond.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Directives reference](directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)

@@ -13,14 +13,14 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74399184"
 ---
-# <a name="data"></a>\@data
+# <a name="data"></a>\@verileri
 
-The name of the default data group. Evaluates to DGROUP for all models except **FLAT**. Evaluates to **FLAT** under the **FLAT** memory model (text macro).
+Varsayılan veri grubunun adı. **Düz**dışındaki tüm modeller IÇIN DGROUP olarak değerlendirilir. **Düz** bellek modeli (Metin makrosu) altında **düz** olarak değerlendirilir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **\@data**
+> **\@verileri**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Symbols reference](symbols-reference.md)
+[Semboller başvurusu](symbols-reference.md)

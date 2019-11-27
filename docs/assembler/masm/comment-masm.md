@@ -15,14 +15,14 @@ ms.locfileid: "74398834"
 ---
 # <a name="comment-masm"></a>COMMENT (MASM)
 
-Treats all *text* between or on the same line as the delimiters as a comment.
+Bir yorum olarak sınırlayıcılarla aynı satırdaki tüm *metni* değerlendirir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **COMMENT** *delimiter* ⟦*text*⟧\
-> ⟦*text*⟧\
-> ⟦*text*⟧ *delimiter* ⟦*text*⟧
+> **Açıklama** *sınırlayıcısı* ⟦*metin*⟧ \
+> ⟦*Text*⟧ \
+> ⟦*Text*⟧ *sınırlayıcısı* ⟦*Text*⟧
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Directives Reference](../../assembler/masm/directives-reference.md)\
+[Yönergeler başvurusu](../../assembler/masm/directives-reference.md)\

@@ -17,12 +17,12 @@ ms.locfileid: "74396854"
 ---
 # <a name="operator-length"></a>LENGTH işleci
 
-Returns the number of data items in *variable* created by the first initializer.
+İlk başlatıcı tarafından oluşturulan *değişkende* bulunan veri öğelerinin sayısını döndürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **LENGTH** *variable*
+> **Uzunluk** *değişkeni*
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Operators reference](operators-reference.md)
+[İşleçler başvurusu](operators-reference.md)

@@ -17,12 +17,12 @@ ms.locfileid: "74395804"
 ---
 # <a name="operator-size"></a>SIZE işleci
 
-Returns the number of bytes in *variable* allocated by the first initializer.
+İlk başlatıcı tarafından ayrılan *değişkende* bulunan bayt sayısını döndürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **SIZE** *variable*
+> **Boyut** *değişkeni*
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Operators reference](operators-reference.md)
+[İşleçler başvurusu](operators-reference.md)

@@ -16,12 +16,12 @@ ms.locfileid: "74397160"
 ---
 # <a name="operator-abs"></a>ABS işleci
 
-See the [EXTERNDEF](../../assembler/masm/externdef.md) directive.
+Bkz. [externdef](../../assembler/masm/externdef.md) yönergesi.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **ABS**
+> **MUTLAK**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Operators reference](operators-reference.md)
+[İşleçler başvurusu](operators-reference.md)

@@ -21,8 +21,8 @@ ms.locfileid: "74398207"
 
 ## <a name="remarks"></a>Açıklamalar
 
-See [.LISTMACROALL](../../assembler/masm/dot-listmacroall.md).
+Bkz [. LISTMAKROALL](../../assembler/masm/dot-listmacroall.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Directives reference](directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)

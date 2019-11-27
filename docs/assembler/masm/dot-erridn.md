@@ -1,5 +1,5 @@
 ---
-title: '&period;ERRIDN, &period;ERRIDNI'
+title: '&period;ERRIDN, &period;ERRNı dili'
 ms.date: 05/23/2019
 f1_keywords:
 - .ERRIDN
@@ -15,19 +15,19 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74398338"
 ---
-# <a name="perioderridn-perioderridni"></a>&period;ERRIDN, &period;ERRIDNI
+# <a name="perioderridn-perioderridni"></a>&period;ERRIDN, &period;ERRNı dili
 
-Generates an error if the text items are identical.
+Metin öğeleri aynıysa bir hata oluşturur.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **.ERRIDN** *textitem1* __,__ *textitem2* ⟦ __,__ *message*⟧\
-> **.ERRIDNI** *textitem1* __,__ *textitem2* ⟦ __,__ *message*⟧
+> **. Erridn** *textitem1* __,__ *textitem2* ⟦ __,__ *ileti*⟧ \
+> **. Errnı** *textitem1* __,__ *textitem2* ⟦ __,__ *ileti*⟧
 
 ## <a name="remarks"></a>Açıklamalar
 
-If **&period;ERRIDNI** is given, the comparison is case insensitive.
+**&period;erreknı** verilirse, karşılaştırma büyük/küçük harfe duyarlıdır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Directives reference](../../assembler/masm/directives-reference.md)
+[Yönergeler başvurusu](../../assembler/masm/directives-reference.md)

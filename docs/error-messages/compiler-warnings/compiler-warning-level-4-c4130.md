@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C4130
 ms.assetid: 45e4c7b2-6b51-41c7-ba5e-941aa5c7d3dc
-ms.openlocfilehash: 1b1fb72d68309a4bef56ccd844ad30d967bbadbd
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b55594608eccc5d1e5e764bffb73ecb3787af1e4
+ms.sourcegitcommit: 3ee06ec53153cf21910fc8cfef78a4f25f9633f3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62401325"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74541592"
 ---
 # <a name="compiler-warning-level-4-c4130"></a>Derleyici Uyarısı (düzey 4) C4130
 
-'operator': dize sabitinin adresi üzerinde mantıksal işlem
+' operator ': Dize sabitinin adresi üzerinde mantıksal işlem
 
-Bir dize sabitinin adresi ile işlecini kullanarak, beklenmeyen bir kod üretir.
+Bir dize sabit değerinin adresiyle işleci kullanılması beklenmeyen bir kod üretir.
 
-Aşağıdaki örnek, C4130 oluşturur:
+Aşağıdaki örnek C4130 oluşturur:
 
-```
+```cpp
 // C4130.cpp
 // compile with: /W4
 int main()
@@ -34,6 +34,6 @@ int main()
 }
 ```
 
-**Varsa** deyimi işaretçide depolanan değeri karşılaştırır `pc` "Hello" dizesi adresine ayrıldığı ayrı olarak dize kod her gerçekleştiğinde. **Varsa** deyimi işaret ettiği dizeyi karşılaştırın değil `pc` "Hello" dizesi ile.
+**IF** ifadesinde, işaretçi kodda her gerçekleştiğinde ayrı olarak ayrılan "Hello" dizesinin adresine `pc` İşaretçisinde depolanan değeri karşılaştırır. **IF** ifadesinde işaret eden dize, "Hello" dizesiyle `pc` ile karşılaştırmaz.
 
-Dizeleri karşılaştırmak için kullanın `strcmp` işlevi.
+Dizeleri karşılaştırmak için `strcmp` işlevini kullanın.

@@ -13,9 +13,9 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74398141"
 ---
-# <a name="mmx-32-bit-masm"></a>.MMX (32-bit MASM)
+# <a name="mmx-32-bit-masm"></a>. MMX (32-bit masa)
 
-Enables assembly of MMX or single-instruction, multiple data (SIMD) instructions. (32-bit MASM only.)
+MMX veya tek yönergeyle birden çok veri (SıMD) yönergelerinin derlemesini mümkün bir şekilde sunar. (yalnızca 32-bit masa.)
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -23,4 +23,4 @@ Enables assembly of MMX or single-instruction, multiple data (SIMD) instructions
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Directives reference](directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)

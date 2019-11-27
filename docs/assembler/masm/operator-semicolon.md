@@ -18,12 +18,12 @@ ms.locfileid: "74396450"
 ---
 # <a name="operator-"></a>; işleci
 
-Treats *text* as a comment.
+*Metni* bir yorum olarak değerlendirir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> __;__ *text*
+> __;__ *metin*
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Operators reference](operators-reference.md)
+[İşleçler başvurusu](operators-reference.md)

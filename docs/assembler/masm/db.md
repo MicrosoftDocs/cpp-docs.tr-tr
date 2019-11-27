@@ -15,18 +15,18 @@ ms.locfileid: "74398812"
 ---
 # <a name="db"></a>DB
 
-Allocates and optionally initializes a byte of storage for each *initializer*. **DB** is a synonym of [BYTE](../../assembler/masm/byte-masm.md).
+Her *Başlatıcı*için bir depolama bayt ayırır ve isteğe bağlı olarak başlatır. **DB** , [baytın](../../assembler/masm/byte-masm.md)eşanlamlısıdır.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> ⟦*name*⟧ **DB** *initializer* ⟦ __,__ *initializer* ...⟧
+> ⟦*Name*⟧ **DB** *başlatıcısı* ⟦ __,__ *Başlatıcı* ... ⟧
 
 ## <a name="remarks"></a>Açıklamalar
 
-Can also be used as a type specifier anywhere a type is legal.
+, Türün geçerli olduğu her yerde tür belirleyici olarak da kullanılabilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Directives Reference](../../assembler/masm/directives-reference.md)\
+[Yönergeler başvurusu](../../assembler/masm/directives-reference.md)\
 [DB](../../assembler/masm/db.md)\
 [SBYTE](../../assembler/masm/sbyte-masm.md)

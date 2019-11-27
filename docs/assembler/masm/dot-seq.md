@@ -13,9 +13,9 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74397934"
 ---
-# <a name="seq-32-bit-masm"></a>.SEQ (32-bit MASM)
+# <a name="seq-32-bit-masm"></a>. SEQ (32-bit masa)
 
-Orders segments sequentially (the default order). (32-bit MASM only.)
+Segmentleri sıralı olarak sıralar (varsayılan sıra). (yalnızca 32-bit masa.)
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -23,4 +23,4 @@ Orders segments sequentially (the default order). (32-bit MASM only.)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Directives reference](directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)

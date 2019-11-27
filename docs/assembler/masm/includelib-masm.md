@@ -15,16 +15,16 @@ ms.locfileid: "74397324"
 ---
 # <a name="includelib-masm"></a>INCLUDELIB (MASM)
 
-Informs the linker that the current module should be linked with *libraryname*.
+Geçerli modülün *LibraryName*ile bağlanması gerektiğini bağlayıcıya bildirir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **INCLUDELIB** *libraryname*
+> **Includelib** *LibraryName*
 
 ## <a name="remarks"></a>Açıklamalar
 
-The *libraryname* must be enclosed in angle brackets if it includes a backslash, semicolon, greater-than symbol, less-than symbol, single quotation mark, or double quotation mark.
+*LibraryName* , bir ters eğik çizgi, noktalı virgül, büyüktür simgesi, küçüktür simgesi, tek tırnak işareti ya da çift tırnak işareti içeriyorsa, köşeli ayraç içine alınmalıdır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Directives reference](directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)

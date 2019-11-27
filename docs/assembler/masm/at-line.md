@@ -13,14 +13,14 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74398961"
 ---
-# <a name="line"></a>\@Line
+# <a name="line"></a>\@satırı
 
-The source line number in the current file (numeric equate).
+Geçerli dosyadaki kaynak satır numarası (sayısal eşkarakter).
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **\@Line**
+> **\@satırı**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Symbols reference](symbols-reference.md)
+[Semboller başvurusu](symbols-reference.md)

@@ -17,12 +17,12 @@ ms.locfileid: "74396835"
 ---
 # <a name="operator-lengthof"></a>LENGTHOF işleci
 
-Returns the number of data objects in *variable*.
+*Değişkende*veri nesnelerinin sayısını döndürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **LENGTHOF** *variable*
+> **Lengthof** *değişkeni*
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Operators reference](operators-reference.md)
+[İşleçler başvurusu](operators-reference.md)

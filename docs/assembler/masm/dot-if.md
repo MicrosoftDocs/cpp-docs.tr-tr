@@ -13,24 +13,24 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74398230"
 ---
-# <a name="if-32-bit-masm"></a>.IF (32-bit MASM)
+# <a name="if-32-bit-masm"></a>. IF (32-bit masa)
 
-Generates code that tests *condition1* (for example, AX > 7) and executes the *statements* if that condition is true. (32-bit MASM only.)
+*Condition1* (ÖRNEĞIN, AX > 7) test eden kodu üretir ve bu koşul doğru ise *deyimleri* yürütür. (yalnızca 32-bit masa.)
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **.IF** *condition1*\
-> *statements*\
-> ⟦ **.ELSEIF** *condition2*\
-> *statements*⟧\
-> ⟦ **.ELSE**\
-> *statements*⟧\
+> **. Eğer** *condition1*\
+> *deyimler*\
+> ⟦ **. Condition2 Ise ELSEıF**\
+> *deyim*⟧ \
+> ⟦ **. ELSE**\
+> *deyim*⟧ \
 > **.ENDIF**
 
 ## <a name="remarks"></a>Açıklamalar
 
-If a [.ELSE](../../assembler/masm/dot-else.md) follows, its statements are executed if the original condition was false. Note that the conditions are evaluated at run time.
+Bir [. ](../../assembler/masm/dot-else.md)Bundan sonra, özgün koşul yanlış ise deyimleri yürütülür. Koşulların çalışma zamanında değerlendirildiğini unutmayın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Directives reference](directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)

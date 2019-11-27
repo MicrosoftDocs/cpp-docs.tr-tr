@@ -13,14 +13,14 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74399037"
 ---
-# <a name="filename"></a>\@FileName
+# <a name="filename"></a>\@dosya adı
 
-The base name of the main file being assembled (text macro).
+Birleştirilen ana dosyanın temel adı (Metin makrosu).
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **\@FileName**
+> **\@dosya adı**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Symbols reference](symbols-reference.md)
+[Semboller başvurusu](symbols-reference.md)

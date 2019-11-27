@@ -6,26 +6,26 @@ f1_keywords:
 helpviewer_keywords:
 - C4289
 ms.assetid: 0dbd2863-4cde-4e16-894b-104a2d5fa724
-ms.openlocfilehash: 3a997af466ddfdaaf4631afeb53d917ce0338c3b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: cc1a22065be6d5f7f49d6c32f6bc9b6479399e29
+ms.sourcegitcommit: 3ee06ec53153cf21910fc8cfef78a4f25f9633f3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62400909"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74541968"
 ---
 # <a name="compiler-warning-level-4-c4289"></a>Derleyici Uyarısı (düzey 4) C4289
 
 standart olmayan uzantı kullanıldı : 'var': for döngüsünde bildirimi yapılan döngü denetim değişkeni for döngüsü kapsamının dışında kullanılıyor
 
-İle derlerken [/Ze](../../build/reference/za-ze-disable-language-extensions.md) ve **/Zc:forScope-**, içinde bildirilen bir değişken bir [için](../../cpp/for-statement-cpp.md) döngü sonra kullanıldı **için**-döngü kapsamı.
+[/Ze](../../build/reference/za-ze-disable-language-extensions.md) ve **/Zc: forScope**ile derlerken, [for döngüsünde belirtilen bir değişken](../../cpp/for-statement-cpp.md) **for**döngüsü kapsamından sonra kullanılır.
 
-Bkz: [/ZC: forscope](../../build/reference/zc-forscope-force-conformance-in-for-loop-scope.md) standart davranışını belirtme hakkında daha fazla bilgi için **için** ile döngü **/Ze**.
+**/Ze**ile döngüler **için** standart davranışın nasıl belirtilme hakkında bilgi için bkz. [/Zc: forScope](../../build/reference/zc-forscope-force-conformance-in-for-loop-scope.md) .
 
-Varsayılan olarak bu uyarıyı kapalıdır. Bkz: [derleyici uyarıları emin olan kapalı varsayılan](../../preprocessor/compiler-warnings-that-are-off-by-default.md) daha fazla bilgi için.
+Bu uyarı varsayılan olarak kapalıdır. Daha fazla bilgi için bkz. [Varsayılan olarak kapalı olan Derleyici uyarıları](../../preprocessor/compiler-warnings-that-are-off-by-default.md) .
 
-Aşağıdaki örnek, C4289 oluşturur:
+Aşağıdaki örnek C4289 oluşturur:
 
-```
+```cpp
 // C4289.cpp
 // compile with: /W4 /Zc:forScope-
 #pragma warning(default:4289)

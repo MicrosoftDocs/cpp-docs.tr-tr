@@ -15,12 +15,12 @@ ms.locfileid: "74395593"
 ---
 # <a name="org"></a>ORG
 
-Sets the location counter to *expression*.
+Konum sayacını *ifade*olarak ayarlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **ORG** *expression*
+> **Kuruluş** *ifadesi*
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Directives reference](directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)

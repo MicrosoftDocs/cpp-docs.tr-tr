@@ -21,8 +21,8 @@ ms.locfileid: "74398196"
 
 ## <a name="remarks"></a>Açıklamalar
 
-See [.LISTIF](../../assembler/masm/dot-listif.md).
+Bkz [. LıSTıF](../../assembler/masm/dot-listif.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Directives reference](directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)

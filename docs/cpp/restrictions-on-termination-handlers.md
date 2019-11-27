@@ -15,13 +15,13 @@ ms.locfileid: "74246379"
 ---
 # <a name="restrictions-on-termination-handlers"></a>Sonlandırma İşleyicileri Kısıtlamaları
 
-You cannot use a **goto** statement to jump into a **__try** statement block or a **__finally** statement block. Bunun yerine, normal denetim akışıyla deyim bloğunu girmeniz gerekir. (You can, however, jump out of a **__try** statement block.) Also, you cannot nest an exception handler or termination handler inside a **__finally** block.
+Bir **__try** deyim bloğuna veya bir **__finally** deyim bloğuna geçmek için **goto** ifadesini kullanamazsınız. Bunun yerine, normal denetim akışıyla deyim bloğunu girmeniz gerekir. (Ancak, **__try** deyim bloğundan atlayabilirsiniz.) Ayrıca, bir özel durum işleyicisini veya sonlandırma işleyicisini **__finally** bloğu içinde iç içe geçirilemez.
 
-In addition, some kinds of code permitted in a termination handler produce questionable results, so you should use them with caution, if at all. One is a **goto** statement that jumps out of a **__finally** statement block. If the block is executing as part of normal termination, nothing unusual happens. But if the system is unwinding the stack, that unwinding stops, and the current function gains control as if there were no abnormal termination.
+Ayrıca, sonlandırma işleyicisinde izin verilen bazı kod türleri şüpheli sonuçlar üretir. bu nedenle, hepsi de varsa dikkatli bir şekilde kullanmalısınız. Bunlardan biri, **__finally** bildiri bloğundan atlayan bir **goto** deyimidir. Blok, normal sonlandırmanın bir parçası olarak yürütülerek hiçbir şey olağan dışı olur. Ancak sistem, yığını geri taşırsa, geriye doğru izleme işlemi geri alınmaz ve geçerli işlev olağan dışı sonlandırma olmasa da denetimi kazanır.
 
-A **return** statement inside a **__finally** statement block presents roughly the same situation. Control returns to the immediate caller of the function containing the termination handler. If the system was unwinding the stack, this process is halted, and the program proceeds as if there had been no exception raised.
+**__Finally** bildiri bloğu içindeki bir **Return** ifadesinde kabaca aynı durum sunulmaktadır. Denetim, sonlandırma işleyicisini içeren işlevin hemen çağırana döner. Sistem yığını geri taşıdıysa, bu işlem durdurulur ve program bir özel durum oluşmamış gibi devam eder.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Writing a termination handler](../cpp/writing-a-termination-handler.md)<br/>
+[Sonlandırma işleyicisi yazma](../cpp/writing-a-termination-handler.md)<br/>
 [Yapılandırılmış Özel Durum İşleme (C/C++)](../cpp/structured-exception-handling-c-cpp.md)

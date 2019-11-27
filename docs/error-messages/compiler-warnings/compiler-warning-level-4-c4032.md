@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C4032
 ms.assetid: 70dd0c85-0239-43f9-bb06-507f6a57d206
-ms.openlocfilehash: fa1602d63ed9822725fea8e1b842929f221d3926
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 52e80340a5157e9350b6d4bbf3bcabea0487e089
+ms.sourcegitcommit: 3ee06ec53153cf21910fc8cfef78a4f25f9633f3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62401468"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74541253"
 ---
 # <a name="compiler-warning-level-4-c4032"></a>Derleyici Uyarısı (düzey 4) C4032
 
-'number' biçimsel parametresi yükseltildiğinde farklı türe sahip
+' number ' biçimsel parametresi yükseltildiğinde farklı türe sahip
 
-Parametre türü aracılığıyla varsayılan promosyonlar, bir önceki bildirimde türüyle uyumlu değil.
+Parametre türü, bir önceki bildirimde bulunan türü olan varsayılan yükseltmeler aracılığıyla uyumlu değildir.
 
-Bu bir hatadır, ANSI C ([/Za](../../build/reference/za-ze-disable-language-extensions.md)) ve Microsoft Uzatmaları (/Ze) altında bir uyarı.
+Bu, ANSI C 'de ([/za](../../build/reference/za-ze-disable-language-extensions.md)) oluşan bir hatadır ve Microsoft uzantıları (/Ze) altında bir uyarıdır.
 
 ## <a name="example"></a>Örnek
 
-```
+```c
 // C4032.c
 // compile with: /W4
 void func();

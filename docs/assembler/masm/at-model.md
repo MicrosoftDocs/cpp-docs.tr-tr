@@ -13,14 +13,14 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74398950"
 ---
-# <a name="model"></a>\@Model
+# <a name="model"></a>\@modeli
 
-1 for **TINY** model, 2 for **SMALL** model, 3 for **COMPACT** model, 4 for **MEDIUM** model, 5 for **LARGE** model, 6 for **HUGE** model, and 7 for **FLAT** model (numeric equate).
+1 küçük **model için 2** , **küçük** model için 2, **Compact** model için 3, orta model için 4, **Orta düzey** Için 5, büyük **model için 6** ve **düz** model için 7 (sayısal eşkarakter).
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **\@Model**
+> **\@modeli**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Symbols reference](symbols-reference.md)
+[Semboller başvurusu](symbols-reference.md)

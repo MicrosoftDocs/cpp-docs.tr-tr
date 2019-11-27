@@ -13,14 +13,14 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74399208"
 ---
-# <a name="code"></a>\@code
+# <a name="code"></a>\@kodu
 
-The name of the code segment (text macro).
+Kod kesiminin adı (Metin makrosu).
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **\@code**
+> **\@kodu**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Symbols reference](symbols-reference.md)
+[Semboller başvurusu](symbols-reference.md)

@@ -1,5 +1,5 @@
 ---
-title: Compiler Warning (Level 3) C4738
+title: Derleyici Uyarısı (düzey 3) C4738
 ms.date: 11/04/2016
 f1_keywords:
 - C4738
@@ -13,21 +13,21 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 11/19/2019
 ms.locfileid: "74189403"
 ---
-# <a name="compiler-warning-level-3-c4738"></a>Compiler Warning (Level 3) C4738
+# <a name="compiler-warning-level-3-c4738"></a>Derleyici Uyarısı (düzey 3) C4738
 
 32 bit kayan sonuç bellekte depolanıyor, olası performans kaybı
 
-C4738 warns that the result of an assignment, cast, passed argument, or other operation may need to be rounded or that the operation ran out of registers and needed to use memory (spilling). This can result in performance loss.
+C4738 bir atama, atama, geçilen bağımsız değişken ya da başka bir işlemin sonucunun yuvarlanmasını veya işlemin yazmaçların (sıvı kesilmesi) gerekli olduğunu ve gerekli olduğunu uyarır. Bu, performans kaybına neden olabilir.
 
-To resolve this warning and avoid rounding, compile with [/fp:fast](../../build/reference/fp-specify-floating-point-behavior.md) or use `double` instead of `float`.
+Bu uyarıyı çözmek ve yuvarlamadan kaçınmak için, `float`yerine [/FP: Fast](../../build/reference/fp-specify-floating-point-behavior.md) ile derleyin veya `double` kullanın.
 
-To resolve this warning and avoid running out of registers, change the order of computation and modify your use of inlining
+Bu uyarıyı gidermek ve kayıt dışında bırakmak önlemek için hesaplama sırasını değiştirin ve satır içi kullanımı değiştirin
 
-This warning is off by default. For more information, see [Compiler Warnings That Are Off by Default](../../preprocessor/compiler-warnings-that-are-off-by-default.md).
+Bu uyarı varsayılan olarak kapalıdır. Daha fazla bilgi için bkz. [Varsayılan olarak kapalı olan Derleyici uyarıları](../../preprocessor/compiler-warnings-that-are-off-by-default.md).
 
 ## <a name="example"></a>Örnek
 
-The following sample generates C4738:
+Aşağıdaki örnek C4738 oluşturur:
 
 ```cpp
 // C4738.cpp

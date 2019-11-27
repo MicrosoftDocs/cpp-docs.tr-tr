@@ -15,19 +15,19 @@ ms.locfileid: "74399285"
 ---
 # <a name="alias-masm"></a>ALIAS (MASM)
 
-The **ALIAS** directive creates an alternate name for a function.  This lets you create multiple names for a function, or create libraries that allow the linker (LINK.exe) to map an old function to a new function.
+**ALIAS** yönergesi, bir işlev için alternatif bir ad oluşturur.  Bu, bir işlev için birden çok ad oluşturmanızı veya bağlayıcı (LINK. exe) ' nin eski bir işlevi yeni bir işlevle eşlemesine izin veren kitaplıklar oluşturmanızı sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **ALIAS \<** _alias_ **> = \<** _actual-name_ **>**
+> **Diğer ad \<** _diğer_adı **> = \<** _gerçek ad_ **>**
 
 #### <a name="parameters"></a>Parametreler
 
-*actual-name*\
-The actual name of the function or procedure.  The angle brackets are required.
+*gerçek ad*\
+İşlevin veya yordamın gerçek adı.  Açılı ayraç gereklidir.
 
-*alias*\
-The alternate or alias name.  The angle brackets are required.
+*diğer ad*\
+Alternatif veya diğer ad.  Açılı ayraç gereklidir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

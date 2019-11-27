@@ -63,92 +63,92 @@ ms.locfileid: "74397202"
 ---
 # <a name="ml-and-ml64-command-line-reference"></a>ML ve ML64 Komut Satırı Başvurusu
 
-Assembles and links one or more assembly-language source files. The command-line options are case sensitive.
+Bir veya daha fazla derleme dili kaynak dosyasını ayrıştırır ve bağlar. Komut satırı seçenekleri büyük/küçük harfe duyarlıdır.
 
-For more information on ml64.exe, see [MASM for x64 (ml64.exe)](../../assembler/masm/masm-for-x64-ml64-exe.md).
+Ml64. exe hakkında daha fazla bilgi için bkz. [x64 Için ması (ml64. exe)](../../assembler/masm/masm-for-x64-ml64-exe.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
-> ML \[*options*] *filename* \[ \[*options*]  *filename*]
+> ML \[*seçenekleri*] *dosya adı* \[ \[*Seçenekler*] *filename*]
 >
-> ML64 \[*options*] *filename* \[ \[*options*]  *filename*] ... \[/link *linkoptions*]
+> ML64 \[*Options*] *filename* \[ \[*Seçenekler*] *filename*]... \[/Link *linkOptions*]
 
 ### <a name="parameters"></a>Parametreler
 
-*options*\
-The options listed in the following table.
+*seçenekler*\
+Aşağıdaki tabloda listelenen seçenekler.
 
 |Seçenek|Eylem|
 |------------|------------|
-|**/AT**|Enables tiny-memory-model support. Enables error messages for code constructs that violate the requirements for .com format files. Note that this is not equivalent to the [.MODEL](../../assembler/masm/dot-model.md) **TINY** directive.<br /><br /> Not available in ml64.exe.|
-|**/Bl** *filename*|Selects an alternate linker.|
-|**/c**|Assembles only. Does not link.|
-|**/coff**|Generates common object file format (COFF) type of object module. Generally required for Win32 assembly language development.<br /><br /> Not available in ml64.exe.|
-|**/Cp**|Preserves case of all user identifiers.|
-|**/Cu**|Maps all identifiers to upper case (default).<br /><br /> Not available in ml64.exe.|
-|**/Cx**|Preserves case in public and extern symbols.|
-|**/D** *symbol*⟦=*value*⟧|Defines a text macro with the given name. If *value* is missing, it is blank. Multiple tokens separated by spaces must be enclosed in quotation marks.|
-|**/EP**|Generates a preprocessed source listing (sent to STDOUT). See **/Sf**.|
-|**/ERRORREPORT** [ **NONE** &#124; **PROMPT** &#124; **QUEUE** &#124; **SEND** ]|If ml.exe or ml64.exe fails at runtime, you can use **/ERRORREPORT** to send information to Microsoft about these internal errors.<br /><br /> For more information about **/ERRORREPORT**, see [/errorReport (Report Internal Compiler Errors)](../../build/reference/errorreport-report-internal-compiler-errors.md).|
-|**/F** *hexnum*|Sets stack size to *hexnum* bytes (this is the same as **/link/STACK**:*number*). The value must be expressed in hexadecimal notation. There must be a space between **/F** and *hexnum*.|
-|**/Fe** *filename*|Names the executable file.|
-|**/Fl**⟦*filename*⟧|Generates an assembled code listing. See **/Sf**.|
-|**/Fm**⟦*filename*⟧|Creates a linker map file.|
-|**/Fo** *filename*|Names an object file. See Remarks section for more information.|
-|**/FPi**|Generates emulator fix-ups for floating-point arithmetic (mixed language only).<br /><br /> Not available in ml64.exe.|
-|**/Fr**⟦*filename*⟧|Generates a source browser .sbr file.|
-|**/FR**⟦*filename*⟧|Generates an extended form of a source browser .sbr file.|
-|**/Gc**|Specifies use of FORTRAN- or Pascal-style function calling and naming conventions. Same as **OPTION LANGUAGE:PASCAL**.<br /><br /> Not available in ml64.exe.|
-|**/Gd**|Specifies use of C-style function calling and naming conventions. Same as **OPTION LANGUAGE:C**.<br /><br /> Not available in ml64.exe.|
-|**/GZ**|Specifies use of __stdcall function calling and naming conventions.  Same as **OPTION LANGUAGE:STCALL**.<br /><br /> Not available in ml64.exe.|
-|**/H** *number*|Restricts external names to number significant characters. The default is 31 characters.<br /><br /> Not available in ml64.exe.|
-|**/help**|Calls QuickHelp for help on ML.|
-|**/I** *pathname*|Sets path for include file. A maximum of 10 **/I** options is allowed.|
-|**/nologo**|Suppresses messages for successful assembly.|
-|**/omf**|Generates object module file format (OMF) type of object module.  **/omf** implies **/c**; ML.exe does not support linking OMF objects.<br /><br /> Not available in ml64.exe.|
-|**/Sa**|Turns on listing of all available information.|
-|**/safeseh**|Marks the object as either containing no exception handlers or containing exception handlers that are all declared with [.SAFESEH](../../assembler/masm/dot-safeseh.md).<br /><br /> Not available in ml64.exe.|
-|**/Sf**|Adds first-pass listing to listing file.|
-|**/Sl** *width*|Sets the line width of source listing in characters per line. Range is 60 to 255 or 0. Default is 0. Same as [PAGE](../../assembler/masm/page.md) width.|
-|**/Sn**|Turns off symbol table when producing a listing.|
-|**/Sp** *length*|Sets the page length of source listing in lines per page. Range is 10 to 255 or 0. Default is 0. Same as [PAGE](../../assembler/masm/page.md) length.|
-|**/Ss** *text*|Specifies text for source listing. Same as [SUBTITLE](../../assembler/masm/subtitle.md) text.|
-|**/St** *text*|Specifies title for source listing. Same as [TITLE](../../assembler/masm/title.md) text.|
-|**/Sx**|Turns on false conditionals in listing.|
-|**/Ta** *filename*|Assembles source file whose name does not end with the .asm extension.|
-|**/w**|Same as **/W0/WX**.|
-|**/W** *level*|Sets the warning level, where *level* = 0, 1, 2, or 3.|
-|**/WX**|Returns an error code if warnings are generated.|
-|**/X**|Ignore INCLUDE environment path.|
-|**/Zd**|Generates line-number information in object file.|
-|**/Zf**|Makes all symbols public.|
-|**/Zi**|Generates CodeView information in object file.|
-|**/Zm**|Enables**M510** option for maximum compatibility with MASM 5.1.<br /><br /> Not available in ml64.exe.|
-|**/Zp**⟦*alignment*⟧|Packs structures on the specified byte boundary. The *alignment* can be 1, 2, or 4.|
-|**/Zs**|Performs a syntax check only.|
-|**/?**|Displays a summary of ML command-line syntax.|
+|**/AT**|Çok küçük bellek modeli desteğini sunar. . Com biçim dosyaları için gereksinimleri ihlal eden kod yapıları için hata iletileri sunar. Bunun eşdeğer olmadığına unutmayın [. MODEL](../../assembler/masm/dot-model.md) **küçük** yönergesi.<br /><br /> Ml64. exe ' de kullanılamaz.|
+|**/BL** *dosya adı*|Alternatif bir bağlayıcı seçer.|
+|**/c**|Yalnızca birleştirir. Bağlantı yapmaz.|
+|**/COFF**|Nesne modülünün ortak nesne dosyası biçimi (COFF) türünü oluşturur. Win32 derleme dili geliştirmesi için genellikle gereklidir.<br /><br /> Ml64. exe ' de kullanılamaz.|
+|**/CP**|Tüm kullanıcı tanımlayıcıları durumunu korur.|
+|**/Cu**|Tüm tanımlayıcıları büyük harflere eşler (varsayılan).<br /><br /> Ml64. exe ' de kullanılamaz.|
+|**/CX**|Ortak ve extern sembollerinde büyük/küçük harf durumunu korur.|
+|**/D** *symbol*⟦ =*değer*⟧|Verilen ada sahip bir metin makrosunu tanımlar. *Değer* eksikse, boştur. Boşluklarla ayrılmış birden çok belirteç tırnak işaretleri içine alınmalıdır.|
+|**/EP**|Önceden işlenmiş bir kaynak listesini üretir (STDOUT 'a gönderilir). Bkz. **/SF**.|
+|**/errorreport** [ **yok** &#124; **Prompt** &#124; **kuyruğu** &#124; **gönderme** ]|Ml. exe veya ml64. exe çalışma zamanında başarısız olursa, bu iç hatalar hakkında Microsoft 'a bilgi göndermek için **/errorreport** ' u kullanabilirsiniz.<br /><br /> **/Errorreport**hakkında daha fazla bilgi için bkz. [/errorreport (Iç derleyici hatalarını raporla)](../../build/reference/errorreport-report-internal-compiler-errors.md).|
+|**/F** *onaltınum*|Yığın boyutunu *onaltısay* bayta ayarlar (Bu, **/Link/Stack**:*Number*ile aynıdır). Değerin onaltılık gösterimde ifade edilmesi gerekir. **/F** ile *onaltısayı*arasında bir boşluk olması gerekir.|
+|**/Fe** *dosya adı*|Yürütülebilir dosyayı adlandırır.|
+|**/Fl**⟦*filename*⟧|Birleştirilmiş bir kod listesi oluşturur. Bkz. **/SF**.|
+|**/FM**⟦*filename*⟧|Bağlayıcı eşleme dosyası oluşturur.|
+|**/Fo** *dosya adı*|Bir nesne dosyası adlandırır. Daha fazla bilgi için bkz. açıklamalar bölümü.|
+|**/FPi**|Kayan nokta aritmetiği (yalnızca karma dil) için öykünücü düzeltmelanları üretir.<br /><br /> Ml64. exe ' de kullanılamaz.|
+|**/Fr**⟦*filename*⟧|Bir kaynak Browser. sbr dosyası üretir.|
+|**/Fr**⟦*filename*⟧|Kaynak Browser. sbr dosyasının genişletilmiş bir biçimini oluşturur.|
+|**/GC**|FORTRAN-or Pascal stili işlev çağırma ve adlandırma kurallarının kullanımını belirtir. **Seçenek diliyle aynı: Pascal**.<br /><br /> Ml64. exe ' de kullanılamaz.|
+|**/GD**|C stili işlev çağırma ve adlandırma kuralları kullanımını belirtir. **Seçenek diliyle aynı: C**.<br /><br /> Ml64. exe ' de kullanılamaz.|
+|**/GZ**|__Stdcall işlev çağırma ve adlandırma kuralları kullanımını belirtir.  **Seçenek diliyle aynı: STCALL**.<br /><br /> Ml64. exe ' de kullanılamaz.|
+|**/H** *numarası*|Dış adları önemli karakter sayısı olarak kısıtlar. Varsayılan değer 31 karakterdir.<br /><br /> Ml64. exe ' de kullanılamaz.|
+|**/Help**|ML yardımı için QuickHelp 'i çağırır.|
+|**/İ** *yol adı*|İçerme dosyası için yolu ayarlar. En fazla 10 **/ı** seçeneğe izin verilir.|
+|**/nologo**|Başarılı derleme için iletileri bastırır.|
+|**/OMF**|Nesne modülünün nesne modülü dosya biçimi (OMF) türünü oluşturur.  **/OMF** **/c**gerektirir; ML. exe, OMF nesnelerinin bağlanmasını desteklemez.<br /><br /> Ml64. exe ' de kullanılamaz.|
+|**/Sa yazın**|Tüm kullanılabilir bilgilerin listesini etkinleştirir.|
+|**/SAFESEH**|Nesneyi herhangi bir özel durum işleyicisi veya ile birlikte gelen özel durum işleyicilerini içeren olarak işaretler [. SAFESEH](../../assembler/masm/dot-safeseh.md).<br /><br /> Ml64. exe ' de kullanılamaz.|
+|**/SF**|Listeleme dosyasına ilk geçiş listesi ekler.|
+|**/SL** *genişliği*|Kaynak listesinin satır genişliğini satır başına karakter cinsinden ayarlar. Aralık 60, 255 veya 0 ' dır. Varsayılan değer 0 ' dır. [Sayfa](../../assembler/masm/page.md) genişliğiyle aynı.|
+|**/Sn**|Bir liste üretilirken sembol tablosunu kapatır.|
+|**/SP** *uzunluğu*|Sayfa başına satırlardaki kaynak listesinin sayfa uzunluğunu ayarlar. Aralık 10 ila 255 veya 0 ' dır. Varsayılan değer 0 ' dır. [Sayfa](../../assembler/masm/page.md) uzunluğu ile aynı.|
+|**/SS** *metni*|Kaynak listesi için metni belirtir. Alt [başlık](../../assembler/masm/subtitle.md) metniyle aynı.|
+|**/St** *metni*|Kaynak listesinin başlığını belirtir. [Başlık](../../assembler/masm/title.md) metniyle aynı.|
+|**/SX**|Listede yanlış koşulları etkinleştirir.|
+|**/Ta** *dosya adı*|Adı. asm uzantısıyla bitmez kaynak dosyayı ayrıştırır.|
+|**aralıkları**|**/W0/WX**ile aynı.|
+|**/W** *düzeyi*|*Düzey* = 0, 1, 2 veya 3 olan uyarı düzeyini ayarlar.|
+|**/WX**|Uyarılar oluşturulduysa bir hata kodu döndürür.|
+|**/X**|Ortam yolunu EKLEMEYI yoksay.|
+|**/ZD**|Nesne dosyasında satır numarası bilgileri oluşturur.|
+|**/ZF**|Tüm sembolleri herkese açık hale getirir.|
+|**/Zi**|Nesne dosyasında CodeView bilgileri oluşturur.|
+|**/ZM**|Masd 5,1 ile maksimum uyumluluk için**M510** seçeneğini sunar.<br /><br /> Ml64. exe ' de kullanılamaz.|
+|**/ZP**⟦*hizalaması*⟧|Belirtilen bayt sınırında yapıları paketler. *Hizalama* 1, 2 veya 4 olabilir.|
+|**/ZS**|Yalnızca bir sözdizimi denetimi gerçekleştirir.|
+|**/?**|ML komut satırı sözdiziminin özetini görüntüler.|
 
-*filename*\
+*dosya adı*\
 Dosyanın adı.
 
-*linkoptions*\
-The link options.  See [Linker Options](../../build/reference/linker-options.md) for more information.
+*linkOptions*\
+Bağlantı seçenekleri.  Daha fazla bilgi için bkz. [bağlayıcı seçenekleri](../../build/reference/linker-options.md) .
 
 ## <a name="remarks"></a>Açıklamalar
 
-Some command-line options to ML and ML64 are placement-sensitive. For example, because ML and ML64 can accept several **/c** options, any corresponding **/Fo** options must be specified before **/c**. The following command-line example illustrates an object file specification for each assembly file specification:
+ML ve ML64 için bazı komut satırı seçenekleri yerleştirme duyarlıdır. Örneğin, ML ve ML64 çeşitli **/c** seçeneklerini kabul edebildiğinden, tüm karşılık gelen **/fo** seçeneklerinin **/c**öncesinde belirtilmesi gerekir. Aşağıdaki komut satırı örneği, her derleme dosyası belirtimi için bir nesne dosya belirtimi gösterir:
 
-**ml.exe /Fo a1.obj /c a.asm /Fo b1.obj /c b.asm**
+**ml. exe/fo a1. obj/c a. asm/fo B1. obj/c b. asm**
 
 ## <a name="environment-variables"></a>Ortam Değişkenleri
 
 |Değişken|Açıklama|
 |--------------|-----------------|
-|INCLUDE|Specifies search path for include files.|
-|ML|Specifies default command-line options.|
-|TMP|Specifies path for temporary files.|
+|INCLUDE|İçerme dosyaları için arama yolunu belirtir.|
+|ML|Varsayılan komut satırı seçeneklerini belirtir.|
+|KLASÖRÜNE|Geçici dosyalar için yol belirtir.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[ML Error Messages](../../assembler/masm/ml-error-messages.md)\
+[Ml hata iletileri](../../assembler/masm/ml-error-messages.md)\
 [Microsoft Macro Assembler Başvurusu](../../assembler/masm/microsoft-macro-assembler-reference.md)

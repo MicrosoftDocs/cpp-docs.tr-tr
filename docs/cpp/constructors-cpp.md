@@ -15,9 +15,9 @@ ms.locfileid: "74246613"
 ---
 # <a name="constructors-c"></a>Oluşturucular (C++)
 
-To customize how class members are initialized, or to invoke functions when an object of your class is created, define a *constructor*. A constructor has the same name as the class and no return value. You can define as many overloaded constructors as needed to customize initialization in various ways. Typically, constructors have public accessibility so that code outside the class definition or inheritance hierarchy can create objects of the class. But you can also declare a constructor as **protected** or **private**.
+Sınıf üyelerinin nasıl başlatıldığını özelleştirmek veya sınıfınızın bir nesnesi oluşturulduğunda işlevleri çağırmak için bir *Oluşturucu*tanımlayın. Bir Oluşturucu, sınıfla aynı ada sahip ve dönüş değeri yok. Başlatmayı çeşitli yollarla özelleştirmek için gereken sayıda aşırı yüklenmiş Oluşturucu tanımlayabilirsiniz. Genellikle, oluşturucular, sınıf tanımı veya devralma hiyerarşisi dışındaki kodların sınıfın nesnelerini oluşturabilmesi için genel erişilebilirliği vardır. Ancak bir oluşturucuyu **korumalı** veya **özel**olarak da bildirebilirsiniz.
 
-Constructors can optionally take a member init list. This is a more efficient way to initialize class members than assigning values in the constructor body. The following example shows a class `Box` with three overloaded constructors. The last two use member init lists:
+Oluşturucular, isteğe bağlı olarak bir üye init listesi alabilir. Bu, Oluşturucu gövdesinde değer atamaya kıyasla sınıf üyelerini başlatmanın daha verimli bir yoludur. Aşağıdaki örnek, üç aşırı yüklü Oluşturucu ile `Box` bir sınıf gösterir. Son iki kullanılan üye başlangıç listeleri:
 
 ```cpp
 class Box {
@@ -46,7 +46,7 @@ private:
 };
 ```
 
-When you declare an instance of a class, the compiler chooses which constructor to invoke based on the rules of overload resolution:
+Bir sınıfın örneğini bildirdiğinizde, derleyici, yeniden yükleme çözümünün kurallarına göre hangi oluşturucuyu çağıracağına seçer:
 
 ```cpp
 int main()
@@ -62,15 +62,15 @@ int main()
 }
 ```
 
-- Constructors may be declared as **inline**, [explicit](#explicit_constructors), **friend** or [constexpr](#constexpr_constructors).
-- A constructor can initialize an object that has been declared as **const**, **volatile** or **const volatile**. The object becomes **const** after the constructor completes.
-- To define a constructor in an implementation file, give it a qualified name as with any other member function: `Box::Box(){...}`.
+- Oluşturucular **satır içi**, [Açık](#explicit_constructors), **arkadaş** veya [constexpr](#constexpr_constructors)olarak belirtilebilir.
+- Oluşturucu **const**, **volatile** veya **const geçici**olarak tanımlanmış bir nesneyi başlatabilir. Nesne, Oluşturucu tamamlandıktan sonra **const** hale gelir.
+- Bir uygulama dosyasında bir Oluşturucu tanımlamak için, ona diğer herhangi bir üye işlevi gibi tam adı verin: `Box::Box(){...}`.
 
-## <a name="member_init_list"></a> Member initializer lists
+## <a name="member_init_list"></a>Üye başlatıcı listeleri
 
-A constructor can optionally have a member initializer list, which initializes class members prior to execution of the constructor body. (Note that a member initializer list is not the same thing as an *initializer list* of type [std::initializer_list\<T>](../standard-library/initializer-list-class.md).)
+Oluşturucu, isteğe bağlı olarak, Oluşturucu gövdesinin yürütülmesinden önce sınıf üyelerini Başlatan bir üye Başlatıcı listesine sahip olabilir. (Üye başlatıcısı listesinin [std:: initializer_list\<t >](../standard-library/initializer-list-class.md)türünde bir *Başlatıcı listesi* ile aynı şey olmadığına unutmayın.)
 
-Using a member initializer list is preferred over assigning values in the body of the constructor because it directly initializes the member. In the following example shows the member initializer list consists of all the **identifier(argument)** expressions after the colon:
+Üyeyi doğrudan başlattığında, üye başlatıcısı listesinin kullanılması, oluşturucunun gövdesinde değer atamaya tercih edilir. Aşağıdaki örnekte, üye Başlatıcı listesi, iki nokta üst üste gelen tüm **tanımlayıcı (bağımsız değişken)** ifadelerinden oluşur:
 
 ```cpp
     Box(int width, int length, int height)
@@ -78,15 +78,15 @@ Using a member initializer list is preferred over assigning values in the body o
     {}
 ```
 
-The identifier must refer to a class member; it is initialized with the value of the argument. The argument can be one of the constructor parameters, a function call or a [std::initializer_list\<T>](../standard-library/initializer-list-class.md).
+Tanımlayıcı bir sınıf üyesine başvurmalıdır; bağımsız değişkeninin değeri ile başlatılır. Bağımsız değişken, Oluşturucu parametrelerinden biri, bir işlev çağrısı veya [std:: initializer_list\<t >](../standard-library/initializer-list-class.md)olabilir.
 
-**const** members and members of reference type must be initialized in the member initializer list.
+üye başlatıcısı listesinde **const** üyeleri ve başvuru türü üyeleri başlatılmalıdır.
 
-Calls to parameterized base class constructors should be made in the initializer list to ensure the base class is fully initialized prior to execution of the derived constructor.
+Türetilmiş oluşturucunun yürütülmesi öncesinde temel sınıfın tamamen başlatılmış olduğundan emin olmak için, Oluşturucu listesinde parametreli temel sınıf oluşturuculara çağrılar yapılmalıdır.
 
-## <a name="default_constructors"></a> Default constructors
+## <a name="default_constructors"></a>Varsayılan oluşturucular
 
-*Default constructors* typically have no parameters, but they can have parameters with default values.
+*Varsayılan oluşturucuların* genellikle parametresi yoktur, ancak varsayılan değerlere sahip parametrelere sahip olabilirler.
 
 ```cpp
 class Box {
@@ -99,7 +99,7 @@ public:
 }
 ```
 
-Default constructors are one of the [special member functions](special-member-functions.md). If no constructors are declared in a class, the compiler provides an implicit **inline** default constructor.
+Varsayılan oluşturucular [özel üye işlevlerinden](special-member-functions.md)biridir. Bir sınıf içinde hiçbir Oluşturucu bildirilirse, derleyici örtük bir **satır içi** varsayılan oluşturucu sağlar.
 
 ```cpp
 #include <iostream>
@@ -120,18 +120,18 @@ int main() {
 }
 ```
 
-If you rely on an implicit default constructor, be sure to initialize members in the class definition, as shown in the previous example. Without those initializers, the members would be uninitialized and the Volume() call would produce a garbage value. In general, it is good practice to initialize members in this way even when not relying on an implicit default constructor.
+Örtük bir varsayılan oluşturucuya güveniyorsanız, önceki örnekte gösterildiği gibi, sınıf tanımındaki üyeleri başlattığınızdan emin olun. Bu başlatıcılar olmadan, Üyeler başlatılmamış olur ve Volume () çağrısı bir çöp değeri oluşturur. Genel olarak, örtük bir varsayılan oluşturucuya bağlı olmasa bile üyeleri bu şekilde başlatmak iyi bir uygulamadır.
 
-You can prevent the compiler from generating an implicit default constructor by defining it as [deleted](#explicitly_defaulted_and_deleted_constructors):
+Derleyicinin [Silinmiş](#explicitly_defaulted_and_deleted_constructors)olarak tanımlayarak örtük bir varsayılan Oluşturucu oluşturmasını engelleyebilirsiniz:
 
 ```cpp
     // Default constructor
     Box() = delete;
 ```
 
-A compiler-generated default constructor will be defined as deleted if any class members are not default-constructible. For example, all members of class type, and their class-type members, must have a default constructor and destructors that are accessible. All data members of reference type, as well as **const** members must have a default member initializer.
+Derleyici tarafından oluşturulan varsayılan Oluşturucu, herhangi bir sınıf üyesi varsayılan olarak oluşturulabilir değilse, silindi olarak tanımlanır. Örneğin, sınıf türündeki tüm Üyeler ve sınıf türü üyeleri, erişilebilen bir varsayılan oluşturucuya ve yıkıcıya sahip olmalıdır. Başvuru türünün tüm veri üyelerinin yanı sıra **const** üyeleri de varsayılan üye başlatıcıya sahip olmalıdır.
 
-When you call a compiler-generated default constructor and try to use parentheses, a warning is issued:
+Derleyicinin ürettiği varsayılan oluşturucuyu çağırdığınızda ve parantez kullanmaya çalıştığınızda bir uyarı verilir:
 
 ```cpp
 class myclass{};
@@ -140,7 +140,7 @@ myclass mc();     // warning C4930: prototyped function not called (was a variab
 }
 ```
 
-Bu, En Çok Güçlük Çıkaran Ayrıştırma sorununa bir örnektir. Örnek ifade bir işlevin bildirimi ya da varsayılan bir oluşturucunun çağrılması olarak yorumlanabileceğinden ve C++ ayrıştırıcıları diğer şeylere oranla bildirimlere öncelik verdiğinden, ifade bir işlev bildirimi olarak ele alınır. For more information, see [Most Vexing Parse](https://en.wikipedia.org/wiki/Most_vexing_parse).
+Bu, En Çok Güçlük Çıkaran Ayrıştırma sorununa bir örnektir. Örnek ifade bir işlevin bildirimi ya da varsayılan bir oluşturucunun çağrılması olarak yorumlanabileceğinden ve C++ ayrıştırıcıları diğer şeylere oranla bildirimlere öncelik verdiğinden, ifade bir işlev bildirimi olarak ele alınır. Daha fazla bilgi için bkz. [en çok tümleştirme ayrıştırma](https://en.wikipedia.org/wiki/Most_vexing_parse).
 
 Varsayılan olmayan bir oluşturucu bildirilirse, derleyici varsayılan bir oluşturucu sağlamaz:
 
@@ -170,19 +170,19 @@ Bir sınıfın varsayılan oluşturucusu yoksa, o sınıfa ait nesneler dizisi y
 Box boxes[3]; // C2512: no appropriate default constructor available
 ```
 
-However, you can use a set of initializer lists to initialize an array of Box objects:
+Ancak, Box nesnelerinin bir dizisini başlatmak için bir başlatıcı listeleri kümesi kullanabilirsiniz:
 
 ```cpp
 Box boxes[3]{ { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
 ```
 
-For more information, see [Initializers](initializers.md).
+Daha fazla bilgi için bkz. [başlatıcılar](initializers.md).
 
-## <a name="copy_and_move_constructors"></a> Copy constructors
+## <a name="copy_and_move_constructors"></a>Kopya oluşturucular
 
-A *copy constructor* initializes an object by copying the member values from an object of the same type. If your class members are all simple types such as scalar values, the compiler-generated copy constructor is sufficient and you do not need to define your own. If your class requires more complex initialization, then you need to implement a custom copy constructor. For example, if a class member is a pointer then you need to define a copy constructor to allocate new memory and copy the values from the other's pointed-to object. The compiler-generated copy constructor simply copies the pointer, so that the new pointer still points to the other's memory location.
+Bir *kopya Oluşturucu* , üye değerlerini aynı türdeki bir nesneden kopyalayarak bir nesneyi başlatır. Sınıf üyeleriniz skaler değerler gibi basit türlerdir, derleyici tarafından oluşturulan kopya Oluşturucu yeterlidir ve kendinizinkini tanımlamanız gerekmez. Sınıfınız daha karmaşık başlatma gerektiriyorsa, özel bir kopya Oluşturucu uygulamanız gerekir. Örneğin, bir sınıf üyesi bir işaretçisiyse, yeni bellek ayırmak için bir kopya Oluşturucu tanımlamanız ve değerleri diğerinin işaret eden nesnesinden kopyalamanız gerekir. Derleyici tarafından oluşturulan kopya Oluşturucu, yeni işaretçinin hala diğer bellek konumunu işaret ettiği şekilde işaretçiyi kopyalar.
 
-A copy constructor may have one of these signatures:
+Kopya Oluşturucu şu imzalardan birine sahip olabilir:
 
 ```cpp
     Box(Box& other); // Avoid if possible--allows modification of other.
@@ -194,25 +194,25 @@ A copy constructor may have one of these signatures:
     Box(Box& other, int i = 42, string label = "Box");
 ```
 
-When you define a copy constructor, you should also define a copy assignment operator (=). For more information, see [Assignment](assignment.md) and [Copy constructors and copy assignment operators](copy-constructors-and-copy-assignment-operators-cpp.md).
+Bir kopya Oluşturucu tanımladığınızda, bir kopya atama işleci (=) de tanımlamanız gerekir. Daha fazla bilgi için bkz. [atama](assignment.md) ve [kopya oluşturucuları ve kopya atama işleçleri](copy-constructors-and-copy-assignment-operators-cpp.md).
 
-You can prevent your object from being copied by defining the copy constructor as deleted:
+Kopya oluşturucuyu silinmiş olarak tanımlayarak, nesnenizin kopyalanmasını engelleyebilirsiniz:
 
 ```cpp
     Box (const Box& other) = delete;
 ```
 
-Attempting to copy the object produces error *C2280: attempting to reference a deleted function*.
+Nesneyi kopyalamaya çalışmak C2280 hatasını üretir *: silinen bir işleve başvurulmaya çalışılıyor*.
 
-## <a name="move_constructors"></a> Move constructors
+## <a name="move_constructors"></a>Taşıma Oluşturucuları
 
-A *move constructor* is a special member function that moves ownership of an existing object's data to a new variable without copying the original data. It takes an rvalue reference as its first parameter, and any additional parameters must have default values. Move constructors can significantly increase your program's efficiency when passing around large objects.
+*Taşıma oluşturucusu* , varolan bir nesne verisinin sahipliğini özgün verileri kopyalamadan yeni bir değişkene taşır özel bir üye işlevidir. İlk parametresi olarak bir rvalue başvurusu alır ve tüm ek parametreler varsayılan değerlere sahip olmalıdır. Taşıma Oluşturucuları, büyük nesneler etrafında geçiş yaparken programınızın verimliliğini önemli ölçüde artırabilir.
 
 ```cpp
 Box(Box&& other);
 ```
 
-The compiler chooses a move constructor in certain situations where the object is being initialized by another object of the same type that is about to be destroyed and no longer needs its resources. The following example shows one case when a move constructor is selected by overload resolution. In the constructor that calls `get_Box()`, the returned value is an *xvalue* (eXpiring value). It is not assigned to any variable and is therefore about to go out of scope. To provide motivation for this example, let's give Box a large vector of strings that represent its contents. Rather than copying the vector and its strings, the move constructor "steals" it from the expiring value "box" so that the vector now belongs to the new object. The call to `std::move` is all that's needed because both `vector` and `string` classes implement their own move constructors.
+Derleyici, nesnenin yok edileceği ve artık kaynaklarına ihtiyacı olmayan aynı türde başka bir nesne tarafından başlatıldığı bazı durumlarda bir taşıma Oluşturucusu seçer. Aşağıdaki örnekte, bir taşıma Oluşturucusu aşırı yükleme çözümlemesi tarafından seçildiğinde bir durum gösterilmektedir. `get_Box()`çağıran oluşturucuda, döndürülen *değer bir bir* bir "(süresi dolacak) değeridir. Herhangi bir değişkene atanmamış ve bu nedenle kapsam dışına geçmek üzere. Bu örneğe ilişkin mosyon sağlamak için, içeriği temsil eden büyük bir dize vektörü sunalım. Vektör ve dizelerini kopyalamak yerine, vector öğesinin artık yeni nesneye ait olması için "kutu" süresi dolan değerden "buar" `std::move` çağrısı, hem `vector` hem de `string` sınıfları kendi taşıma oluşturucularını uygulamadığından gereklidir.
 
 ```cpp
 #include <iostream>
@@ -279,15 +279,15 @@ int main()
 }
 ```
 
-If a class does not define a move constructor, the compiler generates an implicit one if there is no user-declared copy constructor, copy assignment operator, move assignment operator, or destructor. If no explicit or implicit move constructor is defined, operations that would otherwise use a move constructor use the copy constructor instead. If a class declares a move constructor or move assignment operator, the implicitly declared copy constructor is defined as deleted.
+Bir sınıf bir taşıma Oluşturucusu tanımlamıyorsa, Kullanıcı tarafından belirtilen kopya Oluşturucu, kopya atama işleci, taşıma atama işleci veya yıkıcısı yoksa derleyici örtük bir tane oluşturur. Açık veya örtük bir taşıma Oluşturucusu tanımlanmazsa, başka şekilde bir taşıma Oluşturucusu kullanan işlemler kopyalama oluşturucusunu kullanır. Bir sınıf bir taşıma Oluşturucusu veya taşıma ataması operatörü bildiriyorsa, örtük olarak belirtilen kopya Oluşturucu silindi olarak tanımlanır.
 
-An implicitly declared move constructor is defined as deleted if any members that are class types lack a destructor or the compiler cannot determine which constructor to use for the move operation.
+Örtük olarak tanımlanmış bir taşıma Oluşturucusu, sınıf türü olmayan bir üye yok edici veya derleyici, taşıma işlemi için hangi oluşturucuyu kullanacağınızı belirleyemediği sürece silinir.
 
-For more information about how to write a non-trivial move constructor, see [Move Constructors and Move Assignment Operators (C++)](../cpp/move-constructors-and-move-assignment-operators-cpp.md).
+Önemsiz olmayan bir taşıma oluşturucusunun nasıl yazılacağı hakkında daha fazla bilgi için bkz. [Taşıma Oluşturucuları ve taşıma atama işleçleriC++()](../cpp/move-constructors-and-move-assignment-operators-cpp.md).
 
-## <a name="explicitly_defaulted_and_deleted_constructors"></a> Explicitly defaulted and deleted constructors
+## <a name="explicitly_defaulted_and_deleted_constructors"></a>Açık olarak varsayılan ve silinen oluşturucular
 
-You can explicitly *default* copy constructors, default constructors, move constructors, copy assignment operators, move assignment operators, and destructors. You can explicitly *delete* all of the special member functions.
+Açıkça *varsayılan* kopya oluşturucuları, varsayılan oluşturucular, taşıma oluşturucuları, kopya atama işleçleri, taşıma atama işleçleri ve yok ediciler oluşturabilirsiniz. Tüm özel üye işlevlerini açık bir şekilde *silebilirsiniz* .
 
 ```cpp
 class Box
@@ -302,23 +302,23 @@ public:
 };
 ```
 
-For more information, see [Explicitly Defaulted and Deleted Functions](../cpp/explicitly-defaulted-and-deleted-functions.md).
+Daha fazla bilgi için bkz. [açıkça ayarlanmış ve silinen işlevler](../cpp/explicitly-defaulted-and-deleted-functions.md).
 
-## <a name="constexpr_constructors"></a> constexpr constructors
+## <a name="constexpr_constructors"></a>constexpr oluşturucuları
 
-A constructor may be declared as [constexpr](constexpr-cpp.md) if
+Bir [Oluşturucu,](constexpr-cpp.md)
 
-- it is either declared as defaulted or else it satisfies all the conditions for [constexpr functions](constexpr-cpp.md#constexpr_functions) in general;
-- the class has no virtual base classes;
-- each of the parameters is a [literal type](trivial-standard-layout-and-pod-types.md#literal_types);
-- the body is not a function try-block;
-- all non-static data members and base class sub-objects are initialized;
-- if the class is (a) a union having variant members, or (b) has anonymous unions, only one of the union members is initialized;
-- every non-static data member of class type, and all base-class sub-objects have a constexpr constructor
+- Bu, varsayılan olarak bildirilmiştir ya da genel olarak [constexpr işlevlerine](constexpr-cpp.md#constexpr_functions) yönelik tüm koşulları karşılar;
+- sınıfın sanal temel sınıfı yok;
+- parametrelerin her biri [sabit bir türdür](trivial-standard-layout-and-pod-types.md#literal_types);
+- gövde bir işlev try-Block değil;
+- Tüm statik olmayan veri üyeleri ve temel sınıf alt nesneleri başlatılır;
+- Sınıf (a) değişken üyesi olan bir Union veya (b) anonim birleşimler içeriyorsa, birleşim üyelerinden yalnızca biri başlatılır;
+- sınıf türündeki statik olmayan her veri üyesine ve tüm temel sınıf alt nesnelerinde bir constexpr Oluşturucusu vardır
 
-## <a name="init_list_constructors"></a> Initializer list constructors
+## <a name="init_list_constructors"></a>Başlatıcı listesi oluşturucuları
 
-If a constructor takes a [std::initializer_list\<T\>](../standard-library/initializer-list-class.md) as its parameter, and any other parameters have default arguments, that constructor will be selected in overload resolution when the class is instantiated through direct initialization. You can use the initializer_list to initialize any member that can accept it. For example, assume the Box class (shown previously) has a `std::vector<string>` member `m_contents`. You can provide a constructor like this:
+Bir Oluşturucu, parametresi olarak [std:: initializer_list\<t\>](../standard-library/initializer-list-class.md) alırsa ve diğer parametrelerin varsayılan bağımsız değişkenleri varsa, sınıf doğrudan başlatma yoluyla örneği oluşturulduğunda, bu Oluşturucu aşırı yükleme çözümlemesi ' nde seçilir. İnitializer_list, kabul edebilecek herhangi bir üyeyi başlatmak için kullanabilirsiniz. Örneğin, Box sınıfının (daha önce gösterilen) `std::vector<string>` üye `m_contents`sahip olduğunu varsayalım. Aşağıdaki gibi bir Oluşturucu sağlayabilirsiniz:
 
 ```cpp
     Box(initializer_list<string> list, int w = 0, int h = 0, int l = 0)
@@ -326,28 +326,28 @@ If a constructor takes a [std::initializer_list\<T\>](../standard-library/initia
 {}
 ```
 
-And then create Box objects like this:
+Ardından aşağıdaki gibi Box nesneleri oluşturun:
 
 ```cpp
     Box b{ "apples", "oranges", "pears" }; // or ...
     Box b2(initializer_list<string> { "bread", "cheese", "wine" }, 2, 4, 6);
 ```
 
-## <a name="explicit_constructors"></a> Explicit constructors
+## <a name="explicit_constructors"></a>Açık oluşturucular
 
-If a class has a constructor with a single parameter, or if all parameters except one have a default value, the parameter type can be implicitly converted to the class type. For example, if the `Box` class has a constructor like this:
+Bir sınıfta tek parametreli bir Oluşturucu varsa veya biri hariç tüm parametrelerin varsayılan bir değeri varsa parametre türü örtük olarak sınıf türüne dönüştürülebilir. Örneğin, `Box` sınıfında aşağıdaki gibi bir Oluşturucu varsa:
 
 ```cpp
 Box(int size): m_width(size), m_length(size), m_height(size){}
 ```
 
-It is possible to initialize a Box like this:
+Şöyle bir kutu başlatmak mümkündür:
 
 ```cpp
 Box b = 42;
 ```
 
-Or pass an int to a function that takes a Box:
+Veya bir kutu alan işleve bir int geçirin:
 
 ```cpp
 class ShippingOrder
@@ -363,15 +363,15 @@ private:
     ShippingOrder so(42, 10.8);
 ```
 
-Such conversions can be useful in some cases, but more often they can lead to subtle but serious errors in your code. As a general rule, you should use the **explicit** keyword on a constructor (and user-defined operators) to prevent this kind of implicit type conversion:
+Bu tür dönüştürmeler bazı durumlarda yararlı olabilir, ancak kodunuzda daha hafif ancak önemli hatalara neden olabilir. Genel bir kural olarak, bu tür bir örtük tür dönüştürmeyi engellemek için bir oluşturucuda (ve Kullanıcı tanımlı işleçlerden) **Açık** anahtar sözcüğünü kullanmanız gerekir:
 
 ```cpp
 explicit Box(int size): m_width(size), m_length(size), m_height(size){}
 ```
 
-When the constructor is explicit, this line causes a compiler error: `ShippingOrder so(42, 10.8);`.  For more information, see [User-Defined Type Conversions](../cpp/user-defined-type-conversions-cpp.md).
+Oluşturucu açık olduğunda, bu satır bir derleyici hatasına neden olur: `ShippingOrder so(42, 10.8);`.  Daha fazla bilgi için bkz. [Kullanıcı tanımlı tür dönüştürmeleri](../cpp/user-defined-type-conversions-cpp.md).
 
-## <a name="order_of_construction"></a> Order of construction
+## <a name="order_of_construction"></a>Oluşturma sırası
 
 Bir oluşturucu kendi işini şu sırayla gerçekleştirir:
 
@@ -435,7 +435,7 @@ Contained3 ctor
 DerivedContainer ctor
 ```
 
-Bir türetilmiş sınıf oluşturucusu her zaman bir taban sınıf oluşturucusunu çağırır, böylece bu sınıf ek bir çalışma yapılmadan önce tümüyle oluşturulmuş taban sınıflarına dayanabilir. The base class constructors are called in order of derivation—for example, if `ClassA` is derived from `ClassB`, which is derived from `ClassC`, the `ClassC` constructor is called first, then the `ClassB` constructor, then the `ClassA` constructor.
+Bir türetilmiş sınıf oluşturucusu her zaman bir taban sınıf oluşturucusunu çağırır, böylece bu sınıf ek bir çalışma yapılmadan önce tümüyle oluşturulmuş taban sınıflarına dayanabilir. Temel sınıf oluşturucuları türetme sırasıyla çağrılır — Örneğin, `ClassA`, `ClassC`türetilen `ClassB`türetildiyse, önce `ClassC` Oluşturucusu, sonra `ClassB` Oluşturucusu, sonra `ClassA` Oluşturucusu çağrılır.
 
 Bir taban sınıfında varsayılan bir oluşturucu yoksa, türetilen sınıf oluşturucusu içinde temel sınıf oluşturucu parametresini sağlamalısınız:
 
@@ -478,7 +478,7 @@ Bir oluşturucu özel bir durum oluşturursa, yok etme sırası oluşturma sıra
 
 1. Oluşturucu temsil eden değilse, tam oluşturulmuş tüm taban sınıfı nesneleri ve üyeleri yok edilir. Ancak nesnenin kendisi tam oluşturulmadığından yok edici çalışmaz.
 
-### <a name="constructors-for-classes-that-have-multiple-inheritance"></a>Constructors for classes that have multiple inheritance
+### <a name="constructors-for-classes-that-have-multiple-inheritance"></a>Birden çok devralma sınıfına sahip sınıflar için oluşturucular
 
 Bir sınıf birden çok temel sınıftan türetiliyorsa, temel sınıf oluşturucuları türetilen sınıfın bildirimi içinde listelendikleri sırayla çağrılır:
 
@@ -520,9 +520,9 @@ BaseClass3 ctor
 DerivedClass ctor
 ```
 
-## <a name="delegating_constructors"></a> Delegating constructors
+## <a name="delegating_constructors"></a>Temsilci oluşturucuları
 
-A *delegating constructor* calls a different constructor in the same class to do some of the work of initialization. This is useful when you have multiple constructors that all have to perform similar work. You can write the main logic in one constructor and invoke it from others. In the following trivial example, Box(int) delegates its work to Box(int,int,int):
+Bir *temsilci Oluşturucu* , başlatma işinin bir kısmını yapmak için aynı sınıfta farklı bir oluşturucu çağırır. Bu, hepsi de benzer bir iş gerçekleştirmek zorunda olan birden çok Oluşturucu varsa yararlıdır. Ana mantığı bir oluşturucuda yazabilir ve diğerlerinden çağırabilirsiniz. Aşağıdaki önemsiz örnekte, Box (int), çalışma kutusunu (int, int, int) temsil eder:
 
 ```cpp
 class Box {
@@ -542,11 +542,11 @@ public:
 };
 ```
 
-Herhangi bir oluşturucunun işi biter bitmez, oluşturucular tarafından oluşturulan nesne tamamen başlatılır. For more information, see [Delegating Constructors](../cpp/delegating-constructors.md).
+Herhangi bir oluşturucunun işi biter bitmez, oluşturucular tarafından oluşturulan nesne tamamen başlatılır. Daha fazla bilgi için bkz. [oluşturucular Için temsilci seçme](../cpp/delegating-constructors.md).
 
-## <a name="inheriting_constructors"></a> Inheriting constructors (C++11)
+## <a name="inheriting_constructors"></a>Devralan oluşturucular (C++ 11)
 
-A derived class can inherit the constructors from a direct base class by using a **using** declaration as shown in the following example:
+Türetilmiş bir sınıf, aşağıdaki örnekte gösterildiği gibi **using** bildirimini kullanarak doğrudan temel sınıftan oluşturucular alabilir:
 
 ```cpp
 #include <iostream>
@@ -597,11 +597,11 @@ Derived d4 calls: Base()*/
 
 ::: moniker range=">=vs-2017"
 
-**Visual Studio 2017 and later**: The **using** statement in **/std:c++17** mode brings into scope all constructors from the base class except those that have an identical signature to constructors in the derived class. In general, it is best to use inheriting constructors when the derived class declares no new data members or constructors. See also [Improvements in Visual Studio 2017 version 15.7](https://docs.microsoft.com/cpp/overview/cpp-conformance-improvements?view=vs-2017#improvements_157).
+**Visual Studio 2017 ve üzeri**: **/std: c++ 17** modundaki **using** deyimleri, türetilmiş sınıftaki oluşturucularla aynı imzaya sahip olanlar hariç, taban sınıftan tüm oluşturucuları kapsama getirir. Genel olarak, türetilen sınıf yeni veri üyeleri veya oluşturucular bildirmediği zaman devralma oluşturucularının kullanılması en iyisidir. Ayrıca bkz. [Visual Studio 2017 sürüm 15,7 geliştirmeleri](https://docs.microsoft.com/cpp/overview/cpp-conformance-improvements?view=vs-2017#improvements_157).
 
 ::: moniker-end
 
-A class template can inherit all the constructors from a type argument if that type specifies a base class:
+Bir sınıf şablonu, bu tür bir temel sınıf belirtiyorsa bir tür bağımsız değişkeninden tüm oluşturucuları devralınabilir:
 
 ```cpp
 template< typename T >
@@ -611,11 +611,11 @@ class Derived : T {
 };
 ```
 
-A deriving class cannot inherit from multiple base classes if those base classes have constructors that have an identical signature.
+Bu temel sınıfların aynı imzaya sahip oluşturucuları varsa, türetilen bir sınıf birden çok temel sınıftan türelemez.
 
-## <a name="constructors_in_composite_classes"></a> Constructors and composite classes
+## <a name="constructors_in_composite_classes"></a>Oluşturucular ve bileşik sınıflar
 
-Classes that contain class-type members are known as *composite classes*. Bileşik bir sınıfın sınıf türünde bir üyesi oluşturulduğunda, sınıfın kendisi çağrılmadan önce oluşturucu çağrılır. İçerilen bir sınıfın varsayılan bir oluşturucusu yoksa, bileşik sınıfın oluşturucusunda bir başlatma listesi kullanmalısınız. In the earlier `StorageBox` example, if you change the type of the `m_label` member variable to a new `Label` class, you must call both the base class constructor and initialize the `m_label` variable in the `StorageBox` constructor:
+Sınıf türü üyeleri içeren sınıflar *bileşik sınıflar*olarak bilinir. Bileşik bir sınıfın sınıf türünde bir üyesi oluşturulduğunda, sınıfın kendisi çağrılmadan önce oluşturucu çağrılır. İçerilen bir sınıfın varsayılan bir oluşturucusu yoksa, bileşik sınıfın oluşturucusunda bir başlatma listesi kullanmalısınız. Önceki `StorageBox` örneğinde, `m_label` üyesi değişkeninin türünü yeni bir `Label` sınıfına değiştirirseniz, hem temel sınıf oluşturucusunu çağırmanız hem de `StorageBox` oluşturucusunda `m_label` değişkenini başlatmalısınız:
 
 ```cpp
 class Label {
@@ -648,10 +648,10 @@ int main(){
 
 ## <a name="in-this-section"></a>Bu bölümde
 
-- [Copy constructors and copy assignment operators](copy-constructors-and-copy-assignment-operators-cpp.md)
-- [Move constructors and move assignment operators](move-constructors-and-move-assignment-operators-cpp.md)
-- [Delegating constructors](delegating-constructors.md)
+- [Kopya oluşturucuları ve kopya atama işleçleri](copy-constructors-and-copy-assignment-operators-cpp.md)
+- [Taşıma Oluşturucuları ve taşıma atama işleçleri](move-constructors-and-move-assignment-operators-cpp.md)
+- [Temsilci oluşturucuları](delegating-constructors.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Classes and structs](classes-and-structs-cpp.md)
+[Sınıflar ve yapılar](classes-and-structs-cpp.md)

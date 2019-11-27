@@ -13,14 +13,14 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74398929"
 ---
-# <a name="stack"></a>\@stack
+# <a name="stack"></a>\@yığını
 
-DGROUP for near stacks or STACK for far stacks (text macro).
+Uzak yığınlar için DGROUP (Metin makrosu).
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **\@stack**
+> **\@yığını**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Symbols reference](symbols-reference.md)
+[Semboller başvurusu](symbols-reference.md)

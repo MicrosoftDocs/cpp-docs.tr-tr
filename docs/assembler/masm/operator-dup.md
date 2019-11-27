@@ -16,12 +16,12 @@ ms.locfileid: "74396996"
 ---
 # <a name="operator-dup"></a>DUP işleci
 
-Specifies *count* number of declarations of *initialvalue*.
+*InitialValue*bildirimlerinin *sayım* sayısını belirtir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> *count* **DUP** __(__ *initialvalue* ⟦ __,__ *initialvalue* ...⟧ __)__
+> **DUP sayısı** __(__ *InitialValue* ⟦ __,__ *InitialValue* ... ⟧ __)__
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Operators reference](../../assembler/masm/operators-reference.md)
+[İşleçler başvurusu](../../assembler/masm/operators-reference.md)

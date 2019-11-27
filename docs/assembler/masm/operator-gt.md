@@ -17,12 +17,12 @@ ms.locfileid: "74396921"
 ---
 # <a name="operator-gt"></a>GT işleci
 
-Returns true (-1) if *expression1* is greater than *expression2*, or returns false (0) if it is not.
+*İfade1* *İfade2*' den büyükse true (-1) döndürür veya değilse false (0) döndürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> *expression1* **GT** *expression2*
+> *İfade1* **gt** *İfade2*
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Operators reference](operators-reference.md)
+[İşleçler başvurusu](operators-reference.md)

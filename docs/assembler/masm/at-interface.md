@@ -13,14 +13,14 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74398980"
 ---
-# <a name="interface"></a>\@Interface
+# <a name="interface"></a>\@arabirimi
 
-Information about the language parameters (numeric equate).
+Dil parametreleriyle ilgili bilgiler (sayısal eşkarakter).
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **\@Interface**
+> **\@arabirimi**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Symbols reference](symbols-reference.md)
+[Semboller başvurusu](symbols-reference.md)

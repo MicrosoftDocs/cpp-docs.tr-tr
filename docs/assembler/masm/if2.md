@@ -1,5 +1,5 @@
 ---
-title: IF1 and IF2
+title: IF1 ve IF2
 ms.date: 11/21/2019
 f1_keywords:
 - IF2
@@ -15,11 +15,11 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74397440"
 ---
-# <a name="if1-and-if2"></a>IF1 and IF2
+# <a name="if1-and-if2"></a>IF1 ve IF2
 
-**IF1** block is evaluated on first assembly pass.
+**IF1** bloğu ilk derleme geçişinde değerlendirilir.
 
-**IF2** block is evaluated on every assembly pass if **OPTION:SETIF2** is **TRUE**.
+**IF2** bloğu her derleme geçişi üzerinde DEĞERLENDIRILIR **: SETIF2** **true**ise.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -29,20 +29,20 @@ ms.locfileid: "74397440"
 
 ## <a name="remarks"></a>Açıklamalar
 
-See [IF](../../assembler/masm/if-masm.md) for complete syntax.
+Sözdiziminin [tamamı için bkz](../../assembler/masm/if-masm.md) .
 
-Unlike version 5.1, MASM 6.1 and above do most of its work on its first pass, then performs as many subsequent passes as necessary. In contrast, MASM 5.1 always assembles in two source passes. As a result, you may need to revise or delete some pass-dependent constructs under MASM 6.1 and above.
+Sürüm 5,1 ' den farklı olarak, MASU 6,1 ve üzeri, onun ilk geçişinde işini en iyi şekilde gerçekleştirir, daha sonra gerektiğinde daha fazla geçiş yapar. Buna karşılık, MASı 5,1 her zaman iki kaynak geçişte her zaman ayrıştırır. Sonuç olarak, Masd 6,1 ve üzeri sürümlerde bazı geçiş bağımlı yapıları düzeltmeniz veya silmeniz gerekebilir.
 
-### <a name="two-pass-directives"></a>Two-Pass Directives
+### <a name="two-pass-directives"></a>İki taramalı yönergeler
 
-To assure compatibility, MASM 6.1 and above support 5.1 directives referring to two passes. These include **.ERR1**, **.ERR2**, **IF1**, **IF2**, **ELSEIF1**, and **ELSEIF2**. For second-pass constructs, you must specify [OPTION SETIF2](option-masm.md). Without **OPTION SETIF2**, the **IF2** and **.ERR2** directives cause an error:
+Uyumluluk sağlamak için Masa 6,1 ve üzeri, iki geçişe başvuran 5,1 yönergelerini destekler. Bunlar dahildir **. ERR1**, **. ERR2**, **IF1**, **IF2**, **ELSEIF1**ve **ELSEIF2**. İkinci geçiş yapıları için, [SETIF2 seçeneğini](option-masm.md)belirtmeniz gerekir. **Seçenek SETIF2**olmadan, **IF2** ve **. ERR2** yönergeleri hataya neden olur:
 
 ```output
 .ERR2 not allowed : single-pass assembler
 ```
 
-MASM 6.1 and above handle first-pass constructs differently. It treats the **.ERR1** directive as **.ERR**, and the **IF1** directive as **IF**.
+MASM6,1 ve üzeri, ilk geçiş yapılarını farklı şekilde işler. Öğesine davranır **. As ERR1** yönergesi **. HATA**ve **IF1** yönergesi **gibi.**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Directives reference](directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)

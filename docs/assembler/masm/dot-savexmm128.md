@@ -15,20 +15,20 @@ ms.locfileid: "74397957"
 ---
 # <a name="savexmm128"></a>.SAVEXMM128
 
-Generates either a `UWOP_SAVE_XMM128` or a `UWOP_SAVE_XMM128_FAR` unwind code entry for the specified XMM register and offset using the current prologue offset. MASM will choose the most efficient encoding.
+Belirtilen XMM kaydı için bir `UWOP_SAVE_XMM128` veya `UWOP_SAVE_XMM128_FAR` geriye doğru izleme kodu girdisi ya da geçerli prolog sapmasını kullanarak bir konum üretir. MASı, en verimli kodlamayı seçer.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **.SAVEXMM128** *xmmreg* , *offset*
+> **. SAVEXMM128** *xmmreg* , *konum*
 
 ## <a name="remarks"></a>Açıklamalar
 
-**.SAVEXMM128** allows ml64.exe users to specify how a frame function unwinds, and is only allowed within the prologue, which extends from the [PROC](../../assembler/masm/proc.md) FRAME declaration to the [.ENDPROLOG](../../assembler/masm/dot-endprolog.md) directive. These directives do not generate code; they only generate `.xdata` and `.pdata`. .SAVEXMM128 should be preceded by instructions that actually implement the actions to be unwound. It is a good practice to wrap both the unwind directives and the code they are meant to unwind in a macro to ensure agreement.
+**. SAVEXMM128** , ml64. exe kullanıcılarına bir karenin nasıl bir kare işlevi olduğunu ve [işlem çerçevesi bildiriminden](../../assembler/masm/proc.md) öğesine genişleten yalnızca prolog dahilinde izin verileceğini belirlemesine izin verir [. ENDPROLOG](../../assembler/masm/dot-endprolog.md) yönergesi. Bu yönergeler kod oluşturmaz; yalnızca `.xdata` ve `.pdata`oluşturur. . SAVEXMM128 önünde olmayan eylemleri gerçekten uygulayan yönergelerden önce gelmelidir. Anlaşma sağlamak için hem bırakma yönergelerini hem de bir makroya geri doğru bir şekilde kaydırmak için iyi bir uygulamadır.
 
-*offset* must be a multiple of 16.
+*Aralık* 16 ' dan fazla olmalıdır.
 
-For more information, see [MASM for x64 (ml64.exe)](../../assembler/masm/masm-for-x64-ml64-exe.md).
+Daha fazla bilgi için bkz. [for x64 (ml64. exe)](../../assembler/masm/masm-for-x64-ml64-exe.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Directives reference](directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)

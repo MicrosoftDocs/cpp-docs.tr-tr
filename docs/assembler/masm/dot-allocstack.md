@@ -15,25 +15,25 @@ ms.locfileid: "74398624"
 ---
 # <a name="allocstack"></a>.ALLOCSTACK
 
-Generates a **UWOP_ALLOC_SMALL** or a **UWOP_ALLOC_LARGE** with the specified size for the current offset in the prologue.
+Prolog 'daki geçerli fark için belirtilen boyuta sahip bir **UWOP_ALLOC_SMALL** veya **UWOP_ALLOC_LARGE** oluşturur.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **.ALLOCSTACK** *size*
+> **. ALLOCSTACK** *boyutu*
 
 ## <a name="remarks"></a>Açıklamalar
 
-MASM will choose the most efficient encoding for a given size.
+MASı, belirli bir boyut için en verimli kodlamayı seçer.
 
-**.ALLOCSTACK** allows ml64.exe users to specify how a frame function unwinds and is only allowed within the prologue, which extends from the [PROC](../../assembler/masm/proc.md) FRAME declaration to the [.ENDPROLOG](../../assembler/masm/dot-endprolog.md) directive. These directives do not generate code; they only generate `.xdata` and `.pdata`. **.ALLOCSTACK** should be preceded by instructions that actually implement the actions to be unwound. It is a good practice to wrap both the unwind directives and the code they are meant to unwind in a macro to ensure agreement.
+**. ALLOCSTACK** , ml64. exe kullanıcılarına bir çerçeve işlevinin yük dışı bırakma ve [işlem çerçevesi bildiriminden](../../assembler/masm/proc.md) öğesine genişleyen yalnızca prolog içinde nasıl izin verileceğini belirlemesine izin verir [. ENDPROLOG](../../assembler/masm/dot-endprolog.md) yönergesi. Bu yönergeler kod oluşturmaz; yalnızca `.xdata` ve `.pdata`oluşturur. **. ALLOCSTACK** öncesinde, eylemleri gerçekten uygulayan yönergelerden önce gelmelidir. Anlaşma sağlamak için hem bırakma yönergelerini hem de bir makroya geri doğru bir şekilde kaydırmak için iyi bir uygulamadır.
 
-The *size* operand must be a multiple of 8.
+*Boyut* işleneni 8 ' in katı olmalıdır.
 
-For more information, see [MASM for x64 (ml64.exe)](../../assembler/masm/masm-for-x64-ml64-exe.md).
+Daha fazla bilgi için bkz. [for x64 (ml64. exe)](../../assembler/masm/masm-for-x64-ml64-exe.md).
 
 ## <a name="sample"></a>Örnek
 
-The following sample shows how to specify an unwind/exception handler:
+Aşağıdaki örnek, bir geriye doğru izleme/özel durum işleyicisinin nasıl ekleneceğini göstermektedir:
 
 ```asm
 ; ml64 ex3.asm /link /entry:Example1  /SUBSYSTEM:Console

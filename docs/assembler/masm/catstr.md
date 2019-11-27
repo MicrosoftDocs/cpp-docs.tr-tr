@@ -15,15 +15,15 @@ ms.locfileid: "74398855"
 ---
 # <a name="catstr"></a>CATSTR
 
-Concatenates text items.
+Metin öğelerini art arda ekler.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> *name* **CATSTR** ⟦*textitem1* ⟦ __,__ *textitem2* ...⟧⟧
+> *ad* **catstr** ⟦*textitem1* ⟦ __,__ *textitem2* ... ⟧⟧
 
 ## <a name="remarks"></a>Açıklamalar
 
-Each text item can be a literal string, a constant preceded by a **%** , or the string returned by a macro function. **CATSTR** is a synonym for [TEXTEQU](textequ.md).
+Her metin öğesi, bir sabit dize, önüne bir **%** veya bir makro işlevi tarafından döndürülen dize olabilir. **Catstr** [TEXTEQU](textequ.md)için bir eş anlamlı.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -6,30 +6,30 @@ f1_keywords:
 helpviewer_keywords:
 - C4256
 ms.assetid: a755a32e-895a-4837-a2b5-4ea06b736798
-ms.openlocfilehash: 3e8a3ab1b11c719730016e6a0cd248770cd89af8
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: e087e3cd36ab85d6f3f6b5cfed1b55cac66ea142
+ms.sourcegitcommit: 3ee06ec53153cf21910fc8cfef78a4f25f9633f3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65447779"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74541694"
 ---
 # <a name="compiler-warning-level-4-c4256"></a>Derleyici Uyarısı (düzey 4) C4256
 
-'function': sanal tabanları olan sınıfın oluşturucusunda '...'; sahip çağrılar eski Visual C++ sürümleriyle uyumlu olmayabilir
+' function ': sanal tabanlara sahip sınıf için Oluşturucu '... ' içeriyor. çağrılar, Visual 'ın eski sürümleriyle uyumlu olmayabilirC++
 
-Olası uyumsuzluğu.
+Olası uyumsuzluk.
 
-Aşağıdaki kod örneği göz önünde bulundurun. Varsa S2::S2 Oluşturucu tanımı (int i,...) Microsoft sürümünü kullanarak derlenmiş C++ derleyici önce sürüm 7, ancak aşağıdaki örnek, geçerli sürümü kullanılarak derlendiğinde, S3 için oluşturucu çağrısı düzgün çalışmaz bir özel durum çağırma kuralı değişikliği nedeniyle. Hem de Visual C++ 6.0 kullanılarak derlendi ise, hiçbir parametre için üç nokta geçirilen sürece çağrı oldukça sağa ya da, çalışmıyordu.
+Aşağıdaki kod örneğini göz önünde bulundurun. S2:: S2 (int i,...) oluşturucusunun tanımı, Microsoft C++ derleyicisinin sürümü 7 ' den önceki bir sürümü kullanılarak derlenmişse, ancak aşağıdaki örnek geçerli sürüm kullanılarak derlenmişse, özel durum çağırma kuralı değişikliği nedeniyle S3 için oluşturucuya yapılan çağrı düzgün çalışmaz. Her ikisi de Visual C++ 6,0 kullanılarak derlenmişse, üç nokta için hiçbir parametre geçirilmediği müddetçe çağrı tam olarak doğru çalışmaz.
 
-Bu uyarıyı düzeltmek için
+Bu uyarıyı onarmak için
 
 1. Bir oluşturucuda üç nokta kullanmayın.
 
-1. Kendi projedeki tüm bileşenleri (tanımlayın veya başvuru bu sınıfı kitaplıkları dahil) geçerli sürümüyle oluşturulmuş ve ardından uyarı kullanarak devre dışı olduğundan emin olun [uyarı](../../preprocessor/warning.md) pragması.
+1. Projesindeki tüm bileşenlerin geçerli sürümle oluşturulduğundan emin olun (Bu sınıfa tanımlayabiliriz veya başvuruda bulunan kitaplıklar dahil) ve [Uyarı](../../preprocessor/warning.md) pragmasını kullanarak uyarıyı devre dışı bırakın.
 
-Aşağıdaki örnek, C4256 oluşturur:
+Aşağıdaki örnek C4256 oluşturur:
 
-```
+```cpp
 // C4256.cpp
 // compile with: /W4
 // #pragma warning(disable : 4256)

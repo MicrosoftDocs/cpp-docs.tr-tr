@@ -15,7 +15,7 @@ ms.locfileid: "74399236"
 ---
 # <a name="b"></a>\@B
 
-The location of the previous [\@\@:](../../assembler/masm/at-at.md) label.
+Önceki [\@\@:](../../assembler/masm/at-at.md) etiketinin konumu.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -23,4 +23,4 @@ The location of the previous [\@\@:](../../assembler/masm/at-at.md) label.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Symbols reference](symbols-reference.md)
+[Semboller başvurusu](symbols-reference.md)

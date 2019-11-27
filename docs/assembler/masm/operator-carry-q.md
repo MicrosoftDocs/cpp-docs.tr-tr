@@ -17,12 +17,12 @@ ms.locfileid: "74397065"
 ---
 # <a name="operator-carry"></a>CARRY? işleci
 
-Status of carry flag. Used only within [.IF](../../assembler/masm/dot-if.md), [.WHILE](../../assembler/masm/dot-while.md), or [.REPEAT](../../assembler/masm/dot-repeat.md) blocks and evaluated at run time, not at assembly time.
+Taşıma bayrağının durumu. Yalnızca içinde kullanılır [. Ise](../../assembler/masm/dot-if.md), [. Veya SıRASıNDA](../../assembler/masm/dot-while.md) [. Blokları YINELEYIN](../../assembler/masm/dot-repeat.md) ve derleme zamanında değil çalışma zamanında değerlendirilir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **CARRY?**
+> **Sürdür?**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Operators reference](../../assembler/masm/operators-reference.md)
+[İşleçler başvurusu](../../assembler/masm/operators-reference.md)

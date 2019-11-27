@@ -17,12 +17,12 @@ ms.locfileid: "74396180"
 ---
 # <a name="operator-shl"></a>SHL işleci
 
-Returns the result of shifting the bits of *expression* left *count* number of bits.
+*İfadenin* sol *sayısı* olan bitlerin sayısını kaydırma sonucunu döndürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> *expression* **SHL** *count*
+> *Expression* **SHL** *sayısı*
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Operators reference](operators-reference.md)
+[İşleçler başvurusu](operators-reference.md)

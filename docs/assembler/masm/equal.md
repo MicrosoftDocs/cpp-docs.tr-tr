@@ -15,16 +15,16 @@ ms.locfileid: "74397608"
 ---
 # <a name=""></a>=
 
-Assigns the numeric value of *expression* to *name*.
+*İfadenin* sayısal değerini *ada*atar.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> *name* **=** *expression*
+> *ad* **=** *ifadesi*
 
 ## <a name="remarks"></a>Açıklamalar
 
-The symbol can be redefined later.
+Sembol daha sonra yeniden tanımlanabilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Directives reference](directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)

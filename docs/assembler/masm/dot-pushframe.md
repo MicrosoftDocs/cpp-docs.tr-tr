@@ -15,18 +15,18 @@ ms.locfileid: "74398042"
 ---
 # <a name="pushframe"></a>.PUSHFRAME
 
-Generates a `UWOP_PUSH_MACHFRAME` unwind code entry. If the optional *code* is specified, the unwind code entry is given a modifier of 1. Otherwise the modifier is 0.
+Bir `UWOP_PUSH_MACHFRAME` bırakma kodu girişi oluşturur. İsteğe bağlı *kod* belirtilmişse, geriye doğru izleme kod girişine 1 değiştiricisi verilir. Aksi takdirde değiştirici 0 ' dır.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **.PUSHFRAME** ⟦*code*⟧;;
+> **. PUSHFRAME** ⟦*kodu*⟧;;
 
 ## <a name="remarks"></a>Açıklamalar
 
-.PUSHFRAME allows ml64.exe users to specify how a frame function unwinds and is only allowed within the prologue, which extends from the [PROC](../../assembler/masm/proc.md) FRAME declaration to the [.ENDPROLOG](../../assembler/masm/dot-endprolog.md) directive. These directives do not generate code; they only generate `.xdata` and `.pdata`. **.PUSHFRAME** should be preceded by instructions that actually implement the actions to be unwound. It is a good practice to wrap both the unwind directives and the code they are meant to unwind in a macro to ensure agreement.
+. PUSHFRAME, ml64. exe kullanıcılarına, bir çerçeve işlevinin yük dışı bırakma ve [işlem çerçevesi bildiriminden](../../assembler/masm/proc.md) öğesine genişleyen yalnızca prolog içinde nasıl izin verileceğini belirlemesine izin verir [. ENDPROLOG](../../assembler/masm/dot-endprolog.md) yönergesi. Bu yönergeler kod oluşturmaz; yalnızca `.xdata` ve `.pdata`oluşturur. **. PUSHFRAME** , önünde olmayan eylemleri gerçekten uygulayan yönergelerden önce gelmelidir. Anlaşma sağlamak için hem bırakma yönergelerini hem de bir makroya geri doğru bir şekilde kaydırmak için iyi bir uygulamadır.
 
-For more information, see [MASM for x64 (ml64.exe)](../../assembler/masm/masm-for-x64-ml64-exe.md).
+Daha fazla bilgi için bkz. [for x64 (ml64. exe)](../../assembler/masm/masm-for-x64-ml64-exe.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Directives reference](directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)

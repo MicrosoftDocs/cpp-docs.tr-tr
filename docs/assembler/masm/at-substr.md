@@ -15,12 +15,12 @@ ms.locfileid: "74398910"
 ---
 # <a name="substr"></a>\@SubStr
 
-A macro function that returns a substring starting at *position*.
+*Konumundan*başlayan bir alt dize döndüren makro işlevi.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **\@SubStr(** *string* __,__ *position* ⟦ __,__ *length*⟧ **)**
+> **\@SubStr (** *dize* __,__ *konum* ⟦ __,__ *length*⟧ **)**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Symbols reference](symbols-reference.md)
+[Semboller başvurusu](symbols-reference.md)

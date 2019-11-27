@@ -15,7 +15,7 @@ ms.locfileid: "74397910"
 ---
 # <a name="sfcond"></a>.SFCOND
 
-See [.NOLISTIF](../../assembler/masm/dot-nolistif.md).
+Bkz [. NOLıSTıF](../../assembler/masm/dot-nolistif.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -23,4 +23,4 @@ See [.NOLISTIF](../../assembler/masm/dot-nolistif.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Directives reference](directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)

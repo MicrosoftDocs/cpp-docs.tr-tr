@@ -15,12 +15,12 @@ ms.locfileid: "74399126"
 ---
 # <a name="environ"></a>\@Environ
 
-Value of environment variable *envvar* (macro function).
+Ortam değişkeni *ENVVAR* (makro işlevi) değeri.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **\@Environ(** *envvar* **)**
+> **\@Environ (** *ENVVAR* **)**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Symbols reference](symbols-reference.md)
+[Semboller başvurusu](symbols-reference.md)

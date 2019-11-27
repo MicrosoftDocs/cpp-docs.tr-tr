@@ -1,5 +1,5 @@
 ---
-title: operator &quot; &quot;
+title: işleç &quot; &quot;
 ms.date: 08/30/2018
 f1_keywords:
 - '&#34; &#34;'
@@ -15,14 +15,14 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74397032"
 ---
-# <a name="operator-quot-quot"></a>operator &quot; &quot;
+# <a name="operator-quot-quot"></a>işleç &quot; &quot;
 
-Treats "*text*" as a string.
+"*Metin*" i dize olarak değerlendirir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> __"__ *text* __"__
+> __"__ *metin* __"__
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Operators reference](operators-reference.md)
+[İşleçler başvurusu](operators-reference.md)

@@ -15,12 +15,12 @@ ms.locfileid: "74399227"
 ---
 # <a name="catstr"></a>\@CatStr
 
-Macro function that concatenates one or more strings. Returns a string.
+Bir veya daha fazla dizeyi birleştiren makro işlevi. Bir dize döndürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **\@CatStr(** *string1* ⟦ __,__ *string2*...⟧ **)**
+> **\@catstr (** *Dize1* ⟦ __,__ *dize2*... ⟧ **)**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Symbols reference](symbols-reference.md)
+[Semboller başvurusu](symbols-reference.md)

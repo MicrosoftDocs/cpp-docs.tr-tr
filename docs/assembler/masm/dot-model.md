@@ -13,46 +13,46 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74398107"
 ---
-# <a name="model-32-bit-masm"></a>.MODEL (32-bit MASM)
+# <a name="model-32-bit-masm"></a>. MODEL (32-bit masa)
 
-Initializes the program memory model. (32-bit MASM only.)
+Program bellek modelini başlatır. (yalnızca 32-bit masa.)
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **.MODEL** *memory-model* ⟦ __,__ *language-type*⟧ ⟦ __,__ *stack-option*⟧
+> **. Model** *bellek-model* ⟦ __,__ *dil türü*⟧ ⟦ __,__ *Stack-Option*⟧
 
 ### <a name="parameters"></a>Parametreler
 
-*memory-model*\
-Required parameter that determines the size of code and data pointers.
+*bellek-model*\
+Kod ve veri işaretçilerinin boyutunu belirleyen gerekli parametre.
 
-*language-type*\
-Optional parameter that sets the calling and naming conventions for procedures and public symbols.
+*dil türü*\
+Yordamlar ve genel semboller için çağrı ve adlandırma kurallarını ayarlayan isteğe bağlı parametre.
 
-*stack-option*\
+*yığın seçeneği*\
 İsteğe bağlı parametre.
 
-*stack-option* is not used if *memory-model* is **FLAT**.
+*bellek-model* **düz**ise *yığın seçeneği* kullanılmaz.
 
-Specifying **NEARSTACK** groups the stack segment into a single physical segment (**DGROUP**) along with data. The stack segment register (**SS**) is assumed to hold the same address as the data segment register (**DS**). **FARSTACK** does not group the stack with **DGROUP**; thus **SS** does not equal **DS**.
+Her bir fiziksel kesime (**DGROUP**) veri ile birlikte, daha önce **bir yığın segmenti belirtme.** Yığın segmenti yazmacı (**SS**), veri segmenti kayıt (**DS**) ile aynı adresi tutan varsayılır. **Farstack** , yığını **DGROUP**ile gruplandırmaz; Bu nedenle **SS** , **DS 'ye**eşit değildir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**.MODEL** is not used in [MASM for x64 (ml64.exe)](../../assembler/masm/masm-for-x64-ml64-exe.md).
+**. MODEL** , [x64 (ml64. exe) Için Masd](../../assembler/masm/masm-for-x64-ml64-exe.md)'de kullanılmaz.
 
-The following table lists the possible values for each parameter when targeting 16-bit and 32-bit platforms:
+Aşağıdaki tabloda, 16 bit ve 32-bit platformları hedeflenirken her bir parametre için olası değerler listelenmektedir:
 
-|Parametre|32-bit values|16-bit values (support for earlier 16-bit development)|
+|Parametre|32 bit değerleri|16 bit değerler (önceki 16 bit geliştirme desteği)|
 |---------------|--------------------|----------------------------------------------------------------|
-|*memory-model*|**FLAT**|**TINY**, **SMALL**, **COMPACT**, **MEDIUM**, **LARGE**, **HUGE**, **FLAT**|
-|*language-type*|**C**, **STDCALL**|**C**, **BASIC**, **FORTRAN**, **PASCAL**, **SYSCALL**, **STDCALL**|
-|*stack-option*|Kullanılan değil|**NEARSTACK**, **FARSTACK**|
+|*bellek modeli*|**DÜZ**|küçük, **küçük**, **kompakt**, **Orta**, **büyük, çok** **büyük,** **düz**|
+|*dil türü*|**C**, **stdcall**|**C**, **temel**, **FORTRAN**, **Pascal**, **syscall**, **stdcall**|
+|*Stack-seçenek*|Kullanılan değil|**yaklaştığında yığın**, **farstack**|
 
 ## <a name="code"></a>Kod
 
-For MASM-related samples, download the Compiler samples from [Visual C++ Samples and Related Documentation for Visual Studio 2010](https://go.microsoft.com/fwlink/p/?linkid=178749).
+Mase ile ilgili örnekler için, Visual [Studio 2010 Için Visual C++ örneklerden ve ilgili belgelerden](https://go.microsoft.com/fwlink/p/?linkid=178749)derleyici örneklerini indirin.
 
-The following example demonstrates the use of the `.MODEL` directive.
+Aşağıdaki örnek, `.MODEL` yönergesinin kullanımını gösterir.
 
 ## <a name="example"></a>Örnek
 

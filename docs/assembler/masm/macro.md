@@ -15,18 +15,18 @@ ms.locfileid: "74397239"
 ---
 # <a name="macro"></a>MACRO
 
-Marks a macro block called *name* and establishes *parameter* placeholders for arguments passed when the macro is called.
+Bir makro bloğunu *ad* olarak işaretler ve Makro çağrıldığında geçirilen bağımsız değişkenler için *parametre* yer tutucuları oluşturur.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> *name*  **MACRO** ⟦*parameter* ⟦ **:REQ** | :=*default* |  **:VARARG**⟧ ...⟧\
-> *statements*\
-> **ENDM** ⟦*value*⟧
+> **makro** ⟦*parametresini* Adlandır ⟦ **: REQ** | : =*varsayılan* |  **: vararg**⟧... ⟧\
+> *deyimler*\
+> **Endd** ⟦*değeri*⟧
 
 ## <a name="remarks"></a>Açıklamalar
 
-A macro function returns *value* to the calling statement.
+Makro işlevi, çağırma ifadesine *değer* döndürür.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Directives reference](directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)

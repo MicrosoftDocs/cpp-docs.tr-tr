@@ -15,18 +15,18 @@ ms.locfileid: "74397519"
 ---
 # <a name="forc"></a>FORC
 
-Marks a block that will be repeated once for each character in *string*, with the current character replacing *parameter* on each repetition.
+Her bir tekrardaki *parametreyi* değiştirirken geçerli karakterle birlikte *dizedeki*her karakter için bir kez tekrarlanmış bir blok işaretler.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **FORC** *parameter*, __\<__ *string* __>__ \
-> *statements*\
+> **Forc** *parametresi*, __\<__ *dize* __>__ \
+> *deyimler*\
 > **ENDM**
 
 ## <a name="remarks"></a>Açıklamalar
 
-Same as [IRPC](../../assembler/masm/irpc.md).
+[IRPC](../../assembler/masm/irpc.md)ile aynı.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Directives reference](directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)

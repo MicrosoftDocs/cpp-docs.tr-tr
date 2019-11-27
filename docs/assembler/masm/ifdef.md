@@ -15,16 +15,16 @@ ms.locfileid: "74397417"
 ---
 # <a name="ifdef"></a>IFDEF
 
-Grants assembly if *name* is a previously defined label, variable, or symbol.
+*Ad* önceden tanımlanmış bir etiket, değişken veya sembol ise derlemeye izin verir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **IFDEF** *name*
+> **IDEF** *adı*
 
 ## <a name="remarks"></a>Açıklamalar
 
-See [IF](../../assembler/masm/if-masm.md) for complete syntax.
+Sözdiziminin [tamamı için bkz](../../assembler/masm/if-masm.md) .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Directives reference](directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)

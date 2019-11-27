@@ -15,16 +15,16 @@ ms.locfileid: "74397392"
 ---
 # <a name="ife"></a>IFE
 
-Grants assembly if *expression* is false (0).
+*İfade* false (0) ise derlemeye izin verir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **IFE** *expression*
+> **IFE** *ifadesi*
 
 ## <a name="remarks"></a>Açıklamalar
 
-See [IF](../../assembler/masm/if-masm.md) for complete syntax.
+Sözdiziminin [tamamı için bkz](../../assembler/masm/if-masm.md) .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Directives reference](directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)

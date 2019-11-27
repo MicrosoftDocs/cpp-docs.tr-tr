@@ -15,12 +15,12 @@ ms.locfileid: "74393178"
 ---
 # <a name="textequ"></a>TEXTEQU
 
-Assigns *textitem* to *name*. The *textitem* can be a literal string, a constant preceded by a `%`, or the string returned by a macro function.
+*Name*'e *textıtem* atar. *Textıtem* bir sabit dize, önünde bir `%`veya bir makro işlevi tarafından döndürülen dize olabilir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> *name* **TEXTEQU** ⟦*textitem*⟧
+> *ad* **TEXTEQU** ⟦*textıtem*⟧
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Directives reference](directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)

@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C4100
 ms.assetid: 478ed97d-e502-49e4-9afb-ac2a6c61194b
-ms.openlocfilehash: ccb438cf7c80edb1403683ac4817617ffccc690d
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: 80794d270b40a8f40d44630da70455c015158423
+ms.sourcegitcommit: 3ee06ec53153cf21910fc8cfef78a4f25f9633f3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65447737"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74541237"
 ---
 # <a name="compiler-warning-level-4-c4100"></a>Derleyici Uyarısı (düzey 4) C4100
 
-'identifier': başvurulmayan biçimsel parametre
+' tanımlayıcı ': başvurulmayan biçimsel parametre
 
-Biçimsel parametre işlevin gövdesinde başvurulmuyor. Başvurulmayan parametre yok sayıldı.
+Biçimsel parametreye işlevin gövdesinde başvurulmuyor. Başvurulmayan parametre yoksayıldı.
 
-C4100, ayrıca kod bir yok edici çağırdığında verilebilir bir başvurulmayan parametresinde ilkel türü.  Bu bir sınırlamadır Microsoft C++ derleyici.
+Kod, diğer bir deyişle, diğer bir deyişle, bir temel türün başvurulmayan parametresi üzerinde bir yıkıcıya çağırdığında da verilebilir.  Bu, Microsoft C++ derleyicisi kısıtlamasıdır.
 
-Şu örnek C4100 oluşturur:
+Aşağıdaki örnek C4100 oluşturur:
 
-```
+```cpp
 // C4100.cpp
 // compile with: /W4
 void func(int i) {   // C4100, delete the unreferenced parameter to

@@ -15,22 +15,22 @@ ms.locfileid: "74395024"
 ---
 # <a name="proc"></a>PROC
 
-Marks start and end of a procedure block called *label*. The statements in the block can be called with the **CALL** instruction or [INVOKE](../../assembler/masm/invoke.md) directive.
+*Etiket*adlı bir yordam bloğunun başlangıcını ve sonunu işaretler. Bloktaki deyimler **Call** yönergesi veya [Invoke](../../assembler/masm/invoke.md) yönergesi ile çağrılabilir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> *label* **PROC** ⟦*distance*⟧ ⟦*language-type*⟧ ⟦*visibility*⟧ ⟦ __\<__ *prologuearg* __>__ ⟧ ⟦**USES** *reglist*⟧ ⟦ __,__ *parameter* ⟦ __:__ *tag*⟧ ...⟧\
-> ⟦**FRAME** ⟦ __:__ *ehandler-address*⟧ ⟧\
-> *statements*\
-> *label* **ENDP**
+> *etiket* **proc** ⟦*Distance*⟧ ⟦*Language-Type*⟧ ⟦*görünürlük*⟧ ⟦ __\<__ *prologuearg* __>__ ⟧ ⟦, *reglist*⟧ ⟦ __,__ *parametre* ⟦ __:__ *Tag*⟧**kullanır** ... ⟧\
+> ⟦**Frame** ⟦ __:__ *ehandler-Address*⟧ ⟧ \
+> *deyimler*\
+> *etiket* **endp**
 
 ## <a name="remarks"></a>Açıklamalar
 
-⟦**FRAME** ⟦ __:__ *ehandler-address*⟧ ⟧ is only valid with ml64.exe, and causes MASM to generate a function table entry in .pdata and unwind information in .xdata for a function's structured exception handling unwind behavior.
+⟦**Frame** ⟦ __:__ *ehandler-Address*⟧ ⟧ yalnızca ml64. exe ile geçerlidir ve bir işlevin yapılandırılmış özel durum işleme geriye doğru izleme davranışı için. xdata içinde. pdata ve bırakma bilgilerinde bir işlev tablosu girişi oluşturulmasına neden olur.
 
-When the **FRAME** attribute is used, it must be followed by an [.ENDPROLOG](../../assembler/masm/dot-endprolog.md) directive.
+**Çerçeve** özniteliği kullanıldığında, arkasından bir gelmelidir [. ENDPROLOG](../../assembler/masm/dot-endprolog.md) yönergesi.
 
-See [MASM for x64 (ml64.exe)](../../assembler/masm/masm-for-x64-ml64-exe.md) for more information on using ml64.exe.
+Ml64. exe kullanma hakkında daha fazla bilgi için bkz. [for x64 (ml64. exe)](../../assembler/masm/masm-for-x64-ml64-exe.md) .
 
 ## <a name="example"></a>Örnek
 
@@ -54,7 +54,7 @@ _text ENDS
 END
 ```
 
-The above code will emit the following function table and unwind information:
+Yukarıdaki kod, aşağıdaki işlev tablosu ve geriye doğru izleme bilgilerini yayacaktır:
 
 ```Output
 FileHeader->Machine 34404
@@ -79,4 +79,4 @@ Dumping Unwind Information for file ex2.exe
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Directives reference](../../assembler/masm/directives-reference.md)
+[Yönergeler başvurusu](../../assembler/masm/directives-reference.md)

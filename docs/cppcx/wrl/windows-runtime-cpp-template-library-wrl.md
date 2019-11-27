@@ -3,12 +3,12 @@ title: Windows Çalışma Zamanı C++ Şablon Kitaplığı (WRL)
 ms.date: 11/04/2016
 ms.topic: overview
 ms.assetid: b915afce-553b-44a7-b8dc-0ab601758eb0
-ms.openlocfilehash: 7b99f6429f620b56aec5adbc4b8f15d89cc54264
-ms.sourcegitcommit: 7750e4c291d56221c8893120c56a1fe6c9af60d6
+ms.openlocfilehash: 7a7b37a32ebaa0bb6ad71c8f710300256589388d
+ms.sourcegitcommit: 3ee06ec53153cf21910fc8cfef78a4f25f9633f3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71274666"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74541197"
 ---
 # <a name="windows-runtime-c-template-library-wrl"></a>Windows Çalışma Zamanı C++ Şablon Kitaplığı (WRL)
 
@@ -46,16 +46,16 @@ Bu Channel 9 videosunda Windows Çalışma Zamanı C++ şablon kitaplığının,
 [Nasıl yapılır: Windows Çalışma Zamanı bileşenini etkinleştirme ve kullanma](how-to-activate-and-use-a-windows-runtime-component-using-wrl.md)<br/>
 Windows Çalışma Zamanı başlatmak ve Windows Çalışma Zamanı bileşenini etkinleştirmek C++ ve kullanmak için Windows çalışma zamanı şablon kitaplığının nasıl kullanılacağını gösterir.
 
-[Nasıl yapılır: Zaman uyumsuz Işlemleri tamamlamayı](how-to-complete-asynchronous-operations-using-wrl.md)<br/>
+[Nasıl yapılır: zaman uyumsuz Işlemleri tamamlar](how-to-complete-asynchronous-operations-using-wrl.md)<br/>
 Zaman uyumsuz işlemleri başlatmak ve işlemler C++ tamamlandığında iş gerçekleştirmek için Windows çalışma zamanı şablon kitaplığının nasıl kullanılacağını gösterir.
 
-[Nasıl yapılır: Olayları işle](how-to-handle-events-using-wrl.md)<br/>
+[Nasıl yapılır: olayları Işleme](how-to-handle-events-using-wrl.md)<br/>
 Bir Windows Çalışma Zamanı nesnesinin olaylarına abone olmak C++ ve olayları işlemek için Windows çalışma zamanı şablon kitaplığının nasıl kullanılacağını gösterir.
 
 [İzlenecek yol: WRL ve Medya Altyapısı kullanarak UWP uygulaması oluşturma](walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation.md)<br/>
 [Microsoft medya altyapısı](/windows/win32/medfound/microsoft-media-foundation-sdk)kullanan bir UWP uygulaması oluşturmayı öğrenin.
 
-[Nasıl yapılır: Klasik bir COM bileşeni oluşturma](how-to-create-a-classic-com-component-using-wrl.md)<br/>
+[Nasıl yapılır: klasik bir COM bileşeni oluşturma](how-to-create-a-classic-com-component-using-wrl.md)<br/>
 Temel bir COM bileşeni oluşturmak için C++ Windows çalışma zamanı şablon kitaplığının ve bir masaüstü uygulamasından com bileşenini kaydetmek ve kullanmak için temel bir yol gösterir.
 
 [Nasıl yapılır: Doğrudan WRL Bileşenlerinin Örneğini Oluşturma](how-to-instantiate-wrl-components-directly.md)<br/>
@@ -64,16 +64,16 @@ Temel bir COM bileşeni oluşturmak için C++ Windows çalışma zamanı şablon
 [Nasıl yapılır: Windows meta verilerinden .h dosyaları oluşturmak için winmdidl.exe ve midlrt.exe programını kullanma](use-winmdidl-and-midlrt-to-create-h-files-from-windows-metadata.md)<br/>
 . Winmd meta verilerinden bir IDL dosyası oluşturarak WRL 'den özel Windows Çalışma Zamanı bileşenlerini nasıl kullanacağınızı gösterir.
 
-[İzlenecek yol: Görevleri ve XML HTTP İsteklerini Kullanarak Bağlanma](../../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md)<br/>
+[İzlenecek Yol: Görevleri ve XML HTTP İsteklerini Kullanarak Bağlanma](../../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md)<br/>
 UWP uygulamasındaki bir Web hizmetine HTTP GET ve POST istekleri göndermek için [IXMLHTTPRequest2](/windows/win32/api/msxml6/nn-msxml6-ixmlhttprequest2) ve [IXMLHTTPRequest2Callback](/windows/win32/api/msxml6/nn-msxml6-ixmlhttprequest2callback) arabirimlerinin görevlerle birlikte nasıl kullanılacağını gösterir.
 
 [Bing Haritalar seyahat Iyileştirici örneği](https://code.msdn.microsoft.com/Bing-Maps-trip-optimizer-c4e037f7)<br/>
-Yönergede tanımlanan sınıfı kullanır: `HttpRequest` [ Görevleri ve XML http isteklerini](../../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md) bir bütün UWP uygulaması bağlamında kullanarak bağlanma.
+, [Izlenecek yol: görevleri ve XML http Isteklerini kullanarak](../../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md) BIR bütün UWP uygulaması bağlamında tanımlanan `HttpRequest` sınıfını kullanır.
 
 [C++ ÖRNEKLE Windows çalışma zamanı dll bileşeni oluşturma](https://code.msdn.microsoft.com/windowsapps/Creating-a-Windows-Runtime-6c399797)<br/>
 İşlem içi DLL bileşeni oluşturmak ve C++ bunu C++/CX, JavaScript ve ile C#kullanmak için Windows çalışma zamanı şablon kitaplığının nasıl kullanılacağını gösterir.
 
-[DirectX mermer Maze oyun örneği](https://code.msdn.microsoft.com/windowsapps/DirectX-Marble-Maze-Game-e4806345)<br/>
+[DirectX mermer Maze oyun örneği](https://docs.microsoft.com/samples/microsoft/windows-appsample-marble-maze/directx-marble-maze-game-sample/)<br/>
 DirectX gibi COM bileşenlerinin ömrünü yönetmek C++ ve tam 3-b oyun bağlamında Medya Altyapısı için Windows çalışma zamanı şablon kitaplığının nasıl kullanılacağını gösterir.
 
 [Masaüstü uygulamaları örneğinden bildirimler gönderme](https://code.msdn.microsoft.com/windowsdesktop/Sending-toast-notifications-71e230a2)<br/>
@@ -85,7 +85,7 @@ Windows Çalışma Zamanı C++ şablon kitaplığı, küçük ve hızlı com nes
 
 Windows Çalışma Zamanı C++ şablon KITAPLıĞı, UWP uygulamaları IÇIN gerekli com işlevlerini destekler. Bu nedenle, ATL 'den farklıdır çünkü şu şekilde COM özellikleri için doğrudan desteği atlar:
 
-- Toplama
+- toplama
 
 - hisse senedi uygulamaları
 
@@ -109,23 +109,23 @@ Windows Çalışma Zamanı C++ şablon kitaplığı, birkaç temel kavramı tems
 
 ### <a name="comptr"></a>ComPtr
 
-[ComPtr](comptr-class.md) , şablon parametresi tarafından belirtilen arabirimi temsil eden *akıllı bir işaretçi* türüdür. Arabiriminden `ComPtr` türetilmiş bir nesnenin üyelerine erişebilen bir değişken bildirmek için kullanın. `ComPtr`, temel alınan arabirim işaretçisi için bir başvuru sayısını otomatik olarak tutar ve başvuru sayısı sıfıra gittiğinde arabirimi serbest bırakır.
+[ComPtr](comptr-class.md) , şablon parametresi tarafından belirtilen arabirimi temsil eden *akıllı bir işaretçi* türüdür. Arabiriminden türetilmiş bir nesnenin üyelerine erişebilen bir değişken bildirmek için `ComPtr` kullanın. `ComPtr`, temel alınan arabirim işaretçisi için otomatik olarak bir başvuru sayısı tutar ve başvuru sayısı sıfıra gittiğinde arabirimi yayınlar.
 
 ### <a name="runtimeclass"></a>RuntimeClass
 
-[RuntimeClass](runtimeclass-class.md) , belirtilen arabirimlerin kümesini devralan bir örneklenmiş sınıfı temsil eder. Bir `RuntimeClass` nesne, bir veya daha fazla Windows çalışma zamanı com arabirimi veya bir bileşene zayıf bir başvuru için destek bileşimini sağlayabilir.
+[RuntimeClass](runtimeclass-class.md) , belirtilen arabirimlerin kümesini devralan bir örneklenmiş sınıfı temsil eder. Bir `RuntimeClass` nesnesi, bir veya daha fazla Windows Çalışma Zamanı COM arabirimine yönelik destek bileşimini veya bir bileşene zayıf bir başvuruyu sağlayabilir.
 
 ### <a name="module"></a>Modül
 
-[Modül](module-class.md) bir ilişkili nesneler koleksiyonunu temsil eder. Nesne `Module` , diğer uygulamaların bir nesne kullanmasına olanak sağlayan sınıf fabrikalarını, nesneleri ve kaydı oluşturan bir yönetir.
+[Modül](module-class.md) bir ilişkili nesneler koleksiyonunu temsil eder. Bir `Module` nesnesi, diğer uygulamaların bir nesne kullanmasına olanak tanıyan nesne ve kayıt oluşturan sınıf fabrikalarını yönetir.
 
 ### <a name="callback"></a>Callback
 
-[Geri çağırma](callback-function-wrl.md) işlevi, üye işlevi bir olay işleyicisi (bir geri çağırma yöntemi) olan bir nesne oluşturur. Zaman uyumsuz işlemler yazmak için işlevinikullanın.`Callback`
+[Geri çağırma](callback-function-wrl.md) işlevi, üye işlevi bir olay işleyicisi (bir geri çağırma yöntemi) olan bir nesne oluşturur. Zaman uyumsuz işlemler yazmak için `Callback` işlevini kullanın.
 
 ### <a name="eventsource"></a>EventSource
 
-[EventSource](eventsource-class.md) , *temsilci* olay işleyicilerini yönetmek için kullanılır. Bir temsilci C++ uygulamak için Windows çalışma zamanı Şablon kitaplığı kullanın ve temsilcileri eklemek `EventSource` , kaldırmak ve çağırmak için kullanın.
+[EventSource](eventsource-class.md) , *temsilci* olay işleyicilerini yönetmek için kullanılır. Bir temsilci C++ uygulamak için Windows çalışma zamanı Şablon kitaplığı kullanın ve temsilcileri eklemek, kaldırmak ve çağırmak için `EventSource` kullanın.
 
 ### <a name="asyncbase"></a>AsyncBase
 
@@ -133,13 +133,13 @@ Windows Çalışma Zamanı C++ şablon kitaplığı, birkaç temel kavramı tems
 
 ### <a name="ftmbase"></a>FtmBase
 
-[FtmBase](ftmbase-class.md) , serbest iş parçacıklı Sıralayıcı nesnesini temsil eder. `FtmBase`genel bir arabirim tablosu (GIT) oluşturur ve sıralama ve proxy nesnelerinin yönetilmesine yardımcı olur.
+[FtmBase](ftmbase-class.md) , serbest iş parçacıklı Sıralayıcı nesnesini temsil eder. `FtmBase`, genel bir arabirim tablosu (GIT) oluşturur ve sıralama ve proxy nesnelerinin yönetilmesine yardımcı olur.
 
 ### <a name="weakref"></a>WeakRef
 
-[WeakRef](weakref-class.md) , erişilebilir olabilecek veya erişilemeyen bir nesneye başvuran *zayıf bir başvuruyu*temsil eden bir akıllı işaretçi türüdür. Bir `WeakRef` nesne, klasik com tarafından değil yalnızca Windows çalışma zamanı tarafından kullanılabilir.
+[WeakRef](weakref-class.md) , erişilebilir olabilecek veya erişilemeyen bir nesneye başvuran *zayıf bir başvuruyu*temsil eden bir akıllı işaretçi türüdür. `WeakRef` nesnesi, klasik COM tarafından değil yalnızca Windows Çalışma Zamanı tarafından kullanılabilir.
 
-Bir `WeakRef` nesne, genellikle varlığı bir dış iş parçacığı veya uygulama tarafından denetlenen bir nesneyi temsil eder. Örneğin, bir `WeakRef` nesnesi bir dosya nesnesine başvurabilir. Dosya açıkken, `WeakRef` geçerli olur ve başvurulan dosya erişilebilir olur. Ancak dosya kapatıldığında `WeakRef` , geçersizdir ve dosyaya erişilemez.
+`WeakRef` nesnesi genellikle varlığı bir dış iş parçacığı veya uygulama tarafından denetlenen bir nesneyi temsil eder. Örneğin, bir `WeakRef` nesnesi bir dosya nesnesine başvurabilir. Dosya açıkken `WeakRef` geçerli olur ve başvurulan dosya erişilebilir olur. Ancak dosya kapalıyken `WeakRef` geçersiz olur ve dosyaya erişilemez.
 
 ## <a name="related-topics"></a>İlgili Konular
 

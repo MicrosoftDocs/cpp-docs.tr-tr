@@ -15,7 +15,7 @@ ms.locfileid: "74398120"
 ---
 # <a name="listmacroall"></a>.LISTMACROALL
 
-Starts listing of all statements in macros.
+Makrolardaki tüm deyimlerin dökümünü başlatır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -23,8 +23,8 @@ Starts listing of all statements in macros.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Same as [.LALL](../../assembler/masm/dot-lall.md).
+Aynı [. LALL](../../assembler/masm/dot-lall.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Directives reference](directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)

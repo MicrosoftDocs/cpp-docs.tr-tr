@@ -15,7 +15,7 @@ ms.locfileid: "74398183"
 ---
 # <a name="list"></a>.LIST
 
-Starts listing of statements.
+Deyimlerin dökümünü başlatır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -27,4 +27,4 @@ Bu varsayılandır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Directives reference](directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)

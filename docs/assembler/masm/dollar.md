@@ -15,7 +15,7 @@ ms.locfileid: "74398764"
 ---
 # <a name=""></a>$
 
-The current value of the location counter.
+Konum sayacının geçerli değeri.
 
 ## <a name="syntax"></a>Sözdizimi
 

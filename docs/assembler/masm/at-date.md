@@ -13,14 +13,14 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74399137"
 ---
-# <a name="date"></a>\@Date
+# <a name="date"></a>\@tarihi
 
-The system date in the format mm/dd/yy (text macro).
+Aa/gg/yy biçiminde sistem tarihi (Metin makrosu).
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **\@Date**
+> **\@tarihi**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Symbols reference](symbols-reference.md)
+[Semboller başvurusu](symbols-reference.md)

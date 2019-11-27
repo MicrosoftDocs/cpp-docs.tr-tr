@@ -15,7 +15,7 @@ ms.locfileid: "74397659"
 ---
 # <a name="endm"></a>ENDM
 
-Terminates a macro or repeat block.
+Bir makro veya yineleme bloğunu sonlandırır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -23,8 +23,8 @@ Terminates a macro or repeat block.
 
 ## <a name="remarks"></a>Açıklamalar
 
-See [MACRO](../../assembler/masm/macro.md), [FOR](../../assembler/masm/for-masm.md), [FORC](../../assembler/masm/forc.md), [REPEAT](../../assembler/masm/repeat.md), or [WHILE](while-masm.md).
+Bkz. [makro](../../assembler/masm/macro.md), [for](../../assembler/masm/for-masm.md), [forc](../../assembler/masm/forc.md), [yineleme](../../assembler/masm/repeat.md)veya [WHILE](while-masm.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Directives reference](directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)

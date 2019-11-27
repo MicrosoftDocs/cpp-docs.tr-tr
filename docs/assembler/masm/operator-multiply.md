@@ -19,12 +19,12 @@ ms.locfileid: "74396625"
 ---
 # <a name="operator-"></a>\* işleci
 
-Returns *expression1* times *expression2*.
+*İfade1* zaman *İfade2*döndürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> *expression1* __\*__ *expression2*
+> *ifade1* __\*__ *İfade2*
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Operators reference](operators-reference.md)
+[İşleçler başvurusu](operators-reference.md)

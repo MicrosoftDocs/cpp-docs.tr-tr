@@ -13,20 +13,20 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74399262"
 ---
-# <a name="assume-32-bit-masm"></a>ASSUME (32-bit MASM)
+# <a name="assume-32-bit-masm"></a>VARSAY (32-bit Masz)
 
-Enables error checking for register values. (32-bit MASM only.)
+Kayıt değerlerinin hata denetimini sunar. (yalnızca 32-bit masa.)
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **ASSUME**  *segregister* __:__ *name* ⟦ __,__ *segregister* __:__ *name*...⟧\
-> **ASSUME**  *dataregister* __:__ *type* ⟦ __,__ *dataregister* __:__ *type*...⟧\
-> **ASSUME**  *register* __:ERROR__ ⟦ __,__ *register* __:ERROR__...⟧\
-> **ASSUME**  ⟦*register* __:__ ⟧**NOTHING** ⟦ __,__ *register* __:NOTHING__...⟧
+> *Segregister*__varsay:__ *Name* ⟦ __,__ *segregister* __:__ *Name*... ⟧\
+> *Dataregister* __:__ *Type* ⟦ __,__ *dataregister* __:__ *Type*... ⟧\
+> *Kayıt*varsay __: hata__ ⟦ __,__ *kayıt* __: hata__... ⟧\
+> **⟦** *Register* __:__ ⟧**nothıng** ⟦ __,__ *yazmaç* __: nothıng__... ⟧
 
 ## <a name="remarks"></a>Açıklamalar
 
-After an **ASSUME** is put into effect, the assembler watches for changes to the values of the given registers. **ERROR** generates an error if the register is used. **NOTHING** removes register error checking. You can combine different kinds of assumptions in one statement.
+Bir **varsay** etkin olduktan sonra, derleyici verilen yazmaçların değerlerine yapılan değişiklikleri izler. Kayıt kullanılırsa **hata** oluşturur. **Hiçbir şey** kaydetme hata denetimini siler. Tek bir ifadede farklı tür varsayımları birleştirebilirsiniz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

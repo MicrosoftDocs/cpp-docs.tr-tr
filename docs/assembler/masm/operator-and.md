@@ -17,11 +17,11 @@ ms.locfileid: "74397107"
 ---
 # <a name="operator-and"></a>AND işleci
 
-Returns the result of a bitwise AND operation for *expression1* and *expression2*.
+*İfade1* ve *İfade2*için bit düzeyinde ve işlemin sonucunu döndürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> *expression1* **AND** *expression2*
+> *İfade1* **ve** *İfade2*
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

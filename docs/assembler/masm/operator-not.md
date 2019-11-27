@@ -16,12 +16,12 @@ ms.locfileid: "74396590"
 ---
 # <a name="operator-not"></a>NOT işleci
 
-Returns *expression* with all bits reversed.
+Tüm bitleri ters çevrilen bir *ifade* döndürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **NOT** *expression*
+> **Not** *ifadesi*
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Operators reference](operators-reference.md)
+[İşleçler başvurusu](operators-reference.md)

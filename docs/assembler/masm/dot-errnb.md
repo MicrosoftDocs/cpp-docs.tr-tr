@@ -15,11 +15,11 @@ ms.locfileid: "74398328"
 ---
 # <a name="errnb"></a>.ERRNB
 
-Generates an error if *textitem* is not blank.
+*Textıtem* boş değilse bir hata oluşturur.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **.ERRNB** *textitem* ⟦ __,__ *message*⟧
+> **. Errnb** *textıtem* ⟦ __,__ *Message*⟧
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

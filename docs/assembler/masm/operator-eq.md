@@ -17,12 +17,12 @@ ms.locfileid: "74397005"
 ---
 # <a name="operator-eq"></a>EQ işleci
 
-Returns true (-1) if *expression1* equals *expression2*, or returns false (0) if it does not.
+*İfade1* değeri *Deyim2*eşitse true (-1), veya değilse false (0) döndürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> *expression1* **EQ** *expression2*
+> *İfade1* **EQ** *İfade2*
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Operators reference](operators-reference.md)
+[İşleçler başvurusu](operators-reference.md)

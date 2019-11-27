@@ -15,18 +15,18 @@ ms.locfileid: "74397248"
 ---
 # <a name="local-masm"></a>LOCAL (MASM)
 
-In the first directive, within a macro, **LOCAL** defines labels that are unique to each instance of the macro.
+İlk yönergede, bir makro içinde **Yerel** , makronun her bir örneği için benzersiz olan Etiketler tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **LOCAL** *localname* ⟦, *localname* ...⟧
+> **Yerel** *LocalName* ⟦, *LocalName* ... ⟧
 >
-> **LOCAL** *label* ⟦ __\[__ *count* __]__ ⟧ ⟦ __:__ *type*⟧ ⟦ __,__ *label* ⟦ __\[__ *count* __]__ ⟧ ⟦*type*⟧ ...⟧
+> **Yerel** *etiket* ⟦ __\[__ *Count* __]__ ⟧ ⟦ __:__ *Type*⟧ ⟦ __,__ *etiket* ⟦ __\[__ *Count* __]__ ⟧ ⟦*tür*⟧... ⟧
 
 ## <a name="remarks"></a>Açıklamalar
 
-In the second directive, within a procedure definition (**PROC**), **LOCAL** creates stack-based variables that exist for the duration of the procedure. The *label* may be a simple variable or an array containing *count* elements.
+İkinci yönergede, bir yordam tanımında (**proc**), **Yerel** , yordam süresince var olan yığın tabanlı değişkenler oluşturur. *Etiket* basit bir değişken veya *Count* öğeleri içeren bir dizi olabilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Directives reference](directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)

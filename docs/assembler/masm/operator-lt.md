@@ -17,12 +17,12 @@ ms.locfileid: "74396669"
 ---
 # <a name="operator-lt"></a>LT işleci
 
-Returns true (-1) if *expression1* is less than *expression2*, or returns false (0) if it is not.
+*İfade1* *İfade2*' den küçükse true (-1) döndürür veya değilse false (0) döndürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> *expression1* **LT** *expression2*
+> *İfade1* **lt** *İfade2*
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Operators reference](operators-reference.md)
+[İşleçler başvurusu](operators-reference.md)

@@ -6,20 +6,20 @@ f1_keywords:
 helpviewer_keywords:
 - C4208
 ms.assetid: 5cb0a36e-3fb5-422f-a5f9-e40b70776c27
-ms.openlocfilehash: 11c6b1ad50c44ac4ad2a9d014e57efef097d9d8b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e15140bd2f0983bde64c89a054fd733d1ab902ac
+ms.sourcegitcommit: 3ee06ec53153cf21910fc8cfef78a4f25f9633f3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62401183"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74541861"
 ---
 # <a name="compiler-warning-level-4-c4208"></a>Derleyici Uyarısı (düzey 4) C4208
 
-Standart olmayan uzantı kullanıldı: delete [ifade] - exp Hesaplandı ancak yoksayıldı
+Standart olmayan uzantı kullanıldı: delete [exp]-exp değerlendirildi ancak yoksayıldı
 
-Microsoft Uzatmaları (/Ze) ile parantez içinde bir değer kullanarak bir diziye silebilirsiniz [delete işleci](../../cpp/delete-operator-cpp.md). Değer yoksayılır.
+Microsoft uzantıları (/Ze) ile, [delete işleci](../../cpp/delete-operator-cpp.md)ile köşeli ayraç içindeki bir değeri kullanarak bir diziyi silebilirsiniz. Değer yok sayılır.
 
-```
+```cpp
 // C4208.cpp
 // compile with: /W4
 int main()
@@ -31,4 +31,4 @@ int main()
 }
 ```
 
-ANSI Uyumluluğu altında böyle değerler geçersizdir ([/Za](../../build/reference/za-ze-disable-language-extensions.md)).
+Bu değerler, ANSI uyumluluğu ([/za](../../build/reference/za-ze-disable-language-extensions.md)) altında geçersizdir.

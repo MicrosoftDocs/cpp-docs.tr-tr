@@ -1,31 +1,31 @@
 ---
-title: Derleyici Uyarısı (Düzey 3) C4823
+title: Derleyici Uyarısı (düzey 3) C4823
 ms.date: 11/04/2016
 f1_keywords:
 - C4823
 helpviewer_keywords:
 - C4823
 ms.assetid: 8a77560d-dcea-4cae-aebb-8ebf1b4cef85
-ms.openlocfilehash: 28d490c341c4d14c2e6c03e13007b5a8be423622
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a96877252b0b7699f5e4033f8e695f4d9016a6c9
+ms.sourcegitcommit: 3ee06ec53153cf21910fc8cfef78a4f25f9633f3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62401546"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74541262"
 ---
-# <a name="compiler-warning-level-3-c4823"></a>Derleyici Uyarısı (Düzey 3) C4823
+# <a name="compiler-warning-level-3-c4823"></a>Derleyici Uyarısı (düzey 3) C4823
 
-'function': kullanır ancak sabitleme işaretçileri geriye doğru izlenen semantik etkin değil. / Eha kullanmayı düşünün
+' function ': sabitleme işaretçileri kullanır, ancak geriye doğru izleme semantiği etkin değildir. /EHa kullanmayı düşünün
 
-Yönetilen yığındaki bir blok kapsamı içinde bildirilen bir sabitleme işaretçisi tarafından işaret edilen nesneyi çıkarmak için derleyici yerel sınıfların "gibi davranan sabitleme işaretçisi işaretçi nullifies bir yok Edicisi olan" yok ediciler davranışını taklit eder. Bir özel durum sonra bir yok edici bir çağrı etkinleştirmek için nesne geriye doğru izleme, kullanarak bunu etkinleştirmelisiniz [/ehsc](../../build/reference/eh-exception-handling-model.md).
+Bir blok kapsamında belirtilen sabitleme işaretçisi tarafından işaret edilen yönetilen yığında bir nesneyi çıkarmak için, derleyici yerel sınıfların yıkıcılarının davranışını taklit eder, "önceden tanımlanmış" sabitleme işaretçisi, işaretçiyi null eden bir yıkıcıya sahiptir. Bir özel durum oluşturduktan sonra bir yıkıcı çağrısını etkinleştirmek için, [/EHsc](../../build/reference/eh-exception-handling-model.md)kullanarak yapabileceğiniz nesne geri sarma özelliğini etkinleştirmeniz gerekir.
 
-El ile nesne kaldırın ve uyarıyı yok sayın.
+Ayrıca, nesneyi el ile de serbest bırakabilirsiniz ve uyarıyı yoksayabilirsiniz.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C4823 oluşturur.
+Aşağıdaki örnek C4823 oluşturur.
 
-```
+```cpp
 // C4823.cpp
 // compile with: /clr /W3 /EHa-
 using namespace System;

@@ -13,13 +13,13 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74398548"
 ---
-# <a name="continue-32-bit-masm"></a>.CONTINUE (32-bit MASM)
+# <a name="continue-32-bit-masm"></a>. DEVAM et (32-bit MASM)
 
-Generates code to jump to the top of a [.WHILE](../../assembler/masm/dot-while.md) or [.REPEAT](../../assembler/masm/dot-repeat.md) block if *condition* is true. (32-bit MASM only.)
+Bir öğesinin üst kısmına atlayan kodu üretir [. ](../../assembler/masm/dot-while.md)Veya sırasında [. ](../../assembler/masm/dot-repeat.md) *Koşul* doğru ise bloğu tekrarlayın. (yalnızca 32-bit masa.)
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **.CONTINUE** ⟦ **.IF** *condition*⟧
+> **. ⟦ DEVAM edın** **. If** *koşulu*⟧
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

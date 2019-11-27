@@ -15,7 +15,7 @@ ms.locfileid: "74399157"
 ---
 # <a name="curseg"></a>\@CurSeg
 
-The name of the current segment (text macro).
+Geçerli segmentin adı (Metin makrosu).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -23,4 +23,4 @@ The name of the current segment (text macro).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Symbols reference](symbols-reference.md)
+[Semboller başvurusu](symbols-reference.md)

@@ -13,14 +13,14 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74398886"
 ---
-# <a name="version"></a>\@Version
+# <a name="version"></a>\@sürümü
 
-The major and minor version of MASM reported at the command line, as a single number (text macro). For example, MASM version 14.23.28107.0 produces "1423".
+Masd 'nin ana ve alt sürümü tek bir sayı (Metin makrosu) olarak komut satırında raporlanır. Örneğin MASı sürüm 14.23.28107.0 "1423" üretir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **\@Version**
+> **\@sürümü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Symbols reference](symbols-reference.md)
+[Semboller başvurusu](symbols-reference.md)

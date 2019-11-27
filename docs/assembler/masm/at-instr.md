@@ -15,12 +15,12 @@ ms.locfileid: "74399029"
 ---
 # <a name="instr"></a>\@InStr
 
-Macro function that finds the first occurrence of *string2* in *string1*, beginning at *position* within *string1*. If *position* does not appear, search begins at start of *string1*. Returns a position integer or 0 if *string2* is not found.
+*Dize1 içinde,* *Dize1*içindeki *konumdan* başlayarak ilk *dize2* olayını bulan makro işlevi. *Konum* görünmezse, arama *Dize1*başlangıcında başlar. *Dize2* bulunmazsa bir konum tamsayı veya 0 döndürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **\@InStr(** ⟦*position*⟧ __,__ *string1* __,__ *string2* **)**
+> **\@InStr (** ⟦*Position*⟧ __,__ *Dize1* __,__ *dize2* **)**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Symbols reference](symbols-reference.md)
+[Semboller başvurusu](symbols-reference.md)

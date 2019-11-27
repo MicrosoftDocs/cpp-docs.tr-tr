@@ -15,7 +15,7 @@ ms.locfileid: "74398081"
 ---
 # <a name="nolist"></a>.NOLIST
 
-Suppresses program listing.
+Program listesini gizler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -23,8 +23,8 @@ Suppresses program listing.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Same as [.XLIST](../../assembler/masm/dot-xlist.md).
+Aynı [. XLIST](../../assembler/masm/dot-xlist.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Directives reference](directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)

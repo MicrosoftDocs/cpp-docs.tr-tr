@@ -15,11 +15,11 @@ ms.locfileid: "74398312"
 ---
 # <a name="errndef"></a>.ERRNDEF
 
-Generates an error if *name* has not been defined.
+*Ad* tanımlanmamışsa bir hata oluşturur.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **.ERRNDEF** *name* ⟦ __,__ *message*⟧
+> **. Errndef** *Name* ⟦ __,__ *Message*⟧
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

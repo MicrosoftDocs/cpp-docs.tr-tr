@@ -15,15 +15,15 @@ ms.locfileid: "74398767"
 ---
 # <a name="df"></a>DF
 
-Allocates and optionally initializes 6 bytes of storage for each *initializer*. **DF** is a synonym of [FWORD](../../assembler/masm/fword.md).
+Her *Başlatıcı*için 6 baytlık depolamayı ayırır ve isteğe bağlı olarak başlatır. **Df** , [fword](../../assembler/masm/fword.md)'ün bir eş anlamlısıdır.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> ⟦*name*⟧ **DF** *initializer* ⟦ __,__ *initializer* ...⟧
+> ⟦*Name*⟧ **df** *Başlatıcı* ⟦ __,__ *Başlatıcı* ... ⟧
 
 ## <a name="remarks"></a>Açıklamalar
 
-Also can be used as a type specifier anywhere a type is legal.
+Ayrıca, türün geçerli olduğu her yerde tür belirleyicisi olarak da kullanılabilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

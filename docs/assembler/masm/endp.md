@@ -15,16 +15,16 @@ ms.locfileid: "74397637"
 ---
 # <a name="endp"></a>ENDP
 
-Marks the end of procedure *name* previously begun with **PROC**.
+Yordam *adının* sonunu daha önce **proc**ile başlamış olarak işaretler.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> *name* **ENDP**
+> *ad* **endp**
 
 ## <a name="remarks"></a>Açıklamalar
 
-See [PROC](../../assembler/masm/proc.md).
+Bkz. [proc](../../assembler/masm/proc.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Directives reference](directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)

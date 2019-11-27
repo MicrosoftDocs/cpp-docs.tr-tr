@@ -15,12 +15,12 @@ ms.locfileid: "74397142"
 ---
 # <a name="name-masm"></a>NAME (MASM)
 
-Ignored.
+LIP.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **NAME**
+> **ADA**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Directives reference](directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)

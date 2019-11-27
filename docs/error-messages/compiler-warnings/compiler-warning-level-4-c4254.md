@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C4254
 ms.assetid: c7dcef24-d535-4c98-bb41-fc3d2b88fd11
-ms.openlocfilehash: 925428cffae37ea26144e5b550cbc7988b33ef01
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 33b3ba795acb8c72c7d1630071aa2884b6137464
+ms.sourcegitcommit: 3ee06ec53153cf21910fc8cfef78a4f25f9633f3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62400987"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74541936"
 ---
 # <a name="compiler-warning-level-4-c4254"></a>Derleyici Uyarısı (düzey 4) C4254
 
-'operator': 'type1' öğesinden 'type2', olası veri kaybı dönüştürme
+' operator ': ' type1 ' değerinden ' type2 ' öğesine dönüştürme, olası veri kaybı
 
-Daha büyük bir bit alanı, daha küçük bir bit alanına atandı. Veri kaybı olabilir.
+Daha büyük bir bit alanı daha küçük bir bit alanına atandı. Veri kaybı olabilir.
 
-Varsayılan olarak bu uyarıyı kapalıdır. Bkz: [derleyici uyarıları emin olan kapalı varsayılan](../../preprocessor/compiler-warnings-that-are-off-by-default.md) daha fazla bilgi için.
+Bu uyarı varsayılan olarak kapalıdır. Daha fazla bilgi için bkz. [Varsayılan olarak kapalı olan Derleyici uyarıları](../../preprocessor/compiler-warnings-that-are-off-by-default.md) .
 
-Aşağıdaki örnek için C4254 oluşturur:
+Aşağıdaki örnek C4254 oluşturur:
 
-```
+```cpp
 // C4254.cpp
 // compile with: /W4
 #pragma warning(default: 4254)

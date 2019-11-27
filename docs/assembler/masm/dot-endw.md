@@ -13,7 +13,7 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74398451"
 ---
-# <a name="endw-32-bit-masm"></a>.ENDW (32-bit MASM)
+# <a name="endw-32-bit-masm"></a>. ENDW (32-bit Mask)
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -21,7 +21,7 @@ ms.locfileid: "74398451"
 
 ## <a name="remarks"></a>Açıklamalar
 
-(32-bit MASM only.) See [.WHILE](../../assembler/masm/dot-while.md).
+(yalnızca 32-bit masa.) Bkz [. WHILE](../../assembler/masm/dot-while.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

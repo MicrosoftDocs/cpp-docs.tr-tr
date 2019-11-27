@@ -16,12 +16,12 @@ ms.locfileid: "74395522"
 ---
 # <a name="operator-sizeof"></a>SIZEOF işleci
 
-Returns the number of bytes in *variable* or *type*.
+*Değişken* veya *tür*içindeki bayt sayısını döndürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **SIZEOF** {*variable* | *type*}
+> **SIZEOF** {*Variable* | *türü*}
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Operators reference](operators-reference.md)
+[İşleçler başvurusu](operators-reference.md)

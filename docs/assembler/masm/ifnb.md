@@ -15,16 +15,16 @@ ms.locfileid: "74397366"
 ---
 # <a name="ifnb"></a>IFNB
 
-Grants assembly if *textitem* is not blank.
+*Textıtem* boş değilse derlemeye izin verir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **IFNB** *textitem*
+> **Ifnb** *textıtem*
 
 ## <a name="remarks"></a>Açıklamalar
 
-See [IF](../../assembler/masm/if-masm.md) for complete syntax.
+Sözdiziminin [tamamı için bkz](../../assembler/masm/if-masm.md) .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Directives reference](directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)

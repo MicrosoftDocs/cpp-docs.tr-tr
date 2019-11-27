@@ -17,17 +17,17 @@ ms.locfileid: "74397405"
 ---
 # <a name="ifdif-ifdifi"></a>IFDIF, IFDIFI
 
-Grants assembly if the text items are different.
+Metin öğeleri farklıysa derlemeye izin verir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **IFDIF** *textitem1* __,__ *textitem2*\
-> **IFDIFI** *textitem1* __,__ *textitem2*
+> **IDIF** *textitem1* __,__ *textitem2*\
+> **Idifi** *textitem1* __,__ *textitem2*
 
 ## <a name="remarks"></a>Açıklamalar
 
-If **IFDIFI** is given, the comparison is case insensitive. See [IF](../../assembler/masm/if-masm.md) for complete syntax.
+**Ifdifi** verilirse, karşılaştırma büyük/küçük harfe duyarlıdır. Sözdiziminin [tamamı için bkz](../../assembler/masm/if-masm.md) .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Directives reference](../../assembler/masm/directives-reference.md)
+[Yönergeler başvurusu](../../assembler/masm/directives-reference.md)

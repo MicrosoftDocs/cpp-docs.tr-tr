@@ -15,12 +15,12 @@ ms.locfileid: "74398937"
 ---
 # <a name="sizestr"></a>\@SizeStr
 
-A macro function that returns the length of the given string. Returns an integer.
+Verilen dizenin uzunluğunu döndüren bir makro işlevi. Bir tamsayı döndürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **\@SizeStr(** *string* **)**
+> **\@SizeStr (** *dize* **)**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Symbols reference](symbols-reference.md)
+[Semboller başvurusu](symbols-reference.md)

@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C4211
 ms.assetid: 3eea3455-6faa-4cdb-8730-73db7026bd1f
-ms.openlocfilehash: 6d61191c4a7ed950d979158ccdfa3a390439b019
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6387f58430098e49e7add25e8915bf6b181634e9
+ms.sourcegitcommit: 3ee06ec53153cf21910fc8cfef78a4f25f9633f3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62401143"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74541838"
 ---
 # <a name="compiler-warning-level-4-c4211"></a>Derleyici Uyarısı (düzey 4) C4211
 
-Standart olmayan uzantı kullanıldı: extern, static yeniden tanımlandı
+Standart olmayan uzantı kullanıldı: extern, static olarak yeniden tanımlandı
 
-Varsayılan Microsoft uzantıları ile (/Ze), tanımlayabilirsiniz bir `extern` tanımlayıcı olarak **statik**.
+Varsayılan Microsoft uzantıları (/Ze) ile bir `extern` tanımlayıcıyı **statik**olarak yeniden tanımlayabilirsiniz.
 
 ## <a name="example"></a>Örnek
 
-```
+```c
 // C4211.c
 // compile with: /W4
 extern int i;
@@ -32,4 +32,4 @@ int main()
 }
 ```
 
-ANSI Uyumluluğu altında geçersiz tür yeniden tanımlaması ([/Za](../../build/reference/za-ze-disable-language-extensions.md)).
+Bu tür yeniden tanımlar, ANSI uyumluluğu ([/za](../../build/reference/za-ze-disable-language-extensions.md)) altında geçersizdir.

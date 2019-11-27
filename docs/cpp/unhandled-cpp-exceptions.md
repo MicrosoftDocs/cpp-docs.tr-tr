@@ -17,7 +17,7 @@ ms.locfileid: "74246061"
 ---
 # <a name="unhandled-c-exceptions"></a>İşlenilmeyen C++ özel durumları
 
-If a matching handler (or ellipsis **catch** handler) cannot be found for the current exception, the predefined `terminate` run-time function is called. (You can also explicitly call `terminate` in any of your handlers.) The default action of `terminate` is to call `abort`. `terminate`'in uygulamadan çıkmadan önce programınızda başka bir işlevi çağırmasını isterseniz, tek bağımsız değişkeni olarak çağrılacak işlevin adıyla birlikte `set_terminate`'i çağırın. Programınızın herhangi bir noktasında `set_terminate`'i çağırabilirsiniz. The `terminate` routine always calls the last function given as an argument to `set_terminate`.
+Geçerli özel durum için eşleşen bir işleyici (veya üç nokta **catch** işleyicisi) bulunamazsa, önceden tanımlı `terminate` çalışma zamanı işlevi çağrılır. (Ayrıca, İşleyicileriniz herhangi birinde `terminate` açıkça çağırabilirsiniz.) `terminate` varsayılan eylemi `abort`çağırmaz. `terminate`'in uygulamadan çıkmadan önce programınızda başka bir işlevi çağırmasını isterseniz, tek bağımsız değişkeni olarak çağrılacak işlevin adıyla birlikte `set_terminate`'i çağırın. Programınızın herhangi bir noktasında `set_terminate`'i çağırabilirsiniz. `terminate` yordamı her zaman `set_terminate`için bağımsız değişken olarak verilen son işlevi çağırır.
 
 ## <a name="example"></a>Örnek
 
@@ -46,7 +46,7 @@ int main() {
 }
 ```
 
-## <a name="output"></a>Çıkış
+## <a name="output"></a>Çıktı
 
 ```Output
 term_func was called by terminate.
@@ -56,4 +56,4 @@ term_func was called by terminate.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Modern C++ best practices for exceptions and error handling](../cpp/errors-and-exception-handling-modern-cpp.md)
+[Özel C++ durumlar ve hata işleme için modern en iyi uygulamalar](../cpp/errors-and-exception-handling-modern-cpp.md)

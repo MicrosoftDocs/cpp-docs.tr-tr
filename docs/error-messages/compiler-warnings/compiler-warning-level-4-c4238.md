@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C4238
 ms.assetid: 5d4051d3-7b0f-43ea-8c8d-d194bfdceb71
-ms.openlocfilehash: c5ffa07b06f010d10edc14aa7576bb614aa9dd04
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 982457ded987f6aee4f2891bbb7d9103b830cc99
+ms.sourcegitcommit: 3ee06ec53153cf21910fc8cfef78a4f25f9633f3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62401039"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74541785"
 ---
 # <a name="compiler-warning-level-4-c4238"></a>Derleyici Uyarısı (düzey 4) C4238
 
 Standart olmayan uzantı kullanıldı: sınıf rvalue değeri lvalue olarak kullanıldı
 
-Visual C++, Microsoft uzantıları önceki sürümleriyle uyumluluk için (**/Ze**), örtük veya açık olarak bir rvalue bir bağlamda, adresini alan gibi bir sınıf türü kullanmanıza izin verir. Aşağıdaki örnekte, gibi bazı durumlarda bu tehlikeli olabilir.
+Visual C++'ın önceki sürümleriyle uyumluluk için, Microsoft uzantıları ( **/ze**), adresini örtük veya açık olarak alan bir bağlamda bir rvalue olarak bir sınıf türü kullanmanıza imkan sağlar. Aşağıdaki örnekte olduğu gibi bazı durumlarda, bu tehlikeli olabilir.
 
 ## <a name="example"></a>Örnek
 
-```
+```cpp
 // C4238.cpp
 // compile with: /W4 /c
 struct C {
@@ -31,4 +31,4 @@ struct C {
 C * pC = &C();   // C4238
 ```
 
-Bu kullanım ANSI Uyumluluğu altında hataya neden olur ([/Za](../../build/reference/za-ze-disable-language-extensions.md)).
+Bu kullanım ANSI uyumluluğu ([/za](../../build/reference/za-ze-disable-language-extensions.md)) altında bir hataya neden olur.

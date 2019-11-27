@@ -13,14 +13,14 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74399179"
 ---
-# <a name="cpu"></a>\@Cpu
+# <a name="cpu"></a>\@CPU
 
-A bit mask specifying the processor mode (numeric equate).
+İşlemci modunu belirten bir bit maskesi (sayısal eşkarakter).
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **\@Cpu**
+> **\@CPU**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Symbols reference](symbols-reference.md)
+[Semboller başvurusu](symbols-reference.md)

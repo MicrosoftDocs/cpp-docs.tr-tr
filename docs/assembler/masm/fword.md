@@ -15,17 +15,17 @@ ms.locfileid: "74397504"
 ---
 # <a name="fword"></a>FWORD
 
-Allocates and optionally initializes 6 bytes of storage for each *initializer*.
+Her *Başlatıcı*için 6 baytlık depolamayı ayırır ve isteğe bağlı olarak başlatır.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> ⟦*name*⟧ **FWORD** *initializer* ⟦ __,__ *initializer* ...⟧
+> ⟦*Name*⟧ **fword** *başlatıcısı* ⟦ __,__ *Başlatıcı* ... ⟧
 
 ## <a name="remarks"></a>Açıklamalar
 
-Also can be used as a type specifier anywhere a type is legal.
+Ayrıca, türün geçerli olduğu her yerde tür belirleyicisi olarak da kullanılabilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Directives Reference](../../assembler/masm/directives-reference.md)\
+[Yönergeler başvurusu](../../assembler/masm/directives-reference.md)\
 [DF](../../assembler/masm/df.md)

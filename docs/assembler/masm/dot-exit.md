@@ -13,18 +13,18 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74398290"
 ---
-# <a name="exit-32-bit-masm"></a>.EXIT (32-bit MASM)
+# <a name="exit-32-bit-masm"></a>. ÇıK (32-bit masa)
 
-Generates termination code. (32-bit MASM only.)
+Sonlandırma kodu oluşturur. (yalnızca 32-bit masa.)
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **.EXIT** ⟦*expression*⟧
+> **. EXIT** ⟦*ifadesi*⟧
 
 ## <a name="remarks"></a>Açıklamalar
 
-Returns optional *expression* to shell.
+İsteğe bağlı *ifadeyi* Shell olarak döndürür.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Directives reference](directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)

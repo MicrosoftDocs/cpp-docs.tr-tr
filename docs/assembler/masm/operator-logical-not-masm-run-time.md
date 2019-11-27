@@ -1,5 +1,5 @@
 ---
-title: '! işleci (MASM Run Time)'
+title: '! işleci (Masa çalışma zamanı)'
 ms.date: 08/30/2018
 f1_keywords:
 - operator !
@@ -14,14 +14,14 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74396754"
 ---
-# <a name="operator--masm-run-time"></a>! işleci (MASM Run Time)
+# <a name="operator--masm-run-time"></a>! işleci (Masa çalışma zamanı)
 
-Logical negation. Used only within [.IF](../../assembler/masm/dot-if.md), [.WHILE](../../assembler/masm/dot-while.md), or [.REPEAT](../../assembler/masm/dot-repeat.md) blocks and evaluated at run time, not at assembly time.
+Mantıksal değilleme. Yalnızca içinde kullanılır [. Ise](../../assembler/masm/dot-if.md), [. Veya SıRASıNDA](../../assembler/masm/dot-while.md) [. Blokları YINELEYIN](../../assembler/masm/dot-repeat.md) ve derleme zamanında değil çalışma zamanında değerlendirilir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **!** *expression*
+> **!** *ifadesini*
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Operators reference](operators-reference.md)
+[İşleçler başvurusu](operators-reference.md)

@@ -15,15 +15,15 @@ ms.locfileid: "74398418"
 ---
 # <a name="err2"></a>.ERR2
 
-[.ERR](../../assembler/masm/dot-err.md) block evaluated on every assembly pass if **OPTION:SETIF2** is **TRUE.**
+[. ](../../assembler/masm/dot-err.md) **Seçenek: SETIF2** true ise, her derleme geçişinde hata bloğu değerlendirildi **.**
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **.ERR2** ⟦*message*⟧
+> **. ERR2** ⟦*iletisi*⟧
 
 ## <a name="remarks"></a>Açıklamalar
 
-For more information about 2-pass behavior in MASM 5.1 vs MASM 6.1, see [IF1 and IF2](if2.md).
+Masd 5,1 vs MAS5 6,1 ' de 2-pass davranışı hakkında daha fazla bilgi için bkz. [IF1 and IF2](if2.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

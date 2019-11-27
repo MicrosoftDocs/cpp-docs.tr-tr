@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C4255
 ms.assetid: 2087b635-4b4c-4182-8a01-c26770d2bb88
-ms.openlocfilehash: 1796e28e88bbe52c4c21ffdf0a8a96a278a44388
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7b64da554d6afbac4422c79ff593429ba90a4378
+ms.sourcegitcommit: 3ee06ec53153cf21910fc8cfef78a4f25f9633f3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62400974"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74541708"
 ---
 # <a name="compiler-warning-level-4-c4255"></a>Derleyici Uyarısı (düzey 4) C4255
 
-'function': hiçbir işlev prototipi verilmedi: '(') '(void)' olarak dönüştürülüyor
+' function ': hiçbir işlev prototipi verilmedi: ' () ', ' (void) ' olarak dönüştürülüyor
 
-Derleyici, işlev bağımsız değişkenlerinin açık bir listesi bulunamadı. Bu uyarı yalnızca C derleyicisi için değil.
+Derleyici, bir işleve bağımsız değişkenlerin açık bir listesini bulamadı. Bu uyarı yalnızca C derleyicisi içindir.
 
-Varsayılan olarak bu uyarıyı kapalıdır. Bkz: [derleyici uyarıları emin olan kapalı varsayılan](../../preprocessor/compiler-warnings-that-are-off-by-default.md) daha fazla bilgi için.
+Bu uyarı varsayılan olarak kapalıdır. Daha fazla bilgi için bkz. [Varsayılan olarak kapalı olan Derleyici uyarıları](../../preprocessor/compiler-warnings-that-are-off-by-default.md) .
 
-Aşağıdaki örnek, C4255 oluşturur:
+Aşağıdaki örnek C4255 oluşturur:
 
-```
+```c
 // C4255.c
 // compile with: /W4 /WX
 #pragma warning (default : 4255)

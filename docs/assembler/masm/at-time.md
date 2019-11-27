@@ -13,14 +13,14 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74398898"
 ---
-# <a name="time"></a>\@Time
+# <a name="time"></a>\@saat
 
-The system time in 24-hour hh:mm:ss format (text macro).
+24 saat hh: mm: ss biçiminde (Metin makrosu) sistem saati.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **\@Time**
+> **\@saat**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Symbols reference](symbols-reference.md)
+[Semboller başvurusu](symbols-reference.md)

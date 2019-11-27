@@ -15,12 +15,12 @@ ms.locfileid: "74393501"
 ---
 # <a name="substr"></a>SUBSTR
 
-Returns a substring of *textitem*, starting at *position*. The *textitem* can be a literal string, a constant preceded by a `%`, or the string returned by a macro function.
+*Konumundan*başlayarak *textıtem*'ın alt dizesini döndürür. *Textıtem* bir sabit dize, önünde bir `%`veya bir makro işlevi tarafından döndürülen dize olabilir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> *name* **SUBSTR** *textitem* __,__ *position* ⟦ __,__ *length*⟧
+> *ad* **substr** *textıtem* __,__ *konum* ⟦ __,__ *length*⟧
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Directives reference](../../assembler/masm/directives-reference.md)
+[Yönergeler başvurusu](../../assembler/masm/directives-reference.md)
