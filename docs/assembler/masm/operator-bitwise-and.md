@@ -1,5 +1,5 @@
 ---
-title: operator &amp;
+title: işleç &amp;
 ms.date: 08/30/2018
 f1_keywords:
 - '&'
@@ -16,13 +16,13 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74397094"
 ---
-# <a name="operator-amp"></a>operator &amp;
+# <a name="operator-amp"></a>işleç &amp;
 
-Bitwise **AND**. Used only within [.IF](../../assembler/masm/dot-if.md), [.WHILE](../../assembler/masm/dot-while.md), or [.REPEAT](../../assembler/masm/dot-repeat.md) blocks and evaluated at run time, not at assembly time.
+Bit düzeyinde **and**. Yalnızca içinde kullanılır [. Ise](../../assembler/masm/dot-if.md), [. Veya SıRASıNDA](../../assembler/masm/dot-while.md) [. Blokları YINELEYIN](../../assembler/masm/dot-repeat.md) ve derleme zamanında değil çalışma zamanında değerlendirilir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> *expression1* **&** *expression2*
+> *ifade1* **&** *İfade2*
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
