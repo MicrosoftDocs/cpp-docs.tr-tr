@@ -42,71 +42,71 @@ ms.locfileid: "74246724"
 ---
 # <a name="exception-handling-in-mfc"></a>MFC'de Özel Durum İşleme
 
-This article explains the exception-handling mechanisms available in MFC. Two mechanisms are available:
+Bu makalede, MFC 'de kullanılabilen özel durum işleme mekanizmaları açıklanmaktadır. İki mekanizma vardır:
 
-- C++ exceptions, available in MFC version 3.0 and later
+- C++özel durumlar, MFC sürüm 3,0 ve üzeri sürümlerde kullanılabilir
 
-- The MFC exception macros, available in MFC versions 1.0 and later
+- MFC özel durum makroları, 1,0 ve üzeri MFC sürümlerinde kullanılabilir
 
-If you're writing a new application using MFC, you should use the C++ mechanism. You can use the macro-based mechanism if your existing application already uses that mechanism extensively.
+MFC kullanarak yeni bir uygulama yazıyorsanız, C++ mekanizmasını kullanmanız gerekir. Mevcut uygulamanız zaten bu mekanizmayı yaygın olarak kullanıyorsa, makro tabanlı mekanizmayı kullanabilirsiniz.
 
-You can readily convert existing code to use C++ exceptions instead of the MFC exception macros. Advantages of converting your code and guidelines for doing so are described in the article [Exceptions: Converting from MFC Exception Macros](../mfc/exceptions-converting-from-mfc-exception-macros.md).
+Mevcut kodu MFC özel durum makroları yerine özel C++ durumlar kullanmak üzere kolayca dönüştürebilirsiniz. Kodunuzu ve yönergeleri dönüştürmenin avantajları, [özel durumlar: MFC özel durum makrolarından dönüştürme](../mfc/exceptions-converting-from-mfc-exception-macros.md)konusunda açıklanmaktadır.
 
-If you have already developed an application using the MFC exception macros, you can continue using these macros in your existing code, while using C++ exceptions in your new code. The article [Exceptions: Changes to Exception Macros in Version 3.0](../mfc/exceptions-changes-to-exception-macros-in-version-3-0.md) gives guidelines for doing so.
+MFC özel durum makrolarını kullanarak zaten bir uygulama geliştirdiyseniz, yeni kodunuzda özel durumlar kullanırken C++ , mevcut kodunuzda bu makroları kullanmaya devam edebilirsiniz. Makale [özel durumları: sürüm 3,0 ' deki özel durum Makrolarındaki Değişiklikler](../mfc/exceptions-changes-to-exception-macros-in-version-3-0.md) bu işlemi gerçekleştirmek için yönergeler sağlar.
 
 > [!NOTE]
->  To enable C++ exception handling in your code, select Enable C++ Exceptions on the Code Generation page in the C/C++ folder of the project's [Property Pages](../build/reference/property-pages-visual-cpp.md) dialog box, or use the [/EHsc](../build/reference/eh-exception-handling-model.md) compiler option.
+>  Kodunuzda özel C++ durum işlemeyi etkinleştirmek için, C++ projenin [Özellik sayfaları](../build/reference/property-pages-visual-cpp.md) Iletişim kutusunun C/C++ klasöründeki kod üretimi sayfasında özel durumları etkinleştir ' i seçin veya [/EHsc](../build/reference/eh-exception-handling-model.md) derleyici seçeneğini kullanın.
 
-This article covers the following topics:
+Bu makalede aşağıdaki konular ele alınmaktadır:
 
-- [When to use exceptions](#_core_when_to_use_exceptions)
+- [Özel durumlar ne zaman kullanılır?](#_core_when_to_use_exceptions)
 
-- [MFC exception support](#_core_mfc_exception_support)
+- [MFC özel durum desteği](#_core_mfc_exception_support)
 
-- [Further reading about exceptions](#_core_further_reading_about_exceptions)
+- [Özel durumlar hakkında daha fazla bilgi](#_core_further_reading_about_exceptions)
 
-##  <a name="_core_when_to_use_exceptions"></a> When to Use Exceptions
+##  <a name="_core_when_to_use_exceptions"></a>Özel durumlar ne zaman kullanılır?
 
-Three categories of outcomes can occur when a function is called during program execution: normal execution, erroneous execution, or abnormal execution. Each category is described below.
+Program yürütme sırasında bir işlev çağrıldığında üç sonuç kategorisi oluşabilir: normal yürütme, hatalı yürütme veya olağan dışı yürütme. Her kategori aşağıda açıklanmıştır.
 
-- Normal execution
+- Normal yürütme
 
-   The function may execute normally and return. Some functions return a result code to the caller, which indicates the outcome of the function. The possible result codes are strictly defined for the function and represent the range of possible outcomes of the function. The result code can indicate success or failure or can even indicate a particular type of failure that is within the normal range of expectations. For example, a file-status function can return a code that indicates that the file does not exist. Note that the term "error code" is not used because a result code represents one of many expected outcomes.
+   İşlev normal çalışabilir ve döndürebilir. Bazı işlevler, çağrı için işlevin sonucunu gösteren bir sonuç kodu döndürür. Olası sonuç kodları işlev için kesin olarak tanımlanmıştır ve işlevin olası sonuçlarının aralığını temsil eder. Sonuç kodu, başarılı veya başarısız olduğunu belirtebilir, hatta normal beklentiler aralığında olan belirli bir hata türünü gösterebilir. Örneğin, bir dosya durumu işlevi, dosyanın mevcut olmadığını belirten bir kod döndürebilir. Bir sonuç kodu beklenen birçok sonuçlardan birini temsil ettiğinden "hata kodu" teriminin kullanılmadığını unutmayın.
 
-- Erroneous execution
+- Hatalı yürütme
 
-   The caller makes some mistake in passing arguments to the function or calls the function in an inappropriate context. This situation causes an error, and it should be detected by an assertion during program development. (For more information on assertions, see [C/C++ Assertions](/visualstudio/debugger/c-cpp-assertions).)
+   Çağıran, işleve bağımsız değişken geçirmeli veya işlevi uygunsuz bir bağlamda çağıran bir hata oluşturur. Bu durum bir hataya neden olur ve program geliştirme sırasında bir onaylama tarafından algılanmalıdır. (Onaylamalar hakkında daha fazla bilgi için bkz. [C/C++ ](/visualstudio/debugger/c-cpp-assertions)onaylar.)
 
-- Abnormal execution
+- Olağan dışı yürütme
 
-   Abnormal execution includes situations where conditions outside the program's control, such as low memory or I/O errors, are influencing the outcome of the function. Abnormal situations should be handled by catching and throwing exceptions.
+   Olağan dışı yürütme, programın denetimi dışındaki koşullarda (düşük bellek veya g/ç hataları gibi) işlevin sonucunu etkili bir şekilde etkileyen durumlar içerir. Olağan dışı durumlar, özel durumlar yakalanarak ve oluşturulurken işlenmelidir.
 
-Using exceptions is especially appropriate for abnormal execution.
+Özel durumların kullanılması özellikle olağan dışı yürütme için uygundur.
 
-##  <a name="_core_mfc_exception_support"></a> MFC Exception Support
+##  <a name="_core_mfc_exception_support"></a>MFC özel durum desteği
 
-Whether you use the C++ exceptions directly or use the MFC exception macros, you will use [CException Class](../mfc/reference/cexception-class.md) or `CException`-derived objects that may be thrown by the framework or by your application.
+C++ Özel durumları doğrudan veya MFC özel durum makrolarını kullanarak, çerçeve veya uygulamanız tarafından oluşturulan [cexception sınıfını](../mfc/reference/cexception-class.md) veya `CException`türetilmiş nesneleri kullanırsınız.
 
-The following table shows the predefined exceptions provided by MFC.
+Aşağıdaki tabloda, MFC tarafından sunulan önceden tanımlanmış özel durumlar gösterilmektedir.
 
-|Özel durum sınıfı|Açıklama|
+|Özel durum sınıfı|Anlamı|
 |---------------------|-------------|
-|[CMemoryException Sınıfı](../mfc/reference/cmemoryexception-class.md)|Out-of-memory|
-|[CFileException Sınıfı](../mfc/reference/cfileexception-class.md)|File exception|
-|[CArchiveException Sınıfı](../mfc/reference/carchiveexception-class.md)|Archive/Serialization exception|
-|[CNotSupportedException Sınıfı](../mfc/reference/cnotsupportedexception-class.md)|Response to request for unsupported service|
-|[CResourceException Sınıfı](../mfc/reference/cresourceexception-class.md)|Windows resource allocation exception|
-|[CDaoException Sınıfı](../mfc/reference/cdaoexception-class.md)|Database exceptions (DAO classes)|
-|[CDBException Sınıfı](../mfc/reference/cdbexception-class.md)|Database exceptions (ODBC classes)|
+|[CMemoryException Sınıfı](../mfc/reference/cmemoryexception-class.md)|Bellek yetersiz|
+|[CFileException Sınıfı](../mfc/reference/cfileexception-class.md)|Dosya özel durumu|
+|[CArchiveException Sınıfı](../mfc/reference/carchiveexception-class.md)|Arşiv/serileştirme özel durumu|
+|[CNotSupportedException Sınıfı](../mfc/reference/cnotsupportedexception-class.md)|Desteklenmeyen hizmet isteğine yanıt|
+|[CResourceException Sınıfı](../mfc/reference/cresourceexception-class.md)|Windows kaynak ayırma özel durumu|
+|[CDaoException Sınıfı](../mfc/reference/cdaoexception-class.md)|Veritabanı özel durumları (DAO sınıfları)|
+|[CDBException Sınıfı](../mfc/reference/cdbexception-class.md)|Veritabanı özel durumları (ODBC sınıfları)|
 |[COleException Sınıfı](../mfc/reference/coleexception-class.md)|OLE özel durumları|
-|[COleDispatchException Sınıfı](../mfc/reference/coledispatchexception-class.md)|Dispatch (automation) exceptions|
-|[CUserException Sınıfı](../mfc/reference/cuserexception-class.md)|Exception that alerts the user with a message box, then throws a generic [CException Class](../mfc/reference/cexception-class.md)|
+|[COleDispatchException Sınıfı](../mfc/reference/coledispatchexception-class.md)|Dağıtım (Otomasyon) özel durumları|
+|[CUserException Sınıfı](../mfc/reference/cuserexception-class.md)|Kullanıcıyı bir ileti kutusuyla uyaran ve sonra genel bir [CException sınıfı](../mfc/reference/cexception-class.md) oluşturan özel durum|
 
-Since version 3.0, MFC has used C++ exceptions but still supports its older exception handling macros, which are similar to C++ exceptions in form. Although these macros are not recommended for new programming, they are still supported for backward compatibility. In programs that already use the macros, you can freely use C++ exceptions as well. During preprocessing, the macros evaluate to the exception handling keywords defined in the MSVC implementation of the C++ language as of Visual C++ version 2.0. You can leave existing exception macros in place while you begin to use C++ exceptions. For information on mixing macros and C++ exception handling and on converting old code to use the new mechanism, see the articles [Exceptions: Using MFC Macros and C++ Exceptions](../mfc/exceptions-using-mfc-macros-and-cpp-exceptions.md) and [Exceptions: Converting from MFC Exception Macros](../mfc/exceptions-converting-from-mfc-exception-macros.md). Eski MFC özel durum makrolarını hala kullanmaya devam ediyorsanız, C++ özel durum anahtar sözcüklerini değerlendirin. See [Exceptions: Changes to Exception Macros in Version 3.0](../mfc/exceptions-changes-to-exception-macros-in-version-3-0.md). MFC does not directly support Windows NT structured exception handlers (SEH), as discussed in [Structured Exception Handling](/windows/win32/debug/structured-exception-handling).
+Sürüm 3,0 ' den itibaren, MFC C++ özel durumlar kullandı, ancak form içindeki C++ özel durumlara benzeyen eski özel durum işleme makrolarını hala destekliyor. Bu makrolar yeni programlama için önerilmese de, geriye dönük uyumluluk için hala desteklenirler. Makroları zaten kullanan programlarda, özel durumları da ücretsiz olarak kullanabilirsiniz C++ . Ön işleme sırasında makrolar, Visual C++ C++ sürüm 2,0 itibariyle dilin MSVC uygulamasında tanımlanan özel durum işleme anahtar sözcüklerini değerlendirir. Özel durumları kullanmaya C++ başladığınızda, mevcut özel durum makrolarını yerinde bırakabilirsiniz. Makrolar ve C++ özel durum işlemeyi karıştırma ve yeni mekanizmayı kullanmak için eski kodu dönüştürme hakkında bilgi için bkz. Makaleler [özel durumları: MFC makroları ve C++ özel](../mfc/exceptions-using-mfc-macros-and-cpp-exceptions.md) DURUMLARı ve [özel durumları kullanma: MFC özel durum makrolarından dönüştürme](../mfc/exceptions-converting-from-mfc-exception-macros.md). Eski MFC özel durum makrolarını hala kullanmaya devam ediyorsanız, C++ özel durum anahtar sözcüklerini değerlendirin. Bkz. [özel durumlar: sürüm 3,0 ' de özel durum Makrolarındaki Değişiklikler](../mfc/exceptions-changes-to-exception-macros-in-version-3-0.md). MFC, [yapılandırılmış özel durum işlemede](/windows/win32/debug/structured-exception-handling)anlatıldığı gıbı Windows NT yapılandırılmış özel durum IŞLEYICILERINI (SEH) doğrudan desteklemez.
 
-##  <a name="_core_further_reading_about_exceptions"></a> Further Reading About Exceptions
+##  <a name="_core_further_reading_about_exceptions"></a>Özel durumlar hakkında daha fazla bilgi
 
-The following articles explain using the MFC library for exception handing:
+Aşağıdaki makalelerde özel durum teslim etmek için MFC kitaplığı kullanımı açıklanmaktadır:
 
 - [Özel Durumlar: Özel Durumları Yakalama ve Silme](../mfc/exceptions-catching-and-deleting-exceptions.md)
 
@@ -120,7 +120,7 @@ The following articles explain using the MFC library for exception handing:
 
 - [Özel durumlar: OLE Özel Durumları](../mfc/exceptions-ole-exceptions.md)
 
-The following articles compare the MFC exception macros with the C++ exception keywords and explain how you can adapt your code:
+Aşağıdaki makalelerde, MFC özel durum makroları C++ özel durum anahtar sözcükleriyle karşılaştırılmaktadır ve kodunuzu nasıl uyarlayabileceğiniz açıklanmıştır:
 
 - [Özel Durumlar: Sürüm 3.0'da Özel Durum Makrolarındaki Değişiklikler](../mfc/exceptions-changes-to-exception-macros-in-version-3-0.md)
 
@@ -130,5 +130,5 @@ The following articles compare the MFC exception macros with the C++ exception k
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Modern C++ best practices for exceptions and error handling](../cpp/errors-and-exception-handling-modern-cpp.md)<br/>
-[How Do I: Create my Own Custom Exception Classes](https://go.microsoft.com/fwlink/p/?linkid=128045)
+[Özel C++ durumlar ve hata işleme için modern en iyi uygulamalar](../cpp/errors-and-exception-handling-modern-cpp.md)<br/>
+[Nasıl yapılır: kendi özel özel durum sınıflarımı oluşturma](https://go.microsoft.com/fwlink/p/?linkid=128045)
