@@ -115,7 +115,7 @@ Windows Çalışma Zamanı C++ şablon kitaplığı, birkaç temel kavramı tems
 
 [RuntimeClass](runtimeclass-class.md) , belirtilen arabirimlerin kümesini devralan bir örneklenmiş sınıfı temsil eder. Bir `RuntimeClass` nesnesi, bir veya daha fazla Windows Çalışma Zamanı COM arabirimine yönelik destek bileşimini veya bir bileşene zayıf bir başvuruyu sağlayabilir.
 
-### <a name="module"></a>Modül
+### <a name="module"></a>Modülü
 
 [Modül](module-class.md) bir ilişkili nesneler koleksiyonunu temsil eder. Bir `Module` nesnesi, diğer uygulamaların bir nesne kullanmasına olanak tanıyan nesne ve kayıt oluşturan sınıf fabrikalarını yönetir.
 
