@@ -15,7 +15,7 @@ ms.locfileid: "74399051"
 ---
 # <a name="filecur"></a>\@FileCur
 
-The name of the current file (text macro).
+Geçerli dosyanın adı (Metin makrosu).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -23,4 +23,4 @@ The name of the current file (text macro).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Symbols reference](symbols-reference.md)
+[Semboller başvurusu](symbols-reference.md)

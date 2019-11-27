@@ -15,7 +15,7 @@ ms.locfileid: "74397880"
 ---
 # <a name="tfcond"></a>.TFCOND
 
-Toggles listing of false conditional blocks.
+Yanlış koşullu blokların listesini değiştirir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -23,4 +23,4 @@ Toggles listing of false conditional blocks.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Directives reference](directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)

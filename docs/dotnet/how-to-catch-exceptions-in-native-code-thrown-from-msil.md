@@ -15,13 +15,13 @@ ms.locfileid: "74246684"
 ---
 # <a name="how-to-catch-exceptions-in-native-code-thrown-from-msil"></a>Nasıl yapılır: MSIL'den Oluşan Yerel Kodda Catch Özel Durumları
 
-In native code, you can catch native C++ exception from MSIL.  You can catch CLR exceptions with `__try` and `__except`.
+Yerel kodda, MSIL 'den yerel C++ özel durumu yakalayabilirsiniz.  `__try` ve `__except`CLR özel durumlarını yakalayabilir.
 
-For more information, see [Structured Exception Handling (C/C++)](../cpp/structured-exception-handling-c-cpp.md) and [Modern C++ best practices for exceptions and error handling](../cpp/errors-and-exception-handling-modern-cpp.md).
+Daha fazla bilgi için bkz. [özel durumlar ve hata işleme C++ için](../cpp/errors-and-exception-handling-modern-cpp.md) [yapılandırılmış özel durum işleme (C/C++)](../cpp/structured-exception-handling-c-cpp.md) ve modern en iyi uygulamalar.
 
 ## <a name="example"></a>Örnek
 
-The following sample defines a module with two functions, one that throws a native exception, and another that throws an MSIL exception.
+Aşağıdaki örnek iki işlevi olan bir modül tanımlar, biri yerel özel durum oluşturur ve bir MSIL özel durumu oluşturur.
 
 ```
 // catch_MSIL_in_native.cpp
@@ -37,7 +37,7 @@ void Test2() {
 
 ## <a name="example"></a>Örnek
 
-The following sample defines a module that catches a native and MSIL exception.
+Aşağıdaki örnek, yerel ve MSIL özel durumunu yakalayan bir modül tanımlar.
 
 ```
 // catch_MSIL_in_native_2.cpp

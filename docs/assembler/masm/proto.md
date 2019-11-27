@@ -15,38 +15,38 @@ ms.locfileid: "74394751"
 ---
 # <a name="proto"></a>PROTO
 
-Prototypes a function or procedure. You can call the function prototyped by the PROTO directive by using the [INVOKE](invoke.md) directive.
+Prototiplerde bir işlev veya yordam. [Invoke](invoke.md) YÖNERGESINI kullanarak Prot yönergesini kullanarak prototip işlevini çağırabilirsiniz.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> *label* **PROTO** ⟦*distance*⟧ ⟦*language-type*⟧ ⟦ __,__ ⟦*parameter*⟧ __:__ *tag* ...⟧
+> *etiket* **proto** ⟦*uzaklık*⟧ ⟦*dil türü*⟧ ⟦ __,__ ⟦*parametre*⟧ __:__ *Tag* ... ⟧
 
 ### <a name="parameters"></a>Parametreler
 
-*label*\
-The name of the prototyped function.
+*etiket*\
+Prototipte belirlenmiş işlevin adı.
 
-*distance*\
-(Optional) Used in 16-bit memory models to override the default and indicate **NEAR** or **FAR** calls.
+*uzaklık*\
+Seçim Varsayılan değer geçersiz kılmak ve **yakın** veya **uzak** çağrıların göstermek için 16 bit bellek modellerinde kullanılır.
 
-*language-type*\
-(Optional) Sets the calling and naming convention for procedures and public symbols. Supported conventions are:
+*dil türü*\
+Seçim Yordamlar ve genel semboller için çağrı ve adlandırma kuralını ayarlar. Desteklenen kurallar şunlardır:
 
-- 32-bit **FLAT** model: **C**, **STDCALL**
+- 32-bit **düz** model: **C**, **stdcall**
 
-- 16-bit models: **C**, **BASIC**, **FORTRAN**, **PASCAL**, **SYSCALL**, **STDCALL**
+- 16 bit modeller: **C**, **temel**, **FORTRAN**, **Pascal**, **syscall**, **stdcall**
 
-*parameter*\
-The optional name for a function parameter.
+*parametre*\
+Bir işlev parametresi için isteğe bağlı ad.
 
-*tag*\
-The type of a function parameter.
+*etiket*\
+Bir işlev parametresinin türü.
 
-The *parameter* and *tag* parameters may appear multiple times, once for each passed argument.
+*Parametre* ve *etiket* parametreleri, her geçilen bağımsız değişken için bir kez olmak üzere birden çok kez bulunabilir.
 
 ## <a name="example"></a>Örnek
 
-This sample shows a **PROTO** declaration for a function named `addup3` that uses a **NEAR** call to override the 16-bit model default for procedure calls, and uses the **C** calling convention for stack parameters and return values. It takes two arguments, a **WORD** and a **VARARG**.
+Bu örnek, yordam çağrıları için 16 bit model varsayılanını geçersiz kılmak üzere **yakın** bir çağrı kullanan `addup3` adlı bir Işlev için **proto** bildirimini gösterir ve yığın parametreleri ve dönüş değerleri için **C** çağırma kuralını kullanır. İki bağımsız değişkeni, bir **sözcük** ve bir **vararg**alır.
 
 ```MASM
 addup3 PROTO NEAR C, argcount:WORD, arg1:VARARG
@@ -54,5 +54,5 @@ addup3 PROTO NEAR C, argcount:WORD, arg1:VARARG
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Directives Reference](directives-reference.md)\
-[.MODEL Reference](dot-model.md)
+[Yönergeler başvurusu](directives-reference.md)\
+[. MODEL başvurusu](dot-model.md)

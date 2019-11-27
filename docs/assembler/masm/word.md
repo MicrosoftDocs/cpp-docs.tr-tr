@@ -15,14 +15,14 @@ ms.locfileid: "74392830"
 ---
 # <a name="word"></a>WORD
 
-Allocates and optionally initializes a word (2 bytes) of storage for each *initializer*. Can also be used as a type specifier anywhere a type is legal.
+Her *Başlatıcı*için bir sözcük (2 baytlık) ayırır ve isteğe bağlı olarak başlatır. , Türün geçerli olduğu her yerde tür belirleyici olarak da kullanılabilir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> ⟦*name*⟧ **WORD** *initializer* ⟦ __,__ *initializer* ...⟧
+> ⟦*adı*⟧ **sözcük** *başlatıcısı* ⟦ __,__ *Başlatıcı* ... ⟧
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Directives reference](../../assembler/masm/directives-reference.md)\
-[SWORD](../../assembler/masm/sword.md)\
+[Yönergeler başvurusu](../../assembler/masm/directives-reference.md)\
+[Sword](../../assembler/masm/sword.md)\
 [DW](../../assembler/masm/dw.md)

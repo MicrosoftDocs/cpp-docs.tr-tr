@@ -18,38 +18,38 @@ ms.locfileid: "74246698"
 ---
 # <a name="exceptions-catching-and-deleting-exceptions"></a>Özel Durumlar: Özel Durumları Yakalama ve Silme
 
-The following instructions and examples show you how to catch and delete exceptions. For more information on the **try**, **catch**, and **throw** keywords, see [Modern C++ best practices for exceptions and error handling](../cpp/errors-and-exception-handling-modern-cpp.md).
+Aşağıdaki yönergeler ve örnekler, özel durumların nasıl yakalanalınacağını ve silineceğini gösterir. **TRY**, **catch**ve **throw** anahtar sözcükleri hakkında daha fazla bilgi için bkz. [özel C++ durumlar ve hata işleme için modern en iyi uygulamalar](../cpp/errors-and-exception-handling-modern-cpp.md).
 
-Your exception handlers must delete exception objects they handle, because failure to delete the exception causes a memory leak whenever that code catches an exception.
+Özel durum silme hatası, her kod bir özel durum yakalarsa bellek sızıntısına neden olduğundan özel durum İşleyicileriniz, işledikleri özel durum nesnelerini silmelidir.
 
-Your **catch** block must delete an exception when:
+**Catch** blobunun şu durumlarda bir özel durumu silmesi gerekir:
 
-- The **catch** block throws a new exception.
+- **Catch** bloğu yeni bir özel durum oluşturur.
 
-   Of course, you must not delete the exception if you throw the same exception again:
+   Tabii ki, aynı özel durumu tekrar oluşturursanız özel durumu silmemelidir:
 
    [!code-cpp[NVC_MFCExceptions#3](../mfc/codesnippet/cpp/exceptions-catching-and-deleting-exceptions_1.cpp)]
 
-- Execution returns from within the **catch** block.
+- Yürütme, **catch** bloğunun içinden geri döner.
 
 > [!NOTE]
->  When deleting a `CException`, use the `Delete` member function to delete the exception. Do not use the **delete** keyword, because it can fail if the exception is not on the heap.
+>  Bir `CException`silinirken, özel durumu silmek için `Delete` member işlevini kullanın. Özel durum yığında değilse başarısız olabileceğinden **Delete** anahtar sözcüğünü kullanmayın.
 
-#### <a name="to-catch-and-delete-exceptions"></a>To catch and delete exceptions
+#### <a name="to-catch-and-delete-exceptions"></a>Özel durumları yakalamak ve silmek için
 
-1. Use the **try** keyword to set up a **try** block. Execute any program statements that might throw an exception within a **try** block.
+1. **TRY anahtar sözcüğünü** kullanarak bir **TRY** bloğu ayarlayın. Bir **TRY** bloğu içinde özel durum oluşturabilecek program deyimlerini yürütün.
 
-   Use the **catch** keyword to set up a **catch** block. Place exception-handling code in a **catch** block. The code in the **catch** block is executed only if the code within the **try** block throws an exception of the type specified in the **catch** statement.
+   **Catch bloğunu ayarlamak** için **catch** anahtar sözcüğünü kullanın. Özel durum işleme kodunu bir **catch** bloğuna yerleştirin. **Catch** bloğundaki kod yalnızca **TRY** bloğu içindeki kod **catch** ifadesinde belirtilen türde bir özel durum oluşturursa yürütülür.
 
-   The following skeleton shows how **try** and **catch** blocks are normally arranged:
+   Aşağıdaki iskelet, **TRY** ve **catch** bloklarının normal şekilde nasıl düzenlendiğini göstermektedir:
 
    [!code-cpp[NVC_MFCExceptions#4](../mfc/codesnippet/cpp/exceptions-catching-and-deleting-exceptions_2.cpp)]
 
-   When an exception is thrown, control passes to the first **catch** block whose exception-declaration matches the type of the exception. You can selectively handle different types of exceptions with sequential **catch** blocks as listed below:
+   Bir özel durum oluştuğunda denetim, özel durum bildirimi özel durumun türüyle eşleşen ilk **catch** bloğuna geçer. Aşağıda listelenen sıralı **catch** blokları ile farklı özel durum türlerini seçmeli olarak işleyebilirsiniz:
 
    [!code-cpp[NVC_MFCExceptions#5](../mfc/codesnippet/cpp/exceptions-catching-and-deleting-exceptions_3.cpp)]
 
-For more information, see [Exceptions: Converting from MFC Exception Macros](../mfc/exceptions-converting-from-mfc-exception-macros.md).
+Daha fazla bilgi için bkz. [özel durumlar: MFC özel durum makrolarından dönüştürme](../mfc/exceptions-converting-from-mfc-exception-macros.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

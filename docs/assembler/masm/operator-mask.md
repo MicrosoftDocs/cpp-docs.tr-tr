@@ -17,12 +17,12 @@ ms.locfileid: "74396634"
 ---
 # <a name="operator-mask"></a>MASK işleci
 
-Returns a bit mask in which the bits in *recordfieldname* or *record* are set and all other bits are cleared.
+*Recordfieldname* veya *kayıttaki* bitlerin ayarlandığı ve diğer tüm bitlerin temizleneceği bir bit maskesi döndürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **MASK** {*recordfieldname* | *record*}
+> **Maske** {*recordfieldname* | *kaydı*}
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Operators reference](operators-reference.md)
+[İşleçler başvurusu](operators-reference.md)

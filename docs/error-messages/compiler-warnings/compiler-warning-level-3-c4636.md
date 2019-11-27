@@ -1,5 +1,5 @@
 ---
-title: Compiler Warning (level 3) C4636
+title: Derleyici Uyarısı (düzey 3) C4636
 ms.date: 11/04/2016
 f1_keywords:
 - C4636
@@ -13,15 +13,15 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 11/19/2019
 ms.locfileid: "74189130"
 ---
-# <a name="compiler-warning-level-3-c4636"></a>Compiler Warning (level 3) C4636
+# <a name="compiler-warning-level-3-c4636"></a>Derleyici Uyarısı (düzey 3) C4636
 
-XML document comment applied to 'construct': tag requires non-empty '' attribute.
+' Yapı ': etikete uygulanan XML belgesi yorumu boş olmayan ' ' özniteliği gerektiriyor.
 
-A tag, such as `cref`, did not have a value.
+`cref`gibi bir etiket bir değere sahip değil.
 
 ## <a name="example"></a>Örnek
 
-The following sample generates C4636.
+Aşağıdaki örnek C4636 oluşturur.
 
 ```cpp
 // C4636.cpp

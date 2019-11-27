@@ -15,7 +15,7 @@ ms.locfileid: "74393674"
 ---
 # <a name="struc"></a>STRUC
 
-See [STRUCT](../../assembler/masm/struct-masm.md).
+Bkz. [struct](../../assembler/masm/struct-masm.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -23,4 +23,4 @@ See [STRUCT](../../assembler/masm/struct-masm.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Directives reference](directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)

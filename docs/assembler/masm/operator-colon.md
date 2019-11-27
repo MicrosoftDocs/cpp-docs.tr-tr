@@ -16,12 +16,12 @@ ms.locfileid: "74397053"
 ---
 # <a name="operator-"></a>: işleci
 
-Overrides the default segment of *expression* with *segment*. The *segment* can be a segment register, group name, segment name, or segment expression. The *expression* must be a constant.
+*Deyimin* varsayılan segmentini *kesimle*geçersiz kılar. *Segment* bir segment kaydı, Grup adı, segment adı veya segment ifadesi olabilir. *İfade* bir sabit olmalıdır.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> *segment* **:** *expression*
+> *segment* **:** *ifade*
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Operators reference](operators-reference.md)
+[İşleçler başvurusu](operators-reference.md)

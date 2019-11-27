@@ -17,12 +17,12 @@ ms.locfileid: "74395323"
 ---
 # <a name="operator-width"></a>WIDTH işleci
 
-Returns the width in bits of the current *recordfieldname* or *record*.
+Geçerli *recordfieldname* veya *kaydın*bit cinsinden genişliğini döndürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **WIDTH** {*recordfieldname* | *record*}
+> **WIDTH** {*recordfieldname* | *kaydı*}
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Operators reference](operators-reference.md)
+[İşleçler başvurusu](operators-reference.md)

@@ -29,72 +29,72 @@ ms.locfileid: "74246298"
 ---
 # <a name="try-finally-statement"></a>try-finally Deyimi
 
-**Microsoft Specific**
+**Microsoft 'a özgü**
 
-The following syntax describes the **try-finally** statement:
+Aşağıdaki sözdizimi, **try-finally** ifadesini açıklar:
 
-> **\_\_try**<br/>
+> **\_\_dene**<br/>
 > {<br/>
-> &nbsp;&nbsp;&nbsp;&nbsp;// guarded code<br/>
+> &nbsp;&nbsp;&nbsp;&nbsp;//korunan kod<br/>
 > }<br/>
-> **\_\_finally**<br/>
+> **\_\_son**<br/>
 > {<br/>
-> &nbsp;&nbsp;&nbsp;&nbsp;// termination code<br/>
+> &nbsp;&nbsp;&nbsp;&nbsp;//sonlandırma kodu<br/>
 > }
 
 ## <a name="grammar"></a>Dilbilgisi
 
-*try-finally-statement*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; **\_\_try** *compound-statement* **\_\_finally** *compound-statement*
+*try-finally-deyimin*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp; **\_\_** *bileşik-deyimin*\_\_**son** *Birleşik-deyiminizi* deneyin
 
-The **try-finally** statement is a Microsoft extension to the C and C++ languages that enables target applications to guarantee execution of cleanup code when execution of a block of code is interrupted. Cleanup consists of such tasks as deallocating memory, closing files, and releasing file handles. The **try-finally** statement is especially useful for routines that have several places where a check is made for an error that could cause premature return from the routine.
+**Try-finally** , bir kod bloğunun yürütülmesi kesintiye uğradığında, hedef uygulamaların C++ Temizleme kodunu yürütmeyi garanti etmesini sağlayan C ve dillerin Microsoft uzantısıdır. Temizleme, bellek ayırmayı, dosyaları kapatmayı ve dosya tutamaçlarını serbest bırakmayı, bu görevlerden oluşur. **Try-finally** ekstresi, özellikle de zamanından önce geri dönebileceği bir hata için bir denetim yapıldığı birkaç yere sahip yordamlar için yararlıdır.
 
-For related information and a code sample, see [try-except Statement](../cpp/try-except-statement.md). For more information on structured exception handling in general, see [Structured Exception Handling](../cpp/structured-exception-handling-c-cpp.md). For more information on handling exceptions in managed applications with C++/CLI, see [Exception Handling under /clr](../extensions/exception-handling-cpp-component-extensions.md).
-
-> [!NOTE]
-> Yapılandırılmış özel durum işlemi, hem C hem de C++ kaynak dosyaları için Win32 ile çalışır. Ancak, özellikle C++ için tasarlanmamıştır. C++ özel durum işlemeyi kullanarak kodunuzun daha taşınabilir olduğundan emin olabilirsiniz. Ayrıca, C++ özel durum işleme her türden özel durumu işleyebildiği için daha esnektir. For C++ programs, it is recommended that you use the C++ exception-handling mechanism ([try, catch, and throw](../cpp/try-throw-and-catch-statements-cpp.md) statements).
-
-The compound statement after the **__try** clause is the guarded section. The compound statement after the **__finally** clause is the termination handler. The handler specifies a set of actions that execute when the guarded section is exited, regardless of whether the guarded section is exited by an exception (abnormal termination), or by standard fall through (normal termination).
-
-Control reaches a **__try** statement by simple sequential execution (fall through). When control enters the **__try**, its associated handler becomes active. If the flow of control reaches the end of the try block, execution proceeds as follows:
-
-1. The termination handler is invoked.
-
-1. When the termination handler completes, execution continues after the **__finally** statement. Regardless of how the guarded section ends (for example, via a **goto** out of the guarded body or a **return** statement), the termination handler is executed *before* the flow of control moves out of the guarded section.
-
-   A **__finally** statement does not block searching for an appropriate exception handler.
-
-If an exception occurs in the **__try** block, the operating system must find a handler for the exception or the program will fail. If a handler is found, any and all **__finally** blocks are executed and execution resumes in the handler.
-
-For example, suppose a series of function calls links function A to function D, as shown in the following figure. Each function has one termination handler. If an exception is raised in function D and handled in A, the termination handlers are called in this order as the system unwinds the stack: D, C, B.
-
-![Order of termination&#45;handler execution](../cpp/media/vc38cx1.gif "Order of termination&#45;handler execution") <br/>
-Order of Termination-Handler Execution
+İlgili bilgi ve kod örneği için bkz. [try-except deyimleri](../cpp/try-except-statement.md). Genel olarak yapılandırılmış özel durum işleme hakkında daha fazla bilgi için bkz. [yapılandırılmış özel durum işleme](../cpp/structured-exception-handling-c-cpp.md). /CLI ile C++yönetilen uygulamalarda özel durumları işleme hakkında daha fazla bilgi için bkz. [/clr altında özel durum işleme](../extensions/exception-handling-cpp-component-extensions.md).
 
 > [!NOTE]
-> The behavior of try-finally is different from some other languages that support the use of **finally**, such as C#.  A single **__try** may have either, but not both, of **__finally** and **__except**.  If both are to be used together, an outer try-except statement must enclose the inner try-finally statement.  The rules specifying when each block executes are also different.
+> Yapılandırılmış özel durum işlemi, hem C hem de C++ kaynak dosyaları için Win32 ile çalışır. Ancak, özellikle C++ için tasarlanmamıştır. C++ özel durum işlemeyi kullanarak kodunuzun daha taşınabilir olduğundan emin olabilirsiniz. Ayrıca, C++ özel durum işleme her türden özel durumu işleyebildiği için daha esnektir. Programlar C++ için, C++ özel durum işleme mekanizmasını ([try, catch ve throw](../cpp/try-throw-and-catch-statements-cpp.md) deyimlerini) kullanmanız önerilir.
 
-For compatibility with previous versions, **_try**, **_finally**, and **_leave** are synonyms for **__try**, **__finally**, and **__leave** unless compiler option [/Za \(Disable language extensions)](../build/reference/za-ze-disable-language-extensions.md) is specified.
+**__Try** yan tümcesinden sonraki bileşik ifade, korunan bölümdür. **__Finally** yan tümcesinden sonraki bileşik ifade sonlandırma işleyicisidir. İşleyici, korunan bölüm bir özel durum (olağan dışı sonlandırma) veya standart Fall (normal sonlandırma) tarafından çıkış yapılıp olmamasından bağımsız olarak, korunan bölüme çıkıldığında yürütülen bir eylem kümesini belirtir.
+
+Denetim, basit sıralı yürütme (karşı) ile bir **__try** ifadesine ulaşır. Denetim **__try**girdiğinde, ilişkili işleyicisi etkin hale gelir. Denetim akışı try bloğunun sonuna ulaşırsa, yürütme aşağıdaki gibi devam eder:
+
+1. Sonlandırma işleyicisi çağrılır.
+
+1. Sonlandırma işleyicisi tamamlandığında, **__finally** deyiminden sonra yürütme devam eder. Korunan bölümün bitiş şeklinden bağımsız olarak (örneğin, korumalı gövdeden veya bir **dönüş** ifadesiyle bir **goto** aracılığıyla), denetim akışı korunan bölümden ayrılmadan *önce* sonlandırma işleyicisi yürütülür.
+
+   **__Finally** bir ifade, uygun bir özel durum işleyicisi aramasını engellemez.
+
+**__Try** bloğunda bir özel durum oluşursa, işletim sistemi özel durum için bir işleyici bulmalıdır veya program başarısız olur. Bir işleyici bulunursa, tüm **__finally** blokları yürütülür ve yürütme işleyicide sürdürülür.
+
+Örneğin, aşağıdaki şekilde gösterildiği gibi bir dizi işlevin, A işlevini D işlevine çağırdığı hakkında düşünün. Her işlevde bir sonlandırma işleyicisi vardır. Bir özel durum D işlevinde ve içinde işlenirse, Sistem yığını kaldırmasından sonra sonlandırma işleyicileri bu sırada çağrılır: D, C, B.
+
+![Sonlandırma&#45;işleyicisi yürütme sırası](../cpp/media/vc38cx1.gif "Sonlandırma&#45;işleyicisi yürütme sırası") <br/>
+Sonlandırma Işleyicisi yürütme sırası
+
+> [!NOTE]
+> Try-finally davranışı,, gibi **son**kullanılması desteklenen diğer dillerden farklıdır C#.  Tek bir **__try** , **__finally** ve **__except**olamaz, ancak ikisini birden içeremez.  Her ikisi birlikte kullanılacaksa, bir dış try-except ifadesinin INNER try-finally ifadesini içermesi gerekir.  Her bir bloğun ne zaman yürütüldüğünü belirten kurallar da farklıdır.
+
+Önceki sürümlerle uyumluluk için **_try**, **_finally**ve **_leave** **__try**, **__finally**ve **__Leave** Için eş anlamlılardır. [/za \(dil uzantılarını devre dışı bırakma](../build/reference/za-ze-disable-language-extensions.md)
 
 ## <a name="the-__leave-keyword"></a>__leave Anahtar Sözcüğü
 
-The **__leave** keyword is valid only within the guarded section of a **try-finally** statement, and its effect is to jump to the end of the guarded section. Execution continues at the first statement in the termination handler.
+**__Leave** anahtar sözcüğü yalnızca **try-finally** ifadesinin korunan bölümünde geçerlidir ve etkisi, korunan bölümün sonuna atlayın. Yürütme, sonlandırma işleyicisindeki ilk ifadede devam eder.
 
-A **goto** statement can also jump out of the guarded section, but it degrades performance because it invokes stack unwinding. The **__leave** statement is more efficient because it does not cause stack unwinding.
+Bir **goto** ifadesine ayrıca korunan bölüm de atlayabilir, ancak yığın geri sarma özelliğini çağırdığı için performans düşer. **__Leave** deyimleri, yığın geri sarma nedeniyle daha etkilidir.
 
-## <a name="abnormal-termination"></a>Abnormal Termination
+## <a name="abnormal-termination"></a>Olağan dışı sonlandırma
 
-Exiting a **try-finally** statement using the [longjmp](../c-runtime-library/reference/longjmp.md) run-time function is considered abnormal termination. It is illegal to jump into a **__try** statement, but legal to jump out of one. All **__finally** statements that are active between the point of departure (normal termination of the **__try** block) and the destination (the **__except** block that handles the exception) must be run. This is called a local unwind.
+[Longjmp](../c-runtime-library/reference/longjmp.md) çalışma zamanı işlevini kullanarak bir **try-finally** ifadesinden çıkmak olağan dışı sonlandırma olarak değerlendirilir. **__Try** ifadeye geçmek geçersizdir, ancak bunlardan biri atlanmak için geçerli değildir. Ayrılma noktası ( **__try** bloğunun normal sonlandırması) ve hedef (özel durumu işleyen **__except** bloğu) arasında etkin olan tüm **__finally** deyimleri çalıştırılmalıdır. Buna yerel geriye doğru izleme denir.
 
-If a **try** block is prematurely terminated for any reason, including a jump out of the block, the system executes the associated **finally** block as a part of the process of unwinding the stack. In such cases, the [AbnormalTermination](/windows/win32/Debug/abnormaltermination) function returns **true** if called from within the **finally** block; otherwise, it returns **false**.
+Bir **TRY** bloğu herhangi bir nedenden dolayı erken sonlandırıldıysa, bloğu geri alma işleminin bir parçası olarak sistem ilişkili **finally** bloğunu yürütür. Bu gibi durumlarda, bir, **finally** bloğu içinden çağrılırsa, [abnormalsonlandırma](/windows/win32/Debug/abnormaltermination) işlevi **true** değerini döndürür; Aksi takdirde, **false**döndürür.
 
-The termination handler is not called if a process is killed in the middle of executing a **try-finally** statement.
+Bir işlem bir **try-finally** ifadesinin ortasında sonlandırılabilmesi için sonlandırma işleyicisi çağrılmaz.
 
-**END Microsoft Specific**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Writing a termination handler](../cpp/writing-a-termination-handler.md)<br/>
+[Sonlandırma işleyicisi yazma](../cpp/writing-a-termination-handler.md)<br/>
 [Yapılandırılmış Özel Durum İşleme (C/C++)](../cpp/structured-exception-handling-c-cpp.md)<br/>
 [Anahtar Sözcükler](../cpp/keywords-cpp.md)<br/>
-[Termination-Handler Syntax](/windows/win32/Debug/termination-handler-syntax)
+[Sonlandırma-Işleyici sözdizimi](/windows/win32/Debug/termination-handler-syntax)

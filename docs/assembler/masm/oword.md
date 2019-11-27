@@ -15,7 +15,7 @@ ms.locfileid: "74395102"
 ---
 # <a name="oword"></a>OWORD
 
-Used as a type specifier when an 16-byte data type is required.
+16 baytlık bir veri türü gerektiğinde tür tanımlayıcısı olarak kullanılır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -23,4 +23,4 @@ Used as a type specifier when an 16-byte data type is required.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Directives reference](directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)

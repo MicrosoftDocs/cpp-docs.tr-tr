@@ -17,7 +17,7 @@ ms.locfileid: "74245951"
 ---
 # <a name="bad_cast-exception"></a>bad_cast özel durumu
 
-The **bad_cast** exception is thrown by the **dynamic_cast** operator as the result of a failed cast to a reference type.
+**Bad_cast** özel durumu, bir başvuru türüne başarısız bir dönüştürme sonucu olarak **dynamic_cast** işleci tarafından oluşturulur.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -28,13 +28,13 @@ catch (bad_cast)
 
 ## <a name="remarks"></a>Açıklamalar
 
-The interface for **bad_cast** is:
+**Bad_cast** arabirimi:
 
 ```cpp
 class bad_cast : public exception
 ```
 
-The following code contains an example of a failed **dynamic_cast** that throws the **bad_cast** exception.
+Aşağıdaki kod, **bad_cast** özel durumunu oluşturan başarısız **dynamic_cast** bir örnek içerir.
 
 ```cpp
 // expre_bad_cast_Exception.cpp
@@ -65,57 +65,57 @@ int main() {
 }
 ```
 
-The exception is thrown because the object being cast (a Shape) isn't derived from the specified cast type (Circle). Özel durumdan kaçınmak için bu bildirimleri `main` öğesine ekleyin:
+Cast (bir şekil) nesne belirtilen atama türünden (Daire) türetilmediğinden özel durum oluşturuldu. Özel durumdan kaçınmak için bu bildirimleri `main` öğesine ekleyin:
 
 ```cpp
 Circle circle_instance;
 Circle& ref_circle = circle_instance;
 ```
 
-Then reverse the sense of the cast in the **try** block as follows:
+Sonra **TRY** bloğunda dönüştürmenin anlamlı olduğunu aşağıdaki gibi tersine çevirin:
 
 ```cpp
 Shape& ref_shape = dynamic_cast<Shape&>(ref_circle);
 ```
 
-## <a name="members"></a>Üyeler
+## <a name="members"></a>Üyeleri
 
 ### <a name="constructors"></a>Oluşturucular
 
-|Oluşturucu|Açıklama|
+|Constructor|Açıklama|
 |-|-|
-|[bad_cast](#bad_cast)|The constructor for objects of type `bad_cast`.|
+|[bad_cast](#bad_cast)|`bad_cast`türündeki nesneler için Oluşturucu.|
 
 ### <a name="functions"></a>İşlevler
 
 |İşlev|Açıklama|
 |-|-|
-|[what](#what)|TBD|
+|[Yazdırılacak](#what)|TBD|
 
 ### <a name="operators"></a>İşleçler
 
 |İşleç|Açıklama|
 |-|-|
-|[operator=](#op_eq)|An assignment operator that assigns one `bad_cast` object to another.|
+|[işleç =](#op_eq)|Bir `bad_cast` nesnesini diğerine atayan atama işleci.|
 
-## <a name="bad_cast"></a> bad_cast
+## <a name="bad_cast"></a>bad_cast
 
-The constructor for objects of type `bad_cast`.
+`bad_cast`türündeki nesneler için Oluşturucu.
 
 ```cpp
 bad_cast(const char * _Message = "bad cast");
 bad_cast(const bad_cast &);
 ```
 
-## <a name="op_eq"></a> operator=
+## <a name="op_eq"></a>işleç =
 
-An assignment operator that assigns one `bad_cast` object to another.
+Bir `bad_cast` nesnesini diğerine atayan atama işleci.
 
 ```cpp
 bad_cast& operator=(const bad_cast&) noexcept;
 ```
 
-## <a name="what"></a> what
+## <a name="what"></a>Yazdırılacak
 
 ```cpp
 const char* what() const noexcept override;
@@ -123,6 +123,6 @@ const char* what() const noexcept override;
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[dynamic_cast Operator](../cpp/dynamic-cast-operator.md)\
-[Keywords](../cpp/keywords-cpp.md)\
-[Modern C++ best practices for exceptions and error handling](../cpp/errors-and-exception-handling-modern-cpp.md)
+[dynamic_cast işleci](../cpp/dynamic-cast-operator.md)\
+[Anahtar sözcükler](../cpp/keywords-cpp.md)\
+[Özel C++ durumlar ve hata işleme için modern en iyi uygulamalar](../cpp/errors-and-exception-handling-modern-cpp.md)

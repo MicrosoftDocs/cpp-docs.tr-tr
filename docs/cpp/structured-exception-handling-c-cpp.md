@@ -18,55 +18,55 @@ ms.locfileid: "74245125"
 ---
 # <a name="structured-exception-handling-cc"></a>Yapılandırılmış Özel Durum İşleme (C/C++)
 
-Structured exception handling (SEH) is a Microsoft extension to C to handle certain exceptional code situations, such as hardware faults, gracefully. Although Windows and Microsoft C++ support SEH, we recommend that you use ISO-standard C++ exception handling because it makes your code more portable and flexible. Nevertheless, to maintain existing code or for particular kinds of programs, you still might have to use SEH.
+Yapılandırılmış özel durum işleme (SEH), donanım hataları gibi belirli olağanüstü kod durumlarını işlemek için bir Microsoft uzantısıdır. Windows ve Microsoft C++ , SEH 'yi desteklese de, kodunuzu daha taşınabilir ve esnek C++ hale getiren ISO standardı özel durum işlemeyi kullanmanızı öneririz. Bununla birlikte, mevcut kodu korumak veya belirli türde programlar için yine de SEH kullanmanız gerekebilir.
 
-**Microsoft specific:**
+**Microsoft 'a özgü:**
 
 ## <a name="grammar"></a>Dilbilgisi
 
-*try-except-statement* :<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; **__try** *compound-statement* **__except** **(** *expression* **)** *compound-statement*
+*try-except-deyimleri* :<br/>
+&nbsp;&nbsp;&nbsp;&nbsp; **__try** *bileşik deyim* **__except** **(** *ifade* **)** *bileşik-deyim*
 
-*try-finally-statement* :<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; **__try** *compound-statement* **__finally** *compound-statement*
+*try-finally-deyimin* :<br/>
+&nbsp;&nbsp;&nbsp;&nbsp; **__try** *bileşik ifade* **__finally** *bileşik-ekstresi*
 
 ## <a name="remarks"></a>Açıklamalar
 
-With SEH, you can ensure that resources such as memory blocks and files are released correctly if execution unexpectedly terminates. You can also handle specific problems—for example, insufficient memory—by using concise structured code that does not rely on **goto** statements or elaborate testing of return codes.
+SEH ile, yürütme beklenmedik şekilde sonlandırılırsa bellek blokları ve dosyalar gibi kaynakların doğru şekilde serbest bırakıldığını sağlayabilirsiniz. Ayrıca, özel sorunları (örneğin, yetersiz bellek), **goto** deyimlerine veya dönüş kodlarının ayrıntılı test edilmesine bağlı olmayan kısa şekilde yapılandırılmış kodu kullanarak da işleyebilirsiniz.
 
-The try-except and try-finally statements referred to in this article are Microsoft extensions to the C language. They support SEH by enabling applications to gain control of a program after events that would otherwise terminate execution. Although SEH works with C++ source files, it's not specifically designed for C++. If you use SEH in a C++ program that you compile by using the [/EHa or /EHsc](../build/reference/eh-exception-handling-model.md) option, destructors for local objects are called but other execution behavior might not be what you expect. For an illustration, see the example later in this article. In most cases, instead of SEH we recommend that you use ISO-standard [C++ exception handling](../cpp/try-throw-and-catch-statements-cpp.md), which the Microsoft C++ compiler also supports. By using C++ exception handling, you can ensure that your code is more portable, and you can handle exceptions of any type.
+Bu makalede başvurulan try-except ve try-finally deyimleri, C dilinin Microsoft uzantılarıdır. Uygulamalar, daha sonra yürütmeyi sonlandıran olaylardan sonra bir programın denetimini ele geçirmesine olanak tanıyarak SEH 'yi destekler. SEH C++ kaynak dosyalarla çalışabilse de, için C++özel olarak tasarlanmamıştır. [/EHa veya/EHsc](../build/reference/eh-exception-handling-model.md) seçeneğini C++ kullanarak DERLEYEBILECEĞINIZ bir programda SEH kullanırsanız, yerel nesneler için Yıkıcılar çağrılır, ancak diğer yürütme davranışı beklediğiniz gibi olmayabilir. Bir çizim için bu makalenin ilerleyen kısımlarındaki örneğe bakın. Birçok durumda, SEH yerine Microsoft C++ derleyicisinin de desteklediği ISO standardı [ C++ özel durum işlemeyi](../cpp/try-throw-and-catch-statements-cpp.md)kullanmanızı öneririz. Özel durum C++ işlemeyi kullanarak, kodunuzun daha taşınabilir olmasını sağlayabilir ve herhangi bir türdeki özel durumları işleyebilirsiniz.
 
-If you have C code that uses SEH, you can mix it with C++ code that uses C++ exception handling. For information, see [Handle structured exceptions in C++](../cpp/exception-handling-differences.md).
+SEH kullanan C kodunuz varsa, özel durum işleme kullanan C++ C++ kodla onu karıştırabilirsiniz. Bilgi için bkz. [içinde C++yapılandırılmış özel durumları işleme ](../cpp/exception-handling-differences.md).
 
-There are two SEH mechanisms:
+İki SEH mekanizması vardır:
 
-- [Exception handlers](../cpp/writing-an-exception-handler.md), or **__except** blocks, which can respond to or dismiss the exception.
+- Özel durum [işleyicileri](../cpp/writing-an-exception-handler.md)veya **__except** blokları, özel durum yanıt verebilir veya kapatabilir.
 
-- [Termination handlers](../cpp/writing-a-termination-handler.md), or **__finally** blocks, which are always called, whether an exception causes termination or not.
+- [Sonlandırma işleyicileri](../cpp/writing-a-termination-handler.md)veya her zaman çağrılan **__finally** blokları, bir özel durumun sonlandırmasına neden olup olmadığı.
 
-These two kinds of handlers are distinct, but are closely related through a process known as "unwinding the stack." When a structured exception occurs, Windows looks for the most recently installed exception handler that is currently active. The handler can do one of three things:
+Bu iki tür işleyici farklıdır, ancak "yığını geri sarma" olarak bilinen bir işlemle yakından ilgilidir. Yapılandırılmış bir özel durum oluştuğunda Windows, şu anda etkin olan en son yüklenen özel durum işleyicisini arar. İşleyici üç işlemlerden birini gerçekleştirebilir:
 
-- Fail to recognize the exception and pass control to other handlers.
+- Özel durum tanınamadı ve denetim diğer işleyicilere geçirilemez.
 
-- Recognize the exception but dismiss it.
+- Özel durumu tanıyor, ancak bunu yoksayın.
 
-- Recognize the exception and handle it.
+- Özel durumu tanıyor ve işleyin.
 
-The exception handler that recognizes the exception may not be in the function that was running when the exception occurred. In some cases, it may be in a function much higher on the stack. The currently running function and all other functions on the stack frame are terminated. During this process, the stack is "unwound;" that is, local non-static variables of terminated functions are cleared from the stack.
+Özel durumu tanıyan özel durum işleyicisi, özel durum oluştuğunda çalışmakta olan işlevde bulunmayabilir. Bazı durumlarda, yığın üzerinde çok daha yüksek bir işlevde olabilir. Şu anda çalışan işlev ve yığın çerçevesindeki diğer tüm işlevler sonlandırılır. Bu işlem sırasında, yığın "unwound;", diğer bir deyişle, sonlandırılmış işlevlerin yerel statik olmayan değişkenleri yığından temizlenir.
 
-As it unwinds the stack, the operating system calls any termination handlers that you've written for each function. By using a termination handler, you can clean up resources that otherwise would remain open because of an abnormal termination. If you've entered a critical section, you can exit it in the termination handler. If the program is going to shut down, you can perform other housekeeping tasks such as closing and removing temporary files.
+Yığın olmadığından, işletim sistemi her bir işlev için yazdığınız sonlandırma işleyicilerini çağırır. Sonlandırma işleyicisi kullanarak, olağan dışı bir sonlandırma nedeniyle başka türlü açık kalabilecek kaynakları temizleyebilirsiniz. Kritik bir bölüm girdiyseniz, sonlandırma işleyicisinde bu işlemden çıkabilirsiniz. Program kapatılırsa, geçici dosyaları kapatma ve kaldırma gibi başka bir temizlik görevi gerçekleştirebilirsiniz.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-- [Writing an exception handler](../cpp/writing-an-exception-handler.md)
+- [Özel durum işleyicisi yazma](../cpp/writing-an-exception-handler.md)
 
-- [Writing a termination handler](../cpp/writing-a-termination-handler.md)
+- [Sonlandırma işleyicisi yazma](../cpp/writing-a-termination-handler.md)
 
 - [C++ dilinde yapılandırılmış özel durumları işleme](../cpp/exception-handling-differences.md)
 
 ## <a name="example"></a>Örnek
 
-As stated earlier, destructors for local objects are called if you use SEH in a C++ program and compile it by using the **/EHa** or **/EHsc** option. However, the behavior during execution may not be what you expect if you are also using C++ exceptions. This example demonstrates these behavioral differences.
+Daha önce belirtildiği gibi, bir C++ programda SEH kullanırsanız ve **/EHa** veya **/EHsc** seçeneğini kullanarak derlerseniz yerel nesneler için Yıkıcılar çağrılır. Ancak, özel durumlar da kullanıyorsanız C++ , yürütme sırasındaki davranış beklediğiniz gibi olmayabilir. Bu örnek, bu davranış farklarını gösterir.
 
 ```cpp
 #include <stdio.h>
@@ -115,14 +115,14 @@ int main()
 }
 ```
 
-If you use **/EHsc** to compile this code but the local test control macro `CPPEX` is undefined, there is no execution of the `TestClass` destructor and the output looks like this:
+Bu kodu derlemek için **/EHsc** kullanırsanız, ancak `CPPEX` yerel test denetimi makrosu tanımsızdır, `TestClass` yok edicinin yürütülmesi olmaz ve çıkış şöyle görünür:
 
 ```Output
 Triggering SEH exception
 Executing SEH __except block
 ```
 
-If you use **/EHsc** to compile the code and `CPPEX` is defined by using `/DCPPEX` (so that a C++ exception is thrown), the `TestClass` destructor executes and the output looks like this:
+Kodu derlemek için **/EHsc** kullanırsanız ve `CPPEX` `/DCPPEX` kullanılarak tanımlıysa (bir C++ özel durum oluşturulur), `TestClass` yıkıcısı yürütülür ve çıktı şöyle görünür:
 
 ```Output
 Throwing C++ exception
@@ -130,7 +130,7 @@ Destroying TestClass!
 Executing SEH __except block
 ```
 
-If you use **/EHa** to compile the code, the `TestClass` destructor executes regardless of whether the exception was thrown by using `std::throw` or by using SEH to trigger the exception, that is, whether `CPPEX` defined or not. The output looks like this:
+Kodu derlemek için **/EHa** kullanırsanız `TestClass` yıkıcısı, özel durumun `std::throw` kullanılarak mı yoksa özel durum TETIKLENMESI için seh kullanılarak mı yoksa, tanımlı `CPPEX` olup olmadığı, yani tanımlanmış olup olmamasına bakılmaksızın yürütülür. Çıktı şöyle görünür:
 
 ```Output
 Throwing C++ exception
@@ -138,14 +138,14 @@ Destroying TestClass!
 Executing SEH __except block
 ```
 
-For more information, see [/EH (Exception Handling Model)](../build/reference/eh-exception-handling-model.md).
+Daha fazla bilgi için bkz. [/Eh (özel durum Işleme modeli)](../build/reference/eh-exception-handling-model.md).
 
-**END Microsoft Specific**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Özel Durum İşleme](../cpp/exception-handling-in-visual-cpp.md)<br/>
 [Anahtar Sözcükler](../cpp/keywords-cpp.md)<br/>
-[\<exception>](../standard-library/exception.md)<br/>
-[Errors and Exception Handling](../cpp/errors-and-exception-handling-modern-cpp.md)<br/>
-[Structured Exception Handling (Windows)](/windows/win32/debug/structured-exception-handling)
+[\<özel durum >](../standard-library/exception.md)<br/>
+[Hatalar ve özel durum Işleme](../cpp/errors-and-exception-handling-modern-cpp.md)<br/>
+[Yapılandırılmış özel durum Işleme (Windows)](/windows/win32/debug/structured-exception-handling)

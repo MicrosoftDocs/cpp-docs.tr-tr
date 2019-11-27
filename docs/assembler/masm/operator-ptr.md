@@ -17,14 +17,14 @@ ms.locfileid: "74396501"
 ---
 # <a name="operator-ptr"></a>PTR işleci
 
-The first operator forces the *expression* to be treated as having the specified *type*. The second operator specifies a pointer to *type*.
+İlk operatör, *ifadeyi* belirtilen *türe*sahip olacak şekilde kabul etmeye zorlar. İkinci işleç, *türüne*yönelik bir işaretçi belirtir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> *type* **PTR** *expression*
+> *tür* **PTR** *ifadesi*
 >
-> \[*distance*] **PTR** *type*
+> \[*uzaklık*] **PTR** *türü*
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Operators reference](operators-reference.md)
+[İşleçler başvurusu](operators-reference.md)

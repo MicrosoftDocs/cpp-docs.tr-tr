@@ -17,12 +17,12 @@ ms.locfileid: "74396545"
 ---
 # <a name="operator-or"></a>OR işleci
 
-Returns the result of a bitwise OR operation for *expression1* and *expression2*.
+*İfade1* ve *İfade2*için bit düzeyinde or işleminin sonucunu döndürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> *expression1* **OR** *expression2*
+> *İfade1* **veya** *İfade2*
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Operators reference](operators-reference.md)
+[İşleçler başvurusu](operators-reference.md)

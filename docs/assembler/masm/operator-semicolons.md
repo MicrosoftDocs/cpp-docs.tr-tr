@@ -17,12 +17,12 @@ ms.locfileid: "74396456"
 ---
 # <a name="operator-"></a>;; işleci
 
-Treats *text* as a comment in a macro that appears only in the macro definition. The listing does not show *text* where the macro is expanded.
+*Metni* yalnızca makro tanımında görüntülenen bir makroda açıklama olarak değerlendirir. Liste, makronun genişletildiği *metni* göstermez.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **;;** *text*
+> **;;** *metin*
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Operators reference](operators-reference.md)
+[İşleçler başvurusu](operators-reference.md)

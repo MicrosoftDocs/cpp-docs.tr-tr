@@ -75,15 +75,15 @@ Veri erişim nesneleri (DAO) kullanarak bir Access veritabanı bağlantısını 
 class CDaoDatabase : public CObject
 ```
 
-## <a name="members"></a>Üyeler
+## <a name="members"></a>Üyeleri
 
-### <a name="public-constructors"></a>Ortak Oluşturucular
+### <a name="public-constructors"></a>Genel Oluşturucular
 
 |Name|Açıklama|
 |----------|-----------------|
 |[CDaoDatabase:: CDaoDatabase](#cdaodatabase)|`CDaoDatabase` nesnesi oluşturur. Nesneyi bir veritabanına bağlamak için `Open` çağırın.|
 
-### <a name="public-methods"></a>Ortak Yöntemler
+### <a name="public-methods"></a>Genel Yöntemler
 
 |Name|Açıklama|
 |----------|-----------------|

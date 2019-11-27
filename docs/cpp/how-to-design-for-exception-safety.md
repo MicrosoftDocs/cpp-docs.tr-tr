@@ -1,5 +1,5 @@
 ---
-title: 'How to: Design for exception safety'
+title: 'Nasıl yapılır: özel durum güvenliği için tasarım'
 ms.custom: how-to
 ms.date: 11/19/2019
 ms.topic: conceptual
@@ -11,19 +11,19 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 11/20/2019
 ms.locfileid: "74246509"
 ---
-# <a name="how-to-design-for-exception-safety"></a>How to: Design for exception safety
+# <a name="how-to-design-for-exception-safety"></a>Nasıl yapılır: özel durum güvenliği için tasarım
 
-One of the advantages of the exception mechanism is that execution, together with data about the exception, jumps directly from the statement that throws the exception to the first catch statement that handles it. The handler may be any number of levels up in the call stack. Functions that are called between the try statement and the throw statement are not required to know anything about the exception that is thrown.  However, they have to be designed so that they can go out of scope "unexpectedly" at any point where an exception might propagate up from below, and do so without leaving behind partially created objects, leaked memory, or data structures that are in unusable states.
+Özel durum mekanizmasının avantajlarından biri, yürütme, özel durum hakkındaki verilerle birlikte, özel durumu işleyen ilk catch ifadesine doğrudan atmayı atlayan deyimden atlar. İşleyici, çağrı yığınında herhangi bir sayıda düzey olabilir. TRY ve throw deyimlerinin arasına çağrılan işlevlerin, oluşturulan özel durum hakkında herhangi bir şeyi bilmeleri için gerekli değildir.  Bununla birlikte, bir özel durumun aşağıdan yayabileceği herhangi bir noktada "beklenmedik" kapsam dışına çıkabilmeleri için tasarlanmaları gerekir ve bunu yapmak, kısmen oluşturulan nesnelerin arkasında, sızdırılan belleğin veya kullanılamaz durumda olan veri yapılarının arkasına çıkmadan devam edebilirler.
 
-## <a name="basic-techniques"></a>Basic techniques
+## <a name="basic-techniques"></a>Temel teknikler
 
-A robust exception-handling policy requires careful thought and should be part of the design process. In general, most exceptions are detected and thrown at the lower layers of a software module, but typically these layers do not have enough context to handle the error or expose a message to end users. In the middle layers, functions can catch and rethrow an exception when they have to inspect the exception object, or they have additional useful information to provide for the upper layer that ultimately catches the exception. A function should catch and "swallow" an exception only if it is able to completely recover from it. In many cases, the correct behavior in the middle layers is to let an exception propagate up the call stack. Even at the highest layer, it might be appropriate to let an unhandled exception terminate a program if the exception leaves the program in a state in which its correctness cannot be guaranteed.
+Sağlam bir özel durum işleme ilkesi dikkat etmeniz gerekir ve tasarım sürecinin bir parçası olmalıdır. Genel olarak, çoğu özel durum bir yazılım modülünün alt katmanlarında algılanır ve oluşturulur, ancak genellikle bu katmanların hatayı işlemek için yeterli bağlamı yoktur veya son kullanıcılara bir ileti sunabilir. Orta katmanlarda işlevler, özel durum nesnesini incelemek istediklerinde bir özel durumu yakalayabilir ve yeniden oluşturabilir veya son olarak özel durumu yakalayan üst katmana sağlamak için ek faydalı bilgiler sağlar. Bir işlev yalnızca bundan tamamen kurtarılamadığında bir özel durum yakalamalı ve "Swallow". Çoğu durumda, orta katmanlardaki doğru davranış, çağrı yığınını yaymaya özel bir durum vermek olur. En yüksek katmanda bile, özel durum programı, doğruluk garantisi garanti edilemez bir durumda bırakırsa, bir programı sonlandırma özel durumunun bir program tarafından sonlandırılmasına izin vermek uygun olabilir.
 
-No matter how a function handles an exception, to help guarantee that it is "exception-safe," it must be designed according to the following basic rules.
+Bir işlevin özel durumu nasıl işleydiğine bakılmaksızın, "özel durum güvenli" olduğunu garantilemeye yardımcı olmak için, aşağıdaki temel kurallara göre tasarlanmalıdır.
 
-### <a name="keep-resource-classes-simple"></a>Keep resource classes simple
+### <a name="keep-resource-classes-simple"></a>Kaynak sınıflarını basit tut
 
-When you encapsulate manual resource management in classes, use a class that does nothing except manage a single resource. By keeping the class simple, you reduce the risk of introducing resource leaks. Use [smart pointers](smart-pointers-modern-cpp.md) when possible, as shown in the following example. This example is intentionally artificial and simplistic to highlight the differences when `shared_ptr` is used.
+Sınıflarda el ile kaynak yönetimini kapsüllemek istediğinizde, tek bir kaynağı Yönet dışında hiçbir şey olmayan bir sınıf kullanın. Sınıfı basit tutarak, kaynak sızıntılarını tanıtma riskini azaltabilirsiniz. Aşağıdaki örnekte gösterildiği gibi, mümkün olduğunda [akıllı işaretçiler](smart-pointers-modern-cpp.md) kullanın. Bu örnek kasıtlı olarak yapay ve `shared_ptr` kullanıldığında farkları vurgulamak için uyarlaması.
 
 ```cpp
 // old-style new/delete version
@@ -83,43 +83,43 @@ public:
 };
 ```
 
-### <a name="use-the-raii-idiom-to-manage-resources"></a>Use the RAII idiom to manage resources
+### <a name="use-the-raii-idiom-to-manage-resources"></a>Kaynakları yönetmek için ÇII IBU deyim kullanma
 
-To be exception-safe, a function must ensure that objects that it has allocated by using `malloc` or **new** are destroyed, and all resources such as file handles are closed or released even if an exception is thrown. The *Resource Acquisition Is Initialization* (RAII) idiom ties management of such resources to the lifespan of automatic variables. When a function goes out of scope, either by returning normally or because of an exception, the destructors for all fully-constructed automatic variables are invoked. An RAII wrapper object such as a smart pointer calls the appropriate delete or close function in its destructor. In exception-safe code, it is critically important to pass ownership of each resource immediately to some kind of RAII object. Note that the `vector`, `string`, `make_shared`, `fstream`, and similar classes handle acquisition of the resource for you.  However, `unique_ptr` and traditional `shared_ptr` constructions are special because resource acquisition is performed by the user instead of the object; therefore, they count as *Resource Release Is Destruction* but are questionable as RAII.
+Özel durum güvenli olması için bir işlev, `malloc` veya **Yeni** kullanarak ayırmış olduğu nesnelerin yok edileceği ve dosya tutamaçları gibi tüm kaynakların, bir özel durum oluştuğunda bile kapalı veya serbest bırakılmış olduğundan emin olmalıdır. *Kaynak alımı* , bu tür kaynakların otomatik değişkenlerin kullanım ömrü için başlatılması (rampaıı) deyimidir. Bir işlev, normal olarak veya bir özel durum nedeniyle kapsam dışına geçtiğinde, tümüyle oluşturulmuş tüm otomatik değişkenlerin yıkıcıları çağrılır. Akıllı işaretçi gibi bir KORıı sarmalayıcı nesnesi, yıkıcısında uygun DELETE veya Close işlevini çağırır. Özel durum güvenli kodunda, her bir kaynağın sahipliğini hemen bir tür rampaya da bir nesne türüne geçirmek oldukça önemlidir. `vector`, `string`, `make_shared`, `fstream`ve benzer sınıfların sizin için kaynağı alma işlemesini unutmayın.  Ancak, kaynak alımı nesne yerine Kullanıcı tarafından gerçekleştirildiğinden, `unique_ptr` ve geleneksel `shared_ptr` kurulumlarını özeldir; Bu nedenle, *kaynak yayını yok sayılır* ancak kii olarak sorgulanabilir değildir.
 
-## <a name="the-three-exception-guarantees"></a>The three exception guarantees
+## <a name="the-three-exception-guarantees"></a>Üç özel durum garanti
 
-Typically, exception safety is discussed in terms of the three exception guarantees that a function can provide: the *no-fail guarantee*, the *strong guarantee*, and the *basic guarantee*.
+Genellikle özel durum güvenliği, bir işlevin sağlayabileceğinizin üç özel durum garanti açısından ele alınmıştır: *No-Fail garantisi*, *Strong garantisi*ve *temel garanti*.
 
-### <a name="no-fail-guarantee"></a>No-fail guarantee
+### <a name="no-fail-guarantee"></a>Başarısızlık garantisi
 
-The no-fail (or, "no-throw") guarantee is the strongest guarantee that a function can provide. It states that the function will not throw an exception or allow one to propagate. However, you cannot reliably provide such a guarantee unless (a) you know that all the functions that this function calls are also no-fail, or (b) you know that any exceptions that are thrown are caught before they reach this function, or (c) you know how to catch and correctly handle all exceptions that might reach this function.
+No-Fail (veya "no-throw") garantisi, bir işlevin sağlayabileceğinizin en güçlü garantisi. İşlevin bir özel durum oluşturmadığını veya bir tane yaymasına izin vermeyeceğini belirtir. Ancak, (a) Bu işlev çağrılarının tüm işlevlerinin aynı zamanda başarısız olduğunu veya (b), oluşturulan tüm durumların bu işleve ulaşmadan önce yakalanabileceğini veya (c), nasıl yakalanabileceğini bildiğiniz ve Bu işleve ulaşan tüm özel durumları doğru şekilde işleyin.
 
-Both the strong guarantee and the basic guarantee rely on the assumption that the destructors are no-fail. All containers and types in the Standard Library guarantee that their destructors do not throw. There is also a converse requirement: The Standard Library requires that user-defined types that are given to it—for example, as template arguments—must have non-throwing destructors.
+Kesin garanti ve temel garanti, yok edicilerin başarısız olduğu varsayımına dayanır. Standart kitaplıktaki tüm kapsayıcılar ve türler, yok edicilerin throw oluşturmadığından emin. Aynı zamanda bir de aynı gereksinim vardır: standart kitaplık, kendisine verilen Kullanıcı tanımlı türlerin (örneğin, şablon bağımsız değişkenleri gibi) oluşturmasız yıkıcıları olmalıdır.
 
-### <a name="strong-guarantee"></a>Strong guarantee
+### <a name="strong-guarantee"></a>Güçlü garanti
 
-The strong guarantee states that if a function goes out of scope because of an exception, it will not leak memory and program state will not be modified. A function that provides a strong guarantee is essentially a transaction that has commit or rollback semantics: either it completely succeeds or it has no effect.
+Güçlü garanti, bir işlev bir özel durum nedeniyle kapsam dışına geçtiğinde, bellek sızıntısına neden olur ve program durumu değiştirilmez. Kesin bir garanti sağlayan bir işlev aslında işleme veya geri alma semantiğinin bulunduğu bir işlemdir: tamamen başarılı olur ya da hiçbir etkisi yoktur.
 
-### <a name="basic-guarantee"></a>Basic guarantee
+### <a name="basic-guarantee"></a>Temel garanti
 
-The basic guarantee is the weakest of the three. However, it might be the best choice when a strong guarantee is too expensive in memory consumption or in performance. The basic guarantee states that if an exception occurs, no memory is leaked and the object is still in a usable state even though the data might have been modified.
+Temel garanti, üçünün en zayıf güvencesini içerir. Ancak, bir güçlü garanti, bellek tüketimine veya performanstan çok pahalı olduğunda en iyi seçenek olabilir. Temel garanti, bir özel durum oluşursa, bellek sızdırılmaması ve verilerin değiştirilmiş olmasına karşın hala kullanılabilir durumda olduğunu belirtir.
 
-## <a name="exception-safe-classes"></a>Exception-safe classes
+## <a name="exception-safe-classes"></a>Özel durum güvenli sınıfları
 
-A class can help ensure its own exception safety, even when it is consumed by unsafe functions, by preventing itself from being partially constructed or partially destroyed. If a class constructor exits before completion, then the object is never created and its destructor will never be called. Although automatic variables that are initialized prior to the exception will have their destructors invoked, dynamically allocated memory or resources that are not managed by a smart pointer or similar automatic variable will be leaked.
+Bir sınıf, kendi özel durum güvenliğine, güvenli olmayan işlevler tarafından tüketilse bile, kendi kısmen oluşturulmasını veya kısmen yok etmesini önlemeye yardımcı olabilir. Bir sınıf oluşturucusu tamamlanmadan önce çıkmadıysa, nesne hiçbir şekilde oluşturulmaz ve yok edicisi hiçbir şekilde çağrılmaz. Özel durumdan önce başlatılan otomatik değişkenlerin yok ediciler, dinamik olarak ayrılan bellek veya akıllı bir işaretçi ya da benzer bir otomatik değişken tarafından yönetilmeyen kaynaklar sızdırılacaktır.
 
-The built-in types are all no-fail, and the Standard Library types support the basic guarantee at a minimum. Follow these guidelines for any user-defined type that must be exception-safe:
+Yerleşik türler tamamen başarısız olur ve standart kitaplık türleri en az bir temel garantisi destekler. Özel durum güvenli olması gereken kullanıcı tanımlı herhangi bir tür için bu yönergeleri izleyin:
 
-- Use smart pointers or other RAII-type wrappers to manage all resources. Avoid resource management functionality in your class destructor, because the destructor will not be invoked if the constructor throws an exception. However, if the class is a dedicated resource manager that controls just one resource, then it's acceptable to use the destructor to manage resources.
+- Tüm kaynakları yönetmek için akıllı işaretçiler veya diğer ÇII türü sarmalayıcıları kullanın. Oluşturucu bir özel durum oluşturursa yok edici çağrılmayacağından, sınıf yıkıcıdaki kaynak yönetimi işlevlerinden kaçının. Ancak, sınıfı yalnızca bir kaynağı denetleyen adanmış bir kaynak yöneticisi ise, kaynakları yönetmek için yıkıcıyı kullanmak kabul edilebilir.
 
-- Understand that an exception thrown in a base class constructor cannot be swallowed in a derived class constructor. If you want to translate and re-throw the base class exception in a derived constructor, use a function try block.
+- Bir temel sınıf oluşturucusunda oluşan özel durumun türetilmiş bir sınıf oluşturucusunda sallowed olduğunu anlayın. Türetilmiş bir oluşturucuda temel sınıf özel durumunu çevirmek ve yeniden oluşturmak istiyorsanız, bir işlev try bloğu kullanın.
 
-- Consider whether to store all class state in a data member that is wrapped in a smart pointer, especially if a class has a concept of "initialization that is permitted to fail." Although C++ allows for uninitialized data members, it does not support uninitialized or partially initialized class instances. A constructor must either succeed or fail; no object is created if the constructor does not run to completion.
+- Özellikle bir sınıfta "başarısız olmasına izin verilen başlatma" kavramı varsa, bir akıllı işaretçiye Sarmalanan bir veri üyesinde tüm sınıf durumlarını depolayıp depolayacağınızı düşünün. , C++ Başlatılmamış veri üyelerine izin verir, ancak başlatılmamış veya kısmen başlatılmış sınıf örneklerini desteklemez. Bir oluşturucunun başarılı ya da başarısız olması gerekir; Oluşturucu tamamlanana kadar çalıştırılmadıysa hiçbir nesne oluşturulmaz.
 
-- Do not allow any exceptions to escape from a destructor. A basic axiom of C++ is that destructors should never allow an exception to propagate up the call stack. If a destructor must perform a potentially exception-throwing operation, it must do so in a try catch block and swallow the exception. The standard library provides this guarantee on all destructors it defines.
+- Herhangi bir özel durumun yıkıcıya çıkmasına izin vermeyin. Temel bir axiod C++ , yok edicilerin çağrı yığınını yaymak için bir özel duruma asla izin vermemelidir. Yıkıcı bir özel durum atma işlemi gerçekleştirirse, bunu bir try catch bloğunda yapması gerekir ve özel duruma izin verin. Standart Kitaplık, tanımladığı tüm yıkıcılarda bu garantisi sağlar.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Modern C++ best practices for exceptions and error handling](errors-and-exception-handling-modern-cpp.md)<br/>
+[Özel C++ durumlar ve hata işleme için modern en iyi uygulamalar](errors-and-exception-handling-modern-cpp.md)<br/>
 [Nasıl yapılır: Özel Durumlu Kod ve Özel Durumlu Olmayan Kod Arasında Arabirim](how-to-interface-between-exceptional-and-non-exceptional-code.md)

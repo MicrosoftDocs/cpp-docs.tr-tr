@@ -15,7 +15,7 @@ ms.locfileid: "74398742"
 ---
 # <a name="dosseg-32-bit-masm"></a>DOSSEG (32-bit MASM)
 
-Identical to [.DOSSEG](../../assembler/masm/dot-dosseg.md), which is the preferred form. (32-bit MASM only.)
+Özdeş [. ](../../assembler/masm/dot-dosseg.md)Bu, tercih edilen form olan DOSSEG. (yalnızca 32-bit masa.)
 
 ## <a name="syntax"></a>Sözdizimi
 

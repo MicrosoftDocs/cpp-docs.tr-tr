@@ -1,5 +1,5 @@
 ---
-title: operator &lt;&gt;
+title: işleç &lt;&gt;
 ms.date: 08/30/2018
 f1_keywords:
 - <>
@@ -15,14 +15,14 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74396795"
 ---
-# <a name="operator-ltgt"></a>operator &lt;&gt;
+# <a name="operator-ltgt"></a>işleç &lt;&gt;
 
-Treats *text* as a single literal element.
+*Metni* tek bir sabit değer öğesi olarak değerlendirir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> __\<__ *text* __>__
+> __\<__ *metin* __>__
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Operators reference](operators-reference.md)
+[İşleçler başvurusu](operators-reference.md)

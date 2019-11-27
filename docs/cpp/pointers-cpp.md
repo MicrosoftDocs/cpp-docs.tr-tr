@@ -1,7 +1,7 @@
 ---
-title: Pointers (C++)
+title: İşaretçiler (C++)
 ms.date: 11/19/2019
-description: About raw pointers and smart pointers in Microsoft C++.
+description: Microsoft C++'taki ham işaretçiler ve akıllı işaretçiler hakkında.
 helpviewer_keywords:
 - pointers (C++)
 ms.assetid: 595387c5-8e58-4670-848f-344c7caf985e
@@ -12,28 +12,28 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 11/20/2019
 ms.locfileid: "74246417"
 ---
-# <a name="pointers-c"></a>Pointers (C++)
+# <a name="pointers-c"></a>İşaretçiler (C++)
 
-A pointer is a variable that stores the memory address of an object. Pointers are used extensively in both C and C++ for three main purposes:
+İşaretçi, bir nesnenin bellek adresini depolayan bir değişkendir. İşaretçiler hem C hem de üç ana amaç C++ için kapsamlı olarak kullanılır:
 
-- to allocate new objects on the heap,
-- to pass functions to other functions
-- to iterate over elements in arrays or other data structures.
+- yığında yeni nesneler ayırmak için
+- işlevleri diğer işlevlere geçirmek için
+- diziler veya diğer veri yapılarında öğeleri yinelemek için.
 
-In C-style programming, *raw pointers* are used for all these scenarios. However, raw pointers are the source of many serious programming errors. Therefore, their use is strongly discouraged except where they provide a significant performance benefit and there is no ambiguity as to which pointer is the *owning pointer* that is responsible for deleting the object. Modern C++ provides *smart pointers* for allocating objects, *iterators* for traversing data structures, and *lambda expressions* for passing functions. By using these language and library facilities instead of raw pointers, you will make your program safer, easier to debug, and simpler to understand and maintain. See [Smart pointers](smart-pointers-modern-cpp.md), [Iterators](../standard-library/iterators.md), and [Lambda expressions](lambda-expressions-in-cpp.md) for more information.
+C stili programlamada, *ham işaretçiler* tüm bu senaryolar için kullanılır. Ancak ham işaretçiler birçok ciddi programlama hatasının kaynağıdır. Bu nedenle, önemli bir performans avantajı sağladığı durumlar haricinde kullanımları kesinlikle önerilmez ve hangi işaretçinin nesneyi silmekten sorumlu olan *işaretçi* olduğu konusunda hiçbir belirsizlik yoktur. Modern C++ , nesneleri ayırmaya yönelik *akıllı işaretçiler* , veri yapılarına geçiş için *yineleyiciler* ve işlevleri geçirmek için *lambda ifadeleri* sağlar. Ham işaretçiler yerine bu dil ve kitaplık tesislerini kullanarak, programınızı daha güvenli hale getirir, hata ayıklama ve daha kolay anlaşılır ve bakım yapmanız gerekir. Daha fazla bilgi için bkz. [akıllı işaretçiler](smart-pointers-modern-cpp.md), [yineleyiciler](../standard-library/iterators.md)ve [lambda ifadeleri](lambda-expressions-in-cpp.md) .
 
 ## <a name="in-this-section"></a>Bu bölümde
 
-- [Raw pointers](raw-pointers.md)
-- [Const and volatile pointers](const-and-volatile-pointers.md)
-- [new and delete operators](new-and-delete-operators.md)
-- [Smart pointers](smart-pointers-modern-cpp.md)
-- [How to: Create and use unique_ptr instances](how-to-create-and-use-unique-ptr-instances.md)
-- [How to: Create and use shared_ptr instances](how-to-create-and-use-shared-ptr-instances.md)
-- [How to: Create and use weak_ptr instances](how-to-create-and-use-weak-ptr-instances.md)
-- [How to: Create and use CComPtr and CComQIPtr instances](how-to-create-and-use-ccomptr-and-ccomqiptr-instances.md)
+- [Ham işaretçiler](raw-pointers.md)
+- [Const ve volatile işaretçileri](const-and-volatile-pointers.md)
+- [New ve delete işleçleri](new-and-delete-operators.md)
+- [Akıllı işaretçiler](smart-pointers-modern-cpp.md)
+- [Nasıl yapılır: unique_ptr örnekleri oluşturma ve kullanma](how-to-create-and-use-unique-ptr-instances.md)
+- [Nasıl yapılır: shared_ptr örnekleri oluşturma ve kullanma](how-to-create-and-use-shared-ptr-instances.md)
+- [Nasıl yapılır: weak_ptr örnekleri oluşturma ve kullanma](how-to-create-and-use-weak-ptr-instances.md)
+- [Nasıl yapılır: CComPtr ve CComQIPtr örnekleri oluşturma ve kullanma](how-to-create-and-use-ccomptr-and-ccomqiptr-instances.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Yineleyiciler](../standard-library/iterators.md)</br>
-[Lambda expressions](lambda-expressions-in-cpp.md)
+[Lambda ifadeleri](lambda-expressions-in-cpp.md)

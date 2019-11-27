@@ -27,7 +27,7 @@ Windows tarafından tanınan donanım özel durumları, aşağıdaki tabloda öz
 |--------------------|------------------------|
 |STATUS_ACCESS_VIOLATION|Erişilemeyen bellek konumu okunuyor veya bu konuma yazılıyor.|
 |STATUS_BREAKPOINT|Donanım tarafından tanımlanmış bir kesme noktasıyla karşılaşıldı; yalnızca hata ayıklayıcılar tarafından kullanılır.|
-|STATUS_DATATYPE_MISALIGNMENT|Düzgün bir şekilde hizalanmamış bir adreste veriler okunuyor veya yazılıyor; örneğin, 16 bit varlıklar 2 bayt sınırlarda hizalanmalıdır. (Not applicable to Intel 80*x*86 processors.)|
+|STATUS_DATATYPE_MISALIGNMENT|Düzgün bir şekilde hizalanmamış bir adreste veriler okunuyor veya yazılıyor; örneğin, 16 bit varlıklar 2 bayt sınırlarda hizalanmalıdır. (Intel 80*x*86 işlemciler için geçerli değildir.)|
 |STATUS_FLOAT_DIVIDE_BY_ZERO|Kayan nokta türü 0.0 ile bölünüyor.|
 |STATUS_FLOAT_OVERFLOW|Kayan nokta türünün en fazla pozitif üssü aşılıyor.|
 |STATUS_FLOAT_UNDERFLOW|Kayan nokta türünün en düşük negatif üssünün büyüklüğü aşılıyor.|
@@ -38,9 +38,9 @@ Windows tarafından tanınan donanım özel durumları, aşağıdaki tabloda öz
 |STATUS_INTEGER_OVERFLOW|Tamsayının aralığını aşan bir işlem deneniyor.|
 |STATUS_SINGLE_STEP|Tek adımlı modda bir yönerge yürütülüyor; yalnızca hata ayıklayıcıları tarafından kullanılır.|
 
-Yukarıdaki tabloda listelenen özel durumların çoğunun hata ayıklayıcılar, işletim sistemi veya başka bir düşük düzeydeki kod tarafından işlenmesi amaçlanır. Tamsayı ve kayan nokta hataları dışında, kodunuzun bu hataları işlememesi gerekir. Bu nedenle, özel durumları yoksaymak (0 olarak değerlendirmek) için genellikle özel durum işleme filtresini kullanmanız gerekir. Aksi takdirde, alt düzey mekanizmaların uygun şekilde yanıt vermesini engelleyebilirsiniz. You can, however, take appropriate precautions against the potential effect of these low-level errors by [writing termination handlers](../cpp/writing-a-termination-handler.md).
+Yukarıdaki tabloda listelenen özel durumların çoğunun hata ayıklayıcılar, işletim sistemi veya başka bir düşük düzeydeki kod tarafından işlenmesi amaçlanır. Tamsayı ve kayan nokta hataları dışında, kodunuzun bu hataları işlememesi gerekir. Bu nedenle, özel durumları yoksaymak (0 olarak değerlendirmek) için genellikle özel durum işleme filtresini kullanmanız gerekir. Aksi takdirde, alt düzey mekanizmaların uygun şekilde yanıt vermesini engelleyebilirsiniz. Ancak, [sonlandırma işleyicileri yazarak](../cpp/writing-a-termination-handler.md)bu düşük düzeyli hataların olası etkileriyle ilgili önlemler alabilirsiniz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Writing an exception handler](../cpp/writing-an-exception-handler.md)<br/>
+[Özel durum işleyicisi yazma](../cpp/writing-an-exception-handler.md)<br/>
 [Yapılandırılmış Özel Durum İşleme (C/C++)](../cpp/structured-exception-handling-c-cpp.md)

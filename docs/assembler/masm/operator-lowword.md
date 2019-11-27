@@ -17,12 +17,12 @@ ms.locfileid: "74396722"
 ---
 # <a name="operator-lowword"></a>LOWWORD işleci
 
-Returns the low 16 bits of *expression*. MASM expressions are 64-bit values.
+*İfadenin*16 bit olduğunu döndürür. Masd ifadeleri 64 bitlik değerlerdir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **LOWWORD** *expression*
+> **Lowword** *ifadesi*
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Operators reference](operators-reference.md)
+[İşleçler başvurusu](operators-reference.md)

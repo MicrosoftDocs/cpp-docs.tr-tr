@@ -15,53 +15,53 @@ ms.locfileid: "74393725"
 ---
 # <a name="segment"></a>SEGMENT
 
-Defines a program segment called *name* having segment attributes
+Bölüm öznitelikleri olan *ad* adlı bir program kesimi tanımlar
 
 ## <a name="syntax"></a>Sözdizimi
 
-> *name* **SEGMENT** ⟦**READONLY**⟧ ⟦*align*⟧ ⟦*combine*⟧ ⟦*use*⟧ ⟦*characteristics*⟧ **ALIAS(** _string_ **)** ⟦ __'__ *class* __'__ ⟧\
-> *statements*\
-> *name* **ENDS**
+> *ad* **segmenti** ⟦**ReadOnly**⟧ ⟦*align*⟧ ⟦*birleştirme* *⟧ ⟦ ⟧* ⟦ ⟧*Özellikler*⟦ **ALIAS (** _dize_ **)** ⟧ __'__ *Class* __'__ \
+> *deyimler*\
+> *ad* **bitiyor**
 
 #### <a name="parameters"></a>Parametreler
 
 *align*<br/>
-The range of memory addresses from which a starting address for the segment can be selected. The alignment type can be any one of the following:
+Segment için bir başlangıç adresinin seçilebileceği bellek adresleri aralığı. Hizalama türü aşağıdakilerden biri olabilir:
 
-|Align Type|Starting Address|
+|Hizalama türü|Başlangıç adresi|
 |----------------|----------------------|
-|**BYTE**|Next available byte address.|
-|**WORD**|Next available word address (2 bytes per word).|
-|**DWORD**|Next available double word address (4 bytes per double word).|
-|**PARA**|Next available paragraph address (16 bytes per paragraph).|
-|**PAGE**|Next available page address (256 bytes per page).|
-|**ALIGN**(*n*)|Next available *n*th byte address. See Remarks section for more information.|
+|**BAYT**|Sonraki kullanılabilir bayt adresi.|
+|**WORD**|Sonraki kullanılabilir sözcük adresi (sözcük başına 2 bayt).|
+|**DWORD**|Sonraki kullanılabilir çift sözcük adresi (çift sözcük başına 4 bayt).|
+|**PARAGRAF**|Sonraki kullanılabilir paragraf adresi (paragraf başına 16 bayt).|
+|**PAGE**|Sonraki kullanılabilir sayfa adresi (sayfa başına 256 bayt).|
+|**Hizala**(*n*)|Sonraki kullanılabilir *n*. bayt adresi. Daha fazla bilgi için bkz. açıklamalar bölümü.|
 
-If this parameter is not specified, **PARA** is used by default.
+Bu parametre belirtilmemişse, varsayılan olarak **paragraf** kullanılır.
 
-*combine*\
-**PUBLIC**, **STACK**, **COMMON**, **MEMORY**, **AT**<em>address</em>, **PRIVATE**
+*birleştirme*\
+**Ortak**, **yığın**, **ortak**, **bellek**,<em>Adres</em>, **özel**
 
-*use*\
-**USE16**, **USE32**, **FLAT**
+\ *kullan*
+**USE16**, **USE32**, **Flat**
 
-*characteristics*\
-**INFO**, **READ**, **WRITE**, **EXECUTE**, **SHARED**, **NOPAGE**, **NOCACHE**, and **DISCARD**
+*özellikler*\
+**Bilgi**, **okuma**, **yazma**, **yürütme**, **paylaşılan**, **nopage**, **NoCache**ve **at**
 
-These are supported for COFF only and correspond to the COFF section characteristics of similar name (for example, **SHARED** corresponds to IMAGE_SCN_MEM_SHARED). READ sets the IMAGE_SCN_MEM_READ flag. The obsolete READONLY flag caused the section to clear the IMG_SCN_MEM_WRITE flag. If any *characteristics* are set, the default characteristics are not used and only the programmer-specified flags are in effect.
+Bunlar yalnızca COFF için desteklenir ve benzer adın COFF bölüm özelliklerine karşılık gelir (örneğin, **paylaşılan** IMAGE_SCN_MEM_SHARED karşılık gelir). Oku IMAGE_SCN_MEM_READ bayrağını ayarlar. Kullanımdan kaldırılmış salt okunur bayrağı, Bölüm IMG_SCN_MEM_WRITE bayrağını temizleyemez. Herhangi bir *özellik* ayarlandıysa, varsayılan özellikler kullanılmaz ve yalnızca Programcı tarafından belirtilen bayraklar etkin olur.
 
-_string_\
-This string is used as the section name in the emitted COFF object.  Creates multiple sections with the same external name, with distinct MASM segment names.
+_dize_\
+Bu dize, yayılan COFF nesnesinde bölüm adı olarak kullanılır.  Aynı dış ada sahip birden çok bölüm oluşturur ve farklı MASı segmenti adı vardır.
 
-Not supported with **/omf**.
+**/OMF**ile desteklenmez.
 
-*class*\
-Designates how segments should be combined and ordered in the assembled file. Typical values are, `'DATA'`, `'CODE'`, `'CONST'` and `'STACK'`
+*sınıf*\
+Parçaların birleştirilmiş dosyada birleştirilmesi ve sıralanabilmesi gerektiğini belirler. Tipik değerler şunlardır `'DATA'`, `'CODE'`, `'CONST'` ve `'STACK'`
 
 ## <a name="remarks"></a>Açıklamalar
 
-For `ALIGN(n)`, *n* may be any power of 2 from 1 to 8192; not supported with **/omf**.
+`ALIGN(n)`için, *n* , 1 ile 8192 arasında herhangi bir güç olabilir. **/OMF**ile desteklenmez.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Directives reference](directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)

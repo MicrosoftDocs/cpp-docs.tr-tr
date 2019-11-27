@@ -15,13 +15,13 @@ ms.locfileid: "74393154"
 ---
 # <a name="tbyte"></a>TBYTE
 
-Allocates and optionally initializes 10 bytes of storage for each *initializer*. Can also be used as a type specifier anywhere a type is legal.
+Her *Başlatıcı*için 10 baytlık depolamayı ayırır ve isteğe bağlı olarak başlatır. , Türün geçerli olduğu her yerde tür belirleyici olarak da kullanılabilir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> ⟦*name*⟧ **TBYTE** *initializer* ⟦ __,__ *initializer* ...⟧
+> ⟦*adı*⟧ **TByte** *başlatıcısı* ⟦ __,__ *Başlatıcı* ... ⟧
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Directives Reference](../../assembler/masm/directives-reference.md)\
+[Yönergeler başvurusu](../../assembler/masm/directives-reference.md)\
 [DT](../../assembler/masm/dt.md)

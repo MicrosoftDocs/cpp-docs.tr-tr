@@ -13,34 +13,34 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74398252"
 ---
-# <a name="fpo-32-bit-masm"></a>.FPO (32-bit MASM)
+# <a name="fpo-32-bit-masm"></a>. D (32-bit masa)
 
-The **.FPO** directive controls the emission of debug records to the .debug$F segment or section. (32-bit MASM only.)
+**. IBU yönergesi,** hata ayıklama $ F segmentine veya bölümüne hata ayıklama kayıtlarını denetler. (yalnızca 32-bit masa.)
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **.FPO** (*cdwLocals*, *cdwParams*, *cbProlog*, *cbRegs*, *fUseBP*, *cbFrame*)
+> **.** Mı (*cdwyereller*, *cdwparams*, *cbprolog*, *cbregs*, *fusebp*, *cbframe*)
 
 ### <a name="parameters"></a>Parametreler
 
-*cdwLocals*\
-Number of local variables, an unsigned 32 bit value.
+*Cdwyereller*\
+İşaretsiz 32 bitlik bir değer olan yerel değişkenlerin sayısı.
 
-*cdwParams*\
-Size of the parameters in DWORDS, an unsigned 16 bit value.
+*Cdwparams*\
+DWORD içindeki parametrelerin boyutu, işaretsiz 16 bit değeri.
 
-*cbProlog*\
-Number of bytes in the function prolog code, an unsigned 8 bit value.
+*Cbprolog*\
+İşlev giriş kodundaki bayt sayısı, işaretsiz 8 bit değeri.
 
-*cbRegs*\
-Number registers saved.
+*Cbregs*\
+Numara kayıtları kaydedildi.
 
-*fUseBP*\
-Indicates whether the EBP register has been allocated. either 0 or 1.
+*Fusebp*\
+EBP kaydının ayrılıp ayrılmadığını belirtir. 0 ya da 1.
 
-*cbFrame*\
-Indicates the frame type.  See [FPO_DATA](/windows/win32/api/winnt/ns-winnt-fpo_data) for more information.
+*Cbframe*\
+Çerçeve türünü gösterir.  Daha fazla bilgi için bkz. [FPO_DATA](/windows/win32/api/winnt/ns-winnt-fpo_data) .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Directives reference](directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)

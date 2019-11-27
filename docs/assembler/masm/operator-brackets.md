@@ -1,5 +1,5 @@
 ---
-title: operator brackets
+title: işleç ayraçları
 ms.date: 08/30/2018
 f1_keywords:
 - operator []
@@ -15,13 +15,13 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74397082"
 ---
-# <a name="operator-"></a>operator \[\]
+# <a name="operator-"></a>işleç \[\]
 
-Returns *expression1* plus \[*expression2*\].
+*İfade1* Plus \[*İfade2*\]döndürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> *expression1* **[** expression2 **]**
+> *İfade1* **[** İfade2 **]**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

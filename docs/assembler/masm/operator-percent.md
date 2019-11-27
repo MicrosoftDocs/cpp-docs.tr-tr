@@ -17,12 +17,12 @@ ms.locfileid: "74396507"
 ---
 # <a name="operator-"></a>% işleci
 
-Treats the value of *expression* in a macro argument as text.
+Makro bağımsız değişkenindeki *ifadenin* değerini metin olarak değerlendirir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **%** *expression*
+> **%** *ifadesi*
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Operators reference](operators-reference.md)
+[İşleçler başvurusu](operators-reference.md)

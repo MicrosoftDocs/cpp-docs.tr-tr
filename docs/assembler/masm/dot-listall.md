@@ -15,7 +15,7 @@ ms.locfileid: "74398179"
 ---
 # <a name="listall"></a>.LISTALL
 
-Starts listing of all statements.
+Tüm deyimlerin dökümünü başlatır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -23,8 +23,8 @@ Starts listing of all statements.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Equivalent to the combination of [.LIST](../../assembler/masm/dot-list.md), [.LISTIF](../../assembler/masm/dot-listif.md), and [.LISTMACROALL](../../assembler/masm/dot-listmacroall.md).
+Birleşimine eşdeğerdir [. LISTE](../../assembler/masm/dot-list.md), [. LıSTıF](../../assembler/masm/dot-listif.md)ve [. LISTMAKROALL](../../assembler/masm/dot-listmacroall.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Directives reference](directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)

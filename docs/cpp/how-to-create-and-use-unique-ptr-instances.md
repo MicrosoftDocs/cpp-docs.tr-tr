@@ -1,5 +1,5 @@
 ---
-title: 'How to: Create and use unique_ptr instances'
+title: 'Nasıl yapılır: unique_ptr örnekleri oluşturma ve kullanma'
 ms.custom: how-to
 ms.date: 11/19/2018
 ms.topic: conceptual
@@ -11,45 +11,45 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 11/20/2019
 ms.locfileid: "74246532"
 ---
-# <a name="how-to-create-and-use-unique_ptr-instances"></a>How to: Create and use unique_ptr instances
+# <a name="how-to-create-and-use-unique_ptr-instances"></a>Nasıl yapılır: unique_ptr örnekleri oluşturma ve kullanma
 
-A [unique_ptr](../standard-library/unique-ptr-class.md) does not share its pointer. It cannot be copied to another `unique_ptr`, passed by value to a function, or used in any C++ Standard Library algorithm that requires copies to be made. A `unique_ptr` can only be moved. This means that the ownership of the memory resource is transferred to another `unique_ptr` and the original `unique_ptr` no longer owns it. Birden fazla sahiplik program mantığına karmaşıklık kattığından nesneyi tek sahiple kısıtlamanızı öneririz. Therefore, when you need a smart pointer for a plain C++ object, use `unique_ptr`, and when you construct a `unique_ptr`, use the [make_unique](../standard-library/memory-functions.md#make_unique) helper function.
+[Unique_ptr](../standard-library/unique-ptr-class.md) , işaretçisini paylaşmaz. Başka bir `unique_ptr`kopyalanamıyor, değere göre bir işleve geçirilemez veya kopyaların yapılmasını gerektiren herhangi C++ bir standart kitaplık algoritmasında kullanılamaz. Bir `unique_ptr` yalnızca taşınabilir. Bu, bellek kaynağının sahipliğinin başka bir `unique_ptr` aktarılmasının ve özgün `unique_ptr` artık sahip olmadığı anlamına gelir. Birden fazla sahiplik program mantığına karmaşıklık kattığından nesneyi tek sahiple kısıtlamanızı öneririz. Bu nedenle, düz C++ bir nesne için akıllı bir işaretçiye ihtiyacınız olduğunda `unique_ptr`kullanın ve bir `unique_ptr`oluşturduğunuzda [make_unique](../standard-library/memory-functions.md#make_unique) yardımcı işlevini kullanın.
 
-The following diagram illustrates the transfer of ownership between two `unique_ptr` instances.
+Aşağıdaki diyagramda, iki `unique_ptr` örneği arasındaki sahipliğin aktarımı gösterilmektedir.
 
-![Moving the ownership of a unique&#95;ptr](media/unique_ptr.png "Moving the ownership of a unique&#95;ptr")
+![Benzersiz&#95;bir PTR 'nin sahipliğini taşıma](media/unique_ptr.png "Benzersiz&#95;bir PTR 'nin sahipliğini taşıma")
 
-`unique_ptr` is defined in the `<memory>` header in the C++ Standard Library. It is exactly as efficient as a raw pointer and can be used in C++ Standard Library containers. The addition of `unique_ptr` instances to C++ Standard Library containers is efficient because the move constructor of the `unique_ptr` eliminates the need for a copy operation.
+`unique_ptr`, C++ standart kitaplıktaki `<memory>` üst bilgisinde tanımlanmıştır. Bu, bir ham işaretçi olarak tam olarak etkilidir ve C++ standart kitaplık kapsayıcılarında kullanılabilir. `unique_ptr` taşıma Oluşturucusu bir kopyalama işlemine C++ ihtiyacı ortadan kaldırdığı için, `unique_ptr` örneklerinin standart kitaplık kapsayıcılarına eklenmesi etkilidir.
 
 ## <a name="example-1"></a>Örnek 1
 
-The following example shows how to create `unique_ptr` instances and pass them between functions.
+Aşağıdaki örnek, `unique_ptr` örneklerinin nasıl oluşturulacağını ve işlevler arasında nasıl geçirileceğini gösterir.
 
 [!code-cpp[stl_smart_pointers#210](codesnippet/CPP/how-to-create-and-use-unique-ptr-instances_1.cpp)]
 
-These examples demonstrate this basic characteristic of `unique_ptr`: it can be moved, but not copied. "Moving" transfers ownership to a new `unique_ptr` and resets the old `unique_ptr`.
+Bu örnekler `unique_ptr`bu temel özelliğini gösterir: taşınabilir, ancak kopyalanmaz. "Taşıma", sahipliği yeni bir `unique_ptr` aktarır ve eski `unique_ptr`sıfırlar.
 
 ## <a name="example-2"></a>Örnek 2
 
-The following example shows how to create `unique_ptr` instances and use them in a vector.
+Aşağıdaki örnek, `unique_ptr` örneklerinin nasıl oluşturulacağını ve bir vektörde nasıl kullanılacağını gösterir.
 
 [!code-cpp[stl_smart_pointers#211](codesnippet/CPP/how-to-create-and-use-unique-ptr-instances_2.cpp)]
 
-In the range for  loop, notice that the `unique_ptr` is passed by reference. If you try to pass by value here, the compiler will throw an error because the `unique_ptr` copy constructor is deleted.
+For döngüsü aralığında `unique_ptr` başvuruya göre geçirildiğine dikkat edin. Burada değere göre geçiş yapmayı denerseniz, `unique_ptr` kopya Oluşturucu silindiği için derleyici bir hata oluşturur.
 
 ## <a name="example-3"></a>Örnek 3
 
-The following example shows how to initialize a `unique_ptr` that is a class member.
+Aşağıdaki örnek, bir sınıf üyesi olan bir `unique_ptr` başlatmayı gösterir.
 
 [!code-cpp[stl_smart_pointers#212](codesnippet/CPP/how-to-create-and-use-unique-ptr-instances_3.cpp)]
 
-## <a name="example-4"></a>Example 4
+## <a name="example-4"></a>Örnek 4
 
-You can use [make_unique](../standard-library/memory-functions.md#make_unique) to create a `unique_ptr` to an array, but you cannot use `make_unique` to initialize the array elements.
+Bir diziye `unique_ptr` oluşturmak için [make_unique](../standard-library/memory-functions.md#make_unique) kullanabilirsiniz, ancak dizi öğelerini başlatmak için `make_unique` kullanamazsınız.
 
 [!code-cpp[stl_smart_pointers#213](codesnippet/CPP/how-to-create-and-use-unique-ptr-instances_4.cpp)]
 
-For more examples, see [make_unique](../standard-library/memory-functions.md#make_unique).
+Daha fazla örnek için bkz. [make_unique](../standard-library/memory-functions.md#make_unique).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

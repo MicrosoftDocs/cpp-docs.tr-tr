@@ -19,11 +19,11 @@ ms.locfileid: "74397129"
 ---
 # <a name="operator-"></a>\+ işleci
 
-The first operator returns *expression1* plus *expression2*.
+İlk operatör *İfade1* Plus *İfade2*döndürüyor.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> *expression1* + *expression2*
+> *ifade1* + *İfade2*
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -39,7 +39,7 @@ Bırakma verileri bilgi yapısı, bir işlevin yığın işaretçisine sahip old
 |||
 |-|-|
 |UBDE: 3|Sürüm|
-|UBYELERI: 5|Bayraklar|
+|UBYELERI: 5|bayrakları|
 |UBDE|Giriş boyutu|
 |UBDE|Bırakma kodlarının sayısı|
 |UBDE: 4|Çerçeve kaydı|

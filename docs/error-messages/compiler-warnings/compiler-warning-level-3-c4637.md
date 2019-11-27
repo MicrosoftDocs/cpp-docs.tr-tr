@@ -1,5 +1,5 @@
 ---
-title: Compiler Warning (level 3) C4637
+title: Derleyici Uyarısı (düzey 3) C4637
 ms.date: 11/04/2016
 f1_keywords:
 - C4637
@@ -13,13 +13,13 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 11/19/2019
 ms.locfileid: "74189116"
 ---
-# <a name="compiler-warning-level-3-c4637"></a>Compiler Warning (level 3) C4637
+# <a name="compiler-warning-level-3-c4637"></a>Derleyici Uyarısı (düzey 3) C4637
 
-XML document comment target: \<include> tag discarded.  reason
+XML belgesi Açıklama hedefi: \<içerme > etiketi atıldı.  reason
 
-The syntax of an [\<include>](../../build/reference/include-visual-cpp.md) tag was not correct.
+Bir [\<>](../../build/reference/include-visual-cpp.md) etiketinin sözdizimi doğru değil.
 
-The following sample generates C4637:
+Aşağıdaki örnek C4637 oluşturur:
 
 ```cpp
 // C4637.cpp

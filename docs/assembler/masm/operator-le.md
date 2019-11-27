@@ -17,12 +17,12 @@ ms.locfileid: "74396858"
 ---
 # <a name="operator-le"></a>LE işleci
 
-Returns true (-1) if *expression1* is less than or equal to *expression2*, or returns false (0) if it is not.
+*İfade1* , *İfade2*' den küçük veya ona eşitse true (-1) döndürür ya da değilse false (0) döndürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> *expression1* **LE** *expression2*
+> *İfade1* *Deyim2*
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Operators reference](operators-reference.md)
+[İşleçler başvurusu](operators-reference.md)

@@ -15,7 +15,7 @@ ms.locfileid: "74398544"
 ---
 # <a name="cref"></a>.CREF
 
-Enables listing of symbols in the symbol portion of the symbol table and browser file.
+Sembol tablosu ve tarayıcı dosyasının sembol bölümünde sembol listesini sunar.
 
 ## <a name="syntax"></a>Sözdizimi
 

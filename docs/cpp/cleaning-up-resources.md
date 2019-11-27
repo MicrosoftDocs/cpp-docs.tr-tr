@@ -18,19 +18,19 @@ ms.locfileid: "74246642"
 ---
 # <a name="cleaning-up-resources"></a>Kaynakları Temizleme
 
-Sonlandırma işleyicisi yürütülürken, sonlandırma işleyicisi çağrılmadan önce hangi kaynakların gerçekten ayrıldığını bilemeyebilirsiniz. It is possible that the **__try** statement block was interrupted before all resources were allocated, so that not all resources were opened.
+Sonlandırma işleyicisi yürütülürken, sonlandırma işleyicisi çağrılmadan önce hangi kaynakların gerçekten ayrıldığını bilemeyebilirsiniz. Tüm kaynaklar ayrılmadan önce **__try** ekstre bloğunun kesintiye uğratıldığından, tüm kaynakların açılmaması mümkündür.
 
 Bu nedenle, güvende olmak için, sonlandırma işleme temizleme işlemine devam etmeden önce hangi kaynakların açık olduğunu görmek için denetlemelisiniz. Önerilen bir yordam şöyledir:
 
 1. Tanıtıcıları NULL olarak başlatın.
 
-1. In the **__try** statement block, allocate resources. Kaynak ayırma işlemi yapılırken tanıtıcılar pozitif değerlere ayarlanır.
+1. **__Try** bildiri bloğunda, kaynak ayırın. Kaynak ayırma işlemi yapılırken tanıtıcılar pozitif değerlere ayarlanır.
 
-1. In the **__finally** statement block, release each resource whose corresponding handle or flag variable is nonzero or not NULL.
+1. **__Finally** bildiri bloğunda, karşılık gelen tanıtıcı veya bayrak değişkeni sıfır olmayan veya null olmayan her kaynağı serbest bırakın.
 
 ## <a name="example"></a>Örnek
 
-For example, the following code uses a termination handler to close three files and a memory block that were allocated in the **__try** statement block. Kod, bir kaynağı silmeden önce kaynağın ayrılıp ayrılmadığını kontrol eder.
+Örneğin, aşağıdaki kod, üç dosyayı ve **__try** bildiri bloğunda ayrılan bir bellek bloğunu kapatmak için bir sonlandırma işleyicisi kullanır. Kod, bir kaynağı silmeden önce kaynağın ayrılıp ayrılmadığını kontrol eder.
 
 ```cpp
 // exceptions_Cleaning_up_Resources.cpp
@@ -72,5 +72,5 @@ int main() {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Writing a termination handler](../cpp/writing-a-termination-handler.md)<br/>
+[Sonlandırma işleyicisi yazma](../cpp/writing-a-termination-handler.md)<br/>
 [Yapılandırılmış Özel Durum İşleme (C/C++)](../cpp/structured-exception-handling-c-cpp.md)

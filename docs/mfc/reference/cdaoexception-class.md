@@ -35,15 +35,15 @@ Veri erişim nesnelerine (DAO) göre MFC veritabanı sınıflarından kaynaklana
 class CDaoException : public CException
 ```
 
-## <a name="members"></a>Üyeler
+## <a name="members"></a>Üyeleri
 
-### <a name="public-constructors"></a>Ortak Oluşturucular
+### <a name="public-constructors"></a>Genel Oluşturucular
 
 |Name|Açıklama|
 |----------|-----------------|
 |[CDaoException:: CDaoException](#cdaoexception)|`CDaoException` nesnesi oluşturur.|
 
-### <a name="public-methods"></a>Ortak Yöntemler
+### <a name="public-methods"></a>Genel Yöntemler
 
 |Name|Açıklama|
 |----------|-----------------|

@@ -59,7 +59,7 @@ Bu özel durumlar dışında, Thumb-2 kodundaki BT yönergelerinin kullanımına
    |LDR, LDR [S] B, LDR [S] H|Bellekten yükleme|Ancak LDR değişmez form|
    |STR, STRB, STRH|Belleğe depola||
    |ADD, ADC, RSB, SBC, SUB|Ekle veya çıkart|Değil, ADD/SUB SP, SP, imm7 Forms<br /><br /> RM! = PC, RDN! = PC, RDM! = PC|
-   |CMP, CMN|Karşılaştır|RM! = PC, RN! = PC|
+   |CMP, CMN|{1&gt;Karşılaştır&lt;1}|RM! = PC, RN! = PC|
    |MUL|Bilirsiniz||
    |ASR, LSL, LSR, ROR|Bit kaydırma||
    |VE, BIC, EOR, ORR, TST|Bit düzeyinde aritmetik||
@@ -75,7 +75,7 @@ Tamsayı bölme yönergelerinin kullanımı SDIV ve UDIV, yerel donanım olmayan
 
 ARM işlemcisi 16 tamsayı kaydını destekler:
 
-|Yazmaç|Katılımcıdan?|Rol|
+|Kaydet|Katılımcıdan?|Rol|
 |--------------|---------------|----------|
 |r0|Katılımcıdan|Parametre, sonuç, karalama kayıt 1|
 |R1|Katılımcıdan|Parametre, sonuç, karalama kaydı 2|
@@ -181,7 +181,7 @@ VFP kayıtları, değişen sayıda bağımsız değişken işlevleri için kulla
 
 Tamsayı türü değerleri r0 içinde döndürülür ve isteğe bağlı olarak 64 bitlik dönüş değerleri için R1 olarak genişletilir. VFP/NEON kayan nokta veya SIMD türü değerleri, uygun şekilde S0, D0 veya Q0 içinde döndürülür.
 
-## <a name="stack"></a>Yığın
+## <a name="stack"></a>Toplu İş
 
 Yığın her zaman 4 baytlık hizalı olmalıdır ve herhangi bir işlev sınırında 8 baytlık hizalı olmalıdır. Bu, 64 bitlik yığın değişkenlerinde birbirine kenetlenmiş işlemlerin sık kullanımını desteklemek için gereklidir. ARM EABI, yığının herhangi bir genel arabirimde 8 bayt hizalı olduğunu belirtir. Tutarlılık için ARM ABı, tüm işlev sınırlarını bir ortak arabirim olacak şekilde değerlendirir.
 

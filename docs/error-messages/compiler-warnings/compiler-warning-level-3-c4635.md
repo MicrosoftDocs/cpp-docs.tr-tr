@@ -1,5 +1,5 @@
 ---
-title: Compiler Warning (level 3) C4635
+title: Derleyici Uyarısı (düzey 3) C4635
 ms.date: 11/04/2016
 f1_keywords:
 - C4635
@@ -13,13 +13,13 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 11/19/2019
 ms.locfileid: "74189140"
 ---
-# <a name="compiler-warning-level-3-c4635"></a>Compiler Warning (level 3) C4635
+# <a name="compiler-warning-level-3-c4635"></a>Derleyici Uyarısı (düzey 3) C4635
 
-XML document comment target: badly-formed XML: reason
+XML belgesi Açıklama hedefi: Hatalı biçimlendirilmiş XML: Reason
 
-The compiler found some problem with the XML tags.  Fix the problem and recompile
+Derleyici XML etiketleriyle ilgili bir sorun buldu.  Sorunu giderip yeniden derleyin
 
-The following sample generates C4635:
+Aşağıdaki örnek C4635 oluşturur:
 
 ```cpp
 // C4635.cpp
@@ -33,6 +33,6 @@ The following sample generates C4635:
 public ref class Test {};
 ```
 
-Notice that the output for this sample says: **End tag 'member' does not match the start tag 'summary'.**
+Bu örneğe ilişkin çıktının şöyle göründüğünü unutmayın: **bitiş etiketi ' Member ' başlangıç etiketi ' Summary ' ile eşleşmiyor.**
 
-The problem with this sample is that the end tag for \<summary> is poorly formed, and the compiler does not recognize it as the \<summary> end tag.  The \<member> tag is embedded in the .xdc file by the compiler in every /doc compilation.  So, the problem here is that the end tag \</member>, does not match the previous start tag that the compiler processed (\<summary>.
+Bu örnekteki sorun, \<Özet > bitiş etiketinin kötü biçimli ve derleyicinin \<Özet > bitiş etiketi olarak tanımadığı bir örnektir.  \<member > etiketi, her/doc derlemesinde derleyici tarafından. xdc dosyasına katıştırılır.  Bu nedenle buradaki sorun, \</member > bitiş etiketinin, derleyicinin işlediği önceki başlangıç etiketiyle (\<Özet >) eşleşmez.

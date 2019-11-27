@@ -15,15 +15,15 @@ ms.locfileid: "74397535"
 ---
 # <a name="externdef"></a>EXTERNDEF
 
-Defines one or more external variables, labels, or symbols called *name* whose type is *type*.
+Türü *tür*olan bir veya daha fazla dış değişken, etiket veya *ad adı* adlandırılan sembolleri tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **EXTERNDEF** ⟦*language-type*⟧ *name* __:__ *type* ⟦ __,__ ⟦*language-type*⟧ *name* __:__ *type* ...⟧
+> **Externdef** ⟦*dil türü*⟧ *adı* __:__ *tür* ⟦ __,__ ⟦*dil-tür*⟧ *adı* __:__ *tür* ... ⟧
 
 ## <a name="remarks"></a>Açıklamalar
 
-If *name* is defined in the module, it is treated as [PUBLIC](../../assembler/masm/public-masm.md). If *name* is referenced in the module, it is treated as [EXTERN](../../assembler/masm/extern-masm.md). If *name* is not referenced, it is ignored. The *type* can be [ABS](../../assembler/masm/operator-abs.md), which imports *name* as a constant. Normally used in include files.
+Modül içinde *ad* tanımlıysa, [genel](../../assembler/masm/public-masm.md)olarak kabul edilir. Modülde *ada* başvuruluyorsa, [extern](../../assembler/masm/extern-masm.md)olarak kabul edilir. *Ada* başvurulmuyorsa, yok sayılır. *Tür* , *adı* bir sabit olarak içeri aktaran [ABS](../../assembler/masm/operator-abs.md)olabilir. Genellikle içerme dosyalarında kullanılır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

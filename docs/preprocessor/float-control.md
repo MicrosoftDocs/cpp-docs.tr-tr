@@ -37,7 +37,7 @@ Kayan nokta özel durum semantiğini etkinleştirip etkinleştirmeyeceğinizi (*
 
 **except** yalnızca, **kesin** olarak **Açık**olarak ayarlandığı zaman **Açık** olarak ayarlanabilir.
 
-**push**\
+**gönderim**\
 Geçerli **float_control** ayarını iç derleyici yığınına iter.
 
 **pop**\

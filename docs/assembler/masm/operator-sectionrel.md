@@ -17,16 +17,16 @@ ms.locfileid: "74396480"
 ---
 # <a name="operator-sectionrel"></a>SECTIONREL işleci
 
-Returns the section relative offset of expression relative to the section containing the target in the final executable.
+Son yürütülebilir dosyada hedefi içeren bölüme göre ifadenin göreli sapmasını döndürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **SECTIONREL** *expression*
+> **Sectionrel** *ifadesi*
 
 ## <a name="remarks"></a>Açıklamalar
 
-**SECTIONREL** is available only with COFF object emission.
+**Sectionrel** yalnızca coff nesne emisyonunu ile kullanılabilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Operators reference](operators-reference.md)
+[İşleçler başvurusu](operators-reference.md)

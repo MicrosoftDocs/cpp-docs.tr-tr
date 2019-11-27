@@ -15,12 +15,12 @@ ms.locfileid: "74394594"
 ---
 # <a name="record-masm"></a>RECORD (MASM)
 
-Declares a record type consisting of the specified fields. *fieldname* names the field, *width* specifies the number of bits, and *expression* gives its initial value.
+Belirtilen alanlardan oluşan bir kayıt türü bildirir. *FieldName* adı alan, *Width* bit sayısını belirtir ve *ifade* başlangıçtaki değerini verir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> *recordname* **RECORD** *fieldname* __:__ *width* ⟦ __=__ *expression*⟧ ⟦ __,__ *fieldname* __:__ *width* ⟦ __=__ *expression*⟧ ...⟧
+> *recordname* **kaydı** *Alanadı* __:__ *Width* ⟦ __=__ *Expression*⟧ ⟦ __,__ *Alanadı* __:__ *Width* ⟦ __=__ *ifade*⟧... ⟧
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Directives reference](../../assembler/masm/directives-reference.md)
+[Yönergeler başvurusu](../../assembler/masm/directives-reference.md)

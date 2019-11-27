@@ -1,5 +1,5 @@
 ---
-title: Microsoft Macro Assembler reference
+title: Microsoft Macro Assembler başvurusu
 ms.date: 08/30/2018
 helpviewer_keywords:
 - MASM (Microsoft Macro Assembler), reference
@@ -14,40 +14,40 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74397210"
 ---
-# <a name="microsoft-macro-assembler-reference"></a>Microsoft Macro Assembler reference
+# <a name="microsoft-macro-assembler-reference"></a>Microsoft Macro Assembler başvurusu
 
-The Microsoft Macro Assembler (MASM) provides several advantages over inline assembly. MASM contains a macro language that has features such as looping, arithmetic, and text string processing. MASM also gives you greater control over the hardware because it supports the instruction sets of the 386, 486, and Pentium processors. By using MASM, you also can reduce time and memory overhead.
+Microsoft Macro Assembler (Masd), satır içi derleme üzerinde çeşitli avantajlar sağlar. Masa, döngü, aritmetik ve metin dizesi işleme gibi özelliklere sahip bir makro dili içerir. MASı Ayrıca 386, 486 ve Pentium işlemcilerin yönerge kümelerini desteklediğinden, donanım üzerinde daha fazla denetim sağlar. Masd 'yi kullanarak, saat ve bellek ek yükünü de azaltabilirsiniz.
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
-[ML and ML64 command-line option](../../assembler/masm/ml-and-ml64-command-line-reference.md)\
-Describes the ML.exe and ML64.exe command-line options.
+[Ml ve ML64 komut satırı seçeneği](../../assembler/masm/ml-and-ml64-command-line-reference.md)\
+ML. exe ve ML64. exe komut satırı seçeneklerini açıklar.
 
-[ML error messages](../../assembler/masm/ml-error-messages.md)\
-Describes ML.exe fatal and nonfatal error messages and warnings.
+[Ml hata iletileri](../../assembler/masm/ml-error-messages.md)\
+ML. exe önemli ve önemli olmayan hata iletileri ve uyarılarını açıklar.
 
-[Directives reference](directives-reference.md)\
-Provides links to articles that discuss the use of directives in MASM.
+[Yönergeler başvurusu](directives-reference.md)\
+MASM 'de yönergelerin kullanımını tartışan makalelerin bağlantılarını sağlar.
 
-[Symbols Reference](../../assembler/masm/symbols-reference.md)\
-Provides links to articles that discuss the use of symbols in MASM.
+[Semboller başvurusu](../../assembler/masm/symbols-reference.md)\
+MASM 'de simgelerin kullanımını tartışan makalelere bağlantılar sağlar.
 
-[Operators Reference](../../assembler/masm/operators-reference.md)\
-Provides links to articles that discuss the use of operators in MASM.
+[Işleçler başvurusu](../../assembler/masm/operators-reference.md)\
+MASM 'de işleçlerin kullanımını tartışan makalelere bağlantılar sağlar.
 
-[Processor Manufacturer Programming Manuals](../../assembler/masm/processor-manufacturer-programming-manuals.md)\
-Provides links to websites that may contain programming information about processors that are not manufactured, sold, or supported by Microsoft.
+[Işlemci üreticisi programlama kılavuzları](../../assembler/masm/processor-manufacturer-programming-manuals.md)\
+Microsoft tarafından üretilen, satılan veya desteklenmeyen işlemcilerle ilgili programlama bilgileri içerebilen Web sitelerine bağlantılar sağlar.
 
-[MASM for x64 (ml64.exe)](../../assembler/masm/masm-for-x64-ml64-exe.md)\
-Information about how to create output files for x64.
+[X64 (ml64. exe) Için Masd](../../assembler/masm/masm-for-x64-ml64-exe.md)\
+X64 için çıktı dosyalarını oluşturma hakkında bilgi.
 
 ## <a name="related-sections"></a>İlgili Bölümler
 
-[C++ in Visual Studio](../../overview/visual-cpp-in-visual-studio.md)\
-Provides links to different areas of the Visual Studio and Visual C++ documentation.
+[ C++ Visual Studio](../../overview/visual-cpp-in-visual-studio.md)\
+Visual Studio ve Visual C++ belgelerinin farklı bölümlerine bağlantılar sağlar.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Compiler Intrinsics](../../intrinsics/compiler-intrinsics.md)\
+[Derleyici iç](../../intrinsics/compiler-intrinsics.md) bilgileri\
 [x86Intrinsics](../../intrinsics/x86-intrinsics-list.md)\
-[x64 (amd64) Intrinsics](../../intrinsics/x64-amd64-intrinsics-list.md)
+[x64 (amd64) Iç bilgileri](../../intrinsics/x64-amd64-intrinsics-list.md)

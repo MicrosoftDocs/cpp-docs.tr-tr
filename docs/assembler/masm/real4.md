@@ -15,12 +15,12 @@ ms.locfileid: "74394619"
 ---
 # <a name="real4"></a>REAL4
 
-Allocates and optionally initializes a single-precision (4-byte) floating-point number for each *initializer*.
+Her *Başlatıcı*için tek duyarlıklı (4 baytlık) kayan noktalı sayı ayırır ve isteğe bağlı olarak başlatır.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> *name*  **REAL4** *initializer* ⟦ __,__ *initializer* ...⟧
+> *ad*  **REAL4** *Başlatıcı* ⟦ __,__ *Başlatıcı* ... ⟧
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Directives reference](../../assembler/masm/directives-reference.md)
+[Yönergeler başvurusu](../../assembler/masm/directives-reference.md)

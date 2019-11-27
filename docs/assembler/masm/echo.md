@@ -15,16 +15,16 @@ ms.locfileid: "74397724"
 ---
 # <a name="echo"></a>ECHO
 
-Displays *message* to the standard output device (by default, the screen).
+*İletiyi* standart çıkış cihazına (varsayılan olarak, ekran) görüntüler.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **ECHO** *message*
+> **Yankı** *iletisi*
 
 ## <a name="remarks"></a>Açıklamalar
 
-Same as [%OUT](../../assembler/masm/percent-out.md).
+[% Out](../../assembler/masm/percent-out.md)ile aynı.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Directives reference](directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)

@@ -15,18 +15,18 @@ ms.locfileid: "74397509"
 ---
 # <a name="for-masm"></a>FOR (MASM)
 
-Marks a block that will be repeated once for each *argument*, with the current *argument* replacing *parameter* on each repetition.
+Her bir *bağımsız değişken*için, her bir tekrarda *parametreyi* değiştiren geçerli *bağımsız değişkenle* bir kez tekrarlanmış bir blok işaretler.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **FOR** *parameter* ⟦ **:REQ** |  __:=__ *default*⟧ **, \<** _argument_ ⟦ __,__ *argument* ...⟧ **>** \
-> *statements*\
+> *⟦ Parametresi* için **: REQ** |  __: =__ *Default*⟧ **, \<** _bağımsız_ değişkeni ⟦ __,__ *bağımsız değişken* ... ⟧ **>** \
+> *deyimler*\
 > **ENDM**
 
 ## <a name="remarks"></a>Açıklamalar
 
-Same as [IRP](../../assembler/masm/irp.md).
+[IRP](../../assembler/masm/irp.md)ile aynı.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Directives reference](directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)

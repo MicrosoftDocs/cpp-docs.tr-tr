@@ -17,29 +17,29 @@ ms.locfileid: "74245851"
 ---
 # <a name="how-catch-blocks-are-evaluated-c"></a>Catch Blokları Nasıl Değerlendirilir (C++)
 
-Genel olarak std::exception'dan türetilen türler oluşturulması önerilse de, C++ her türden özel durumlar oluşturmanıza olanak tanır. A C++ exception can be caught by a **catch** handler that specifies the same type as the thrown exception, or by a handler that can catch any type of exception.
+Genel olarak std::exception'dan türetilen türler oluşturulması önerilse de, C++ her türden özel durumlar oluşturmanıza olanak tanır. C++ Özel durum, oluşturulan özel durumla aynı türü belirten bir **catch** işleyicisi veya herhangi bir özel durum türünü yakalayabilirler.
 
 Oluşturulan özel durumun türü temel sınıfı (veya sınıfları) da olan bir sınıfsa, özel durum türünün temel sınıflarını kabul eden işleyiciler ve özel durum türünün başvuruları tarafından yakalanabilir. Özel durum bir başvuru tarafından yakalandığında oluşturulan gerçek özel durum nesnesine bağlanır; aksi takdirde bir kopya (işlevin bağımsız değişkeniyle hemen hemen aynı) olur.
 
-When an exception is thrown, it may be caught by the following types of **catch** handlers:
+Bir özel durum oluştuğunda, bu, aşağıdaki **catch** işleyicileri türleri tarafından yakalanmayabilir:
 
 - Herhangi bir türü kabul edebilen bir işleyici (üç nokta sözdizimini kullanarak).
 
-- A handler that accepts the same type as the exception object; because it is a copy, **const** and **volatile** modifiers are ignored.
+- Özel durum nesnesiyle aynı türü kabul eden bir işleyici; bir kopya olduğundan, **const** ve **volatile** değiştiricileri yok sayılır.
 
 - Özel durum nesnesiyle aynı türe yapılan başvuruyu kabul eden bir işleyici.
 
-- A handler that accepts a reference to a **const** or **volatile** form of the same type as the exception object.
+- Özel durum nesnesiyle aynı türde bir **const** veya **volatile** biçimine başvuruyu kabul eden bir işleyici.
 
-- A handler that accepts a base class of the same type as the exception object; since it is a copy, **const** and **volatile** modifiers are ignored. The **catch** handler for a base class must not precede the **catch** handler for the derived class.
+- Özel durum nesnesiyle aynı türden temel bir sınıfı kabul eden bir işleyici; bir kopya olduğundan, **const** ve **volatile** değiştiricileri yok sayılır. Bir temel sınıf için **catch** işleyicisi, türetilmiş sınıf için **catch** işleyicisinden önce gelmelidir.
 
 - Özel durum nesnesiyle aynı türden temel sınıf başvurusunu kabul eden bir işleyici.
 
-- A handler that accepts a reference to a **const** or **volatile** form of a base class of the same type as the exception object.
+- Özel durum nesnesiyle aynı türdeki bir temel sınıfın **const** veya **volatile** biçimine başvuruyu kabul eden bir işleyici.
 
 - Oluşturulan bir işaretçi nesnesinin standart işaretçi dönüştürme kurallarıyla dönüştürülebileceği bir işaretçiyi kabul eden bir işleyici.
 
-The order in which **catch** handlers appear is significant, because handlers for a given **try** block are examined in order of their appearance. Örneğin, temel sınıfa yönelik bir işleyicisi türetilmiş sınıfa yönelik bir işleyiciden önce yerleştirmek hatadır. After a matching **catch** handler is found, subsequent handlers are not examined. As a result, an ellipsis **catch** handler must be the last handler for its **try** block. Örneğin:
+Belirli bir **TRY** bloğunun işleyicileri görünümü sırasıyla incelenmediği için, **catch** işleyicilerinin görünme sırası önemlidir. Örneğin, temel sınıfa yönelik bir işleyicisi türetilmiş sınıfa yönelik bir işleyiciden önce yerleştirmek hatadır. Eşleşen bir **catch** işleyicisi bulduktan sonra, sonraki işleyiciler incelenmez. Sonuç olarak, üç nokta **catch** işleyicisi **TRY** bloğunun son işleyicisi olmalıdır. Örneğin:
 
 ```cpp
 // ...
@@ -62,8 +62,8 @@ catch( CExcptClass E )
 }
 ```
 
-In this example, the ellipsis **catch** handler is the only handler that is examined.
+Bu örnekte, üç nokta **catch** işleyicisi incelenen tek işleyicidir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Modern C++ best practices for exceptions and error handling](../cpp/errors-and-exception-handling-modern-cpp.md)
+[Özel C++ durumlar ve hata işleme için modern en iyi uygulamalar](../cpp/errors-and-exception-handling-modern-cpp.md)

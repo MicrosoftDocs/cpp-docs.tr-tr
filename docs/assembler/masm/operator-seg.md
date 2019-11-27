@@ -17,12 +17,12 @@ ms.locfileid: "74396470"
 ---
 # <a name="operator-seg"></a>SEG işleci
 
-Returns the segment of *expression*.
+*İfadenin*segmentini döndürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **SEG** *expression*
+> **SEG** *ifadesi*
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Operators reference](operators-reference.md)
+[İşleçler başvurusu](operators-reference.md)

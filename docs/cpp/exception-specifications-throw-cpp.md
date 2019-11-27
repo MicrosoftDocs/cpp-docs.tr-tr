@@ -1,5 +1,5 @@
 ---
-title: Exception specifications (throw, noexcept) (C++)
+title: Özel durum belirtimleri (throw, noexcept)C++()
 ms.date: 01/18/2018
 helpviewer_keywords:
 - exceptions [C++], exception specifications
@@ -15,48 +15,48 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 11/20/2019
 ms.locfileid: "74245875"
 ---
-# <a name="exception-specifications-throw-noexcept-c"></a>Exception specifications (throw, noexcept) (C++)
+# <a name="exception-specifications-throw-noexcept-c"></a>Özel durum belirtimleri (throw, noexcept)C++()
 
-Exception specifications are a C++ language feature that indicate the programmer's intent about the exception types that can be propagated by a function. You can specify that a function may or may not exit by an exception by using an *exception specification*. The compiler can use this information to optimize calls to the function, and to terminate the program if an unexpected exception escapes the function.
+Özel durum belirtimleri, C++ programcı 'nin bir işlev tarafından yayabileceği özel durum türleri hakkında amacını gösteren bir dil özelliğidir. Bir işlevin özel durum *belirtimi*kullanarak bir özel durumla ilgili veya çıkış yapabilir olduğunu belirtebilirsiniz. Derleyici, bu bilgileri işleve yapılan çağrıları iyileştirmek ve beklenmeyen bir özel durum işlevi iptal ederseniz programı sonlandırmak için kullanabilir.
 
-Prior to C++17 there were two kinds of exception specification. The *noexcept specification* was new in C++11. It specifies whether the set of potential exceptions that can escape the function is empty. The *dynamic exception specification*, or `throw(optional_type_list)` specification, was deprecated in C++11 and removed in C++17, except for `throw()`, which is an alias for `noexcept(true)`. This exception specification was designed to provide summary information about what exceptions can be thrown out of a function, but in practice it was found to be problematic. The one dynamic exception specification that did prove to be somewhat useful was the unconditional `throw()` specification. For example, the function declaration:
+C++ 17 ' den önce iki tür özel durum belirtimi vardı. *Noexcept belirtimi* , c++ 11 ' de yenidir. Bu, işlevi kaçırabilecek olası özel durumların kümesinin boş olup olmadığını belirtir. *Dinamik özel durum belirtimi*veya `throw(optional_type_list)` belirtimi, c++ 11 ' de kullanımdan kaldırılmıştır ve `noexcept(true)`için bir diğer ad olan `throw()`hariç c++ 17 ' de kaldırılmıştır. Bu özel durum belirtimi, bir işlevden hangi özel durumların atılamayacağını, ancak uygulamada sorunlu olduğunu tespit etmek üzere tasarlanmıştır. Biraz faydalı olması kanıtladığı tek bir dinamik özel durum belirtimi koşulsuz `throw()` belirtimidir. Örneğin, işlev bildirimi:
 
 ```cpp
 void MyFunction(int i) throw();
 ```
-tells the compiler that the function does not throw any exceptions. However, in **/std:c++14** mode this could lead to undefined behavior if the function does throw an exception. Therefore we recommend using the [noexcept](../cpp/noexcept-cpp.md) operator instead of the one above:
+derleyiciye işlevin hiçbir özel durum oluşturmadığını söyler. Ancak, **/std: c++ 14** modunda, işlev bir özel durum oluşturması durumunda tanımsız davranışlara neden olabilir. Bu nedenle, yukarıdaki bir yerine [noexcept](../cpp/noexcept-cpp.md) işlecini kullanmanızı öneririz:
 
 ```cpp
 void MyFunction(int i) noexcept;
 ```
-The following table summarizes the Microsoft C++ implementation of exception specifications:
+Aşağıdaki tabloda özel durum belirtimlerinin C++ Microsoft uygulamasını özetlenmektedir:
 
-|Exception specification|Açıklama|
+|Özel durum belirtimi|Anlamı|
 |-----------------------------|-------------|
-|`noexcept`<br/>`noexcept(true)`<br/>`throw()`|The function does not throw an exception. In [/std:c++14](../build/reference/std-specify-language-standard-version.md) mode (which is the default), `noexcept` and `noexcept(true)` are equivalent. When an exception is thrown from a function that is declared `noexcept` or `noexcept(true)`, [std::terminate](../standard-library/exception-functions.md#terminate) is invoked. When an exception is thrown from a function declared as `throw()` in **/std:c++14** mode, the result is undefined behavior. No specific function is invoked. This is a divergence from the C++14 standard, which required the compiler to invoke [std::unexpected](../standard-library/exception-functions.md#unexpected).  <br/> **Visual Studio 2017 version 15.5 and later**: In **/std:c++17** mode , `noexcept`, `noexcept(true)`, and `throw()` are all equivalent. In **/std:c++17** mode, `throw()` is an alias for `noexcept(true)`. In **/std:c++17** mode, when an exception is thrown from a function declared with any of these specifications, [std::terminate](../standard-library/exception-functions.md#terminate)  is invoked as required by the C++17 standard.|
-|`noexcept(false)`<br/>`throw(...)`<br/>No specification|The function can throw an exception of any type.|
-|`throw(type)`| (**C++14 and earlier**) The function can throw an exception of type `type`. The compiler accepts the syntax, but interprets it as `noexcept(false)`. In **/std:c++17** mode the compiler issues warning C5040.|
+|`noexcept`<br/>`noexcept(true)`<br/>`throw()`|İşlev bir özel durum oluşturmaz. [/Std: c++ 14](../build/reference/std-specify-language-standard-version.md) modunda (varsayılan) `noexcept` ve `noexcept(true)` eşdeğerdir. `noexcept` veya `noexcept(true)`olarak belirtilen bir işlevden özel durum oluştuğunda, [std:: Terminate](../standard-library/exception-functions.md#terminate) çağrılır. **/Std: c++ 14** modunda `throw()` olarak belirtilen bir işlevden özel durum oluştuğunda, sonuç tanımsız bir davranıştır. Belirli bir işlev çağrılmaz. Bu, C++ 14 standbundan ayrılan ve derleyicinin [std:: beklenmeyen](../standard-library/exception-functions.md#unexpected)bir şekilde çağrılmasını gerektiren bir farklılaşma anlamına gelir.  <br/> **Visual Studio 2017 sürüm 15,5 ve üzeri**: **/std: c++ 17** modunda, `noexcept`, `noexcept(true)`ve `throw()` tamamen eşdeğerdir. **/Std: c++ 17** modunda, `noexcept(true)`için bir diğer addır `throw()`. **/Std: c++ 17** modunda, bu belirtimlerden biriyle belirtilen bir işlevden bir özel durum oluştuğunda, [std:: Terminate](../standard-library/exception-functions.md#terminate) c++ 17 standardı tarafından gerekli olduğu gibi çağrılır.|
+|`noexcept(false)`<br/>`throw(...)`<br/>Belirtim yok|İşlev herhangi türde bir özel durum oluşturabilir.|
+|`throw(type)`| (**C++ 14 ve önceki sürümler**) İşlevi `type`türünde bir özel durum oluşturabilir. Derleyici söz dizimini kabul eder, ancak `noexcept(false)`olarak yorumlar. **/Std: c++ 17** modunda derleyici sorunları uyarı C5040.|
 
-If exception handling is used in an application, there must be a function in the call stack that handles thrown exceptions before they exit the outer scope of a function marked `noexcept`, `noexcept(true)`, or `throw()`. If any functions called between the one that throws an exception and the one that handles the exception are specified as `noexcept`, `noexcept(true)` (or `throw()` in **/std:c++17** mode), the program is terminated when the noexcept function propagates the exception.
+Bir uygulamada özel durum işleme kullanılıyorsa, çağrı yığınında, `noexcept`, `noexcept(true)`veya `throw()`işaretlenen bir işlevin dış kapsamından çıkmadan önce, oluşturulan özel durumları işleyen bir işlev olmalıdır. Bir özel durum oluşturan ve özel durumu işleyen bir işlev arasında çağrılan işlevler, `noexcept`, `noexcept(true)` (veya `throw()` **/std: c++ 17** modunda) olarak belirtilmişse, noexcept işlevi özel durumu yaytıysa program sonlandırılır.
 
-The exception behavior of a function depends on the following factors:
+Bir işlevin özel durum davranışı aşağıdaki etkenlere bağlıdır:
 
-- Which [language standard compilation mode](../build/reference/std-specify-language-standard-version.md) is set.
-- Whether you are compiling the function under C or C++.
+- Hangi [dil standart derleme modu](../build/reference/std-specify-language-standard-version.md) ayarlanır.
+- İşlevi C veya C++altında derlediğiniz olsun.
 
-- Which [/EH](../build/reference/eh-exception-handling-model.md) compiler option you use.
+- Kullandığınız [/Eh](../build/reference/eh-exception-handling-model.md) derleyici seçeneği.
 
-- Whether you explicitly specify the exception specification.
+- Özel durum belirtimini açıkça belirtip belirtmeyeceğinizi belirtir.
 
-Explicit exception specifications are not allowed on C functions. A C function is assumed not to throw exceptions under **/EHsc**, and may throw structured exceptions under **/EHs**, **/EHa**, or **/EHac**.
+C işlevlerinde açık özel durum belirtimlerine izin verilmez. Bir C işlevi, **/EHsc**altında özel durum oluşturmayan kabul edilir ve **/EHS**, **/EHa**veya **/EHac**altında yapılandırılmış özel durumlar oluşturabilir.
 
-The following table summarizes whether a C++ function may potentially throw under various compiler exception handling options:
+Aşağıdaki tabloda, bir C++ işlevin çeşitli derleyici özel durum işleme seçenekleri altında oluşturulup oluşturamayacağını özetlenmektedir:
 
 |İşlev|/EHsc|/EHs|/EHa|/EHac|
 |--------------|------------|-----------|-----------|------------|
-|C++ function with no exception specification|Evet|Evet|Evet|Evet|
-|C++ function with `noexcept`, `noexcept(true)`, or `throw()` exception specification|Hayır|Hayır|Evet|Evet|
-|C++ function with `noexcept(false)`, `throw(...)`, or `throw(type)` exception specification|Evet|Evet|Evet|Evet|
+|C++özel durum belirtimi olmayan işlev|Evet|Evet|Evet|Evet|
+|C++`noexcept`, `noexcept(true)`veya `throw()` özel durum belirtimi ile işlev|Hayır|Hayır|Evet|Evet|
+|C++`noexcept(false)`, `throw(...)`veya `throw(type)` özel durum belirtimi ile işlev|Evet|Evet|Evet|Evet|
 
 ## <a name="example"></a>Örnek
 
@@ -130,4 +130,4 @@ in handler
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [try, throw ve catch Deyimleri (C++)](../cpp/try-throw-and-catch-statements-cpp.md)<br/>
-[Modern C++ best practices for exceptions and error handling](errors-and-exception-handling-modern-cpp.md)
+[Özel C++ durumlar ve hata işleme için modern en iyi uygulamalar](errors-and-exception-handling-modern-cpp.md)

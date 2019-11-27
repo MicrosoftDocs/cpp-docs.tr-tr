@@ -13,16 +13,16 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74397836"
 ---
-# <a name="while-32-bit-masm"></a>.WHILE (32-bit MASM)
+# <a name="while-32-bit-masm"></a>. WHILE (32-bit masa)
 
-Generates code that executes the block of *statements* while *condition* remains true. (32-bit MASM only.)
+*Koşul* doğru olmaya devam ederken *deyim* bloğunu yürüten kodu oluşturur. (yalnızca 32-bit masa.)
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **.WHILE** *condition*\
-> *statements*\
+> **. WHILE** *koşulu*\
+> *deyimler*\
 > **.ENDW**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Directives reference](directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)

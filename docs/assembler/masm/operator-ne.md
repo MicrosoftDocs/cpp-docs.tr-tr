@@ -17,12 +17,12 @@ ms.locfileid: "74396611"
 ---
 # <a name="operator-ne"></a>NE işleci
 
-Returns true (-1) if *expression1* does not equal *expression2*, or returns false (0) if it does.
+*İfade1* , *İfade2*değerine eşit değilse, true (-1) döndürür veya varsa false (0) döndürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> *expression1* **NE** *expression2*
+> *İfade1* **ne** *İfade2*
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Operators reference](operators-reference.md)
+[İşleçler başvurusu](operators-reference.md)

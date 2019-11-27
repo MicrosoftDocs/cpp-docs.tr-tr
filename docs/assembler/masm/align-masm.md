@@ -15,21 +15,21 @@ ms.locfileid: "74399282"
 ---
 # <a name="align-masm"></a>ALIGN (MASM)
 
-The **ALIGN** directive aligns the next data element or instruction on an address that is a multiple of its parameter. The parameter must be a power of 2 (for example, 1, 2, 4, and so on) that is less than or equal to the segment alignment.
+**ALIGN** yönergesi, bir sonraki veri öğesini veya yönergesini, parametresinin birden çok katı olan bir adrese göre hizalar. Parametre, kesim hizalamasına eşit veya daha küçük bir 2 (örneğin, 1, 2, 4, vb.) bir üssü olmalıdır.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **ALIGN** ⟦*number*⟧
+> ⟦*Numarasını* **Hizala** ⟧
 
 ## <a name="remarks"></a>Açıklamalar
 
-The **ALIGN** directive allows you to specify the beginning offset of a data element or an instruction. Aligned data can improve performance, at the expense of wasted space between data elements. Large performance improvements can be seen when data accesses are on boundaries that fit within cache lines. Accesses on natural boundaries for native types means less time spent in internal hardware realignment microcode.
+**ALIGN** yönergesi, bir veri öğesinin veya yönergesinin başlangıç sapmasını belirtmenize olanak tanır. Hizalanmış veriler, veri öğeleri arasındaki harcanan alan masrafına göre performansı iyileştirebilir. Veri erişimleri, önbellek satırlarına sığan sınırlarda olduğunda büyük performans geliştirmeleri görülebilir. Yerel türler için doğal sınırlardaki erişimler, iç donanım yeniden hizalaması mikro kodunda daha az zaman harcamasıdır.
 
-The need for aligned instructions is rare on modern processors that use a flat addressing model, but may be required for jump targets in older code for other addressing models.
+Hizalı yönergelerin ihtiyacı, düz bir adresleme modeli kullanan Modern işlemcilerde nadir olmakla birlikte, diğer adresleme modelleriyle ilgili eski koddaki sıçrama hedefleri için de gerekli olabilir.
 
-When data is aligned, the skipped space is padded with zeroes. When instructions are aligned, the skipped space is filled with appropriately-sized NOP instructions.
+Veriler hizalandığında atlanan alan sıfırlardan doldurulur. Yönergeler hizalandığında, atlanan alan uygun boyutlardaki NOP yönergeleriyle doldurulur.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[EVEN](even.md)\
-[Directives reference](directives-reference.md)
+[Bile](even.md)\
+[Yönergeler başvurusu](directives-reference.md)

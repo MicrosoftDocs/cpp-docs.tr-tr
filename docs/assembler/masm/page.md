@@ -15,14 +15,14 @@ ms.locfileid: "74395123"
 ---
 # <a name="page"></a>PAGE
 
-The first directive sets line *length* and character *width* of the program listing. If no arguments are given, generates a page break. The second directive increments the section number and resets the page number to 1.
+İlk yönerge program listesinin satır *uzunluğunu* ve karakter *genişliğini* ayarlar. Bağımsız değişken verilmezse, bir sayfa kesmesi oluşturur. İkinci yönerge, bölüm numarasını artırır ve sayfa numarasını 1 olarak sıfırlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **PAGE** ⟦*length*⟧⟦ __,__ *width*⟧
+> **Sayfa** ⟦*uzunluğu*⟧ ⟦ __,__ *Width*⟧
 
-> **PAGE +**
+> **SAYFA +**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Directives reference](../../assembler/masm/directives-reference.md)
+[Yönergeler başvurusu](../../assembler/masm/directives-reference.md)

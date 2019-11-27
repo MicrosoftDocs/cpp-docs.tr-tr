@@ -1,5 +1,5 @@
 ---
-title: Compiler Warning (level 3) C4535
+title: Derleyici Uyarısı (düzey 3) C4535
 ms.date: 11/04/2016
 f1_keywords:
 - C4535
@@ -13,15 +13,15 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 11/19/2019
 ms.locfileid: "74189014"
 ---
-# <a name="compiler-warning-level-3-c4535"></a>Compiler Warning (level 3) C4535
+# <a name="compiler-warning-level-3-c4535"></a>Derleyici Uyarısı (düzey 3) C4535
 
-calling _set_se_translator() requires /EHa
+_set_se_translator () çağrılırken/EHa gerekir
 
-The use of [_set_se_translator](../../c-runtime-library/reference/set-se-translator.md) requires the [/EHa](../../build/reference/eh-exception-handling-model.md) compiler option and not **/EHs**.
+[_Set_se_translator](../../c-runtime-library/reference/set-se-translator.md) kullanımı, [/EHa](../../build/reference/eh-exception-handling-model.md) derleyici seçeneğini gerektiriyor ve **/EHS**değil.
 
 ## <a name="example"></a>Örnek
 
-The following sample generates C4535.
+Aşağıdaki örnek C4535 oluşturur.
 
 ```cpp
 // C4535.cpp

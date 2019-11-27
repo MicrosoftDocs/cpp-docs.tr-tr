@@ -15,7 +15,7 @@ ms.locfileid: "74398874"
 ---
 # <a name="wordsize"></a>\@WordSize
 
-Two for a 16-bit segment or four for a 32-bit segment (numeric equate).
+16 bit kesim için iki veya 32 bitlik bir kesim için dört (sayısal eşkarakter).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -23,4 +23,4 @@ Two for a 16-bit segment or four for a 32-bit segment (numeric equate).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Symbols reference](symbols-reference.md)
+[Semboller başvurusu](symbols-reference.md)

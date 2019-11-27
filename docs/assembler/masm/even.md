@@ -15,7 +15,7 @@ ms.locfileid: "74397588"
 ---
 # <a name="even"></a>EVEN
 
-Aligns the next variable or instruction on an even byte.
+Sonraki değişkeni veya yönergeyi çift bir bayt üzerinde hizalar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -23,4 +23,4 @@ Aligns the next variable or instruction on an even byte.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Directives reference](directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)

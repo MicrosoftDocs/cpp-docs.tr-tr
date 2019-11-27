@@ -17,12 +17,12 @@ ms.locfileid: "74397039"
 ---
 # <a name="operator-type"></a>.TYPE işleci
 
-See [OPATTR](../../assembler/masm/operator-opattr.md).
+Bkz. [Opattr](../../assembler/masm/operator-opattr.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **.TYPE** *expression*
+> **. TÜR** *ifadesi*
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Operators reference](operators-reference.md)
+[İşleçler başvurusu](operators-reference.md)

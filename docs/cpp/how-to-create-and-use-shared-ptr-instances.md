@@ -1,5 +1,5 @@
 ---
-title: 'How to: Create and use shared_ptr instances'
+title: 'Nasıl yapılır: shared_ptr örnekleri oluşturma ve kullanma'
 ms.custom: how-to
 ms.date: 11/19/2019
 ms.topic: conceptual
@@ -11,17 +11,17 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 11/20/2019
 ms.locfileid: "74245825"
 ---
-# <a name="how-to-create-and-use-shared_ptr-instances"></a>How to: Create and Use shared_ptr instances
+# <a name="how-to-create-and-use-shared_ptr-instances"></a>Nasıl yapılır: shared_ptr örnekleri oluşturma ve kullanma
 
-The `shared_ptr` type is a smart pointer in the C++ standard library that is designed for scenarios in which more than one owner might have to manage the lifetime of the object in memory. After you initialize a `shared_ptr` you can copy it, pass it by value in function arguments, and assign it to other `shared_ptr` instances. All the instances point to the same object, and share access to one "control block" that increments and decrements the reference count whenever a new `shared_ptr` is added, goes out of scope, or is reset. When the reference count reaches zero, the control block deletes the memory resource and itself.
+`shared_ptr` türü, C++ standart kitaplıkta bulunan ve bellek içindeki nesne ömrünü yönetmek için birden fazla sahibin sahip olabileceği senaryolar için tasarlanan akıllı bir işaretçidir. Bir `shared_ptr` başlattıktan sonra, onu kopyalayabilir, işlev bağımsız değişkenlerinde değere göre geçirebilir ve diğer `shared_ptr` örneklerine atayabilirsiniz. Tüm örnekler aynı nesneyi işaret edip, her yeni `shared_ptr` eklendiğinde, kapsam dışına çıktığında veya sıfırlandığında, başvuru sayısını artıran ve azaltır bir "Denetim bloğuna" erişimi paylaşır. Başvuru sayısı sıfıra ulaştığında, denetim bloğu bellek kaynağını ve kendisini siler.
 
-The following illustration shows several `shared_ptr` instances that point to one memory location.
+Aşağıdaki çizimde, bir bellek konumuna işaret eden çeşitli `shared_ptr` örnekleri gösterilmektedir.
 
-![Shared pointer diagram](media/shared_ptr.png "Shared pointer diagram")
+![Paylaşılan işaretçi diyagramı](media/shared_ptr.png "Paylaşılan işaretçi diyagramı")
 
-## <a name="example-setup"></a>Example setup
+## <a name="example-setup"></a>Örnek kurulum
 
-The examples that follow all assume that you've included the required headers and declared the required types, as shown here:
+Tüm bunları izleyen örneklerde, gerekli üst bilgileri eklediğiniz ve gerekli türleri burada gösterildiği gibi bildirdiniz:
 
 ```cpp
 // shared_ptr-examples.cpp
@@ -72,47 +72,47 @@ int main()
 
 ## <a name="example-1"></a>Örnek 1
 
-Whenever possible, use the [make_shared](../standard-library/memory-functions.md#make_shared) function to create a `shared_ptr` when the memory resource is created for the first time. `make_shared` is exception-safe. It uses the same call to allocate the memory for the control block and the resource, which reduces the construction overhead. If you don't use `make_shared`, then you have to use an explicit `new` expression to create the object before you pass it to the `shared_ptr` constructor. The following example shows various ways to declare and initialize a `shared_ptr` together with a new object.
+Mümkün olduğunda, bellek kaynağı ilk kez oluşturulduğunda bir `shared_ptr` oluşturmak için [make_shared](../standard-library/memory-functions.md#make_shared) işlevini kullanın. `make_shared` özel durum güvenlidir. Denetim bloğu ve kaynak için belleği ayırmak için aynı çağrıyı kullanır, bu da oluşturma ek yükünü azaltır. `make_shared`kullanmıyorsanız, nesneyi `shared_ptr` oluşturucusuna geçirmeden önce oluşturmak için açık bir `new` ifadesi kullanmanız gerekir. Aşağıdaki örnek, `shared_ptr` yeni bir nesneyle birlikte bildirmek ve başlatmak için çeşitli yollar gösterir.
 
 [!code-cpp[stl_smart_pointers#1](codesnippet/CPP/how-to-create-and-use-shared-ptr-instances_1.cpp)]
 
 ## <a name="example-2"></a>Örnek 2
 
-The following example shows how to declare and initialize `shared_ptr` instances that take on shared ownership of an object that has already been allocated by another `shared_ptr`. Assume that `sp2` is an initialized `shared_ptr`.
+Aşağıdaki örnek, başka bir `shared_ptr`tarafından zaten ayrılmış olan bir nesnenin paylaşılan sahipliğini alan `shared_ptr` örneklerinin nasıl bildirilemeyeceğini ve başlatılacağını gösterir. `sp2` başlatılmış bir `shared_ptr`olduğunu varsayalım.
 
 [!code-cpp[stl_smart_pointers#2](codesnippet/CPP/how-to-create-and-use-shared-ptr-instances_2.cpp)]
 
 ## <a name="example-3"></a>Örnek 3
 
-`shared_ptr` is also helpful in C++ Standard Library containers when you're using algorithms that copy elements. You can wrap elements in a `shared_ptr`, and then copy it into other containers with the understanding that the underlying memory is valid as long as you need it, and no longer. The following example shows how to use the `remove_copy_if` algorithm on `shared_ptr` instances in a vector.
+Ayrıca, öğeleri kopyalayabileceğiniz C++ algoritmaları kullanırken standart kitaplık kapsayıcılarında da yardımcı `shared_ptr`. Öğeleri bir `shared_ptr`sarabilir ve daha sonra, temel alınan belleğin, ihtiyacınız olduğu sürece geçerli olduğunu ve artık hiç olmadığını anlamak için başka kapsayıcılara kopyalayabilirsiniz. Aşağıdaki örnek, Vektördeki `shared_ptr` örneklerde `remove_copy_if` algoritmasının nasıl kullanılacağını gösterir.
 
 [!code-cpp[stl_smart_pointers#4](codesnippet/CPP/how-to-create-and-use-shared-ptr-instances_3.cpp)]
 
-## <a name="example-4"></a>Example 4
+## <a name="example-4"></a>Örnek 4
 
-You can use `dynamic_pointer_cast`, `static_pointer_cast`, and `const_pointer_cast` to cast a `shared_ptr`. These functions resemble the `dynamic_cast`, `static_cast`, and `const_cast` operators. The following example shows how to test the derived type of each element in a vector of `shared_ptr` of base classes, and then copy the elements and display information about them.
+`shared_ptr`dönüştürmek için `dynamic_pointer_cast`, `static_pointer_cast`ve `const_pointer_cast` kullanabilirsiniz. Bu işlevler `dynamic_cast`, `static_cast`ve `const_cast` işleçlerine benzer. Aşağıdaki örnek, her öğenin türetilmiş türünün temel sınıfların `shared_ptr` vektöründe nasıl test alınacağını gösterir ve ardından öğeleri kopyalayıp bunlarla ilgili bilgileri görüntüler.
 
 [!code-cpp[stl_smart_pointers#5](codesnippet/CPP/how-to-create-and-use-shared-ptr-instances_4.cpp)]
 
-## <a name="example-5"></a>Example 5
+## <a name="example-5"></a>Örnek 5
 
-You can pass a `shared_ptr` to another function in the following ways:
+Aşağıdaki yollarla `shared_ptr` başka bir işleve geçirebilirsiniz:
 
-- Pass the `shared_ptr` by value. This invokes the copy constructor, increments the reference count, and makes the callee an owner. There's a small amount of overhead in this operation, which may be significant depending on how many `shared_ptr` objects you're passing. Use this option when the implied or explicit code contract between the caller and callee requires that the callee be an owner.
+- `shared_ptr` değere göre geçirin. Bu, kopya oluşturucusunu çağırır, başvuru sayısını artırır ve aranan bir sahip yapar. Bu işlemde çok sayıda `shared_ptr` nesne sayısına bağlı olarak önemli olabilecek küçük bir ek yük vardır. Çağıran ve çağrılan arasında örtük veya açık kod sözleşmesi, aranan kişinin bir sahip olmasını gerektirdiğinde bu seçeneği kullanın.
 
-- Pass the `shared_ptr` by reference or const reference. In this case, the reference count isn't incremented, and the callee can access the pointer as long as the caller doesn't go out of scope. Or, the callee can decide to create a `shared_ptr` based on the reference, and become a shared owner. Use this option when the caller has no knowledge of the callee, or when you must pass a `shared_ptr` and want to avoid the copy operation for performance reasons.
+- `shared_ptr` başvuruya veya const başvuruya göre geçirin. Bu durumda, başvuru sayısı artmaz ve arayan kapsam dışında olmadığı sürece çağrılan işaretçiye erişebilir. Ya da aranan, başvuruya göre bir `shared_ptr` oluşturmaya ve paylaşılan bir sahip olmaya karar verebilir. Çağıranın aranan bilgisi olmadığında veya bir `shared_ptr` iletmeniz gerektiğinde ve performans nedenleriyle kopyalama işlemini önlemek istediğinizde bu seçeneği kullanın.
 
-- Pass the underlying pointer or a reference to the underlying object. This enables the callee to use the object, but doesn't enable it to share ownership or extend the lifetime. If the callee creates a `shared_ptr` from the raw pointer, the new `shared_ptr` is independent from the original, and doesn't control the underlying resource. Use this option when the contract between the caller and callee clearly specifies that the caller retains ownership of the `shared_ptr` lifetime.
+- Temel alınan işaretçiyi veya bir başvuruyu temel alınan nesneye geçirin. Bu, aranan nesnenin nesneyi kullanmasını sağlar, ancak sahipliğini paylaşmasına veya yaşam süresini genişletmenize izin vermez. Çağrılan, ham işaretçiden bir `shared_ptr` oluşturursa, yeni `shared_ptr` orijinalden bağımsızdır ve temel alınan kaynağı denetlemez. Çağıran ve aranan arasındaki sözleşme, çağıranın `shared_ptr` yaşam süresinin sahipliğini koruduğunu açıkça belirttiğinde bu seçeneği kullanın.
 
-- When you're deciding how to pass a `shared_ptr`, determine whether the callee has to share ownership of the underlying resource. An "owner" is an object or function that can keep the underlying resource alive for as long as it needs it. If the caller has to guarantee that the callee can extend the life of the pointer beyond its (the function's) lifetime, use the first option. If you don't care whether the callee extends the lifetime, then pass by reference and let the callee copy it or not.
+- `shared_ptr`nasıl geçireceğinize karar verirken, aranan kaynağın sahipliğini paylaşmak için gerekip gerekmediğini saptayın. "Owner", temel alınan kaynağı, ihtiyaç duyması gerektiği sürece etkin tutan bir nesne veya işlevdir. Çağıranın, çağrılan işaretçinin ömrünü (işlevin) ömrünü aşacak şekilde genişletebileceğinizin garantisi varsa, ilk seçeneğini kullanın. Aranan 'un yaşam süresini genişlettiğinden ve sonra başvuruya göre geçiş yapıp yapmadığından, bu dosyayı kopyalamasına izin verip vermediğini dikkate almanız gerekmez.
 
-- If you have to give a helper function access to the underlying pointer, and you know that the helper function will just use the pointer and return before the calling function returns, then that function doesn't have to share ownership of the underlying pointer. It just has to access the pointer within the lifetime of the caller's `shared_ptr`. In this case, it's safe to pass the `shared_ptr` by reference, or pass the raw pointer or a reference to the underlying object. Passing this way provides a small performance benefit, and may also help you express your programming intent.
+- Temel işaretçiye bir yardımcı işlev erişimi vermeniz gerekiyorsa ve yardımcı işlevin yalnızca işaretçiyi kullanacağı ve çağıran işlev döndürmeden önce döndürdüğünü biliyorsanız, bu işlevin temeldeki işaretçinin sahipliğini paylaşması gerekmez. Yalnızca çağrı yapanın `shared_ptr`ömrü içinde işaretçiye erişmesi yeterlidir. Bu durumda, `shared_ptr` başvuruya göre geçirmek veya ham işaretçiyi veya temel alınan nesneye bir başvuruyu geçirmek güvenlidir. Bu şekilde geçirmek, küçük bir performans avantajı sağlar ve ayrıca programlama amacınızı ifade etmenize yardımcı olabilir.
 
-- Sometimes, for example in a `std::vector<shared_ptr<T>>`, you may have to pass each `shared_ptr` to a lambda expression body or named function object. If the lambda or function doesn't store the pointer, then pass the `shared_ptr` by reference to avoid invoking the copy constructor for each element.
+- Bazen bir `std::vector<shared_ptr<T>>`Örneğin, her bir `shared_ptr` bir lambda ifadesi gövdesine veya adlandırılmış işlev nesnesine geçirmeniz gerekebilir. Lambda veya işlev işaretçiyi depolamazsa, her öğe için kopya oluşturucuyu çağırmaktan kaçınmak için `shared_ptr` başvuruya göre geçirin.
 
-## <a name="example-6"></a>Example 6
+## <a name="example-6"></a>Örnek 6
 
-The following example shows how `shared_ptr` overloads various comparison operators to enable pointer comparisons on the memory that is owned by the `shared_ptr` instances.
+Aşağıdaki örnek, `shared_ptr` örneklerine ait olan bellekte işaretçi karşılaştırmaları sağlamak için `shared_ptr` çeşitli karşılaştırma işleçlerini nasıl aşırı yüklediğine gösterir.
 
 [!code-cpp[stl_smart_pointers#3](codesnippet/CPP/how-to-create-and-use-shared-ptr-instances_6.cpp)]
 

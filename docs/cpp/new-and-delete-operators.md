@@ -17,38 +17,38 @@ ms.locfileid: "74246444"
 ---
 # <a name="new-and-delete-operators"></a>new ve delete işleçleri
 
-C++ supports dynamic allocation and deallocation of objects using the [new](new-operator-cpp.md) and [delete](delete-operator-cpp.md) operators. These operators allocate memory for objects from a pool called the free store. The **new** operator calls the special function [operator new](new-operator-cpp.md), and the **delete** operator calls the special function [operator delete](delete-operator-cpp.md).
+C++, [New](new-operator-cpp.md) ve [Delete](delete-operator-cpp.md) işleçlerini kullanarak nesneleri dinamik ayırmayı ve ayırmayı destekler. Bu işleçler, serbest depo adlı bir havuzdan nesneler için bellek ayırır. **New** işleci [New](new-operator-cpp.md)özel Function işlecini çağırır ve **Delete** işleci özel işlev [işleci Delete](delete-operator-cpp.md)' i çağırır.
 
-The **new** function in the C++ Standard Library supports the behavior specified in the C++ standard, which is to throw a std::bad_alloc exception if the memory allocation fails. If you still want the non-throwing version of **new**, link your program with nothrownew.obj. However, when you link with nothrownew.obj, the default **operator new** in the C++ Standard Library no longer functions.
+Standart kitaplıktaki **Yeni** işlev, C++ standart olarak belirtilen davranışı destekler; bu, bellek ayırma başarısız olursa std:: bad_alloc özel durumu oluşturur. C++ Henüz **Yeni**bir atma sürümü isterseniz, programınızı nothrownew. obj ile bağlayın. Ancak, nothrownew. obj ile bağladığınızda C++ standart kitaplıkta yeni olan varsayılan **işleç** artık çalışmaz.
 
-For a list of the library files that comprise the C Runtime Library and the C++ Standard Library, see [CRT Library Features](../c-runtime-library/crt-library-features.md).
+C çalışma zamanı kitaplığını ve C++ standart kitaplığı oluşturan kitaplık dosyalarının listesi için bkz. [CRT kitaplık özellikleri](../c-runtime-library/crt-library-features.md).
 
-##  <a id="new_operator"> </a> The new operator
+##  <a id="new_operator"></a> New işleci
 
-When a statement such as the following is encountered in a program, it translates into a call to the function **operator new**:
+Bir programda aşağıdakiler gibi bir ifadeye rastlandı, yeni bir işlev **işlecine**çağrı yapar:
 
 ```cpp
 char *pch = new char[BUFFER_SIZE];
 ```
 
-If the request is for zero bytes of storage, **operator new** returns a pointer to a distinct object (that is, repeated calls to **operator new** return different pointers). If there is insufficient memory for the allocation request, **operator new** throws a `std::bad_alloc` exception, or returns **nullptr** if you have linked in non-throwing **operator new** support.
+İstek sıfır baytlık depolama için ise, **New işleci** ayrı bir nesneye bir işaretçi döndürür (diğer bir deyişle, **Yeni işleç** için yinelenen çağrılar farklı işaretçiler döndürür). Ayırma isteği için yeterli bellek yoksa, **New işleci** `std::bad_alloc` bir özel durum oluşturur veya oluşturma olmayan **işlece yeni** destek ile bağlantı oluşturduysanız, **nullptr** döndürür.
 
-You can write a routine that attempts to free memory and retry the allocation; see [_set_new_handler](../c-runtime-library/reference/set-new-handler.md) for more information. For more details on the recovery scheme, see the Handling insufficient memory section of this topic.
+Belleği boşaltmak ve ayırmayı yeniden denemek için bir yordam yazabilirsiniz; daha fazla bilgi için bkz. [_set_new_handler](../c-runtime-library/reference/set-new-handler.md) . Kurtarma şeması hakkında daha fazla bilgi için bu konunun yetersiz bellek Işleme bölümüne bakın.
 
-The two scopes for **operator new** functions are described in the following table.
+**İşleç yeni** işlevleri için iki kapsam aşağıdaki tabloda açıklanmıştır.
 
-### <a name="scope-for-operator-new-functions"></a>Scope for operator new functions
+### <a name="scope-for-operator-new-functions"></a>New işleci işlevlerinin kapsamı
 
 |İşleç|Kapsam|
 |--------------|-----------|
-|**::operator new**|Global|
-|*class-name* **::operator new**|örneği|
+|**:: New işleci**|Global|
+|*class-name* **:: operator new**|Sınıf|
 
-The first argument to **operator new** must be of type `size_t` (a type defined in \<stddef.h>), and the return type is always **void** <strong>\*</strong>.
+**New işlecine** yönelik ilk bağımsız değişken `size_t` türünde olmalıdır (\<stddef. h > ' de tanımlı bir tür) ve dönüş türü her zaman **void** <strong>\*</strong>.
 
-The global **operator new** function is called when the **new** operator is used to allocate objects of built-in types, objects of class type that do not contain user-defined **operator new** functions, and arrays of any type. When the **new** operator is used to allocate objects of a class type where an **operator new** is defined, that class's **operator new** is called.
+**New** işleci, yerleşik türlerin nesnelerini, Kullanıcı tanımlı **işleç yeni** işlevleri içermeyen sınıf türü nesnelerini ve herhangi bir türdeki dizileri ayırmak için kullanıldığında, Yeni işleç **New** işlevi çağrılır. **New** işleci, **New işlecinin** tanımlandığı bir sınıf türünün nesnelerini ayırmak için kullanıldığında, bu sınıfın **New işleci** çağırılır.
 
-An **operator new** function defined for a class is a static member function (which cannot, therefore, be virtual) that hides the global **operator new** function for objects of that class type. Consider the case where **new** is used to allocate and set memory to a given value:
+Bir sınıf için tanımlanan **işleç yeni** işlevi, bir statik üye işlevidir (Bu nedenle, sanal olamaz) ve bu sınıf türünün nesneleri için genel **işleç yeni** işlevini gizler. Belleği ayırmak ve belirli bir değere ayarlamak için **Yeni** kullanılan durumu göz önünde bulundurun:
 
 ```cpp
 #include <malloc.h>
@@ -77,13 +77,13 @@ int main()
 }
 ```
 
-The argument supplied in parentheses to **new** is passed to `Blanks::operator new` as the `chInit` argument. However, the global **operator new** function is hidden, causing code such as the following to generate an error:
+Parantez içinde **New** olarak sağlanan bağımsız değişken `chInit` bağımsız değişkeni olarak `Blanks::operator new` geçirilir. Ancak, genel **operator new** işlevi gizlidir ve bir hata oluşturmak için aşağıdaki gibi kodun görüntülenmesine neden olur:
 
 ```cpp
 Blanks *SomeBlanks = new Blanks;
 ```
 
-The compiler supports member array **new** and **delete** operators in a class declaration. Örneğin:
+Derleyici, bir sınıf bildirimindeki üye dizisi **Yeni** ve **silme** işleçlerini destekler. Örneğin:
 
 ```cpp
 class MyClass
@@ -105,9 +105,9 @@ int main()
 }
 ```
 
-### <a name="handling-insufficient-memory"></a>Handling insufficient memory
+### <a name="handling-insufficient-memory"></a>Yetersiz bellek işleme
 
-Testing for failed memory allocation can be done as shown here:
+Başarısız bellek ayırma testi, burada gösterildiği gibi yapılabilir:
 
 ```cpp
 #include <iostream>
@@ -122,28 +122,28 @@ int main() {
 }
 ```
 
-There is another way to handle failed memory allocation requests. Write a custom recovery routine to handle such a failure, then register your function by calling the [_set_new_handler](../c-runtime-library/reference/set-new-handler.md) run-time function.
+Başarısız bellek ayırma isteklerini işlemenin başka bir yolu vardır. Bu tür bir hatayı işlemek için özel bir kurtarma yordamı yazın ve ardından [_set_new_handler](../c-runtime-library/reference/set-new-handler.md) çalışma zamanı işlevini çağırarak işlevinizi kaydedin.
 
-##  <a id="delete_operator"> </a> The delete operator
+##  <a id="delete_operator"></a> Delete işleci
 
-Memory that is dynamically allocated using the **new** operator can be freed using the **delete** operator. The delete operator calls the **operator delete** function, which frees memory back to the available pool. Using the **delete** operator also causes the class destructor (if there is one) to be called.
+**New** işleci kullanılarak dinamik olarak ayrılan bellek, **Delete** işleci kullanılarak serbest bırakılabilirler. Delete işleci, belleği kullanılabilir havuza yeniden **boşalten Delete işleç** işlevini çağırır. **Delete** işlecinin kullanılması Ayrıca sınıf yıkıcısına (varsa) neden olur.
 
-There are global and class-scoped **operator delete** functions. Only one **operator delete** function can be defined for a given class; if defined, it hides the global **operator delete** function. The global **operator delete** function is always called for arrays of any type.
+Genel ve sınıf kapsamlı **işleç silme** işlevleri vardır. Belirli bir sınıf için yalnızca bir **işleç silme** işlevi tanımlanabilir; tanımlanmışsa, genel **işleç silme** işlevini gizler. Genel **işleç silme** işlevi her zaman bir türdeki diziler için çağırılır.
 
-The global **operator delete** function. Two forms exist for the  global **operator delete**  and class-member **operator delete** functions:
+Genel **işleç silme** işlevi. Genel **işleç Delete** ve Class-member **işleci Delete** işlevleri için iki form mevcuttur:
 
 ```cpp
 void operator delete( void * );
 void operator delete( void *, size_t );
 ```
 
-Only one of the preceding two forms can be present for a given class. The first form takes a single argument of type `void *`, which contains a pointer to the object to deallocate. The second form—sized deallocation—takes two arguments, the first of which is a pointer to the memory block to deallocate and the second of which is the number of bytes to deallocate. The return type of both forms is **void** (**operator delete** cannot return a value).
+Belirli bir sınıf için önceki iki formdan yalnızca biri bulunabilir. İlk form, serbest bırakma yapılacak nesneye bir işaretçi içeren `void *`türünde tek bir bağımsız değişken alır. İkinci form (boyutu kaldırma), ilki serbest bırakmak için bellek bloğunun bir işaretçisi olan iki bağımsız değişken alır ve ikincisi serbest bırakmak için gereken bayt sayısıdır. Her iki formun de dönüş türü **void** (**işleç Delete** bir değer döndüremez).
 
-The intent of the second form is to speed up searching for the correct size category of the object to be deleted, which is often not stored near the allocation itself and likely uncached. The second form is useful when an **operator delete** function from a base class is used to delete an object of a derived class.
+İkinci formun amacı, Silinecek nesnenin doğru boyut kategorisine yönelik aramayı hızlandırmaktır. Bu, genellikle tahsisatın yakınında depolanmamış ve muhtemelen önbelleğe alınmamış olabilir. İkinci form, türetilmiş bir sınıfın bir nesnesini silmek için temel sınıftan bir **işleç silme** işlevi kullanıldığında yararlıdır.
 
-The **operator delete** function is static; therefore, it cannot be virtual. The **operator delete** function obeys access control, as described in [Member-Access Control](member-access-control-cpp.md).
+**İşleç silme** işlevi statiktir; Bu nedenle, sanal olamaz. **İşleç silme** Işlevi, [üye-Access Control](member-access-control-cpp.md)bölümünde açıklandığı gibi erişim denetimine uyar.
 
-The following example shows user-defined **operator new** and **operator delete** functions designed to log allocations and deallocations of memory:
+Aşağıdaki örnek, Kullanıcı tanımlı **New işlecini** ve bellek ayırmaları ve ayırmayı günlüğe kaydetmek için tasarlanan **işleç silme** işlevlerini göstermektedir:
 
 ```cpp
 #include <iostream>
@@ -191,9 +191,9 @@ int main( int argc, char *argv[] ) {
 }
 ```
 
-The preceding code can be used to detect "memory leakage" — that is, memory that is allocated on the free store but never freed. To perform this detection, the global **new** and **delete** operators are redefined to count allocation and deallocation of memory.
+Yukarıdaki kod, "bellek sızıntısı", diğer bir deyişle, ücretsiz depoya ayrılan ancak hiç boşaltılmamış bellek algılamak için kullanılabilir. Bu algılamayı gerçekleştirmek için, genel **Yeni** ve **silme** işleçleri, belleğin ayrılması ve ayırmayı kaldırma için yeniden tanımlanır.
 
-The compiler supports member array **new** and **delete** operators in a class declaration. Örneğin:
+Derleyici, bir sınıf bildirimindeki üye dizisi **Yeni** ve **silme** işleçlerini destekler. Örneğin:
 
 ```cpp
 // spec1_the_operator_delete_function2.cpp

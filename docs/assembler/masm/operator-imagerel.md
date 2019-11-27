@@ -17,18 +17,18 @@ ms.locfileid: "74396882"
 ---
 # <a name="operator-imagerel"></a>IMAGEREL işleci
 
-Returns the image relative offset of *expression*.
+*İfadenin*resmin göreli sapmasını döndürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **IMAGEREL** *expression*
+> **Imagerel** *ifadesi*
 
 ## <a name="remarks"></a>Açıklamalar
 
-The resulting value is often referred to as an RVA or Relative Virtual Address.
+Elde edilen değer genellikle RVA veya göreli sanal adres olarak adlandırılır.
 
-IMAGEREL is available only with COFF object emission.
+IMAGEREL yalnızca COFF nesnesi ile kullanılabilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Operators reference](operators-reference.md)
+[İşleçler başvurusu](operators-reference.md)

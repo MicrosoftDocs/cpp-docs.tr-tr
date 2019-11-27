@@ -15,16 +15,16 @@ ms.locfileid: "74397571"
 ---
 # <a name="exitm"></a>EXITM
 
-Terminates expansion of the current repeat or macro block and begins assembly of the next statement outside the block.
+Geçerli yineleme veya makro bloğunun genişlemesini sonlandırır ve blok dışında sonraki deyimin derlemesini başlatır.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **EXITM** ⟦*textitem*⟧
+> **Exitd** ⟦*textıtem*⟧
 
 ## <a name="remarks"></a>Açıklamalar
 
-In a macro function, *textitem* is the value returned.
+Bir makro işlevinde, *textıtem* döndürülen değerdir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Directives reference](directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)

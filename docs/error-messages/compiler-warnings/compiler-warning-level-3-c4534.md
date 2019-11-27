@@ -1,5 +1,5 @@
 ---
-title: Compiler Warning (level 3) C4534
+title: Derleyici Uyarısı (düzey 3) C4534
 ms.date: 11/04/2016
 f1_keywords:
 - c4534
@@ -13,15 +13,15 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 11/19/2019
 ms.locfileid: "74189098"
 ---
-# <a name="compiler-warning-level-3-c4534"></a>Compiler Warning (level 3) C4534
+# <a name="compiler-warning-level-3-c4534"></a>Derleyici Uyarısı (düzey 3) C4534
 
-'constructor' will not be a default constructor for class 'class' due to the default argument
+Varsayılan bağımsız değişken nedeniyle ' constructor ', ' class ' sınıfı için varsayılan bir Oluşturucu olmayacaktır
 
-An unmanaged class can have a constructor with parameters that have default values and the compiler will use this as the default constructor. A class marked with the `value` keyword will not use a constructor with default values for its parameters as a default constructor.
+Yönetilmeyen bir sınıf, varsayılan değerlere sahip parametrelere sahip bir oluşturucuya sahip olabilir ve derleyici bunu varsayılan oluşturucu olarak kullanır. `value` anahtar sözcüğüyle işaretlenmiş bir sınıf, varsayılan bir Oluşturucu olarak parametreleri için varsayılan değerlere sahip bir Oluşturucu kullanmaz.
 
-For more information, see [Classes and Structs](../../extensions/classes-and-structs-cpp-component-extensions.md).
+Daha fazla bilgi için bkz. [sınıflar ve yapılar](../../extensions/classes-and-structs-cpp-component-extensions.md).
 
-The following sample generates C4534:
+Aşağıdaki örnek C4534 oluşturur:
 
 ```cpp
 // C4534.cpp

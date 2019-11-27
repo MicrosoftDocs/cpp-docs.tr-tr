@@ -17,12 +17,12 @@ ms.locfileid: "74395360"
 ---
 # <a name="operator-type"></a>TYPE işleci
 
-Returns the type of *expression*.
+*İfadenin*türünü döndürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **TYPE** *expression*
+> **Tür** *ifadesi*
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Operators reference](operators-reference.md)
+[İşleçler başvurusu](operators-reference.md)

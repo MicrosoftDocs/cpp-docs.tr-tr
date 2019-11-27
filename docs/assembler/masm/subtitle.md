@@ -15,12 +15,12 @@ ms.locfileid: "74393464"
 ---
 # <a name="subtitle"></a>SUBTITLE
 
-Defines the listing subtitle. Same as [SUBTTL](../../assembler/masm/subttl.md).
+Liste alt başlığını tanımlar. [Alt TTL](../../assembler/masm/subttl.md)ile aynı.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **SUBTITLE** *text*
+> Alt **başlık** *metni*
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Directives reference](directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)

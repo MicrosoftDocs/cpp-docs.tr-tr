@@ -15,7 +15,7 @@ ms.locfileid: "74398144"
 ---
 # <a name="listmacro"></a>.LISTMACRO
 
-Starts listing of macro expansion statements that generate code or data.
+Kod veya veri üreten makro genişletme deyimlerinin dökümünü başlatır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -23,8 +23,8 @@ Starts listing of macro expansion statements that generate code or data.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu varsayılandır. Same as [.XALL](../../assembler/masm/dot-xall.md).
+Bu varsayılandır. Aynı [. XALL](../../assembler/masm/dot-xall.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Directives reference](directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)

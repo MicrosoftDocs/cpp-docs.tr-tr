@@ -15,11 +15,11 @@ ms.locfileid: "74398406"
 ---
 # <a name="err"></a>**.ERR**
 
-Generates an error.
+Bir hata oluşturur.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **.ERR** ⟦*message*⟧
+> **. HATA** ⟦*iletisi*⟧
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

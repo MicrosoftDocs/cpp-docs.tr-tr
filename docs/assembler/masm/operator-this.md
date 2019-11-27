@@ -17,12 +17,12 @@ ms.locfileid: "74395474"
 ---
 # <a name="operator-this"></a>THIS işleci
 
-Returns an operand of specified *type* whose offset and segment values are equal to the current location counter value.
+Belirtilen *türün* , konumu ve segment değerleri geçerli konum sayacı değerine eşit olan bir işleneni döndürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **THIS** *type*
+> **Bu** *tür*
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Operators reference](operators-reference.md)
+[İşleçler başvurusu](operators-reference.md)

@@ -13,14 +13,14 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74399064"
 ---
-# <a name="fardata"></a>\@fardata
+# <a name="fardata"></a>\@farverileri
 
-The name of the segment defined by the [.FARDATA](../../assembler/masm/dot-fardata.md) directive (text macro).
+Tarafından tanımlanan segmentin adı [. FARDATA](../../assembler/masm/dot-fardata.md) yönergesi (Metin makrosu).
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **\@fardata**
+> **\@farverileri**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Symbols reference](symbols-reference.md)
+[Semboller başvurusu](symbols-reference.md)

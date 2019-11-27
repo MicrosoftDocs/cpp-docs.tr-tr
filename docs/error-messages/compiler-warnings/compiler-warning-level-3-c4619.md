@@ -1,5 +1,5 @@
 ---
-title: Compiler Warning (level 3) C4619
+title: Derleyici Uyarısı (düzey 3) C4619
 ms.date: 11/04/2016
 f1_keywords:
 - C4619
@@ -13,15 +13,15 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 11/19/2019
 ms.locfileid: "74189172"
 ---
-# <a name="compiler-warning-level-3-c4619"></a>Compiler Warning (level 3) C4619
+# <a name="compiler-warning-level-3-c4619"></a>Derleyici Uyarısı (düzey 3) C4619
 
-\#pragma warning : there is no warning number 'number'
+\#pragma warning: uyarı numarası ' number ' yok
 
-An attempt was made to disable a warning that does not exist.
+Varolmayan bir uyarıyı devre dışı bırakmak için bir girişimde bulunuldu.
 
-This warning is off by default. See [Compiler Warnings That Are Off by Default](../../preprocessor/compiler-warnings-that-are-off-by-default.md) for more information.
+Bu uyarı varsayılan olarak kapalıdır. Daha fazla bilgi için bkz. [Varsayılan olarak kapalı olan Derleyici uyarıları](../../preprocessor/compiler-warnings-that-are-off-by-default.md) .
 
-The following sample generates C4619:
+Aşağıdaki örnek C4619 oluşturur:
 
 ```cpp
 // C4619.cpp

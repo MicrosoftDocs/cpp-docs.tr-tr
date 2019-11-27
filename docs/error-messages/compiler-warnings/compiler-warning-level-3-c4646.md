@@ -1,5 +1,5 @@
 ---
-title: Compiler Warning (level 3) C4646
+title: Derleyici Uyarısı (düzey 3) C4646
 ms.date: 11/04/2016
 f1_keywords:
 - C4646
@@ -13,13 +13,13 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 11/19/2019
 ms.locfileid: "74189389"
 ---
-# <a name="compiler-warning-level-3-c4646"></a>Compiler Warning (level 3) C4646
+# <a name="compiler-warning-level-3-c4646"></a>Derleyici Uyarısı (düzey 3) C4646
 
-function declared with __declspec(noreturn) has non-void return type
+__declspec (noreturn) ile belirtilen işlevin void olmayan dönüş türü yok
 
-A function marked with the [noreturn](../../cpp/noreturn.md) `__declspec` modifier should have a [void](../../cpp/void-cpp.md) return type.
+[Noreturn](../../cpp/noreturn.md) `__declspec` değiştiricisi ile işaretlenen bir işlev, [void](../../cpp/void-cpp.md) dönüş türüne sahip olmalıdır.
 
-The following sample generates C4646:
+Aşağıdaki örnek C4646 oluşturur:
 
 ```cpp
 // C4646.cpp

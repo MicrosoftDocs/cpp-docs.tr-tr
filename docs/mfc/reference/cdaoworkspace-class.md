@@ -79,15 +79,15 @@ Bir adlandırılmış, parola korumalı veritabanı oturumunu, oturum açmak iç
 class CDaoWorkspace : public CObject
 ```
 
-## <a name="members"></a>Üyeler
+## <a name="members"></a>Üyeleri
 
-### <a name="public-constructors"></a>Ortak Oluşturucular
+### <a name="public-constructors"></a>Genel Oluşturucular
 
 |Name|Açıklama|
 |----------|-----------------|
 |[CDaoWorkspace:: Cdaoçalışma alanı](#cdaoworkspace)|Bir çalışma alanı nesnesi oluşturur. Daha sonra `Create` veya `Open`çağırın.|
 
-### <a name="public-methods"></a>Ortak Yöntemler
+### <a name="public-methods"></a>Genel Yöntemler
 
 |Name|Açıklama|
 |----------|-----------------|
@@ -808,7 +808,7 @@ static void PASCAL SetDefaultUser(LPCTSTR lpszDefaultUser);
 ### <a name="parameters"></a>Parametreler
 
 *lpszDefaultUser*<br/>
-Varsayılan Kullanıcı adı. Bir Kullanıcı adı 1-20 karakter uzunluğunda olabilir ve alfabetik karakterler içerebilir aksanlı karakterler, sayılar, boşluklar ve simgeler şunları hariç: "(tırnak işaretleri),/(eğik çizgi), \ (ters eğik çizgi), \[ \] (köşeli ayraç),: (iki nokta üst &#124; üste), (kanal), \< (küçüktür işareti), > (büyüktür işareti), + (artı işareti), = (eşittir işareti),; (noktalı virgül),, (virgül), (soru işareti), \* (yıldız işareti), baştaki boşluklar ve denetim karakterleri (ASCII 00-ASCII 31). İlgili bilgiler için, DAO yardımı 'nda "Kullanıcı adı özelliği" konusuna bakın.
+Varsayılan kullanıcı adı. Bir Kullanıcı adı 1-20 karakter uzunluğunda olabilir ve alfabetik karakterler içerebilir aksanlı karakterler, sayılar, boşluklar ve simgeler şunları hariç: "(tırnak işaretleri),/(eğik çizgi), \ (ters eğik çizgi), \[ \] (köşeli ayraç),: (iki nokta üst &#124; üste), (kanal), \< (küçüktür işareti), > (büyüktür işareti), + (artı işareti), = (eşittir işareti),; (noktalı virgül),, (virgül), (soru işareti), \* (yıldız işareti), baştaki boşluklar ve denetim karakterleri (ASCII 00-ASCII 31). İlgili bilgiler için, DAO yardımı 'nda "Kullanıcı adı özelliği" konusuna bakın.
 
 ### <a name="remarks"></a>Açıklamalar
 

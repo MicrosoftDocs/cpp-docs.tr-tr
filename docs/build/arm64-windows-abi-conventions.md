@@ -71,7 +71,7 @@ Genel ve statikler için varsayılan düzen hizalaması:
 
 AArch64 mimarisi 32 tamsayı yazmaçlarını destekler:
 
-| Yazmaç | Katılımcıdan? | Rol |
+| Kaydet | Katılımcıdan? | Rol |
 | - | - | - |
 | x0 | Katılımcıdan | Parametre/karalama kayıt 1, sonuç kaydı |
 | x1-x7 | Katılımcıdan | Parametre/karalama kaydı 2-8 |
@@ -94,7 +94,7 @@ AArch32 aksine, program sayacı (PC) ve yığın işaretçisi (SP), dizinli Yazm
 
 AArch64 mimarisi, aşağıda özetlenen 32 kayan nokta/SıMD kayıtlarını da destekler:
 
-| Yazmaç | Katılımcıdan? | Rol |
+| Kaydet | Katılımcıdan? | Rol |
 | - | - | - |
 | v0 | Katılımcıdan | Parametre/karalama kayıt 1, sonuç kaydı |
 | V1-v7 | Katılımcıdan | Parametre/karalama Yazmaçları 2-8 |
@@ -117,7 +117,7 @@ Kayan nokta denetim kaydı (fpcr), içindeki çeşitli bit alanları üzerinde b
 
 AArch32 gibi, AArch64 belirtimi, sistem tarafından denetlenen üç "iş parçacığı KIMLIĞI" kaydı sağlar:
 
-| Yazmaç | Rol |
+| Kaydet | Rol |
 | - | - |
 | TPIDR_EL0 | Ayrılamadı. |
 | TPIDRRO_EL0 | Geçerli işlemcinin CPU numarasını içerir. |
@@ -221,7 +221,7 @@ Diğer tüm türler bu kuralı kullanır:
 
 - Çağıran, sonucu tutmak için yeterli boyutta ve hizalamadaki bir bellek bloğu ayıracaktır. Bellek bloğunun adresi, x0 içindeki işleve ek bir bağımsız değişken olarak geçirilir veya x0 içinde $this geçirilirse x1. Çağrılan, alt yordamın yürütülmesi sırasında herhangi bir noktada sonuç bellek bloğunu değiştirebilir. Çağrılan, x0 içindeki bellek bloğunun adresini döndürür.
 
-## <a name="stack"></a>Yığın
+## <a name="stack"></a>Toplu İş
 
 ARM tarafından ABı 'in sonunda, yığın her zaman 16 baytlık hizalı olmalıdır. AArch64, SP 16 bayt hizalı olduğunda ve SP göreli yük veya mağaza yapıldığında yığın hizalama hataları üreten bir donanım özelliği içerir. Windows, bu özellik her zaman etkin olarak çalışır.
 

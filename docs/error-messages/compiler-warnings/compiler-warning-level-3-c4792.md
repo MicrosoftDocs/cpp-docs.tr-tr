@@ -1,5 +1,5 @@
 ---
-title: Compiler Warning (level 3) C4792
+title: Derleyici Uyarısı (düzey 3) C4792
 ms.date: 11/04/2016
 f1_keywords:
 - C4792
@@ -13,15 +13,15 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 11/19/2019
 ms.locfileid: "74189337"
 ---
-# <a name="compiler-warning-level-3-c4792"></a>Compiler Warning (level 3) C4792
+# <a name="compiler-warning-level-3-c4792"></a>Derleyici Uyarısı (düzey 3) C4792
 
-function 'function' declared using sysimport and referenced from native code; import library required to link
+' function ' işlevi, SysImport kullanılarak bildirilmiştir ve yerel koddan başvuruluyor; bağlantı için içeri aktarma kitaplığı gerekiyor
 
-A native function that was imported into the program with DllImport was called from an unmanaged function. Therefore, you must link to the import library for the DLL.
+Yönetilmeyen bir işlevden DllImport ile programa aktarılmış yerel bir işlev çağrıldı. Bu nedenle, DLL için içeri aktarma kitaplığına bağlantı oluşturmanız gerekir.
 
-This warning cannot be resolved in code or by changing the way you compile. Use the [warning](../../preprocessor/warning.md) pragma to disable this warning.
+Bu uyarı, kod içinde veya derleyebileceğiniz şekilde değiştirilerek çözümlenemez. Bu uyarıyı devre dışı bırakmak için [Uyarı](../../preprocessor/warning.md) pragmasını kullanın.
 
-The following sample generates C4792:
+Aşağıdaki örnek C4792 oluşturur:
 
 ```cpp
 // C4792.cpp

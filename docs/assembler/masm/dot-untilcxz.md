@@ -13,10 +13,10 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74397846"
 ---
-# <a name="untilcxz-32-bit-masm"></a>.UNTILCXZ (32-bit MASM)
+# <a name="untilcxz-32-bit-masm"></a>. UNTILCXZ (32-bit masa)
 
-(32-bit MASM only.) See [.REPEAT](../../assembler/masm/dot-repeat.md).
+(yalnızca 32-bit masa.) Bkz [. TEKRARLAYıN](../../assembler/masm/dot-repeat.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Directives reference](directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)

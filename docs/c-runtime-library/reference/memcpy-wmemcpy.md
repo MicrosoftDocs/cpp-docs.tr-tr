@@ -61,7 +61,7 @@ Yeni arabellek.
 *YN*<br/>
 Kopyalanacak arabellek.
 
-{1&gt;count&lt;1}<br/>
+*biriktirme*<br/>
 Kopyalanacak karakter sayısı.
 
 ## <a name="return-value"></a>Dönüş Değeri

@@ -15,14 +15,14 @@ ms.locfileid: "74397264"
 ---
 # <a name="label-masm"></a>LABEL (MASM)
 
-Creates a new label by assigning the current location-counter value and the given *type* to *name*.
+Geçerli konum sayacı değerini ve verilen *türü* *ada*atayarak yeni bir etiket oluşturur.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> *name* **LABEL** *type*
+> *ad* **etiketi** *türü*
 >
-> *name* **LABEL** ⟦**NEAR** | **FAR** | **PROC**⟧ **PTR** ⟦*type*⟧
+> *ad* **etiketi** ⟦**yakınındaki** |  ** | ** **proc**⟧ **PTR** ⟦*Type*⟧
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Directives reference](directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)

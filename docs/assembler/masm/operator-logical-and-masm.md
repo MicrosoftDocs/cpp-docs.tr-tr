@@ -1,5 +1,5 @@
 ---
-title: Substitution operator (MASM)
+title: Değiştirme işleci (masa)
 ms.date: 08/30/2018
 f1_keywords:
 - operator &&
@@ -14,14 +14,14 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74396781"
 ---
-# <a name="substitution-operator-masm"></a>Substitution operator (MASM)
+# <a name="substitution-operator-masm"></a>Değiştirme işleci (masa)
 
-Replaces *parameter* with its corresponding argument value.
+*Parametresini* karşılık gelen bağımsız değişken değeriyle değiştirir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> __&__ *parameter* __&__
+> __&__ *parametresi* __&__
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Operators reference](operators-reference.md)
+[İşleçler başvurusu](operators-reference.md)

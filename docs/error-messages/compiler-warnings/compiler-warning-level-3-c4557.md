@@ -1,5 +1,5 @@
 ---
-title: Compiler Warning (level 3) C4557
+title: Derleyici Uyarısı (düzey 3) C4557
 ms.date: 11/04/2016
 f1_keywords:
 - C4557
@@ -13,15 +13,15 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 11/19/2019
 ms.locfileid: "74188947"
 ---
-# <a name="compiler-warning-level-3-c4557"></a>Compiler Warning (level 3) C4557
+# <a name="compiler-warning-level-3-c4557"></a>Derleyici Uyarısı (düzey 3) C4557
 
 '__assume' 'effect' etkisini içeriyor
 
-The value passed to an [__assume](../../intrinsics/assume.md) statement2 was modified.
+Bir [__assume](../../intrinsics/assume.md) Deyim2 'e geçirilen değer değiştirildi.
 
-This warning is off by default. See [Compiler Warnings That Are Off by Default](../../preprocessor/compiler-warnings-that-are-off-by-default.md) for more information.
+Bu uyarı varsayılan olarak kapalıdır. Daha fazla bilgi için bkz. [Varsayılan olarak kapalı olan Derleyici uyarıları](../../preprocessor/compiler-warnings-that-are-off-by-default.md) .
 
-The following sample generates C4557:
+Aşağıdaki örnek C4557 oluşturur:
 
 ```cpp
 // C4557.cpp

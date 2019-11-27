@@ -15,22 +15,22 @@ ms.locfileid: "74397459"
 ---
 # <a name="if-masm"></a>IF (MASM)
 
-Grants assembly of *ifstatements* if *expression1* is true (nonzero) or *elseifstatements* if *expression1* is false (0) and *expression2* is true.
+*İfade1 true* ise (sıfır dışında) veya *İfade1* yanlış (0) *ise ve* *İfade2* true ise, *ifdeyimlerin* derlemesini verir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **IF** *expression1*\
-> *if-statements*\
-> ⟦**ELSEIF** *expression2*\
-> *elseif-statements*⟧\
+> **IF** *İfade1*\
+> *IF-deyimleri*\
+> ⟦**ElseIf** *İfade2*\
+> *ElseIf-deyimlerini*⟧ \
 > ⟦**ELSE**\
-> *else-statements*⟧\
+> *Else-deyimler*⟧ \
 > **ENDIF**
 
 ## <a name="remarks"></a>Açıklamalar
 
-The following directives may be substituted for [ELSEIF](../../assembler/masm/elseif-masm.md): **ELSEIFB**, **ELSEIFDEF**, **ELSEIFDIF**, **ELSEIFDIFI**, **ELSEIFE**, **ELSEIFIDN**, **ELSEIFIDNI**, **ELSEIFNB**, and **ELSEIFNDEF**. Optionally, assembles *else-statements* if the previous expression is false. Note that the expressions are evaluated at assembly time.
+Şu yönergeler [ElseIf](../../assembler/masm/elseif-masm.md): **ELSEIFB**, **elseifdef**, **elseifdıf**, **elseifdifi**, **ELSEIFE**, **elseıfidn**, **elseıfidnı**, **elseifnb**ve **elseifndef**için kullanılabilir olabilir. İsteğe bağlı olarak, önceki ifade false ise *Else deyimlerini* ayrıştırır. İfadelerin derleme zamanında değerlendirildiğini unutmayın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Directives reference](directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)

@@ -16,12 +16,12 @@ ms.locfileid: "74396166"
 ---
 # <a name="operator-short"></a>SHORT işleci
 
-Sets the type of *label* to short. All jumps to *label* must be short (within the range -128 to +127 bytes from the jump instruction to *label*).
+*Etiket* türünü Short olarak ayarlar. Tüm *etikete* atlamalar Short (-128 ile + 127 bayt *aralığında) olmalıdır*.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **SHORT** *label*
+> **Kısa** *etiket*
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Operators reference](operators-reference.md)
+[İşleçler başvurusu](operators-reference.md)

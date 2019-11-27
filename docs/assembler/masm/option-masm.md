@@ -15,28 +15,28 @@ ms.locfileid: "74395176"
 ---
 # <a name="option-masm"></a>OPTION (MASM)
 
-Enables and disables features of the assembler.
+Assembler özelliklerini etkinleştirip devre dışı bırakır.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **OPTION** *optionlist*
+> **Seçenek** *optionlist*
 
 ## <a name="remarks"></a>Açıklamalar
 
-Available options include:
+Kullanılabilir seçenekler şunlardır:
 
 |||||
 |-|-|-|-|
-|**CASEMAP**|**DOTNAME**|**NODOTNAME**|**EMULATOR**|
-|**NOEMULATOR**|**EPILOGUE**|**EXPR16**|**EXPR32**|
-|**LANGUAGE**|**LJMP**|**NOLJMP**|**M510**|
-|**NOM510**|**NOKEYWORD**|**NOSIGNEXTEND**|**OFFSET**|
-|**OLDMACROS**|**NOOLDMACROS**|**OLDSTRUCTS**|**NOOLDSTRUCTS**|
-|**PROC**|**PROLOGUE**|**READONLY**|**NOREADONLY**|
-|**SCOPED**|**NOSCOPED**|**SEGMENT**|**SETIF2**.|
+|**CASEMAP**|**DOTNAME**|**NODOTNAME**|**BENZETI**|
+|**NOEMULATOR**|**KAPANıŞ**|**EXPR16**|**EXPR32**|
+|**DILDIR**|**LJMP**|**NOLJMP**|**M510**|
+|**NOM510**|**NOANAHTAR sözcüğü**|**NOSIGNEXTEND**|**KONUMU**|
+|**ESKIMAKROLAR**|**NOOLDMACROS**|**OLDYAPıLAR**|**NOOLDYAPıLAR**|
+|**PROC**|**BAŞLANGıÇ**|**ÖZELLIĞININ**|**NOREADONLY**|
+|**YAYıL**|**NOKAPSAMLıDıR**|**SEGMENT**|**SETIF2**.|
 
-The syntax for LANGUAGE is **OPTION LANGUAGE:** <em>x</em>, where *x* is one of C, SYSCALL, STDCALL, PASCAL, FORTRAN, or BASIC.  SYSCALL, PASCAL, FORTRAN, and BASIC are not supported with used with [.MODEL](../../assembler/masm/dot-model.md) FLAT.
+DIL sözdizimi **:** <em>x</em>, burada *x* C, SYSCALL, stdcall, Pascal, FORTRAN veya BASIC 'ten biridir.  SYSCALL, PASCAL, FORTRAN ve BASIC, ile birlikte kullanıldığında desteklenmez [. düz MODEL](../../assembler/masm/dot-model.md) .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Directives reference](directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)

@@ -1,5 +1,5 @@
 ---
-title: DLL loading exception codes (C/C++)
+title: DLL yükleme özel durum kodları (CC++/)
 ms.date: 11/19/2019
 f1_keywords:
 - ERROR_MOD_NOT_FOUND
@@ -21,13 +21,13 @@ ms.locfileid: "74243845"
 ---
 # <a name="exceptions-cc"></a>Özel Durumlar (C/C++)
 
-Two exception codes can be raised when failures are encountered:
+Hatalarla karşılaşıldığında iki özel durum kodu ortaya çıkar:
 
-- For a **LoadLibrary** failure
+- Bir **LoadLibrary** hatası için
 
-- For a **GetProcAddress** failure
+- **GetProcAddress** hatası için
 
-Here is the exception information:
+Özel durum bilgileri aşağıda verilmiştir:
 
 ```
 //
@@ -37,11 +37,11 @@ Here is the exception information:
 #define VcppException(sev,err)  ((sev) | (FACILITY_VISUALCPP<<16) | err)
 ```
 
-The exception codes thrown are the standard VcppException(ERROR_SEVERITY_ERROR, ERROR_MOD_NOT_FOUND) and VcppException(ERROR_SEVERITY_ERROR, ERROR_PROC_NOT_FOUND) values. The exception passes a pointer to a **DelayLoadInfo** structure in the LPDWORD value that can be retrieved by **GetExceptionInformation** in the [EXCEPTION_RECORD](/windows/win32/api/winnt/ns-winnt-exception_record) structure, ExceptionInformation[0] field.
+Oluşturulan özel durum kodları standart VcppException (ERROR_SEVERITY_ERROR, ERROR_MOD_NOT_FOUND) ve VcppException (ERROR_SEVERITY_ERROR, ERROR_PROC_NOT_FOUND) değerlerdir. Özel durum, [EXCEPTION_RECORD](/windows/win32/api/winnt/ns-winnt-exception_record) yapısı, ExceptionInformation [0] alanındaki **GetExceptionInformation** tarafından alınabilecek lpdword değerindeki bir **DelayLoadInfo** yapısına bir işaretçi geçirir.
 
-Additionally, if the incorrect bits are set in the grAttrs field, the exception ERROR_INVALID_PARAMETER is thrown. This exception is, for all intents and purposes, fatal.
+Ayrıca, grAttrs alanında yanlış bitler ayarlandıysa, özel durum ERROR_INVALID_PARAMETER oluşturulur. Bu özel durum, tüm amaçlar ve amaçlar için önemli.
 
-See [Structure and Constant Definitions](structure-and-constant-definitions.md) for more information.
+Daha fazla bilgi için bkz. [Yapı ve sabit tanımlar](structure-and-constant-definitions.md) .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -17,12 +17,12 @@ ms.locfileid: "74395319"
 ---
 # <a name="operator-xor"></a>XOR işleci
 
-Returns the result of a bitwise **XOR** operation for *expression1* and *expression2*.
+*İfade1* ve *İfade2*için bit düzeyinde **Xor** işleminin sonucunu döndürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> *expression1* **XOR** *expression2*
+> *İfade1* **Xor** *İfade2*
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Operators reference](operators-reference.md)
+[İşleçler başvurusu](operators-reference.md)

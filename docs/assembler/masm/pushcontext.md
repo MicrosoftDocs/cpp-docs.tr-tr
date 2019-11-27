@@ -15,12 +15,12 @@ ms.locfileid: "74395711"
 ---
 # <a name="pushcontext"></a>PUSHCONTEXT
 
-Saves part or all of the current *context*: segment register assumes, radix value, listing and cref flags, or processor/coprocessor values. The *context* can be **ASSUMES**, **RADIX**, **LISTING**, **CPU**, or **ALL**.
+Geçerli *bağlamın*parçasını veya tümünü kaydeder: segment yazmacı varsayılmaktadır, taban değeri, listeleme ve cref bayrakları veya işlemci/Coprocessor değerleri. *Bağlam* , **Radix**, **Listeleme**, **CPU**veya **Tümü** **olabilir.**
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **PUSHCONTEXT** *context*
+> **PushContext** *bağlamı*
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Directives reference](directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)

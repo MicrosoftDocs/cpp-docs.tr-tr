@@ -17,13 +17,13 @@ ms.locfileid: "74245203"
 ---
 # <a name="void-c"></a>void (C++)
 
-When used as a function return type, the **void** keyword specifies that the function does not return a value. When used for a function's parameter list, **void** specifies that the function takes no parameters. When used in the declaration of a pointer, **void** specifies that the pointer is "universal."
+İşlev dönüş türü olarak kullanıldığında, **void** anahtar sözcüğü işlevin bir değer döndürmediğinden emin olarak belirtir. İşlevin parametre listesi için kullanıldığında, **void** işlevin hiçbir parametre aldığını belirtir. Bir işaretçinin bildiriminde kullanıldığında, **void** , işaretçinin "Universal" olduğunu belirtir.
 
-If a pointer's type is **void\*** , the pointer can point to any variable that is not declared with the **const** or **volatile** keyword. A **void\*** pointer cannot be dereferenced unless it is cast to another type. A **void\*** pointer can be converted into any other type of data pointer.
+Bir işaretçinin türü **\*void** ise, işaretçi **const** veya **volatile** anahtar sözcüğüyle bildirilmeyen herhangi bir değişkene işaret edebilir. **Void\*** işaretçisi, başka bir türe yayınlanmadığı takdirde başvuru yapılamaz. **Void\*** işaretçisi, başka bir tür veri işaretçisine dönüştürülebilir.
 
-A **void** pointer can point to a function, but not to a class member in C++.
+**Void** bir işaretçi bir işlevi işaret edebilir, ancak içindeki C++bir sınıf üyesine yönelik değildir.
 
-You cannot declare a variable of type **void**.
+**Void**türünde bir değişken bildiremezsiniz.
 
 ## <a name="example"></a>Örnek
 

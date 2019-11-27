@@ -33,9 +33,9 @@ DAO, Office 2013 aracılığıyla desteklenir. DAO 3,6 son sürümdür ve artık
 class CDaoFieldExchange
 ```
 
-## <a name="members"></a>Üyeler
+## <a name="members"></a>Üyeleri
 
-### <a name="public-methods"></a>Ortak Yöntemler
+### <a name="public-methods"></a>Genel Yöntemler
 
 |Name|Açıklama|
 |----------|-----------------|

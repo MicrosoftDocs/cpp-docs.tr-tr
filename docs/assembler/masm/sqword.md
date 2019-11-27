@@ -15,14 +15,14 @@ ms.locfileid: "74393684"
 ---
 # <a name="sqword"></a>SQWORD
 
-Allocates and optionally initializes 8 signed bytes of storage for each *initializer*. Also can be used as a type specifier anywhere a type is legal.
+Her *Başlatıcı*için 8 işaretli depolama birimi ayırır ve isteğe bağlı olarak başlatır. Ayrıca, türün geçerli olduğu her yerde tür belirleyicisi olarak da kullanılabilir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> *name* **SQWORD** *initializer* ⟦ __,__ *initializer* ...⟧
+> *adı* **sqword** *Başlatıcı* ⟦ __,__ *Başlatıcı* ... ⟧
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Directives Reference](../../assembler/masm/directives-reference.md)\
+[Yönergeler başvurusu](../../assembler/masm/directives-reference.md)\
 [QWORD](../../assembler/masm/qword.md)\
 [DQ](../../assembler/masm/dq.md)

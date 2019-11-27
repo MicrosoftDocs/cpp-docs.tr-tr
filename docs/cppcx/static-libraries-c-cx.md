@@ -36,7 +36,7 @@ Yeni bir proje oluşturmak için yönergeler, yüklediğiniz Visual Studio sür�
 
 ### <a name="to-create-a-uwp-static-library-in-visual-studio-2017-or-visual-studio-2015"></a>Visual Studio 2017 veya Visual Studio 2015 ' de UWP statik kitaplığı oluşturmak için
 
-1. Menü çubuğunda, **dosya** > **yeni** > **proje**. **Visual C++**  > **Windows Universal** altında **statik kitaplık (Evrensel Windows)** seçeneğini belirleyin.
+1. Menü çubuğunda **dosya** > **Yeni** > **Proje**' yi seçin. **Visual C++**  > **Windows Universal** altında **statik kitaplık (Evrensel Windows)** seçeneğini belirleyin.
 
 1. **Çözüm Gezgini**' de, proje için kısayol menüsünü açın ve ardından **Özellikler**' i seçin. **Özellikler** iletişim kutusunda, **yapılandırma özellikleri** > **CC++ /** sayfasında, kullanım **Windows çalışma zamanı uzantısını** **Evet (/ZW)** olarak ayarlayın.
 

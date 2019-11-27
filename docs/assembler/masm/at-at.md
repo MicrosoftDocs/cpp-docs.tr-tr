@@ -15,7 +15,7 @@ ms.locfileid: "74399257"
 ---
 # <a name=""></a>\@\@:
 
-Defines a code label recognizable only between *label1* and *label2*, where *label1* is either start of code or the previous `@@:` label, and *label2* is either end of code or the next `@@:` label. See [\@B](../../assembler/masm/at-b.md) and [\@F](../../assembler/masm/at-f.md).
+Yalnızca *Label1* ve *Etiket 2*arasında tanınabilir olan bir kod etiketi tanımlar; burada *Label1* , kod başlangıcı veya önceki `@@:` etiketi, *Etiket 2* ise kod sonu veya sonraki `@@:` etikettir. Bkz. [\@B](../../assembler/masm/at-b.md) ve [F\@](../../assembler/masm/at-f.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -23,4 +23,4 @@ Defines a code label recognizable only between *label1* and *label2*, where *lab
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Symbols reference](symbols-reference.md)
+[Semboller başvurusu](symbols-reference.md)

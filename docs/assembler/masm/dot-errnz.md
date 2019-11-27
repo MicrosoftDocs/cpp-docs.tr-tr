@@ -15,11 +15,11 @@ ms.locfileid: "74398302"
 ---
 # <a name="errnz"></a>**.ERRNZ**
 
-Generates an error if *expression* is true (nonzero).
+*İfade* true (sıfır dışında) olduğunda bir hata üretir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **.ERRNZ** *expression* ⟦ __,__ *message*⟧
+> **. Errnz** *ifadesi* ⟦ __,__ *ileti*⟧
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

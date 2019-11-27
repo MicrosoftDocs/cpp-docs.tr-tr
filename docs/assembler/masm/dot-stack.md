@@ -13,14 +13,14 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74397903"
 ---
-# <a name="stack-32-bit-masm"></a>.STACK (32-bit MASM)
+# <a name="stack-32-bit-masm"></a>. YıĞıN (32-bit masa)
 
-When used with [.MODEL](../../assembler/masm/dot-model.md), defines a stack segment (with segment name **STACK**). The optional *size* specifies the number of bytes for the stack (default 1,024). The **.STACK** directive automatically closes the stack statement. (32-bit MASM only.)
+İle kullanıldığında [. MODEL](../../assembler/masm/dot-model.md), yığın segmenti tanımlar (kesim adı **yığını**ile). İsteğe bağlı *Boyut* , yığın için bayt sayısını belirtir (varsayılan 1.024). **. STACK** yönergesi otomatik olarak yığın ifadesini kapatır. (yalnızca 32-bit masa.)
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **.STACK** ⟦*size*⟧
+> **. STACK** ⟦*boyutu*⟧
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Directives reference](directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)

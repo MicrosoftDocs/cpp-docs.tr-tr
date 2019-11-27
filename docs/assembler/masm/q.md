@@ -15,7 +15,7 @@ ms.locfileid: "74394652"
 ---
 # <a name=""></a>?
 
-In data declarations, a value that the assembler allocates but does not initialize.
+Veri bildirimlerinde, Assembler tarafından ayrılan ancak başlatılmaz bir değer.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -23,4 +23,4 @@ In data declarations, a value that the assembler allocates but does not initiali
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Symbols reference](symbols-reference.md)
+[Semboller başvurusu](symbols-reference.md)

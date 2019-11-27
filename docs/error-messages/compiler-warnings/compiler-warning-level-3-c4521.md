@@ -1,5 +1,5 @@
 ---
-title: Compiler Warning (level 3) C4521
+title: Derleyici Uyarısı (düzey 3) C4521
 ms.date: 11/04/2016
 f1_keywords:
 - C4521
@@ -13,17 +13,17 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 11/19/2019
 ms.locfileid: "74189357"
 ---
-# <a name="compiler-warning-level-3-c4521"></a>Compiler Warning (level 3) C4521
+# <a name="compiler-warning-level-3-c4521"></a>Derleyici Uyarısı (düzey 3) C4521
 
-'class' : multiple copy constructors specified
+' class ': birden fazla kopya Oluşturucusu belirtildi
 
-The class has multiple copy constructors of a single type. This warning is informational; the constructors are callable in your program.
+Sınıfta tek bir türün birden fazla kopya Oluşturucusu vardır. Bu uyarı bilgilendirme amaçlıdır; oluşturucular, programınızda çağrılabilir.
 
-Use the [warning](../../preprocessor/warning.md) pragma to suppress this warning.
+Bu uyarıyı gizlemek için [Uyarı](../../preprocessor/warning.md) pragmasını kullanın.
 
 ## <a name="example"></a>Örnek
 
-The following sample generates C4521.
+Aşağıdaki örnek C4521 oluşturur.
 
 ```cpp
 // C4521.cpp

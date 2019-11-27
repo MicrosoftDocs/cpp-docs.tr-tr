@@ -14,7 +14,7 @@ ms.locfileid: "74245151"
 ---
 # <a name="restrictions-on-exception-handlers"></a>Özel durum işleyicileriyle ilgili kısıtlamalar
 
-The principal limitation to using exception handlers in code is that you cannot use a **goto** statement to jump into a **__try** statement block. Bunun yerine, normal denetim akışıyla deyim bloğunu girmeniz gerekir. You can jump out of a **__try** statement block and nest exception handlers as you choose.
+Kodda özel durum işleyicilerini kullanmanın asıl sınırlaması, bir **__try** deyim bloğuna geçmek için **goto** ifadesini kullanmmın. Bunun yerine, normal denetim akışıyla deyim bloğunu girmeniz gerekir. Bir **__try** deyim bloğunun dışına atlayabilir ve özel durum işleyicilerini seçtiğiniz şekilde iç içe geçirebilirsiniz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

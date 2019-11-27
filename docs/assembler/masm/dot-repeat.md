@@ -13,16 +13,16 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74398003"
 ---
-# <a name="repeat-32-bit-masm"></a>.REPEAT (32-bit MASM)
+# <a name="repeat-32-bit-masm"></a>. YINELE (32-bit masa)
 
-Generates code that repeats execution of the block of *statements* until *condition* becomes true. [.UNTILCXZ](../../assembler/masm/dot-untilcxz.md), which becomes true when CX is zero, may be substituted for [.UNTIL](../../assembler/masm/dot-until.md). The *condition* is optional with **.UNTILCXZ**. (32-bit MASM only.)
+*Koşul* doğru olana kadar *deyim* bloğunun yürütülmesini tekrardan tekrarlanacak kodu üretir. [. ](../../assembler/masm/dot-untilcxz.md)CX sıfır olduğunda true haline gelen UNTILCXZ, için değiştirilebilir [. UNTIL](../../assembler/masm/dot-until.md). *Koşulu* ile isteğe bağlıdır **. UNTILCXZ**. (yalnızca 32-bit masa.)
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **.REPEAT**\
-> *statements*\
-> **.UNTIL** *condition*
+> **.\ YINELE**
+> *deyimler*\
+> **. UNTIL** *koşulu*
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Directives reference](directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)

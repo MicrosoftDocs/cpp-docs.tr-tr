@@ -15,11 +15,11 @@ ms.locfileid: "74398352"
 ---
 # <a name="erre"></a>.ERRE
 
-Generates an error if *expression* is false (0).
+*İfade* yanlışsa bir hata üretir (0).
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **.ERRE** *expression* ⟦ __,__ *message*⟧
+> **. Erre** *ifadesi* ⟦ __,__ *ileti*⟧
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

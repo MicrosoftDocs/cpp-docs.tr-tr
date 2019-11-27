@@ -17,12 +17,12 @@ ms.locfileid: "74396556"
 ---
 # <a name="operator-opattr"></a>OPATTR işleci
 
-Returns a word defining the mode and scope of *expression*. The low byte is identical to the byte returned by [.TYPE](../../assembler/masm/operator-dot-type.md). The high byte contains additional information.
+*İfadenin*modunu ve kapsamını tanımlayan bir sözcük döndürür. Düşük bayt tarafından döndürülen bayt ile aynıdır [. YAZıN](../../assembler/masm/operator-dot-type.md). Yüksek bayt ek bilgi içerir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **OPATTR** *expression*
+> **Opattr** *ifadesi*
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Operators reference](operators-reference.md)
+[İşleçler başvurusu](operators-reference.md)

@@ -15,23 +15,23 @@ ms.locfileid: "74398031"
 ---
 # <a name="pushreg"></a>.PUSHREG
 
-Generates a `UWOP_PUSH_NONVOL` unwind code entry for the specified register number using the current offset in the prologue.
+Belirtilen kayıt numarası için, prolog 'deki geçerli sapmayı kullanarak bir `UWOP_PUSH_NONVOL` bırakma kodu girişi oluşturur.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> .PUSHREG register
+> . PUSHREG kaydı
 
 ## <a name="remarks"></a>Açıklamalar
 
-**.PUSHREG** allows ml64.exe users to specify how a frame function unwinds, and is only allowed within the prologue, which extends from the [PROC](../../assembler/masm/proc.md) **FRAME** declaration to the [.ENDPROLOG](../../assembler/masm/dot-endprolog.md) directive. These directives do not generate code; they only generate `.xdata` and `.pdata`. **.PUSHREG** should be preceded by instructions that actually implement the actions to be unwound. It is a good practice to wrap both the unwind directives and the code they are meant to unwind in a macro to ensure agreement.
+**. PUSHREG** , ml64. exe kullanıcılarına bir çerçeve işlevinin yük dışı bırakma şeklini belirtmesini sağlar ve işlem [](../../assembler/masm/proc.md) **çerçevesi** bildiriminden öğesine genişleten yalnızca prolog dahilinde izin verilir [. ENDPROLOG](../../assembler/masm/dot-endprolog.md) yönergesi. Bu yönergeler kod oluşturmaz; yalnızca `.xdata` ve `.pdata`oluşturur. **. PUSHREG** öncesinde eylemleri gerçekten uygulayan yönergelerden önce gelmelidir. Anlaşma sağlamak için hem bırakma yönergelerini hem de bir makroya geri doğru bir şekilde kaydırmak için iyi bir uygulamadır.
 
-For more information, see [MASM for x64 (ml64.exe)](../../assembler/masm/masm-for-x64-ml64-exe.md).
+Daha fazla bilgi için bkz. [for x64 (ml64. exe)](../../assembler/masm/masm-for-x64-ml64-exe.md).
 
 ## <a name="sample"></a>Örnek
 
 ### <a name="description"></a>Açıklama
 
-The following sample shows how to push non-volatile registers.
+Aşağıdaki örnek, geçici olmayan yazmaçların nasıl göndermeli olduğunu gösterir.
 
 ### <a name="code"></a>Kod
 
@@ -57,4 +57,4 @@ END
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Directives reference](directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)

@@ -1,5 +1,5 @@
 ---
-title: Compiler Warning (level 3) C4640
+title: Derleyici Uyarısı (düzey 3) C4640
 ms.date: 11/04/2016
 f1_keywords:
 - C4640
@@ -13,15 +13,15 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 11/19/2019
 ms.locfileid: "74189101"
 ---
-# <a name="compiler-warning-level-3-c4640"></a>Compiler Warning (level 3) C4640
+# <a name="compiler-warning-level-3-c4640"></a>Derleyici Uyarısı (düzey 3) C4640
 
-'instance' : construction of local static object is not thread-safe
+' örnek ': yerel statik nesnenin yapımı iş parçacığı güvenli değil
 
-A static instance of an object is not thread safe.
+Bir nesnenin statik örneği iş parçacığı güvenli değildir.
 
-This warning is off by default. See [Compiler Warnings That Are Off by Default](../../preprocessor/compiler-warnings-that-are-off-by-default.md) for more information.
+Bu uyarı varsayılan olarak kapalıdır. Daha fazla bilgi için bkz. [Varsayılan olarak kapalı olan Derleyici uyarıları](../../preprocessor/compiler-warnings-that-are-off-by-default.md) .
 
-The following sample generates C4640:
+Aşağıdaki örnek C4640 oluşturur:
 
 ```cpp
 // C4640.cpp

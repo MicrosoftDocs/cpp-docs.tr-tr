@@ -13,13 +13,13 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74398591"
 ---
-# <a name="break-32-bit-masm"></a>.BREAK (32-bit MASM)
+# <a name="break-32-bit-masm"></a>. Kes (32-bit masa)
 
-Generates code to terminate a [.WHILE](../../assembler/masm/dot-while.md) or [.REPEAT](../../assembler/masm/dot-repeat.md) block if *condition* is true. (32-bit MASM only.)
+Sonlandırmak için kod üretir [. ](../../assembler/masm/dot-while.md)Veya sırasında [. ](../../assembler/masm/dot-repeat.md) *Koşul* doğru ise bloğu tekrarlayın. (yalnızca 32-bit masa.)
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **.BREAK** ⟦ **.IF** *condition*⟧
+> **. BREAK** ⟦ **. If** *koşulu*⟧
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

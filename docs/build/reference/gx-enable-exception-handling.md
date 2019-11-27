@@ -20,7 +20,7 @@ ms.locfileid: "74245083"
 ---
 # <a name="gx-enable-exception-handling"></a>/GX (Özel Durum İşlemeyi Etkinleştir)
 
-Kullanım dışı. Enables synchronous exception handling using the assumption that functions declared by using `extern "C"` never throw an exception.
+Kullanım dışı. `extern "C"` kullanılarak belirtilen işlevlerin hiçbir zaman özel durum oluşturmayacağı varsayımını kullanarak zaman uyumlu özel durum işleme etkinleştirilir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -30,17 +30,17 @@ Kullanım dışı. Enables synchronous exception handling using the assumption t
 
 ## <a name="remarks"></a>Açıklamalar
 
-**/GX** is deprecated. Use the equivalent [/EHsc](eh-exception-handling-model.md) option instead. For a list of deprecated compiler options, see the **Deprecated and Removed Compiler Options** section in [Compiler Options Listed by Category](compiler-options-listed-by-category.md).
+**/GX** kullanım dışıdır. Bunun yerine denk [/EHsc](eh-exception-handling-model.md) seçeneğini kullanın. Kullanım dışı bırakılan derleyici seçeneklerinin bir listesi için, [kategoriye göre listelenen derleyici seçenekleri](compiler-options-listed-by-category.md)konusunun **kullanım dışı ve kaldırılmış derleyici seçenekleri** bölümüne bakın.
 
-By default, **/EHsc**, the equivalent of **/GX**, is in effect when you compile by using the Visual Studio development environment. When using the command line tools, no exception handling is specified. This is the equivalent of **/GX-** .
+Varsayılan olarak, **/GX**'nin eşdeğeri olan **/EHsc**, Visual Studio geliştirme ortamını kullanarak derlerken geçerli olur. Komut satırı araçlarını kullanırken özel durum işleme belirtilmez. Bu, **/GX-** ' nin eşdeğeridir.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual C++ Studio 'da derleyici ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. In the navigation pane, choose **Configuration Properties**, **C/C++** , **Command Line**.
+1. Gezinti bölmesinde, **yapılandırma özellikleri**, **CC++/** , **komut satırı**' nı seçin.
 
-1. Type the compiler option in the **Additional Options** box.
+1. **Ek seçenekler** kutusuna derleyici seçeneğini yazın.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 

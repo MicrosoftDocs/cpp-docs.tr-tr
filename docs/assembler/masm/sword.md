@@ -15,13 +15,13 @@ ms.locfileid: "74393581"
 ---
 # <a name="sword"></a>SWORD
 
-Allocates and optionally initializes a signed word (2 bytes) of storage for each *initializer*. Can also be used as a type specifier anywhere a type is legal.
+Her *Başlatıcı*için imzalı bir sözcüğü (2 bayt) ayırır ve isteğe bağlı olarak başlatır. , Türün geçerli olduğu her yerde tür belirleyici olarak da kullanılabilir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> *name* **SWORD** *initializer* ⟦ __,__ *initializer* ...⟧
+> *ad* **Sword** *Başlatıcı* ⟦ __,__ *Başlatıcı* ... ⟧
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Directives reference](../../assembler/masm/directives-reference.md)\
+[Yönergeler başvurusu](../../assembler/masm/directives-reference.md)\
 [WORD](../../assembler/masm/word.md)

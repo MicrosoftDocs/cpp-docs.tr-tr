@@ -17,17 +17,17 @@ ms.locfileid: "74397386"
 ---
 # <a name="ifidn-ifidni"></a>IFIDN, IFIDNI
 
-Grants assembly if the text items are identical.
+Metin öğeleri aynıysa derlemeye izin verir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **IFIDN** *textitem1* __,__ *textitem2*\
-> **IFIDNI** *textitem1* __,__ *textitem2*
+> **Ifidn** *textitem1* __,__ *textitem2*\
+> **Ifidnı** *textitem1* __,__ *textitem2*
 
 ## <a name="remarks"></a>Açıklamalar
 
-If **IFIDNI** is given, the comparison is case insensitive. See [IF](../../assembler/masm/if-masm.md) for complete syntax.
+**Ifidnı** verilirse, karşılaştırma büyük/küçük harfe duyarlıdır. Sözdiziminin [tamamı için bkz](../../assembler/masm/if-masm.md) .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Directives reference](../../assembler/masm/directives-reference.md)
+[Yönergeler başvurusu](../../assembler/masm/directives-reference.md)

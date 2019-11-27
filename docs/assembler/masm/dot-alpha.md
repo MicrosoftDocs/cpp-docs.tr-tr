@@ -13,9 +13,9 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74398597"
 ---
-# <a name="alpha-32-bit-masm"></a>.ALPHA (32-bit MASM)
+# <a name="alpha-32-bit-masm"></a>. Alfa (32-bit masa)
 
-Orders segments alphabetically. (32-bit MASM only.)
+Segmentleri alfabetik olarak sıralar. (yalnızca 32-bit masa.)
 
 ## <a name="syntax"></a>Sözdizimi
 

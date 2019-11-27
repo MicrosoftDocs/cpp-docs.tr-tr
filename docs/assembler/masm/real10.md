@@ -15,12 +15,12 @@ ms.locfileid: "74394853"
 ---
 # <a name="real10"></a>REAL10
 
-Allocates and optionally initializes a 10-byte floating-point number for each *initializer*.
+Her *Başlatıcı*için 10 baytlık kayan noktalı bir sayı ayırır ve isteğe bağlı olarak başlatır.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> *name* **REAL10** *initializer* ⟦ __,__ *initializer* ...⟧
+> *ad* **REAL10** *Başlatıcı* ⟦ __,__ *Başlatıcı* ... ⟧
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Directives reference](../../assembler/masm/directives-reference.md)
+[Yönergeler başvurusu](../../assembler/masm/directives-reference.md)

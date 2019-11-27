@@ -11,20 +11,20 @@ ms.locfileid: "74394831"
 ---
 # <a name="processor-manufacturer-programming-manuals"></a>İşlemci üreticisi programlama kılavuzları
 
-This article provides links to websites that may contain programming information about processors that are not manufactured, sold, or supported by Microsoft. Microsoft does not own or control the websites or the content on them.
+Bu makalede, Microsoft tarafından üretilen, satılan veya desteklenmeyen işlemcilerle ilgili programlama bilgileri içerebilen Web sitelerinin bağlantıları sağlanmaktadır. Microsoft, Web sitelerini veya bunların içeriğini denetlemez.
 
-## <a name="processor-manufacturer-websites"></a>Processor manufacturer websites
+## <a name="processor-manufacturer-websites"></a>İşlemci üreticisi Web siteleri
 
-- [AMD Developer Guides, Manuals & ISA Documents](https://developer.amd.com/resources/developer-guides-manuals/)
+- [AMD geliştirici kılavuzları, el kitabı & ISA belgeleri](https://developer.amd.com/resources/developer-guides-manuals/)
 
-- [Intel 64 and IA-32 Architectures Software Developer Manuals](https://software.intel.com/articles/intel-sdm)
+- [Intel 64 ve IA-32 mimarileri yazılım geliştirici el kitabı](https://software.intel.com/articles/intel-sdm)
 
-- [Introduction to Intel Advanced Vector Extensions](https://software.intel.com/articles/introduction-to-intel-advanced-vector-extensions)
+- [Intel Gelişmiş vektör uzantılarına giriş](https://software.intel.com/articles/introduction-to-intel-advanced-vector-extensions)
 
 ## <a name="remarks"></a>Açıklamalar
 
-Neither Visual Studio nor the Microsoft Macro Assembler support all processors.
+Visual Studio ne de Microsoft Macro Assembler tüm işlemcileri desteklemez.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Microsoft Macro Assembler reference](../../assembler/masm/microsoft-macro-assembler-reference.md)
+[Microsoft Macro Assembler başvurusu](../../assembler/masm/microsoft-macro-assembler-reference.md)

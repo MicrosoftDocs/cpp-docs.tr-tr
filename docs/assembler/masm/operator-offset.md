@@ -17,12 +17,12 @@ ms.locfileid: "74396570"
 ---
 # <a name="operator-offset"></a>OFFSET işleci
 
-Returns the offset into the relevant segment of *expression*.
+*İfadenin*ilgili kesiminin sapmasını döndürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **OFFSET** *expression*
+> **Fark** *ifadesi*
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Operators reference](operators-reference.md)
+[İşleçler başvurusu](operators-reference.md)

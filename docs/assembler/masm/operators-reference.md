@@ -1,5 +1,5 @@
 ---
-title: MASM Operators reference
+title: Masz Işleçleri başvurusu
 ms.date: 08/30/2018
 helpviewer_keywords:
 - MASM (Microsoft Macro Assembler), operators reference
@@ -12,81 +12,81 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74395209"
 ---
-# <a name="masm-operators-reference"></a>MASM Operators reference
+# <a name="masm-operators-reference"></a>Masz Işleçleri başvurusu
 
-## <a name="arithmetic"></a>Arithmetic
+## <a name="arithmetic"></a>Aritmetik
 
 ||||
 |-|-|-|
-|[* (multiply)](operator-multiply.md)|[+ (add)](operator-add.md)|[- (subtract or negate)](operator-subtract-2.md)|
-|[. (field)](operator-dot.md)|[/ (divide)](operator-subtract-1.md)|[&#91;&#93; (index)](operator-brackets.md)|
-|[MOD (remainder)](operator-mod.md)|||
+|[* (çarp)](operator-multiply.md)|[+ (Ekle)](operator-add.md)|[-(çıkart veya Negate)](operator-subtract-2.md)|
+|[. alanla](operator-dot.md)|[/(Böl)](operator-subtract-1.md)|[&#91;&#93;indeks](operator-brackets.md)|
+|[MOD (kalan)](operator-mod.md)|||
 
 ## <a name="control-flow"></a>Denetim Akışı
 
 ||||
 |-|-|-|
-|[\! (runtime logical not)](operator-logical-not-masm-run-time.md)|[\!= (runtime not equal)](operator-not-equal-masm.md)|[&#124;&#124; (runtime logical or)](operator-logical-or.md)|
-|[&& (runtime logical and)](operator-logical-and-masm-run-time.md)|[< (runtime less than)](operator-less-than-masm-run-time.md)|[\<= (runtime less or equal)](operator-less-or-equal-masm-run-time.md)|
-|[== (runtime equal)](operator-equal-masm-run-time.md)|[> (runtime greater than)](operator-greater-than-masm-run-time.md)|[>= (runtime greater or equal)](operator-greater-or-equal-masm-run-time.md)|
-|[& (runtime bitwise and)](operator-bitwise-and.md)|||
-|[CARRY? (runtime carry test)](operator-carry-q.md)|[OVERFLOW? (runtime overflow test)](operator-overflow-q.md)|[PARITY? (runtime parity test)](operator-parity-q.md)|
-|[SIGN? (runtime sign test)](operator-sign-q.md)|[ZERO? (runtime zero test)](operator-zero-q.md)||
+|[\! (çalışma zamanı mantıksal değil)](operator-logical-not-masm-run-time.md)|[\!= (çalışma zamanı eşit değildir)](operator-not-equal-masm.md)|[&#124;&#124;(çalışma zamanı mantıksal veya)](operator-logical-or.md)|
+|[& & (çalışma zamanı mantıksal ve)](operator-logical-and-masm-run-time.md)|[< (çalışma zamanı şundan küçüktür)](operator-less-than-masm-run-time.md)|[\<= (çalışma zamanı daha az veya eşittir)](operator-less-or-equal-masm-run-time.md)|
+|[= = (çalışma zamanı eşittir)](operator-equal-masm-run-time.md)|[> (çalışma zamanı büyüktür)](operator-greater-than-masm-run-time.md)|[> = (çalışma zamanı büyük veya eşittir)](operator-greater-or-equal-masm-run-time.md)|
+|[& (çalışma zamanı bit düzeyinde and)](operator-bitwise-and.md)|||
+|[Sürdür? (çalışma zamanı testi testi)](operator-carry-q.md)|[TAŞMA? (çalışma zamanı taşması testi)](operator-overflow-q.md)|[EŞLIK? (çalışma zamanı eşlik testi)](operator-parity-q.md)|
+|[IMZALAYABILIRSINIZ? (çalışma zamanı imza testi)](operator-sign-q.md)|[SıFıRLAMA? (çalışma zamanı sıfır testi)](operator-zero-q.md)||
 
-## <a name="logical-and-shift"></a>Logical and Shift
-
-||||
-|-|-|-|
-|[AND (bitwise and)](operator-and.md)|[NOT (bitwise not)](operator-not.md)|[OR (bitwise or)](operator-or.md)|
-|[SHL (shift bits left)](operator-shl.md)|[SHR (shift bits right)](operator-shr.md)|[XOR (bitwise exclusive or)](operator-xor.md)|
-
-## <a name="macro"></a>Macro
+## <a name="logical-and-shift"></a>Mantıksal ve kaydırma
 
 ||||
 |-|-|-|
-|[\! (character literal)](operator-logical-not-masm.md)|[% (treat as text)](operator-percent.md)||
-|[;; (treat as comment)](operator-semicolons.md)|[&lt; &gt; (treat as one literal)](operator-literal.md)|[& & (substitute parameter value)](operator-logical-and-masm.md)|
+|[VE (bit düzeyinde and)](operator-and.md)|[NOT (bit düzeyinde değil)](operator-not.md)|[OR (bit düzeyinde OR)](operator-or.md)|
+|[SHL (vardiya bitleri sol)](operator-shl.md)|[SHR (Shift bitleri sağ)](operator-shr.md)|[XOR (bit düzeyinde dışlamalı veya)](operator-xor.md)|
+
+## <a name="macro"></a>Makrosu
+
+||||
+|-|-|-|
+|[\! (karakter sabit değeri)](operator-logical-not-masm.md)|[% (metin olarak davran)](operator-percent.md)||
+|[;; (açıklama olarak işle)](operator-semicolons.md)|[&lt; &gt; (tek bir sabit değer olarak işle)](operator-literal.md)|[& & (değiştirme parametre değeri)](operator-logical-and-masm.md)|
 
 ## <a name="miscellaneous"></a>Çeşitli
 
 ||||
 |-|-|-|
-|[' ' (treat as string)](operator-single-quote.md)|[" " (treat as string)](operator-double-quote.md)||
-|: (local label definition)|:: (register segment and offset)|:: (global label definition)|
-|[; (treat as comment)](operator-semicolon.md)|[DUP (repeat declaration)](operator-dup.md)||
+|[' ' (dize olarak değerlendir)](operator-single-quote.md)|["" (dize olarak değerlendir)](operator-double-quote.md)||
+|: (yerel etiket tanımı)|:: (segmenti ve sapmayı Kaydet)|:: (genel etiket tanımı)|
+|[; (açıklama olarak işle)](operator-semicolon.md)|[DUP (yineleme bildirimi)](operator-dup.md)||
 
 ## <a name="record"></a>Kayıt
 
 |||
 |-|-|
-|[MASK (get record or field bitmask)](operator-mask.md)|[WIDTH (get record or field width)](operator-width.md)|
+|[MASKE (kayıt veya alan bit maskesini al)](operator-mask.md)|[GENIŞLIK (kayıt veya alan genişliğini al)](operator-width.md)|
 
 ## <a name="relational"></a>İlişkisel
 
 ||||
 |-|-|-|
-|[EQ (equal)](operator-eq.md)|[GE (greater or equal)](operator-ge.md)|[GT (greater than)](operator-gt.md)|
-|[LE (less or equal)](operator-le.md)|[LT (less than)](operator-lt.md)|[NE (not equal)](operator-ne.md)|
+|[EQ (eşittir)](operator-eq.md)|[GE (büyük veya eşittir)](operator-ge.md)|[GT (büyüktür)](operator-gt.md)|
+|[LE (daha az veya eşit)](operator-le.md)|[LT (küçüktür)](operator-lt.md)|[NE (eşit değildir)](operator-ne.md)|
 
-## <a name="segment"></a>Segment
+## <a name="segment"></a>Deki
 
 |||
 |-|-|
-|[: (segment override)](operator-colon.md)|:: (register segment and offset)|
-|[IMAGEREL (image relative offset)](operator-imagerel.md)|[LROFFSET (loader resolved offset)](operator-lroffset.md)|
-|[OFFSET (segment relative offset)](operator-offset.md)|[SECTIONREL (section relative offset)](operator-sectionrel.md)|
-|[SEG (get segment)](operator-seg.md)||
+|[: (kesim geçersiz kılma)](operator-colon.md)|:: (segmenti ve sapmayı Kaydet)|
+|[IMAGEREL (görüntü göreli boşluğu)](operator-imagerel.md)|[LROFFSET (yükleyici tarafından çözümlenen fark)](operator-lroffset.md)|
+|[FARK (kesim göreli boşluğu)](operator-offset.md)|[SECTIONREL (Bölüm göreli boşluğu)](operator-sectionrel.md)|
+|[SEG (segmenti al)](operator-seg.md)||
 
-## <a name="type"></a>Tür
+## <a name="type"></a>Type
 
 ||||
 |-|-|-|
-|[HIGH (high 8 bits of lowest 16 bits)](operator-high.md)|[HIGH32 (high 32 bits of 64 bits)](operator-high32.md)|[HIGHWORD (high 16 bits of lowest 32 bits)](operator-highword.md)|
-|[LENGTH (number of elements in array)](operator-length.md)|[LENGTHOF (number of elements in array)](operator-lengthof.md)|[LOW (low 8 bits)](operator-low.md)|
-|[LOW32 (low 32 bits)](operator-low32.md)|[LOWWORD (low 16 bits)](operator-lowword.md)|[OPATTR (get argument type info)](operator-opattr.md)|
-|[PTR (pointer to or as type)](operator-ptr.md)|[SHORT (mark short label type)](operator-short.md)|[SIZE (size of type or variable)](operator-size.md)|
-|[SIZEOF (size of type or variable)](operator-sizeof.md)|[THIS (current location)](operator-this.md)|[TYPE (get expression type)](operator-type.md)|
-|[.TYPE (get argument type info)](operator-dot-type.md)|||
+|[YÜKSEK (yüksek 8 bit en düşük 16 bit)](operator-high.md)|[HıGH32 (yüksek 32 bit 64 bit)](operator-high32.md)|[HIGHWORD (yüksek 16 bit en düşük 32 bit)](operator-highword.md)|
+|[Uzunluk (dizideki öğelerin sayısı)](operator-length.md)|[LENGTHOF (dizideki öğe sayısı)](operator-lengthof.md)|[DÜŞÜK (düşük 8 bit)](operator-low.md)|
+|[LOW32 (düşük 32 bit)](operator-low32.md)|[LOWWORD (düşük 16 bit)](operator-lowword.md)|[OPATTR (bağımsız değişken türü bilgisi al)](operator-opattr.md)|
+|[PTR (türe göre veya tür işaretçisi)](operator-ptr.md)|[SHORT (kısa etiket türünü işaretle)](operator-short.md)|[Boyut (tür veya değişken boyutu)](operator-size.md)|
+|[SIZEOF (tür veya değişken boyutu)](operator-sizeof.md)|[Bu (geçerli konum)](operator-this.md)|[TÜR (Get ifadesi Type)](operator-type.md)|
+|[. TÜR (bağımsız değişken türü bilgisi al)](operator-dot-type.md)|||
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

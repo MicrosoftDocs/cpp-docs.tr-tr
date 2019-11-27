@@ -21,8 +21,8 @@ ms.locfileid: "74397555"
 
 ## <a name="remarks"></a>Açıklamalar
 
-See [EXTERN](../../assembler/masm/extern-masm.md).
+Bkz. [extern](../../assembler/masm/extern-masm.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Directives reference](directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)

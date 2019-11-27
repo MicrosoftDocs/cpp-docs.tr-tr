@@ -15,11 +15,11 @@ ms.locfileid: "74188998"
 ---
 # <a name="arrays-c"></a>Diziler (C++)
 
-An array is a sequence of objects of the same type that occupy a contiguous area of memory. Traditional C-style arrays are the source of many bugs, but are still common, especially in older code bases. In modern C++, we strongly recommend using [std::vector](../standard-library/vector-class.md) or [std::array](../standard-library/array-class-stl.md) instead of C-style arrays described in this section. Both of these standard library types store their elements as a contiguous block of memory but provide much greater type safety along with iterators that are guaranteed to point to a valid location within the sequence. For more information, see [Containers (Modern C++)](containers-modern-cpp.md).
+Dizi, belleğin bitişik bir alanını kaplayan aynı türdeki nesnelerin bir dizisidir. Geleneksel C stili diziler birçok hatanın kaynağıdır, ancak özellikle de daha eski kod tabanlarında ortaktır. Modern C++sürümünde, bu bölümde açıklanan C stili diziler yerine [std:: vector](../standard-library/vector-class.md) veya [std:: Array](../standard-library/array-class-stl.md) kullanımını önemle öneririz. Bu standart kitaplık türlerinin her ikisi de öğelerini bitişik bir bellek bloğu olarak depolar, ancak dizi içinde geçerli bir konuma işaret eden yineleyiciler ile çok daha yüksek tür güvenliği sağlar. Daha fazla bilgi için bkz. [kapsayıcılar ( C++modern)](containers-modern-cpp.md).
 
-## <a name="stack-declarations"></a>Stack declarations
+## <a name="stack-declarations"></a>Yığın bildirimleri
 
-In a C++ array declaration, the array size is specified after the variable name, not after the type name as in some other languages. The following example declares an array of 1000 doubles to be allocated on the stack. The number of elements must be supplied as an integer literal or else as a constant expression because the compiler has to know how much stack space to allocate; it cannot use a value computed at run-time. Each element in the array is assigned a default value of 0. If you do not assign a default value, each element will initially contain whatever random values happen to be at that location.
+C++ Dizi bildiriminde, dizi boyutu diğer dillerdeki tür adından sonra değil, değişken adından sonra belirtilir. Aşağıdaki örnek, yığın üzerinde ayrılacak bir 1000 Double dizisi bildirir. Derleyicinin ne kadar yığın alanı ayıracağından emin olması gerektiğinden, öğelerin sayısı bir tamsayı sabit değeri veya başka bir sabit ifade olarak sağlanmalıdır; çalışma zamanında hesaplanan bir değer kullanamaz. Dizideki her öğeye varsayılan değer olan 0 atanır. Varsayılan bir değer atamadıysanız, her bir öğe başlangıçta bu konumda olacak şekilde hangi rastgele değerlerin olacağını içerecektir.
 
 ```cpp
     constexpr size_t size = 1000;
@@ -44,20 +44,20 @@ In a C++ array declaration, the array size is specified after the variable name,
     }
 ```
 
-The first element in the array is the 0th element, and the last element is the (*n*-1) element, where *n* is the number of elements the array can contain. The number of elements in the declaration must be of an integral type and must be greater than 0. It is your responsibility to ensure that your program never passes a value to the subscript operator that is greater than `(size - 1)`.
+Dizideki ilk öğe 0TH öğesidir ve son öğe (*n*-1) öğesidir; burada *n* , dizinin içerebileceği öğelerin sayısıdır. Bildirimdeki öğe sayısı bir integral türünde olmalı ve 0 ' dan büyük olmalıdır. Programınızın `(size - 1)`değerinden büyük bir değeri hiç bir değer alt simge işlecine geçirmemesini sağlamak sizin sorumluluğunuzdadır.
 
-A zero-sized array is legal only when the array is the last field in a **struct** or **union** and when the Microsoft extensions (/Ze) are enabled.
+Sıfır boyutlu bir dizi yalnızca dizi bir **yapıda** veya **birleşimde** son alan olduğunda ve Microsoft uzantıları (/Ze) etkin olduğunda geçerlidir.
 
-Stack-based arrays are faster to allocate and access than heap-based arrays, but the number of elements can't be so large that it uses up too much stack memory. How much is too much depends on your program. You can use profiling tools to determine whether an array is too large.
+Yığın tabanlı diziler, yığın tabanlı dizilere göre ayrılmak ve erişim için daha hızlıdır, ancak öğe sayısı çok fazla yığın belleği kullandığından büyük bir sayı olamaz. Programınıza ne kadar çok şey bağlıdır. Bir dizinin çok büyük olup olmadığını anlamak için profil oluşturma araçlarını kullanabilirsiniz.
 
-## <a name="heap-declarations"></a>Heap declarations
+## <a name="heap-declarations"></a>Yığın bildirimleri
 
-If you require an array that is too large to be allocated on the stack, or whose size cannot be known at compile time, you can allocate it on the heap with a [new\[\]](new-operator-cpp.md) expression. The operator returns a pointer to the first element. You can use the subscript operator with the pointer variable just as with a stack-based array. You can also use [pointer arithmetic](../c-language/pointer-arithmetic.md) to move the pointer to any arbitrary elements in the array. It is your responsibility to ensure that:
+Yığında ayrılabilecek çok büyük bir dizi olması veya boyutunun derleme sırasında tanınabilmesi durumunda, bunu yığın üzerinde [Yeni bir\[\]](new-operator-cpp.md) ifadesiyle ayırabilirsiniz. İşleci, ilk öğesine bir işaretçi döndürür. Yalnızca yığın tabanlı bir dizi gibi işaretçi değişkeni ile birlikte indis işlecini kullanabilirsiniz. İşaretçiyi dizideki herhangi bir rastgele öğeye taşımak için [işaretçi aritmetiğini](../c-language/pointer-arithmetic.md) de kullanabilirsiniz. Şunları sağlamak sizin sorumluluğunuzdadır:
 
-- you always keep a copy of the original pointer address so that you can delete the memory when you no longer need the array.
-- you do not increment or decrement the pointer address past the array bounds.
+- Artık diziyi ihtiyaç kalmadığında belleği silebilmeniz için özgün işaretçi adresinin bir kopyasını her zaman saklayın.
+- dizi sınırlarının ötesinde işaretçi adresini artırmaz veya azalmayın.
 
-The following example shows how to define an array on the heap at run time, and how to access the array elements using the subscript operator or by using pointer arithmetic:
+Aşağıdaki örnek, çalışma zamanında yığında bir dizinin nasıl tanımlanacağını ve indis işleci kullanılarak veya işaretçi aritmetiği kullanılarak dizi öğelerine nasıl erişecağınızı gösterir:
 
 ```cpp
 
@@ -117,7 +117,7 @@ int main()
 
 ## <a name="initializing-arrays"></a>Dizileri başlatma
 
-You can initialize an array in a loop, one element at a time, or in a single statement. The contents of the following two arrays are identical:
+Bir dizide, tek seferde bir öğe veya tek bir ifadede bir diziyi başlatabilirsiniz. Aşağıdaki iki dizinin içeriği aynıdır:
 
 ```cpp
     int a[10];
@@ -129,11 +129,11 @@ You can initialize an array in a loop, one element at a time, or in a single sta
     int b[10]{ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 ```
 
-## <a name="passing-arrays-to-functions"></a>Passing arrays to functions
+## <a name="passing-arrays-to-functions"></a>Dizileri işlevlere geçirme
 
-When an array is passed to a function, it is passed as a pointer to the first element. This is true for both stack-based and heap-based arrays. The pointer contains no additional size or type information. This behavior is called *pointer decay*. When you pass an array to a function, you must always specify the number of elements in a separate parameter. This behavior also implies that the array elements are not copied when the array is passed to a function. To prevent the function from modifying the elements, specify the parameter as a pointer to **const** elements.
+Bir dizi bir işleve geçirildiğinde, ilk öğeye işaretçi olarak geçirilir. Bu, hem yığın tabanlı hem de yığın tabanlı diziler için geçerlidir. İşaretçi ek boyut veya tür bilgisi içermiyor. Bu davranışa *işaretçi kay*adı verilir. Bir diziyi bir işleve geçirdiğinizde, her zaman öğe sayısını ayrı bir parametrede belirtmeniz gerekir. Bu davranış, Array bir işleve geçirildiğinde dizi öğelerinin kopyalanmadığını da belirtir. İşlevin öğeleri değiştirmesini engellemek için parametreyi **const** öğelerine yönelik bir işaretçi olarak belirtin.
 
-The following example shows a function that accepts an array and a length. The pointer points to the original array, not a copy. Because the parameter is not **const**, the function can modify the array elements.
+Aşağıdaki örnek bir diziyi ve uzunluğu kabul eden bir işlevi gösterir. İşaretçi, kopya değil, orijinal diziyi işaret eder. Parametre **const**olmadığından, işlev dizi öğelerini değiştirebilir.
 
 ```cpp
 void process(double p*, const size_t len)
@@ -146,13 +146,13 @@ void process(double p*, const size_t len)
 }
 ```
 
-Declare the array as const to make it read-only within the function block:
+İşlev bloğunda Salt okunabilir hale getirmek için diziyi const olarak bildirin:
 
 ```cpp
 void process(const double p*, const size_t len);
 ```
 
-The same function can also be declared in these ways, with no change in behavior. The array is still passed as a pointer to the first element:
+Aynı işlev, davranış değişikliği olmadan bu yollarla da bildirilemez. Dizi, hala ilk öğeye bir işaretçi olarak geçirilir:
 
 ```cpp
 // Unsized array
@@ -162,20 +162,20 @@ void process(const double p[] const size_t len);
 void process(const double p[1000], const size_t len);
 ```
 
-## <a name="multidimensional-arrays"></a>Multidimensional arrays
+## <a name="multidimensional-arrays"></a>Çok boyutlu diziler
 
-Arrays constructed from other arrays are multidimensional arrays. These multidimensional arrays are specified by placing multiple bracketed constant expressions in sequence. For example, consider this declaration:
+Diğer dizilerden oluşturulan diziler çok boyutlu dizilerdir. Bu çok boyutlu diziler, sırayla birden çok köşeli parantez içine alınmış sabit ifadeler yerleştirilerek belirtilir. Örneğin, bu bildirimi göz önünde bulundurun:
 
 ```cpp
 int i2[5][7];
 ```
 
-It specifies an array of type **int**, conceptually arranged in a two-dimensional matrix of five rows and seven columns, as shown in the following figure:
+Bu, aşağıdaki şekilde gösterildiği gibi, kavramsal olarak, beş satır ve yedi sütun şeklinde iki boyutlu bir matris halinde düzenlenmiş, **int**türünde bir diziyi belirtir:
 
-![Conceptual layout of a multi&#45;dimensional array](../cpp/media/vc38rc1.gif "Conceptual layout of a multi&#45;dimensional array") <br/>
-Conceptual layout of a multi-dimensional array
+![Çok&#45;boyutlu bir dizinin kavramsal düzeni](../cpp/media/vc38rc1.gif "Çok&#45;boyutlu bir dizinin kavramsal düzeni") <br/>
+Çok boyutlu bir dizinin kavramsal düzeni
 
-In declarations of multidimensioned arrays that have an initializer list (as described in [Initializers](../cpp/initializers.md)), the constant expression that specifies the bounds for the first dimension can be omitted. Örneğin:
+Başlatıcı listesi olan çok boyutlu dizilerin bildirimlerinde ( [başlatıcılarda](../cpp/initializers.md)açıklandığı gibi), ilk boyutun sınırlarını belirten sabit ifade atlanabilir. Örneğin:
 
 ```cpp
 // arrays2.cpp
@@ -189,15 +189,15 @@ double TransportCosts[][cMarkets] = {
 };
 ```
 
-The preceding declaration defines an array that is three rows by four columns. The rows represent factories and the columns represent markets to which the factories ship. The values are the transportation costs from the factories to the markets. The first dimension of the array is left out, but the compiler fills it in by examining the initializer.
+Yukarıdaki bildirim, dört sütundan oluşan üç satır olan bir diziyi tanımlar. Satırlar fabrikaları temsil eder ve sütunlar fabrikaların sevk ettiği pazarları temsil eder. Değerler, fabrikaların pazarlarına yönelik taşıma maliyetlerinden alınır. Dizinin ilk boyutu bırakılır, ancak derleyici başlatıcıyı inceleyerek onu doldurur.
 
-Use of the indirection operator (*) on an n-dimensional array type yields an n-1 dimensional array. If n is 1, a scalar (or array element) is yielded.
+N boyutlu dizi türünde yöneltme işlecinin (*) kullanılması n-1 boyutlu bir dizi oluşturur. {1&gt;n&lt;1} 1 ise, skaler (veya dizi öğesi) oluşturulur.
 
-C++ arrays are stored in row-major order. Row-major order means the last subscript varies the fastest.
+C++diziler satır birincil sırada depolanır. Satır ana sıra, son alt simge en hızlı şekilde değişiklik gösterir.
 
 ## <a name="example"></a>Örnek
 
-The technique of omitting the bounds specification for the first dimension of a multidimensional array can also be used in function declarations as follows:
+Çok boyutlu bir dizinin ilk boyutu için sınır belirtimini atlama tekniği, işlev bildirimlerinde aşağıdaki gibi de kullanılabilir:
 
 ```cpp
 // multidimensional_arrays.cpp
@@ -250,7 +250,7 @@ double FindMinToMkt(int Mkt, double myTransportCosts[][cMkts], int mycFacts) {
 The minimum cost to Market 3 is: 17.29
 ```
 
-The function `FindMinToMkt` is written such that adding new factories does not require any code changes, just a recompilation.
+`FindMinToMkt` işlevi, yeni fabrikaları eklemek için herhangi bir kod değişikliği gerektirmediğinden, yalnızca bir yeniden derleme gerektirirken yazılır.
 
 ## <a name="initializing-arrays"></a>Dizileri Başlatma
 
@@ -283,7 +283,7 @@ int main()
 
 İlk `aPoint` öğesi `Point( int, int )` oluşturucusu kullanılarak oluşturulur; kalan iki öğe varsayılan oluşturucu kullanılarak oluşturulur.
 
-Static member arrays (whether **const** or not) can be initialized in their definitions (outside the class declaration). Örneğin:
+Statik üye dizileri ( **const** veya Not) tanımlarında başlatılabilir (sınıf bildirimi dışında). Örneğin:
 
 ```cpp
 // initializing_arrays2.cpp
@@ -301,9 +301,9 @@ int main()
 }
 ```
 
-## <a name="accessing-array-elements"></a>Accessing array elements
+## <a name="accessing-array-elements"></a>Dizi öğelerine erişme
 
-You can access individual elements of an array by using the array subscript operator (`[ ]`). If a one-dimensional array is used in an expression that has no subscript, the array name evaluates to a pointer to the first element in the array.
+Dizi alt simge işlecini (`[ ]`) kullanarak bir dizinin tek tek öğelerine erişebilirsiniz. Tek boyutlu bir dizi, alt simge içermeyen bir ifadede kullanılırsa, dizi adı dizideki ilk öğe için bir işaretçi olarak değerlendirilir.
 
 ```cpp
 // using_arrays.cpp
@@ -315,7 +315,7 @@ int main() {
 }
 ```
 
-When you use multidimensional arrays, you can use various combinations in expressions.
+Çok boyutlu diziler kullandığınızda ifadelerde çeşitli birleşimler kullanabilirsiniz.
 
 ```cpp
 // using_arrays_2.cpp
@@ -336,15 +336,15 @@ int main() {
 }
 ```
 
-In the preceding code, `multi` is a three-dimensional array of type **double**. The `p2multi` pointer points to an array of type **double** of size three. In this example, the array is used with one, two, and three subscripts. Although it is more common to specify all subscripts, as in the `cout` statement, it is sometimes useful to select a specific subset of array elements, as shown in the statements that follow `cout`.
+Yukarıdaki kodda `multi` **Double**türünde üç boyutlu bir dizidir. `p2multi` işaretçisi, üç boyutlu **iki** tür dizisine işaret eder. Bu örnekte, dizi bir, iki ve üç alt simge ile kullanılır. `cout` deyiminde olduğu gibi tüm alt simgeleri belirtmek için daha yaygın olsa da, `cout`izleyen deyimlerde gösterildiği gibi bazen dizi öğelerinin belirli bir alt kümesini seçmek faydalı olur.
 
-## <a name="overloading-subscript-operator"></a>Overloading subscript operator
+## <a name="overloading-subscript-operator"></a>Alt simge işlecini aşırı yükleme
 
-Like other operators, the subscript operator (`[]`) can be redefined by the user. Alt simge işlecinin varsayılan davranışı, aşırı yüklenmemişse, aşağıdaki yöntemi kullanarak dizi adını ve alt simgeyi birleştirmektir:
+Diğer işleçler gibi, alt simge işleci (`[]`) Kullanıcı tarafından yeniden tanımlanabilir. Alt simge işlecinin varsayılan davranışı, aşırı yüklenmemişse, aşağıdaki yöntemi kullanarak dizi adını ve alt simgeyi birleştirmektir:
 
 `*((array_name) + (subscript))`
 
-İşaretçi türleri içeren tüm toplama işlemlerinde olduğu gibi; ölçeklendirme, tür boyutunu ayarlamak için otomatik olarak gerçekleştirilir. Therefore, the resultant value is not *n* bytes from the origin of array-name; rather, it is the *n*th element of the array. For more information about this conversion, see [Additive operators](additive-operators-plus-and.md).
+İşaretçi türleri içeren tüm toplama işlemlerinde olduğu gibi; ölçeklendirme, tür boyutunu ayarlamak için otomatik olarak gerçekleştirilir. Bu nedenle, sonuç değeri dizi adı kaynağından *n* bayt değil; Bunun yerine, dizinin *n*. öğesidir. Bu dönüştürme hakkında daha fazla bilgi için bkz. [eklenebilir işleçler](additive-operators-plus-and.md).
 
 Benzer şekilde, çok boyutlu diziler için aşağıdaki yöntem kullanılarak adres türetilir:
 
@@ -352,14 +352,14 @@ Benzer şekilde, çok boyutlu diziler için aşağıdaki yöntem kullanılarak a
 
 ## <a name="arrays-in-expressions"></a>İfadelerdeki Diziler
 
-`sizeof` dışında bir ifadede bir dizi türünün tanımlayıcısı göründüğünde, bir başvurunun adresi (`&`) veya başlatma işlemi ilk dizi öğesinin işaretçisine dönüştürülür. Örneğin:
+Dizi türünün bir tanımlayıcısı `sizeof`, adres-of (`&`) veya bir başvurunun başlatılmasından farklı bir ifadede göründüğünde, ilk dizi öğesine bir işaretçiye dönüştürülür. Örneğin:
 
 ```cpp
 char szError1[] = "Error: Disk drive not ready.";
 char *psz = szError1;
 ```
 
-`psz` işaretçisi `szError1` dizisinin ilk öğesine işaret eder. Arrays, unlike pointers, are not modifiable l-values. Bu nedenle aşağıdaki atama geçersizdir:
+`psz` işaretçisi `szError1` dizisinin ilk öğesine işaret eder. İşaretçilerin aksine diziler, değiştirilebilir l-Values değildir. Bu nedenle aşağıdaki atama geçersizdir:
 
 ```cpp
 szError1 = psz;
@@ -367,4 +367,4 @@ szError1 = psz;
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[std::array](../standard-library/array-class-stl.md)
+[std:: Array](../standard-library/array-class-stl.md)

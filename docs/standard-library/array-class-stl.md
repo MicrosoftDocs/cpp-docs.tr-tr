@@ -1,5 +1,5 @@
 ---
-title: array Class (C++ Standard Library)| Microsoft Docs
+title: Array sınıfı (C++ standart kitaplık) | Microsoft Docs
 ms.date: 11/13/2019
 f1_keywords:
 - array/std::array
@@ -103,9 +103,9 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 11/19/2019
 ms.locfileid: "74189418"
 ---
-# <a name="array-class-c-standard-library"></a>array Class (C++ Standard Library)
+# <a name="array-class-c-standard-library"></a>Array sınıfı (C++ standart kitaplık)
 
-Describes an object that controls a sequence of length `N` of elements of type `Ty`. The sequence is stored as an array of `Ty`, contained in the `array<Ty, N>` object.
+`Ty`türündeki öğelerin bir dizi `N` uzunluğunu denetleyen bir nesne tanımlar. Dizi, `array<Ty, N>` nesnesinde bulunan bir `Ty`dizisi olarak depolanır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -119,70 +119,70 @@ class array;
 |Parametre|Açıklama|
 |-|-|
 |`Ty`|Öğenin türü.|
-|`N`|The number of elements.|
+|`N`|Öğe sayısı.|
 
-## <a name="members"></a>Üyeler
+## <a name="members"></a>Üyeleri
 
 |Tür Tanımlaması|Açıklama|
 |-|-|
 |[const_iterator](#const_iterator)|Denetlenen dizi için bir sabit yineleyici türü.|
 |[const_pointer](#const_pointer)|Bir öğe için sabit bir işaretçi türü.|
 |[const_reference](#const_reference)|Bir öğe için sabit bir başvuru türü.|
-|[const_reverse_iterator](#const_reverse_iterator)|The type of a constant reverse iterator for the controlled sequence.|
+|[const_reverse_iterator](#const_reverse_iterator)|Denetlenen sıra için bir sabit ters yineleyicinin türü.|
 |[difference_type](#difference_type)|İki öğe arasındaki işaretli mesafenin türü.|
-|[iterator](#iterator)|Denetlenen dizi için bir yineleyici türü.|
-|[pointer](#pointer)|Bir öğe için bir işaretçi türü.|
-|[reference](#reference)|Bir öğe için bir başvuru türü.|
-|[reverse_iterator](#reverse_iterator)|The type of a reverse iterator for the controlled sequence.|
+|[iden](#iterator)|Denetlenen dizi için bir yineleyici türü.|
+|[çağrısı](#pointer)|Bir öğe için bir işaretçi türü.|
+|[başvurunun](#reference)|Bir öğe için bir başvuru türü.|
+|[reverse_iterator](#reverse_iterator)|Denetlenen sıra için ters yineleyicinin türü.|
 |[size_type](#size_type)|İki öğe arasındaki işaretsiz bir mesafenin türü.|
 |[value_type](#value_type)|Öğenin türü.|
 
 |Üye İşlevi|Açıklama|
 |-|-|
-|[array](#array)|Constructs an array object.|
-|[assign](#assign)|(Obsolete. Use `fill`.) Replaces all elements.|
-|[at](#at)|Accesses an element at a specified position.|
-|[back](#back)|Accesses the last element.|
-|[begin](#begin)|Denetlenen dizinin başlangıcını belirtir.|
-|[cbegin](#cbegin)|Returns a random-access const iterator to the first element in the array.|
-|[cend](#cend)|Returns a random-access const iterator that points just beyond the end of the array.|
-|[crbegin](#crbegin)|Returns a const iterator to the first element in a reversed array.|
-|[crend](#crend)|Returns a const iterator to the end of a reversed array.|
-|[data](#data)|Gets the address of the first element.|
-|[empty](#empty)|Tests whether elements are present.|
-|[end](#end)|Denetlenen dizinin bitişini belirtir.|
-|[fill](#fill)|Replaces all elements with a specified value.|
-|[front](#front)|Accesses the first element.|
+|[dizide](#array)|Bir dizi nesnesi oluşturur.|
+|[ata](#assign)|Dışı. `fill`kullanın.) Tüm öğeleri değiştirir.|
+|[hızı](#at)|Belirtilen konumdaki bir öğeye erişir.|
+|[Geri](#back)|Son öğeye erişir.|
+|[başladı](#begin)|Denetlenen dizinin başlangıcını belirtir.|
+|[cbegin](#cbegin)|Dizideki ilk öğeye Rastgele erişimli bir const yineleyicisi döndürür.|
+|[cend](#cend)|Dizinin sonunun hemen ötesinde işaret eden Rastgele erişimli bir const yineleyici döndürür.|
+|[crbegin](#crbegin)|Ters çevrilen dizideki ilk öğeye bir const yineleyici döndürür.|
+|[crend](#crend)|Ters çevrilen dizinin sonuna bir const yineleyici döndürür.|
+|[verileri](#data)|İlk öğenin adresini alır.|
+|[olmamalıdır](#empty)|Öğelerin mevcut olup olmadığını sınar.|
+|[erer](#end)|Denetlenen dizinin bitişini belirtir.|
+|[doldurması](#fill)|Tüm öğeleri belirtilen değerle değiştirir.|
+|[yapılan](#front)|İlk öğeye erişir.|
 |[max_size](#max_size)|Öğe sayısını sayar.|
-|[rbegin](#rbegin)|Designates the beginning of the reversed controlled sequence.|
-|[rend](#rend)|Designates the end of the reversed controlled sequence.|
-|[size](#size)|Öğe sayısını sayar.|
-|[swap](#swap)|İki kapsayıcının içeriğinin yerini değiştirir.|
+|[rbegin](#rbegin)|Ters denetlenen sıranın başlangıcını belirtir.|
+|[rend](#rend)|Ters denetlenen sıranın sonunu belirtir.|
+|[boyutla](#size)|Öğe sayısını sayar.|
+|[Kur](#swap)|İki kapsayıcının içeriğinin yerini değiştirir.|
 
 |İşleç|Açıklama|
 |-|-|
-|[array::operator=](#op_eq)|Replaces the controlled sequence.|
-|[array::operator\[\]](#op_at)|Accesses an element at a specified position.|
+|[Array:: operator =](#op_eq)|Denetlenen sırayı değiştirir.|
+|[Array:: operator\[\]](#op_at)|Belirtilen konumdaki bir öğeye erişir.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-The type has a default constructor `array()` and a default assignment operator `operator=`, and satisfies the requirements for an `aggregate`. Therefore, objects of type `array<Ty, N>` can be initialized by using an aggregate initializer. Örneğin,
+Türün varsayılan bir Oluşturucusu `array()` ve varsayılan atama işleci `operator=`ve bir `aggregate`gereksinimlerini karşılar. Bu nedenle, `array<Ty, N>` türündeki nesneler bir toplama başlatıcısı kullanılarak başlatılabilir. Örneğin,
 
 ```cpp
 array<int, 4> ai = { 1, 2, 3 };
 ```
 
-creates the object `ai` that holds four integer values, initializes the first three elements to the values 1, 2, and 3, respectively, and initializes the fourth element to 0.
+dört tamsayı değerini tutan nesne `ai` oluşturur, sırasıyla ilk üç öğeyi 1, 2 ve 3 değerlerine başlatır ve dördüncü öğeyi 0 olarak başlatır.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Header:** \<array>
+**Üstbilgi:** \<dizi >
 
-**Namespace:** std
+**Ad alanı:** std
 
-## <a name="array"></a>  array::array
+## <a name="array"></a>Array:: Array
 
-Constructs an array object.
+Bir dizi nesnesi oluşturur.
 
 ```cpp
 array();
@@ -192,14 +192,14 @@ array(const array& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*right*\
-Object or range to insert.
+*sağ*\
+Eklenecek nesne veya Aralık.
 
 ### <a name="remarks"></a>Açıklamalar
 
-The default constructor `array()` leaves the controlled sequence uninitialized (or default initialized). You use it to specify an uninitialized controlled sequence.
+Varsayılan Oluşturucu `array()` denetimli sırayı başlatılmamış (veya varsayılan başlatılmış) olarak bırakır. Başlatılmamış bir denetim sırası belirtmek için bunu kullanırsınız.
 
-The copy constructor `array(const array& right)` initializes the controlled sequence with the sequence [*right*`.begin()`, *right*`.end()`). You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the array object *right*.
+Kopya Oluşturucu `array(const array& right)`, denetimli sırayı sıra [*sağ*`.begin()`, *sağ*`.end()`) ile başlatır. Dizi nesnesi *sağa*tarafından denetlenen sıranın bir kopyası olan ilk denetimli bir sıra belirtmek için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -239,13 +239,13 @@ int main()
 0 1 2 3
 ```
 
-## <a name="assign"></a>  array::assign
+## <a name="assign"></a>Array:: Assign
 
-Obsolete in C++11, replaced by [fill](#fill). Replaces all elements.
+C++ 11 ' de kullanılmıyor, [Fill](#fill)ile değiştirilmiştir. Tüm öğeleri değiştirir.
 
-## <a name="at"></a>  array::at
+## <a name="at"></a>Array:: at
 
-Accesses an element at a specified position.
+Belirtilen konumdaki bir öğeye erişir.
 
 ```cpp
 reference at(size_type off);
@@ -255,12 +255,12 @@ constexpr const_reference at(size_type off) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*off*\
-Position of element to access.
+*kapalı*\
+Erişim için öğenin konumu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-The member functions return a reference to the element of the controlled sequence at position *off*. If that position is invalid, the function throws an object of class `out_of_range`.
+Üye işlevleri, konumundaki denetimli sıranın öğesine bir başvuru *döndürür.* Bu konum geçersizse, işlev `out_of_range`sınıfından bir nesne oluşturur.
 
 ### <a name="example"></a>Örnek
 
@@ -289,9 +289,9 @@ int main()
 }
 ```
 
-## <a name="back"></a>  array::back
+## <a name="back"></a>Array:: Back
 
-Accesses the last element.
+Son öğeye erişir.
 
 ```cpp
 reference back();
@@ -301,7 +301,7 @@ constexpr const_reference back() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-The member functions return a reference to the last element of the controlled sequence, which must be non-empty.
+Üye işlevleri denetlenen sıranın son öğesine bir başvuru döndürür, bu da boş olmamalıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -334,7 +334,7 @@ int main()
 3
 ```
 
-## <a name="begin"></a>  array::begin
+## <a name="begin"></a>Array:: Begin
 
 Denetlenen dizinin başlangıcını belirtir.
 
@@ -345,7 +345,7 @@ const_iterator begin() const noexcept;
 
 ### <a name="remarks"></a>Açıklamalar
 
-The member functions return a random-access iterator that points at the first element of the sequence (or just beyond the end of an empty sequence).
+Üye işlevleri, dizinin ilk öğesini işaret eden (veya boş bir dizinin sonunun ötesinde) bir rastgele erişim yineleyici döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -379,9 +379,9 @@ int main()
 0
 ```
 
-## <a name="cbegin"></a>  array::cbegin
+## <a name="cbegin"></a>Array:: cbegin
 
-Returns a **const** iterator that addresses the first element in the range.
+Aralıktaki ilk öğeyi ele alan bir **sabit** yineleyici döndürür.
 
 ```cpp
 const_iterator cbegin() const noexcept;
@@ -389,13 +389,13 @@ const_iterator cbegin() const noexcept;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-A **const** random-access iterator that points at the first element of the range, or the location just beyond the end of an empty range (for an empty range, `cbegin() == cend()`).
+Aralığın ilk öğesine veya boş bir aralığın sonundaki konuma (boş bir Aralık için `cbegin() == cend()`) işaret eden **const** bir rastgele erişim Yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-With the return value of `cbegin`, the elements in the range cannot be modified.
+`cbegin`dönüş değeri ile aralıktaki öğeler değiştirilemez.
 
-You can use this member function in place of the `begin()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **const**) container of any kind that supports `begin()` and `cbegin()`.
+Dönüş değerinin `const_iterator`olduğunu garantilemek için `begin()` member işlevinin yerine bu üye işlevi kullanabilirsiniz. Genellikle, aşağıdaki örnekte gösterildiği gibi [Otomatik](../cpp/auto-cpp.md) tür kesintisi anahtar sözcüğüyle birlikte kullanılır. Örnekte, `begin()` ve `cbegin()`destekleyen herhangi bir türdeki değiştirilebilir ( **const**olmayan) bir kapsayıcı olarak `Container` düşünün.
 
 ```cpp
 auto i1 = Container.begin();
@@ -405,9 +405,9 @@ auto i2 = Container.cbegin();
 // i2 is Container<T>::const_iterator
 ```
 
-## <a name="cend"></a>  array::cend
+## <a name="cend"></a>Array:: cend
 
-Returns a **const** iterator that addresses the location just beyond the last element in a range.
+Bir aralıktaki son öğeden hemen sonra gelen konumu ele alan bir **const** yineleyici döndürür.
 
 ```cpp
 const_iterator cend() const noexcept;
@@ -419,9 +419,9 @@ Aralığın hemen sonunu gösteren bir rastgele erişim yineleyicisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`cend` is used to test whether an iterator has passed the end of its range.
+`cend`, bir yineleyicinin aralığın sonunu geçtiğini test etmek için kullanılır.
 
-You can use this member function in place of the `end()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **const**) container of any kind that supports `end()` and `cend()`.
+Dönüş değerinin `const_iterator`olduğunu garantilemek için `end()` member işlevinin yerine bu üye işlevi kullanabilirsiniz. Genellikle, aşağıdaki örnekte gösterildiği gibi [Otomatik](../cpp/auto-cpp.md) tür kesintisi anahtar sözcüğüyle birlikte kullanılır. Örnekte, `end()` ve `cend()`destekleyen herhangi bir türdeki değiştirilebilir ( **const**olmayan) bir kapsayıcı olarak `Container` düşünün.
 
 ```cpp
 auto i1 = Container.end();
@@ -431,9 +431,9 @@ auto i2 = Container.cend();
 // i2 is Container<T>::const_iterator
 ```
 
-The value returned by `cend` should not be dereferenced.
+`cend` tarafından döndürülen değer başvurulmamalıdır.
 
-## <a name="const_iterator"></a>  array::const_iterator
+## <a name="const_iterator"></a>dizi:: const_iterator
 
 Denetlenen dizi için bir sabit yineleyici türü.
 
@@ -443,7 +443,7 @@ typedef implementation-defined const_iterator;
 
 ### <a name="remarks"></a>Açıklamalar
 
-The type describes an object that can serve as a constant random-access iterator for the controlled sequence.
+Türü, denetimli sıra için sabit bir rastgele erişim Yineleyici işlevi görebilecek bir nesneyi tanımlar.
 
 ### <a name="example"></a>Örnek
 
@@ -481,7 +481,7 @@ it1: 0 1 2 3
 it2: 0
 ```
 
-## <a name="const_pointer"></a>  array::const_pointer
+## <a name="const_pointer"></a>dizi:: const_pointer
 
 Bir öğe için sabit bir işaretçi türü.
 
@@ -491,7 +491,7 @@ typedef const Ty *const_pointer;
 
 ### <a name="remarks"></a>Açıklamalar
 
-The type describes an object that can serve as a constant pointer to elements of the sequence.
+Türü, sıranın öğelerine sabit bir işaretçi olarak kullanılabilecek bir nesneyi tanımlar.
 
 ### <a name="example"></a>Örnek
 
@@ -525,7 +525,7 @@ int main()
 0
 ```
 
-## <a name="const_reference"></a>  array::const_reference
+## <a name="const_reference"></a>dizi:: const_reference
 
 Bir öğe için sabit bir başvuru türü.
 
@@ -535,7 +535,7 @@ typedef const Ty& const_reference;
 
 ### <a name="remarks"></a>Açıklamalar
 
-The type describes an object that can serve as a constant reference to an element of the controlled sequence.
+Türü, denetlenen dizinin bir öğesine sabit başvuru olarak işlev yapabilecek bir nesneyi tanımlar.
 
 ### <a name="example"></a>Örnek
 
@@ -569,9 +569,9 @@ int main()
 0
 ```
 
-## <a name="const_reverse_iterator"></a>  array::const_reverse_iterator
+## <a name="const_reverse_iterator"></a>dizi:: const_reverse_iterator
 
-The type of a constant reverse iterator for the controlled sequence.
+Denetlenen sıra için bir sabit ters yineleyicinin türü.
 
 ```cpp
 typedef std::reverse_iterator<const_iterator> const_reverse_iterator;
@@ -579,7 +579,7 @@ typedef std::reverse_iterator<const_iterator> const_reverse_iterator;
 
 ### <a name="remarks"></a>Açıklamalar
 
-The type describes an object that can serve as a constant reverse iterator for the controlled sequence.
+Türü, denetimli sıra için sabit bir ters Yineleyici işlevi görebilecek bir nesneyi tanımlar.
 
 ### <a name="example"></a>Örnek
 
@@ -613,9 +613,9 @@ int main()
 3
 ```
 
-## <a name="crbegin"></a>  array::crbegin
+## <a name="crbegin"></a>Array:: crbegin
 
-Returns a const iterator to the first element in a reversed array.
+Ters çevrilen dizideki ilk öğeye bir const yineleyici döndürür.
 
 ```cpp
 const_reverse_iterator crbegin() const;
@@ -623,11 +623,11 @@ const_reverse_iterator crbegin() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-A const reverse random-access iterator addressing the first element in a reversed array or addressing what had been the last element in the unreversed array.
+Ters çevrilen dizideki ilk öğeyi ele alarak veya geri çevrilmeyen dizide son öğenin ne olduğunu adresleyen bir const ters rasgele erişim Yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-With the return value of `crbegin`, the array object cannot be modified.
+`crbegin`dönüş değeri ile dizi nesnesi değiştirilemez.
 
 ### <a name="example"></a>Örnek
 
@@ -657,9 +657,9 @@ The first element of array is 1.
 The first element of the reversed array is 2.
 ```
 
-## <a name="crend"></a>  array::crend
+## <a name="crend"></a>dizi:: crend
 
-Returns a const iterator that addresses the location succeeding the last element in a reversed array.
+Ters çevrilen dizideki son öğeden sonraki konumu ele alan bir const yineleyici döndürür.
 
 ```cpp
 const_reverse_iterator crend() const noexcept;
@@ -667,17 +667,17 @@ const_reverse_iterator crend() const noexcept;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-A const reverse random-access iterator that addresses the location succeeding the last element in a reversed array (the location that had preceded the first element in the unreversed array).
+Ters çevrilen bir dizideki son öğeden sonra gelen konumu ele alan bir sabit ters rastgele erişim yineleyici (geri çevrilmeyen dizide ilk öğeden önce gelen konum).
 
 ### <a name="remarks"></a>Açıklamalar
 
-`crend` is used with a reversed array just as [array::cend](#cend) is used with a array.
+`crend`, [Array:: cend](#cend) bir dizi ile birlikte kullanılan ters bir dizi ile birlikte kullanılır.
 
-With the return value of `crend` (suitably decremented), the array object cannot be modified.
+`crend` dönüş değeri ile (uygun şekilde azaltılır), dizi nesnesi değiştirilemez.
 
-`crend` can be used to test to whether a reverse iterator has reached the end of its array.
+`crend`, bir ters yineleyicinin dizisinin sonuna ulaşıp ulaşılmadığını test etmek için kullanılabilir.
 
-The value returned by `crend` should not be dereferenced.
+`crend` tarafından döndürülen değer başvurulmamalıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -701,9 +701,9 @@ int main( )
 1
 ```
 
-## <a name="data"></a>  array::data
+## <a name="data"></a>dizi: ata:d
 
-Gets the address of the first element.
+İlk öğenin adresini alır.
 
 ```cpp
 Ty *data();
@@ -713,7 +713,7 @@ const Ty *data() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-The member functions return the address of the first element in the controlled sequence.
+Üye işlevleri denetlenen dizideki ilk öğenin adresini döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -747,7 +747,7 @@ int main()
 0
 ```
 
-## <a name="difference_type"></a>  array::difference_type
+## <a name="difference_type"></a>dizi::d ifference_type
 
 İki öğe arasındaki işaretli mesafenin türü.
 
@@ -757,7 +757,7 @@ typedef std::ptrdiff_t difference_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-The signed integer type describes an object that can represent the difference between the addresses of any two elements in the controlled sequence. It is a synonym for the type `std::ptrdiff_t`.
+İmzalanan tamsayı türü, denetlenen dizideki herhangi iki öğenin adresleri arasındaki farkı temsil eden bir nesneyi tanımlar. `std::ptrdiff_t`türü için bir eş anlamlı.
 
 ### <a name="example"></a>Örnek
 
@@ -791,7 +791,7 @@ int main()
 -4
 ```
 
-## <a name="empty"></a>  array::empty
+## <a name="empty"></a>Array:: Empty
 
 Bir öğe olup olmadığını sınar.
 
@@ -801,7 +801,7 @@ constexpr bool empty() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-The member function returns true only if `N == 0`.
+Üye işlevi yalnızca `N == 0`true değerini döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -841,7 +841,7 @@ false
 true
 ```
 
-## <a name="end"></a>  array::end
+## <a name="end"></a>Array:: End
 
 Denetlenen dizinin bitişini belirtir.
 
@@ -853,7 +853,7 @@ const_reference end() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-The member functions return a random-access iterator that points just beyond the end of the sequence.
+Üye işlevleri, dizinin sonunun hemen ötesinde işaret eden bir rastgele erişim yineleyici döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -887,9 +887,9 @@ int main()
 3
 ```
 
-## <a name="fill"></a>  array::fill
+## <a name="fill"></a>Array:: Fill
 
-Erases a array and copies the specified elements to the empty array.
+Bir diziyi siler ve belirtilen öğeleri boş diziye kopyalar.
 
 ```cpp
 void fill(const Type& val);
@@ -899,11 +899,11 @@ void fill(const Type& val);
 
 |Parametre|Açıklama|
 |-|-|
-|*val*|The value of the element being inserted into the array.|
+|*Acil*|Diziye eklenmekte olan öğenin değeri.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-`fill` replaces each element of the array with the specified value.
+`fill` dizideki her öğeyi belirtilen değerle değiştirir.
 
 ### <a name="example"></a>Örnek
 
@@ -933,9 +933,9 @@ int main()
 }
 ```
 
-## <a name="front"></a>  array::front
+## <a name="front"></a>Array:: Front
 
-Accesses the first element.
+İlk öğeye erişir.
 
 ```cpp
 reference front();
@@ -945,7 +945,7 @@ constexpr const_reference front() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-The member functions return a reference to the first element of the controlled sequence, which must be non-empty.
+Üye işlevleri denetlenen sıranın ilk öğesine bir başvuru döndürür ve bu boş olmamalıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -978,7 +978,7 @@ int main()
 0
 ```
 
-## <a name="iterator"></a>  array::iterator
+## <a name="iterator"></a>Array:: Yineleyici
 
 Denetlenen dizi için bir yineleyici türü.
 
@@ -988,7 +988,7 @@ typedef implementation-defined iterator;
 
 ### <a name="remarks"></a>Açıklamalar
 
-The type describes an object that can serve as a random-access iterator for the controlled sequence.
+Türü, denetimli sıra için rastgele erişim Yineleyici işlevi görebilecek bir nesneyi tanımlar.
 
 ### <a name="example"></a>Örnek
 
@@ -1027,7 +1027,7 @@ it1: 0 1 2 3
 it2: 0
 ```
 
-## <a name="max_size"></a>  array::max_size
+## <a name="max_size"></a>dizi:: max_size
 
 Öğe sayısını sayar.
 
@@ -1037,7 +1037,7 @@ constexpr size_type max_size() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-The member function returns `N`.
+Üye işlevi `N`döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -1070,9 +1070,9 @@ int main()
 4
 ```
 
-## <a name="op_at"></a>  array::operator[]
+## <a name="op_at"></a>Array:: operator []
 
-Accesses an element at a specified position.
+Belirtilen konumdaki bir öğeye erişir.
 
 ```cpp
 reference operator[](size_type off);
@@ -1082,14 +1082,14 @@ constexpr const_reference operator[](size_type off) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*off*\
-Position of element to access.
+*kapalı*\
+Erişim için öğenin konumu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-The member functions return a reference to the element of the controlled sequence at position *off*. If that position is invalid, the behavior is undefined.
+Üye işlevleri, konumundaki denetimli sıranın öğesine bir başvuru *döndürür.* Bu konum geçersizse, davranış tanımsızdır.
 
-There is also a non-member [get](array-functions.md#get) function available to get a reference to an element of an **array**.
+Ayrıca, bir **dizinin**öğesine başvuru almak için üye olmayan bir [Get](array-functions.md#get) işlevi de mevcuttur.
 
 ### <a name="example"></a>Örnek
 
@@ -1123,9 +1123,9 @@ int main()
 1 3
 ```
 
-## <a name="op_eq"></a>  array::operator=
+## <a name="op_eq"></a>Array:: operator =
 
-Replaces the controlled sequence.
+Denetlenen sırayı değiştirir.
 
 ```cpp
 array<Value> operator=(array<Value> right);
@@ -1133,12 +1133,12 @@ array<Value> operator=(array<Value> right);
 
 ### <a name="parameters"></a>Parametreler
 
-*right*\
-Container to copy.
+*sağ*\
+Kopyalanacak kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-The member operator assigns each element of *right* to the corresponding element of the controlled sequence, then returns `*this`. You use it to replace the controlled sequence with a copy of the controlled sequence in *right*.
+Member işleci, her bir öğesini denetimli sıranın karşılık *gelen öğesine atar* ve ardından `*this`döndürür. Denetlenen diziyi, denetimli sıranın bir kopyasıyla değiştirmek için bunu *kullanırsınız.*
 
 ### <a name="example"></a>Örnek
 
@@ -1178,7 +1178,7 @@ int main()
 0 1 2 3
 ```
 
-## <a name="pointer"></a>  array::pointer
+## <a name="pointer"></a>dizi::p oınter
 
 Bir öğe için bir işaretçi türü.
 
@@ -1188,7 +1188,7 @@ typedef Ty *pointer;
 
 ### <a name="remarks"></a>Açıklamalar
 
-The type describes an object that can serve as a pointer to elements of the sequence.
+Türü, sıranın öğelerinin işaretçisi olarak işlev görebilecek bir nesne tanımlar.
 
 ### <a name="example"></a>Örnek
 
@@ -1222,9 +1222,9 @@ int main()
 0
 ```
 
-## <a name="rbegin"></a>  array::rbegin
+## <a name="rbegin"></a>Array:: rbegin
 
-Designates the beginning of the reversed controlled sequence.
+Ters denetlenen sıranın başlangıcını belirtir.
 
 ```cpp
 reverse_iterator rbegin()noexcept;
@@ -1233,7 +1233,7 @@ const_reverse_iterator rbegin() const noexcept;
 
 ### <a name="remarks"></a>Açıklamalar
 
-The member functions return a reverse iterator that points just beyond the end of the controlled sequence. Hence, it designates the beginning of the reverse sequence.
+Üye işlevleri, denetimli dizinin sonunun hemen ötesinde bir ters yineleyici döndürür. Bu nedenle, ters sıranın başlangıcını belirler.
 
 ### <a name="example"></a>Örnek
 
@@ -1267,7 +1267,7 @@ int main()
 3
 ```
 
-## <a name="reference"></a>  array::reference
+## <a name="reference"></a>Array:: Reference
 
 Bir öğe için bir başvuru türü.
 
@@ -1277,7 +1277,7 @@ typedef Ty& reference;
 
 ### <a name="remarks"></a>Açıklamalar
 
-The type describes an object that can serve as a reference to an element of the controlled sequence.
+Türü, denetlenen sıranın bir öğesine başvuru olarak işlev görebilecek bir nesne tanımlar.
 
 ### <a name="example"></a>Örnek
 
@@ -1311,9 +1311,9 @@ int main()
 0
 ```
 
-## <a name="rend"></a>  array::rend
+## <a name="rend"></a>dizi:: rend
 
-Designates the end of the reversed controlled sequence.
+Ters denetlenen sıranın sonunu belirtir.
 
 ```cpp
 reverse_iterator rend()noexcept;
@@ -1322,7 +1322,7 @@ const_reverse_iterator rend() const noexcept;
 
 ### <a name="remarks"></a>Açıklamalar
 
-The member functions return a reverse iterator that points at the first element of the sequence (or just beyond the end of an empty sequence)). Hence, it designates the end of the reverse sequence.
+Üye işlevleri, sıranın ilk öğesini işaret eden bir ters yineleyici döndürür (veya bir boş dizinin sonunun ötesinde)). Bu nedenle, ters sıranın sonunu belirler.
 
 ### <a name="example"></a>Örnek
 
@@ -1356,9 +1356,9 @@ int main()
 0
 ```
 
-## <a name="reverse_iterator"></a>  array::reverse_iterator
+## <a name="reverse_iterator"></a>dizi:: reverse_iterator
 
-The type of a reverse iterator for the controlled sequence.
+Denetlenen sıra için ters yineleyicinin türü.
 
 ```cpp
 typedef std::reverse_iterator<iterator> reverse_iterator;
@@ -1366,7 +1366,7 @@ typedef std::reverse_iterator<iterator> reverse_iterator;
 
 ### <a name="remarks"></a>Açıklamalar
 
-The type describes an object that can serve as a reverse iterator for the controlled sequence.
+Türü, denetimli sıra için ters Yineleyici işlevi görebilecek bir nesneyi tanımlar.
 
 ### <a name="example"></a>Örnek
 
@@ -1400,7 +1400,7 @@ int main()
 3
 ```
 
-## <a name="size"></a>  array::size
+## <a name="size"></a>Array:: size
 
 Öğe sayısını sayar.
 
@@ -1410,7 +1410,7 @@ constexpr size_type size() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-The member function returns `N`.
+Üye işlevi `N`döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -1443,9 +1443,9 @@ int main()
 4
 ```
 
-## <a name="size_type"></a>  array::size_type
+## <a name="size_type"></a>dizi:: size_type
 
-The type of an unsigned distance between two element.
+İki öğe arasındaki işaretsiz mesafe türü.
 
 ```cpp
 typedef std::size_t size_type;
@@ -1453,7 +1453,7 @@ typedef std::size_t size_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-The unsigned integer type describes an object that can represent the length of any controlled sequence. It is a synonym for the type `std::size_t`.
+İşaretsiz tamsayı türü, denetlenen bir dizinin uzunluğunu temsil eden bir nesneyi tanımlar. `std::size_t`türü için bir eş anlamlı.
 
 ### <a name="example"></a>Örnek
 
@@ -1487,9 +1487,9 @@ int main()
 4
 ```
 
-## <a name="swap"></a>  array::swap
+## <a name="swap"></a>Array:: swap
 
-Swaps the contents of this array with another array.
+Bu dizinin içeriğini başka bir dizi ile değiştirir.
 
 ```cpp
 void swap(array& right);
@@ -1497,14 +1497,14 @@ void swap(array& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*right*\
-Array to swap contents with.
+*sağ*\
+İçeriği takas eden dizi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-The member function swaps the controlled sequences between `*this` and *right*. It performs a number of element assignments and constructor calls proportional to `N`.
+Üye işlevi, `*this` ve *sağ*arasındaki denetlenen dizileri değiştirir. Bir dizi öğe ataması gerçekleştirir ve Oluşturucu çağrıları `N`orantılıdır.
 
-There is also a non-member [swap](array-functions.md#swap) function available to swap two **array** instances.
+Ayrıca, iki **dizi** örneğini değiştirmek için üye olmayan bir [değiştirme](array-functions.md#swap) işlevi de mevcuttur.
 
 ### <a name="example"></a>Örnek
 
@@ -1553,7 +1553,7 @@ int main()
 0 1 2 3
 ```
 
-## <a name="value_type"></a>  array::value_type
+## <a name="value_type"></a>dizi:: value_type
 
 Öğenin türü.
 
@@ -1563,7 +1563,7 @@ typedef Ty value_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-The type is a synonym for the template parameter `Ty`.
+Tür, `Ty`şablon parametresi için bir eş anlamlı.
 
 ### <a name="example"></a>Örnek
 
@@ -1602,4 +1602,4 @@ int main()
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<array>](../standard-library/array.md)
+[\<dizi >](../standard-library/array.md)

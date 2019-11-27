@@ -17,12 +17,12 @@ ms.locfileid: "74396652"
 ---
 # <a name="operator-mod"></a>MOD işleci
 
-Returns the integer value of the remainder (modulo) when dividing *expression1* by *expression2*.
+*İfade1* , *Deyim2*tarafından bölündükten sonra kalan (modül) tamsayı değerini döndürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> *expression1* **MOD** *expression2*
+> *İfade1* **mod** *İfade2*
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Operators reference](operators-reference.md)
+[İşleçler başvurusu](operators-reference.md)

@@ -17,12 +17,12 @@ ms.locfileid: "74396689"
 ---
 # <a name="operator-lroffset"></a>LROFFSET işleci
 
-Returns the offset of *expression*. Same as **OFFSET**, but it generates a loader resolved offset, which allows Windows to relocate code segments.
+*İfadenin*sapmasını döndürür. **Kaydırmadır**, ancak Windows 'un kod segmentlerini yeniden konumlandırmasına olanak tanıyan bir yükleyici çözümlenmiş kayması oluşturur.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **LROFFSET** *expression*
+> **Lroffset** *ifadesi*
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Operators reference](operators-reference.md)
+[İşleçler başvurusu](operators-reference.md)

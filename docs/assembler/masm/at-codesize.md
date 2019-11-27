@@ -15,7 +15,7 @@ ms.locfileid: "74399198"
 ---
 # <a name="codesize"></a>\@CodeSize
 
-0 for **TINY**, **SMALL**, **COMPACT**, and **FLAT** models, and 1 for **MEDIUM**, **LARGE**, and **HUGE** models (numeric equate).
+küçük, **küçük**, **kompakt**ve **düz** **modeller için 0**ve **Orta**, büyük ve **çok** **büyük** modeller için 1 (sayısal eşkarakter).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -23,4 +23,4 @@ ms.locfileid: "74399198"
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Symbols reference](symbols-reference.md)
+[Semboller başvurusu](symbols-reference.md)

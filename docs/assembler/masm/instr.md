@@ -15,16 +15,16 @@ ms.locfileid: "74397320"
 ---
 # <a name="instr"></a>INSTR
 
-Finds the first occurrence of *textitem2* in *textitem1*.
+*Textitem1*içinde ilk *textitem2* oluşumunu bulur.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> *name* **INSTR** ⟦*position* __,__ ⟧ *textitem1* __,__ *textitem2*
+> *Name* **InStr** ⟦*Position* __,__ ⟧ *textitem1* __,__ *textitem2*
 
 ## <a name="remarks"></a>Açıklamalar
 
-The starting *position* is optional. Each text item can be a literal string, a constant preceded by a **%** , or the string returned by a macro function.
+Başlangıç *konumu* isteğe bağlıdır. Her metin öğesi, bir sabit dize, önüne bir **%** veya bir makro işlevi tarafından döndürülen dize olabilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Directives reference](directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)

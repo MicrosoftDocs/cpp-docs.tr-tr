@@ -15,12 +15,12 @@ ms.locfileid: "74393701"
 ---
 # <a name="sizestr"></a>SIZESTR
 
-Finds the size of a text item.
+Bir metin öğesinin boyutunu bulur.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> *name* **SIZESTR** *textitem*
+> *ad* **sizestr** *textıtem*
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Directives reference](directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)

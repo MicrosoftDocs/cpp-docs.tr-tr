@@ -1,5 +1,5 @@
 ---
-title: operator dot
+title: işleç noktası
 ms.date: 08/30/2018
 f1_keywords:
 - operator .
@@ -17,14 +17,14 @@ ms.locfileid: "74397021"
 ---
 # <a name="operator-"></a>. işleci
 
-The first operator returns *expression* plus the offset of *field* within its structure or union. The second operator returns value at the location pointed to by *register* plus the offset of *field* within its structure or union.
+İlk operatör, *ifadesi* veya birleşimi içindeki *alanın* sapmasını döndürür. İkinci işleç, *kayıt* tarafından işaret edilen konumdaki değeri, yapı veya birleşim içindeki *alanın* sapmasını döndürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> *expression* __.__ *field*⟦ __.__ *field* ...⟧
+> *ifadesi* __.__ *alan*⟦ __.__ *alan* ... ⟧
 >
-> **\[** _register_ **]** __.__ *field*⟦ __.__ *field* ...⟧
+> **\[** _Kaydet_ **]** __.__ *alan*⟦ __.__ *alan* ... ⟧
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Operators reference](operators-reference.md)
+[İşleçler başvurusu](operators-reference.md)

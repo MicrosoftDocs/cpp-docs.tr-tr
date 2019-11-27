@@ -1,5 +1,5 @@
 ---
-title: Compiler Warning (level 3) C4522
+title: Derleyici Uyarısı (düzey 3) C4522
 ms.date: 11/04/2016
 f1_keywords:
 - C4522
@@ -13,17 +13,17 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 11/19/2019
 ms.locfileid: "74188964"
 ---
-# <a name="compiler-warning-level-3-c4522"></a>Compiler Warning (level 3) C4522
+# <a name="compiler-warning-level-3-c4522"></a>Derleyici Uyarısı (düzey 3) C4522
 
-'class' : multiple assignment operators specified
+' class ': birden çok atama işleci belirtildi
 
-The class has multiple assignment operators of a single type. This warning is informational; the constructors are callable in your program.
+Sınıfta tek bir türün birden çok atama işleci vardır. Bu uyarı bilgilendirme amaçlıdır; oluşturucular, programınızda çağrılabilir.
 
-Use the [warning](../../preprocessor/warning.md) pragma to suppress this warning.
+Bu uyarıyı gizlemek için [Uyarı](../../preprocessor/warning.md) pragmasını kullanın.
 
 ## <a name="example"></a>Örnek
 
-The following sample generates C4522.
+Aşağıdaki örnek C4522 oluşturur.
 
 ```cpp
 // C4522.cpp

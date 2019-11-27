@@ -15,16 +15,16 @@ ms.locfileid: "74397351"
 ---
 # <a name="ifndef"></a>IFNDEF
 
-Grants assembly if *name* has not been defined.
+*Ad* tanımlanmamışsa derlemeye izin verir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **IFNDEF** *name*
+> **Ifndef** *adı*
 
 ## <a name="remarks"></a>Açıklamalar
 
-See [IF](../../assembler/masm/if-masm.md) for complete syntax.
+Sözdiziminin [tamamı için bkz](../../assembler/masm/if-masm.md) .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Directives reference](directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)

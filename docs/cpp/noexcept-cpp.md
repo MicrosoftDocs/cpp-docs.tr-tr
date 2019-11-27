@@ -13,26 +13,26 @@ ms.locfileid: "74245623"
 ---
 # <a name="noexcept-c"></a>noexcept (C++)
 
-**C++11:** Specifies whether a function might throw exceptions.
+**C++ 11:** Bir işlevin özel durum oluşturması gerekip gerekmediğini belirtir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> *noexcept-expression*: &nbsp;&nbsp;&nbsp;&nbsp;**noexcept** &nbsp;&nbsp;&nbsp;&nbsp;**noexcept(** *constant-expression* **)**
+> *noexcept-ifadesi*: &nbsp;&nbsp;&nbsp;&nbsp;**noexcept** &nbsp;&nbsp;&nbsp;&nbsp;**noexcept (** *sabit ifade* **)**
 
 ### <a name="parameters"></a>Parametreler
 
-*constant-expression*<br/>
-A constant expression of type **bool** that represents whether the set of potential exception types is empty. The unconditional version is equivalent to `noexcept(true)`.
+*Sabit ifadesi*<br/>
+**Bool** türünde bir sabit ifade, olası özel durum türleri kümesinin boş olup olmadığını temsil eder. Koşulsuz sürüm `noexcept(true)`eşdeğerdir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-A *noexcept expression* is a kind of *exception specification*, a suffix to a function declaration that represents a set of types that might be matched by an exception handler for any exception that exits a function. Unary conditional operator `noexcept(`*constant_expression*`)` where *constant_expression* yields **true**, and its unconditional synonym **noexcept**, specify that the set of potential exception types that can exit a function is empty. That is, the function never throws an exception and never allows an exception to be propagated outside its scope. The operator `noexcept(`*constant_expression*`)` where *constant_expression* yields **false**, or the absence of an exception specification (other than for a destructor or deallocation function), indicates that the set of potential exceptions that can exit the function is the set of all types.
+*Noexcept ifadesi* bir tür *özel durum belirtimi*, bir işlevin dışında bir özel durum işleyicisi tarafından eşleştirilebilen bir tür kümesini temsil eden bir işlev bildirimine bir sonek. Birli koşullu işleç `noexcept(`*constant_expression*`)` *constant_expression* **doğru**ve koşulsuz eş anlamlı **noexcept**, bir işlevden çıkabileceği olası özel durum türleri kümesinin boş olduğunu belirtir. Diğer bir deyişle, işlev hiçbir şekilde özel durum oluşturmaz ve bir özel durumun kapsam dışına yayılmasın. `noexcept(`işleci, *constant_expression* **false değeri**veren veya bir özel durum belirtiminin (yıkıcı veya ayırmayı kaldırma işlevi dışında) yokluğunun`)` *constant_expression* , işlevden çıkabileceği olası özel durumların kümesinin tüm türler kümesidir.
 
-Mark a function as **noexcept** only if all the functions that it calls, either directly or indirectly, are also **noexcept** or **const**. The compiler does not necessarily check every code path for exceptions that might bubble up to a **noexcept** function. If an exception does exit the outer scope of a function marked `noexcept`, [std::terminate](../standard-library/exception-functions.md#terminate) is invoked immediately, and there is no guarantee that destructors of any in-scope objects will be invoked. Use **noexcept** instead of the dynamic exception specifier `throw()`, which is now deprecated in the standard. We recommended you apply `noexcept` to any function that never allows an exception to propagate up the call stack. When a function is declared **noexcept**, it enables the compiler to generate more efficient code in several different contexts. For more information, see [Exception specifications](exception-specifications-throw-cpp.md).
+Bir işlevi yalnızca, çağrı yaptığı tüm işlevlerin (doğrudan veya dolaylı olarak) **noexcept** ya da **const**olması durumunda **noexcept** olarak işaretleyin. Derleyici, **noexcept** işlevine kadar kabarcık olabilecek özel durumlar için her kod yolunu denetlemez. Bir özel durum `noexcept`işaretli bir işlevin dış kapsamından çıktıklarında, [std:: Terminate](../standard-library/exception-functions.md#terminate) hemen çağrılır ve kapsam içi nesnelerin yok edicilerin çağrılacağını garanti etmez. Standart olarak kullanım dışı olan dinamik özel durum tanımlayıcısı `throw()`yerine **noexcept** kullanın. Çağrı yığınını yaymak için bir özel duruma izin vermebir işleve `noexcept` uygulamanızı öneririz. Bir işlev **noexcept**olarak bildirildiğinde, derleyicinin birkaç farklı bağlamda daha verimli kod oluşturmasını sağlar. Daha fazla bilgi için bkz. [özel durum belirtimleri](exception-specifications-throw-cpp.md).
 
 ## <a name="example"></a>Örnek
 
-A template function that copies its argument might be declared **noexcept** on the condition that the object being copied is a plain old data type (POD). Such a function could be declared like this:
+Bağımsız değişkenini kopyalayan bir şablon işlevi, kopyalandığı nesnenin düz bir eski veri türü (POD) olduğu koşul **dışında noexcept** olarak bildirilemez. Böyle bir işlev şöyle bildirilebilecek:
 
 ```cpp
 #include <type_traits>
@@ -46,5 +46,5 @@ T copy_object(const T& obj) noexcept(std::is_pod<T>)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Modern C++ best practices for exceptions and error handling](errors-and-exception-handling-modern-cpp.md)<br/>
-[Exception Specifications (throw, noexcept)](exception-specifications-throw-cpp.md)
+[Özel C++ durumlar ve hata işleme için modern en iyi uygulamalar](errors-and-exception-handling-modern-cpp.md)<br/>
+[Özel durum belirtimleri (throw, noexcept)](exception-specifications-throw-cpp.md)

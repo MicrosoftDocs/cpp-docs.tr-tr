@@ -17,12 +17,12 @@ ms.locfileid: "74396677"
 ---
 # <a name="operator-low32"></a>işleç LOW32
 
-Returns the low 32 bits of *expression*. MASM expressions are 64-bit values.
+*İfadenin*düşük 32 bitini döndürür. Masd ifadeleri 64 bitlik değerlerdir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **LOW32** *expression*
+> **LOW32** *ifadesi*
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Operators reference](operators-reference.md)
+[İşleçler başvurusu](operators-reference.md)

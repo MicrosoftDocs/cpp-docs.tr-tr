@@ -1,5 +1,5 @@
 ---
-title: 'Timing of exception handling: A summary'
+title: 'Özel durum işlemenin zamanlaması: Özet'
 ms.date: 05/07/2019
 helpviewer_keywords:
 - sequence [C++]
@@ -18,12 +18,12 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 11/20/2019
 ms.locfileid: "74246331"
 ---
-# <a name="timing-of-exception-handling-a-summary"></a>Timing of exception handling: A summary
+# <a name="timing-of-exception-handling-a-summary"></a>Özel durum işlemenin zamanlaması: Özet
 
-A termination handler is executed no matter how the **__try** statement block is terminated. Causes include jumping out of the **__try** block, a `longjmp` statement that transfers control out of the block, and unwinding the stack due to exception handling.
+Sonlandırma işleyicisi, **__try** deyimin bloğunun nasıl sonlandırılduğuna bakılmaksızın yürütülür. Nedenler, denetim bloğunun dışına çıkar ve özel durum işleme nedeniyle yığını geriye doğru `longjmp` bir şekilde **__try** bloğundan atlama içerir.
 
 > [!NOTE]
->  The Microsoft C++ compiler supports two forms of the `setjmp` and `longjmp` statements. Hızlı sürüm sonlandırma işlemeyi atlar, ancak daha etkilidir. To use this version, include the file \<setjmp.h>. Diğer sürüm, sonlandırma işlemeyi önceki paragrafta açıklandığı gibi destekler. To use this version, include the file \<setjmpex.h>. Hızlı sürümün performansında artış, donanım yapılandırmasına bağlıdır.
+>  Microsoft C++ derleyicisi `setjmp` ve `longjmp` deyimlerinin iki biçimini destekler. Hızlı sürüm sonlandırma işlemeyi atlar, ancak daha etkilidir. Bu sürümü kullanmak için \<setjmp. h > dosyasını dahil edin. Diğer sürüm, sonlandırma işlemeyi önceki paragrafta açıklandığı gibi destekler. Bu sürümü kullanmak için, \<setjmpex. h > dosyasını dahil edin. Hızlı sürümün performansında artış, donanım yapılandırmasına bağlıdır.
 
 İşletim sistemi, özel durum işleyicisinin gövdesi de dahil olmak üzere başka bir kod yürütülmeden önce tüm sonlandırma işleyicilerini uygun sırada yürütür.
 
@@ -35,7 +35,7 @@ Kesintinin nedeni bir özel durum olduğunda, sistem neyi sonlandıracağına ka
 
 1. Bu filtre denetimi (0 döndürür) geçerse, işlem denetimi geçirmeyen bir filtre bulunana dek devam eder.
 
-1. If this filter returns -1, execution continues where the exception was raised, and no termination takes place.
+1. Bu filtre-1 döndürürse, yürütme özel durumun oluşturulduğu yerde devam eder ve sonlandırma gerçekleşmez.
 
 1. Filtre 1 değerini döndürürse, aşağıdaki olaylar gerçekleşir:
 
@@ -49,5 +49,5 @@ Kesintinin nedeni bir özel durum olduğunda, sistem neyi sonlandıracağına ka
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Writing a termination handler](../cpp/writing-a-termination-handler.md)<br/>
+[Sonlandırma işleyicisi yazma](../cpp/writing-a-termination-handler.md)<br/>
 [Yapılandırılmış Özel Durum İşleme (C/C++)](../cpp/structured-exception-handling-c-cpp.md)

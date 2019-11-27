@@ -1,6 +1,6 @@
 ---
-title: Delegating constructors (C++)
-description: Use delegating constructors in C++ to invoke other constructors and reduce code repetition.
+title: Temsilci oluşturucuları (C++)
+description: Diğer oluşturucuları çağırmak ve C++ kod tekrarını azaltmak için ' de temsilci seçme oluşturucuları kullanın.
 ms.date: 11/19/2019
 ms.openlocfilehash: 533cdfbeb882f3770cc554b0633611a4ffc2cfbd
 ms.sourcegitcommit: 654aecaeb5d3e3fe6bc926bafd6d5ace0d20a80e
@@ -9,9 +9,9 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 11/20/2019
 ms.locfileid: "74250676"
 ---
-# <a name="delegating-constructors"></a>Delegating constructors
+# <a name="delegating-constructors"></a>Temsilci oluşturucuları
 
-Many classes have multiple constructors that do similar things—for example, validate parameters:
+Birçok sınıfta benzer şeyler yapan birden çok Oluşturucu vardır — örneğin, parametreleri doğrula:
 
 ```cpp
 class class_c {
@@ -36,7 +36,7 @@ public:
 };
 ```
 
-You could reduce the repetitive code by adding a function that does all of the validation, but the code for `class_c` would be easier to understand and maintain if one constructor could delegate some of the work to another one. To add delegating constructors, use the `constructor (. . .) : constructor (. . .)` syntax:
+Tüm doğrulamayı yapan bir işlev ekleyerek yinelenen kodu azaltabilirsiniz, ancak `class_c` kodun bir oluşturucunun bir kısmını başka bir Oluşturucu için temsilci seçip sürdürmesinin daha kolay anlaşılması ve korunması daha kolay olabilir. Temsilci oluşturucuları eklemek için `constructor (. . .) : constructor (. . .)` sözdizimini kullanın:
 
 ```cpp
 class class_c {
@@ -61,9 +61,9 @@ int main() {
 }
 ```
 
-As you step through the previous example, notice that the constructor `class_c(int, int, int)` first calls the constructor `class_c(int, int)`, which in turn calls `class_c(int)`. Each of the constructors performs only the work that is not performed by the other constructors.
+Önceki örnekte yaptığınız gibi, oluşturucunun `class_c(int, int, int)` ilk olarak Oluşturucu `class_c(int, int)`çağırdığına dikkat edin, bu da `class_c(int)`çağırır. Kurucuların her biri yalnızca diğer oluşturucular tarafından gerçekleştirilmeyen işleri gerçekleştirir.
 
-The first constructor that's called initializes the object so that all of its members are initialized at that point. You can’t do member initialization in a constructor that delegates to another constructor, as shown here:
+Çağrılan ilk Oluşturucu nesnesini, tüm üyelerinin o noktada başlatılması için başlatır. Burada gösterildiği gibi, başka bir oluşturucuya temsilci olan bir oluşturucuda üye başlatma yapamazsınız:
 
 ```cpp
 class class_a {
@@ -83,7 +83,7 @@ public:
 };
 ```
 
-The next example shows the use of non-static data-member initializers. Notice that if a constructor also initializes a given data member, the member initializer is overridden:
+Sonraki örnekte, statik olmayan veri üyesi başlatıcıların kullanımı gösterilmektedir. Bir oluşturucunun belirli bir veri üyesini de başlattığında üye başlatıcısı geçersiz kılındığına dikkat edin:
 
 ```cpp
 class class_a {
@@ -101,7 +101,7 @@ int main() {
 }
 ```
 
-The constructor delegation syntax doesn't prevent the accidental creation of constructor recursion—Constructor1 calls Constructor2 which calls Constructor1—and no errors are thrown until there is a stack overflow. It's your responsibility to avoid cycles.
+Oluşturucu temsili sözdizimi, Oluşturucu özyineleme yanlışlıkla oluşturulmasını engellemez — constructor1, constructor1 çağıran Constructor2 çağırır ve yığın taşması olana kadar hiçbir hata oluşturulmaz. Döngüleriniz ortadan kaldırmak sizin sorumluluğunuzdadır.
 
 ```cpp
 class class_f{

@@ -15,12 +15,12 @@ ms.locfileid: "74394618"
 ---
 # <a name="real8"></a>REAL8
 
-Allocates and optionally initializes a double-precision (8-byte) floating-point number for each *initializer*.
+Her *Başlatıcı*için bir çift duyarlıklı (8 baytlık) kayan noktalı sayı ayırır ve isteğe bağlı olarak başlatır.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> *name* **REAL8** *initializer* ⟦ __,__ *initializer* ...⟧
+> *ad* **REAL8** *Başlatıcı* ⟦ __,__ *Başlatıcı* ... ⟧
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Directives reference](../../assembler/masm/directives-reference.md)
+[Yönergeler başvurusu](../../assembler/masm/directives-reference.md)

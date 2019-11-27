@@ -17,12 +17,12 @@ ms.locfileid: "74396902"
 ---
 # <a name="operator-high"></a>HIGH işleci
 
-Returns the high 8 bits of the low 16 bits of *expression*. MASM expressions are 64-bit values.
+Düşük 16 bitten oluşan 16 bit *ifadenin*üst 8 bitini döndürür. Masd ifadeleri 64 bitlik değerlerdir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **HIGH** *expression*
+> **Yüksek** *ifade*
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Operators reference](operators-reference.md)
+[İşleçler başvurusu](operators-reference.md)

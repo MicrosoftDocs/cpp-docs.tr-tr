@@ -1,6 +1,6 @@
 ---
-title: Brace initialization for classes, structs, and unions
-description: Use brace initialization with any C++ class, struct or union
+title: Sınıflar, yapılar ve birleşimler için küme ayracı başlatma
+description: Herhangi bir C++ sınıf, yapı veya birleşim ile ayraç başlatma kullanın
 ms.date: 11/19/2019
 ms.assetid: 3e55c3d6-1c6b-4084-b9e5-221b151402f4
 ms.openlocfilehash: 41ff38bc4bcc9ebca913b5e66b5ac2f395044222
@@ -10,9 +10,9 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 11/20/2019
 ms.locfileid: "74246497"
 ---
-# <a name="brace-initialization"></a>Brace initialization
+# <a name="brace-initialization"></a>Küme ayracı başlatma
 
-It is not always necessary to define a constructor for a class, especially ones that are relatively simple. Users can initialize objects of a class or struct by using uniform initialization, as shown in the following example:
+Özellikle görece basit olan bir sınıf için bir Oluşturucu tanımlanması her zaman gerekli değildir. Kullanıcılar, aşağıdaki örnekte gösterildiği gibi Tekdüzen başlatma kullanarak bir sınıfın veya yapının nesnelerini başlatabilir:
 
 ```cpp
 // no_constructor.cpp
@@ -61,7 +61,7 @@ int main()
 }
 ```
 
-Note that when a class or struct has no constructor, you provide the list elements in the order that the members are declared in the class. If the class has a constructor, provide the elements in the order of the parameters. If a type has a default constructor, either implicitly or explicitly declared, you can use default brace initialization (with empty braces). For example, the following class may be initialized by using both default and non-default brace initialization:
+Bir sınıf veya yapının hiçbir Oluşturucusu yoksa, liste öğelerini üyelerin sınıfta bildirildiği sırada sağlayabileceğinizi unutmayın. Sınıfta bir Oluşturucu varsa, parametreleri parametreler sırasıyla belirtin. Bir türün örtük olarak veya açıkça bildirildiği bir varsayılan Oluşturucusu varsa, varsayılan ayraç başlatma (boş küme ayraçları ile) kullanabilirsiniz. Örneğin, aşağıdaki sınıf hem varsayılan hem de varsayılan olmayan ayraç başlatma kullanılarak başlatılabilir:
 
 ```cpp
 #include <string>
@@ -90,7 +90,7 @@ int main()
 }
 ```
 
-If a class has non-default constructors, the order in which class members appear in the brace initializer is the order in which the corresponding parameters appear in the constructor, not the order in which the members are declared (as with `class_a` in the previous example). Otherwise, if the type has no declared constructor, the order in which the members appear in the brace initializer is the same as the order in which they are declared; in this case, you can initialize as many of the public members as you wish, but you cannot skip any member. The following example shows the order that's used in brace initialization when there is no declared constructor:
+Bir sınıfta varsayılan olmayan oluşturucular varsa, sınıf üyelerinin küme ayracı içinde görünme sırası, üyelerin bildirildiği sıra (önceki örnekte `class_a` gibi) değil, ilgili parametrelerin oluşturucuda göründüğü sıradır. Aksi halde, türün tanımlı bir Oluşturucusu yoksa, üyelerin küme ayracı başlatıcısında görünme sırası, bildirildiği sırayla aynıdır; Bu durumda, istediğiniz sayıda ortak üyenin başlatılmasını sağlayabilirsiniz, ancak hiçbir üyeyi atlayamazsınız. Aşağıdaki örnek, tanımlı bir Oluşturucu olmadığında küme ayracı başlatma içinde kullanılan sırayı gösterir:
 
 ```cpp
 class class_d {
@@ -112,7 +112,7 @@ int main()
 }
 ```
 
-If the default constructor is explicitly declared but marked as deleted, default brace initialization cannot be used:
+Varsayılan Oluşturucu açık olarak bildirilirse ancak silinmiş olarak işaretlenmişse, varsayılan küme ayracı başlatma kullanılamaz:
 
 ```cpp
 class class_f {
@@ -128,7 +128,7 @@ int main()
 }
 ```
 
-You can use brace initialization anywhere you would typically do initialization—for example, as a function parameter or a return value, or with the **new** keyword:
+Genellikle başlatma yaptığınız her yerde (örneğin, bir işlev parametresi veya dönüş değeri olarak veya **New** anahtar sözcüğü) küme ayracı başlatma kullanabilirsiniz:
 
 ```cpp
 class_d* cf = new class_d{4.5};
@@ -136,18 +136,18 @@ kr->add_d({ 4.5 });
 return { 4.5 };
 ```
 
-## <a name="initializer_list-constructors"></a>initializer_list constructors
+## <a name="initializer_list-constructors"></a>initializer_list oluşturucular
 
-The [initializer_list Class](../standard-library/initializer-list-class.md) represents a list of objects of a specified type that can be used in a constructor, and in other contexts. You can construct an initializer_list by using brace initialization:
+[Initializer_list sınıfı](../standard-library/initializer-list-class.md) , bir oluşturucuda ve diğer bağlamlarda kullanılabilen, belirtilen bir türün nesne listesini temsil eder. Küme ayracı başlatma kullanarak bir initializer_list oluşturabilirsiniz:
 
 ```cpp
 initializer_list<int> int_list{5, 6, 7};
 ```
 
 > [!IMPORTANT]
->  To use this class, you must include the [\<initializer_list>](../standard-library/initializer-list.md) header.
+>  Bu sınıfı kullanmak için, [\<initializer_list >](../standard-library/initializer-list.md) üst bilgisini dahil etmeniz gerekir.
 
-An `initializer_list` can be copied. In this case, the members of the new list are references to the members of the original list:
+Bir `initializer_list` kopyalanabilir. Bu durumda, yeni listenin üyeleri özgün listenin üyelerine başvurulardır:
 
 ```cpp
 initializer_list<int> ilist1{ 5, 6, 7 };
@@ -156,7 +156,7 @@ if (ilist1.begin() == ilist2.begin())
     cout << "yes" << endl; // expect "yes"
 ```
 
-The standard library container classes, and also `string`, `wstring`, and `regex`, have `initializer_list` constructors. The following examples show how to do brace initialization with these constructors:
+Standart Kitaplık kapsayıcı sınıfları ve ayrıca `string`, `wstring`ve `regex`, `initializer_list` oluşturuculara sahiptir. Aşağıdaki örneklerde, bu oluşturucularla küme ayracı başlatmanın nasıl yapılacağı gösterilmektedir:
 
 ```cpp
 vector<int> v1{ 9, 10, 11 };

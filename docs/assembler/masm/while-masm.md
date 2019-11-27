@@ -15,14 +15,14 @@ ms.locfileid: "74392817"
 ---
 # <a name="while-masm"></a>WHILE (MASM)
 
-Repeats assembly of block *statements* as long as *expression* remains true.
+*Deyim* doğru kaldığı sürece blok *deyimleri* derlemesini yineler.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **WHILE** *expression*\
-> *statements*\
+> **WHILE** *ifadesi*\
+> *deyimler*\
 > **ENDM**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Directives reference](directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)

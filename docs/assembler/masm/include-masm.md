@@ -15,16 +15,16 @@ ms.locfileid: "74397342"
 ---
 # <a name="include-masm"></a>INCLUDE (MASM)
 
-Inserts source code from the source file given by *filename* into the current source file during assembly.
+Derleme sırasında geçerli kaynak dosyasına *dosya adı* tarafından verilen kaynak dosyasından kaynak kodu ekler.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **INCLUDE** *filename*
+> *Dosya adını* Ekle
 
 ## <a name="remarks"></a>Açıklamalar
 
-The *filename* must be enclosed in angle brackets if it includes a backslash, semicolon, greater-than symbol, less-than symbol, single quotation mark, or double quotation mark.
+*Dosya adı* , bir ters eğik çizgi, noktalı virgül, büyüktür simgesi, küçüktür simgesi, tek tırnak işareti ya da çift tırnak işareti içeriyorsa, açılı ayraçlar içine alınmalıdır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Directives reference](directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)

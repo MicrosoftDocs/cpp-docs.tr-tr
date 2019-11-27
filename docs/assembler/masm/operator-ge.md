@@ -17,12 +17,12 @@ ms.locfileid: "74396962"
 ---
 # <a name="operator-ge"></a>GE işleci
 
-Returns true (-1) if *expression1* is greater than or equal to *expression2*, or returns false (0) if it is not.
+*İfade1* , *İfade2*' den büyük veya buna eşitse true (-1) döndürür ya da değilse false (0) döndürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> *expression1* **GE** *expression2*
+> *İfade1* **&** *Deyim2*
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Operators reference](operators-reference.md)
+[İşleçler başvurusu](operators-reference.md)

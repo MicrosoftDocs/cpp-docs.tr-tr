@@ -18,14 +18,14 @@ ms.locfileid: "74395478"
 ---
 # <a name="operator--"></a>\- işleci
 
-Returns *expression1* minus *expression2*. The second operator reverses the sign of *expression*.
+*İfade1* eksi *İfade2*döndürür. İkinci işleç, *ifadesinin*işaretini tersine çevirir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> *expression1* **-** *expression2*
+> *ifade1* **-** *İfade2*
 >
-> __-__ *expression*
+> __-__ *ifadesi*
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Operators reference](operators-reference.md)
+[İşleçler başvurusu](operators-reference.md)

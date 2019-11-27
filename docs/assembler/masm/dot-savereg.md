@@ -15,18 +15,18 @@ ms.locfileid: "74397963"
 ---
 # <a name="savereg"></a>.SAVEREG
 
-Generates either a `UWOP_SAVE_NONVOL` or a `UWOP_SAVE_NONVOL_FAR` unwind code entry for the specified register (*reg*) and offset (*offset*) using the current prologue offset. MASM will choose the most efficient encoding.
+Geçerli başlangıç sapmasını kullanarak belirtilen yazmaç (*reg*) ve konum (*konum*) için bir `UWOP_SAVE_NONVOL` ya da `UWOP_SAVE_NONVOL_FAR` bırakma kodu girişi oluşturur. MASı, en verimli kodlamayı seçer.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **.SAVEREG** *reg* __,__ *offset*
+> **. Savereg** *reg* __,__ *konum*
 
 ## <a name="remarks"></a>Açıklamalar
 
-**.SAVEREG**allows ml64.exe users to specify how a frame function unwinds and is only allowed within the prologue, which extends from the [PROC](../../assembler/masm/proc.md) FRAME declaration to the [.ENDPROLOG](../../assembler/masm/dot-endprolog.md) directive. These directives do not generate code; they only generate `.xdata` and `.pdata`. **.SAVEREG** should be preceded by instructions that actually implement the actions to be unwound. It is a good practice to wrap both the unwind directives and the code they are meant to unwind in a macro to ensure agreement.
+**. SAVEREG**, ml64. exe kullanıcılarına, bir çerçeve işlevinin yük dışı bırakma ve [işlem çerçevesi bildiriminden](../../assembler/masm/proc.md) öğesine genişleyen yalnızca prolog içinde nasıl izin verileceğini belirlemesine izin verir [. ENDPROLOG](../../assembler/masm/dot-endprolog.md) yönergesi. Bu yönergeler kod oluşturmaz; yalnızca `.xdata` ve `.pdata`oluşturur. **. SAVEREG** öncesinde eylemleri gerçekten uygulayan yönergelerden kaçınılmalıdır. Anlaşma sağlamak için hem bırakma yönergelerini hem de bir makroya geri doğru bir şekilde kaydırmak için iyi bir uygulamadır.
 
-For more information, see [MASM for x64 (ml64.exe)](../../assembler/masm/masm-for-x64-ml64-exe.md).
+Daha fazla bilgi için bkz. [for x64 (ml64. exe)](../../assembler/masm/masm-for-x64-ml64-exe.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Directives reference](directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)

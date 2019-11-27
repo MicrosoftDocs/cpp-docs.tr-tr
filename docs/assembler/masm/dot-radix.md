@@ -15,12 +15,12 @@ ms.locfileid: "74398013"
 ---
 # <a name="radix"></a>.RADIX
 
-Sets the default radix, in the range 2 to 16, to the value of *expression*.
+2 ile 16 aralığındaki varsayılan Radix değerini *ifadenin*değerine ayarlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **.RADIX** *expression*
+> **. RADIX** *ifadesi*
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Directives reference](directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)

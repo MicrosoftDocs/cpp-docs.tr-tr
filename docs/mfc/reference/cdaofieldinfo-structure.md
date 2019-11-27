@@ -80,7 +80,7 @@ Alanın veri türünü gösteren bir değer. Ayrıntılar için, DAO yardımı '
 *m_lSize*<br/>
 Metin veya sayısal değerler içeren bir alan nesnesinin sabit boyutunu veya metin içeren bir DAO alanı nesnesinin en büyük boyutunu bayt cinsinden belirten bir değer. Ayrıntılar için, DAO yardımı 'nda "boyut özelliği" konusuna bakın. Boyutlar aşağıdaki değerlerden biri olabilir:
 
-|Type|Boyut (bayt)|Açıklama|
+|Type|Boyut (Bayt)|Açıklama|
 |----------|--------------------|-----------------|
 |`dbBoolean`|1 bayt|Evet/Hayır (true/false ile aynı)|
 |`dbByte`|1\.|Bayt|
@@ -88,7 +88,7 @@ Metin veya sayısal değerler içeren bir alan nesnesinin sabit boyutunu veya me
 |`dbLong`|4|Uzun|
 |`dbCurrency`|8|Para birimi ([Copapara birimi](../../mfc/reference/colecurrency-class.md))|
 |`dbSingle`|4|Tek|
-|`dbDouble`|8|Çift|
+|`dbDouble`|8|çift|
 |`dbDate`|8|Tarih/saat ([Copadatetime](../../atl-mfc-shared/reference/coledatetime-class.md))|
 |`dbText`|1 - 255|Metin ([CString](../../atl-mfc-shared/reference/cstringt-class.md))|
 |`dbLongBinary`|0|Long Binary (OLE nesnesi; [CByteArray](../../mfc/reference/cbytearray-class.md); `CLongBinary`yerine kullanın)|

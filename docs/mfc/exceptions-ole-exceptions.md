@@ -17,29 +17,29 @@ ms.locfileid: "74246706"
 ---
 # <a name="exceptions-ole-exceptions"></a>Özel durumlar: OLE Özel Durumları
 
-The techniques and facilities for handling exceptions in OLE are the same as those for handling other exceptions. For further information on exception handling, see the article [Modern C++ best practices for exceptions and error handling](../cpp/errors-and-exception-handling-modern-cpp.md).
+OLE 'de özel durumları işlemeye yönelik teknikler ve tesisler, diğer özel durumları işlemeye yönelik olanlarla aynıdır. Özel durum işleme hakkında daha fazla bilgi için, [özel durumlar C++ ve hata işleme için modern en iyi uygulamalar](../cpp/errors-and-exception-handling-modern-cpp.md)makalesine bakın.
 
-All exception objects are derived from the abstract base class `CException`. MFC provides two classes for handling OLE exceptions:
+Tüm özel durum nesneleri `CException`soyut temel sınıftan türetilir. MFC OLE özel durumlarını işlemek için iki sınıf sağlar:
 
-- [COleException](../mfc/reference/coleexception-class.md) For handling general OLE exceptions.
+- [Colet özel durumu](../mfc/reference/coleexception-class.md) Genel OLE özel durumlarını işlemek için.
 
-- [COleDispatchException](../mfc/reference/coledispatchexception-class.md) For generating and handling OLE dispatch (automation) exceptions.
+- [Cotadispatchexception](../mfc/reference/coledispatchexception-class.md) OLE dağıtım (Otomasyon) özel durumları oluşturmak ve işlemek için.
 
-The difference between these two classes is the amount of information they provide and where they are used. `COleException` has a public data member that contains the OLE status code for the exception. `COleDispatchException` supplies more information, including the following:
+Bu iki sınıf arasındaki fark, sağladıkları ve nerede kullanıldıkları bilgi miktarıdır. `COleException` özel durum için OLE durum kodunu içeren bir genel veri üyesine sahiptir. `COleDispatchException`, aşağıdakiler de dahil olmak üzere daha fazla bilgi sağlar:
 
-- An application-specific error code
+- Uygulamaya özgü hata kodu
 
-- An error description, such as "Disk full"
+- "Disk dolu" gibi bir hata açıklaması
 
-- A Help context that your application can use to provide additional information for the user
+- Uygulamanızın Kullanıcı için ek bilgi sağlamak üzere kullanabileceği bir yardım bağlamı
 
-- The name of your application's Help file
+- Uygulamanızın Yardım dosyasının adı
 
-- The name of the application that generated the exception
+- Özel durumu oluşturan uygulamanın adı
 
-`COleDispatchException` provides more information so that it can be used with products like Microsoft Visual Basic. The verbal error description can be used in a message box or other notification; the Help information can be used to help the user respond to the conditions that caused the exception.
+`COleDispatchException`, Microsoft Visual Basic gibi ürünlerle kullanılabilmesi için daha fazla bilgi sağlar. Sözlü hatası açıklaması bir ileti kutusu veya başka bir bildirimde kullanılabilir; Yardım bilgileri, kullanıcının özel duruma neden olan koşullara yanıt vermesini sağlamak için kullanılabilir.
 
-Two global functions correspond to the two OLE exception classes: [AfxThrowOleException](../mfc/reference/exception-processing.md#afxthrowoleexception) and [AfxThrowOleDispatchException](../mfc/reference/exception-processing.md#afxthrowoledispatchexception). Use them to throw general OLE exceptions and OLE dispatch exceptions, respectively.
+İki genel işlev iki OLE özel durum sınıfına karşılık gelir: [AfxThrowOleException](../mfc/reference/exception-processing.md#afxthrowoleexception) ve [AfxThrowOleDispatchException](../mfc/reference/exception-processing.md#afxthrowoledispatchexception). Bunları, sırasıyla Genel OLE özel durumları ve OLE dağıtım özel durumları oluşturmak için kullanın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

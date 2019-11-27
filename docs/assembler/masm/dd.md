@@ -15,15 +15,15 @@ ms.locfileid: "74398793"
 ---
 # <a name="dd"></a>DD
 
-Allocates and optionally initializes a double word (4 bytes) of storage for each *initializer*. **DD** is a synonym of [DWORD](../../assembler/masm/dword.md).
+Her *Başlatıcı*için bir çift sözcük (4 bayt) depolama alanı ayırır ve isteğe bağlı olarak başlatır. **Gg** , [DWORD](../../assembler/masm/dword.md)'ün bir eşanlamlısıdır.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> ⟦*name*⟧ **DD** *initializer* ⟦ __,__ *initializer* ...⟧
+> ⟦*Name*⟧ **dd** *Başlatıcı* ⟦ __,__ *Başlatıcı* ... ⟧
 
 ## <a name="remarks"></a>Açıklamalar
 
-Can also be used as a type specifier anywhere a type is legal.
+, Türün geçerli olduğu her yerde tür belirleyici olarak da kullanılabilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

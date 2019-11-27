@@ -38,7 +38,7 @@ Bu izlenecek yolu tamamlamak için, Visual Studio 'nun iş yükü **ile C++ masa
 
 1. MFC uygulaması oluşturmak için **MFC Uygulama Sihirbazı 'nı** kullanın. Visual Studio sürümünüz için sihirbazın nasıl açılacağı hakkında yönergeler için bkz. [Izlenecek yol: yenı MFC kabuk denetimlerini kullanma](walkthrough-using-the-new-mfc-shell-controls.md) .
 
-1. **Ad** kutusuna *MFCD2DWalkthrough*yazın. Seçin **Tamam**.
+1. **Ad** kutusuna *MFCD2DWalkthrough*yazın. **Tamam ' ı**seçin.
 
 1. **MFC Uygulama Sihirbazı**'nda herhangi bir ayarı değiştirmeden **son** ' u seçin.
 

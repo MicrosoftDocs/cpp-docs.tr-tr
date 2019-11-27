@@ -15,33 +15,33 @@ ms.locfileid: "74397221"
 ---
 # <a name="masm-for-x64-ml64exe"></a>x64 (ml64.exe) için (MASM)
 
-Visual Studio includes both 32-bit and 64-bit hosted versions of Microsoft Assembler (MASM) to target x64 code. Named ml64.exe, this is the assembler that accepts x64 assembler language. The MASM command-line tools are installed when you choose a C++ workload during Visual Studio installation. The MASM tools are not available as a separate download. For instructions on how to download and install a copy of Visual Studio, see [Install Visual Studio](/visualstudio/install/install-visual-studio). If you do not want to install the complete Visual Studio IDE, but only want the command-line tools, download the [Build Tools for Visual Studio](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2019).
+Visual Studio, x64 kodunu hedeflemek için hem 32-bit hem de 64 Bit barındırılan Microsoft Assembler (Masd) sürümlerini içerir. Ml64. exe olarak adlandırılan bu, x64 assembler dilini kabul eden bir derleyicisimdir. Visual Studio yüklemesi sırasında bir C++ iş yükü seçtiğinizde ması komut satırı araçları yüklenir. Masa araçları ayrı bir indirme olarak kullanılamaz. Visual Studio 'nun bir kopyasını indirme ve yükleme hakkında yönergeler için bkz. [Visual Studio 'Yu yükleme](/visualstudio/install/install-visual-studio). Visual Studio IDE 'nin tamamını yüklemek istemiyorsanız, ancak yalnızca komut satırı araçlarının yerine [Visual Studio Için derleme araçlarını](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2019)indirin.
 
-To use MASM to build code for x64 targets on the command line, you must use a developer command prompt for x64 targets, which sets the required path and other environment variables. For information on how to start a developer command prompt, see [Build C/C++ code on the command line](../../build/building-on-the-command-line.md).
+Komut satırında x64 hedefleri için kod oluşturmak üzere Masd 'yi kullanmak için, gerekli yolu ve diğer ortam değişkenlerini ayarlayan x64 hedefleri için bir geliştirici komut istemi kullanmanız gerekir. Geliştirici komut istemi başlatma hakkında daha fazla bilgi için bkz. [komut satırında C/C++ kod oluşturma](../../build/building-on-the-command-line.md).
 
-For information on ml64.exe command line options, see [ML and ML64 Command-Line Reference](../../assembler/masm/ml-and-ml64-command-line-reference.md).
+Ml64. exe komut satırı seçenekleri hakkında bilgi için bkz. [ml ve ML64 komut satırı başvurusu](../../assembler/masm/ml-and-ml64-command-line-reference.md).
 
-Inline assembler or use of the ASM keyword is not supported for x64 or ARM targets. To port your x86 code that uses inline assembler to x64 or ARM, you can convert your code to C++, use compiler intrinsics, or create assembler-language source files. The Microsoft C++ compiler supports intrinsics to allow you to use special-function instructions, for example, privileged, bit scan/test, interlocked, and so on, in as close to a cross-platform manner as possible. For information on available intrinsics, see [Compiler Intrinsics](../../intrinsics/compiler-intrinsics.md).
+Satır içi assembler veya ASM anahtar sözcüğünün kullanımı x64 veya ARM hedefleri için desteklenmez. X64 veya ARM için satır içi assembler kullanan x86 kodunuzun bağlantı noktası oluşturmak için, kodunuzu ' e C++dönüştürebilir, derleyici iç bilgileri kullanabilir veya assembler dili kaynak dosyaları oluşturabilirsiniz. Microsoft C++ derleyicisi, özel işlev yönergelerini (örneğin, ayrıcalıklı, bit tarama/test, birbirine kilitli vb.) kullanmanıza olanak tanımak için iç işlemleri destekler. Kullanılabilir iç bilgiler hakkında bilgi için bkz. [derleyici iç](../../intrinsics/compiler-intrinsics.md)bilgileri.
 
-## <a name="add-an-assembler-language-file-to-a-visual-studio-c-project"></a>Add an assembler-language file to a Visual Studio C++ project
+## <a name="add-an-assembler-language-file-to-a-visual-studio-c-project"></a>Visual Studio C++ projesine bir assembler dili dosyası ekleme
 
-The Visual Studio project system supports assembler-language files built by using MASM in your C++ projects. You can create x64 assembler-language source files and build them into object files by using MASM, which supports x64 fully. You can then link these object files to your C++ code built for x64 targets. This is one way to overcome the lack of an x64 inline assembler.
+Visual Studio proje sistemi, C++ projelerinizde Masd kullanılarak oluşturulan assembler dili dosyalarını destekler. X64 birleştirici dil kaynak dosyaları oluşturabilir ve bunları x64 tam destekleyen Masd kullanarak nesne dosyalarında oluşturabilirsiniz. Daha sonra bu nesne dosyalarını, x64 hedefleri için C++ oluşturulmuş kodunuza bağlayabilirsiniz. Bu, bir x64 satır içi assembler eksikliğinden oluşan bir yoldur.
 
-### <a name="to-add-an-assembler-language-file-to-an-existing-visual-studio-c-project"></a>To add an assembler-language file to an existing Visual Studio C++ project
+### <a name="to-add-an-assembler-language-file-to-an-existing-visual-studio-c-project"></a>Varolan bir Visual Studio C++ projesine bir assembler dili dosyası eklemek için
 
-1. Select the project in **Solution Explorer**. On the menu bar, choose **Project**, **Build Customizations**.
+1. **Çözüm Gezgini**içinde projeyi seçin. Menü çubuğunda **Proje**, **Özelleştirmeleri oluştur**' u seçin.
 
-1. In the **Visual C++ Build Customization Files** dialog box, check the checkbox next to **masm(.targets,.props)** . Choose **OK** to save your selection and close the dialog box.
+1. **Görsel C++ yapı özelleştirme dosyaları** iletişim kutusunda **ması (. targets,. props)** yanındaki onay kutusunu işaretleyin. Seçiminizi kaydetmek ve iletişim kutusunu kapatmak için **Tamam** ' ı seçin.
 
-1. On the menu bar, choose **Project**, **Add New Item**.
+1. Menü çubuğunda **Proje**, **Yeni öğe Ekle**' yi seçin.
 
-1. In the **Add New Item** dialog box, select **C++ file (.cpp)** in the center pane. In the **Name** edit control, enter a new file name that has a **.asm** extension instead of .cpp. Choose **Add** to add the file to your project and close the dialog box.
+1. **Yeni öğe Ekle** iletişim kutusunda Orta bölmedeki  **C++ dosya (. cpp)** öğesini seçin. **Ad** düzenleme denetiminde,. cpp yerine **. asm** uzantısına sahip yeni bir dosya adı girin. Dosyayı projenize eklemek için **Ekle** ' yi seçin ve iletişim kutusunu kapatın.
 
-Create your assembler-language code in the .asm file you added. When you build your solution, the MASM assembler is invoked to assemble the .asm file into an object file that is then linked into your project. To make symbol access easier, declare your assembler functions as `extern "C"` in your C++ source code, rather than using the C++ name decoration conventions in your assembler-language source files.
+Eklediğiniz. asm dosyasında assembler dili kodunuzu oluşturun. Çözümünüzü oluştururken, MASı derleyicisi,. asm dosyasını, daha sonra projenize bağlanmış bir nesne dosyasına birleştirmek için çağrılır. Sembol erişimini daha kolay hale getirmek için, assembler dili kaynak dosyalarınızda C++ C++ ad düzenleme kurallarını kullanmak yerine, assembler işlevlerinizi kaynak kodunuzda `extern "C"` olarak bildirin.
 
-## <a name="ml64-specific-directives"></a>ml64-Specific Directives
+## <a name="ml64-specific-directives"></a>ML64 'e özgü yönergeler
 
-You can use the following ml64-specific directives in your assembler-language source code that targets x64:
+Aşağıdaki ML64 özgü yönergeleri, 64 ' i hedefleyen assembler dili kaynak kodunuzda kullanabilirsiniz:
 
 - [.ALLOCSTACK](../../assembler/masm/dot-allocstack.md)
 
@@ -57,11 +57,11 @@ You can use the following ml64-specific directives in your assembler-language so
 
 - [.SETFRAME](../../assembler/masm/dot-setframe.md)
 
-In addition, the [PROC](../../assembler/masm/proc.md) directive has been updated for use with ml64.exe.
+Ayrıca, [proc](../../assembler/masm/proc.md) yönergesi ml64. exe ile kullanım için güncelleştirilmiştir.
 
-## <a name="32-bit-address-mode-address-size-override"></a>32-Bit Address Mode (Address Size Override)
+## <a name="32-bit-address-mode-address-size-override"></a>32-bit adres modu (adres boyutu geçersiz kılma)
 
-MASM emits the 0x67 address size override if a memory operand includes 32-bit registers. For example, the following examples cause the address size override to be emitted:
+Bir bellek işleneni 32 bitlik Yazmaçları içeriyorsa, mask, 0x67 adres boyutu geçersiz kılmayı yayar. Örneğin, aşağıdaki örnekler adres boyutu geçersiz kılmanın oluşturulmasına neden olur:
 
 ```asm
 mov rax, QWORD PTR [ecx]
@@ -71,9 +71,9 @@ prefetch [eax]
 movnti rax, QWORD PTR [r8d]
 ```
 
-MASM assumes that if a 32-bit displacement appears alone as a memory operand, 64-bit addressing is intended. There is currently no support for 32-bit addressing with such operands.
+Masa, 32 bitlik bir öteleme 'in tek başına bir bellek işleneni olarak göründüğünü varsayar, 64 bit adresleme amaçlıdır. Şu anda bu tür işlenenleri 32 bit adresleme desteği yoktur.
 
-Finally, mixing register sizes within a memory operand, as demonstrated in the following code, generates an error.
+Son olarak, aşağıdaki kodda gösterildiği gibi, bir bellek işleneni içindeki kayıt boyutlarını karıştırma bir hata oluşturur.
 
 ```asm
 mov eax, DWORD PTR [rcx*2+r10d]

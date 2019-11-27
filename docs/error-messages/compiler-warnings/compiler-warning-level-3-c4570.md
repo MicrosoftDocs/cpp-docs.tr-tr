@@ -1,5 +1,5 @@
 ---
-title: Compiler Warning (level 3) C4570
+title: Derleyici Uyarısı (düzey 3) C4570
 ms.date: 11/04/2016
 f1_keywords:
 - C4570
@@ -13,15 +13,15 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 11/19/2019
 ms.locfileid: "74188873"
 ---
-# <a name="compiler-warning-level-3-c4570"></a>Compiler Warning (level 3) C4570
+# <a name="compiler-warning-level-3-c4570"></a>Derleyici Uyarısı (düzey 3) C4570
 
-'type' : is not explicitly declared as abstract but has abstract functions
+' Type ': açıkça soyut olarak bildirilmemiş ancak soyut işlevlere sahip
 
-A type that contains [abstract](../../extensions/abstract-cpp-component-extensions.md) functions should itself be marked as abstract.
+[Soyut](../../extensions/abstract-cpp-component-extensions.md) işlevler içeren bir türün kendisi soyut olarak işaretlenmelidir.
 
 ## <a name="example"></a>Örnek
 
-The following sample generates C4570.
+Aşağıdaki örnek C4570 oluşturur.
 
 ```cpp
 // C4570.cpp

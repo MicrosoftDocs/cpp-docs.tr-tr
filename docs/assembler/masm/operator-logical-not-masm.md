@@ -17,12 +17,12 @@ ms.locfileid: "74396749"
 ---
 # <a name="operator--masm"></a>! işleci (MASM)
 
-Treats *character* as a literal character rather than as an operator or symbol.
+*Karakteri* bir işleç veya sembol yerine sabit karakter olarak değerlendirir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **!** *character*
+> **!** *inde*
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Operators reference](operators-reference.md)
+[İşleçler başvurusu](operators-reference.md)

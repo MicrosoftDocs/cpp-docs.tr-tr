@@ -1,5 +1,5 @@
 ---
-title: Compiler Warning (level 3) C4538
+title: Derleyici Uyarısı (düzey 3) C4538
 ms.date: 11/04/2016
 f1_keywords:
 - C4538
@@ -13,13 +13,13 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 11/19/2019
 ms.locfileid: "74188954"
 ---
-# <a name="compiler-warning-level-3-c4538"></a>Compiler Warning (level 3) C4538
+# <a name="compiler-warning-level-3-c4538"></a>Derleyici Uyarısı (düzey 3) C4538
 
-'type' : const/volatile qualifiers on this type are not supported
+' Type ': Bu tür üzerindeki const/volatile niteleyicileri desteklenmiyor
 
-A qualifier keyword was applied to an array incorrectly. For more information, see [array](../../extensions/arrays-cpp-component-extensions.md).
+Bir niteleyici anahtar sözcüğü bir diziye yanlış uygulandı. Daha fazla bilgi için bkz. [dizi](../../extensions/arrays-cpp-component-extensions.md).
 
-The following sample generates C4538:
+Aşağıdaki örnek C4538 oluşturur:
 
 ```cpp
 // C4538.cpp

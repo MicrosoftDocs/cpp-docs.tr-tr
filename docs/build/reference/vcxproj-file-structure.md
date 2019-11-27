@@ -15,7 +15,7 @@ ms.locfileid: "74303130"
 
 [MSBuild](../msbuild-visual-cpp.md) , Visual Studio 'daki varsayılan proje sistemidir; Visual C++ 'te **Dosya** > **Yeni proje** ' yi seçtiğinizde, ayarları, uzantısı `.vcxproj`olan bir XML proje dosyasında depolanan bir MSBuild projesi oluşturuyorsunuz. Proje dosyası, ayarların saklanabileceği. props dosyalarını ve. targets dosyalarını da içeri aktarabilir. Çoğu durumda, proje dosyasını el ile düzenlemeniz gerekmez ve aslında MSBuild 'in iyi bir şekilde anlaşılmadığı müddetçe el ile düzenlememelisiniz. Her mümkün olduğunda proje ayarlarını değiştirmek için Visual Studio özellik sayfalarını kullanmanız gerekir (bkz. [Visual C++ Studio 'da derleyici ve derleme özelliklerini ayarlama](../working-with-project-properties.md). Ancak, bazı durumlarda bir proje dosyasını veya özellik sayfasını el ile değiştirmeniz gerekebilir. Bu senaryolar için, bu makale dosyanın yapısıyla ilgili temel bilgileri içerir.
 
-**Önemli:**
+**Önemli**
 
 Bir. vcxproj dosyasını el ile düzenlemeyi seçerseniz, bu olgulara dikkat edin:
 

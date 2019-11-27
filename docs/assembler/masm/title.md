@@ -15,12 +15,12 @@ ms.locfileid: "74393199"
 ---
 # <a name="title"></a>TITLE
 
-Defines the program listing title.
+Program listesinin başlığını tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **TITLE** *text*
+> **Başlık** *metni*
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Directives reference](directives-reference.md)
+[Yönergeler başvurusu](directives-reference.md)

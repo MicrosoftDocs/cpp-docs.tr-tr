@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C4232
 ms.assetid: f92028a5-4ddd-43c1-97f5-4f724e5e14af
-ms.openlocfilehash: dee087b73bf032a68daf0527ea584efcc7579361
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9d328b1b5e4c3875f29b48eab77cd6f6d49d447f
+ms.sourcegitcommit: 3ee06ec53153cf21910fc8cfef78a4f25f9633f3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62401091"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74541885"
 ---
 # <a name="compiler-warning-level-4-c4232"></a>Derleyici Uyarısı (düzey 4) C4232
 
-Standart olmayan uzantı kullanıldı: 'identifier': 'dllimport' dllimport'un adresi statik değil; kimlik garanti edilemiyor
+Standart olmayan uzantı kullanıldı: ' tanımlayıcı ': DllImport ' dllimport ' adresi statik değil; kimlik garanti edilmez
 
-Microsoft Uzatmaları (/Ze) altında bir işlevin adresini ile bildirilen statik olmayan bir değer verebilirsiniz **dllimport** değiştiricisi. ANSI Uyumluluğu altında ([/Za](../../build/reference/za-ze-disable-language-extensions.md)), bu bir hataya neden olur.
+Microsoft uzantıları (/Ze) altında, statik olmayan bir değeri **dllimport** değiştiricisi ile belirtilen bir işlevin adresi olarak verebilirsiniz. ANSI uyumluluğu ([/za](../../build/reference/za-ze-disable-language-extensions.md)) altında bu hataya neden olur.
 
-Aşağıdaki örnek, C4232 oluşturur:
+Aşağıdaki örnek C4232 oluşturur:
 
-```
+```c
 // C4232.c
 // compile with: /W4 /Ze /c
 int __declspec(dllimport) f();

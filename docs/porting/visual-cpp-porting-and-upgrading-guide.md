@@ -41,7 +41,7 @@ Kod tabanınızı yeni bir araç takımına yükseltmek sizin için bir seçenek
 
 - modern stilleri seçiminize göre otomatik biçimlendirme, eski kodların çok daha okunaklı olmasına yardımcı olabilir.
 
-Daha fazla bilgi için [yerel çoklu sürüm desteğinin Visual Studio'da eski projeleri oluşturmak için kullanmak](use-native-multi-targeting.md).
+Daha fazla bilgi için bkz. [Eski projeler oluşturmak Için Visual Studio 'da yerel çoklu sürüm kullanımını kullanma](use-native-multi-targeting.md).
 
 ## <a name="in-this-section"></a>Bu bölümde
 
