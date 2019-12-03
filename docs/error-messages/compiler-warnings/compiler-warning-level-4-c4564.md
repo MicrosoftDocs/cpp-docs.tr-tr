@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C4564
 ms.assetid: 555b301b-313e-4262-9f81-eb878674be60
-ms.openlocfilehash: 1948bdec5367fa7943f5a0de4338fd4ecd6c6581
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f5db6bf366c86a716be33539feb0085ac03a9647
+ms.sourcegitcommit: d0504e2337bb671e78ec6dd1c7b05d89e7adf6a7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62220513"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74683158"
 ---
 # <a name="compiler-warning-level-4-c4564"></a>Derleyici Uyarısı (düzey 4) C4564
 
-desteklenmeyen varsayılan parametre 'parametresi' yöntemi 'class' sınıfının ' yöntemi' tanımlar
+' class ' sınıfının ' Method ' metodu desteklenmeyen ' Parameter ' varsayılan parametresini tanımlıyor
 
-Derleyicinin varsayılan değeri olan bir veya daha fazla parametrelere sahip bir yöntemi algılandı. Yöntem çağrıldığında parametreler için varsayılan değerleri göz ardı edilir; açıkça bu parametreler için değerler belirtin. C++ derleyicisi, açıkça bu parametreleri için değer belirtmezseniz, bir hata oluşturur.
+Derleyici, varsayılan değerlere sahip bir veya daha fazla parametre içeren bir yöntem algıladı. Parametreler çağrıldığında parametreler için varsayılan değer (ler) gözardı edilir; Bu parametrelerin değerlerini açıkça belirtin. Bu parametreler için açıkça değer belirtmezseniz, C++ derleyici bir hata oluşturur.
 
-Visual Basic ile oluşturulan aşağıdaki .dll yöntem bağımsız değişkenlerine göre varsayılan parametreleri sağlayan:
+Aşağıdaki. dll verildiğinde, yöntem bağımsız değişkenlerinde Varsayılan parametrelere izin veren Visual Basic oluşturuldu:
 
-```
+```vb
 ' C4564.vb
 ' compile with: vbc /t:library C4564.vb
 Public class TestClass
@@ -31,9 +31,9 @@ Public class TestClass
 End class
 ```
 
-Ve Visual Basic ile oluşturulan .dll dosyasını kullanan aşağıdaki C++ örneği
+Ve Visual Basic ile C++ oluşturulan. dll kullanan aşağıdaki örnek,
 
-```
+```cpp
 // C4564.cpp
 // compile with: /clr /W4 /WX
 #using <C4564.dll>

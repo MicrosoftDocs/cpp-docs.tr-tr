@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C4339
 ms.assetid: 5b83353d-7777-4afb-8476-3c368349028c
-ms.openlocfilehash: bc9d335b3a09f7953a12b388d5bb40cc4d433969
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fffdaa255f6b8f2259488df610f163bebf8d6dec
+ms.sourcegitcommit: d0504e2337bb671e78ec6dd1c7b05d89e7adf6a7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62400831"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74683288"
 ---
 # <a name="compiler-warning-level-4-c4339"></a>Derleyici Uyarısı (düzey 4) C4339
 
-'type': Tanımsız Tür algılandı WinRT veya CLR meta verilerinde - bu türün kullanılması çalışma zamanı özel durumuna neden
+' Type ': WinRT veya CLR meta verilerinde tanımsız tür kullanımı algılandı-Bu türün kullanılması çalışma zamanı özel durumuna neden olabilir
 
-Windows çalışma zamanı veya ortak dil çalışma zamanı için derlenmiş kodda bir türü tanımlanmadı. Olası çalışma zamanı özel önlemek için türü tanımlar.
+Windows Çalışma Zamanı veya ortak dil çalışma zamanı için derlenen kodda bir tür tanımlanmadı. Olası bir çalışma zamanı özel durumunu önlemek için türü tanımlayın.
 
-Varsayılan olarak bu uyarıyı kapalıdır. Bkz: [derleyici uyarıları emin olan kapalı varsayılan](../../preprocessor/compiler-warnings-that-are-off-by-default.md) daha fazla bilgi için.
+Bu uyarı varsayılan olarak kapalıdır. Daha fazla bilgi için bkz. [Varsayılan olarak kapalı olan Derleyici uyarıları](../../preprocessor/compiler-warnings-that-are-off-by-default.md) .
 
-Aşağıdaki örnek, C4339 oluşturur ve bu sorunun nasıl gösterir:
+Aşağıdaki örnek C4339 oluşturur ve nasıl düzeltileceğini gösterir:
 
-```
+```cpp
 // C4339.cpp
 // compile with: /W4 /clr /c
 // C4339 expected

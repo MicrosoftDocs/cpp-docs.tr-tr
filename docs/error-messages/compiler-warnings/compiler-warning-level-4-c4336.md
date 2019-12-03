@@ -6,20 +6,20 @@ f1_keywords:
 helpviewer_keywords:
 - C4336
 ms.assetid: 93f199dd-d6dd-42c0-82d8-c12d101a7235
-ms.openlocfilehash: 4946b932fa897dab057e430f16c781e2d06bebd0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 33c4a25618c1afcf93704b161483bc4c0a6e16a0
+ms.sourcegitcommit: d0504e2337bb671e78ec6dd1c7b05d89e7adf6a7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62400857"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74683314"
 ---
 # <a name="compiler-warning-level-4-c4336"></a>Derleyici Uyarısı (düzey 4) C4336
 
-Çapraz başvurulan tür kitaplığı 'type_lib1' 'type_lib2' içeri aktarmadan önce içeri aktarma
+' type_lib2 ' öğesini içeri aktarmadan önce ' type_lib1 ' çapraz referanslı tür kitaplığını içeri aktarın
 
-Bir tür kitaplığı ile başvuruldu [#import](../../preprocessor/hash-import-directive-cpp.md) yönergesi. Ancak, tür kitaplığı ile başvurulmadı başka bir tür kitaplığına bir başvuruyu bulunan `#import`. Bu bir .tlb dosyasının derleyici tarafından bulunamadı.
+[#İmport](../../preprocessor/hash-import-directive-cpp.md) yönergesiyle bir tür kitaplığına başvuruldu. Ancak, tür kitaplığı `#import`ile başvurulmayan başka bir tür kitaplığına başvuru içeriyordu. Bu diğer. tlb dosyası derleyici tarafından bulundu.
 
-Verilen iki tür kitaplıkları (midl.exe'yi ile derlenmiş) aşağıdaki iki dosyalarından oluşturulan diskte:
+Aşağıdaki iki dosyadan oluşturulan diskte belirtilen iki tür kitaplığı (MIDL. exe ile derlenen):
 
 ```
 // c4336a.idl
@@ -50,9 +50,9 @@ library C4336bLib
 };
 ```
 
-Aşağıdaki örnek, C4336 oluşturur:
+Aşağıdaki örnek C4336 oluşturur:
 
-```
+```cpp
 // C4336.cpp
 // compile with: /W4 /LD
 // #import "C4336a.tlb"

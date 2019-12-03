@@ -6,38 +6,38 @@ f1_keywords:
 helpviewer_keywords:
 - C4512
 ms.assetid: afb68995-684a-4be5-a73a-38d7a16dc030
-ms.openlocfilehash: c5e84fe1d0e558e689e48fba8df112861f81acec
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d3b8f11b55cf6ef2df601c125a1b6629aa0554da
+ms.sourcegitcommit: d0504e2337bb671e78ec6dd1c7b05d89e7adf6a7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62220996"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74683193"
 ---
 # <a name="compiler-warning-level-4-c4512"></a>Derleyici Uyarısı (düzey 4) C4512
 
-'class': atama işleci üretilemedi
+' class ': atama işleci üretilemedi
 
-Derleyici, belirli bir sınıf için bir atama işleci oluşturulamıyor. Hiçbir atama işleci oluşturuldu.
+Derleyici verilen sınıf için atama işleci oluşturamıyor. Atama işleci oluşturulmadı.
 
-Türetilmiş sınıf tarafından erişilebilir değil temel sınıf için bir atama işleci, bu uyarıyı neden olabilir.
+Türetilmiş sınıf tarafından erişilemeyen temel sınıf için atama işleci bu uyarıya neden olabilir.
 
-Bu uyarıyı engellemek için sınıf için bir kullanıcı tanımlı atama işleci belirtin.
+Bu uyarıyı önlemek için, sınıf için Kullanıcı tanımlı bir atama işleci belirtin.
 
-Derleyici ayrıca bir tanımlamıyor bir sınıf için bir atama işleci işlevi oluşturur. Bu atama işleci bir nesnenin veri üyelerinin kopyalamadır. Çünkü `const` veri öğeleri sınıf içeriyorsa, başlatmadan sonra değiştirilemez bir `const` öğesini varsayılan atama işleci çalışmamasına. Başka bir nedeni de C4512 uyarı bir başvuru türü statik olmayan veri üyesi bildirimidir. Amaç, kopyalanamaz türü oluşturmak için ise, varsayılan bir kopya Oluşturucu oluşturulmasını de engellemelisiniz.
+Derleyici aynı zamanda bir tane tanımlamayan bir sınıf için atama işleci işlevi de oluşturacaktır. Bu atama işleci, bir nesnenin veri üyelerinin üye tabanlı kopyasıdır. `const` veri öğeleri başlatmadan sonra değiştirilemediğinden, sınıf bir `const` öğesi içeriyorsa, varsayılan atama işleci çalışmaz. C4512 uyarısının başka bir nedeni, başvuru türündeki statik olmayan bir veri üyesinin bir bildirimidir. Amaç kopyalanabilir olmayan bir tür oluşturmak için bir varsayılan kopya Oluşturucu oluşturmayı da engellemeniz gerekir.
 
-C4512 uyarı kodu üç yoldan biriyle çözümleyebilirsiniz:
+Kodunuzun C4512 uyarısını üç farklı şekilde çözebilirsiniz:
 
-- Sınıfı için bir atama işleci açıkça tanımlayın.
+- Sınıf için açıkça bir atama işleci tanımlayın.
 
-- Kaldırma **const** veya başvuru işleci sınıftaki veri öğesi.
+- Sınıf içindeki veri öğesinden **const** veya Reference işlecini kaldırın.
 
-- #Pragma kullanın [uyarı](../../preprocessor/warning.md) uyarının gösterilmemesi için deyimi.
+- Uyarıyı bastırmak için #pragma [Uyarı](../../preprocessor/warning.md) ifadesini kullanın.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C4512 oluşturur.
+Aşağıdaki örnek C4512 oluşturur.
 
-```
+```cpp
 // C4512.cpp
 // compile with: /EHsc /W4
 // processor: x86

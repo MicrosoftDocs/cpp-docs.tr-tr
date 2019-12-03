@@ -6,20 +6,20 @@ f1_keywords:
 helpviewer_keywords:
 - C4337
 ms.assetid: 70bc72d9-aac5-45cd-abd3-ebe42a05897b
-ms.openlocfilehash: 2bfa5f9b30fa0325df1c3655ded53ab0525449c3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f86d03e30e2776a8dae4cf56032c45d0022ca01d
+ms.sourcegitcommit: d0504e2337bb671e78ec6dd1c7b05d89e7adf6a7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62400844"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74683304"
 ---
 # <a name="compiler-warning-level-4-c4337"></a>Derleyici Uyarısı (düzey 4) C4337
 
-'typelib2' çapraz başvurulan tür kitaplığında 'typelib1' otomatik olarak içeri aktarılıyor
+' typelib2 ' içindeki ' typelib1 ' çapraz referanslı tür kitaplığı otomatik olarak içeri aktarıldı
 
-Auto_search özniteliği [#import directive](../../preprocessor/hash-import-directive-cpp.md) örtük olarak içeri aktarılacak tür kitaplığını neden oldu.
+[#İmport yönergesinin](../../preprocessor/hash-import-directive-cpp.md) auto_search özniteliği, bir tür kitaplığının örtük olarak içeri aktarılmasına neden oldu.
 
-Verilen iki tür kitaplıkları (midl.exe'yi ile derlenmiş) aşağıdaki iki dosyalarından oluşturulan diskte:
+Aşağıdaki iki dosyadan oluşturulan diskte belirtilen iki tür kitaplığı (MIDL. exe ile derlenen):
 
 ```
 // C4337a.idl
@@ -38,7 +38,7 @@ library C4337aLib
 };
 ```
 
-ve ardından ikinci .idl dosyası
+ikinci. IDL dosyası,
 
 ```
 // C4337b.idl
@@ -58,9 +58,9 @@ library C4337bLib
 };
 ```
 
-Aşağıdaki örnek, C4337 oluşturur:
+Aşağıdaki örnek C4337 oluşturur:
 
-```
+```cpp
 // C4337.cpp
 // compile with: /W4 /LD
 #import "c4337b.tlb" auto_search   // C4337

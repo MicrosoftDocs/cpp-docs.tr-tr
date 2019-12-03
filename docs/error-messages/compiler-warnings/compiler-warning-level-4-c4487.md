@@ -6,26 +6,26 @@ f1_keywords:
 helpviewer_keywords:
 - C4487
 ms.assetid: 796144cf-cd3c-4edc-b6a4-96192b7eb4f0
-ms.openlocfilehash: 231482547856fc07d43ecfb859b31c2ece49fc5e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1583da44368225eabd8181be970f69f6582111e1
+ms.sourcegitcommit: d0504e2337bb671e78ec6dd1c7b05d89e7adf6a7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62207010"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74682976"
 ---
 # <a name="compiler-warning-level-4-c4487"></a>Derleyici Uyarısı (düzey 4) C4487
 
-'derived_class_function': 'base_class_function' devralınan sanal olmayan yöntemiyle eşleşiyor ancak açıkça 'new' işaretli değil
+' derived_class_function ': devralınan ' base_class_function ' sanal olmayan yöntemiyle eşleşiyor ancak açıkça ' New ' olarak işaretlenmemiş
 
-Türetilen bir sınıfta bir işleve, sanal olmayan temel sınıf işlevi aynı imzaya sahiptir. C4487 türetilmiş sınıf işlev temel sınıf işlevini geçersiz kılmaz anımsatır. Türetilmiş sınıf işlevi açıkça işaretleyin `new` bu uyarıyı çözmek için.
+Türetilmiş sınıftaki bir işlev, sanal olmayan bir taban sınıf işleviyle aynı imzaya sahip. C4487, türetilmiş sınıf işlevinin temel sınıf işlevini geçersiz kılmayacağını hatırlatır. Bu uyarıyı çözmek için türetilmiş sınıf işlevini açıkça `new` olarak işaretleyin.
 
-Daha fazla bilgi için [yeni (vtable'da yeni yuva)](../../extensions/new-new-slot-in-vtable-cpp-component-extensions.md).
+Daha fazla bilgi için bkz. [Yeni (vtable 'da yeni yuva)](../../extensions/new-new-slot-in-vtable-cpp-component-extensions.md).
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C4487 oluşturur.
+Aşağıdaki örnek C4487 oluşturur.
 
-```
+```cpp
 // C4487.cpp
 // compile with: /W4 /clr
 using namespace System;

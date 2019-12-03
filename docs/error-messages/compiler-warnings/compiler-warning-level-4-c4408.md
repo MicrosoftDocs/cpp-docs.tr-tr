@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C4408
 ms.assetid: 8488a186-ed1d-425c-aaeb-c72472c1da68
-ms.openlocfilehash: 3c7613d42bbd0ac7fa58a0b95ba68efb60d9f50a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 90ca85384b28f1cf2cdef5e4083813686b96c524
+ms.sourcegitcommit: d0504e2337bb671e78ec6dd1c7b05d89e7adf6a7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62391575"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74682964"
 ---
 # <a name="compiler-warning-level-4-c4408"></a>Derleyici Uyarısı (düzey 4) C4408
 
-anonymousstruct veya birleşim herhangi bir veri üyesi bildirmiyor
+anonymousstruct veya Union herhangi bir veri üyesi bildirmiyor
 
-Bir anonim yapıda veya birleşimde en az bir veri üyesi olmalıdır.
+Anonim bir struct veya Union 'un en az bir veri üyesi olması gerekir.
 
-Aşağıdaki örnek, C4408 oluşturur:
+Aşağıdaki örnek C4408 oluşturur:
 
-```
+```cpp
 // C4408.cpp
 // compile with: /W4 /LD
 static union

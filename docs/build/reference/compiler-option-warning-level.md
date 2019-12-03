@@ -1,5 +1,5 @@
 ---
-title: /w, /W0, / W1, / w2, / W3, / W4, / W1, / w2, / W3, / W4, /Wall, WD, / we Wo, wv, /WX (uyarı düzeyi)
+title: /w,/W0,/W1,/W2,/W3,/W4,/W1,/W2,/W3,/W4,/duvar,/WD,/we,/Wo,/WV,/WX (uyarı düzeyi)
 ms.date: 01/31/2018
 f1_keywords:
 - VC.Project.VCCLCompilerTool.DisableSpecificWarnings
@@ -57,88 +57,89 @@ helpviewer_keywords:
 - -w compiler option [C++]
 - /W2 compiler option [C++]
 - /Wv compiler option [C++]
-ms.openlocfilehash: 7b5c19c95cff3058bb3dcc6640f8ab07cf01edd6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7d2fd21c476ef4346aa86e682047ea644183b2f3
+ms.sourcegitcommit: d0504e2337bb671e78ec6dd1c7b05d89e7adf6a7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62294245"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74683052"
 ---
-# <a name="w-w0-w1-w2-w3-w4-w1-w2-w3-w4-wall-wd-we-wo-wv-wx-warning-level"></a>/w, /W0, / W1, / w2, / W3, / W4, / W1, / w2, / W3, / W4, /Wall, WD, / we Wo, wv, /WX (uyarı düzeyi)
+# <a name="w-w0-w1-w2-w3-w4-w1-w2-w3-w4-wall-wd-we-wo-wv-wx-warning-level"></a>/w,/W0,/W1,/W2,/W3,/W4,/W1,/W2,/W3,/W4,/duvar,/WD,/we,/Wo,/WV,/WX (uyarı düzeyi)
 
-Derleyici belirli bir derleme için uyarıları nasıl oluşturur belirtir.
+Derleyicinin belirli bir derleme için nasıl uyarı üretmediğini belirtir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **/w**
->  **/W0**
->  **/W1**
->  **/w2**
->  **/W3** 
->  **/W4**
->  **/wall**
->  **/Wv**\[**:**_sürümü _] **Wx**
->  **/W1**_uyarı_
->  **/w2** _ Uyarı_
->  **/W3**_uyarı_
->  **/W4**_uyarı_ 
->  **/wd**_uyarı_
->  **/we**_uyarı_ 
->  **/wo**_Uyarısı_
+> **/w**\
+> **/W0**\
+> **/W1**\
+> **/W2**\
+> **/W3**\
+> **/W4**\
+> **/Duvar**\
+> **/WV**\[ **:** _Sürüm_] \
+> **/WX**\
+> **/W1**_Uyarı_\
+> **/W2**_Uyarı_\
+> **/w3**_Uyarı_\
+> **/W4**_Uyarı_\
+> **/WD**_uyarısı_\
+> **/we**_uyarısı_\
+> **/Wo**_uyarısı_
 
 ## <a name="remarks"></a>Açıklamalar
 
-Hangi Derleyici uyarılarını görüntüleme ve tüm derleme uyarısı davranışını uyarı seçeneklerini belirtin.
+Uyarı seçenekleri hangi derleyici uyarılarının gösterileceğini ve tüm derleme için uyarı davranışını belirtir.
 
-Uyarı seçeneklerini ve ilişkili bağımsız değişkenler aşağıdaki tabloda açıklanmıştır:
+Uyarı seçenekleri ve ilgili bağımsız değişkenler aşağıdaki tabloda açıklanmıştır:
 
 |Seçenek|Açıklama|
 ------------|-----------------|
-|**/w**|Tüm derleyici uyarıları bastırır.|
-|**/ W0**<br /><br /> **/ W1**<br /><br /> **/ W2**<br /><br /> **/ W3**<br /><br /> **/ W4**|Derleyici tarafından oluşturulan bir uyarı düzeyini belirtir. Geçerli uyarı düzeylerini aralığı 0-4:<br />**/ W0** tüm uyarıları bastırır. Bunun eşdeğeri olan **/w**.<br />**/ W1** düzey 1 (Önemli) uyarıları görüntüler. **/ W1** komut satırı derleyicisini varsayılan ayardır.<br />**/ W2** düzey 1 ve Düzey 2 (Önemli) uyarıları görüntüler.<br />**/ W3** görüntüler düzey 1 Düzey 2 ve 3 (üretim kalitesinde) uyarıları düzeyi. **/ W3** IDE içindeki varsayılan ayardır.<br />**/ W4** düzey 1 Düzey 2 ve 3 uyarılar düzey görüntüler ve tüm varsayılan olarak kapalı değil 4 (bilgilendirme) uyarıları düzeyi. Lint benzeri uyarılar sağlamak için bu seçeneği kullanmanızı öneririz. Yeni bir proje için en iyi yöntem olabilir **/W4** tüm derlemelerde; Bunun en olası bulunur zor kod kusurlarını olmanızı sağlar.|
-|**/ Wall**|Tarafından görüntülenen tüm uyarıları görüntüler **/W4** ve diğer tüm uyarılar, **/W4** içermemesi — Örneğin, varsayılan olarak kapalı olan uyarılar. Daha fazla bilgi için [derleyici uyarıları emin olan tarafından varsayılan olarak kapalıdır](../../preprocessor/compiler-warnings-that-are-off-by-default.md).|
-|**/Wv**\[**:**_sürüm_]|Yalnızca derleyici sürümü xx.yy.zzzz görüntüler *sürüm* ve önceki sürümleri. Derleyici daha yeni bir sürümüne geçiş yaptığınızda, kod içinde yeni uyarıları bastırmak için ve var olan yapı işlemi bunları düzeltilmesi üzerinde çalışırken korumak için bu seçeneği kullanabilirsiniz. İsteğe bağlı parametre *sürüm* alır *nn*[. *aa*[. *bbbbb*]] burada *nn* ana sürüm numarası *mm* isteğe bağlı alt sürüm numarası ve *bbbbb* isteğe bağlı derleme sayısı Derleyici. Örneğin, */Wv:17* Visual Studio 2012 (diğer bir deyişle, herhangi bir ana sürüm numarası 17 derleyici sürümü) veya önceki xx.yy.zzzz görüntüler, ancak Visual Studio 2013 (ana sürüm uyarıları bastırmak için 18) ve üzeri. Varsayılan olarak, **/Wv** geçerli derleyici sürüm numarasını ve uyarı özelliği kullanır. Hangi uyarıların derleyici sürümü tarafından gizlenir daha fazla bilgi için bkz [derleyici sürümüne göre derleyici uyarıları](../../error-messages/compiler-warnings/compiler-warnings-by-compiler-version.md).|
-|**/WX**|Tüm Derleyici uyarılarını hata olarak değerlendirir. Yeni bir proje için en iyi yöntem olabilir **wx** tüm derlemelerde; tüm uyarıların çözümlenmesi en az sayıda olası bulunur zor kod kusurlarını sağlar.<br /><br /> Bağlayıcı ayrıca sahip bir **wx** seçeneği. Daha fazla bilgi için [/WX (Bağlayıcı uyarıları hata olarak değerlendir)](wx-treat-linker-warnings-as-errors.md).|
-|**/ W1**_nnnn_<br /><br /> **/ w2**_nnnn_<br /><br /> **/ W3**_nnnn_<br /><br /> **/ W4**_nnnn_|Uyarı düzeyi tarafından belirtilen uyarı numarasını ayarlar _nnnn_. Bu, belirli bir uyarı düzeyi ayarlandığında bu uyarı için derleyici davranışını değiştirmesini sağlar. Varsayılan Visual Studio tarafından sağlanan değerleri yerine uyarılar için kendi kodlama standartları zorlamak için bu seçenekleri diğer uyarı seçenekleri ile birlikte kullanabilirsiniz.<br /><br /> Örneğin, **/w34326** C4326 yerine düzey 1 Düzey 3 uyarı oluşturulmasına neden olur. Her ikisini de kullanarak derleme yaparsanız **/w34326** seçeneği ve **/w2** C4326 oluşturulmuyor uyarı seçeneği.|
-|**/WD**_nnnn_|Tarafından belirtilen derleyici uyarı bastırılır _nnnn_.<br /><br /> Örneğin, **/wd4326** derleyici C4326 uyarı bastırır.|
-|**/We**_nnnn_|Tarafından belirtilen derleyici uyarı işler _nnnn_ hata olarak.<br /><br /> Örneğin, **/we4326** uyarı numarası C4326 derleyici tarafından hata olarak kabul edilmesine neden olur.|
-|**/Wo**_nnnn_|Raporlar tarafından belirtilen diğer bir deyişle Derleyici Uyarı _nnnn_ yalnızca bir kez.<br /><br /> Örneğin, **/wo4326** nedenler, yalnızca bir kez bildirilecek C4326 uyarı ilk kez, karşılaşıldığında derleyici tarafından.|
+|**aralıkları**|Tüm derleyici uyarılarını bastırır.|
+|**/W0**<br /><br /> **/W1**<br /><br /> **/W2**<br /><br /> **/W3**<br /><br /> **/W4**|Derleyici tarafından üretilecek uyarı düzeyini belirtir. Geçerli uyarı düzeyleri 0 ile 4 arasındadır:<br />**/W0** tüm uyarıları bastırır. Bu, **/w**ile eşdeğerdir.<br />**/W1** düzey 1 (ciddi) uyarıları görüntüler. **/W1** , komut satırı derleyicisinde varsayılan ayardır.<br />**/W2** düzey 1 ve düzey 2 (önemli) uyarılarını görüntüler.<br />**/W3** düzey 1, düzey 2 ve düzey 3 (üretim kalitesi) uyarılarını görüntüler. **/W3** , IDE 'deki varsayılan ayardır.<br />**/W4** düzey 1, düzey 2 ve düzey 3 uyarılarını ve varsayılan olarak kapalı olmayan tüm düzey 4 (bilgilendirici) uyarılarını görüntüler. Bu seçeneği, Lint benzeri uyarılar sağlamak için kullanmanızı öneririz. Yeni bir proje için tüm derlemelerde **/W4** kullanılması en iyi yöntem olabilir; Bu, mümkün olan en az sayıda kod kusurlarını güvence altına alacak.|
+|**/Wall**|**/W4** tarafından görüntülenen tüm uyarıları ve **/W4 ' ün** içermediği tüm diğer uyarıları görüntüler; Örneğin, varsayılan olarak kapalı olan uyarılar. Daha fazla bilgi için bkz. [Varsayılan olarak kapalı olan Derleyici uyarıları](../../preprocessor/compiler-warnings-that-are-off-by-default.md).|
+|**/WV**\[ **:** _Sürüm_]|Yalnızca derleyici sürümü *sürümü* ve önceki sürümlerde tanıtılan uyarıları görüntüler. Bu seçeneği, derleyicinin daha yeni bir sürümüne geçiş yaptığınızda ve var olan derleme sürecinizi düzelttikten sonra, koddaki yeni uyarıları bastırmak için kullanabilirsiniz. İsteğe bağlı parametre *sürümü* *nn*[biçimini alır. *dd*[. *bbbbb*]]/ *nn* ana sürüm numarası, *mm* ise isteğe bağlı alt sürüm numarasıdır ve *bbbbb* , derleyicinin isteğe bağlı yapı numarasıdır. Örneğin, Visual Studio 2012 (yani, ana sürüm numarası 17 olan herhangi bir derleyicinin sürümü) veya önceki sürümlerde tanıtılan uyarıları göstermek için */WV: 17* kullanın, ancak Visual Studio 2013 (ana sürüm 18) ve sonraki sürümlerde bulunan uyarıları gizleyin. Varsayılan olarak, **/WV** geçerli derleyici sürüm numarasını kullanır ve hiçbir uyarı gösterilmez. Derleyici sürümü tarafından hangi uyarıların bastırıldıkları hakkında bilgi için bkz. derleyici [sürümüne göre derleyici uyarıları](../../error-messages/compiler-warnings/compiler-warnings-by-compiler-version.md).|
+|**/WX**|Tüm derleyici uyarılarını hata olarak değerlendirir. Yeni bir proje için tüm derlemelerde **/WX** kullanılması en iyi yöntem olabilir; Tüm uyarıların çözümlenmesi, en az olası bulma kod kusurlarını sağlar.<br /><br /> Bağlayıcının bir **/WX** seçeneği de vardır. Daha fazla bilgi için bkz. [/WX (bağlayıcı uyarılarını hata olarak işle)](wx-treat-linker-warnings-as-errors.md).|
+|**/W1**_nnnn_<br /><br /> **/W2**_nnnn_<br /><br /> **/w3**_nnnn_<br /><br /> **/W4**_nnnn_|_Nnnn_tarafından belirtilen uyarı numarası için uyarı düzeyini ayarlar. Bu, belirli bir uyarı düzeyi ayarlandığında söz konusu uyarının derleyici davranışını değiştirmenize olanak sağlar. Bu seçenekleri diğer uyarı seçenekleriyle birlikte kullanarak, Visual Studio tarafından sağlananlara değil, uyarılar için kendi kodlama standartlarınızı zorunlu kılabilirsiniz.<br /><br /> Örneğin, **/w34326** , C4326 'in düzey 1 yerine bir düzey 3 uyarısı olarak oluşturulmasına neden olur. Hem **/w34326** seçeneğini hem de **/W2** seçeneğini kullanarak derlerseniz, uyarı C4326 oluşturulmaz.|
+|**/WD**_nnnn_|_Nnnn_tarafından belirtilen derleyici uyarısını bastırır.<br /><br /> Örneğin, **/WD4326** derleyici uyarısı C4326 ' ı bastırır.|
+|**/we**_nnnn_|_Nnnn_ tarafından belirtilen derleyici uyarısını bir hata olarak değerlendirir.<br /><br /> Örneğin, **/we4326** , C4326 uyarı numarası olarak derleyicinin hata olarak işlenmesine neden olur.|
+|**/Wo**_nnnn_|Yalnızca bir kez _nnnn_ tarafından belirtilen derleyici uyarısını raporlar.<br /><br /> Örneğin, **/wo4326** , uyarı C4326 'in yalnızca bir kez bildirilmesine neden olur. Bu, derleyici tarafından ilk kez karşılaşacaktır.|
 
-Önceden derlenmiş üstbilgi kullanarak oluşturduğunuzda uyarı seçeneklerden herhangi birini kullanırsanız, [/Yc](yc-create-precompiled-header-file.md) seçeneğini kullanarak önceden derlenmiş üstbilgi kullanımı [/Yu](yu-use-precompiled-header-file.md) seçeneği geçerli olması bu aynı uyarı seçeneklerini neden olur yeniden. Komut satırında başka bir uyarı seçeneğini kullanarak önceden derlenmiş üst bilgisinde ayarlanmış uyarı seçeneklerini geçersiz kılabilirsiniz.
+[/Yıc](yc-create-precompiled-header-file.md) seçeneğini kullanarak önceden derlenmiş bir üst bilgi oluşturduğunuzda herhangi bir uyarı seçeneğini kullanırsanız, [/yu](yu-use-precompiled-header-file.md) seçeneğini kullanarak önceden derlenmiş üstbilginin herhangi bir kullanımı, aynı uyarı seçeneklerinin yeniden etkin olmasına neden olur. Ön derlenmiş üst bilgide ayarlanan uyarı seçeneklerini, komut satırında başka bir uyarı seçeneği kullanarak geçersiz kılabilirsiniz.
 
-Kullanabileceğiniz bir [#pragma Uyarısı](../../preprocessor/warning.md) diğer bir deyişle uyarı düzeyini denetlemek için derleme zamanında belirli kaynak dosyalarında bildirdi.
+Belirli kaynak dosyalardaki derleme zamanında bildirilen uyarı düzeyini denetlemek için [#pragma uyarı](../../preprocessor/warning.md) yönergesini kullanabilirsiniz.
 
-Kaynak kodunda uyarı pragma yönergeleri tarafından etkilenmemesini **/w** seçeneği.
+Kaynak kodundaki Uyarı pragma yönergeleri **/w** seçeneğinden etkilenmez.
 
-[Hataları belgelerinizi oluşturma](../../error-messages/compiler-errors-1/c-cpp-build-errors.md) uyarılar ve uyarı düzeylerini açıklar ve istediğiniz gibi neden belirli deyimleri derleme değil gösterir.
+[Derleme hataları belgeleri](../../error-messages/compiler-errors-1/c-cpp-build-errors.md) , uyarıları ve uyarı düzeylerini açıklar ve bazı deyimleriniz istediğiniz gibi derlenmeyebilir.
 
-### <a name="to-set-the-compiler-options-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamında derleyici seçeneklerini ayarlama
+### <a name="to-set-the-compiler-options-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki derleyici seçeneklerini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual C++ Studio 'da derleyici ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Ayarlanacak **/W0**, **/W1**, **/w2**, **/W3**, **/W4**, **/Wall**, **/Wv**, **wx** veya **/WX-** seçenekleri, select **yapılandırma özellikleri** > **C / C++**   >  **Genel** özellik sayfası.
+1. **/W0**, **/W1**, **/W2**, **/w3**, **/W4**, **/duvar**, **/WV**, **/WX** veya **/WX-** Options seçeneklerini ayarlamak için **yapılandırma özellikleri** > **C/C++**  > **genel** Özellik sayfası ' nı seçin.
 
-   - Ayarlanacak **/W0**, **/W1**, **/w2**, **/W3**, **/W4**, veya **/Wall** Seçenekleri Değiştir **uyarı düzeyi** özelliği.
+   - **/W0**, **/W1**, **/W2**, **/w3**, **/W4**veya **/duvar** seçeneklerini ayarlamak için, **Uyarı düzeyi** özelliğini değiştirin.
 
-   - Ayarlanacak **wx** veya **/WX-** seçenekleri değiştirme **uyarıları hata olarak değerlendir** özelliği.
+   - **/WX** veya **/WX-** Options ' ı ayarlamak Için **uyarıları hata olarak değerlendir** özelliğini değiştirin.
 
-   - Sürüm için ayarlanacak **/Wv** seçeneğinde, derleme sürüm numarası girin **uyarı sürümü** özelliği.
+   - **/WV** seçeneğinin sürümünü ayarlamak Için, **Uyarı sürümü** özelliğinde derleyici sürüm numarasını girin.
 
-1. Ayarlanacak **/wd** veya **/we** seçenekleri, select **yapılandırma özellikleri** > **C/C++**  >   **Gelişmiş** özellik sayfası.
+1. **/WD** veya **/we** seçeneklerini ayarlamak için **yapılandırma özellikleri** > **C/C++**  > **Gelişmiş** Özellik sayfası ' nı seçin.
 
-   - Ayarlanacak **/wd** seçeneği için **belirli uyarıları devre dışı** özellik açılan menü denetimi ve ardından **Düzenle**. Düzenleme kutusuna **belirli uyarıları devre dışı** iletişim kutusunda, uyarı numarasını girin. Birden fazla uyarı girmek için değerleri noktalı virgül kullanarak ayırın (**;**). Örneğin, C4001 hem C4010 devre dışı bırakmak için girin **4001; 4010**. Seçin **Tamam** yaptığınız değişiklikleri kaydetmek ve geri dönmek için **özellik sayfaları** iletişim.
+   - **/WD** seçeneğini ayarlamak Için, **belirli uyarıları devre dışı bırak** Özellik açılan denetimini seçin ve ardından **Düzenle**' yi seçin. **Belirli uyarıları devre dışı bırak** iletişim kutusundaki Düzenle kutusunda uyarı numarasını girin. Birden fazla uyarı girmek için değerleri noktalı virgül ( **;** ) kullanarak ayırın. Örneğin, hem C4001 hem de C4010 'yi devre dışı bırakmak için, **4001; 4010**girin. Değişikliklerinizi kaydetmek ve **Özellik sayfaları** iletişim kutusuna dönmek için **Tamam** ' ı seçin.
 
-   - Ayarlanacak **/we** seçeneğini seçin **kabul belirli uyarıları olarak hataları** özellik açılan menü denetimi ve ardından **Düzenle**. Düzenleme kutusuna **kabul belirli uyarıları olarak hataları** iletişim kutusunda, uyarı numarasını girin. Birden fazla uyarı girmek için değerleri noktalı virgül kullanarak ayırın (**;**). Örneğin, C4001 hem C4010 de hata olarak değerlendirilecek girin **4001; 4010**. Seçin **Tamam** yaptığınız değişiklikleri kaydetmek ve geri dönmek için **özellik sayfaları** iletişim.
+   - **/We** seçeneğini ayarlamak Için, **belirli uyarıları hata olarak işle** özelliği açılan denetim ' i seçin ve ardından **Düzenle**' yi seçin. **Belirli uyarıları hata olarak işle** iletişim kutusundaki Düzenle kutusunda, uyarı numarasını girin. Birden fazla uyarı girmek için değerleri noktalı virgül ( **;** ) kullanarak ayırın. Örneğin, hem C4001 hem de C4010 hata olarak değerlendirmek için, **4001; 4010**girin. Değişikliklerinizi kaydetmek ve **Özellik sayfaları** iletişim kutusuna dönmek için **Tamam** ' ı seçin.
 
-1. Ayarlanacak **/wo** seçeneği için **yapılandırma özellikleri** > **C/C++** > **komut satırı** özellik sayfası. Derleyici seçeneğini girin **ek seçenekler** kutusu.
+1. **/Wo** seçeneğini ayarlamak için **yapılandırma özellikleri** > **C++ C/**  > **komut satırı** Özellik sayfası ' nı seçin. **Ek seçenekler** kutusunda derleyici seçeneğini girin.
 
-1. Seçin **Tamam** yaptığınız değişiklikleri kaydedin.
+1. Değişikliklerinizi kaydetmek için **Tamam ' ı** seçin.
 
-### <a name="to-set-the-compiler-option-programmatically"></a>Derleyici seçeneğini program üzerinden ayarlamak için
+### <a name="to-set-the-compiler-option-programmatically"></a>Derleyici seçeneğini programlı olarak ayarlamak için
 
-- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.WarningLevel%2A>, <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.WarnAsError%2A>, <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.DisableSpecificWarnings%2A>, ve <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
+- Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.WarningLevel%2A>, <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.WarnAsError%2A>, <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.DisableSpecificWarnings%2A>ve <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MSVC Derleyicisi Seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici seçenekleri](compiler-options.md)\
 [MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)

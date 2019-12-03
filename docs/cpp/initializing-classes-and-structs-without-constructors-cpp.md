@@ -3,12 +3,12 @@ title: Sınıflar, yapılar ve birleşimler için küme ayracı başlatma
 description: Herhangi bir C++ sınıf, yapı veya birleşim ile ayraç başlatma kullanın
 ms.date: 11/19/2019
 ms.assetid: 3e55c3d6-1c6b-4084-b9e5-221b151402f4
-ms.openlocfilehash: 41ff38bc4bcc9ebca913b5e66b5ac2f395044222
-ms.sourcegitcommit: 654aecaeb5d3e3fe6bc926bafd6d5ace0d20a80e
+ms.openlocfilehash: c746c6e4c17e5a55475d70f6dc3d927088af579f
+ms.sourcegitcommit: d0504e2337bb671e78ec6dd1c7b05d89e7adf6a7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74246497"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74683002"
 ---
 # <a name="brace-initialization"></a>Küme ayracı başlatma
 
@@ -108,7 +108,7 @@ int main()
     class_d d3{ 4.5, "string", 'c' };
 
     class_d d4{ "string", 'c' }; // compiler error
-    class_d d5("string", 'c', 2.0 }; // compiler error
+    class_d d5{ "string", 'c', 2.0 }; // compiler error
 }
 ```
 

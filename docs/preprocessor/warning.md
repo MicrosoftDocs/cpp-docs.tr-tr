@@ -10,12 +10,12 @@ helpviewer_keywords:
 - pop warning pragma
 - warning pragma
 ms.assetid: 8e9a0dec-e223-4657-b21d-5417ebe29cc8
-ms.openlocfilehash: 9a79f0c4a9eed6b62e42f056f9d1994b44b57297
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: c6c9668f614f932b0a96f30ad3e0395e39ddc400
+ms.sourcegitcommit: d0504e2337bb671e78ec6dd1c7b05d89e7adf6a7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70216465"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74683340"
 ---
 # <a name="warning-pragma"></a>warning pragması
 
@@ -25,7 +25,7 @@ Derleyici uyarı iletilerinin davranışının seçmeli olarak değiştirilmesin
 
 > **#pragma Uyarısı (** \
 > &nbsp;&nbsp;&nbsp;&nbsp;*Uyarı belirleyicisi* **:** *Uyarı-sayı-liste*\
-> &nbsp;&nbsp;&nbsp;&nbsp;[ **;** *Uyarı belirleyicisi* **:** *Uyarı-sayı-liste* ...] **)** \
+> &nbsp;&nbsp;&nbsp;&nbsp;[ **;** *uyarı-tanımlayıcı* **:** *Uyarı-sayı-liste* ...] **)** \
 > **#pragma Uyarısı (gönderim** [ **,** *n* ] **)** \
 > **#pragma Uyarısı (pop)**
 
@@ -42,7 +42,7 @@ Aşağıdaki uyarı belirleyicisi parametreleri kullanılabilir.
 |*once*|Belirtilen iletileri yalnızca bir kez görüntüle.|
 |*Gizle*|Yığında pragma 'ın geçerli durumunu gönderir, sonraki satır için belirtilen uyarıyı devre dışı bırakır ve sonra, pragma durumunun sıfırlanması için uyarı yığınını açılır.|
 
-Aşağıdaki kod bildiriminde, bir `warning-number-list` parametrenin birden çok uyarı numarası içerebileceğini ve aynı pragma yönergesinde birden çok `warning-specifier` parametrenin belirtilebildiği gösterilmektedir.
+Aşağıdaki kod bildiriminde, bir `warning-number-list` parametresinin birden çok uyarı numarası içerebileceğini ve aynı pragma yönergesinde birden çok `warning-specifier` parametresi belirtilebildiği gösterilmektedir.
 
 ```cpp
 #pragma warning( disable : 4507 34; once : 4385; error : 164 )
@@ -63,7 +63,7 @@ Bu yönerge, aşağıdaki kod ile işlevsel olarak eşdeğerdir:
 
 Derleyici, 0 ile 999 arasında herhangi bir uyarı numarasına 4000 ekler.
 
-Kod oluşturma ile ilişkili olanlar olan 4700-4999 aralığındaki uyarı numaraları için, derleyici işlevin açık küme ayracı ile karşılaştığında etkin uyarının durumu işlevin geri kalanı için geçerli olacaktır. 4699 'den büyük bir uyarı numarasının durumunu değiştirmek için işlevindeki **Uyarı** pragma kullanımı, yalnızca işlevin sonundan sonra devreye girer. Aşağıdaki örnek, kod oluşturma uyarı iletisini devre dışı bırakmak ve sonra geri yüklemek için **Uyarı** pragmaların doğru yerleşimini gösterir.
+Kod oluşturma ile ilişkili olanlar olan 4700-4999 aralığındaki uyarı numaraları için, derleyici işlev tanımıyla karşılaştığında geçerli olan uyarının durumu işlevin geri kalanı için geçerli olacaktır. 4699 'den büyük bir uyarı numarasının durumunu değiştirmek için işlevindeki **Uyarı** pragma kullanımı, yalnızca işlevin sonundan sonra devreye girer. Aşağıdaki örnek, kod oluşturma uyarı iletisini devre dışı bırakmak ve sonra geri yüklemek için **Uyarı** pragmaların doğru yerleşimini gösterir.
 
 ```cpp
 // pragma_warning.cpp
@@ -91,9 +91,9 @@ Bir işlev gövdesinde, **Uyarı** pragması 'nın son ayarının tüm işlev i�
 
 `#pragma warning( pop )`
 
-Pragma `warning( push )` , her uyarı için geçerli uyarı durumunu depolar. Pragma `warning( push, n )` her uyarı için geçerli durumu depolar ve genel uyarı düzeyini *n*olarak ayarlar.
+Pragma `warning( push )` her uyarı için geçerli uyarı durumunu depolar. Pragma `warning( push, n )` her uyarı için geçerli durumu depolar ve genel uyarı düzeyini *n*olarak ayarlar.
 
-Pragma `warning( pop )` , yığın üzerine gönderilen son uyarı durumunu yükler. Uyarı durumunda *Push* ve *pop* arasında yaptığınız tüm değişiklikler geri alınır. Şu örneği göz önünde bulundurun:
+Pragma `warning( pop )`, yığın üzerine gönderilen son uyarı durumunu açılır. Uyarı durumunda *Push* ve *pop* arasında yaptığınız tüm değişiklikler geri alınır. Şu örneği göz önünde bulundurun:
 
 ```cpp
 #pragma warning( push )

@@ -6,28 +6,28 @@ f1_keywords:
 helpviewer_keywords:
 - C4366
 ms.assetid: 65d2942f-3741-42f4-adf2-4920d5a055ca
-ms.openlocfilehash: 11fcb0070359201de39ca5f33c83d000e02f0835
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 18045377210b6c020786ad2ec2e003d0e764e4b5
+ms.sourcegitcommit: d0504e2337bb671e78ec6dd1c7b05d89e7adf6a7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62391562"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74683270"
 ---
 # <a name="compiler-warning-level-4-c4366"></a>Derleyici Uyarısı (düzey 4) C4366
 
-Birli 'operator' işlecinin sonucu hizalanmamış olabilir
+Birli ' operator ' işlecinin sonucu hizalanmamış olabilir
 
-Bir yapı üyesinin hiç olmadığı kadar paketleme nedeniyle hizalanmamış olabilir, derleyicinin zaman üyenin adresi hizalanmış bir işaretçi atanır uyarır. Varsayılan olarak, tüm işaretçiler hizalanır.
+Bir yapı üyesi paketleme nedeniyle hiç hizalanmazsa, söz konusu üyenin adresi hizalanmış bir işaretçiye atandığında derleyici uyarır. Varsayılan olarak, tüm işaretçiler hizalanır.
 
-C4366 çözmek için yapıyı hizalamasını değiştirme ya da işaretçiyle bildirmek [__unaligned](../../cpp/unaligned.md) anahtar sözcüğü.
+C4366 çözümlemek için yapının hizalamasını değiştirin ya da işaretçiyi [__unaligned](../../cpp/unaligned.md) anahtar sözcüğüyle bildirin.
 
-Daha fazla bilgi için bkz: __unaligned ve [paketi](../../preprocessor/pack.md).
+Daha fazla bilgi için bkz. __unaligned ve [Pack](../../preprocessor/pack.md).
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C4366 oluşturur.
+Aşağıdaki örnek C4366 oluşturur.
 
-```
+```cpp
 // C4366.cpp
 // compile with: /W4 /c
 // processor: IPF x64
