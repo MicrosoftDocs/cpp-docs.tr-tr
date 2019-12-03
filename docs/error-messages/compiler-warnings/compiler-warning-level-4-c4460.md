@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C4460
 ms.assetid: c97ac1c9-598d-479e-bfff-c993690c4f3d
-ms.openlocfilehash: a42562a2c35bb56de4ce7147e199f4db2dddb684
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7f394af9dc0362035b9361981fdca077a3a915d5
+ms.sourcegitcommit: d0504e2337bb671e78ec6dd1c7b05d89e7adf6a7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62400818"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74682926"
 ---
 # <a name="compiler-warning-level-4-c4460"></a>Derleyici Uyarısı (düzey 4) C4460
 
-WinRT veya CLR işleci 'operator', başvuruyla parametre geçti. WinRT veya CLR 'operator 'işleci 'operator' C++ işleci farklı semantiğe sahip, değere göre geçirilecek kullanmak mı istiyordunuz?
+WinRT veya CLR işleci ' operator ', başvuruya göre geçti parametresi içeriyor. WinRT veya CLR işleci ' operator ', ' operator ' C++ işlecinden farklı semantiğe sahip, değere göre geçiş yapmak mı istiyordunuz?
 
-Kullanıcı tanımlı bir Windows çalışma zamanı veya CLR işleci başvuruya göre bir değer geçirildi. İşlev içinde değeri değiştirilirse, işlev çağrısının dönüş değeri işlevin atanacak sonra döndürülen değer unutmayın. Standart C++'da, işlev çağrısından sonra değişen değeri yansıtılır.
+Bir değeri Kullanıcı tanımlı Windows Çalışma Zamanı veya CLR işlecine başvuruya göre geçirtiniz. Değer, işlev içinde değiştirilirse, işlev çağrısından sonra döndürülen değere işlevin dönüş değeri atanır. Standart C++olarak, değiştirilen değer işlev çağrısından sonra yansıtılır.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C4460 oluşturur ve bu sorunun nasıl gösterir.
+Aşağıdaki örnek C4460 oluşturur ve nasıl düzeltileceğini gösterir.
 
-```
+```cpp
 // C4460.cpp
 // compile with: /W4 /clr
 #include <stdio.h>
