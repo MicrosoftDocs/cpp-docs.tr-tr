@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2258
+title: Derleyici hatası C2258
 ms.date: 11/04/2016
 f1_keywords:
 - C2258
 helpviewer_keywords:
 - C2258
 ms.assetid: 105eaa87-befb-4ecb-9a3f-e09e14d2f5bf
-ms.openlocfilehash: 99936026929bbaad321abfaa106df41b99c5d19d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 916ccf444bf82c9d6c0c9ad290afb65353a4f5b2
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62387058"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74758807"
 ---
-# <a name="compiler-error-c2258"></a>Derleyici Hatası C2258
+# <a name="compiler-error-c2258"></a>Derleyici hatası C2258
 
-Geçersiz saf sözdizimi olmalıdır '= 0'
+geçersiz saf sözdizimi; ' = 0 ' olmalıdır
 
-Saf sanal işlevi hatalı sözdizimi ile bildirilir.
+Saf sanal işlev yanlış sözdizimine göre bildiriliyor.
 
-Aşağıdaki örnek, C2258 oluşturur:
+Aşağıdaki örnek C2258 oluşturur:
 
-```
+```cpp
 // C2258.cpp
 // compile with: /c
 class A {

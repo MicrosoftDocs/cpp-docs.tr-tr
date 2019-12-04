@@ -1,31 +1,31 @@
 ---
-title: Derleyici Hatası C3804
+title: Derleyici hatası C3804
 ms.date: 11/04/2016
 f1_keywords:
 - C3804
 helpviewer_keywords:
 - C3804
 ms.assetid: 7c4cda28-ec96-4d04-937b-36dbd9944722
-ms.openlocfilehash: c3c00d1d07306a9e8dc67d3f75a5cb25d8f03aee
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3bccfc723a9d62b794fa657e399bd94549448490
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62400090"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74755297"
 ---
-# <a name="compiler-error-c3804"></a>Derleyici Hatası C3804
+# <a name="compiler-error-c3804"></a>Derleyici hatası C3804
 
-'property_accessor': erişimci metotlarını bir özelliğin tamamı statik veya statik.
+' property_accessor ': bir özellik için erişimci metotları tüm statik veya statik olmayan bir şekilde olmalıdır
 
-Önemsiz bir özelliğin tanımlarken, ya da statik erişimci işlevleri olabilir veya örneği, ikisini birden belirtmeyin.
+Önemsiz olmayan bir özellik tanımlarken, erişimci işlevleri statik veya örnek olabilir, ancak ikisi birden olamaz.
 
-Bkz: [özelliği](../../extensions/property-cpp-component-extensions.md) daha fazla bilgi için.
+Daha fazla bilgi için bkz. [özelliği](../../extensions/property-cpp-component-extensions.md) .
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C3804 oluşturur.
+Aşağıdaki örnek C3804 oluşturur.
 
-```
+```cpp
 // C3804.cpp
 // compile with: /c /clr
 ref struct A {

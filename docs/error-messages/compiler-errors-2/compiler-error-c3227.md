@@ -1,31 +1,31 @@
 ---
-title: Derleyici Hatası C3227
+title: Derleyici hatası C3227
 ms.date: 11/04/2016
 f1_keywords:
 - C3227
 helpviewer_keywords:
 - C3227
 ms.assetid: 7939c23a-96c8-43c2-89e9-f217d132d155
-ms.openlocfilehash: b175b14af55a9a462e040f064cc6e38d13fffb94
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 460000531dba77e42379199f276c9e2e02f43a9b
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62173996"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74743425"
 ---
-# <a name="compiler-error-c3227"></a>Derleyici Hatası C3227
+# <a name="compiler-error-c3227"></a>Derleyici hatası C3227
 
-'parameter': 'anahtar sözcüğü' genel tür ayırmak için kullanılamaz
+' Parameter ': ' anahtar sözcük ' bir genel tür ayırmak için kullanılamaz
 
-Bir tür örneği için uygun bir oluşturucu gereklidir. Ancak, derleyicinin uygun bir oluşturucu kullanılabilmesini sağlamak mümkün değildir.
+Bir tür oluşturmak için uygun bir Oluşturucu gereklidir. Ancak, derleyici uygun bir oluşturucunun kullanılabilir olduğundan emin olamaz.
 
-Bu hatayı gidermek için genel türler yerine şablonları kullanabilir veya türün bir örneğini oluşturmak için birkaç yöntemden birini kullanabilirsiniz.
+Bu hatayı çözmek için genel türler yerine şablonları kullanabilir veya bir tür örneği oluşturmak için çeşitli yöntemlerden birini kullanabilirsiniz.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C3227 oluşturur.
+Aşağıdaki örnek C3227 oluşturur.
 
-```
+```cpp
 // C3227.cpp
 // compile with: /clr /c
 generic<class T> interface class ICreate {

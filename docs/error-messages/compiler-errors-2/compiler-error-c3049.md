@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3049
+title: Derleyici hatası C3049
 ms.date: 11/04/2016
 f1_keywords:
 - C3049
 helpviewer_keywords:
 - C3049
 ms.assetid: 6ddf54f6-2c30-4d04-b637-98c6c922c533
-ms.openlocfilehash: ca8481eb06a7ec679b27a446bf738f2ad018f79d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 994940b8d8b8cf7905ec635aef95c7d8069592d2
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62187469"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74761305"
 ---
-# <a name="compiler-error-c3049"></a>Derleyici Hatası C3049
+# <a name="compiler-error-c3049"></a>Derleyici hatası C3049
 
-'değişken': OpenMP 'default' yan tümcesinde geçersiz bağımsız değişken
+' arg ': OpenMP ' default ' yan tümcesinde geçersiz bağımsız değişken
 
-Yanlış bir değer geçildi bir [varsayılan](../../parallel/openmp/reference/default-openmp.md) yan tümcesi.
+[Varsayılan](../../parallel/openmp/reference/default-openmp.md) bir yan tümcesine yanlış bir değer geçirildi.
 
-Aşağıdaki örnek, C3049 oluşturur:
+Aşağıdaki örnek C3049 oluşturur:
 
-```
+```cpp
 // C3049.cpp
 // compile with: /openmp /c
 int main() {

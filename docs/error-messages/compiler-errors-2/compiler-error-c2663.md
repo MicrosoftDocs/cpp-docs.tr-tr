@@ -1,33 +1,33 @@
 ---
-title: Derleyici Hatası C2663
+title: Derleyici hatası C2663
 ms.date: 11/04/2016
 f1_keywords:
 - C2663
 helpviewer_keywords:
 - C2663
 ms.assetid: 1e93e368-fd52-42bf-9908-9b6df467c8c9
-ms.openlocfilehash: d74326e49edd980896276e2c6e67526d8d769cb7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f07b63202d8f171dfb69f4bb294b392152b9290b
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62360300"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74756038"
 ---
-# <a name="compiler-error-c2663"></a>Derleyici Hatası C2663
+# <a name="compiler-error-c2663"></a>Derleyici hatası C2663
 
-'function': sayı aşırı yüklemelere sahip 'this' işaretçisi için hiçbir geçerli dönüşümler
+' function ': sayı aşırı yüklemelerinin ' this ' işaretçisi için geçerli dönüştürmesi yok
 
-Derleyici değil dönüştüremedi `this` herhangi bir üye işlevin aşırı yüklenmiş sürümleri.
+Derleyici, üye işlevinin aşırı yüklenmiş sürümlerinden hiçbirine `this` dönüştüremedi.
 
-Bu hata olmayan bir çağırarak kaynaklanabilir`const` üzerinde üye işlevi bir `const` nesne.  Olası çözümler:
+Bu hata, bir `const` nesnesi üzerinde`const` olmayan bir üye işlevi çağırarak oluşabilir.  Olası çözümler:
 
-1. Kaldırma `const` gelen nesne bildirimi.
+1. Nesne bildiriminden `const` kaldırın.
 
-1. Ekleme `const` bir üye işlev aşırı yüklemeleri.
+1. Üye işlev aşırı yüklemelerinin birine `const` ekleyin.
 
-Aşağıdaki örnek, C2663 oluşturur:
+Aşağıdaki örnek C2663 oluşturur:
 
-```
+```cpp
 // C2663.cpp
 struct C {
    void f() volatile {}
