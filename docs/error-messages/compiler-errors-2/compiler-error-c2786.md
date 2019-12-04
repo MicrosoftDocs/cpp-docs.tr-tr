@@ -1,31 +1,31 @@
 ---
-title: Derleyici Hatası C2786
+title: Derleyici hatası C2786
 ms.date: 11/04/2016
 f1_keywords:
 - C2786
 helpviewer_keywords:
 - C2786
 ms.assetid: 6676d8c0-86dd-4a39-bdda-b75a35f4d137
-ms.openlocfilehash: b03155ad1a209ae59327dd31d432f5623f380ac9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ba5d05e9c7cc702509144fb876a1301bfc8bf3d4
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62266003"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74739616"
 ---
-# <a name="compiler-error-c2786"></a>Derleyici Hatası C2786
+# <a name="compiler-error-c2786"></a>Derleyici hatası C2786
 
-'type': __uuidof için geçersiz işlenen
+' Type ': __uuidof için geçersiz işlenen
 
-[__Uuidof](../../cpp/uuidof-operator.md) işleci ile bağlı bir GUID veya böyle bir kullanıcı tanımlı türde bir nesne kullanıcı tanımlı bir tür alır.  Olası nedenler:
+[__Uuidof](../../cpp/uuidof-operator.md) işleci, bir GUID eklenmiş veya bir nesne Kullanıcı tanımlı türü olan Kullanıcı tanımlı bir tür alır.  Olası nedenler:
 
-1. Bağımsız değişken, kullanıcı tanımlı bir tür değil.
+1. Bağımsız değişken Kullanıcı tanımlı bir tür değil.
 
-1. `__uuidof` GUID bağımsız değişkende ayıklanamıyor.
+1. `__uuidof` bağımsız değişkenden GUID ayıklanamaz.
 
-Aşağıdaki örnek, C2786 oluşturur:
+Aşağıdaki örnek C2786 oluşturur:
 
-```
+```cpp
 // C2786.cpp
 struct __declspec(uuid("00000000-0000-0000-0000-000000000000")) A {};
 

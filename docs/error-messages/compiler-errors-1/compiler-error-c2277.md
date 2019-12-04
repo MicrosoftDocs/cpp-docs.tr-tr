@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2277
+title: Derleyici hatası C2277
 ms.date: 11/04/2016
 f1_keywords:
 - C2277
 helpviewer_keywords:
 - C2277
 ms.assetid: 15a83b07-8731-4524-810b-267f65a7844f
-ms.openlocfilehash: 5b20594df8a250a54a0fd5902e0453f7438cbbfd
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d1c39203d8733b3992ed73172bb58fd7431e110a
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62389033"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74759197"
 ---
-# <a name="compiler-error-c2277"></a>Derleyici Hatası C2277
+# <a name="compiler-error-c2277"></a>Derleyici hatası C2277
 
-'identifier': Bu üye işlevin adresi alınamaz
+' tanımlayıcı ': Bu üye işlevin adresi alınamaz
 
-Bir üye işlevin adresi alınamaz.
+Üye işlevin adresini alamaz.
 
-Aşağıdaki örnek, C2277 oluşturur:
+Aşağıdaki örnek C2277 oluşturur:
 
-```
+```cpp
 // C2277.cpp
 class A {
 public:

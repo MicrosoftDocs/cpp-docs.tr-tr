@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3920
+title: Derleyici hatası C3920
 ms.date: 11/04/2016
 f1_keywords:
 - C3920
 helpviewer_keywords:
 - C3920
 ms.assetid: 66e91f28-ed82-4ce2-bf22-c0c74905b1ed
-ms.openlocfilehash: d7163cf07a440a0afd1216b3e5cf665326ffb963
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 416752054f7397a058329e1ee4bdaef693dd0d28
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62386609"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74758469"
 ---
-# <a name="compiler-error-c3920"></a>Derleyici Hatası C3920
+# <a name="compiler-error-c3920"></a>Derleyici hatası C3920
 
-' operator'': bir sonek artırma/azaltma WinRT veya sonek arama CLR işleci tanımlanamaz WinRT veya CLR işleci, karşılık gelen önek çağıracaktır WinRT veya CLR işleci (op_Increment/op_Decrement), ancak sonek semantiğine sahip
+' operator ' ': sonek artırma/azaltma WinRT veya CLR işleci, sonek WinRT veya clr işlecini çağırmak için karşılık gelen ön ek WinRT veya CLR işleci (op_Increment/op_Decrement) veya sonek semantiğinin çağrılması
 
-Windows çalışma zamanı ve CLR sonek işlecini desteklemez ve kullanıcı tanımlı sonek işleçleri kullanılamaz.  Önek işleci tanımlayabilirsiniz ve önek işleci öncesi ve sonrası artırma işlemleri için kullanılır.
+Windows Çalışma Zamanı ve CLR sonek işlecini desteklemez ve Kullanıcı tanımlı sonek işleçlerine izin verilmez.  Bir önek işleci tanımlayabilir ve ön ve sonrası işlemleri için önek işleci kullanılacaktır.
 
-Aşağıdaki örnek, C3920 oluşturur ve bu sorunun nasıl gösterir:
+Aşağıdaki örnek C3920 oluşturur ve nasıl düzeltileceğini gösterir:
 
-```
+```cpp
 // C3920.cpp
 // compile with: /clr /LD
 public value struct V {

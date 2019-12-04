@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2640
+title: Derleyici hatası C2640
 ms.date: 11/04/2016
 f1_keywords:
 - C2640
 helpviewer_keywords:
 - C2640
 ms.assetid: e4d137ab-ed1d-457c-9eec-b70d97f1b0b4
-ms.openlocfilehash: d0dc2dd514186a94811b816c5f3f470a057186f9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 75acfa4d702b31052b7113117c71bf66ed9de149
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62182606"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74758248"
 ---
-# <a name="compiler-error-c2640"></a>Derleyici Hatası C2640
+# <a name="compiler-error-c2640"></a>Derleyici hatası C2640
 
-'identifier': __based değiştiricisi başvuru üzerinde geçersizdir
+' tanımlayıcı ': __based değiştiricisi başvuru üzerinde geçersizdir
 
-`__based` Değiştiricisi yalnızca işaretçiler üzerinde kullanılabilir.
+`__based` değiştiricisi yalnızca işaretçilerde kullanılabilir.
 
-Aşağıdaki örnek, C2640 oluşturur:
+Aşağıdaki örnek C2640 oluşturur:
 
-```
+```cpp
 // C2640.cpp
 void f(int i) {
     void *vp;

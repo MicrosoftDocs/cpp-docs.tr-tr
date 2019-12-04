@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3019
+title: Derleyici hatası C3019
 ms.date: 11/04/2016
 f1_keywords:
 - C3019
 helpviewer_keywords:
 - C3019
 ms.assetid: 31a6d9b6-d29f-4499-9ad8-48dd751e87c7
-ms.openlocfilehash: bba90917614cbc8facb182659c288f9823d8ab45
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 15b2dbf55b18c50020140eae25a71b18ceb10b10
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62386713"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74742138"
 ---
-# <a name="compiler-error-c3019"></a>Derleyici Hatası C3019
+# <a name="compiler-error-c3019"></a>Derleyici hatası C3019
 
-OpenMP 'for' deyimindeki artış hatalı biçimde
+OpenMP ' for ' deyimindeki artış hatalı biçimde
 
-Bir OpenMP artırma parçası `for` hem sol ve sağ tarafındaki dizin değişkeni döngü kullanması gerekir.
+Bir OpenMP `for` döngüsünün artırma bölümü, işlecin sol ve sağ tarafında Dizin değişkenini kullanmalıdır.
 
-Aşağıdaki örnek, C3019 oluşturur:
+Aşağıdaki örnek C3019 oluşturur:
 
-```
+```cpp
 // C3019.cpp
 // compile with: /openmp
 int main()

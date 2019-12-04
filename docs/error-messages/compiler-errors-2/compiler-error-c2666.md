@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2666
+title: Derleyici hatası C2666
 ms.date: 11/04/2016
 f1_keywords:
 - C2666
 helpviewer_keywords:
 - C2666
 ms.assetid: 78364d15-c6eb-439a-9088-e04a0176692b
-ms.openlocfilehash: 4a1d46f3b000b5054564b05ca2c3c94a9e7b6398
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ca779269d573e3e5d270fccad6afe6220083fa42
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62386882"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74755999"
 ---
-# <a name="compiler-error-c2666"></a>Derleyici Hatası C2666
+# <a name="compiler-error-c2666"></a>Derleyici hatası C2666
 
-'identifier': sayı aşırı benzer dönüşümleri var
+' tanımlayıcı ': numara aşırı yüklemeleri benzer Dönüştürmelere sahip
 
-Bir aşırı yüklenmiş işlev ya da operatör belirsiz.   Biçimsel parametre listeleri derleyici belirsizliği çözmek çok benzer olabilir.  Bu hatayı gidermek için açıkça bir veya daha fazla gerçek parametre dönüştürün.
+Aşırı yüklenmiş bir işlev veya işleç belirsiz.   Biçimsel parametre listeleri, derleyicinin belirsizlik çözümlemesi için çok benzer olabilir.  Bu hatayı çözmek için bir veya daha fazla gerçek parametreyi açıkça atayın.
 
-Aşağıdaki örnek, C2666 oluşturur:
+Aşağıdaki örnek C2666 oluşturur:
 
-```
+```cpp
 // C2666.cpp
 struct complex {
    complex(double);
@@ -35,19 +35,19 @@ int main() {
 }
 ```
 
-Bu hata, Visual Studio .NET 2003'te yapıldığı derleyici uyumluluğu iş sonucu olarak da oluşturulabilir:
+Bu hata, Visual Studio .NET 2003 için yapılan derleyici uygunluk işinin sonucu olarak da oluşturulabilir:
 
-- ikili işleçler ve işaretçi türleri için kullanıcı tanımlı dönüşümler
+- işaretçi türlerine ikili işleçler ve Kullanıcı tanımlı dönüştürmeler
 
-- Nitelik dönüştürme kimlik dönüştürme ile aynı değil
+- niteleme dönüştürmesi, kimlik dönüşümleriyle aynı değil
 
-İkili işleçler için \<, >, \<= ve > =, bir geçirilen parametre örtük olarak dönüştürüldü işlenen türü için parametre türü işlenenin türe dönüştürmek için bir kullanıcı tanımlı dönüştürme işleci tanımlıyorsa. Var. Şimdi belirsizlik için olası
+\<, >, \<= ve > = ikili işleçleri için, geçirilen bir parametre, parametrenin türü işlenenin türüne dönüştürmek üzere Kullanıcı tanımlı bir dönüştürme işleci tanımlıyorsa artık örtük olarak işlenen türüne dönüştürülür. Belirsizlik için artık olası bir sorun var.
 
-Visual Studio .NET 2003 ve Visual Studio .NET Visual C++ sürümü geçerli kod için işlev sözdizimi kullanılarak açıkça sınıfı işleci çağırın.
+Visual Studio .NET 2003 ve Visual Studio .NET sürümlerinde geçerli olan kod için C++, işlev sözdizimini kullanarak sınıf işlecini açıkça çağırın.
 
 ## <a name="example"></a>Örnek
 
-```
+```cpp
 // C2666b.cpp
 #include <string.h>
 #include <stdio.h>
@@ -106,7 +106,7 @@ int main()
 
 Aşağıdaki örnek C2666 oluşturur
 
-```
+```cpp
 // C2666c.cpp
 // compile with: /c
 

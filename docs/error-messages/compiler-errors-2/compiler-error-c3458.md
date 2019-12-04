@@ -1,29 +1,29 @@
 ---
-title: Derleyici Hatası C3458
+title: Derleyici hatası C3458
 ms.date: 11/04/2016
 f1_keywords:
 - C3458
 helpviewer_keywords:
 - C3458
 ms.assetid: 940202fd-8dcc-4042-9c96-3f9e9127d2f1
-ms.openlocfilehash: 07749677dbaa84de205adf38aadee6867a553852
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 98f3dc8ec880a2d134da4cc1438841744b8d9a94
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62222390"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74756662"
 ---
-# <a name="compiler-error-c3458"></a>Derleyici Hatası C3458
+# <a name="compiler-error-c3458"></a>Derleyici hatası C3458
 
-'öznitelik1': '' yapısı için' zaten belirtilen öznitelik2' özniteliği
+' Attribute1 ': ' attribute2 ' özniteliği ' yapı ' için zaten belirtildi
 
-Birbirini dışlayan iki öznitelik aynı yapı için belirtildi.
+Aynı yapı için karşılıklı dışlamalı iki öznitelik belirtildi.
 
 ## <a name="example"></a>Örnek
 
 Aşağıdaki örnek C3458 oluşturur
 
-```
+```cpp
 // C3458.cpp
 // compile with: /clr /c
 [System::Reflection::DefaultMember("Chars")]

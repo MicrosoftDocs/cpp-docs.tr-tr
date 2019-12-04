@@ -1,31 +1,31 @@
 ---
-title: Derleyici Hatası C2537
+title: Derleyici hatası C2537
 ms.date: 11/04/2016
 f1_keywords:
 - C2537
 helpviewer_keywords:
 - C2537
 ms.assetid: aee81d8e-300e-4a8b-b6c4-b3828398b34e
-ms.openlocfilehash: 437727b334087aef496dbb0a1f3f1c8cf2b45458
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 0dfe9f88fcdfda1325150d480670777a4d42d896
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64345592"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74758638"
 ---
-# <a name="compiler-error-c2537"></a>Derleyici Hatası C2537
+# <a name="compiler-error-c2537"></a>Derleyici hatası C2537
 
-'belirticisi': Geçersiz bağlama belirtimi
+' belirtici ': geçersiz bağlama belirtimi
 
 Olası nedenler:
 
-1. Bağlantı belirticisi desteklenmiyor. Yalnızca "C" bağlantı belirleyici desteklenir.
+1. Bağlantı belirticisi desteklenmiyor. Yalnızca "C" bağlantı belirleyicisi desteklenir.
 
-1. "C" bağlaması birden fazla işlev, aşırı yüklenmiş işlevler kümesi için belirtilir. Buna izin verilmez.
+1. "C" bağlantısı, aşırı yüklenmiş işlevler kümesinde birden fazla işlev için belirtildi. Buna izin verilmez.
 
-Aşağıdaki örnek, C2537 oluşturur:
+Aşağıdaki örnek C2537 oluşturur:
 
-```
+```cpp
 // C2537.cpp
 // compile with: /c
 extern "c" void func();   // C2537

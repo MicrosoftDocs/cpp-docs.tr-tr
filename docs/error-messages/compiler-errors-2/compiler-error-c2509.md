@@ -1,29 +1,29 @@
 ---
-title: Derleyici Hatası C2509
+title: Derleyici hatası C2509
 ms.date: 11/04/2016
 f1_keywords:
 - C2509
 helpviewer_keywords:
 - C2509
 ms.assetid: 339c1fcd-ec4a-456c-9f18-a9b24d9921af
-ms.openlocfilehash: 21ca3bdcb156aaa654ae3d5d0c1c467a97129dcc
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f0322c1d6f80f26b81ac0e93b944a2f3277026ce
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62165014"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74746818"
 ---
-# <a name="compiler-error-c2509"></a>Derleyici Hatası C2509
+# <a name="compiler-error-c2509"></a>Derleyici hatası C2509
 
-'identifier': üye işlev 'sınıfında' bildirilmedi
+' tanımlayıcı ': üye işlev ' class ' içinde bildirilmemiş
 
-İşlevi, belirtilen sınıfta bildirilmedi.
+İşlev belirtilen sınıfta bildirilmemiş.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C2509 oluşturur.
+Aşağıdaki örnek C2509 oluşturur.
 
-```
+```cpp
 // C2509.cpp
 // compile with: /c
 struct A {

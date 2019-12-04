@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C1310
 ms.assetid: ac48aa51-8023-42fe-b844-3f8bf228fbef
-ms.openlocfilehash: 1b0fca9a5e453fd354a4efc6960a54386795ccf6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bd8baeb3cfe1624eaf292b3a54fc15a46ea68e11
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62266434"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74746987"
 ---
 # <a name="fatal-error-c1310"></a>Önemli hata C1310
 
-Profil temelli en iyileştirmeler OpenMP ile kullanılamaz
+Profil temelli iyileştirmeler OpenMP ile kullanılamaz
 
-İle bağlamak mümkün olmayacaktır [/LTCG:PGI](../../build/reference/ltcg-link-time-code-generation.md) ile derlenmiş modüllerde [/GL](../../build/reference/gl-whole-program-optimization.md).
+[/GL](../../build/reference/gl-whole-program-optimization.md)ile derlenen [/LTCG: PGi](../../build/reference/ltcg-link-time-code-generation.md) any modülle bağlantı oluşturabileceksiniz.
 
-Aşağıdaki örnek, C1310 oluşturur:
+Aşağıdaki örnek C1310 oluşturur:
 
-```
+```cpp
 // C1310.cpp
 // compile with: /openmp /GL /link /LTCG:PGI
 // C1310 expected

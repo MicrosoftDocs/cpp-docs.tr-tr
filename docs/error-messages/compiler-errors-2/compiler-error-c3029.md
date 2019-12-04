@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3029
+title: Derleyici hatası C3029
 ms.date: 11/04/2016
 f1_keywords:
 - C3029
 helpviewer_keywords:
 - C3029
 ms.assetid: 655eb04d-504a-468d-8c0c-bda1e5f297b7
-ms.openlocfilehash: a003a0b8fcba3609c355ae467a11b4024a0529d5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 12c06757ed6ec7560f7dd647e241ddd08a0484d5
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62385816"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74736756"
 ---
-# <a name="compiler-error-c3029"></a>Derleyici Hatası C3029
+# <a name="compiler-error-c3029"></a>Derleyici hatası C3029
 
-'symbol': yalnızca bir kez veri paylaşımı içinde görünebilir yan tümceleri OpenMP yönergesi
+' symbol ': bir OpenMP yönergesinde veri paylaşımı yan tümcelerinde yalnızca bir kez yer alabilir
 
-Bir sembol, bir yönergesi bir veya daha fazla yan tümceleri içinde birden çok kez kullanıldı. Simgenin yönergesinde yalnızca bir kez kullanılabilir.
+Bir yönergede bir veya daha fazla yan tümce içinde bir sembol birden çok kez kullanıldı. Sembol, yönergede yalnızca bir kez kullanılabilir.
 
-Aşağıdaki örnek, C3029 oluşturur:
+Aşağıdaki örnek C3029 oluşturur:
 
-```
+```cpp
 // C3029.cpp
 // compile with: /openmp /link vcomps.lib
 #include "omp.h"

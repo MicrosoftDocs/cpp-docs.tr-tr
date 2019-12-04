@@ -1,29 +1,29 @@
 ---
-title: Derleyici Hatası C2978
+title: Derleyici hatası C2978
 ms.date: 11/04/2016
 f1_keywords:
 - C2978
 helpviewer_keywords:
 - C2978
 ms.assetid: 5e7bee82-e266-4ccd-ad2e-ee89606ec5bf
-ms.openlocfilehash: cf682bf14246754cca74a43dffc39761ff6125c1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3996e8e8d40ca24bf54fdf5bbbfde90f3d609c9d
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62395332"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74751566"
 ---
-# <a name="compiler-error-c2978"></a>Derleyici Hatası C2978
+# <a name="compiler-error-c2978"></a>Derleyici hatası C2978
 
-sözdizimi hatası: beklenen 'keyword1' veya 'keyword2'; türü 'keyword3' bulundu genel türler tür olmayan parametreler desteklenmez.
+sözdizimi hatası: ' keyword1 ' veya ' keyword2 ' bekleniyor; ' keyword3 ' türü bulundu; genel türlerde tür olmayan parametreler desteklenmez
 
-Genel sınıf yanlış bildirildi. Bkz: [genel türler](../../extensions/generics-cpp-component-extensions.md)daha fazla bilgi için.
+Genel bir sınıf yanlış olarak bildirildi. Daha fazla bilgi için bkz. [Genel türler](../../extensions/generics-cpp-component-extensions.md).
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C2978 oluşturur.
+Aşağıdaki örnek C2978 oluşturur.
 
-```
+```cpp
 // C2978.cpp
 // compile with: /clr /c
 generic <ref class T>   // C2978

@@ -1,35 +1,35 @@
 ---
-title: Derleyici Hatası C2561
+title: Derleyici hatası C2561
 ms.date: 11/04/2016
 f1_keywords:
 - C2561
 helpviewer_keywords:
 - C2561
 ms.assetid: 0abe955b-53a6-4a3c-8362-b1a8eb40e8d1
-ms.openlocfilehash: 8350c5baf129b88c178be280d2da7fe856c6cf57
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b4a14be9cd32c752e2ab889417494e80b935e31b
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62368428"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74755570"
 ---
-# <a name="compiler-error-c2561"></a>Derleyici Hatası C2561
+# <a name="compiler-error-c2561"></a>Derleyici hatası C2561
 
-'identifier': işlev bir değer döndürmelidir
+' tanımlayıcı ': işlev bir değer döndürmelidir
 
-İşlev değer döndürüyor olarak bildirildi, ancak işlev tanımı içermediğinden bir `return` deyimi.
+İşlev bir değer döndürüyor olarak bildirildi, ancak işlev tanımı `return` bir ifade içermiyor.
 
-Bu hata, bir hatalı işlev prototipi tarafından kaynaklanabilir:
+Bu hata yanlış bir işlev prototipten kaynaklanıyor olabilir:
 
-1. İşlev bir değer döndürmezse işlevi dönüş türüyle bildirin [void](../../cpp/void-cpp.md).
+1. İşlev bir değer döndürmezse, işlevi [void](../../cpp/void-cpp.md)dönüş türü ile bildirin.
 
-1. İşlevin tüm olası dalları prototip türünde bildirilen bir değer döndüren denetleyin.
+1. İşlevin tüm olası dallarında, prototipte belirtilen türün bir değerini döndürmediğine bakın.
 
-1. Dönüş değeri saklamak satır içi bütünleştirilmiş kod yordamlarını içeren C++ işlevlerini `AX` kaydı, bir return deyimi gerekebilir. Değeri kopyalamak `AX` geçici bir değişkene ve bu değişkeni işlevden döndürür.
+1. C++`AX` kaydındaki dönüş değerini depolayan satır içi derleme yordamlarını içeren işlevler, return ifadesine gerek duyar. `AX` değerini geçici bir değişkene kopyalayın ve bu değişkeni işlevden döndürün.
 
-Aşağıdaki örnek, C2561 oluşturur:
+Aşağıdaki örnek C2561 oluşturur:
 
-```
+```cpp
 // C2561.cpp
 int Test(int x) {
    if (x) {

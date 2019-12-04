@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3020
+title: Derleyici hatası C3020
 ms.date: 11/04/2016
 f1_keywords:
 - C3020
 helpviewer_keywords:
 - C3020
 ms.assetid: f625c7a3-afaa-4bd8-9c1b-51891b832f36
-ms.openlocfilehash: 0e2d8e70dcc9b23c56a321487cd4b933a1086387
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b066e813203f10b902e49a62af97a9a041874752
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62386687"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74742125"
 ---
-# <a name="compiler-error-c3020"></a>Derleyici Hatası C3020
+# <a name="compiler-error-c3020"></a>Derleyici hatası C3020
 
-'var': OpenMP 'for' döngüsünün dizin değişkeni döngü gövdesi içinde değiştirilemez
+' var ': OpenMP ' for ' döngüsünün dizin değişkeni döngü gövdesinde değiştirilemez
 
-Bir OpenMP `for` döngü gövdesi, dizin (döngü sayacı) değiştiremez `for` döngü.
+Bir OpenMP `for` döngüsü, `for` döngüsünün gövdesinde dizini (döngü sayacı) değiştiremeyebilir.
 
-Aşağıdaki örnek, C3020 oluşturur:
+Aşağıdaki örnek C3020 oluşturur:
 
-```
+```cpp
 // C3020.cpp
 // compile with: /openmp
 int main() {
@@ -38,11 +38,11 @@ int main() {
 }
 ```
 
-Bildirilen bir değişken [lastprivate](../../parallel/openmp/reference/lastprivate.md) paralel döngü içinde dizin olarak kullanılamaz.
+[Lastprivate](../../parallel/openmp/reference/lastprivate.md) ile belirtilen bir değişken, paralelleştirilmiş bir döngü içinde dizin olarak kullanılamaz.
 
-Aşağıdaki örnek bu lastprivate bir for döngüsü içinde en dıştaki idx_a yazma tetikleyecek çünkü C3020 için ikinci lastprivate sağlayacaktır. Bir for döngüsü (teknik olarak en son yineleme sonuna) dışında en dıştaki idx_a yazma bu lastprivate Tetikleyiciler olduğundan ilk lastprivate hata vermez. Aşağıdaki örnek, C3020 oluşturur.
+Bu lastprivate, en dıştaki for döngüsünde idx_a bir yazma tetikleyeceği için aşağıdaki örnek ikinci lastprivate için C3020 verecektir. Lastprivate, en dıştaki for döngüsünün dışına idx_a bir yazma tetiklediği için ilk lastprivate bir hata vermez (Teknik olarak son yinelemenin çok sonunda). Aşağıdaki örnek C3020 oluşturur.
 
-```
+```cpp
 // C3020b.cpp
 // compile with: /openmp /c
 float a[100][100];
@@ -59,9 +59,9 @@ void test(int first, int last)
 }
 ```
 
-Aşağıdaki örnek, olası çözümü göstermektedir:
+Aşağıdaki örnekte olası bir çözüm gösterilmektedir:
 
-```
+```cpp
 // C3020c.cpp
 // compile with: /openmp /c
 float a[100][100];

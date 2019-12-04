@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2351
+title: Derleyici hatası C2351
 ms.date: 11/04/2016
 f1_keywords:
 - C2351
 helpviewer_keywords:
 - C2351
 ms.assetid: 5439ccf6-66f6-4859-964c-c73f5eddfc1b
-ms.openlocfilehash: 2d93902ee0008a54da1b2ecf165e0a829362511f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6839d0c44efa10ba9507389fea35964fa748d646
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62389040"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74759977"
 ---
-# <a name="compiler-error-c2351"></a>Derleyici Hatası C2351
+# <a name="compiler-error-c2351"></a>Derleyici hatası C2351
 
-artık kullanılmayan C++ oluşturucusu başlatma sözdizimi
+kullanımdan C++ kaldırılmış Oluşturucu başlatma sözdizimi
 
-Bir oluşturucu için bir stil yeni başlatma listede yalnızca temel sınıf olsa bile her doğrudan temel sınıfı açıkça adlandırmalısınız.
+Bir oluşturucunun yeni stil başlatma listesinde, tek temel sınıf olsa bile, her bir doğrudan temel sınıfı açıkça yazmanız gerekir.
 
-Aşağıdaki örnek, C2351 oluşturur:
+Aşağıdaki örnek C2351 oluşturur:
 
-```
+```cpp
 // C2351.cpp
 // compile with: /c
 class B {

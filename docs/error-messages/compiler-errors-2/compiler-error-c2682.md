@@ -1,29 +1,29 @@
 ---
-title: Derleyici Hatası C2682
+title: Derleyici hatası C2682
 ms.date: 11/04/2016
 f1_keywords:
 - C2682
 helpviewer_keywords:
 - C2682
 ms.assetid: 30c6a7c4-f5f7-4fe8-81a8-c48938521ab4
-ms.openlocfilehash: 8a9ec2f59f362df284e9bd5cd8df6ae986d59d77
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c1ce0132ed0db418359effe60f59e1eb2d3cc221
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62266276"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74760289"
 ---
-# <a name="compiler-error-c2682"></a>Derleyici Hatası C2682
+# <a name="compiler-error-c2682"></a>Derleyici hatası C2682
 
-'type1' 'type2' dönüştürülecek casting_operator kullanamazsınız
+' type1 ' değerinden ' type2 ' türüne dönüştürmek için casting_operator kullanılamaz
 
-Bir yayım işleciyle uyumsuz türleri arasında dönüştürme denedi. Örneğin, kullanamazsınız [dynamic_cast](../../cpp/dynamic-cast-operator.md) başvurusu bir işaretçi dönüştürme işleci. `dynamic_cast` İşleci, hemen niteleyicileri dönüştürme için kullanılamaz. Tüm niteleyicileri türleri üzerinde eşleşmelidir.
+Atama işleci uyumsuz türler arasında dönüştürmeye çalıştı. Örneğin, bir işaretçiyi bir başvuruya dönüştürmek için [dynamic_cast](../../cpp/dynamic-cast-operator.md) işlecini kullanamazsınız. `dynamic_cast` işleci, niteleyicileri dönüştürmek için kullanılamaz. Türlerindeki tüm niteleyiciler eşleşmelidir.
 
-Kullanabileceğiniz `const_cast` öznitelikleri gibi kaldırmak işleci `const`, `volatile`, veya `__unaligned`.
+`const`, `volatile`veya `__unaligned`gibi öznitelikleri kaldırmak için `const_cast` işlecini kullanabilirsiniz.
 
-Aşağıdaki örnek, C2682 oluşturur:
+Aşağıdaki örnek C2682 oluşturur:
 
-```
+```cpp
 // C2682.cpp
 class A { virtual void f(); };
 class B: public A {};
@@ -33,9 +33,9 @@ void g(A* pa) {
 }
 ```
 
-Aşağıdaki örnek, C2682 oluşturur:
+Aşağıdaki örnek C2682 oluşturur:
 
-```
+```cpp
 // C2682b.cpp
 // compile with: /clr
 ref struct R{};

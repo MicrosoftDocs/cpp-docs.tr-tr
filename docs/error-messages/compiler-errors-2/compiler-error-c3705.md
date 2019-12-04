@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3705
+title: Derleyici hatası C3705
 ms.date: 11/04/2016
 f1_keywords:
 - C3705
 helpviewer_keywords:
 - C3705
 ms.assetid: 8361017d-5782-4214-a9d7-e9825fd29bc8
-ms.openlocfilehash: 8a1a5a7c3c54742f6952f6885a70fd5c1dcf6e0f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c4f77457be95ae22b2a67214207d361ca105811d
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62227076"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74757936"
 ---
-# <a name="compiler-error-c3705"></a>Derleyici Hatası C3705
+# <a name="compiler-error-c3705"></a>Derleyici hatası C3705
 
-'function': olay arabirimi bulunamıyor
+' function ': olay arabirimi bulunamıyor
 
-COM olayları kullanmak için bir olay arabirimi tanımlamanız gerekir. Unutmayın `#include` aşağıdaki örnekte gösterilen ATL üstbilgi dosyalarını satırlarını COM olayları kullanmak için gereklidir. Bu hatayı düzeltmek için tanımına ilişkin açıklamayı kaldırır `IEvents` örnek kodda arabirimi.
+COM olaylarını kullanmak için bir olay arabirimi tanımlamanız gerekir. Aşağıdaki örnekte gösterilen ATL üstbilgi dosyalarının `#include` satırlarının COM olaylarını kullanmak için gerekli olduğunu unutmayın. Bu hatayı düzeltemedi, örnek kodda `IEvents` arabiriminin tanımının açıklamasını kaldırın.
 
-Aşağıdaki örnek, C3705 oluşturur:
+Aşağıdaki örnek C3705 oluşturur:
 
-```
+```cpp
 // C3705.cpp
 // compile with: /c
 #define _ATL_ATTRIBUTES 1

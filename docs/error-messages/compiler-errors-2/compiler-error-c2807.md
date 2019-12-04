@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2807
+title: Derleyici hatası C2807
 ms.date: 11/04/2016
 f1_keywords:
 - C2807
 helpviewer_keywords:
 - C2807
 ms.assetid: bd7a207a-f379-4de6-8ee8-c7cab78b3480
-ms.openlocfilehash: 5e3fd05b1c2473efbc1cd102056c73b2f221981d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8376f7aba0d090fa43ae675fe32cbfee182a6230
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62281923"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74760614"
 ---
-# <a name="compiler-error-c2807"></a>Derleyici Hatası C2807
+# <a name="compiler-error-c2807"></a>Derleyici hatası C2807
 
-'operator işleci' sonekinin ikinci biçimsel parametresi 'int' olmalıdır
+' işleç işleci ' sonekinin ikinci biçimsel parametresi ' int ' olmalıdır
 
-Sonek operatörü için ikinci parametre yanlış türde.
+Sonek işlecinin ikinci parametresi yanlış türde.
 
-Aşağıdaki örnek, C2807 oluşturur:
+Aşağıdaki örnek C2807 oluşturur:
 
-```
+```cpp
 // C2807.cpp
 // compile with: /c
 class X {

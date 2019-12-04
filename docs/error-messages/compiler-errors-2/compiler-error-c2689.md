@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2689
+title: Derleyici hatası C2689
 ms.date: 11/04/2016
 f1_keywords:
 - C2689
 helpviewer_keywords:
 - C2689
 ms.assetid: b5216fba-524d-4194-9168-26e9dc5210ce
-ms.openlocfilehash: fb9a45f775da582daa0fbe421f29b6e469a91197
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f3b35d8f68087c9f10d7f2a5d219800fc7a9084a
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62266016"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74760234"
 ---
-# <a name="compiler-error-c2689"></a>Derleyici Hatası C2689
+# <a name="compiler-error-c2689"></a>Derleyici hatası C2689
 
-'function': bir arkadaş işlev bir yerel sınıf içinde tanımlanamaz
+' function ': bir arkadaş işlev bir yerel sınıf içinde tanımlanamaz
 
-Bildirmesine rağmen bir arkadaş işlev bir yerel sınıf içinde tanımlayın değil.
+Bir yerel sınıfta arkadaş işlevi tanımlayabilir ancak tanımlayamazsınız.
 
-Aşağıdaki örnek, C2689 oluşturur:
+Aşağıdaki örnek C2689 oluşturur:
 
-```
+```cpp
 // C2689.cpp
 // compile with: /c
 void g() {

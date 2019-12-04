@@ -1,31 +1,31 @@
 ---
-title: Derleyici Hatası C2229
+title: Derleyici hatası C2229
 ms.date: 11/04/2016
 f1_keywords:
 - C2229
 helpviewer_keywords:
 - C2229
 ms.assetid: 933c7cf2-a463-4e74-b0b4-59dedad987fb
-ms.openlocfilehash: 998067e9af178c1898c3443c4e84da965c22fa81
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2d974c4f0630a592daad956448bf21cea21efb7c
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62301740"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74759275"
 ---
-# <a name="compiler-error-c2229"></a>Derleyici Hatası C2229
+# <a name="compiler-error-c2229"></a>Derleyici hatası C2229
 
-'identifier' geçersiz bir sıfır boyutlu dizi türünde
+' Identifier ' türünde geçersiz bir sıfır boyutlu dizi vardır
 
-Bir yapı ya da bit alanının bir üyesi, son üyesi olmayan bir sıfır boyutlu dizi içeriyor.
+Bir yapının veya bit alanının üyesi, son üye olmayan sıfır boyutlu bir dizi içerir.
 
-En son yapı üyesi bir sıfır boyutlu dizi olabileceğinden, struct ayırdığınızda, boyutuna belirtmeniz gerekir.
+Yapının son üyesi olarak sıfır boyutlu bir diziye sahip olabilirsiniz, yapısını ayırdığınızda boyutunu belirtmeniz gerekir.
 
-Sıfır boyutlu dizi en son yapı üyesi değilse, derleyici kalan alanları için uzaklık hesaplanamaz.
+Sıfır boyutlu dizi yapının son üyesi değilse, derleyici kalan alanların sapmasını hesaplayamaz.
 
-Aşağıdaki örnek, C2229 oluşturur:
+Aşağıdaki örnek C2229 oluşturur:
 
-```
+```cpp
 // C2229.cpp
 struct S {
    int a[0];  // C2229  zero-sized array

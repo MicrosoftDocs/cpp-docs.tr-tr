@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2993
+title: Derleyici hatası C2993
 ms.date: 11/04/2016
 f1_keywords:
 - C2993
 helpviewer_keywords:
 - C2993
 ms.assetid: 4ffd2b78-654b-46aa-95a6-b62101cf91c8
-ms.openlocfilehash: 5be4836332f67f2064f60a3b058db159a18ca1e0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5aa0d27b2d469f53ec521f587172398b7d4c2d1b
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62160893"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74761237"
 ---
-# <a name="compiler-error-c2993"></a>Derleyici Hatası C2993
+# <a name="compiler-error-c2993"></a>Derleyici hatası C2993
 
-'identifier': tür olmayan şablon parametresi 'parametresi' için geçersiz tür
+' tanımlayıcı ': tür olmayan şablon parametresi ' Parameter ' için geçersiz tür
 
-Bir yapı veya birleşim bağımsız değişkeni bir şablonla bildiremezsiniz. Yapılar ve birleşimler şablon parametreleri olarak geçirmek için işaretçiler kullanma.
+Yapı veya birleşim bağımsız değişkeniyle bir şablon bildiremezsiniz. Yapıları ve birleşimleri şablon parametreleri olarak geçirmek için işaretçiler kullanın.
 
-Aşağıdaki örnek, C2993 oluşturur:
+Aşağıdaki örnek C2993 oluşturur:
 
-```
+```cpp
 // C2993.cpp
 // compile with: /c
 // C2993 expected
@@ -36,11 +36,11 @@ template <class T, struct MyStruct S>   // C2993
 class CMyClass {};
 ```
 
-Bu hata ayrıca Visual Studio .NET 2003'te yapıldığı derleyici uyumluluğu iş sonucu olarak oluşturulacak: kayan nokta tür olmayan şablon parametreleri artık izin verilir. C++ Standart kayan nokta tür olmayan şablon parametreleri izin vermez.
+Bu hata, Visual Studio .NET 2003 ' de gerçekleştirilen derleyici uyumluluğu işinin sonucu olarak da oluşturulacaktır: kayan nokta türü olmayan şablon parametrelerine artık izin verilmez. Standart C++ , kayan nokta türünde olmayan şablon parametrelerine izin vermez.
 
-Bir işlev şablonu ise, kullanmak kayan geçirmek için bir işlev bağımsız değişkeni tür olmayan şablon parametresi (Bu kod Visual C++ Visual Studio .NET 2003 ve Visual Studio sürümlerinde geçerli olacaktır) üzerine gelin. Bir sınıf şablonunun ise, kolay geçici çözüm yoktur.
+Bir işlev şablonuysa, kayan nokta türünde olmayan şablon parametresini geçirmek için bir işlev bağımsız değişkeni kullanın (Visual Studio .NET 2003 ve Visual Studio .NET sürümlerinde bu kod geçerli olur C++). Bu bir sınıf şablonsa, kolay bir geçici çözüm yoktur.
 
-```
+```cpp
 // C2993b.cpp
 // compile with: /c
 template<class T, float f> void func(T) {}   // C2993

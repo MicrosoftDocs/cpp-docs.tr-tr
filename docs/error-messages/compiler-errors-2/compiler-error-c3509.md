@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3509
+title: Derleyici hatası C3509
 ms.date: 11/04/2016
 f1_keywords:
 - C3509
 helpviewer_keywords:
 - C3509
 ms.assetid: cc2db39a-2f98-4e40-b803-496e585494e6
-ms.openlocfilehash: e5e3c48581b5225bf1cf6777c9891c458034e11f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d91bbdf67b49e5722491f562b5eced2c5af10837
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62187495"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74753750"
 ---
-# <a name="compiler-error-c3509"></a>Derleyici Hatası C3509
+# <a name="compiler-error-c3509"></a>Derleyici hatası C3509
 
-'type': Geçersiz Otomasyon dönüş türü; parametre olduğunda işaretli 'retval', dönüş türü 'void', 'HRESULT' veya 'SCODE' olmalıdır
+' Type ': geçersiz Otomasyon dönüş türü; bir parametre ' retval ' olarak işaretlendiğinde, dönüş türü ' void ', ' HRESULT ' veya ' SCODE ' olmalıdır
 
-Bir COM arabirimi yöntemi void veya HRESULT döndürmesi gerekir.
+COM arabirimindeki bir Yöntem void ya da HRESULT döndürmelidir.
 
-Aşağıdaki örnek, C3509 oluşturur:
+Aşağıdaki örnek C3509 oluşturur:
 
-```
+```cpp
 // C3509.cpp
 #define _ATL_DEBUG_QI
 

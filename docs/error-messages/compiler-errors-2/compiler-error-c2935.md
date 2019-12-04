@@ -1,29 +1,29 @@
 ---
-title: Derleyici Hatası C2935
+title: Derleyici hatası C2935
 ms.date: 11/04/2016
 f1_keywords:
 - C2935
 helpviewer_keywords:
 - C2935
 ms.assetid: e11ef90d-0756-4e43-8a09-4974c6aa72a3
-ms.openlocfilehash: f44a8060910b1aeeaa4b85d1df081a559e720df8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 676c238dfb0ae78dbe5b144b5242bfb4ccbda76c
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62164897"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74756155"
 ---
-# <a name="compiler-error-c2935"></a>Derleyici Hatası C2935
+# <a name="compiler-error-c2935"></a>Derleyici hatası C2935
 
-'class': türü sınıf kimliği için genel bir işlev yeniden tanımlandı
+' class ': tür sınıfı kimliği genel bir işlev olarak yeniden tanımlandı
 
-Genel veya Şablon sınıfı, genel bir işlev kullanamazsınız.
+Genel veya şablon sınıfını genel bir işlev olarak kullanamazsınız.
 
-Küme ayraçları yanlış eşleşirse bu hataya neden olabilir.
+Bu hata, küme ayraçları yanlış bir şekilde eşleştirildiği için oluşur.
 
-Aşağıdaki örnek, C2935 oluşturur:
+Aşağıdaki örnek C2935 oluşturur:
 
-```
+```cpp
 // C2935.cpp
 // compile with: /c
 template<class T>
@@ -35,9 +35,9 @@ struct TC2 {};
 void TC2() {}
 ```
 
-C2935, genel türler kullanırken da meydana gelebilir:
+C2935, genel türler kullanılırken de oluşabilir:
 
-```
+```cpp
 // C2935b.cpp
 // compile with: /clr /c
 generic<class T>

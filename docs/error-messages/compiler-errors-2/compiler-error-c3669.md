@@ -1,29 +1,29 @@
 ---
-title: Derleyici Hatası C3669
+title: Derleyici hatası C3669
 ms.date: 11/04/2016
 f1_keywords:
 - C3669
 helpviewer_keywords:
 - C3669
 ms.assetid: be9c7ae4-e96f-47ab-922a-39a3537d5ca6
-ms.openlocfilehash: 3b0ad3aa7395f5f423c8c36f547d4a0e2ad792c1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 560f4e8ef39e265f20d3c119858ff06b463d9841
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62214907"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74758144"
 ---
-# <a name="compiler-error-c3669"></a>Derleyici Hatası C3669
+# <a name="compiler-error-c3669"></a>Derleyici hatası C3669
 
-'member': geçersiz kılma belirticisi 'override' izin statik üye işlevler veya oluşturucular üzerinde
+' üye ': ' override ' geçersiz kılma belirticisi statik üye işlevlerinde veya oluşturucularda kullanılamaz
 
-Bir geçersiz kılma yanlış olarak belirtildi. Daha fazla bilgi için [açık geçersiz kılmalar](../../extensions/explicit-overrides-cpp-component-extensions.md).
+Geçersiz kılma yanlış belirtildi. Daha fazla bilgi için bkz. [Açık geçersiz kılmalar](../../extensions/explicit-overrides-cpp-component-extensions.md).
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C3669 oluşturur.
+Aşağıdaki örnek C3669 oluşturur.
 
-```
+```cpp
 // C3669.cpp
 // compile with: /clr
 public ref struct R {

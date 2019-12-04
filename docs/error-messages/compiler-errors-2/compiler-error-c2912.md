@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2912
+title: Derleyici hatası C2912
 ms.date: 11/04/2016
 f1_keywords:
 - C2912
 helpviewer_keywords:
 - C2912
 ms.assetid: bd55cecd-ab1a-4636-ab8a-a00393fe7b3d
-ms.openlocfilehash: b7f87ae2df5350fcfb2b7a662f517d8d7bd51ef8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 254252bfd21aa28c87810f1e21b4864e2775a71b
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62408400"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74761091"
 ---
-# <a name="compiler-error-c2912"></a>Derleyici Hatası C2912
+# <a name="compiler-error-c2912"></a>Derleyici hatası C2912
 
-Açık özelleştirme 'bildirim' bir işlev şablonunun bir özelleştirmesi değil
+' bildirim ' açık özelleştirmesi bir işlev şablonunun özelleştirmesi değil
 
-Bir şablon olmayan işlev özelleştirilemiyor.
+Şablon olmayan bir işlev özelleştirilemiyor.
 
-Aşağıdaki örnek, C2912 oluşturur:
+Aşağıdaki örnek C2912 oluşturur:
 
-```
+```cpp
 // C2912.cpp
 // compile with: /c
 void f(char);
@@ -29,9 +29,9 @@ template<> void f(char);   // C2912
 template<class T> void f(T);   // OK
 ```
 
-Bu hata ayrıca Visual Studio .NET 2003'te yapıldığı derleyici uyumluluğu iş sonucu olarak oluşturulur: tüm açık özelleştirme için birincil parametreleriyle eşleşecek şekilde açık uzmanlığında parametrelerinin seçmeniz gerekir şablonu.
+Bu hata, Visual Studio .NET 2003 ' de yapılan derleyicinin uyumluluk işinin sonucu olarak da oluşturulacaktır: her açık özelleşme için, açık özelleşmenin parametrelerini, örneğin, birincil öğesinin parametreleriyle eşleşecek şekilde seçmeniz gerekir. şablonlarını.
 
-```
+```cpp
 // C2912b.cpp
 class CF {
 public:

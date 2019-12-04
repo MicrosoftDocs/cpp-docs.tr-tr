@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3162
+title: Derleyici hatası C3162
 ms.date: 11/04/2016
 f1_keywords:
 - C3162
 helpviewer_keywords:
 - C3162
 ms.assetid: 0d4c4a24-1456-4191-b7d8-c38cb7b17c32
-ms.openlocfilehash: f522a2de77e03a7c5f8f8dc774d62744417344fb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 95cd2c4af614906da7ba2d1c4c5dd488059f970a
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62174295"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74761809"
 ---
-# <a name="compiler-error-c3162"></a>Derleyici Hatası C3162
+# <a name="compiler-error-c3162"></a>Derleyici hatası C3162
 
-'type': bir yok Edicisi olan başvuru türü 'member' statik veri üyesinin türü kullanılamaz
+' Type ': yok edicisi olan bir başvuru türü statik veri üyesi ' Member ' türü olarak kullanılamaz
 
-Ortak dil çalışma zamanı sınıfı statik üye işlevini de içerdiğinde, kullanıcı tanımlı bir yok edici çalıştırmak ne zaman bilemezsiniz.
+Ortak dil çalışma zamanı, sınıf de statik üye işlevi içerdiğinde Kullanıcı tanımlı yıkıcının ne zaman çalıştırılacağını bilmiyor.
 
-Nesneyi açıkça silinmedikçe bir yok edici hiç çalıştırılır.
+Nesne açıkça silinmediği takdirde yıkıcı hiçbir şekilde çalışmaz.
 
-Daha fazla bilgi için bkz:
+Daha fazla bilgi için bkz.,
 
 - [/clr (Ortak Dil Çalışma Zamanı Derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md)
 
@@ -29,9 +29,9 @@ Daha fazla bilgi için bkz:
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C3162 oluşturur.
+Aşağıdaki örnek C3162 oluşturur.
 
-```
+```cpp
 // C3162.cpp
 // compile with: /clr /c
 ref struct A {

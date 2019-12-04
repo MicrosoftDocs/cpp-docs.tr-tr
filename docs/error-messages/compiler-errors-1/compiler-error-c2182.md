@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2182
+title: Derleyici hatası C2182
 ms.date: 11/04/2016
 f1_keywords:
 - C2182
 helpviewer_keywords:
 - C2182
 ms.assetid: dfd8d47d-9606-496e-bd96-4bf41ba1f857
-ms.openlocfilehash: 3c33e722143c15c566d96226429adbb8868b34ca
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: da702087ad4d445d7fd4abe1956040a45b4414b6
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62385985"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74737146"
 ---
-# <a name="compiler-error-c2182"></a>Derleyici Hatası C2182
+# <a name="compiler-error-c2182"></a>Derleyici hatası C2182
 
-'identifier': 'void' türünde geçersiz kullanımı
+' tanımlayıcı ': ' void ' türünün geçersiz kullanımı
 
-Bir değişken türü olarak bildirilmiş `void`.
+Değişken `void`olarak bildirilmiştir.
 
-Aşağıdaki örnek, C2182 oluşturur:
+Aşağıdaki örnek C2182 oluşturur:
 
-```
+```cpp
 // C2182.cpp
 // compile with: /c
 int main() {

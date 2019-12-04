@@ -1,31 +1,31 @@
 ---
-title: Derleyici Hatası C3099
+title: Derleyici hatası C3099
 ms.date: 11/04/2016
 f1_keywords:
 - C3099
 helpviewer_keywords:
 - C3099
 ms.assetid: b3dded0f-76c9-42c1-991b-532eb8619661
-ms.openlocfilehash: 0f3eac1c232ef159d220a347d6b6dc3aed2fdd9a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 81f508c47c678d86f8f95303861b42f8a70daa57
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62324785"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74750058"
 ---
-# <a name="compiler-error-c3099"></a>Derleyici Hatası C3099
+# <a name="compiler-error-c3099"></a>Derleyici hatası C3099
 
-'anahtar sözcüğü': [System::AttributeUsageAttribute] yönetilen öznitelikleri için; kullanın. [Windows::Foundation::Metadata::AttributeUsageAttribute] WinRT öznitelikleri için kullanın.
+' anahtar sözcüğü ': yönetilen öznitelikler için [System:: AttributeUsageAttribute] kullanın; WinRT öznitelikleri için [Windows:: Foundation:: Metadata:: AttributeUsageAttribute] kullanın
 
-Kullanım <xref:System.AttributeUsageAttribute> bildirmek için **/CLR** öznitelikleri. Kullanım `Windows::Foundation::Metadata::AttributeUsageAttribute` Windows çalışma zamanı öznitelik bildirmek için.
+**/Clr** özniteliklerini bildirmek için <xref:System.AttributeUsageAttribute> kullanın. Windows Çalışma Zamanı özniteliklerini bildirmek için `Windows::Foundation::Metadata::AttributeUsageAttribute` kullanın.
 
-/ CLR öznitelikleri hakkında daha fazla bilgi için bkz. [kullanıcı tanımlı öznitelikler](../../extensions/user-defined-attributes-cpp-component-extensions.md). Windows çalışma zamanı için desteklenen öznitelik [Windows.Foundation.Metadata ad alanı](/uwp/api/windows.foundation.metadata)
+/CLR öznitelikleri hakkında daha fazla bilgi için bkz. [Kullanıcı tanımlı öznitelikler](../../extensions/user-defined-attributes-cpp-component-extensions.md). Windows Çalışma Zamanı desteklenen öznitelikler için bkz. [Windows. Foundation. Metadata ad alanı](/uwp/api/windows.foundation.metadata)
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C3099 oluşturur ve bu sorunun nasıl gösterir.
+Aşağıdaki örnek C3099 oluşturur ve nasıl düzeltileceğini gösterir.
 
-```
+```cpp
 // C3099.cpp
 // compile with: /clr /c
 using namespace System;

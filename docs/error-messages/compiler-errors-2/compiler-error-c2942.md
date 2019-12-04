@@ -1,25 +1,25 @@
 ---
-title: Derleyici Hatası C2942
+title: Derleyici hatası C2942
 ms.date: 11/04/2016
 f1_keywords:
 - C2942
 helpviewer_keywords:
 - C2942
 ms.assetid: 13abf744-8fa1-450d-886d-e5717c04956e
-ms.openlocfilehash: 8a594b9d1d8374caa972f6bfdafe5d691e634a9a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 98bb0d9945068042e00c7c48c0304314e281fa8f
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62366647"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74758365"
 ---
-# <a name="compiler-error-c2942"></a>Derleyici Hatası C2942
+# <a name="compiler-error-c2942"></a>Derleyici hatası C2942
 
-'class': türü sınıf kimliği bir işlevin biçimsel bağımsız değişken yeniden tanımlandı
+' class ': tür sınıfı kimliği bir işlevin biçimsel bağımsız değişkeni olarak yeniden tanımlandı
 
-Genel veya Şablon sınıfı bir biçimsel bağımsız değişken olarak kullanamazsınız. Doğrudan genel Oluşturucusu veya Şablon sınıfı bir bağımsız değişken geçiremezsiniz.
+Genel veya şablon sınıfını biçimsel bağımsız değişken olarak kullanamazsınız. Bir bağımsız değişkeni doğrudan genel veya şablon sınıfının oluşturucusuna geçiremezsiniz.
 
-Aşağıdaki örnek, C2942 oluşturur:
+Aşağıdaki örnek C2942 oluşturur:
 
 ```
 
@@ -34,9 +34,9 @@ struct TC2 {};
 void f(TC2 i) {}
 ```
 
-C2942, genel türler kullanırken da meydana gelebilir:
+C2942, genel türler kullanılırken de oluşabilir:
 
-```
+```cpp
 // C2942b.cpp
 // compile with: /clr /c
 generic<class T>

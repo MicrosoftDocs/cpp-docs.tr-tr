@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3903
+title: Derleyici hatası C3903
 ms.date: 11/04/2016
 f1_keywords:
 - C3903
 helpviewer_keywords:
 - C3903
 ms.assetid: cf47d7ad-a3bd-4f75-a253-71586e7a3be6
-ms.openlocfilehash: bed6561d1e8d4281cd57e78808744d018c3cc9b3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 585fb82c2838b2bc8aebbfbab7bdda744ba38da8
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62406593"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74749080"
 ---
-# <a name="compiler-error-c3903"></a>Derleyici Hatası C3903
+# <a name="compiler-error-c3903"></a>Derleyici hatası C3903
 
-'property': yok ayarladığınız veya alma yöntemine
+' Property ': set veya get yöntemi yok
 
-Bir özellik en az bir sahip olmanız gerekir `get` veya `set` yöntemi. Daha fazla bilgi için [özelliği](../../extensions/property-cpp-component-extensions.md).
+Özelliğin en az bir `get` veya `set` yöntemi olmalıdır. Daha fazla bilgi için bkz. [özellik](../../extensions/property-cpp-component-extensions.md).
 
-Aşağıdaki örnek, C3903 oluşturur:
+Aşağıdaki örnek C3903 oluşturur:
 
-```
+```cpp
 // C3903.cpp
 // compile with: /clr
 ref class X {

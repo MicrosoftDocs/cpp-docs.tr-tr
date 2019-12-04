@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3023
+title: Derleyici hatası C3023
 ms.date: 11/04/2016
 f1_keywords:
 - C3023
 helpviewer_keywords:
 - C3023
 ms.assetid: 89dcce98-3cd7-4931-a50f-87df1d2ebc9b
-ms.openlocfilehash: 397a68db2b97adc07ae2a22c9cf909f77a125725
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 546f8bafb4e30919600dfce84d6c84ffa819367e
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62382445"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74742047"
 ---
-# <a name="compiler-error-c3023"></a>Derleyici Hatası C3023
+# <a name="compiler-error-c3023"></a>Derleyici hatası C3023
 
-'value': OpenMP 'yan tümcesi' yan tümcesinin bağımsız değişkeninde karşılaştı beklenmeyen belirteç
+' Value ': OpenMP ' Clause ' yan tümcesinin bağımsız değişkeninde beklenmeyen belirteçle karşılaşıldı
 
-Bir yan tümce için geçirilen değer geçerli değil.
+Bir yan tümcesine geçirilen değerler geçerli değildi.
 
-Aşağıdaki örnek, C3023 oluşturur:
+Aşağıdaki örnek C3023 oluşturur:
 
-```
+```cpp
 // C3023.cpp
 // compile with: /openmp /link vcomps.lib
 #include <stdio.h>

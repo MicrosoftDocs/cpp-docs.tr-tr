@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2360
+title: Derleyici hatası C2360
 ms.date: 11/04/2016
 f1_keywords:
 - C2360
 helpviewer_keywords:
 - C2360
 ms.assetid: 51bfd2ee-8108-4777-aa93-148b9cebfa83
-ms.openlocfilehash: 6e956ccb021dc3bce4d107e4aa6e0bbe4356283b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 226fcd8a27c9abdb789b8191a5cf4e59cc4a66cc
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62364733"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74759912"
 ---
-# <a name="compiler-error-c2360"></a>Derleyici Hatası C2360
+# <a name="compiler-error-c2360"></a>Derleyici hatası C2360
 
-'identifier' öğesinin başlatılması 'case' etiketiyle atlandı
+' Identifier ' öğesinin başlatılması ' Case ' etiketiyle atlandı
 
-Başlatma `identifier` içinde atlandı bir `switch` deyimi. Bildirimi bir bloğu içinde alınmış sürece bir bildirimi bir başlatıcıya sahip son atlama olamaz. (Bir blok içinde bildirildiği sürece, kapsam içinde sonuna kadar değişkendir `switch` deyimi.)
+`identifier` başlatılması `switch` bildiriminde atlanabilir. Bildirim bir blok içine alınmadığı takdirde bir başlatıcıya sahip bir bildirimi atlayabilirsiniz. (Bir blok içinde bildirilmemiş değilse, değişken `switch` deyimin sonuna kadar kapsam içindedir.)
 
-Aşağıdaki örnek, C2360 oluşturur:
+Aşağıdaki örnek C2360 oluşturur:
 
-```
+```cpp
 // C2360.cpp
 int main() {
    int x = 0;
@@ -37,7 +37,7 @@ int main() {
 
 Olası çözüm:
 
-```
+```cpp
 // C2360b.cpp
 int main() {
    int x = 0;

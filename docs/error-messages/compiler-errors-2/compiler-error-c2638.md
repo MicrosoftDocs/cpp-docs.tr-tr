@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2638
+title: Derleyici hatası C2638
 ms.date: 11/04/2016
 f1_keywords:
 - C2638
 helpviewer_keywords:
 - C2638
 ms.assetid: 9d4275e8-406d-455e-afee-3a37799230e0
-ms.openlocfilehash: 0c4c1e73c97f51bb0e52a618829ffb0bed417a45
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6053e9bcf49159e8ceefe9264d30319493c4cf1b
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62395436"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74748352"
 ---
-# <a name="compiler-error-c2638"></a>Derleyici Hatası C2638
+# <a name="compiler-error-c2638"></a>Derleyici hatası C2638
 
-'identifier': __based değiştiricisi üye işaretçisi üzerinde geçersizdir
+' tanımlayıcı ': __based değiştirici üye İşaretçisinde geçersizdir
 
-`__based` Değiştiricisi üye işaretçileri için kullanılamaz.
+`__based` değiştiricisi üye işaretçileri için kullanılamaz.
 
-Aşağıdaki örnek, C2638 oluşturur:
+Aşağıdaki örnek C2638 oluşturur:
 
-```
+```cpp
 // C2638.cpp
 void *a;
 

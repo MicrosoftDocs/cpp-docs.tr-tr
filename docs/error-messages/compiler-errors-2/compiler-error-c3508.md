@@ -1,29 +1,29 @@
 ---
-title: Derleyici Hatası C3508
+title: Derleyici hatası C3508
 ms.date: 11/04/2016
 f1_keywords:
 - C3508
 helpviewer_keywords:
 - C3508
 ms.assetid: 16d08f89-2f32-44eb-9421-68acecddf49b
-ms.openlocfilehash: 1d868a8f7ab8a69054844c5c8e101d661e295a37
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1478753f78a54c712e6f18f09b45645dc8f7ed37
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62187371"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74753776"
 ---
-# <a name="compiler-error-c3508"></a>Derleyici Hatası C3508
+# <a name="compiler-error-c3508"></a>Derleyici hatası C3508
 
-'type': geçerli bir Otomasyon türü değil
+' Type ': geçerli bir Otomasyon türü değil
 
 Geçersiz bir tür belirtildi.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C3508 oluşturur:
+Aşağıdaki örnek C3508 oluşturur:
 
-```
+```cpp
 // C3508.cpp
 #define _ATL_DEBUG_QI
 

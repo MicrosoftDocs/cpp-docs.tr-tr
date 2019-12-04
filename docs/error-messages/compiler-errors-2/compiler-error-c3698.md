@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3698
+title: Derleyici hatası C3698
 ms.date: 11/04/2016
 f1_keywords:
 - C3698
 helpviewer_keywords:
 - C3698
 ms.assetid: 3c02fb08-7ba4-4637-a06f-19926cb2b5f1
-ms.openlocfilehash: 78cded92c8f73c77f7871278443bd3dfd4dbe686
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 29c1df618d6a8a14f441c09a6db0f9457133910b
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62325188"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74758053"
 ---
-# <a name="compiler-error-c3698"></a>Derleyici Hatası C3698
+# <a name="compiler-error-c3698"></a>Derleyici hatası C3698
 
-'type': Bu tür 'operator' bağımsız değişkeni olarak kullanılamaz
+' Type ': Bu tür ' operator ' bağımsız değişkeni olarak kullanılamaz
 
-Yönetilen bir nesnenin yanlış bildirildi.
+Yönetilen bir nesne yanlış bildirildi.
 
-Aşağıdaki örnek, C3698 oluşturur:
+Aşağıdaki örnek C3698 oluşturur:
 
-```
+```cpp
 // C3698.cpp
 // compile with: /clr
 

@@ -1,29 +1,29 @@
 ---
-title: Derleyici Hatası C2992
+title: Derleyici hatası C2992
 ms.date: 11/04/2016
 f1_keywords:
 - C2992
 helpviewer_keywords:
 - C2992
 ms.assetid: 01b16447-43fe-4e91-9a5a-af884a166a31
-ms.openlocfilehash: c30a1d2e1c2bae92b426fdd8fa4be628c009fa02
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 48d4902d34a806eeb26ef376e3b7a7b6ce843dbc
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62366036"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74751501"
 ---
-# <a name="compiler-error-c2992"></a>Derleyici Hatası C2992
+# <a name="compiler-error-c2992"></a>Derleyici hatası C2992
 
-'class': geçersiz veya eksik tür parametresi listesi
+' class ': geçersiz veya eksik tür parametresi listesi
 
-Sınıf öncesinde bir `template` veya **genel** eksik veya geçersiz parametrelerle anahtar sözcüğü.
+Sınıfı, eksik veya geçersiz parametrelere sahip bir `template` veya **genel** anahtar kelimedir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C2992 oluşturur:
+Aşağıdaki örnek C2992 oluşturur:
 
-```
+```cpp
 // C2992.cpp
 // compile with: /c
 template <class T>

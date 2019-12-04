@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2513
+title: Derleyici hatası C2513
 ms.date: 11/04/2016
 f1_keywords:
 - C2513
 helpviewer_keywords:
 - C2513
 ms.assetid: ab5b21d3-61e2-4df7-8eea-6f14d6ba8620
-ms.openlocfilehash: 13840246a5dc6a1c1bdbcb55dc47f212ee353d81
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 093a5856fdcfa6311fcef93214672b035c91b4fc
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62165222"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74746532"
 ---
-# <a name="compiler-error-c2513"></a>Derleyici Hatası C2513
+# <a name="compiler-error-c2513"></a>Derleyici hatası C2513
 
-'type': hiçbir değişken bildirimi '=' öncesinde
+' Type ': ' = ' öncesinde hiçbir değişken bildirilmemiş
 
-Tür tanımlayıcısına sahip hiçbir değişken tanımlayıcının bildirimini görüntülenir.
+Tür Belirleyicisi, hiçbir değişken tanımlayıcısı olmadan bildirimde görüntülenir.
 
-Aşağıdaki örnek, C2513 oluşturur:
+Aşağıdaki örnek C2513 oluşturur:
 
-```
+```cpp
 // C2513.cpp
 int main() {
    int = 9;   // C2513
@@ -29,9 +29,9 @@ int main() {
 }
 ```
 
-Bu hata, Visual Studio .NET 2003'te yapılan bir derleyici uyumluluğu iş sonucu olarak da oluşturulabilir: başlatma artık izin verilen bir TypeDef. Bir TypeDef başlatma standart tarafından izin verilmiyor ve artık bir derleyici hatasına neden olur.
+Bu hata, Visual Studio .NET 2003 için yapılan bir derleyici uygunluk işinin sonucu olarak da oluşturulabilir: typedef 'in başlatılmasına artık izin verilmiyor. Bir typedef 'in başlatılmasına standart tarafından izin verilmez ve şimdi bir derleyici hatası oluşturur.
 
-```
+```cpp
 // C2513b.cpp
 // compile with: /c
 typedef struct S {
@@ -41,4 +41,4 @@ typedef struct S {
 // } S;
 ```
 
-Silmek için bir alternatif olabilir `typedef` bu tür olarak aynı ada sahip bir değişken oluşturun ve tür adı gizlemek için toplu başlatıcı listesi, ancak bu bir değişkeni tanımlamak için önerilmez.
+Diğer bir seçenek de toplu Başlatıcı listesi olan bir değişken tanımlamak üzere `typedef` silinecek, ancak bu, türü ile aynı ada sahip bir değişken oluşturacak ve tür adını gizleyecek olduğundan önerilmez.

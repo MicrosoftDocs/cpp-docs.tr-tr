@@ -1,31 +1,31 @@
 ---
-title: Derleyici Hatası C2061
+title: Derleyici hatası C2061
 ms.date: 11/04/2016
 f1_keywords:
 - C2061
 helpviewer_keywords:
 - C2061
 ms.assetid: b0e61c0c-a205-4820-b9aa-301d6c6fe6eb
-ms.openlocfilehash: 85357d94c7bc2d709e852daa60caf269949ad1b8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: dc64852523b6b56bc506260576e3c79164628340
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62408699"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74735937"
 ---
-# <a name="compiler-error-c2061"></a>Derleyici Hatası C2061
+# <a name="compiler-error-c2061"></a>Derleyici hatası C2061
 
-sözdizimi hatası: 'identifier' tanımlayıcısı
+sözdizimi hatası: tanımlayıcı ' tanımlayıcı '
 
-Derleyici, beklenirken değildi tanımlayıcı bulunamadı. Emin olun `identifier` kullanmadan önce bildirilir.
+Derleyici, beklenmediği bir tanımlayıcı buldu. Kullanmadan önce `identifier` bildirildiği için emin olun.
 
-Bir başlatıcı parantez ile kapatılan. Bu sorunu önlemek için bildirimci parantez içine veya hale bir `typedef`.
+Bir başlatıcı parantez içine alınmış olabilir. Bu sorundan kaçınmak için, bildirimcisini parantez içine alın veya bir `typedef`yapın.
 
-Derleyici bir sınıf şablonu bağımsız değişkeni olarak bir ifade algıladığında bu hatayı da neden olmuş olabilir; kullanma [typename](../../cpp/typename.md) bir türü olduğundan derleyici söylemek için.
+Bu hata, derleyici bir sınıf şablonu bağımsız değişkeni olarak bir ifade algıladığında de oluşabilir; derleyiciye bir tür olduğunu bildirmek için [TypeName](../../cpp/typename.md) kullanın.
 
-Aşağıdaki örnek, C2061 oluşturur:
+Aşağıdaki örnek C2061 oluşturur:
 
-```
+```cpp
 // C2061.cpp
 // compile with: /c
 template < A a >   // C2061
@@ -34,9 +34,9 @@ template < A a >   // C2061
 class c{};
 ```
 
-Bir örnek adı için geçirirseniz C2061 oluşabilir [TypeID](../../extensions/typeid-cpp-component-extensions.md):
+[TypeId](../../extensions/typeid-cpp-component-extensions.md)öğesine bir örnek adı geçirirseniz, C2061 oluşabilir:
 
-```
+```cpp
 // C2061b.cpp
 // compile with: /clr
 ref struct G {

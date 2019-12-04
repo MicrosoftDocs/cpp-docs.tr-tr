@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2718
+title: Derleyici hatası C2718
 ms.date: 11/04/2016
 f1_keywords:
 - C2718
 helpviewer_keywords:
 - C2718
 ms.assetid: 78cc71f8-c142-46fc-9aed-970635d74f0c
-ms.openlocfilehash: 00ad8da46364cd4a48ebdfde8b4de960e4e015f5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ecfb68856e63eaf3f60e93a79bac17c66d1af1fc
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62406918"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74760523"
 ---
-# <a name="compiler-error-c2718"></a>Derleyici Hatası C2718
+# <a name="compiler-error-c2718"></a>Derleyici hatası C2718
 
-'parameter': hizalanmasına __declspec(align('#')) ile gerçek parametre hizalanmayacak
+' Parameter ': __declspec (align (' # ')) ile gerçek parametre hizalanmayacak
 
-[Hizalama](../../cpp/align-cpp.md) `__declspec` değiştiricisi işlevi parametrelere izin verilmiyor.
+[Hizalama](../../cpp/align-cpp.md) `__declspec` değiştiricisine işlev parametrelerinde izin verilmez.
 
-Aşağıdaki örnek, C2718 oluşturur:
+Aşağıdaki örnek C2718 oluşturur:
 
-```
+```cpp
 // C2718.cpp
 typedef struct __declspec(align(32)) AlignedStruct  {
    int i;

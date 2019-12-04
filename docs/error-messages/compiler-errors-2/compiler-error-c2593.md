@@ -1,29 +1,29 @@
 ---
-title: Derleyici Hatası C2593
+title: Derleyici hatası C2593
 ms.date: 11/04/2016
 f1_keywords:
 - C2593
 helpviewer_keywords:
 - C2593
 ms.assetid: 4a0fe9bb-2163-447d-91f6-1890ed8250f6
-ms.openlocfilehash: c358553a36104b5c389076f5a5ce02f94f85e85a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2a385e35376ddce528678980705595bfb98aca95
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62386921"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74759353"
 ---
-# <a name="compiler-error-c2593"></a>Derleyici Hatası C2593
+# <a name="compiler-error-c2593"></a>Derleyici hatası C2593
 
-'''işleci identifier' belirsiz
+' işleç tanımlayıcısı ' belirsiz
 
-Birden fazla olası işleci aşırı yüklenmiş bir işleç için tanımlanır.
+Aşırı yüklenmiş bir operatör için birden fazla olası işleç tanımlandı.
 
-Bir veya daha fazla gerçek parametre bir açık tür dönüştürme kullanıyorsanız bu hata sabit olamaz.
+Bu hata, bir veya daha fazla gerçek parametrelerde açık bir atama kullanırsanız düzeltilebilir.
 
-Aşağıdaki örnek, C2593 oluşturur:
+Aşağıdaki örnek C2593 oluşturur:
 
-```
+```cpp
 // C2593.cpp
 struct A {};
 struct B : A {};
@@ -39,9 +39,9 @@ int main() {
 }
 ```
 
-Bu hata, bir kayan nokta değişkeni kullanarak seri hale getirme tarafından kaynaklanabilir bir `CArchive` nesne. Derleyici tanımlayan `<<` belirsiz olarak işleci. Yalnızca temel C++ türlerinin `CArchive` serileştirebiliyorsa sabit boyutlu türleridir `BYTE`, `WORD`, `DWORD`, ve `LONG`. Tüm tamsayı türleri bu türlerden birine seri hale getirme için dönüştürmeniz gerekir. Kayan nokta türleri gerekir arşivlenmiş kullanarak `CArchive::Write()` üye işlevi.
+Bu hata, bir `CArchive` nesnesi kullanılarak bir kayan nokta değişkeninin serileştirilmesinin nedeni olabilir. Derleyici `<<` işlecini belirsiz olarak tanımlar. `CArchive` seri hale C++ getirilecek basit türler `BYTE`, `WORD`, `DWORD`ve `LONG`sabit boyutlu türlerdir. Tüm tamsayı türlerinin serileştirme için bu türlerden birine dönüştürülmesi gerekir. Kayan nokta türleri `CArchive::Write()` üye işlevi kullanılarak arşivlenmelidir.
 
-Aşağıdaki örnek, bir kayan nokta değişkeni arşivlemek gösterilmektedir (`f`) arşiv `ar`:
+Aşağıdaki örnek, `ar`arşivlemek için bir kayan nokta değişkeninin (`f`) nasıl arşivleneceği gösterilmektedir:
 
 ```
 ar.Write(&f, sizeof( float ));

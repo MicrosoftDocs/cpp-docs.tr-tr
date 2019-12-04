@@ -1,29 +1,29 @@
 ---
-title: Derleyici Hatası C2249
+title: Derleyici hatası C2249
 ms.date: 11/04/2016
 f1_keywords:
 - C2249
 helpviewer_keywords:
 - C2249
 ms.assetid: bdd6697c-e04b-49b9-8e40-d9eb6d74f2b6
-ms.openlocfilehash: f3f82549cf5d9230adfee7e83248e92f8e93e769
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 24db84c9205173f098e493c4ea6393fb96592276
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62301350"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74758898"
 ---
-# <a name="compiler-error-c2249"></a>Derleyici Hatası C2249
+# <a name="compiler-error-c2249"></a>Derleyici hatası C2249
 
-'member': erişim üye erişilebilir yol yok bildirilen sanal temel 'class'
+' üye ': ' class ' sanal tabanında belirtilen üyeye erişmek için erişilebilir yol yok
 
-`member` Bir özel devralınan `virtual` taban sınıf veya yapı.
+`member`, ortak bir `virtual` taban sınıftan veya yapısından devralınır.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C2249 oluşturur.
+Aşağıdaki örnek C2249 oluşturur.
 
-```
+```cpp
 // C2249.cpp
 class A {
 private:
@@ -42,9 +42,9 @@ int main() {
 
 ## <a name="example"></a>Örnek
 
-C++ Standart Kitaplığı'ndan bir akışa başka bir akışa atamak çalışırsanız C2249 da meydana gelebilir.  Aşağıdaki örnek, C2249 oluşturur.
+C++ Standart kitaplıktan başka bir akışa bir akış atamayı denerseniz, C2249 de oluşabilir.  Aşağıdaki örnek C2249 oluşturur.
 
-```
+```cpp
 // C2249_2.cpp
 #include <iostream>
 using namespace std;

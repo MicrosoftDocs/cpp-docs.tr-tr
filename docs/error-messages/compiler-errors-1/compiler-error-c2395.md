@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2395
+title: Derleyici hatası C2395
 ms.date: 11/04/2016
 f1_keywords:
 - C2395
 helpviewer_keywords:
 - C2395
 ms.assetid: 2d9e3b28-8c2c-4f41-a57f-61ef88fc2af0
-ms.openlocfilehash: dd3bd922e2bfa61da2da87d368bb4b28237161f9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2ac59856770b04dd3c4ea14360e0a83dd99f2150
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62303670"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74744946"
 ---
-# <a name="compiler-error-c2395"></a>Derleyici Hatası C2395
+# <a name="compiler-error-c2395"></a>Derleyici hatası C2395
 
-' your_type::operator'op'': CLR veya WinRT işleci geçerli değil. En az bir parametre aşağıdaki türlerde olmalıdır: 'T', 'T %', 'T &', 'T ^', 'T ^ %', 'T ^ &', burada T = 'your_type'
+' your_type:: operator'op ' ': CLR veya WinRT işleci geçerli değil. En az bir parametre şu türlerde olmalıdır: 'T ', 'T% ', 'T & ', 'T ^ ', 'T ^% ', 'T ^ & ', burada T = ' your_type '
 
-Bir Windows çalışma zamanı veya yönetilen türü bir işleç türü işleç dönüş değerinin türü ile aynı olan en az bir parametre yok.
+Windows Çalışma Zamanı veya yönetilen türdeki bir operatör, türü işleç dönüş değerinin türüyle aynı olan en az bir parametreye sahip değildi.
 
-Aşağıdaki örnek, C2395 oluşturur ve bu sorunun nasıl gösterir:
+Aşağıdaki örnek C2395 oluşturur ve nasıl düzeltileceğini gösterir:
 
-```
+```cpp
 // C2395.cpp
 // compile with: /clr /c
 value struct V {

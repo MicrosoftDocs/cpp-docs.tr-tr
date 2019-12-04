@@ -1,29 +1,29 @@
 ---
-title: Derleyici Hatası C2584
+title: Derleyici hatası C2584
 ms.date: 11/04/2016
 f1_keywords:
 - C2584
 helpviewer_keywords:
 - C2584
 ms.assetid: 836e2c0a-86c0-4742-b432-beb0191ad20e
-ms.openlocfilehash: b61ad65555b5d5232468206f6170223c5f160a34
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2c3b10ecd6808ccd864ecf877fe9f1d0e9f30a3a
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62360482"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74748638"
 ---
-# <a name="compiler-error-c2584"></a>Derleyici Hatası C2584
+# <a name="compiler-error-c2584"></a>Derleyici hatası C2584
 
-'Class': doğrudan temel 'Base2' erişilemez; zaten bir 'Base1' tabanı
+' Class ': ' Base2 ' doğrudan tabanına erişilemiyor; zaten bir ' Base1 ' tabanı var
 
-`Class` doğrudan zaten türetilen `Base1`. `Base2` Ayrıca türetildiği `Base1`. `Class` öğesinden türetilemiyor `Base2` , (dolaylı olarak) dan devralan anlamına gelir çünkü `Base1` yeniden değil yasal çünkü `Base1` zaten bir doğrudan temel sınıftır.
+`Class` zaten `Base1`doğrudan türetiliyor. `Base2` Ayrıca `Base1`türetilir. `Class` `Base2` türetilemez, çünkü `Base1` zaten bir doğrudan temel sınıf olduğundan, bu, yasal olmayan `Base1` yeniden devralmıştı.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C2584 oluşturur.
+Aşağıdaki örnek C2584 oluşturur.
 
-```
+```cpp
 // C2584.cpp
 // compile with: /c
 struct A1 {

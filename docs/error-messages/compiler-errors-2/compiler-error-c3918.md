@@ -1,29 +1,29 @@
 ---
-title: Derleyici Hatası C3918
+title: Derleyici hatası C3918
 ms.date: 11/04/2016
 f1_keywords:
 - C3918
 helpviewer_keywords:
 - C3918
 ms.assetid: a8b3a90a-3fe1-4244-a5ff-a31cdae97d98
-ms.openlocfilehash: 2c2d2f2598d06ca228a96f2786fcb02888e29a1b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ff2b59338c707767fa1d3c382feaa1bfcdf29ce2
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62386622"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74758495"
 ---
-# <a name="compiler-error-c3918"></a>Derleyici Hatası C3918
+# <a name="compiler-error-c3918"></a>Derleyici hatası C3918
 
-Kullanım 'member' veri üyesi olmasını gerektirir.
+kullanım, ' Member ' 'ın bir veri üyesi olmasını gerektiriyor
 
-C3918 olayları ile ilgili çeşitli nedenlerle ortaya çıkabilir.
+Olaylar ile ilgili birkaç nedenden dolayı C3918 olabilir.
 
 ## <a name="example"></a>Örnek
 
-Geçerli bağlamda bir sınıf üyesi olması gerektiğinden C3918 ortaya çıkabilir. Aşağıdaki örnek, C3918 oluşturur.
+Geçerli bağlamda bir sınıf üyesi gerekli olduğu için C3918 oluşabilir. Aşağıdaki örnek C3918 oluşturur.
 
-```
+```cpp
 // C3918.cpp
 // compile with: /clr /c
 public ref class C {
@@ -43,11 +43,11 @@ public:
 
 ## <a name="example"></a>Örnek
 
-Önemsiz bir olay (olay adı artık doğrudan erişim için yedekleme deposu temsilcisini olayı için sağlayacak olan) NULL iade etmeye çalışırsanız C3918 de oluşabilir.
+Ayrıca, önemsiz bir olayı null için denetlemeye çalıştığınızda da C3918 (olay adı artık olay için yedekleme deposu temsilcisine doğrudan erişim sağlamacaktır).
 
-Aşağıdaki örnek, C3918 oluşturur.
+Aşağıdaki örnek C3918 oluşturur.
 
-```
+```cpp
 // C3918_2.cpp
 // compile with: /clr /c
 using namespace System;
@@ -68,9 +68,9 @@ ref struct EventSource : public IEFace {
 
 ## <a name="example"></a>Örnek
 
-Yanlış bir olaya abone olursanız C3918 da meydana gelebilir. Aşağıdaki örnek, C3918 oluşturur.
+Bir olaya yanlış bir şekilde abone olduğunuzda, C3918 de oluşabilir. Aşağıdaki örnek C3918 oluşturur.
 
-```
+```cpp
 // C3918_3.cpp
 // compile with: /clr /c
 using namespace System;

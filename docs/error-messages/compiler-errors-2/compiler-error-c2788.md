@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2788
+title: Derleyici hatası C2788
 ms.date: 11/04/2016
 f1_keywords:
 - C2788
 helpviewer_keywords:
 - C2788
 ms.assetid: 8688fc5c-e652-43b4-b407-9c488c76f2db
-ms.openlocfilehash: 0025aa5211c2736860bdd30cad4315f63fba9337
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a708e711fd086d31ecd5e8cc9c35679571af48c4
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62256899"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74739577"
 ---
-# <a name="compiler-error-c2788"></a>Derleyici Hatası C2788
+# <a name="compiler-error-c2788"></a>Derleyici hatası C2788
 
-'identifier': Bu nesneyle ilişkili birden fazla GUID
+' tanımlayıcı ': Bu nesneyle ilişkili birden fazla GUID
 
-[__Uuidof](../../cpp/uuidof-operator.md) işleci ile bağlı bir GUID veya böyle bir kullanıcı tanımlı türde bir nesne kullanıcı tanımlı bir tür alır. Bağımsız değişken bir nesne birden çok GUID'yi olduğunda bu hata oluşur.
+[__Uuidof](../../cpp/uuidof-operator.md) işleci, bir GUID eklenmiş veya bir nesne Kullanıcı tanımlı türü olan Kullanıcı tanımlı bir tür alır. Bağımsız değişken birden çok GUID içeren bir nesne olduğunda bu hata oluşur.
 
-Aşağıdaki örnek, C2788 oluşturur:
+Aşağıdaki örnek C2788 oluşturur:
 
-```
+```cpp
 // C2788.cpp
 #include <windows.h>
 struct __declspec(uuid("00000001-0000-0000-0000-000000000000")) A {};

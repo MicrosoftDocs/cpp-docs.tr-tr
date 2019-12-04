@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3708
+title: Derleyici hatası C3708
 ms.date: 11/04/2016
 f1_keywords:
 - C3708
 helpviewer_keywords:
 - C3708
 ms.assetid: 45e71564-9c7f-437f-98d8-a735ce162ed0
-ms.openlocfilehash: 7ee9d59f12cc9e748b08b3e4a704420ea5c58be6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b5a2688cf138733a7a2891238953bc9fd894e483
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62328516"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74757975"
 ---
-# <a name="compiler-error-c3708"></a>Derleyici Hatası C3708
+# <a name="compiler-error-c3708"></a>Derleyici hatası C3708
 
-'interface': 'anahtar sözcüğü'; yanlış kullanımı bir uyumlu olay kaynağının bir üyesi olmanız gerekir
+' interface ': ' anahtar sözcük ' yanlış kullanımı; uyumlu bir olay kaynağının üyesi olmalıdır
 
-Bir arabirim olay olarak bildirmek için olay bildirimi bir olay kaynağı olmalıdır.
+Bir arabirimi olay olarak bildirmek için, olay bildiriminin bir olay kaynağında olması gerekir.
 
-Aşağıdaki örnek, C3708 oluşturur:
+Aşağıdaki örnek C3708 oluşturur:
 
-```
+```cpp
 // C3708.cpp
 // compile with: /c
 #define _ATL_ATTRIBUTES 1

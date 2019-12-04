@@ -1,29 +1,29 @@
 ---
-title: Derleyici Hatası C3699
+title: Derleyici hatası C3699
 ms.date: 11/04/2016
 f1_keywords:
 - C3699
 helpviewer_keywords:
 - C3699
 ms.assetid: 47c29afc-ab8b-4238-adfe-788dd6e00b3b
-ms.openlocfilehash: 93058d34ca9a17ab175a55a7bc7b953d369e65c5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ec902266550e591623894823e6336bd2436bfbd5
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62324772"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74758040"
 ---
-# <a name="compiler-error-c3699"></a>Derleyici Hatası C3699
+# <a name="compiler-error-c3699"></a>Derleyici hatası C3699
 
-'operator': Bu yöneltme 'type' türü üzerinde kullanılamaz
+' operator ': Bu yöneltme ' Type ' türü üzerinde kullanılamaz
 
-İzin verilmez yöneltme kullanmak için bir girişimde bulunuldu `type`.
+`type`izin verilmeyen yöneltme kullanma girişiminde bulunuldu.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C3699 oluşturur.
+Aşağıdaki örnek C3699 oluşturur.
 
-```
+```cpp
 // C3699.cpp
 // compile with: /clr /c
 using namespace System;
@@ -36,9 +36,9 @@ int main() {
 
 ## <a name="example"></a>Örnek
 
-Önemsiz özellik başvuru türüne sahip olamaz. Bkz: [özelliği](../../extensions/property-cpp-component-extensions.md) daha fazla bilgi için. Aşağıdaki örnek, C3699 oluşturur.
+Önemsiz bir özellik başvuru türüne sahip olamaz. Daha fazla bilgi için bkz. [özelliği](../../extensions/property-cpp-component-extensions.md) . Aşağıdaki örnek C3699 oluşturur.
 
-```
+```cpp
 // C3699_b.cpp
 // compile with: /clr /c
 ref struct C {
@@ -49,9 +49,9 @@ ref struct C {
 
 ## <a name="example"></a>Örnek
 
-Bir tanıtıcı izleme başvurusu için bir "bir işaretçi işaretçisi" söz dizimi eşdeğerdir. Aşağıdaki örnek, C3699 oluşturur.
+Bir "işaretçi işaretçisinin" söz dizimi, izleme başvurusunun bir tanıtıcıdır. Aşağıdaki örnek C3699 oluşturur.
 
-```
+```cpp
 // C3699_c.cpp
 // compile with: /clr /c
 using namespace System;

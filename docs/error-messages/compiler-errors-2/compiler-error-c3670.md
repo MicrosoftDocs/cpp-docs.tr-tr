@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3670
+title: Derleyici hatası C3670
 ms.date: 11/04/2016
 f1_keywords:
 - C3670
 helpviewer_keywords:
 - C3670
 ms.assetid: d0fa9c6e-8f90-48c7-9066-31b4fa5942eb
-ms.openlocfilehash: a9fe72501152891d3f82567f09922dda9a9b711a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1b52f58f47027d88d9b0e150ebd2bf4588161553
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62214957"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74758131"
 ---
-# <a name="compiler-error-c3670"></a>Derleyici Hatası C3670
+# <a name="compiler-error-c3670"></a>Derleyici hatası C3670
 
-'override': 'method' erişilemez taban sınıfı yöntemi geçersiz kılınamıyor
+' override ': erişilemeyen temel sınıf yöntemi ' Method ' geçersiz kılınamaz
 
-Bir geçersiz kılma yalnızca türetilmiş bir tür içinde kullanılabilir getirir, erişim düzeyi bir işlev üzerinde gerçekleştirilebilir. Daha fazla bilgi için [açık geçersiz kılmalar](../../extensions/explicit-overrides-cpp-component-extensions.md).
+Bir geçersiz kılma, yalnızca erişim düzeyi türetilmiş bir türde kullanılabilir hale getiren bir işlevde gerçekleşebilir. Daha fazla bilgi için bkz. [Açık geçersiz kılmalar](../../extensions/explicit-overrides-cpp-component-extensions.md).
 
-Aşağıdaki örnek, C3670 oluşturur:
+Aşağıdaki örnek C3670 oluşturur:
 
-```
+```cpp
 // C3670.cpp
 // compile with: /clr /c
 public ref class C {

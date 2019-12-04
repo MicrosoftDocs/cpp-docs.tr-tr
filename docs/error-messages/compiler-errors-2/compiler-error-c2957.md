@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2957
+title: Derleyici hatası C2957
 ms.date: 11/04/2016
 f1_keywords:
 - C2957
 helpviewer_keywords:
 - C2957
 ms.assetid: 9cb4526f-4af8-47e9-b786-56192627ca72
-ms.openlocfilehash: 51745b60d89c28280c8c48cdbba3762d92529073
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 122d6919271a165ceb0dad31a344e59cb3457a25
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62300758"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74742775"
 ---
-# <a name="compiler-error-c2957"></a>Derleyici Hatası C2957
+# <a name="compiler-error-c2957"></a>Derleyici hatası C2957
 
-'delim': Geçersiz sol sınırlayıcı: beklenen ' <'
+' delip ': geçersiz sol sınırlayıcı: ' < ' bekleniyor
 
-Genel sınıf ill oluşturulmuş.
+Genel bir sınıf hatalı biçimlendirilmiş.
 
-Aşağıdaki örnek, C2957 oluşturur:
+Aşağıdaki örnek C2957 oluşturur:
 
-```
+```cpp
 // C2957.cpp
 // compile with: /clr /LD
 generic << class T>   // C2957

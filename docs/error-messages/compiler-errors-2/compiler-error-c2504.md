@@ -1,38 +1,38 @@
 ---
-title: Derleyici Hatası C2504
+title: Derleyici hatası C2504
 ms.date: 11/04/2016
 f1_keywords:
 - C2504
 helpviewer_keywords:
 - C2504
 ms.assetid: c9e002a6-a4ee-4ba7-970e-edf4adb83692
-ms.openlocfilehash: 8f428699aa14cbd1f021a57ed8dcabefa8b24c16
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d47d99962d089d873cb9bbdf9baac7eab706fc16
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62165092"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74746896"
 ---
-# <a name="compiler-error-c2504"></a>Derleyici Hatası C2504
+# <a name="compiler-error-c2504"></a>Derleyici hatası C2504
 
-'class': taban sınıf tanımsız
+' class ': taban sınıf tanımsız
 
-Temel sınıf bildirildi, ancak hiçbir zaman tanımlı.  Olası nedenler:
+Temel sınıf tanımlanmış, ancak hiç tanımlanmadı.  Olası nedenler:
 
-1. İçerme dosyası eksik.
+1. Eksik içerme dosyası.
 
-1. Dış temel sınıf bildirilmemiş olan [extern](../../cpp/using-extern-to-specify-linkage.md).
+1. Dış temel sınıf [extern](../../cpp/using-extern-to-specify-linkage.md)ile bildirilmemiş.
 
-Aşağıdaki örnek, C2504 oluşturur:
+Aşağıdaki örnek C2504 oluşturur:
 
-```
+```cpp
 // C2504.cpp
 // compile with: /c
 class A;
 class B : public A {};   // C2504
 ```
 
-TAMAM
+Tamam
 
 ```
 class C{};

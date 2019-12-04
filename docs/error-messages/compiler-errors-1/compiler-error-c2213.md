@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2213
+title: Derleyici hatası C2213
 ms.date: 11/04/2016
 f1_keywords:
 - C2213
 helpviewer_keywords:
 - C2213
 ms.assetid: ff012278-7f3b-4d49-aaed-2349756f6225
-ms.openlocfilehash: 125529aa23d43d9acd63652f73f636fee567f90a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2a5f85adca30474ff8e60dc57694eba099b39387
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62400441"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74741345"
 ---
-# <a name="compiler-error-c2213"></a>Derleyici Hatası C2213
+# <a name="compiler-error-c2213"></a>Derleyici hatası C2213
 
-'değiştiricisi': __based için geçersiz bağımsız değişken
+' değiştirici ': __based için geçersiz bağımsız değişken
 
-Bağımsız değişken değiştirme `__based` geçersiz.
+`__based` değiştirme bağımsız değişkeni geçersiz.
 
-Aşağıdaki örnek, C2213 oluşturur:
+Aşağıdaki örnek C2213 oluşturur:
 
-```
+```cpp
 // C2213.cpp
 // compile with: /c
 int i;

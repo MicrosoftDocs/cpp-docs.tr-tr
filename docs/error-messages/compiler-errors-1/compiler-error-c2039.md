@@ -1,29 +1,29 @@
 ---
-title: Derleyici Hatası C2039
+title: Derleyici hatası C2039
 ms.date: 11/04/2016
 f1_keywords:
 - C2039
 helpviewer_keywords:
 - C2039
 ms.assetid: f9dfd521-9b36-4454-a69c-d63f45b606bb
-ms.openlocfilehash: ff795a551c091deb73c5fae1e3b67a61d9966ff0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 67c64de676c624369fb5a8bc07b9b5de4833fe7f
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62266861"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74757689"
 ---
-# <a name="compiler-error-c2039"></a>Derleyici Hatası C2039
+# <a name="compiler-error-c2039"></a>Derleyici hatası C2039
 
-'ıdentifier1': 'identifier2' üyesi değil
+' Identifier1 ': bir ' identifier2 ' üyesi değil
 
-Yanlış kod çağırır veya yapısı, sınıf veya birleşim üyesi için ifade eder.
+Kod yanlış bir yapı, sınıf veya birleşim üyesine çağrı yapar veya onu ifade eder.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C2039 oluşturur.
+Aşağıdaki örnek C2039 oluşturur.
 
-```
+```cpp
 // C2039.cpp
 struct S {
    int mem0;
@@ -37,9 +37,9 @@ int main() {
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C2039 oluşturur.
+Aşağıdaki örnek C2039 oluşturur.
 
-```
+```cpp
 // C2039_b.cpp
 // compile with: /clr
 using namespace System;
@@ -52,9 +52,9 @@ int main() {
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C2039 oluşturur.
+Aşağıdaki örnek C2039 oluşturur.
 
-```
+```cpp
 // C2039_c.cpp
 // compile with: /clr /c
 ref struct S {
@@ -70,7 +70,7 @@ int S::Count::get() { return 0; }   // OK
 
 ## <a name="example"></a>Örnek
 
-Varsayılan dizin oluşturucu yanlış erişmeye çalışırsanız C2039 da meydana gelebilir. Aşağıdaki örnek, C# dilinde yazılmış bir bileşeni tanımlar.
+Varsayılan bir dizin oluşturucuya yanlış erişmeyi denerseniz, C2039 de oluşabilir. Aşağıdaki örnek, içinde C#yazılmış bir bileşeni tanımlar.
 
 ```
 // C2039_d.cs
@@ -87,9 +87,9 @@ public class B {
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C2039 oluşturur.
+Aşağıdaki örnek C2039 oluşturur.
 
-```
+```cpp
 // C2039_e.cpp
 // compile with: /clr
 using namespace System;
@@ -106,9 +106,9 @@ int main() {
 
 ## <a name="example"></a>Örnek
 
-Genel türler kullanırsanız C2039 da meydana gelebilir. Aşağıdaki örnek, C2039 oluşturur.
+C2039, genel türler kullandığınızda da oluşabilir. Aşağıdaki örnek C2039 oluşturur.
 
-```
+```cpp
 // C2039_f.cpp
 // compile with: /clr
 interface class I {};
@@ -131,11 +131,11 @@ int main() {
 
 ## <a name="example"></a>Örnek
 
-Yönetilen veya yönetilmeyen kaynaklar serbest bırakılacaksa çalıştığınızda C2039 ortaya çıkabilir. Daha fazla bilgi için [yok ediciler ve sonlandırıcılar](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers).
+Yönetilen veya yönetilmeyen kaynakları serbest bırakmaya çalıştığınızda C2039 oluşabilir. Daha fazla bilgi için bkz. yok [ediciler ve sonlandırıcılar](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers).
 
-Aşağıdaki örnek, C2039 oluşturur.
+Aşağıdaki örnek C2039 oluşturur.
 
-```
+```cpp
 // C2039_g.cpp
 // compile with: /clr
 using namespace System;

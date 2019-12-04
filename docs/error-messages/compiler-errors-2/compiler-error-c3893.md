@@ -1,29 +1,29 @@
 ---
-title: Derleyici Hatası C3893
+title: Derleyici hatası C3893
 ms.date: 11/04/2016
 f1_keywords:
 - C3893
 helpviewer_keywords:
 - C3893
 ms.assetid: 90d52eae-6ef2-4db1-b7ad-92f9e8b140fb
-ms.openlocfilehash: 45a140d3fd5f510ee2434950ca3c4b47c0756d75
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 20c17eaa6555b5511ecbc930eacdb2ec92475b23
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62385504"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74749509"
 ---
-# <a name="compiler-error-c3893"></a>Derleyici Hatası C3893
+# <a name="compiler-error-c3893"></a>Derleyici hatası C3893
 
-'var': initonly veri üyesinin lvalue kullanımına yalnızca 'type_name' sınıfının bir örnek oluşturucusunda izin verilir
+' var ': initonly veri üyesinin lvalue kullanımına yalnızca ' type_name ' sınıfının bir örnek oluşturucusunda izin verilir
 
-Statik [initonly](../../dotnet/initonly-cpp-cli.md) veri üyeleri yalnızca statik bir oluşturucuda adresleri sahiptir.
+Statik [initonly](../../dotnet/initonly-cpp-cli.md) veri üyeleri yalnızca kendi adreslerini statik bir oluşturucuda alabilir.
 
-Örnek (statik olmayan) initonly veri üyeleri yalnızca adresleri (statik olmayan) örneği oluşturucularda alınmış olabilir.
+Örnek (statik olmayan) initonly veri üyeleri yalnızca kendi adreslerine örnek (statik olmayan) oluşturucular içinde alınmış olabilir.
 
-Aşağıdaki örnek, C3893 oluşturur:
+Aşağıdaki örnek C3893 oluşturur:
 
-```
+```cpp
 // C3893.cpp
 // compile with: /clr
 ref struct Y1 {

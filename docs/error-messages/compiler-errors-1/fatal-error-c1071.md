@@ -6,28 +6,28 @@ f1_keywords:
 helpviewer_keywords:
 - C1071
 ms.assetid: 489f1786-370e-4ecd-af67-538fe6e5bd4e
-ms.openlocfilehash: 8fe6b0f3bb1253f72c97f29070ba81cdbdf80508
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2f39359d55b5564c6379c84f07e942cf3484e011
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62166665"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74747416"
 ---
 # <a name="fatal-error-c1071"></a>Önemli hata C1071
 
-Beklenmeyen açıklamada dosya sonu bulundu
+açıklamada beklenmeyen dosya sonu bulundu
 
-Derleyici, bir açıklama taranırken dosya sonuna ulaşıldı.
+Derleyici, bir yorumu tararken dosyanın sonuna ulaştı.
 
-### <a name="to-fix-by-checking-the-following-possible-causes"></a>Aşağıdaki olası nedenleri kontrol ederek düzeltmek için
+### <a name="to-fix-by-checking-the-following-possible-causes"></a>Aşağıdaki olası nedenleri denetleyerek onarmak için
 
-1. Açıklama Sonlandırıcı eksik (* /).
+1. Eksik açıklama Sonlandırıcı (*/).
 
-1. Sonra bir kaynak dosyasının son satırda açıklama bulunan bir yeni satır karakteri eksik.
+1. Kaynak dosyanın son satırındaki bir açıklamadan sonra yeni satır karakteri eksik.
 
-Aşağıdaki örnek, C1071 oluşturur:
+Aşağıdaki örnek C1071 oluşturur:
 
-```
+```cpp
 // C1071.cpp
 int main() {
 }

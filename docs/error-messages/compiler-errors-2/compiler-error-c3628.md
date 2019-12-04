@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3628
+title: Derleyici hatası C3628
 ms.date: 11/04/2016
 f1_keywords:
 - C3628
 helpviewer_keywords:
 - C3628
 ms.assetid: 0ff5a4a4-fcc9-47a0-a4d8-8af9cf2815f6
-ms.openlocfilehash: 581aae7e1f979b3dd39caf2ce3d263fdb856c56a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9976cb2425f8f855ffb2903c07de22822c781e20
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62221691"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74755830"
 ---
-# <a name="compiler-error-c3628"></a>Derleyici Hatası C3628
+# <a name="compiler-error-c3628"></a>Derleyici hatası C3628
 
-'temel sınıfı': yönetilen veya WinRTclasses yalnızca ortak devralmayı destekler
+' temel sınıf ': yönetilen veya WinRTclasses yalnızca genel devralmayı destekler
 
-Yönetilen veya WinRT kullanmak için bir girişimde bulunuldu olarak sınıf bir [özel](../../cpp/private-cpp.md) veya [korumalı](../../cpp/protected-cpp.md) temel sınıfı. Yönetilen veya WinRT sınıfı yalnızca kullanılabilir sahip bir temel sınıf olarak [genel](../../cpp/public-cpp.md) erişim.
+Yönetilen veya WinRT sınıfı [özel](../../cpp/private-cpp.md) veya [korumalı](../../cpp/protected-cpp.md) bir temel sınıf olarak kullanılmaya çalışıldı. Yönetilen veya WinRT sınıfı, yalnızca [ortak](../../cpp/public-cpp.md) erişime sahip bir temel sınıf olarak kullanılabilir.
 
-Aşağıdaki örnek, C3628 oluşturur ve bu sorunun nasıl gösterir:
+Aşağıdaki örnek C3628 oluşturur ve nasıl düzeltileceğini gösterir:
 
-```
+```cpp
 // C3628a.cpp
 // compile with: /clr
 ref class B {

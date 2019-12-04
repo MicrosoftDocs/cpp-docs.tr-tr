@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3208
+title: Derleyici hatası C3208
 ms.date: 11/04/2016
 f1_keywords:
 - C3208
 helpviewer_keywords:
 - C3208
 ms.assetid: 6d060bfe-52cf-4599-8f70-bdeb5a670df3
-ms.openlocfilehash: fa665f17de7ff6bec00ecdaf9d1749b0626c9181
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 61577ac4f28b8432a4425a76002ed5ad83186419
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62402677"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74761900"
 ---
-# <a name="compiler-error-c3208"></a>Derleyici Hatası C3208
+# <a name="compiler-error-c3208"></a>Derleyici hatası C3208
 
-'function': 'class' sınıf şablonunun şablon parametre listesiyle şablon şablon parametresi 'parametresi' şablon parametre listesiyle eşleşmiyor
+' function ': ' class ' sınıf şablonunun şablon parametre listesi ' Parameter ' şablon parametresi için şablon parametre listesiyle eşleşmiyor
 
-Şablon Şablon parametresi, aynı sayıda şablon parametreleri olarak sağlanan sınıf şablonu yok.
+Şablon şablonu parametresi, belirtilen sınıf şablonuyla aynı sayıda şablon parametresine sahip değil.
 
-Aşağıdaki örnek, C3208 oluşturur:
+Aşağıdaki örnek C3208 oluşturur:
 
-```
+```cpp
 // C3208.cpp
 template <template <class T> class TT >
 int f();

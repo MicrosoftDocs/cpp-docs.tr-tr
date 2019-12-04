@@ -1,33 +1,33 @@
 ---
-title: Derleyici Hatası C3480
+title: Derleyici hatası C3480
 ms.date: 11/04/2016
 f1_keywords:
 - C3480
 helpviewer_keywords:
 - C3480
 ms.assetid: 7b2e055a-9604-4d13-861b-b38bda1a6940
-ms.openlocfilehash: 2ebcce496fd06c30420558d80cc0a0c9318d4376
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 255fb12d587a94aac798814736f0b26770f608b0
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62173430"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74760484"
 ---
-# <a name="compiler-error-c3480"></a>Derleyici Hatası C3480
+# <a name="compiler-error-c3480"></a>Derleyici hatası C3480
 
-'var': bir lambda yakalama değişkeni bir kapsayan işlev kapsamından gelmelidir
+' var ': bir Lambda yakalama değişkeni bir kapsayan işlev kapsamından gelmelidir
 
-Lambda yakalama değişkeni bir kapsayan işlev kapsamından değil.
+Lambda yakalama değişkeni kapsayan bir işlev kapsamından değil.
 
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için
 
-- Değişkeni, lambda ifadesinin yakalama listeden kaldırın.
+- Değişkeni lambda ifadesinin yakalama listesinden kaldırın.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek C3480 oluşturur çünkü değişken `global` bir kapsayan işlev kapsamından değil:
+Aşağıdaki örnek, `global` değişken bir kapsayan işlev kapsamından olmadığından C3480 oluşturuyor:
 
-```
+```cpp
 // C3480a.cpp
 
 int global = 0;
@@ -39,9 +39,9 @@ int main()
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnekte, değişken kaldırarak C3480 çözümler `global` lambda ifadesinin yakalama listesinden:
+Aşağıdaki örnek, `global` değişkenini lambda ifadesinin yakalama listesinden kaldırarak C3480 çözer:
 
-```
+```cpp
 // C3480b.cpp
 
 int global = 0;

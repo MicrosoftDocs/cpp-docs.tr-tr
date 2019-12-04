@@ -1,29 +1,29 @@
 ---
-title: Derleyici Hatası C3633
+title: Derleyici hatası C3633
 ms.date: 11/04/2016
 f1_keywords:
 - C3633
 helpviewer_keywords:
 - C3633
 ms.assetid: 7d65babf-2191-4d67-a69f-f5c4c2ddf946
-ms.openlocfilehash: 2d96a0e4f5f0b34c76f41058316c7f158f1a939d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5f44c94cbb3c945406835816d8fc6ed7c39480eb
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62385712"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74742632"
 ---
-# <a name="compiler-error-c3633"></a>Derleyici Hatası C3633
+# <a name="compiler-error-c3633"></a>Derleyici hatası C3633
 
-'member' yönetilen 'type' üyesi olarak tanımlanamaz
+yönetilen ' Type ' üyesi olarak ' Member ' tanımlanamıyor
 
-CLR başvuru sınıf veri üyeleri, bir POD harici C++ türünde olamaz.  Yalnızca bir CLR türü'nda POD yerel bir tür örneği oluşturabilir.  Örneğin, bir POD türü kopya oluşturucu veya bir atama işleci içeremez.
+CLR başvuru sınıfı veri üyeleri POD C++ olmayan bir tür olamaz.  CLR türünde yalnızca POD yerel türü oluşturabilirsiniz.  Örneğin, POD türü bir kopya Oluşturucusu veya atama işleci içeremez.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C3633 oluşturur.
+Aşağıdaki örnek C3633 oluşturur.
 
-```
+```cpp
 // C3633.cpp
 // compile with: /clr /c
 #pragma warning( disable : 4368 )

@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2502
+title: Derleyici hatası C2502
 ms.date: 11/04/2016
 f1_keywords:
 - C2502
 helpviewer_keywords:
 - C2502
 ms.assetid: affa0b86-15fc-4e17-b7f2-6aad4a3771c4
-ms.openlocfilehash: e23ccae55c40c9652f5a3e1f55c834a968bca784
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4ff3523ac803e7804ca56532631fe77b240c215d
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62165599"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74746922"
 ---
-# <a name="compiler-error-c2502"></a>Derleyici Hatası C2502
+# <a name="compiler-error-c2502"></a>Derleyici hatası C2502
 
-'identifier': taban sınıfta çok fazla erişim değiştiricileri
+' tanımlayıcı ': taban sınıfta çok fazla sayıda erişim değiştiricisi var
 
-Temel sınıfın birden fazla erişim değiştiricisi vardır. Yalnızca bir erişim belirleyici (`public`, `private`, veya `protected`) izin verilir.
+Temel sınıfta birden fazla erişim değiştiricisi vardır. Yalnızca bir erişim değiştiricisine (`public`, `private`veya `protected`) izin verilir.
 
-Aşağıdaki örnek, C2502 oluşturur:
+Aşağıdaki örnek C2502 oluşturur:
 
-```
+```cpp
 // C2502.cpp
 // compile with: /c
 class A { };

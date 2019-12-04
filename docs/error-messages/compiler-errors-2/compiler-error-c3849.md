@@ -1,29 +1,29 @@
 ---
-title: Derleyici Hatası C3849
+title: Derleyici hatası C3849
 ms.date: 11/04/2016
 f1_keywords:
 - C3849
 helpviewer_keywords:
 - C3849
 ms.assetid: 5347140e-1a81-4841-98c0-b63d98264b64
-ms.openlocfilehash: ec6725472d31b0b2ade0cd73da4440036239fde3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8492f108b57fbc63bd171276b1aa601f96a28b24
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62381065"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74754894"
 ---
-# <a name="compiler-error-c3849"></a>Derleyici Hatası C3849
+# <a name="compiler-error-c3849"></a>Derleyici hatası C3849
 
-'type' türündeki bir ifade üzerinde işlev stili çağırma tüm sayı kullanılabilir işleç aşırı yüklemeleri için const ve/veya volatile niteleyicileri kaybeder
+' Type ' türündeki bir ifade üzerinde işlev stili çağrı, kullanılabilir tüm işleç aşırı yüklemeleri için const ve/veya volatile niteleyicileri kaybeder
 
-Belirtilen bir const-volatile türüne sahip bir değişken, yalnızca üye ile aynı veya daha büyük const-volatile nitelikleri tanımlanan işlevleri çağırabilir.
+Belirtilen const-volatile türüne sahip bir değişken, yalnızca aynı veya daha fazla const-volatile niteliğine sahip üye işlevlerini çağırabilir.
 
-Bu hatayı düzeltmek için uygun bir üye işlevi sağlar. Dönüştürme nitelik kaybına neden olduğunda bir const veya volatile tam nesne üzerinde bir dönüştürme yürütülemiyor. Niteleyicileri elde edebilir, ancak bir dönüştürme niteleyicileri kaybeder olamaz.
+Bu hatayı onarmak için uygun bir üye işlevi sağlayın. Dönüştürme, niteliğin kaybedilmesine neden olduğunda const veya volatile nitelikli bir nesne üzerinde dönüştürme yürütemezsiniz. Niteleyiciler kazanabilirsiniz, ancak bir dönüştürmede niteleyicileri kaybedebilirsiniz.
 
-Aşağıdaki örnekler C3849 oluştur:
+Aşağıdaki örnekler C3849 oluşturur:
 
-```
+```cpp
 // C3849.cpp
 void glbFunc3(int i, char c)
 {

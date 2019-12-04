@@ -1,33 +1,33 @@
 ---
-title: Derleyici Hatası C3163
+title: Derleyici hatası C3163
 ms.date: 11/04/2016
 f1_keywords:
 - C3163
 helpviewer_keywords:
 - C3163
 ms.assetid: 17dcafa3-f416-4e04-a232-f9569218ba75
-ms.openlocfilehash: eda3910c99f4c8ea96568f2d475c5d6a1e4cdc7c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 436fb112758dfdec9997ff7e6dd7ef8f9dcdc66e
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62174232"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74761783"
 ---
-# <a name="compiler-error-c3163"></a>Derleyici Hatası C3163
+# <a name="compiler-error-c3163"></a>Derleyici hatası C3163
 
-'oluşturmak': öznitelikler önceki bildirimle tutarsız
+' yapı ': öznitelikler önceki bildirimle tutarsız
 
-Bir bildirimi için uygulanan öznitelikleri bir tanımına uygulanan öznitelikleri çakışıyor.
+Bir tanıma uygulanan öznitelikler, bir bildirime uygulanan öznitelik (ler) ile çakışıyor.
 
-İleri dönük bildirimi özniteliklerinde ortadan kaldırmak için C3163 çözmenin bir yolu var. İleri dönük bildiriminin üzerinde herhangi bir özniteliği tanımı özniteliklerinde değerinden küçük olması veya en fazla onlara eşit.
+C3163 çözümlemek için bir yol, ileri bildiriminde öznitelikleri ortadan kaldırmektir. Bir iletme bildirimindeki tüm öznitelikler, tanımdaki özniteliklerden veya en çoğuna eşit olmalıdır.
 
-C3163 hatanın olası nedeni, Microsoft kaynak kodu ek açıklama dili (SAL) içerir. SAL makroları kullanarak projenizi derleme sürece genişletmeyin **/ analyze** bayrağı. İle yeniden derlemeniz denerseniz, bir program olan olmadan düzgün bir şekilde derlendiğinden / analyze C3163 fırlatabilir / analyze seçeneği. SAL hakkında daha fazla bilgi için bkz: [SAL ek açıklamalarını](../../c-runtime-library/sal-annotations.md).
+C3163 hatasının olası bir nedeni, Microsoft kaynak kodu ek açıklama dili (SAL) ile ilgilidir. **/Analyze** işaretini kullanarak projenizi derlemenize kadar Sal makroları genişlemez. /Analyze olmadan düzgün bir şekilde derlenen bir program,/Analyze seçeneği ile yeniden derlemenize çalışırsanız C3163 oluşturabilir. SAL hakkında daha fazla bilgi için bkz. [sal ek açıklamaları](../../c-runtime-library/sal-annotations.md).
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C3163 oluşturur.
+Aşağıdaki örnek C3163 oluşturur.
 
-```
+```cpp
 // C3163.cpp
 // compile with: /clr /c
 using namespace System;

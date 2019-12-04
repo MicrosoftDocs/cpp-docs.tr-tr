@@ -1,31 +1,31 @@
 ---
-title: Derleyici Hatası C3706
+title: Derleyici hatası C3706
 ms.date: 11/04/2016
 f1_keywords:
 - C3706
 helpviewer_keywords:
 - C3706
 ms.assetid: d20a33eb-d625-46c5-ac87-32075a590d07
-ms.openlocfilehash: 2d474db5a4d50aed7b59e6f48fb5a3e8165f10c6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 810ec59a814b04349913648fb49a03eb63912cd9
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62400298"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74757988"
 ---
-# <a name="compiler-error-c3706"></a>Derleyici Hatası C3706
+# <a name="compiler-error-c3706"></a>Derleyici hatası C3706
 
-'function': COM olaylarını başlatmak için bir COM arabirimi olması gerekir
+' function ': COM olaylarını başlatmak için bir COM arabirimi olmalıdır
 
-COM olaylarını başlatmak için kullandığınız olay arabirim bir COM arabirimi olması gerekir. Bu durumda, arabirim ya da bir görsel kullanılarak tanımlanması gerekir C++ özniteliği veya içeri aktarılan kullanarak [#import](../../preprocessor/hash-import-directive-cpp.md) gelen bir tür kitaplığı #import's embedded_idl özniteliğine sahip.
+COM olaylarını başlatmak için kullandığınız olay arabirimi bir COM arabirimi olmalıdır. Bu durumda, arabirim bir görsel C++ özniteliği kullanılarak tanımlanmalıdır ya da #import embedded_idl özniteliğiyle bir tür kitaplığından [#import](../../preprocessor/hash-import-directive-cpp.md) kullanılarak içeri aktarılmalıdır.
 
-Unutmayın `#include` aşağıdaki örnekte gösterilen ATL üstbilgi dosyalarını satırlarını COM olayları kullanmak için gereklidir. Bu hatayı düzeltmek için olun `IEvents` (olay arabirimi) aşağıdakilerden birini uygulayarak bir COM arabirimi öznitelikleri için arabirim tanımı: [nesne](../../windows/object-cpp.md), [çift](../../windows/dual.md), veya [ dispinterface](../../windows/dispinterface.md).
+Aşağıdaki örnekte gösterilen ATL üstbilgi dosyalarının `#include` satırlarının COM olaylarını kullanmak için gerekli olduğunu unutmayın. Bu hatayı onarmak için aşağıdaki özniteliklerden birini arabirim tanımına uygulayarak bir COM arabirimi `IEvents` (olay arabirimi) yapın: [nesne](../../windows/object-cpp.md), [çift](../../windows/dual.md)veya [dispınterface](../../windows/dispinterface.md).
 
-Bir arabirim MIDL tarafından oluşturulan üstbilgi dosyası ise, derleyici bir COM arabirimi olarak bunu tanımaz.
+Bir arabirim MıDL tarafından oluşturulan bir üstbilgi dosyasından ise, derleyici bunu bir COM arabirimi olarak tanımaz.
 
-Aşağıdaki örnek, C3706 oluşturur:
+Aşağıdaki örnek C3706 oluşturur:
 
-```
+```cpp
 // C3706.cpp
 // compile with: /c
 // C3706 expected

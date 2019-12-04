@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3233
+title: Derleyici hatası C3233
 ms.date: 11/04/2016
 f1_keywords:
 - C3233
 helpviewer_keywords:
 - C3233
 ms.assetid: a9210830-1136-4f02-ba41-030c85f93547
-ms.openlocfilehash: 4a0cf849f7b87bd8d61b0ef087cf91d15669d719
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 110d1ef84ca2f558f597afadadbede61a89da20c
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62173840"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74751111"
 ---
-# <a name="compiler-error-c3233"></a>Derleyici Hatası C3233
+# <a name="compiler-error-c3233"></a>Derleyici hatası C3233
 
-'type': genel tür parametresi zaten kısıtlanmış
+' Type ': genel tür parametresi zaten kısıtlanmış
 
-Genel parametre birden fazla kısıtlamak için geçerli değil `where` yan tümcesi.
+Birden fazla `where` yan tümcesindeki genel bir parametreyi kısıtlamak geçerli değildir.
 
-Aşağıdaki örnek, C3233 oluşturur:
+Aşağıdaki örnek C3233 oluşturur:
 
-```
+```cpp
 // C3233.cpp
 // compile with: /clr /LD
 

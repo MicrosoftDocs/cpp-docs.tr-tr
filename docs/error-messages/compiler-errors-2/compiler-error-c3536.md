@@ -1,33 +1,33 @@
 ---
-title: Derleyici Hatası C3536
+title: Derleyici hatası C3536
 ms.date: 11/04/2016
 f1_keywords:
 - C3536
 helpviewer_keywords:
 - C3536
 ms.assetid: 8d866075-866b-49eb-9979-ee27b308f7e3
-ms.openlocfilehash: a16c5bd46d806d09861d5734b637c2c9d9b2f9d0
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: a140847b642ac2437b67aa957328c3b8fbfc592d
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64345485"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74761575"
 ---
-# <a name="compiler-error-c3536"></a>Derleyici Hatası C3536
+# <a name="compiler-error-c3536"></a>Derleyici hatası C3536
 
-'symbol': başlatılmadan önce kullanılamaz
+' symbol ': başlatılmadan önce kullanılamaz
 
-Belirtilen sembol başlatılmadan önce kullanılamaz. Uygulamada, kendisini başlatmak için bir değişken kullanılamaz anlamına gelir.
+Belirtilen sembol başlatılmadan önce kullanılamaz. Pratikte bu, değişken kendisini başlatmak için kullanılamayan anlamına gelir.
 
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için
 
-1. Değişkeninin kendisiyle başlatmayın.
+1. Bir değişkeni kendi kendine başlatmayın.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, her bir değişken kendisi ile başlatılmış olduğundan C3536 verir.
+Aşağıdaki örnek, her değişken kendisiyle başlatıldığı için C3536 verir.
 
-```
+```cpp
 // C3536.cpp
 // Compile with /Zc:auto
 int main()

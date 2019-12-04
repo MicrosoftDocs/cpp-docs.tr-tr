@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2064
+title: Derleyici hatası C2064
 ms.date: 11/04/2016
 f1_keywords:
 - C2064
 helpviewer_keywords:
 - C2064
 ms.assetid: 6cda05da-f437-4f50-9813-ae69538713a3
-ms.openlocfilehash: 8af20c5172cddd0194ed018c13960bbed7859674
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: cd62ea825e3ae7d9e4acc1cb6d93d4bc102be0eb
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62386037"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74737328"
 ---
-# <a name="compiler-error-c2064"></a>Derleyici Hatası C2064
+# <a name="compiler-error-c2064"></a>Derleyici hatası C2064
 
-Terim N bağımsız değişken alan bir işlev olarak değerlendirilmiyor
+terim N bağımsız değişken alan bir işlev olarak değerlendirilmiyor
 
-Bir ifade ile bir işleve bir çağrı yapılır. Belirtilen sayıda bağımsız değişken alan bir işlev işaretçisine ifadeyi değerlendirmez.
+Bir işleve bir ifade aracılığıyla çağrı yapılır. İfade, belirtilen sayıda bağımsız değişken alan bir işlev işaretçisi olarak değerlendirilmiyor.
 
-Bu örnekte, kod arama işlevleri olmayan işlevler olarak çalışır. Aşağıdaki örnek, C2064 oluşturur:
+Bu örnekte, kod işlevleri işlev olarak çağırmaya çalışır. Aşağıdaki örnek C2064 oluşturur:
 
-```
+```cpp
 // C2064.cpp
 int i, j;
 char* p;
@@ -31,9 +31,9 @@ void func() {
 }
 ```
 
-Statik olmayan üye işlevleri için bir nesne örneği bağlamında işaretçileri çağırmalıdır. Aşağıdaki örnek, C2064 oluşturur ve bu sorunun nasıl gösterir:
+Bir nesne örneği bağlamından statik olmayan üye işlevlerine işaretçiler çağırmanız gerekir. Aşağıdaki örnek C2064 oluşturur ve nasıl düzeltileceğini gösterir:
 
-```
+```cpp
 // C2064b.cpp
 struct C {
    void func1(){}
@@ -50,9 +50,9 @@ int main() {
 }
 ```
 
-Bir sınıf içinde üye işlev işaretçileri arama nesne bağlamı da belirtmeniz gerekir. Aşağıdaki örnek, C2064 oluşturur ve bu sorunun nasıl gösterir:
+Bir sınıf içinde, üye işlev işaretçileri de çağıran nesne bağlamını göstermelidir. Aşağıdaki örnek C2064 oluşturur ve nasıl düzeltileceğini gösterir:
 
-```
+```cpp
 // C2064d.cpp
 // Compile by using: cl /c /W4 C2064d.cpp
 struct C {

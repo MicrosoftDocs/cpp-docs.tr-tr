@@ -1,29 +1,29 @@
 ---
-title: Derleyici Hatası C3830
+title: Derleyici hatası C3830
 ms.date: 11/04/2016
 f1_keywords:
 - C3830
 helpviewer_keywords:
 - C3830
 ms.assetid: c9798f88-5001-4067-9fb1-09957ddc6fa8
-ms.openlocfilehash: 25f2b86e21d4672c9e0907c366da17072bafa183
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 14272d2c0b0f8de63f55d2ba3d1c01cf04e0dfbd
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62390548"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74741644"
 ---
-# <a name="compiler-error-c3830"></a>Derleyici Hatası C3830
+# <a name="compiler-error-c3830"></a>Derleyici hatası C3830
 
-'type1': değer türleri yalnızca arabirim sınıflarından Devral 'type2' öğesinden devralamaz
+' type1 ': ' type2 ' öğesinden devralma yapılamaz, değer türleri yalnızca arabirim sınıflarından devralınabilir
 
-Bir değer türü temel sınıfı devralamaz.  Daha fazla bilgi için [sınıfları ve yapıları](../../extensions/classes-and-structs-cpp-component-extensions.md).
+Değer türü, temel bir sınıfı alamaz.  Daha fazla bilgi için bkz. [sınıflar ve yapılar](../../extensions/classes-and-structs-cpp-component-extensions.md).
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C3830 oluşturur:
+Aşağıdaki örnek C3830 oluşturur:
 
-```
+```cpp
 // C3830a.cpp
 // compile with: /clr /c
 public value struct MyStruct4 {

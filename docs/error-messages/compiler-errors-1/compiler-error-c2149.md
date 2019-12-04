@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2149
+title: Derleyici hatası C2149
 ms.date: 11/04/2016
 f1_keywords:
 - C2149
 helpviewer_keywords:
 - C2149
 ms.assetid: 7a106dab-d79f-41b9-85be-f36e86e4d2ab
-ms.openlocfilehash: 62eca9730b28f83cea39d5c6606d4bb94ce885dd
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ec082040085f33c0516590623a270e27a0e88810
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62175217"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74756480"
 ---
-# <a name="compiler-error-c2149"></a>Derleyici Hatası C2149
+# <a name="compiler-error-c2149"></a>Derleyici hatası C2149
 
-'identifier': adlandırılmış bit alanının genişliği sıfır olamaz
+' tanımlayıcı ': adlandırılmış bit alanının genişliği sıfır olamaz
 
-Bit alanları yalnızca adlandırılmamış Sıfır Genişlik olabilir.
+Bit alanları yalnızca adlandırıldıysanız sıfır genişliğine sahip olabilir.
 
-Aşağıdaki örnek, C2149 oluşturur:
+Aşağıdaki örnek C2149 oluşturur:
 
-```
+```cpp
 // C2149.cpp
 // compile with: /c
 struct C {

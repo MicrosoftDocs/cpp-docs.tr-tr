@@ -1,35 +1,35 @@
 ---
-title: Derleyici Hatası C2001
+title: Derleyici hatası C2001
 ms.date: 11/04/2016
 f1_keywords:
 - C2001
 helpviewer_keywords:
 - C2001
 ms.assetid: 0c3a7821-d8e5-4398-ab5a-4116d46e8dda
-ms.openlocfilehash: 03b54fe2373063c8c0f9905da93822928392998d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2bf9bd322812764b2f63493d4b22b58d853a25fa
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62209029"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74756844"
 ---
-# <a name="compiler-error-c2001"></a>Derleyici Hatası C2001
+# <a name="compiler-error-c2001"></a>Derleyici hatası C2001
 
-Sabitte
+Sabitte yeni satır
 
-Aşağıdakileri sürece bir dize sabitine ikinci satırında devam ettirilemez:
+Bir dize sabiti, aşağıdakilerden birini yapmadığınız müddetçe ikinci satırda devam ettirilemez:
 
-- İlk satır bir ters eğik çizgi ile bitmelidir.
+- İlk satırı ters eğik çizgiyle sonlandırın.
 
-- Çift tırnak işareti ile ilk satırdaki dize kapatın ve çift tırnak işareti ile başka bir sonraki satıra dize açın.
+- İlk satırdaki dizeyi çift tırnak işaretiyle kapatın ve sonraki satırdaki dizeyi başka bir çift tırnak işaretiyle açın.
 
-İlk satırı \n ile biten yeterli değildir.
+\N ile ilk satırın sona ermek yeterli değildir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C2001 oluşturur:
+Aşağıdaki örnek C2001 oluşturur:
 
-```
+```cpp
 // C2001.cpp
 // C2001 expected
 #include <stdio.h>
@@ -45,9 +45,9 @@ int main()
 
 ## <a name="example"></a>Örnek
 
-Satır devamlılığı karakteri sonra sonraki satırın başında boşluk dize sabiti dahil edilir. Yukarıda gösterilen örneklerden hiçbiri bir yeni satır karakteri dize sabitine ekleyin. Burada gösterildiği gibi bir yeni satır karakteri ekleyebilirsiniz:
+Bir satır devamlılık karakteri sonrasında sonraki satırın başındaki boşluklar dize sabitine dahildir. Yukarıda gösterilen örneklerden hiçbiri dize sabitine bir yeni satır karakteri ekleyin. Buraya gösterildiği gibi bir yeni satır karakteri ekleyebilirsiniz:
 
-```
+```cpp
 // C2001b.cpp
 #include <stdio.h>
 

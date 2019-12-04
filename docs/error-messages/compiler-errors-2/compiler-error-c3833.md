@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3833
+title: Derleyici hatası C3833
 ms.date: 11/04/2016
 f1_keywords:
 - C3833
 helpviewer_keywords:
 - C3833
 ms.assetid: 8152be53-e01e-48cd-9eef-9de38723664c
-ms.openlocfilehash: 99c18e899a46c5e1d7a643ba32546f827c320373
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c762ca80dc52398d9f246ada86ab29cb6e902129
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62390509"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74741553"
 ---
-# <a name="compiler-error-c3833"></a>Derleyici Hatası C3833
+# <a name="compiler-error-c3833"></a>Derleyici hatası C3833
 
-'type': pointer_type için geçersiz hedef türü
+' Type ': pointer_type için geçersiz hedef türü
 
-Bir [interior_ptr](../../extensions/interior-ptr-cpp-cli.md) veya [pin_ptr](../../extensions/pin-ptr-cpp-cli.md) hatalı bildirilmiş.
+Bir [interior_ptr](../../extensions/interior-ptr-cpp-cli.md) veya [pin_ptr](../../extensions/pin-ptr-cpp-cli.md) yanlış bildirildi.
 
-Aşağıdaki örnek, C3833 oluşturur:
+Aşağıdaki örnek C3833 oluşturur:
 
-```
+```cpp
 // C3833.cpp
 // compile with: /clr
 
@@ -41,9 +41,9 @@ int main() {
 }
 ```
 
-Aşağıdaki örnek, C3833 oluşturur:
+Aşağıdaki örnek C3833 oluşturur:
 
-```
+```cpp
 // C3833b.cpp
 // compile with: /clr /c
 ref class G {

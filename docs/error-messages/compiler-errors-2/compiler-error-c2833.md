@@ -1,29 +1,29 @@
 ---
-title: Derleyici Hatası C2833
+title: Derleyici hatası C2833
 ms.date: 11/04/2016
 f1_keywords:
 - C2833
 helpviewer_keywords:
 - C2833
 ms.assetid: b9418ce1-e2ee-4599-8959-6fde89c27569
-ms.openlocfilehash: dad6a64f145c3d49d3b43044ea76a11d35827943
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c1467a3c67cccf28cc6b9bd0f987fe77b8da8988
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62408374"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74757884"
 ---
-# <a name="compiler-error-c2833"></a>Derleyici Hatası C2833
+# <a name="compiler-error-c2833"></a>Derleyici hatası C2833
 
-'operator işleci' tanınan bir işleç veya tür değil
+' işleç işleci ' tanınan bir işleç veya tür değil
 
-Word `operator` geçersiz kılmak istediğiniz bir işleç veya dönüştürmek istediğiniz bir türe göre gelmelidir.
+`operator` kelimesinin ardından, geçersiz kılmak istediğiniz bir operatör veya dönüştürmek istediğiniz bir tür gelmelidir.
 
-Yönetilen bir tür tanımlayabilirsiniz işleçleri bir listesi için bkz. [kullanıcı tanımlı işleçler](../../dotnet/user-defined-operators-cpp-cli.md).
+Yönetilen bir türde tanımlayabileceğiniz işleçlerin bir listesi için, bkz. [Kullanıcı tanımlı işleçler](../../dotnet/user-defined-operators-cpp-cli.md).
 
-Aşağıdaki örnek, C2833 oluşturur:
+Aşağıdaki örnek C2833 oluşturur:
 
-```
+```cpp
 // C2833.cpp
 // compile with: /c
 class A {};

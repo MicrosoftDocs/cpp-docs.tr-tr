@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C1103
 ms.assetid: 9d276939-9c47-4235-9d20-76b8434f9731
-ms.openlocfilehash: b6253af9fcf400321fb58d4d8a6d7aacf461b926
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f037d1acb281b5997e3486a542784abc4b4b7542
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62174207"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74747390"
 ---
 # <a name="fatal-error-c1103"></a>Önemli hata C1103
 
-önemli hata program kimliği içeri aktarılırken: 'message'
+ProgID içeri aktarılırken önemli hata: ' Message '
 
-Derleyici, bir tür kitaplığı içeri aktarılırken bir sorun algıladı.  Örneğin, edemez bir tür kitaplığı ile program kimliği belirtin ve ayrıca belirtin `no_registry`.
+Derleyici, bir tür kitaplığını içeri aktarırken bir sorun algıladı.  Örneğin, ProgID içeren bir tür kitaplığı belirtemezsiniz ve `no_registry`de belirtemezsiniz.
 
-Daha fazla bilgi için [#import yönergesi](../../preprocessor/hash-import-directive-cpp.md).
+Daha fazla bilgi için bkz. [#import yönergesi](../../preprocessor/hash-import-directive-cpp.md).
 
-Aşağıdaki örnek, C1103 oluşturur:
+Aşağıdaki örnek C1103 oluşturacaktır:
 
-```
+```cpp
 // C1103.cpp
 #import "progid:a.b.id.1.5" no_registry auto_search   // C1103
 ```

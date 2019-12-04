@@ -1,31 +1,31 @@
 ---
-title: Derleyici Hatası C2893
+title: Derleyici hatası C2893
 ms.date: 11/04/2016
 f1_keywords:
 - C2893
 helpviewer_keywords:
 - C2893
 ms.assetid: ec0cbe43-005d-45da-8742-aaeb9b81d28e
-ms.openlocfilehash: f1fad1ad18af54945ef32dadaac50a6de4dbd62f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ca603eb94d5d528a7fed15e0320e1f5d88bf0629
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62366387"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74760882"
 ---
-# <a name="compiler-error-c2893"></a>Derleyici Hatası C2893
+# <a name="compiler-error-c2893"></a>Derleyici hatası C2893
 
-'Şablon adı' işlev şablonu özelleştirilemedi
+' Şablon adı ' işlev şablonu özelleştirilemedi
 
-Derleyici, bir işlev şablonu özelleştirilemedi. Bu hatanın birçok nedeni olabilir.
+Derleyici bir işlev şablonu özelleştirilemedi. Bu hatanın pek çok nedeni olabilir.
 
-Genel olarak, C2893 hatayı gidermek için işlev imzası gözden geçirin ve her türün örneğini oluşturabilir emin olmak için yoludur.
+Genel olarak, bir C2893 hatasını çözme yöntemi işlevin imzasını gözden geçirmenin yanı sıra her türü örneklendirilediğinizden emin olmanızı sağlar.
 
 ## <a name="example"></a>Örnek
 
-C2893 gerçekleşir çünkü `f`'s şablon parametresi `T` olmasını atanan `std::map<int,int>`, ancak `std::map<int,int>` üyesi yok `data_type` (`T::data_type` ile oluşturulabilir değil `T = std::map<int,int>`.). Aşağıdaki örnek, C2893 oluşturur.
+C2893 `f`şablon parametresi `T` `std::map<int,int>`olarak anlaşılamadığından, ancak `std::map<int,int>` üye `data_type` yok (`T::data_type` `T = std::map<int,int>`ile başlatılamaz.). Aşağıdaki örnek C2893 oluşturur.
 
-```
+```cpp
 // C2893.cpp
 // compile with: /c /EHsc
 #include<map>

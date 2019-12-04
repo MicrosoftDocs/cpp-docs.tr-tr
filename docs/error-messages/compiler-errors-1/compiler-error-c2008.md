@@ -1,34 +1,34 @@
 ---
-title: Derleyici Hatası C2008
+title: Derleyici hatası C2008
 ms.date: 11/04/2016
 f1_keywords:
 - C2008
 helpviewer_keywords:
 - C2008
 ms.assetid: e748ccbe-ffd4-4008-aca7-e53c25225209
-ms.openlocfilehash: 0bd9193d6e305a4b6c6851ef2524a68ecc056816
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 292f5c6ab9a4e14077f848ff57ff08adefeb09a1
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62208990"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74757338"
 ---
-# <a name="compiler-error-c2008"></a>Derleyici Hatası C2008
+# <a name="compiler-error-c2008"></a>Derleyici hatası C2008
 
-'character': Makro tanımında beklenmiyor
+' karakter ': makro tanımında beklenmiyor
 
-Hemen makro adı karakteri görüntülenir. Hatayı gidermek için olmalıdır bir boşluk sonra makro adı.
+Karakter, makro adının hemen sonrasında görünür. Hatayı gidermek için makro adından sonra bir boşluk olması gerekir.
 
-Aşağıdaki örnek, C2008 oluşturur:
+Aşağıdaki örnek C2008 oluşturur:
 
-```
+```cpp
 // C2008.cpp
 #define TEST1"mytest1"    // C2008
 ```
 
 Olası çözüm:
 
-```
+```cpp
 // C2008b.cpp
 // compile with: /c
 #define TEST2 "mytest2"

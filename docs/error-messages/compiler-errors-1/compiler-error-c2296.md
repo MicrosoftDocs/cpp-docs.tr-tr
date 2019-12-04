@@ -1,29 +1,29 @@
 ---
-title: Derleyici Hatası C2296
+title: Derleyici hatası C2296
 ms.date: 11/04/2016
 f1_keywords:
 - C2296
 helpviewer_keywords:
 - C2296
 ms.assetid: 47d270f4-13ce-4c16-81e2-7d67c6c4a540
-ms.openlocfilehash: ab9c9450b6e906a47a66f6c28c42ca016c98381b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 020f046648488ca67923b7035acaa6c79ce495e4
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62182684"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74759080"
 ---
-# <a name="compiler-error-c2296"></a>Derleyici Hatası C2296
+# <a name="compiler-error-c2296"></a>Derleyici hatası C2296
 
-'operator': Geçersiz sol işlenen
+' operator ': bozuk sol işlenen
 
-İle kullanılan sol işlenen `operator` geçersiz.
+`operator` ile kullanılan sol işlenen geçersiz.
 
-Örneğin, derleyici bir bildirimi işlev çağrısı hedeflenen burada görebilirsiniz.
+Örneğin, derleyici bir işlev çağrısını amaçladığınız bir bildirim görebilir.
 
-Aşağıdaki örnek, C2296 oluşturur:
+Aşağıdaki örnek C2296 oluşturur:
 
-```
+```cpp
 // C2296.cpp
 struct MyStruct {
    struct Help {

@@ -1,37 +1,37 @@
 ---
-title: Derleyici Hatası C3535
+title: Derleyici hatası C3535
 ms.date: 11/04/2016
 f1_keywords:
 - C3535
 helpviewer_keywords:
 - C3535
 ms.assetid: 24449c98-f681-484d-a00b-32533dca3a88
-ms.openlocfilehash: e80fa62db9795838980c63e113300a554afabef3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6b487c0f94a00ec64e0c2178265c5a8c27544a51
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62376243"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74761562"
 ---
-# <a name="compiler-error-c3535"></a>Derleyici Hatası C3535
+# <a name="compiler-error-c3535"></a>Derleyici hatası C3535
 
-'type1' öğesinden 'type2' türü çıkarılamıyor
+' type1 ' için ' type2 ' öğesinden tür çıkarılamıyor
 
-Tarafından bildirilen bir değişken türü `auto` anahtar sözcüğü bir başlatma ifadesinin türünden atanan olamaz. Örneğin, başlatma ifadesi değerlendirilir, bu hata meydana gelir `void`, bir tür değil.
+`auto` anahtar sözcüğüyle belirtilen değişkenin türü, başlatma ifadesinin türünden çıkarsanamaz. Örneğin, başlatma ifadesi bir tür olmayan `void`değerlendirilirse bu hata oluşur.
 
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için
 
-1. Başlatma ifadesi türü olmadığından emin olun `void`.
+1. Başlatma ifadesinin türünün `void`olmadığından emin olun.
 
-1. Bildiriminin bir temel türü bir işaretçi olmadığından emin olun. Daha fazla bilgi için [temel türler](../../cpp/fundamental-types-cpp.md).
+1. Bildirimin temel bir tür işaretçisi olmadığından emin olun. Daha fazla bilgi için bkz. [temel türler](../../cpp/fundamental-types-cpp.md).
 
-1. Başlatma ifadesi bildirimi bir tür için bir işaretçi ise, işaretçi türünde olduğundan emin olun.
+1. Bildirimin bir tür işaretçisi olduğundan, başlatma ifadesinin bir işaretçi türü olduğundan emin olun.
 
 ## <a name="example"></a>Örnek
 
-Başlatma ifadenin değerlendirdiği olduğundan aşağıdaki örnekte C3535 verir `void`.
+Aşağıdaki örnek, başlatma ifadesi `void`olarak değerlendirildiği için C3535 verir.
 
-```
+```cpp
 // C3535a.cpp
 // Compile with /Zc:auto
 void f(){}
@@ -44,9 +44,9 @@ int main()
 
 ## <a name="example"></a>Örnek
 
-Deyim değişkeni bildirdiğinden, aşağıdaki örnekte C3535 verir `x` çıkarılan bir türü, ancak Başlatıcı türü için bir işaretçi olarak çift ifadesidir. Sonuç olarak, derleyici değişkenin türü çıkarılamıyor.
+Aşağıdaki örnek, C3535 verir, çünkü deyim çıkarılan bir tür işaretçisi olarak değişken `x` bildiriyor, ancak Başlatıcı ifadesinin türü Double. Sonuç olarak, derleyici değişkenin türünü çıkarılamıyor.
 
-```
+```cpp
 // C3535b.cpp
 // Compile with /Zc:auto
 int main()
@@ -58,9 +58,9 @@ int main()
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, çünkü C3535 verir değişkeni `p` çıkarılan bir türü için bir işaretçiyi bildirir, ancak başlatma ifadesi bir işaretçi türü değil.
+Aşağıdaki örnek, değişken `p` çıkarılan bir türe işaretçi bildirdiğinden, ancak başlatma ifadesi bir işaretçi türü olmadığı için C3535 verir.
 
-```
+```cpp
 // C3535c.cpp
 // Compile with /Zc:auto
 class A { };

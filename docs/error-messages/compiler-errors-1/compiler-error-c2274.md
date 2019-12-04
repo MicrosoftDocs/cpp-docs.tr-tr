@@ -1,29 +1,29 @@
 ---
-title: Derleyici Hatası C2274
+title: Derleyici hatası C2274
 ms.date: 11/04/2016
 f1_keywords:
 - C2274
 helpviewer_keywords:
 - C2274
 ms.assetid: 8e874903-f499-45ef-8291-f821eee4cc1c
-ms.openlocfilehash: f2fcb75098f18ad113ba68959035b37d9cddd6e9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fd807dedb6c300860611d07212b8fc8952a90a65
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62388884"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74758677"
 ---
-# <a name="compiler-error-c2274"></a>Derleyici Hatası C2274
+# <a name="compiler-error-c2274"></a>Derleyici hatası C2274
 
-'type': sağ tarafı olarak geçersizdir '.' işleci
+' Type ': '. ' işlecinin sağ tarafı olarak geçersizdir
 
-Bir tür, üye erişimi (.) işlecinin sağ işlenen görünür.
+Bir tür, bir üye erişim (.) işlecinin sağ işleneni olarak görünür.
 
-Bu hata, bir kullanıcı tanımlı tür dönüştürme erişmeye tarafından kaynaklanabilir. Anahtar sözcüğünü kullanın `operator` dönem arasında ve `type`.
+Bu hata, Kullanıcı tanımlı tür dönüştürmeye erişmeye çalışan bir neden olabilir. Nokta ve `type`arasında `operator` anahtar sözcüğünü kullanın.
 
-Aşağıdaki örnek, C2286 oluşturur:
+Aşağıdaki örnek C2286 oluşturur:
 
-```
+```cpp
 // C2274.cpp
 struct MyClass {
    operator int() {

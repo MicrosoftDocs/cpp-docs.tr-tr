@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2819
+title: Derleyici hatası C2819
 ms.date: 11/04/2016
 f1_keywords:
 - C2819
 helpviewer_keywords:
 - C2819
 ms.assetid: fcc7762d-cb82-4bb1-a715-0d82da832edf
-ms.openlocfilehash: 17b863d24d43f0dc7afb0fc4776953dcb41929e5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9a3768cb23c65eb3e2d818f81ff7c6a561c8d7ec
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62174945"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74750656"
 ---
-# <a name="compiler-error-c2819"></a>Derleyici Hatası C2819
+# <a name="compiler-error-c2819"></a>Derleyici hatası C2819
 
-türü 'type', '-> bir aşırı yüklü üye işleci' yok.
+' Type ' türünün aşırı yüklenmiş bir ' operator-> ' üyesi yok
 
-Tanımlamanız gereken `operator->()` Bu işaretçi işlemi kullanılacak.
+Bu işaretçi işlemini kullanmak için `operator->()` tanımlamanız gerekir.
 
-Aşağıdaki örnek, C2819 oluşturur:
+Aşağıdaki örnek C2819 oluşturur:
 
-```
+```cpp
 // C2819.cpp
 // compile with: /c
 class A {
@@ -49,9 +49,9 @@ void F(D j) {
 }
 ```
 
-C2819 kullanırken da gerçekleşebilir [başvuru türleri için C++ yığın anlamları](../../dotnet/cpp-stack-semantics-for-reference-types.md). Aşağıdaki örnek, C2819 oluşturur:
+Ayrıca, [ C++ başvuru türleri için yığın semantiği](../../dotnet/cpp-stack-semantics-for-reference-types.md)kullanılırken C2819 de oluşabilir. Aşağıdaki örnek C2819 oluşturur:
 
-```
+```cpp
 // C2819_b.cpp
 // compile with: /clr
 ref struct R {

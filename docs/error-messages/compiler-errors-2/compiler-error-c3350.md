@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3350
+title: Derleyici hatası C3350
 ms.date: 11/04/2016
 f1_keywords:
 - C3350
 helpviewer_keywords:
 - C3350
 ms.assetid: cfbbc338-92b5-4f34-999e-aa2d2376bc70
-ms.openlocfilehash: a19dbde6409afaae29e9110315c7c68fe9d43d62
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 39d4b4c1cef0febe8845db3e74799b2d240dbdb3
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62300550"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74736964"
 ---
-# <a name="compiler-error-c3350"></a>Derleyici Hatası C3350
+# <a name="compiler-error-c3350"></a>Derleyici hatası C3350
 
-'temsilci': temsilci Oluşturucu sayı bağımsız değişken bekliyor
+' Delegate ': bir temsilci Oluşturucu, sayı bağımsız değişkeni bekliyor
 
-Bir temsilci örneğini oluştururken, iki bağımsız değişken, temsilci işlevi ve işlev içeren türün örneğini geçmesi gerekir.
+Temsilcinin bir örneğini oluşturduğunuzda, iki bağımsız değişken geçirmeniz gerekir, temsilci işlevini içeren türün bir örneği ve işlevi.
 
-Aşağıdaki örnek, C3350 oluşturur:
+Aşağıdaki örnek C3350 oluşturur:
 
-```
+```cpp
 // C3350.cpp
 // compile with: /clr
 delegate void SumDelegate();

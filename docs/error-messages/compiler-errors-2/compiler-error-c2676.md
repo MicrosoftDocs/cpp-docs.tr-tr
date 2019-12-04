@@ -1,29 +1,29 @@
 ---
-title: Derleyici Hatası C2676
+title: Derleyici hatası C2676
 ms.date: 11/04/2016
 f1_keywords:
 - C2676
 helpviewer_keywords:
 - C2676
 ms.assetid: 838a5e34-c92f-4f65-a597-e150bf8cf737
-ms.openlocfilehash: 1a3eab8d1df7534f2bfbed42db5c1a660942eacc
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9c25593df27f7c4e742eb109aeb5e94ba6fdba8c
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62165003"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74760367"
 ---
-# <a name="compiler-error-c2676"></a>Derleyici Hatası C2676
+# <a name="compiler-error-c2676"></a>Derleyici hatası C2676
 
-İkili 'operator': 'type' bu işleci veya tanımlamıyor kabul edilebilir bir türe dönüştürme için önceden tanımlanmış işleç
+ikili ' işleç ': ' Type ' Bu işleci veya önceden tanımlanmış işleç için kabul edilebilir bir türe dönüştürmeyi tanımlamıyor
 
-İşlecini kullanmak için belirtilen tür için aşırı veya tanımlar işlecin tanımlandığı bir türe dönüştürmeyi gerekir.
+İşlecini kullanmak için, belirtilen tür için onu tekrar yüklemelisiniz veya işlecin tanımlandığı bir türe dönüştürme tanımlamanız gerekir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C2676 oluşturur.
+Aşağıdaki örnek C2676 oluşturur.
 
-```
+```cpp
 // C2676.cpp
 // C2676 expected
 struct C {
@@ -53,13 +53,13 @@ int main() {
 
 ## <a name="example"></a>Örnek
 
-C2676 üzerinde işaretçi aritmetik yapmayı denerseniz de oluşabilir `this` başvuru türü işaretçi.
+Bir başvuru türünün `this` İşaretçisinde işaretçi aritmetiğini yapmayı denerseniz, C2676 de oluşabilir.
 
-`this` Başvuru türündeki tür tanıtıcının işaretçisidir. Daha fazla bilgi için [semantiği Bu işaretçi](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Semantics_of_the_this_pointer).
+`this` işaretçisi, bir başvuru türündeki tanıtıcı türüdür. Daha fazla bilgi için [Bu Işaretçinin semantiğini](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Semantics_of_the_this_pointer)inceleyin.
 
-Aşağıdaki örnek, C2676 oluşturur.
+Aşağıdaki örnek C2676 oluşturur.
 
-```
+```cpp
 // C2676_a.cpp
 // compile with: /clr
 using namespace System;

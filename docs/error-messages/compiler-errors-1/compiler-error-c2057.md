@@ -1,31 +1,31 @@
 ---
-title: Derleyici Hatası C2057
+title: Derleyici hatası C2057
 ms.date: 11/04/2016
 f1_keywords:
 - C2057
 helpviewer_keywords:
 - C2057
 ms.assetid: 038a99d6-1f5a-42fa-8449-03b4ff11ee0b
-ms.openlocfilehash: 6c8b171a878a8f370a024fa7374be6925695bd4d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 37dbc2f6ae0614215f0a3de20baa601b48db9450
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62408712"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74742450"
 ---
-# <a name="compiler-error-c2057"></a>Derleyici Hatası C2057
+# <a name="compiler-error-c2057"></a>Derleyici hatası C2057
 
-Sabit ifade bekleniyor
+Sabit ifade bekleniyordu
 
-Bağlam, sabit bir ifade, değeri derleme zamanında bilinen bir ifade gerektirir.
+Bağlam, değeri derleme zamanında bilinen bir ifade olan sabit bir ifade gerektirir.
 
-Derleyici bir yazı tipi boyutu, bu türün bir örneği için alan ayırmak için derleme zamanında bilmeniz gerekir.
+Derleyicinin, bu türün bir örneği için alan ayırabilmek üzere derleme zamanında bir türün boyutunu bilmesi gerekir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C2057 oluşturur ve bu sorunun nasıl gösterir:
+Aşağıdaki örnek C2057 oluşturur ve nasıl düzeltileceğini gösterir:
 
-```
+```cpp
 // C2057.cpp
 int i;
 int b[i];   // C2057 - value of i is unknown at compile time
@@ -37,7 +37,7 @@ int main() {
 
 ## <a name="example"></a>Örnek
 
-C sabit ifadeleri için daha kısıtlayıcı kurallara sahiptir.  Aşağıdaki örnek, C2057 oluşturur ve bu sorunun nasıl gösterir:
+C, sabit ifadeler için daha kısıtlayıcı kurallara sahiptir.  Aşağıdaki örnek C2057 oluşturur ve nasıl düzeltileceğini gösterir:
 
 ```
 // C2057b.c

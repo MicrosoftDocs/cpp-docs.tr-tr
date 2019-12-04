@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3883
+title: Derleyici hatası C3883
 ms.date: 11/04/2016
 f1_keywords:
 - C3883
 helpviewer_keywords:
 - C3883
 ms.assetid: cdd1c1f4-f268-4469-9c62-d52303114b0c
-ms.openlocfilehash: 51ecf5fbc793c02a23e2aa02fb08e37ebe4b0ad0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9dbb0328aa1810d55f2d974aed822992b53101b5
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62347044"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74736665"
 ---
-# <a name="compiler-error-c3883"></a>Derleyici Hatası C3883
+# <a name="compiler-error-c3883"></a>Derleyici hatası C3883
 
-'var': initonly statik veri üyesi başlatılmalıdır
+' var ': initonly bir statik veri üyesinin başlatılması gerekir
 
-Bir değişkeni işaretli [initonly](../../dotnet/initonly-cpp-cli.md) düzgün başlatılmadı.
+[İnitonly](../../dotnet/initonly-cpp-cli.md) ile işaretlenen bir değişken doğru başlatılmamış.
 
-Aşağıdaki örnek, C3883 oluşturur:
+Aşağıdaki örnek C3883 oluşturur:
 
-```
+```cpp
 // C3883.cpp
 // compile with: /clr
 ref struct Y1 {
@@ -30,9 +30,9 @@ ref struct Y1 {
 };
 ```
 
-Aşağıdaki örnek, olası çözümü göstermektedir:
+Aşağıdaki örnekte olası bir çözüm gösterilmektedir:
 
-```
+```cpp
 // C3883b.cpp
 // compile with: /clr /c
 ref struct Y1 {
@@ -41,9 +41,9 @@ ref struct Y1 {
 };
 ```
 
-Aşağıdaki örnek, bir statik Oluşturucu başlatılamadı gösterilmektedir:
+Aşağıdaki örnek, bir statik oluşturucuda nasıl başlatılacağını göstermektedir:
 
-```
+```cpp
 // C3883c.cpp
 // compile with: /clr /LD
 ref struct Y1 {

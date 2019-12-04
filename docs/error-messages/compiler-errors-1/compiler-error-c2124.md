@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2124
+title: Derleyici hatası C2124
 ms.date: 11/04/2016
 f1_keywords:
 - C2124
 helpviewer_keywords:
 - C2124
 ms.assetid: 93392aaa-5582-4d68-8cc5-bd9c62a0ae7e
-ms.openlocfilehash: 82bc4447aaf27190c013edf48a20a56c57a646c9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5da04b100fdeaebb6b07d3f8c01e5ec8341ae1cf
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62397659"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74748248"
 ---
-# <a name="compiler-error-c2124"></a>Derleyici Hatası C2124
+# <a name="compiler-error-c2124"></a>Derleyici hatası C2124
 
-bölme veya mod alma sıfıra
+sıfıra bölme veya mod
 
-Bir sabit ifade bir sıfır paydası sahiptir. Hatayı gidermek için sıfır bölmeyin.
+Sabit bir ifadede sıfır paydası vardır. Hatayı gidermek için sıfıra bölmeyin.
 
-Aşağıdaki örnek, C2124 oluşturur:
+Aşağıdaki örnek C2124 oluşturur:
 
-```
+```cpp
 // C2124.cpp
 int main() {
   int i = 1 / 0;   // C2124  do not divide by zero

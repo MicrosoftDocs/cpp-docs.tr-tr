@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2490
+title: Derleyici hatası C2490
 ms.date: 11/04/2016
 f1_keywords:
 - C2490
 helpviewer_keywords:
 - C2490
 ms.assetid: 9de6bddd-b2e2-4ce6-b33b-201a8c2c8c54
-ms.openlocfilehash: 9e06883d0e8b6103eb44d086d3872d86c50a58b6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 86d9f41db8ba386a64878eebfae989011f637d71
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62361810"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74757091"
 ---
-# <a name="compiler-error-c2490"></a>Derleyici Hatası C2490
+# <a name="compiler-error-c2490"></a>Derleyici hatası C2490
 
-'anahtar sözcüğü 'naked' özniteliği olan işlevde izin verilmez'
+' Naked ' özniteliği olan işlevde ' anahtar sözcüğüne izin verilmez
 
-Olarak tanımlanan bir işlev [naked](../../cpp/naked-cpp.md) yapılandırılmış özel durum işleme kullanamazsınız.
+[Naked](../../cpp/naked-cpp.md) olarak tanımlanan bir işlev yapılandırılmış özel durum işlemeyi kullanamaz.
 
-Aşağıdaki örnek, C2490 oluşturur:
+Aşağıdaki örnek C2490 oluşturur:
 
-```
+```cpp
 // C2490.cpp
 // processor: x86
 __declspec( naked ) int func() {

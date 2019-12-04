@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3203
+title: Derleyici hatası C3203
 ms.date: 11/04/2016
 f1_keywords:
 - C3203
 helpviewer_keywords:
 - C3203
 ms.assetid: 6356770e-22c1-434c-91fe-f60b0aa23b91
-ms.openlocfilehash: c55160c855a6188a616f957acee43e409b751b62
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: 1d0ed5ec717efecb9fbea4a9451836c0471522b6
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65447804"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74738719"
 ---
-# <a name="compiler-error-c3203"></a>Derleyici Hatası C3203
+# <a name="compiler-error-c3203"></a>Derleyici hatası C3203
 
-'type': uzmanlaşmamış sınıf şablonunun veya genel şablon veya şablon ya da genel parametre 'param' için genel bağımsız değişken olarak kullanılamaz; gerçek tür bekleniyor
+' Type ': özelleştirilmemiş sınıf şablonu veya genel parametre ya da ' param ' genel parametresi için bir şablon veya genel bağımsız değişken olarak kullanılamaz; gerçek tür bekleniyor
 
-Bir sınıf şablonunun veya genel geçersiz bağımsız değişken geçirildi. Sınıf şablonu veya genel bir tür bir parametre bekliyor.
+Bir sınıf şablonuna veya genel olarak geçersiz bir bağımsız değişken geçirtiniz. Sınıf şablonu veya genel, bir türü parametre olarak bekler.
 
-Bu hata için Visual Studio 2005 yapıldığı derleyici uyumluluğu iş sonucu olarak oluşturulan: uzmanlaşmamış sınıf şablonu, bir taban sınıfı listesinde şablon bağımsız değişkeni olarak kullanılamaz. C3203 çözmek için açıkça şablonu tür parametrelerinin şablon sınıf adı için bir taban sınıfı listesinde bir şablon parametresi olarak kullanılırken ekleyin.
+Bu hata, Visual Studio 2005 için yapılan derleyici uygunluk işinin sonucu olarak oluşturulabilir: özelleştirilmemiş bir sınıf şablonu, temel sınıf listesinde şablon bağımsız değişkeni olarak kullanılamaz. C3203 çözümlemek için, şablon türü parametrelerini, bir temel sınıf listesinde şablon parametresi olarak kullanırken şablon sınıfı adına açıkça ekleyin.
 
-```
+```cpp
 // C3203.cpp
 template< typename T >
 struct X {
@@ -40,9 +40,9 @@ int main() {
 }
 ```
 
-Aşağıdaki örnek, C3203 oluşturur ve bu sorunun nasıl gösterir:
+Aşağıdaki örnek C3203 oluşturur ve nasıl düzeltileceğini gösterir:
 
-```
+```cpp
 // C3203_b.cpp
 // compile with: /c
 template <class T>
@@ -65,9 +65,9 @@ class C3 {};
 typedef C3<S1<int> > MyC12;
 ```
 
-C3203, genel türler kullanırken da meydana gelebilir:
+C3203, genel türler kullanılırken de oluşabilir:
 
-```
+```cpp
 // C3203_c.cpp
 // compile with: /clr /c
 generic <class T>

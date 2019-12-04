@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2391
+title: Derleyici hatası C2391
 ms.date: 11/04/2016
 f1_keywords:
 - C2391
 helpviewer_keywords:
 - C2391
 ms.assetid: 63a9c6b9-03cc-4517-885c-bdcd048643b3
-ms.openlocfilehash: 7683ad1580454bd7edb1fc08e5bd110a3e5c36c4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7dd47ffbd9481f69f3799a94a17a53ccdffb2a84
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62393629"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74745024"
 ---
-# <a name="compiler-error-c2391"></a>Derleyici Hatası C2391
+# <a name="compiler-error-c2391"></a>Derleyici hatası C2391
 
-'identifier': 'friend' tür tanımı sırasında kullanılamaz
+' tanımlayıcı ': ' Friend ' tür tanımı sırasında kullanılamaz
 
-`friend` Bildirimi tam sınıf bildirimi içerir. A `friend` bildirimi bir üye işlev veya ayrıntılı tür tanımlayıcısı, ancak tam sınıf bildirimi belirtebilirsiniz.
+`friend` bildirimi, bir bütün sınıf bildirimini içerir. `friend` bildirimi, bir üye işlevi veya bir ayrıntılı tür belirleyicisi belirtebilir, ancak bir sınıf bildirimi içeremez.
 
-Aşağıdaki örnek, C2326 oluşturur:
+Aşağıdaki örnek C2326 oluşturur:
 
-```
+```cpp
 // C2391.cpp
 // compile with: /c
 class D {

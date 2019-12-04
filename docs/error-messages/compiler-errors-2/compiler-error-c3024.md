@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3024
+title: Derleyici hatası C3024
 ms.date: 11/04/2016
 f1_keywords:
 - C3024
 helpviewer_keywords:
 - C3024
 ms.assetid: 1c031c28-ce37-4de3-aead-cfe76b261856
-ms.openlocfilehash: 46a7385f530742c19c9c586be7a932d0e054b7d4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e344fe5eeffb32b3490b41a3d3374638cc19ba1f
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62360092"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74742021"
 ---
-# <a name="compiler-error-c3024"></a>Derleyici Hatası C3024
+# <a name="compiler-error-c3024"></a>Derleyici hatası C3024
 
-'schedule(runtime)': chunk_size ifadesine izin verilmez
+' Schedule (Runtime) ': chunk_size ifadeye izin verilmiyor
 
-Zamanlama yan tümcesinin çalışma zamanı parametresi için bir değer geçirilemez.
+Zamanlama yan tümcesinin çalışma zamanı parametresine bir değer geçirilemez.
 
-Aşağıdaki örnek, C3024 oluşturur:
+Aşağıdaki örnek C3024 oluşturur:
 
-```
+```cpp
 // C3024.cpp
 // compile with: /openmp /link vcomps.lib
 #include <stdio.h>

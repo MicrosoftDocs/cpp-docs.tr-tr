@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3712
+title: Derleyici hatası C3712
 ms.date: 11/04/2016
 f1_keywords:
 - C3712
 helpviewer_keywords:
 - C3712
 ms.assetid: 65b1fcaf-be89-4c55-9e40-25ec03457253
-ms.openlocfilehash: 0b84f4562dcc0dd5dcc3ecb647316772efab6b38
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 51772f22f83cff5c602bd2310d7913c0d317ba66
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62328412"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74753373"
 ---
-# <a name="compiler-error-c3712"></a>Derleyici Hatası C3712
+# <a name="compiler-error-c3712"></a>Derleyici hatası C3712
 
-'method': olay işleyicisi yöntemi 'method' kaynağı aynı türü döndürmelidir
+' Method ': olay işleyicisi yöntemi ' Method ' kaynağı ile aynı türü döndürmelidir
 
-Kaynak olay yöntemi aynı türü döndürmedi bir olay işleyicisi yönteminde tanımlanmış. Bu hatayı düzeltmek için olay işleyicisi yöntemi aynı dönüş türü, kaynak olay yöntemi olarak verin.
+Kaynak olay yöntemiyle aynı türü döndürmeyen bir olay işleyicisi yöntemi tanımladınız. Bu hatayı onarmak için, olay işleyicisi yöntemine kaynak olay yöntemiyle aynı dönüş türünü verin.
 
-Aşağıdaki örnek, C3712 oluşturur:
+Aşağıdaki örnek C3712 oluşturur:
 
-```
+```cpp
 // C3712.cpp
 // compile with: /c
 [event_source(native)]

@@ -1,33 +1,33 @@
 ---
-title: Derleyici Hatası C3538
+title: Derleyici hatası C3538
 ms.date: 11/04/2016
 f1_keywords:
 - C3538
 helpviewer_keywords:
 - C3538
 ms.assetid: ef3698a5-7356-4c62-b9af-5d3a4baed958
-ms.openlocfilehash: e8b97c8c6e5d23c406bf2d5831279810e7de0902
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d1bd287c6b7e0b07938db55c282c69cd00fd25df
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62376191"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74761549"
 ---
-# <a name="compiler-error-c3538"></a>Derleyici Hatası C3538
+# <a name="compiler-error-c3538"></a>Derleyici hatası C3538
 
-bir bildirimci listesinde 'auto' her zaman aynı tür olarak çözümlenmelidir
+' Auto ' bildirimci-listesinin her zaman aynı tür olarak çözümlenmelidir
 
-Bir bildirim listesinde bildirilen tüm değişkenleri aynı türe çözümlemeyin.
+Bir bildirim listesindeki tüm tanımlanmış değişkenler aynı türde çözümlenmiyor.
 
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için
 
-1. Emin tüm `auto` listesinde bildirimleri aynı türe türetme.
+1. Listedeki tüm `auto` bildirimlerinin aynı türde olduğundan emin olun.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki deyimleri C3538 yield. Her deyim her kullanımının ancak birden fazla değişken bildirir `auto` anahtar sözcüğü, aynı türe türetme değil.
+Aşağıdaki deyimler C3538 yield. Her bir ifade birden çok değişken bildirir, ancak `auto` anahtar sözcüğünün her kullanımı aynı tür olarak çözümlenmez.
 
-```
+```cpp
 // C3538.cpp
 // Compile with /Zc:auto
 // C3538 expected

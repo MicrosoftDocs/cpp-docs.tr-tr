@@ -1,31 +1,31 @@
 ---
-title: Derleyici Hatası C3103
+title: Derleyici hatası C3103
 ms.date: 11/04/2016
 f1_keywords:
 - C3103
 helpviewer_keywords:
 - C3103
 ms.assetid: 7984bd3e-d51d-43e4-b6f4-08c1e9fb9704
-ms.openlocfilehash: 6a68e39ac92433eadacd666861f9e00431e4a34a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ecbbb3f7e9d173957c35e76cbec407aab9ebfafe
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62404188"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74749941"
 ---
-# <a name="compiler-error-c3103"></a>Derleyici Hatası C3103
+# <a name="compiler-error-c3103"></a>Derleyici hatası C3103
 
-'bağımsız değişkeni': yinelenen adlandırılmış bağımsız değişken
+' Argument ': Yinelenen adlandırılmış bağımsız değişken
 
-Bir öznitelik adlandırılmış bağımsız değişkenler yineleyebilirsiniz değil.
+Öznitelik, adlandırılmış bağımsız değişkenleri yinelemez.
 
-Daha fazla bilgi için [kullanıcı tanımlı öznitelikler](../../extensions/user-defined-attributes-cpp-component-extensions.md).
+Daha fazla bilgi için bkz. [Kullanıcı tanımlı öznitelikler](../../extensions/user-defined-attributes-cpp-component-extensions.md).
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C3103 oluşturur.
+Aşağıdaki örnek C3103 oluşturur.
 
-```
+```cpp
 // C3103.cpp
 // compile with: /clr /c
 using namespace System;

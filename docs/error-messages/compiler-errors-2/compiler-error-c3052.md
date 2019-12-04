@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3052
+title: Derleyici hatası C3052
 ms.date: 11/04/2016
 f1_keywords:
 - C3052
 helpviewer_keywords:
 - C3052
 ms.assetid: 87480c42-1ceb-4775-8d20-88c54a7bb6a6
-ms.openlocfilehash: ed9c27e1602f9372cb9137615ef66932a8df960c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 618fac69078987b0322739733c403e5b2cd36486
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62265782"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74761224"
 ---
-# <a name="compiler-error-c3052"></a>Derleyici Hatası C3052
+# <a name="compiler-error-c3052"></a>Derleyici hatası C3052
 
-'var': değişken bir default(none) yan tümcesi altında bir veri paylaşımı yan tümcesinde görünmüyor
+' var ': değişken bir default (None) yan tümcesi altında bir veri paylaşımı yan tümcesinde görünmüyor
 
-Varsa [default(none)](../../parallel/openmp/reference/default-openmp.md) olan kullanıldığında, yapılandırılmış bloğunda kullanılan herhangi bir değişken açıkça olarak belirtilmelidir [paylaşılan](../../parallel/openmp/reference/shared-openmp.md) veya [özel](../../parallel/openmp/reference/private-openmp.md).
+[Varsayılan (hiçbiri)](../../parallel/openmp/reference/default-openmp.md) kullanılırsa, Structured bloğunda kullanılan herhangi bir değişken doğrudan [paylaşılan](../../parallel/openmp/reference/shared-openmp.md) veya [özel](../../parallel/openmp/reference/private-openmp.md)olarak belirtilmelidir.
 
-Aşağıdaki örnek, C3052 oluşturur:
+Aşağıdaki örnek C3052 oluşturur:
 
-```
+```cpp
 // C3052.cpp
 // compile with: /openmp /c
 int main() {

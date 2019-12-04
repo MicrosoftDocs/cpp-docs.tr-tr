@@ -1,31 +1,31 @@
 ---
-title: Derleyici Hatası C2011
+title: Derleyici hatası C2011
 ms.date: 11/04/2016
 f1_keywords:
 - C2011
 helpviewer_keywords:
 - C2011
 ms.assetid: 992c9d51-e850-4d53-b86b-02e73b38249c
-ms.openlocfilehash: 14969c9cdf4b00844d2001bf4817ea7ffc9bfba6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: dc13829a267deea1f412eb2d8f86057f01dc0e1c
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62361561"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74752424"
 ---
-# <a name="compiler-error-c2011"></a>Derleyici Hatası C2011
+# <a name="compiler-error-c2011"></a>Derleyici hatası C2011
 
-'identifier': 'type' türü yeniden tanımı
+' tanımlayıcı ': ' Type ' türü yeniden tanımı
 
-Tanımlayıcı olarak tanımlandı `type`. Tanımlayıcı yeniden tanımlaması için denetleyin.
+Tanımlayıcı zaten `type`olarak tanımlandı. Tanımlayıcının yeniden tanımlarını denetleyin.
 
-Bir üst bilgi dosyasını içeri aktarın ya da birden çok kez aynı dosyada tür kitaplığı C2011 de alabilirsiniz. Bir üstbilgi dosyasında tanımlanan türleri birden çok ekleme yapılmasının önlemek için kullanımını içerir cf veya `#pragma` [sonra](../../preprocessor/once.md) üstbilgi dosyasında yönergesi.
+Ayrıca, bir üst bilgi dosyasını veya tür kitaplığını aynı dosyaya birden fazla kez içeri aktarırsanız de C2011 alabilirsiniz. Üst bilgi dosyasında tanımlı türlerin birden çok eklemeyi engellemek için, üstbilgi dosyasındaki ekleme koruyucuları veya bir [kez](../../preprocessor/once.md) `#pragma`kullanın.
 
-Yeniden tanımlanan tür ilk bildirimine bulmanız gerekiyorsa, kullanabileceğiniz [/P](../../build/reference/p-preprocess-to-a-file.md) önceden işlenmiş çıktı üretme derleyici bayrağı için derleyici geçirilen. Metin arama araçları, çıkış dosyasında yeniden tanımlanan tanımlayıcı örneklerini bulmak için kullanabilirsiniz.
+Yeniden tanımlanmış türün ilk bildirimini bulmanız gerekiyorsa, derleyiciye geçirilen önceden işlenmiş çıktıyı oluşturmak için [/p](../../build/reference/p-preprocess-to-a-file.md) derleyici bayrağını kullanabilirsiniz. Çıkış dosyasında yeniden tanımlanmış tanımlayıcının örneklerini bulmak için metin arama araçları 'nı kullanabilirsiniz.
 
-Aşağıdaki örnek, C2011 oluşturur ve bunu çözmenin yollarından biri gösterilmektedir:
+Aşağıdaki örnek C2011 oluşturur ve bunu çözmek için bir yol gösterir:
 
-```
+```cpp
 // C2011.cpp
 // compile with: /c
 struct S;

@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2637
+title: Derleyici hatası C2637
 ms.date: 11/04/2016
 f1_keywords:
 - C2637
 helpviewer_keywords:
 - C2637
 ms.assetid: 58d94447-eb96-4d8f-a690-dd78d322462e
-ms.openlocfilehash: 4231a811911fdf600b47962e929f6f3cff1f1bca
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a17bd95cf1727d058e0cbd9e3dfb93c500da9fb5
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62395462"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74758261"
 ---
-# <a name="compiler-error-c2637"></a>Derleyici Hatası C2637
+# <a name="compiler-error-c2637"></a>Derleyici hatası C2637
 
-'identifier': veri işaretçilerine yönelik işaretçiler değiştirilemez
+' tanımlayıcı ': veri üyelerine yönelik işaretçiler değiştirilemez
 
-Bir veri üyesinin işaretçisinin bir çağırma kuralı olamaz. Çözmek için çağırma kuralı kaldırmak veya bir üye işlevi işaretçisi bildirin.
+Veri üyesine yönelik işaretçinin çağrı kuralı olamaz. Çözümlemek için, çağırma kuralını kaldırın ya da üye işlevine bir işaretçi bildirin.
 
-Aşağıdaki örnek, C2637 oluşturur:
+Aşağıdaki örnek C2637 oluşturur:
 
-```
+```cpp
 // C2637.cpp
 // compile with: /c
 struct S {};

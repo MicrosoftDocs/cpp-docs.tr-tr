@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2784
+title: Derleyici hatası C2784
 ms.date: 11/04/2016
 f1_keywords:
 - C2784
 helpviewer_keywords:
 - C2784
 ms.assetid: 3d761fe2-881c-48bd-afae-e2e714e20473
-ms.openlocfilehash: 906cb5d8df9fb8ac57c5d4289d77ac662ac26a92
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1ff91135f6a6207921aa1f83d42ebd1689e711a1
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62208190"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74739642"
 ---
-# <a name="compiler-error-c2784"></a>Derleyici Hatası C2784
+# <a name="compiler-error-c2784"></a>Derleyici hatası C2784
 
-'bildirim': 'type' için şablon bağımsız değişkeni 'türünden' anlaşılamadı
+' bildirim ': ' Type ' içindeki ' Type ' için şablon bağımsız değişkeni çıkarılamıyor
 
-Derleyici, sağlanan işlev bağımsız değişkenleri bir şablon bağımsız değişkende belirlenemiyor.
+Derleyici, sağlanan işlev bağımsız değişkenlerinden bir şablon bağımsız değişkeni belirleyemiyor.
 
-Aşağıdaki örnek, C2784 oluşturur ve bu sorunun nasıl gösterir:
+Aşağıdaki örnek C2784 oluşturur ve nasıl düzeltileceğini gösterir:
 
-```
+```cpp
 // C2784.cpp
 template<class T> class X {};
 template<class T> void f(X<T>) {}

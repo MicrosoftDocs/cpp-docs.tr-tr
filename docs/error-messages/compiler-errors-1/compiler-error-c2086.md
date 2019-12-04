@@ -1,29 +1,29 @@
 ---
-title: Derleyici Hatası C2086
+title: Derleyici hatası C2086
 ms.date: 11/04/2016
 f1_keywords:
 - C2086
 helpviewer_keywords:
 - C2086
 ms.assetid: 4329bf72-90c8-444c-8524-4ef75e6b2139
-ms.openlocfilehash: 094a794627b886abc7db5ba4d74c6fe97ff82461
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 417763e8c26918d3cd83702b283244d1c13d9d1f
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62216132"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74735755"
 ---
-# <a name="compiler-error-c2086"></a>Derleyici Hatası C2086
+# <a name="compiler-error-c2086"></a>Derleyici hatası C2086
 
-'identifier': yeniden tanımlama
+' tanımlayıcı ': yeniden tanımlama
 
-Tanımlayıcı, birden çok kez tanımlanmış veya önceki bir sonraki bildirimi farklıdır.
+Tanımlayıcı birden çok kez tanımlanmış veya sonraki bir bildirim öncekinden farklı.
 
-C2086 da başvurulan bir C# derleme için artımlı oluşturmayı sonucu olabilir. Bu hatayı çözmek için C# derleme yeniden oluşturun.
+C2086, başvurulan C# bir derleme için artımlı oluşturma sonucu da olabilir. Bu hatayı C# çözmek için derlemeyi yeniden derleyin.
 
-Aşağıdaki örnek, C2086 oluşturur:
+Aşağıdaki örnek C2086 oluşturur:
 
-```
+```cpp
 // C2086.cpp
 main() {
   int a;

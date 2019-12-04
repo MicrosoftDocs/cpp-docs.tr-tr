@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3745
+title: Derleyici hatası C3745
 ms.date: 11/04/2016
 f1_keywords:
 - C3745
 helpviewer_keywords:
 - C3745
 ms.assetid: 1e64aec5-7e53-47e5-bc7d-3905230cfc66
-ms.openlocfilehash: da80a10cbf7246ad0aeaecffe20992d2050abb3c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e7e6bde7ce07edf7a75f38c37f3e4cbb3c6c3486
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62208262"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74752463"
 ---
-# <a name="compiler-error-c3745"></a>Derleyici Hatası C3745
+# <a name="compiler-error-c3745"></a>Derleyici hatası C3745
 
-'function': yalnızca bir olay 'Raise' yapılabilir
+' function ': yalnızca bir olay ' kabarık ' olabilir
 
-Yalnızca ile tanımlanan bir işlev [__event](../../cpp/event.md) anahtar sözcüğü geçilebilir [__raise](../../cpp/raise.md) anahtar sözcüğü.
+Yalnızca [__event](../../cpp/event.md) anahtar sözcüğüyle tanımlanmış bir işlev [__raise](../../cpp/raise.md) anahtar sözcüğüne geçirilebilir.
 
-Aşağıdaki örnek, C3745 oluşturur:
+Aşağıdaki örnek C3745 oluşturur:
 
-```
+```cpp
 // C3745.cpp
 struct E {
    __event void func();

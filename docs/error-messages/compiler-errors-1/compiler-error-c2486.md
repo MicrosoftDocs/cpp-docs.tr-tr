@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2486
+title: Derleyici hatası C2486
 ms.date: 11/04/2016
 f1_keywords:
 - C2486
 helpviewer_keywords:
 - C2486
 ms.assetid: 436da349-6461-4e32-bfca-4f3e620108e2
-ms.openlocfilehash: 8d745c03530f331da83b45c765a2cb4bb7d76d8e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 75705bd8ecc850839e22fccbed1abf08687b3823
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62364356"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74743516"
 ---
-# <a name="compiler-error-c2486"></a>Derleyici Hatası C2486
+# <a name="compiler-error-c2486"></a>Derleyici hatası C2486
 
-'__Local_sıze' yalnızca 'naked' özniteliği olan işlevde izin verilir
+' __LOCAL_SIZE ' öğesine yalnızca ' Naked ' özniteliği olan işlevde izin verilir
 
-Satır içi derleme işlevlerindeki adı `__LOCAL_SIZE` bildirilen işlevler için ayrılmış [naked](../../cpp/naked-cpp.md) özniteliği.
+Satır içi derleme işlevlerinde `__LOCAL_SIZE` adı, [Naked](../../cpp/naked-cpp.md) özniteliğiyle belirtilen işlevler için ayrılmıştır.
 
-Aşağıdaki örnek, C2486 oluşturur:
+Aşağıdaki örnek C2486 oluşturur:
 
-```
+```cpp
 // C2486.cpp
 // processor: x86
 void __declspec(naked) f1() {

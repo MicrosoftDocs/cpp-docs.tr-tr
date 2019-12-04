@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3175
+title: Derleyici hatası C3175
 ms.date: 11/04/2016
 f1_keywords:
 - C3175
 helpviewer_keywords:
 - C3175
 ms.assetid: 3f19d513-a05a-4b6c-806f-276fe5c36b90
-ms.openlocfilehash: 368e5a9cb9bea04a7889c25c86a7245049677112
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8be6cfa72c33212593c0b2a73ad38ad9fc113f26
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62175475"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74761718"
 ---
-# <a name="compiler-error-c3175"></a>Derleyici Hatası C3175
+# <a name="compiler-error-c3175"></a>Derleyici hatası C3175
 
-'function1': 'function2' yönetilmeyen işlevinden bir yönetilen türün bir yöntemi çağrılamaz
+' işlev1 ': yönetilmeyen ' function2 ' işlevinden yönetilen türün bir yöntemi çağrılamaz
 
-Yönetilmeyen işlevleri yönetilen sınıflarının üye işlevleri çağrılamaz.
+Yönetilmeyen işlevler yönetilen sınıfların üye işlevlerini çağıramaz.
 
-Aşağıdaki örnek, C3175 oluşturur:
+Aşağıdaki örnek C3175 oluşturur:
 
-```
+```cpp
 // C3175_2.cpp
 // compile with: /clr
 

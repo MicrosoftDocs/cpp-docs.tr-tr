@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2870
+title: Derleyici hatası C2870
 ms.date: 11/04/2016
 f1_keywords:
 - C2870
 helpviewer_keywords:
 - C2870
 ms.assetid: 80523ee9-1fd3-4dc4-8a77-5083deb99066
-ms.openlocfilehash: f61281da23e46236e7fce496a4d89086e5d6c0ea
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3b006592723df1222d05e39b3bc9e5729efc8aa6
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62165053"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74755037"
 ---
-# <a name="compiler-error-c2870"></a>Derleyici Hatası C2870
+# <a name="compiler-error-c2870"></a>Derleyici hatası C2870
 
-'name': bir ad alanı tanımı dosya kapsamında veya hemen başka bir ad alanı tanımı içinde yer almalıdır
+' name ': ad alanı tanımı dosya kapsamında ya da başka bir ad alanı tanımının hemen içinde yer almalıdır
 
-Ad alanı tanımlı `name` yanlış. Ad alanları tanımlanan, dosya kapsamında (dışındaki tüm bloklar ve sınıflar) veya başka bir ad alanı içinde hemen.
+Ad alanı `name` yanlış tanımladınız. Ad alanları, dosya kapsamında (tüm bloklar ve sınıflar dışında) veya başka bir ad alanının hemen içinde tanımlanmalıdır.
 
-Aşağıdaki örnek, C2870 oluşturur:
+Aşağıdaki örnek C2870 oluşturur:
 
-```
+```cpp
 // C2870.cpp
 // compile with: /c
 int main() {

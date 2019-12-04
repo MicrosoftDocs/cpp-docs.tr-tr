@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3697
+title: Derleyici hatası C3697
 ms.date: 11/04/2016
 f1_keywords:
 - C3697
 helpviewer_keywords:
 - C3697
 ms.assetid: 2d3f63c4-b7f8-421d-a7a5-2bf17fd054f9
-ms.openlocfilehash: 55eadd55af8d4e6f088a0d0eb732d820242cae66
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e642c744bbce5db4bb341a32769b2d9f74654044
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62363693"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74758066"
 ---
-# <a name="compiler-error-c3697"></a>Derleyici Hatası C3697
+# <a name="compiler-error-c3697"></a>Derleyici hatası C3697
 
-'Niteleyici': Bu niteleyici kullanamazsınız ' ^'
+' Qualifier ': bu niteleyici ' ^ ' üzerinde kullanılamaz
 
-İzleme işleyicisi (^) kendisi için değil tasarlandığı için niteleyici uygulandı.
+İzleme tutamacı (^), tasarlanmadığı bir niteleyicisine uygulandı.
 
-Aşağıdaki örnek, C3697 oluşturur:
+Aşağıdaki örnek C3697 oluşturur:
 
-```
+```cpp
 // C3697.cpp
 // compile with: /clr
 using namespace System;

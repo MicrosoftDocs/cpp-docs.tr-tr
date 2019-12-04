@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2372
+title: Derleyici hatası C2372
 ms.date: 11/04/2016
 f1_keywords:
 - C2372
 helpviewer_keywords:
 - C2372
 ms.assetid: 406bea63-c8d3-4231-9d26-c70af6980840
-ms.openlocfilehash: db13a6bc108588fbbd9c15e2bcc647bea073a333
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d5f4653ded6d2800d74418a712bbcb3d4d4d6676
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62339032"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74745622"
 ---
-# <a name="compiler-error-c2372"></a>Derleyici Hatası C2372
+# <a name="compiler-error-c2372"></a>Derleyici hatası C2372
 
-'identifier': yeniden tanımlama; Yöneltme türleri farklı
+' tanımlayıcı ': yeniden tanımlama; farklı yöneltme türleri
 
-Tanımlayıcı ile farklı türetilmiş bir tür zaten tanımlandı.
+Tanımlayıcı, farklı bir türetilmiş türle zaten tanımlanmış.
 
-Aşağıdaki örnek, C2326 oluşturur:
+Aşağıdaki örnek C2326 oluşturur:
 
-```
+```cpp
 // C2372.cpp
 // compile with: /c
 extern int *fp;

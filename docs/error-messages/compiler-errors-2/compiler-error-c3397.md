@@ -1,29 +1,29 @@
 ---
-title: Derleyici Hatası C3397
+title: Derleyici hatası C3397
 ms.date: 11/04/2016
 f1_keywords:
 - C3397
 helpviewer_keywords:
 - C3397
 ms.assetid: a8536e87-79c4-4ed7-bd96-42704d06391f
-ms.openlocfilehash: c6ca48eb53cf1c6d661a201fa8c4d2539669b9bf
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1e00b5cb63d97e023c092f675dbe07a68d9a2548
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62328620"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74737536"
 ---
-# <a name="compiler-error-c3397"></a>Derleyici Hatası C3397
+# <a name="compiler-error-c3397"></a>Derleyici hatası C3397
 
-Toplama başlatma varsayılan bağımsız değişkenler izin verilmiyor
+Varsayılan bağımsız değişkenlerde toplu başlatmaya izin verilmez
 
-Bir dizi yanlış bildirildi.  Bkz: [diziler](../../extensions/arrays-cpp-component-extensions.md) daha fazla bilgi için.
+Bir dizi yanlış bildirildi.  Daha fazla bilgi için bkz. [diziler](../../extensions/arrays-cpp-component-extensions.md) .
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C3397 oluşturur.
+Aşağıdaki örnek C3397 oluşturur.
 
-```
+```cpp
 // C3397.cpp
 // compile with: /clr
 // /clr /c

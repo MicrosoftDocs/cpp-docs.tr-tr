@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2810
+title: Derleyici hatası C2810
 ms.date: 11/04/2016
 f1_keywords:
 - C2810
 helpviewer_keywords:
 - C2810
 ms.assetid: f63e8f24-d7f6-42ac-904f-72ff49592ba6
-ms.openlocfilehash: 171b9d1b3b09b793c55756500cafed1db7eb9d99
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2c598065fb6d5965f92504019275a921d12acb27
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62281787"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74760588"
 ---
-# <a name="compiler-error-c2810"></a>Derleyici Hatası C2810
+# <a name="compiler-error-c2810"></a>Derleyici hatası C2810
 
-'interface': Arabirim yalnızca başka bir arabirimden devralabilir
+' interface ': bir arabirim yalnızca başka bir arabirimden devralınabilir
 
-Bir [arabirimi](../../cpp/interface.md) yalnızca başka bir arabirimden devralabilir ve bir sınıf veya yapıdan devralacak değil.
+[Arabirim](../../cpp/interface.md) yalnızca başka bir arabirimden devralınabilir ve bir sınıftan ya da yapıdan kalýtýmla eşleşmeyebilir.
 
-Aşağıdaki örnek, C2810 oluşturur:
+Aşağıdaki örnek C2810 oluşturur:
 
-```
+```cpp
 // C2810.cpp
 #include <unknwn.h>
 class CBase1 {

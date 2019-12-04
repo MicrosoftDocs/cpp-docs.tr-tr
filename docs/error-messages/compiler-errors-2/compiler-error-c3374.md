@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3374
+title: Derleyici hatası C3374
 ms.date: 11/04/2016
 f1_keywords:
 - C3374
 helpviewer_keywords:
 - C3374
 ms.assetid: 41431299-bd20-47d4-a0c8-1334dd79018b
-ms.openlocfilehash: 4b00b1cea8ac462c82c11d9f5b207706af74959c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 760eb1bafdaab9995d3238c8bc4e3114acd743eb
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62328977"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74755583"
 ---
-# <a name="compiler-error-c3374"></a>Derleyici Hatası C3374
+# <a name="compiler-error-c3374"></a>Derleyici hatası C3374
 
-Temsilci örneği oluşturulmuyorsa 'function' adresi alınamaz
+temsilci örneği oluşturulmadıysa ' function ' adresi alınamaz
 
-Bir işlevin adresini, bir temsilci örneği oluşturulmasını dışındaki bir bağlamda yapılmadı.
+Bir işlevin adresi, temsilci örneği oluşturma dışında bir bağlamda alındı.
 
-Aşağıdaki örnek, C3374 oluşturur:
+Aşağıdaki örnek C3374 oluşturur:
 
-```
+```cpp
 // C3374.cpp
 // compile with: /clr
 public delegate void MyDel(int i);

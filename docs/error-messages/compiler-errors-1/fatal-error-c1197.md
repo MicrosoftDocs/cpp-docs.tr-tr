@@ -6,26 +6,26 @@ f1_keywords:
 helpviewer_keywords:
 - C1197
 ms.assetid: 22b801b7-e792-41f6-a461-973c03c69f25
-ms.openlocfilehash: e1c00a001c807b0cc6a5946b61ca4e9d5dc0167a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7f698262c73f0b311a92a8940107b552430919bb
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62229130"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74747247"
 ---
 # <a name="fatal-error-c1197"></a>Önemli hata C1197
 
-'mscorlib.dll_1' program 'mscorlib.dll_2' zaten başvurmuş gibi başvuramaz
+Program ' mscorlib. dll_2 ' öğesine zaten başvurulduğundan ' mscorlib. dll_1 ' öğesine başvurulamaz
 
-Derleyici, bir ortak dil çalışma zamanı sürümüne eşleştirilir.  Ancak, bir ortak dil çalışma zamanı dosyası sürümü önceki bir sürümden başvurmak için girişimde bulunuldu.
+Derleyici, ortak dil çalışma zamanının bir sürümüyle eşleştirilir.  Ancak, önceki bir sürümden ortak dil çalışma zamanı dosyasının bir sürümüne başvurmak için bir girişimde bulunuldu.
 
-Bu hatayı gidermek için yalnızca Visual C++ ile derleme sürümü ile birlikte gelen ortak dil çalışma zamanı sürümünden dosyaları başvuru.
+Bu hatayı çözmek için, yalnızca derleme yaptığınız görsel C++ sürümü ile birlikte gelen ortak dil çalışma zamanının sürümüne ait dosyaları referans.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C1197 oluşturur:
+Aşağıdaki örnek C1197 oluşturur:
 
-```
+```cpp
 // C1197.cpp
 // compile with: /clr /c
 // processor: x86

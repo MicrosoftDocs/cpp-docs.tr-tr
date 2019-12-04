@@ -1,29 +1,29 @@
 ---
-title: Derleyici Hatası C2244
+title: Derleyici hatası C2244
 ms.date: 11/04/2016
 f1_keywords:
 - C2244
 helpviewer_keywords:
 - C2244
 ms.assetid: d9911c12-ceb5-4f93-ac47-b44a485215c2
-ms.openlocfilehash: 7cfa0cd7ff4290ca5f07fb712bbcac7dabf55f29
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 97ff469c6f3f766bd1b5412133003bae2acaddfc
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62301402"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74759483"
 ---
-# <a name="compiler-error-c2244"></a>Derleyici Hatası C2244
+# <a name="compiler-error-c2244"></a>Derleyici hatası C2244
 
-'identifier': işlev tanımı varolan bir bildirimler eşleştirilemiyor
+' tanımlayıcı ': işlev tanımı varolan bir bildirimle eşleştirilemiyor
 
-Olağan dışı bir kullanım birli + işleci, parantez yoktu bir işlev çağrısının önünde kullanıldı.
+Birli + işlecinin alışılmadık kullanımı parantez olmayan bir işlev çağrısının önünde kullanıldı.
 
-Bu hata, yalnızca C++ projelerinde oluşur.
+Bu hata yalnızca C++ projelerde oluşur.
 
 Aşağıdaki örnek C2244 oluşturur:
 
-```
+```cpp
 // C2244.cpp
 int func(char) {
    return 0;
@@ -38,9 +38,9 @@ int main() {
 }
 ```
 
-Bir sınıf şablonunun bir üye işlev için yanlış işlev imzası kullanıldığında C2244 da meydana gelebilir.
+Ayrıca, bir sınıf şablonunun üye işlevi için yanlış bir işlev imzası kullanıldığında C2244 de oluşabilir.
 
-```
+```cpp
 // C2244b.cpp
 // compile with: /c
 template<class T>
@@ -54,9 +54,9 @@ void XYZ<T>::func(int i) {}   // C2244 wrong function signature
 // void XYZ<T>::func(T t) {}
 ```
 
-Bir hatalı işlev imzası bir üye işlevi şablonu için kullanıldığında C2244 da meydana gelebilir.
+C2244, bir üye işlev şablonu için yanlış bir işlev imzası kullanıldığında da oluşabilir.
 
-```
+```cpp
 // C2244c.cpp
 // compile with: /c
 class ABC {
@@ -70,9 +70,9 @@ void ABC::func(int i) {}   // C2244 wrong signature
 // void ABC::func(int i, T t) {}
 ```
 
-Bir işlev şablonu kısmen özelleştirilemiyor.
+Bir işlev şablonunu kısmen özelleştirilemez.
 
-```
+```cpp
 // C2244d.cpp
 template<class T, class U>
 class QRS {

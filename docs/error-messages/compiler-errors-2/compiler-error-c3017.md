@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3017
+title: Derleyici hatası C3017
 ms.date: 11/04/2016
 f1_keywords:
 - C3017
 helpviewer_keywords:
 - C3017
 ms.assetid: 12ab2c2a-d0d2-4900-9cbf-39be0af590dd
-ms.openlocfilehash: 7172d870c509e79bf0900604302c38bc6ca9cd77
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: af3f24a1a814fa79fa63b7e5bee204083006c9a2
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62360365"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74749746"
 ---
-# <a name="compiler-error-c3017"></a>Derleyici Hatası C3017
+# <a name="compiler-error-c3017"></a>Derleyici hatası C3017
 
-OpenMP 'for' deyimindeki sonlandırma sınaması hatalı biçimde
+OpenMP ' for ' deyimindeki sonlandırma testi yanlış biçimde
 
-A `for` OpenMP deyimi bir döngüde tam olarak ve açıkça belirtilmesi gerekir.
+Bir OpenMP deyimindeki `for` döngüsünün tam olarak ve açıkça belirtilmesi gerekir.
 
-Aşağıdaki örnek, C3017 oluşturur:
+Aşağıdaki örnek C3017 oluşturur:
 
-```
+```cpp
 // C3017.cpp
 // compile with: /openmp
 int main()

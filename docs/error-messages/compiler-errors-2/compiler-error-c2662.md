@@ -1,33 +1,33 @@
 ---
-title: Derleyici Hatası C2662
+title: Derleyici hatası C2662
 ms.date: 11/04/2016
 f1_keywords:
 - C2662
 helpviewer_keywords:
 - C2662
 ms.assetid: e172c2a4-f29e-4034-8232-e7dc6f83689f
-ms.openlocfilehash: fefd523ca3b9a3406afc307150322f9d431aa730
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b2fa2643898fed510aa7cf0f483b538ebb33b033
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62360358"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74760458"
 ---
-# <a name="compiler-error-c2662"></a>Derleyici Hatası C2662
+# <a name="compiler-error-c2662"></a>Derleyici hatası C2662
 
-'function': 'this' işaretçisi 'type1' öğesinden 'type2' öğesine dönüştürülemiyor
+' function ': ' this ' işaretçisi ' type1 ' iken ' type2 ' olarak dönüştürülemez
 
-Derleyici değil dönüştüremedi `this` işaretçisinden `type1` için `type2`.
+Derleyici `type1` `this` işaretçisini `type2`dönüştüremedi.
 
-Bu hata olmayan bir çağırarak kaynaklanabilir`const` üzerinde üye işlevi bir `const` nesne.  Olası çözümler:
+Bu hata, bir `const` nesnesi üzerinde`const` olmayan bir üye işlevi çağırarak oluşabilir.  Olası çözümler:
 
-- Kaldırma `const` gelen nesne bildirimi.
+- Nesne bildiriminden `const` kaldırın.
 
-- Ekleme `const` üye işlevi.
+- Üye işlevine `const` ekleyin.
 
-Aşağıdaki örnek, C2662 oluşturur:
+Aşağıdaki örnek C2662 oluşturur:
 
-```
+```cpp
 // C2662.cpp
 class C {
 public:
@@ -41,9 +41,9 @@ int main() {
 }
 ```
 
-İle derlerken **/CLR**, bir işlev çağrılamaz bir `const` veya `volatile` tam yönetilen türü. Const yönetilen nesneler üzerinde yöntemlerini çağıramazsınız şekilde bir const yönetilen bir sınıf üyesi işlevi bildiremezsiniz.
+**/Clr**ile derlerken, `const` veya `volatile` nitelikli yönetilen tür üzerinde bir işlev çağrılamaz. Yönetilen bir sınıfın const üye işlevini bildiremezsiniz, bu nedenle const yönetilen nesneler üzerinde Yöntemler çağrılamaz.
 
-```
+```cpp
 // C2662_b.cpp
 // compile with: /c /clr
 ref struct M {
@@ -67,9 +67,9 @@ ref struct N {
 };
 ```
 
-Aşağıdaki örnek, C2662 oluşturur:
+Aşağıdaki örnek C2662 oluşturur:
 
-```
+```cpp
 // C2662_c.cpp
 // compile with: /c
 // C2662 expected

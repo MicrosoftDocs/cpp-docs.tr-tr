@@ -1,23 +1,23 @@
 ---
-title: Derleyici Hatası C3798
+title: Derleyici hatası C3798
 ms.date: 11/04/2016
 f1_keywords:
 - C3798
 helpviewer_keywords:
 - C3798
 ms.assetid: b2f8b1d8-8812-49b8-a346-28e48f02ba5c
-ms.openlocfilehash: a11c88f536e3282e887e32ef437077e61f4424cc
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: cc21f0bdcc8e2171dd0c87fc31396e6caab9e6fc
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62400155"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74755323"
 ---
-# <a name="compiler-error-c3798"></a>Derleyici Hatası C3798
+# <a name="compiler-error-c3798"></a>Derleyici hatası C3798
 
-'belirticisi': özellik bildiriminde (yöntemler yerine alma/ayarlama özelliği yerleştirilmelidir) geçersiz kılma belirticisi olamaz
+' belirtici ': özellik bildiriminde geçersiz kılma belirticisi olamaz (Bunun yerine özellik get/set yöntemlerine yerleştirilmelidir)
 
-Bir özellik yanlış olarak bildirildi. Daha fazla bilgi için bkz.
+Bir özellik yanlış bildirildi. Daha fazla bilgi için, bkz.
 
 - [property](../../extensions/property-cpp-component-extensions.md)
 
@@ -29,7 +29,7 @@ Bir özellik yanlış olarak bildirildi. Daha fazla bilgi için bkz.
 
 Aşağıdaki örnek C3798 oluşturur
 
-```
+```cpp
 // C3798.cpp
 // compile with: /clr /c
 ref struct A {

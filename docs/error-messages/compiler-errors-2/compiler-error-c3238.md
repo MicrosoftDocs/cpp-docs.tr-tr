@@ -1,31 +1,31 @@
 ---
-title: Derleyici Hatası C3238
+title: Derleyici hatası C3238
 ms.date: 11/04/2016
 f1_keywords:
 - C3238
 helpviewer_keywords:
 - C3238
 ms.assetid: 19942497-b3c5-4df0-9144-142ced92468b
-ms.openlocfilehash: d70bb6dac7cb43701b57f3821872e02ab31426dc
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6f60a9abbc5702c1a0d14d0f894c9b1684378c3f
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62173320"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74759366"
 ---
-# <a name="compiler-error-c3238"></a>Derleyici Hatası C3238
+# <a name="compiler-error-c3238"></a>Derleyici hatası C3238
 
-'type': 'derleme' derlemesi için bu ada sahip bir tür zaten iletilmiş
+' Type ': Bu ada sahip bir tür, ' Assembly ' derlemesine zaten iletildi
 
-Bir tür, başvurulan bir derleme söz dizimi iletme türü ile tanımlanmış bir istemci uygulamasında tanımlandı. Her iki tür uygulama kapsamı içinde tanımlanamaz.
+Bir tür, başvurulan bir derlemede tür iletme söz dizimi aracılığıyla tanımlanan bir istemci uygulamasında tanımlanmıştır. Her iki tür de uygulamanın kapsamında tanımlanamaz.
 
-Bkz: [tür iletme (C++/CLI)](../../extensions/type-forwarding-cpp-cli.md) daha fazla bilgi için.
+Daha fazla bilgi için bkz. [tür iletme (C++/CLI)](../../extensions/type-forwarding-cpp-cli.md) .
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, başka bir derleme iletilen türü içeren bir derleme oluşturur.
+Aşağıdaki örnek, başka bir derlemeden iletilen bir türü içeren bir derleme oluşturur.
 
-```
+```cpp
 // C3238.cpp
 // compile with: /clr /LD
 public ref class R {};
@@ -33,9 +33,9 @@ public ref class R {};
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, tür tanımını kapsamak için kullanılmış bir derleme oluşturur, ancak yalnızca söz dizimi iletme türü içeriyor.
+Aşağıdaki örnek, tür tanımını içeren, ancak yalnızca tür iletme sözdizimini içermeyen bir derleme oluşturur.
 
-```
+```cpp
 // C3238_b.cpp
 // compile with: /clr /LD
 #using "C3238.dll"
@@ -44,9 +44,9 @@ Aşağıdaki örnek, tür tanımını kapsamak için kullanılmış bir derleme 
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C3238 oluşturur.
+Aşağıdaki örnek C3238 oluşturur.
 
-```
+```cpp
 // C3238_c.cpp
 // compile with: /clr /c
 // C3238 expected

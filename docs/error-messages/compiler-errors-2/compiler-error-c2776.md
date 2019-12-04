@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2776
+title: Derleyici hatası C2776
 ms.date: 11/04/2016
 f1_keywords:
 - C2776
 helpviewer_keywords:
 - C2776
 ms.assetid: 9d80addc-62c7-40fc-a2cc-60303abb87df
-ms.openlocfilehash: 200fbc5c42a6b735c072c093ec4cb4f081031824
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 79758c88e595e6d5ebb5cd4b39a8df8fc1339752
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62257107"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74740071"
 ---
-# <a name="compiler-error-c2776"></a>Derleyici Hatası C2776
+# <a name="compiler-error-c2776"></a>Derleyici hatası C2776
 
-özellik başına yalnızca bir 'get' yöntemi belirtilebilir
+her özellik için yalnızca bir ' Get ' yöntemi belirtilebilir
 
-Yalnızca birini belirtebilirsiniz `get` işlevi [özelliği](../../cpp/property-cpp.md) genişletilmiş öznitelik. Bu hata oluştuğunda, birden çok `get` işlevleri belirtilir.
+Genişletilmiş öznitelik [özelliğinde](../../cpp/property-cpp.md) yalnızca bir `get` işlevi belirtebilirsiniz. Birden çok `get` işlevi belirtildiğinde bu hata oluşur.
 
-Aşağıdaki örnek, C2776 oluşturur:
+Aşağıdaki örnek C2776 oluşturur:
 
-```
+```cpp
 // C2776.cpp
 struct A {
    __declspec(property(get=GetProp,get=GetPropToo))

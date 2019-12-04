@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3036
+title: Derleyici hatası C3036
 ms.date: 11/04/2016
 f1_keywords:
 - C3036
 helpviewer_keywords:
 - C3036
 ms.assetid: 10c6993e-bc42-4a07-85c7-cdc34ac30906
-ms.openlocfilehash: c1dc060a5d198b78e652a1b6b239655439209f66
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: daf3730f6ad294dcdb3d1d944c320862d5fb80da
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62350224"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74755011"
 ---
-# <a name="compiler-error-c3036"></a>Derleyici Hatası C3036
+# <a name="compiler-error-c3036"></a>Derleyici hatası C3036
 
-'operator': OpenMP 'reduction' yan tümcesinde geçersiz işleç belirteci
+' operator ': OpenMP ' azaltma ' yan tümcesinde geçersiz işleç belirteci
 
-A [azaltma](../../parallel/openmp/reference/reduction.md) yan tümcesi düzgün belirtilmedi.
+Bir [azaltma](../../parallel/openmp/reference/reduction.md) yan tümcesi doğru şekilde belirtilmedi.
 
-Aşağıdaki örnek, C3036 oluşturur:
+Aşağıdaki örnek C3036 oluşturur:
 
-```
+```cpp
 // C3036.cpp
 // compile with: /openmp
 static float a[1000], b[1000], c[1000];

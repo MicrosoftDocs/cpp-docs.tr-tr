@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2436
+title: Derleyici hatası C2436
 ms.date: 11/04/2016
 f1_keywords:
 - C2436
 helpviewer_keywords:
 - C2436
 ms.assetid: ca4cc813-bc1d-4c0a-9a2c-3a5fe673d084
-ms.openlocfilehash: 335d4a304e16814243894c9524a9e4a2a7356110
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2fd910f18e8d863c6894a7fe99449d5ba213bf61
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62375112"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74744387"
 ---
-# <a name="compiler-error-c2436"></a>Derleyici Hatası C2436
+# <a name="compiler-error-c2436"></a>Derleyici hatası C2436
 
-'identifier': üye işlev veya iç içe geçmiş sınıf oluşturucu başlatıcı listesinde
+' tanımlayıcı ': Oluşturucu başlatıcı listesinde üye işlev veya iç içe sınıf
 
-Üye işlevleri veya yerel sınıf oluşturucu başlatıcı listesinde başlatılamaz.
+Oluşturucu başlatıcı listesindeki üye işlevleri veya yerel sınıflar başlatılamıyor.
 
-Aşağıdaki örnek, C2436 oluşturur:
+Aşağıdaki örnek C2436 oluşturur:
 
-```
+```cpp
 // C2436.cpp
 struct S{
    int f();

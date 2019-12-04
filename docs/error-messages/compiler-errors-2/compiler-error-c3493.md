@@ -1,35 +1,35 @@
 ---
-title: Derleyici Hatası C3493
+title: Derleyici hatası C3493
 ms.date: 11/04/2016
 f1_keywords:
 - C3493
 helpviewer_keywords:
 - C3493
 ms.assetid: 734b4257-12a3-436f-8488-c8c55ec81634
-ms.openlocfilehash: 1bbf9b269075717ae397b7d29ee28c278b1e4ec8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 178d1221886dc62edd9785d211e2189fa50962f4
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62381052"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74738303"
 ---
-# <a name="compiler-error-c3493"></a>Derleyici Hatası C3493
+# <a name="compiler-error-c3493"></a>Derleyici hatası C3493
 
-hiçbir varsayılan yakalama modu belirtilmediğinden 'var' örtük olarak yakalanamıyor
+varsayılan yakalama modu belirtilmediğinden ' var ' örtük olarak yakalanamaz
 
-Boş bir lambda ifadesi yakalama `[]`, lambda ifadesi açıkça yapacağını belirtir veya tüm değişkenler örtük olarak yakalayın.
+`[]`boş lambda ifadesi yakalama, lambda ifadesinin herhangi bir değişkeni açıkça veya örtük olarak yakalamaz belirtir.
 
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için
 
-- Varsayılan yakalama modu sağlayın veya
+- Varsayılan bir yakalama modu sağlayın veya
 
-- Açıkça bir veya daha fazla değişken yakalayın.
+- Bir veya daha fazla değişkeni açık olarak yakala.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, çünkü bir dış değişkenine değiştirir ancak boş yakalama yan tümcesi belirtir C3493 oluşturur:
+Aşağıdaki örnek, bir dış değişkeni değiştirdiği ancak boş yakalama yan tümcesini belirttiğinden C3493 oluşturur:
 
-```
+```cpp
 // C3493a.cpp
 
 int main()
@@ -41,9 +41,9 @@ int main()
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek varsayılan yakalama modu başvuruya göre belirterek C3493 çözümler.
+Aşağıdaki örnek, varsayılan yakalama modu olarak başvuruya göre belirterek C3493 çözer.
 
-```
+```cpp
 // C3493b.cpp
 
 int main()

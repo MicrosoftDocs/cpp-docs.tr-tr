@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2450
+title: Derleyici hatası C2450
 ms.date: 11/04/2016
 f1_keywords:
 - C2450
 helpviewer_keywords:
 - C2450
 ms.assetid: 929f1c06-8774-468b-be2a-f428757875a2
-ms.openlocfilehash: 3cbab274f8f7cd04d5fb86db69572e0b7fc1c04e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2d015bd165986467a82f33a2ae0dda08c6f6d248
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62208977"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74744153"
 ---
-# <a name="compiler-error-c2450"></a>Derleyici Hatası C2450
+# <a name="compiler-error-c2450"></a>Derleyici hatası C2450
 
-'type' türündeki switch ifadesi geçersizdir
+' Type ' türündeki switch ifadesi geçersizdir
 
-`switch` İfadesi, geçersiz bir türe değerlendirir. Bir tamsayı türü veya sınıf türü değerlendirmelidir bir tamsayı türüne belirsiz dönüştürme ile. Kullanıcı tanımlı bir tür olarak değerlendirilirse, bir dönüştürme operatörünün sağlamalısınız.
+`switch` ifadesi geçersiz bir tür olarak değerlendirilir. Bir tamsayı türüne veya bir tamsayı türüne belirsiz dönüştürmeye sahip bir sınıf türüne göre değerlendirilmelidir. Kullanıcı tanımlı bir tür olarak değerlendirilirse, bir dönüştürme işleci sağlamanız gerekir.
 
-Aşağıdaki örnek, C2450 oluşturur:
+Aşağıdaki örnek C2450 oluşturur:
 
-```
+```cpp
 // C2450.cpp
 class X {
 public:

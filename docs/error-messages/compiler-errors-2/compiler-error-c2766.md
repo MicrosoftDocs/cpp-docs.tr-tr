@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2766
+title: Derleyici hatası C2766
 ms.date: 11/04/2016
 f1_keywords:
 - C2766
 helpviewer_keywords:
 - C2766
 ms.assetid: 8032f4ca-6827-4f04-9c61-c44643c85cc4
-ms.openlocfilehash: 87ea9f693265080d744746c6a8014b2b8b6db13a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 48faee02bba18754972954a2ca464417bd552758
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62257562"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74759808"
 ---
-# <a name="compiler-error-c2766"></a>Derleyici Hatası C2766
+# <a name="compiler-error-c2766"></a>Derleyici hatası C2766
 
-Açık özelleştirme; 'özelleştirmesi' zaten tanımlandı
+Açık özelleştirme; ' özelleşme ' zaten tanımlandı
 
-Yinelenen açık özelleştirme işlemlerine izin verilmez. Daha fazla bilgi için [açık uzmanlığı, işlev şablonları](../../cpp/explicit-specialization-of-function-templates.md).
+Yinelenen açık uzmanlık işlemlerine izin verilmez. Daha fazla bilgi için bkz. [Işlev şablonlarının açık özelleştirmesi](../../cpp/explicit-specialization-of-function-templates.md).
 
-Aşağıdaki örnek, C2766 oluşturur:
+Aşağıdaki örnek C2766 oluşturur:
 
-```
+```cpp
 // C2766.cpp
 // compile with: /c
 template<class T>

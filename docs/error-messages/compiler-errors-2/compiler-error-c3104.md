@@ -1,33 +1,33 @@
 ---
-title: Derleyici Hatası C3104
+title: Derleyici hatası C3104
 ms.date: 11/04/2016
 f1_keywords:
 - C3104
 helpviewer_keywords:
 - C3104
 ms.assetid: b5648d47-e5d3-4b45-a3c0-f46e04eae731
-ms.openlocfilehash: fee023809246634f2f3da266a718e45861eae76e
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: b92a6eade137a1d319ec286afa08f8477ff029d8
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65447840"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74755882"
 ---
-# <a name="compiler-error-c3104"></a>Derleyici Hatası C3104
+# <a name="compiler-error-c3104"></a>Derleyici hatası C3104
 
-Geçersiz öznitelik bağımsız değişkeni
+geçersiz öznitelik bağımsız değişkeni
 
-Bir öznitelik için geçersiz bir bağımsız değişken belirtildi.
+Bir özniteliğe geçersiz bir bağımsız değişken belirttiniz.
 
-Bkz: [öznitelik parametre türleri](../../extensions/attribute-parameter-types-cpp-component-extensions.md) daha fazla bilgi için.
+Daha fazla bilgi için bkz. [öznitelik parametre türleri](../../extensions/attribute-parameter-types-cpp-component-extensions.md) .
 
-Bu hata için Visual Studio 2005 yapıldığı derleyici uyumluluğu iş sonucu olarak oluşturulan: yönetilen diziler için özel öznitelikler geçirirken, dizi türü artık toplama başlatma listeden çıkarılır. Derleyici artık başlatıcı listesi yanı sıra, dizi türü belirtmenizi gerektirir.
+Bu hata, Visual Studio 2005 için yapılan derleyici uygunluk işinin bir sonucu olarak oluşturulabilir: yönetilen dizileri özel özniteliklere geçirirken, dizinin türü artık toplu başlatma listesinden anlaşılamaz. Derleyici artık, dizi türünün yanı sıra Başlatıcı listesini belirtmenizi gerektirir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C3104 oluşturur.
+Aşağıdaki örnek C3104 oluşturur.
 
-```
+```cpp
 // C3104a.cpp
 // compile with: /clr /c
 using namespace System;
@@ -46,9 +46,9 @@ ref struct AStruct{};
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C3104 oluşturur.
+Aşağıdaki örnek C3104 oluşturur.
 
-```
+```cpp
 // C3104b.cpp
 // compile with: /clr /c
 // C3104 expected

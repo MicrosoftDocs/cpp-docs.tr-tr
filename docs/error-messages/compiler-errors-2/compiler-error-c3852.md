@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3852
+title: Derleyici hatası C3852
 ms.date: 11/04/2016
 f1_keywords:
 - C3852
 helpviewer_keywords:
 - C3852
 ms.assetid: 194e5c5e-0dfb-414e-86db-791c11eb610c
-ms.openlocfilehash: 4ad7718f4efbeb3b0bc481755fd239615ab796cb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f264333d802967d0350caa8ab4ba4925ffe019af
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62380935"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74754881"
 ---
-# <a name="compiler-error-c3852"></a>Derleyici Hatası C3852
+# <a name="compiler-error-c3852"></a>Derleyici hatası C3852
 
-'member' türü 'type' sahip: Toplu başlatma bu üyeyi başlatamadı
+' Member ' türü ' Type ' türüne sahip: toplu başlatma bu üyeyi başlatamadı
 
-Varsayılan başlatma varsayılan başlatma bir toplama başlatma alamıyor veri üyesi bir toplama başlatma bir parçası olarak atamak için girişimde bulunuldu.
+Toplam başlatma işleminde varsayılan bir başlatma alamamak üzere bir veri üyesine toplu başlatmanın parçası olarak varsayılan bir başlatma atamaya çalışıldı.
 
-Aşağıdaki örnekler C3852 oluştur:
+Aşağıdaki örnekler C3852 oluşturur:
 
-```
+```cpp
 // C3852.cpp
 struct S
 {

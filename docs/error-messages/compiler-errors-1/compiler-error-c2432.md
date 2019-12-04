@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2432
+title: Derleyici hatası C2432
 ms.date: 11/04/2016
 f1_keywords:
 - C2432
 helpviewer_keywords:
 - C2432
 ms.assetid: 0e3326e8-cab1-45a5-b48d-61edd33793e8
-ms.openlocfilehash: e2983d966a6290ce19713c63feb502c8ffc74bf1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d4234626bc246d6da87be68b03d44562dd5990ff
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62166847"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74744517"
 ---
-# <a name="compiler-error-c2432"></a>Derleyici Hatası C2432
+# <a name="compiler-error-c2432"></a>Derleyici hatası C2432
 
-'identifier' içinde 16-bit verilere geçersiz başvuru
+' Identifier ' içinde 16-bit verilere geçersiz başvuru
 
-Bir 16-bit kayıt temel kaydettirmeye veya bir dizin kullanılır. Derleyici, 16-bit verilere başvurma desteklemez. 16-bit kayıtlarını dizini veya temel kasa için 32-bit kod derlenirken kullanılamaz.
+16 bit kayıt, dizin veya temel kayıt olarak kullanılır. Derleyici 16 bit veriye başvurmayı desteklemez. 32 bit kod derlenirken, 16 bit Yazmaçları dizin veya temel kayıt olarak kullanılamaz.
 
-Aşağıdaki örnek, C2432 oluşturur:
+Aşağıdaki örnek C2432 oluşturur:
 
-```
+```cpp
 // C2432.cpp
 // processor: x86
 int main() {

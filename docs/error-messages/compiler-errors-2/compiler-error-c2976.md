@@ -1,29 +1,29 @@
 ---
-title: Derleyici Hatası C2976
+title: Derleyici hatası C2976
 ms.date: 11/04/2016
 f1_keywords:
 - C2976
 helpviewer_keywords:
 - C2976
 ms.assetid: d9bf9836-325e-4f72-a7e3-a67cf19d32e7
-ms.openlocfilehash: 02771d7419c58ee4f0b6d7db46ba91fde253d9a9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 76fd2363b6139bc1bc04aa4d4949a12522e31aa6
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62395371"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74751800"
 ---
-# <a name="compiler-error-c2976"></a>Derleyici Hatası C2976
+# <a name="compiler-error-c2976"></a>Derleyici hatası C2976
 
-'identifier': çok az tür bağımsız değişkeni
+' tanımlayıcı ': çok az sayıda bağımsız değişken
 
-Genel veya şablon bir veya daha fazla gerçek bağımsız değişkenler eksik. Doğru parametreleri sayısını bulmak için genel veya şablon bildirimi denetleyin.
+Genel veya şablonda bir veya daha fazla gerçek bağımsız değişken eksik. Doğru parametre sayısını bulmak için genel veya şablon bildirimini denetleyin.
 
-Bu hata, C++ Standart Kitaplığı bileşenlerinde şablon bağımsız değişkenleri eksik tarafından kaynaklanabilir.
+Bu hata C++ standart kitaplık bileşenlerinde eksik şablon bağımsız değişkenleriyle kaynaklanıyor olabilir.
 
-Aşağıdaki örnek, C2976 oluşturur:
+Aşağıdaki örnek C2976 oluşturur:
 
-```
+```cpp
 // C2976.cpp
 template <class T>
 struct TC {
@@ -35,9 +35,9 @@ int main() {
 }
 ```
 
-C2976, genel türler kullanırken da meydana gelebilir:
+C2976, genel türler kullanılırken de oluşabilir:
 
-```
+```cpp
 // C2976b.cpp
 // compile with: /clr
 generic <class T>

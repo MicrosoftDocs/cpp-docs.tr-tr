@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2382
+title: Derleyici hatası C2382
 ms.date: 11/04/2016
 f1_keywords:
 - C2382
 helpviewer_keywords:
 - C2382
 ms.assetid: 4d4436f9-d0d6-4bd0-b8ec-767b89adfb2f
-ms.openlocfilehash: 4115a01f9e4dcab31a05bb3994109e97694121e6
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 8b623d292998960052ff5d6978d8c12ae7f3fb32
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64344868"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74745375"
 ---
-# <a name="compiler-error-c2382"></a>Derleyici Hatası C2382
+# <a name="compiler-error-c2382"></a>Derleyici hatası C2382
 
-'function': yeniden tanımlama; farklı bir özel durum belirtimleri
+' function ': yeniden tanımlama; farklı özel durum belirtimleri
 
-Altında [/Za](../../build/reference/za-ze-disable-language-extensions.md), bu hata, bir işlev aşırı yüklemesi yalnızca girişiminde bulunuldu gösterir [özel durum belirtimi](../../cpp/exception-specifications-throw-cpp.md).
+[/Za](../../build/reference/za-ze-disable-language-extensions.md)kapsamında, bu hata yalnızca [özel durum belirtiminde](../../cpp/exception-specifications-throw-cpp.md)bir işlev aşırı yüklemesinin denendiğini gösterir.
 
-Aşağıdaki örnek, C2382 oluşturur:
+Aşağıdaki örnek C2382 oluşturur:
 
-```
+```cpp
 // C2382.cpp
 // compile with: /Za /c
 void f1(void) throw(int) {}

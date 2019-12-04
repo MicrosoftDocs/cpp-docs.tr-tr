@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C1202
 ms.assetid: c859adb8-17a7-4fa1-a1f3-5820b7bf3849
-ms.openlocfilehash: c9aeccd0a7bf29edd5ecab91ee1de6c76fa2512e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 08694e8df4e72d730f19e08db7370f7bd866266e
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62228641"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74747221"
 ---
 # <a name="fatal-error-c1202"></a>Önemli hata C1202
 
 özyinelemeli tür veya işlev bağımlılığı bağlamı çok karmaşık
 
-Bir şablon tanımı yinelemeli durumdaydıysa ve karmaşıklık sınırları aşıldı.
+Bir şablon tanımı özyinelemeli veya karmaşıklık limitlerinin aşılması.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C1202 oluşturur.
+Aşağıdaki örnek C1202 oluşturur.
 
-```
+```cpp
 // C1202.cpp
 // processor: x86 IPF
 template<int n>
@@ -40,7 +40,7 @@ Factorial<7> facSeven;
 
 Olası çözüm.
 
-```
+```cpp
 // C1202b.cpp
 // compile with: /c
 template<int n>

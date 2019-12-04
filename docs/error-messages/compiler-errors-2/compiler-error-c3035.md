@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3035
+title: Derleyici hatası C3035
 ms.date: 11/04/2016
 f1_keywords:
 - C3035
 helpviewer_keywords:
 - C3035
 ms.assetid: af34fad2-2b45-42d0-a9ff-04eab3e91c37
-ms.openlocfilehash: e6d42c53407e1047d299e82566c7fadeb639641d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0064d07d0e6d8adaa41d81272e315685dd32a74f
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62393577"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74755024"
 ---
-# <a name="compiler-error-c3035"></a>Derleyici Hatası C3035
+# <a name="compiler-error-c3035"></a>Derleyici hatası C3035
 
-OpenMP 'ordered' yönergesi gereken bağlama doğrudan bir 'for' veya 'parallel for' yönergesi 'ordered' yan tümcesiyle
+OpenMP ' siparişli ' yönergesi ' siparişli ' yan tümcesiyle doğrudan bir ' for ' veya ' Parallel for ' yönergesine bağlanmalıdır
 
-Sıralı bir yan tümcesi ill oluşturulmuş.
+Sıralı yan tümce hatalı biçimlendirilmiş.
 
-Aşağıdaki örnek, C3035 oluşturur:
+Aşağıdaki örnek C3035 oluşturur:
 
-```
+```cpp
 // C3035.cpp
 // compile with: /openmp /link vcomps.lib
 int main() {

@@ -1,31 +1,31 @@
 ---
-title: Derleyici Hatası C3384
+title: Derleyici hatası C3384
 ms.date: 11/04/2016
 f1_keywords:
 - C3384
 helpviewer_keywords:
 - C3384
 ms.assetid: c9f92c6a-62a9-4333-b2b1-bc55c7f288b6
-ms.openlocfilehash: d1b7e1a69035df358cf84ad791f611928dab8b5a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 059518462bd7a0463fd03fec6434acbbda7ee60a
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62328769"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74756441"
 ---
-# <a name="compiler-error-c3384"></a>Derleyici Hatası C3384
+# <a name="compiler-error-c3384"></a>Derleyici hatası C3384
 
-'type_parameter': değer kısıtlaması ile ref birbirini dışlar.
+' type_parameter ': değer kısıtlaması ve başvuru kısıtlaması birbirini dışlıyor
 
-Her iki genel bir tür katlarıyla sınırlamak `value class` ve `ref class`.
+Genel bir türü hem `value class` hem de `ref class`ile sınırlandıryükleyemezsiniz.
 
-Bkz: [genel tür parametrelerindeki kısıtlamalar (C++/CLI)](../../extensions/constraints-on-generic-type-parameters-cpp-cli.md) daha fazla bilgi için.
+Daha fazla bilgi için bkz. [genelC++tür parametrelerindeki kısıtlamalar (/CLI)](../../extensions/constraints-on-generic-type-parameters-cpp-cli.md) .
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C3384 oluşturur.
+Aşağıdaki örnek C3384 oluşturur.
 
-```
+```cpp
 // C3384.cpp
 // compile with: /c /clr
 generic <typename T>

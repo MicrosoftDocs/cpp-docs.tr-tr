@@ -1,29 +1,29 @@
 ---
-title: Derleyici Hatası C2657
+title: Derleyici hatası C2657
 ms.date: 11/04/2016
 f1_keywords:
 - C2657
 helpviewer_keywords:
 - C2657
 ms.assetid: f7cf29a9-684a-4605-9469-ecfee9ba4b03
-ms.openlocfilehash: 4e2816092b3c0c210ae2c544e9bf9a823a9c5d18
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e060c2b9a38866a898a3c5ada9e595464050877e
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62360443"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74756103"
 ---
-# <a name="compiler-error-c2657"></a>Derleyici Hatası C2657
+# <a name="compiler-error-c2657"></a>Derleyici hatası C2657
 
-' sınıf:: *' deyiminin başlangıcında bulunamadı (bir tür belirtmeyi unuttunuz mu?)
+deyimin başlangıcında ' class::* ' bulundu (bir tür belirtmeyi unuttunuz mu?)
 
-Satır bir işaretçi-üye tanımlayıcısı başladı.
+Satır, üye işaretçisi tanımlayıcısı ile başladı.
 
-Bu hata bir işaretçinin bildiriminde tür belirticisi eksik bir üyesine neden olabilir.
+Bu hata, bir üyenin işaretçisinin bildiriminde eksik tür belirticisinden kaynaklanabilir.
 
-Aşağıdaki örnek, C2657 oluşturur:
+Aşağıdaki örnek C2657 oluşturur:
 
-```
+```cpp
 // C2657.cpp
 class C {};
 int main() {

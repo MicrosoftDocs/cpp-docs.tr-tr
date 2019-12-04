@@ -11,12 +11,12 @@ helpviewer_keywords:
 - coding conventions, C++ Standard Library
 - naming conventions [C++], C++ library
 ms.assetid: bf41b79a-2d53-4f46-8d05-779358335146
-ms.openlocfilehash: 8747ef490c0997b1fa3fd5186618b7189fa00970
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: d92636a7ed63e09396ff68749560cde9d1f8639c
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68450690"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74755713"
 ---
 # <a name="c-library-conventions"></a>C++ Kitaplığı Kuralları
 
@@ -24,7 +24,7 @@ C++ Kitaplık, standart C kitaplığıyla aynı kurallara ek olarak daha fazla �
 
 Bir uygulamada, C++ kitaplıkta türleri ve işlevleri nasıl bildirdiği konusunda belirli Enlem vardır:
 
-- Standart C kitaplığındaki işlevlerin adları extern # "C++" ya da extern "C" bağlantısına sahip olabilir. Satır içi bir kitaplık varlığı bildirmek yerine uygun standart C üst bilgisini ekleyin.
+- Standart C kitaplığındaki işlevlerin adları extern "C++" ya da extern "C" bağlantısına sahip olabilir. Satır içi bir kitaplık varlığı bildirmek yerine uygun standart C üst bilgisini ekleyin.
 
 - Bir kitaplık sınıfındaki üye işlev adı, bu belgede listelenenlerin üzerinde ek işlev imzaları içerebilir. Burada açıklanan bir işlev çağrısının beklenen şekilde davrandığından emin olabilirsiniz, ancak bir kitaplık üye işlevinin adresini güvenilir bir şekilde kullanamazsınız. (Tür, beklediğiniz gibi olmayabilir.)
 
@@ -32,7 +32,7 @@ Bir uygulamada, C++ kitaplıkta türleri ve işlevleri nasıl bildirdiği konusu
 
 - Bazı tamsayı türleri için eş anlamlı olarak tanımlanan bir tür, birkaç farklı tamsayı türünden biriyle aynı olabilir.
 
-- Bir bit maskesi türü, bir tamsayı türü veya bir numaralandırma olarak uygulanabilir. Her iki durumda da, aynı bit maskesi türünde değerler üzerinde bit `AND` düzeyinde `OR`işlemler (ve gibi) gerçekleştirebilirsiniz. Bir bit `A` maskesi `B` türü öğeleri ve sıfır olmayan değerlerdir `A`  & . `B`
+- Bir bit maskesi türü, bir tamsayı türü veya bir numaralandırma olarak uygulanabilir. Her iki durumda da, aynı bit maskesi türünde değerler üzerinde bit düzeyinde işlemler (`AND` ve `OR`gibi) gerçekleştirebilirsiniz. Bir bit maskesi türünün `A` ve `B` öğesi sıfır olmayan değerlerdir `A` & `B` sıfırdır.
 
 - Özel durum belirtimi olmayan bir kitaplık işlevi, tanımı açıkça böyle bir olasılıkla kısıtlanmadığı takdirde rastgele bir özel durum oluşturabilir.
 
@@ -46,9 +46,9 @@ Bir uygulamada, C++ kitaplıkta türleri ve işlevleri nasıl bildirdiği konusu
 
 - Bu belge açıkça önerilmediği C++ takdirde, kitaplık tarafından tanımlanan iki tür her zaman farklıdır.
 
-- Değiştirilebilir işlevlerin varsayılan sürümleri de dahil olmak üzere, kitaplık tarafından sağlanan işlevler, herhangi bir özel durum belirtiminde listelenen özel durumların *çoğunu* oluşturabilir. Kitaplık tarafından sağlanan hiçbir yok edici özel durum oluşturmaz. Standart C kitaplığındaki işlevler, özel durum oluşturan bir karşılaştırma işlevi `qsort` çağırdığında olduğu gibi bir özel durum yayabilir, ancak Aksi takdirde özel durum oluşturmaz.
+- Değiştirilebilir işlevlerin varsayılan sürümleri de dahil olmak üzere, kitaplık tarafından sağlanan işlevler, herhangi bir özel durum belirtiminde listelenen özel durumların *çoğunu* oluşturabilir. Kitaplık tarafından sağlanan hiçbir yok edici özel durum oluşturmaz. Standart C kitaplığındaki işlevler, `qsort` özel durum oluşturan bir karşılaştırma işlevi çağırdığında olduğu gibi özel durum yayabilir, ancak Aksi takdirde özel durum oluşturmaz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++Standart kitaplığa genel bakış](../standard-library/cpp-standard-library-overview.md)\
+Standart kitaplığa genel bakış\ [ C++ ](../standard-library/cpp-standard-library-overview.md)
 [C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)

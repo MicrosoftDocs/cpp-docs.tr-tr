@@ -1,33 +1,33 @@
 ---
-title: Derleyici Hatası C3345
+title: Derleyici hatası C3345
 ms.date: 11/04/2016
 f1_keywords:
 - C3345
 helpviewer_keywords:
 - C3345
 ms.assetid: 1dda4c79-73bb-441b-b939-746154c3afba
-ms.openlocfilehash: eb1d15a12bfebbf44f7335a848d68c367c285586
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e6962e5c127a92acc5dfdad580c7bc89fa134751
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62300602"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74753451"
 ---
-# <a name="compiler-error-c3345"></a>Derleyici Hatası C3345
+# <a name="compiler-error-c3345"></a>Derleyici hatası C3345
 
-'identifier': Modül adı için geçersiz tanımlayıcı
+' tanımlayıcı ': modül adı için geçersiz tanımlayıcı
 
-*Tanımlayıcı* bir modül bir veya daha fazla Kabul edilemeyen karakterler içeriyor. Bir tanımlayıcının ilk karakteri alfabetik, alt çizgi veya yüksek ANSI (0x80-FF) karakterini ve herhangi bir sonraki karakteri bir alfasayısal karakterler, geçerli ise alt çizgi veya yüksek ANSI karakter.
+Modül için *tanımlayıcı* , kabul edilmeyen bir veya daha fazla karakter içeriyor. Bir tanımlayıcı, ilk karakter alfabetik, alt çizgi veya yüksek bir ANSI (0x80-FF) karakteri ise ve sonraki karakter bir alfasayısal, alt çizgi veya yüksek bir ANSI karakter olduğunda geçerlidir.
 
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için
 
-1. Emin *tanımlayıcı* boşluk veya diğer Kabul edilemeyen karakterler içermiyor.
+1. *Tanımlayıcının* boşluk veya kabul edilemez başka karakterler içermediğinden emin olun.
 
 ## <a name="example"></a>Örnek
 
-Çünkü aşağıdaki kod örneğinde hata iletisi C3345 neden `name` parametresinin `module` boş bir öznitelik içeriyor.
+Aşağıdaki kod örneği, C3345 özniteliğinin `name` `module` parametresi boş içerdiğinden hata iletisine neden olur.
 
-```
+```cpp
 // cpp_attr_name_module.cpp
 // compile with: /LD /link /OPT:NOREF
 #include <atlbase.h>

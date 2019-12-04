@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3828
+title: Derleyici hatası C3828
 ms.date: 11/04/2016
 f1_keywords:
 - C3828
 helpviewer_keywords:
 - C3828
 ms.assetid: 8d9cee75-9504-4bc8-88b6-2413618a3f45
-ms.openlocfilehash: f499bb2a8fd6d3148935daec89835b79d2ff5b49
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4b47ddbf0775cab2bd7214f68d1b4ed6e06e6eea
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62390600"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74741709"
 ---
-# <a name="compiler-error-c3828"></a>Derleyici Hatası C3828
+# <a name="compiler-error-c3828"></a>Derleyici hatası C3828
 
-'nesne türü': yönetilen örneklerini oluşturmaya izin verilmiyor yerleştirme bağımsız değişkenleri veya WinRTclasses
+' nesne türü ': yönetilen veya Wınrtclass örnekleri oluşturulurken yerleştirme bağımsız değişkenlerine izin verilmez
 
-Yönetilen türü veya Windows çalışma zamanı türünün bir nesnesi oluşturulurken, yerleştirme formun işlecinin kullanamazsınız [yeni başvuru, gcnew](../../extensions/ref-new-gcnew-cpp-component-extensions.md) veya [yeni](../../cpp/new-operator-cpp.md).
+Yönetilen bir tür veya Windows Çalışma Zamanı türünde bir nesne oluştururken, [New, gcnew](../../extensions/ref-new-gcnew-cpp-component-extensions.md) veya [New](../../cpp/new-operator-cpp.md)işleç başvurusunun yerleştirme formunu kullanamazsınız.
 
-Aşağıdaki örnek, C3828 oluşturur ve bu sorunun nasıl gösterir:
+Aşağıdaki örnek C3828 oluşturur ve nasıl düzeltileceğini gösterir:
 
-```
+```cpp
 // C3828a.cpp
 // compile with: /clr
 ref struct M {

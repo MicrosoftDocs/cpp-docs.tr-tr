@@ -1,31 +1,31 @@
 ---
-title: Derleyici Hatası C3293
+title: Derleyici hatası C3293
 ms.date: 07/21/2017
 f1_keywords:
 - C3293
 helpviewer_keywords:
 - C3293
 ms.assetid: b772cf98-52e0-4e24-be23-1f5d87d999ac
-ms.openlocfilehash: 84d539722474d5f5dfffe1f6fe121bb7349ba131
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1713632d21ef401fb1177350c81a4a64ed0503ec
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62222593"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74760120"
 ---
-# <a name="compiler-error-c3293"></a>Derleyici Hatası C3293
+# <a name="compiler-error-c3293"></a>Derleyici hatası C3293
 
-'erişimcisi': 'type' sınıfının varsayılan özelliğine (Dizin Oluşturucu) erişmek için 'default' kullanın
+' erişimci ': ' Type ' sınıfının varsayılan özelliğine (Dizin Oluşturucu) erişmek için ' default ' kullanın
 
-Dizini oluşturulmuş özelliğe yanlış erişildi.  Bkz: [nasıl yapılır: İçindeki özellikleri kullanın C++/CLI](../../dotnet/how-to-use-properties-in-cpp-cli.md) daha fazla bilgi için.
+Dizinli bir özelliğe yanlış erişildi.  Daha fazla bilgi için bkz. [nasıl C++yapılır:/CLI ' da özellikleri kullanma](../../dotnet/how-to-use-properties-in-cpp-cli.md) .
 
-**Visual Studio 2017 ve üzeri**: Visual Studio 2015 ve önceki sürümlerinde, bazı durumlarda, derleyici varsayılan bir özellik bir varsayılan dizin oluşturucu misidentified. Bir özelliğe erişmek için "varsayılan" tanımlayıcısını kullanarak sorunu çözmek mümkündü. Varsayılan olarak bir anahtar sözcük C ++ 11'de kullanıma sunulmuştur sonra geçici sorunlu hale geldi. Bu nedenle, Visual Studio 2017'de gerekli geçici hatalar düzeltilmiştir ve "varsayılan" bir sınıfının varsayılan özelliğine erişmek için kullanıldığında, derleyici artık bir hata oluşturur.
+**Visual studio 2017 ve üzeri**: visual Studio 2015 ve önceki sürümlerde derleyici, bazı durumlarda varsayılan bir dizin oluşturucu olarak varsayılan bir özelliği yanlış tanımladı. Bu özelliğe erişmek için "default" tanımlayıcısını kullanarak soruna geçici bir çözüm olabilir. Geçici çözüm, C++ 11 ' de varsayılan anahtar sözcük olarak sunulduktan sonra sorunlu olur. Bu nedenle, Visual Studio 2017 ' de geçici çözümü gerektiren hatalar düzeltildi ve derleyici, bir sınıf için varsayılan özelliğe erişmek üzere "varsayılan" kullanıldığında bir hata oluşturuyor.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, Visual Studio 2015'te ve daha önce C3293 oluşturur.
+Aşağıdaki örnek, Visual Studio 2015 ve önceki sürümlerde C3293 oluşturur.
 
-```
+```cpp
 // C3293.cpp
 // compile with: /clr /c
 using namespace System;

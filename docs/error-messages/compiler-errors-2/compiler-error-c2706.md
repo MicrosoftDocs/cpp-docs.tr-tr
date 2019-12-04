@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2706
+title: Derleyici hatası C2706
 ms.date: 11/04/2016
 f1_keywords:
 - C2706
 helpviewer_keywords:
 - C2706
 ms.assetid: e18da924-c42d-4b09-8e29-f4e0382d7dc6
-ms.openlocfilehash: 9767d36d44b99423d600d299d0803901d3dbfec5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bca86d3c0cf886c64a1d668468c793d0e77b2867
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62161114"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74757468"
 ---
-# <a name="compiler-error-c2706"></a>Derleyici Hatası C2706
+# <a name="compiler-error-c2706"></a>Derleyici hatası C2706
 
-eşleşen olmadan __except geçersizdir \__try (eksik '}' içinde \__try blok?)
+\__try eşleşmeyen __except geçersiz (\__try bloğunda '} ' eksik mi?)
 
-Derleyici için bir kapanış ayracı bulamadı bir `__try` blok.
+Derleyici `__try` bloğu için kapatma ayracı bulamadı.
 
-Aşağıdaki örnek, C2706 oluşturur:
+Aşağıdaki örnek C2706 oluşturur:
 
-```
+```cpp
 // C2706.cpp
 int main() {
    __try {

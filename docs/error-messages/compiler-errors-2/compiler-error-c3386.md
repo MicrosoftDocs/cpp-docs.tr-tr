@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3386
+title: Derleyici hatası C3386
 ms.date: 11/04/2016
 f1_keywords:
 - C3386
 helpviewer_keywords:
 - C3386
 ms.assetid: 93fa8c33-0f10-402b-8eec-b0a217a1f8dc
-ms.openlocfilehash: a9183e1f62e7ebaf5db04a35a45806ec02169e69
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ca78433fcb835ad60b553be28ea746f0f880b315
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62328815"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74743256"
 ---
-# <a name="compiler-error-c3386"></a>Derleyici Hatası C3386
+# <a name="compiler-error-c3386"></a>Derleyici hatası C3386
 
-'type': __declspec(dllexport) /\_yönetilen veya WinRTtype _declspec(dllimport) uygulanamaz
+' Type ': __declspec (dllexport)/\__declspec (dllimport) yönetilen veya Wınrttype öğesine uygulanamaz
 
-`dllimport` Ve [dllexport](../../cpp/dllexport-dllimport.md) `__declspec` değiştiriciler, yönetilen veya Windows çalışma zamanı geçerli olmayan türü.
+`dllimport` ve [dllexport](../../cpp/dllexport-dllimport.md) `__declspec` değiştiricileri yönetilen veya Windows çalışma zamanı türünde geçerli değildir.
 
-Aşağıdaki örnek, C3386 oluşturur ve bu sorunun nasıl gösterir:
+Aşağıdaki örnek C3386 oluşturur ve nasıl düzeltileceğini gösterir:
 
-```
+```cpp
 // C3386.cpp
 // compile with: /clr /c
 ref class __declspec(dllimport) X1 {   // C3386

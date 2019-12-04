@@ -1,29 +1,29 @@
 ---
-title: Derleyici Hatası C3651
+title: Derleyici hatası C3651
 ms.date: 11/04/2016
 f1_keywords:
 - C3651
 helpviewer_keywords:
 - C3651
 ms.assetid: a03e692e-c219-4654-9827-8415cfa5a22d
-ms.openlocfilehash: 6e773201e3bc9a4edb1ee77f1ddcd555e0ae0c0e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9468b1e9193bfa52ed133f6fdfa398e02e40c4ef
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62388689"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74756324"
 ---
-# <a name="compiler-error-c3651"></a>Derleyici Hatası C3651
+# <a name="compiler-error-c3651"></a>Derleyici hatası C3651
 
-'member': açık bir geçersiz kılma kullanılamaz, bir taban sınıfının üyesi olmalıdır
+' Member ': açık bir geçersiz kılma olarak kullanılamaz, bir taban sınıfın üyesi olmalıdır
 
-Açık bir geçersiz kılma belirtildi, ancak geçersiz kılınmasını işlevi bir temel tür değil bir tür içinde.
+Açık bir geçersiz kılma belirtildi, ancak geçersiz kılınan işlev temel tür olmayan bir türde.
 
-Daha fazla bilgi için [açık geçersiz kılmalar](../../extensions/explicit-overrides-cpp-component-extensions.md).
+Daha fazla bilgi için bkz. [Açık geçersiz kılmalar](../../extensions/explicit-overrides-cpp-component-extensions.md).
 
-Aşağıdaki örnek, C3651 oluşturur:
+Aşağıdaki örnek C3651 oluşturur:
 
-```
+```cpp
 // C3651.cpp
 // compile with: /clr /c
 ref class C {

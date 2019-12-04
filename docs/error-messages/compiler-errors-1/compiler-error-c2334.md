@@ -1,25 +1,25 @@
 ---
-title: Derleyici Hatası C2334
+title: Derleyici hatası C2334
 ms.date: 11/04/2016
 f1_keywords:
 - C2334
 helpviewer_keywords:
 - C2334
 ms.assetid: 36142855-e00b-4bbf-80f5-a301edeff46e
-ms.openlocfilehash: 4f068792193fd22ccddc39f9afc555e7c8672d8c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f8a096a89bdb076b857e5adc49ad8162551612f2
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62188375"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74747702"
 ---
-# <a name="compiler-error-c2334"></a>Derleyici Hatası C2334
+# <a name="compiler-error-c2334"></a>Derleyici hatası C2334
 
-Önceki beklenmeyen belirteçler ': veya {'; görünen işlev gövdesi atlanıyor
+': veya {' öncesinde beklenmeyen belirteçler; görünen işlev gövdesi atlanıyor
 
-Aşağıdaki örnek, C2334 oluşturur. Hatası C2059 sonra bu hata oluşur:
+Aşağıdaki örnek C2334 oluşturur. Hata C2059 sonra bu hata oluşur:
 
-```
+```cpp
 // C2334.cpp
 // compile with: /c
 // C2059 expected

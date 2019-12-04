@@ -1,33 +1,33 @@
 ---
-title: Derleyici Hatası C3867
+title: Derleyici hatası C3867
 ms.date: 11/04/2016
 f1_keywords:
 - C3867
 helpviewer_keywords:
 - C3867
 ms.assetid: bc5de03f-e01a-4407-88c3-2c63f0016a1e
-ms.openlocfilehash: 9a5094b6c3d914c2f66ee8ed94bcdcce5827f130
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: 7e3f52b2b69058549cb8aa3e14d2a4b4048fc4e4
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65447191"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74756857"
 ---
-# <a name="compiler-error-c3867"></a>Derleyici Hatası C3867
+# <a name="compiler-error-c3867"></a>Derleyici hatası C3867
 
-'İşlev': işlev çağrısı; bağımsız değişken listesi eksik Kullan ' & func' bir üyeye işaretçi oluşturmak için
+' Func ': işlev çağrısında bağımsız değişken listesi eksik; üyeye işaretçi oluşturmak için ' & Func ' kullanın
 
-Üye işlevi, sınıf adını ve address-of işlecini nitelemeden bir üye işlevin adresini almak çalıştı.
+Üye işlevini sınıf adı ve adres işleci ile nitelemeden bir üye işlevin adresini almaya çalıştınız.
 
-Bu hata için Visual Studio 2005 yapıldığı derleyici uyumluluğu iş sonucu olarak da oluşturulabilir: Gelişmiş işaretçi-üye uyumluluğu. Visual Studio 2005'ten önce derlenmiş kod artık C3867 oluşturur.
+Bu hata, Visual Studio 2005: Gelişmiş üye işaretçisi uygunluğu için yapılan derleyici uygunluk işinin sonucu olarak da oluşturulabilir. Visual Studio 2005 ' den önce derlenen kod artık C3867 oluşturacak.
 
 ## <a name="example"></a>Örnek
 
-C3867 yanıltıcı bir önerilen çözüm derleyicisinden verilebilir. Mümkün olduğunda, en çok türetilen sınıfı kullanın.
+C3867, yanlış bir önerilen çözüm ile derleyicisinden verilebilir. Mümkün olan her durumda, en türetilmiş sınıfı kullanın.
 
-Aşağıdaki örnek, C3867 oluşturur ve bu sorunun nasıl gösterir.
+Aşağıdaki örnek C3867 oluşturur ve nasıl düzeltileceğini gösterir.
 
-```
+```cpp
 // C3867_1.cpp
 // compile with: /c
 struct Base {
@@ -47,9 +47,9 @@ void Derived::Bar() {
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C3867 oluşturur ve bu sorunun nasıl gösterir.
+Aşağıdaki örnek C3867 oluşturur ve nasıl düzeltileceğini gösterir.
 
-```
+```cpp
 // C3867_2.cpp
 #include<stdio.h>
 
@@ -79,9 +79,9 @@ int main() {
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C3867 oluşturur ve bu sorunun nasıl gösterir.
+Aşağıdaki örnek C3867 oluşturur ve nasıl düzeltileceğini gösterir.
 
-```
+```cpp
 // C3867_3.cpp
 class X {
 public:
@@ -98,9 +98,9 @@ int main() {
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C3867 oluşturur.
+Aşağıdaki örnek C3867 oluşturur.
 
-```
+```cpp
 // C3867_4.cpp
 // compile with: /c
 class A {
@@ -122,9 +122,9 @@ public:
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C3867 oluşturur.
+Aşağıdaki örnek C3867 oluşturur.
 
-```
+```cpp
 // C3867_5.cpp
 // compile with: /EHsc
 #include <iostream>

@@ -1,25 +1,25 @@
 ---
-title: Derleyici Hatası C3415
+title: Derleyici hatası C3415
 ms.date: 11/04/2016
 f1_keywords:
 - C3415
 helpviewer_keywords:
 - C3415
 ms.assetid: fa2db8ab-2820-4ec3-a740-fb5e2adcfb29
-ms.openlocfilehash: 3d4163fac83e24d30f29aed92e7a1ec1fc9e362f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: da7b49d30866b9fa5ab27a93357fd2812aaa2806
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62242870"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74742931"
 ---
-# <a name="compiler-error-c3415"></a>Derleyici Hatası C3415
+# <a name="compiler-error-c3415"></a>Derleyici hatası C3415
 
-birden çok 'section_name' bölümleri bulunamadı ('value') farklı özniteliklerle
+farklı özniteliklere sahip birden çok ' section_name ' bölümü bulundu (' Value ')
 
-Çakışan değerler belirtildi [bölümü](../../preprocessor/section.md) pragmaları.
+[Bölüm](../../preprocessor/section.md) pragmaları içinde çakışan değerler belirtildi.
 
-`value` ntimage.h belirtildiği gibi bir bölüm için geçerli ayarıdır. Örneğin:
+`value`,, ntımage. h içinde belirtildiği gibi, bölüm için geçerli ayardır. Örneğin:
 
 ```
 // Section contains extended relocations.
@@ -40,9 +40,9 @@ birden çok 'section_name' bölümleri bulunamadı ('value') farklı öznitelikl
 #define IMAGE_SCN_MEM_WRITE                  0x80000000
 ```
 
-Aşağıdaki örnek, C3415 oluşturur:
+Aşağıdaki örnek C3415 oluşturur:
 
-```
+```cpp
 // C3415.cpp
 #pragma section("mysec1",write)
 #pragma section("mysec1",read)   // C3415

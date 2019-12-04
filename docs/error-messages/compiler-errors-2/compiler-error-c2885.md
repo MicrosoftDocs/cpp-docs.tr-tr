@@ -1,31 +1,31 @@
 ---
-title: Derleyici Hatası C2885
+title: Derleyici hatası C2885
 ms.date: 11/04/2016
 f1_keywords:
 - C2885
 helpviewer_keywords:
 - C2885
 ms.assetid: 7743e5f3-a034-44b4-9ee8-5a6254c27f8c
-ms.openlocfilehash: ff5e770052301e95f694d3712f95b82732c2faba
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: e60f3fff2ef61f4d6374072c05a2ad3e64a57031
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65447691"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74760934"
 ---
-# <a name="compiler-error-c2885"></a>Derleyici Hatası C2885
+# <a name="compiler-error-c2885"></a>Derleyici hatası C2885
 
-'class::identifier': değil bir geçerli using bildirimi sınıf olmayan kapsamda
+' class:: Identifier ': sınıf olmayan kapsamda geçerli bir using bildirimi değil
 
-Kullanılan bir [kullanarak](../../cpp/using-declaration.md) bildirimi yanlış.
+[Using](../../cpp/using-declaration.md) bildirimini yanlış kullandınız.
 
 ## <a name="example"></a>Örnek
 
-Bu hata için Visual Studio 2005 yapıldığı derleyici uyumluluğu iş sonucu olarak oluşturulan: artık sahip için geçerli olan bir `using` ; iç içe geçmiş bir tür bildirimine türü bir n put iç içe türü, yaptığınız her başvurunun açıkça nitelemeniz gerekir amespace, veya bir tür tanımı oluşturun.
+Bu hata, Visual Studio 2005 için yapılan derleyici uygunluk işinin bir sonucu olarak oluşturulabilir: iç içe bir türe `using` bildirimine sahip olmak için artık geçerli değil; iç içe geçmiş türde yaptığınız her başvuruyu açıkça nitelemeniz, türü bir ad alanına yerleştirmeniz veya bir typedef oluşturmanız gerekir.
 
-Aşağıdaki örnek, C2885 oluşturur.
+Aşağıdaki örnek C2885 oluşturur.
 
-```
+```cpp
 // C2885.cpp
 namespace MyNamespace {
    class X1 {};
@@ -54,11 +54,11 @@ int main () {
 
 ## <a name="example"></a>Örnek
 
-Kullanırsanız `using` anahtar sözcüğü bir sınıf üyesinin, C++ ile başka bir sınıf (türetilmiş bir sınıf) içinde bu üye tanımlamanızı gerektirir.
+Bir sınıf üyesiyle birlikte `using` anahtar sözcüğünü kullanıyorsanız, C++ bu üyeyi başka bir sınıf (türetilmiş bir sınıf) içinde tanımlamanızı gerektirir.
 
-Aşağıdaki örnek, C2885 oluşturur.
+Aşağıdaki örnek C2885 oluşturur.
 
-```
+```cpp
 // C2885_b.cpp
 // compile with: /c
 class A {

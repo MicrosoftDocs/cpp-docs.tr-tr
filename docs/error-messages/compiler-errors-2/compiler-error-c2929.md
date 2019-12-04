@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2929
+title: Derleyici hatası C2929
 ms.date: 11/04/2016
 f1_keywords:
 - C2929
 helpviewer_keywords:
 - C2929
 ms.assetid: 11134027-6adc-4733-b6bd-b94486bd1933
-ms.openlocfilehash: fe2a56f7722c70c11e980fb6ee59230ffd056c5f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d420e3f6470a94874549fadc8cd90e4dac20fe6e
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62385725"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74760999"
 ---
-# <a name="compiler-error-c2929"></a>Derleyici Hatası C2929
+# <a name="compiler-error-c2929"></a>Derleyici hatası C2929
 
-'identifier': açık örnek oluşturma; açıkça zorlanamıyor ve Şablon sınıfı üyesinin örneğinin Gizle
+' tanımlayıcı ': açık örnek oluşturma; Şablon sınıfı üyenin örnek oluşturma, açıkça zorlanamıyor ve bastırılamıyor
 
-Bir tanımlayıcı örneği oluşturulan önlenirken açıkça örneği oluşturulamıyor.
+Bir tanımlayıcıyı örneklendirmesini engellerken açık bir şekilde örnekleyemezsiniz.
 
-Aşağıdaki örnek, C2929 oluşturur:
+Aşağıdaki örnek C2929 oluşturur:
 
-```
+```cpp
 // C2929.cpp
 // compile with: /c
 template<typename T>

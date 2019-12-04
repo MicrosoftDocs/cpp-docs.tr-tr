@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3741
+title: Derleyici hatası C3741
 ms.date: 11/04/2016
 f1_keywords:
 - C3741
 helpviewer_keywords:
 - C3741
 ms.assetid: ed311315-cc32-49c9-97fa-01b293d81526
-ms.openlocfilehash: d207c87c7b3f75ac939c155da127720562973160
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2be5c0a4f85448f41f865bdde79d56998fbcf16a
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62376022"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74752606"
 ---
-# <a name="compiler-error-c3741"></a>Derleyici Hatası C3741
+# <a name="compiler-error-c3741"></a>Derleyici hatası C3741
 
-'class': bir coclass olmalıdır, event_receiver'ın 'layout_dependent' parametresi = true
+' class ': event_receiver = true olan ' layout_dependent ' parametresi olduğunda bir coclass olmalıdır
 
-Zaman `layout_dependent=true` için bir [event_receiver](../../windows/event-receiver.md) sınıfı ve ardından sınıf de olmalıdır [coclass'ı](../../windows/coclass.md) özniteliği.
+Bir [event_receiver](../../windows/event-receiver.md) sınıfı için `layout_dependent=true`, sınıfın [coclass](../../windows/coclass.md) özniteliği de olmalıdır.
 
 Aşağıdaki örnek C3741 oluşturur
 
-```
+```cpp
 // C3741.cpp
 // compile with: /c
 // C3741 expected

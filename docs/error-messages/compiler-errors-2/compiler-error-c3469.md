@@ -1,31 +1,31 @@
 ---
-title: Derleyici Hatası C3469
+title: Derleyici hatası C3469
 ms.date: 11/04/2016
 f1_keywords:
 - C3469
 helpviewer_keywords:
 - C3469
 ms.assetid: e23b0e5c-c704-4e67-a868-bf02c2055d85
-ms.openlocfilehash: 1e935fb90c93d6f301226f3e9029c04929f179ac
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 546de5a65f6e4c2fd370ba781d01945df2bbfce5
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62397438"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74760549"
 ---
-# <a name="compiler-error-c3469"></a>Derleyici Hatası C3469
+# <a name="compiler-error-c3469"></a>Derleyici hatası C3469
 
-'type': genel bir sınıf iletilemez
+' Type ': genel bir sınıf iletilemez
 
-Tür iletme genel bir sınıf kullanamazsınız.
+Genel bir sınıfta tür iletme kullanamazsınız.
 
-Daha fazla bilgi için [tür iletme (C++/CLI)](../../extensions/type-forwarding-cpp-cli.md).
+Daha fazla bilgi için bkz. [tür iletmeC++(/CLI)](../../extensions/type-forwarding-cpp-cli.md).
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, bir bileşen oluşturur.
+Aşağıdaki örnek bir bileşen oluşturur.
 
-```
+```cpp
 // C3469.cpp
 // compile with: /clr /LD
 generic<typename T>
@@ -36,9 +36,9 @@ public ref class GR2 {};
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C3466 oluşturur.
+Aşağıdaki örnek C3466 oluşturur.
 
-```
+```cpp
 // C3469_b.cpp
 // compile with: /clr /c
 #using "C3469.dll"

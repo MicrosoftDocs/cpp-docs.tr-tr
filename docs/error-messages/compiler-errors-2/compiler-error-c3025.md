@@ -1,29 +1,29 @@
 ---
-title: Derleyici Hatası C3025
+title: Derleyici hatası C3025
 ms.date: 11/04/2016
 f1_keywords:
 - C3025
 helpviewer_keywords:
 - C3025
 ms.assetid: 4442f5a3-d9ea-4873-b1fb-e7e5bd3cbe5e
-ms.openlocfilehash: bb3337cb563125ce0329146f64c4da3f33e28ce7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d0aac601285d4f345809f805fcccd62b7de7bab1
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62360079"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74741982"
 ---
-# <a name="compiler-error-c3025"></a>Derleyici Hatası C3025
+# <a name="compiler-error-c3025"></a>Derleyici hatası C3025
 
-'yan tümcesi': tam sayı ifade bekleniyor
+' Clause ': tamsayı ifadesi bekleniyor
 
-Bir yan tümcesi bir tamsayı ifade gerektirir, ancak bir tamsayı ifadesi verildi.
+Yan tümce bir tamsayı ifadesi gerektiriyor ancak tamsayı olmayan bir ifade verdi.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C3025 oluşturur.
+Aşağıdaki örnek C3025 oluşturur.
 
-```
+```cpp
 // C3025.cpp
 // compile with: /openmp /link vcomps.lib
 #include <stdio.h>

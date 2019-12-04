@@ -1,31 +1,31 @@
 ---
-title: Derleyici Hatası C2562
+title: Derleyici hatası C2562
 ms.date: 11/04/2016
 f1_keywords:
 - C2562
 helpviewer_keywords:
 - C2562
 ms.assetid: 2c41e511-9952-4b98-9976-6b1523613e1b
-ms.openlocfilehash: c665c4ed82fefaf0ee724defb8c205f86fc06dd0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 78536fdc0c2a6a6e9c4842fdea6423037496b30b
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62228897"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74755557"
 ---
-# <a name="compiler-error-c2562"></a>Derleyici Hatası C2562
+# <a name="compiler-error-c2562"></a>Derleyici hatası C2562
 
-'identifier': 'void' işlev değer döndürüyor
+' tanımlayıcı ': ' void ' işlevi bir değer döndürüyor
 
-Olarak bildirilen işlev `void` ancak bir değer döndürür.
+İşlev `void` olarak bildirildiği halde bir değer döndürüyor.
 
-Bu hata bir hatalı işlev prototipi tarafından neden olabilir.
+Bu hata yanlış bir işlev prototipten kaynaklanıyor olabilir.
 
-Dönüş türü işlev bildiriminin belirtirseniz, bu hata sabit olamaz.
+Bu hata, işlev bildiriminde dönüş türünü belirtirseniz düzeltilebilir.
 
-Aşağıdaki örnek, C2562 oluşturur:
+Aşağıdaki örnek C2562 oluşturur:
 
-```
+```cpp
 // C2562.cpp
 // compile with: /c
 void testfunc() {

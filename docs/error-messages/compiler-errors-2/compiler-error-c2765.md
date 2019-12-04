@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2765
+title: Derleyici hatası C2765
 ms.date: 11/04/2016
 f1_keywords:
 - C2765
 helpviewer_keywords:
 - C2765
 ms.assetid: 47ad86f3-a7e0-47ad-85ff-0f5534458cb9
-ms.openlocfilehash: 7b34bd8b352e8872722e9402d8d0113ae6157292
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0c646d0ab28b97b546721180e46b0f22ea376f7d
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62257653"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74759834"
 ---
-# <a name="compiler-error-c2765"></a>Derleyici Hatası C2765
+# <a name="compiler-error-c2765"></a>Derleyici hatası C2765
 
-'function': işlev şablonunun açık uzmanlığı tüm varsayılan bağımsız değişkenlere sahip olamaz
+' function ': bir işlev şablonunun açık bir özelleştirmesi varsayılan bağımsız değişkenlere sahip olamaz
 
-Varsayılan bağımsız değişkenleri işlev şablonunun açık özelleştirmede izin verilmez. Daha fazla bilgi için [açık uzmanlığı, işlev şablonları](../../cpp/explicit-specialization-of-function-templates.md).
+Bir işlev şablonunun açık bir özelleştirmesi üzerinde varsayılan bağımsız değişkenlere izin verilmez. Daha fazla bilgi için bkz. [Işlev şablonlarının açık özelleştirmesi](../../cpp/explicit-specialization-of-function-templates.md).
 
-Aşağıdaki örnek, C2765 oluşturur:
+Aşağıdaki örnek C2765 oluşturur:
 
-```
+```cpp
 // C2765.cpp
 template<class T> void f(T t) {};
 

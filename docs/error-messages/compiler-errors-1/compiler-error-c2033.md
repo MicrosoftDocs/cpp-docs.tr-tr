@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2033
+title: Derleyici hatası C2033
 ms.date: 11/04/2016
 f1_keywords:
 - C2033
 helpviewer_keywords:
 - C2033
 ms.assetid: fd5a1637-9db2-4c98-a7cc-b63b39737cd9
-ms.openlocfilehash: 8147c707c70e6c3f21ed81b2acf0a59b72065408
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6fec222117f28e885d6187e6733559433f4943d3
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62400493"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74750968"
 ---
-# <a name="compiler-error-c2033"></a>Derleyici Hatası C2033
+# <a name="compiler-error-c2033"></a>Derleyici hatası C2033
 
-'identifier': bit alanında yöneltme olamaz
+' tanımlayıcı ': bit alanında yöneltme olamaz
 
-Bit alanı verilmeyen bir işaretçi olarak bildirildi.
+Bit alanı bir işaretçi olarak bildirildi; buna izin verilmez.
 
-Aşağıdaki örnek, C2033 oluşturur:
+Aşağıdaki örnek C2033 oluşturur:
 
-```
+```cpp
 // C2033.cpp
 struct S {
    int *b : 1;  // C2033
@@ -30,7 +30,7 @@ struct S {
 
 Olası çözüm:
 
-```
+```cpp
 // C2033b.cpp
 // compile with: /c
 struct S {

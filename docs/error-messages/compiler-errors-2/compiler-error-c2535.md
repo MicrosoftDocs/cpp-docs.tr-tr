@@ -1,29 +1,29 @@
 ---
-title: Derleyici Hatası C2535
+title: Derleyici hatası C2535
 ms.date: 11/04/2016
 f1_keywords:
 - C2535
 helpviewer_keywords:
 - C2535
 ms.assetid: a958f83e-e2bf-4a59-b44b-d406ec325d7e
-ms.openlocfilehash: b2b5452cfe59284d56b019674ffbabbda0dc62d1
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: f5cecd847837214f6392bead624e5377cef4833f
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64344713"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74758651"
 ---
-# <a name="compiler-error-c2535"></a>Derleyici Hatası C2535
+# <a name="compiler-error-c2535"></a>Derleyici hatası C2535
 
-'identifier': üye işlev önceden tanımlandı veya bildirildi
+' tanımlayıcı ': üye işlev önceden tanımlandı veya bildiriliyor
 
-Birden fazla tanım veya aşırı yüklenmiş bir işlevin bildirimi aynı biçimsel parametre listesinde kullanarak bu hataya neden.
+Bu hata, aşırı yüklenmiş bir işlevin birden fazla tanımında veya bildiriminde aynı biçimsel parametre listesinin kullanılmasıyla kaynaklanabilir.
 
-Dispose işlev nedeniyle C2535 alırsanız, bkz. [yok ediciler ve sonlandırıcılar](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers) daha fazla bilgi için.
+Dispose işlevi nedeniyle C2535 alırsanız daha fazla bilgi için yok [ediciler ve sonlandırıcılar](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers) bölümüne bakın.
 
-Aşağıdaki örnek, C2535 oluşturur:
+Aşağıdaki örnek C2535 oluşturur:
 
-```
+```cpp
 // C2535.cpp
 // compile with: /c
 class C {

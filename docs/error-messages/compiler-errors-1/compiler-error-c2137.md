@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2137
+title: Derleyici hatası C2137
 ms.date: 11/04/2016
 f1_keywords:
 - C2137
 helpviewer_keywords:
 - C2137
 ms.assetid: 984687ee-7766-4f6b-ae15-0c9a010e2366
-ms.openlocfilehash: 7051fbe788790f1e91a3f54720f72d8370d1e9a8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2bc0ed5a47900b8d64e59d1b2c745b1e51e37db4
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62350627"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74757481"
 ---
-# <a name="compiler-error-c2137"></a>Derleyici Hatası C2137
+# <a name="compiler-error-c2137"></a>Derleyici hatası C2137
 
 boş karakter sabiti
 
-Boş karakter sabiti (' ') izin verilmez.
+Boş karakter sabitine (' ') izin verilmiyor.
 
-Aşağıdaki örnek, C2137 oluşturur:
+Aşağıdaki örnek C2137 oluşturur:
 
-```
+```cpp
 // C2137.cpp
 int main() {
    char c = '';   // C2137

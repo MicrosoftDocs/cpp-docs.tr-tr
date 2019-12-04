@@ -1,25 +1,25 @@
 ---
-title: Derleyici Hatası C2552
+title: Derleyici hatası C2552
 ms.date: 11/04/2016
 f1_keywords:
 - C2552
 helpviewer_keywords:
 - C2552
 ms.assetid: 0e0ab759-788a-4faf-9337-80d4b9e2e8c9
-ms.openlocfilehash: ddd3755a4fcabf8c097c359f31c9cc189b36f79a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7f3e4cfc46655c5201e7a79a9333f532a8fcab9c
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62353137"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74740812"
 ---
-# <a name="compiler-error-c2552"></a>Derleyici Hatası C2552
+# <a name="compiler-error-c2552"></a>Derleyici hatası C2552
 
 'tanımlayıcı' : toplama olmayan değerler başlatıcı listesiyle başlatılamaz
 
 Toplam değer tanımlayıcısı hatalı olarak başlatıldı.
 
-[Toplamlar](../../c-language/initializing-aggregate-types.md) olarak tanımlanır:
+[Toplamalar](../../c-language/initializing-aggregate-types.md) şöyle tanımlanır:
 
 - Diziler
 
@@ -51,7 +51,7 @@ Aşağıdakiler, bir tür üzerinde toplama başlatma denendiğinde C2552'nin ol
 
 Aşağıdaki örnek C2552'i oluşturur:
 
-```
+```cpp
 // C2552.cpp
 // compile with: /clr
 #include <string>

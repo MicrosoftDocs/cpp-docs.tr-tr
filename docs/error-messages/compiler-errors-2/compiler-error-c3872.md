@@ -1,29 +1,29 @@
 ---
-title: Derleyici Hatası C3872
+title: Derleyici hatası C3872
 ms.date: 11/04/2016
 f1_keywords:
 - C3872
 helpviewer_keywords:
 - C3872
 ms.assetid: 519e95be-5641-40cc-894c-da4819506604
-ms.openlocfilehash: bd056a63ab60cd5a2504c6a0bc19e388f71b068b
-ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
+ms.openlocfilehash: f4b116729ad3b84014d202deb31ab490435fcef3
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66450058"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74761448"
 ---
-# <a name="compiler-error-c3872"></a>Derleyici Hatası C3872
+# <a name="compiler-error-c3872"></a>Derleyici hatası C3872
 
-'char': Bu karakter bir tanımlayıcıda kullanılamaz
+' Char ': bir tanımlayıcıda bu karaktere izin verilmiyor
 
-C++ Derleyici C ++ 11 standart bir tanımlayıcıda izin verilen karakterleri izler. Bir tanımlayıcı yalnızca karakterler ve evrensel karakter adları belirli aralıklarına izin verilir. Bir tanımlayıcının ilk karakteri ek kısıtlamalar. Daha fazla bilgi ve izin verilen karakter ve evrensel karakter adı aralıkları listesi için bkz: [tanımlayıcıları](../../cpp/identifiers-cpp.md).
+C++ Derleyici, bir tanımlayıcıda izin verilen karakterlerle c++ 11 standardını izler. Tanımlayıcıda yalnızca belirli karakter aralıklarına ve evrensel karakter adlarına izin verilir. Ek kısıtlamalar, bir tanımlayıcının ilk karakteri için geçerlidir. Daha fazla bilgi ve izin verilen karakterlerin ve evrensel karakter adı aralıklarının listesi için bkz. [tanımlayıcılar](../../cpp/identifiers-cpp.md).
 
-Bir tanımlayıcı izin verilen karakter aralığı daha az kısıtlayıcı olduğunda C + derleniyor +/ CLI kodu. / CLR ile derlenmiş kodda tanımlayıcıları izlemelidir [standart ECMA-335: Ortak dil altyapısı (CLI)](https://www.ecma-international.org/publications/standards/Ecma-335.htm).
+Bir tanımlayıcıda izin verilen karakter aralığı,/CLI kodu derlenirken C++daha az kısıtlayıcıdır. /Clr kullanılarak derlenen koddaki tanımlayıcılar [standart ECMA-335: ortak dil altyapısı (CLI)](https://www.ecma-international.org/publications/standards/Ecma-335.htm)izlemelidir.
 
-Aşağıdaki örnek, C3872 oluşturur:
+Aşağıdaki örnek C3872 oluşturur:
 
-```
+```cpp
 // C3872.cpp
 int main() {
    int abc_\u0040;   // C3872, U+0040 is in base char set

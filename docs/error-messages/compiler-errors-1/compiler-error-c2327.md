@@ -1,29 +1,29 @@
 ---
-title: Derleyici Hatası C2327
+title: Derleyici hatası C2327
 ms.date: 11/04/2016
 f1_keywords:
 - C2327
 helpviewer_keywords:
 - C2327
 ms.assetid: 95278c95-d1f9-4487-ad27-53311f5e8112
-ms.openlocfilehash: abc9aa92c41947a2536e53108c1fb646792a8202
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 36222b8469f5a51254c6a6172e20384ebafc89ab
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62300855"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74747780"
 ---
-# <a name="compiler-error-c2327"></a>Derleyici Hatası C2327
+# <a name="compiler-error-c2327"></a>Derleyici hatası C2327
 
-'symbol': tür adı, statik veya numaralandırıcı değil
+' symbol ': bir tür adı, statik veya Numaralandırıcı değil
 
-İç içe geçmiş bir sınıf içindeki kod, bir tür adı, statik bir üyeye veya numaralandırıcı değil kapsayan sınıf üyesi erişmeyi dener.
+İç içe yerleştirilmiş sınıf içindeki kod, bir tür adı, statik üye veya Numaralandırıcı olmayan kapsayan sınıfın üyesine erişmeyi dener.
 
-İle derlerken **/CLR**, yaygın bir nedeni C2327 için özellik türü olarak aynı ada sahip bir özelliktir.
+**/Clr**ile derlerken, C2327 için genel bir neden Özellik türüyle aynı ada sahip bir özelliktir.
 
-Aşağıdaki örnek, C2327 oluşturur:
+Aşağıdaki örnek C2327 oluşturur:
 
-```
+```cpp
 // C2327.cpp
 int x;
 class enclose {
@@ -40,9 +40,9 @@ public:
 };
 ```
 
-Bir türün adını bir üye adıyla gizliyse C2327 da meydana gelebilir:
+Bir türün adı bir üyenin adı tarafından gizlenmişse C2327 de oluşabilir:
 
-```
+```cpp
 // C2327b.cpp
 class X {};
 
@@ -54,9 +54,9 @@ class S {
 };
 ```
 
-C2327 de tam olarak parametrenin veri türünü belirtmek için gerek duyduğunuz bu durumda, bu özelliği kullanabilirsiniz:
+C2327 Ayrıca, parametrenin veri türünü tam olarak belirtmeniz gereken bu durumda da harekete çıkabilir:
 
-```
+```cpp
 // C2327c.cpp
 // compile with: /c
 struct A {};
@@ -69,9 +69,9 @@ struct B {
 };
 ```
 
-Aşağıdaki örnek, C2327 oluşturur:
+Aşağıdaki örnek C2327 oluşturur:
 
-```
+```cpp
 // C2327d.cpp
 // compile with: /clr /c
 using namespace System;
@@ -103,9 +103,9 @@ namespace NA {
 }
 ```
 
-Aşağıdaki örnek, bir özellik, özellik türü ile aynı ada sahip olduğunda C2327 gösterir:
+Aşağıdaki örnek, özelliği Özellik türüyle aynı ada sahip olduğunda C2327 gösterir:
 
-```
+```cpp
 // C2327f.cpp
 // compile with: /clr /c
 public value class Address {};

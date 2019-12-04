@@ -1,35 +1,35 @@
 ---
-title: Derleyici Hatası C2146
+title: Derleyici hatası C2146
 ms.date: 11/04/2016
 f1_keywords:
 - C2146
 helpviewer_keywords:
 - C2146
 ms.assetid: 6bfb7de6-6723-4486-9350-c66ef88d7a64
-ms.openlocfilehash: f00de0ce491d517da11f251b89ccb9a7ae66b77d
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: 8dc7b521243c4eafdc22fab851812b6c12b004cf
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65447271"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74755921"
 ---
-# <a name="compiler-error-c2146"></a>Derleyici Hatası C2146
+# <a name="compiler-error-c2146"></a>Derleyici hatası C2146
 
-sözdizimi hatası: 'tanımlayıcıdan önce 'identifier' token' eksik
+sözdizimi hatası: ' identifier ' tanımlayıcıdan önce ' token ' eksik
 
-Beklenen derleyici `token` ve `identifier` yerine.  Olası nedenler:
+Derleyici `token` bekliyordu ve bunun yerine `identifier` buldu.  Olası nedenler:
 
-1. Yazım ve büyük/küçük harf hata oluştu.
+1. Yazım veya büyük harf hatası.
 
-1. Tanımlayıcının bildiriminde tür belirticisi eksik.
+1. Tanımlayıcının bildiriminde eksik tür belirleyicisi.
 
-Bir yazım hatası Bu hataya neden. Hata [C2065](../../error-messages/compiler-errors-1/compiler-error-c2065.md) genellikle bu hata önce gelir.
+Bu hatanın nedeni bir yazım hatası olabilir. Hata [C2065](../../error-messages/compiler-errors-1/compiler-error-c2065.md) genellikle bu hatadan önce gelir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C2146 oluşturur.
+Aşağıdaki örnek C2146 oluşturur.
 
-```
+```cpp
 // C2146.cpp
 class CDeclaredClass {};
 
@@ -46,11 +46,11 @@ int main() {
 
 ## <a name="example"></a>Örnek
 
-Bu hata için Visual Studio .NET 2003 yapıldığı derleyici uyumluluğu iş sonucu olarak da oluşturulabilir: eksik `typename` anahtar sözcüğü.
+Bu hata, Visual Studio .NET 2003: eksik `typename` anahtar sözcüğü için yapılan derleyici uygunluk işinin sonucu olarak da oluşturulabilir.
 
-Aşağıdaki örnek Visual Studio .NET 2002 derlenir, ancak Visual Studio .NET 2003'te başarısız olur:
+Aşağıdaki örnek Visual Studio .NET 2002 ' de derlenir ancak Visual Studio .NET 2003 ' de başarısız olur:
 
-```
+```cpp
 // C2146b.cpp
 // compile with: /c
 template <typename T>
@@ -71,13 +71,13 @@ typename X<T>::Y func() { }
 
 ## <a name="example"></a>Örnek
 
-Bu hata için Visual Studio .NET 2003 yapıldığı derleyici uyumluluğu iş sonucu olarak da göreceksiniz: açık uzmanlık artık birincil şablondan şablon parametreleri bulun.
+Ayrıca, bu hatayı Visual Studio .NET 2003 için yapılan derleyici uygunluk işinin bir sonucu olarak görürsünüz: açık uzmanlık, artık birincil şablondan şablon parametreleri bulamamıştı.
 
-Kullanımını `T` birincil şablondan açık özelleştirmede izin verilmez. Visual Studio .NET ve Visual Studio .NET 2003 geçerli olması kodu için şablon parametresi uzmanlıktaki tüm örneklerini açıkça özel türüyle değiştirin.
+Birincil şablondan `T` kullanımına açık özelleştirmede izin verilmez. Kodun Visual Studio .NET 2003 ve Visual Studio .NET içinde geçerli olması için, özelleşmenin içindeki şablon parametresinin tüm örneklerini açıkça özelleştirilmiş tür ile değiştirin.
 
-Aşağıdaki örnek Visual Studio. NET'te derlenir, ancak Visual Studio .NET 2003'te başarısız olur:
+Aşağıdaki örnek Visual Studio .NET içinde derlenir ancak Visual Studio .NET 2003 'de başarısız olur:
 
-```
+```cpp
 // C2146_c.cpp
 // compile with: /c
 template <class T>

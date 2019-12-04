@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3722
+title: Derleyici hatası C3722
 ms.date: 11/04/2016
 f1_keywords:
 - C3722
 helpviewer_keywords:
 - C3722
 ms.assetid: 3cb28363-5eff-4548-bd0d-d5c615846353
-ms.openlocfilehash: e9a8c9cc26aeedf49484bb1f7357a76d0eb42bb5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 08087b9cec0a48f0e439d6a2ff9fbe5f4e58d709
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62328274"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74753100"
 ---
-# <a name="compiler-error-c3722"></a>Derleyici Hatası C3722
+# <a name="compiler-error-c3722"></a>Derleyici hatası C3722
 
-Genel bir olaya izin verilmez
+genel bir olaya izin verilmez
 
-Derleyicinin, yalnızca Genel sınıflar, yapılar ve işlevler sağlar.  Daha fazla bilgi için [genel türler](../../extensions/generics-cpp-component-extensions.md).
+Derleyici yalnızca genel sınıflara, yapılara ve işlevlere izin verir.  Daha fazla bilgi için bkz. [Genel türler](../../extensions/generics-cpp-component-extensions.md).
 
-Aşağıdaki örnek, C3722 oluşturur:
+Aşağıdaki örnek C3722 oluşturur:
 
-```
+```cpp
 // C3722.cpp
 // compile with: /clr
 generic <typename T>

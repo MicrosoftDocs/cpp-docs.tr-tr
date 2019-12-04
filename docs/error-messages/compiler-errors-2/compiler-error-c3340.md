@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3340
+title: Derleyici hatası C3340
 ms.date: 11/04/2016
 f1_keywords:
 - C3340
 helpviewer_keywords:
 - C3340
 ms.assetid: 23b12298-b92a-4717-8380-f165c998cb8a
-ms.openlocfilehash: 1eff84ec133b55ddc3df98364c7d8542be398a69
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f4010870b84cbe2b8004eea24ab7735839b8c82b
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62300693"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74753594"
 ---
-# <a name="compiler-error-c3340"></a>Derleyici Hatası C3340
+# <a name="compiler-error-c3340"></a>Derleyici hatası C3340
 
-'interface': arabirim hem 'restricted' hem de 'class' coclass ' default' olamaz
+' interface ': ' class ' coclass öğesinde arabirim hem ' Restricted ' hem de ' default ' olamaz
 
-[Kısıtlı](../../windows/restricted.md) özniteliği ve [varsayılan](../../windows/default-cpp.md) özniteliği karşılıklı olarak birbirini dışlar.
+[Restricted](../../windows/restricted.md) özniteliği ve [Default](../../windows/default-cpp.md) özniteliği birbirini dışlıyor.
 
-Aşağıdaki örnek, C3340 oluşturur:
+Aşağıdaki örnek C3340 oluşturur:
 
-```
+```cpp
 // C3340.cpp
 #include <windows.h>
 [module(name="MyModule")];

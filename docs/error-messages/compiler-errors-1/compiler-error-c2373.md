@@ -1,25 +1,25 @@
 ---
-title: Derleyici Hatası C2373
+title: Derleyici hatası C2373
 ms.date: 11/04/2016
 f1_keywords:
 - C2373
 helpviewer_keywords:
 - C2373
 ms.assetid: 7a08bf0b-852d-48be-ba75-70df9f4b5951
-ms.openlocfilehash: 967bdec10e0e1c04083770d52da930837d8eeb7e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ede21bd2dfba5654cb1c636003fb3cea6a3149e8
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62339084"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74745570"
 ---
-# <a name="compiler-error-c2373"></a>Derleyici Hatası C2373
+# <a name="compiler-error-c2373"></a>Derleyici hatası C2373
 
-'identifier': yeniden tanımlama; tür değiştiricileri farklı
+' tanımlayıcı ': yeniden tanımlama; farklı tür değiştiricileri
 
-Tanımlayıcı ile farklı tür değiştiricisi zaten tanımlandı.
+Tanımlayıcı zaten farklı bir tür değiştiricisi ile tanımlanmış.
 
-Aşağıdaki örnek, C2373 oluşturur:
+Aşağıdaki örnek C2373 oluşturur:
 
 ```
 // C2373.h
@@ -27,9 +27,9 @@ void __clrcall func( void );
 const int i = 20;
 ```
 
-ve ardından:
+Ve ardından:
 
-```
+```cpp
 // C2373.cpp
 // compile with: /c
 #include "C2373.h"

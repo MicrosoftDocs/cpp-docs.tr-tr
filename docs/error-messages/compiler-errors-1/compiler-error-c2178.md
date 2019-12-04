@@ -1,31 +1,31 @@
 ---
-title: Derleyici Hatası C2178
+title: Derleyici hatası C2178
 ms.date: 05/08/2017
 f1_keywords:
 - C2178
 helpviewer_keywords:
 - C2178
 ms.assetid: 79a14158-17f3-4221-bd06-9d675c49cef4
-ms.openlocfilehash: cd153bb5b331872bfe35b046d41612998bd0eff7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 85cac4919c048c30a3ed1ff5573a3c14b77da0bd
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62386011"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74737198"
 ---
-# <a name="compiler-error-c2178"></a>Derleyici Hatası C2178
+# <a name="compiler-error-c2178"></a>Derleyici hatası C2178
 
-'*tanımlayıcı*'ile bildirilemez'*belirticisi*' tanımlayıcısı
+'*tanımlayıcı*' '*belirtici*' belirticisi ile bildirilemez
 
-A `mutable` belirleyici bir bildirimde kullanıldı, ancak bu bağlamda belirticisine izin verilmiyor.
+Bir bildirimde `mutable` belirleyicisi kullanıldı, ancak tanımlayıcıya bu bağlamda izin verilmiyor.
 
-`mutable` Belirticisi yalnızca sınıf veri üyeleri adlarına uygulanan ve bildirilen adlar için uygulanamaz `const` veya `static`ve üyeleri başvurmak için uygulanamaz.
+`mutable` belirleyicisi yalnızca sınıf veri üyelerinin adlarına uygulanabilir ve `const` veya `static`olarak belirtilen adlara uygulanamaz ve başvuru üyelerine uygulanamaz.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek nasıl C2178 oluşabilir ve bu sorunun nasıl gösterir.
+Aşağıdaki örnek, C2178 nasıl gerçekleşebileceğini ve nasıl düzeltileceğini gösterir.
 
-```
+```cpp
 // C2178.cpp
 // compile with: cl /c /W4 C2178.cpp
 

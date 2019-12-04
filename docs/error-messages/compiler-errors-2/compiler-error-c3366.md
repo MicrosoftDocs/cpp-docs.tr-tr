@@ -1,29 +1,29 @@
 ---
-title: Derleyici Hatası C3366
+title: Derleyici hatası C3366
 ms.date: 11/04/2016
 f1_keywords:
 - C3366
 helpviewer_keywords:
 - C3366
 ms.assetid: efc55bcf-c16d-43c1-a36f-87a6165fa2a8
-ms.openlocfilehash: 4d1cd510cda9957ced1d9dd5fd8fea267f39220d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5173b1c0df7de6a4e8d9993e680b961a82bb10a7
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62300563"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74738472"
 ---
-# <a name="compiler-error-c3366"></a>Derleyici Hatası C3366
+# <a name="compiler-error-c3366"></a>Derleyici hatası C3366
 
-'variable': statik veri üyeleri, yönetilen veya WinRTtypes sınıf tanımının içinde tanımlanmalıdır
+' Variable ': yönetilen veya Wınrttypes 'ın statik veri üyeleri sınıf tanımı içinde tanımlanmalıdır
 
-Bir WinRT ya da .NET sınıf veya arabirim dışında sınıf veya arabirim tanımı statik üyesi başvuru çalışıldı.
+Bir WinRT veya .NET sınıfının veya arabiriminin bir statik üyesine bu sınıfın veya arabirimin tanımının dışında başvurulmasına çalıştınız.
 
-Derleyici, tam sınıfının tanımı, (meta verileri tek seferde sonra yaymak üzere) bilmesi gerekir ve statik veri üyeleri sınıf içinde başlatılacak gerektirir.
+Derleyicinin sınıfın tam tanımını (bir geçiş sonrasında meta verileri göstermek için) bilmeleri gerekir ve statik veri üyelerinin sınıf içinde başlatılmasını gerektirir.
 
-Örneğin, aşağıdaki örnekte C3366 oluşturur ve bu sorunun nasıl gösterir:
+Örneğin, aşağıdaki örnek C3366 oluşturur ve nasıl düzeltileceğini gösterir:
 
-```
+```cpp
 // C3366.cpp
 // compile with: /clr /c
 ref class X {

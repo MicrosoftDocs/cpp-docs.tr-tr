@@ -1,29 +1,29 @@
 ---
-title: Önemli hata C1017
+title: Önemli Hata C1017
 ms.date: 11/04/2016
 f1_keywords:
 - C1017
 helpviewer_keywords:
 - C1017
 ms.assetid: 5542e604-599d-4e36-8f83-1d454c5753c9
-ms.openlocfilehash: e2309b93be65b049c35abf96572e144a0a518007
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0feda3bc4c3729d3101be356220aa0124ba85190
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62383184"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74756948"
 ---
-# <a name="fatal-error-c1017"></a>Önemli hata C1017
+# <a name="fatal-error-c1017"></a>Önemli Hata C1017
 
-Geçersiz tamsayı sabit ifadesi
+geçersiz tamsayı sabiti ifadesi
 
-İfade bir `#if` yönergesi yoktu veya bir sabite sonucu vermedi.
+`#if` yönergesinin ifadesi yoktu veya bir sabit değer olarak değerlendirilmedi.
 
-Sabitler kullanılarak tanımlanan `#define` olarak kullanılıyorsa, bir tamsayı sabit değerleri içermelidir bir `#if`, `#elif`, veya `#else` yönergesi.
+`#define` kullanılarak tanımlanan sabitler, bir `#if`, `#elif`veya `#else` yönergesinde kullanılıyorsa bir tamsayı sabiti değerlendiren değerler içermelidir.
 
-Aşağıdaki örnek, C1017 oluşturur:
+Aşağıdaki örnek C1017 oluşturur:
 
-```
+```cpp
 // C1017.cpp
 #define CONSTANT_NAME "YES"
 #if CONSTANT_NAME   // C1017
@@ -32,7 +32,7 @@ Aşağıdaki örnek, C1017 oluşturur:
 
 Olası çözüm:
 
-```
+```cpp
 // C1017b.cpp
 // compile with: /c
 #define CONSTANT_NAME 1
@@ -40,11 +40,11 @@ Olası çözüm:
 #endif
 ```
 
-Çünkü `CONSTANT_NAME` bir dize ve tamsayı değil, değerlendirir `#if` yönergesi önemli hata C1017 oluşturur.
+`CONSTANT_NAME` bir tamsayı değil bir dizeye göre değerlendirildiği için `#if` yönergesi önemli hata C1017 oluşturur.
 
-Diğer durumlarda, önişlemci tanımlanmamış bir sabit değer sıfır olarak değerlendirir. Aşağıdaki örnekte gösterildiği gibi bu istenmeyen sonuçlara neden olabilir. `YES` sıfır olarak değerlendirilen bu nedenle, tanımsızdır. İfade `#if` `CONSTANT_NAME` yanlış ve kod, kullanılacak veren `YES` önişlemci tarafından kaldırılır. `NO` Ayrıca tanımlanmamış (sıfır), bu nedenle olan `#elif` `CONSTANT_NAME==NO` true olarak değerlendirilen (`0 == 0`), kodda bırakmak önişlemci neden `#elif` deyiminin bölümü — amaçlanan bir davranış tam tersidir.
+Diğer durumlarda, Önişlemci tanımsız bir sabiti sıfır olarak değerlendirir. Bu, aşağıdaki örnekte gösterildiği gibi istenmeden sonuçlara neden olabilir. `YES` tanımsız olduğundan, sıfır olarak değerlendirilir. `#if` `CONSTANT_NAME` ifadesi yanlış olarak değerlendirilir ve `YES` üzerinde kullanılacak kod Önişlemci tarafından kaldırılır. `NO` de tanımsız (sıfır), bu nedenle `#elif` `CONSTANT_NAME==NO` true olarak değerlendirilir (`0 == 0`), önyükleyicinin kodu deyimin `#elif` bölümünde (amaçlanan davranışın tam tersi) bırakmasını sağlar.
 
-```
+```cpp
 // C1017c.cpp
 // compile with: /c
 #define CONSTANT_NAME YES
@@ -55,4 +55,4 @@ Diğer durumlarda, önişlemci tanımlanmamış bir sabit değer sıfır olarak 
 #endif
 ```
 
-Tam olarak derleyici önişlemci yönergeleri nasıl işlediğini görmek için [/P](../../build/reference/p-preprocess-to-a-file.md), [/E](../../build/reference/e-preprocess-to-stdout.md), veya [/EP](../../build/reference/ep-preprocess-to-stdout-without-hash-line-directives.md).
+Derleyicinin önişlemci yönergelerini nasıl işleyeceğini tam olarak görmek için [/p](../../build/reference/p-preprocess-to-a-file.md), [/E](../../build/reference/e-preprocess-to-stdout.md)veya [/EP](../../build/reference/ep-preprocess-to-stdout-without-hash-line-directives.md)kullanın.

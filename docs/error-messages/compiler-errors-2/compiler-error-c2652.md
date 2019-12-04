@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2652
+title: Derleyici hatası C2652
 ms.date: 11/04/2016
 f1_keywords:
 - C2652
 helpviewer_keywords:
 - C2652
 ms.assetid: 6e3d1a90-a989-4088-8afd-dc82f6a2d66f
-ms.openlocfilehash: 9c9772052b690ad87de1d408c06478d82d48e724
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: cedee3f1e3289aaf0ea38d75b6c812b61f891435
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62282120"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74756129"
 ---
-# <a name="compiler-error-c2652"></a>Derleyici Hatası C2652
+# <a name="compiler-error-c2652"></a>Derleyici hatası C2652
 
-'identifier': Geçersiz kopya Oluşturucusu: ilk parametre bir 'identifier' olmalıdır
+' tanımlayıcı ': geçersiz kopya Oluşturucusu: ilk parametre bir ' Identifier ' olmamalıdır
 
-Kopya Oluşturucu ilk parametre bir sınıf, yapı veya birleşim kendisi için tanımlanan aynı türde sahiptir. İlk parametre türü ancak türün kendisine bir başvuru olabilir.
+Kopya oluşturucudaki ilk parametre, tanımlandığı sınıf, yapı veya birleşim ile aynı türde. İlk parametre türe bir başvuru olabilir, ancak türün kendisi olamaz.
 
-Aşağıdaki örnek, C2651 oluşturur:
+Aşağıdaki örnek C2651 oluşturur:
 
-```
+```cpp
 // C2652.cpp
 // compile with: /c
 class A {

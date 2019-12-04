@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2806
+title: Derleyici hatası C2806
 ms.date: 11/04/2016
 f1_keywords:
 - C2806
 helpviewer_keywords:
 - C2806
 ms.assetid: 7c9ff1f4-1590-4c47-991d-b1075a173b48
-ms.openlocfilehash: 1d37f5d1c6e253c01ae8a3b7640fb3ee4cf12534
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: be991d26cb822221051316f3557b23a2b82e732d
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62281973"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74760627"
 ---
-# <a name="compiler-error-c2806"></a>Derleyici Hatası C2806
+# <a name="compiler-error-c2806"></a>Derleyici hatası C2806
 
-'operator işleci' çok fazla sayıda biçimsel parametre içeriyor
+' işleç işleci ' çok fazla biçimsel parametreye sahip
 
-Aşırı yüklenmiş bir işleç çok fazla parametreye sahip.
+Aşırı yüklenmiş bir işlecin çok fazla parametresi vardır.
 
-Aşağıdaki örnek, C2806 oluşturur:
+Aşağıdaki örnek C2806 oluşturur:
 
-```
+```cpp
 // C2806.cpp
 // compile with: /c
 class X {

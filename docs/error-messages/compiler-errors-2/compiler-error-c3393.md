@@ -1,29 +1,29 @@
 ---
-title: Derleyici Hatası C3393
+title: Derleyici hatası C3393
 ms.date: 11/04/2016
 f1_keywords:
 - C3393
 helpviewer_keywords:
 - C3393
 ms.assetid: d57f7c69-0a02-4fe3-9e45-bc62644fd77c
-ms.openlocfilehash: 5147e3e406fde73a05b7069e2a9336f27b3db622
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0f6952de20c27a811b85694ae13892eff9231f83
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62328672"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74757546"
 ---
-# <a name="compiler-error-c3393"></a>Derleyici Hatası C3393
+# <a name="compiler-error-c3393"></a>Derleyici hatası C3393
 
-kısıtlama yan tümcesinde sözdizimi hatası: 'identifier' bir tür değil
+kısıtlama yan tümcesinde sözdizimi hatası: ' Identifier ' bir tür değil
 
-Bir türü olmalıdır, bir kısıtlama olarak geçirilen tanımlayıcısı bir tür değil.  Daha fazla bilgi için [genel tür parametrelerindeki kısıtlamalar (C++/CLI)](../../extensions/constraints-on-generic-type-parameters-cpp-cli.md).
+Bir tür olması gereken bir kısıtlamaya geçirilen tanımlayıcı bir tür değil.  Daha fazla bilgi için bkz. [genel tür parametrelerindeki kısıtlamalar (C++/CLI)](../../extensions/constraints-on-generic-type-parameters-cpp-cli.md).
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C3393 oluşturur:
+Aşağıdaki örnek C3393 oluşturur:
 
-```
+```cpp
 // C3393.cpp
 // compile with: /clr /c
 void MyInterface() {}

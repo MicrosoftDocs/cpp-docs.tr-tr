@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2046
+title: Derleyici hatası C2046
 ms.date: 11/04/2016
 f1_keywords:
 - C2046
 helpviewer_keywords:
 - C2046
 ms.assetid: f0c8f9dd-dbd7-4c4a-8838-fde54208ec71
-ms.openlocfilehash: b502c70c62d87d6807f586e289aaa5c67be9f048
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e83860e9f69bab864ad2cf02503d9af802e86d29
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62182840"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74740370"
 ---
-# <a name="compiler-error-c2046"></a>Derleyici Hatası C2046
+# <a name="compiler-error-c2046"></a>Derleyici hatası C2046
 
-Geçersiz durum
+geçersiz durum
 
-Anahtar sözcüğü `case` yalnızca görünebilir bir `switch` deyimi.
+Anahtar sözcüğü `case` yalnızca bir `switch` bildiriminde görünebilir.
 
-Aşağıdaki örnek, C2046 oluşturur:
+Aşağıdaki örnek C2046 oluşturur:
 
-```
+```cpp
 // C2046.cpp
 int main() {
    case 0:   // C2046
@@ -30,7 +30,7 @@ int main() {
 
 Olası çözüm:
 
-```
+```cpp
 // C2046b.cpp
 int main() {
    int i = 0;

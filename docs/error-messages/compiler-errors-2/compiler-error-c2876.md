@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2876
+title: Derleyici hatası C2876
 ms.date: 11/04/2016
 f1_keywords:
 - C2876
 helpviewer_keywords:
 - C2876
 ms.assetid: 8b674bf1-f9f4-4a8e-8127-e884c1d1708f
-ms.openlocfilehash: e7fcdeaf79728ee99498c69de0205619d16612d8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bb242c889d924612b5349ea06c19db954261b245
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62390678"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74736353"
 ---
-# <a name="compiler-error-c2876"></a>Derleyici Hatası C2876
+# <a name="compiler-error-c2876"></a>Derleyici hatası C2876
 
-'class::symbol': tüm aşırı yüklemeler erişilebilir değil
+' class:: symbol ': tüm aşırı yüklemeler erişilebilir değil
 
-Taban sınıfında bir işlevin aşırı yüklenmiş tüm formlar, türetilmiş sınıf için erişilebilir olmalıdır.
+Temel sınıftaki bir işlevin tüm aşırı yüklenmiş formlarına, türetilmiş sınıf tarafından erişilebilir olması gerekir.
 
-Aşağıdaki örnek, C2876 oluşturur:
+Aşağıdaki örnek C2876 oluşturur:
 
-```
+```cpp
 // C2876.cpp
 // compile with: /c
 class A {

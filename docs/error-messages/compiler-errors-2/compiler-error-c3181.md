@@ -1,29 +1,29 @@
 ---
-title: Derleyici Hatası C3181
+title: Derleyici hatası C3181
 ms.date: 11/04/2016
 f1_keywords:
 - C3181
 helpviewer_keywords:
 - C3181
 ms.assetid: 5d450f8b-6cef-4452-a0c4-2076e967451d
-ms.openlocfilehash: dc848d4108ed4a1a7b6646647a1bbb1ec8dcadf7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e30ed7016ca3a4d4948a08c5c09268e52c9a407d
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62382406"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74761679"
 ---
-# <a name="compiler-error-c3181"></a>Derleyici Hatası C3181
+# <a name="compiler-error-c3181"></a>Derleyici hatası C3181
 
-'type': işleç için geçersiz işlenen
+' Type ': işleç için geçersiz işlenen
 
-İçin geçersiz bir parametre geçirildi [TypeID](../../extensions/typeid-cpp-component-extensions.md) işleci. Yönetilen tür parametresi olması gerekir.
+[TypeId](../../extensions/typeid-cpp-component-extensions.md) işlecine geçersiz bir parametre geçirildi. Parametrenin yönetilen bir tür olması gerekir.
 
-Derleyicinin ortak dil çalışma zamanı türleriyle eşleme yerel türler için diğer adlar kullandığına dikkat edin.
+Derleyicinin ortak dil çalışma zamanındaki türlerle eşlenen yerel türler için takma adlar kullandığını unutmayın.
 
-Aşağıdaki örnek, C3181 oluşturur:
+Aşağıdaki örnek C3181 oluşturur:
 
-```
+```cpp
 // C3181a.cpp
 // compile with: /clr
 using namespace System;

@@ -1,31 +1,31 @@
 ---
-title: Derleyici Hatası C2500
+title: Derleyici hatası C2500
 ms.date: 11/04/2016
 f1_keywords:
 - C2500
 helpviewer_keywords:
 - C2500
 ms.assetid: 6bff8161-dc9a-48ca-91f1-fd2eefdbbc93
-ms.openlocfilehash: a5753fc99efcdb1064a21981c62faaba84d44189
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 152546fce8f3ee63f8b95595bff052f18cd4ebda
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62165592"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74746974"
 ---
-# <a name="compiler-error-c2500"></a>Derleyici Hatası C2500
+# <a name="compiler-error-c2500"></a>Derleyici hatası C2500
 
-'ıdentifier1': 'identifier2' olduğunu zaten bir doğrudan taban sınıfı
+' Identifier1 ': ' identifier2 ' zaten bir doğrudan taban sınıfı
 
-Bir sınıf veya yapı birden çok kez temel sınıflar listesinde görünür.
+Bir sınıf veya yapı, temel sınıfların bir listesinde birden çok kez görünür.
 
-Bir doğrudan temel temel listesinde belirtilen biridir. Dolaylı bir temel listesinde sınıflarından birinin temel sınıftır.
+Doğrudan taban, temel listede bahsedilen bir temeldir. Dolaylı bir taban, temel listedeki sınıflardan birinin taban sınıfıdır.
 
-Bir sınıf doğrudan temel sınıf olarak birden fazla kez belirtilemez. Bir sınıf kereden fazla dolaylı temel sınıf olarak kullanılabilir.
+Bir sınıf doğrudan temel sınıf olarak birden çok kez belirtilemez. Bir sınıf, dolaylı bir temel sınıf olarak birden çok kez kullanılabilir.
 
-Aşağıdaki örnek, C2500 oluşturur:
+Aşağıdaki örnek C2500 oluşturur:
 
-```
+```cpp
 // C2500.cpp
 // compile with: /c
 class A {};

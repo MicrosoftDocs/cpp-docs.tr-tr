@@ -1,31 +1,31 @@
 ---
-title: Derleyici Hatası C3767
+title: Derleyici hatası C3767
 ms.date: 11/04/2016
 f1_keywords:
 - C3767
 helpviewer_keywords:
 - C3767
 ms.assetid: 5247cdcd-639c-4527-bd37-37e74c4e8fab
-ms.openlocfilehash: 61f7479986cccfa3851d85bf8e7bc0e9da3d1cea
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 994b235b4775c28126d92c241a7e42dc837d4493
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62400207"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74757208"
 ---
-# <a name="compiler-error-c3767"></a>Derleyici Hatası C3767
+# <a name="compiler-error-c3767"></a>Derleyici hatası C3767
 
-'function' aday işlevlere erişilemiyor
+' function ' aday işlevleri erişilebilir değil
 
-Bir sınıfta tanımlanan bir arkadaş işlev tanımlı ve genel ad alanı kapsamı içinde bildirilen yokmuş gibi kabul edilmesi için beklenmiyor. Alabilir, ancak bağımsız değişkene bağlı arama tarafından bulunamadı.
+Bir sınıfta tanımlanan arkadaş işlevinin, genel ad alanı kapsamında tanımlandıkları ve bildirildiği gibi değerlendirilmeyeceği varsayılır. Ancak, bağımsız değişkene bağlı arama ile bulunabilir.
 
-C3767 da neden olabilir bir değişiklik tarafından: Yerel türler varsayılan olarak özel artık bir **/CLR** derleme; bkz: [türü görünürlük](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Type_visibility) daha fazla bilgi için.
+Ayrıca, C3767 bir önemli değişiklik yüzünden olabilir: yerel türler artık **/clr** derlemesinde varsayılan olarak özeldir; daha fazla bilgi için bkz. [tür görünürlüğü](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Type_visibility) .
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C3767 oluşturur:
+Aşağıdaki örnek C3767 oluşturur:
 
-```
+```cpp
 // C3767a.cpp
 // compile with: /clr
 using namespace System;
@@ -54,9 +54,9 @@ int main() {
 };
 ```
 
-Aşağıdaki örnek, C3767 oluşturur:
+Aşağıdaki örnek C3767 oluşturur:
 
-```
+```cpp
 // C3767c.cpp
 // compile with: /clr /c
 

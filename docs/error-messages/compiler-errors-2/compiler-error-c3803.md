@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3803
+title: Derleyici hatası C3803
 ms.date: 11/04/2016
 f1_keywords:
 - C3803
 helpviewer_keywords:
 - C3803
 ms.assetid: bad5fb9a-ed9a-4c15-96e7-cf06e200a50d
-ms.openlocfilehash: f6c255ec18d6dcf94f3ec022f09b173c2c66a1dd
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 771530c2d05d378b86732938aa7a2b7881608446
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62400103"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74755310"
 ---
-# <a name="compiler-error-c3803"></a>Derleyici Hatası C3803
+# <a name="compiler-error-c3803"></a>Derleyici hatası C3803
 
-'property': özelliği, 'erişimcisinin' erişimcilerini biri ile uyumlu bir türe sahip
+' Property ': Özellik erişimcilerinin ' erişimci ' ile uyumsuz bir türe sahip
 
-İle tanımlanmış bir özelliğin türünü [özelliği](../../cpp/property-cpp.md) bir erişimci işlevleri için dönüş türü ile eşleşmiyor.
+[Özelliği](../../cpp/property-cpp.md) ile tanımlanmış bir özelliğin türü, erişimci işlevlerinin biri için dönüş türüyle eşleşmiyor.
 
-Aşağıdaki örnek, C3803 oluşturur:
+Aşağıdaki örnek C3803 oluşturur:
 
-```
+```cpp
 // C3803.cpp
 struct A
 {

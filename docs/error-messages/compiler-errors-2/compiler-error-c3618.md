@@ -1,29 +1,29 @@
 ---
-title: Derleyici Hatası C3618
+title: Derleyici hatası C3618
 ms.date: 11/04/2016
 f1_keywords:
 - C3618
 helpviewer_keywords:
 - C3618
 ms.assetid: cacc105d-4389-4cb8-ae6c-41a3622e9a86
-ms.openlocfilehash: 97f2738a67ee84196a49b96301c885c28c41050b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6f0edf1addf753054fbc50a1591b5b1a37394087
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62222071"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74759730"
 ---
-# <a name="compiler-error-c3618"></a>Derleyici Hatası C3618
+# <a name="compiler-error-c3618"></a>Derleyici hatası C3618
 
-'function': DllImport olarak işaretli bir yöntem tanımlanamaz
+' function ': DllImport olarak işaretlenmiş bir yöntem tanımlanamaz
 
-Bir yöntem ile işaretlenmiş <xref:System.Runtime.InteropServices.DllImportAttribute> tanımlı belirtilen. DLL.
+<xref:System.Runtime.InteropServices.DllImportAttribute> ile işaretlenmiş bir yöntem, belirtilen içinde tanımlanmıştır. Dosyasını.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C3618 oluşturur.
+Aşağıdaki örnek C3618 oluşturur.
 
-```
+```cpp
 // C3618.cpp
 // compile with: /clr /c
 using namespace System;

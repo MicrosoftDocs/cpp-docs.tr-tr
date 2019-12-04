@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2348
+title: Derleyici hatası C2348
 ms.date: 11/04/2016
 f1_keywords:
 - C2348
 helpviewer_keywords:
 - C2348
 ms.assetid: 4c4d701f-ccf1-46fe-9ddb-3f341684f269
-ms.openlocfilehash: 379bcc7f37ff8942e4e45c6a6188438400937875
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7bded618c481e59f60c5528510c757dec7226acc
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62187912"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74760003"
 ---
-# <a name="compiler-error-c2348"></a>Derleyici Hatası C2348
+# <a name="compiler-error-c2348"></a>Derleyici hatası C2348
 
-'type name': C stili bir toplama değil; katıştırılmış IDL ile dışarı aktarılamaz
+' tür adı ': C stili bir toplama değil; katıştırılmış IDL içinde verilemez
 
-Yerleştirmek için bir `struct` bir .idl dosyasında [dışarı](../../windows/export.md) özniteliği `struct` yalnızca verileri içermelidir.
+[Dışarı aktarma](../../windows/export.md) özniteliğiyle bir. IDL dosyasına bir `struct` yerleştirmek için, `struct` yalnızca Data içermelidir.
 
-Aşağıdaki örnek, C2348 oluşturur:
+Aşağıdaki örnek C2348 oluşturur:
 
-```
+```cpp
 // C2348.cpp
 // C2348 error expected
 [ module(name="SimpleMidlTest") ];

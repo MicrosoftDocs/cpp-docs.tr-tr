@@ -1,29 +1,29 @@
 ---
-title: Derleyici Hatası C3252
+title: Derleyici hatası C3252
 ms.date: 11/04/2016
 f1_keywords:
 - C3252
 helpviewer_keywords:
 - C3252
 ms.assetid: aa9ad096-e9ac-41c7-8ad9-b966751c7c75
-ms.openlocfilehash: ee9245fb8eb89b9234e76dc10304b1d05bc1fdcb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fbfe3ffaca66cad4922b5771ee8c9003acba7571
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62164845"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74754335"
 ---
-# <a name="compiler-error-c3252"></a>Derleyici Hatası C3252
+# <a name="compiler-error-c3252"></a>Derleyici hatası C3252
 
-'method': WinRT türü ya da yönetilen sanal yöntemin erişilebilirliği azaltılamaz
+' Method ': yönetilen veya WinRT türündeki bir sanal metodun erişilebilirliği azaltılamaz
 
-Bir temel sınıftan sanal bir yöntem veya bir arabirimden herhangi bir yöntemini uygulayan bir sınıf, yöntemin erişim indiremezsiniz.
+Bir taban sınıftan veya bir arabirimden herhangi bir yöntemden sanal bir yöntemi uygulayan bir sınıf, bu yöntemin erişimini azaltamaz.
 
-Arabirim içindeki tüm yöntemleri ortak olduğunu unutmayın.
+Bir arabirimdeki tüm yöntemlerin genel olduğunu unutmayın.
 
-Aşağıdaki örnek, C3252 oluşturur ve bu sorunun nasıl gösterir:
+Aşağıdaki örnek C3252 oluşturur ve nasıl düzeltileceğini gösterir:
 
-```
+```cpp
 // C3252.cpp
 // compile with: /clr /c
 ref class A {

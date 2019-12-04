@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3731
+title: Derleyici hatası C3731
 ms.date: 11/04/2016
 f1_keywords:
 - C3731
 helpviewer_keywords:
 - C3731
 ms.assetid: 45f89fcd-464c-4bc8-8a42-edcb5416d26c
-ms.openlocfilehash: 5acc33869648f83cd44bc557128c685f521ddf88
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9acf80eec0d36db64fa070d691533e7085754ac0
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62328074"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74752957"
 ---
-# <a name="compiler-error-c3731"></a>Derleyici Hatası C3731
+# <a name="compiler-error-c3731"></a>Derleyici hatası C3731
 
-uyumsuz olay 'function1' ve işleyici 'function2'; Olay kaynağı ve olay işleyicisi aynı türde olmalıdır
+uyumsuz olay ' işlev1 ' ve işleyici ' function2 '; Olay kaynağı ve olay işleyicisi aynı türde olmalıdır
 
-Olay kaynağı ve olay alıcısı aynı türde olmalıdır (örneğin `native` karşılaştırması `com` türleri). Bu hatayı düzeltmek için olay kaynağı ve olay işleyici eşleme türleri olun.
+Olay kaynağı ve olay alıcısı aynı türde olmalıdır (örneğin `native` vs. `com` türleri). Bu hatayı düzeltirecek şekilde olay kaynağı ve olay işleyici türlerini eşleştirin.
 
-Aşağıdaki örnek, C3731 oluşturur:
+Aşağıdaki örnek C3731 oluşturur:
 
-```
+```cpp
 // C3731.cpp
 // compile with: /clr
 #using <mscorlib.dll>

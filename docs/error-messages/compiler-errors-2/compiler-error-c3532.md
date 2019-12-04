@@ -1,35 +1,35 @@
 ---
-title: Derleyici Hatası C3532
+title: Derleyici hatası C3532
 ms.date: 11/04/2016
 f1_keywords:
 - C3532
 helpviewer_keywords:
 - C3532
 ms.assetid: 51067853-eda8-4f59-86e8-8924e16d3a95
-ms.openlocfilehash: 7b5d1fe61ae08811186e25547ccc3f33e3b0198e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2ef5eb3c2bedd9defbd0b80e6d8c5c8912fcf16d
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62397399"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74761939"
 ---
-# <a name="compiler-error-c3532"></a>Derleyici Hatası C3532
+# <a name="compiler-error-c3532"></a>Derleyici hatası C3532
 
-'type': 'auto' yanlış kullanımı
+' Type ': Hatalı ' Auto ' kullanımı
 
-Belirtilen tür ile bildirilemez `auto` anahtar sözcüğü. Örneğin, kullanamazsınız `auto` anahtar sözcüğü, bir dizi veya bir yöntemi bildirmek için dönüş türü.
+Belirtilen tür `auto` anahtar sözcüğüyle bildirilemez. Örneğin, bir dizi veya yöntem dönüş türü bildirmek için `auto` anahtar sözcüğünü kullanamazsınız.
 
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için
 
-1. Başlatma ifadesi geçerli bir tür verir emin olun.
+1. Başlatma ifadesinin geçerli bir tür aldığından emin olun.
 
-1. Bir dizi veya bir yöntemin dönüş türü bildirmeyin emin olun.
+1. Bir dizi veya yöntem dönüş türü bildirdiğinizden emin olun.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, çünkü C3532 verir `auto` anahtar sözcüğü, bir yöntemin dönüş türü bildiremez.
+Aşağıdaki örnek, `auto` anahtar sözcüğü bir yöntem dönüş türü bildiremediği için C3532 verir.
 
-```
+```cpp
 // C3532a.cpp
 // Compile with /Zc:auto
 auto f(){}   // C3532
@@ -37,9 +37,9 @@ auto f(){}   // C3532
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, çünkü C3532 verir `auto` anahtar sözcüğü, bir dizi bildiremez.
+Aşağıdaki örnek, `auto` anahtar sözcüğü bir dizi bildiremediği için C3532 verir.
 
-```
+```cpp
 // C3532b.cpp
 // Compile with /Zc:auto
 int main()

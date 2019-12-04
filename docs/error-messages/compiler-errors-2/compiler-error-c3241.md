@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3241
+title: Derleyici hatası C3241
 ms.date: 11/04/2016
 f1_keywords:
 - C3241
 helpviewer_keywords:
 - C3241
 ms.assetid: 2ca14879-bba0-4a23-b22a-72cfff92d6a4
-ms.openlocfilehash: 6eab22a8627b817b7a31e4bd34aad86d1f274615
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6a618a9c538558d2aa4b995cbc9071bb8e94a5bc
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62173514"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74754588"
 ---
-# <a name="compiler-error-c3241"></a>Derleyici Hatası C3241
+# <a name="compiler-error-c3241"></a>Derleyici hatası C3241
 
-'method': Bu yöntem 'interface' tarafından tanıtıldı
+' Method ': Bu yöntem ' Interface ' tarafından tanıtılmadı
 
-Bir işlevi açıkça geçersiz kıldığınızda, işlev imzası geçersiz kıldıkları işlev bildiriminin tam olarak eşleşmelidir.
+Bir işlevi açıkça geçersiz kıldığınızda, işlev imzası, geçersiz kıldığınız işlevin bildirimiyle tam olarak eşleşmelidir.
 
-Aşağıdaki örnek, C3241 oluşturur:
+Aşağıdaki örnek C3241 oluşturur:
 
-```
+```cpp
 // C3241.cpp
 #pragma warning(disable:4199)
 

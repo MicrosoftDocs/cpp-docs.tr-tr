@@ -1,29 +1,29 @@
 ---
-title: Derleyici Hatası C3825
+title: Derleyici hatası C3825
 ms.date: 11/04/2016
 f1_keywords:
 - C3825
 helpviewer_keywords:
 - C3825
 ms.assetid: 18e204a1-f26e-42c6-8d74-2b49cc95f940
-ms.openlocfilehash: ddb665dab303b3133d4018910c2142a20a889bb0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 98d9dbee8b3d290af0ddd1851380758290a21d4a
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62390587"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74741722"
 ---
-# <a name="compiler-error-c3825"></a>Derleyici Hatası C3825
+# <a name="compiler-error-c3825"></a>Derleyici hatası C3825
 
-'class': yönetilen bir ya da WinRTclass yalnızca yönetilen destek veya WinRTevents gerçekleştirebilirsiniz.
+' class ': yönetilen veya WinRTclass yalnızca Managed veya WinRTevents destekleyebilir
 
-Yalnızca .NET olayları yönetilen sınıflar desteklenir. Yalnızca Windows çalışma zamanı olayları, Windows çalışma zamanı sınıflar desteklenir. Yönetilen kodda bu hatayı düzeltmek için tür parametresi değiştirme `event_source` ve `event_receiver` gelen `native` için `managed`. Alternatif olarak, özniteliğini kaldırın.
+Yönetilen sınıflarda yalnızca .NET olayları desteklenir. Windows Çalışma Zamanı sınıflarında yalnızca Windows Çalışma Zamanı olay desteklenir. Bu hatayı yönetilen kodda onarmak için `event_source` tür parametresini `native` `event_receiver` ve `managed`olarak değiştirin. Alternatif olarak, özniteliğini kaldırın.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C3825 oluşturur ve bu sorunun nasıl gösterir:
+Aşağıdaki örnek C3825 oluşturur ve nasıl düzeltileceğini gösterir:
 
-```
+```cpp
 // C3825a.cpp
 // compile with: /clr
 public delegate void del1();

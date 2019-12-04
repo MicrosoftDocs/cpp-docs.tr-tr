@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2755
+title: Derleyici hatası C2755
 ms.date: 11/04/2016
 f1_keywords:
 - C2755
 helpviewer_keywords:
 - C2755
 ms.assetid: 8ee4eeb6-4757-4efe-9100-38ff4a96f1de
-ms.openlocfilehash: c2238058dc4b7df6bbe33e98d6ccde996f36b782
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fcd4bb5d49f6f6e807ad240c377debb220138c93
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62227978"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74759561"
 ---
-# <a name="compiler-error-c2755"></a>Derleyici Hatası C2755
+# <a name="compiler-error-c2755"></a>Derleyici hatası C2755
 
-'param': bir kısmi özelleştirmenin tür olmayan parametresi basit bir tanımlayıcı olmalıdır
+' param ': kısmi özelleşmenin tür olmayan parametresi basit bir tanımlayıcı olmalıdır
 
-Tür olmayan parametresi basit bir tanımlayıcı, tek bir tanımlayıcı ya da sabit bir değer derleme zamanında derleyici çözümlemek için bir şey olması gerekir.
+Tür olmayan parametrenin bir basit tanımlayıcı olması gerekir. derleyicinin derleme zamanında tek bir tanımlayıcıya veya sabit bir değere çözebileceği bir şeydir.
 
-Aşağıdaki örnek, C2755 oluşturur:
+Aşağıdaki örnek C2755 oluşturur:
 
-```
+```cpp
 // C2755.cpp
 template<int I, int J>
 struct A {};

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2778
 ms.assetid: b24cb732-2914-42cc-8928-e2d87b393428
-ms.openlocfilehash: 98b5bf0a1315236f3ce96fd4b8c140ce1ab70a9f
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 247aba1b4dfe6b6d6db1e2b8f46f2aa08abf1a79
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69501044"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74739993"
 ---
 # <a name="compiler-error-c2778"></a>Derleyici hatası C2778
 
@@ -21,18 +21,18 @@ __declspec (uuid ()) içinde hatalı biçimlendirilmiş GUID
 
 GUID, aşağıdaki biçime sahip bir onaltılı sayı dizesi olmalıdır:
 
-```
+```cpp
 // C2778a.cpp
 // compile with: /c
 struct __declspec(uuid("00000000-0000-0000-0000-000000000000")) A {};
 struct __declspec(uuid("{00000000-0000-0000-0000-000000000000}")) B{};
 ```
 
-Genişletilmiş öznitelik, tanımlı parantez sınırlayıcıları olan veya olmayan [clsidfromstring](/windows/win32/api/combaseapi/nf-combaseapi-clsidfromstring)tarafından tanınan dizeleri kabul eder. `uuid`
+`uuid` Extended özniteliği [Clsidfromstring](/windows/win32/api/combaseapi/nf-combaseapi-clsidfromstring)tarafından tanınan ve küme ayracı sınırlayıcıları olan veya olmayan dizeleri kabul eder.
 
 Aşağıdaki örnek C2778 oluşturur:
 
-```
+```cpp
 // C2778b.cpp
 struct __declspec(uuid(" 00000000-0000-0000-0000-000000000000 ")) C { };   // C2778
 struct __declspec(uuid("00000000000000000000000000000000")) D { };   // C2778

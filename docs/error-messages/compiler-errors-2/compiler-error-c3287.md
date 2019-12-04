@@ -1,31 +1,31 @@
 ---
-title: Derleyici Hatası C3287
+title: Derleyici hatası C3287
 ms.date: 11/04/2016
 f1_keywords:
 - C3287
 helpviewer_keywords:
 - C3287
 ms.assetid: c1fa73d2-2c82-4136-a7da-0e75e3b420ad
-ms.openlocfilehash: ab0b93aa1a74ea79515e24ef2b1e289cf0227dac
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f0f3441b749e3ae074e18e1132dcc4003eba3ba3
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62222683"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74749613"
 ---
-# <a name="compiler-error-c3287"></a>Derleyici Hatası C3287
+# <a name="compiler-error-c3287"></a>Derleyici hatası C3287
 
-' % s'type 'türü' (GetEnumerator'ın dönüş türü) uygun ortak MoveNext üye işlevine ve genel Current özelliğine sahip olmalıdır
+' Type ' türü (GetEnumerator 'ın dönüş türü) uygun bir ortak MoveNext üye işlevine ve genel Current özelliğine sahip olmalıdır
 
-Kullanıcı tanımlı bir koleksiyon sınıfları, tanımlarını içermelidir `MoveNext` ve `Current`.
+Kullanıcı tanımlı koleksiyon sınıfları, `MoveNext` ve `Current`için tanımlar içermelidir.
 
-Bkz: [nasıl yapılır: Her iterate Over a User-Defined koleksiyonu ile](../../dotnet/how-to-iterate-over-a-user-defined-collection-with-for-each.md) daha fazla bilgi için.
+Daha fazla bilgi için bkz. [nasıl yapılır: her biri Için Kullanıcı tanımlı bir koleksiyon üzerinden yineleme yapma](../../dotnet/how-to-iterate-over-a-user-defined-collection-with-for-each.md) .
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C3287 oluşturur.
+Aşağıdaki örnek C3287 oluşturur.
 
-```
+```cpp
 // C3287.cpp
 // compile with: /clr
 using namespace System;

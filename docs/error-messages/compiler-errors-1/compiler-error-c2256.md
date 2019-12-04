@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2256
+title: Derleyici hatası C2256
 ms.date: 11/04/2016
 f1_keywords:
 - C2256
 helpviewer_keywords:
 - C2256
 ms.assetid: 171fa2bc-8c72-49cd-afe5-d723b7acd3c5
-ms.openlocfilehash: 56c4df338feb2c0f406835c1ef2ffeeb7caf8bca
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b362a236953701278c57d2b738a6303e83b7637c
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62387066"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74758820"
 ---
-# <a name="compiler-error-c2256"></a>Derleyici Hatası C2256
+# <a name="compiler-error-c2256"></a>Derleyici hatası C2256
 
-'function' üzerinde friend belirticisinin geçersiz kullanımı
+' function ' üzerinde Friend belirticisinin geçersiz kullanımı
 
-Bir yok Edicisi veya oluşturucusu olarak belirtilemez bir [arkadaş](../../cpp/friend-cpp.md).
+Yıkıcı veya Oluşturucu [arkadaş](../../cpp/friend-cpp.md)olarak belirtilemez.
 
-Aşağıdaki örnek, C2256 oluşturur:
+Aşağıdaki örnek C2256 oluşturur:
 
-```
+```cpp
 // C2256.cpp
 // compile with: /c
 class C {

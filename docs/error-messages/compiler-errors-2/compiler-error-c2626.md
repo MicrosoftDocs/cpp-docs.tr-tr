@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2626
+title: Derleyici hatası C2626
 ms.date: 11/04/2016
 f1_keywords:
 - C2626
 helpviewer_keywords:
 - C2626
 ms.assetid: 4c283ad0-251b-4571-bc18-468b9836746f
-ms.openlocfilehash: 434858991c23345e2a6c174c8f323000d42b9b6b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 339d48265bdc1f68ea4e18fadfde48fca956dd1f
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62222890"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74754751"
 ---
-# <a name="compiler-error-c2626"></a>Derleyici Hatası C2626
+# <a name="compiler-error-c2626"></a>Derleyici hatası C2626
 
-'identifier': bir anonim bir yapı veya birleşim özel veya korumalı veri üyesine izin verilmez
+' tanımlayıcı ': anonim bir yapıda veya birleşimde özel veya korumalı bir veri üyesine izin verilmez
 
-Bir anonim bir yapı veya birleşim üyesi ortak erişimi olmalıdır.
+Anonim yapının veya birleşimin bir üyesinin genel erişimi olmalıdır.
 
-Aşağıdaki örnek, C2626 oluşturur:
+Aşağıdaki örnek C2626 oluşturur:
 
-```
+```cpp
 // C2626.cpp
 int main() {
    union {
@@ -33,9 +33,9 @@ int main() {
 }
 ```
 
-Bu sorunu gidermek için herhangi bir özel veya korumalı etiket kaldırın:
+Bu sorunu onarmak için, tüm özel veya korumalı etiketleri kaldırın:
 
-```
+```cpp
 // C2626b.cpp
 int main() {
    union {

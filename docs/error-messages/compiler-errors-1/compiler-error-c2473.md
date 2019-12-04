@@ -1,29 +1,29 @@
 ---
-title: Derleyici Hatası C2473
+title: Derleyici hatası C2473
 ms.date: 11/04/2016
 f1_keywords:
 - C2473
 helpviewer_keywords:
 - C2473
 ms.assetid: 6bb7dbf5-b198-490f-860e-fd64d0c2a284
-ms.openlocfilehash: 232f89a714d70c6914b73a370c5f658ff4283ab4
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 2f7ce0e18070c2b5ee6ebb2284d5564b3d750d77
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64345636"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74743724"
 ---
-# <a name="compiler-error-c2473"></a>Derleyici Hatası C2473
+# <a name="compiler-error-c2473"></a>Derleyici hatası C2473
 
-'identifier': işlev tanımı gibi görünüyor, ancak hiçbir parametre listesi yoktur.
+' tanımlayıcı ': işlev tanımı gibi görünüyor ancak hiçbir parametre listesi yok.
 
-Derleyici, parametre listesi olmayan bir işlev göründüğüne algıladı.
+Derleyici, parametre listesi olmadan işlevi beğendiklerinizi algıladı.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C2473 oluşturur.
+Aşağıdaki örnek C2473 oluşturur.
 
-```
+```cpp
 // C2473.cpp
 // compile with: /clr /c
 class A {

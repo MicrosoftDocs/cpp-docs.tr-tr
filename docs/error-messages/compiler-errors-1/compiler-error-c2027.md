@@ -1,29 +1,29 @@
 ---
-title: Derleyici Hatası C2027
+title: Derleyici hatası C2027
 ms.date: 11/04/2016
 f1_keywords:
 - C2027
 helpviewer_keywords:
 - C2027
 ms.assetid: a39150c0-ec04-45ec-934c-a838bfe76627
-ms.openlocfilehash: 901e9b791616c5684b352c1fda7687f67b895d9c
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: 62cf208d9d0025afba06d32a15b9a1e50777c473
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65447366"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74751007"
 ---
-# <a name="compiler-error-c2027"></a>Derleyici Hatası C2027
+# <a name="compiler-error-c2027"></a>Derleyici hatası C2027
 
-Tanımsız türü 'type' kullanın
+tanımsız ' Type ' türü kullanımı
 
-Bir tür tanımlandıktan kadar kullanılamaz. Hatayı gidermek için türü başvurmadan önce tam olarak tanımlanmış emin olun.
+Bir tür, tanımlanana kadar kullanılamaz. Hatayı gidermek için, türün kendisine başvurulmadan önce tam olarak tanımlandığından emin olun.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C2027 oluşturur.
+Aşağıdaki örnek C2027 oluşturur.
 
-```
+```cpp
 // C2027.cpp
 class C;
 class D {
@@ -43,11 +43,11 @@ int main() {
 
 ## <a name="example"></a>Örnek
 
-Bir işaretçi bildirimli ancak tanımlanmamış bir türü bildirmek mümkündür. Ancak C++ tanımlanmamış bir türe başvuru izin vermiyor.
+Tanımlanan ancak tanımlanmamış bir tür için bir işaretçi bildirmek mümkündür. Ancak C++ tanımsız bir türe başvuruya izin vermez.
 
-Aşağıdaki örnek, C2027 oluşturur.
+Aşağıdaki örnek C2027 oluşturur.
 
-```
+```cpp
 // C2027_b.cpp
 class A;
 A& CreateA();

@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3045
+title: Derleyici hatası C3045
 ms.date: 11/04/2016
 f1_keywords:
 - C3045
 helpviewer_keywords:
 - C3045
 ms.assetid: 9351ba3e-3d3f-455f-ac90-a810fa9fd947
-ms.openlocfilehash: 9beae880d840f1cd1ac73f51ebeac8883882dd92
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 88c0c9747f98c6850f3e9b4341bdcdef915ac754
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64345551"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74761357"
 ---
-# <a name="compiler-error-c3045"></a>Derleyici Hatası C3045
+# <a name="compiler-error-c3045"></a>Derleyici hatası C3045
 
-Bir bileşik deyim bekleniyordu OpenMP 'sections' yönergesinden sonra. Eksik ' {'
+OpenMP ' sections ' yönergesinden sonra bileşik bir ifade bekleniyor. ' {' Eksik
 
-Ayraç içinde virgülle ayrılmış bir kod bloğu izlemeniz gereken bir [bölümleri](../../parallel/openmp/reference/sections-openmp.md) yönergesi.
+Küme ayraçları ile ayrılmış bir kod bloğu, bir [bölüm](../../parallel/openmp/reference/sections-openmp.md) yönergesini izlemelidir.
 
-Aşağıdaki örnek, C3045 oluşturur:
+Aşağıdaki örnek C3045 oluşturur:
 
-```
+```cpp
 // C3045.cpp
 // compile with: /openmp /c
 #include "omp.h"

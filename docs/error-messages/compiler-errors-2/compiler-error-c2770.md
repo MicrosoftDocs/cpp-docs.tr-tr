@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2770
+title: Derleyici hatası C2770
 ms.date: 11/04/2016
 f1_keywords:
 - C2770
 helpviewer_keywords:
 - C2770
 ms.assetid: 100001b5-80b0-4971-8ff6-9023f443c926
-ms.openlocfilehash: 9397b52838f61449f0475a31d5bb4077dad7f587
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4f6c82823dc619982ff148a83e2cc3316b42cfab
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62257407"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74759782"
 ---
-# <a name="compiler-error-c2770"></a>Derleyici Hatası C2770
+# <a name="compiler-error-c2770"></a>Derleyici hatası C2770
 
-'şablon' için geçersiz açık template_or_generic bağımsız değişken
+' Template ' için geçersiz açık template_or_generic bağımsız değişkenleri
 
-İzin verilmeyen işlev türlerinde işlev şablonu adayları açık şablon ya da genel bağımsız değişkenler ile sonuçlandı.
+Açık şablon veya genel bağımsız değişkenler içeren işlev şablonu adayları izin verilmeyen işlev türleriyle sonuçlandı.
 
-Aşağıdaki örnek, C2770 oluşturur:
+Aşağıdaki örnek C2770 oluşturur:
 
-```
+```cpp
 // C2770.cpp
 #include <stdio.h>
 template <class T>

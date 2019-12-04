@@ -1,29 +1,29 @@
 ---
-title: Derleyici Hatası C3540
+title: Derleyici hatası C3540
 ms.date: 11/04/2016
 f1_keywords:
 - C3540
 helpviewer_keywords:
 - C3540
 ms.assetid: 3c0c959c-e3b7-40eb-b922-ccac44bd9d85
-ms.openlocfilehash: 57e4145557272f76a890a356c79982346cd74d7e
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 94f35f9f3bf64e09087f28a11a4fb9802d9d3c0f
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64345478"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74761523"
 ---
-# <a name="compiler-error-c3540"></a>Derleyici Hatası C3540
+# <a name="compiler-error-c3540"></a>Derleyici hatası C3540
 
-'type': 'auto' içeren bir türe sizeof uygulanamaz
+' Type ': sizeof ' Auto ' içeren bir türe uygulanamaz
 
-[Sizeof](../../cpp/sizeof-operator.md) işleci içerdiğinden belirtilen türe uygulanamaz `auto` tanımlayıcısı.
+`auto` belirticisini içerdiğinden, belirtilen türe [sizeof](../../cpp/sizeof-operator.md) işleci uygulanamıyor.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek C3540 verir.
+Aşağıdaki örnek, C3540 verir.
 
-```
+```cpp
 // C3540.cpp
 // Compile with /Zc:auto
 int main() {

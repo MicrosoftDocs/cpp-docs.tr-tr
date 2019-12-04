@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2937
+title: Derleyici hatası C2937
 ms.date: 11/04/2016
 f1_keywords:
 - C2937
 helpviewer_keywords:
 - C2937
 ms.assetid: 95671ca3-79f7-4b56-a5f2-a92296da1629
-ms.openlocfilehash: 8ad25dbcec4ee8a8ed49449cf9e64ebae4af1321
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f682cd6346d214f4173226d78301f563083ef607
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62366531"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74758378"
 ---
-# <a name="compiler-error-c2937"></a>Derleyici Hatası C2937
+# <a name="compiler-error-c2937"></a>Derleyici hatası C2937
 
-'class': türü sınıf kimliği bir genel tür tanımı yeniden tanımlandı
+' class ': tür sınıfı kimliği genel bir typedef olarak yeniden tanımlandı
 
-Genel bir genel veya Şablon sınıfı kullanamazsınız `typedef`.
+Genel veya şablon sınıfını genel `typedef`olarak kullanamazsınız.
 
-Aşağıdaki örnek, C2937 oluşturur:
+Aşağıdaki örnek C2937 oluşturur:
 
-```
+```cpp
 // C2937.cpp
 // compile with: /c
 template<class T>
@@ -30,9 +30,9 @@ typedef int TC<int>;   // C2937
 typedef TC<int> c;   // OK
 ```
 
-C2937, genel türler kullanırken da meydana gelebilir:
+C2937, genel türler kullanılırken de oluşabilir:
 
-```
+```cpp
 // C2937b.cpp
 // compile with: /clr
 generic<class T>

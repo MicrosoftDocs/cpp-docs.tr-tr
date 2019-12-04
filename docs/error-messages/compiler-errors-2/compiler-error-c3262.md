@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3262
+title: Derleyici hatası C3262
 ms.date: 11/04/2016
 f1_keywords:
 - C3262
 helpviewer_keywords:
 - C3262
 ms.assetid: 3e74b9aa-de3c-4492-9331-ee73012b958b
-ms.openlocfilehash: 1b6f9c1cd8ed983ba0784a49b8972325047c8d9b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8f810cb300ab6db61cc6188aa5e9427ed2141338
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62366192"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74754205"
 ---
-# <a name="compiler-error-c3262"></a>Derleyici Hatası C3262
+# <a name="compiler-error-c3262"></a>Derleyici hatası C3262
 
-Geçersiz dizi dizini oluşturma: Belirtilen '#' için '#' boyut-boyutlu 'dizi türü'
+geçersiz dizi dizini oluşturma: ' # '-boyutlu ' dizi türü ' için ' # ' boyut belirtildi
 
-Yanlış simgeli dizi. Dizin sayısı dizideki boyutların sayısı ile eşleşmeyebilir.
+Dizi yanlış bir şekilde kaldırıldı. Dizin sayısı dizideki boyut sayısıyla eşleşmeyebilir.
 
-Aşağıdaki örnek, C3262 oluşturur:
+Aşağıdaki örnek C3262 oluşturur:
 
-```
+```cpp
 // C3262.cpp
 // compile with: /clr
 #using <mscorlib.dll>

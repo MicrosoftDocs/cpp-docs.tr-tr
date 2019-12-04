@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3270
+title: Derleyici hatası C3270
 ms.date: 11/04/2016
 f1_keywords:
 - C3270
 helpviewer_keywords:
 - C3270
 ms.assetid: 70e6e76b-7415-48f5-a61e-2ed50caf08e4
-ms.openlocfilehash: 91656ee893f2ad7b3f0c53cb157cd9faf129e4c7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 52c4f8d320d3b6ac66e702d03346af0f84b664e1
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62366049"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74754010"
 ---
-# <a name="compiler-error-c3270"></a>Derleyici Hatası C3270
+# <a name="compiler-error-c3270"></a>Derleyici hatası C3270
 
-'field': FieldOffset özniteliği yalnızca StructLayout(Explicit) bağlamında kullanılabilir, bu durumda gereklidir
+' Field ': FieldOffset özniteliği yalnızca StructLayout (açık) bağlamında kullanılabilir, bu durumda gereklidir
 
-Bir alan işaretlenmiş **FieldOffset**, yalnızca izin verilen zaman **StructLayout(Explicit)** etkindir.
+Bir alan, yalnızca **StructLayout (açık)** etkin olduğunda Izin verilen **FieldOffset**ile işaretlendi.
 
-Aşağıdaki örnek, C3270 oluşturur:
+Aşağıdaki örnek C3270 oluşturur:
 
-```
+```cpp
 // C3270_2.cpp
 // compile with: /clr /c
 using namespace System::Runtime::InteropServices;

@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3736
+title: Derleyici hatası C3736
 ms.date: 11/04/2016
 f1_keywords:
 - C3736
 helpviewer_keywords:
 - C3736
 ms.assetid: 579b773c-41e7-40ea-8382-2e3ce2667f4c
-ms.openlocfilehash: e31d68a13ebd9c5267fd285d43ebc66ae8b53182
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9c4626164fe8fe3fb932fba3ae8e87c774f5aeec
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62328022"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74752853"
 ---
-# <a name="compiler-error-c3736"></a>Derleyici Hatası C3736
+# <a name="compiler-error-c3736"></a>Derleyici hatası C3736
 
-'event': bir yöntem olmalı veya durumunda, olaylar, isteğe bağlı yönetilen bir veri üyesi
+' Event ': bir yöntem veya yönetilen olaylar söz konusu olduğunda, isteğe bağlı olarak bir veri üyesi olmalıdır
 
-Yerel ve COM olayları yöntemleri olmalıdır. .NET olayları, veri üyeleri de olabilir.
+Yerel ve COM olayları Yöntemler olmalıdır. .NET olayları da veri üyeleri olabilir.
 
-Aşağıdaki örnek, C3736 oluşturur:
+Aşağıdaki örnek C3736 oluşturur:
 
-```
+```cpp
 // C3736.cpp
 struct A {
    __event int e();

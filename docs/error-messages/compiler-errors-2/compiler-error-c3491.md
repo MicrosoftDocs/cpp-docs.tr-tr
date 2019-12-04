@@ -1,35 +1,35 @@
 ---
-title: Derleyici Hatası C3491
+title: Derleyici hatası C3491
 ms.date: 11/04/2016
 f1_keywords:
 - C3491
 helpviewer_keywords:
 - C3491
 ms.assetid: 7f0e71b2-46a0-4d25-bd09-6158a280f509
-ms.openlocfilehash: 12f50e48fc18fc23d078b6dbc7d21d05efa06d43
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 78f90ee1c44a0d42e529a027b1e7fc90a0da3cdb
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62381091"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74738329"
 ---
-# <a name="compiler-error-c3491"></a>Derleyici Hatası C3491
+# <a name="compiler-error-c3491"></a>Derleyici hatası C3491
 
-'var': değişemeyen bir lambda içinde bir değere göre yakalama değiştirilemez
+' var ': değere göre yakalama, kesilebilir olmayan bir lambda içinde değiştirilemez
 
-Değişemeyen bir lambda ifadesi değere göre yakalanan bir değişkenin değerini değiştiremezsiniz.
+Kesilebilir olmayan bir lambda ifadesi, değere göre yakalanan bir değişkenin değerini değiştiremez.
 
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için
 
-- İle lambda ifadesi bildirir `mutable` anahtar sözcüğü, veya
+- `mutable` anahtar sözcüğüyle lambda ifadenizi bildirin veya
 
-- Değişkeni, lambda ifadesinin yakalama listesine başvuruya göre geçirin.
+- Değişkeni lambda ifadesinin yakalama listesine başvuruya göre geçirin.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C3491 oluşturur, yakalama değişkeni değişemeyen bir lambda ifadesinin gövdesinin değiştirir çünkü `m`:
+Aşağıdaki örnek, C3491 üretir çünkü kesilebilir olmayan bir lambda ifadesinin gövdesi, yakalama değişkenini `m`değiştirir:
 
-```
+```cpp
 // C3491a.cpp
 
 int main()
@@ -41,9 +41,9 @@ int main()
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, lambda ifadesi ile bildirerek C3491 çözümler `mutable` anahtar sözcüğü:
+Aşağıdaki örnek, `mutable` anahtar sözcüğüyle lambda ifadesini bildirerek C3491 çözer:
 
-```
+```cpp
 // C3491b.cpp
 
 int main()

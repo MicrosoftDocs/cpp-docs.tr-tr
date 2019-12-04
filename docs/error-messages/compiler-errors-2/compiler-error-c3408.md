@@ -1,29 +1,29 @@
 ---
-title: Derleyici Hatası C3408
+title: Derleyici hatası C3408
 ms.date: 11/04/2016
 f1_keywords:
 - C3408
 helpviewer_keywords:
 - C3408
 ms.assetid: 1f5ea979-fb1e-4214-b310-6fd6ca8249b1
-ms.openlocfilehash: c374ea60129b315caf4b72dbf2917a9f4c4ba2ea
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8c606ceb446cdf1e6bc6df52853b8d590751eb21
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62353014"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74760705"
 ---
-# <a name="compiler-error-c3408"></a>Derleyici Hatası C3408
+# <a name="compiler-error-c3408"></a>Derleyici hatası C3408
 
-'attribute': öznitelik şablon tanımlarında izin verilmiyor
+' Attribute ': özniteliğe şablon tanımlarında izin verilmiyor
 
-Şablon tanımlarında öznitelikler uygulanamaz.
+Öznitelikler şablon tanımlarına uygulanamaz.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C3408 oluşturur.
+Aşağıdaki örnek C3408 oluşturur.
 
-```
+```cpp
 // C3408.cpp
 // compile with: /c
 template <class T> struct PTS {

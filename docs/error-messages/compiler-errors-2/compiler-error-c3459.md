@@ -1,31 +1,31 @@
 ---
-title: Derleyici Hatası C3459
+title: Derleyici hatası C3459
 ms.date: 11/04/2016
 f1_keywords:
 - C3459
 helpviewer_keywords:
 - C3459
 ms.assetid: 3d290a20-d313-4c07-9bd8-c5c159cb169f
-ms.openlocfilehash: aaad9610ffec3efc73b1ff5650472689a2d2e82a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7fe21414fcadef13b7af3acf4f8e1635fb12802e
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62363745"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74756649"
 ---
-# <a name="compiler-error-c3459"></a>Derleyici Hatası C3459
+# <a name="compiler-error-c3459"></a>Derleyici hatası C3459
 
-'attribute': öznitelik yalnızca sınıf dizin oluşturucusunda izin verilir (varsayılan dizini oluşturulan özellik)
+' Attribute ': özniteliğe yalnızca sınıf dizin oluşturucuda izin veriliyor (varsayılan dizinli özellik)
 
-Bir sınıf dizin oluşturucu özelliği için uygulanması için tasarlanmış bir özniteliği yanlış kullanıldı.
+Sınıf Dizin Oluşturucu özelliğine uygulanması için tasarlanan bir öznitelik yanlış kullanıldı.
 
-Daha fazla bilgi için [nasıl yapılır: İçindeki özellikleri kullanın C++/CLI](../../dotnet/how-to-use-properties-in-cpp-cli.md).
+Daha fazla bilgi için bkz. [nasıl yapılır:/CLI Içindeki C++özellikleri kullanma](../../dotnet/how-to-use-properties-in-cpp-cli.md).
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C3459 oluşturur.
+Aşağıdaki örnek C3459 oluşturur.
 
-```
+```cpp
 // C3459.cpp
 // compile with: /clr /c
 public ref class MyString {

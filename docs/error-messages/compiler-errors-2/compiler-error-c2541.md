@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2541
+title: Derleyici hatası C2541
 ms.date: 11/04/2016
 f1_keywords:
 - C2541
 helpviewer_keywords:
 - C2541
 ms.assetid: ed95180f-00df-4e62-a8e9-1b6dab8281bf
-ms.openlocfilehash: d8b2366bc2899b7a2ac76b0fae133351cd88a541
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: de24503d256b8c7649ce87969b1b2f6a4709ac8f
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62386960"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74740851"
 ---
-# <a name="compiler-error-c2541"></a>Derleyici Hatası C2541
+# <a name="compiler-error-c2541"></a>Derleyici hatası C2541
 
-'delete': Sil: işaretçi olmayan nesneler silinemez
+' Sil ': delete: işaretçi olmayan nesneler silinemez
 
-[Sil](../../cpp/delete-operator-cpp.md) işleci, bir işaretçi değil bir nesne üzerinde kullanıldı.
+[Delete](../../cpp/delete-operator-cpp.md) işleci, işaretçi olmayan bir nesne üzerinde kullanıldı.
 
-Aşağıdaki örnek, C2541 oluşturur:
+Aşağıdaki örnek C2541 oluşturur:
 
-```
+```cpp
 // C2541.cpp
 int main() {
    int i;

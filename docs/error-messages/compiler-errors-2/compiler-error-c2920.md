@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2920
+title: Derleyici hatası C2920
 ms.date: 11/04/2016
 f1_keywords:
 - C2920
 helpviewer_keywords:
 - C2920
 ms.assetid: 0a4cb2de-00a0-4209-8160-c7ce6ed7d9ab
-ms.openlocfilehash: 28bbbd30bcb16e2ea5fc14fe0f48f86814ee13c4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2b744729097f7e697c7a7695a849b5ee46d7a4ab
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62311676"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74761038"
 ---
-# <a name="compiler-error-c2920"></a>Derleyici Hatası C2920
+# <a name="compiler-error-c2920"></a>Derleyici hatası C2920
 
-yeniden tanımlama: 'class': sınıf şablonu veya genel zaten bildirildi 'türü olarak'
+yeniden tanımlama: ' class ': sınıf şablonu veya genel zaten ' Type ' olarak tanımlanmış
 
-Bir genel veya Şablon sınıfı, eşdeğer olan birden fazla bildirimi sahiptir. Bu hatayı düzeltmek için farklı türleri için farklı adlar kullanın veya yeniden tanımlanması, tür adı'nı kaldırın.
+Genel veya şablon sınıfı, eşdeğer olmayan birden çok bildirime sahiptir. Bu hatayı onarmak için farklı türler için farklı adlar kullanın veya tür adının yeniden açıklamasını kaldırın.
 
-Aşağıdaki örnek, C2920 oluşturur ve bu sorunun nasıl gösterir:
+Aşağıdaki örnek C2920 oluşturur ve nasıl düzeltileceğini gösterir:
 
-```
+```cpp
 // C2920.cpp
 // compile with: /c
 typedef int TC1;
@@ -30,9 +30,9 @@ struct TC1 {};   // C2920
 struct TC2 {};   // OK - fix by using a different name
 ```
 
-C2920, genel türler kullanırken da meydana gelebilir:
+C2920, genel türler kullanılırken de oluşabilir:
 
-```
+```cpp
 // C2920b.cpp
 // compile with: /clr /c
 typedef int GC1;

@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3138
+title: Derleyici hatası C3138
 ms.date: 11/04/2016
 f1_keywords:
 - C3138
 helpviewer_keywords:
 - C3138
 ms.assetid: 364ee9e8-9358-410e-bd35-9c4a226a3753
-ms.openlocfilehash: d812c14c2f364681fe28a58bdaed68fe3ed8ad30
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3980bebdae0301dfbbb3cea91d6631053a118995
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62374995"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74761264"
 ---
-# <a name="compiler-error-c3138"></a>Derleyici Hatası C3138
+# <a name="compiler-error-c3138"></a>Derleyici hatası C3138
 
-'interface': 'attribute' arabirimi IDispatch'ten devralmalı veya IDispatch'ten devralan bir arabirimden devralmalıdır
+' interface ': bir ' Attribute ' arabirimi IDispatch 'ten devralınmalıdır veya IDispatch 'ten devralan bir arabirimden
 
-Bir arabirim ile [çift](../../windows/dual.md) veya [dispinterface](../../windows/dispinterface.md) öznitelikleri yok `IDispatch` doğrudan veya dolaylı bir temel arabirim olarak.
+[Dual](../../windows/dual.md) veya [dispınterface](../../windows/dispinterface.md) özniteliklerine sahip bir arabirim doğrudan veya dolaylı temel arabirim olarak `IDispatch` sahip değildir.
 
-Aşağıdaki örnek, C3138 oluşturur:
+Aşağıdaki örnek C3138 oluşturur:
 
-```
+```cpp
 // C3138.cpp
 #include <unknwn.h>
 

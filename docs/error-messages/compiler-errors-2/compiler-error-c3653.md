@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3653
+title: Derleyici hatası C3653
 ms.date: 11/04/2016
 f1_keywords:
 - C3653
 helpviewer_keywords:
 - C3653
 ms.assetid: 316549d7-f7ef-4578-a2ba-57adc8aac527
-ms.openlocfilehash: 75e2c061190b24019491db7a625ecafb5ac82b6b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 69fc6fa9303b2256172dd079028050823f053246
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62227519"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74756344"
 ---
-# <a name="compiler-error-c3653"></a>Derleyici Hatası C3653
+# <a name="compiler-error-c3653"></a>Derleyici hatası C3653
 
-'function': adlandırılmış bir geçersiz kılma olarak kullanılamaz: bulunamadı; kılınan bir işlev kullanarak işlevi açıkça adlandırmayı unuttunuz bir:: işleci?
+' function ': adlandırılmış geçersiz kılma olarak kullanılamaz: geçersiz kılınan bir işlev bulunamadı; bir:: işleci kullanarak işlevi açıkça adı belirtmeyi unuttunuz mu?
 
-Açık bir geçersiz kılma herhangi bir arabirimde bulunamadı bir işlev belirtildi. Daha fazla bilgi için [açık geçersiz kılmalar](../../extensions/explicit-overrides-cpp-component-extensions.md).
+Açık bir geçersiz kılma, hiçbir arabirimde bulunmayan bir işlevi belirtti. Daha fazla bilgi için bkz. [Açık geçersiz kılmalar](../../extensions/explicit-overrides-cpp-component-extensions.md).
 
-Aşağıdaki örnek, C3653 oluşturur:
+Aşağıdaki örnek C3653 oluşturur:
 
-```
+```cpp
 // C3653.cpp
 // compile with: /clr
 public interface struct I {

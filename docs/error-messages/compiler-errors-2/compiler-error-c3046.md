@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3046
+title: Derleyici hatası C3046
 ms.date: 11/04/2016
 f1_keywords:
 - C3046
 helpviewer_keywords:
 - C3046
 ms.assetid: 2e53d835-faa1-4ec0-9807-41f3dc552635
-ms.openlocfilehash: 56fffc0e9aab19f8ad8510ad886ec255a327249d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d4af29ff6a5267dc80c52e8a3ea9d92cad8d8f7d
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62404266"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74761344"
 ---
-# <a name="compiler-error-c3046"></a>Derleyici Hatası C3046
+# <a name="compiler-error-c3046"></a>Derleyici hatası C3046
 
-Bir OpenMP '#pragma omp sections' bölgesinde yapısal blok eksik
+OpenMP ' #pragma omp sections ' bölgesinde yapısal blok eksik
 
-A [bölümleri](../../parallel/openmp/reference/sections-openmp.md) yönergesi, bir boş bir kod bloğu içeriyor.
+Bir [sections](../../parallel/openmp/reference/sections-openmp.md) yönergesinin boş bir kod bloğu vardır.
 
-Aşağıdaki örnek, C3046 oluşturur:
+Aşağıdaki örnek C3046 oluşturur:
 
-```
+```cpp
 // C3046.cpp
 // compile with: /openmp /c
 #include "omp.h"

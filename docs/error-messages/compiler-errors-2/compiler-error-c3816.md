@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3816
+title: Derleyici hatası C3816
 ms.date: 11/04/2016
 f1_keywords:
 - C3816
 helpviewer_keywords:
 - C3816
 ms.assetid: 2e52cc7f-e31c-41a3-8d6f-9f5fab3648c0
-ms.openlocfilehash: d362480b3380fe4576ef56b8ca76dfa10eaa1408
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5e31138d50676c312028e35b480cc682dc146a43
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62384289"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74757130"
 ---
-# <a name="compiler-error-c3816"></a>Derleyici Hatası C3816
+# <a name="compiler-error-c3816"></a>Derleyici hatası C3816
 
-'bildirim' daha önce bildirilen veya farklı bir yönetilen veya WinRTmodifier ile tanımlanan
+' declaration ' daha önce farklı bir yönetilen veya Wınrtmodifier ile bildirildi veya tanımlandı
 
-İleri dönük bildirimi ve bir gerçek bildirimi gerektiren herhangi bir çakışma veya öznitelikleri bildirimi tutarsızlıklar olması.
+İleri bildirimi ve gerçek bildiriminde, özniteliklerin bildiriminde çakışma veya tutarsızlıklar olmaması gerekir.
 
-Aşağıdaki örnek, C3816 oluşturur ve bu sorunun nasıl gösterir:
+Aşağıdaki örnek C3816 oluşturur ve nasıl düzeltileceğini gösterir:
 
-```
+```cpp
 // C3816a.cpp
 // compile with: /clr /c
 class C1;

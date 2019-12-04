@@ -1,25 +1,25 @@
 ---
-title: Derleyici Hatası C3382
+title: Derleyici hatası C3382
 ms.date: 11/04/2016
 f1_keywords:
 - C3382
 helpviewer_keywords:
 - C3382
 ms.assetid: a7603abd-ac4e-4ae6-a02b-3bdc6d1908a6
-ms.openlocfilehash: c262ea963ae739fbb76211aae2622e98d5a9b6f7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 419577ddd5b5d7d2d21a91f500070cb190c72117
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62328789"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74760471"
 ---
-# <a name="compiler-error-c3382"></a>Derleyici Hatası C3382
+# <a name="compiler-error-c3382"></a>Derleyici hatası C3382
 
-/ CLR: safe ile 'sizeof' desteklenmiyor
+/clr: Safe ile ' sizeof ' desteklenmiyor
 
-Çıktı dosyası bir **/CLR: safe** derleme doğrulanabilir şekilde güvenli yazın olan bir dosya olduğu ve sizeof size_t boyutu işletim sistemine göre farklılık gösterir, sizeof işleci dönüş değeri olduğu için desteklenmiyor.
+**/Clr: Safe** derlemesinin çıkış dosyası, doğruıolarak tür kullanımı güvenli olan bir dosyadır ve sizeof işlecinin dönüş değeri size_t olduğundan sizeof, boyutu işletim sistemine bağlı olarak değişir çünkü sizeof desteklenmez.
 
-Daha fazla bilgi için bkz:
+Daha fazla bilgi için bkz.,
 
 - [sizeof İşleci](../../cpp/sizeof-operator.md)
 
@@ -29,9 +29,9 @@ Daha fazla bilgi için bkz:
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C3382 oluşturur.
+Aşağıdaki örnek C3382 oluşturur.
 
-```
+```cpp
 // C3382.cpp
 // compile with: /clr:safe
 int main() {

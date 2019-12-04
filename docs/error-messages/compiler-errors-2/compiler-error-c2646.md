@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2646
+title: Derleyici hatası C2646
 ms.date: 11/04/2016
 f1_keywords:
 - C2646
 helpviewer_keywords:
 - C2646
 ms.assetid: 92ff1f02-5eaf-40a5-8b7a-a682f149e967
-ms.openlocfilehash: c02d7216df42681ae2ec733ae932d22861c1f0ee
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a5c4dbc967c304fc6b13eb00e2c7093380ec8be9
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62282215"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74758222"
 ---
-# <a name="compiler-error-c2646"></a>Derleyici Hatası C2646
+# <a name="compiler-error-c2646"></a>Derleyici hatası C2646
 
-bir anonim struct veya union genel veya ad alanı kapsamında statik olarak bildirilmelidir
+Genel veya ad alanı kapsamındaki anonim bir yapı veya birleşim statik olarak bildirilmelidir
 
-Bir anonim yapıda veya birleşimde genel yok veya ad alanı kapsamına ancak değil bildirilen `static`.
+Anonim bir yapıda veya birleşimde genel veya ad alanı kapsamı vardır ancak `static`bildirilmemiş.
 
-Aşağıdaki örnek, C2646 oluşturur ve bu sorunun nasıl gösterir:
+Aşağıdaki örnek C2646 oluşturur ve nasıl düzeltileceğini gösterir:
 
-```
+```cpp
 // C2646.cpp
 // compile with: /c
 union { int i; };   // C2646 not static

@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2153
+title: Derleyici hatası C2153
 ms.date: 11/04/2016
 f1_keywords:
 - C2153
 helpviewer_keywords:
 - C2153
 ms.assetid: cfc50cb7-9a0f-4b5b-879a-d419c99f7be1
-ms.openlocfilehash: eeb7da509ffb1b8c408763c79d471586eb94f383
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1f03b196b7ddaae80dac1941cdde5be16acace5f
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62175166"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74748690"
 ---
-# <a name="compiler-error-c2153"></a>Derleyici Hatası C2153
+# <a name="compiler-error-c2153"></a>Derleyici hatası C2153
 
-onaltılık sabitlerde en az bir onaltılık basamak olmalıdır
+onaltılık sabitlerin en az bir onaltılı basamak olmalıdır
 
-Onaltılık sabitler 0 x, 0 X ve \x geçerli değildir. En az bir onaltılık basamak izlemelidir x ya da X.
+0x, 0X ve \x on altılı sabitleri geçerli değil. En az bir onaltılık basamak x veya X izlemelidir.
 
-Aşağıdaki örnek, C2153 oluşturur:
+Aşağıdaki örnek C2153 oluşturur:
 
-```
+```cpp
 // C2153.cpp
 int main() {
    int a= 0x;    // C2153

@@ -1,33 +1,33 @@
 ---
-title: Derleyici Hatası C2357
+title: Derleyici hatası C2357
 ms.date: 11/04/2016
 f1_keywords:
 - C2357
 helpviewer_keywords:
 - C2357
 ms.assetid: d1083945-0ea2-4385-9e66-8c665978806c
-ms.openlocfilehash: 1872672e776ad13bf16be5ae69729f4f68d8f3b0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ce1926468bac7e44485be5c0a0944fdf12dce3d8
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62302039"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74759925"
 ---
-# <a name="compiler-error-c2357"></a>Derleyici Hatası C2357
+# <a name="compiler-error-c2357"></a>Derleyici hatası C2357
 
-'identifier': 'type' türünde bir işlev olmalıdır
+' Identifier ': ' Type ' türünde bir işlev olmalıdır
 
-Kodunuzu bir sürümünü bildirir `atexit` sürümü eşleşmiyor işlevi derleyici tarafından dahili olarak bildirilir. Bildirme `atexit` gibi:
+Kodunuz, derleyici tarafından dahili olarak belirtilen sürümle eşleşmeyen `atexit` işlevinin bir sürümünü bildiriyor. `atexit` aşağıdaki gibi bildirin:
 
 ```
 int __cdecl atexit(void (__cdecl *)());
 ```
 
-Daha fazla bilgi için [init_seg](../../preprocessor/init-seg.md).
+Daha fazla bilgi için bkz. [init_seg](../../preprocessor/init-seg.md).
 
-Aşağıdaki örnek, C2357 oluşturur:
+Aşağıdaki örnek C2357 oluşturur:
 
-```
+```cpp
 // C2357.cpp
 // compile with: /c
 // C2357 expected

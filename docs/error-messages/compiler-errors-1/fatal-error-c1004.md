@@ -6,38 +6,38 @@ f1_keywords:
 helpviewer_keywords:
 - C1004
 ms.assetid: dbe034b0-6eb0-41b4-a50c-2fccf9e78ad4
-ms.openlocfilehash: 13fb8963b33569facf62ccedfe9ce8b7bbbbfdc3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 82a1a3e410505be53d4356e46d5521aebb72763c
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62383212"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74756974"
 ---
 # <a name="fatal-error-c1004"></a>Önemli hata C1004
 
 beklenmeyen dosya sonu bulundu
 
-Derleyici, bir yapı çözmeden bir kaynak dosya sonuna ulaşıldı. Kod aşağıdaki öğelerden biri eksik olabilir:
+Derleyici bir yapı çözümlemeden kaynak dosyanın sonuna ulaştı. Kod, aşağıdaki öğelerden biri eksik olabilir:
 
 - Bir kapanış ayracı
 
-- Bir kapatma ayracı
+- Bir kapanış ayracı
 
-- Kapanış açıklama işareti (* /)
+- Bir kapanış açıklama işaretçisi (*/)
 
 - Noktalı virgül
 
-Bu hatayı gidermek için aşağıdakileri denetleyin:
+Bu hatayı çözmek için aşağıdakileri kontrol edin:
 
-- Varsayılan disk sürücüsü, kaynak dosyası olarak iki katı kadar alan hakkında gerektiren geçici dosyalar için yeterli alan yok.
+- Varsayılan disk sürücüsünde geçici dosyalar için yeterli alan yok. Bu, kaynak dosyayla iki kat daha fazla alan gerektirir.
 
-- Bir `#if` kapatma için false oturumda değerlendiren yönergesi `#endif` yönergesi.
+- False olarak değerlendirilen bir `#if` yönergesinin kapanış `#endif` yönergesi yok.
 
-- Bir kaynak dosyası, bir satır başı ve satır besleme ile sonlanmıyor.
+- Kaynak dosya bir satır başı ve satır besleme ile bitmiyor.
 
-Aşağıdaki örnek, C1004 oluşturur:
+Aşağıdaki örnek C1004 oluşturur:
 
-```
+```cpp
 // C1004.cpp
 #if TEST
 int main() {}
@@ -46,7 +46,7 @@ int main() {}
 
 Olası çözüm:
 
-```
+```cpp
 // C1004b.cpp
 #if TEST
 #endif

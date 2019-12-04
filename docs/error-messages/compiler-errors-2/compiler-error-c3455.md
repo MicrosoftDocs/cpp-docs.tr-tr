@@ -1,29 +1,29 @@
 ---
-title: Derleyici Hatası C3455
+title: Derleyici hatası C3455
 ms.date: 11/04/2016
 f1_keywords:
 - C3455
 helpviewer_keywords:
 - C3455
 ms.assetid: 218e5cfe-5391-4eeb-81c2-85c47e3a6cd2
-ms.openlocfilehash: 4451ddbd8d5a7125112ef8e1c58e8843095bffd4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e016105a53b4020ca8ed83a95b0c9b96036b1884
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62328583"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74756675"
 ---
-# <a name="compiler-error-c3455"></a>Derleyici Hatası C3455
+# <a name="compiler-error-c3455"></a>Derleyici hatası C3455
 
-'attribute': öznitelik oluşturucularının hiçbiri bağımsız değişkenlerle eşleşmedi
+' Attribute ': öznitelik oluşturucularının hiçbiri bağımsız değişkenlerle eşleşmedi
 
-Bir öznitelik bildirmek için geçersiz değer kullanıldı.  Bkz: [özniteliği](../../windows/attributes/attribute.md) daha fazla bilgi için.
+Bir özniteliği bildirmek için geçersiz bir değer kullanıldı.  Daha fazla bilgi için bkz. [özniteliği](../../windows/attributes/attribute.md) .
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C3455 oluşturur.
+Aşağıdaki örnek C3455 oluşturur.
 
-```
+```cpp
 // C3455.cpp
 // compile with: /clr /c
 using namespace System;

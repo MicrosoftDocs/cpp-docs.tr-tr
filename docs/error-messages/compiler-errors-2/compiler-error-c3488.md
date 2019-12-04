@@ -1,39 +1,39 @@
 ---
-title: Derleyici Hatası C3488
+title: Derleyici hatası C3488
 ms.date: 11/04/2016
 f1_keywords:
 - C3488
 helpviewer_keywords:
 - C3488
 ms.assetid: 0a6fcd76-dd3b-48d7-abb3-22eccda96034
-ms.openlocfilehash: ed3cccb77a40ab646c9a6375cf4c182de62aa478
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2b69ed4ac8b7e706096d107e9dfaa4447ca1bc79
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62381110"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74738433"
 ---
-# <a name="compiler-error-c3488"></a>Derleyici Hatası C3488
+# <a name="compiler-error-c3488"></a>Derleyici hatası C3488
 
-varsayılan yakalama modu başvuruya göre olduğunda 'var' izin verilmiyor
+varsayılan yakalama modu başvuruya göre olduğunda ' var ' öğesine izin verilmez
 
-Bir lambda ifadesi için varsayılan yakalama modu başvuruya göre olduğunu belirttiğinizde, ifadesinin yakalama yan tümcesi, başvuru tarafından bir değişken geçiremezsiniz.
+Bir lambda ifadesinin varsayılan yakalama modunun başvuruya göre olduğunu belirttiğinizde, bu ifadenin yakalama yan tümcesine başvuruya göre bir değişken geçirilemez.
 
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için
 
-- Yakalama yan tümcesi için açıkça değişken geçmeyin veya
+- Değişkeni, yakalama yan tümcesine açıkça geçirmeyin veya
 
-- Başvuruya göre varsayılan yakalama modu belirtmeyin veya
+- Varsayılan yakalama modu olarak başvuruya göre belirtmeyin veya
 
-- Varsayılan yakalama modu değere göre belirtin veya
+- Varsayılan yakalama modu olarak değere göre belirtin veya
 
-- Değişkeni değere göre yakalama yan tümcesine geçirin. (Bu lambda ifadesi davranışını değiştirebilirsiniz.)
+- Değişkeni değere göre yakalama yan tümcesine geçirin. (Bu durum lambda ifadesinin davranışını değiştirebilir.)
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek C3488 oluşturur çünkü değişken başvuru `n` olan varsayılan mod budur başvuruya göre lambda ifadesinin yakalama yan tümcesinde görünür:
+Aşağıdaki örnek, varsayılan modu başvuruya göre olan bir lambda ifadesinin Capture yan tümcesinde `n` değişkenine bir başvuru göründüğünden C3488 oluşturur:
 
-```
+```cpp
 // C3488a.cpp
 
 int main()
@@ -45,9 +45,9 @@ int main()
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnekte, dört olası çözümler için C3488 gösterilmektedir:
+Aşağıdaki örnekte, C3488 için dört olası çözüm gösterilmektedir:
 
-```
+```cpp
 // C3488b.cpp
 
 int main()

@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3206
+title: Derleyici hatası C3206
 ms.date: 11/04/2016
 f1_keywords:
 - C3206
 helpviewer_keywords:
 - C3206
 ms.assetid: d62995b5-e349-4418-bbe8-8a5e776ca7b0
-ms.openlocfilehash: 665244cbfc87f32274f9eaf9afacfb1caad50659
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7a602238ca5a2f2a64eaa601cc6733a897b9fdb4
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62402690"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74738693"
 ---
-# <a name="compiler-error-c3206"></a>Derleyici Hatası C3206
+# <a name="compiler-error-c3206"></a>Derleyici hatası C3206
 
-'function': sınıf türü 'typename' tür bağımsız değişken listesi eksik parametre','için geçersiz tür bağımsız değişkeni
+' function ': ' param ' için geçersiz tür bağımsız değişkeni, ' TypeName ' sınıf türünde tür bağımsız değişken listesi eksik
 
-Bir şablon işlevi, bir şablon türü bağımsız değişkeni alma olarak tanımlanır. Bununla birlikte, şablonu şablon bağımsız değişken geçirildi.
+Şablon işlevi bir şablon türü bağımsız değişkeni alınarak tanımlanır. Ancak, bir şablon şablonu bağımsız değişkeni geçildi.
 
-Aşağıdaki örnek, C3206 oluşturur:
+Aşağıdaki örnek C3206 oluşturur:
 
-```
+```cpp
 // C3206.cpp
 template <class T>
 void f() {}
@@ -38,7 +38,7 @@ void f1() {
 
 Olası çözüm:
 
-```
+```cpp
 // C3206b.cpp
 // compile with: /c
 template <class T>
@@ -52,9 +52,9 @@ void f1() {
 }
 ```
 
-C3206, genel türler kullanırken da meydana gelebilir:
+C3206, genel türler kullanılırken de oluşabilir:
 
-```
+```cpp
 // C3206c.cpp
 // compile with: /clr
 generic <class GT1>
@@ -70,7 +70,7 @@ int main() {
 
 Olası çözüm:
 
-```
+```cpp
 // C3206d.cpp
 // compile with: /clr
 generic <class GT1>
@@ -84,9 +84,9 @@ int main() {
 }
 ```
 
-Bir sınıf şablonunun şablon türü bağımsız değişkeni izin verilmez. Aşağıdaki örnek C3206 başlatır:
+Bir sınıf şablonuna şablon türü bağımsız değişkeni olarak izin verilmez. Aşağıdaki örnek C3206 yükseltilir:
 
-```
+```cpp
 // C3206e.cpp
 template <class T>
 struct S {};
@@ -103,7 +103,7 @@ int main() {
 
 Olası çözüm:
 
-```
+```cpp
 // C3206f.cpp
 template <class T>
 struct S {};
@@ -118,9 +118,9 @@ int main() {
 }
 ```
 
-Şablon Şablon parametresi gerekli değilse, işlev bir şablon parametre alan bir şablon sınıfı içinde sarmalamak vardır:
+Bir şablon şablon parametresi gerekliyse, işlevi bir şablon şablon parametresi alan bir şablon sınıfında sarmalıdır:
 
-```
+```cpp
 // C3206g.cpp
 template <class T>
 struct S {};

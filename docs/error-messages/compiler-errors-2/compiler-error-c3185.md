@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3185
+title: Derleyici hatası C3185
 ms.date: 11/04/2016
 f1_keywords:
 - C3185
 helpviewer_keywords:
 - C3185
 ms.assetid: 5bf96279-043c-4981-9d02-b4550071b192
-ms.openlocfilehash: 45afe70b454f72dd8c9b8ce9771ce1f5aef6a10e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 36f350287a1cfaf937ee739800042aaf99f31769
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62366088"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74761640"
 ---
-# <a name="compiler-error-c3185"></a>Derleyici Hatası C3185
+# <a name="compiler-error-c3185"></a>Derleyici hatası C3185
 
-'typeid' kullanılan yönetilen veya WinRT türü 'type', 'operator' bunun yerine kullanın
+' Type ' yönetilen veya WinRT türü üzerinde ' TypeId ' kullanıldı, bunun yerine ' operator ' kullanın
 
-Uygulayamazsınız [TypeID](../../cpp/typeid-operator.md) yönetilen işleci veya kullanın; türü WinRT [TypeID](../../extensions/typeid-cpp-component-extensions.md) yerine.
+[TypeId](../../cpp/typeid-operator.md) işlecini yönetilen veya WinRT türüne uygulayamazsınız; Bunun yerine [TypeId](../../extensions/typeid-cpp-component-extensions.md) kullanın.
 
-Aşağıdaki örnek, C3185 oluşturur ve bu sorunun nasıl gösterir:
+Aşağıdaki örnek C3185 oluşturur ve nasıl düzeltileceğini gösterir:
 
-```
+```cpp
 // C3185a.cpp
 // compile with: /clr
 ref class Base {};

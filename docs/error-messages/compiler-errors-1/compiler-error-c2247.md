@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2247
+title: Derleyici hatası C2247
 ms.date: 11/04/2016
 f1_keywords:
 - C2247
 helpviewer_keywords:
 - C2247
 ms.assetid: 72efa03e-615e-4ef9-aede-0a98654b20fd
-ms.openlocfilehash: ab1f83e2075128441cbffd2d939e3b99b45be4c3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e82b406b20d77a824b62207b1766fec55ac65c5c
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62301376"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74758911"
 ---
-# <a name="compiler-error-c2247"></a>Derleyici Hatası C2247
+# <a name="compiler-error-c2247"></a>Derleyici hatası C2247
 
-'identifier' 'class', ' sınıfından ' için 'belirticisi' kullandığından erişilemiyor
+' class ', ' class ' öğesinden devralacak şekilde ' Identifier ' kullandığından ' tanımlayıcı ' erişilebilir değil
 
-`identifier` Özel veya korumalı erişimle bildirilen bir sınıftan devralınır.
+`identifier`, özel veya korumalı erişimle belirtilen bir sınıftan devralınır.
 
-Aşağıdaki örnek, C2247 oluşturur:
+Aşağıdaki örnek C2247 oluşturur:
 
-```
+```cpp
 // C2247.cpp
 class A {
 public:
@@ -32,11 +32,11 @@ class C : public B {} c;   // so even though C's B is public
 int j = c.i;               // C2247, i not accessible
 ```
 
-Bu hata için Visual Studio .NET 2003 yapıldığı derleyici uyumluluğu iş sonucu olarak da oluşturulabilir: erişim denetimi ile korumalı üyeler. Korumalı bir üye (n), yalnızca bir üye işlevi, (n) üyesi olduğu sınıfından (A) devralan bir sınıfın (B) üzerinden erişilebilir.
+Bu hata, Visual Studio .NET 2003: korumalı üyelerle erişim denetimi için yapılan derleyici uygunluk işinin sonucu olarak da oluşturulabilir. Korunan bir üyeye (n) yalnızca, (n) öğesinin üyesi olduğu sınıftan (A) devralan bir sınıfın (B) üye işlevi üzerinden erişilebilir.
 
-Visual Studio .NET 2003 ve Visual Studio .NET Visual C++ sürümü geçerli kod üyesinin bir arkadaş türü bildirin. Genel devralma de kullanılabilir.
+Visual Studio .NET 2003 ve Visual Studio .NET sürümlerinde geçerli olan kod için C++, üyeyi türün bir arkadaşınız olarak bildirin. Genel devralma de kullanılabilir.
 
-```
+```cpp
 // C2247b.cpp
 // compile with: /c
 // C2247 expected
@@ -57,11 +57,11 @@ void A::f() {
 }
 ```
 
-C2247 da oluşturulabilir için Visual Studio .NET 2003 yapıldığı derleyici uyumluluğu iş sonucu: özel temel erişilemez sınıfların artık. Özel bir temel sınıf türüne bir sınıf (A) (C) B bir taban sınıfı olarak kullanan bir türü için erişilebilir olmamalıdır (B).
+C2247, Visual Studio .NET 2003 için yapılan derleyici uygunluk işinin sonucu olarak da oluşturulabilir: özel temel sınıflar artık erişilemez durumda. Bir türe (B) özel temel sınıf olan bir sınıf (A), B 'yi temel sınıf olarak kullanan bir tür (C) için erişilebilir olmamalıdır.
 
-Visual Studio .NET 2003 ve Visual Studio .NET Visual C++ sürümü geçerli kod kapsamı işlecini kullanın.
+Visual Studio .NET 2003 ve Visual Studio .NET sürümlerinde C++geçerli olan kod için kapsam işlecini kullanın.
 
-```
+```cpp
 // C2247c.cpp
 // compile with: /c
 struct A {};

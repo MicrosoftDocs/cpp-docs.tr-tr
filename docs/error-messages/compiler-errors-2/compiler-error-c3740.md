@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3740
+title: Derleyici hatası C3740
 ms.date: 11/04/2016
 f1_keywords:
 - C3740
 helpviewer_keywords:
 - C3740
 ms.assetid: edb17a90-2307-4df6-943d-580460d26d2b
-ms.openlocfilehash: dd493e4759b2fb70918bf94f14f4ada022e326b5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4e32c37853f4c877e6260e38daa0c8357ca54a25
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62227007"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74752671"
 ---
-# <a name="compiler-error-c3740"></a>Derleyici Hatası C3740
+# <a name="compiler-error-c3740"></a>Derleyici hatası C3740
 
-Şablon kaynağı veya olayları alma
+Şablonlar, olayları kaynak veya alamaz
 
-Bir şablonlu sınıfın veya yapının içeremez [olayları](../../cpp/event-handling.md).
+Şablonlu bir sınıf veya yapı [olay](../../cpp/event-handling.md)içeremez.
 
-Aşağıdaki örnek, C3740 oluşturur:
+Aşağıdaki örnek C3740 oluşturur:
 
-```
+```cpp
 // C3740.cpp
 template <typename T>   // Delete the template specification
 struct E {

@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3886
+title: Derleyici hatası C3886
 ms.date: 11/04/2016
 f1_keywords:
 - C3886
 helpviewer_keywords:
 - C3886
 ms.assetid: 485f6c12-cc1b-4146-9034-409a0a5e615e
-ms.openlocfilehash: e9e9d4b478d5b53e50203d1f009295e1da444f2d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2e7ba0fcc76d723cebb5b82315faf36313b1d7db
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62402547"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74736639"
 ---
-# <a name="compiler-error-c3886"></a>Derleyici Hatası C3886
+# <a name="compiler-error-c3886"></a>Derleyici hatası C3886
 
-'var': sabit değerli veri üyesi başlatılmalıdır
+' var ': sabit değerli bir veri üyesinin başlatılması gerekir
 
-A [değişmez değer](../../extensions/literal-cpp-component-extensions.md) declaraed olduğunda değişkeni'nin başlatılması gerekir.
+Bildiriled olduğunda, [sabit](../../extensions/literal-cpp-component-extensions.md) bir değişken başlatılmalıdır.
 
-Aşağıdaki örnek, C3886 oluşturur:
+Aşağıdaki örnek C3886 oluşturur:
 
-```
+```cpp
 // C3886.cpp
 // compile with: /clr /c
 ref struct Y1 {

@@ -1,33 +1,33 @@
 ---
-title: Derleyici Hatası C3490
+title: Derleyici hatası C3490
 ms.date: 11/04/2016
 f1_keywords:
 - C3490
 helpviewer_keywords:
 - C3490
 ms.assetid: 7638559a-fd06-4527-a9c1-0c8ae68b3123
-ms.openlocfilehash: 1e6c3c502290e88feec89877de7ad791084401cf
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 940eae39222548ec74bda8ccb38e669748ffa74f
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62381078"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74738407"
 ---
-# <a name="compiler-error-c3490"></a>Derleyici Hatası C3490
+# <a name="compiler-error-c3490"></a>Derleyici hatası C3490
 
-'var' değiştirilemez çünkü bir const nesnesi üzerinden erişiliyor
+' var ' değiştirilemez çünkü bir const nesnesi üzerinden erişildi
 
-Bölümünde bildirilen bir lambda ifadesi bir `const` yöntemi değişemeyen üye verilerini değiştiremez.
+`const` yönteminde belirtilen bir lambda ifadesi, kesilebilir üye verilerini değiştiremez.
 
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için
 
-- Kaldırma `const` , yöntem bildiriminde'den değiştiricisi.
+- Yöntem bildirimindeki `const` değiştiricisini kaldırın.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C3490 oluşturur, üye değişkeni değiştirir çünkü `_i` içinde bir `const` yöntemi:
+Aşağıdaki örnek, bir `const` yönteminde `_i` üye değişkenini değiştirdiği için C3490 oluşturur:
 
-```
+```cpp
 // C3490a.cpp
 // compile with: /c
 
@@ -44,9 +44,9 @@ class C
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, kaldırarak C3490 çözümler `const` değiştirici yöntem bildiriminde'nden:
+Aşağıdaki örnek, yöntem bildiriminden `const` değiştiricisini kaldırarak C3490 çözer:
 
-```
+```cpp
 // C3490b.cpp
 // compile with: /c
 

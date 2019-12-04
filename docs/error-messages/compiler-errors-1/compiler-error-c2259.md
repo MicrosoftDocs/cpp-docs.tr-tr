@@ -1,31 +1,31 @@
 ---
-title: Derleyici Hatası C2259
+title: Derleyici hatası C2259
 ms.date: 11/04/2016
 f1_keywords:
 - C2259
 helpviewer_keywords:
 - C2259
 ms.assetid: e458236f-bdea-4786-9aa6-a98d8bffa5f4
-ms.openlocfilehash: 562882f50edfe2d44ab1f08ee9dbe88fe468af63
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: 403d674eae696eb42a837aef9d6e97c4b5b8f6c2
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65447388"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74758794"
 ---
-# <a name="compiler-error-c2259"></a>Derleyici Hatası C2259
+# <a name="compiler-error-c2259"></a>Derleyici hatası C2259
 
-'class': soyut sınıfın örneği oluşturulamıyor
+' class ': soyut sınıfın örneği oluşturulamıyor
 
-Kod bir soyut sınıfın veya yapının örneğini bildirir.
+Kod, bir soyut sınıf veya yapının örneğini bildirir.
 
-Bir sınıf veya yapı en az bir saf sanal işlevler içeren örneği oluşturulamıyor. Türetilmiş bir sınıf türetilmiş bir sınıfın nesnelerini örneklemek için her bir saf sanal işlevi geçersiz kılmanız gerekir.
+Bir veya daha fazla saf sanal işlev ile bir sınıf veya yapı örneği oluşturamazsınız. Türetilmiş bir sınıfın nesnelerinin örneğini oluşturmak için, türetilmiş sınıf her bir saf sanal işlevi geçersiz kılmalıdır.
 
-Daha fazla bilgi için [örtük olarak soyut sınıflar](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Implicitly_abstract_classes).
+Daha fazla bilgi için bkz. [örtülü olarak soyut sınıflar](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Implicitly_abstract_classes).
 
-Aşağıdaki örnek, C2259 oluşturur:
+Aşağıdaki örnek C2259 oluşturur:
 
-```
+```cpp
 // C2259.cpp
 // compile with: /c
 class V {
@@ -42,19 +42,19 @@ A a;  // C2259, A inherits func() as pure virtual
 B b;  // OK, B defines func()
 ```
 
-Bir arabirimden türetilir ve dışındaki ortak erişim izinleri ile türetilmiş sınıf içinde arabirim yöntemlerini uygulamaz her C2259 alabilirsiniz.  Bu durum, derleyicinin ortak erişimi için türetilmiş sınıf içinde uygulanan arabirim yöntemleri bekliyor kaynaklanır. Üye işlevleri daha kısıtlayıcı erişim izinleri olan bir arabirim için uyguladığınızda, derleyici bunları sırayla bir soyut sınıfı türetilen sınıfın getiren arabirim içinde tanımlanmış arabirim yöntemleri için uygulamaları olarak dikkate almaz.
+Bir arabirimden türettiğinizde ve arabirim yöntemlerini ortak dışında erişim izinleriyle türetilmiş sınıfta uyguladığınızda, C2259 alabilirsiniz.  Bu durum, derleyici türetilmiş sınıfta uygulanan arabirim yöntemlerinin ortak erişime sahip olmasını beklediği için oluşur. Daha kısıtlayıcı erişim izinleri olan bir arabirim için üye işlevlerini uyguladığınızda, derleyici bunları arabirimde tanımlanan arabirim yöntemleri için uygulamalar olarak kabul etmez, bu da türetilmiş sınıfı bir soyut sınıf yapar.
 
-Sorunun iki olası geçici çözümler vardır:
+Soruna yönelik iki olası geçici çözüm vardır:
 
-- Erişim izinleri uygulanan yöntemleri için genel yapın.
+- Uygulanan yöntemler için erişim izinlerini genel hale getirin.
 
-- Arabirimin adını uygulanan yöntem adıyla nitelemek için türetilmiş sınıf içinde uygulanan arabirim yöntemleri için kapsam çözünürlük işlecini kullanın.
+- Uygulanan yöntem adını arabirimin adıyla nitelemek için türetilmiş sınıfta uygulanan arabirim yöntemleri için kapsam çözümleme işlecini kullanın.
 
-Visual Studio 2005'te yapıldığı uyumluluğu iş sonucu olarak da C2259 oluşabilir **/ZC: wchar_t** artık varsayılan olarak açıktır. Bu durumda, C2599 göre ya da ile derleme çözümlenebilir **/Zc:wchar_t-**, önceki sürümlerden veya kuruluşunuzla uyumlu olduğundan türlerinizi güncelleştirerek davranışı sağlamak için. Daha fazla bilgi için [/ZC: wchar_t (wchar_t yerel türü olduğu)](../../build/reference/zc-wchar-t-wchar-t-is-native-type.md).
+C2259, Visual Studio 2005 ' de yapılan uygunluk işinin sonucu olarak da gerçekleşebilir, **/Zc: wchar_t** artık varsayılan olarak açık durumdadır. Bu durumda C2599, önceki sürümlerden veya tercihen uyumlu olmaları için türlerinizi güncelleyerek, bir önceki sürümden davranışı almak için **/Zc: wchar_t-** ile derlenerek çözülebilir. Daha fazla bilgi için bkz. [/Zc: wchar_t (wchar_t yerel tür)](../../build/reference/zc-wchar-t-wchar-t-is-native-type.md).
 
-Aşağıdaki örnek, C2259 oluşturur:
+Aşağıdaki örnek C2259 oluşturur:
 
-```
+```cpp
 // C2259b.cpp
 // compile with: /c
 #include <windows.h>
@@ -90,9 +90,9 @@ public:
 MyClass4 y;
 ```
 
-Aşağıdaki örnek, C2259 oluşturur:
+Aşağıdaki örnek C2259 oluşturur:
 
-```
+```cpp
 // C2259c.cpp
 // compile with: /clr
 interface class MyInterface {

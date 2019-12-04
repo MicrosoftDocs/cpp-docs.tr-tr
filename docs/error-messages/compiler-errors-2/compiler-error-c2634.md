@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2634
+title: Derleyici hatası C2634
 ms.date: 11/04/2016
 f1_keywords:
 - C2634
 helpviewer_keywords:
 - C2634
 ms.assetid: 58c8f2db-ac95-4a81-9355-ef3cfb0ba7b3
-ms.openlocfilehash: 99b6ce006d91c36d6bcd58e607d2bc8946ee6e55
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ae53dc8f33920c84bed152cdd7d7bf34e01f165a
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62360404"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74759457"
 ---
-# <a name="compiler-error-c2634"></a>Derleyici Hatası C2634
+# <a name="compiler-error-c2634"></a>Derleyici hatası C2634
 
-' & class::member': başvuru üyesine yönelik işaretçi geçersizdir
+' & Class:: Member ': başvuru üyesine yönelik işaretçi geçersizdir
 
-Bir başvuru üye işaretçisi bildirilir.
+Başvuru üyesine yönelik bir işaretçi bildirilmiştir.
 
-Aşağıdaki örnek, C2634 oluşturur:
+Aşağıdaki örnek C2634 oluşturur:
 
-```
+```cpp
 // C2634.cpp
 int mem;
 struct S {

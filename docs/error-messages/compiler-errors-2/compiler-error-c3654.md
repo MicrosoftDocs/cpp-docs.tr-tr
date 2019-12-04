@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3654
+title: Derleyici hatası C3654
 ms.date: 11/04/2016
 f1_keywords:
 - C3654
 helpviewer_keywords:
 - C3654
 ms.assetid: 57d96e3f-6bbb-4eaa-934b-26c23b4ceb2e
-ms.openlocfilehash: e66f0071a3d086c84a51c8b69e52b06643344c4d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 960dbe9f18403c12919db713cc41451dd7b93aac
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62227109"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74756298"
 ---
-# <a name="compiler-error-c3654"></a>Derleyici Hatası C3654
+# <a name="compiler-error-c3654"></a>Derleyici hatası C3654
 
-'metin': açık geçersiz kılma işleminde sözdizimi hatası
+' text ': açık geçersiz kılma içinde sözdizimi hatası
 
-Beklenmeyen bir dize içinde açık bir geçersiz kılma oluştu. Daha fazla bilgi için [açık geçersiz kılmalar](../../extensions/explicit-overrides-cpp-component-extensions.md).
+Açık bir geçersiz kılmada beklenmeyen bir dize vardı. Daha fazla bilgi için bkz. [Açık geçersiz kılmalar](../../extensions/explicit-overrides-cpp-component-extensions.md).
 
-Aşağıdaki örnek, C3654 oluşturur:
+Aşağıdaki örnek C3654 oluşturur:
 
-```
+```cpp
 // C3654.cpp
 // compile with: /clr /c
 public ref struct B {

@@ -1,29 +1,29 @@
 ---
-title: Derleyici Hatası C3379
+title: Derleyici hatası C3379
 ms.date: 11/04/2016
 f1_keywords:
 - C3379
 helpviewer_keywords:
 - C3379
 ms.assetid: a66c2c4e-091c-4426-9cde-7c4cfb2ffce1
-ms.openlocfilehash: 5bf4e2e42b4534d47a2a7d3c9a838c404a99ba68
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9d99214f3ad7e7db1edc215d94c98e9cf9ec4ca2
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62328886"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74742905"
 ---
-# <a name="compiler-error-c3379"></a>Derleyici Hatası C3379
+# <a name="compiler-error-c3379"></a>Derleyici hatası C3379
 
-'class': iç içe geçmiş sınıf bildiriminin bir parçası bir derleme erişim belirticisi olamaz
+' class ': iç içe bir sınıfın bildiriminin bir parçası olarak bir derleme erişim belirticisi olamaz
 
-Sınıf veya yapı, gibi bir yönetilen türü uygulandığında [genel](../../cpp/public-cpp.md) ve [özel](../../cpp/private-cpp.md) anahtar sözcükleri sınıfı derleme meta verileri kullanıma sunulacak olup olmadığını gösterir. `public` veya `private` derleme erişimi kapsayan sınıfın devralacak bir iç içe geçmiş sınıf uygulanamaz.
+Sınıf veya yapı gibi yönetilen bir türe uygulandığında, [ortak](../../cpp/public-cpp.md) ve [özel](../../cpp/private-cpp.md) anahtar sözcükler, sınıfın derleme meta verileri aracılığıyla gösterilip gösterilmeyeceğini belirtir. `public` veya `private`, kapsayan sınıfa ait derleme erişimini devralacak olan iç içe bir sınıfa uygulanamaz.
 
-İle kullanıldığında [/CLR](../../build/reference/clr-common-language-runtime-compilation.md), `ref` ve `value` anahtar sözcükleri belirten bir sınıf yönetilir (bkz [sınıfları ve yapıları](../../extensions/classes-and-structs-cpp-component-extensions.md)).
+[/Clr](../../build/reference/clr-common-language-runtime-compilation.md)ile kullanıldığında, `ref` ve `value` anahtar sözcükleri bir sınıfın yönetildiğini belirtir (bkz. [sınıflar ve yapılar](../../extensions/classes-and-structs-cpp-component-extensions.md)).
 
-Aşağıdaki örnek, C3379 oluşturur:
+Aşağıdaki örnek C3379 oluşturur:
 
-```
+```cpp
 // C3379a.cpp
 // compile with: /clr
 using namespace System;

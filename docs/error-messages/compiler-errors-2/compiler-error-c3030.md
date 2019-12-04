@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3030
+title: Derleyici hatası C3030
 ms.date: 11/04/2016
 f1_keywords:
 - C3030
 helpviewer_keywords:
 - C3030
 ms.assetid: de92fd7e-29ba-46e8-b43b-f4b985cd74de
-ms.openlocfilehash: 31ae3f55cd0bf7a15dbea2cf941b00dc048d825d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c9f22c01eb60ead22027cad2f59d9d2e95e01521
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62375541"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74757325"
 ---
-# <a name="compiler-error-c3030"></a>Derleyici Hatası C3030
+# <a name="compiler-error-c3030"></a>Derleyici hatası C3030
 
-'var': 'reduction' yan tümcesi/yönergesi değişkeninde başvuru türüne sahip olamaz
+' var ': ' azaltma ' yan tümcesindeki/yönergesinin değişkeninin başvuru türü olamaz
 
-Reduction yan gibi belirli yan tümcesi için değer parametreleri yalnızca geçirebilirsiniz.
+Yalnızca değer parametrelerini, azaltma yan tümcesi gibi belirli yan tümcelerde geçirebilirsiniz.
 
-Aşağıdaki örnek, C3030 oluşturur:
+Aşağıdaki örnek C3030 oluşturur:
 
-```
+```cpp
 // C3030.cpp
 // compile with: /openmp /link vcomps.lib
 #include "omp.h"

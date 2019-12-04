@@ -1,29 +1,29 @@
 ---
-title: Derleyici Hatası C2079
+title: Derleyici hatası C2079
 ms.date: 11/04/2016
 f1_keywords:
 - C2079
 helpviewer_keywords:
 - C2079
 ms.assetid: ca58d6d5-eccd-40b7-ba14-c003223c5bc7
-ms.openlocfilehash: 68435610680e3b21415a1d9439a8133fd1e2557f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ea158d8dada013f6b90d0fbe1e7502665c1c24da
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62391965"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74757728"
 ---
-# <a name="compiler-error-c2079"></a>Derleyici Hatası C2079
+# <a name="compiler-error-c2079"></a>Derleyici hatası C2079
 
-'identifier' tanımsız sınıf/yapı/birleşim 'name' kullanır.
+' Identifier ' tanımlanmamış Class/struct/Union ' name ' kullanır
 
-Belirtilen bir tanımsız sınıf, yapı veya birleşim tanımlayıcısıdır.
+Belirtilen tanımlayıcı tanımlanmamış bir sınıf, yapı veya birleşim.
 
-Bu hata anonim birleşim başlatarak neden olabilir.
+Bu hata, anonim bir birleşim başlatılmasına neden olabilir.
 
-Aşağıdaki örnek, C2079 oluşturur:
+Aşağıdaki örnek C2079 oluşturur:
 
-```
+```cpp
 // C2079.cpp
 // compile with: /EHsc
 #include <iostream>
@@ -34,7 +34,7 @@ int main() {
 
 Olası çözüm:
 
-```
+```cpp
 // C2079b.cpp
 // compile with: /EHsc
 #include <fstream>
@@ -43,9 +43,9 @@ int main( ) {
 }
 ```
 
-Yığında olan ileri dönük bildirimi kapsam içinde olan bir türü bir nesneyi bildirmek çalışırsanız C2079 da meydana gelebilir.
+C2079, ileri bildirimi yalnızca kapsam içinde olan bir türün yığınında bir nesne bildirmeye çalışırsanız da oluşabilir.
 
-```
+```cpp
 // C2079c.cpp
 class A;
 
@@ -58,7 +58,7 @@ class A {};
 
 Olası çözüm:
 
-```
+```cpp
 // C2079d.cpp
 // compile with: /c
 class A;

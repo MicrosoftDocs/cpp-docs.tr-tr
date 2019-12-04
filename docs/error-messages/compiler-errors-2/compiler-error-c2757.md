@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2757
+title: Derleyici hatası C2757
 ms.date: 11/04/2016
 f1_keywords:
 - C2757
 helpviewer_keywords:
 - C2757
 ms.assetid: 421f102f-8a32-4d47-a109-811ddf2c909d
-ms.openlocfilehash: 98b43a2f3c0888fc385226cd80889b9911c84690
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a9f4661495e0fa5219a517b6f6ca410323a77269
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62227922"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74759535"
 ---
-# <a name="compiler-error-c2757"></a>Derleyici Hatası C2757
+# <a name="compiler-error-c2757"></a>Derleyici hatası C2757
 
-'symbol': Bu ada sahip bir simge zaten var ve bu nedenle bu adı bir ad alanı adı olarak kullanılamaz
+' symbol ': Bu ada sahip bir simge zaten var ve bu ad bir ad alanı adı olarak kullanılamaz
 
-Başvurulan bir derlemede bir ad alanı tanımlayıcısı zaten kullanıldığından geçerli derlemede kullanılan bir simge.
+Geçerli derlemede ad alanı tanımlayıcısı olarak kullanılan bir sembol zaten başvurulan bir derlemede kullanılıyor.
 
-Aşağıdaki örnek, C2757 oluşturur:
+Aşağıdaki örnek C2757 oluşturur:
 
-```
+```cpp
 // C2757a.cpp
 // compile with: /clr /LD
 public ref class Nes {};
@@ -29,7 +29,7 @@ public ref class Nes {};
 
 Ardından,
 
-```
+```cpp
 // C2757b.cpp
 // compile with: /clr /c
 #using <C2757a.dll>

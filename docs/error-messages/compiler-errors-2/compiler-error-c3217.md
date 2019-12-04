@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3217
+title: Derleyici hatası C3217
 ms.date: 11/04/2016
 f1_keywords:
 - C3217
 helpviewer_keywords:
 - C3217
 ms.assetid: 99070417-c23a-4d82-bdd2-04be1a07adea
-ms.openlocfilehash: bcb63c7025f0addda546379947e2e1f5c3afc545
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: cb837a42841b2695941d4cd6122d186665d2d7e2
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62311663"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74754595"
 ---
-# <a name="compiler-error-c3217"></a>Derleyici Hatası C3217
+# <a name="compiler-error-c3217"></a>Derleyici hatası C3217
 
-'param': Bu bildirimde genel parametre kısıtlanamaz
+' param ': Bu bildirimde genel parametre kısıtlanamaz
 
-Kısıtlama olgu biçimlendirildi; genel parametre kısıtlama ile genel bir sınıf şablonu parametre kabul etmesi gerekir.
+Bir kısıtlama hatalı biçimlendirilmiş; kısıtlama genel parametresi, genel sınıf şablonu parametresiyle kabul etmelidir.
 
-Aşağıdaki örnek, C3217 oluşturur:
+Aşağıdaki örnek C3217 oluşturur:
 
-```
+```cpp
 // C3217.cpp
 // compile with: /clr
 interface struct A {};
@@ -34,9 +34,9 @@ ref class C {
 };
 ```
 
-Aşağıdaki örnek, olası çözümü göstermektedir:
+Aşağıdaki örnekte olası bir çözüm gösterilmektedir:
 
-```
+```cpp
 // C3217b.cpp
 // compile with: /clr /c
 interface struct A {};

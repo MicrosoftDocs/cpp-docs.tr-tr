@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2369
+title: Derleyici hatası C2369
 ms.date: 11/04/2016
 f1_keywords:
 - C2369
 helpviewer_keywords:
 - C2369
 ms.assetid: 2a3933f6-2313-40ff-800f-921b296fdbbf
-ms.openlocfilehash: 8abb9a7b8d15fa2dd9999612551a0d0da1e34e30
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ed7bcbf24ec7ef88ec12d83af4f08b12d56b347b
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62230359"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74745765"
 ---
-# <a name="compiler-error-c2369"></a>Derleyici Hatası C2369
+# <a name="compiler-error-c2369"></a>Derleyici hatası C2369
 
-'array': yeniden tanımlama; indisler farklı
+' Array ': yeniden tanımlama; farklı alt simgeler
 
-Dizi ile farklı bir alt simge zaten bildirildi.
+Dizi, farklı bir alt simge ile zaten tanımlanmış.
 
-Aşağıdaki örnek, C2369 oluşturur:
+Aşağıdaki örnek C2369 oluşturur:
 
-```
+```cpp
 // C2369.cpp
 // compile with: /c
 int a[10];

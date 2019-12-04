@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2311
+title: Derleyici hatası C2311
 ms.date: 11/04/2016
 f1_keywords:
 - C2311
 helpviewer_keywords:
 - C2311
 ms.assetid: 1aff9bd5-ed0b-4db6-bbc0-01ac89850cf2
-ms.openlocfilehash: f4eff6f88a247dd17a2c9399b9009717f8fb8e62
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e72ff7325e293697b0117e527b0d9edd55840481
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62303053"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74748183"
 ---
-# <a name="compiler-error-c2311"></a>Derleyici Hatası C2311
+# <a name="compiler-error-c2311"></a>Derleyici hatası C2311
 
-'özel durum': satır numarasında '...' tarafından yakalandı
+' Exception ': '... ' tarafından yakalandı satır numarası
 
-Üç nokta (...)'için catch işleyicisi bir throw son işleyicisi olmalıdır.
+Üç nokta (...) için catch işleyicisi, bir throw için son işleyici olmalıdır.
 
-Aşağıdaki örnek, C2311 oluşturur:
+Aşağıdaki örnek C2311 oluşturur:
 
-```
+```cpp
 // C2311.cpp
 // compile with: /EHsc
 #include <eh.h>

@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3274
+title: Derleyici hatası C3274
 ms.date: 11/04/2016
 f1_keywords:
 - C3274
 helpviewer_keywords:
 - C3274
 ms.assetid: 1f03f18e-b569-48eb-9249-11c70122a305
-ms.openlocfilehash: a44a7d471e7e079ee43afa8bf58fd590be2f4bf8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d28deea0729a091ce0829187323a0d5a2d184944
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62382222"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74753828"
 ---
-# <a name="compiler-error-c3274"></a>Derleyici Hatası C3274
+# <a name="compiler-error-c3274"></a>Derleyici hatası C3274
 
-__finally/finally olmadan eşleşen deneyin
+__finally/finally ile eşleşmeksizin dene
 
-A [__finally](../../cpp/try-finally-statement.md) veya [son](../../dotnet/finally.md) deyimi, bir eşleştirme olmadan bulundu `try`. Bu sorunu çözmek için ya da silme `__finally` deyimi veya ekleme bir `try` bildirimi `__finally`.
+[__Finally](../../cpp/try-finally-statement.md) veya [finally](../../dotnet/finally.md) ifadesiyle eşleşen bir `try`yok. Bunu çözmek için `__finally` ifadesini silin veya `__finally`için bir `try` açıklaması ekleyin.
 
-Aşağıdaki örnek, C3274 oluşturur:
+Aşağıdaki örnek C3274 oluşturur:
 
-```
+```cpp
 // C3274.cpp
 // compile with: /clr
 // C3274 expected

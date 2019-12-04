@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3230
+title: Derleyici hatası C3230
 ms.date: 11/04/2016
 f1_keywords:
 - C3230
 helpviewer_keywords:
 - C3230
 ms.assetid: 5ec53f25-59f6-4801-81e7-7b68bf04994d
-ms.openlocfilehash: a4d5edeb5898a57b99839b7e044f909cea1ec199
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 69ea279ac5e11c03f366711484ba0c250fc50225
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62173892"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74743321"
 ---
-# <a name="compiler-error-c3230"></a>Derleyici Hatası C3230
+# <a name="compiler-error-c3230"></a>Derleyici hatası C3230
 
-'function': şablon türü bağımsız değişkeni için 'şablon' genel tür parametresi içeremez: 'param'
+' function ': ' Template ' için şablon türü bağımsız değişkeni genel bir tür parametresi içeremez: ' param '
 
-Şablon, derleme zamanında örneği oluşturulur, ancak genel türler çalışma zamanında örneği oluşturulur. Bu nedenle, genel tür son olarak bilinen, çalışma zamanında şablonu başlatılamaz çünkü şablon çağırabilirsiniz genel kod üretmek mümkün değildir.
+Şablonlar derleme zamanında oluşturulur, ancak genel türler çalışma zamanında oluşturulur. Bu nedenle, genel tür son olarak bilindiğinde şablon çalışma zamanında örneklenemez, ancak şablonu çağırabildiği genel kodu oluşturmak mümkün değildir.
 
-Aşağıdaki örnek, C3230 oluşturur:
+Aşağıdaki örnek C3230 oluşturur:
 
-```
+```cpp
 // C3230.cpp
 // compile with: /clr /LD
 template <class S>

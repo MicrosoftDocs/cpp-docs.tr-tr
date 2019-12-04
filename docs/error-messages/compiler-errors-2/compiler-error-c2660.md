@@ -1,35 +1,35 @@
 ---
-title: Derleyici Hatası C2660
+title: Derleyici hatası C2660
 ms.date: 11/04/2016
 f1_keywords:
 - C2660
 helpviewer_keywords:
 - C2660
 ms.assetid: 2e01a1db-4f00-4df6-a04d-cb6f70a6922b
-ms.openlocfilehash: 3f236f18faa92df660ed677df293373fe9f0800c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: febeb75cbde6738bd9079b7bd86f88c521c29e40
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62360378"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74756064"
 ---
-# <a name="compiler-error-c2660"></a>Derleyici Hatası C2660
+# <a name="compiler-error-c2660"></a>Derleyici hatası C2660
 
-'function': işlev numarası parametreler almaz
+' function ': işlev sayı parametresi almaz
 
-İşlev, yanlış sayıda parametre ile çağrılır.
+İşlev yanlış sayıda parametre ile çağırılır.
 
-Aynı ada sahip bir MFC üye işlevi yerine Windows API işlevi yanlışlıkla çağırırsanız C2660 ortaya çıkabilir. Bu sorunu çözmek için:
+C2660, aynı ada sahip bir MFC üye işlevi yerine yanlışlıkla bir Windows API işlevini çağırırsanız oluşabilir. Bu sorunu çözmek için:
 
-- Üye işlev çağrısı biçimine uygun olması için işlev çağrısı yapın.
+- İşlev çağrısını üye işlev çağrısının biçimiyle uyumlu olacak şekilde ayarlayın.
 
-- Kapsam çözümleme işlecini kullanın (`::`) işlev adı genel ad alanında aranacak derleyici söylemek için.
+- Derleyiciye, genel ad alanında işlev adını arayacaklarını söylemek için kapsam çözümleme işlecini (`::`) kullanın.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C2660 oluşturur.
+Aşağıdaki örnek C2660 oluşturur.
 
-```
+```cpp
 // C2660.cpp
 void func( int, int ) {}
 
@@ -41,9 +41,9 @@ int main() {
 
 ## <a name="example"></a>Örnek
 
-Yönetilen bir tür olan Dispose yöntemini doğrudan çağırmak çalışırsanız C2660 da meydana gelebilir. Daha fazla bilgi için [yok ediciler ve sonlandırıcılar](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers). Aşağıdaki örnek, C2660 oluşturur.
+C2660, yönetilen bir türün Dispose yöntemini doğrudan çağırmayı denerseniz da oluşabilir. Daha fazla bilgi için bkz. yok [ediciler ve sonlandırıcılar](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers). Aşağıdaki örnek C2660 oluşturur.
 
-```
+```cpp
 // C2660_a.cpp
 // compile with: /clr
 using namespace System;
@@ -63,9 +63,9 @@ int main() {
 
 ## <a name="example"></a>Örnek
 
-Türetilmiş bir sınıf bir işlev gizliyor C2660 meydana gelir.
+Türetilmiş bir sınıf bir işlevi gizlediğini C2660 olur.
 
-```
+```cpp
 // C2660b.cpp
 // C2660 expected
 #include <stdio.h>
@@ -94,9 +94,9 @@ int main() {
 
 ## <a name="example"></a>Örnek
 
-Dizini oluşturulmuş özelliğe yanlış çağırma C2660 oluşabilir.
+Dizinli bir özelliği yanlış çağırırsanız, C2660 oluşabilir.
 
-```
+```cpp
 // C2660c.cpp
 // compile with: /clr
 ref class X {
@@ -119,9 +119,9 @@ int main() {
 
 ## <a name="example"></a>Örnek
 
-Dizini oluşturulmuş özelliğe yanlış çağırma C2660 oluşabilir.
+Dizinli bir özelliği yanlış çağırırsanız, C2660 oluşabilir.
 
-```
+```cpp
 // C2660d.cpp
 // compile with: /clr
 ref class A{
@@ -142,9 +142,9 @@ int main() {
 
 ## <a name="example"></a>Örnek
 
-New işleci bir şablon sınıfı tanımlarsanız ancak yeni işleç kapsayan türdeki dışında türü olan bir nesne oluşturur, C2660 ortaya çıkabilir.
+Bir şablon sınıfında yeni bir işleç tanımlarsanız, ancak New işlecinin türü kapsayan türden farklı olan bir nesne oluşturduğunda, C2660 meydana gelebilir.
 
-```
+```cpp
 // C2660e.cpp
 // compile with: /c
 #include <malloc.h>

@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3714
+title: Derleyici hatası C3714
 ms.date: 11/04/2016
 f1_keywords:
 - C3714
 helpviewer_keywords:
 - C3714
 ms.assetid: 17718f75-5a37-4e42-912b-487e91008a95
-ms.openlocfilehash: 9bfdf8b26ab599ef1a28483af7ebc28f0dbc1912
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1078bf8a97f6cb7afeaf7046489fe262c0bb0199
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62328347"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74753334"
 ---
-# <a name="compiler-error-c3714"></a>Derleyici Hatası C3714
+# <a name="compiler-error-c3714"></a>Derleyici hatası C3714
 
-'method': olay işleyicisi yöntemi, aynı çağrı kuralına kaynağı 'method' sahip olmalıdır
+' Method ': olay işleyicisi yöntemi kaynak ' Yöntem ' ile aynı çağırma kuralına sahip olmalıdır
 
-Aynı çağrı kuralına kaynak olay yöntemi olarak kullanmayan olay işleyicisi yöntemi tanımladığınız. Bu hatayı düzeltmek için olay işleyicisi yöntemi kaynak olay yöntemi olarak aynı çağırma kuralları verin. Örneğin, aşağıdaki kod, çağırma kuralları olun `handler1` ve `event1` eşleşen ([__cdecl](../../cpp/cdecl.md) veya [__stdcall](../../cpp/stdcall.md) veya diğerleri). Kaldırma kuralı anahtar sözcükleri hem bildirimlerinden farklıdır çağırma ayrıca sorunu ve neden `event1` ve `handler1` varsayılan [thiscall](../../cpp/thiscall.md) çağırma kuralı. Bkz: [çağırma kuralları](../../cpp/calling-conventions.md) daha fazla bilgi için.
+Kaynak olay yöntemiyle aynı çağırma kuralını kullanmayan bir olay işleyicisi yöntemi tanımladınız. Bu hatayı onarmak için, olay işleyicisi yöntemine kaynak olay yöntemi ile aynı çağırma kuralları verin. Örneğin, aşağıdaki kodda `handler1` ve `event1` eşleşmesi ([__cdecl](../../cpp/cdecl.md) ya da [__stdcall](../../cpp/stdcall.md) veya diğerleri) için çağırma kuralları oluşturun. Her iki bildirime çağrı kuralı anahtar sözcüklerini kaldırmak de sorunu çözerek `event1` ve `handler1` varsayılan olarak [thiscall](../../cpp/thiscall.md) çağırma kuralına neden olur. Daha fazla bilgi için bkz. [çağırma kuralları](../../cpp/calling-conventions.md) .
 
-Aşağıdaki örnek, C3714 oluşturur:
+Aşağıdaki örnek C3714 oluşturur:
 
-```
+```cpp
 // C3714.cpp
 // compile with: /c
 // processor: x86

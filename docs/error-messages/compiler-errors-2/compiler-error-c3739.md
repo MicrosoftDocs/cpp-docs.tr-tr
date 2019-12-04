@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3739
+title: Derleyici hatası C3739
 ms.date: 11/04/2016
 f1_keywords:
 - C3739
 helpviewer_keywords:
 - C3739
 ms.assetid: acffe894-08b8-4bf2-9249-9501e6e2bad3
-ms.openlocfilehash: 34f035c089b183670e87a23eb62f995b2af23c9b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 48d0fef86908f3ba5a547417d0625febc5226454
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62208675"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74752710"
 ---
-# <a name="compiler-error-c3739"></a>Derleyici Hatası C3739
+# <a name="compiler-error-c3739"></a>Derleyici hatası C3739
 
-'class': sözdizimi yalnızca event_receiver'ın 'layout_dependent' parametresi true olduğunda desteklenir
+' class ': sözdizimi yalnızca event_receiver ' layout_dependent ' parametresi true olduğunda desteklenir
 
-Olayların bir arabirimin tamamı kanca denedi ancak `layout_dependent` üzerinde [event_receiver](../../windows/event-receiver.md) özniteliği true değil; bir kerede tek bir olay bağlama.
+Tüm olay arabirimini yapıştırmaya çalıştınız, ancak [event_receiver](../../windows/event-receiver.md) özniteliğinde `layout_dependent` true değil; tek seferde tek bir olay yapmanız gerekir.
 
-Aşağıdaki örnek, C3739 oluşturur:
+Aşağıdaki örnek C3739 oluşturur:
 
-```
+```cpp
 // C3739.cpp
 struct A
 {

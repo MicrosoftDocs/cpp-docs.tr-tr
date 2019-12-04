@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3743
+title: Derleyici hatası C3743
 ms.date: 11/04/2016
 f1_keywords:
 - C3743
 helpviewer_keywords:
 - C3743
 ms.assetid: 7ca9a76e-7b60-46d1-ab8b-18600cf1a306
-ms.openlocfilehash: 137913e0c6909712cbb6745666112d315925ab0c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c0e2082dc87c6236aa11dd3094d056b0024dfc2f
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62226862"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74752476"
 ---
-# <a name="compiler-error-c3743"></a>Derleyici Hatası C3743
+# <a name="compiler-error-c3743"></a>Derleyici hatası C3743
 
-yalnızca kanca/bir arabirimin tamamı event_receiver'ın 'layout_dependent' parametresi true olduğunda tutulabilir
+event_receiver ' layout_dependent ' parametresi true olduğunda, yalnızca bir arabirimin tamamını geri alabilir/kaldırır
 
-[__Unhook](../../cpp/unhook.md) geçirilen değere göre gereken parametre sayısı olarak işlevi değişir `layout_dependent` parametresinde [event_receiver](../../windows/event-receiver.md) sınıfı.
+[__Unhook](../../cpp/unhook.md) işlevi, [event_receiver](../../windows/event-receiver.md) sınıfındaki `layout_dependent` parametresine geçirilen değere göre gereken parametre sayısını gösterir.
 
-Aşağıdaki örnek, C3743 oluşturur:
+Aşağıdaki örnek C3743 oluşturur:
 
-```
+```cpp
 // C3743.cpp
 #define _ATL_ATTRIBUTES 1
 #include <atlbase.h>

@@ -1,29 +1,29 @@
 ---
-title: Derleyici Hatası C2688
+title: Derleyici hatası C2688
 ms.date: 11/04/2016
 f1_keywords:
 - C2688
 helpviewer_keywords:
 - C2688
 ms.assetid: 168c9e9d-8f65-4664-af86-db71d3e6ee46
-ms.openlocfilehash: 5355abc603726eb1bacb7a22fa1095bf2d81c538
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: cc871467e1e3fb23edc6231c3adb182f5e26c0d8
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62266289"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74760250"
 ---
-# <a name="compiler-error-c2688"></a>Derleyici Hatası C2688
+# <a name="compiler-error-c2688"></a>Derleyici hatası C2688
 
-'C2::fgrv': birden çok içeren kovaryant dönüşler veya sanal devralma VARARG işlevleri için desteklenmiyor
+' C2:: fgrv ': birden fazla veya sanal devralmayla birlikte değişken dönüşler vararg işlevleri için desteklenmez
 
-Bir işlevin değişken bağımsız değişkenler içeriyorsa, birlikte değişken dönüş türleri Visual C++'da desteklenmez.
+Bir işlev değişken bağımsız değişkenler içerdiğinde, birlikte değişken C++ dönüş türleri görselde desteklenmez.
 
-Bu hatayı gidermek için böylece bunlar görüntülenmez değişken bağımsız değişkenler kullanın veya dönüş değerlerini tüm sanal işlevler için aynı olun işlevlerinizi tanımlayın.
+Bu hatayı çözmek için işlevlerinizi, değişken bağımsız değişkenleri kullanmadan veya dönüş değerlerini tüm sanal işlevler için aynı olacak şekilde tanımlayın.
 
-Aşağıdaki örnek, C2688 oluşturur:
+Aşağıdaki örnek C2688 oluşturur:
 
-```
+```cpp
 // C2688.cpp
 struct G1 {};
 struct G2 {};

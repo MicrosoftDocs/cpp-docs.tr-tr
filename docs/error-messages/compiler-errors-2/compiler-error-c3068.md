@@ -1,41 +1,41 @@
 ---
-title: Derleyici Hatası C3068
+title: Derleyici hatası C3068
 ms.date: 11/04/2016
 f1_keywords:
 - C3068
 helpviewer_keywords:
 - C3068
 ms.assetid: 613e3447-b4a8-4268-a661-297bed63ccdf
-ms.openlocfilehash: 4790c9caafd28722f3631104cfe5cfc762cf6426
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9e20333a4fc18219f7f2514f3aefe73b81f284a6
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62406892"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74759496"
 ---
-# <a name="compiler-error-c3068"></a>Derleyici Hatası C3068
+# <a name="compiler-error-c3068"></a>Derleyici hatası C3068
 
-'function': 'naked' işlev C++ özel durumu oluştuğunda geriye doğru izleme gerektirecek nesneler içeremez
+' function ': ' Naked ' işlevi bir C++ özel durum oluştuysa geriye doğru izleme gerektirecek nesneler içeremez
 
-Derleyicinin yığın üzerinde geriye doğru izleme gerçekleştiremedi bir [naked](../../cpp/naked-cpp.md) geçici bir nesne işlevi ve C++ özel durum işleme oluşturulduğundan, bir özel durum belirtti işlevi ([/ehsc](../../build/reference/eh-exception-handling-model.md)) belirtildi.
+Derleyici, işlevde geçici bir nesne oluşturulduğu ve C++ özel durum işleme ([/EHsc](../../build/reference/eh-exception-handling-model.md)) belirtildiği için bir özel durum oluşturan bir [çıplak](../../cpp/naked-cpp.md) işlevde yığın geri sarma işlemi yapamadı.
 
-Bu hatayı gidermek için en az aşağıdakilerden birini yapın:
+Bu hatayı çözmek için aşağıdakilerden en az birini yapın:
 
-- / Ehsc ile derlenmiyor.
+- /EHsc. ile derleme kullanmayın.
 
-- İşlev olarak işaretlemeyin `naked`.
+- İşlevi `naked`olarak işaretlemeyin.
 
-- Geçici bir nesne işlevinde oluşturmayın.
+- İşlevde geçici bir nesne oluşturmayın.
 
-Geçici bir nesne yığını üzerinde işlev bir özel durum oluşturursa ve C++ özel durum işleme etkinse, bir işlev oluşturur, derleyici bir özel durum oluşturulursa yığını temizler.
+Bir işlev yığında geçici bir nesne oluşturursa, işlev bir özel durum oluşturursa ve C++ özel durum işleme etkinse, bir özel durum oluşturulursa, derleyici yığını temizler.
 
-Bir özel durum, derleyici oluşturulan kod, giriş adlı ve epilog ve, çıplak bir işlev mevcut olmayan bir işlev için yürütülür.
+Bir özel durum oluştuğunda, giriş ve bitiş olarak adlandırılan ve çıplak işlevde bulunmayan derleyici tarafından oluşturulan kod, bir işlev için yürütülür.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C3068 oluşturur:
+Aşağıdaki örnek C3068 oluşturur:
 
-```
+```cpp
 // C3068.cpp
 // compile with: /EHsc
 // processor: x86

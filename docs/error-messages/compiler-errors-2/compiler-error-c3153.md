@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3153
+title: Derleyici hatası C3153
 ms.date: 11/04/2016
 f1_keywords:
 - C3153
 helpviewer_keywords:
 - C3153
 ms.assetid: d775d97e-2480-484f-81f1-88406b10f947
-ms.openlocfilehash: 62b9e7499c52153183f14eae47c488da6a59b458
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 54fa7de8eb3df8d4b3695544c5285cc202275492
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62374878"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74745926"
 ---
-# <a name="compiler-error-c3153"></a>Derleyici Hatası C3153
+# <a name="compiler-error-c3153"></a>Derleyici hatası C3153
 
-'interface': bir arabirimin örneğini oluşturamazsınız
+' interface ': bir arabirimin örneğini oluşturamazsınız
 
-Bir arabirim örneği oluşturulamıyor. Bir arabirim üyelerinin kullanmak için bir arabirim sınıfından türetilir, arabirim üyeleri uygulamak ve üyeleri'ni kullanır.
+Arabirim örneği oluşturulamıyor. Bir arabirimin üyelerini kullanmak için arabiriminden bir sınıf türetirsiniz, arabirim üyelerini uygulayın ve ardından üyeleri kullanın.
 
-Aşağıdaki örnek, C3153 oluşturur:
+Aşağıdaki örnek C3153 oluşturur:
 
-```
+```cpp
 // C3153.cpp
 // compile with: /clr
 interface class A {

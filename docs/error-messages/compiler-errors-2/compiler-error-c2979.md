@@ -1,29 +1,29 @@
 ---
-title: Derleyici Hatası C2979
+title: Derleyici hatası C2979
 ms.date: 11/04/2016
 f1_keywords:
 - C2979
 helpviewer_keywords:
 - C2979
 ms.assetid: 98bd9043-ec44-451e-a482-3a8e35fc7464
-ms.openlocfilehash: e9b0af0d17ef57f19e051165b16632e3180159cd
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 71953b360739765810fa047d65be9828d7d483da
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62395319"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74751565"
 ---
-# <a name="compiler-error-c2979"></a>Derleyici Hatası C2979
+# <a name="compiler-error-c2979"></a>Derleyici hatası C2979
 
-Açık uzmanlık'nda genel türler için desteklenmez.
+genel türlerde açık uzmanlık desteklenmez
 
-Genel sınıf yanlış bildirildi.  Bkz: [genel türler](../../extensions/generics-cpp-component-extensions.md) daha fazla bilgi için.
+Genel bir sınıf yanlış olarak bildirildi.  Daha fazla bilgi için bkz. [Genel türler](../../extensions/generics-cpp-component-extensions.md) .
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C2979 oluşturur.
+Aşağıdaki örnek C2979 oluşturur.
 
-```
+```cpp
 // C2979.cpp
 // compile with: /clr /c
 generic <>

@@ -1,33 +1,33 @@
 ---
-title: Derleyici Hatası C3530
+title: Derleyici hatası C3530
 ms.date: 11/04/2016
 f1_keywords:
 - C3530
 helpviewer_keywords:
 - C3530
 ms.assetid: 21be81ce-b699-4c74-81bc-80a0c34d2d5a
-ms.openlocfilehash: dd4368faaf323a75116128ec3a47666260436fce
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3766eaa83457ba6cffaf8b1599983a065772911c
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62397425"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74750149"
 ---
-# <a name="compiler-error-c3530"></a>Derleyici Hatası C3530
+# <a name="compiler-error-c3530"></a>Derleyici hatası C3530
 
-'auto' herhangi başka bir tür tanımlayıcısı ile birleştirilemez
+' Auto ' diğer tür tanımlayıcılarla birleştirilemez
 
-Bir tür tanımlayıcısı ile kullanılan `auto` anahtar sözcüğü.
+Tür belirleyicisi `auto` anahtar sözcüğüyle birlikte kullanılır.
 
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için
 
-1. Bir tür belirleyiciye kullanan bir Değişken bildiriminde kullanmayın `auto` anahtar sözcüğü.
+1. `auto` anahtar sözcüğünü kullanan bir değişken bildiriminde tür belirleyicisi kullanmayın.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, çünkü C3530 verir değişkeni `x` ikisiyle bildirilen `auto` anahtar sözcüğü ile tür `int`, ve örnek ile derlenmiş **/Zc:auto**.
+Aşağıdaki örnek, C3530 verir, çünkü `x` değişkeni hem `auto` anahtar sözcüğüyle hem de `int`yazın ve örnek **/Zc: Auto**ile derlenmiştir.
 
-```
+```cpp
 // C3530.cpp
 // Compile with /Zc:auto
 int main()

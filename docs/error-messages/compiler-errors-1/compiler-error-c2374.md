@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2374
+title: Derleyici hatası C2374
 ms.date: 11/04/2016
 f1_keywords:
 - C2374
 helpviewer_keywords:
 - C2374
 ms.assetid: 73b51965-e91c-4e21-9732-f71c1449d22e
-ms.openlocfilehash: 44f2d9d8c80af2111e7c63d976ef39cfa4809e48
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7b3dbcd4f19d594082d8b961c8dbc92c393699a0
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62338811"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74745544"
 ---
-# <a name="compiler-error-c2374"></a>Derleyici Hatası C2374
+# <a name="compiler-error-c2374"></a>Derleyici hatası C2374
 
-'identifier': yeniden tanımlama; birden fazla başlatma
+' tanımlayıcı ': yeniden tanımlama; çoklu başlatma
 
-Tanımlayıcısı birden çok kez başlatıldı.
+Tanımlayıcı birden çok kez başlatıldı.
 
-Aşağıdaki örnek, C2374 oluşturur:
+Aşağıdaki örnek C2374 oluşturur:
 
-```
+```cpp
 // C2374.cpp
 // compile with: /c
 int i = 0;

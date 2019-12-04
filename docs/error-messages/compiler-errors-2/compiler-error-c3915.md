@@ -1,31 +1,31 @@
 ---
-title: Derleyici Hatası C3915
+title: Derleyici hatası C3915
 ms.date: 11/04/2016
 f1_keywords:
 - C3915
 helpviewer_keywords:
 - C3915
 ms.assetid: 2b0a5e5f-3aec-4a4b-9157-233031817084
-ms.openlocfilehash: 85654e266c3157ab145e7ac7aab454a0d4f6c102
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 26fdcd3b7989d9030249133e6dc1d277aa1a9f44
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62406450"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74756285"
 ---
-# <a name="compiler-error-c3915"></a>Derleyici Hatası C3915
+# <a name="compiler-error-c3915"></a>Derleyici hatası C3915
 
-'type' hiçbir varsayılan dizini oluşturulan özelliğe (sınıf dizini oluşturucu) vardır.
+' Type ' için Default dizinli özelliği yok (sınıf Dizin Oluşturucu)
 
-Bir tür bir varsayılan, dizinlenmiş özellik yok.
+Bir türün varsayılan, dizinli bir özelliği yok.
 
-Daha fazla bilgi için [özelliği](../../extensions/property-cpp-component-extensions.md).
+Daha fazla bilgi için bkz. [özellik](../../extensions/property-cpp-component-extensions.md).
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C3915 oluşturur.
+Aşağıdaki örnek C3915 oluşturur.
 
-```
+```cpp
 // C3915.cpp
 // compile with: /clr
 ref class X {
@@ -48,11 +48,11 @@ int main() {
 
 ## <a name="example"></a>Örnek
 
-C3915 de burada bu tanımlandı ile aynı derlenecek bir varsayılan dizin oluşturucusunu kullanma çalışırsanız da gerçekleşebilir <xref:System.Reflection.DefaultMemberAttribute>.
+C3915, aynı compiland içinde <xref:System.Reflection.DefaultMemberAttribute>ile tanımlandığı yerde varsayılan bir dizin oluşturucuyu kullanmaya çalışırsanız da oluşabilir.
 
-Aşağıdaki örnek, C3915 oluşturur.
+Aşağıdaki örnek C3915 oluşturur.
 
-```
+```cpp
 // C3915_b.cpp
 // compile with: /clr
 using namespace System;

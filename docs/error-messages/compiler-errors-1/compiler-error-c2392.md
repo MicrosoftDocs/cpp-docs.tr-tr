@@ -1,29 +1,29 @@
 ---
-title: Derleyici Hatası C2392
+title: Derleyici hatası C2392
 ms.date: 11/04/2016
 f1_keywords:
 - C2392
 helpviewer_keywords:
 - C2392
 ms.assetid: 98ced473-6383-46ed-b79c-21857d65dcb2
-ms.openlocfilehash: 5977d9bf41d55ef6db8409e0187153fdbf91149e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 15fa4a19cdd791ddb3636f30a636cc084bdc4a5f
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62393603"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74745011"
 ---
-# <a name="compiler-error-c2392"></a>Derleyici Hatası C2392
+# <a name="compiler-error-c2392"></a>Derleyici hatası C2392
 
-'yöntem1': yönetilen kovaryant türleri desteklenmez veya WinRTtypes, aksi takdirde 'method2' geçersiz
+' Method1 ': birlikte değişken dönüş türleri yönetilen veya Wınrttypes içinde desteklenmiyor, aksi takdirde ' Method2 ' geçersiz kılınır
 
-Birlikte değişken dönüş türleri izin verilmez veya Windows çalışma zamanı üye işlevleri için ile derleme yaparken [/CLR (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md) seçeneği.
+Windows Çalışma Zamanı üye işlevlerinde veya [/clr (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md) seçeneğiyle derlenirken, birlikte değişken dönüş türlerine izin verilmez.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C2392 oluşturur ve bu sorunun nasıl gösterir.
+Aşağıdaki örnek C2392 oluşturur ve nasıl düzeltileceğini gösterir.
 
-```
+```cpp
 // C2392.cpp
 // compile with: /clr
 public ref struct B {

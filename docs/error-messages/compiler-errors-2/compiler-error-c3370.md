@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3370
+title: Derleyici hatası C3370
 ms.date: 11/04/2016
 f1_keywords:
 - C3370
 helpviewer_keywords:
 - C3370
 ms.assetid: ee6d4c85-78fc-42b2-836e-5cc491a3b2ba
-ms.openlocfilehash: 0dbc95fcb26354b0f963d1844ddd6a43783c532a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7c1a9e4e099fc33dd585e5cdbffa2bbb8ea36987
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62300615"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74755596"
 ---
-# <a name="compiler-error-c3370"></a>Derleyici Hatası C3370
+# <a name="compiler-error-c3370"></a>Derleyici hatası C3370
 
-'idl_module name': idl_module henüz tanımlanmadı
+' idl_module Name ': idl_module henüz tanımlanmadı
 
-Kullanmadan önce [idl_module](../../windows/idl-module.md) DLL'de bir giriş noktası belirtmek için önce kullanmalısınız `idl_module` DLL adını belirtmek için.
+DLL 'de bir giriş noktası belirtmek için [idl_module](../../windows/idl-module.md) kullanabilmeniz IÇIN önce DLL adını belirtmek üzere `idl_module` kullanmanız gerekir.
 
-Aşağıdaki örnek, C3370 oluşturur:
+Aşağıdaki örnek C3370 oluşturur:
 
-```
+```cpp
 // C3370.cpp
 [module(name=MyLibrary)];
 // uncomment the following line to resolve the error

@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3053
+title: Derleyici hatası C3053
 ms.date: 11/04/2016
 f1_keywords:
 - C3053
 helpviewer_keywords:
 - C3053
 ms.assetid: ab9a25f3-e341-4f6e-8e69-069b4a963a64
-ms.openlocfilehash: cb01207be15a628fb0c6206df3e6a673067f568a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 07514dfb931dcb5bf45bb8526cd19cf19103a56f
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62265652"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74761210"
 ---
-# <a name="compiler-error-c3053"></a>Derleyici Hatası C3053
+# <a name="compiler-error-c3053"></a>Derleyici hatası C3053
 
-'symbol': 'threadprivate' genel veya statik veri öğeleri için geçerlidir, yalnızca
+' symbol ': ' threadprivate ' yalnızca genel veya statik veri öğeleri için geçerlidir
 
-Semboller geçirilen [threadprivate](../../parallel/openmp/reference/threadprivate.md) genel veya statik olmalıdır.
+[Threadprivate](../../parallel/openmp/reference/threadprivate.md) öğesine geçirilen semboller genel ya da statik olmalıdır.
 
-Aşağıdaki örnek, C3053 oluşturur:
+Aşağıdaki örnek C3053 oluşturur:
 
-```
+```cpp
 // C3053.cpp
 // compile with: /openmp
 void Test() {
@@ -36,7 +36,7 @@ void Test() {
 
 Olası çözüm:
 
-```
+```cpp
 // C3053b.cpp
 // compile with: /openmp /LD
 int x, y;

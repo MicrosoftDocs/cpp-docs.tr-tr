@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3655
+title: Derleyici hatası C3655
 ms.date: 11/04/2016
 f1_keywords:
 - C3655
 helpviewer_keywords:
 - C3655
 ms.assetid: 724919ab-2915-4b61-8794-44648e162d62
-ms.openlocfilehash: 7a13d4d7c08f6510e5ab71c07c31baa9359b47b7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 61762612cf5b2153319435532dca100eb77c274d
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62227128"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74756311"
 ---
-# <a name="compiler-error-c3655"></a>Derleyici Hatası C3655
+# <a name="compiler-error-c3655"></a>Derleyici hatası C3655
 
-'function': zaten açıkça geçersiz kılınmış işlev
+' function ': işlev zaten açıkça geçersiz kılındı
 
-Bir işlev yalnızca açıkça bir kez geçersiz kılınabilir. Daha fazla bilgi için [açık geçersiz kılmalar](../../extensions/explicit-overrides-cpp-component-extensions.md).
+Bir işlev yalnızca bir kez açıkça geçersiz kılınabilir. Daha fazla bilgi için bkz. [Açık geçersiz kılmalar](../../extensions/explicit-overrides-cpp-component-extensions.md).
 
-Aşağıdaki örnek, C3655 oluşturur:
+Aşağıdaki örnek C3655 oluşturur:
 
-```
+```cpp
 // C3655.cpp
 // compile with: /clr /c
 public ref struct B {

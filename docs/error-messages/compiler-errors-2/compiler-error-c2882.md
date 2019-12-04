@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2882
+title: Derleyici hatası C2882
 ms.date: 11/04/2016
 f1_keywords:
 - C2882
 helpviewer_keywords:
 - C2882
 ms.assetid: 617018ee-5a0d-4b8d-9612-77e8ae52679b
-ms.openlocfilehash: e5fd20695f6922ba5832abb1042cce63b7c4f5a2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a1c6f20ae33a545ae2e6bd7b373ecf2444e0d1d8
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62378888"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74736171"
 ---
-# <a name="compiler-error-c2882"></a>Derleyici Hatası C2882
+# <a name="compiler-error-c2882"></a>Derleyici hatası C2882
 
-'name': ad alanı tanımlayıcısının ifade içinde geçersiz kullanımı
+' name ': ifadede geçersiz ad alanı tanımlayıcısının kullanımı
 
-Bir ifadede bir ad alanı adını kullanmak denedi.
+Bir ifadede bir ad alanının adını kullanmayı denediniz.
 
-Aşağıdaki örnek, C2882 oluşturur:
+Aşağıdaki örnek C2882 oluşturur:
 
-```
+```cpp
 // C2882.cpp
 // compile with: /c
 namespace A {

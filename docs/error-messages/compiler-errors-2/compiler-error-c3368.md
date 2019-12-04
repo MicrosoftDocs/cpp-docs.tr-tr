@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3368
+title: Derleyici hatası C3368
 ms.date: 11/04/2016
 f1_keywords:
 - C3368
 helpviewer_keywords:
 - C3368
 ms.assetid: 5bfd5be4-dfa9-4b33-9612-010561b40955
-ms.openlocfilehash: f027e2707dc677d93567f91307e9dcfcb8dd682f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8e67655e90b571ea099572cdc34bc39124fc3271
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62300524"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74751878"
 ---
-# <a name="compiler-error-c3368"></a>Derleyici Hatası C3368
+# <a name="compiler-error-c3368"></a>Derleyici hatası C3368
 
-'bildirimi işlev': IDL için geçersiz çağırma kuralı
+' işlev bildirimi ': IDL için geçersiz çağırma kuralı
 
-Yalnızca kullanabilirsiniz [__stdcall](../../cpp/stdcall.md) veya [__cdecl](../../cpp/cdecl.md) bir .idl dosyasında çağırma kuralları.
+Yalnızca bir. IDL dosyasında [__stdcall](../../cpp/stdcall.md) veya [__cdecl](../../cpp/cdecl.md) çağırma kurallarını kullanabilirsiniz.
 
-Aşağıdaki örnek, C3368 oluşturur:
+Aşağıdaki örnek C3368 oluşturur:
 
-```
+```cpp
 // C3368.cpp
 // processor: x86
 [idl_module(name="Name", dllname="Some.dll")];

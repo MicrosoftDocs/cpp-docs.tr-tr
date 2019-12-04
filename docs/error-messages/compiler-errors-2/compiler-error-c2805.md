@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2805
+title: Derleyici hatası C2805
 ms.date: 11/04/2016
 f1_keywords:
 - C2805
 helpviewer_keywords:
 - C2805
 ms.assetid: c997dc56-e199-442f-b94e-ac551ec9b015
-ms.openlocfilehash: b0b3c0d4291787fb0b5664baa9159c84c8549dfd
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 500660d70616a530fce3d8674f0f116ce219d1d8
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62282077"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74760640"
 ---
-# <a name="compiler-error-c2805"></a>Derleyici Hatası C2805
+# <a name="compiler-error-c2805"></a>Derleyici hatası C2805
 
-İkili 'operator işleci' çok az sayıda parametre içeriyor
+ikili ' işleç işleci ' çok az sayıda parametreye sahip
 
-İkili işleci hiç parametre yok.
+İkili işlecin parametresi yok.
 
-Aşağıdaki örnek, C2805 oluşturur:
+Aşağıdaki örnek C2805 oluşturur:
 
-```
+```cpp
 // C2805.cpp
 // compile with: /c
 class X {

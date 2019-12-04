@@ -1,31 +1,31 @@
 ---
-title: Derleyici Hatası C2803
+title: Derleyici hatası C2803
 ms.date: 11/04/2016
 f1_keywords:
 - C2803
 helpviewer_keywords:
 - C2803
 ms.assetid: 2cdbe374-8cc4-4c4e-ba15-062a7479e937
-ms.openlocfilehash: d20b8dde9f4134273adcba0f947f685f7ce7d213
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d39f737ba02f3fa9c9d5f61594ddf730db6739a5
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62408530"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74760666"
 ---
-# <a name="compiler-error-c2803"></a>Derleyici Hatası C2803
+# <a name="compiler-error-c2803"></a>Derleyici hatası C2803
 
-'operator işleci' sınıf türü en az bir biçimsel parametreye sahip olmalıdır
+' işleç işleci ', sınıf türünde en az bir biçimsel parametreye sahip olmalıdır
 
-Aşırı yüklenmiş işleç sınıf türünde bir parametre eksik.
+Aşırı yüklenmiş işlecin sınıf türünde bir parametresi eksik.
 
-Başvuru (işaretçiler ve başvurular kullanarak değil) veya yazılabilmesi için değer en az bir parametre geçirmek gereken "bir < b" (bir ve türü sınıf A b verilen).
+Başvuruya göre en az bir parametre geçirmeniz gerekir (işaretçiler, ancak başvurular kullanmayın) ya da değere göre, "a < b" (a ve b türünde bir a ve b) yazabiliyor.
 
-Her iki parametre işaretçiyse işaretçi adreslerine saf karşılaştırması olacak ve kullanıcı tanımlı dönüştürme kullanmaz.
+Her iki parametre de işaretçisiyse, işaretçi adreslerinin saf bir karşılaştırması olur ve Kullanıcı tanımlı dönüştürmeyi kullanmaz.
 
-Aşağıdaki örnek, C2803 oluşturur:
+Aşağıdaki örnek C2803 oluşturur:
 
-```
+```cpp
 // C2803.cpp
 // compile with: /c
 class A{};

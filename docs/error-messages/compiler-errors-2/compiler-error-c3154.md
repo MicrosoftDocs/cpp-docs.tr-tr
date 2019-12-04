@@ -1,31 +1,31 @@
 ---
-title: Derleyici Hatası C3154
+title: Derleyici hatası C3154
 ms.date: 11/04/2016
 f1_keywords:
 - C3154
 helpviewer_keywords:
 - C3154
 ms.assetid: 78005c74-eaaf-4ac2-88ae-6c25d01a302a
-ms.openlocfilehash: 9f7af4e19fab5f5a0539e9fc3bf9dbeffb5c6fbf
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: e40b0c2a56c36b92465fb3bb3451a48c88b5822e
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64344650"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74745934"
 ---
-# <a name="compiler-error-c3154"></a>Derleyici Hatası C3154
+# <a name="compiler-error-c3154"></a>Derleyici hatası C3154
 
-Beklenen ',' üç nokta önce. Virgülle ayrılmamış üç nokta parametre dizisi işlevlerinde desteklenmeyen ayrılmış.
+Üç nokta önüne ', ' bekleniyor. Virgülle ayrılmış olmayan üç nokta, parametre dizisi işlevlerinde desteklenmez.
 
-Bir değişken bağımsız değişken işlev doğru olarak bildirilmedi.
+Değişken bağımsız değişken işlevi doğru şekilde bildirilmemiş.
 
-Daha fazla bilgi için [değişken bağımsız değişken listeleri (...) (C++/CLI) ](../../extensions/variable-argument-lists-dot-dot-dot-cpp-cli.md).
+Daha fazla bilgi için bkz. [değişken bağımsız değişken listeleri (...C++) (/CLI)](../../extensions/variable-argument-lists-dot-dot-dot-cpp-cli.md).
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C3154 oluşturur.
+Aşağıdaki örnek C3154 oluşturur.
 
-```
+```cpp
 // C3154.cpp
 // compile with: /clr
 ref struct R {

@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3065
+title: Derleyici hatası C3065
 ms.date: 11/04/2016
 f1_keywords:
 - C3065
 helpviewer_keywords:
 - C3065
 ms.assetid: e7a0bc69-1c68-459e-a7c4-93c65609ff7c
-ms.openlocfilehash: e12f6e318d51ecaccc7c29e1e01d1aedcaac937e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 026a6d5191f5bf7969dd2c8217b624d44b8ca345
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62404220"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74761435"
 ---
-# <a name="compiler-error-c3065"></a>Derleyici Hatası C3065
+# <a name="compiler-error-c3065"></a>Derleyici hatası C3065
 
-sınıf olmayan kapsamda özellik bildirimine izin verilmez
+sınıf olmayan kapsamda Özellik bildirimine izin verilmiyor
 
-[Özelliği](../../cpp/property-cpp.md) __declspec değiştiricisi bir sınıf dışında kullanıldı.  Bir özellik, yalnızca bir sınıf içinde bildirilebilir.
+[Özellik](../../cpp/property-cpp.md) __declspec değiştiricisi bir sınıf dışında kullanıldı.  Bir özellik yalnızca bir sınıf içinde bildirilemez.
 
-Aşağıdaki örnek, C3065 oluşturur:
+Aşağıdaki örnek C3065 oluşturur:
 
-```
+```cpp
 // C3065.cpp
 // compile with: /c
 __declspec(property(get=get_i)) int i;   // C3065

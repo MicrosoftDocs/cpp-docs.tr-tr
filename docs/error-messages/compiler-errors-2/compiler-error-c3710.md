@@ -1,29 +1,29 @@
 ---
-title: Derleyici Hatası C3710
+title: Derleyici hatası C3710
 ms.date: 11/04/2016
 f1_keywords:
 - C3710
 helpviewer_keywords:
 - C3710
 ms.assetid: 18bec009-5b6f-464a-a21e-5d58a6936504
-ms.openlocfilehash: 04b79b3c924892eb2a970f880d3f2048f4cb2b10
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3c060d5b01c0d918071681996e76258eba0ce943
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62328478"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74753425"
 ---
-# <a name="compiler-error-c3710"></a>Derleyici Hatası C3710
+# <a name="compiler-error-c3710"></a>Derleyici hatası C3710
 
-'function': __hook içinde olay işleyicisi belirtmek için hatalı sözdizimi /\__unhook
+' function ': __hook/\_içinde olay işleyicisi belirtmek için yanlış sözdizimi _unhook
 
-Bir olay işleyicisi ile belirttiğinizde [__hook](../../cpp/hook.md) veya [__unhook](../../cpp/unhook.md), işleyicinin geçerli bir yöntemi olması gerekir.
+[__Hook](../../cpp/hook.md) veya [__unhook](../../cpp/unhook.md)ile bir olay işleyicisi belirttiğinizde, işleyicinin geçerli bir yöntem olması gerekir.
 
 ## <a name="example"></a>Örnek
 
 Aşağıdaki örnek C3710 oluşturur
 
-```
+```cpp
 // C3710.cpp
 // compile with: /link /opt:noref
 #include <atlbase.h>

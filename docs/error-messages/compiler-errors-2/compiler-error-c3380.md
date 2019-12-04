@@ -1,29 +1,29 @@
 ---
-title: Derleyici Hatası C3380
+title: Derleyici hatası C3380
 ms.date: 11/04/2016
 f1_keywords:
 - C3380
 helpviewer_keywords:
 - C3380
 ms.assetid: 86f1f4ec-4ad8-4a1a-9b6c-2d9b6129df6b
-ms.openlocfilehash: 516690f2524d48e7abbf7546592c6346e92c3e2e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2e26b4b1af8ee3c078f3eae3c0cb6a2677c642c2
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62367453"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74761887"
 ---
-# <a name="compiler-error-c3380"></a>Derleyici Hatası C3380
+# <a name="compiler-error-c3380"></a>Derleyici hatası C3380
 
-'class': Geçersiz derleme erişim belirticisi - yalnızca 'public' veya 'private' kullanılabilir
+' class ': geçersiz derleme erişim belirticisi-yalnızca ' Public ' veya ' Private ' kullanılabilir
 
-Bir yönetilen sınıf veya yapının uygulandığında [genel](../../cpp/public-cpp.md) ve [özel](../../cpp/private-cpp.md) anahtar sözcükleri sınıfı derleme meta verileri kullanıma sunulacak olup olmadığını gösterir. Yalnızca `public` veya `private` ile derlenmiş bir program içerisinde bir sınıf uygulanabilir [/CLR](../../build/reference/clr-common-language-runtime-compilation.md).
+Yönetilen bir sınıfa veya yapıya uygulandığında, [ortak](../../cpp/public-cpp.md) ve [özel](../../cpp/private-cpp.md) anahtar sözcükler, sınıfın derleme meta verileri aracılığıyla gösterilip gösterilmeyeceğini belirtir. [/Clr](../../build/reference/clr-common-language-runtime-compilation.md)ile derlenen programdaki bir sınıfa yalnızca `public` veya `private` uygulanabilir.
 
-`ref` Ve `value` anahtar sözcükleri ile kullanıldığında, [/CLR](../../build/reference/clr-common-language-runtime-compilation.md), bir sınıf yönetildiğini belirtmek (bkz [sınıfları ve yapıları](../../extensions/classes-and-structs-cpp-component-extensions.md)).
+`ref` ve `value` anahtar sözcükleri [/clr](../../build/reference/clr-common-language-runtime-compilation.md)ile kullanıldığında bir sınıfın yönetildiğini belirtir (bkz. [sınıflar ve yapılar](../../extensions/classes-and-structs-cpp-component-extensions.md)).
 
-Aşağıdaki örnek, C3380 oluşturur:
+Aşağıdaki örnek C3380 oluşturur:
 
-```
+```cpp
 // C3380_2.cpp
 // compile with: /clr
 protected ref class A {   // C3380

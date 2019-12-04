@@ -1,29 +1,29 @@
 ---
-title: Derleyici Hatası C2844
+title: Derleyici hatası C2844
 ms.date: 11/04/2016
 f1_keywords:
 - C2844
 helpviewer_keywords:
 - C2844
 ms.assetid: dcaf4cd2-21b0-4280-ae42-0a706c524d83
-ms.openlocfilehash: 2676a32cee487595a2241359496ae9b0380126b8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fdfd2200503f80addb120117ce06f5f837d6b9f2
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62329198"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74752021"
 ---
-# <a name="compiler-error-c2844"></a>Derleyici Hatası C2844
+# <a name="compiler-error-c2844"></a>Derleyici hatası C2844
 
-'member': 'interface' arabiriminin üyesi olamaz
+' Member ': ' Interface ' arabiriminin üyesi olamaz
 
-Bir [arabirim sınıfı](../../extensions/interface-class-cpp-component-extensions.md) ayrıca bir özellik olmadığı sürece bir veri üyesini içeremez.
+[Arabirim sınıfı](../../extensions/interface-class-cpp-component-extensions.md) aynı zamanda bir özellik olmadığı takdirde bir veri üyesi içeremez.
 
-Bir özellik veya üye işlev dışındaki herhangi bir arabirimde izin verilmez. Ayrıca, Oluşturucular, Yıkıcılar ve işleçler izin verilmez.
+Bir arabirimde özellik veya üye işlevi dışında bir şeye izin verilmez. Ayrıca, oluşturucular, Yıkıcılar ve işleçlere izin verilmez.
 
-Aşağıdaki örnek, C2844 oluşturur:
+Aşağıdaki örnek C2844 oluşturur:
 
-```
+```cpp
 // C2844a.cpp
 // compile with: /clr /c
 public interface class IFace {

@@ -1,31 +1,31 @@
 ---
-title: Derleyici Hatası C3648
+title: Derleyici hatası C3648
 ms.date: 11/04/2016
 f1_keywords:
 - C3648
 helpviewer_keywords:
 - C3648
 ms.assetid: 5d042989-41cb-4cd0-aa50-976b70146aaf
-ms.openlocfilehash: 7394f6b9789caa09ffc2ad6c2cf56f037b5d57b8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3b26be9890bbbdf6276c61023e6867160528e236
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62385582"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74751839"
 ---
-# <a name="compiler-error-c3648"></a>Derleyici Hatası C3648
+# <a name="compiler-error-c3648"></a>Derleyici hatası C3648
 
-Bu açık geçersiz kılma sözdiziminin /clr:oldSyntax gerektirir
+Bu açık geçersiz kılma söz dizimi/clr: oldSyntax gerektirir
 
-En son yönetilen sözdizimi derlenirken açık bulunan derleyici artık desteklenmeyen söz dizimi önceki sürümler için geçersiz kılın.
+En son yönetilen sözdizimi için derlerken, derleyici artık desteklenmeyen önceki sürümler için açık bir geçersiz kılma sözdizimi buldu.
 
-Daha fazla bilgi için [açık geçersiz kılmalar](../../extensions/explicit-overrides-cpp-component-extensions.md).
+Daha fazla bilgi için bkz. [Açık geçersiz kılmalar](../../extensions/explicit-overrides-cpp-component-extensions.md).
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C3648 oluşturur:
+Aşağıdaki örnek C3648 oluşturur:
 
-```
+```cpp
 // C3648.cpp
 // compile with: /clr
 public interface struct I {

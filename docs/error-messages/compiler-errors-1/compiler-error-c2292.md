@@ -1,25 +1,25 @@
 ---
-title: Derleyici Hatası C2292
+title: Derleyici hatası C2292
 ms.date: 11/04/2016
 f1_keywords:
 - C2292
 helpviewer_keywords:
 - C2292
 ms.assetid: 256b392f-2b8f-4162-b578-e7633984e162
-ms.openlocfilehash: 1477c767b770e4d1498df951d7ef5b4448e6fde7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 82d381fddc4cafd364bc0e45e70e5fb5c1cb3d84
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62183061"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74759119"
 ---
-# <a name="compiler-error-c2292"></a>Derleyici Hatası C2292
+# <a name="compiler-error-c2292"></a>Derleyici hatası C2292
 
-'identifier': en iyi durum devralma gösterimi: '' gerekli representation2' bildirilen representation1'
+' tanımlayıcı ': en iyi durum devralma gösterimi: ' representation1 ' tanımlanmış, ancak ' representation2 ' gerekli
 
-Aşağıdaki kod ile derleme [/vmb](../../build/reference/vmb-vmg-representation-method.md) ("Best-case her zaman" gösterimi) C2292 neden olur.
+Şu kodun [/VMB](../../build/reference/vmb-vmg-representation-method.md) ile derlenmesi ("en iyi durum her zaman" temsili) C2292 neden olur.
 
-```
+```cpp
 // C2292.cpp
 // compile with: /vmb
 class __single_inheritance X;

@@ -1,29 +1,29 @@
 ---
-title: Derleyici Hatası C3611
+title: Derleyici hatası C3611
 ms.date: 11/04/2016
 f1_keywords:
 - C3611
 helpviewer_keywords:
 - C3611
 ms.assetid: 42f3e320-41de-420a-bd05-8924cab765aa
-ms.openlocfilehash: 2d4c5cb02b1b8c5472502380fe7c74ff4a91954a
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 1fedcf406e101c87c5c831ef1b6d82fea0bbfa02
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64345435"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74755934"
 ---
-# <a name="compiler-error-c3611"></a>Derleyici Hatası C3611
+# <a name="compiler-error-c3611"></a>Derleyici hatası C3611
 
-'function': korumalı bir işlevin saf belirticisi olamaz
+' function ': Sealed bir işlevin saf belirticisi olamaz
 
-Korumalı bir işlevin yanlış bildirildi.  Daha fazla bilgi için [korumalı](../../extensions/sealed-cpp-component-extensions.md).
+Sealed işlevi yanlış bildirildi.  Daha fazla bilgi için bkz. [Sealed](../../extensions/sealed-cpp-component-extensions.md).
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C3611 oluşturur.
+Aşağıdaki örnek C3611 oluşturur.
 
-```
+```cpp
 // C3611.cpp
 // compile with: /clr /c
 

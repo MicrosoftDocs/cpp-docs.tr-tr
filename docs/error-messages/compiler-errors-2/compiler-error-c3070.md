@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3070
+title: Derleyici hatası C3070
 ms.date: 11/04/2016
 f1_keywords:
 - C3070
 helpviewer_keywords:
 - C3070
 ms.assetid: ac88584d-40a6-4176-90f3-2371c3c935f2
-ms.openlocfilehash: 3825e9e77564af9c40bc08aff560cdf533f2b5c0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d97550560e12ef9778553a809e02c1fb0d2d8b19
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62406749"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74758209"
 ---
-# <a name="compiler-error-c3070"></a>Derleyici Hatası C3070
+# <a name="compiler-error-c3070"></a>Derleyici hatası C3070
 
-'property': özelliğin bir 'set' yöntemi yok
+' Property ': özelliğin bir ' Set ' yöntemi yok
 
-Bir özelliğin ayarlama erişimci yöntemini tanımlı değil. Daha fazla bilgi için [özelliği](../../extensions/property-cpp-component-extensions.md).
+Özelliğin set erişimcisi yöntemi tanımlı değil. Daha fazla bilgi için bkz. [özellik](../../extensions/property-cpp-component-extensions.md).
 
-Aşağıdaki örnek, C3070 oluşturur:
+Aşağıdaki örnek C3070 oluşturur:
 
-```
+```cpp
 // C3070.cpp
 // compile with: /clr
 ref class R {

@@ -1,37 +1,37 @@
 ---
-title: Derleyici Hatası C3499
+title: Derleyici hatası C3499
 ms.date: 11/04/2016
 f1_keywords:
 - C3499
 helpviewer_keywords:
 - C3499
 ms.assetid: 6717de5c-ae0f-4024-bdf2-b5598009e7b6
-ms.openlocfilehash: 381e665745f79f6156350f66e412f0580a06f6fb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e50aaeac4a9f02cf3e67c25a08afdc2df0f1c62f
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62381026"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74738017"
 ---
-# <a name="compiler-error-c3499"></a>Derleyici Hatası C3499
+# <a name="compiler-error-c3499"></a>Derleyici hatası C3499
 
-dönüş türü void olacak şekilde belirtilen lambdanın bir dönüş değeri olamaz
+void dönüş türüne sahip olarak belirtilen bir lambda bir değer döndüremez
 
-Derleyicinin belirten bir lambda ifadesi, bu hatayı oluşturmasının `void` dönüş türü bir değer döndürmektedir veya geçersiz bir lambda ifadesi birden fazla deyim içerir ve bir değer döndürür, ancak dönüş türü belirtmiyor.
+Dönüş türü olarak `void` belirten bir lambda ifadesi bir değer döndürdüğünde derleyici bu hatayı oluşturur; bir lambda ifadesi birden çok deyim içerdiğinde ve bir değer döndürdüğünde, ancak dönüş türünü belirtmezse.
 
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için
 
-- Lambda ifadesinden bir değer döndürmeyen veya
+- Lambda ifadesinden bir değer döndürmeyin veya
 
-- Lambda ifadesinin dönüş türü sağlayan veya
+- Lambda ifadesinin dönüş türünü sağlayın veya
 
-- Tek bir deyimde içine lambda ifadesinin gövdesi oluşturan deyimleri birleştirin.
+- Lambda ifadesinin gövdesini oluşturan deyimleri tek bir ifadeye birleştirin.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, bir lambda ifadesinin gövdesinin birden çok deyim içermiyor ve bir değer döndürür, ancak lambda ifadesinin dönüş türü belirtmeyen C3499 oluşturur:
+Aşağıdaki örnek, C3499 oluşturur çünkü bir lambda ifadesinin gövdesi birden çok deyim içeriyor ve bir değer döndürüyor, ancak lambda ifadesi dönüş türünü belirtmiyor:
 
-```
+```cpp
 // C3499a.cpp
 
 int main()
@@ -42,9 +42,9 @@ int main()
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, iki olası çözüm için C3499 gösterir. İlk çözümleme, lambda ifadesinin dönüş türü sağlar. İkinci çözüm, tek bir deyimde içine lambda ifadesinin gövdesi oluşturan deyimleri birleştirir.
+Aşağıdaki örnekte, C3499 için iki olası çözüm gösterilmektedir. İlk çözüm, lambda ifadesinin dönüş türünü sağlar. İkinci çözüm, lambda ifadesinin gövdesini oluşturan deyimleri tek bir ifadeye birleştirir.
 
-```
+```cpp
 // C3499b.cpp
 
 int main()

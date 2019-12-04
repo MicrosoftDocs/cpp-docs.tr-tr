@@ -1,31 +1,31 @@
 ---
-title: Derleyici Hatası C3797
+title: Derleyici hatası C3797
 ms.date: 11/04/2016
 f1_keywords:
 - C3797
 helpviewer_keywords:
 - C3797
 ms.assetid: ab27ff34-8c1d-4297-b004-9e39bd3a4f25
-ms.openlocfilehash: 76206cdffce3f551ff472cbd83df486eb41ae80b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7236cb75aef4250440a1e992415df07fb5b7da3f
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62400142"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74757182"
 ---
-# <a name="compiler-error-c3797"></a>Derleyici Hatası C3797
+# <a name="compiler-error-c3797"></a>Derleyici hatası C3797
 
-'override': olay bildiriminde (yerleştirilmelidir üzerinde olay ekleme/kaldırma/başlatma yöntemlerine yerine) geçersiz kılma belirticisi olamaz
+' override ': olay bildiriminde geçersiz kılma belirticisi olamaz (Bunun yerine olay ekleme/kaldırma/yükseltme yöntemlerine yerleştirilmelidir)
 
-Önemsiz bir olay Önemsiz başka bir olay ile (bir olay açıkça tanımlanmış erişimci metotlarını olmadan) geçersiz kılamaz. Geçersiz kılma olay davranışını erişimcisinin işlevlerle tanımlamanız gerekir.
+Önemsiz bir olayı (açıkça tanımlanmış erişimci yöntemleri olmayan bir olay) başka bir önemsiz olayla birlikte geçersiz kılamazsınız. Geçersiz kılma olayı, davranışını erişimci işlevleriyle tanımlamalıdır.
 
-Daha fazla bilgi için [olay](../../extensions/event-cpp-component-extensions.md).
+Daha fazla bilgi için bkz. [olay](../../extensions/event-cpp-component-extensions.md).
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C3797 oluşturur.
+Aşağıdaki örnek C3797 oluşturur.
 
-```
+```cpp
 // C3797.cpp
 // compile with: /clr /c
 delegate void MyDel();

@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2518
+title: Derleyici hatası C2518
 ms.date: 11/04/2016
 f1_keywords:
 - C2518
 helpviewer_keywords:
 - C2518
 ms.assetid: a7895b47-da90-4851-ac97-18e81479595a
-ms.openlocfilehash: d0a1f7bdc493a16b38dc2348097cc6cbea7ed898
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 894167fce43147b98af6603cba3102e5714b850e
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62282293"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74746493"
 ---
-# <a name="compiler-error-c2518"></a>Derleyici Hatası C2518
+# <a name="compiler-error-c2518"></a>Derleyici hatası C2518
 
-anahtar sözcüğü 'anahtar sözcüğü' taban sınıfı listesinde; geçersiz yoksayıldı
+' anahtar sözcüğü ' anahtar sözcüğü taban sınıf listesinde geçersizdir; LIP
 
-Anahtar sözcükler `class` ve `struct` bir temel sınıf listesinde görünmemelidir.
+`class` ve `struct` anahtar sözcükleri bir temel sınıf listesinde görünmemelidir.
 
-Aşağıdaki örnek, C2518 oluşturur:
+Aşağıdaki örnek C2518 oluşturur:
 
-```
+```cpp
 // C2518.cpp
 // compile with: /c
 class B {};

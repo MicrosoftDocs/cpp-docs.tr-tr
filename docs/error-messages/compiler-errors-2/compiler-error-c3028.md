@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3028
+title: Derleyici hatası C3028
 ms.date: 11/04/2016
 f1_keywords:
 - C3028
 helpviewer_keywords:
 - C3028
 ms.assetid: 175e697f-8e8f-492a-8456-6240ffbbb900
-ms.openlocfilehash: 2a1d76d21005ecffc74f9fc64d4bdeb197e9653d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0a497de92d782f65bfc27db27755718e7c6bbdbe
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62360053"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74735886"
 ---
-# <a name="compiler-error-c3028"></a>Derleyici Hatası C3028
+# <a name="compiler-error-c3028"></a>Derleyici hatası C3028
 
-'member': bir veri paylaşımı yan tümcesinde yalnızca bir değişken veya statik veri üyesi kullanılabilir
+' Member ': bir veri paylaşımı yan tümcesinde yalnızca bir değişken veya statik veri üyesi kullanılabilir
 
-Bir değişken veya statik veri üyesi dışındaki bir sembol için reduction yan geçirildi.
+Bir değişken veya statik veri üyesi dışında bir sembol, azaltma yan tümcesine geçirildi.
 
-Aşağıdaki örnek, C3028 oluşturur:
+Aşağıdaki örnek C3028 oluşturur:
 
-```
+```cpp
 // C3028.cpp
 // compile with: /openmp /link vcomps.lib
 int g_i;

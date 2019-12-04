@@ -1,29 +1,29 @@
 ---
-title: Derleyici Hatası C2384
+title: Derleyici hatası C2384
 ms.date: 11/04/2016
 f1_keywords:
 - C2384
 helpviewer_keywords:
 - C2384
 ms.assetid: 8145f7ad-31b1-406d-ac43-0d557feab635
-ms.openlocfilehash: 1909fb999dd0f60224029b726f773c11fa69ee40
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2ce5c2f2540fbd2aca3509fa1dac55073a002abb
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62347161"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74745271"
 ---
-# <a name="compiler-error-c2384"></a>Derleyici Hatası C2384
+# <a name="compiler-error-c2384"></a>Derleyici hatası C2384
 
-'member': gt;__declspec(thread) için yönetilen bir üyesi veya WinRT sınıfı uygulanamıyor
+' Member ': yönetilen veya WinRT sınıfının üyesine __declspec (thread) uygulanamıyor
 
-[İş parçacığı](../../cpp/thread.md) `__declspec` yönetilen bir üyesi ya da Windows çalışma zamanı sınıf değiştiricisi kullanılamaz.
+[İş parçacığı](../../cpp/thread.md) `__declspec` değiştiricisi yönetilen veya Windows çalışma zamanı sınıfının bir üyesi üzerinde kullanılamaz.
 
-Statik iş parçacığı yerel depolama yönetilen kodda yalnızca kullanılabilir için statik olarak yüklenen DLL'lerin — işlem başladığında DLL statik olarak yüklenmesi gerekir. Windows çalışma zamanı iş parçacığı yerel depolama desteklemez.
+Yönetilen koddaki statik iş parçacığı yerel depolaması, yalnızca statik olarak yüklenen dll 'Ler için kullanılabilir — işlem başladığında DLL 'nin statik olarak yüklenmesi gerekir. Windows Çalışma Zamanı, iş parçacığı yerel depolamayı desteklemez.
 
-Aşağıdaki satırı C2384 oluşturur ve C +'da nasıl düzeltileceğini gösteren +/ CLI kodu:
+Aşağıdaki satır C2384 oluşturur ve C++/CLI kodunda nasıl düzeltileceğini gösterir:
 
-```
+```cpp
 // C2384.cpp
 // compile with: /clr /c
 public ref class B {

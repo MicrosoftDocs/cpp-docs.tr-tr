@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2793
+title: Derleyici hatası C2793
 ms.date: 11/04/2016
 f1_keywords:
 - C2793
 helpviewer_keywords:
 - C2793
 ms.assetid: ce35f4e8-c357-40ca-95c4-15ff001ad69d
-ms.openlocfilehash: 5533a0e8f75a1a513fbabe451fb41629a4595382
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5b8712473631b16e2bbb47430966ccc0c552b9df
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62360157"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74739395"
 ---
-# <a name="compiler-error-c2793"></a>Derleyici Hatası C2793
+# <a name="compiler-error-c2793"></a>Derleyici hatası C2793
 
-'token': arkasında beklenmeyen belirteç '::', tanımlayıcısı veya beklenen'operator ' anahtar sözcüğü
+' token ': ':: ', Identifier veya anahtar sözcüğü ' operator ' sonrasında beklenmeyen belirteç bekleniyor
 
-İzleyebileceğiniz yalnızca belirteçleri `__super::` tanımlayıcı veya anahtar sözcüğü `operator`.
+Yalnızca `__super::` `operator`bir tanımlayıcı ya da anahtar sözcük olan belirteçleri kullanabilirsiniz.
 
 Aşağıdaki örnek C2793 oluşturur
 
-```
+```cpp
 // C2793.cpp
 struct B {
    void mf();

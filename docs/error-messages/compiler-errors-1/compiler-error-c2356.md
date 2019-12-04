@@ -1,33 +1,33 @@
 ---
-title: Derleyici Hatası C2356
+title: Derleyici hatası C2356
 ms.date: 11/04/2016
 f1_keywords:
 - C2356
 helpviewer_keywords:
 - C2356
 ms.assetid: 84d5a816-9a61-4d45-9978-38e485bbf767
-ms.openlocfilehash: 0166cce6011017b8a18821666083f7c47f58b7a9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e306c5a8f9175bc3c7902b20263aa2e451944182
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62302546"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74759938"
 ---
-# <a name="compiler-error-c2356"></a>Derleyici Hatası C2356
+# <a name="compiler-error-c2356"></a>Derleyici hatası C2356
 
-başlatma kesiminin çeviri birimi sırasında değiştirmemelidir
+başlatma segmenti çeviri birimi sırasında değişmemelidir
 
 Olası nedenler:
 
-- `#pragma init_seg` Segmenti başlatma kodu tarafından öncesinde
+- `#pragma init_seg` önünde segment başlatma kodu
 
-- `#pragma init_seg` bir başkası tarafından öncesinde `#pragma init_seg`
+- daha önce başka bir `#pragma init_seg` `#pragma init_seg`
 
-Çözmek için segment başlatma kodu modülü başlangıcına Taşı. Birden fazla alana başlatılması gerekir, bunları modüller ayrı taşıyın.
+Çözümlemek için, segment başlatma kodunu modülün başına taşıyın. Birden çok alan başlatılması gerekiyorsa onları ayrı modüllere taşıyın.
 
-Aşağıdaki örnek, C2356 oluşturur:
+Aşağıdaki örnek C2356 oluşturur:
 
-```
+```cpp
 // C2356.cpp
 #pragma warning(disable : 4075)
 

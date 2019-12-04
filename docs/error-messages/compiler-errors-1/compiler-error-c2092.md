@@ -1,29 +1,29 @@
 ---
-title: Derleyici Hatası C2092
+title: Derleyici hatası C2092
 ms.date: 11/04/2016
 f1_keywords:
 - C2092
 helpviewer_keywords:
 - C2092
 ms.assetid: 037e44ae-16c8-489a-a512-dcdf7f7795a6
-ms.openlocfilehash: d3d0b0e62fbc5f8ad90b3fee5fe39c6bdaba7c2e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b530663cae2292ebeab1b871e495e9a45e4633cf
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62376017"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74754673"
 ---
-# <a name="compiler-error-c2092"></a>Derleyici Hatası C2092
+# <a name="compiler-error-c2092"></a>Derleyici hatası C2092
 
-İşlev 'dizi adı' dizi öğesi türü olamaz
+' Array Name ' dizi öğesi türü işlev olamaz
 
-İşlevler bir dizi izin verilmez. Bir dizi işlev işaretçileri kullanın.
+İşlev dizilerine izin verilmez. İşlevlere işaretçiler dizisi kullanın.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C2092 oluşturur:
+Aşağıdaki örnek C2092 oluşturur:
 
-```
+```cpp
 // C2092.cpp
 typedef void (F) ();
 typedef F AT[10];   // C2092
@@ -33,7 +33,7 @@ typedef F AT[10];   // C2092
 
 Olası çözüm:
 
-```
+```cpp
 // C2092b.cpp
 // compile with: /c
 typedef void (F) ();

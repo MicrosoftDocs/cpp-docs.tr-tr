@@ -1,29 +1,29 @@
 ---
-title: Derleyici Hatası C2955
+title: Derleyici hatası C2955
 ms.date: 03/28/2017
 f1_keywords:
 - C2955
 helpviewer_keywords:
 - C2955
 ms.assetid: 77709fb6-d69b-46fd-a62f-e8564563d01b
-ms.openlocfilehash: c012e5189b9ca1d0b0e786cbddacedee7c6728d2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8afdeaf43c0c9789753b9165f1e8a8287aaac76d
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62300745"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74742879"
 ---
-# <a name="compiler-error-c2955"></a>Derleyici Hatası C2955
+# <a name="compiler-error-c2955"></a>Derleyici hatası C2955
 
-'identifier': sınıf şablonu kullanın veya diğer genel şablon veya genel bağımsız değişken listesi gerektiriyor
+' tanımlayıcı ': sınıf şablonu veya diğer ad genel kullanım için şablon veya genel bağımsız değişken listesi gerekir
 
-Bir sınıf şablonu ya da genel bir sınıf, şablon veya genel bağımsız değişken listesi olmayan bir tanımlayıcı olarak kullanamazsınız.
+Şablon veya genel bağımsız değişken listesi olmayan bir sınıf şablonu veya sınıf genel bir tanımlayıcı olarak kullanamazsınız.
 
-Daha fazla bilgi için [sınıf şablonlarının](../../cpp/class-templates.md).
+Daha fazla bilgi için bkz. [sınıf şablonları](../../cpp/class-templates.md).
 
-Aşağıdaki örnek, C2955 oluşturur ve bu sorunun nasıl gösterir:
+Aşağıdaki örnek C2955 oluşturur ve nasıl düzeltileceğini gösterir:
 
-```
+```cpp
 // C2955.cpp
 // compile with: /c
 template<class T>
@@ -33,9 +33,9 @@ X x1;   // C2955
 X<int> x2;   // OK - this is how to fix it.
 ```
 
-C2955 da bir sınıf şablonu olarak bildirilen bir işlev için bir satır dışı tanımı çalışırken meydana gelebilir:
+Ayrıca, bir sınıf şablonunda bildirildiği bir işlev için satır dışı bir tanım denenirken C2955 de oluşabilir:
 
-```
+```cpp
 // C2955_b.cpp
 // compile with: /c
 template <class T>
@@ -52,9 +52,9 @@ template <class T>
 void CT<T>::CTFunc2() {}
 ```
 
-C2955, genel türler kullanırken da meydana gelebilir:
+C2955, genel türler kullanılırken de oluşabilir:
 
-```
+```cpp
 // C2955_c.cpp
 // compile with: /clr
 generic <class T>
@@ -70,7 +70,7 @@ int main() {
 
 ## <a name="example"></a>Örnek
 
-**Visual Studio 2017 ve sonraki sürümleri:** Şablon (örneğin parçası varsayılan şablon bağımsız değişkeni veya bir tür olmayan şablon parametresi) bir şablon parametre listesinde göründüğünde derleyici eksik şablon bağımsız değişken listeleri doğru olarak tanılar. Aşağıdaki kod, Visual Studio 2015'te derler ancak Visual Studio 2017'de bir hata oluşturur.
+**Visual Studio 2017 ve üzeri:** Şablon bir şablon parametre listesinde (örneğin, varsayılan bir şablon bağımsız değişkeninin veya tür olmayan bir şablon parametresi) göründüğünde derleyici, eksik şablon bağımsız değişken listelerini doğru bir şekilde tanılar. Aşağıdaki kod Visual Studio 2015 ' de derlenir ancak Visual Studio 2017 ' de bir hata oluşturur.
 
 ```
 template <class T> class ListNode;

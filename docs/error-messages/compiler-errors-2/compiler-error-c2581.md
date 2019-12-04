@@ -1,29 +1,29 @@
 ---
-title: Derleyici Hatası C2581
+title: Derleyici hatası C2581
 ms.date: 11/04/2016
 f1_keywords:
 - C2581
 helpviewer_keywords:
 - C2581
 ms.assetid: 24a4e4c1-24d3-4e42-b760-7dcaf9740b16
-ms.openlocfilehash: edfab092c82f9dc1d4b9dfe5d21daa2b2ab98d08
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 03fc7e9da8a9b3a2e2c445f5b06395c2616f0d98
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62385868"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74755440"
 ---
-# <a name="compiler-error-c2581"></a>Derleyici Hatası C2581
+# <a name="compiler-error-c2581"></a>Derleyici hatası C2581
 
-'type': statik ' operator =' işlevi geçersizdir
+' Type ': statik ' operator = ' işlevi geçersizdir
 
-Atama (`=`) işleci olarak bildirilen yanlış `static`. Atama İşleçleri olamaz `static`. Daha fazla bilgi için [kullanıcı tanımlı işleçler (C++/CLI)](../../dotnet/user-defined-operators-cpp-cli.md).
+Atama (`=`) işleci yanlış `static`olarak bildirilmiştir. Atama işleçleri `static`olamaz. Daha fazla bilgi için bkz. [Kullanıcı tanımlı işleçler (C++/CLI)](../../dotnet/user-defined-operators-cpp-cli.md).
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C2581 oluşturur.
+Aşağıdaki örnek C2581 oluşturur.
 
-```
+```cpp
 // C2581.cpp
 // compile with: /clr /c
 ref struct Y {

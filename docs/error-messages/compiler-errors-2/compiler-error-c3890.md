@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3890
+title: Derleyici hatası C3890
 ms.date: 11/04/2016
 f1_keywords:
 - C3890
 helpviewer_keywords:
 - C3890
 ms.assetid: 2f22c2fd-c14e-45e1-b936-b739ffc0b135
-ms.openlocfilehash: 2354be5ac7299fc0361e1b3ad50554e9949f8c1d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8d93afa2ac8e365eff2f9256235b391f561cb977
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62385556"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74736548"
 ---
-# <a name="compiler-error-c3890"></a>Derleyici Hatası C3890
+# <a name="compiler-error-c3890"></a>Derleyici hatası C3890
 
-'var': sabit değerli bir veri üyesinin adresini alamazsınız
+' var ': sabit değerli bir veri üyesinin adresini alamaz
 
-Sabit değerli veri üyesi üzerinde atık olarak toplanmış yığınla var.  Atık olarak toplanmış yığındaki bir nesne taşınabilir, bu nedenle adresini almak kullanışlı değildir.
+Atık toplanmış yığında sabit değerli bir veri üyesi var.  Atık olarak toplanan yığında bir nesne taşınabilir, bu nedenle adres alınması yararlı değildir.
 
-Aşağıdaki örnek, C3890 oluşturur:
+Aşağıdaki örnek C3890 oluşturur:
 
-```
+```cpp
 // C3890.cpp
 // compile with: /clr
 ref struct Y1 {

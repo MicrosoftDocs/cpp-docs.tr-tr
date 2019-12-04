@@ -1,29 +1,29 @@
 ---
-title: Derleyici Hatası C2946
+title: Derleyici hatası C2946
 ms.date: 11/04/2016
 f1_keywords:
 - C2946
 helpviewer_keywords:
 - C2946
 ms.assetid: c86dfbfc-7702-4f09-8a53-d205710e99c2
-ms.openlocfilehash: 0f61d047fcd070f3deea662cd3bd193f8e133659
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c0ea10b3614e20e7f47c8f6632843544b4842751
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62187644"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74755375"
 ---
-# <a name="compiler-error-c2946"></a>Derleyici Hatası C2946
+# <a name="compiler-error-c2946"></a>Derleyici hatası C2946
 
-Açık örnek oluşturma; 'class' Şablon sınıfı bir özelleştirmeye değil
+açık örnek oluşturma; ' class ', şablon sınıfı bir özelleştirme değil
 
-Açıkça bir şablonu oluşturulmamış sınıfın örneği oluşturulamıyor.
+Şablonlu olmayan bir sınıfı açıkça örnekleyemezsiniz.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C2946 oluşturur.
+Aşağıdaki örnek C2946 oluşturur.
 
-```
+```cpp
 // C2946.cpp
 class C {};
 template C;  // C2946

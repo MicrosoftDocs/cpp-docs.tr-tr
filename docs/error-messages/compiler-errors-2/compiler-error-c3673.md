@@ -1,29 +1,29 @@
 ---
-title: Derleyici Hatası C3673
+title: Derleyici hatası C3673
 ms.date: 11/04/2016
 f1_keywords:
 - C3673
 helpviewer_keywords:
 - C3673
 ms.assetid: bb6d2079-05af-4e2c-be0e-75c892e6c590
-ms.openlocfilehash: 9fd6920956d6a48ec7e1f15bf54ea8d75bad4aa5
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 50585904f125dcb572043b568978d65eb1c61e80
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64345431"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74758092"
 ---
-# <a name="compiler-error-c3673"></a>Derleyici Hatası C3673
+# <a name="compiler-error-c3673"></a>Derleyici hatası C3673
 
-'type': sınıf bir kopya oluşturucuya sahip değil
+' Type ': sınıf bir kopya oluşturucuya sahip değil
 
-Bir kullanıcı tanımlı oluşturucusu CLR başvuru türlerindeki nesneler, kopyalama için gereklidir. Daha fazla bilgi için [başvuru türleri için C++ yığın anlamları](../../dotnet/cpp-stack-semantics-for-reference-types.md).
+CLR başvuru türlerindeki nesneleri kopyalamak için Kullanıcı tanımlı bir Oluşturucu gereklidir. Daha fazla bilgi için bkz [ C++ . başvuru türleri için yığın semantiği](../../dotnet/cpp-stack-semantics-for-reference-types.md).
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C3673 oluşturur.
+Aşağıdaki örnek C3673 oluşturur.
 
-```
+```cpp
 // C3673.cpp
 // compile with: /clr
 public ref struct R {
@@ -41,9 +41,9 @@ int main() {
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C3673 oluşturur.
+Aşağıdaki örnek C3673 oluşturur.
 
-```
+```cpp
 // C3673_b.cpp
 // compile with: /clr /c
 // C3673 expected

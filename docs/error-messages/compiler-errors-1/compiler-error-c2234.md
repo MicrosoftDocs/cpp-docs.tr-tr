@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2234
 ms.assetid: cfa42458-c803-4717-a017-9eca1c0cbfb0
-ms.openlocfilehash: 16cc09f43f8705452c207e5218f4cc274557e825
-ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
+ms.openlocfilehash: 9f13b33c9e6c56e4ec82e6542ff0869849f0f822
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70741142"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74759249"
 ---
 # <a name="compiler-error-c2234"></a>Derleyici hatası C2234
 
@@ -21,7 +21,7 @@ Başvurulara yönelik işaretçilere izin verilmediğinden, başvuru dizileri m�
 
 Aşağıdaki örnek C2234 oluşturur:
 
-```
+```cpp
 // C2234.cpp
 int main() {
    int i = 0, j = 0, k = 0, l = 0;

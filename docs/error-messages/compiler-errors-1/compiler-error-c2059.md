@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2059
+title: Derleyici hatası C2059
 ms.date: 03/26/2019
 f1_keywords:
 - C2059
 helpviewer_keywords:
 - C2059
 ms.assetid: 2be4eb39-3f37-4b32-8e8d-75835e07c78a
-ms.openlocfilehash: 2fb2aa86a1fd8f8e0710d787682fdd44abd941ec
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1d51d4c7873d43a655dc11fa8e0fa297b8a69bff
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62408673"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74735950"
 ---
-# <a name="compiler-error-c2059"></a>Derleyici Hatası C2059
+# <a name="compiler-error-c2059"></a>Derleyici hatası C2059
 
-sözdizimi hatası: 'belirteci'
+sözdizimi hatası: ' token '
 
-Belirteç sözdizimi hatası nedeniyle.
+Belirteç bir sözdizimi hatasına neden oldu.
 
-Aşağıdaki örnek, bir hata iletisi bildirir satır oluşturur `j`.
+Aşağıdaki örnek, `j`bildiren çizgi için bir hata iletisi oluşturur.
 
-```
+```cpp
 // C2059e.cpp
 // compile with: /c
 // C2143 expected
@@ -29,11 +29,11 @@ Aşağıdaki örnek, bir hata iletisi bildirir satır oluşturur `j`.
    int j*; // C2059
 ```
 
-Hatanın nedenini belirlemek için yalnızca hata iletisinde listelenen satır, aynı zamanda yukarıdaki satırları inceleyin. Satırları incelenerek sorun hakkında hiçbir fikrimiz döndürürse, hata iletisinde listelenen satır ve belki de yukarıdaki birkaç satıra yorum deneyin.
+Hatanın nedenini öğrenmek için yalnızca hata iletisinde listelenen satırı değil, aynı zamanda yukarıdaki satırları inceleyin. Satırları incelemek sorun hakkında hiçbir clue yoksa, hata iletisinde listelenen satırı ve belki de büyük olasılıkla birçok satırı açıklama olarak oluşturmayı deneyin.
 
-Hata iletisi üzerinde hemen izleyen bir sembolün oluşursa bir `typedef` değişkeni, kaynak kodunda değişkeni tanımlandığından emin olun.
+Hata iletisi bir `typedef` değişkenini hemen izleyen bir sembol üzerinde oluşursa, değişkenin kaynak kodunda tanımlandığından emin olun.
 
-Tanımlayıcı olarak yeniden kullanılan önişlemci sembolü adıdır C2059 tetiklenir. Aşağıdaki örnekte, derleyicinin görür `DIGITS.ONE` numarası 1 ', geçerli olmayan bir sabit listesi öğe adı:
+Bir Önişlemci sembol adı tanımlayıcı olarak yeniden kullanıldığında C2059 tetiklenir. Aşağıdaki örnekte, derleyici `DIGITS.ONE` 1 sayısı olarak görür ve bu, Enum öğesi adı olarak geçerli değildir:
 
 ```cpp
 #define ONE 1
@@ -44,9 +44,9 @@ enum class DIGITS {
 };
 ```
 
-Bir sembol olarak gerçekleşebilir nothing olarak değerlendirilirse C2059 alabilirsiniz, **/D**_sembol_ **=** derlemek için kullanılır.
+C2059, bir sembol hiçbir şey için hesaplanırsa, **/d**_symbol_ **=** derlemek için kullanıldığında meydana gelebilir.
 
-```
+```cpp
 // C2059a.cpp
 // compile with: /DTEST=
 #include <stdio.h>
@@ -60,11 +60,11 @@ int main() {
 }
 ```
 
-Bir yapının bir işlevin varsayılan bağımsız değişkenler belirten bir uygulamayı derlediğinizde C2059 oluşabilen başka bir durumdur. Bağımsız değişken için varsayılan değeri bir ifade olmalıdır. Başlatıcı listesi — Örneğin, bir yapı başlatmak için kullanılan — bir ifade değil.  Bu sorunu gidermek için gerekli başlatma gerçekleştirmek için bir oluşturucu tanımlar.
+Bir işlevin varsayılan bağımsız değişkenlerinde bir yapıyı belirten bir uygulama derlerken C2059 'in gerçekleşebileceği başka bir durum da olabilir. Bir bağımsız değişken için varsayılan değer bir ifade olmalıdır. Bir başlatıcı listesi — Örneğin, bir yapıyı başlatmak için kullanılan bir ifade değil.  Bu sorunu çözmek için gerekli başlatmayı gerçekleştirmek üzere bir Oluşturucu tanımlayın.
 
-Aşağıdaki örnek, C2059 oluşturur:
+Aşağıdaki örnek C2059 oluşturur:
 
-```
+```cpp
 // C2059b.cpp
 // compile with: /c
 struct ag_type {
@@ -78,11 +78,11 @@ void func(ag_type arg = {5, 7.0});   // C2059
 void func(ag_type arg = ag_type(5, 7.0));   // OK
 ```
 
-C2059 için hatalı oluşturulmuş tür dönüştürme ortaya çıkabilir.
+C2059, hatalı oluşturulmuş bir tür dönüştürme için gerçekleşebilir.
 
-Aşağıdaki örnek, C2059 oluşturur:
+Aşağıdaki örnek C2059 oluşturur:
 
-```
+```cpp
 // C2059c.cpp
 // compile with: /clr
 using namespace System;
@@ -96,11 +96,11 @@ int main() {
 }
 ```
 
-Nokta içeren bir ad alanı adı oluşturmaya çalışırsanız C2059 da meydana gelebilir.
+Ayrıca, bir nokta içeren bir ad alanı adı oluşturmaya çalıştığınızda C2059 de oluşabilir.
 
-Aşağıdaki örnek, C2059 oluşturur:
+Aşağıdaki örnek C2059 oluşturur:
 
-```
+```cpp
 // C2059d.cpp
 // compile with: /c
 namespace A.B {}   // C2059
@@ -111,7 +111,7 @@ namespace A  {
 }
 ```
 
-C2059 bir adı olabilmek operatörün olduğunda meydana gelebilir (`::`, `->`, ve `.`) anahtar sözcüğüyle gelmelidir `template`, bu örnekte gösterildiği gibi:
+Bir ada sahip olabilecek bir operatör (`::`, `->`ve `.`), aşağıdaki örnekte gösterildiği gibi anahtar `template`sözcüğü gelmelidir:
 
 ```cpp
 template <typename T> struct Allocator {
@@ -125,7 +125,7 @@ template <typename X, typename AY> struct Container {
 };
 ```
 
-Varsayılan olarak, C++ olduğunu varsayar `AY::Rebind` olmayan bir şablon; bu nedenle, aşağıdaki `<` daha az yorumlanır-işareti.  Derleyici açıkça, bildirmeniz gerekir `Rebind` böylece doğru açılı ayraç ayrıştırmak bir şablondur. Bu hatayı düzeltmek için `template` anahtar sözcüğü, burada gösterildiği gibi bağımlı tür adı:
+Varsayılan olarak, C++ `AY::Rebind` şablon olmadığını varsayar; Bu nedenle, aşağıdaki `<` küçüktür işareti olarak yorumlanır.  Derleyiciye, açılı ayracın doğru ayrıştırabilmesi için `Rebind` bir şablon olduğunu açıkça bildirmeniz gerekir. Bu hatayı düzeltmek için, aşağıda gösterildiği gibi, bağımlı türün adı üzerinde `template` anahtar sözcüğünü kullanın:
 
 ```cpp
 template <typename T> struct Allocator {

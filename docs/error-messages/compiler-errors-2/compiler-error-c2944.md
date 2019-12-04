@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2944
+title: Derleyici hatası C2944
 ms.date: 11/04/2016
 f1_keywords:
 - C2944
 helpviewer_keywords:
 - C2944
 ms.assetid: f209e668-e72f-442a-a438-8c4ff43a404a
-ms.openlocfilehash: bed23b7d9117d1d1acad80f4f3d81e8b0b9d0252
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 542f7def550632a29fcb7ae28825b32b8c26f17d
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62366426"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74755388"
 ---
-# <a name="compiler-error-c2944"></a>Derleyici Hatası C2944
+# <a name="compiler-error-c2944"></a>Derleyici hatası C2944
 
-'class': türü sınıf kimliği için bir şablon bir değeri bağımsız değişken olarak yeniden tanımlandı
+' class ': tür sınıfı kimliği bir şablonun değer bağımsız değişkeni olarak yeniden tanımlandı
 
-Genel veya Şablon sınıfı bir şablon değeri bağımsız değişkeni bir simge yerine kullanamazsınız.
+Şablon değeri bağımsız değişkeni olarak bir sembol yerine genel veya şablon sınıfı kullanamazsınız.
 
-Aşağıdaki örnek, C2944 oluşturur:
+Aşağıdaki örnek C2944 oluşturur:
 
-```
+```cpp
 // C2944.cpp
 // compile with: /c
 template<class T>
@@ -32,9 +32,9 @@ template <int TC<int> > struct X1 { };   // C2944
 template <class T > struct X2 {};
 ```
 
-C2944, genel türler kullanırken da meydana gelebilir:
+C2944, genel türler kullanılırken de oluşabilir:
 
-```
+```cpp
 // C2944b.cpp
 // compile with: /clr /c
 generic<class T>

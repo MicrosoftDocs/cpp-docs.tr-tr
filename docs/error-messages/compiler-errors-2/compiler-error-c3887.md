@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3887
+title: Derleyici hatası C3887
 ms.date: 11/04/2016
 f1_keywords:
 - C3887
 helpviewer_keywords:
 - C3887
 ms.assetid: a7e82426-ef99-437b-9562-2822004e18fe
-ms.openlocfilehash: 85434cb8daba0db82843c09e2d1bb09d98960272
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: f64b72fe5d546550c32f60a27360d8a77c8255bd
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64344487"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74736587"
 ---
-# <a name="compiler-error-c3887"></a>Derleyici Hatası C3887
+# <a name="compiler-error-c3887"></a>Derleyici hatası C3887
 
-'var': sabit değerli veri üyesi başlatıcısı sabit ifade olmalıdır
+' var ': sabit değerli bir veri üyesinin başlatıcısı sabit bir ifade olmalıdır
 
-A [değişmez değer](../../extensions/literal-cpp-component-extensions.md) veri üyesi ile sabit bir ifade yalnızca başlatılabilir.
+[Sabit değerli](../../extensions/literal-cpp-component-extensions.md) bir veri üyesi yalnızca sabit bir ifade ile başlatılabilir.
 
-Aşağıdaki örnek, C3887 oluşturur:
+Aşağıdaki örnek C3887 oluşturur:
 
-```
+```cpp
 // C3887.cpp
 // compile with: /clr
 ref struct Y1 {
@@ -33,7 +33,7 @@ ref struct Y1 {
 
 Olası çözüm:
 
-```
+```cpp
 // C3887b.cpp
 // compile with: /clr /c
 ref struct Y1 {

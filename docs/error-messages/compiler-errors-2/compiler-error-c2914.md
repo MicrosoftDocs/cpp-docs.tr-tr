@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2914
+title: Derleyici hatası C2914
 ms.date: 11/04/2016
 f1_keywords:
 - C2914
 helpviewer_keywords:
 - C2914
 ms.assetid: fc6a0592-f53e-4f5a-88cb-780bbed4acf2
-ms.openlocfilehash: 2500736f799032aea71173931139404b4406a16a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bed9e31d7d1de069ee708f8f482d26b37bc16833
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62384354"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74761064"
 ---
-# <a name="compiler-error-c2914"></a>Derleyici Hatası C2914
+# <a name="compiler-error-c2914"></a>Derleyici hatası C2914
 
-'identifier': işlev bağımsız değişkeni belirsiz olduğundan, tür bağımsız değişkeni çıkarılamıyor
+' tanımlayıcı ': işlev bağımsız değişkeni belirsiz olduğundan tür bağımsız değişkeni çıkarılamıyor
 
-Derleyici, genel veya şablon bağımsız değişkeni için kullanılacak işlev aşırı belirlenemiyor.
+Derleyici, genel veya şablon bağımsız değişkeni için kullanılacak aşırı yüklenmiş işlevleri belirleyemez.
 
-Aşağıdaki örnek, C2914 oluşturur:
+Aşağıdaki örnek C2914 oluşturur:
 
-```
+```cpp
 // C2914.cpp
 // compile with: /c
 void f(int);
@@ -32,9 +32,9 @@ void h() { g(f); }   // C2914
 // void h() { g<int>(f); }
 ```
 
-C2914, genel türler kullanırken da meydana gelebilir.  Aşağıdaki örnek, C2914 oluşturur:
+C2914, genel türler kullanılırken de oluşabilir.  Aşağıdaki örnek C2914 oluşturur:
 
-```
+```cpp
 // C2914b.cpp
 // compile with: /clr /c
 void f(int);

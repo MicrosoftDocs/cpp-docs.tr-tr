@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2438
+title: Derleyici hatası C2438
 ms.date: 11/04/2016
 f1_keywords:
 - C2438
 helpviewer_keywords:
 - C2438
 ms.assetid: 3a0ab3ba-d0e4-4d8f-971d-e503397cc827
-ms.openlocfilehash: b2861090b5f7629c7f0cd94ea38a99e888909258
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: da6443f3f319c864b53f6d077e8bf99faffc5888
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62375762"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74744322"
 ---
-# <a name="compiler-error-c2438"></a>Derleyici Hatası C2438
+# <a name="compiler-error-c2438"></a>Derleyici hatası C2438
 
-'identifier': statik sınıf verileri Oluşturucu başlatılamıyor
+' tanımlayıcı ': statik sınıf verileri Oluşturucu aracılığıyla başlatılamaz
 
-Bir oluşturucu, bir sınıfın statik bir üye başlatmak için kullanılır. Statik üyeleri sınıf bildirimi dışında bir tanımı başlatılmalıdır.
+Bir Oluşturucu, bir sınıfın statik bir üyesini başlatmak için kullanılır. Statik üyelerin, sınıf bildiriminin dışında bir tanımda başlatılması gerekir.
 
-Aşağıdaki örnek, C2438 oluşturur:
+Aşağıdaki örnek C2438 oluşturur:
 
-```
+```cpp
 // C2438.cpp
 struct X {
    X(int i) : j(i) {}   // C2438

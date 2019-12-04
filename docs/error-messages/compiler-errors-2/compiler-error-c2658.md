@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2658
+title: Derleyici hatası C2658
 ms.date: 11/04/2016
 f1_keywords:
 - C2658
 helpviewer_keywords:
 - C2658
 ms.assetid: 638368e8-7893-4a14-abec-13c768a9543a
-ms.openlocfilehash: 792fd497ad7cdb98ae72f3e6451780dad487624d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 77a9122d20561ceee4f211394b3b81900d5580ac
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62360417"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74756090"
 ---
-# <a name="compiler-error-c2658"></a>Derleyici Hatası C2658
+# <a name="compiler-error-c2658"></a>Derleyici hatası C2658
 
-'member': Anonim yapıda/birleşimde yeniden tanımlama
+' üye ': anonim yapıda/birleşimde yeniden tanımlama
 
-Anonim yapılar veya birleşimler iki üye bildirimlerini aynı tanımlayıcıya sahip ancak farklı türler ile içeriyordu. Altında [/Za](../../build/reference/za-ze-disable-language-extensions.md), aynı tanımlayıcı ve tür üyeleri için bu hatayı alırsınız.
+İki anonim yapı veya birleşimler aynı tanımlayıcıya sahip ancak farklı türlerde üye bildirimi içeriyordu. [/Za](../../build/reference/za-ze-disable-language-extensions.md)'nin altında aynı tanımlayıcıya ve türe sahip üyeler için de bu hatayı alırsınız.
 
-Aşağıdaki örnek, C2658 oluşturur:
+Aşağıdaki örnek C2658 oluşturur:
 
-```
+```cpp
 // C2658.cpp
 // compile with: /c
 struct X {

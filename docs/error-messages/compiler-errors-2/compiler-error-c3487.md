@@ -6,28 +6,28 @@ f1_keywords:
 helpviewer_keywords:
 - C3487
 ms.assetid: 39bda474-4418-4a79-98bf-2b22fa92eaaa
-ms.openlocfilehash: 01f8a1bd74ed2b7a3150afae5b46128c6f5b0ca2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7b38755470e3746066711382b2ed471badc8e197
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62381156"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74738446"
 ---
 # <a name="compiler-error-c3487"></a>Derleyici Hatası C3487
 
-'dönüş türü': tüm dönüş ifadeleri aynı tür olarak çözümlenmelidir: daha önce 'dönüş türü' şeklindeydi
+' Return Type ': tüm dönüş ifadeleri aynı tür olarak çözümlenmelidir: daha önce ' Return Type ' idi
 
-Tek bir dönüş deyimi içermiyorsa, bir lambda dönüş türü belirtmelisiniz. Bir lambda, birden fazla dönüş deyimleri içeriyorsa, tüm aynı türde olmalıdır.
+Bir lambda, tek bir dönüş ekstresi içermiyorsa, dönüş türünü belirtmelidir. Lambda birden çok return deyimi içeriyorsa, bunların hepsi aynı türde olmalıdır.
 
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için
 
-- Bir lambda sondaki dönüş türü belirtin. Lambda tüm döndürür aynı türü veya dönüş türüne örtük olarak dönüştürülebilir doğrulayın.
+- Lambda için bir bitiş dönüş türü belirtin. Lambdanın tüm dönüşlerden aynı türde olduğunu veya dönüş türüne örtük olarak dönüştürülebilir olduğunu doğrulayın.
 
 ## <a name="example"></a>Örnek
 
 Aşağıdaki örnek, lambda dönüş türleri eşleşmediğinden C3487 oluşturur:
 
-```
+```cpp
 // C3487.cpp
 // Compile by using: cl /c /W4 C3487.cpp
 

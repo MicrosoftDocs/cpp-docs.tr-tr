@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3351
+title: Derleyici hatası C3351
 ms.date: 11/04/2016
 f1_keywords:
 - C3351
 helpviewer_keywords:
 - C3351
 ms.assetid: c021bbbe-1067-4f51-af4f-940d2b792eb5
-ms.openlocfilehash: 3935acc645403efcd579a80340ebb9794bc1052a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d93d6b08268aa8d6a7a7ad2e2086f4799417bbb4
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62402664"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74737471"
 ---
-# <a name="compiler-error-c3351"></a>Derleyici Hatası C3351
+# <a name="compiler-error-c3351"></a>Derleyici hatası C3351
 
-'object': temsilci Oluşturucu: ikinci bağımsız değişkeni, bir statik üye işlevini ya da Genel işlevin adresi olmalıdır
+' Object ': temsilci Oluşturucu: ikinci bağımsız değişken statik bir üye işlevin veya genel işlevin adresi olmalıdır
 
-Derleyiciye bildirilen bir işlevi adresi beklenen `static`.
+Derleyici `static`olarak belirtilen bir işlevin adresini bekliyordu.
 
-Aşağıdaki örnek, C3351 oluşturur:
+Aşağıdaki örnek C3351 oluşturur:
 
-```
+```cpp
 // C3351a.cpp
 // compile with: /clr
 delegate int D(int, int);

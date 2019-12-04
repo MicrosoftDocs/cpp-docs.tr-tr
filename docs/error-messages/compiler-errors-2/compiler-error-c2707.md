@@ -1,37 +1,37 @@
 ---
-title: Derleyici Hatası C2707
+title: Derleyici hatası C2707
 ms.date: 11/04/2016
 f1_keywords:
 - C2707
 helpviewer_keywords:
 - C2707
 ms.assetid: 3deaf45c-74da-4c9d-acc6-b82412720b74
-ms.openlocfilehash: ce86f69b36b915b3e757b5d18430c99cb288e4e7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e29812563ef1d4d7f6612ea2516f2f6327e90e1b
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62161010"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74760445"
 ---
-# <a name="compiler-error-c2707"></a>Derleyici Hatası C2707
+# <a name="compiler-error-c2707"></a>Derleyici hatası C2707
 
-'identifier': iç işlev için hatalı bağlam
+' tanımlayıcı ': iç işlev için hatalı bağlam
 
-Yapılandırılmış özel durum işleme iç belirli bağlamlarda geçersizdir:
+Yapılandırılmış özel durum işleme iç bilgileri belirli bağlamlarda geçersizdir:
 
-- `_exception_code()` özel durum filtresinin dışında veya `__except` bloğu
+- özel durum filtresinin veya `__except` bloğunun dışında `_exception_code()`
 
-- `_exception_info()` özel durum filtresinin dışında
+- özel durum filtresinin dışında `_exception_info()`
 
-- `_abnormal_termination()` dışında bir `__finally` bloğu
+- `__finally` bloğunun dışında `_abnormal_termination()`
 
-Hatayı gidermek için özel durum işleme iç yapılar uygun içerikte yerleştirildiğinden emin olun.
+Hatayı gidermek için özel durum işleme iç kapsamının uygun bağlamda yerleştirildiğinden emin olun.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C2707 oluşturur.
+Aşağıdaki örnek C2707 oluşturur.
 
-```
+```cpp
 // C2707.cpp
 #include <windows.h>
 #include <stdio.h>

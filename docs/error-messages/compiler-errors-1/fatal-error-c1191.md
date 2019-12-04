@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C1191
 ms.assetid: 2888c6c4-b4e6-449e-8ee0-7917f31086df
-ms.openlocfilehash: 89af73699120ee4d8af3cda746727d758ef6d22c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7c6756dec29138af534278742d99c2f77109b1cc
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62228890"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74747299"
 ---
 # <a name="fatal-error-c1191"></a>Önemli hata C1191
 
-'dll' yalnızca genel kapsamda içeri aktarılabilir
+' dll ' yalnızca genel kapsamda içeri aktarılabilir
 
-/ CLR programlama kullanan bir programa mscorlib.dll dosyasını içeri aktarma yönergesi, bir ad alanı veya işlev içinde yer alamaz, ancak genel kapsamda yer almalıdır.
+Mscorlib. dll dosyasını/CLR programlama kullanan bir programa içeri aktarma yönergesi bir ad alanında veya işlevde bulunamaz, ancak genel kapsamda görünmeli.
 
-Aşağıdaki örnek, C1191 oluşturur:
+Aşağıdaki örnek C1191 oluşturur:
 
-```
+```cpp
 // C1191.cpp
 // compile with: /clr
 namespace sample {
@@ -31,7 +31,7 @@ namespace sample {
 
 Olası çözüm:
 
-```
+```cpp
 // C1191b.cpp
 // compile with: /clr /c
 #using <mscorlib.dll>

@@ -1,31 +1,31 @@
 ---
-title: Derleyici Hatası C3899
+title: Derleyici hatası C3899
 ms.date: 11/04/2016
 f1_keywords:
 - C3899
 helpviewer_keywords:
 - C3899
 ms.assetid: 14e07e4a-f7a7-4309-baaa-649d69e12e23
-ms.openlocfilehash: 26860ba0e8fd92f491ee389147605ba82cecf25c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 022bc1a37f7d9cfdb2c206592dd303a9c3c95080
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62376035"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74749119"
 ---
-# <a name="compiler-error-c3899"></a>Derleyici Hatası C3899
+# <a name="compiler-error-c3899"></a>Derleyici hatası C3899
 
-'var': initonly veri üyesinin lvalue kullanımına doğrudan 'class' sınıfındaki bir paralel bölgenin içinde izin verilmez
+' var ': initonly veri üyesinin lvalue kullanımına doğrudan ' class ' sınıfındaki bir paralel bölgenin içinde izin verilmez
 
-Bir [initonly (C++/CLI)](../../dotnet/initonly-cpp-cli.md) veri üyesi içinde bir parçası olan bir oluşturucu başlatılamıyor bir [paralel](../../parallel/openmp/reference/parallel.md) bölge.  Derleyici bu kod, dahili bir yeniden konumlandırma gerçekleştirdiğinden etkili bir şekilde artık Oluşturucusu bir parçası olduğu gibi budur.
+Bir [initonly (C++/CLI)](../../dotnet/initonly-cpp-cli.md) veri üyesi, bir [paralel](../../parallel/openmp/reference/parallel.md) bölgedeki oluşturucunun bu bölümü içinde başlatılamaz.  Bunun nedeni, derleyicinin bu kodun dahili bir konum değiştirme işlemi yaptığı, yani artık oluşturucunun bir parçası olmadığı için.
 
-Çözümlenecek, initonly veri üyesi Oluşturucu, ancak bir paralel bölgenin dışında başlatın.
+Çözümlemek için, oluşturucuda initonly veri üyesini, ancak paralel bölgenin dışına başlatın.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C3899 oluşturur.
+Aşağıdaki örnek C3899 oluşturur.
 
-```
+```cpp
 // C3899.cpp
 // compile with: /clr /openmp
 #include <omp.h>

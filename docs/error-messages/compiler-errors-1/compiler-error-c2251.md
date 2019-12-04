@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2251
+title: Derleyici hatası C2251
 ms.date: 11/04/2016
 f1_keywords:
 - C2251
 helpviewer_keywords:
 - C2251
 ms.assetid: fefe050c-f8d3-4316-b237-8007dbcdd3bf
-ms.openlocfilehash: b7ffb5b8d425e74523e491827ffb8878b8e03b38
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d44ed7af3552f0a7c9cc9b5b2b0d14a468713254
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62301389"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74759704"
 ---
-# <a name="compiler-error-c2251"></a>Derleyici Hatası C2251
+# <a name="compiler-error-c2251"></a>Derleyici hatası C2251
 
-ad alanı 'ad alanı', 'member' üyesi yok - 'member' şunu mu demek istediniz?
+' namespace ' ad alanında ' Member ' üyesi yok-' Member ' olarak mı demek Istediniz?
 
-Derleyici, bir tanımlayıcı belirtilen ad alanında bulunacak ulaşamadı.
+Derleyici belirtilen ad alanında bir tanımlayıcı bulamadı.
 
-Aşağıdaki örnek, C2251 oluşturur:
+Aşağıdaki örnek C2251 oluşturur:
 
-```
+```cpp
 // C2251.cpp
 // compile with: /c
 namespace A {

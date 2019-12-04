@@ -1,31 +1,31 @@
 ---
-title: Derleyici Hatası C3095
+title: Derleyici hatası C3095
 ms.date: 11/04/2016
 f1_keywords:
 - C3095
 helpviewer_keywords:
 - C3095
 ms.assetid: cde725be-0936-40f6-9e57-e1d7d0710f83
-ms.openlocfilehash: d0cf35e7964925623be39c0177d77fc5a6231ad2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1630def4fb2b22c948b3a33b081227d91351bf35
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62152494"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74756831"
 ---
-# <a name="compiler-error-c3095"></a>Derleyici Hatası C3095
+# <a name="compiler-error-c3095"></a>Derleyici hatası C3095
 
-'attribute': öznitelik yinelenemez
+' Attribute ': öznitelik yinelenemez
 
-Bazı öznitelikleri, öznitelik birden fazla oluşumu için bir hedef uygulanamaz şekilde bildirilir.
+Bazı öznitelikler bu şekilde, özniteliğin birden çok tekrarlarının bir hedefe uygulanamadığından bu şekilde bildirilmiştir.
 
-Daha fazla bilgi için [kullanıcı tanımlı öznitelikler](../../extensions/user-defined-attributes-cpp-component-extensions.md).
+Daha fazla bilgi için bkz. [Kullanıcı tanımlı öznitelikler](../../extensions/user-defined-attributes-cpp-component-extensions.md).
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C3095 oluşturur.
+Aşağıdaki örnek C3095 oluşturur.
 
-```
+```cpp
 // C3095.cpp
 // compile with: /clr /c
 using namespace System;

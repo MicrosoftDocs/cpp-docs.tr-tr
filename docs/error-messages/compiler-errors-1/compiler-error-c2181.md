@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2181
+title: Derleyici hatası C2181
 ms.date: 11/04/2016
 f1_keywords:
 - C2181
 helpviewer_keywords:
 - C2181
 ms.assetid: d52b2fe4-566a-40a9-b8e2-8dce1f287668
-ms.openlocfilehash: a676794b5dedd17cfb973de36d3771ef1130a786
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 64aea11924d9a1624090c2dd6f640ee2f9a037a0
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62386102"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74737159"
 ---
-# <a name="compiler-error-c2181"></a>Derleyici Hatası C2181
+# <a name="compiler-error-c2181"></a>Derleyici hatası C2181
 
-eşleşen if olmayan geçersiz else
+eşleşmeyen if olmayan geçersiz Else
 
-Her `else` eşleştirmesi olan `if`.
+Her `else` eşleşen bir `if`sahip olmalıdır.
 
-Aşağıdaki örnek, C2181 oluşturur:
+Aşağıdaki örnek C2181 oluşturur:
 
-```
+```cpp
 // C2181.cpp
 int main() {
    int i = 0;
@@ -32,7 +32,7 @@ int main() {
 
 Olası çözüm:
 
-```
+```cpp
 // C2181b.cpp
 int main() {
    int i = 0;

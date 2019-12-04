@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2791
+title: Derleyici hatası C2791
 ms.date: 11/04/2016
 f1_keywords:
 - C2791
 helpviewer_keywords:
 - C2791
 ms.assetid: 938ad1fb-75d9-4ce2-ad92-83d6249005b5
-ms.openlocfilehash: 66a111ea6fe2ca5acfbc473d19da62d9de67372a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d589094f117135474d1a8788867d2d571bbb5f5d
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62360170"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74739551"
 ---
-# <a name="compiler-error-c2791"></a>Derleyici Hatası C2791
+# <a name="compiler-error-c2791"></a>Derleyici hatası C2791
 
-Geçersiz 'super' kullanımı: 'class', herhangi bir taban sınıfa sahip değil
+geçersiz ' Super ' kullanımı: ' class ' herhangi bir taban sınıfa sahip değil
 
-Anahtar sözcüğü [Süper](../../cpp/super.md) herhangi bir taban sınıfa sahip olmayan bir sınıf üye işlevinin bağlamında kullanıldı.
+[Super](../../cpp/super.md) anahtar sözcüğü, temel sınıfı olmayan bir sınıfın üye işlevinin bağlamı içinde kullanıldı.
 
-Aşağıdaki örnek, C2791 oluşturur:
+Aşağıdaki örnek C2791 oluşturur:
 
-```
+```cpp
 // C2791.cpp
 struct D {
    void mf() {

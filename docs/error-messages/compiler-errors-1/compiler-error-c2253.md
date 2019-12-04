@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2253
+title: Derleyici hatası C2253
 ms.date: 11/04/2016
 f1_keywords:
 - C2253
 helpviewer_keywords:
 - C2253
 ms.assetid: bd6445ae-b2c1-4669-9657-a8f4acf80b16
-ms.openlocfilehash: 847c37c6ae5edf14205d3d46ca624a572c8d6b6b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 89acfd8a03dc0ee2dc25e14e0b3a63ab25151cc6
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62397568"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74758859"
 ---
-# <a name="compiler-error-c2253"></a>Derleyici Hatası C2253
+# <a name="compiler-error-c2253"></a>Derleyici hatası C2253
 
-'function': Saf belirtici veya soyut geçersiz kılma belirticisi yalnızca sanal işlev üzerinde izin verilir
+' function ': saf belirtici veya soyut geçersiz kılma belirticisi yalnızca sanal işlevde kullanılabilir
 
-Sanal olmayan bir işlev olarak saf belirtilen `virtual`.
+Sanal olmayan bir işlev saf `virtual`olarak belirtilir.
 
-Aşağıdaki örnek, C2253 oluşturur:
+Aşağıdaki örnek C2253 oluşturur:
 
-```
+```cpp
 // C2253.cpp
 // compile with: /c
 class A {
@@ -31,9 +31,9 @@ public:
 };
 ```
 
-Aşağıdaki örnek, C2253 oluşturur:
+Aşağıdaki örnek C2253 oluşturur:
 
-```
+```cpp
 // C2253_2.cpp
 // compile with: /clr /c
 ref struct A {

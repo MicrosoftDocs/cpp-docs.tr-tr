@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2711
+title: Derleyici hatası C2711
 ms.date: 11/04/2016
 f1_keywords:
 - C2711
 helpviewer_keywords:
 - C2711
 ms.assetid: 9df9f808-7419-4e63-abdd-e6538ff0871f
-ms.openlocfilehash: 568128d6199d16380b6a540173eded25f5588d23
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 65612e4a7d19295a8fa49576fb1d72c852a76b82
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62160945"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74757442"
 ---
-# <a name="compiler-error-c2711"></a>Derleyici Hatası C2711
+# <a name="compiler-error-c2711"></a>Derleyici hatası C2711
 
-'function': Bu işlev yönetilen olarak derlenemiyor; #pragma unmanaged kullanmayı düşünün
+' function ': Bu işlev yönetilen olarak derlenemiyor, #pragma yönetilmeyen kullanmayı düşünün
 
-Bazı yönergeleri, derleyici için kapsayan işlevin MSIL oluşturmasını engeller.
+Bazı yönergeler derleyicinin kapsayan işlev için MSIL üretmesine engel olur.
 
-Aşağıdaki örnek, C2711 oluşturur:
+Aşağıdaki örnek C2711 oluşturur:
 
-```
+```cpp
 // C2711.cpp
 // compile with: /clr
 // processor: x86

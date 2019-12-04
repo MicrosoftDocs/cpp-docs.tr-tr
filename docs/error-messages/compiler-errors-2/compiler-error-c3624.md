@@ -1,29 +1,29 @@
 ---
-title: Derleyici Hatası C3624
+title: Derleyici hatası C3624
 ms.date: 11/04/2016
 f1_keywords:
 - C3624
 helpviewer_keywords:
 - C3624
 ms.assetid: eaac6a4f-eb11-4e4d-ab12-124ba995c5cf
-ms.openlocfilehash: bb574b194f01aa1da27b962ed6be327f4f988c3c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3b4f71ed71ddb1b14ed51ccbcd420284ddcc70f6
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62222002"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74761926"
 ---
-# <a name="compiler-error-c3624"></a>Derleyici Hatası C3624
+# <a name="compiler-error-c3624"></a>Derleyici hatası C3624
 
-'type': Bu tür, derleme 'derlemesi' başvurusu gerektirir
+' Type ': Bu türün kullanımı ' derleme ' derlemesine bir başvuru gerektiriyor
 
-Kodunuzu derlemek için gereken bir derleme (başvuru) belirtilmedi; derlemeye geçirmek [#using](../../preprocessor/hash-using-directive-cpp.md) yönergesi.
+Kodunuzu derlemek için gereken bir derleme (başvuru) belirtilmedi; derlemeyi [#using](../../preprocessor/hash-using-directive-cpp.md) yönergesine geçirin.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C3624 oluşturur:
+Aşağıdaki örnek C3624 oluşturur:
 
-```
+```cpp
 // C3624.cpp
 // compile with: /clr /c
 #using <System.Windows.Forms.dll>

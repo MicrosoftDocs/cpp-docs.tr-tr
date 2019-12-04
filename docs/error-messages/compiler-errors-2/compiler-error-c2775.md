@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2775
+title: Derleyici hatası C2775
 ms.date: 11/04/2016
 f1_keywords:
 - C2775
 helpviewer_keywords:
 - C2775
 ms.assetid: 9c488508-ade0-48f1-b94f-d538d15f807a
-ms.openlocfilehash: b0f04a64354f549115c8636cf6130d6e96470016
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: be858c7508aa520f78ec144b02738af02099b49b
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62257198"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74740058"
 ---
-# <a name="compiler-error-c2775"></a>Derleyici Hatası C2775
+# <a name="compiler-error-c2775"></a>Derleyici hatası C2775
 
-'identifier': Bu özellikle ilişkili hiçbir 'get' yöntemi
+' tanımlayıcı ': Bu özellikle ilişkili hiçbir ' Get ' yöntemi yok
 
-Bir veri üyesi ile bildirilen [özelliği](../../cpp/property-cpp.md) genişletilmiş öznitelik yok bir `get` işlevi belirtildi, ancak bir ifadenin, değerini almayı dener.
+Genişletilmiş öznitelik [özelliği](../../cpp/property-cpp.md) ile belirtilen bir veri üyesinin bir `get` işlevi yok, ancak bir ifade değeri almaya çalışıyor.
 
-Aşağıdaki örnek, C2775 oluşturur:
+Aşağıdaki örnek C2775 oluşturur:
 
-```
+```cpp
 // C2775.cpp
 struct A {
    __declspec(property(put=PutProp2, get=GetProp2)) int prop2;

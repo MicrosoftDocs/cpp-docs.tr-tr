@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2879
+title: Derleyici hatası C2879
 ms.date: 11/04/2016
 f1_keywords:
 - C2879
 helpviewer_keywords:
 - C2879
 ms.assetid: ac92b645-2394-49de-8632-43d44e0553ed
-ms.openlocfilehash: 9ac8f5e5edb1a6ed7314c5b5d125fcc9bfbe67de
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6c7238faf94a2493894534ae5684634b65bb4342
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62378927"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74736301"
 ---
-# <a name="compiler-error-c2879"></a>Derleyici Hatası C2879
+# <a name="compiler-error-c2879"></a>Derleyici hatası C2879
 
-'symbol': yalnızca var olan bir ad alanı ad alanı diğer ad tanımıyla alternatif ad verilebilir
+' symbol ': bir ad alanı diğer ad tanımı tarafından yalnızca var olan bir ad alanına alternatif ad verilebilir
 
-Oluşturamazsınız bir [ad alanı diğer adı](../../cpp/namespaces-cpp.md#namespace_aliases) için bir ad alanı dışındaki bir simge.
+Ad alanı dışında bir simgenin ad [alanı diğer adı](../../cpp/namespaces-cpp.md#namespace_aliases) oluşturamazsınız.
 
-Aşağıdaki örnek, C2879 oluşturur:
+Aşağıdaki örnek C2879 oluşturur:
 
-```
+```cpp
 // C2879.cpp
 int main() {
    int i;

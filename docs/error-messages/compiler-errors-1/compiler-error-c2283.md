@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2283
+title: Derleyici hatası C2283
 ms.date: 11/04/2016
 f1_keywords:
 - C2283
 helpviewer_keywords:
 - C2283
 ms.assetid: 8a5b3175-b480-4598-a1f7-0b50504c5caa
-ms.openlocfilehash: 1113236680241a80c462e382c8c9c7de342b5463
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7f3568aa5dfee116a225256a4452465c05f72f6f
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62388754"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74759158"
 ---
-# <a name="compiler-error-c2283"></a>Derleyici Hatası C2283
+# <a name="compiler-error-c2283"></a>Derleyici hatası C2283
 
-'identifier': Saf belirtici veya soyut geçersiz kılma belirticisi adsız yapı üzerinde izin verilmiyor
+' Identifier ': saf belirtici veya soyut geçersiz kılma belirticisi adlandırılmamış yapıda kullanılamaz
 
-Bir üye işlevi bir adsız sınıf veya yapının, izin verilmeyen bir saf tanımlayıcı ile bildirilir.
+Adlandırılmamış bir sınıfın veya yapının üye işlevi, bir saf belirtici ile tanımlanmış, buna izin verilmez.
 
-Aşağıdaki örnek, C2283 oluşturur:
+Aşağıdaki örnek C2283 oluşturur:
 
-```
+```cpp
 // C2283.cpp
 // compile with: /c
 struct {

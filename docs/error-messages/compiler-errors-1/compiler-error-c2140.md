@@ -6,26 +6,26 @@ f1_keywords:
 helpviewer_keywords:
 - C2140
 ms.assetid: d44a0500-002c-4632-9e5e-c71c3a473ec4
-ms.openlocfilehash: 35b6e38290acddb41bdf53d9663a058259300ee8
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 0329872ff0baee595bf32486a53d6abf91d208d4
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64345689"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74756532"
 ---
 # <a name="compiler-error-c2140"></a>Derleyici Hatası C2140
 
-'type': bir genel tür parametresine bağlı bir tür, derleyici iç tür niteliğine 'ayırt edici nitelik' bağımsız değişkeni olarak kullanılamaz
+' Type ': genel bir tür parametresine bağlı bir tür, derleyici iç tür nitelik ' nitelik ' için bağımsız değişken olarak kullanılamaz
 
-Geçersiz tür tanımlayıcısı için bir türü niteliğine geçirildi.
+Nitelik türüne geçersiz bir tür belirleyicisi geçirildi.
 
-Daha fazla bilgi için [tür özellikleri için derleyici desteği](../../extensions/compiler-support-for-type-traits-cpp-component-extensions.md).
+Daha fazla bilgi için bkz. [tür nitelikleri Için derleyici desteği](../../extensions/compiler-support-for-type-traits-cpp-component-extensions.md).
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C2140 oluşturur.
+Aşağıdaki örnek C2140 oluşturur.
 
-```
+```cpp
 // C2140.cpp
 // compile with: /clr /c
 template <class T>

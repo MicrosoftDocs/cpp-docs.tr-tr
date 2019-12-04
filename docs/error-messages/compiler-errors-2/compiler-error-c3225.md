@@ -1,31 +1,31 @@
 ---
-title: Derleyici Hatası C3225
+title: Derleyici hatası C3225
 ms.date: 11/04/2016
 f1_keywords:
 - C3225
 helpviewer_keywords:
 - C3225
 ms.assetid: f5f66973-256e-4298-ac46-c87819cbde34
-ms.openlocfilehash: cae0572002c849fb5aed771993d3a89ed82c726a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1caa1e7ce787ffc14e615c946b5d670c75e0332a
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62174022"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74757624"
 ---
-# <a name="compiler-error-c3225"></a>Derleyici Hatası C3225
+# <a name="compiler-error-c3225"></a>Derleyici hatası C3225
 
-genel tür bağımsız değişkeni 'arg' için 'type' olamaz, türü veya değer türü olması gerekir
+' arg ' için genel tür bağımsız değişkeni ' Type ' olamaz; bir değer türü veya tanıtıcı türü olmalıdır
 
-Genel tür bağımsız değişkeni doğru türde değildi.
+Genel tür bağımsız değişkeni doğru türde değil.
 
-Daha fazla bilgi için [genel türler](../../extensions/generics-cpp-component-extensions.md).
+Daha fazla bilgi için bkz. [Genel türler](../../extensions/generics-cpp-component-extensions.md).
 
 ## <a name="example"></a>Örnek
 
-Yerel bir tür ile genel tür örneği oluşturulamıyor. Aşağıdaki örnek, C3225 oluşturur.
+Yerel bir tür ile genel bir tür örnekleyemezsiniz. Aşağıdaki örnek C3225 oluşturur.
 
-```
+```cpp
 // C3225.cpp
 // compile with: /clr
 class A {};
@@ -43,7 +43,7 @@ int main() {
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C# kullanarak bir bileşen oluşturur. Kısıtlamanın genel tür yalnızca bir değer türü ile oluşturulmasını belirtir dikkat edin.
+Aşağıdaki örnek kullanarak C#bir bileşen oluşturur. Kısıtlama genel türün yalnızca bir değer türüyle örneklenebilir olduğunu belirtir.
 
 ```
 // C3225_b.cs
@@ -54,9 +54,9 @@ public class MyList<T> where T: struct {}
 
 ## <a name="example"></a>Örnek
 
-Bu örnek C# kullanan-bileşen yazılan ve MyList yalnızca olabilir kısıtlamayı ihlal eden bir değer türü ile dışında örneği <xref:System.Nullable>. Aşağıdaki örnek, C3225 oluşturur.
+Bu örnek, C#-yazılan bileşeni kullanır ve myList 'in yalnızca <xref:System.Nullable>dışında bir değer türüyle örneklenebilir kısıtlamasını ihlal eder. Aşağıdaki örnek C3225 oluşturur.
 
-```
+```cpp
 // C3225_c.cpp
 // compile with: /clr
 #using "C3225_b.dll"

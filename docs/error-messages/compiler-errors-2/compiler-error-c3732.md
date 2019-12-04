@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C3732
+title: Derleyici hatası C3732
 ms.date: 11/04/2016
 f1_keywords:
 - C3732
 helpviewer_keywords:
 - C3732
 ms.assetid: 2d55a7e1-9c39-4379-a093-2f7beb27e2ca
-ms.openlocfilehash: c71cca3643f6337060de6e4bb56ac64d8f0d6e4e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 30ade41ae463923cc5cc9911469e587decacbc64
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62327996"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74752931"
 ---
-# <a name="compiler-error-c3732"></a>Derleyici Hatası C3732
+# <a name="compiler-error-c3732"></a>Derleyici hatası C3732
 
-'interface': COM olayları başlatan bir özel arabirim IDispatch'ten devralamaz
+' interface ': COM olaylarını harekete uygulayan özel bir arabirim ıdispatch 'ten devralınabilir
 
-COM olayları destekleyen bir arabirim devralamaz `IDispatch`. Daha fazla bilgi için [com'da olay işleme](../../cpp/event-handling-in-com.md).
+COM olaylarını destekleyen bir arabirim `IDispatch`'ten devralınabilir. Daha fazla bilgi için bkz. [com 'Da olay işleme](../../cpp/event-handling-in-com.md).
 
 Aşağıdaki hata C3732 oluşturur:
 
-```
+```cpp
 // C3732.cpp
 #define _ATL_ATTRIBUTES 1
 #include "atlbase.h"

@@ -1,31 +1,31 @@
 ---
-title: Derleyici Hatası C3296
+title: Derleyici hatası C3296
 ms.date: 11/04/2016
 f1_keywords:
 - C3296
 helpviewer_keywords:
 - C3296
 ms.assetid: fc4c9dcd-16cf-4eee-a1ac-c43e7c29e443
-ms.openlocfilehash: c0a162590ac2a72dda17b2ecfc96899e94cde24c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c6821fc1bafa5110fe9a3db2da9a69ad6c1e57f2
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62222550"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74760106"
 ---
-# <a name="compiler-error-c3296"></a>Derleyici Hatası C3296
+# <a name="compiler-error-c3296"></a>Derleyici hatası C3296
 
-'property': Bu ada sahip bir özellik zaten var.
+' Property ': Bu ada sahip bir özellik zaten var
 
-Derleyici, aynı ada sahip birden fazla özelliğe karşılaşıldı. Bir tür içindeki her bir özellik adları benzersiz olmalıdır.
+Derleyici aynı ada sahip birden fazla özellik ile karşılaştı. Bir tür içindeki her bir özelliğin benzersiz bir adı olmalıdır.
 
-Daha fazla bilgi için [özelliği](../../extensions/property-cpp-component-extensions.md).
+Daha fazla bilgi için bkz. [özellik](../../extensions/property-cpp-component-extensions.md).
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C3296 oluşturur.
+Aşağıdaki örnek C3296 oluşturur.
 
-```
+```cpp
 // C3296.cpp
 // compile with: /clr /c
 using namespace System;
