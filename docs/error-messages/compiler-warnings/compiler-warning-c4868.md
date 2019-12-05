@@ -3,31 +3,33 @@ title: Derleyici Uyarısı C4868
 ms.date: 10/26/2017
 f1_keywords:
 - C4868
+helpviewer_keywords:
+- C4868
 ms.assetid: fc6aa7e5-34dd-4ec2-88bd-16e430361dc7
-ms.openlocfilehash: 72700091fcd22271e6913228a1206b3d5efcbdef
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: c1d49eb61a5c7c47fa83dacb39ed50f42e0fb147
+ms.sourcegitcommit: 8762a3f9b5476b4dee03f0ee8064ea606550986e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65447172"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74810485"
 ---
 # <a name="compiler-warning-level-4-c4868"></a>Derleyici Uyarısı (düzey 4) C4868
 
-> '_dosya_(*line_number*)' derleyici küme ayracıyla belirtilen Başlatıcı listesinde soldan sağa Değerlendirme sırasını zorla
+> '_File_(*Line_Number*) ' derleyicisi, örgü Başlatıcı listesinde soldan sağa değerlendirme sırasını zorlamaz
 
-Bir küme ayracıyla belirtilen Başlatıcı listesinde soldan sağa sırada değerlendirilecek öğeleridir. Derleyici olduğu bu düzeni olmasını garanti etmek mümkün iki durum vardır: ilk değere göre; geçirilen nesneleri öğelerin bazıları ise ile derlerken, ikincisi ise `/clr` ve bazı öğeleri alanlar nesne veya dizi öğeleri. Derleyici, soldan sağa değerlendirmesi garanti edemez zaman uyarısı C4868 yayar.
+Bir örgü Başlatıcı listesinin öğeleri soldan sağa sırada değerlendirilir. Derleyicinin bu sırayı garanti edemediği iki durum vardır: ilki, bazı öğeler değere göre geçirilir; İkincisi `/clr` ile derlerken, bazı öğeler nesnelerin alanları veya dizi öğeleridir. Derleyici soldan sağa değerlendirmeyi garanti edemediği zaman, uyarı C4868 yayar.
 
-Bu uyarı, Visual Studio 2015 güncelleştirme 2 için yapılmış derleyici uyumluluğu iş sonucu olarak oluşturulabilir. Visual Studio 2015 güncelleştirme 2 önce derlenmiş kod, şimdi C4868 oluşturabilirsiniz.
+Bu uyarı, Visual Studio 2015 güncelleştirme 2 için yapılan derleyici uygunluk işinin bir sonucu olarak oluşturulabilir. Visual Studio 2015 güncelleştirme 2 ' den önce derlenen kod artık C4868 oluşturabilir.
 
-Varsayılan olarak bu uyarıyı kapalıdır. Kullanım `/Wall` bu uyarıyı etkinleştirmek için.
+Bu uyarı varsayılan olarak kapalıdır. Bu uyarıyı etkinleştirmek için `/Wall` kullanın.
 
-Bu uyarıyı çözmek için önce başlatıcı listesi öğeleri soldan sağa değerlendirme sırası bağımlı yan etki değerlendirme öğelerinin ne zaman üretebilir gibi gerekli olup olmadığını göz önünde bulundurun. Çoğu durumda, öğeleri değerlendirilme sırasını gözlemlenebilir bir etkisi yok.
+Bu uyarıyı çözmek için ilk olarak, öğe değerlendirmesi sıra bağımlı yan etkileri oluşturabilecek gibi, başlatıcı listesi öğelerinin sol-sağ değerlendirmesinin gerekip gerekmediğini göz önünde bulundurun. Birçok durumda, öğelerin değerlendirildiği sıranın bir observable etkisi yoktur.
 
-Soldan sağa Değerlendirme sırasını olması gerekiyorsa, öğeleri geçirmek mümkün olup olmadığını göz önünde bulundurun `const` yerine başvuru. Bunun gibi bir değişiklik, aşağıdaki kod örneği'nde uyarı ortadan kaldırır.
+Değerlendirme sırası soldan sağa doğru olmalıdır, bunun yerine öğeleri `const` başvuruya göre geçirmek mümkün olup olmadığını göz önünde bulundurun. Bu gibi bir değişiklik, aşağıdaki kod örneğindeki uyarıyı ortadan kaldırır.
 
 ## <a name="example"></a>Örnek
 
-Bu örnek, C4868 oluşturur ve bunu düzeltmek için bir yol gösterir:
+Bu örnek C4868 oluşturur ve bunu çözmek için bir yol gösterir:
 
 ```cpp
 // C4868.cpp

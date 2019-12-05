@@ -1,33 +1,37 @@
 ---
 title: Derleyici Uyarısı (düzey 1) C4436
 ms.date: 11/04/2016
+f1_keywords:
+- C4436
+helpviewer_keywords:
+- C4436
 ms.assetid: 2b54a1fc-c9c6-4cc9-90be-faa44fc715d5
-ms.openlocfilehash: 487fb8c804ac34ba52661774c2552199c764f6b0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 762a458072a0a1104cd1af55ef1f61772485b6c9
+ms.sourcegitcommit: 8762a3f9b5476b4dee03f0ee8064ea606550986e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62408192"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74810616"
 ---
 # <a name="compiler-warning-level-1-c4436"></a>Derleyici Uyarısı (düzey 1) C4436
 
-Sanal Taban 'class1' dynamic_cast oluşturucuda veya yok edicide 'class2' için oluşturulmuş bir nesne derleme/vd2 ile başarısız veya #pragma vtordisp(2) ' class2' yürürlükte tanımlayın
+' Class1 ' sanal tabanından Oluşturucu ya da yıkıcı içindeki ' Class2 ' öğesine dynamic_cast, kısmen oluşturulmuş nesne derlemesi ile/VD2 ile hata verebilir veya #pragma vtordisp (2) etkin olarak ' Class2 ' tanımlayabilir
 
-Derleyici karşılaştı bir `dynamic_cast` işlemi aşağıdaki özelliklere sahip.
+Derleyici, aşağıdaki özelliklere sahip bir `dynamic_cast` işlemiyle karşılaştı.
 
-- Cast bir taban sınıfı işaretçisinden türetilmiş sınıf işaretçisine ' dir.
+- Atama, bir temel sınıf işaretçisinden türetilmiş sınıf işaretçisine kadar olur.
 
-- Türetilmiş bir sınıf sanal temel sınıf devralır.
+- Türetilmiş sınıf, temel sınıfı neredeyse devralır.
 
-- Türetilmiş sınıf olmayan bir `vtordisp` için sanal temel alan.
+- Türetilmiş sınıfın sanal taban için `vtordisp` alanı yok.
 
-- Dönüştürme bir oluşturucu veya yıkıcı türetilmiş sınıfın içinde bulunamadı veya türetilmiş sınıftan daha fazla bazı sınıfından devralır.
+- Cast, türetilmiş sınıfın oluşturucusunda veya yıkıcısında veya daha fazla türetilmiş sınıftan devralan bazı bir sınıfta bulunur.
 
-Uyarı gösterir `dynamic_cast` oluşturulmuş bir nesne üzerinde çalışıyorsa doğru yerine getirmeyebilir.  Türetilen Oluşturucu/yıkıcı bazı daha fazla türetilmiş nesnenin bir alt nesnesi üzerinde çalışıyorsa, gerçekleşir.  Uyarıda adlı bir türetilmiş sınıf hiçbir zaman başka ise türetilmiş, Uyarı yoksayılabilir.
+Uyarı, kısmen oluşturulmuş bir nesne üzerinde çalışıyorsa `dynamic_cast` düzgün gerçekleştiremeyeceğini gösterir.  Bu, türetilmiş Oluşturucu/yok edici başka bir türetilmiş nesnenin alt nesnesi üzerinde çalışıyorsa meydana gelir.  Uyarıda adı geçen türetilmiş sınıf hiç bir daha alınmadıysa, uyarı yoksayılabilir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek C4436 oluşturur ve yok ortaya kod oluşturma sorunu gösterir `vtordisp` alan.
+Aşağıdaki örnek C4436 oluşturur ve eksik `vtordisp` alanından oluşan kod oluşturma sorununu gösterir.
 
 ```cpp
 // C4436.cpp

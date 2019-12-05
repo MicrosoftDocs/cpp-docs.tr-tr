@@ -1,15 +1,17 @@
 ---
 title: Derleyici hatası C2813
 ms.date: 11/04/2016
+f1_keywords:
+- C2813
 helpviewer_keywords:
 - C2813
 ms.assetid: 6cf2135f-7b82-42d1-909a-5e864308a09c
-ms.openlocfilehash: b36e966d897b1a3f9a4f601ef281091160da34c3
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 2cdf22d82046c66a50be0779f08e934a05555bb9
+ms.sourcegitcommit: 8762a3f9b5476b4dee03f0ee8064ea606550986e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74750942"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74810683"
 ---
 # <a name="compiler-error-c2813"></a>Derleyici hatası C2813
 
