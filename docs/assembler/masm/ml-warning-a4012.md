@@ -1,26 +1,26 @@
 ---
 title: ML Uyarısı A4012
 ms.date: 08/30/2018
-ms.topic: error-reference
+ms.custom: error-reference
 f1_keywords:
 - A4012
 helpviewer_keywords:
 - A4012
 ms.assetid: 842b1259-9679-4eeb-a02d-672a583a94e5
-ms.openlocfilehash: f58d1f420d4acc848eaf04f93c01205dd1205468
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 40aabc264c52a0b81fcd4e29d519433cf5fecdd6
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62201358"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74854569"
 ---
 # <a name="ml-warning-a4012"></a>ML Uyarısı A4012
 
-**kesimin sınıfı 'CODE' olmadan satır numarası bilgisi**
+**' CODE ' sınıfı olmadan segment için satır numarası bilgisi**
 
-"CODE" ile biten bir sınıf adı olmadığı bir segment yönergeleri vardı. Assembler CodeView bilgisi için bu yönergeleri oluşturmadı.
+"CODE" ile biten bir sınıf adı olmayan bir kesimde yönergeler vardı. Assembler bu yönergeler için CodeView bilgisi oluşturmadı.
 
-CodeView kesimlerinde "CODE" ile bitmeyen sınıf adları ile kod modülleriyle işlenemiyor
+CodeView, "CODE" ile bitolmayan sınıf adlarıyla kesimlerdeki kod ile modülleri işleyemez.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

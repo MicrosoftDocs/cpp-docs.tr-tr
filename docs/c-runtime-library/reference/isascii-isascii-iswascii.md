@@ -37,12 +37,12 @@ helpviewer_keywords:
 - istascii function
 - iswascii function
 ms.assetid: ba4325ad-7cb3-4fb9-b096-58906d67971a
-ms.openlocfilehash: ee20711628d5c2135b4ee1c37b87cb77f3610695
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: b7677819a4b138b08ed4ff97de38c091ce0e94fd
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70954568"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74857794"
 ---
 # <a name="isascii-__isascii-iswascii"></a>isascii, __isascii, iswascii
 
@@ -64,15 +64,15 @@ int iswascii(
 ### <a name="parameters"></a>Parametreler
 
 *c*<br/>
-Sınanacak tamsayı.
+Test etmek için bir tamsayı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**C** , ASCII karakterinin belirli bir gösterimiyse, bu yordamların her biri sıfır dışında bir değer döndürür. **c** bir ASCII karakteriyse (0x00-0x7F aralığında) **__isascıı** sıfır dışında bir değer döndürür. **c** , ASCII karakterinin geniş karakterli bir gösterimiyse **ıswascıı** sıfır dışında bir değer döndürür. Bu yordamların her biri, **c** , test koşulunu karşılamadığı takdirde 0 döndürür.
+**C** , ASCII karakterinin belirli bir gösterimiyse, bu yordamların her biri sıfır dışında bir değer döndürür. **c** bir ASCII karakteriyse (0x00-0x7F aralığında) **__isascii** sıfır dışında bir değer döndürür. **c** , ASCII karakterinin geniş karakterli bir gösterimiyse **ıswascıı** sıfır dışında bir değer döndürür. Bu yordamların her biri, **c** , test koşulunu karşılamadığı takdirde 0 döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Önişlemci makrosu _CTYPE_DISABLE_MACROS tanımlanmadığı sürece hem **__isascıı** hem de **ıwascıı** makrolar olarak uygulanır.
+Önişlemci makrosu _CTYPE_DISABLE_MACROS tanımlanmadığı sürece hem **__isascii** hem de **ıswascıı** makrolar olarak uygulanır.
 
 Geriye dönük uyumluluk için, **ısascıı** , yalnızca [ &#95; &#95;stdc&#95; ](../../preprocessor/predefined-macros.md) tanımlanmadığında veya 0 olarak tanımlanmışsa bir makro olarak uygulanır; Aksi takdirde, tanımsız olur.
 
@@ -80,16 +80,16 @@ Geriye dönük uyumluluk için, **ısascıı** , yalnızca [ &#95; &#95;stdc&#95
 
 |Tchar.h yordamı|_UNICODE ve _MBCS tanımlanmaz|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|--------------------------------------|--------------------|-----------------------|
-|**_istascıı**|**__isascıı**|**__isascıı**|**iswascıı**|
+|**_istascii**|**__isascii**|**__isascii**|**iswascıı**|
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**isascıı**, **__isascıı**|C: \<CType. h ><br /><br /> C++: \<cctype > veya \<CType. h >|
+|**isascıı**, **__isascii**|C: \<CType. h ><br /><br /> C++: \<cctype > veya \<CType. h >|
 |**iswascıı**|C: \<wctype. h >, \<CType. h > veya \<wchar. h ><br /><br /> C++: \<cwctype >, \<cctype >, \<wctype. h >, \<CType. h > veya \<wchar. h >|
 
-**Isascıı**, **__isascıı** ve **ıwascıı** işlevleri Microsoft 'a özgüdür. Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+**Isascıı**, **__isascii** ve **ıwascıı** işlevleri, Microsoft 'a özgüdür. Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

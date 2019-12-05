@@ -1,24 +1,24 @@
 ---
 title: ML Önemli Olmayan Hatası A2137
 ms.date: 08/30/2018
-ms.topic: error-reference
+ms.custom: error-reference
 f1_keywords:
 - A2137
 helpviewer_keywords:
 - A2137
 ms.assetid: 913172e3-866e-49c3-9502-e49d1f0df4b0
-ms.openlocfilehash: f170325b5710f09c1a240c438e641506dce00880
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0cb75b675206491e7fa9a9d72d7af8caf6517ed8
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62177129"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74854543"
 ---
 # <a name="ml-nonfatal-error-a2137"></a>ML Önemli Olmayan Hatası A2137
 
-**çok az sayıda bağımsız değişken çağırma**
+**ÇAĞıRMAK için çok az sayıda bağımsız değişken**
 
-Bağımsız değişken sayısı geçirilen [INVOKE](../../assembler/masm/invoke.md) yönergesi olduğu çağrılan yordam için prototip belirtilen gerekli parametre sayısından daha az.
+[Invoke](../../assembler/masm/invoke.md) yönergesi kullanılarak geçirilen bağımsız değişkenlerin sayısı, çağrılan yordamın prototipte belirtilen gerekli parametrelerin sayısından daha az idi.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

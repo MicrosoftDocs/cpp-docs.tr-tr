@@ -6,26 +6,26 @@ helpviewer_keywords:
 - lambda expressions [C++], overview
 - lambda expressions [C++], vs. function objects
 ms.assetid: 713c7638-92be-4ade-ab22-fa33417073bf
-ms.openlocfilehash: c7543b3558da88b41102fa7b790bb9d9f3f18463
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: e206ea8d67bb333065bf43f7f9c2dc373a5a5258
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65222375"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74857495"
 ---
 # <a name="lambda-expressions-in-c"></a>C++'deki Lambda İfadeleri
 
-C ++ 11 ve sonraki sürümlerinde, bir lambda ifadesi — genellikle olarak adlandırılan bir *lambda*— bir anonim işlev nesnesi tanımlamanın bir yoludur (bir *kapanış*) konumunda Burada, çağrılan veya bağımsız değişken olarak geçirilen sağ bir işlev. Genellikle lambda ifadeleri, algoritmalar veya zaman uyumsuz yöntemler için geçen birkaç satır kod kapsüllemek için kullanılır. Bu makale lambdaların ne olduğunu tanımlar, bunları diğer programlama teknikleri ile karşılaştırır, faydalarını anlatır ve temel bir örnek verir.
+C++ 11 ve sonraki sürümlerinde, genellikle *lambda*olarak adlandırılan bir lambda ifadesi, bir işlev için bağımsız değişken olarak çağrıldığı veya geçirildiği konumda anonim işlev nesnesi (bir *Kapanış*) tanımlamanın kolay bir yoludur. Genellikle Lambdalar, algoritmalara veya zaman uyumsuz yöntemlere geçirilen birkaç satır kodu kapsüllemek için kullanılır. Bu makale lambdaların ne olduğunu tanımlar, bunları diğer programlama teknikleri ile karşılaştırır, faydalarını anlatır ve temel bir örnek verir.
 
 ## <a name="related-topics"></a>İlgili Konular
 
-- [İşlev nesneleri ve lambda ifadeleri](lambda-expression-syntax.md)
-- [Lambda ifadeleri ile çalışma](examples-of-lambda-expressions.md)
+- [Lambda ifadeleri ile işlev nesneleri](lambda-expression-syntax.md)
+- [Lambda ifadeleriyle çalışma](examples-of-lambda-expressions.md)
 - [constexpr lambda ifadeleri](lambda-expressions-constexpr.md)
 
-## <a name="parts-of-a-lambda-expression"></a>Bir Lambda ifadesinin bölümleri
+## <a name="parts-of-a-lambda-expression"></a>Lambda Ifadesinin kısımları
 
-Üçüncü bağımsız değişkeni olarak geçirilen basit bir lambda ISO C++ standardı gösteren `std::sort()` işlevi:
+ISO C++ standardı, `std::sort()` işlevine üçüncü bağımsız değişken olarak geçirilen basit bir lambda gösterir:
 
 ```cpp
 #include <algorithm>
@@ -41,29 +41,29 @@ void abssort(float* x, unsigned n) {
 }
 ```
 
-Bu örnekte, bir lambda bölümlerini gösterilmiştir:
+Bu çizimde bir lambda 'nin bölümleri gösterilmektedir:
 
-![Bir lambda ifadesinin yapısal öğelerini](../cpp/media/lambdaexpsyntax.png "bir lambda ifadesinin yapısal öğelerini")
+![Lambda ifadesinin yapısal öğeleri](../cpp/media/lambdaexpsyntax.png "Lambda ifadesinin yapısal öğeleri")
 
-1. *Yakalama yan tümcesi* (diğer adıyla *lambda-introducer* C++ belirtimindeki.)
+1. *Capture yan tümcesi* ( C++ belirtiminde *lambda-tanıtıcı cer* olarak da bilinir.)
 
-1. *parametre listesi* isteğe bağlı. (Diğer adıyla *lambda declarator*)
+1. *parametre listesi* Seçim. ( *Lambda bildirimci*olarak da bilinir)
 
-1. *değişebilir belirtim* isteğe bağlı.
+1. *kesilebilir belirtim* Seçim.
 
-1. *özel durum belirtimi* isteğe bağlı.
+1. *özel durum belirtimi* Seçim.
 
-1. *trailing-return-type* isteğe bağlı.
+1. *sondaki dönüş türü* Seçim.
 
-1. *Lambda gövdesi*.
+1. *lambda gövdesi*.
 
 ### <a name="capture-clause"></a>Yakalama Yan Tümcesi
 
-Bir lambda gövdesinde yeni değişkenleri çıkarabilir (içinde **C ++ 14**) ve bu erişim, ayrıca veya *yakalama*, çevreleyen kapsama değişkenleri. Bir lambda yakalama yan tümcesi ile başlar (*lambda-introducer* standart söz diziminde), hangi değişkenler yakalanır ve yakalama değere veya başvuruya göre olup olmadığını belirtir. Önekine sahip değişkenler (`&`) sahip olmayan değişkenleri değer tarafından erişilen ve ön ek, başvuru tarafından erişilir.
+Lambda, gövdesinde ( **C++ 14**' te) yeni değişkenler ekleyebilir ve ayrıca çevreleyen kapsamdaki değişkenlere erişebilir veya bunları *yakalayabilir*. Lambda, yakalama yan tümcesi (Standart sözdiziminde*lambda-tanıtıcı cer* ) ile başlar, hangi değişkenlerin yakalandığını ve yakalamanın değere göre mi yoksa başvuruya göre mi olduğunu belirtir. Ampersan (`&`) ön ekine sahip değişkenlere, bu değere göre erişilmeyen başvuru ve değişkenlere göre erişilir.
 
-Bir boş yakalama yan tümcesi `[ ]`, lambda ifadesinin gövdesinin kapsayan kapsam içinde değişkenlere erişmediğini belirtir.
+`[ ]`boş bir yakalama yan tümcesi, lambda ifadesinin gövdesinin kapsayan kapsamdaki hiçbir değişken olmadığını gösterir.
 
-Varsayılan yakalama modu kullanabilirsiniz (*yakalama varsayılan* standart söz diziminde) herhangi bir dış lambda içinde başvurulan değişkenleri yakalama belirtmek için: `[&]` başvurmanız tüm değişkenleri tarafından yakalanır anlamına gelir Başvuru ve `[=]` değere göre yakalanan oldukları anlamına gelir. Varsayılan yakalama modunu kullanın ve ardından belirli değişkenler için açıkça karşı modu belirtin. Örneğin, bir lambda gövdesi dış değişkenine erişiyorsa `total` dış değişkenine ve başvuru tarafından `factor` değere göre ardından aşağıdaki yakalama ifadeleri eşdeğerdir:
+Lambda içinde başvurulan herhangi bir dış değişkenin nasıl yakalanacağını belirtmek için varsayılan yakalama modunu (Standart sözdiziminde*yakala-varsayılan* ) kullanabilirsiniz: `[&]`, başvuruda bulunulan tüm değişkenlerin başvuruya göre yakalandığını ve `[=]` değere göre yakalandığı anlamına gelir. Varsayılan yakalama modunu kullanabilir ve ardından belirli değişkenler için ters modu açıkça belirtebilirsiniz. Örneğin, bir lambda gövdesi başvuruya göre `total` dış değişkene eriştiğinde ve dış değişken değere göre `factor`, aşağıdaki yakalama yan tümceleri eşdeğerdir:
 
 ```cpp
 [&total, factor]
@@ -74,9 +74,9 @@ Varsayılan yakalama modu kullanabilirsiniz (*yakalama varsayılan* standart sö
 [&total, =]
 ```
 
-Yakalama varsayılan kullanıldığında yalnızca lambdada değişkenler yakalanır.
+Yalnızca bir yakalama varsayılan kullanıldığında lambda içinde bahsedilen değişkenler yakalanır.
 
-Yakalama yan tümcesi bir yakalama varsayılan içeriyorsa `&`, ardından hiçbir `identifier` içinde bir `capture` söz konusu yakalama yan tümcesi form olabilir `& identifier`. Benzer şekilde, yakalama yan tümcesi bir yakalama varsayılan içeriyorsa `=`, ardından hiçbir `capture` söz konusu yakalama yan tümcesi form olabilir `= identifier`. Bir tanımlayıcı veya **bu** yakalama yan tümcesinde birden çok kez yer alamaz. Aşağıdaki kod parçacığı bazı örnekler göstermektedir.
+Bir yakalama yan tümcesi bir yakalama varsayılan `&`içeriyorsa, bu yakalama yan tümcesinin `capture` `identifier` hiçbir hiçbir `& identifier`olabilir. Benzer şekilde, yakalama yan tümcesi bir yakalama varsayılan `=`içeriyorsa, bu yakalama yan tümcesinin hiçbir `capture` form `= identifier`olabilir. Bir tanımlayıcı veya bir yakalama yan tümcesinde birden çok **kez görünemez.** Aşağıdaki kod parçacığı bazı örnekler göstermektedir.
 
 ```cpp
 struct S { void f(int i); };
@@ -90,7 +90,7 @@ void S::f(int i) {
 }
 ```
 
-Bu konuda gösterildiği gibi üç nokta ve ardından bir yakalama bir paket genişletmesi olan [variadic şablon](../cpp/ellipses-and-variadic-templates.md) örneği:
+Daha sonra üç nokta olan bir yakalama, bu [değişen sayıda bağımsız değişken şablon](../cpp/ellipses-and-variadic-templates.md) örneğinde gösterildiği gibi bir paket genişletmesine sahiptir:
 
 ```cpp
 template<class... Args>
@@ -100,23 +100,23 @@ void f(Args... args) {
 }
 ```
 
-Bir sınıf yönteminin gövdesinde lambda ifadeleri kullanmak için geçirin **bu** işaretçisini yakalama yan tümcesi, kapsayan sınıfın yöntemlerini ve veri üyelerine erişim sağlamak için.
+Bir sınıf yönteminin gövdesinde lambda ifadeleri kullanmak için, **Bu** işaretçiyi yakalama yan tümcesine geçirin ve kapsayan sınıfın yöntemlerine ve veri üyelerine erişim sağlayın.
 
-**Visual Studio 2017 sürüm 15.3 ve üzeri** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)): **Bu** işaretçi yakalanıp değerle belirterek `*this` yakalama yan tümcesi içinde. Değere göre yakalama anlamına tüm *kapanış*, lambda ifadesi bu encapulates anonim bir işlev nesnesidir, lambda burada çağrıldığında her çağrı sitesine kopyalanır. Değere göre yakalama, özellikle mimarilerde belirli donanım NUMA gibi paralel veya zaman uyumsuz işlem olarak lambda yürütülür gerektiğinde faydalıdır.
+**Visual Studio 2017 sürüm 15,3 ve üzeri** ( [/std: c++ 17](../build/reference/std-specify-language-standard-version.md)ile kullanılabilir): **Bu** işaretçi, yakalama yan tümcesinde `*this` belirtilerek değere göre yakalanamaz. Değere göre yakala, lambda ifadesini ifade eden anonim işlev nesnesi olan tüm *kapanışın*, lambda 'nin çağrıldığı her çağrı sitesine kopyalandığı anlamına gelir. Özellikle NUMA gibi belirli donanım mimarilerinde, lambda paralel veya zaman uyumsuz işlemlerde yürütülecektir, değere göre yakala yararlı olur.
 
-Lambda ifadelerini sınıf yöntemleriyle kullanmaya kullanmayı gösteren bir örnek için bkz. "Örnek: Bir Lambda ifadesini bir yöntemde kullanma" [Lambda ifadeleri örnekleri](../cpp/examples-of-lambda-expressions.md).
+Lambda ifadelerinin sınıf yöntemleriyle nasıl kullanılacağını gösteren bir örnek için, [lambda Ifadeleri örneklerinde](../cpp/examples-of-lambda-expressions.md)"örnek: bir yöntemde lambda ifadesi kullanma" konusuna bakın.
 
-Yakalama yan tümcesi kullanırken, özellikle lambdaları ile kullandığınızda aşağıdaki noktaları göz önünde bulundurun öneririz çoklu iş parçacığı kullanımı:
+Capture yan tümcesini kullandığınızda, özellikle çoklu iş parçacıklı lambdaları kullandığınızda bu noktaları aklınızda tutmanız önerilir:
 
-- Başvuru yakalamaları dışarıdaki değişkenlere değiştirmek için kullanılabilir, ancak değer yakalamaları olamaz. (**değişebilir** değiştirilecek kopyalar ancak değil de sağlar.)
+- Başvuru yakalamaları, dışındaki değişkenleri değiştirmek için kullanılabilir, ancak değer yakalamaları olamaz. (**kesilebilir** , kopyaların değiştirilmesine izin verir, ancak orijinalleri etkilemez.)
 
-- Başvuru yakalamaları güncelleştirmeleri dışarıdaki değişkenlere yansıtacaktır yansıtır, ancak değer yakalamaları yapın.
+- Başvuru yakalamaları, dışındaki değişkenlere yapılan güncelleştirmeleri yansıtır, ancak değer yakalamaları desteklemez.
 
-- Başvuru yakalamalarında ömür bağımlılık sunar, ancak değer yakalamaları hiçbir ömrü bağımlılıklara sahip. Bu, zaman uyumsuz olarak lambda çalıştırdığında, özellikle önemlidir. Yerel bir zaman uyumsuz lambda başvuruya göre yakalama, bu yerel çok büyük bir olasılıkla lambda çalıştığında, tarafından çalışma zamanında bir erişim ihlali výsledek silinecekler.
+- Başvuru yakalamaları ömür bağımlılığını ortaya çıkarabilir, ancak değer yakalamalarında yaşam süresi bağımlılıkları yoktur. Lambda zaman uyumsuz olarak çalıştırıldığında bu özellikle önemlidir. Bir zaman uyumsuz lambdabaşvuruya göre yerel olarak yakalarsanız, söz konusu yerel, lambda çalışma zamanında bir erişim ihlaline neden olacak şekilde bu yerel olarak çok büyük olasılıkla geçmiş olur.
 
 ### <a name="generalized-capture-c-14"></a>Genelleştirilmiş yakalama (C++ 14)
 
-C ++ 14, ortaya çıkarabilir ve lambda işlev kapsayan kapsamda değişkenlere gerek olmadan yakalama yan tümcesinde yeni değişkenleri başlatma yok. Başlatma rastgele herhangi bir ifade belirtilebilir; Yeni değişken türü ifade tarafından üretilen türünden çıkarılır. C ++ 14'te yalnızca taşınabilir değişkenlerinden (std::unique_ptr gibi) çevreleyen kapsama yakalayabilir ve bunları bir lambda içinde kullanın, bu özelliğin bir avantajdır.
+C++ 14 ' te, bu değişkenlerin lambda işlevinin kapsayan kapsamında mevcut olması gerekmeden, yakalama yan tümcesinde yeni değişkenler oluşturabilir ve başlatabilirsiniz. Başlatma, herhangi bir rastgele ifade olarak ifade edilebilir; Yeni değişkenin türü, ifade tarafından üretilen türden çıkarılır. Bu özelliğin bir avantajı, C++ 14 ' te yalnızca taşıma değişkenlerini (std:: unique_ptr gibi) çevreleyen kapsamdan yakalayabilir ve bunları bir lambda içinde kullanabilirsiniz.
 
 ```cpp
 pNums = make_unique<vector<int>>(nums);
@@ -129,7 +129,7 @@ pNums = make_unique<vector<int>>(nums);
 
 ### <a name="parameter-list"></a>Parametre Listesi
 
-Değişkenleri yakalama ek olarak, bir lambda parametrelerini kabul edebilir. Parametre listesi (*lambda declarator* standart sözdiziminde) isteğe bağlıdır ve birçok yönden bir işlevin parametre listesine benzer.
+Bir lambda, değişkenleri yakalamaya ek olarak giriş parametrelerini kabul edebilir. Bir parametre listesi (Standart sözdiziminde*lambda bildirimci* ) isteğe bağlıdır ve çoğu yönü bir işlevin parametre listesine benzer.
 
 ```cpp
 auto y = [] (int first, int second)
@@ -138,7 +138,7 @@ auto y = [] (int first, int second)
 };
 ```
 
-İçinde **C++ 14**, parametre türü genelse, auto anahtar kelimesini tür belirticisi kullanabilirsiniz. Bu işlev çağrısı işleci bir şablon olarak oluşturmak için derleyicinin bildirir. Otomatik parametre listesindeki her bir örneğini bir benzersiz tür parametresine eşdeğerdir.
+**C++ 14**' te, parametre türü genel ise, otomatik anahtar sözcüğünü tür belirleyicisi olarak kullanabilirsiniz. Bu, derleyiciye işlev çağrısı işlecini şablon olarak oluşturmasını söyler. Bir parametre listesindeki Auto öğesinin her örneği ayrı bir tür parametresine eşdeğerdir.
 
 ```cpp
 auto y = [] (auto first, auto second)
@@ -147,17 +147,17 @@ auto y = [] (auto first, auto second)
 };
 ```
 
-Bir lambda ifadesi, kendi bağımsız değişkeni olarak başka bir lambda ifadesini alabilir. Daha fazla bilgi için "Yüksek sıralı Lambda Expressions" bölümüne bakın. [Examples of Lambda Expressions](../cpp/examples-of-lambda-expressions.md).
+Bir lambda ifadesi, kendi bağımsız değişkeni olarak başka bir lambda ifadesini alabilir. Daha fazla bilgi için bkz. [lambda Ifadelerinin örnekleri](../cpp/examples-of-lambda-expressions.md)konusundaki "daha yüksek sıralı Lambda ifadeleri".
 
-Parametre listesi isteğe bağlı olduğundan, lambda ifadesine bağımsız değişkenler geçmez ve kendi lambda-declarator içermiyor, boş ayraçları atlayabilirsiniz *özel durum belirtimi*,  *trailing-return-type*, veya **değişebilir**.
+Bir parametre listesi isteğe bağlı olduğundan, lambda ifadesine bağımsız değişkenler geçirmezseniz ve lambda bildirimci *özel durum belirtimi*, *sondaki dönüş türü*ya da **kesilebilir**içermiyorsa boş ayraçları atlayabilirsiniz.
 
 ### <a name="mutable-specification"></a>Değişebilir Belirtim
 
-Genellikle, sabit değerli bir lambdanın işlev çağrısı işleci, ancak kullanım **değişebilir** anahtar sözcüğü ortadan bu kaldırır. Değişebilir veri üyeleri oluşturmaz. Değişebilir belirtim, bir lambda ifadesinin gövdesinin değere göre yakalanan değişkenleri değiştirmesini sağlar. Bu makalenin ilerleyen bölümlerinde verilen örneklerde bazıları nasıl kullanabileceğinizi gösteren **değişebilir**.
+Genellikle, bir lambda 'nin işlev çağrısı işleci sabit değere göre, ancak **kesilebilir** anahtar sözcüğünün kullanılması bunu iptal eder. Değişebilir veri üyeleri oluşturmaz. Değişebilir belirtim, bir lambda ifadesinin gövdesinin değere göre yakalanan değişkenleri değiştirmesini sağlar. Bu makalenin ilerleyen kısımlarında bazı örnekler, **değişebilir**'in nasıl kullanılacağını göstermektedir.
 
 ### <a name="exception-specification"></a>Özel Durum Belirtimi
 
-Kullanabileceğiniz `noexcept` lambda ifadesi bir özel durum oluşturmadığını belirtmek için özel durum belirtimi. Normal İşlevler, Microsoft ile C++ derleyici uyarısı oluşturur [C4297](../error-messages/compiler-warnings/compiler-warning-level-1-c4297.md) bir lambda ifadesi bildirir, `noexcept` özel durum belirtimi ve lambda gövdesi burada gösterildiği gibi bir özel durum oluşturur:
+`noexcept` özel durumunu kullanarak lambda ifadesinin özel durum oluşturmayacağını belirtebilirsiniz. Normal işlevlerde olduğu gibi, bir Lambda C++ ifadesi `noexcept` özel durum belirtimini bildirirse ve lambda gövdesi aşağıda gösterildiği gibi bir özel durum oluşturursa, Microsoft derleyicisi Uyarı [C4297](../error-messages/compiler-warnings/compiler-warning-level-1-c4297.md) oluşturur:
 
 ```cpp
 // throw_lambda_expression.cpp
@@ -168,13 +168,13 @@ int main() // C4297 expected
 }
 ```
 
-Daha fazla bilgi için [özel durum belirtimleri (throw)](../cpp/exception-specifications-throw-cpp.md).
+Daha fazla bilgi için bkz. [özel durum belirtimleri (throw)](../cpp/exception-specifications-throw-cpp.md).
 
 ### <a name="return-type"></a>Dönüş Türü
 
-Bir lambda ifadesinin dönüş türü otomatik olarak çıkarılır. Kullanmak zorunda değilsiniz [otomatik](../cpp/auto-cpp.md) anahtar sözcüğü, belirtmediğiniz sürece bir *trailing-return-type*. *Trailing-return-type* dönüş türü bölümü sıradan bir yöntem veya işlev benzer. Ancak, dönüş türü parametre listesini izlemelisiniz ve trailing-return-type anahtar sözcüğünü içermelidir `->` dönüş türünden önce.
+Lambda ifadesinin dönüş türü otomatik olarak çıkarılır. Bir *sondaki dönüş türü*belirtmediğiniz müddetçe [Auto](../cpp/auto-cpp.md) anahtar sözcüğünü kullanmanız gerekmez. *Sondaki dönüş türü* sıradan bir yöntemin veya işlevin dönüş türü bölümüne benzer. Ancak, dönüş türü parametre listesini izlemelidir ve dönüş türünden önce `->` sondaki-Return-Type anahtar sözcüğünü dahil etmeniz gerekir.
 
-Lambda gövdesi yalnızca bir dönüş deyimi içeriyorsa veya ifade bir değer döndürmeyen bir lambda ifadesinin dönüş türü bölümü atlayabilirsiniz. Lambda gövdesi bir dönüş deyimi içeriyorsa, derleyici dönüş türünü dönüş ifadesinin türünden çıkarır. Aksi halde derleyici dönüş türü olacak şekilde çıkarır **void**. Bu ilkeyi gösteren aşağıdaki kod parçacıkları örneğini inceleyin.
+Lambda gövdesinde yalnızca bir dönüş deyimi varsa veya ifade bir değer döndürmezse bir lambda ifadesinin dönüş türü bölümünü atlayabilirsiniz. Lambda gövdesi bir dönüş deyimi içeriyorsa, derleyici dönüş türünü dönüş ifadesinin türünden çıkarır. Aksi takdirde, derleyici dönüş türünü **void**olarak çıkarır. Bu ilkeyi gösteren aşağıdaki kod parçacıkları örneğini inceleyin.
 
 ```cpp
 auto x1 = [](int i){ return i; }; // OK: return type is int
@@ -182,23 +182,23 @@ auto x2 = []{ return{ 1, 2 }; };  // ERROR: return type is void, deducing
                                   // return type from braced-init-list is not valid
 ```
 
-Lambda ifadesi, kendi dönüş değeri olarak başka bir lambda ifadesi üretebilir. Daha fazla bilgi için bkz: "Yüksek sıralı Lambda Expressions" [Examples of Lambda Expressions](../cpp/examples-of-lambda-expressions.md).
+Lambda ifadesi, kendi dönüş değeri olarak başka bir lambda ifadesi üretebilir. Daha fazla bilgi için [lambda Ifadeleri örneklerinde](../cpp/examples-of-lambda-expressions.md)"daha yüksek sıralı Lambda ifadeleri" başlığına bakın.
 
 ### <a name="lambda-body"></a>Lambda Gövdesi
 
-Lambda gövdesi (*compound-statement* standart söz diziminde) bir lambda ifadesi, sıradan bir yöntem veya işlev gövdesinin içerebilen her şeyi içerebilir. Sıradan bir işlev hem lambda ifadesinin gövdesinin değişkenleri bu tür erişebilirsiniz:
+Lambda ifadesinin lambda gövdesi (Standart sözdiziminde*bileşik deyim* ), sıradan bir yöntem veya işlev gövdesinin içerebileceği her şeyi içerebilir. Hem sıradan bir işlevin hem de bir lambda ifadesinin gövdesi bu tür değişkenlere erişebilir:
 
-- Daha önce açıklandığı gibi değişkenleri kapsayan kapsamın yakalanan.
+- Daha önce açıklandığı gibi kapsayan kapsamdan yakalanan değişkenler.
 
 - Parametreler
 
 - Yerel olarak bildirilen değişkenler
 
-- Sınıf veri üyeleri, bir sınıf içinde bildirildiğinde ve **bu** yakalanır
+- Sınıf veri üyeleri, bir sınıf içinde bildirildiğinde ve **Bu** yakalanır
 
-- Statik depolama süresine sahip herhangi bir değişken — Örneğin, genel değişkenler
+- Statik depolama süresi (örneğin, genel değişkenler) içeren herhangi bir değişken
 
-Aşağıdaki örnek, açıkça değişken yakalayan bir lambda ifadesi içerir `n` değere ve örtük olarak değişkenini `m` başvuruya göre:
+Aşağıdaki örnek, `n` değişkenini değere göre açıkça ve `m` değişkenini başvuruya göre dolaylı olarak yakalayan bir lambda ifadesi içerir.
 
 ```cpp
 // captures_lambda_expression.cpp
@@ -220,9 +220,9 @@ int main()
 0
 ```
 
-Çünkü değişken `n` kendi değeri kalır değere göre yakalanan `0` lambda ifadesine yönelik çağrı sonra. **Değişebilir** belirtimlerinden `n` lambda içinde değiştirilecek.
+`n` değişkeni değer aracılığıyla yakalandığından, lambda ifadesine yönelik çağrı sonrası, değeri `0` olarak kalır. **Kesilebilir** belirtim lambda içinde `n` değiştirilmesine izin verir.
 
-Lambda ifadesi yalnızca otomatik depolama süresine sahip değişkenleri yakalayabilse de, bir lambda ifadesinin gövdesindeki statik depolama süresine sahip değişkenleri kullanabilirsiniz. Aşağıdaki örnekte `generate` işlevi ve her öğe için bir değer atamak için bir lambda ifadesi bir `vector` nesne. Lambda ifadesi sonraki öğenin değerini oluşturmak için statik değişkeni değiştirir.
+Lambda ifadesi yalnızca otomatik depolama süresine sahip değişkenleri yakalayabilse de, bir lambda ifadesinin gövdesindeki statik depolama süresine sahip değişkenleri kullanabilirsiniz. Aşağıdaki örnek bir `generate` nesnesinin her öğesine bir değer atamak için `vector` işlevini ve bir lambda ifadesi kullanır. Lambda ifadesi sonraki öğenin değerini oluşturmak için statik değişkeni değiştirir.
 
 ```cpp
 void fillVector(vector<int>& v)
@@ -238,9 +238,9 @@ void fillVector(vector<int>& v)
 }
 ```
 
-Daha fazla bilgi için [oluşturmak](../standard-library/algorithm-functions.md#generate).
+Daha fazla bilgi için bkz. [oluşturma](../standard-library/algorithm-functions.md#generate).
 
-Aşağıdaki kod örneği, önceki örnekten gelen işlevi kullanır ve C++ Standart Kitaplığı algoritmasını kullanan bir lambda ifadesi örneği ekler `generate_n`. Bir öğenin bu lambda ifadesi atar bir `vector` önceki iki öğenin toplamına nesne. **Değişebilir** anahtar sözcüğü kullanılır, böylece lambda ifadesinin gövdesinin harici değişkenlerinin bulunan kopyalarını değiştirebilir `x` ve `y`, lambda ifadesi değere göre yakalar. Lambda ifadesi özgün değişkenlerini yakaladığından `x` ve `y` değere göre bunların değerleri kalır `1` lambda yürütüldükten sonra.
+Aşağıdaki kod örneği, önceki örnekteki işlevini kullanır ve `generate_n`C++ standart kitaplık algoritmasını kullanan bir lambda ifadesinin örneğini ekler. Bu lambda ifadesi, bir `vector` nesnesinin bir öğesini önceki iki öğenin toplamına atar. **Değişebilir** anahtar sözcüğü, lambda ifadesinin gövdesinin, lambda ifadesinin değere göre yakaladığı `x` ve `y`kopyalarını değiştirebilmesini sağlamak için kullanılır. Lambda ifadesi `x` orijinal değişkenleri yakalar ve değeri değere göre `y`, lambda yürütüldükten sonra değerleri `1` kalır.
 
 ```cpp
 // compile with: /W4 /EHsc
@@ -320,11 +320,11 @@ vector v after 1st call to fillVector(): 1 2 3 4 5 6 7 8 9
 vector v after 2nd call to fillVector(): 10 11 12 13 14 15 16 17 18
 ```
 
-Daha fazla bilgi için [generate_n](../standard-library/algorithm-functions.md#generate_n).
+Daha fazla bilgi için bkz. [generate_n](../standard-library/algorithm-functions.md#generate_n).
 
 ## <a name="constexpr-lambda-expressions"></a>constexpr lambda ifadeleri
 
-**Visual Studio 2017 sürüm 15.3 ve üzeri** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)): Bir lambda ifadesi olarak bildirilebilir `constexpr` veya sabit bir ifade içinde yakalayan veya tanıtır her bir veri üyesinin başlatılması izin verildiğinde sabit bir ifadede kullanılamaz.
+**Visual Studio 2017 sürüm 15,3 ve üzeri** ( [/std: c++ 17](../build/reference/std-specify-language-standard-version.md)Ile kullanılabilir): bir lambda ifadesi, yakalanan veya tanıtan her bir veri üyesinin başlatılmasına bir sabit ifade dahilinde izin verildiğinde `constexpr` olarak veya sabit bir ifadede kullanılıyor olabilir.
 
 ```cpp
     int y = 32;
@@ -340,7 +340,7 @@ Daha fazla bilgi için [generate_n](../standard-library/algorithm-functions.md#g
     }
 ```
 
-Bir lambda örtülü olarak başvuruluyor `constexpr` sonucunu gereksinimlerini karşılayıp karşılamadığını bir `constexpr` işlevi:
+Bir lambda, sonucu bir `constexpr` işlevinin gereksinimlerini karşılıyorsa örtülü olarak `constexpr`:
 
 ```cpp
     auto answer = [](int n)
@@ -351,7 +351,7 @@ Bir lambda örtülü olarak başvuruluyor `constexpr` sonucunu gereksinimlerini 
     constexpr int response = answer(10);
 ```
 
-Bir lambda, örtük veya açık ise `constexpr`, bir işlev işaretçisine dönüştürme üreten bir `constexpr` işlevi:
+Bir lambda örtük olarak veya açıkça `constexpr`, bir işlev işaretçisine dönüştürme bir `constexpr` işlevi üretir:
 
 ```cpp
     auto Increment = [](int n)
@@ -364,17 +364,17 @@ Bir lambda, örtük veya açık ise `constexpr`, bir işlev işaretçisine dön�
 
 ## <a name="microsoft-specific"></a>Microsoft'a özgü
 
-Lambdalar aşağıdaki ortak dil çalışma zamanı (CLR) yönetilen varlıklar içinde desteklenmiyor: **başvuru sınıfı**, **ref struct**, **değer sınıfının**, veya **değer yapısı** .
+Lambdalar şu ortak dil çalışma zamanı (CLR) yönetilen varlıklarda desteklenmiyor: **ref class**, **ref struct**, **value class**veya **Value struct**.
 
-Microsoft'a özgü değiştirici gibi kullanıyorsanız [__declspec](../cpp/declspec.md), bir lambda ifadesi Ekle hemen sonra `parameter-declaration-clause`; örneğin:
+[__Declspec](../cpp/declspec.md)gibi Microsoft 'a özgü bir değiştirici kullanıyorsanız, bunu `parameter-declaration-clause`hemen sonra bir lambda ifadesine ekleyebilirsiniz — Örneğin:
 
 ```cpp
 auto Sqr = [](int t) __declspec(code_seg("PagedMem")) -> int { return t*t; };
 ```
 
-Bir değiştirici lambda tarafından desteklenip desteklenmediğini belirlemek için bilgi makaleye bakın [Microsoft'a özel değiştiriciler](../cpp/microsoft-specific-modifiers.md) belgelerin bölümü.
+Bir değiştiricinin Lambdalar tarafından desteklenip desteklenmediğini öğrenmek için, belgelerinin [Microsoft 'A özgü değiştiriciler](../cpp/microsoft-specific-modifiers.md) bölümünde onunla ilgili makaleye bakın.
 
-Visual Studio, C ++ 11 standart lambda işlevlere ek olarak durum bilgisiz lambdalar rastgele çağırma kurallarına kullanan işlev işaretçilerine dönüştürülebilir olan destekler.
+C++ 11 standart lambda işlevselliğine ek olarak Visual Studio, rastgele çağırma kuralları kullanan işlev işaretçilerine dönüştürülebilir durum bilgisiz lambda 'leri destekler.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

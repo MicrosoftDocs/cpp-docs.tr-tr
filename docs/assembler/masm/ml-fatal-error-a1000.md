@@ -1,26 +1,26 @@
 ---
 title: ML Önemli Hatası A1000
 ms.date: 08/30/2018
-ms.topic: error-reference
+ms.custom: error-reference
 f1_keywords:
 - A1000
 helpviewer_keywords:
 - A1000
 ms.assetid: 4fc77a83-8796-4dcf-9c37-6395d635b817
-ms.openlocfilehash: c1149bb4362995c1f63a268deab276b5887b5614
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4b403c75b4e27f8b673b262952c286995ae3f935
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62178546"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74856936"
 ---
 # <a name="ml-fatal-error-a1000"></a>ML Önemli Hatası A1000
 
-**Dosya açılamıyor: dosya adı**
+**dosya açılamıyor: dosya adı**
 
-Bir kaynağı açın, dahil etmek veya çıkış dosyası assembler oluşturamadı.
+Derleyici bir kaynak, ekleme veya çıkış dosyası açamadı.
 
-Aşağıdakilerden birini bir neden olabilir:
+Aşağıdakilerden biri neden olabilir:
 
 - Dosya yok.
 
@@ -28,15 +28,15 @@ Aşağıdakilerden birini bir neden olabilir:
 
 - Dosya adı geçerli değil.
 
-- Çıkış dosyası adı ile salt okunur bir dosya zaten var.
+- Çıkış dosya adına sahip salt okunurdur bir dosya zaten var.
 
-- Geçerli bir sürücü dolu.
+- Geçerli sürücü dolu.
 
-- Geçerli dizin, kök ve dolu.
+- Geçerli dizin köküdür ve dolu olur.
 
-- Cihaz yazılamaz.
+- Cihaza yazılamıyor.
 
-- Sürücü hazır değil.
+- Sürücü, kullanılamıyor.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

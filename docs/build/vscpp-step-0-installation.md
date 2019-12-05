@@ -1,40 +1,40 @@
 ---
 title: Visual Studio’ya C++ desteği yükleme
-description: Visual C++ için Visual Studio desteği yükleme
+description: Visual Studio için Visual Studio desteğini yüklerC++
 ms.custom: mvc
 ms.date: 04/02/2019
 ms.topic: tutorial
 ms.devlang: cpp
 ms.assetid: 45138d70-719d-42dc-90d7-1d0ca31a2f54
-ms.openlocfilehash: 2c2bed4063194bdc3c0f3fbc405be6bf9a4031e7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a20a2432cbf8c4dc5f211f6f483c0084888f1199
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62315201"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74857170"
 ---
 # <a name="install-c-support-in-visual-studio"></a>Visual Studio’ya C++ desteği yükleme
 
-İndirilen ve henüz Visual Studio ve Visual C++ Araçları yüklü olmayan, kullanmaya nasıl başlayacağınızı aşağıda verilmiştir.
+Visual Studio 'Yu ve görsel C++ araçları henüz indirmediyseniz, şu şekilde çalışmaya başlayın.
 
 ::: moniker range="vs-2019"
 
 ## <a name="visual-studio-2019-installation"></a>Visual Studio 2019 yüklemesi
 
-Hoş Geldiniz Visual Studio 2019! Bu sürümde, seçin ve yalnızca gereksinim duyduğunuz özellikleri yüklemek kolaydır. Ve kendi kapladığı alan alt nedeniyle, hızlı ve sistemi daha az etkileyerek yükler.
+Visual Studio 2019 'e hoş geldiniz! Bu sürümde, yalnızca ihtiyacınız olan özellikleri seçmek ve yüklemek çok kolay. En düşük minimum kaplama nedeniyle, hızlı bir şekilde ve daha az sistem etkisinden yüklenir.
 
 > [!NOTE]
-> Bu konu, Windows üzerinde Visual Studio yüklemeniz için geçerlidir. [Visual Studio Code](https://code.visualstudio.com/) Windows, Mac ve Linux sistemlerinde çalıştırılan bir basit, platformlar arası geliştirme ortamıdır. Microsoft [Visual Studio Code için C/C++](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools) uzantısı IntelliSense, hata ayıklama, kod biçimlendirme, otomatik tamamlanmasını destekler. Mac için Visual Studio, Microsoft C++ desteklemez ancak .NET diller ve platformlar arası geliştirmeyi destekler. Yükleme yönergeleri için bkz. [Mac için Visual Studio](/visualstudio/mac/installation/).
+> Bu konu, Windows üzerinde Visual Studio yüklemesi için geçerlidir. [Visual Studio Code](https://code.visualstudio.com/) , Windows, Mac ve Linux sistemlerinde çalışan hafif, platformlar arası bir geliştirme ortamıdır. Visual Studio Code uzantısı Microsoft [CC++ /for](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools) The IntelliSense, hata ayıklama, kod biçimlendirme ve otomatik tamamlamayı destekler. Mac için Visual Studio, Microsoft C++'u desteklemez, ancak .net dillerini ve platformlar arası geliştirmeyi destekler. Yükleme yönergeleri için bkz. [yükleme Mac için Visual Studio](/visualstudio/mac/installation/).
 
-Else bu sürümdeki yenilikler hakkında daha fazla bilgi edinmek istiyorsunuz? Visual Studio bkz [sürüm notları](/visualstudio/releases/2019/release-notes/).
+Else bu sürümdeki yenilikler hakkında daha fazla bilgi edinmek istiyorsunuz? Bkz. Visual Studio [sürüm notları](/visualstudio/releases/2019/release-notes/).
 
 Yüklenmeye hazır? Biz, bunu, adım adım konusunda rehberlik edelim.
 
-### <a name="step-1---make-sure-your-computer-is-ready-for-visual-studio"></a>1. adım: bilgisayarınızın Visual Studio'ya hazır olduğundan emin olun
+### <a name="step-1---make-sure-your-computer-is-ready-for-visual-studio"></a>1\. adım: bilgisayarınızın Visual Studio'ya hazır olduğundan emin olun
 
 Visual Studio yükleme başlamadan önce:
 
-1. Denetleme [sistem gereksinimleri](/visualstudio/releases/2019/system-requirements). Bu gereksinimleri bilgisayarınıza Visual Studio 2019 destekleyip desteklemediğini bilmenize yardımcı olur.
+1. Denetleme [sistem gereksinimleri](/visualstudio/releases/2019/system-requirements). Bu gereksinimler, bilgisayarınızın Visual Studio 2019 ' i destekleyip desteklemediğini bilmenizi sağlamaya yardımcı olur.
 
 1. En son Windows güncelleştirmelerini uygulayın. Bu güncelleştirmeler, bilgisayarınızda Visual Studio için en son güvenlik güncelleştirmelerini hem gerekli sistem bileşenlerine sahip olun.
 
@@ -42,18 +42,18 @@ Visual Studio yükleme başlamadan önce:
 
 1. Alan boşaltın. Gereksiz dosyaları ve uygulamalar, % SYSTEMDRIVE %, örneğin, Disk Temizleme uygulamayı çalıştıran kaldırın.
 
-Visual Studio 2019 ile yan yana Visual Studio'nun önceki sürümleri çalıştıran hakkında sorular için bkz [Visual Studio 2019 Platform hedefleme ve Uyumluluk](/visualstudio/releases/2019/compatibility/) sayfası.
+Visual Studio 'nun önceki sürümlerini Visual Studio 2019 ile yan yana çalıştırma hakkında sorularınız için [Visual studio 2019 Platform hedefleme ve uyumluluk](/visualstudio/releases/2019/compatibility/) sayfasına bakın.
 
 ### <a name="step-2---download-visual-studio"></a>Adım 2 - Visual Studio indirme
 
-Ardından, Visual Studio önyükleyicisi dosyasını indirin. Bunu yapmak için aşağıdaki düğmeyi seçin, seçmek istediğiniz Visual Studio sürümünü **Kaydet**ve ardından **Klasör Aç**.
+Ardından, Visual Studio önyükleyicisi dosyasını indirin. Bunu yapmak için, aşağıdaki düğmeyi seçin, istediğiniz Visual Studio sürümünü seçin, **Kaydet**' i seçin ve sonra **klasörü aç**' ı seçin.
 
  > [!div class="button"]
- > [Visual Studio'yu indirin](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019+rc)
+ > [Visual Studio 'Yu indirin](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019+rc)
 
-### <a name="step-3---install-the-visual-studio-installer"></a>3. adım - Visual Studio Yükleyicisi'ni yükleme
+### <a name="step-3---install-the-visual-studio-installer"></a>3\. adım - Visual Studio Yükleyicisi'ni yükleme
 
-Visual Studio Yükleyicisi'ni yüklemek için önyükleyici dosyasını çalıştırın. Yeni Basit yükleyicinin hem yüklemek ve Visual Studio'yu özelleştirme için gereken her şeyi içerir.
+Visual Studio Yükleyicisi yüklemek için önyükleyici dosyasını çalıştırın. Bu yeni basit yükleyici, Visual Studio 'Yu yüklemek ve özelleştirmek için ihtiyacınız olan her şeyi içerir.
 
 1. Öğesinden, **indirir** klasöründe eşleşen veya benzer bir aşağıdaki dosyalar önyükleyici çift tıklayın:
 
@@ -61,67 +61,67 @@ Visual Studio Yükleyicisi'ni yüklemek için önyükleyici dosyasını çalış
    * **vs_professional.exe** Visual Studio Professional
    * **vs_enterprise.exe** için Visual Studio Enterprise
 
-   Bir kullanıcı hesabı denetimi bildirim alırsanız seçin **Evet**.
+   Bir kullanıcı hesabı denetimi bildirimi alırsanız **Evet**' i seçin.
 
 1. Microsoft onaylamak için isteriz [lisans koşulları](https://visualstudio.microsoft.com/license-terms/) ve Microsoft [gizlilik bildirimi](https://privacy.microsoft.com/privacystatement). Seçin **devam**.
 
-### <a name="step-4---choose-workloads"></a>4. adım - iş yüklerini seçme
+### <a name="step-4---choose-workloads"></a>4\. adım-iş yüklerini seçin
 
-Yükleyici yüklendikten sonra bunu seçerek yüklemenizi özelleştirmek için kullanabileceğiniz *iş yükleri*, ya da özellik istediğiniz ayarlar. İşte nasıl.
+Yükleyici yüklendikten sonra, istediğiniz *iş yüklerini*veya özellik kümelerini seçerek yüklemenizi özelleştirmek için kullanabilirsiniz. İşte nasıl.
 
 1. Bulmak istediğiniz iş yükünü **Visual Studio'yu** ekran.
 
-   ![Visual Studio 2019 : Bir iş yükünü yükleyin](../get-started/media/vs-installer-workloads.png)
+   ![Visual Studio 2019: iş yükü yüklemesi](../get-started/media/vs-installer-workloads.png)
 
-   Çekirdek C++ desteği için "C++ ile masaüstü geliştirme" iş yükünü seçin. Bu, temel kod düzenleme açın ve projeye gerek kalmadan herhangi bir klasörden kodu düzenleme olanağı 20'den dil için destek içerir ve tümleşik kaynak kod denetimi varsayılan çekirdek Düzenleyicisi ile birlikte gelir.
+   Temel C++ destek için "ile C++masaüstü geliştirme" iş yükünü seçin. Bu, temel kod düzenleme açın ve projeye gerek kalmadan herhangi bir klasörden kodu düzenleme olanağı 20'den dil için destek içerir ve tümleşik kaynak kod denetimi varsayılan çekirdek Düzenleyicisi ile birlikte gelir.
 
-   Ek iş yüklerinin başka türden bir C++ geliştirme desteği. Örneğin, Windows çalışma zamanı için Microsoft Store kullanan uygulamalar oluşturmak için "Evrensel Windows platformu geliştirme" iş yükünü seçin. "C++ ile oyun geliştirme" seçin DirectX, Unreal ve Cocos2d kullanan oyunlar oluşturmak için. "C++ ile Linux geliştirme" IOT geliştirme de dahil olmak üzere, hedef Linux platformlarını seçin.
+   Ek iş yükleri diğer C++ geliştirme türlerini destekler. Örneğin, Microsoft Store için Windows Çalışma Zamanı kullanan uygulamalar oluşturmak için "Evrensel Windows Platformu geliştirme" iş yükünü seçin. DirectX, Unreal ve C++Cocos2d kullanan oyunlar oluşturmak Için "oyun ile oyun geliştirme" seçeneğini belirleyin. IoT geliştirme dahil olmak üzere C++Linux platformunu hedeflemek Için "Linux ile geliştirme" seçeneğini belirleyin.
 
-   **Yükleme ayrıntıları** bölmesi, her iş yükü tarafından bulunan ve isteğe bağlı bileşenleri listeler. Bu listedeki isteğe bağlı bileşenlerin seçimlerini kaldırın ya da seçin. Örneğin, Visual Studio 2017 veya 2015 derleyici araç takımları kullanarak geliştirme desteği için MSVC v141 veya MSVC v140 isteğe bağlı bileşenleri seçin. MFC, Deneysel modülleri dil uzantısı, IncrediBuild ve daha fazlası için destek ekleyebilirsiniz.
+   **Yükleme ayrıntıları** bölmesi, her iş yükü tarafından yüklenen dahil edilen ve isteğe bağlı bileşenleri listeler. Bu listedeki isteğe bağlı bileşenleri seçebilir veya seçimden kaldırabilirsiniz. Örneğin, Visual Studio 2017 veya 2015 derleyici araç kümelerini kullanarak geliştirmeyi desteklemek için MSVC v141 veya MSVC v140 isteğe bağlı bileşenlerini seçin. MFC, deneysel modüller dil uzantısı, IncrediBuild ve daha fazlası için destek ekleyebilirsiniz.
 
-1. İstediğiniz isteğe bağlı bileşenleri ve workload(s) seçtikten sonra seçin **yükleme**.
+1. İstediğiniz iş yüklerini ve isteğe bağlı bileşenleri seçtikten sonra, **yükler**' i seçin.
 
     Ardından, durum ekranları, Visual Studio yüklemenizin ilerleme durumunu gösteren görünür.
 
 > [!TIP]
-> Yüklemeden sonra herhangi bir zamanda iş yükleri veya başlangıçta yüklenmedi bileşenleri yükleyebilirsiniz. Visual Studio'nun varsa **Araçları** > **araçları ve özellikleri Al...**  Visual Studio yükleyicisi açılır. Veya açık **Visual Studio yükleyicisi** Başlat menüsünden. Burada, iş yükleri veya yüklemek istediğiniz bileşenleri seçebilirsiniz. Ardından, **Değiştir**.
+> Yüklemeden sonra herhangi bir zamanda iş yükleri veya başlangıçta yüklenmedi bileşenleri yükleyebilirsiniz. Visual Studio'nun varsa **Araçları** > **araçları ve özellikleri Al...**  Visual Studio yükleyicisi açılır. Veya açık **Visual Studio yükleyicisi** Başlat menüsünden. Buradan, yüklemek istediğiniz iş yüklerini veya bileşenleri seçebilirsiniz. Ardından **Değiştir**' i seçin.
 
-## <a name="step-5---choose-individual-components-optional"></a>5. adım - (isteğe bağlı) bileşenleri tek tek seçme
+### <a name="step-5---choose-individual-components-optional"></a>5\. adım-tek tek bileşenleri seçin (Isteğe bağlı)
 
-Visual Studio yüklemenizi özelleştirmek için iş yüklerini özelliğini kullanmak istemediğiniz ya da bir iş yükü yükler çok daha fazla bileşen eklemek istediğiniz, yükleme veya tek tek bileşenleri ekleyerek bunu yapabilirsiniz **bağımsızbileşenler** sekmesi. Neleri istediğiniz ve daha sonra izleyin seçin yönergeleri.
+Visual Studio yüklemenizi özelleştirmek için Iş yükleri özelliğini kullanmak istemiyorsanız veya bir iş yükü yüklemesinden daha fazla bileşen eklemek istiyorsanız, **tek** tek bileşenler sekmesinden tek tek bileşenleri yükleyerek veya ekleyerek bunu yapabilirsiniz. istediğinizi seçin ve ardından istemleri takip edin.
 
-  ![Visual Studio 2019 - tek tek bileşenleri yükle](../get-started/media/vs-installer-individual-components.png "tek tek bileşenler Visual Studio'yu yükleyin")
+  ![Visual Studio 2019-ayrı bileşenleri yükler](../get-started/media/vs-installer-individual-components.png "Visual Studio bireysel bileşenlerini yükler")
 
-## <a name="step-6---install-language-packs-optional"></a>6. adım - yükleme dil paketleri (isteğe bağlı)
+### <a name="step-6---install-language-packs-optional"></a>6\. adım - yükleme dil paketleri (isteğe bağlı)
 
-Varsayılan olarak, yükleyici programı ilk kez çalıştığında işletim sisteminin dilini eşleştirmeye çalışır. Visual Studio bir dilde yüklemek için seçin **dil paketlerini** sekmesinde Visual Studio Yükleyicisi'nden ve ardından yönergeleri izleyin.
+Varsayılan olarak, yükleyici programı ilk kez çalıştığında işletim sisteminin dilini eşleştirmeye çalışır. Visual Studio 'Yu seçtiğiniz bir dilde yüklemek için Visual Studio Yükleyicisi **dil paketleri** sekmesini seçin ve ardından istemleri izleyin.
 
-  ![Visual Studio 2019 - yükleme dil paketlerini](../get-started/media/vs-installer-language-packs.png "Visual Studio'yu yükleyin dil paketleri")
+  ![Visual Studio 2019-dil paketlerini yükler](../get-started/media/vs-installer-language-packs.png "Visual Studio dil paketlerini yükler")
 
-### <a name="change-the-installer-language-from-the-command-line"></a>Komut satırından yükleyici dilini değiştirme
+#### <a name="change-the-installer-language-from-the-command-line"></a>Komut satırından yükleyici dilini değiştirme
 
-Varsayılan dilini değiştirme başka bir komut satırından yükleyiciyi çalıştırarak yoludur. Örneğin, aşağıdaki komutu kullanarak İngilizce olarak çalıştırmak için yükleyici zorlayabilirsiniz: `vs_installer.exe --locale en-US`. Yükleyici, sonraki açışınızda çalıştırdığınızda bu ayar hatırlanır. Aşağıdaki Dil belirteçler yükleyici destekler: zh-cn, zh-tw, cs-cz, en-us, es-es, fr-fr, de-de, it-IT, ja-jp, ko-kr, pl-pl, pt-br, ru-ru ve tr-tr.
+Varsayılan dilini değiştirme başka bir komut satırından yükleyiciyi çalıştırarak yoludur. Örneğin, aşağıdaki komutu kullanarak İngilizce olarak çalıştırmak için yükleyici zorlayabilirsiniz: `vs_installer.exe --locale en-US`. Yükleyici bir sonraki sefer çalıştırıldığında bu ayarı anımsayacaktır. Aşağıdaki Dil belirteçler yükleyici destekler: zh-cn, zh-tw, cs-cz, en-us, es-es, fr-fr, de-de, it-IT, ja-jp, ko-kr, pl-pl, pt-br, ru-ru ve tr-tr.
 
-### <a name="step-7---change-the-installation-location-optional"></a>7. adım - (isteğe bağlı) yükleme konumunu değiştirme
+### <a name="step-7---change-the-installation-location-optional"></a>7\. adım - (isteğe bağlı) yükleme konumunu değiştirme
 
-Visual Studio yükleme ayak izini sistem sürücünüzde azaltabilir. İndirme önbelleğini, paylaşılan bileşenler, SDK'ları ve araçları farklı sürücülere taşıma ve Visual Studio en hızlı çalışan sürücüde korumak seçebilirsiniz.
+Visual Studio 'nun yükleme ayak izini sistem sürücünüzde azaltabilirsiniz. İndirme önbelleğini, paylaşılan bileşenler, SDK'ları ve araçları farklı sürücülere taşıma ve Visual Studio en hızlı çalışan sürücüde korumak seçebilirsiniz.
 
-  ![Visual Studio 2019 - değişiklik yükleme konumlarını](../get-started/media/vs-installer-installation-locations.png "yükleme konumunu değiştirme")
+  ![Visual Studio 2019-yükleme konumlarını değiştirme](../get-started/media/vs-installer-installation-locations.png "Yükleme konumunu değiştirme")
 
 > [!IMPORTANT]
-> Yalnızca Visual Studio ilk kez yüklediğinizde, farklı bir sürücü seçebilirsiniz. Yüklemiş olduğunuz ve sürücüleri değiştirmek istiyorsanız, Visual Studio'yu kaldırın ve yeniden yükleyin.
+> Yalnızca Visual Studio 'Yu ilk kez yüklediğinizde, farklı bir sürücü seçebilirsiniz. Zaten yüklediyseniz ve sürücüleri değiştirmek istiyorsanız, Visual Studio 'Yu kaldırmalı ve ardından yeniden yüklemeniz gerekir.
 
-## <a name="step-8---start-developing"></a>8. adım - geliştirmeye başlayın
+### <a name="step-8---start-developing"></a>8\. adım - geliştirmeye başlayın
 
-1. Visual Studio yüklemesi tamamlandıktan sonra seçin **başlatma** Visual Studio ile geliştirmeye başlamak için düğme.
+1. Visual Studio yüklemesi tamamlandıktan sonra, Visual Studio ile geliştirmeye başlamak için **Başlat** düğmesini seçin.
 
-1. Pencerenin başlangıç seçin **yeni bir proje oluşturma**.
+1. Başlangıç penceresinde **Yeni proje oluştur**' u seçin.
 
-1. Arama kutusuna, kullanılabilir şablonların listesini görmek için oluşturmak istediğiniz uygulamanın türüne girin. Şablonlar listesinde, yükleme sırasında seçtiğiniz workload(s) bağlıdır. Farklı şablonları görmek için farklı iş yüklerini seçin.
+1. Arama kutusuna, kullanılabilir şablonların listesini görmek için oluşturmak istediğiniz uygulamanın türünü girin. Şablon listesi, yükleme sırasında seçtiğiniz iş yüküne bağlıdır. Farklı şablonları görmek için farklı iş yükleri seçin.
 
-   Kullanarak aramanızı belirli bir programlama dili için filtreleyebilirsiniz **dil** aşağı açılan listesi. Kullanarak filtreleyebilirsiniz **Platform** listesi ve **proje türü** çok listesi.
+   Ayrıca, **dil** açılan listesini kullanarak, aramanızı belirli bir programlama diline göre filtreleyebilirsiniz. **Platform** listesini ve **Proje türü** listesini kullanarak filtre uygulayabilirsiniz.
 
-1. Yeni projeniz Visual Studio açar ve kodu hazırsınız!
+1. Visual Studio yeni projenizi açar ve kodlamaya hazırsınız!
 
 ::: moniker-end
 
@@ -129,21 +129,21 @@ Visual Studio yükleme ayak izini sistem sürücünüzde azaltabilir. İndirme �
 
 ## <a name="visual-studio-2017-installation"></a>Visual Studio 2017 yüklemesi
 
-Visual Studio 2017'de seçin ve yalnızca gereksinim duyduğunuz özellikleri yüklemek kolaydır. Ve kendi kapladığı alan alt nedeniyle, hızlı ve sistemi daha az etkileyerek yükler.
+Visual Studio 2017 ' de, yalnızca ihtiyacınız olan özellikleri kolayca seçebilir ve yükleyebilirsiniz. En düşük minimum kaplama nedeniyle, hızlı bir şekilde ve daha az sistem etkisinden yüklenir.
 
-### <a name="prerequisites"></a>Önkoşullar
+### <a name="prerequisites"></a>Prerequisites
 
-- Geniş bant internet bağlantısı. Visual Studio yükleyicisinin birçok gigabayta kadar veri indirebilirsiniz.
+- Geniş bant internet bağlantısı. Visual Studio yükleyicisi birkaç gigabayt veri indirebilir.
 
-- Microsoft Windows 7 veya sonraki sürümleri çalıştıran bir bilgisayar. Windows 10 için en iyi geliştirme deneyimi öneririz. Visual Studio yüklemeden önce en son güncelleştirmeleri sisteminize uygulandığından emin olun.
+- Microsoft Windows 7 veya sonraki sürümlerini çalıştıran bir bilgisayar. En iyi geliştirme deneyimi için Windows 10 ' un kullanılması önerilir. Visual Studio 'Yu yüklemeden önce en son güncelleştirmelerin sisteminize uygulandığından emin olun.
 
-- Yeterli boş disk alanı. Visual Studio, en az 7 GB disk alanı gerektirir ve birçok ortak seçenekleri yüklüyse, 50 GB veya daha fazla sürebilir. C: sürücünüzde yüklemeniz önerilir.
+- Yeterli boş disk alanı. Visual Studio için en az 7 GB disk alanı gerekir ve birçok ortak seçenek yüklüyse 50 GB veya daha fazla sürebilir. Bunu C: sürücünüze yüklemenizi öneririz.
 
-Disk alanı ve işletim sistemi gereksinimleri hakkında daha fazla bilgi için bkz: [Visual Studio ürün ailesi sistem gereksinimleri](/visualstudio/productinfo/vs2017-system-requirements-vs). Yükleyici seçenekleri için ne kadar disk alanı gereklidir bildirir.
+Disk alanı ve işletim sistemi gereksinimleriyle ilgili ayrıntılı bilgi için bkz. [Visual Studio ürün ailesi sistem gereksinimleri](/visualstudio/productinfo/vs2017-system-requirements-vs). Yükleyici, seçtiğiniz seçenekler için ne kadar disk alanı gerektiğini bildirir.
 
 ### <a name="download-and-install"></a>İndirme ve yükleme
 
-1. Windows için en son Visual Studio 2017 Yükleyicisi'ni indirin.
+1. Windows için en son Visual Studio 2017 yükleyicisini indirin.
 
    > [!div class="nextstepaction"]
    > [Visual Studio 2017 Community'yi yükleyin](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
@@ -151,33 +151,33 @@ Disk alanı ve işletim sistemi gereksinimleri hakkında daha fazla bilgi için 
    >[!Tip]
    > Topluluk sürümü bireysel geliştiriciler, sınıfta öğrenim ortamı, akademik araştırma ve açık kaynak geliştirme için ' dir. Diğer kullanımlar için yükleme [Visual Studio 2017 Professional](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) veya [Visual Studio 2017 Enterprise](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017).
 
-1. Yükleyici dosyasını indirdiğiniz ve uygulamayı bulun. Tarayıcınızda görüntülenebilir veya indirilenler klasörünüze fark edebilirsiniz. Yükleyiciyi çalıştırmak için yönetici ayrıcalıkları gerekir. Görebileceğiniz bir **kullanıcı hesabı denetimi** seçin; sisteminize değişiklik kurucusunun izni vermek isteyen bir iletişim **Evet**. Sorun yaşıyorsanız, dosya Gezgini'nde indirilen dosyayı bulmak, yükleyici simgesini sağ tıklatın ve seçin **yönetici olarak çalıştır** bağlam menüsünden.
+1. İndirdiğiniz yükleyici dosyasını bulun ve çalıştırın. Bu, tarayıcınızda görüntülenebilir veya Indirmeler klasörünüzde bulunabilir. Yükleyicinin çalışması için yönetici ayrıcalıklarına ihtiyacı vardır. Yükleyicinin sisteminizde değişiklik yapmasına izin vermenizi isteyen bir **Kullanıcı hesabı denetimi** iletişim kutusu görebilirsiniz; **Evet**' i seçin. Sorun yaşıyorsanız, dosya Gezgini 'nde indirilen dosyayı bulun, yükleyici simgesine sağ tıklayın ve bağlam menüsünde **yönetici olarak çalıştır** ' ı seçin.
 
-   ![Visual Studio Yükleyicisi'nin karşıdan yükleyip](media/vscpp-concierge-run-installer.gif "indirip Visual Studio Yükleyicisi'ni yükleyin")
+   ![Visual Studio Yükleyicisi indirin ve yükleyin](media/vscpp-concierge-run-installer.gif "Visual Studio Yükleyicisi indirin ve yükleyin")
 
-1. Yükleyici belirli geliştirme alanlar için ilgili seçenekleri gruplarıdır iş yüklerinin bir listesini sunar. Podporu iOS Pro C++ artık varsayılan olarak yüklü değildir isteğe bağlı iş yüklerinin parçasıdır.
+1. Yükleyici belirli geliştirme alanlar için ilgili seçenekleri gruplarıdır iş yüklerinin bir listesini sunar. C++ Desteği artık varsayılan olarak yüklenmeyen isteğe bağlı iş yüklerinin bir parçasıdır.
 
-   ![C++ iş yükünde ile masaüstü geliştirme](media/desktop-development-with-cpp.png "C++ ile masaüstü geliştirme")
+   ![İş yükü ile C++ masaüstü geliştirme](media/desktop-development-with-cpp.png "C++ ile masaüstü geliştirme")
 
-   C++ için seçin **C++ ile masaüstü geliştirme** iş yükü ve ardından **yükleme**.
+   İçin C++, iş yüküyle **Masaüstü geliştirmeyi C++**  seçin ve ardından **Install**' ı seçin.
 
-   ![Masaüstü uygulama geliştirme ile C++ iş yükünü yükleyin](media/vscpp-concierge-choose-workload.gif "Masaüstü uygulama geliştirme ile C++ iş yükünü yükleyin.")
+   ![C++ İş yüküyle masaüstü geliştirmeyi yükler](media/vscpp-concierge-choose-workload.gif "C++ İş yüküyle masaüstü geliştirmeyi yükler")
 
-1. Yükleme tamamlandığında seçin **başlatma** Visual Studio'yu başlatmak için düğme.
+1. Yükleme tamamlandığında, Visual Studio 'Yu başlatmak için **Başlat** düğmesini seçin.
 
-   Visual Studio'yu çalıştırdığınız ilk kez bir Microsoft Account oturum istenir. Yoksa, bir ücretsiz oluşturabilirsiniz. Ayrıca, bir tema seçmeniz gerekir. Endişelenmeyin, isterseniz, daha sonra değiştirebilirsiniz.
+   Visual Studio 'Yu ilk kez çalıştırdığınızda bir Microsoft hesabı ile oturum açmanız istenir. Bir tane yoksa, ücretsiz olarak oluşturabilirsiniz. Ayrıca bir tema seçmeniz gerekir. Endişelenmeyin, isterseniz daha sonra değiştirebilirsiniz.
 
-   Birçok Visual Studio sürebilir hazır hale getirmek için dakika, onu çalıştırdığınız ilk kez kullanın. İşte bu şekilde bir hızlı atlamalı görünür:
+   Bu işlem, Visual Studio 'Yu ilk kez çalıştırdığınızda kullanıma hazırlamak için birkaç dakika sürebilir. Hızlı bir zaman atlamalı şekilde şöyle görünür:
 
-   ![Visual Studio 2017 oturum](media/vscpp-quickstart-first-run.gif "Visual Studio 2017 oturum açın")
+   ![Visual Studio 2017 oturum açma](media/vscpp-quickstart-first-run.gif "Visual Studio 2017 oturum açma")
 
-   Yeniden çalıştırdığınızda visual Studio çok daha hızlı başlatılır.
+   Visual Studio, tekrar çalıştırdığınızda daha hızlı başlar.
 
-1. Visual Studio açıldığında başlık çubuğunda bayrak simgesine vurgulanır denetleyin:
+1. Visual Studio açıldığında, başlık çubuğundaki bayrak simgesinin vurgulandığını kontrol edin:
 
    ![Visual Studio 2017 bildirim bayrağı](media/vscpp-first-start-page-flag.png "Visual Studio 2017 bildirim bayrağı")
 
-   Vurgulanır, açmak için seçmeniz **bildirimleri** penceresi. Visual Studio için kullanılabilen herhangi bir güncelleştirme varsa, artık yüklemeniz kesinlikle önerilir. Yükleme tamamlandıktan sonra Visual Studio'yu yeniden başlatın.
+   Vurgulandığında, **Bildirimler** penceresini açmak için seçin. Visual Studio için kullanılabilen güncelleştirmeler varsa, bunları şimdi yüklemenizi öneririz. Yükleme tamamlandıktan sonra Visual Studio 'Yu yeniden başlatın.
 
 ::: moniker-end
 
@@ -185,17 +185,17 @@ Disk alanı ve işletim sistemi gereksinimleri hakkında daha fazla bilgi için 
 
 ## <a name="visual-studio-2015-installation"></a>Visual Studio 2015 yüklemesi
 
-Visual Studio 2015'i yüklemek için Git [Visual Studio'nun eski sürümlerini indirin](https://www.visualstudio.com/vs/older-downloads/). Kurulum programını çalıştırın ve seçin **özel yükleme** C++ bileşeni seçin. Mevcut bir Visual Studio 2015 yüklemesini C++ desteği eklemek için Windows Başlat düğmesini türü tıklayın ve **Program Ekle/Kaldır**. Sonuç listesinden programını açın ve ardından Visual Studio 2015 yüklemenizi yüklü programlar listesinde bulun. Çift tıklayın ve ardından **Değiştir** ve yüklemek için Visual C++ bileşenleri seçin.
+Visual Studio 2015 ' i yüklemek için [Visual Studio 'nun eski sürümlerini indirme](https://www.visualstudio.com/vs/older-downloads/)bölümüne gidin. Kurulum programını çalıştırın ve **özel yükleme** ' yi seçin ve ardından C++ bileşeni seçin. Mevcut bir C++ Visual Studio 2015 yüklemesine destek eklemek Için Windows Başlat düğmesine tıklayın ve **Program Ekle Kaldır**yazın. Program sonuçlar listesinden açın ve ardından yüklü programlar listesinde Visual Studio 2015 yüklemenizi bulun. Çift tıklayın, ardından **Değiştir** ' i seçin ve yüklenecek görsel C++ bileşenleri seçin.
 
-Genel olarak, Visual Studio 2015 derleyici kullanarak kodunuzu derlemek için ihtiyacınız olsa bile, Visual Studio 2017 kullanmanızı öneririz. Daha fazla bilgi için [yerel çoklu sürüm desteğinin Visual Studio'da eski projeleri oluşturmak için kullanmak](../porting/use-native-multi-targeting.md).
+Genel olarak, Visual Studio 2015 derleyicisini kullanarak kodunuzun derlenmesi gerekebilse bile Visual Studio 2017 ' i kullanmanızı kesinlikle öneririz. Daha fazla bilgi için [yerel çoklu sürüm desteğinin Visual Studio'da eski projeleri oluşturmak için kullanmak](../porting/use-native-multi-targeting.md).
 
 ::: moniker-end
 
-Visual Studio çalışırken, sonraki adıma devam etmek hazırsınız demektir.
+Visual Studio çalışırken, bir sonraki adıma devam etmek için hazırsınız demektir.
 
 ## <a name="next-steps"></a>Sonraki Adımlar
 
 > [!div class="nextstepaction"]
-> [C++ projesi oluşturma](vscpp-step-1-create.md)
+> [C++ Proje oluşturma](vscpp-step-1-create.md)
 
 <iframe src="" height="0" width="0" frameborder="0" name="frameTarget" />

@@ -8,82 +8,82 @@ helpviewer_keywords:
 - functions [C], return types
 - prototypes [C++], function
 ms.assetid: d152f8e6-971e-432c-93ca-5a91400653c2
-ms.openlocfilehash: 2c75db3e1550927af57054a2cc1561d9df1567a4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9c42ce5b23e6f755dafd57bdb5a5f79cf1adb4ec
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62233144"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74857092"
 ---
 # <a name="function-prototypes"></a>İşlev Prototipleri
 
-Bir işlev bildirimi işlev tanımı önündeki ve adı, dönüş türü, depolama sınıfı ve diğer öznitelikleri bir işlevi belirtir. Bir prototip olması için işlev bildirimi de türleri ve işlev bağımsız tanımlayıcıları oluşturmanız gerekir.
+İşlev bildirimi, işlev tanımından önce gelir ve bir işlevin adını, dönüş türünü, depolama sınıfını ve diğer özniteliklerini belirtir. Prototip olması için, işlev bildiriminin işlevin bağımsız değişkenleri için türler ve tanımlayıcılar de kurması gerekir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-*bildirimi*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*bildirim tanımlayıcıları* *öznitelik-seq*<sub>iyileştirilmiş</sub> *init-declarator-list*<sub>iyileştirilmiş</sub> **;**
+*bildirim*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*bildirimi-tanımlayıcılar* *özniteliği-seq*<sub>opt</sub> *init-declarator-list*<sub>opt</sub> **;**
 
-/\* *öznitelik-seq*<sub>iyileştirilmiş</sub> Microsoft Specific \*/
+/\* *özniteliği-seq*<sub>opt</sub> , Microsoft 'a özgü \*/
 
-*bildirim tanımlayıcıları*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*depolama sınıfı tanımlayıcısı* *bildirim tanımlayıcıları*<sub>iyileştirilmiş</sub> <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*tür belirticisi* *bildirim tanımlayıcıları*<sub>iyileştirilmiş</sub> <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*tür niteleyicisi* *bildirim tanımlayıcıları*<sub>iyileştirilmiş</sub>
+*bildirim-tanımlayıcılar*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*depolama sınıfı Belirleyicisi* *bildirimi-tanımlayıcılar*<sub>kabul</sub> <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*tür belirleyicisi* *bildirimi-tanımlayıcılar*<sub>opt</sub> <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*tür niteleyicisi* *bildirimi-tanımlayıcılar*<sub>opt</sub>
 
 *init-declarator-list*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*init-declarator*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*init-bildirimci*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*init-declarator-list* **,** *init-declarator*
 
 *init-declarator*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Bildirimci*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*bildirimci* **=** *Başlatıcı*
+&nbsp;&nbsp;&nbsp;&nbsp;*bildirimci*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*bildirimci* **=** *başlatıcısı*
 
 *bildirimci*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*İşaretçi*<sub>iyileştirilmiş</sub> *doğrudan bildirimcisi*
+&nbsp;&nbsp;&nbsp;&nbsp;*işaretçi*<sub>opt</sub> *doğrudan bildirimci*
 
-*doğrudan bildirimci*: /\* işlev bildirimcisi \*/<br/>
+*Direct-bildirimci*:/\* bir işlev bildirimci \*/<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*doğrudan bildirimci* **(** *parametre türü listesi* **)**   / \* yeni stil bildirimci \*/<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*doğrudan bildirimci* **(** *tanımlayıcı listesi*<sub>iyileştirilmiş</sub> **)**  / \* Kullanımdan kalktı stili bildirimci \*/
 
-Kapatma parantezinden hemen ardından noktalı virgül tarafından sonlandırılır ve bu nedenle hiçbir gövdeye sahip prototipe işlev tanımı aynı biçime sahip. Her iki durumda da dönüş türü bir işlev tanımında belirtilen dönüş türüne sahip kabul etmesi gerekir.
+Prototip, kapatma parantezinden hemen sonra bir noktalı virgülle sonlandırıldığından ve bu nedenle gövde olmadığından, işlev tanımıyla aynı biçimde olur. Her iki durumda da, dönüş türü işlev tanımında belirtilen dönüş türüyle kabul etmelidir.
 
-İşlev prototipleri, aşağıdaki önemli kullandığı vardır:
+İşlev prototiplileri aşağıdaki önemli kullanımlarına sahiptir:
 
-- Bunlar farklı dönüş türlerine işlevleri için dönüş türü kurmak **int**. İşlevler, döndürür ancak **int** değerleri prototipleri gerektirmez, prototipleri önerilir.
+- Bunlar **int**dışında türler döndüren işlevler için dönüş türü oluştururlar. **İnt** değerleri döndüren işlevler Prototiplerde gerekli olmasa da, Prototiplerde önerilir.
 
-- Olmadan tam prototipleri, standart dönüştürmeler gerçekleştirilir, ancak türü veya sayıda bağımsız değişken parametre sayısı ile kontrol etmek için girişimde bulunulmaz.
+- Tüm Prototiplerde, standart dönüştürmeler yapılır, ancak parametre sayısıyla bağımsız değişkenlerin türünü veya sayısını denetlemek için bir girişimde bulunuldu.
 
-- Prototipleri, bu işlev tanımlanmadan önce işlev işaretçileri başlatmak için kullanılır.
+- Prototipler, işlevler tanımlanmadan önce işlevlere işaretçiler başlatmak için kullanılır.
 
-- Parametre listesinde işlev çağrısında bağımsız değişken işlev tanımında parametreler ile ilişkiyi denetlemek için kullanılır.
+- Parametre listesi, işlev çağrısındaki bağımsız değişkenlerin işlev tanımındaki parametrelerle yazışmaları denetlemek için kullanılır.
 
-Dönüştürülen her parametrenin türü bağımsız değişkenler yığında işlev çağrısı yerleştirir yorumunu belirler. Bağımsız değişken ve parametre arasında tür uyuşmazlığı bağımsız değişkenler yığında yorumlanma neden olabilir. Örneğin, 16-bit bir bilgisayarda bir 16 bit işaretçi bağımsız değişken olarak geçirilir, ardından olarak bildirilen bir **uzun** parametresi, yığın üzerinde ilk 32 biti olarak yorumlanır bir **uzun** parametresi. Bu hata yalnızca ile ilgili sorunlar oluşturur **uzun** parametresi, ancak izleyen herhangi bir parametre. Tüm İşlevler için tam işlev prototipleri bildirerek bu tür hatalar da algılanabilir.
+Her parametrenin dönüştürülmüş türü, işlev çağrısının yığına yerleştirdiği bağımsız değişkenlerin yorumlanmasını belirler. Bağımsız değişken ile bir parametre arasında tür uyuşmazlığı, yığındaki bağımsız değişkenlerin yanlış yorumlanmasına neden olabilir. Örneğin, 16 bit bir bilgisayarda, bir bağımsız değişken olarak bir 16 bit işaretçi geçirilirse ve **uzun** bir parametre olarak bildirilirse, yığındaki ilk 32 bit, **uzun** bir parametre olarak yorumlanır. Bu hata yalnızca **Long** parametresiyle değil, ancak bunu izleyen parametrelere sahip olan sorunları oluşturur. Tüm işlevler için tüm işlev prototiplerini bildirerek bu tür hataları tespit edebilirsiniz.
 
-Böylece tanımına önünde (veya diğer kaynak dosyalarda) işlev için çağrılar için bağımsız değişken türü ve dönüş türü uyuşmazlığı denetlenebilir bir prototipi bir işlev özniteliklerini belirler. Örneğin, belirtirseniz **statik** depolama sınıfı tanımlayıcısı bir prototipteki da belirtmeniz gerekir **statik** işlev tanımında depolama sınıfı.
+Bir prototip, bir işlevin özniteliklerini belirler, böylece tanımının önüne (veya diğer kaynak dosyalarında meydana gelen), bağımsız değişken türü ve dönüş türü uyuşmazlıkları için denetlenebilirler. Örneğin, bir prototip içinde **statik** depolama sınıfı Belirleyicisi belirtirseniz, işlev tanımında **statik** depolama sınıfını da belirtmeniz gerekir.
 
-Parametre bildirimleri tamamlayın (`int a`) ile soyut Bildirimciler karma (`int`) aynı bildirimde. Örneğin, aşağıdaki bildirimi geçerlidir:
+Tüm parametre bildirimleri (`int a`), aynı bildirimde soyut Bildirimciler (`int`) ile karışık olabilir. Örneğin, aşağıdaki bildirim geçerlidir:
 
 ```C
 int add( int a, int );
 ```
 
-Prototip türünü hem bir tanımlayıcı için bir bağımsız değişken olarak geçirilen her bir ifade içerebilir. Ancak, bu tür tanımlayıcıları, yalnızca bildirimi sonuna kadar kapsama sahip. Prototip ayrıca değişkendir bağımsız değişken sayısı veya hiç bağımsız değişken geçirilir olgu yansıtabilir. Derleyici bunları ilgili tanılama iletileri üretilemiyor bu nedenle böyle bir liste uyuşmazlıkları, açığa değil. Bkz: [bağımsız değişkenleri](../c-language/arguments.md) tür denetimi hakkında daha fazla bilgi.
+Prototip, bağımsız değişken olarak geçirilen her bir ifade için hem türü hem de bir tanımlayıcı içerebilir. Ancak, bu tür tanımlayıcılara yalnızca bildirimin sonuna kadar kapsam vardır. Prototip Ayrıca, bağımsız değişken sayısının değişken olduğu veya hiçbir bağımsız değişken geçirilmeyeceği olguyu yansıtabilir. Bu tür bir liste olmadan, uyuşmazlıklar açığa çıkarmayabilir, bu nedenle derleyici bunlarla ilgili tanılama iletileri üretemiyor. Tür denetlemesi hakkında daha fazla bilgi için bkz. [bağımsız değişkenler](../c-language/arguments.md) .
 
-Microsoft C derleyicisi prototip kapsamında, artık ANSI uyumlu ile derleme yaparken **/Za** derleyici seçeneği. Bunun anlamı bildirirseniz bir **yapı** veya **birleşim** etiketi etiketi bir prototip içinde bu kapsamda yerine genel kapsamda girilir. Örneğin, ile derleme yaparken **/Za** ANSI uyumluluğu için hiçbir zaman bu işlev bir tür uyumsuzluğu hatası almadan çağırabilirsiniz:
+Microsoft C derleyicisinde prototip kapsamı, **/za** derleyici seçeneği ile DERLERKEN artık ANSI uyumludur. Bu, bir prototip içinde bir **struct** veya **Union** etiketi bildirirseniz, etiketin genel kapsam yerine o kapsamda girildiğini gösterir. Örneğin, ANSI uyumluluğu için **/za** ile derlerken, bu işlevi bir tür uyumsuzluğu hatası vermeden hiçbir zaman Çağırmamanız gerekir:
 
 ```C
 void func1( struct S * );
 ```
 
-Kodunuzu düzeltmek için tanımlama veya bildirmek **yapı** veya **birleşim** işlev prototipi önce genel kapsamda:
+Kodunuzu düzeltmek için, işlev prototipiyle önce genel kapsamda **Yapı** veya **birleşim** tanımlayın veya bildirin:
 
 ```C
 struct S;
 void func1( struct S * );
 ```
 
-Altında **/Ze**, etiket yine de genel kapsamda girilir.
+**/Ze**altında, etiket hala genel kapsama girilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

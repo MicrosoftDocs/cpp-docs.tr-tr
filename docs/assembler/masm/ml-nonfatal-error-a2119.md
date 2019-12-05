@@ -1,26 +1,26 @@
 ---
 title: ML Önemli Olmayan Hatası A2119
 ms.date: 08/30/2018
-ms.topic: error-reference
+ms.custom: error-reference
 f1_keywords:
 - A2119
 helpviewer_keywords:
 - A2119
 ms.assetid: 4d4ee6da-3a58-495c-a1da-c3a405c4c18d
-ms.openlocfilehash: 6905f02369c9063d35c93ba9a30ffc2f394d23ae
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1ba4ea07fab3c448f4511c4af2689a0517481651
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62176921"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74854582"
 ---
 # <a name="ml-nonfatal-error-a2119"></a>ML Önemli Olmayan Hatası A2119
 
-**Dil türü belirtilmelidir**
+**dil türü belirtilmelidir**
 
-Dil türü bir yordam tanımında veya prototipi verilmedi.
+Bir yordam tanımına veya prototipe bir dil türü verilmedi.
 
-Varsayılan dil türü belirtilmezse dil türü her yordam tanımında veya prototip bildirilmesi gerekir. Varsayılan dil türü kullanarak ayarlanır [. MODEL](../../assembler/masm/dot-model.md) yönergesi **seçeneği LANG**, veya ML komut satırı seçenekleri **/Gc** veya **/Gd**.
+Bir dil türü, varsayılan dil türü belirtilmemişse her yordam tanımında veya prototipde bildirilmelidir. Varsayılan dil türü, kullanılarak ayarlanır [. MODEL](../../assembler/masm/dot-model.md) yönergesi, **seçenek lang**veya ml komut satırı seçenekleri **/GC** veya **/GD**.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -12,86 +12,86 @@ helpviewer_keywords:
 - function body
 - declaring functions, variables
 ms.assetid: ebab23c8-6eb8-46f3-b21d-570cd8457a80
-ms.openlocfilehash: 61662caf28fad2f961a580cf280799711a6909bb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5cf56375df417ac68b3e03d00f2bd7770ee571e8
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62325656"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74857144"
 ---
 # <a name="c-function-definitions"></a>C İşlev Tanımları
 
-Bir işlev tanımı işlev türlerini ve sayısını almak için bekliyor parametreler ve dönüş türü adını belirtir. Bir işlev tanımı bir işlev gövdesinin bildirimli kendi yerel değişkenlerin ve işlevin ne yaptığını belirlemek için ifadeleri de içerir.
+İşlev tanımı, işlevin adını, almayı beklediği parametrelerin türlerini ve sayısını ve dönüş türünü belirtir. Bir işlev tanımı Ayrıca yerel değişkenlerinin bildirimlerine sahip bir işlev gövdesini ve işlevin ne yaptığını belirleyecek deyimleri de içerir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-*Çeviri birimi*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Dış bildirimi* <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Çeviri birimi* *dış bildirimi*
+*çeviri birimi*:<br/>
+&nbsp;&nbsp;&nbsp;*dış bildirimi* &nbsp; <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*çeviri-birim* *dış bildirimi*
 
-*Dış bildirimi*: /\* yalnızca dış (dosyası) kapsamında izin \*/<br/>
+*Dış bildirim*:/\* yalnızca dış (dosya) kapsam \*izin verildi /<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*işlev tanımı*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*bildirimi*
 
 *işlev tanımı*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*bildirim tanımlayıcıları*<sub>iyileştirilmiş</sub> *öznitelik-seq*<sub>iyileştirilmiş</sub> *bildirimci* *bildirim listesi*  <sub>iyileştirilmiş</sub> *bileşik deyim*
+&nbsp;&nbsp;&nbsp;&nbsp;*bildirimi-belirticileri*<sub>opt</sub> *özniteliği-seq*<sub>opt</sub> *bildirimci* *bildirimi-List*<sub>opt</sub> *Bileþik-deyimin*
 
-/\* *öznitelik-seq* Microsoft Specific \*/
+/\* *özniteliği-seq* , Microsoft 'a özgü \*/
 
-Prototip Parametreler şunlardır:
+Prototip parametreleri şunlardır:
 
-*bildirim tanımlayıcıları*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*depolama sınıfı tanımlayıcısı* *bildirim tanımlayıcıları*<sub>iyileştirilmiş</sub> <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*tür belirticisi* *bildirim tanımlayıcıları*<sub>iyileştirilmiş</sub><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*tür niteleyicisi* *bildirim tanımlayıcıları*<sub>iyileştirilmiş</sub>
+*bildirim-tanımlayıcılar*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*depolama sınıfı Belirleyicisi* *bildirimi-tanımlayıcılar*<sub>kabul</sub> <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*tür belirleyicisi* *bildirimi-tanımlayıcılar*<sub>opt</sub><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*tür niteleyicisi* *bildirimi-tanımlayıcılar*<sub>opt</sub>
 
-*bildirim listesi*:<br/>
+*bildirim-liste*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*bildirimi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*bildirim listesi* *bildirimi*
+&nbsp;&nbsp;&nbsp;&nbsp;*bildirimi-List* *bildirimi*
 
 *bildirimci*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*İşaretçi*<sub>iyileştirilmiş</sub> *doğrudan bildirimcisi*
+&nbsp;&nbsp;&nbsp;&nbsp;*işaretçi*<sub>opt</sub> *doğrudan bildirimci*
 
-*doğrudan bildirimci*: /\* işlev bildirimcisi \*/<br/>
+*Direct-bildirimci*:/\* bir işlev bildirimci \*/<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*doğrudan bildirimci* **(** *parametre türü listesi* **)**  / \* yeni stil bildirimci \*/<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*doğrudan bildirimci* **(** *tanımlayıcı listesi*<sub>iyileştirilmiş</sub> **)**  / \* Kullanımdan kalktı stili bildirimci \*/
 
-Bir tanım parametre listesinde bu söz dizimini kullanır:
+Bir tanımdaki parametre listesi bu söz dizimini kullanır:
 
-*parametre türü listesi*: /\* parametre listesi \*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*parametre listesi* <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*parametre listesi* **,...**
+*parametre-tür-listesi*:/\* parametre listesi \*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*parametre-listesi* <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*parametre-listesi* **,...**
 
-*parametre listesi*:<br/>
+*parametre-liste*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*parametre bildirimi*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*parametre listesi* **,** *parametre bildirimi*
 
 *parametre bildirimi*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*bildirim tanımlayıcıları* *bildirimcisi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*bildirim tanımlayıcıları* *soyut bildirimci*<sub>iyileştirilmiş</sub>
+&nbsp;&nbsp;&nbsp;&nbsp;*bildirimi-tanımlayıcılar* *bildirimci*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*bildirimi-tanımlayıcılar* *abstract-declarator*<sub>opt</sub>
 
-Eski stil işlev tanımı parametre listesinde bu söz dizimini kullanır:
+Eski stil işlev tanımındaki parametre listesi bu söz dizimini kullanır:
 
-*tanımlayıcı listesi*: /\* eski stil işlev tanımları ve bildirimleri \*/<br/>
+*tanımlayıcı listesi*:/\* eski stil işlev tanımlarında ve bildirimlerde kullanılan \*/<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*tanımlayıcı*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*tanımlayıcı listesi* **,** *tanımlayıcısı*
 
-İşlev gövdesi için sözdizimi aşağıdaki gibidir:
+İşlev gövdesi için sözdizimi şöyledir:
 
-*Bileşik deyim*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**{** *bildirim listesi*<sub>iyileştirilmiş</sub> *deyim listesindeki*<sub>iyileştirilmiş</sub> **}**
+*bileşik ifade*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp; **{** *declaration-List*<sub>opt</sub> *bildirimini-List*<sub>opt</sub> **}**
 
-Bir işlev bildirimi değiştirebileceğiniz yalnızca depolama sınıfı tanımlayıcıları **extern** ve **statik**. **Extern** belirticisi işlev diğer dosyalardan başvurulabilir gösterir; diğer bir deyişle, işlev adını bağlayıcıya dışarı aktarılır. **Statik** belirticisi işlev diğer dosyalardan başvurulamaz gösterir; diğer bir deyişle, ad bağlayıcı tarafından verilebilir. Hiçbir depolama sınıfı bir işlev tanımında görünürse **extern** varsayılır. Herhangi bir durumda, işlev her zaman tanımı noktasından dosyasının sonuna görülebilir.
+Bir işlev bildirimini değiştirebilen tek depolama sınıfı belirticileri **extern** ve **statiktir**. **Extern** Belirleyicisi, işleve diğer dosyalardan başvurulduğunu belirtir; diğer bir deyişle, işlev adı bağlayıcıya aktarılmalıdır. **Statik** belirtici, işleve diğer dosyalardan başvurulmadığını belirtir; diğer bir deyişle, ad bağlayıcı tarafından aktarılmaz. Bir işlev tanımında hiçbir depolama sınıfı görünürse, **extern** varsayılır. Herhangi bir durumda, işlev her zaman tanım noktasından dosyanın sonuna kadar görünür olur.
 
-İsteğe bağlı *bildirim tanımlayıcıları* ve zorunlu *bildirimci* birlikte işlevin dönüş türü ve adı belirtin. *Bildirimci* adları işlevi ve işlev adının parantez tanımlayıcı bir birleşimidir. İsteğe bağlı *öznitelik-seq* Microsoft'a özgü Terminal dışı tanımlanan özellik [işlev öznitelikleri](../c-language/function-attributes.md).
+İsteğe bağlı *Bildirim belirticileri* ve zorunlu *Bildirimciler* birlikte işlevin dönüş türünü ve adını belirtir. *Bildirimci* , işlev adından sonra işlevi ve ayraçları isimeden tanımlayıcının bir birleşimidir. İsteğe bağlı *öznitelik-Seq* & gt, [işlev özniteliklerinde](../c-language/function-attributes.md)tanımlanmış, Microsoft 'a özgü bir özelliktir.
 
-*Doğrudan bildirimci* (içinde *bildirimci* sözdizimi) tanımlanan işlevin adını ve parametrelerini tanımlayıcısını belirtir. Varsa *doğrudan bildirimci* içeren bir *parametre türü listesi*, tüm parametrelerinin türleri listesini belirtir. Böyle bir bildirimcide bir işlev prototipi işleve yapılan sonraki çağrılar için de görür.
+*Doğrudan bildirimci* ( *bildirimci* sözdiziminde), tanımlanmakta olan işlevin adını ve parametrelerinin tanımlayıcılarını belirtir. *Doğrudan bildirimci* bir *parametre türü listesi*içeriyorsa, liste tüm parametrelerin türlerini belirtir. Bu tür bir bildirimci, daha sonra işlevine çağrılar için bir işlev prototipi işlevi görür.
 
-A *bildirimi* içinde *bildirim listesi* işlev tanımları içeremez bir *depolama sınıfı tanımlayıcısı* dışında **kaydetme**. *Tür tanımlayıcısı* içinde *bildirim tanımlayıcıları* yalnızca söz dizimi atlanabilir **kaydetme** depolama sınıfı için bir değer belirtilirse **int** türü.
+İşlev tanımlarındaki *bildirim listesindeki* bir *bildirimde* , **yazmaç**dışında bir *depolama sınıfı belirticisi* bulunamaz. *Bildirim tanımlayıcıları* sözdiziminde *tür belirleyicisi* , yalnızca bir **int** türü değeri için **yazmaç** depolama sınıfı belirtilmişse atlanabilir.
 
-*Compound-statement* olan yerel değişken bildirimleri, başvuruları harici olarak bildirilen öğeler ve deyimleri içeren işlev gövdesi.
+*Bileşik deyim* , yerel değişken bildirimlerini, dışarıdan tanımlanmış öğelere başvuruları ve deyimleri içeren işlev gövdesidir.
 
-Aşağıdaki bölümlerde [işlev öznitelikleri](../c-language/function-attributes.md), [depolama sınıfı](../c-language/storage-class.md), [dönüş türü](../c-language/return-type.md), [parametreleri](../c-language/parameters.md), ve [işlevgövdesi](../c-language/function-body.md) ayrıntılı işlev tanımının bileşenlerini açıklar.
+Bölümler [Işlev öznitelikleri](../c-language/function-attributes.md), [depolama sınıfı](../c-language/storage-class.md), [dönüş türü](../c-language/return-type.md), [Parametreler](../c-language/parameters.md)ve [işlev gövdesi](../c-language/function-body.md) , işlev tanımının bileşenlerini ayrıntılı olarak anlatmaktadır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

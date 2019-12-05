@@ -30,12 +30,12 @@ helpviewer_keywords:
 - _set_invalid_parameter_handler function
 - _set_thread_local_invalid_parameter_handler function
 ms.assetid: c0e67934-1a41-4016-ad8e-972828f3ac11
-ms.openlocfilehash: 090eb43289313f12b900e671df61f74e7b464872
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: d2e8dab92c70189533656bac359c794de2ad8002
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70948493"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74857781"
 ---
 # <a name="_set_invalid_parameter_handler-_set_thread_local_invalid_parameter_handler"></a>_set_invalid_parameter_handler, _set_thread_local_invalid_parameter_handler
 
@@ -63,7 +63,7 @@ Yeni geçersiz parametre işleyicisine işlev işaretçisi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Birçok C çalışma zamanı işlevi, kendisine geçirilen bağımsız değişkenlerin geçerliliğini denetler. Geçersiz bir bağımsız değişken geçirilmemişse, işlev **errno** hata numarasını ayarlayabilir veya bir hata kodu döndürebilir. Böyle durumlarda, geçersiz parametre işleyicisi de çağırılır. C çalışma zamanı, programı sonlandıran varsayılan bir genel geçersiz parametre işleyicisi sağlar ve bir çalışma zamanı hata iletisi görüntüler. Genel geçersiz parametre işleyicisi olarak kendi işlevinizi ayarlamak için **_set_invalid_parameter_handler** kullanabilirsiniz. C çalışma zamanı, iş parçacığı yerel geçersiz parametre işleyicisini de destekler. İş parçacığı yerel parametre işleyicisi **_set_thread_local_invalid_parameter_handler**kullanarak bir iş parçacığında ayarlandıysa, iş parçacığından çağrılan C çalışma zamanı işlevleri genel işleyici yerine bu işleyiciyi kullanır. Tek seferde genel geçersiz bağımsız değişken işleyicisi olarak yalnızca bir işlev belirtilebilir. İş parçacığı başına geçersiz iş parçacığı-yerel bağımsız değişken işleyicisi olarak yalnızca bir işlev belirtilebilir, ancak farklı iş parçacıkları farklı iş parçacığı yerel işleyicilerine sahip olabilir. Bu, diğer iş parçacıklarının davranışını etkilemeden kodunuzun bir bölümünde kullanılan işleyiciyi değiştirmenize olanak sağlar.
+Birçok C çalışma zamanı işlevi, kendisine geçirilen bağımsız değişkenlerin geçerliliğini denetler. Geçersiz bir bağımsız değişken geçirilmemişse, işlev **errno** hata numarasını ayarlayabilir veya bir hata kodu döndürebilir. Böyle durumlarda, geçersiz parametre işleyicisi de çağırılır. C çalışma zamanı, programı sonlandıran varsayılan bir genel geçersiz parametre işleyicisi sağlar ve bir çalışma zamanı hata iletisi görüntüler. Kendi işlevinizi genel geçersiz parametre işleyicisi olarak ayarlamak için **_set_invalid_parameter_handler** kullanabilirsiniz. C çalışma zamanı, iş parçacığı yerel geçersiz parametre işleyicisini de destekler. İş parçacığı yerel parametre işleyicisi **_set_thread_local_invalid_parameter_handler**kullanarak bir iş parçacığında ayarlandıysa, iş parçacığından çağrılan C çalışma zamanı işlevleri genel işleyici yerine bu işleyiciyi kullanır. Tek seferde genel geçersiz bağımsız değişken işleyicisi olarak yalnızca bir işlev belirtilebilir. İş parçacığı başına geçersiz iş parçacığı-yerel bağımsız değişken işleyicisi olarak yalnızca bir işlev belirtilebilir, ancak farklı iş parçacıkları farklı iş parçacığı yerel işleyicilerine sahip olabilir. Bu, diğer iş parçacıklarının davranışını etkilemeden kodunuzun bir bölümünde kullanılan işleyiciyi değiştirmenize olanak sağlar.
 
 Çalışma zamanı geçersiz parametre işlevini çağırdığında, genellikle kurtarılabilir olmayan bir hata meydana gelir. Sağladığınız geçersiz parametre işleyici işlevi, bir bütün verileri kaydetmeli ve sonra iptal etmelidir. Hatanın kurtarılabilir olduğundan emin olmadığınız takdirde, denetimi Main işlevine döndürmemelidir.
 
@@ -91,7 +91,7 @@ void _invalid_parameter(
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnekte, geçersiz parametreyi ve CRT kaynaklardaki dosyayı ve satırı alan işlevi yazdırmak için geçersiz bir parametre hata işleyicisi kullanılır. Hata ayıklama CRT kitaplığı kullanıldığında, geçersiz parametre hataları, bu örnekte [_Crtsetreportmode](crtsetreportmode.md)kullanılarak devre dışı bırakılan bir onaylama işlemi de yükseltir.
+Aşağıdaki örnekte, geçersiz parametreyi ve CRT kaynaklardaki dosyayı ve satırı alan işlevi yazdırmak için geçersiz bir parametre hata işleyicisi kullanılır. Hata ayıklama CRT kitaplığı kullanıldığında, geçersiz parametre hataları [_CrtSetReportMode](crtsetreportmode.md)kullanarak bu örnekte devre dışı bırakılmış bir onaylama işlemi de yükseltir.
 
 ```C
 // crt_set_invalid_parameter_handler.c

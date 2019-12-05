@@ -1,42 +1,42 @@
 ---
 title: ML Önemli Hatası A1007
 ms.date: 08/30/2018
-ms.topic: error-reference
+ms.custom: error-reference
 f1_keywords:
 - A1007
 helpviewer_keywords:
 - A1007
 ms.assetid: bcf9c826-beb3-4e93-91fe-1ffd34995fbf
-ms.openlocfilehash: 98933c3a24da22f447174a3b51c4855690aba83e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 01633b4fa084b7d5e14af5a5c6e51e3dca684d2a
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62177909"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74856923"
 ---
 # <a name="ml-fatal-error-a1007"></a>ML Önemli Hatası A1007
 
-**çok derin iç içe geçme düzeyi**
+**iç içe geçme düzeyi çok derin**
 
-Derleyici iç içe geçme sınırına ulaşıldı. Tersi belirtilmedikçe hariç 20 düzeyleri sınırlıdır.
+Derleyici, iç içe geçmiş sınırına ulaştı. Sınır, aksi belirtilmedikçe 20 düzeydir.
 
 Aşağıdakilerden biri çok derin iç içe geçmiş:
 
-- Gibi üst düzey bir yönerge [. Eğer](../../assembler/masm/dot-if.md), [. Yineleme](../../assembler/masm/dot-repeat.md), veya [. SIRADA](../../assembler/masm/dot-while.md).
+- Gibi üst düzey bir yönerge [. Ise](../../assembler/masm/dot-if.md), [. Veya TEKRARLAYıN](../../assembler/masm/dot-repeat.md) [. WHILE](../../assembler/masm/dot-while.md).
 
 - Bir yapı tanımı.
 
-- Bir koşullu derleme yönergesi.
+- Koşullu derleme yönergesi.
 
-- Bir yordamı tanımı.
+- Bir yordam tanımı.
 
-- A [PUSHCONTEXT](../../assembler/masm/pushcontext.md) yönergesi (sınır: 10).
+- Bir [PushContext](../../assembler/masm/pushcontext.md) yönergesi (sınır 10 ' dur).
 
-- Segment tanımı.
+- Bir segment tanımı.
 
-- Bir ekleme dosyası.
+- Bir içerme dosyası.
 
-- Makro.
+- Bir makro.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

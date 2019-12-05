@@ -5,65 +5,65 @@ helpviewer_keywords:
 - declarations, about declarations
 - type qualifiers
 ms.assetid: fcd2364c-c2a5-4fbf-9027-19dac4144cb5
-ms.openlocfilehash: 439bc878bbcd1c9778fb74738cb3b32b908a5943
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 0ffda6522e632533b0aaa4ba146e8fad082ed435
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64343198"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74857066"
 ---
 # <a name="overview-of-declarations"></a>Bildirimlere Genel Bakış
 
-Bir "bildirim" yorumunu ve tanımlayıcıları Kümesi özniteliklerini belirtir. Ayrıca nesne veya işlev tanımlayıcısının adlı için ayrılmış depolama neden olan bir bildirim "tanımı." olarak adlandırılır C bildirimleri değişkenler, İşlevler ve türleri için bu sözdizimine sahiptir:
+Bir "bildirim", bir dizi tanımlayıcı için yorumu ve öznitelikleri belirtir. Ayrıca, tanımlayıcı tarafından adlandırılan nesne veya işlev için depolamaya ayrılan bir bildirim, "Tanım" olarak adlandırılır. Değişkenler, işlevler ve türler için C bildirimlerinin bu söz dizimi vardır:
 
 ## <a name="syntax"></a>Sözdizimi
 
-*bildirimi*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*bildirim tanımlayıcıları* *öznitelik-seq*<sub>iyileştirilmiş</sub> *init-declarator-list*<sub>iyileştirilmiş</sub>**;**
+*bildirim*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*bildirimi-tanımlayıcılar* *özniteliği-seq*<sub>opt</sub> *init-declarator-list*<sub>opt</sub> **;**
 
-/\* *öznitelik-seq*<sub>iyileştirilmiş</sub> Microsoft özgüdür * /
+/\* *özniteliği-seq*<sub>opt</sub> , Microsoft 'a özgü */
 
-*bildirim tanımlayıcıları*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*depolama sınıfı tanımlayıcısı* *bildirim tanımlayıcıları*<sub>iyileştirilmiş</sub><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*tür belirticisi* *bildirim tanımlayıcıları*<sub>iyileştirilmiş</sub><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*tür niteleyicisi* *bildirim tanımlayıcıları*<sub>iyileştirilmiş</sub>
+*bildirim-tanımlayıcılar*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*depolama sınıfı Belirleyicisi* *bildirimi-tanımlayıcılar*<sub>kabul</sub><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*tür belirleyicisi* *bildirimi-tanımlayıcılar*<sub>opt</sub><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*tür niteleyicisi* *bildirimi-tanımlayıcılar*<sub>opt</sub>
 
 *init-declarator-list*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*init-declarator*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*init-bildirimci*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*init-declarator-list* **,** *init-declarator*
 
 *init-declarator*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Bildirimci*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*bildirimci* **=** *Başlatıcı*
+&nbsp;&nbsp;&nbsp;&nbsp;*bildirimci*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*bildirimci* **=** *başlatıcısı*
 
 > [!NOTE]
-> Bu sözdiziminin *bildirimi* aşağıdaki bölümlerde yinelenmez. Aşağıdaki bölümlerde söz dizimi ile genellikle başlayan *bildirimci* bildirimlere.
+> *Bildirim* için bu sözdizimi aşağıdaki bölümlerde yinelenmez. Aşağıdaki bölümlerde sözdizimi genellikle *bildirimci* olmayan terminalle başlar.
 
-Bildirimler *init-declarator-list* adın geçmesi; tanımlayıcılar içeriyor *init* için Başlatıcı ifadesinin kısaltmasıdır. *İnit-declarator-list* virgülle ayrılmış bir Bildirimciler, her biri olabilir ek tür bilgileri, bir başlatıcıya veya her dizi olan. *Bildirimci* varsa bildirilen tanımlayıcılar içeriyor. *Bildirim tanımlayıcıları* bildirimlere gösteren depolama süresi, bağlantı türü ve depolama sınıfı tanımlayıcıları bir dizi oluşur ve en az bir parçası Bildirimciler belirtmek varlık türü. Bu nedenle, bildirimleri depolama sınıfı tanımlayıcıları, tür tanımlayıcıları, tür niteleyicileri, bildirimler ve başlatıcılar bileşiminden oluşur.
+*İnit-declarator-list* içindeki bildirimler, adlandırılmakta olan tanımlayıcıları içerir; *init* başlatıcı için bir kısaltmadır. *İnit-declarator listesi* , her birinin ek tür bilgilerine veya bir başlatıcıya ya da her ikisine de sahip olabilen, virgülle ayrılmış bildirimcilerin bir sırasıdır. *Bildirimci* , varsa, varsa tanımlayıcıları içerir. *Bildirim belirticileri* olmayan Terminal, bağlantı, depolama süresi ve bildirimcilerin işaret eden varlıkların türünün en az bir kısmını belirten bir dizi tür ve depolama sınıfı belirticisinden oluşur. Bu nedenle, bildirimler depolama sınıfı belirticileri, tür belirticileri, tür niteleyicileri, bildirimcilerin ve başlatıcıların bir bileşiminden oluşur.
 
-Bildirimleri birini içerebilir veya daha fazla isteğe bağlı öznitelik listelenen *öznitelik-seq*; *seq* dizisi kısaltmasıdır. Bu Microsoft özel öznitelikler bu kitap boyunca ayrıntılı ele alınmıştır işlevleri, çeşitli gerçekleştirin.
+Bildirimler, *öznitelik-Seq*içinde listelenen bir veya daha fazla isteğe bağlı özniteliği içerebilir. *Seq* , Sequence için bir kısaltmadır. Bu Microsoft 'a özgü öznitelikler, bu kitapta ayrıntılı olarak açıklanan çeşitli işlevler gerçekleştirir.
 
-Bir Değişken bildiriminde genel biçiminde *tür tanımlayıcısı* değişkeninin veri türü sunar. *Tür tanımlayıcısı* türü tarafından değiştirildiğinde olarak bir bileşik olabilir **const** veya `volatile`. `declarator` Büyük olasılıkla bir dizi veya işaretçi türünde bildirmeniz değiştirilmiş değişkeninin adını verir. Örneğin,
+Bir değişken bildiriminin genel biçiminde *tür belirleyicisi* , değişkenin veri türüne sahip. Tür *belirleyicisi* , türün **const** veya `volatile`tarafından değiştirildiği gibi bir bileşik olabilir. `declarator`, büyük olasılıkla bir diziyi veya bir işaretçi türünü bildirmek üzere değiştirilen değişkenin adını verir. Örneğin,
 
 ```C
 int const *fp;
 ```
 
-adlı bir değişken bildirir `fp` değiştirilemez bir işaretçisi olarak (**const**) `int` değeri. Virgülle ayırarak birden çok bildirimcisi kullanarak bir bildirimde birden fazla değişken tanımlayabilirsiniz.
+değiştirilemeyen (**const**) `int` bir değere işaretçi olarak `fp` adlı bir değişken bildirir. Bir bildirimde birden fazla değişkeni virgülle ayırarak birden fazla bildirimci kullanarak tanımlayabilirsiniz.
 
-Bir bildirimi en az bir bildirimci sahip olmalıdır veya kendi tür belirticisi, bir yapı etiketi, birleşim etiketi veya bir sabit listesi üyesi bildirmeniz gerekir. Bildirimciler, kalan herhangi bir tanımlayıcı bilgileri sağlar. Bir bildirimci köşeli parantez ile değiştirilebilir bir tanımlayıcıdır (**[]**), yıldız işareti (<strong>\*</strong>), veya parantezler ( **()** ) bir diziyi bildirmek için işaretçi, veya işlev türü, sırasıyla. (Örneğin, karakter, tamsayı ve kayan nokta öğeleri), basit değişkenler veya yapılar ve birleşimler basit değişken bildirdiğinizde `declarator` yalnızca bir tanımlayıcıdır. Bildirimciler hakkında daha fazla bilgi için bkz. [bildirimler ve değişken bildirimleri](../c-language/declarators-and-variable-declarations.md).
+Bir bildirimde en az bir bildirimci olmalıdır ya da tür belirleyicisi bir yapı etiketi, birleşim etiketi veya bir numaralandırmanın üyelerini bildirmelidir. Bildirimciler, bir tanımlayıcı hakkında kalan bilgileri sağlar. Bildirimci, sırasıyla bir dizi, işaretçi veya işlev türü bildirmek için köşeli ayraç ( **[]** ), yıldız işareti (<strong>\*</strong>) veya parantez ( **()** ) ile değiştirilebilen bir tanıtıcıdır. Basit değişkenler (karakter, tamsayı ve kayan nokta öğeleri gibi) ya da basit değişkenlerin yapıları ve birleşimleri bildirdiğinizde, `declarator` yalnızca bir tanıtıcıdır. Bildirimciler hakkında daha fazla bilgi için bkz. [bildiriciler ve değişken bildirimleri](../c-language/declarators-and-variable-declarations.md).
 
-Tüm tanımları örtük olarak bildirimleri, ancak tüm bildirimleri tanımlar. Örneğin, şununla değişken bildirimlerini `extern` depolama sınıfı tanımlayıcısı "başvuran," yerine "tanımlama" bildirimleri. Dış bir değişken tanımlanmadan başvurulacak ise veya bir nereden kullanıldığı, başka bir kaynak dosyasında tanımlanan bir `extern` bildirimi gereklidir. "Bildirimlerini başvurarak" depolama tahsis ve değişken bildirimlerinde başlatılabilir.
+Tüm tanımlar örtük bildirimlerdir, ancak tüm bildirimler tanımlardır. Örneğin, `extern` depolama sınıfı Belirleyicisi ile başlayan değişken bildirimleri "tanımlama" bildirimleri yerine "başvuruluyor". Bir dış değişken tanımlanmadan önce, veya kullanıldığı bilgisayardan başka bir kaynak dosyasında tanımlanmışsa, bir `extern` bildirimi gerekir. Depolama "başvuru" bildirimleri ile ayrılmaz ve bildirimlerde değişkenler başlatılabilir.
 
-Bir depolama sınıfı veya bir tür (veya her ikisi de) değişken bildirimlerinde gereklidir. Dışında `__declspec`, yalnızca bir depolama sınıfı tanımlayıcısı bir bildirimine izin verilir ve tüm depolama sınıfı tanımlayıcıları her bağlamda izin verilir. `__declspec` Depolama sınıfı ile diğer depolama sınıfı tanımlayıcıları izin verilir ve birden çok kez izin verilir. Bildirilen öğe nasıl depolandığını ve başlatılmış ve bir programın hangi parçalarının öğe başvurabilirsiniz bir bildirimin depolama sınıfı tanımlayıcısı etkiler.
+Değişken bildirimlerinde bir depolama sınıfı veya bir tür (veya her ikisi de) gereklidir. `__declspec`haricinde, bildirimde yalnızca bir depolama sınıfı belirticisine izin verilir ve her bağlamda tüm depolama sınıfı belirticilerine izin verilmez. `__declspec` Storage sınıfına diğer depolama sınıfı belirticileriyle izin verilir ve birden çok kez kullanılabilir. Bir bildirimin depolama sınıfı Belirleyicisi, belirtilen öğenin nasıl depolandığını ve başlatıldığını ve bir programın hangi bölümlerinin öğeye başvurabileceğini etkiler.
 
-*Depolama sınıfı tanımlayıcısı* C'de tanımlanan terminaller dahil **otomatik**, `extern`, **kaydetme**, **statik**ve `typedef`. Ayrıca, Microsoft C içerir *depolama sınıfı tanımlayıcısı* terminal `__declspec`. Tüm *depolama sınıfı tanımlayıcısı* dışında terminaller `typedef` ve `__declspec` ele alınmıştır [depolama sınıfları](../c-language/c-storage-classes.md). Bkz: [Typedef bildirimleri](../c-language/typedef-declarations.md) hakkında bilgi için `typedef`. Bkz: [genişletilmiş depolama sınıfı öznitelikleri](../c-language/c-extended-storage-class-attributes.md) hakkında bilgi için `__declspec`.
+C 'de tanımlanan *depolama sınıfı Belirleyicisi* terminallerini **Otomatik**, `extern`, **yazmaç**, **statik**ve `typedef`içerir. Ayrıca, Microsoft C, *depolama sınıfı tanımlayıcısı* Terminal `__declspec`içerir. `typedef` ve `__declspec` dışındaki tüm *depolama sınıfı Belirleyicisi* terminallerini [depolama sınıflarında](../c-language/c-storage-classes.md)ele alınmıştır. `typedef`hakkında bilgi için bkz. [typedef bildirimleri](../c-language/typedef-declarations.md) . `__declspec`hakkında bilgi için bkz. [genişletilmiş depolama sınıfı öznitelikleri](../c-language/c-extended-storage-class-attributes.md) .
 
-Kaynak program ve varlığından destek alan içindeki bildirim konumunu veya diğer bildirimleri değişkenin olmaması değişkenlerin ömrünü belirlemede önemli faktörler şunlardır. Birden çok redeclarations ancak yalnızca bir tanımı olabilir. Ancak, bir tanımı birden fazla çeviri biriminde görünür. Dahili olarak bağlantılı nesneler bir çeviri birimi için benzersiz olduğundan iç bağlaması olan nesneler için bu kural her çeviri birimi için ayrı ayrı uygulanır. Dış bağlaması olan nesneler için bu kural için tüm programı uygular. Bkz: [ömür, kapsam, görünürlük ve bağlantı](../c-language/lifetime-scope-visibility-and-linkage.md) görünürlük hakkında daha fazla bilgi.
+Kaynak programdaki bildirimin konumu ve değişkenin diğer bildirimlerinin varlığı veya yokluğu, değişkenlerin ömrünü belirlemede önemli faktörlerdir. Birden çok yeniden bildirim olabilir ancak yalnızca bir tanım olabilir. Ancak, bir tanım birden fazla çeviri biriminde görünebilir. İç bağlantıya sahip nesneler için, dahili bağlantılı nesneler bir çeviri birimine benzersiz olduğundan, bu kural her bir çeviri birimine ayrı olarak uygulanır. Dış bağlantısına sahip nesneler için bu kural tüm programa uygulanır. Görünürlük hakkında daha fazla bilgi için bkz. [ömür, kapsam, görünürlük ve bağlantı](../c-language/lifetime-scope-visibility-and-linkage.md) .
 
-Tür tanımlayıcıları, tanımlayıcıların veri türleri hakkında bazı bilgiler sağlamalısınız. Varsayılan türü belirleyici `int`. Daha fazla bilgi için [tür tanımlayıcıları](../c-language/c-type-specifiers.md). Tür tanımlayıcıları da türü etiketleri, yapı ve birleşim bileşen adlarına ve numaralandırma sabitlerini tanımlayabilirsiniz. Daha fazla bilgi için [numaralandırma bildirimleri](../c-language/c-enumeration-declarations.md), [yapı bildirimleri](../c-language/structure-declarations.md), ve [birleşim bildirimleri](../c-language/union-declarations.md).
+Tür belirticileri, tanımlayıcıların veri türleri hakkında bazı bilgiler sağlar. Varsayılan tür belirleyicisi `int`. Daha fazla bilgi için bkz. [tür tanımlayıcıları](../c-language/c-type-specifiers.md). Tür belirticileri ayrıca tür etiketlerini, yapıyı ve birleşim bileşen adlarını ve numaralandırma sabitlerini de tanımlayabilir. Daha fazla bilgi için bkz. [numaralandırma bildirimleri](../c-language/c-enumeration-declarations.md), [Yapı bildirimleri](../c-language/structure-declarations.md)ve [birleşim bildirimleri](../c-language/union-declarations.md).
 
-İki *tür niteleyici* terminaller: **const** ve `volatile`. Bu niteleyiciler yalnızca bu tür nesneleri l-değerler erişirken ilgilendiren türlerinin ek özellikleri belirtin. Daha fazla bilgi için **const** ve `volatile`, bkz: [tür niteleyicileri](../c-language/type-qualifiers.md). L-değerler tanımı için bkz [L-değeri ve r değeri ifadeleri](../c-language/l-value-and-r-value-expressions.md).
+İki *tür niteleyicisi* terminalleri vardır: **const** ve `volatile`. Bu niteleyiciler, yalnızca o türdeki nesnelere l-Values aracılığıyla erişirken alakalı olan türlerin ek özelliklerini belirler. **Const** ve `volatile`hakkında daha fazla bilgi için bkz. [Tür niteleyicileri](../c-language/type-qualifiers.md). L değerlerinin tanımı için bkz. [l-Value ve R-Value ifadeleri](../c-language/l-value-and-r-value-expressions.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

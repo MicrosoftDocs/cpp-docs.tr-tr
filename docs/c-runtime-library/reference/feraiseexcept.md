@@ -22,12 +22,12 @@ f1_keywords:
 helpviewer_keywords:
 - feraiseexcept function
 ms.assetid: 87e89151-83c2-4563-9a9a-45666245d437
-ms.openlocfilehash: 40ff315c179a6b62a3073d4f07e4e6a6d1c1acab
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 07c8a79e0a9569db80607e1ec1e16cd4b502783c
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70941123"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74857833"
 ---
 # <a name="feraiseexcept"></a>feraiseexcept
 
@@ -52,7 +52,7 @@ Belirtilen tüm özel durumlar başarıyla harekete geçirilir, 0 döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Feraiseexcept** işlevi, *hariç tutulan*tarafından belirtilen kayan nokta özel durumlarını oluşturmayı dener.   **Feraiseexcept** işlevi, \<fenv. h > tanımlı bu özel durum makrolarını destekler:
+**Feraiseexcept** işlevi, *hariç tutulan*tarafından belirtilen kayan nokta özel durumlarını oluşturmayı dener.   **Feraiseexcept** işlevi, \<fenv. h > tanımlanan bu özel durum makrolarını destekler:
 
 |Özel durum makrosu|Açıklama|
 |---------------------|-----------------|
@@ -63,11 +63,11 @@ Belirtilen tüm özel durumlar başarıyla harekete geçirilir, 0 döndürür.
 |FE_UNDERFLOW|Daha önceki bir kayan nokta işlem sonucu tam duyarlıkta gösterilemeyecek kadar küçük; bir denormal değeri oluşturuldu.|
 |FE_ALLEXCEPT|Desteklenen tüm kayan nokta özel durumlarının bit düzeyinde veya dışında.|
 
-*Hariç tutulan* bağımsız değişken sıfır, özel durum makrosu değerlerinden biri ya da desteklenen özel durum makrolarının BIT seviyesinde veya iki ya da daha fazlası olabilir. Belirtilen özel durum makrolarından biri FE_OVERFLOW veya FE_UNDERFLOW ise, FE_INEXACT özel durumu bir yan etkisi olarak ortaya çıkabilir.
+*Hariç tutulan* bağımsız değişken sıfır, özel durum makrosu değerlerinden biri ya da desteklenen özel durum makrolarının BIT seviyesinde veya iki ya da daha fazlası olabilir. Belirtilen özel durum makrolarından biri FE_OVERFLOW veya FE_UNDERFLOW, FE_INEXACT özel durumu bir yan etkisi olarak ortaya çıkabilir.
 
 Bu işlevi kullanmak için, çağrıdan önce `#pragma fenv_access(on)` yönergesini kullanarak erişimi engelleyebilecek kayan nokta iyileştirmelerini kapatmanız gerekir. Daha fazla bilgi için bkz. [fenv_access](../../preprocessor/fenv-access.md).
 
-**Microsoft 'a özgü:** FE_INVALID, FE_DIVBYZERO, FE_OVERFLOW, FE_UNDERFLOW, FE_INEXACT sırasıyla, *hariç tutulan* özel durumlar oluşturulur. Ancak, FE_INEXACT, FE_OVERFLOW veya FE_UNDERFLOW oluşturulduğunda, *hariç tutulan*durumlarda belirtilmese de oluşturulabilir. **Son Microsoft 'a özgü**
+**Microsoft 'a özgü:** *Hariç tutulan* ' de belirtilen özel durumlar sırasıyla FE_INVALID, FE_DIVBYZERO, FE_OVERFLOW, FE_UNDERFLOW, FE_INEXACT olarak oluşturulur. Ancak, FE_OVERFLOW veya FE_UNDERFLOW başlatıldığında, *hariç tutulan*' de belirtilmese bile FE_INEXACT oluşturulabilir.
 
 ## <a name="requirements"></a>Gereksinimler
 

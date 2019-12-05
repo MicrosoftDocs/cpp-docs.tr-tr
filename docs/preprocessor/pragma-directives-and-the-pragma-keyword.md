@@ -13,12 +13,12 @@ helpviewer_keywords:
 - preprocessor, pragmas
 - pragma directives (#pragma)
 ms.assetid: 9867b438-ac64-4e10-973f-c3955209873f
-ms.openlocfilehash: 2cf075e4ff8049593a1e77c5d2c1c259b224877b
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 6cfbcd325dc895719bad5dccc9c19bcda90cdaa0
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70222305"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74858080"
 ---
 # <a name="pragma-directives-and-the-__pragma-keyword"></a>Pragma yönergeleri ve __pragma anahtar sözcüğü
 
@@ -26,20 +26,20 @@ Pragma yönergeleri makine veya işletim sistemine özgü derleyici özellikleri
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **#pragma** *belirteç-dize*\
+> **#pragma** *belirteci-dize*\
 > **__pragma (** *belirteç-dize* **)**
 
 ## <a name="remarks"></a>Açıklamalar
 
-Her C uygulamasının, ana C++ makinesi veya işletim sistemine özgü bazı özellikleri destekler. Örneğin, bazı programlar, bellekteki verilerin konumu üzerinde tam denetim sağlamalıdır veya belirli işlevlerin parametreleri alma şeklini denetmelidir. **#Pragma** yönergeleri, her bir derleyicinin makine ve işletim sistemine özgü özellikler sunmasına, C ve C++ dillerle genel uyumluluğu sürdürmesinin bir yolunu sunar.
+Her bir C ve C++ uygulaması, kendi ana makinesine veya işletim sistemine özgü benzersiz bazı özellikler destekler. Örneğin, bazı programlar, bellekteki verilerin konumu üzerinde tam denetim sağlamalıdır veya belirli işlevlerin parametreleri alma şeklini denetmelidir. **#Pragma** yönergeleri, her bir derleyicinin makine ve işletim sistemine özgü özellikler sunmasına, C ve C++ dillerle genel uyumluluğu sürdürmesinin bir yolunu sunar.
 
 Pragmalar, tanıma göre makine veya işletim sistemine özgüdür ve genellikle her derleyicide farklıdır. Pragmalar, yeni Önişlemci işlevselliği sağlamak ya da derleyiciye uygulama tanımlı bilgiler sağlamak için koşullu yönergeler içinde kullanılabilir.
 
-*Token-string* , varsa belirli bir derleyici yönergesini ve bağımsız değişkenleri veren bir karakter dizisidir. Numara işareti ( **#** ), pragmayı içeren satırdaki ilk beyaz boşluk olmayan karakter olmalıdır. Boşluk karakterleri, sayı işaretini ve "pragma" sözcüğünü ayırabilirler. Aşağıdaki **#pragma**, çeviricisinin ön işleme belirteçleri olarak ayrıştırabileceği tüm metinleri yazın. **#Pragma** bağımsız değişkeni makro genişletmeye tabidir.
+*Token-string* , varsa belirli bir derleyici yönergesini ve bağımsız değişkenleri veren bir karakter dizisidir. Numara işareti ( **#** ), pragma 'ı içeren satırdaki ilk beyaz boşluk olmayan karakter olmalıdır. Boşluk karakterleri, sayı işaretini ve "pragma" sözcüğünü ayırabilirler. Aşağıdaki **#pragma**, çeviricisinin ön işleme belirteçleri olarak ayrıştırabileceği tüm metinleri yazın. **#Pragma** bağımsız değişkeni makro genişletmeye tabidir.
 
 Derleyici, tanımadığı bir pragma bulduğunda bir uyarı verir ve derlemeyi sürdürür.
 
-Microsoft C ve C++ derleyiciler aşağıdaki pragmaları tanır:
+Microsoft C ve C++ derleyicileri aşağıdaki pragmaları tanır:
 
 ||||
 |-|-|-|
@@ -50,7 +50,7 @@ Microsoft C ve C++ derleyiciler aşağıdaki pragmaları tanır:
 |[fenv_access](../preprocessor/fenv-access.md)|[float_control](../preprocessor/float-control.md)|[fp_contract](../preprocessor/fp-contract.md)|
 |[çalışmayacaktır](../preprocessor/function-c-cpp.md)|[hdrstop](../preprocessor/hdrstop.md)|[include_alias](../preprocessor/include-alias.md)|
 |[init_seg](../preprocessor/init-seg.md) <sup>1</sup>|[inline_depth](../preprocessor/inline-depth.md)|[inline_recursion](../preprocessor/inline-recursion.md)|
-|[intrinsic](../preprocessor/intrinsic.md)|[Loop](../preprocessor/loop.md) <sup>1</sup>|[make_public](../preprocessor/make-public.md)|
+|[intrinsic](../preprocessor/intrinsic.md)|[döngü](../preprocessor/loop.md) <sup>1</sup>|[make_public](../preprocessor/make-public.md)|
 |[lebilmesi](../preprocessor/managed-unmanaged.md)|[message](../preprocessor/message.md)|[omp](../preprocessor/omp.md)|
 |[once](../preprocessor/once.md)|[optimize](../preprocessor/optimize.md)|[pack](../preprocessor/pack.md)|
 |[pointers_to_members](../preprocessor/pointers-to-members.md) <sup>1</sup>|[pop_macro](../preprocessor/pop-macro.md)|[push_macro](../preprocessor/push-macro.md)|
@@ -79,11 +79,9 @@ cl /Zp8 some_file.cpp
 
 ## <a name="the-__pragma-keyword"></a>__Pragma () anahtar sözcüğü
 
-**Microsoft 'a özgü**
+Derleyici Ayrıca, **#pragma** yönergesiyle aynı işlevselliğe sahip olan Microsoft 'a özgü **__pragma** anahtar sözcüğünü de destekler. Farkı, **__pragma** anahtar sözcüğünün bir makro tanımında satır içi kullanılabilir. **#Pragma** yönergesi, bir makro tanımında kullanılamaz, çünkü derleyici yönergede işaret karakteri (' # ') sayısını dize haline getirme [işleci (#)](../preprocessor/stringizing-operator-hash.md)olarak yorumlar.
 
-Derleyici Ayrıca **#pragma** yönergesiyle aynı işlevselliğe sahip **__pragma** anahtar sözcüğünü de destekler. Aradaki fark, **__pragma** anahtar sözcüğünün bir makro tanımında satır içi kullanılabilir. **#Pragma** yönergesi, bir makro tanımında kullanılamaz, çünkü derleyici yönergede işaret karakteri (' # ') sayısını dize haline getirme [işleci (#)](../preprocessor/stringizing-operator-hash.md)olarak yorumlar.
-
-Aşağıdaki kod örneği, **__pragma** anahtar sözcüğünün bir makroda nasıl kullanılabileceğini gösterir. Bu kod, "derleyici COM desteği örnekleri" içinde ACDUAL örneğindeki mfcdual. h üst bilgisinden ayıklanalınmıştır:
+Aşağıdaki kod örneği, **__pragma** anahtar sözcüğünün bir makroda nasıl kullanılabileceğini gösterir. Bu kod, "Derleyici COM Destek Örnekleri" içindeki ACDUAL örneğinde bulunan mfcdual.h başlığından alınmıştır:
 
 ```cpp
 #define CATCH_ALL_DUAL \
@@ -102,8 +100,6 @@ _hr = DualHandleException(_riidSource, e); \
 END_CATCH_ALL \
 return _hr; \
 ```
-
-**Son Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

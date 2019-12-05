@@ -9,65 +9,65 @@ helpviewer_keywords:
 - references, declaring
 - referencing objects, declarator syntax
 ms.assetid: 68156f7f-97a0-4b66-b26d-b25ade5e3bd8
-ms.openlocfilehash: aafc582299402eabab2736ac7d07b6c4c397413c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2353f0861f0f249416d0bb84a7a951b1cb6d64bc
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62244227"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74857339"
 ---
 # <a name="references-c"></a>Başvurular (C++)
 
-Bir işaretçi gibi bir başvuru bellekte başka bir yerde bulunan bir nesnenin adresini depolar. Bir işaretçi, başlatıldıktan sonra bir başvuru ayarlayın veya farklı bir nesneye başvurmak için yapılabilir duruma getirilemediğinden null. Başvuruları iki tür vardır: başvuran bir adlandırılmış değişkeni ve rvalue başvuruları başvuran lvalue başvuruları bir [geçici nesne](../cpp/temporary-objects.md). & İşleci, bir lvalue başvurusuna gösterir ve & & işlecini bir rvalue başvurusuna veya bağlama Evrensel başvurusu (rvalue veya lvalue) gösterir.
+Bir işaretçi gibi bir başvuru, bellekte başka bir yerde bulunan nesnenin adresini depolar. Bir işaretçinin aksine, başlatıldıktan sonra bir başvuru, farklı bir nesneye başvurmak veya null olarak ayarlamak için yapılamaz. İki tür başvuru vardır: bir adlandırılmış değişkene başvuran lvalue başvuruları ve [geçici bir nesneye](../cpp/temporary-objects.md)başvuran Rvalue başvuruları. & İşleci bir lvalue başvurusunu belirtir ve & & işleci, içeriğe bağlı olarak bir rvalue başvurusu ya da bir evrensel başvuru (rvalue ya da lvalue) belirtir.
 
-Başvuruları aşağıdaki sözdizimi kullanılarak bildirilebilir:
+Başvurular aşağıdaki sözdizimi kullanılarak bildirilebilecek:
 
-> \[*storage-class-specifiers*] \[*cv-qualifiers*] *type-specifiers* \[*ms-modifier*] *declarator* \[**=** *expression*]**;**
+> \[*Storage-Class-belirticileri*] \[*CV-niteleyicileri*] *tür-belirticileri* \[*ms-değiştirici*] *bildirimci* \[ **=** *ifadesi*] **;**
 
-Bir başvuru belirterek herhangi bir geçerli bildirimci kullanılabilir. Aşağıdaki Basitleştirilmiş söz dizimi, işlev veya dizi türü bir başvuru başvuru olmadığı sürece, geçerlidir:
+Bir başvuru belirten geçerli bir bildirimci kullanılabilir. Başvuru, işlev veya dizi türüne başvuru olmadığı takdirde, aşağıdaki Basitleştirilmiş sözdizimi geçerlidir:
 
-> \[*depolama sınıfı tanımlayıcıları*] \[ *cv niteleyicileri*] *tür tanımlayıcıları* \[ **&** veya **&&**] \[ *cv niteleyicileri*] *tanımlayıcı* \[ **=** *ifade*]**;**
+> \[*Storage-Class-belirticileri*] \[*CV-niteleyicileri*] *tür-belirticileri* \[ **&** veya **&&** ] \[*CV-niteleyiciler*] *tanımlayıcı* \[ **=** *ifadesi*] **;**
 
-Başvuruları, aşağıdaki dizi kullanılarak bildirilir:
+Başvurular aşağıdaki sıra kullanılarak bildirilmiştir:
 
 1. Bildirim tanımlayıcıları:
 
-   - İsteğe bağlı bir depolama sınıfı tanımlayıcısı.
+   - İsteğe bağlı bir depolama sınıfı belirleyicisi.
 
-   - İsteğe bağlı **const** ve/veya **geçici** niteleyicileri.
+   - İsteğe bağlı **const** ve/veya **volatile** niteleyicileri.
 
-   - Tür belirticisi: bir tür adı.
+   - Tür belirleyicisi: bir türün adı.
 
 1. Bildirimci:
 
-   - Bir isteğe bağlı Microsoft'a özgü değiştirici. Daha fazla bilgi için [Microsoft'a özel değiştiriciler](../cpp/microsoft-specific-modifiers.md).
+   - İsteğe bağlı Microsoft'a özgü bir değiştirici. Daha fazla bilgi için bkz. [Microsoft 'A özgü değiştiriciler](../cpp/microsoft-specific-modifiers.md).
 
-   - **&** İşleci veya **&&** işleci.
+   - **&** işleci veya **&&** işleci.
 
-   - İsteğe bağlı **const** ve/veya **geçici** qualifers.
+   - İsteğe bağlı **const** ve/veya **volatile** niteleyicilerinin.
 
    - Tanımlayıcı.
 
 1. İsteğe bağlı bir başlatıcı.
 
-Dizi ve işlev işaretçileri için daha karmaşık bildirimci formları, diziler ve İşlevler başvurular için de geçerlidir. Daha fazla bilgi için [işaretçileri](../cpp/pointers-cpp.md).
+Dizilere ve işlevlere işaretçiler için daha karmaşık bildirimci formları, dizilere ve işlevlere başvurular için de geçerlidir. Daha fazla bilgi için bkz. [işaretçiler](../cpp/pointers-cpp.md).
 
-Birden çok Bildirimciler ve başlatıcıları bir tek bir bildirim belirticisidir aşağıdaki virgülle ayrılmış bir listede görünebilir. Örneğin:
+Birden çok Bildirimciler ve başlatıcılar, tek bir bildirim belirticisini izleyen virgülle ayrılmış bir listede görünebilir. Örneğin:
 
 ```cpp
 int &i;
 int &i, &j;
 ```
 
-Başvurular, işaretçiler ve nesneleri birlikte bildirilebilir:
+Başvurular, işaretçiler ve nesneler birlikte bildirilebilecek:
 
 ```cpp
 int &ref, *ptr, k;
 ```
 
-Bir başvuru tutan bir nesnenin adresini ancak sözdizimsel olarak bir nesne gibi davranır.
+Başvuru bir nesnenin adresini tutar, ancak sözdizimi bir nesne gibi davranır.
 
-Aşağıdaki programın dikkat nesnesinin adını `s`ve nesneye başvuru `SRef`, aynı şekilde programlar kullanılabilir:
+Aşağıdaki programda, nesne adı, `s`ve `SRef`nesnesine başvuru, programlar içinde aynı şekilde kullanılabilir:
 
 ## <a name="example"></a>Örnek
 

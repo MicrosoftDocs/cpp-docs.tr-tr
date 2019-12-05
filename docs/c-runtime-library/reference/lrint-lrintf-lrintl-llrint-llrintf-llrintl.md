@@ -45,12 +45,12 @@ helpviewer_keywords:
 - llrintf function
 - llrintl function
 ms.assetid: 28ccd5b3-5e6f-434f-997d-a21d51b8ce7f
-ms.openlocfilehash: 72870c3548f0fd6972183b0c090708c6eddc591e
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: c7831842eb4d3c1eef9c4c9e83bbddb557cec0e3
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70953125"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74857755"
 ---
 # <a name="lrint-lrintf-lrintl-llrint-llrintf-llrintl"></a>lrint, lrintf, lrintl, llrint, llrintf, llrintl
 
@@ -109,17 +109,17 @@ Yuvarlanacak değer.
 
 Başarılı olursa *x*'in yuvarlatılmış tamsayı değerini döndürür.
 
-|Sorun|döndürülmesini|
+|Sorun|Return|
 |-----------|------------|
-|*x* , dönüş türü aralığının dışında<br /><br /> *x* = ±∞<br /><br /> *x* = Nan|**FE_INVALID** yükseltir ve sıfır (0) döndürür.|
+|*x* , dönüş türü aralığının dışında<br /><br /> *x* = ±∞<br /><br /> *x* = Nan|**FE_INVALID** yükseltir ve sıfıra (0) döndürür.|
 
 ## <a name="remarks"></a>Açıklamalar
 
 Aşırı C++ yüklemeye izin verdiğinden, **float** ve **Long** **Double** türlerine sahip **lrint** ve **llrint** aşırı yüklerini çağırabilirsiniz. C programında **lrint** ve **llrint** her zaman bir **Double**alır.
 
-*X* bir integral değerin kayan nokta eşdeğerini temsil ediyorsa, bu işlevler **FE_INEXACT**yükseltir.
+*X* , bir integral değerin kayan nokta eşdeğerini temsil ediyorsa, bu işlevler **FE_INEXACT**yükseltir.
 
-**Microsoft 'a özgü**: Sonuç, dönüş türü aralığının dışındaysa veya parametre bir NaN veya Infinity olduğunda, dönüş değeri uygulama tanımlı olur. Microsoft derleyicisi sıfır (0) değeri döndürür.
+**Microsoft 'a özgü**: sonuç, dönüş türü aralığının dışındaysa veya parametre bir NaN veya Infinity olduğunda, dönüş değeri uygulama tanımlı olur. Microsoft derleyicisi sıfır (0) değeri döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 

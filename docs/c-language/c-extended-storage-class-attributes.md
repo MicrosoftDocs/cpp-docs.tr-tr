@@ -7,18 +7,18 @@ helpviewer_keywords:
 - extended storage-class attributes
 - storage class specifiers, C storage classes
 ms.assetid: 2580735c-f5bf-46ab-9468-0696893d82be
-ms.openlocfilehash: 9b0c8b60dab3229d5d5c162f7bafc959fa2558f0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c2e372ebe93b9240ac6f489e8b1aefc1fbbded80
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62325890"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74857157"
 ---
 # <a name="c-extended-storage-class-attributes"></a>C Genişletilmiş Depolama Sınıfı Öznitelikler
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Bu konu hakkında daha fazla güncel bilgi altında bulunabilir [__declspec (C++ başvuru)](../cpp/declspec.md).
+Bu konuyla ilgili daha güncel bilgiler, [__declspec (C++ başvuru)](../cpp/declspec.md)altında bulunabilir.
 
 Genişletilmiş öznitelik sözdizimi, C diline yönelik Microsoft'a özel uzantıları basitleştirir ve standartlaştırır. Genişletilmiş öznitelik sözdizimini kullanın depolama sınıfı öznitelikler, iş parçacığı, çıplak, dllimport ve dllexport'u içerir.
 
@@ -26,24 +26,24 @@ Depolama sınıfı bilgilerini belirtmeye yönelik genişletilmiş öznitelik s�
 
 ## <a name="syntax"></a>Sözdizimi
 
-*depolama sınıfı tanımlayıcısı*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**__declspec (** *genişletilmiş-decl-değiştirici-seq* **)**  / \* Microsoft Specific \*/
+*depolama sınıfı Belirleyicisi*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp; **__declspec (** *Genişletilmiş-decl-değiştirici-seq* **)**  /\* Microsoft 'a özgü \*/
 
-*Genişletilmiş-decl-değiştirici-seq*:&nbsp;&nbsp;&nbsp;&nbsp;/\* Microsoft'a özgü \*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Genişletilmiş-decl-değiştirici*<sub>iyileştirilmiş</sub><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*extended-decl-modifier-seq* *extended-decl-modifier*
+*Genişletilmiş-decl-Modifier-Seq*:&nbsp;&nbsp;&nbsp;&nbsp;/\* Microsoft 'a özgü \*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Genişletilmiş-decl-Modifier*<sub>opt</sub><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Genişletilmiş-decl-değiştirici-seq* *Extended-decl-değiştiricisi*
 
-*Genişletilmiş-decl-değiştirici*:&nbsp;&nbsp;&nbsp;&nbsp;/\* Microsoft'a özgü \*/<br/>
+*Extended-decl-değiştirici*:&nbsp;&nbsp;&nbsp;&nbsp;/\* Microsoft 'a özgü \*/<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**iş parçacığı**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**naked**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**Naked**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**dllimport**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**dllexport**
 
-Boşluk, bildirim değiştiricilerini ayırır. Unutmayın *genişletilmiş-decl-değiştirici-seq* boş olabilir; bu durumda, __declspec etkisi yoktur.
+Boşluk, bildirim değiştiricilerini ayırır. *Genişletilmiş-decl-değiştirici-seq* ' in boş olabileceğini unutmayın; Bu durumda __declspec hiçbir etkisi yoktur.
 
 İş parçacığı, çıplak, dllimport ve dllexport depolama sınıfı öznitelikleri, yalnızca uygulandıkları veri veya işlevin bildiriminin özelliğidir; işlevin tür özniteliklerini yeniden tanımlamazlar. İş parçacığı özniteliği yalnızca verileri etkiler. Çıplak özniteliği yalnızca işlevleri etkiler. dllimport ve dllexport öznitelikleri işlevleri ve verileri etkiler.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

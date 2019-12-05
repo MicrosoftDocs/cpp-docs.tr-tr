@@ -1,5 +1,5 @@
 ---
-title: 'Ana: Program başlatma'
+title: 'main: Program Başlatma'
 ms.date: 11/04/2016
 f1_keywords:
 - vc.main.startup
@@ -12,52 +12,52 @@ helpviewer_keywords:
 - startup code, main function
 - main function, program startup
 ms.assetid: f9581cd6-93f7-4bcd-99ec-d07c3c107dd4
-ms.openlocfilehash: 358ae8ec88281bab741393b1196ee2a1e615e896
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 29e1b77c2e36c66e4e6fc4ec30a73af4d57654a0
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64345047"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74857443"
 ---
-# <a name="main-program-startup"></a>Ana: Program başlatma
+# <a name="main-program-startup"></a>main: Program Başlatma
 
-Adlı bir özel işlev **ana** yürütme tüm C ve C++ programları için başlangıç noktasıdır. Unicode programlama modelini aynılarını kod yazma, kullanabileceğiniz `wmain`, geniş karakter sürümünü olduğu **ana**.
+**Main** adlı özel bir işlev, tüm C ve C++ programlar için yürütmenin başlangıç noktasıdır. Unicode programlama modeline uyan bir kod yazıyorsanız, **Main**'in geniş karakterli sürümü olan `wmain`kullanabilirsiniz.
 
-**Ana** işlevi derleyici tarafından önceden değil. Program metni sağlanmalıdır.
+**Main** işlevi derleyici tarafından önceden tanımlı değil. Program metninde sağlanması gerekir.
 
-Bildirim sözdizimi **ana** olduğu
+**Main** için bildirim söz dizimi
 
 ```cpp
 int main();
 ```
 
-veya isteğe bağlı olarak,
+ya da, isteğe bağlı olarak,
 
 ```cpp
 int main(int argc, char *argv[], char *envp[]);
 ```
 
-## <a name="microsoft-specific"></a>Microsoft'a Özgü
+**Microsoft 'a özgü**
 
-Bildirim sözdizimi `wmain` aşağıdaki gibidir:
+`wmain` için bildirim sözdizimi şöyledir:
 
 ```cpp
 int wmain( );
 ```
 
-veya isteğe bağlı olarak,
+ya da, isteğe bağlı olarak,
 
 ```cpp
 int wmain(int argc, wchar_t *argv[], wchar_t *envp[]);
 ```
 
-Ayrıca `_tmain`, tchar.h içinde tanımlanır. `_tmain` çözümler **ana** _UNICODE tanımlanmış sürece. Bu durumda, `_tmain` çözümler `wmain`.
+Ayrıca, Tchar. h içinde tanımlanan `_tmain`de kullanabilirsiniz. _UNICODE tanımlanmadığı müddetçe `_tmain` **ana** olarak çözümlenir. Bu durumda, `_tmain` `wmain`çözümlenmektedir.
 
-Alternatif olarak, **ana** ve `wmain` olarak döndüren işlevleri bildirilebilir **void** (dönüş değeri). Bildirirseniz **ana** veya `wmain` döndüren olarak **void**, kullanarak üst işleme ya da işletim sistemi için bir çıkış kodu döndürülemez bir [dönüş](../cpp/return-statement-in-program-termination-cpp.md) deyimi. Döndürülecek bir çıkış kodu ne zaman **ana** veya `wmain` olarak bildirilen **void**, kullanmalısınız [çıkmak](../cpp/exit-function.md) işlevi.
+Alternatif olarak, **Main** ve `wmain` işlevleri, **void** döndürüyor (dönüş değeri yok) olarak da bildirilemez. **Main** veya `wmain` **void**döndürüyor olarak bildirirseniz, bir [dönüş](../cpp/return-statement-in-program-termination-cpp.md) bildirimi kullanarak üst işleme veya işletim sistemine çıkış kodu döndüremez. **Main** veya `wmain` **void**olarak bildirildiği zaman çıkış kodu döndürmek için, [Exit](../cpp/exit-function.md) işlevini kullanmanız gerekir.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
-Türleri için `argc` ve `argv` dil tarafından tanımlanır. Adları `argc`, `argv`, ve `envp` Geleneksel, ancak derleyici tarafından gerekli değildir. Daha fazla bilgi ve örnek için bkz. [bağımsız değişken tanımları](../cpp/argument-definitions.md).
+`argc` ve `argv` türleri, dil tarafından tanımlanır. `argc`, `argv`ve `envp` adları geleneksel, ancak derleyici için gerekli değildir. Daha fazla bilgi ve örnek için bkz. [bağımsız değişken tanımları](../cpp/argument-definitions.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

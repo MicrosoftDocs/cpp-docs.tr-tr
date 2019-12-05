@@ -43,12 +43,12 @@ helpviewer_keywords:
 - storing types [C++]
 - data types [C++], void
 ms.assetid: 58b0106a-0406-4b74-a430-7cbd315c0f89
-ms.openlocfilehash: 99c30eeb942eb3ab57518cc63ce353cfeff0bec9
-ms.sourcegitcommit: 8762a3f9b5476b4dee03f0ee8064ea606550986e
+ms.openlocfilehash: daa2ad2680a9d7d0239a70ed37ec1d90a3d96d97
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74810549"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74857547"
 ---
 # <a name="fundamental-types--c"></a>Temel Türler (C++)
 

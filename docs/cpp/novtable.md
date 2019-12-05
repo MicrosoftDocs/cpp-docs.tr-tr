@@ -7,22 +7,22 @@ helpviewer_keywords:
 - novtable __declspec keyword
 - __declspec keyword [C++], novtable
 ms.assetid: cfef09c5-8c1e-4b14-8a72-7d726ded4484
-ms.openlocfilehash: 9dcca6ec07a19d53da238020805299b652cbf919
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a147af8f536923082df3a2d6d332150a57d6af1b
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62245160"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74857391"
 ---
 # <a name="novtable"></a>novtable
 
-## <a name="microsoft-specific"></a>Microsoft'a Özgü
+**Microsoft 'a özgü**
 
-Bu bir **__declspec** genişletilmiş öznitelik.
+Bu, **__declspec** genişletilmiş bir özniteliktir.
 
-Bu tür **__declspec** herhangi bir sınıf bildirimine uygulanabilir, ancak yalnızca saf arabirim sınıflarına, diğer bir deyişle, hiçbir zaman kendi başlarına örneği oluşturulur sınıfları uygulanmalıdır. **__Declspec** oluşturucularında ve yok edicisinde vfptr'yi başlatmak için kod oluşturma derleyicinin durdurur. Çoğu durumda bu, yalnızca sınıf ile ilişkili vtable başvurularını kaldırır ve böylece bağlayıcı onu kaldırır. Bu biçimi kullanarak **__declspec** kod boyutunda önemli azalmaya neden olabilir.
+Bu **__declspec** biçimi herhangi bir sınıf bildirimine uygulanabilir, ancak yalnızca saf arabirim sınıflarına, diğer bir deyişle, kendi kendilerine hiçbir değer oluşturulamamayacak sınıflara uygulanmalıdır. **__Declspec** , derleyicinin oluşturucudaki vfptr 'yi başlatmak için kod üretmesine ve sınıfın yıkıcısında ' a yanıt vermez. Çoğu durumda bu, yalnızca sınıf ile ilişkili vtable başvurularını kaldırır ve böylece bağlayıcı onu kaldırır. Bu **__declspec** biçimini kullanmak kod boyutunda önemli bir azalmaya neden olabilir.
 
-İle işaretlenmiş bir sınıf örneği çalışırsanız **novtable** ve ardından bir sınıf üyesine erişim sağlarsanız, erişim ihlali (AV) alırsınız.
+**Novtable** ile işaretlenmiş bir sınıf örneğini oluşturmaya çalışırsanız ve sonra bir sınıf üyesine erişin, bir erişim IHLALI (AV) alırsınız.
 
 ## <a name="example"></a>Örnek
 
@@ -53,7 +53,7 @@ int main() {
 In Y
 ```
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

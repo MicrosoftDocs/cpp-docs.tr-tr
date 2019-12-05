@@ -11,24 +11,24 @@ helpviewer_keywords:
 - slash (/) operator
 - multiplication operator [C++], multiplicative operators
 ms.assetid: 495471c9-319b-4eb4-bd97-039a025fd3a9
-ms.openlocfilehash: fdf208ffba3e3d63d8672b84af8cf6168b34dc3f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e06ef25c14f8073d2b8753b57c9593af7bb6c69f
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62326423"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74857131"
 ---
 # <a name="c-multiplicative-operators"></a>C Çarpma İşleçleri
 
-Çarpma işleçleri çarpma gerçekleştirin (<strong>\*</strong>), bölme (**/**) ve kalanı (**%**) işlemleri.
+Çarpma işleçleri çarpma (<strong>\*</strong>), bölüm ( **/** ) ve kalan ( **%** ) işlemleri gerçekleştirir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-*ifade çarpma*: &nbsp; &nbsp; &nbsp; &nbsp; *atama ifadesini* &nbsp; &nbsp; &nbsp; &nbsp; *ifade çarpma* <strong>\*</strong> *atama ifadesini* &nbsp; &nbsp; &nbsp; &nbsp; *ifade çarpma* **/** *atama ifadesini* &nbsp; &nbsp; &nbsp; &nbsp; *ifade çarpma* **%** *atama ifadesi*
+*çarpma ifadesi*: &nbsp;&nbsp;&nbsp;&nbsp;*cast-expression* &nbsp;&nbsp;&nbsp;&nbsp;*çoğulereptive-expression* <strong>\*</strong> *atama-ifadesi* &nbsp;&nbsp;&nbsp;&nbsp;*çoğulereptive-Expression* **/** *cast-Expression* &nbsp;&nbsp;&nbsp;&nbsp;*çoğulereptive-* *Expression%Cast ifadesi*
 
-Kalan işlecinin işlenenleri (**%**) tam sayı olmalıdır. Çarpma (<strong>\*</strong>) ve bölme (**/**) işleçleri, tamsayı veya kayan-türü işlenen alabilir; işlenen türleri farklı olabilir.
+Kalan işlecin işlenenleri ( **%** ) tamsayı olmalıdır. Çarpma (<strong>\*</strong>) ve bölme ( **/** ) işleçleri tamsayı veya kayan tür işlenenleri alabilir; işlenen türleri farklı olabilir.
 
-Çarpma işleçleri olağan aritmetik dönüştürmeler işlenenler üzerinde gerçekleştirin. Sonuç türü dönüştürme işleminden sonra işlenenler türüdür.
+Çarpma işleçleri, işlenenler üzerinde Olağan aritmetik dönüştürmeleri gerçekleştirir. Sonucun türü, dönüştürmeden sonra işlenen türüdür.
 
 > [!NOTE]
 >  Çarpma işleçleri tarafından gerçekleştirilen dönüştürmeler taşma veya yetersiz kalma koşulları sağlamadığından, çarpma işleminin sonucu dönüştürme sonrası işlenenlerin türünde gösterilmezse bilgiler kaybolabilir.
@@ -37,59 +37,57 @@ C çarpma işleçleri aşağıda açıklanmıştır:
 
 |İşleç|Açıklama|
 |--------------|-----------------|
-|<strong>\*</strong>|Çarpma işleci iki işlenenleri çarpılmasına neden olur.|
-|**/**|Bölme işleci, birinci işlenenin ikinci tarafından Bölünecek neden olur. Aşağıdaki kurallara göre iki tamsayı işlenen ayrılır ve sonucu bir tamsayı değilse kesilir:<br/><br/>-ANSI C standardına göre 0 ile bölme sonucu tanımsızdır. Microsoft C derleyicisi, derleme zamanı veya çalışma zamanı sırasında bir hata oluşturur.<br/><br/>-Her iki işlenen de pozitif veya işaretsiz ise, sonuç 0 doğru kesilir.<br/><br/>-Her iki işlenen negatif ise, işlemin sonucunu en büyük tamsayı cebirsel sayının küçük veya ona eşit olduğundan veya en küçük tamsayı değerinden büyük veya eşittir cebirsel sayının tanımlanan uygulamasıdır. (Microsoft Specific bölümüne bakın.)|
-|**%**|Birinci işlenenin ikinci bölündüğünde kalan işleci kalan sonucudur. Bölme işlemi filtresinin olduğunda sonuç aşağıdaki kurallara göre belirlenir:<br/><br/>-Sağ işlenen sıfır ise, sonuç tanımsızdır.<br/><br/>-Her iki işlenen de pozitif veya işaretsiz ise sonuç pozitif olur.<br/><br/>-Ya da bir işlenen negatif ise ve sonuç bölümünü kesin değilse, uygulama tanımlı sonucudur. (Microsoft Specific bölümüne bakın.)|
+|<strong>\*</strong>|Çarpma işleci, iki işleneninin çarpılmasına neden olur.|
+|**/**|Bölme işleci, İlk işlenenin ikinciden bölünmesine neden olur. İki tamsayı işleneni ayrılmışsa ve sonuç bir tamsayı değilse, aşağıdaki kurallara göre kesilir:<br/><br/>-0 ile bölme sonucu, ANSI C standardına göre tanımlanmamıştır. Microsoft C derleyicisi, derleme zamanında veya çalışma zamanında bir hata oluşturur.<br/><br/>-Her iki işlenen de pozitif veya işaretsiz ise, sonuç 0 ' a doğru atılır.<br/><br/>-Her iki işlenen de negatif ise, işlemin sonucunun cebirsel bölümünün en büyük veya eşit olduğu en büyük tamsayıdır veya Cebirsel bölümünün büyük veya eşit olduğu en küçük tamsayının uygulama tanımlı olduğunu belirtir. (Aşağıdaki Microsoft 'a özgü bölümüne bakın.)|
+|**%**|Geri kalan işlecin sonucu, ilk işlenen ikinciden bölündüğünde geri kalan işleçtir. Bölme geçersiz olduğunda, sonuç aşağıdaki kurallara göre belirlenir:<br/><br/>-Sağ işlenen sıfırsa, sonuç tanımsızdır.<br/><br/>-Her iki işlenen de pozitif veya işaretsiz ise, sonuç pozitif olur.<br/><br/>-Herhangi bir işlenen negatifse ve sonuç tam değilse, sonuç uygulama tanımlı olur. (Aşağıdaki Microsoft 'a özgü bölümüne bakın.)|
 
-**Microsoft'a özgü**
+### <a name="microsoft-specific"></a>Microsoft'a özgü
 
-İki işlenenden negatif olduğu sıfıra bölme, kesilme yönü doğru 0 ' dir.
+Her iki işlenenin de negatif olduğu bölümde, kesilmenin yönü 0 ' a düşer.
 
-Her iki işlem kalan işleci bölme negatif ise, sonuç bölünen (ifadesindeki ilk işlenen) aynı işarete sahiptir.
-
-**END Microsoft özgü**
+Her iki işlem de kalan işleçle birlikte bırakılırsa, sonuç bölünmeyle aynı işarete sahiptir (ifadedeki ilk işlenen).
 
 ## <a name="examples"></a>Örnekler
 
-Aşağıda gösterilen bildirimler için aşağıdaki örneklere kullanılır:
+Aşağıda gösterilen bildirimler aşağıdaki örnekler için kullanılır:
 
 ```
 int i = 10, j = 3, n;
 double x = 2.0, y;
 ```
 
-Bu deyim, çarpma işleci kullanır:
+Bu ifade çarpma işlecini kullanır:
 
 ```
 y = x * i;
 ```
 
-Bu durumda, `x` çarpılır `i` 20.0 değeri vermek için. Sonuç **çift** türü.
+Bu durumda, `x` 20,0 değerini vermek için `i` ile çarpılır. Sonucun **Double** türü vardır.
 
 ```
 n = i / j;
 ```
 
-Bu örnekte, 10 3 ile ayrılır. Sonuç, tamsayı değeri 3 sonuçlanmıyor 0 doğru kesilir.
+Bu örnekte, 10 3 ' ü bölünmüştür. Sonuç 0 ' a doğru kesilir ve 3. tamsayı değeri atılır.
 
 ```
 n = i % j;
 ```
 
-Bu bildirimi atar `n` tamsayı geri kalanı, 3 ile 10 bölündüğünde 1.
+Bu ifade, 10 ' un 3 ' i bölündüğünde, 1 tamsayı kalanı `n` atar.
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Kalan oturum bölünen işareti ile aynıdır. Örneğin:
+Kalanın işareti, bölünme işaretiyle aynıdır. Örneğin:
 
 ```
 50 % -6 = 2
 -50 % 6 = -2
 ```
 
-Her durumda `50` ve `2` aynı işarete sahip.
+Her durumda `50` ve `2` aynı işarete sahiptir.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

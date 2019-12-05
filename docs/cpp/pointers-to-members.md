@@ -8,16 +8,16 @@ helpviewer_keywords:
 - members [C++], pointers to
 - pointers, declarations
 ms.assetid: f42ddb79-9721-4e39-95b1-c56b55591f68
-ms.openlocfilehash: a15e519be14d9a05cb30a8c9282baccc87a5f35e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 14b5c12715d1c4c27d9ef8e262170acb2f85e526
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62267695"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74857352"
 ---
 # <a name="pointers-to-members"></a>Üye İşaretçileri
 
-İşaretçi bildirimleri, özel durumlar bildirimlerdir üye işaretçileri.  Aşağıdaki dizi kullanılarak bildirilirler:
+Üye işaretçilerin bildirimleri, işaretçi bildirimlerinin özel çalışmalardır.  Aşağıdaki dizi kullanılarak bildirilirler:
 
 ```
 [storage-class-specifiers] [cv-qualifiers] type-specifiers [ms-modifier]qualified-name ::* [cv-qualifiers] identifier
@@ -26,41 +26,41 @@ ms.locfileid: "62267695"
 
 1. Bildirim belirticisi:
 
-   - İsteğe bağlı bir depolama sınıfı tanımlayıcısı.
+   - İsteğe bağlı bir depolama sınıfı belirleyicisi.
 
-   - İsteğe bağlı **const** ve/veya **geçici** tanımlayıcıları.
+   - İsteğe bağlı **const** ve/veya **volatile** belirticileri.
 
-   - Tür belirticisi: bir tür adı.  Bu üye için işaret türüdür sınıfı değil.
+   - Tür belirleyicisi: bir türün adı.  Bu, sınıfa değil, işaret edilecek üyenin türüdür.
 
 1. Bildirimci:
 
-   - Bir isteğe bağlı Microsoft'a özgü değiştirici. Daha fazla bilgi için [Microsoft'a özel değiştiriciler](../cpp/microsoft-specific-modifiers.md).
+   - İsteğe bağlı Microsoft'a özgü bir değiştirici. Daha fazla bilgi için bkz. [Microsoft 'A özgü değiştiriciler](../cpp/microsoft-specific-modifiers.md).
 
-   - İşaret için üyeleri içeren sınıfın tam adı.
+   - İşaret edilecek üyeleri içeren sınıfın tam adı.
 
    - __::__ İşleci.
 
-   - __\*__ İşleci.
+   - __\*__ işleci.
 
-   - İsteğe bağlı **const** ve/veya **geçici** tanımlayıcıları.
+   - İsteğe bağlı **const** ve/veya **volatile** belirticileri.
 
-   - Üye işaretçisi adlandırma tanımlayıcısı.
+   - Tanıtıcı, üyeye olan işaretçiyi adlandırma.
 
-1. İsteğe bağlı bir başlatıcı:
+1. İsteğe bağlı Başlatıcı:
 
-   - **=** İşleci.
+   - **=** işleci.
 
-   - **&** İşleci.
+   - **&** işleci.
 
    - Sınıfın tam adı.
 
    - __::__ İşleci.
 
-   - Bir statik olmayan üye uygun bir tür sınıfının adı.
+   - Uygun türdeki sınıfının statik olmayan bir üyesinin adı.
 
-Her zaman olduğu gibi birden çok bildirimcisi (ve ilişkili tüm başlatıcıları) tek bir bildirimde izin verilir.
+Her zaman olduğu gibi, tek bir bildirimde birden çok bildirimciye (ve ilişkili başlatıcılara) izin verilir.
 
-Üye ait olduğu sınıfın ve üye türü için tür bilgilerini içerdiğinden bir sınıfın bir üye işaretçisi normal bir işaretçiyle farklıdır. Normal bir işaretçi tanımlar (adresini sahiptir) yalnızca tek bir nesne bellekte. Bir sınıfın üyesinin işaretçisi sınıfın örneklerini bu üye tanımlar. Aşağıdaki örnek, bir sınıfı bildirir `Window`ve üye verilerine bazı işaretçiler.
+Bir sınıfın bir işaretçisi, üyenin türü ve üyenin ait olduğu sınıf için tür bilgilerine sahip olduğundan normal işaretçiden farklıdır. Normal bir işaretçi yalnızca bellekte tek bir nesne (adresini içerir) tanımlar. Bir sınıfın bir işaretçisi, bu üyeyi sınıfın herhangi bir örneğinde tanımlar. Aşağıdaki örnek bir sınıf, `Window`ve bazı üye verilerine işaretçiler bildirir.
 
 ```cpp
 // pointers_to_members1.cpp
@@ -82,14 +82,14 @@ int main()
 }
 ```
 
-Önceki örnekte `pwCaption` sınıf herhangi bir üyenin bir işaretçisidir `Window` türü olan `char*`. Türünü `pwCaption` olduğu `char * Window::* `. Sonraki kod parçasını işaretçileri bildirir `SetCaption` ve `GetCaption` üye işlevleri.
+Yukarıdaki örnekte `pwCaption`, tür `char*`olan `Window` sınıfının herhangi bir üyesine yönelik bir işaretçidir. `pwCaption` türü `char * Window::* `. Sonraki kod parçası `SetCaption` ve `GetCaption` üye işlevlerine işaretçiler bildirir.
 
 ```cpp
 const char * (Window::*pfnwGC)() = &Window::GetCaption;
 bool (Window::*pfnwSC)( const char * ) = &Window::SetCaption;
 ```
 
-İşaretçileri `pfnwGC` ve `pfnwSC` işaret `GetCaption` ve `SetCaption` , `Window` sınıfı, sırasıyla. Kod kullanarak doğrudan üye işaretçisinin pencere başlığı için bilgi kopyalar `pwCaption`:
+İşaretçiler `pfnwGC` ve `pfnwSC`, sırasıyla `Window` sınıfının `GetCaption` ve `SetCaption`. Kod, üye `pwCaption`işaretçisini kullanarak bilgileri pencere açıklamalı yazısına doğrudan kopyalar:
 
 ```cpp
 Window wMainWindow;
@@ -104,11 +104,11 @@ strcpy_s( pwChildWindow->*pwCaption, cUntitledLen, szUntitled );
 (pwChildWindow->*pwCaption)[cUntitledLen - 1] = '2'; //same as //pwChildWindow->szWinCaption[cUntitledLen - 1] = '2';
 ```
 
-Arasındaki fark **.** <strong>\*</strong> ve **->** <strong>\*</strong> is işleçlerini (işaretçi-üye işleçleri) **.** <strong>\*</strong> seçen üyeleri bir nesne veya nesne başvurusu göz önünde bulundurulduğunda, while **->** <strong>\*</strong> işleci üye işaretçisi aracılığıyla seçer. (Bu işleçler hakkında daha fazla bilgi için bkz. [işaretçi-üye işleçli ifadeler](../cpp/pointer-to-member-operators-dot-star-and-star.md).)
+Arasındaki fark **.** <strong>\*</strong> ve **->** <strong>\*</strong> işleçler (üye işaretçisi işleçleri) **.** <strong>\*</strong> işleci bir nesne veya nesne başvurusu verilen üyeleri seçer, ancak **->** <strong>\*</strong> işleci üyeleri bir işaretçi aracılığıyla seçer. (Bu işleçler hakkında daha fazla bilgi için bkz. [üye Işaretçisi işleçleri olan ifadeler](../cpp/pointer-to-member-operators-dot-star-and-star.md).)
 
-İşaretçi-üye işleçleri üyenin türü sonucudur — bu durumda, `char *`.
+Üye işaretçisi işleçlerinin sonucu üyenin türüdür — bu durumda `char *`.
 
-Aşağıdaki kod parçası, üye işlevleri çağırır `GetCaption` ve `SetCaption` üyeleri için işaretçiler kullanma:
+Aşağıdaki kod parçası `GetCaption` üye işlevlerini çağırır ve üyelere işaretçiler kullanarak `SetCaption`:
 
 ```cpp
 // Allocate a buffer.
@@ -127,7 +127,7 @@ strcat_s( szCaptionBase, sizeOfBuffer, " [View 1]" );
 
 ## <a name="restrictions-on-pointers-to-members"></a>Üye İşaretçileri Kısıtlamaları
 
-Statik bir üyenin adresi, üye işaretçisi değildir. Statik üyenin bir örneğinin normal bir işaretçisidir. Statik bir üyenin yalnızca bir örneği sıradan address-of belirli bir sınıfın tüm nesneleri için mevcut olduğundan (**&**) ve başvuru (<strong>\*</strong>) işleçleri kullanılabilir.
+Statik bir üyenin adresi, üye işaretçisi değildir. Statik üyenin bir örneğinin normal bir işaretçisidir. Belirli bir sınıfın tüm nesneleri için bir statik üyenin yalnızca bir örneği bulunduğundan, normal adres ( **&** ) ve başvuru (<strong>\*</strong>) işleçleri kullanılabilir.
 
 ## <a name="pointers-to-members-and-virtual-functions"></a>Üye ve Sanal İşlev İşaretçileri
 

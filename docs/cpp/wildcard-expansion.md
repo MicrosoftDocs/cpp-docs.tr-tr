@@ -11,22 +11,22 @@ helpviewer_keywords:
 - command-line wildcards
 - question mark, wildcard
 ms.assetid: 1a543398-607b-4404-93d1-45d290bde638
-ms.openlocfilehash: 2d495f94f2e3fb7b88d235edc7b98f8e90775393
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1fdea297bb45a06a08bde4f63f90eabef6ddb539
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62209521"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74857183"
 ---
 # <a name="wildcard-expansion"></a>Joker Karakter Genişletmesi
 
-## <a name="microsoft-specific"></a>Microsoft'a Özgü
+**Microsoft 'a özgü**
 
 Dosya adı ve yol bağımsız değişkenlerini komut satırında belirtmek için soru işareti (?) ve yıldız işareti (*) gibi joker karakterler kullanabilirsiniz.
 
-Komut satırı bağımsız değişkenleri, bir yordam tarafından işlenir `_setargv` (veya `_wsetargv` geniş karakter ortamında), varsayılan olarak genişletmeyen joker karakterler ayrı dizelere `argv` dize dizisi. Joker karakter genişletmesini etkinleştirme hakkında daha fazla bilgi için [joker karakter bağımsız değişkenlerini genişletme](../c-language/expanding-wildcard-arguments.md).
+Komut satırı bağımsız değişkenleri, `_setargv` (veya geniş karakter ortamında `_wsetargv`) adlı bir yordam tarafından işlenir. Bu, varsayılan olarak joker karakterleri `argv` dize dizisindeki ayrı dizelere genişletmez. Joker karakter genişletmeyi etkinleştirme hakkında daha fazla bilgi için bkz. [genişleyen joker bağımsız değişkenleri](../c-language/expanding-wildcard-arguments.md).
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

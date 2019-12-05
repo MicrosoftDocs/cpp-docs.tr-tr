@@ -23,12 +23,12 @@ helpviewer_keywords:
 - _initialize_onexit_table function
 - _register_onexit_function function
 ms.assetid: ad9e4149-d4ad-4fdf-aaaf-cf786fcb4473
-ms.openlocfilehash: bf8c61e467796c7bfaedff6918bfbf598ada528e
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 573be497bafbe5372186f31b3ea60d9a5ef7fac1
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70944382"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74856988"
 ---
 # <a name="_execute_onexit_table-_initialize_onexit_table-_register_onexit_function"></a>_execute_onexit_table, _initialize_onexit_table, _register_onexit_function
 
@@ -65,13 +65,13 @@ Başarılı olursa 0 döndürür. Aksi takdirde, negatif bir değer döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevler, C çalışma zamanını desteklemek için kullanılan altyapı uygulama ayrıntılardır ve doğrudan kodunuzdan çağrılmamalıdır. C çalışma zamanı,, ve `_onexit`çağrıları `atexit` `at_quick_exit`tarafından kaydedilen işlevlerin dizisini temsil eden bir *OnExit işlev tablosu* kullanır. OnExit işlev tablosu veri yapısı, C çalışma zamanının donuk bir uygulama ayrıntısıyla yapılır; veri üyelerinin sırası ve anlamı değişebilir. Bunlar harici kod tarafından denetlenmemelidir.
+Bu işlevler, C çalışma zamanını desteklemek için kullanılan altyapı uygulama ayrıntılardır ve doğrudan kodunuzdan çağrılmamalıdır. C çalışma zamanı, `atexit`, `at_quick_exit`ve `_onexit`çağrıları tarafından kaydedilen işlevlerin sırasını göstermek için bir *OnExit işlev tablosu* kullanır. OnExit işlev tablosu veri yapısı, C çalışma zamanının donuk bir uygulama ayrıntısıyla yapılır; veri üyelerinin sırası ve anlamı değişebilir. Bunlar harici kod tarafından denetlenmemelidir.
 
-`_initialize_onexit_table` İşlevi OnExit işlevi tablosunu ilk değerine başlatır.  OnExit işlev tablosu ya `_register_onexit_function` `_execute_onexit_table`da öğesine geçirilmeden önce bu işlevin çağrılması gerekir.
+`_initialize_onexit_table` işlevi OnExit işlevi tablosunu ilk değerine başlatır.  OnExit işlev tablosu `_register_onexit_function` ya da `_execute_onexit_table`geçirilmeden önce bu işlev çağrılmalıdır.
 
-`_register_onexit_function` İşlevi OnExit işlevi tablosunun sonuna bir işlev ekler.
+`_register_onexit_function` işlevi, OnExit işlev tablosunun sonuna bir işlev ekler.
 
-`_execute_onexit_table` İşlevi OnExit işlev tablosundaki tüm işlevleri yürütür, tabloyu temizler ve sonra döndürür. Bir çağrısından `_execute_onexit_table`sonra, tablo geçerli olmayan bir durumda; yeniden `_initialize_onexit_table` kullanılmadan önce bir çağrısıyla yeniden başlatılması gerekir.
+`_execute_onexit_table` işlevi, OnExit işlev tablosundaki tüm işlevleri yürütür, tabloyu temizler ve sonra döndürür. `_execute_onexit_table`çağrısından sonra tablo, geçerli olmayan bir durumda; yeniden kullanılmadan önce `_initialize_onexit_table` çağrısıyla yeniden başlatılması gerekir.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -79,7 +79,7 @@ Bu işlevler, C çalışma zamanını desteklemek için kullanılan altyapı uyg
 |-------------|---------------------|
 |`_initialize_onexit_table function`, `_register_onexit_function`, `_execute_onexit_table`|C, C++: \<Process. h >|
 
-`_initialize_onexit_table`, `_register_onexit_function`Ve işlevleri`_execute_onexit_table` Microsoft 'a özgüdür. Uyumluluk bilgileri için bkz. [Uyumluluk](../c-runtime-library/compatibility.md).
+`_initialize_onexit_table`, `_register_onexit_function`ve `_execute_onexit_table` işlevleri Microsoft 'a özgüdür. Uyumluluk bilgileri için bkz. [Uyumluluk](../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

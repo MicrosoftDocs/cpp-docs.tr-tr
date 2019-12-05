@@ -12,52 +12,52 @@ helpviewer_keywords:
 - ellipses (...), parameters
 - '... ellipsis'
 ms.assetid: 8f2b8026-78b5-4e21-86a3-bf0f91f05689
-ms.openlocfilehash: 0652fe6076899020050d94378649018721b4b188
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f2fd4b49e08149f8ea5ce8fa6af46da39907dcf9
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62232447"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74857053"
 ---
 # <a name="parameters"></a>Parametreler
 
-Bağımsız değişkenler, işlev çağrısına göre bir işleve geçirilen değerlerin adlarıdır. Parametreler işlevi almak için bekliyor değerlerdir. Bir işlev prototipi işlev adının parantez işlevin parametreleri ve bunların türlerini tam bir listesi bulunur. Parametre bildirimi, türleri, boyutları ve parametreler depolanan değerlerin tanımlayıcıları belirtir.
+Bağımsız değişkenler bir işleve işlev çağrısı tarafından geçirilen değerlerin adlarıdır. Parametreler, işlevin almayı beklediği değerlerdir. Bir işlev prototipinden, işlev adını izleyen parantezler işlevin parametrelerinin ve türlerinin tamamen bir listesini içerir. Parametre bildirimleri, parametrelerde depolanan değerlerin türlerini, boyutlarını ve tanımlayıcılarını belirler.
 
 ## <a name="syntax"></a>Sözdizimi
 
 *işlev tanımı*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*bildirim tanımlayıcıları*<sub>iyileştirilmiş</sub> *öznitelik-seq*<sub>iyileştirilmiş</sub> *bildirimci* *bildirim listesi*  <sub>iyileştirilmiş</sub> *bileşik deyim*
+&nbsp;&nbsp;&nbsp;&nbsp;*bildirimi-belirticileri*<sub>opt</sub> *özniteliği-seq*<sub>opt</sub> *bildirimci* *bildirimi-List*<sub>opt</sub> *Bileþik-deyimin*
 
-/\* *öznitelik-seq* Microsoft Specific \*/
+/\* *özniteliği-seq* , Microsoft 'a özgü \*/
 
 *bildirimci*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*İşaretçi*<sub>iyileştirilmiş</sub> *doğrudan bildirimcisi*
+&nbsp;&nbsp;&nbsp;&nbsp;*işaretçi*<sub>opt</sub> *doğrudan bildirimci*
 
-*doğrudan bildirimci*: /\* işlev bildirimcisi \*/<br/>
+*Direct-bildirimci*:/\* bir işlev bildirimci \*/<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*doğrudan bildirimci* **(** *parametre türü listesi* **)**  / \* yeni stil bildirimci \*/<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*doğrudan bildirimci* **(** *tanımlayıcı listesi*<sub>iyileştirilmiş</sub> **)**  / \* Kullanımdan kalktı stili bildirimci \*/
 
-*parametre türü listesi*: /\* parametre listesi \*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*parametre listesi* <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*parametre listesi* **,...**
+*parametre-tür-listesi*:/\* parametre listesi \*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*parametre-listesi* <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*parametre-listesi* **,...**
 
-*parametre listesi*:<br/>
+*parametre-liste*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*parametre bildirimi*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*parametre listesi* **,** *parametre bildirimi*
 
 *parametre bildirimi*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*bildirim tanımlayıcıları* *bildirimcisi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*bildirim tanımlayıcıları* *soyut bildirimci*<sub>iyileştirilmiş</sub>
+&nbsp;&nbsp;&nbsp;&nbsp;*bildirimi-tanımlayıcılar* *bildirimci*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*bildirimi-tanımlayıcılar* *abstract-declarator*<sub>opt</sub>
 
-*Parametre türü listesi* virgülle ayırarak parametre bildirimleri oluşan bir dizidir. Bir parametre listesindeki her bir parametre biçimi şöyle görünür:
+*Parametre türü-listesi* , virgülle ayrılmış bir parametre bildirimleri dizisidir. Bir parametre listesindeki her parametrenin biçimi şöyle görünür:
 
 ```C
 [register]  type-specifier [declarator]
 ```
 
-İşlev parametreleri ile bildirilmiş **otomatik** özniteliği hatalar oluşturun. Tanımlayıcıları parametrelerin işlev gövdesinde işleve geçirilen değerlerin başvurmak için kullanılır. Bir prototipteki parametreleri adlandırabilirsiniz, ancak adları, bildirim sonunda kapsam dışına. Bu nedenle parametre adları aynı şekilde veya farklı işlev tanımında atanabilir. Bu tanımlayıcılar işlev gövdesinin en dıştaki bloğunun içinde tanımlanamaz, ancak parametre listesi gibi davranarak kapsayan bir blok iç, iç içe geçmiş bloklarında tanımlanabilir.
+**Auto** özniteliğiyle belirtilen işlev parametreleri hata oluştur. Parametre tanımlayıcıları, işleve geçirilen değerlere başvurmak için işlev gövdesinde kullanılır. Bir prototipde parametreleri isimlendirebilmeniz, ancak adlar bildirimin sonundaki kapsam dışına çıkar. Bu nedenle parametre adları, işlev tanımında aynı şekilde veya farklı şekilde atanabilir. Bu tanımlayıcılar, işlev gövdesinin en dıştaki bloğunda yeniden tanımlanamaz, ancak parametre listesi kapsayan bir blok olmasına rağmen iç, iç içe bloklar içinde yeniden tanımlanabilir.
 
-Her bir tanımlayıcının *parametre türü listesi* Bu örnekte gösterildiği gibi uygun tür belirticisi tarafından öncesinde olmalıdır:
+*Parametre türü listedeki* her tanımlayıcı, bu örnekte gösterildiği gibi, önce uygun tür belirticisinden önce gelmelidir:
 
 ```C
 void new( double x, double y, double z )
@@ -66,13 +66,13 @@ void new( double x, double y, double z )
 }
 ```
 
-En az bir parametre parametre listesinde ortaya çıkarsa, liste üç nokta bir virgül ile sona erdirebilirsiniz (**,...** ). "Üç nokta gösterimi," olarak adlandırılan bu yapı, işlev bağımsız değişken sayıda gösterir. (Bkz [bir değişken sayıda bağımsız değişkenli çağrılar](../c-language/calls-with-a-variable-number-of-arguments.md) daha fazla bilgi için.) Ancak, son virgülden önceki parametreleri olduğundan, en az sayıda bağımsız değişken işlevine bir çağrı olması gerekir.
+Parametre listesinde en az bir parametre oluşursa, liste bir virgül ile ve ardından üç nokta ( **,...** ) ile bitebilirler. "Üç nokta gösterimi" olarak adlandırılan bu yapım, işlev için değişken sayıda bağımsız değişken belirtir. (Daha fazla bilgi için bkz. [değişken sayıda bağımsız değişkene sahip çağrılar](../c-language/calls-with-a-variable-number-of-arguments.md) .) Ancak, bir işlev çağrısının en az sayıda bağımsız değişkeni olması gerekir ve bu, son virgülden önce parametre vardır.
 
-İşleve geçirilecek bağımsız değişken olmadan olması durumunda, parametre listesi anahtar sözcüğü değiştirilir `void`. Bu kullanımı `void` bir tür tanımlayıcısı olarak kullanımı öğesinden farklıdır.
+İşleve hiçbir bağımsız değişken geçirilmezse, parametrelerin listesi `void`anahtar kelimesiyle değiştirilmiştir. Bu `void` kullanımı, bir tür tanımlayıcısı olarak kullanımı farklıdır.
 
-Üç nokta gösterimi kullanımı dahil olmak üzere, parametre türüne ve sırası (varsa) ilgili tüm işlev bildirimleri ve işlev tanımında'de aynı olması gerekir. Olağan aritmetik dönüştürmeler atama ile uyumlu olmalıdır. sonra bağımsız değişkenlerinin türlerine karşılık gelen parametre türleri ile. (Bkz [olağan aritmetik dönüştürmeler](../c-language/usual-arithmetic-conversions.md) aritmetik dönüştürmeleri hakkında bilgi için.) Aşağıdaki üç bağımsız değişken denetlenmez. Bir parametre, yapı, birleşim, işaretçi, tüm temel sahip veya dizi türü.
+Üç nokta gösteriminin kullanımı dahil olmak üzere parametrelerin sırası ve türü, tüm işlev bildirimlerinde ve işlev tanımında aynı olmalıdır. Her zamanki aritmetik dönüşümlerden sonraki bağımsız değişkenlerin türleri, karşılık gelen parametrelerin türleriyle atama ile uyumlu olmalıdır. (Aritmetik dönüştürmeler hakkında bilgi için bkz. [normal aritmetik dönüştürmeler](../c-language/usual-arithmetic-conversions.md) .) Üç nokta ile sonraki bağımsız değişkenler işaretli değil. Bir parametre herhangi bir temel, yapı, birleşim, işaretçi veya dizi türüne sahip olabilir.
 
-Derleyici olağan aritmetik dönüştürmeler bağımsız olarak her bir parametre ve her bağımsız değişken gerekirse gerçekleştirir. Dönüştürme işleminden sonra hiçbir parametre türünden daha kısa bir `int`, ve bir parametre yok **float** parametre türü olarak açıkça belirtilmediği sürece yazın **float** prototipteki. Bu, örneğin, bu parametre olarak bildirme anlamına gelir bir `char` olarak bildirme aynı etkiye sahip bir `int`.
+Derleyici, her bir parametrede ve gerekirse her bağımsız değişkende her zaman bağımsız olarak her bir aritmetik dönüştürme gerçekleştirir. Dönüştürmeden sonra, hiçbir parametre bir `int`daha kısadır ve parametre türü açıkça prototipi içinde **float** olarak belirtilmedikçe hiçbir parametre **float** türüne sahip değildir. Bu, örneğin, bir `char` olarak bir parametre bildiren, `int`olarak bildirme ile aynı etkiye sahip olduğu anlamına gelir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

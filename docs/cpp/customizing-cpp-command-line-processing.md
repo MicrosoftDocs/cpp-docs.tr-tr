@@ -14,24 +14,24 @@ helpviewer_keywords:
 - suppressing environment processing
 - _setenvp function
 ms.assetid: aae01cbb-892b-48b8-8e1f-34f22421f263
-ms.openlocfilehash: da1b3bdd6392b144f9315add4c19de14c1d14d41
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1541840521695658b5c4d809ba7e11767b1330a2
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62154697"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74857560"
 ---
 # <a name="customizing-c-command-line-processing"></a>C++ Komut Satırı İşlemini Özelleştirme
 
-## <a name="microsoft-specific"></a>Microsoft'a Özgü
+**Microsoft 'a özgü**
 
-Programınızı komut satırı bağımsız değişkenlerini almaz, komut satırı işlemeyi gerçekleştiren yordamı kullanımını gizleme tarafından az miktarda alan kaydedebilirsiniz. Bu yordamı çağrılır `_setargv` ve açıklanan [joker karakter genişletmesi](../cpp/wildcard-expansion.md). Kullanımını engellemek için dosya içeren bir şey yapan bir yordam tanımlamak `main` işlev ve adlandırın `_setargv`. Çağrı `_setargv` ardından tanımınızı tarafından sağlanıyorsa `_setargv`, ve kitaplık sürümü yüklü değil.
+Programınız komut satırı bağımsız değişkenleri içermiyorsa, komut satırı işlemeyi gerçekleştiren kitaplık yordamının kullanımını kaldırarak az miktarda alan kaydedebilirsiniz. Bu yordam `_setargv` olarak adlandırılır ve [joker karakter genişletmesi](../cpp/wildcard-expansion.md)bölümünde açıklanmıştır. Kullanımını bastırmak için `main` işlevini içeren dosyada hiçbir şey yapmaz ve `_setargv`adlandırın. `_setargv` çağrısı daha sonra `_setargv`tanımınız tarafından karşılanır ve kitaplık sürümü yüklenmez.
 
-Benzer şekilde, hiçbir zaman ortam tablosuna aracılığıyla erişiyorsanız `envp` bağımsız değişken yerine kullanılacak boş kendi yordamınızı sağlayabilir `_setenvp`, ortam işleme yordamı. Olduğu gibi `_setargv` işlevi `_setenvp` olarak bildirilmelidir **extern "C"**.
+Benzer şekilde, ortam tablosuna hiçbir daha `envp` bağımsız değişkeni aracılığıyla erişemiyorsanız, ortam işleme yordamının `_setenvp`yerine, kendi boş bir yordamını sağlayabilirsiniz. `_setargv` işlevinde olduğu gibi, `_setenvp` **extern "C"** olarak bildirilmelidir.
 
-Programınızı çağrıları yapabileceğiniz `spawn` veya `exec` C Çalışma Zamanı Kitaplığı'ndaki yordamlara ailesi. Bu durumda, bu yordam bir ortam ana işlemden alt işleme geçmek için kullanıldığından, ortam işleme yordamı göndermeme değil.
+Programınız, C çalışma zamanı kitaplığındaki `spawn` veya `exec` ailesinden bir yordam çağrısı yapabilir. Bu durumda, ortam işleme yordamını gizmemelisiniz, çünkü bu yordam bir ortamı üst işlemden alt işleme geçirmek için kullanılır.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

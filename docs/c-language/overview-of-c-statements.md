@@ -8,12 +8,12 @@ helpviewer_keywords:
 - statements, about statements
 - Visual C, statements
 ms.assetid: 0d49837a-5399-4881-b60c-af5f4e9720de
-ms.openlocfilehash: 1b5863a021fd74bb80162d589af7c2a1a5b36f9b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bfa6840553055202f26f55e1dc5971bfd047b2de
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62232475"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74857079"
 ---
 # <a name="overview-of-c-statements"></a>C Deyimlerine Genel Bakış
 
@@ -21,27 +21,27 @@ C deyimleri belirteçler, ifadeler ve diğer deyimlerden oluşur. Başka bir dey
 
 ## <a name="syntax"></a>Sözdizimi
 
-*deyimi*: [etiketli deyim](../c-language/goto-and-labeled-statements-c.md)
+*Ekstre*: [etiketli ifade](../c-language/goto-and-labeled-statements-c.md)
 
-[Bileşik deyim](../c-language/compound-statement-c.md)
+[bileşik ifade](../c-language/compound-statement-c.md)
 
-[ifade deyimi](../c-language/expression-statement-c.md)
+[ifade ifadesi](../c-language/expression-statement-c.md)
 
-[Seçimi deyimi](../c-language/if-statement-c.md)
+[seçim-ifade](../c-language/if-statement-c.md)
 
-[Yineleme deyimi](../c-language/do-while-statement-c.md)
+[yineleme-ekstresi](../c-language/do-while-statement-c.md)
 
-[atlama-deyimi](../c-language/break-statement-c.md)
+[sıçrama-deyim](../c-language/break-statement-c.md)
 
-[deyimi dışında deneyin](../c-language/try-except-statement-c.md)
+[try-except-deyimin](../c-language/try-except-statement-c.md) /* Microsoft 'a özgü \*/
 
-/ * Microsoft'a Specific \* / [try-finally deyimi](../c-language/try-finally-statement-c.md)  / \* Microsoft Specific \*/
+[try-finally-deyimin](../c-language/try-finally-statement-c.md) /\* Microsoft 'a özgü \*/
 
-Deyim gövdesi çoğu zaman bir "bileşik deyim" olur. Bileşik deyim, anahtar sözcükleri içerebilen diğer deyimlerden oluşur. Bileşik deyim, küme ayraçları tarafından ayrılmış (**{}**). Diğer tüm C deyimleri noktalı virgül ile Bitiş (**;**). Noktalı virgül, bir deyim sonlandırıcısıdır.
+Deyim gövdesi çoğu zaman bir "bileşik deyim" olur. Bileşik deyim, anahtar sözcükleri içerebilen diğer deyimlerden oluşur. Bileşik ifade, küme ayraçları ( **{}** ) ile sınırlandırılmıştır. Diğer tüm C deyimleri noktalı virgül ( **;** ) ile biter. Noktalı virgül, bir deyim sonlandırıcısıdır.
 
-İfade deyimi aritmetik içerebilen bir C ifadesi içerir veya mantıksal işleçleri [ifadeler ve atamalar](../c-language/expressions-and-assignments.md). null deyimi, boş bir deyimdir.
+İfade deyimi, [ifadelerde ve atamalarında](../c-language/expressions-and-assignments.md)tanıtılan aritmetik veya mantıksal işleçleri Içerebilen bir C ifadesi içerir. null deyimi, boş bir deyimdir.
 
-Bir C deyimi, ad ve üst üste iki noktadan oluşan bir tanımlama etiketi ile başlayabilir. Yalnızca `goto` deyimi deyim etiketlerini tanıdığı için deyim etiketleri `goto` ile ele alınır. Bkz: [goto ve etiketli deyimleri](../c-language/goto-and-labeled-statements-c.md) daha fazla bilgi için.
+Bir C deyimi, ad ve üst üste iki noktadan oluşan bir tanımlama etiketi ile başlayabilir. Yalnızca `goto` deyimi deyim etiketlerini tanıdığı için deyim etiketleri `goto` ile ele alınır. Daha fazla bilgi için [goto ve etiketli deyimlere](../c-language/goto-and-labeled-statements-c.md) bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

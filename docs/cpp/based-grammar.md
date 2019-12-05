@@ -4,34 +4,34 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - based addressing
 ms.assetid: a68ff750-c7fa-4c0c-8d5f-2df76e4686c5
-ms.openlocfilehash: 8dec9b0bcc7db25e2ec4c39b9d907922691bfc05
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a8c923b5a111144c539b5bea1b2f47eb58dd1fbd
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62393954"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74857651"
 ---
-# <a name="based-grammar"></a>__based Dilbilgisi
+# <a name="__based-grammar"></a>__based Dilbilgisi
 
-## <a name="microsoft-specific"></a>Microsoft'a Özgü
+**Microsoft 'a özgü**
 
-Tabanlı Adresleme (statik ve dinamik tabanlı veriler) nesne ayrılmış segment üzerinde kesin denetim gerektiğinde yararlıdır.
+Temel adresleme, nesnelerin ayrıldığı kesim üzerinde tam denetime ihtiyacınız olduğunda faydalıdır (statik ve dinamik tabanlı veriler).
 
-Tabanlı adresleme 32-bit ve 64 bit derlemelerde kabul edilebilir "temel bir işaretçi üzerinde" yalnızca formun tanımlayan bir 32 bit veya 64-bit öteleme 32 bit veya 64-bit tabana içeriyor veya temel bir tür **void**.
+32-bit ve 64 bit derlemelerde, temel adresleme 'nin kabul edilebilir tek biçimi, 32 bit veya 64-bit tabanına bir 32-bit veya 64-bit yer değiştirme içeren veya **void**tabanlı bir tür tanımlayan "bir işaretçiye dayalıdır".
 
 ## <a name="grammar"></a>Dilbilgisi
 
-*temel-aralık-modifier*: **__based (***temel ifade***)** 
+*temel Aralık-değiştirici*: **__based (**  *taban ifadesi*  **)**
 
-*temel ifade*: *based-variablebased-abstract-declaratorsegment-namesegment-cast*
+*taban ifadesi*: *tabanlı-variablebased-abstract-bildiriatorsegment-namesegment-cast*
 
-*bağlı değişken*: *tanımlayıcısı*
+*temel değişken*: *tanımlayıcı*
 
-*temel-Özet-declarator*: *soyut bildirimci*
+*tabanlı-soyut-declarator*: *abstract-bildirimci*
 
-*temel türü*: *tür adı*
+*temel tür*: *tür-adı*
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

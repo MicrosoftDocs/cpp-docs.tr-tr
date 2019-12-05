@@ -1,38 +1,38 @@
 ---
 title: ML Önemli Olmayan Hatası A2034
 ms.date: 08/30/2018
-ms.topic: error-reference
+ms.custom: error-reference
 f1_keywords:
 - A2034
 helpviewer_keywords:
 - A2034
 ms.assetid: 6438970c-0aee-4f14-a058-5fe47d0ee216
-ms.openlocfilehash: cbc4dc59da36df682815b0bf2c644892b2db1e70
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 578a839b319b10dff7f89d6fafdf556315a4f850
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62177870"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74856694"
 ---
 # <a name="ml-nonfatal-error-a2034"></a>ML Önemli Olmayan Hatası A2034
 
-**Segment blok içinde olmalıdır**
+**kesim bloğunda olmalıdır**
 
-Aşağıdakilerden birini bir segment öbeği bulundu:
+Bir segment bloğunun dışında aşağıdakilerden biri bulundu:
 
 - Bir yönerge
 
-- Bir etiket tanımı
+- Etiket tanımı
 
-- A [bu](../../assembler/masm/operator-this.md) işleci
+- [Bu](../../assembler/masm/operator-this.md) işleç
 
-- A [ $ ](../../assembler/masm/dollar.md) işleci
+- [$](../../assembler/masm/dollar.md) işleci
 
-- Bir yordam tanımında
+- Yordam tanımı
 
-- Bir [HİZALA](../../assembler/masm/align-masm.md) yönergesi
+- [Hizalama](../../assembler/masm/align-masm.md) yönergesi
 
-- Bir [kuruluş](../../assembler/masm/org.md) yönergesi
+- Bir [org](../../assembler/masm/org.md) yönergesi
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

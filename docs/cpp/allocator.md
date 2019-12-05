@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - __declspec keyword [C++], allocator
 - allocator __declspec keyword
-ms.openlocfilehash: f9c8de7c8686b89a2ab9570a2558e3f649e545b5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2e2615829f6491bf660859fbc86ebcd07a56c5fe
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62155244"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74857690"
 ---
 # <a name="allocator"></a>allocator
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-**Ayırıcı** bildirim belirticisi, ayırmaları aracılığıyla olay izleme için Windows (ETW) görünür yapmak için özel bellek ayırma işlevlere uygulanabilir.
+**Ayırıcı** bildirimi Belirleyicisi, ayırmaları Windows Için olay Izleme (ETW) aracılığıyla görünür hale getirmek için özel bellek ayırma işlevlerine uygulanabilir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -27,10 +27,12 @@ ms.locfileid: "62155244"
 
 ## <a name="remarks"></a>Açıklamalar
 
-Visual Studio'da yerel bellek profili Oluşturucu ayırma sırasında çalışma zamanı tarafından yayılan ETW olay verileri toplayarak çalışır. Böylece ayırma verilerini yakalanabilir ayırıcılar CRT ve Windows SDK'sı kaynak düzeyinde ek açıklama eklenen. Kendi ayırıcılar yazıyorsanız sonra yeni ayrılmış yığın bellek için bir işaretçi döndüren herhangi işlevleri ile donatılmış `__declspec(allocator)`myMalloc için bu örnekte görüldüğü gibi:
+Visual Studio 'daki yerel bellek profili Oluşturucu, çalışma zamanı sırasında tarafından yayılan ayırma ETW olay verileri toplanarak işe yarar. Böylece ayırma verilerini yakalanabilir ayırıcılar CRT ve Windows SDK'sı kaynak düzeyinde ek açıklama eklenen. Kendi ayırıcılarınızı yazıyorsanız, yeni ayrılan yığın belleğine bir işaretçi döndüren işlevler, myMalloc için bu örnekte görüldüğü gibi `__declspec(allocator)`ile birlikte kullanılabilir.
 
 ```cpp
 __declspec(allocator) void* myMalloc(size_t size)
 ```
 
-Daha fazla bilgi için [Visual Studio'daki bellek kullanımını ölçen](/visualstudio/profiling/memory-usage) ve [özel yerel ETW yığın olayları](/visualstudio/profiling/custom-native-etw-heap-events).
+Daha fazla bilgi için bkz. [Visual Studio 'da bellek kullanımını ölçme](/visualstudio/profiling/memory-usage) ve [özel yerel ETW yığın olayları](/visualstudio/profiling/custom-native-etw-heap-events).
+
+**SON Microsoft 'a özgü**

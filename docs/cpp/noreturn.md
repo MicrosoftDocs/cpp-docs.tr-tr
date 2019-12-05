@@ -7,27 +7,27 @@ helpviewer_keywords:
 - __declspec keyword [C++], noreturn
 - noreturn __declspec keyword
 ms.assetid: 9c6517e5-22d7-4051-9974-3d2200ae4d1d
-ms.openlocfilehash: 1d78e8f5116eabf9073205b938156197bf1001a9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f9ca61c9d734ccdd6b8d8374ed3a7c4128ee3d5e
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62245251"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74857378"
 ---
 # <a name="noreturn"></a>noreturn
 
-## <a name="microsoft-specific"></a>Microsoft'a Özgü
+**Microsoft 'a özgü**
 
-Bu **__declspec** öznitelik derleyiciye bir işlev değil döndürür. Sonuç olarak derleyici olduğunu bilir çağrıyı izleyen kodu bir **__declspec(noreturn)** işlevi erişilemez.
+Bu **__declspec** özniteliği derleyiciye bir işlevin döndürmeyeceğini söyler. Sonuç olarak, derleyici bir **__declspec (noreturn)** işlevine yapılan çağrıyı izleyen kodun ulaşılamaz olduğunu bilir.
 
-Derleyici bir işlevi değer döndürmeyen bir denetim yolu ile bulursa, (C4715) uyarısı veya hata iletisi (C2202) oluşturur. Hiçbir zaman döndüren bir işlev nedeniyle denetim yoluna ulaşılamıyorsa kullanabileceğiniz **__declspec(noreturn)** bu uyarı veya hatayı önlemek için.
+Derleyici bir işlevi değer döndürmeyen bir denetim yolu ile bulursa, (C4715) uyarısı veya hata iletisi (C2202) oluşturur. Hiçbir yerde döndürmeyen bir işlev nedeniyle denetim yoluna ulaşılamadığından, bu uyarıyı veya hatayı engellemek için **__declspec (noreturn)** kullanabilirsiniz.
 
 > [!NOTE]
->  Ekleme **__declspec(noreturn)** dönmesi beklenen bir işleve tanımsız davranışlara neden olabilir.
+>  Döndürülmesi beklenen bir işleve **__declspec (noreturn)** eklemek, tanımsız davranışa neden olabilir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnekte, **başka** yan tümcesi bir dönüş deyimi içermez.  Bildirme `fatal` olarak **__declspec(noreturn)** bir hata veya uyarı iletisi önler.
+Aşağıdaki örnekte, **Else** yan tümcesi return deyimi içermez.  `fatal` **__declspec (noreturn)** olarak bildirmek bir hata veya uyarı iletisini önler.
 
 ```cpp
 // noreturn2.cpp
@@ -42,6 +42,8 @@ int main() {
      fatal();
 }
 ```
+
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

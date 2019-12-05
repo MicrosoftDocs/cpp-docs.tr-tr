@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - _com_ptr_t method [C++]
 ms.assetid: 0c00620a-28d2-4f60-ae4a-1696be36137e
-ms.openlocfilehash: 5a3923ee488771e807600069855299fc240b3212
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: c169e454029a28f644a2aabc8d3089bf3069c8c5
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69498707"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74857599"
 ---
 # <a name="_com_ptr_t_com_ptr_t"></a>_com_ptr_t::_com_ptr_t
 
@@ -21,7 +21,7 @@ ms.locfileid: "69498707"
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
+```cpp
 // Default constructor.
 // Constructs a NULL smart pointer.
 _com_ptr_t() throw();
@@ -133,34 +133,36 @@ explicit _com_ptr_t(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
+### <a name="parameters"></a>Parametreler
 
 *Pınterface*<br/>
 Ham arabirim işaretçisi.
 
 *fAddRef*<br/>
-TRUE ise, `AddRef` kapsüllenmiş arabirim işaretçisinin başvuru sayısını artırmak için çağırılır.
+TRUE ise, kapsüllenmiş arabirim işaretçisinin başvuru sayısını artırmak için `AddRef` çağırılır.
 
 *'s*<br/>
 **_Com_ptr_t** nesnesi.
 
 *p*<br/>
-Ham arabirim işaretçisi, türü bu **_com_ptr_t** nesnesinin akıllı işaretçi türünden farklı.
+Ham arabirim işaretçisi, türü bu **_com_ptr_t** nesnenin akıllı işaretçi türünden farklı.
 
 *varSrc*<br/>
 A `_variant_t` nesne.
 
 *in*<br/>
-Bir `CLSID` coclass 'ın.
+Bir coclass 'ın `CLSID`.
 
 *dwClsContext*<br/>
 Yürütülebilir kodu çalıştırmak için bağlam.
 
 *lpcStr*<br/>
-`CLSID` (" **{** `ProgID`" İle başlayarak) veya ' i tutan çok baytlı bir dize.
+Bir `CLSID` (" **{** " ile başlayarak) ya da bir `ProgID`tutan çok baytlı bir dize.
 
 *pOuter*<br/>
 [Toplama](/windows/win32/com/aggregation)için bilinmeyen dış.
+
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

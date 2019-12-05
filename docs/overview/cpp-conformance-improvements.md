@@ -1,16 +1,16 @@
 ---
 title: C++uyumluluk geliştirmeleri
-ms.date: 10/04/2019
+ms.date: 12/04/2019
 description: Visual C++ Studio 'da Microsoft, c++ 20 dil standardı ile tam uygunluğu doğru ilerliyor.
 ms.technology: cpp-language
 author: mikeblome
 ms.author: mblome
-ms.openlocfilehash: 0bbfc364da217525251df0c5f09544ed1ccfe5b6
-ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
+ms.openlocfilehash: 06fa060b674e51a3352a9a928bccdbfa6c63aae4
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73627083"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74858041"
 ---
 # <a name="c-conformance-improvements-in-visual-studio"></a>Visual Studio 2017’deki C++ uyumluluk geliştirmeleri
 
@@ -22,7 +22,7 @@ Microsoft C++ , her yayında uygunluk geliştirmeleri ve hata düzeltmeleri yapa
 
 Visual Studio 2019 RTW, Microsoft C++ derleyicisindeki aşağıdaki uygunluk geliştirmelerini, hata düzeltmelerini ve davranış değişikliklerini IÇERIR (MSVC)
 
-**Note:** C++ 20 uygulamasının her ikisi de derleyici ve IntelliSense için tamamlanana kadar `/std:c++latest` modunda c++ 20 özellikleri kullanıma sunulacaktır. Bu sırada `/std:c++20` derleyici modu sunulacaktır.
+**Note:** C++ 20 uygulama, hem derleyici hem de IntelliSense için tamamlanana kadar `/std:c++latest` modda kullanılabilir hale getirilir. Bu sırada `/std:c++20` derleyici modu sunulacaktır.
 
 ### <a name="improved-modules-support-for-templates-and-error-detection"></a>Şablonlar ve hata algılama için geliştirilmiş modüller desteği
 
@@ -30,9 +30,9 @@ Modüller artık C++ 20 standardında resmi olarak bulunur. Visual Studio 2017 s
 
 ### <a name="modified-specification-of-aggregate-type"></a>Toplu türün değiştirilmiş belirtimi
 
-C++ 20 ' de bir toplama türünün belirtimi değişmiştir (bkz. [Kullanıcı tarafından belirtilen oluşturucularla toplamaları yasakla](https://wg21.link/p1008r1)). Visual Studio 2019 ' de, `/std:c++latest` ' ın altında, Kullanıcı tarafından tanımlanmış bir oluşturucuya sahip bir sınıf (örneğin, `= default` veya `= delete`) olarak belirtilen bir Oluşturucu dahil) bir toplama değildir. Daha önce, yalnızca Kullanıcı tarafından sunulan oluşturucular bir sınıfın bir toplama olmasını eledi. Bu değişiklik, bu tür türlerin nasıl başlatıladığıyla ilgili ek kısıtlamalar getirir.
+C++ 20 ' de bir toplama türünün belirtimi değişmiştir (bkz. [Kullanıcı tarafından belirtilen oluşturucularla toplamaları yasakla](https://wg21.link/p1008r1)). Visual Studio 2019 ' de, `/std:c++latest`altında, Kullanıcı tarafından tanımlanmış bir oluşturucuya sahip bir sınıf (örneğin, `= default` veya `= delete`olarak belirtilen bir Oluşturucu dahil) bir toplama değildir. Daha önce, yalnızca Kullanıcı tarafından sunulan oluşturucular bir sınıfın bir toplama olmasını eledi. Bu değişiklik, bu tür türlerin nasıl başlatıladığıyla ilgili ek kısıtlamalar getirir.
 
-Aşağıdaki kod, Visual Studio 2017 ' de hata olmadan derlenir, ancak `/std:c++latest` altında Visual Studio 2019 ' de C2280 ve C2440 hataları ortaya çıkarır:
+Aşağıdaki kod, Visual Studio 2017 ' de hata olmadan derlenir, ancak `/std:c++latest`altında Visual Studio 2019 ' de C2280 ve C2440 hataları ortaya çıkarır:
 
 ```cpp
 struct A
@@ -52,7 +52,7 @@ B b = { 1 }; // ill-formed in C++20, previously well-formed
 
 ### <a name="partial-support-for-operator-"></a>`operator <=>` için kısmi destek
 
-[P0515R3](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0515r3.pdf) C++ 20, "Spaceship işleci" olarak da bilinen `<=>` 3 yönlü karşılaştırma işlecini tanıtır. `/std:c++latest` modundaki Visual Studio 2019, artık izin verilmeyen sözdizimi için hataları yükselterek operatör için kısmi destek sunuyor. Örneğin, aşağıdaki kod Visual Studio 2017 hatası olmadan derlenir, ancak `/std:c++latest` altında Visual Studio 2019 ' de birden çok hata oluşturuyor:
+[P0515R3](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0515r3.pdf) C++ 20, "Spaceship işleci" olarak da bilinen `<=>` üç yönlü karşılaştırma işlecini tanıtır. `/std:c++latest` modundaki Visual Studio 2019, artık izin verilmeyen sözdizimi için hataları yükselterek operatör için kısmi destek sunuyor. Örneğin, aşağıdaki kod Visual Studio 2017 hatası olmadan derlenir, ancak `/std:c++latest`altında Visual Studio 2019 ' de birden çok hata oluşturuyor:
 
 ```cpp
 struct S
@@ -73,7 +73,7 @@ Hataları önlemek için, son açı ayracından önce sorunlu satıra bir boşlu
 
 ### <a name="references-to-types-with-mismatched-cv-qualifiers"></a>Eşleşmeyen CV niteleyicileri olan türlere başvurular
 
-Daha önce, MSVC, en üst düzeyin altında eşleşmeyen CV niteleyicilerine sahip bir türden başvurunun doğrudan bağlamasını izin verilir. Bu bağlama, başvuruya göre başvuruda bulunulan düzgün const verileri değişikliğine izin verebilir. Derleyici artık standart tarafından gerekli olduğu gibi geçici bir durum oluşturur. Visual Studio 2017 ' de, aşağıdaki kod uyarılar olmadan derlenir. Visual Studio 2019 ' de derleyici, *Uyarı C4172: \<func: #1 "? PData@X @ @QBEABQBXXZ" > yerel değişkenin adresini veya geçici durumunu döndürür*.
+Daha önce, MSVC, en üst düzeyin altında eşleşmeyen CV niteleyicilerine sahip bir türden başvurunun doğrudan bağlamasını izin verilir. Bu bağlama, başvuruya göre başvuruda bulunulan düzgün const verileri değişikliğine izin verebilir. Derleyici artık standart tarafından gerekli olduğu gibi geçici bir durum oluşturur. Visual Studio 2017 ' de, aşağıdaki kod uyarılar olmadan derlenir. Visual Studio 2019 ' de, derleyici *Uyarı C4172: \<Func: #1 "?PData@X@@QBEABQBXXZ"> yerel değişkenin adresini veya geçici durumunu döndürüyor*.
 
 ```cpp
 struct X
@@ -132,11 +132,11 @@ int main()
 }
 ```
 
-Hatayı önlemek için, **constexpr** niteleyiciyi kaldırın ya da uyumluluk modunu `/std:c++17` olarak değiştirin.
+Hatayı önlemek için, **constexpr** niteleyiciyi kaldırın ya da uyumluluk modunu `/std:c++17`olarak değiştirin.
 
 ### <a name="stdcreate_directory-failure-codes"></a>`std::create_directory` hata kodları
 
-C++ 20 ' den koşullu [P1164](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1164r1.pdf) uygulandı. Bu değişiklikler, hedefin hata durumunda zaten bir dizin olup olmadığını denetlemek için `std::create_directory`. Daha önce tüm ERROR_ALREADY_EXISTS tür hataları başarılı oldu-ancak Dizin oluşturulmamış kodlara açıldı.
+C++ 20 ' den koşullu [P1164](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1164r1.pdf) uygulandı. Bu değişiklikler, hedefin hata durumunda zaten bir dizin olup olmadığını denetlemek için `std::create_directory`. Daha önce, tüm ERROR_ALREADY_EXISTS türü hataları başarılı oldu-ancak Dizin oluşturulmamış kodlara açıldı.
 
 ### `operator<<(std::ostream, nullptr_t)`
 
@@ -148,7 +148,7 @@ Her [LWG 2221](https://cplusplus.github.io/LWG/issue2221)için, akışlara nullp
 
 ### <a name="atomic-initialization"></a>Atomik başlatma
 
-[P0883 "atomik başlatma" Düzeltme](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0883r1.pdf) , `std::atomic` ' in değeri, varsayılan başlatma yerine içerilen t 'yi başlatacak şekilde değiştirir. Microsoft standart kitaplığı ile Clang/LLVM kullanılırken bu çözüm etkinleştirilir. Şu anda Microsoft C++ derleyicisi için, **constexpr** işlemede hata için geçici bir çözüm olarak devre dışı bırakılmıştır.
+[P0883 "atomik başlatma düzeltme"](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0883r1.pdf) özelliği değeri `std::atomic`, varsayılan olarak başlatmak yerine içerilen t 'yi başlatacak şekilde değişir. Microsoft standart kitaplığı ile Clang/LLVM kullanılırken bu çözüm etkinleştirilir. Şu anda Microsoft C++ derleyicisi için, **constexpr** işlemede hata için geçici bir çözüm olarak devre dışı bırakılmıştır.
 
 ### <a name="remove_cvref-and-remove_cvref_t"></a>`remove_cvref` ve `remove_cvref_t`
 
@@ -166,7 +166,7 @@ Her [LWG 2221](https://cplusplus.github.io/LWG/issue2221)için, akışlara nullp
 
 ### <a name="char8_t"></a>char8_t
 
-[P0482r6](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0482r6.html). C++ 20, UTF-8 kod birimlerini temsil etmek için kullanılan yeni bir karakter türü ekler. C++ 20 ' deki `u8` dize sabit değerleri, daha önce olan `const char[N]`değil, tür `const char8_t[N]` sahip. [N2231](http://www.open-std.org/jtc1/sc22/wg14/www/docs/n2231.htm)içinde C standardı için benzer değişiklikler önerilir. Geriye dönük uyumluluk düzeltme `char8_t` için öneriler [P1423r0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1423r0.html)içinde verilmiştir. Microsoft C++ derleyicisi, **/Zc: char8_t** derleyici seçeneğini belirttiğinizde Visual Studio 2019 sürüm 16,1 ' de `char8_t` için destek ekler. Gelecekte, [/std: c + + latest](../build/reference/std-specify-language-standard-version.md)ile desteklenecek ve **/Zc: Char8_t-** aracılığıyla c++ 17 davranışına geri döndürülecektir. IntelliSense 'i destekleyen EDG derleyicisi henüz desteklemez, bu nedenle yalnızca gerçek derlemeyi etkilemeden yalnızca IntelliSense 'e sahip olan hataları görürsünüz.
+[P0482r6](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0482r6.html). C++ 20, UTF-8 kod birimlerini temsil etmek için kullanılan yeni bir karakter türü ekler. C++ 20 ' deki `u8` dize sabit değerleri, daha önce olan `const char[N]`değil, tür `const char8_t[N]` sahip. [N2231](http://www.open-std.org/jtc1/sc22/wg14/www/docs/n2231.htm)içinde C standardı için benzer değişiklikler önerilir. Geriye dönük uyumluluk düzeltme `char8_t` için öneriler [P1423r0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1423r0.html)içinde verilmiştir. Microsoft C++ derleyicisi, **/zc: char8_t** derleyici seçeneğini belirttiğinizde Visual Studio 2019 sürüm 16,1 ' de `char8_t` için destek ekler. Gelecekte, [/std: c + + latest](../build/reference/std-specify-language-standard-version.md)ile desteklenecek ve **/zc: Char8_t-** aracılığıyla c++ 17 davranışına geri döndürülecektir. IntelliSense 'i destekleyen EDG derleyicisi henüz desteklemez, bu nedenle yalnızca gerçek derlemeyi etkilemeden yalnızca IntelliSense 'e sahip olan hataları görürsünüz.
 
 #### <a name="example"></a>Örnek
 
@@ -179,7 +179,7 @@ const char8_t* s = u8"Hello"; // C++20
 
 [P0887R1 type_identity](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0887r1.pdf). Kullanım dışı `std::identity` sınıf şablonu uzantısı kaldırılmıştır ve c++ 20 `std::type_identity` programlayıcılarına ve `std::identity` Function nesnesiyle değiştirilmiştir. Her ikisi de yalnızca [/std: c + + en son](../build/reference/std-specify-language-standard-version.md)altında kullanılabilir.
 
-Aşağıdaki örnek, Visual Studio 2017 ' de `std::identity` (\<type_traits >) için kullanımdan kaldırma Uyarı C4996 üretir:
+Aşağıdaki örnek, Visual Studio 2017 ' de `std::identity` için kullanımdan kaldırma uyarısı C4996 (\<type_traits > olarak tanımlanmıştır) üretir:
 
 ```cpp
 #include <type_traits>
@@ -206,7 +206,7 @@ long j = static_cast<long>(i);
 
 Yeni lambda işlemcisi, [/std: c + + en son](../build/reference/std-specify-language-standard-version.md) altında veya **/deneysel: newLambdaProcessor**ile herhangi bir dil modu altında genel Lambdalar içinde bazı uyumluluk modu sözdizimsel denetimleri sunar.
 
-Visual Studio 2017 ' de, bu kod uyarı olmadan derlenir, ancak Visual Studio 2019 içinde hata *C2760 sözdizimi hatası oluştu: beklenmeyen belirteç ' \<id-expr > ', beklenen ' ID-Expression '* :
+Visual Studio 2017 ' de, bu kod uyarı olmadan derlenir, ancak Visual Studio 2019 içinde hata *C2760 sözdizimi hatası oluştu: beklenmeyen belirteç '\<ID-expr > ', beklenen ' ID-Expression '* :
 
 ```cpp
 void f() {
@@ -232,7 +232,7 @@ void f() {
 
 ### <a name="designated-initialization"></a>Belirlenmiş başlatma
 
-[P0329R4](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0329r4.pdf) (c++ 20) belirtilen başlatma, `Type t { .member = expr }` sözdizimi kullanılarak toplu başlatma işleminde belirli üyelerin seçili olmasına izin verir. **/Std: c + + en son**gerektirir.
+[P0329R4](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0329r4.pdf) (c++ 20) belirtilen başlatma, `Type t { .member = expr }` söz dizimi kullanılarak toplu başlatma işleminde belirli üyelerin seçili olmasına izin verir. **/Std: c + + en son**gerektirir.
 
 ### <a name="new-and-updated-standard-library-functions-c20"></a>Yeni ve güncelleştirilmiş standart kitaplık işlevleri (C++ 20)
 
@@ -338,7 +338,7 @@ std::equal(std::begin(a), std::end(a), std::begin(b), std::end(b));
 
 ### <a name="effect-of-defining-spaceship-operator-on--and-"></a>= = Ve! = üzerinde Spaceship işlecinin tanımlanmasıyla ilgili efekt
 
-Spaceship işlecinin ( **<=>** ) tek başına tanımı artık **==** veya **! =** içeren ifadeleri yeniden yazmayacak ve Spaceship işleci `= default` ([P1185R2](https://wg21.link/p1185r2)) olarak işaretlenmedikçe. Aşağıdaki örnek Visual Studio 2019 RTW ve sürüm 16,1 ' de derlenir, ancak Visual Studio 2019 sürüm 16,2 ' te C2678 üretir:
+Spaceship işlecinin ( **<=>** ) tek başına bir tanımı artık **==** veya **! =** içeren ifadeleri yeniden yazmayacak ve Spaceship işleci `= default` ([P1185R2](https://wg21.link/p1185r2)) olarak işaretlenmedikçe. Aşağıdaki örnek Visual Studio 2019 RTW ve sürüm 16,1 ' de derlenir, ancak Visual Studio 2019 sürüm 16,2 ' te C2678 üretir:
 
 ```cpp
 #include <compare>
@@ -385,7 +385,7 @@ bool neq(const S& lhs, const S& rhs) {
 - [P0482R6](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0482r6.html): char8_t Için kitaplık desteği
 - [P0600R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0600r1.pdf): [\[noDiscard]] STL, Bölüm 1
 - [P0653R2](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0653r2.html): to_address ()
-- [P0754R2](http://open-std.org/JTC1/SC22/WG21/docs/papers/2018/p0754r2.pdf): \<sürüm >
+- [P0754R2](http://open-std.org/JTC1/SC22/WG21/docs/papers/2018/p0754r2.pdf): \<sürümü >
 - [P0771R1](http://open-std.org/JTC1/SC22/WG21/docs/papers/2018/p0771r1.pdf): noexcept std:: işlevin taşıma Oluşturucusu
 
 ## <a name="improvements_163"></a>Visual Studio 2019 sürüm 16,3 ' de uyumluluk geliştirmeleri
@@ -425,7 +425,7 @@ class Foo {
 
 ```
 
-Hatayı önlemek için `TotalDuration` ' ı burada gösterildiği gibi bildirin:
+Hatayı önlemek için `TotalDuration` aşağıda gösterildiği gibi bildirin:
 
 ```cpp
 #include <chrono>
@@ -455,17 +455,256 @@ void g()
 extern "C" void f(int, int, int, BOOL){}
 ```
 
-Önceki örnekteki hatalardan kaçınmak için, her iki `f` bildiriminde **bool** yerine **bool** kullanın.
+Önceki örnekteki hataları önlemek için `f`her iki bildiriminde da **bool** yerine **bool** kullanın.
 
 ### <a name="standard-library-improvements"></a>Standart Kitaplık geliştirmeleri
 
-Standart olmayan üstbilgiler \<stdexcpt. h > ve \<typeınfo. h > kaldırılmıştır. Bunun yerine bunları içeren kod, sırasıyla \<exception > ve \<typeınfo > Standart üstbilgilerini içermelidir.
+Standart olmayan üstbilgiler \<stdexcpt. h > ve \<TypeInfo. h > kaldırılmıştır. Bunun yerine, bunları içeren kod, sırasıyla standart üstbilgileri \<özel durum > ve \<TypeInfo > içermelidir.
+
+## <a name="improvements_164"></a>Visual Studio 2019 sürüm 16,4 ' de uyumluluk geliştirmeleri
+
+### <a name="better-enforcement-of-two-phase-name-lookup-for-qualified-ids-in-permissive-"></a>/Permissive-içinde nitelikli kimlikler için iki aşamalı ad araması daha iyi bir şekilde zorlendi
+
+İki aşamalı ad arama, şablon gövdelerinde kullanılan bağımlı olmayan adların, tanım zamanında şablona görünür olması gerekir. Daha önce, bu tür adlar şablon örneği oluşturulurken bulunmuş olabilir. Bu değişiklik, [/Permissive-](../build/reference/permissive-standards-conformance.md) bayrağı altında MSVC ' de taşınabilir ve uyumlu kod yazmayı kolaylaştırır.
+
+Visual Studio 2019 sürüm 16,4 ' de, **/Permissive-** bayrağı ayarlanmış olarak, aşağıdaki örnek bir hata üretir çünkü `f<T>` şablonu tanımlandığında `N::f` görünür değildir:
+
+```cpp
+template <class T>
+int f() {
+    return N::f() + T{}; // error C2039: 'f': is not a member of 'N'
+}
+
+namespace N {
+    int f() { return 42; }
+}
+```
+
+Genellikle, bu, aşağıdaki örnekte gösterildiği gibi eksik üstbilgiler veya iletme bildirimi işlevleri veya değişkenleri eklenerek düzeltilebilir:
+
+```cpp
+namespace N {
+    int f();
+}
+
+template <class T>
+int f() {
+    return N::f() + T{};
+}
+
+namespace N {
+    int f() { return 42; }
+}
+```
+
+### <a name="implicit-conversion-of-integral-constant-expressions-to-null-pointer"></a>İntegral sabit ifadelerin null işaretçisine örtük dönüştürmesi
+
+MSVC derleyicisi artık Uyumluluk modu 'nda (/Permissive-) [CWG sorun 903](http://www.open-std.org/jtc1/sc22/wg21/docs/cwg_defects.html#903) ' i uygular. Bu kural, tam sayı sabiti ifadelerinin örtük dönüştürmelerine izin vermez (' 0 ' tamsayı sabiti hariç), null işaretçi sabitlerine izin vermez. Aşağıdaki örnek uyumluluk modunda C2440 üretir:
+
+```cpp
+int* f(bool* p) {
+    p = false; // error C2440: '=': cannot convert from 'bool' to 'bool *'
+    p = 0; // OK
+    return false; // error C2440: 'return': cannot convert from 'bool' to 'int *'
+}
+```
+
+Hatayı düzeltemedi, **yanlış**yerine **nullptr** kullanın. 0 sabit değerinin hala izin verildiğini unutmayın:
+
+```cpp
+int* f(bool* p) {
+    p = nullptr; // OK
+    p = 0; // OK
+    return nullptr; // OK
+}
+```
+
+### <a name="standard-rules-for-types-of-integer-literals"></a>Tamsayı sabit değerleri türleri için standart kurallar
+
+Uyumluluk modu ' nda ( [/Permissive-](../build/reference/permissive-standards-conformance.md)tarafından etkinleştirilir), MSVC tamsayı sabit değerleri türleri için standart kuralları kullanır. Daha önce, işaretli bir ' int ' öğesine sığmayacak kadar büyük olan ondalık harfler ' unsigned int ' türünde verilmiş. Bu tür sabitlerde, bir sonraki en büyük işaretli tamsayı türü (' Long Long ') verilir. Ayrıca, imzalı bir türe sığmayacak kadar büyük olan değişmez değerleri ' işaretsiz uzun uzun ' türünde.
+
+Bu, farklı uyarı tanılamaları oluşturulmasını ve değişmez değerler üzerinde gerçekleştirilen aritmetik işlemler için davranış farklarını ortaya çıkaracak.
+
+Aşağıdaki örnekte, Visual Studio 2019, sürüm 16,4 ' deki yeni davranış gösterilmektedir. `i` değişkeni **işaretsiz int** türündedir ve bu nedenle uyarı tetiklenir. `j` değişkeninin üst sıra bitleri 0 olarak ayarlanır.
+
+```cpp
+void f(int r) {
+    int i = 2964557531; // warning C4309: truncation of constant value
+    long long j = 0x8000000000000000ll >> r; // literal is now unsigned, shift will fill high-order bits with 0
+}
+```
+
+Aşağıdaki örnekte, eski davranışın nasıl saklanacağı gösterilmektedir ve bu nedenle uyarı ve çalışma zamanı davranış değişikliğini önleyin:
+
+```cpp
+void f(int r) {
+int i = 2964557531u; // OK
+long long j = (long long)0x8000000000000000ll >> r; // shift will keep high-order bits
+}
+```
+
+### <a name="function-parameters-that-shadow-template-parameters"></a>Gölge şablon parametrelerinin işlev parametreleri
+
+MSVC derleyicisi artık bir işlev parametresi bir şablon parametresini gölgelerde bir hata oluşturuyor:
+
+```cpp
+template<typename T>
+void f(T* buffer, int size, int& size_read);
+
+template<typename T, int Size>
+void f(T(&buffer)[Size], int& Size) // error C7576: declaration of 'Size' shadows a template parameter
+{
+    return f(buffer, Size, Size);
+}
+```
+
+Hatayı onarmak için parametrelerden birinin adını değiştirin:
+
+```cpp
+template<typename T>
+void f(T* buffer, int size, int& size_read);
+
+template<typename T, int Size>
+void f(T (&buffer)[Size], int& size_read)
+{
+    return f(buffer, Size, size_read);
+}
+```
+
+### <a name="user-provided-specializations-of-type-traits"></a>Kullanıcı tarafından sunulan özelleştirilmiş tür nitelikleri
+
+Standart 'ın *meta. rqmts* alt yan tümcesiyle uyumlu olarak, MSVC derleyicisi artık, `std` ad alanındaki belirtilen type_traits şablonlarından birinin Kullanıcı tanımlı özelleştirmeyle karşılaştığında bir hata oluşturuyor. Aksi belirtilmediği takdirde, bu tür Uzmanlıklar tanımsız davranışa neden olur. Aşağıdaki örnek, kuralı ihlal ettiğinden tanımsız davranışa sahiptir ve `static_assert` **C2338**hatasıyla başarısız olur.
+
+```cpp
+#include <type_traits>
+struct S;
+
+template<>
+struct std::is_fundamental<S> : std::true_type {};
+
+static_assert(std::is_fundamental<S>::value, "fail");
+```
+
+Hatayı önlemek için, istenen type_trait devralan bir yapı tanımlayın ve şunları yapın:
+
+```cpp
+#include <type_traits>
+
+struct S;
+
+template<typename T>
+struct my_is_fundamental : std::is_fundamental<T> {};
+
+template<>
+struct my_is_fundamental<S> : std::true_type { };
+
+static_assert(my_is_fundamental<S>::value, "fail");
+```
+
+### <a name="changes-to-compiler-provided-comparison-operators"></a>Derleyici tarafından sağlanmış karşılaştırma işleçleri değişiklikleri
+
+MSVC derleyicisi artık [/std: c + + latest](../build/reference/std-specify-language-standard-version.md) seçeneği etkin olduğunda [P1630R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1630r1.html) başına karşılaştırma işleçleri için aşağıdaki değişiklikleri uygular:
+
+Derleyici, **bool**olmayan bir dönüş türü içeriyorsa `operator==` deyimleri artık yeniden yazmayacaktır. Aşağıdaki kod şu anda *C2088 hatasını veriyor: '! = ': struct için geçersiz*:
+
+```cpp
+struct U {
+  operator bool() const;
+};
+
+struct S {
+  U operator==(const S&) const;
+};
+
+bool neq(const S& lhs, const S& rhs) {
+  return lhs != rhs;
+}
+```
+
+Hatayı önlemek için gerekli işleci açıkça tanımlamanız gerekir:
+
+```cpp
+struct U {
+    operator bool() const;
+};
+
+struct S {
+    U operator==(const S&) const;
+    U operator!=(const S&) const;
+};
+
+bool neq(const S& lhs, const S& rhs) {
+    return lhs != rhs;
+}
+```
+
+Derleyici artık birleşim benzeri bir sınıfın üyesiyse, varsayılan olarak bir karşılaştırma işleci tanımlamaz. Aşağıdaki örnek şu anda *C2120 üretir: ' void ' tüm türlerle geçersizdir*:
+
+```cpp
+#include <compare>
+
+union S {
+    int a;
+    char b;
+    auto operator<=>(const S&) const = default;
+};
+
+bool lt(const S& lhs, const S& rhs) {
+    return lhs < rhs;
+}
+```
+
+Hatayı önlemek için işleç için bir gövde tanımlayın:
+
+```cpp
+#include <compare>
+
+union S {
+  int a;
+  char b;
+  auto operator<=>(const S&) const { ... }
+}; 
+
+bool lt(const S& lhs, const S& rhs) {
+  return lhs < rhs;
+}
+```
+
+Sınıf bir başvuru üyesi içeriyorsa, derleyici artık varsayılan olarak bir karşılaştırma işleci tanımlamaz. Aşağıdaki kod şu anda *C2120 hatasını veriyor: ' void ' tüm türlerle geçersizdir*:
+
+```cpp
+#include <compare>
+
+struct U {
+    int& a;
+    auto operator<=>(const U&) const = default;
+};
+
+bool lt(const U& lhs, const U& rhs) {
+    return lhs < rhs;
+}
+```
+
+Hatayı önlemek için işleç için bir gövde tanımlayın:
+
+```cpp
+#include <compare>
+
+struct U {
+    int& a;
+    auto operator<=>(const U&) const { ... };
+};
+
+bool lt(const U& lhs, const U& rhs) {
+    return lhs < rhs;
+}
+```
 
 ## <a name="update_160"></a>Visual Studio 2019 'de hata düzeltmeleri ve davranış değişiklikleri
 
-### <a name="reinterpret_cast-in-a-constexpr-function"></a>Constexpr işlevinde reinterpret_cast
+### <a name="reinterpret_cast-in-a-constexpr-function"></a>Constexpr işlevinde Reinterpret_cast
 
-**Constexpr** işlevinde **reinterpret_cast** geçersizdir. Microsoft C++ derleyicisi daha önce **reinterpret_cast** 'yi yalnızca **constexpr** bağlamında kullanıldıysa bu dosyayı reddedebilir. Visual Studio 2019 ' de, tüm dil standartları modlarında, derleyici bir **constexpr** işlevinin tanımında **reinterpret_cast** 'yi doğru bir şekilde tanılar. Aşağıdaki kod artık C3615 oluşturuyor *: constexpr işlevi ' f ' sabit bir ifadeye neden olamaz*.
+**Constexpr** işlevinde **reinterpret_cast** geçersizdir. Microsoft C++ derleyicisi daha önce **reinterpret_cast** yalnızca **constexpr** bağlamında kullanılıyorsa daha sonra reddedebilir. Visual Studio 2019 ' de, tüm dil standartları modlarında, derleyici **constexpr** işlevinin tanımındaki bir **reinterpret_cast** doğru bir şekilde tanılar. Aşağıdaki kod artık C3615 oluşturuyor *: constexpr işlevi ' f ' sabit bir ifadeye neden olamaz*.
 
 ```cpp
 long long i = 0;
@@ -476,7 +715,7 @@ constexpr void f() {
 
 Hatayı önlemek için, işlev bildiriminden **constexpr** değiştiricisini kaldırın.
 
-### <a name="correct-diagnostics-for-basic_string-range-constructor"></a>Basic_string Range Oluşturucusu için doğru tanılama
+### <a name="correct-diagnostics-for-basic_string-range-constructor"></a>Basic_string Range Oluşturucusu için tanılama doğru
 
 Visual Studio 2019 ' de `basic_string` Range Oluşturucusu artık `static_cast`ile derleyici tanılamayı göstermez. Aşağıdaki kod, Visual Studio 2017 ' de uyarılar olmadan derlenir, çünkü `out`başlatılırken `wchar_t` veri kaybı olabilir.
 
@@ -485,7 +724,7 @@ std::wstring ws = /* … */;
 std::string out(ws.begin(), ws.end());
 ```
 
-Visual Studio 2019 doğru *C4244: ' bağımsız değişken ': ' wchar_t ' değerinden ' const _Eled ' türüne dönüştürme, olası veri kaybı*. Uyarıyı önlemek için std:: String öğesini şu örnekte gösterildiği gibi başlatabilirsiniz:
+Visual Studio 2019 doğru *C4244: ' bağımsız değişken ': ' wchar_t ' değerinden ' const _Elem ' öğesine dönüştürme, olası veri kaybı*. Uyarıyı önlemek için std:: String öğesini şu örnekte gösterildiği gibi başlatabilirsiniz:
 
 ```cpp
 std::wstring ws = L"Hello world";
@@ -498,7 +737,7 @@ for (wchar_t ch : ws)
 
 ### <a name="incorrect-calls-to--and---under-clr-or-zw-are-now-correctly-detected"></a>/Clr veya/ZW altındaki + = ve-= için yanlış çağrılar artık doğru bir şekilde algılandı
 
-Visual Studio 2017 ' de, derleyicinin hataları sessizce yoksaymasına ve `/clr` ya da `/ZW` ' in altında geçersiz + = ve-= çağrıları için kod üretmesinin neden olduğu bir hata sunulmuştur. Aşağıdaki kod Visual Studio 2017 ' de hatasız derlenir, ancak Visual Studio 2019, C2845 hatasını doğru şekilde oluşturuyor: *' System:: String ^ ': işaretçi aritmetiğinin bu tür üzerinde yapılmasına izin verilmiyor*:
+Visual Studio 2017 ' de, derleyicinin hataları sessizce yoksaymasına ve `/clr` veya `/ZW`altında geçersiz + = ve-= çağrıları için kod üretmesinin nedeni olan bir hata ortaya çıkarılmıştır. Aşağıdaki kod Visual Studio 2017 ' de hatasız derlenir, ancak Visual Studio 2019, C2845 hatasını doğru şekilde oluşturuyor: *' System:: String ^ ': işaretçi aritmetiğinin bu tür üzerinde yapılmasına izin verilmiyor*:
 
 ```cpp
 public enum class E { e };
@@ -542,7 +781,7 @@ struct X
 
 MSVC, **bool**'a örtük dönüştürme hakkında bir performans uyarısı C4800 sağlamak için kullanılır. Bu çok gürültülü ve gizlenemedi, bu da Visual Studio 2017 ' de kaldırılması için önde gelir. Bununla birlikte, Visual Studio 2017 yaşam döngüsünün üzerinde çöztiğimiz yararlı durumlar hakkında çok fazla geri bildirim sunuyoruz. Açıklayıcı C4165 ile birlikte Visual Studio 2019 ' ye dikkatlice uyarlanmış bir C4800 geri getiriyoruz. Bu uyarıların her ikisi de açık bir atama ile kolayca gizlenebilir veya uygun türden 0 ' a karşılaştırma yapılabilir. C4800, varsayılan olarak 4. düzey bir uyarıdır ve C4165, varsayılan olarak 1. düzey 3 uyarıdır. Her ikisi de `/Wall` derleyici seçeneği kullanılarak bulunabilir.
 
-Aşağıdaki örnek `/Wall` ' ın altında C4800 ve C4165 oluşturur:
+Aşağıdaki örnek, `/Wall`altında C4800 ve C4165 ' i yükseltir:
 
 ```cpp
 bool test(IUnknown* p)
@@ -568,7 +807,7 @@ bool test(IUnknown* p)
 
 ### <a name="local-class-member-function-doesnt-have-a-body"></a>Yerel sınıf üye işlevinin gövdesi yok
 
-Visual Studio 2017 ' de *C4822: Yerel sınıf üyesi işlevi yalnızca bir gövde* , `/w14822` ' i açıkça ayarlı olduğunda tetiklenir; `/Wall` ile gösterilmez. Visual Studio 2019 ' de C4822, `/Wall` ' ın altında `/w14822` ' i açıkça ayarlamaya gerek kalmadan, bu, varsayılan olarak kapalı bir uyarıdır.
+Visual Studio 2017, *C4822: Yerel sınıf üyesi işlevinde bir gövde* yalnızca `/w14822` derleyici seçeneği açıkça ayarlandığında tetiklenir; `/Wall`gösterilmiyor. Visual Studio 2019 ' de C4822, varsayılan olarak, `/w14822` açıkça ayarlamak zorunda kalmadan `/Wall` altında bulunabilir hale getiren varsayılan bir uyarıdır.
 
 ```cpp
 void example()
@@ -613,11 +852,11 @@ int main()
 }
 ```
 
-Hatayı önlemek için**TypeName** anahtar sözcüğünü `a`: `typename T::Type a;` bildirimine ekleyin.
+Hatayı önlemek için**TypeName** anahtar sözcüğünü `a`bildirimine ekleyin: `typename T::Type a;`.
 
 ### <a name="inline-assembly-code-isnt-supported-in-a-lambda-expression"></a>Bir lambda ifadesinde satır içi derleme kodu desteklenmez
 
-Microsoft C++ ekibi yakın zamanda, bir lambda içindeki satır içi assembler kullanmanın, çalışma zamanında `ebp` ' i (dönüş Adres kaydı) bozulmaya neden olabileceği bir güvenlik sorunundan haberdar oldu. Kötü amaçlı bir saldırgan bu senaryodan faydalanabilir. Sorunun doğası gereği, satır içi derleyicisinin yalnızca x86 'da desteklendiği ve satır içi assembler ve derleyicinin geri kalanı arasındaki kötü etkileşim nedeniyle bu sorunun en güvenli çözümü, bir lambda ifadesinde satır içi derleyicisine izin vermemelidir.
+Microsoft C++ ekibi kısa süre önce bir lambda içinde satır içi derleyici kullanmanın, çalışma zamanında `ebp` (dönüş Adres kaydı) bozulmasıyla sonuçlanabildiğine ilişkin bir güvenlik sorununu bilmiştir. Kötü amaçlı bir saldırgan bu senaryodan faydalanabilir. Sorunun doğası gereği, satır içi derleyicisinin yalnızca x86 'da desteklendiği ve satır içi assembler ve derleyicinin geri kalanı arasındaki kötü etkileşim nedeniyle bu sorunun en güvenli çözümü, bir lambda ifadesinde satır içi derleyicisine izin vermemelidir.
 
 "Joker karakter" bulduğumuz bir lambda ifadesi içinde satır içi assembler 'nun tek kullanımı dönüş adresini yakalamıştı. Bu senaryoda, yalnızca bir derleyici iç `_ReturnAddress()`kullanarak dönüş adresini tüm platformlarda yakalayabilirsiniz.
 
@@ -682,7 +921,7 @@ Yineleyici hata ayıklama özelliği, `std::move_iterator`düzgün bir şekilde 
 
 ### <a name="fixes-for-xkeycheckh-keyword-enforcement"></a>\<xkeycheck. h > anahtar sözcük zorlaması düzeltmeleri
 
-Standart Kitaplık makrosu \<xkeycheck. h >, genel bir ileti yerine algılanan gerçek sorunlu anahtar sözcüğü yaymaya düzeltildi. Ayrıca C++ 20 anahtar sözcüklerini destekler ve IntelliSense 'in rastgele anahtar sözcüklerin makroları olduğunu söylenmesini önler.
+Genel bir ileti yerine, algılanan gerçek sorun anahtar sözcüğünü göstermek için, standart kitaplığın \<xkeycheck. h > bir anahtar sözcüğünü değiştirme sorunu düzeltildi. Ayrıca C++ 20 anahtar sözcüklerini destekler ve IntelliSense 'in rastgele anahtar sözcüklerin makroları olduğunu söylenmesini önler.
 
 ### <a name="allocator-types-no-longer-deprecated"></a>Ayırıcı türleri artık kullanım dışı
 
@@ -690,9 +929,9 @@ Standart Kitaplık makrosu \<xkeycheck. h >, genel bir ileti yerine algılanan g
 
 ### <a name="correct-warning-for-narrowing-string-conversions"></a>Daraltma dizesi dönüştürmeleri için doğru uyarı
 
-Yanlışlıkla gizlenen C4244 daraltma uyarıları `std::string`kaldırılmış olan standart tarafından `static_cast` bir spurmerak değil. `std::string::string(const wchar_t*, const wchar_t*)` çağrılmaya çalışılması artık *C4244 "wchar_t 'yi bir Char 'a daraltma* " olarak doğru olarak yayacaktır.
+Yanlışlıkla gizlenen C4244 daraltma uyarıları `std::string`kaldırılmış olan standart tarafından `static_cast` bir spurmerak değil. `std::string::string(const wchar_t*, const wchar_t*)` çağırma girişimi artık *wchar_t "bir karakteri bir Char 'a daraltma"* olarak doğru olarak yayacaktır.
 
-### <a name="various-filesystem-correctness-fixes"></a>Çeşitli \<filesystem > doğruluk düzeltmeleri
+### <a name="various-filesystem-correctness-fixes"></a>Çeşitli \<FileSystem > doğruluk düzeltmeleri
 
 - Bir dizinin son yazma süresini değiştirmeye çalışırken düzeltilen `std::filesystem::last_write_time` başarısız oldu.
 - `std::filesystem::directory_entry` Oluşturucusu artık varolmayan bir hedef yolu sağlandığı zaman bir özel durum oluşturmak yerine başarısız bir sonucu depolar.
@@ -718,13 +957,13 @@ Paralel algoritmalar kitaplığı artık Windows 7 ve önceki sahte sürümlerin
 
 ### <a name="fixes-for-iterator-unwrapping"></a>Yineleyici geri sarma düzeltmeleri
 
-C++ Team Blog makalesi [STL özellikleri ve 15,8 2017 düzeltmeleri](https://devblogs.microsoft.com/cppblog/stl-features-and-fixes-in-vs-2017-15-8/)için Visual Studio 2017 15,8 ' de açıklandığı gibi, Visual Studio ' de birinci kez programcı-Kullanıcı tümleştirmesi için kullanıma sunulan Yineleyici, daha önce standart 'dan türetilen yineleyiciler tarafından geri sarılamaz Kitaplık yineleyiciler. Örneğin, `std::vector<int>::iterator` ' dan türetilen ve davranışı özelleştirmeye çalışan bir Kullanıcı artık işaretçi davranışı yerine standart kitaplık algoritmalarını çağırırken özelleştirilmiş davranışlarını alıyor.
+Visual Studio 2017 15,8 ' de birinci kez programcı-Kullanıcı tümleştirmesi için sunulan Yineleyici, C++ Team blog makalesinde [STL özellikleri ve düzeltmeleri ve vs 2017 15,8](https://devblogs.microsoft.com/cppblog/stl-features-and-fixes-in-vs-2017-15-8/)' te açıklandığı gibi, standart kitaplık yinelemelerinden türetilen yineleyicilerin sarmalarından daha fazla geri sarılamaz. Örneğin, `std::vector<int>::iterator` ve özelleştirmeyi özelleştirmeye izin veren bir Kullanıcı artık işaretçi davranışı yerine standart kitaplık algoritmalarını çağırırken özelleştirilmiş davranışlarını alır.
 
-Sıralanmamış kapsayıcı `reserve` işlevi artık, [LWG 2156](https://cplusplus.github.io/LWG/issue2156)' de açıklandığı gibi N öğeleri için ayrılmış durumda.
+Sıralanmamış kapsayıcı `reserve` işlevi, [LWG 2156](https://cplusplus.github.io/LWG/issue2156)' de açıklandığı gibi aslında N öğeleri için ayırmıştır.
 
 ### <a name="time-handling"></a>Zaman işleme
 
-- Daha önce, eşzamanlılık kitaplığına geçirilen bazı zaman değerleri, örneğin `condition_variable::wait_for(seconds::max())`taşırdı. Şimdi düzeltildi, rastgele 29 günlük bir döngüde (altta yatan Win32 API 'Leri tarafından kabul edilen uint32_t milisaniyesi taştı) değiştirilen taşma
+- Daha önce, eşzamanlılık kitaplığına geçirilen bazı zaman değerleri, örneğin `condition_variable::wait_for(seconds::max())`taşırdı. Şimdi düzeltildi, rastgele 29 günlük bir döngüde (temel alınan Win32 API 'Leri tarafından kabul edilen uint32_t milisaniyelik) değiştirilen taşma
 
 - \<CTime > üst bilgisi artık `timespec` ve `timespec_get` ad alanı `std`, genel ad alanında bildirmek için de doğru şekilde bildiriyor.
 
@@ -746,9 +985,9 @@ Sıralanmamış kapsayıcı `reserve` işlevi artık, [LWG 2156](https://cpluspl
 
 `std::bitset` Oluşturucu artık büyük bitkümeler için ters sırada olanları ve sıfırları okumaktadır.
 
-### <a name="stdpairoperator-regression"></a>`std::pair::operator=` gerileme
+### <a name="stdpairoperator-regression"></a>gerileme `std::pair::operator=`
 
-`std::pair`, [LWG 2729 ' de (std::p AIR:: operator = "; üzerinde SFINAE eksik](https://cplusplus.github.io/LWG/issue2729)) bir gerileme düzeltildi. Artık `std::pair` ' a dönüştürülebilir türleri yeniden kabul eder.
+`std::pair`, [LWG 2729 ' de (std::p AIR:: operator = "; üzerinde SFINAE eksik](https://cplusplus.github.io/LWG/issue2729)) bir gerileme düzeltildi. Artık `std::pair` dönüştürülebilir türleri yeniden kabul eder.
 
 ### <a name="non-deduced-contexts-for-add_const_t"></a>`add_const_t` için çıkarılamayan bağlamlar
 
@@ -834,7 +1073,7 @@ Toplama, Kullanıcı tarafından sağlanmayan bir Oluşturucu olmayan, özel vey
 
 ### <a name="generalized-range-based-for-loops"></a>For döngüleri için genelleştirilmiş Aralık tabanlı
 
-Aralık tabanlı for döngüleri artık `begin()` ve `end()` ' in aynı türdeki nesneleri döndürmesini gerektirmez. Bu değişiklik `end()`, [Range-v3](https://github.com/ericniebler/range-v3) içindeki aralıklar tarafından kullanılan bir Sentinel, ancak tam olarak yayımlanmış aralıklar teknik belirtimindeki bir Sentinel döndürmesini sağlar. Daha fazla bilgi için bkz. [Aralık tabanlı for döngüsünü Genelleştirme](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0184r0.html).
+Aralık tabanlı for döngüleri artık `begin()` ve `end()` aynı türdeki nesneleri döndürmesini gerektirmez. Bu değişiklik `end()`, [Range-v3](https://github.com/ericniebler/range-v3) içindeki aralıklar tarafından kullanılan bir Sentinel, ancak tam olarak yayımlanmış aralıklar teknik belirtimindeki bir Sentinel döndürmesini sağlar. Daha fazla bilgi için bkz. [Aralık tabanlı for döngüsünü Genelleştirme](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0184r0.html).
 
 ## <a name="improvements_153"></a>15,3 sürümündeki uyumluluk geliştirmeleri
 
@@ -860,7 +1099,7 @@ Yeni öznitelik bir varlık kullanılmazsa susturces uyarılarını `[[maybe_unu
 
 ### <a name="structured-bindings"></a>Yapılandırılmış bağlamalar
 
-Tek bir bildirimde, bir değer bir dizi, `std::tuple` veya `std::pair` olduğunda ya da tüm ortak statik olmayan veri üyelerine sahip bir değeri depolamak için tek bir bildirimde mümkündür. Daha fazla bilgi için, bkz. [yapılandırılmış bağlamalar](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0144r0.pdf) ve [bir işlevden birden çok değer döndürme](../cpp/functions-cpp.md#multi_val).
+Tek bir bildirimde bir değeri, bileşenleri için bağımsız adlarla, değer bir dizi, bir `std::tuple` veya `std::pair`veya tüm ortak statik olmayan veri üyelerine sahip olacak şekilde depolamak için de mümkündür. Daha fazla bilgi için, bkz. [yapılandırılmış bağlamalar](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0144r0.pdf) ve [bir işlevden birden çok değer döndürme](../cpp/functions-cpp.md#multi_val).
 
 ### <a name="construction-rules-for-enum-class-values"></a>**Enum sınıfı** değerleri için oluşturma kuralları
 
@@ -888,7 +1127,7 @@ Visual Studio 'nun önceki sürümlerinde derleyici, değişken **extern**olarak
 
 ### <a name="removing-dynamic-exception-specifications"></a>Dinamik özel durum belirtimleri kaldırılıyor
 
-[P0003R5](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0003r5.html) Dinamik özel durum belirtimleri C++ 11 ' de kullanımdan kaldırılmıştır. Özellik C++ 17 ' den kaldırılmıştır, ancak kullanım dışı bırakılmış `throw()` belirtimi kesinlikle `noexcept(true)` için bir diğer ad olarak tutulur. Daha fazla bilgi için bkz. [dinamik özel durum belirtimi kaldırma ve noexcept](#noexcept_removal).
+[P0003R5](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0003r5.html) Dinamik özel durum belirtimleri C++ 11 ' de kullanımdan kaldırılmıştır. Özellik C++ 17 ' den kaldırılmıştır, ancak artık kullanım dışı `throw()` belirtimi, `noexcept(true)`için tamamen bir diğer ad olarak tutulur. Daha fazla bilgi için bkz. [dinamik özel durum belirtimi kaldırma ve noexcept](#noexcept_removal).
 
 ### `not_fn()`
 
@@ -896,11 +1135,11 @@ Visual Studio 'nun önceki sürümlerinde derleyici, değişken **extern**olarak
 
 ### <a name="rewording-enable_shared_from_this"></a>Reifade `enable_shared_from_this`
 
-[P0033R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0033r1.html) `enable_shared_from_this`, c++ 11 ' de eklenmiştir. C++ 17 standardı, belirli köşe durumlarını daha iyi işlemek için belirtimi güncelleştirir. May
+[P0033R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0033r1.html) `enable_shared_from_this`, c++ 11 ' de eklenmiştir. C++ 17 standardı, belirli köşe durumlarını daha iyi işlemek için belirtimi güncelleştirir. [14]
 
 ### <a name="splicing-maps-and-sets"></a>Haritalar ve kümeler ile ayarlama
 
-[P0083R3](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0083r3.pdf) Bu özellik, daha sonra değiştirilebilecek ve aynı kapsayıcıya veya aynı düğüm türünü kullanan farklı bir kapsayıcıya eklenebilen ilişkilendirilebilir kapsayıcılardan (diğer bir deyişle, `map`, `set`, `unordered_map`, `unordered_set`) düğümlerin ayıklanmasını mümkün hale gelir. (Yaygın kullanım örneği, bir `std::map` ' dan bir düğüm ayıklamak, anahtarı değiştirmek ve yeniden eklemek için kullanılır.)
+[P0083R3](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0083r3.pdf) Bu özellik, daha sonra değiştirilebilecek ve aynı kapsayıcıya veya aynı düğüm türünü kullanan farklı bir kapsayıcıya eklenebilen ilişkilendirilebilir kapsayıcılardan (diğer bir deyişle, `map`, `set`, `unordered_map`, `unordered_set`) düğümlerin ayıklanmasını mümkün hale gelir. (Yaygın kullanım örneği, bir `std::map`bir düğümü ayıklamaya, anahtarı değiştirmenize ve yeniden ekleyebiliyor.)
 
 ### <a name="deprecating-vestigial-library-parts"></a>Kalıntı kitaplık parçalarını kullanımdan kaldırma
 
@@ -908,7 +1147,7 @@ Visual Studio 'nun önceki sürümlerinde derleyici, değişken **extern**olarak
 
 ### <a name="removing-allocator-support-in-stdfunction"></a>`std::function` ayırıcı desteği kaldırılıyor
 
-[P0302R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0302r1.html) C++ 17 ' den önce, `std::function` sınıf şablonuna ayırıcı bağımsız değişkeni alan birkaç Oluşturucu vardı. Bununla birlikte, bu bağlamdaki ayırıcıların kullanımı sorunlu ve semantik anlaşılır değildi. Sorun bu sorundan kaldırılmıştır.
+[P0302R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0302r1.html) C++ 17 ' den önce, sınıf şablonu `std::function` ayırıcı bağımsız değişkeni alan çeşitli oluşturuculara sahipti. Bununla birlikte, bu bağlamdaki ayırıcıların kullanımı sorunlu ve semantik anlaşılır değildi. Sorun bu sorundan kaldırılmıştır.
 
 ### <a name="fixes-for-not_fn"></a>`not_fn()` düzeltmeleri
 
@@ -916,11 +1155,11 @@ Visual Studio 'nun önceki sürümlerinde derleyici, değişken **extern**olarak
 
 ### <a name="shared_ptrt-shared_ptrtn"></a>`shared_ptr<T[]>`, `shared_ptr<T[N]>`
 
-[P0414R2](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0414r2.html) Kitaplık temellerinde C++ 17 ' ye kadar değişiklik birleştirme `shared_ptr`. May
+[P0414R2](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0414r2.html) Kitaplık temellerinde C++ 17 ' ye kadar değişiklik birleştirme `shared_ptr`. [14]
 
 ### <a name="fixing-shared_ptr-for-arrays"></a>Diziler için `shared_ptr` Düzeltme
 
-[P0497R0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0497r0.html) Diziler için shared_ptr desteğini düzeltir. May
+[P0497R0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0497r0.html) Diziler için shared_ptr desteğine yönelik düzeltmeler. [14]
 
 ### <a name="clarifying-insert_return_type"></a>`insert_return_type` açıklığa kavuşturan
 
@@ -936,7 +1175,7 @@ C++ Standart ek D, `shared_ptr::unique()`, `<codecvt>`ve `namespace std::tr1`dah
 
 `<experimental/filesystem>` `std::tr2::sys` ad alanı artık **/std: c++ 14** ' in altında varsayılan olarak kullanımdan kaldırma uyarısı yayar ve varsayılan olarak **/std: c++ 17** altında kaldırılır.
 
-Standart olmayan bir uzantıyı önleyerek `<iostream>` ' da geliştirilmiş uyumluluk (sınıf içi açık uzmanlık).
+Standart olmayan bir uzantıyı önleyerek `<iostream>` gelişmiş uyumluluk (sınıf içi açık uzmanlık).
 
 Standart kitaplık artık değişken şablonları dahili olarak kullanmaktadır.
 
@@ -946,7 +1185,7 @@ Standart Kitaplık, tür sisteminde **noexcept** ekleme ve dinamik özel durum b
 
 ### <a name="c17-library-fundamentals-v1"></a>C++ 17 kitaplık temelleri v1
 
-[P0220R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0220r1.html) c++ 17 Için kitaplık temelleri teknik belirtimini standart olarak içerir. Deneysel/kayıt > \<, deneysel/isteğe bağlı >, \<deneysel/işlevsel >, \<deneysel/işlevsel > \<, \<deneysel/string_view >, \<deneysel/bellek > @no__ t_6_ deneysel/memory_resource > ve deneysel/algoritma > \<.
+[P0220R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0220r1.html) c++ 17 Için kitaplık temelleri teknik belirtimini standart olarak içerir. Deneysel/tanımlama > \<, deneysel/isteğe bağlı >, \<deneysel/işlevsel >, \<deneysel/any >, \<deneysel/string_view >, \<deneysel/bellek >, \<deneysel/memory_resource > ve \<deneysel/algoritma > \<.
 
 ### <a name="c17-improving-class-template-argument-deduction-for-the-standard-library"></a>C++ 17: standart kitaplık için sınıf şablonu bağımsız değişken kesintiyi geliştirme
 
@@ -1022,7 +1261,7 @@ Derived d2 {}; // OK in C++14: Calls Derived::Derived()
                // which can call Base ctor.
 ```
 
-C++ 17 ' de `Derived` artık toplam bir tür olarak değerlendirilir. Bu, özel varsayılan oluşturucu aracılığıyla `Base` ' nın başlatılması, genişletilmiş toplama başlatma kuralının bir parçası olarak doğrudan gerçekleşmesidir. Daha önce, `Base` özel Oluşturucusu `Derived` Oluşturucusu aracılığıyla çağırılır ve arkadaş bildirimi nedeniyle başarılı oldu.
+C++ 17 ' de `Derived` artık toplam bir tür olarak kabul edilir. Bu, özel varsayılan oluşturucu aracılığıyla `Base` başlatmanın doğrudan genişletilmiş toplama başlatma kuralının bir parçası olarak meydana geldiğini gösterir. Daha önce, `Base` özel Oluşturucu `Derived` Oluşturucu aracılığıyla çağırılır ve arkadaş bildirimi nedeniyle başarılı oldu.
 
 Aşağıdaki örnekte, **/std: c++ 17** modundaki Visual Studio sürüm 15,7 ' de c++ 17 davranışı gösterilmektedir:
 
@@ -1060,7 +1299,7 @@ auto v2 = constant<true>;   // v2 == true, decltype(v2) is bool
 auto v3 = constant<'a'>;    // v3 == 'a', decltype(v3) is char
 ```
 
-Bu yeni özelliğin bir etkisi geçerli C++ 14 kodunun geçerli olmaması veya farklı anlambilime sahip olması olabilir. Örneğin, daha önce geçersiz olan bazı aşırı yüklemeler artık geçerlidir. Aşağıdaki örnek, `example(p)` ' a yapılan çağrı `example(void*);` ' e bağlandığı için derlenen C++ 14 kodunu gösterir. Visual Studio 2017 sürüm 15,7 ' de, **/std: c++ 17** modunda, `example` işlev şablonu en iyi eşleşmedir.
+Bu yeni özelliğin bir etkisi geçerli C++ 14 kodunun geçerli olmaması veya farklı anlambilime sahip olması olabilir. Örneğin, daha önce geçersiz olan bazı aşırı yüklemeler artık geçerlidir. Aşağıdaki örnekte, `example(p)` çağrısı `example(void*);`bağlandığı için derlenen C++ 14 kodu gösterilmektedir. Visual Studio 2017 sürüm 15,7 ' de, **/std: c++ 17** modunda, `example` işlevi şablonu en iyi eşleşmedir.
 
 ```cpp
 template <int N> struct A;
@@ -1102,9 +1341,9 @@ void sample(A<0> *p)
 
 ### <a name="c17-hypotx-y-z"></a>C++ 17: `hypot(x, y, z)`
 
-[P0030R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0030r1.pdf) **Kayan**, **çift**ve **uzun çift**türleri için `std::hypot` ' e üç yeni aşırı yükleme ekler ve bunların her biri üç giriş parametresine sahiptir.
+[P0030R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0030r1.pdf) Her biri üç giriş parametresine sahip olan **float**, **Double**ve **Long Double**türleri için `std::hypot`üç yeni aşırı yükleme ekler.
 
-### <a name="c17-filesystem"></a>C++ 17: \<filesystem >
+### <a name="c17-filesystem"></a>C++ 17: \<dosya sistemi >
 
 [P0218R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0218r1.html) Birkaç ifade değişikliği ile dosya sistemini standart olarak benimseme.
 
@@ -1272,7 +1511,7 @@ constexpr bool f(const array<1> &arr)
 }
 ```
 
-Hatayı düzeltmek için, `array::size()` işlevini **constexpr** olarak bildirin ya da **constexpr** niteleyicisi `f` ' ten kaldırın.
+Hatayı düzeltmek için `array::size()` işlevini **constexpr** olarak bildirin veya `f`**constexpr** niteleyicisi kaldırın.
 
 ### <a name="class-types-passed-to-variadic-functions"></a>Değişken bağımsız değişken işlevlere geçirilen sınıf türleri
 
@@ -1341,7 +1580,7 @@ struct S
 int i = (const S)0; // error C2440
 ```
 
-Hatayı düzeltmek için `operator int()` ' ı **const**olarak bildirin.
+Hatayı düzeltmek için `operator int()` **const**olarak bildirin.
 
 ### <a name="access-checking-on-qualified-names-in-templates"></a>Şablonlarda nitelikli adlar üzerinde erişim denetimi
 
@@ -1499,7 +1738,7 @@ void g()
 }
 ```
 
-Hatayı onarmak için, `i` ' ı **int**olarak bildirin.
+Hatayı onarmak için `i` **int**olarak bildirin.
 
 ### <a name="pre-condition-checks-for-type-traits"></a>Tür nitelikleri için koşul öncesi denetimler
 
@@ -1515,9 +1754,9 @@ static_assert(__is_convertible_to(E, E), "fail"); // C2139 in 15.3
 
 ### <a name="new-compiler-warning-and-runtime-checks-on-native-to-managed-marshaling"></a>Yeni derleyici uyarısı ve çalışma zamanı, yerel-yönetilen sıralamaya göre denetler
 
-Yönetilen işlevlerden yerel işlevlere çağırma sıralama gerektirir. CLR sıralama yapar, ancak semantiğini anlamıyor C++ . Yerel bir nesneyi değere göre geçirirseniz, CLR nesnenin kopya oluşturucusunu çağırır ya da çalışma zamanında tanımsız davranışlara neden olabilecek `BitBlt` kullanır.
+Yönetilen işlevlerden yerel işlevlere çağırma sıralama gerektirir. CLR sıralama yapar, ancak semantiğini anlamıyor C++ . Bir yerel nesneyi değere göre geçirirseniz, CLR nesnenin kopya oluşturucusunu çağırır veya `BitBlt`kullanır ve bu da çalışma zamanında tanımsız davranışlara neden olabilir.
 
-Artık derleyici, silinen kopya ctor ile yerel bir nesnenin değere göre yerel ve yönetilen sınır arasında geçtiğini bildiren bir uyarı yayar. Derleyicinin derleme zamanında tanımadığı bu durumlarda, hatalı oluşturulmuş bir sıralama gerçekleştiğinde programın `std::terminate` ' ı çağırması için bir çalışma zamanı denetimi çıkarır. Visual Studio 2017 sürüm 15,3 ' de, aşağıdaki kod "' A" uyarı C4606 oluşturur: yerel ve yönetilen sınır içindeki değere göre bağımsız değişken geçirme geçerli bir kopya Oluşturucu gerektirir. Aksi takdirde, çalışma zamanı davranışı tanımsızdır.
+Artık derleyici, silinen kopya ctor ile yerel bir nesnenin değere göre yerel ve yönetilen sınır arasında geçtiğini bildiren bir uyarı yayar. Derleyicinin derleme zamanında tanımadığı bu durumlarda, hatalı oluşturulmuş bir sıralama gerçekleştiğinde programın hemen `std::terminate` çağırması için bir çalışma zamanı denetimi çıkarır. Visual Studio 2017 sürüm 15,3 ' de, aşağıdaki kod "' A" uyarı C4606 oluşturur: yerel ve yönetilen sınır içindeki değere göre bağımsız değişken geçirme geçerli bir kopya Oluşturucu gerektirir. Aksi takdirde, çalışma zamanı davranışı tanımsızdır.
 
 ```cpp
 class A
@@ -1553,7 +1792,7 @@ Hatayı onarmak için `#pragma managed` yönergesini kaldırarak çağıranın y
 
 ### <a name="experimental-api-warning-for-winrt"></a>WinRT için deneysel API uyarısı
 
-Deneme ve geri bildirim için yayımlanan WinRT API 'Leri `Windows.Foundation.Metadata.ExperimentalAttribute` ile tasarlanmaktadır. Visual Studio 2017 sürüm 15,3 ' de, derleyici özniteliğiyle karşılaştığında uyarı C4698 oluşturur. Önceki Windows SDK sürümlerinden birkaç API zaten özniteliğiyle birlikte tasarlanmıştır ve bu API 'lere yapılan çağrılar artık bu derleyici uyarısını tetikler. Daha yeni Windows SDK 'Ları, tüm sevk edilen türlerden kaldırılan özniteliğe sahiptir, ancak eski bir SDK kullanıyorsanız, sevk edilen türlere yapılan tüm çağrılar için bu uyarıları bastırın.
+Deneme ve geri bildirim için yayımlanan WinRT API 'Leri `Windows.Foundation.Metadata.ExperimentalAttribute`ile donatılmış. Visual Studio 2017 sürüm 15,3 ' de, derleyici özniteliğiyle karşılaştığında uyarı C4698 oluşturur. Önceki Windows SDK sürümlerinden birkaç API zaten özniteliğiyle birlikte tasarlanmıştır ve bu API 'lere yapılan çağrılar artık bu derleyici uyarısını tetikler. Daha yeni Windows SDK 'Ları, tüm sevk edilen türlerden kaldırılan özniteliğe sahiptir, ancak eski bir SDK kullanıyorsanız, sevk edilen türlere yapılan tüm çağrılar için bu uyarıları bastırın.
 
 Aşağıdaki kod C4698 uyarı üretir: "' Windows:: Storage:: IApplicationDataStatics2:: GetForUserAsync ' yalnızca değerlendirme amaçlıdır ve gelecekteki güncelleştirmelerde değiştirilebilir veya kaldırılabilir":
 
@@ -1648,7 +1887,7 @@ struct A {
 constexpr auto off = offsetof(A, arr[2]);
 ```
 
-Kodu onarmak için, uyarıyı bir pragma ile devre dışı bırakın ya da kodu kullanılmaz `offsetof` olarak değiştirin:
+Kodu onarmak için, uyarıyı bir pragma ile devre dışı bırakın ya da kodu kullanmayın `offsetof`değiştirin:
 
 ```cpp
 #pragma warning(push)
@@ -1659,7 +1898,7 @@ constexpr auto off = offsetof(A, arr[2]);
 
 ### <a name="using-offsetof-with-static-data-member-or-member-function"></a>Statik veri üyesi veya üye işlevi ile `offsetof` kullanma
 
-Visual Studio 2017 sürüm 15,3 ' de `offsetof(T, m)` ' ı kullanarak bir statik veri üyesine veya bir üye *işlevine başvurur ve* hata oluşur. Aşağıdaki kod, "Error C4597: tanımsız davranış: ' example '" ve "Error C4597: tanımsız davranış: ' Sample ' ' örneğine uygulanmış olan ' örnek ' üye işlevine yönelik OffsetOf uygulandı:
+Visual Studio 2017 sürüm 15,3 ' de, bir statik veri üyesine veya üye *işleve başvurduğu `offsetof(T, m)`* kullanmak bir hatayla sonuçlanır. Aşağıdaki kod, "Error C4597: tanımsız davranış: ' example '" ve "Error C4597: tanımsız davranış: ' Sample ' ' örneğine uygulanmış olan ' örnek ' üye işlevine yönelik OffsetOf uygulandı:
 
 ```cpp
 #include <cstddef>
@@ -1677,13 +1916,13 @@ Bu kod hatalı biçimlendirilmiş ve çalışma zamanında kilitlenmesine neden 
 
 ### <a name="declspec"></a>`__declspec` özniteliklerde yeni uyarı
 
-Visual Studio 2017 sürüm 15,3 ' de, `extern "C"` bağlantı belirtiminden önce `__declspec(...)` uygulanmışsa derleyici artık öznitelikleri yok sayar. Daha önce derleyici, çalışma zamanı etkilerine sahip olabilecek özniteliğini yoksayacaktır. **/Duvar** ve **/WX** seçenekleri ayarlandığında, aşağıdaki kod "uyarı C4768: bağlantı belirtiminin önüne alınmadan önce __declspec öznitelikleri yok sayılır" olarak oluşturulur.
+Visual Studio 2017 sürüm 15,3 ' de, `extern "C"` bağlantı belirtiminden önce `__declspec(...)` uygulanmışsa derleyici artık öznitelikleri yok sayar. Daha önce derleyici, çalışma zamanı etkilerine sahip olabilecek özniteliğini yoksayacaktır. **/Duvar** ve **/WX** seçenekleri ayarlandığında, aşağıdaki kod "uyarı C4768: __declspec öznitelikleri bağlantı belirtiminin yoksayılmadan önce":
 
 ```cpp
 __declspec(noinline) extern "C" HRESULT __stdcall //C4768
 ```
 
-Uyarıyı onarmak için önce `extern "C"` ' ı koyun:
+Uyarıyı onarmak için önce `extern "C"` yerleştirin:
 
 ```cpp
 extern "C" __declspec(noinline) HRESULT __stdcall
@@ -1722,7 +1961,7 @@ Visual Studio 2017 RTW sürümünde, C++ bir **const** değişkeni başlatılmam
 const int Value; //C4132
 ```
 
-Hatayı onarmak için `Value` ' a bir değer atayın.
+Hatayı düzeltemedi `Value`için bir değer atayın.
 
 ### <a name="empty-declarations"></a>Boş bildirimler
 
@@ -1745,7 +1984,7 @@ Uyarı **/WV: 18** altında tutulur ve uyarı düzeyi W2 altında varsayılan ol
 
 ### <a name="stdis_convertible-for-array-types"></a>dizi türleri için `std::is_convertible`
 
-Derleyicinin önceki sürümleri, dizi türleri için [std:: is_convertible](../standard-library/is-convertible-class.md) için yanlış sonuçlar verdi. Bu gerekli kitaplık yazarları, Microsoft C++ derleyicisine nitelik `std::is_convertible<...>` türü kullanılırken özel durum sağlar. Aşağıdaki örnekte, statik onaylar Visual Studio 'nun önceki sürümlerinde geçer ancak Visual Studio 2017 sürüm 15,3 ' de başarısız olur:
+Derleyicinin önceki sürümleri, dizi türleri için [std:: is_convertible](../standard-library/is-convertible-class.md) hatalı sonuçlar verdi. Bu gerekli kitaplık yazarları, Microsoft C++ derleyicisine nitelik `std::is_convertible<...>` türü kullanılırken özel durum sağlar. Aşağıdaki örnekte, statik onaylar Visual Studio 'nun önceki sürümlerinde geçer ancak Visual Studio 2017 sürüm 15,3 ' de başarısız olur:
 
 ```cpp
 #include <type_traits>
@@ -1815,7 +2054,7 @@ void f()
 }
 ```
 
-Kodu onarmak için, `::f()` ' i çağırmayı amaçlıyorsanız `N::f` ifadesini kullanarak kaldırın.
+Kodu onarmak için, `::f()`çağırmayı amaçlıyorsanız, using `N::f` ifadesini kaldırın.
 
 ### <a name="c2660-local-function-declarations-and-argument-dependent-lookup"></a>C2660: yerel işlev bildirimleri ve bağımsız değişkene bağlı arama
 
@@ -2078,7 +2317,7 @@ __declspec(noinline) extern "C" HRESULT __stdcall //C4768
 warning C4768: __declspec attributes before linkage specification are ignored
 ```
 
-Hatayı onarmak için, bağlantı belirtimini __declspec özniteliğiyle önce yerleştirin:
+Hatayı onarmak için, bağlantı belirtimini __declspec özniteliği önüne yerleştirin:
 
 ```cpp
 extern "C" __declspec(noinline) HRESULT __stdcall
@@ -2157,7 +2396,7 @@ static_assert(std::is_convertible<D *, B *>::value, "fail");
 
 ### <a name="noexcept_removal"></a>Dinamik özel durum belirtimi kaldırma ve **noexcept**
 
-C++ 17 ' de `throw()` **noexcept**için bir diğer addır, `throw(<type list>)` ve `throw(...)` kaldırılır ve belirli türler **noexcept**içerebilir. Bu değişiklik, C++ 14 veya daha önceki bir sürümüyle uyumlu kodla kaynak uyumluluk sorunlarına neden olabilir. **/Zc: noexceptTypes-** Switch, genel olarak c++ 17 modu kullanılırken **noexcept** 'nin c++ 14 sürümüne dönmek için kullanılabilir. Tüm `throw()` kodunuzu aynı anda yeniden yazmak zorunda kalmadan, kaynak kodunuzu C++ 17 ' ye uyacak şekilde güncelleştirmenize olanak sağlar.
+C++ 17 ' de `throw()` **noexcept**için bir diğer addır, `throw(<type list>)` ve `throw(...)` kaldırılır ve belirli türler **noexcept**içerebilir. Bu değişiklik, C++ 14 veya daha önceki bir sürümüyle uyumlu kodla kaynak uyumluluk sorunlarına neden olabilir. **/Zc: noexceptTypes-** Switch, genel olarak c++ 17 modu kullanılırken **noexcept** 'nin c++ 14 sürümüne dönmek için kullanılabilir. Bu, tüm `throw()` kodunuzu aynı anda yeniden yazmak zorunda kalmadan, kaynak kodunuzu C++ 17 ' ye uyacak şekilde güncelleştirmenize olanak sağlar.
 
 Derleyici Ayrıca C++ 17 modundaki bildirimlerde veya New Warning C5043 ile [/Permissive-](../build/reference/permissive-standards-conformance.md) ile daha fazla uyuşmayan özel durum belirtimini de tanılar.
 
@@ -2230,7 +2469,7 @@ int main()
 }
 ```
 
-Bu kodu düzeltmek için, varsayılan olarak __declspec (nothrow) işlevini kaldırın veya `= default` kaldırın ve gerekli özel durum işlemeyle birlikte işlev için bir tanım sağlayın:
+Bu kodu düzeltmek için, varsayılan işlevden __declspec (nothrow) ' ı kaldırın ya da `= default` kaldırın ve gerekli özel durum işlemeyle birlikte işlev için bir tanım sağlayın:
 
 ```cpp
 struct A {
@@ -2254,7 +2493,7 @@ int main()
 
 Tür sisteminde **noexcept** ile, belirli "çağrılabilir" türlerin eşleşmesi için kısmi özelleşmeler,-noexcept işlevleri için eksik kısmi bir özelleştirme nedeniyle birincil şablonu derleyip seçemeyebilir.
 
-Bu gibi durumlarda, **noexcept** işlev işaretçilerini ve **noexcept** işaretçilerini üye işlevlerine işlemek için ek kısmi specialler eklemeniz gerekebilir. Bu aşırı yüklemeler yalnızca **/std: c++ 17** modunda geçerlidir. C++ 14 ile geriye dönük uyumluluk korunuyorsa ve başkalarının kullandığı kodu yazıyorsanız, bu yeni yüklerini `#ifdef` yönergelerinin içinde korumalısınız. Bağımsız bir modülde çalışıyorsanız `#ifdef` koruyucuları kullanmak yerine **/Zc: noexceptTypes-** Switch ile derlemeniz yeterlidir.
+Bu gibi durumlarda, **noexcept** işlev işaretçilerini ve **noexcept** işaretçilerini üye işlevlerine işlemek için ek kısmi specialler eklemeniz gerekebilir. Bu aşırı yüklemeler yalnızca **/std: c++ 17** modunda geçerlidir. C++ 14 ile geriye dönük uyumluluk korunuyorsa ve başkalarının tükettiği bir kod yazıyorsanız, bu yeni yüklerini `#ifdef` yönergeleri içinde korumalısınız. Bağımsız bir modülde çalışıyorsanız, `#ifdef` koruyucuları kullanmak yerine, **/Zc: noexceptTypes-** Switch ile yalnızca derleme yapabilirsiniz.
 
 Aşağıdaki kod **/std: c++ 14** altında derlenir, ancak **/std: c++ 17** altında "Error C2027: tanımsız tür kullanımı ' A\<t > '" ile başarısız olur:
 
@@ -2281,7 +2520,7 @@ int main()
 }
 ```
 
-Aşağıdaki kod **/std: c++ 17** altında başarılı olur, çünkü derleyici yeni kısmi özelleşme `A<void (*)() noexcept>` ' i seçer:
+Aşağıdaki kod **/std: c++ 17** altında başarılı olur, çünkü derleyici yeni kısmi özelleşme `A<void (*)() noexcept>`seçer:
 
 ```cpp
 template <typename T> struct A;
@@ -2346,7 +2585,7 @@ void S<T>::f(int) {} // Default argument is used
 
 Bu davranış değişikliği, [sınıf şablonları-P0091R3 Için şablon bağımsız değişken kesintisi](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0091r3.html)için bir önkoşuludur.
 
-Aşağıdaki örnekte, Visual Studio 15,6 ve önceki sürümlerde derleyici `D::type` ' ı birincil Sınıf şablonunda `B<T>::type` olarak çözer.
+Aşağıdaki örnekte, Visual Studio 15,6 ve önceki sürümlerde derleyici, birincil Sınıf şablonunda `B<T>::type` `D::type` çözümleniyor.
 
 ```cpp
 template<typename T>
@@ -2461,11 +2700,11 @@ template <typename T>
 using  X = typename T;
 ```
 
-Hatayı onarmak için ikinci satırı `using  X = T;` olarak değiştirin.
+Hatayı onarmak için ikinci satırı `using  X = T;`değiştirin.
 
 ### <a name="__declspec-on-right-side-of-alias-template-definitions"></a>diğer ad şablonu tanımlarının sağ tarafında `__declspec()`
 
-diğer ad şablonu tanımının sağ tarafında [__declspec](../cpp/declspec.md) 'e artık izin verilmez. Bu kod önceden kabul edildi ancak derleyici tarafından yoksayıldı ve diğer ad kullanıldığında hiçbir zaman kullanımdan kaldırma uyarısı ile sonuçlanmaz.
+diğer ad şablon tanımının sağ tarafında [__declspec](../cpp/declspec.md) artık izin verilmiyor. Bu kod önceden kabul edildi ancak derleyici tarafından yoksayıldı ve diğer ad kullanıldığında hiçbir zaman kullanımdan kaldırma uyarısı ile sonuçlanmaz.
 
 Standart C++ öznitelik [\[kullanım dışı \[\]\]](../cpp/attributes.md) yerine kullanılabilir ve Visual Studio 2017 sürüm 15,6 ' de vardır. Aşağıdaki kod şu anda C2760 *sözdizimi hatası veriyor: beklenmeyen belirteç ' __declspec ', beklenen ' tür belirleyici '* :
 
@@ -2485,7 +2724,7 @@ using  X [[deprecated("msg")]] = T;
 
 İki aşamalı ad arama, şablon gövdelerinde kullanılan bağımlı olmayan adların, tanım zamanında şablona görünür olması gerekir. Daha önce, Microsoft C++ derleyicisi, bulunmayan bir adı örnekleme zamanına kadar aranmaz olarak bırakır. Şimdi, bağımlı olmayan adların şablon gövdesine bağlı olmasını gerektirir.
 
-Bu şekilde bildirimde bulunan tek bir yöntem, bağımlı temel sınıflara aramalardır. Daha önce, derleyici, bağımlı taban sınıflarında tanımlanan adların kullanılmasına izin verdiklerinden, tüm türler çözümlendiğinde örnekleme sırasında aranabilir. Artık bu kod bir hata olarak kabul edilir. Bu durumlarda, değişkeni temel sınıf türü ile niteleyerek veya bir `this->` işaretçisi ekleyerek bağımlı hale getirerek, örneği örnekleme sırasında ayarlamaya zorlayabilirsiniz.
+Bu şekilde bildirimde bulunan tek bir yöntem, bağımlı temel sınıflara aramalardır. Daha önce, derleyici, bağımlı taban sınıflarında tanımlanan adların kullanılmasına izin verdiklerinden, tüm türler çözümlendiğinde örnekleme sırasında aranabilir. Artık bu kod bir hata olarak kabul edilir. Bu durumlarda, değişkeni temel sınıf türü ile niteleyerek veya bir `this->` işaretçisi ekleyerek bağımlı hale getirerek, örneği örnekleme sırasında girmeye zorlayabilirsiniz.
 
 [/Permissive-](../build/reference/permissive-standards-conformance.md) modunda şu kod şu anda C3861: *' base_value ': tanımlayıcı bulunamadı*:
 
@@ -2505,13 +2744,13 @@ struct S : Base<T> {
 
 Hatayı onarmak için `return` ifadesini `return this->base_value;`olarak değiştirin.
 
-**Note:** Yükseltme Python kitaplığı 'nda, [unwind_type. hpp](https://github.com/boostorg/python/blame/develop/include/boost/python/detail/unwind_type.hpp)içindeki bir şablon iletme BILDIRIMI için MSVC 'e özgü bir geçici çözüm olan çok uzun süredir. Visual Studio 2017 sürüm 15,8 (_MSC_VER = 1915) ile başlayan [/Permissive-](../build/reference/permissive-standards-conformance.md) modu ' nun altında, MSVC derleyicisi bağımsız değişkene bağımlı ad araması (adl) ve diğer derleyiciler ile tutarlıdır ve bu geçici çözüm koruma gereksiz hale getirir. Hata *C3861: ' unwind_type ': tanımlayıcı bulunamadı*, üst bilgi dosyasını güncelleştirmek için yükseltme deposunda [PR 229](https://github.com/boostorg/python/pull/229) ' a bakın. [Vcpkg](../build/vcpkg.md) Boost paketini zaten geliştirdik. bu nedenle, Boost kaynaklarınızı vcpkg 'dan edinmeniz veya yükseltmeniz durumunda düzeltme ekini ayrı olarak uygulamanız gerekmez.
+**Note:** Yükseltme Python kitaplığı 'nda [unwind_type. hpp](https://github.com/boostorg/python/blame/develop/include/boost/python/detail/unwind_type.hpp)içindeki şablon iletme BILDIRIMI için MSVC 'e özgü bir geçici çözüm daha vardır. [/Permissive-](../build/reference/permissive-standards-conformance.md) modunun altında, Visual Studio 2017 sürüm 15,8 ' den (_MSC_VER = 1915) başlayarak, MSVC derleyicisi bağımsız değişkene bağımlı ad araması (adl) ve diğer derleyicilerle tutarlıdır, bu geçici çözüm koruma gereksiz hale getirir. Hata *C3861: ' unwind_type ': tanımlayıcı bulunamadı*, üst bilgi dosyasını güncelleştirmek için yükseltme deposunda [PR 229](https://github.com/boostorg/python/pull/229) ' a bakın. [Vcpkg](../build/vcpkg.md) Boost paketini zaten geliştirdik. bu nedenle, Boost kaynaklarınızı vcpkg 'dan edinmeniz veya yükseltmeniz durumunda düzeltme ekini ayrı olarak uygulamanız gerekmez.
 
 ### <a name="forward-declarations-and-definitions-in-namespace-std"></a>ad alanındaki iletme bildirimleri ve tanımları `std`
 
-Standart C++ , bir kullanıcının `std` ad alanına ileri bildirim veya tanım eklemesine izin vermez. Ad alanı `std` veya ad uzayı `std` içindeki bir ad alanına bildirim veya tanım ekleme artık tanımsız davranışa neden olur.
+Standart C++ , bir kullanıcının ad alanına iletme bildirimleri veya tanımları eklemesine izin vermez `std`. Ad alanı `std` veya ad uzayı `std` içindeki bir ad alanına bildirim veya tanım ekleme artık tanımsız davranışa neden olur.
 
-Daha sonra, Microsoft, bazı standart kitaplık türlerinin tanımlandığı konumu taşıyacaktır. Bu değişiklik, `std` ad alanına iletme bildirimleri ekleyen mevcut kodu keser. Yeni bir uyarı olan C4643, bu tür kaynak sorunları belirlemenize yardımcı olur. Bu uyarı, **/Default** modunda etkinleştirilir ve varsayılan olarak kapalıdır. **/Duvarveya** **/WX**ile derlenen programları etkileyecektir.
+Daha sonra, Microsoft, bazı standart kitaplık türlerinin tanımlandığı konumu taşıyacaktır. Bu değişiklik, ad alanına iletme bildirimleri ekleyen mevcut kodu keser `std`. Yeni bir uyarı olan C4643, bu tür kaynak sorunları belirlemenize yardımcı olur. Bu uyarı, **/Default** modunda etkinleştirilir ve varsayılan olarak kapalıdır. **/Duvarveya** **/WX**ile derlenen programları etkileyecektir.
 
 Aşağıdaki kod artık C4643 ' i yükseltir: *std ad alanındaki ileri bildirim ' vector ' öğesine C++ standart tarafından izin verilmiyor*.
 
@@ -2554,9 +2793,9 @@ public:
 
 ### <a name="offsetof-with-constant-expressions"></a>Sabit ifadelerle `offsetof`
 
-[OffsetOf](../c-runtime-library/reference/offsetof-macro.md) , genellikle [reinterpret_cast](../cpp/reinterpret-cast-operator.md)gerektiren bir makro kullanılarak uygulanmıştır. Bu kullanım, sabit bir ifade gerektiren bağlamlarda geçersizdir, ancak Microsoft C++ derleyicisinin geleneksel olarak BT 'ye izin verilir. Standart kitaplığın bir parçası olarak gönderilen `offsetof` makrosu, bir derleyici iç ( **__builtin_offsetof**) kullanır, ancak pek çok kişi makro eli kullanarak kendi `offsetof`tanımlar.
+[OffsetOf](../c-runtime-library/reference/offsetof-macro.md) , geleneksel olarak [reinterpret_cast](../cpp/reinterpret-cast-operator.md)gerektiren bir makro kullanılarak uygulanmıştır. Bu kullanım, sabit bir ifade gerektiren bağlamlarda geçersizdir, ancak Microsoft C++ derleyicisinin geleneksel olarak BT 'ye izin verilir. Standart kitaplığın bir parçası olarak gönderilen `offsetof` makrosu, bir derleyici iç ( **__builtin_offsetof**) kullanır, ancak pek çok kişi makro eli kullanarak kendi `offsetof`tanımlarlar.
 
-Visual Studio 2017 sürüm 15,8 ' de, derleyici bu `reinterpret_cast` işleçlerinin varsayılan modda görünebilen alanı kısıtlar. Bu, kodun standart C++ davranışa uymasını sağlar. [/Permissive-](../build/reference/permissive-standards-conformance.md)altında kısıtlamalar bile daha sıkı bir şekilde yapılır. Sabit ifadeler gerektiren konumlarda `offsetof` ' ın sonucunun kullanılması, *sabit ifadelerde makro tabanlı OffsetOf deseninin bir uyarı C4644 kullanımının standart olmayan bir şekilde kullanılmasına neden olabilir; C++ standart kitaplıkta tanımlı OffsetOf kullanın Bunun yerine* C2975 *geçersiz şablon bağımsız değişkeni; derleme zamanı sabit ifadesi bekleniyor*.
+Visual Studio 2017 sürüm 15,8 ' de, derleyici bu `reinterpret_cast` işleçlerinin varsayılan modda görünebilen alanı kısıtlar. Bu, kodun standart C++ davranışa uymasını sağlar. [/Permissive-](../build/reference/permissive-standards-conformance.md)altında kısıtlamalar bile daha sıkı bir şekilde yapılır. Sabit ifadeler gerektiren konumlarda `offsetof` sonucunun kullanılması, *sabit ifadelerde makro tabanlı OffsetOf deseninin uyarı C4644 kullanımı standart değildir; Bunun yerine C++ standart kitaplıkta* veya C2975 geçersiz şablon bağımsız değişkeni olarak tanımlanan OffsetOf kullanın *, derleme zamanı sabit ifadesi bekleniyor*.
 
 Aşağıdaki kod, **/Default** ve **/std: C++ 17** modlarında C4644 ve [/Permissive-](../build/reference/permissive-standards-conformance.md) modunda C2975 ' i başlatır:
 
@@ -2578,7 +2817,7 @@ int main()
 }
 ```
 
-Hatayı onarmak için \<cstddef > ile tanımlanan `offsetof` kullanın:
+Hatayı onarmak için, \<cstddef > ile tanımlanan `offsetof` kullanın:
 
 ```cpp
 #include <cstddef>
@@ -2636,7 +2875,7 @@ struct X : Base<T>
 };
 ```
 
-Hatayı onarmak için aşağıdaki örnekte gösterildiği gibi `Base<T>::example<int>();` ifadesine **şablon** anahtar sözcüğünü ekleyin:
+Hatayı onarmak için aşağıdaki örnekte gösterildiği gibi, `Base<T>::example<int>();` ifadesine **şablon** anahtar sözcüğünü ekleyin:
 
 ```cpp
 template<typename T> struct Base
@@ -2679,7 +2918,7 @@ struct A
 A<>::from_template_t<A<int>> a;
 ```
 
-Visual Studio 2017 sürüm 15,9 ' de, [/Permissive-](../build/reference/permissive-standards-conformance.md) modda, derleyici C3861: *' from_template ': tanımlayıcı bulunamadı*.
+Visual Studio 2017 sürüm 15,9 ' de, [/Permissive-](../build/reference/permissive-standards-conformance.md) modunda derleyici C3861: *' from_template ': tanımlayıcı bulunamadı*.
 
 Hatayı onarmak için `from_template_t`önce `from_template` bildirin.
 
@@ -2820,7 +3059,7 @@ struct S
 {
     constexpr void f();
 };
- 
+
 template<>
 constexpr void S<int>::f()
 {
@@ -2836,7 +3075,7 @@ note: failure was caused by call of undefined function or one not declared 'cons
 note: see usage of 'g'.
 ```
 
-Hatayı önlemek için, `f()` işlevinin açık örneklemesinin **constexpr** niteleyicisi kaldırın.
+Hatayı önlemek için `f()`işlevin açık örneklemesi olan **constexpr** niteleyicisi kaldırın.
 
 ::: moniker-end
 

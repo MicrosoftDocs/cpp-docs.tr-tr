@@ -12,22 +12,22 @@ helpviewer_keywords:
 - __fortran keyword [C++]
 - calling conventions, obsolete
 ms.assetid: a91fc665-034a-48ce-b6bd-d27125f308a7
-ms.openlocfilehash: 86c75c779158d9f191dd015410cf16c9ce25690d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7f059afe02cbbad77920fd8c4a0e6cb7c958e992
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62245043"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74857365"
 ---
 # <a name="obsolete-calling-conventions"></a>Kullanılmayan Çağırma Kuralları
 
-## <a name="microsoft-specific"></a>Microsoft'a Özgü
+**Microsoft 'a özgü**
 
-**__Pascal**, **__fortran**, ve **__syscall** çağırma kuralları artık desteklenmiyor. Uygun bağlayıcı seçenekleri ve desteklenen çağırma kuralları birini kullanarak işlevlerini taklit edebilir.
+**__Pascal**, **__fortran**ve **__syscall** çağırma kuralları artık desteklenmiyor. Desteklenen çağrı kurallarından birini ve uygun bağlayıcı seçeneklerini kullanarak işlevlerini benzebilirsiniz.
 
-\<Windows.h > artık hedef uygun çağırma kuralının izlendiği WINAPI makrosu destekler. Burada daha önce kullandığınız PASCAL WINAPI kullanın veya **__far \__pascal**.
+\<Windows. h > artık, hedef için uygun çağırma kuralına çeviren WINAPı makrosunu desteklemektedir. Daha önce PASCAL veya **__far \__pascal**kullandığınız WinAPI 'yi kullanın.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

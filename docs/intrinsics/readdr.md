@@ -6,14 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - __readdr intrinsic
 ms.assetid: 061b05da-c85e-4052-b392-106f14bb84f1
-ms.openlocfilehash: 646330ca92af08903485fd4583eb2c217fe3e023
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: fbaf9e761f9f1450ccd12dc378ab6e498aa0df08
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70216678"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74857885"
 ---
 # <a name="__readdr"></a>__readdr
+
+**Microsoft 'a özgü**
 
 Belirtilen hata ayıklama kaydının değerini okur.
 
@@ -26,7 +28,7 @@ unsigned __int64 __readdr(unsigned int DebugRegister); /* x64 */
 
 ### <a name="parameters"></a>Parametreler
 
-*DebugRegister*\
+*Debugregister*\
 'ndaki Hata ayıklama kaydını tanımlayan 0 ile 7 arasında bir sabit.
 
 ## <a name="return-value"></a>Dönüş değeri
@@ -39,7 +41,7 @@ Bu iç bilgiler yalnızca çekirdek modunda kullanılabilir ve yordamlar yalnız
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Alanlarla|Mimari|
+|İç|Mimari|
 |---------------|------------------|
 |`__readdr`|x86, x64|
 
@@ -49,5 +51,5 @@ Bu iç bilgiler yalnızca çekirdek modunda kullanılabilir ve yordamlar yalnız
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)\
+[Derleyici iç](../intrinsics/compiler-intrinsics.md) bilgileri\
 [__readeflags](../intrinsics/readeflags.md)

@@ -8,24 +8,24 @@ f1_keywords:
 helpviewer_keywords:
 - __unaligned keyword [C++]
 ms.assetid: 0cd83aad-1840-47e3-ad33-59bfcbe6375b
-ms.openlocfilehash: 8eb1b93aa55601125600b6c69d9bff3d9ca43aa3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1090a0f3345f749a2afbd80566a9af7b9ea32d53
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62244122"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74857261"
 ---
-# <a name="unaligned"></a>__unaligned
+# <a name="__unaligned"></a>__unaligned
 
-**Microsoft'a özgü**. Bir işaretçiyi bildirdiğinizde **__unaligned** değiştiricisi, derleyici varsayar işaretçinin hizalanmamış veri yöneliktir. Sonuç olarak, platform için uygun kodu hizalanmamış okuma işlemek için oluşturuldu ve işaretçiyle yazar.
+**Microsoft 'a özgü**. **__Unaligned** değiştiricisiyle bir işaretçi bildirdiğinizde, derleyici işaretçinin hizalı olmayan verileri adresleyen olduğunu varsayar. Sonuç olarak, işaretçi üzerinde hizalanmamış okuma ve yazma işlemlerini işlemek için platforma uygun kod oluşturulur.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu değiştirici, işaretçi tarafından ele alınan verilerin hizalamasını açıklar; İşaretçinin hizalandığı varsayılır.
+Bu değiştirici, işaretçinin başvurduğu verilerin hizalamasını açıklar; işaretçinin kendisi hizalandığı varsayılır.
 
-İçin yeterlilikte **__unaligned** anahtar sözcüğü, platform ve ortam tarafından değişir. Veri uygun şekilde işaretlemek için hata sorunları performans cezaları arasında değişen donanım hatalarına neden olabilir. **__Unaligned** değiştiricisi x86 için geçerli değil platform.
+**__Unaligned** anahtar sözcüğü için zorunludur, platforma ve ortama göre değişir. Verileri uygun bir şekilde işaretlemeniz, performans yaptırımlarından donanım hatalarına kadar sorunlara yol açabilir. **__Unaligned** değiştiricisi x86 platformu için geçerli değil.
 
-Önceki sürümlerle uyumluluk için **_unaligned** eşanlamlıdır **__unaligned** sürece derleyici seçeneği [/Za \(dil uzantılarını devre dışı bırak)](../build/reference/za-ze-disable-language-extensions.md) belirtilir.
+Önceki sürümlerle uyumluluk için, [/za \(dil uzantılarını devre dışı bırak](../build/reference/za-ze-disable-language-extensions.md) derleyici seçeneği belirtildiğinde, **_unaligned** **__unaligned** için bir eş anlamlı.
 
 Hizalama hakkında daha fazla bilgi için bkz.
 

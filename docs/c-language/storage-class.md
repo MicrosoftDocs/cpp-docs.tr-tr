@@ -10,48 +10,48 @@ helpviewer_keywords:
 - external linkage, storage-class specifiers
 - static storage class specifiers
 ms.assetid: 39a79ba6-edf5-42b6-8e45-f94227603dd6
-ms.openlocfilehash: d5664634687c689316427c8652865ba9423e24f4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: aa6e977b3aa03b5f08901cfa8b0abe1b4046e72d
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62157928"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74857014"
 ---
 # <a name="storage-class"></a>Depolama Sınıfı
 
-Bir işlev tanımında depolama sınıfı tanımlayıcısı işlev verir `extern` veya **statik** depolama sınıfı.
+Bir işlev tanımındaki depolama sınıfı Belirleyicisi, işleve `extern` veya **statik** depolama sınıfı verir.
 
 ## <a name="syntax"></a>Sözdizimi
 
 *işlev tanımı*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*bildirim tanımlayıcıları*<sub>iyileştirilmiş</sub> *öznitelik-seq*<sub>iyileştirilmiş</sub> *bildirimci* *bildirim listesi*  <sub>iyileştirilmiş</sub> *bileşik deyim*
+&nbsp;&nbsp;&nbsp;&nbsp;*bildirimi-belirticileri*<sub>opt</sub> *özniteliği-seq*<sub>opt</sub> *bildirimci* *bildirimi-List*<sub>opt</sub> *Bileþik-deyimin*
 
-/\* *öznitelik-seq* Microsoft Specific \*/
+/\* *özniteliği-seq* , Microsoft 'a özgü \*/
 
-*bildirim tanımlayıcıları*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*depolama sınıfı tanımlayıcısı* *bildirim tanımlayıcıları*<sub>iyileştirilmiş</sub><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*tür belirticisi* *bildirim tanımlayıcıları*<sub>iyileştirilmiş</sub><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*tür niteleyicisi* *bildirim tanımlayıcıları*<sub>iyileştirilmiş</sub>
+*bildirim-tanımlayıcılar*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*depolama sınıfı Belirleyicisi* *bildirimi-tanımlayıcılar*<sub>kabul</sub><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*tür belirleyicisi* *bildirimi-tanımlayıcılar*<sub>opt</sub><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*tür niteleyicisi* *bildirimi-tanımlayıcılar*<sub>opt</sub>
 
-*depolama sınıfı tanımlayıcısı*: /\* işlev tanımları \*/<br/>
+*depolama sınıfı tanımlayıcı*:/\* Işlev tanımları için \*/<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**extern**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**Statik**
+&nbsp;&nbsp;&nbsp;&nbsp;**statik**
 
-Bir işlev tanımı içermiyorsa bir *depolama sınıfı tanımlayıcısı*, depolama sınıfı varsayılan olarak `extern`. Bir işlevi açıkça `extern` olarak bildirebilirsiniz, ancak bu gerekli değildir.
+Bir işlev tanımı bir *depolama sınıfı belirticisi*içermiyorsa, depolama sınıfı varsayılan olarak `extern`. Bir işlevi açıkça `extern` olarak bildirebilirsiniz, ancak bu gerekli değildir.
 
-Bir işlevin bildirimi içeriyorsa *depolama sınıfı tanımlayıcısı* `extern`, tanımlayıcı tanımlayıcı dosya konumuna sahip tanımlayıcının görünür bildirimiyle aynı bağlantıya sahiptir. Dosya kapsamına sahip görünür bir bildirim yoksa, tanımlayıcının dış bağlantısı vardır. Tanımlayıcının dosya kapsamı ve Hayır varsa *depolama sınıfı tanımlayıcısı*, tanımlayıcının dış bağlantısı vardır. Dış bağlantı, tanımlayıcının her örneğinin aynı nesneyi veya işlevi gösterdiği anlamına gelir. Bkz: [ömür, kapsam, görünürlük ve bağlantı](../c-language/lifetime-scope-visibility-and-linkage.md) bağlantı ve dosya kapsamı hakkında daha fazla bilgi.
+Bir işlevin bildirimi *depolama sınıfı belirleyicisi* `extern`içeriyorsa, tanımlayıcı, dosya kapsamına sahip olan tanımlayıcının görünür bildirimiyle aynı bağlantıya sahiptir. Dosya kapsamına sahip görünür bir bildirim yoksa, tanımlayıcının dış bağlantısı vardır. Bir tanımlayıcının dosya kapsamı varsa ve *depolama sınıfı Belirleyicisi*yoksa, tanımlayıcının dış bağlantısı vardır. Dış bağlantı, tanımlayıcının her örneğinin aynı nesneyi veya işlevi gösterdiği anlamına gelir. Bağlama ve dosya kapsamı hakkında daha fazla bilgi için bkz. [ömür, kapsam, görünürlük ve bağlantı](../c-language/lifetime-scope-visibility-and-linkage.md) .
 
 `extern` dışında depolama sınıfı tanımlayıcısına sahip blok kapsamı işlev bildirimleri hata oluşturur.
 
-Bir işlev ile **statik** depolama sınıfı içinde tanımlanmış olduğu yalnızca kaynak dosyasında görülebilir. Diğer tüm işlevler, ister açıkça ister örtük olarak `extern` depolama sınıfı verilsin, programdaki tüm kaynak dosyalarında görülür. Varsa **statik** depolama sınıfı isteniyorsa, bu işlevin bildiriminin (varsa) ilk örneğinde ve işlevin tanımı bildirilmesi gerekir.
+**Statik** depolama sınıfına sahip bir işlev yalnızca tanımlandığı kaynak dosyada görünür. Diğer tüm işlevler, ister açıkça ister örtük olarak `extern` depolama sınıfı verilsin, programdaki tüm kaynak dosyalarında görülür. **Statik** depolama sınıfı isteniyorsa, işlevin (varsa) bir bildiriminin ilk oluşumunda ve işlevin tanımında bildirilmesi gerekir.
 
-**Microsoft'a özgü**
+**Microsoft 'a özgü**
 
-Microsoft uzantıları etkinleştirildiğinde, bir işlevi olarak bildirilen bir depolama sınıfı olmadan (veya `extern` depolama sınıfı) verilen **statik** işlev tanımı aynı kaynak dosyada varsa ve depolama sınıfı tanım açıkça belirten **statik** depolama sınıfı.
+Microsoft uzantıları etkinleştirildiğinde, bir depolama sınıfı olmadan (veya `extern` depolama sınıfı ile) ilk olarak bildirildiği bir işleve, işlev tanımı aynı kaynak dosyasında yer alıyorsa ve tanım açıkça **statik** depolama sınıfını belirtiyorsa **statik** depolama sınıfı verilir.
 
 /Ze derleyici seçeneğiyle derleme yapılırken, `extern` anahtar sözcüğü kullanılarak bir blok içerisinde bildirilen işlevlerin genel görünürlüğü olur. Bu, /Za ile derleme yapılırken doğru değildir. Kaynak kodunun taşınabilirliği önemliyse, bu özelliğe bağlı kalınmamalıdır.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

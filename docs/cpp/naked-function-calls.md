@@ -11,28 +11,28 @@ helpviewer_keywords:
 - naked keyword [C++]
 - naked keyword [C++], storage-class attribute
 ms.assetid: 2a66847a-a43f-4541-a7be-c9f5f29b5fdb
-ms.openlocfilehash: f9d8a8747d4a808d040b814005782ed8187bf274
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 242fe83807c6608a09492d0f1f817e3b6e50e530
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62301584"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74857404"
 ---
 # <a name="naked-function-calls"></a>Çıplak İşlev Çağrıları
 
-## <a name="microsoft-specific"></a>Microsoft'a Özgü
+**Microsoft 'a özgü**
 
-Bildirilen işlevlerin **naked** özniteliğini kullanarak kendi özel giriş/sonuç dizilerinizi yazmak sağlayarak giriş veya çıkış kodu olmadan, yayılan [satır içi assembler](../assembler/inline/inline-assembler.md). Naked işlevleri, Gelişmiş bir özellik olarak sağlanır. Bunlar, C/C++ dışında bir bağlamdan adlı bir işlevi bildirmek etkinleştirmeniz ve böylece farklı parametreler olduğu ya da hangi kayıtlar korunur hakkında varsayımlar. Kesme işleyicileri gibi yordamlar örneklerindendir. Bu özellik, özellikle sanal cihaz sürücülerinin (VXD) yazıcılar için yararlıdır.
+**Naked** özniteliğiyle belirtilen işlevler, giriş veya bitiş kodu olmadan dağıtılır ve [satır içi assembler](../assembler/inline/inline-assembler.md)kullanarak kendi özel giriş/bitiş dizilerini yazmanızı sağlar. Naked işlevleri, gelişmiş bir özellik olarak sağlanır. Bunlar, C/C++dışında bir içerikten Çağrılmakta olan bir işlevi bildirmenize olanak tanır ve bu nedenle parametrelerin nerede olduğu veya hangi yazmaçların korunduğu konusunda farklı varsayımlar yapabilir. Örnek, kesme işleyicileri gibi yordamlar içerir. Bu özellik özellikle sanal cihaz sürücülerinin (VxDs) yazarları için yararlıdır.
 
-## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?
+## <a name="what-do-you-want-to-know-more-about"></a>Hangi konu hakkında daha fazla bilgi edinmek istiyorsunuz?
 
 - [naked](../cpp/naked-cpp.md)
 
 - [Naked İşlevleri için Kurallar ve Sınırlamalar](../cpp/rules-and-limitations-for-naked-functions.md)
 
-- [Giriş ve bitiş kodu yazmada dikkat edilmesi gerekenler](../cpp/considerations-for-writing-prolog-epilog-code.md)
+- [Giriş/bitiş kodu yazma konuları](../cpp/considerations-for-writing-prolog-epilog-code.md)
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

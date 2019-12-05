@@ -10,52 +10,52 @@ helpviewer_keywords:
 - return keyword [C++], function return types
 - functions [C++], return types
 ms.assetid: 3e5b8a97-b341-48c5-8be8-8986980ef586
-ms.openlocfilehash: 3f781e59672764dc518f3c6fad61d4021720362a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fe9280f434dd6267b03764df2ee663c494f007d8
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62158380"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74857040"
 ---
 # <a name="return-type"></a>Dönüş Türü
 
-Bir işlevin dönüş türü, işlev tarafından döndürülen değerin türü ve boyutu oluşturur ve aşağıdaki sözdiziminde tür belirleyiciye karşılık gelen:
+Bir işlevin dönüş türü, işlevin döndürdüğü değerin boyutunu ve türünü belirler ve aşağıdaki sözdiziminde bulunan tür belirleyicisi öğesine karşılık gelir:
 
 ## <a name="syntax"></a>Sözdizimi
 
 *işlev tanımı*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*bildirim tanımlayıcıları*<sub>iyileştirilmiş</sub> *öznitelik-seq*<sub>iyileştirilmiş</sub> *bildirimci* *bildirim listesi*  <sub>iyileştirilmiş</sub> *bileşik deyim*
+&nbsp;&nbsp;&nbsp;&nbsp;*bildirimi-belirticileri*<sub>opt</sub> *özniteliği-seq*<sub>opt</sub> *bildirimci* *bildirimi-List*<sub>opt</sub> *Bileþik-deyimin*
 
-/\* *öznitelik-seq* Microsoft Specific \*/
+/\* *özniteliği-seq* , Microsoft 'a özgü \*/
 
-*bildirim tanımlayıcıları*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*depolama sınıfı tanımlayıcısı* *bildirim tanımlayıcıları*<sub>iyileştirilmiş</sub><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*tür belirticisi* *bildirim tanımlayıcıları*<sub>iyileştirilmiş</sub><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*tür niteleyicisi* *bildirim tanımlayıcıları*<sub>iyileştirilmiş</sub>
+*bildirim-tanımlayıcılar*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*depolama sınıfı Belirleyicisi* *bildirimi-tanımlayıcılar*<sub>kabul</sub><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*tür belirleyicisi* *bildirimi-tanımlayıcılar*<sub>opt</sub><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*tür niteleyicisi* *bildirimi-tanımlayıcılar*<sub>opt</sub>
 
-*tür belirticisi*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**Geçersiz kılma**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**Char**<br/>
+*tür belirleyicisi*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**void**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**karakteri**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**kısa**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**int**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**__int8**  / \* Microsoft'a özgü \*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**__int16**  / \* Microsoft'a özgü \*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**__int32**  / \* Microsoft'a özgü \*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**__int64**  / \* Microsoft'a özgü \*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp; **__int8** /\* Microsoft 'a özgü \*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp; **__int16** /\* Microsoft 'a özgü \*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp; **__int32** /\* Microsoft 'a özgü \*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp; **__int64** /\* Microsoft 'a özgü \*/<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**uzun**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**kayan nokta**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**çift**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**İmzalı**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**İşaretsiz**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*struct veya union tanımlayıcısı*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*sabit listesi belirticisi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*TypeDef adı*
+&nbsp;&nbsp;&nbsp;&nbsp;**float**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**Double**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**imzalı**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**işaretsiz**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*struct-or-Union-belirleyicisi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*enum belirleyicisi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*typedef-adı*
 
-*Tür tanımlayıcısı* herhangi temel belirtebilirsiniz yapı veya birleşim türü. Dahil etmezseniz *tür tanımlayıcısı*, dönüş türü `int` varsayılır.
+*Tür belirleyicisi* herhangi bir temel, yapı veya birleşim türü belirtebilir. *Tür belirleyicisi*eklemezseniz, `int` dönüş türü varsayılır.
 
-Programdaki başka yerlerde İşlev bildirimlerinde dönüş türü işlev tanımında belirtilen dönüş türü eşleşmelidir. Bir işlev bir değer döndürür, bir `return` içeren bir ifade deyimi yürütüldüğünde. Gerekli ve işlev çağrıldı noktasına döndürülen dönüş değeri türüne dönüştürülerek ifade değerlendirilir. Bir işlevin dönüş türüyle bildirilirse `void`, bir ifade içeren bir dönüş deyimi bir uyarı oluşturur ve ifade değerlendirilmez.
+İşlev tanımında verilen dönüş türü, programın başka bir yerinde, işlevin bildirimlerinde dönüş türüyle eşleşmelidir. Bir işlev, bir ifade içeren `return` deyimi yürütüldüğünde bir değer döndürür. İfade değerlendirilir, gerekirse dönüş değeri türüne dönüştürülür ve işlevin çağrıldığı noktaya döndürülür. Bir işlev dönüş türü `void`ile bildirilirse, ifade içeren bir dönüş deyimi bir uyarı oluşturur ve ifade değerlendirilmez.
 
-Aşağıdaki örnekler, işlev dönüş değerleri gösterir.
+Aşağıdaki örnekler işlev dönüş değerlerini gösterir.
 
 ```C
 typedef struct
@@ -73,10 +73,10 @@ STUDENT sortstu( STUDENT a, STUDENT b )
 }
 ```
 
-Bu örnek tanımlar `STUDENT` tür bir `typedef` bildirimi ve işlevi tanımlayan `sortstu` olmasını `STUDENT` dönüş türü. İşlev seçer ve iki yapıyı bağımsız değişkenlerinden biri döndürür. Derleyici işlev için sonraki çağrılar içinde denetler bağımsız değişken türleri olduğundan emin olmak için `STUDENT`.
+Bu örnek `STUDENT` türünü `typedef` bildirimiyle tanımlar ve `STUDENT` dönüş türüne sahip olacak `sortstu` işlevi tanımlar. İşlevi, iki yapı bağımsız değişkenlerinden birini seçer ve döndürür. İşlevin sonraki çağrılarında, derleyici bağımsız değişken türlerinin `STUDENT`olduğundan emin olmak için kontrol eder.
 
 > [!NOTE]
-> Yapının tamamını yerine yapı işaretçileri geçirerek verimliliği Gelişmiş.
+> Verimlilik, yapının tamamı yerine, yapıya işaretçi geçirilerek geliştirilebilir.
 
 ```C
 char *smallstr( char s1[], char s2[] )
@@ -93,9 +93,9 @@ char *smallstr( char s1[], char s2[] )
 }
 ```
 
-Bu örnek, bir karakter dizisine bir işaretçi döndüren bir işlevin tanımlar. İşlev, iki karakter dizileri (dize) bağımsız değişkenler olarak alır ve kısa bir işaretçi döndürür iki dizenin. Bir dizi işaretçiye işaret ilk dizi öğelerinin ve türü; Bu nedenle, işlevin dönüş türünü tür işaretçisi olan `char`.
+Bu örnek, bir karakter dizisine bir işaretçi döndüren bir işlevi tanımlar. İşlevi bağımsız değişken olarak iki karakter dizisi (dizeler) alır ve iki dizenin kısaldığına bir işaretçi döndürür. Bir dizi işaretçisi dizi öğelerinden birincilerine işaret eder ve türüne sahiptir; Bu nedenle, işlevinin dönüş türü `char`türünde bir işaretçidir.
 
-İşlevleri bildirmelisiniz olmayan `int` dönüş türü, çağırmadan önce rağmen böylece doğru tür bağımsız değişkenleri ve dönüş değerleri için denetimini etkin prototipleri önerilir.
+Prototip ve dönüş değerleri için doğru tür denetlemesi etkin olacak şekilde, prototipler önerilse de, onları çağırmadan önce `int` dönüş türü ile işlevler bildirmemelidir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

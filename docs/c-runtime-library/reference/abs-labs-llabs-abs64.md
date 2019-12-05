@@ -39,12 +39,12 @@ helpviewer_keywords:
 - _abs64 function
 - calculating absolute values
 ms.assetid: 60f789d1-4a1e-49f5-9e4e-0bdb277ea26a
-ms.openlocfilehash: bf5b4be654a3bd48b3e0d43ac97ce02b348942bc
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: df5b6a30bf219b78f77f11604d3bbbe3b954c59f
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70939927"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74857859"
 ---
 # <a name="abs-labs-llabs-_abs64"></a>abs, labs, llabs, _abs64
 
@@ -74,13 +74,13 @@ Sayısal değer.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**ABS**, **Labs**, **LLabs** ve **_abs64** işlevleri, *n*parametresinin mutlak değerini döndürür. Hata döndürme yok.
+**ABS**, **Labs**, **LLabs** ve **_abs64** işlevleri *n*parametresinin mutlak değerini döndürür. Döndürülen hata yok.
 
 ## <a name="remarks"></a>Açıklamalar
 
 Aşırı C++ yüklemeye izin **verdiğinden, uzun, uzun** **uzun**, **float**, **Double**ve **Long** **Double** değerlerini alan ve döndüren **ABS** aşırı yüklerini çağırabilirsiniz. Bu aşırı yüklemeler \<cmath > üst bilgisinde tanımlanmıştır. C programında, **ABS** her zaman bir **int**alır ve döndürür.
 
-**Microsoft 'A özgü**: Herhangi bir integral türü kullanılarak gösterilebilen negatif tamsayılar aralığı, bu türü kullanarak temsil edilebilir pozitif tamsayılar aralığından daha büyükse, bu işlevlere dönüştürülemeyen bir bağımsız değişken sağlamak mümkündür. Bağımsız değişkenin mutlak değeri, dönüş türü tarafından temsil edilemez, **ABS** işlevleri bağımsız değişken değerini değiştirmeden döndürür. Özellikle, `abs(INT_MIN)` `INT_MIN` `labs(LONG_MIN)` döndürür,`_abs64(_I64_MIN)` döndürür, döndürür ve döndürür`_I64_MIN`. `LONG_MIN` `llabs(LLONG_MIN)` `LLONG_MIN` Bu, **ABS** işlevlerinin pozitif bir değeri güvence altına almak için kullanılamayacağı anlamına gelir.
+**Microsoft 'a özgü**: herhangi bir integral türü kullanılarak gösterilebilen negatif tamsayılar aralığı, bu türü kullanarak temsil edilebilir pozitif tamsayılar aralığından daha büyükse, bu işlevlere dönüştürülemeyen bir bağımsız değişken sağlamak mümkündür. Bağımsız değişkenin mutlak değeri, dönüş türü tarafından temsil edilemez, **ABS** işlevleri bağımsız değişken değerini değiştirmeden döndürür. Özellikle, `abs(INT_MIN)`, `INT_MIN` döndürür , `labs(LONG_MIN)`, `LONG_MIN` döndürür , `llabs(LLONG_MIN)`, `LLONG_MIN` döndürür ve `_abs64(_I64_MIN)`, `_I64_MIN` döndürür. Bu, **ABS** işlevlerinin pozitif bir değeri güvence altına almak için kullanılamayacağı anlamına gelir.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -89,11 +89,11 @@ Aşırı C++ yüklemeye izin **verdiğinden, uzun, uzun** **uzun**, **float**, *
 |**ABS**, **Labs**, **LLabs**|\<Math. h > veya \<Stdlib. h >|\<cmath >, \<cstdlib >, \<Stdlib. h > veya \<Math. h >|
 |**_abs64**|\<Stdlib. h >|\<cstdlib > veya \<Stdlib. h >|
 
-İçinde C++ \< **ABS** öğesinin aşırı yüklenmiş sürümlerini kullanmak için cmath > üst bilgisini eklemeniz gerekir.
+İçinde C++ **ABS** 'in aşırı yüklenmiş sürümlerini kullanmak için \<cmath > üst bilgisini eklemeniz gerekir.
 
 ## <a name="example"></a>Örnek
 
-Bu program, birkaç sayının mutlak değerlerini hesaplar ve görüntüler.
+Bu program birkaç sayının mutlak değerlerini hesaplar ve görüntüler.
 
 ```C
 // crt_abs.c

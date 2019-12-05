@@ -1,26 +1,26 @@
 ---
 title: ML Önemli Olmayan Hatası A2037
 ms.date: 08/30/2018
-ms.topic: error-reference
+ms.custom: error-reference
 f1_keywords:
 - A2037
 helpviewer_keywords:
 - A2037
 ms.assetid: e7fdb98b-3ce9-4e1f-99fc-1b1ea10b6961
-ms.openlocfilehash: f514dcd344a1dcf0ff30f0b33e4469ac26458d7f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 48a03c4543f0252b83b4075d723755397cf52e26
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62177584"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74856681"
 ---
 # <a name="ml-nonfatal-error-a2037"></a>ML Önemli Olmayan Hatası A2037
 
-**deyimine yapı tanımının içinde izin verilmiyor**
+**yapı tanımı içinde ifadeye izin verilmiyor**
 
-Bir yapı tanımı geçersiz bir ifade içeriyor.
+Bir yapı tanımında geçersiz bir ifade vardı.
 
-Bir yapı içeremez yönergeleri, etiketler, yordamlar, denetim akışı yönergeleri [. Başlangıç](../../assembler/masm/dot-startup.md), veya [. Çıkış](../../assembler/masm/dot-exit.md).
+Bir yapı, yönergeler, Etiketler, yordamlar, denetim akışı yönergeleri içeremez [. BAŞLANGıÇ](../../assembler/masm/dot-startup.md)veya [. ÇıKıŞ](../../assembler/masm/dot-exit.md)yapın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

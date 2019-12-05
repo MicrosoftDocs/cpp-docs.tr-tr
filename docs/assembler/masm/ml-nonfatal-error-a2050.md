@@ -1,32 +1,32 @@
 ---
 title: ML Önemli Olmayan Hatası A2050
 ms.date: 08/30/2018
-ms.topic: error-reference
+ms.custom: error-reference
 f1_keywords:
 - A2050
 helpviewer_keywords:
 - A2050
 ms.assetid: 16f3a58f-4bde-48f1-b0e3-2ed9612780a5
-ms.openlocfilehash: 59d08b9c2743a3b45633527bcc54b3e1c4d6a58c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 15c6449ff4207c92dee28120d4f61be641cf01c8
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62177558"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74856583"
 ---
 # <a name="ml-nonfatal-error-a2050"></a>ML Önemli Olmayan Hatası A2050
 
-**Gerçek veya BCD sayı izin verilmiyor**
+**gerçek veya BCD numarasına izin verilmiyor**
 
-(Gerçek) kayan noktalı sayı veya İkili Kodlanmış Ondalık (BCD) sabiti dışında kullanılan veri başlatıcı olarak.
+Bir kayan nokta (gerçek) numarası veya ikili kodlu ondalık (BCD) sabiti, veri başlatıcısı olarak dışında kullanıldı.
 
 Aşağıdakilerden biri oluştu:
 
-- Bir gerçek sayı veya bir BCD bir ifade kullanıldı.
+- Bir ifadede gerçek sayı veya BCD kullanıldı.
 
-- Bir gerçek sayı bir yönerge dışında başlatmak için kullanılan [DWORD](../../assembler/masm/dword.md), [QWORD](../../assembler/masm/qword.md), veya [TBYTE](../../assembler/masm/tbyte.md).
+- [DWORD](../../assembler/masm/dword.md), [QWORD](../../assembler/masm/qword.md)veya [TByte](../../assembler/masm/tbyte.md)dışında bir yönergeyi başlatmak için gerçek bir sayı kullanıldı.
 
-- Bir yönerge dışında başlatmak için kullanılan bir BCD `TBYTE`.
+- `TBYTE`dışındaki bir yönergeyi başlatmak için bir BCD kullanıldı.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

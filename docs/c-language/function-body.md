@@ -7,30 +7,30 @@ helpviewer_keywords:
 - function definitions, function body
 - function body
 ms.assetid: f7e74822-fac8-4dc8-8f3a-2b1611da4640
-ms.openlocfilehash: c227640e45943fb57b1029a4f03329241d1d6b34
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2d2e04572de91b161237d999bb95cfda26256c54
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62233460"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74857105"
 ---
 # <a name="function-body"></a>İşlev Gövdesi
 
-A *işlev gövdesi* olan işlevin ne yaptığını belirten deyimleri içeren bir bileşik deyim.
+*İşlev gövdesi* , işlevin ne yaptığını belirten deyimleri içeren bileşik bir ifadedir.
 
 ## <a name="syntax"></a>Sözdizimi
 
 *işlev tanımı*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*bildirim tanımlayıcıları*<sub>iyileştirilmiş</sub> *öznitelik-seq*<sub>iyileştirilmiş</sub> *bildirimci* *bildirim listesi*  <sub>iyileştirilmiş</sub> *bileşik deyim*
+&nbsp;&nbsp;&nbsp;&nbsp;*bildirimi-belirticileri*<sub>opt</sub> *özniteliği-seq*<sub>opt</sub> *bildirimci* *bildirimi-List*<sub>opt</sub> *Bileþik-deyimin*
 
-/\* *öznitelik-seq* Microsoft Specific \*/
+/\* *özniteliği-seq* , Microsoft 'a özgü \*/
 
-*Bileşik deyim*: /\* işlev gövdesi \*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**{** *bildirim listesi*<sub>iyileştirilmiş</sub> *deyim listesindeki*<sub>iyileştirilmiş</sub> **}**
+*bileşik ifade*:/\* işlev gövdesini \*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp; **{** *declaration-List*<sub>opt</sub> *bildirimini-List*<sub>opt</sub> **}**
 
-Değişkenler olarak bilinen bir işlev gövdesindeki *yerel değişkenler*, sahip **otomatik** aksi belirtilmediği sürece depolama sınıfı. İşlev çağrıldığında, depolama, yerel değişkenleri oluşturulur ve yerel başlatmalar gerçekleştirilir. Yürütme denetimi geçtiği ilk deyimde *compound-statement* ve kadar devam eder. bir **dönüş** deyimi yürütüldüğünde veya işlev gövdesinin sonuna karşılaşıldı. Denetim, ardından işlev çağrıldı noktasını döndürür.
+*Yerel değişkenler*olarak bilinen bir işlev gövdesinde belirtilen değişkenlerin, aksi belirtilmedikçe **Otomatik** depolama sınıfı vardır. İşlev çağrıldığında Yerel değişkenler için depolama oluşturulur ve yerel başlatma işlemleri gerçekleştirilir. Yürütme denetimi *bileşik deyimdeki* ilk ifadeye geçer ve bir **dönüş** ifadesiyle veya işlev gövdesinin sonuna ulaşana kadar devam eder. Sonra Denetim, işlevin çağrıldığı noktaya döner.
 
-A **dönüş** içeren bir ifade deyimi gereken yürütülebilir işlev bir değer döndürmek için ise. Öyle değilse bir işlevin dönüş değeri tanımsızdır **dönüş** deyimi yürütüldüğünde veya **dönüş** bir ifade deyimi içermez.
+İşlevin bir değer döndürmesi durumunda bir ifade içeren **Return** deyiminin yürütülmesi gerekir. Return **deyimi yoksa** veya **Return** deyimi bir ifade içermiyorsa, bir işlevin dönüş değeri tanımsızdır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,38 +1,38 @@
 ---
 title: ML Önemli Olmayan Hatası A2008
 ms.date: 08/30/2018
-ms.topic: error-reference
+ms.custom: error-reference
 f1_keywords:
 - A2008
 helpviewer_keywords:
 - A2008
 ms.assetid: ca24157f-c88a-4678-ae06-3bc3cd956001
-ms.openlocfilehash: 7f85a3aabb7b1955cede912168dfc04618b8f2b2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 192d82186a58d4e6b534ab5ec65b696d4d7ce3ee
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62201985"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74856759"
 ---
 # <a name="ml-nonfatal-error-a2008"></a>ML Önemli Olmayan Hatası A2008
 
 **sözdizimi hatası:**
 
-Geçerli konumda bir belirteç sözdizimi hatası nedeniyle.
+Geçerli konumdaki bir belirteç bir sözdizimi hatasına neden oldu.
 
-Aşağıdakilerden birini kaynaklanmış olabilir:
+Aşağıdakilerden biri oluşmuş olabilir:
 
-- Bir nokta ön eki için eklendi veya yönergesinden kaynaklandığından atlanmış.
+- Bir noktaya ön ek eklendi veya bir yönergeye atlanmış.
 
-- Ayrılmış bir sözcük (gibi **C** veya **BOYUTU**) tanımlayıcı olarak kullanıldı.
+- Ayrılmış bir sözcük ( **C** veya **Boyut**gibi) tanımlayıcı olarak kullanılmıştır.
 
-- Bir yönerge geçerli işlemci veya eşişlemcisi seçimi ile derlenen kullanıldı.
+- Geçerli işlemci veya Eşişlemcisi seçiminde kullanılamayan bir yönerge kullanıldı.
 
-- Karşılaştırma çalışma zamanı işleci (gibi `==`) ilişkisel işleç yerine bir koşullu derleme ifadesi kullanıldı (gibi [EQ](../../assembler/masm/operator-eq.md)).
+- Bir karşılaştırma çalışma zamanı işleci (`==`gibi), ilişkisel bir işleç ( [EQ](../../assembler/masm/operator-eq.md)gibi) yerine koşullu derleme ifadesinde kullanılmıştır.
 
-- Çok az sayıda işlenen bir yönerge ya da bir yönerge sağlanmadı.
+- Yönergede veya yönergeye çok az işlenen verildi.
 
-- Geçersiz bir yönerge kullanıldı.
+- Eski bir yönerge kullanıldı.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

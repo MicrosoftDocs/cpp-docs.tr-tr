@@ -55,12 +55,12 @@ helpviewer_keywords:
 - formatted text [C++]
 - vsnwprintf function
 ms.assetid: a97f92df-c2f8-4ea0-9269-76920d2d566a
-ms.openlocfilehash: 721ea80272f7a76e959528ec4114d69bd0e80507
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: abe34dc0f3baf9bdc63e0314ac70af3783d2bd9a
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70945309"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74857716"
 ---
 # <a name="vsnprintf-_vsnprintf-_vsnprintf_l-_vsnwprintf-_vsnwprintf_l"></a>vsnprintf, _vsnprintf, _vsnprintf_l, _vsnwprintf, _vsnwprintf_l
 
@@ -145,14 +145,14 @@ int _vsnwprintf_l(
 *arabelleğin*<br/>
 Çıktı için depolama konumu.
 
-*biriktirme*<br/>
+*count*<br/>
 Yazılacak maksimum karakter sayısı.
 
 *format*<br/>
 Biçim belirtimi.
 
 *argptr*<br/>
-Bağımsız değişken listesi işaretçisi.
+Bağımsız değişkenler listesine işaretçi.
 
 *ayarlar*<br/>
 Kullanılacak yerel ayar.
@@ -161,9 +161,9 @@ Daha fazla bilgi için bkz. [Biçim belirtimleri](../../c-runtime-library/format
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**Vsnprintf** işlevi, sonlandıran null karakteri saymayan yazılan karakter sayısını döndürür. *Count* tarafından belirtilen arabellek boyutu, *Format* ve *argptr*tarafından belirtilen çıktıyı içermesi için yeterince büyük değilse, **vsnprintf** dönüş değeri, null sayılmayan yazılacak karakter sayısıdır *sayı* yeterince büyükse karakter. Dönüş değeri *sayı* -1 ' den büyükse, çıkış fazlalıkları kesilir. -1 ' in dönüş değeri bir kodlama hatası oluştuğunu gösterir.
+**Vsnprintf** işlevi, sonlandıran null karakteri saymayan yazılan karakter sayısını döndürür. *Count* tarafından belirtilen arabellek boyutu, *Format* ve *argptr*tarafından belirtilen çıktıyı içermesi için yeterince büyük değilse, **vsnprintf** dönüş değeri yazılacak karakter sayısıdır, *sayı* yeterince büyükse null karakteri saymaz. Dönüş değeri *sayı* -1 ' den büyükse, çıkış fazlalıkları kesilir. -1 ' in dönüş değeri bir kodlama hatası oluştuğunu gösterir.
 
-Hem **_vsnprintf** hem de **_vsnwprintf** işlevleri, yazılacak karakter *sayısı sayı değerinden*küçükse veya bu değere eşitse yazılan karakter sayısını döndürür; yazılacak karakter *sayısı sayı değerinden büyükse, bu*işlevler çıktının kesilmediğini belirten-1 döndürür.
+Hem **_vsnprintf** hem de **_vsnwprintf** işlevleri, yazılacak karakter *sayısı sayı '* den küçük veya buna eşit olduğunda yazılan karakter sayısını döndürür; yazılacak karakter *sayısı sayı değerinden büyükse, bu*işlevler çıktının kesilmediğini belirten-1 döndürür.
 
 Tüm bu işlevler tarafından döndürülen değer, yazılmış veya olmayan bir Sonlandırıcı null değeri içermez. *Count* değeri sıfır olduğunda döndürülen değer, işlevin yazacağı karakter sayısı, hiçbir Sonlandırıcı null dahil edilmez. Bu sonucu, dize için yeterli arabellek alanı ve onun Sonlandırıcı null ayırmak için kullanabilir ve sonra, arabelleği dolduracak şekilde işlevi yeniden çağırabilir.
 
@@ -171,13 +171,13 @@ Tüm bu işlevler tarafından döndürülen değer, yazılmış veya olmayan bir
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevlerin her biri bağımsız değişken listesi için bir işaretçi alır, ardından verileri biçimlendirir ve *arabelleğe*göre işaret eden belleğe *sayı* karakteri yazar. **Vsnprintf** işlevi, çıktıyı kesen bile her zaman bir null Sonlandırıcı yazar. **_Vsnprintf** ve **_vsnwprintf**kullanılırken, yalnızca sonda yer varsa (yani yazılacak *karakter sayısı sayıdan küçükse),* arabellek null olarak sonlandırılır.
+Bu işlevlerin her biri bağımsız değişken listesi için bir işaretçi alır, ardından verileri biçimlendirir ve *arabelleğe*göre işaret eden belleğe *sayı* karakteri yazar. **Vsnprintf** işlevi, çıktıyı kesen bile her zaman bir null Sonlandırıcı yazar. **_Vsnprintf** ve **_vsnwprintf**kullanılırken, yalnızca sonda yer varsa (yani, yazılacak *karakter sayısı sayıdan küçükse),* arabellek null olarak sonlandırılır.
 
 > [!IMPORTANT]
 > Belirli güvenlik riskleri türlerini engellemek için, *biçimin* Kullanıcı tanımlı bir dize olmadığından emin olun. Daha fazla bilgi için bkz. [arabellek taşmalarını önleme](/windows/win32/SecBP/avoiding-buffer-overruns).
 
 > [!NOTE]
-> **_Vsnprintf**, **_vsnprintf_l**, **_vsnwprintf** ve **_vsnwprintf_l**çağrılırken, Sonlandırıcı null değeri olduğundan emin olmak için, *Count* 'un arabellek uzunluğundan kesinlikle daha az olduğundan emin olun ve arabelleği başlatın işlev çağrılmadan önce null.
+> **_Vsnprintf**, **_vsnprintf_l**, **_vsnwprintf** ve **_vsnwprintf_l**çağrılırken, Sonlandırıcı null değeri olduğundan emin olmak için, *Count* 'un arabellek uzunluğundan kesinlikle daha az olduğundan emin olun ve işlevi çağırmadan önce arabelleği null olarak başlatın.
 >
 > **Vsnprintf** her zaman Sonlandırıcı null değerini yazdığından, *Count* parametresi arabelleğin boyutuna eşit olabilir.
 
@@ -185,11 +185,11 @@ Visual Studio 2015 ve Windows 10 ' da UıCRT ile başlayarak, **vsnprintf** art�
 
 **_L** sonekine sahip bu işlevlerin sürümleri, geçerli iş parçacığı yerel ayarı yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır.
 
-' C++De, bu işlevlerde bu işlevlerin daha yeni ve güvenli karşılıkları çağıran şablon aşırı yüklemeleri vardır. Daha fazla bilgi için bkz. [Güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
+C++ dilinde, bu işlevlerin daha yeni ve güvenli karşıtlarını başlatan şablon aşırı yüklemeleri vardır. Daha fazla bilgi için bkz. [Güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmadı|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_vsntprintf**|**_vsnprintf**|**_vsnprintf**|**_vsnwprintf**|
 |**_vsntprintf_l**|**_vsnprintf_l**|**_vsnprintf_l**|**_vsnwprintf_l**|
@@ -198,7 +198,7 @@ Visual Studio 2015 ve Windows 10 ' da UıCRT ile başlayarak, **vsnprintf** art�
 
 |Yordam|Gerekli üst bilgi (C)|Gerekli üst bilgiC++()|
 |-------------|---------------------------|-------------------------------|
-|**vsnprintf**, **_vsnprintf**, **_vsnprintf_l**|\<stdio. h >|\<stdio. h > veya \<cstdio >|
+|**vsnprintf**, **_vsnprintf** **_vsnprintf_l**|\<stdio. h >|\<stdio. h > veya \<cstdio >|
 |**_vsnwprintf**, **_vsnwprintf_l**|\<stdio. h > veya \<wchar. h >|\<stdio. h >, \<wchar. h >, \<cstdio > veya \<cwchar >|
 
 **_Vsnprintf**, **_vsnprintf_l**, **_vsnwprintf** ve **_vsnwprintf_l** işlevleri Microsoft 'a özgüdür. Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).

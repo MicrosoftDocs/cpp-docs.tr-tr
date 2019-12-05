@@ -1,6 +1,6 @@
 ---
 title: 'Platform:: Collections:: vector Sınıfı'
-ms.date: 10/01/2019
+ms.date: 12/04/2019
 ms.topic: reference
 f1_keywords:
 - COLLECTION/Platform::Collections::Vector::Vector
@@ -21,12 +21,12 @@ f1_keywords:
 helpviewer_keywords:
 - Vector Class (C++/Cx)
 ms.assetid: aee8c076-9700-47c3-99b6-799fd3edb0ca
-ms.openlocfilehash: a70856be04a63cad1c700cb3cc52711dde410265
-ms.sourcegitcommit: 4517932a67bbf2db16cfb122d3bef57a43696242
+ms.openlocfilehash: b7774c2cdab7b9abcb3ebac1453779055eacf897
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71816574"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74857898"
 ---
 # <a name="platformcollectionsvector-class"></a>Platform:: Collections:: vector Sınıfı
 
@@ -41,7 +41,7 @@ template <typename T, typename E>
 
 ### <a name="parameters"></a>Parametreler
 
-*Şı*<br/>
+*T*<br/>
 Vektör nesnesinde içerilen öğelerin türü.
 
 *E*<br/>
@@ -57,7 +57,7 @@ Vektör nesnesinde içerilen öğelerin türü.
 
 1. ortak başvuru sınıfı ^
 
-1. value yapısı
+1. değer yapısı
 
 1. ortak enum sınıfı
 
@@ -65,7 +65,7 @@ Vektör nesnesinde içerilen öğelerin türü.
 
 Bir ortak dönüş değeri veya parametresinde bir **vektör** türü kullanmaya çalışırsanız, derleyici hatası C3986 tetiklenir. Bu hatayı, parametre veya dönüş değeri türünü [Windows:: Foundation:: Collections:: IVector](/uwp/api/Windows.Foundation.Collections.IVector_T_)olarak değiştirerek çözebilirsiniz. Daha fazla bilgi için bkz. [koleksiyonlarC++(/CX)](../cppcx/collections-c-cx.md).
 
-### <a name="members"></a>Üyeleri
+### <a name="members"></a>Üyeler
 
 ### <a name="public-constructors"></a>Genel Oluşturucular
 
@@ -84,7 +84,7 @@ Bir ortak dönüş değeri veya parametresinde bir **vektör** türü kullanmaya
 |[Vector:: GetMany](#getmany)|Belirtilen dizinden başlayarak, geçerli vektörden bir öğe dizisi alır.|
 |[Vector:: GetView](#getview)|Bir vektörün salt okunurdur görünümünü döndürür; diğer bir deyişle, bir [Platform:: Collections:: VectorView](../cppcx/platform-collections-vectorview-class.md).|
 |[Vector:: IndexOf](#indexof)|Geçerli vektörde belirtilen öğeyi arar ve bulunursa öğenin dizinini döndürür.|
-|[Vector:: InsertAt](#insertat)|Belirtilen dizin tarafından tanımlanan öğeden sonra, belirtilen öğeyi geçerli vektöre ekler.|
+|[Vector:: InsertAt](#insertat)|Belirtilen öğeyi belirtilen dizin tarafından tanımlanan öğedeki geçerli vektöre ekler.|
 |[Vector:: ReplaceAll](#replaceall)|Geçerli Vektördeki öğeleri siler ve ardından belirtilen diziden öğeleri ekler.|
 |[Vector:: RemoveAt](#removeat)|Geçerli vektörden belirtilen dizin tarafından tanımlanan öğeyi siler.|
 |[Vector:: RemoveAtEnd](#removeatend)|Geçerli vektörün sonundaki öğeyi siler.|
@@ -149,7 +149,7 @@ Vektördeki ilk öğeyi gösteren bir yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ilk () tarafından döndürülen yineleyiciyi tutmanın uygun bir yolu, dönüş değerini **Auto** Type kesintisi anahtar sözcüğüyle belirtilen bir değişkene atamaktır. Örneğin: `auto x = myVector->First();` Bu Yineleyici, koleksiyonun uzunluğunu bilir.
+Ilk () tarafından döndürülen yineleyiciyi tutmanın uygun bir yolu, dönüş değerini **Auto** Type kesintisi anahtar sözcüğüyle belirtilen bir değişkene atamaktır. Örneğin: `auto x = myVector->First();`. Bu Yineleyici, koleksiyonun uzunluğunu bilir.
 
 STL işlevine geçebileceğiniz bir çift yineleyiciye ihtiyacınız olduğunda, ücretsiz işlevler [Windows:: Foundation:: Collections:: Begin](../cppcx/begin-function.md) ve [Windows:: Foundation:: Collections:: End](../cppcx/end-function.md) ' i kullanın.
 
@@ -244,7 +244,7 @@ IndexOf, öğeyi bulmak için std:: find_if kullanır. Bu nedenle, find_if gerek
 
 ##  <a name="insertat"></a>Vector:: InsertAt yöntemi
 
-Belirtilen dizin tarafından tanımlanan öğeden sonra, belirtilen öğeyi geçerli vektöre ekler.
+Belirtilen öğeyi belirtilen dizin tarafından tanımlanan öğedeki geçerli vektöre ekler.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -258,7 +258,7 @@ virtual void InsertAt(unsigned int index, T item)
 Vektör nesnesinde belirli bir öğeyi belirten sıfır tabanlı, işaretsiz bir tamsayı.
 
 *maddesinin*<br/>
-*Dizinle*belirtilen öğeden sonra vector öğesine eklenecek bir öğe. *Öğe* türü *T* TypeName tarafından tanımlanır.
+*Dizinle*belirtilen öğede vector öğesine eklenecek bir öğe. *Öğe* türü *T* TypeName tarafından tanımlanır.
 
 ## <a name="removeat"></a>Vector:: RemoveAt yöntemi
 

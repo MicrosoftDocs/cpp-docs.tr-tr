@@ -4,36 +4,36 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - naked functions [C++]
 ms.assetid: ff203858-2dd3-4a76-8a57-d0d06817adef
-ms.openlocfilehash: c813b97b85469165aae892b0a4cce888112e3dc5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ec5c7d635dbbb63af7177395c5ad08356e1a26f0
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62267385"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74857313"
 ---
 # <a name="rules-and-limitations-for-naked-functions"></a>Naked İşlevleri için Kurallar ve Sınırlamalar
 
-## <a name="microsoft-specific"></a>Microsoft'a Özgü
+**Microsoft 'a özgü**
 
-Naked işlevleri için aşağıdaki kurallar ve sınırlamalar uygulanır:
+Aşağıdaki kurallar ve sınırlamalar, çıplak işlevler için geçerlidir:
 
-- **Dönüş** deyimi izin verilmez.
+- **Return** ifadesine izin verilmiyor.
 
-- Yığın çerçevesi geriye doğru olduğundan yapılandırılmış özel durum işleme ve C++ özel durum işleme yapılarına izin verilmez.
+- Yapılandırılmış özel durum Işleme C++ ve özel durum işleme yapılarına yığın çerçevesinin üzerinde gezinmeleri gerektiğinden izin verilmez.
 
-- Aynı nedenle, herhangi bir biçimde `setjmp` yasaktır.
+- Aynı nedenle, herhangi bir `setjmp` biçimi yasaktır.
 
-- Kullanım `_alloca` işlevi kullanılamaz.
+- `_alloca` işlevinin kullanımı yasaktır.
 
-- Yerel değişkenler için başlatma kodu yok önce giriş dizisinde görünmesini sağlamak için başlatılmamış yerel değişkenleri işlev kapsamında izin verilmez. Özellikle, C++ nesnelerin bildirimi işlev kapsamında izin verilmiyor. Ancak olabilir başlatılmış veriler iç içe bir kapsam içinde.
+- Yerel değişkenler için başlatma kodunun Giriş sırasından önce göründüğünden emin olmak için, işlev kapsamında başlatılmış yerel değişkenlere izin verilmez. Özellikle, C++ nesne bildirimine işlev kapsamında izin verilmez. Ancak, iç içe bir kapsamda başlatılan veriler olabilir.
 
-- Çerçeve işaretçisi iyileştirme (/Oy derleyici seçeneği) önerilmez, ancak otomatik olarak çıplak bir işlev için engellenir.
+- Çerçeve işaretçisi iyileştirmesi (/oy derleyicisi seçeneği) önerilmez, ancak çıplak bir işlev için otomatik olarak bastırılır.
 
-- C++ sınıfı nesne işlevi sözlü kapsamda bildiremezsiniz. Ancak, iç içe geçmiş bir bloğu içindeki nesneleri bildirebilirsiniz.
+- Sınıf nesnelerini işlev C++ sözcük temelli kapsamda bildiremezsiniz. Ancak, nesneleri iç içe geçmiş bir blokta bildirebilirsiniz.
 
-- **Naked** ile derleme yaparken anahtar sözcüğünü sayılır [/CLR](../build/reference/clr-common-language-runtime-compilation.md).
+- [/Clr](../build/reference/clr-common-language-runtime-compilation.md)ile derlerken **Naked** anahtar sözcüğü yok sayılır.
 
-- İçin [__fastcall](../cpp/fastcall.md) çıplak İşlevler, C'de başvuru olduğunda /C++ kod yazmaç bağımsız değişkenlerden biri için giriş kodu, bu değişken için yığın konumunu yazmacına değerlerini depolamanız gerekir. Örneğin:
+- [__Fastcall](../cpp/fastcall.md) Naked işlevleri için, YAZMAÇ bağımsız değişkenlerinden birine göre C/C++ Code ' da bir başvuru olduğunda, giriş kodu söz konusu değişkenin yığın konumuna kaydın değerlerini depolamalıdır. Örneğin:
 
 ```cpp
 // nkdfastcl.cpp
@@ -70,7 +70,7 @@ __declspec(naked) int __fastcall  power(int i, int j) {
 }
 ```
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -51,12 +51,12 @@ helpviewer_keywords:
 - nexttowardf function
 - nexttowardl function
 ms.assetid: 9785bfb9-de53-4bd0-9637-f05fa0c1f6ab
-ms.openlocfilehash: c56c9f8032c9af2ed4404428abe3b9ee26b4b603
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: c6b100fb24d879a16780650d8a374ec26f28c048
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70951362"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74857729"
 ---
 # <a name="nextafter-nextafterf-nextafterl-_nextafter-_nextafterf-nexttoward-nexttowardf-nexttowardl"></a>nextafter, nextafterf, nextafterl, _nextafter, _nextafterf, nexttoward, nexttowardf, nexttowardl
 
@@ -90,20 +90,20 @@ long double nexttoward( long double x, long double y ); /* C++ only, requires <c
 *x*<br/>
 Başlangıçtan başlamak için kayan nokta değeri.
 
-*Iz*<br/>
+*y*<br/>
 Doğru gidilecek kayan nokta değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-*Y*yönünde *x* öğesinden sonra dönüş türünün sonraki gösterilemeyen kayan nokta değerini döndürür. *X* ve *y* eşitse, işlev bir özel durum Tetiklenmeyen, dönüş türüne dönüştürülmüş *y*döndürür. *X* *y*'ye eşit değilse ve sonuç bir denormal veya sıfır Ise, **FE_UNDERFLOW** ve **FE_INEXACT** kayan nokta özel durum durumları ayarlanır ve doğru sonuç döndürülür. *X* veya *y* bir NaN ise, dönüş değeri, giriş nans 'lardan biridir. *X* sınırlı ise ve sonuç tür içinde sonsuz veya gösterilemeyen bir tablo değilse, doğru imzalı bir sonsuzluk veya NaN döndürülür, **FE_OVERFLOW** ve **FE_INEXACT** kayan nokta özel durum durumları ayarlanır ve **errno** , ERANGE olarak ayarlanır.
+*Y*yönünde *x* öğesinden sonra dönüş türünün sonraki gösterilemeyen kayan nokta değerini döndürür. *X* ve *y* eşitse, işlev bir özel durum Tetiklenmeyen, dönüş türüne dönüştürülmüş *y*döndürür. *X* *y*'ye eşit değilse ve sonuç bir denormal veya sıfır ise, **FE_UNDERFLOW** ve **FE_INEXACT** kayan nokta özel durum durumları ayarlanır ve doğru sonuç döndürülür. *X* veya *y* bir NaN ise, dönüş değeri, giriş nans 'lardan biridir. *X* sınırlı ise ve sonuç türden sonsuz veya gösterilemeyen bir tablo değilse, doğru imzalı bir sonsuz veya NaN döndürülür, **FE_OVERFLOW** ve **FE_INEXACT** kayan nokta özel durum durumları ayarlanır ve **errno** , **ERANGE**olarak ayarlanır.
 
 ## <a name="remarks"></a>Açıklamalar
 
 *Y*parametre türü dışında, **nextafter** ve **NexTTo** işlev aileleri eşdeğerdir. *X* ve *y* eşitse, döndürülen değer *y* , dönüş türüne dönüştürülür.
 
-Aşırı C++ yüklemeye \<izin verdiğinden, cmath > eklerseniz, bu Return **float** ve **Long** **Double** türlerine doğru **nextafter** ve **nextaşırı** yüklerini çağırabilirsiniz. C programında, **nextafter** ve **Next,** her zaman **Double**döndürür.
+Aşırı C++ yüklemeye izin verdiğinden, \<c> Math eklerseniz, bu Return **float** ve **Long** **Double** türlerine doğru **nextafter** ve **nextaşırı** yüklerini çağırabilirsiniz. C programında, **nextafter** ve **Next,** her zaman **Double**döndürür.
 
-**_Nextafter** ve **_nextafterf** işlevleri Microsoft 'a özgüdür. **_Nextafterf** işlevi yalnızca x64 için derlenirken kullanılabilir.
+**_Nextafter** ve **_nextafterf** işlevleri Microsoft 'a özgüdür. **_Nextafterf** işlevi yalnızca x64 için derlerken kullanılabilir.
 
 ## <a name="requirements"></a>Gereksinimler
 

@@ -1,5 +1,5 @@
 ---
-title: karmaşık &lt;long Double &gt;
+title: karmaşık&lt;uzun çift&gt;
 ms.date: 11/04/2016
 f1_keywords:
 - std::complex<long double>
@@ -8,14 +8,14 @@ f1_keywords:
 helpviewer_keywords:
 - complex<long double> function
 ms.assetid: 37591991-b385-46e9-b727-d534dbc10432
-ms.openlocfilehash: afd85321ee443359f17850384b06b854dfe89985
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.openlocfilehash: 978be97484a259d7ae8f3fd24fecf07d50c4c844
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72688227"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74857976"
 ---
-# <a name="complexltlong-doublegt"></a>karmaşık &lt;long Double &gt;
+# <a name="complexltlong-doublegt"></a>karmaşık&lt;uzun çift&gt;
 
 Bu açıkça özelleştirilmiş sınıf şablonu, her ikisi de **Long Double**türünde, her ikisi de karmaşık bir sayının gerçek bölümünü ve sanal parçayı temsil eden ikincisini temsil eden bir nesne çifti depolayan bir nesneyi tanımlar.
 
@@ -38,13 +38,13 @@ complex(
 
 ### <a name="parameters"></a>Parametreler
 
-*_Realval* \
+*_RealVal*\
 Oluşturulan karmaşık sayının gerçek parçası için **Long Double** türü değeri.
 
-*_Imagval* \
+*_ImagVal*\
 Oluşturulan karmaşık sayının sanal parçası için **Long Double** türü değeri.
 
-*Karmaşıksayı* \
+*Karmaşıksayı*\
 Gerçek ve sanal parçaları oluşturulan karmaşık sayıda **Long Double** türü başlatmak için kullanılan **Double** veya **float** türünde karmaşık sayı.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -117,11 +117,11 @@ arg( c3 ) = 0.927295 radians, which is 53.1301 degrees.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi**: \<complex >
+**Üst bilgi**: \<karmaşık >
 
 **Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[karmaşık sınıf](../standard-library/complex-class.md) \
+[karmaşık sınıf](../standard-library/complex-class.md)\
 [C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)

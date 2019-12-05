@@ -1,26 +1,26 @@
 ---
 title: ML Önemli Olmayan Hatası A2019
 ms.date: 08/30/2018
-ms.topic: error-reference
+ms.custom: error-reference
 f1_keywords:
 - A2019
 helpviewer_keywords:
 - A2019
 ms.assetid: 7dff209b-6d91-4e39-88a3-5d6329bac537
-ms.openlocfilehash: 48a80c643bb42ce39df00297c7f5579445c99df9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 23412ccd6dc84d889b62acfb4ba09cb1bde8b82a
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62201942"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74856733"
 ---
 # <a name="ml-nonfatal-error-a2019"></a>ML Önemli Olmayan Hatası A2019
 
-**işlenen, kayıt türünü veya alan olmalıdır.**
+**işlenen, kayıt türü veya alan olmalıdır**
 
-İşlenen aşağıdaki [genişliği](../../assembler/masm/operator-width.md) veya [maskesi](../../assembler/masm/operator-mask.md) işleci geçerli değil.
+[WIDTH](../../assembler/masm/operator-width.md) veya [Mask](../../assembler/masm/operator-mask.md) işlecinden sonraki işlenen geçerli değildi.
 
-[Genişliği](../../assembler/masm/operator-width.md) işleci, işleneni bir alan veya bir kayıt adı alır. [Maskesi](../../assembler/masm/operator-mask.md) işleci, işleneni bir alan veya bir kayıt türü adı alır.
+[WIDTH](../../assembler/masm/operator-width.md) işleci, bir alanın veya kaydın adı olan bir işleneni alır. [Mask](../../assembler/masm/operator-mask.md) işleci, bir alanın veya bir kayıt türünün adı olan bir işleneni alır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

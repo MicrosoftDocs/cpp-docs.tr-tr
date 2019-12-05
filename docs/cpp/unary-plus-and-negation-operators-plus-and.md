@@ -11,12 +11,12 @@ helpviewer_keywords:
 - + operator [C++], unary operators
 - + operator
 ms.assetid: 2c58c4f4-0d92-4ae3-9d0c-1a6157875cc1
-ms.openlocfilehash: c1d5fc926b396f1ec44b9e44e79721e2ca4a0908
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 83fedd9d3cc6cd7c08ba79d2ed83e9f62d919e29
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62244174"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74857248"
 ---
 # <a name="unary-plus-and-negation-operators--and--"></a>Birli Artı ve Değilleme işleçleri: + ve -
 
@@ -29,19 +29,21 @@ ms.locfileid: "62244174"
 
 ## <a name="-operator"></a>+ işleci
 
-Tek işlenenli artı sonucunu (**+**), işleneninin değeridir. Tek işlenenli artı işleminin işleneni, aritmetik bir türden olmalıdır.
+Birli artı işlecinin sonucu ( **+** ), işleneninin değeridir. Tek işlenenli artı işleminin işleneni, aritmetik bir türden olmalıdır.
 
-İntegral işlenenlerde integral yükseltme gerçekleştirilir. Sonuç türü, işlenin yükseltildiği türdür. Bu nedenle, ifade `+ch`burada `ch` türünde **char**, türüyle sonuçlanır **int**; değer değiştirilmez. Bkz: [standart dönüştürmeler](standard-conversions.md) yükseltmenin nasıl yapılacağı hakkında daha fazla bilgi.
+İntegral işlenenlerde integral yükseltme gerçekleştirilir. Sonuç türü, işlenin yükseltildiği türdür. Bu nedenle, `ch` **char**türünde olduğu `+ch`ifade, **int**türünde sonuçlar; değer değiştirilmemiş. Yükseltmenin nasıl yapıldığı hakkında daha fazla bilgi için bkz. [Standart dönüştürmeler](standard-conversions.md) .
 
 ## <a name="--operator"></a>- işleci
 
-Tekli değilleme işleci (**-**), işleneninin negatifini üretir. Tekli değilleme işleci için işlenen, aritmetik bir türü olmalıdır.
+Birli olumsuzlama işleci ( **-** ) işleneninin negatifini üretir. Birli olumsuzlama işlecinin işleneni bir aritmetik tür olmalıdır.
 
-İntegral yükseltme, iç işlenenlerde gerçekleştirilir ve ortaya çıkan tür işlenenin yükseltildiği türdür. Bkz: [standart dönüştürmeler](standard-conversions.md) yükseltmenin nasıl gerçekleştirildiğini hakkında daha fazla bilgi.
+İntegral yükseltme, iç işlenenlerde gerçekleştirilir ve ortaya çıkan tür işlenenin yükseltildiği türdür. Yükseltmenin nasıl gerçekleştirildiği hakkında daha fazla bilgi için bkz. [Standart dönüştürmeler](standard-conversions.md) .
 
-## <a name="microsoft-specific"></a>Microsoft'a özgü
+**Microsoft 'a özgü**
 
-Tekli olumsuzlama işaretsiz miktarlar, işlenenin 2'den çıkarılmasıyla gerçekleştirilir ^ n, n, bit işaretsiz belirtilen türde bir nesne sayısı.
+İşaretsiz miktarların birli Olumsuzlaştırma değeri 2 ^ n ' den işlenenin değerinin çıkarılmasıyla gerçekleştirilir; burada n, verili işaretsiz türdeki bir nesnedeki bitlerin sayısıdır.
+
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

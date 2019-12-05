@@ -65,12 +65,12 @@ helpviewer_keywords:
 - iscsym function
 - iscsymf function
 ms.assetid: 944dfb99-f2b8-498c-9f55-dbcf370d0a2c
-ms.openlocfilehash: ef5b2487fb49739f9a073adbc87546fb5d49d542
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: bc38e72818446a94a51a37b8df5c8c8582971b3f
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70954407"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74857768"
 ---
 # <a name="iscsym-iscsymf-__iscsym-__iswcsym-__iscsymf-__iswcsymf-_iscsym_l-_iswcsym_l-_iscsymf_l-_iswcsymf_l"></a>iscsym, iscsymf, __iscsym, __iswcsym, __iscsymf, __iswcsymf, _iscsym_l, _iswcsym_l, _iscsymf_l, _iswcsymf_l
 
@@ -114,18 +114,18 @@ int _iswcsymf_l(
 ### <a name="parameters"></a>Parametreler
 
 *c*<br/>
-Sınanacak tamsayı. *c* , işlevin dar karakter sürümü için 0-255 aralığında olmalıdır.
+Test etmek için bir tamsayı. *c* , işlevin dar karakter sürümü için 0-255 aralığında olmalıdır.
 
 *ayarlar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-*C* bir harf, alt çizgi veya rakam ise, **__scc** ve **__iswcsym** , sıfır dışında bir değer döndürür. Eğer *c* bir harf veya alt çizgi ise, **__scc** ve **__iswcsymf** sıfır dışında bir değer döndürür. Bu yordamların her biri, *c* , test koşulunu karşılamadığı takdirde 0 döndürür. **_L** sonekine sahip bu işlevlerin sürümleri, yerel ayara bağımlı davranış için geçerli yerel ayar yerine geçirilen *yerel ayarı* kullanmaları dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
+*C* bir harf, alt çizgi veya rakam ise hem **__iscsym** hem de **__iswcsym** sıfır dışında bir değer döndürür. *C* bir harf veya alt çizgi ise hem **__iscsymf** hem de **__iswcsymf** sıfır dışında bir değer döndürür. Bu yordamların her biri, *c* , test koşulunu karşılamadığı takdirde 0 döndürür. **_L** sonekine sahip bu işlevlerin sürümleri, yerel ayara bağımlı davranış için geçerli yerel ayar yerine geçirilen *yerel ayarı* kullanmaları dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Önişlemci makrosu _CTYPE_DISABLE_MACROS tanımlanmadığı sürece bu yordamlar makrolar olarak tanımlanmıştır. Bu yordamların makro sürümlerini kullandığınızda, bağımsız değişkenler birden çok kez değerlendirilebilirler. Bağımsız değişken listesi içinde yan etkileri olan ifadeleri kullanırken dikkatli olun.
+Önişlemci makrosu _CTYPE_DISABLE_MACROS tanımlanmadığı sürece bu yordamlar makrolar olarak tanımlanır. Bu yordamların makro sürümlerini kullandığınızda, bağımsız değişkenler birden çok kez değerlendirilebilirler. Bağımsız değişken listesi içinde yan etkileri olan ifadeleri kullanırken dikkatli olun.
 
 Geriye dönük uyumluluk için, **SCC** ve **SCC** 'ler yalnızca [ &#95; &#95;stdc&#95; ](../../preprocessor/predefined-macros.md) tanımlanmadığında veya 0 olarak tanımlandığında makrolar olarak tanımlanır; Aksi takdirde bunlar tanımsızdır.
 
@@ -133,9 +133,9 @@ Geriye dönük uyumluluk için, **SCC** ve **SCC** 'ler yalnızca [ &#95; &#95;s
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**SCC**, **SCC,** xscc, **__scc**, **__ıwcsym**, **__scc**, **__iswcsymf**, **_scc sym_l**, **_iswcsym_l**, **_scc symf_l**, **_iswcsymf_l**|C: \<CType. h ><br /><br /> C++: \<cctype > veya \<CType. h >|
+|**SCC** **, SCC,** **__iscsym**, **__iswcsym**, **__iscsymf**, **__iswcsymf**, **_iscsym_l**, **_iswcsym_l**, **_iscsymf_l**, **_iswcsymf_l**|C: \<CType. h ><br /><br /> C++: \<cctype > veya \<CType. h >|
 
-**SCC**, SCC, **SCC**, **__scc**, **__ıwcsym**, **__scc**, __iswcsymf, **_scc sym_l**, **_iswcsym_l**, **_scc**sym_l ve **_iswcsymf_l** yordamları Microsoft 'a özgüdür. Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+**SCC** **, SCC,** **__iscsym**, **__iswcsym**, **__iscsymf**, **__iswcsymf**, **_iscsym_l**, **_iswcsym_l**, **_iscsymf_l**ve **_iswcsymf_l** yordamları Microsoft 'a özgüdür. Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

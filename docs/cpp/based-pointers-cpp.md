@@ -10,23 +10,20 @@ helpviewer_keywords:
 - based pointers
 - pointers, based
 ms.assetid: 1e5f2e96-c52e-4738-8e14-87278681205e
-ms.openlocfilehash: 0a0435aa89e4cf744a5bc3c6dc72a715ed55f954
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 393fe8f8d12266650740942d0605152b6548d146
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69498783"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74857703"
 ---
 # <a name="based-pointers-c"></a>Tabanlı İşaretçiler (C++)
 
-**Microsoft 'a özgü**
-
-**__Based** anahtar sözcüğü işaretçiler (varolan işaretçilerden uzaklık olan işaretçiler) temelinde işaretçiler bildirmenize olanak tanır.
+**__Based** anahtar sözcüğü işaretçiler (varolan işaretçilerden uzaklık olan işaretçiler) temelinde işaretçiler bildirmenize olanak tanır. **__Based** anahtar sözcüğü, Microsoft 'a özgüdür.
 
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-
 type __based( base ) declarator
 ```
 
@@ -46,14 +43,14 @@ struct llist_t {
 };
 ```
 
-          `vpBuffer` işaretçisine, programda daha sonra ayrılan belleğin adresi atanır. Bağlantılı liste, `vpBuffer` değerine göre yeniden konumlandırılır.
+`vpBuffer` işaretçisine, programda daha sonra ayrılan belleğin adresi atanır. Bağlantılı liste, `vpBuffer` değerine göre yeniden konumlandırılır.
 
 > [!NOTE]
 >  İşaretçiler içeren kalıcı tanımlayıcılar, [bellek eşlemeli dosyalar](/windows/win32/Memory/file-mapping)kullanılarak da gerçekleştirilebilir.
 
 Temel alınan işaretçinin başvurusu kaldırılırken, temel açıkça belirtilmeli veya bildirim aracılığıyla örtük olarak bilinmelidir.
 
-Önceki sürümlerle uyumluluk için, **_based** , [/za \(devre dışı bırak uzantı](../build/reference/za-ze-disable-language-extensions.md) seçeneği belirtildiğinde **__based** için bir eş anlamlıdır.
+Önceki sürümlerle uyumluluk için, [/za \(dil uzantılarını devre dışı bırak](../build/reference/za-ze-disable-language-extensions.md) derleyici seçeneği belirtildiğinde, **_based** **__based** için bir eş anlamlı.
 
 ## <a name="example"></a>Örnek
 
