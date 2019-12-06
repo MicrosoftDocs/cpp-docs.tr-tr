@@ -4,16 +4,16 @@ ms.date: 09/27/2018
 f1_keywords:
 - filesystem/std::experimental::filesystem::path
 ms.assetid: 8a1227ca-aeb2-4e0e-84aa-86e34e4f4fe8
-ms.openlocfilehash: 10c865aa2bc2431850c69e9dfedbef37414b2cb9
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 0bc26bb04464c52ed08d46e6a12c12cae6909d6f
+ms.sourcegitcommit: 6ddfb8be5e5923a4d90a2c0f93f76a27ce7ac299
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68455092"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74898802"
 ---
 # <a name="path-class"></a>path Sınıfı
 
-**Path** sınıfı, bir yol adı olarak kullanım `string_type`için uygun `myname` şekilde, burada çağrılan,,, bir nesne türü içerir. `string_type`, için `basic_string<value_type>`bir eş anlamlı ' `value_type` dir; burada, Windows üzerinde **wchar_t** veya POSIX üzerinde **char** .
+**Yol** sınıfı, bir yol adı olarak kullanılmak üzere uygun şekilde, `myname` olarak adlandırılan `string_type`türünde bir nesne depolar. `string_type`, `value_type` Windows üzerinde **wchar_t** veya POSIX üzerinde **char** için bir eş anlamlı olan `basic_string<value_type>`.
 
 Daha fazla bilgi ve kod örnekleri için bkz. [dosya sistemi Gezintisi (C++)](../standard-library/file-system-navigation.md).
 
@@ -33,78 +33,78 @@ class path;
 
 |Tür adı|Açıklama|
 |-|-|
-|[const_iterator](#const_iterator)|İçin `iterator`bir eş anlamlı.|
-|[iden](#iterator)|`path`Bileşenleriniatayan çift yönlü bir sabit Yineleyici. `myname`|
-|[string_type](#string_type)|Tür için `basic_string<value_type>`bir eş anlamlı.|
+|[const_iterator](#const_iterator)|`iterator` ile eşanlamlıdır.|
+|[iden](#iterator)|`myname``path` bileşenlerini atayan çift yönlü bir sabit Yineleyici.|
+|[string_type](#string_type)|Tür `basic_string<value_type>`için bir eş anlamlı.|
 
 ### <a name="member-functions"></a>Üye işlevleri
 
 |Üye işlevi|Açıklama|
 |-|-|
-|[ýna](#append)|Gerektiğinde belirtilen diziyi `mypath`ekler, dönüştürülür ve preferred_separator eklemek.|
-|[ata](#assign)|Gerektiğinde `mypath` , belirtilen sırayla değiştirilir.|
-|[başladı](#begin)|Varsa, `path::iterator` PathName içindeki ilk yol öğesini bir belirleme döndürür.|
-|[c_str](#c_str)|İçindeki `mypath`ilk karaktere bir işaretçi döndürür.|
-|[lediğiniz](#clear)|Yürütülür `mypath.clear()`.|
+|[ýna](#append)|`mypath`, dönüştürülüp preferred_separator eklemek için belirtilen diziyi ekler.|
+|[ata](#assign)|`mypath`, belirtilen sırayla değiştirir ve gerektiği şekilde dönüştürülür.|
+|[başladı](#begin)|Varsa, yol adındaki ilk yol öğesini tanımlayarak bir `path::iterator` döndürür.|
+|[c_str](#c_str)|`mypath`ilk karaktere bir işaretçi döndürür.|
+|[lediğiniz](#clear)|`mypath.clear()`yürütür.|
 |[Karşılaştır](#compare)|Karşılaştırma değerlerini döndürür.|
-|[concat](#compare)|Gerektiğinde `mypath`, dönüştürülmüş (ayırıcı eklemek değil) belirtilen diziyi ekler.|
-|[empty](#empty)|Döndürür `mypath.empty()`.|
-|[erer](#end)|Türünde `iterator`bir dizi sonu yineleyiciyi döndürür.|
-|[uzantının](#extension)|Sonekini `filename()`döndürür.|
-|[kısaltın](#filename)|Özel olarak `empty() path() : *--end()`myname kök dizin bileşenini döndürür. Bileşen boş olabilir.|
-|[generic_string](#generic_string)|İle `this->string<Elem, Traits, Alloc>(al)` (Windows 'un altında) eğik çizgiye dönüştürülecek ters eğik çizgi döndürür.|
-|[generic_u16string](#generic_u16string)|İle `u16string()` (Windows 'un altında) eğik çizgiye dönüştürülecek ters eğik çizgi döndürür.|
-|[generic_u32string](#generic_u32string)|İle `u32string()` (Windows 'un altında) eğik çizgiye dönüştürülecek ters eğik çizgi döndürür.|
-|[generic_u8string](#generic_u8string)|İle `u8string()` (Windows 'un altında) eğik çizgiye dönüştürülecek ters eğik çizgi döndürür.|
-|[generic_wstring](#generic_wstring)|İle `wstring()` (Windows 'un altında) eğik çizgiye dönüştürülecek ters eğik çizgi döndürür.|
-|[has_extension](#has_extension)|Döndürür `!extension().empty()`.|
-|[has_filename](#has_filename)|Döndürür `!filename().empty()`.|
-|[has_parent_path](#has_parent_path)|Döndürür `!parent_path().empty()`.|
-|[has_relative_path](#has_relative_path)|Döndürür `!relative_path().empty()`.|
-|[has_root_directory](#has_root_directory)|Döndürür `!root_directory().empty()`.|
-|[has_root_name](#has_root_name)|Döndürür `!root_name().empty()`.|
-|[has_root_path](#has_root_path)|Döndürür `!root_path().empty()`.|
-|[has_stem](#has_stem)|Döndürür `!stem().empty()`.|
-|[is_absolute](#is_absolute)|Windows için işlev döndürür `has_root_name() && has_root_directory()`. POSIX için, işlev döndürür `has_root_directory()`.|
-|[is_relative](#is_relative)|Döndürür `!is_absolute()`.|
-|[make_preferred](#make_preferred)|Her ayırıcıyı gerektiğinde bir preferred_separator dönüştürür.|
-|[Yerel](#native)|Döndürür `myname`.|
-|[parent_path](#parent_path)|Öğesinin `myname`üst yol bileşenini döndürür.|
+|[concat](#compare)|Gerektiğinde `mypath`, dönüştürülmüş (ayırıcı yerleştirmeyen), belirtilen diziyi ekler.|
+|[empty](#empty)|`mypath.empty()` döndürür.|
+|[erer](#end)|`iterator`türünde bir dizi sonu yineleyiciyi döndürür.|
+|[uzantının](#extension)|`filename()`sonekini döndürür.|
+|[filename](#filename)|Myname 'ın kök dizin bileşenini döndürür, özellikle `empty() path() : *--end()`. Bileşen boş olabilir.|
+|[generic_string](#generic_string)|(Windows altında) ile `this->string<Elem, Traits, Alloc>(al)` döndürür ve eğik çizgi eğik çizgiye dönüştürülür.|
+|[generic_u16string](#generic_u16string)|(Windows altında) ile `u16string()` döndürür ve eğik çizgi eğik çizgiye dönüştürülür.|
+|[generic_u32string](#generic_u32string)|(Windows altında) ile `u32string()` döndürür ve eğik çizgi eğik çizgiye dönüştürülür.|
+|[generic_u8string](#generic_u8string)|(Windows altında) ile `u8string()` döndürür ve eğik çizgi eğik çizgiye dönüştürülür.|
+|[generic_wstring](#generic_wstring)|(Windows altında) ile `wstring()` döndürür ve eğik çizgi eğik çizgiye dönüştürülür.|
+|[has_extension](#has_extension)|`!extension().empty()` döndürür.|
+|[has_filename](#has_filename)|`!filename().empty()` döndürür.|
+|[has_parent_path](#has_parent_path)|`!parent_path().empty()` döndürür.|
+|[has_relative_path](#has_relative_path)|`!relative_path().empty()` döndürür.|
+|[has_root_directory](#has_root_directory)|`!root_directory().empty()` döndürür.|
+|[has_root_name](#has_root_name)|`!root_name().empty()` döndürür.|
+|[has_root_path](#has_root_path)|`!root_path().empty()` döndürür.|
+|[has_stem](#has_stem)|`!stem().empty()` döndürür.|
+|[is_absolute](#is_absolute)|Windows için işlev `has_root_name() && has_root_directory()`döndürür. POSIX için işlev `has_root_directory()`döndürür.|
+|[is_relative](#is_relative)|`!is_absolute()` döndürür.|
+|[make_preferred](#make_preferred)|Her ayırıcıyı gerektiğinde preferred_separator dönüştürür.|
+|[Yerel](#native)|`myname` döndürür.|
+|[parent_path](#parent_path)|`myname`üst yol bileşenini döndürür.|
 |[preferred_separator](#preferred_separator)|Sabit nesne, ana bilgisayar işletim sistemine bağlı olarak yol bileşenlerini ayırmak için tercih edilen karakteri verir. |
-|[relative_path](#relative_path)|Göreli yol bileşenini `myname`döndürür. |
+|[relative_path](#relative_path)|`myname`göreli yol bileşenini döndürür. |
 |[remove_filename](#remove_filename)|Dosya adını kaldırır.|
-|[replace_extension](#replace_extension)|Uzantısının yerini alır `myname`. |
+|[replace_extension](#replace_extension)|`myname`uzantısını değiştirir. |
 |[replace_filename](#replace_filename)|RBu dosya adını alır.|
-|[root_directory](#root_directory)|Kök dizin bileşenini `myname`döndürür. |
-|[root_name](#root_name)|Kök adı bileşenini `myname`döndürür. |
-|[root_path](#root_path)|Kök yolu bileşenini `myname`döndürür.|
-|[stem](#stem)|`stem` Bileşenini`myname`döndürür.|
-|[string](#string)|İçinde `mypath`depolanan sırayı dönüştürür.|
-|[Kur](#swap)|Yürütülür `swap(mypath, right.mypath)`.|
-|[u16string](#u16string)|İçinde `mypath` depolanan diziyi UTF-16 ' a dönüştürür ve türündeki `u16string`bir nesne içinde depolanmış şekilde döndürür.|
-|[u32string](#u32string)|İçinde `mypath` depolanan diziyi UTF-32 ' a dönüştürür ve türündeki `u32string`bir nesne içinde depolanmış şekilde döndürür.|
-|[u8string](#u8string)|İçinde `mypath` depolanan diziyi UTF-8 ' e dönüştürür ve türünde `u8string`bir nesne içinde depolanmış şekilde döndürür.|
+|[root_directory](#root_directory)|`myname`kök dizin bileşenini döndürür. |
+|[root_name](#root_name)|`myname`kök adı bileşenini döndürür. |
+|[root_path](#root_path)|`myname`kök yolu bileşenini döndürür.|
+|[stem](#stem)|`myname``stem` bileşenini döndürür.|
+|[string](#string)|`mypath`depolanan sırayı dönüştürür.|
+|[Kur](#swap)|`swap(mypath, right.mypath)`yürütür.|
+|[u16string](#u16string)|`mypath` depolanan diziyi UTF-16 ' a dönüştürür ve `u16string`türünde bir nesne içinde depolanmış şekilde döndürür.|
+|[u32string](#u32string)|`mypath` depolanan sırayı UTF-32 ' a dönüştürür ve `u32string`türünde bir nesne içinde depolanmış şekilde döndürür.|
+|[u8string](#u8string)|`mypath` depolanan sırayı UTF-8 ' e dönüştürür ve `u8string`türünde bir nesne içinde depolanmış şekilde döndürür.|
 |[value_type](#value_type)|Bu tür, ana bilgisayar işletim sistemi tarafından sık kırmızı yol öğelerini tanımlar.|
-|[wstring](#wstring)|İçinde `mypath` depolanan sırayı, ana bilgisayar sistemi tarafından bir `wchar_t` sıra için sık kırmızı kodlamaya dönüştürür ve türündeki `wstring`bir nesneye depolanmış şekilde döndürür.|
+|[wstring](#wstring)|`mypath` depolanan sırayı, bir `wchar_t` sırası için ana bilgisayar sistemi tarafından sık kırmızı kodlamaya dönüştürür ve `wstring`türünde bir nesnede depolanan döndürür.|
 
 ### <a name="operators"></a>İşleçler
 
 |İşleç|Açıklama|
 |-|-|
 |[operator=](#op_as)|Yolun öğelerini başka bir yolun kopyasıyla değiştirir.|
-|[operator+=](#op_add)|Çeşitli `concat` ifadeler.|
-|[işleç/=](#op_divide)|Çeşitli `append` ifadeler.|
-|[string_type işleci](#op_string)|Döndürür `myname`.|
+|[operator+=](#op_add)|Çeşitli `concat` ifadeleri.|
+|[işleç/=](#op_divide)|Çeşitli `append` ifadeleri.|
+|[işleç string_type](#op_string)|`myname` döndürür.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<dosya sistemi >
+**Üstbilgi:** \<FileSystem >
 
 **Ad alanı:** std:: deneysel:: FileSystem
 
 ## <a name="append"></a>path:: Append
 
-Belirtilen diziyi `mypath`, dönüştürülecek ve `preferred_separator` gereken şekilde sonuna ekler.
+`mypath`, dönüştürülüp `preferred_separator` eklemek için belirtilen diziyi ekler.
 
 ```cpp
 template <class Source>
@@ -116,18 +116,18 @@ path& append(InIt first, InIt last);
 
 ### <a name="parameters"></a>Parametreler
 
-*kaynaktaki*\
+*kaynak*\
 Belirtilen sıra.
 
-*adı*\
+*ilk*\
 Belirtilen dizinin başlangıcı.
 
-*soyadına*\
+*son*\
 Belirtilen dizinin sonu.
 
 ## <a name="assign"></a>path:: Assign
 
-Gerektiğinde `mypath` , belirtilen sırayla değiştirilir.
+`mypath`, belirtilen sırayla değiştirir ve gerektiği şekilde dönüştürülür.
 
 ```cpp
 template <class Source>
@@ -139,18 +139,18 @@ path& assign(InIt first, InIt last);
 
 ### <a name="parameters"></a>Parametreler
 
-*kaynaktaki*\
+*kaynak*\
 Belirtilen sıra.
 
-*adı*\
+*ilk*\
 Belirtilen dizinin başlangıcı.
 
-*soyadına*\
+*son*\
 Belirtilen dizinin sonu.
 
 ## <a name="begin"></a>path:: Begin
 
-Varsa, `path::iterator` PathName içindeki ilk yol öğesini bir belirleme döndürür.
+Varsa, yol adındaki ilk yol öğesini tanımlayarak bir `path::iterator` döndürür.
 
 ```cpp
 iterator begin() const;
@@ -158,7 +158,7 @@ iterator begin() const;
 
 ## <a name="c_str"></a>yol:: c_str
 
-İçindeki `mypath`ilk karaktere bir işaretçi döndürür.
+`mypath`ilk karaktere bir işaretçi döndürür.
 
 ```cpp
 const value_type& *c_str() const noexcept;
@@ -166,7 +166,7 @@ const value_type& *c_str() const noexcept;
 
 ## <a name="clear"></a>path:: Clear
 
-Yürütülür `mypath.clear()`.
+`mypath.clear()`yürütür.
 
 ```cpp
 void clear() noexcept;
@@ -174,7 +174,7 @@ void clear() noexcept;
 
 ## <a name="compare"></a>path:: Compare
 
-İlk işlev döndürür `mypath.compare(pval.native())`. İkinci işlev döndürür `mypath.compare(str)`. Üçüncü işlev döndürür `mypath.compare(ptr)`.
+İlk işlev `mypath.compare(pval.native())`döndürür. İkinci işlev `mypath.compare(str)`döndürür. Üçüncü işlev `mypath.compare(ptr)`döndürür.
 
 ```cpp
 int compare(const path& pval) const noexcept;
@@ -187,15 +187,15 @@ int compare(const value_type *ptr) const;
 *Pval*\
 Karşılaştırılacak yol.
 
-*üstbilgisine*\
+*str*\
 Karşılaştırılacak dize.
 
-*kaydetmeye*\
+*ptr*\
 Karşılaştırılacak işaretçi.
 
 ## <a name="concat"></a>path:: Concat
 
-Gerektiğinde `mypath`, dönüştürülmüş (ayırıcı eklemek değil) belirtilen diziyi ekler.
+Gerektiğinde `mypath`, dönüştürülmüş (ayırıcı yerleştirmeyen), belirtilen diziyi ekler.
 
 ```cpp
 template <class Source>
@@ -207,18 +207,18 @@ path& concat(InIt first, InIt last);
 
 ### <a name="parameters"></a>Parametreler
 
-*kaynaktaki*\
+*kaynak*\
 Belirtilen sıra.
 
-*adı*\
+*ilk*\
 Belirtilen dizinin başlangıcı.
 
-*soyadına*\
+*son*\
 Belirtilen dizinin sonu.
 
 ## <a name="const_iterator"></a>yol:: const_iterator
 
-İçin `iterator`bir eş anlamlı.
+`iterator` ile eşanlamlıdır.
 
 ```cpp
 typedef iterator const_iterator;
@@ -226,7 +226,7 @@ typedef iterator const_iterator;
 
 ## <a name="empty"></a>path:: Empty
 
-Döndürür `mypath.empty()`.
+`mypath.empty()` döndürür.
 
 ```cpp
 bool empty() const noexcept;
@@ -234,7 +234,7 @@ bool empty() const noexcept;
 
 ## <a name="end"></a>path:: End
 
-Türünde `iterator`bir dizi sonu yineleyiciyi döndürür.
+`iterator`türünde bir dizi sonu yineleyiciyi döndürür.
 
 ```cpp
 iterator end() const;
@@ -242,7 +242,7 @@ iterator end() const;
 
 ## <a name="extension"></a>path:: Extension
 
-Sonekini `filename()`döndürür.
+`filename()`sonekini döndürür.
 
 ```cpp
 path extension() const;
@@ -250,15 +250,15 @@ path extension() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şu şekilde sonek `filename() X` döndürür:
+`filename() X` sonekini döndürür, örneğin:
 
-`X == path(".") || X == path("..")` Yadanokta`X` içermiyorsa, sonek boştur.
+`X == path(".") || X == path("..")` veya `X` nokta içermiyorsa, son ek boştur.
 
 Aksi takdirde, sonek en sağdaki noktayı (ve içerir) ile başlar.
 
 ## <a name="filename"></a>yol:: filename
 
-Özel olarak `empty() path() : *--end()`myname kök dizin bileşenini döndürür. Bileşen boş olabilir.
+Myname 'ın kök dizin bileşenini döndürür, özellikle `empty() path() : *--end()`. Bileşen boş olabilir.
 
 ```cpp
 path filename() const;
@@ -266,7 +266,7 @@ path filename() const;
 
 ## <a name="generic_string"></a>yol:: generic_string
 
-İle `this->string<Elem, Traits, Alloc>(al)` (Windows 'un altında) eğik çizgiye dönüştürülecek ters eğik çizgi döndürür.
+(Windows altında) ile `this->string<Elem, Traits, Alloc>(al)` döndürür ve eğik çizgi eğik çizgiye dönüştürülür.
 
 ```cpp
 template <class Elem,
@@ -280,7 +280,7 @@ string generic_string() const;
 
 ## <a name="generic_u16string"></a>yol:: generic_u16string
 
-İle `u16string()` (Windows 'un altında) eğik çizgiye dönüştürülecek ters eğik çizgi döndürür.
+(Windows altında) ile `u16string()` döndürür ve eğik çizgi eğik çizgiye dönüştürülür.
 
 ```cpp
 u16string generic_u16string() const;
@@ -288,7 +288,7 @@ u16string generic_u16string() const;
 
 ## <a name="generic_u32string"></a>yol:: generic_u32string
 
-İle `u32string()` (Windows 'un altında) eğik çizgiye dönüştürülecek ters eğik çizgi döndürür.
+(Windows altında) ile `u32string()` döndürür ve eğik çizgi eğik çizgiye dönüştürülür.
 
 ```cpp
 u32string generic_u32string() const;
@@ -296,7 +296,7 @@ u32string generic_u32string() const;
 
 ## <a name="generic_u8string"></a>yol:: generic_u8string
 
-İle `u8string()` (Windows 'un altında) eğik çizgiye dönüştürülecek ters eğik çizgi döndürür.
+(Windows altında) ile `u8string()` döndürür ve eğik çizgi eğik çizgiye dönüştürülür.
 
 ```cpp
 string generic_u8string() const;
@@ -304,7 +304,7 @@ string generic_u8string() const;
 
 ## <a name="generic_wstring"></a>yol:: generic_wstring
 
-İle `wstring()` (Windows 'un altında) eğik çizgiye dönüştürülecek ters eğik çizgi döndürür.
+(Windows altında) ile `wstring()` döndürür ve eğik çizgi eğik çizgiye dönüştürülür.
 
 ```cpp
 wstring generic_wstring() const;
@@ -312,7 +312,7 @@ wstring generic_wstring() const;
 
 ## <a name="has_extension"></a>yol:: has_extension
 
-Döndürür `!extension().empty()`.
+`!extension().empty()` döndürür.
 
 ```cpp
 bool has_extension() const;
@@ -320,7 +320,7 @@ bool has_extension() const;
 
 ## <a name="has_filename"></a>yol:: has_filename
 
-Döndürür `!filename().empty()`.
+`!filename().empty()` döndürür.
 
 ```cpp
 bool has_filename() const;
@@ -328,7 +328,7 @@ bool has_filename() const;
 
 ## <a name="has_parent_path"></a>yol:: has_parent_path
 
-Döndürür `!parent_path().empty()`.
+`!parent_path().empty()` döndürür.
 
 ```cpp
 bool has_parent_path() const;
@@ -336,7 +336,7 @@ bool has_parent_path() const;
 
 ## <a name="has_relative_path"></a>yol:: has_relative_path
 
-Döndürür `!relative_path().empty()`.
+`!relative_path().empty()` döndürür.
 
 ```cpp
 bool has_relative_path() const;
@@ -344,7 +344,7 @@ bool has_relative_path() const;
 
 ## <a name="has_root_directory"></a>yol:: has_root_directory
 
-Döndürür `!root_directory().empty()`.
+`!root_directory().empty()` döndürür.
 
 ```cpp
 bool has_root_directory() const;
@@ -352,7 +352,7 @@ bool has_root_directory() const;
 
 ## <a name="has_root_name"></a>yol:: has_root_name
 
-Döndürür `!root_name().empty()`.
+`!root_name().empty()` döndürür.
 
 ```cpp
 bool has_root_name() const;
@@ -360,7 +360,7 @@ bool has_root_name() const;
 
 ## <a name="has_root_path"></a>yol:: has_root_path
 
-Döndürür `!root_path().empty()`.
+`!root_path().empty()` döndürür.
 
 ```cpp
 bool has_root_path() const;
@@ -368,7 +368,7 @@ bool has_root_path() const;
 
 ## <a name="has_stem"></a>yol:: has_stem
 
-Döndürür `!stem().empty()`.
+`!stem().empty()` döndürür.
 
 ```cpp
 bool has_stem() const;
@@ -376,7 +376,7 @@ bool has_stem() const;
 
 ## <a name="is_absolute"></a>yol:: is_absolute
 
-Windows için işlev döndürür `has_root_name() && has_root_directory()`. POSIX için, işlev döndürür `has_root_directory()`.
+Windows için işlev `has_root_name() && has_root_directory()`döndürür. POSIX için işlev `has_root_directory()`döndürür.
 
 ```cpp
 bool is_absolute() const;
@@ -384,7 +384,7 @@ bool is_absolute() const;
 
 ## <a name="is_relative"></a>yol:: is_relative
 
-Döndürür `!is_absolute()`.
+`!is_absolute()` döndürür.
 
 ```cpp
 bool is_relative() const;
@@ -392,7 +392,7 @@ bool is_relative() const;
 
 ## <a name="iterator"></a>yol:: Yineleyici
 
-Yol bileşenlerini `myname`atayan çift yönlü bir sabit Yineleyici.
+`myname`yol bileşenlerini atayan çift yönlü bir sabit Yineleyici.
 
 ```cpp
 class iterator
@@ -409,31 +409,31 @@ class iterator
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sınıfı, dizideki `path` `myname` bileşenleri atayan çift yönlü bir sabit yineleyiciyi açıklar:
+Sınıfı, dizideki `myname` `path` bileşenlerini atayan çift yönlü sabit bir yineleyiciyi açıklar:
 
 1. varsa kök adı
 
 1. varsa kök dizin
 
-1. varsa, üst `path`öğenin kalan dizin öğeleri, varsa dosya adıyla biter
+1. varsa üst `path`kalan dizin öğeleri, varsa dosya adıyla biter
 
-Şu `pval` türde`path`bir nesne için:
+`path`türünde bir nesne `pval` için:
 
-1. `path::iterator X = pval.begin()`varsa, PATHNAME `path` içindeki ilk öğeyi belirler.
+1. `path::iterator X = pval.begin()`, varsa, PATHNAME içindeki ilk `path` öğeyi belirler.
 
-1. `X == pval.end()`, bileşen dizisinin `X` sonundan hemen sonra işaret ettiği zaman geçerlidir.
+1. `X == pval.end()`, `X` yalnızca bileşenlerin dizisinin sonunu aşıp geçmiş olduğunda doğrudur.
 
-3. `*X`geçerli bileşenle eşleşen bir dize döndürür
+3. `*X` geçerli bileşenle eşleşen bir dize döndürür
 
-1. `++X`varsa dizideki sonraki bileşeni belirler.
+1. `++X`, varsa dizideki sonraki bileşeni belirler.
 
-1. `--X`varsa, dizideki önceki bileşeni belirler.
+1. `--X`, varsa önceki bileşeni dizide belirler.
 
-1. Değiştirme `myname` , içindeki `myname`öğeleri tanımlayarak tüm yineleyiciler geçersiz kılar.
+1. `myname` değiştirme, tüm yineleyiciler `myname`öğeleri belirterek geçersiz kılar.
 
 ## <a name="make_preferred"></a>yol:: make_preferred
 
-Her ayırıcıyı gerektiğinde bir `preferred_separator` öğesine dönüştürür.
+Her ayırıcıyı gerektiğinde `preferred_separator` dönüştürür.
 
 ```cpp
 path& make_preferred();
@@ -441,7 +441,7 @@ path& make_preferred();
 
 ## <a name="native"></a>path:: Native
 
-Döndürür `myname`.
+`myname` döndürür.
 
 ```cpp
 const string_type& native() const noexcept;
@@ -461,19 +461,19 @@ path& operator=(const Source& source);
 
 ### <a name="parameters"></a>Parametreler
 
-*Right*\
-İçine`path`Kopyalanmakta olan [yol](../standard-library/path-class.md) .
+*sağ*\
+`path`kopyalandığı [yol](../standard-library/path-class.md) .
 
-*kaynaktaki*\
+*kaynak*\
 Kaynak yolu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk üye işleci öğesine `right.myname` `myname`kopyalar. İkinci üye işleci öğesine `right.myname` `myname`gider. Üçüncü üye işleci ile aynı şekilde `*this = path(source)`davranır.
+İlk üye işleci `right.myname` `myname`kopyalar. İkinci üye işleci `right.myname` `myname`gider. Üçüncü üye işleci `*this = path(source)`ile aynı şekilde davranır.
 
 ## <a name="op_add"></a>path:: operator + =
 
-Çeşitli `concat` ifadeler.
+Çeşitli `concat` ifadeleri.
 
 ```cpp
 path& operator+=(const path& right);
@@ -490,19 +490,19 @@ path& operator+=(Elem elem);
 
 ### <a name="parameters"></a>Parametreler
 
-*Right*\
+*sağ*\
 Eklenen yol.
 
-*üstbilgisine*\
+*str*\
 Eklenen dize.
 
-*kaydetmeye*\
+*ptr*\
 Eklenen işaretçi.
 
-*elem*\
-Eklendi `value_type` veya .`Elem`
+*eled*\
+Eklenen `value_type` veya `Elem`.
 
-*kaynaktaki*\
+*kaynak*\
 Eklenen kaynak.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -523,7 +523,7 @@ Eklenen kaynak.
 
 ## <a name="op_divide"></a>path:: operator/=
 
-Çeşitli `append` ifadeler.
+Çeşitli `append` ifadeleri.
 
 ```cpp
 path& operator/=(const path& right);
@@ -534,10 +534,10 @@ path& operator/=(const Source& source);
 
 ### <a name="parameters"></a>Parametreler
 
-*Right*\
+*sağ*\
 Eklenen yol.
 
-*kaynaktaki*\
+*kaynak*\
 Eklenen kaynak.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -550,7 +550,7 @@ Eklenen kaynak.
 
 ## <a name="op_string"></a>path:: operator string_type
 
-Döndürür `myname`.
+`myname` döndürür.
 
 ```cpp
 operator string_type() const;
@@ -558,7 +558,7 @@ operator string_type() const;
 
 ## <a name="parent_path"></a>yol::p arent_path
 
-Öğesinin `myname`üst yol bileşenini döndürür.
+`myname`üst yol bileşenini döndürür.
 
 ```cpp
 path parent_path() const;
@@ -566,11 +566,11 @@ path parent_path() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Öğesinin `myname`üst yol bileşenini, özellikle `myname` kaldırıldıktan sonra `filename().native()` öneki ve hemen önceki Dizin ayırıcılarını döndürür. (Eşit olarak, `begin() != end()`ise, Aralık `[begin(), --end())` içindeki tüm öğelerin birleştirilme, büyük ölçüde uygulanmasıyla `operator/=`yapılır.) Bileşen boş olabilir.
+`filename().native()` ve hemen önceki Dizin ayırıcılarını kaldırdıktan sonra `myname` ön eki olan `myname`üst yol bileşenini döndürür. (Eşit olarak, `begin() != end()`, Aralık içindeki tüm öğelerin birleştirilmesiyle `[begin(), --end())`, `operator/=`yüksek bir şekilde uygulanıyor.) Bileşen boş olabilir.
 
 ## <a name="path"></a>yol::p m
 
-`path` Çeşitli şekillerde oluşturur.
+Çeşitli yollarla bir `path` oluşturur.
 
 ```cpp
 path();
@@ -593,38 +593,38 @@ path(InIt first, InIt last, const locale& loc);
 
 ### <a name="parameters"></a>Parametreler
 
-*Right*\
+*sağ*\
 Oluşturulan yolun bir kopya olduğu yol.
 
-*kaynaktaki*\
+*kaynak*\
 Oluşturulan yolun bir kopya olduğu kaynak.
 
-*çerçeve*\
+*loc*\
 Belirtilen yerel ayar.
 
-*adı*\
+*ilk*\
 Kopyalanacak ilk öğenin konumu.
 
-*soyadına*\
+*son*\
 Kopyalanacak son öğenin konumu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Her bir yapıyı `myname` çeşitli yollarla oluşturucular:
+Kurucuların hepsi çeşitli yollarla `myname` oluşturun:
 
-Bunun için `path()`. `myname()`
+`path()` için `myname()`.
 
-İçin `path(const path& right`) `myname(right.myname)`.
+`path(const path& right`için) `myname(right.myname)`.
 
-Bunun için `path(path&& right)`. `myname(right.myname)`
+`path(path&& right)` için `myname(right.myname)`.
 
-Bunun için `template<class Source> path(const Source& source)`. `myname(source)`
+`template<class Source> path(const Source& source)` için `myname(source)`.
 
-Bunun için `template<class Source> path(const Source& source, const locale& loc)` `loc`, ' den gereken codecvt modellerini elde edin. `myname(source)`
+`template<class Source> path(const Source& source, const locale& loc)` için `myname(source)`, `loc`gereken tüm codecvt modellerini elde edin.
 
-Bunun için `template<class InIt> path(InIt first, InIt last)`. `myname(first, last)`
+`template<class InIt> path(InIt first, InIt last)` için `myname(first, last)`.
 
-Bunun için `template<class InIt> path(InIt first, InIt last, const locale& loc)` `loc`, ' den gereken codecvt modellerini elde edin. `myname(first, last)`
+`template<class InIt> path(InIt first, InIt last, const locale& loc)` için `myname(first, last)`, `loc`gereken tüm codecvt modellerini elde edin.
 
 ## <a name="preferred_separator"></a>yol::p referred_separator
 
@@ -633,7 +633,7 @@ Sabit nesne, ana bilgisayar işletim sistemine bağlı olarak yol bileşenlerini
 ```cpp
 #if _WIN32_C_LIB
 static constexpr value_type preferred_separator == L'\\';
-#else // assume Posix
+#else // assume POSIX
 static constexpr value_type preferred_separator == '/';
 #endif // filesystem model now defined
 ```
@@ -644,7 +644,7 @@ Bunun yerine, Windows 'un altında L '/' kullanmak için çoğu bağlamda eşit 
 
 ## <a name="relative_path"></a>yol:: relative_path
 
-Göreli yol bileşenini `myname`döndürür.
+`myname`göreli yol bileşenini döndürür.
 
 ```cpp
 path relative_path() const;
@@ -652,7 +652,7 @@ path relative_path() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Öğesinin `myname`göreli yol bileşenini, özellikle `myname` kaldırıldıktan sonra `root_path().native()` ve bundan sonraki tüm yedekli Dizin ayırıcıları döndürür. Bileşen boş olabilir.
+`myname`göreli yol bileşenini döndürür, özellikle, `root_path().native()` kaldırıldıktan sonra `myname` son eki ve bundan sonraki yedekli Dizin ayırıcıları. Bileşen boş olabilir.
 
 ## <a name="remove_filename"></a>yol:: remove_filename
 
@@ -664,7 +664,7 @@ path& remove_filename();
 
 ## <a name="replace_extension"></a>yol:: replace_extension
 
-Uzantısının yerini alır `myname`.
+`myname`uzantısını değiştirir.
 
 ```cpp
 path& replace_extension(const path& newext = path());
@@ -677,7 +677,7 @@ Yeni uzantı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Önce son eki `extension().native()` öğesinden `myname`kaldırır. Sonra ( `!newext.empty() && newext[0] != dot` `dot` neredeolursa`dot` ), öğesine`myname`eklenir. `*path(".").c_str()` Ardından *newext* öğesine `myname`eklenir.
+Önce `myname``extension().native()` son eki kaldırır. `!newext.empty() && newext[0] != dot` (`dot` `*path(".").c_str()`) ise, `dot` `myname`eklenir. Ardından *newext* `myname`eklenir.
 
 ## <a name="replace_filename"></a>yol:: replace_filename
 
@@ -705,7 +705,7 @@ return (*this);
 
 ## <a name="root_directory"></a>yol:: root_directory
 
-Kök dizin bileşenini `myname`döndürür.
+`myname`kök dizin bileşenini döndürür.
 
 ```cpp
 path root_directory() const;
@@ -717,7 +717,7 @@ Bileşen boş olabilir.
 
 ## <a name="root_name"></a>yol:: root_name
 
-Kök adı bileşenini `myname`döndürür.
+`myname`kök adı bileşenini döndürür.
 
 ```cpp
 path root_name() const;
@@ -729,7 +729,7 @@ Bileşen boş olabilir.
 
 ## <a name="root_path"></a>yol:: root_path
 
-Kök yolu bileşenini `myname`döndürür.
+`myname`kök yolu bileşenini döndürür.
 
 ```cpp
 path root_path() const;
@@ -737,11 +737,11 @@ path root_path() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-, `myname`Özel olarak `root_name()`  / öğesinin kök yolu bileşeninidöndürür.`root_directory` Bileşen boş olabilir.
+`myname`, özel olarak  / `root_directory``root_name()`kök yolu bileşenini döndürür. Bileşen boş olabilir.
 
 ## <a name="stem"></a>path:: stem
 
-`stem` Bileşenini`myname`döndürür.
+`myname``stem` bileşenini döndürür.
 
 ```cpp
 path stem() const;
@@ -749,11 +749,11 @@ path stem() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`myname`, Özellikle de`filename().native()` sondaki kaldırılmış`extension().native()` olan `stem` bileşenini döndürür. Bileşen boş olabilir.
+`myname``stem` bileşenini, özellikle de herhangi bir sondaki `extension().native()` kaldırılan `filename().native()` döndürür. Bileşen boş olabilir.
 
 ## <a name="string"></a>path:: String
 
-İçinde `mypath`depolanan sırayı dönüştürür.
+`mypath`depolanan sırayı dönüştürür.
 
 ```cpp
 template \<class Elem, class Traits = char_traits\<Elem>, class Alloc = allocator\<Elem>>
@@ -763,7 +763,7 @@ string string() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk (Template) üye işlevi, depolanan `mypath` sırayı aynı şekilde dönüştürür:
+İlk (Template) üye işlevi, `mypath` depolanan sırayı aynı şekilde dönüştürür:
 
 1. `string()` için `string<char, Traits, Alloc>()`
 
@@ -773,11 +773,11 @@ string string() const;
 
 1. `u32string()` için `string<char32_t, Traits, Alloc>()`
 
-İkinci üye işlevi, içinde `mypath` depolanan sırayı bir **karakter** sırası için ana bilgisayar sistemi tarafından sık kırmızı kodlamaya dönüştürür ve türündeki `string`bir nesne içinde depolanmış şekilde döndürür.
+İkinci üye işlevi, `mypath` depolanan sırayı, bir **karakter** sırası için ana bilgisayar sistemi tarafından sık kırmızı kodlamaya dönüştürür ve `string`türünde bir nesnede saklı olarak döndürür.
 
 ## <a name="string_type"></a>yol:: string_type
 
-Tür için `basic_string<value_type>`bir eş anlamlı.
+Tür `basic_string<value_type>`için bir eş anlamlı.
 
 ```cpp
 typedef basic_string<value_type> string_type;
@@ -785,7 +785,7 @@ typedef basic_string<value_type> string_type;
 
 ## <a name="swap"></a>path:: swap
 
-Yürütülür `swap(mypath, right.mypath)`.
+`swap(mypath, right.mypath)`yürütür.
 
 ```cpp
 void swap(path& right) noexcept;
@@ -793,7 +793,7 @@ void swap(path& right) noexcept;
 
 ## <a name="u16string"></a>yol:: u16string
 
-İçinde `mypath` depolanan diziyi UTF-16 ' a dönüştürür ve türündeki `u16string`bir nesne içinde depolanmış şekilde döndürür.
+`mypath` depolanan diziyi UTF-16 ' a dönüştürür ve `u16string`türünde bir nesne içinde depolanmış şekilde döndürür.
 
 ```cpp
 u16string u16string() const;
@@ -801,7 +801,7 @@ u16string u16string() const;
 
 ## <a name="u32string"></a>yol:: u32string
 
-İçinde `mypath` depolanan diziyi UTF-32 ' a dönüştürür ve türündeki `u32string`bir nesne içinde depolanmış şekilde döndürür.
+`mypath` depolanan sırayı UTF-32 ' a dönüştürür ve `u32string`türünde bir nesne içinde depolanmış şekilde döndürür.
 
 ```cpp
 u32string u32string() const;
@@ -809,7 +809,7 @@ u32string u32string() const;
 
 ## <a name="u8string"></a>yol:: u8string
 
-İçinde `mypath` depolanan diziyi UTF-8 ' e dönüştürür ve türünde `u8string`bir nesne içinde depolanmış şekilde döndürür.
+`mypath` depolanan sırayı UTF-8 ' e dönüştürür ve `u8string`türünde bir nesne içinde depolanmış şekilde döndürür.
 
 ```cpp
 string u8string() const;
@@ -817,19 +817,19 @@ string u8string() const;
 
 ## <a name="value_type"></a>yol:: value_type
 
-Türü, ana bilgisayar `path` işletim sistemi tarafından sık kırmızı olan öğeleri tanımlar.
+Tür, ana bilgisayar işletim sistemi tarafından kullanılan `path` öğelerini açıklar.
 
 ```cpp
 #if _WIN32_C_LIB
 typedef wchar_t value_type;
-#else // assume Posix
+#else // assume POSIX
 typedef char value_type;
 #endif // filesystem model now defined
 ```
 
 ## <a name="wstring"></a>path:: wstring
 
-İçinde `mypath` depolanan sırayı, bir **wchar_t** sırasının ana bilgisayar sistemi tarafından sık kırmızı kodlamaya dönüştürür ve türündeki `wstring`bir nesneye depolanmış şekilde döndürür.
+`mypath` depolanan sırayı, bir **wchar_t** sırası için ana bilgisayar sistemi tarafından sık kırmızı kodlamaya dönüştürür ve `wstring`türünde bir nesnede depolanan döndürür.
 
 ```cpp
 wstring wstring() const;

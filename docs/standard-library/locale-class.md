@@ -21,12 +21,12 @@ helpviewer_keywords:
 - std::locale [C++], facet
 - std::locale [C++], id
 ms.assetid: 7dd6d271-472d-4750-8fb5-ea8f55fbef62
-ms.openlocfilehash: a11f5bf7e8c280da3ba2cae82cf355a3b28c0577
-ms.sourcegitcommit: 4b0928a1a497648d0d327579c8262f25ed20d02e
+ms.openlocfilehash: 551bca93a30bee52dc4c838864df28cb747d91df
+ms.sourcegitcommit: 6ddfb8be5e5923a4d90a2c0f93f76a27ce7ac299
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72890165"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74898837"
 ---
 # <a name="locale-class"></a>locale Sınıfı
 
@@ -108,11 +108,11 @@ messages<char>
 messages<wchar_t>
 ```
 
-(Son kategori C standart tarafından değil ama POSIX tarafından gereklidir.)
+(Son kategori, POSIX için gereklidir, ancak C standardı değildir.)
 
 Bu önceden tanımlı modellerden bazıları `iostream` sınıfları tarafından, sayısal değerlerin metin dizilerinden ve bunlara dönüştürülmesini denetlemek için kullanılır.
 
-Sınıf yerel ayarı nesnesi ayrıca bir yerel ayar adını sınıf [dizesinin](../standard-library/string-typedefs.md#string)bir nesnesi olarak depolar. Yerel ayar modeli oluşturmak için geçersiz yerel ayar adı kullanmak veya bir yerel ayar nesnesi [runtime_error](../standard-library/runtime-error-class.md)sınıfının bir nesnesini oluşturur. Yerel ayar nesnesi, bir C stili yerel ayarın nesne tarafından temsil edilen bir yerel ayara karşılık geldiğinden emin değilse, depolanan yerel ayar adı `"*"`. Aksi takdirde, bazı yerel ayar nesne `locale_object`için standart C Kitaplığı içinde, `setlocale(LC_ALL , locale_object.`[ad](#name)`().c_str())`çağırarak, eşleşen bir yerel ayar kurabilirsiniz.
+Sınıf yerel ayarı nesnesi ayrıca bir yerel ayar adını sınıf [dizesinin](../standard-library/string-typedefs.md#string)bir nesnesi olarak depolar. Yerel ayar modeli oluşturmak için geçersiz yerel ayar adı kullanmak veya bir yerel ayar nesnesi [runtime_error](../standard-library/runtime-error-class.md)sınıfından bir nesne oluşturur. Yerel ayar nesnesi, bir C stili yerel ayarın nesne tarafından temsil edilen bir yerel ayara karşılık geldiğinden emin değilse, depolanan yerel ayar adı `"*"`. Aksi takdirde, bazı yerel ayar nesne `locale_object`için standart C Kitaplığı içinde, `setlocale(LC_ALL , locale_object.`[ad](#name)`().c_str())`çağırarak, eşleşen bir yerel ayar kurabilirsiniz.
 
 Bu uygulamada, statik üye işlevini de çağırabilirsiniz:
 
@@ -120,7 +120,7 @@ Bu uygulamada, statik üye işlevini de çağırabilirsiniz:
 static locale empty();
 ```
 
-Böylece, modeli olmayan bir yerel bir nesne oluşturabilirsiniz. Ayrıca, saydam bir yerel ayar. Şablon [has_facet](../standard-library/locale-functions.md#has_facet) ve [use_facet](../standard-library/locale-functions.md#use_facet) işlevleri, saydam bir yerel ayarda istenen modeli bulamazsa, önce genel yerel ayara, sonra da saydam ise klasik yerel ayara göz tırabilirler. Bu nedenle, şunu yazabilirsiniz:
+Böylece, modeli olmayan bir yerel bir nesne oluşturabilirsiniz. Ayrıca, saydam bir yerel ayar. Şablon [has_facet](../standard-library/locale-functions.md#has_facet) ve [use_facet](../standard-library/locale-functions.md#use_facet) istenen modeli saydam bir yerel ayarda bulamazsa, önce genel yerel ayara, sonra da saydam ise klasik yerel ayara göz tırabilirler. Bu nedenle, şunu yazabilirsiniz:
 
 ```cpp
 cout.imbue(locale::empty());
@@ -148,14 +148,14 @@ cout.imbue(loc);
 
 |Tür adı|Açıklama|
 |-|-|
-|[alan](#category)|Standart model aileleri belirtmek için bit maskesi değerleri sağlayan bir tamsayı türü.|
+|[Kategori](#category)|Standart model aileleri belirtmek için bit maskesi değerleri sağlayan bir tamsayı türü.|
 
 ### <a name="member-functions"></a>Üye işlevleri
 
 |Üye işlevi|Açıklama|
 |-|-|
 |[bile](#combine)|Belirtilen yerel ayardaki bir modeli hedef yerel ayara ekler.|
-|[ada](#name)|Depolanan yerel ayar adını döndürür.|
+|[Adı](#name)|Depolanan yerel ayar adını döndürür.|
 
 ### <a name="static-functions"></a>Statik işlevler
 
@@ -168,21 +168,21 @@ cout.imbue(loc);
 
 |İşleç|Açıklama|
 |-|-|
-|[işleç =](#op_eq)|Bir yerel ayar atar.|
+|[operator=](#op_eq)|Bir yerel ayar atar.|
 |[operator!=](#op_neq)|İki yerel ayarın farklı olup olmadığını sınar.|
 |[operator ()](#op_call)|İki `basic_string` nesnesini karşılaştırır.|
-|[işleç = =](#op_eq_eq)|İki yerel ayarın farksız olup olmadığını sınar.|
+|[operator==](#op_eq_eq)|İki yerel ayarın farksız olup olmadığını sınar.|
 
 ### <a name="classes"></a>Sınıflar
 
-|örneği|Açıklama|
+|Sınıf|Açıklama|
 |-|-|
 |[facet](#facet_class)|Tüm yerel ayar modelleri için temel sınıf görevi gören sınıf.|
 |[`id`](#id_class)|Üye sınıfı özellikleri, bir yerel ayardaki arama modelleri için bir dizin olarak kullanılan benzersiz bir kimlik sağlar.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<locale >
+**Üst bilgi:** \<yerel ayar >
 
 **Ad alanı:** std
 
@@ -206,25 +206,25 @@ static const int none = 0;
 
 Tür, bir bit maskesi türünün bir grubunu bir grup yerel ayarında temsil eden veya ilgili C yerel ayar kategorilerinden herhangi birini temsil etmek için kullanılabilen bir **int** türü için bir eş anlamlı. Öğeleri şunlardır:
 
-- `collate`, C kategorisine karşılık gelen LC_COLLATE
+- C kategorisine karşılık gelen `collate`LC_COLLATE
 
-- `ctype`, C kategorisine karşılık gelen LC_CTYPE
+- C kategorisine karşılık gelen `ctype`LC_CTYPE
 
-- `monetary`, C kategorisine karşılık gelen LC_MONETARY
+- C kategorisine karşılık gelen `monetary`LC_MONETARY
 
-- `numeric`, C kategorisine karşılık gelen LC_NUMERIC
+- C kategorisine karşılık gelen `numeric`LC_NUMERIC
 
-- `time`, C kategorisine karşılık gelen LC_TIME
+- C kategorisine karşılık gelen `time`LC_TIME
 
-- `messages`, POSIX kategorisine karşılık gelen LC_MESSAGES
+- POSIX kategorisine karşılık gelen `messages`LC_MESSAGES
 
 Diğer iki yararlı değer şunlardır:
 
 - `none`, C kategorilerinin hiçbirine karşılık gelen
 
-- `all`, tüm kategorilerin C birleşime karşılık gelen LC_ALL
+- tüm kategorilerin C birleşime karşılık gelen `all`LC_ALL
 
-`monetary` &#124;`time`gibi bu sabitlerle `OR` kullanarak rastgele bir kategori grubunu temsil edebilirsiniz.
+`monetary` &#124; `time`gibi bu sabitlerle `OR` kullanarak rastgele bir kategori grubunu temsil edebilirsiniz.
 
 ## <a name="classic"></a>Yerel ayar:: klasik
 
@@ -297,7 +297,7 @@ Hedef yerel ayara eklenecek modeli içeren yerel ayar.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Üye işlevi, içinde bulunan veya *source_locale*içinde listelenen model `Facet` **\*** için bir yerel ayar nesnesi döndürür.
+Üye işlevi, ' de bulunan veya *source_locale*listelenen modeli `Facet` **\*** için bir yerel ayar nesnesi döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -443,7 +443,7 @@ Yerel ayarın adı.
 *from_locale*\
 Yeni yerel ayarı oluştururken kopyalanacak yerel ayar.
 
-*Diğer* \
+*Diğer*\
 Kategorinin seçilecek yerel ayar.
 
 *new_category*\
@@ -454,23 +454,23 @@ Oluşturulan yerel ayara değiştirilecek model.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk Oluşturucu, nesneyi genel yerel ayara uyacak şekilde başlatır. İkinci ve üçüncü oluşturucular, *locale_name*yerel ayar adıyla tutarlı davranış sağlamak için tüm yerel ayar kategorilerini başlatır. Kalan oluşturucular, belirtilen özel durumlarla *from_locale*kopyalar:
+İlk Oluşturucu, nesneyi genel yerel ayara uyacak şekilde başlatır. İkinci ve üçüncü oluşturucular, *locale_name*yerel ayar adıyla tutarlı davranış sağlamak için tüm yerel ayar kategorilerini başlatır. Kalan oluşturucular, belirtilen özel durumlarla birlikte *from_locale*kopyalar:
 
 `locale(const locale& from_locale, const locale& Other, category new_category);`
 
-C & *new_category* 'in sıfır olmayan bir kategorisine karşılık gelen *diğer* modellerden değiştirir.
+C & *new_category* sıfır olmayan bir kategoriye karşılık gelen *diğer* modellerden değiştirir.
 
 `locale(const locale& from_locale, const char* locale_name, category new_category);`
 
 `locale(const locale& from_locale, const string& locale_name, category new_category);`
 
-, `replace_category & new_category` sıfır dışında *bir kategoriye karşılık* gelen `locale(locale_name, all)` olan bu modellerden değiştirir.
+`replace_category & new_category` sıfır olmayan bir kategori *replace_category* karşılık gelen bu modellerden `locale(locale_name, all)` değiştirir.
 
 `template<class Facet> locale(const locale& from_locale, Facet* new_facet);`
 
-*new_facet* , null bir işaretçi *değilse, içindeki*(veya öğesine ekler) *from_locale* .
+*new_facet* null bir işaretçi değilse, modeli *new_facet* *from_locale* (veya öğesine ekler) değiştirir.
 
-*Locale_name* yerel ayar adı null bir işaretçisiyse veya geçersiz değilse, işlev [runtime_error](../standard-library/runtime-error-class.md)atar.
+*Locale_name* yerel ayar adı null işaretçisiyse veya geçersiz değilse, işlev [runtime_error](../standard-library/runtime-error-class.md)atar.
 
 ### <a name="example"></a>Örnek
 
@@ -569,7 +569,7 @@ bool operator!=(const locale& right) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ* \
+*sağ*\
 Eşitsizlik için test edilecek yerel ayarlardan biri.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -633,10 +633,10 @@ bool operator()(
 
 ### <a name="parameters"></a>Parametreler
 
-*sol* \
+*sol*\
 Sol dize.
 
-*sağ* \
+*sağ*\
 Doğru dize.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -702,7 +702,7 @@ bool operator==(const locale& right) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ* \
+*sağ*\
 Eşitlik için test edilecek yerel ayarlardan biri.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -759,7 +759,7 @@ and loc3 (English_United States.1252) are not equal.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<locale >](../standard-library/locale.md) \
-[Kod sayfaları](../c-runtime-library/code-pages.md) \
-[Yerel ayar adları, diller ve ülke/bölge dizeleri](../c-runtime-library/locale-names-languages-and-country-region-strings.md) \
+[\<yerel ayar >](../standard-library/locale.md)\
+[Kod sayfaları](../c-runtime-library/code-pages.md)\
+[Yerel ayar adları, diller ve ülke/bölge dizeleri](../c-runtime-library/locale-names-languages-and-country-region-strings.md)\
 [C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)

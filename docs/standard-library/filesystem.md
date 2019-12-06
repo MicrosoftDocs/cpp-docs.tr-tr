@@ -1,5 +1,5 @@
 ---
-title: '&lt;Biçimlendiri&gt;'
+title: '&lt;dosya sistemi&gt;'
 ms.date: 11/04/2016
 f1_keywords:
 - filesystem/std::experimental::filesystem::directory_entry
@@ -9,16 +9,16 @@ f1_keywords:
 - filesystem/std::experimental::filesystem::directory_iterator
 - <filesystem>
 ms.assetid: 5005753b-46fa-43e1-8d4e-1b38617d3cfd
-ms.openlocfilehash: 6f97ad75dcf3f01406f305b713b9d14cbe527c52
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 0f2c90bd7c1d88a94d1dab05b98442111faa71a2
+ms.sourcegitcommit: 6ddfb8be5e5923a4d90a2c0f93f76a27ce7ac299
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68457018"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74898809"
 ---
-# <a name="ltfilesystemgt"></a>&lt;Biçimlendiri&gt;
+# <a name="ltfilesystemgt"></a>&lt;dosya sistemi&gt;
 
-Yollar, dosyalar &lt;ve dizinler hakkındaki bilgileri işleyen ve alan sınıflara ve işlevlere erişim için üstbilgi dosya sistemi > ekleyin.
+Yollar, dosyalar ve dizinler hakkında bilgi işleyen ve alan sınıflar ve işlevlere erişim için &lt;dosya sistemi > üst bilgisini dahil edin.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -29,21 +29,21 @@ using namespace std::experimental::filesystem::v1;
 ```
 
 > [!IMPORTANT]
-> Visual Studio 2017 \<sürümünden itibaren FileSystem > üst bilgisi henüz bir C++ standart değildi. C++Visual Studio 2017 ' de (MSVC v141), [ISO/ıEC JTC 1/SC 22/WG 21 N4100](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4100.pdf)içinde bulunan son taslak standardını uygular.
+> Visual Studio 2017 sürümünden itibaren, \<dosya sistemi > üst bilgisi henüz bir C++ standart değildi. C++Visual Studio 2017 ' de (MSVC v141), [ISO/ıEC JTC 1/SC 22/WG 21 N4100](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4100.pdf)içinde bulunan son taslak standardını uygular.
 
-Bu üst bilgi, konak işletim sistemlerinden oluşan iki geniş sınıftan biri için dosya sistemlerini destekler: Microsoft Windows ve POSIX.
+Bu üst bilgi, ana bilgisayar işletim sistemi sınıflarından biri için dosya sistemlerini destekler: Microsoft Windows ve POSIX.
 
 Çoğu işlevsellik her iki işletim sisteminde de yaygın olsa da, bu belge farkların nerede olduğunu tanımlar. Örneğin:
 
-- Windows, c: veya \\\network_adı gibi birden çok kök adı destekler. Bir dosya sistemi, her biri kendi kök dizinine (örneğin, c:\) sahip bir ağaç ormanından oluşur. ya \\da \network_adı\\ve bir göreli yol adını (mutlak yol adı olmayan bir değer) tamamlamak için kendi geçerli diziniyle birlikte.
+- Windows, c: veya \\\ network_name gibi birden çok kök adı destekler. Bir dosya sistemi, her biri kendi kök dizinine (örneğin, c:\) sahip bir ağaç ormanından oluşur. ya da bir göreli yol adını (mutlak yol adı olmayan) tamamlamak için, her biri kendi geçerli diziniyle birlikte \\\ network_name\\.
 
 - POSIX, kök adı, tek köklü dizin/ve tek bir geçerli dizin içermeyen tek bir ağacı destekler.
 
 Diğer önemli fark, pathnames 'in yerel gösterimidir:
 
-- Windows, UTF-16 olarak kodlanmış (her karakter için bir veya iki öğe), null olarak sonlandırılmış bir wchar_t sırası kullanır.
+- Windows, UTF-16 (her karakter için bir veya iki öğe) olarak kodlanmış wchar_t, null ile sonlandırılmış bir sıra kullanır.
 
-- Posix UTF-8 (her karakter için bir veya daha fazla öğe) olarak kodlanmış, boş sonlandırılmış bir karakter dizisi kullanır.
+- POSIX UTF-8 (her karakter için bir veya daha fazla öğe) olarak kodlanmış, boş sonlandırılmış bir karakter dizisi kullanır.
 
 - Bir sınıf yolu nesnesi, yol adını yerel biçimde depolar, ancak bu depolanmış form ve çeşitli harici formlar arasında kolay dönüştürmeyi destekler:
 
@@ -51,13 +51,13 @@ Diğer önemli fark, pathnames 'in yerel gösterimidir:
 
 - UTF-8 olarak kodlanmış, null ile sonlandırılan bir karakter dizisi.
 
-- İşletim sistemi tarafından sık kullanılanlara olarak kodlanan, null ile sonlandırılan bir wchar_t sırası.
+- İşletim sistemi tarafından sık kullanılanları olarak kodlanan, wchar_t null sonlandırılmış bir dizi.
 
-- UTF-16 olarak kodlanmış, null ile sonlandırılan bir char16_t dizisi.
+- UTF-16 olarak kodlanan, null ile sonlandırılmış char16_t sırası.
 
-- UTF-32 olarak kodlanan, null ile sonlandırılan bir char32_t dizisi.
+- UTF-32 olarak kodlanan char32_t, null ile sonlandırılmış bir dizi.
 
-Bu gösterimler arasındaki karşılıklı dönüştürmeler, gerektiğinde bir veya daha fazla `codecvt` model kullanılarak desteklenmez. Belirli bir yerel ayar nesnesi atanmamışsa, bu modeller genel yerel ayardan alınır.
+Bu temsiller arasındaki karşılıklı dönüştürmeler, gerektiğinde bir veya daha fazla `codecvt` modellerinin kullanılması halinde ortalandırılır. Belirli bir yerel ayar nesnesi atanmamışsa, bu modeller genel yerel ayardan alınır.
 
 Diğer bir farkı, her işletim sisteminin dosya veya dizin erişim izinleri belirtmenize izin veren ayrıntıdır:
 
@@ -85,7 +85,7 @@ Her iki sistem için ortak, kök adı aşıldıktan sonra bir yol adı üzerine 
 
 Bir yol adındaki dizinlerin sırası arasındaki küçük bir fark, **tercih edilen ayırıcıdır**. Her iki işletim sistemi de eğik çizgi yazmanıza izin verir, ancak bazı bağlamlarda Windows ters eğik çizgi \\tercih eder.
 
-Son olarak, yol nesnelerinin önemli bir özelliği, üst bilgi \<fstream > tanımlanmış sınıflarda bir dosya adı bağımsız değişkeninin gerekli olduğu her durumda bunları kullanmanıza yardımcı olur.
+Son olarak, yol nesnelerinin önemli bir özelliği, \<fstream > üst bilgisinde tanımlanan sınıflarda bir dosya adı bağımsız değişkeninin gerekli olduğu her yerde kullanılabilir.
 
 Daha fazla bilgi ve kod örneği için bkz. [dosya sistemi gezintisiC++()](../standard-library/file-system-navigation.md).
 
@@ -95,12 +95,12 @@ Daha fazla bilgi ve kod örneği için bkz. [dosya sistemi gezintisiC++()](../st
 
 |||
 |-|-|
-|[directory_entry Sınıfı](../standard-library/directory-entry-class.md)|`directory_iterator` Bir`recursive_directory_iterator` veya tarafından döndürülen ve bir yol içeren bir nesnesi tanımlar.|
+|[directory_entry Sınıfı](../standard-library/directory-entry-class.md)|Bir `directory_iterator` veya `recursive_directory_iterator` tarafından döndürülen ve bir yol içeren bir nesneyi tanımlar.|
 |[directory_iterator Sınıfı](../standard-library/directory-iterator-class.md)|Dosya sistemi dizinindeki dosya adlarıyla oluşan bir giriş yineleyicisini açıklar.|
 |[filesystem_error Sınıfı](../standard-library/filesystem-error-class.md)|Düşük düzey sistem taşmasını raporlamak için oluşturulan özel durumlar için temel sınıf.|
-|[path Sınıfı](../standard-library/path-class.md)|Bir dosya adı olarak kullanılmak üzere uygun şablon türünde `String` bir nesne depolayan bir sınıf tanımlar.|
+|[path Sınıfı](../standard-library/path-class.md)|Bir dosya adı olarak kullanılmak üzere uygun `String` şablon türünde bir nesne depolayan bir sınıf tanımlar.|
 |[recursive_directory_iterator Sınıfı](../standard-library/recursive-directory-iterator-class.md)|Dosya sistemi dizinindeki dosya adlarıyla oluşan bir giriş yineleyicisini açıklar. Yineleyici, alt dizinlere da göz alabilir.|
-|[file_status Sınıfı](../standard-library/file-status-class.md)|Bir `file_type`olarak kaydırır.|
+|[file_status Sınıfı](../standard-library/file-status-class.md)|Bir `file_type`kaydırır.|
 
 ### <a name="structs"></a>Yapılar
 
@@ -110,13 +110,13 @@ Daha fazla bilgi ve kod örneği için bkz. [dosya sistemi gezintisiC++()](../st
 
 ## <a name="functions"></a>İşlevler
 
-[\<FileSystem > işlevleri](../standard-library/filesystem-functions.md)
+[\<dosya sistemi > işlevleri](../standard-library/filesystem-functions.md)
 
 ## <a name="operators"></a>İşleçler
 
 [\<dosya sistemi > işleçleri](../standard-library/filesystem-operators.md)
 
-## <a name="enumerations"></a>Numaralandırmalar
+## <a name="enumerations"></a>Listelemeler
 
 |||
 |-|-|

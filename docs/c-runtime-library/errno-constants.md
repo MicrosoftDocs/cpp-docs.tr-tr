@@ -41,12 +41,12 @@ helpviewer_keywords:
 - EXDEV constant
 - EILSEQ constant
 ms.assetid: 47089258-d5a5-4cd8-b193-223894dea0cf
-ms.openlocfilehash: 0e11c11b468ff6e058ccf5c75b000396e0473bfa
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 34f92bedfa9606c90196f2e3a5e47dc341b23aea
+ms.sourcegitcommit: 6ddfb8be5e5923a4d90a2c0f93f76a27ce7ac299
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62343842"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74898752"
 ---
 # <a name="errno-constants"></a>errno Sabitleri
 
@@ -58,36 +58,36 @@ ms.locfileid: "62343842"
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Errno** sabitleri atanan değerler [errno](../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) çeşitli hata koşulları durumunda.
+**Errno** değeri, çeşitli hata koşulları durumunda [errno](../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) 'a atanan sabitlerdir.
 
-ERRNO. H tanımlarını içeren **errno** değerleri. Ancak, ERRNO verilen tüm tanımları. H 32-bit Windows işletim sistemlerinde kullanılır. Bazı ERRNO değeri. H UNIX ailesi işletim sistemleri ile uyumluluğu korumak için mevcut.
+ERRNO. H, **errno** değeri tanımlarını içerir. Ancak, ERRNO 'da verilen tüm tanımlar değildir. H, 32 bitlik Windows işletim sistemlerinde kullanılır. ERRNO içindeki bazı değerler. H, UNIX işletim sistemi ailesiyle uyumluluğu sürdürmek için mevcuttur.
 
-**Errno** değerler 32-bit Windows işletim sisteminde bir alt kümesini değerlerini **errno** XENIX sistemlerde. Bu nedenle, **errno** değeri değildir Windows işletim sistemlerinden sistem çağrısı tarafından döndürülen gerçek hata kodu ile aynı. Gerçek işletim sistemi hata kodu erişmek için [_doserrno](../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) bu değeri içeren bir değişkeni.
+32 bitlik bir Windows işletim sisteminde **errno** DEĞERI, XENIX sistemlerinde **errno** değerlerinin bir alt kümesidir. Bu nedenle, **errno** değeri, Windows işletim sistemlerinden bir sistem çağrısıyla döndürülen gerçek hata kodu ile aynı değildir. Gerçek işletim sistemi hata koduna erişmek için, bu değeri içeren [_doserrno](../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) değişkenini kullanın.
 
-Aşağıdaki **errno** değerler desteklenir:
+Aşağıdaki **errno** değeri desteklenir:
 
 |Sabit|Açıklama|
 |-|-|
-|**ECHILD**|Üretilmiş işlem yok.|
-|**EAGAIN**|Daha fazla işlem yok. Daha fazla işlem yuva yok, veya bellek yeterli değil veya iç içe geçme düzeyi üst sınırına ulaşıldı yeni bir işlem oluşturma girişimi başarısız oldu.|
+|**ECHıLD**|Üretilen işlem yok.|
+|**EAGAıN**|Başka işlem yok. Daha fazla işlem yuvası olmadığından veya yeterli bellek olmadığından veya en fazla iç içe geçme düzeyine ulaşıldığından, yeni bir işlem oluşturma girişimi başarısız oldu.|
 |**E2BIG**|Bağımsız değişken listesi çok uzun.|
-|**SPAWN**|İzin reddedildi. Dosya izin ayarının belirtilen erişim izin vermez. Bu hata, bir dosyaya erişmek için girişiminde bulunuldu belirtir (veya bazı durumlarda, bir dizin), dosya özniteliklerini bir şekilde uyumsuz.<br/><br/>Örneğin, yazma için mevcut bir salt okunur dosyasını açın veya bir dizin dosyası açmak için açık değil, bir dosyadan okuma denemesi yapıldığında hata oluşabilir. MS-DOS işletim sistemi sürümlerinde 3.0 ve sonraki sürümler altında **SPAWN** bir kilitleme veya paylaşım ihlali da gösterebilir.<br/><br/>Hata, bir dosya veya dizin yeniden adlandırmak veya varolan bir dizin kaldırmak için bir girişimi de oluşabilir.|
-|**EBADF**|Hatalı dosya numarası. İki olası nedeni vardır: (1) belirtilen dosya tanımlayıcısı, geçerli bir değer değil veya açık olan bir dosyaya başvurmuyor. (2) bir dosya veya cihaz için yalnızca okuma erişimi açılan yazmak için girişimde bulunuldu.|
-|**EDEADLOCK**|Kaynak kilitlenmesi oluşabilir. Bir matematiksel işlev için bağımsız değişken işlev etki alanında değil.|
+|**EACCES**|İzin reddedildi. Dosyanın izin ayarı belirtilen erişime izin vermiyor. Bu hata, bir dosyaya (veya bazı durumlarda bir dizin) dosyanın öznitelikleriyle uyumsuz bir şekilde erişmek için girişimde bulunuldu.<br/><br/>Örneğin, hata, açık olmayan bir dosyadan okuma, yazma için varolan salt bir dosyayı açma veya dosya yerine bir dizin açma için bir girişim yapıldığında meydana gelebilir. MS-DOS işletim sistemi sürümleri 3,0 ve üzeri sürümlerde, **EACCES** de bir kilitleme veya paylaşım ihlali gösterebilir.<br/><br/>Hata, bir dosyayı veya dizini yeniden adlandırma veya var olan bir dizini kaldırma girişimi içinde de oluşabilir.|
+|**EBADF**|Hatalı dosya numarası. Olası iki neden vardır: 1) belirtilen dosya tanımlayıcısı geçerli bir değer değil veya açık bir dosyaya başvurmuyor. 2) salt okuma erişimi için açılan bir dosyaya veya cihaza yazma girişiminde bulunuldu.|
+|**EDEADLOCK**|Kaynak kilitlenmesi meydana gelir. Math işlevinin bağımsız değişkeni işlevin etki alanında değil.|
 |**EDOM**|Matematik bağımsız değişkeni.|
-|**EEXIST**|Dosya mevcut. Zaten bir dosya oluşturmak için girişiminde bulunuldu. Örneğin, **_O_CREAT** ve **_O_EXCL** bayrakları içinde belirtilen bir **_aç** çağrısı, ancak adlandırılmış dosyanın zaten mevcut.|
-|**EILSEQ**|Geçersiz dizi bayta (örneğin, bir MBCS dizesindeki).|
-|**EINVAL**|Geçersiz bağımsız değişken. Bir işlev için bağımsız değişkenlerden biri için geçersiz değer verildi. Örneğin, bir dosya işaretçisiyse konumlandırırken kaynak için verilen değer (bir çağrı yoluyla **fseek**) önce dosyanın bir başlangıç.|
-|**EMFILE**|Çok fazla açık dosya. Daha fazla dosya açık şekilde hiçbir daha fazla dosya tanımlayıcısı kullanılabilir.|
-|**ENOENT**|Böyle dosya veya dizin yok. Belirtilen dosya veya dizin yok veya bulunamadı. Bu ileti, belirtilen dosya yok veya varolan bir dizin yolu'nin bir bileşeni belirtmiyor olduğunda ortaya çıkabilir.|
-|**ENOEXEC**|Exec biçim hatası. Yürütülebilir değil veya geçersiz bir yürütülebilir dosya biçimine sahip bir dosyayı yürütmek için girişimde bulunuldu.|
-|**ENOMEM**|Yeterli çekirdek. Yeterli bellek yok denenen işleci için kullanılabilir. Örneğin, bu iletiyi bir alt işlemi yürütmek için bellek yetersiz olduğunda ya da ayırma isteği oluşabilir bir **_getcwd** çağrı kullanılamaz memnun.|
-|**ENOSPC**|Aygıtta kalan alanı yok. Yazma için daha fazla yer yok (örneğin, disk dolu olduğunda) cihazın kullanılabilir.|
-|**ERANGE**|Sonuç çok büyük. Bir matematiksel işlev için bağımsız değişken sonuç anlam kısmi ya da toplam kaybına kaynaklanan çok büyük. Bir bağımsız değişken beklenenden daha büyük olduğunda bu hatayı diğer işlevlerde da meydana gelebilir (örneğin, *arabellek* bağımsız değişkeni **_getcwd** beklenenden daha uzun).|
-|**EXDEV**|Çapraz cihaz bağlantısı. Dosyayı farklı bir cihaz için taşımak için bir girişimde bulunuldu (kullanarak **Yeniden Adlandır** işlevi).|
-|**STRUNCATE**|Bir dizeyi kopyalama ya da birleştirme kesilmiş bir dizede sonuçlandı. Bkz: [_TRUNCATE](../c-runtime-library/truncate.md).
+|**EEXıST**|Dosyalar var. Zaten var olan bir dosya oluşturulmaya çalışıldı. Örneğin, **_O_CREAT** ve **_O_EXCL** bayrakları bir **_open** çağrısında belirtilir, ancak adlandırılmış dosya zaten var.|
+|**EıLSEQ**|Geçersiz bayt dizisi (örneğin, bir MBCS dizesinde).|
+|**EıNVAL**|Geçersiz bağımsız değişken. Bir işleve bağımsız değişkenlerden biri için geçersiz bir değer verildi. Örneğin, bir dosya işaretçisi ( **fseek**çağrısı aracılığıyla) konumlandırılırken kaynak için verilen değer dosyanın başlangıcından öncedir.|
+|**EMFıLE**|Çok fazla açık dosya. Daha fazla dosya tanımlayıcısı yok, bu nedenle başka dosya açılamaz.|
+|**ENOENT**|Böyle bir dosya veya dizin yok. Belirtilen dosya veya dizin yok veya bulunamıyor. Bu ileti, belirtilen bir dosya yoksa veya bir yolun bileşeni var olan bir dizin belirtmezse gerçekleşebilir.|
+|**ENOEXEC**|Exec biçim hatası. Yürütülebilir dosya olmayan veya geçersiz bir yürütülebilir dosya biçimine sahip bir dosya yürütülmeye çalışıldı.|
+|**ENOMEM**|Yeterli çekirdek yok. Denenen operatör için yeterli bellek yok. Örneğin, bir alt işlemi yürütmek için yeterli bellek yoksa veya bir **_getcwd** çağrısındaki ayırma isteği karşılanmıyorsa bu ileti oluşabilir.|
+|**ENOSPC**|Cihazda boşluk kalmadı. Cihazda yazma için daha fazla alan yok (örneğin, disk dolduğunda).|
+|**ERANGE**|Sonuç çok büyük. Matematik işlevine yönelik bir bağımsız değişken çok büyük, sonuçta sonuçtaki kısmi veya toplam anlam kaybı ile sonuçlanır. Bu hata, bir bağımsız değişken beklenenden daha büyük olduğunda (örneğin, **_getcwd** için *arabellek* bağımsız değişkeni beklenenden uzun olduğunda) diğer işlevlerde da oluşabilir.|
+|**EXDEV**|Cihazlar arası bağlantı. Bir dosyayı farklı bir cihaza taşıma denemesi yapıldı ( **yeniden adlandırma** işlevi kullanılarak).|
+|**STRUNTE**|Dize kopyası veya birleştirme, kesilmiş bir dize ile sonuçlandı. Bkz. [_TRUNCATE](../c-runtime-library/truncate.md).
 
-Aşağıdaki değerleri, POSIX ile uyumluluk için desteklenir. Bunlar POSIX olmayan sistemlerde gerekli değerler.
+POSIX ile uyumluluk için aşağıdaki değerler desteklenir. Bunlar, POSIX olmayan sistemlerde gerekli değerlerdir.
 
 ```C
 #define E2BIG /* argument list too long */

@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4996
 ms.assetid: 926c7cc2-921d-43ed-ae75-634f560dd317
-ms.openlocfilehash: 9d5b8cc3e3ce6445e021163df5301a38aab2c514
-ms.sourcegitcommit: d0504e2337bb671e78ec6dd1c7b05d89e7adf6a7
+ms.openlocfilehash: 98662dc0b5439c1f8857e4f2ad259793a4d03e41
+ms.sourcegitcommit: 6ddfb8be5e5923a4d90a2c0f93f76a27ce7ac299
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74683335"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74898771"
 ---
 # <a name="compiler-warning-level-3-c4996"></a>Derleyici Uyarısı (düzey 3) C4996
 
@@ -23,7 +23,7 @@ Kodunuz, *kullanım dışı*olarak işaretlenmiş bir işlev, sınıf üyesi, de
 
 ## <a name="remarks"></a>Açıklamalar
 
-Visual Studio kitaplıklarında birçok işlev, üye işlevi, Şablon işlevleri ve genel değişkenler *kullanım dışıdır*. Farklı bir tercih edilen adı olduklarından, POSIX işlevleri gibi bazıları kullanım dışıdır. Bazı C çalışma zamanı kitaplığı işlevleri, güvenli olduklarından ve daha güvenli bir varyanta sahip olduklarından kullanım dışıdır. Artık kullanılmıyor olduklarından diğerleri kullanımdan kaldırılmıştır. Kullanımdan kaldırılan iletiler, genellikle kullanım dışı işlev veya genel değişken için önerilen bir değiştirme içerir.
+Visual Studio kitaplıklarında birçok işlev, üye işlevi, Şablon işlevleri ve genel değişkenler *kullanım dışıdır*. POSIX ve Microsoft 'a özgü işlevler gibi bazıları artık farklı bir tercih edilen ada sahip olduğundan kullanım dışıdır. Bazı C çalışma zamanı kitaplığı işlevleri, güvenli olduklarından ve daha güvenli bir varyanta sahip olduklarından kullanım dışıdır. Artık kullanılmıyor olduklarından diğerleri kullanımdan kaldırılmıştır. Kullanımdan kaldırılan iletiler, genellikle kullanım dışı işlev veya genel değişken için önerilen bir değiştirme içerir.
 
 ## <a name="turn-off-the-warning"></a>Uyarıyı kapat
 
@@ -61,9 +61,9 @@ C4996 uyarı ve hataların yaygın kaynaklarından bazıları şunlardır:
 
 **Bu öğenin POSIX adı kullanım dışıdır. Bunun yerine, ISO C ve C++ uyumlu adı kullanın:** *New-Name*. **Ayrıntılar için çevrimiçi yardıma bakın.**
 
-Microsoft, uygulama tanımlı genel işlev adları için C99 ve C++ 03 kurallarına uymak üzere CRT 'daki bazı POSIX işlevlerini yeniden adlandırdı. İşlevlerin kendisi değil, yalnızca adlar kullanım dışıdır. Çoğu durumda, bir standart uyumlu ad oluşturmak için POSIX işlev adına önde gelen bir alt çizgi eklenmiştir. Derleyici, özgün işlev adı için kullanımdan kaldırma uyarısı verir ve tercih edilen adı önerir.
+Microsoft, ayrılmış ve genel uygulama tanımlı adlarla C99 ve C++ 03 kısıtlamalarına uyum sağlamak için CRT 'daki bazı POSIX ve Microsoft 'a özgü kitaplık işlevlerini yeniden adlandırdı. *İşlevlerin kendisi değil, yalnızca adlar kullanım dışıdır*. Çoğu durumda, uygun bir ad oluşturmak için işlev adına bir öncü alt çizgi eklenmiştir. Derleyici, özgün işlev adı için kullanımdan kaldırma uyarısı verir ve tercih edilen adı önerir.
 
-Bu sorunu onarmak için genellikle kodunuzu önerilen işlev adlarını kullanacak şekilde değiştirmenizi öneririz. Ancak, güncelleştirilmiş adlar Microsoft 'a özgüdür. Taşınabilirlik nedenleriyle var olan işlev adlarını kullanmanız gerekiyorsa, bu uyarıları devre dışı bırakabilirsiniz. POSIX işlevleri, kitaplıkta orijinal adları altında hala kullanılabilir.
+Bu sorunu onarmak için genellikle kodunuzu önerilen işlev adlarını kullanacak şekilde değiştirmenizi öneririz. Ancak, güncelleştirilmiş adlar Microsoft 'a özgüdür. Taşınabilirlik nedenleriyle var olan işlev adlarını kullanmanız gerekiyorsa, bu uyarıları devre dışı bırakabilirsiniz. İşlevler, kitaplıkta orijinal adları altında hala kullanılabilir.
 
 Bu işlevler için kullanımdan kaldırma uyarılarını kapatmak için,\_ön işlemci makrosunu **\_bir\_uyarı\_olmayan CRT**' ı tanımlayın. Bu makroyu komut satırında, `/D_CRT_NONSTDC_NO_WARNINGS`seçeneğini ekleyerek tanımlayabilirsiniz.
 

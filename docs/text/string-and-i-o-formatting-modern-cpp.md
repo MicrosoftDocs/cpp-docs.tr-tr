@@ -4,12 +4,12 @@ description: Modern C++olarak bulunan, biçimlendirilen dize g/ç için seçimle
 ms.date: 05/30/2019
 ms.topic: conceptual
 ms.assetid: 3954e8de-a59b-4175-89c9-4ee842ab89ed
-ms.openlocfilehash: facb0b62cc1e92ed09a9ba729d766e5db7404282
-ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
+ms.openlocfilehash: 7ea858a8a8126d3754783edee0dd3ea5409e5f73
+ms.sourcegitcommit: 6ddfb8be5e5923a4d90a2c0f93f76a27ce7ac299
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74308177"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74898823"
 ---
 # <a name="string-and-io-formatting-modern-c"></a>Dize ve G/Ç Biçimlendirme (Modern C++)
 
@@ -49,13 +49,13 @@ Alternatif olarak, standart dışı olsa da, yükseltme C++ kitaplıklarından `
 
 - Güvenli: tür kullanımı güvenli ve hatalar için bir özel durum oluşturur. Örneğin, çok az sayıda veya çok fazla öğe belirtimi.
 
-- Genişletilebilir: akışla çalışabilen herhangi bir tür için geçerlidir.
+- Genişletilebilir: Akışı yapılabilen herhangi bir tür için çalışır.
 
-- Uygun: Standart Posix ve benzer biçim dizeleri.
+- Uygun: Standart POSIX ve benzer biçim dizeleri.
 
-`Boost.Format`, güvenli ve Genişletilebilir C++ olan [\<iostream >](../standard-library/iostream-programming.md) tesislerinde oluşturulmuş olsa da, performans için iyileştirilmez. Performans iyileştirmesi gerektirdiğinde, hızlı ve kullanımı kolay olan C [printf](../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md) ve [sprintf](../c-runtime-library/reference/sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)' i değerlendirin. Ancak, güvenlik açıklarına göre Genişletilebilir veya güvenli değildir. (Güvenli sürümler mevcuttur, ancak hafif bir performans cezası olur. Daha fazla bilgi için bkz. [printf_s, _printf_s_l, wprintf_s, _wprintf_s_l](../c-runtime-library/reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md) ve [sprintf_s, _sprintf_s_l, swprintf_s, _swprintf_s_l](../c-runtime-library/reference/sprintf-s-sprintf-s-l-swprintf-s-swprintf-s-l.md)).
+`Boost.Format`, güvenli ve Genişletilebilir C++ olan [\<iostream >](../standard-library/iostream-programming.md) tesislerinde oluşturulmuş olsa da, performans için iyileştirilmez. Performans iyileştirmesi gerektirdiğinde, hızlı ve kullanımı kolay olan C [printf](../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md) ve [sprintf](../c-runtime-library/reference/sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)' i değerlendirin. Ancak, güvenlik açıklarına göre Genişletilebilir veya güvenli değildir. (Güvenli sürümler var ancak performansta küçük bir düşüş oluşturabilir. Daha fazla bilgi için bkz. [printf_s, _printf_s_l, wprintf_s, _wprintf_s_l](../c-runtime-library/reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md) ve [sprintf_s, _sprintf_s_l, swprintf_s, _swprintf_s_l](../c-runtime-library/reference/sprintf-s-sprintf-s-l-swprintf-s-swprintf-s-l.md)).
 
-Aşağıdaki kod, Boost biçimlendirme özelliklerinden bazılarını göstermektedir.
+Aşağıdaki kod Boost biçimlendirme özelliklerinin bazılarını gösterir.
 
 ```cpp
     string s = str( format("%2% %2% %1%\n") % "world" % "hello" );
